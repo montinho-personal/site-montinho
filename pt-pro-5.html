@@ -628,6 +628,26 @@ function render() {
     profile: pgProfile
   }[page];
   if (fn) document.getElementById('pg').innerHTML = fn();
+  // inject historico button on profile
+  if (page === 'profile' && curAluno) {
+    var waBtn = document.querySelector('.btn-wa.btn-wide');
+    if (waBtn) {
+      var aid2 = curAluno.id;
+      var wrap = document.createElement('div');
+      wrap.style.cssText = 'display:flex;gap:8px;margin-bottom:8px';
+      waBtn.classList.remove('btn-wide');
+      waBtn.style.flex = '1';
+      waBtn.innerHTML = '<i class="ti ti-brand-whatsapp"></i>Renovar';
+      var hBtn = document.createElement('button');
+      hBtn.className = 'btn btn-wa';
+      hBtn.style.cssText = 'flex:1;background:#1a4a38';
+      hBtn.innerHTML = '<i class="ti ti-history"></i>Histórico';
+      hBtn.onclick = function(){ enviarHistorico(aid2); };
+      waBtn.parentNode.insertBefore(wrap, waBtn);
+      wrap.appendChild(waBtn);
+      wrap.appendChild(hBtn);
+    }
+  }
   // sync mobile badges
   var inadim = D.alunos.filter(function(a){ return D.pacotes.some(function(p){ return p.aid===a.id && !p.pago; }); }).length;
   var bi=document.getElementById('badge-i'); if(bi){bi.textContent=inadim;bi.style.display=inadim>0?'':'none';}
@@ -917,6 +937,68 @@ function openWA(aid) {
   }, 500);
 }
 
+
+function enviarHistorico(aid) {
+  var al = D.alunos.find(function(a){ return a.id === aid; });
+  if (!al) return;
+  var tel = al.tel.replace(/\D/g, '');
+  var nome = al.nome.split(' ')[0];
+  var aulas = D.aulas.filter(function(x){ return x.aid === aid && x.status === 'realizada'; });
+  aulas.sort(function(a,b){ return a.data > b.data ? 1 : -1; });
+  if (aulas.length === 0) { toast('Nenhuma aula realizada para enviar'); return; }
+  var p = D.pacotes.find(function(pk){ return pk.aid === aid && (pk.status==='ativo'||pk.status==='finalizado'); });
+  var txt = 'Ol\u00e1, '+nome+'!\n\nSeu hist\u00f3rico de treinos:\n\n';
+  aulas.forEach(function(x,i){
+    var d=x.data.split('-');
+    txt+=(i+1)+'. '+d[2]+'/'+d[1]+'/'+d[0]+' - '+x.hora+(x.obs?' ('+x.obs+')':'')+ '\n';
+  });
+  if(p){
+    txt+='\nPacote: '+p.nome+'\nRealizadas: '+p.usadas+'/'+p.qtd+'\nRestantes: '+(p.qtd-p.usadas)+'\n';
+  }
+  txt+='\nContinue assim!';
+  toast('Abrindo WhatsApp...');
+  setTimeout(function(){ window.open('https://wa.me/55'+tel+'?text='+encodeURIComponent(txt),'_blank'); },500);
+}
+
+function enviarHistorico(aid) {
+  var al = D.alunos.find(function(a){ return a.id === aid; });
+  if (!al) return;
+  var tel = al.tel.replace(/\D/g, '');
+  var nome = al.nome.split(' ')[0];
+  var aulas = D.aulas.filter(function(x){ return x.aid === aid && x.status === 'realizada'; });
+  aulas.sort(function(a,b){ return a.data > b.data ? 1 : -1; });
+  if (aulas.length === 0) { toast('Nenhuma aula realizada para enviar'); return; }
+  var p = D.pacotes.find(function(pk){ return pk.aid === aid && (pk.status==='ativo'||pk.status==='finalizado'); });
+  var txt = 'Ol\u00e1, '+nome+'!\n\nSeu hist\u00f3rico de treinos:\n\n';
+  aulas.forEach(function(x,i){
+    var d=x.data.split('-');
+    txt+=(i+1)+'. '+d[2]+'/'+d[1]+'/'+d[0]+' - '+x.hora+(x.obs?' ('+x.obs+')':'')+ '\n';
+  });
+  if(p){ txt+='\nPacote: '+p.nome+'\nRealizadas: '+p.usadas+'/'+p.qtd+'\nRestantes: '+(p.qtd-p.usadas)+'\n'; }
+  txt+='\nContinue assim!';
+  toast('Abrindo WhatsApp...');
+  setTimeout(function(){ window.open('https://wa.me/55'+tel+'?text='+encodeURIComponent(txt),'_blank'); },500);
+}
+
+function enviarHistorico(aid) {
+  var al = D.alunos.find(function(a){ return a.id === aid; });
+  if (!al) return;
+  var tel = al.tel.replace(/\D/g, '');
+  var nome = al.nome.split(' ')[0];
+  var aulas = D.aulas.filter(function(x){ return x.aid === aid && x.status === 'realizada'; });
+  aulas.sort(function(a,b){ return a.data > b.data ? 1 : -1; });
+  if (aulas.length === 0) { toast('Nenhuma aula realizada para enviar'); return; }
+  var p = D.pacotes.find(function(pk){ return pk.aid === aid && (pk.status==='ativo'||pk.status==='finalizado'); });
+  var txt = 'Ol\u00e1, '+nome+'!\n\nSeu hist\u00f3rico de treinos:\n\n';
+  aulas.forEach(function(x,i){
+    var d=x.data.split('-');
+    txt+=(i+1)+'. '+d[2]+'/'+d[1]+'/'+d[0]+' - '+x.hora+(x.obs?' ('+x.obs+')':'')+ '\n';
+  });
+  if(p){ txt+='\nPacote: '+p.nome+'\nRealizadas: '+p.usadas+'/'+p.qtd+'\nRestantes: '+(p.qtd-p.usadas)+'\n'; }
+  txt+='\nContinue assim!';
+  toast('Abrindo WhatsApp...');
+  setTimeout(function(){ window.open('https://wa.me/55'+tel+'?text='+encodeURIComponent(txt),'_blank'); },500);
+}
 /* ===== EDITAR ALUNO ===== */
 
 function editarStatus(aid) {
