@@ -252,6 +252,7 @@ select.form-input option{background:var(--bg2);color:var(--text)}
   <div class="nav-item" id="sn-inadimplentes" onclick="go('inadimplentes')"><i class="ti ti-alert-circle"></i>Inadimplentes<span class="nav-badge" id="badge-i">2</span></div>
   <div class="nav-section" style="margin-top:8px">Gestão</div>
   <div class="nav-item" id="sn-relatorios" onclick="go('relatorios')"><i class="ti ti-chart-bar"></i>Relatórios</div>
+  <div class="nav-item" id="sn-anamnese" onclick="go('anamnese')"><i class="ti ti-clipboard-list"></i>Anamnese</div>
   <div class="nav-item" id="sn-aniversariantes" onclick="go('aniversariantes')"><i class="ti ti-cake"></i>Aniversariantes</div>
   <div class="sidebar-bottom">
     <div class="nav-item" id="sn-config" onclick="go('config')"><i class="ti ti-settings"></i>Configurações</div>
@@ -286,6 +287,7 @@ select.form-input option{background:var(--bg2);color:var(--text)}
   <div class="more-handle"></div>
   <div class="more-item" id="mn-inadimplentes" onclick="go('inadimplentes');closeMore()"><i class="ti ti-alert-circle"></i>Inadimplentes<span class="nav-badge" id="badge-i2" style="margin-left:auto">2</span></div>
   <div class="more-item" id="mn-relatorios" onclick="go('relatorios');closeMore()"><i class="ti ti-chart-bar"></i>Relatórios</div>
+  <div class="more-item" id="mn-anamnese" onclick="go('anamnese');closeMore()"><i class="ti ti-clipboard-list"></i>Anamnese</div>
   <div class="more-item" id="mn-aniversariantes" onclick="go('aniversariantes');closeMore()"><i class="ti ti-cake"></i>Aniversariantes</div>
   <div class="more-item" id="mn-config" onclick="go('config');closeMore()"><i class="ti ti-settings"></i>Configurações</div>
 </div>
@@ -344,7 +346,8 @@ var D = {
   ],
   pgtos: [
     {id:1,aid:3,valor:960,status:'pendente',dias:15}
-  ]
+  ],
+  anamneses: {}
 };
 var page = 'dashboard',
   curAluno = null,
@@ -367,10 +370,11 @@ function loadLocal() {
     if (!raw) return;
     var saved = JSON.parse(raw);
     if (saved.D) {
-      D.alunos  = saved.D.alunos  || D.alunos;
-      D.pacotes = saved.D.pacotes || D.pacotes;
-      D.aulas   = saved.D.aulas   || D.aulas;
-      D.pgtos   = saved.D.pgtos   || D.pgtos;
+      D.alunos    = saved.D.alunos    || D.alunos;
+      D.pacotes   = saved.D.pacotes   || D.pacotes;
+      D.aulas     = saved.D.aulas     || D.aulas;
+      D.pgtos     = saved.D.pgtos     || D.pgtos;
+      D.anamneses = saved.D.anamneses || D.anamneses;
     }
     if (saved.nid) nid = saved.nid;
   } catch(e){}
@@ -403,10 +407,11 @@ function loadCloud(callback) {
       try {
         var saved = JSON.parse(res.data.payload);
         if (saved.D) {
-          D.alunos  = saved.D.alunos  || [];
-          D.pacotes = saved.D.pacotes || [];
-          D.aulas   = saved.D.aulas   || [];
-          D.pgtos   = saved.D.pgtos   || [];
+          D.alunos    = saved.D.alunos    || [];
+          D.pacotes   = saved.D.pacotes   || [];
+          D.aulas     = saved.D.aulas     || [];
+          D.pgtos     = saved.D.pgtos     || [];
+          D.anamneses = saved.D.anamneses || {};
         }
         if (saved.nid) nid = saved.nid;
         // update cache
@@ -609,6 +614,7 @@ function render() {
     financeiro: ['Financeiro', 'Controle financeiro'],
     inadimplentes: ['Inadimplentes', 'Cobranças em aberto'],
     relatorios: ['Relatórios', 'Análise detalhada'],
+    anamnese: ['Anamnese Inteligente', 'Avaliação completa dos alunos'],
     aniversariantes: ['Aniversariantes', 'Mês atual'],
     config: ['Configurações', 'Preferências do sistema'],
     profile: ['Perfil do Aluno', ((_curAluno = curAluno) === null || _curAluno === void 0 ? void 0 : _curAluno.nome) || '']
@@ -623,6 +629,7 @@ function render() {
     financeiro: pgFin,
     inadimplentes: pgInadim,
     relatorios: pgRel,
+    anamnese: pgAnamnese,
     aniversariantes: pgAniv,
     config: pgCfg,
     profile: pgProfile
@@ -1316,6 +1323,828 @@ function reabrirAula(aulaid, aid) {
   render();
   toast('Aula marcada como realizada!');
 }
+/* =====================================================
+   MÓDULO ANAMNESE INTELIGENTE
+   ===================================================== */
+
+/* ---- Página principal (lista de alunos) ---- */
+function pgAnamnese() {
+  var rows = D.alunos.map(function(a) {
+    var an = D.anamneses[a.id];
+    var badge, badgeClass, actionBtn;
+    if (an && an.finalizada) {
+      badge = '<span style="background:var(--green-dim);color:var(--green);font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px">✓ Completa</span>';
+      actionBtn = '<button class="btn btn-ghost btn-sm" onclick="verRelatorioAnamnese(' + a.id + ')" style="margin-right:6px"><i class="ti ti-file-analytics"></i>Relatório</button>'
+               + '<button class="btn btn-ghost btn-sm" onclick="iniciarAnamnese(' + a.id + ')"><i class="ti ti-edit"></i>Refazer</button>';
+    } else if (an && an.etapa > 0) {
+      badge = '<span style="background:var(--amber-dim);color:var(--amber);font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px">⏳ Em andamento</span>';
+      actionBtn = '<button class="btn btn-primary btn-sm" onclick="iniciarAnamnese(' + a.id + ')"><i class="ti ti-player-play"></i>Continuar</button>';
+    } else {
+      badge = '<span style="background:var(--bg4);color:var(--text3);font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px">Pendente</span>';
+      actionBtn = '<button class="btn btn-primary btn-sm" onclick="iniciarAnamnese(' + a.id + ')"><i class="ti ti-clipboard-list"></i>Iniciar</button>';
+    }
+    var dataStr = an && an.finalizada ? '<span style="color:var(--text3);font-size:11px">' + fmtDate(an.dataFim) + '</span>' : '';
+    return '<div class="card" style="display:flex;align-items:center;gap:12px;padding:14px 16px;margin-bottom:8px">'
+      + '<div style="width:40px;height:40px;border-radius:50%;background:' + (a.cor||'#5090FF') + '33;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:' + (a.cor||'#5090FF') + ';flex-shrink:0">' + a.ini + '</div>'
+      + '<div style="flex:1;min-width:0">'
+      +   '<div style="font-weight:600;font-size:14px;color:var(--text)">' + a.nome + '</div>'
+      +   '<div style="font-size:12px;color:var(--text3);margin-top:2px">' + (a.obj||'Sem objetivo definido') + '</div>'
+      + '</div>'
+      + '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">'
+      +   dataStr + badge + '<div style="display:flex;gap:6px">' + actionBtn + '</div>'
+      + '</div>'
+      + '</div>';
+  }).join('');
+
+  var totalFin = Object.values(D.anamneses).filter(function(x){ return x && x.finalizada; }).length;
+  var totalPend = D.alunos.length - totalFin;
+
+  return '<div style="max-width:900px">'
+    + '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px">'
+    +   '<div class="card" style="padding:16px;text-align:center"><div style="font-size:28px;font-weight:700;color:var(--accent)">' + D.alunos.length + '</div><div style="font-size:12px;color:var(--text3);margin-top:4px">Total de alunos</div></div>'
+    +   '<div class="card" style="padding:16px;text-align:center"><div style="font-size:28px;font-weight:700;color:var(--green)">' + totalFin + '</div><div style="font-size:12px;color:var(--text3);margin-top:4px">Anamneses completas</div></div>'
+    +   '<div class="card" style="padding:16px;text-align:center"><div style="font-size:28px;font-weight:700;color:var(--amber)">' + totalPend + '</div><div style="font-size:12px;color:var(--text3);margin-top:4px">Pendentes</div></div>'
+    + '</div>'
+    + '<div class="card" style="padding:20px;margin-bottom:16px;background:var(--accent-dim);border-color:var(--accent)">'
+    +   '<div style="display:flex;align-items:flex-start;gap:12px">'
+    +     '<i class="ti ti-info-circle" style="color:var(--accent);font-size:20px;margin-top:2px;flex-shrink:0"></i>'
+    +     '<div><div style="font-weight:600;color:var(--accent);margin-bottom:4px">Sistema de Anamnese Inteligente</div>'
+    +     '<div style="font-size:13px;color:var(--text2);line-height:1.6">Realize a avaliação completa de cada aluno através de um formulário interativo com 17 etapas. O sistema gera automaticamente um relatório exclusivo para o personal trainer com análise biomecânica, riscos, estratégias de treino e retenção.</div></div>'
+    +   '</div>'
+    + '</div>'
+    + (D.alunos.length === 0
+        ? '<div class="card" style="padding:40px;text-align:center;color:var(--text3)"><i class="ti ti-users" style="font-size:40px;margin-bottom:12px;display:block"></i>Nenhum aluno cadastrado ainda.</div>'
+        : rows)
+    + '</div>';
+}
+
+function fmtDate(iso) {
+  if (!iso) return '';
+  var d = iso.slice(0,10).split('-');
+  return d[2] + '/' + d[1] + '/' + d[0];
+}
+
+/* ---- Wizard de Anamnese ---- */
+var ANS_STEPS = [
+  // Etapa 0 — Identificação
+  {id:'ident', titulo:'Identificação', perguntas:[
+    {id:'nome',label:'Nome completo',type:'text',req:true,placeholder:'Como você prefere ser chamado?'},
+    {id:'idade',label:'Idade',type:'number',req:true,placeholder:'Ex: 32'},
+    {id:'sexo',label:'Sexo biológico',type:'radio',opts:['Masculino','Feminino']},
+    {id:'altura',label:'Altura (cm)',type:'number',placeholder:'Ex: 175'},
+    {id:'peso',label:'Peso atual (kg)',type:'number',placeholder:'Ex: 80'},
+    {id:'profissao',label:'Profissão',type:'text',placeholder:'Ex: Analista de TI'},
+    {id:'rotina',label:'Como é sua rotina de trabalho?',type:'radio',opts:['Sedentário (sentado a maior parte do tempo)','Em pé a maior parte do tempo','Trabalho físico / braçal','Trabalho remoto / home office']},
+    {id:'diasTreino',label:'Quantos dias por semana consegue treinar?',type:'radio',opts:['2 dias','3 dias','4 dias','5 dias','6+ dias']},
+    {id:'tempoSessao',label:'Quanto tempo tem disponível por sessão?',type:'radio',opts:['30-45 minutos','45-60 minutos','60-75 minutos','75-90 minutos','Mais de 90 minutos']},
+    {id:'horario',label:'Qual seu horário preferido para treinar?',type:'radio',opts:['Manhã (antes das 9h)','Manhã (9h-12h)','Tarde','Noite','Variado']}
+  ]},
+
+  // Etapa 1 — Objetivo
+  {id:'objetivo', titulo:'Objetivo Principal', perguntas:[
+    {id:'objPrincipal',label:'Qual seu principal objetivo?',type:'radio',req:true,opts:['Emagrecimento','Hipertrofia (ganho de massa muscular)','Ganho de força','Saúde e qualidade de vida','Performance esportiva','Condicionamento físico','Reabilitação','Outro']},
+    {id:'objSecundario',label:'Objetivo secundário (opcional)',type:'radio',opts:['Emagrecimento','Hipertrofia','Ganho de força','Saúde','Performance','Condicionamento','Nenhum']},
+    {id:'kgsPerder',label:'Se emagrecimento: quantos kg deseja perder?',type:'text',placeholder:'Ex: 10kg',cond:{campo:'objPrincipal',valor:'Emagrecimento'}},
+    {id:'jaEmagreceu',label:'Já emagreceu antes e recuperou o peso?',type:'radio',opts:['Sim','Não'],cond:{campo:'objPrincipal',valor:'Emagrecimento'}},
+    {id:'dificuldadeEmagr',label:'Qual sua maior dificuldade no processo de emagrecimento?',type:'textarea',placeholder:'Ex: Controlar a alimentação nos finais de semana...',cond:{campo:'objPrincipal',valor:'Emagrecimento'}},
+    {id:'musculosFocos',label:'Se hipertrofia: quais músculos deseja desenvolver mais?',type:'text',placeholder:'Ex: Peito, ombros, pernas...',cond:{campo:'objPrincipal',valor:'Hipertrofia (ganho de massa muscular)'}},
+    {id:'musculosDificeis',label:'Quais músculos sente dificuldade em desenvolver?',type:'text',placeholder:'Ex: Bíceps, panturrilha...',cond:{campo:'objPrincipal',valor:'Hipertrofia (ganho de massa muscular)'}},
+    {id:'modalidadePerf',label:'Se performance: qual modalidade?',type:'text',placeholder:'Ex: Corrida, futebol, tênis...',cond:{campo:'objPrincipal',valor:'Performance esportiva'}},
+    {id:'prazoObj',label:'Em quanto tempo deseja alcançar seu objetivo?',type:'radio',opts:['1-2 meses','3 meses','6 meses','1 ano','Sem prazo definido']},
+    {id:'successoDef',label:'O que seria um sucesso para você nos próximos 90 dias?',type:'textarea',req:true,placeholder:'Descreva em detalhes o que te faria sentir que valeu a pena...'}
+  ]},
+
+  // Etapa 2 — Histórico de Treino
+  {id:'historico', titulo:'Histórico de Treino', perguntas:[
+    {id:'jaTreinou',label:'Já treinou musculação antes?',type:'radio',req:true,opts:['Sim, regularmente','Sim, esporadicamente','Nunca treinei']},
+    {id:'tempoTreino',label:'Há quanto tempo treina (ou treinou)?',type:'radio',opts:['Menos de 6 meses','6 meses a 1 ano','1 a 2 anos','2 a 5 anos','Mais de 5 anos','N/A']},
+    {id:'treinandoAtual',label:'Está treinando atualmente?',type:'radio',req:true,opts:['Sim','Não']},
+    {id:'tempoParado',label:'Se parou: há quanto tempo ficou sem treinar?',type:'radio',opts:['Menos de 1 mês','1-3 meses','3-6 meses','6 meses a 1 ano','Mais de 1 ano','N/A']},
+    {id:'acompProf',label:'Já teve acompanhamento profissional?',type:'radio',opts:['Sim','Não']},
+    {id:'divisao',label:'Qual divisão costumava fazer?',type:'radio',opts:['Full Body','A/B (2 dias)','ABC (3 dias)','ABCD (4 dias)','ABCDE (5 dias)','Push/Pull/Legs','Não sei / nunca fiz']},
+    {id:'exercGosta',label:'Quais exercícios mais gosta?',type:'textarea',placeholder:'Ex: Supino, agachamento, rosca direta...'},
+    {id:'exercNaoGosta',label:'Quais exercícios menos gosta ou se recusa a fazer?',type:'textarea',placeholder:'Ex: Leg press, remada curvada...'},
+    {id:'exercMedo',label:'Existe algum exercício que gera medo ou insegurança?',type:'radio',opts:['Sim','Não']},
+    {id:'exercMedoDetalhe',label:'Qual exercício e qual o motivo?',type:'textarea',placeholder:'Ex: Agachamento livre — medo de lesionar o joelho...',cond:{campo:'exercMedo',valor:'Sim'}},
+    {id:'notaTecnica',label:'Qual nota você daria para sua técnica de execução?',type:'radio',opts:['0-3 (Iniciante, preciso aprender do zero)','4-6 (Conheço o básico mas tenho dúvidas)','7-8 (Boa técnica na maioria dos exercícios)','9-10 (Técnica sólida em todos os exercícios)']}
+  ]},
+
+  // Etapa 3 — Local de Treino
+  {id:'local', titulo:'Local de Treinamento', perguntas:[
+    {id:'localTreino',label:'Onde pretende treinar?',type:'radio',req:true,opts:['Academia completa','Academia de condomínio/prédio','Studio de personal','Box / CrossFit','Em casa','Ao ar livre','Híbrido (casa + academia)']},
+    {id:'academiaEquip',label:'A academia tem equipamentos modernos e barra livre?',type:'radio',opts:['Sim, equipamentos completos','Tem o básico','Equipamentos limitados','N/A — treino em casa']},
+    {id:'horarioCheio',label:'Costuma treinar em horário muito cheio?',type:'radio',opts:['Sim','Às vezes','Não','N/A']},
+    {id:'equipCasa',label:'Se em casa, quais equipamentos possui?',type:'textarea',placeholder:'Ex: Halteres até 20kg, barra, banco ajustável, elásticos...',cond:{campo:'localTreino',valor:'Em casa'}},
+    {id:'cargaMaxCasa',label:'Carga máxima disponível em casa (kg):',type:'number',placeholder:'Ex: 40',cond:{campo:'localTreino',valor:'Em casa'}}
+  ]},
+
+  // Etapa 4 — Saúde: Lesões e Ortopedia
+  {id:'saude_lesoes', titulo:'Saúde — Lesões e Ortopedia', perguntas:[
+    {id:'possuiLesoes',label:'Possui lesões atuais ou antigas que afetam o treino?',type:'radio',req:true,opts:['Sim','Não']},
+    {id:'detalhelesoes',label:'Descreva as lesões (região, diagnóstico, quando ocorreu):',type:'textarea',placeholder:'Ex: Hérnia de disco L4-L5 diagnosticada em 2022, fiz fisioterapia por 3 meses...',cond:{campo:'possuiLesoes',valor:'Sim'}},
+    {id:'dorAtual',label:'Ainda sente dor? (0 = sem dor, 10 = dor insuportável)',type:'radio',opts:['0 — Sem dor','1-2 — Dor mínima','3-4 — Dor leve','5-6 — Dor moderada','7-8 — Dor significativa','9-10 — Dor severa','N/A'],cond:{campo:'possuiLesoes',valor:'Sim'}},
+    {id:'dorRegioes',label:'Você sente dor ou desconforto em alguma dessas regiões?',type:'checkbox',opts:['Pescoço / Cervical','Ombros','Cotovelos','Punhos / Mãos','Coluna torácica','Lombar / Coluna baixa','Quadril','Joelhos','Tornozelos / Pés','Nenhuma dessas']},
+    {id:'limitOrto',label:'Alguma dessas condições limita seus movimentos?',type:'radio',opts:['Sim, bastante','Sim, um pouco','Não limita']},
+    {id:'fezFisio',label:'Já fez fisioterapia?',type:'radio',opts:['Sim, recentemente (últimos 6 meses)','Sim, no passado','Não']}
+  ]},
+
+  // Etapa 5 — Saúde Cardiovascular e Histórico Familiar
+  {id:'saude_cardio', titulo:'Saúde Cardiovascular', perguntas:[
+    {id:'sintCardiaco',label:'Você apresenta ou já apresentou algum desses sintomas?',type:'checkbox',opts:['Dor ou aperto no peito durante esforço','Dor ou aperto no peito em repouso','Palpitações / batimentos irregulares','Falta de ar excessiva durante exercício','Tonturas durante exercício','Desmaios durante ou após exercício','Hipertensão arterial (pressão alta)','Hipotensão (pressão baixa)','Arritmia cardíaca diagnosticada','Histórico de infarto','Histórico de AVC','Nenhum desses']},
+    {id:'medicamentos',label:'Usa algum medicamento regularmente?',type:'radio',opts:['Sim','Não']},
+    {id:'qualMedicamento',label:'Quais medicamentos usa?',type:'textarea',placeholder:'Ex: Losartana 50mg, Metformina...',cond:{campo:'medicamentos',valor:'Sim'}},
+    {id:'liberacaoMedica',label:'Possui liberação médica para praticar atividade física?',type:'radio',opts:['Sim','Não','Nunca fui ao médico para isso']},
+    {id:'histFamiliar',label:'Histórico familiar de:',type:'checkbox',opts:['Hipertensão','Diabetes','Infarto','AVC','Arritmia','Obesidade','Morte súbita','Problemas cardíacos','Nenhum desses']}
+  ]},
+
+  // Etapa 6 — Mobilidade e Postura
+  {id:'mobilidade', titulo:'Mobilidade e Postura', perguntas:[
+    {id:'agachaProfundo',label:'Consegue agachar profundamente (abaixo do paralelo) sem dor?',type:'radio',opts:['Sim, sem dificuldade','Sim, mas com dificuldade','Não consigo completamente']},
+    {id:'tocaPes',label:'Consegue tocar os pés sem dobrar os joelhos?',type:'radio',opts:['Sim','Não completamente','Não']},
+    {id:'bracosAcimaCabeca',label:'Consegue elevar os braços acima da cabeça sem desconforto?',type:'radio',opts:['Sim, sem dificuldade','Sim, mas com dificuldade','Não consigo sem desconforto']},
+    {id:'postura',label:'Tem algum problema postural conhecido?',type:'radio',opts:['Sim','Não','Não sei']},
+    {id:'detalhePostura',label:'Qual problema postural?',type:'textarea',placeholder:'Ex: Hiperlordose lombar, escoliose, cabeça projetada para frente...',cond:{campo:'postura',valor:'Sim'}},
+    {id:'encurtamentos',label:'Possui encurtamentos musculares conhecidos?',type:'checkbox',opts:['Isquiotibiais (atrás da coxa)','Iliopsoas (flexor de quadril)','Gastrocnêmio (panturrilha)','Peitoral','Trapézio/Pescoço','Nenhum conhecido']}
+  ]},
+
+  // Etapa 7 — Recuperação, Sono e Estresse
+  {id:'recuperacao', titulo:'Recuperação, Sono e Estresse', perguntas:[
+    {id:'qualRecup',label:'Como avalia sua recuperação entre os treinos?',type:'radio',req:true,opts:['Excelente — recupero rápido','Boa — recupero bem na maioria das vezes','Regular — demoro para recuperar','Ruim — quase sempre estou cansado']},
+    {id:'dorMusc',label:'Costuma sentir dores musculares excessivas após o treino?',type:'radio',opts:['Sim, sempre','Às vezes','Raramente','Nunca']},
+    {id:'fadiga',label:'Costuma sentir fadiga ou falta de energia ao longo do dia?',type:'radio',opts:['Sim, constantemente','Às vezes','Raramente']},
+    {id:'horasSono',label:'Quantas horas dorme por noite em média?',type:'radio',opts:['Menos de 5h','5-6h','6-7h','7-8h','Mais de 8h']},
+    {id:'qualSono',label:'Qualidade do sono (0 = péssimo, 10 = excelente):',type:'radio',opts:['0-3 (Péssimo)','4-5 (Ruim)','6-7 (Regular)','8-9 (Bom)','10 (Excelente)']},
+    {id:'acordaNoite',label:'Acorda durante a noite?',type:'radio',opts:['Sim, várias vezes','Às vezes','Raramente']},
+    {id:'apneia',label:'Ronca ou tem apneia do sono?',type:'radio',opts:['Sim, diagnosticada','Sim, mas sem diagnóstico','Não']},
+    {id:'nivelEstresse',label:'Nível de estresse atual (0 = relaxado, 10 = extremamente estressado):',type:'radio',opts:['0-2 (Baixo)','3-4 (Leve)','5-6 (Moderado)','7-8 (Alto)','9-10 (Extremo)']},
+    {id:'fontesEstresse',label:'Principais fontes de estresse:',type:'checkbox',opts:['Trabalho / carreira','Finanças','Relacionamentos / família','Saúde','Trânsito','Rotina sobrecarregada','Outros']}
+  ]},
+
+  // Etapa 8 — Nutrição
+  {id:'nutricao', titulo:'Nutrição e Alimentação', perguntas:[
+    {id:'fazDieta',label:'Segue alguma dieta ou plano alimentar?',type:'radio',opts:['Sim, com acompanhamento profissional','Sim, por conta própria','Não']},
+    {id:'contaCalorias',label:'Acompanha ingestão calórica?',type:'radio',opts:['Sim, diariamente','Às vezes','Não']},
+    {id:'proteina',label:'Consegue consumir proteína em todas as refeições principais?',type:'radio',opts:['Sim','Às vezes','Raramente','Não']},
+    {id:'refeicoes',label:'Quantas refeições faz por dia?',type:'radio',opts:['1-2 refeições','3 refeições','4-5 refeições','6+ refeições']},
+    {id:'agua',label:'Consumo de água por dia:',type:'radio',opts:['Menos de 1 litro','1-2 litros','2-3 litros','Mais de 3 litros']},
+    {id:'alcool',label:'Consumo de álcool:',type:'radio',opts:['Não consumo','Ocasionalmente (1x/mês ou menos)','Socialmente (1-2x/semana)','Frequentemente (3x+ por semana)']},
+    {id:'ultraprocessados',label:'Consome alimentos ultraprocessados frequentemente?',type:'radio',opts:['Sim, todos os dias','Sim, algumas vezes por semana','Raramente','Não consumo']}
+  ]},
+
+  // Etapa 9 — Comportamento e Motivação
+  {id:'comportamento', titulo:'Comportamento e Motivação', perguntas:[
+    {id:'motivacao',label:'O que mais te motiva para treinar?',type:'textarea',req:true,placeholder:'Ex: Ver evolução no espelho, melhorar saúde, bater recordes...'},
+    {id:'desmotivacao',label:'O que mais te desmotiva?',type:'textarea',req:true,placeholder:'Ex: Falta de resultado rápido, treinos monótonos...'},
+    {id:'abandono',label:'O que normalmente faz você abandonar um treino ou programa?',type:'checkbox',opts:['Falta de tempo','Falta de resultado visível','Treinos muito difíceis','Treinos muito fáceis','Falta de motivação','Rotina sobrecarregada','Lesão ou dor','Tédio / monotonia','Falta de progressão','Outro']},
+    {id:'prefDuracao',label:'Você prefere:',type:'radio',opts:['Treinos curtos e intensos (30-45 min)','Treinos médios (45-60 min)','Treinos longos (60-90 min)']},
+    {id:'prefEquip',label:'Prefere treinar com:',type:'radio',opts:['Máquinas','Pesos livres (barras e halteres)','Ambos igualmente']},
+    {id:'tresSozAcomp',label:'Treina melhor:',type:'radio',opts:['Sozinho','Acompanhado de um personal','Com um parceiro de treino','Tanto faz']},
+    {id:'fisicAdmirado',label:'Existe algum físico ou atleta que você admira como referência?',type:'text',placeholder:'Ex: Chris Bumstead, Simone Biles, Jeff Cavaliere...'},
+    {id:'regiaoMelhorar',label:'Qual região do corpo mais gostaria de melhorar?',type:'text',placeholder:'Ex: Braços, glúteos, abdômen, ombros...'},
+    {id:'regiaoIncomoda',label:'Qual região mais te incomoda atualmente?',type:'text',placeholder:'Ex: Barriga, gordura localizada nas costas...'}
+  ]}
+];
+
+var anamneseWizard = { aid: null, etapa: 0, respostas: {} };
+
+function iniciarAnamnese(aid) {
+  var a = D.alunos.find(function(x){ return x.id === aid; });
+  if (!a) return;
+  var salva = D.anamneses[aid];
+  anamneseWizard = {
+    aid: aid,
+    etapa: 0,
+    respostas: (salva && salva.respostas) ? JSON.parse(JSON.stringify(salva.respostas)) : {}
+  };
+  renderWizardModal();
+}
+
+function renderWizardModal() {
+  var mc = document.getElementById('mc');
+  var aid = anamneseWizard.aid;
+  var a = D.alunos.find(function(x){ return x.id === aid; });
+  var step = ANS_STEPS[anamneseWizard.etapa];
+  var total = ANS_STEPS.length;
+  var progress = Math.round((anamneseWizard.etapa / total) * 100);
+
+  var perguntas = step.perguntas.filter(function(p) {
+    if (!p.cond) return true;
+    var val = anamneseWizard.respostas[p.cond.campo];
+    return val === p.cond.valor;
+  });
+
+  var html = '<div class="modal-backdrop" onclick="if(event.target===this&&false)closeM()">'
+    + '<div class="modal" style="max-width:680px;max-height:90vh;overflow-y:auto">'
+    + '<div class="modal-header" style="position:sticky;top:0;background:var(--bg3);z-index:10;padding-bottom:16px">'
+    +   '<div style="flex:1">'
+    +     '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">'
+    +       '<i class="ti ti-clipboard-list" style="color:var(--accent)"></i>'
+    +       '<span style="font-size:11px;color:var(--text3);font-weight:600;text-transform:uppercase">Anamnese — ' + a.nome.split(' ')[0] + '</span>'
+    +       '<span style="margin-left:auto;font-size:11px;color:var(--text3)">' + (anamneseWizard.etapa+1) + ' / ' + total + '</span>'
+    +     '</div>'
+    +     '<div style="background:var(--bg4);border-radius:4px;height:4px;overflow:hidden">'
+    +       '<div style="background:var(--accent);height:4px;width:' + progress + '%;transition:width .3s"></div>'
+    +     '</div>'
+    +     '<div class="modal-title" style="margin-top:10px">' + step.titulo + '</div>'
+    +   '</div>'
+    +   '<button class="btn btn-ghost btn-sm" onclick="fecharWizard()"><i class="ti ti-x"></i></button>'
+    + '</div>'
+    + '<div class="modal-body">';
+
+  perguntas.forEach(function(p) {
+    html += '<div class="form-group" style="margin-bottom:20px">';
+    html += '<label class="form-label" style="margin-bottom:8px;font-size:13px">' + p.label + (p.req ? ' <span style="color:var(--red)">*</span>' : '') + '</label>';
+
+    if (p.type === 'text' || p.type === 'number') {
+      var val = anamneseWizard.respostas[p.id] || '';
+      html += '<input class="form-input" id="ans_' + p.id + '" type="' + p.type + '" value="' + val + '" placeholder="' + (p.placeholder||'') + '">';
+    } else if (p.type === 'textarea') {
+      var valT = anamneseWizard.respostas[p.id] || '';
+      html += '<textarea class="form-input" id="ans_' + p.id + '" rows="3" placeholder="' + (p.placeholder||'') + '" style="resize:vertical">' + valT + '</textarea>';
+    } else if (p.type === 'radio') {
+      html += '<div style="display:flex;flex-direction:column;gap:6px">';
+      p.opts.forEach(function(opt) {
+        var checked = anamneseWizard.respostas[p.id] === opt ? 'checked' : '';
+        html += '<label style="display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-radius:8px;border:1px solid var(--border);cursor:pointer;font-size:13px;color:var(--text2);transition:all .15s" onclick="selRadio(\'' + p.id + '\',this)">'
+          + '<input type="radio" name="ans_' + p.id + '" value="' + opt + '" ' + checked + ' style="margin-top:2px;accent-color:var(--accent)">'
+          + opt + '</label>';
+      });
+      html += '</div>';
+    } else if (p.type === 'checkbox') {
+      var savedArr = anamneseWizard.respostas[p.id] || [];
+      html += '<div style="display:flex;flex-direction:column;gap:6px">';
+      p.opts.forEach(function(opt) {
+        var checked = savedArr.indexOf(opt) >= 0 ? 'checked' : '';
+        html += '<label style="display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-radius:8px;border:1px solid var(--border);cursor:pointer;font-size:13px;color:var(--text2)" onclick="toggleCheck(\'' + p.id + '\',\'' + opt.replace(/'/g,"\\'") + '\',this)">'
+          + '<input type="checkbox" ' + checked + ' style="margin-top:2px;accent-color:var(--accent)">'
+          + opt + '</label>';
+      });
+      html += '</div>';
+    }
+
+    html += '</div>';
+  });
+
+  html += '</div>'
+    + '<div class="modal-footer" style="position:sticky;bottom:0;background:var(--bg3);padding-top:12px">'
+    + (anamneseWizard.etapa > 0 ? '<button class="btn btn-ghost" onclick="wizardPrev()"><i class="ti ti-arrow-left"></i>Anterior</button>' : '<div></div>')
+    + '<div style="display:flex;gap:8px">'
+    + (anamneseWizard.etapa < total-1
+        ? '<button class="btn btn-primary" onclick="wizardNext()">Próximo<i class="ti ti-arrow-right"></i></button>'
+        : '<button class="btn btn-primary" onclick="wizardFinalizar()" style="background:var(--green)!important"><i class="ti ti-check"></i>Finalizar Anamnese</button>')
+    + '</div>'
+    + '</div>'
+    + '</div></div>';
+
+  mc.innerHTML = html;
+  // Apply saved radio/checkbox styles
+  setTimeout(function() {
+    document.querySelectorAll('input[type=radio]:checked, input[type=checkbox]:checked').forEach(function(el) {
+      el.closest('label').style.borderColor = 'var(--accent)';
+      el.closest('label').style.background = 'var(--accent-dim)';
+      el.closest('label').style.color = 'var(--accent)';
+    });
+  }, 30);
+}
+
+function selRadio(pid, labelEl) {
+  // Style update
+  var parent = labelEl.closest('.form-group');
+  parent.querySelectorAll('label').forEach(function(l) {
+    l.style.borderColor = 'var(--border)';
+    l.style.background = '';
+    l.style.color = 'var(--text2)';
+  });
+  labelEl.style.borderColor = 'var(--accent)';
+  labelEl.style.background = 'var(--accent-dim)';
+  labelEl.style.color = 'var(--accent)';
+  var inp = labelEl.querySelector('input');
+  if (inp) {
+    inp.checked = true;
+    anamneseWizard.respostas[pid] = inp.value;
+  }
+  // Re-render to update conditional questions
+  coletarEtapaAtual();
+  renderWizardModal();
+}
+
+function toggleCheck(pid, val, labelEl) {
+  var arr = anamneseWizard.respostas[pid] || [];
+  var idx = arr.indexOf(val);
+  if (idx >= 0) {
+    arr.splice(idx, 1);
+    labelEl.style.borderColor = 'var(--border)';
+    labelEl.style.background = '';
+    labelEl.style.color = 'var(--text2)';
+  } else {
+    arr.push(val);
+    labelEl.style.borderColor = 'var(--accent)';
+    labelEl.style.background = 'var(--accent-dim)';
+    labelEl.style.color = 'var(--accent)';
+  }
+  anamneseWizard.respostas[pid] = arr;
+  var cb = labelEl.querySelector('input[type=checkbox]');
+  if (cb) cb.checked = idx < 0;
+}
+
+function coletarEtapaAtual() {
+  var step = ANS_STEPS[anamneseWizard.etapa];
+  step.perguntas.forEach(function(p) {
+    if (p.type === 'text' || p.type === 'number' || p.type === 'textarea') {
+      var el = document.getElementById('ans_' + p.id);
+      if (el) anamneseWizard.respostas[p.id] = el.value;
+    } else if (p.type === 'radio') {
+      var sel = document.querySelector('input[name="ans_' + p.id + '"]:checked');
+      if (sel) anamneseWizard.respostas[p.id] = sel.value;
+    }
+    // checkboxes are handled live via toggleCheck
+  });
+}
+
+function wizardNext() {
+  coletarEtapaAtual();
+  var step = ANS_STEPS[anamneseWizard.etapa];
+  var reqs = step.perguntas.filter(function(p) { return p.req; });
+  var missing = reqs.filter(function(p) { return !anamneseWizard.respostas[p.id]; });
+  if (missing.length > 0) {
+    toast('⚠ Preencha: ' + missing[0].label);
+    return;
+  }
+  salvarRascunhoAnamnese();
+  anamneseWizard.etapa++;
+  renderWizardModal();
+}
+
+function wizardPrev() {
+  coletarEtapaAtual();
+  salvarRascunhoAnamnese();
+  anamneseWizard.etapa--;
+  renderWizardModal();
+}
+
+function salvarRascunhoAnamnese() {
+  if (!D.anamneses[anamneseWizard.aid]) D.anamneses[anamneseWizard.aid] = {};
+  D.anamneses[anamneseWizard.aid].respostas = JSON.parse(JSON.stringify(anamneseWizard.respostas));
+  D.anamneses[anamneseWizard.aid].etapa = anamneseWizard.etapa;
+  D.anamneses[anamneseWizard.aid].finalizada = false;
+  saveLocal();
+}
+
+function wizardFinalizar() {
+  coletarEtapaAtual();
+  var step = ANS_STEPS[anamneseWizard.etapa];
+  var reqs = step.perguntas.filter(function(p) { return p.req; });
+  var missing = reqs.filter(function(p) { return !anamneseWizard.respostas[p.id]; });
+  if (missing.length > 0) {
+    toast('⚠ Preencha: ' + missing[0].label);
+    return;
+  }
+  D.anamneses[anamneseWizard.aid] = {
+    respostas: JSON.parse(JSON.stringify(anamneseWizard.respostas)),
+    etapa: ANS_STEPS.length,
+    finalizada: true,
+    dataFim: new Date().toISOString()
+  };
+  saveLocal();
+  closeM();
+  toast('✓ Anamnese finalizada! Gerando relatório...');
+  setTimeout(function() { verRelatorioAnamnese(anamneseWizard.aid); }, 400);
+  render();
+}
+
+function fecharWizard() {
+  coletarEtapaAtual();
+  salvarRascunhoAnamnese();
+  closeM();
+  render();
+  toast('✓ Progresso salvo automaticamente');
+}
+
+/* ---- Relatório do Personal Trainer ---- */
+function verRelatorioAnamnese(aid) {
+  var a = D.alunos.find(function(x){ return x.id === aid; });
+  var an = D.anamneses[aid];
+  if (!a || !an || !an.finalizada) { toast('⚠ Anamnese não finalizada'); return; }
+  var R = an.respostas;
+
+  var rel = gerarRelatorio(a, R);
+
+  var mc = document.getElementById('mc');
+  mc.innerHTML = '<div class="modal-backdrop" onclick="if(event.target===this)closeM()">'
+    + '<div class="modal" style="max-width:800px;max-height:92vh;overflow-y:auto;padding:0">'
+    + '<div style="background:var(--bg2);border-bottom:1px solid var(--border);padding:16px 20px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:10">'
+    +   '<div style="width:40px;height:40px;border-radius:50%;background:' + (a.cor||'#5090FF') + '33;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;color:' + (a.cor||'#5090FF') + '">' + a.ini + '</div>'
+    +   '<div style="flex:1"><div style="font-weight:700;font-size:16px;color:var(--text)">Relatório — ' + a.nome + '</div>'
+    +   '<div style="font-size:11px;color:var(--text3)">Anamnese Inteligente · Gerado em ' + fmtDate(an.dataFim) + ' · EXCLUSIVO DO PERSONAL</div></div>'
+    +   '<button class="btn btn-ghost btn-sm" onclick="closeM()"><i class="ti ti-x"></i></button>'
+    + '</div>'
+    + '<div style="padding:20px 24px">' + rel + '</div>'
+    + '<div style="padding:16px 24px;border-top:1px solid var(--border);display:flex;justify-content:flex-end;gap:8px;background:var(--bg2);position:sticky;bottom:0">'
+    +   '<button class="btn btn-ghost" onclick="closeM()">Fechar</button>'
+    + '</div>'
+    + '</div></div>';
+}
+
+function gerarRelatorio(a, R) {
+  // Helper
+  function sec(titulo, icone, cor, conteudo) {
+    cor = cor || 'var(--accent)';
+    return '<div style="margin-bottom:24px">'
+      + '<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border)">'
+      +   '<i class="ti ' + icone + '" style="color:' + cor + ';font-size:18px"></i>'
+      +   '<span style="font-weight:700;font-size:14px;color:' + cor + '">' + titulo + '</span>'
+      + '</div>'
+      + conteudo
+      + '</div>';
+  }
+  function row(label, val) {
+    if (!val) return '';
+    return '<div style="display:flex;gap:8px;margin-bottom:6px;font-size:13px">'
+      + '<span style="color:var(--text3);min-width:160px;flex-shrink:0">' + label + '</span>'
+      + '<span style="color:var(--text);font-weight:500">' + (Array.isArray(val) ? val.join(', ') : val) + '</span>'
+      + '</div>';
+  }
+  function badge(txt, cor) {
+    return '<span style="background:' + cor + '22;color:' + cor + ';font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-right:6px;margin-bottom:4px;display:inline-block">' + txt + '</span>';
+  }
+  function alert2(msg, cor) {
+    return '<div style="background:' + cor + '22;border-left:3px solid ' + cor + ';padding:10px 14px;border-radius:0 8px 8px 0;margin-bottom:8px;font-size:13px;color:var(--text2)">' + msg + '</div>';
+  }
+  function scoreBar(val, max, cor) {
+    var pct = Math.round((val/max)*100);
+    return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">'
+      + '<div style="flex:1;background:var(--bg4);border-radius:4px;height:8px;overflow:hidden">'
+      + '<div style="background:' + cor + ';height:8px;width:' + pct + '%"></div>'
+      + '</div>'
+      + '<span style="font-size:13px;font-weight:700;color:' + cor + ';min-width:40px">' + val + '/' + max + '</span>'
+      + '</div>';
+  }
+
+  // ── Classificação de experiência
+  var exp = 'Iniciante';
+  var tempoTr = R.tempoTreino || '';
+  if (tempoTr.indexOf('2 a 5') >= 0 || tempoTr.indexOf('Mais de 5') >= 0) exp = 'Avançado';
+  else if (tempoTr.indexOf('1 a 2') >= 0 || tempoTr.indexOf('6 meses a 1') >= 0) exp = 'Intermediário';
+  else if (R.jaTreinou === 'Nunca treinei') exp = 'Iniciante';
+  var expCor = exp === 'Avançado' ? 'var(--green)' : exp === 'Intermediário' ? 'var(--amber)' : 'var(--blue)';
+
+  // ── Scores
+  var potResult = 70, potAder = 70, riscoLesao = 20, riscoAbandono = 20;
+
+  // Potencial de resultado
+  if (exp === 'Iniciante') potResult = 85;
+  else if (exp === 'Intermediário') potResult = 70;
+  else potResult = 60;
+  if (R.treinandoAtual === 'Sim') potResult += 5;
+  if ((R.agua||'').indexOf('2-3') >= 0 || (R.agua||'').indexOf('Mais de 3') >= 0) potResult += 5;
+  potResult = Math.min(100, potResult);
+
+  // Risco de lesão
+  if (R.possuiLesoes === 'Sim') riscoLesao += 25;
+  var dorRegs = R.dorRegioes || [];
+  riscoLesao += Math.min(40, dorRegs.filter(function(x){ return x !== 'Nenhuma dessas'; }).length * 8);
+  if ((R.liberacaoMedica||'').indexOf('Não') === 0) riscoLesao += 10;
+  riscoLesao = Math.min(100, riscoLesao);
+
+  // Risco de abandono
+  var abandonoFatores = R.abandono || [];
+  riscoAbandono += abandonoFatores.length * 5;
+  if ((R.nivelEstresse||'').indexOf('7-8') >= 0 || (R.nivelEstresse||'').indexOf('9-10') >= 0) riscoAbandono += 15;
+  if ((R.qualSono||'').indexOf('0-3') >= 0 || (R.qualSono||'').indexOf('4-5') >= 0) riscoAbandono += 10;
+  if ((R.qualRecup||'').indexOf('Ruim') >= 0) riscoAbandono += 10;
+  riscoAbandono = Math.min(100, riscoAbandono);
+
+  // Potencial de aderência (inverso de abandono, ajustado por motivação)
+  potAder = Math.max(30, 95 - riscoAbandono);
+  if (R.motivacao && R.motivacao.length > 20) potAder = Math.min(100, potAder + 5);
+
+  // ── Geração do HTML do relatório
+  var html = '';
+
+  // 1. Resumo Executivo
+  html += sec('1. Resumo Executivo', 'ti-user-circle', 'var(--accent)',
+    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">'
+    + row('Nome', R.nome || a.nome)
+    + row('Idade', R.idade ? R.idade + ' anos' : '')
+    + row('Sexo', R.sexo)
+    + row('Altura / Peso', (R.altura ? R.altura + 'cm' : '') + (R.peso ? ' / ' + R.peso + 'kg' : ''))
+    + row('Profissão', R.profissao)
+    + row('Rotina de trabalho', R.rotina)
+    + row('Dias disponíveis', R.diasTreino)
+    + row('Tempo por sessão', R.tempoSessao)
+    + row('Horário preferido', R.horario)
+    + row('Objetivo principal', R.objPrincipal)
+    + row('Local de treino', R.localTreino)
+    + '</div>'
+  );
+
+  // 2. Classificação
+  html += sec('2. Classificação de Experiência', 'ti-certificate', expCor,
+    '<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">'
+    + badge(exp, expCor.replace('var(','').replace(')',''))
+    + '</div>'
+    + '<div style="font-size:13px;color:var(--text2);line-height:1.7">'
+    + (exp === 'Iniciante'
+        ? 'Aluno sem experiência significativa. Foco em aprendizado de técnica, criação de hábito e progressão gradual. Volume e intensidade inicial devem ser conservadores.'
+        : exp === 'Intermediário'
+        ? 'Aluno com base técnica estabelecida. Pode suportar volume moderado-alto e precisa de periodização para continuar evoluindo. Foco em identificar e corrigir pontos fracos.'
+        : 'Aluno experiente com sólido repertório técnico. Necessita de periodização avançada, estratégias de sobrecarga progressiva e atenção especial à recuperação e prevenção de lesões.')
+    + '</div>'
+  );
+
+  // 3. Riscos
+  var riscoOrtop = [], riscoCard = [], riscoComp = [];
+  if (R.possuiLesoes === 'Sim') riscoOrtop.push('🔴 Histórico de lesões — avaliar movimentos restritos');
+  var dregs = (R.dorRegioes||[]).filter(function(x){ return x !== 'Nenhuma dessas'; });
+  if (dregs.length > 0) riscoOrtop.push('🟡 Dor em: ' + dregs.join(', ') + ' — adaptar exercícios correspondentes');
+  if ((R.agachaProfundo||'').indexOf('Não') === 0) riscoOrtop.push('🟡 Limitação no agachamento profundo — avaliar mobilidade de tornozelo/quadril');
+  if ((R.bracosAcimaCabeca||'').indexOf('dificuldade') >= 0 || (R.bracosAcimaCabeca||'').indexOf('Não') === 0) riscoOrtop.push('🟡 Limitação na elevação de ombros — restringir press vertical no início');
+  var sintCard = (R.sintCardiaco||[]).filter(function(x){ return x !== 'Nenhum desses'; });
+  if (sintCard.length > 0) riscoCard.push('🔴 ATENÇÃO CARDIOVASCULAR: ' + sintCard.join(', ') + ' — exigir liberação médica ANTES de iniciar');
+  if (R.liberacaoMedica === 'Não') riscoCard.push('🟡 Sem liberação médica — solicitar antes de iniciar treinos intensos');
+  var histFam = (R.histFamiliar||[]).filter(function(x){ return x !== 'Nenhum desses'; });
+  if (histFam.length > 0) riscoCard.push('🟡 Histórico familiar: ' + histFam.join(', ') + ' — monitorar FC e PA');
+  var ab = (R.abandono||[]);
+  if (ab.indexOf('Falta de resultado visível') >= 0) riscoComp.push('🟡 Expectativa de resultados rápidos — comunicar expectativas realistas na 1ª semana');
+  if (ab.indexOf('Treinos monótonos') >= 0 || ab.indexOf('Tédio / monotonia') >= 0) riscoComp.push('🟡 Sensível à monotonia — variar estímulos a cada 3-4 semanas');
+  if (ab.indexOf('Falta de tempo') >= 0) riscoComp.push('🟡 Falta de tempo como fator de abandono — ter plano B com treinos mais curtos');
+  if ((R.nivelEstresse||'').indexOf('7-8') >= 0 || (R.nivelEstresse||'').indexOf('9-10') >= 0) riscoComp.push('🔴 Estresse elevado — monitorar recuperação, evitar volume excessivo no início');
+  if ((R.qualSono||'').indexOf('0-3') >= 0 || (R.qualSono||'').indexOf('4-5') >= 0) riscoComp.push('🟡 Sono de baixa qualidade — discutir higiene do sono, reduzir volume se necessário');
+
+  html += sec('3. Riscos Identificados', 'ti-alert-triangle', 'var(--red)',
+    '<div style="font-weight:600;font-size:12px;color:var(--text3);text-transform:uppercase;margin-bottom:8px">Ortopédico</div>'
+    + (riscoOrtop.length ? riscoOrtop.map(function(r){ return alert2(r, riscoOrtop[0][1]==='🔴'?'#FF5555':'#F0A020'); }).join('') : alert2('✓ Sem riscos ortopédicos significativos identificados','var(--green)'))
+    + '<div style="font-weight:600;font-size:12px;color:var(--text3);text-transform:uppercase;margin:12px 0 8px">Cardiovascular</div>'
+    + (riscoCard.length ? riscoCard.map(function(r){ return alert2(r, r.indexOf('🔴')>=0?'#FF5555':'#F0A020'); }).join('') : alert2('✓ Sem riscos cardiovasculares identificados','var(--green)'))
+    + '<div style="font-weight:600;font-size:12px;color:var(--text3);text-transform:uppercase;margin:12px 0 8px">Comportamental</div>'
+    + (riscoComp.length ? riscoComp.map(function(r){ return alert2(r, r.indexOf('🔴')>=0?'#FF5555':'#F0A020'); }).join('') : alert2('✓ Perfil comportamental favorável','var(--green)'))
+  );
+
+  // 4. Análise Biomecânica
+  var bioLimitacoes = [];
+  if ((R.agachaProfundo||'').indexOf('Não') === 0 || (R.agachaProfundo||'').indexOf('dificuldade') >= 0)
+    bioLimitacoes.push({ area: 'Agachamento', detalhe: 'Limitação no ROM completo — provável restrição de tornozelo (dorsiflexão) e/ou mobilidade de quadril. Iniciar com agachamento goblet, elevação de calcanhar.' });
+  if ((R.bracosAcimaCabeca||'').indexOf('dificuldade') >= 0 || (R.bracosAcimaCabeca||'').indexOf('Não') === 0)
+    bioLimitacoes.push({ area: 'Press vertical', detalhe: 'Limitação na elevação de ombros — possível encurtamento de peitoral/deltóide posterior ou instabilidade de escápula. Evitar press acima da cabeça no início.' });
+  if ((R.tocaPes||'') === 'Não')
+    bioLimitacoes.push({ area: 'Cadeia posterior', detalhe: 'Encurtamento severo de isquiotibiais — adaptar deadlift e exercícios de cadeia posterior. Priorizar flexibilidade.' });
+  if (dregs.indexOf('Lombar / Coluna baixa') >= 0)
+    bioLimitacoes.push({ area: 'Lombar', detalhe: 'Dor na região lombar — evitar hiperextensão, cuidado com deadlift convencional e agachamento no início. Fortalecer core progressivamente.' });
+  if (dregs.indexOf('Joelhos') >= 0)
+    bioLimitacoes.push({ area: 'Joelhos', detalhe: 'Sintomatologia nos joelhos — evitar leg press com range excessivo, cuidado com agachamento profundo e exercícios de impacto.' });
+  if (dregs.indexOf('Ombros') >= 0)
+    bioLimitacoes.push({ area: 'Ombros', detalhe: 'Dor nos ombros — evitar press acima da cabeça e elevações frontais pesadas no início. Priorizar trabalho de manguito rotador.' });
+
+  html += sec('4. Análise Biomecânica', 'ti-body-scan', 'var(--blue)',
+    bioLimitacoes.length === 0
+      ? alert2('✓ Sem limitações biomecânicas significativas identificadas na entrevista','var(--green)')
+      : bioLimitacoes.map(function(bl){
+          return '<div style="background:var(--bg4);border-radius:8px;padding:12px 14px;margin-bottom:8px">'
+            + '<div style="font-weight:700;color:var(--amber);font-size:13px;margin-bottom:4px"><i class="ti ti-alert-circle"></i> ' + bl.area + '</div>'
+            + '<div style="font-size:13px;color:var(--text2);line-height:1.6">' + bl.detalhe + '</div>'
+            + '</div>';
+        }).join('')
+  );
+
+  // 5. Exercícios recomendados e evitados
+  var exercRec = [], exercEvitar = [];
+  var obj = R.objPrincipal || '';
+  var localT = R.localTreino || '';
+
+  // Base recommendations by objective
+  if (obj.indexOf('Hipertrofia') >= 0) {
+    exercRec = [
+      { grupo: 'Peito', exs: 'Supino reto (barra/halteres), Supino inclinado, Crossover, Peck Deck' },
+      { grupo: 'Costas', exs: 'Puxada frontal, Remada curvada, Remada cavalinho, Pullover' },
+      { grupo: 'Ombros', exs: 'Desenvolvimento com halteres, Elevação lateral, Encolhimento' },
+      { grupo: 'Braços', exs: 'Rosca direta, Rosca alternada, Tríceps pulley, Tríceps mergulho' },
+      { grupo: 'Pernas', exs: 'Agachamento livre, Leg press, Cadeira extensora, Mesa flexora, Stiff' },
+      { grupo: 'Glúteos', exs: 'Hip thrust, Agachamento sumô, Passada, Extensão de quadril na polia' },
+      { grupo: 'Core', exs: 'Prancha isométrica, Dead bug, Abdominal infra, Russian twist' }
+    ];
+  } else if (obj.indexOf('Emagrecimento') >= 0) {
+    exercRec = [
+      { grupo: 'Multiarticulares (prioridade)', exs: 'Agachamento, Deadlift, Supino, Remada, Desenvolvimento' },
+      { grupo: 'Circuitos compostos', exs: 'Complexos de barra/halteres, circuitos alternados agonista/antagonista' },
+      { grupo: 'Cardio complementar', exs: 'HIIT (20 min), Caminhada inclinada, Bike ergométrica' },
+      { grupo: 'Core', exs: 'Prancha, Mountain climber, Abdominal funcional' }
+    ];
+  } else {
+    exercRec = [
+      { grupo: 'Base geral', exs: 'Agachamento, Supino, Remada, Desenvolvimento, Deadlift, Prancha' },
+      { grupo: 'Funcional', exs: 'Passada, Afundo, Flexões, Remada invertida, Step up' },
+      { grupo: 'Cardio', exs: 'Caminhada, Bike, Elíptico — 20-30 min após musculação' }
+    ];
+  }
+
+  // Avoid based on limitations
+  if (dregs.indexOf('Joelhos') >= 0) exercEvitar.push('Cadeira extensora com carga alta, agachamento hack profundo, leg press com ângulo extremo');
+  if (dregs.indexOf('Lombar / Coluna baixa') >= 0) exercEvitar.push('Good morning pesado, hiperextensão de costas com carga, deadlift convencional no início');
+  if (dregs.indexOf('Ombros') >= 0) exercEvitar.push('Press militar pesado, elevação frontal com barra, dips com peso');
+  if ((R.agachaProfundo||'').indexOf('Não') >= 0) exercEvitar.push('Agachamento profundo livre sem progressão prévia de mobilidade');
+  if (sintCard.length > 0) exercEvitar.push('Exercícios isométricos prolongados com alta carga, Valsalva extrema sem orientação médica');
+
+  html += sec('5. Exercícios Recomendados', 'ti-barbell', 'var(--green)',
+    exercRec.map(function(e) {
+      return '<div style="margin-bottom:10px">'
+        + '<div style="font-weight:700;font-size:12px;color:var(--accent);text-transform:uppercase;margin-bottom:3px">' + e.grupo + '</div>'
+        + '<div style="font-size:13px;color:var(--text2)">' + e.exs + '</div>'
+        + '</div>';
+    }).join('')
+  );
+
+  if (exercEvitar.length > 0) {
+    html += sec('6. Exercícios a Evitar Temporariamente', 'ti-ban', 'var(--red)',
+      exercEvitar.map(function(e){ return alert2('⚠ ' + e, '#FF5555'); }).join('')
+    );
+  }
+
+  // 7. Protocolo de Mobilidade
+  var mobExs = [];
+  if ((R.agachaProfundo||'').indexOf('Não') >= 0 || (R.agachaProfundo||'').indexOf('dificuldade') >= 0)
+    mobExs.push({ nome: 'Dorsiflexão de tornozelo', freq: 'Diário', tempo: '2 min/lado', prog: 'Band distraction → Wall drill → Squat to stand' });
+  if ((R.tocaPes||'') !== 'Sim')
+    mobExs.push({ nome: 'Mobilidade de isquiotibiais', freq: 'Diário', tempo: '2-3 min/lado', prog: 'Pancada sentado → PNF → Stiff progressivo' });
+  if ((R.bracosAcimaCabeca||'').indexOf('dificuldade') >= 0)
+    mobExs.push({ nome: 'Mobilidade torácica e de ombros', freq: '5x/semana', tempo: '3 min', prog: 'Cat-cow → Thoracic extension on roller → Ombro com band' });
+  if (dregs.indexOf('Quadril') >= 0 || (R.encurtamentos||[]).indexOf('Iliopsoas (flexor de quadril)') >= 0)
+    mobExs.push({ nome: 'Mobilidade de quadril / iliopsoas', freq: 'Diário', tempo: '2 min/lado', prog: 'Lunge hip flexor → 90/90 → Deep squat hold' });
+  if (mobExs.length === 0)
+    mobExs.push({ nome: 'Rotina de mobilidade geral', freq: '3-4x/semana', tempo: '10-15 min', prog: 'Foam rolling → joint circles → mobility flows' });
+
+  html += sec('7. Protocolo de Mobilidade', 'ti-arrows-move', 'var(--blue)',
+    '<div style="font-size:12px;color:var(--text3);margin-bottom:10px">Realizar preferencialmente antes do treino ou em dias separados</div>'
+    + mobExs.map(function(m) {
+        return '<div style="background:var(--bg4);border-radius:8px;padding:12px 14px;margin-bottom:8px">'
+          + '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">'
+          +   '<span style="font-weight:700;color:var(--text);font-size:13px">' + m.nome + '</span>'
+          +   '<span style="font-size:11px;color:var(--accent)">' + m.freq + ' · ' + m.tempo + '</span>'
+          + '</div>'
+          + '<div style="font-size:12px;color:var(--text3)">Progressão: ' + m.prog + '</div>'
+          + '</div>';
+      }).join('')
+  );
+
+  // 8. Estratégia de Treino
+  var diasNum = 3;
+  var dt = R.diasTreino || '3 dias';
+  if (dt.indexOf('2') >= 0) diasNum = 2;
+  else if (dt.indexOf('4') >= 0) diasNum = 4;
+  else if (dt.indexOf('5') >= 0) diasNum = 5;
+  else if (dt.indexOf('6') >= 0) diasNum = 6;
+
+  var divisaoSug = '';
+  if (diasNum <= 2) divisaoSug = 'Full Body A/B (2 dias)';
+  else if (diasNum === 3) divisaoSug = 'Full Body 3x/semana ou Push/Pull/Legs';
+  else if (diasNum === 4) divisaoSug = 'Upper/Lower (ABAB) ou Push A / Pull A / Push B / Pull B';
+  else if (diasNum === 5) divisaoSug = 'Push/Pull/Legs/Upper/Lower ou divisão por grupamento';
+  else divisaoSug = 'PPL duplo (Push/Pull/Legs x2)';
+
+  var volSemanal = exp === 'Iniciante' ? '10-15 séries/grupo/semana' : exp === 'Intermediário' ? '15-20 séries/grupo/semana' : '18-25 séries/grupo/semana';
+  var repRange = obj.indexOf('Força') >= 0 ? '3-6 reps (força) + 6-10 reps (complementar)' : obj.indexOf('Emagrecimento') >= 0 ? '10-20 reps com curto descanso' : '6-15 reps (hipertrofia — faixa mista)';
+  var descanso = obj.indexOf('Força') >= 0 ? '3-5 min entre séries pesadas' : '60-120 segundos entre séries';
+
+  html += sec('8. Estratégia de Treino', 'ti-dumbbell', 'var(--accent)',
+    row('Dias/semana', diasNum + ' dias')
+    + row('Divisão sugerida', divisaoSug)
+    + row('Volume semanal', volSemanal)
+    + row('Faixa de repetições', repRange)
+    + row('Descanso entre séries', descanso)
+    + row('Progressão', 'Dobrar progressiva: aumentar 2.5-5kg a cada 2 semanas nas multiarticulares / 1-2.5kg nos isolamentos')
+    + row('Intensidade inicial', exp === 'Iniciante' ? '60-70% 1RM' : '65-80% 1RM')
+  );
+
+  // 9. Periodização
+  html += sec('9. Periodização Sugerida', 'ti-calendar-stats', 'var(--amber)',
+    '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">'
+    + ['4 semanas','8 semanas','12 semanas'].map(function(semanas, i) {
+        var conteudo = [
+          'Adaptação neuromuscular, aprender técnica dos movimentos principais. Volume baixo-moderado (70-80% 1RM). Construir consistência.',
+          'Desenvolvimento de base. Aumentar volume progressivamente (+1-2 séries/grupo). Introduzir variações de exercícios. Semana de deload na semana 8.',
+          'Máxima expressão do bloco. Fase de intensificação (semanas 9-11) + deload completo (semana 12). Testar força nos movimentos principais.'
+        ][i];
+        return '<div style="background:var(--bg4);border-radius:8px;padding:14px">'
+          + '<div style="font-weight:700;color:var(--amber);margin-bottom:8px;font-size:13px">' + semanas + '</div>'
+          + '<div style="font-size:12px;color:var(--text2);line-height:1.6">' + conteudo + '</div>'
+          + '</div>';
+      }).join('')
+    + '</div>'
+  );
+
+  // 10. Perfil Comportamental
+  var perf = 'Executor';
+  var perfDesc = '';
+  var motivacao = (R.motivacao||'').toLowerCase();
+  var desmot = (R.desmotivacao||'').toLowerCase();
+  if (motivacao.indexOf('result') >= 0 || motivacao.indexOf('record') >= 0) perf = 'Competitivo';
+  else if (motivacao.indexOf('saúde') >= 0 || motivacao.indexOf('bem-estar') >= 0) perf = 'Analítico';
+  else if (motivacao.indexOf('motivação') >= 0 || motivacao.indexOf('acompan') >= 0) perf = 'Emocional';
+
+  var perfDescricoes = {
+    'Analítico': 'Valoriza dados, progressão mensurável e explicações científicas. Gosta de entender o porquê de cada exercício. Estratégia: compartilhar números de progresso, explicar a lógica dos protocolos.',
+    'Executor': 'Foco em ação e resultados. Prefere direcionamento claro sem muita explicação. Estratégia: ser direto, dar treinos bem estruturados, celebrar cada marco alcançado.',
+    'Competitivo': 'Motivado por desafios, recordes pessoais e superação. Estratégia: criar desafios de progresso, comparar com seus próprios recordes, gamificar a evolução.',
+    'Emocional': 'Precisa de conexão, apoio e reconhecimento. Muito sensível ao ambiente e ao relacionamento com o personal. Estratégia: manter contato frequente, celebrar conquistas não físicas, criar vínculo de confiança.'
+  };
+
+  html += sec('10. Perfil Comportamental', 'ti-brain', 'var(--blue)',
+    '<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">'
+    + badge(perf, '#5090FF')
+    + '</div>'
+    + '<div style="font-size:13px;color:var(--text2);line-height:1.7;background:var(--bg4);padding:14px;border-radius:8px">'
+    + (perfDescricoes[perf] || '')
+    + '</div>'
+    + (R.motivacao ? '<div style="margin-top:10px">' + row('Motivadores identificados', R.motivacao) + '</div>' : '')
+    + (R.desmotivacao ? '<div>' + row('Desmotivadores', R.desmotivacao) + '</div>' : '')
+  );
+
+  // 11. Estratégia de Retenção
+  html += sec('11. Estratégia de Retenção — 90 dias', 'ti-heart-handshake', 'var(--green)',
+    '<div style="font-weight:600;font-size:12px;color:var(--text3);text-transform:uppercase;margin-bottom:8px">Momentos de Risco</div>'
+    + alert2('Semanas 2-3: Primeiros resultados ainda não visíveis — risco de frustração. Ação: checar expectativas, mostrar progresso de performance (carga, técnica)', '#F0A020')
+    + alert2('Semana 4-5: Efeito novidade passa. Ação: renovar desafio, apresentar nova variação, comemorar 1 mês', '#F0A020')
+    + alert2('Mês 2: Plateau inicial. Ação: ajustar programa, aumentar desafio, mostrar dados de evolução', '#F0A020')
+    + alert2('Semana 10-12: Aproximação do fim do pacote. Ação: conversa de renovação com antecedência, mostrar conquistas e próximos objetivos', '#5090FF')
+    + '<div style="font-weight:600;font-size:12px;color:var(--text3);text-transform:uppercase;margin:12px 0 8px">Ações Preventivas</div>'
+    + alert2('✓ Fazer mini-avaliação de resultado a cada 4 semanas', '#50E0A0')
+    + alert2('✓ Enviar mensagem de check-in 1x/semana fora do treino', '#50E0A0')
+    + alert2('✓ Celebrar cada PR (recorde pessoal) no treino', '#50E0A0')
+    + (ab.indexOf('Falta de tempo') >= 0 ? alert2('✓ Ter plano B de treino de 30 min para semanas sobrecarregadas', '#50E0A0') : '')
+    + (ab.indexOf('Tédio / monotonia') >= 0 ? alert2('✓ Mudar ao menos 30% dos exercícios a cada 3-4 semanas', '#50E0A0') : '')
+  );
+
+  // 12. Score do Aluno
+  html += sec('12. Score do Aluno', 'ti-chart-radar', 'var(--accent)',
+    '<div style="margin-bottom:8px">'
+    + '<div style="font-size:12px;color:var(--text3);margin-bottom:4px">Potencial de Resultado</div>'
+    + scoreBar(potResult, 100, '#C8F04D')
+    + '</div>'
+    + '<div style="margin-bottom:8px">'
+    + '<div style="font-size:12px;color:var(--text3);margin-bottom:4px">Potencial de Aderência</div>'
+    + scoreBar(potAder, 100, '#50E0A0')
+    + '</div>'
+    + '<div style="margin-bottom:8px">'
+    + '<div style="font-size:12px;color:var(--text3);margin-bottom:4px">Risco de Lesão</div>'
+    + scoreBar(riscoLesao, 100, '#FF5555')
+    + '</div>'
+    + '<div style="margin-bottom:8px">'
+    + '<div style="font-size:12px;color:var(--text3);margin-bottom:4px">Risco de Abandono</div>'
+    + scoreBar(riscoAbandono, 100, '#F0A020')
+    + '</div>'
+  );
+
+  // 13. Mensagens Personalizadas
+  var nomeAluno = (R.nome || a.nome).split(' ')[0];
+  html += sec('13. Plano de Comunicação — Mensagens Prontas', 'ti-message-circle', 'var(--blue)',
+    '<div style="display:flex;flex-direction:column;gap:10px">'
+    + msgBox('Boas-vindas', 'ti-hand-stop',
+        'Olá, ' + nomeAluno + '! Bem-vindo(a) ao programa! 🎉\n\nFiquei muito feliz em conhecer sua história e entender seus objetivos. A partir de agora temos um plano construído especialmente para você.\n\nSua jornada começa agora. Vamos juntos!')
+    + msgBox('Após 1º treino', 'ti-trophy',
+        'E aí, ' + nomeAluno + '! Como se sentiu após o primeiro treino? 💪\n\nO primeiro passo é sempre o mais importante. Qualquer dúvida ou desconforto, me avisa — estou aqui para ajustar o que precisar.')
+    + msgBox('Para aluno faltante', 'ti-bell',
+        'Oi, ' + nomeAluno + '! Notei que você não apareceu hoje.\n\nSei que a rotina às vezes complica, mas cada treino faz diferença no seu resultado. O que aconteceu? Posso te ajudar a reorganizar a semana!')
+    + msgBox('Para aluno desmotivado', 'ti-heart',
+        nomeAluno + ', lembra do motivo que te trouxe até aqui?\n\nResultados consistentes vêm de consistência, não de perfeição. Você está no caminho certo — vamos conversar e ajustar o que precisar para que os treinos se encaixem melhor na sua vida.')
+    + msgBox('Comemoração', 'ti-star',
+        '🏆 PARABÉNS, ' + nomeAluno.toUpperCase() + '!\n\nVocê acabou de alcançar [resultado específico]. Isso é fruto de dedicação e consistência real.\n\nContinue assim — o melhor ainda está por vir!')
+    + msgBox('Renovação', 'ti-refresh',
+        'Oi, ' + nomeAluno + '! Seu pacote está chegando ao fim e quero conversar sobre os próximos passos.\n\nOlhando para a sua evolução até agora, temos muito mais a conquistar juntos. Quando podemos bater um papo sobre o próximo ciclo?')
+    + '</div>'
+  );
+
+  // 14. Alertas e Insights
+  var alertas = [];
+  if (sintCard.length > 0) alertas.push({ tipo: 'CRÍTICO', msg: 'Sintomas cardiovasculares relatados — exigir liberação médica antes de iniciar', cor: '#FF5555' });
+  if (riscoLesao > 50) alertas.push({ tipo: 'ATENÇÃO', msg: 'Alto risco de lesão — iniciar com cargas conservadoras e priorizar técnica', cor: '#F0A020' });
+  if ((R.qualSono||'').indexOf('0-3') >= 0) alertas.push({ tipo: 'ATENÇÃO', msg: 'Sono muito ruim — recuperação prejudicada. Evitar volume alto e monitorar fadiga', cor: '#F0A020' });
+  if ((R.nivelEstresse||'').indexOf('9-10') >= 0) alertas.push({ tipo: 'ATENÇÃO', msg: 'Estresse extremo — pode comprometer resultados. Considerar técnicas de regulação', cor: '#F0A020' });
+  if (riscoAbandono > 60) alertas.push({ tipo: 'ATENÇÃO', msg: 'Alto risco de abandono — aumentar frequência de check-ins e micro-vitórias', cor: '#F0A020' });
+  if (R.liberacaoMedica === 'Não') alertas.push({ tipo: 'AVISO', msg: 'Sem liberação médica — solicitar antes de elevar intensidade', cor: '#5090FF' });
+
+  if (alertas.length > 0) {
+    html += sec('14. Alertas Automáticos', 'ti-alarm', 'var(--red)',
+      alertas.map(function(al){
+        return '<div style="background:' + al.cor + '22;border:1px solid ' + al.cor + '44;border-radius:8px;padding:10px 14px;margin-bottom:8px;display:flex;align-items:center;gap:10px">'
+          + '<span style="background:' + al.cor + ';color:#000;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;flex-shrink:0">' + al.tipo + '</span>'
+          + '<span style="font-size:13px;color:var(--text2)">' + al.msg + '</span>'
+          + '</div>';
+      }).join('')
+    );
+  }
+
+  return html;
+}
+
+function msgBox(titulo, icone, texto) {
+  return '<div style="background:var(--bg4);border-radius:8px;padding:14px">'
+    + '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">'
+    +   '<i class="ti ' + icone + '" style="color:var(--accent)"></i>'
+    +   '<span style="font-weight:600;font-size:13px;color:var(--text)">' + titulo + '</span>'
+    + '</div>'
+    + '<pre style="font-family:inherit;font-size:12px;color:var(--text2);white-space:pre-wrap;line-height:1.6;margin:0">' + texto + '</pre>'
+    + '</div>';
+}
+
 // Load from cloud first, then render
 loadLocal(); render(); // render immediately from cache
 loadCloud(function() { render(); }); // then refresh from cloud
