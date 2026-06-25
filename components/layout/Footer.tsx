@@ -110,9 +110,18 @@ export default function Footer() {
             &copy; {currentYear} Montinho Personal Trainer. Todos os direitos
             reservados.
           </p>
-          <p className="text-gray-600 text-xs">
-            Alphaville • Barueri • Santana de Parnaíba • Online em todo o Brasil
-          </p>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/lgpd"
+              className="text-gray-600 hover:text-gray-400 text-xs transition-colors"
+            >
+              Política de Privacidade & LGPD
+            </Link>
+            <span className="text-gray-700 text-xs">•</span>
+            <p className="text-gray-600 text-xs">
+              Alphaville • Barueri • Santana de Parnaíba
+            </p>
+          </div>
         </div>
       </div>
     </footer>

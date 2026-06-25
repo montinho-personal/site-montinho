@@ -1,0 +1,50 @@
+# Montinho Personal Trainer
+
+> Personal Trainer especialista em emagrecimento, com atendimento presencial em Alphaville (Barueri e Santana de Parnaíba — SP) e consultoria online para todo o Brasil.
+
+## Quem é o Montinho
+
+Renato Montinho é personal trainer com mais de 20 anos de experiência em musculação e emagrecimento. A sua abordagem é baseada em ciência, experiência prática e acompanhamento humano próximo. Ele próprio viveu um processo de transformação corporal — perdeu peso significativo na adolescência e adultez — o que lhe dá uma perspetiva única para ajudar os seus clientes.
+
+## Serviços
+
+- **Personal Presencial** — Sessões individuais em Alphaville, Barueri e Santana de Parnaíba (SP). Inclui avaliação física, treinos 100% personalizados, correção de técnica em tempo real, suporte WhatsApp e reavaliações mensais.
+- **Consultoria Online** — Para todo o Brasil. Inclui anamnese, treino personalizado com vídeos demonstrativos, suporte diário via WhatsApp, check-ins semanais e reavaliações mensais.
+- **Modelo Híbrido** — Combinação de sessões presenciais e acompanhamento online.
+
+## Diferenciais
+
+- Experiência pessoal de transformação corporal
+- Método baseado em ciência (fisiologia, nutrição, periodização)
+- Acompanhamento próximo e individualizado
+- Mais de 20 anos de experiência em musculação
+- Resultados documentados com clientes reais
+
+## Público-alvo
+
+Adultos que querem emagrecer com saúde, ganhar massa muscular ou melhorar a condição física, seja presencialmente em Alphaville ou em qualquer lugar do Brasil via consultoria online.
+
+## Contacto
+
+- Site: https://www.montinhopersonal.com.br
+- WhatsApp: +55 11 98106-3409
+- Instagram: @montinho_personal
+- Localização: Alphaville, Barueri e Santana de Parnaíba — SP, Brasil
+
+## Páginas do site
+
+- `/` — Página inicial com apresentação, diferenciais, como funciona, resultados e depoimentos
+- `/minha-historia` — A história pessoal de transformação do Montinho
+- `/consultoria` — Detalhes dos serviços e modalidades de atendimento
+- `/resultados` — Fotos e depoimentos de clientes reais (antes e depois)
+- `/blog` — Artigos sobre treino, emagrecimento e saúde
+- `/faq` — Perguntas frequentes
+- `/contato` — Formulário e canais de contacto
+- `/lgpd` — Política de Privacidade e conformidade com a LGPD
+
+## Informações legais
+
+- Operado por: Renato Montinho
+- País: Brasil
+- Conformidade: Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018)
+- Política de Privacidade: https://www.montinhopersonal.com.br/lgpd
