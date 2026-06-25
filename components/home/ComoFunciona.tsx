@@ -3,9 +3,9 @@ import SectionTitle from "@/components/ui/SectionTitle";
 const steps = [
   {
     number: "01",
-    title: "Conversa Inicial",
+    title: "Conversa Inicial e Anamnese Inteligente",
     description:
-      "Começamos com uma conversa sem compromisso. Quero entender seu histórico, seus objetivos, sua rotina e o que já tentou antes. Sem julgamentos.",
+      "Começamos com uma conversa sem compromisso para entender sua história, objetivos e rotina. Em seguida, você preenche uma anamnese completa e inteligente, desenvolvida para identificar suas individualidades, limitações, preferências e fatores que influenciam diretamente seus resultados.",
   },
   {
     number: "02",
