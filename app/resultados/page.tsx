@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import SectionTitle from "@/components/ui/SectionTitle";
 
@@ -10,15 +11,52 @@ export const metadata: Metadata = {
 
 const resultados = [
   {
-    name: "Carlos M.",
-    age: "34 anos",
-    duration: "6 meses",
-    result: "−22kg de gordura",
-    modality: "Consultoria Online",
+    name: "Adriana Nascimento",
+    age: "43 anos",
+    duration: "8 meses",
+    result: "−20kg",
+    modality: "Modelo Híbrido",
+    photo: "/antes-depois-montinho-personal-trainer-2.jpg",
     description:
-      "Carlos chegou sem nunca ter se exercitado de forma consistente. Com um plano realista para sua rotina corrida de executivo, transformou o corpo sem abrir mão da vida social.",
+      "Adriana treinava há anos e já havia tentado diferentes esportes e métodos de treinamento, mas sem uma estratégia bem definida. Com um planejamento estruturado e treino periodizado, em poucos meses conquistou uma transformação que ela mesma não acreditava ser possível.",
     quote:
-      "Nunca acreditei que conseguiria. Mas com o método certo e alguém me acompanhando de perto, foi possível.",
+      "Finalmente entendi o que estava fazendo errado. Em 8 meses aprendi mais sobre meu corpo e minha mente do que em anos de academia.",
+  },
+  {
+    name: "Montinho",
+    age: "37 anos",
+    duration: "Uma vida toda dedicada",
+    result: "−40kg",
+    modality: "Transformação Pessoal",
+    photo: "/antes-depois-montinho-personal-trainer.jpg",
+    description:
+      "Durante anos, eu tentei de tudo para transformar meu corpo. Vivi o efeito sanfona, cometi erros, segui métodos que prometiam resultados rápidos e me frustrei inúmeras vezes. Quando finalmente encontrei um caminho baseado em ciência, estratégia e constância, minha vida mudou. Hoje, esse é o mesmo método que utilizo para ajudar meus alunos a conquistarem resultados reais.",
+    quote:
+      "Se eu consegui transformar minha própria história, acredito que posso ajudar você a transformar a sua também.",
+  },
+  {
+    name: "Natália Nascimento",
+    age: "40 anos",
+    duration: "9 meses",
+    result: "−10kg",
+    modality: "Personal Presencial · Alphaville",
+    photo: "/antes-depois-montinho-personal-trainer-3.jpg",
+    description:
+      "Natália já treinava há anos e sabia exatamente como executar os exercícios. Já havia conquistado um ótimo físico, mas vivia presa ao efeito sanfona. O que faltava não era esforço, e sim um planejamento estruturado, uma estratégia de treino e o suporte necessário para confiar no processo. Com consistência e acompanhamento, voltou a evoluir e conquistou uma transformação duradoura.",
+    quote:
+      "Percebi que não precisava treinar mais, e sim treinar com estratégia. Aprendi a confiar no processo e os resultados apareceram novamente.",
+  },
+  {
+    name: "Elisa Cruz",
+    age: "34 anos",
+    duration: "9 meses",
+    result: "−20kg",
+    modality: "Modelo Híbrido",
+    photo: "/antes-depois-montinho-personal-trainer-4.jpg",
+    description:
+      "Elisa já tinha decidido que era hora de mudar. O meu papel foi transformar essa decisão em um plano claro, adaptado à sua rotina e aos seus objetivos. Com um treino estratégico, acompanhamento próximo e confiança no processo, ela conquistou uma transformação consistente sem precisar viver em função da academia.",
+    quote:
+      "Ter um planejamento feito para a minha realidade fez toda a diferença. Pela primeira vez, consegui manter a consistência e ver resultados de verdade.",
   },
   {
     name: "Fernanda S.",
@@ -87,6 +125,7 @@ export default function Resultados() {
             eyebrow="Resultados"
             title="Transformações que falam por si"
             subtitle="Histórias reais de pessoas que confiaram no processo e transformaram suas vidas. Não são exceções — são a regra quando a abordagem é certa."
+            accent
           />
         </div>
       </section>
@@ -100,13 +139,24 @@ export default function Resultados() {
                 key={index}
                 className="border border-white/10 group hover:border-white/30 transition-colors duration-300"
               >
-                {/* Placeholder image */}
+                {/* Image */}
                 <div className="aspect-[4/3] bg-gray-900 overflow-hidden">
-                  <img
-                    src="https://placehold.co/400x300/1a1a1a/333333?text=Antes+%26+Depois"
-                    alt={`Transformação de ${item.name}`}
-                    className="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-300"
-                  />
+                  {item.photo ? (
+                    <Image
+                      src={item.photo}
+                      alt={`Transformação de ${item.name}`}
+                      width={600}
+                      height={450}
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                      className="opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                    />
+                  ) : (
+                    <img
+                      src="https://placehold.co/400x300/1a1a1a/333333?text=Antes+%26+Depois"
+                      alt={`Transformação de ${item.name}`}
+                      className="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-300"
+                    />
+                  )}
                 </div>
 
                 {/* Content */}
@@ -117,8 +167,11 @@ export default function Resultados() {
                       <p className="text-gray-500 text-xs">{item.age} · {item.modality}</p>
                     </div>
                     <span
-                      className="text-white font-bold text-sm text-right"
-                      style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                      className="font-bold text-sm text-right"
+                      style={{
+                        color: item.photo ? "#BA9E50" : "white",
+                        fontFamily: "var(--font-playfair), Georgia, serif",
+                      }}
                     >
                       {item.result}
                     </span>

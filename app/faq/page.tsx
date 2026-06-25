@@ -8,7 +8,7 @@ const faqs = [
   {
     question: "Em quanto tempo vou ver resultados?",
     answer:
-      "Resultados concretos aparecem geralmente entre 4 a 8 semanas de treino consistente. No entanto, o seu corpo começa a responder desde as primeiras semanas — mais energia, melhor disposição e qualidade de sono. Transformações visuais significativas acontecem em média entre 3 e 6 meses, dependendo do objetivo e da consistência.",
+      "Os resultados dependem principalmente da sua consistência. Quando você mantém uma boa frequência de treinos, segue o planejamento, faz o cardio conforme orientado e mantém uma alimentação alinhada aos seus objetivos, é comum já perceber mudanças nas primeiras semanas. Em cerca de dois meses, essas evoluções costumam ficar ainda mais evidentes. O meu compromisso é fazer com que você evolua de forma constante, respeitando o seu ritmo e construindo resultados duradouros.",
   },
   {
     question: "A consultoria online funciona tão bem quanto o presencial?",
@@ -44,11 +44,6 @@ const faqs = [
     question: "Preciso de academia própria ou você tem um local?",
     answer:
       "Para o atendimento presencial, o treino pode acontecer em academias parceiras na região de Alphaville ou em condomínios/residências com espaço adequado. Conversamos sobre o melhor arranjo para você. Para a consultoria online, o treino pode ser adaptado para academia, casa ou qualquer espaço disponível.",
-  },
-  {
-    question: "Você trabalha com nutrição também?",
-    answer:
-      "Forneço orientação nutricional integrada ao treino — o que é essencial para resultados reais. Para casos que demandem acompanhamento nutricional clínico mais específico (doenças, alergias, etc.), recomendo nutricionista parceiro. A minha orientação cobre macronutrientes, calorias, timing alimentar e estratégias práticas para o dia a dia.",
   },
   {
     question: "Tenho lesões. Posso treinar?",

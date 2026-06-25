@@ -6,5 +6,5 @@ export function getWhatsAppUrl(message: string = DEFAULT_MESSAGE): string {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
 }
 
-export const WHATSAPP_NUMBER_DISPLAY = "+55 (11) 99999-9999";
+export const WHATSAPP_NUMBER_DISPLAY = "+55 (11) 98106-3409";
 export { WHATSAPP_NUMBER, DEFAULT_MESSAGE };

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getBlogPost, getRelatedPosts, blogPosts } from "@/lib/blog";
+import { getBlogPost, getRelatedPosts, blogPosts, SITE_URL } from "@/lib/blog";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 interface Props {
@@ -18,15 +18,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return { title: "Artigo não encontrado" };
+
   return {
     title: post.title,
     description: post.excerpt,
+    keywords: post.tags?.join(", "),
+    alternates: {
+      canonical: `${SITE_URL}/blog/${slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: "article",
+      url: `${SITE_URL}/blog/${slug}`,
       publishedTime: post.date,
+      modifiedTime: post.updatedAt ?? post.date,
       authors: [post.author],
+      tags: post.tags,
+      section: post.category,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
     },
   };
 }
@@ -39,12 +53,52 @@ export default async function BlogPost({ params }: Props) {
 
   const relatedPosts = getRelatedPosts(slug, post.category);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    author: {
+      "@type": "Person",
+      name: "Montinho",
+      url: `${SITE_URL}/minha-historia`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Montinho Personal Trainer",
+      url: SITE_URL,
+    },
+    datePublished: post.date,
+    dateModified: post.updatedAt ?? post.date,
+    url: `${SITE_URL}/blog/${slug}`,
+    keywords: post.tags?.join(", "),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+      { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_URL}/blog/${slug}` },
+    ],
+  };
+
   return (
     <>
-      {/* Hero */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      {/* Breadcrumb + Hero */}
       <section className="pt-16 pb-12 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3 mb-6">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-3 mb-6">
             <Link
               href="/blog"
               className="text-gray-500 hover:text-white text-sm transition-colors duration-200 flex items-center gap-1"
@@ -54,9 +108,9 @@ export default async function BlogPost({ params }: Props) {
               </svg>
               Blog
             </Link>
-            <span className="text-gray-700">/</span>
+            <span className="text-gray-700" aria-hidden="true">/</span>
             <span className="text-gray-500 text-sm">{post.category}</span>
-          </div>
+          </nav>
 
           <h1
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
@@ -65,9 +119,9 @@ export default async function BlogPost({ params }: Props) {
             {post.title}
           </h1>
 
-          <div className="flex items-center gap-4 text-sm text-gray-500">
+          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500">
             <span>{post.author}</span>
-            <span>·</span>
+            <span aria-hidden="true">·</span>
             <time dateTime={post.date}>
               {new Date(post.date).toLocaleDateString("pt-BR", {
                 day: "numeric",
@@ -75,56 +129,85 @@ export default async function BlogPost({ params }: Props) {
                 year: "numeric",
               })}
             </time>
-            <span>·</span>
+            {post.updatedAt && post.updatedAt !== post.date && (
+              <>
+                <span aria-hidden="true">·</span>
+                <span>
+                  Atualizado em{" "}
+                  <time dateTime={post.updatedAt}>
+                    {new Date(post.updatedAt).toLocaleDateString("pt-BR", {
+                      day: "numeric",
+                      month: "long",
+                      year: "numeric",
+                    })}
+                  </time>
+                </span>
+              </>
+            )}
+            <span aria-hidden="true">·</span>
             <span>{post.readTime} de leitura</span>
           </div>
         </div>
       </section>
 
-      {/* Content */}
+      {/* Article content */}
       <article className="py-16 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="text-gray-300 leading-relaxed space-y-5 blog-content"
-            style={{
-              fontSize: "1.0625rem",
-              lineHeight: "1.75",
-            }}
+            style={{ fontSize: "1.0625rem", lineHeight: "1.75" }}
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
           {/* Author box */}
           <div className="mt-16 pt-8 border-t border-white/10 flex items-start gap-5">
-            <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
+            <div
+              className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-white font-bold text-lg flex-shrink-0"
+              aria-hidden="true"
+            >
               M
             </div>
             <div>
               <p className="text-white font-semibold mb-1">{post.author}</p>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Personal Trainer especialista em emagrecimento e transformação corporal. Atendimento presencial em Alphaville e online em todo o Brasil.
+                Personal Trainer especialista em emagrecimento e transformação corporal. Atendimento presencial em Alphaville (Barueri e Santana de Parnaíba) e online em todo o Brasil.
               </p>
             </div>
           </div>
 
-          {/* CTA inline */}
-          <div className="mt-12 bg-white/5 border border-white/10 p-8 text-center">
-            <p
-              className="text-white text-xl font-bold mb-3"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-            >
-              Quer aplicar isso na prática?
-            </p>
-            <p className="text-gray-400 text-sm mb-6">
-              Entre em contato e vamos montar um plano específico para a sua realidade.
-            </p>
-            <a
-              href={getWhatsAppUrl(`Olá! Li o artigo "${post.title}" e quero saber mais sobre como você pode me ajudar.`)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 text-sm font-semibold hover:bg-gray-100 transition-colors duration-200"
-            >
-              Falar com Montinho
-            </a>
+          {/* CTA */}
+          <div className="mt-12 pt-10 border-t border-white/10">
+            <div className="bg-white/[0.03] border border-white/10 px-8 py-7">
+              <h2
+                className="text-lg font-bold text-white mb-4"
+                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              >
+                Quer transformar seu corpo?
+              </h2>
+              <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                Se você chegou até aqui, provavelmente está buscando uma forma segura e eficiente de emagrecer ou transformar seu corpo.
+              </p>
+              <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                Se deseja um acompanhamento individualizado com um{" "}
+                <strong className="text-white font-semibold">Personal Trainer em Alphaville</strong>{" "}
+                ou uma{" "}
+                <strong className="text-white font-semibold">Consultoria Online</strong>,
+                estou pronto para ajudar você a conquistar resultados reais, respeitando sua rotina e seus objetivos.
+              </p>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Para saber mais,{" "}
+                <a
+                  href={getWhatsAppUrl("Olá! Li um artigo no blog e gostaria de saber mais sobre a consultoria.")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold italic underline underline-offset-2 decoration-1 transition-opacity duration-200 hover:opacity-70"
+                  style={{ color: "#BA9E50" }}
+                >
+                  clique aqui
+                </a>
+                .
+              </p>
+            </div>
           </div>
         </div>
       </article>
@@ -137,7 +220,7 @@ export default async function BlogPost({ params }: Props) {
               className="text-xl font-bold text-white mb-8"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Leia também
+              Artigos relacionados
             </h2>
             <div className="grid gap-6 sm:grid-cols-2">
               {relatedPosts.map((rp) => (

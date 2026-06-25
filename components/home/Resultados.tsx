@@ -1,21 +1,31 @@
 import Link from "next/link";
+import Image from "next/image";
 import SectionTitle from "@/components/ui/SectionTitle";
 
 const resultados = [
   {
-    name: "Carlos M.",
-    result: "−22kg em 6 meses",
-    description: "Perdeu peso de forma sustentável, sem passar fome, mantendo a massa muscular.",
+    name: "Adriana N.",
+    result: "−20kg em 8 meses",
+    description: "Conquistou uma transformação consistente com treino periodizado, progressão de cargas e um acompanhamento individualizado.",
+    photo: "/antes-depois-montinho-personal-trainer-2.jpg",
   },
   {
-    name: "Fernanda S.",
-    result: "−15kg em 4 meses",
-    description: "Transformou o corpo após a gravidez com treino adaptado à sua rotina de mãe.",
+    name: "Montinho",
+    result: "−40kg em 12 meses",
+    description: "Minha transformação foi resultado de anos de aprendizado, disciplina e um método estruturado que hoje utilizo para transformar a vida dos meus alunos.",
+    photo: "/antes-depois-montinho-personal-trainer.jpg",
   },
   {
-    name: "Ricardo A.",
-    result: "+8kg de massa magra",
-    description: "Ganhou músculos com saúde, corrigindo anos de treino errado e lesões recorrentes.",
+    name: "Natália N.",
+    result: "−10kg em 9 meses",
+    description: "Transformou o corpo. Além de perder 10kg de gordura, ganhou massa magra e melhorou muito a composição corporal.",
+    photo: "/antes-depois-montinho-personal-trainer-3.jpg",
+  },
+  {
+    name: "Elisa C.",
+    result: "−20kg em 9 meses",
+    description: "Transformou o corpo e principalmente a mente, através de uma estratégia individualizada que se encaixava da melhor maneira em sua rotina.",
+    photo: "/antes-depois-montinho-personal-trainer-4.jpg",
   },
 ];
 
@@ -28,34 +38,39 @@ export default function Resultados() {
             eyebrow="Resultados"
             title="Transformações reais de pessoas reais"
             subtitle="Não são casos isolados. São histórias de pessoas que decidiram mudar e foram acompanhadas de perto nesse processo."
+            accent
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {resultados.map((item, index) => (
             <div
               key={index}
-              className="bg-white/5 border border-white/10 p-6 hover:border-white/30 transition-colors duration-300 group"
+              className="bg-white/5 border border-white/10 hover:border-white/30 transition-colors duration-300 group"
             >
-              {/* Placeholder image */}
-              <div className="aspect-[4/3] bg-gray-900 mb-5 overflow-hidden">
-                <img
-                  src={`https://placehold.co/400x300/1a1a1a/333333?text=Antes+%26+Depois`}
+              <div className="aspect-[4/3] bg-gray-900 overflow-hidden">
+                <Image
+                  src={item.photo}
                   alt={`Resultado de ${item.name}`}
-                  className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-300"
+                  width={400}
+                  height={300}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  className="opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
 
-              <div className="flex items-start justify-between mb-3">
-                <p className="text-gray-300 font-medium text-sm">{item.name}</p>
-                <span
-                  className="text-white font-bold text-sm"
-                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-                >
-                  {item.result}
-                </span>
+              <div className="p-6">
+                <div className="flex items-start justify-between mb-3">
+                  <p className="text-gray-300 font-medium text-sm">{item.name}</p>
+                  <span
+                    className="font-bold text-sm"
+                    style={{ color: "#BA9E50", fontFamily: "var(--font-playfair), Georgia, serif" }}
+                  >
+                    {item.result}
+                  </span>
+                </div>
+                <p className="text-gray-500 text-sm leading-relaxed">{item.description}</p>
               </div>
-              <p className="text-gray-500 text-sm leading-relaxed">{item.description}</p>
             </div>
           ))}
         </div>

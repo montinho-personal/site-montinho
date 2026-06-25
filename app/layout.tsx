@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://montinhopt.com.br",
+    url: "https://www.montinhopersonal.com.br",
     siteName: "Montinho Personal Trainer",
     title:
       "Montinho Personal Trainer | Alphaville, Barueri e Santana de Parnaíba",
@@ -53,6 +53,9 @@ export const metadata: Metadata = {
     description:
       "Transforme seu corpo sem fórmulas mágicas. Personal Trainer em Alphaville e online em todo o Brasil.",
   },
+  verification: {
+    google: "GY5qVJsmTgcHb8sJfYzc9QaWmc9zfvT71hhFbGwV8OM",
+  },
   robots: {
     index: true,
     follow: true,
@@ -62,7 +65,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://montinhopt.com.br",
+    canonical: "https://www.montinhopersonal.com.br",
   },
 };
 
@@ -72,8 +75,8 @@ const jsonLd = {
   name: "Montinho Personal Trainer",
   description:
     "Personal Trainer especialista em emagrecimento em Alphaville, Barueri e Santana de Parnaíba. Consultoria online para todo o Brasil.",
-  url: "https://montinhopt.com.br",
-  telephone: "+5511999999999",
+  url: "https://www.montinhopersonal.com.br",
+  telephone: "+5511981063409",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Alphaville",
@@ -99,10 +102,9 @@ const jsonLd = {
       closes: "13:00",
     },
   ],
-  sameAs: ["https://instagram.com/montinhopt"],
+  sameAs: ["https://instagram.com/montinho_personal"],
   priceRange: "$$",
-  servesCuisine: undefined,
-  "@id": "https://montinhopt.com.br/#localbusiness",
+  "@id": "https://www.montinhopersonal.com.br/#localbusiness",
 };
 
 export default function RootLayout({

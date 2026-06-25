@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const navLinks = [
@@ -23,18 +24,17 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex flex-col leading-none group"
+            className="inline-block"
             onClick={() => setIsMenuOpen(false)}
           >
-            <span
-              className="text-white text-xl font-bold tracking-tight group-hover:text-gray-200 transition-colors"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-            >
-              Montinho
-            </span>
-            <span className="text-gray-400 text-xs tracking-[0.15em] uppercase font-medium">
-              Personal Trainer
-            </span>
+            <Image
+              src="/Logo-final.png"
+              alt="Montinho Personal Trainer"
+              width={38}
+              height={38}
+              style={{ filter: "invert(1)", height: "38px", width: "auto" }}
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
