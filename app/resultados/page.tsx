@@ -145,7 +145,7 @@ export default function Resultados() {
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {resultados.map((item, index) => (
+            {resultados.filter((item) => item.photo).map((item, index) => (
               <article
                 key={index}
                 className="border border-white/10 group hover:border-white/30 transition-colors duration-300"
