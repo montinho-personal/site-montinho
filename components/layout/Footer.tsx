@@ -21,14 +21,14 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="inline-block mb-4">
-              <Image
-                src="/Logo-final.png"
-                alt="Montinho Personal Trainer"
-                width={160}
-                height={60}
-                className="h-12 w-auto"
-                style={{ filter: "invert(1)" }}
-              />
+              <div className="relative h-12 w-32">
+                <Image
+                  src="/Logo-final.png"
+                  alt="Montinho Personal Trainer"
+                  fill
+                  style={{ filter: "invert(1)", objectFit: "contain", objectPosition: "left center" }}
+                />
+              </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Transformação real do corpo através de ciência, experiência prática
