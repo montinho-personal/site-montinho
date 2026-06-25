@@ -35,7 +35,7 @@ export default function Hero() {
           style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
         >
           Transforme seu corpo.{" "}
-          <span className="text-gray-400">Sem fórmulas mágicas.</span>
+          <span style={{ color: "#BA9E50" }}>Sem fórmulas mágicas.</span>
         </h1>
 
         {/* Subheadline */}
