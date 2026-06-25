@@ -54,20 +54,46 @@ export default function MinhaHistoria() {
                 className="text-2xl sm:text-3xl font-bold text-white mb-5"
                 style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
               >
-                A criança que não se encaixava
+                O menino que sorria por fora
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Desde pequeno, eu era diferente. Enquanto os outros corriam
-                  pelo parque com leveza, eu ficava mais perto do banco, evitando
-                  o cansaço e o constrangimento. A obesidade chegou cedo — e com
-                  ela, vieram a vergonha, as piadas, e aquela sensação amarga de
-                  não pertencer.
+                  Desde criança, eu era o gordinho da turma. Sempre fui muito
+                  alegre, comunicativo e brincalhão. Quem me via de fora
+                  provavelmente imaginava que eu era uma criança feliz o tempo todo.
                 </p>
                 <p>
-                  Cresci ouvindo que era preguiçoso. Que faltava força de
-                  vontade. Que era só eu querer e parar de comer tanto. Mas a
-                  verdade é que eu tentava. Deus sabe que eu tentava.
+                  Mas, muitas vezes, aquele sorriso era uma forma de esconder
+                  como eu realmente me sentia quando me olhava no espelho.
+                </p>
+                <p>
+                  Ser o mais engraçado era, sem perceber, uma maneira de me
+                  sentir aceito. De fazer parte do grupo. De compensar uma
+                  insegurança que eu carregava comigo todos os dias.
+                </p>
+                <p>
+                  Apesar do sobrepeso, nunca fui parado. Sempre gostei de
+                  esportes. Pratiquei artes marciais, musculação e estava
+                  constantemente tentando mudar meu corpo. Eu me esforçava,
+                  treinava e buscava evoluir.
+                </p>
+                <p>
+                  As pessoas diziam que eu era guerreiro. Que eu tinha força de
+                  vontade. Que uma hora daria certo.
+                </p>
+                <p>
+                  Mas, no fundo, havia uma pessoa que ainda não acreditava em
+                  si mesma.
+                </p>
+                <p>
+                  Eu olhava para o espelho e não enxergava o resultado que
+                  tanto desejava. Por mais que tentasse, parecia que eu nunca
+                  conseguia chegar lá.
+                </p>
+                <p>
+                  <strong className="text-white">
+                    Mas a verdade é que eu tentava. Deus sabe que eu tentava.
+                  </strong>
                 </p>
               </div>
             </section>
