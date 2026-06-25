@@ -18,19 +18,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return { title: "Artigo não encontrado" };
+  const title = post.metaTitle || post.title;
+  const description = post.metaDescription || post.excerpt;
   return {
-    title: post.title,
-    description: post.excerpt,
+    title,
+    description,
     alternates: {
       canonical: `${SITE_URL}/blog/${slug}`,
     },
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title,
+      description,
       type: "article",
       url: `${SITE_URL}/blog/${slug}`,
       publishedTime: post.date,
+      modifiedTime: post.updatedAt || post.date,
       authors: [post.author],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
     },
   };
 }
@@ -46,12 +54,14 @@ export default async function BlogPost({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: post.title,
-    description: post.excerpt,
+    headline: post.metaTitle || post.title,
+    description: post.metaDescription || post.excerpt,
     author: {
       "@type": "Person",
       name: "Montinho",
       url: `${SITE_URL}/minha-historia`,
+      jobTitle: "Personal Trainer",
+      sameAs: ["https://www.instagram.com/montinhopersonal/"],
     },
     publisher: {
       "@type": "Organization",
@@ -59,8 +69,28 @@ export default async function BlogPost({ params }: Props) {
       url: SITE_URL,
     },
     datePublished: post.date,
+    dateModified: post.updatedAt || post.date,
     url: `${SITE_URL}/blog/${slug}`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/blog/${slug}`,
+    },
   };
+
+  const faqSchema = post.faq && post.faq.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: post.faq.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      }
+    : null;
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -82,6 +112,12 @@ export default async function BlogPost({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       {/* Breadcrumb + Hero */}
       <section className="pt-16 pb-12 bg-black border-b border-white/10">

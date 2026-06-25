@@ -3,6 +3,8 @@ export const SITE_URL = "https://www.montinhopersonal.com.br";
 export interface BlogPost {
   slug: string;
   title: string;
+  metaTitle?: string;
+  metaDescription?: string;
   excerpt: string;
   content: string;
   category: string;
@@ -11,6 +13,7 @@ export interface BlogPost {
   readTime: string;
   author: string;
   tags?: string[];
+  faq?: Array<{ question: string; answer: string }>;
 }
 
 export const BLOG_CATEGORIES = [
@@ -24,14 +27,20 @@ export const BLOG_CATEGORIES = [
 ];
 
 export const blogPosts: BlogPost[] = [
+  // ─────────────────────────────────────────────────────────────────────────
+  // ARTIGO 1
+  // ─────────────────────────────────────────────────────────────────────────
   {
     slug: "por-que-voce-nao-consegue-emagrecer",
     title: "Por Que Você Não Consegue Emagrecer (E Como Mudar Isso de Vez)",
+    metaTitle: "Por Que Você Não Consegue Emagrecer | Montinho Personal Trainer",
+    metaDescription:
+      "Entenda os mecanismos biológicos que sabotam o emagrecimento — efeito sanfona, metabolismo adaptativo e fome hormonal — e o método que realmente funciona para perder gordura de forma definitiva.",
     excerpt:
-      "Você já tentou de tudo: dieta da moda, jejum, treinar todos os dias... e mesmo assim o peso não sai. Entenda o que realmente está te impedindo e como resolver.",
+      "Você já tentou de tudo: dieta da moda, jejum, treinar todos os dias... e mesmo assim o peso não sai. Entenda o que realmente está te impedindo e como resolver de vez.",
     category: "Emagrecimento",
     date: "2024-12-10",
-    updatedAt: "2024-12-10",
+    updatedAt: "2026-06-25",
     readTime: "8 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -39,64 +48,95 @@ export const blogPosts: BlogPost[] = [
       "dieta",
       "metabolismo",
       "efeito sanfona",
+      "déficit calórico",
       "personal trainer alphaville",
-      "consultoria online",
+      "consultoria online emagrecimento",
+    ],
+    faq: [
+      {
+        question: "Por que emagreci rápido mas recuperei todo o peso?",
+        answer:
+          "Dietas muito restritivas causam perda de água e massa muscular, não apenas gordura. O metabolismo desacelera como mecanismo de sobrevivência e, ao retomar a alimentação normal, o peso volta rapidamente — fenômeno chamado efeito sanfona. A solução é um déficit calórico moderado, proteína adequada e treino de força.",
+      },
+      {
+        question: "Quantas calorias preciso cortar para emagrecer?",
+        answer:
+          "Um déficit de 300 a 500 calorias diárias abaixo do seu gasto total é suficiente para perder gordura de forma sustentável — cerca de 0,5 a 1 kg por semana. Déficits maiores aceleram a perda de músculo e o metabolismo adaptativo.",
+      },
+      {
+        question: "É possível emagrecer sem passar fome?",
+        answer:
+          "Sim. Com proteína adequada (1,6 a 2,2 g/kg de peso), alimentos de alto volume e baixa caloria, e refeições estruturadas, é possível manter saciedade mesmo em déficit calórico. A fome incontrolável é sintoma de restrição excessiva, não de emagrecer direito.",
+      },
+      {
+        question: "Qual o papel do Personal Trainer no emagrecimento?",
+        answer:
+          "O Personal Trainer estrutura o treino para preservar a massa muscular durante o emagrecimento, o que mantém o metabolismo elevado. Além disso, ajusta o protocolo continuamente conforme o corpo responde, evitando platôs e garantindo que a perda seja principalmente de gordura.",
+      },
     ],
     content: `
 <p>Você já fez dieta. Já treinou todos os dias. Já cortou o carboidrato, fez jejum intermitente, tomou chás milagrosos e até acordou cedo para malhar antes do trabalho. E ainda assim, a balança não se move — ou pior, você recupera tudo assim que relaxa.</p>
 
-<p>Se isso soa familiar, você não está sozinho. Durante anos eu mesmo vivi esse ciclo frustrante. Comecei a lutar contra a balança na infância, passei pela adolescência tentando cada dieta nova, e entrei na vida adulta acumulando frustrações. O efeito sanfona foi meu companheiro por muito tempo.</p>
+<p>Se isso soa familiar, você não está sozinho. E, mais importante: você não está falhando por falta de força de vontade. O problema está em mecanismos biológicos que a maioria das pessoas — e dos métodos por aí — ignora completamente.</p>
 
-<p>Tudo mudou quando entendi <strong>por que</strong> estava falhando — não o que estava fazendo de errado isoladamente. Neste artigo, vou te mostrar o motivo real pelo qual a maioria das pessoas não consegue emagrecer de forma definitiva.</p>
+<p>Durante anos eu mesmo vivi esse ciclo frustrante. Comecei a lutar contra a balança na infância, passei pela adolescência tentando cada nova dieta, e entrei na vida adulta acumulando frustrações e quilos. O efeito sanfona foi meu companheiro por muito tempo. Tudo mudou quando entendi <strong>por que</strong> estava falhando — não apenas o que estava fazendo de errado isoladamente.</p>
+
+<p>Neste artigo, vou te mostrar o motivo real pelo qual a maioria das pessoas não consegue emagrecer de forma definitiva — e o que realmente funciona.</p>
 
 <h2>O problema não é falta de força de vontade</h2>
 
 <p>A narrativa cultural diz que emagrecer é simples: é só ter disciplina. Se você falhou, é porque não se dedicou o suficiente. Essa narrativa é tóxica — e completamente equivocada.</p>
 
-<p>O que ninguém conta é que o corpo humano tem mecanismos biológicos poderosos que resistem à perda de peso. Quando você tenta forçar esse processo com restrição extrema, o corpo luta de volta. E quase sempre vence.</p>
+<p>O corpo humano tem mecanismos biológicos poderosos que resistem ativamente à perda de peso. Quando você força esse processo com restrição extrema, o organismo luta de volta. E quase sempre vence. Entender esse mecanismo não é desculpa — é a chave para finalmente quebrar o ciclo.</p>
 
 <h2>O ciclo vicioso das dietas restritivas</h2>
 
-<p>A grande maioria das "soluções" para emagrecimento funciona assim:</p>
+<p>A grande maioria das "soluções" para emagrecimento segue o mesmo padrão:</p>
 <ol>
   <li>Você corta calorias drasticamente</li>
-  <li>Perde peso rápido — grande parte é água e músculo</li>
-  <li>Seu metabolismo desacelera como resposta de sobrevivência</li>
-  <li>A fome se torna incontrolável</li>
-  <li>Você quebra a dieta e recupera tudo, mais um pouco</li>
+  <li>Perde peso rápido — grande parte é água e massa muscular</li>
+  <li>Seu metabolismo de repouso desacelera como resposta de sobrevivência</li>
+  <li>A grelina (hormônio da fome) dispara e a vontade de comer se torna incontrolável</li>
+  <li>Você quebra a dieta e recupera tudo — mais um pouco</li>
 </ol>
 
-<p>Isso não é fraqueza. É biologia. Seu corpo está fazendo exatamente o que foi programado para fazer.</p>
+<p>Isso não é fraqueza. É biologia. Seu corpo está fazendo exatamente o que foi programado para fazer durante milênios de escassez alimentar.</p>
 
-<h2>Como seu metabolismo reage à restrição</h2>
+<h2>Como seu metabolismo reage à restrição calórica extrema</h2>
 
-<h3>Déficit calórico extremo</h3>
-<p>Comer muito pouco faz seu metabolismo de repouso cair. Isso significa que você queima menos calorias fazendo as mesmas atividades — e o processo piora quanto mais tempo você mantém a restrição.</p>
+<h3>Metabolismo adaptativo</h3>
+<p>Comer muito pouco faz o metabolismo basal cair — fenômeno conhecido como adaptação metabólica. Você passa a queimar menos calorias realizando as mesmas atividades. E quanto mais tempo mantém a restrição severa, maior é essa adaptação. É por isso que, com o tempo, a mesma dieta que antes funcionava deixa de surtir efeito.</p>
 
 <h3>Perda de massa muscular</h3>
-<p>Sem proteína suficiente e estímulo de força, o corpo usa o músculo como combustível durante o emagrecimento. Menos músculo significa metabolismo mais lento e cada vez mais difícil manter o peso.</p>
+<p>Sem proteína suficiente e estímulo de força adequado, o corpo usa o tecido muscular como combustível durante o emagrecimento. Menos massa muscular significa taxa metabólica mais baixa — o que torna cada novo ciclo de dieta progressivamente mais difícil.</p>
 
-<h3>Aumento do apetite</h3>
-<p>Hormônios como a grelina aumentam significativamente durante dietas restritivas. A vontade de comer não é fraqueza psicológica — é uma resposta hormonal direta à restrição.</p>
+<h3>Resposta hormonal à restrição</h3>
+<p>A grelina — hormônio que sinaliza fome — aumenta significativamente durante dietas restritivas. A leptina, hormônio que sinaliza saciedade, cai. A vontade incontrolável de comer não é fraqueza psicológica: é uma resposta hormonal direta à restrição, projetada para te fazer buscar comida.</p>
 
-<h2>O que realmente funciona para emagrecer</h2>
+<h2>O que realmente funciona para emagrecer com saúde</h2>
 
-<p>Emagrecimento sustentável vem de uma abordagem estruturada, não de restrição extrema:</p>
+<p>Emagrecimento sustentável exige uma abordagem estruturada, baseada em evidências — não em restrição extrema:</p>
 <ul>
-  <li><strong>Déficit calórico moderado</strong> — suficiente para perder gordura, pequeno o bastante para não disparar a resposta de sobrevivência</li>
-  <li><strong>Proteína adequada</strong> — preserva a massa muscular durante o processo</li>
-  <li><strong>Treino de força</strong> — mantém e aumenta o metabolismo de repouso</li>
-  <li><strong>Consistência ao longo do tempo</strong> — não perfeição, mas constância</li>
-  <li><strong>Acompanhamento profissional</strong> — ajustes contínuos conforme o corpo responde</li>
+  <li><strong>Déficit calórico moderado</strong> — suficiente para perder gordura, pequeno o bastante para não disparar a resposta de sobrevivência (300 a 500 kcal/dia)</li>
+  <li><strong>Proteína adequada</strong> (1,6 a 2,2 g/kg) — preserva a massa muscular e aumenta a saciedade</li>
+  <li><strong>Treino de força</strong> — mantém e aumenta o metabolismo de repouso durante o processo</li>
+  <li><strong>Consistência ao longo do tempo</strong> — não perfeição, mas constância semana após semana</li>
+  <li><strong>Acompanhamento profissional</strong> — ajustes contínuos conforme o corpo responde e as adaptações acontecem</li>
 </ul>
 
-<h2>Por que o acompanhamento muda tudo</h2>
+<h2>Por que o acompanhamento profissional muda tudo</h2>
 
-<p>Quando você tenta fazer tudo sozinho, cada obstáculo vira um motivo para desistir. Com um profissional ao seu lado, cada obstáculo vira uma oportunidade de ajuste.</p>
+<p>Quando você tenta fazer tudo sozinho, cada obstáculo vira um motivo para desistir. Com um profissional ao seu lado, cada obstáculo vira uma oportunidade de ajuste de protocolo.</p>
 
-<p>Como Personal Trainer em Alphaville, atendo presencialmente alunos de Barueri e Santana de Parnaíba. Para quem está em outra cidade, ofereço consultoria online com o mesmo nível de acompanhamento.</p>
+<p>Como Personal Trainer em Alphaville, atendo presencialmente alunos de Barueri e Santana de Parnaíba, e ofereço <a href="/consultoria">consultoria online de emagrecimento</a> com o mesmo nível de acompanhamento para todo o Brasil.</p>
 
-<p>Eu já estive do outro lado. Sei como é acordar de manhã, se olhar no espelho e não se reconhecer. Por isso o meu trabalho vai muito além dos exercícios — é sobre te ajudar a construir uma relação diferente com seu corpo e com sua saúde.</p>
+<p>Eu já estive do outro lado. Sei como é acordar de manhã, se olhar no espelho e não se reconhecer. Por isso o meu trabalho vai muito além dos exercícios — é sobre te ajudar a construir uma relação diferente com seu corpo e com sua saúde, com um método que respeita a biologia em vez de lutar contra ela.</p>
+
+<p>Se você quer entender como funciona na prática, veja os <a href="/resultados">resultados de quem já passou por esse processo</a>.</p>
+
+<h2>Conclusão</h2>
+
+<p>Não conseguir emagrecer não é falha de caráter. É consequência de usar estratégias que ignoram como o corpo funciona. Déficit calórico moderado, proteína adequada, treino de força e consistência — com acompanhamento de quem entende do processo — são os pilares que realmente funcionam.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -105,14 +145,21 @@ export const blogPosts: BlogPost[] = [
 </ul>
     `,
   },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // ARTIGO 2
+  // ─────────────────────────────────────────────────────────────────────────
   {
     slug: "erros-comuns-no-treino-de-musculacao",
     title: "7 Erros Comuns na Musculação Que Sabotam Seus Resultados",
+    metaTitle: "7 Erros na Musculação Que Estão Impedindo Seu Progresso | Montinho PT",
+    metaDescription:
+      "Você treina mas não vê resultado? Estes 7 erros de musculação são os mais comuns e os mais fáceis de corrigir. Aprenda a treinar com método e inteligência.",
     excerpt:
       "A maioria das pessoas passa meses na academia sem ver resultado por causa de erros simples que são fáceis de corrigir. Veja se você está cometendo algum deles.",
     category: "Treinamento",
     date: "2024-11-28",
-    updatedAt: "2024-11-28",
+    updatedAt: "2026-06-25",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -120,50 +167,79 @@ export const blogPosts: BlogPost[] = [
       "treino de força",
       "hipertrofia",
       "erros no treino",
+      "sobrecarga progressiva",
       "personal trainer alphaville",
       "barueri",
     ],
+    faq: [
+      {
+        question: "Quanto tempo leva para ver resultado na musculação?",
+        answer:
+          "Com treino bem estruturado e alimentação adequada, mudanças na composição corporal são perceptíveis em 6 a 8 semanas. Resultados visuais significativos costumam aparecer entre 3 e 6 meses de treino consistente. A paciência e a consistência são determinantes — não existem atalhos sustentáveis.",
+      },
+      {
+        question: "Quantas vezes por semana devo treinar musculação?",
+        answer:
+          "Para hipertrofia, 3 a 5 sessões semanais são suficientes para a maioria das pessoas, desde que o volume, intensidade e recuperação estejam bem distribuídos. Treinar todos os dias sem planejamento pode ser contraproducente.",
+      },
+      {
+        question: "Qual o erro mais comum na academia?",
+        answer:
+          "O erro mais comum é a falta de progressão de carga. Fazer os mesmos exercícios com o mesmo peso por meses não gera estímulo suficiente para o músculo se adaptar e crescer. O princípio da sobrecarga progressiva é a base da hipertrofia.",
+      },
+      {
+        question: "Preciso de Personal Trainer para ter resultado na musculação?",
+        answer:
+          "Não é obrigatório, mas acelera significativamente os resultados e reduz o risco de lesões. Um Personal Trainer garante técnica correta, progressão inteligente e ajustes contínuos — eliminando os erros que fazem a maioria das pessoas ficar meses sem evoluir.",
+      },
+    ],
     content: `
-<p>Você treina há meses. Vai à academia com frequência. Sente o cansaço depois de cada sessão. Mas quando se olha no espelho, pouco mudou.</p>
+<p>Você treina há meses. Vai à academia com frequência. Sente o cansaço depois de cada sessão. Mas quando se olha no espelho, pouco ou nada mudou.</p>
 
-<p>Isso é mais comum do que parece — e quase sempre tem uma explicação concreta. Acompanhando alunos como Personal Trainer em Alphaville e em consultoria online em todo o Brasil, percebi que os mesmos erros aparecem repetidamente. Erros que nenhum app de treino corrige sozinho.</p>
+<p>Isso é mais comum do que parece — e quase sempre tem uma explicação concreta. Acompanhando alunos como Personal Trainer em Alphaville e em consultoria online em todo o Brasil, percebi que os mesmos erros aparecem repetidamente. Erros que nenhum app de treino corrige sozinho e que nenhuma ficha genérica de academia resolve.</p>
 
-<p>A boa notícia: todos eles são corrigíveis. Veja se você está cometendo algum destes.</p>
+<p>A boa notícia: todos eles são identificáveis e corrigíveis. Confira se você está cometendo algum destes.</p>
 
 <h2>Treinar muito não é treinar bem</h2>
 
-<p>Um dos maiores mitos no mundo fitness é que mais treino significa mais resultado. Na prática, acontece o oposto: treino excessivo sem recuperação adequada leva a estagnação, lesões e até perda de massa muscular.</p>
+<p>Um dos maiores mitos no mundo fitness é que mais treino significa mais resultado. Na prática, acontece o oposto: volume excessivo sem recuperação adequada leva à estagnação, a lesões e até à perda de massa muscular — fenômeno chamado overtraining.</p>
 
-<p>A qualidade do treino — execução, progressão, periodização — importa muito mais do que o volume bruto de horas na academia.</p>
+<p>A qualidade do treino — execução, progressão de carga e periodização — importa muito mais do que o número de horas na academia.</p>
 
 <h2>Os 7 erros que estão travando seus resultados</h2>
 
-<h3>1. Não ter progressão de carga</h3>
-<p>Se você faz os mesmos exercícios com o mesmo peso há meses, seu corpo não tem motivo para mudar. O princípio da sobrecarga progressiva é a base da hipertrofia: você precisa desafiar seus músculos continuamente para estimular adaptação.</p>
+<h3>1. Não aplicar progressão de carga</h3>
+<p>Se você faz os mesmos exercícios com o mesmo peso há meses, seu corpo não tem motivo para mudar. O princípio da sobrecarga progressiva é a base da hipertrofia: você precisa desafiar continuamente seus músculos para estimular adaptação. Aumentar carga, volume, densidade ou reduzir o intervalo de descanso são formas de progredir.</p>
 
-<h3>2. Ignorar a técnica por ego</h3>
-<p>Pegar peso demais com técnica ruim não constrói músculo — constrói lesão. Vi incontáveis pessoas se machucarem por não aceitar começar com carga menor e aprender o movimento correto. O ego cobra caro depois.</p>
+<h3>2. Sacrificar técnica pelo ego</h3>
+<p>Pegar peso demais com técnica ruim não constrói músculo — constrói lesão. Vi incontáveis pessoas se machucarem por não aceitar começar com carga menor e aprender o movimento correto. O ego cobra caro: semanas ou meses de afastamento por uma lesão evitável.</p>
 
-<h3>3. Não descansar o suficiente</h3>
-<p>O músculo cresce durante o descanso, não durante o treino. O treino gera o estímulo; o sono e a recuperação geram a adaptação. Dormir 7 a 9 horas por noite não é luxo — é parte fundamental do processo.</p>
+<h3>3. Subestimar a recuperação</h3>
+<p>O músculo cresce durante o descanso, não durante o treino. O treino gera o estímulo; o sono e a recuperação geram a adaptação. Dormir 7 a 9 horas por noite não é luxo — é parte fundamental do processo de hipertrofia.</p>
 
-<h3>4. Treinar sem planejamento</h3>
-<p>Entrar na academia e fazer o que dá na cabeça não é método, é passatempo. Resultados consistentes exigem programação inteligente: volume, intensidade, frequência e periodização pensados em conjunto.</p>
+<h3>4. Treinar sem planejamento ou periodização</h3>
+<p>Entrar na academia e fazer o que dá na cabeça não é método, é passatempo. Resultados consistentes exigem programação inteligente: volume, intensidade, frequência e periodização pensados em conjunto e revisados regularmente.</p>
 
 <h3>5. Negligenciar a alimentação</h3>
-<p>Você pode treinar perfeitamente e não ver resultado se a alimentação não estiver alinhada. Proteína insuficiente, calorias muito baixas — tudo isso impacta diretamente o que acontece com o seu corpo.</p>
+<p>Você pode treinar perfeitamente e não ver resultado se a nutrição não estiver alinhada. Proteína insuficiente, calorias muito baixas ou muito altas — tudo isso impacta diretamente a composição corporal. Treino e alimentação são inseparáveis.</p>
 
 <h3>6. Pular o aquecimento</h3>
-<p>O aquecimento prepara o sistema nervoso, eleva a temperatura muscular e previne lesões. Cinco a dez minutos antes do treino fazem uma diferença enorme no longo prazo.</p>
+<p>O aquecimento prepara o sistema nervoso central, eleva a temperatura muscular e previne lesões agudas. Cinco a dez minutos de ativação específica antes do treino fazem diferença enorme no desempenho e na longevidade no esporte.</p>
 
 <h3>7. Desistir cedo demais</h3>
-<p>Resultados reais levam tempo. A maioria das pessoas desiste exatamente quando está prestes a ver a transformação acontecer. Consistência por meses — não semanas — é o que separa quem transforma o corpo de quem fica estagnado.</p>
+<p>Resultados reais levam tempo. A maioria das pessoas desiste exatamente quando está prestes a ver a transformação acontecer. Consistência por meses — não semanas — é o que separa quem transforma o corpo de quem fica eternamente estagnado.</p>
 
-<h2>Como corrigir o caminho</h2>
+<h2>Como corrigir o caminho agora</h2>
 
-<p>Identificou algum desses erros na sua rotina? O importante é corrigir o caminho com a orientação certa.</p>
+<p>Identificou algum desses erros na sua rotina? O importante é corrigir com a orientação certa, não apenas adicionar mais volume de treino.</p>
 
-<p>Um Personal Trainer experiente identifica esses pontos em minutos e traça um plano para corrigi-los. Se você está em Alphaville, Barueri ou Santana de Parnaíba, podemos trabalhar presencialmente. Se estiver em outra cidade, a consultoria online oferece o mesmo nível de acompanhamento.</p>
+<p>Um Personal Trainer experiente identifica esses pontos em poucas sessões e traça um plano para corrigi-los de forma estruturada. Se você está em Alphaville, Barueri ou Santana de Parnaíba, podemos trabalhar presencialmente. Se estiver em outra cidade, a <a href="/consultoria">consultoria online</a> oferece o mesmo nível de acompanhamento e personalização.</p>
+
+<p>Quer ver exemplos reais do que acontece quando esses erros são corrigidos? Confira as <a href="/resultados">transformações dos alunos</a>.</p>
+
+<h2>Conclusão</h2>
+
+<p>Meses sem resultado na academia quase nunca são falta de esforço — são falta de método. Progressão de carga, técnica correta, recuperação adequada, alimentação alinhada e consistência a longo prazo são os elementos que diferenciam quem evolui de quem fica parado. Corrigir um erro de cada vez já faz diferença.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -172,60 +248,95 @@ export const blogPosts: BlogPost[] = [
 </ul>
     `,
   },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // ARTIGO 3
+  // ─────────────────────────────────────────────────────────────────────────
   {
     slug: "como-prevenir-lesoes-no-treino",
-    title: "Como Prevenir Lesões e Treinar Por Décadas Sem Dor",
+    title: "Como Prevenir Lesões na Musculação e Treinar Por Décadas Sem Dor",
+    metaTitle: "Como Prevenir Lesões na Musculação e Treinar Por Décadas | Montinho PT",
+    metaDescription:
+      "Lesões são o maior inimigo dos resultados a longo prazo. Aprenda os princípios de mobilidade, progressão e recuperação que garantem décadas de treino sem dor.",
     excerpt:
       "Lesões são o maior inimigo dos resultados a longo prazo. Aprenda as estratégias que uso com meus alunos para treinar com intensidade e sem se machucar.",
     category: "Lesões",
     date: "2024-11-15",
-    updatedAt: "2024-11-15",
+    updatedAt: "2026-06-25",
     readTime: "6 min",
     author: "Montinho Personal Trainer",
     tags: [
       "prevenção de lesões",
       "mobilidade",
       "longevidade no treino",
+      "lesões na musculação",
+      "aquecimento",
       "personal trainer alphaville",
       "santana de parnaíba",
     ],
+    faq: [
+      {
+        question: "Quais são as lesões mais comuns na musculação?",
+        answer:
+          "As lesões mais comuns na musculação são: tendinite no manguito rotador (ombro), dor patelofemoral (joelho), lombalgia (coluna lombar) e distensões musculares. A maioria é resultado de má técnica, sobrecarga excessiva ou falta de mobilidade — e pode ser prevenida com orientação profissional.",
+      },
+      {
+        question: "Como saber se a dor durante o treino é normal?",
+        answer:
+          "O ardor muscular durante o exercício (queimação) e a dor muscular de início tardio (DOMS) nas 24 a 72 horas após o treino são normais. Dor articular aguda, sensação de travamento, dor que persiste além de 72 horas ou que piora com o exercício são sinais de alerta que exigem avaliação.",
+      },
+      {
+        question: "Posso treinar com dor?",
+        answer:
+          "Depende do tipo de dor. Desconforto muscular leve (DOMS) é compatível com treino moderado. Dor articular, dor aguda ou dor que piora durante o exercício são contraindicações para treinar a parte afetada. Em caso de dúvida, consulte um profissional de saúde e um Personal Trainer experiente.",
+      },
+      {
+        question: "O aquecimento realmente previne lesões?",
+        answer:
+          "Sim. O aquecimento eleva a temperatura muscular, ativa o sistema nervoso central e prepara as articulações para o movimento com carga. Estudos mostram que um aquecimento específico de 5 a 10 minutos reduz significativamente a incidência de lesões agudas e melhora o desempenho no treino.",
+      },
+    ],
     content: `
-<p>Nada compromete mais o progresso de longo prazo do que uma lesão. Uma fisgada no ombro, uma dor persistente no joelho, uma lombalgia que aparece após o agachamento — e semanas ou meses de treino vão por água abaixo.</p>
+<p>Nada compromete mais o progresso de longo prazo do que uma lesão. Uma fisgada no ombro, uma dor persistente no joelho, uma lombalgia que aparece após o agachamento — e semanas ou meses de treino vão por água abaixo. Junto com eles, a motivação, a consistência e os resultados conquistados.</p>
 
-<p>O pior: a maioria das lesões não acontece de repente. Elas se desenvolvem silenciosamente por semanas, como resultado de padrões de movimento incorretos, sobrecarga mal distribuída e falta de mobilidade. E são amplamente evitáveis com a abordagem certa.</p>
+<p>O pior: a maioria das lesões não acontece de repente. Elas se desenvolvem silenciosamente por semanas, como resultado de padrões de movimento incorretos, sobrecarga mal distribuída e falta de mobilidade. E são amplamente evitáveis com a abordagem correta.</p>
 
-<p>Estes são os princípios que aplico com meus alunos — tanto no atendimento presencial em Alphaville quanto na consultoria online em todo o Brasil — para garantir décadas de treino consistente e sem dor.</p>
+<p>Estes são os princípios que aplico com meus alunos — tanto no atendimento presencial em Alphaville quanto na <a href="/consultoria">consultoria online</a> — para garantir décadas de treino consistente e sem dor.</p>
 
-<h2>A lesão que ninguém fala</h2>
+<h2>Os dois tipos de lesão que você precisa conhecer</h2>
 
-<p>Existe a lesão aguda — aquela que acontece de repente com um estalo ou dor intensa. E existe a lesão crônica — aquela que vai se desenvolvendo silenciosamente por meses de má postura, sobrecarga errada e falta de mobilidade.</p>
+<p>Existe a lesão aguda — aquela que acontece de repente com um estalo ou dor intensa durante o esforço. E existe a lesão crônica — aquela que vai se desenvolvendo silenciosamente por meses de má postura, sobrecarga errada e falta de mobilidade.</p>
 
-<p>A segunda é muito mais comum e muito mais traiçoeira. Você treina sentindo um desconforto que vai aumentando gradualmente, até que um dia não consegue mais treinar. É para evitar esse cenário que falo tanto sobre prevenção.</p>
+<p>A segunda é muito mais comum e muito mais traiçoeira. Você treina sentindo um desconforto que vai aumentando gradualmente, até que um dia não consegue mais treinar. Tendinites, bursites, dores lombares crônicas — todos são exemplos de lesões que se instalam progressivamente e que uma boa orientação profissional evita.</p>
 
 <h2>Os princípios da longevidade no treino</h2>
 
-<h3>Mobilidade antes da força</h3>
-<p>Não adianta querer levantar muito peso se você não tem mobilidade para executar o movimento com segurança. Investir em mobilidade não é fraqueza — é inteligência. Um agachamento profundo bem executado vale muito mais do que um parcial cheio de compensações.</p>
+<h3>Mobilidade como base, não como opcional</h3>
+<p>Não adianta querer levantar muito peso se você não tem mobilidade articular para executar o movimento com segurança e amplitude completa. Investir em mobilidade não é fraqueza — é inteligência. Um agachamento profundo bem executado vale muito mais do que um parcial cheio de compensações que vão destruir seus joelhos ao longo do tempo.</p>
 
 <h3>Respeitar os sinais do corpo</h3>
-<p>Existe uma diferença importante entre desconforto muscular — que é normal e esperado — e dor articular, que é sinal de alerta. Aprender a distinguir os dois é fundamental para treinar com segurança a longo prazo.</p>
+<p>Existe uma diferença fundamental entre desconforto muscular — que é normal e esperado durante o treino — e dor articular, que é sinal de alerta. Aprender a distinguir os dois é indispensável para treinar com segurança a longo prazo. "No pain, no gain" não se aplica a articulações.</p>
 
 <h3>Progressão gradual de carga</h3>
-<p>O corpo precisa de tempo para se adaptar a novas cargas. Aumentar peso demais, rápido demais, é a receita para lesão. Paciência e progressão gradual não são sinais de fraqueza — são a estratégia de quem quer resultados sustentáveis.</p>
+<p>O corpo precisa de tempo para se adaptar a novas cargas. Aumentar peso demais, rápido demais, é a receita mais garantida para uma lesão. Paciência e progressão gradual — respeitando o princípio da adaptação progressiva — não são sinais de fraqueza. São a estratégia de quem quer resultados sustentáveis por décadas.</p>
 
-<h3>Recuperação ativa</h3>
-<p>Dias de descanso não precisam ser dias sem movimento. Caminhada leve, alongamento, trabalho de mobilidade — tudo isso acelera a recuperação e previne lesões ao manter o fluxo sanguíneo e reduzir a rigidez muscular.</p>
+<h3>Recuperação ativa entre os treinos</h3>
+<p>Dias de descanso não precisam ser dias completamente sem movimento. Caminhada leve, alongamento, trabalho de mobilidade e técnicas de recuperação como contraste quente-frio aceleram a recuperação e previnem lesões ao manter o fluxo sanguíneo e reduzir a rigidez muscular e articular.</p>
 
-<h3>Aquecimento específico</h3>
-<p>O aquecimento não é opcional. Cinco a dez minutos preparando o sistema nervoso e elevando a temperatura muscular reduzem drasticamente o risco de lesões agudas e melhoram a qualidade do treino como um todo.</p>
+<h3>Aquecimento específico antes de cada sessão</h3>
+<p>O aquecimento não é opcional — é parte do treino. Cinco a dez minutos preparando o sistema nervoso, elevando a temperatura muscular e ativando os padrões de movimento que serão usados na sessão reduzem drasticamente o risco de lesões agudas e melhoram a qualidade do treino como um todo.</p>
 
-<h2>O papel do profissional na prevenção</h2>
+<h2>O papel do Personal Trainer na prevenção de lesões</h2>
 
-<p>Um bom Personal Trainer não serve apenas para te dar exercícios. Serve para identificar desequilíbrios musculares antes que virem problema, corrigir padrões de movimento errados, e adaptar o treino quando algo não está certo.</p>
+<p>Um bom Personal Trainer não serve apenas para passar exercícios. Serve para identificar desequilíbrios musculares antes que virem problema, corrigir padrões de movimento errados desde o início, e adaptar o treino quando algo não está funcionando como deveria.</p>
 
-<p>Como Personal Trainer em Alphaville, trabalho com alunos de Barueri e Santana de Parnaíba que chegaram com histórico de lesões. Em muitos casos, não apenas treinamos com segurança — como resolvemos problemas crônicos que carregavam há anos.</p>
+<p>Como Personal Trainer em Alphaville, trabalho com alunos de Barueri e Santana de Parnaíba que chegaram com histórico de lesões. Em muitos casos, não apenas treinamos com segurança — como resolvemos problemas crônicos que carregavam há anos, sem cirurgia ou medicação. Veja alguns desses <a href="/resultados">resultados na prática</a>.</p>
 
-<p>É muito mais barato — e mais inteligente — investir em prevenção do que tratar uma lesão depois que ela aconteceu.</p>
+<p>É muito mais eficiente — e muito mais barato — investir em prevenção do que tratar uma lesão depois que ela se instala.</p>
+
+<h2>Conclusão</h2>
+
+<p>Longevidade no treino não é sorte — é estratégia. Mobilidade como base, respeito aos sinais do corpo, progressão gradual de carga e recuperação adequada são os pilares de quem consegue treinar com intensidade por décadas sem se machucar. Pequenos cuidados aplicados consistentemente fazem toda a diferença no longo prazo.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -234,57 +345,93 @@ export const blogPosts: BlogPost[] = [
 </ul>
     `,
   },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // ARTIGO 4
+  // ─────────────────────────────────────────────────────────────────────────
   {
     slug: "habitos-que-sabotam-seu-emagrecimento",
     title: "5 Hábitos do Dia a Dia Que Estão Sabotando Seu Emagrecimento",
+    metaTitle: "5 Hábitos Que Sabotam o Emagrecimento (Sem Você Perceber) | Montinho PT",
+    metaDescription:
+      "Sono, estresse, hidratação e atenção alimentar — descubra os 5 hábitos cotidianos que sabotam silenciosamente o emagrecimento, mesmo quando a dieta e o treino estão certos.",
     excerpt:
       "Às vezes não é a dieta ou o treino o problema. São comportamentos do cotidiano que você nem percebe que estão impedindo seu progresso.",
     category: "Hábitos",
     date: "2024-10-30",
-    updatedAt: "2024-10-30",
+    updatedAt: "2026-06-25",
     readTime: "5 min",
     author: "Montinho Personal Trainer",
     tags: [
       "hábitos saudáveis",
       "emagrecimento",
-      "sono",
-      "estresse",
+      "sono e emagrecimento",
+      "estresse e cortisol",
+      "hidratação",
       "consultoria online",
       "personal trainer alphaville",
     ],
+    faq: [
+      {
+        question: "O sono realmente influencia o emagrecimento?",
+        answer:
+          "Sim, de forma significativa. Privação de sono eleva o cortisol e a grelina (hormônio da fome), reduz a leptina (hormônio da saciedade) e prejudica a recuperação muscular. Estudos mostram que pessoas que dormem menos de 7 horas por noite têm maior dificuldade de perder gordura, especialmente abdominal.",
+      },
+      {
+        question: "Beber mais água ajuda a emagrecer?",
+        answer:
+          "Indiretamente, sim. A desidratação leve reduz a taxa metabólica, pode ser confundida com fome e prejudica a performance no treino. Beber 30 a 35 ml de água por kg de peso corporal por dia apoia o metabolismo, a saciedade e a recuperação — sem ser uma solução milagrosa por si só.",
+      },
+      {
+        question: "Estresse pode impedir o emagrecimento mesmo com dieta e treino corretos?",
+        answer:
+          "Sim. O cortisol cronicamente elevado favorece o acúmulo de gordura visceral, aumenta a compulsão alimentar e prejudica a qualidade do sono. É possível fazer tudo certo no treino e na dieta e ainda assim ter dificuldade de emagrecer se o estresse não for gerenciado.",
+      },
+      {
+        question: "O que são calorias líquidas e por que sabotam o emagrecimento?",
+        answer:
+          "Calorias líquidas são as calorias provenientes de bebidas — sucos, refrigerantes, bebidas alcoólicas, café com açúcar, leites aromatizados. Elas não geram saciedade proporcional às calorias que fornecem e raramente são monitoradas. Uma garrafa de suco de laranja, por exemplo, pode ter 200 kcal com pouca fibra — equivalente a 2 a 3 laranjas que seriam muito mais saciantes.",
+      },
+    ],
     content: `
-<p>Você segue o treino à risca. Tenta comer bem. Faz sua parte. Mas os resultados não aparecem. Antes de culpar seu metabolismo ou sua genética, considere uma possibilidade: o problema pode estar em hábitos que você nem está monitorando.</p>
+<p>Você segue o treino à risca. Tenta comer bem. Faz sua parte — e os resultados ainda não aparecem. Antes de culpar seu metabolismo ou sua genética, considere uma possibilidade que poucos avaliam: o problema pode estar em hábitos que você nem está monitorando.</p>
 
-<p>Comportamentos cotidianos aparentemente inofensivos podem estar sabotando silenciosamente todo o seu esforço. Alguns deles você provavelmente não imaginava que tinham impacto direto no emagrecimento.</p>
+<p>Comportamentos cotidianos aparentemente inofensivos podem estar sabotando silenciosamente todo o seu esforço. Alguns deles você provavelmente não imaginava que tinham impacto direto no emagrecimento e na composição corporal.</p>
 
 <p>Identifique os que se aplicam à sua rotina — e comece a corrigir um de cada vez.</p>
 
-<h2>Os vilões invisíveis do emagrecimento</h2>
+<h2>Por que hábitos fora do treino importam tanto</h2>
 
-<p>Dieta e treino são fundamentais, mas representam apenas parte do quadro. O estilo de vida ao redor do treino — o que você faz nas outras 23 horas do dia — tem um impacto enorme sobre os resultados. Esses cinco hábitos são os que aparecem com mais frequência nos alunos que chegam até mim sem conseguir emagrecer, mesmo fazendo tudo "certo".</p>
+<p>Dieta e treino são fundamentais, mas representam apenas parte do quadro. O que você faz nas outras 23 horas do dia tem um impacto enorme sobre os resultados. Hormônios, qualidade do sono, nível de estresse, hidratação e atenção durante as refeições — tudo isso interfere diretamente no processo de emagrecimento.</p>
+
+<p>Esses cinco hábitos são os que aparecem com mais frequência nos alunos que chegam até mim sem conseguir emagrecer, mesmo fazendo tudo "certo" no treino e na dieta.</p>
 
 <h2>Os 5 hábitos que estão sabotando seu progresso</h2>
 
 <h3>1. Dormir pouco ou mal</h3>
-<p>Privação de sono aumenta o cortisol (hormônio do estresse), que por sua vez aumenta o apetite e favorece o acúmulo de gordura abdominal. Dormir mal também prejudica a recuperação muscular e reduz a disposição para treinar no dia seguinte.</p>
+<p>Privação de sono eleva o cortisol (hormônio do estresse) e a grelina (hormônio da fome), enquanto reduz a leptina (hormônio da saciedade). O resultado: mais fome, mais compulsão por carboidratos simples e mais acúmulo de gordura abdominal. Dormir mal também prejudica a recuperação muscular e reduz a disposição para treinar no dia seguinte — criando um ciclo vicioso.</p>
 
 <h3>2. Estresse crônico</h3>
-<p>O cortisol elevado de forma crônica é um dos maiores sabotadores do emagrecimento. Estratégias de gerenciamento de estresse — meditação, tempo na natureza, atividades prazerosas — não são frescura, são parte do processo de transformação.</p>
+<p>O cortisol elevado de forma persistente é um dos maiores sabotadores invisíveis do emagrecimento. Ele favorece o acúmulo de gordura visceral, aumenta a compulsão alimentar e dificulta a recuperação. Estratégias de gerenciamento de estresse — meditação, atividades ao ar livre, desconexão digital — não são frescura. São parte do protocolo de transformação.</p>
 
 <h3>3. Beber pouca água</h3>
-<p>Desidratação leve já prejudica o metabolismo e pode ser confundida com fome. Beber água adequadamente é uma das estratégias mais simples e eficientes para apoiar o emagrecimento — e a maioria das pessoas bebe muito menos do que deveria.</p>
+<p>Desidratação leve já prejudica o metabolismo basal e pode ser confundida com fome — levando a um consumo calórico desnecessário. Beber água adequadamente é uma das estratégias mais simples, mais baratas e mais subestimadas para apoiar o emagrecimento. A recomendação geral é de 30 a 35 ml por kg de peso corporal por dia.</p>
 
 <h3>4. Comer distraído</h3>
-<p>Comer na frente da tela, no carro ou em pé não permite que o cérebro registre a saciedade adequadamente. Você come mais do que precisa sem perceber. Refeições feitas com atenção — sem telas, sentado — resultam em maior satisfação com menos comida.</p>
+<p>Comer na frente da tela, no carro ou de pé não permite que o sistema nervoso registre a saciedade adequadamente. Você come mais do que precisa sem perceber. Refeições feitas com atenção plena — sem telas, sentado, em ambiente tranquilo — resultam em maior satisfação com menor ingestão calórica. É uma das aplicações práticas mais eficazes do mindful eating.</p>
 
 <h3>5. Subestimar calorias líquidas</h3>
-<p>Sucos, refrigerantes, bebidas alcoólicas, café com açúcar — essas calorias somam muito e raramente são consideradas no controle alimentar. Trocar bebidas calóricas por água ou chá sem açúcar é uma mudança simples com grande impacto acumulado.</p>
+<p>Sucos, refrigerantes, bebidas alcoólicas, café adoçado — essas calorias somam muito e raramente são consideradas no controle alimentar. O problema é que líquidos geram pouca saciedade comparado ao mesmo número de calorias em alimentos sólidos. Trocar bebidas calóricas por água, chá sem açúcar ou café puro é uma mudança simples com grande impacto acumulado.</p>
 
-<h2>A mudança começa nos hábitos</h2>
+<h2>A transformação começa nos hábitos — não apenas no treino</h2>
 
-<p>Transformação real não vem de dietas temporárias, mas de hábitos construídos com consistência ao longo do tempo. Cada um desses cinco pontos, corrigido gradualmente, pode fazer uma diferença significativa nos seus resultados.</p>
+<p>Transformação real e duradoura não vem de dietas temporárias, mas de hábitos construídos com consistência ao longo do tempo. Cada um desses cinco pontos, corrigido gradualmente, pode fazer uma diferença significativa nos seus resultados — mesmo sem alterar o treino ou a dieta.</p>
 
-<p>Seja no atendimento presencial em Alphaville ou na consultoria online para todo o Brasil, parte do meu trabalho é exatamente isso: identificar o que está travando o progresso de cada aluno e montar uma estratégia prática e sustentável para a sua realidade.</p>
+<p>Seja no atendimento presencial em Alphaville ou na <a href="/consultoria">consultoria online</a> para todo o Brasil, parte do meu trabalho é exatamente isso: identificar o que está travando o progresso de cada aluno e construir uma estratégia prática e sustentável para a sua realidade.</p>
+
+<h2>Conclusão</h2>
+
+<p>Sono de qualidade, gerenciamento do estresse, hidratação adequada, atenção durante as refeições e controle das calorias líquidas — cinco hábitos que custam zero reais e têm impacto enorme no emagrecimento. Comece pelo mais simples e avance progressivamente. Pequenas correções no estilo de vida, mantidas consistentemente, superam qualquer dieta restritiva de curto prazo.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -305,7 +452,9 @@ export function getBlogPostsByCategory(category: string): BlogPost[] {
 }
 
 export function getRelatedPosts(currentSlug: string, category: string): BlogPost[] {
-  return blogPosts
-    .filter((post) => post.slug !== currentSlug && post.category === category)
-    .slice(0, 2);
+  const sameCategory = blogPosts.filter(
+    (post) => post.slug !== currentSlug && post.category === category
+  );
+  if (sameCategory.length > 0) return sameCategory.slice(0, 2);
+  return blogPosts.filter((post) => post.slug !== currentSlug).slice(0, 2);
 }
