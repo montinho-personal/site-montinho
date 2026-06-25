@@ -11,7 +11,7 @@ export default function Contato() {
   return (
     <>
       {/* Hero */}
-      <section className="py-24 bg-black border-b border-white/10">
+      <section className="py-16 bg-black border-b border-white/10">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-6">
             Vamos Conversar
@@ -30,14 +30,14 @@ export default function Contato() {
       </section>
 
       {/* Main CTA */}
-      <section className="py-24 bg-black">
+      <section className="py-16 bg-black">
         <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* WhatsApp big button */}
           <a
             href={getWhatsAppUrl("Olá! Vim pelo site e quero saber mais sobre o Personal Trainer.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-col items-center justify-center gap-4 border border-white/20 hover:border-white p-12 transition-all duration-300 hover:bg-white/5 mb-8"
+            className="group flex flex-col items-center justify-center gap-4 border border-white/20 hover:border-white p-8 transition-all duration-300 hover:bg-white/5 mb-8"
           >
             <div
               className="flex items-center justify-center w-20 h-20 rounded-full"
@@ -68,7 +68,7 @@ export default function Contato() {
           </a>
 
           {/* Info cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             <div className="border border-white/10 p-6 text-left">
               <p className="text-white text-xs font-semibold tracking-[0.1em] uppercase mb-3">
                 Atendimento Presencial

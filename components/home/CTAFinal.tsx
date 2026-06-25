@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CTAFinal() {
   return (
-    <section className="py-32 bg-white text-black" id="cta">
+    <section className="py-24 bg-white text-black" id="cta">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-6">
           Pronto para começar?

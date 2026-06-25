@@ -65,9 +65,9 @@ const diferenciais = [
 
 export default function Diferenciais() {
   return (
-    <section className="py-24 bg-black" id="diferenciais">
+    <section className="py-20 bg-black" id="diferenciais">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-16 text-center">
+        <div className="mb-12 text-center">
           <SectionTitle
             eyebrow="Por que o Método Montinho?"
             title="O que me torna diferente"

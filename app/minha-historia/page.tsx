@@ -12,7 +12,7 @@ export default function MinhaHistoria() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-24 pb-12 bg-black border-b border-white/10">
+      <section className="pt-16 pb-10 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-6">
             Minha História
@@ -30,10 +30,10 @@ export default function MinhaHistoria() {
       </section>
 
       {/* Story Content */}
-      <article className="pt-12 pb-20 bg-black">
+      <article className="pt-10 pb-16 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Photo */}
-          <div className="mb-16 relative">
+          <div className="mb-12 relative">
             <div className="aspect-[3/4] sm:aspect-[4/3] bg-gray-900 overflow-hidden">
               <Image
                 src="/foto-historia-montinho-personal.jpeg"

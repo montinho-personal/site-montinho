@@ -87,7 +87,7 @@ export default function Hero() {
         </div>
 
         {/* Social proof */}
-        <div className="mt-16 pt-12 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-500">
+        <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-500">
           <div className="flex items-center gap-2">
             <span className="text-white font-bold text-2xl" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>+20 anos</span>
             <span className="text-sm">de experiência em musculação</span>

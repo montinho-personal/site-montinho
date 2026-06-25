@@ -108,7 +108,7 @@ export default function FAQ() {
   return (
     <>
       {/* Hero */}
-      <section className="py-24 bg-black border-b border-white/10">
+      <section className="py-16 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionTitle
             eyebrow="Perguntas Frequentes"
@@ -119,7 +119,7 @@ export default function FAQ() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-black">
+      <section className="py-16 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div>
             {faqs.map((faq, index) => (
@@ -130,7 +130,7 @@ export default function FAQ() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 border-t border-white/10 text-center" style={{ background: "#0d0d0d" }}>
+      <section className="py-16 border-t border-white/10 text-center" style={{ background: "#0d0d0d" }}>
         <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-2xl sm:text-3xl font-bold text-white mb-4"

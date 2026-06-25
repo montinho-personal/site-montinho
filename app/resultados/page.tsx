@@ -130,7 +130,7 @@ export default function Resultados() {
   return (
     <>
       {/* Hero */}
-      <section className="py-24 bg-black border-b border-white/10">
+      <section className="py-16 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionTitle
             eyebrow="Resultados"
@@ -142,7 +142,7 @@ export default function Resultados() {
       </section>
 
       {/* Results Grid */}
-      <section className="py-20 bg-black">
+      <section className="py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {resultados.filter((item) => item.photo).map((item, index) => (
@@ -209,7 +209,7 @@ export default function Resultados() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-white text-black text-center">
+      <section className="py-16 bg-white text-black text-center">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl sm:text-4xl font-bold text-black mb-5"
