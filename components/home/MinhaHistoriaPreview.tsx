@@ -1,20 +1,23 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function MinhaHistoriaPreview() {
   return (
     <section className="py-24 bg-white/5 border-t border-white/10" id="historia">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Image Placeholder */}
+          {/* Image */}
           <div className="relative">
             <div className="aspect-[4/5] bg-gray-900 overflow-hidden">
-              <img
-                src="https://placehold.co/800x1000/1a1a1a/333333?text=Montinho+PT"
+              <Image
+                src="/foto-historia-montinho-personal.jpeg"
                 alt="Montinho Personal Trainer"
-                className="w-full h-full object-cover opacity-70"
+                width={800}
+                height={1000}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                className="opacity-90"
               />
             </div>
-            {/* Decorative element */}
             <div className="absolute -bottom-4 -right-4 w-32 h-32 border border-white/20" />
             <div className="absolute -top-4 -left-4 w-32 h-32 border border-white/10" />
           </div>
@@ -50,7 +53,6 @@ export default function MinhaHistoriaPreview() {
               </p>
             </div>
 
-            {/* Quote highlight */}
             <blockquote className="border-l-2 border-white/30 pl-5 py-1">
               <p
                 className="text-white text-lg italic leading-relaxed"

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Minha História",
@@ -32,13 +32,17 @@ export default function MinhaHistoria() {
       {/* Story Content */}
       <article className="py-20 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Image */}
+          {/* Main Photo */}
           <div className="mb-16 relative">
             <div className="aspect-video bg-gray-900 overflow-hidden">
-              <img
-                src="https://placehold.co/1200x675/1a1a1a/333333?text=Montinho+Personal+Trainer"
+              <Image
+                src="/foto-historia-montinho-personal.jpeg"
                 alt="Montinho Personal Trainer"
-                className="w-full h-full object-cover opacity-70"
+                width={1200}
+                height={675}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                className="opacity-90"
+                priority
               />
             </div>
           </div>
@@ -105,6 +109,30 @@ export default function MinhaHistoria() {
                 </p>
               </div>
             </section>
+
+            {/* Photo gallery mid-story */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="aspect-square bg-gray-900 overflow-hidden">
+                <Image
+                  src="/foto-historia-2.jpg"
+                  alt="Jornada de transformação"
+                  width={400}
+                  height={400}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  className="opacity-80"
+                />
+              </div>
+              <div className="aspect-square bg-gray-900 overflow-hidden">
+                <Image
+                  src="/foto-historia-3.jpg"
+                  alt="Jornada de transformação"
+                  width={400}
+                  height={400}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  className="opacity-80"
+                />
+              </div>
+            </div>
 
             <section>
               <h2
@@ -191,6 +219,40 @@ export default function MinhaHistoria() {
                 </p>
               </div>
             </section>
+
+            {/* Photo gallery 2 */}
+            <div className="grid grid-cols-3 gap-3">
+              <div className="aspect-square bg-gray-900 overflow-hidden">
+                <Image
+                  src="/foto-historia-4.jpg"
+                  alt="Resultado da transformação"
+                  width={300}
+                  height={300}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  className="opacity-80"
+                />
+              </div>
+              <div className="aspect-square bg-gray-900 overflow-hidden">
+                <Image
+                  src="/foto-historia-5.jpg"
+                  alt="Resultado da transformação"
+                  width={300}
+                  height={300}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  className="opacity-80"
+                />
+              </div>
+              <div className="aspect-square bg-gray-900 overflow-hidden">
+                <Image
+                  src="/foto-historia-6.jpg"
+                  alt="Resultado da transformação"
+                  width={300}
+                  height={300}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  className="opacity-80"
+                />
+              </div>
+            </div>
 
             <section>
               <h2
