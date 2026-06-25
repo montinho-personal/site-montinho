@@ -111,7 +111,7 @@ export const blogPosts: BlogPost[] = [
 <p>Sem proteína suficiente e estímulo de força adequado, o corpo usa o tecido muscular como combustível durante o emagrecimento. Menos massa muscular significa taxa metabólica mais baixa — o que torna cada novo ciclo de dieta progressivamente mais difícil.</p>
 
 <h3>Resposta hormonal à restrição</h3>
-<p>A grelina — hormônio que sinaliza fome — aumenta significativamente durante dietas restritivas. A leptina, hormônio que sinaliza saciedade, cai. A vontade incontrolável de comer não é fraqueza psicológica: é uma resposta hormonal direta à restrição, projetada para te fazer buscar comida.</p>
+<p>Quando você come pouco por tempo demais, o organismo aciona mecanismos de sobrevivência que aumentam ativamente o apetite e reduzem a saciedade. Dois hormônios são centrais nesse processo: a grelina sobe (você sente mais fome) e a leptina cai (você demora mais para se sentir satisfeito). A compulsão que aparece dias depois de uma dieta restritiva não é falta de força de vontade — é o seu sistema hormonal funcionando exatamente como foi programado para funcionar.</p>
 
 <h2>O que realmente funciona para emagrecer com saúde</h2>
 
@@ -215,7 +215,7 @@ export const blogPosts: BlogPost[] = [
 <p>Pegar peso demais com técnica ruim não constrói músculo — constrói lesão. Vi incontáveis pessoas se machucarem por não aceitar começar com carga menor e aprender o movimento correto. O ego cobra caro: semanas ou meses de afastamento por uma lesão evitável.</p>
 
 <h3>3. Subestimar a recuperação</h3>
-<p>O músculo cresce durante o descanso, não durante o treino. O treino gera o estímulo; o sono e a recuperação geram a adaptação. Dormir 7 a 9 horas por noite não é luxo — é parte fundamental do processo de hipertrofia.</p>
+<p>Existe uma crença muito difundida de que mais treino sempre equivale a mais resultado. Não equivale. Na academia você aplica o estímulo. É fora dela — e principalmente durante o sono — que o corpo processa esse estímulo e constrói a adaptação. Quem dorme mal, treina todo dia sem planejar o descanso ou vive com o nível de estresse no teto está limitando o próprio progresso, independentemente da qualidade do treino.</p>
 
 <h3>4. Treinar sem planejamento ou periodização</h3>
 <p>Entrar na academia e fazer o que dá na cabeça não é método, é passatempo. Resultados consistentes exigem programação inteligente: volume, intensidade, frequência e periodização pensados em conjunto e revisados regularmente.</p>
@@ -315,7 +315,7 @@ export const blogPosts: BlogPost[] = [
 <p>Não adianta querer levantar muito peso se você não tem mobilidade articular para executar o movimento com segurança e amplitude completa. Investir em mobilidade não é fraqueza — é inteligência. Um agachamento profundo bem executado vale muito mais do que um parcial cheio de compensações que vão destruir seus joelhos ao longo do tempo.</p>
 
 <h3>Respeitar os sinais do corpo</h3>
-<p>Existe uma diferença fundamental entre desconforto muscular — que é normal e esperado durante o treino — e dor articular, que é sinal de alerta. Aprender a distinguir os dois é indispensável para treinar com segurança a longo prazo. "No pain, no gain" não se aplica a articulações.</p>
+<p>Treinar com desconforto muscular é esperado e faz parte do processo. Treinar com dor articular é um erro que vai custar caro mais adiante. O problema é que muita gente não sabe distinguir um do outro — e isso leva a ignorar sinais que estão dizendo claramente "para". Quando um movimento produz dor pontual numa articulação, durante ou depois do treino, isso não é sinal de que você está se esforçando bem. É sinal de que algo está errado e precisa ser avaliado antes de virar uma lesão estrutural.</p>
 
 <h3>Progressão gradual de carga</h3>
 <p>O corpo precisa de tempo para se adaptar a novas cargas. Aumentar peso demais, rápido demais, é a receita mais garantida para uma lesão. Paciência e progressão gradual — respeitando o princípio da adaptação progressiva — não são sinais de fraqueza. São a estratégia de quem quer resultados sustentáveis por décadas.</p>
@@ -324,7 +324,7 @@ export const blogPosts: BlogPost[] = [
 <p>Dias de descanso não precisam ser dias completamente sem movimento. Caminhada leve, alongamento, trabalho de mobilidade e técnicas de recuperação como contraste quente-frio aceleram a recuperação e previnem lesões ao manter o fluxo sanguíneo e reduzir a rigidez muscular e articular.</p>
 
 <h3>Aquecimento específico antes de cada sessão</h3>
-<p>O aquecimento não é opcional — é parte do treino. Cinco a dez minutos preparando o sistema nervoso, elevando a temperatura muscular e ativando os padrões de movimento que serão usados na sessão reduzem drasticamente o risco de lesões agudas e melhoram a qualidade do treino como um todo.</p>
+<p>Entrar direto no exercício pesado sem preparação prévia é como acelerar um carro frio a fundo imediatamente. O tecido muscular frio, o sistema nervoso ainda em baixa ativação e as articulações sem lubrificação adequada formam a combinação ideal para uma lesão aguda. Dez minutos de ativação específica — movimentos que reproduzem o padrão do que você vai treinar, progressivamente mais intensos — mudam completamente esse cenário. Não é ritual, é fisiologia.</p>
 
 <h2>O papel do Personal Trainer na prevenção de lesões</h2>
 
@@ -409,7 +409,7 @@ export const blogPosts: BlogPost[] = [
 <h2>Os 5 hábitos que estão sabotando seu progresso</h2>
 
 <h3>1. Dormir pouco ou mal</h3>
-<p>Privação de sono eleva o cortisol (hormônio do estresse) e a grelina (hormônio da fome), enquanto reduz a leptina (hormônio da saciedade). O resultado: mais fome, mais compulsão por carboidratos simples e mais acúmulo de gordura abdominal. Dormir mal também prejudica a recuperação muscular e reduz a disposição para treinar no dia seguinte — criando um ciclo vicioso.</p>
+<p>Poucas pessoas associam o número de horas dormidas com a velocidade do emagrecimento — mas a relação é direta e documentada. Quando o sono é insuficiente ou fragmentado, o equilíbrio hormonal muda: o apetite aumenta (especialmente por alimentos de alta caloria), a saciedade chega mais devagar e o acúmulo de gordura abdominal é favorecido. Além disso, quem dorme mal acorda sem energia para treinar e ainda compromete a recuperação muscular do dia anterior. Um problema gera o outro numa espiral que vai ficando cada vez mais difícil de quebrar.</p>
 
 <h3>2. Estresse crônico</h3>
 <p>O cortisol elevado de forma persistente é um dos maiores sabotadores invisíveis do emagrecimento. Ele favorece o acúmulo de gordura visceral, aumenta a compulsão alimentar e dificulta a recuperação. Estratégias de gerenciamento de estresse — meditação, atividades ao ar livre, desconexão digital — não são frescura. São parte do protocolo de transformação.</p>
@@ -503,9 +503,9 @@ export const blogPosts: BlogPost[] = [
 
 <h2>O que é hipertrofia muscular — e por que ela não acontece por acidente</h2>
 
-<p>Hipertrofia muscular é o aumento do tamanho das fibras musculares em resposta a um estímulo mecânico. Em termos práticos: você aplica carga ao músculo, gera microlesões nas fibras, e o corpo as reconstrói ligeiramente maiores e mais fortes durante a recuperação.</p>
+<p>Quando você levanta peso, as fibras musculares sofrem tensão mecânica. O corpo interpreta isso como sinal de que precisa se preparar melhor para aquele esforço no futuro — e faz isso reconstruindo as fibras um pouco mais espessas do que estavam antes. É esse ciclo de estímulo, quebra e reconstrução que chamamos de hipertrofia.</p>
 
-<p>O problema é que esse processo exige condições específicas. Ele não acontece porque você foi à academia. Acontece quando o estímulo é adequado, a nutrição sustenta a reconstrução e a recuperação é suficiente para completar o ciclo.</p>
+<p>O ponto que a maioria ignora: esse ciclo depende de três condições simultâneas. O estímulo precisa ser suficiente para sinalizar adaptação. A nutrição precisa fornecer os materiais para a reconstrução. E o período de recuperação precisa ser longo o bastante para o processo se completar.</p>
 
 <p>Tire qualquer um desses três pilares e o processo trava — independentemente de quanto tempo você passa treinando.</p>
 
@@ -515,7 +515,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Não é qualquer treino que provoca hipertrofia. O músculo precisa ser submetido a um estresse suficiente para que o corpo interprete aquilo como um sinal de que precisa se adaptar. E esse estresse precisa aumentar progressivamente ao longo do tempo — caso contrário, o corpo se acomoda e para de crescer.</p>
 
-<p>Isso se chama <strong>sobrecarga progressiva</strong> — o princípio mais importante do treinamento para hipertrofia. Sem progressão de carga, volume ou densidade, não existe estímulo novo. Sem estímulo novo, não existe crescimento.</p>
+<p>É aí que entra a <strong>sobrecarga progressiva</strong>: a ideia de que o estímulo precisa crescer junto com o músculo. Se hoje você faz 4 séries de 10 repetições com 50 kg e daqui a seis meses faz exatamente a mesma coisa, o músculo já está completamente adaptado àquele esforço — e não tem nenhum motivo para continuar crescendo.</p>
 
 <p>Muita gente treina há anos fazendo os mesmos exercícios, com o mesmo peso, no mesmo número de repetições. E depois se pergunta por que não cresce. A resposta está aqui.</p>
 
@@ -535,9 +535,9 @@ export const blogPosts: BlogPost[] = [
 
 <p>Este é o pilar mais negligenciado — e talvez o mais importante.</p>
 
-<p>O crescimento muscular não acontece durante o treino. Acontece entre os treinos, principalmente durante o sono profundo, quando o hormônio do crescimento (GH) é liberado em maior quantidade e o processo de síntese proteica atinge seu pico.</p>
+<p>A academia cria o ambiente para o crescimento. O quarto de dormir é onde ele acontece de fato.</p>
 
-<p>Dormir 7 a 9 horas por noite não é opcional quando o objetivo é hipertrofia. É parte do protocolo. Quem dorme pouco, treina demais sem recuperar adequadamente ou vive sob estresse crônico está comprometendo ativamente o ganho muscular — mesmo que o treino e a dieta estejam corretos.</p>
+<p>Durante o sono profundo, o organismo libera o hormônio do crescimento em quantidade muito superior ao que produz durante o dia — e é nesse período que a síntese proteica muscular está no pico. Cortar o sono para "ter mais tempo para treinar" é matematicamente contraproducente: você aumenta o estímulo e reduz a capacidade de resposta ao mesmo tempo. Quem vive dormindo 5 ou 6 horas, por mais que treine, está pedindo ao corpo um resultado que ele não tem condições bioquímicas de entregar.</p>
 
 <h2>As variáveis de treino que você precisa entender</h2>
 
@@ -686,13 +686,13 @@ export const blogPosts: BlogPost[] = [
 
 <h2>O que acontece no seu corpo mês a mês</h2>
 
-<h3>Primeiro mês — força antes de volume</h3>
+<h3>Primeiro mês — o motor esquentando</h3>
 
-<p>Uma das maiores frustrações de quem começa a treinar é olhar no espelho depois de um mês e ver pouca mudança. É normal. E tem uma explicação fisiológica clara.</p>
+<p>Depois de um mês de treino, a maioria das pessoas olha no espelho e fica decepcionada. Pouca coisa visível mudou. Mas o que está acontecendo por baixo é mais importante do que parece.</p>
 
-<p>No primeiro mês de treino, o maior ganho não é muscular — é <strong>neural</strong>. O sistema nervoso central aprende a recrutar mais fibras musculares de forma eficiente. É por isso que a força aumenta rapidamente no início, mesmo sem ganho muscular proporcional. Você fica mais forte antes de ficar maior.</p>
+<p>O sistema nervoso central está aprendendo. Antes do primeiro treino, o seu cérebro não sabe como ativar com eficiência as fibras musculares disponíveis — é como tentar dirigir uma van sem nunca ter saído com ela da garagem. O primeiro mês é esse período de calibração: você fica visivelmente mais forte antes de ficar visivelmente maior, porque o ganho de força inicial é principalmente neurológico, não muscular.</p>
 
-<p>O ganho de massa muscular real começa a acontecer, mas é pequeno. Iniciantes podem acumular entre 0,5 e 1 kg de músculo no primeiro mês em condições ideais. O que você sente mais é a mudança na firmeza muscular — não no tamanho.</p>
+<p>O tecido muscular começa a responder, mas em proporção discreta. O que você percebe antes da mudança de tamanho é a firmeza diferente ao toque — o músculo mais denso, mais "presente". Esse é o sinal de que o processo começou. Não desconte.</p>
 
 <h3>3 meses — quando os resultados começam a aparecer</h3>
 
@@ -755,11 +755,11 @@ export const blogPosts: BlogPost[] = [
 
 <h3>A influência da idade</h3>
 
-<p>A partir dos 35 anos, os níveis de hormônios anabólicos começam a declinar gradualmente. Após os 50, esse processo é mais pronunciado — especialmente em mulheres na perimenopausa e menopausa.</p>
+<p>Com o avançar dos anos, o ambiente hormonal vai se tornando menos favorável ao crescimento muscular. Isso acontece de forma gradual a partir dos 35 anos e fica mais evidente após os 50 — particularmente em mulheres na transição para a menopausa. O processo não é dramático de uma vez, mas acumulado ao longo de anos faz diferença real na velocidade de progressão.</p>
 
-<p>Isso significa que ganhar músculo depois dos 40 é impossível? De forma alguma. Significa que o protocolo precisa ser ainda mais inteligente: mais atenção à proteína, maior cuidado com a recuperação, volume de treino bem gerenciado e, quando aplicável, avaliação médica para suporte hormonal.</p>
+<p>Ganhar massa muscular depois dos 40 ou 50 é absolutamente possível. O que muda é que o protocolo precisa ser mais preciso: proteína mais alta, recuperação mais cuidadosa, volume de treino bem controlado para não sobrecarregar. Com a estratégia ajustada à fisiologia da faixa etária, os resultados acontecem — só exigem mais atenção aos detalhes.</p>
 
-<p>Já trabalhei com alunos acima dos 50 anos que transformaram o corpo de maneira impressionante. O que muda é a estratégia — não o potencial de resultado.</p>
+<p>Tenho alunos acima dos 55 anos com transformações que fariam qualquer jovem de 25 repensar suas desculpas.</p>
 
 <h2>Os fatores que controlam a velocidade do ganho</h2>
 
@@ -789,11 +789,9 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Sono e recuperação</h3>
 
-<p>O músculo não cresce durante o treino. Cresce durante o sono.</p>
+<p>Há uma ironia no mundo fitness que poucos percebem: a pessoa que dorme mal para "ter mais tempo de treinar" está ativamente destruindo parte do que construiu na academia.</p>
 
-<p>É no sono profundo que o hormônio do crescimento (GH) é liberado em maior quantidade e que a síntese proteica muscular atinge seu pico. Dormir 6 horas quando você poderia dormir 8 não é "sacrifício pela disciplina" — é sabotar ativamente o ganho muscular pelo qual você está trabalhando duro.</p>
-
-<p>7 a 9 horas de sono por noite não é recomendação genérica de bem-estar. Para hipertrofia, é parte do protocolo.</p>
+<p>O tecido muscular não tem como crescer durante o treino — ali está sendo literalmente danificado. A construção acontece nas horas que se seguem, com pico durante o sono profundo. Cortar o sono para encaixar mais uma sessão não é sacrifício disciplinado, é boicotar o próprio processo. Qualidade de recuperação não é opcional quando o objetivo é hipertrofia — ela é tão determinante quanto o treino em si.</p>
 
 <h3>Volume, intensidade, frequência e progressão de carga</h3>
 
@@ -823,9 +821,9 @@ export const blogPosts: BlogPost[] = [
 
 <p>Sim — mas com ressalvas importantes.</p>
 
-<p>A <strong>creatina</strong> é o suplemento esportivo com maior suporte na literatura científica para hipertrofia. Ela aumenta a disponibilidade de fosfocreatina nos músculos, melhorando a performance em exercícios de alta intensidade e curta duração — o que permite mais volume de treino ao longo do tempo. O efeito acumulado é real: quem toma creatina consistentemente e treina bem ganha mais músculo do que quem treina com o mesmo protocolo sem o suplemento.</p>
+<p>A <strong>creatina</strong> é o suplemento mais estudado e com melhor suporte de evidência no contexto do treinamento de força. O mecanismo é simples: ela aumenta a reserva de energia imediata disponível durante esforços explosivos e de alta intensidade, o que permite séries com mais repetições, mais volume acumulado por sessão e recuperação mais rápida entre estímulos. O impacto no ganho muscular não é direto — é consequência do treino melhor que ela viabiliza ao longo do tempo.</p>
 
-<p>O <strong>whey protein</strong> não tem nada de mágico. É proteína de alta qualidade e digestão rápida — conveniente para quem tem dificuldade de atingir a meta diária de proteína pela alimentação. Se você já come proteína suficiente, o whey não vai acelerar o ganho muscular. Se você não come, ele resolve um problema real de forma prática.</p>
+<p>O <strong>whey protein</strong> é basicamente conveniência em pó. A proteína que ele fornece não é superior à que você obtém de frango, ovo ou carne — ela só chega mais rápido e com menos preparo. Para quem bate a meta diária de proteína só com comida, o whey não muda nada. Para quem tem dificuldade de atingir essa meta no dia a dia, ele resolve o problema de forma prática.</p>
 
 <p>Nenhum suplemento substitui a base: treino progressivo, alimentação adequada, sono de qualidade e consistência.</p>
 
