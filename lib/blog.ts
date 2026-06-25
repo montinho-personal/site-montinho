@@ -440,7 +440,6 @@ export const blogPosts: BlogPost[] = [
 </ul>
     `,
   },
-];
 
   // ─────────────────────────────────────────────────────────────────────────
   // ARTIGO 5
@@ -611,6 +610,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
     `,
   },
+];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
   return blogPosts.find((post) => post.slug === slug);
