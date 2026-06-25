@@ -91,6 +91,11 @@ export const blogPosts: BlogPost[] = [
 
 <h2>O ciclo vicioso das dietas restritivas</h2>
 
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="/blog/resultado-emagrecimento-antes-depois.webp" alt="Resultado de emagrecimento com acompanhamento de personal trainer — antes e depois" title="Transformação real: emagrecimento com método e personal trainer" loading="lazy" width="900" height="900" style="max-width:100%; height:auto; display:inline-block;" />
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: #9ca3af;">Resultado real de aluno com acompanhamento presencial em Alphaville. Emagrecimento com preservação de massa muscular.</figcaption>
+</figure>
+
 <p>A grande maioria das "soluções" para emagrecimento segue o mesmo padrão:</p>
 <ol>
   <li>Você corta calorias drasticamente</li>
@@ -125,6 +130,11 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Por que o acompanhamento profissional muda tudo</h2>
+
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="/blog/personal-trainer-resultado-emagrecimento.webp" alt="Personal trainer acompanhando treino de emagrecimento em Alphaville — resultado comprovado" title="Acompanhamento presencial de personal trainer para emagrecimento" loading="lazy" width="1200" height="895" style="max-width:100%; height:auto; display:inline-block;" />
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: #9ca3af;">Treino individualizado com personal trainer em Alphaville: método que respeita a biologia e gera resultados duradouros.</figcaption>
+</figure>
 
 <p>Quando você tenta fazer tudo sozinho, cada obstáculo vira um motivo para desistir. Com um profissional ao seu lado, cada obstáculo vira uma oportunidade de ajuste de protocolo.</p>
 
@@ -200,6 +210,11 @@ export const blogPosts: BlogPost[] = [
 
 <p>A boa notícia: todos eles são identificáveis e corrigíveis. Confira se você está cometendo algum destes.</p>
 
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="/blog/personal-trainer-musculacao-alphaville.webp" alt="Personal trainer em Alphaville durante sessão de musculação com foco em técnica" title="Musculação com personal trainer em Alphaville — execução técnica correta" loading="lazy" width="800" height="1422" style="max-width:100%; height:auto; display:inline-block; max-height: 600px; object-fit: cover;" />
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: #9ca3af;">Técnica correta no treino de musculação: mais resultado com menos risco de lesão.</figcaption>
+</figure>
+
 <h2>Treinar muito não é treinar bem</h2>
 
 <p>Um dos maiores mitos no mundo fitness é que mais treino significa mais resultado. Na prática, acontece o oposto: volume excessivo sem recuperação adequada leva à estagnação, a lesões e até à perda de massa muscular — fenômeno chamado overtraining.</p>
@@ -228,6 +243,11 @@ export const blogPosts: BlogPost[] = [
 
 <h3>7. Desistir cedo demais</h3>
 <p>Resultados reais levam tempo. A maioria das pessoas desiste exatamente quando está prestes a ver a transformação acontecer. Consistência por meses — não semanas — é o que separa quem transforma o corpo de quem fica eternamente estagnado.</p>
+
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="/blog/treino-forca-personal-trainer.webp" alt="Treino de força com personal trainer — progressão de carga e técnica correta em cada série" title="Treino de força com acompanhamento profissional em Alphaville" loading="lazy" width="800" height="1422" style="max-width:100%; height:auto; display:inline-block; max-height: 600px; object-fit: cover;" />
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: #9ca3af;">Progressão de carga controlada com personal trainer: a diferença entre treinar e evoluir.</figcaption>
+</figure>
 
 <h2>Como corrigir o caminho agora</h2>
 
@@ -303,6 +323,11 @@ export const blogPosts: BlogPost[] = [
 
 <p>Estes são os princípios que aplico com meus alunos — tanto no atendimento presencial em Alphaville quanto na <a href="/consultoria">consultoria online</a> — para garantir décadas de treino consistente e sem dor.</p>
 
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="/blog/personal-trainer-correcao-postura-exercicio.webp" alt="Correção de postura em exercício — personal trainer prevenindo lesão durante treino" title="Prevenção de lesões no treino com personal trainer em Alphaville" loading="lazy" width="1200" height="900" style="max-width:100%; height:auto; display:inline-block;" />
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: #9ca3af;">Postura correta no exercício é a principal ferramenta de prevenção de lesões no treino.</figcaption>
+</figure>
+
 <h2>Os dois tipos de lesão que você precisa conhecer</h2>
 
 <p>Existe a lesão aguda — aquela que acontece de repente com um estalo ou dor intensa durante o esforço. E existe a lesão crônica — aquela que vai se desenvolvendo silenciosamente por meses de má postura, sobrecarga errada e falta de mobilidade.</p>
@@ -325,6 +350,11 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Aquecimento específico antes de cada sessão</h3>
 <p>Entrar direto no exercício pesado sem preparação prévia é como acelerar um carro frio a fundo imediatamente. O tecido muscular frio, o sistema nervoso ainda em baixa ativação e as articulações sem lubrificação adequada formam a combinação ideal para uma lesão aguda. Dez minutos de ativação específica — movimentos que reproduzem o padrão do que você vai treinar, progressivamente mais intensos — mudam completamente esse cenário. Não é ritual, é fisiologia.</p>
+
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="/blog/personal-trainer-acompanhamento-treino.webp" alt="Personal trainer acompanhando aluno — prevenção de lesões com técnica e progressão segura" title="Acompanhamento de personal trainer: segurança e progressão no treino" loading="lazy" width="800" height="1002" style="max-width:100%; height:auto; display:inline-block;" />
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: #9ca3af;">O personal trainer detecta compensações e erros de execução antes que virem lesão.</figcaption>
+</figure>
 
 <h2>O papel do Personal Trainer na prevenção de lesões</h2>
 
@@ -406,6 +436,11 @@ export const blogPosts: BlogPost[] = [
 
 <p>Esses cinco hábitos são os que aparecem com mais frequência nos alunos que chegam até mim sem conseguir emagrecer, mesmo fazendo tudo "certo" no treino e na dieta.</p>
 
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="/blog/transformacao-corporal-antes-depois.webp" alt="Transformação corporal antes e depois — resultado de mudança de hábitos e treino consistente" title="Antes e depois: transformação corporal com mudança de hábitos" loading="lazy" width="1000" height="1000" style="max-width:100%; height:auto; display:inline-block;" />
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: #9ca3af;">Transformação real: hábitos alimentares e de treino consistentes produzem resultados que dietas radicais nunca entregaram.</figcaption>
+</figure>
+
 <h2>Os 5 hábitos que estão sabotando seu progresso</h2>
 
 <h3>1. Dormir pouco ou mal</h3>
@@ -422,6 +457,11 @@ export const blogPosts: BlogPost[] = [
 
 <h3>5. Subestimar calorias líquidas</h3>
 <p>Sucos, refrigerantes, bebidas alcoólicas, café adoçado — essas calorias somam muito e raramente são consideradas no controle alimentar. O problema é que líquidos geram pouca saciedade comparado ao mesmo número de calorias em alimentos sólidos. Trocar bebidas calóricas por água, chá sem açúcar ou café puro é uma mudança simples com grande impacto acumulado.</p>
+
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="/blog/personal-trainer-resultado-emagrecimento.webp" alt="Resultado de emagrecimento sustentável com hábitos saudáveis e treino regular" title="Emagrecimento com hábitos: resultado de longo prazo com personal trainer" loading="lazy" width="1200" height="895" style="max-width:100%; height:auto; display:inline-block;" />
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: #9ca3af;">Mudar hábitos — não apenas treinar — é o que separa resultados temporários de transformações permanentes.</figcaption>
+</figure>
 
 <h2>A transformação começa nos hábitos — não apenas no treino</h2>
 
@@ -509,6 +549,11 @@ export const blogPosts: BlogPost[] = [
 
 <p>Tire qualquer um desses três pilares e o processo trava — independentemente de quanto tempo você passa treinando.</p>
 
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="/blog/hipertrofia-treino-personalizado.webp" alt="Treino de hipertrofia com personal trainer — os três pilares para ganho de massa muscular" title="Hipertrofia muscular com personal trainer: treino, nutrição e recuperação" loading="lazy" width="800" height="1730" style="max-width:100%; height:auto; display:inline-block; max-height: 600px; object-fit: cover;" />
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: #9ca3af;">Ganho de massa muscular depende de três pilares integrados — e nenhum dos três pode ser negligenciado.</figcaption>
+</figure>
+
 <h2>Os três pilares que determinam seus resultados</h2>
 
 <h3>1. Estímulo: o treino que realmente gera resultado</h3>
@@ -573,6 +618,11 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <p>Quem promete "5 kg de massa muscular em 4 semanas" está mentindo. Crescimento muscular real é um processo gradual — e é exatamente por isso que consistência ao longo de meses e anos é o que separa quem transforma o corpo de quem fica estagnado.</p>
+
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="/blog/treino-forca-personal-trainer.webp" alt="Personal trainer corrigindo técnica de treino de força para hipertrofia — execução e progressão corretas" title="Treino de força para hipertrofia: técnica e progressão com personal trainer" loading="lazy" width="800" height="1422" style="max-width:100%; height:auto; display:inline-block; max-height: 600px; object-fit: cover;" />
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: #9ca3af;">Técnica impecável e progressão de carga controlada: os dois fatores mais negligenciados por quem não evolui na hipertrofia.</figcaption>
+</figure>
 
 <h2>Os erros que travam a hipertrofia mesmo em quem se dedica</h2>
 
@@ -684,6 +734,11 @@ export const blogPosts: BlogPost[] = [
 
 <p>Agora vou te explicar o que está acontecendo no seu corpo em cada uma dessas fases — e por que esse processo tem o ritmo que tem.</p>
 
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="/blog/personal-trainer-musculacao-alphaville.webp" alt="Evolução muscular mês a mês — personal trainer acompanhando progressão de massa muscular" title="Quanto tempo para ganhar massa muscular: evolução com personal trainer" loading="lazy" width="800" height="1422" style="max-width:100%; height:auto; display:inline-block; max-height: 600px; object-fit: cover;" />
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: #9ca3af;">A progressão muscular acontece de forma gradual — mas consistente quando o método está correto.</figcaption>
+</figure>
+
 <h2>O que acontece no seu corpo mês a mês</h2>
 
 <h3>Primeiro mês — o motor esquentando</h3>
@@ -760,6 +815,11 @@ export const blogPosts: BlogPost[] = [
 <p>Ganhar massa muscular depois dos 40 ou 50 é absolutamente possível. O que muda é que o protocolo precisa ser mais preciso: proteína mais alta, recuperação mais cuidadosa, volume de treino bem controlado para não sobrecarregar. Com a estratégia ajustada à fisiologia da faixa etária, os resultados acontecem — só exigem mais atenção aos detalhes.</p>
 
 <p>Tenho alunos acima dos 55 anos com transformações que fariam qualquer jovem de 25 repensar suas desculpas.</p>
+
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="/blog/hipertrofia-treino-personalizado.webp" alt="Fatores que determinam velocidade de ganho muscular — personal trainer em Alphaville" title="Velocidade de ganho muscular: fatores genéticos, nutrição e treino" loading="lazy" width="800" height="1730" style="max-width:100%; height:auto; display:inline-block; max-height: 600px; object-fit: cover;" />
+  <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: #9ca3af;">Genética, nutrição e método de treino determinam juntos a velocidade do seu ganho muscular.</figcaption>
+</figure>
 
 <h2>Os fatores que controlam a velocidade do ganho</h2>
 
