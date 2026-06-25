@@ -34,13 +34,13 @@ export default function MinhaHistoria() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Photo */}
           <div className="mb-16 relative">
-            <div className="aspect-video bg-gray-900 overflow-hidden">
+            <div className="aspect-[3/4] sm:aspect-[4/3] bg-gray-900 overflow-hidden">
               <Image
                 src="/foto-historia-montinho-personal.jpeg"
                 alt="Montinho Personal Trainer"
-                width={1200}
-                height={675}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                width={900}
+                height={1200}
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }}
                 className="opacity-90"
                 priority
               />
