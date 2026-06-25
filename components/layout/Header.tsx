@@ -33,7 +33,7 @@ export default function Header() {
               alt="Montinho Personal Trainer – Personal Trainer em Alphaville, Barueri e Santana de Parnaíba"
               width={160}
               height={60}
-              className="h-10 lg:h-14 w-auto"
+              className="h-9 lg:h-11 w-auto"
               style={{ filter: "invert(1)" }}
               priority
             />
