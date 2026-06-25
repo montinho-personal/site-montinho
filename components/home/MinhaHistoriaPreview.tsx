@@ -35,7 +35,7 @@ export default function MinhaHistoriaPreview() {
               Eu já estive do outro lado.
             </h2>
 
-            <div className="flex flex-col gap-4 text-gray-300 text-base leading-relaxed">
+            <div className="flex flex-col gap-4 text-gray-300 text-base leading-relaxed font-light">
               <p>
                 Cresci convivendo com a obesidade. Passava de dieta em dieta,
                 perdendo peso aqui, recuperando ali — e com isso, perdendo também

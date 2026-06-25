@@ -41,7 +41,7 @@ export default function SectionTitle({
         {title}
       </h2>
       {subtitle && (
-        <p className={`text-lg leading-relaxed ${subtitleColor}`}>{subtitle}</p>
+        <p className={`text-lg leading-relaxed font-light ${subtitleColor}`}>{subtitle}</p>
       )}
     </div>
   );

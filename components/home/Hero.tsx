@@ -39,7 +39,7 @@ export default function Hero() {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto mb-10">
+        <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto mb-10 font-light">
           Ciência aplicada, experiência real e acompanhamento próximo para
           resultados que duram. Para quem quer transformação de verdade.
         </p>
