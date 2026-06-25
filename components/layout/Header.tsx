@@ -14,6 +14,13 @@ const navLinks = [
   { href: "/contato", label: "Contato" },
 ];
 
+const localLinks = [
+  { href: "/personal-trainer-alphaville", label: "Personal Trainer Alphaville" },
+  { href: "/personal-trainer-barueri", label: "Personal Trainer Barueri" },
+  { href: "/personal-trainer-santana-de-parnaiba", label: "Personal Trainer Santana de Parnaíba" },
+  { href: "/personal-trainer-tambore", label: "Personal Trainer Tamboré" },
+];
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -132,6 +139,19 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <div className="mt-4 pt-4 border-t border-white/10">
+              <p className="text-gray-600 text-xs font-semibold tracking-[0.15em] uppercase px-2 mb-2">Atendimento Local</p>
+              {localLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-gray-400 hover:text-white text-sm font-medium py-2.5 px-2 border-b border-white/5 transition-colors duration-200 block"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
             <a
               href={getWhatsAppUrl()}
               target="_blank"

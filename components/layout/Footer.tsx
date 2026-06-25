@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="bg-black border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
           {/* Brand */}
           <div>
             <Link href="/" className="inline-block mb-4">
@@ -51,6 +51,19 @@ export default function Footer() {
                   {link.label}
                 </Link>
               ))}
+            </nav>
+          </div>
+
+          {/* Local Pages */}
+          <div>
+            <h3 className="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-5">
+              Atendimento Local
+            </h3>
+            <nav className="flex flex-col gap-3">
+              <Link href="/personal-trainer-alphaville" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">Personal Trainer Alphaville</Link>
+              <Link href="/personal-trainer-barueri" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">Personal Trainer Barueri</Link>
+              <Link href="/personal-trainer-santana-de-parnaiba" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">Personal Trainer Santana de Parnaíba</Link>
+              <Link href="/personal-trainer-tambore" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">Personal Trainer Tamboré</Link>
             </nav>
           </div>
 
