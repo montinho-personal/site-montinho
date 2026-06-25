@@ -19,7 +19,6 @@ const services = [
       "Avaliação física completa e anamnese",
       "Treinos personalizados 100% para você",
       "Correção de técnica em tempo real",
-      "Orientação nutricional integrada",
       "Suporte via WhatsApp entre as sessões",
       "Reavaliações mensais e ajustes de protocolo",
       "Prevenção e correção de desvios posturais",
@@ -38,7 +37,6 @@ const services = [
     includes: [
       "Anamnese completa e avaliação de histórico",
       "Treino personalizado com vídeos demonstrativos",
-      "Orientação nutricional detalhada",
       "Suporte diário via WhatsApp",
       "Check-ins semanais de evolução",
       "Reavaliações e ajustes mensais",
@@ -58,7 +56,6 @@ const services = [
     includes: [
       "Sessões presenciais semanais em Alphaville",
       "Treinos complementares online",
-      "Orientação nutricional integrada",
       "Suporte via WhatsApp todos os dias",
       "Avaliações e ajustes de protocolo",
       "Flexibilidade para períodos de viagem",
