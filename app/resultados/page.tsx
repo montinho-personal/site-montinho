@@ -9,7 +9,18 @@ export const metadata: Metadata = {
     "Veja as transformações reais dos alunos do Montinho Personal Trainer. Resultados de perda de peso, ganho de massa muscular e melhoria de qualidade de vida.",
 };
 
-const resultados = [
+interface ResultadoItem {
+  name: string;
+  age: string;
+  duration: string;
+  result: string;
+  modality: string;
+  photo?: string;
+  description: string;
+  quote: string;
+}
+
+const resultados: ResultadoItem[] = [
   {
     name: "Adriana Nascimento",
     age: "43 anos",
@@ -151,11 +162,9 @@ export default function Resultados() {
                       className="opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                     />
                   ) : (
-                    <img
-                      src="https://placehold.co/400x300/1a1a1a/333333?text=Antes+%26+Depois"
-                      alt={`Transformação de ${item.name}`}
-                      className="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-300"
-                    />
+                    <div className="w-full h-full bg-gray-800 flex items-center justify-center">
+                      <span className="text-gray-600 text-sm">Antes &amp; Depois</span>
+                    </div>
                   )}
                 </div>
 

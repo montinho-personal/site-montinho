@@ -18,11 +18,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return { title: "Artigo não encontrado" };
-
   return {
     title: post.title,
     description: post.excerpt,
-    keywords: post.tags?.join(", "),
     alternates: {
       canonical: `${SITE_URL}/blog/${slug}`,
     },
@@ -32,15 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       url: `${SITE_URL}/blog/${slug}`,
       publishedTime: post.date,
-      modifiedTime: post.updatedAt ?? post.date,
       authors: [post.author],
-      tags: post.tags,
-      section: post.category,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: post.title,
-      description: post.excerpt,
     },
   };
 }
@@ -69,9 +59,7 @@ export default async function BlogPost({ params }: Props) {
       url: SITE_URL,
     },
     datePublished: post.date,
-    dateModified: post.updatedAt ?? post.date,
     url: `${SITE_URL}/blog/${slug}`,
-    keywords: post.tags?.join(", "),
   };
 
   const breadcrumbSchema = {
@@ -98,7 +86,7 @@ export default async function BlogPost({ params }: Props) {
       {/* Breadcrumb + Hero */}
       <section className="pt-16 pb-12 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav aria-label="Breadcrumb" className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-3 mb-6">
             <Link
               href="/blog"
               className="text-gray-500 hover:text-white text-sm transition-colors duration-200 flex items-center gap-1"
@@ -108,9 +96,9 @@ export default async function BlogPost({ params }: Props) {
               </svg>
               Blog
             </Link>
-            <span className="text-gray-700" aria-hidden="true">/</span>
+            <span className="text-gray-700">/</span>
             <span className="text-gray-500 text-sm">{post.category}</span>
-          </nav>
+          </div>
 
           <h1
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
@@ -119,9 +107,9 @@ export default async function BlogPost({ params }: Props) {
             {post.title}
           </h1>
 
-          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500">
+          <div className="flex items-center gap-4 text-sm text-gray-500">
             <span>{post.author}</span>
-            <span aria-hidden="true">·</span>
+            <span>·</span>
             <time dateTime={post.date}>
               {new Date(post.date).toLocaleDateString("pt-BR", {
                 day: "numeric",
@@ -129,28 +117,13 @@ export default async function BlogPost({ params }: Props) {
                 year: "numeric",
               })}
             </time>
-            {post.updatedAt && post.updatedAt !== post.date && (
-              <>
-                <span aria-hidden="true">·</span>
-                <span>
-                  Atualizado em{" "}
-                  <time dateTime={post.updatedAt}>
-                    {new Date(post.updatedAt).toLocaleDateString("pt-BR", {
-                      day: "numeric",
-                      month: "long",
-                      year: "numeric",
-                    })}
-                  </time>
-                </span>
-              </>
-            )}
-            <span aria-hidden="true">·</span>
+            <span>·</span>
             <span>{post.readTime} de leitura</span>
           </div>
         </div>
       </section>
 
-      {/* Article content */}
+      {/* Content */}
       <article className="py-16 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
