@@ -140,7 +140,7 @@ export default function MinhaHistoria() {
             <div className="grid grid-cols-2 gap-3">
               <div className="aspect-square bg-gray-900 overflow-hidden">
                 <Image
-                  src="/foto-historia-2.jpg"
+                  src="/foto-historia-4.jpg"
                   alt="Jornada de transformação"
                   width={400}
                   height={400}
