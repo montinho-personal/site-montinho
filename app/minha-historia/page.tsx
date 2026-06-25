@@ -248,34 +248,34 @@ export default function MinhaHistoria() {
 
             {/* Photo gallery 2 */}
             <div className="grid grid-cols-3 gap-3">
-              <div className="aspect-square bg-gray-900 overflow-hidden">
+              <div className="aspect-[3/4] bg-gray-900 overflow-hidden">
                 <Image
-                  src="/foto-historia-4.jpg"
-                  alt="Resultado da transformação"
+                  src="/montinho-personal-trainer-shape.jpg"
+                  alt="Montinho Personal Trainer"
                   width={300}
-                  height={300}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  className="opacity-80"
+                  height={400}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }}
+                  className="opacity-90"
                 />
               </div>
-              <div className="aspect-square bg-gray-900 overflow-hidden">
+              <div className="aspect-[3/4] bg-gray-900 overflow-hidden">
                 <Image
-                  src="/foto-historia-5.jpg"
-                  alt="Resultado da transformação"
+                  src="/montinho-personal-trainer-shape-2.jpg"
+                  alt="Montinho Personal Trainer"
                   width={300}
-                  height={300}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  className="opacity-80"
+                  height={400}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }}
+                  className="opacity-90"
                 />
               </div>
-              <div className="aspect-square bg-gray-900 overflow-hidden">
+              <div className="aspect-[3/4] bg-gray-900 overflow-hidden">
                 <Image
-                  src="/foto-historia-6.jpg"
-                  alt="Resultado da transformação"
+                  src="/montinho-personal-trainer-shape-3.jpg"
+                  alt="Montinho Personal Trainer"
                   width={300}
-                  height={300}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  className="opacity-80"
+                  height={400}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }}
+                  className="opacity-90"
                 />
               </div>
             </div>
