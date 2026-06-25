@@ -24,21 +24,23 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="inline-block"
+            className="inline-flex items-center flex-shrink-0"
             onClick={() => setIsMenuOpen(false)}
+            aria-label="Montinho Personal Trainer – Página inicial"
           >
             <Image
               src="/Logo-final.png"
-              alt="Montinho Personal Trainer"
-              width={38}
-              height={38}
-              style={{ filter: "invert(1)", height: "38px", width: "auto" }}
+              alt="Montinho Personal Trainer – Personal Trainer em Alphaville, Barueri e Santana de Parnaíba"
+              width={160}
+              height={60}
+              className="h-10 lg:h-14 w-auto"
+              style={{ filter: "invert(1)" }}
               priority
             />
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8" aria-label="Navegação principal">
             {navLinks.map((link) => (
               <Link
                 key={link.href}

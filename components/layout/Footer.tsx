@@ -26,7 +26,8 @@ export default function Footer() {
                 alt="Montinho Personal Trainer"
                 width={160}
                 height={60}
-                style={{ filter: "invert(1)", height: "auto" }}
+                className="h-12 w-auto"
+                style={{ filter: "invert(1)" }}
               />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
