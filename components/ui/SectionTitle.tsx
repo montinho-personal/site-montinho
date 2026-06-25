@@ -4,6 +4,7 @@ interface SectionTitleProps {
   subtitle?: string;
   align?: "left" | "center";
   light?: boolean;
+  accent?: boolean;
 }
 
 export default function SectionTitle({
@@ -12,10 +13,15 @@ export default function SectionTitle({
   subtitle,
   align = "center",
   light = false,
+  accent = false,
 }: SectionTitleProps) {
   const alignClass = align === "center" ? "text-center mx-auto" : "text-left";
-  const eyebrowColor = light ? "text-gray-400" : "text-gray-500";
-  const titleColor = light ? "text-white" : "text-white";
+  const eyebrowColor = accent
+    ? ""
+    : light
+    ? "text-gray-400"
+    : "text-gray-500";
+  const titleColor = "text-white";
   const subtitleColor = light ? "text-gray-300" : "text-gray-400";
 
   return (
@@ -23,6 +29,7 @@ export default function SectionTitle({
       {eyebrow && (
         <p
           className={`text-xs font-semibold uppercase tracking-[0.2em] mb-3 ${eyebrowColor}`}
+          style={accent ? { color: "#BA9E50" } : undefined}
         >
           {eyebrow}
         </p>
