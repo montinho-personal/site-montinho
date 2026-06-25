@@ -194,7 +194,7 @@ export default function MinhaHistoria() {
                     className="text-3xl font-bold text-white mb-1"
                     style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
                   >
-                    +20kg
+                    +40kg
                   </p>
                   <p className="text-gray-400 text-sm">perdidos na transformação pessoal</p>
                 </div>
@@ -203,9 +203,9 @@ export default function MinhaHistoria() {
                     className="text-3xl font-bold text-white mb-1"
                     style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
                   >
-                    +5 anos
+                    +20 anos
                   </p>
-                  <p className="text-gray-400 text-sm">de estudo e prática profissional</p>
+                  <p className="text-gray-400 text-sm">de experiência em musculação</p>
                 </div>
                 <div>
                   <p
