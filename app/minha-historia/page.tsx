@@ -295,10 +295,10 @@ export default function MinhaHistoria() {
                   acompanhando de perto.
                 </p>
                 <p>
-                  Me formei em Educação Física e mergulhei fundo em tudo que se
-                  relaciona à transformação corporal sustentável. Fui buscar o
-                  que a ciência realmente comprova — e o que é apenas mito e
-                  modismo.
+                  Estudei, me formei e aprofundei meus conhecimentos em tudo o
+                  que envolve a musculação e a transformação corporal sustentável.
+                  Minha busca sempre foi separar o que a ciência realmente
+                  comprova daquilo que é apenas mito, modismo ou promessa vazia.
                 </p>
                 <p>
                   Hoje meu trabalho vai muito além de passar exercícios. Estou do
