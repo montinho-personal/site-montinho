@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-16 lg:h-20 overflow-hidden">
           {/* Logo */}
           <Link
             href="/"
@@ -33,7 +33,7 @@ export default function Header() {
               alt="Montinho Personal Trainer – Personal Trainer em Alphaville, Barueri e Santana de Parnaíba"
               width={160}
               height={60}
-              className="h-9 lg:h-11 w-auto"
+              className="h-8 lg:h-10 w-auto"
               style={{ filter: "invert(1)" }}
               priority
             />
