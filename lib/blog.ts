@@ -2515,7 +2515,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Platô é o estado em que o corpo parou de se adaptar ao estímulo do treino. Não porque você é geneticamente limitado ou porque atingiu seu potencial máximo — mas porque o estímulo deixou de ser suficiente para produzir adaptação adicional.</p>
 
-<p>O princípio da sobrecarga progressiva estabelece que o músculo só cresce quando é desafiado além do que já está adaptado. Quando o treino fica estático — mesmos exercícios, mesmo peso, mesmo volume, mesma intensidade — o corpo encontra um equilíbrio e para de mudar. Não é falha. É fisiologia.</p>
+<p>O princípio da sobrecarga progressiva estabelece que o músculo só cresce quando é desafiado além do que já está adaptado — conceito central nas <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">diretrizes de progressão em treinamento resistido do American College of Sports Medicine</a>. Quando o treino fica estático — mesmos exercícios, mesmo peso, mesmo volume, mesma intensidade — o corpo encontra um equilíbrio e para de mudar. Não é falha. É fisiologia.</p>
 
 <p>O platô real se diferencia da variação normal da seguinte forma: <strong>se você não está progredindo em nenhum indicador por 3 a 4 semanas consecutivas com treino e alimentação consistentes, você está em platô.</strong> Uma semana difícil é fadiga. Um mês estagnado é sinal de que algo precisa mudar.</p>
 
@@ -2545,7 +2545,7 @@ export const blogPosts: BlogPost[] = [
 <h3>2. Volume semanal inadequado para o nível de experiência</h3>
 <p>Iniciantes respondem bem a volumes baixos — 10 a 12 séries por grupo muscular por semana. Com o tempo, o corpo precisa de mais estímulo para continuar se adaptando. Intermediários e avançados que mantêm o mesmo volume de quando eram iniciantes estagnaram não porque o corpo parou de responder — mas porque o estímulo parou de ser suficiente.</p>
 
-<p>A faixa de 10 a 20 séries semanais por grupo muscular é onde a hipertrofia acontece para a maioria das pessoas. Se você está há 2 ou 3 anos treinando e ainda faz 8 séries de peito por semana, o volume pode ser o limitante.</p>
+<p>A faixa de 10 a 20 séries semanais por grupo muscular é onde a hipertrofia acontece para a maioria das pessoas, conforme aponta <a href="https://pubmed.ncbi.nlm.nih.gov/27433992/" target="_blank" rel="noopener noreferrer">meta-análise de Schoenfeld et al. sobre a relação dose-resposta entre volume semanal e ganho muscular</a>. Se você está há 2 ou 3 anos treinando e ainda faz 8 séries de peito por semana, o volume pode ser o limitante.</p>
 
 <h3>3. Recuperação insuficiente</h3>
 <p>Treinar mais do que o corpo consegue recuperar não produz mais resultado — produz fadiga acumulada. O platô por recuperação insuficiente tem sinais específicos: queda de força progressiva, sono não reparador, irritabilidade, perda de motivação para treinar. Não é falta de esforço — é excesso de estímulo sem contrapartida de recuperação.</p>
@@ -2553,12 +2553,12 @@ export const blogPosts: BlogPost[] = [
 <p>A solução nesses casos não é treinar mais forte — é dar ao corpo o descanso que falta. Uma semana de deload (volume reduzido em 30 a 50%) frequentemente resolve o que meses de treino intenso criaram.</p>
 
 <h3>4. Sono insuficiente ou de baixa qualidade</h3>
-<p>A síntese proteica muscular atinge o pico durante o sono profundo. Dormir consistentemente menos de 7 horas reduz concretamente a velocidade do ganho muscular — independentemente do treino e da alimentação. Se o platô coincide com um período de sono comprometido, essa é a causa mais provável. E a solução mais simples.</p>
+<p>A síntese proteica muscular atinge o pico durante o sono profundo. <a href="https://pubmed.ncbi.nlm.nih.gov/21550729/" target="_blank" rel="noopener noreferrer">Estudo publicado no Medical Hypotheses</a> demonstrou que a privação de sono prejudica diretamente a recuperação muscular e eleva marcadores catabólicos. Dormir consistentemente menos de 7 horas reduz concretamente a velocidade do ganho muscular — independentemente do treino e da alimentação. Se o platô coincide com um período de sono comprometido, essa é a causa mais provável. E a solução mais simples.</p>
 
 <h3>5. Alimentação desalinhada</h3>
 <p>Dois cenários são comuns:</p>
 <ul>
-  <li><strong>Para hipertrofia:</strong> proteína insuficiente (abaixo de 1,6 g/kg/dia) ou déficit calórico sem perceber. O corpo em privação energética não tem recursos para construir tecido novo.</li>
+  <li><strong>Para hipertrofia:</strong> proteína insuficiente (abaixo de 1,6 g/kg/dia — limiar identificado em <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">meta-análise de Morton et al. com 49 estudos e 1.800 participantes</a>) ou déficit calórico sem perceber. O corpo em privação energética não tem recursos para construir tecido novo.</li>
   <li><strong>Para emagrecimento:</strong> calorias maiores do que o percebido — frequentemente de alimentos líquidos, lanches fora do plano ou porções maiores do que o estimado.</li>
 </ul>
 <p>A maioria das pessoas subestima o que come ou superestima a proteína que consome. Rastrear a alimentação por 1 a 2 semanas quase sempre revela discrepâncias significativas entre o que se acredita comer e o que realmente se come.</p>
