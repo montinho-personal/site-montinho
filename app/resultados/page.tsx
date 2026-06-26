@@ -77,7 +77,7 @@ const resultados: ResultadoItem[] = [
     duration: "",
     result: "−22kg",
     modality: "Modelo Híbrido",
-    photo: "/antes-depois-montinho-personal-trainer-alphaville.jpg",
+    photo: "/antes-depois-montinho-personal-trainer-alphaville-sp.jpg",
     objectPosition: "center",
     description:
       "Durante anos, Bruna viveu entre o entusiasmo de começar e a frustração de recomeçar. O efeito sanfona parecia não ter fim. Quando me procurou, construímos um plano pensado para a vida que ela realmente levava. Aos poucos, a constância substituiu a culpa, e o resultado deixou de ser temporário para se tornar um novo estilo de vida.",
