@@ -23,7 +23,7 @@ const faq = [
   {
     question: "Qual a diferença entre treinador particular e personal trainer em Tamboré?",
     answer:
-      "São essencialmente a mesma coisa. O termo 'treinador particular' é usado popularmente para descrever um profissional de educação física que atende de forma exclusiva e individualizada — o que corresponde exatamente à função do personal trainer. O que importa é o CREF ativo, a qualificação do profissional e o método aplicado.",
+      "São essencialmente a mesma coisa. O termo 'treinador particular' é usado popularmente para descrever um profissional de educação física que atende de forma exclusiva e individualizada — o que corresponde exatamente à função do personal trainer. O que importa é a qualificação do profissional, o método aplicado e os resultados que entrega.",
   },
   {
     question: "Treinador particular em Tamboré atende em academia ou a domicílio?",
@@ -43,7 +43,7 @@ const faq = [
   {
     question: "Como escolher um bom treinador particular em Tamboré?",
     answer:
-      "Verifique o CREF, pergunte sobre a metodologia de trabalho, entenda como os protocolos são montados e revisados. Desconfie de quem promete resultados milagrosos em prazos irrealistas. Um bom treinador particular é transparente sobre o processo, tem resultados verificáveis e explica o raciocínio por trás de cada escolha de treino.",
+      "Pergunte sobre a metodologia de trabalho, entenda como os protocolos são montados e revisados, verifique resultados reais de alunos anteriores. Desconfie de quem promete resultados milagrosos em prazos irrealistas. Um bom treinador particular é transparente sobre o processo, tem resultados verificáveis e explica o raciocínio por trás de cada escolha de treino.",
   },
 ];
 

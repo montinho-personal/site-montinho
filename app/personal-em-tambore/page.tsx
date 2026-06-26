@@ -23,7 +23,7 @@ const faq = [
   {
     question: "Como encontrar um bom personal em Tamboré?",
     answer:
-      "Procure profissional com CREF ativo, experiência comprovada na região e metodologia clara — não apenas fichas de treino genéricas. Verifique resultados reais de alunos anteriores e pergunte como o protocolo é montado e ajustado. Um bom personal explica o raciocínio por trás de cada decisão de treino.",
+      "Procure profissional com formação em Educação Física, experiência comprovada na região e metodologia clara — não apenas fichas de treino genéricas. Verifique resultados reais de alunos anteriores e pergunte como o protocolo é montado e ajustado. Um bom personal explica o raciocínio por trás de cada decisão de treino.",
   },
   {
     question: "Personal em Tamboré atende na academia ou a domicílio?",

@@ -23,7 +23,7 @@ const faq = [
   {
     question: "Personal trainer pode treinar na academia do meu condomínio em Tamboré?",
     answer:
-      "Sim. A maioria dos condomínios de Tamboré permite acesso de personal trainers cadastrados. O processo de cadastro varia por condomínio — em alguns basta apresentar CREF e documentos, em outros há aprovação pelo síndico. Facilito esse processo para novos alunos.",
+      "Sim. A maioria dos condomínios de Tamboré permite acesso de personal trainers cadastrados. O processo de cadastro varia por condomínio — em alguns basta apresentar documentação profissional, em outros há aprovação pelo síndico. Facilito esse processo para novos alunos.",
   },
   {
     question: "A academia do condomínio em Tamboré é suficiente para ter resultado?",

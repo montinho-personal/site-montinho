@@ -23,7 +23,7 @@ const faq = [
   {
     question: "Como identificar o melhor personal trainer em Tamboré?",
     answer:
-      "Verifique o CREF ativo, a metodologia de trabalho, os resultados de alunos anteriores e a clareza com que o profissional explica as decisões de treino. O melhor personal trainer não é o que tem mais seguidores nas redes sociais — é o que entrega resultado consistente e explica o raciocínio por trás de cada escolha.",
+      "Verifique a formação em Educação Física, a metodologia de trabalho, os resultados de alunos anteriores e a clareza com que o profissional explica as decisões de treino. O melhor personal trainer não é o que tem mais seguidores nas redes sociais — é o que entrega resultado consistente e explica o raciocínio por trás de cada escolha.",
   },
   {
     question: "O melhor personal trainer em Tamboré é o mais caro?",
@@ -33,7 +33,7 @@ const faq = [
   {
     question: "Qual a formação do melhor personal trainer em Tamboré?",
     answer:
-      "Graduação em Educação Física com CREF ativo é o mínimo. Pós-graduação em áreas como fisiologia do exercício, musculação, reabilitação ou nutrição esportiva agrega. Mais importante ainda é a atualização constante — o conhecimento científico sobre treino evoluiu muito nos últimos anos e o profissional precisa acompanhar.",
+      "Graduação em Educação Física é o ponto de partida. Pós-graduação em áreas como fisiologia do exercício, musculação, reabilitação ou nutrição esportiva agrega. Mais importante ainda é a atualização constante — o conhecimento científico sobre treino evoluiu muito nos últimos anos e o profissional precisa acompanhar.",
   },
   {
     question: "Melhor personal trainer em Tamboré atende online também?",
@@ -156,7 +156,7 @@ export default function MelhorPersonalTrainerTambore() {
           </h2>
           <ul className="space-y-4 mb-10">
             {[
-              "CREF ativo e formação acadêmica verificável",
+              "Formação em Educação Física e histórico profissional verificável",
               "Método claro e explicado — não 'confie em mim e faça'",
               "Protocolo construído do zero para cada aluno, sem fichas adaptadas",
               "Avaliação antes de prescrever qualquer exercício",
