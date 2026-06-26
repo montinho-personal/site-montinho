@@ -71,6 +71,15 @@
 |--------|------|--------|
 | ⭐ Pilar — Por Que Você Não Consegue Emagrecer? | `por-que-voce-nao-consegue-emagrecer` | Publicado |
 | 5 Hábitos Que Sabotam o Emagrecimento | `habitos-que-sabotam-seu-emagrecimento` | Publicado |
+| Melhor Treino Para Emagrecer | `melhor-treino-para-emagrecer` | Publicado |
+| Cardio Antes ou Depois da Musculação? | `cardio-antes-ou-depois-da-musculacao` | Publicado |
+| HIIT Funciona Para Emagrecer? | `hiit-funciona` | Publicado |
+| Quanto de Cardio Fazer Para Emagrecer? | `quanto-de-cardio-fazer` | Publicado |
+| Como Perder Gordura Abdominal de Verdade | `como-perder-gordura-abdominal` | Publicado |
+| Déficit Calórico: O Que É e Como Calcular | `deficit-calorico-como-calcular` | Publicado |
+| Metabolismo Lento Existe? | `metabolismo-lento-existe` | Publicado |
+| Exercício Para Perder Barriga: O Que Realmente Funciona | `exercicio-para-perder-barriga` | Publicado |
+| Como Manter Massa Muscular Emagrecendo | `como-manter-massa-muscular-emagrecendo` | Publicado |
 
 ### 🩹 Cluster: Lesões e Prevenção
 **Pilar:** `como-prevenir-lesoes-no-treino`
@@ -178,7 +187,7 @@
 |------|--------------|---------|--------|
 | ~~Periodização para hipertrofia~~ | ~~"periodização de treino"~~ | Hipertrofia | ✅ Publicado — `periodizacao-de-treino` |
 | ~~Proteína na dieta~~ | ~~"quanta proteína por dia para ganhar massa"~~ | Hipertrofia | ✅ Publicado — `quanta-proteina-por-dia-para-ganhar-massa-muscular` |
-| Emagrecimento com musculação | "emagrecer fazendo musculação" | Emagrecimento | Conecta os dois clusters principais |
+| ~~Emagrecimento com musculação~~ | ~~"emagrecer fazendo musculação"~~ | Emagrecimento | ✅ Publicado — `melhor-treino-para-emagrecer` |
 | ~~Personal trainer online~~ | ~~"personal trainer online como funciona"~~ | Comercial | ✅ Publicado — `personal-trainer-online-como-funciona` |
 | ~~Suplementação~~ | ~~"creatina para hipertrofia"~~ | Hipertrofia | ✅ Publicado — `creatina-para-hipertrofia` |
 
