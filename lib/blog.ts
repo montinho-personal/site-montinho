@@ -7636,6 +7636,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para saber mais sobre como a adaptação metabólica afeta os resultados, leia nosso artigo sobre <a href="/blog/por-que-voce-nao-consegue-emagrecer">por que você não consegue emagrecer</a>.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer entender por que cortar calorias demais pode te atrasar? Veja o resumo em vídeo antes de continuar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Por que déficit calórico muito grande atrapalha o emagrecimento" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Déficit calórico e treino: como encaixar</h2>
 
 <p>O déficit calórico é calculado sobre o TDEE — que já inclui o gasto com exercício. Portanto, se você treina, já está considerando esse gasto no número final.</p>
@@ -7877,6 +7880,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Reconhecer isso não é buscar culpa — é o primeiro passo para resolver o problema de verdade. Para entender outros fatores que podem estar travando seu progresso, leia sobre os <a href="/blog/habitos-que-sabotam-seu-emagrecimento">hábitos que sabotam seu emagrecimento</a>.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Antes de ir para as perguntas frequentes, veja este vídeo curto sobre como acelerar o metabolismo de verdade.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como acelerar o metabolismo de verdade — o que a ciência diz" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Perguntas frequentes</h2>
 
 <ul>
@@ -8070,6 +8076,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 </ul>
 
 <p>Não existe atalho. Mas com o protocolo certo, os resultados são previsíveis e duradouros.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo um resumo prático de quanto tempo leva para ver resultado na barriga e o que fazer em cada fase.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Quanto tempo leva para perder gordura abdominal — expectativas realistas" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>O protocolo completo para perder barriga</h2>
 
@@ -8330,6 +8339,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Confira no vídeo como esse protocolo funciona na prática e quais os sinais de que você está preservando o músculo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como saber se você está perdendo gordura ou músculo durante o emagrecimento" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Perguntas frequentes</h2>
 
 <ul>
@@ -8457,6 +8469,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 </ul>
 
 <p>Se você quer entender melhor por que <a href="/blog/como-manter-massa-muscular-emagrecendo">manter massa muscular durante o emagrecimento</a> é tão importante, recomendo esse artigo como leitura complementar.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo por que a perda de músculo com o Mounjaro é tão comum — e o que fazer para evitar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Por que o Mounjaro pode causar perda de músculo e como evitar" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Os 4 Pilares Para Preservar Músculo Usando Mounjaro</h2>
 
@@ -9046,6 +9061,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>A evidência de <a href="https://pubmed.ncbi.nlm.nih.gov/17652429/" target="_blank" rel="noopener noreferrer">Buford et al. (2007)</a> é clara: 3 a 5 g de creatina monohidratada por dia é seguro e eficaz para melhorar composição corporal. E ao contrário de mitos populares, a creatina não "incha" permanentemente — o pequeno aumento de retenção de água intracelular é temporário e irrelevante para a composição corporal.</p>
 
 <p>Saiba tudo sobre esse suplemento no artigo sobre <a href="/blog/creatina-para-hipertrofia">creatina para hipertrofia</a>.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo como esses três pilares se aplicam no dia a dia — especialmente para quem está em déficit calórico intenso.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Os 3 pilares para preservar músculo durante o emagrecimento na prática" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Por Que a Maioria das Pessoas Falha em Preservar Músculo?</h2>
 
