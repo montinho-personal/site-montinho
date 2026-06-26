@@ -128,7 +128,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Quando você tenta fazer tudo sozinho, cada obstáculo vira um motivo para desistir. Com um profissional ao seu lado, cada obstáculo vira uma oportunidade de ajuste de protocolo.</p>
 
-<p>Como Personal Trainer em Alphaville, atendo presencialmente alunos de Barueri e Santana de Parnaíba, e ofereço <a href="/consultoria">consultoria online de emagrecimento</a> com o mesmo nível de acompanhamento para todo o Brasil.</p>
+<p>Como <a href="/personal-trainer-alphaville">Personal Trainer em Alphaville</a>, atendo presencialmente alunos de <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, e ofereço <a href="/consultoria">consultoria online de emagrecimento</a> com o mesmo nível de acompanhamento para todo o Brasil. Tem dúvidas sobre como funciona o processo? Veja as <a href="/faq">perguntas frequentes sobre treino e consultoria</a>.</p>
 
 <p>Eu já estive do outro lado. Sei como é acordar de manhã, se olhar no espelho e não se reconhecer. Por isso o meu trabalho vai muito além dos exercícios — é sobre te ajudar a construir uma relação diferente com seu corpo e com sua saúde, com um método que respeita a biologia em vez de lutar contra ela.</p>
 
@@ -234,7 +234,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Identificou algum desses erros na sua rotina? O importante é corrigir com a orientação certa, não apenas adicionar mais volume de treino.</p>
 
-<p>Um Personal Trainer experiente identifica esses pontos em poucas sessões e traça um plano para corrigi-los de forma estruturada. Se você está em Alphaville, Barueri ou Santana de Parnaíba, podemos trabalhar presencialmente. Se estiver em outra cidade, a <a href="/consultoria">consultoria online</a> oferece o mesmo nível de acompanhamento e personalização.</p>
+<p>Um Personal Trainer experiente identifica esses pontos em poucas sessões e traça um plano para corrigi-los de forma estruturada. Se você está em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> ou <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, podemos trabalhar presencialmente. Se estiver em outra cidade, a <a href="/consultoria">consultoria online</a> oferece o mesmo nível de acompanhamento e personalização. Se ainda tiver dúvidas sobre como funciona esse acompanhamento, veja as <a href="/faq">perguntas frequentes sobre treino</a>.</p>
 
 <p>Quer ver exemplos reais do que acontece quando esses erros são corrigidos? Confira as <a href="/resultados">transformações dos alunos</a>.</p>
 
@@ -599,7 +599,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Não é a semana de treino mais pesado da sua vida que vai mudar seu corpo. É o acúmulo de meses treinando com método, progredindo consistentemente, comendo bem o suficiente e se recuperando direito.</p>
 
-<p>Como Personal Trainer em Alphaville, trabalho presencialmente com alunos de Barueri e Santana de Parnaíba — e remotamente com pessoas em todo o Brasil através da <a href="/consultoria">consultoria online</a>. O que diferencia o resultado dos meus alunos não é treinar mais, mas treinar com mais inteligência.</p>
+<p>Como <a href="/personal-trainer-alphaville">Personal Trainer em Alphaville</a>, trabalho presencialmente com alunos de <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a> — e remotamente com pessoas em todo o Brasil através da <a href="/consultoria">consultoria online</a>. O que diferencia o resultado dos meus alunos não é treinar mais, mas treinar com mais inteligência.</p>
 
 <p>Se você quer ver exemplos reais de como esse processo funciona na prática, confira as <a href="/resultados">transformações de quem já passou por aqui</a>.</p>
 
@@ -862,7 +862,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>O que não muda é a base: <strong>sobrecarga progressiva, nutrição adequada, recuperação de qualidade e consistência ao longo do tempo</strong>. Tudo que promete ir além disso está vendendo ilusão.</p>
 
-<p>Se você quer fazer esse processo com orientação individualizada — sem perder tempo descobrindo por conta própria os erros que já foram identificados e resolvidos — <a href="/consultoria">saiba como funciona a consultoria</a>. Atendo presencialmente em Alphaville e online em todo o Brasil.</p>
+<p>Se você quer fazer esse processo com orientação individualizada — sem perder tempo descobrindo por conta própria os erros que já foram identificados e resolvidos — <a href="/consultoria">saiba como funciona a consultoria</a>. Atendo presencialmente em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, e online em todo o Brasil. Para mais detalhes, veja as <a href="/faq">perguntas frequentes sobre treino e acompanhamento</a>.</p>
 
 <p>E se quiser ver o que acontece na prática com quem segue um protocolo estruturado, confira as <a href="/resultados">transformações dos alunos</a>.</p>
 
@@ -1136,7 +1136,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Frequência é uma variável. Não é o destino.</p>
 
-<p>Se você quer montar um protocolo que faça sentido para o que você tem disponível — tempo, estrutura, objetivo e nível atual — é exatamente isso que faço na <a href="/consultoria">consultoria individualizada</a>. Atendo presencialmente em Alphaville, Barueri e Santana de Parnaíba, e online em todo o Brasil.</p>
+<p>Se você quer montar um protocolo que faça sentido para o que você tem disponível — tempo, estrutura, objetivo e nível atual — é exatamente isso que faço na <a href="/consultoria">consultoria individualizada</a>. Atendo presencialmente em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, e online em todo o Brasil. Tem dúvidas sobre o processo? Veja as <a href="/faq">perguntas frequentes sobre treino e consultoria</a>.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -1402,7 +1402,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Se o seu treino está durando mais do que deveria, antes de cortar exercícios, revise o descanso entre séries, a densidade do treino e se o volume por sessão faz sentido para o seu objetivo. Se está durando menos do que parece eficiente, verifique se o volume está sendo cumprido com qualidade — não apenas com velocidade.</p>
 
-<p>Se você quer estruturar um treino com a duração certa, os exercícios certos e a progressão certa para o seu caso específico, é exatamente isso que faço na <a href="/consultoria">consultoria individualizada</a>. Atendo presencialmente em Alphaville, Barueri e Santana de Parnaíba, e online em todo o Brasil.</p>
+<p>Se você quer estruturar um treino com a duração certa, os exercícios certos e a progressão certa para o seu caso específico, é exatamente isso que faço na <a href="/consultoria">consultoria individualizada</a>. Atendo presencialmente em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, e online em todo o Brasil.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -2437,7 +2437,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>O prazo não depende de fórmula mágica. Depende de progressão de carga, proteína adequada, sono de qualidade e consistência ao longo do tempo. Quem entende isso para de procurar atalhos e começa a construir resultado real.</p>
 
-<p>Se você quer construir esse resultado com um protocolo estruturado para o seu nível, seu objetivo e sua rotina — sem perder tempo descobrindo por conta própria os erros que já foram mapeados — é exatamente isso que faço na <a href="/consultoria">consultoria individualizada</a>. Atendo presencialmente em Alphaville, Barueri e Santana de Parnaíba, e online em todo o Brasil.</p>
+<p>Se você quer construir esse resultado com um protocolo estruturado para o seu nível, seu objetivo e sua rotina — sem perder tempo descobrindo por conta própria os erros que já foram mapeados — é exatamente isso que faço na <a href="/consultoria">consultoria individualizada</a>. Atendo presencialmente em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, e online em todo o Brasil. Ficou com alguma dúvida? Veja as <a href="/faq">perguntas frequentes sobre treino e consultoria</a>.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -3070,7 +3070,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>A proteína resolve a matéria-prima. O que determina se o resultado vai aparecer e em que velocidade é o conjunto: treino, alimentação, recuperação e acompanhamento. Se você quer entender quanto tempo leva para esse conjunto começar a produzir resultado visível, veja o artigo sobre <a href="/blog/quanto-tempo-para-aparecer-resultado-na-academia">quanto tempo leva para aparecer resultado na academia</a>.</p>
 
-<p>Se você está com dificuldade de estruturar sua alimentação proteica dentro do seu contexto real — rotina, orçamento, preferências alimentares — ou se quer um protocolo de treinamento e nutrição ajustado especificamente para você, é exatamente esse trabalho que faço na <a href="/consultoria">consultoria personalizada</a>. Atendo presencialmente em Alphaville, Barueri e Santana de Parnaíba, e online em todo o Brasil.</p>
+<p>Se você está com dificuldade de estruturar sua alimentação proteica dentro do seu contexto real — rotina, orçamento, preferências alimentares — ou se quer um protocolo de treinamento e nutrição ajustado especificamente para você, é exatamente esse trabalho que faço na <a href="/consultoria">consultoria personalizada</a>. Atendo presencialmente em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, e online em todo o Brasil.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -6086,7 +6086,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Full body 3x por semana com compostos fundamentais, proteína de 1.6 a 2.2 g/kg, progressão de carga contínua e sono adequado: são os quatro pilares que fazem qualquer iniciante crescer.</p>
 
-<p>Se você quer começar com um programa estruturado e acompanhamento para não desperdiçar o seu período de newbie gains, a <a href="/consultoria">consultoria personalizada</a> é o caminho mais eficiente.</p>
+<p>Se você quer começar com um programa estruturado e acompanhamento para não desperdiçar o seu período de newbie gains, a <a href="/consultoria">consultoria personalizada</a> é o caminho mais eficiente. Tem dúvidas sobre como funciona ou o que está incluído? Veja as <a href="/faq">perguntas frequentes sobre treino e consultoria</a>. Se você mora em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> ou <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, o atendimento presencial também é uma opção.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -6600,7 +6600,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><strong>Domingo:</strong> Descanso</li>
 </ul>
 
-<p>Se você quer um programa personalizado para o seu perfil, a <a href="/consultoria">consultoria online</a> do Montinho Personal Trainer é o caminho mais eficiente para emagrecer sem perder músculo.</p>
+<p>Se você quer um programa personalizado para o seu perfil, a <a href="/consultoria">consultoria online</a> do Montinho Personal Trainer é o caminho mais eficiente para emagrecer sem perder músculo. Ainda tem dúvidas sobre como funciona? Confira as <a href="/faq">perguntas frequentes sobre treino e emagrecimento</a>. Se você mora em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> ou <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, atendimento presencial também está disponível.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
