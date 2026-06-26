@@ -1687,7 +1687,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>O descanso não é o inimigo do progresso. É parte estrutural dele.</p>
 
-<p>Se você quer descobrir exatamente quantos dias treinar para o seu nível, seu objetivo e a sua rotina atual — sem adivinhar e sem desperdiçar tempo — é exatamente isso que faço na <a href="/consultoria">consultoria individualizada</a>. Atendo presencialmente em Alphaville, Barueri e Santana de Parnaíba, e online em todo o Brasil.</p>
+<p>Se você quer descobrir exatamente quantos dias treinar para o seu nível, seu objetivo e a sua rotina atual — sem adivinhar e sem desperdiçar tempo — é exatamente isso que faço na <a href="/consultoria">consultoria individualizada</a>. Atendo presencialmente em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, e online em todo o Brasil. Ficou com dúvidas sobre a consultoria? Veja as <a href="/faq">perguntas frequentes sobre treino</a>.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -1956,7 +1956,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>O que diferencia quem treina com inteligência de quem apenas treina é exatamente isso: a capacidade de tomar decisões baseadas no contexto real, não em regras genéricas.</p>
 
-<p>Se você quer montar um protocolo em que frequência, volume e recuperação estão calibrados para o seu nível e objetivo específicos — sem tentativa e erro —  é exatamente isso que faço na <a href="/consultoria">consultoria individualizada</a>. Atendo presencialmente em Alphaville, Barueri e Santana de Parnaíba, e online em todo o Brasil.</p>
+<p>Se você quer montar um protocolo em que frequência, volume e recuperação estão calibrados para o seu nível e objetivo específicos — sem tentativa e erro — é exatamente isso que faço na <a href="/consultoria">consultoria individualizada</a>. Atendo presencialmente em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, e online em todo o Brasil.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -2219,7 +2219,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Quem cuida do descanso com o mesmo cuidado que cuida do treino cresce mais do que quem treina mais e descansa menos. Não é intuição — é bioquímica.</p>
 
-<p>Se você quer montar um protocolo em que treino, descanso, alimentação e sono estão integrados de forma coerente para o seu objetivo e nível — sem adivinhar e sem acumular fadiga que não vai a lugar nenhum — é exatamente isso que faço na <a href="/consultoria">consultoria individualizada</a>. Atendo presencialmente em Alphaville, Barueri e Santana de Parnaíba, e online em todo o Brasil.</p>
+<p>Se você quer montar um protocolo em que treino, descanso, alimentação e sono estão integrados de forma coerente para o seu objetivo e nível — sem adivinhar e sem acumular fadiga que não vai a lugar nenhum — é exatamente isso que faço na <a href="/consultoria">consultoria individualizada</a>. Atendo presencialmente em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, e online em todo o Brasil. Ainda tem dúvidas? Confira as <a href="/faq">perguntas frequentes sobre treino e consultoria</a>.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -2641,7 +2641,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Progressão de carga consistente, volume adequado ao nível de experiência, proteína suficiente, sono de qualidade, deload planejado e gerenciamento do estresse são as variáveis que, quando ajustadas de forma coordenada, quase sempre resolvem a estagnação.</p>
 
-<p>Se você está em platô e já tentou ajustar essas variáveis sozinho sem resultado — ou se não sabe exatamente quais delas estão comprometidas no seu caso — é exatamente esse diagnóstico individualizado que faço na <a href="/consultoria">consultoria</a>. Atendo presencialmente em Alphaville, Barueri e Santana de Parnaíba, e online em todo o Brasil.</p>
+<p>Se você está em platô e já tentou ajustar essas variáveis sozinho sem resultado — ou se não sabe exatamente quais delas estão comprometidas no seu caso — é exatamente esse diagnóstico individualizado que faço na <a href="/consultoria">consultoria</a>. Atendo presencialmente em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, e online em todo o Brasil.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -3279,7 +3279,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Você não precisa de algo mirabolante. Precisa de um plano com ciclos definidos, progressão registrada e recuperação respeitada. Isso é o que acontece em qualquer consultoria séria de Personal Trainer — e é o que diferencia quem transforma o corpo de quem fica anos "tentando".</p>
 
-<p>Se você quer um programa periodizado montado especificamente para o seu objetivo, nível e rotina, é exatamente isso que faço na <a href="/consultoria">consultoria personalizada</a>. Atendo presencialmente em Alphaville, Barueri e Santana de Parnaíba, e online para todo o Brasil.</p>
+<p>Se você quer um programa periodizado montado especificamente para o seu objetivo, nível e rotina, é exatamente isso que faço na <a href="/consultoria">consultoria personalizada</a>. Atendo presencialmente em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, e online para todo o Brasil. Saiba mais nas <a href="/faq">perguntas frequentes sobre consultoria personalizada</a>.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -3610,7 +3610,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Cada um dos 10 erros acima é capaz de travar o progresso sozinho. A boa notícia: todos são corrigíveis. E a correção começa pelo diagnóstico honesto — não pela troca de programa.</p>
 
-<p>Se você quer aplicar esses princípios com acompanhamento individualizado, é exatamente esse o trabalho da <a href="/consultoria">consultoria personalizada</a>. Atendo presencialmente em Alphaville, Barueri e Santana de Parnaíba, e online em todo o Brasil.</p>
+<p>Se você quer aplicar esses princípios com acompanhamento individualizado, é exatamente esse o trabalho da <a href="/consultoria">consultoria personalizada</a>. Atendo presencialmente em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, e online em todo o Brasil.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -3891,7 +3891,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Os exemplos acima são pontos de partida — funcionam para a maioria das pessoas nesses níveis. Mas o programa ideal é ajustado para você: seu histórico, suas limitações, seu objetivo específico e sua rotina.</p>
 
-<p>Se você quer um treino montado do zero com acompanhamento semanal de progresso, é exatamente isso que ofereço na <a href="/consultoria">consultoria personalizada</a>. Atendo presencialmente em Alphaville, Barueri e Santana de Parnaíba, e online em todo o Brasil.</p>
+<p>Se você quer um treino montado do zero com acompanhamento semanal de progresso, é exatamente isso que ofereço na <a href="/consultoria">consultoria personalizada</a>. Atendo presencialmente em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, e online em todo o Brasil.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -4053,7 +4053,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Se o seu objetivo estiver alinhado com o que ofereço e você tiver disposição para fazer o trabalho necessário, a consultoria vai produzir resultado. Simples assim.</p>
 
-<p>Para iniciar: <a href="/consultoria">acesse a página da consultoria</a> e preencha o formulário de contato.</p>
+<p>Para iniciar: <a href="/consultoria">acesse a página da consultoria</a> e preencha o formulário de contato. Se ainda tiver dúvidas sobre como funciona, o que está incluído ou para quem é indicado, veja as <a href="/faq">perguntas frequentes sobre o acompanhamento de personal trainer</a>. Atendimento presencial em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>.</p>
 
 <h2>Conclusão</h2>
 
@@ -7157,7 +7157,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><strong>Lesões por uso excessivo</strong></li>
 </ul>
 
-<p>O estudo de <a href="https://pubmed.ncbi.nlm.nih.gov/7632212/" target="_blank" rel="noopener noreferrer">Leibel et al. (1995)</a> demonstrou que a adaptação metabólica durante o emagrecimento é real — e preservar músculo (o que o excesso de cardio não ajuda) é a melhor estratégia para combatê-la.</p>
+<p>O estudo de <a href="https://pubmed.ncbi.nlm.nih.gov/7632212/" target="_blank" rel="noopener noreferrer">Leibel et al. (1995)</a> demonstrou que a adaptação metabólica durante o emagrecimento é real — e preservar músculo (o que o excesso de cardio não ajuda) é a melhor estratégia para combatê-la. Já <a href="https://pubmed.ncbi.nlm.nih.gov/22215276/" target="_blank" rel="noopener noreferrer">Wilson et al. (2012)</a> documentaram que o cardio excessivo em conjunto com o treino de força pode interferir nas adaptações musculares — reforçando a importância de equilibrar os volumes de ambos.</p>
 
 <p>Se você sente que está treinando muito mas os resultados pararam, veja <a href="/blog/como-sair-do-plato-da-musculacao">como sair do platô de resultados</a>.</p>
 
@@ -7603,7 +7603,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>O ponto de atenção é que muitas pessoas superestimam o quanto gastam no treino. Aplicativos e esteiras frequentemente superestimam o gasto calórico em 30 a 50%. Use esses números como referência, não como verdade absoluta.</p>
 
-<p>Para aprender como combinar musculação e cardio para emagrecer de forma inteligente, veja nosso guia sobre o <a href="/blog/melhor-treino-para-emagrecer">melhor treino para emagrecer</a>.</p>
+<p>Para aprender como combinar musculação e cardio para emagrecer de forma inteligente, veja nosso guia sobre o <a href="/blog/melhor-treino-para-emagrecer">melhor treino para emagrecer</a>. O <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">ACSM (2009)</a> enfatiza que progressão sistemática no treino é fundamental para que o gasto energético continue aumentando ao longo do tempo — o que impacta diretamente o cálculo do déficit.</p>
 
 <h2>Calorias não são tudo — mas são o início</h2>
 
@@ -9819,6 +9819,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
   <li><a href="/blog/como-evitar-perder-massa-muscular-mounjaro">Como evitar perder massa muscular usando Mounjaro</a></li>
   <li><a href="/blog/cardio-ou-musculacao-mounjaro">Cardio ou musculação durante o uso de Mounjaro?</a></li>
+  <li><a href="/blog/proteina-para-quem-usa-mounjaro">Quanto de proteína consumir usando Mounjaro</a></li>
   <li><a href="/blog/hipertrofia-para-iniciantes">Hipertrofia para iniciantes: por onde começar</a></li>
 </ul>
 `,
