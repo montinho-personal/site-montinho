@@ -806,9 +806,9 @@ export const blogPosts: BlogPost[] = [
 
 <p>Para que o músculo cresça, ele precisa ser progressivamente desafiado. Fazer os mesmos exercícios com o mesmo peso por meses não gera estímulo novo — e sem estímulo novo, não há adaptação.</p>
 
-<p>A <strong>sobrecarga progressiva</strong> é o princípio mais importante do treino para hipertrofia. Aumentar a carga, o número de repetições, o volume semanal ou a densidade do treino ao longo do tempo é o que garante que o corpo continue se adaptando — e crescendo.</p>
+<p>A <strong>sobrecarga progressiva</strong> é o princípio mais importante do treino para hipertrofia, como destacado nas <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">diretrizes do ACSM para modelos de progressão em treinamento resistido</a>. Aumentar a carga, o número de repetições, o volume semanal ou a densidade do treino ao longo do tempo é o que garante que o corpo continue se adaptando — e crescendo.</p>
 
-<p>Em termos de volume, a faixa de 10 a 20 séries por grupo muscular por semana é onde a hipertrofia acontece para a maioria das pessoas. Frequência de 2 vezes por semana por grupo muscular tende a ser superior a 1 vez. Mas nenhum desses números importa se a progressão não existe.</p>
+<p>Em termos de volume, a faixa de 10 a 20 séries por grupo muscular por semana é onde a hipertrofia acontece para a maioria das pessoas. Frequência de 2 vezes por semana por grupo muscular tende a ser superior a 1 vez, conforme evidenciado em <a href="https://pubmed.ncbi.nlm.nih.gov/26987366/" target="_blank" rel="noopener noreferrer">meta-análise de Schoenfeld et al. sobre frequência de treino e hipertrofia</a>. Mas nenhum desses números importa se a progressão não existe.</p>
 
 <p>Se quiser se aprofundar nesses conceitos, leia o <a href="/blog/como-ganhar-massa-muscular">guia completo de hipertrofia</a> que publiquei aqui no blog.</p>
 
@@ -947,7 +947,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>O que a ciência diz sobre frequência e ganho muscular</h2>
 
-<p>Uma meta-análise publicada no <em>Journal of Strength and Conditioning Research</em> comparou estudos que avaliaram frequências de 1x, 2x e 3x por semana por grupo muscular. O resultado: treinar cada músculo 2 vezes por semana foi superior a treinar 1 vez, com volumes totais similares.</p>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/27102172/" target="_blank" rel="noopener noreferrer">Meta-análise de Ralston et al. publicada no <em>Journal of Strength and Conditioning Research</em></a> comparou estudos que avaliaram frequências de 1x, 2x e 3x por semana por grupo muscular. O resultado: treinar cada músculo 2 vezes por semana foi superior a treinar 1 vez, com volumes totais similares.</p>
 
 <p>O motivo está na janela de síntese proteica muscular. Após um treino, o processo de construção muscular permanece elevado por aproximadamente 24 a 48 horas — depois cai de volta à linha de base. Se você só treina aquele músculo uma vez por semana, fica 5 a 6 dias sem estimular síntese proteica acima do normal. Treinar 2x por semana significa duas janelas de crescimento em vez de uma.</p>
 
@@ -991,7 +991,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Para hipertrofia (ganhar massa muscular)</h3>
 
-<p>3 a 5 dias por semana, com cada músculo sendo estimulado 2 vezes. Volume semanal de 10 a 20 séries por grupo muscular. Progressão de carga consistente. Esse é o modelo com maior suporte científico para ganho de massa.</p>
+<p>3 a 5 dias por semana, com cada músculo sendo estimulado 2 vezes. Volume semanal de 10 a 20 séries por grupo muscular — faixa identificada na <a href="https://pubmed.ncbi.nlm.nih.gov/27433992/" target="_blank" rel="noopener noreferrer">meta-análise de Schoenfeld et al. sobre dose-resposta de volume e hipertrofia</a> — e progressão de carga consistente. Esse é o modelo com maior suporte científico para ganho de massa.</p>
 
 <p>Mais dias só valem a pena se o volume total ainda puder ser absorvido com recuperação de qualidade — o que depende de sono, alimentação e nível de estresse fora do treino.</p>
 
@@ -1225,7 +1225,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Durante o treino de força, os níveis de testosterona e hormônio do crescimento sobem nas primeiras décadas de minutos de esforço — o que favorece o ambiente anabólico necessário para a hipertrofia. Ao mesmo tempo, o cortisol também aumenta: é o hormônio que mobiliza energia para sustentar o esforço.</p>
 
-<p>O problema começa quando o treino se prolonga intensamente além de 60 a 90 minutos. Nesse ponto, a relação testosterona/cortisol começa a se inverter: o cortisol permanece elevado enquanto os hormônios anabólicos recuam. Esse desequilíbrio cria um ambiente bioquímico progressivamente menos favorável ao crescimento muscular — e, se cronicizado, pode comprometer a recuperação entre as sessões.</p>
+<p>O problema começa quando o treino se prolonga intensamente além de 60 a 90 minutos. Nesse ponto, a relação testosterona/cortisol começa a se inverter: o cortisol permanece elevado enquanto os hormônios anabólicos recuam. Esse desequilíbrio cria um ambiente bioquímico progressivamente menos favorável ao crescimento muscular — e, se cronicizado, pode comprometer a recuperação entre as sessões, como descrito na revisão de <a href="https://pubmed.ncbi.nlm.nih.gov/22450517/" target="_blank" rel="noopener noreferrer">Kreher e Schwartz sobre overtraining e fadiga sistêmica</a>.</p>
 
 <p>Importante: isso não significa que 61 minutos já "cataboliza" o treino, como alguns conteúdos alarmistas sugerem. Significa que, acima de 90 minutos de treino intenso, a relação custo-benefício começa a cair — e treinos regularmente acima desse tempo merecem revisão de estrutura.</p>
 
@@ -1306,7 +1306,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Aquecimento não é opcional quando se treina com carga. Músculo frio, sistema nervoso em baixa ativação e articulações sem lubrificação adequada são a combinação exata para uma lesão aguda ou para um treino significativamente abaixo do potencial.</p>
 
-<p>O aquecimento certo não é 10 minutos de esteira pensando em outra coisa. É preparação específica para o que você vai fazer: series de ativação com carga progressiva, movimentos que replicam o padrão dos exercícios do dia, mobilidade das articulações que vão ser exigidas. Para um dia de treino de pernas, por exemplo, o aquecimento é diferente de um dia de empurrar.</p>
+<p>O aquecimento certo não é 10 minutos de esteira pensando em outra coisa. É preparação específica para o que você vai fazer: séries de ativação com carga progressiva, movimentos que replicam o padrão dos exercícios do dia, mobilidade das articulações que vão ser exigidas. A <a href="https://pubmed.ncbi.nlm.nih.gov/20097734/" target="_blank" rel="noopener noreferrer">evidência de Fradkin et al. sobre aquecimento e prevenção de lesões</a> confirma que a preparação específica — e não o aquecimento genérico — é o que reduz o risco de lesão e melhora o desempenho. Para um dia de treino de pernas, por exemplo, o aquecimento é diferente de um dia de empurrar.</p>
 
 <p>Cinco a dez minutos de aquecimento específico antes do primeiro exercício já são suficientes. Não precisa de mais.</p>
 
@@ -1324,7 +1324,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Se o objetivo for hipertrofia ou força, a ordem ideal é: <strong>musculação primeiro, cardio depois</strong>.</p>
 
-<p>O motivo é fisiológico: cardio de intensidade moderada a alta, feito antes do treino de força, depleta parte das reservas de glicogênio muscular e compromete o desempenho nas séries. Você chega nos exercícios principais com menos energia disponível — o que reduz a carga que consegue usar e, portanto, o estímulo para hipertrofia.</p>
+<p>O motivo é fisiológico: cardio de intensidade moderada a alta, feito antes do treino de força, depleta parte das reservas de glicogênio muscular e compromete o desempenho nas séries. O chamado efeito de interferência do <a href="https://pubmed.ncbi.nlm.nih.gov/22329612/" target="_blank" rel="noopener noreferrer">treino concorrente foi documentado em estudo de Wilson et al.</a>, mostrando que combinar aeróbico e força na mesma sessão pode comprometer os ganhos de hipertrofia quando a ordem e o volume não são planejados. Você chega nos exercícios principais com menos energia disponível — o que reduz a carga que consegue usar e, portanto, o estímulo para hipertrofia.</p>
 
 <p>Cardio leve (caminhada, pedalada suave) pode ser feito antes como aquecimento geral sem esse efeito. O problema é o cardio moderado a intenso no pré-treino de força.</p>
 
@@ -1502,7 +1502,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Cansaço após um treino difícil é esperado e faz parte do processo. Dor muscular nas 48 horas seguintes (DOMS) é sinal de estímulo, não de problema. O overtraining é outra coisa.</p>
 
-<p>Overtraining é um estado de fadiga sistêmica crônica que se desenvolve quando o volume e a intensidade de treino superam de forma persistente a capacidade de recuperação do organismo. Não é uma semana difícil. É o acúmulo de semanas ou meses de estímulo desproporcional à recuperação possível.</p>
+<p>Overtraining é um estado de fadiga sistêmica crônica que se desenvolve quando o volume e a intensidade de treino superam de forma persistente a capacidade de recuperação do organismo. Não é uma semana difícil. É o acúmulo de semanas ou meses de estímulo desproporcional à recuperação possível, conforme descrito na revisão de <a href="https://pubmed.ncbi.nlm.nih.gov/22450517/" target="_blank" rel="noopener noreferrer">Kreher e Schwartz sobre síndrome do overtraining</a>.</p>
 
 <p>Existe um estágio intermediário que a literatura científica chama de <strong>overreaching</strong> — uma fadiga acumulada que ainda é reversível com alguns dias de descanso. Se o overreaching não é gerenciado, ele evolui para o overtraining propriamente dito, que pode levar semanas ou meses para ser totalmente revertido.</p>
 
@@ -1604,7 +1604,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>O sono não é o período em que o corpo espera para treinar de novo. É o período em que o resultado do treino é construído.</p>
 
-<p>Durante o sono profundo (ondas lentas), a liberação de GH — hormônio do crescimento — atinge seu pico diário. É nessa janela que a síntese proteica muscular está mais ativa. Cortar horas de sono para "ter mais tempo de treinar" é matematicamente contraproducente: você aumenta o estímulo e reduz a capacidade de resposta ao mesmo tempo.</p>
+<p>Durante o sono profundo (ondas lentas), a liberação de GH — hormônio do crescimento — atinge seu pico diário. É nessa janela que a síntese proteica muscular está mais ativa. Pesquisa de <a href="https://pubmed.ncbi.nlm.nih.gov/21550729/" target="_blank" rel="noopener noreferrer">Dattilo et al. sobre sono e recuperação muscular</a> demonstra como a privação de sono compromete diretamente os mecanismos de reconstrução das fibras musculares. Cortar horas de sono para "ter mais tempo de treinar" é matematicamente contraproducente: você aumenta o estímulo e reduz a capacidade de resposta ao mesmo tempo.</p>
 
 <p>A meta mínima para quem treina com regularidade é 7 a 9 horas por noite. Não como sugestão confortável — como condição para que o investimento no treino produza o resultado esperado. Abaixo disso, a frequência de treino perde parte do seu efeito.</p>
 
@@ -1615,7 +1615,7 @@ export const blogPosts: BlogPost[] = [
 <p>Dois fatores são determinantes:</p>
 
 <ul>
-  <li><strong>Proteína:</strong> as fibras musculares são compostas de proteína. Sem aminoácidos em quantidade adequada — de <strong>1,6 a 2,2 g/kg de peso corporal por dia</strong> — o processo de síntese proteica muscular não tem com o que trabalhar. Quem treina muito e come proteína insuficiente está essencialmente tentando construir uma casa sem tijolos.</li>
+  <li><strong>Proteína:</strong> as fibras musculares são compostas de proteína. Sem aminoácidos em quantidade adequada — de <strong>1,6 a 2,2 g/kg de peso corporal por dia</strong>, limiar confirmado em <a href="https://pubmed.ncbi.nlm.nih.gov/26500462/" target="_blank" rel="noopener noreferrer">estudo de Stokes et al. sobre proteína dietética e massa muscular</a> — o processo de síntese proteica muscular não tem com o que trabalhar. Quem treina muito e come proteína insuficiente está essencialmente tentando construir uma casa sem tijolos.</li>
   <li><strong>Calorias totais:</strong> déficit calórico profundo compromete a recuperação, especialmente em altas frequências de treino. O corpo em privação energética prioriza funções vitais antes da reconstrução muscular. Para quem treina 5 ou mais dias por semana, restrição calórica severa e frequência alta raramente convivem com boa recuperação.</li>
 </ul>
 
@@ -1814,7 +1814,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Uma das descobertas mais relevantes da pesquisa sobre hipertrofia na última década é que, quando o volume semanal total é equalizado, a frequência tem efeito menor do que se imagina.</p>
 
-<p>Estudos que compararam treinar um músculo 1x, 2x e 3x por semana com o mesmo volume total mostraram resultados similares entre as frequências — o que indica que o músculo não se importa muito se o estímulo vem em 1, 2 ou 3 sessões, desde que o volume total e a intensidade sejam equivalentes.</p>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/26987366/" target="_blank" rel="noopener noreferrer">Meta-análise de Schoenfeld et al. sobre frequência de treino e hipertrofia muscular</a> comparou treinar um músculo 1x, 2x e 3x por semana com o mesmo volume total — e mostrou resultados similares entre as frequências. O que indica que o músculo não se importa muito se o estímulo vem em 1, 2 ou 3 sessões, desde que o volume total e a intensidade sejam equivalentes.</p>
 
 <p>O que a frequência influencia, na prática, é a distribuição da qualidade. Concentrar 20 séries de peito em uma única sessão é diferente de distribuir essas 20 séries em 2 sessões de 10. No segundo caso, cada sessão começa com o músculo mais fresco — o que tende a resultar em séries de maior qualidade, especialmente nas últimas do treino.</p>
 
@@ -1889,7 +1889,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>A divisão ABC — peito/bíceps na segunda, costas/tríceps na quarta, pernas na sexta — é provavelmente a mais popular nas academias brasileiras. E é também a que resulta em menor frequência por músculo: 1 vez por semana.</p>
 
-<p>Estudos comparando frequência 1x e 2x por semana com volume semanal equalizado mostram, consistentemente, superioridade da frequência 2x. A janela de síntese proteica muscular dura 24 a 48 horas — depois retorna à linha de base. Treinar o músculo apenas uma vez por semana significa que o processo de construção fica em nível elevado por no máximo 2 dos 7 dias disponíveis.</p>
+<p>Estudos comparando frequência 1x e 2x por semana com volume semanal equalizado mostram, consistentemente, superioridade da frequência 2x — como aponta a <a href="https://pubmed.ncbi.nlm.nih.gov/27102172/" target="_blank" rel="noopener noreferrer">meta-análise de Ralston et al. sobre frequência de treino resistido e tamanho muscular</a>. A janela de síntese proteica muscular dura 24 a 48 horas — depois retorna à linha de base. Treinar o músculo apenas uma vez por semana significa que o processo de construção fica em nível elevado por no máximo 2 dos 7 dias disponíveis.</p>
 
 <p>Reorganizar um ABC para um Upper/Lower ou Full Body mantendo o mesmo volume total quase sempre resulta em progressão mais rápida — especialmente para iniciantes e intermediários.</p>
 
@@ -2078,7 +2078,7 @@ export const blogPosts: BlogPost[] = [
   <li><strong>Queda do cortisol</strong> — o cortisol (hormônio catabólico do estresse) cai para os níveis mais baixos do dia durante o sono. A relação favorável entre hormônios anabólicos e catabólicos cria o ambiente ideal para a construção muscular</li>
 </ul>
 
-<p>O que estudos sobre privação de sono mostram é direto: pessoas que dormem consistentemente menos de 6 horas por noite têm MPS significativamente reduzida, massa muscular menor e recuperação mais lenta entre as sessões — independentemente do treino e da alimentação.</p>
+<p>O que estudos sobre privação de sono mostram é direto: pessoas que dormem consistentemente menos de 6 horas por noite têm MPS significativamente reduzida, massa muscular menor e recuperação mais lenta entre as sessões — independentemente do treino e da alimentação. A pesquisa de <a href="https://pubmed.ncbi.nlm.nih.gov/24790531/" target="_blank" rel="noopener noreferrer">Chennaoui et al. sobre sono e fisiologia do exercício</a> detalha como o sono influencia a performance, a recuperação e a composição corporal de praticantes de atividade física.</p>
 
 <p>Não é exagero dizer que dormir bem é tão importante quanto treinar bem. Quem dorme 5 horas e treina com perfeição está deixando resultado na cama — literalmente.</p>
 
@@ -2091,7 +2091,7 @@ export const blogPosts: BlogPost[] = [
 <p>Dois pontos inegociáveis:</p>
 
 <ul>
-  <li><strong>Proteína total diária:</strong> de 1,6 a 2,2 g/kg de peso corporal por dia é a faixa com maior suporte científico para maximizar a hipertrofia. Abaixo disso, a MPS está limitada por falta de substrato.</li>
+  <li><strong>Proteína total diária:</strong> de 1,6 a 2,2 g/kg de peso corporal por dia é a faixa com maior suporte científico para maximizar a hipertrofia — conforme demonstra a <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">meta-análise de Morton et al. com 49 estudos e 1.800 participantes</a>. Abaixo disso, a MPS está limitada por falta de substrato.</li>
   <li><strong>Calorias suficientes:</strong> em déficit calórico muito agressivo, o organismo prioriza funções vitais antes da síntese de novo tecido muscular. Recuperação muscular ótima ocorre com balanço energético neutro a positivo.</li>
 </ul>
 
@@ -2107,7 +2107,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Quando a falta de descanso vira overreaching e overtraining</h2>
 
-<p>Existe uma progressão clara quando o estímulo supera consistentemente a capacidade de recuperação:</p>
+<p>Existe uma progressão clara quando o estímulo supera consistentemente a capacidade de recuperação, descrita em detalhes na revisão de <a href="https://pubmed.ncbi.nlm.nih.gov/22450517/" target="_blank" rel="noopener noreferrer">Kreher e Schwartz sobre síndrome do overtraining e suas implicações clínicas</a>:</p>
 
 <h3>Overreaching funcional</h3>
 <p>Um estado de fadiga acumulada que aparece após dias ou semanas de treino intenso sem recuperação suficiente. O desempenho cai temporariamente, mas uma semana de descanso relativo é suficiente para reverter. Quando bem gerenciado, pode até ser uma ferramenta de periodização — o que os protocolos avançados chamam de "sobrecarga planejada" seguida de deload.</p>
@@ -2366,10 +2366,10 @@ export const blogPosts: BlogPost[] = [
 <h2>O que realmente acelera os resultados</h2>
 
 <h3>Progressão de carga consistente</h3>
-<p>O músculo cresce em resposta a um desafio progressivo. Se você faz os mesmos exercícios com o mesmo peso de semana em semana, o corpo se acomoda — e para de responder. A sobrecarga progressiva é o princípio mais importante do treino para hipertrofia: o estímulo precisa crescer junto com a capacidade do músculo. Quem progride carga consistentemente evolui. Quem não progride, estagna.</p>
+<p>O músculo cresce em resposta a um desafio progressivo. Se você faz os mesmos exercícios com o mesmo peso de semana em semana, o corpo se acomoda — e para de responder. A sobrecarga progressiva é o princípio mais importante do treino para hipertrofia, consagrado pelas <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">diretrizes do ACSM para progressão em treinamento resistido</a>: o estímulo precisa crescer junto com a capacidade do músculo. Quem progride carga consistentemente evolui. Quem não progride, estagna.</p>
 
 <h3>Proteína e calorias adequadas</h3>
-<p>O treino cria o sinal para a mudança. A alimentação fornece os materiais. Sem proteína suficiente (1,6 a 2,2 g/kg de peso por dia), o músculo não tem aminoácidos para se reconstruir. Sem calorias adequadas para o objetivo (superávit moderado para hipertrofia, déficit moderado para emagrecimento), o processo travará inevitavelmente.</p>
+<p>O treino cria o sinal para a mudança. A alimentação fornece os materiais. Sem proteína suficiente — <a href="https://pubmed.ncbi.nlm.nih.gov/23739654/" target="_blank" rel="noopener noreferrer">Helms et al. identificaram a faixa de 1,6 a 2,2 g/kg como recomendação para atletas de força</a> — o músculo não tem aminoácidos para se reconstruir. Sem calorias adequadas para o objetivo (superávit moderado para hipertrofia, déficit moderado para emagrecimento), o processo travará inevitavelmente.</p>
 
 <h3>Sono de qualidade</h3>
 <p>Durante o sono profundo, o hormônio do crescimento é liberado em quantidade muito superior à produção diurna — e é nesse período que a síntese proteica muscular está no pico. Dormir 5 ou 6 horas e esperar resultado máximo é matematicamente impossível. Sete a nove horas de sono de qualidade por noite não é sugestão — é condição. Leia mais sobre isso no artigo <a href="/blog/descansar-tambem-faz-crescer">Descansar Também Faz Crescer?</a></p>
@@ -2383,7 +2383,7 @@ export const blogPosts: BlogPost[] = [
   <li><strong>Falta de progressão de carga</strong> — o erro número um. Ficar meses no mesmo peso elimina o estímulo para adaptação.</li>
   <li><strong>Proteína insuficiente</strong> — a maioria das pessoas subestima o quanto consome. Calcule. Não suponha.</li>
   <li><strong>Sono ruim</strong> — comprometer as horas de sono para "ter mais tempo de treinar" é matematicamente contraproducente.</li>
-  <li><strong>Estresse crônico</strong> — cortisol elevado de forma persistente inibe a síntese proteica e favorece o acúmulo de gordura visceral. Não é psicológico — é bioquímico.</li>
+  <li><strong>Estresse crônico</strong> — cortisol elevado de forma persistente inibe a síntese proteica e favorece o acúmulo de gordura visceral, um mecanismo bem documentado na <a href="https://pubmed.ncbi.nlm.nih.gov/11120726/" target="_blank" rel="noopener noreferrer">pesquisa de Van Cauter et al. sobre regulação hormonal pelo sono e estresse</a>. Não é psicológico — é bioquímico.</li>
   <li><strong>Álcool frequente</strong> — inibe a síntese proteica muscular nas horas seguintes ao consumo, prejudica o sono e eleva o cortisol. Consumo frequente reduz concretamente a velocidade dos resultados.</li>
   <li><strong>Expectativas irreais</strong> — comparar o próprio progresso com "befores and afters" de 30 dias de redes sociais é a receita para desistir antes de ver resultado real. Esses conteúdos raramente mostram o que foi feito fora das fotos.</li>
   <li><strong>Trocar de treino toda semana</strong> — o corpo precisa de tempo para acumular volume e se adaptar a um protocolo. Mudar constantemente é recomeçar do zero toda semana.</li>
