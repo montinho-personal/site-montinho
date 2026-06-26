@@ -16,6 +16,7 @@ interface ResultadoItem {
   result: string;
   modality: string;
   photo?: string;
+  objectPosition?: string;
   description: string;
   quote: string;
 }
@@ -68,6 +69,19 @@ const resultados: ResultadoItem[] = [
       "Elisa já tinha decidido que era hora de mudar. O meu papel foi transformar essa decisão em um plano claro, adaptado à sua rotina e aos seus objetivos. Com um treino estratégico, acompanhamento próximo e confiança no processo, ela conquistou uma transformação consistente sem precisar viver em função da academia.",
     quote:
       "Ter um planejamento feito para a minha realidade fez toda a diferença. Pela primeira vez, consegui manter a consistência e ver resultados de verdade.",
+  },
+  {
+    name: "Bruna Rodrigues",
+    age: "35 anos",
+    duration: "",
+    result: "−22kg",
+    modality: "Modelo Híbrido",
+    photo: "/antes-depois-montinho-personal-trainer-alphaville.jpg",
+    objectPosition: "top",
+    description:
+      "Durante anos, Bruna viveu entre o entusiasmo de começar e a frustração de recomeçar. O efeito sanfona parecia não ter fim. Quando me procurou, construímos um plano pensado para a vida que ela realmente levava. Aos poucos, a constância substituiu a culpa, e o resultado deixou de ser temporário para se tornar um novo estilo de vida.",
+    quote:
+      "Ter um treino personalizado já fez toda a diferença, mas o maior diferencial foi o suporte. Saber que meu treinador já viveu essa mesma luta me deu confiança para não desistir. Hoje tenho resultados que nunca consegui manter antes.",
   },
   {
     name: "Fernanda S.",
@@ -158,7 +172,7 @@ export default function Resultados() {
                       alt={`Transformação de ${item.name}`}
                       width={600}
                       height={450}
-                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                      style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: item.objectPosition ?? "center" }}
                       className="opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                     />
                   ) : (
@@ -186,11 +200,13 @@ export default function Resultados() {
                     </span>
                   </div>
 
-                  <div className="flex items-center gap-2 mb-4">
-                    <div className="h-px flex-1 bg-white/10" />
-                    <span className="text-gray-500 text-xs">{item.duration}</span>
-                    <div className="h-px flex-1 bg-white/10" />
-                  </div>
+                  {item.duration && (
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="h-px flex-1 bg-white/10" />
+                      <span className="text-gray-500 text-xs">{item.duration}</span>
+                      <div className="h-px flex-1 bg-white/10" />
+                    </div>
+                  )}
 
                   <p className="text-gray-400 text-sm leading-relaxed mb-4">
                     {item.description}
