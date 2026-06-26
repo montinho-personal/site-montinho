@@ -33,6 +33,10 @@
 | Quanto Tempo Para Aparecer Resultado? | `quanto-tempo-para-aparecer-resultado-na-academia` | Publicado |
 | Como Sair do Platô da Musculação? | `como-sair-do-plato-da-musculacao` | Publicado |
 | Quanta Proteína por Dia Para Ganhar Massa Muscular? | `quanta-proteina-por-dia-para-ganhar-massa-muscular` | Publicado |
+| O Que Impede a Hipertrofia? | `o-que-impede-a-hipertrofia` | Publicado |
+| Os 10 Maiores Erros de Quem Quer Ganhar Massa | `erros-de-quem-quer-ganhar-massa-muscular` | Publicado |
+| Como Montar um Treino de Hipertrofia | `como-montar-treino-de-hipertrofia` | Publicado |
+| Creatina Para Hipertrofia | `creatina-para-hipertrofia` | Publicado |
 
 ### 🔁 Cluster: Frequência e Planejamento de Treino
 **Pilar:** `quantos-dias-por-semana-treinar`
@@ -45,6 +49,8 @@
 | Posso Treinar o Mesmo Músculo Dois Dias Seguidos? | `treinar-o-mesmo-musculo-dois-dias-seguidos` | Publicado |
 | 7 Erros Comuns na Musculação | `erros-comuns-no-treino-de-musculacao` | Publicado |
 | Quanto Tempo Para Aparecer Resultado? | `quanto-tempo-para-aparecer-resultado-na-academia` | Publicado |
+| Periodização de Treino | `periodizacao-de-treino` | Publicado |
+| Personal Trainer Online: Como Funciona | `personal-trainer-online-como-funciona` | Publicado |
 
 ### 🔥 Cluster: Emagrecimento
 **Pilar:** `por-que-voce-nao-consegue-emagrecer`
@@ -158,11 +164,11 @@
 ### Alta Prioridade
 | Tema | Palavra-chave | Cluster | Motivo |
 |------|--------------|---------|--------|
-| Periodização para hipertrofia | "periodização de treino" | Hipertrofia | Mencionada em vários artigos mas sem conteúdo dedicado |
+| ~~Periodização para hipertrofia~~ | ~~"periodização de treino"~~ | Hipertrofia | ✅ Publicado — `periodizacao-de-treino` |
 | ~~Proteína na dieta~~ | ~~"quanta proteína por dia para ganhar massa"~~ | Hipertrofia | ✅ Publicado — `quanta-proteina-por-dia-para-ganhar-massa-muscular` |
 | Emagrecimento com musculação | "emagrecer fazendo musculação" | Emagrecimento | Conecta os dois clusters principais |
-| Personal trainer online | "personal trainer online como funciona" | Comercial | Alto potencial comercial |
-| Suplementação | "creatina para hipertrofia" | Hipertrofia | FAQ mencionado no art.6, sem artigo dedicado |
+| ~~Personal trainer online~~ | ~~"personal trainer online como funciona"~~ | Comercial | ✅ Publicado — `personal-trainer-online-como-funciona` |
+| ~~Suplementação~~ | ~~"creatina para hipertrofia"~~ | Hipertrofia | ✅ Publicado — `creatina-para-hipertrofia` |
 
 ### Média Prioridade
 | Tema | Palavra-chave | Cluster |
