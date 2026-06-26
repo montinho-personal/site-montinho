@@ -7589,6 +7589,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Prefere absorver esse conteúdo em vídeo? Assista abaixo e veja o cálculo na prática.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Qual deve ser o tamanho do déficit?</h2>
 
 <p>Esta é a pergunta mais importante — e onde a maioria das pessoas erra.</p>
@@ -7790,6 +7793,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Esse ponto fica mais claro no vídeo — vale 2 minutos do seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>E o hipotireoidismo?</h2>
 
 <p>O hipotireoidismo (produção insuficiente de hormônios tireoidianos) é uma condição real que reduz a TMB. Mas mesmo nesse caso, a redução no gasto energético é de <strong>150 a 300 kcal/dia</strong> — real, mas não suficiente para justificar grandes ganhos de peso sem excesso calórico.</p>
@@ -7988,6 +7994,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Assista ao vídeo abaixo para ver esse conceito na prática.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <p>Para quem está começando, caminhadas de 30 a 45 minutos, 3 a 5 vezes por semana, já são uma adição excelente ao treino de força. Para quem está mais avançado, leia nosso artigo sobre <a href="/blog/hiit-funciona">se o HIIT realmente funciona</a>.</p>
 
 <h2>O papel dos exercícios abdominais</h2>
@@ -8185,6 +8194,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
     </tr>
   </tbody>
 </table>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer ver como estruturar isso na prática? Assista ao vídeo abaixo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <p>Para atingir esses valores, distribua a proteína em 3 a 5 refeições ao longo do dia, com fontes de qualidade: frango, carne vermelha magra, ovos, peixe, laticínios e, se necessário, suplementação com whey protein.</p>
 
@@ -8499,6 +8511,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><a href="/blog/como-preservar-massa-muscular-durante-emagrecimento">Como Preservar Massa Muscular Durante o Emagrecimento</a></li>
   <li><a href="/blog/erros-comuns-no-treino-de-musculacao">Erros Comuns no Treino de Musculação</a></li>
 </ul>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Antes de chegar à conclusão, veja no vídeo como aplicar essas estratégias no dia a dia.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Conclusão</h2>
 
@@ -9042,6 +9057,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><a href="/blog/melhor-treino-para-emagrecer">Melhor Treino Para Emagrecer Sem Perder Músculo</a></li>
   <li><a href="/blog/progressao-de-carga">Progressão de Carga: O Segredo Para Continuar Evoluindo</a></li>
 </ul>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Se você aprende melhor assistindo do que lendo, este vídeo resume os pontos principais de forma direta.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Conclusão</h2>
 
