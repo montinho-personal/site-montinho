@@ -124,6 +124,9 @@ export const blogPosts: BlogPost[] = [
   <li><strong>Acompanhamento profissional</strong> — ajustes contínuos conforme o corpo responde e as adaptações acontecem</li>
 </ul>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Se preferir ver esse conteúdo em formato de vídeo, assista abaixo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Por que o acompanhamento profissional muda tudo</h2>
 
 <p>Quando você tenta fazer tudo sozinho, cada obstáculo vira um motivo para desistir. Com um profissional ao seu lado, cada obstáculo vira uma oportunidade de ajuste de protocolo.</p>
@@ -6537,6 +6540,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Gravei um vídeo explicando esse ponto de forma prática — vale muito assistir antes de decidir como montar sua semana de treinos.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>A combinação é o ideal</h2>
 
 <p>A melhor estratégia para emagrecer combina musculação com cardio moderado. O treino de força preserva e constrói músculo enquanto o cardio aumenta o gasto calórico total e melhora a saúde cardiovascular.</p>
@@ -6712,6 +6718,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">No vídeo abaixo você vê isso funcionar na prática — em menos de 2 minutos fica claro qual ordem faz mais sentido para o seu caso.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Para emagrecimento: qual ordem emagrece mais?</h2>
 
 <p>Essa é a dúvida mais frequente. A verdade é que, para emagrecimento, a diferença na ordem é pequena — o que importa de verdade é o <strong>déficit calórico total ao longo do dia</strong>, não se você fez cardio antes ou depois.</p>
@@ -6884,6 +6893,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
     </tr>
   </tbody>
 </table>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Antes de continuar lendo, assista ao vídeo abaixo — ele resume bem o que você precisa saber sobre HIIT e emagrecimento.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>O HIIT funciona para emagrecer?</h2>
 
@@ -7120,6 +7132,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
     </tr>
   </tbody>
 </table>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Tenho um vídeo curto sobre esse assunto que complementa bem o que você está lendo — dá uma olhada.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Quanto cardio fazer para emagrecer por nível</h2>
 
@@ -7394,6 +7409,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p><strong>Mito 3: "Cardio em jejum elimina mais gordura abdominal."</strong> Não há evidências consistentes de que a hora do treino ou o estado de jejum altere significativamente onde o corpo perde gordura.</p>
 
 <p><strong>Mito 4: "Glutem e lactose engordam a barriga."</strong> Intolerâncias podem causar distensão abdominal temporária, mas não acúmulo de gordura. Eliminar glúten ou lactose sem intolerância não emagrece.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Esse conteúdo também está disponível em vídeo — assista se quiser absorver as dicas de forma mais dinâmica.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Estratégia completa para perder gordura abdominal</h2>
 
