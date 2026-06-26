@@ -1059,7 +1059,7 @@ export const blogPosts: BlogPost[] = [
   <li><strong>Recuperação do sistema nervoso central</strong> — frequentemente ignorada, mas determinante. Treinos intensos sobrecarregam o SNC, não apenas os músculos. Quando o SNC está fatigado, a qualidade do treino cai — execução piora, força diminui, motivação some.</li>
 </ul>
 
-<p>Sinal de que você precisa de mais descanso: queda de desempenho nos treinos, dificuldade de dormir, irritabilidade, ausência de motivação para treinar. Esses são sintomas de overtraining, não de falta de força de vontade.</p>
+<p>Sinal de que você precisa de mais descanso: queda de desempenho nos treinos, dificuldade de dormir, irritabilidade, ausência de motivação para treinar. Esses são sintomas de overtraining, não de falta de força de vontade. Para entender em profundidade quando o descanso é suficiente ou excessivo, veja <a href="/blog/treinar-todos-os-dias-faz-mal">treinar todos os dias faz mal?</a></p>
 
 <h2>Treinar todo dia faz sentido?</h2>
 
@@ -1122,7 +1122,7 @@ export const blogPosts: BlogPost[] = [
 
 <ul>
   <li><strong>Treinar muito e dormir pouco</strong> — o erro mais comum e o que mais limita resultado. Não adianta aumentar a frequência se o sono não está sustentando a recuperação.</li>
-  <li><strong>Usar divisão ABC por vanidade, não por lógica</strong> — muita gente faz treino A, B e C em 3 dias e acha que está treinando 3 vezes por semana. Está treinando cada músculo 1 vez. Reformular a divisão para 2x por músculo quase sempre gera resultado imediato.</li>
+  <li><strong>Usar divisão ABC por vanidade, não por lógica</strong> — muita gente faz treino A, B e C em 3 dias e acha que está treinando 3 vezes por semana. Está treinando cada músculo 1 vez. Reformular a divisão para 2x por músculo quase sempre gera resultado imediato. Isso também está diretamente relacionado à questão de <a href="/blog/treinar-o-mesmo-musculo-dois-dias-seguidos">quando faz sentido treinar o mesmo músculo dois dias seguidos</a>.</li>
   <li><strong>Aumentar frequência sem aumentar alimentação</strong> — mais treino exige mais recuperação, que exige mais proteína e mais calorias. Quem adiciona um dia de treino sem ajustar a alimentação está subtraindo recuperação.</li>
   <li><strong>Confundir cansaço com overtraining</strong> — cansaço muscular 24 a 48 horas após o treino é normal e esperado. Overtraining é um estado sistêmico que se desenvolve ao longo de semanas — e tem sinais específicos além do cansaço.</li>
   <li><strong>Manter a mesma frequência por anos sem revisão</strong> — à medida que o corpo avança, o protocolo precisa avançar também. Quem treinou 3 dias como iniciante e continua com 3 dias dois anos depois provavelmente precisa de um ajuste.</li>
@@ -1241,7 +1241,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Quanto tempo dura um treino para hipertrofia</h3>
 
-<p>Para ganho de massa muscular, o volume semanal por grupo muscular — e não o tempo na academia — é o principal determinante do resultado. Com 10 a 20 séries semanais por músculo, bem distribuídas em 3 a 5 sessões, o treino individual costuma durar entre <strong>60 e 75 minutos</strong>.</p>
+<p>Para ganho de massa muscular, o volume semanal por grupo muscular — e não o tempo na academia — é o principal determinante do resultado. Com 10 a 20 séries semanais por músculo, bem distribuídas em 3 a 5 sessões (saiba <a href="/blog/quantos-dias-por-semana-treinar">quantos dias por semana treinar para cada objetivo</a>), o treino individual costuma durar entre <strong>60 e 75 minutos</strong>.</p>
 
 <p>Nesse perfil, o descanso entre séries dos exercícios compostos costuma ser de 2 a 3 minutos — o que contribui para uma duração um pouco maior do que treinos de maior densidade. Não é tempo perdido: é o descanso necessário para que a próxima série seja executada com qualidade e carga adequada.</p>
 
@@ -1392,7 +1392,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Não é raro chegar a alguém que treina 1h30 todo dia, está estagnado há meses, e quando analisamos o protocolo percebemos que 40 minutos desse tempo são descanso excessivo, 20 minutos são exercícios redundantes e 30 minutos são trabalho efetivo mal planejado. Não é o tempo o problema — é o método.</p>
 
-<p>Quando o protocolo está certo — progressão de carga, volume adequado por músculo, descanso controlado, exercícios alinhados com o objetivo — a duração ideal emerge naturalmente. Ela não é um alvo a perseguir, é uma consequência.</p>
+<p>Quando o protocolo está certo — progressão de carga, volume adequado por músculo, descanso controlado, exercícios alinhados com o objetivo — a duração ideal emerge naturalmente. Ela não é um alvo a perseguir, é uma consequência. E lembre-se: o que acontece fora da academia importa tanto quanto o que acontece dentro. A fisiologia de <a href="/blog/descansar-tambem-faz-crescer">por que descansar também faz crescer</a> é a outra metade da equação de resultado.</p>
 
 <h2>Conclusão</h2>
 
@@ -1604,7 +1604,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>O sono não é o período em que o corpo espera para treinar de novo. É o período em que o resultado do treino é construído.</p>
 
-<p>Durante o sono profundo (ondas lentas), a liberação de GH — hormônio do crescimento — atinge seu pico diário. É nessa janela que a síntese proteica muscular está mais ativa. Pesquisa de <a href="https://pubmed.ncbi.nlm.nih.gov/21550729/" target="_blank" rel="noopener noreferrer">Dattilo et al. sobre sono e recuperação muscular</a> demonstra como a privação de sono compromete diretamente os mecanismos de reconstrução das fibras musculares. Cortar horas de sono para "ter mais tempo de treinar" é matematicamente contraproducente: você aumenta o estímulo e reduz a capacidade de resposta ao mesmo tempo.</p>
+<p>Durante o sono profundo (ondas lentas), a liberação de GH — hormônio do crescimento — atinge seu pico diário. É nessa janela que a síntese proteica muscular está mais ativa. Pesquisa de <a href="https://pubmed.ncbi.nlm.nih.gov/21550729/" target="_blank" rel="noopener noreferrer">Dattilo et al. sobre sono e recuperação muscular</a> demonstra como a privação de sono compromete diretamente os mecanismos de reconstrução das fibras musculares. Cortar horas de sono para "ter mais tempo de treinar" é matematicamente contraproducente: você aumenta o estímulo e reduz a capacidade de resposta ao mesmo tempo. A fisiologia completa desse processo está explicada em <a href="/blog/descansar-tambem-faz-crescer">por que descansar também faz crescer</a>.</p>
 
 <p>A meta mínima para quem treina com regularidade é 7 a 9 horas por noite. Não como sugestão confortável — como condição para que o investimento no treino produza o resultado esperado. Abaixo disso, a frequência de treino perde parte do seu efeito.</p>
 
@@ -1900,7 +1900,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li><strong>Volume semanal total</strong> — quantas séries esse músculo recebe por semana no total</li>
   <li><strong>Intensidade e proximidade da falha</strong> — quão perto do limite você vai em cada série</li>
-  <li><strong>Qualidade do sono</strong> — onde a síntese proteica atinge seu pico e a recuperação é mais eficiente</li>
+  <li><strong>Qualidade do sono</strong> — onde a síntese proteica atinge seu pico e a recuperação é mais eficiente; entenda a fisiologia completa em <a href="/blog/descansar-tambem-faz-crescer">por que descansar também faz crescer</a></li>
   <li><strong>Proteína e calorias</strong> — a matéria-prima sem a qual o processo de reconstrução não tem como se completar</li>
   <li><strong>Estresse fora da academia</strong> — cortisol cronicamente elevado compromete a recuperação da mesma forma que treino excessivo</li>
   <li><strong>Nível de experiência</strong> — determina a capacidade de recuperação e o volume que o corpo consegue absorver</li>
@@ -1938,7 +1938,7 @@ export const blogPosts: BlogPost[] = [
 <h2>O que iniciantes e avançados devem fazer de forma diferente</h2>
 
 <h3>Para iniciantes</h3>
-<p>Frequência 2x por semana por músculo — com pelo menos 48 horas entre os estímulos — é o modelo com melhor suporte científico e mais seguro para quem está começando. Full body 3 vezes por semana (segunda, quarta, sexta) ou upper/lower 4 vezes atendem essa frequência sem treinos consecutivos do mesmo músculo. Não há justificativa fisiológica para frequência diária no mesmo músculo quando se é iniciante — os ganhos serão menores, não maiores.</p>
+<p>Frequência 2x por semana por músculo — com pelo menos 48 horas entre os estímulos — é o modelo com melhor suporte científico e mais seguro para quem está começando. Full body 3 vezes por semana (segunda, quarta, sexta) ou upper/lower 4 vezes atendem essa frequência sem treinos consecutivos do mesmo músculo. Para montar esse planejamento semanal de forma estruturada, veja <a href="/blog/quantos-dias-por-semana-treinar">quantos dias por semana treinar por nível e objetivo</a>. Não há justificativa fisiológica para frequência diária no mesmo músculo quando se é iniciante — os ganhos serão menores, não maiores.</p>
 
 <h3>Para intermediários</h3>
 <p>Com mais experiência, a capacidade de recuperação aumenta e a tolerância a volume maior também. Upper/lower 4 dias, push/pull/legs 5 ou 6 dias — com volume bem distribuído — são os protocolos que funcionam melhor. Treinar o mesmo músculo em dias consecutivos pode aparecer em fases de especialização planejadas, sempre com volume controlado na segunda sessão.</p>
@@ -2107,7 +2107,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Quando a falta de descanso vira overreaching e overtraining</h2>
 
-<p>Existe uma progressão clara quando o estímulo supera consistentemente a capacidade de recuperação, descrita em detalhes na revisão de <a href="https://pubmed.ncbi.nlm.nih.gov/22450517/" target="_blank" rel="noopener noreferrer">Kreher e Schwartz sobre síndrome do overtraining e suas implicações clínicas</a>:</p>
+<p>Existe uma progressão clara quando o estímulo supera consistentemente a capacidade de recuperação, descrita em detalhes na revisão de <a href="https://pubmed.ncbi.nlm.nih.gov/22450517/" target="_blank" rel="noopener noreferrer">Kreher e Schwartz sobre síndrome do overtraining e suas implicações clínicas</a>. Para entender em detalhes quando a frequência começa a trabalhar contra você, veja <a href="/blog/treinar-todos-os-dias-faz-mal">treinar todos os dias faz mal?</a></p>
 
 <h3>Overreaching funcional</h3>
 <p>Um estado de fadiga acumulada que aparece após dias ou semanas de treino intenso sem recuperação suficiente. O desempenho cai temporariamente, mas uma semana de descanso relativo é suficiente para reverter. Quando bem gerenciado, pode até ser uma ferramenta de periodização — o que os protocolos avançados chamam de "sobrecarga planejada" seguida de deload.</p>
@@ -2215,7 +2215,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>O treino cria o sinal. O descanso produz a resposta. Sem os dois, não há hipertrofia — há apenas fadiga acumulada.</p>
 
-<p>Entender isso muda fundamentalmente a forma como você enxerga o descanso. Ele não é a pausa entre os esforços — é parte do esforço. A supercompensação, a síntese proteica muscular e a liberação de GH acontecem durante o descanso e o sono. São processos que o treino desencadeia mas não controla — e que só chegam ao resultado esperado com recuperação adequada.</p>
+<p>Entender isso muda fundamentalmente a forma como você enxerga o descanso. Ele não é a pausa entre os esforços — é parte do esforço. A supercompensação, a síntese proteica muscular e a liberação de GH acontecem durante o descanso e o sono. São processos que o treino desencadeia mas não controla — e que só chegam ao resultado esperado com recuperação adequada. Para entender todos os pilares que tornam a <a href="/blog/como-ganhar-massa-muscular">hipertrofia muscular</a> possível — treino, nutrição e recuperação —, leia o guia completo.</p>
 
 <p>Quem cuida do descanso com o mesmo cuidado que cuida do treino cresce mais do que quem treina mais e descansa menos. Não é intuição — é bioquímica.</p>
 
@@ -2307,7 +2307,7 @@ export const blogPosts: BlogPost[] = [
 <p>É também o ponto em que muita gente desiste — justamente porque compara o resultado com expectativas irreais criadas por propagandas de "30 dias de transformação". O resultado real de 2 meses é sólido e real — mas parece pequeno comparado ao que foi prometido.</p>
 
 <h3>3 meses</h3>
-<p>Três meses de treino consistente com protocolo adequado produz uma transformação perceptível para qualquer pessoa próxima. Para iniciantes em condições ideais, 3 a 5 kg de massa muscular em três meses são possíveis. Para quem está emagrecendo, uma perda de 4 a 8 kg de gordura nesse período é alcançável com déficit moderado e treino de força.</p>
+<p>Três meses de treino consistente com protocolo adequado produz uma transformação perceptível para qualquer pessoa próxima. Para iniciantes em condições ideais, 3 a 5 kg de massa muscular em três meses são possíveis — desde que os pilares de treino, nutrição e recuperação estejam alinhados, como explico no <a href="/blog/como-ganhar-massa-muscular">guia completo de como ganhar massa muscular</a>. Para quem está emagrecendo, uma perda de 4 a 8 kg de gordura nesse período é alcançável com déficit moderado e treino de força.</p>
 <p>A diferença entre quem treinou 3 meses com método e quem treinou 3 meses sem planejamento é enorme — e começa a ficar evidente exatamente nessa fase.</p>
 
 <h3>6 meses</h3>
@@ -2553,7 +2553,7 @@ export const blogPosts: BlogPost[] = [
 <p>A solução nesses casos não é treinar mais forte — é dar ao corpo o descanso que falta. Uma semana de deload (volume reduzido em 30 a 50%) frequentemente resolve o que meses de treino intenso criaram.</p>
 
 <h3>4. Sono insuficiente ou de baixa qualidade</h3>
-<p>A síntese proteica muscular atinge o pico durante o sono profundo. <a href="https://pubmed.ncbi.nlm.nih.gov/21550729/" target="_blank" rel="noopener noreferrer">Estudo publicado no Medical Hypotheses</a> demonstrou que a privação de sono prejudica diretamente a recuperação muscular e eleva marcadores catabólicos. Dormir consistentemente menos de 7 horas reduz concretamente a velocidade do ganho muscular — independentemente do treino e da alimentação. Se o platô coincide com um período de sono comprometido, essa é a causa mais provável. E a solução mais simples.</p>
+<p>A síntese proteica muscular atinge o pico durante o sono profundo. <a href="https://pubmed.ncbi.nlm.nih.gov/21550729/" target="_blank" rel="noopener noreferrer">Estudo publicado no Medical Hypotheses</a> demonstrou que a privação de sono prejudica diretamente a recuperação muscular e eleva marcadores catabólicos. Dormir consistentemente menos de 7 horas reduz concretamente a velocidade do ganho muscular — independentemente do treino e da alimentação. Se o platô coincide com um período de sono comprometido, essa é a causa mais provável e a solução mais simples: entenda a fundo a fisiologia de <a href="/blog/descansar-tambem-faz-crescer">por que descansar também faz crescer</a>.</p>
 
 <h3>5. Alimentação desalinhada</h3>
 <p>Dois cenários são comuns:</p>
@@ -2573,7 +2573,7 @@ export const blogPosts: BlogPost[] = [
 <p>Técnica ruim não é apenas questão de segurança — é questão de estímulo. Um supino com amplitude incompleta ou um agachamento sem profundidade adequada reduz o músculo efetivamente trabalhado e, com isso, o estímulo gerado. Às vezes o platô não é falta de carga — é falta de qualidade na execução da carga que já existe.</p>
 
 <h3>9. Falta de periodização</h3>
-<p>Treinar com a mesma intensidade e o mesmo volume por 52 semanas por ano sem nenhuma variação planejada é acumular fadiga sem dar ao corpo janelas de supercompensação completa. A periodização — alternância planejada de fases de maior e menor volume e intensidade — é o que permite progredir de forma consistente ao longo do tempo, não apenas por alguns meses.</p>
+<p>Treinar com a mesma intensidade e o mesmo volume por 52 semanas por ano sem nenhuma variação planejada é acumular fadiga sem dar ao corpo janelas de supercompensação completa. A periodização — alternância planejada de fases de maior e menor volume e intensidade — é o que permite progredir de forma consistente ao longo do tempo, não apenas por alguns meses. Parte dessa periodização envolve distribuir o estímulo de forma inteligente ao longo da semana; saiba <a href="/blog/quantos-dias-por-semana-treinar">quantos dias por semana treinar por nível e objetivo</a>.</p>
 
 <h2>O diagnóstico do seu platô: um guia prático</h2>
 
