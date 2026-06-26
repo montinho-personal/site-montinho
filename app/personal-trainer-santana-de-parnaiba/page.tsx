@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
@@ -130,6 +131,19 @@ export default function PersonalTrainerSantanaDeParnaiba() {
               Minha trajetória na musculação começou pela necessidade pessoal. Passei anos convivendo com o sobrepeso até entender que o problema não era falta de esforço — era falta de método. Quando aprendi a base científica do que funciona de verdade, a transformação aconteceu. Não em semanas, mas de forma real e permanente. Esse aprendizado é o que transmito hoje para os meus alunos de Santana de Parnaíba e da região.
             </p>
           </div>
+          <div className="mt-10" style={{ maxWidth: "260px" }}>
+            <Image
+              src="/Personal%20Trainer%20Santana%20de%20Parna%C3%ADba.jpg"
+              alt="Personal Trainer Santana de Parnaíba"
+              title="Personal Trainer Santana de Parnaíba"
+              aria-label="Personal Trainer Santana de Parnaíba"
+              width={260}
+              height={462}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </section>
 
@@ -179,6 +193,19 @@ export default function PersonalTrainerSantanaDeParnaiba() {
               </div>
             ))}
           </div>
+          <div className="mt-10 ml-auto" style={{ maxWidth: "260px" }}>
+            <Image
+              src="/Treinador%20Santana%20de%20Parnaiba.jpg"
+              alt="Treinador Santana de Parnaiba"
+              title="Treinador Santana de Parnaiba"
+              aria-label="Treinador Santana de Parnaiba"
+              width={260}
+              height={462}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </section>
 
@@ -221,6 +248,19 @@ export default function PersonalTrainerSantanaDeParnaiba() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-10" style={{ maxWidth: "260px" }}>
+            <Image
+              src="/Personal%20Trainer%20Santana%20de%20Parna%C3%ADba%20SP.jpg"
+              alt="Personal Trainer Santana de Parnaíba SP"
+              title="Personal Trainer Santana de Parnaíba SP"
+              aria-label="Personal Trainer Santana de Parnaíba SP"
+              width={260}
+              height={462}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </section>
