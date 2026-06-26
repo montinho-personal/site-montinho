@@ -228,36 +228,33 @@ export default function PersonalTrainerAlphaville() {
           <p className="text-gray-400 font-light mb-10 leading-relaxed">
             Alphaville concentra um perfil de pessoa muito específico. Executivos, empreendedores, profissionais liberais, mães que conciliam filhos e carreira — todos com uma coisa em comum: tempo escasso e exigência alta. Trabalho com:
           </p>
-          <div className="grid sm:grid-cols-[1fr_auto] gap-10 items-start">
-            <ul className="space-y-4">
-              {[
-                "Quem quer emagrecer com método — sem dietas radicais que não sustentam",
-                "Quem busca hipertrofia real, não apenas volume aparente de treino",
-                "Quem voltou ao treino após anos parado e precisa reconstruir a base com segurança",
-                "Quem tem histórico de lesão e precisa de um protocolo que respeite essas limitações",
-                "Quem já treina mas chegou num platô onde parece que nada mais evolui",
-                "Quem nunca teve acompanhamento e quer fazer isso da forma certa desde o início",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-gray-300 font-light">
-                  <span className="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-white/40" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <div className="flex-shrink-0 mx-auto sm:mx-0 w-60 overflow-hidden">
-              <Image
-                src="/Personal%20Trainer%20Alphaville%20SP.jpg"
-                alt="Personal Trainer Alphaville SP"
-                title="Personal Trainer Alphaville SP"
-                aria-label="Personal Trainer Alphaville SP"
-                width={4320}
-                height={7680}
-                loading="lazy"
-                decoding="async"
-                sizes="240px"
-                className="w-full h-auto"
-              />
-            </div>
+          <ul className="space-y-4 mb-10">
+            {[
+              "Quem quer emagrecer com método — sem dietas radicais que não sustentam",
+              "Quem busca hipertrofia real, não apenas volume aparente de treino",
+              "Quem voltou ao treino após anos parado e precisa reconstruir a base com segurança",
+              "Quem tem histórico de lesão e precisa de um protocolo que respeite essas limitações",
+              "Quem já treina mas chegou num platô onde parece que nada mais evolui",
+              "Quem nunca teve acompanhamento e quer fazer isso da forma certa desde o início",
+            ].map((item, i) => (
+              <li key={i} className="flex items-start gap-3 text-gray-300 font-light">
+                <span className="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-white/40" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <div style={{ maxWidth: "280px" }}>
+            <Image
+              src="/Personal%20Trainer%20Alphaville%20SP.jpg"
+              alt="Personal Trainer Alphaville SP"
+              title="Personal Trainer Alphaville SP"
+              aria-label="Personal Trainer Alphaville SP"
+              width={280}
+              height={498}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </section>
