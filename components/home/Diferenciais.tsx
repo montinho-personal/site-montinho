@@ -29,7 +29,7 @@ const diferenciais = [
     ),
     title: "Acompanhamento Próximo",
     description:
-      "Não sou só quem monta o treino. Estou presente no dia a dia, respondendo dúvidas, ajustando o plano e celebrando cada vitória com você.",
+      "Meu trabalho vai muito além da prescrição do treino. Acompanho sua evolução de perto, ajusto a estratégia sempre que necessário e estou disponível para orientar você em cada etapa da jornada.",
   },
   {
     icon: (
