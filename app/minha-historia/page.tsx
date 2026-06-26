@@ -169,7 +169,7 @@ export default function MinhaHistoria() {
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Chegou um momento — eu tinha uns 22 anos — que algo quebrou
+                  Chegou um momento — eu tinha uns 29 anos — que algo quebrou
                   em mim. Não de forma dramática, mas de forma definitiva. Eu
                   estava cansado de tentar e falhar. Cansado de me odiar. Cansado
                   de ser o meu próprio inimigo.
@@ -233,7 +233,7 @@ export default function MinhaHistoria() {
                   Mas foi sustentável — e isso fez toda a diferença.
                 </p>
                 <p>
-                  Perdi mais de 20kg de gordura. Ganhei músculo. Mas mais do que
+                  Perdi mais de 40kg de gordura. Ganhei músculo. Mas mais do que
                   a mudança física, o que aconteceu dentro de mim foi mais
                   profundo: aprendi a respeitar meu corpo, a entender seus sinais,
                   a me alimentar sem culpa e a treinar com inteligência.
