@@ -32,6 +32,7 @@
 | Descansar Também Faz Crescer? | `descansar-tambem-faz-crescer` | Publicado |
 | Quanto Tempo Para Aparecer Resultado? | `quanto-tempo-para-aparecer-resultado-na-academia` | Publicado |
 | Como Sair do Platô da Musculação? | `como-sair-do-plato-da-musculacao` | Publicado |
+| Quanta Proteína por Dia Para Ganhar Massa Muscular? | `quanta-proteina-por-dia-para-ganhar-massa-muscular` | Publicado |
 
 ### 🔁 Cluster: Frequência e Planejamento de Treino
 **Pilar:** `quantos-dias-por-semana-treinar`
@@ -158,7 +159,7 @@
 | Tema | Palavra-chave | Cluster | Motivo |
 |------|--------------|---------|--------|
 | Periodização para hipertrofia | "periodização de treino" | Hipertrofia | Mencionada em vários artigos mas sem conteúdo dedicado |
-| Proteína na dieta | "quanta proteína por dia para ganhar massa" | Hipertrofia | Alta intenção, mencionada em todos os artigos de hipertrofia |
+| ~~Proteína na dieta~~ | ~~"quanta proteína por dia para ganhar massa"~~ | Hipertrofia | ✅ Publicado — `quanta-proteina-por-dia-para-ganhar-massa-muscular` |
 | Emagrecimento com musculação | "emagrecer fazendo musculação" | Emagrecimento | Conecta os dois clusters principais |
 | Personal trainer online | "personal trainer online como funciona" | Comercial | Alto potencial comercial |
 | Suplementação | "creatina para hipertrofia" | Hipertrofia | FAQ mencionado no art.6, sem artigo dedicado |
