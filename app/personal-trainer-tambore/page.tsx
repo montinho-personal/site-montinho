@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
@@ -130,6 +131,19 @@ export default function PersonalTrainerTambore() {
               Comecei na musculação pela mesma razão que muitos dos meus alunos hoje: insatisfação com o próprio corpo e uma longa sequência de métodos que prometiam muito e entregavam frustração. O que mudou foi quando parei de buscar atalho e passei a entender de fato como o corpo funciona. Essa virada foi o começo do meu trabalho como personal trainer — e é o que guia cada protocolo que monto até hoje.
             </p>
           </div>
+          <div className="mt-10" style={{ maxWidth: "220px" }}>
+            <Image
+              src="/Personal%20Trainer%20Tambor%C3%A9.jpg"
+              alt="Personal Trainer Tamboré"
+              title="Personal Trainer Tamboré"
+              aria-label="Personal Trainer Tamboré"
+              width={220}
+              height={476}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </section>
 
@@ -188,6 +202,19 @@ export default function PersonalTrainerTambore() {
               </div>
             ))}
           </div>
+          <div className="mt-10 relative w-full overflow-hidden" style={{ height: "380px" }}>
+            <Image
+              src="/Treinador%20tambor%C3%A9.jpg"
+              alt="Treinador tamboré"
+              title="Treinador tamboré"
+              aria-label="Treinador tamboré"
+              fill
+              loading="lazy"
+              decoding="async"
+              className="object-cover object-top"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+          </div>
         </div>
       </section>
 
@@ -224,6 +251,19 @@ export default function PersonalTrainerTambore() {
             </Link>
             .
           </p>
+          <div className="mt-10 ml-auto" style={{ maxWidth: "240px" }}>
+            <Image
+              src="/Personal%20Trainer%20Tambor%C3%A9%20%282%29.jpg"
+              alt="Personal Trainer Tamboré (2)"
+              title="Personal Trainer Tamboré (2)"
+              aria-label="Personal Trainer Tamboré (2)"
+              width={240}
+              height={427}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </section>
 
