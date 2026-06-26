@@ -6739,6 +6739,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><strong>Priorize a recuperação</strong> — sono e nutrição são mais importantes do que a ordem</li>
 </ul>
 
+<p>O <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">ACSM Position Stand sobre progressão em exercício de resistência</a> recomenda que o volume e a intensidade do treinamento aeróbico sejam controlados para não comprometer as adaptações de força — especialmente quando ambos são realizados no mesmo dia.</p>
+
+<p>Já o estudo de <a href="https://pubmed.ncbi.nlm.nih.gov/22450517/" target="_blank" rel="noopener noreferrer">Kreher e Schwartz (2012)</a> sobre síndrome do overtraining reforça a importância da gestão do volume total de treino: combinar cardio e musculação sem planejamento adequado é uma das vias mais comuns para o excesso de treinamento.</p>
+
 <h2>E se eu só puder fazer tudo na mesma sessão?</h2>
 
 <p>Para a maioria das pessoas que treina na academia após o trabalho, separar cardio e musculação em sessões diferentes não é viável. E tudo bem.</p>
@@ -7903,9 +7907,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>A ideia de que você pode perder gordura em uma região específica do corpo fazendo exercícios para aquela área é chamada de <strong>redução localizada</strong>. E ela não funciona.</p>
 
-<p>A razão é simples: quando o corpo mobiliza gordura para usar como energia, ele não retira do músculo que está trabalhando. A mobilização de gordura é sistêmica — acontece por todo o corpo, regulada por hormônios como adrenalina e glucagon.</p>
+<p>A razão é simples: quando o corpo mobiliza gordura para usar como energia, ele não retira do músculo que está trabalhando. A mobilização de gordura é sistêmica — acontece por todo o corpo, regulada por hormônios como adrenalina e glucagon. O estudo de <a href="https://pubmed.ncbi.nlm.nih.gov/7632212/" target="_blank" rel="noopener noreferrer">Leibel et al. (1995)</a> sobre redução do gasto energético durante o emagrecimento demonstra que o corpo regula o uso de gordura de forma central, não localizada.</p>
 
-<p>Estudos que analisaram a composição corporal de tenistas — que usam predominantemente um braço — mostram que a gordura subcutânea nos dois braços é praticamente idêntica, apesar de um braço ser muito mais musculoso e trabalhado.</p>
+<p>Estudos que analisaram a composição corporal de tenistas — que usam predominantemente um braço — mostram que a gordura subcutânea nos dois braços é praticamente idêntica, apesar de um braço ser muito mais musculoso e trabalhado. O estudo de <a href="https://pubmed.ncbi.nlm.nih.gov/27433992/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2016)</a> sobre resposta dose-resposta ao treinamento de resistência confirma que o estímulo muscular local não determina de onde vem a gordura utilizada como combustível.</p>
 
 <p>Fazer 500 abdominais por dia vai fortalecer o core, melhorar a postura e até deixar os músculos abdominais mais desenvolvidos. Mas não vai eliminar a gordura que está sobre eles.</p>
 
