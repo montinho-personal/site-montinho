@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 
 export const metadata: Metadata = {
   title: "Personal Trainer em Alphaville | Montinho Personal Trainer",
@@ -211,6 +212,22 @@ export default function PersonalTrainerAlphaville() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* Video */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            className="text-3xl font-bold text-white mb-6"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            5 Dicas para acabar com dores no lombar
+          </h2>
+          <p className="text-gray-400 leading-relaxed mb-8">
+            Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
+          </p>
+          <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
         </div>
       </section>
 
