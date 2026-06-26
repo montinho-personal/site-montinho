@@ -37,6 +37,17 @@
 | Os 10 Maiores Erros de Quem Quer Ganhar Massa | `erros-de-quem-quer-ganhar-massa-muscular` | Publicado |
 | Como Montar um Treino de Hipertrofia | `como-montar-treino-de-hipertrofia` | Publicado |
 | Creatina Para Hipertrofia | `creatina-para-hipertrofia` | Publicado |
+| Quantas Séries Para Hipertrofia? | `quantas-series-para-hipertrofia` | Publicado |
+| Quantas Repetições Para Hipertrofia? | `quantas-repeticoes-para-hipertrofia` | Publicado |
+| Volume de Treino Ideal | `volume-de-treino-ideal` | Publicado |
+| Progressão de Carga | `progressao-de-carga` | Publicado |
+| Treinar Até a Falha | `treinar-ate-a-falha` | Publicado |
+| Intervalo de Descanso Entre Séries | `descanso-entre-series` | Publicado |
+| Bulking ou Cutting? | `bulking-ou-cutting` | Publicado |
+| Déficit Calórico e Hipertrofia | `deficit-calorico-e-hipertrofia` | Publicado |
+| Hipertrofia Para Iniciantes | `hipertrofia-para-iniciantes` | Publicado |
+| Hipertrofia Feminina | `hipertrofia-feminina` | Publicado |
+| Hipertrofia Após os 40 Anos | `hipertrofia-apos-os-40-anos` | Publicado |
 
 ### 🔁 Cluster: Frequência e Planejamento de Treino
 **Pilar:** `quantos-dias-por-semana-treinar`
@@ -51,6 +62,7 @@
 | Quanto Tempo Para Aparecer Resultado? | `quanto-tempo-para-aparecer-resultado-na-academia` | Publicado |
 | Periodização de Treino | `periodizacao-de-treino` | Publicado |
 | Personal Trainer Online: Como Funciona | `personal-trainer-online-como-funciona` | Publicado |
+| Frequência de Treino Para Hipertrofia | `frequencia-de-treino` | Publicado |
 
 ### 🔥 Cluster: Emagrecimento
 **Pilar:** `por-que-voce-nao-consegue-emagrecer`
@@ -173,8 +185,8 @@
 ### Média Prioridade
 | Tema | Palavra-chave | Cluster |
 |------|--------------|---------|
-| Treino feminino | "musculação para mulheres" | Treinamento |
-| Treino após os 40 | "treinar depois dos 40 anos" | Saúde |
+| ~~Treino feminino~~ | ~~"musculação para mulheres"~~ | Hipertrofia | ✅ Publicado — `hipertrofia-feminina` |
+| ~~Treino após os 40~~ | ~~"treinar depois dos 40 anos"~~ | Saúde | ✅ Publicado — `hipertrofia-apos-os-40-anos` |
 | Sono e emagrecimento | "dormir mal engorda" | Hábitos |
 | DOMS (dor muscular) | "dor muscular depois do treino" | Lesões |
 | Aquecimento | "como aquecer antes de treinar" | Treinamento |
