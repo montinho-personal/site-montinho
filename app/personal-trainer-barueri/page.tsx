@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
@@ -130,6 +131,19 @@ export default function PersonalTrainerBarueri() {
               Minha trajetória na musculação nasceu de experiência própria: anos convivendo com o excesso de peso, tentativas frustradas com protocolos genéricos e, por fim, a decisão de estudar de verdade o que a ciência diz sobre composição corporal. A transformação que vivi no meu próprio corpo é o fundamento de tudo que ofereço hoje — não uma teoria que aprendi num curso, mas algo que vivi e que sei replicar com método.
             </p>
           </div>
+          <div className="mt-10 relative w-full overflow-hidden" style={{ height: "400px" }}>
+            <Image
+              src="/Personal%20Trainer%20Barueri.jpg"
+              alt="Personal Trainer Barueri"
+              title="Personal Trainer Barueri"
+              aria-label="Personal Trainer Barueri"
+              fill
+              loading="lazy"
+              decoding="async"
+              className="object-cover object-top"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+          </div>
         </div>
       </section>
 
@@ -177,6 +191,19 @@ export default function PersonalTrainerBarueri() {
                 <p className="text-gray-400 leading-relaxed font-light text-sm">{item.text}</p>
               </div>
             ))}
+          </div>
+          <div className="mt-10" style={{ maxWidth: "280px" }}>
+            <Image
+              src="/Personal%20Trainer%20Barueri%20SP.jpg"
+              alt="Personal Trainer Barueri SP"
+              title="Personal Trainer Barueri SP"
+              aria-label="Personal Trainer Barueri SP"
+              width={280}
+              height={497}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </section>
