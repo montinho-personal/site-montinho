@@ -88,6 +88,21 @@
 |--------|------|--------|
 | ⭐ Pilar — Como Prevenir Lesões no Treino | `como-prevenir-lesoes-no-treino` | Publicado |
 
+### 💊 Cluster: Retatrutida e Composição Corporal
+**Sem pilar único — cluster temático**
+
+| Artigo | Slug | Status |
+|--------|------|--------|
+| Como Evitar Perder Massa Muscular Usando Retatrutida | `como-evitar-perder-massa-muscular-retatrutida` | Publicado |
+| Melhor Treino Para Quem Usa Retatrutida | `melhor-treino-para-quem-usa-retatrutida` | Publicado |
+| Musculação Durante o Uso de Retatrutida | `musculacao-durante-uso-de-retatrutida` | Publicado |
+| Retatrutida Faz Perder Músculos? | `retatrutida-faz-perder-musculos` | Publicado |
+| Quanto de Proteína Consumir Usando Retatrutida | `proteina-para-quem-usa-retatrutida` | Publicado |
+| Creatina Para Quem Usa Retatrutida | `creatina-para-quem-usa-retatrutida` | Publicado |
+| Cardio ou Musculação Usando Retatrutida? | `cardio-ou-musculacao-retatrutida` | Publicado |
+| Como Potencializar os Resultados da Retatrutida | `como-potencializar-resultados-retatrutida` | Publicado |
+| Como Evitar o Efeito Sanfona Após Emagrecer | `como-evitar-efeito-sanfona` | Publicado |
+
 ### 💉 Cluster: Mounjaro / GLP-1 e Composição Corporal
 **Sem pilar único — cluster temático**
 
