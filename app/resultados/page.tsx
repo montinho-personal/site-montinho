@@ -17,6 +17,7 @@ interface ResultadoItem {
   modality: string;
   photo?: string;
   objectPosition?: string;
+  photoAspect?: string;
   description: string;
   quote: string;
 }
@@ -78,6 +79,7 @@ const resultados: ResultadoItem[] = [
     modality: "Modelo Híbrido",
     photo: "/antes-depois-montinho-personal-trainer-alphaville.jpg",
     objectPosition: "top",
+    photoAspect: "aspect-[3/4]",
     description:
       "Durante anos, Bruna viveu entre o entusiasmo de começar e a frustração de recomeçar. O efeito sanfona parecia não ter fim. Quando me procurou, construímos um plano pensado para a vida que ela realmente levava. Aos poucos, a constância substituiu a culpa, e o resultado deixou de ser temporário para se tornar um novo estilo de vida.",
     quote:
@@ -165,7 +167,7 @@ export default function Resultados() {
                 className="border border-white/10 group hover:border-white/30 transition-colors duration-300"
               >
                 {/* Image */}
-                <div className="aspect-[4/3] bg-gray-900 overflow-hidden">
+                <div className={`${item.photoAspect ?? "aspect-[4/3]"} bg-gray-900 overflow-hidden`}>
                   {item.photo ? (
                     <Image
                       src={item.photo}
