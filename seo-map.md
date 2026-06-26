@@ -102,6 +102,17 @@
 | Cardio ou Musculação Usando Retatrutida? | `cardio-ou-musculacao-retatrutida` | Publicado |
 | Como Potencializar os Resultados da Retatrutida | `como-potencializar-resultados-retatrutida` | Publicado |
 | Como Evitar o Efeito Sanfona Após Emagrecer | `como-evitar-efeito-sanfona` | Publicado |
+| Posso Treinar Todos os Dias Usando Retatrutida? | `posso-treinar-todos-os-dias-retatrutida` | Publicado |
+| Posso Fazer HIIT Usando Retatrutida? | `hiit-usando-retatrutida` | Publicado |
+| Posso Fazer Musculação em Jejum Usando Retatrutida? | `musculacao-em-jejum-retatrutida` | Publicado |
+| Como Evitar Fraqueza Durante os Treinos Usando Retatrutida | `fraqueza-durante-treino-retatrutida` | Publicado |
+| Como Montar um Treino Usando Retatrutida | `como-montar-treino-retatrutida` | Publicado |
+| Retatrutida ou Mounjaro: Quais as Diferenças? | `retatrutida-ou-mounjaro` | Publicado |
+| Retatrutida ou Ozempic: Quais as Diferenças? | `retatrutida-ou-ozempic` | Publicado |
+| Retatrutida ou Wegovy: Quais as Diferenças? | `retatrutida-ou-wegovy` | Publicado |
+| Retatrutida ou Zepbound: Quais as Diferenças? | `retatrutida-ou-zepbound` | Publicado |
+| Retatrutida Emagrece Mais que Outros Medicamentos? | `retatrutida-emagrece-mais` | Publicado |
+| Qual Medicamento Para Emagrecer Preserva Melhor a Massa Muscular? | `qual-medicamento-preserva-massa-muscular` | Publicado |
 
 ### 💉 Cluster: Mounjaro / GLP-1 e Composição Corporal
 **Sem pilar único — cluster temático**
