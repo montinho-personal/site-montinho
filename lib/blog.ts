@@ -100,7 +100,7 @@ export const blogPosts: BlogPost[] = [
   <li>Você quebra a dieta e recupera tudo — mais um pouco</li>
 </ol>
 
-<p>Isso não é fraqueza. É biologia. Seu corpo está fazendo exatamente o que foi programado para fazer durante milênios de escassez alimentar.</p>
+<p>Isso não é fraqueza. É biologia. Seu corpo está fazendo exatamente o que foi programado para fazer durante milênios de escassez alimentar. E além da biologia do emagrecimento, existem <a href="/blog/habitos-que-sabotam-seu-emagrecimento">hábitos cotidianos que sabotam o processo sem que você perceba</a> — mesmo quando treino e dieta parecem estar certos.</p>
 
 <h2>Como seu metabolismo reage à restrição calórica extrema</h2>
 
@@ -205,15 +205,15 @@ export const blogPosts: BlogPost[] = [
 
 <p>Um dos maiores mitos no mundo fitness é que mais treino significa mais resultado. Na prática, acontece o oposto: volume excessivo sem recuperação adequada leva à estagnação, a lesões e até à perda de massa muscular — fenômeno chamado overtraining.</p>
 
-<p>A qualidade do treino — execução, progressão de carga e periodização — importa muito mais do que o número de horas na academia.</p>
+<p>A qualidade do treino — execução, progressão de carga e periodização — importa muito mais do que o número de horas na academia. E errar nessas variáveis tem consequências: além de travar o progresso, <a href="/blog/erros-comuns-no-treino-de-musculacao">os erros mais comuns na musculação</a> acumulam ao longo do tempo sem que a maioria perceba.</p>
 
 <h2>Os 7 erros que estão travando seus resultados</h2>
 
 <h3>1. Não aplicar progressão de carga</h3>
-<p>Se você faz os mesmos exercícios com o mesmo peso há meses, seu corpo não tem motivo para mudar. O princípio da sobrecarga progressiva é a base da hipertrofia: você precisa desafiar continuamente seus músculos para estimular adaptação. As <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">diretrizes do American College of Sports Medicine para progressão em treinamento resistido</a> apontam que aumentar carga, volume, densidade ou reduzir o intervalo de descanso são formas válidas de progredir.</p>
+<p>Se você faz os mesmos exercícios com o mesmo peso há meses, seu corpo não tem motivo para mudar. O princípio da sobrecarga progressiva é a base da <a href="/blog/como-ganhar-massa-muscular">hipertrofia muscular</a>: você precisa desafiar continuamente seus músculos para estimular adaptação. As <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">diretrizes do American College of Sports Medicine para progressão em treinamento resistido</a> apontam que aumentar carga, volume, densidade ou reduzir o intervalo de descanso são formas válidas de progredir.</p>
 
 <h3>2. Sacrificar técnica pelo ego</h3>
-<p>Pegar peso demais com técnica ruim não constrói músculo — constrói lesão. Vi incontáveis pessoas se machucarem por não aceitar começar com carga menor e aprender o movimento correto. O ego cobra caro: semanas ou meses de afastamento por uma lesão evitável.</p>
+<p>Pegar peso demais com técnica ruim não constrói músculo — constrói lesão. Vi incontáveis pessoas se machucarem por não aceitar começar com carga menor e aprender o movimento correto. O ego cobra caro: semanas ou meses de afastamento por uma lesão evitável. Se você quer entender como evitar esse caminho, veja <a href="/blog/como-prevenir-lesoes-no-treino">como prevenir lesões na musculação e treinar por décadas sem dor</a>.</p>
 
 <h3>3. Subestimar a recuperação</h3>
 <p>Existe uma crença muito difundida de que mais treino sempre equivale a mais resultado. Não equivale. Na academia você aplica o estímulo. É fora dela — e principalmente durante o sono — que o corpo processa esse estímulo e constrói a adaptação. Quem dorme mal, treina todo dia sem planejar o descanso ou vive com o nível de estresse no teto está limitando o próprio progresso, independentemente da qualidade do treino.</p>
@@ -310,7 +310,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Existe a lesão aguda — aquela que acontece de repente com um estalo ou dor intensa durante o esforço. E existe a lesão crônica — aquela que vai se desenvolvendo silenciosamente por meses de má postura, sobrecarga errada e falta de mobilidade.</p>
 
-<p>A segunda é muito mais comum e muito mais traiçoeira. Você treina sentindo um desconforto que vai aumentando gradualmente, até que um dia não consegue mais treinar. Tendinites, bursites, dores lombares crônicas — todos são exemplos de lesões que se instalam progressivamente e que uma boa orientação profissional evita.</p>
+<p>A segunda é muito mais comum e muito mais traiçoeira. Você treina sentindo um desconforto que vai aumentando gradualmente, até que um dia não consegue mais treinar. Tendinites, bursites, dores lombares crônicas — todos são exemplos de lesões que se instalam progressivamente e que uma boa orientação profissional evita. Na maioria dos casos, essas lesões são consequência direta de <a href="/blog/erros-comuns-no-treino-de-musculacao">erros comuns na musculação</a> que se repetem semana após semana sem correção.</p>
 
 <h2>Os princípios da longevidade no treino</h2>
 
@@ -324,7 +324,7 @@ export const blogPosts: BlogPost[] = [
 <p>O corpo precisa de tempo para se adaptar a novas cargas. Aumentar peso demais, rápido demais, é a receita mais garantida para uma lesão. Paciência e progressão gradual — respeitando os <a href="https://pubmed.ncbi.nlm.nih.gov/10449017/" target="_blank" rel="noopener noreferrer">princípios de adaptação ao treinamento resistido descritos por Kraemer e Fleck</a> — não são sinais de fraqueza. São a estratégia de quem quer resultados sustentáveis por décadas.</p>
 
 <h3>Recuperação ativa entre os treinos</h3>
-<p>Dias de descanso não precisam ser dias completamente sem movimento. Caminhada leve, alongamento, trabalho de mobilidade e técnicas de recuperação como contraste quente-frio aceleram a recuperação e previnem lesões ao manter o fluxo sanguíneo e reduzir a rigidez muscular e articular.</p>
+<p>Dias de descanso não precisam ser dias completamente sem movimento. Caminhada leve, alongamento, trabalho de mobilidade e técnicas de recuperação como contraste quente-frio aceleram a recuperação e previnem lesões ao manter o fluxo sanguíneo e reduzir a rigidez muscular e articular. E ao contrário do que muitos acreditam, <a href="/blog/treinar-todos-os-dias-faz-mal">treinar todos os dias pode ser prejudicial</a> exatamente quando essa recuperação não é respeitada.</p>
 
 <h3>Aquecimento específico antes de cada sessão</h3>
 <p>Entrar direto no exercício pesado sem preparação prévia é como acelerar um carro frio a fundo imediatamente. O tecido muscular frio, o sistema nervoso ainda em baixa ativação e as articulações sem lubrificação adequada formam a combinação ideal para uma lesão aguda. A <a href="https://pubmed.ncbi.nlm.nih.gov/20097734/" target="_blank" rel="noopener noreferrer">evidência científica sobre o efeito do aquecimento na redução de lesões e na melhora de desempenho</a> é consistente: dez minutos de ativação específica — movimentos que reproduzem o padrão do que você vai treinar, progressivamente mais intensos — mudam completamente esse cenário. Não é ritual, é fisiologia.</p>
@@ -414,10 +414,10 @@ export const blogPosts: BlogPost[] = [
 <h2>Os 5 hábitos que estão sabotando seu progresso</h2>
 
 <h3>1. Dormir pouco ou mal</h3>
-<p>Poucas pessoas associam o número de horas dormidas com a velocidade do emagrecimento — mas a relação é direta e documentada. Quando o sono é insuficiente ou fragmentado, o equilíbrio hormonal muda: o apetite aumenta (especialmente por alimentos de alta caloria), a saciedade chega mais devagar e o acúmulo de gordura abdominal é favorecido. Pesquisa de <a href="https://pubmed.ncbi.nlm.nih.gov/11120726/" target="_blank" rel="noopener noreferrer">Van Cauter et al. sobre a relação entre privação de sono e regulação hormonal</a> demonstrou como a restrição de sono altera diretamente os hormônios que controlam fome e saciedade. Além disso, quem dorme mal acorda sem energia para treinar e ainda compromete a recuperação muscular do dia anterior. Um problema gera o outro numa espiral que vai ficando cada vez mais difícil de quebrar.</p>
+<p>Poucas pessoas associam o número de horas dormidas com a velocidade do emagrecimento — mas a relação é direta e documentada. Quando o sono é insuficiente ou fragmentado, o equilíbrio hormonal muda: o apetite aumenta (especialmente por alimentos de alta caloria), a saciedade chega mais devagar e o acúmulo de gordura abdominal é favorecido. É um dos fatores que explica <a href="/blog/por-que-voce-nao-consegue-emagrecer">por que tantas pessoas não conseguem emagrecer</a> mesmo fazendo dieta e treino. Pesquisa de <a href="https://pubmed.ncbi.nlm.nih.gov/11120726/" target="_blank" rel="noopener noreferrer">Van Cauter et al. sobre a relação entre privação de sono e regulação hormonal</a> demonstrou como a restrição de sono altera diretamente os hormônios que controlam fome e saciedade. Além disso, quem dorme mal acorda sem energia para treinar e ainda compromete a recuperação muscular do dia anterior. Um problema gera o outro numa espiral que vai ficando cada vez mais difícil de quebrar.</p>
 
 <h3>2. Estresse crônico</h3>
-<p>O cortisol elevado de forma persistente é um dos maiores sabotadores invisíveis do emagrecimento. Ele favorece o acúmulo de gordura visceral, aumenta a compulsão alimentar e dificulta a recuperação. Estudo de <a href="https://pubmed.ncbi.nlm.nih.gov/26399868/" target="_blank" rel="noopener noreferrer">Hall et al. sobre adaptação metabólica em longo prazo</a> evidencia como fatores hormonais, incluindo o cortisol, impactam a composição corporal independentemente do déficit calórico. Estratégias de gerenciamento de estresse — meditação, atividades ao ar livre, desconexão digital — não são frescura. São parte do protocolo de transformação.</p>
+<p>O cortisol elevado de forma persistente é um dos maiores sabotadores invisíveis do emagrecimento. Ele favorece o acúmulo de gordura visceral, aumenta a compulsão alimentar e dificulta a recuperação. O estresse crônico também aumenta o risco de lesões no treino, já que compromete a concentração e a qualidade do movimento — mais um motivo para entender <a href="/blog/como-prevenir-lesoes-no-treino">como prevenir lesões na musculação</a>. Estudo de <a href="https://pubmed.ncbi.nlm.nih.gov/26399868/" target="_blank" rel="noopener noreferrer">Hall et al. sobre adaptação metabólica em longo prazo</a> evidencia como fatores hormonais, incluindo o cortisol, impactam a composição corporal independentemente do déficit calórico. Estratégias de gerenciamento de estresse — meditação, atividades ao ar livre, desconexão digital — não são frescura. São parte do protocolo de transformação.</p>
 
 <h3>3. Beber pouca água</h3>
 <p>Desidratação leve já prejudica o metabolismo basal e pode ser confundida com fome — levando a um consumo calórico desnecessário. Beber água adequadamente é uma das estratégias mais simples, mais baratas e mais subestimadas para apoiar o emagrecimento. A recomendação geral é de 30 a 35 ml por kg de peso corporal por dia.</p>
@@ -561,7 +561,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Frequência de treino por semana</h3>
 
-<p>Treinar cada grupo muscular <strong>2 vezes por semana</strong> tende a ser superior a treinar apenas 1 vez por semana, segundo a maioria dos estudos sobre frequência e hipertrofia, incluindo <a href="https://pubmed.ncbi.nlm.nih.gov/28319102/" target="_blank" rel="noopener noreferrer">pesquisa de Schoenfeld et al. sobre frequência de treino e hipertrofia de fibras musculares</a>. Isso não significa dobrar o volume — significa dividir o mesmo volume em mais sessões, o que melhora a síntese proteica ao longo da semana.</p>
+<p>Treinar cada grupo muscular <strong>2 vezes por semana</strong> tende a ser superior a treinar apenas 1 vez por semana, segundo a maioria dos estudos sobre frequência e hipertrofia, incluindo <a href="https://pubmed.ncbi.nlm.nih.gov/28319102/" target="_blank" rel="noopener noreferrer">pesquisa de Schoenfeld et al. sobre frequência de treino e hipertrofia de fibras musculares</a>. Isso não significa dobrar o volume — significa dividir o mesmo volume em mais sessões, o que melhora a síntese proteica ao longo da semana. Se você tem dúvidas sobre <a href="/blog/quantos-dias-por-semana-treinar">quantos dias por semana treinar para o seu objetivo</a>, esse é o ponto de partida certo.</p>
 
 <p>Para quem treina 3 a 4 vezes por semana, divisões upper/lower ou push/pull/legs permitem essa frequência de 2x por músculo com facilidade.</p>
 
@@ -578,7 +578,7 @@ export const blogPosts: BlogPost[] = [
   <li><strong>Avançados</strong> — décimos de kg por mês, o que não é pouco em termos visuais</li>
 </ul>
 
-<p>Quem promete "5 kg de massa muscular em 4 semanas" está mentindo. Crescimento muscular real é um processo gradual — e é exatamente por isso que consistência ao longo de meses e anos é o que separa quem transforma o corpo de quem fica estagnado.</p>
+<p>Quem promete "5 kg de massa muscular em 4 semanas" está mentindo. Crescimento muscular real é um processo gradual — e é exatamente por isso que consistência ao longo de meses e anos é o que separa quem transforma o corpo de quem fica estagnado. Para expectativas realistas com dados concretos, veja <a href="/blog/quanto-tempo-para-ganhar-massa-muscular">quanto tempo demora para ganhar massa muscular de verdade</a>.</p>
 
 <h2>Os erros que travam a hipertrofia mesmo em quem se dedica</h2>
 
@@ -800,7 +800,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Há uma ironia no mundo fitness que poucos percebem: a pessoa que dorme mal para "ter mais tempo de treinar" está ativamente destruindo parte do que construiu na academia.</p>
 
-<p>O tecido muscular não tem como crescer durante o treino — ali está sendo literalmente danificado. A construção acontece nas horas que se seguem, com pico durante o sono profundo. Cortar o sono para encaixar mais uma sessão não é sacrifício disciplinado, é boicotar o próprio processo. Qualidade de recuperação não é opcional quando o objetivo é hipertrofia — ela é tão determinante quanto o treino em si.</p>
+<p>O tecido muscular não tem como crescer durante o treino — ali está sendo literalmente danificado. A construção acontece nas horas que se seguem, com pico durante o sono profundo. Cortar o sono para encaixar mais uma sessão não é sacrifício disciplinado, é boicotar o próprio processo. Qualidade de recuperação não é opcional quando o objetivo é hipertrofia — ela é tão determinante quanto o treino em si. Entenda a fisiologia completa em <a href="/blog/descansar-tambem-faz-crescer">por que descansar também faz crescer</a>.</p>
 
 <h3>Volume, intensidade, frequência e progressão de carga</h3>
 
