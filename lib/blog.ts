@@ -105,20 +105,20 @@ export const blogPosts: BlogPost[] = [
 <h2>Como seu metabolismo reage à restrição calórica extrema</h2>
 
 <h3>Metabolismo adaptativo</h3>
-<p>Comer muito pouco faz o metabolismo basal cair — fenômeno conhecido como adaptação metabólica. Você passa a queimar menos calorias realizando as mesmas atividades. E quanto mais tempo mantém a restrição severa, maior é essa adaptação. É por isso que, com o tempo, a mesma dieta que antes funcionava deixa de surtir efeito.</p>
+<p>Comer muito pouco faz o metabolismo basal cair — fenômeno conhecido como <a href="https://pubmed.ncbi.nlm.nih.gov/23404923/" target="_blank" rel="noopener noreferrer">adaptação metabólica ou termogênese adaptativa</a>. Você passa a queimar menos calorias realizando as mesmas atividades. E quanto mais tempo mantém a restrição severa, maior é essa adaptação. É por isso que, com o tempo, a mesma dieta que antes funcionava deixa de surtir efeito.</p>
 
 <h3>Perda de massa muscular</h3>
 <p>Sem proteína suficiente e estímulo de força adequado, o corpo usa o tecido muscular como combustível durante o emagrecimento. Menos massa muscular significa taxa metabólica mais baixa — o que torna cada novo ciclo de dieta progressivamente mais difícil.</p>
 
 <h3>Resposta hormonal à restrição</h3>
-<p>Quando você come pouco por tempo demais, o organismo aciona mecanismos de sobrevivência que aumentam ativamente o apetite e reduzem a saciedade. Dois hormônios são centrais nesse processo: a grelina sobe (você sente mais fome) e a leptina cai (você demora mais para se sentir satisfeito). A compulsão que aparece dias depois de uma dieta restritiva não é falta de força de vontade — é o seu sistema hormonal funcionando exatamente como foi programado para funcionar.</p>
+<p>Quando você come pouco por tempo demais, o organismo aciona mecanismos de sobrevivência que aumentam ativamente o apetite e reduzem a saciedade. Dois hormônios são centrais nesse processo: a grelina sobe (você sente mais fome) e a leptina cai (você demora mais para se sentir satisfeito). A compulsão que aparece dias depois de uma dieta restritiva não é falta de força de vontade — é o seu sistema hormonal funcionando exatamente como foi programado para funcionar. Pesquisa clássica de <a href="https://pubmed.ncbi.nlm.nih.gov/7632212/" target="_blank" rel="noopener noreferrer">Leibel et al. demonstrou que o organismo reduz ativamente o gasto energético em resposta à perda de peso</a>, dificultando cada ciclo subsequente de emagrecimento.</p>
 
 <h2>O que realmente funciona para emagrecer com saúde</h2>
 
 <p>Emagrecimento sustentável exige uma abordagem estruturada, baseada em evidências — não em restrição extrema:</p>
 <ul>
   <li><strong>Déficit calórico moderado</strong> — suficiente para perder gordura, pequeno o bastante para não disparar a resposta de sobrevivência (300 a 500 kcal/dia)</li>
-  <li><strong>Proteína adequada</strong> (1,6 a 2,2 g/kg) — preserva a massa muscular e aumenta a saciedade</li>
+  <li><strong>Proteína adequada</strong> (1,6 a 2,2 g/kg) — preserva a massa muscular e aumenta a saciedade, conforme confirmado em <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">meta-análise de Morton et al. com 49 estudos e 1.800 participantes</a></li>
   <li><strong>Treino de força</strong> — mantém e aumenta o metabolismo de repouso durante o processo</li>
   <li><strong>Consistência ao longo do tempo</strong> — não perfeição, mas constância semana após semana</li>
   <li><strong>Acompanhamento profissional</strong> — ajustes contínuos conforme o corpo responde e as adaptações acontecem</li>
@@ -210,7 +210,7 @@ export const blogPosts: BlogPost[] = [
 <h2>Os 7 erros que estão travando seus resultados</h2>
 
 <h3>1. Não aplicar progressão de carga</h3>
-<p>Se você faz os mesmos exercícios com o mesmo peso há meses, seu corpo não tem motivo para mudar. O princípio da sobrecarga progressiva é a base da hipertrofia: você precisa desafiar continuamente seus músculos para estimular adaptação. Aumentar carga, volume, densidade ou reduzir o intervalo de descanso são formas de progredir.</p>
+<p>Se você faz os mesmos exercícios com o mesmo peso há meses, seu corpo não tem motivo para mudar. O princípio da sobrecarga progressiva é a base da hipertrofia: você precisa desafiar continuamente seus músculos para estimular adaptação. As <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">diretrizes do American College of Sports Medicine para progressão em treinamento resistido</a> apontam que aumentar carga, volume, densidade ou reduzir o intervalo de descanso são formas válidas de progredir.</p>
 
 <h3>2. Sacrificar técnica pelo ego</h3>
 <p>Pegar peso demais com técnica ruim não constrói músculo — constrói lesão. Vi incontáveis pessoas se machucarem por não aceitar começar com carga menor e aprender o movimento correto. O ego cobra caro: semanas ou meses de afastamento por uma lesão evitável.</p>
@@ -225,7 +225,7 @@ export const blogPosts: BlogPost[] = [
 <p>Você pode treinar perfeitamente e não ver resultado se a nutrição não estiver alinhada. Proteína insuficiente, calorias muito baixas ou muito altas — tudo isso impacta diretamente a composição corporal. Treino e alimentação são inseparáveis.</p>
 
 <h3>6. Pular o aquecimento</h3>
-<p>O aquecimento prepara o sistema nervoso central, eleva a temperatura muscular e previne lesões agudas. Cinco a dez minutos de ativação específica antes do treino fazem diferença enorme no desempenho e na longevidade no esporte.</p>
+<p>O aquecimento prepara o sistema nervoso central, eleva a temperatura muscular e previne lesões agudas. <a href="https://pubmed.ncbi.nlm.nih.gov/20097734/" target="_blank" rel="noopener noreferrer">Revisão de Fradkin et al. sobre os efeitos do aquecimento no desempenho e na prevenção de lesões</a> evidencia que cinco a dez minutos de ativação específica antes do treino fazem diferença enorme no desempenho e na longevidade no esporte.</p>
 
 <h3>7. Desistir cedo demais</h3>
 <p>Resultados reais levam tempo. A maioria das pessoas desiste exatamente quando está prestes a ver a transformação acontecer. Consistência por meses — não semanas — é o que separa quem transforma o corpo de quem fica eternamente estagnado.</p>
@@ -321,13 +321,13 @@ export const blogPosts: BlogPost[] = [
 <p>Treinar com desconforto muscular é esperado e faz parte do processo. Treinar com dor articular é um erro que vai custar caro mais adiante. O problema é que muita gente não sabe distinguir um do outro — e isso leva a ignorar sinais que estão dizendo claramente "para". Quando um movimento produz dor pontual numa articulação, durante ou depois do treino, isso não é sinal de que você está se esforçando bem. É sinal de que algo está errado e precisa ser avaliado antes de virar uma lesão estrutural.</p>
 
 <h3>Progressão gradual de carga</h3>
-<p>O corpo precisa de tempo para se adaptar a novas cargas. Aumentar peso demais, rápido demais, é a receita mais garantida para uma lesão. Paciência e progressão gradual — respeitando o princípio da adaptação progressiva — não são sinais de fraqueza. São a estratégia de quem quer resultados sustentáveis por décadas.</p>
+<p>O corpo precisa de tempo para se adaptar a novas cargas. Aumentar peso demais, rápido demais, é a receita mais garantida para uma lesão. Paciência e progressão gradual — respeitando os <a href="https://pubmed.ncbi.nlm.nih.gov/10449017/" target="_blank" rel="noopener noreferrer">princípios de adaptação ao treinamento resistido descritos por Kraemer e Fleck</a> — não são sinais de fraqueza. São a estratégia de quem quer resultados sustentáveis por décadas.</p>
 
 <h3>Recuperação ativa entre os treinos</h3>
 <p>Dias de descanso não precisam ser dias completamente sem movimento. Caminhada leve, alongamento, trabalho de mobilidade e técnicas de recuperação como contraste quente-frio aceleram a recuperação e previnem lesões ao manter o fluxo sanguíneo e reduzir a rigidez muscular e articular.</p>
 
 <h3>Aquecimento específico antes de cada sessão</h3>
-<p>Entrar direto no exercício pesado sem preparação prévia é como acelerar um carro frio a fundo imediatamente. O tecido muscular frio, o sistema nervoso ainda em baixa ativação e as articulações sem lubrificação adequada formam a combinação ideal para uma lesão aguda. Dez minutos de ativação específica — movimentos que reproduzem o padrão do que você vai treinar, progressivamente mais intensos — mudam completamente esse cenário. Não é ritual, é fisiologia.</p>
+<p>Entrar direto no exercício pesado sem preparação prévia é como acelerar um carro frio a fundo imediatamente. O tecido muscular frio, o sistema nervoso ainda em baixa ativação e as articulações sem lubrificação adequada formam a combinação ideal para uma lesão aguda. A <a href="https://pubmed.ncbi.nlm.nih.gov/20097734/" target="_blank" rel="noopener noreferrer">evidência científica sobre o efeito do aquecimento na redução de lesões e na melhora de desempenho</a> é consistente: dez minutos de ativação específica — movimentos que reproduzem o padrão do que você vai treinar, progressivamente mais intensos — mudam completamente esse cenário. Não é ritual, é fisiologia.</p>
 
 <h2>O papel do Personal Trainer na prevenção de lesões</h2>
 
@@ -414,10 +414,10 @@ export const blogPosts: BlogPost[] = [
 <h2>Os 5 hábitos que estão sabotando seu progresso</h2>
 
 <h3>1. Dormir pouco ou mal</h3>
-<p>Poucas pessoas associam o número de horas dormidas com a velocidade do emagrecimento — mas a relação é direta e documentada. Quando o sono é insuficiente ou fragmentado, o equilíbrio hormonal muda: o apetite aumenta (especialmente por alimentos de alta caloria), a saciedade chega mais devagar e o acúmulo de gordura abdominal é favorecido. Além disso, quem dorme mal acorda sem energia para treinar e ainda compromete a recuperação muscular do dia anterior. Um problema gera o outro numa espiral que vai ficando cada vez mais difícil de quebrar.</p>
+<p>Poucas pessoas associam o número de horas dormidas com a velocidade do emagrecimento — mas a relação é direta e documentada. Quando o sono é insuficiente ou fragmentado, o equilíbrio hormonal muda: o apetite aumenta (especialmente por alimentos de alta caloria), a saciedade chega mais devagar e o acúmulo de gordura abdominal é favorecido. Pesquisa de <a href="https://pubmed.ncbi.nlm.nih.gov/11120726/" target="_blank" rel="noopener noreferrer">Van Cauter et al. sobre a relação entre privação de sono e regulação hormonal</a> demonstrou como a restrição de sono altera diretamente os hormônios que controlam fome e saciedade. Além disso, quem dorme mal acorda sem energia para treinar e ainda compromete a recuperação muscular do dia anterior. Um problema gera o outro numa espiral que vai ficando cada vez mais difícil de quebrar.</p>
 
 <h3>2. Estresse crônico</h3>
-<p>O cortisol elevado de forma persistente é um dos maiores sabotadores invisíveis do emagrecimento. Ele favorece o acúmulo de gordura visceral, aumenta a compulsão alimentar e dificulta a recuperação. Estratégias de gerenciamento de estresse — meditação, atividades ao ar livre, desconexão digital — não são frescura. São parte do protocolo de transformação.</p>
+<p>O cortisol elevado de forma persistente é um dos maiores sabotadores invisíveis do emagrecimento. Ele favorece o acúmulo de gordura visceral, aumenta a compulsão alimentar e dificulta a recuperação. Estudo de <a href="https://pubmed.ncbi.nlm.nih.gov/26399868/" target="_blank" rel="noopener noreferrer">Hall et al. sobre adaptação metabólica em longo prazo</a> evidencia como fatores hormonais, incluindo o cortisol, impactam a composição corporal independentemente do déficit calórico. Estratégias de gerenciamento de estresse — meditação, atividades ao ar livre, desconexão digital — não são frescura. São parte do protocolo de transformação.</p>
 
 <h3>3. Beber pouca água</h3>
 <p>Desidratação leve já prejudica o metabolismo basal e pode ser confundida com fome — levando a um consumo calórico desnecessário. Beber água adequadamente é uma das estratégias mais simples, mais baratas e mais subestimadas para apoiar o emagrecimento. A recomendação geral é de 30 a 35 ml por kg de peso corporal por dia.</p>
@@ -531,7 +531,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Dois elementos são inegociáveis:</p>
 <ul>
-  <li><strong>Proteína suficiente</strong> — as fibras musculares são feitas de proteína. Sem aminoácidos em quantidade adequada, o corpo não tem matéria-prima para reconstruir o músculo. A faixa recomendada pela ciência é de <strong>1,6 a 2,2 g de proteína por kg de peso corporal por dia</strong>.</li>
+  <li><strong>Proteína suficiente</strong> — as fibras musculares são feitas de proteína. Sem aminoácidos em quantidade adequada, o corpo não tem matéria-prima para reconstruir o músculo. A faixa de <strong>1,6 a 2,2 g de proteína por kg de peso corporal por dia</strong> é respaldada por <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">extensa meta-análise de Morton et al. com 49 estudos e 1.800 participantes</a>.</li>
   <li><strong>Calorias suficientes</strong> — você precisa de energia para treinar com qualidade e para que o organismo consiga construir tecido novo. Um superávit calórico moderado (200 a 400 kcal acima do gasto diário) é geralmente suficiente para maximizar o ganho muscular sem acumular gordura desnecessariamente.</li>
 </ul>
 
@@ -549,7 +549,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Volume semanal por grupo muscular</h3>
 
-<p>Volume é a quantidade total de trabalho que você aplica a cada grupo muscular por semana — geralmente medido em número de séries. A ciência atual aponta que a faixa de <strong>10 a 20 séries por grupo muscular por semana</strong> é onde a hipertrofia acontece para a maioria das pessoas.</p>
+<p>Volume é a quantidade total de trabalho que você aplica a cada grupo muscular por semana — geralmente medido em número de séries. A ciência atual aponta que a faixa de <strong>10 a 20 séries por grupo muscular por semana</strong> é onde a hipertrofia acontece para a maioria das pessoas, conforme demonstrado em <a href="https://pubmed.ncbi.nlm.nih.gov/27433992/" target="_blank" rel="noopener noreferrer">meta-análise de Schoenfeld et al. sobre a relação dose-resposta entre volume semanal e ganho muscular</a>.</p>
 
 <p>Abaixo de 10 séries, o estímulo pode ser insuficiente. Acima de 20, o risco de overtraining supera o benefício adicional. O ponto ótimo varia com o nível de experiência e com a capacidade individual de recuperação.</p>
 
@@ -561,7 +561,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Frequência de treino por semana</h3>
 
-<p>Treinar cada grupo muscular <strong>2 vezes por semana</strong> tende a ser superior a treinar apenas 1 vez por semana, segundo a maioria dos estudos sobre frequência e hipertrofia. Isso não significa dobrar o volume — significa dividir o mesmo volume em mais sessões, o que melhora a síntese proteica ao longo da semana.</p>
+<p>Treinar cada grupo muscular <strong>2 vezes por semana</strong> tende a ser superior a treinar apenas 1 vez por semana, segundo a maioria dos estudos sobre frequência e hipertrofia, incluindo <a href="https://pubmed.ncbi.nlm.nih.gov/28319102/" target="_blank" rel="noopener noreferrer">pesquisa de Schoenfeld et al. sobre frequência de treino e hipertrofia de fibras musculares</a>. Isso não significa dobrar o volume — significa dividir o mesmo volume em mais sessões, o que melhora a síntese proteica ao longo da semana.</p>
 
 <p>Para quem treina 3 a 4 vezes por semana, divisões upper/lower ou push/pull/legs permitem essa frequência de 2x por músculo com facilidade.</p>
 
@@ -754,7 +754,7 @@ export const blogPosts: BlogPost[] = [
   </tbody>
 </table>
 
-<p>Esses valores assumem treino bem estruturado, proteína adequada (1,6 a 2,2 g/kg) e superávit calórico moderado. Na prática, a maioria das pessoas ganha menos — porque alguma variável não está otimizada.</p>
+<p>Esses valores assumem treino bem estruturado, proteína adequada — a faixa de 1,6 a 2,2 g/kg é respaldada pela <a href="https://pubmed.ncbi.nlm.nih.gov/23739654/" target="_blank" rel="noopener noreferrer">revisão de Helms et al. sobre ingestão proteica em atletas de força</a> — e superávit calórico moderado. Na prática, a maioria das pessoas ganha menos — porque alguma variável não está otimizada.</p>
 
 <h3>Homens x mulheres: por que a diferença existe</h3>
 
