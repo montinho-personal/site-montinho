@@ -6470,7 +6470,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "melhor-treino-para-emagrecer",
     title: "Melhor Treino para Emagrecer: Musculação, Cardio ou os Dois?",
-    metaTitle: "Melhor Treino para Emagrecer | Musculação vs Cardio",
+    metaTitle: "Melhor Treino para Emagrecer: Musculação, Cardio ou os Dois? | Montinho Personal Trainer",
     metaDescription: "Descubra qual é o melhor treino para emagrecer segundo a ciência. Musculação, cardio ou combinação? Veja frequência, progressão e erros comuns.",
     excerpt: "Musculação ou cardio — qual emagrece mais? A ciência mostra que a combinação é ideal, mas a musculação vence no longo prazo por aumentar o metabolismo basal. Entenda por quê.",
     content: `
@@ -6647,7 +6647,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "cardio-antes-ou-depois-da-musculacao",
     title: "Cardio Antes ou Depois da Musculação? A Resposta Definitiva",
-    metaTitle: "Cardio Antes ou Depois da Musculação? | Guia Completo",
+    metaTitle: "Cardio Antes ou Depois da Musculação? A Ordem Certa Por Objetivo | Montinho Personal Trainer",
     metaDescription: "Cardio antes ou depois da musculação? Depende do seu objetivo. Veja a recomendação certa para hipertrofia, emagrecimento e condicionamento físico.",
     excerpt: "A ordem certa do cardio depende do seu objetivo. Para hipertrofia, musculação primeiro. Para resistência, cardio primeiro. Para emagrecer, a diferença é pequena — mas há um protocolo mais inteligente.",
     content: `
@@ -6825,7 +6825,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "hiit-funciona",
     title: "HIIT Funciona para Emagrecer? O Que a Ciência Diz",
-    metaTitle: "HIIT Funciona para Emagrecer? Ciência e Realidade",
+    metaTitle: "HIIT Funciona para Emagrecer? O Que a Ciência Diz | Montinho Personal Trainer",
     metaDescription: "HIIT realmente emagrece? Veja o que a ciência diz sobre eficácia, benefícios, limitações e para quem o HIIT é indicado de verdade.",
     excerpt: "O HIIT virou moda como solução milagrosa para emagrecer. Ele funciona — mas não do jeito que a maioria pensa. O gasto calórico total ainda é o que manda, e HIIT não é para iniciantes.",
     content: `
@@ -7058,7 +7058,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "quanto-de-cardio-fazer",
     title: "Quanto de Cardio Fazer para Emagrecer? A Quantidade Certa",
-    metaTitle: "Quanto de Cardio Fazer para Emagrecer? | Guia Completo",
+    metaTitle: "Quanto de Cardio Fazer para Emagrecer? Quantidade Ideal por Objetivo | Montinho Personal Trainer",
     metaDescription: "Quanto cardio fazer para emagrecer? OMS recomenda 150-300 min/semana. Saiba a quantidade ideal por objetivo, nível e como evitar o excesso de cardio.",
     excerpt: "A OMS recomenda 150 a 300 minutos de cardio moderado por semana para saúde. Para emagrecer, mais pode ser melhor — mas excesso de cardio sem treino de força é contraproducente.",
     content: `
@@ -7266,7 +7266,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "como-perder-gordura-abdominal",
     title: "Como Perder Gordura Abdominal de Verdade (Sem Mitos)",
-    metaTitle: "Como Perder Gordura Abdominal de Verdade | Guia Completo",
+    metaTitle: "Como Perder Gordura Abdominal de Verdade | Montinho Personal Trainer",
     metaDescription: "Como perder gordura abdominal de verdade? Déficit calórico, treino, sono e controle do cortisol. Entenda por que abdominais não eliminam gordura da barriga.",
     excerpt: "Não existe redução localizada de gordura. Para perder gordura abdominal é preciso déficit calórico global, treino de força, controle do estresse e sono adequado. Abdominais fortalecem o core, mas não eliminam gordura da barriga.",
     content: `
@@ -7450,7 +7450,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "deficit-calorico-como-calcular",
     title: "Déficit calórico: o que é e como calcular",
-    metaTitle: "Déficit Calórico: O Que É e Como Calcular | Montinho Personal",
+    metaTitle: "Déficit Calórico: O Que É e Como Calcular | Montinho Personal Trainer",
     metaDescription: "Entenda o que é déficit calórico, como calcular usando TDEE e Mifflin-St Jeor, e por que déficit moderado de 300-500 kcal/dia é mais eficaz para emagrecer sem perder músculo.",
     excerpt: "O déficit calórico é o princípio fundamental do emagrecimento. Aprenda a calcular o seu de forma correta e entenda por que ir além do moderado pode atrapalhar seus resultados.",
     content: `
@@ -7688,7 +7688,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "metabolismo-lento-existe",
     title: "Metabolismo lento existe?",
-    metaTitle: "Metabolismo Lento Existe? A Verdade Científica | Montinho Personal",
+    metaTitle: "Metabolismo Lento Existe? A Verdade Científica | Montinho Personal Trainer",
     metaDescription: "Metabolismo lento é mito ou realidade? Entenda o que a ciência diz sobre diferenças de TMB entre pessoas, os fatores que realmente influenciam o gasto calórico e como acelerar o metabolismo.",
     excerpt: "Todo mundo conhece alguém que \"come tudo e não engorda\" e alguém que \"olha para o bolo e já engorda\". Mas até que ponto o metabolismo lento é real — e até que ponto é uma justificativa?",
     content: `
@@ -7889,7 +7889,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "exercicio-para-perder-barriga",
     title: "Exercício para perder barriga: o que realmente funciona",
-    metaTitle: "Exercício para Perder Barriga: O Que Realmente Funciona | Montinho Personal",
+    metaTitle: "Exercício para Perder Barriga: O Que Realmente Funciona | Montinho Personal Trainer",
     metaDescription: "Existe exercício específico para perder barriga? Entenda por que a redução localizada é um mito, o papel da musculação, cardio e abdominais, e o protocolo que realmente funciona para perder gordura abdominal.",
     excerpt: "Abdominais todos os dias, cintas modeladoras, exercícios focados na barriga — por que essas estratégias não funcionam? Entenda a ciência por trás da gordura abdominal e o que realmente elimina.",
     content: `
@@ -8094,7 +8094,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "como-manter-massa-muscular-emagrecendo",
     title: "Como manter massa muscular emagrecendo",
-    metaTitle: "Como Manter Massa Muscular Emagrecendo | Montinho Personal",
+    metaTitle: "Como Manter Massa Muscular Emagrecendo | Montinho Personal Trainer",
     metaDescription: "É possível emagrecer sem perder músculo? Sim — com proteína alta (2,0-2,4 g/kg), treino de força, déficit moderado e sono adequado. Guia completo com estratégias baseadas em evidências.",
     excerpt: "Emagrecer e manter o músculo ao mesmo tempo é possível — mas exige estratégia. Saiba como usar proteína alta, treino de força e déficit moderado para melhorar a composição corporal sem perder o que você ganhou.",
     content: `
