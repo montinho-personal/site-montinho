@@ -142,6 +142,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">5 Hábitos do Dia a Dia Que Estão Sabotando Seu Emagrecimento</a></li>
   <li><a href="/blog/erros-comuns-no-treino-de-musculacao">7 Erros Comuns na Musculação Que Sabotam Seus Resultados</a></li>
+  <li><a href="/blog/quanto-tempo-para-aparecer-resultado-na-academia">Quanto Tempo Leva Para Aparecer Resultado na Academia?</a></li>
 </ul>
     `,
   },
@@ -245,6 +246,8 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li><a href="/blog/como-prevenir-lesoes-no-treino">Como Prevenir Lesões e Treinar Por Décadas Sem Dor</a></li>
   <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
+  <li><a href="/blog/como-sair-do-plato-da-musculacao">Como Sair do Platô da Musculação? Causas e Soluções</a></li>
+  <li><a href="/blog/quantos-dias-por-semana-treinar">Quantos Dias por Semana Devo Treinar?</a></li>
 </ul>
     `,
   },
@@ -330,7 +333,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Um bom Personal Trainer não serve apenas para passar exercícios. Serve para identificar desequilíbrios musculares antes que virem problema, corrigir padrões de movimento errados desde o início, e adaptar o treino quando algo não está funcionando como deveria.</p>
 
-<p>Como Personal Trainer em Alphaville, trabalho com alunos de Barueri e Santana de Parnaíba que chegaram com histórico de lesões. Em muitos casos, não apenas treinamos com segurança — como resolvemos problemas crônicos que carregavam há anos, sem cirurgia ou medicação. Veja alguns desses <a href="/resultados">resultados na prática</a>.</p>
+<p>Como <a href="/personal-trainer-alphaville">Personal Trainer em Alphaville</a>, trabalho com alunos de <a href="/personal-trainer-barueri">Barueri</a> e <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a> que chegaram com histórico de lesões. Em muitos casos, não apenas treinamos com segurança — como resolvemos problemas crônicos que carregavam há anos, sem cirurgia ou medicação. Veja alguns desses <a href="/resultados">resultados na prática</a>.</p>
 
 <p>É muito mais eficiente — e muito mais barato — investir em prevenção do que tratar uma lesão depois que ela se instala.</p>
 
@@ -342,6 +345,8 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li><a href="/blog/erros-comuns-no-treino-de-musculacao">7 Erros Comuns na Musculação Que Sabotam Seus Resultados</a></li>
   <li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">5 Hábitos do Dia a Dia Que Estão Sabotando Seu Emagrecimento</a></li>
+  <li><a href="/blog/treinar-todos-os-dias-faz-mal">Treinar Todos os Dias Faz Mal? O Limite da Recuperação</a></li>
+  <li><a href="/blog/treinar-o-mesmo-musculo-dois-dias-seguidos">Posso Treinar o Mesmo Músculo Dois Dias Seguidos?</a></li>
 </ul>
     `,
   },
@@ -437,6 +442,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer (E Como Mudar Isso de Vez)</a></li>
   <li><a href="/blog/como-prevenir-lesoes-no-treino">Como Prevenir Lesões e Treinar Por Décadas Sem Dor</a></li>
+  <li><a href="/blog/quanto-tempo-para-aparecer-resultado-na-academia">Quanto Tempo Leva Para Aparecer Resultado na Academia?</a></li>
 </ul>
     `,
   },
@@ -537,7 +543,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>A academia cria o ambiente para o crescimento. O quarto de dormir é onde ele acontece de fato.</p>
 
-<p>Durante o sono profundo, o organismo libera o hormônio do crescimento em quantidade muito superior ao que produz durante o dia — e é nesse período que a síntese proteica muscular está no pico. Cortar o sono para "ter mais tempo para treinar" é matematicamente contraproducente: você aumenta o estímulo e reduz a capacidade de resposta ao mesmo tempo. Quem vive dormindo 5 ou 6 horas, por mais que treine, está pedindo ao corpo um resultado que ele não tem condições bioquímicas de entregar.</p>
+<p>Durante o sono profundo, o organismo libera o hormônio do crescimento em quantidade muito superior ao que produz durante o dia — e é nesse período que a síntese proteica muscular está no pico. Cortar o sono para "ter mais tempo para treinar" é matematicamente contraproducente: você aumenta o estímulo e reduz a capacidade de resposta ao mesmo tempo. Quem vive dormindo 5 ou 6 horas, por mais que treine, está pedindo ao corpo um resultado que ele não tem condições bioquímicas de entregar. Entenda a fisiologia completa em <a href="/blog/descansar-tambem-faz-crescer">descansar também faz crescer</a>.</p>
 
 <h2>As variáveis de treino que você precisa entender</h2>
 
@@ -579,7 +585,7 @@ export const blogPosts: BlogPost[] = [
 <p>Depois de acompanhar dezenas de alunos na <a href="/consultoria">consultoria online</a> e no atendimento presencial em Alphaville, percebo que os mesmos padrões aparecem repetidamente em quem treina mas não cresce:</p>
 
 <ul>
-  <li><strong>Não progredir a carga:</strong> fazer os mesmos exercícios com o mesmo peso por meses é o erro número um. O músculo só cresce quando é desafiado além do que já está adaptado.</li>
+  <li><strong>Não progredir a carga:</strong> fazer os mesmos exercícios com o mesmo peso por meses é o erro número um. O músculo só cresce quando é desafiado além do que já está adaptado. Se você travou nesse ciclo, veja <a href="/blog/como-sair-do-plato-da-musculacao">como sair do platô da musculação</a>.</li>
   <li><strong>Volume muito alto sem qualidade:</strong> 5 exercícios de 5 séries para o mesmo músculo numa sessão soa impressionante, mas o que importa é a qualidade das séries — não a quantidade bruta.</li>
   <li><strong>Proteína insuficiente:</strong> muita gente subestima dramaticamente o quanto de proteína consome. Calcule. Não suponha.</li>
   <li><strong>Subestimar o sono:</strong> dormir 5 a 6 horas e esperar hipertrofia máxima é matematicamente impossível. GH não espera você ter tempo.</li>
@@ -607,6 +613,9 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li><a href="/blog/erros-comuns-no-treino-de-musculacao">7 Erros Comuns na Musculação Que Sabotam Seus Resultados</a></li>
   <li><a href="/blog/como-prevenir-lesoes-no-treino">Como Prevenir Lesões na Musculação e Treinar Por Décadas Sem Dor</a></li>
+  <li><a href="/blog/descansar-tambem-faz-crescer">Descansar Também Faz Crescer? A Ciência da Recuperação</a></li>
+  <li><a href="/blog/como-sair-do-plato-da-musculacao">Como Sair do Platô da Musculação?</a></li>
+  <li><a href="/blog/quanto-tempo-para-ganhar-massa-muscular">Quanto Tempo Demora Para Ganhar Massa Muscular?</a></li>
 </ul>
     `,
   },
@@ -861,7 +870,9 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Verdade: O Guia Completo de Hipertrofia</a></li>
   <li><a href="/blog/erros-comuns-no-treino-de-musculacao">7 Erros Comuns na Musculação Que Sabotam Seus Resultados</a></li>
-  <li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">5 Hábitos do Dia a Dia Que Estão Sabotando Seu Emagrecimento</a></li>
+  <li><a href="/blog/descansar-tambem-faz-crescer">Descansar Também Faz Crescer? A Ciência da Recuperação</a></li>
+  <li><a href="/blog/como-sair-do-plato-da-musculacao">Como Sair do Platô da Musculação?</a></li>
+  <li><a href="/blog/quanto-tempo-para-aparecer-resultado-na-academia">Quanto Tempo Leva Para Aparecer Resultado na Academia?</a></li>
 </ul>
     `,
   },
@@ -1121,7 +1132,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Não existe um número mágico de dias. Existe um número certo para o seu nível, seu objetivo e sua rotina — e ele muda à medida que você avança.</p>
 
-<p>Para a maioria das pessoas, 3 a 4 dias por semana, com cada músculo sendo estimulado 2 vezes, com progressão de carga e recuperação de qualidade, é o protocolo que maximiza resultado. Mais do que isso só faz sentido quando todos os outros fatores — sono, alimentação, volume por sessão — estão otimizados.</p>
+<p>Para a maioria das pessoas, 3 a 4 dias por semana, com cada músculo sendo estimulado 2 vezes, com progressão de carga e recuperação de qualidade, é o protocolo que maximiza resultado. Mais do que isso só faz sentido quando todos os outros fatores — sono, alimentação, volume por sessão — estão otimizados. E quanto à duração de cada sessão, veja <a href="/blog/quanto-tempo-dura-um-treino">quanto tempo deve durar um treino de fato</a>.</p>
 
 <p>Frequência é uma variável. Não é o destino.</p>
 
@@ -1132,6 +1143,9 @@ export const blogPosts: BlogPost[] = [
   <li><a href="/blog/erros-comuns-no-treino-de-musculacao">7 Erros Comuns na Musculação Que Sabotam Seus Resultados</a></li>
   <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Verdade: O Guia Completo de Hipertrofia</a></li>
   <li><a href="/blog/quanto-tempo-para-ganhar-massa-muscular">Quanto Tempo Demora Para Ganhar Massa Muscular?</a></li>
+  <li><a href="/blog/quanto-tempo-dura-um-treino">Quanto Tempo Deve Durar um Treino?</a></li>
+  <li><a href="/blog/treinar-todos-os-dias-faz-mal">Treinar Todos os Dias Faz Mal?</a></li>
+  <li><a href="/blog/quanto-tempo-para-aparecer-resultado-na-academia">Quanto Tempo Leva Para Aparecer Resultado na Academia?</a></li>
 </ul>
     `,
   },
@@ -2361,7 +2375,7 @@ export const blogPosts: BlogPost[] = [
 <p>Durante o sono profundo, o hormônio do crescimento é liberado em quantidade muito superior à produção diurna — e é nesse período que a síntese proteica muscular está no pico. Dormir 5 ou 6 horas e esperar resultado máximo é matematicamente impossível. Sete a nove horas de sono de qualidade por noite não é sugestão — é condição. Leia mais sobre isso no artigo <a href="/blog/descansar-tambem-faz-crescer">Descansar Também Faz Crescer?</a></p>
 
 <h3>Consistência acima de tudo</h3>
-<p>Não existe variável que substitua a consistência ao longo do tempo. Um treino bom feito consistentemente por 12 meses supera, com vantagem, um treino perfeito feito por 3 meses e abandonado. O corpo responde ao acúmulo de estímulo — e acúmulo exige tempo e regularidade.</p>
+<p>Não existe variável que substitua a consistência ao longo do tempo. Um treino bom feito consistentemente por 12 meses supera, com vantagem, um treino perfeito feito por 3 meses e abandonado. O corpo responde ao acúmulo de estímulo — e acúmulo exige tempo e regularidade. Para entender a frequência ideal que viabiliza essa consistência, veja <a href="/blog/quantos-dias-por-semana-treinar">quantos dias por semana treinar por objetivo e nível</a>.</p>
 
 <h2>O que atrasa — ou sabota — os resultados</h2>
 
@@ -2410,7 +2424,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>Esperar resultado visual em 2 a 3 semanas e não ver — concluindo que "não funciona para mim"</li>
   <li>Comparar o próprio progresso com transformações de redes sociais que não mostram o contexto completo</li>
-  <li>Mudar de abordagem toda vez que não há resultado imediato — trocando de dieta, de treino e de método antes de qualquer um deles ter tempo de produzir efeito</li>
+  <li>Mudar de abordagem toda vez que não há resultado imediato — trocando de dieta, de treino e de método antes de qualquer um deles ter tempo de produzir efeito. Se você travou em estagnação real, veja <a href="/blog/como-sair-do-plato-da-musculacao">como sair do platô da musculação</a></li>
   <li>Usar a balança como único indicador — e desanimar quando ela não move rapidamente (ou quando sobe, o que pode ser retenção hídrica muscular normal)</li>
   <li>Treinar muito por 3 semanas e descansar por 2 — quebrando o acúmulo de estímulo que gera resultado</li>
 </ul>
@@ -2431,6 +2445,8 @@ export const blogPosts: BlogPost[] = [
   <li><a href="/blog/descansar-tambem-faz-crescer">Descansar Também Faz Crescer? A Ciência Por Trás da Recuperação Muscular</a></li>
   <li><a href="/blog/erros-comuns-no-treino-de-musculacao">7 Erros Comuns na Musculação Que Sabotam Seus Resultados</a></li>
   <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Verdade: O Guia Completo de Hipertrofia</a></li>
+  <li><a href="/blog/como-sair-do-plato-da-musculacao">Como Sair do Platô da Musculação?</a></li>
+  <li><a href="/blog/quantos-dias-por-semana-treinar">Quantos Dias por Semana Devo Treinar?</a></li>
 </ul>
     `,
   },
