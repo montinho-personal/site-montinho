@@ -244,7 +244,7 @@ export default function PersonalTrainerAlphaville() {
                 </li>
               ))}
             </ul>
-            <div className="flex-shrink-0 mx-auto sm:mx-0">
+            <div className="flex-shrink-0 mx-auto sm:mx-0 w-60 overflow-hidden">
               <Image
                 src="/Personal%20Trainer%20Alphaville%20SP.jpg"
                 alt="Personal Trainer Alphaville SP"
@@ -255,7 +255,7 @@ export default function PersonalTrainerAlphaville() {
                 loading="lazy"
                 decoding="async"
                 sizes="240px"
-                style={{ width: "240px", height: "auto", display: "block" }}
+                className="w-full h-auto"
               />
             </div>
           </div>
