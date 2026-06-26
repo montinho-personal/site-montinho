@@ -137,6 +137,9 @@ export const blogPosts: BlogPost[] = [
 
 <p>Se você quer entender como funciona na prática, veja os <a href="/resultados">resultados de quem já passou por esse processo</a>.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer ver na prática como quebrar o ciclo do efeito sanfona? Assista ao vídeo abaixo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Conclusão</h2>
 
 <p>Não conseguir emagrecer não é falha de caráter. É consequência de usar estratégias que ignoram como o corpo funciona. Déficit calórico moderado, proteína adequada, treino de força e consistência — com acompanhamento de quem entende do processo — são os pilares que realmente funcionam.</p>
@@ -6608,6 +6611,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você quer um programa personalizado para o seu perfil, a <a href="/consultoria">consultoria online</a> do Montinho Personal Trainer é o caminho mais eficiente para emagrecer sem perder músculo. Ainda tem dúvidas sobre como funciona? Confira as <a href="/faq">perguntas frequentes sobre treino e emagrecimento</a>. Se você mora em <a href="/personal-trainer-alphaville">Alphaville</a>, <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-tambore">Tamboré</a> ou <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>, atendimento presencial também está disponível.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Se quiser ver um resumo prático de como montar sua semana de treinos para emagrecer, assista ao vídeo abaixo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como montar a semana de treinos para emagrecer sem perder músculo — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <p><strong>Leia também:</strong></p>
 <ul>
   <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer?</a></li>
@@ -6784,6 +6790,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 </ul>
 
 <p>Leia mais sobre a frequência ideal em <a href="/blog/quantos-dias-por-semana-treinar">quantos dias por semana treinar</a>.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Antes de ver o resumo, assista a este vídeo curto sobre como organizar seu treino de forma inteligente.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como organizar cardio e musculação para emagrecer com resultado — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Resumo prático</h2>
 
@@ -7029,6 +7038,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para um programa que equilibra musculação, HIIT e descanso de forma inteligente, conheça a <a href="/consultoria">consultoria personalizada</a>.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo abaixo um conteúdo complementar sobre como incluir o HIIT no treino sem prejudicar a recuperação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como incluir HIIT no treino sem prejudicar a recuperação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <p><strong>Leia também:</strong></p>
 <ul>
   <li><a href="/blog/melhor-treino-para-emagrecer">Melhor Treino para Emagrecer: Musculação, Cardio ou os Dois?</a></li>
@@ -7240,6 +7252,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se quiser um plano de cardio e musculação estruturado especificamente para o seu perfil e objetivo, a <a href="/consultoria">consultoria personalizada</a> é o caminho mais eficiente.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja também este vídeo com dicas rápidas sobre como encaixar o cardio na rotina sem exagerar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como encaixar o cardio na rotina de treino sem exagerar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <p><strong>Leia também:</strong></p>
 <ul>
   <li><a href="/blog/melhor-treino-para-emagrecer">Melhor Treino para Emagrecer: Musculação, Cardio ou os Dois?</a></li>
@@ -7426,6 +7441,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 </ol>
 
 <p>Se você quer um programa completo e personalizado para perder gordura abdominal de forma eficiente e sustentável, a <a href="/consultoria">consultoria personalizada</a> do Montinho Personal Trainer integra todos esses fatores em um plano feito para você.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Assista ao vídeo abaixo para entender na prática como eliminar gordura abdominal com uma rotina simples e eficiente.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como eliminar gordura abdominal com rotina simples e eficiente — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <p><strong>Leia também:</strong></p>
 <ul>
