@@ -11259,6 +11259,951 @@ RIR 3 = parou com 3 reps sobrando.</p>
 </ul>
 `,
   },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // ARTIGO — posso-treinar-todos-os-dias-retatrutida
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    slug: "posso-treinar-todos-os-dias-retatrutida",
+    title: "Posso Treinar Todos os Dias Usando Retatrutida?",
+    metaTitle: "Posso Treinar Todos os Dias Usando Retatrutida? | Montinho Personal Trainer",
+    metaDescription:
+      "Treinar todos os dias usando Retatrutida pode ser perigoso. Entenda por que a supressão de apetite reduz a capacidade de recuperação e qual a frequência ideal de treino.",
+    excerpt:
+      "A Retatrutida suprime o apetite de forma intensa, reduzindo a energia disponível para treino e recuperação. Treinar todos os dias nesse contexto pode fazer mais mal do que bem. Entenda a frequência ideal.",
+    category: "Treinamento",
+    date: "2026-06-26",
+    readTime: "9 min",
+    author: "Montinho",
+    tags: [
+      "retatrutida",
+      "frequência de treino",
+      "recuperação muscular",
+      "overtraining",
+      "treino com retatrutida",
+      "personal trainer",
+    ],
+    faq: [
+      {
+        question: "Posso treinar todos os dias usando Retatrutida?",
+        answer:
+          "Em geral, não é recomendado. A Retatrutida suprime o apetite de forma intensa, reduzindo a ingestão calórica a níveis que comprometem a recuperação muscular. Treinar sem descanso nesse cenário aumenta o risco de overtraining, perda de músculo e queda de desempenho.",
+      },
+      {
+        question: "Quantos dias por semana devo treinar usando Retatrutida?",
+        answer:
+          "O ideal para a maioria das pessoas é 3 a 4 dias de musculação por semana. Nos dias restantes, caminhadas leves de 20 a 30 minutos são suficientes e ajudam na recuperação sem sobrecarregar o organismo.",
+      },
+      {
+        question: "O que acontece se eu treinar demais com pouca comida?",
+        answer:
+          "O corpo entra em estado catabólico: começa a usar músculo como fonte de energia. O resultado é perda de massa magra, queda de força, fadiga crônica e maior risco de lesões — exatamente o oposto do que se busca com o tratamento.",
+      },
+      {
+        question: "Dias de descanso são importantes mesmo para quem quer emagrecer?",
+        answer:
+          "Sim. O descanso é quando o músculo se reconstrói e fica mais forte. Sem ele, o treino representa apenas destruição sem reconstrução. Para quem usa Retatrutida, os dias de descanso são ainda mais importantes por causa da menor disponibilidade energética.",
+      },
+      {
+        question: "Posso caminhar nos dias de descanso?",
+        answer:
+          "Sim. Caminhadas leves de 20 a 30 minutos são ideais nos dias sem musculação. Elas aumentam o gasto calórico total sem sobrecarregar a recuperação muscular.",
+      },
+    ],
+    content: `
+<p>Essa é uma das dúvidas mais comuns de quem começa a usar a Retatrutida e quer aproveitar o impulso do tratamento para treinar mais. A resposta curta é: <strong>em geral, não — e treinar todos os dias usando Retatrutida pode ser contraproducente</strong>.</p>
+
+<p>Não porque treinar seja ruim, mas porque o contexto metabólico criado pela medicação muda completamente a equação de recuperação.</p>
+
+<h2>O que a Retatrutida faz com seu apetite e energia</h2>
+
+<p>A Retatrutida é um agonista triplo dos receptores GLP-1, GIP e glucagon. Entre os seus efeitos mais pronunciados está a supressão intensa do apetite — muitos usuários relatam comer apenas uma ou duas refeições pequenas por dia, sem sentir fome.</p>
+
+<p>Isso é ótimo para criar o déficit calórico necessário para emagrecer. Mas tem uma consequência direta no treino: <strong>menos comida significa menos energia disponível para treinar e, principalmente, para se recuperar</strong>.</p>
+
+<p>Recuperação muscular depende de três pilares: proteína adequada, calorias suficientes e descanso. Quando dois desses pilares estão comprometidos (calorias e proteína costumam cair juntas quando o apetite despenca), treinar todos os dias coloca o terceiro pillar — o descanso — em risco também.</p>
+
+<h2>O risco real de overtraining com Retatrutida</h2>
+
+<p>O overtraining não é um conceito abstrato. É uma condição fisiológica documentada pela literatura científica. <a href="https://pubmed.ncbi.nlm.nih.gov/22450517/" target="_blank" rel="noopener noreferrer">Kreher e Schwartz (2012)</a> descrevem o overtraining como uma síndrome que ocorre quando o volume e a intensidade do treino superam a capacidade de recuperação do organismo — causando queda de desempenho, fadiga persistente, irritabilidade e maior risco de lesões.</p>
+
+<p>Em condições normais, a linha entre treino produtivo e overtraining depende de alimentação e descanso. Com a Retatrutida suprimindo severamente o apetite, essa linha fica muito mais próxima. O que seria um treino normal para alguém comendo bem pode se tornar excessivo para quem está ingerindo 800 a 1.200 kcal por dia.</p>
+
+<p>Veja mais sobre esse risco no artigo sobre <a href="/blog/treinar-todos-os-dias-faz-mal">treinar todos os dias faz mal</a>.</p>
+
+<h2>O que acontece com o músculo quando você treina demais e come pouco</h2>
+
+<p>Quando o déficit calórico é muito acentuado — situação comum nas primeiras semanas de Retatrutida — o corpo busca fontes alternativas de energia. E o músculo vira alvo.</p>
+
+<p>Esse processo, chamado de catabolismo muscular, é acelerado quando você treina com frequência excessiva sem dar ao organismo os nutrientes necessários para reconstruir o tecido muscular danificado pelo exercício.</p>
+
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Morton e colaboradores (2018)</a> demonstraram que ingestão proteica de pelo menos 1,6 g/kg por dia é o mínimo para preservar massa muscular em déficit calórico. Mas se você não está com apetite para comer essa quantidade e ainda está treinando todos os dias, a perda de músculo é praticamente inevitável.</p>
+
+<p>Isso compromete exatamente o que você quer preservar durante o emagrecimento. Saiba mais sobre <a href="/blog/como-evitar-perder-massa-muscular-retatrutida">como evitar perder massa muscular usando Retatrutida</a>.</p>
+
+<h2>Qual a frequência ideal de treino para quem usa Retatrutida?</h2>
+
+<p>A literatura sobre frequência de treino para hipertrofia e preservação muscular aponta para 3 a 4 sessões de musculação por semana como o intervalo mais eficiente para a maioria das pessoas. <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">O posicionamento do ACSM (2009)</a> recomenda esse intervalo como base para progressão adequada sem comprometer a recuperação.</p>
+
+<p>Para usuários de Retatrutida, especialmente nos primeiros meses de tratamento, essa frequência é ainda mais adequada — e pode ser reduzida para 3 vezes por semana nas fases iniciais quando o apetite e a energia estão mais suprimidos.</p>
+
+<p><strong>Estrutura sugerida:</strong></p>
+<ul>
+  <li><strong>3 a 4 dias de musculação por semana</strong> — com pelo menos um dia de descanso entre sessões intensas</li>
+  <li><strong>Caminhadas leves de 20 a 30 minutos</strong> nos dias de descanso — contribuem para o gasto calórico sem sobrecarregar a recuperação</li>
+  <li><strong>Dias de descanso completo</strong> pelo menos 2 vezes por semana — fundamentais para reconstrução muscular</li>
+</ul>
+
+<p>Veja também o artigo sobre <a href="/blog/frequencia-de-treino">frequência de treino ideal</a> para entender como esse conceito se aplica além do contexto da medicação.</p>
+
+<h2>Por que os dias de descanso são ainda mais importantes com Retatrutida</h2>
+
+<p>No descanso é quando o músculo se reconstrói. O treino cria o estímulo (microlesões nas fibras musculares), mas a síntese proteica — o processo de reconstrução — acontece nas horas e dias seguintes, fora da academia.</p>
+
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/21550729/" target="_blank" rel="noopener noreferrer">Dattilo e colaboradores (2011)</a> mostraram que privação de sono e descanso insuficiente comprometem diretamente a composição corporal e a recuperação muscular, mesmo com treino e alimentação adequados.</p>
+
+<p>Com a Retatrutida reduzindo a disponibilidade energética, o organismo precisa de ainda mais tempo para completar esse processo de recuperação. Ignorar os dias de descanso nesse contexto é como construir uma casa sem deixar o cimento secar.</p>
+
+<blockquote>
+  <p>Treinar mais não significa progredir mais. Com Retatrutida, treinar na frequência certa — e descansar direito — é o que determina se você vai perder gordura ou perder músculo.</p>
+</blockquote>
+
+<h2>Sinais de que você está treinando mais do que consegue se recuperar</h2>
+
+<p>Fique atento a estes sinais de que a frequência de treino está acima da sua capacidade de recuperação:</p>
+
+<ul>
+  <li>Força caindo progressivamente nas séries (você está levantando menos do que na semana anterior)</li>
+  <li>Dores musculares que não passam entre os treinos</li>
+  <li>Fadiga intensa que persiste mesmo nos dias de descanso</li>
+  <li>Qualidade do sono piorando</li>
+  <li>Motivação para treinar caindo significativamente</li>
+  <li>Tontura ou fraqueza durante as sessões</li>
+</ul>
+
+<p>Se você está experimentando dois ou mais desses sintomas de forma consistente, é hora de reduzir a frequência e priorizar a recuperação.</p>
+
+<h2>Como adaptar o treino conforme o tratamento avança</h2>
+
+<p>O tratamento com Retatrutida tende a evoluir em fases. Na fase inicial — primeiras 4 a 8 semanas — o apetite costuma ser mais suprimido e os efeitos colaterais (náusea, tontura) mais presentes. Essa é a fase que exige mais cautela no treino.</p>
+
+<p>Conforme o organismo se adapta à medicação, o apetite tende a se estabilizar em um nível moderadamente reduzido. Nesse ponto, muitos conseguem aumentar ligeiramente a frequência ou o volume de treino — sempre com progressão gradual.</p>
+
+<p>A chave é <strong>adaptar a frequência à sua capacidade de recuperação real</strong>, não a um número idealizado. Um diário de treino simples — registrando desempenho, disposição e recuperação — ajuda muito nesse processo.</p>
+
+<p>Veja como estruturar isso melhor no artigo <a href="/blog/melhor-treino-para-quem-usa-retatrutida">melhor treino para quem usa Retatrutida</a>.</p>
+
+<h2>Quer um treino estruturado para o seu momento?</h2>
+
+<p>Treinar na frequência certa para o seu contexto — incluindo o uso de Retatrutida — é parte do que estruturo na minha <a href="/consultoria">consultoria online</a>. O treino é individualizado para respeitar sua capacidade de recuperação e maximizar a preservação muscular durante o emagrecimento.</p>
+
+<h2>Leia também:</h2>
+<ul>
+  <li><a href="/blog/melhor-treino-para-quem-usa-retatrutida">Melhor treino para quem usa Retatrutida</a></li>
+  <li><a href="/blog/como-evitar-perder-massa-muscular-retatrutida">Como evitar perder massa muscular com Retatrutida</a></li>
+  <li><a href="/blog/treinar-todos-os-dias-faz-mal">Treinar todos os dias faz mal?</a></li>
+  <li><a href="/blog/frequencia-de-treino">Frequência de treino: quantos dias por semana treinar</a></li>
+</ul>
+`,
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // ARTIGO — hiit-usando-retatrutida
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    slug: "hiit-usando-retatrutida",
+    title: "Posso Fazer HIIT Usando Retatrutida?",
+    metaTitle: "Posso Fazer HIIT Usando Retatrutida? | Montinho Personal Trainer",
+    metaDescription:
+      "HIIT com Retatrutida exige cuidado: baixa ingestão calórica aumenta o risco de tontura, náusea e hipoglicemia durante os treinos intensos. Saiba quando e como incluir o HIIT com segurança.",
+    excerpt:
+      "O HIIT é um treino de alta demanda energética. Com a Retatrutida suprimindo o apetite e reduzindo a ingestão calórica, os riscos aumentam. Entenda como incluir o HIIT com segurança — e quando esperar.",
+    category: "Treinamento",
+    date: "2026-06-26",
+    readTime: "9 min",
+    author: "Montinho",
+    tags: [
+      "hiit",
+      "retatrutida",
+      "treino intervalado",
+      "cardio com retatrutida",
+      "emagrecimento",
+      "personal trainer",
+    ],
+    faq: [
+      {
+        question: "Posso fazer HIIT logo que começo a usar Retatrutida?",
+        answer:
+          "Não é recomendado nas primeiras semanas. A fase inicial do tratamento costuma ser a mais intensa em termos de supressão de apetite e efeitos colaterais. O HIIT nessa fase aumenta o risco de tontura, náusea e mal-estar. Comece com musculação moderada e caminhadas, e inclua o HIIT gradualmente após adaptação.",
+      },
+      {
+        question: "Quais os riscos de fazer HIIT com pouca alimentação?",
+        answer:
+          "Os principais riscos são tontura, hipoglicemia (queda brusca de açúcar no sangue), náusea intensa, fadiga extrema e desmaio. Com a Retatrutida reduzindo drasticamente a ingestão calórica, o organismo pode não ter glicose suficiente para sustentar a demanda do HIIT.",
+      },
+      {
+        question: "HIIT ou musculação — qual é melhor para quem usa Retatrutida?",
+        answer:
+          "Musculação é a prioridade. Ela preserva massa muscular durante o emagrecimento, o que o HIIT não faz com a mesma eficiência. O HIIT pode ser adicionado como complemento após adaptação ao tratamento, mas nunca deve substituir o treino de força.",
+      },
+      {
+        question: "Quanto tempo de HIIT é seguro para quem usa Retatrutida?",
+        answer:
+          "Quando bem adaptado ao tratamento, sessões de 15 a 20 minutos de HIIT (não contando aquecimento e desaquecimento) são suficientes e mais seguras. Sessões mais longas em déficit calórico severo aumentam o risco de catabolismo muscular e mal-estar.",
+      },
+      {
+        question: "Preciso comer antes do HIIT com Retatrutida?",
+        answer:
+          "Sim. Uma refeição leve com carboidratos de fácil digestão de 60 a 90 minutos antes é fundamental para ter energia suficiente e evitar hipoglicemia durante o HIIT. Mesmo sem fome, tente consumir algo — uma banana, uma fatia de pão com mel ou uma pequena porção de aveia.",
+      },
+    ],
+    content: `
+<p>O HIIT — treino intervalado de alta intensidade — é uma das modalidades mais populares para quem quer emagrecer rápido. É eficiente, demanda pouco tempo e tem boa sustentação científica. Mas quando você está usando Retatrutida, a equação muda.</p>
+
+<p>A resposta direta: <strong>você pode fazer HIIT usando Retatrutida, mas não imediatamente e não sem cuidados específicos</strong>. Entender por quê é essencial para não transformar um treino produtivo em risco à saúde.</p>
+
+<h2>Por que o HIIT é de alta demanda energética</h2>
+
+<p>O HIIT funciona pelo princípio de intervalos alternados de esforço máximo e recuperação ativa. Sprints, burpees, saltos, agachamentos explosivos — esses exercícios demandam glicose imediata para sustentar a contração muscular de alta intensidade.</p>
+
+<p>Diferente da musculação, que usa pesos e descansos mais longos entre séries, o HIIT não dá muito espaço para o sistema energético se recompor entre os estímulos. Isso exige que o organismo tenha combustível disponível — tanto glicogênio muscular quanto glicose circulante.</p>
+
+<p>Quando a alimentação está muito restrita, como frequentemente ocorre com usuários de Retatrutida nas primeiras semanas, esse combustível simplesmente não está disponível em quantidade suficiente.</p>
+
+<h2>O que a Retatrutida faz que torna o HIIT arriscado</h2>
+
+<p>A Retatrutida suprime o apetite de forma intensa e prolongada. Muitos usuários relatam comer 500 a 1.000 kcal por dia nas primeiras semanas — valores muito abaixo do necessário para suportar treinos de alta intensidade.</p>
+
+<p>Além disso, a medicação age sobre receptores de glucagon, influenciando a regulação da glicose. Em pessoas sem diabetes, esse efeito é leve, mas combinado com exercício intenso e pouca ingestão calórica, pode contribuir para sintomas de hipoglicemia durante o treino.</p>
+
+<p>Os riscos práticos do HIIT com Retatrutida em fase inicial incluem:</p>
+<ul>
+  <li><strong>Tontura e vertigem</strong> — causadas pela queda de pressão arterial durante esforço intenso com baixo volume de sangue circulante</li>
+  <li><strong>Náusea intensa</strong> — a Retatrutida já causa náusea como efeito colateral; esforço máximo pode amplificar esse sintoma</li>
+  <li><strong>Hipoglicemia</strong> — queda brusca de glicose sanguínea, com sintomas como tremor, suor frio e visão turva</li>
+  <li><strong>Fadiga extrema</strong> — não a canseira normal pós-treino, mas um esgotamento que pode durar dias</li>
+  <li><strong>Risco de desmaio</strong> — em casos mais extremos, especialmente com sprints ou exercícios de impacto</li>
+</ul>
+
+<p>Veja mais no artigo sobre <a href="/blog/hiit-funciona">HIIT funciona para emagrecer</a> para entender os mecanismos gerais do treino intervalado.</p>
+
+<h2>Musculação primeiro, HIIT depois</h2>
+
+<p>Não é coincidência que todos os protocolos de treino para usuários de GLP-1 desenvolvidos por especialistas em medicina do exercício priorizem a musculação. A razão é simples: <strong>preservar massa muscular durante o emagrecimento acelerado é a principal preocupação — e o HIIT não faz isso com eficiência</strong>.</p>
+
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/22215276/" target="_blank" rel="noopener noreferrer">Wilson e colaboradores (2012)</a> estudaram o treinamento concorrente (força + cardio) e confirmaram que quando a prioridade é composição corporal, o treino de força deve ser o elemento central do programa — o cardio é complementar.</p>
+
+<p>Para quem usa Retatrutida, isso significa:</p>
+<ul>
+  <li>Fase 1 (primeiras 4 a 8 semanas): musculação 3x/semana + caminhadas leves</li>
+  <li>Fase 2 (após adaptação): musculação 3 a 4x/semana + HIIT leve 1x/semana</li>
+  <li>Fase 3 (estabilizado): musculação 3 a 4x/semana + HIIT 1 a 2x/semana conforme tolerância</li>
+</ul>
+
+<p>Confira também o artigo sobre <a href="/blog/cardio-antes-ou-depois-da-musculacao">cardio antes ou depois da musculação</a> para entender como organizar esses elementos no mesmo dia.</p>
+
+<h2>Quando o HIIT pode ser incluído com segurança</h2>
+
+<p>O HIIT se torna mais seguro quando:</p>
+<ul>
+  <li>O organismo já se adaptou à medicação (geralmente após 6 a 8 semanas)</li>
+  <li>Os efeitos colaterais gastrointestinais (náusea, vômito) estão controlados</li>
+  <li>A ingestão calórica está em um patamar mais estável — acima de 1.200 kcal/dia para mulheres e 1.500 kcal/dia para homens</li>
+  <li>A ingestão proteica está adequada (mínimo 1,6 g/kg/dia conforme <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Morton et al., 2018</a>)</li>
+  <li>Você consegue se alimentar de forma mínima antes do treino</li>
+</ul>
+
+<h2>Como fazer HIIT com segurança usando Retatrutida</h2>
+
+<p>Quando chegar o momento de incluir o HIIT, aqui estão as estratégias que reduzem os riscos:</p>
+
+<h3>1. Coma antes do treino</h3>
+<p>Mesmo sem fome, consuma uma refeição leve com carboidratos de digestão rápida de 60 a 90 minutos antes do HIIT. Uma banana, uma fatia de pão com mel ou meia xícara de aveia já fazem diferença. Isso garante glicose disponível para o esforço intenso.</p>
+
+<h3>2. Comece com versões menos intensas</h3>
+<p>Em vez de sprints e saltos de impacto alto, inicie com HIIT de baixo impacto: bicicleta ergométrica, remo ergométrico ou caminhada acelerada com subidas. O princípio é o mesmo (intervalos), mas o estresse articular e cardiovascular é menor.</p>
+
+<h3>3. Limite a duração</h3>
+<p>Sessões de 15 a 20 minutos de trabalho real (sem contar aquecimento e desaquecimento de 5 minutos cada) são suficientes para obter os benefícios sem o risco de esgotamento em déficit calórico.</p>
+
+<h3>4. Nunca faça HIIT e musculação no mesmo dia</h3>
+<p>Com a disponibilidade energética já reduzida pela medicação, combinar HIIT e musculação no mesmo dia pode superar sua capacidade de recuperação. Mantenha-os em dias diferentes.</p>
+
+<h3>5. Monitore os sinais do corpo</h3>
+<p>Tontura, tremedeira ou náusea durante o HIIT são sinais para parar imediatamente. Não tente "aguentar" — esses sintomas indicam que o organismo está com recursos insuficientes para a demanda do exercício.</p>
+
+<blockquote>
+  <p>O HIIT é uma ferramenta poderosa — mas só quando o contexto permite usá-la com segurança. Com Retatrutida, a paciência inicial protege seus músculos e sua saúde a longo prazo.</p>
+</blockquote>
+
+<h2>HIIT versus caminhada: qual queima mais gordura no contexto de Retatrutida?</h2>
+
+<p>Muitas pessoas acreditam que precisam do HIIT para emagrecer de forma acelerada. Mas com a Retatrutida já criando um déficit calórico significativo via supressão de apetite, <strong>a diferença entre HIIT e caminhada no resultado final é menor do que você imagina</strong>.</p>
+
+<p>A caminhada tem vantagens importantes nesse contexto: não compromete a recuperação muscular, não causa os sintomas adversos do esforço máximo em baixa glicose, e é sustentável todos os dias. Para muitos usuários de Retatrutida, especialmente nos primeiros meses, a caminhada diária é superior ao HIIT semanal em termos de resultado total.</p>
+
+<h2>Quer estruturar seu treino de forma segura?</h2>
+
+<p>Definir quando e como incluir o HIIT no seu programa — respeitando o momento do seu tratamento — é parte do que ofereço na minha <a href="/consultoria">consultoria online</a>. O treino é adaptado para o seu contexto, incluindo o uso de medicamentos como a Retatrutida.</p>
+
+<h2>Leia também:</h2>
+<ul>
+  <li><a href="/blog/melhor-treino-para-quem-usa-retatrutida">Melhor treino para quem usa Retatrutida</a></li>
+  <li><a href="/blog/hiit-funciona">HIIT funciona para emagrecer?</a></li>
+  <li><a href="/blog/cardio-ou-musculacao-retatrutida">Cardio ou musculação com Retatrutida?</a></li>
+  <li><a href="/blog/como-evitar-perder-massa-muscular-retatrutida">Como evitar perder massa muscular com Retatrutida</a></li>
+</ul>
+`,
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // ARTIGO — musculacao-em-jejum-retatrutida
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    slug: "musculacao-em-jejum-retatrutida",
+    title: "Posso Fazer Musculação em Jejum Usando Retatrutida?",
+    metaTitle: "Posso Fazer Musculação em Jejum Usando Retatrutida? | Montinho Personal Trainer",
+    metaDescription:
+      "Treinar em jejum já é debatido em condições normais. Com a Retatrutida suprimindo o apetite severamente, os riscos são amplificados. Entenda o que a ciência diz e como agir na prática.",
+    excerpt:
+      "Com a Retatrutida causando supressão intensa de apetite, muitos usuários ficam em estado quase permanente de jejum. Fazer musculação nesse contexto sem nenhuma estratégia pode acelerar a perda muscular. Entenda como minimizar os riscos.",
+    category: "Treinamento",
+    date: "2026-06-26",
+    readTime: "9 min",
+    author: "Montinho",
+    tags: [
+      "musculação em jejum",
+      "retatrutida",
+      "jejum intermitente",
+      "treino em jejum",
+      "massa muscular",
+      "personal trainer",
+    ],
+    faq: [
+      {
+        question: "Posso fazer musculação em jejum com Retatrutida?",
+        answer:
+          "Tecnicamente sim, mas não é o ideal. Com a Retatrutida suprimindo o apetite, você já está em estado de baixa disponibilidade energética a maior parte do tempo. Adicionar musculação em jejum amplifica o risco de catabolismo muscular. Se não tiver alternativa, priorize proteína antes do treino — mesmo que seja apenas um copo de whey protein.",
+      },
+      {
+        question: "O treino em jejum queima mais gordura?",
+        answer:
+          "O treino em jejum pode aumentar a oxidação de gordura durante a sessão, mas isso não necessariamente resulta em mais perda de gordura ao longo do dia. O balanço calórico total é o fator determinante. Com a Retatrutida já criando um déficit calórico consistente, o treino em jejum não oferece vantagem adicional significativa.",
+      },
+      {
+        question: "O que comer antes da musculação quando não tenho fome por causa da Retatrutida?",
+        answer:
+          "Algo pequeno mas estratégico: 20 a 30 g de proteína (uma dose de whey, ovos mexidos, queijo cottage) e uma fonte simples de carboidrato (banana, torrada). Você não precisa de uma refeição completa — apenas o suficiente para proteger o músculo e ter energia para treinar com qualidade.",
+      },
+      {
+        question: "Treinar em jejum com Retatrutida pode causar desmaio?",
+        answer:
+          "Em exercícios de baixa intensidade, o risco é pequeno. Mas na musculação com cargas pesadas, o esforço aumenta a demanda por glicose, e com pouca ou nenhuma alimentação recente, pode haver tontura ou fraqueza intensa. Mantenha-se hidratado e leve algo para comer na bolsa caso seja necessário.",
+      },
+      {
+        question: "Quanto tempo de jejum é considerado problemático antes do treino?",
+        answer:
+          "Em geral, mais de 8 a 10 horas sem comer antes de uma sessão de musculação já começa a comprometer o desempenho e aumentar o catabolismo — especialmente em déficit calórico. Para usuários de Retatrutida que não sentem fome, uma refeição leve de 60 a 90 minutos antes do treino é sempre preferível.",
+      },
+    ],
+    content: `
+<p>O treino em jejum é um tema que divide opiniões mesmo fora do contexto de medicamentos para emagrecimento. Mas com a Retatrutida, esse debate ganha uma camada adicional de complexidade — porque muitos usuários não escolhem treinar em jejum, eles <em>são forçados</em> a isso pela ausência de fome.</p>
+
+<p>Entender os riscos e como contorná-los na prática é essencial para preservar o que mais importa durante o emagrecimento: a massa muscular.</p>
+
+<h2>O estado de "quase jejum permanente" com Retatrutida</h2>
+
+<p>A Retatrutida age sobre três receptores — GLP-1, GIP e glucagon — e é justamente essa ação tripla que a torna tão eficiente na supressão do apetite. Usuários relatam com frequência passar o dia inteiro sem sentir fome, ou sentir saciedade após duas ou três colheres de comida.</p>
+
+<p>Na prática, isso coloca o organismo em um estado metabólico próximo ao jejum prolongado por grande parte do dia. Quando o treino de musculação acontece nesse contexto — especialmente de manhã ou após muitas horas sem comer — o resultado pode ser o oposto do que se busca: perda de músculo em vez de gordura.</p>
+
+<h2>O que diz a ciência sobre treino em jejum e massa muscular</h2>
+
+<p>O debate sobre treino em jejum para perda de gordura existe há décadas. A ideia é que, sem glicose disponível, o organismo queimaria mais gordura durante o exercício. Isso é parcialmente verdadeiro — mas a foto completa é mais complexa.</p>
+
+<p>O problema central é que o jejum não discrimina gordura de músculo como combustível. <a href="https://pubmed.ncbi.nlm.nih.gov/26500462/" target="_blank" rel="noopener noreferrer">Stokes e colaboradores (2015)</a> demonstraram que a preservação de massa muscular em déficit calórico depende criticamente de proteína disponível no momento do exercício e nas horas seguintes.</p>
+
+<p>Sem aminoácidos circulantes — que vêm da proteína ingerida — o corpo recorre à degradação de proteína muscular (proteólise) como fonte de aminoácidos. Em déficit calórico severo, como o causado pela Retatrutida, esse processo é ainda mais pronunciado.</p>
+
+<p>E conforme <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Morton e colaboradores (2018)</a>, a ingestão proteica mínima de 1,6 g/kg por dia é necessária para preservar massa magra — e essa proteína precisa ser distribuída ao longo do dia, não concentrada apenas no período pós-treino.</p>
+
+<p>Leia mais sobre a importância da proteína no artigo <a href="/blog/proteina-para-quem-usa-retatrutida">proteína para quem usa Retatrutida</a>.</p>
+
+<h2>Riscos específicos de treinar em jejum com Retatrutida</h2>
+
+<p>Além do catabolismo muscular, outros riscos merecem atenção:</p>
+
+<ul>
+  <li><strong>Queda de desempenho:</strong> Sem glicogênio disponível, a força e a potência muscular caem — o que significa cargas menores, menos volume e menos estímulo para o músculo</li>
+  <li><strong>Tontura e fraqueza:</strong> Especialmente em exercícios compostos pesados (agachamento, levantamento terra), o esforço em hipoglicemia pode causar tontura intensa</li>
+  <li><strong>Recuperação mais lenta:</strong> Sem nutrientes disponíveis no pós-treino imediato, a síntese proteica muscular é prejudicada</li>
+  <li><strong>Efeitos colaterais amplificados:</strong> A Retatrutida já causa náusea em alguns usuários; o treino em jejum pode intensificar esse sintoma</li>
+</ul>
+
+<h2>Quando o treino em jejum é inevitável: como minimizar os riscos</h2>
+
+<p>Em alguns casos, o treino em jejum com Retatrutida simplesmente acontece — por logística de horário, pela ausência total de apetite pela manhã ou pela dificuldade de comer antes de determinados horários. Nesses casos, algumas estratégias ajudam a minimizar o impacto negativo:</p>
+
+<h3>1. Priorize proteína, mesmo que seja pouca</h3>
+<p>Se comer uma refeição completa não é possível, consumir pelo menos 20 a 30 g de proteína antes do treino já faz diferença. Uma dose de whey protein com água é suficiente — não exige preparo, não causa sobrecarga gástrica e fornece os aminoácidos que o músculo precisa durante o exercício.</p>
+
+<h3>2. Reduza a intensidade nos dias de jejum</h3>
+<p>Se você vai treinar sem ter comido, não é o dia para bater recordes de carga. Reduza o peso em 20 a 30%, mantenha o volume e foque na execução. O objetivo é manter o estímulo muscular sem sobrecarregar o sistema em baixa disponibilidade energética.</p>
+
+<h3>3. Hidrate-se bem antes de treinar</h3>
+<p>A desidratação amplifica todos os efeitos negativos do treino em jejum. Beba pelo menos 500 ml de água antes da sessão e continue se hidratando durante o treino.</p>
+
+<h3>4. Tenha algo à mão durante o treino</h3>
+<p>Um sachê de mel, uma banana ou uma barrinha de cereal na bolsa podem ser um salva-vidas caso você sinta tontura ou fraqueza intensa durante o treino. Não é fraqueza — é estratégia.</p>
+
+<h3>5. Priorize a refeição pós-treino</h3>
+<p>Quando o treino em jejum é inevitável, a refeição pós-treino se torna ainda mais importante. Consuma proteína e carboidratos o mais rápido possível após o treino — dentro de 30 a 60 minutos — para iniciar o processo de recuperação muscular.</p>
+
+<blockquote>
+  <p>Com a Retatrutida, você já está em déficit calórico significativo. O treino em jejum aumenta esse déficit de forma aguda — o que é bom para a gordura mas ruim para o músculo. A solução é comer o mínimo estratégico antes de treinar, mesmo sem fome.</p>
+</blockquote>
+
+<h2>A abordagem preferível: coma algo antes de treinar</h2>
+
+<p>A orientação geral da literatura de nutrição esportiva é clara: <a href="https://pubmed.ncbi.nlm.nih.gov/23739654/" target="_blank" rel="noopener noreferrer">Helms e colaboradores (2014)</a>, em revisão sobre nutrição para atletas em déficit calórico, recomendam que a ingestão proteica seja distribuída estrategicamente ao longo do dia, incluindo ao redor do treino.</p>
+
+<p>Para usuários de Retatrutida sem fome pela manhã, isso pode parecer difícil — mas não precisa ser uma refeição grande. Uma refeição pequena de 30 a 40 minutos antes do treino já é suficiente para fornecer aminoácidos e alguma glicose sem causar desconforto gástrico.</p>
+
+<p>Opções práticas que funcionam mesmo sem apetite:</p>
+<ul>
+  <li>1 dose de whey protein + 1 banana pequena</li>
+  <li>2 ovos mexidos + 1 fatia de pão integral</li>
+  <li>1 pote pequeno de iogurte grego com uma colher de aveia</li>
+  <li>1 fatia de queijo branco + 1 fruta pequena</li>
+</ul>
+
+<p>Veja mais sobre <a href="/blog/musculacao-durante-uso-de-retatrutida">musculação durante o uso de Retatrutida</a> para entender como organizar todo o programa de treino nesse contexto.</p>
+
+<h2>Quer ajuda para estruturar seu treino e alimentação com Retatrutida?</h2>
+
+<p>Montar uma estratégia de treino e nutrição que respeite a supressão de apetite da Retatrutida e ainda preserve o máximo de massa muscular possível é o que ofereço na minha <a href="/consultoria">consultoria online</a>. O programa é adaptado ao seu contexto — incluindo o uso de medicamentos.</p>
+
+<h2>Leia também:</h2>
+<ul>
+  <li><a href="/blog/proteina-para-quem-usa-retatrutida">Proteína para quem usa Retatrutida</a></li>
+  <li><a href="/blog/musculacao-durante-uso-de-retatrutida">Musculação durante o uso de Retatrutida</a></li>
+  <li><a href="/blog/como-evitar-perder-massa-muscular-retatrutida">Como evitar perder massa muscular com Retatrutida</a></li>
+  <li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Quanta proteína por dia para ganhar massa muscular</a></li>
+</ul>
+`,
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // ARTIGO — fraqueza-durante-treino-retatrutida
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    slug: "fraqueza-durante-treino-retatrutida",
+    title: "Como Evitar Fraqueza Durante os Treinos Usando Retatrutida",
+    metaTitle: "Como Evitar Fraqueza Durante os Treinos Usando Retatrutida | Montinho Personal Trainer",
+    metaDescription:
+      "Fraqueza e cansaço durante o treino são as queixas mais comuns de quem usa Retatrutida. Entenda as causas e as estratégias práticas para treinar com mais energia e qualidade.",
+    excerpt:
+      "Sentir fraqueza durante o treino é uma das reclamações mais frequentes de quem usa Retatrutida. As causas são identificáveis — e a maioria tem solução prática. Descubra como treinar melhor mesmo em déficit calórico.",
+    category: "Treinamento",
+    date: "2026-06-26",
+    readTime: "9 min",
+    author: "Montinho",
+    tags: [
+      "fraqueza no treino",
+      "retatrutida",
+      "energia para treinar",
+      "fadiga",
+      "pré-treino",
+      "personal trainer",
+    ],
+    faq: [
+      {
+        question: "Por que sinto tanta fraqueza no treino usando Retatrutida?",
+        answer:
+          "As principais causas são: ingestão calórica insuficiente (menos combustível disponível), falta de carboidratos ao redor do treino, desidratação e efeitos colaterais diretos da medicação como tontura e náusea. Identificar qual causa predomina no seu caso é o primeiro passo para resolver.",
+      },
+      {
+        question: "Devo parar de treinar se estiver sentindo fraqueza com Retatrutida?",
+        answer:
+          "Depende da intensidade. Fraqueza leve que melhora com o aquecimento pode ser manejada com ajustes de nutrição e hidratação. Tontura intensa, visão turva ou tremores são sinais para interromper o treino imediatamente e consultar seu médico.",
+      },
+      {
+        question: "O que comer antes do treino para ter mais energia com Retatrutida?",
+        answer:
+          "Uma refeição leve de 60 a 90 minutos antes do treino com proteína e carboidratos de fácil digestão. Exemplos: banana com whey, ovos com torrada, iogurte com aveia. Não precisa ser grande — o suficiente para fornecer glicose disponível durante o exercício.",
+      },
+      {
+        question: "A fraqueza com Retatrutida passa com o tempo?",
+        answer:
+          "Em muitos casos, sim. Nas primeiras 4 a 8 semanas, o organismo está se adaptando à medicação e a supressão de apetite costuma ser mais intensa. Com o tempo, a maioria dos usuários encontra um equilíbrio que permite treinar com mais qualidade — desde que ajustem a alimentação estrategicamente.",
+      },
+      {
+        question: "Devo reduzir o peso nos exercícios quando estou com Retatrutida?",
+        answer:
+          "Se a fraqueza está comprometendo a forma ou o desempenho, sim — reduzir a carga temporariamente é mais inteligente do que insistir em pesos que você não consegue sustentar. A progressão de carga continua sendo o objetivo, mas ela precisa partir de um ponto sustentável no seu contexto atual.",
+      },
+    ],
+    content: `
+<p>Se você usa Retatrutida e treina, há uma boa chance de já ter experimentado isso: chega na academia, começa o aquecimento e sente que suas pernas são de chumbo. As cargas que você movia semanas atrás parecem impossíveis. A cabeça fica pesada. Vontade de ir para casa antes mesmo de terminar a segunda série.</p>
+
+<p>Essa queixa é tão comum entre usuários de GLP-1 que alguns médicos e personal trainers já a tratam como parte previsível do processo. Mas ela não precisa ser permanente — e tem causas bem definidas que podem ser endereçadas.</p>
+
+<h2>As 4 principais causas de fraqueza no treino com Retatrutida</h2>
+
+<h3>1. Ingestão calórica insuficiente</h3>
+<p>A causa mais comum e mais subestimada. A Retatrutida suprime o apetite de forma tão intensa que muitos usuários chegam ao treino com apenas 600 a 900 kcal ingeridas no dia. Para o cérebro e os músculos, isso é pouco combustível para sustentar uma sessão de musculação com qualidade.</p>
+
+<p>O corpo responde reduzindo a intensidade disponível — você literalmente não tem energia para levantar o peso que levantava antes, mesmo que a musculatura esteja preservada. <a href="https://pubmed.ncbi.nlm.nih.gov/7632212/" target="_blank" rel="noopener noreferrer">Leibel e colaboradores (1995)</a> documentaram como a redução na ingestão calórica afeta o gasto energético e a disponibilidade de energia para atividade física.</p>
+
+<h3>2. Falta de carboidratos ao redor do treino</h3>
+<p>Mesmo quando as calorias totais do dia não são tão baixas, a ausência de carboidratos próximo ao treino compromete o desempenho. Carboidratos são a fonte preferencial de energia para exercício de moderada a alta intensidade. Sem eles disponíveis, a força e a resistência muscular caem de forma imediata.</p>
+
+<p>Usuários de Retatrutida que comem principalmente à noite (quando a supressão de apetite alivia um pouco) frequentemente chegam ao treino matinal em estado de glicogênio depletado.</p>
+
+<h3>3. Desidratação</h3>
+<p>A Retatrutida pode causar náusea e redução do desejo de beber líquidos — além do próprio déficit calórico reduzir a ingestão total de alimentos que naturalmente trazem água (frutas, legumes, sopas). O resultado é uma desidratação crônica leve que, durante o treino, se manifesta como fraqueza, dor de cabeça e queda de desempenho.</p>
+
+<p>Uma desidratação de apenas 2% do peso corporal já é suficiente para comprometer a performance de forma mensurável.</p>
+
+<h3>4. Efeitos colaterais diretos da medicação</h3>
+<p>Tontura, náusea e mal-estar geral são efeitos colaterais comuns da Retatrutida, especialmente nas primeiras semanas e após ajustes de dose. Esses sintomas se intensificam durante o esforço físico, piorando a sensação de fraqueza durante o treino.</p>
+
+<h2>Estratégias práticas para treinar com mais energia</h2>
+
+<h3>Estratégia 1: Refeição pré-treino estratégica</h3>
+<p>Mesmo sem fome, uma refeição leve de 60 a 90 minutos antes do treino pode mudar completamente sua sessão. O objetivo é fornecer proteína para proteger o músculo e carboidratos para combustível imediato.</p>
+
+<p>Opções que funcionam mesmo com apetite reduzido:</p>
+<ul>
+  <li>1 dose de whey protein + 1 banana</li>
+  <li>2 ovos mexidos + 1 fatia de pão integral com geleia</li>
+  <li>1 iogurte grego + meia xícara de aveia com mel</li>
+  <li>1 fatia de queijo branco + 1 fruta pequena + torrada</li>
+</ul>
+
+<p>Não precisa ser uma refeição grande. O objetivo é fornecer 20 a 30 g de proteína e 30 a 50 g de carboidratos — suficiente para mudar a qualidade do treino.</p>
+
+<h3>Estratégia 2: Timing do treino</h3>
+<p>Para usuários de Retatrutida que têm mais apetite à tarde ou à noite, treinar no final da tarde (17h-19h) pode ser mais vantajoso. Você aproveita as horas do dia em que conseguiu comer mais e tem mais combustível disponível para o exercício.</p>
+
+<p>Se treinar de manhã é inevitável, a refeição pré-treino se torna ainda mais crítica.</p>
+
+<h3>Estratégia 3: Hidratação proativa</h3>
+<p>Não espere sentir sede. Com a Retatrutida reduzindo o sinal de fome e sede, você precisa hidratar por hábito e não por vontade. Meta mínima: 500 ml de água antes do treino e pelo menos 300 a 500 ml durante a sessão.</p>
+
+<p>Se você transpira muito ou treina em ambiente quente, considere adicionar eletrólitos (sódio, potássio) à água — especialmente se estiver comendo pouco (a ingestão de sódio e potássio cai junto com a de alimentos).</p>
+
+<h3>Estratégia 4: Ajuste de intensidade e volume</h3>
+<p>Nas fases de maior supressão de apetite, é inteligente reduzir temporariamente o volume de treino (menos séries por grupo muscular) e a intensidade (menos carga ou mais repetições com cargas menores). <a href="https://pubmed.ncbi.nlm.nih.gov/27433992/" target="_blank" rel="noopener noreferrer">Schoenfeld (2016)</a> demonstrou que volume e intensidade são variáveis ajustáveis — o objetivo de preservar o músculo pode ser atingido com volume moderado se a proteína está adequada.</p>
+
+<p>Isso não é dar um passo atrás. É adaptar o treino à realidade do momento para conseguir manter a consistência — e a consistência vale mais do que uma sessão intensa isolada.</p>
+
+<h3>Estratégia 5: Progressão conservadora</h3>
+<p>A <a href="/blog/progressao-de-carga">progressão de carga</a> continua sendo o princípio fundamental do treino de força. Mas com a disponibilidade energética reduzida, essa progressão pode ser mais lenta — e isso é normal. O objetivo nesse período é <em>manter</em> o que você tem, não necessariamente bater recordes pessoais a cada semana.</p>
+
+<blockquote>
+  <p>A fraqueza no treino com Retatrutida raramente é culpa do seu corpo sendo "fraco". É quase sempre uma questão de combustível insuficiente. Resolva o combustível e o desempenho melhora.</p>
+</blockquote>
+
+<h2>Quando a fraqueza é sinal de algo mais sério</h2>
+
+<p>A maioria dos casos de fraqueza durante o treino com Retatrutida é explicada pelas causas acima e melhora com ajustes nutricionais e de hidratação. Mas há situações que merecem atenção médica:</p>
+
+<ul>
+  <li>Tontura intensa que não melhora ao parar o exercício</li>
+  <li>Visão turva ou escura durante o treino</li>
+  <li>Tremores involuntários</li>
+  <li>Fraqueza que persiste dias após o treino</li>
+  <li>Palpitações ou dor no peito durante o exercício</li>
+</ul>
+
+<p>Se você experimenta qualquer um desses sintomas, interrompa o treino e consulte o médico responsável pelo seu tratamento. Não tente resolver por conta própria — é o domínio médico, não do personal trainer.</p>
+
+<p>Saiba mais sobre como estruturar o treino completo no artigo <a href="/blog/melhor-treino-para-quem-usa-retatrutida">melhor treino para quem usa Retatrutida</a>.</p>
+
+<h2>Como montar uma rotina que minimize a fraqueza</h2>
+
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">O posicionamento do ACSM (2009)</a> sobre progressão de exercício recomenda ajustar volume e intensidade conforme a capacidade de recuperação do indivíduo. Para usuários de Retatrutida, isso significa construir a rotina a partir de uma base conservadora e progredir gradualmente conforme o organismo se adapta.</p>
+
+<p>Uma rotina que minimiza a fraqueza durante o tratamento:</p>
+<ul>
+  <li>3x/semana de musculação, com no mínimo um dia de descanso entre sessões</li>
+  <li>Sessões de 40 a 50 minutos — suficiente para estimular o músculo sem esgotar as reservas</li>
+  <li>Refeição pré-treino sempre que possível</li>
+  <li>Hidratação planejada (não dependente da sede)</li>
+  <li>Caminhadas leves nos dias de descanso</li>
+</ul>
+
+<p>Veja mais sobre organização do programa em <a href="/blog/como-montar-treino-retatrutida">como montar um treino usando Retatrutida</a>.</p>
+
+<h2>Quer uma estratégia personalizada para o seu caso?</h2>
+
+<p>Se a fraqueza está comprometendo seus treinos e você não sabe por onde começar, posso ajudar. Na minha <a href="/consultoria">consultoria online</a>, monto um programa de treino e orientação nutricional adaptado ao seu contexto — incluindo o uso de Retatrutida — para que você consiga treinar com qualidade mesmo em déficit calórico.</p>
+
+<h2>Leia também:</h2>
+<ul>
+  <li><a href="/blog/melhor-treino-para-quem-usa-retatrutida">Melhor treino para quem usa Retatrutida</a></li>
+  <li><a href="/blog/como-montar-treino-retatrutida">Como montar um treino usando Retatrutida</a></li>
+  <li><a href="/blog/proteina-para-quem-usa-retatrutida">Proteína para quem usa Retatrutida</a></li>
+  <li><a href="/blog/progressao-de-carga">Progressão de carga: como continuar evoluindo</a></li>
+</ul>
+`,
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // ARTIGO — como-montar-treino-retatrutida
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    slug: "como-montar-treino-retatrutida",
+    title: "Como Montar um Treino Usando Retatrutida",
+    metaTitle: "Como Montar um Treino Usando Retatrutida | Montinho Personal Trainer",
+    metaDescription:
+      "Guia completo para montar um programa de treino durante o uso de Retatrutida: princípios, divisão de treino, seleção de exercícios, volume, intensidade e periodização adaptada.",
+    excerpt:
+      "Montar um treino eficiente durante o uso de Retatrutida exige adaptar princípios clássicos à realidade de menor disponibilidade energética. Este guia mostra como fazer isso passo a passo.",
+    category: "Treinamento",
+    date: "2026-06-26",
+    readTime: "10 min",
+    author: "Montinho",
+    tags: [
+      "como montar treino",
+      "retatrutida",
+      "programa de treino",
+      "musculação",
+      "personal trainer",
+      "emagrecimento com massa muscular",
+    ],
+    faq: [
+      {
+        question: "Qual o melhor tipo de treino para quem usa Retatrutida?",
+        answer:
+          "Musculação com ênfase em exercícios compostos (agachamento, levantamento terra, supino, remada) é o mais eficiente. Esses exercícios trabalham múltiplos grupos musculares ao mesmo tempo, maximizando o estímulo muscular em menos tempo — o que é vantajoso quando a energia disponível é limitada.",
+      },
+      {
+        question: "Quantas séries por grupo muscular com Retatrutida?",
+        answer:
+          "10 a 15 séries por grupo muscular por semana é um intervalo adequado para preservar e eventualmente ganhar massa muscular em déficit calórico. Em fases de maior supressão de apetite, 8 a 10 séries já são suficientes para manter o músculo.",
+      },
+      {
+        question: "Devo treinar full body ou dividir os grupos musculares com Retatrutida?",
+        answer:
+          "Full body 3x/semana é a divisão mais indicada para a maioria dos usuários de Retatrutida, especialmente no início do tratamento. Permite estimular cada grupo muscular com maior frequência usando menos volume por sessão — o que se adapta melhor à menor disponibilidade energética.",
+      },
+      {
+        question: "Quando começo a ver resultados de musculação com Retatrutida?",
+        answer:
+          "As mudanças na composição corporal (menos gordura, músculo preservado ou levemente aumentado) costumam ser visíveis entre 8 e 12 semanas de treino consistente combinado com a medicação. Nos primeiros meses, o foco deve ser consistência e preservação — os resultados estéticos chegam em seguida.",
+      },
+      {
+        question: "Posso fazer cardio além da musculação com Retatrutida?",
+        answer:
+          "Sim, mas com moderação. Caminhadas de 20 a 30 minutos nos dias de descanso são ideais. HIIT e cardio intenso só devem ser adicionados após adaptação ao tratamento e sempre como complemento — nunca substituindo a musculação.",
+      },
+      {
+        question: "Preciso de personal trainer para treinar com Retatrutida?",
+        answer:
+          "Não é obrigatório, mas ter orientação profissional faz diferença significativa nos resultados. Um personal trainer garante que você está estimulando os músculos certos, na intensidade certa, e ajusta o programa conforme o tratamento avança — o que é especialmente importante em um contexto de disponibilidade energética reduzida.",
+      },
+    ],
+    content: `
+<p>Montar um programa de treino durante o uso de Retatrutida não é simplesmente pegar qualquer planilha de musculação e seguir. O contexto é diferente: você está em déficit calórico significativo, com apetite suprimido e, possivelmente, com energia reduzida. Ignorar isso é um dos erros mais comuns — e mais caros em termos de perda de músculo.</p>
+
+<p>Este guia apresenta um passo a passo para construir um programa de treino eficiente e seguro durante o tratamento com Retatrutida.</p>
+
+<h2>Princípio 1: A musculação vem primeiro</h2>
+
+<p>O objetivo central do treino durante o uso de Retatrutida é <strong>preservar a massa muscular enquanto o emagrecimento acontece</strong>. E a única modalidade que faz isso com eficiência comprovada é o treino de força — a musculação.</p>
+
+<p>Cardio, HIIT e outras modalidades têm seu papel, mas são complementares. Se você tem energia limitada para treinar (o que é a realidade da maioria dos usuários, especialmente no início do tratamento), invista esse recurso primeiro onde o retorno é maior: no treino de força.</p>
+
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/22215276/" target="_blank" rel="noopener noreferrer">Wilson e colaboradores (2012)</a> demonstraram que no treinamento concorrente — quando força e cardio coexistem no programa — o treino de força deve ser priorizado para otimizar a composição corporal. Isso é ainda mais relevante quando a disponibilidade energética é limitada.</p>
+
+<h2>Princípio 2: Volume e intensidade adaptados à disponibilidade energética</h2>
+
+<p>O volume de treino ideal para hipertrofia em condições normais gira em torno de 10 a 20 séries por grupo muscular por semana, conforme a revisão de <a href="https://pubmed.ncbi.nlm.nih.gov/27433992/" target="_blank" rel="noopener noreferrer">Schoenfeld (2016)</a>. Para usuários de Retatrutida, especialmente nas primeiras semanas, o limite inferior desse intervalo é mais adequado.</p>
+
+<p>A lógica é simples: mais volume exige mais recuperação, que por sua vez exige mais energia e proteína. Com a ingestão alimentar reduzida, a capacidade de se recuperar de altos volumes de treino também é reduzida.</p>
+
+<p><strong>Recomendação prática por fase:</strong></p>
+<ul>
+  <li><strong>Fase inicial (semanas 1-8):</strong> 8 a 12 séries por grupo muscular por semana, intensidade moderada (60-70% da carga máxima)</li>
+  <li><strong>Fase intermediária (semanas 8-24):</strong> 10 a 15 séries por grupo muscular, intensidade progressiva</li>
+  <li><strong>Fase de manutenção e progressão:</strong> 12 a 16 séries, com progressão de carga regular</li>
+</ul>
+
+<h2>Princípio 3: A progressão de carga continua sendo o objetivo</h2>
+
+<p>Mesmo em déficit calórico severo, a progressão de carga é o que sinaliza ao músculo que ele precisa ser preservado. Se você não apresenta nenhum estímulo progressivo, o corpo não tem razão para manter aquela massa muscular "cara" em termos energéticos.</p>
+
+<p>A progressão pode ser mais lenta do que em um contexto de alimentação abundante — e tudo bem. O importante é que ela exista. Veja mais em <a href="/blog/progressao-de-carga">progressão de carga: como continuar evoluindo</a>.</p>
+
+<h2>Divisão de treino recomendada: Full Body 3x/semana</h2>
+
+<p>Para a maioria dos usuários de Retatrutida, especialmente no início do tratamento, o <strong>treino full body 3 vezes por semana</strong> é a divisão mais eficiente.</p>
+
+<p>Vantagens do full body nesse contexto:</p>
+<ul>
+  <li>Cada grupo muscular recebe estímulo 3 vezes por semana — frequência ideal para preservação muscular</li>
+  <li>Volume por sessão é menor — o que se adapta melhor à menor disponibilidade energética</li>
+  <li>Flexibilidade: se uma sessão for cancelada (por mal-estar ou efeito colateral da medicação), os outros treinos da semana ainda cobrem todos os grupos</li>
+  <li>Sessões mais curtas (40-50 min) são mais fáceis de completar quando a energia está reduzida</li>
+</ul>
+
+<h2>Exemplo de programa Full Body 3x/semana</h2>
+
+<p>Estrutura para segunda, quarta e sexta (ou qualquer 3 dias não consecutivos):</p>
+
+<h3>Exercícios base (todos os dias):</h3>
+<ul>
+  <li><strong>Agachamento livre ou leg press</strong> — 3 séries de 8-12 repetições</li>
+  <li><strong>Supino reto com barra ou halteres</strong> — 3 séries de 8-12 repetições</li>
+  <li><strong>Remada curvada ou puxada no pulley</strong> — 3 séries de 8-12 repetições</li>
+  <li><strong>Desenvolvimento de ombros</strong> — 2 séries de 10-15 repetições</li>
+  <li><strong>Rosca direta ou rosca martelo</strong> — 2 séries de 10-15 repetições</li>
+  <li><strong>Tríceps no pulley ou francês</strong> — 2 séries de 10-15 repetições</li>
+  <li><strong>Panturrilha em pé ou sentado</strong> — 3 séries de 12-15 repetições</li>
+  <li><strong>Prancha abdominal</strong> — 3 séries de 30-45 segundos</li>
+</ul>
+
+<p>Duração total: 45 a 55 minutos, incluindo aquecimento e desaquecimento.</p>
+
+<h2>Seleção de exercícios: priorize compostos</h2>
+
+<p>Exercícios compostos — aqueles que recrutam múltiplos grupos musculares simultaneamente — são mais eficientes para preservação muscular em déficit calórico. Com a energia limitada, é melhor trabalhar muitos músculos em um exercício do que vários exercícios para um único músculo.</p>
+
+<p>Priorize:</p>
+<ul>
+  <li>Agachamento, leg press, afundo (quadríceps + glúteo + posterior)</li>
+  <li>Levantamento terra romeno, stiff (posterior de coxa + glúteo + lombar)</li>
+  <li>Supino, crucifixo, flexão (peito + ombro + tríceps)</li>
+  <li>Remada, puxada, pull-up (costas + bíceps + ombro posterior)</li>
+  <li>Desenvolvimento (ombros + tríceps)</li>
+</ul>
+
+<p>Exercícios isolados (rosca, tríceps isolado, extensora) são úteis como complemento, mas não devem dominar o programa quando o tempo e a energia são limitados.</p>
+
+<h2>Periodização adaptada para o contexto de GLP-1</h2>
+
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">O posicionamento do ACSM (2009)</a> sobre progressão de exercício estabelece que a periodização — variação planejada de volume e intensidade ao longo do tempo — é essencial para progresso contínuo e prevenção de platô.</p>
+
+<p>Para usuários de Retatrutida, a periodização precisa considerar também as fases do tratamento:</p>
+
+<ul>
+  <li><strong>Fase de adaptação (semanas 1-8):</strong> Volume conservador, intensidade moderada. O objetivo é criar o hábito de treinar e adaptar o corpo ao exercício em déficit calórico. Não tente progredir rápido demais aqui.</li>
+  <li><strong>Fase de manutenção e progressão lenta (semanas 8-24):</strong> Progressão gradual de carga a cada 2 a 3 semanas. Foco em manter ou levemente aumentar as cargas conforme a adaptação permite.</li>
+  <li><strong>Fase de consolidação:</strong> Com o organismo mais adaptado ao tratamento e a ingestão alimentar mais estável, o treino pode se aproximar de um programa convencional de hipertrofia.</li>
+</ul>
+
+<p>Veja mais sobre periodização no artigo sobre <a href="/blog/frequencia-de-treino">frequência de treino</a> e como ela se relaciona com o volume total de trabalho.</p>
+
+<h2>O papel do cardio no programa</h2>
+
+<p>Cardio leve — principalmente caminhadas de 20 a 30 minutos — é um complemento valioso nos dias sem musculação. Aumenta o gasto calórico total, melhora o humor e não compromete a recuperação muscular.</p>
+
+<p>HIIT e cardio mais intenso só devem entrar no programa após adaptação ao tratamento e sempre como complemento à musculação — nunca substituindo-a. Veja mais em <a href="/blog/cardio-ou-musculacao-retatrutida">cardio ou musculação com Retatrutida</a>.</p>
+
+<blockquote>
+  <p>O treino perfeito com Retatrutida não é o mais intenso — é o mais consistente. Um programa que você consegue cumprir todas as semanas, mesmo com energia reduzida, é infinitamente melhor do que um programa ideal que você abandona na segunda semana.</p>
+</blockquote>
+
+<h2>Nutrição que sustenta o treino</h2>
+
+<p>Nenhum programa de treino funciona sem o suporte nutricional mínimo. Com a Retatrutida suprimindo o apetite, as prioridades são:</p>
+
+<ul>
+  <li><strong>Proteína adequada:</strong> mínimo 1,6 g/kg de peso corporal por dia, conforme <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Morton et al. (2018)</a></li>
+  <li><strong>Refeição pré-treino:</strong> mesmo pequena, com proteína e carboidratos de fácil digestão</li>
+  <li><strong>Hidratação planejada:</strong> 2 a 3 litros de água por dia, independente da sensação de sede</li>
+</ul>
+
+<p>Saiba mais sobre a estratégia proteica em <a href="/blog/proteina-para-quem-usa-retatrutida">proteína para quem usa Retatrutida</a>.</p>
+
+<h2>Quer um programa montado para o seu caso específico?</h2>
+
+<p>Se você quer um programa de treino individualizado que respeite o momento do seu tratamento com Retatrutida e maximize a preservação de massa muscular, estou disponível na minha <a href="/consultoria">consultoria online</a>. O programa é ajustado conforme você avança no tratamento e conforme o seu corpo responde.</p>
+
+<h2>Leia também:</h2>
+<ul>
+  <li><a href="/blog/melhor-treino-para-quem-usa-retatrutida">Melhor treino para quem usa Retatrutida</a></li>
+  <li><a href="/blog/como-evitar-perder-massa-muscular-retatrutida">Como evitar perder massa muscular com Retatrutida</a></li>
+  <li><a href="/blog/fraqueza-durante-treino-retatrutida">Como evitar fraqueza durante os treinos com Retatrutida</a></li>
+  <li><a href="/blog/progressao-de-carga">Progressão de carga: como continuar evoluindo</a></li>
+</ul>
+`,
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // ARTIGO — retatrutida-ou-mounjaro
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    slug: "retatrutida-ou-mounjaro",
+    title: "Retatrutida ou Mounjaro: Quais as Diferenças?",
+    metaTitle: "Retatrutida ou Mounjaro: Quais as Diferenças? | Montinho Personal Trainer",
+    metaDescription:
+      "Comparação informativa entre Retatrutida e Mounjaro: mecanismos de ação, dados clínicos de perda de peso e implicações para o treino e preservação muscular. A escolha do medicamento é sempre do médico.",
+    excerpt:
+      "Retatrutida e Mounjaro são medicamentos diferentes com mecanismos distintos. Este artigo compara os dois de forma objetiva — mecanismo, dados de eficácia e implicações para o treino. A decisão sobre qual usar é sempre do seu médico.",
+    category: "Saúde",
+    date: "2026-06-26",
+    readTime: "10 min",
+    author: "Montinho",
+    tags: [
+      "retatrutida",
+      "mounjaro",
+      "tirzepatida",
+      "GLP-1",
+      "emagrecimento",
+      "comparação de medicamentos",
+      "personal trainer",
+    ],
+    faq: [
+      {
+        question: "Retatrutida é melhor que Mounjaro para emagrecer?",
+        answer:
+          "Os dados preliminares de ensaios clínicos de fase 2 da Retatrutida mostraram percentuais de perda de peso maiores do que os observados nos estudos SURMOUNT do Mounjaro. No entanto, comparações diretas entre medicamentos diferentes, em estudos diferentes, com populações diferentes, devem ser interpretadas com cautela. A decisão entre um e outro é exclusivamente médica.",
+      },
+      {
+        question: "Qual a diferença de mecanismo entre Retatrutida e Mounjaro?",
+        answer:
+          "O Mounjaro (tirzepatida) é um agonista duplo dos receptores GLP-1 e GIP. A Retatrutida é um agonista triplo: GLP-1, GIP e glucagon. A adição do receptor de glucagon na Retatrutida é apontada como responsável pelo potencial de perda de peso ainda maior, pois o glucagon aumenta o gasto energético e a oxidação de gordura.",
+      },
+      {
+        question: "A abordagem de treino muda entre Mounjaro e Retatrutida?",
+        answer:
+          "Na prática, não de forma significativa. Ambos os medicamentos causam supressão de apetite intensa e déficit calórico acentuado. Para o personal trainer, a abordagem é essencialmente a mesma: musculação 3-4x/semana, proteína adequada, progressão de carga e cardio moderado como complemento.",
+      },
+      {
+        question: "Posso trocar de Mounjaro para Retatrutida sozinho?",
+        answer:
+          "Não. Qualquer alteração no protocolo medicamentoso deve ser feita com orientação e prescrição médica. Isso inclui troca de medicamento, ajuste de dose e descontinuação. O papel do personal trainer é no treino e no suporte ao estilo de vida — não na medicação.",
+      },
+      {
+        question: "A Retatrutida está disponível no Brasil?",
+        answer:
+          "A situação regulatória muda continuamente. Consulte seu médico e as informações atualizadas da ANVISA para saber sobre a disponibilidade e status de aprovação da Retatrutida no Brasil. Esta é uma informação que muda com frequência e deve ser verificada em fontes médicas atualizadas.",
+      },
+    ],
+    content: `
+<p>Dois medicamentos para emagrecimento têm dominado as conversas sobre tratamento de obesidade nos últimos anos: o Mounjaro (tirzepatida) e a Retatrutida. Ambos pertencem à família dos agonistas de GLP-1, mas existem diferenças importantes entre eles — diferenças que explicam, pelo menos em parte, por que os dados clínicos da Retatrutida chamaram tanto a atenção da comunidade médica.</p>
+
+<p>Este artigo apresenta uma comparação objetiva e informativa. <strong>Não recomendo nem prescrevo nenhum dos dois — isso é domínio exclusivo do médico.</strong> O que posso oferecer é um entendimento claro das diferenças e o que elas significam do ponto de vista do treino e da preservação muscular.</p>
+
+<h2>O que é o Mounjaro (tirzepatida)</h2>
+
+<p>O Mounjaro, cujo princípio ativo é a tirzepatida, é classificado como um <strong>agonista duplo GLP-1/GIP</strong> — ou seja, age sobre dois receptores simultaneamente.</p>
+
+<p>O receptor GLP-1 (peptídeo semelhante ao glucagon tipo 1) reduz o apetite, retarda o esvaziamento gástrico e melhora a resposta insulínica. O receptor GIP (peptídeo insulinotrópico dependente de glicose) potencializa a resposta insulínica e, em combinação com o GLP-1, parece amplificar a supressão do apetite.</p>
+
+<p>Os estudos SURMOUNT — programa de ensaios clínicos de fase 3 do Mounjaro para obesidade — demonstraram perdas médias de peso de 15% a 22% do peso corporal, dependendo da dose, ao longo de 72 semanas. Esses números representaram um avanço significativo em relação às gerações anteriores de medicamentos para emagrecimento.</p>
+
+<h2>O que é a Retatrutida</h2>
+
+<p>A Retatrutida vai um passo além: é classificada como um <strong>agonista triplo GLP-1/GIP/glucagon</strong>. Além de agir sobre os dois receptores do Mounjaro, a Retatrutida também ativa receptores de glucagon.</p>
+
+<p>O glucagon é um hormônio produzido pelo pâncreas que tem efeito oposto à insulina: aumenta a glicose sanguínea, estimula a quebra de gordura no tecido adiposo e aumenta o gasto energético. Quando ativado de forma controlada e contínua, como a Retatrutida faz, o receptor de glucagon contribui para:</p>
+<ul>
+  <li>Maior oxidação de gordura (lipólise)</li>
+  <li>Aumento do gasto energético basal</li>
+  <li>Redução de gordura hepática (fígado gorduroso)</li>
+</ul>
+
+<p>Os dados de ensaio clínico de fase 2 da Retatrutida, publicados em 2023 no New England Journal of Medicine, mostraram perdas médias de peso de até 24% em 48 semanas na dose mais alta testada — números que superaram os observados com qualquer outro medicamento para emagrecimento até então.</p>
+
+<h2>Comparação dos mecanismos de ação</h2>
+
+<p>Para visualizar a diferença de forma clara:</p>
+
+<ul>
+  <li><strong>Mounjaro (tirzepatida):</strong> GLP-1 + GIP — agonista duplo</li>
+  <li><strong>Retatrutida:</strong> GLP-1 + GIP + glucagon — agonista triplo</li>
+</ul>
+
+<p>A adição do glucagon é o elemento diferenciador. Enquanto GLP-1 e GIP trabalham principalmente pela redução do apetite e melhora da resposta insulínica, o glucagon adiciona uma camada de aumento do gasto energético e aceleração da oxidação de gordura.</p>
+
+<p>Na teoria, isso significa que a Retatrutida não apenas faz você comer menos — também faz o corpo gastar mais energia. É essa combinação que os pesquisadores apontam como responsável pelo potencial de perda de peso superior.</p>
+
+<h2>Dados clínicos: o que os números dizem</h2>
+
+<p>É importante ser honesto sobre as limitações das comparações entre estudos diferentes:</p>
+
+<ul>
+  <li>Os estudos do Mounjaro (SURMOUNT) são de fase 3, com populações grandes e metodologia robusta para aprovação regulatória</li>
+  <li>Os dados da Retatrutida publicados são de fase 2, com amostras menores e metodologias diferentes</li>
+  <li>Comparar percentuais de perda de peso entre estudos com populações, durações e doses diferentes tem limitações metodológicas importantes</li>
+</ul>
+
+<p>Com essas ressalvas em mente, os dados disponíveis até o momento sugerem que a Retatrutida tem potencial de perda de peso superior ao Mounjaro — mas estudos de fase 3 são necessários para confirmar essa superioridade em condições comparáveis.</p>
+
+<h2>O que muda do ponto de vista do treino</h2>
+
+<p>Do ponto de vista do personal trainer, a diferença entre Mounjaro e Retatrutida é menor do que parece. Ambos:</p>
+
+<ul>
+  <li>Suprimem o apetite de forma intensa, reduzindo a ingestão calórica significativamente</li>
+  <li>Criam um déficit calórico acentuado que acelera o emagrecimento</li>
+  <li>Aumentam o risco de perda de massa muscular se o treino e a proteína não forem adequados</li>
+  <li>Exigem a mesma abordagem de treino: musculação como prioridade, progressão de carga, proteína adequada</li>
+</ul>
+
+<p>A maior supressão de apetite potencialmente observada com a Retatrutida pode significar que os usuários têm ainda menos energia disponível para treinar — o que reforça a importância de estratégias nutricionais ao redor do treino que discutimos em outros artigos.</p>
+
+<p>Para usuários de Mounjaro, veja <a href="/blog/como-evitar-perder-massa-muscular-mounjaro">como evitar perder massa muscular com Mounjaro</a>. Para usuários de Retatrutida, o guia equivalente está em <a href="/blog/como-evitar-perder-massa-muscular-retatrutida">como evitar perder massa muscular com Retatrutida</a>.</p>
+
+<h2>Implicações para preservação muscular</h2>
+
+<p>O risco de perda muscular existe com ambos os medicamentos — e pela mesma razão: déficit calórico acelerado combinado com ingestão proteica insuficiente. A estratégia de preservação é idêntica nos dois casos:</p>
+
+<ul>
+  <li><strong>Musculação 3 a 4x/semana:</strong> o estímulo de força é o sinal que diz ao corpo para preservar o músculo</li>
+  <li><strong>Proteína mínima de 1,6 g/kg/dia:</strong> conforme <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Morton et al. (2018)</a> e <a href="https://pubmed.ncbi.nlm.nih.gov/23739654/" target="_blank" rel="noopener noreferrer">Helms et al. (2014)</a></li>
+  <li><strong>Progressão de carga:</strong> mesmo que mais lenta, é essencial para manter o estímulo adaptativo</li>
+  <li><strong>Sono adequado:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/21550729/" target="_blank" rel="noopener noreferrer">Dattilo et al. (2011)</a> confirmam a importância do sono para composição corporal</li>
+</ul>
+
+<blockquote>
+  <p>Do ponto de vista do personal trainer, não importa qual dos dois você usa: a abordagem de treino é a mesma. O que muda é a dose de paciência e a atenção ao combustível disponível para treinar.</p>
+</blockquote>
+
+<h2>Efeitos colaterais: são similares?</h2>
+
+<p>Os perfis de efeitos colaterais de ambos os medicamentos são semelhantes, já que compartilham o mesmo mecanismo base (GLP-1 e GIP):</p>
+
+<ul>
+  <li>Náusea, especialmente nas primeiras semanas e após ajustes de dose</li>
+  <li>Vômito e diarreia</li>
+  <li>Constipação</li>
+  <li>Perda de apetite intensa</li>
+</ul>
+
+<p>A adição do receptor de glucagon na Retatrutida pode trazer algumas diferenças no perfil de efeitos colaterais, mas os dados completos sobre isso aguardam os estudos de fase 3. Qualquer questão sobre efeitos colaterais deve ser discutida com o médico responsável.</p>
+
+<h2>A decisão entre Mounjaro e Retatrutida é sempre médica</h2>
+
+<p>Este artigo tem objetivo informativo. A escolha entre Mounjaro, Retatrutida ou qualquer outro medicamento para emagrecimento é uma decisão médica que leva em conta:</p>
+
+<ul>
+  <li>Histórico clínico do paciente</li>
+  <li>Comorbidades presentes (diabetes, hipertensão, etc.)</li>
+  <li>Disponibilidade e status regulatório do medicamento</li>
+  <li>Resposta individual a tratamentos anteriores</li>
+  <li>Custo e adesão ao tratamento</li>
+</ul>
+
+<p>O papel do personal trainer começa onde a prescrição médica termina: estruturar o treino que vai maximizar a preservação muscular e o resultado composição corporal durante o tratamento — independente de qual medicamento for prescrito.</p>
+
+<h2>Quer estruturar seu treino durante o tratamento?</h2>
+
+<p>Se você está usando Mounjaro, Retatrutida ou qualquer outro GLP-1 e quer garantir que o emagrecimento aconteça com preservação máxima de massa muscular, posso ajudar na minha <a href="/consultoria">consultoria online</a>. O programa de treino e a orientação nutricional são adaptados ao seu contexto — incluindo o medicamento que você usa.</p>
+
+<h2>Leia também:</h2>
+<ul>
+  <li><a href="/blog/como-evitar-perder-massa-muscular-retatrutida">Como evitar perder massa muscular com Retatrutida</a></li>
+  <li><a href="/blog/como-evitar-perder-massa-muscular-mounjaro">Como evitar perder massa muscular com Mounjaro</a></li>
+  <li><a href="/blog/musculacao-durante-uso-de-retatrutida">Musculação durante o uso de Retatrutida</a></li>
+  <li><a href="/blog/como-montar-treino-retatrutida">Como montar um treino usando Retatrutida</a></li>
+</ul>
+`,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
