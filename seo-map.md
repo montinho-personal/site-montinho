@@ -88,6 +88,22 @@
 |--------|------|--------|
 | ⭐ Pilar — Como Prevenir Lesões no Treino | `como-prevenir-lesoes-no-treino` | Publicado |
 
+### 💉 Cluster: Mounjaro / GLP-1 e Composição Corporal
+**Sem pilar único — cluster temático**
+
+| Artigo | Slug | Status |
+|--------|------|--------|
+| Como Evitar Perder Massa Muscular Usando Mounjaro | `como-evitar-perder-massa-muscular-mounjaro` | Publicado |
+| Melhor Treino Para Quem Usa Mounjaro | `melhor-treino-para-quem-usa-mounjaro` | Publicado |
+| Mounjaro Faz Perder Músculos? | `mounjaro-faz-perder-musculos` | Publicado |
+| Musculação Durante o Uso de Mounjaro | `musculacao-durante-uso-de-mounjaro` | Publicado |
+| Como Preservar Massa Muscular Durante o Emagrecimento | `como-preservar-massa-muscular-durante-emagrecimento` | Publicado |
+| Quanto de Proteína Consumir Usando Mounjaro | `proteina-para-quem-usa-mounjaro` | Publicado |
+| Creatina Para Quem Usa Mounjaro | `creatina-para-quem-usa-mounjaro` | Publicado |
+| Whey Protein Para Quem Usa Mounjaro | `whey-protein-para-quem-usa-mounjaro` | Publicado |
+| Cardio ou Musculação Durante o Uso de Mounjaro? | `cardio-ou-musculacao-mounjaro` | Publicado |
+| Como Voltar a Treinar Após Começar o Mounjaro | `como-voltar-a-treinar-apos-comecar-mounjaro` | Publicado |
+
 ---
 
 ## Mapa de Links Internos (Estado Pós-Auditoria)
