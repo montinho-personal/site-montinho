@@ -3,6 +3,14 @@ import { blogPosts, BLOG_CATEGORIES } from "@/lib/blog";
 import SectionTitle from "@/components/ui/SectionTitle";
 import BlogList from "@/components/blog/BlogList";
 
+const sortedPosts = blogPosts
+  .map((post, index) => ({ post, index }))
+  .sort((a, b) => {
+    const dateDiff = new Date(b.post.date).getTime() - new Date(a.post.date).getTime();
+    return dateDiff !== 0 ? dateDiff : b.index - a.index;
+  })
+  .map(({ post }) => post);
+
 export const metadata: Metadata = {
   title: "Blog · Treinamento, Nutrição e Transformação",
   description:
@@ -23,7 +31,7 @@ export default function BlogIndex() {
         </div>
       </section>
 
-      <BlogList posts={blogPosts} categories={BLOG_CATEGORIES} />
+      <BlogList posts={sortedPosts} categories={BLOG_CATEGORIES} />
     </>
   );
 }
