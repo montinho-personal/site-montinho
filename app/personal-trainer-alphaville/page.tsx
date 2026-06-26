@@ -244,20 +244,18 @@ export default function PersonalTrainerAlphaville() {
                 </li>
               ))}
             </ul>
-            <div
-              className="flex-shrink-0 mx-auto sm:mx-0 relative overflow-hidden"
-              style={{ width: "240px", height: "380px" }}
-            >
+            <div className="flex-shrink-0 mx-auto sm:mx-0">
               <Image
                 src="/Personal%20Trainer%20Alphaville%20SP.jpg"
                 alt="Personal Trainer Alphaville SP"
                 title="Personal Trainer Alphaville SP"
                 aria-label="Personal Trainer Alphaville SP"
-                fill
+                width={4320}
+                height={7680}
                 loading="lazy"
                 decoding="async"
                 sizes="240px"
-                style={{ objectFit: "cover", objectPosition: "top center" }}
+                style={{ width: "240px", height: "auto", display: "block" }}
               />
             </div>
           </div>
