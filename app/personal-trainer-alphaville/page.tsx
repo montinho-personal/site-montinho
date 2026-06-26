@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
@@ -118,16 +119,32 @@ export default function PersonalTrainerAlphaville() {
           >
             Vivo em Alphaville há mais de 20 anos. Conheço esse lugar como poucos.
           </h2>
-          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
-            <p>
-              Alphaville tem um ritmo que quem não vive aqui não entende. A saída para São Paulo às 6h30, o trânsito de volta que ninguém controla, a academia que fecha às 22h, o jantar que acontece só depois das 21h. Quando você mora no mesmo lugar há mais de duas décadas, você para de tentar encaixar o treino num modelo padrão — e começa a construir um método que cabe nessa realidade.
-            </p>
-            <p>
-              Minha paixão pela musculação não nasceu de um livro. Nasceu de necessidade. Cresci convivendo com o excesso de peso, passei anos tentando dietas e protocolos que prometiam resultado rápido e entregavam frustração. Foi só quando decidi estudar de verdade — entender como o corpo funciona, o que a ciência diz sobre treino e composição corporal — que as coisas mudaram. Para mim primeiro. Depois para os meus alunos.
-            </p>
-            <p>
-              Hoje trabalho com pessoas que têm a mesma rotina que eu tinha: agenda lotada, pouca margem para erro e zero paciência para perder tempo. O que ofereço não é uma ficha de treino — é um protocolo construído especificamente para você, com ajustes contínuos conforme seu corpo responde.
-            </p>
+          <div className="grid sm:grid-cols-[1fr_auto] gap-10 items-start">
+            <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
+              <p>
+                Alphaville tem um ritmo que quem não vive aqui não entende. A saída para São Paulo às 6h30, o trânsito de volta que ninguém controla, a academia que fecha às 22h, o jantar que acontece só depois das 21h. Quando você mora no mesmo lugar há mais de duas décadas, você para de tentar encaixar o treino num modelo padrão — e começa a construir um método que cabe nessa realidade.
+              </p>
+              <p>
+                Minha paixão pela musculação não nasceu de um livro. Nasceu de necessidade. Cresci convivendo com o excesso de peso, passei anos tentando dietas e protocolos que prometiam resultado rápido e entregavam frustração. Foi só quando decidi estudar de verdade — entender como o corpo funciona, o que a ciência diz sobre treino e composição corporal — que as coisas mudaram. Para mim primeiro. Depois para os meus alunos.
+              </p>
+              <p>
+                Hoje trabalho com pessoas que têm a mesma rotina que eu tinha: agenda lotada, pouca margem para erro e zero paciência para perder tempo. O que ofereço não é uma ficha de treino — é um protocolo construído especificamente para você, com ajustes contínuos conforme seu corpo responde.
+              </p>
+            </div>
+            <div className="flex-shrink-0 mx-auto sm:mx-0">
+              <Image
+                src="/Treinador%20Alphaville.jpg"
+                alt="Treinador Alphaville"
+                title="Treinador Alphaville"
+                aria-label="Treinador Alphaville"
+                width={260}
+                height={462}
+                loading="lazy"
+                decoding="async"
+                className="object-cover object-top"
+                style={{ width: "260px", height: "462px", maxWidth: "100%" }}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -182,6 +199,20 @@ export default function PersonalTrainerAlphaville() {
               </div>
             ))}
           </div>
+
+          <div className="mt-12 relative w-full overflow-hidden" style={{ height: "420px" }}>
+            <Image
+              src="/Personal%20Trainer%20Alphaville.jpg"
+              alt="Personal Trainer Alphaville"
+              title="Personal Trainer Alphaville"
+              aria-label="Personal Trainer Alphaville"
+              fill
+              loading="lazy"
+              decoding="async"
+              className="object-cover object-center"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+          </div>
         </div>
       </section>
 
@@ -197,21 +228,37 @@ export default function PersonalTrainerAlphaville() {
           <p className="text-gray-400 font-light mb-10 leading-relaxed">
             Alphaville concentra um perfil de pessoa muito específico. Executivos, empreendedores, profissionais liberais, mães que conciliam filhos e carreira — todos com uma coisa em comum: tempo escasso e exigência alta. Trabalho com:
           </p>
-          <ul className="space-y-4">
-            {[
-              "Quem quer emagrecer com método — sem dietas radicais que não sustentam",
-              "Quem busca hipertrofia real, não apenas volume aparente de treino",
-              "Quem voltou ao treino após anos parado e precisa reconstruir a base com segurança",
-              "Quem tem histórico de lesão e precisa de um protocolo que respeite essas limitações",
-              "Quem já treina mas chegou num platô onde parece que nada mais evolui",
-              "Quem nunca teve acompanhamento e quer fazer isso da forma certa desde o início",
-            ].map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-gray-300 font-light">
-                <span className="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-white/40" />
-                {item}
-              </li>
-            ))}
-          </ul>
+          <div className="grid sm:grid-cols-[1fr_auto] gap-10 items-start">
+            <ul className="space-y-4">
+              {[
+                "Quem quer emagrecer com método — sem dietas radicais que não sustentam",
+                "Quem busca hipertrofia real, não apenas volume aparente de treino",
+                "Quem voltou ao treino após anos parado e precisa reconstruir a base com segurança",
+                "Quem tem histórico de lesão e precisa de um protocolo que respeite essas limitações",
+                "Quem já treina mas chegou num platô onde parece que nada mais evolui",
+                "Quem nunca teve acompanhamento e quer fazer isso da forma certa desde o início",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-gray-300 font-light">
+                  <span className="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-white/40" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <div className="flex-shrink-0 mx-auto sm:mx-0">
+              <Image
+                src="/Personal%20Trainer%20Alphaville%20SP.jpg"
+                alt="Personal Trainer Alphaville SP"
+                title="Personal Trainer Alphaville SP"
+                aria-label="Personal Trainer Alphaville SP"
+                width={240}
+                height={427}
+                loading="lazy"
+                decoding="async"
+                className="object-cover object-top"
+                style={{ width: "240px", height: "427px", maxWidth: "100%" }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
