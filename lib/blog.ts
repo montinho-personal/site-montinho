@@ -13838,7 +13838,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Na minha prática como personal trainer em Alphaville, um dos diagnósticos que mais ouço dos alunos na primeira consulta é escoliose. A frase que quase sempre vem junto é: <em>"O médico disse que tenho escoliose. Posso fazer musculação?"</em> — e, muitas vezes, o próprio médico deu uma resposta vaga, sem orientações práticas sobre como proceder na academia.</p>
 
-<p>A verdade é que a escoliose não é uma contraindicação absoluta ao treinamento com pesos. Pelo contrário: quando o treino é corretamente planejado, ele pode ser uma das ferramentas mais eficazes para estabilizar a curvatura, reduzir dores e melhorar a função muscular. O problema está no treino genérico, sem adaptação, que ignora as particularidades da condição.</p>
+<p>A verdade é que a escoliose não é uma contraindicação absoluta ao treinamento com pesos. Pelo contrário: quando o treino é corretamente planejado, ele pode ser uma das ferramentas mais eficazes para estabilizar a curvatura, reduzir dores e melhorar a função muscular — em consonância com as <a href="https://pubmed.ncbi.nlm.nih.gov/28449692/" target="_blank" rel="noopener noreferrer">diretrizes internacionais de reabilitação para escoliose idiopática (SOSORT)</a>. O problema está no treino genérico, sem adaptação, que ignora as particularidades da condição.</p>
 
 <h2>O que é escoliose e quais são os seus tipos</h2>
 
@@ -13968,7 +13968,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Ao longo dos meus anos como personal trainer em Alphaville, poucos problemas são tão frequentes quanto a queixa de dor no ombro. E quando o aluno chega com um laudo na mão dizendo "lesão no manguito rotador", a primeira pergunta é sempre a mesma: <em>"Vou ter que parar de treinar?"</em></p>
 
-<p>A resposta honesta é: não necessariamente. Mas treinar do jeito errado pode transformar uma lesão parcial em uma ruptura total — e uma ruptura total em uma indicação cirúrgica. A diferença está em entender o que é essa estrutura, qual é o grau da sua lesão e como adaptar o treino de forma inteligente.</p>
+<p>A resposta honesta é: não necessariamente. Mas treinar do jeito errado pode transformar uma lesão parcial em uma ruptura total — e uma ruptura total em uma indicação cirúrgica. A <a href="https://pubmed.ncbi.nlm.nih.gov/19302878/" target="_blank" rel="noopener noreferrer">literatura científica aponta o exercício supervisionado como tratamento conservador de primeira escolha para lesões do manguito rotador</a>. A diferença está em entender o que é essa estrutura, qual é o grau da sua lesão e como adaptar o treino de forma inteligente.</p>
 
 <h2>O que é o manguito rotador</h2>
 
@@ -14690,7 +14690,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>O que esperar como resultado com personal trainer no Residencial Zero</h2>
 
-<p>Resultado não é promessa de prazo — é progressão verificável. A cada reavaliação mensal, medimos composição corporal, evolução de força e qualidade de movimento. Você sabe exatamente onde estava, onde está e o que falta para chegar onde quer. Sem suposição, sem achismo.</p>
+<p>Resultado não é promessa de prazo — é progressão verificável. A cada reavaliação mensal — seguindo os parâmetros do <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">American College of Sports Medicine para progressão em treinamento resistido</a> — medimos composição corporal, evolução de força e qualidade de movimento. Você sabe exatamente onde estava, onde está e o que falta para chegar onde quer. Sem suposição, sem achismo.</p>
 
 <p>Veja exemplos concretos de alunos que passaram por esse processo na <a href="/resultados">página de resultados</a>. Perfis distintos, objetivos diferentes, mesma metodologia — e resultado real em todos os casos.</p>
 
@@ -14756,7 +14756,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>O conhecimento sobre hipertrofia, emagrecimento e longevidade muscular avançou muito nas últimas duas décadas. O que era prescrito como ideal em 2005 mudou significativamente com base em pesquisas sólidas. Personal trainer que atualiza o método continuamente entrega resultado que o de 2005 não entregava.</p>
 
-<p>Trabalho com método baseado na ciência mais atual: sobrecarga progressiva estruturada, volume adequado por grupo muscular, execução biomecânica correta e periodização planejada. Nada de modismos. Nada de protocolos sem evidência.</p>
+<p>Trabalho com método baseado na ciência mais atual: <a href="https://pubmed.ncbi.nlm.nih.gov/24734894/" target="_blank" rel="noopener noreferrer">sobrecarga progressiva estruturada, volume adequado</a> por grupo muscular, execução biomecânica correta e periodização planejada. Nada de modismos. Nada de protocolos sem evidência.</p>
 
 <h2>História: de onde vem a empatia que orienta o meu trabalho</h2>
 
@@ -14827,7 +14827,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Eficiência no treino: fazer mais em menos tempo sem sacrificar resultado</h2>
 
-<p>A grande maioria das pessoas que treina sem acompanhamento profissional desperdiça pelo menos 30% do tempo de treino. Série desnecessária, exercício errado para o objetivo, tempo de descanso mal calibrado, progressão inexistente. Com personal trainer, cada minuto do treino tem propósito claro.</p>
+<p>A grande maioria das pessoas que treina sem acompanhamento profissional desperdiça pelo menos 30% do tempo de treino — e <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">as diretrizes do ACSM reforçam que a prescrição individualizada é determinante para progressão real</a>. Série desnecessária, exercício errado para o objetivo, tempo de descanso mal calibrado, progressão inexistente. Com personal trainer, cada minuto do treino tem propósito claro.</p>
 
 <p>Para moradores do Residencial 2 com agenda apertada, isso não é detalhe — é a diferença entre treino que produz resultado e treino que apenas consome tempo.</p>
 
@@ -14910,7 +14910,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Progressão estruturada: o que separa quem evolui de quem estagna</h2>
 
-<p>A grande maioria das pessoas que treina sem acompanhamento profissional estagna em algum momento. A razão quase sempre é a mesma: o estímulo parou de evoluir antes do corpo parar de se adaptar. Progressão de carga não acontece sozinha — precisa ser planejada e monitorada.</p>
+<p>A grande maioria das pessoas que treina sem acompanhamento profissional estagna em algum momento — fenômeno explicado pelo <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">princípio da adaptação progressiva descrito pelo American College of Sports Medicine</a>. A razão quase sempre é a mesma: o estímulo parou de evoluir antes do corpo parar de se adaptar. Progressão de carga não acontece sozinha — precisa ser planejada e monitorada.</p>
 
 <p>O protocolo que monto para moradores do Residencial 3 inclui progressão estruturada de carga, volume e intensidade — com revisão mensal baseada na resposta real do corpo de cada aluno. Sem stagnação, sem platô por falta de planejamento.</p>
 
@@ -14966,7 +14966,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       },
     ],
     content: `
-<p>A ciência do exercício avançou muito nos últimos 20 anos. O que é prescrito hoje como ideal para hipertrofia, emagrecimento ou longevidade muscular é incomparavelmente mais sólido do que o que estava disponível no início dos anos 2000. Quem acompanhou essa evolução e atualizou o método ao longo do tempo entrega resultado diferente.</p>
+<p>A ciência do exercício avançou muito nos últimos 20 anos — e o que a pesquisa atual como a de <a href="https://pubmed.ncbi.nlm.nih.gov/24734894/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. sobre os mecanismos da hipertrofia muscular</a> revelou transformou o que é prescrito como ideal para hipertrofia, emagrecimento ou longevidade muscular é incomparavelmente mais sólido do que o que estava disponível no início dos anos 2000. Quem acompanhou essa evolução e atualizou o método ao longo do tempo entrega resultado diferente.</p>
 
 <p>No Alphaville Residencial 4, moradores com histórico de treino que não progrediu chegam com as mesmas perguntas: "Treino há anos, por que não evoluo?" A resposta quase sempre está no método — não na genética, não na falta de esforço.</p>
 
@@ -15047,7 +15047,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Emagrecimento e hipertrofia no Residencial 5: o que funciona</h2>
 
-<p>Os dois objetivos mais frequentes entre moradores do Residencial 5 são emagrecimento e hipertrofia — muitas vezes em combinação: perder gordura enquanto mantém ou ganha massa muscular. A boa notícia é que isso é possível com protocolo correto. A má notícia é que protocolos errados entregam um dos objetivos à custa do outro.</p>
+<p>Os dois objetivos mais frequentes entre moradores do Residencial 5 são emagrecimento e hipertrofia — e ambos dependem da mesma base: <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">preservação e desenvolvimento de massa muscular com treino de força e proteína adequada</a> — muitas vezes em combinação: perder gordura enquanto mantém ou ganha massa muscular. A boa notícia é que isso é possível com protocolo correto. A má notícia é que protocolos errados entregam um dos objetivos à custa do outro.</p>
 
 <p>Como <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>, construo protocolos que equilibram esses objetivos com base na resposta individual de cada aluno — ajustando a distribuição de treino, volume e orientações alimentares mês a mês.</p>
 
@@ -15115,7 +15115,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Reavaliação mensal: o que é medido e por que importa</h2>
 
-<p>Todo mês, a reavaliação registra a evolução do aluno em dados concretos. Não em impressão subjetiva — em números. Composição corporal, carga nos exercícios principais, qualidade de movimento. Esse registro serve para três coisas:</p>
+<p>Todo mês, a reavaliação registra a evolução do aluno em dados concretos — <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">em linha com as recomendações do ACSM para monitoramento de progressão em treinamento resistido</a>. Não em impressão subjetiva — em números. Composição corporal, carga nos exercícios principais, qualidade de movimento. Esse registro serve para três coisas:</p>
 
 <ol>
 <li>Confirmar que o protocolo está funcionando</li>
@@ -15181,7 +15181,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Por que o platô acontece e o que o personal trainer identifica</h2>
 
-<p>O corpo humano é extremamente eficiente em se adaptar ao estímulo que recebe. Quando você faz o mesmo treino, com o mesmo peso, no mesmo horário, semana após semana, o corpo deixa de considerar aquilo um desafio — e para de adaptar. Resultado: zero progressão, mesmo com esforço consistente.</p>
+<p>O corpo humano é extremamente eficiente em se adaptar ao estímulo que recebe — é por isso que a <a href="https://pubmed.ncbi.nlm.nih.gov/19910830/" target="_blank" rel="noopener noreferrer">periodização é considerada essencial para quebrar platôs e retomar progressão</a>. Quando você faz o mesmo treino, com o mesmo peso, no mesmo horário, semana após semana, o corpo deixa de considerar aquilo um desafio — e para de adaptar. Resultado: zero progressão, mesmo com esforço consistente.</p>
 
 <p>Com <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>, o diagnóstico é feito de forma estruturada: avaliação do protocolo atual, identificação das variáveis que precisam mudar (volume, intensidade, seleção de exercícios, frequência) e montagem de um novo ciclo com progressão planejada.</p>
 
@@ -15249,7 +15249,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>O que a ciência diz sobre treino e longevidade</h2>
 
-<p>A evidência científica sobre os benefícios do exercício físico estruturado na saúde e longevidade é uma das mais sólidas de toda a medicina. O treino de força, em particular, tem sido associado a:</p>
+<p>A <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">evidência científica sobre os benefícios do exercício físico estruturado na saúde e longevidade</a> é uma das mais sólidas de toda a medicina. O treino de força, em particular, tem sido associado a:</p>
 
 <ul>
 <li>Redução significativa do risco de mortalidade por todas as causas</li>
@@ -15325,7 +15325,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>O que "resultado duradouro" significa na prática</h2>
 
-<p>Resultado duradouro não é o que aparece após 30 dias de dieta restritiva e treino excessivo. É o que se mantém 2 anos depois — quando a rotina voltou ao normal, o entusiasmo inicial passou e o que sobrou foi o hábito e a mudança de composição corporal real.</p>
+<p>Resultado duradouro não é o que aparece após 30 dias de dieta restritiva e treino excessivo — como <a href="https://pubmed.ncbi.nlm.nih.gov/19910830/" target="_blank" rel="noopener noreferrer">demonstram estudos sobre periodização e sustentabilidade dos ganhos a longo prazo</a>. É o que se mantém 2 anos depois — quando a rotina voltou ao normal, o entusiasmo inicial passou e o que sobrou foi o hábito e a mudança de composição corporal real.</p>
 
 <p>Para que esse resultado aconteça, o protocolo precisa ser sustentável desde o início. Carga adequada ao nível atual, progressão gradual, alimentação que não exige heroísmo cotidiano e frequência de treino compatível com a vida real do aluno.</p>
 
@@ -15393,7 +15393,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Por que treino de força é a base da melhora de composição corporal</h2>
 
-<p>O cardio queima calorias durante o exercício. O treino de força muda o metabolismo basal — a quantidade de energia que o corpo gasta em repouso. Mais massa muscular significa maior gasto calórico mesmo sem treinar. Essa é a diferença entre emagrecer enquanto perde músculo (efeito sanfona praticamente garantido) e emagrecer enquanto preserva e constrói músculo (resultado que se mantém).</p>
+<p>O cardio queima calorias durante o exercício. O <a href="https://pubmed.ncbi.nlm.nih.gov/24734894/" target="_blank" rel="noopener noreferrer">treino de força muda o metabolismo basal</a> — a quantidade de energia que o corpo gasta em repouso. Mais massa muscular significa maior gasto calórico mesmo sem treinar. Essa é a diferença entre emagrecer enquanto perde músculo (efeito sanfona praticamente garantido) e emagrecer enquanto preserva e constrói músculo (resultado que se mantém).</p>
 
 <p>Com <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>, o protocolo de treino é construído para maximizar estímulo muscular enquanto o déficit calórico cuida da gordura. Os dois objetivos em paralelo — com a proporção certa para cada fase.</p>
 
@@ -15461,7 +15461,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Treino na juventude: construir a base que vai sustentar as décadas seguintes</h2>
 
-<p>O jovem adulto que treina com método — técnica correta, progressão estruturada, periodização — está construindo uma base de força e composição corporal que vai proteger a saúde nas décadas seguintes. Não é apenas resultado estético de curto prazo: é investimento em longevidade funcional.</p>
+<p>O jovem adulto que treina com método — <a href="https://pubmed.ncbi.nlm.nih.gov/28319102/" target="_blank" rel="noopener noreferrer">técnica correta, progressão estruturada, periodização baseada em evidência</a> — está construindo uma base de força e composição corporal que vai proteger a saúde nas décadas seguintes. Não é apenas resultado estético de curto prazo: é investimento em longevidade funcional.</p>
 
 <p>Para moradores jovens do Residencial 12, o protocolo tem progressão mais agressiva, volume maior e foco em construção muscular ou condicionamento aeróbico — com a técnica de execução estabelecida corretamente desde o início.</p>
 
@@ -15529,7 +15529,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>O morador típico do Gênesis 1 já tentou treinar antes. Já teve academia, já teve época de fazer atividade física — mas a progressão nunca foi constante. O motivo quase sempre é o mesmo: ausência de individualização.</p>
 
-<p>Treino eficiente não é o mais intenso, é o mais adequado ao seu corpo, ao seu momento e ao seu objetivo. Isso requer avaliação real, não ficha copiada. Requer presença exclusiva durante a sessão, não um profissional atendendo três pessoas ao mesmo tempo. E requer reavaliação mensal para ajustar o protocolo antes que a estagnação apareça.</p>
+<p>Treino eficiente não é o mais intenso, é o mais adequado ao seu corpo, ao seu momento e ao seu objetivo — conceito reforçado pelo <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">princípio da especificidade do ACSM para prescrição de exercício</a>. Isso requer avaliação real, não ficha copiada. Requer presença exclusiva durante a sessão, não um profissional atendendo três pessoas ao mesmo tempo. E requer reavaliação mensal para ajustar o protocolo antes que a estagnação apareça.</p>
 
 <p>Essa é a diferença que faço no atendimento a moradores do Gênesis 1 — e o que explica por que boa parte dos meus alunos continuam comigo há anos. Você pode conhecer mais sobre meu método na <a href="/consultoria">página de consultoria</a>.</p>
 
@@ -15589,7 +15589,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>O Alphaville Gênesis 2 concentra um perfil de morador que conhece o valor do tempo. Executivos, empresários e profissionais liberais que trabalham no Gênesis 2 ou se deslocam diariamente para São Paulo não têm margem para treino sem resultado — cada sessão precisa entregar.</p>
 
-<p>O problema mais comum que vejo nesse perfil é a tentativa de compensar a ausência de método com intensidade. Treino pesado sem planejamento não gera progressão — gera fadiga, lesão e eventual abandono. Método é o que transforma esforço em resultado.</p>
+<p>O problema mais comum que vejo nesse perfil é a tentativa de compensar a ausência de método com intensidade. Treino pesado sem planejamento não gera progressão — gera fadiga, lesão e eventual abandono, como evidenciam <a href="https://pubmed.ncbi.nlm.nih.gov/20097734/" target="_blank" rel="noopener noreferrer">estudos sobre prevenção de lesões e planejamento de carga no treinamento resistido</a>. Método é o que transforma esforço em resultado.</p>
 
 <p>Atendo moradores do Gênesis 2 há mais de 20 anos. Conheço a dinâmica do condomínio, as academias da região e, acima de tudo, o perfil de quem mora aqui. O protocolo que desenvolvo é feito para encaixar na sua vida real — não na vida ideal que você gostaria de ter.</p>
 
@@ -15657,7 +15657,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Saúde, longevidade e desempenho: os três pilares do atendimento no Melville</h2>
 
-<p>O perfil do morador do Melville é variado — e o atendimento precisa ser também. Para quem busca emagrecimento com preservação de massa muscular, o foco é diferente do morador que quer recuperar a disposição após anos sem treinar sistematicamente. E ambos são diferentes de quem está em processo de reabilitação pós-cirurgia.</p>
+<p>O perfil do morador do Melville é variado — e o atendimento precisa ser também. Para quem busca emagrecimento com preservação de massa muscular — processo sustentado pela <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">meta-análise de Morton et al. com 49 estudos sobre proteína e treino de força</a> — o foco é diferente do morador que quer recuperar a disposição após anos sem treinar sistematicamente. E ambos são diferentes de quem está em processo de reabilitação pós-cirurgia.</p>
 
 <p>Esses três perfis convivem no Melville — e eu atendo todos com a mesma atenção e o mesmo método. Leia sobre minha trajetória pessoal de superação que fundamenta esse atendimento na <a href="/minha-historia">minha história</a> e veja resultados de alunos da região na <a href="/resultados">página de resultados</a>.</p>
 
@@ -15711,7 +15711,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Emagrecimento, hipertrofia e saúde: os objetivos mais comuns no Valville</h2>
 
-<p>Os três objetivos mais frequentes entre moradores do Valville são: emagrecimento com preservação de massa muscular, ganho de força e hipertrofia, e manutenção da saúde com qualidade de vida a longo prazo. Em todos os casos, a base é a mesma: treino de força bem prescrito, com progressão de carga estruturada e reavaliação mensal.</p>
+<p>Os três objetivos mais frequentes entre moradores do Valville são: emagrecimento com preservação de massa muscular, ganho de força e hipertrofia — conforme os <a href="https://pubmed.ncbi.nlm.nih.gov/24734894/" target="_blank" rel="noopener noreferrer">mecanismos de hipertrofia estabelecidos por Schoenfeld</a> — e manutenção da saúde com qualidade de vida a longo prazo. Em todos os casos, a base é a mesma: treino de força bem prescrito, com progressão de carga estruturada e reavaliação mensal.</p>
 
 <p>Para quem está retornando ao treino após lesão ou cirurgia, o processo é adaptado com base no laudo médico e em parceria com o fisioterapeuta responsável. Veja mais sobre esse tipo de atendimento em <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>.</p>
 
@@ -15761,7 +15761,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>O perfil do morador do Burle Marx que busca personal trainer costuma ter consciência de saúde — não está apenas procurando emagrecer para uma ocasião específica. Quer construir uma base sólida de força e condicionamento que sustente a qualidade de vida a longo prazo.</p>
 
-<p>Esse é exatamente o tipo de objetivo que mais me motiva como profissional. O treino bem prescrito é um dos poucos investimentos com retorno comprovado em saúde, longevidade e qualidade de vida — independentemente da faixa etária. Veja as modalidades disponíveis na <a href="/consultoria">página de consultoria</a>.</p>
+<p>Esse é exatamente o tipo de objetivo que mais me motiva como profissional. O <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">treino bem prescrito é um dos poucos investimentos com retorno comprovado em saúde, longevidade e qualidade de vida</a> — independentemente da faixa etária. Veja as modalidades disponíveis na <a href="/consultoria">página de consultoria</a>.</p>
 
 <h2>Saúde, força e movimento: os três eixos do atendimento no Burle Marx</h2>
 
@@ -15817,7 +15817,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Por que personal trainer com método importa no Alpha Condé</h2>
 
-<p>A academia do condomínio ou da região pode ter excelente equipamento — mas equipamento sem protocolo individualizado não entrega resultado. O que transforma esforço em progressão é a combinação de diagnóstico correto, protocolo adequado e acompanhamento contínuo.</p>
+<p>A academia do condomínio ou da região pode ter excelente equipamento — mas equipamento sem protocolo individualizado não entrega resultado. O que transforma esforço em progressão é a combinação de diagnóstico correto, protocolo adequado e acompanhamento contínuo — base dos <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">princípios de prescrição do American College of Sports Medicine</a>.</p>
 
 <p>No Alpha Condé, atendo moradores com objetivos variados: emagrecimento, hipertrofia, saúde e longevidade, retorno ao treino após lesão. Em todos os casos, o protocolo é construído do zero — não é adaptação de outro aluno. Conheça as modalidades na <a href="/consultoria">página de consultoria</a>.</p>
 
@@ -15873,7 +15873,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Uma das questões mais comuns para moradores do Alpha Sítio é: dá para ter resultado treinando na academia do condomínio ou em casa, sem ir a uma academia grande? A resposta é sim — desde que o protocolo seja adequado ao equipamento disponível.</p>
 
-<p>O que determina o resultado não é o tamanho da academia — é a qualidade da prescrição. Conheço os equipamentos disponíveis em academias de condomínios da região e sei como estruturar protocolos eficientes dentro dessas possibilidades. Veja as opções na <a href="/consultoria">página de consultoria</a>.</p>
+<p>O que determina o resultado não é o tamanho da academia — é a qualidade da prescrição, como reforçam as <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">diretrizes do ACSM para progressão em treinamento resistido individualizado</a>. Conheço os equipamentos disponíveis em academias de condomínios da região e sei como estruturar protocolos eficientes dentro dessas possibilidades. Veja as opções na <a href="/consultoria">página de consultoria</a>.</p>
 
 <h2>Os objetivos mais comuns entre moradores do Alpha Sítio</h2>
 
@@ -15925,7 +15925,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>O que diferencia o atendimento no Itahyê do treino sem orientação</h2>
 
-<p>A maioria dos moradores do Itahyê que me procura já tentou treinar antes — academia, aplicativo, planilha da internet. Algum resultado aparece nos primeiros meses e depois para. Isso é esperado: o corpo se adapta ao estímulo e a progressão exige ajuste contínuo.</p>
+<p>A maioria dos moradores do Itahyê que me procura já tentou treinar antes — academia, aplicativo, planilha da internet. O problema é sempre o mesmo: ausência de <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">progressão individualizada, base das diretrizes do ACSM para treinamento resistido</a>. Algum resultado aparece nos primeiros meses e depois para. Isso é esperado: o corpo se adapta ao estímulo e a progressão exige ajuste contínuo.</p>
 
 <p>O personal trainer não é quem faz você se esforçar mais — é quem garante que o esforço está direcionado corretamente. Carga certa, exercício certo, execução correta. E quando o corpo se adapta, o protocolo muda antes da estagnação aparecer. Conheça o processo completo na <a href="/consultoria">página de consultoria</a>.</p>
 
@@ -15985,7 +15985,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Entre os moradores do Villa Solaia que me procuram, a melhora de composição corporal — menos gordura, mais massa muscular, melhor definição — está entre os objetivos mais comuns. Esse resultado exige protocolo correto: treino de força com carga progressiva, não apenas cardio ou exercícios de alta repetição.</p>
 
-<p>O treino de força bem prescrito é o mais eficiente para transformar composição corporal de forma sustentável. É o que uso com todos os alunos, adaptado ao nível e ao objetivo de cada um. Veja as modalidades disponíveis na <a href="/consultoria">página de consultoria</a>.</p>
+<p>O <a href="https://pubmed.ncbi.nlm.nih.gov/24734894/" target="_blank" rel="noopener noreferrer">treino de força bem prescrito é o mais eficiente para transformar composição corporal de forma sustentável</a>. É o que uso com todos os alunos, adaptado ao nível e ao objetivo de cada um. Veja as modalidades disponíveis na <a href="/consultoria">página de consultoria</a>.</p>
 
 <h2>Atendimento feminino no Villa Solaia</h2>
 
@@ -16043,7 +16043,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Treino funcional e de força no Villa Lobos</h2>
 
-<p>Para moradores do Villa Lobos com foco em qualidade de vida, o protocolo combina treino de força com padrões funcionais — exercícios que transferem diretamente para as atividades do cotidiano. A base é sempre o treino de força progressivo, que é o mais eficiente para composição corporal, saúde metabólica e longevidade.</p>
+<p>Para moradores do Villa Lobos com foco em qualidade de vida, o protocolo combina treino de força com padrões funcionais — exercícios que transferem diretamente para as atividades do cotidiano. A base é sempre o <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">treino de força progressivo, que é o mais eficiente para composição corporal, saúde metabólica e longevidade</a>.</p>
 
 <p>O treino funcional complementa — não substitui — o treino de força. Essa integração é o que produz um corpo forte, móvel e resistente ao mesmo tempo. Veja resultados de alunos na <a href="/resultados">página de resultados</a>.</p>
 
@@ -16093,7 +16093,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Muitos moradores do Campos do Conde praticam atividade física — caminham, andam de bicicleta, nadam, fazem aulas na academia. Mas atividade física e treino estruturado são coisas diferentes. A atividade física tem benefícios para saúde cardiovascular e bem-estar, mas raramente gera as adaptações de composição corporal que a maioria dos moradores busca.</p>
 
-<p>Treino estruturado com protocolo de força progressivo é o que muda composição corporal, preserva massa muscular durante o emagrecimento e gera força funcional duradoura. Esse é o trabalho que faço com moradores do Campos do Conde. Veja as modalidades na <a href="/consultoria">página de consultoria</a>.</p>
+<p>Treino estruturado com protocolo de força progressivo é o que muda composição corporal, preserva massa muscular durante o emagrecimento e gera força funcional duradoura — como sustenta a <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">meta-análise de Morton et al. sobre treinamento de força e composição corporal</a>. Esse é o trabalho que faço com moradores do Campos do Conde. Veja as modalidades na <a href="/consultoria">página de consultoria</a>.</p>
 
 <h2>Objetivos mais comuns no Campos do Conde</h2>
 
@@ -16145,7 +16145,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>O treino para jovens adultos no New Ville: mais do que intensidade</h2>
 
-<p>Jovens adultos tendem a associar resultado com intensidade — treino pesado, muito volume, sem descanso. Esse modelo funciona por um período e depois para — ou pior, gera lesão. O que produz resultado sustentável é método: prescrição correta, progressão de carga estruturada e recuperação adequada.</p>
+<p>Jovens adultos tendem a associar resultado com intensidade — treino pesado, muito volume, sem descanso. Esse modelo funciona por um período e depois para — ou pior, gera lesão. O que produz resultado sustentável é método: <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">prescrição correta, progressão de carga estruturada</a> e recuperação adequada.</p>
 
 <p>No New Ville, atendo moradores que perceberam que treinar muito não é a mesma coisa que treinar certo. O protocolo individualizado que desenvolvo é construído para o objetivo específico de cada aluno — hipertrofia, emagrecimento, performance ou condicionamento geral. Conheça as modalidades na <a href="/consultoria">página de consultoria</a>.</p>
 
@@ -16205,7 +16205,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Composição corporal no Scenic: a métrica que importa</h2>
 
-<p>Número na balança é a métrica menos útil para avaliar resultado de treino. O que importa é composição corporal: quanto é gordura e quanto é massa muscular. Um morador do Scenic pode manter o mesmo peso e transformar completamente o corpo — se o protocolo for correto.</p>
+<p>Número na balança é a métrica menos útil para avaliar resultado de treino — a <a href="https://pubmed.ncbi.nlm.nih.gov/24734894/" target="_blank" rel="noopener noreferrer">composição corporal, com distinção entre massa magra e gordura, é o parâmetro adotado pela ciência do exercício</a>. O que importa é composição corporal: quanto é gordura e quanto é massa muscular. Um morador do Scenic pode manter o mesmo peso e transformar completamente o corpo — se o protocolo for correto.</p>
 
 <p>A reavaliação mensal de composição corporal é parte do meu atendimento — não um extra. É o que permite ajustar o protocolo antes que a progressão estagne e é o que torna o resultado mensurável, não apenas percebido. Veja resultados de alunos na <a href="/resultados">página de resultados</a>.</p>
 
@@ -16255,7 +16255,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>O morador do Morada dos Lagos que busca personal trainer tem, em muitos casos, uma motivação mais profunda do que estética: quer ter energia, disposição e capacidade funcional para aproveitar plenamente a vida. O treino de força bem prescrito é o que entrega isso.</p>
 
-<p>Massa muscular é o que preserva o metabolismo, sustenta a mobilidade e protege as articulações ao longo do tempo. E o treino de força é o único estímulo que constrói e preserva massa muscular de forma eficiente. Essa é a base do protocolo que aplico com moradores do Morada dos Lagos. Veja as modalidades na <a href="/consultoria">página de consultoria</a>.</p>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Massa muscular é o que preserva o metabolismo, sustenta a mobilidade e protege as articulações ao longo do tempo</a> — e o treino de força é o único estímulo que a constrói e preserva de forma eficiente. E o treino de força é o único estímulo que constrói e preserva massa muscular de forma eficiente. Essa é a base do protocolo que aplico com moradores do Morada dos Lagos. Veja as modalidades na <a href="/consultoria">página de consultoria</a>.</p>
 
 <h2>Treino para 60+ no Morada dos Lagos</h2>
 
@@ -16307,7 +16307,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Precisão no treino: o que diferencia resultado de esforço sem progressão</h2>
 
-<p>O problema mais comum que vejo no treino sem personal trainer é a imprecisão. Execução aproximada, carga intuitiva, progressão sem critério. Isso produz resultado nos primeiros meses — quando o corpo está se adaptando ao estímulo — e para quando o corpo se acostuma.</p>
+<p>O problema mais comum que vejo no treino sem personal trainer é a imprecisão. Execução aproximada, carga intuitiva, progressão sem critério. Isso produz resultado nos primeiros meses — quando o corpo está se adaptando ao estímulo — e para quando o corpo se acostuma, conforme descrevem os <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">modelos de progressão em treinamento resistido do ACSM</a>.</p>
 
 <p>Com protocolo individualizado, cada sessão tem propósito definido. A carga é prescrita com base na resposta do treino anterior. A execução é corrigida em tempo real. E a progressão é planejada — não depende de o aluno sentir que está "mandando bem". Conheça as modalidades na <a href="/consultoria">página de consultoria</a>.</p>
 
@@ -16361,7 +16361,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>A relação do morador da Aldeia da Serra com atividade física</h2>
 
-<p>Quem mora na Aldeia da Serra geralmente tem uma relação positiva com movimento e natureza — o ambiente favorece caminhadas, corridas, ciclismo e esportes. Mas atividade ao ar livre e treino estruturado têm papéis diferentes: a atividade aeróbica tem benefícios cardiovasculares, e o treino de força constrói a base muscular que sustenta tudo.</p>
+<p>Quem mora na Aldeia da Serra geralmente tem uma relação positiva com movimento e natureza — o ambiente favorece caminhadas, corridas, ciclismo e esportes. Mas atividade ao ar livre e treino estruturado têm papéis diferentes: a atividade aeróbica tem benefícios cardiovasculares, e o <a href="https://pubmed.ncbi.nlm.nih.gov/28319102/" target="_blank" rel="noopener noreferrer">treino de força constrói a base muscular que sustenta tudo</a> — inclusive o desempenho aeróbico.</p>
 
 <p>Para moradores da Aldeia da Serra que já praticam atividade física, o personal trainer complementa — melhora força, corrige desequilíbrios musculares e previne lesões que inevitavelmente aparecem quando a musculatura não está preparada para o volume de atividade. Veja as modalidades na <a href="/consultoria">página de consultoria</a>.</p>
 
