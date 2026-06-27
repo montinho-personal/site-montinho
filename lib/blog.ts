@@ -17259,6 +17259,262 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Trabalho na região de Alphaville há mais de 20 anos e entendo a rotina corporativa da área. Acesse a <a href="/personal-trainer-alphaville">página de personal trainer em Alphaville</a> para saber mais sobre o atendimento ou a <a href="/consultoria">página de consultoria</a> para conhecer todas as modalidades disponíveis.</p>
 `,
   },
+
+  // ── 4 NOVOS ARTIGOS – HIPERTROFIA PARTE 2 ─────────────────────────────────
+
+  {
+    slug: "cardio-atrapalha-a-hipertrofia",
+    title: "Cardio Atrapalha a Hipertrofia? O Que a Ciência Realmente Diz",
+    metaTitle: "Cardio Atrapalha a Hipertrofia? | Montinho Personal Trainer",
+    metaDescription:
+      "Cardio atrapalha a hipertrofia? Descubra o que a ciência diz sobre treino concorrente, quando o cardio prejudica o ganho de massa e como combinar os dois sem perder resultado.",
+    excerpt:
+      "Cardio e hipertrofia podem coexistir — mas a forma como você combina os dois faz toda a diferença. Entenda o que a pesquisa diz e como estruturar o treino corretamente.",
+    category: "Hipertrofia",
+    date: "2026-06-27",
+    readTime: "7 min",
+    author: "Montinho Personal Trainer",
+    tags: ["cardio", "hipertrofia", "treino concorrente", "musculação"],
+    faq: [
+      {
+        question: "Fazer cardio todo dia atrapalha o ganho de massa muscular?",
+        answer:
+          "Depende do volume, da intensidade e do momento em relação ao treino de força. Cardio de alta intensidade e longa duração feito com frequência elevada pode comprometer a recuperação e reduzir o sinal anabólico. Cardio moderado e bem posicionado na semana raramente prejudica a hipertrofia — e em muitos casos melhora a capacidade de treinamento.",
+      },
+      {
+        question: "Qual o melhor momento para fazer cardio sem atrapalhar a hipertrofia?",
+        answer:
+          "Em sessões separadas da musculação — idealmente em horários distintos ou em dias alternados. Quando feito na mesma sessão, o cardio deve vir depois da musculação para não comprometer a força e o desempenho no treino de força. Cardio leve a moderado antes da musculação, em sessão separada, tem impacto mínimo.",
+      },
+      {
+        question: "Cardio de baixa intensidade (caminhada) atrapalha a hipertrofia?",
+        answer:
+          "Não. Caminhada e cardio leve têm impacto mínimo sobre a síntese proteica e a recuperação muscular. São ferramentas úteis para aumentar o gasto calórico sem comprometer o treino de força. O problema aparece com cardio de alta intensidade, longa duração e alta frequência semanal combinado com volume elevado de musculação.",
+      },
+      {
+        question: "É possível ganhar massa muscular fazendo cardio regularmente?",
+        answer:
+          "Sim — e a maioria dos praticantes que faz cardio moderado e musculação bem estruturada consegue progredir em hipertrofia sem problema. O que limita o ganho de massa não é o cardio em si, mas a combinação de volume excessivo de cardio com recuperação insuficiente, proteína inadequada e déficit calórico muito agressivo.",
+      },
+    ],
+    content: `
+<h2>A pergunta que todo praticante de musculação faz</h2>
+<p>Cardio atrapalha a hipertrofia? É uma das perguntas mais frequentes em academias — e também uma das mais mal respondidas. A resposta curta: depende. A resposta completa exige entender o que a pesquisa chama de <em>efeito de interferência</em> e em quais condições ele realmente se manifesta.</p>
+
+<h2>O que é o efeito de interferência</h2>
+<p>O efeito de interferência foi descrito pela primeira vez por Hickson em 1980, que observou que a combinação de treino de força com treino aeróbico de alta intensidade e alta frequência reduzia os ganhos de força em comparação com o treino de força isolado. Esse fenômeno é real — mas é frequentemente superestimado por quem o usa como justificativa para nunca fazer cardio.</p>
+
+<h2>Quando o cardio realmente prejudica a hipertrofia</h2>
+<p>O efeito de interferência se torna relevante em condições específicas: cardio de alta intensidade (como HIIT pesado ou corrida intensa) em volume elevado, feito na mesma sessão que a musculação ou com recuperação insuficiente entre os estímulos. A via molecular envolvida é a ativação de AMPK pelo cardio intenso, que pode inibir a via mTOR — principal sinal de síntese proteica muscular. Mas esse conflito molecular é dose-dependente: baixas doses de cardio não geram inibição significativa.</p>
+
+<p>Pesquisas recentes publicadas no <em>Journal of Strength and Conditioning Research</em> mostram que o treino concorrente — musculação e cardio na mesma semana — produz ganhos de massa muscular comparáveis ao treino de força isolado quando o cardio é de intensidade moderada e o volume total é controlado. Veja os dados em <a href="https://pubmed.ncbi.nlm.nih.gov/28319102/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) no PubMed</a>.</p>
+
+<h2>Como combinar cardio e hipertrofia sem perder resultado</h2>
+<ul>
+  <li><strong>Priorize a musculação:</strong> se o objetivo principal é hipertrofia, o treino de força vem primeiro — em energia, em ordem na sessão e em volume semanal</li>
+  <li><strong>Separe as sessões:</strong> cardio e musculação em horários diferentes do dia ou em dias alternados minimizam a interferência</li>
+  <li><strong>Controle a intensidade:</strong> cardio leve a moderado (caminhada, bicicleta em ritmo confortável) não compromete recuperação muscular</li>
+  <li><strong>Ajuste o volume ao objetivo:</strong> quem está em fase de ganho de massa não precisa fazer horas de cardio semanal</li>
+  <li><strong>Garanta proteína adequada:</strong> ingestão proteica suficiente blinda a massa muscular mesmo com déficit calórico moderado</li>
+</ul>
+
+<h2>O cardio como aliado — não inimigo</h2>
+<p>Cardio bem prescrito melhora a capacidade cardiovascular, aumenta a densidade capilar muscular (o que melhora a entrega de nutrientes para o músculo), contribui para o balanço calórico e reduz o tempo de recuperação entre séries. Eliminar o cardio completamente por medo de perder massa é uma estratégia baseada em exagero — não em evidência.</p>
+
+<p>Para entender como estruturar treino de musculação e cardio de forma inteligente dentro da sua rotina, acesse a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/cardio-antes-ou-depois-da-musculacao">cardio antes ou depois da musculação</a> para aprofundar a discussão sobre sequência e timing.</p>
+`,
+  },
+
+  {
+    slug: "treinar-em-jejum-faz-perder-massa-muscular",
+    title: "Treinar em Jejum Faz Perder Massa Muscular? A Resposta da Ciência",
+    metaTitle: "Treinar em Jejum Faz Perder Massa Muscular? | Montinho Personal Trainer",
+    metaDescription:
+      "Treinar em jejum realmente faz perder massa muscular? Entenda o que a ciência diz sobre catabolismo, proteína e performance no treino de força em jejum.",
+    excerpt:
+      "Treinar em jejum não destrói músculo automaticamente — mas há condições em que o risco aumenta. Entenda a fisiologia por trás do mito e quando o jejum é seguro para quem treina.",
+    category: "Hipertrofia",
+    date: "2026-06-27",
+    readTime: "7 min",
+    author: "Montinho Personal Trainer",
+    tags: ["jejum", "massa muscular", "treino em jejum", "catabolismo"],
+    faq: [
+      {
+        question: "Treinar em jejum é catabólico?",
+        answer:
+          "Não de forma significativa para a maioria das pessoas que treinam com consistência e consomem proteína suficiente ao longo do dia. O corpo entra em estado de catabolismo muscular relevante apenas em jejum prolongado (acima de 24 horas) ou em déficit calórico severo combinado com ingestão proteica insuficiente. Uma sessão de treino em jejum de 8 a 16 horas não provoca perda muscular mensurável em praticantes que consomem proteína adequada no resto do dia.",
+      },
+      {
+        question: "Qual o maior risco de treinar em jejum para quem faz musculação?",
+        answer:
+          "O maior risco não é o catabolismo muscular — é a queda de performance. Sem substrato energético disponível, a intensidade do treino tende a cair, especialmente em exercícios compostos de alta demanda. Menos intensidade significa menos estímulo. E menos estímulo significa menos adaptação. O problema não é o jejum em si, mas o que o jejum faz com a qualidade do treino.",
+      },
+      {
+        question: "Posso tomar proteína antes de treinar em jejum?",
+        answer:
+          "Se ingerir proteína antes do treino, tecnicamente não está mais em jejum — mas isso não é um problema. Uma dose de 20 a 30g de proteína pré-treino preserva a síntese proteica e mantece parte dos benefícios metabólicos buscados por quem treina em jejum. Para quem prioriza hipertrofia, essa pode ser a melhor solução.",
+      },
+      {
+        question: "Quem faz jejum intermitente pode ganhar massa muscular?",
+        answer:
+          "Sim. Vários estudos mostram que o jejum intermitente com janela alimentar bem estruturada e proteína total diária suficiente permite ganho de massa muscular comparável ao de quem distribui as refeições ao longo do dia. O total de proteína consumida nas 24 horas é mais determinante do que o momento específico de cada refeição.",
+      },
+    ],
+    content: `
+<h2>O medo do catabolismo no treino em jejum</h2>
+<p>A ideia de que treinar em jejum "come músculo" está enraizada na cultura da musculação — mas não resiste a uma análise fisiológica cuidadosa. O corpo humano tem mecanismos sofisticados de proteção da massa muscular que não são desativados simplesmente porque você não comeu nas últimas 8, 12 ou até 16 horas.</p>
+
+<h2>Como o corpo responde ao treino em jejum</h2>
+<p>Durante o jejum noturno (8 a 12 horas), o corpo usa principalmente ácidos graxos como substrato energético. A glicemia cai levemente, os estoques de glicogênio muscular permanecem relativamente preservados para sessões de duração moderada, e a quebra proteica muscular aumenta marginalmente — mas não de forma suficiente para causar perda muscular mensurável em quem treina regularmente e consome proteína adequada no resto do dia.</p>
+
+<p>O ponto crítico é o balanço proteico das 24 horas, não o estado nutricional de cada sessão. Estudos publicados no <em>Journal of the International Society of Sports Nutrition</em> mostram que a distribuição de proteína ao longo do dia tem impacto modesto na síntese proteica quando a ingestão total é adequada — o que relativiza a importância da refeição pré-treino para a manutenção de massa muscular. Veja os dados em <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) no PubMed</a>.</p>
+
+<h2>Quando o treino em jejum pode ser problemático</h2>
+<p>Existem situações em que o treino em jejum apresenta riscos reais para quem busca hipertrofia:</p>
+<ul>
+  <li><strong>Déficit calórico severo combinado com jejum:</strong> quando a ingestão total de proteína está abaixo do necessário, o catabolismo muscular aumenta</li>
+  <li><strong>Jejuns prolongados (acima de 24h):</strong> aqui o risco de perda muscular é real e documentado</li>
+  <li><strong>Treinos de alta intensidade:</strong> squat, terra, supino pesado em jejum comprometem performance — e performance comprometida significa estímulo comprometido</li>
+  <li><strong>Iniciantes:</strong> quem está começando ainda não tem eficiência metabólica desenvolvida para lidar bem com o estresse do treino sem substrato</li>
+</ul>
+
+<h2>Jejum intermitente e ganho de massa: o que a ciência mostra</h2>
+<p>Múltiplos estudos com protocolos de jejum intermitente (16:8, 18:6) mostram que é possível ganhar massa muscular e perder gordura simultaneamente com esse protocolo, desde que a janela alimentar seja usada para atingir a meta proteica diária (1,6 a 2,2g/kg de peso corporal) e o treino de força seja consistente. O jejum não impede a hipertrofia — o que impede é a proteína insuficiente e o treino mal estruturado.</p>
+
+<h2>Estratégia prática</h2>
+<p>Se você treina em jejum e prioriza hipertrofia, considere: uma dose de proteína (20–30g) logo após o treino quebra o jejum de forma estratégica, maximiza a síntese proteica pós-exercício e não compromete os benefícios metabólicos buscados. O restante da janela alimentar cobre o volume calórico e proteico do dia.</p>
+
+<p>Para montar uma estratégia de treino e nutrição adequada ao seu perfil, acesse a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">quanta proteína consumir por dia para ganhar massa muscular</a>.</p>
+`,
+  },
+
+  {
+    slug: "como-perder-gordura-sem-perder-massa-muscular",
+    title: "Como Perder Gordura Sem Perder Massa Muscular: O Guia Baseado em Evidência",
+    metaTitle: "Como Perder Gordura Sem Perder Massa Muscular | Montinho Personal Trainer",
+    metaDescription:
+      "Como perder gordura sem perder massa muscular? Descubra a estratégia baseada em ciência: déficit calórico correto, proteína adequada, treino de força e o que realmente funciona.",
+    excerpt:
+      "Perder gordura sem perder músculo é possível — mas exige estratégia. Déficit calibrado, proteína suficiente e treino de força são os pilares que a ciência confirma.",
+    category: "Emagrecimento",
+    date: "2026-06-27",
+    readTime: "7 min",
+    author: "Montinho Personal Trainer",
+    tags: ["emagrecimento", "massa muscular", "déficit calórico", "recomposição corporal"],
+    faq: [
+      {
+        question: "É possível perder gordura e ganhar massa muscular ao mesmo tempo?",
+        answer:
+          "Sim — e isso tem nome: recomposição corporal. É mais comum em iniciantes, em pessoas com excesso de gordura corporal e em quem retorna ao treino após período de inatividade. Em praticantes avançados, é possível mas acontece em ritmo mais lento. O protocolo exige déficit calórico moderado, proteína elevada e treino de força consistente.",
+      },
+      {
+        question: "Qual o déficit calórico ideal para perder gordura sem perder músculo?",
+        answer:
+          "Déficits moderados — entre 300 e 500 kcal abaixo do gasto total diário — são os que melhor preservam a massa muscular durante o emagrecimento. Déficits agressivos (acima de 700 kcal) aceleram a perda de peso, mas aumentam significativamente a proporção de massa magra perdida junto com a gordura.",
+      },
+      {
+        question: "Quanta proteína consumir para não perder músculo durante o emagrecimento?",
+        answer:
+          "Em fase de déficit calórico, a recomendação de proteína sobe: entre 1,6 e 2,4g por kg de peso corporal por dia. A proteína elevada preserva a síntese proteica muscular mesmo com caloria restrita e aumenta a saciedade, facilitando a manutenção do déficit sem fome excessiva.",
+      },
+      {
+        question: "Treinar em déficit calórico prejudica o ganho de força?",
+        answer:
+          "Em iniciantes e intermediários, é possível ganhar força mesmo em déficit calórico moderado — porque boa parte do ganho de força inicial é neurológico, não apenas hipertrófico. Em praticantes avançados, a progressão de força tende a desacelerar durante o cutting. Mas o treino de força deve ser mantido durante o déficit para sinalizar ao corpo que a massa muscular é necessária.",
+      },
+    ],
+    content: `
+<h2>O erro mais comum de quem quer emagrecer</h2>
+<p>A abordagem mais comum de emagrecimento — cortar calorias agressivamente e fazer muito cardio — é também a que mais destrói massa muscular. Quando o corpo entra em déficit calórico severo sem treino de força e sem proteína suficiente, ele recorre à massa magra como substrato energético. O peso na balança cai, mas a composição corporal piora: menos gordura, mas também menos músculo. O resultado é um corpo menor, não necessariamente mais definido.</p>
+
+<h2>Os três pilares para perder gordura sem perder músculo</h2>
+
+<h3>1. Déficit calórico moderado e sustentável</h3>
+<p>A velocidade do emagrecimento importa. Déficits entre 300 e 500 kcal abaixo do gasto diário total permitem perda de gordura consistente (0,5 a 1% do peso corporal por semana) com preservação máxima da massa magra. Dietas muito restritivas podem parecer mais eficientes no curto prazo, mas o custo em massa muscular e em metabolismo basal é alto.</p>
+
+<h3>2. Proteína elevada</h3>
+<p>A proteína é o nutriente mais importante na fase de emagrecimento — tanto para preservar a massa muscular quanto para controlar o apetite. Revisões sistemáticas mostram que ingestão entre 1,6 e 2,4g de proteína por kg de peso corporal durante o déficit calórico reduz significativamente a perda de massa magra em comparação com dietas hipoproteicas. Veja os dados em <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) no PubMed</a>.</p>
+
+<h3>3. Treino de força mantido durante o déficit</h3>
+<p>O treino de força durante o emagrecimento envia um sinal metabólico claro ao corpo: a massa muscular está sendo utilizada e precisa ser mantida. Sem esse estímulo, o organismo não tem razão fisiológica para preservar tecido muscular metabolicamente ativo em um contexto de restrição calórica. O treino de força não precisa mudar radicalmente no cutting — a prioridade é manter a intensidade, mesmo que o volume seja ligeiramente reduzido.</p>
+
+<h2>O papel do cardio na fase de emagrecimento</h2>
+<p>Cardio é uma ferramenta para ampliar o déficit calórico — não para substituir o treino de força. Cardio de baixa a moderada intensidade (caminhada, bicicleta leve) contribui para o balanço calórico sem comprometer a recuperação muscular. HIIT e cardio intenso em volume elevado podem prejudicar a recuperação do treino de força e dificultar a preservação de massa.</p>
+
+<h2>Recomposição corporal: quando é possível</h2>
+<p>A recomposição corporal — perder gordura e ganhar músculo simultaneamente — é mais acessível do que muitos imaginam, especialmente para iniciantes e pessoas com excesso de gordura corporal. Nesses casos, o corpo usa a gordura armazenada como substrato para construir músculo, mesmo em déficit calórico leve. Com treino de força bem estruturado, proteína adequada e paciência, a recomposição acontece sem que o peso na balança precise cair drasticamente.</p>
+
+<p>Para estruturar um protocolo de emagrecimento que preserve massa muscular com base no seu perfil e objetivo, acesse a <a href="/consultoria">página de consultoria</a>. Veja também os artigos sobre <a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">proteína para ganho de massa</a> e <a href="/blog/quantas-series-para-hipertrofia">volume de treino para hipertrofia</a>.</p>
+`,
+  },
+
+  {
+    slug: "treinar-o-mesmo-musculo-duas-vezes-por-semana",
+    title: "Treinar o Mesmo Músculo Duas Vezes por Semana: Vale a Pena?",
+    metaTitle: "Treinar o Mesmo Músculo Duas Vezes por Semana | Montinho Personal Trainer",
+    metaDescription:
+      "Treinar o mesmo músculo duas vezes por semana é melhor para hipertrofia? Descubra o que a ciência diz sobre frequência de treino, volume semanal e como organizar seu treino.",
+    excerpt:
+      "Treinar cada músculo duas vezes por semana é uma das estratégias mais respaldadas pela ciência para hipertrofia. Entenda por que funciona e como organizar a semana de treino.",
+    category: "Hipertrofia",
+    date: "2026-06-27",
+    readTime: "7 min",
+    author: "Montinho Personal Trainer",
+    tags: ["frequência de treino", "hipertrofia", "volume semanal", "divisão de treino"],
+    faq: [
+      {
+        question: "Treinar o mesmo músculo duas vezes por semana é melhor do que uma vez?",
+        answer:
+          "Para a maioria dos praticantes, sim. A literatura científica atual indica que frequência de 2 vezes por semana por grupo muscular produz ganhos de hipertrofia superiores à frequência de 1 vez, quando o volume semanal total é equiparado. O principal benefício é distribuir melhor o estímulo e otimizar a janela de síntese proteica muscular.",
+      },
+      {
+        question: "Qual o intervalo mínimo entre sessões do mesmo músculo?",
+        answer:
+          "O intervalo mínimo recomendado é de 48 horas entre sessões do mesmo grupo muscular. Esse tempo permite recuperação suficiente para que o próximo estímulo seja produtivo. Treinar o mesmo músculo em dias consecutivos sem recuperação adequada prejudica a progressão e aumenta o risco de overtraining.",
+      },
+      {
+        question: "Como dividir o treino para treinar cada músculo duas vezes por semana?",
+        answer:
+          "Os formatos mais comuns são: Upper/Lower (superior e inferior alternados, 4 dias semanais), Push/Pull/Legs em 6 dias, Full Body 3 vezes por semana, ou divisões A/B com 4 dias. A melhor divisão é a que respeita a frequência, o volume adequado e a agenda real do praticante.",
+      },
+      {
+        question: "Treinar o mesmo músculo 3 vezes por semana é ainda melhor?",
+        answer:
+          "Para a maioria dos praticantes naturais, frequência 3 por semana não oferece vantagem significativa sobre frequência 2 por semana quando o volume é equiparado. O ganho marginal de uma terceira sessão é pequeno e exige recuperação impecável. Para iniciantes e intermediários, frequência 2 com volume adequado já é o ponto ótimo.",
+      },
+    ],
+    content: `
+<h2>Frequência de treino: uma das variáveis mais subestimadas</h2>
+<p>Por muito tempo, o culturismo tradicional popularizou a divisão de treino ABC ou ABCD — cada músculo treinado uma vez por semana, com volume altíssimo naquela única sessão. Esse modelo funciona para atletas em uso de esteroides anabolizantes, que têm síntese proteica elevada por mais tempo. Para o praticante natural, a ciência aponta uma direção diferente.</p>
+
+<h2>O que a ciência diz sobre frequência de treino</h2>
+<p>A síntese proteica muscular — o processo de construção de novo tecido muscular após o estímulo do treino — dura aproximadamente 24 a 48 horas após uma sessão intensa. Depois disso, ela retorna ao nível basal. Treinar o mesmo músculo apenas uma vez por semana significa que, nas outras 5 ou 6 dias, o músculo não está em estado elevado de síntese. Ao treinar o mesmo músculo duas vezes por semana, você dobra as janelas de síntese proteica elevada ao longo do mês — sem necessariamente dobrar o volume total.</p>
+
+<p>Uma metanálise amplamente citada publicada no <em>Journal of Strength and Conditioning Research</em> demonstrou que treinar cada grupo muscular 2 vezes por semana produz hipertrofia significativamente superior à frequência de 1 vez por semana quando o volume semanal total é controlado. Veja os dados em <a href="https://pubmed.ncbi.nlm.nih.gov/28319102/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) no PubMed</a>.</p>
+
+<h2>Frequência 2x vs. divisão tradicional</h2>
+<p>Compare dois praticantes com o mesmo volume semanal para peito:</p>
+<ul>
+  <li><strong>Praticante A (frequência 1x):</strong> segunda-feira — 20 séries de peito em uma sessão</li>
+  <li><strong>Praticante B (frequência 2x):</strong> segunda e quinta — 10 séries de peito em cada sessão</li>
+</ul>
+<p>O volume semanal é idêntico. Mas o praticante B distribui o estímulo de forma que o músculo está em síntese proteica elevada por dois períodos distintos na semana. Além disso, 10 séries por sessão permitem qualidade técnica e intensidade superiores às 20 séries acumuladas em uma única sessão.</p>
+
+<h2>Como organizar a semana para treinar cada músculo 2 vezes</h2>
+<p>Os formatos mais eficientes para frequência 2x por semana:</p>
+<ul>
+  <li><strong>Upper/Lower (4 dias):</strong> segunda e quinta — superior; terça e sexta — inferior. Simples, eficiente e com boa distribuição de recuperação</li>
+  <li><strong>Full Body (3 dias):</strong> segunda, quarta e sexta. Cada sessão trabalha todos os grupos musculares com volume distribuído. Excelente para praticantes com agenda limitada</li>
+  <li><strong>Push/Pull/Legs x2 (6 dias):</strong> para quem tem disponibilidade de treinar 6 dias por semana. Cada músculo aparece em 2 das 6 sessões</li>
+  <li><strong>A/B alternado (4 dias):</strong> sessões A e B com ênfases distintas, alternadas ao longo da semana</li>
+</ul>
+
+<h2>Frequência mais alta não é sempre melhor</h2>
+<p>Frequência é uma variável de treino — não um fim em si mesmo. Aumentar a frequência sem aumentar o volume ou a intensidade não produz resultado adicional. E frequência muito alta sem recuperação adequada — sono, proteína, gestão de estresse — leva ao overtraining. O objetivo é encontrar o equilíbrio entre estímulo e recuperação, que para a maioria dos praticantes naturais está na frequência 2 por semana por grupo muscular.</p>
+
+<p>Para entender como aplicar esse princípio ao seu treino com protocolo individual, acesse a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/quantas-series-para-hipertrofia">quantas séries fazer para hipertrofia</a> para calibrar o volume de cada sessão.</p>
+`,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
