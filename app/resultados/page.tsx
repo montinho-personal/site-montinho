@@ -2,11 +2,22 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import SectionTitle from "@/components/ui/SectionTitle";
+import { SITE_URL } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Resultados e Transformações",
+  title: "Resultados e Transformações — Personal Trainer Alphaville",
   description:
-    "Veja as transformações reais dos alunos do Montinho Personal Trainer. Resultados de perda de peso, ganho de massa muscular e melhoria de qualidade de vida.",
+    "Veja as transformações reais dos alunos do Montinho Personal Trainer em Alphaville. Resultados de perda de peso, ganho de massa muscular e melhoria de qualidade de vida.",
+  alternates: {
+    canonical: `${SITE_URL}/resultados`,
+  },
+  openGraph: {
+    title: "Resultados e Transformações | Montinho Personal Trainer Alphaville",
+    description:
+      "Transformações reais de alunos do Montinho PT em Alphaville, Barueri e Santana de Parnaíba.",
+    url: `${SITE_URL}/resultados`,
+    type: "website",
+  },
 };
 
 interface ResultadoItem {

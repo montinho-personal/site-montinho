@@ -1,16 +1,56 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
+import { SITE_URL } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Minha História",
+  title: "Minha História — De Obeso a Personal Trainer em Alphaville",
   description:
-    "De obeso a Personal Trainer: a história real de quem viveu o problema para poder ajudar outros a superá-lo. Conheça a jornada do Montinho PT.",
+    "De obeso a Personal Trainer: a história real de quem viveu o problema para poder ajudar outros a superá-lo. Conheça a jornada do Montinho PT em Alphaville.",
+  alternates: {
+    canonical: `${SITE_URL}/minha-historia`,
+  },
+  openGraph: {
+    title: "Minha História — De Obeso a Personal Trainer em Alphaville | Montinho PT",
+    description:
+      "A história real de quem viveu o problema para poder ajudar outros a superá-lo. Conheça a jornada do Montinho PT.",
+    url: `${SITE_URL}/minha-historia`,
+    type: "profile",
+  },
+};
+
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "Minha História — Montinho Personal Trainer",
+  url: `${SITE_URL}/minha-historia`,
+  description:
+    "De obeso a Personal Trainer: a história real de quem viveu o problema para poder ajudar outros a superá-lo.",
+  mainEntity: {
+    "@id": "https://www.montinhopersonal.com.br/#person",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Minha História", item: `${SITE_URL}/minha-historia` },
+  ],
 };
 
 export default function MinhaHistoria() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="pt-16 pb-10 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

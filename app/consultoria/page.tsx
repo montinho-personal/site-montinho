@@ -1,11 +1,68 @@
 import type { Metadata } from "next";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import SectionTitle from "@/components/ui/SectionTitle";
+import { SITE_URL } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Consultoria e Personal Training",
+  title: "Consultoria e Personal Training em Alphaville",
   description:
-    "Conheça as modalidades de atendimento: Personal Presencial em Alphaville (Barueri e Santana de Parnaíba), Consultoria Online para todo o Brasil e Modelo Híbrido.",
+    "Personal Trainer presencial em Alphaville (Barueri e Santana de Parnaíba) e consultoria online para todo o Brasil. Treino personalizado, acompanhamento próximo e resultados reais.",
+  alternates: {
+    canonical: `${SITE_URL}/consultoria`,
+  },
+  openGraph: {
+    title: "Consultoria e Personal Training em Alphaville | Montinho PT",
+    description:
+      "Personal Trainer presencial em Alphaville (Barueri e Santana de Parnaíba) e consultoria online para todo o Brasil.",
+    url: `${SITE_URL}/consultoria`,
+    type: "website",
+  },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Personal Training e Consultoria Fitness",
+  provider: {
+    "@id": "https://www.montinhopersonal.com.br/#localbusiness",
+  },
+  areaServed: [
+    { "@type": "City", name: "Alphaville" },
+    { "@type": "City", name: "Barueri" },
+    { "@type": "City", name: "Santana de Parnaíba" },
+    { "@type": "Country", name: "Brasil" },
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Modalidades de Atendimento",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Personal Trainer Presencial em Alphaville",
+          description: "Acompanhamento 100% presencial com sessões de treino guiadas, correção de técnica em tempo real em Alphaville, Barueri e Santana de Parnaíba.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Consultoria Online",
+          description: "Consultoria online para todo o Brasil com protocolo de treino personalizado, orientação nutricional e suporte via WhatsApp.",
+        },
+      },
+    ],
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Consultoria", item: `${SITE_URL}/consultoria` },
+  ],
 };
 
 const services = [
@@ -98,6 +155,14 @@ const steps = [
 export default function Consultoria() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="py-16 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
