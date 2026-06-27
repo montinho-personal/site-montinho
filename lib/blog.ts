@@ -1480,6 +1480,8 @@ export const blogPosts: BlogPost[] = [
 
 <p>Neste artigo, vou te mostrar o que acontece quando essa relação está equilibrada, o que acontece quando não está, e como descobrir o limite certo para o seu nível, seu objetivo e sua rotina.</p>
 
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar todos os dias faz mal? O que a fisiologia diz" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>A pergunta certa não é "todos os dias?" — é "o mesmo músculo todos os dias?"</h2>
 
 <p>Essa distinção é fundamental e raramente é feita nos conteúdos sobre o tema.</p>
@@ -13612,6 +13614,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Neste artigo, explico o que é a hérnia de disco, quais são os exercícios que realmente devem ser evitados, o que a literatura científica atual recomenda e como estruturar um treino seguro mesmo com esse diagnóstico.</p>
 
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Hérnia de disco pode treinar? O que a ciência diz sobre musculação" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>O que é hérnia de disco? Anatomia simplificada</h2>
 
 <p>A coluna vertebral é composta por vértebras separadas por discos intervertebrais — estruturas com núcleo pulposo gelatinoso envolto por um anel fibroso (ânulo fibroso). Esses discos funcionam como amortecedores de impacto e permitem o movimento entre as vértebras.</p>
@@ -19420,6 +19424,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
     tags: ["dor no quadril", "agachamento", "impingement de quadril", "lesão", "mobilidade"],
     content: `
 <p>Dor no quadril durante o agachamento é mais comum do que parece — e frequentemente ignorada como "dor normal de treino". Não é. A maioria das causas é tratável e, com a identificação correta, o treino pode continuar com adaptações.</p>
+
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Dor no quadril ao agachar: causas e como resolver" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Onde exatamente dói? A localização guia o diagnóstico</h2>
 
