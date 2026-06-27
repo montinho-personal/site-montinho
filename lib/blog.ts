@@ -124,8 +124,6 @@ export const blogPosts: BlogPost[] = [
   <li><strong>Acompanhamento profissional</strong> — ajustes contínuos conforme o corpo responde e as adaptações acontecem</li>
 </ul>
 
-<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Se preferir ver esse conteúdo em formato de vídeo, assista abaixo.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Por que o acompanhamento profissional muda tudo</h2>
 
@@ -6543,8 +6541,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
-<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Gravei um vídeo explicando esse ponto de forma prática — vale muito assistir antes de decidir como montar sua semana de treinos.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>A combinação é o ideal</h2>
 
@@ -6724,8 +6720,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
-<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">No vídeo abaixo você vê isso funcionar na prática — em menos de 2 minutos fica claro qual ordem faz mais sentido para o seu caso.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Para emagrecimento: qual ordem emagrece mais?</h2>
 
@@ -6903,8 +6897,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
-<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Antes de continuar lendo, assista ao vídeo abaixo — ele resume bem o que você precisa saber sobre HIIT e emagrecimento.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>O HIIT funciona para emagrecer?</h2>
 
@@ -7145,8 +7137,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
-<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Tenho um vídeo curto sobre esse assunto que complementa bem o que você está lendo — dá uma olhada.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Quanto cardio fazer para emagrecer por nível</h2>
 
@@ -7425,8 +7415,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p><strong>Mito 4: "Glutem e lactose engordam a barriga."</strong> Intolerâncias podem causar distensão abdominal temporária, mas não acúmulo de gordura. Eliminar glúten ou lactose sem intolerância não emagrece.</p>
 
-<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Esse conteúdo também está disponível em vídeo — assista se quiser absorver as dicas de forma mais dinâmica.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Estratégia completa para perder gordura abdominal</h2>
 
@@ -7607,8 +7595,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
-<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Prefere absorver esse conteúdo em vídeo? Assista abaixo e veja o cálculo na prática.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Qual deve ser o tamanho do déficit?</h2>
 
@@ -7814,8 +7800,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
-<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Esse ponto fica mais claro no vídeo — vale 2 minutos do seu tempo.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>E o hipotireoidismo?</h2>
 
@@ -8018,8 +8002,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
-<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Assista ao vídeo abaixo para ver esse conceito na prática.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <p>Para quem está começando, caminhadas de 30 a 45 minutos, 3 a 5 vezes por semana, já são uma adição excelente ao treino de força. Para quem está mais avançado, leia nosso artigo sobre <a href="/blog/hiit-funciona">se o HIIT realmente funciona</a>.</p>
 
@@ -8222,8 +8204,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
-<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer ver como estruturar isso na prática? Assista ao vídeo abaixo.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <p>Para atingir esses valores, distribua a proteína em 3 a 5 refeições ao longo do dia, com fontes de qualidade: frango, carne vermelha magra, ovos, peixe, laticínios e, se necessário, suplementação com whey protein.</p>
 
@@ -8545,8 +8525,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><a href="/blog/erros-comuns-no-treino-de-musculacao">Erros Comuns no Treino de Musculação</a></li>
 </ul>
 
-<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Antes de chegar à conclusão, veja no vídeo como aplicar essas estratégias no dia a dia.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Conclusão</h2>
 
@@ -9094,8 +9072,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><a href="/blog/progressao-de-carga">Progressão de Carga: O Segredo Para Continuar Evoluindo</a></li>
 </ul>
 
-<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Se você aprende melhor assistindo do que lendo, este vídeo resume os pontos principais de forma direta.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Conclusão</h2>
 
