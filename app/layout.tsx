@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, Playfair_Display } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -20,6 +21,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.montinhopersonal.com.br"),
   title: {
     default:
       "Montinho Personal Trainer | Alphaville, Barueri e Santana de Parnaíba",
@@ -48,6 +50,14 @@ export const metadata: Metadata = {
       "Montinho Personal Trainer | Alphaville, Barueri e Santana de Parnaíba",
     description:
       "Personal Trainer especialista em emagrecimento em Alphaville. Transformação real do corpo através de ciência e acompanhamento próximo.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Montinho Personal Trainer — Alphaville, Barueri e Santana de Parnaíba",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -71,7 +81,7 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
+const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Montinho Personal Trainer",
@@ -104,9 +114,38 @@ const jsonLd = {
       closes: "13:00",
     },
   ],
-  sameAs: ["https://instagram.com/montinho_personal"],
+  sameAs: ["https://www.instagram.com/montinhopersonal/"],
   priceRange: "$$",
   "@id": "https://www.montinhopersonal.com.br/#localbusiness",
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Montinho Personal Trainer",
+  url: "https://www.montinhopersonal.com.br",
+  "@id": "https://www.montinhopersonal.com.br/#website",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://www.montinhopersonal.com.br/blog?q={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Montinho",
+  jobTitle: "Personal Trainer",
+  url: "https://www.montinhopersonal.com.br/minha-historia",
+  sameAs: ["https://www.instagram.com/montinhopersonal/"],
+  worksFor: {
+    "@id": "https://www.montinhopersonal.com.br/#localbusiness",
+  },
+  "@id": "https://www.montinhopersonal.com.br/#person",
 };
 
 export default function RootLayout({
@@ -122,7 +161,15 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
       </head>
       <body className="min-h-screen flex flex-col bg-black text-white antialiased">
@@ -131,6 +178,13 @@ export default function RootLayout({
         <Footer />
         <WhatsAppFloat />
         <CookieBanner />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-J1ZSPMDJZE"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J1ZSPMDJZE');`}
+        </Script>
       </body>
     </html>
   );

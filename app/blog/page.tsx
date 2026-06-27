@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
-import { blogPosts, BLOG_CATEGORIES } from "@/lib/blog";
+import { blogPosts, BLOG_CATEGORIES, SITE_URL } from "@/lib/blog";
 import SectionTitle from "@/components/ui/SectionTitle";
 import BlogList from "@/components/blog/BlogList";
 
 export const metadata: Metadata = {
   title: "Blog · Treinamento, Nutrição e Transformação",
   description:
-    "Artigos sobre emagrecimento, hipertrofia, saúde, lesões e hábitos. Conteúdo baseado em ciência e experiência prática do Montinho Personal Trainer.",
+    "Artigos sobre emagrecimento, hipertrofia, saúde, lesões e hábitos. Conteúdo baseado em ciência e experiência prática do Montinho Personal Trainer em Alphaville.",
+  alternates: {
+    canonical: `${SITE_URL}/blog`,
+  },
+  openGraph: {
+    title: "Blog — Treinamento, Nutrição e Transformação | Montinho PT",
+    description:
+      "Artigos sobre emagrecimento, hipertrofia, saúde, lesões e hábitos baseados em ciência e experiência prática.",
+    url: `${SITE_URL}/blog`,
+    type: "website",
+  },
 };
 
 export default function BlogIndex() {
