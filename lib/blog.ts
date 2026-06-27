@@ -25409,7 +25409,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
         answer: "A melhor forma é eventualmente ir até a falha real (de forma segura, em exercícios de máquina ou com spotter) para sentir onde fica o RPE 10. A partir daí, você retrocede na estimativa: se a falha veio na 8ª repetição quando você esperava chegar na 12ª, você claramente subestimou o esforço. Com prática e registro consistente, a calibração melhora. Estudos mostram que praticantes com 6 meses ou mais de treino têm boa precisão no RIR de 0 a 3.",
       },
     ],
-  },,
+  },
   {
   slug: "semaglutida-e-musculacao",
   title: "Semaglutida e Musculação: Como Treinar e Preservar Músculo",
