@@ -353,7 +353,7 @@ export default function MinhaHistoria() {
               conversar com você.
             </p>
             <a
-              href={getWhatsAppUrl("Olá! Li sua história no site e me identifiquei muito. Quero conversar sobre como você pode me ajudar.")}
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"

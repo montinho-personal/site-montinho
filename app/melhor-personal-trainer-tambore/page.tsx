@@ -97,7 +97,7 @@ export default function MelhorPersonalTrainerTambore() {
             "Melhor" não é opinião — é resultado verificável. Mais de 20 anos em Tamboré e Alphaville, centenas de alunos atendidos e um método que entrega progressão real. Esse é o critério que importa na hora de escolher.
           </p>
           <a
-            href={getWhatsAppUrl("Olá! Estou buscando um personal trainer em Tamboré e quero saber mais sobre o seu trabalho.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
@@ -218,7 +218,7 @@ export default function MelhorPersonalTrainerTambore() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={getWhatsAppUrl("Olá! Estou buscando um personal trainer em Tamboré e quero conhecer o seu método de trabalho.")}
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"

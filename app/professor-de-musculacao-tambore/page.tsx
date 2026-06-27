@@ -97,7 +97,7 @@ export default function ProfessorMusculacaoTambore() {
             Musculação sem técnica é tempo perdido — e risco real de lesão. Com acompanhamento individualizado em Tamboré, cada movimento é executado corretamente, cada carga é progressiva e cada resultado é concreto.
           </p>
           <a
-            href={getWhatsAppUrl("Olá! Moro em Tamboré e tenho interesse em aulas de musculação com professor particular.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
@@ -216,7 +216,7 @@ export default function ProfessorMusculacaoTambore() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={getWhatsAppUrl("Olá! Moro em Tamboré e quero saber mais sobre aulas de musculação com professor particular.")}
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"

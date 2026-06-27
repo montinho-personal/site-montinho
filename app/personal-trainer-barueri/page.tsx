@@ -98,7 +98,7 @@ export default function PersonalTrainerBarueri() {
             Barueri concentra alguns dos profissionais e famílias mais exigentes da Grande São Paulo. Pessoas que pesquisam antes de decidir, que não abrem mão de qualidade e que querem entender o que estão fazendo — não apenas seguir ordens. Se esse é você, provavelmente vamos nos entender bem.
           </p>
           <a
-            href={getWhatsAppUrl("Olá! Moro em Barueri e tenho interesse no treino personalizado presencial.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
@@ -291,7 +291,7 @@ export default function PersonalTrainerBarueri() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={getWhatsAppUrl("Olá! Moro em Barueri e quero saber mais sobre o treino personalizado presencial.")}
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"

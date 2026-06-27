@@ -238,7 +238,7 @@ export default function Resultados() {
             Estas pessoas tinham dúvidas, medos e já tinham tentado de tudo antes. O que mudou foi o método e o acompanhamento.
           </p>
           <a
-            href={getWhatsAppUrl("Olá! Vi os resultados no site e quero começar minha transformação.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-black text-white px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-900 transition-all duration-200"

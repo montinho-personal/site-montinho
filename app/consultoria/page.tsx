@@ -244,7 +244,7 @@ export default function Consultoria() {
             para a sua realidade.
           </p>
           <a
-            href={getWhatsAppUrl("Olá! Vi as modalidades no site e não sei qual escolher. Pode me ajudar?")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-black text-white px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-900 transition-all duration-200"

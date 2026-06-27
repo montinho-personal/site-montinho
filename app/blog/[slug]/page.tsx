@@ -223,7 +223,7 @@ export default async function BlogPost({ params }: Props) {
               <p className="text-gray-300 text-sm leading-relaxed">
                 Para saber mais,{" "}
                 <a
-                  href={getWhatsAppUrl("Olá! Li um artigo no blog e gostaria de saber mais sobre a consultoria.")}
+                  href={getWhatsAppUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold italic underline underline-offset-2 decoration-1 transition-opacity duration-200 hover:opacity-70"

@@ -34,7 +34,7 @@ export default function Contato() {
         <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* WhatsApp big button */}
           <a
-            href={getWhatsAppUrl("Olá! Vim pelo site e quero saber mais sobre o Personal Trainer.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center justify-center gap-4 border border-white/20 hover:border-white p-8 transition-all duration-300 hover:bg-white/5 mb-8"
