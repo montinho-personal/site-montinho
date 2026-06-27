@@ -21,7 +21,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="inline-block mb-4">
-              <div className="relative h-12 w-32">
+              <div className="relative h-16 w-40">
                 <Image
                   src="/Logo-final.png"
                   alt="Montinho Personal Trainer"

@@ -209,7 +209,7 @@ export default function MinhaHistoria() {
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Chegou um momento — eu tinha uns 22 anos — que algo quebrou
+                  Chegou um momento — eu tinha uns 29 anos — que algo quebrou
                   em mim. Não de forma dramática, mas de forma definitiva. Eu
                   estava cansado de tentar e falhar. Cansado de me odiar. Cansado
                   de ser o meu próprio inimigo.
@@ -273,7 +273,7 @@ export default function MinhaHistoria() {
                   Mas foi sustentável — e isso fez toda a diferença.
                 </p>
                 <p>
-                  Perdi mais de 20kg de gordura. Ganhei músculo. Mas mais do que
+                  Perdi mais de 40kg de gordura. Ganhei músculo. Mas mais do que
                   a mudança física, o que aconteceu dentro de mim foi mais
                   profundo: aprendi a respeitar meu corpo, a entender seus sinais,
                   a me alimentar sem culpa e a treinar com inteligência.
@@ -393,7 +393,7 @@ export default function MinhaHistoria() {
               conversar com você.
             </p>
             <a
-              href={getWhatsAppUrl("Olá! Li sua história no site e me identifiquei muito. Quero conversar sobre como você pode me ajudar.")}
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"

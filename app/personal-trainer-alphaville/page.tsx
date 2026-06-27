@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 
 export const metadata: Metadata = {
   title: "Personal Trainer em Alphaville | Montinho Personal Trainer",
@@ -95,7 +97,7 @@ export default function PersonalTrainerAlphaville() {
             Moradores de Alphaville têm agenda cheia, compromissos que não podem ser adiados e paciência zero para método que não funciona. Aqui o treino é construído para a sua realidade — não para uma pessoa genérica.
           </p>
           <a
-            href={getWhatsAppUrl("Olá! Sou morador de Alphaville e tenho interesse no treino personalizado presencial.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
@@ -117,16 +119,32 @@ export default function PersonalTrainerAlphaville() {
           >
             Vivo em Alphaville há mais de 20 anos. Conheço esse lugar como poucos.
           </h2>
-          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
-            <p>
-              Alphaville tem um ritmo que quem não vive aqui não entende. A saída para São Paulo às 6h30, o trânsito de volta que ninguém controla, a academia que fecha às 22h, o jantar que acontece só depois das 21h. Quando você mora no mesmo lugar há mais de duas décadas, você para de tentar encaixar o treino num modelo padrão — e começa a construir um método que cabe nessa realidade.
-            </p>
-            <p>
-              Minha paixão pela musculação não nasceu de um livro. Nasceu de necessidade. Cresci convivendo com o excesso de peso, passei anos tentando dietas e protocolos que prometiam resultado rápido e entregavam frustração. Foi só quando decidi estudar de verdade — entender como o corpo funciona, o que a ciência diz sobre treino e composição corporal — que as coisas mudaram. Para mim primeiro. Depois para os meus alunos.
-            </p>
-            <p>
-              Hoje trabalho com pessoas que têm a mesma rotina que eu tinha: agenda lotada, pouca margem para erro e zero paciência para perder tempo. O que ofereço não é uma ficha de treino — é um protocolo construído especificamente para você, com ajustes contínuos conforme seu corpo responde.
-            </p>
+          <div className="grid sm:grid-cols-[1fr_auto] gap-10 items-start">
+            <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
+              <p>
+                Alphaville tem um ritmo que quem não vive aqui não entende. A saída para São Paulo às 6h30, o trânsito de volta que ninguém controla, a academia que fecha às 22h, o jantar que acontece só depois das 21h. Quando você mora no mesmo lugar há mais de duas décadas, você para de tentar encaixar o treino num modelo padrão — e começa a construir um método que cabe nessa realidade.
+              </p>
+              <p>
+                Minha paixão pela musculação não nasceu de um livro. Nasceu de necessidade. Cresci convivendo com o excesso de peso, passei anos tentando dietas e protocolos que prometiam resultado rápido e entregavam frustração. Foi só quando decidi estudar de verdade — entender como o corpo funciona, o que a ciência diz sobre treino e composição corporal — que as coisas mudaram. Para mim primeiro. Depois para os meus alunos.
+              </p>
+              <p>
+                Hoje trabalho com pessoas que têm a mesma rotina que eu tinha: agenda lotada, pouca margem para erro e zero paciência para perder tempo. O que ofereço não é uma ficha de treino — é um protocolo construído especificamente para você, com ajustes contínuos conforme seu corpo responde.
+              </p>
+            </div>
+            <div className="flex-shrink-0 mx-auto sm:mx-0">
+              <Image
+                src="/Treinador%20Alphaville.jpg"
+                alt="Treinador Alphaville"
+                title="Treinador Alphaville"
+                aria-label="Treinador Alphaville"
+                width={260}
+                height={462}
+                loading="lazy"
+                decoding="async"
+                className="object-cover object-top"
+                style={{ width: "260px", height: "462px", maxWidth: "100%" }}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -181,6 +199,20 @@ export default function PersonalTrainerAlphaville() {
               </div>
             ))}
           </div>
+
+          <div className="mt-12 relative w-full overflow-hidden" style={{ height: "420px" }}>
+            <Image
+              src="/Personal%20Trainer%20Alphaville.jpg"
+              alt="Personal Trainer Alphaville"
+              title="Personal Trainer Alphaville"
+              aria-label="Personal Trainer Alphaville"
+              fill
+              loading="lazy"
+              decoding="async"
+              className="object-cover object-center"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+          </div>
         </div>
       </section>
 
@@ -196,7 +228,7 @@ export default function PersonalTrainerAlphaville() {
           <p className="text-gray-400 font-light mb-10 leading-relaxed">
             Alphaville concentra um perfil de pessoa muito específico. Executivos, empreendedores, profissionais liberais, mães que conciliam filhos e carreira — todos com uma coisa em comum: tempo escasso e exigência alta. Trabalho com:
           </p>
-          <ul className="space-y-4">
+          <ul className="space-y-4 mb-10">
             {[
               "Quem quer emagrecer com método — sem dietas radicais que não sustentam",
               "Quem busca hipertrofia real, não apenas volume aparente de treino",
@@ -211,6 +243,35 @@ export default function PersonalTrainerAlphaville() {
               </li>
             ))}
           </ul>
+          <div style={{ maxWidth: "280px" }}>
+            <Image
+              src="/Personal%20Trainer%20Alphaville%20SP.jpg"
+              alt="Personal Trainer Alphaville SP"
+              title="Personal Trainer Alphaville SP"
+              aria-label="Personal Trainer Alphaville SP"
+              width={280}
+              height={498}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Video */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            className="text-3xl font-bold text-white mb-6"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            5 Dicas para acabar com dores no lombar
+          </h2>
+          <p className="text-gray-400 leading-relaxed mb-8">
+            Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
+          </p>
+          <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
         </div>
       </section>
 
@@ -251,7 +312,7 @@ export default function PersonalTrainerAlphaville() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={getWhatsAppUrl("Olá! Sou morador de Alphaville e quero saber mais sobre o treino personalizado presencial.")}
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"

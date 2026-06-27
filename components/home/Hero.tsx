@@ -47,7 +47,7 @@ export default function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href={getWhatsAppUrl("Olá! Vim pelo site e quero saber mais sobre o Personal Trainer.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200 hover:shadow-lg hover:shadow-white/10"

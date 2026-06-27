@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 
 export const metadata: Metadata = {
   title: "Personal Trainer em Santana de Parnaíba | Montinho Personal Trainer",
@@ -96,7 +98,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
             Santana de Parnaíba tem um jeito próprio de viver: espaço, tranquilidade e qualidade de vida. Meu trabalho é ajudar quem vive aqui a transformar essa escolha de estilo de vida em saúde e corpo real — com método, sem atalhos.
           </p>
           <a
-            href={getWhatsAppUrl("Olá! Sou morador de Santana de Parnaíba e tenho interesse no treino personalizado.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
@@ -128,6 +130,19 @@ export default function PersonalTrainerSantanaDeParnaiba() {
             <p>
               Minha trajetória na musculação começou pela necessidade pessoal. Passei anos convivendo com o sobrepeso até entender que o problema não era falta de esforço — era falta de método. Quando aprendi a base científica do que funciona de verdade, a transformação aconteceu. Não em semanas, mas de forma real e permanente. Esse aprendizado é o que transmito hoje para os meus alunos de Santana de Parnaíba e da região.
             </p>
+          </div>
+          <div className="mt-10" style={{ maxWidth: "260px" }}>
+            <Image
+              src="/Personal%20Trainer%20Santana%20de%20Parna%C3%ADba.jpg"
+              alt="Personal Trainer Santana de Parnaíba"
+              title="Personal Trainer Santana de Parnaíba"
+              aria-label="Personal Trainer Santana de Parnaíba"
+              width={260}
+              height={462}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </section>
@@ -178,6 +193,19 @@ export default function PersonalTrainerSantanaDeParnaiba() {
               </div>
             ))}
           </div>
+          <div className="mt-10 ml-auto" style={{ maxWidth: "260px" }}>
+            <Image
+              src="/Treinador%20Santana%20de%20Parnaiba.jpg"
+              alt="Treinador Santana de Parnaiba"
+              title="Treinador Santana de Parnaiba"
+              aria-label="Treinador Santana de Parnaiba"
+              width={260}
+              height={462}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </section>
 
@@ -221,6 +249,35 @@ export default function PersonalTrainerSantanaDeParnaiba() {
               </div>
             ))}
           </div>
+          <div className="mt-10" style={{ maxWidth: "260px" }}>
+            <Image
+              src="/Personal%20Trainer%20Santana%20de%20Parna%C3%ADba%20SP.jpg"
+              alt="Personal Trainer Santana de Parnaíba SP"
+              title="Personal Trainer Santana de Parnaíba SP"
+              aria-label="Personal Trainer Santana de Parnaíba SP"
+              width={260}
+              height={462}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Video */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            className="text-3xl font-bold text-white mb-6"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            5 Dicas para acabar com dores no lombar
+          </h2>
+          <p className="text-gray-400 leading-relaxed mb-8">
+            Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
+          </p>
+          <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
         </div>
       </section>
 
@@ -261,7 +318,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={getWhatsAppUrl("Olá! Moro em Santana de Parnaíba e tenho interesse no treino personalizado presencial.")}
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"

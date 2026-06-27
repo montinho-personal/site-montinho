@@ -1,5 +1,5 @@
 const WHATSAPP_NUMBER = "5511981063409";
-const DEFAULT_MESSAGE = "Olá! Vim pelo site e quero saber mais sobre o Personal Trainer.";
+const DEFAULT_MESSAGE = "Olá, Montinho! Vim pelo seu site e tenho interesse no seu acompanhamento. Gostaria de saber como funciona e qual opção é mais indicada para mim.";
 
 export function getWhatsAppUrl(message: string = DEFAULT_MESSAGE): string {
   const encodedMessage = encodeURIComponent(message);

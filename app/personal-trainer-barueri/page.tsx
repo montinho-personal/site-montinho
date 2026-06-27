@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 
 export const metadata: Metadata = {
   title: "Personal Trainer em Barueri | Montinho Personal Trainer",
@@ -96,7 +98,7 @@ export default function PersonalTrainerBarueri() {
             Barueri concentra alguns dos profissionais e famílias mais exigentes da Grande São Paulo. Pessoas que pesquisam antes de decidir, que não abrem mão de qualidade e que querem entender o que estão fazendo — não apenas seguir ordens. Se esse é você, provavelmente vamos nos entender bem.
           </p>
           <a
-            href={getWhatsAppUrl("Olá! Moro em Barueri e tenho interesse no treino personalizado presencial.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
@@ -128,6 +130,19 @@ export default function PersonalTrainerBarueri() {
             <p>
               Minha trajetória na musculação nasceu de experiência própria: anos convivendo com o excesso de peso, tentativas frustradas com protocolos genéricos e, por fim, a decisão de estudar de verdade o que a ciência diz sobre composição corporal. A transformação que vivi no meu próprio corpo é o fundamento de tudo que ofereço hoje — não uma teoria que aprendi num curso, mas algo que vivi e que sei replicar com método.
             </p>
+          </div>
+          <div className="mt-10 relative w-full overflow-hidden" style={{ height: "400px" }}>
+            <Image
+              src="/Personal%20Trainer%20Barueri.jpg"
+              alt="Personal Trainer Barueri"
+              title="Personal Trainer Barueri"
+              aria-label="Personal Trainer Barueri"
+              fill
+              loading="lazy"
+              decoding="async"
+              className="object-cover object-top"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
           </div>
         </div>
       </section>
@@ -177,6 +192,19 @@ export default function PersonalTrainerBarueri() {
               </div>
             ))}
           </div>
+          <div className="mt-10" style={{ maxWidth: "280px" }}>
+            <Image
+              src="/Personal%20Trainer%20Barueri%20SP.jpg"
+              alt="Personal Trainer Barueri SP"
+              title="Personal Trainer Barueri SP"
+              aria-label="Personal Trainer Barueri SP"
+              width={280}
+              height={497}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </section>
 
@@ -207,6 +235,22 @@ export default function PersonalTrainerBarueri() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Video */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            className="text-3xl font-bold text-white mb-6"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            5 Dicas para acabar com dores no lombar
+          </h2>
+          <p className="text-gray-400 leading-relaxed mb-8">
+            Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
+          </p>
+          <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
         </div>
       </section>
 
@@ -247,7 +291,7 @@ export default function PersonalTrainerBarueri() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={getWhatsAppUrl("Olá! Moro em Barueri e quero saber mais sobre o treino personalizado presencial.")}
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"

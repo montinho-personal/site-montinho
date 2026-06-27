@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getBlogPost, getRelatedPosts, blogPosts, SITE_URL } from "@/lib/blog";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -168,6 +169,22 @@ export default async function BlogPost({ params }: Props) {
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
+          {/* Video */}
+          {post.slug === "como-prevenir-lesoes-no-treino" && (
+            <div className="mt-16 pt-10 border-t border-white/10">
+              <h2
+                className="text-2xl font-bold text-white mb-6"
+                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              >
+                5 Dicas para acabar com dores no lombar
+              </h2>
+              <p className="text-gray-400 leading-relaxed mb-8">
+                Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
+              </p>
+              <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
+            </div>
+          )}
+
           {/* Author box */}
           <div className="mt-16 pt-8 border-t border-white/10 flex items-start gap-5">
             <div
@@ -206,7 +223,7 @@ export default async function BlogPost({ params }: Props) {
               <p className="text-gray-300 text-sm leading-relaxed">
                 Para saber mais,{" "}
                 <a
-                  href={getWhatsAppUrl("Olá! Li um artigo no blog e gostaria de saber mais sobre a consultoria.")}
+                  href={getWhatsAppUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold italic underline underline-offset-2 decoration-1 transition-opacity duration-200 hover:opacity-70"

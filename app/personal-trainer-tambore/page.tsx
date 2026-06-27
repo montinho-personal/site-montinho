@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 
 export const metadata: Metadata = {
   title: "Personal Trainer Tamboré | Montinho Personal Trainer",
@@ -96,7 +98,7 @@ export default function PersonalTrainerTambore() {
             Tamboré é um bairro residencial com ritmo próprio — mais tranquilo, mais familiar, mais próximo. Meu trabalho respeita esse contexto: acompanhamento próximo, sem pressa e com a atenção que quem vive aqui valoriza.
           </p>
           <a
-            href={getWhatsAppUrl("Olá! Moro em Tamboré e tenho interesse no treino personalizado presencial.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
@@ -128,6 +130,19 @@ export default function PersonalTrainerTambore() {
             <p>
               Comecei na musculação pela mesma razão que muitos dos meus alunos hoje: insatisfação com o próprio corpo e uma longa sequência de métodos que prometiam muito e entregavam frustração. O que mudou foi quando parei de buscar atalho e passei a entender de fato como o corpo funciona. Essa virada foi o começo do meu trabalho como personal trainer — e é o que guia cada protocolo que monto até hoje.
             </p>
+          </div>
+          <div className="mt-10" style={{ maxWidth: "220px" }}>
+            <Image
+              src="/Personal%20Trainer%20Tambor%C3%A9.jpg"
+              alt="Personal Trainer Tamboré"
+              title="Personal Trainer Tamboré"
+              aria-label="Personal Trainer Tamboré"
+              width={220}
+              height={476}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </section>
@@ -187,6 +202,19 @@ export default function PersonalTrainerTambore() {
               </div>
             ))}
           </div>
+          <div className="mt-10 relative w-full overflow-hidden" style={{ height: "380px" }}>
+            <Image
+              src="/Treinador%20tambor%C3%A9.jpg"
+              alt="Treinador tamboré"
+              title="Treinador tamboré"
+              aria-label="Treinador tamboré"
+              fill
+              loading="lazy"
+              decoding="async"
+              className="object-cover object-top"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+          </div>
         </div>
       </section>
 
@@ -223,6 +251,35 @@ export default function PersonalTrainerTambore() {
             </Link>
             .
           </p>
+          <div className="mt-10 ml-auto" style={{ maxWidth: "240px" }}>
+            <Image
+              src="/Personal%20Trainer%20Tambor%C3%A9%20%282%29.jpg"
+              alt="Personal Trainer Tamboré (2)"
+              title="Personal Trainer Tamboré (2)"
+              aria-label="Personal Trainer Tamboré (2)"
+              width={240}
+              height={427}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Video */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            className="text-3xl font-bold text-white mb-6"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            5 Dicas para acabar com dores no lombar
+          </h2>
+          <p className="text-gray-400 leading-relaxed mb-8">
+            Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
+          </p>
+          <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
         </div>
       </section>
 
@@ -263,7 +320,7 @@ export default function PersonalTrainerTambore() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={getWhatsAppUrl("Olá! Moro em Tamboré e quero saber mais sobre o treino personalizado presencial.")}
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"

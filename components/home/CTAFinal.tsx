@@ -23,7 +23,7 @@ export default function CTAFinal() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href={getWhatsAppUrl("Olá! Vim pelo site e gostaria de começar minha transformação com o Personal Trainer.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-black text-white px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-900 transition-all duration-200 hover:shadow-xl"

@@ -143,7 +143,7 @@ export default function FAQ() {
             Me mande uma mensagem pelo WhatsApp. Respondo pessoalmente e sem enrolação.
           </p>
           <a
-            href={getWhatsAppUrl("Olá! Tenho uma dúvida sobre a consultoria e gostaria de conversar.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
