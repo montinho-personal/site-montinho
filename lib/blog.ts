@@ -1213,6 +1213,8 @@ export const blogPosts: BlogPost[] = [
 
 <p>Neste artigo, vou te mostrar o que a fisiologia diz sobre duração de treino, quanto tempo faz sentido para cada objetivo, e o que provavelmente está desperdiçando o seu tempo na academia — sem que você perceba.</p>
 
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Quanto tempo deve durar o seu treino na academia" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>O que a duração do treino realmente representa</h2>
 
 <p>Existe uma confusão muito comum entre duração e volume de treino. São coisas diferentes.</p>
@@ -1763,6 +1765,8 @@ export const blogPosts: BlogPost[] = [
 <p>Duas pessoas podem treinar peito em dias consecutivos e ter resultados completamente diferentes. Uma vai progredir. A outra vai acumular fadiga sem construir nada. A diferença não está no fato de ter treinado dias seguidos — está no contexto em que isso aconteceu.</p>
 
 <p>Neste artigo, vou te mostrar esse contexto em detalhe: o que acontece no músculo depois do treino, quais fatores determinam a velocidade de recuperação, e quando treinar o mesmo músculo em dias consecutivos faz sentido — e quando é um erro.</p>
+
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Pode treinar o mesmo músculo dois dias seguidos?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>O que acontece com o músculo depois do treino</h2>
 
@@ -3688,6 +3692,8 @@ export const blogPosts: BlogPost[] = [
 <p>Uma das perguntas mais frequentes que recebo na consultoria é: "Como monto um treino para ganhar massa muscular?" A resposta curta é que não existe uma fórmula universal — mas existem princípios que, quando aplicados corretamente, funcionam para qualquer pessoa.</p>
 
 <p>Este é um guia prático. Não apenas teoria — você vai sair daqui sabendo exatamente como estruturar seu treino de hipertrofia, com exemplos concretos de divisões para 3, 4 e 5 dias de treino por semana.</p>
+
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Como montar um treino de hipertrofia do zero" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Os 6 pilares do treino de hipertrofia</h2>
 
@@ -6163,6 +6169,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Já perdi a conta de quantas alunas chegaram até mim com medo de "ficar grande" de musculação. É o mito mais persistente que existe na área — e é completamente falso do ponto de vista biológico.</p>
 
 <p>Vou explicar por que, e depois vou contar o que a musculação realmente faz no corpo feminino.</p>
+
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Hipertrofia feminina: treinar pesado não faz ficar grande" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>A biologia que desmonta o mito</h2>
 
@@ -18011,6 +18019,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><strong>Profundidade insuficiente:</strong> descer só a 90° ou menos limita o recrutamento de glúteo e o benefício total do exercício</li>
 </ul>
 
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Agachamento livre: técnica correta passo a passo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Progressão para iniciantes</h2>
 <p>Se você está começando, siga esta sequência antes de colocar barra:</p>
 <ol>
@@ -18092,6 +18102,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><strong>Carga excessiva sem base técnica:</strong> o ego mata as costas. Comece leve, construa o padrão motor</li>
 </ul>
 
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Levantamento terra: técnica correta para não machucar a coluna" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Progressão para iniciantes</h2>
 <ol>
   <li>Terra romeno com halteres (RDL) — aprende o "hinge" de quadril</li>
@@ -18171,6 +18183,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><strong>Prancha lateral:</strong> 3 × 20 seg cada lado</li>
   <li><strong>Burpee:</strong> 3 × 8</li>
 </ul>
+
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Como progredir ao longo do tempo</h2>
 <table>
@@ -18590,6 +18604,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p><strong>Intermediários (1–3 anos):</strong> upper/lower 4 dias ou ABC com volume aumentado. A divisão começa a fazer mais sentido quando o volume necessário por grupo muscular aumenta.</p>
 <p><strong>Avançados (3+ anos):</strong> Push/Pull/Legs ou ABC/ABCDE com 5–6 dias. O volume necessário para continuar progredindo justifica a divisão.</p>
 
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Full body ou divisão ABC: qual é melhor para você?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>A armadilha da divisão ABC para iniciantes</h2>
 <p>Muitos iniciantes adotam divisão ABC porque é o que veem na academia. O problema: ao faltar um treino (e vai acontecer), um grupo muscular inteiro fica sem estímulo por 2 semanas. Com full body, faltar um treino significa apenas menos frequência naquela semana — os outros ficam intactos.</p>
 
@@ -18677,6 +18693,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><strong>Volume por sessão:</strong> 15–20 séries por sessão para iniciantes/intermediários; avançados podem ir até 25</li>
   <li><strong>Repetições:</strong> 6–10 para força/hipertrofia em compostos; 10–15 para isolados</li>
 </ul>
+
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Como montar treino ABC: estrutura, exercícios e progressão" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Como progredir</h2>
 <p>A progressão de carga é o princípio mais importante:</p>
