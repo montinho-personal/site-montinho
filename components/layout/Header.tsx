@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
+import SearchBar from "@/components/search/SearchBar";
 
 const navLinks = [
   { href: "/minha-historia", label: "Minha História" },
@@ -27,7 +28,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20 overflow-hidden">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link
             href="/"
@@ -59,8 +60,10 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden lg:block">
+          {/* Desktop right: search + CTA */}
+          <div className="hidden lg:flex items-center gap-3">
+            <SearchBar compact />
+
             <a
               href={getWhatsAppUrl()}
               target="_blank"
@@ -80,19 +83,17 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            type="button"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden text-white p-2 hover:text-gray-300 transition-colors"
-            aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
-            aria-expanded={isMenuOpen}
-          >
-            {isMenuOpen ? (
+          {/* Mobile: search icon + hamburger */}
+          <div className="flex items-center gap-1 lg:hidden">
+            <Link
+              href="/busca"
+              aria-label="Pesquisar"
+              className="text-white p-2 hover:text-gray-300 transition-colors"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -101,34 +102,57 @@ export default function Header() {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
+                  d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"
                 />
               </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            )}
-          </button>
+            </Link>
+
+            <button
+              type="button"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-white p-2 hover:text-gray-300 transition-colors"
+              aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
+              aria-expanded={isMenuOpen}
+            >
+              {isMenuOpen ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="lg:hidden bg-black border-t border-white/10">
-          <nav className="flex flex-col py-4 px-4 gap-1">
+          {/* Search field in mobile menu */}
+          <div className="px-4 pt-4 pb-2">
+            <SearchBar onClose={() => setIsMenuOpen(false)} />
+          </div>
+
+          <nav className="flex flex-col py-2 px-4 gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
