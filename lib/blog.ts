@@ -26,7 +26,7 @@ export const BLOG_CATEGORIES = [
   "Hábitos",
 ];
 
-export const blogPosts: BlogPost[] = [
+export const blogPosts = ([
   // ─────────────────────────────────────────────────────────────────────────
   // ARTIGO 1
   // ─────────────────────────────────────────────────────────────────────────
@@ -27718,7 +27718,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       }
   ],
   }
-];
+]) as BlogPost[];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
   return blogPosts.find((post) => post.slug === slug);
