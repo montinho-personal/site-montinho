@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Hidratacao para Performance">
+  <title>Hidratacao para Performance</title>
+  <desc>Infografico: Hidratacao para Performance - Montinho Personal Trainer</desc>
+  <!-- T15: CHECKLIST NUMBERED -->
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <!-- Category pill -->
+  <rect x="25" y="22" width="112" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="81" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Treinamento</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Hidratacao para Performance</text>
+  <text x="600" y="120" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle">Guia Pratico ? Montinho Personal Trainer</text>
+  <circle cx="80" cy="165" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="80" y="172" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">1</text>
+  <text x="120" y="157" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Ponto principal</text>
+  <text x="120" y="181" font-family="Arial,sans-serif" font-size="14" fill="#888888">detalhe e contexto aqui</text>
+  <line x1="30" y1="200" x2="1150" y2="200" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="253" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="80" y="260" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">2</text>
+  <text x="120" y="245" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Segundo ponto</text>
+  <text x="120" y="269" font-family="Arial,sans-serif" font-size="14" fill="#888888">mais informacao relevante</text>
+  <line x1="30" y1="288" x2="1150" y2="288" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="341" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="80" y="348" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">3</text>
+  <text x="120" y="333" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Terceiro ponto</text>
+  <text x="120" y="357" font-family="Arial,sans-serif" font-size="14" fill="#888888">dica pratica e objetiva</text>
+  <line x1="30" y1="376" x2="1150" y2="376" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="429" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="80" y="436" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">4</text>
+  <text x="120" y="421" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Quarto ponto</text>
+  <text x="120" y="445" font-family="Arial,sans-serif" font-size="14" fill="#888888">aplicacao no treino</text>
+  <line x1="30" y1="464" x2="1150" y2="464" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="517" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="80" y="524" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">5</text>
+  <text x="120" y="509" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Quinto ponto</text>
+  <text x="120" y="533" font-family="Arial,sans-serif" font-size="14" fill="#888888">consistencia e resultado</text>
+  <line x1="30" y1="552" x2="1150" y2="552" stroke="#222" stroke-width="1"/>
+  <!-- Watermark -->
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
+</svg>
