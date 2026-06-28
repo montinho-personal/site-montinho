@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Primeira Semana na Academia: Guia Completo para Comecar Certo">
+  <title>Primeira Semana na Academia: Guia Completo para Comecar Certo</title>
+  <desc>Infografico: Primeira Semana na Academia: Guia Completo para Comecar Certo - Montinho Personal Trainer</desc>
+  <!-- T5: TIMELINE PROGRESS -->
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <!-- Category pill -->
+  <rect x="25" y="22" width="112" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="81" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Treinamento</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Primeira Semana na Academia: Guia Completo para Comec..</text>
+  <!-- Timeline axis -->
+  <line x1="80" y1="340" x2="950" y2="340" stroke="#BA9E50" stroke-width="3"/>
+  <!-- Arrow at end -->
+  <polygon points="960,340 944,332 944,348" fill="#BA9E50"/>
+  <text x="975" y="345" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Tempo</text>
+  <text x="80" y="345" font-family="Arial,sans-serif" font-size="20" fill="#BA9E50">|</text>
+  <circle cx="140" cy="340" r="16" fill="#BA9E50" stroke="#0d0d0d" stroke-width="3"/>
+  <text x="140" y="345" font-family="Arial,sans-serif" font-size="11" fill="#0d0d0d" text-anchor="middle" font-weight="bold">1</text>
+  <text x="140" y="300" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle" font-weight="bold">Dia 1-2</text>
+  <text x="140" y="260" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle">Adaptacao e foco</text>
+  <line x1="140" y1="324" x2="140" y2="305" stroke="#BA9E50" stroke-width="1" stroke-dasharray="3,3"/>  <circle cx="380" cy="340" r="16" fill="#BA9E50" stroke="#0d0d0d" stroke-width="3"/>
+  <text x="380" y="345" font-family="Arial,sans-serif" font-size="11" fill="#0d0d0d" text-anchor="middle" font-weight="bold">2</text>
+  <text x="380" y="395" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle" font-weight="bold">Dia 3-4</text>
+  <text x="380" y="440" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle">Volume moderado</text>
+  <line x1="380" y1="324" x2="380" y2="375" stroke="#BA9E50" stroke-width="1" stroke-dasharray="3,3"/>  <circle cx="620" cy="340" r="16" fill="#BA9E50" stroke="#0d0d0d" stroke-width="3"/>
+  <text x="620" y="345" font-family="Arial,sans-serif" font-size="11" fill="#0d0d0d" text-anchor="middle" font-weight="bold">3</text>
+  <text x="620" y="300" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle" font-weight="bold">Dia 5</text>
+  <text x="620" y="260" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle">Descanso ativo</text>
+  <line x1="620" y1="324" x2="620" y2="305" stroke="#BA9E50" stroke-width="1" stroke-dasharray="3,3"/>  <circle cx="860" cy="340" r="16" fill="#BA9E50" stroke="#0d0d0d" stroke-width="3"/>
+  <text x="860" y="345" font-family="Arial,sans-serif" font-size="11" fill="#0d0d0d" text-anchor="middle" font-weight="bold">4</text>
+  <text x="860" y="395" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle" font-weight="bold">Semana 2+</text>
+  <text x="860" y="440" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle">Progredir carga</text>
+  <line x1="860" y1="324" x2="860" y2="375" stroke="#BA9E50" stroke-width="1" stroke-dasharray="3,3"/>
+  <!-- Watermark -->
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
+</svg>
