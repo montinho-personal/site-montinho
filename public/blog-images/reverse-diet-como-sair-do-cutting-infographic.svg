@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Reverse Diet: Como Sair do Cutting Sem Recuperar Gordura e Salvar Seu Metabolismo">
   <title>Reverse Diet: Como Sair do Cutting Sem Recuperar Gordura e Salvar Seu Metabolismo</title>
-  <desc>Infográfico: Reverse Diet: Como Sair do Cutting Sem Recuperar Gordura e Salvar Seu Metabolismo</desc>
+  <desc>Infografico: Reverse Diet: Como Sair do Cutting Sem Recuperar Gordura e Salvar Seu Metabolismo</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#111111"/>
@@ -11,49 +12,45 @@
       <stop offset="100%" stop-color="#A08030"/>
     </linearGradient>
   </defs>
-  <!-- background -->
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <!-- border -->
   <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <!-- accent line -->
   <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <!-- branding -->
   <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
   <rect x="60" y="30" width="108" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
   <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">METABOLISMO</text>
   <text x="60" y="90" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Reverse Diet</text>
   <text x="60" y="146" font-family="Arial,sans-serif" font-size="16" fill="#555555">Como sair do cutting sem engordar</text>
   <rect x="60" y="168" width="80" height="3" rx="2" fill="url(#gold)"/>
-  <rect x="60" y="200" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <text x="84" y="232" font-family="Arial,sans-serif" font-size="20">📈</text>
-  <text x="116" y="222" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Aumente calorias em 50–75 kcal por</text>
-  <text x="116" y="238" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">semana — devagar é mais eficaz</text>
-  <rect x="600" y="200" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <text x="624" y="232" font-family="Arial,sans-serif" font-size="20">💪</text>
-  <text x="656" y="222" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Mantenha proteína alta durante todo o</text>
-  <text x="656" y="238" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">processo de reverse diet</text>
-  <rect x="60" y="264" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <text x="84" y="296" font-family="Arial,sans-serif" font-size="20">⚖️</text>
-  <text x="116" y="286" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Aceite ganho de 0.2–0.5 kg/semana — em</text>
-  <text x="116" y="302" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">sua maioria é glicogênio</text>
-  <rect x="600" y="264" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <text x="624" y="296" font-family="Arial,sans-serif" font-size="20">📊</text>
-  <text x="656" y="286" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Monitore peso, força e medidas para</text>
-  <text x="656" y="302" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">detectar ganho real de gordura</text>
-  <rect x="60" y="328" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <text x="84" y="360" font-family="Arial,sans-serif" font-size="20">🏋️</text>
-  <text x="116" y="350" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Aumente volume de treino à medida que as</text>
-  <text x="116" y="366" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">calorias sobem</text>
-  <rect x="600" y="328" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <text x="624" y="360" font-family="Arial,sans-serif" font-size="20">⏳</text>
-  <text x="656" y="350" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Processo dura 8–16 semanas dependendo da</text>
-  <text x="656" y="366" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">profundidade do cutting</text>
-  <rect x="60" y="392" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <text x="84" y="424" font-family="Arial,sans-serif" font-size="20">🔬</text>
-  <text x="116" y="414" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Metabolismo adapta em 3–4 semanas:</text>
-  <text x="116" y="430" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">paciência é fundamental</text>
-  <rect x="600" y="392" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <text x="624" y="424" font-family="Arial,sans-serif" font-size="20">🎯</text>
-  <text x="656" y="414" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Objetivo: recuperar TDEE original sem</text>
-  <text x="656" y="430" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">acumular gordura excessiva</text>
+  <rect x="60" y="200" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <circle cx="84" cy="225" r="8" fill="#BA9E50" opacity="0.8"/>
+  <text x="104" y="222" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Aumente calorias em 50-75 kcal por semana -</text>
+  <text x="104" y="238" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">devagar e mais eficaz</text>
+  <rect x="600" y="200" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <circle cx="624" cy="225" r="8" fill="#42A5F5" opacity="0.8"/>
+  <text x="644" y="222" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Mantenha proteina alta durante todo o processo de</text>
+  <text x="644" y="238" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">reverse diet</text>
+  <rect x="60" y="264" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <circle cx="84" cy="289" r="8" fill="#4CAF50" opacity="0.8"/>
+  <text x="104" y="286" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Aceite ganho de 0.2-0.5 kg/semana - em sua maioria</text>
+  <text x="104" y="302" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">e glicogenio</text>
+  <rect x="600" y="264" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <circle cx="624" cy="289" r="8" fill="#FF7043" opacity="0.8"/>
+  <text x="644" y="286" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Monitore peso, forca e medidas para detectar ganho</text>
+  <text x="644" y="302" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">real de gordura</text>
+  <rect x="60" y="328" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <circle cx="84" cy="353" r="8" fill="#EF5350" opacity="0.8"/>
+  <text x="104" y="350" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Aumente volume de treino a medida que as calorias</text>
+  <text x="104" y="366" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">sobem</text>
+  <rect x="600" y="328" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <circle cx="624" cy="353" r="8" fill="#BA9E50" opacity="0.8"/>
+  <text x="644" y="350" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Processo dura 8-16 semanas dependendo da</text>
+  <text x="644" y="366" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">profundidade do cutting</text>
+  <rect x="60" y="392" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <circle cx="84" cy="417" r="8" fill="#42A5F5" opacity="0.8"/>
+  <text x="104" y="414" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Metabolismo adapta em 3-4 semanas: paciencia e</text>
+  <text x="104" y="430" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">fundamental</text>
+  <rect x="600" y="392" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <circle cx="624" cy="417" r="8" fill="#4CAF50" opacity="0.8"/>
+  <text x="644" y="414" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Objetivo: recuperar TDEE original sem acumular</text>
+  <text x="644" y="430" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">gordura excessiva</text>
 </svg>

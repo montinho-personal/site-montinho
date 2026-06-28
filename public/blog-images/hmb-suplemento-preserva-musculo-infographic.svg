@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="HMB: O Suplemento que Preserva Músculo (Evidências e Protocolo)">
-  <title>HMB: O Suplemento que Preserva Músculo (Evidências e Protocolo)</title>
-  <desc>Infográfico: HMB: O Suplemento que Preserva Músculo (Evidências e Protocolo)</desc>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="HMB: O Suplemento que Preserva Mosculo (Evidencias e Protocolo)">
+  <title>HMB: O Suplemento que Preserva Mosculo (Evidencias e Protocolo)</title>
+  <desc>Infografico: HMB: O Suplemento que Preserva Mosculo (Evidencias e Protocolo)</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#111111"/>
@@ -11,66 +12,62 @@
       <stop offset="100%" stop-color="#A08030"/>
     </linearGradient>
   </defs>
-  <!-- background -->
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <!-- border -->
   <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <!-- accent line -->
   <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <!-- branding -->
   <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
   <rect x="60" y="30" width="124" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
-  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">SUPLEMENTAÇÃO</text>
-  <text x="60" y="78" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">HMB: O Suplemento que Preserva Músculo</text>
-  <text x="60" y="120" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">(Evidências e Protocolo)</text>
-  <text x="60" y="176" font-family="Arial,sans-serif" font-size="16" fill="#555555">Evidências científicas sobre suplementos</text>
+  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">SUPLEMENTACAO</text>
+  <text x="60" y="78" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">HMB: O Suplemento que Preserva Mosculo</text>
+  <text x="60" y="120" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">(Evidencias e Protocolo)</text>
+  <text x="60" y="176" font-family="Arial,sans-serif" font-size="16" fill="#555555">Evidencias cientificas sobre suplementos</text>
   <rect x="60" y="198" width="80" height="3" rx="2" fill="url(#gold)"/>
   <rect x="60" y="195" width="270" height="52" fill="url(#gold)"/>
   <text x="195" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Suplemento</text>
   <rect x="330" y="195" width="270" height="52" fill="#2a2a2a"/>
-  <text x="465" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Benefício</text>
+  <text x="465" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Beneficio</text>
   <rect x="600" y="195" width="270" height="52" fill="#2a2a2a"/>
   <text x="735" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Dosagem</text>
   <rect x="870" y="195" width="270" height="52" fill="#2a2a2a"/>
-  <text x="1005" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Evidência</text>
+  <text x="1005" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Evidencia</text>
   <rect x="60" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
   <text x="72" y="278" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Creatina</text>
   <rect x="330" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">Força e volume</text>
+  <text x="342" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">Forca e volume</text>
   <rect x="600" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">3–5g/dia</text>
+  <text x="612" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">3-5g/dia</text>
   <rect x="870" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
   <text x="882" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">Alta</text>
   <rect x="60" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
   <text x="72" y="330" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Whey Protein</text>
   <rect x="330" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">Recuperação muscular</text>
+  <text x="342" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">Recuperacao muscular</text>
   <rect x="600" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">20–40g pós-treino</text>
+  <text x="612" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">20-40g pos-treino</text>
   <rect x="870" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
   <text x="882" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">Alta</text>
   <rect x="60" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="382" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Cafeína</text>
+  <text x="72" y="382" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Cafeina</text>
   <rect x="330" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
   <text x="342" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">Performance e foco</text>
   <rect x="600" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">3–6mg/kg</text>
+  <text x="612" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">3-6mg/kg</text>
   <rect x="870" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
   <text x="882" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">Alta</text>
   <rect x="60" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
   <text x="72" y="434" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Beta-Alanina</text>
   <rect x="330" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">Resistência muscular</text>
+  <text x="342" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">Resistencia muscular</text>
   <rect x="600" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">3.2–6.4g/dia</text>
+  <text x="612" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">3.2-6.4g/dia</text>
   <rect x="870" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
   <text x="882" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">Moderada</text>
   <rect x="60" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
   <text x="72" y="486" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Vitamina D</text>
   <rect x="330" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">Saúde e força</text>
+  <text x="342" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">Saude e forca</text>
   <rect x="600" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">1000–4000 UI/dia</text>
+  <text x="612" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">1000-4000 UI/dia</text>
   <rect x="870" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
   <text x="882" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">Alta</text>
 </svg>
