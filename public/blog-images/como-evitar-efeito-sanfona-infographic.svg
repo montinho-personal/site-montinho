@@ -1,54 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Como Evitar o Efeito Sanfona Apis Emagrecer">
-  <title>Como Evitar o Efeito Sanfona Apis Emagrecer</title>
-  <desc>Infografico: Como Evitar o Efeito Sanfona Apis Emagrecer</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#C9AE60"/>
-      <stop offset="100%" stop-color="#A08030"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
-  <rect x="60" y="30" width="124" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
-  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">EMAGRECIMENTO</text>
-  <text x="60" y="90" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Como Evitar o Efeito Sanfona Apis Emagrecer</text>
-  <text x="60" y="146" font-family="Arial,sans-serif" font-size="16" fill="#555555">Estrategia cientifica de perda de gordura</text>
-  <rect x="60" y="168" width="80" height="3" rx="2" fill="url(#gold)"/>
-  <rect x="60" y="200" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="84" cy="225" r="8" fill="#BA9E50" opacity="0.8"/>
-  <text x="104" y="222" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Deficit calorico de 300-500 kcal/dia para perda</text>
-  <text x="104" y="238" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">sustentavel</text>
-  <rect x="600" y="200" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="624" cy="225" r="8" fill="#42A5F5" opacity="0.8"/>
-  <text x="644" y="222" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Manter proteina alta: 1.6-2.2g por kg de peso</text>
-  <text x="644" y="238" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">corporal</text>
-  <rect x="60" y="264" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="84" cy="289" r="8" fill="#4CAF50" opacity="0.8"/>
-  <text x="104" y="286" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Combinar musculacao e cardio para maxima queima de</text>
-  <text x="104" y="302" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">gordura</text>
-  <rect x="600" y="264" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="624" cy="289" r="8" fill="#FF7043" opacity="0.8"/>
-  <text x="644" y="286" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Sono de qualidade: 7-9h para regular grelina e</text>
-  <text x="644" y="302" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">leptina</text>
-  <rect x="60" y="328" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="84" cy="353" r="8" fill="#EF5350" opacity="0.8"/>
-  <text x="104" y="350" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Hidratacao: 35 ml por kg de peso corporal por dia</text>
-  <rect x="600" y="328" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="624" cy="353" r="8" fill="#BA9E50" opacity="0.8"/>
-  <text x="644" y="350" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Monitorar progresso: peso, fotos e medidas a cada</text>
-  <text x="644" y="366" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">2 semanas</text>
-  <rect x="60" y="392" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="84" cy="417" r="8" fill="#42A5F5" opacity="0.8"/>
-  <text x="104" y="414" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Priorizar alimentos minimamente processados e alta</text>
-  <text x="104" y="430" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">saciedade</text>
-  <rect x="600" y="392" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="624" cy="417" r="8" fill="#4CAF50" opacity="0.8"/>
-  <text x="644" y="414" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Paciencia: perda saudavel e de 0.5-1 kg por semana</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Como Evitar o Efeito Sanfona Apos Emagrecer">
+  <title>Como Evitar o Efeito Sanfona Apos Emagrecer</title>
+  <desc>Infografico: Como Evitar o Efeito Sanfona Apos Emagrecer - Montinho Personal Trainer</desc>
+  <!-- T6: DO/DONT -->
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <!-- Category pill -->
+  <rect x="25" y="22" width="128" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="89" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Emagrecimento</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Como Evitar o Efeito Sanfona Apos Emagrecer</text>
+  <!-- Headers -->
+  <rect x="40" y="130" width="500" height="45" rx="4" fill="#E53E3E" fill-opacity="0.2"/>
+  <text x="290" y="160" font-family="Arial,sans-serif" font-size="20" fill="#E53E3E" text-anchor="middle" font-weight="bold">ERROS COMUNS</text>
+  <rect x="620" y="130" width="540" height="45" rx="4" fill="#38A169" fill-opacity="0.2"/>
+  <text x="890" y="160" font-family="Arial,sans-serif" font-size="20" fill="#38A169" text-anchor="middle" font-weight="bold">MODO CERTO</text>
+  <!-- Divider -->
+  <line x1="600" y1="120" x2="600" y2="600" stroke="#444" stroke-width="1"/>
+  <rect x="40" y="175" width="500" height="50" rx="4" fill="#E53E3E" fill-opacity="0.08"/>
+  <text x="65" y="205" font-family="Arial,sans-serif" font-size="28" fill="#E53E3E" font-weight="bold">x</text>
+  <text x="100" y="205" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Erro 1</text>  <rect x="40" y="255" width="500" height="50" rx="4" fill="#E53E3E" fill-opacity="0.08"/>
+  <text x="65" y="285" font-family="Arial,sans-serif" font-size="28" fill="#E53E3E" font-weight="bold">x</text>
+  <text x="100" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Erro 2</text>  <rect x="40" y="335" width="500" height="50" rx="4" fill="#E53E3E" fill-opacity="0.08"/>
+  <text x="65" y="365" font-family="Arial,sans-serif" font-size="28" fill="#E53E3E" font-weight="bold">x</text>
+  <text x="100" y="365" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Erro 3</text>  <rect x="40" y="415" width="500" height="50" rx="4" fill="#E53E3E" fill-opacity="0.08"/>
+  <text x="65" y="445" font-family="Arial,sans-serif" font-size="28" fill="#E53E3E" font-weight="bold">x</text>
+  <text x="100" y="445" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Erro 4</text>
+  <rect x="620" y="175" width="540" height="50" rx="4" fill="#38A169" fill-opacity="0.08"/>
+  <line x1="645" y1="202" x2="655" y2="212" stroke="#38A169" stroke-width="3"/>
+  <line x1="655" y1="212" x2="675" y2="192" stroke="#38A169" stroke-width="3"/>
+  <text x="690" y="205" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Certo 1</text>  <rect x="620" y="255" width="540" height="50" rx="4" fill="#38A169" fill-opacity="0.08"/>
+  <line x1="645" y1="282" x2="655" y2="292" stroke="#38A169" stroke-width="3"/>
+  <line x1="655" y1="292" x2="675" y2="272" stroke="#38A169" stroke-width="3"/>
+  <text x="690" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Certo 2</text>  <rect x="620" y="335" width="540" height="50" rx="4" fill="#38A169" fill-opacity="0.08"/>
+  <line x1="645" y1="362" x2="655" y2="372" stroke="#38A169" stroke-width="3"/>
+  <line x1="655" y1="372" x2="675" y2="352" stroke="#38A169" stroke-width="3"/>
+  <text x="690" y="365" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Certo 3</text>  <rect x="620" y="415" width="540" height="50" rx="4" fill="#38A169" fill-opacity="0.08"/>
+  <line x1="645" y1="442" x2="655" y2="452" stroke="#38A169" stroke-width="3"/>
+  <line x1="655" y1="452" x2="675" y2="432" stroke="#38A169" stroke-width="3"/>
+  <text x="690" y="445" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Certo 4</text>
+  <!-- Watermark -->
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>

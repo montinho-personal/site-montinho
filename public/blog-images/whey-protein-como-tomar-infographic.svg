@@ -1,43 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Whey Protein: Como Tomar, Quando e Qual Escolher">
   <title>Whey Protein: Como Tomar, Quando e Qual Escolher</title>
-  <desc>Infografico: Whey Protein: Como Tomar, Quando e Qual Escolher</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#C9AE60"/>
-      <stop offset="100%" stop-color="#A08030"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
-  <rect x="60" y="30" width="108" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
-  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">HIPERTROFIA</text>
-  <text x="60" y="90" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Whey Protein: Como Tomar, Quando e Qual Escolher</text>
-  <text x="60" y="146" font-family="Arial,sans-serif" font-size="16" fill="#555555">Protocolo cientifico de ganho muscular</text>
-  <rect x="60" y="168" width="80" height="3" rx="2" fill="url(#gold)"/>
-  <text x="60" y="174" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" font-weight="bold">Pilares da Hipertrofia Muscular</text>
-  <rect x="60" y="218" width="196" height="252" rx="4" fill="#BA9E50" opacity="0.85"/>
-  <text x="158" y="488" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Volume</text>
-  <text x="158" y="210" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">90%</text>
-  <rect x="276" y="246" width="196" height="224" rx="4" fill="#42A5F5" opacity="0.85"/>
-  <text x="374" y="488" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Intensidad</text>
-  <text x="374" y="502" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">e</text>
-  <text x="374" y="238" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">80%</text>
-  <rect x="492" y="260" width="196" height="210" rx="4" fill="#4CAF50" opacity="0.85"/>
-  <text x="590" y="488" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Frequencia</text>
-  <text x="590" y="252" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">75%</text>
-  <rect x="708" y="232" width="196" height="238" rx="4" fill="#FF7043" opacity="0.85"/>
-  <text x="806" y="488" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Recuperaca</text>
-  <text x="806" y="502" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">o</text>
-  <text x="806" y="224" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">85%</text>
-  <rect x="924" y="204" width="196" height="266" rx="4" fill="#EF5350" opacity="0.85"/>
-  <text x="1022" y="488" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Nutricao</text>
-  <text x="1022" y="196" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">95%</text>
-  <line x1="50" y1="470" x2="1150" y2="470" stroke="#2a2a2a" stroke-width="1"/>
+  <desc>Infografico: Whey Protein: Como Tomar, Quando e Qual Escolher - Montinho Personal Trainer</desc>
+  <!-- T2: STAT TRIO -->
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <!-- Category pill -->
+  <rect x="25" y="22" width="112" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="81" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Hipertrofia</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Whey Protein: Como Tomar, Quando e Qual Escolher</text>
+  <rect x="40" y="120" width="340" height="370" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="0" stroke-opacity="0"/>
+  <rect x="40" y="120" width="340" height="4" fill="#BA9E50"/>
+  <rect x="40" y="120" width="340" height="370" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="210" y="230" font-family="Arial,sans-serif" font-size="72" fill="#BA9E50" text-anchor="middle" font-weight="bold">25-30g</text>
+  <text x="210" y="280" font-family="Arial,sans-serif" font-size="20" fill="#888888" text-anchor="middle">por dose</text>
+  <line x1="100" y1="310" x2="320" y2="310" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="210" y="350" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Quantidade Ideal</text>  <rect x="420" y="120" width="340" height="370" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="0" stroke-opacity="0"/>
+  <rect x="420" y="120" width="340" height="4" fill="#BA9E50"/>
+  <rect x="420" y="120" width="340" height="370" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="590" y="230" font-family="Arial,sans-serif" font-size="72" fill="#BA9E50" text-anchor="middle" font-weight="bold">30min</text>
+  <text x="590" y="280" font-family="Arial,sans-serif" font-size="20" fill="#888888" text-anchor="middle">pos-treino</text>
+  <line x1="480" y1="310" x2="700" y2="310" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="590" y="350" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Melhor Horario</text>  <rect x="800" y="120" width="340" height="370" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="0" stroke-opacity="0"/>
+  <rect x="800" y="120" width="340" height="4" fill="#BA9E50"/>
+  <rect x="800" y="120" width="340" height="370" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="970" y="230" font-family="Arial,sans-serif" font-size="72" fill="#BA9E50" text-anchor="middle" font-weight="bold">2x</text>
+  <text x="970" y="280" font-family="Arial,sans-serif" font-size="20" fill="#888888" text-anchor="middle">ao dia max</text>
+  <line x1="860" y1="310" x2="1080" y2="310" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="970" y="350" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Frequencia</text>
+  <!-- Watermark -->
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>

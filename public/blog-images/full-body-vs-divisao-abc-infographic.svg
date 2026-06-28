@@ -1,61 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Full Body vs Divisao ABC: Qual a Melhor para Iniciantes?">
-  <title>Full Body vs Divisao ABC: Qual a Melhor para Iniciantes?</title>
-  <desc>Infografico: Full Body vs Divisao ABC: Qual a Melhor para Iniciantes?</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#C9AE60"/>
-      <stop offset="100%" stop-color="#A08030"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
-  <rect x="60" y="30" width="68" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
-  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">TREINO</text>
-  <text x="60" y="78" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Full Body vs Divisao ABC: Qual a Melhor para</text>
-  <text x="60" y="120" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Iniciantes?</text>
-  <text x="60" y="176" font-family="Arial,sans-serif" font-size="16" fill="#555555">Protocolo baseado em evidencias cientificas</text>
-  <rect x="60" y="198" width="80" height="3" rx="2" fill="url(#gold)"/>
-  <rect x="60" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="88" cy="228" r="16" fill="url(#gold)"/>
-  <text x="88" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">1</text>
-  <text x="116" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Aquecimento</text>
-  <text x="76" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">5-10 min mobilidade articular e</text>
-  <text x="76" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">ativacao neuromuscular</text>
-  <rect x="420" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="448" cy="228" r="16" fill="url(#gold)"/>
-  <text x="448" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">2</text>
-  <text x="476" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Exercicios Compostos</text>
-  <text x="436" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">Priorize movimentos multiarticulares</text>
-  <text x="436" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">com carga progressiva</text>
-  <rect x="780" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="808" cy="228" r="16" fill="url(#gold)"/>
-  <text x="808" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">3</text>
-  <text x="836" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Exercicios Isolados</text>
-  <text x="796" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">Refinamento muscular e correcao de</text>
-  <text x="796" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">assimetrias</text>
-  <rect x="60" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="88" cy="368" r="16" fill="url(#gold)"/>
-  <text x="88" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">4</text>
-  <text x="116" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Volume Semanal</text>
-  <text x="76" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">10-20 series por grupo muscular para</text>
-  <text x="76" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">hipertrofia</text>
-  <rect x="420" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="448" cy="368" r="16" fill="url(#gold)"/>
-  <text x="448" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">5</text>
-  <text x="476" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Progressao</text>
-  <text x="436" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">Aumente carga ou volume a cada 1-2</text>
-  <text x="436" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">semanas</text>
-  <rect x="780" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="808" cy="368" r="16" fill="url(#gold)"/>
-  <text x="808" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">6</text>
-  <text x="836" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Recuperacao</text>
-  <text x="796" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">48-72h de descanso entre sessoes do</text>
-  <text x="796" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">mesmo grupo</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Full Body vs Divisao ABC: Qual e Melhor para Iniciantes?">
+  <title>Full Body vs Divisao ABC: Qual e Melhor para Iniciantes?</title>
+  <desc>Infografico: Full Body vs Divisao ABC: Qual e Melhor para Iniciantes? - Montinho Personal Trainer</desc>
+  <!-- T3: SPLIT VERSUS -->
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <!-- Category pill -->
+  <rect x="25" y="22" width="112" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="81" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Treinamento</text>
+  <!-- Left half tint -->
+  <rect x="5" y="0" width="595" height="630" fill="#1a0505" fill-opacity="0.5"/>
+  <!-- Right half tint -->
+  <rect x="600" y="0" width="600" height="630" fill="#051a05" fill-opacity="0.5"/>
+  <!-- Center divider -->
+  <line x1="600" y1="60" x2="600" y2="610" stroke="#BA9E50" stroke-width="2"/>
+  <text x="600" y="52" font-family="Arial,sans-serif" font-size="16" fill="#BA9E50" text-anchor="middle" font-weight="bold">VS</text>
+  <!-- Title -->
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="22" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Full Body vs Divisao ABC: Qual e Melhor para Iniciant..</text>
+  <!-- Left header -->
+  <rect x="60" y="155" width="470" height="50" rx="4" fill="#E53E3E" fill-opacity="0.15"/>
+  <text x="295" y="188" font-family="Arial,sans-serif" font-size="22" fill="#E53E3E" text-anchor="middle" font-weight="bold">FULL BODY</text>
+  <!-- Right header -->
+  <rect x="620" y="155" width="470" height="50" rx="4" fill="#38A169" fill-opacity="0.15"/>
+  <text x="855" y="188" font-family="Arial,sans-serif" font-size="22" fill="#38A169" text-anchor="middle" font-weight="bold">DIVISAO ABC</text>
+  <circle cx="90" cy="280" r="6" fill="#E53E3E" fill-opacity="0.6"/>
+  <text x="108" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">3x por semana</text>  <circle cx="90" cy="350" r="6" fill="#E53E3E" fill-opacity="0.6"/>
+  <text x="108" y="355" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Ideal iniciantes</text>  <circle cx="90" cy="420" r="6" fill="#E53E3E" fill-opacity="0.6"/>
+  <text x="108" y="425" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Frequencia alta</text>
+  <circle cx="620" cy="280" r="6" fill="#38A169" fill-opacity="0.8"/>
+  <text x="638" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">5-6x por semana</text>  <circle cx="620" cy="350" r="6" fill="#38A169" fill-opacity="0.8"/>
+  <text x="638" y="355" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Intermediario+</text>  <circle cx="620" cy="420" r="6" fill="#38A169" fill-opacity="0.8"/>
+  <text x="638" y="425" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Volume alto</text>
+  <!-- Watermark -->
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>

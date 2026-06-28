@@ -1,60 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Gordura Localizada: Existe Tratamento Real? O Que a Ciencia Diz">
   <title>Gordura Localizada: Existe Tratamento Real? O Que a Ciencia Diz</title>
-  <desc>Infografico: Gordura Localizada: Existe Tratamento Real? O Que a Ciencia Diz</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#C9AE60"/>
-      <stop offset="100%" stop-color="#A08030"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
-  <rect x="60" y="30" width="124" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
-  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">MITOS E FATOS</text>
-  <text x="60" y="90" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Gordura Localizada</text>
-  <text x="60" y="146" font-family="Arial,sans-serif" font-size="16" fill="#555555">A ciencia vs os mitos do mercado</text>
-  <rect x="60" y="168" width="80" height="3" rx="2" fill="url(#gold)"/>
-  <rect x="60" y="195" width="360" height="52" fill="url(#gold)"/>
-  <text x="240" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Crenca</text>
-  <rect x="420" y="195" width="360" height="52" fill="#2a2a2a"/>
-  <text x="600" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Status</text>
-  <rect x="780" y="195" width="360" height="52" fill="#2a2a2a"/>
-  <text x="960" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Explicacao</text>
-  <rect x="60" y="247" width="360" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="278" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Reducao localizada</text>
-  <rect x="420" y="247" width="360" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="432" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">MITO</text>
-  <rect x="780" y="247" width="360" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="792" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">Gordura reduz globalmente</text>
-  <rect x="60" y="299" width="360" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="330" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Abdominais queimam barriga</text>
-  <rect x="420" y="299" width="360" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="432" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">MITO</text>
-  <rect x="780" y="299" width="360" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="792" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">Musculacao local nao queima go</text>
-  <rect x="60" y="351" width="360" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="382" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Deficit calorico funciona</text>
-  <rect x="420" y="351" width="360" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="432" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">FATO</text>
-  <rect x="780" y="351" width="360" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="792" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">Unica forma comprovada de perd</text>
-  <rect x="60" y="403" width="360" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="434" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Genetica influencia</text>
-  <rect x="420" y="403" width="360" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="432" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">FATO</text>
-  <rect x="780" y="403" width="360" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="792" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">Distribuicao de gordura e parc</text>
-  <rect x="60" y="455" width="360" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="486" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Cardio em jejum ideal</text>
-  <rect x="420" y="455" width="360" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="432" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">PARCIAL</text>
-  <rect x="780" y="455" width="360" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="792" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">Beneficio marginal sobre cardi</text>
+  <desc>Infografico: Gordura Localizada: Existe Tratamento Real? O Que a Ciencia Diz ? Montinho Personal Trainer</desc>
+  <!-- T6: DO/DONT -->
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <!-- Category pill -->
+  <rect x="25" y="22" width="64" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="57" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Saude</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Gordura Localizada: Existe Tratamento Real? O Que a C..</text>
+  <!-- Headers -->
+  <rect x="40" y="130" width="500" height="45" rx="4" fill="#E53E3E" fill-opacity="0.2"/>
+  <text x="290" y="160" font-family="Arial,sans-serif" font-size="20" fill="#E53E3E" text-anchor="middle" font-weight="bold">ERROS COMUNS</text>
+  <rect x="620" y="130" width="540" height="45" rx="4" fill="#38A169" fill-opacity="0.2"/>
+  <text x="890" y="160" font-family="Arial,sans-serif" font-size="20" fill="#38A169" text-anchor="middle" font-weight="bold">MODO CERTO</text>
+  <!-- Divider -->
+  <line x1="600" y1="120" x2="600" y2="600" stroke="#444" stroke-width="1"/>
+  <rect x="40" y="175" width="500" height="50" rx="4" fill="#E53E3E" fill-opacity="0.08"/>
+  <text x="65" y="205" font-family="Arial,sans-serif" font-size="28" fill="#E53E3E" font-weight="bold">x</text>
+  <text x="100" y="205" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Erro 1</text>  <rect x="40" y="255" width="500" height="50" rx="4" fill="#E53E3E" fill-opacity="0.08"/>
+  <text x="65" y="285" font-family="Arial,sans-serif" font-size="28" fill="#E53E3E" font-weight="bold">x</text>
+  <text x="100" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Erro 2</text>  <rect x="40" y="335" width="500" height="50" rx="4" fill="#E53E3E" fill-opacity="0.08"/>
+  <text x="65" y="365" font-family="Arial,sans-serif" font-size="28" fill="#E53E3E" font-weight="bold">x</text>
+  <text x="100" y="365" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Erro 3</text>  <rect x="40" y="415" width="500" height="50" rx="4" fill="#E53E3E" fill-opacity="0.08"/>
+  <text x="65" y="445" font-family="Arial,sans-serif" font-size="28" fill="#E53E3E" font-weight="bold">x</text>
+  <text x="100" y="445" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Erro 4</text>
+  <rect x="620" y="175" width="540" height="50" rx="4" fill="#38A169" fill-opacity="0.08"/>
+  <line x1="645" y1="202" x2="655" y2="212" stroke="#38A169" stroke-width="3"/>
+  <line x1="655" y1="212" x2="675" y2="192" stroke="#38A169" stroke-width="3"/>
+  <text x="690" y="205" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Certo 1</text>  <rect x="620" y="255" width="540" height="50" rx="4" fill="#38A169" fill-opacity="0.08"/>
+  <line x1="645" y1="282" x2="655" y2="292" stroke="#38A169" stroke-width="3"/>
+  <line x1="655" y1="292" x2="675" y2="272" stroke="#38A169" stroke-width="3"/>
+  <text x="690" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Certo 2</text>  <rect x="620" y="335" width="540" height="50" rx="4" fill="#38A169" fill-opacity="0.08"/>
+  <line x1="645" y1="362" x2="655" y2="372" stroke="#38A169" stroke-width="3"/>
+  <line x1="655" y1="372" x2="675" y2="352" stroke="#38A169" stroke-width="3"/>
+  <text x="690" y="365" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Certo 3</text>  <rect x="620" y="415" width="540" height="50" rx="4" fill="#38A169" fill-opacity="0.08"/>
+  <line x1="645" y1="442" x2="655" y2="452" stroke="#38A169" stroke-width="3"/>
+  <line x1="655" y1="452" x2="675" y2="432" stroke="#38A169" stroke-width="3"/>
+  <text x="690" y="445" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Certo 4</text>
+  <!-- Watermark -->
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>

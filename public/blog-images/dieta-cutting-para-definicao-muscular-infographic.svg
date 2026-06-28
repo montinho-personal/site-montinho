@@ -1,72 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Dieta de Cutting: Como Perder Gordura Sem Sacrificar o Mosculo Que Voce Construiu">
-  <title>Dieta de Cutting: Como Perder Gordura Sem Sacrificar o Mosculo Que Voce Construiu</title>
-  <desc>Infografico: Dieta de Cutting: Como Perder Gordura Sem Sacrificar o Mosculo Que Voce Construiu</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#C9AE60"/>
-      <stop offset="100%" stop-color="#A08030"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
-  <rect x="60" y="30" width="92" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
-  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">DEFINICAO</text>
-  <text x="60" y="90" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Dieta de Cutting</text>
-  <text x="60" y="146" font-family="Arial,sans-serif" font-size="16" fill="#555555">Perda de gordura sem perder musculo</text>
-  <rect x="60" y="168" width="80" height="3" rx="2" fill="url(#gold)"/>
-  <rect x="60" y="195" width="270" height="52" fill="url(#gold)"/>
-  <text x="195" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Variavel</text>
-  <rect x="330" y="195" width="270" height="52" fill="#2a2a2a"/>
-  <text x="465" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Meta</text>
-  <rect x="600" y="195" width="270" height="52" fill="#2a2a2a"/>
-  <text x="735" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Prioridade</text>
-  <rect x="870" y="195" width="270" height="52" fill="#2a2a2a"/>
-  <text x="1005" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Observacao</text>
-  <rect x="60" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="278" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Deficit calorico</text>
-  <rect x="330" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">300-500 kcal/dia</text>
-  <rect x="600" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">Moderado</text>
-  <rect x="870" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="882" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">Preserva musculo</text>
-  <rect x="60" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="330" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Proteina</text>
-  <rect x="330" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">2.2-2.5g/kg</text>
-  <rect x="600" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">Alta</text>
-  <rect x="870" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="882" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">Anti-catabolico</text>
-  <rect x="60" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="382" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Carboidratos</text>
-  <rect x="330" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">Reduzir 30-40%</text>
-  <rect x="600" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">Estrategico</text>
-  <rect x="870" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="882" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">Manter no pre-treino</text>
-  <rect x="60" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="434" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Gorduras</text>
-  <rect x="330" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">Minimo 0.8g/kg</text>
-  <rect x="600" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">Essencial</text>
-  <rect x="870" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="882" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">Hormonios e saude</text>
-  <rect x="60" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="486" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Cardio</text>
-  <rect x="330" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">+150-200 kcal/sessao</text>
-  <rect x="600" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">Complementar</text>
-  <rect x="870" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="882" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">HIIT 2-3x/semana</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Dieta de Cutting: Como Perder Gordura Sem Sacrificar o Musculo Que V..">
+  <title>Dieta de Cutting: Como Perder Gordura Sem Sacrificar o Musculo Que V..</title>
+  <desc>Infografico: Dieta de Cutting: Como Perder Gordura Sem Sacrificar o Musculo Que V.. ? Montinho Personal Trainer</desc>
+  <!-- T4: PYRAMID HIERARCHY -->
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <!-- Category pill -->
+  <rect x="25" y="22" width="88" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="69" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Nutricao</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Dieta de Cutting: Como Perder Gordura Sem Sacrificar ..</text>
+  <text x="600" y="118" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle">Cutting com Preservacao Muscular</text>
+  <polygon points="460,150 740,150 740,260 460,260" fill="#BA9E50" fill-opacity="0.3" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="600" y="212" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" text-anchor="middle" font-weight="600">Deficit Calorico</text>
+  <text x="980" y="212" font-family="Arial,sans-serif" font-size="13" fill="#888888">1. Deficit Calorico</text>
+  <line x1="745" y1="205" x2="970" y2="205" stroke="#333" stroke-width="1" stroke-dasharray="4,4"/>  <polygon points="350,270 850,270 850,380 350,380" fill="#666" fill-opacity="0.3" stroke="#666" stroke-width="1.5"/>
+  <text x="600" y="332" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" text-anchor="middle" font-weight="600">Alta Proteina</text>
+  <text x="980" y="332" font-family="Arial,sans-serif" font-size="13" fill="#888888">2. Alta Proteina</text>
+  <line x1="855" y1="325" x2="970" y2="325" stroke="#333" stroke-width="1" stroke-dasharray="4,4"/>  <polygon points="240,390 960,390 960,530 240,530" fill="#333" fill-opacity="0.3" stroke="#333" stroke-width="1.5"/>
+  <text x="600" y="467" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" text-anchor="middle" font-weight="600">Treino Pesado</text>
+  <text x="980" y="467" font-family="Arial,sans-serif" font-size="13" fill="#888888">3. Treino Pesado</text>
+  <line x1="965" y1="460" x2="970" y2="460" stroke="#333" stroke-width="1" stroke-dasharray="4,4"/>
+  <!-- Pyramid outline -->
+  <polygon points="600,150 240,530 960,530" fill="none" stroke="#BA9E50" stroke-width="1.5" stroke-opacity="0.3"/>
+  <!-- Watermark -->
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>
