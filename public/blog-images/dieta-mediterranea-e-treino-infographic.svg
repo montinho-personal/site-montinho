@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Piramide Mediterranea para Atletas">
+  <title>Piramide Mediterranea para Atletas</title>
+  <desc>Infografico: Piramide Mediterranea para Atletas - Montinho Personal Trainer</desc>
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <rect x="25" y="22" width="112" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="81" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Treinamento</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Piramide Mediterranea para Atletas</text>
+  <text x="600" y="118" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle">Dieta Mediterranea e Treino</text>
+  <polygon points="460,150 740,150 740,260 460,260" fill="#BA9E50" fill-opacity="0.3" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="600" y="212" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" text-anchor="middle" font-weight="600">Azeite + Peixes + Veget.</text>  <polygon points="350,270 850,270 850,380 350,380" fill="#666" fill-opacity="0.3" stroke="#666" stroke-width="1.5"/>
+  <text x="600" y="332" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" text-anchor="middle" font-weight="600">Leguminosas + Graos int.</text>  <polygon points="240,390 960,390 960,530 240,530" fill="#333" fill-opacity="0.3" stroke="#333" stroke-width="1.5"/>
+  <text x="600" y="467" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" text-anchor="middle" font-weight="600">Atividade Fisica Diaria</text>
+  <polygon points="600,150 240,530 960,530" fill="none" stroke="#BA9E50" stroke-width="1.5" stroke-opacity="0.3"/>
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
+</svg>
