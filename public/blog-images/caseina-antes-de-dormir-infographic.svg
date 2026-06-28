@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Caseina Antes de Dormir: Vale a Pena? O Que a Ciencia Diz">
   <title>Caseina Antes de Dormir: Vale a Pena? O Que a Ciencia Diz</title>
-  <desc>Infografico: Caseina Antes de Dormir: Vale a Pena? O Que a Ciencia Diz ? Montinho Personal Trainer</desc>
-  <!-- T15: CHECKLIST NUMBERED -->
+  <desc>Infografico: Caseina Antes de Dormir: Vale a Pena? O Que a Ciencia Diz - Montinho Personal Trainer</desc>
+  <!-- T2: STAT TRIO -->
   <!-- Background -->
   <rect width="1200" height="630" fill="#0d0d0d"/>
   <!-- Left accent bar -->
@@ -13,28 +13,25 @@
   <rect x="25" y="22" width="88" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
   <text x="69" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Nutricao</text>
   <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Caseina Antes de Dormir: Vale a Pena? O Que a Ciencia..</text>
-  <text x="600" y="120" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle">Guia Pratico ? Montinho Personal Trainer</text>
-  <circle cx="80" cy="165" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="172" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">1</text>
-  <text x="120" y="157" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Ponto principal</text>
-  <text x="120" y="181" font-family="Arial,sans-serif" font-size="14" fill="#888888">detalhe e contexto aqui</text>
-  <line x1="30" y1="200" x2="1150" y2="200" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="253" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="260" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">2</text>
-  <text x="120" y="245" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Segundo ponto</text>
-  <text x="120" y="269" font-family="Arial,sans-serif" font-size="14" fill="#888888">mais informacao relevante</text>
-  <line x1="30" y1="288" x2="1150" y2="288" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="341" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="348" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">3</text>
-  <text x="120" y="333" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Terceiro ponto</text>
-  <text x="120" y="357" font-family="Arial,sans-serif" font-size="14" fill="#888888">dica pratica e objetiva</text>
-  <line x1="30" y1="376" x2="1150" y2="376" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="429" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="436" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">4</text>
-  <text x="120" y="421" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Quarto ponto</text>
-  <text x="120" y="445" font-family="Arial,sans-serif" font-size="14" fill="#888888">aplicacao no treino</text>
-  <line x1="30" y1="464" x2="1150" y2="464" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="517" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="524" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">5</text>
-  <text x="120" y="509" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Quinto ponto</text>
-  <text x="120" y="533" font-family="Arial,sans-serif" font-size="14" fill="#888888">consistencia e resultado</text>
-  <line x1="30" y1="552" x2="1150" y2="552" stroke="#222" stroke-width="1"/>
+  <rect x="40" y="120" width="340" height="370" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="0" stroke-opacity="0"/>
+  <rect x="40" y="120" width="340" height="4" fill="#BA9E50"/>
+  <rect x="40" y="120" width="340" height="370" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="210" y="230" font-family="Arial,sans-serif" font-size="72" fill="#BA9E50" text-anchor="middle" font-weight="bold">2g</text>
+  <text x="210" y="280" font-family="Arial,sans-serif" font-size="20" fill="#888888" text-anchor="middle">por kg/dia</text>
+  <line x1="100" y1="310" x2="320" y2="310" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="210" y="350" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Proteina</text>  <rect x="420" y="120" width="340" height="370" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="0" stroke-opacity="0"/>
+  <rect x="420" y="120" width="340" height="4" fill="#BA9E50"/>
+  <rect x="420" y="120" width="340" height="370" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="590" y="230" font-family="Arial,sans-serif" font-size="72" fill="#BA9E50" text-anchor="middle" font-weight="bold">5g</text>
+  <text x="590" y="280" font-family="Arial,sans-serif" font-size="20" fill="#888888" text-anchor="middle">por dia</text>
+  <line x1="480" y1="310" x2="700" y2="310" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="590" y="350" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Creatina</text>  <rect x="800" y="120" width="340" height="370" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="0" stroke-opacity="0"/>
+  <rect x="800" y="120" width="340" height="4" fill="#BA9E50"/>
+  <rect x="800" y="120" width="340" height="370" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="970" y="230" font-family="Arial,sans-serif" font-size="72" fill="#BA9E50" text-anchor="middle" font-weight="bold">8h</text>
+  <text x="970" y="280" font-family="Arial,sans-serif" font-size="20" fill="#888888" text-anchor="middle">de sono</text>
+  <line x1="860" y1="310" x2="1080" y2="310" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="970" y="350" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Recuperacao</text>
   <!-- Watermark -->
   <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>

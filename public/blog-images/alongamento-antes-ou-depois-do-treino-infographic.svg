@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Alongamento Antes ou Depois do Treino? A Resposta Definitiva">
   <title>Alongamento Antes ou Depois do Treino? A Resposta Definitiva</title>
   <desc>Infografico: Alongamento Antes ou Depois do Treino? A Resposta Definitiva - Montinho Personal Trainer</desc>
-  <!-- T3: SPLIT VERSUS -->
+  <!-- T7: ICON GRID -->
   <!-- Background -->
   <rect width="1200" height="630" fill="#0d0d0d"/>
   <!-- Left accent bar -->
@@ -12,29 +12,20 @@
   <!-- Category pill -->
   <rect x="25" y="22" width="112" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
   <text x="81" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Treinamento</text>
-  <!-- Left half tint -->
-  <rect x="5" y="0" width="595" height="630" fill="#1a0505" fill-opacity="0.5"/>
-  <!-- Right half tint -->
-  <rect x="600" y="0" width="600" height="630" fill="#051a05" fill-opacity="0.5"/>
-  <!-- Center divider -->
-  <line x1="600" y1="60" x2="600" y2="610" stroke="#BA9E50" stroke-width="2"/>
-  <text x="600" y="52" font-family="Arial,sans-serif" font-size="16" fill="#BA9E50" text-anchor="middle" font-weight="bold">VS</text>
-  <!-- Title -->
-  <text x="600" y="88" font-family="Arial,sans-serif" font-size="22" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Alongamento Antes ou Depois do Treino? A Resposta Def..</text>
-  <!-- Left header -->
-  <rect x="60" y="155" width="470" height="50" rx="4" fill="#E53E3E" fill-opacity="0.15"/>
-  <text x="295" y="188" font-family="Arial,sans-serif" font-size="22" fill="#E53E3E" text-anchor="middle" font-weight="bold">ANTES</text>
-  <!-- Right header -->
-  <rect x="620" y="155" width="470" height="50" rx="4" fill="#38A169" fill-opacity="0.15"/>
-  <text x="855" y="188" font-family="Arial,sans-serif" font-size="22" fill="#38A169" text-anchor="middle" font-weight="bold">DEPOIS</text>
-  <circle cx="90" cy="280" r="6" fill="#E53E3E" fill-opacity="0.6"/>
-  <text x="108" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Risco: perde forca</text>  <circle cx="90" cy="350" r="6" fill="#E53E3E" fill-opacity="0.6"/>
-  <text x="108" y="355" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Reduce propriocepcao</text>  <circle cx="90" cy="420" r="6" fill="#E53E3E" fill-opacity="0.6"/>
-  <text x="108" y="425" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Nao recomendado</text>
-  <circle cx="620" cy="280" r="6" fill="#38A169" fill-opacity="0.8"/>
-  <text x="638" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Melhora flexibilidade</text>  <circle cx="620" cy="350" r="6" fill="#38A169" fill-opacity="0.8"/>
-  <text x="638" y="355" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Relaxa musculo</text>  <circle cx="620" cy="420" r="6" fill="#38A169" fill-opacity="0.8"/>
-  <text x="638" y="425" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Recomendado</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Alongamento Antes ou Depois do Treino? A Resposta Def..</text>
+  <rect x="40" y="110" width="360" height="215" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
+  <circle cx="220" cy="197" r="30" fill="none" stroke="#BA9E50" stroke-width="2.5"/>
+  <text x="220" y="252" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="600">Dica</text>  <rect x="420" y="110" width="360" height="215" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
+  <circle cx="600" cy="197" r="30" fill="none" stroke="#BA9E50" stroke-width="2.5"/>
+  <text x="600" y="252" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="600">Dica</text>  <rect x="800" y="110" width="360" height="215" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
+  <circle cx="980" cy="197" r="30" fill="none" stroke="#BA9E50" stroke-width="2.5"/>
+  <text x="980" y="252" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="600">Dica</text>  <rect x="40" y="335" width="360" height="215" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
+  <circle cx="220" cy="422" r="30" fill="none" stroke="#BA9E50" stroke-width="2.5"/>
+  <text x="220" y="477" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="600">Dica</text>  <rect x="420" y="335" width="360" height="215" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
+  <circle cx="600" cy="422" r="30" fill="none" stroke="#BA9E50" stroke-width="2.5"/>
+  <text x="600" y="477" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="600">Dica</text>  <rect x="800" y="335" width="360" height="215" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
+  <circle cx="980" cy="422" r="30" fill="none" stroke="#BA9E50" stroke-width="2.5"/>
+  <text x="980" y="477" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="600">Dica</text>
   <!-- Watermark -->
   <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>
