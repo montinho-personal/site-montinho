@@ -1,60 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Reeducauao Alimentar: Guia Passo a Passo Para Mudar sua Relauao com a Comida">
-  <title>Reeducauao Alimentar: Guia Passo a Passo Para Mudar sua Relauao com a Comida</title>
-  <desc>Infografico: Reeducauao Alimentar: Guia Passo a Passo Para Mudar sua Relauao com a Comida</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#C9AE60"/>
-      <stop offset="100%" stop-color="#A08030"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
-  <rect x="60" y="30" width="84" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
-  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">NUTRICAO</text>
-  <text x="60" y="90" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Reeducacao Alimentar</text>
-  <text x="60" y="146" font-family="Arial,sans-serif" font-size="16" fill="#555555">Passo a passo sustentavel</text>
-  <rect x="60" y="168" width="80" height="3" rx="2" fill="url(#gold)"/>
-  <rect x="60" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="88" cy="228" r="16" fill="url(#gold)"/>
-  <text x="88" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">1</text>
-  <text x="116" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Autoconhecimento</text>
-  <text x="76" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">Registre 7 dias de alimentacao sem</text>
-  <text x="76" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">mudar nada - veja padroes</text>
-  <rect x="420" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="448" cy="228" r="16" fill="url(#gold)"/>
-  <text x="448" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">2</text>
-  <text x="476" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Proteina como ancora</text>
-  <text x="436" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">Monte cada refeicao em torno de uma</text>
-  <text x="436" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">fonte proteica de qualidade</text>
-  <rect x="780" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="808" cy="228" r="16" fill="url(#gold)"/>
-  <text x="808" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">3</text>
-  <text x="836" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Vegetais no prato</text>
-  <text x="796" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">Metade do prato = vegetais nao-</text>
-  <text x="796" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">amilaceos em todas as refeicoes</text>
-  <rect x="60" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="88" cy="368" r="16" fill="url(#gold)"/>
-  <text x="88" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">4</text>
-  <text x="116" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Reduza processados</text>
-  <text x="76" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">Troque um alimento ultra-processado</text>
-  <text x="76" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">por semana por versao real</text>
-  <rect x="420" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="448" cy="368" r="16" fill="url(#gold)"/>
-  <text x="448" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">5</text>
-  <text x="476" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Hidratacao</text>
-  <text x="436" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">Agua antes das refeicoes: reduz fome e</text>
-  <text x="436" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">melhora digestao</text>
-  <rect x="780" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="808" cy="368" r="16" fill="url(#gold)"/>
-  <text x="808" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">6</text>
-  <text x="836" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Sustentabilidade</text>
-  <text x="796" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">Nao proibir alimentos - ajustar</text>
-  <text x="796" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">frequencia e quantidade</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Reeducacao Alimentar: Guia Passo a Passo Para Mudar sua Relacao com ..">
+  <title>Reeducacao Alimentar: Guia Passo a Passo Para Mudar sua Relacao com ..</title>
+  <desc>Infografico: Reeducacao Alimentar: Guia Passo a Passo Para Mudar sua Relacao com .. ? Montinho Personal Trainer</desc>
+  <!-- T1: HORIZONTAL STEPS -->
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <!-- Category pill -->
+  <rect x="25" y="22" width="88" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="69" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Nutricao</text>
+  <!-- Title -->
+  <text x="25" y="80" font-family="Arial,sans-serif" font-size="26" fill="#F5F5F5" font-weight="bold">Reeducacao Alimentar: Guia Passo a Passo Para Mudar sua Re..</text>
+  <!-- Steps label -->
+  <text x="25" y="290" font-family="Arial,sans-serif" font-size="14" fill="#888888" letter-spacing="3">PASSO A PASSO</text>
+  <circle cx="160" cy="340" r="50" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="2"/>
+  <text x="160" y="332" font-family="Arial,sans-serif" font-size="36" fill="#BA9E50" text-anchor="middle" font-weight="bold">1</text>
+  <text x="160" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Avaliar Habitos</text>  <line x1="215" y1="340" x2="265" y2="340" stroke="#BA9E50" stroke-width="2"/>
+  <polygon points="268,340 260,334 260,346" fill="#BA9E50"/>  <circle cx="370" cy="340" r="50" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="2"/>
+  <text x="370" y="332" font-family="Arial,sans-serif" font-size="36" fill="#BA9E50" text-anchor="middle" font-weight="bold">2</text>
+  <text x="370" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Reduzir Processo.</text>  <line x1="425" y1="340" x2="475" y2="340" stroke="#BA9E50" stroke-width="2"/>
+  <polygon points="478,340 470,334 470,346" fill="#BA9E50"/>  <circle cx="580" cy="340" r="50" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="2"/>
+  <text x="580" y="332" font-family="Arial,sans-serif" font-size="36" fill="#BA9E50" text-anchor="middle" font-weight="bold">3</text>
+  <text x="580" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Adicionar Proteina</text>  <line x1="635" y1="340" x2="685" y2="340" stroke="#BA9E50" stroke-width="2"/>
+  <polygon points="688,340 680,334 680,346" fill="#BA9E50"/>  <circle cx="790" cy="340" r="50" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="2"/>
+  <text x="790" y="332" font-family="Arial,sans-serif" font-size="36" fill="#BA9E50" text-anchor="middle" font-weight="bold">4</text>
+  <text x="790" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Manter Flexivelm..</text>  <line x1="110" y1="400" x2="840" y2="400" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.2"/>
+  <!-- Right accent -->
+  <rect x="900" y="200" width="250" height="240" rx="4" fill="#BA9E50" fill-opacity="0.04" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.15"/>
+  <text x="1025" y="300" font-family="Arial,sans-serif" font-size="13" fill="#888888" text-anchor="middle">Montinho</text>
+  <text x="1025" y="320" font-family="Arial,sans-serif" font-size="13" fill="#888888" text-anchor="middle">Personal Trainer</text>
+  <text x="1025" y="360" font-family="Arial,sans-serif" font-size="40" fill="#BA9E50" text-anchor="middle" fill-opacity="0.4">PT</text>
+  <!-- Watermark -->
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>

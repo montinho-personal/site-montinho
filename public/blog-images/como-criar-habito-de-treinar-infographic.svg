@@ -1,55 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Como Criar o Habito de Treinar e Nao Desistir: Guia Definitivo">
   <title>Como Criar o Habito de Treinar e Nao Desistir: Guia Definitivo</title>
-  <desc>Infografico: Como Criar o Habito de Treinar e Nao Desistir: Guia Definitivo</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#C9AE60"/>
-      <stop offset="100%" stop-color="#A08030"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
-  <rect x="60" y="30" width="124" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
-  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">EMAGRECIMENTO</text>
-  <text x="60" y="78" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Como Criar o Habito de Treinar e Nao Desistir:</text>
-  <text x="60" y="120" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Guia Definitivo</text>
-  <text x="60" y="176" font-family="Arial,sans-serif" font-size="16" fill="#555555">Estrategia cientifica de perda de gordura</text>
-  <rect x="60" y="198" width="80" height="3" rx="2" fill="url(#gold)"/>
-  <rect x="60" y="200" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="84" cy="225" r="8" fill="#BA9E50" opacity="0.8"/>
-  <text x="104" y="222" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Deficit calorico de 300-500 kcal/dia para perda</text>
-  <text x="104" y="238" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">sustentavel</text>
-  <rect x="600" y="200" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="624" cy="225" r="8" fill="#42A5F5" opacity="0.8"/>
-  <text x="644" y="222" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Manter proteina alta: 1.6-2.2g por kg de peso</text>
-  <text x="644" y="238" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">corporal</text>
-  <rect x="60" y="264" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="84" cy="289" r="8" fill="#4CAF50" opacity="0.8"/>
-  <text x="104" y="286" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Combinar musculacao e cardio para maxima queima de</text>
-  <text x="104" y="302" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">gordura</text>
-  <rect x="600" y="264" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="624" cy="289" r="8" fill="#FF7043" opacity="0.8"/>
-  <text x="644" y="286" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Sono de qualidade: 7-9h para regular grelina e</text>
-  <text x="644" y="302" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">leptina</text>
-  <rect x="60" y="328" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="84" cy="353" r="8" fill="#EF5350" opacity="0.8"/>
-  <text x="104" y="350" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Hidratacao: 35 ml por kg de peso corporal por dia</text>
-  <rect x="600" y="328" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="624" cy="353" r="8" fill="#BA9E50" opacity="0.8"/>
-  <text x="644" y="350" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Monitorar progresso: peso, fotos e medidas a cada</text>
-  <text x="644" y="366" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">2 semanas</text>
-  <rect x="60" y="392" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="84" cy="417" r="8" fill="#42A5F5" opacity="0.8"/>
-  <text x="104" y="414" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Priorizar alimentos minimamente processados e alta</text>
-  <text x="104" y="430" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">saciedade</text>
-  <rect x="600" y="392" width="520" height="50" rx="6" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
-  <circle cx="624" cy="417" r="8" fill="#4CAF50" opacity="0.8"/>
-  <text x="644" y="414" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Paciencia: perda saudavel e de 0.5-1 kg por semana</text>
+  <desc>Infografico: Como Criar o Habito de Treinar e Nao Desistir: Guia Definitivo ? Montinho Personal Trainer</desc>
+  <!-- T1: HORIZONTAL STEPS -->
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <!-- Category pill -->
+  <rect x="25" y="22" width="80" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="65" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Habitos</text>
+  <!-- Title -->
+  <text x="25" y="80" font-family="Arial,sans-serif" font-size="26" fill="#F5F5F5" font-weight="bold">Como Criar o Habito de Treinar e Nao Desistir: Guia Defini..</text>
+  <!-- Steps label -->
+  <text x="25" y="290" font-family="Arial,sans-serif" font-size="14" fill="#888888" letter-spacing="3">PASSO A PASSO</text>
+  <circle cx="160" cy="340" r="50" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="2"/>
+  <text x="160" y="332" font-family="Arial,sans-serif" font-size="36" fill="#BA9E50" text-anchor="middle" font-weight="bold">1</text>
+  <text x="160" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Definir Horario</text>  <line x1="215" y1="340" x2="265" y2="340" stroke="#BA9E50" stroke-width="2"/>
+  <polygon points="268,340 260,334 260,346" fill="#BA9E50"/>  <circle cx="370" cy="340" r="50" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="2"/>
+  <text x="370" y="332" font-family="Arial,sans-serif" font-size="36" fill="#BA9E50" text-anchor="middle" font-weight="bold">2</text>
+  <text x="370" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Comecar Pequeno</text>  <line x1="425" y1="340" x2="475" y2="340" stroke="#BA9E50" stroke-width="2"/>
+  <polygon points="478,340 470,334 470,346" fill="#BA9E50"/>  <circle cx="580" cy="340" r="50" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="2"/>
+  <text x="580" y="332" font-family="Arial,sans-serif" font-size="36" fill="#BA9E50" text-anchor="middle" font-weight="bold">3</text>
+  <text x="580" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Registro Diario</text>  <line x1="635" y1="340" x2="685" y2="340" stroke="#BA9E50" stroke-width="2"/>
+  <polygon points="688,340 680,334 680,346" fill="#BA9E50"/>  <circle cx="790" cy="340" r="50" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="2"/>
+  <text x="790" y="332" font-family="Arial,sans-serif" font-size="36" fill="#BA9E50" text-anchor="middle" font-weight="bold">4</text>
+  <text x="790" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Recompensar-se</text>  <line x1="110" y1="400" x2="840" y2="400" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.2"/>
+  <!-- Right accent -->
+  <rect x="900" y="200" width="250" height="240" rx="4" fill="#BA9E50" fill-opacity="0.04" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.15"/>
+  <text x="1025" y="300" font-family="Arial,sans-serif" font-size="13" fill="#888888" text-anchor="middle">Montinho</text>
+  <text x="1025" y="320" font-family="Arial,sans-serif" font-size="13" fill="#888888" text-anchor="middle">Personal Trainer</text>
+  <text x="1025" y="360" font-family="Arial,sans-serif" font-size="40" fill="#BA9E50" text-anchor="middle" fill-opacity="0.4">PT</text>
+  <!-- Watermark -->
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>

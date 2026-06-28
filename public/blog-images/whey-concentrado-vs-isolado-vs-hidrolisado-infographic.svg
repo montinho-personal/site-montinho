@@ -1,73 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Whey Concentrado, Isolado ou Hidrolisado: Qual Comprar? Guia Definitivo">
-  <title>Whey Concentrado, Isolado ou Hidrolisado: Qual Comprar? Guia Definitivo</title>
-  <desc>Infografico: Whey Concentrado, Isolado ou Hidrolisado: Qual Comprar? Guia Definitivo</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#C9AE60"/>
-      <stop offset="100%" stop-color="#A08030"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
-  <rect x="60" y="30" width="124" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
-  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">SUPLEMENTACAO</text>
-  <text x="60" y="78" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Whey Concentrado, Isolado ou Hidrolisado: Qual</text>
-  <text x="60" y="120" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Comprar? Guia Definitiv</text>
-  <text x="60" y="176" font-family="Arial,sans-serif" font-size="16" fill="#555555">Evidencias cientificas sobre suplementos</text>
-  <rect x="60" y="198" width="80" height="3" rx="2" fill="url(#gold)"/>
-  <rect x="60" y="195" width="270" height="52" fill="url(#gold)"/>
-  <text x="195" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Suplemento</text>
-  <rect x="330" y="195" width="270" height="52" fill="#2a2a2a"/>
-  <text x="465" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Beneficio</text>
-  <rect x="600" y="195" width="270" height="52" fill="#2a2a2a"/>
-  <text x="735" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Dosagem</text>
-  <rect x="870" y="195" width="270" height="52" fill="#2a2a2a"/>
-  <text x="1005" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Evidencia</text>
-  <rect x="60" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="278" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Creatina</text>
-  <rect x="330" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">Forca e volume</text>
-  <rect x="600" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">3-5g/dia</text>
-  <rect x="870" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="882" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">Alta</text>
-  <rect x="60" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="330" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Whey Protein</text>
-  <rect x="330" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">Recuperacao muscular</text>
-  <rect x="600" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">20-40g pos-treino</text>
-  <rect x="870" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="882" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">Alta</text>
-  <rect x="60" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="382" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Cafeina</text>
-  <rect x="330" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">Performance e foco</text>
-  <rect x="600" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">3-6mg/kg</text>
-  <rect x="870" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="882" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">Alta</text>
-  <rect x="60" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="434" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Beta-Alanina</text>
-  <rect x="330" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">Resistencia muscular</text>
-  <rect x="600" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">3.2-6.4g/dia</text>
-  <rect x="870" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
-  <text x="882" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">Moderada</text>
-  <rect x="60" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="72" y="486" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Vitamina D</text>
-  <rect x="330" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="342" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">Saude e forca</text>
-  <rect x="600" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="612" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">1000-4000 UI/dia</text>
-  <rect x="870" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
-  <text x="882" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">Alta</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Whey Concentrado, Isolado ou Hidrolisado: Qual Comprar? Guia Definit..">
+  <title>Whey Concentrado, Isolado ou Hidrolisado: Qual Comprar? Guia Definit..</title>
+  <desc>Infografico: Whey Concentrado, Isolado ou Hidrolisado: Qual Comprar? Guia Definit.. ? Montinho Personal Trainer</desc>
+  <!-- T2: STAT TRIO -->
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <!-- Category pill -->
+  <rect x="25" y="22" width="128" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="89" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Suplementacao</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Whey Concentrado, Isolado ou Hidrolisado: Qual Compra..</text>
+  <rect x="40" y="120" width="340" height="370" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="0" stroke-opacity="0"/>
+  <rect x="40" y="120" width="340" height="4" fill="#BA9E50"/>
+  <rect x="40" y="120" width="340" height="370" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="210" y="230" font-family="Arial,sans-serif" font-size="72" fill="#BA9E50" text-anchor="middle" font-weight="bold">80%</text>
+  <text x="210" y="280" font-family="Arial,sans-serif" font-size="20" fill="#888888" text-anchor="middle">proteina/100g</text>
+  <line x1="100" y1="310" x2="320" y2="310" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="210" y="350" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Whey Concentrado</text>  <rect x="420" y="120" width="340" height="370" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="0" stroke-opacity="0"/>
+  <rect x="420" y="120" width="340" height="4" fill="#BA9E50"/>
+  <rect x="420" y="120" width="340" height="370" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="590" y="230" font-family="Arial,sans-serif" font-size="72" fill="#BA9E50" text-anchor="middle" font-weight="bold">90%+</text>
+  <text x="590" y="280" font-family="Arial,sans-serif" font-size="20" fill="#888888" text-anchor="middle">proteina/100g</text>
+  <line x1="480" y1="310" x2="700" y2="310" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="590" y="350" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Whey Isolado</text>  <rect x="800" y="120" width="340" height="370" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="0" stroke-opacity="0"/>
+  <rect x="800" y="120" width="340" height="4" fill="#BA9E50"/>
+  <rect x="800" y="120" width="340" height="370" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="970" y="230" font-family="Arial,sans-serif" font-size="72" fill="#BA9E50" text-anchor="middle" font-weight="bold">95%+</text>
+  <text x="970" y="280" font-family="Arial,sans-serif" font-size="20" fill="#888888" text-anchor="middle">proteina/100g</text>
+  <line x1="860" y1="310" x2="1080" y2="310" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="970" y="350" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Whey Hidrolisado</text>
+  <!-- Watermark -->
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>

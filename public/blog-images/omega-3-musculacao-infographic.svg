@@ -1,44 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Omega-3 para Quem Treina: Vale a Pena Suplementar? O Que a Ciencia Diz">
   <title>Omega-3 para Quem Treina: Vale a Pena Suplementar? O Que a Ciencia Diz</title>
-  <desc>Infografico: Omega-3 para Quem Treina: Vale a Pena Suplementar? O Que a Ciencia Diz</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#C9AE60"/>
-      <stop offset="100%" stop-color="#A08030"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
-  <rect x="60" y="30" width="84" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
-  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">NUTRICAO</text>
-  <text x="60" y="78" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Omega-3 para Quem Treina: Vale a Pena</text>
-  <text x="60" y="120" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Suplementar? O Que a Ciencia Diz</text>
-  <text x="60" y="176" font-family="Arial,sans-serif" font-size="16" fill="#555555">Estrategia nutricional com base cientifica</text>
-  <rect x="60" y="198" width="80" height="3" rx="2" fill="url(#gold)"/>
-  <text x="60" y="174" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" font-weight="bold">Importancia dos Macronutrientes</text>
-  <rect x="60" y="232" width="196" height="238" rx="4" fill="#BA9E50" opacity="0.85"/>
-  <text x="158" y="488" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Proteinas</text>
-  <text x="158" y="224" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">85%</text>
-  <rect x="276" y="274" width="196" height="196" rx="4" fill="#42A5F5" opacity="0.85"/>
-  <text x="374" y="488" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Carboidrat</text>
-  <text x="374" y="502" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">os</text>
-  <text x="374" y="266" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">70%</text>
-  <rect x="492" y="316" width="196" height="154" rx="4" fill="#4CAF50" opacity="0.85"/>
-  <text x="590" y="488" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Gorduras</text>
-  <text x="590" y="308" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">55%</text>
-  <rect x="708" y="302" width="196" height="168" rx="4" fill="#FF7043" opacity="0.85"/>
-  <text x="806" y="488" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Fibras</text>
-  <text x="806" y="294" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">60%</text>
-  <rect x="924" y="260" width="196" height="210" rx="4" fill="#EF5350" opacity="0.85"/>
-  <text x="1022" y="488" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Micronutri</text>
-  <text x="1022" y="502" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">entes</text>
-  <text x="1022" y="252" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">75%</text>
-  <line x1="50" y1="470" x2="1150" y2="470" stroke="#2a2a2a" stroke-width="1"/>
+  <desc>Infografico: Omega-3 para Quem Treina: Vale a Pena Suplementar? O Que a Ciencia Diz ? Montinho Personal Trainer</desc>
+  <!-- T7: ICON GRID -->
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <!-- Category pill -->
+  <rect x="25" y="22" width="88" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="69" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Nutricao</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Omega-3 para Quem Treina: Vale a Pena Suplementar? O ..</text>
+  <rect x="40" y="110" width="360" height="215" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
+  <circle cx="220" cy="197" r="30" fill="none" stroke="#BA9E50" stroke-width="2.5"/>
+  <text x="220" y="252" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="600">Anti-inflamatorio</text>  <rect x="420" y="110" width="360" height="215" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="577.5" y="174.5" width="45.0" height="45.0" fill="none" stroke="#BA9E50" stroke-width="2.5"/>
+  <text x="600" y="252" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="600">Recuperacao</text>  <rect x="800" y="110" width="360" height="215" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
+  <polygon points="980,171.5 950,222.5 1010,222.5" fill="none" stroke="#BA9E50" stroke-width="2.5"/>
+  <text x="980" y="252" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="600">Saude cardiaca</text>  <rect x="40" y="335" width="360" height="215" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
+  <polygon points="220,380.0 250,422 220,464.0 190,422" fill="none" stroke="#BA9E50" stroke-width="2.5"/>
+  <text x="220" y="477" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="600">Forca +5%</text>  <rect x="420" y="335" width="360" height="215" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
+  <polygon points="626.0,407.0 626.0,437.0 600.0,452.0 574.0,437.0 574.0,407.0 600.0,392.0" fill="none" stroke="#BA9E50" stroke-width="2.5"/>
+  <text x="600" y="477" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="600">Dose: 2-4g/dia</text>  <rect x="800" y="335" width="360" height="215" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
+  <polygon points="980.0,392.0 987.1,412.3 1008.5,412.7 991.4,425.7 997.6,446.3 980.0,434.0 962.4,446.3 968.6,425.7 951.5,412.7 972.9,412.3" fill="#BA9E50" fill-opacity="0.3" stroke="#BA9E50" stroke-width="2"/>
+  <text x="980" y="477" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="600">EPA + DHA</text>
+  <!-- Watermark -->
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>

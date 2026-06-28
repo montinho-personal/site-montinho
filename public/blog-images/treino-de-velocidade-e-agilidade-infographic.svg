@@ -1,61 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Treino de Velocidade e Agilidade: Programa Completo de Sprint e COD">
   <title>Treino de Velocidade e Agilidade: Programa Completo de Sprint e COD</title>
-  <desc>Infografico: Treino de Velocidade e Agilidade: Programa Completo de Sprint e COD</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#C9AE60"/>
-      <stop offset="100%" stop-color="#A08030"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
-  <rect x="60" y="30" width="68" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
-  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">TREINO</text>
-  <text x="60" y="78" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Treino de Velocidade e Agilidade: Programa</text>
-  <text x="60" y="120" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Completo de Sprint e COD</text>
-  <text x="60" y="176" font-family="Arial,sans-serif" font-size="16" fill="#555555">Protocolo baseado em evidencias cientificas</text>
-  <rect x="60" y="198" width="80" height="3" rx="2" fill="url(#gold)"/>
-  <rect x="60" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="88" cy="228" r="16" fill="url(#gold)"/>
-  <text x="88" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">1</text>
-  <text x="116" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Aquecimento</text>
-  <text x="76" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">5-10 min mobilidade articular e</text>
-  <text x="76" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">ativacao neuromuscular</text>
-  <rect x="420" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="448" cy="228" r="16" fill="url(#gold)"/>
-  <text x="448" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">2</text>
-  <text x="476" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Exercicios Compostos</text>
-  <text x="436" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">Priorize movimentos multiarticulares</text>
-  <text x="436" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">com carga progressiva</text>
-  <rect x="780" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="808" cy="228" r="16" fill="url(#gold)"/>
-  <text x="808" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">3</text>
-  <text x="836" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Exercicios Isolados</text>
-  <text x="796" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">Refinamento muscular e correcao de</text>
-  <text x="796" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">assimetrias</text>
-  <rect x="60" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="88" cy="368" r="16" fill="url(#gold)"/>
-  <text x="88" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">4</text>
-  <text x="116" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Volume Semanal</text>
-  <text x="76" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">10-20 series por grupo muscular para</text>
-  <text x="76" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">hipertrofia</text>
-  <rect x="420" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="448" cy="368" r="16" fill="url(#gold)"/>
-  <text x="448" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">5</text>
-  <text x="476" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Progressao</text>
-  <text x="436" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">Aumente carga ou volume a cada 1-2</text>
-  <text x="436" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">semanas</text>
-  <rect x="780" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
-  <circle cx="808" cy="368" r="16" fill="url(#gold)"/>
-  <text x="808" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">6</text>
-  <text x="836" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Recuperacao</text>
-  <text x="796" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">48-72h de descanso entre sessoes do</text>
-  <text x="796" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">mesmo grupo</text>
+  <desc>Infografico: Treino de Velocidade e Agilidade: Programa Completo de Sprint e COD ? Montinho Personal Trainer</desc>
+  <!-- T15: CHECKLIST NUMBERED -->
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <!-- Category pill -->
+  <rect x="25" y="22" width="112" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="81" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Treinamento</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Treino de Velocidade e Agilidade: Programa Completo d..</text>
+  <text x="600" y="120" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle">Guia Pratico ? Montinho Personal Trainer</text>
+  <circle cx="80" cy="165" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="80" y="172" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">1</text>
+  <text x="120" y="157" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Ponto principal</text>
+  <text x="120" y="181" font-family="Arial,sans-serif" font-size="14" fill="#888888">detalhe e contexto aqui</text>
+  <line x1="30" y1="200" x2="1150" y2="200" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="253" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="80" y="260" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">2</text>
+  <text x="120" y="245" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Segundo ponto</text>
+  <text x="120" y="269" font-family="Arial,sans-serif" font-size="14" fill="#888888">mais informacao relevante</text>
+  <line x1="30" y1="288" x2="1150" y2="288" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="341" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="80" y="348" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">3</text>
+  <text x="120" y="333" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Terceiro ponto</text>
+  <text x="120" y="357" font-family="Arial,sans-serif" font-size="14" fill="#888888">dica pratica e objetiva</text>
+  <line x1="30" y1="376" x2="1150" y2="376" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="429" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="80" y="436" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">4</text>
+  <text x="120" y="421" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Quarto ponto</text>
+  <text x="120" y="445" font-family="Arial,sans-serif" font-size="14" fill="#888888">aplicacao no treino</text>
+  <line x1="30" y1="464" x2="1150" y2="464" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="517" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="80" y="524" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">5</text>
+  <text x="120" y="509" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Quinto ponto</text>
+  <text x="120" y="533" font-family="Arial,sans-serif" font-size="14" fill="#888888">consistencia e resultado</text>
+  <line x1="30" y1="552" x2="1150" y2="552" stroke="#222" stroke-width="1"/>
+  <!-- Watermark -->
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>
