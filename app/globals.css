@@ -142,3 +142,157 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Blog article prose styles */
+.prose-blog {
+  color: #d1d5db;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.prose-blog h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.prose-blog h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 2.5rem;
+  margin-bottom: 0.875rem;
+  line-height: 1.35;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding-bottom: 0.5rem;
+}
+
+.prose-blog h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f3f4f6;
+  margin-top: 2rem;
+  margin-bottom: 0.625rem;
+  line-height: 1.4;
+}
+
+.prose-blog h4 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-blog p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.prose-blog strong {
+  color: #f9fafb;
+  font-weight: 600;
+}
+
+.prose-blog em {
+  color: #d1d5db;
+  font-style: italic;
+}
+
+.prose-blog ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  space-y: 0.25rem;
+}
+
+.prose-blog ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose-blog li {
+  margin-bottom: 0.4rem;
+  color: #d1d5db;
+}
+
+.prose-blog li strong {
+  color: #f9fafb;
+}
+
+.prose-blog a {
+  color: #BA9E50;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s;
+}
+
+.prose-blog a:hover {
+  opacity: 0.75;
+}
+
+.prose-blog blockquote {
+  border-left: 3px solid #BA9E50;
+  padding-left: 1.25rem;
+  margin: 1.75rem 0;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.prose-blog code {
+  background: rgba(255,255,255,0.06);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #e5e7eb;
+}
+
+.prose-blog pre {
+  background: rgba(255,255,255,0.05);
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+}
+
+.prose-blog pre code {
+  background: none;
+  padding: 0;
+}
+
+.prose-blog table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.9375rem;
+}
+
+.prose-blog th {
+  background: rgba(255,255,255,0.06);
+  color: #f9fafb;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.6rem 0.875rem;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.prose-blog td {
+  padding: 0.6rem 0.875rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #d1d5db;
+  vertical-align: top;
+}
+
+.prose-blog tr:nth-child(even) td {
+  background: rgba(255,255,255,0.02);
+}
+
+.prose-blog hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin: 2rem 0;
+}
