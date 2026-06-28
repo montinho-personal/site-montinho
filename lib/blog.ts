@@ -35665,7 +35665,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "O treino isométrico é subestimado pela maioria dos praticantes de musculação. Mas a ciência moderna mostra que as contrações estáticas têm potencial real de hipertrofia — quando aplicadas com protocolo correto.",
   category: "Treino",
   readTime: 14,
-  publishedAt: "2026-06-20",
+  date: "2026-06-20",
   content: `<h2>O Que É o Treino Isométrico?</h2>
 <p>O treino isométrico é qualquer contração muscular em que o comprimento do músculo não muda durante o esforço. Você contrai com força máxima, mas não há movimento articular. Exemplos clássicos: segurar uma prancha, empurrar uma parede imóvel, manter um agachamento estático ou sustentar a barra em determinada posição do movimento.</p>
 <p>Diferente do treino isotônico (concêntrico + excêntrico), onde o músculo encurta e alonga durante a repetição, no isométrico a tensão é criada sem deslocamento. E esse detalhe muda completamente a resposta fisiológica.</p>
@@ -35833,7 +35833,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "A guerra entre proteína vegana e whey continua — mas os dados de 2025 mostram uma realidade muito mais nuançada do que o senso comum sugere. Saiba o que realmente importa para quem quer ganhar músculo.",
   category: "Nutrição",
   readTime: 13,
-  publishedAt: "2026-06-21",
+  date: "2026-06-21",
   content: `<h2>A Pergunta Que Todo Mundo Faz</h2>
 <p>Proteína vegana ou whey protein: qual é melhor para ganhar músculo? A resposta em 2025 é: <strong>depende — mas menos do que você imagina</strong>. A qualidade proteica importa, mas não tanto quanto a quantidade total consumida e a consistência do treino. Vamos destrinchar o que a ciência realmente diz.</p>
 
@@ -35959,7 +35959,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "A lesão não machuca só o corpo — ela abala a identidade, o propósito e a autoestima do atleta. Entender a psicologia da recuperação é tão essencial quanto o protocolo de fisioterapia.",
   category: "Saúde e Bem-estar",
   readTime: 13,
-  publishedAt: "2026-06-22",
+  date: "2026-06-22",
   content: `<h2>Quando a Lesão É Mais do Que Física</h2>
 <p>Um atleta que quebra a perna não perde apenas a mobilidade — perde rotina, identidade, propósito e, frequentemente, parte de sua saúde mental. A ciência da psicologia esportiva reconhece que o processo de reabilitação é inseparável do estado psicológico do indivíduo. Ignorar essa dimensão é uma das principais razões pelas quais muitos atletas demoram mais do que o necessário para se recuperar — ou nunca voltam ao nível anterior.</p>
 
@@ -36077,7 +36077,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "A gestação não é motivo para parar de se exercitar — pelo contrário. A ciência atual mostra que exercício bem orientado durante a gravidez beneficia tanto a mãe quanto o bebê. Mas a orientação correta faz toda a diferença.",
   category: "Saúde e Bem-estar",
   readTime: 14,
-  publishedAt: "2026-06-22",
+  date: "2026-06-22",
   content: `<h2>Exercício na Gravidez: Mito vs Realidade</h2>
 <p>Durante décadas, a crença popular era de que gestantes deveriam repousar e evitar qualquer esforço. Hoje, o American College of Obstetricians and Gynecologists (ACOG), o ACSM e a OMS convergem em recomendação oposta: <strong>gestantes saudáveis devem se exercitar regularmente</strong>.</p>
 <p>A questão não é "posso me exercitar?" — mas sim: qual exercício, com qual intensidade, em qual trimestre, com quais precauções?</p>
@@ -36243,7 +36243,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "A sarcopenia rouba força, equilíbrio e independência dos idosos — mas não é inevitável. Para pessoas acima de 70 anos, o exercício resistido é a intervenção mais eficaz disponível na medicina moderna.",
   category: "Saúde e Bem-estar",
   readTime: 14,
-  publishedAt: "2026-06-23",
+  date: "2026-06-23",
   content: `<h2>O Que É Sarcopenia e Por Que Ela Acontece</h2>
 <p>Sarcopenia é a perda progressiva e generalizada de massa muscular, força e função física associada ao envelhecimento. O termo vem do grego: <em>sarx</em> (carne) + <em>penia</em> (perda). Não se trata apenas de envelhecer — trata-se de uma condição clínica reconhecida pela OMS em 2016 como doença (CID-10: M62.50).</p>
 
@@ -36400,7 +36400,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "Corredores que fazem musculação correm mais rápido. Praticantes de musculação que correm têm mais longevidade. O treino híbrido força + corrida é a maior tendência do fitness em 2025 — e existe ciência sólida por trás disso.",
   category: "Treino",
   readTime: 15,
-  publishedAt: "2026-06-23",
+  date: "2026-06-23",
   content: `<h2>O Que É o Treino Híbrido Força + Corrida?</h2>
 <p>O treino híbrido força + corrida é a prática sistematizada de combinar musculação e corrida de longa distância com objetivos e protocolos definidos para ambas as modalidades. Diferente de simplesmente "correr e também malhar", o atleta híbrido periodiza e prioriza os dois estímulos de forma inteligente, buscando alto desempenho em força muscular e resistência cardiovascular simultaneamente.</p>
 <p>Em 2025, atletas como Nick Bare, Fergus Crawley e Hamish Adams popularizaram o conceito no mundo — e no Brasil, a tendência chegou com força.</p>
@@ -36551,7 +36551,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "O protocolo RICE (gelo, repouso, compressão, elevação) ficou para o passado. O PEACE & LOVE é a abordagem moderna que respeita a biologia da cicatrização e acelera o retorno ao esporte.",
   category: "Saúde e Bem-estar",
   readTime: 13,
-  publishedAt: "2026-06-24",
+  date: "2026-06-24",
   content: `<h2>Por Que o RICE Ficou para o Passado</h2>
 <p>Durante décadas, a resposta padrão a qualquer lesão muscular era RICE: Rest (repouso), Ice (gelo), Compression (compressão), Elevation (elevação). O protocolo foi proposto pelo Dr. Gabe Mirkin em 1978 — e o próprio criador o abandonou em 2014, reconhecendo que o gelo e o repouso prolongado podem retardar a cicatrização.</p>
 <p>Em 2019, Blaise Dubois e Jean-François Esculier publicaram no British Journal of Sports Medicine o protocolo <strong>PEACE & LOVE</strong> — a evolução baseada em evidências modernas da biologia da cicatrização.</p>
@@ -36692,7 +36692,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "Vitaminas D, B12, ferro e magnésio: quatro nutrientes que milhões de atletas têm em deficiência sem saber. Descubra como cada deficiência sabota a performance e como diagnosticar e corrigir.",
   category: "Nutrição",
   readTime: 14,
-  publishedAt: "2026-06-24",
+  date: "2026-06-24",
   content: `<h2>Por Que Atletas São Mais Vulneráveis a Deficiências</h2>
 <p>O exercício físico intenso aumenta a demanda metabólica de vitaminas e minerais em 20–100% dependendo do nutriente. Ao mesmo tempo, o suor elimina micronutrientes em quantidade significativa. Atletas que seguem dietas restritivas (cutting, low carb extremo, vegano sem planejamento) amplificam ainda mais esse risco.</p>
 <p>O problema: a maioria das deficiências moderadas não gera sintomas óbvios. O atleta apenas "rende menos", "recupera mais devagar" ou "sente mais lesões" — sem identificar a causa.</p>
@@ -36837,7 +36837,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "A pós-menopausa traz desafios únicos de composição corporal que não existiam antes. Com a queda do estrogênio, o corpo redistribui gordura, perde músculo mais rápido e o metabolismo desacelera. Mas existe um protocolo de treino que reverte esses efeitos.",
   category: "Saúde e Bem-estar",
   readTime: 13,
-  publishedAt: "2026-06-24",
+  date: "2026-06-24",
   content: `<h2>O Que Muda no Corpo na Pós-Menopausa</h2>
 <p>A pós-menopausa começa 12 meses após a última menstruação — e marca o início de uma nova fase fisiológica. A queda de estrogênio para níveis mínimos desencadeia mudanças que afetam diretamente a composição corporal:</p>
 
@@ -36964,7 +36964,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "Arroz branco ou integral? Banana verde ou madura? A escolha do carboidrato certo no momento certo pode fazer diferença real na performance e na composição corporal — mas a maioria das pessoas escolhe de forma errada.",
   category: "Nutrição",
   readTime: 12,
-  publishedAt: "2026-06-25",
+  date: "2026-06-25",
   content: `<h2>O Que É o Índice Glicêmico?</h2>
 <p>O Índice Glicêmico (IG) é uma escala de 0 a 100 que classifica os carboidratos conforme a velocidade com que elevam a glicemia após o consumo, em comparação à glicose pura (IG=100). Desenvolvido por David Jenkins na Universidade de Toronto em 1981, o IG é uma ferramenta útil — mas frequentemente mal aplicada no contexto esportivo.</p>
 
@@ -37082,7 +37082,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "Não é todo colágeno que funciona para articulação, tendão ou cartilagem. A escolha do tipo certo, da dose correta e do timing adequado faz toda a diferença — e a maioria das pessoas erra em pelo menos um desses três pontos.",
   category: "Nutrição",
   readTime: 12,
-  publishedAt: "2026-06-25",
+  date: "2026-06-25",
   content: `<h2>Por Que Nem Todo Colágeno É Igual</h2>
 <p>O colágeno é a proteína mais abundante do corpo humano — representa 30% da proteína total. Mas existem pelo menos 28 tipos diferentes de colágeno, cada um com estrutura e função específicas. Para atletas e praticantes de musculação, os tipos mais relevantes são I, II e X.</p>
 
@@ -37197,7 +37197,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "A periodização para atletas de esportes coletivos e individuais é completamente diferente da periodização para fisiculturistas. Descubra como adaptar o treino de força para cada esporte sem prejudicar a técnica e a condição física específica.",
   category: "Treino",
   readTime: 14,
-  publishedAt: "2026-06-25",
+  date: "2026-06-25",
   content: `<h2>Por Que a Periodização Esportiva É Diferente</h2>
 <p>Um fisiculturista periódica em função de picos visuais — competição, foto, praia. Um atleta periódica em função de picos de performance — torneios, campeonatos, jogos. O objetivo é diferente, o design do treino é diferente, os critérios de sucesso são diferentes.</p>
 <p>A periodização esportiva específica (sport-specific periodization) é a ciência de organizar o treinamento de força, condicionamento e técnica ao longo do tempo para que o atleta atinja seu pico de performance no momento certo — e se recupere sem perder o que conquistou.</p>
@@ -37333,7 +37333,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "A formigação que a beta-alanina causa te afastou do suplemento? Ou você usa sem entender o mecanismo real? A ciência é clara: para treinos de alta intensidade com duração de 1 a 4 minutos, a beta-alanina é um dos suplementos com maior suporte de evidência.",
   category: "Nutrição",
   readTime: 11,
-  publishedAt: "2026-06-26",
+  date: "2026-06-26",
   content: `<h2>O Que É a Beta-Alanina e Como Funciona</h2>
 <p>A beta-alanina é um aminoácido não-essencial que, quando ingerida, serve como substrato para a síntese de carnosina no músculo esquelético. A carnosina (β-alanil-L-histidina) é um dipeptídeo que funciona como tampão de pH intracelular — neutralizando o acúmulo de íons H+ (ácido) durante exercícios de alta intensidade.</p>
 
@@ -37448,7 +37448,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "A ultramaratona não é uma maratona mais longa — é uma disciplina completamente diferente que exige preparação específica de corpo, mente, nutrição e equipamento. Tudo começa muito antes da largada.",
   category: "Treino",
   readTime: 14,
-  publishedAt: "2026-06-26",
+  date: "2026-06-26",
   content: `<h2>O Que É Uma Ultramaratona</h2>
 <p>Qualquer corrida acima de 42,195km é tecnicamente uma ultramaratona. Na prática, as distâncias mais populares são 50km, 50 milhas (80km), 100km e 100 milhas (160km). Muitas ultramaratonas são disputadas em trail (trilhas), com ganho de elevação significativo e superfície irregular — o que muda completamente a preparação em relação a corridas de rua.</p>
 
@@ -37597,7 +37597,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "Peter Attia chama o exercício de 'a droga mais poderosa da longevidade'. E os dados concordam: nenhuma intervenção farmacológica ou nutricional se aproxima do impacto do exercício físico regular sobre o risco de morte e qualidade de vida.",
   category: "Saúde e Bem-estar",
   readTime: 14,
-  publishedAt: "2026-06-26",
+  date: "2026-06-26",
   content: `<h2>Por Que o Exercício É a Intervenção de Longevidade Mais Poderosa</h2>
 <p>Uma meta-análise publicada no British Journal of Sports Medicine em 2022 analisou dados de 2 milhões de pessoas e encontrou que indivíduos com alto nível de atividade física tiveram redução de mortalidade por todas as causas de até <strong>35%</strong> comparados a sedentários. Nenhum medicamento aprovado chega perto desse número.</p>
 <p>Peter Attia, médico especialista em longevidade e autor de "Outlive", classifica o exercício como a "única intervenção comprovada para retardar o declínio de todas as funções corporais associadas ao envelhecimento" — força, cardiorrespiratório, metabólico, cognitivo e imune.</p>
@@ -37699,7 +37699,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "Treinar muito, comer pouco e se sentir cada vez pior não é dedicação — é RED-S. A síndrome de deficiência energética relativa no esporte afeta homens e mulheres e tem consequências gravíssimas para a saúde e performance.",
   category: "Saúde e Bem-estar",
   readTime: 13,
-  publishedAt: "2026-06-27",
+  date: "2026-06-27",
   content: `<h2>O Que É o RED-S</h2>
 <p>RED-S (Relative Energy Deficiency in Sport) é um conceito definido pelo Comitê Olímpico Internacional em 2014 para descrever a síndrome causada por disponibilidade energética (DE) insuficiente em atletas — ou seja, quando a ingestão calórica não cobre os gastos energéticos do exercício e das funções fisiológicas essenciais.</p>
 <p>O RED-S é a evolução e ampliação do conceito anterior de "Tríade da Atleta Feminina" (distúrbio alimentar + amenorreia + osteoporose) — reconhecendo que a deficiência energética afeta igualmente atletas do sexo masculino e causa um espectro muito mais amplo de consequências do que os três componentes da tríade.</p>
@@ -37838,7 +37838,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "O treinamento puramente focado em hipertrofia deixou lacunas que hoje a ciência reconhece: mobilidade, respiração e consciência corporal são componentes de performance, não luxo. O treinamento multimodal integra tudo isso.",
   category: "Treino",
   readTime: 13,
-  publishedAt: "2026-06-27",
+  date: "2026-06-27",
   content: `<h2>O Que É o Treinamento Multimodal</h2>
 <p>Treinamento multimodal é a abordagem que integra sistematicamente múltiplas capacidades físicas e mentais: força, resistência aeróbica, mobilidade articular, estabilidade, respiração e atenção plena (mindfulness). Em vez de especializar-se em uma única capacidade, o atleta multimodal desenvolve todas em harmonia — buscando o que Kelly Starrett chama de "atleta completo".</p>
 <p>A tendência cresceu exponencialmente entre 2020 e 2025, impulsionada por conceitos como "Primal Movement", "Functional Range Conditioning", "Ido Portal Method" e a popularização do yoga e pilates no universo do fitness de alta performance.</p>
@@ -37964,7 +37964,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "Tomar ômega-3 como suplemento é diferente de usar ômega-3 como ferramenta de recuperação atlética com protocolo correto. EPA, DHA, SPM, dose, forma e timing — os detalhes que a maioria ignora.",
   category: "Nutrição",
   readTime: 13,
-  publishedAt: "2026-06-27",
+  date: "2026-06-27",
   content: `<h2>Além da Saúde Cardíaca: Ômega-3 Como Ferramenta Atlética</h2>
 <p>A maioria das pessoas associa ômega-3 exclusivamente à saúde cardiovascular. Para atletas, o cenário é mais amplo e mais interessante: o EPA e o DHA interferem diretamente na resolução da inflamação pós-exercício, na síntese proteica muscular e na sensibilidade à insulina — três pilares da adaptação ao treino.</p>
 <p>Este artigo aborda o que a pesquisa mais recente (2022–2025) diz sobre ômega-3 para atletas, com foco em mecanismos, doses corretas e protocolo de uso.</p>
@@ -38090,7 +38090,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "Um aquecimento de 5 minutos em esteira não ativa os músculos que você vai usar. O priming neuromotor é a abordagem científica que prepara o sistema nervoso e os músculos específicos para cada treino — e a diferença de performance é mensurável.",
   category: "Treino",
   readTime: 12,
-  publishedAt: "2026-06-27",
+  date: "2026-06-27",
   content: `<h2>Por Que o Aquecimento Convencional É Insuficiente</h2>
 <p>A maioria das pessoas "aquece" para o treino com 5–10 minutos de esteira ou bicicleta e considera o trabalho feito. Esse tipo de aquecimento eleva a temperatura corporal e a frequência cardíaca — dois objetivos válidos — mas não ativa os padrões neuromusculares específicos que serão exigidos no treino. O resultado: primeiras séries com ativação subótima, padrões compensatórios e maior risco de lesão.</p>
 <p>O <strong>priming neuromotor</strong> (ou pré-ativação muscular específica) vai além — ele "acorda" os neurônios motores e as unidades motoras dos músculos que serão trabalhados, otimizando o recrutamento desde a primeira série de trabalho.</p>
@@ -38217,7 +38217,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "Overtraining funcional, não-funcional e síndrome de sobretreinamento são três condições diferentes com tratamentos diferentes. Saber em qual estágio você está é o primeiro passo para a recuperação.",
   category: "Treino",
   readTime: 14,
-  publishedAt: "2026-06-27",
+  date: "2026-06-27",
   content: `<h2>A Progressão do Overtraining: Um Espectro</h2>
 <p>O sobretreinamento não é um evento — é uma progressão. E o diagnóstico correto depende de entender em qual estágio o atleta se encontra, pois o tratamento de cada fase é diferente.</p>
 <p>O modelo de consenso atual (Meeusen et al., 2013 — European Journal of Sport Science) define três estágios distintos:</p>
