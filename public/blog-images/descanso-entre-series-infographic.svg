@@ -14,19 +14,19 @@
   <text x="81" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Hipertrofia</text>
   <text x="600" y="88" font-family="Arial,sans-serif" font-size="22" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Descanso Entre Series: Quanto Tempo Esperar Para..</text>
   <!-- Big number left -->
-  <text x="295" y="390" font-family="Arial,sans-serif" font-size="160" fill="#BA9E50" text-anchor="middle" font-weight="bold" opacity="0.9">100%</text>
-  <text x="295" y="440" font-family="Arial,sans-serif" font-size="22" fill="#888888" text-anchor="middle">baseado em ciencia</text>
+  <text x="295" y="390" font-family="Arial,sans-serif" font-size="160" fill="#BA9E50" text-anchor="middle" font-weight="bold" opacity="0.9">90-180s</text>
+  <text x="295" y="440" font-family="Arial,sans-serif" font-size="22" fill="#888888" text-anchor="middle">intervalo ideal</text>
   <!-- Divider -->
   <line x1="570" y1="160" x2="570" y2="560" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
   <!-- Facts right -->
   <text x="640" y="210" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" letter-spacing="2">DADOS DA CIENCIA</text>
   <rect x="640" y="230" width="510" height="60" rx="4" fill="#141414" stroke="#333" stroke-width="1"/>
-  <text x="700" y="268" font-family="Arial,sans-serif" font-size="14" fill="#888888">Estudos</text>
-  <text x="1120" y="268" font-family="Arial,sans-serif" font-size="20" fill="#BA9E50" text-anchor="end" font-weight="bold">Multiplos</text>  <rect x="640" y="330" width="510" height="60" rx="4" fill="#141414" stroke="#333" stroke-width="1"/>
-  <text x="700" y="368" font-family="Arial,sans-serif" font-size="14" fill="#888888">Ano</text>
-  <text x="1120" y="368" font-family="Arial,sans-serif" font-size="20" fill="#BA9E50" text-anchor="end" font-weight="bold">2025</text>  <rect x="640" y="430" width="510" height="60" rx="4" fill="#141414" stroke="#333" stroke-width="1"/>
-  <text x="700" y="468" font-family="Arial,sans-serif" font-size="14" fill="#888888">Fonte</text>
-  <text x="1120" y="468" font-family="Arial,sans-serif" font-size="20" fill="#BA9E50" text-anchor="end" font-weight="bold">PubMed</text>
+  <text x="700" y="268" font-family="Arial,sans-serif" font-size="14" fill="#888888">Forca max</text>
+  <text x="1120" y="268" font-family="Arial,sans-serif" font-size="20" fill="#BA9E50" text-anchor="end" font-weight="bold">3-5 minutos</text>  <rect x="640" y="330" width="510" height="60" rx="4" fill="#141414" stroke="#333" stroke-width="1"/>
+  <text x="700" y="368" font-family="Arial,sans-serif" font-size="14" fill="#888888">Hipertrofia</text>
+  <text x="1120" y="368" font-family="Arial,sans-serif" font-size="20" fill="#BA9E50" text-anchor="end" font-weight="bold">60-90 seg</text>  <rect x="640" y="430" width="510" height="60" rx="4" fill="#141414" stroke="#333" stroke-width="1"/>
+  <text x="700" y="468" font-family="Arial,sans-serif" font-size="14" fill="#888888">Resistencia</text>
+  <text x="1120" y="468" font-family="Arial,sans-serif" font-size="20" fill="#BA9E50" text-anchor="end" font-weight="bold">30-60 seg</text>
   <!-- Watermark -->
   <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>
