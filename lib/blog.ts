@@ -84,6 +84,11 @@ export const blogPosts = ([
     content: `
 <p>Você já fez dieta. Já treinou todos os dias. Já cortou o carboidrato, fez jejum intermitente, tomou chás milagrosos e até acordou cedo para malhar antes do trabalho. E ainda assim, a balança não se move — ou pior, você recupera tudo assim que relaxa.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/por-que-voce-nao-consegue-emagrecer-infographic.svg" alt="Infográfico sobre Por Que Você Não Consegue Emagrecer (E Como Mudar Isso de Vez) — Montinho Personal Trainer" title="Por Que Você Não Consegue Emagrecer (E Como Mudar Isso de Ve" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Se isso soa familiar, você não está sozinho. E, mais importante: você não está falhando por falta de força de vontade. O problema está em mecanismos biológicos que a maioria das pessoas — e dos métodos por aí — ignora completamente.</p>
 
 <p>Durante anos eu mesmo vivi esse ciclo frustrante. Comecei a lutar contra a balança na infância, passei pela adolescência tentando cada nova dieta, e entrei na vida adulta acumulando frustrações e quilos. O efeito sanfona foi meu companheiro por muito tempo. Tudo mudou quando entendi <strong>por que</strong> estava falhando — não apenas o que estava fazendo de errado isoladamente.</p>
@@ -215,6 +220,11 @@ export const blogPosts = ([
     content: `
 <p>Você treina há meses. Vai à academia com frequência. Sente o cansaço depois de cada sessão. Mas quando se olha no espelho, pouco ou nada mudou.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/erros-comuns-no-treino-de-musculacao-infographic.svg" alt="Infográfico sobre 7 Erros Comuns na Musculação Que Sabotam Seus Resultados — Montinho Personal Trainer" title="7 Erros Comuns na Musculação Que Sabotam Seus Resultados" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Isso é mais comum do que parece — e quase sempre tem uma explicação concreta. Acompanhando alunos como Personal Trainer em Alphaville e em consultoria online em todo o Brasil, percebi que os mesmos erros aparecem repetidamente. Erros que nenhum app de treino corrige sozinho e que nenhuma ficha genérica de academia resolve.</p>
 
 <p>A boa notícia: todos eles são identificáveis e corrigíveis. Confira se você está cometendo algum destes.</p>
@@ -327,6 +337,11 @@ export const blogPosts = ([
     content: `
 <p>Nada compromete mais o progresso de longo prazo do que uma lesão. Uma fisgada no ombro, uma dor persistente no joelho, uma lombalgia que aparece após o agachamento — e semanas ou meses de treino vão por água abaixo. Junto com eles, a motivação, a consistência e os resultados conquistados.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-prevenir-lesoes-no-treino-infographic.svg" alt="Infográfico sobre Como Prevenir Lesões na Musculação e Treinar Por Décadas Sem Dor — Montinho Personal Trainer" title="Como Prevenir Lesões na Musculação e Treinar Por Décadas Sem" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O pior: a maioria das lesões não acontece de repente. Elas se desenvolvem silenciosamente por semanas, como resultado de padrões de movimento incorretos, sobrecarga mal distribuída e falta de mobilidade. E são amplamente evitáveis com a abordagem correta.</p>
 
 <p>Estes são os princípios que aplico com meus alunos — tanto no atendimento presencial em Alphaville quanto na <a href="/consultoria">consultoria online</a> — para garantir décadas de treino consistente e sem dor.</p>
@@ -433,6 +448,11 @@ export const blogPosts = ([
     content: `
 <p>Você segue o treino à risca. Tenta comer bem. Faz sua parte — e os resultados ainda não aparecem. Antes de culpar seu metabolismo ou sua genética, considere uma possibilidade que poucos avaliam: o problema pode estar em hábitos que você nem está monitorando.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/habitos-que-sabotam-seu-emagrecimento-infographic.svg" alt="Infográfico sobre 5 Hábitos do Dia a Dia Que Estão Sabotando Seu Emagrecimento — Montinho Personal Trainer" title="5 Hábitos do Dia a Dia Que Estão Sabotando Seu Emagrecimento" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Comportamentos cotidianos aparentemente inofensivos podem estar sabotando silenciosamente todo o seu esforço. Alguns deles você provavelmente não imaginava que tinham impacto direto no emagrecimento e na composição corporal.</p>
 
 <p>Identifique os que se aplicam à sua rotina — e comece a corrigir um de cada vez.</p>
@@ -542,6 +562,11 @@ export const blogPosts = ([
     content: `
 <p>Você treina. Se dedica. Segue a ficha. E mesmo assim, quando se olha no espelho depois de meses, parece que pouca coisa mudou. O peso na barra mal subiu. A camisa não ficou mais apertada nos ombros.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-ganhar-massa-muscular-infographic.svg" alt="Infográfico sobre Como Ganhar Massa Muscular de Verdade: O Guia Completo de Hipertrofia — Montinho Personal Trainer" title="Como Ganhar Massa Muscular de Verdade: O Guia Completo de Hi" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Isso acontece porque a maioria das pessoas treina — mas não treina para hipertrofia. São coisas diferentes. E entender essa diferença muda tudo.</p>
 
 <p>Neste guia, vou te explicar como o crescimento muscular realmente funciona, o que o seu treino precisa ter para gerar resultado, o que a alimentação precisa fornecer, e os erros mais comuns que travam o progresso de quem já se dedica há tempo. Sem enrolação.</p>
@@ -722,6 +747,11 @@ export const blogPosts = ([
     content: `
 <p>Você começou a treinar há algumas semanas. Ou talvez meses. E a pergunta que não sai da cabeça é sempre a mesma: <em>quando vou começar a ver resultado?</em></p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/quanto-tempo-para-ganhar-massa-muscular-infographic.svg" alt="Infográfico sobre Quanto Tempo Demora Para Ganhar Massa Muscular? A Resposta Honesta — Montinho Personal Trainer" title="Quanto Tempo Demora Para Ganhar Massa Muscular? A Resposta H" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>É uma pergunta legítima. Mas a maioria das respostas que circulam na internet é ou vaga demais ("depende de cada pessoa") ou otimista demais ("em 4 semanas seu corpo muda"). Nenhuma das duas te ajuda de verdade.</p>
 
 <p>Vou te dar uma resposta honesta, baseada no que a ciência diz e no que vejo na prática com meus alunos — tanto no atendimento presencial em Alphaville quanto na <a href="/consultoria">consultoria online</a> para todo o Brasil. Com prazos reais, variáveis concretas e sem promessas que não se sustentam.</p>
@@ -986,6 +1016,11 @@ export const blogPosts = ([
     content: `
 <p>Essa é uma das perguntas mais pesquisadas sobre treino — e também uma das mais mal respondidas. A internet está cheia de fórmulas prontas: "treine 5 dias", "3 dias já basta", "treinar todo dia é o segredo". Cada uma contradiz a outra, e nenhuma te diz por quê.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/quantos-dias-por-semana-treinar-infographic.svg" alt="Infográfico sobre Quantos Dias por Semana Devo Treinar? A Resposta Baseada em Ciência — Montinho Personal Trainer" title="Quantos Dias por Semana Devo Treinar? A Resposta Baseada em " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A verdade é que não existe uma resposta única. Mas existe uma forma certa de chegar à resposta certa — e ela começa por entender o que a frequência de treino realmente faz no seu corpo.</p>
 
 <p>Neste artigo, vou te mostrar o que a ciência diz sobre frequência de treino, o que funciona na prática com os meus alunos em Alphaville e na <a href="/consultoria">consultoria online</a>, e como você chega ao número de dias ideal para o seu caso — não para o caso de mais ninguém.</p>
@@ -1265,6 +1300,11 @@ export const blogPosts = ([
     content: `
 <p>Você provavelmente já ouviu pelo menos uma dessas versões: "treino bom tem que ter pelo menos 1h30", "em 30 minutos não dá tempo de fazer nada", "depois de 1 hora o treino começa a catabolizar tudo". São afirmações que circulam há décadas nas academias e nas redes sociais — cada uma contradizendo a outra, nenhuma com explicação.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/quanto-tempo-dura-um-treino-infographic.svg" alt="Infográfico sobre Quanto Tempo Deve Durar um Treino? A Resposta Que Ninguém Te Dá — Montinho Personal Trainer" title="Quanto Tempo Deve Durar um Treino? A Resposta Que Ninguém Te" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A realidade é mais simples e mais útil do que qualquer uma dessas fórmulas prontas. A duração ideal de um treino não existe em abstrato. Ela é consequência do que você está fazendo dentro desse tempo — e da qualidade com que está fazendo.</p>
 
 <p>Neste artigo, vou te mostrar o que a fisiologia diz sobre duração de treino, quanto tempo faz sentido para cada objetivo, e o que provavelmente está desperdiçando o seu tempo na academia — sem que você perceba.</p>
@@ -1537,6 +1577,11 @@ export const blogPosts = ([
     content: `
 <p>A pergunta parece simples. A resposta real, não.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treinar-todos-os-dias-faz-mal-infographic.svg" alt="Infográfico sobre Treinar Todos os Dias Faz Mal? A Resposta Depende de Uma Coisa Só — Montinho Personal Trainer" title="Treinar Todos os Dias Faz Mal? A Resposta Depende de Uma Coi" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Tem gente que treina todos os dias há anos sem problema nenhum. Tem gente que treina 5 dias por semana e vive com dor articular, performance em queda e dorme mal. O que diferencia um caso do outro não é o número de dias — é o que acontece nesses dias e o quanto o corpo consegue se recuperar entre eles.</p>
 
 <p>Treinar todos os dias pode ser inteligente ou destrutivo. A variável que decide qual dos dois é: a relação entre o estímulo que você aplica e a capacidade de recuperação que você oferece ao corpo em resposta.</p>
@@ -1832,6 +1877,11 @@ export const blogPosts = ([
     content: `
 <p>A pergunta parece simples. Mas qualquer resposta que comece com "sim, pode" ou "não, não pode" está ignorando o que realmente determina se treinar o mesmo músculo em dias consecutivos vai te ajudar ou te prejudicar.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treinar-o-mesmo-musculo-dois-dias-seguidos-infographic.svg" alt="Infográfico sobre Posso Treinar o Mesmo Músculo Dois Dias Seguidos? Depende de Uma Coisa — Montinho Personal Trainer" title="Posso Treinar o Mesmo Músculo Dois Dias Seguidos? Depende de" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A fisiologia não trabalha com regras absolutas. Ela trabalha com equações. E a equação aqui é sempre a mesma: o que você fez no treino anterior, com qual intensidade, com qual volume — e o que o seu corpo tem disponível para recuperar entre uma sessão e outra.</p>
 
 <p>Duas pessoas podem treinar peito em dias consecutivos e ter resultados completamente diferentes. Uma vai progredir. A outra vai acumular fadiga sem construir nada. A diferença não está no fato de ter treinado dias seguidos — está no contexto em que isso aconteceu.</p>
@@ -2110,6 +2160,11 @@ export const blogPosts = ([
     content: `
 <p>Existe uma crença silenciosa mas muito difundida no mundo do treino: de que o resultado está no que você faz dentro da academia. Que o músculo cresce durante o esforço. Que descansar é, em alguma medida, tempo perdido.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/descansar-tambem-faz-crescer-infographic.svg" alt="Infográfico sobre Descansar Também Faz Crescer? A Ciência Por Trás da Recuperação Muscular — Montinho Personal Trainer" title="Descansar Também Faz Crescer? A Ciência Por Trás da Recupera" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Essa crença não só está errada — ela é o motivo pelo qual tanta gente treina com dedicação por meses e vê resultado abaixo do esperado.</p>
 
 <p>O músculo não cresce durante o treino. Durante o treino, ele é literalmente danificado. O crescimento acontece depois. E só acontece se você der ao corpo as condições necessárias para que o processo de reconstrução se complete.</p>
@@ -2380,6 +2435,11 @@ export const blogPosts = ([
     content: `
 <p>É a pergunta que todo mundo faz — e que quase todo mundo recebe uma resposta genérica que não ajuda: "depende de cada pessoa", "em 3 semanas você já vê diferença", "em 30 dias seu corpo muda completamente".</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/quanto-tempo-para-aparecer-resultado-na-academia-infographic.svg" alt="Infográfico sobre Quanto Tempo Leva Para Aparecer Resultado na Academia? A Resposta Honesta — Montinho Personal Trainer" title="Quanto Tempo Leva Para Aparecer Resultado na Academia? A Res" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Nenhuma dessas respostas é útil. A primeira é vaga demais. A segunda e a terceira vendem ilusão.</p>
 
 <p>A resposta honesta é mais complexa — e muito mais útil. Ela depende do que você está tentando alcançar, do ponto de partida, da qualidade do protocolo e de variáveis que a maioria das pessoas nem considera. E quando você entende esse conjunto, para de ficar ansioso na frente do espelho depois de 3 semanas e passa a acompanhar a evolução com os indicadores certos.</p>
@@ -2608,6 +2668,11 @@ export const blogPosts = ([
     content: `
 <p>Você treina há meses. Levanta peso regularmente. Tenta comer bem. E de repente — ou talvez gradualmente — percebe que nada está mudando mais. A força travou. O músculo não cresce. A composição corporal está parada.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-sair-do-plato-da-musculacao-infographic.svg" alt="Infográfico sobre Como Sair do Platô da Musculação? As Causas Reais e as Soluções Práticas — Montinho Personal Trainer" title="Como Sair do Platô da Musculação? As Causas Reais e as Soluç" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Isso é o platô. E a maioria das pessoas que chegam até mim nessa situação acredita que o problema é um só — que só precisam "mudar o treino" ou "aumentar a proteína" ou "dormir mais". Na maioria dos casos, o platô não tem uma causa única. Ele é o resultado da combinação de variáveis que foram se acumulando silenciosamente até que o corpo simplesmente parou de responder.</p>
 
 <p>Neste artigo, vou te mostrar como identificar o que está te travando, por que o corpo entra em platô e o que realmente funciona para sair dele.</p>
@@ -2829,6 +2894,11 @@ export const blogPosts = ([
     content: `
 <p>Se você já passou algum tempo pesquisando sobre hipertrofia, provavelmente já ouviu números diferentes de pessoas diferentes: 2 g/kg, 3 g/kg, 4 g/kg, "por refeição", "por dia", "depende do seu peso", "depende do seu treino".</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/quanta-proteina-por-dia-para-ganhar-massa-muscular-infographic.svg" alt="Infográfico sobre Quanta Proteína por Dia Para Ganhar Massa Muscular? A Resposta da Ciência — Montinho Personal Trainer" title="Quanta Proteína por Dia Para Ganhar Massa Muscular? A Respos" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A confusão é real. E ela existe porque muita informação sobre proteína circula sem base científica — ou com base em estudos mal interpretados, com interesses comerciais por trás ou simplesmente desatualizados.</p>
 
 <p>A boa notícia é que a ciência da nutrição esportiva chegou a conclusões bastante sólidas sobre esse tema nas últimas décadas. Não existe mais grande controvérsia entre os pesquisadores — existe controvérsia entre influencers e marcas de suplemento.</p>
@@ -3262,6 +3332,11 @@ export const blogPosts = ([
     content: `
 <p>Todo mundo que treina sério passa por isso em algum momento: você evolui durante alguns meses, sente que está progredindo, e então de repente a coisa empaca. A mesma carga, as mesmas repetições, o mesmo espelho — nada muda.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/periodizacao-de-treino-infographic.svg" alt="Infográfico sobre Periodização de Treino: O Que É e Como Usar Para Nunca Mais Parar de Evoluir — Montinho Personal Trainer" title="Periodização de Treino: O Que É e Como Usar Para Nunca Mais " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Quando isso acontece, a primeira reação quase sempre é treinar mais. Adicionar séries, aumentar dias, mudar exercícios aleatoriamente. E paradoxalmente, esse caminho costuma piorar a situação.</p>
 
 <p>O que realmente resolve — e o que separa quem continua evoluindo por anos de quem fica rodando em círculos — é a periodização. Trabalho com isso diariamente como Personal Trainer em Alphaville, e posso te dizer: é a diferença mais concreta entre ter um plano e ter uma ficha.</p>
@@ -3474,6 +3549,11 @@ export const blogPosts = ([
     content: `
 <p>Há uma frustração que aparece com frequência nas conversas que tenho com alunos novos: "Treino há um ano e pouco mudou." E quando você analisa o histórico mais de perto, quase sempre encontra um ou mais fatores que estão impedindo a hipertrofia — e que não têm nada a ver com falta de esforço.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/o-que-impede-a-hipertrofia-infographic.svg" alt="Infográfico sobre O Que Está Impedindo Sua Hipertrofia (E Como Resolver Cada Problema) — Montinho Personal Trainer" title="O Que Está Impedindo Sua Hipertrofia (E Como Resolver Cada P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Esforço não falta. O que falta, na maioria dos casos, é estrutura. E o primeiro passo é identificar com precisão o que está travando o processo.</p>
 
 <p>Se você já leu sobre <a href="/blog/como-ganhar-massa-muscular">como ganhar massa muscular</a> e entende os princípios básicos, este artigo vai mais fundo — nos fatores específicos que bloqueiam os ganhos mesmo quando você está fazendo "tudo certo".</p>
@@ -3643,6 +3723,11 @@ export const blogPosts = ([
     content: `
 <p>Acompanho pessoas que querem ganhar massa muscular há anos. E os erros que aparecem no caminho têm padrão — os mesmos problemas, as mesmas crenças, as mesmas decisões que travam o progresso semana após semana.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/erros-de-quem-quer-ganhar-massa-muscular-infographic.svg" alt="Infográfico sobre Os 10 Maiores Erros de Quem Quer Ganhar Massa Muscular — Montinho Personal Trainer" title="Os 10 Maiores Erros de Quem Quer Ganhar Massa Muscular" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Este artigo não é sobre os erros gerais de musculação — isso está coberto nos <a href="/blog/erros-comuns-no-treino-de-musculacao">7 erros mais comuns na musculação</a>. Aqui o foco é específico: os erros que aparecem exatamente em quem está buscando hipertrofia e não consegue chegar lá.</p>
 
 <p>São 10 erros. Cada um deles é capaz de travar seu progresso sozinho. E na maioria dos casos, quem não está crescendo está cometendo pelo menos dois ou três ao mesmo tempo.</p>
@@ -3819,6 +3904,11 @@ export const blogPosts = ([
     content: `
 <p>Uma das perguntas mais frequentes que recebo na consultoria é: "Como monto um treino para ganhar massa muscular?" A resposta curta é que não existe uma fórmula universal — mas existem princípios que, quando aplicados corretamente, funcionam para qualquer pessoa.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-montar-treino-de-hipertrofia-infographic.svg" alt="Infográfico sobre Como Montar um Treino de Hipertrofia: O Guia Prático Completo — Montinho Personal Trainer" title="Como Montar um Treino de Hipertrofia: O Guia Prático Complet" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Este é um guia prático. Não apenas teoria — você vai sair daqui sabendo exatamente como estruturar seu treino de hipertrofia, com exemplos concretos de divisões para 3, 4 e 5 dias de treino por semana.</p>
 
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Como montar um treino de hipertrofia do zero" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
@@ -4108,6 +4198,11 @@ export const blogPosts = ([
     content: `
 <p>Quando a maioria das pessoas ouve "personal trainer online", pensa em receber uma planilha de exercícios por WhatsApp e nunca mais ter notícias. Infelizmente, esse modelo existe — e é exatamente o que dá má reputação para o acompanhamento remoto.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-online-como-funciona-infographic.svg" alt="Infográfico sobre Personal Trainer Online: Como Funciona e Para Quem Vale a Pena — Montinho Personal Trainer" title="Personal Trainer Online: Como Funciona e Para Quem Vale a Pe" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O modelo que pratico é diferente. E neste artigo vou explicar, com transparência total, como funciona minha consultoria online: o que está incluído, como são feitos os ajustes, o que muda em relação ao presencial e para quem é a melhor opção.</p>
 
 <h2>Por que o acompanhamento profissional faz diferença</h2>
@@ -4285,6 +4380,11 @@ export const blogPosts = ([
     content: `
 <p>Toda semana aparece alguma dúvida sobre creatina nos meus atendimentos. "Vai cair meu cabelo?" "Faz mal ao rim?" "Preciso tomar na fase de saturação?" "É doping?"</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/creatina-para-hipertrofia-infographic.svg" alt="Infográfico sobre Creatina Para Hipertrofia: O Que a Ciência Realmente Diz — Montinho Personal Trainer" title="Creatina Para Hipertrofia: O Que a Ciência Realmente Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A creatina é o suplemento mais estudado da história do esporte. Mais de 500 estudos publicados, décadas de uso em populações variadas, posição oficial de praticamente todas as entidades científicas de nutrição esportiva. E ainda assim, o mito persiste — provavelmente porque é um suplemento que realmente funciona, o que gera desconfiança numa indústria cheia de promessas vazias.</p>
 
 <p>Aqui está o que a ciência diz, sem marketing e sem medo.</p>
@@ -4476,6 +4576,11 @@ export const blogPosts = ([
     content: `
 <p>Acompanhando alunos como Personal Trainer em Alphaville e na consultoria online, essa é uma das perguntas que aparece toda semana: "Quantas séries devo fazer?" E a maioria já chegou com a resposta errada na cabeça — seja por ter ouvido que 3 séries de 10 é o padrão, seja por achar que quanto mais, melhor.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/quantas-series-para-hipertrofia-infographic.svg" alt="Infográfico sobre Quantas Séries Fazer Para Hipertrofia? A Resposta Baseada em Evidência — Montinho Personal Trainer" title="Quantas Séries Fazer Para Hipertrofia? A Resposta Baseada em" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A realidade é mais específica. O volume semanal por músculo é um dos principais determinantes da hipertrofia — mas existe uma faixa efetiva, e sair dela para cima não acelera o resultado, só aumenta o risco de excesso de treinamento.</p>
 
 <h2>O que a ciência diz sobre volume e hipertrofia</h2>
@@ -4692,6 +4797,11 @@ export const blogPosts = ([
     content: `
 <p>Já vi isso centenas de vezes: o aluno chega com o treino de uma academia, todo montado em 3 séries de 10 repetições para cada exercício. Quando pergunto por quê 10 reps, a resposta é sempre a mesma — "porque é a zona de hipertrofia."</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/quantas-repeticoes-para-hipertrofia-infographic.svg" alt="Infográfico sobre Quantas Repetições Fazer Para Hipertrofia? A Verdade Sobre Faixas de Rep — Montinho Personal Trainer" title="Quantas Repetições Fazer Para Hipertrofia? A Verdade Sobre F" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Esse conceito tem raízes nos anos 1950 e, durante décadas, foi tratado como verdade absoluta na musculação. O problema é que a ciência avançou. E o que temos agora é uma resposta mais útil — e menos arbitrária.</p>
 
 <h2>A origem do mito das 8-12 repetições</h2>
@@ -4872,6 +4982,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Na consultoria online e nos atendimentos presenciais em Alphaville, uma das perguntas mais frequentes é esta: "Estou treinando bastante, mas não estou progredindo. Preciso treinar mais?" A resposta, na maioria dos casos, é não. O problema não é volume insuficiente — é volume mal distribuído, ou volume acima do que o organismo consegue recuperar.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/volume-de-treino-ideal-infographic.svg" alt="Infográfico sobre Volume de Treino Ideal Para Hipertrofia: MEV, MAV e MRV Explicados — Montinho Personal Trainer" title="Volume de Treino Ideal Para Hipertrofia: MEV, MAV e MRV Expl" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Entender o conceito de volume de treino ideal exige conhecer três pontos no continuum de volume: o mínimo para crescer, o máximo para adaptar e o máximo para recuperar. São siglas simples que representam conceitos práticos — e que mudam completamente como você estrutura seu treino.</p>
 
 <h2>Os três conceitos fundamentais de volume</h2>
@@ -5050,6 +5165,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Acompanhando alunos há anos, o padrão que mais vejo em quem não progride é simples: fazem o mesmo treino, com os mesmos pesos, nas mesmas repetições, semana após semana. Ficam suados, ficam cansados, mas não crescem. E quando pergunto há quanto tempo estão naquele treino, a resposta é "uns 6 meses" ou "não lembro bem."</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/progressao-de-carga-infographic.svg" alt="Infográfico sobre Progressão de Carga: O Principal Motor da Hipertrofia (e Como Aplicar) — Montinho Personal Trainer" title="Progressão de Carga: O Principal Motor da Hipertrofia (e Com" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Esse é o problema. Sem progressão sistemática, o corpo não tem motivo para mudar. O organismo se adapta ao estímulo ao qual é exposto — e quando o estímulo não muda, a adaptação para.</p>
 
 <h2>O que é sobrecarga progressiva</h2>
@@ -5240,6 +5360,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Já ouvi isso mais vezes do que consigo contar: "Você tem que ir até a falha — senão não cresce." É uma crença tão arraigada na cultura das academias que questioná-la parece heresia. Mas os dados não sustentam essa visão absoluta.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treinar-ate-a-falha-infographic.svg" alt="Infográfico sobre Treinar Até a Falha Muscular: Quando Vale a Pena e Quando Prejudica — Montinho Personal Trainer" title="Treinar Até a Falha Muscular: Quando Vale a Pena e Quando Pr" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Treinar próximo da falha é eficaz. Treinar sempre até a falha em todo exercício e toda série é uma estratégia de alto risco com retorno inferior ao esperado — especialmente no médio e longo prazo.</p>
 
 <h2>Os tipos de falha muscular</h2>
@@ -5421,6 +5546,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Toda semana aparece alguém na consultoria com o mesmo relato: "Eu descanso pouco entre as séries porque li que assim ativa mais o GH e aumenta o pump. Mas não estou crescendo." Não é coincidência. Descanso insuficiente é um dos erros mais comuns — e mais fáceis de corrigir — em quem não progride na hipertrofia.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/descanso-entre-series-infographic.svg" alt="Infográfico sobre Descanso Entre Séries: Quanto Tempo Esperar Para Hipertrofia? — Montinho Personal Trainer" title="Descanso Entre Séries: Quanto Tempo Esperar Para Hipertrofia" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O mito do descanso curto vem de uma lógica que parece fazer sentido: menos descanso = mais fadiga = mais hormônio do crescimento = mais músculo. O problema é que cada etapa dessa cadeia tem evidência fraca ou nenhuma quando testada em laboratório.</p>
 
 <h2>O que a pesquisa diz sobre descanso e hipertrofia</h2>
@@ -5595,6 +5725,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Acompanhando alunos como Personal Trainer em Alphaville, a pergunta mais comum sobre planejamento de treino não é "quanto volume fazer" — é "quantas vezes por semana devo ir à academia". Mas essa é a pergunta errada.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/frequencia-de-treino-infographic.svg" alt="Infográfico sobre Frequência de Treino: Quantas Vezes por Semana Estimular Cada Músculo? — Montinho Personal Trainer" title="Frequência de Treino: Quantas Vezes por Semana Estimular Cad" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A pergunta certa é: <strong>quantas vezes por semana cada músculo é estimulado?</strong></p>
 
 <p>Essa distinção muda completamente como você deve estruturar seu treino.</p>
@@ -5805,6 +5940,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Essa é uma das perguntas que mais aparecem nas minhas consultorias iniciais: "Devo ganhar músculo primeiro ou emagrecer primeiro?"</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/bulking-ou-cutting-infographic.svg" alt="Infográfico sobre Bulking ou Cutting: Qual Fazer Primeiro? — Montinho Personal Trainer" title="Bulking ou Cutting: Qual Fazer Primeiro?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta direta é: depende de onde você está agora. Mas existe uma lógica clara para tomar essa decisão — e entender essa lógica vai te poupar meses de esforço mal direcionado.</p>
 
 <h2>O que é bulking e o que é cutting</h2>
@@ -5999,6 +6139,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Parece contradição: ganhar músculo exige superávit calórico, perder gordura exige déficit calórico. Como as duas coisas podem acontecer ao mesmo tempo?</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/deficit-calorico-e-hipertrofia-infographic.svg" alt="Infográfico sobre Déficit Calórico e Hipertrofia: É Possível Ganhar Massa Magra Cortando Calorias? — Montinho Personal Trainer" title="Déficit Calórico e Hipertrofia: É Possível Ganhar Massa Magr" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Essa é uma das perguntas mais frequentes que recebo — e a resposta é mais nuançada do que qualquer resposta rápida que você vai encontrar por aí.</p>
 
 <h2>A lógica por trás da recomposição corporal</h2>
@@ -6183,6 +6328,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Quando um aluno chega até mim sem experiência em musculação, a primeira coisa que faço é colocá-lo em um estado de vantagem que nunca mais vai se repetir na vida dele.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/hipertrofia-para-iniciantes-infographic.svg" alt="Infográfico sobre Hipertrofia Para Iniciantes: Tudo o Que Você Precisa Saber Para Começar — Montinho Personal Trainer" title="Hipertrofia Para Iniciantes: Tudo o Que Você Precisa Saber P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Iniciantes têm algo que praticantes avançados dariam tudo para ter de volta: o período de newbie gains — quando qualquer estímulo bem estruturado de treino produz resultados. O músculo nunca cresce tão rápido, a força nunca aumenta tão depressa, e o aprendizado motor nunca se instala com tanta facilidade.</p>
 
 <p>O problema é que a maioria das pessoas desperdiça esse período com programas complexos demais, mudanças excessivas de treino e expectativas mal calibradas.</p>
@@ -6387,6 +6537,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Já perdi a conta de quantas alunas chegaram até mim com medo de "ficar grande" de musculação. É o mito mais persistente que existe na área — e é completamente falso do ponto de vista biológico.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/hipertrofia-feminina-infographic.svg" alt="Infográfico sobre Hipertrofia Feminina: Como a Musculação Muda o Corpo Feminino de Verdade — Montinho Personal Trainer" title="Hipertrofia Feminina: Como a Musculação Muda o Corpo Feminin" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Vou explicar por que, e depois vou contar o que a musculação realmente faz no corpo feminino.</p>
 
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Hipertrofia feminina: treinar pesado não faz ficar grande" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
@@ -6588,6 +6743,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Essa é uma das conversas que mais acontecem na minha consultoria: alguém com 42, 48, 52 anos chegando com a pergunta — "ainda dá tempo?"</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/hipertrofia-apos-os-40-anos-infographic.svg" alt="Infográfico sobre Hipertrofia Após os 40 Anos: É Possível Ganhar Músculo Envelhecendo? — Montinho Personal Trainer" title="Hipertrofia Após os 40 Anos: É Possível Ganhar Músculo Envel" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta é sempre a mesma: não só dá tempo — você precisa disso.</p>
 
 <h2>O que acontece com o músculo após os 40</h2>
@@ -6721,6 +6881,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Essa é uma das dúvidas mais frequentes em academias: qual é o <strong>melhor treino para emagrecer</strong>? Corrida, bike, esteira, musculação — cada professor parece ter uma resposta diferente.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/melhor-treino-para-emagrecer-infographic.svg" alt="Infográfico sobre Melhor Treino para Emagrecer: Musculação, Cardio ou os Dois? — Montinho Personal Trainer" title="Melhor Treino para Emagrecer: Musculação, Cardio ou os Dois?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A boa notícia é que a ciência já tem uma resposta clara. E ela vai contra o que muita gente ainda acredita.</p>
 
 <h2>Por que o "cardio para emagrecer" é um mito incompleto</h2>
@@ -6909,6 +7074,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Você chega na academia e se pergunta: começo pela esteira ou pelos pesos? Essa dúvida é mais comum do que parece, e a resposta correta depende do que você quer alcançar.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/cardio-antes-ou-depois-da-musculacao-infographic.svg" alt="Infográfico sobre Cardio Antes ou Depois da Musculação? A Resposta Definitiva — Montinho Personal Trainer" title="Cardio Antes ou Depois da Musculação? A Resposta Definitiva" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Vamos direto ao ponto: <strong>não existe uma ordem universalmente superior</strong>. A ordem ideal depende do seu objetivo principal. E entender por quê vai transformar a qualidade dos seus treinos.</p>
 
 <h2>O que acontece quando você faz cardio antes da musculação</h2>
@@ -7102,6 +7272,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Nos últimos anos, o <strong>HIIT (High-Intensity Interval Training)</strong> virou sinônimo de treino eficiente para emagrecer. Vídeos de 20 minutos prometem queimar mais gordura do que uma hora de esteira.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/hiit-funciona-infographic.svg" alt="Infográfico sobre HIIT Funciona para Emagrecer? O Que a Ciência Diz — Montinho Personal Trainer" title="HIIT Funciona para Emagrecer? O Que a Ciência Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas será que isso é verdade? O HIIT realmente funciona para emagrecer? E funciona para qualquer pessoa?</p>
 
 <h2>O que é HIIT?</h2>
@@ -7346,6 +7521,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Uma das dúvidas mais comuns de quem quer emagrecer é: <strong>quanto de cardio eu devo fazer por semana?</strong> 30 minutos por dia? Uma hora? Todos os dias?</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/quanto-de-cardio-fazer-infographic.svg" alt="Infográfico sobre Quanto de Cardio Fazer para Emagrecer? A Quantidade Certa — Montinho Personal Trainer" title="Quanto de Cardio Fazer para Emagrecer? A Quantidade Certa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta depende do seu nível atual, objetivo e como você combina o cardio com o treino de força. Vamos detalhar tudo.</p>
 
 <h2>O que as diretrizes de saúde recomendam</h2>
@@ -7565,6 +7745,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A gordura abdominal é uma das maiores preocupações estéticas e de saúde das pessoas que buscam emagrecer. E também é uma das áreas com mais mitos e promessas falsas no universo fitness.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-perder-gordura-abdominal-infographic.svg" alt="Infográfico sobre Como Perder Gordura Abdominal de Verdade (Sem Mitos) — Montinho Personal Trainer" title="Como Perder Gordura Abdominal de Verdade (Sem Mitos)" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Vamos direto: <strong>não existe maneira de eliminar gordura especificamente da barriga</strong>. Mas existem estratégias comprovadas para reduzir a gordura corporal total — e a barriga vai junto.</p>
 
 <h2>O mito da redução localizada</h2>
@@ -7760,6 +7945,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Se você quer emagrecer, uma coisa é certa: você precisa gastar mais calorias do que consome. Esse desequilíbrio entre o que você come e o que você gasta é chamado de <strong>déficit calórico</strong>, e é a base científica de qualquer processo de perda de gordura.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/deficit-calorico-como-calcular-infographic.svg" alt="Infográfico sobre Déficit calórico: o que é e como calcular — Montinho Personal Trainer" title="Déficit calórico: o que é e como calcular" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas saber que o déficit existe é diferente de saber como calculá-lo corretamente — e principalmente como aplicá-lo de forma inteligente. Neste artigo, você vai aprender tudo sobre o conceito, a fórmula e os erros mais comuns.</p>
 
 <h2>O que é déficit calórico?</h2>
@@ -8009,6 +8199,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A frase "tenho metabolismo lento" é uma das mais usadas quando o assunto é dificuldade para emagrecer. Mas o que a ciência realmente diz sobre isso?</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/metabolismo-lento-existe-infographic.svg" alt="Infográfico sobre Metabolismo lento existe? — Montinho Personal Trainer" title="Metabolismo lento existe?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Neste artigo, vamos separar o mito da realidade: entender o que é a Taxa Metabólica Basal (TMB), quais fatores a influenciam, qual a real diferença entre pessoas e — principalmente — o que você pode fazer para aumentar seu gasto energético.</p>
 
 <h2>O que é o metabolismo basal?</h2>
@@ -8221,6 +8416,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A gordura abdominal é uma das maiores preocupações de quem busca melhorar o corpo. E junto com essa preocupação vem a crença de que existe algum exercício específico que elimina a barriga mais rápido.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/exercicio-para-perder-barriga-infographic.svg" alt="Infográfico sobre Exercício para perder barriga: o que realmente funciona — Montinho Personal Trainer" title="Exercício para perder barriga: o que realmente funciona" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Spoiler: não existe.</p>
 
 <p>Mas isso não significa que exercício não funcione para perder barriga — significa que o mecanismo é diferente do que a maioria acredita. Vamos entender o que realmente acontece.</p>
@@ -8437,6 +8637,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Um dos maiores medos de quem quer emagrecer é perder a massa muscular que construiu com tanto esforço. E é uma preocupação legítima — quando o corpo está em déficit calórico, ele busca energia em múltiplos lugares, incluindo o tecido muscular.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-manter-massa-muscular-emagrecendo-infographic.svg" alt="Infográfico sobre Como manter massa muscular emagrecendo — Montinho Personal Trainer" title="Como manter massa muscular emagrecendo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas com as estratégias certas, é totalmente possível perder gordura e preservar (ou até ganhar) massa muscular ao mesmo tempo. Este guia vai te mostrar como fazer isso de forma prática e baseada em evidências.</p>
 
 <h2>Por que perdemos músculo ao emagrecer?</h2>
@@ -8725,6 +8930,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O Mounjaro (princípio ativo: tirzepatida) é um dos medicamentos para emagrecimento mais potentes já desenvolvidos. Atua em dois receptores — GLP-1 e GIP — suprimindo o apetite de forma intensa e acelerando a perda de peso. Em ensaios clínicos, os participantes chegaram a perder mais de 20% do peso corporal em cerca de 72 semanas.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-evitar-perder-massa-muscular-mounjaro-infographic.svg" alt="Infográfico sobre Como Evitar Perder Massa Muscular Usando Mounjaro — Montinho Personal Trainer" title="Como Evitar Perder Massa Muscular Usando Mounjaro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O problema? Peso perdido não é sinônimo de gordura perdida. E quando o emagrecimento acontece em velocidade alta, sem as estratégias certas, uma parcela significativa do que vai embora é <strong>massa muscular</strong>.</p>
 
 <p>Neste artigo, você vai entender por que isso acontece, o que a ciência diz sobre o assunto e, principalmente, o que fazer para emagrecer com Mounjaro sem perder o que levou anos para construir.</p>
@@ -8888,6 +9098,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Quando as pessoas começam a usar Mounjaro, a pergunta natural é: <em>"Preciso treinar? Já estou perdendo peso sem fazer nada diferente."</em></p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/melhor-treino-para-quem-usa-mounjaro-infographic.svg" alt="Infográfico sobre Melhor Treino Para Quem Usa Mounjaro — Montinho Personal Trainer" title="Melhor Treino Para Quem Usa Mounjaro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta curta é sim — e muito. A resposta longa é o que este artigo vai te dar.</p>
 
 <p>O Mounjaro (tirzepatida) cria um déficit calórico poderoso ao suprimir o apetite. Mas sem o estímulo certo, o corpo vai destruir músculo junto com a gordura. O treino correto é o que separa quem emagrece bem de quem emagrece e fica flácido, fraco e com metabolismo mais lento do que antes.</p>
@@ -9025,6 +9240,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Se você está usando Mounjaro ou considerando começar, provavelmente já ouviu dizer que ele faz perder peso rapidamente. O que talvez ninguém tenha te explicado é que esse peso não é necessariamente gordura.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/mounjaro-faz-perder-musculos-infographic.svg" alt="Infográfico sobre Mounjaro Faz Perder Músculos? — Montinho Personal Trainer" title="Mounjaro Faz Perder Músculos?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta direta à pergunta do título é: <strong>sim, o Mounjaro pode fazer você perder músculo — mas apenas se você não tomar as medidas certas para evitar isso.</strong></p>
 
 <p>Neste artigo, vamos desmistificar o que acontece com a composição corporal durante o uso de tirzepatida, o que a ciência sabe sobre isso e o que determina se você vai perder muito ou pouco músculo no processo.</p>
@@ -9162,6 +9382,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Uma das perguntas mais comuns de quem começa a usar Mounjaro é: <em>"Posso continuar fazendo musculação?"</em></p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/musculacao-durante-uso-de-mounjaro-infographic.svg" alt="Infográfico sobre Musculação Durante o Uso de Mounjaro: O Que Você Precisa Saber — Montinho Personal Trainer" title="Musculação Durante o Uso de Mounjaro: O Que Você Precisa Sab" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta é não só que pode — você <strong>deve</strong>. A musculação é a principal ferramenta para garantir que o peso perdido com o Mounjaro venha de gordura, não de músculo.</p>
 
 <p>Mas fazer musculação enquanto usa tirzepatida não é exatamente igual ao treino habitual. O contexto muda — e o treino precisa se adaptar. É sobre isso que vamos falar neste artigo.</p>
@@ -9314,6 +9539,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Uma das maiores frustrações de quem emagrece é chegar ao peso desejado e perceber que o corpo não ficou como esperado: a balança baixou, mas o corpo ficou flácido, sem tônus, sem a forma que se imaginava. O que aconteceu?</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-preservar-massa-muscular-durante-emagrecimento-infographic.svg" alt="Infográfico sobre Como Preservar Massa Muscular Durante o Emagrecimento — Montinho Personal Trainer" title="Como Preservar Massa Muscular Durante o Emagrecimento" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta é simples: junto com a gordura, foi embora também o músculo. E a culpa raramente é do metabolismo — é da estratégia.</p>
 
 <p>Neste artigo, você vai entender a fisiologia por trás da perda muscular durante o déficit calórico, os três pilares que protegem sua massa magra, os erros que a maioria comete e como montar um protocolo prático para perder gordura com qualidade.</p>
@@ -9474,6 +9704,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O Mounjaro (tirzepatida) é eficaz demais para suprimir o apetite. Muitas pessoas que usam o medicamento relatam passar o dia inteiro sem fome — e isso parece ótimo à primeira vista. O problema é que o corpo continua precisando de proteína, e quando você não come, não consome proteína. O resultado é previsível: <strong>perda de massa muscular junto com a gordura</strong>.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/proteina-para-quem-usa-mounjaro-infographic.svg" alt="Infográfico sobre Quanto de Proteína Consumir Usando Mounjaro — Montinho Personal Trainer" title="Quanto de Proteína Consumir Usando Mounjaro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Como personal trainer especializado em pessoas que usam GLP-1, vejo esse erro constantemente. A pessoa perde 15, 20 kg e fica feliz com o número na balança — mas ao tirar a foto, percebe que ficou "mole", com pouca definição. É o sinal clássico de que perdeu músculo junto com gordura. E isso é evitável.</p>
 
 <p>Neste artigo, vou te explicar exatamente quanto de proteína você precisa consumir usando Mounjaro, por que essa quantidade é maior do que você imagina, e estratégias práticas para bater a meta mesmo sem sentir fome.</p>
@@ -9635,6 +9870,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Se existe um suplemento que eu recomendaria para praticamente qualquer pessoa que treina em déficit calórico, é a creatina. E quando falamos de pessoas que usam Mounjaro — onde o déficit calórico é acelerado e a supressão de apetite é intensa — essa recomendação fica ainda mais forte.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/creatina-para-quem-usa-mounjaro-infographic.svg" alt="Infográfico sobre Creatina Para Quem Usa Mounjaro: Vale a Pena? — Montinho Personal Trainer" title="Creatina Para Quem Usa Mounjaro: Vale a Pena?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas eu sei que surgem dúvidas: "não vou inchar?", "não vai interferir com o remédio?", "não é perigoso para os rins?". Neste artigo vou responder essas perguntas com base na ciência e te explicar por que a creatina pode ser o suplemento mais importante para você nessa fase.</p>
 
 <h2>O que é a creatina e como ela funciona?</h2>
@@ -9793,6 +10033,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Imagine a cena: você sabe que precisa consumir 150 g de proteína hoje para preservar seus músculos enquanto usa Mounjaro. São 15h e você ainda não sentiu fome. Olha para o frango na geladeira e a ideia de mastigar algo parece impossível. É aqui que o whey protein deixa de ser suplemento opcional e vira ferramenta essencial.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/whey-protein-para-quem-usa-mounjaro-infographic.svg" alt="Infográfico sobre Whey Protein Para Quem Usa Mounjaro: Quando e Como Usar — Montinho Personal Trainer" title="Whey Protein Para Quem Usa Mounjaro: Quando e Como Usar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Com o Mounjaro (tirzepatida) suprimindo o apetite de forma tão eficaz, atingir a meta de proteína diária é um dos maiores desafios práticos para quem usa o medicamento. E como personal trainer trabalhando com pessoas nesse cenário, aprendi que o whey protein, usado de forma estratégica, resolve grande parte desse problema.</p>
 
 <p>Neste artigo vou te mostrar quando e como usar o whey protein de forma inteligente durante o tratamento com Mounjaro, minimizando efeitos colaterais e maximizando os resultados.</p>
@@ -9947,6 +10192,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Quando começa a usar Mounjaro e decide se exercitar, a maioria das pessoas faz a mesma escolha: vai caminhar. Faz sentido — é simples, não exige academia, não há risco de lesão, e parece combinar bem com o estado de menor energia que o medicamento às vezes provoca.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/cardio-ou-musculacao-mounjaro-infographic.svg" alt="Infográfico sobre Cardio ou Musculação Durante o Uso de Mounjaro? — Montinho Personal Trainer" title="Cardio ou Musculação Durante o Uso de Mounjaro?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O problema é que caminhada, por mais saudável que seja, não é suficiente para preservar a massa muscular durante o emagrecimento acelerado que o Mounjaro provoca. E perder músculo junto com gordura é exatamente o que você não quer — pois compromete o metabolismo, piora a aparência mesmo magro(a) e facilita o reganho de peso quando o tratamento for encerrado.</p>
 
 <p>Neste artigo, vou te explicar por que a musculação deve ser a prioridade — e como incluir cardio de forma inteligente para maximizar os resultados.</p>
@@ -10109,6 +10359,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A grande maioria das pessoas que começa a usar Mounjaro não tem histórico recente de atividade física regular. Muitas eram completamente sedentárias antes do tratamento — e agora, motivadas pela perda de peso rápida, querem aproveitar o momento para criar o hábito de treinar.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-voltar-a-treinar-apos-comecar-mounjaro-infographic.svg" alt="Infográfico sobre Como Voltar a Treinar Após Começar o Mounjaro — Montinho Personal Trainer" title="Como Voltar a Treinar Após Começar o Mounjaro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>É excelente que essa motivação exista. Mas iniciar o treino enquanto o corpo ainda está se adaptando ao Mounjaro tem desafios específicos que precisam ser considerados. Começar de forma muito intensa pode resultar em lesões, piora das náuseas ou abandono precoce do treino — exatamente o oposto do que você quer.</p>
 
 <p>Neste artigo, vou te mostrar como fazer a transição de sedentário para ativo de forma inteligente, sustentável e compatível com o tratamento com Mounjaro.</p>
@@ -10302,6 +10557,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A Retatrutida é o primeiro agonista triplo de receptores GLP-1, GIP e glucagon aprovado em estudos clínicos. Nos ensaios de fase 2, participantes perderam em média <strong>24% do peso corporal em 48 semanas</strong> — um resultado sem precedentes entre medicamentos para obesidade. Para comparação, o Mounjaro (tirzepatida) registrou cerca de 22% e o Ozempic (semaglutida) cerca de 15% em seus estudos pivotais.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-evitar-perder-massa-muscular-retatrutida-infographic.svg" alt="Infográfico sobre Como Evitar Perder Massa Muscular Usando Retatrutida — Montinho Personal Trainer" title="Como Evitar Perder Massa Muscular Usando Retatrutida" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Esse poder extraordinário de emagrecimento traz um risco igualmente extraordinário: <strong>perda acelerada de massa muscular</strong>. Sem as contramedidas corretas, estima-se que 25 a 40% do peso perdido em déficits calóricos severos pode ser proveniente de tecido magro — músculos, água intramuscular e tecido conectivo. No contexto da Retatrutida, onde o déficit calórico é imenso e contínuo, essa proporção pode ser ainda maior.</p>
 
 <p>Este artigo apresenta o protocolo baseado em evidências para quem está usando ou pretende usar Retatrutida e quer garantir que a perda de peso seja predominantemente de gordura, não de músculo.</p>
@@ -10472,6 +10732,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Quando a Retatrutida é prescrita pelo médico e o tratamento começa, o paciente enfrenta um desafio que vai além da balança: <strong>como continuar treinando com pouca fome, possível enjoo e menos energia disponível</strong>? A boa notícia é que, com as adaptações certas, é possível não apenas manter o treino como torná-lo o principal aliado da composição corporal durante o tratamento.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/melhor-treino-para-quem-usa-retatrutida-infographic.svg" alt="Infográfico sobre Melhor Treino Para Quem Usa Retatrutida — Montinho Personal Trainer" title="Melhor Treino Para Quem Usa Retatrutida" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Este artigo apresenta o modelo de treino mais adequado para quem usa Retatrutida, com base em princípios científicos de treinamento e nas particularidades do medicamento.</p>
 
 <h2>Por Que o Treino de Força Deve Ser a Prioridade</h2>
@@ -10639,6 +10904,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Uma das perguntas mais comuns de quem começa a usar Retatrutida é: <em>"Posso continuar fazendo musculação?"</em>. A resposta não é apenas "sim" — é <strong>"você deve"</strong>. A musculação é a ferramenta mais poderosa disponível para garantir que a perda de peso causada pelo medicamento seja predominantemente de gordura, não de músculo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/musculacao-durante-uso-de-retatrutida-infographic.svg" alt="Infográfico sobre Musculação Durante o Uso de Retatrutida: O Que Você Precisa Saber — Montinho Personal Trainer" title="Musculação Durante o Uso de Retatrutida: O Que Você Precisa " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas há uma ressalva importante: a musculação durante o uso de Retatrutida precisa de adaptações. O cenário metabólico é diferente. O apetite está suprimido, o aporte calórico é menor, e a energia disponível para o treino pode ser reduzida. Ignorar esses fatores e treinar como se nada tivesse mudado é um erro que pode levar a lesões, overtraining ou abandono do treino.</p>
 
 <h2>Por Que a Musculação é Indispensável Durante o Uso de Retatrutida</h2>
@@ -10804,6 +11074,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A pergunta é direta e merece uma resposta direta: <strong>sim, a Retatrutida pode causar perda de massa muscular</strong> — especialmente quando usada sem as estratégias corretas de treino e nutrição. Mas "pode" não é o mesmo que "inevitavelmente causa". Com as contramedidas certas, é possível preservar a maior parte da massa magra durante o tratamento.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/retatrutida-faz-perder-musculos-infographic.svg" alt="Infográfico sobre Retatrutida Faz Perder Músculos? — Montinho Personal Trainer" title="Retatrutida Faz Perder Músculos?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Neste artigo, exploramos o que os dados clínicos mostram, os mecanismos pelos quais a perda muscular acontece e o que você pode fazer para evitá-la.</p>
 
 <h2>O Que os Dados do Ensaio Clínico da Retatrutida Mostram</h2>
@@ -10951,6 +11226,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A Retatrutida é, até o momento, o medicamento mais potente para perda de peso disponível em estudos clínicos. E seu poder vem com um efeito colateral que passa despercebido por muitos: a supressão de apetite tão intensa que atingir as necessidades básicas de proteína se torna um desafio real.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/proteina-para-quem-usa-retatrutida-infographic.svg" alt="Infográfico sobre Quanto de Proteína Consumir Usando Retatrutida — Montinho Personal Trainer" title="Quanto de Proteína Consumir Usando Retatrutida" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O problema é que, justamente quando a pessoa mais precisa de proteína — durante um emagrecimento rápido e profundo —, a vontade de comer está no piso. O resultado previsível, sem intervenção, é a perda de massa muscular junto com a gordura.</p>
 
 <p>Este artigo explica quanto de proteína você realmente precisa durante o uso de Retatrutida e as estratégias práticas para atingir essa meta mesmo com apetite quase zerado.</p>
@@ -11126,6 +11406,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A Retatrutida chegou ao mercado como uma das moléculas mais potentes para emagrecimento já desenvolvidas — com perdas de peso que, nos estudos clínicos, chegaram a 24% do peso corporal em pouco mais de um ano. Mas há um problema que muitas pessoas ignoram: junto com a gordura, o corpo também pode perder músculo, especialmente quando o déficit calórico é intenso e o treino está ausente.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/creatina-para-quem-usa-retatrutida-infographic.svg" alt="Infográfico sobre Creatina Para Quem Usa Retatrutida: Vale a Pena? — Montinho Personal Trainer" title="Creatina Para Quem Usa Retatrutida: Vale a Pena?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>É exatamente nesse cenário que a creatina entra como aliada. Não por ser um "truque" ou suplemento milagroso — mas por ser o suplemento mais estudado da história do esporte, com décadas de evidência científica robusta demonstrando seus benefícios para preservação e ganho de massa muscular.</p>
 
 <p>Neste artigo, explico como a creatina funciona, por que ela faz sentido para quem usa Retatrutida, e como usá-la corretamente.</p>
@@ -11281,6 +11566,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Existe um padrão que se repete muito entre quem começa a usar Retatrutida: a pessoa começa a caminhar. Faz todo sentido — o corpo pede movimento, a caminhada é de baixo impacto, é acessível, e a perda de peso que o medicamento promove serve como motivação extra.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/cardio-ou-musculacao-retatrutida-infographic.svg" alt="Infográfico sobre Cardio ou Musculação Usando Retatrutida? — Montinho Personal Trainer" title="Cardio ou Musculação Usando Retatrutida?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O problema é quando a caminhada se torna a única forma de exercício. Porque quando se trata de composição corporal — ou seja, a proporção entre músculo e gordura no seu corpo —, o cardio sozinho não é suficiente. E durante o emagrecimento acelerado provocado pela Retatrutida, isso importa muito mais do que a maioria imagina.</p>
 
 <h2>Por que a composição corporal importa mais do que o peso</h2>
@@ -11446,6 +11736,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A Retatrutida é, nos estudos clínicos disponíveis até hoje, o medicamento para emagrecimento com os melhores resultados já documentados: perdas médias de 17 a 24% do peso corporal em cerca de 12 meses. Esses números impressionam qualquer profissional da área.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-potencializar-resultados-retatrutida-infographic.svg" alt="Infográfico sobre Como Potencializar os Resultados da Retatrutida — Montinho Personal Trainer" title="Como Potencializar os Resultados da Retatrutida" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas existe uma distinção crucial que a maioria das pessoas ignora: perder peso e melhorar a composição corporal são coisas diferentes. E o que define em qual dos dois cenários você vai terminar o tratamento não é o medicamento — é o que você faz ao lado dele.</p>
 
 <p>Este artigo é sobre exatamente isso: os 4 pilares que transformam a Retatrutida de "ferramenta de perda de peso" em "ferramenta de transformação de composição corporal".</p>
@@ -11620,6 +11915,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Você fez tudo certo. Cortou calorias, foi para a academia, perdeu os quilos que queria. Tirou foto, comemorou, ficou orgulhoso. Aí, alguns meses depois, a calça começa a apertar de novo. O peso volta, às vezes ultrapassando o ponto inicial.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-evitar-efeito-sanfona-infographic.svg" alt="Infográfico sobre Como Evitar o Efeito Sanfona Após Emagrecer — Montinho Personal Trainer" title="Como Evitar o Efeito Sanfona Após Emagrecer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Isso tem nome: efeito sanfona, ou yo-yo effect. E acontece com uma frequência alarmante — estudos indicam que a maioria das pessoas que emagrece recupera parte ou todo o peso perdido nos anos seguintes.</p>
 
 <p>A boa notícia é que o efeito sanfona não é destino. Mas evitá-lo exige entender o que realmente está acontecendo no seu corpo — e o que fazer a respeito.</p>
@@ -11798,6 +12098,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Essa é uma das dúvidas mais comuns de quem começa a usar a Retatrutida e quer aproveitar o impulso do tratamento para treinar mais. A resposta curta é: <strong>em geral, não — e treinar todos os dias usando Retatrutida pode ser contraproducente</strong>.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/posso-treinar-todos-os-dias-retatrutida-infographic.svg" alt="Infográfico sobre Posso Treinar Todos os Dias Usando Retatrutida? — Montinho Personal Trainer" title="Posso Treinar Todos os Dias Usando Retatrutida?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Não porque treinar seja ruim, mas porque o contexto metabólico criado pela medicação muda completamente a equação de recuperação.</p>
 
 <h2>O que a Retatrutida faz com seu apetite e energia</h2>
@@ -11952,6 +12257,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O HIIT — treino intervalado de alta intensidade — é uma das modalidades mais populares para quem quer emagrecer rápido. É eficiente, demanda pouco tempo e tem boa sustentação científica. Mas quando você está usando Retatrutida, a equação muda.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/hiit-usando-retatrutida-infographic.svg" alt="Infográfico sobre Posso Fazer HIIT Usando Retatrutida? — Montinho Personal Trainer" title="Posso Fazer HIIT Usando Retatrutida?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta direta: <strong>você pode fazer HIIT usando Retatrutida, mas não imediatamente e não sem cuidados específicos</strong>. Entender por quê é essencial para não transformar um treino produtivo em risco à saúde.</p>
 
 <h2>Por que o HIIT é de alta demanda energética</h2>
@@ -12108,6 +12418,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O treino em jejum é um tema que divide opiniões mesmo fora do contexto de medicamentos para emagrecimento. Mas com a Retatrutida, esse debate ganha uma camada adicional de complexidade — porque muitos usuários não escolhem treinar em jejum, eles <em>são forçados</em> a isso pela ausência de fome.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/musculacao-em-jejum-retatrutida-infographic.svg" alt="Infográfico sobre Posso Fazer Musculação em Jejum Usando Retatrutida? — Montinho Personal Trainer" title="Posso Fazer Musculação em Jejum Usando Retatrutida?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Entender os riscos e como contorná-los na prática é essencial para preservar o que mais importa durante o emagrecimento: a massa muscular.</p>
 
 <h2>O estado de "quase jejum permanente" com Retatrutida</h2>
@@ -12252,6 +12567,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Se você usa Retatrutida e treina, há uma boa chance de já ter experimentado isso: chega na academia, começa o aquecimento e sente que suas pernas são de chumbo. As cargas que você movia semanas atrás parecem impossíveis. A cabeça fica pesada. Vontade de ir para casa antes mesmo de terminar a segunda série.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/fraqueza-durante-treino-retatrutida-infographic.svg" alt="Infográfico sobre Como Evitar Fraqueza Durante os Treinos Usando Retatrutida — Montinho Personal Trainer" title="Como Evitar Fraqueza Durante os Treinos Usando Retatrutida" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Essa queixa é tão comum entre usuários de GLP-1 que alguns médicos e personal trainers já a tratam como parte previsível do processo. Mas ela não precisa ser permanente — e tem causas bem definidas que podem ser endereçadas.</p>
 
 <h2>As 4 principais causas de fraqueza no treino com Retatrutida</h2>
@@ -12421,6 +12741,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Montar um programa de treino durante o uso de Retatrutida não é simplesmente pegar qualquer planilha de musculação e seguir. O contexto é diferente: você está em déficit calórico significativo, com apetite suprimido e, possivelmente, com energia reduzida. Ignorar isso é um dos erros mais comuns — e mais caros em termos de perda de músculo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-montar-treino-retatrutida-infographic.svg" alt="Infográfico sobre Como Montar um Treino Usando Retatrutida — Montinho Personal Trainer" title="Como Montar um Treino Usando Retatrutida" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Este guia apresenta um passo a passo para construir um programa de treino eficiente e seguro durante o tratamento com Retatrutida.</p>
 
 <h2>Princípio 1: A musculação vem primeiro</h2>
@@ -12606,6 +12931,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Dois medicamentos para emagrecimento têm dominado as conversas sobre tratamento de obesidade nos últimos anos: o Mounjaro (tirzepatida) e a Retatrutida. Ambos pertencem à família dos agonistas de GLP-1, mas existem diferenças importantes entre eles — diferenças que explicam, pelo menos em parte, por que os dados clínicos da Retatrutida chamaram tanto a atenção da comunidade médica.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/retatrutida-ou-mounjaro-infographic.svg" alt="Infográfico sobre Retatrutida ou Mounjaro: Quais as Diferenças? — Montinho Personal Trainer" title="Retatrutida ou Mounjaro: Quais as Diferenças?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Este artigo apresenta uma comparação objetiva e informativa. <strong>Não recomendo nem prescrevo nenhum dos dois — isso é domínio exclusivo do médico.</strong> O que posso oferecer é um entendimento claro das diferenças e o que elas significam do ponto de vista do treino e da preservação muscular.</p>
 
 <h2>O que é o Mounjaro (tirzepatida)</h2>
@@ -12786,6 +13116,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Uma das perguntas mais comuns de quem começa a buscar informações sobre medicamentos para emagrecimento é: <strong>Retatrutida ou Ozempic — qual a diferença?</strong> A resposta envolve farmacologia, dados clínicos e, principalmente, o que isso muda (ou não muda) na sua rotina de treino e alimentação.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/retatrutida-ou-ozempic-infographic.svg" alt="Infográfico sobre Retatrutida ou Ozempic: Quais as Diferenças? — Montinho Personal Trainer" title="Retatrutida ou Ozempic: Quais as Diferenças?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Antes de qualquer coisa: a escolha entre qualquer medicamento é responsabilidade exclusiva do seu médico. Aqui, o meu papel — como personal trainer — é explicar o que cada um faz no contexto do corpo e por que o treino de força continua sendo inegociável em qualquer cenário.</p>
 
 <h2>O que é o Ozempic?</h2>
@@ -12943,6 +13278,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Wegovy foi o primeiro medicamento aprovado especificamente para obesidade dentro da classe dos agonistas de GLP-1, com resultados clínicos que chamaram atenção do mundo todo. Agora, com a Retatrutida mostrando números ainda mais expressivos, a comparação entre os dois virou pauta frequente. Mas o que realmente importa para quem treina?</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/retatrutida-ou-wegovy-infographic.svg" alt="Infográfico sobre Retatrutida ou Wegovy: Quais as Diferenças? — Montinho Personal Trainer" title="Retatrutida ou Wegovy: Quais as Diferenças?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Antes de qualquer coisa: <strong>a decisão sobre qual medicamento usar é do médico</strong>. O meu papel aqui é explicar o que cada um faz no contexto da composição corporal — e por que treino de força e proteína são inegociáveis em qualquer cenário.</p>
 
 <h2>Wegovy: semaglutida em dose plena para obesidade</h2>
@@ -13095,6 +13435,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Com a chegada de novos medicamentos para obesidade, comparações como "Retatrutida ou Zepbound?" se tornaram cada vez mais frequentes. Se você chegou até aqui, provavelmente está tentando entender o que diferencia essas duas moléculas — e o que isso significa para o seu corpo, especialmente para o treino.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/retatrutida-ou-zepbound-infographic.svg" alt="Infográfico sobre Retatrutida ou Zepbound: Quais as Diferenças? — Montinho Personal Trainer" title="Retatrutida ou Zepbound: Quais as Diferenças?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Deixo claro desde já: <strong>a escolha entre qualquer medicamento é decisão do seu médico</strong>. O que eu posso — e devo — explicar é como cada um deles afeta o contexto do treino e da composição corporal.</p>
 
 <h2>Zepbound (Tirzepatida): o agonista duplo</h2>
@@ -13253,6 +13598,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Quando os dados de fase 2 da Retatrutida foram publicados no New England Journal of Medicine em 2023, eles causaram impacto no mundo da endocrinologia: perda média de peso de <strong>aproximadamente 24% em 48 semanas</strong>. Isso é significativamente maior do que qualquer medicamento aprovado para obesidade até hoje.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/retatrutida-emagrece-mais-infographic.svg" alt="Infográfico sobre Retatrutida Emagrece Mais que Outros Medicamentos? — Montinho Personal Trainer" title="Retatrutida Emagrece Mais que Outros Medicamentos?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta natural de quem ouve isso é: "Então Retatrutida é o melhor medicamento para emagrecer?" Talvez. Mas a resposta certa é mais complexa — e é exatamente aí que entra o papel do treino de força.</p>
 
 <p>Deixo claro: <strong>a decisão sobre usar ou não Retatrutida é do seu médico</strong>. O que eu preciso que você entenda é o que esses números de perda de peso significam para a sua composição corporal — e por que, paradoxalmente, quanto mais eficaz o medicamento, mais indispensável o treino se torna.</p>
@@ -13408,6 +13758,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Essa é uma das perguntas que mais recebo: "Qual medicamento para emagrecer preserva melhor a massa muscular?" É uma pergunta legítima — e a resposta honesta vai na direção contrária do que muita gente espera ouvir.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/qual-medicamento-preserva-massa-muscular-infographic.svg" alt="Infográfico sobre Qual Medicamento Para Emagrecer Preserva Melhor a Massa Muscular? — Montinho Personal Trainer" title="Qual Medicamento Para Emagrecer Preserva Melhor a Massa Musc" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p><strong>Nenhum.</strong></p>
 
 <p>Nenhum medicamento aprovado para emagrecimento — nem Ozempic, nem Wegovy, nem Mounjaro, nem Zepbound, nem Retatrutida — preserva massa muscular por conta própria. E entender por quê é fundamental para fazer escolhas inteligentes sobre o seu corpo.</p>
@@ -13518,6 +13873,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Ao longo dos anos atendendo alunos em Alphaville, uma das queixas que mais ouço na primeira consulta é: <em>"Montinho, meu ombro dói quando treino. Tenho que parar tudo?"</em>. A resposta quase nunca é "pare tudo" — mas também não é "empurra com força". A grande maioria dos casos de dor no ombro durante o treino tem causa identificável, é tratável e permite adaptações que mantêm o aluno ativo enquanto o problema é resolvido.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/dor-no-ombro-ao-treinar-infographic.svg" alt="Infográfico sobre Dor no Ombro ao Treinar: Causas, Exercícios Seguros e Como Voltar a Treinar Sem  — Montinho Personal Trainer" title="Dor no Ombro ao Treinar: Causas, Exercícios Seguros e Como V" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Este artigo reúne o que aprendi na prática com alunos reais e o que a literatura científica confirma sobre dor no ombro na musculação. Vamos do básico anatômico até o protocolo prático de treino.</p>
 
 <h2>O que causa dor no ombro durante o treino?</h2>
@@ -13736,6 +14096,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Quando um aluno novo chega para a primeira sessão e diz "não consigo agachar porque meu joelho dói", a primeira coisa que faço não é tirar o agachamento do programa — é investigar por que o joelho dói. Em mais de 80% dos casos que atendo em Alphaville, a dor tem origem em erros de técnica, desequilíbrios musculares ou déficits de mobilidade que são corrigíveis. O agachamento é um movimento humano fundamental, e abrir mão dele sem antes entender a causa é um atalho que custa caro a longo prazo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/dor-no-joelho-no-agachamento-infographic.svg" alt="Infográfico sobre Dor no Joelho no Agachamento: Por Que Acontece e Como Treinar com Segurança — Montinho Personal Trainer" title="Dor no Joelho no Agachamento: Por Que Acontece e Como Treina" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Neste artigo, explico as causas mais comuns de dor no joelho durante o agachamento, os erros de execução que a provocam e quais variações são mais seguras para quem está em processo de reabilitação ou prevenção.</p>
 
 <h2>Por que o joelho dói no agachamento? As causas mais comuns</h2>
@@ -13933,6 +14298,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A dor lombar é a segunda causa mais comum de afastamento do trabalho no Brasil, e é também uma das principais razões pelas quais alunos interrompem a musculação sem orientação adequada. Em Alphaville, onde atendo profissionais com rotinas sedentárias intensas e postura comprometida por horas à frente de telas, a dor lombar aparece com frequência na anamnese inicial.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/dor-lombar-na-musculacao-infographic.svg" alt="Infográfico sobre Dor Lombar na Musculação: Causas, Erros Comuns e Como Treinar com Segurança — Montinho Personal Trainer" title="Dor Lombar na Musculação: Causas, Erros Comuns e Como Treina" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O paradoxo é que a musculação, quando bem orientada, é um dos tratamentos mais eficazes para dor lombar crônica. O problema está no "quando bem orientada". Erros de técnica, progressão de carga equivocada e falta de trabalho de core transformam o treino de solução em problema. Este artigo detalha as causas, os erros mais comuns e como estruturar um treino seguro mesmo com dor lombar.</p>
 
 <h2>Por que a lombar dói durante a musculação?</h2>
@@ -14137,6 +14507,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Toda semana atendo pelo menos um aluno em Alphaville que chegou com um laudo de ressonância na mão e a frase: "O médico disse que tenho hérnia de disco. Acho que não posso mais fazer musculação". Esse é um dos maiores mitos que preciso desfazer no meu trabalho. A hérnia de disco é uma condição séria que exige atenção — mas, na grande maioria dos casos, não é contraindicação permanente para o exercício resistido. Pelo contrário: o exercício físico bem orientado é parte fundamental do tratamento.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/hernia-de-disco-pode-treinar-infographic.svg" alt="Infográfico sobre Hérnia de Disco Pode Treinar? O Que a Ciência Diz Sobre Musculação e Hérnia Disc — Montinho Personal Trainer" title="Hérnia de Disco Pode Treinar? O Que a Ciência Diz Sobre Musc" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Neste artigo, explico o que é a hérnia de disco, quais são os exercícios que realmente devem ser evitados, o que a literatura científica atual recomenda e como estruturar um treino seguro mesmo com esse diagnóstico.</p>
 
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Hérnia de disco pode treinar? O que a ciência diz sobre musculação" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
@@ -14358,6 +14733,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Na minha prática como personal trainer em Alphaville, um dos diagnósticos que mais ouço dos alunos na primeira consulta é escoliose. A frase que quase sempre vem junto é: <em>"O médico disse que tenho escoliose. Posso fazer musculação?"</em> — e, muitas vezes, o próprio médico deu uma resposta vaga, sem orientações práticas sobre como proceder na academia.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/escoliose-pode-fazer-musculacao-infographic.svg" alt="Infográfico sobre Escoliose Pode Fazer Musculação? O Que a Ciência Realmente Diz — Montinho Personal Trainer" title="Escoliose Pode Fazer Musculação? O Que a Ciência Realmente D" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A verdade é que a escoliose não é uma contraindicação absoluta ao treinamento com pesos. Pelo contrário: quando o treino é corretamente planejado, ele pode ser uma das ferramentas mais eficazes para estabilizar a curvatura, reduzir dores e melhorar a função muscular — em consonância com as <a href="https://pubmed.ncbi.nlm.nih.gov/28449692/" target="_blank" rel="noopener noreferrer">diretrizes internacionais de reabilitação para escoliose idiopática (SOSORT)</a>. O problema está no treino genérico, sem adaptação, que ignora as particularidades da condição.</p>
 
 <h2>O que é escoliose e quais são os seus tipos</h2>
@@ -14495,6 +14875,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Ao longo dos meus anos como personal trainer em Alphaville, poucos problemas são tão frequentes quanto a queixa de dor no ombro. E quando o aluno chega com um laudo na mão dizendo "lesão no manguito rotador", a primeira pergunta é sempre a mesma: <em>"Vou ter que parar de treinar?"</em></p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/lesao-no-manguito-rotador-infographic.svg" alt="Infográfico sobre Lesão no Manguito Rotador: Como Treinar Sem Piorar — Montinho Personal Trainer" title="Lesão no Manguito Rotador: Como Treinar Sem Piorar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta honesta é: não necessariamente. Mas treinar do jeito errado pode transformar uma lesão parcial em uma ruptura total — e uma ruptura total em uma indicação cirúrgica. A <a href="https://pubmed.ncbi.nlm.nih.gov/19302878/" target="_blank" rel="noopener noreferrer">literatura científica aponta o exercício supervisionado como tratamento conservador de primeira escolha para lesões do manguito rotador</a>. A diferença está em entender o que é essa estrutura, qual é o grau da sua lesão e como adaptar o treino de forma inteligente.</p>
 
 <h2>O que é o manguito rotador</h2>
@@ -14628,6 +15013,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Já perdi a conta de quantas vezes vi alunos em Alphaville correndo para o carro após o treino, shakejando o whey na corrida, preocupados em "não perder a janela anabólica". Era como se os 30 minutos após a última série fossem uma corrida contra o relógio — e quem perdesse o prazo jogaria o treino inteiro fora.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/melhor-horario-para-proteina-infographic.svg" alt="Infográfico sobre Melhor Horário para Tomar Proteína: Antes ou Depois do Treino? — Montinho Personal Trainer" title="Melhor Horário para Tomar Proteína: Antes ou Depois do Trein" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Esse cenário, ainda muito comum nas academias, é baseado em uma interpretação exagerada — e parcialmente equivocada — da fisiologia do exercício. A ciência evoluiu muito desde o surgimento do conceito de janela anabólica, e os dados mais recentes contam uma história bem diferente.</p>
 
 <h2>O que é a síntese proteica muscular e por que ela importa</h2>
@@ -14734,6 +15124,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Uma das perguntas que mais recebo de alunos que chegam para a primeira avaliação em Alphaville é: <em>"Quanto de proteína eu preciso tomar por dia?"</em> A resposta que dou quase sempre surpreende — porque "tomar" proteína (no sentido de suplemento) é apenas uma das opções, e a quantidade certa depende de quem está perguntando e de qual é o objetivo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/quanto-de-proteina-consumir-infographic.svg" alt="Infográfico sobre Quanto de Proteína Consumir por Dia para Ganhar Músculo e Emagrecer — Montinho Personal Trainer" title="Quanto de Proteína Consumir por Dia para Ganhar Músculo e Em" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por que a proteína é tão importante</h2>
 
 <p>A proteína cumpre três funções críticas no contexto do exercício físico:</p>
@@ -14887,6 +15282,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Ao longo dos anos trabalhando como personal trainer em Alphaville, uma das perguntas que menos recebo — e que mais importa — é sobre hidratação. As pessoas me perguntam sobre proteína, creatina, treino em jejum, janela anabólica. Mas água? Quase ninguém pergunta sobre água.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/agua-interfere-na-hipertrofia-infographic.svg" alt="Infográfico sobre Água Interfere na Hipertrofia? O Que a Ciência Diz Sobre Hidratação e Ganho Musc — Montinho Personal Trainer" title="Água Interfere na Hipertrofia? O Que a Ciência Diz Sobre Hid" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>E é exatamente aí que mora um dos erros mais silenciosos de quem busca hipertrofia. A água não é apenas um coadjuvante: ela é parte ativa do processo de construção muscular. Sem hidratação adequada, os outros esforços — o treino pesado, a proteína calculada, o sono em dia — perdem eficiência.</p>
 
 <h2>O Papel Fisiológico da Água na Hipertrofia</h2>
@@ -15018,6 +15418,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Uma das dúvidas mais frequentes que recebo de alunos em Alphaville é sobre a refeição pré-treino: preciso comer carboidrato antes de malhar? Vou "desperdiçar" o treino se for em jejum? E se meu objetivo for emagrecer — como fica?</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/carboidrato-antes-do-treino-infographic.svg" alt="Infográfico sobre Carboidrato Antes do Treino: Você Realmente Precisa? — Montinho Personal Trainer" title="Carboidrato Antes do Treino: Você Realmente Precisa?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta honesta é: depende. Mas depende de fatores específicos que você pode controlar. Neste artigo, vou explicar a fisiologia por trás da energia no treino de força, o que os estudos dizem sobre treino em jejum versus alimentado, e como montar uma estratégia pré-treino adequada ao seu objetivo.</p>
 
 <h2>Por Que o Glicogênio Muscular Importa no Treino de Força</h2>
@@ -15120,6 +15525,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Ao longo de mais de uma década trabalhando com transformação corporal em Alphaville, ouvi essa afirmação centenas de vezes: "Estou cortando o carboidrato à noite para emagrecer." O mito de que carboidrato à noite engorda está tão enraizado na cultura popular de fitness que muitas pessoas abrem mão de refeições nutritivas e satisfatórias à noite sem qualquer necessidade fisiológica real.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/carboidrato-a-noite-engorda-infographic.svg" alt="Infográfico sobre Carboidrato à Noite Engorda? O Que a Ciência Realmente Diz — Montinho Personal Trainer" title="Carboidrato à Noite Engorda? O Que a Ciência Realmente Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O Que os Estudos Dizem: Metabolismo Noturno e Carboidratos</h2>
 
 <p>A evidência científica sobre esse tema é consistente: quando as calorias totais são controladas, o horário de ingestão de carboidratos não determina diferença clinicamente relevante na composição corporal.</p>
@@ -15235,6 +15645,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O Alphaville Residencial Zero não é apenas um endereço — é o ponto de origem de um dos projetos de urbanismo planejado mais importantes do Brasil. Quem mora aqui escolheu qualidade de vida com intenção. E qualidade de vida, quando se fala de saúde e corpo, exige o mesmo nível de intenção na hora de treinar.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-zero-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial Zero: Método Individual no Berço do C — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial Zero: Método Indi" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Trabalho como <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a> há mais de 20 anos. Conheço o Residencial Zero, conheço a rotina de quem vive aqui e sei como o perfil de vida do morador influencia diretamente no tipo de protocolo que funciona — e no que não funciona.</p>
 
 <h2>Por que o Residencial Zero tem um perfil de treino específico</h2>
@@ -15326,6 +15741,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Alphaville Residencial 1 é um dos endereços mais tradicionais de Alphaville. O condomínio combina infraestrutura consolidada com o perfil de morador que não aceita resultado mediano — nem no trabalho, nem na saúde.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-1-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 1: Protocolo Individualizado para Que — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 1: Protocolo Indi" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Treinar com um <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a> que conhece essa realidade faz diferença concreta no resultado. Não porque o profissional vive no bairro, mas porque entende a rotina, o perfil e as demandas de quem mora aqui.</p>
 
 <h2>Treino individualizado: o que isso significa na prática no Residencial 1</h2>
@@ -15418,6 +15838,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Morar no Alphaville Residencial 2 implica uma rotina específica: deslocamento para São Paulo, agenda profissional intensa, vida familiar ativa. O tempo disponível para o treino é real — não ideal. E um protocolo de treino que não respeita essa realidade não vai funcionar, independente do método.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-2-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 2: Treino que Funciona Dentro da Sua  — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 2: Treino que Fun" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Trabalho com <a href="/personal-trainer-alphaville">personal training em Alphaville</a> há mais de duas décadas. Conheço o Residencial 2 e o perfil de quem mora aqui. Esse conhecimento localizado é o que me permite montar um protocolo que realmente se encaixa na rotina do morador — não que exige uma rotina nova.</p>
 
 <h2>Eficiência no treino: fazer mais em menos tempo sem sacrificar resultado</h2>
@@ -15508,6 +15933,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O Alphaville Residencial 3 combina qualidade de vida com um ritmo de vida que não deixa espaço para desperdício. Quem mora aqui sabe o valor do tempo — e espera que cada investimento, inclusive no treino, entregue resultado proporcional ao esforço e ao custo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-3-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 3: Progressão Real com Acompanhamento — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 3: Progressão Rea" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Essa expectativa é absolutamente legítima. E é exatamente o que o acompanhamento profissional garante: protocolo eficiente, progressão verificável e uso inteligente de cada minuto de treino.</p>
 
 <h2>Por que a técnica de execução importa mais do que a carga</h2>
@@ -15589,6 +16019,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A ciência do exercício avançou muito nos últimos 20 anos — e o que a pesquisa atual como a de <a href="https://pubmed.ncbi.nlm.nih.gov/24734894/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. sobre os mecanismos da hipertrofia muscular</a> revelou transformou o que é prescrito como ideal para hipertrofia, emagrecimento ou longevidade muscular é incomparavelmente mais sólido do que o que estava disponível no início dos anos 2000. Quem acompanhou essa evolução e atualizou o método ao longo do tempo entrega resultado diferente.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-4-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 4: Método Científico Aplicado ao Cont — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 4: Método Científ" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>No Alphaville Residencial 4, moradores com histórico de treino que não progrediu chegam com as mesmas perguntas: "Treino há anos, por que não evoluo?" A resposta quase sempre está no método — não na genética, não na falta de esforço.</p>
 
 <h2>O que a ciência do exercício confirma sobre resultado real</h2>
@@ -15671,6 +16106,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O Alphaville Residencial 5 pertence ao município de Santana de Parnaíba — um detalhe geográfico que tem implicações práticas para moradores que buscam personal trainer na região. A rotina, as opções de academia e o contexto de vida de quem mora aqui têm características específicas que um profissional de fora da área não necessariamente conhece.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-5-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 5: Treino Individual em Santana de Pa — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 5: Treino Individ" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Atendo em Alphaville, Santana de Parnaíba e região há mais de 20 anos. O Residencial 5 faz parte do meu território de trabalho desde o início — não é uma área nova de atendimento.</p>
 
 <h2>Santana de Parnaíba e a rotina do morador do Residencial 5</h2>
@@ -15752,6 +16192,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Resultado de treino não é questão de intensidade — é questão de método aplicado com consistência. No Alphaville Residencial 6, moradores que treinam sem acompanhamento costumam relatar o mesmo padrão: muito esforço, pouca progressão. E quase sempre a causa está na ausência de um elemento que o esforço não substitui: estrutura.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-6-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 6: Atenção Exclusiva e Resultado Veri — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 6: Atenção Exclus" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Com <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>, a estrutura é o ponto de partida — não a meta. O protocolo é construído com estrutura, executado com supervisão e revisado com base em dados reais.</p>
 
 <h2>O que a atenção exclusiva muda no treino do morador do Residencial 6</h2>
@@ -15837,6 +16282,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Uma das situações mais frustrantes em treino é dedicar anos de consistência sem ver evolução. O Alphaville Residencial 8 tem moradores que treinam com seriedade — mas que chegam ao mesmo ponto: resultado estagnado, motivação em queda e a sensação de que o corpo simplesmente não responde mais.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-8-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 8: Superação de Platô e Progressão Co — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 8: Superação de P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Esse estado tem nome: platô. E quase nunca é causado por genética ou "limitação natural". Quase sempre é causado por método inadequado ou por ausência de progressão planejada.</p>
 
 <h2>Por que o platô acontece e o que o personal trainer identifica</h2>
@@ -15918,6 +16368,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Nem todo morador do Alphaville Residencial 9 que procura personal trainer está de olho no espelho. Uma parte significativa — especialmente acima dos 45 ou 50 anos — busca algo diferente: mais disposição no dia a dia, menos dor nas articulações, dormir melhor, ter energia para os filhos ou netos e continuar ativo por mais décadas.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-9-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 9: Treino para Qualidade de Vida e Lo — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 9: Treino para Qu" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Esses objetivos são tão legítimos quanto qualquer meta estética — e exigem o mesmo nível de método e individualização para serem alcançados.</p>
 
 <h2>O que a ciência diz sobre treino e longevidade</h2>
@@ -16007,6 +16462,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O Alphaville Residencial 10 abriga um dos perfis mais exigentes de alunos que atendo: profissionais de alto nível, com agenda intensa, que já tentaram treinar de diversas formas e chegam com uma clareza específica — querem resultado real, com eficiência, sem perda de tempo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-10-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 10: Protocolo Individual para Resulta — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 10: Protocolo Ind" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Para esse perfil, a individualização do protocolo não é um diferencial de marketing — é uma exigência funcional. Um treino genérico não respeita a rotina, não considera as limitações e não entrega o resultado que esse nível de aluno espera.</p>
 
 <h2>O que "resultado duradouro" significa na prática</h2>
@@ -16088,6 +16548,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A balança é um indicador limitado. Ela mostra peso total — mas não distingue gordura de músculo, não considera variação de hidratação e não reflete composição corporal real. Para moradores do Alphaville Residencial 11 que querem resultado concreto, a métrica que importa é outra: a proporção entre gordura e massa muscular.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-11-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 11: Treino de Força com Foco em Compo — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 11: Treino de For" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Melhorar essa proporção — perder gordura enquanto mantém ou ganha músculo — é o que transforma aparência, saúde e desempenho físico de forma real e sustentável.</p>
 
 <h2>Por que treino de força é a base da melhora de composição corporal</h2>
@@ -16169,6 +16634,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O Alphaville Residencial 12 concentra famílias com diferentes gerações vivendo no mesmo condomínio — pais na meia-idade, filhos jovens adultos, avós ativos. Cada geração tem objetivos diferentes, capacidades diferentes e demandas diferentes de um protocolo de treino.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-12-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 12: Treino que Acompanha Cada Fase da — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 12: Treino que Ac" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Atender bem cada uma dessas fases exige mais do que um método genérico. Exige adaptação real ao momento de vida do aluno — com base científica e com a experiência prática de quem passou 20 anos vendo como o corpo responde ao longo das décadas.</p>
 
 <h2>Treino na juventude: construir a base que vai sustentar as décadas seguintes</h2>
@@ -16244,6 +16714,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Gênesis 1: protocolo para quem tem padrão de exigência elevado</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-genesis-1-infographic.svg" alt="Infográfico sobre Personal Trainer Gênesis 1 | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Gênesis 1 | Montinho Personal Trainer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Alphaville Gênesis 1 é um dos condomínios mais tradicionais e consolidados de Santana de Parnaíba. Quem mora aqui tem um padrão de vida construído ao longo de anos — e espera o mesmo padrão quando contrata qualquer serviço, incluindo o personal trainer.</p>
 
 <p>O problema é que a maioria dos serviços de personal trainer não acompanha esse padrão. Fichas genéricas, atenção dividida com vários alunos ao mesmo tempo e ausência de reavaliação sistemática são comuns no mercado — e completamente incompatíveis com o resultado que um morador do Gênesis 1 espera.</p>
@@ -16325,6 +16800,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Gênesis 2: eficiência máxima para quem tem agenda exigente</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-genesis-2-infographic.svg" alt="Infográfico sobre Personal Trainer Gênesis 2 | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Gênesis 2 | Montinho Personal Trainer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Alphaville Gênesis 2 concentra um perfil de morador que conhece o valor do tempo. Executivos, empresários e profissionais liberais que trabalham no Gênesis 2 ou se deslocam diariamente para São Paulo não têm margem para treino sem resultado — cada sessão precisa entregar.</p>
 
 <p>O problema mais comum que vejo nesse perfil é a tentativa de compensar a ausência de método com intensidade. Treino pesado sem planejamento não gera progressão — gera fadiga, lesão e eventual abandono, como evidenciam <a href="https://pubmed.ncbi.nlm.nih.gov/20097734/" target="_blank" rel="noopener noreferrer">estudos sobre prevenção de lesões e planejamento de carga no treinamento resistido</a>. Método é o que transforma esforço em resultado.</p>
@@ -16394,6 +16874,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Melville: atendimento para quem valoriza qualidade de vida de verdade</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-melville-infographic.svg" alt="Infográfico sobre Personal Trainer Melville Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Melville Alphaville | Montinho Personal Tra" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Melville é um dos condomínios de referência em Alphaville — com uma comunidade consolidada, infraestrutura completa e um perfil de morador que valoriza qualidade de vida em todas as dimensões. Treino não é exceção.</p>
 
 <p>O que diferencia um personal trainer no Melville que entrega resultado é a capacidade de traduzir o objetivo do morador em um protocolo concreto. Não basta motivar — é preciso prescrever corretamente, corrigir a execução em tempo real e ajustar o treino conforme o corpo responde.</p>
@@ -16463,6 +16948,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Valville: método para resultado em um condomínio de alto padrão</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-valville-infographic.svg" alt="Infográfico sobre Personal Trainer Valville Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Valville Alphaville | Montinho Personal Tra" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Valville é um condomínio que combina segurança, natureza e infraestrutura de qualidade em Santana de Parnaíba. O morador do Valville tem acesso a um ambiente propício para uma vida ativa — e o personal trainer certo transforma esse ambiente em resultado concreto.</p>
 
 <p>Atendo moradores do Valville com protocolo individualizado há mais de 20 anos. O que oferece não é motivação — é método. Protocolo correto, execução supervisionada e progressão estruturada que entrega resultado onde o treino sem orientação estagnou.</p>
@@ -16530,6 +17020,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Burle Marx: saúde e desempenho para moradores de um condomínio único</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-burle-marx-infographic.svg" alt="Infográfico sobre Personal Trainer Burle Marx Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Burle Marx Alphaville | Montinho Personal T" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Burle Marx Alphaville é reconhecido pela arquitetura paisagística diferenciada e pelo ambiente que integra natureza e qualidade de vida urbana. Quem mora aqui tem uma relação com o entorno que vai além do condomínio convencional — e o treino pode e deve fazer parte dessa relação.</p>
 
 <p>Atendo moradores do Burle Marx com protocolo individualizado há mais de 20 anos. O foco não é apenas estética — é saúde real, qualidade de movimento e capacidade para aproveitar plenamente o estilo de vida que o condomínio oferece.</p>
@@ -16601,6 +17096,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Alpha Condé: atendimento para um condomínio de referência em Alphaville</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alpha-conde-infographic.svg" alt="Infográfico sobre Personal Trainer Alpha Condé Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Alpha Condé Alphaville | Montinho Personal " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Alpha Condé é um dos condomínios mais reconhecidos de Alphaville — pelo padrão arquitetônico, pela infraestrutura e pelo perfil dos moradores. Quem mora aqui não aceita mediocridade em nenhum aspecto da vida, e o treino não é exceção.</p>
 
 <p>Atendo moradores do Alpha Condé com protocolo individualizado há mais de 20 anos. Conheço o perfil de quem mora em condomínios de alto padrão na região — e sei que o que faz diferença não é o equipamento da academia, é o método aplicado durante o treino.</p>
@@ -16668,6 +17168,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Alpha Sítio: treino com método em um condomínio com ambiente diferenciado</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alpha-sitio-infographic.svg" alt="Infográfico sobre Personal Trainer Alpha Sítio Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Alpha Sítio Alphaville | Montinho Personal " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Alpha Sítio é um condomínio com identidade própria — combinando a tranquilidade de um espaço com apelo à natureza e a comodidade da infraestrutura de Alphaville. Quem mora aqui tem um estilo de vida que valoriza qualidade e bem-estar — e o treino precisa acompanhar esse padrão.</p>
 
 <p>Atendo moradores do Alpha Sítio com protocolo individualizado há mais de 20 anos. O atendimento é presencial (na academia do condomínio ou parceira) ou online — sempre com a mesma qualidade de protocolo e o mesmo nível de acompanhamento.</p>
@@ -16735,6 +17240,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Itahyê: resultado para moradores de um condomínio com tradição em Alphaville</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-itahye-infographic.svg" alt="Infográfico sobre Personal Trainer Itahyê Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Itahyê Alphaville | Montinho Personal Train" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Itahyê é um condomínio com história e tradição em Alphaville. Quem mora aqui tem um vínculo com a região e valoriza serviços que acompanham o padrão do condomínio. O personal trainer não é diferente — a exigência é por resultado real, não por aparência de serviço.</p>
 
 <p>Atendo moradores do Itahyê há mais de 20 anos. O que ofereço é protocolo construído para o seu objetivo, execução supervisionada com atenção exclusiva e progressão que não estagna. Seja para emagrecer, ganhar massa muscular, melhorar saúde ou retornar ao treino após lesão.</p>
@@ -16806,6 +17316,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Villa Solaia: qualidade de atendimento para um condomínio sofisticado</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-villa-solaia-infographic.svg" alt="Infográfico sobre Personal Trainer Villa Solaia Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Villa Solaia Alphaville | Montinho Personal" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Villa Solaia tem uma identidade sofisticada em Alphaville — com arquitetura diferenciada e um padrão de vida elevado. O morador do Villa Solaia que busca personal trainer tem expectativas claras: atendimento individualizado, resultado concreto e profissional que entende o padrão de exigência do condomínio.</p>
 
 <p>Atendo moradores do Villa Solaia com protocolo individualizado há mais de 20 anos. O que ofereço não é o serviço padrão do mercado — é um atendimento construído para o seu objetivo específico, com presença exclusiva durante as sessões e acompanhamento que não abandona entre os treinos.</p>
@@ -16873,6 +17388,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Villa Lobos: movimento de qualidade para uma vida de qualidade</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-villa-lobos-infographic.svg" alt="Infográfico sobre Personal Trainer Villa Lobos Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Villa Lobos Alphaville | Montinho Personal " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Villa Lobos é um condomínio que carrega no nome a referência à cultura brasileira — e no cotidiano, um padrão de vida que vai além do óbvio. Quem mora no Villa Lobos tem uma relação com qualidade de vida que inclui corpo, movimento e saúde como dimensões integradas.</p>
 
 <p>Atendo moradores do Villa Lobos com foco em qualidade de movimento e resultado mensurável. Há mais de 20 anos na região, o meu atendimento vai além da prescrição de treino — é uma parceria para construir um corpo que funciona bem e continua evoluindo.</p>
@@ -16940,6 +17460,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Campos do Conde: treino para famílias ativas em um condomínio de qualidade</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-campos-do-conde-infographic.svg" alt="Infográfico sobre Personal Trainer Campos do Conde Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Campos do Conde Alphaville | Montinho Perso" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Campos do Conde é um condomínio que combina espaço, natureza e infraestrutura — um ambiente naturalmente propício para um estilo de vida ativo. Quem mora aqui tende a ter relação positiva com movimento e atividade física — mas relação positiva não é sinônimo de treino eficiente.</p>
 
 <p>Atendo moradores do Campos do Conde com protocolo individualizado há mais de 20 anos. O que ofereço é a diferença entre uma rotina de movimento e um treino com método — que entrega resultado mensurável e progressão consistente.</p>
@@ -17007,6 +17532,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no New Ville: método contemporâneo para um condomínio moderno</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-new-ville-infographic.svg" alt="Infográfico sobre Personal Trainer New Ville Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer New Ville Alphaville | Montinho Personal Tr" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O New Ville Alphaville representa uma das novas gerações de condomínios da região — com arquitetura contemporânea e um perfil de moradores que inclui jovens profissionais e famílias recém-chegadas a Alphaville. Um perfil que tem clareza do que quer e pouca tolerância para tempo perdido.</p>
 
 <p>Atendo moradores do New Ville com protocolo individualizado há mais de 20 anos na região. O que ofereço é resultado — não apenas acompanhamento. Protocolo correto, progressão estruturada e presença exclusiva durante as sessões.</p>
@@ -17074,6 +17604,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Scenic: resultado visível para um condomínio de alto padrão</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-scenic-infographic.svg" alt="Infográfico sobre Personal Trainer Scenic Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Scenic Alphaville | Montinho Personal Train" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Scenic é um condomínio que combina localização estratégica em Alphaville com infraestrutura de alto padrão. Quem mora aqui tem um estilo de vida que inclui qualidade em todas as dimensões — e o corpo não fica de fora. O resultado no treino é uma expectativa legítima, não um luxo.</p>
 
 <p>Atendo moradores do Scenic com protocolo individualizado há mais de 20 anos. Resultado visível — mudança de composição corporal, aumento de força, melhora de disposição — é o que entrego. Mas resultado não aparece por acaso: é construído com protocolo correto e progressão estruturada.</p>
@@ -17141,6 +17676,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Morada dos Lagos: saúde e vitalidade para um condomínio à beira dos lagos</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-morada-dos-lagos-infographic.svg" alt="Infográfico sobre Personal Trainer Morada dos Lagos Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Morada dos Lagos Alphaville | Montinho Pers" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Morada dos Lagos tem uma identidade única na região de Alphaville — o ambiente com lagos e natureza cria uma atmosfera de tranquilidade que é parte do estilo de vida dos moradores. Quem mora aqui tem uma relação com bem-estar e qualidade de vida que vai além do óbvio — e o treino é parte natural dessa equação.</p>
 
 <p>Atendo moradores do Morada dos Lagos com protocolo individualizado há mais de 20 anos. O foco não é apenas estética — é saúde real, vitalidade e qualidade de movimento que sustenta o estilo de vida que o condomínio proporciona.</p>
@@ -17208,6 +17748,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer no Parque das Artes: treino com precisão para um condomínio com identidade</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-parque-das-artes-infographic.svg" alt="Infográfico sobre Personal Trainer Parque das Artes Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Parque das Artes Alphaville | Montinho Pers" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O Parque das Artes tem uma identidade diferenciada no ecossistema de Alphaville — combinando espaços que valorizam a expressão criativa com a infraestrutura de um condomínio de alto padrão. Quem mora aqui tem sensibilidade para qualidade — e isso inclui a qualidade do treino.</p>
 
 <p>Atendo moradores do Parque das Artes com protocolo individualizado há mais de 20 anos. Treino com método é uma forma de precisão — cada exercício com propósito, cada carga com razão, cada ajuste baseado em resposta real do corpo.</p>
@@ -17275,6 +17820,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Personal trainer na Aldeia da Serra: treino com método no bairro mais exclusivo de Barueri</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-aldeia-da-serra-infographic.svg" alt="Infográfico sobre Personal Trainer Aldeia da Serra | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Aldeia da Serra | Montinho Personal Trainer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A Aldeia da Serra é um dos bairros de maior prestígio em Barueri — com infraestrutura de alto padrão, natureza preservada e um perfil de moradores que valoriza qualidade em todas as dimensões da vida. O personal trainer na Aldeia da Serra precisa acompanhar esse padrão — com método, individualização e resultado mensurável.</p>
 
 <p>Atendo moradores da Aldeia da Serra há mais de 20 anos. Conheço o bairro, as academias disponíveis na região e o perfil de quem mora aqui. O que ofereço é um protocolo construído para o seu objetivo — não para um perfil genérico.</p>
@@ -17351,6 +17901,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Por que contratar personal trainer a domicílio em Alphaville?</h2>
 <p>Alphaville concentra um perfil de morador com agenda densa — executivos, empreendedores, profissionais liberais — que valorizam tempo acima de tudo. O deslocamento até a academia, o trânsito na Raposo Tavares ou na Ayrton Senna, e o tempo de vestiário somados a uma sessão de treino podem consumir duas horas de um dia já comprimido. O personal trainer a domicílio em Alphaville resolve esse cálculo: o treino acontece onde você está, no horário que funciona.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-a-domicilio-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer a Domicílio Alphaville: Treino em Casa sem Perder Qualidade — Montinho Personal Trainer" title="Personal Trainer a Domicílio Alphaville: Treino em Casa sem " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Eficácia do treino em casa: o que a ciência diz</h2>
 <p>A ideia de que treinar em casa é inferior ao treino em academia não tem respaldo científico quando o protocolo é bem estruturado. Pesquisas publicadas no <em>Journal of Strength and Conditioning Research</em> confirmam que ganhos de força e hipertrofia dependem fundamentalmente de volume, intensidade e progressão de carga — variáveis que um bom protocolo domiciliar controla com precisão. O que muda é o tipo de equipamento disponível, não o resultado possível. Veja um resumo das evidências sobre treino de força em diferentes ambientes em <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) no PubMed</a>.</p>
 
@@ -17425,6 +17980,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Treinar em casa em Tamboré: conveniência com resultado</h2>
 <p>Tamboré tem uma característica que poucos bairros da região têm: a maioria dos moradores vive em condomínio com espaço fitness ou academia privativa. Esse patrimônio está disponível a poucos metros de casa — e, na maior parte do tempo, subutilizado. O personal trainer a domicílio em Tamboré transforma essa estrutura disponível em resultado real.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-a-domicilio-tambore-infographic.svg" alt="Infográfico sobre Personal Trainer a Domicílio Tamboré: Treino Onde Você Está — Montinho Personal Trainer" title="Personal Trainer a Domicílio Tamboré: Treino Onde Você Está" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por que o treino domiciliar funciona</h2>
 <p>A pesquisa científica sobre treino de força é clara: o estímulo para hipertrofia e emagrecimento depende de tensão mecânica, dano muscular e estresse metabólico adequados — não do endereço onde o treino acontece. Dados publicados no <em>Journal of Physiology</em> mostram que protocolos domiciliares bem estruturados produzem adaptações equivalentes aos realizados em academias convencionais. Veja as evidências sobre protocolos de treino domiciliar em <a href="https://pubmed.ncbi.nlm.nih.gov/24734894/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2014) no PubMed</a>.</p>
 
@@ -17499,6 +18059,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Personal trainer em condomínio de Alphaville: o método que faltava</h2>
 <p>Alphaville tem alguns dos condomínios mais bem estruturados da Grande São Paulo. Academias privativas com máquinas modernas, espaços de cross training, piscinas, quadras — uma infraestrutura que, quando bem aproveitada, entrega resultado sem que o morador precise sair do condomínio. O problema é que infraestrutura sem método não gera progressão. É aí que entra o personal trainer em condomínio de Alphaville.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-em-condominio-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer em Condomínio Alphaville: Método Profissional na Sua Academia — Montinho Personal Trainer" title="Personal Trainer em Condomínio Alphaville: Método Profission" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O problema de treinar sozinho na academia do condomínio</h2>
 <p>Sem acompanhamento profissional, o treino em academia de condomínio tende a cair em dois padrões: ou o morador faz sempre os mesmos exercícios com a mesma carga até parar de ter resultado, ou começa com entusiasmo e abandona por falta de progressão visível. Ambos os cenários têm a mesma causa: ausência de protocolo individualizado e progressão estruturada.</p>
 
@@ -17572,6 +18137,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Tamboré e a subutilização das academias de condomínio</h2>
 <p>Quem mora em Tamboré sabe que quase todo condomínio tem academia. Em muitos casos, academia bem equipada, com esteiras, máquinas de musculação, halteres e espaço para treino funcional. Esse patrimônio está disponível 24 horas por dia, a poucos passos de casa. E, na maior parte do tempo, vazio ou usado de forma ineficiente por moradores que treinam sem método.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-em-condominio-tambore-infographic.svg" alt="Infográfico sobre Personal Trainer em Condomínio Tamboré: Transforme a Academia do Seu Prédio — Montinho Personal Trainer" title="Personal Trainer em Condomínio Tamboré: Transforme a Academi" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que falta para o resultado acontecer</h2>
 <p>O equipamento não é o problema. O que transforma a academia do condomínio em ferramenta de resultado é o protocolo: saber quais exercícios fazer, em qual ordem, com qual carga, por quantas repetições, com qual intervalo e como progredir ao longo das semanas. Sem isso, o treino é um ritual sem direção — e o corpo para de responder.</p>
 
@@ -17646,6 +18216,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Personal trainer para condomínio em Alphaville: o que significa na prática</h2>
 <p>Quando um morador de condomínio em Alphaville decide contratar personal trainer para treinar no próprio condomínio, está fazendo uma escolha inteligente: eliminar o deslocamento, aproveitar a estrutura disponível e garantir o acompanhamento profissional que faz a diferença entre treinar e progredir. A academia do condomínio deixa de ser um espaço vago e passa a ter protocolo, método e resultado.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-para-condominio-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer para Condomínio Alphaville: Protocolo Adaptado ao Seu Espaço — Montinho Personal Trainer" title="Personal Trainer para Condomínio Alphaville: Protocolo Adapt" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Adaptando o protocolo ao espaço disponível</h2>
 <p>Cada condomínio de Alphaville tem um perfil diferente de espaço fitness. Condomínios horizontais maiores, como os das primeiras fases de Alphaville, costumam ter academias bem equipadas com máquinas de musculação, halteres e equipamentos aeróbicos. Condomínios verticais ou menores têm espaços mais compactos. Em todos os casos, o protocolo começa pelo espaço — não por uma lista ideal de exercícios.</p>
 
@@ -17717,6 +18292,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Personal trainer para condomínio em Tamboré: aproveite o que você já tem</h2>
 <p>Tamboré é um bairro de condomínios. Essa é sua característica mais marcante — e uma das suas maiores vantagens para quem quer treinar bem. A maioria dos condomínios tem academia, espaço de lazer ou ao menos área externa onde é possível fazer um treino completo. Contratar personal trainer para treinar nesse espaço é aproveitar ao máximo o que o condomínio já oferece.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-para-condominio-tambore-infographic.svg" alt="Infográfico sobre Personal Trainer para Condomínio Tamboré: Resultado na Academia da Sua Casa — Montinho Personal Trainer" title="Personal Trainer para Condomínio Tamboré: Resultado na Acade" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que um personal trainer faz diferente no condomínio</h2>
 <p>A diferença entre treinar sozinho e treinar com personal trainer no condomínio não está no equipamento — está no protocolo, na correção e na progressão. Sem acompanhamento profissional, a tendência é repetir os mesmos exercícios com a mesma carga por meses, sem progressão real. Com personal trainer, cada sessão tem objetivo, cada semana tem progressão e os ajustes acontecem com base na resposta do corpo, não em suposições.</p>
 
@@ -17782,6 +18362,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Buscar personal trainer perto de mim em Alphaville: o que isso significa</h2>
 <p>A busca por "personal trainer perto de mim em Alphaville" é uma das mais comuns em buscadores de quem mora na região. A intenção é clara: encontrar um profissional qualificado que esteja fisicamente próximo, que conheça a região e que possa se deslocar até o condomínio ou academia sem complicação. Essa busca tem sentido — e há razões práticas para valorizar a proximidade.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-perto-de-mim-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer Perto de Mim Alphaville: Como Encontrar o Profissional Certo — Montinho Personal Trainer" title="Personal Trainer Perto de Mim Alphaville: Como Encontrar o P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por que a localidade do personal trainer importa</h2>
 <p>Um personal trainer que mora e trabalha em Alphaville há anos conhece a dinâmica local de uma forma que profissionais de fora não conseguem replicar. Conhece os condomínios, sabe quais academias parceiras existem na região, entende o trânsito em cada horário e consegue organizar a agenda do aluno de forma realista — sem prometer sessões às 7h da manhã sabendo que o trânsito na Alphaville Flamboyant torna isso impossível em certos dias.</p>
 
@@ -17847,6 +18432,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>O que é um professor de musculação de verdade em Alphaville</h2>
 <p>O termo "professor de musculação" em Alphaville pode descrever desde o graduado em Educação Física com especialização em fisiologia do exercício até o instrutor de academia sem formação formal. A diferença entre os dois — em termos de resultado para o aluno — é enorme. Um professor de musculação com formação sólida e atualização constante trabalha com princípios de sobrecarga progressiva, periodização, individualidade biológica e especificidade. O resultado é protocolo que funciona, não rotina montada no achismo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/professor-de-musculacao-alphaville-infographic.svg" alt="Infográfico sobre Professor de Musculação Alphaville: Técnica, Método e Resultado Real — Montinho Personal Trainer" title="Professor de Musculação Alphaville: Técnica, Método e Result" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Musculação e ciência: o que a pesquisa confirma</h2>
 <p>A musculação é a modalidade de exercício mais estudada do ponto de vista científico para objetivos como hipertrofia, emagrecimento, melhora de composição corporal e saúde metabólica. Revisões publicadas no <em>Journal of Strength and Conditioning Research</em> confirmam que o treino de força bem prescrito é eficaz para todos os perfis — jovens, adultos, idosos, sedentários e atletas. O que varia não é a eficácia da musculação, mas a qualidade do protocolo. Veja um resumo das evidências em <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) no PubMed</a>.</p>
 
@@ -17919,6 +18509,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Professor de musculação em Tamboré: o que define um profissional de qualidade</h2>
 <p>Tamboré tem um mercado de profissionais de educação física ativo. Encontrar alguém que chame a si mesmo de professor de musculação é fácil. Encontrar alguém com formação sólida, método atualizado e histórico de resultado é outro nível. A diferença entre os dois está na qualidade do protocolo, na correção técnica que oferece e na progressão que entrega ao longo do tempo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/professor-de-musculacao-tambore-infographic.svg" alt="Infográfico sobre Professor de Musculação Tamboré: Técnica Aplicada, Resultado Comprovado — Montinho Personal Trainer" title="Professor de Musculação Tamboré: Técnica Aplicada, Resultado" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Musculação não é só levantar peso</h2>
 <p>Para quem está de fora, musculação parece simples: pega o peso, faz a repetição, descansa, repete. Para um professor qualificado, cada variável conta — amplitude de movimento, velocidade de execução, tempo sob tensão, intervalo de descanso, sequência de exercícios, seleção de cargas, volume semanal por grupo muscular. Controlar essas variáveis de forma inteligente é o que separa um treino eficiente de um ritual sem progressão.</p>
 
@@ -17984,6 +18579,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Treinador particular em Alphaville: o que muda na prática</h2>
 <p>Alphaville tem academias de grande porte, instrutores, aulas em grupo e profissionais de todos os tipos. O que diferencia o treinador particular de qualquer outra opção é simples: atenção exclusiva. Quando você treina com um treinador particular, cada decisão — o exercício, a carga, o intervalo, a progressão — é tomada pensando em você especificamente. Não em uma classe, não em um grupo, não em um perfil médio de aluno.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treinador-particular-alphaville-infographic.svg" alt="Infográfico sobre Treinador Particular Alphaville: Atenção Exclusiva, Protocolo Individual — Montinho Personal Trainer" title="Treinador Particular Alphaville: Atenção Exclusiva, Protocol" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por que o treino individualizado entrega mais resultado</h2>
 <p>A individualidade biológica é um dos princípios fundamentais do treinamento. Cada pessoa responde de forma diferente ao mesmo estímulo — em função de histórico de treino, composição corporal, nível hormonal, qualidade do sono, alimentação e uma série de outros fatores. Um protocolo que funciona para uma pessoa pode ser ineficiente ou até contraproducente para outra. O treinador particular em Alphaville considera essa individualidade na montagem de cada protocolo. Pesquisas publicadas no <em>Journal of Physiology</em> confirmam a variabilidade individual de resposta ao treino em <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) no PubMed</a>.</p>
 
@@ -18054,6 +18654,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Treinador particular em Tamboré: além do cartão de visita</h2>
 <p>Em Tamboré e na região de Alphaville é fácil encontrar alguém que se denomine treinador particular. O desafio é encontrar um profissional com formação sólida, método baseado em evidências e histórico de resultado verificável. A diferença entre o profissional certo e o profissional apenas disponível é o que separa quem atinge resultado de quem continua tentando.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treinador-particular-tambore-blog-infographic.svg" alt="Infográfico sobre Treinador Particular Tamboré: O Que Realmente Define Resultado — Montinho Personal Trainer" title="Treinador Particular Tamboré: O Que Realmente Define Resulta" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que define um treinador particular de qualidade em Tamboré</h2>
 <p>Um bom treinador particular não entrega apenas uma lista de exercícios. Entrega avaliação completa antes de prescrever qualquer coisa, protocolo construído para o objetivo real do aluno (não para um perfil genérico), técnica ensinada desde o primeiro exercício, progressão monitorada semana a semana e ajuste mensal com base na resposta real do corpo. E, principalmente: explica cada decisão com clareza.</p>
 
@@ -18119,6 +18724,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Personal trainer no Centro Comercial Alphaville: treino que respeita a agenda corporativa</h2>
 <p>O Centro Comercial Alphaville é um dos maiores polos corporativos do interior de São Paulo. Diariamente, dezenas de milhares de profissionais — executivos, gestores, profissionais liberais, empreendedores — trabalham em prédios ao longo da Alameda Rio Negro e avenidas adjacentes. Para esse perfil, o maior obstáculo ao treino não é a falta de vontade: é a agenda.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-centro-comercial-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer Centro Comercial Alphaville: Treino para Quem Trabalha Aqui — Montinho Personal Trainer" title="Personal Trainer Centro Comercial Alphaville: Treino para Qu" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O desafio do profissional que trabalha em Alphaville</h2>
 <p>Quem trabalha no Centro Comercial de Alphaville sabe como é o dia: reuniões desde cedo, almoços de trabalho, trânsito de saída. Encaixar treino em uma rotina dessas exige planejamento — e um protocolo que seja eficiente dentro do tempo disponível. Sessões longas de 90 minutos de musculação não cabem no cotidiano de quem tem reunião às 8h. Sessões de 50 minutos com protocolo preciso, sim.</p>
 
@@ -18184,6 +18794,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Personal trainer no Green Valley: o método que transforma a academia do condomínio</h2>
 <p>O Green Valley é um dos condomínios mais conhecidos da região de Alphaville — área verde generosa, infraestrutura completa, localização estratégica entre Tamboré e o Centro Comercial de Alphaville. Para quem mora lá, treinar no próprio condomínio é o cenário ideal: zero deslocamento, privacidade, ambiente controlado. O que falta, na maior parte dos casos, é o método para transformar esse espaço em resultado.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-green-valley-infographic.svg" alt="Infográfico sobre Personal Trainer Green Valley Alphaville: Treino no Seu Condomínio — Montinho Personal Trainer" title="Personal Trainer Green Valley Alphaville: Treino no Seu Cond" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por que a academia do condomínio funciona quando há método</h2>
 <p>Muitos moradores de condomínio usam a academia disponível por semanas ou meses sem resultado perceptível. O problema raramente é o equipamento — é a ausência de protocolo estruturado, progressão de carga e correção técnica. Com personal trainer, a academia do Green Valley se torna um ambiente de treino eficiente, independente do tamanho ou da variedade de equipamentos.</p>
 
@@ -18249,6 +18864,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Personal trainer no Empresarial 18 do Forte: eficiência acima de tudo</h2>
 <p>O Empresarial 18 do Forte é um dos complexos corporativos de referência em Alphaville — escritórios de alto padrão, multinacionais, gestores com agendas densas e pouco tempo disponível para tudo que não seja estratégico. Para esse perfil de profissional, treinar com personal trainer não é luxo: é eficiência. Sessões com protocolo preciso entregam mais resultado em menos tempo do que qualquer outra modalidade de exercício.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-empresarial-18-do-forte-infographic.svg" alt="Infográfico sobre Personal Trainer Empresarial 18 do Forte: Treino para Quem Trabalha no Hub Corpo — Montinho Personal Trainer" title="Personal Trainer Empresarial 18 do Forte: Treino para Quem T" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Treino como ferramenta de performance corporativa</h2>
 <p>A relação entre exercício regular e performance profissional está bem documentada na literatura científica. Pesquisas publicadas no <em>British Journal of Sports Medicine</em> mostram que profissionais que treinam regularmente reportam mais energia durante o dia, melhor foco, maior resistência ao estresse e qualidade de sono superior. Esses benefícios se traduzem diretamente em performance — tomada de decisão, criatividade e produtividade. Veja os dados em <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">Haskell et al. (2009) no PubMed</a>.</p>
 
@@ -18312,6 +18932,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Personal trainer na região do Iguatemi Alphaville</h2>
 <p>O Iguatemi Alphaville é uma das referências da região — não apenas como centro comercial, mas como ponto de convergência de Alphaville, Tamboré e os bairros de Barueri e Santana de Parnaíba. Ao redor do Iguatemi há academias de alto padrão, condomínios residenciais e uma concentração de profissionais que buscam qualidade em todos os aspectos da vida — inclusive no treino.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-iguatemi-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer Iguatemi Alphaville: Treino de Alta Performance na Região — Montinho Personal Trainer" title="Personal Trainer Iguatemi Alphaville: Treino de Alta Perform" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Infraestrutura de alto nível precisa de protocolo de alto nível</h2>
 <p>Ter acesso a uma academia bem equipada próxima ao Iguatemi Alphaville é uma vantagem real — equipamento moderno, variedade de máquinas, espaço para treinamento funcional. O problema que persiste mesmo com boa infraestrutura é a falta de protocolo individualizado. Sem método, o melhor equipamento do mundo gera resultado mediano. Com personal trainer, a mesma academia entrega resultado superior porque cada variável — exercício, carga, volume, progressão — é gerenciada com precisão.</p>
 
@@ -18375,6 +19000,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Personal trainer na Alameda Rio Negro: treino que respeita a agenda de quem faz Alphaville funcionar</h2>
 <p>A Alameda Rio Negro é o coração corporativo de Alphaville — a avenida onde estão os maiores escritórios, as sedes de multinacionais e os hubs de inovação da região. Diariamente, profissionais de alta performance transitam por lá com agendas que não têm espaço para ineficiência. Para esse perfil, treinar com personal trainer não é sobre estética: é sobre performance, energia e longevidade profissional.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alameda-rio-negro-infographic.svg" alt="Infográfico sobre Personal Trainer Alameda Rio Negro Alphaville: Treino para o Hub Corporativo — Montinho Personal Trainer" title="Personal Trainer Alameda Rio Negro Alphaville: Treino para o" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O profissional da Alameda Rio Negro e o tempo como recurso escasso</h2>
 <p>Quem trabalha na Alameda Rio Negro sabe que o tempo é o recurso mais escasso. Treinar sem objetivo claro, sem progressão e sem correção técnica é desperdiçar esse recurso. Com personal trainer e protocolo preciso, 50 minutos de treino produzem mais resultado do que 90 minutos de treino livre sem método. Cada sessão tem propósito — e o profissional que a conduz garante que nenhum minuto seja perdido.</p>
 
@@ -18442,6 +19072,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>A pergunta que todo praticante de musculação faz</h2>
 <p>Cardio atrapalha a hipertrofia? É uma das perguntas mais frequentes em academias — e também uma das mais mal respondidas. A resposta curta: depende. A resposta completa exige entender o que a pesquisa chama de <em>efeito de interferência</em> e em quais condições ele realmente se manifesta.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/cardio-atrapalha-a-hipertrofia-infographic.svg" alt="Infográfico sobre Cardio Atrapalha a Hipertrofia? O Que a Ciência Realmente Diz — Montinho Personal Trainer" title="Cardio Atrapalha a Hipertrofia? O Que a Ciência Realmente Di" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é o efeito de interferência</h2>
 <p>O efeito de interferência foi descrito pela primeira vez por Hickson em 1980, que observou que a combinação de treino de força com treino aeróbico de alta intensidade e alta frequência reduzia os ganhos de força em comparação com o treino de força isolado. Esse fenômeno é real — mas é frequentemente superestimado por quem o usa como justificativa para nunca fazer cardio.</p>
 
@@ -18512,6 +19147,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>O medo do catabolismo no treino em jejum</h2>
 <p>A ideia de que treinar em jejum "come músculo" está enraizada na cultura da musculação — mas não resiste a uma análise fisiológica cuidadosa. O corpo humano tem mecanismos sofisticados de proteção da massa muscular que não são desativados simplesmente porque você não comeu nas últimas 8, 12 ou até 16 horas.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treinar-em-jejum-faz-perder-massa-muscular-infographic.svg" alt="Infográfico sobre Treinar em Jejum Faz Perder Massa Muscular? A Resposta da Ciência — Montinho Personal Trainer" title="Treinar em Jejum Faz Perder Massa Muscular? A Resposta da Ci" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Como o corpo responde ao treino em jejum</h2>
 <p>Durante o jejum noturno (8 a 12 horas), o corpo usa principalmente ácidos graxos como substrato energético. A glicemia cai levemente, os estoques de glicogênio muscular permanecem relativamente preservados para sessões de duração moderada, e a quebra proteica muscular aumenta marginalmente — mas não de forma suficiente para causar perda muscular mensurável em quem treina regularmente e consome proteína adequada no resto do dia.</p>
 
@@ -18582,6 +19222,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>O erro mais comum de quem quer emagrecer</h2>
 <p>A abordagem mais comum de emagrecimento — cortar calorias agressivamente e fazer muito cardio — é também a que mais destrói massa muscular. Quando o corpo entra em déficit calórico severo sem treino de força e sem proteína suficiente, ele recorre à massa magra como substrato energético. O peso na balança cai, mas a composição corporal piora: menos gordura, mas também menos músculo. O resultado é um corpo menor, não necessariamente mais definido.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-perder-gordura-sem-perder-massa-muscular-infographic.svg" alt="Infográfico sobre Como Perder Gordura Sem Perder Massa Muscular: O Guia Baseado em Evidência — Montinho Personal Trainer" title="Como Perder Gordura Sem Perder Massa Muscular: O Guia Basead" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os três pilares para perder gordura sem perder músculo</h2>
 
 <h3>1. Déficit calórico moderado e sustentável</h3>
@@ -18649,6 +19294,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Frequência de treino: uma das variáveis mais subestimadas</h2>
 <p>Por muito tempo, o culturismo tradicional popularizou a divisão de treino ABC ou ABCD — cada músculo treinado uma vez por semana, com volume altíssimo naquela única sessão. Esse modelo funciona para atletas em uso de esteroides anabolizantes, que têm síntese proteica elevada por mais tempo. Para o praticante natural, a ciência aponta uma direção diferente.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treinar-o-mesmo-musculo-duas-vezes-por-semana-infographic.svg" alt="Infográfico sobre Treinar o Mesmo Músculo Duas Vezes por Semana: Vale a Pena? — Montinho Personal Trainer" title="Treinar o Mesmo Músculo Duas Vezes por Semana: Vale a Pena?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que a ciência diz sobre frequência de treino</h2>
 <p>A síntese proteica muscular — o processo de construção de novo tecido muscular após o estímulo do treino — dura aproximadamente 24 a 48 horas após uma sessão intensa. Depois disso, ela retorna ao nível basal. Treinar o mesmo músculo apenas uma vez por semana significa que, nas outras 5 ou 6 dias, o músculo não está em estado elevado de síntese. Ao treinar o mesmo músculo duas vezes por semana, você dobra as janelas de síntese proteica elevada ao longo do mês — sem necessariamente dobrar o volume total.</p>
 
@@ -18700,6 +19350,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Whey protein é o suplemento mais vendido do mundo fitness — e também o mais mal utilizado. Muita gente compra, toma no horário errado, na dose errada, e depois conclui que "não funciona". Neste artigo você vai entender exatamente como usar para ter resultado.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/whey-protein-como-tomar-infographic.svg" alt="Infográfico sobre Whey Protein: Como Tomar, Quando e Qual Escolher — Montinho Personal Trainer" title="Whey Protein: Como Tomar, Quando e Qual Escolher" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é whey protein?</h2>
 <p>Whey é a proteína extraída do soro do leite, um subproduto da fabricação de queijo. Após filtragem e secagem, vira o pó que você mistura com água ou leite. É uma proteína completa — contém todos os aminoácidos essenciais — com altíssima digestibilidade e perfil de leucina favorável à síntese muscular.</p>
 
@@ -18781,6 +19436,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O mercado de pré-treinos fatura bilhões. O formigamento, o coração acelerado, a sensação de foco total — parece que o produto vai fazer você levantar o dobro. Mas o que a ciência diz sobre esses suplementos? Vamos separar o que funciona do que é só experiência sensorial.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/pre-treino-vale-a-pena-infographic.svg" alt="Infográfico sobre Pré-Treino: Vale a Pena Tomar? O Que a Ciência Diz — Montinho Personal Trainer" title="Pré-Treino: Vale a Pena Tomar? O Que a Ciência Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Ingredientes com evidência real</h2>
 
 <h3>Cafeína (3–6mg/kg de peso)</h3>
@@ -18854,6 +19514,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>BCAA (Branch Chain Amino Acids) — leucina, isoleucina e valina — foram durante anos o suplemento obrigatório de qualquer pessoa que pisasse numa academia. Hoje, a ciência tem uma visão bem diferente. Este artigo vai te ajudar a decidir se vale gastar com isso.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/bcaa-voce-realmente-precisa-infographic.svg" alt="Infográfico sobre BCAA: Você Realmente Precisa? A Verdade Sobre esse Suplemento — Montinho Personal Trainer" title="BCAA: Você Realmente Precisa? A Verdade Sobre esse Suplement" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que são BCAAs e por que eram tão populares</h2>
 <p>BCAAs são três aminoácidos essenciais que o músculo oxida diretamente durante o exercício. A leucina em particular é o principal gatilho da síntese proteica muscular (ativa a via mTOR). Isso gerou a hipótese de que suplementar BCAAs durante ou após o treino aceleraria o ganho muscular.</p>
 
@@ -18913,6 +19578,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A refeição pós-treino é cercada de mitos. "Tem que comer em 30 minutos ou perde tudo." "Carboidrato agora vira gordura." "Só proteína depois do treino." Vamos desmontar cada um e falar o que a ciência realmente recomenda.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/o-que-comer-apos-o-treino-infographic.svg" alt="Infográfico sobre O Que Comer Após o Treino para Ganhar Músculo (e o Que Evitar) — Montinho Personal Trainer" title="O Que Comer Após o Treino para Ganhar Músculo (e o Que Evita" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O mito da janela anabólica de 30 minutos</h2>
 <p>A ideia de que você tem uma "janela" ultra-estreita após o treino para ingerir nutrientes foi amplamente exagerada. Uma revisão de <a href="https://pubmed.ncbi.nlm.nih.gov/23679141/" target="_blank" rel="noopener noreferrer">Aragon e Schoenfeld (2013)</a> no Journal of the International Society of Sports Nutrition mostrou que a janela de sensibilidade nutricional pós-treino é de várias horas, especialmente se você comeu bem antes de treinar. Relaxe — não precisa correr para o shake.</p>
 
@@ -18996,6 +19666,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Jejum intermitente virou febre. Influencers atribuem ao jejum tudo: perda de gordura, clareza mental, longevidade, reversão de doenças. A ciência tem uma visão mais sóbria — e mais útil. Este artigo resume o que realmente sabemos.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/jejum-intermitente-para-emagrecer-infographic.svg" alt="Infográfico sobre Jejum Intermitente para Emagrecer: Funciona? O Que a Ciência Diz — Montinho Personal Trainer" title="Jejum Intermitente para Emagrecer: Funciona? O Que a Ciência" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é jejum intermitente</h2>
 <p>Jejum intermitente (JI) é um padrão alimentar que alterna períodos de jejum com janelas de alimentação. Não é uma dieta específica — é uma estratégia de distribuição temporal das refeições. Os protocolos mais estudados:</p>
 <ul>
@@ -19075,6 +19750,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Esta é uma das perguntas mais honestas que recebo: "Posso beber e ainda ter resultado?" A resposta depende da dose, da frequência e do contexto. Vamos ser diretos sobre o que o álcool faz no seu corpo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/alcool-atrapalha-o-treino-infographic.svg" alt="Infográfico sobre Álcool Atrapalha o Treino? O Que Acontece com o Seu Músculo — Montinho Personal Trainer" title="Álcool Atrapalha o Treino? O Que Acontece com o Seu Músculo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que acontece no músculo após o álcool</h2>
 <p>Um estudo clássico publicado no <a href="https://pubmed.ncbi.nlm.nih.gov/24620007/" target="_blank" rel="noopener noreferrer">PLOS ONE (2014)</a> mediu a síntese proteica muscular após treino com e sem consumo de álcool. O resultado: álcool suprimiu a síntese proteica muscular em até 37% — mesmo quando proteína adequada foi consumida junto. O mecanismo envolve inibição da via mTOR, o mesmo caminho que a leucina ativa.</p>
 
@@ -19148,6 +19828,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Existe um mito persistente de que comer à noite engorda. E existe um fato ignorado: o sono é o período mais anabólico do dia, com pico de GH (hormônio do crescimento) e recuperação muscular ativa. O que você come antes de dormir pode fazer diferença real no resultado.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/o-que-comer-antes-de-dormir-para-ganhar-massa-infographic.svg" alt="Infográfico sobre O Que Comer Antes de Dormir para Ganhar Massa Muscular — Montinho Personal Trainer" title="O Que Comer Antes de Dormir para Ganhar Massa Muscular" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por que a refeição pré-sono importa</h2>
 <p>Durante o sono (especialmente nas primeiras horas), o corpo libera GH em pulsos. A síntese proteica continua acontecendo — mas ela precisa de aminoácidos disponíveis. Se você dormir em jejum prolongado após o último treino, o corpo pode entrar em catabolismo leve para obter aminoácidos dos próprios músculos.</p>
 <p>Um estudo publicado no <a href="https://pubmed.ncbi.nlm.nih.gov/22330017/" target="_blank" rel="noopener noreferrer">Medicine & Science in Sports & Exercise (2012)</a> mostrou que ingestão de 40g de caseína antes de dormir aumentou a síntese proteica muscular durante a noite e melhorou a recuperação em comparação com placebo.</p>
@@ -19224,6 +19909,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O agachamento livre (back squat) é frequentemente chamado de "rei dos exercícios". Trabalha quadríceps, glúteos, isquiotibiais, adutores, coluna e core de forma integrada. Mas também é um dos exercícios mais mal executados — e essa combinação de alta eficiência com execução ruim gera muitas lesões. Este guia vai mudar isso.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-fazer-agachamento-livre-corretamente-infographic.svg" alt="Infográfico sobre Como Fazer Agachamento Livre Corretamente: Técnica Passo a Passo — Montinho Personal Trainer" title="Como Fazer Agachamento Livre Corretamente: Técnica Passo a P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Benefícios do agachamento livre</h2>
 <ul>
   <li>Recrutamento muscular superior ao leg press — exige estabilização de todo o corpo</li>
@@ -19317,6 +20007,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Levantamento terra (deadlift) é o exercício que move a maior carga no corpo humano. Trabalha posterior de coxa, glúteos, coluna, trapézio, antebraços e core em cadeia cinética posterior total. É também o exercício mais temido — porque quando feito errado, a lombar sofre. Este guia vai te dar a base técnica para executar com segurança e eficiência.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-fazer-levantamento-terra-corretamente-infographic.svg" alt="Infográfico sobre Como Fazer Levantamento Terra Corretamente: Técnica e Erros Fatais — Montinho Personal Trainer" title="Como Fazer Levantamento Terra Corretamente: Técnica e Erros " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Modalidades do levantamento terra</h2>
 <ul>
   <li><strong>Convencional:</strong> pés na largura dos quadris, braços fora das pernas. Maior demanda de coluna e posterior de coxa</li>
@@ -19406,6 +20101,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Treino em casa sem equipamento funciona? Sim — com a abordagem certa. Não vai substituir a especificidade de uma academia bem equipada para hipertrofia máxima, mas é suficiente para construir base, manter condicionamento e até ganhar massa muscular, especialmente para iniciantes. Este guia entrega um programa completo e progressivo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-em-casa-sem-equipamento-infographic.svg" alt="Infográfico sobre Treino em Casa Sem Equipamento: Programa Completo para Iniciantes — Montinho Personal Trainer" title="Treino em Casa Sem Equipamento: Programa Completo para Inici" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O princípio que faz o treino em casa funcionar</h2>
 <p>Músculo responde a tensão mecânica, volume e progressão — não a equipamentos específicos. Se você aumenta progressivamente a dificuldade dos exercícios (mais repetições, variações mais difíceis, menos tempo de descanso), o músculo se adapta. O problema do treino em casa não é a ausência de equipamento — é a falta de progressão estruturada.</p>
 
@@ -19504,6 +20204,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O aquecimento é o passo mais pulado da academia. "Cinco minutos na esteira" virou sinônimo de aquecimento — mas quase não prepara o corpo para o treino de força. Este artigo explica o que o aquecimento precisa fazer e como fazer em menos de 10 minutos.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-aquecer-antes-do-treino-infographic.svg" alt="Infográfico sobre Como Aquecer Antes do Treino: O Aquecimento Certo que Evita Lesões — Montinho Personal Trainer" title="Como Aquecer Antes do Treino: O Aquecimento Certo que Evita " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por que aquecer: o que acontece no corpo</h2>
 <ul>
   <li><strong>Aumento da temperatura muscular:</strong> músculo mais quente contrai mais rápido e com maior força. Reduz viscosidade do tecido conjuntivo</li>
@@ -19606,6 +20311,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Por décadas, a tradição na academia foi: "antes do treino, alongamento; depois, o que quiser." A ciência revisou essa recomendação — e a resposta é mais nuançada. Vamos esclarecer de uma vez.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/alongamento-antes-ou-depois-do-treino-infographic.svg" alt="Infográfico sobre Alongamento Antes ou Depois do Treino? A Resposta Definitiva — Montinho Personal Trainer" title="Alongamento Antes ou Depois do Treino? A Resposta Definitiva" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os dois tipos de alongamento</h2>
 <p>A confusão começa porque "alongamento" pode significar coisas diferentes:</p>
 <ul>
@@ -19691,6 +20401,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Overtraining é o estado em que o volume e a intensidade do treino excedem a capacidade de recuperação do organismo. O resultado não é mais músculo — é menos performance, maior risco de lesão e, em casos graves, hormônios desregulados. Este artigo explica como identificar, prevenir e sair desse estado.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/overtraining-sintomas-e-como-evitar-infographic.svg" alt="Infográfico sobre Overtraining: Sintomas, Causas e Como Evitar Treinar Demais — Montinho Personal Trainer" title="Overtraining: Sintomas, Causas e Como Evitar Treinar Demais" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>A diferença entre overreaching e overtraining</h2>
 <ul>
   <li><strong>Overreaching funcional:</strong> período curto (1–2 semanas) de volume e intensidade elevados, seguido de deload. Proposital em programas avançados — leva a supracompensação</li>
@@ -19786,6 +20501,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Técnicas avançadas de treino são ferramentas para aumentar o estímulo de hipertrofia quando o treino convencional começa a estagnar. Usadas corretamente, aceleram o resultado. Usadas errado ou cedo demais, geram overtraining. Este guia explica cada técnica, quando usar e como implementar.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/tecnicas-avancadas-de-treino-infographic.svg" alt="Infográfico sobre Drop Set, Bi-Set, Super Série: Técnicas Avançadas que Aumentam o Ganho — Montinho Personal Trainer" title="Drop Set, Bi-Set, Super Série: Técnicas Avançadas que Aument" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Para quem são as técnicas avançadas?</h2>
 <p>Antes de qualquer técnica avançada: <strong>iniciantes não precisam delas</strong>. Nos primeiros 1–2 anos de treino, o organismo responde tão bem ao estímulo básico que técnicas especiais são irrelevantes e podem aumentar risco de lesão e overtraining. Técnicas avançadas são para intermediários e avançados que já esgotaram a progressão linear simples.</p>
 
@@ -19864,6 +20584,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A divisão ABC — peito na segunda, costas na terça, pernas na quarta... — virou o "padrão" de treino nas academias. Mas ela não é necessariamente a melhor opção, especialmente para quem está começando. Este artigo compara as abordagens com base em evidências.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/full-body-vs-divisao-abc-infographic.svg" alt="Infográfico sobre Full Body vs Divisão ABC: Qual é Melhor para Iniciantes? — Montinho Personal Trainer" title="Full Body vs Divisão ABC: Qual é Melhor para Iniciantes?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é Full Body?</h2>
 <p>No treino full body, você trabalha todos os grupos musculares principais em cada sessão. A frequência de estímulo por músculo é alta — 3x por semana se você treinar 3 dias.</p>
 <p><strong>Exemplo de sessão full body:</strong></p>
@@ -19950,6 +20675,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A divisão ABC é uma das formas mais populares de organizar o treino de musculação. Este guia explica como montar uma divisão ABC do zero, com exemplos práticos, lógica de escolha de exercícios e como progredir ao longo do tempo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-montar-treino-abc-infographic.svg" alt="Infográfico sobre Como Montar um Treino ABC de Musculação do Zero — Montinho Personal Trainer" title="Como Montar um Treino ABC de Musculação do Zero" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é a divisão ABC</h2>
 <p>Na divisão ABC, a semana de treino é organizada em 3 tipos de sessão (A, B e C), cada uma com foco em grupos musculares diferentes. Existem várias formas de dividir — aqui apresentamos as duas mais eficientes.</p>
 
@@ -20054,6 +20784,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O treino cria o estímulo. A alimentação fornece os blocos de construção. Mas o músculo cresce durante o sono. Se você negligencia o sono, está colocando combustível num carro com o motor desligado.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/sono-e-crescimento-muscular-infographic.svg" alt="Infográfico sobre Sono e Crescimento Muscular: Quanto Dormir para Ganhar Massa — Montinho Personal Trainer" title="Sono e Crescimento Muscular: Quanto Dormir para Ganhar Massa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que acontece com o músculo durante o sono</h2>
 <p>O sono não é passividade — é o período de maior atividade anabólica do dia:</p>
 <ul>
@@ -20138,6 +20873,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Hipertensão (pressão alta) afeta 1 em cada 4 adultos brasileiros. Por muito tempo, a recomendação era "evite esforço intenso". A ciência atual diz o oposto: treino de força regular é uma das intervenções não farmacológicas mais eficazes no controle da pressão arterial.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/musculacao-para-hipertensao-infographic.svg" alt="Infográfico sobre Musculação para Hipertensão: É Seguro Treinar com Pressão Alta? — Montinho Personal Trainer" title="Musculação para Hipertensão: É Seguro Treinar com Pressão Al" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que acontece com a pressão durante o exercício</h2>
 <p>Durante o exercício de força, a pressão arterial sobe temporariamente — às vezes de forma significativa, especialmente em exercícios com apneia (prender o ar). Isso é normal e esperado. O que importa é o que acontece nas horas e dias após o treino.</p>
 <p>O efeito hipotensor pós-exercício — queda da pressão arterial após a sessão — é um dos mecanismos mais documentados. Uma meta-análise publicada no <a href="https://pubmed.ncbi.nlm.nih.gov/19339069/" target="_blank" rel="noopener noreferrer">Journal of Human Hypertension (2009)</a> mostrou que programas regulares de treinamento de força reduzem a pressão sistólica em 3–4 mmHg e a diastólica em 2–3 mmHg em média — comparável ao efeito de alguns medicamentos anti-hipertensivos em dosagem baixa.</p>
@@ -20216,6 +20956,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Diabetes tipo 2 afeta mais de 16 milhões de brasileiros. O exercício físico é recomendado em todas as diretrizes médicas — mas a musculação, especificamente, tem benefícios únicos que vão além do que o cardio oferece. Este artigo explica por quê e como aproveitar.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/musculacao-e-diabetes-tipo-2-infographic.svg" alt="Infográfico sobre Musculação e Diabetes Tipo 2: Como o Treino de Força Ajuda no Controle — Montinho Personal Trainer" title="Musculação e Diabetes Tipo 2: Como o Treino de Força Ajuda n" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por que o músculo é o maior aliado de quem tem diabetes tipo 2</h2>
 <p>O músculo esquelético é responsável por 80–90% da captação de glicose pós-refeição. Quanto mais massa muscular você tem, maior a capacidade do corpo de retirar glicose da corrente sanguínea sem precisar de grandes quantidades de insulina. Em pessoas com diabetes tipo 2, a resistência à insulina torna esse processo ineficiente — e o músculo é a solução estrutural.</p>
 
@@ -20298,6 +21043,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A menopausa não é o fim da forma física — é um novo contexto que exige uma abordagem diferente. As mudanças hormonais são reais e têm impacto direto na composição corporal. Mas a musculação é a ferramenta mais poderosa disponível para mulheres nessa fase.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-na-menopausa-infographic.svg" alt="Infográfico sobre Treino na Menopausa: Como a Musculação Transforma o Corpo Após os 45 — Montinho Personal Trainer" title="Treino na Menopausa: Como a Musculação Transforma o Corpo Ap" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que muda na menopausa e por que o corpo muda</h2>
 <p>Com a queda do estrogênio e da progesterona, o corpo experimenta:</p>
 <ul>
@@ -20379,6 +21129,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Osteoporose afeta 10 milhões de brasileiros, sendo 80% mulheres. A perda de densidade óssea aumenta exponencialmente o risco de fraturas — que em idosos frequentemente são o início de um declínio de saúde grave. A boa notícia: o osso responde ao exercício com formação de novo tecido ósseo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/osteoporose-e-musculacao-infographic.svg" alt="Infográfico sobre Osteoporose e Musculação: Como o Treino Fortalece os Ossos — Montinho Personal Trainer" title="Osteoporose e Musculação: Como o Treino Fortalece os Ossos" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por que o osso precisa de carga para se fortalecer</h2>
 <p>O tecido ósseo é dinâmico — constantemente remodelado por dois tipos de células: osteoclastos (destroem osso) e osteoblastos (formam osso). O exercício de impacto e de força cria tensão mecânica que sinaliza aos osteoblastos para aumentar a formação óssea. Sem carga mecânica, o equilíbrio pende para a reabsorção — o que explica por que astronautas e acamados perdem osso rapidamente.</p>
 
@@ -20464,6 +21219,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Por muito tempo, exercício e saúde mental foram tópicos separados. A neurociência dos últimos 20 anos mudou isso: o treino de força tem efeito neurobiológico real e mensurável sobre ansiedade, depressão e bem-estar geral. Não é motivação — é bioquímica.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/musculacao-e-saude-mental-infographic.svg" alt="Infográfico sobre Musculação e Saúde Mental: Como o Treino Reduz Ansiedade e Depressão — Montinho Personal Trainer" title="Musculação e Saúde Mental: Como o Treino Reduz Ansiedade e D" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que acontece no cérebro durante e após o treino</h2>
 <ul>
   <li><strong>Endorfinas:</strong> opioides endógenos liberados durante exercício intenso — reduzem percepção de dor e produzem sensação de bem-estar</li>
@@ -20542,6 +21302,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Existe um mito persistente de que depois dos 50 anos o corpo "não responde mais" ao treino. A ciência refuta isso completamente. Sim, o processo de ganho muscular é mais lento depois dos 50 — mas é real, mensurável e talvez mais importante do que em qualquer outra fase da vida.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/ganhar-musculo-depois-dos-50-infographic.svg" alt="Infográfico sobre Ganhar Músculo Depois dos 50: É Possível e Como Fazer — Montinho Personal Trainer" title="Ganhar Músculo Depois dos 50: É Possível e Como Fazer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que muda no músculo após os 50</h2>
 <ul>
   <li><strong>Sarcopenia:</strong> perda de massa muscular de 3–8% por década a partir dos 30 anos, acelerando após os 50. Sem intervenção, um homem de 70 anos pode ter 30–40% menos músculo do que aos 30</li>
@@ -20627,6 +21392,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Uma cirurgia interrompe o treino — mas não precisa interromper os resultados por mais tempo do que o necessário. Com o protocolo certo, o retorno é mais seguro e mais rápido do que a maioria das pessoas imagina. Este guia se aplica a cirurgias ortopédicas e gerais — sempre em conjunto com orientação médica e fisioterapêutica.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-voltar-a-treinar-apos-cirurgia-infographic.svg" alt="Infográfico sobre Como Voltar a Treinar Após Cirurgia: Protocolo Seguro de Retorno — Montinho Personal Trainer" title="Como Voltar a Treinar Após Cirurgia: Protocolo Seguro de Ret" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que acontece com o músculo durante o afastamento</h2>
 <p>A atrofia muscular começa rapidamente: pesquisas mostram perda mensurável de massa muscular já após <strong>72 horas de imobilização</strong>. Após 2 semanas de repouso, a força pode cair 20–30% no membro afastado. O quadro parece assustador, mas tem boas notícias:</p>
 <ul>
@@ -20726,6 +21496,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A tendinite no cotovelo é uma das lesões mais comuns em praticantes de musculação — especialmente em quem treina peito, bíceps e tríceps com volume alto ou técnica inadequada. A boa notícia: é tratável e, na maioria dos casos, você pode continuar treinando com adaptações.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/tendinite-no-cotovelo-como-treinar-infographic.svg" alt="Infográfico sobre Tendinite no Cotovelo: Como Treinar Sem Agravar a Lesão — Montinho Personal Trainer" title="Tendinite no Cotovelo: Como Treinar Sem Agravar a Lesão" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os dois tipos de tendinite no cotovelo</h2>
 <ul>
   <li><strong>Epicondilite lateral (cotovelo de tenista):</strong> dor na face externa do cotovelo. Afeta os extensores do punho e dedos. Na musculação, frequentemente causada por remada, puxada e barra fixa com aperto excessivo</li>
@@ -20822,6 +21597,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Dor no quadril durante o agachamento é mais comum do que parece — e frequentemente ignorada como "dor normal de treino". Não é. A maioria das causas é tratável e, com a identificação correta, o treino pode continuar com adaptações.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/dor-no-quadril-ao-agachar-infographic.svg" alt="Infográfico sobre Dor no Quadril ao Agachar: Causas e Como Resolver — Montinho Personal Trainer" title="Dor no Quadril ao Agachar: Causas e Como Resolver" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Dor no quadril ao agachar: causas e como resolver" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Onde exatamente dói? A localização guia o diagnóstico</h2>
@@ -20922,6 +21702,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Artrose (osteoartrite) é a doença articular mais comum — afeta mais de 15 milhões de brasileiros. O reflexo imediato de muitos médicos e pacientes é "poupe a articulação". Mas a evidência científica aponta na direção oposta: exercício regular é o tratamento não farmacológico mais eficaz para artrose.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-treinar-com-artrose-infographic.svg" alt="Infográfico sobre Como Treinar com Artrose: Exercícios Seguros que Reduzem a Dor — Montinho Personal Trainer" title="Como Treinar com Artrose: Exercícios Seguros que Reduzem a D" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é artrose e o que ela faz na articulação</h2>
 <p>Artrose é a degeneração progressiva da cartilagem articular — o tecido que amortece o contato entre os ossos. Com a degeneração, o osso fica exposto, a articulação inflama e dói. As articulações mais afetadas na prática esportiva: joelho, quadril, coluna e mãos.</p>
 
@@ -21006,6 +21791,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Bursite subacromial é uma das causas mais comuns de dor no ombro em praticantes de musculação. O espaço subacromial — entre o úmero e o acrômio — abriga a bursa, um saco sinovial que amortece o tendão do supraespinal. Quando inflamada, cada movimento do braço acima da cabeça se torna doloroso.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/bursite-no-ombro-infographic.svg" alt="Infográfico sobre Bursite no Ombro: Como Identificar, Tratar e Voltar a Treinar — Montinho Personal Trainer" title="Bursite no Ombro: Como Identificar, Tratar e Voltar a Treina" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Como reconhecer a bursite de ombro</h2>
 <p>O padrão clássico de bursite subacromial:</p>
 <ul>
@@ -21116,6 +21906,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Essa é uma das situações que mais gera frustração — e que mais é mal interpretada. A balança mostra o mesmo número por semanas. Mas o espelho mostra uma silhueta diferente. A roupa está mais folgada. A força aumentou. Isso não é coincidência — é recomposição corporal acontecendo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/balanca-nao-muda-mas-o-corpo-muda-infographic.svg" alt="Infográfico sobre Por Que a Balança Não Muda Mas o Corpo Está Mudando? — Montinho Personal Trainer" title="Por Que a Balança Não Muda Mas o Corpo Está Mudando?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que a balança mede (e o que ela não mede)</h2>
 <p>A balança mede peso total: músculos, gordura, água, ossos, órgãos, conteúdo intestinal, o café que você tomou. Ela não separa gordura de músculo — e essa separação é o que realmente importa para aparência, saúde e desempenho.</p>
 
@@ -21197,6 +21992,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Toda dieta de emagrecimento cria alguma perda de massa magra. A questão não é se você vai perder músculo — é quanto. Com a estratégia certa, você pode perder 90%+ de gordura e menos de 10% de massa magra. Sem a estratégia certa, a proporção pode se inverter.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-saber-se-estou-perdendo-gordura-ou-musculo-infographic.svg" alt="Infográfico sobre Como Saber Se Estou Perdendo Gordura ou Músculo na Dieta — Montinho Personal Trainer" title="Como Saber Se Estou Perdendo Gordura ou Músculo na Dieta" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Sinais de que você pode estar perdendo mais músculo do que gordura</h2>
 <ul>
   <li><strong>Força caindo significativamente:</strong> se você perde 10–20% de força em poucas semanas, está perdendo músculo. Pequena queda de força em déficit calórico é normal — queda acentuada não é</li>
@@ -21282,6 +22082,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A pergunta mais honesta que alguém pode fazer antes de começar: "quanto tempo vai levar?" Respostas vagas como "depende" não ajudam. Vamos fazer as contas com números reais.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/quanto-tempo-para-emagrecer-infographic.svg" alt="Infográfico sobre Quanto Tempo para Emagrecer X Quilos? Expectativas Reais — Montinho Personal Trainer" title="Quanto Tempo para Emagrecer X Quilos? Expectativas Reais" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>A matemática do emagrecimento</h2>
 <p>1 kg de tecido adiposo contém aproximadamente 7.700 kcal de energia armazenada. Para perder 1 kg de gordura, você precisa de um déficit calórico acumulado de 7.700 kcal.</p>
 <p>Com um déficit de 500 kcal/dia:</p>
@@ -21364,6 +22169,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>IMC (Índice de Massa Corporal) é calculado com uma fórmula criada em 1832 por um matemático belga para estudar distribuição de peso em populações — não para diagnosticar saúde individual. Mais de 190 anos depois, ainda é a principal ferramenta de triagem em consultórios. E tem problemas sérios que você precisa conhecer.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/imc-limitacoes-e-composicao-corporal-infographic.svg" alt="Infográfico sobre IMC: O Que É e Por Que Não É Suficiente para Avaliar Saúde — Montinho Personal Trainer" title="IMC: O Que É e Por Que Não É Suficiente para Avaliar Saúde" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é o IMC e como é calculado</h2>
 <p>IMC = peso (kg) ÷ altura² (m)</p>
 <p>Classificação da OMS:</p>
@@ -21442,6 +22252,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Ozempic (semaglutida) é o medicamento GLP-1 mais conhecido no Brasil — e um dos mais buscados para emagrecimento. O problema que poucos falam: nos estudos clínicos, entre 25 e 40% do peso total perdido com GLP-1 é massa muscular, não gordura. O treino é o que muda essa equação.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/ozempic-e-treino-infographic.svg" alt="Infográfico sobre Ozempic e Treino: O Que Você Precisa Saber para Não Perder Músculo — Montinho Personal Trainer" title="Ozempic e Treino: O Que Você Precisa Saber para Não Perder M" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é o Ozempic e como funciona</h2>
 <p>Semaglutida (Ozempic, Wegovy) é um agonista do receptor GLP-1 — imita o hormônio GLP-1 que regula apetite, secreção de insulina e esvaziamento gástrico. Reduz drasticamente o apetite e, com isso, a ingestão calórica. É prescrito para diabetes tipo 2 (Ozempic) e obesidade (Wegovy, em dose maior).</p>
 <p>O resultado típico nos ensaios clínicos é perda de 10–15% do peso corporal em 12–16 meses — números expressivos. Mas a composição dessa perda importa muito.</p>
@@ -21515,6 +22330,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>A preocupação é legítima e baseada em dados: os estudos clínicos de semaglutida mostram que uma parcela significativa do peso perdido é massa muscular — não apenas gordura. Mas "pode perder" não significa "vai inevitavelmente perder". A diferença está na estratégia.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/ozempic-faz-perder-musculo-infographic.svg" alt="Infográfico sobre Ozempic Faz Perder Músculo? Como Proteger a Massa Muscular — Montinho Personal Trainer" title="Ozempic Faz Perder Músculo? Como Proteger a Massa Muscular" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que os estudos mostram</h2>
 <p>No estudo STEP 1 (semaglutida 2,4mg para obesidade), participantes perderam em média 15,3 kg ao longo de 68 semanas. A análise de composição corporal revelou que aproximadamente 38–40% dessa perda foi massa magra (músculo + água intracelular + glicogênio), não gordura pura.</p>
 <p>Isso significa que de cada 15 kg perdidos, cerca de 6 kg eram massa muscular. Para uma pessoa que começa com 25 kg de massa muscular total nos membros — isso é perda de quase 25% da massa muscular dos membros em pouco mais de 1 ano.</p>
@@ -21605,6 +22425,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Wegovy é semaglutida 2,4mg — a mesma substância do Ozempic, mas em dose mais alta e com indicação específica para tratamento da obesidade (IMC ≥ 30 ou ≥ 27 com comorbidades). Os resultados nos estudos são impressionantes: perda média de 15% do peso corporal. A musculação é o que eleva esses resultados de impressionantes para transformadores.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/wegovy-e-musculacao-infographic.svg" alt="Infográfico sobre Wegovy e Musculação: Como Combinar para Resultados Melhores — Montinho Personal Trainer" title="Wegovy e Musculação: Como Combinar para Resultados Melhores" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Wegovy vs Ozempic: qual a diferença?</h2>
 <table>
   <thead><tr><th>Característica</th><th>Ozempic</th><th>Wegovy</th></tr></thead>
@@ -21684,6 +22509,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Ozempic (semaglutida), Wegovy (semaglutida 2,4mg), Mounjaro (tirzepatida), Retatrutida — são diferentes GLP-1 (e GIP, no caso da tirzepatida) com mecanismos similares. Os princípios de treino são os mesmos para todos. Este guia é o mapa definitivo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-treinar-usando-qualquer-glp1-infographic.svg" alt="Infográfico sobre Como Treinar Usando Qualquer GLP-1: Guia para Ozempic, Wegovy e Retatrutida — Montinho Personal Trainer" title="Como Treinar Usando Qualquer GLP-1: Guia para Ozempic, Wegov" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por que todos os GLP-1 exigem a mesma estratégia de treino</h2>
 <p>Independentemente da molécula, todos os agonistas GLP-1 atuais causam:</p>
 <ul>
@@ -21793,6 +22623,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Granja Viana é um dos condomínios residenciais mais nobres da Grande São Paulo, localizado entre Cotia e Santana de Parnaíba, com fácil acesso pela Raposo Tavares. Quem mora aqui sabe que qualidade de vida é uma prioridade — e o treino personalizado é parte dessa equação.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-granja-viana-infographic.svg" alt="Infográfico sobre Personal Trainer Granja Viana: Treinamento Personalizado Perto de Você — Montinho Personal Trainer" title="Personal Trainer Granja Viana: Treinamento Personalizado Per" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por que contratar um personal trainer em Granja Viana</h2>
 <p>A rotina intensa de quem mora em regiões como Granja Viana — com deslocamentos para São Paulo, agenda profissional exigente e vida familiar ativa — exige um profissional que otimize cada minuto de treino. Sessões mal estruturadas desperdiçam tempo e não geram resultado. O acompanhamento personalizado garante que cada sessão seja estratégica.</p>
 
@@ -21861,6 +22696,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Cotia é um município com perfil residencial diverso — desde condomínios fechados de alto padrão como Granja Viana até bairros mais populares. O mercado de personal trainer em Cotia ainda é menor do que em Alphaville ou Barueri, mas a demanda por treino personalizado de qualidade está crescendo rapidamente.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-cotia-infographic.svg" alt="Infográfico sobre Personal Trainer em Cotia: Treinamento Especializado na Sua Região — Montinho Personal Trainer" title="Personal Trainer em Cotia: Treinamento Especializado na Sua " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Diferenciais do acompanhamento personalizado em Cotia</h2>
 <p>Ao contrário de treinar sozinho ou seguir um programa genérico da internet, o acompanhamento personalizado oferece:</p>
 <ul>
@@ -21939,6 +22779,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Alphaville é um dos principais polos empresariais do Brasil, com mais de 3.000 empresas instaladas no complexo. Executivos e colaboradores que trabalham aqui enfrentam jornadas longas, alto nível de estresse e sedentarismo involuntário — uma combinação que prejudica saúde, produtividade e retenção de talentos.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-para-empresas-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer para Empresas em Alphaville: Bem-Estar Corporativo — Montinho Personal Trainer" title="Personal Trainer para Empresas em Alphaville: Bem-Estar Corp" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O retorno do investimento em saúde corporativa</h2>
 <p>Dados do setor mostram que programas de bem-estar corporativo geram:</p>
 <ul>
@@ -22015,6 +22860,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>O exercício durante a gravidez era, durante décadas, tratado com excessivo conservadorismo médico. As evidências atuais são claras: atividade física moderada durante a gestação é segura, recomendada e traz benefícios documentados para a saúde da mãe e do bebê. A chave está na adaptação e no acompanhamento especializado.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-para-gestantes-alphaville-tambore-infographic.svg" alt="Infográfico sobre Personal Trainer para Gestantes em Alphaville e Tamboré — Montinho Personal Trainer" title="Personal Trainer para Gestantes em Alphaville e Tamboré" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Benefícios do exercício durante a gravidez</h2>
 <ul>
   <li>Redução do risco de diabetes gestacional em 28–35%</li>
@@ -22111,6 +22961,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Quanto custa um personal trainer em Alphaville em 2026?</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/quanto-custa-personal-trainer-alphaville-infographic.svg" alt="Infográfico sobre Quanto custa um personal trainer em Alphaville em 2026? — Montinho Personal Trainer" title="Quanto custa um personal trainer em Alphaville em 2026?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Essa é, de longe, a pergunta que mais recebo de quem está pensando em começar a treinar com acompanhamento profissional na região de Alphaville, Tamboré e Barueri. E a resposta honesta é: depende — mas não da forma vaga que você está acostumado a ouvir. Depende de fatores muito específicos que vou detalhar neste artigo para que você consiga comparar preços com inteligência.</p>
 
 <p>Depois de mais de 20 anos trabalhando como personal trainer em Alphaville, já vi de tudo: clientes que pagaram barato e ficaram meses sem resultado, e clientes que investiram bem e transformaram o corpo e a saúde em menos de seis meses. O preço importa, mas o valor entregue importa muito mais.</p>
@@ -22354,6 +23209,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Por que executivos precisam de uma abordagem diferente no treino?</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-para-executivos-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer para Executivos em Alphaville: por que a abordagem precisa ser  — Montinho Personal Trainer" title="Personal Trainer para Executivos em Alphaville: por que a ab" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Depois de mais de 20 anos atendendo executivos, empresários e profissionais de alta performance em Alphaville e Tamboré, posso afirmar com segurança: o corpo de um executivo de 45 anos que trabalha 10 horas por dia, viaja frequentemente e carrega o estresse de decisões de alto impacto não responde da mesma forma que o de um jovem de 25 anos com tempo livre e baixo estresse.</p>
 
 <p>Não é exagero. É fisiologia.</p>
@@ -22539,6 +23399,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>A verdade sobre treinar com agenda cheia</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-para-quem-trabalha-muito-infographic.svg" alt="Infográfico sobre Treino para quem trabalha muito: como montar uma rotina eficiente com 10h de tra — Montinho Personal Trainer" title="Treino para quem trabalha muito: como montar uma rotina efic" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Trabalho há mais de 20 anos em Alphaville, atendendo pessoas que têm algumas das agendas mais lotadas que você pode imaginar. CEOs, diretores, médicos, advogados — todos com uma queixa em comum: "Não tenho tempo para treinar."</p>
 
 <p>E sabe o que aprendi? Falta de tempo raramente é o problema real. O problema real é a falta de um método que funcione dentro dos limites da vida real dessas pessoas.</p>
@@ -22856,6 +23721,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>O que é sarcopenia?</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/sarcopenia-o-que-e-como-prevenir-infographic.svg" alt="Infográfico sobre Sarcopenia: o que é, por que acontece e como prevenir a perda muscular com a ida — Montinho Personal Trainer" title="Sarcopenia: o que é, por que acontece e como prevenir a perd" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Sarcopenia é a perda progressiva de massa muscular, força e função física associada ao envelhecimento. O termo vem do grego — sarx (carne) e penia (perda) — e foi formalizado como diagnóstico clínico pela primeira vez na década de 1980, mas só ganhou classificação oficial como doença pela CID-10 em 2016.</p>
 
 <p>Não se trata apenas de "ficar mais fraco com o tempo". A sarcopenia é um processo fisiológico ativo, com mecanismos celulares bem documentados, que tem impacto direto sobre metabolismo, risco de quedas e fraturas, qualidade de vida, independência funcional e até mortalidade em idades mais avançadas.</p>
@@ -23111,6 +23981,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Por que o treino de força muda de importância após os 40 anos para mulheres?</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-de-forca-mulher-apos-40-infographic.svg" alt="Infográfico sobre Treino de força para mulheres após os 40: o guia definitivo para resultados reai — Montinho Personal Trainer" title="Treino de força para mulheres após os 40: o guia definitivo " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Ao longo dos mais de 20 anos que trabalho como personal trainer em Alphaville, atendi centenas de mulheres — e noto um padrão claro: aquelas que chegam aos 50 e 55 anos com mais força, mais disposição, melhor composição corporal e menos queixas osteoarticulares são, quase invariavelmente, aquelas que começaram a treinar força de forma séria após os 40.</p>
 
 <p>Não é coincidência — é fisiologia.</p>
@@ -23375,6 +24250,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>Por Que a Dieta Restritiva Não Funciona para Quem Tem Vida Social</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-emagrecer-sem-passar-fome-vida-social-infographic.svg" alt="Infográfico sobre Como Emagrecer Sem Passar Fome Tendo Vida Social Ativa: O Guia Completo para Exe — Montinho Personal Trainer" title="Como Emagrecer Sem Passar Fome Tendo Vida Social Ativa: O Gu" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Nos meus mais de 20 anos treinando executivos em Alphaville, ouço praticamente toda semana a mesma queixa: "Montinho, eu até começo a dieta, mas aí vem um jantar de negócios, uma viagem para São Paulo, um happy hour com o time — e tudo vai por água abaixo." Se você se identificou, saiba que o problema não é a sua falta de força de vontade. O problema é o modelo de dieta que te venderam.</p>
 
 <p>Dietas ultra-restritivas funcionam em laboratório e para pessoas com vida monástica. Para um executivo de Alphaville ou Tamboré que tem almoço de fechar contrato, jantar com cliente, viagem para o exterior e happy hour obrigatório com o time, a conta simplesmente não fecha. E quando a dieta quebra — porque vai quebrar — vem a culpa, a sensação de fracasso, e o efeito sanfona que deixa você mais pesado do que quando começou.</p>
@@ -23600,6 +24480,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>O que o Hipotireoidismo Faz com o Seu Corpo (e Por Que o Treino Importa)</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/hipotireoidismo-e-musculacao-infographic.svg" alt="Infográfico sobre Hipotireoidismo e Musculação: Como o Treino de Força Ajuda a Controlar Peso e Fa — Montinho Personal Trainer" title="Hipotireoidismo e Musculação: Como o Treino de Força Ajuda a" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Hipotireoidismo é uma das condições mais prevalentes entre os adultos de 35 a 55 anos — e é especialmente comum em mulheres. A tireóide produz hormônios (T3 e T4) que regulam o metabolismo de praticamente todas as células do corpo. Quando ela funciona abaixo do ideal, as consequências são múltiplas: metabolismo mais lento, ganho de peso mesmo com alimentação controlada, fadiga persistente, raciocínio mais lento, humor comprometido e dificuldade em perder gordura.</p>
 
 <p>O que muitas pessoas — e alguns médicos — não enfatizam o suficiente é que o exercício físico, especialmente o treino de força, tem impacto documentado sobre vários desses mecanismos. Não substitui a medicação quando ela é necessária, mas atua de forma complementar e poderosa.</p>
@@ -23833,6 +24718,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>O Que é o Treino na Zona 2 e Por Que Virou Assunto Obrigatório</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-zona-2-infographic.svg" alt="Infográfico sobre Treino na Zona 2: O Que É, Como Fazer e Por Que Incluir na Sua Rotina para Longe — Montinho Personal Trainer" title="Treino na Zona 2: O Que É, Como Fazer e Por Que Incluir na S" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Nos últimos anos, nenhum conceito de treino ganhou tanta atenção no mundo da medicina da longevidade quanto o treinamento na Zona 2. Médicos como Peter Attia, que dedica grande parte da sua prática clínica à otimização da longevidade em executivos de alta performance, colocam o treino na Zona 2 como um dos pilares mais importantes do "centenário atlético" — o conceito de envelhecer mantendo capacidade física e cognitiva.</p>
 
 <p>Mas o que é, exatamente, a Zona 2? E por que um personal trainer com mais de 20 anos de experiência em Alphaville está falando disso para os seus alunos executivos?</p>
@@ -24100,6 +24990,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>O Executivo Sob Pressão: Um Quadro Familiar em Alphaville</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-de-forca-ansiedade-estresse-infographic.svg" alt="Infográfico sobre Como o Treino de Força Ajuda no Controle da Ansiedade e do Estresse em Executivo — Montinho Personal Trainer" title="Como o Treino de Força Ajuda no Controle da Ansiedade e do E" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Reunião de diretoria às 8h, decisão de 10 milhões antes do almoço, voo para São Paulo às 14h, conference call com a matriz às 19h. Essa é uma terça-feira comum para boa parte dos executivos que treino em Alphaville. Não é exagero: o nível de pressão crônica a que estão submetidos é genuinamente elevado.</p>
 
 <p>Ansiedade e estresse crônico nessa população não são fraqueza — são respostas fisiológicas previsíveis a um ambiente de alta demanda. O problema é quando essas respostas ficam permanentemente ativadas, gerando um custo enorme na saúde física, mental e na qualidade de vida.</p>
@@ -24289,6 +25184,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <h2>A Frustração Real: Mesmo Esforço, Resultados Diferentes</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/mulheres-emagrecem-mais-devagar-que-homens-infographic.svg" alt="Infográfico sobre Por Que Mulheres Perdem Peso Diferente de Homens — e o Que Fazer a Respeito — Montinho Personal Trainer" title="Por Que Mulheres Perdem Peso Diferente de Homens — e o Que F" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>É uma cena comum que vejo repetidamente em Alphaville: um casal começa a emagrecer juntos, seguem o mesmo protocolo, comem as mesmas coisas, treinam juntos. Depois de dois meses, ele perdeu 8 kg. Ela perdeu 3 kg. E a frustração dela é genuína, legítima — e fisiologicamente explicável.</p>
 
 <p>Mulheres emagrecem de forma diferente de homens. Não mais devagar necessariamente — de forma diferente. E entender por que isso acontece muda completamente a abordagem, tira a culpa do lugar errado e abre caminho para estratégias que realmente funcionam para o corpo feminino.</p>
@@ -24576,6 +25476,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Há algo que a maioria dos programas de musculação feminina ignora completamente: o corpo de uma mulher não funciona em ciclos de 24 horas como o de um homem. Ele funciona em ciclos de aproximadamente 28 dias — e isso muda tudo quando o assunto é treino, recuperação e resultado.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/ciclo-menstrual-e-treino-infographic.svg" alt="Infográfico sobre Ciclo Menstrual e Treino: Como Adaptar a Musculação a Cada Fase do Mês — Montinho Personal Trainer" title="Ciclo Menstrual e Treino: Como Adaptar a Musculação a Cada F" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Trabalho com mulheres em Alphaville e Tamboré há mais de duas décadas e posso dizer com certeza: as alunas que aprendem a treinar em sintonia com o próprio ciclo menstrual progridem muito mais rápido, lesionam menos e mantêm a consistência por anos. As que ignoram essa variável ficam presas num ciclo frustrante de bons treinos alternados com dias de rendimento péssimo sem entender o porquê.</p>
 
 <p>Neste artigo você vai entender a fisiologia por trás de cada fase do ciclo, o que acontece com sua força, recuperação e composição corporal em cada momento, e como estruturar o treino para extrair o máximo de cada fase.</p>
@@ -24869,6 +25774,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Fibromialgia e musculação parecem, à primeira vista, conceitos incompatíveis. Quem vive com dor crônica generalizada, fadiga persistente e sono não reparador tende a acreditar que qualquer esforço físico vai piorar o quadro. Durante anos, essa foi inclusive a orientação médica predominante: repouso e evitar atividades que provocassem dor.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/fibromialgia-e-musculacao-infographic.svg" alt="Infográfico sobre Fibromialgia e Musculação: Como o Treino de Força Reduz a Dor e Melhora a Qualid — Montinho Personal Trainer" title="Fibromialgia e Musculação: Como o Treino de Força Reduz a Do" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A ciência, porém, virou essa lógica de cabeça para baixo. Hoje, o exercício físico — e especialmente o treino de força progressivo — é considerado uma das intervenções mais eficazes no tratamento da fibromialgia, com nível de evidência comparável ao de medicamentos de primeira linha.</p>
 
 <p>Neste artigo, vou explicar por que isso acontece, o que a pesquisa diz, e como estruturar um programa de musculação seguro e eficaz para quem vive com fibromialgia.</p>
@@ -25106,6 +26016,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Executivos em Alphaville e Tamboré enfrentam um inimigo silencioso na jornada fitness: a inconsistência forçada. Uma semana de viagem a trabalho, uma reunião que se estende, um hotel sem academia decente, um filho doente que muda toda a rotina. O resultado é sempre o mesmo: treinos pulados, progresso perdido, frustração.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-hibrido-musculacao-infographic.svg" alt="Infográfico sobre Treino Híbrido: Como Combinar Academia com Treinos em Casa Sem Perder Resultado — Montinho Personal Trainer" title="Treino Híbrido: Como Combinar Academia com Treinos em Casa S" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O treino híbrido não é uma solução de segunda categoria para quando "não dá para ir à academia". Quando bem estruturado, é uma estratégia legítima e eficaz que pode ser usada de forma permanente — especialmente por quem tem rotina variável e imprevisível.</p>
 
 <p>Neste artigo, vou explicar os princípios por trás do treino híbrido e como estruturar um programa que mantém progressão real independentemente de onde você está.</p>
@@ -25469,6 +26384,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Se você pudesse fazer apenas um teste para saber como está sua saúde real — não a aparente, não os exames de rotina, mas a saúde profunda que determina quanto e como você vai viver — qual seria esse teste?</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/vo2-maximo-longevidade-infographic.svg" alt="Infográfico sobre VO2 Máximo: O Que É e Por Que É o Maior Preditor de Longevidade Saudável — Montinho Personal Trainer" title="VO2 Máximo: O Que É e Por Que É o Maior Preditor de Longevid" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta, com base na melhor evidência científica disponível hoje, é: o VO2 máximo.</p>
 
 <p>Não o colesterol. Não a pressão arterial. Não o IMC. O VO2 máximo.</p>
@@ -25753,6 +26673,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `
 <p>Nos corredores das empresas de Alphaville, há um problema silencioso que afeta uma proporção assustadora dos executivos que atendo: a síndrome metabólica. Não é uma doença com um sintoma óbvio que te faz procurar um médico. É um conjunto de alterações que avançam silenciosamente por anos, até que o infarto ou o diagnóstico de diabetes tipo 2 chegam como um choque.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/sindrome-metabolica-e-exercicio-infographic.svg" alt="Infográfico sobre Síndrome Metabólica: Como o Treino de Força Reverte o Quadro Sem Dieta Radical — Montinho Personal Trainer" title="Síndrome Metabólica: Como o Treino de Força Reverte o Quadro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Estima-se que entre 30 e 40% dos adultos brasileiros preenchem os critérios para síndrome metabólica — muitos sem saber. E o dado mais relevante para este artigo: o treino de força progressivo é uma das intervenções mais eficazes disponíveis para reverter esse quadro, com evidências comparáveis ou superiores às de vários medicamentos.</p>
 
 <p>Não é exagero. É o que a ciência diz. E vou mostrar por quê.</p>
@@ -26033,6 +26958,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `<article>
   <h2>Por Que o Ômega-3 Importa para Quem Treina Musculação</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/omega-3-musculacao-infographic.svg" alt="Infográfico sobre Ômega-3 para Quem Treina: Vale a Pena Suplementar? O Que a Ciência Diz — Montinho Personal Trainer" title="Ômega-3 para Quem Treina: Vale a Pena Suplementar? O Que a C" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
   <p>Durante anos, o ômega-3 foi discutido quase exclusivamente no contexto da saúde cardiovascular. Redução do triglicerídeo, proteção do coração, melhora do perfil lipídico — tudo verdade, bem documentado. Mas há uma dimensão que ficou em segundo plano por muito tempo e que agora começa a ganhar atenção merecida: o papel dos ácidos graxos ômega-3 no tecido muscular esquelético.</p>
 
   <p>Para executivos que treinam com consistência — mas que vivem sob carga de estresse crônico, dormem mal e ainda precisam recuperar entre uma sessão e outra — entender como o ômega-3 interfere na recuperação muscular, na síntese proteica e na inflamação sistêmica é informação que tem valor prático imediato.</p>
@@ -26227,6 +27157,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `<article>
   <h2>O Problema que Ninguém Está Testando</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/vitamina-d-musculacao-infographic.svg" alt="Infográfico sobre Vitamina D e Musculação: Como a Deficiência Prejudica seus Resultados e Como Cor — Montinho Personal Trainer" title="Vitamina D e Musculação: Como a Deficiência Prejudica seus R" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
   <p>Nos mais de 20 anos que trabalho com executivos em Alphaville, um padrão se repete com frequência incômoda: pessoas que treinam com regularidade, que têm proteína e suplementação razoáveis, mas que estagnam sem explicação aparente. Força que para de progredir, recuperação mais lenta do que deveria, disposição inconsistente, humor oscilante. Quando peço para incluir a dosagem de vitamina D no próximo exame, a surpresa é quase garantida — a maioria está abaixo de 30 ng/mL, muitos abaixo de 20 ng/mL.</p>
 
   <p>Deficiência de vitamina D em pessoas que vivem numa das regiões mais ensolaradas do planeta parece paradoxal. Mas faz sentido quando você considera: executivos passam a maior parte do tempo em ambientes fechados, viajam frequentemente, usam protetor solar e raramente ficam expostos ao sol nos horários de maior síntese (10h às 15h). O resultado é um estado crônico de deficiência com impacto real na composição corporal, na performance e na saúde geral.</p>
@@ -26447,6 +27382,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `<article>
   <h2>O Problema Real que o Colágeno Pode Resolver</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/colageno-musculacao-infographic.svg" alt="Infográfico sobre Colágeno para Quem Treina: Funciona para Tendões e Articulações? — Montinho Personal Trainer" title="Colágeno para Quem Treina: Funciona para Tendões e Articulaç" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
   <p>Quem treina musculação com seriedade por anos inevitavelmente acumula alguma história de desconforto articular — joelho que range, tendão do ombro que reclamou após um período de volume alto, tornozelo que nunca fechou direito depois de uma entorse. Em Alphaville, onde atendo executivos acima dos 35 anos que muitas vezes treinaram sem acompanhamento adequado na juventude, essa é uma realidade comum.</p>
 
   <p>Nos últimos anos, o colágeno hidrolisado apareceu como candidato a solução para esses problemas. E ao contrário de muitos suplementos que chegam ao mercado com apelo de marketing mas pouco respaldo científico, o colágeno tem evidências interessantes — desde que você entenda exatamente para o que ele serve e como usá-lo corretamente.</p>
@@ -26657,6 +27597,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `<article>
   <h2>O Smartwatch Virou Acessório — Mas Não Tem Que Ser Só Isso</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-usar-smartwatch-musculacao-infographic.svg" alt="Infográfico sobre Como Usar o Smartwatch (Apple Watch / Garmin) para Potencializar seus Treinos de — Montinho Personal Trainer" title="Como Usar o Smartwatch (Apple Watch / Garmin) para Potencial" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
   <p>Em Alphaville, o smartwatch — especialmente Apple Watch e Garmin — é quase uniforme entre os executivos que treino. A maioria usa para notificações, para checar mensagens entre séries, para ver calorias ao final do treino e para fechar os anéis ou bater a meta de passos. Isso é subutilização.</p>
 
   <p>Esses dispositivos têm capacidade de monitoramento muito mais sofisticada do que a maioria das pessoas explora. E quando você aprende a usar os dados certos, a inteligência que um smartwatch pode agregar ao seu treinamento de musculação é real — não é marketing.</p>
@@ -26882,6 +27827,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     content: `<article>
   <h2>Por Que Só Olhar o Peso na Barra Não é Suficiente</h2>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/escala-rpe-musculacao-infographic.svg" alt="Infográfico sobre O Que é RPE e Como Usar a Escala de Esforço para Treinar com Mais Inteligência — Montinho Personal Trainer" title="O Que é RPE e Como Usar a Escala de Esforço para Treinar com" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
   <p>Durante anos, a progressão de carga foi a métrica principal de sucesso no treino de musculação. Se você levantou mais peso do que na semana passada, você progrediu. Simples assim. E de fato, a progressão de carga é um dos princípios fundamentais da hipertrofia — sem estímulo progressivo, o músculo não tem razão para se adaptar.</p>
 
   <p>Mas essa lógica tem um problema: o mesmo peso na barra não representa o mesmo esforço em dias diferentes. Na segunda-feira após um fim de semana de sono ruim e estresse intenso, 100kg no agachamento pode ser brutal. Na sexta-feira de uma semana tranquila e bem dormida, parece mais leve. O peso foi igual — o esforço real, não.</p>
@@ -27203,6 +28153,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>A semaglutida — vendida no Brasil como <strong>Ozempic</strong> e <strong>Wegovy</strong> — é hoje um dos medicamentos para obesidade com maior respaldo científico do mundo. Nos trials STEP, participantes perderam em média <strong>14,9% do peso corporal</strong> em 68 semanas. Números impressionantes.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/semaglutida-e-musculacao-infographic.svg" alt="Infográfico sobre Semaglutida e Musculação: Como Treinar e Preservar Músculo — Montinho Personal Trainer" title="Semaglutida e Musculação: Como Treinar e Preservar Músculo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas existe um dado que raramente aparece nas consultas: <strong>parte desse peso perdido não é gordura — é músculo</strong>.</p>
 
 <p>Estudos mostram que em pacientes sedentários usando GLP-1, entre 25% e 39% da perda de peso pode vir da massa magra. Em uma pessoa que perde 15kg, isso representa até 5,8kg de músculo — com todas as consequências metabólicas e funcionais que isso implica.</p>
@@ -27358,6 +28313,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>A tirzepatida — vendida no Brasil como <strong>Mounjaro</strong> — representa o maior avanço na história dos medicamentos para obesidade. Diferente da semaglutida, que age apenas no receptor GLP-1, a tirzepatida é um <strong>agonista dual GLP-1/GIP</strong>: atua em dois receptores simultaneamente, amplificando a redução de apetite e a perda de peso.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/tirzepatida-e-musculacao-infographic.svg" alt="Infográfico sobre Tirzepatida e Musculação: Guia Completo para Quem Usa Mounjaro — Montinho Personal Trainer" title="Tirzepatida e Musculação: Guia Completo para Quem Usa Mounja" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Os trials SURMOUNT confirmaram isso de forma inequívoca: perda média de <strong>20,9% do peso corporal</strong> em 72 semanas na dose de 15mg. Número histórico. Mas essa perda de peso expressiva cria um risco proporcional de perda muscular quando não há treino de força.</p>
 
 <h2>Tirzepatida vs Semaglutida: O Que Muda Para Quem Treina</h2>
@@ -27491,6 +28451,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>A maioria dos frequentadores de academia enfrenta o mesmo dilema: quer perder gordura e ganhar músculo — mas ouve de todo lado que é preciso escolher um ou outro. <em>"Vai no bulking primeiro, depois faz o cutting."</em> Ou então: <em>"Não dá para fazer os dois ao mesmo tempo."</em></p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/recomposicao-corporal-infographic.svg" alt="Infográfico sobre Recomposição Corporal: É Possível Ganhar Músculo e Perder Gordura ao Mesmo Tempo — Montinho Personal Trainer" title="Recomposição Corporal: É Possível Ganhar Músculo e Perder Go" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A realidade, como quase sempre em fisiologia, é mais nuançada. <strong>Recomposição corporal é possível — mas não para todo mundo, não o tempo todo, e não da mesma forma.</strong></p>
 
 <p>Este artigo explica o que a ciência realmente diz, para quem funciona e como maximizar as chances de fazer os dois ao mesmo tempo.</p>
@@ -27633,6 +28598,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>É a pergunta que todo iniciante faz na academia: <strong>"Musculação emagrece?"</strong></p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/musculacao-emagrece-infographic.svg" alt="Infográfico sobre Musculação Emagrece? Quanto e Como a Ciência Explica — Montinho Personal Trainer" title="Musculação Emagrece? Quanto e Como a Ciência Explica" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>E a resposta que a maioria ouve é confusa: "Emagrece, mas você vai ganhar músculo e o peso pode não mudar." Ou então: "Para emagrecer, é melhor fazer cardio."</p>
 
 <p>Nenhuma das duas respostas é completamente certa. A realidade é mais rica — e mais favorável ao treino de força do que a maioria imagina.</p>
@@ -27781,6 +28751,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>A dor na frente do joelho — especialmente ao descer escadas, agachar, ou após longa permanência sentado — é a queixa mais comum de quem busca um Personal Trainer com histórico de lesão. Na maioria dos casos, o diagnóstico é <strong>condromalácia patelar</strong>.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/condromalacia-patelar-musculacao-infographic.svg" alt="Infográfico sobre Condromalácia Patelar e Musculação: Como Treinar com Segurança — Montinho Personal Trainer" title="Condromalácia Patelar e Musculação: Como Treinar com Seguran" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>E a primeira coisa que o paciente geralmente escuta do médico ou do fisioterapeuta é: <em>"Evite agachar."</em></p>
 
 <p>Essa orientação, embora compreensível em fase aguda, pode ser contraproducente a longo prazo. A ciência atual mostra que o treino de força bem planejado não apenas é seguro com condromalácia patelar — ele é parte fundamental da recuperação.</p>
@@ -27956,6 +28931,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>Testosterona baixa virou tema frequente nos consultórios — e nos meus atendimentos como personal trainer. Cada vez mais homens entre 30 e 45 anos chegam relatando os mesmos sintomas: cansaço fora do normal, dificuldade de ganhar músculo, perda de força, libido em queda e humor instável.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/testosterona-baixa-sintomas-infographic.svg" alt="Infográfico sobre Testosterona Baixa: Sintomas, Causas e O Que Fazer — Montinho Personal Trainer" title="Testosterona Baixa: Sintomas, Causas e O Que Fazer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O problema é que esses sinais raramente são investigados de forma adequada. Muita gente convive anos com testosterona baixa sem saber — e sem entender por que os resultados do treino simplesmente não aparecem.</p>
 
 <h2>O que é testosterona e por que ela importa</h2>
@@ -28107,6 +29087,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>Push Pull Legs — ou PPL — é uma das divisões de treino mais discutidas em academias e fóruns de musculação. E com razão: quando bem estruturado, ele é eficiente, bem distribuído e respeita a lógica de recuperação muscular.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/push-pull-legs-infographic.svg" alt="Infográfico sobre Push Pull Legs: O Que É, Como Montar e Para Quem Serve — Montinho Personal Trainer" title="Push Pull Legs: O Que É, Como Montar e Para Quem Serve" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O problema é que muita gente faz PPL sem entender por que ele funciona — e acaba escolhendo exercícios errados, volume inadequado ou frequência que não faz sentido para seu nível.</p>
 
 <h2>O que é Push Pull Legs</h2>
@@ -28260,6 +29245,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>Você treina com consistência, a dieta está razoavelmente em dia — mas o emagrecimento não avança, o músculo não aparece e você vive cansado. Em muitos casos, o culpado não está no treino nem na alimentação: está no cortisol.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/cortisol-e-treino-infographic.svg" alt="Infográfico sobre Cortisol e Treino: Como o Estresse Sabota Seus Resultados — Montinho Personal Trainer" title="Cortisol e Treino: Como o Estresse Sabota Seus Resultados" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O cortisol é o principal hormônio do estresse do corpo humano. É essencial para a sobrevivência — mas quando cronicamente elevado, ele se torna um dos maiores obstáculos para a transformação corporal.</p>
 
 <h2>O que é cortisol</h2>
@@ -28377,6 +29367,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>Síndrome dos Ovários Policísticos — SOP — é a alteração hormonal mais comum em mulheres em idade reprodutiva, afetando entre 8% e 13% dessa população. E uma das queixas mais frequentes de quem tem SOP é a dificuldade de emagrecer e a sensação de que o corpo responde de forma diferente ao treino e à dieta.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/sop-musculacao-infographic.svg" alt="Infográfico sobre SOP e Musculação: Como o Treino de Força Ajuda no Controle da Síndrome — Montinho Personal Trainer" title="SOP e Musculação: Como o Treino de Força Ajuda no Controle d" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A boa notícia: o treino de força é uma das intervenções com maior respaldo científico para melhorar o controle da SOP — e isso vai muito além de "queimar calorias".</p>
 
 <h2>O que acontece no corpo com SOP</h2>
@@ -28488,6 +29483,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>A maioria das pessoas que treina — mesmo as que treinam há anos — nunca fez um painel de exames completo voltado para quem pratica exercício físico. E isso é um erro significativo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/exames-de-sangue-para-quem-treina-infographic.svg" alt="Infográfico sobre Exames de Sangue para Quem Treina: O Que Pedir e Como Interpretar — Montinho Personal Trainer" title="Exames de Sangue para Quem Treina: O Que Pedir e Como Interp" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Os exames de sangue te dizem o que a balança, o espelho e o diário de treino não conseguem: o estado real da sua saúde hormonal, metabólica e nutricional. Com essas informações, você treina e come de forma muito mais precisa.</p>
 
 <h2>Por que fazer exames regularmente</h2>
@@ -28615,6 +29615,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>Poucos conceitos do mundo fitness são tão repetidos — e tão mal compreendidos — quanto a "janela anabólica". A ideia de que você tem 30 minutos depois do treino para consumir proteína, caso contrário "perde o treino", ainda circula com muita força nas academias.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/janela-anabolica-infographic.svg" alt="Infográfico sobre Janela Anabólica: Mito, Realidade e O Que a Ciência Diz — Montinho Personal Trainer" title="Janela Anabólica: Mito, Realidade e O Que a Ciência Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A realidade é mais nuançada — e mais interessante.</p>
 
 <h2>O que é a janela anabólica</h2>
@@ -28716,6 +29721,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>A proteína é o macronutriente mais importante para quem treina musculação. Mas uma dúvida cada vez mais frequente é: proteína vegetal funciona igual à animal para ganhar músculo?</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/proteina-vegetal-vs-animal-infographic.svg" alt="Infográfico sobre Proteína Vegetal vs Animal: Qual é Melhor para Ganho de Músculo? — Montinho Personal Trainer" title="Proteína Vegetal vs Animal: Qual é Melhor para Ganho de Músc" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta curta é: funciona — mas com diferenças importantes que afetam a estratégia.</p>
 
 <h2>O que define uma proteína de qualidade</h2>
@@ -28836,6 +29846,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>A dieta cetogênica (keto) se tornou uma das abordagens alimentares mais discutidas nos últimos anos. E com a popularidade crescendo entre praticantes de musculação, surge a dúvida: dá para ganhar músculo e treinar bem com tão pouco carboidrato?</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/dieta-cetogenica-musculacao-infographic.svg" alt="Infográfico sobre Dieta Cetogênica e Musculação: Funciona? O Que Diz a Ciência — Montinho Personal Trainer" title="Dieta Cetogênica e Musculação: Funciona? O Que Diz a Ciência" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta honesta: depende do objetivo. Vamos desmistificar o que a ciência realmente mostra.</p>
 
 <h2>O que é a dieta cetogênica</h2>
@@ -28956,6 +29971,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>Termogênicos são um dos segmentos mais vendidos do mercado de suplementos esportivos — e um dos que mais decepciona quem busca resultados reais de emagrecimento.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/termogenicos-funcionam-infographic.svg" alt="Infográfico sobre Termogênicos Funcionam? O Que a Ciência Diz Sobre Cada Ingrediente — Montinho Personal Trainer" title="Termogênicos Funcionam? O Que a Ciência Diz Sobre Cada Ingre" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A promessa é sedutora: "acelera o metabolismo", "aumenta a queima de gordura", "dá mais energia para treinar". A realidade é mais sóbria.</p>
 
 <h2>O que são termogênicos</h2>
@@ -29068,6 +30088,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>Emagrecer 10 kg parece uma meta distante quando você está no começo. Mas é um objetivo absolutamente realista — desde que você abandone as promessas de 30 dias e construa uma estratégia que realmente funcione.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-emagrecer-10-kg-infographic.svg" alt="Infográfico sobre Como Emagrecer 10 kg: O Plano Realista Para Quem Quer Resultado de Verdade — Montinho Personal Trainer" title="Como Emagrecer 10 kg: O Plano Realista Para Quem Quer Result" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Este artigo não vai te prometer milagre. Vai te dar o mapa honesto de como chegar lá.</p>
 
 <h2>Primeiro: entenda o que é "emagrecer"</h2>
@@ -29204,6 +30229,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>Uma das primeiras perguntas de quem começa a emagrecer é: "Quanto devo perder por mês?" E a resposta que muitos esperam ouvir — "quanto mais rápido, melhor" — está errada.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/quantos-kg-perder-por-mes-infographic.svg" alt="Infográfico sobre Quantos kg Perder por Mês? A Taxa Ideal de Emagrecimento — Montinho Personal Trainer" title="Quantos kg Perder por Mês? A Taxa Ideal de Emagrecimento" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A taxa de emagrecimento importa não apenas por segurança, mas por uma razão prática muito importante: afeta diretamente quantos kg você mantém a longo prazo.</p>
 
 <h2>O que diz a ciência sobre a taxa ideal</h2>
@@ -29310,6 +30340,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>Uma das perguntas mais frequentes de quem treina musculação é: "Quanto músculo consigo ganhar naturalmente?" E junto vem a desconfiança: "Aquele cara da academia é natural mesmo?"</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/hipertrofia-natural-limite-infographic.svg" alt="Infográfico sobre Hipertrofia Natural: Qual é o Limite e Quanto Músculo Você Pode Ganhar — Montinho Personal Trainer" title="Hipertrofia Natural: Qual é o Limite e Quanto Músculo Você P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A ciência tem modelos razoavelmente bem fundamentados para responder a primeira pergunta. A segunda é mais complexa — e não é o foco deste artigo.</p>
 
 <h2>O que limita a hipertrofia natural</h2>
@@ -29441,6 +30476,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>A fascite plantar é uma das lesões mais comuns entre praticantes de atividade física — e uma das mais frustantes, porque dói especialmente nos primeiros passos da manhã e tende a se tornar crônica quando não tratada corretamente.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/fascite-plantar-exercicio-infographic.svg" alt="Infográfico sobre Fascite Plantar e Exercício: Como Treinar Sem Piorar a Dor — Montinho Personal Trainer" title="Fascite Plantar e Exercício: Como Treinar Sem Piorar a Dor" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A boa notícia: na maioria dos casos, ela é tratável. E com a abordagem certa, você consegue continuar treinando durante a recuperação.</p>
 
 <h2>O que é fascite plantar</h2>
@@ -29569,6 +30609,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>Personal trainer vale a pena? É uma pergunta que muita gente faz — especialmente quando vê o custo da hora de aula e compara com a mensalidade da academia.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-vale-a-pena-infographic.svg" alt="Infográfico sobre Personal Trainer Vale a Pena? Quando Contratar e o Que Esperar — Montinho Personal Trainer" title="Personal Trainer Vale a Pena? Quando Contratar e o Que Esper" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta honesta: depende de quem você é, do que você precisa e de como escolhe o profissional. Mas para a maioria das pessoas que quer resultado de verdade, a resposta é sim.</p>
 
 <h2>O que um bom personal trainer realmente faz</h2>
@@ -29681,6 +30726,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>Nos últimos anos, os peptídeos se tornaram um dos tópicos mais buscados no mundo da performance física e do emagrecimento. Clínicas de medicina do esporte, grupos de biohacking e fóruns de musculação falam sobre CJC-1295, Ipamorelin, BPC-157, GHRP-6, AOD-9604 — e a lista cresce.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/peptideos-para-emagrecer-infographic.svg" alt="Infográfico sobre Peptídeos para Emagrecer: O Que São, Como Funcionam e os Riscos — Montinho Personal Trainer" title="Peptídeos para Emagrecer: O Que São, Como Funcionam e os Ris" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas o que são peptídeos? O que a ciência realmente mostra sobre eles? E quais são os riscos de usar sem orientação médica?</p>
 
 <h2>O que são peptídeos</h2>
@@ -29792,6 +30842,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
   content: `<p>Se existe um objetivo que aparece em quase todos os atendimentos que faço com mulheres, é esse: quero desenvolver os glúteos. E a frustração é quase universal — muitas treinam há meses sem ver resultado, enquanto outras transformam o corpo em poucos ciclos com a abordagem certa.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-de-gluteos-feminino-infographic.svg" alt="Infográfico sobre Treino de Glúteos para Mulheres: Guia Completo com Ciência e Prática — Montinho Personal Trainer" title="Treino de Glúteos para Mulheres: Guia Completo com Ciência e" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A diferença não está no esforço. Está na estratégia.</p>
 
 <h2>Anatomia dos glúteos: entenda o que você está treinando</h2>
@@ -29953,6 +31008,11 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
     ],
   content: `<p>Pilates ou musculação? Essa dúvida aparece com frequência — especialmente entre mulheres que querem melhorar o corpo mas têm dúvidas sobre qual caminho seguir. E a resposta honesta é: depende do que você quer alcançar.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/pilates-vs-musculacao-infographic.svg" alt="Infográfico sobre Pilates ou Musculação: Qual é Melhor para Você? — Montinho Personal Trainer" title="Pilates ou Musculação: Qual é Melhor para Você?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Vou comparar as duas modalidades de forma objetiva, sem favoritismo — mesmo sendo personal trainer especializado em musculação.</p>
 
 <h2>O que é cada modalidade</h2>
@@ -30075,6 +31135,11 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
     ],
   content: `<p>CrossFit versus musculação é um dos debates mais acalorados do mundo fitness. Cada lado tem seus defensores — e cada lado tem razão em pontos específicos.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/crossfit-vs-musculacao-infographic.svg" alt="Infográfico sobre CrossFit ou Musculação: Qual é Melhor para Seu Objetivo? — Montinho Personal Trainer" title="CrossFit ou Musculação: Qual é Melhor para Seu Objetivo?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Como personal trainer com anos de experiência em Alphaville, já atendi pessoas que vieram do CrossFit com lesões, e outras que vieram da musculação estagnadas. A modalidade certa depende do seu objetivo, do seu histórico e do que você consegue manter com consistência.</p>
 
 <h2>O que é cada modalidade</h2>
@@ -30208,6 +31273,11 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
     ],
   content: `<p>Uma das queixas mais universais de quem está emagrecendo: "Já perdi em todo lugar menos na barriga." E isso não é impressão — é fisiologia real, com explicação científica bem estabelecida.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/por-que-a-barriga-e-a-ultima-a-ir-infographic.svg" alt="Infográfico sobre Por Que a Barriga é a Última a Ir Embora? A Explicação Científica — Montinho Personal Trainer" title="Por Que a Barriga é a Última a Ir Embora? A Explicação Cient" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Entender por que a barriga resiste mais é o primeiro passo para lidar com ela de forma mais inteligente.</p>
 
 <h2>Gordura subcutânea vs gordura visceral</h2>
@@ -30335,6 +31405,11 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
     ],
   content: `<p>Janeiro é o mês de maior matrícula nas academias do Brasil. Março é o mês de maior abandono. Esse ciclo se repete todos os anos — e a razão não é falta de vontade.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-criar-habito-de-treinar-infographic.svg" alt="Infográfico sobre Como Criar o Hábito de Treinar e Não Desistir: Guia Definitivo — Montinho Personal Trainer" title="Como Criar o Hábito de Treinar e Não Desistir: Guia Definiti" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A razão é que as pessoas tentam construir o hábito do jeito errado. Força de vontade é um recurso limitado. Hábito, quando bem construído, não precisa dela.</p>
 
 <h2>Por que a motivação não é suficiente</h2>
@@ -30458,6 +31533,11 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
     ],
   content: `<p>Pergunte em qualquer academia qual exercício os homens mais fazem na segunda-feira e a resposta será quase universal: supino. É um dos movimentos mais eficazes para o peitoral, ombro anterior e tríceps — mas também um dos mais mal executados.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-fazer-supino-reto-infographic.svg" alt="Infográfico sobre Como Fazer Supino Reto Corretamente: Técnica, Erros e Variações — Montinho Personal Trainer" title="Como Fazer Supino Reto Corretamente: Técnica, Erros e Variaç" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Uma técnica ruim no supino limita o ganho de força, reduz a ativação muscular e aumenta o risco de lesão no ombro e no punho. Este guia cobre cada detalhe da execução correta.</p>
 
 <h2>Músculos trabalhados no supino reto</h2>
@@ -30580,6 +31660,11 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
     ],
   content: `<p>O treino ABCDE é a divisão clássica da musculação: cinco dias de treino, cada um focado em um grupo muscular diferente. É a estrutura mais popular entre intermediários e avançados que treinam 5x por semana.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-montar-treino-abcde-infographic.svg" alt="Infográfico sobre Como Montar Treino ABCDE: Guia Completo para Hipertrofia — Montinho Personal Trainer" title="Como Montar Treino ABCDE: Guia Completo para Hipertrofia" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O problema é que a maioria das pessoas monta o ABCDE de forma subótima — colocando grupos musculares que se interferem em dias consecutivos, negligenciando o volume por grupo ou usando divisões que não respeitam a recuperação.</p>
 
 <h2>Quando o treino ABCDE faz sentido</h2>
@@ -30743,6 +31828,11 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
     ],
   content: `<p>As costas são o maior grupo muscular do tronco e, paradoxalmente, o mais negligenciado na maioria dos treinos. Enquanto o peito recebe atenção excessiva, as costas ficam com volume insuficiente — criando desequilíbrios posturais e limitando o desenvolvimento geral.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-de-costas-hipertrofia-infographic.svg" alt="Infográfico sobre Treino de Costas para Hipertrofia: Exercícios, Séries e Técnica — Montinho Personal Trainer" title="Treino de Costas para Hipertrofia: Exercícios, Séries e Técn" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Um treino de costas bem montado não apenas constrói músculo — muda completamente a silhueta, melhora a postura e reduz dores crônicas na região.</p>
 
 <h2>Anatomia das costas: o que você está treinando</h2>
@@ -30874,6 +31964,11 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
     ],
   content: `<p>Deload é uma das ferramentas mais subutilizadas na musculação. A maioria das pessoas nunca faz — e paga o preço em estagnação, overtraining e lesões. Os melhores atletas e os treinadores mais qualificados sabem que o deload não é descanso — é parte do processo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/deload-o-que-e-como-fazer-infographic.svg" alt="Infográfico sobre Deload: O Que É, Para Que Serve e Como Fazer Corretamente — Montinho Personal Trainer" title="Deload: O Que É, Para Que Serve e Como Fazer Corretamente" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é deload</h2>
 
 <p>Deload é um período curto (geralmente 1 semana) de redução intencional do volume e/ou intensidade do treino, com o objetivo de permitir recuperação completa do sistema nervoso, articulações, tendões e músculos antes de um novo ciclo de treino.</p>
@@ -31010,6 +32105,11 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
     ],
   content: `<p>Iniciar na musculação é uma das melhores decisões para a saúde, composição corporal e qualidade de vida — especialmente para mulheres. Mas o começo errado cria frustração, lesões e abandono precoce.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-para-mulher-iniciante-infographic.svg" alt="Infográfico sobre Treino para Mulher Iniciante na Musculação: Guia Completo — Montinho Personal Trainer" title="Treino para Mulher Iniciante na Musculação: Guia Completo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Este guia foi construído especificamente para mulheres que estão começando: sem jargão desnecessário, sem prescrições genéricas e sem mitos.</p>
 
 <h2>Por que a musculação é especialmente importante para mulheres</h2>
@@ -31142,6 +32242,11 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
     ],
   content: `<p>A proteína é o macronutriente mais crítico para quem treina. Sem quantidade suficiente, o músculo não cresce — independente de quanto você treina. A meta padrão para praticantes de musculação é 1,6 a 2,2g por kg de peso corporal por dia.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/alimentos-ricos-em-proteina-infographic.svg" alt="Infográfico sobre Alimentos Ricos em Proteína: Lista Completa para Ganhar Músculo — Montinho Personal Trainer" title="Alimentos Ricos em Proteína: Lista Completa para Ganhar Músc" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Para alguém de 70 kg, isso significa 112 a 154g de proteína diária. Parece muito — até você saber quais alimentos usar.</p>
 
 <h2>O que torna uma proteína "boa"</h2>
@@ -31257,6 +32362,11 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
     ],
   content: `<p>A hipertrofia — o crescimento do músculo — é um processo biologicamente custoso. O corpo precisa de matéria-prima (proteína) e energia (calorias) para construir novo tecido muscular. Sem superávit calórico, o ganho de massa é extremamente limitado.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/calorias-para-ganhar-massa-muscular-infographic.svg" alt="Infográfico sobre Quantas Calorias Para Ganhar Massa Muscular? Cálculo e Estratégia — Montinho Personal Trainer" title="Quantas Calorias Para Ganhar Massa Muscular? Cálculo e Estra" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas superávit excessivo resulta em ganho de gordura desnecessário. O objetivo é encontrar o ponto certo.</p>
 
 <h2>Passo 1: Calcule seu gasto energético total (TDEE)</h2>
@@ -31386,6 +32496,11 @@ TDEE = 1708 × 1,55 = <strong>2.647 kcal/dia</strong></p>
     ],
   content: `<p>Suplementos são o setor mais cheio de mitos, propaganda e desperdício de dinheiro no mundo fitness. Ao mesmo tempo, alguns suplementos têm evidência científica sólida e fazem diferença real.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/suplementacao-basica-para-iniciantes-infographic.svg" alt="Infográfico sobre Suplementação Básica para Quem Está Começando na Musculação — Montinho Personal Trainer" title="Suplementação Básica para Quem Está Começando na Musculação" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Para iniciantes, a ordem de prioridade é clara: comida > treinamento > descanso > suplementos. Suplemento nunca corrige base ruim. Mas com a base certa, os suplementos certos aceleram o processo.</p>
 
 <h2>Nível 1: Os que funcionam e têm evidência forte</h2>
@@ -31501,6 +32616,11 @@ TDEE = 1708 × 1,55 = <strong>2.647 kcal/dia</strong></p>
     ],
   content: `<p>A síntese proteica muscular não para quando você dorme — na verdade, o sono é um dos períodos mais importantes para a recuperação e o crescimento muscular. A questão é: seu corpo tem matéria-prima disponível durante essas 7-9 horas de jejum noturno?</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/caseina-antes-de-dormir-infographic.svg" alt="Infográfico sobre Caseína Antes de Dormir: Vale a Pena? O Que a Ciência Diz — Montinho Personal Trainer" title="Caseína Antes de Dormir: Vale a Pena? O Que a Ciência Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>É aí que a caseína entra.</p>
 
 <h2>O que é a caseína</h2>
@@ -31608,6 +32728,11 @@ TDEE = 1708 × 1,55 = <strong>2.647 kcal/dia</strong></p>
     ],
   content: `<p>Existe um mito persistente de que musculação é para jovens. A ciência diz exatamente o oposto: o treino de força é progressivamente mais importante com o envelhecimento — e suas consequências de não treinar ficam cada vez mais severas.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/musculacao-para-maiores-de-60-infographic.svg" alt="Infográfico sobre Musculação Para Maiores de 60 Anos: Benefícios, Cuidados e Como Começar — Montinho Personal Trainer" title="Musculação Para Maiores de 60 Anos: Benefícios, Cuidados e C" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A partir dos 40 anos, o corpo perde em média 1% de massa muscular por ano. Essa perda acelera após os 60 para 1,5-2% ao ano. O resultado é a sarcopenia — a perda progressiva de força e função muscular que está diretamente associada a quedas, hospitalização, perda de independência e mortalidade precoce.</p>
 
 <p>O treino de força é o único tratamento eficaz.</p>
@@ -31736,6 +32861,11 @@ TDEE = 1708 × 1,55 = <strong>2.647 kcal/dia</strong></p>
     ],
   content: `<p>Se você sente dor no ombro ao levantar o braço acima da cabeça, ao dormir do lado afetado ou durante exercícios como desenvolvimento e supino, pode estar enfrentando a síndrome do impacto do ombro — uma das condições músculo-esqueléticas mais comuns em praticantes de musculação.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/sindrome-do-impacto-no-ombro-infographic.svg" alt="Infográfico sobre Síndrome do Impacto no Ombro: Causas, Exercícios e Como Tratar — Montinho Personal Trainer" title="Síndrome do Impacto no Ombro: Causas, Exercícios e Como Trat" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A boa notícia: quando tratada corretamente, a maioria dos casos resolve sem cirurgia.</p>
 
 <h2>O que é a síndrome do impacto</h2>
@@ -31864,6 +32994,11 @@ TDEE = 1708 × 1,55 = <strong>2.647 kcal/dia</strong></p>
     ],
   content: `<p>Joelho de corredor é o nome popular para a síndrome da dor patelofemoral — uma das lesões mais frequentes em corredores, praticantes de musculação e pessoas ativas em geral. Representa cerca de 25% de todas as lesões do joelho.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/joelho-de-corredor-infographic.svg" alt="Infográfico sobre Joelho de Corredor: O Que É, Causas e Como Tratar a Síndrome — Montinho Personal Trainer" title="Joelho de Corredor: O Que É, Causas e Como Tratar a Síndrome" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Apesar do nome, não afeta só corredores. Qualquer atividade que sobrecarregue a articulação patelofemoral pode desencadeá-la.</p>
 
 <h2>O que é a síndrome patelofemoral</h2>
@@ -31991,6 +33126,11 @@ Em pé em uma perna, agache devagar até 30-40° mantendo o joelho alinhado sobr
     ],
   content: `<p>Você começa a dieta na segunda-feira com toda a determinação do mundo. Na quinta, está comendo pizza. Na sexta, decidiu que vai recomeçar na segunda. Esse ciclo não é fraqueza — é falta de estratégia.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-nao-desistir-da-dieta-infographic.svg" alt="Infográfico sobre Como Não Desistir da Dieta: Estratégias Reais Para Manter o Foco — Montinho Personal Trainer" title="Como Não Desistir da Dieta: Estratégias Reais Para Manter o " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A maioria das dietas falha não porque o plano alimentar é ruim — falha porque ninguém ensina como manter o comportamento quando a realidade aparece.</p>
 
 <h2>Por que desistimos da dieta</h2>
@@ -32104,6 +33244,11 @@ Em pé em uma perna, agache devagar até 30-40° mantendo o joelho alinhado sobr
     ],
   content: `<p>Uma das principais razões para interrupção de treinos é viagem. Seja a trabalho ou lazer, a rotina muda, a academia fica para trás e o que era automático se torna difícil.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-treinar-viajando-infographic.svg" alt="Infográfico sobre Como Treinar Viajando: Guia Prático Para Não Perder o Ritmo — Montinho Personal Trainer" title="Como Treinar Viajando: Guia Prático Para Não Perder o Ritmo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas perder o que você construiu em semanas de treino por alguns dias de viagem não é inevitável — é uma questão de estratégia.</p>
 
 <h2>Quanto tempo posso ficar sem treinar sem perder músculo</h2>
@@ -32236,6 +33381,11 @@ Em pé em uma perna, agache devagar até 30-40° mantendo o joelho alinhado sobr
     ],
   content: `<p>Nos últimos anos, a consultoria online de musculação se tornou uma das formas mais acessíveis e eficazes de ter acompanhamento profissional. O que antes era exclusivo de quem morava perto de um bom personal trainer, hoje está disponível para qualquer pessoa com smartphone.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/consultoria-online-musculacao-infographic.svg" alt="Infográfico sobre Consultoria Online de Musculação: Como Funciona e Para Quem Vale — Montinho Personal Trainer" title="Consultoria Online de Musculação: Como Funciona e Para Quem " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas como em qualquer serviço, qualidade varia enormemente. Este guia explica o que é, como funciona e como escolher bem.</p>
 
 <h2>O que é consultoria online de musculação</h2>
@@ -32363,6 +33513,11 @@ Em pé em uma perna, agache devagar até 30-40° mantendo o joelho alinhado sobr
     ],
   content: `<p>O bíceps é o músculo mais fotografado das academias — e paradoxalmente um dos mais mal treinados. Muita gente faz rosca direta toda semana durante anos e vê resultado medíocre. O problema raramente é falta de esforço: é falta de estratégia.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-de-biceps-infographic.svg" alt="Infográfico sobre Treino de Bíceps para Hipertrofia: Exercícios, Volume e Técnica Completa — Montinho Personal Trainer" title="Treino de Bíceps para Hipertrofia: Exercícios, Volume e Técn" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Vou mostrar como o bíceps funciona, quais exercícios têm maior ativação comprovada e como estruturar o treino para crescimento real.</p>
 
 <h2>Anatomia do bíceps: o que você está realmente treinando</h2>
@@ -32550,6 +33705,11 @@ Pegada pronada (palma para baixo). Desafia braquioradial e braquial. Mais difíc
     ],
   content: `<p>Se você quer braços maiores, o tríceps importa mais que o bíceps. Anatomicamente, o tríceps corresponde a aproximadamente 60-65% do volume total do braço. Desenvolvê-lo completamente — e não apenas a cabeça lateral que aparece de lado — é o que transforma o braço de forma real.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-de-triceps-infographic.svg" alt="Infográfico sobre Treino de Tríceps: Como Desenvolver as 3 Cabeças com Ciência — Montinho Personal Trainer" title="Treino de Tríceps: Como Desenvolver as 3 Cabeças com Ciência" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O problema: a maioria das pessoas treina tríceps sem entender que são três músculos com funções parcialmente distintas, e usa os mesmos exercícios que ativam principalmente uma das cabeças.</p>
 
 <h2>Anatomia do tríceps: as três cabeças</h2>
@@ -32709,6 +33869,11 @@ Alta carga com menor risco articular. Boa opção para volume de fechamento. 3 s
     ],
   content: `<p>O deltoide é o músculo responsável pela largura e pela forma redonda dos ombros — e uma das estruturas que mais contribui para a percepção de um corpo atlético. Mas existe uma assimetria quase universal no treinamento: o deltoide anterior é supertreinado (participa de todo supino e desenvolvimento), o medial é parcialmente treinado (elevação lateral), e o posterior é quase ignorado.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-de-ombros-hipertrofia-infographic.svg" alt="Infográfico sobre Treino de Ombros para Hipertrofia: Guia Completo dos 3 Deltoides — Montinho Personal Trainer" title="Treino de Ombros para Hipertrofia: Guia Completo dos 3 Delto" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O resultado é um ombro desequilibrado, com visual "achatado" de frente e maior risco de lesão. Este guia resolve isso.</p>
 
 <h2>Anatomia: os 3 deltoides e suas funções</h2>
@@ -32868,6 +34033,11 @@ Use com moderação — o deltoide anterior geralmente já está bem estimulado 
     ],
   content: `<p>O treino de peito na segunda-feira é quase uma lei nas academias brasileiras. Mas enquanto o supino reto é excelente para o peitoral médio e inferior, o desenvolvimento de um peitoral completo exige ângulos variados, tipos de contração diferentes e exercícios que muitas pessoas simplesmente não fazem.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-de-peito-hipertrofia-infographic.svg" alt="Infográfico sobre Treino de Peito para Hipertrofia: Guia Completo Além do Supino — Montinho Personal Trainer" title="Treino de Peito para Hipertrofia: Guia Completo Além do Supi" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Este guia vai além do supino — sem abandona-lo.</p>
 
 <h2>Anatomia do peitoral: o que você está desenvolvendo</h2>
@@ -33023,6 +34193,11 @@ Ativa de forma mais uniforme as porções superior e inferior. Boa variação pa
     ],
   content: `<p>O treino de perna divide as pessoas em dois grupos: quem evita e quem abraça. Os que evitam não percebem que estão sabotando o crescimento do corpo inteiro — porque as pernas representam mais de 50% da massa muscular total, e treiná-las estimula a liberação de hormônios anabólicos que beneficiam todo o organismo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-de-perna-completo-infographic.svg" alt="Infográfico sobre Treino de Perna Completo: Quadríceps, Posterior, Glúteo e Panturrilha — Montinho Personal Trainer" title="Treino de Perna Completo: Quadríceps, Posterior, Glúteo e Pa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Este guia cobre cada componente do treino de perna com a estratégia correta para desenvolvimento completo.</p>
 
 <h2>Anatomia da perna: o que você está treinando</h2>
@@ -33199,6 +34374,11 @@ Joelho a 90° = sóleo como músculo principal. Frequentemente mais limitante qu
     ],
   content: `<p>Se existe um músculo que desafia a paciência de praticantes de musculação no mundo inteiro, é a panturrilha. "Estou treinando há dois anos e ela não cresceu nada" é uma das queixas mais comuns que recebo nos atendimentos em Alphaville.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-de-panturrilha-infographic.svg" alt="Infográfico sobre Por Que a Panturrilha Não Cresce e Como Desenvolvê-la de Verdade — Montinho Personal Trainer" title="Por Que a Panturrilha Não Cresce e Como Desenvolvê-la de Ver" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A genética tem seu papel — fibras musculares e inserção do tendão determinam em parte o potencial. Mas na grande maioria dos casos, a panturrilha não cresce por erros de treino que têm solução. Vamos aos fatos.</p>
 
 <h2>Anatomia: dois músculos, dois tratamentos diferentes</h2>
@@ -33344,6 +34524,11 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
     ],
   content: `<p>A rosca direta é o exercício de braço mais popular do mundo — e possivelmente o mais mal executado. O balanço do tronco, a amplitude incompleta e a pegada errada são tão comuns que viraram parte do visual da academia. Mas cada um desses erros reduz o resultado e, com o tempo, pode causar lesão.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-fazer-rosca-direta-infographic.svg" alt="Infográfico sobre Como Fazer Rosca Direta Corretamente: Técnica, Erros e Variações — Montinho Personal Trainer" title="Como Fazer Rosca Direta Corretamente: Técnica, Erros e Varia" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Este guia vai ao detalhe de cada aspecto da técnica.</p>
 
 <h2>Músculos envolvidos</h2>
@@ -33487,6 +34672,11 @@ Correção: inicie com pegada neutra (palma para dentro) e gire progressivamente
     ],
   content: `<p>O desenvolvimento de ombros (shoulder press) é o exercício de base para o deltoide — assim como o supino é para o peitoral e o agachamento para as pernas. Com ele, você estimula os três feixes do deltoide em um único movimento com possibilidade de carga progressiva real.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-fazer-desenvolvimento-ombros-infographic.svg" alt="Infográfico sobre Como Fazer Desenvolvimento de Ombros: Técnica com Halteres e Barra — Montinho Personal Trainer" title="Como Fazer Desenvolvimento de Ombros: Técnica com Halteres e" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas erros na técnica comprometem tanto o resultado quanto a saúde da articulação, que é a mais instável do corpo. Vamos ao detalhe.</p>
 
 <h2>Músculos trabalhados</h2>
@@ -33633,6 +34823,11 @@ Correção: desça até os cotovelos formarem 90°, com os halteres na altura do
     ],
   content: `<p>A barra fixa é um dos exercícios mais respeitados da musculação — e com razão. É um dos poucos movimentos que exige que você mova seu próprio peso, sem assistência de máquinas ou polias. Para muita gente, é uma barreira psicológica: "não consigo nem uma".</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-fazer-barra-fixa-infographic.svg" alt="Infográfico sobre Como Fazer Barra Fixa do Zero: Progressão Para Iniciantes e Avançados — Montinho Personal Trainer" title="Como Fazer Barra Fixa do Zero: Progressão Para Iniciantes e " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A realidade: praticamente qualquer pessoa saudável pode aprender a fazer barra fixa com a progressão correta. Aqui está o caminho.</p>
 
 <h2>Músculos trabalhados na barra fixa</h2>
@@ -33784,6 +34979,11 @@ Correção: desça até os cotovelos formarem 90°, com os halteres na altura do
     ],
   content: `<p>O leg press 45° é um dos exercícios mais populares da academia — e também um dos mais subutilizados em termos de versatilidade. Muita gente posiciona os pés da mesma forma toda semana sem saber que uma mudança de 10 cm na posição dos pés muda completamente qual músculo está sendo trabalhado com mais intensidade.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-fazer-leg-press-infographic.svg" alt="Infográfico sobre Como Fazer Leg Press Corretamente: Posição do Pé, Amplitude e Erros — Montinho Personal Trainer" title="Como Fazer Leg Press Corretamente: Posição do Pé, Amplitude " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Músculos trabalhados</h2>
 
 <ul>
@@ -33924,6 +35124,11 @@ Correção: corrija a posição dos pés, fortaleça glúteo médio com abduçã
     ],
   content: `<p>IIFYM — If It Fits Your Macros (se couber nos seus macros) — é uma abordagem nutricional que ganhou popularidade por uma proposta aparentemente simples: desde que você atinja suas metas de proteínas, carboidratos e gorduras, a origem dos alimentos é secundária.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/dieta-flexivel-iifym-infographic.svg" alt="Infográfico sobre Dieta Flexível (IIFYM): O Que É, Como Funciona e Se Vale a Pena — Montinho Personal Trainer" title="Dieta Flexível (IIFYM): O Que É, Como Funciona e Se Vale a P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Isso soa como uma permissão para comer sorvete e pizza e ainda assim ter resultado — e é exatamente essa interpretação que leva muita gente ao erro. A versão real é mais sofisticada e tem embasamento sólido.</p>
 
 <h2>O que é dieta flexível de verdade</h2>
@@ -34055,6 +35260,11 @@ Correção: corrija a posição dos pés, fortaleça glúteo médio com abduçã
     ],
   content: `<p>Existe uma distância enorme entre saber que precisa de proteína suficiente e calorias em superávit — e saber o que colocar no prato a cada refeição de cada dia. Este cardápio preenche essa lacuna com um exemplo concreto, com macros calculados e variedade real.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/cardapio-para-hipertrofia-infographic.svg" alt="Infográfico sobre Cardápio Semanal para Hipertrofia: Exemplo Real com Macros — Montinho Personal Trainer" title="Cardápio Semanal para Hipertrofia: Exemplo Real com Macros" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Os números foram calculados para um exemplo de 75 kg com TDEE de 2.500 kcal e objetivo de hipertrofia (superávit de 300 kcal = 2.800 kcal/dia):</p>
 <ul>
 <li>Proteína: 150g (600 kcal)</li>
@@ -34250,6 +35460,11 @@ Correção: corrija a posição dos pés, fortaleça glúteo médio com abduçã
     ],
   content: `<p>O café da manhã é a refeição que mais divide opiniões entre praticantes de musculação: tem quem treina em jejum, quem come um pratão às 6h da manhã e quem bebe só um café preto. Qual dessas estratégias funciona melhor?</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/o-que-comer-no-cafe-da-manha-para-treinar-infographic.svg" alt="Infográfico sobre O Que Comer no Café da Manhã Antes de Treinar: Guia Completo — Montinho Personal Trainer" title="O Que Comer no Café da Manhã Antes de Treinar: Guia Completo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A resposta depende do seu horário de treino, objetivos e, acima de tudo, do que a ciência mostra sobre performance e composição corporal. Vamos por partes.</p>
 
 <h2>Treinar em jejum vale a pena?</h2>
@@ -34421,6 +35636,11 @@ Correção: corrija a posição dos pés, fortaleça glúteo médio com abduçã
     ],
   content: `<p>O hipercalórico (ou mass gainer) é vendido como solução para quem tem dificuldade em ganhar peso. A promessa é simples: mais calorias de forma fácil e rápida, sem ter que comer mais comida.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/hipercalorico-vale-a-pena-infographic.svg" alt="Infográfico sobre Hipercalórico Vale a Pena? O Que a Ciência Diz Sobre Esse Suplemento — Montinho Personal Trainer" title="Hipercalórico Vale a Pena? O Que a Ciência Diz Sobre Esse Su" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas vale a pena mesmo? Ou é dinheiro jogado fora — ou pior, um produto que atrapalha mais do que ajuda?</p>
 
 <h2>O que é um hipercalórico?</h2>
@@ -34560,6 +35780,11 @@ Correção: corrija a posição dos pés, fortaleça glúteo médio com abduçã
     ],
   content: `<p>"Se eu parar de treinar, viro gordura." Essa frase é dita com seriedade por muita gente — mas ela está fundamentada em uma confusão biológica básica. Músculo e gordura são dois tipos de tecido completamente diferentes. Um não se transforma no outro, assim como osso não se transforma em músculo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/musculo-vira-gordura-se-parar-de-treinar-infographic.svg" alt="Infográfico sobre Músculo Vira Gordura Se Parar de Treinar? A Verdade Científica — Montinho Personal Trainer" title="Músculo Vira Gordura Se Parar de Treinar? A Verdade Científi" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O que acontece de verdade quando você para de treinar é mais sutil — e mais importante de entender.</p>
 
 <h2>O que acontece com o músculo quando você para de treinar?</h2>
@@ -34696,6 +35921,11 @@ Correção: corrija a posição dos pés, fortaleça glúteo médio com abduçã
     ],
   content: `<p>Você fez um treino pesado na segunda-feira. Na terça não sentiu nada. Na quarta, dificuldade para sentar, descer escadas ou levantar o braço. Esse é o DOMS — e provavelmente você já passou por isso.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/dor-muscular-tardia-doms-infographic.svg" alt="Infográfico sobre Dor Muscular Tardia (DOMS): O Que É, Por Que Acontece e O Que Fazer — Montinho Personal Trainer" title="Dor Muscular Tardia (DOMS): O Que É, Por Que Acontece e O Qu" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é DOMS?</h2>
 
 <p>DOMS (Delayed Onset Muscle Soreness, ou Dor Muscular de Início Tardio) é a dor e rigidez muscular que aparece tipicamente entre <strong>12 e 72 horas após o exercício</strong>, com pico geralmente em 24-48 horas. É um fenômeno bem documentado e universal — acontece com iniciantes e com atletas de elite.</p>
@@ -34834,6 +36064,11 @@ Correção: corrija a posição dos pés, fortaleça glúteo médio com abduçã
     ],
   content: `<p>A gripe chegou e a academia chama. Você fica em dúvida: treinar é disciplina ou imprudência? A resposta depende de quais sintomas você tem — e o critério médico para isso tem nome: a <strong>regra do pescoço</strong>.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/posso-treinar-com-gripe-infographic.svg" alt="Infográfico sobre Posso Treinar com Gripe? O Que a Ciência Diz — Montinho Personal Trainer" title="Posso Treinar com Gripe? O Que a Ciência Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>A regra do pescoço</h2>
 
 <p>Esta diretriz, amplamente usada em medicina esportiva, divide os sintomas em dois grupos:</p>
@@ -34972,6 +36207,11 @@ Correção: corrija a posição dos pés, fortaleça glúteo médio com abduçã
     ],
   content: `<p>"Musculação trava o crescimento." Essa frase ainda circula em academias, grupos de WhatsApp de pais e até em consultórios médicos mal-atualizados. É um mito — e um mito que priva adolescentes de um dos melhores investimentos que podem fazer na saúde.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/musculacao-para-adolescentes-infographic.svg" alt="Infográfico sobre Musculação Para Adolescentes: É Seguro? O Que a Ciência Diz — Montinho Personal Trainer" title="Musculação Para Adolescentes: É Seguro? O Que a Ciência Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Vamos ao que a ciência realmente diz.</p>
 
 <h2>Musculação trava o crescimento?</h2>
@@ -35126,6 +36366,11 @@ Correção: corrija a posição dos pés, fortaleça glúteo médio com abduçã
     ],
   content: `<p>Fotos de "antes e depois" de 30 dias com transformações dramáticas dominam as redes sociais. A maioria delas é construída com iluminação, postura, dieta radical de curtíssimo prazo ou edição. Não representam resultados reais e sustentáveis.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/antes-e-depois-musculacao-infographic.svg" alt="Infográfico sobre Antes e Depois da Musculação: O Que Esperar em 1, 3, 6 e 12 Meses — Montinho Personal Trainer" title="Antes e Depois da Musculação: O Que Esperar em 1, 3, 6 e 12 " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Este artigo mostra o que você pode realmente esperar da musculação em diferentes janelas de tempo — com honestidade e base científica.</p>
 
 <h2>Os fatores que determinam a velocidade dos seus resultados</h2>
@@ -35297,6 +36542,11 @@ Correção: corrija a posição dos pés, fortaleça glúteo médio com abduçã
     ],
   content: `<p>"Sinta o músculo trabalhando." Essa instrução, repetida em academias do mundo todo, é tanto sabedoria prática quanto objeto de estudo científico. A chamada conexão mente-músculo (CMM) tem base fisiológica real — mas sua importância varia dependendo do contexto e do objetivo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/conexao-mente-musculo-infographic.svg" alt="Infográfico sobre Conexão Mente-Músculo: O Que É e Se Realmente Funciona — Montinho Personal Trainer" title="Conexão Mente-Músculo: O Que É e Se Realmente Funciona" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é a conexão mente-músculo?</h2>
 
 <p>A conexão mente-músculo refere-se ao foco atencional interno — a prática de direcionar a atenção conscientemente para o músculo-alvo durante o exercício, em oposição ao foco externo (resultado do movimento, o peso, etc.).</p>
@@ -35439,6 +36689,11 @@ Correção: corrija a posição dos pés, fortaleça glúteo médio com abduçã
     ],
   content: `<p>A maioria das pessoas pula o aquecimento ou faz alguns segundos de alongamento estático e vai direto para os pesos. Essa abordagem não apenas ignora a preparação articular — ela pode, comprovadamente, piorar sua performance no treino.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/mobilidade-articular-pre-treino-infographic.svg" alt="Infográfico sobre Mobilidade Articular Pré-Treino: Protocolo Completo por Articulação — Montinho Personal Trainer" title="Mobilidade Articular Pré-Treino: Protocolo Completo por Arti" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mobilidade articular é diferente de alongamento, e entender essa diferença é o primeiro passo para treinar de forma mais inteligente.</p>
 
 <h2>Mobilidade vs. flexibilidade: conceitos que você precisa separar</h2>
@@ -35602,6 +36857,11 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
     ],
   content: `<p>Força e potência são frequentemente confundidas — mas são qualidades físicas distintas com adaptações diferentes. Entender essa diferença muda completamente a forma como você treina.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-de-potencia-e-explosividade-infographic.svg" alt="Infográfico sobre Treino de Potência e Explosividade: Protocolos para Força Rápida — Montinho Personal Trainer" title="Treino de Potência e Explosividade: Protocolos para Força Rá" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é potência muscular?</h2>
 
 <p>Potência é o produto de força e velocidade. A fórmula clássica da física:</p>
@@ -35764,6 +37024,11 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
     ],
   content: `<p>A maioria das pessoas vai para a academia sem nenhum plano além do treino desta semana. Isso funciona para iniciantes — mas depois de alguns meses, sem planejamento estruturado, o platô é inevitável.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/macrociclo-mesociclo-microciclo-infographic.svg" alt="Infográfico sobre Macrociclo, Mesociclo e Microciclo: Como Planejar o Treino do Ano — Montinho Personal Trainer" title="Macrociclo, Mesociclo e Microciclo: Como Planejar o Treino d" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A periodização resolve esse problema. E ela começa com três conceitos fundamentais que o treinamento esportivo de elite usa há décadas.</p>
 
 <h2>O que é periodização?</h2>
@@ -35924,6 +37189,11 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
     ],
   content: `<p>Se você já acompanhou o fisiculturismo de alto nível, provavelmente já ouviu falar de Hany Rambod — o treinador por trás de múltiplos campeões do Mr. Olympia, incluindo Phil Heath (7 títulos) e Jay Cutler (4 títulos). O método que ele criou — o FST-7 — ganhou fama no mundo do bodybuilding e desde então se espalhou para a musculação em geral.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-fst-7-infographic.svg" alt="Infográfico sobre Treino FST-7: O Protocolo de Hany Rambod para Hipertrofia Extrema — Montinho Personal Trainer" title="Treino FST-7: O Protocolo de Hany Rambod para Hipertrofia Ex" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas o que é exatamente o FST-7? E mais importante: ele funciona para pessoas comuns, além de fisiculturistas de elite?</p>
 
 <h2>O que é FST-7?</h2>
@@ -36072,6 +37342,11 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
     ],
   content: `<p>Durante anos, a pesquisa sobre treinamento foi feita quase que exclusivamente com homens. O resultado: protocolos criados para corpos masculinos sendo aplicados em mulheres como se fossem idênticos. A ciência avançou, e hoje sabemos que o ambiente hormonal feminino é dinâmico — e que respeitar esse dinamismo pode transformar os resultados.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/saude-hormonal-feminina-treino-infographic.svg" alt="Infográfico sobre Saúde Hormonal Feminina e Treino: Guia Completo por Fase do Ciclo — Montinho Personal Trainer" title="Saúde Hormonal Feminina e Treino: Guia Completo por Fase do " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os três hormônios que mais impactam o treino feminino</h2>
 
 <h3>Estrogênio</h3>
@@ -36212,6 +37487,11 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
     ],
   content: `<p>Muitas mulheres chegam aos 40 anos com histórico de treino consistente e dieta razoável — e de repente percebem que o peso sobe, a barriga aparece e a recuperação piora, sem que nada tenha mudado aparentemente. A explicação quase sempre está nos hormônios.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/hormônios-femininos-apos-40-treino-infographic.svg" alt="Infográfico sobre Hormônios Femininos Após os 40 Anos: Como o Corpo Muda e Como Treinar — Montinho Personal Trainer" title="Hormônios Femininos Após os 40 Anos: Como o Corpo Muda e Com" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que acontece com os hormônios femininos a partir dos 40</h2>
 
 <h3>Perimenopausa: o período de transição ignorado</h3>
@@ -36356,6 +37636,11 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
     ],
   content: `<p>Uma lesão grave pode apagar meses de progresso e exigir semanas ou meses de recuperação. O paradoxo: a maioria das lesões de academia é previsível e prevenível. A fisioterapia preventiva existe para identificar e corrigir os riscos antes que eles se tornem lesões.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/fisioterapia-preventiva-musculacao-infographic.svg" alt="Infográfico sobre Fisioterapia Preventiva para Musculação: Programa Completo de Prevenção de Lesõe — Montinho Personal Trainer" title="Fisioterapia Preventiva para Musculação: Programa Completo d" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é fisioterapia preventiva?</h2>
 
 <p>Fisioterapia preventiva (ou fisioterapia esportiva profilática) é a aplicação dos princípios da fisioterapia para <strong>identificar fatores de risco antes da lesão</strong>, em vez de apenas tratar depois.</p>
@@ -36514,6 +37799,11 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
     ],
   content: `<p>O título de "melhor suplemento de recuperação do mercado" pertence a algo que não custa nada: o sono de qualidade. Nenhum suplemento, nenhum protocolo de pós-treino e nenhuma frequência de treino compensa sono cronicamente ruim.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/otimizar-sono-para-recuperacao-muscular-infographic.svg" alt="Infográfico sobre Como Otimizar o Sono para Recuperação Muscular: Protocolo Completo — Montinho Personal Trainer" title="Como Otimizar o Sono para Recuperação Muscular: Protocolo Co" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas a maioria das discussões sobre sono e musculação se limita a "durma 8 horas". A realidade é mais nuançada — e mais acionável do que isso.</p>
 
 <h2>O que acontece com o músculo durante o sono</h2>
@@ -36636,6 +37926,11 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
     ],
   content: `<p>A calistenia avançada representa o ápice do controle do próprio peso corporal. Não é apenas impressionante visualmente — ela desenvolve força funcional, propriocepção e controle neuromuscular que nenhum exercício com peso externo replica de forma equivalente.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/calistenia-avancada-infographic.svg" alt="Infográfico sobre Calistenia Avançada: Progressões para Planche, Front Lever e Human Flag — Montinho Personal Trainer" title="Calistenia Avançada: Progressões para Planche, Front Lever e" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Mas skills como planche, front lever e human flag não são conquistados por força bruta. Eles exigem progressão metodológica, paciência e consistência.</p>
 
 <h2>O que separa a calistenia básica da avançada</h2>
@@ -36812,6 +38107,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     ],
   content: `<p>Treino ao ar livre não é consolação para quem não pode pagar academia. É uma modalidade com benefícios próprios que nenhuma sala fechada replica: exposição à luz solar (vitamina D, ritmo circadiano), variabilidade de ambiente, superfícies irregulares que ativam estabilizadores e, para muitas pessoas, maior adesão de longo prazo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-ao-ar-livre-estruturado-infographic.svg" alt="Infográfico sobre Treino ao Ar Livre Estruturado: Programa Completo Sem Academia — Montinho Personal Trainer" title="Treino ao Ar Livre Estruturado: Programa Completo Sem Academ" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A limitação real não é a falta de equipamentos — é a falta de estrutura. Um treino aleatório no parque não supera uma sessão bem planejada na academia. Um programa ao ar livre bem estruturado pode.</p>
 
 <h2>Equipamentos comuns em parques urbanos e o que treinar com cada um</h2>
@@ -36948,6 +38248,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     ],
   content: `<p>A guerra entre treino funcional e musculação é travada em academias, grupos de WhatsApp e consultórios de personal trainer há décadas. De um lado, a promessa de movimento que "imita a vida real". Do outro, hipertrofia e força comprovadas pela ciência.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-funcional-vs-musculacao-infographic.svg" alt="Infográfico sobre Treino Funcional vs Musculação: Diferenças, Benefícios e Como Combinar — Montinho Personal Trainer" title="Treino Funcional vs Musculação: Diferenças, Benefícios e Com" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A realidade é mais interessante do que qualquer lado dessa disputa admite.</p>
 
 <h2>O que é treino funcional, realmente?</h2>
@@ -37082,6 +38387,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     ],
   content: `<p>Durante muito tempo, a prescrição de exercício para saúde mental era vaga: "mexa-se, vai se sentir melhor". A ciência dos últimos anos tornou isso muito mais preciso — sabemos agora quais tipos de exercício, com qual dose e frequência, produzem os maiores benefícios para ansiedade e depressão.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/musculacao-para-ansiedade-depressao-infographic.svg" alt="Infográfico sobre Musculação para Ansiedade e Depressão: O Que a Ciência Comprova — Montinho Personal Trainer" title="Musculação para Ansiedade e Depressão: O Que a Ciência Compr" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>E o treino de força — musculação — tem um papel específico que vai além do que o cardio entrega.</p>
 
 <h2>O que a pesquisa mais recente diz</h2>
@@ -37208,6 +38518,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     ],
   content: `<p>Por anos, a "janela anabólica" de 30 a 60 minutos pós-treino foi tratada como lei da musculação. Atrasar o shake de whey era considerado um crime contra a hipertrofia. Atletas corriam literalmente para o vestiário com o shaker na mão.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/nutrient-timing-pos-treino-2025-infographic.svg" alt="Infográfico sobre Nutrient Timing 2025: O Que a Ciência Atual Diz Sobre a Janela Pós-Treino — Montinho Personal Trainer" title="Nutrient Timing 2025: O Que a Ciência Atual Diz Sobre a Jane" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>A ciência avançou e a realidade é mais nuançada. Não é que a janela anabólica não existe — é que ela é muito maior do que se acreditava, e depende de fatores que a maioria das pessoas ignora.</p>
 
 <h2>O que é nutrient timing?</h2>
@@ -37341,6 +38656,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     ],
   content: `<p>O setor de suplementos pré-treino é um dos que mais cresce no Brasil — e um dos que mais geram confusão. Embalagens com mais de 30 ingredientes, doses proprietárias que escondem as quantidades e marketing que promete "energia explosiva e foco máximo" mascaram uma realidade mais simples: apenas alguns ingredientes têm evidência sólida de eficácia.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/suplementacao-pre-treino-avancada-infographic.svg" alt="Infográfico sobre Suplementação Pré-Treino Avançada: Ingredientes com Evidência Real — Montinho Personal Trainer" title="Suplementação Pré-Treino Avançada: Ingredientes com Evidênci" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os ingredientes com maior nível de evidência</h2>
 
 <h3>1. Cafeína — A base de qualquer pré-treino eficaz</h3>
@@ -37490,6 +38810,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     ],
   content: `<p>A maioria das pessoas periodiza o treino — muda o volume, a intensidade, os exercícios ao longo do tempo. Mas mantém a dieta igual o ano inteiro. Esse desalinhamento é uma das causas mais comuns de platô e de progressão mais lenta do que o potencial permitiria.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/periodizacao-nutricional-infographic.svg" alt="Infográfico sobre Periodização Nutricional: Como Ajustar a Dieta por Fase de Treino — Montinho Personal Trainer" title="Periodização Nutricional: Como Ajustar a Dieta por Fase de T" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Periodização nutricional é o conceito de alinhar a ingestão calórica e de macronutrientes com a fase atual de treino.</p>
 
 <h2>O que é periodização nutricional?</h2>
@@ -37651,6 +38976,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     ],
   content: `<p>A ciência é clara e inequívoca: a musculação é segura, eficaz e profundamente benéfica para pessoas acima dos 65 anos. A crença de que "é tarde" para começar a treinar é um mito que priva milhões de pessoas dos anos mais saudáveis e independentes de suas vidas.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/musculacao-acima-dos-65-anos-infographic.svg" alt="Infográfico sobre Musculação Acima dos 65 Anos: Sarcopenia, Longevidade e Como Começar — Montinho Personal Trainer" title="Musculação Acima dos 65 Anos: Sarcopenia, Longevidade e Como" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O que é sarcopenia e por que é grave</h2>
 
 <p>Sarcopenia é a perda progressiva de massa muscular e força associada ao envelhecimento. Começa discretamente por volta dos 30-35 anos (perda de 1-2% ao ano) e acelera após os 60 — podendo chegar a 3-8% ao ano em pessoas sedentárias.</p>
@@ -37794,6 +39124,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     ],
   content: `<p>A diferença entre um idoso de 70 anos independente e um dependente raramente é a doença. Mais frequentemente, é a força muscular, o equilíbrio e a mobilidade — qualidades que se perdem no sedentarismo mas se preservam com treino específico.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-funcional-para-idosos-infographic.svg" alt="Infográfico sobre Treino Funcional para Idosos: Mobilidade, Equilíbrio e Independência — Montinho Personal Trainer" title="Treino Funcional para Idosos: Mobilidade, Equilíbrio e Indep" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>O treino funcional para idosos não é sobre estética nem sobre performance atlética. É sobre manter as capacidades que definem a vida com dignidade e autonomia.</p>
 
 <h2>O que significa funcional para um idoso</h2>
@@ -37958,6 +39293,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     ],
   content: `<p>Um jogador de futebol e um fisiculturista podem treinar na mesma academia, mas seus programas deveriam ser completamente diferentes. O fisiculturista otimiza para hipertrofia máxima. O atleta otimiza para transferência de força para a performance no esporte específico.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/preparacao-atletica-especifica-infographic.svg" alt="Infográfico sobre Preparação Atlética Específica: Como Musculação Potencializa o Esporte — Montinho Personal Trainer" title="Preparação Atlética Específica: Como Musculação Potencializa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Essa diferença é fundamental — e ignorá-la é um dos erros mais comuns na preparação de atletas amadores.</p>
 
 <h2>O que é preparação física específica?</h2>
@@ -38129,6 +39469,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     ],
   content: `<p>Velocidade é frequentemente vista como um dom nato — você tem ou não tem. A fisiologia diz diferente. Embora haja componente genético significativo (proporção de fibras rápidas), a velocidade é altamente treinável, especialmente para quem nunca a desenvolveu intencionalmente.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-de-velocidade-e-agilidade-infographic.svg" alt="Infográfico sobre Treino de Velocidade e Agilidade: Programa Completo de Sprint e COD — Montinho Personal Trainer" title="Treino de Velocidade e Agilidade: Programa Completo de Sprin" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os componentes da velocidade e agilidade</h2>
 
 <p>Velocidade e agilidade são qualidades distintas mas relacionadas:</p>
@@ -38284,6 +39629,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     ],
   content: `<p>Correr e levantar peso são dois dos hábitos mais saudáveis que uma pessoa pode ter. Mas combiná-los sem estratégia cria o que os fisiologistas chamam de "efeito de interferência" — onde os dois adaptam em direções opostas e comprometem um ao outro.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/corrida-e-musculacao-infographic.svg" alt="Infográfico sobre Corrida e Musculação: Como Combinar as Duas Sem Prejudicar Nenhuma — Montinho Personal Trainer" title="Corrida e Musculação: Como Combinar as Duas Sem Prejudicar N" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <p>Com planejamento certo, as duas modalidades se potencializam. Sem planejamento, compromete as duas.</p>
 
 <h2>O efeito de interferência: o que é e quando acontece</h2>
@@ -38438,6 +39788,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>O treino isométrico é qualquer contração muscular em que o comprimento do músculo não muda durante o esforço. Você contrai com força máxima, mas não há movimento articular. Exemplos clássicos: segurar uma prancha, empurrar uma parede imóvel, manter um agachamento estático ou sustentar a barra em determinada posição do movimento.</p>
 <p>Diferente do treino isotônico (concêntrico + excêntrico), onde o músculo encurta e alonga durante a repetição, no isométrico a tensão é criada sem deslocamento. E esse detalhe muda completamente a resposta fisiológica.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-isometrico-hipertrofia-ganho-muscular-infographic.svg" alt="Infográfico sobre Treino Isométrico para Hipertrofia: Funciona Mesmo? Ciência e Protocolo Completo — Montinho Personal Trainer" title="Treino Isométrico para Hipertrofia: Funciona Mesmo? Ciência " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Treino Isométrico para Hipertrofia: O Que Diz a Ciência em 2025?</h2>
 <p>Durante décadas, o consenso era que o isométrico servia apenas para força em ângulos específicos — sem benefício real para hipertrofia. Essa visão mudou com as pesquisas das últimas décadas.</p>
 
@@ -38613,6 +39968,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   content: `<h2>A Pergunta Que Todo Mundo Faz</h2>
 <p>Proteína vegana ou whey protein: qual é melhor para ganhar músculo? A resposta em 2025 é: <strong>depende — mas menos do que você imagina</strong>. A qualidade proteica importa, mas não tanto quanto a quantidade total consumida e a consistência do treino. Vamos destrinchar o que a ciência realmente diz.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/proteina-vegana-whey-ganho-muscular-estudo-2025-infographic.svg" alt="Infográfico sobre Proteína Vegana vs Whey para Ganho de Músculo: O Que a Ciência Diz em 2025 — Montinho Personal Trainer" title="Proteína Vegana vs Whey para Ganho de Músculo: O Que a Ciênc" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O Que Define a Qualidade de Uma Proteína?</h2>
 
 <h3>Score DIAAS: O Padrão Atual da OMS</h3>
@@ -38747,6 +40107,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   content: `<h2>Quando a Lesão É Mais do Que Física</h2>
 <p>Um atleta que quebra a perna não perde apenas a mobilidade — perde rotina, identidade, propósito e, frequentemente, parte de sua saúde mental. A ciência da psicologia esportiva reconhece que o processo de reabilitação é inseparável do estado psicológico do indivíduo. Ignorar essa dimensão é uma das principais razões pelas quais muitos atletas demoram mais do que o necessário para se recuperar — ou nunca voltam ao nível anterior.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/psicologia-atleta-lesionado-recuperacao-mental-infographic.svg" alt="Infográfico sobre Psicologia do Atleta Lesionado: Como a Mente Afeta a Recuperação Física — Montinho Personal Trainer" title="Psicologia do Atleta Lesionado: Como a Mente Afeta a Recuper" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O Modelo Integrado de Resposta à Lesão</h2>
 
 <h3>Teoria de Wiese-Bjornstal (1998, atualizada 2010)</h3>
@@ -38874,6 +40239,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Durante décadas, a crença popular era de que gestantes deveriam repousar e evitar qualquer esforço. Hoje, o American College of Obstetricians and Gynecologists (ACOG), o ACSM e a OMS convergem em recomendação oposta: <strong>gestantes saudáveis devem se exercitar regularmente</strong>.</p>
 <p>A questão não é "posso me exercitar?" — mas sim: qual exercício, com qual intensidade, em qual trimestre, com quais precauções?</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/exercicio-gravidez-gestante-treino-seguro-infographic.svg" alt="Infográfico sobre Exercício na Gravidez: Guia Completo para Gestantes se Exercitarem com Segurança — Montinho Personal Trainer" title="Exercício na Gravidez: Guia Completo para Gestantes se Exerc" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Benefícios do Exercício para Gestantes</h2>
 
 <h3>Para a Mãe</h3>
@@ -39047,6 +40417,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   content: `<h2>O Que É Sarcopenia e Por Que Ela Acontece</h2>
 <p>Sarcopenia é a perda progressiva e generalizada de massa muscular, força e função física associada ao envelhecimento. O termo vem do grego: <em>sarx</em> (carne) + <em>penia</em> (perda). Não se trata apenas de envelhecer — trata-se de uma condição clínica reconhecida pela OMS em 2016 como doença (CID-10: M62.50).</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/sarcopenia-idosos-prevencao-exercicio-resistido-infographic.svg" alt="Infográfico sobre Sarcopenia em Idosos: Como o Exercício Resistido Previne a Perda Muscular Após o — Montinho Personal Trainer" title="Sarcopenia em Idosos: Como o Exercício Resistido Previne a P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h3>Ritmo da Perda Muscular com a Idade</h3>
 <ul>
 <li>A partir dos 30 anos: perda de 3–8% de massa muscular por década</li>
@@ -39213,6 +40588,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>O treino híbrido força + corrida é a prática sistematizada de combinar musculação e corrida de longa distância com objetivos e protocolos definidos para ambas as modalidades. Diferente de simplesmente "correr e também malhar", o atleta híbrido periodiza e prioriza os dois estímulos de forma inteligente, buscando alto desempenho em força muscular e resistência cardiovascular simultaneamente.</p>
 <p>Em 2025, atletas como Nick Bare, Fergus Crawley e Hamish Adams popularizaram o conceito no mundo — e no Brasil, a tendência chegou com força.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-hibrido-forca-corrida-2025-infographic.svg" alt="Infográfico sobre Treino Híbrido Força + Corrida em 2025: Como Combinar Sem Perder Músculo Nem Per — Montinho Personal Trainer" title="Treino Híbrido Força + Corrida em 2025: Como Combinar Sem Pe" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>A Ciência do Treino Concorrente</h2>
 
 <h3>O Efeito de Interferência — Real ou Exagerado?</h3>
@@ -39372,6 +40752,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Durante décadas, a resposta padrão a qualquer lesão muscular era RICE: Rest (repouso), Ice (gelo), Compression (compressão), Elevation (elevação). O protocolo foi proposto pelo Dr. Gabe Mirkin em 1978 — e o próprio criador o abandonou em 2014, reconhecendo que o gelo e o repouso prolongado podem retardar a cicatrização.</p>
 <p>Em 2019, Blaise Dubois e Jean-François Esculier publicaram no British Journal of Sports Medicine o protocolo <strong>PEACE & LOVE</strong> — a evolução baseada em evidências modernas da biologia da cicatrização.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/cicatrizacao-lesao-muscular-reabilitacao-ativa-infographic.svg" alt="Infográfico sobre Cicatrização de Lesão Muscular: Do Protocolo PEACE & LOVE à Reabilitação Ativa — Montinho Personal Trainer" title="Cicatrização de Lesão Muscular: Do Protocolo PEACE & LOVE à " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>As Três Fases da Cicatrização Muscular</h2>
 <p>Para entender o PEACE & LOVE, é preciso compreender o que acontece no músculo após uma lesão.</p>
 
@@ -39521,6 +40906,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>O exercício físico intenso aumenta a demanda metabólica de vitaminas e minerais em 20–100% dependendo do nutriente. Ao mesmo tempo, o suor elimina micronutrientes em quantidade significativa. Atletas que seguem dietas restritivas (cutting, low carb extremo, vegano sem planejamento) amplificam ainda mais esse risco.</p>
 <p>O problema: a maioria das deficiências moderadas não gera sintomas óbvios. O atleta apenas "rende menos", "recupera mais devagar" ou "sente mais lesões" — sem identificar a causa.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/vitaminas-minerais-atleta-deficiencia-desempenho-infographic.svg" alt="Infográfico sobre Vitaminas e Minerais para Atletas: Quais Deficiências Destroem Sua Performance — Montinho Personal Trainer" title="Vitaminas e Minerais para Atletas: Quais Deficiências Destro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os 8 Micronutrientes Mais Críticos para Atletas</h2>
 
 <h3>1. Vitamina D: O "Hormônio da Performance"</h3>
@@ -39673,6 +41063,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   content: `<h2>O Que Muda no Corpo na Pós-Menopausa</h2>
 <p>A pós-menopausa começa 12 meses após a última menstruação — e marca o início de uma nova fase fisiológica. A queda de estrogênio para níveis mínimos desencadeia mudanças que afetam diretamente a composição corporal:</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-pos-menopausa-metabolismo-composicao-corporal-infographic.svg" alt="Infográfico sobre Treino na Pós-Menopausa: Como Reverter as Mudanças de Composição Corporal Após o — Montinho Personal Trainer" title="Treino na Pós-Menopausa: Como Reverter as Mudanças de Compos" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h3>1. Redistribuição da Gordura Corporal</h3>
 <p>O estrogênio favorece o depósito de gordura subcutânea (quadris, glúteos, coxas) — o padrão ginoide. Com sua queda, a gordura migra para o compartimento visceral (abdominal profundo) — padrão androide, associado a maior risco cardiovascular, inflamação sistêmica e resistência à insulina.</p>
 <p>Dados epidemiológicos: mulheres na pós-menopausa ganham em média 1–1,5 kg/ano, com aumento desproporcional de gordura visceral mesmo sem aumento de peso total.</p>
@@ -39808,6 +41203,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   content: `<h2>O Que É o Índice Glicêmico?</h2>
 <p>O Índice Glicêmico (IG) é uma escala de 0 a 100 que classifica os carboidratos conforme a velocidade com que elevam a glicemia após o consumo, em comparação à glicose pura (IG=100). Desenvolvido por David Jenkins na Universidade de Toronto em 1981, o IG é uma ferramenta útil — mas frequentemente mal aplicada no contexto esportivo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/indice-glicemico-carboidrato-pre-pos-treino-timing-infographic.svg" alt="Infográfico sobre Índice Glicêmico e Carboidratos no Treino: Qual Escolher Antes e Depois do Exerc — Montinho Personal Trainer" title="Índice Glicêmico e Carboidratos no Treino: Qual Escolher Ant" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h3>Classificação do IG</h3>
 <table>
 <thead><tr><th>Classificação</th><th>IG</th><th>Exemplos</th></tr></thead>
@@ -39934,6 +41334,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   content: `<h2>Por Que Nem Todo Colágeno É Igual</h2>
 <p>O colágeno é a proteína mais abundante do corpo humano — representa 30% da proteína total. Mas existem pelo menos 28 tipos diferentes de colágeno, cada um com estrutura e função específicas. Para atletas e praticantes de musculação, os tipos mais relevantes são I, II e X.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/colageno-hidrolisado-tipos-articulacoes-tendoes-infographic.svg" alt="Infográfico sobre Colágeno Hidrolisado para Articulações e Tendões: Tipos, Doses e Evidências 2025 — Montinho Personal Trainer" title="Colágeno Hidrolisado para Articulações e Tendões: Tipos, Dos" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h3>Os Tipos de Colágeno e Suas Funções</h3>
 
 <table>
@@ -40058,6 +41463,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Um fisiculturista periódica em função de picos visuais — competição, foto, praia. Um atleta periódica em função de picos de performance — torneios, campeonatos, jogos. O objetivo é diferente, o design do treino é diferente, os critérios de sucesso são diferentes.</p>
 <p>A periodização esportiva específica (sport-specific periodization) é a ciência de organizar o treinamento de força, condicionamento e técnica ao longo do tempo para que o atleta atinja seu pico de performance no momento certo — e se recupere sem perder o que conquistou.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/periodizacao-treino-natacao-basquete-futebol-especifico-infographic.svg" alt="Infográfico sobre Periodização de Treino para Esportes: Natação, Basquete, Futebol e Tênis — Montinho Personal Trainer" title="Periodização de Treino para Esportes: Natação, Basquete, Fut" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os Modelos de Periodização para Atletas</h2>
 
 <h3>Periodização Linear (Tradicional)</h3>
@@ -40201,6 +41611,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   content: `<h2>O Que É a Beta-Alanina e Como Funciona</h2>
 <p>A beta-alanina é um aminoácido não-essencial que, quando ingerida, serve como substrato para a síntese de carnosina no músculo esquelético. A carnosina (β-alanil-L-histidina) é um dipeptídeo que funciona como tampão de pH intracelular — neutralizando o acúmulo de íons H+ (ácido) durante exercícios de alta intensidade.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/beta-alanina-carnosina-fadiga-forca-suplemento-infographic.svg" alt="Infográfico sobre Beta-Alanina e Carnosina: O Suplemento Que Adia a Fadiga Muscular com Ciência Só — Montinho Personal Trainer" title="Beta-Alanina e Carnosina: O Suplemento Que Adia a Fadiga Mus" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h3>O Problema: Acúmulo de Ácido Durante Exercício Intenso</h3>
 <p>Durante exercício de alta intensidade (musculação, sprints, HIIT), a glicólise anaeróbica gera ATP rapidamente mas produz H+ como subproduto. O acúmulo de H+ diminui o pH intracelular — criando o ambiente ácido responsável pela sensação de "queimação" muscular e pela falha contrátil (incapacidade de continuar o movimento).</p>
 <p>A carnosina age como um "esponja de ácido", absorvendo H+ e mantendo o pH em nível funcional por mais tempo — atrasando a fadiga e permitindo mais repetições em alta intensidade.</p>
@@ -40324,6 +41739,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   content: `<h2>O Que É Uma Ultramaratona</h2>
 <p>Qualquer corrida acima de 42,195km é tecnicamente uma ultramaratona. Na prática, as distâncias mais populares são 50km, 50 milhas (80km), 100km e 100 milhas (160km). Muitas ultramaratonas são disputadas em trail (trilhas), com ganho de elevação significativo e superfície irregular — o que muda completamente a preparação em relação a corridas de rua.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-ultramaratona-resistencia-preparacao-infographic.svg" alt="Infográfico sobre Treino para Ultramaratona: Preparação Completa para Provas Acima de 42km — Montinho Personal Trainer" title="Treino para Ultramaratona: Preparação Completa para Provas A" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Como a Ultra Difere da Maratona Fisiologicamente</h2>
 
 <h3>Combustível</h3>
@@ -40482,6 +41902,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Uma meta-análise publicada no British Journal of Sports Medicine em 2022 analisou dados de 2 milhões de pessoas e encontrou que indivíduos com alto nível de atividade física tiveram redução de mortalidade por todas as causas de até <strong>35%</strong> comparados a sedentários. Nenhum medicamento aprovado chega perto desse número.</p>
 <p>Peter Attia, médico especialista em longevidade e autor de "Outlive", classifica o exercício como a "única intervenção comprovada para retardar o declínio de todas as funções corporais associadas ao envelhecimento" — força, cardiorrespiratório, metabólico, cognitivo e imune.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/exercicio-longevidade-envelhecimento-saudavel-vida-infographic.svg" alt="Infográfico sobre Exercício e Longevidade: O Que a Ciência Diz Sobre Viver Mais e Melhor — Montinho Personal Trainer" title="Exercício e Longevidade: O Que a Ciência Diz Sobre Viver Mai" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os Cinco Vetores do Envelhecimento Que o Exercício Combate</h2>
 
 <h3>1. Declínio Cardiorrespiratório (VO2max)</h3>
@@ -40592,6 +42017,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>RED-S (Relative Energy Deficiency in Sport) é um conceito definido pelo Comitê Olímpico Internacional em 2014 para descrever a síndrome causada por disponibilidade energética (DE) insuficiente em atletas — ou seja, quando a ingestão calórica não cobre os gastos energéticos do exercício e das funções fisiológicas essenciais.</p>
 <p>O RED-S é a evolução e ampliação do conceito anterior de "Tríade da Atleta Feminina" (distúrbio alimentar + amenorreia + osteoporose) — reconhecendo que a deficiência energética afeta igualmente atletas do sexo masculino e causa um espectro muito mais amplo de consequências do que os três componentes da tríade.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/deficiencia-energia-atleta-RED-S-recuperacao-infographic.svg" alt="Infográfico sobre RED-S: A Síndrome de Deficiência Energética em Atletas Que Ninguém Fala — Montinho Personal Trainer" title="RED-S: A Síndrome de Deficiência Energética em Atletas Que N" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>A Disponibilidade Energética: O Conceito Central</h2>
 <p>A disponibilidade energética (DE) é calculada como:</p>
 <div style="background:#f0f9ff;border-left:4px solid #3b82f6;padding:1rem;margin:1rem 0">
@@ -40739,6 +42169,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Treinamento multimodal é a abordagem que integra sistematicamente múltiplas capacidades físicas e mentais: força, resistência aeróbica, mobilidade articular, estabilidade, respiração e atenção plena (mindfulness). Em vez de especializar-se em uma única capacidade, o atleta multimodal desenvolve todas em harmonia — buscando o que Kelly Starrett chama de "atleta completo".</p>
 <p>A tendência cresceu exponencialmente entre 2020 e 2025, impulsionada por conceitos como "Primal Movement", "Functional Range Conditioning", "Ido Portal Method" e a popularização do yoga e pilates no universo do fitness de alta performance.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treinamento-multimodal-forca-mobilidade-mindfulness-2025-infographic.svg" alt="Infográfico sobre Treinamento Multimodal 2025: Combinando Força, Mobilidade e Mindfulness para Res — Montinho Personal Trainer" title="Treinamento Multimodal 2025: Combinando Força, Mobilidade e " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por Que a Abordagem Fragmentada Falha</h2>
 
 <h3>O Problema do Especialista Unidimensional</h3>
@@ -40873,6 +42308,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>A maioria das pessoas associa ômega-3 exclusivamente à saúde cardiovascular. Para atletas, o cenário é mais amplo e mais interessante: o EPA e o DHA interferem diretamente na resolução da inflamação pós-exercício, na síntese proteica muscular e na sensibilidade à insulina — três pilares da adaptação ao treino.</p>
 <p>Este artigo aborda o que a pesquisa mais recente (2022–2025) diz sobre ômega-3 para atletas, com foco em mecanismos, doses corretas e protocolo de uso.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/omega-3-atleta-avancado-inflamacao-recuperacao-2025-infographic.svg" alt="Infográfico sobre Ômega-3 para Atletas em 2025: Protocolo Avançado de EPA, DHA e Recuperação Muscu — Montinho Personal Trainer" title="Ômega-3 para Atletas em 2025: Protocolo Avançado de EPA, DHA" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>EPA vs DHA: Funções Diferentes, Papéis Complementares</h2>
 
 <table>
@@ -41007,6 +42447,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>A maioria das pessoas "aquece" para o treino com 5–10 minutos de esteira ou bicicleta e considera o trabalho feito. Esse tipo de aquecimento eleva a temperatura corporal e a frequência cardíaca — dois objetivos válidos — mas não ativa os padrões neuromusculares específicos que serão exigidos no treino. O resultado: primeiras séries com ativação subótima, padrões compensatórios e maior risco de lesão.</p>
 <p>O <strong>priming neuromotor</strong> (ou pré-ativação muscular específica) vai além — ele "acorda" os neurônios motores e as unidades motoras dos músculos que serão trabalhados, otimizando o recrutamento desde a primeira série de trabalho.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/ativacao-muscular-pre-treino-neuromotor-priming-infographic.svg" alt="Infográfico sobre Ativação Muscular Pré-Treino: O Protocolo de Priming Neuromotor Para Mais Força  — Montinho Personal Trainer" title="Ativação Muscular Pré-Treino: O Protocolo de Priming Neuromo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>A Fisiologia da Ativação Muscular</h2>
 
 <h3>O Que Acontece Sem Ativação Adequada</h3>
@@ -41142,6 +42587,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>O sobretreinamento não é um evento — é uma progressão. E o diagnóstico correto depende de entender em qual estágio o atleta se encontra, pois o tratamento de cada fase é diferente.</p>
 <p>O modelo de consenso atual (Meeusen et al., 2013 — European Journal of Sport Science) define três estágios distintos:</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/sobretreinamento-cronico-diagnostico-hormonal-tratamento-infographic.svg" alt="Infográfico sobre Sobretreinamento Crônico: Diagnóstico Hormonal, Estágios e Protocolo de Tratamen — Montinho Personal Trainer" title="Sobretreinamento Crônico: Diagnóstico Hormonal, Estágios e P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Estágio 1: Overreaching Funcional (FOR)</h2>
 <p>O overreaching funcional é a sobrecarga deliberada e temporária de treino com período de recuperação planejado. É a ferramenta de periodização usada por todos os atletas sérios.</p>
 <ul>
@@ -41332,6 +42782,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>O treino ABCD é uma <strong>divisão de treino em 4 dias</strong>, onde cada letra representa uma sessão com foco em grupos musculares diferentes. É o modelo preferido por praticantes intermediários que já superaram o período de adaptação e buscam especialização por grupo muscular com frequência semanal de 1x ou 2x (quando o ciclo se repete).</p>
 <p>Diferente do <a href="/blog/como-montar-treino-abcde">treino ABCDE</a> — que distribui o volume em 5 dias — o ABCD concentra mais volume por sessão e exige apenas 4 dias de academia por semana. Para executivos e profissionais com agenda cheia em Alphaville e Tamboré, essa é frequentemente a melhor configuração.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-abcd-para-hipertrofia-infographic.svg" alt="Infográfico sobre Treino ABCD para Hipertrofia: Guia Completo com Fichas e Ciência — Montinho Personal Trainer" title="Treino ABCD para Hipertrofia: Guia Completo com Fichas e Ciê" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>ABCD vs Outras Divisões: Qual Escolher?</h2>
 <table>
 <thead><tr><th>Divisão</th><th>Dias/semana</th><th>Frequência por músculo</th><th>Perfil ideal</th></tr></thead>
@@ -41499,6 +42954,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>O treino upper/lower — ou treino superior/inferior — é uma divisão em que você separa o corpo em duas partes: <strong>membros superiores</strong> (peito, costas, ombros, bíceps, tríceps) e <strong>membros inferiores</strong> (quadríceps, posterior de coxa, glúteos, panturrilha). Cada parte é treinada 2 vezes por semana em 4 sessões.</p>
 <p>É a divisão preferida de pesquisadores como Brad Schoenfeld, Eric Helms e Mike Israetel quando o critério é <strong>frequência de estímulo com recuperação adequada</strong>. E os dados científicos sustentam essa preferência.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-upper-lower-superior-inferior-infographic.svg" alt="Infográfico sobre Treino Upper/Lower: A Divisão que Maximiza Hipertrofia em 4 Dias — Montinho Personal Trainer" title="Treino Upper/Lower: A Divisão que Maximiza Hipertrofia em 4 " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por Que o Upper/Lower É Tão Eficiente?</h2>
 <p>A meta-análise de Schoenfeld, Ogborn e Krieger (2016) — <a href="https://pubmed.ncbi.nlm.nih.gov/26609282/" target="_blank" rel="noopener noreferrer">publicada no JSCR</a> — mostrou que treinar cada grupo muscular <strong>2x por semana produz ~40% mais hipertrofia</strong> do que treinar 1x, com volume semanal igual. O upper/lower é a forma mais prática de atingir essa frequência sem comprometer a recuperação.</p>
 <p>No treino <a href="/blog/treino-abcd-para-hipertrofia">ABCD tradicional</a>, você treina cada músculo 1x/semana. No upper/lower, cada músculo recebe estímulo 2x — o que é documentadamente superior para a maioria dos praticantes intermediários.</p>
@@ -41629,6 +43089,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>O maior erro de quem quer emagrecer ou ganhar músculo não acontece na academia — acontece no supermercado. A dieta que você consegue manter é a que tem os ingredientes certos disponíveis em casa. Sem planejamento de compras, a escolha por alimentos processados é automática: conveniência sempre vence o esforço.</p>
 <p>Esta lista foi construída para otimizar <strong>proteína, saciação, custo-benefício e praticidade</strong> — os quatro pilares que fazem uma dieta sustentável a longo prazo, não apenas nos primeiros 15 dias.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/lista-de-compras-fitness-semanal-infographic.svg" alt="Infográfico sobre Lista de Compras Fitness Semanal: 60 Alimentos para Músculo e Emagrecimento — Montinho Personal Trainer" title="Lista de Compras Fitness Semanal: 60 Alimentos para Músculo " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Lista de Compras Fitness por Categoria</h2>
 
 <h3>Proteínas Animais (prioridade máxima)</h3>
@@ -41792,6 +43257,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>O maior erro de quem quer emagrecer é cortar calorias demais, rápido demais, e acabar perdendo tanto gordura quanto músculo — o que desacelera o metabolismo e dificulta ainda mais o processo. A ciência é clara: um déficit calórico moderado (300–500 kcal abaixo do gasto total) combinado com alta ingestão proteica (1,6–2,2g/kg de peso) preserva a massa muscular enquanto mobiliza gordura.</p>
 <p>Este cardápio foi construído sobre esses princípios, conforme diretrizes do <a href="https://pubmed.ncbi.nlm.nih.gov/26817506/" target="_blank" rel="noopener noreferrer">International Society of Sports Nutrition</a>. Antes de começar, calcule seu <a href="/blog/deficit-calorico-como-calcular">déficit calórico ideal</a>. O cardápio abaixo foi projetado para uma pessoa de 80kg buscando 1.800–2.000 kcal/dia — ajuste proporcionalmente ao seu peso e metabolismo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/cardapio-semanal-emagrecer-com-musculo-infographic.svg" alt="Infográfico sobre Cardápio Semanal para Emagrecer Sem Perder Músculo: 7 Dias Completos — Montinho Personal Trainer" title="Cardápio Semanal para Emagrecer Sem Perder Músculo: 7 Dias C" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Princípios do Cardápio</h2>
 <ul>
 <li><strong>Proteína em toda refeição:</strong> mínimo de 25–35g por refeição para maximizar síntese proteica</li>
@@ -41923,6 +43393,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Um superávit excessivo não acelera o ganho de músculo — o corpo tem uma capacidade máxima de síntese proteica diária. O excesso vai diretamente para o tecido adiposo. A revisão de <a href="https://pubmed.ncbi.nlm.nih.gov/19927027/" target="_blank" rel="noopener noreferrer">Kreider et al. no JISSN</a> mostra que superávits moderados preservam composição corporal durante a fase de ganho de massa.</p>
 <p>Este cardápio é projetado para uma pessoa de 80kg com treino de musculação 4x/semana, buscando <strong>2.800–3.000 kcal/dia</strong>. Ajuste as quantidades ao seu peso e nível de atividade.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/cardapio-semanal-ganho-de-massa-muscular-infographic.svg" alt="Infográfico sobre Cardápio Semanal para Ganho de Massa Muscular: 7 Dias com Superávit Real — Montinho Personal Trainer" title="Cardápio Semanal para Ganho de Massa Muscular: 7 Dias com Su" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Cardápio Completo — 7 Dias para Ganho de Massa</h2>
 
 <h3>Segunda-Feira (Dia de treino — volume calórico maior)</h3>
@@ -42055,6 +43530,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Durante décadas a sauna foi tratada como benefício secundário de academias premium — agradável, mas opcional. Isso mudou. A partir das pesquisas do Dr. Rhonda Patrick e, mais recentemente, do trabalho de Peter Attia sobre longevidade e performance, o interesse científico pelo calor terapêutico (termo: <em>saúna finlandesa</em> ou <em>saúna de calor seco</em>) explodiu.</p>
 <p>O que os dados mostram não é que a sauna é mágica — mas que ela acessa mecanismos biológicos específicos que são relevantes para qualquer pessoa que treina sério.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/sauna-recuperacao-muscular-ciencia-infographic.svg" alt="Infográfico sobre Sauna Após o Treino: O Que a Ciência Diz Sobre Recuperação Muscular — Montinho Personal Trainer" title="Sauna Após o Treino: O Que a Ciência Diz Sobre Recuperação M" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O Que Acontece no Seu Corpo Durante a Sauna</h2>
 
 <h3>1. Proteínas de Choque Térmico (HSPs)</h3>
@@ -42158,6 +43638,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>O banho frio pós-treino — ou a imersão em água fria, cold plunge — virou febre entre atletas e praticantes de musculação nos últimos anos. Polarizou completamente: de um lado, quem jura que é indispensável para recuperação; do outro, pesquisadores mostrando que pode bloquear hipertrofia.</p>
 <p>Ambos estão certos — e os dois estão errados se aplicarem a resposta de forma absoluta. Isso porque <strong>os efeitos do frio dependem criticamente do seu objetivo principal</strong>: recuperação ou ganho de massa muscular.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/banho-frio-pos-treino-ciencia-infographic.svg" alt="Infográfico sobre Banho Frio Após o Treino: Ajuda ou Atrapalha a Hipertrofia? — Montinho Personal Trainer" title="Banho Frio Após o Treino: Ajuda ou Atrapalha a Hipertrofia?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O Que o Frio Faz no Músculo Após o Treino</h2>
 <p>O frio (0–15°C) induz vasoconstrição periférica, reduz a temperatura tecidual e bloqueia parte da sinalização inflamatória pós-exercício. Isso inclui a redução de:</p>
 <ul>
@@ -42265,6 +43750,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     content: `<h2>Por Que o Pulldown É Essencial para o Treino de Costas</h2>
 <p>O pulldown (puxada frontal no pulley) é o exercício de puxada vertical mais acessível para a maioria dos praticantes de musculação — especialmente para quem ainda não consegue fazer <a href="/blog/como-fazer-barra-fixa">barras fixas</a> com o próprio peso ou com carga adicional. Trabalhado corretamente, ele recruta primariamente o <strong>grande dorsal (latíssimo do dorso)</strong>, promovendo a famosa largura do "V" nas costas e sendo fundamental em qualquer protocolo de <a href="/blog/treino-de-costas-hipertrofia">treino de costas para hipertrofia</a>.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-fazer-pulldown-puxada-frontal-infographic.svg" alt="Infográfico sobre Como Fazer Pulldown (Puxada Frontal): Técnica Correta e Erros Comuns — Montinho Personal Trainer" title="Como Fazer Pulldown (Puxada Frontal): Técnica Correta e Erro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Músculos Trabalhados no Pulldown</h2>
 <ul>
 <li><strong>Primários:</strong> Grande dorsal (latíssimo do dorso), redondo maior</li>
@@ -42373,6 +43863,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Se o <a href="/blog/como-fazer-pulldown-puxada-frontal">pulldown</a> desenvolve a largura das costas, a remada curvada desenvolve a <strong>espessura</strong> — a profundidade muscular que dá densidade ao dorso quando visto de lado. É o movimento de puxada horizontal mais completo da musculação, recrutando simultaneamente dorsal, romboides, trapézio médio e infraespinhoso.</p>
 <p>É também um dos movimentos mais feitos de forma errada — com lombar em flexão, carga excessiva e movimento de bíceps disfarçado de remada. Dominar a técnica é o que define se você está construindo costas ou acumulando risco de lesão.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-fazer-remada-curvada-tecnica-infographic.svg" alt="Infográfico sobre Como Fazer Remada Curvada: Técnica Correta, Pegadas e Variações — Montinho Personal Trainer" title="Como Fazer Remada Curvada: Técnica Correta, Pegadas e Variaç" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Músculos Trabalhados na Remada Curvada</h2>
 <ul>
 <li><strong>Primários:</strong> Grande dorsal, romboides, trapézio médio e inferior</li>
@@ -42481,6 +43976,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     content: `<h2>A Verdade Sobre o Horário de Treino</h2>
 <p>Antes de qualquer dado: o <strong>melhor horário para treinar é aquele que você consegue manter com consistência</strong>. Um treino às 6h da manhã que você faz 5x/semana bate qualquer treino às 19h que você abandona em 2 meses. Dito isso, existem diferenças fisiológicas reais entre treinar de manhã e à noite — e conhecê-las ajuda a otimizar seus resultados dentro da janela de horário disponível.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-manha-ou-noite-qual-e-melhor-infographic.svg" alt="Infográfico sobre Treino de Manhã ou à Noite: Qual Realmente Produz Mais Resultado? — Montinho Personal Trainer" title="Treino de Manhã ou à Noite: Qual Realmente Produz Mais Resul" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O Que Muda Fisiologicamente ao Longo do Dia</h2>
 
 <h3>Temperatura Corporal</h3>
@@ -42596,6 +44096,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Ciclo de carboidratos (carb cycling) é uma estratégia nutricional que varia a ingestão de carboidratos de forma planejada — dias de <strong>alto carboidrato</strong> nos treinos mais intensos, dias de <strong>baixo carboidrato</strong> nos dias de descanso ou treinos leves. A ingestão proteica permanece constante ao longo de toda a semana.</p>
 <p>A ideia não é nova — fisiculturistas a usam há décadas. Mas o interesse científico cresceu quando pesquisadores começaram a investigar os mecanismos pelos quais a manipulação de carboidrato afeta composição corporal, sensibilidade à insulina e performance esportiva.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/ciclo-de-carboidratos-carb-cycling-infographic.svg" alt="Infográfico sobre Ciclo de Carboidratos (Carb Cycling): Funciona? Protocolo Completo — Montinho Personal Trainer" title="Ciclo de Carboidratos (Carb Cycling): Funciona? Protocolo Co" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>A Lógica Fisiológica do Carb Cycling</h2>
 <p>O carboidrato é o principal substrato energético para treinos de alta intensidade — especialmente musculação. Em dias de treino pesado, o glicogênio muscular é demandado e deve ser reposto. Em dias de descanso, a demanda energética é menor e a ingestão de carboidrato pode ser reduzida sem comprometer a performance.</p>
 <p>A alternância cria um efeito interessante:</p>
@@ -42707,6 +44212,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>A L-glutamina é o aminoácido livre mais abundante no plasma sanguíneo e no músculo esquelético — chega a representar 60% dos aminoácidos livres no músculo. É um aminoácido <strong>condicionalmente essencial</strong>: o corpo produz em quantidade suficiente em condições normais, mas em situações de alto estresse (cirurgia, doença grave, exercício de volume muito alto) a produção pode não suprir a demanda.</p>
 <p>Esse fato foi suficiente para que a indústria de suplementos construísse uma narrativa de que qualquer pessoa que treine precisa de suplementação de glutamina. A ciência, no entanto, conta uma história mais nuançada.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/l-glutamina-funciona-para-musculacao-infographic.svg" alt="Infográfico sobre L-Glutamina Funciona para Musculação? O Que a Ciência Realmente Diz — Montinho Personal Trainer" title="L-Glutamina Funciona para Musculação? O Que a Ciência Realme" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O Que Acontece com a Glutamina Durante o Exercício</h2>
 <p>O treino de musculação de alta intensidade <strong>reduz os níveis plasmáticos de glutamina em até 20–40%</strong>, especialmente em sessões muito longas ou de alto volume. Esse declínio é real e foi documentado em múltiplos estudos. O problema com a suplementação é diferente: se você consome proteína adequada (1,6–2,2g/kg/dia) de alimentos completos, essa proteína fornece glutamina suficiente para repor os estoques musculares.</p>
 <p>Fontes alimentares ricas em glutamina: carne bovina, frango, peixe, ovos, leite, queijo. Quem come proteína adequada simplesmente não tem deficiência de glutamina para corrigir.</p>
@@ -42795,6 +44305,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>O HMB (beta-hidroxi-beta-metilbutirato) é um metabólito da leucina — produzido naturalmente quando o corpo quebra esse aminoácido. Aproximadamente 5% da leucina consumida é convertida em HMB endogenamente. Para atingir doses de 3g/dia (usadas nos estudos), você precisaria de quase 60g de leucina — o que torna a suplementação necessária para atingir doses terapêuticas.</p>
 <p>O mecanismo primário do HMB é a inibição do proteassoma ubiquitina-proteassoma — a maquinaria celular responsável pela degradação proteica muscular. Secundariamente, estimula mTORC1 (via ativação de síntese proteica), embora com potência menor que a leucina isolada.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/hmb-suplemento-preserva-musculo-infographic.svg" alt="Infográfico sobre HMB: O Suplemento que Preserva Músculo (Evidências e Protocolo) — Montinho Personal Trainer" title="HMB: O Suplemento que Preserva Músculo (Evidências e Protoco" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O Que as Evidências Mostram (e o Que Não Mostram)</h2>
 <h3>Estudos Favoráveis ao HMB</h3>
 <p>Os estudos de Wilson et al. (2014) no <em>Journal of Strength and Conditioning Research</em> mostraram ganhos impressionantes — até 7kg de massa magra em 12 semanas — que nunca foram replicados de forma independente. Esses resultados foram questionados por estatísticos e pesquisadores como Eric Helms e Greg Nuckols, que identificaram irregularidades nos dados.</p>
@@ -42886,6 +44401,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Você tem 45 minutos de janela entre reuniões para ir à academia. Não dá para sentar em um restaurante, muito menos preparar uma refeição em casa. O lanche pré-treino precisa ser: rápido (< 5 min de preparo ou zero preparo), portátil, digerível em 30-60 minutos, e energeticamente funcional.</p>
 <p>A pesquisa de Brad Schoenfeld e Alan Aragon no <em>Journal of the International Society of Sports Nutrition</em> estabelece que o pré-treino ideal contém carboidratos de médio índice glicêmico (25-40g) e proteína (15-25g), consumidos 60-90 minutos antes do treino. Quando o tempo é menor, alimentos mais leves e de digestão rápida são necessários.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/lanches-pre-treino-executivos-infographic.svg" alt="Infográfico sobre 10 Lanches Pré-Treino para Executivos: Energia sem Perder Tempo — Montinho Personal Trainer" title="10 Lanches Pré-Treino para Executivos: Energia sem Perder Te" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os 10 Lanches (Organizados por Praticidade)</h2>
 
 <h3>Nível 1: Zero Preparo (Pegue e Vá)</h3>
@@ -43000,6 +44520,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>A apneia obstrutiva do sono (AOS) afeta estimados 32% dos brasileiros adultos, segundo a I Consenso Brasileiro de Insônia. Entre executivos acima de 40 anos — exatamente o público de Alphaville e Tamboré — a prevalência é ainda maior, associada ao estresse crônico, sedentarismo e sobrepeso.</p>
 <p>Para quem treina com objetivos de hipertrofia ou emagrecimento, a apneia não tratada é um sabotador silencioso de resultados. O hormônio do crescimento (GH) tem 70-80% de sua secreção noturna nas fases de sono profundo (ondas lentas) — as mesmas que a apneia fragmenta repetidamente. Sem sono de qualidade, a síntese proteica pós-treino é comprometida e o cortisol noturno permanece elevado.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/apneia-do-sono-e-exercicio-infographic.svg" alt="Infográfico sobre Apneia do Sono e Exercício: Como o Treino Pode Ajudar (e Quando Não Basta) — Montinho Personal Trainer" title="Apneia do Sono e Exercício: Como o Treino Pode Ajudar (e Qua" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Apneia e Composição Corporal: O Ciclo Vicioso</h2>
 <p>A relação é bidirecional e autorreforçante:</p>
 <ol>
@@ -43100,6 +44625,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <li>Anabolizantes esteroides — especialmente 17α-alquilados e decanoato de nandrolona — causam dislipidemia grave (LDL elevado, HDL colapsa para < 10 mg/dL)</li>
 </ol>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/dislipidemia-musculacao-colesterol-infographic.svg" alt="Infográfico sobre Dislipidemia e Musculação: Como o Treino Melhora o Colesterol — Montinho Personal Trainer" title="Dislipidemia e Musculação: Como o Treino Melhora o Colestero" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Como a Musculação Afeta o Perfil Lipídico</h2>
 <p>A meta-análise de Kelley e Kelley (2009) no <em>American Journal of Cardiology</em>, compilando 29 ensaios clínicos randomizados, mostrou os efeitos do treinamento resistido isolado no lipidograma:</p>
 <table>
@@ -43199,6 +44729,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>A lógica é fundamentada no conceito de que as repetições com maior estímulo hipertrófico são aquelas próximas à falha muscular — tipicamente as últimas 4-5 repetições de uma série convencional. Em uma série de 12 repetições, as primeiras 7-8 servem principalmente como "aquecimento" neurometabólico para as últimas 4-5, que são as que realmente provocam os estímulos mecânicos e metabólicos para hipertrofia.</p>
 <p>A pergunta de Fagerli foi: e se pudéssemos acumular mais dessas repetições de alto estímulo em menos tempo?</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/mio-reps-o-que-sao-como-fazer-infographic.svg" alt="Infográfico sobre Mio-Reps: O Que São e Como Usar para Hipertrofia Máxima — Montinho Personal Trainer" title="Mio-Reps: O Que São e Como Usar para Hipertrofia Máxima" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Como Executar os Mio-Reps: Protocolo Passo a Passo</h2>
 <ol>
 <li><strong>Série de ativação:</strong> Execute 12-15 repetições até a falha (ou muito próximo — 1-2 reps da falha). Esta série "carrega" o músculo com fadiga metabólica e recrutamento de unidades motoras de alto limiar.</li>
@@ -43297,6 +44832,11 @@ Mini-série 3: 3 reps → encerrar aqui (< 3 reps = fatigado demais)<br>
 <p>A orientação clássica de "espere 6 semanas" foi revisada. As diretrizes mais recentes do American College of Obstetricians and Gynecologists (ACOG, 2015) reconhecem que mulheres sem complicações podem retornar a atividades físicas leves (caminhada, exercícios respiratórios, Kegel) já nos primeiros dias após um parto vaginal sem complicações.</p>
 <p>Para atividades de maior intensidade (musculação, corrida, HIIT), o retorno gradual é recomendado a partir das 6-8 semanas para parto vaginal e 8-12 semanas para cesárea — sempre com liberação obstétrica e avaliação do assoalho pélvico.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-pos-parto-volta-ao-exercicio-infographic.svg" alt="Infográfico sobre Treino Pós-Parto: Guia Completo para Voltar ao Exercício com Segurança — Montinho Personal Trainer" title="Treino Pós-Parto: Guia Completo para Voltar ao Exercício com" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por Que o Retorno Gradual é Crítico</h2>
 <h3>Diástase Abdominal</h3>
 <p>A diástase dos retos abdominais — separação da linha alba — ocorre em 100% das gestações ao término, com graus variáveis de separação. Em aproximadamente 30-40% das mulheres, a diástase persiste além de 6 semanas pós-parto. Exercícios abdominais de alta pressão (crunch, sit-up, prancha com respiração errada) podem agravar a diástase se iniciados precocemente ou com técnica inadequada.</p>
@@ -43405,6 +44945,11 @@ Mini-série 3: 3 reps → encerrar aqui (< 3 reps = fatigado demais)<br>
 <p>O equipamento típico de uma academia de condomínio inclui: esteira(s), bike, elíptico, banco ajustável, rack de halteres (2-20kg), talvez uma barra com anilhas, e poucos aparelhos guiados. O desafio é transformar esse kit básico em estímulo suficiente para hipertrofia, condicionamento ou emagrecimento.</p>
 <p>A boa notícia: pesquisas mostram que ganhos de hipertrofia com halteres livres são equivalentes ou superiores a aparelhos guiados (Schwanbeck et al., 2020, <em>Journal of Strength and Conditioning Research</em>). O limitante real não é o equipamento — é o conhecimento de como usá-lo.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-em-condominio-como-aproveitar-infographic.svg" alt="Infográfico sobre Academia em Condomínio: Como Aproveitar ao Máximo com Equipamentos Limitados — Montinho Personal Trainer" title="Academia em Condomínio: Como Aproveitar ao Máximo com Equipa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Diagnóstico: O Que sua Academia de Condomínio Provavelmente Tem</h2>
 <h3>Equipamentos Mais Comuns</h3>
 <table>
@@ -43536,6 +45081,11 @@ Mini-série 3: 3 reps → encerrar aqui (< 3 reps = fatigado demais)<br>
 <p>Santana de Parnaíba tem crescido como município de alto padrão residencial, com condomínios fechados, população com alta renda e perfil de executivos e profissionais liberais que valorizam saúde e performance. Essa realidade cria uma demanda específica: pessoas com pouco tempo, objetivos claros (hipertrofia, emagrecimento, saúde cardiovascular, performance esportiva) e disposição para investir em qualidade.</p>
 <p>O mercado de personal trainers em Santana de Parnaíba — e na região que inclui Alphaville, Tamboré e Barueri — reflete essa demanda: há profissionais excelentes e profissionais medíocres cobrando preços similares. Saber distinguir um do outro pode fazer a diferença entre anos de progresso e anos perdidos.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-santana-de-parnaiba-infographic.svg" alt="Infográfico sobre Personal Trainer em Santana de Parnaíba: Como Escolher o Profissional Certo — Montinho Personal Trainer" title="Personal Trainer em Santana de Parnaíba: Como Escolher o Pro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Critérios Técnicos para Avaliar um Personal Trainer</h2>
 
 <h3>1. Formação Acadêmica</h3>
@@ -43648,6 +45198,11 @@ Mini-série 3: 3 reps → encerrar aqui (< 3 reps = fatigado demais)<br>
 <p>Uma meta-análise publicada no <em>Annals of Internal Medicine</em> com mais de 47 estudos e 800.000 participantes confirmou: tempo excessivo sentado é um fator de risco independente para diabetes tipo 2, doença cardiovascular, câncer e mortalidade geral — mesmo em pessoas que se exercitam regularmente fora do trabalho. O problema não é apenas a ausência de movimento; é a compressão crônica de estruturas que não foram projetadas para suportar 8-10 horas de carga estática.</p>
 <p>Para executivos em Alphaville, Tamboré e Barueri que trabalham em escritórios ou em home office, esse é um risco cotidiano. A ginástica laboral — quando feita com protocolo correto — é uma das estratégias mais custo-efetivas disponíveis para mitigar esses danos e ainda aumentar a produtividade cognitiva.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/ginastica-laboral-escritorio-infographic.svg" alt="Infográfico sobre Ginástica Laboral no Escritório: Exercícios Para Quem Fica Sentado o Dia Todo — Montinho Personal Trainer" title="Ginástica Laboral no Escritório: Exercícios Para Quem Fica S" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O Que Acontece Com Seu Corpo Após 30 Minutos Sentado</h2>
 <ul>
 <li><strong>0-20 min:</strong> Atividade elétrica dos músculos das pernas cai para quase zero</li>
@@ -43783,6 +45338,11 @@ Verdade: A maior vantagem é preventiva. Iniciar antes da dor aparecer evita sem
 <p>O problema real do executivo não é sentar errado (embora isso piore as coisas), mas sentar sempre igual por horas. A coluna, os discos e os músculos foram projetados para o movimento, não para a estabilidade estática.</p>
 <p>Dito isso: algumas posturas causam dano acumulativo muito maior do que outras. E há padrões compensatórios que, ao longo de meses e anos, resultam em alterações estruturais que prejudicam o treino e a qualidade de vida.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/postura-trabalho-sentado-exercicios-infographic.svg" alt="Infográfico sobre Postura no Trabalho Sentado: Exercícios Para Corrigir Antes que Vire Dor Crônica — Montinho Personal Trainer" title="Postura no Trabalho Sentado: Exercícios Para Corrigir Antes " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os 5 Padrões Posturais Mais Comuns em Quem Trabalha Sentado</h2>
 
 <h3>1. Síndrome Cruzada Superior (Upper Crossed Syndrome)</h3>
@@ -43898,6 +45458,11 @@ Verdade: A maior vantagem é preventiva. Iniciar antes da dor aparecer evita sem
 <p>Isso é diferente da dor lombar mecânica comum, que fica localizada nas costas. A ciática tem origem neurológica — é o nervo sendo comprimido ou inflamado, não apenas o músculo ou o disco sob pressão mecânica local.</p>
 <p>Estudos de prevalência mostram que 10-40% dos adultos experimentarão ciática sintomática ao longo da vida. Em profissionais que trabalham sentados e/ou que praticam musculação com técnica inadequada, esse número é ainda maior.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/dor-no-ciatico-exercicio-tratamento-infographic.svg" alt="Infográfico sobre Dor no Nervo Ciático: O Que Fazer, O Que Evitar e Como o Exercício Trata — Montinho Personal Trainer" title="Dor no Nervo Ciático: O Que Fazer, O Que Evitar e Como o Exe" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Causas Mais Comuns da Ciática</h2>
 <h3>1. Hérnia de Disco Lombar (L4-L5, L5-S1)</h3>
 <p>O núcleo pulposo do disco intervertebral hernia e pressiona a raiz do nervo ciático. Representa 90% dos casos de ciática verdadeira. A posição sentada por horas aumenta a pressão intradiscal em 40%, acelerando esse processo em discos já degenerados.</p>
@@ -44012,6 +45577,11 @@ Verdade: A maior vantagem é preventiva. Iniciar antes da dor aparecer evita sem
 <p>A fáscia é uma rede tridimensional de tecido conjuntivo que envolve músculos, ossos, nervos e órgãos, interconectando todo o sistema musculoesquelético. Quando submetida a estresse repetitivo, postura inadequada ou trauma, a fáscia pode desenvolver aderências e perder sua elasticidade — alterando a mecânica do movimento e contribuindo para dor e restrição de amplitude.</p>
 <p>A liberação miofascial (LMF) com foam roller é uma forma de automassagem que aplica pressão sustentada sobre esses tecidos, visando restaurar a mobilidade da fáscia e do músculo subjacente. O mecanismo é debatido: algumas teorias enfatizam o relaxamento reflexo mediado pelo sistema nervoso autônomo (via receptores de Golgi), outras apontam para a hidratação do tecido fascial por pressão.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/liberacao-miofascial-foam-roller-infographic.svg" alt="Infográfico sobre Liberação Miofascial com Foam Roller: Protocolo Completo e Evidências — Montinho Personal Trainer" title="Liberação Miofascial com Foam Roller: Protocolo Completo e E" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O Que a Ciência Realmente Confirma</h2>
 <p>Uma revisão sistemática de Cheatham et al. (2015) no <em>International Journal of Sports Physical Therapy</em> — a mais citada sobre o tema — compilou 14 estudos e concluiu:</p>
 <ul>
@@ -44122,6 +45692,11 @@ Verdade: A maior vantagem é preventiva. Iniciar antes da dor aparecer evita sem
 <p>A inflamação aguda pós-treino é um processo necessário e desejável. Quando você rompe fibras musculares na musculação, a resposta inflamatória recruta células satélite, macrófagos e citocinas pró-inflamatórias que limpam o tecido danificado e iniciam a reparação — esse é o mecanismo da hipertrofia. Suprimir completamente essa inflamação aguda (como antioxidantes em altas doses pós-treino podem fazer) pode reduzir os ganhos musculares.</p>
 <p>O problema é a <strong>inflamação crônica de baixo grau</strong> — um estado de ativação imune persistente que não se resolve. Essa é a inflamação causada por dieta pró-inflamatória crônica, excesso de gordura visceral, estresse, sono inadequado e sedentarismo. Ela aumenta cortisol, prejudica a síntese proteica, eleva a resistência à insulina e compromete a recuperação entre sessões.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/alimentos-anti-inflamatorios-treino-infographic.svg" alt="Infográfico sobre Alimentos Anti-Inflamatórios Para Quem Treina: Lista e Protocolo Baseado em Ciên — Montinho Personal Trainer" title="Alimentos Anti-Inflamatórios Para Quem Treina: Lista e Proto" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os Biomarcadores da Inflamação que Importam</h2>
 <p>Para quem quer monitorar, os exames relevantes incluem:</p>
 <ul>
@@ -44267,6 +45842,11 @@ Verdade: A maior vantagem é preventiva. Iniciar antes da dor aparecer evita sem
 <p>Por outro lado, o home office elimina o deslocamento e pode devolver 1-2 horas diárias que antes eram perdidas no trânsito de Alphaville, Tamboré ou Santana de Parnaíba para a capital. Essa janela existe — a questão é se você a usa para treinar ou para trabalhar mais.</p>
 <p>Pesquisa da Stanford University (Bloom et al.) mostrou que trabalhadores remotos são 13% mais produtivos em tarefas repetitivas, mas têm maior risco de overwork e burnout por não conseguirem "desligar". O exercício estruturado no home office é simultaneamente preventivo (contra sedentarismo e burnout) e potencializador de produtividade.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-home-office-produtividade-infographic.svg" alt="Infográfico sobre Treino em Home Office: Como Encaixar Exercício na Rotina Remota e Ser Mais Produ — Montinho Personal Trainer" title="Treino em Home Office: Como Encaixar Exercício na Rotina Rem" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por Que Exercício Aumenta Produtividade no Trabalho Intelectual</h2>
 <p>Não é motivacional — é fisiológico. Um estudo no <em>British Journal of Sports Medicine</em> de Lambourne e Tomporowski (2010) mostrou que 20 minutos de exercício aeróbico melhoram o desempenho cognitivo subsequente em:</p>
 <ul>
@@ -44387,6 +45967,11 @@ Verdade: A maior vantagem é preventiva. Iniciar antes da dor aparecer evita sem
 <p>Whey protein é a fração proteica líquida separada durante a fabricação do queijo — quando a caseína do leite coagula, o whey (soro) é drenado. Esse líquido contém aproximadamente 6% de proteínas de altíssimo valor biológico, rico em leucina e aminoácidos essenciais.</p>
 <p>A partir daí, processos industriais diferentes geram três produtos distintos: concentrado, isolado e hidrolisado. A diferença está no grau de processamento e filtração — que determina o teor de proteína, lactose, gordura e a velocidade de digestão.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/whey-concentrado-vs-isolado-vs-hidrolisado-infographic.svg" alt="Infográfico sobre Whey Concentrado, Isolado ou Hidrolisado: Qual Comprar? Guia Definitivo — Montinho Personal Trainer" title="Whey Concentrado, Isolado ou Hidrolisado: Qual Comprar? Guia" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Whey Concentrado: O Básico que Funciona</h2>
 <h3>O Que é</h3>
 <p>Passa por um processo de filtração básica (ultrafiltração). O resultado é um pó com 70-80% de proteína, com lactose residual (1-8%), gordura e outros nutrientes do leite preservados.</p>
@@ -44529,6 +46114,11 @@ Verdade: A maior vantagem é preventiva. Iniciar antes da dor aparecer evita sem
 <p>"Vou ficar inchado? Vou ganhar peso de água? Vai prejudicar minha definição?" — essas são as perguntas que mais surgem quando alguém considera usar creatina pela primeira vez. A resposta não é simples, mas é boa notícia para quem quer tanto performance quanto estética.</p>
 <p>Sim, a creatina causa retenção de líquido. Mas o tipo de retenção importa — e ela não é o que a maioria das pessoas imagina.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/creatina-retencao-de-liquido-mito-infographic.svg" alt="Infográfico sobre Creatina Causa Retenção de Líquido? A Verdade Científica Sem Mitos — Montinho Personal Trainer" title="Creatina Causa Retenção de Líquido? A Verdade Científica Sem" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Por Que a Creatina Causa Retenção de Líquido</h2>
 <p>A creatina é uma molécula osmoticamente ativa — ao entrar nas células musculares, puxa água consigo. Esse processo é chamado de retenção intracelular de água: a célula muscular fica mais volumosa, com maior quantidade de água dentro dela.</p>
 <p>Esse mecanismo é, na verdade, um dos benefícios da creatina: células musculares mais hidratadas têm:</p>
@@ -44634,6 +46224,11 @@ Verdade: A maior vantagem é preventiva. Iniciar antes da dor aparecer evita sem
 <p>Qualquer estratégia nutricional — seja para emagrecer, ganhar massa ou fazer recomposição corporal — depende de conhecer sua linha de base energética. Sem isso, você está navegando sem GPS: pode estar comendo muito menos do que precisa (prejudicando a performance e o músculo) ou muito mais (sem criar o déficit necessário para emagrecer).</p>
 <p>Dois números são fundamentais: a TMB (Taxa Metabólica Basal) e o TDEE (Total Daily Energy Expenditure — gasto calórico total diário). Entender a diferença e calcular ambos com precisão é o primeiro passo concreto de qualquer plano nutricional bem estruturado.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-calcular-tmb-tdee-calorias-infographic.svg" alt="Infográfico sobre Como Calcular Seu Gasto Calórico (TMB e TDEE): Guia Prático com Fórmulas — Montinho Personal Trainer" title="Como Calcular Seu Gasto Calórico (TMB e TDEE): Guia Prático " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O Que é TMB (Taxa Metabólica Basal)</h2>
 <p>A TMB é o número de calorias que seu corpo queima apenas para manter as funções vitais em repouso absoluto: respiração, bombeamento cardíaco, temperatura corporal, síntese proteica basal, funcionamento neurológico. Representa 60-70% do gasto calórico total de uma pessoa sedentária.</p>
 <p>Em outras palavras: mesmo se você ficasse 24 horas deitado sem se mover, queimaria esse número de calorias.</p>
@@ -44759,6 +46354,11 @@ TMB = 370 + (21.6 × 68) = 370 + 1.468,8<br>
 <p>O conceito de somatotipos foi proposto pelo psicólogo americano William Sheldon em 1940, inicialmente como uma teoria de que o tipo corporal determinaria não apenas o físico, mas também a personalidade e o temperamento. Essa parte da teoria foi amplamente descartada pela ciência. O que sobreviveu foi a classificação morfológica — endomorfo, mesomorfo e ectomorfo — que descreve tendências de composição corporal.</p>
 <p>É importante contextualizar: Sheldon criou o sistema com base em fotografias de 4.000 estudantes universitários americanos, sem metodologia científica rigorosa pelos padrões modernos. A teoria nunca foi concebida como determinista — mas ganhou vida própria na cultura das academias como se fosse lei biológica imutável.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/endomorfo-ectomorfo-mesomorfo-infographic.svg" alt="Infográfico sobre Endomorfo, Ectomorfo e Mesomorfo: O Que a Ciência Realmente Diz Sobre Somatotipo — Montinho Personal Trainer" title="Endomorfo, Ectomorfo e Mesomorfo: O Que a Ciência Realmente " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os Três Somatotipos: O Que Realmente São</h2>
 
 <h3>Endomorfo</h3>
@@ -44855,6 +46455,11 @@ Verdade: A vantagem genética acelera os resultados — não os entrega automati
     content: `<h2>Por Que as Fibras Musculares Importam Para Quem Treina</h2>
 <p>Você já reparou que alguns músculos respondem mais a repetições altas e outros a repetições baixas com carga? Ou que algumas pessoas parecem "naturais" para corrida de longa distância enquanto outras dominam sprints e levantamentos pesados? Parte dessa variação vem da distribuição de fibras musculares — e entender isso permite ajustar o treino de forma mais inteligente.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/fibras-musculares-tipo-1-tipo-2-infographic.svg" alt="Infográfico sobre Fibras Musculares Tipo 1 e Tipo 2: Como Isso Afeta Seu Treino de Verdade — Montinho Personal Trainer" title="Fibras Musculares Tipo 1 e Tipo 2: Como Isso Afeta Seu Trein" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os Tipos de Fibras Musculares Esqueléticas</h2>
 <p>A classificação moderna divide as fibras musculares em três tipos principais, baseada na isoforma de miosina ATPase que expressam:</p>
 
@@ -44977,6 +46582,11 @@ Verdade: A vantagem genética acelera os resultados — não os entrega automati
 <p>O treino convencional de séries e repetições tem um limite prático: o volume que você consegue acumular com qualidade dentro de um tempo razoável de sessão. As técnicas intensificadoras — rest-pause, drop set, supersérie e similares — existem para um propósito específico: acumular mais estímulo de alta qualidade por unidade de tempo, empurrando o músculo além do que séries convencionais sozinhas proporcionariam.</p>
 <p>Mas cada técnica funciona por um mecanismo diferente, produz um tipo diferente de fadiga e tem aplicações e contraindicações específicas. Usá-las aleatoriamente sem entender isso é como usar remédio sem ler a bula — às vezes funciona, frequentemente não, e às vezes piora.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/rest-pause-drop-set-superserie-guia-infographic.svg" alt="Infográfico sobre Rest-Pause, Drop Set e Supersérie: Guia Definitivo Para Usar Cada Técnica — Montinho Personal Trainer" title="Rest-Pause, Drop Set e Supersérie: Guia Definitivo Para Usar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Rest-Pause: O Método da Extensão Forçada</h2>
 <h3>Mecanismo</h3>
 <p>O rest-pause usa pequenas pausas dentro de uma série para permitir recuperação parcial do fosfagênio (CP — creatina fosfato), possibilitando acumular mais repetições próximas à falha do que seria possível em uma série contínua.</p>
@@ -45107,6 +46717,11 @@ Total: 19 repetições próximas à falha vs 10 em uma série convencional</p>
 <p>Mike Mentzer (1951-2001) foi um fisiculturista americano que ganhou o Mr. Olympia de 1980 (peso médio) com pontuação perfeita e ficou em segundo lugar no Olympia geral de 1980 — evento controverso no qual Arnold Schwarzenegger voltou da aposentadoria. Mais do que seus resultados competitivos, Mentzer é lembrado pela revolução filosófica e metodológica que trouxe à musculação: o Heavy Duty Training.</p>
 <p>O Heavy Duty nasceu da influência de Arthur Jones (criador das máquinas Nautilus) e da filosofia objetivista de Ayn Rand — Mentzer era apaixonado por filosofia e aplicava lógica sistemática ao treinamento. A premissa central: se o estímulo para hipertrofia é o treino intenso, e a recuperação é finita, então mais treino não é necessariamente melhor — pode ser pior.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-heavy-duty-mike-mentzer-infographic.svg" alt="Infográfico sobre Treino Heavy Duty de Mike Mentzer: Funciona Para Hipertrofia? A Análise Completa — Montinho Personal Trainer" title="Treino Heavy Duty de Mike Mentzer: Funciona Para Hipertrofia" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os Princípios Fundamentais do Heavy Duty</h2>
 
 <h3>1. Intensidade Máxima Sobre Volume</h3>
@@ -45225,6 +46840,11 @@ Total: 19 repetições próximas à falha vs 10 em uma série convencional</p>
 <p>Se existe um suplemento que a ciência endossa sem reservas para performance física, é a cafeína. Mais de 300 estudos controlados confirmam seus efeitos ergogênicos. A posição do <em>International Journal of Sport Nutrition and Exercise Metabolism</em> classifica a cafeína como um dos poucos suplementos com evidência de nível A (mais alta) para performance.</p>
 <p>Mas "a cafeína funciona" não responde a pergunta mais prática: qual dose, em que horário, de qual fonte, e o que fazer com a tolerância? Essas variáveis determinam se você terá 5% de melhora de performance ou 15%.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/cafeina-no-treino-dose-timing-infographic.svg" alt="Infográfico sobre Cafeína como Pré-Treino: Dose Certa, Timing e Efeitos Colaterais Explicados — Montinho Personal Trainer" title="Cafeína como Pré-Treino: Dose Certa, Timing e Efeitos Colate" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Como a Cafeína Age no Corpo</h2>
 <p>A cafeína é um antagonista dos receptores de adenosina — moléculas que se acumulam no cérebro ao longo do dia e causam progressivamente a sensação de fadiga e sonolência. Ao bloquear esses receptores, a cafeína não elimina a adenosina (ela continua acumulando) — apenas impede que você sinta seus efeitos temporariamente.</p>
 <p>Efeitos secundários dessa ação:</p>
@@ -45349,6 +46969,11 @@ Total: 19 repetições próximas à falha vs 10 em uma série convencional</p>
 <p>Ashwagandha (<em>Withania somnifera</em>) é uma planta adaptógena da medicina ayurvédica com mais de 3.000 anos de uso documentado. O termo "adaptógeno" descreve substâncias que aumentam a resistência do organismo ao estresse — físico, mental e oxidativo — sem causar dependência ou estimulação excessiva.</p>
 <p>Nos últimos anos, a ashwagandha saiu do nicho da medicina integrativa para o mundo do fitness, impulsionada por estudos randomizados controlados mostrando efeitos mensuráveis em marcadores relevantes para quem treina: cortisol, testosterona, força e composição corporal. O que antes era folclore ayurvédico passou a ter base científica verificável.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/ashwagandha-para-atletas-infographic.svg" alt="Infográfico sobre Ashwagandha Para Atletas: Reduz Cortisol e Melhora Força? A Ciência Responde — Montinho Personal Trainer" title="Ashwagandha Para Atletas: Reduz Cortisol e Melhora Força? A " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Mecanismos de Ação: Como a Ashwagandha Funciona</h2>
 <p>Os princípios ativos responsáveis pelos efeitos são os withanolídeos — um grupo de lactonas esteroidais presentes especialmente na raiz. Os mecanismos identificados incluem:</p>
 <ul>
@@ -45454,6 +47079,11 @@ Total: 19 repetições próximas à falha vs 10 em uma série convencional</p>
 <p>O magnésio é cofator de mais de 300 enzimas no corpo humano — incluindo as envolvidas na síntese de ATP (energia celular), síntese proteica, regulação da glicose e manutenção da função neuromuscular. É, literalmente, um mineral fundamental para o treino.</p>
 <p>E também é um dos mais frequentemente deficientes. Pesquisa do IBGE mostra que mais de 70% dos brasileiros não atingem a ingestão adequada de magnésio pela dieta. Para praticantes de musculação, esse déficit é ainda maior: o exercício intenso aumenta a excreção de magnésio via suor e urina em até 20-30%, e a demanda para síntese de ATP durante treinos pesados é substancialmente maior.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/magnesio-para-dormir-e-treinar-infographic.svg" alt="Infográfico sobre Magnésio Para Dormir Melhor e Recuperar Mais: Tipos, Doses e o Que Funciona — Montinho Personal Trainer" title="Magnésio Para Dormir Melhor e Recuperar Mais: Tipos, Doses e" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>O Que o Magnésio Faz no Corpo do Atleta</h2>
 
 <h3>1. Contração e Relaxamento Muscular</h3>
@@ -45561,6 +47191,11 @@ Total: 19 repetições próximas à falha vs 10 em uma série convencional</p>
 <p>O peso corporal é afetado por inúmeras variáveis de curto prazo: ingestão de sódio (1g de sódio retém ~200ml de água), glicogênio muscular (cada grama retém 3g de água), ciclo menstrual, variação de volume intestinal, e até a altitude. Uma pessoa pode "ganhar" 1.5kg em um dia sem ganhar gordura alguma.</p>
 <p>Medidas corporais, fotos comparativas e percentual de gordura — esses três indicadores juntos contam a história real da composição corporal. As medidas são de longe o mais acessível e prático dos três.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-tirar-medidas-corporais-infographic.svg" alt="Infográfico sobre Como Tirar Medidas Corporais Para Acompanhar Evolução Real na Musculação — Montinho Personal Trainer" title="Como Tirar Medidas Corporais Para Acompanhar Evolução Real n" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os 10 Pontos de Medição Essenciais</h2>
 <p>Meça sempre com fita métrica inextensível (não de costura — ela estica) e no mesmo horário (de preferência pela manhã, em jejum, após urinar).</p>
 
@@ -45683,6 +47318,11 @@ Total: 19 repetições próximas à falha vs 10 em uma série convencional</p>
 <p>A anatomia da celulite: a camada de gordura subcutânea é dividida por septos de colágeno que a ancoram à pele. Em homens, esses septos são diagonais, criando uma estrutura de grade. Em mulheres, os septos são predominantemente verticais — e quando a gordura se expande, ela empurra para cima em colunas, criando as ondulações visíveis.</p>
 <p>Essa diferença anatômica explica por que 85-98% das mulheres adultas têm algum grau de celulite (independente de peso), enquanto em homens é muito mais rara.</p>
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/celulite-musculacao-tratamento-infographic.svg" alt="Infográfico sobre Celulite e Musculação: O Treino Realmente Reduz? A Resposta Honesta da Ciência — Montinho Personal Trainer" title="Celulite e Musculação: O Treino Realmente Reduz? A Resposta " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 <h2>Os 4 Fatores que Causam e Agravam a Celulite</h2>
 
 <h3>1. Genética</h3>
@@ -45783,6 +47423,11 @@ Este guia reúne o que a ciência atual sabe sobre o tratamento, a adaptação d
 
 ## O Que É a Tendinite Patelar (e Por Que "Tendinopatia" É Mais Correto)
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/tendinite-patelar-exercicio-joelho-infographic.svg" alt="Infográfico sobre Tendinite Patelar: Como Treinar Sem Piorar e Tratar de Vez — Montinho Personal Trainer" title="Tendinite Patelar: Como Treinar Sem Piorar e Tratar de Vez" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 O termo técnico atual é **tendinopatia patelar**, porque a histologia das lesões crônicas mostra degeneração do colágeno, não inflamação aguda clássica. Mas no cotidiano e na literatura popular, "tendinite" persiste — e para fins práticos, o manejo é similar.
 
 O tendão patelar conecta a patela (rótula) à tuberosidade da tíbia. Ele transmite a força do quadríceps para a perna durante extensão do joelho — ou seja, está envolvido em agachamento, subida de escada, salto e corrida.
@@ -45973,6 +47618,11 @@ A ciência do microbioma ainda é jovem, mas os dados acumulados apontam conexõ
 
 ## O Que É o Microbioma Intestinal
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/microbioma-intestinal-e-performance-infographic.svg" alt="Infográfico sobre Microbioma Intestinal e Performance Esportiva: O Que a Ciência Diz — Montinho Personal Trainer" title="Microbioma Intestinal e Performance Esportiva: O Que a Ciênc" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 O microbioma é o conjunto de bactérias, vírus, fungos e outros microrganismos que habitam principalmente o intestino grosso. Estima-se que o corpo humano abriga cerca de 38 trilhões de células microbianas — número próximo ao de células humanas.
 
 Cada pessoa tem uma composição única de microbioma, influenciada por:
@@ -46166,6 +47816,11 @@ Este guia reúne o que a ciência moderna sabe sobre treinamento abdominal, quai
 
 ## O Que É o Core (e Por Que Vai Além do Abdômen)
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treino-de-abdomen-funcional-infographic.svg" alt="Infográfico sobre Treino de Abdômen: 15 Exercícios que Realmente Funcionam (Com Ciência) — Montinho Personal Trainer" title="Treino de Abdômen: 15 Exercícios que Realmente Funcionam (Co" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 O "abdômen" popular refere-se ao reto abdominal — o músculo responsável pelo visual de "tanquinho". Mas o **core** é um cilindro muscular composto por:
 
 - **Reto abdominal:** flexão do tronco, "tanquinho"
@@ -46457,6 +48112,11 @@ Este guia separa o que funciona do que é marketing, baseado em evidências clí
 
 ## O Que É Testosterona e Por Que Importa
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-aumentar-testosterona-naturalmente-infographic.svg" alt="Infográfico sobre Como Aumentar a Testosterona Naturalmente: O Que Realmente Funciona — Montinho Personal Trainer" title="Como Aumentar a Testosterona Naturalmente: O Que Realmente F" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 A testosterona é um hormônio esteroide produzido principalmente nas células de Leydig nos testículos (homens) e em menor quantidade nas adrenais e ovários (mulheres). É regulada pelo eixo hipotálamo-hipófise-gônadas: o hipotálamo libera GnRH → a hipófise libera LH e FSH → os testículos produzem testosterona.
 
 **Funções principais:**
@@ -46656,6 +48316,11 @@ Neste guia você aprende a técnica correta, os erros mais comuns, variações e
 
 ## O Que É o Agachamento Búlgaro
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/agachamento-bulgaro-como-fazer-infographic.svg" alt="Infográfico sobre Agachamento Búlgaro: Técnica Correta, Benefícios e Como Progredir — Montinho Personal Trainer" title="Agachamento Búlgaro: Técnica Correta, Benefícios e Como Prog" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 O agachamento búlgaro é um agachamento **unilateral** em que o pé traseiro fica elevado em um banco, step ou caixa. Isso:
 
 1. Aumenta a amplitude de movimento
@@ -46841,6 +48506,11 @@ Este guia apresenta um processo estruturado, baseado em comportamento alimentar 
 
 ## O Que É Reeducação Alimentar (e O Que Não É)
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/reeducacao-alimentar-passo-a-passo-infographic.svg" alt="Infográfico sobre Reeducação Alimentar: Guia Passo a Passo Para Mudar sua Relação com a Comida — Montinho Personal Trainer" title="Reeducação Alimentar: Guia Passo a Passo Para Mudar sua Rela" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 **É:**
 - Processo gradual e progressivo de mudança de hábitos
 - Aprender a fazer escolhas alimentares conscientes na maior parte do tempo
@@ -47065,6 +48735,11 @@ Este artigo explica o que é gordura localizada, por que ela se acumula em certa
 
 ## O Que É Gordura Localizada
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/gordura-localizada-mitos-e-fatos-infographic.svg" alt="Infográfico sobre Gordura Localizada: Existe Tratamento Real? O Que a Ciência Diz — Montinho Personal Trainer" title="Gordura Localizada: Existe Tratamento Real? O Que a Ciência " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 Gordura localizada refere-se ao acúmulo de tecido adiposo em regiões específicas do corpo — abdômen, flancos, coxas, glúteos, braços, queixo. A distribuição desse acúmulo é determinada por fatores genéticos, hormonais e metabólicos — não por quanto você se exercita naquela região.
 
 **Por que a gordura se acumula em lugares específicos?**
@@ -47229,6 +48904,11 @@ O problema: quando o apetite cai drasticamente, a ingestão proteica costuma des
 
 ## Por Que a Proteína É Crítica no Uso de GLP-1
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/glp1-apetite-suprimido-proteina-musculo-infographic.svg" alt="Infográfico sobre GLP-1 e Falta de Apetite: Como Garantir Proteína Suficiente Sem Perder Músculo — Montinho Personal Trainer" title="GLP-1 e Falta de Apetite: Como Garantir Proteína Suficiente " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 Medicamentos GLP-1 criam déficit calórico ao reduzir o apetite. O corpo em déficit calórico usa tanto gordura quanto músculo como fonte de energia. Sem alta ingestão proteica e treino de força, até 40% do peso perdido pode vir de massa muscular — não de gordura.
 
 Estudo de Wilding et al. (NEJM, 2021) com semaglutida mostrou perda média de 15,3% do peso — mas análises de composição corporal revelaram que parte significativa dessa perda era massa magra, especialmente em participantes com baixa ingestão proteica e sem exercício resistido.
@@ -47419,6 +49099,11 @@ A boa notícia, frequentemente ignorada: na maioria dos casos, o movimento é a 
 
 ## Por Que a Dor nas Costas Acontece
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/exercicios-para-dor-nas-costas-coluna-infographic.svg" alt="Infográfico sobre Exercícios Para Dor nas Costas: Protocolo Completo Para Aliviar e Fortalecer a C — Montinho Personal Trainer" title="Exercícios Para Dor nas Costas: Protocolo Completo Para Aliv" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 A coluna vertebral é composta por 33 vértebras, discos intervertebrais, ligamentos, tendões e musculatura. Cada componente pode ser fonte de dor — e a causa raramente é exclusivamente estrutural.
 
 **Principais causas de dor lombar não-específica (>85% dos casos):**
@@ -47609,6 +49294,11 @@ Cortar calorias demais destrói músculo. Cortar de menos não elimina gordura. 
 
 ## O Que É Cutting (e o Que Não É)
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/dieta-cutting-para-definicao-muscular-infographic.svg" alt="Infográfico sobre Dieta de Cutting: Como Perder Gordura Sem Sacrificar o Músculo Que Você Construi — Montinho Personal Trainer" title="Dieta de Cutting: Como Perder Gordura Sem Sacrificar o Múscu" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 **Cutting é:**
 - Fase deliberada de déficit calórico moderado para reduzir gordura
 - Processo que dura 8–20 semanas dependendo do objetivo
@@ -47856,6 +49546,11 @@ Este guia explica o que é o assoalho pélvico, como ele funciona durante o exer
 
 ## O Que É o Assoalho Pélvico
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/piso-pelvico-musculacao-mulher-infographic.svg" alt="Infográfico sobre Assoalho Pélvico e Musculação: Como Treinar Sem Risco de Incontinência — Montinho Personal Trainer" title="Assoalho Pélvico e Musculação: Como Treinar Sem Risco de Inc" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 O assoalho pélvico (ou períneo) é um conjunto de músculos e tecido conectivo que forma a "base" da pelve. Funciona como uma rede que sustenta os órgãos pélvicos — bexiga, útero e reto — e controla a saída da uretra, vagina e ânus.
 
 **Funções do assoalho pélvico:**
@@ -48048,6 +49743,11 @@ A solução tem nome: **reverse diet** — ou dieta reversa.
 
 ## O Que Acontece Com o Metabolismo Durante o Cutting
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/reverse-diet-como-sair-do-cutting-infographic.svg" alt="Infográfico sobre Reverse Diet: Como Sair do Cutting Sem Recuperar Gordura e Salvar Seu Metabolism — Montinho Personal Trainer" title="Reverse Diet: Como Sair do Cutting Sem Recuperar Gordura e S" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 Durante o déficit calórico prolongado, o corpo adapta em múltiplas frentes para reduzir o gasto energético:
 
 - **Redução do NEAT** (atividade física não-estruturada): você fica menos inquieto, gesticula menos, se move menos
@@ -48189,6 +49889,11 @@ Eletrólitos são minerais ionizados que conduzem eletricidade no organismo. Sem
 
 ## O Que São Eletrólitos e Por Que Importam
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/eletrolitos-hidratacao-treino-intenso-infographic.svg" alt="Infográfico sobre Eletrólitos no Treino: Sódio, Potássio e Magnésio Para Performance e Hidratação — Montinho Personal Trainer" title="Eletrólitos no Treino: Sódio, Potássio e Magnésio Para Perfo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 Os principais eletrólitos relevantes para atletas são:
 
 | Eletrólito | Função Principal | Onde Se Perde |
@@ -48366,6 +50071,11 @@ Aos 40 anos, muitas mulheres notam algo diferente: o corpo responde menos ao tre
 
 ## O Que É Perimenopausa
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/perimenopausa-treino-e-hormonios-infographic.svg" alt="Infográfico sobre Perimenopausa e Treino: O Que Muda Antes da Menopausa Chegar — Montinho Personal Trainer" title="Perimenopausa e Treino: O Que Muda Antes da Menopausa Chegar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 A perimenopausa começa quando os ovários iniciam a transição para a cessação da função reprodutiva. A menopausa é diagnosticada retroativamente, após 12 meses consecutivos sem menstruação.
 
 **Início típico:** 40–47 anos, embora possa começar aos 35 em alguns casos.
@@ -48543,6 +50253,11 @@ O paradoxo: ignorar a dor cervical durante o treino é o caminho mais rápido pa
 
 ## A Anatomia da Região Cervical
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/cervicalgia-dor-no-pescoco-treino-infographic.svg" alt="Infográfico sobre Dor no Pescoço e Treino: Causas, Exercícios Seguros e Quando Parar — Montinho Personal Trainer" title="Dor no Pescoço e Treino: Causas, Exercícios Seguros e Quando" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 A coluna cervical é composta por 7 vértebras (C1–C7), discos intervertebrais entre elas, músculos profundos e superficiais, ligamentos e o plexo braquial (nervo que inerva os braços).
 
 **Músculos principais da região:**
@@ -48695,6 +50410,11 @@ Este guia apresenta o protocolo científico de fortalecimento do joelho, organiz
 
 ## Anatomia Funcional do Joelho
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/exercicios-para-fortalecer-joelho-infographic.svg" alt="Infográfico sobre Exercícios Para Fortalecer o Joelho: Protocolo Completo Para Estabilidade e Prev — Montinho Personal Trainer" title="Exercícios Para Fortalecer o Joelho: Protocolo Completo Para" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 O joelho não é uma articulação simples — é um complexo que envolve:
 
 - **Articulação femorotibial:** entre fêmur e tíbia (onde ocorre a maioria das lesões)
@@ -48849,6 +50569,11 @@ Este artigo compara as três ferramentas baseado nas evidências disponíveis.
 
 ## O Que a Recuperação Muscular Realmente Precisa
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/massagem-pistola-foam-roller-qual-melhor-infographic.svg" alt="Infográfico sobre Massagem, Pistola de Massagem ou Foam Roller: O Que a Ciência Diz Sobre Recupera — Montinho Personal Trainer" title="Massagem, Pistola de Massagem ou Foam Roller: O Que a Ciênci" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 Para entender qual ferramenta funciona, é preciso entender o que acontece no músculo após o treino intenso:
 
 1. **Microlesões musculares:** dano às fibras (necessário para a hipertrofia)
@@ -49028,6 +50753,11 @@ Isso não significa que mulheres são "limitadas" — significa que têm uma var
 
 ## Os Hormônios do Ciclo e o Que Fazem
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/ciclo-menstrual-fase-folicular-lutea-treino-infographic.svg" alt="Infográfico sobre Treino Por Fase do Ciclo Menstrual: Como Otimizar Semana a Semana — Montinho Personal Trainer" title="Treino Por Fase do Ciclo Menstrual: Como Otimizar Semana a S" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 O ciclo menstrual médio dura 28 dias (variando de 21 a 35 dias). É governado por quatro hormônios principais:
 
 | Hormônio | Pico no Ciclo | Efeito no Treino |
@@ -49216,6 +50946,11 @@ Assimetrias leves são normais (todo ser humano tem dominância lateral e pequen
 
 ## Por Que Assimetrias Musculares Existem
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/imbalance-muscular-como-corrigir-infographic.svg" alt="Infográfico sobre Assimetria Muscular: Como Identificar e Corrigir o Lado Mais Fraco — Montinho Personal Trainer" title="Assimetria Muscular: Como Identificar e Corrigir o Lado Mais" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 **Dominância lateral:** a mão dominante e o lado correspondente desenvolvem maior habilidade motora e frequentemente maior força pela vida toda.
 
 **Lesões antigas:** uma lesão em um membro resulta em redução de uso, atrofia e compensação pelo lado oposto. Mesmo após a cura, a assimetria pode persistir.
@@ -49376,6 +51111,11 @@ A boa notícia: não perdeu tudo. A memória muscular é real e os processos de 
 
 ## O Que Acontece Com O Músculo Durante a Pausa (Detraining)
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/como-voltar-a-treinar-apos-pausa-longa-infographic.svg" alt="Infográfico sobre Como Voltar a Treinar Depois de Meses Parado: O Guia do Detraining — Montinho Personal Trainer" title="Como Voltar a Treinar Depois de Meses Parado: O Guia do Detr" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 O detraining é a perda progressiva de adaptações fisiológicas quando o estímulo de treino é removido. O que se perde — e em quanto tempo — depende do nível de treinamento e da duração da pausa.
 
 ### Força e Massa Muscular
@@ -49522,6 +51262,11 @@ O dilema: o exercício pode melhorar o GERD a longo prazo — mas certos tipos d
 
 ## O Que É GERD e Por Que o Exercício Interessa
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/refluxo-gastrico-e-exercicio-infographic.svg" alt="Infográfico sobre Refluxo e Academia: Como Treinar Sem Piorar a Azia e o GERD — Montinho Personal Trainer" title="Refluxo e Academia: Como Treinar Sem Piorar a Azia e o GERD" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 O refluxo gastroesofágico ocorre quando o conteúdo ácido do estômago retorna ao esôfago, causando azia, regurgitação e, cronicamente, esofagite e risco de metaplasia de Barrett.
 
 O mecanismo central: falha do Esfíncter Esofágico Inferior (EEI) — a válvula entre esôfago e estômago — em manter o fechamento adequado.
@@ -49682,6 +51427,11 @@ Este artigo analisa honestamente as capacidades e limitações de cada abordagem
 
 ## O Que os Apps de Personal Trainer com IA Realmente Fazem
 
+
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-ia-vs-personal-real-infographic.svg" alt="Infográfico sobre Personal Trainer com IA vs Personal Real: Vale a Pena Usar App? — Montinho Personal Trainer" title="Personal Trainer com IA vs Personal Real: Vale a Pena Usar A" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
 Os melhores apps do mercado (Freeletics, Fitbod, Vi Trainer, Future, Whoop Coach) utilizam combinações de:
 
 ### Algoritmos de Personalização

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Personal Trainer Perto de Mim Alphaville: Como Encontrar o Profissional Certo">
+  <title>Personal Trainer Perto de Mim Alphaville: Como Encontrar o Profissional Certo</title>
+  <desc>Infográfico: Personal Trainer Perto de Mim Alphaville: Como Encontrar o Profissional Certo</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C9AE60"/>
+      <stop offset="100%" stop-color="#A08030"/>
+    </linearGradient>
+  </defs>
+  <!-- background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- border -->
+  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
+  <!-- accent line -->
+  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
+  <!-- branding -->
+  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
+  <rect x="60" y="30" width="68" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
+  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">TREINO</text>
+  <text x="60" y="78" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Personal Trainer Perto de Mim Alphaville: Como</text>
+  <text x="60" y="120" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Encontrar o Profissiona</text>
+  <text x="60" y="176" font-family="Arial,sans-serif" font-size="16" fill="#555555">Protocolo baseado em evidências científicas</text>
+  <rect x="60" y="198" width="80" height="3" rx="2" fill="url(#gold)"/>
+  <rect x="60" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
+  <circle cx="88" cy="228" r="16" fill="url(#gold)"/>
+  <text x="88" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">1</text>
+  <text x="116" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Aquecimento</text>
+  <text x="76" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">5–10 min mobilidade articular e</text>
+  <text x="76" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">ativação neuromuscular</text>
+  <rect x="420" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
+  <circle cx="448" cy="228" r="16" fill="url(#gold)"/>
+  <text x="448" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">2</text>
+  <text x="476" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Exercícios Compostos</text>
+  <text x="436" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">Priorize movimentos multiarticulares</text>
+  <text x="436" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">com carga progressiva</text>
+  <rect x="780" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
+  <circle cx="808" cy="228" r="16" fill="url(#gold)"/>
+  <text x="808" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">3</text>
+  <text x="836" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Exercícios Isolados</text>
+  <text x="796" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">Refinamento muscular e correção de</text>
+  <text x="796" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">assimetrias</text>
+  <rect x="60" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
+  <circle cx="88" cy="368" r="16" fill="url(#gold)"/>
+  <text x="88" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">4</text>
+  <text x="116" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Volume Semanal</text>
+  <text x="76" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">10–20 séries por grupo muscular para</text>
+  <text x="76" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">hipertrofia</text>
+  <rect x="420" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
+  <circle cx="448" cy="368" r="16" fill="url(#gold)"/>
+  <text x="448" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">5</text>
+  <text x="476" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Progressão</text>
+  <text x="436" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">Aumente carga ou volume a cada 1–2</text>
+  <text x="436" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">semanas</text>
+  <rect x="780" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
+  <circle cx="808" cy="368" r="16" fill="url(#gold)"/>
+  <text x="808" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">6</text>
+  <text x="836" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Recuperação</text>
+  <text x="796" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">48–72h de descanso entre sessões do</text>
+  <text x="796" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">mesmo grupo</text>
+</svg>

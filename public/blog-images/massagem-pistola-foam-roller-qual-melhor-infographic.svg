@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Massagem, Pistola de Massagem ou Foam Roller: O Que a Ciência Diz Sobre Recuperação">
+  <title>Massagem, Pistola de Massagem ou Foam Roller: O Que a Ciência Diz Sobre Recuperação</title>
+  <desc>Infográfico: Massagem, Pistola de Massagem ou Foam Roller: O Que a Ciência Diz Sobre Recuperação</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C9AE60"/>
+      <stop offset="100%" stop-color="#A08030"/>
+    </linearGradient>
+  </defs>
+  <!-- background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- border -->
+  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
+  <!-- accent line -->
+  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
+  <!-- branding -->
+  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
+  <rect x="60" y="30" width="108" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
+  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">RECUPERAÇÃO</text>
+  <text x="60" y="90" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Foam Roller vs Massagem</text>
+  <text x="60" y="146" font-family="Arial,sans-serif" font-size="16" fill="#555555">O que a ciência realmente diz</text>
+  <rect x="60" y="168" width="80" height="3" rx="2" fill="url(#gold)"/>
+  <rect x="60" y="195" width="270" height="52" fill="url(#gold)"/>
+  <text x="195" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Benefício</text>
+  <rect x="330" y="195" width="270" height="52" fill="#2a2a2a"/>
+  <text x="465" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Foam Roller</text>
+  <rect x="600" y="195" width="270" height="52" fill="#2a2a2a"/>
+  <text x="735" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Pistola</text>
+  <rect x="870" y="195" width="270" height="52" fill="#2a2a2a"/>
+  <text x="1005" y="227" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Massagem Prof.</text>
+  <rect x="60" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
+  <text x="72" y="278" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Redução de DOMS</text>
+  <rect x="330" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
+  <text x="342" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">✅ Moderada</text>
+  <rect x="600" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
+  <text x="612" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">✅ Alta</text>
+  <rect x="870" y="247" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
+  <text x="882" y="278" font-family="Arial,sans-serif" font-size="12" fill="#555555">✅✅ Alta</text>
+  <rect x="60" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
+  <text x="72" y="330" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Amplitude de movimento</text>
+  <rect x="330" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
+  <text x="342" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">✅ Aguda</text>
+  <rect x="600" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
+  <text x="612" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">✅ Moderada</text>
+  <rect x="870" y="299" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
+  <text x="882" y="330" font-family="Arial,sans-serif" font-size="12" fill="#555555">✅✅ Alta</text>
+  <rect x="60" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
+  <text x="72" y="382" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Fluxo sanguíneo</text>
+  <rect x="330" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
+  <text x="342" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">Limitado</text>
+  <rect x="600" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
+  <text x="612" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">✅ Moderado</text>
+  <rect x="870" y="351" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
+  <text x="882" y="382" font-family="Arial,sans-serif" font-size="12" fill="#555555">✅✅ Alto</text>
+  <rect x="60" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
+  <text x="72" y="434" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Custo-benefício</text>
+  <rect x="330" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
+  <text x="342" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">✅✅ Ótimo</text>
+  <rect x="600" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
+  <text x="612" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">✅ Bom</text>
+  <rect x="870" y="403" width="270" height="52" fill="#2a2a2a" stroke="#555555" stroke-width="0.3"/>
+  <text x="882" y="434" font-family="Arial,sans-serif" font-size="12" fill="#555555">Alto custo</text>
+  <rect x="60" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
+  <text x="72" y="486" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50">Autonomia</text>
+  <rect x="330" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
+  <text x="342" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">✅✅ Total</text>
+  <rect x="600" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
+  <text x="612" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">✅ Parcial</text>
+  <rect x="870" y="455" width="270" height="52" fill="#1a1a1a" stroke="#555555" stroke-width="0.3"/>
+  <text x="882" y="486" font-family="Arial,sans-serif" font-size="12" fill="#555555">❌ Depende de profissional</text>
+</svg>

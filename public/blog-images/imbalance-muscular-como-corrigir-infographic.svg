@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Assimetria Muscular: Como Identificar e Corrigir o Lado Mais Fraco">
+  <title>Assimetria Muscular: Como Identificar e Corrigir o Lado Mais Fraco</title>
+  <desc>Infográfico: Assimetria Muscular: Como Identificar e Corrigir o Lado Mais Fraco</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C9AE60"/>
+      <stop offset="100%" stop-color="#A08030"/>
+    </linearGradient>
+  </defs>
+  <!-- background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- border -->
+  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
+  <!-- accent line -->
+  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
+  <!-- branding -->
+  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
+  <rect x="60" y="30" width="172" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
+  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">EQUILÍBRIO MUSCULAR</text>
+  <text x="60" y="90" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Assimetria Muscular</text>
+  <text x="60" y="146" font-family="Arial,sans-serif" font-size="16" fill="#555555">Como identificar e corrigir desequilíbrios</text>
+  <rect x="60" y="168" width="80" height="3" rx="2" fill="url(#gold)"/>
+  <rect x="60" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
+  <circle cx="88" cy="228" r="16" fill="url(#gold)"/>
+  <text x="88" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">1</text>
+  <text x="116" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Diagnóstico</text>
+  <text x="76" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">Compare força e medidas entre lados</text>
+  <text x="76" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">dominante e não-dominante</text>
+  <rect x="420" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
+  <circle cx="448" cy="228" r="16" fill="url(#gold)"/>
+  <text x="448" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">2</text>
+  <text x="476" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Tolerância Normal</text>
+  <text x="436" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">Diferença < 10% é aceitável — acima</text>
+  <text x="436" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">disso requer atenção</text>
+  <rect x="780" y="200" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
+  <circle cx="808" cy="228" r="16" fill="url(#gold)"/>
+  <text x="808" y="234" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">3</text>
+  <text x="836" y="224" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Exercícios Unilaterais</text>
+  <text x="796" y="268" font-family="Arial,sans-serif" font-size="12" fill="#555555">Priorize movimentos que trabalham um</text>
+  <text x="796" y="285" font-family="Arial,sans-serif" font-size="12" fill="#555555">lado por vez</text>
+  <rect x="60" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
+  <circle cx="88" cy="368" r="16" fill="url(#gold)"/>
+  <text x="88" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">4</text>
+  <text x="116" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Lado Fraco Primeiro</text>
+  <text x="76" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">Inicie sempre pelo lado mais fraco —</text>
+  <text x="76" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">iguale o volume</text>
+  <rect x="420" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
+  <circle cx="448" cy="368" r="16" fill="url(#gold)"/>
+  <text x="448" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">5</text>
+  <text x="476" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Volume Assimétrico</text>
+  <text x="436" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">Adicione 1–2 séries extras para o lado</text>
+  <text x="436" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">deficiente</text>
+  <rect x="780" y="340" width="340" height="120" rx="8" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.8" opacity="0.9"/>
+  <circle cx="808" cy="368" r="16" fill="url(#gold)"/>
+  <text x="808" y="374" font-family="Arial,sans-serif" font-size="16" fill="#0d0d0d" text-anchor="middle" font-weight="bold">6</text>
+  <text x="836" y="364" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" font-weight="bold">Reavaliação</text>
+  <text x="796" y="408" font-family="Arial,sans-serif" font-size="12" fill="#555555">Mensure novamente a cada 4–6 semanas</text>
+  <text x="796" y="425" font-family="Arial,sans-serif" font-size="12" fill="#555555">para ajustar protocolo</text>
+</svg>
