@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Como Voltar a Treinar Depois de Meses Parado: O Guia do Detraining">
   <title>Como Voltar a Treinar Depois de Meses Parado: O Guia do Detraining</title>
-  <desc>Infográfico: Como Voltar a Treinar Depois de Meses Parado: O Guia do Detraining</desc>
+  <desc>Infografico: Como Voltar a Treinar Depois de Meses Parado: O Guia do Detraining</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#111111"/>
@@ -11,43 +12,33 @@
       <stop offset="100%" stop-color="#A08030"/>
     </linearGradient>
   </defs>
-  <!-- background -->
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <!-- border -->
   <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <!-- accent line -->
   <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <!-- branding -->
   <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
   <rect x="60" y="30" width="156" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
   <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">RETORNO AO TREINO</text>
-  <text x="60" y="90" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Detraining & Retorno</text>
-  <text x="60" y="146" font-family="Arial,sans-serif" font-size="16" fill="#555555">Quanto você perde e como recuperar</text>
+  <text x="60" y="90" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Detraining e Retorno</text>
+  <text x="60" y="146" font-family="Arial,sans-serif" font-size="16" fill="#555555">Quanto voce perde e como recuperar</text>
   <rect x="60" y="168" width="80" height="3" rx="2" fill="url(#gold)"/>
-  <text x="60" y="179" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" font-weight="bold">Manutenção (%) após pausa — sem treino</text>
+  <text x="60" y="179" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" font-weight="bold">Manutencao (%) apos pausa - sem treino</text>
   <rect x="60" y="208" width="160" height="247" rx="4" fill="#BA9E50" opacity="0.85"/>
-  <text x="140" y="473" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Força (2</text>
-  <text x="140" y="487" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">sem)</text>
+  <text x="140" y="473" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Forca 2sem</text>
   <text x="140" y="200" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">95%</text>
   <rect x="240" y="234" width="160" height="221" rx="4" fill="#42A5F5" opacity="0.85"/>
-  <text x="320" y="473" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Força (4</text>
-  <text x="320" y="487" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">sem)</text>
+  <text x="320" y="473" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Forca 4sem</text>
   <text x="320" y="226" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">85%</text>
   <rect x="420" y="260" width="160" height="195" rx="4" fill="#4CAF50" opacity="0.85"/>
-  <text x="500" y="473" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Força (8</text>
-  <text x="500" y="487" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">sem)</text>
+  <text x="500" y="473" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Forca 8sem</text>
   <text x="500" y="252" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">75%</text>
   <rect x="600" y="201" width="160" height="254" rx="4" fill="#FF7043" opacity="0.85"/>
-  <text x="680" y="473" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Massa (2</text>
-  <text x="680" y="487" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">sem)</text>
+  <text x="680" y="473" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Massa 2sem</text>
   <text x="680" y="193" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">98%</text>
   <rect x="780" y="216" width="160" height="239" rx="4" fill="#EF5350" opacity="0.85"/>
-  <text x="860" y="473" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Massa (4</text>
-  <text x="860" y="487" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">sem)</text>
+  <text x="860" y="473" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Massa 4sem</text>
   <text x="860" y="208" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">92%</text>
   <rect x="960" y="242" width="160" height="213" rx="4" fill="#BA9E50" opacity="0.85"/>
-  <text x="1040" y="473" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Massa (8</text>
-  <text x="1040" y="487" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">sem)</text>
+  <text x="1040" y="473" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Massa 8sem</text>
   <text x="1040" y="234" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">82%</text>
   <line x1="50" y1="455" x2="1150" y2="455" stroke="#2a2a2a" stroke-width="1"/>
 </svg>

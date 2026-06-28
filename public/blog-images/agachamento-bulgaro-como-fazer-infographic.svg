@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Agachamento Búlgaro: Técnica Correta, Benefícios e Como Progredir">
-  <title>Agachamento Búlgaro: Técnica Correta, Benefícios e Como Progredir</title>
-  <desc>Infográfico: Agachamento Búlgaro: Técnica Correta, Benefícios e Como Progredir</desc>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Agachamento Bolgaro: Tacnica Correta, Benefecios e Como Progredir">
+  <title>Agachamento Bolgaro: Tacnica Correta, Benefecios e Como Progredir</title>
+  <desc>Infografico: Agachamento Bolgaro: Tacnica Correta, Benefecios e Como Progredir</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#111111"/>
@@ -11,37 +12,33 @@
       <stop offset="100%" stop-color="#A08030"/>
     </linearGradient>
   </defs>
-  <!-- background -->
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <!-- border -->
   <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
-  <!-- accent line -->
   <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
-  <!-- branding -->
   <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
   <rect x="60" y="30" width="92" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
-  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">EXERCÍCIO</text>
-  <text x="60" y="90" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Agachamento Búlgaro</text>
-  <text x="60" y="146" font-family="Arial,sans-serif" font-size="16" fill="#555555">Ativação muscular e técnica correta</text>
+  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">EXERCICIO</text>
+  <text x="60" y="90" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Agachamento Bulgaro</text>
+  <text x="60" y="146" font-family="Arial,sans-serif" font-size="16" fill="#555555">Ativacao muscular e tecnica correta</text>
   <rect x="60" y="168" width="80" height="3" rx="2" fill="url(#gold)"/>
-  <text x="60" y="179" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" font-weight="bold">Ativação Muscular Relativa (%EMG)</text>
+  <text x="60" y="179" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" font-weight="bold">Ativacao Muscular Relativa (%EMG)</text>
   <rect x="60" y="217" width="196" height="248" rx="4" fill="#BA9E50" opacity="0.85"/>
-  <text x="158" y="483" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Glúteo</text>
-  <text x="158" y="497" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Máx.</text>
+  <text x="158" y="483" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Gluteo</text>
+  <text x="158" y="497" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Max.</text>
   <text x="158" y="209" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">92%</text>
   <rect x="276" y="236" width="196" height="229" rx="4" fill="#42A5F5" opacity="0.85"/>
-  <text x="374" y="483" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Quadríceps</text>
+  <text x="374" y="483" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Quadriceps</text>
   <text x="374" y="228" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">85%</text>
   <rect x="492" y="282" width="196" height="183" rx="4" fill="#4CAF50" opacity="0.85"/>
   <text x="590" y="483" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Isquiotibi</text>
   <text x="590" y="497" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">ais</text>
   <text x="590" y="274" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">68%</text>
   <rect x="708" y="266" width="196" height="199" rx="4" fill="#FF7043" opacity="0.85"/>
-  <text x="806" y="483" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Glúteo</text>
-  <text x="806" y="497" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Médio</text>
+  <text x="806" y="483" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Gluteo</text>
+  <text x="806" y="497" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Medio</text>
   <text x="806" y="258" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">74%</text>
   <rect x="924" y="344" width="196" height="121" rx="4" fill="#EF5350" opacity="0.85"/>
-  <text x="1022" y="483" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Gastrocnêm</text>
+  <text x="1022" y="483" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">Gastrocnem</text>
   <text x="1022" y="497" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="middle">io</text>
   <text x="1022" y="336" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="bold">45%</text>
   <line x1="50" y1="465" x2="1150" y2="465" stroke="#2a2a2a" stroke-width="1"/>
