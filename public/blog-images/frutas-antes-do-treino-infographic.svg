@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Frutas: Indice Glicemico e Praticidade">
+  <title>Frutas: Indice Glicemico e Praticidade</title>
+  <desc>Infografico: Frutas: Indice Glicemico e Praticidade - Montinho Personal Trainer</desc>
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <rect x="25" y="22" width="112" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="81" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Treinamento</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Frutas: Indice Glicemico e Praticidade</text>
+  <text x="600" y="118" font-family="Arial,sans-serif" font-size="14" fill="#888888" text-anchor="middle">Impacto Relativo por Fator</text>
+  <line x1="230" y1="140" x2="1010" y2="140" stroke="#222" stroke-width="1"/>
+  <text x="220" y="169" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Banana madura</text>
+  <rect x="230" y="150" width="780" height="30" rx="4" fill="#1a1a1a"/>
+  <rect x="230" y="150" width="702" height="30" rx="4" fill="#BA9E50" fill-opacity="0.7"/>
+  <text x="942" y="169" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" font-weight="bold">90%</text>  <text x="220" y="254" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Manga</text>
+  <rect x="230" y="235" width="780" height="30" rx="4" fill="#1a1a1a"/>
+  <rect x="230" y="235" width="561" height="30" rx="4" fill="#3182CE" fill-opacity="0.7"/>
+  <text x="801" y="254" font-family="Arial,sans-serif" font-size="14" fill="#3182CE" font-weight="bold">72%</text>  <text x="220" y="339" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Uva</text>
+  <rect x="230" y="320" width="780" height="30" rx="4" fill="#1a1a1a"/>
+  <rect x="230" y="320" width="507" height="30" rx="4" fill="#38A169" fill-opacity="0.7"/>
+  <text x="747" y="339" font-family="Arial,sans-serif" font-size="14" fill="#38A169" font-weight="bold">65%</text>  <text x="220" y="424" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Maca</text>
+  <rect x="230" y="405" width="780" height="30" rx="4" fill="#1a1a1a"/>
+  <rect x="230" y="405" width="296" height="30" rx="4" fill="#DD6B20" fill-opacity="0.7"/>
+  <text x="536" y="424" font-family="Arial,sans-serif" font-size="14" fill="#DD6B20" font-weight="bold">38%</text>  <text x="220" y="509" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Morango</text>
+  <rect x="230" y="490" width="780" height="30" rx="4" fill="#1a1a1a"/>
+  <rect x="230" y="490" width="195" height="30" rx="4" fill="#E53E3E" fill-opacity="0.7"/>
+  <text x="435" y="509" font-family="Arial,sans-serif" font-size="14" fill="#E53E3E" font-weight="bold">25%</text>
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
+</svg>
