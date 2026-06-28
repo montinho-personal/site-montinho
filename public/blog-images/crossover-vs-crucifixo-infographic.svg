@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Crossover vs Crucifixo: Qual e Melhor para o Peito?">
+  <title>Crossover vs Crucifixo: Qual e Melhor para o Peito?</title>
+  <desc>Infografico: Crossover vs Crucifixo: Qual e Melhor para o Peito? - Montinho Personal Trainer</desc>
+  <!-- VERSUS -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <rect x="25" y="22" width="112" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="81" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Treinamento</text>
+  <rect x="5" y="0" width="595" height="630" fill="#1a0505" fill-opacity="0.5"/>
+  <rect x="600" y="0" width="600" height="630" fill="#051a05" fill-opacity="0.5"/>
+  <line x1="600" y1="60" x2="600" y2="610" stroke="#BA9E50" stroke-width="2"/>
+  <text x="600" y="52" font-family="Arial,sans-serif" font-size="16" fill="#BA9E50" text-anchor="middle" font-weight="bold">VS</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="22" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Crossover vs Crucifixo: Qual e Melhor para o Peito?</text>
+  <rect x="60" y="155" width="470" height="50" rx="4" fill="#E53E3E" fill-opacity="0.15"/>
+  <text x="295" y="188" font-family="Arial,sans-serif" font-size="22" fill="#E53E3E" text-anchor="middle" font-weight="bold">CROSSOVER (CABO)</text>
+  <rect x="620" y="155" width="470" height="50" rx="4" fill="#38A169" fill-opacity="0.15"/>
+  <text x="855" y="188" font-family="Arial,sans-serif" font-size="22" fill="#38A169" text-anchor="middle" font-weight="bold">CRUCIFIXO (HALTER)</text>
+  <circle cx="90" cy="280" r="6" fill="#E53E3E" fill-opacity="0.6"/>
+  <text x="108" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Tensao em todo arco</text>  <circle cx="90" cy="350" r="6" fill="#E53E3E" fill-opacity="0.6"/>
+  <text x="108" y="355" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Angulo ajustavel</text>  <circle cx="90" cy="420" r="6" fill="#E53E3E" fill-opacity="0.6"/>
+  <text x="108" y="425" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Ideal para definicao</text>
+  <circle cx="620" cy="280" r="6" fill="#38A169" fill-opacity="0.8"/>
+  <text x="638" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Amplitude maxima</text>  <circle cx="620" cy="350" r="6" fill="#38A169" fill-opacity="0.8"/>
+  <text x="638" y="355" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Carga maior</text>  <circle cx="620" cy="420" r="6" fill="#38A169" fill-opacity="0.8"/>
+  <text x="638" y="425" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Alongamento profundo</text>
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
+</svg>
