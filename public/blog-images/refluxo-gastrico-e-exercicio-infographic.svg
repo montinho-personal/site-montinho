@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Refluxo e Academia: Como Treinar Sem Piorar a Azia e o GERD">
+  <title>Refluxo e Academia: Como Treinar Sem Piorar a Azia e o GERD</title>
+  <desc>Infográfico: Refluxo e Academia: Como Treinar Sem Piorar a Azia e o GERD</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C9AE60"/>
+      <stop offset="100%" stop-color="#A08030"/>
+    </linearGradient>
+  </defs>
+  <!-- background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- border -->
+  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#BA9E50" stroke-width="1.5" opacity="0.4"/>
+  <!-- accent line -->
+  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
+  <!-- branding -->
+  <text x="1176" y="614" font-family="Arial,sans-serif" font-size="11" fill="#555555" text-anchor="end">montinhopersonal.com.br</text>
+  <rect x="60" y="30" width="140" height="24" rx="12" fill="#BA9E50" opacity="0.2"/>
+  <text x="70" y="47" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" font-weight="bold">SAÚDE DIGESTIVA</text>
+  <text x="60" y="90" font-family="Arial,sans-serif" font-size="36" fill="#F5F5F5" font-weight="bold">Refluxo e Academia</text>
+  <text x="60" y="146" font-family="Arial,sans-serif" font-size="16" fill="#555555">Como treinar sem piorar a azia</text>
+  <rect x="60" y="168" width="80" height="3" rx="2" fill="url(#gold)"/>
+  <rect x="60" y="200" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <text x="84" y="232" font-family="Arial,sans-serif" font-size="20">⏱️</text>
+  <text x="116" y="222" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Aguarde 2–3h após refeição completa</text>
+  <text x="116" y="238" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">antes de treinar pesado</text>
+  <rect x="600" y="200" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <text x="624" y="232" font-family="Arial,sans-serif" font-size="20">🏋️</text>
+  <text x="656" y="222" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Evite exercícios com alta pressão intra-</text>
+  <text x="656" y="238" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">abdominal logo após comer</text>
+  <rect x="60" y="264" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <text x="84" y="296" font-family="Arial,sans-serif" font-size="20">📐</text>
+  <text x="116" y="286" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Prefira exercícios em posição ereta para</text>
+  <text x="116" y="302" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">reduzir refluxo ácido</text>
+  <rect x="600" y="264" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <text x="624" y="296" font-family="Arial,sans-serif" font-size="20">🚴</text>
+  <text x="656" y="286" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Bike e elíptico são melhores que corrida</text>
+  <text x="656" y="302" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">para quem tem GERD</text>
+  <rect x="60" y="328" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <text x="84" y="360" font-family="Arial,sans-serif" font-size="20">🍽️</text>
+  <text x="116" y="350" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Refeição pré-treino: pequena, leve, sem</text>
+  <text x="116" y="366" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">gordura ou ácidos</text>
+  <rect x="600" y="328" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <text x="624" y="360" font-family="Arial,sans-serif" font-size="20">☕</text>
+  <text x="656" y="350" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Limite cafeína do pré-treino — relaxa</text>
+  <text x="656" y="366" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">esfíncter esofágico inferior</text>
+  <rect x="60" y="392" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <text x="84" y="424" font-family="Arial,sans-serif" font-size="20">⚖️</text>
+  <text x="116" y="414" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Perder peso é o tratamento mais eficaz a</text>
+  <text x="116" y="430" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">longo prazo para GERD</text>
+  <rect x="600" y="392" width="520" height="50" rx="25" fill="#1a1a1a" stroke="#BA9E50" stroke-width="0.6"/>
+  <text x="624" y="424" font-family="Arial,sans-serif" font-size="20">💊</text>
+  <text x="656" y="414" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">Para GERD grave, combine adaptações com</text>
+  <text x="656" y="430" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5">IBP prescrito pelo médico</text>
+</svg>
