@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { marked } from "marked";
 import { getBlogPost, getRelatedPosts, blogPosts, SITE_URL } from "@/lib/blog";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
@@ -51,6 +52,7 @@ export default async function BlogPost({ params }: Props) {
   if (!post) notFound();
 
   const relatedPosts = getRelatedPosts(slug, post.category);
+  const contentHtml = marked(post.content) as string;
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -164,9 +166,8 @@ export default async function BlogPost({ params }: Props) {
       <article className="py-16 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            className="text-gray-300 leading-relaxed space-y-5 blog-content"
-            style={{ fontSize: "1.0625rem", lineHeight: "1.75" }}
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            className="prose-blog"
+            dangerouslySetInnerHTML={{ __html: contentHtml }}
           />
 
           {/* Video */}
