@@ -19,20 +19,20 @@
   <line x1="230" y1="580" x2="1010" y2="580" stroke="#222" stroke-width="1"/>
   <text x="220" y="169" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Ansiedade</text>
   <rect x="230" y="150" width="780" height="30" rx="4" fill="#1a1a1a"/>
-  <rect x="230" y="150" width="624" height="30" rx="4" fill="#BA9E50" fill-opacity="0.7"/>
-  <text x="864" y="169" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" font-weight="bold">80%</text>  <text x="220" y="254" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Depressao</text>
+  <rect x="230" y="150" width="351" height="30" rx="4" fill="#BA9E50" fill-opacity="0.7"/>
+  <text x="591" y="169" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" font-weight="bold">45%</text>  <text x="220" y="254" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Humor</text>
   <rect x="230" y="235" width="780" height="30" rx="4" fill="#1a1a1a"/>
-  <rect x="230" y="235" width="585" height="30" rx="4" fill="#3182CE" fill-opacity="0.7"/>
-  <text x="825" y="254" font-family="Arial,sans-serif" font-size="14" fill="#3182CE" font-weight="bold">75%</text>  <text x="220" y="339" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Cortisol</text>
+  <rect x="230" y="235" width="405" height="30" rx="4" fill="#3182CE" fill-opacity="0.7"/>
+  <text x="645" y="254" font-family="Arial,sans-serif" font-size="14" fill="#3182CE" font-weight="bold">52%</text>  <text x="220" y="339" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Energia</text>
   <rect x="230" y="320" width="780" height="30" rx="4" fill="#1a1a1a"/>
-  <rect x="230" y="320" width="546" height="30" rx="4" fill="#38A169" fill-opacity="0.7"/>
-  <text x="786" y="339" font-family="Arial,sans-serif" font-size="14" fill="#38A169" font-weight="bold">70%</text>  <text x="220" y="424" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Autoestima</text>
+  <rect x="230" y="320" width="296" height="30" rx="4" fill="#38A169" fill-opacity="0.7"/>
+  <text x="536" y="339" font-family="Arial,sans-serif" font-size="14" fill="#38A169" font-weight="bold">38%</text>  <text x="220" y="424" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Foco</text>
   <rect x="230" y="405" width="780" height="30" rx="4" fill="#1a1a1a"/>
-  <rect x="230" y="405" width="686" height="30" rx="4" fill="#DD6B20" fill-opacity="0.7"/>
-  <text x="926" y="424" font-family="Arial,sans-serif" font-size="14" fill="#DD6B20" font-weight="bold">88%</text>  <text x="220" y="509" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Sono</text>
+  <rect x="230" y="405" width="257" height="30" rx="4" fill="#DD6B20" fill-opacity="0.7"/>
+  <text x="497" y="424" font-family="Arial,sans-serif" font-size="14" fill="#DD6B20" font-weight="bold">33%</text>  <text x="220" y="509" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Sono</text>
   <rect x="230" y="490" width="780" height="30" rx="4" fill="#1a1a1a"/>
-  <rect x="230" y="490" width="561" height="30" rx="4" fill="#E53E3E" fill-opacity="0.7"/>
-  <text x="801" y="509" font-family="Arial,sans-serif" font-size="14" fill="#E53E3E" font-weight="bold">72%</text>
+  <rect x="230" y="490" width="319" height="30" rx="4" fill="#9F7AEA" fill-opacity="0.7"/>
+  <text x="559" y="509" font-family="Arial,sans-serif" font-size="14" fill="#9F7AEA" font-weight="bold">41%</text>
   <!-- Watermark -->
   <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>
