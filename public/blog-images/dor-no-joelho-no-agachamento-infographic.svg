@@ -21,20 +21,20 @@
   <text x="80" y="345" font-family="Arial,sans-serif" font-size="20" fill="#BA9E50">|</text>
   <circle cx="140" cy="340" r="16" fill="#BA9E50" stroke="#0d0d0d" stroke-width="3"/>
   <text x="140" y="345" font-family="Arial,sans-serif" font-size="11" fill="#0d0d0d" text-anchor="middle" font-weight="bold">1</text>
-  <text x="140" y="300" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle" font-weight="bold">Inicio</text>
-  <text x="140" y="260" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle">Comecar agora</text>
+  <text x="140" y="300" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle" font-weight="bold">Avaliacao</text>
+  <text x="140" y="260" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle">Identificar causa</text>
   <line x1="140" y1="324" x2="140" y2="305" stroke="#BA9E50" stroke-width="1" stroke-dasharray="3,3"/>  <circle cx="380" cy="340" r="16" fill="#BA9E50" stroke="#0d0d0d" stroke-width="3"/>
   <text x="380" y="345" font-family="Arial,sans-serif" font-size="11" fill="#0d0d0d" text-anchor="middle" font-weight="bold">2</text>
-  <text x="380" y="395" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle" font-weight="bold">Mes 1</text>
-  <text x="380" y="440" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle">Primeiros passos</text>
+  <text x="380" y="395" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle" font-weight="bold">Repouso</text>
+  <text x="380" y="440" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle">3-7 dias</text>
   <line x1="380" y1="324" x2="380" y2="375" stroke="#BA9E50" stroke-width="1" stroke-dasharray="3,3"/>  <circle cx="620" cy="340" r="16" fill="#BA9E50" stroke="#0d0d0d" stroke-width="3"/>
   <text x="620" y="345" font-family="Arial,sans-serif" font-size="11" fill="#0d0d0d" text-anchor="middle" font-weight="bold">3</text>
-  <text x="620" y="300" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle" font-weight="bold">Mes 3</text>
-  <text x="620" y="260" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle">Evolucao visivel</text>
+  <text x="620" y="300" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle" font-weight="bold">Fisioterapia</text>
+  <text x="620" y="260" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle">2-4 semanas</text>
   <line x1="620" y1="324" x2="620" y2="305" stroke="#BA9E50" stroke-width="1" stroke-dasharray="3,3"/>  <circle cx="860" cy="340" r="16" fill="#BA9E50" stroke="#0d0d0d" stroke-width="3"/>
   <text x="860" y="345" font-family="Arial,sans-serif" font-size="11" fill="#0d0d0d" text-anchor="middle" font-weight="bold">4</text>
-  <text x="860" y="395" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle" font-weight="bold">Mes 6+</text>
-  <text x="860" y="440" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle">Objetivo atingido</text>
+  <text x="860" y="395" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle" font-weight="bold">Retorno</text>
+  <text x="860" y="440" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle">Progressivo</text>
   <line x1="860" y1="324" x2="860" y2="375" stroke="#BA9E50" stroke-width="1" stroke-dasharray="3,3"/>
   <!-- Watermark -->
   <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>

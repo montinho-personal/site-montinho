@@ -15,17 +15,17 @@
   <text x="600" y="88" font-family="Arial,sans-serif" font-size="22" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Por Que a Barriga e a Ultima a Ir Embora? A Explicaca..</text>
   <!-- Big quote mark -->
   <text x="30" y="290" font-family="Arial,sans-serif" font-size="160" fill="#BA9E50" font-weight="bold" opacity="0.25">"</text>
-  <text x="130" y="280" font-family="Arial,sans-serif" font-size="28" fill="#F5F5F5" font-style="italic">O resultado nao e destino. E consequencia</text>  <text x="130" y="330" font-family="Arial,sans-serif" font-size="28" fill="#F5F5F5" font-style="italic">da consistencia diaria.</text>
-  <text x="130" y="460" font-family="Arial,sans-serif" font-size="16" fill="#BA9E50" font-weight="600">? Montinho Personal Trainer</text>
+  <text x="130" y="280" font-family="Arial,sans-serif" font-size="28" fill="#F5F5F5" font-style="italic">O ultimo a chegar e o ultimo a sair.</text>
+  <text x="130" y="460" font-family="Arial,sans-serif" font-size="16" fill="#BA9E50" font-weight="600">? Fisiologia corporal</text>
   <line x1="130" y1="475" x2="600" y2="475" stroke="#BA9E50" stroke-width="1" opacity="0.4"/>
   <!-- Right divider -->
   <line x1="660" y1="160" x2="660" y2="560" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
   <text x="680" y="220" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" letter-spacing="2">NUMEROS REAIS</text>
   <rect x="680" y="350" width="450" height="60" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
-  <text x="720" y="388" font-family="Arial,sans-serif" font-size="14" fill="#888888">Anos exp.</text>
-  <text x="1100" y="388" font-family="Arial,sans-serif" font-size="20" fill="#BA9E50" text-anchor="end" font-weight="bold">10+</text>  <rect x="680" y="430" width="450" height="60" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
-  <text x="720" y="468" font-family="Arial,sans-serif" font-size="14" fill="#888888">Alunos</text>
-  <text x="1100" y="468" font-family="Arial,sans-serif" font-size="20" fill="#BA9E50" text-anchor="end" font-weight="bold">500+</text>
+  <text x="720" y="388" font-family="Arial,sans-serif" font-size="14" fill="#888888">Gordura visceral</text>
+  <text x="1100" y="388" font-family="Arial,sans-serif" font-size="20" fill="#BA9E50" text-anchor="end" font-weight="bold">mais resistente</text>  <rect x="680" y="430" width="450" height="60" rx="6" fill="#141414" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="720" y="468" font-family="Arial,sans-serif" font-size="14" fill="#888888">Exige</text>
+  <text x="1100" y="468" font-family="Arial,sans-serif" font-size="20" fill="#BA9E50" text-anchor="end" font-weight="bold">consistencia total</text>
   <!-- Watermark -->
   <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>
