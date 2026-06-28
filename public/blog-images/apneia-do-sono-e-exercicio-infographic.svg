@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Apneia do Sono e Exercicio: Como o Treino Pode Ajudar (e Quando Nao ..">
   <title>Apneia do Sono e Exercicio: Como o Treino Pode Ajudar (e Quando Nao ..</title>
-  <desc>Infografico: Apneia do Sono e Exercicio: Como o Treino Pode Ajudar (e Quando Nao .. ? Montinho Personal Trainer</desc>
-  <!-- T15: CHECKLIST NUMBERED -->
+  <desc>Infografico: Apneia do Sono e Exercicio: Como o Treino Pode Ajudar (e Quando Nao .. - Montinho Personal Trainer</desc>
+  <!-- T10: HORIZONTAL BARS -->
   <!-- Background -->
   <rect width="1200" height="630" fill="#0d0d0d"/>
   <!-- Left accent bar -->
@@ -13,28 +13,26 @@
   <rect x="25" y="22" width="64" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
   <text x="57" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Saude</text>
   <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Apneia do Sono e Exercicio: Como o Treino Pode Ajudar..</text>
-  <text x="600" y="120" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle">Guia Pratico ? Montinho Personal Trainer</text>
-  <circle cx="80" cy="165" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="172" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">1</text>
-  <text x="120" y="157" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Ponto principal</text>
-  <text x="120" y="181" font-family="Arial,sans-serif" font-size="14" fill="#888888">detalhe e contexto aqui</text>
-  <line x1="30" y1="200" x2="1150" y2="200" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="253" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="260" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">2</text>
-  <text x="120" y="245" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Segundo ponto</text>
-  <text x="120" y="269" font-family="Arial,sans-serif" font-size="14" fill="#888888">mais informacao relevante</text>
-  <line x1="30" y1="288" x2="1150" y2="288" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="341" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="348" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">3</text>
-  <text x="120" y="333" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Terceiro ponto</text>
-  <text x="120" y="357" font-family="Arial,sans-serif" font-size="14" fill="#888888">dica pratica e objetiva</text>
-  <line x1="30" y1="376" x2="1150" y2="376" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="429" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="436" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">4</text>
-  <text x="120" y="421" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Quarto ponto</text>
-  <text x="120" y="445" font-family="Arial,sans-serif" font-size="14" fill="#888888">aplicacao no treino</text>
-  <line x1="30" y1="464" x2="1150" y2="464" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="517" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="524" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">5</text>
-  <text x="120" y="509" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Quinto ponto</text>
-  <text x="120" y="533" font-family="Arial,sans-serif" font-size="14" fill="#888888">consistencia e resultado</text>
-  <line x1="30" y1="552" x2="1150" y2="552" stroke="#222" stroke-width="1"/>
+  <text x="600" y="118" font-family="Arial,sans-serif" font-size="14" fill="#888888" text-anchor="middle">Impacto Relativo por Fator</text>
+  <!-- Grid lines -->
+  <line x1="230" y1="140" x2="1010" y2="140" stroke="#222" stroke-width="1"/>
+  <line x1="230" y1="580" x2="1010" y2="580" stroke="#222" stroke-width="1"/>
+  <text x="220" y="169" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Fator 1</text>
+  <rect x="230" y="150" width="780" height="30" rx="4" fill="#1a1a1a"/>
+  <rect x="230" y="150" width="663" height="30" rx="4" fill="#BA9E50" fill-opacity="0.7"/>
+  <text x="903" y="169" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" font-weight="bold">85%</text>  <text x="220" y="254" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Fator 2</text>
+  <rect x="230" y="235" width="780" height="30" rx="4" fill="#1a1a1a"/>
+  <rect x="230" y="235" width="561" height="30" rx="4" fill="#3182CE" fill-opacity="0.7"/>
+  <text x="801" y="254" font-family="Arial,sans-serif" font-size="14" fill="#3182CE" font-weight="bold">72%</text>  <text x="220" y="339" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Fator 3</text>
+  <rect x="230" y="320" width="780" height="30" rx="4" fill="#1a1a1a"/>
+  <rect x="230" y="320" width="468" height="30" rx="4" fill="#38A169" fill-opacity="0.7"/>
+  <text x="708" y="339" font-family="Arial,sans-serif" font-size="14" fill="#38A169" font-weight="bold">60%</text>  <text x="220" y="424" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Fator 4</text>
+  <rect x="230" y="405" width="780" height="30" rx="4" fill="#1a1a1a"/>
+  <rect x="230" y="405" width="351" height="30" rx="4" fill="#DD6B20" fill-opacity="0.7"/>
+  <text x="591" y="424" font-family="Arial,sans-serif" font-size="14" fill="#DD6B20" font-weight="bold">45%</text>  <text x="220" y="509" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="end">Fator 5</text>
+  <rect x="230" y="490" width="780" height="30" rx="4" fill="#1a1a1a"/>
+  <rect x="230" y="490" width="234" height="30" rx="4" fill="#E53E3E" fill-opacity="0.7"/>
+  <text x="474" y="509" font-family="Arial,sans-serif" font-size="14" fill="#E53E3E" font-weight="bold">30%</text>
   <!-- Watermark -->
   <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>

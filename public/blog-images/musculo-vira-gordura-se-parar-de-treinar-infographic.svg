@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Musculo Vira Gordura Se Parar de Treinar? A Verdade Cientifica">
   <title>Musculo Vira Gordura Se Parar de Treinar? A Verdade Cientifica</title>
-  <desc>Infografico: Musculo Vira Gordura Se Parar de Treinar? A Verdade Cientifica ? Montinho Personal Trainer</desc>
-  <!-- T15: CHECKLIST NUMBERED -->
+  <desc>Infografico: Musculo Vira Gordura Se Parar de Treinar? A Verdade Cientifica - Montinho Personal Trainer</desc>
+  <!-- T6: DO/DONT -->
   <!-- Background -->
   <rect width="1200" height="630" fill="#0d0d0d"/>
   <!-- Left accent bar -->
@@ -13,28 +13,35 @@
   <rect x="25" y="22" width="64" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
   <text x="57" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Saude</text>
   <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Musculo Vira Gordura Se Parar de Treinar? A Verdade C..</text>
-  <text x="600" y="120" font-family="Arial,sans-serif" font-size="14" fill="#BA9E50" text-anchor="middle">Guia Pratico ? Montinho Personal Trainer</text>
-  <circle cx="80" cy="165" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="172" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">1</text>
-  <text x="120" y="157" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Ponto principal</text>
-  <text x="120" y="181" font-family="Arial,sans-serif" font-size="14" fill="#888888">detalhe e contexto aqui</text>
-  <line x1="30" y1="200" x2="1150" y2="200" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="253" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="260" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">2</text>
-  <text x="120" y="245" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Segundo ponto</text>
-  <text x="120" y="269" font-family="Arial,sans-serif" font-size="14" fill="#888888">mais informacao relevante</text>
-  <line x1="30" y1="288" x2="1150" y2="288" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="341" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="348" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">3</text>
-  <text x="120" y="333" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Terceiro ponto</text>
-  <text x="120" y="357" font-family="Arial,sans-serif" font-size="14" fill="#888888">dica pratica e objetiva</text>
-  <line x1="30" y1="376" x2="1150" y2="376" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="429" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="436" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">4</text>
-  <text x="120" y="421" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Quarto ponto</text>
-  <text x="120" y="445" font-family="Arial,sans-serif" font-size="14" fill="#888888">aplicacao no treino</text>
-  <line x1="30" y1="464" x2="1150" y2="464" stroke="#222" stroke-width="1"/>  <circle cx="80" cy="517" r="22" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1.5"/>
-  <text x="80" y="524" font-family="Arial,sans-serif" font-size="18" fill="#BA9E50" text-anchor="middle" font-weight="bold">5</text>
-  <text x="120" y="509" font-family="Arial,sans-serif" font-size="18" fill="#F5F5F5" font-weight="bold">Quinto ponto</text>
-  <text x="120" y="533" font-family="Arial,sans-serif" font-size="14" fill="#888888">consistencia e resultado</text>
-  <line x1="30" y1="552" x2="1150" y2="552" stroke="#222" stroke-width="1"/>
+  <!-- Headers -->
+  <rect x="40" y="130" width="500" height="45" rx="4" fill="#E53E3E" fill-opacity="0.2"/>
+  <text x="290" y="160" font-family="Arial,sans-serif" font-size="20" fill="#E53E3E" text-anchor="middle" font-weight="bold">ERROS COMUNS</text>
+  <rect x="620" y="130" width="540" height="45" rx="4" fill="#38A169" fill-opacity="0.2"/>
+  <text x="890" y="160" font-family="Arial,sans-serif" font-size="20" fill="#38A169" text-anchor="middle" font-weight="bold">MODO CERTO</text>
+  <!-- Divider -->
+  <line x1="600" y1="120" x2="600" y2="600" stroke="#444" stroke-width="1"/>
+  <rect x="40" y="175" width="500" height="50" rx="4" fill="#E53E3E" fill-opacity="0.08"/>
+  <text x="65" y="205" font-family="Arial,sans-serif" font-size="28" fill="#E53E3E" font-weight="bold">x</text>
+  <text x="100" y="205" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Erro comum 1</text>  <rect x="40" y="255" width="500" height="50" rx="4" fill="#E53E3E" fill-opacity="0.08"/>
+  <text x="65" y="285" font-family="Arial,sans-serif" font-size="28" fill="#E53E3E" font-weight="bold">x</text>
+  <text x="100" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Erro comum 2</text>  <rect x="40" y="335" width="500" height="50" rx="4" fill="#E53E3E" fill-opacity="0.08"/>
+  <text x="65" y="365" font-family="Arial,sans-serif" font-size="28" fill="#E53E3E" font-weight="bold">x</text>
+  <text x="100" y="365" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Erro comum 3</text>  <rect x="40" y="415" width="500" height="50" rx="4" fill="#E53E3E" fill-opacity="0.08"/>
+  <text x="65" y="445" font-family="Arial,sans-serif" font-size="28" fill="#E53E3E" font-weight="bold">x</text>
+  <text x="100" y="445" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Erro comum 4</text>
+  <rect x="620" y="175" width="540" height="50" rx="4" fill="#38A169" fill-opacity="0.08"/>
+  <line x1="645" y1="202" x2="655" y2="212" stroke="#38A169" stroke-width="3"/>
+  <line x1="655" y1="212" x2="675" y2="192" stroke="#38A169" stroke-width="3"/>
+  <text x="690" y="205" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Solucao 1</text>  <rect x="620" y="255" width="540" height="50" rx="4" fill="#38A169" fill-opacity="0.08"/>
+  <line x1="645" y1="282" x2="655" y2="292" stroke="#38A169" stroke-width="3"/>
+  <line x1="655" y1="292" x2="675" y2="272" stroke="#38A169" stroke-width="3"/>
+  <text x="690" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Solucao 2</text>  <rect x="620" y="335" width="540" height="50" rx="4" fill="#38A169" fill-opacity="0.08"/>
+  <line x1="645" y1="362" x2="655" y2="372" stroke="#38A169" stroke-width="3"/>
+  <line x1="655" y1="372" x2="675" y2="352" stroke="#38A169" stroke-width="3"/>
+  <text x="690" y="365" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Solucao 3</text>  <rect x="620" y="415" width="540" height="50" rx="4" fill="#38A169" fill-opacity="0.08"/>
+  <line x1="645" y1="442" x2="655" y2="452" stroke="#38A169" stroke-width="3"/>
+  <line x1="655" y1="452" x2="675" y2="432" stroke="#38A169" stroke-width="3"/>
+  <text x="690" y="445" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Solucao 4</text>
   <!-- Watermark -->
   <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>

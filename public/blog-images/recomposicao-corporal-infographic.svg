@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Recomposicao Corporal: E Possivel Ganhar Musculo e Perder Gordura ao..">
   <title>Recomposicao Corporal: E Possivel Ganhar Musculo e Perder Gordura ao..</title>
-  <desc>Infografico: Recomposicao Corporal: E Possivel Ganhar Musculo e Perder Gordura ao.. ? Montinho Personal Trainer</desc>
+  <desc>Infografico: Recomposicao Corporal: E Possivel Ganhar Musculo e Perder Gordura ao.. - Montinho Personal Trainer</desc>
   <!-- T9: RADIAL GAUGES -->
   <!-- Background -->
   <rect width="1200" height="630" fill="#0d0d0d"/>
@@ -14,17 +14,17 @@
   <text x="81" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Hipertrofia</text>
   <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Recomposicao Corporal: E Possivel Ganhar Musculo e Pe..</text>
   <text x="600" y="120" font-family="Arial,sans-serif" font-size="14" fill="#888888" text-anchor="middle">Analise Baseada em Evidencias</text>
-  <path d="M 90 360 A 130 130 0 0 1 350 360" fill="none" stroke="#222" stroke-width="18"/>  <path d="M 90 360 A 130 130 0 0 1 320.2 277.1" fill="none" stroke="#BA9E50" stroke-width="18" stroke-linecap="round"/>
-  <text x="220" y="340" font-family="Arial,sans-serif" font-size="42" fill="#BA9E50" text-anchor="middle" font-weight="bold">78%</text>
-  <text x="220" y="395" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Eficacia</text>
+  <path d="M 90 360 A 130 130 0 0 1 350 360" fill="none" stroke="#222" stroke-width="18"/>  <path d="M 90 360 A 130 130 0 0 1 335.8 301.0" fill="none" stroke="#BA9E50" stroke-width="18" stroke-linecap="round"/>
+  <text x="220" y="340" font-family="Arial,sans-serif" font-size="42" fill="#BA9E50" text-anchor="middle" font-weight="bold">85%</text>
+  <text x="220" y="395" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Proteina alta</text>
   <text x="90" y="380" font-family="Arial,sans-serif" font-size="11" fill="#888888" text-anchor="middle">0</text>
-  <text x="350" y="380" font-family="Arial,sans-serif" font-size="11" fill="#888888" text-anchor="middle">100</text>  <path d="M 470 360 A 130 130 0 0 1 730 360" fill="none" stroke="#222" stroke-width="18"/>  <path d="M 470 360 A 130 130 0 0 1 659.0 244.2" fill="none" stroke="#3182CE" stroke-width="18" stroke-linecap="round"/>
-  <text x="600" y="340" font-family="Arial,sans-serif" font-size="42" fill="#3182CE" text-anchor="middle" font-weight="bold">65%</text>
-  <text x="600" y="395" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Dificuldade</text>
+  <text x="350" y="380" font-family="Arial,sans-serif" font-size="11" fill="#888888" text-anchor="middle">100</text>  <path d="M 470 360 A 130 130 0 0 1 730 360" fill="none" stroke="#222" stroke-width="18"/>  <path d="M 470 360 A 130 130 0 0 1 640.2 236.4" fill="none" stroke="#3182CE" stroke-width="18" stroke-linecap="round"/>
+  <text x="600" y="340" font-family="Arial,sans-serif" font-size="42" fill="#3182CE" text-anchor="middle" font-weight="bold">60%</text>
+  <text x="600" y="395" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Deficit moderado</text>
   <text x="470" y="380" font-family="Arial,sans-serif" font-size="11" fill="#888888" text-anchor="middle">0</text>
-  <text x="730" y="380" font-family="Arial,sans-serif" font-size="11" fill="#888888" text-anchor="middle">100</text>  <path d="M 850 360 A 130 130 0 0 1 1110 360" fill="none" stroke="#222" stroke-width="18"/>  <path d="M 850 360 A 130 130 0 0 1 1089.8 290.3" fill="none" stroke="#38A169" stroke-width="18" stroke-linecap="round"/>
-  <text x="980" y="340" font-family="Arial,sans-serif" font-size="42" fill="#38A169" text-anchor="middle" font-weight="bold">82%</text>
-  <text x="980" y="395" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Resultado</text>
+  <text x="730" y="380" font-family="Arial,sans-serif" font-size="11" fill="#888888" text-anchor="middle">100</text>  <path d="M 850 360 A 130 130 0 0 1 1110 360" fill="none" stroke="#222" stroke-width="18"/>  <path d="M 850 360 A 130 130 0 0 1 1080.2 277.1" fill="none" stroke="#38A169" stroke-width="18" stroke-linecap="round"/>
+  <text x="980" y="340" font-family="Arial,sans-serif" font-size="42" fill="#38A169" text-anchor="middle" font-weight="bold">78%</text>
+  <text x="980" y="395" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5" text-anchor="middle" font-weight="600">Treino intenso</text>
   <text x="850" y="380" font-family="Arial,sans-serif" font-size="11" fill="#888888" text-anchor="middle">0</text>
   <text x="1110" y="380" font-family="Arial,sans-serif" font-size="11" fill="#888888" text-anchor="middle">100</text>
   <!-- Watermark -->

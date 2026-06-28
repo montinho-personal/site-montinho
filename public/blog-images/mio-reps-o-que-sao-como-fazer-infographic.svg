@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Mio-Reps: O Que Sao e Como Usar para Hipertrofia Maxima">
   <title>Mio-Reps: O Que Sao e Como Usar para Hipertrofia Maxima</title>
-  <desc>Infografico: Mio-Reps: O Que Sao e Como Usar para Hipertrofia Maxima ? Montinho Personal Trainer</desc>
+  <desc>Infografico: Mio-Reps: O Que Sao e Como Usar para Hipertrofia Maxima - Montinho Personal Trainer</desc>
   <!-- T1: HORIZONTAL STEPS -->
   <!-- Background -->
   <rect width="1200" height="630" fill="#0d0d0d"/>
@@ -18,16 +18,16 @@
   <text x="25" y="290" font-family="Arial,sans-serif" font-size="14" fill="#888888" letter-spacing="3">PASSO A PASSO</text>
   <circle cx="160" cy="340" r="50" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="2"/>
   <text x="160" y="332" font-family="Arial,sans-serif" font-size="36" fill="#BA9E50" text-anchor="middle" font-weight="bold">1</text>
-  <text x="160" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Passo 1: Preparar</text>  <line x1="215" y1="340" x2="265" y2="340" stroke="#BA9E50" stroke-width="2"/>
+  <text x="160" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Passo 1</text>  <line x1="215" y1="340" x2="265" y2="340" stroke="#BA9E50" stroke-width="2"/>
   <polygon points="268,340 260,334 260,346" fill="#BA9E50"/>  <circle cx="370" cy="340" r="50" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="2"/>
   <text x="370" y="332" font-family="Arial,sans-serif" font-size="36" fill="#BA9E50" text-anchor="middle" font-weight="bold">2</text>
-  <text x="370" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Passo 2: Executar</text>  <line x1="425" y1="340" x2="475" y2="340" stroke="#BA9E50" stroke-width="2"/>
+  <text x="370" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Passo 2</text>  <line x1="425" y1="340" x2="475" y2="340" stroke="#BA9E50" stroke-width="2"/>
   <polygon points="478,340 470,334 470,346" fill="#BA9E50"/>  <circle cx="580" cy="340" r="50" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="2"/>
   <text x="580" y="332" font-family="Arial,sans-serif" font-size="36" fill="#BA9E50" text-anchor="middle" font-weight="bold">3</text>
-  <text x="580" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Passo 3: Progredir</text>  <line x1="635" y1="340" x2="685" y2="340" stroke="#BA9E50" stroke-width="2"/>
+  <text x="580" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Passo 3</text>  <line x1="635" y1="340" x2="685" y2="340" stroke="#BA9E50" stroke-width="2"/>
   <polygon points="688,340 680,334 680,346" fill="#BA9E50"/>  <circle cx="790" cy="340" r="50" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="2"/>
   <text x="790" y="332" font-family="Arial,sans-serif" font-size="36" fill="#BA9E50" text-anchor="middle" font-weight="bold">4</text>
-  <text x="790" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Passo 4: Manter</text>  <line x1="110" y1="400" x2="840" y2="400" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="790" y="403" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">Passo 4</text>  <line x1="110" y1="400" x2="840" y2="400" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.2"/>
   <!-- Right accent -->
   <rect x="900" y="200" width="250" height="240" rx="4" fill="#BA9E50" fill-opacity="0.04" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.15"/>
   <text x="1025" y="300" font-family="Arial,sans-serif" font-size="13" fill="#888888" text-anchor="middle">Montinho</text>

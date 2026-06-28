@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Retatrutida ou Mounjaro: Quais as Diferencas?">
   <title>Retatrutida ou Mounjaro: Quais as Diferencas?</title>
   <desc>Infografico: Retatrutida ou Mounjaro: Quais as Diferencas? - Montinho Personal Trainer</desc>
-  <!-- T3: SPLIT VERSUS -->
+  <!-- T12: CIRCULAR FLOW -->
   <!-- Background -->
   <rect width="1200" height="630" fill="#0d0d0d"/>
   <!-- Left accent bar -->
@@ -12,29 +12,18 @@
   <!-- Category pill -->
   <rect x="25" y="22" width="64" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
   <text x="57" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Saude</text>
-  <!-- Left half tint -->
-  <rect x="5" y="0" width="595" height="630" fill="#1a0505" fill-opacity="0.5"/>
-  <!-- Right half tint -->
-  <rect x="600" y="0" width="600" height="630" fill="#051a05" fill-opacity="0.5"/>
-  <!-- Center divider -->
-  <line x1="600" y1="60" x2="600" y2="610" stroke="#BA9E50" stroke-width="2"/>
-  <text x="600" y="52" font-family="Arial,sans-serif" font-size="16" fill="#BA9E50" text-anchor="middle" font-weight="bold">VS</text>
-  <!-- Title -->
-  <text x="600" y="88" font-family="Arial,sans-serif" font-size="22" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Retatrutida ou Mounjaro: Quais as Diferencas?</text>
-  <!-- Left header -->
-  <rect x="60" y="155" width="470" height="50" rx="4" fill="#E53E3E" fill-opacity="0.15"/>
-  <text x="295" y="188" font-family="Arial,sans-serif" font-size="22" fill="#E53E3E" text-anchor="middle" font-weight="bold">OPCAO A</text>
-  <!-- Right header -->
-  <rect x="620" y="155" width="470" height="50" rx="4" fill="#38A169" fill-opacity="0.15"/>
-  <text x="855" y="188" font-family="Arial,sans-serif" font-size="22" fill="#38A169" text-anchor="middle" font-weight="bold">OPCAO B</text>
-  <circle cx="90" cy="280" r="6" fill="#E53E3E" fill-opacity="0.6"/>
-  <text x="108" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Item 1</text>  <circle cx="90" cy="350" r="6" fill="#E53E3E" fill-opacity="0.6"/>
-  <text x="108" y="355" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Item 2</text>  <circle cx="90" cy="420" r="6" fill="#E53E3E" fill-opacity="0.6"/>
-  <text x="108" y="425" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Item 3</text>
-  <circle cx="620" cy="280" r="6" fill="#38A169" fill-opacity="0.8"/>
-  <text x="638" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Item 1</text>  <circle cx="620" cy="350" r="6" fill="#38A169" fill-opacity="0.8"/>
-  <text x="638" y="355" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Item 2</text>  <circle cx="620" cy="420" r="6" fill="#38A169" fill-opacity="0.8"/>
-  <text x="638" y="425" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Item 3</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Retatrutida ou Mounjaro: Quais as Diferencas?</text>
+  <!-- Background circle -->
+  <circle cx="600" cy="340" r="170" fill="none" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.15"/>
+  <path d="M600 170 Q713 255 770 340" fill="none" stroke="#BA9E50" stroke-width="1.5" stroke-opacity="0.6" stroke-dasharray="5,5"/>  <path d="M770 340 Q685 396 600 510" fill="none" stroke="#BA9E50" stroke-width="1.5" stroke-opacity="0.6" stroke-dasharray="5,5"/>  <path d="M600 510 Q486 425 430 340" fill="none" stroke="#BA9E50" stroke-width="1.5" stroke-opacity="0.6" stroke-dasharray="5,5"/>  <path d="M430 340 Q515 283 600 170" fill="none" stroke="#BA9E50" stroke-width="1.5" stroke-opacity="0.6" stroke-dasharray="5,5"/>
+  <circle cx="600" cy="170" r="42" fill="#1a1a1a" stroke="#BA9E50" stroke-width="2"/>
+  <text x="600" y="175" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="600">Fase 1</text>  <circle cx="770" cy="340" r="42" fill="#1a1a1a" stroke="#BA9E50" stroke-width="2"/>
+  <text x="770" y="345" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="600">Fase 2</text>  <circle cx="600" cy="510" r="42" fill="#1a1a1a" stroke="#BA9E50" stroke-width="2"/>
+  <text x="600" y="515" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="600">Fase 3</text>  <circle cx="430" cy="340" r="42" fill="#1a1a1a" stroke="#BA9E50" stroke-width="2"/>
+  <text x="430" y="345" font-family="Arial,sans-serif" font-size="13" fill="#F5F5F5" text-anchor="middle" font-weight="600">Fase 4</text>
+  <!-- Center label -->
+  <circle cx="600" cy="340" r="50" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="600" y="345" font-family="Arial,sans-serif" font-size="15" fill="#BA9E50" text-anchor="middle" font-weight="bold">Ciclo</text>
   <!-- Watermark -->
   <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
 </svg>
