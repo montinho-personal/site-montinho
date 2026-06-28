@@ -9,9 +9,19 @@ import CTAFinal from "@/components/home/CTAFinal";
 
 export const metadata: Metadata = {
   title:
-    "Montinho Personal Trainer | Transformação Real em Alphaville e Online",
+    "Montinho Personal Trainer | Alphaville, Barueri e Santana de Parnaíba",
   description:
     "Personal Trainer especialista em emagrecimento em Alphaville, Barueri e Santana de Parnaíba. Resultados reais. Sem fórmulas mágicas. Ciência, experiência e acompanhamento próximo.",
+  alternates: {
+    canonical: "https://www.montinhopersonal.com.br",
+  },
+  openGraph: {
+    title: "Montinho Personal Trainer | Alphaville, Barueri e Santana de Parnaíba",
+    description:
+      "Personal Trainer especialista em emagrecimento em Alphaville. Resultados reais através de ciência e acompanhamento próximo.",
+    url: "https://www.montinhopersonal.com.br",
+    type: "website",
+  },
 };
 
 export default function Home() {

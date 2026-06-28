@@ -31,9 +31,9 @@ const resultados = [
 
 export default function Resultados() {
   return (
-    <section className="py-24 bg-black border-t border-white/10" id="resultados">
+    <section className="py-20 bg-black border-t border-white/10" id="resultados">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <SectionTitle
             eyebrow="Resultados"
             title="Transformações reais de pessoas reais"
@@ -42,7 +42,7 @@ export default function Resultados() {
           />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {resultados.map((item, index) => (
             <div
               key={index}

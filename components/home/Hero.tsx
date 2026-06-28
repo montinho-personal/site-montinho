@@ -35,11 +35,11 @@ export default function Hero() {
           style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
         >
           Transforme seu corpo.{" "}
-          <span className="text-gray-400">Sem fórmulas mágicas.</span>
+          <span style={{ color: "#BA9E50" }}>Sem fórmulas mágicas.</span>
         </h1>
 
         {/* Subheadline */}
-        <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto mb-10">
+        <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto mb-10 font-light">
           Ciência aplicada, experiência real e acompanhamento próximo para
           resultados que duram. Para quem quer transformação de verdade.
         </p>
@@ -47,7 +47,7 @@ export default function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href={getWhatsAppUrl("Olá! Vim pelo site e quero saber mais sobre o Personal Trainer.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200 hover:shadow-lg hover:shadow-white/10"
@@ -87,7 +87,7 @@ export default function Hero() {
         </div>
 
         {/* Social proof */}
-        <div className="mt-16 pt-12 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-500">
+        <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-500">
           <div className="flex items-center gap-2">
             <span className="text-white font-bold text-2xl" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>+20 anos</span>
             <span className="text-sm">de experiência em musculação</span>

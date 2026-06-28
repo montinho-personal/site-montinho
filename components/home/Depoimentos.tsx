@@ -47,9 +47,9 @@ function StarRating({ count }: { count: number }) {
 
 export default function Depoimentos() {
   return (
-    <section className="py-24 border-t border-white/10" style={{ background: "#0d0d0d" }} id="depoimentos">
+    <section className="py-20 border-t border-white/10" style={{ background: "#0d0d0d" }} id="depoimentos">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <SectionTitle
             eyebrow="Depoimentos"
             title="O que dizem meus alunos"
@@ -65,7 +65,7 @@ export default function Depoimentos() {
               style={{ background: "#111" }}
             >
               <StarRating count={dep.stars} />
-              <blockquote className="text-gray-300 text-sm leading-relaxed flex-1 mb-6 italic">
+              <blockquote className="text-gray-300 text-sm leading-relaxed flex-1 mb-6 italic font-light">
                 &ldquo;{dep.text}&rdquo;
               </blockquote>
               <div className="flex items-center gap-3 pt-4 border-t border-white/10">

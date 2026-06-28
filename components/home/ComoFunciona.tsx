@@ -29,7 +29,7 @@ const steps = [
 
 export default function ComoFunciona() {
   return (
-    <section className="py-24 bg-black border-t border-white/10" id="como-funciona">
+    <section className="py-20 bg-black border-t border-white/10" id="como-funciona">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left: Title */}

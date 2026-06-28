@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CTAFinal() {
   return (
-    <section className="py-32 bg-white text-black" id="cta">
+    <section className="py-24 bg-white text-black" id="cta">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-6">
           Pronto para começar?
@@ -23,7 +23,7 @@ export default function CTAFinal() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href={getWhatsAppUrl("Olá! Vim pelo site e gostaria de começar minha transformação com o Personal Trainer.")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-black text-white px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-900 transition-all duration-200 hover:shadow-xl"

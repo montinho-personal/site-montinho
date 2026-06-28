@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
+import SearchBar from "@/components/search/SearchBar";
 
 const navLinks = [
   { href: "/minha-historia", label: "Minha História" },
@@ -12,6 +13,13 @@ const navLinks = [
   { href: "/blog", label: "Blog" },
   { href: "/faq", label: "FAQ" },
   { href: "/contato", label: "Contato" },
+];
+
+const localLinks = [
+  { href: "/personal-trainer-alphaville", label: "Personal Trainer Alphaville" },
+  { href: "/personal-trainer-barueri", label: "Personal Trainer Barueri" },
+  { href: "/personal-trainer-santana-de-parnaiba", label: "Personal Trainer Santana de Parnaíba" },
+  { href: "/personal-trainer-tambore", label: "Personal Trainer Tamboré" },
 ];
 
 export default function Header() {
@@ -24,21 +32,23 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="inline-block"
+            className="flex-shrink-0"
             onClick={() => setIsMenuOpen(false)}
+            aria-label="Montinho Personal Trainer – Página inicial"
           >
-            <Image
-              src="/Logo-final.png"
-              alt="Montinho Personal Trainer"
-              width={38}
-              height={38}
-              style={{ filter: "invert(1)", height: "38px", width: "auto" }}
-              priority
-            />
+            <div className="relative h-10 w-24 lg:h-12 lg:w-32">
+              <Image
+                src="/Logo-final.png"
+                alt="Montinho Personal Trainer – Personal Trainer em Alphaville, Barueri e Santana de Parnaíba"
+                fill
+                style={{ filter: "invert(1)", objectFit: "contain", objectPosition: "left center" }}
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8" aria-label="Navegação principal">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -50,8 +60,10 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden lg:block">
+          {/* Desktop right: search + CTA */}
+          <div className="hidden lg:flex items-center gap-3">
+            <SearchBar compact />
+
             <a
               href={getWhatsAppUrl()}
               target="_blank"
@@ -71,19 +83,17 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            type="button"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden text-white p-2 hover:text-gray-300 transition-colors"
-            aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
-            aria-expanded={isMenuOpen}
-          >
-            {isMenuOpen ? (
+          {/* Mobile: search icon + hamburger */}
+          <div className="flex items-center gap-1 lg:hidden">
+            <Link
+              href="/busca"
+              aria-label="Pesquisar"
+              className="text-white p-2 hover:text-gray-300 transition-colors"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -92,34 +102,57 @@ export default function Header() {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
+                  d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"
                 />
               </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            )}
-          </button>
+            </Link>
+
+            <button
+              type="button"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-white p-2 hover:text-gray-300 transition-colors"
+              aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
+              aria-expanded={isMenuOpen}
+            >
+              {isMenuOpen ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="lg:hidden bg-black border-t border-white/10">
-          <nav className="flex flex-col py-4 px-4 gap-1">
+          {/* Search field in mobile menu */}
+          <div className="px-4 pt-4 pb-2">
+            <SearchBar onClose={() => setIsMenuOpen(false)} />
+          </div>
+
+          <nav className="flex flex-col py-2 px-4 gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -130,6 +163,19 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <div className="mt-4 pt-4 border-t border-white/10">
+              <p className="text-gray-600 text-xs font-semibold tracking-[0.15em] uppercase px-2 mb-2">Atendimento Local</p>
+              {localLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-gray-400 hover:text-white text-sm font-medium py-2.5 px-2 border-b border-white/5 transition-colors duration-200 block"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
             <a
               href={getWhatsAppUrl()}
               target="_blank"

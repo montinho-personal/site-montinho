@@ -1,11 +1,68 @@
 import type { Metadata } from "next";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import SectionTitle from "@/components/ui/SectionTitle";
+import { SITE_URL } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Consultoria e Personal Training",
+  title: "Consultoria e Personal Training em Alphaville",
   description:
-    "Conheça as modalidades de atendimento: Personal Presencial em Alphaville (Barueri e Santana de Parnaíba), Consultoria Online para todo o Brasil e Modelo Híbrido.",
+    "Personal Trainer presencial em Alphaville (Barueri e Santana de Parnaíba) e consultoria online para todo o Brasil. Treino personalizado, acompanhamento próximo e resultados reais.",
+  alternates: {
+    canonical: `${SITE_URL}/consultoria`,
+  },
+  openGraph: {
+    title: "Consultoria e Personal Training em Alphaville | Montinho PT",
+    description:
+      "Personal Trainer presencial em Alphaville (Barueri e Santana de Parnaíba) e consultoria online para todo o Brasil.",
+    url: `${SITE_URL}/consultoria`,
+    type: "website",
+  },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Personal Training e Consultoria Fitness",
+  provider: {
+    "@id": "https://www.montinhopersonal.com.br/#localbusiness",
+  },
+  areaServed: [
+    { "@type": "City", name: "Alphaville" },
+    { "@type": "City", name: "Barueri" },
+    { "@type": "City", name: "Santana de Parnaíba" },
+    { "@type": "Country", name: "Brasil" },
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Modalidades de Atendimento",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Personal Trainer Presencial em Alphaville",
+          description: "Acompanhamento 100% presencial com sessões de treino guiadas, correção de técnica em tempo real em Alphaville, Barueri e Santana de Parnaíba.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Consultoria Online",
+          description: "Consultoria online para todo o Brasil com protocolo de treino personalizado, orientação nutricional e suporte via WhatsApp.",
+        },
+      },
+    ],
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Consultoria", item: `${SITE_URL}/consultoria` },
+  ],
 };
 
 const services = [
@@ -98,8 +155,16 @@ const steps = [
 export default function Consultoria() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
-      <section className="py-24 bg-black border-b border-white/10">
+      <section className="py-16 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionTitle
             eyebrow="Consultoria & Personal Training"
@@ -197,9 +262,9 @@ export default function Consultoria() {
       </section>
 
       {/* Process */}
-      <section className="py-20 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+      <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <SectionTitle
               eyebrow="Processo"
               title="Como funciona na prática"
@@ -231,7 +296,7 @@ export default function Consultoria() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-white text-black text-center">
+      <section className="py-16 bg-white text-black text-center">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl sm:text-4xl font-bold text-black mb-5"
@@ -244,7 +309,7 @@ export default function Consultoria() {
             para a sua realidade.
           </p>
           <a
-            href={getWhatsAppUrl("Olá! Vi as modalidades no site e não sei qual escolher. Pode me ajudar?")}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-black text-white px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-900 transition-all duration-200"

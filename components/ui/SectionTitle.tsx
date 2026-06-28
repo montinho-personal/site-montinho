@@ -20,7 +20,7 @@ export default function SectionTitle({
     ? ""
     : light
     ? "text-gray-400"
-    : "text-gray-500";
+    : "";
   const titleColor = "text-white";
   const subtitleColor = light ? "text-gray-300" : "text-gray-400";
 
@@ -29,7 +29,7 @@ export default function SectionTitle({
       {eyebrow && (
         <p
           className={`text-xs font-semibold uppercase tracking-[0.2em] mb-3 ${eyebrowColor}`}
-          style={accent ? { color: "#BA9E50" } : undefined}
+          style={{ color: "#BA9E50" }}
         >
           {eyebrow}
         </p>
@@ -41,7 +41,7 @@ export default function SectionTitle({
         {title}
       </h2>
       {subtitle && (
-        <p className={`text-lg leading-relaxed ${subtitleColor}`}>{subtitle}</p>
+        <p className={`text-lg leading-relaxed font-light ${subtitleColor}`}>{subtitle}</p>
       )}
     </div>
   );
