@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Voador vs Pec Deck: Tecnica e Variacoes para o Peito">
+  <title>Voador vs Pec Deck: Tecnica e Variacoes para o Peito</title>
+  <desc>Infografico: Voador vs Pec Deck: Tecnica e Variacoes para o Peito - Montinho Personal Trainer</desc>
+  <!-- DOIS LADOS -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <rect x="25" y="22" width="112" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="81" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Treinamento</text>
+  <text x="600" y="88" font-family="Arial,sans-serif" font-size="24" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Voador vs Pec Deck: Tecnica e Variacoes para o Peito</text>
+  <rect x="40" y="130" width="500" height="45" rx="4" fill="#3182CE" fill-opacity="0.2"/>
+  <text x="290" y="160" font-family="Arial,sans-serif" font-size="20" fill="#3182CE" text-anchor="middle" font-weight="bold">VOADOR (HALTER)</text>
+  <rect x="620" y="130" width="540" height="45" rx="4" fill="#BA9E50" fill-opacity="0.2"/>
+  <text x="890" y="160" font-family="Arial,sans-serif" font-size="20" fill="#BA9E50" text-anchor="middle" font-weight="bold">PEC DECK (MAQUINA)</text>
+  <line x1="600" y1="120" x2="600" y2="600" stroke="#444" stroke-width="1"/>
+  <rect x="40" y="175" width="500" height="50" rx="4" fill="#3182CE" fill-opacity="0.08"/>
+  <text x="65" y="205" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Amplitude total</text>  <rect x="40" y="255" width="500" height="50" rx="4" fill="#3182CE" fill-opacity="0.08"/>
+  <text x="65" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Instabilidade maior</text>  <rect x="40" y="335" width="500" height="50" rx="4" fill="#3182CE" fill-opacity="0.08"/>
+  <text x="65" y="365" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Requer tecnica</text>  <rect x="40" y="415" width="500" height="50" rx="4" fill="#3182CE" fill-opacity="0.08"/>
+  <text x="65" y="445" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Mais funcional</text>
+  <rect x="620" y="175" width="540" height="50" rx="4" fill="#BA9E50" fill-opacity="0.08"/>
+  <text x="645" y="205" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Seguro para iniciante</text>  <rect x="620" y="255" width="540" height="50" rx="4" fill="#BA9E50" fill-opacity="0.08"/>
+  <text x="645" y="285" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Tensao constante</text>  <rect x="620" y="335" width="540" height="50" rx="4" fill="#BA9E50" fill-opacity="0.08"/>
+  <text x="645" y="365" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Isolamento preciso</text>  <rect x="620" y="415" width="540" height="50" rx="4" fill="#BA9E50" fill-opacity="0.08"/>
+  <text x="645" y="445" font-family="Arial,sans-serif" font-size="16" fill="#F5F5F5">Menos lesao</text>
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
+</svg>
