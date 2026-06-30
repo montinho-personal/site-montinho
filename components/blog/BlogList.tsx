@@ -72,7 +72,7 @@ export default function BlogList({ posts, categories }: Props) {
 
                     <div className="flex items-center justify-between">
                       <span className="text-gray-600 text-xs">
-                        {new Date(post.date).toLocaleDateString("pt-BR", {
+                        {new Date(post.date + "T12:00:00").toLocaleDateString("pt-BR", {
                           day: "numeric",
                           month: "long",
                           year: "numeric",

@@ -150,7 +150,7 @@ export default async function BlogPost({ params }: Props) {
             <span>{post.author}</span>
             <span>·</span>
             <time dateTime={post.date}>
-              {new Date(post.date).toLocaleDateString("pt-BR", {
+              {new Date(post.date + "T12:00:00").toLocaleDateString("pt-BR", {
                 day: "numeric",
                 month: "long",
                 year: "numeric",
