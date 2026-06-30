@@ -11,18 +11,31 @@ export interface SearchResult {
   score: number;
 }
 
-function stripHtml(html: string): string {
-  return html
-    .replace(/<[^>]+>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+// Pre-compute lightweight index at module load (title + excerpt + tags only)
+// Content strip is too expensive to run per-request across 450+ large articles
+interface IndexEntry {
+  post: BlogPost;
+  titleLower: string;
+  excerptLower: string;
+  categoryLower: string;
+  tagsLower: string[];
+  faqText: string;
 }
 
-function scorePost(post: BlogPost, query: string, terms: string[]): number {
-  const titleLower = post.title.toLowerCase();
-  const excerptLower = post.excerpt.toLowerCase();
-  const categoryLower = post.category.toLowerCase();
-  const tagsLower = (post.tags ?? []).map((t) => t.toLowerCase());
+const index: IndexEntry[] = blogPosts.map((post) => ({
+  post,
+  titleLower: (post.title ?? "").toLowerCase(),
+  excerptLower: (post.excerpt ?? "").toLowerCase(),
+  categoryLower: (post.category ?? "").toLowerCase(),
+  tagsLower: (post.tags ?? []).map((t) => (t ?? "").toLowerCase()),
+  faqText: (post.faq ?? [])
+    .map((f) => `${f.question ?? ""} ${f.answer ?? ""}`)
+    .join(" ")
+    .toLowerCase(),
+}));
+
+function scoreEntry(entry: IndexEntry, query: string, terms: string[]): number {
+  const { titleLower, excerptLower, categoryLower, tagsLower, faqText } = entry;
   const queryLower = query.toLowerCase();
   let score = 0;
 
@@ -49,26 +62,10 @@ function scorePost(post: BlogPost, query: string, terms: string[]): number {
     score += Math.min(c * 10, 30);
   });
 
-  // Content (stripped HTML — only computed if query has signal)
-  if (score > 0 || terms.length > 0) {
-    const contentText = stripHtml(post.content).toLowerCase();
-    terms.forEach((t) => {
-      const c = (contentText.match(new RegExp(t, "g")) ?? []).length;
-      score += Math.min(c * 2, 20);
-    });
-  }
-
   // FAQ
-  if (post.faq) {
-    post.faq.forEach(({ question, answer }) => {
-      const qLow = question.toLowerCase();
-      const aLow = answer.toLowerCase();
-      terms.forEach((t) => {
-        if (qLow.includes(t)) score += 15;
-        if (aLow.includes(t)) score += 8;
-      });
-    });
-  }
+  terms.forEach((t) => {
+    if (faqText.includes(t)) score += 10;
+  });
 
   return score;
 }
@@ -84,16 +81,16 @@ export function search(query: string, limit = 20): SearchResult[] {
 
   const results: SearchResult[] = [];
 
-  for (const post of blogPosts) {
-    const score = scorePost(post, q, terms);
+  for (const entry of index) {
+    const score = scoreEntry(entry, q, terms);
     if (score > 0) {
       results.push({
-        slug: post.slug,
-        title: post.title,
-        excerpt: post.excerpt,
-        category: post.category,
-        date: post.date,
-        readTime: post.readTime,
+        slug: entry.post.slug,
+        title: entry.post.title,
+        excerpt: entry.post.excerpt,
+        category: entry.post.category,
+        date: entry.post.date,
+        readTime: entry.post.readTime,
         score,
       });
     }
