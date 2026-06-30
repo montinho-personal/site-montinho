@@ -16,7 +16,7 @@ interface Props {
 
 // Popular posts shown in empty state — last 4 by date
 const popularPosts = [...blogPosts]
-  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  .sort((a, b) => new Date(b.date + "T12:00:00").getTime() - new Date(a.date + "T12:00:00").getTime())
   .slice(0, 4);
 
 export default async function BuscaPage({ searchParams }: Props) {
@@ -88,7 +88,7 @@ function ResultsList({
               </span>
               <span className="text-gray-600 text-xs">{r.readTime} de leitura</span>
               <span className="text-gray-600 text-xs">
-                {new Date(r.date).toLocaleDateString("pt-BR", {
+                {new Date(r.date + "T12:00:00").toLocaleDateString("pt-BR", {
                   day: "numeric",
                   month: "short",
                   year: "numeric",
