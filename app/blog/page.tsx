@@ -7,8 +7,9 @@ import SearchBar from "@/components/search/SearchBar";
 const sortedPosts = blogPosts
   .map((post, index) => ({ post, index }))
   .sort((a, b) => {
-    const dateDiff = new Date(b.post.date).getTime() - new Date(a.post.date).getTime();
-    return dateDiff !== 0 ? dateDiff : b.index - a.index;
+    const dateA = new Date(a.post.updatedAt ?? a.post.date).getTime();
+    const dateB = new Date(b.post.updatedAt ?? b.post.date).getTime();
+    return dateB !== dateA ? dateB - dateA : b.index - a.index;
   })
   .map(({ post }) => post);
 
