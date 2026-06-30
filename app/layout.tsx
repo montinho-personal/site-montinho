@@ -50,7 +50,7 @@ export const metadata: Metadata = {
       "Personal Trainer em Alphaville especialista em emagrecimento. Resultados reais sem fórmulas mágicas. Ciência, experiência e acompanhamento próximo.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://www.montinhopersonal.com.br/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Montinho Personal Trainer — Alphaville, Barueri e Santana de Parnaíba",
@@ -59,9 +59,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Montinho Personal Trainer | Alphaville",
+    title: "Personal Trainer Alphaville | Montinho",
     description:
-      "Transforme seu corpo sem fórmulas mágicas. Personal Trainer em Alphaville e online em todo o Brasil.",
+      "Personal Trainer em Alphaville especialista em emagrecimento. Resultados reais sem fórmulas mágicas.",
+    images: ["https://www.montinhopersonal.com.br/og-image.jpg"],
   },
   verification: {
     google: "GY5qVJsmTgcHb8sJfYzc9QaWmc9zfvT71hhFbGwV8OM",
