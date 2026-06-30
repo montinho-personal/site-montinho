@@ -75,9 +75,9 @@ export default function Diferenciais() {
           />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 list-none p-0 m-0">
           {diferenciais.map((item, index) => (
-            <div
+            <li
               key={index}
               className="bg-black p-8 group hover:bg-white/5 transition-colors duration-300"
             >
@@ -93,9 +93,9 @@ export default function Diferenciais() {
               <p className="text-gray-400 text-sm leading-relaxed">
                 {item.description}
               </p>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
