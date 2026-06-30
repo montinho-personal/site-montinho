@@ -43,9 +43,9 @@ export default function ComoFunciona() {
           </div>
 
           {/* Right: Steps */}
-          <div className="flex flex-col gap-0">
+          <ol className="flex flex-col gap-0 list-none p-0 m-0">
             {steps.map((step, index) => (
-              <div
+              <li
                 key={index}
                 className="flex gap-6 py-8 border-b border-white/10 last:border-0 group"
               >
@@ -68,9 +68,9 @@ export default function ComoFunciona() {
                     {step.description}
                   </p>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </div>
     </section>
