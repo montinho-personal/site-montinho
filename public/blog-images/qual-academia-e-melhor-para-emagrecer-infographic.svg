@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Qual Academia É Melhor para Emagrecer?">
+  <title>Qual Academia É Melhor para Emagrecer?</title>
+  <desc>Infografico: Qual Academia É Melhor para Emagrecer? - Montinho Personal Trainer</desc>
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <rect x="25" y="22" width="132" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="91" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Academias</text>
+  <text x="600" y="110" font-family="Arial,sans-serif" font-size="30" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Qual Academia É Melhor para Emagrecer?</text>
+  <line x1="80" y1="145" x2="1120" y2="145" stroke="#BA9E50" stroke-width="1" opacity="0.4"/>
+  <circle cx="90" cy="205" r="6" fill="#BA9E50" fill-opacity="0.8"/>
+  <text x="115" y="210" font-family="Arial,sans-serif" font-size="21" fill="#F5F5F5">Resposta direta e honesta</text>
+  <circle cx="90" cy="297" r="6" fill="#BA9E50" fill-opacity="0.8"/>
+  <text x="115" y="302" font-family="Arial,sans-serif" font-size="21" fill="#F5F5F5">O que realmente faz o ponteiro descer</text>
+  <circle cx="90" cy="389" r="6" fill="#BA9E50" fill-opacity="0.8"/>
+  <text x="115" y="394" font-family="Arial,sans-serif" font-size="21" fill="#F5F5F5">Então a escolha da academia não importa nada?</text>
+  <circle cx="90" cy="481" r="6" fill="#BA9E50" fill-opacity="0.8"/>
+  <text x="115" y="486" font-family="Arial,sans-serif" font-size="21" fill="#F5F5F5">Tabela comparativa: tipos de academia sob a ótica do emagreci…</text>
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
+</svg>
