@@ -1,0 +1,32 @@
+{
+  "source": "google-manual",
+  "fetchedAt": "2026-07-02",
+  "placeRating": 5.0,
+  "totalReviews": 11,
+  "reviews": [
+    {
+      "name": "Bruno Maineri",
+      "role": "Avaliação no Google",
+      "text": "O Renato é um personal que realmente vive o esporte. Ele pratica aquilo que ensina e isso faz toda a diferença. Não vende fórmulas mágicas nem promete resultados irreais. O foco dele é construir consistência, disciplina e hábitos que permitem não apenas alcançar os objetivos, mas mantê-los a longo prazo. Se você procura um profissional comprometido com resultados reais, recomendo o Renato sem hesitar.",
+      "stars": 5
+    },
+    {
+      "name": "Roberto Rodrigues Batista",
+      "role": "Avaliação no Google",
+      "text": "É o melhor personal. Consultoria online ou presencial, elaboração de treinos individuais focados no objetivo de cada aluno. Sem dúvidas, recomendo e recomendo muito.",
+      "stars": 5
+    },
+    {
+      "name": "Jallesca Duarte",
+      "role": "Avaliação no Google",
+      "text": "O Renato é um ótimo profissional. Sempre demonstrou firmeza ao explicar e reforçar os exercícios, corrigindo sempre que possível! Sempre me atendeu com ética e clareza! Indico demais!!",
+      "stars": 5
+    },
+    {
+      "name": "Lucas Falkenberg",
+      "role": "Avaliação no Google",
+      "text": "Excelente Personal, recomendo, muito profissional e estuda o seu caso para focar no que realmente você quer.",
+      "stars": 5
+    }
+  ]
+}
