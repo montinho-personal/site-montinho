@@ -37,7 +37,7 @@ function StarRating({ count }: { count: number }) {
 }
 
 export default function Depoimentos() {
-  const fromGoogle = testimonials.source === "google-places";
+  const fromGoogle = testimonials.source.startsWith("google");
 
   return (
     <section className="py-20 border-t border-white/10" style={{ background: "#0d0d0d" }} id="depoimentos">
@@ -56,7 +56,7 @@ export default function Depoimentos() {
           )}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className={`grid grid-cols-1 gap-6 ${reviews.length % 3 === 0 ? "md:grid-cols-3" : "md:grid-cols-2"}`}>
           {reviews.map((dep, index) => (
             <div
               key={index}
