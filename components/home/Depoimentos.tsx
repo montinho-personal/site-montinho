@@ -1,25 +1,16 @@
 import SectionTitle from "@/components/ui/SectionTitle";
+import testimonials from "@/data/testimonials.json";
 
-const depoimentos = [
-  {
-    name: "Mariana C.",
-    role: "Consultoria Online · 5 meses",
-    text: "Eu já tinha tentado de tudo antes de contratar o Montinho. Dietas malucas, treinos absurdos... Com ele foi diferente. É um método que respeita o meu corpo e a minha rotina. Emagreci 18kg e hoje me sinto uma pessoa nova.",
-    stars: 5,
-  },
-  {
-    name: "Pedro L.",
-    role: "Personal Presencial · Alphaville · 4 meses",
-    text: "O que mais me impressionou foi o quanto o Montinho entende de cada detalhe — da técnica ao emocional. Nunca tive um personal que se importasse tanto com o meu progresso. Os resultados falam por si.",
-    stars: 5,
-  },
-  {
-    name: "Juliana R.",
-    role: "Modelo Híbrido · 6 meses",
-    text: "Sou mãe de dois filhos e não achava que teria tempo para me cuidar. O Montinho adaptou tudo para a minha realidade. Hoje treino, me alimento bem e tenho energia para cuidar da família. Mudança de vida total.",
-    stars: 5,
-  },
-];
+interface Review {
+  name: string;
+  role: string;
+  text: string;
+  stars: number;
+}
+
+const reviews: Review[] = (testimonials.reviews as Review[]).filter(
+  (r) => r.stars >= 4
+);
 
 function StarRating({ count }: { count: number }) {
   return (
@@ -46,6 +37,8 @@ function StarRating({ count }: { count: number }) {
 }
 
 export default function Depoimentos() {
+  const fromGoogle = testimonials.source === "google-places";
+
   return (
     <section className="py-20 border-t border-white/10" style={{ background: "#0d0d0d" }} id="depoimentos">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,10 +48,16 @@ export default function Depoimentos() {
             title="O que dizem meus alunos"
             subtitle="Histórias reais de pessoas que decidiram investir em si mesmas."
           />
+          {fromGoogle && testimonials.placeRating && (
+            <p className="mt-4 text-gray-400 text-sm">
+              <span className="text-white font-semibold">{Number(testimonials.placeRating).toFixed(1)} ★</span>
+              {" "}no Google · {testimonials.totalReviews} avaliações
+            </p>
+          )}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {depoimentos.map((dep, index) => (
+          {reviews.map((dep, index) => (
             <div
               key={index}
               className="border border-white/10 p-8 flex flex-col hover:border-white/30 transition-colors duration-300"

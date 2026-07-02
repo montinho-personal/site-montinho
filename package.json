@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "fetch:reviews": "node scripts/fetch-reviews.mjs",
+    "prebuild": "node scripts/fetch-reviews.mjs"
   },
   "dependencies": {
     "marked": "^18.0.5",

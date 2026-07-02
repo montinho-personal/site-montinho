@@ -1,0 +1,26 @@
+{
+  "source": "manual-seed",
+  "fetchedAt": null,
+  "placeRating": null,
+  "totalReviews": null,
+  "reviews": [
+    {
+      "name": "Mariana C.",
+      "role": "Consultoria Online · 5 meses",
+      "text": "Eu já tinha tentado de tudo antes de contratar o Montinho. Dietas malucas, treinos absurdos... Com ele foi diferente. É um método que respeita o meu corpo e a minha rotina. Emagreci 18kg e hoje me sinto uma pessoa nova.",
+      "stars": 5
+    },
+    {
+      "name": "Pedro L.",
+      "role": "Personal Presencial · Alphaville · 4 meses",
+      "text": "O que mais me impressionou foi o quanto o Montinho entende de cada detalhe — da técnica ao emocional. Nunca tive um personal que se importasse tanto com o meu progresso. Os resultados falam por si.",
+      "stars": 5
+    },
+    {
+      "name": "Juliana R.",
+      "role": "Modelo Híbrido · 6 meses",
+      "text": "Sou mãe de dois filhos e não achava que teria tempo para me cuidar. O Montinho adaptou tudo para a minha realidade. Hoje treino, me alimento bem e tenho energia para cuidar da família. Mudança de vida total.",
+      "stars": 5
+    }
+  ]
+}
