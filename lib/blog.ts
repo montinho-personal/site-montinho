@@ -24,6 +24,7 @@ export const BLOG_CATEGORIES = [
   "Treinamento",
   "Lesões",
   "Hábitos",
+  "Academias",
 ];
 
 export const blogPosts = ([
