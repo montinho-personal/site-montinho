@@ -22,6 +22,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.montinhopersonal.com.br"),
+  applicationName: "Montinho Personal Trainer",
   title: {
     default: "Personal Trainer Alphaville | Montinho",
     template: "%s | Montinho Personal Trainer",
@@ -84,6 +85,9 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Montinho Personal Trainer",
+  alternateName: "Montinho Personal",
+  image: "https://www.montinhopersonal.com.br/og-image.jpg",
+  logo: "https://www.montinhopersonal.com.br/brand-icon.png",
   description:
     "Personal Trainer especialista em emagrecimento em Alphaville, Barueri e Santana de Parnaíba. Consultoria online para todo o Brasil.",
   url: "https://www.montinhopersonal.com.br",
@@ -122,7 +126,8 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Montinho Personal Trainer",
-  url: "https://www.montinhopersonal.com.br",
+  alternateName: "Montinho Personal",
+  url: "https://www.montinhopersonal.com.br/",
   "@id": "https://www.montinhopersonal.com.br/#website",
   potentialAction: {
     "@type": "SearchAction",
