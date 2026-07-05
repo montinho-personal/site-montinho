@@ -14384,7 +14384,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
   <li><a href="/blog/como-prevenir-lesoes-no-treino">Como Prevenir Lesões no Treino de Musculação</a></li>
   <li><a href="/blog/dor-lombar-na-musculacao">Dor Lombar na Musculação: Causas e Como Treinar com Segurança</a></li>
-  <li><a href="/blog/treino-para-iniciantes-em-alphaville">Treino para Iniciantes: Por Onde Começar em Alphaville</a></li>
+  <li><a href="/blog/academia-para-iniciantes-alphaville">Treino para Iniciantes: Por Onde Começar em Alphaville</a></li>
 </ul>
     `,
     category: "Lesões",
@@ -14592,7 +14592,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
   <li><a href="/blog/como-prevenir-lesoes-no-treino">Como Prevenir Lesões no Treino de Musculação</a></li>
   <li><a href="/blog/dor-lombar-na-musculacao">Dor Lombar na Musculação: Causas e Como Treinar com Segurança</a></li>
-  <li><a href="/blog/agachamento-tecnica-correta">Agachamento: Técnica Correta Passo a Passo</a></li>
+  <li><a href="/blog/como-fazer-agachamento-livre-corretamente">Agachamento: Técnica Correta Passo a Passo</a></li>
 </ul>
     `,
     category: "Lesões",
@@ -14807,7 +14807,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
   <li><a href="/blog/hernia-de-disco-pode-treinar">Hérnia de Disco Pode Treinar? Guia Completo</a></li>
   <li><a href="/blog/como-prevenir-lesoes-no-treino">Como Prevenir Lesões no Treino de Musculação</a></li>
-  <li><a href="/blog/levantamento-terra-tecnica-correta">Levantamento Terra: Técnica Correta e Erros Mais Comuns</a></li>
+  <li><a href="/blog/como-fazer-levantamento-terra-corretamente">Levantamento Terra: Técnica Correta e Erros Mais Comuns</a></li>
 </ul>
     `,
     category: "Lesões",
@@ -15010,7 +15010,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
   <li><a href="/blog/dor-lombar-na-musculacao">Dor Lombar na Musculação: Causas e Como Treinar com Segurança</a></li>
   <li><a href="/blog/como-prevenir-lesoes-no-treino">Como Prevenir Lesões no Treino de Musculação</a></li>
-  <li><a href="/blog/levantamento-terra-tecnica-correta">Levantamento Terra: Técnica Correta e Erros Mais Comuns</a></li>
+  <li><a href="/blog/como-fazer-levantamento-terra-corretamente">Levantamento Terra: Técnica Correta e Erros Mais Comuns</a></li>
 </ul>
     `,
     category: "Lesões",
@@ -15442,7 +15442,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
   <li><a href="/blog/quanto-de-proteina-consumir">Quanto de Proteína Consumir por Dia para Ganhar Músculo e Emagrecer</a></li>
   <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer (E Como Mudar Isso de Vez)</a></li>
-  <li><a href="/blog/suplementos-que-realmente-funcionam">Suplementos que Realmente Funcionam (e os que São Perda de Dinheiro)</a></li>
+  <li><a href="/blog/suplementos-femininos-guia">Suplementos que Realmente Funcionam (e os que São Perda de Dinheiro)</a></li>
 </ul>
 `,
   },
@@ -15606,7 +15606,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
   <li><a href="/blog/melhor-horario-para-proteina">Melhor Horário para Tomar Proteína: Antes ou Depois do Treino?</a></li>
   <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer (E Como Mudar Isso de Vez)</a></li>
-  <li><a href="/blog/suplementos-que-realmente-funcionam">Suplementos que Realmente Funcionam (e os que São Perda de Dinheiro)</a></li>
+  <li><a href="/blog/suplementos-femininos-guia">Suplementos que Realmente Funcionam (e os que São Perda de Dinheiro)</a></li>
 </ul>
 `,
   },
@@ -16068,8 +16068,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -16165,8 +16165,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -16260,8 +16260,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -16346,8 +16346,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -16433,8 +16433,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -16519,8 +16519,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -16609,8 +16609,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -16695,8 +16695,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -16788,9 +16788,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>`,
   },
 
@@ -16875,8 +16875,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -16961,8 +16961,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -17053,8 +17053,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -17141,8 +17141,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -17215,8 +17215,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -17289,8 +17289,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -17361,8 +17361,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -17436,9 +17436,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>`,
   },
 
@@ -17509,8 +17509,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -17581,8 +17581,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -17657,8 +17657,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -17729,8 +17729,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -17800,9 +17800,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>`,
   },
 
@@ -17873,8 +17873,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -17945,8 +17945,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -18017,8 +18017,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -18088,9 +18088,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>`,
   },
 
@@ -18161,8 +18161,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -18232,9 +18232,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>`,
   },
 
@@ -18314,8 +18314,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -18393,8 +18393,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -18471,8 +18471,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -18550,8 +18550,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -18626,8 +18626,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -18696,8 +18696,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -18766,8 +18766,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -18843,8 +18843,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -18913,8 +18913,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -18988,8 +18988,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -19058,8 +19058,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -19128,8 +19128,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -19198,8 +19198,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -19266,8 +19266,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -19334,8 +19334,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -19404,8 +19404,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
   },
 
@@ -19811,8 +19811,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>`,
     faq: [
       {
@@ -19966,7 +19966,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>O veredicto prático</h2>
 <p>Se você come proteína suficiente (qualquer fonte completa), BCAA é um gasto desnecessário. O dinheiro é melhor investido em comida de qualidade, creatina (esta sim com evidência robusta) ou no próprio treino. A exceção é quem treina em jejum por opção ou necessidade — aí um suplemento de leucina ou BCAA pode ter valor protetor.</p>
 
-<p>Para entender qual suplementação faz sentido para o seu caso específico, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo completo sobre <a href="/blog/creatina-funciona">creatina</a> — o suplemento com a melhor relação evidência/custo.</p>
+<p>Para entender qual suplementação faz sentido para o seu caso específico, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo completo sobre <a href="/blog/creatina-para-hipertrofia">creatina</a> — o suplemento com a melhor relação evidência/custo.</p>
 `,
     faq: [
       {
@@ -20150,7 +20150,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Como combinar JI com treino</h2>
 <p>Se treinar na janela de jejum, considere tomar uma pequena dose de proteína (20g de whey ou alguns BCAAs) antes do treino para reduzir o catabolismo sem quebrar os efeitos metabólicos do jejum. Se treinar na janela alimentar, não há restrição — coma normalmente ao redor do treino.</p>
 
-<p>Para um protocolo personalizado que combine estratégia alimentar e treino para o seu objetivo, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/como-emagrecer-com-deficit-calorico">déficit calórico</a> — a base de qualquer estratégia de emagrecimento.</p>
+<p>Para um protocolo personalizado que combine estratégia alimentar e treino para o seu objetivo, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a> — a base de qualquer estratégia de emagrecimento.</p>
 `,
     faq: [
       {
@@ -20232,9 +20232,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>`,
     faq: [
       {
@@ -20659,7 +20659,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>O que este programa não entrega</h2>
 <p>Treino em casa sem equipamento tem limitações reais: é difícil sobrecarregar o posterior de coxa e as costas superiores sem barra de fixação ou elástico. Se seu objetivo é hipertrofia máxima ou preparação para esportes de força, uma academia com equipamentos é superior. Mas para criar base, manter saúde e perder gordura — funciona muito bem.</p>
 
-<p>Se quiser evoluir para um programa presencial ou online com estrutura mais específica, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/erros-no-treino-de-musculacao">os erros mais comuns no treino</a> para não desperdiçar esforço.</p>
+<p>Se quiser evoluir para um programa presencial ou online com estrutura mais específica, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/erros-comuns-no-treino-de-musculacao">os erros mais comuns no treino</a> para não desperdiçar esforço.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
     faq: [
@@ -20974,7 +20974,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>A prevenção mais eficaz é o deload programado — uma semana a cada 4–8 semanas em que você reduz o volume em 30–50% mantendo a intensidade. O deload não é preguiça: é quando a supracompensação acontece e os ganhos das semanas anteriores se solidificam.</p>
 <p>Sinais de que você precisa de deload agora mesmo: 2 treinos seguidos abaixo do esperado, motivação em baixa, dores articulares recorrentes.</p>
 
-<p>Para um programa periodizado que inclua deloads e respeite sua capacidade de recuperação, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/periodizacao-do-treino">periodização do treino</a>.</p>
+<p>Para um programa periodizado que inclua deloads e respeite sua capacidade de recuperação, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/periodizacao-de-treino">periodização do treino</a>.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
     faq: [
@@ -21063,7 +21063,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li>Nunca use em exercícios técnicos pesados (agachamento, terra) perto da falha sem supervisão</li>
 </ul>
 
-<p>Para um programa que integre técnicas avançadas de forma periodizada e segura, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/progressao-de-carga-no-treino">progressão de carga</a> — a base antes de qualquer técnica avançada.</p>
+<p>Para um programa que integre técnicas avançadas de forma periodizada e segura, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/progressao-de-carga">progressão de carga</a> — a base antes de qualquer técnica avançada.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
     faq: [
@@ -21155,7 +21155,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>A armadilha da divisão ABC para iniciantes</h2>
 <p>Muitos iniciantes adotam divisão ABC porque é o que veem na academia. O problema: ao faltar um treino (e vai acontecer), um grupo muscular inteiro fica sem estímulo por 2 semanas. Com full body, faltar um treino significa apenas menos frequência naquela semana — os outros ficam intactos.</p>
 
-<p>Para montar um programa adequado ao seu nível e disponibilidade de tempo, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/frequencia-de-treino-para-hipertrofia">frequência de treino ideal</a>.</p>
+<p>Para montar um programa adequado ao seu nível e disponibilidade de tempo, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/frequencia-de-treino">frequência de treino ideal</a>.</p>
 `,
     faq: [
       {
@@ -21446,9 +21446,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>`,
     faq: [
       {
@@ -21632,7 +21632,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Terapia de reposição hormonal e treino</h2>
 <p>A TRH (terapia de reposição hormonal) pode melhorar a resposta ao treino em mulheres na menopausa, mantendo estrogênio que protege o músculo e o osso. Se você está considerando TRH, discuta os benefícios e riscos com seu ginecologista — é uma decisão individual e médica.</p>
 
-<p>Para um programa de treino que considere a fase hormonal, objetivos e limitações físicas, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/ganhar-musculo-apos-os-40">ganhar músculo após os 40</a> — princípios que se aplicam e se ampliam na menopausa.</p>
+<p>Para um programa de treino que considere a fase hormonal, objetivos e limitações físicas, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/hipertrofia-apos-os-40-anos">ganhar músculo após os 40</a> — princípios que se aplicam e se ampliam na menopausa.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
     faq: [
@@ -21816,9 +21816,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>`,
     faq: [
       {
@@ -21914,7 +21914,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li>Vitamina D: deficiência é muito comum e prejudica força muscular e saúde óssea</li>
 </ul>
 
-<p>Nunca é tarde para começar — mas começar mais cedo preserva mais. Para um programa periodizado e adaptado à sua idade e condição física, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/ganhar-massa-muscular-apos-os-40">ganhar massa muscular após os 40</a> — que apresenta a mesma base com foco na faixa etária anterior.</p>
+<p>Nunca é tarde para começar — mas começar mais cedo preserva mais. Para um programa periodizado e adaptado à sua idade e condição física, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/hipertrofia-apos-os-40-anos">ganhar massa muscular após os 40</a> — que apresenta a mesma base com foco na faixa etária anterior.</p>
 `,
     faq: [
       {
@@ -22020,9 +22020,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/25355851/" target="_blank" rel="noopener noreferrer">Revisão — saúde e exercício (PubMed)</a>.</p>`,
     faq: [
@@ -22130,7 +22130,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li>Infiltração de corticoide: melhora rápida no curto prazo, mas evidência controversa no longo prazo</li>
 </ul>
 
-<p>Para continuar treinando com lesão no cotovelo com adaptações inteligentes e protocolo de recuperação integrado ao treino, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/dor-no-ombro-na-musculacao">dor no ombro na musculação</a> — outra lesão frequente em exercícios de empurrar e puxar.</p>
+<p>Para continuar treinando com lesão no cotovelo com adaptações inteligentes e protocolo de recuperação integrado ao treino, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/dor-no-ombro-ao-treinar">dor no ombro na musculação</a> — outra lesão frequente em exercícios de empurrar e puxar.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
     faq: [
@@ -22450,7 +22450,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li>Progrida o volume de ombro gradualmente</li>
 </ul>
 
-<p>Para retornar ao treino completo com segurança após bursite, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/dor-no-ombro-na-musculacao">dor no ombro na musculação</a> — que cobre o contexto mais amplo das lesões de ombro.</p>
+<p>Para retornar ao treino completo com segurança após bursite, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/dor-no-ombro-ao-treinar">dor no ombro na musculação</a> — que cobre o contexto mais amplo das lesões de ombro.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
     faq: [
@@ -22543,7 +22543,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Quando a balança deveria importar</h2>
 <p>A balança tem valor quando o objetivo é perda de gordura clara e rápida (como quem está em déficit calórico agressivo para uma ocasião). Mas para objetivos de longo prazo de composição corporal e saúde, ela é apenas uma das métricas — e não a mais importante.</p>
 
-<p>Se você está confuso sobre o que seu corpo está fazendo, um profissional pode interpretar os dados (balança + medidas + performance + bioimpedância) e ajustar a estratégia. Consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/como-emagrecer-com-deficit-calorico">déficit calórico</a> — para entender quando a balança deve mesmo se mover.</p>
+<p>Se você está confuso sobre o que seu corpo está fazendo, um profissional pode interpretar os dados (balança + medidas + performance + bioimpedância) e ajustar a estratégia. Consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a> — para entender quando a balança deve mesmo se mover.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/26040348/" target="_blank" rel="noopener noreferrer">Hall et al. (2015) — metabolismo e emagrecimento (PubMed)</a>.</p>`,
     faq: [
@@ -22732,7 +22732,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>A diferença que o treino faz</h2>
 <p>Treino de força não acelera muito o déficit calórico diretamente (uma sessão de musculação gasta 300–500 kcal). Mas preserva a massa muscular que mantém o metabolismo elevado — o que a longo prazo faz toda a diferença para manter o emagrecimento sustentável.</p>
 
-<p>Para calcular seu gasto calórico, estabelecer o déficit certo e criar um plano realista e sustentável, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/como-emagrecer-com-deficit-calorico">déficit calórico</a> para entender a mecânica em detalhe.</p>
+<p>Para calcular seu gasto calórico, estabelecer o déficit certo e criar um plano realista e sustentável, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a> para entender a mecânica em detalhe.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/26040348/" target="_blank" rel="noopener noreferrer">Hall et al. (2015) — metabolismo e emagrecimento (PubMed)</a>.</p>`,
     faq: [
@@ -23215,7 +23215,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li>Check-in com médico e profissional de treino a cada 6–8 semanas</li>
 </ul>
 
-<p>O GLP-1 é uma ferramenta poderosa — mas ferramentas exigem operadores. Para um acompanhamento que integre o tratamento medicamentoso com o programa de treino e a estratégia nutricional, consulte a <a href="/consultoria">página de consultoria</a>. Veja também os artigos específicos sobre <a href="/blog/ozempic-e-treino">Ozempic e treino</a>, <a href="/blog/wegovy-e-musculacao">Wegovy e musculação</a>, e a série completa sobre <a href="/blog/retatrutida-para-emagrecer">Retatrutida</a>.</p>
+<p>O GLP-1 é uma ferramenta poderosa — mas ferramentas exigem operadores. Para um acompanhamento que integre o tratamento medicamentoso com o programa de treino e a estratégia nutricional, consulte a <a href="/consultoria">página de consultoria</a>. Veja também os artigos específicos sobre <a href="/blog/ozempic-e-treino">Ozempic e treino</a>, <a href="/blog/wegovy-e-musculacao">Wegovy e musculação</a>, e a série completa sobre <a href="/blog/como-potencializar-resultados-retatrutida">Retatrutida</a>.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/25355851/" target="_blank" rel="noopener noreferrer">Revisão — saúde e exercício (PubMed)</a>.</p>`,
     faq: [
@@ -23289,7 +23289,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Quem é o Montinho</h2>
 <p>Personal trainer com atuação na região de Alphaville, Tamboré, Barueri, Santana de Parnaíba e Grande São Paulo Oeste. Especialização em composição corporal, protocolos para usuários de GLP-1 e emagrecimento sustentável. Atendimento presencial e online para moradores de Granja Viana e Cotia.</p>
 
-<p>Para saber mais sobre o método e verificar disponibilidade para sua região, acesse a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/personal-trainer-alphaville">personal trainer em Alphaville</a> — região adjacente com o mesmo perfil de atendimento.</p>
+<p>Para saber mais sobre o método e verificar disponibilidade para sua região, acesse a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a> — região adjacente com o mesmo perfil de atendimento.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
     faq: [
@@ -23372,7 +23372,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>A localização não é desculpa</h2>
 <p>Com a consultoria online, a distância não é barreira. Clientes em Cotia, Vargem Grande Paulista, São Roque e outras cidades da região Oeste têm acesso ao mesmo método que os clientes presenciais de Alphaville e Tamboré — com toda a flexibilidade de treinar no horário e local de sua preferência.</p>
 
-<p>Para dar o primeiro passo com um diagnóstico gratuito do seu nível e objetivos, acesse a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/personal-trainer-online">personal trainer online</a> para entender como funciona o acompanhamento remoto.</p>
+<p>Para dar o primeiro passo com um diagnóstico gratuito do seu nível e objetivos, acesse a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/personal-trainer-online-como-funciona">personal trainer online</a> para entender como funciona o acompanhamento remoto.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
     faq: [
@@ -23453,7 +23453,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li>Combinar GLP-1 (Ozempic, Wegovy) com treino eficiente</li>
 </ul>
 
-<p>Para saber mais sobre programas para empresas ou atendimento executivo individual, acesse a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/personal-trainer-alphaville">personal trainer em Alphaville</a>.</p>
+<p>Para saber mais sobre programas para empresas ou atendimento executivo individual, acesse a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
     faq: [
@@ -23794,7 +23794,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia muscular (PubMed)</a>.</p>`,
     category: "Treinamento",
@@ -23984,7 +23984,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia muscular (PubMed)</a>.</p>`,
     category: "Treinamento",
@@ -24312,7 +24312,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia muscular (PubMed)</a>.</p>`,
     category: "Treinamento",
@@ -24575,7 +24575,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>`,
     category: "Saúde",
     date: "2026-06-27",
@@ -25089,7 +25089,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia muscular (PubMed)</a>.</p>`,
     category: "Emagrecimento",
@@ -25334,7 +25334,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>`,
     category: "Saúde",
     date: "2026-06-27",
@@ -25611,7 +25611,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia muscular (PubMed)</a>.</p>`,
     category: "Treinamento",
@@ -25812,7 +25812,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>`,
     category: "Saúde",
     date: "2026-06-27",
@@ -26083,7 +26083,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia muscular (PubMed)</a>.</p>`,
     category: "Emagrecimento",
@@ -26414,7 +26414,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia muscular (PubMed)</a>.</p>`
   },
@@ -26663,7 +26663,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>`
   },
   {
@@ -27036,7 +27036,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia muscular (PubMed)</a>.</p>`
   },
@@ -27332,7 +27332,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>`
   },
   {
@@ -27646,7 +27646,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>
 `
   },
@@ -27812,7 +27812,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>`,
     category: "Nutrição",
     date: "2026-06-27",
@@ -28043,7 +28043,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>`,
     category: "Nutrição",
     date: "2026-06-27",
@@ -28264,7 +28264,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>`,
     category: "Nutrição",
     date: "2026-06-27",
@@ -28499,7 +28499,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia muscular (PubMed)</a>.</p>`,
     category: "Treinamento",
@@ -28832,7 +28832,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Como Escolher</a></li>
 </ul>`,
     category: "Treinamento",
     date: "2026-06-27",
@@ -29016,9 +29016,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>A diferença entre esses dois resultados, ao final de 6 meses, é visível no espelho e mensurável nos exames. Se você está usando semaglutida ou pensa em começar, o treino de força não é opcional — é parte integrante do tratamento.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/25355851/" target="_blank" rel="noopener noreferrer">Revisão — saúde e exercício (PubMed)</a>.</p>`,
   faq: [
@@ -29164,9 +29164,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Essa escolha, na prática, cabe a você. E ela é feita na academia.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/25355851/" target="_blank" rel="noopener noreferrer">Revisão — saúde e exercício (PubMed)</a>.</p>`,
   faq: [
@@ -29314,8 +29314,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/32699189/" target="_blank" rel="noopener noreferrer">Mayer et al. — estratégias de perda de gordura (NCBI)</a>.</p>`,
   faq: [
@@ -29473,8 +29473,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/como-calcular-deficit-calorico">Como Calcular Seu Déficit Calórico</a></li>
-<li><a href="/blog/gordura-localizada-mitos-verdades">Gordura Localizada: Mitos e Verdades</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Seu Déficit Calórico</a></li>
+<li><a href="/blog/gordura-localizada-mitos-e-fatos">Gordura Localizada: Mitos e Verdades</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/26040348/" target="_blank" rel="noopener noreferrer">Hall et al. (2015) — metabolismo e emagrecimento (PubMed)</a>.</p>`,
   faq: [
@@ -29659,8 +29659,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -29820,9 +29820,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Treino de força bem estruturado, sono, nutrição e controle do estresse são a base. Se mesmo com isso os níveis permanecerem baixos e os sintomas continuarem, o médico especialista é o próximo passo.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/25355851/" target="_blank" rel="noopener noreferrer">Revisão — saúde e exercício (PubMed)</a>.</p>`,
   faq: [
@@ -29985,8 +29985,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -30112,9 +30112,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Se você treina com consistência e come relativamente bem mas não vê resultados, avalie sua qualidade de sono, nível de estresse e volume de treino antes de mudar a dieta ou adicionar suplementos.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -30234,9 +30234,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>A chave é consistência, progressão e uma estratégia alimentar complementar. Com o suporte certo, é possível controlar os sintomas da SOP e ter uma relação muito melhor com o próprio corpo.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -30372,9 +30372,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Leve os resultados para um médico que entenda de esporte e performance — não basta olhar os valores de referência do laboratório, que muitas vezes não são calibrados para pessoas ativas.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/25355851/" target="_blank" rel="noopener noreferrer">Revisão — saúde e exercício (PubMed)</a>.</p>`,
   faq: [
@@ -30484,9 +30484,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Se você come antes do treino e faz uma refeição completa em até 2-3 horas após, está cobrindo tudo que precisa. Não há necessidade de tomar whey na academia imediatamente ao terminar a última série.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) — proteína e hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [
@@ -30615,9 +30615,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Para quem não tem restrições dietéticas, diversificar entre as duas fontes é uma estratégia inteligente. Para vegetarianos e veganos, a estratégia existe — apenas requer um pouco mais de atenção.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">Stokes et al. (2018) — revisão sobre ingestão proteica e hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -30746,9 +30746,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Dieta cetogênica e musculação não são incompatíveis — mas são uma combinação com trade-offs claros. Se o objetivo é emagrecer e você se adapta bem ao estilo alimentar, pode funcionar. Se o objetivo é ganhar máximo de massa muscular, outras abordagens alimentares com carboidratos adequados são mais eficazes.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) — proteína e hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [
@@ -30869,9 +30869,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Priorize sempre: sono, déficit calórico com proteína adequada, treino consistente. O termogênico, se usado, é o décimo item da lista — não o primeiro.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) — proteína e hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [
@@ -31017,8 +31017,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/como-calcular-deficit-calorico">Como Calcular Seu Déficit Calórico</a></li>
-<li><a href="/blog/gordura-localizada-mitos-verdades">Gordura Localizada: Mitos e Verdades</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Seu Déficit Calórico</a></li>
+<li><a href="/blog/gordura-localizada-mitos-e-fatos">Gordura Localizada: Mitos e Verdades</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/26040348/" target="_blank" rel="noopener noreferrer">Hall et al. (2015) — metabolismo e emagrecimento (PubMed)</a>.</p>`,
   faq: [
@@ -31134,8 +31134,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/como-calcular-deficit-calorico">Como Calcular Seu Déficit Calórico</a></li>
-<li><a href="/blog/gordura-localizada-mitos-verdades">Gordura Localizada: Mitos e Verdades</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Seu Déficit Calórico</a></li>
+<li><a href="/blog/gordura-localizada-mitos-e-fatos">Gordura Localizada: Mitos e Verdades</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/26040348/" target="_blank" rel="noopener noreferrer">Hall et al. (2015) — dinâmica do emagrecimento e metabolismo (PubMed)</a>.</p>`,
   faq: [
@@ -31276,8 +31276,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/20847704/" target="_blank" rel="noopener noreferrer">Schoenfeld (2010) — mecanismos de hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [
@@ -31415,8 +31415,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -31538,8 +31538,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -31658,9 +31658,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Para a maioria das pessoas que busca emagrecer ou ganhar músculo, a diferença real ainda está nos fundamentos: treino progressivo, proteína adequada, sono e consistência.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/25355851/" target="_blank" rel="noopener noreferrer">Revisão — saúde e exercício (PubMed)</a>.</p>`,
   faq: [
@@ -31832,8 +31832,8 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -31965,8 +31965,8 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -32109,8 +32109,8 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -32247,8 +32247,8 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por Que Você Não Consegue Emagrecer</a></li>
-<li><a href="/blog/como-calcular-deficit-calorico">Como Calcular Seu Déficit Calórico</a></li>
-<li><a href="/blog/gordura-localizada-mitos-verdades">Gordura Localizada: Mitos e Verdades</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Seu Déficit Calórico</a></li>
+<li><a href="/blog/gordura-localizada-mitos-e-fatos">Gordura Localizada: Mitos e Verdades</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/26040348/" target="_blank" rel="noopener noreferrer">Hall et al. (2015) — metabolismo e emagrecimento (PubMed)</a>.</p>`,
   faq: [
@@ -32381,8 +32381,8 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -32531,8 +32531,8 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -32709,8 +32709,8 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/20847704/" target="_blank" rel="noopener noreferrer">Schoenfeld (2010) — mecanismos de hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [
@@ -32851,8 +32851,8 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/20847704/" target="_blank" rel="noopener noreferrer">Schoenfeld (2010) — mecanismos de hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [
@@ -32998,8 +32998,8 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -33141,8 +33141,8 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -33266,9 +33266,9 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 <p>Atingir a meta proteica diária é mais simples quando você conhece os alimentos certos. Frango, atum, ovos e cottage são a base mais acessível e eficaz. Distribua em 3-4 refeições ao longo do dia para maximizar a síntese muscular.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">Stokes et al. (2018) — revisão sobre ingestão proteica e hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -33406,9 +33406,9 @@ TDEE = 1708 × 1,55 = <strong>2.647 kcal/dia</strong></p>
 <p>Para ganhar massa muscular: calcule seu TDEE, adicione 200-400 kcal de superávit, priorize proteína de 1,8-2,2g/kg e distribua os carboidratos ao redor do treino. Monitore o peso semanal — se estiver ganhando mais de 0,5-1% do peso corporal por semana, reduza levemente as calorias.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) — proteína e hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [
@@ -33532,9 +33532,9 @@ TDEE = 1708 × 1,55 = <strong>2.647 kcal/dia</strong></p>
 <p>A suplementação básica eficaz para iniciantes é simples e barata: creatina monoidratada + proteína adequada + vitamina D. Todo o resto é secundário. Antes de gastar em pré-treinos e suplementos complexos, certifique-se de que a dieta, o treino e o sono estão em ordem.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) — proteína e hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [
@@ -33650,9 +33650,9 @@ TDEE = 1708 × 1,55 = <strong>2.647 kcal/dia</strong></p>
 <p>A caseína antes de dormir tem suporte científico real para melhora da síntese proteica noturna. Para a maioria das pessoas, cottage (200g) é a versão mais acessível e igualmente eficaz do suplemento. Priorize atingir a meta proteica diária total antes de se preocupar com o timing — mas se quiser otimizar, caseína à noite é a estratégia certa.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) — proteína e hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [
@@ -33789,9 +33789,9 @@ TDEE = 1708 × 1,55 = <strong>2.647 kcal/dia</strong></p>
 <p>A musculação após os 60 não é opcional para quem quer qualidade de vida e independência funcional — é necessária. Com orientação adequada, adaptações individuais e progressão respeitosa, é uma das atividades mais seguras e eficazes disponíveis para essa faixa etária.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/25355851/" target="_blank" rel="noopener noreferrer">Revisão — saúde e exercício (PubMed)</a>.</p>`,
   faq: [
@@ -33929,8 +33929,8 @@ TDEE = 1708 × 1,55 = <strong>2.647 kcal/dia</strong></p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -34067,8 +34067,8 @@ Em pé em uma perna, agache devagar até 30-40° mantendo o joelho alinhado sobr
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -34191,8 +34191,8 @@ Em pé em uma perna, agache devagar até 30-40° mantendo o joelho alinhado sobr
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -34334,8 +34334,8 @@ Em pé em uma perna, agache devagar até 30-40° mantendo o joelho alinhado sobr
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -34471,8 +34471,8 @@ Em pé em uma perna, agache devagar até 30-40° mantendo o joelho alinhado sobr
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -35519,8 +35519,8 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -36695,7 +36695,7 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 <li><strong>Cafeína/pré-treino</strong>: se preferir o industrializado ao café, 45-60 min antes do exercício</li>
 </ul>
 
-<p>Para mais detalhes sobre suplementação, veja o artigo sobre <a href="/blog/creatina-para-que-serve">creatina: para que serve e como usar</a>.</p>
+<p>Para mais detalhes sobre suplementação, veja o artigo sobre <a href="/blog/creatina-para-hipertrofia">creatina: para que serve e como usar</a>.</p>
 
 <h2>A importância da consistência acima da perfeição</h2>
 
@@ -36999,9 +36999,9 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 <p>Músculo não vira gordura. São tecidos diferentes e a biologia não permite essa conversão. O que acontece quando você para de treinar é atrofia muscular gradual (mais lenta do que o senso comum sugere) e potencial acúmulo de gordura se a alimentação não for ajustada. Com proteína adequada, controle calórico e alguma atividade física, as perdas durante uma pausa são minimizadas — e a memória muscular garante recuperação acelerada quando o treino é retomado.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/32699189/" target="_blank" rel="noopener noreferrer">Mayer et al. — estratégias de perda de gordura (NCBI)</a>.</p>`,
   faq: [
@@ -37463,8 +37463,8 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -37645,8 +37645,8 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -37797,8 +37797,8 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -38145,8 +38145,8 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -38475,8 +38475,8 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/20847704/" target="_blank" rel="noopener noreferrer">Schoenfeld (2010) — mecanismos de hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [
@@ -38625,9 +38625,9 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
 <p>O ciclo menstrual não é um inconveniente — é um guia de performance. Mulheres que aprendem a periodizar o treino respeitando as fases hormonais relatam mais energia nos treinos certos, menos frustração na fase lútea e resultados mais consistentes ao longo do tempo. A ciência do treinamento feminino avançou significativamente na última década. Ignorar essa informação é deixar potencial na mesa.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -38650,7 +38650,7 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
   ],
   },
   {
-  slug: "hormônios-femininos-apos-40-treino",
+  slug: "hormonios-femininos-apos-40-treino",
   title: "Hormônios Femininos Após os 40 Anos: Como o Corpo Muda e Como Treinar",
   metaTitle: "Hormônios Femininos Após os 40: Treino, Composição…",
   metaDescription: "Como os hormônios femininos mudam após os 40 anos afetam o treino, o ganho de gordura e a perda muscular?",
@@ -38678,7 +38678,7 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/hormônios-femininos-apos-40-treino-infographic.svg" alt="Infográfico sobre Hormônios Femininos Após os 40 Anos: Como o Corpo Muda e Como Treinar — Montinho Personal Trainer" title="Hormônios Femininos Após os 40 Anos: Como o Corpo Muda e Com" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/hormonios-femininos-apos-40-treino-infographic.svg" alt="Infográfico sobre Hormônios Femininos Após os 40 Anos: Como o Corpo Muda e Como Treinar — Montinho Personal Trainer" title="Hormônios Femininos Após os 40 Anos: Como o Corpo Muda e Com" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 <h2>O que acontece com os hormônios femininos a partir dos 40</h2>
 
@@ -38950,8 +38950,8 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -39270,8 +39270,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -39417,8 +39417,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -39562,8 +39562,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -39842,9 +39842,9 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>A janela anabólica existe — mas é mais longa, mais flexível e mais dependente do contexto do que o dogma dos anos 2000 sugeria. Se você come uma refeição com proteína 2 horas antes do treino e outra dentro de 2 horas depois, está dentro da janela sem precisar de shake imediato. O que verdadeiramente determina os resultados é a meta diária de proteína total e a distribuição em 3-5 refeições. O timing é detalhe — importante, mas secundário.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -40174,9 +40174,9 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Periodização nutricional transforma a dieta de uma rotina fixa em uma ferramenta dinâmica alinhada com os objetivos do treino. Bulk com superávit moderado, cutting com proteína elevada e déficit controlado, manutenção para consolidação — cada fase tem sua lógica nutricional. Implementar essa estratégia exige planejamento mas produz resultados superiores à manutenção de calorias fixas o ano inteiro.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -40328,9 +40328,9 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Nunca é tarde para começar a treinar força. A musculação acima dos 65 anos não é apenas possível — é uma das intervenções de saúde mais eficazes que a medicina tem para oferecer nessa fase da vida. Previne sarcopenia, fortalece os ossos, melhora o controle glicêmico, protege o coração e preserva a independência. Com avaliação médica, supervisão profissional e progressão gradual, os benefícios superam largamente qualquer risco.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/sono-e-emagrecimento">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/estresse-cortisol-peso">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-saudaveis-consistencia">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
+<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
+<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/25355851/" target="_blank" rel="noopener noreferrer">Revisão — saúde e exercício (PubMed)</a>.</p>`,
   faq: [
@@ -40504,8 +40504,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -40686,8 +40686,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -40852,8 +40852,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [
@@ -41022,8 +41022,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
@@ -41226,8 +41226,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/20847704/" target="_blank" rel="noopener noreferrer">Schoenfeld (2010) — mecanismos de hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [{"question": "Treino isométrico constrói músculo de verdade?", "answer": "Sim. Pesquisas mostram que contrações isométricas de alta intensidade (≥70% da força máxima) promovem hipertrofia comparável ao treino dinâmico, especialmente quando realizadas no ângulo de maior tensão muscular."}, {"question": "Quanto tempo segurar a contração isométrica para hipertrofia?", "answer": "Entre 20 e 60 segundos por série, com 3–5 séries. Contrações abaixo de 10 segundos favorecem mais força máxima do que volume muscular."}, {"question": "Isométrico aumenta pressão arterial?", "answer": "Transitoriamente sim, como qualquer exercício intenso. Para hipertensos, contrações de baixa intensidade realizadas regularmente podem reduzir a PA em repouso segundo revisão Cochrane 2023."}, {"question": "Posso fazer treino isométrico todo dia?", "answer": "Contrações isométricas geram menos dano muscular que o excêntrico, então a recuperação é mais rápida. Mas 2–4x por semana por grupo muscular é o suficiente para progressão."}, {"question": "Qual o melhor exercício isométrico para pernas?", "answer": "O agachamento isométrico profundo (yielding isometric a 90° de flexão de joelho) com barra ou halteres é o mais eficaz para hipertrofia de quadríceps e glúteos."}],
@@ -41370,9 +41370,9 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Whey ou proteína vegana? Em 2025, a ciência deixou de lado o dogmatismo. O que determina o ganho muscular é a <strong>quantidade total de proteína</strong>, a <strong>qualidade do treino</strong> e a <strong>consistência</strong>. Whey tem vantagem marginal em qualidade por grama — mas com blend vegano de qualidade em dose adequada, os resultados de hipertrofia são estatisticamente equivalentes. Escolha baseando-se em tolerância, preferência e estilo de vida.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">Stokes et al. (2018) — revisão sobre ingestão proteica e hipertrofia (PubMed)</a>.</p>`,
   faq: [{"question": "Proteína vegana é suficiente para ganhar músculo?", "answer": "Sim. Com dose adequada (geralmente 15–20% maior que whey para compensar o DIAAS menor) e treino consistente, os ganhos musculares são equivalentes aos obtidos com whey, conforme meta-análises recentes."}, {"question": "Qual é a melhor proteína vegana para hipertrofia?", "answer": "O blend de ervilha + arroz (70/30) é o mais eficaz por complementar os perfis aminoacídicos. A soja isolada também tem alta qualidade (DIAAS 0.91). Ambos são superiores ao uso isolado de arroz ou ervilha."}, {"question": "Proteína de soja aumenta estrogênio?", "answer": "Não em doses normais de consumo. Estudos controlados mostram que até 80g/dia de proteína de soja não alteram estradiol, testosterona ou LH em homens ou mulheres em fase reprodutiva."}, {"question": "Whey concentrado ou isolado para quem tem intolerância à lactose?", "answer": "O whey isolado tem menos de 0,5g de lactose por porção — a maioria dos intolerantes tolera bem. Se não tolerar, o whey hidrolisado ou proteínas veganas são as alternativas."}, {"question": "Posso misturar proteína vegana com whey?", "answer": "Sim, e é uma estratégia interessante: o whey fornece leucina de alta velocidade para o pós-treino, enquanto a proteína vegana pode ser usada em outras refeições para variedade e custo."}],
@@ -41508,8 +41508,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [{"question": "É normal se sentir deprimido após uma lesão esportiva?", "answer": "Sim. Estudos mostram que até 35% dos atletas com lesões graves preenchem critérios para depressão clínica durante a reabilitação. Normalizar essa resposta e buscar suporte é fundamental para a recuperação."}, {"question": "O que é kinesofobia e como ela afeta o retorno ao esporte?", "answer": "Kinesofobia é o medo de movimento ou de relesionar. Ela afeta até 33% dos atletas após lesões graves e é um preditor independente de performance abaixo do potencial mesmo quando a cura física está completa."}, {"question": "A imagética mental realmente ajuda na recuperação?", "answer": "Sim. Visualizar mentalmente movimentos ativa os mesmos padrões neurais do movimento real, mantendo a representação cortical e reduzindo a perda de força e coordenação durante a imobilização."}, {"question": "Quanto tempo demora a recuperação psicológica de uma lesão grave?", "answer": "Varia muito, mas geralmente acompanha ou ultrapassa o tempo de cura física. Para lesões como ruptura de LCA, a recuperação psicológica completa pode levar de 9 a 18 meses."}, {"question": "Quando devo procurar um psicólogo esportivo após uma lesão?", "answer": "Se apresentar sintomas depressivos por mais de 2 semanas, medo de movimento que impede a fisioterapia, isolamento social marcado ou pensamentos de abandono do esporte sem reflexão adequada."}],
@@ -41693,8 +41693,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [{"question": "Posso fazer musculação durante a gravidez?", "answer": "Sim, com ajustes. A musculação com cargas moderadas é permitida e benéfica durante toda a gestação saudável, evitando manobra de Valsalva, cargas máximas e exercícios em decúbito dorsal após a 20ª semana."}, {"question": "Qual exercício é mais seguro durante a gravidez?", "answer": "Natação, hidroginástica, caminhada e yoga pré-natal são os mais seguros por baixo risco de queda e impacto reduzido. Musculação com supervisão também é excelente opção."}, {"question": "Posso continuar correndo durante a gravidez?", "answer": "Gestantes que já corriam podem continuar no primeiro e segundo trimestre com redução de intensidade. No terceiro trimestre, o impacto e o risco de desequilíbrio tornam a caminhada mais indicada. Sempre com liberação obstétrica."}, {"question": "Exercício na gravidez faz mal ao bebê?", "answer": "Não. Exercício moderado e supervisionado é seguro e benéfico para mãe e bebê. Há evidências de redução de diabetes gestacional e melhor regulação do peso do bebê ao nascer."}, {"question": "Quando parar de se exercitar na gravidez?", "answer": "Interrompa imediatamente se sentir sangramento, contrações, perda de líquido, dor torácica, tontura intensa ou redução de movimentos fetais. Fora dessas situações, continue com orientação profissional."}],
@@ -41869,8 +41869,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [{"question": "Sarcopenia tem cura?", "answer": "Sim. Com exercício resistido progressivo e nutrição adequada, é possível reverter parcial ou totalmente a sarcopenia em idosos de qualquer idade, incluindo acima dos 80 anos."}, {"question": "Qual exercício é melhor para combater a sarcopenia?", "answer": "O exercício resistido (musculação, treino com pesos) é o mais eficaz. Leg press, extensão de joelho, remada e exercícios multiarticulares são prioritários para idosos."}, {"question": "Idoso pode fazer musculação com alta intensidade?", "answer": "Sim, com supervisão adequada. Estudos mostram que idosos de até 96 anos respondem bem a treinos de alta intensidade, com ganhos de força de 100–174% em 8–10 semanas."}, {"question": "Quanta proteína um idoso sarcopênico deve comer?", "answer": "De 1,6 a 2,0g por kg de peso corporal por dia, com pelo menos 3–4g de leucina por refeição, para superar a resistência anabólica típica do envelhecimento."}, {"question": "Com qual frequência um idoso deve treinar para combater sarcopenia?", "answer": "Mínimo 2x por semana de exercício resistido, idealmente 3x/semana para resultados ótimos. Complementar com exercícios de equilíbrio e atividade aeróbica leve nos outros dias."}],
@@ -42039,8 +42039,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [{"question": "Posso fazer musculação e corrida no mesmo dia?", "answer": "Pode, mas com pelo menos 6 horas de intervalo entre as sessões. Faça a musculação pela manhã e a corrida à noite para minimizar o efeito de interferência na síntese proteica."}, {"question": "Corrida faz perder músculo?", "answer": "Não em volume moderado com proteína adequada. Com 1,8–2,4g de proteína/kg/dia e corrida de até 3–4x/semana em intensidade controlada, a perda muscular é mínima ou inexistente."}, {"question": "Quanto carboidrato o atleta híbrido precisa?", "answer": "Entre 4 e 7g/kg/dia dependendo do volume de treino semanal. Atletas com mais de 10h de treino/semana podem precisar de até 8–10g/kg/dia para sustentar os dois estímulos."}, {"question": "Musculação melhora a performance na corrida?", "answer": "Sim. Treino de força específico para membros inferiores melhora a economia de corrida em 4–8%, reduz o tempo em provas de 5km a maratona e diminui o risco de lesões por overuse."}, {"question": "Qual é a frequência ideal do treino híbrido?", "answer": "Para um atleta equilibrado: 3 dias de musculação + 3 dias de corrida por semana, com 1 dia de descanso ativo. O volume e a intensidade devem ser ajustados conforme o objetivo primário."}],
@@ -42199,8 +42199,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28819673/" target="_blank" rel="noopener noreferrer">Exercise Rehabilitation — protocolos de reabilitação (PubMed)</a>.</p>`,
   faq: [{"question": "O que é o protocolo PEACE & LOVE para lesões?", "answer": "É o protocolo moderno de manejo de lesões musculares que substituiu o RICE. Inclui Proteção, Elevação, Evitar anti-inflamatórios, Compressão e Educação na fase aguda; e Carga, Otimismo, Vascularização e Exercício na fase de reabilitação."}, {"question": "Devo usar gelo em lesões musculares?", "answer": "Com moderação. O gelo pode controlar dor intensa nas primeiras 24h, mas uso excessivo inibe fases essenciais da cicatrização. Nunca por mais de 15 minutos por aplicação."}, {"question": "Anti-inflamatórios atrapalham a cicatrização?", "answer": "Sim, especialmente nas primeiras 48–72h. AINEs suprimem a resposta inflamatória necessária para ativar macrófagos de reparo e células satélites. Use apenas para dor severa e por curto período."}, {"question": "Quando posso voltar a treinar após lesão muscular?", "answer": "Quando a dor for ≤2/10 nos movimentos, a força for ≥90% do lado contralateral e a amplitude de movimento estiver restaurada. Sempre com progressão gradual e orientação profissional."}, {"question": "Colágeno hidrolisado ajuda na cicatrização?", "answer": "Sim. 15g de colágeno hidrolisado + 50mg de vitamina C, tomados 1 hora antes de exercício de reabilitação, aumentam a síntese de colágeno em tendões em até 2x comparado ao placebo."}],
@@ -42362,9 +42362,9 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Vitaminas e minerais não são apenas saúde preventiva — são ferramentas de performance. Um atleta com deficiência de vitamina D, ferro ou magnésio está literalmente treinando com freio de mão puxado. Exames anuais, dieta variada e suplementação estratégica baseada em dados são os pilares de uma performance sustentável.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) — proteína e hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [{"question": "Qual vitamina mais prejudica a performance quando em falta?", "answer": "A vitamina D e o ferro têm o maior impacto na performance esportiva quando deficientes. A vitamina D afeta força muscular e imunidade; o ferro compromete o transporte de oxigênio e o VO2max."}, {"question": "Magnésio ajuda a evitar cãibras?", "answer": "Sim. O magnésio regula a contração muscular e os déficits são comuns em atletas. Magnésio glicinato (300–500mg à noite) reduz cãibras musculares em pessoas com deficiência comprovada."}, {"question": "Atleta vegano precisa de suplemento de B12?", "answer": "Sim, obrigatoriamente. A vitamina B12 existe apenas em alimentos de origem animal. Veganos devem suplementar 1.000 mcg/dia e monitorar com exame a cada 6–12 meses."}, {"question": "Quais exames de sangue todo atleta deveria fazer?", "answer": "Vitamina D (25-OH), ferritina sérica, hemograma, B12, zinco, magnésio, TSH, testosterona total e cortisol basal. Repetir anualmente ou a cada 6 meses em atletas de alta performance."}, {"question": "Vitamina C após o treino atrapalha as adaptações?", "answer": "Doses altas (≥1g) imediatamente pós-treino podem reduzir adaptações mitocondriais. Use vitamina C em outras refeições, não no pós-treino imediato."}],
@@ -42509,8 +42509,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [{"question": "Por que é mais difícil emagrecer na pós-menopausa?", "answer": "Com a queda do estrogênio, o metabolismo desacelera, a gordura migra para o compartimento visceral, a resistência à insulina aumenta e a perda muscular acelera — todos fatores que dificultam a perda de peso convencional."}, {"question": "Musculação ajuda a reduzir gordura na barriga na pós-menopausa?", "answer": "Sim. O treino de força de alta intensidade é mais eficaz que o cardio isolado para reduzir gordura visceral na pós-menopausa, além de preservar massa muscular e melhorar densidade óssea."}, {"question": "Quantos dias por semana uma mulher na pós-menopausa deve treinar?", "answer": "Idealmente 3 dias de musculação + 3 dias de cardio moderado (Zona 2) + 1 dia de descanso ativo. Consistência ao longo dos meses é mais importante que intensidade máxima."}, {"question": "TRH melhora os resultados do treino na menopausa?", "answer": "Sim. Mulheres em terapia de reposição hormonal combinada com treino de força ganham mais músculo e perdem mais gordura. Porém, a decisão sobre TRH é médica e deve ser individualizada."}, {"question": "Quanta proteína uma mulher pós-menopausa deve consumir?", "answer": "Com treino de força, 1,6–2,0g por kg de peso corporal por dia, distribuídos em 4–5 refeições com ao menos 30–35g de proteína cada, para superar a resistência anabólica dessa fase."}],
@@ -42645,9 +42645,9 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>O índice glicêmico é uma ferramenta, não uma lei. O contexto — quando, quanto e com o que você come o carboidrato — importa mais do que o número do IG isolado. Para praticantes de musculação, a quantidade total de carboidrato e a distribuição estratégica ao longo do dia têm impacto muito maior na performance e composição corporal do que a escolha entre alto ou baixo IG.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [{"question": "Qual carboidrato é melhor para o pré-treino?", "answer": "2–3h antes: carboidrato de médio IG com proteína (arroz integral, aveia, batata doce). 30–60 min antes: carboidrato de médio-alto IG em menor quantidade (banana, arroz branco, geleia)."}, {"question": "Carboidrato de alto IG pós-treino é necessário?", "answer": "Apenas se treinar duas vezes no mesmo dia ou ter menos de 8h para recuperar. Com 24h de intervalo, o IG pós-treino importa menos que a quantidade total consumida no dia."}, {"question": "Arroz branco é melhor que integral após o treino?", "answer": "Em termos de ressíntese de glicogênio, o arroz branco é ligeiramente superior pelo alto IG. Mas ambos são boas opções quando consumidos com proteína em quantidade suficiente."}, {"question": "Comer carboidrato à noite engorda?", "answer": "Não. O que determina ganho de gordura é o balanço calórico total, não o horário. Carboidratos à noite podem até favorecer o sono e a recuperação muscular."}, {"question": "Frutas são boas para repor glicogênio após o treino?", "answer": "Parcialmente. A frutose da fruta repõe glicogênio hepático, não muscular. Para reposição muscular ideal, combine frutas com fontes de glicose (arroz branco, pão, batata)."}],
@@ -42779,9 +42779,9 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>O colágeno hidrolisado é um suplemento legítimo para saúde articular e tendinosa — mas exige escolha correta por tipo, dose adequada e timing preciso. Para tendões, 15g de tipo I + vitamina C 1h antes do exercício é o protocolo com maior suporte científico. Para osteoartrite, UC-II a 40mg tem vantagem mecanística. Para hipertrofia muscular, procure outra fonte.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) — proteína e hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [{"question": "Colágeno tipo I ou tipo II para articulação?", "answer": "Para tendões e ligamentos: tipo I hidrolisado (15g + vitamina C, 1h antes do exercício). Para cartilagem articular e osteoartrite: UC-II não-desnaturado (40mg/dia) ou hidrolisado tipo II (5–10g/dia)."}, {"question": "Colágeno hidrolisado ajuda a crescer músculo?", "answer": "Não. O colágeno é pobre em leucina e aminoácidos essenciais para hipertrofia. Seu papel é específico para tendões, cartilagem, ossos e pele — não substitui whey ou proteína alimentar."}, {"question": "Qual o melhor horário para tomar colágeno para tendões?", "answer": "1 hora antes do exercício que carrega o tendão, sempre com vitamina C (50–200mg). O exercício amplifica a sinalização do colágeno para o tecido conjuntivo."}, {"question": "Glucosamina ou colágeno: qual é melhor para articulação?", "answer": "Para osteoartrite estabelecida, UC-II (40mg) mostrou superioridade em relação à glucosamina + condroitina em estudos comparativos. Para prevenção em atletas jovens, o hidrolisado tem melhor evidência de custo-benefício."}, {"question": "Quanto tempo leva para o colágeno fazer efeito nos tendões?", "answer": "Tendões têm metabolismo lento. Resultados estruturais levam 3–6 meses de uso consistente. Redução de dor pode ser percebida em 4–8 semanas com o protocolo correto."}],
@@ -42935,8 +42935,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [{"question": "Atletas de esporte coletivo devem fazer musculação?", "answer": "Sim, absolutamente. Musculação melhora potência, velocidade, resistência a lesões e rendimento em todos os esportes coletivos. A chave é periodizar corretamente para não interferir no calendário de jogos."}, {"question": "Com que frequência um futebolista deve fazer musculação?", "answer": "Na pré-temporada: 3–4x/semana. Durante a temporada: 1–2x/semana (manutenção). Sempre distante pelo menos 48h dos jogos para evitar fadiga residual."}, {"question": "Nordic hamstring curl realmente previne lesão nos isquiotibiais?", "answer": "Sim. Meta-análise do British Journal of Sports Medicine (2015) mostrou redução de 51% no risco de lesão de isquiotibiais em jogadores de futebol que realizaram Nordic hamstring curl regularmente."}, {"question": "Musculação pesada atrapalha a performance técnica no esporte?", "answer": "Não quando periodizada corretamente. Força máxima é construída no off-season; durante a temporada, sessões de manutenção (1–2x/semana) preservam ganhos sem fadiga que prejudique técnica."}, {"question": "O que é mais importante para atletas: força ou potência?", "answer": "Potência — que é força aplicada em alta velocidade. Força máxima é a base, mas a transferência para o esporte requer treinamento de potência (jump squat, plyometrics, medicine ball throws) na fase pré-competitiva."}],
@@ -43068,9 +43068,9 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>A beta-alanina é um dos suplementos com melhor suporte científico para performance em alta intensidade — especialmente para modalidades de 1 a 4 minutos de esforço contínuo ou repetido. Para praticantes de musculação que treinam com sets de 12–25 repetições, para atletas de CrossFit, natação de velocidade e esportes coletivos com sprints repetidos, é uma adição justificada ao stack de suplementação. A parestesia é inócua e minimizável. O benefício é real.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">ISSN Position Stand — suplementação e performance (PubMed)</a>.</p>`,
   faq: [{"question": "Beta-alanina funciona para musculação?", "answer": "Sim, especialmente para sets de 12–25 repetições onde a fadiga ácida é o fator limitante. Para força máxima (1–5RM), o benefício é mínimo."}, {"question": "A formigação da beta-alanina faz mal?", "answer": "Não. A parestesia (formigamento) é um efeito neurológico inócuo. Pode ser reduzida dividindo a dose em tomadas menores ou usando formulação de liberação lenta."}, {"question": "Quanto tempo para a beta-alanina fazer efeito?", "answer": "2–4 semanas para aumento significativo de carnosina muscular. Performance melhora após 4–6 semanas de uso consistente (3,2–6,4g/dia)."}, {"question": "Beta-alanina e creatina podem ser usadas juntas?", "answer": "Sim. Mecanismos complementares e independentes. Creatina atua nos primeiros segundos de explosão; beta-alanina atua nos minutos subsequentes de alta intensidade. A combinação é a mais estudada e mostra benefício aditivo."}, {"question": "Beta-alanina ajuda na corrida?", "answer": "Em provas de 800m a 2km (duração de 1–4 minutos), sim. Para distâncias maiores (5km+), o benefício é mínimo pois o sistema glicolítico anaeróbico contribui menos para a fadiga."}],
@@ -43237,8 +43237,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [{"question": "Quanto tempo leva para se preparar para uma ultramaratona de 50km?", "answer": "Para quem já tem base de maratona, 4–6 meses. Para corredor recreativo com 40km/semana de base, 8–12 meses. Para iniciantes na corrida, pelo menos 18–24 meses de desenvolvimento progressivo."}, {"question": "O que comer durante uma ultramaratona?", "answer": "Nos primeiros 6h: 60–90g de carboidrato por hora (géis, frutas). Após 6h: 200–400 kcal/hora incluindo alimentos sólidos (batata, queijo, caldo, arroz). Treinar o intestino nos longões é obrigatório."}, {"question": "Ultramaratonistas precisam fazer musculação?", "answer": "Sim, especialmente para resistência excêntrica dos quadríceps nas descidas e prevenção de lesões. Agachamento búlgaro, step-down excêntrico e levantamento terra romeno são prioritários."}, {"question": "É normal querer desistir durante uma ultramaratona?", "answer": "Completamente normal. Todo ultramaratonista passa por 'crises' durante a prova. A técnica de segmentação (focar apenas no próximo posto) e âncoras motivacionais pré-definidas são estratégias eficazes."}, {"question": "Qual o volume semanal ideal para treinar ultra 50km?", "answer": "Pico de 70–100km/semana, com longões de 25–35km. A progressão deve ser de no máximo 10% por semana, com deload a cada 3–4 semanas para prevenir lesões por overuse."}],
@@ -43358,15 +43358,15 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [{"question": "Qual exercício é melhor para longevidade?", "answer": "A combinação de exercício aeróbico + treino de força é a mais associada à redução de mortalidade (41% menor risco). Isoladamente, o VO2max alto (cardio vigoroso) é o preditor individual mais forte de longevidade."}, {"question": "Quanto exercício preciso fazer para aumentar a longevidade?", "answer": "150–300 min/semana de aeróbico moderado + 2–3 sessões de força/semana é o mínimo com maior impacto. Os maiores ganhos estão na transição de sedentário para minimamente ativo."}, {"question": "Nunca treinei antes. Com 60 anos ainda tenho benefício?", "answer": "Sim. Estudos mostram que adultos que começam a se exercitar após os 60 anos têm benefícios de mortalidade equiparáveis aos de pessoas ativas ao longo da vida. O corpo humano responde ao exercício em qualquer idade."}, {"question": "Musculação aumenta a longevidade?", "answer": "Sim. Força de preensão manual é um preditor de mortalidade mais forte que muitos fatores de risco tradicionais. Treino de força reduz mortalidade por todas as causas em ~23% e previne sarcopenia."}, {"question": "O que é Zona 2 e por que é importante para longevidade?", "answer": "Zona 2 é a intensidade aeróbica moderada (65–75% da FC máxima) que maximiza a biogênese mitocondrial — aumentando o número e eficiência das mitocôndrias, biomarcador direto do ritmo de envelhecimento celular."}],
   tags: ["longevidade", "exercício e envelhecimento", "saúde span", "viver mais", "exercício preventivo"]
 },
 {
-  slug: "deficiencia-energia-atleta-RED-S-recuperacao",
+  slug: "deficiencia-energia-atleta-red-s-recuperacao",
   title: "RED-S: A Síndrome de Deficiência Energética em Atletas Que Ninguém Fala",
   metaTitle: "RED-S Deficiência de Energia Atleta | Sintomas e Recuperação",
   metaDescription: "RED-S (Relative Energy Deficiency in Sport) é a síndrome que afeta atletas que comem pouco demais para o volume de treino.",
@@ -43388,7 +43388,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/deficiencia-energia-atleta-RED-S-recuperacao-infographic.svg" alt="Infográfico sobre RED-S: A Síndrome de Deficiência Energética em Atletas Que Ninguém Fala — Montinho Personal Trainer" title="RED-S: A Síndrome de Deficiência Energética em Atletas Que N" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/deficiencia-energia-atleta-red-s-recuperacao-infographic.svg" alt="Infográfico sobre RED-S: A Síndrome de Deficiência Energética em Atletas Que Ninguém Fala — Montinho Personal Trainer" title="RED-S: A Síndrome de Deficiência Energética em Atletas Que N" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 <h2>A Disponibilidade Energética: O Conceito Central</h2>
 <p>A disponibilidade energética (DE) é calculada como:</p>
@@ -43516,8 +43516,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [{"question": "O que é RED-S e como saber se tenho?", "answer": "RED-S (Relative Energy Deficiency in Sport) ocorre quando a ingestão calórica não cobre os gastos do exercício e das funções vitais. Sinais: irregularidade menstrual (mulheres), libido baixa (homens), fraturas de estresse, piora de performance, fadiga e irritabilidade crônicas."}, {"question": "RED-S afeta homens também?", "answer": "Sim. Em homens, o RED-S suprime testosterona, libido e causa perda muscular e óssea. É frequentemente subdiagnosticado porque não causa amenorreia como nas mulheres."}, {"question": "Quanto tempo leva para se recuperar do RED-S?", "answer": "3 a 12 meses para restauração hormonal completa após normalização da disponibilidade energética. A densidade óssea pode levar ainda mais tempo e pode não ser totalmente recuperada em casos graves."}, {"question": "RED-S é a mesma coisa que tríade da atleta?", "answer": "Não exatamente. A tríade da atleta (distúrbio alimentar, amenorreia, osteoporose) é um modelo anterior e limitado às mulheres. O RED-S é um conceito mais amplo do COI que inclui ambos os sexos e um espectro mais completo de consequências."}, {"question": "Posso ter RED-S mesmo sem transtorno alimentar?", "answer": "Sim. Muitos atletas desenvolvem RED-S inadvertidamente ao aumentar volume de treino sem ajustar a ingestão calórica — sem qualquer componente psicológico de restrição intencional."}],
@@ -43661,8 +43661,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia (PubMed)</a>.</p>`,
   faq: [{"question": "O que é treinamento multimodal?", "answer": "É a abordagem que integra força, mobilidade articular, respiração e mindfulness de forma sistemática — desenvolvendo o atleta completo em vez de especializar em apenas uma capacidade física."}, {"question": "Mobilidade atrapalha os ganhos de força?", "answer": "Não. Na verdade, melhora. Maior amplitude articular permite técnica mais eficiente, maior carga segura e melhor ativação muscular nos exercícios de força. Atletas com boa mobilidade progridem mais rápido."}, {"question": "Posso adicionar mobilidade ao meu treino de musculação?", "answer": "Sim. 15–20 minutos de CARs (Controlled Articular Rotations) antes do treino e alongamento de mobilidade após. Sessões dedicadas de 45 minutos, 1–2x por semana, para benefícios mais expressivos."}, {"question": "Mindfulness realmente melhora a performance no treino?", "answer": "Sim. Foco consciente no músculo durante o exercício aumenta ativação eletromiográfica em 21–47%. Meditação regular melhora tolerância à dor, foco e regulação emocional em atletas."}, {"question": "Quanto tempo por dia devo dedicar à mobilidade?", "answer": "Mínimo de 15–20 minutos diários de CARs e trabalho de amplitude ativa. Sessões dedicadas de 45 minutos, 1–2x por semana, para progressão significativa de mobilidade articular."}],
@@ -43805,9 +43805,9 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>Ômega-3 para atletas em 2025 vai muito além da saúde cardíaca. EPA e DHA, nas doses corretas (2–4g/dia), promovem resolução ativa de inflamação pós-treino, melhoram a resposta de síntese proteica muscular, reduzem DOMS e potencializam função cognitiva. A chave está em: forma de alta biodisponibilidade, dose real (não simbólica), com refeição e consistência de uso por semanas a meses.</p>
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/proteina-para-ganhar-musculo">Proteína para Ganhar Músculo</a></li>
-<li><a href="/blog/carboidrato-no-treino">Carboidrato no Treino</a></li>
-<li><a href="/blog/como-calcular-macros">Como Calcular Macros</a></li>
+<li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Proteína para Ganhar Músculo</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato no Treino</a></li>
+<li><a href="/blog/deficit-calorico-como-calcular">Como Calcular Macros</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) — proteína e hipertrofia muscular (PubMed)</a>.</p>`,
   faq: [{"question": "Qual a dose certa de ômega-3 para atletas?", "answer": "2–4g de EPA+DHA por dia para benefícios de recuperação e síntese proteica. Verificar a quantidade real de EPA+DHA na embalagem — não confundir com o peso total da cápsula de óleo."}, {"question": "EPA ou DHA: qual é mais importante para atletas?", "answer": "Ambos. EPA foca na resolução ativa da inflamação pós-treino. DHA é essencial para função cognitiva, neuroproteção e integridade de membrana muscular. Use suplemento com ambos (idealmente 2:1 EPA:DHA)."}, {"question": "Ômega-3 ajuda a ganhar músculo?", "answer": "Sim. Estudos de Smith et al. (AJCN) mostram que 4g/dia de EPA+DHA por 8 semanas aumentou em 50% a resposta de síntese proteica muscular. Especialmente relevante para idosos e atletas em restrição calórica."}, {"question": "Óleo de peixe ou óleo de krill: qual escolher?", "answer": "Para custo-benefício em doses terapêuticas (3–4g EPA+DHA/dia), óleo de peixe de qualidade (forma rTriglicerídeo) é mais prático. Krill tem boa biodisponibilidade mas dose muito baixa por cápsula."}, {"question": "Quando tomar ômega-3 durante o dia?", "answer": "Com refeição contendo gordura para maximizar absorção. O horário exato importa menos que a consistência diária. O pós-treino pode ser interessante para coincidir com o estado inflamatório/anabólico pós-exercício."}],
@@ -43952,8 +43952,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume e frequência de treino para hipertrofia (PubMed)</a>.</p>`,
   faq: [{"question": "Como ativar o glúteo antes do treino de perna?", "answer": "Faça clamshell com band (2x15), ponte de glúteo com pausa isométrica (2x12), fire hydrant (2x15) e hip flexor stretch ativo (60s cada lado). Essa sequência inibe a dominância de flexores e maximiza o recrutamento glúteo."}, {"question": "O que é potenciação pós-ativação (PAP)?", "answer": "É o fenômeno pelo qual uma contração de alta intensidade aumenta temporariamente a força e potência subsequentes (por 4–10 minutos). Usado para maximizar performance em exercícios de força máxima ou potência."}, {"question": "Alongamento antes do treino atrapalha a performance?", "answer": "Sim. Alongamento estático passivo reduz temporariamente a produção de força. Antes do treino, prefira mobilidade ativa, CARs e exercícios de ativação específica. Reserve o alongamento passivo para depois."}, {"question": "Quanto tempo deve durar a ativação muscular pré-treino?", "answer": "10–15 minutos de ativação específica são suficientes para a maioria dos treinos. O objetivo é recrutar os neuromotores sem causar fadiga que comprometa as séries principais."}, {"question": "Iniciantes precisam de ativação muscular?", "answer": "Sim, e talvez mais que avançados. Iniciantes têm padrões de dominância muscular mais desequilibrados, tornando a ativação específica essencial para ativar os músculos corretos e reduzir compensações durante o treino."}],
@@ -44144,8 +44144,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
-<li><a href="/blog/sobrecarga-progressiva-guia-completo">Sobrecarga Progressiva: Guia Completo</a></li>
-<li><a href="/blog/frequencia-de-treino-ideal">Frequência de Treino Ideal para Hipertrofia</a></li>
+<li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
+<li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia (PubMed)</a>.</p>`,
   faq: [{"question": "Qual a diferença entre overtraining e sobretreinamento crônico (OTS)?", "answer": "Overreaching funcional é a sobrecarga planejada com recuperação em 1–2 semanas (normal). Overreaching não-funcional é a sobrecarga sem recuperação por semanas. OTS é a síndrome patológica com disfunção hormonal que pode levar meses a anos para recuperação completa."}, {"question": "Quais exames ajudam a diagnosticar sobretreinamento?", "answer": "Testosterona total, cortisol matinal, razão testosterona/cortisol (queda >30% é indicativo), IGF-1, DHEA-S, TSH, vitamina D e ferritina (para descartar outras causas). Não há um biomarcador único — o diagnóstico é de exclusão."}, {"question": "Quanto tempo leva para se recuperar do sobretreinamento crônico?", "answer": "Depende do estágio. Overreaching funcional: 1–2 semanas. Não-funcional: semanas a meses. OTS (síndrome completa): meses a anos. Em casos graves, a recuperação pode ser incompleta."}, {"question": "Posso continuar treinando com sobretreinamento?", "answer": "Não. O tratamento do OTS exige redução drástica de carga (descanso completo ou atividade muito leve) nas primeiras semanas. Continuar treinando perpetua a disfunção hormonal e prolonga a recuperação."}, {"question": "Como prevenir o sobretreinamento crônico?", "answer": "Periodização com deloads planejados (a cada 3–4 semanas), monitoramento diário de wellness (FC de repouso, HRV, humor), nutrição suficiente sem déficit crônico e sono de qualidade são os três pilares de prevenção."}],
@@ -45996,7 +45996,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <li><a href="/blog/cardapio-semanal-emagrecer-com-musculo">Cardápio Semanal para Emagrecer com Músculo</a></li>
 <li><a href="/blog/pre-treino-vale-a-pena">Pré-Treino (Suplemento) Vale a Pena?</a></li>
 <li><a href="/blog/treino-manha-ou-noite-qual-e-melhor">Treinar de Manhã ou à Noite: Qual é Melhor?</a></li>
-<li><a href="/blog/whey-protein-guia-completo">Whey Protein: Guia Completo</a></li>
+<li><a href="/blog/whey-protein-como-tomar">Whey Protein: Guia Completo</a></li>
 </ul>`,
   },
   {
@@ -46099,10 +46099,10 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/qualidade-do-sono-para-hipertrofia">Qualidade do Sono para Hipertrofia</a></li>
-<li><a href="/blog/cortisol-e-musculacao">Cortisol e Musculação: Como Controlar</a></li>
+<li><a href="/blog/sono-e-crescimento-muscular">Qualidade do Sono para Hipertrofia</a></li>
+<li><a href="/blog/cortisol-e-treino">Cortisol e Musculação: Como Controlar</a></li>
 <li><a href="/blog/sauna-recuperacao-muscular-ciencia">Sauna para Recuperação Muscular: A Ciência</a></li>
-<li><a href="/blog/treino-para-emagrecer">Treino para Emagrecer: Guia Completo</a></li>
+<li><a href="/blog/como-emagrecer-10-kg">Treino para Emagrecer: Guia Completo</a></li>
 </ul>`,
   },
   {
@@ -46216,7 +46216,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <li><a href="/blog/omega-3-musculacao">Ômega-3 para Musculação: Benefícios e Doses</a></li>
 <li><a href="/blog/sindrome-metabolica-e-exercicio">Síndrome Metabólica e Exercício</a></li>
 <li><a href="/blog/cardapio-semanal-emagrecer-com-musculo">Cardápio Semanal para Emagrecer com Músculo</a></li>
-<li><a href="/blog/hiit-para-emagrecer">HIIT para Emagrecer: Protocolo Completo</a></li>
+<li><a href="/blog/hiit-funciona">HIIT para Emagrecer: Protocolo Completo</a></li>
 </ul>`,
   },
   {
@@ -46324,9 +46324,9 @@ Mini-série 3: 3 reps → encerrar aqui (< 3 reps = fatigado demais)<br>
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/tecnicas-avancadas-de-treino">Técnicas Avançadas de Treino para Hipertrofia</a></li>
-<li><a href="/blog/volume-de-treino-para-hipertrofia">Volume de Treino: Quanto é Suficiente?</a></li>
+<li><a href="/blog/volume-de-treino-ideal">Volume de Treino: Quanto é Suficiente?</a></li>
 <li><a href="/blog/treino-abcd-para-hipertrofia">Treino ABCD para Hipertrofia</a></li>
-<li><a href="/blog/periodizacao-do-treino">Periodização do Treino: Guia Completo</a></li>
+<li><a href="/blog/periodizacao-de-treino">Periodização do Treino: Guia Completo</a></li>
 </ul>`,
   },
   {
@@ -46441,10 +46441,10 @@ Mini-série 3: 3 reps → encerrar aqui (< 3 reps = fatigado demais)<br>
 
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/treino-para-mulheres-iniciantes">Treino para Mulheres Iniciantes</a></li>
-<li><a href="/blog/treino-funcional-para-iniciantes">Treino Funcional para Iniciantes</a></li>
-<li><a href="/blog/como-perder-gordura-mantendo-musculo">Como Perder Gordura Mantendo Músculo</a></li>
-<li><a href="/blog/proteina-para-mulheres">Proteína para Mulheres: Quanto Precisa</a></li>
+<li><a href="/blog/hipertrofia-feminina">Treino para Mulheres Iniciantes</a></li>
+<li><a href="/blog/treino-funcional-vs-musculacao">Treino Funcional para Iniciantes</a></li>
+<li><a href="/blog/recomposicao-corporal">Como Perder Gordura Mantendo Músculo</a></li>
+<li><a href="/blog/suplementos-femininos-guia">Proteína para Mulheres: Quanto Precisa</a></li>
 </ul>`,
   },
   {
@@ -46586,8 +46586,8 @@ Mini-série 3: 3 reps → encerrar aqui (< 3 reps = fatigado demais)<br>
 <ul>
 <li><a href="/blog/treino-upper-lower-superior-inferior">Treino Upper/Lower: Guia Completo</a></li>
 <li><a href="/blog/treino-abcd-para-hipertrofia">Treino ABCD para Hipertrofia</a></li>
-<li><a href="/blog/treino-funcional-para-iniciantes">Treino Funcional para Iniciantes</a></li>
-<li><a href="/blog/como-montar-treino-em-casa">Como Montar Treino em Casa</a></li>
+<li><a href="/blog/treino-funcional-vs-musculacao">Treino Funcional para Iniciantes</a></li>
+<li><a href="/blog/treino-em-casa-sem-equipamento">Como Montar Treino em Casa</a></li>
 </ul>`,
   },
   {
@@ -46700,10 +46700,10 @@ Mini-série 3: 3 reps → encerrar aqui (< 3 reps = fatigado demais)<br>
 
 <h3>Leia Também</h3>
 <ul>
-<li><a href="/blog/personal-trainer-alphaville">Personal Trainer em Alphaville: Guia Completo</a></li>
+<li><a href="/personal-trainer-alphaville">Personal Trainer em Alphaville: Guia Completo</a></li>
 <li><a href="/blog/academia-em-condominio-como-aproveitar">Academia em Condomínio: Como Aproveitar ao Máximo</a></li>
-<li><a href="/blog/como-comecar-na-musculacao">Como Começar na Musculação: Guia para Iniciantes</a></li>
-<li><a href="/blog/avaliacao-fisica-para-que-serve">Avaliação Física: Para Que Serve e Como Funciona</a></li>
+<li><a href="/blog/primeira-semana-na-academia">Como Começar na Musculação: Guia para Iniciantes</a></li>
+<li><a href="/blog/personal-trainer-online-como-funciona">Avaliação Física: Para Que Serve e Como Funciona</a></li>
 </ul>`,
   }
 ,
