@@ -47,6 +47,136 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // Paginas locais de servico (SEO local) — antes ausentes do sitemap
+  const localPages: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE_URL}/academia-com-personal-trainer-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/melhor-personal-trainer-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-em-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-a-domicilio-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-alphaville`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-barueri`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-condominio-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-em-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-feminino-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-online-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-para-emagrecer-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-para-hipertrofia-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-para-idosos-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-para-iniciantes-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-para-reabilitacao-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-santana-de-parnaiba`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/personal-trainer-tambore-barueri`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/professor-de-musculacao-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/quanto-custa-personal-trainer-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/treinador-particular-tambore`,
+      lastModified: new Date("2026-06-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+  ];
+
   const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${SITE_URL}/blog/${post.slug}`,
     lastModified: new Date(post.updatedAt || post.date),
@@ -54,5 +184,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...blogPages];
+  return [...staticPages, ...localPages, ...blogPages];
 }
