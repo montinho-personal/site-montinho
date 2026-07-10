@@ -40,7 +40,7 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h3 className="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-5">
+            <h3 className="text-gray-300 text-xs font-semibold tracking-[0.15em] uppercase mb-5" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               Navegação
             </h3>
             <nav className="flex flex-col gap-3">
@@ -58,7 +58,7 @@ export default function Footer() {
 
           {/* Local Pages */}
           <div>
-            <h3 className="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-5">
+            <h3 className="text-gray-300 text-xs font-semibold tracking-[0.15em] uppercase mb-5" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               Atendimento Local
             </h3>
             <nav className="flex flex-col gap-3">
@@ -72,7 +72,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-5">
+            <h3 className="text-gray-300 text-xs font-semibold tracking-[0.15em] uppercase mb-5" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               Contato
             </h3>
             <div className="flex flex-col gap-4">
