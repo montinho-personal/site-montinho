@@ -27,8 +27,8 @@ export default function Footer() {
                   src="/logo.svg"
                   alt="Montinho Personal Trainer"
                   loading="lazy"
-                  className="absolute inset-0 w-full h-full object-contain object-center md:object-left"
-                  style={{ filter: "invert(1)" }}
+                  className="footer-logo"
+                  style={{ maxWidth: "100%", maxHeight: "100%" }}
                 />
               </div>
             </Link>

@@ -345,3 +345,19 @@ img {
   height: 100%;
   border: none;
 }
+
+/* Logo do rodapé: contido no contêiner; centralizado no mobile, à esquerda no desktop */
+.footer-logo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  filter: invert(1);
+}
+@media (min-width: 768px) {
+  .footer-logo {
+    object-position: left center;
+  }
+}
