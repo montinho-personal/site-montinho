@@ -19,14 +19,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-block mb-4">
-              <div className="relative h-16 w-40">
+            <Link href="/" className="block mb-4">
+              {/* Logo centralizado no mobile, alinhado à esquerda no desktop */}
+              <div className="relative h-16 w-40 mx-auto md:mx-0">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/logo.svg"
                   alt="Montinho Personal Trainer"
                   loading="lazy"
-                  style={{ position: "absolute", inset: 0, width: "100%", height: "100%", filter: "invert(1)", objectFit: "contain", objectPosition: "left center" }}
+                  className="absolute inset-0 w-full h-full object-contain object-center md:object-left"
+                  style={{ filter: "invert(1)" }}
                 />
               </div>
             </Link>
