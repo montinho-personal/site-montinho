@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { getWhatsAppUrl, WHATSAPP_NUMBER_DISPLAY } from "@/lib/whatsapp";
 
 const navLinks = [
@@ -22,11 +21,12 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-block mb-4">
               <div className="relative h-16 w-40">
-                <Image
-                  src="/Logo-final.png"
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/logo.svg"
                   alt="Montinho Personal Trainer"
-                  fill
-                  style={{ filter: "invert(1)", objectFit: "contain", objectPosition: "left center" }}
+                  loading="lazy"
+                  style={{ position: "absolute", inset: 0, width: "100%", height: "100%", filter: "invert(1)", objectFit: "contain", objectPosition: "left center" }}
                 />
               </div>
             </Link>
