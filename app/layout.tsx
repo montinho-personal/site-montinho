@@ -163,6 +163,13 @@ export default function RootLayout({
       className={`${dmSans.variable} ${playfair.variable}`}
     >
       <head>
+        {/* Google Tag Manager — o mais alto possível no <head> (snippet oficial) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TDKJMPMR');`,
+          }}
+        />
+        {/* End Google Tag Manager */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
@@ -177,11 +184,25 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col bg-black text-white antialiased">
+        {/* Google Tag Manager (noscript) — imediatamente após a abertura do <body> */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TDKJMPMR"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <Header />
         <main className="flex-1 pt-16 lg:pt-20">{children}</main>
         <Footer />
         <WhatsAppFloat />
         <CookieBanner />
+        {/* GA4 instalado diretamente (pré-GTM). Ao configurar a tag GA4 dentro
+            do GTM (GTM-TDKJMPMR), remover este bloco para evitar pageviews
+            duplicados. Futuras tags (Google Ads, Remarketing, Clarity, Meta
+            Pixel) devem ser adicionadas exclusivamente via GTM. */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-J1ZSPMDJZE"
           strategy="afterInteractive"
