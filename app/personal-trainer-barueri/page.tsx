@@ -24,7 +24,7 @@ const faq = [
   {
     question: "Você atende em qual parte de Barueri?",
     answer:
-      "Atendo principalmente na região de Alphaville, que pertence ao município de Barueri. Os atendimentos acontecem em academias da região, conforme a localização e preferência do aluno. Barueri tem boa cobertura de academias na área de Alphaville, Tamboré e adjacências.",
+      "Atendo em diversas regiões do município: Centro de Barueri, bairros residenciais próximos e, com forte presença, a região de Alphaville e Tamboré, que pertencem a Barueri. Os atendimentos acontecem em academias da cidade, em condomínios ou em domicílio, conforme a localização e a preferência do aluno.",
   },
   {
     question: "Personal trainer em Barueri atende em domicílio?",
@@ -44,7 +44,27 @@ const faq = [
   {
     question: "Você trabalha com emagrecimento em Barueri?",
     answer:
-      "Emagrecimento é um dos principais objetivos dos meus alunos. O protocolo combina treino de força — que preserva músculo e mantém o metabolismo elevado — com orientações nutricionais básicas alinhadas ao objetivo. O déficit calórico controlado, associado ao treino adequado, é o que produz resultado duradouro.",
+      "Emagrecimento é um dos principais objetivos dos meus alunos. O protocolo combina treino de força — que preserva músculo e mantém o metabolismo elevado — com orientações nutricionais básicas alinhadas ao objetivo. O déficit calórico controlado, associado ao treino adequado, é o que produz resultado duradouro na composição corporal.",
+  },
+  {
+    question: "Sou iniciante e nunca treinei. Consigo acompanhar?",
+    answer:
+      "Sim — e iniciantes costumam ser quem mais evolui no primeiro ano. O protocolo começa do seu ponto de partida real: aprendizado dos padrões de movimento, construção de base de força e mobilidade, e progressão de carga gradual. Ninguém precisa 'estar em forma' para começar; o treino é que se adapta a você.",
+  },
+  {
+    question: "Você atende idosos em Barueri?",
+    answer:
+      "Atendo, com adaptações específicas: foco em força, equilíbrio, mobilidade e prevenção de quedas, sempre com progressão cuidadosa e respeito às limitações individuais. Treinamento de força bem orientado é uma das melhores ferramentas de qualidade de vida e autonomia para essa fase.",
+  },
+  {
+    question: "Quantas vezes por semana preciso treinar para ver resultado?",
+    answer:
+      "Depende do objetivo e da rotina. Para a maioria das pessoas, 2 a 4 sessões semanais bem estruturadas produzem evolução consistente em força, condicionamento físico e composição corporal. Mais importante que a frequência isolada é a constância ao longo dos meses — e é isso que o acompanhamento ajuda a sustentar.",
+  },
+  {
+    question: "E se eu não puder treinar presencialmente com você?",
+    answer:
+      "Para quem tem rotina imprevisível — comum em quem trabalha em Barueri e transita para São Paulo — ofereço consultoria online, com protocolo individualizado, vídeos de execução e ajustes periódicos. Conheça os detalhes na página de consultoria ou fale comigo pelo WhatsApp.",
   },
 ];
 
@@ -128,7 +148,14 @@ export default function PersonalTrainerBarueri() {
               Moro e trabalho nessa região há mais de 20 anos. Vi Barueri evoluir em infraestrutura, em oferta de serviços, no perfil de quem escolhe morar aqui. E o que me mantém atuando na região todos esses anos não é localização — é resultado. Os alunos que chegam ficam porque o trabalho funciona.
             </p>
             <p>
-              Minha trajetória na musculação nasceu de experiência própria: anos convivendo com o excesso de peso, tentativas frustradas com protocolos genéricos e, por fim, a decisão de estudar de verdade o que a ciência diz sobre composição corporal. A transformação que vivi no meu próprio corpo é o fundamento de tudo que ofereço hoje — não uma teoria que aprendi num curso, mas algo que vivi e que sei replicar com método.
+              Minha trajetória na musculação nasceu de experiência própria: anos convivendo com o excesso de peso, tentativas frustradas com protocolos genéricos e, por fim, a decisão de estudar de verdade o que a ciência diz sobre composição corporal. Perdi mais de 40kg nesse processo —{" "}
+              <Link href="/minha-historia" className="underline hover:text-white transition-colors">
+                conto essa história aqui
+              </Link>
+              . A transformação que vivi no meu próprio corpo é o fundamento de tudo que ofereço hoje — não uma teoria que aprendi num curso, mas algo que vivi e que sei replicar com método refinado e validado na prática ao longo do atendimento de alunos.
+            </p>
+            <p>
+              E Barueri é uma cidade diversa: quem mora nos bairros residenciais próximos ao Centro, quem trabalha nas empresas da região, quem pega a CPTM na Estação Barueri (Linha 8) todos os dias para São Paulo, quem circula pela Castelo Branco entre Alphaville, Tamboré e as cidades vizinhas. Cada rotina pede um formato de treino diferente — e é exatamente por isso que o atendimento é flexível: em domicílio, na academia do seu condomínio ou em academias da cidade.
             </p>
           </div>
           <div className="mt-10 relative w-full overflow-hidden" style={{ height: "400px" }}>
@@ -234,6 +261,114 @@ export default function PersonalTrainerBarueri() {
                 <p className="text-gray-400 text-sm leading-relaxed font-light">{item.desc}</p>
               </div>
             ))}
+          </div>
+          <div className="mt-8 space-y-5 text-gray-400 leading-relaxed font-light">
+            <p>
+              Em todos os casos, o ponto de partida é a avaliação física e o desenho da periodização: quanto treinar, com que intensidade e como progredir. Quanto tempo até ver resultado? Em geral, as primeiras mudanças de disposição e força aparecem nas primeiras semanas; alterações visíveis de composição corporal e percentual de gordura costumam se consolidar entre o segundo e o quarto mês de constância. Sem prazos mágicos — com processo.
+            </p>
+            <p>
+              Se quiser se aprofundar antes de começar, dois artigos do blog ajudam:{" "}
+              <Link href="/blog/por-que-voce-nao-consegue-emagrecer" className="underline hover:text-white transition-colors">
+                por que você não consegue emagrecer
+              </Link>{" "}
+              e{" "}
+              <Link href="/blog/como-ganhar-massa-muscular" className="underline hover:text-white transition-colors">
+                como ganhar massa muscular
+              </Link>
+              . Ou vá direto ao ponto pela{" "}
+              <Link href="/contato" className="underline hover:text-white transition-colors">
+                página de contato
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ONDE E COMO ATENDO */}
+      <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Atendimento em Barueri
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Onde e como o treino acontece
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light">
+            <p>
+              Um personal trainer em Barueri precisa se adaptar à geografia da cidade. Quem mora perto do Centro tem uma rotina; quem vive em Alphaville ou no Tamboré, outra; quem depende da Linha 8 da CPTM ou da Castelo Branco para trabalhar em São Paulo, outra ainda. O formato do atendimento respeita isso:
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-4 mt-8">
+            {[
+              { obj: "Em domicílio", desc: "Levo o treino até você. Com o espaço e o equipamento certos — muitas vezes menos do que se imagina — dá para construir força, mobilidade e condicionamento em casa, sem deslocamento." },
+              { obj: "No seu condomínio", desc: "Muitos condomínios de Barueri têm espaço fitness bem equipado. Treinar ali elimina a principal barreira da constância: o trajeto até a academia." },
+              { obj: "Em academias da cidade", desc: "Acompanhamento presencial em academias de Barueri, do Centro à região de Alphaville e Tamboré, conforme a estrutura que seu objetivo exige." },
+              { obj: "Consultoria online", desc: "Para quem viaja ou tem horários imprevisíveis: protocolo individualizado, vídeos de execução e ajustes periódicos, com a mesma lógica do presencial." },
+            ].map((item, i) => (
+              <div key={i} className="border border-white/10 p-5">
+                <p className="text-white font-semibold mb-2">{item.obj}</p>
+                <p className="text-gray-400 text-sm leading-relaxed font-light">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 space-y-5 text-gray-300 leading-relaxed font-light">
+            <p>
+              Também atendo nas cidades e regiões vizinhas — conheça as páginas de{" "}
+              <Link href="/personal-trainer-alphaville" className="underline hover:text-white transition-colors">
+                Alphaville
+              </Link>
+              ,{" "}
+              <Link href="/personal-trainer-tambore" className="underline hover:text-white transition-colors">
+                Tamboré
+              </Link>{" "}
+              e{" "}
+              <Link href="/personal-trainer-santana-de-parnaiba" className="underline hover:text-white transition-colors">
+                Santana de Parnaíba
+              </Link>
+              . E para quem prefere começar à distância, a{" "}
+              <Link href="/consultoria" className="underline hover:text-white transition-colors">
+                consultoria online
+              </Link>{" "}
+              é o caminho.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* DORES E LIMITAÇÕES */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Dores e limitações
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Treinar com dor não é normal — e não precisa ser sua realidade
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light">
+            <p>
+              Boa parte das pessoas que me procuram em Barueri chega com alguma queixa: dor lombar, incômodo no joelho, ombro que trava, postura desgastada por anos de escritório e trânsito. Muitas já ouviram que deveriam "parar de treinar" — quando, na maioria dos casos, o caminho é o oposto: treinar certo.
+            </p>
+            <p>
+              Fiz cursos voltados especificamente para o treinamento de pessoas com dores e limitações musculoesqueléticas. E, mais do que isso, vivi na pele dores comuns ao longo da minha própria trajetória de treinos — o que aumenta minha compreensão real das dificuldades de quem chega nessa condição.
+            </p>
+            <p>
+              A metodologia une conhecimento técnico, experiência prática e acompanhamento individualizado para que você treine com segurança e eficiência: seleção criteriosa de exercícios, ajustes de amplitude, fortalecimento progressivo, trabalho de mobilidade e flexibilidade, e atenção constante à execução — sempre com foco em prevenção de lesões e recuperação muscular adequada. Se o tema é dor nas costas, escrevi sobre{" "}
+              <Link href="/blog/dor-lombar-na-musculacao" className="underline hover:text-white transition-colors">
+                dor lombar na musculação
+              </Link>{" "}
+              no blog. E para quem está em fase mais madura da vida, vale ler sobre{" "}
+              <Link href="/blog/treino-funcional-para-idosos" className="underline hover:text-white transition-colors">
+                treino funcional para idosos
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </section>
