@@ -38,6 +38,12 @@ const nextConfig: NextConfig = {
       { source: "/blog/como-calcular-deficit-calorico", destination: "/blog/deficit-calorico-como-calcular", permanent: true },
       { source: "/blog/gordura-localizada-mitos-verdades", destination: "/blog/gordura-localizada-mitos-e-fatos", permanent: true },
       { source: "/blog/personal-trainer-alphaville", destination: "/personal-trainer-alphaville", permanent: true },
+      // Consolidação Tamboré: artigos de blog duplicados de páginas fixas
+      { source: "/blog/personal-trainer-a-domicilio-tambore", destination: "/personal-trainer-a-domicilio-tambore", permanent: true },
+      { source: "/blog/professor-de-musculacao-tambore", destination: "/professor-de-musculacao-tambore", permanent: true },
+      { source: "/blog/treinador-particular-tambore-blog", destination: "/treinador-particular-tambore", permanent: true },
+      { source: "/blog/personal-trainer-em-condominio-tambore", destination: "/personal-trainer-condominio-tambore", permanent: true },
+      { source: "/blog/personal-trainer-para-condominio-tambore", destination: "/personal-trainer-condominio-tambore", permanent: true },
       { source: "/blog/como-emagrecer-com-deficit-calorico", destination: "/blog/deficit-calorico-como-calcular", permanent: true },
       { source: "/blog/levantamento-terra-tecnica-correta", destination: "/blog/como-fazer-levantamento-terra-corretamente", permanent: true },
       { source: "/blog/suplementos-que-realmente-funcionam", destination: "/blog/suplementos-femininos-guia", permanent: true },
