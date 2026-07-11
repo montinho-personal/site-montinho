@@ -81,6 +81,10 @@ const localSchema = {
     { "@type": "City", name: "Barueri" },
     { "@type": "Neighborhood", name: "Alphaville" },
     { "@type": "Neighborhood", name: "Tamboré" },
+    { "@type": "Neighborhood", name: "Centro de Barueri" },
+    { "@type": "Neighborhood", name: "Jardim Belval" },
+    { "@type": "Neighborhood", name: "Jardim dos Camargos" },
+    { "@type": "Neighborhood", name: "Vila Porto" },
   ],
   serviceType: "Personal Trainer",
   priceRange: "$$",
@@ -334,6 +338,101 @@ export default function PersonalTrainerBarueri() {
                 consultoria online
               </Link>{" "}
               é o caminho.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ÁREA DE ATENDIMENTO */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Área de atendimento
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Bairros e regiões de Barueri onde atendo
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light">
+            <p>
+              O atendimento cobre o município de ponta a ponta: Centro de Barueri, Jardim Belval, Jardim dos Camargos, Vila Porto e os bairros residenciais do entorno, além da região de Alphaville e do Tamboré. Como Barueri é compacta e bem conectada, o deslocamento entre essas áreas raramente é um obstáculo.
+            </p>
+            <p>
+              As principais vias facilitam a logística das sessões: a Rodovia Castelo Branco liga Alphaville e Tamboré ao restante da cidade e às vizinhas Santana de Parnaíba e Osasco; a Estrada Velha de Itapevi atende os bairros mais próximos ao Centro; e a Estação Barueri da Linha 8 da CPTM é referência para quem organiza o treino em torno do trajeto ao trabalho. Do Centro até Alphaville ou Tamboré, o percurso de carro leva cerca de 10 a 15 minutos, dependendo do trânsito — e entre Alphaville, Tamboré e Santana de Parnaíba, tipicamente 5 a 15 minutos.
+            </p>
+            <p>
+              Na prática, isso significa que consigo montar uma agenda estável para você, seja no seu bairro, na academia onde já treina ou no condomínio onde mora.
+            </p>
+          </div>
+
+          <h3 className="text-white font-semibold text-xl mt-10 mb-4">Condomínios de Alphaville e Tamboré</h3>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light">
+            <p>
+              Boa parte dos meus alunos em Barueri mora nos residenciais de Alphaville e do Tamboré e treina no espaço fitness do próprio condomínio ou em casa. Escrevi guias específicos sobre como funciona o treino no{" "}
+              <Link href="/blog/personal-trainer-tambore-1" className="underline hover:text-white transition-colors">
+                Tamboré 1
+              </Link>{" "}
+              e no{" "}
+              <Link href="/blog/personal-trainer-alphaville-residencial-1" className="underline hover:text-white transition-colors">
+                Alphaville Residencial 1
+              </Link>
+              , e a mesma lógica vale para os demais residenciais das duas regiões: avaliação no local, protocolo ajustado ao equipamento disponível e acompanhamento presencial sem que você precise sair do condomínio.
+            </p>
+          </div>
+
+          <h3 className="text-white font-semibold text-xl mt-10 mb-4">Academias de Barueri onde posso te acompanhar</h3>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light">
+            <p>
+              Se você prefere treinar em academia, acompanho alunos nas principais unidades da cidade. Já analisei em detalhe a{" "}
+              <Link href="/blog/smart-fit-barueri" className="underline hover:text-white transition-colors">
+                Smart Fit Barueri
+              </Link>
+              , a{" "}
+              <Link href="/blog/bluefit-barueri" className="underline hover:text-white transition-colors">
+                Bluefit Barueri
+              </Link>
+              , a{" "}
+              <Link href="/blog/academia-gavioes-barueri" className="underline hover:text-white transition-colors">
+                Academia Gaviões
+              </Link>{" "}
+              e a{" "}
+              <Link href="/blog/redfit-barueri" className="underline hover:text-white transition-colors">
+                RedFit Barueri
+              </Link>{" "}
+              — estrutura, equipamentos e para qual perfil de treino cada uma funciona melhor. Se você já é aluno de alguma delas, o protocolo é montado em cima do equipamento que a unidade oferece; se ainda vai escolher, ajudo a decidir com base no seu objetivo e na sua rotina.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* PERFIL E DICAS */}
+      <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Treinar em Barueri
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Quem treina comigo em Barueri — e como aproveitar melhor a cidade
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light">
+            <p>
+              Barueri é uma cidade de perfis muito diferentes convivendo lado a lado. Atendo trabalhadores locais que buscam disposição para dar conta do dia; profissionais que passam horas entre CPTM, Castelo Branco e escritório em São Paulo e chegam com pouco tempo e postura castigada; e moradores de condomínio em Alphaville e no Tamboré, muitos deles executivos e famílias que priorizam praticidade e privacidade no treino. Os objetivos mais comuns refletem essas rotinas: emagrecimento, hipertrofia, correção de{" "}
+              <Link href="/blog/postura-trabalho-sentado-exercicios" className="underline hover:text-white transition-colors">
+                postura desgastada pelo trabalho sentado
+              </Link>{" "}
+              e recuperação de condicionamento físico depois de anos parado.
+            </p>
+            <p>
+              Algumas dicas práticas para quem treina na cidade: nas academias de Barueri, os horários mais tranquilos costumam ser meio da manhã e início da tarde — fora dos picos de antes do expediente e do fim do dia, quando as unidades do Centro e do entorno da estação enchem. Se o seu condomínio tem espaço fitness, ele é provavelmente sua melhor arma contra a inconstância: trajeto zero. E, quando o clima ajuda, áreas verdes e parques municipais podem complementar o treino com caminhadas e trabalho de condicionamento ao ar livre. Antes de qualquer sessão, vale dedicar minutos à{" "}
+              <Link href="/blog/mobilidade-articular-pre-treino" className="underline hover:text-white transition-colors">
+                mobilidade articular no pré-treino
+              </Link>{" "}
+              — pequeno investimento, grande retorno em segurança e desempenho.
             </p>
           </div>
         </div>
