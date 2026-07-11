@@ -24,7 +24,22 @@ const faq = [
   {
     question: "Personal trainer atende dentro dos condomínios de Tamboré?",
     answer:
-      "Dependendo da estrutura do condomínio, sim. Alguns condomínios de Tamboré têm academias ou espaços fitness próprios onde é possível realizar o atendimento. Avaliamos a estrutura disponível antes de definir o local mais adequado para as sessões.",
+      "Sim. Boa parte dos residenciais de Tamboré — do Tamboré 1 ao 11 e condomínios vizinhos — conta com espaço fitness próprio ou áreas comuns adequadas ao treino. Também atendo na própria residência do aluno ou em academias próximas ao condomínio. Avaliamos a estrutura disponível antes de definir o local mais adequado para as sessões.",
+  },
+  {
+    question: "Quanto custa um personal trainer em Tamboré?",
+    answer:
+      "O valor depende do formato (residência, espaço fitness do condomínio ou academia), da frequência semanal e do nível de acompanhamento. Como cada protocolo é individual, prefiro conversar primeiro sobre o seu objetivo e a sua rotina para apresentar uma proposta justa — sem tabela genérica. É só chamar no WhatsApp.",
+  },
+  {
+    question: "Quantas vezes por semana devo treinar para ter resultado?",
+    answer:
+      "Para a maioria dos alunos, 2 a 4 sessões semanais bem periodizadas são suficientes para evoluir força, composição corporal e condicionamento físico. Os primeiros sinais aparecem nas primeiras semanas; mudanças consistentes de percentual de gordura e massa muscular costumam se consolidar entre 3 e 6 meses de constância.",
+  },
+  {
+    question: "Atende iniciantes e pessoas acima dos 60 anos em Tamboré?",
+    answer:
+      "Sim, e com frequência. Para iniciantes, o foco inicial é técnica, mobilidade e construção de hábito. Para alunos mais velhos, o treino prioriza força, equilíbrio, postura e autonomia — sempre com progressão de carga respeitando o ponto de partida de cada um.",
   },
   {
     question: "Qual a diferença entre personal trainer em Tamboré e em Alphaville?",
@@ -37,14 +52,14 @@ const faq = [
       "Sim. Trabalho frequentemente com alunos que têm histórico de lombalgia, problemas no joelho, hérnia de disco, tendinites e outras condições que limitam certos movimentos. O protocolo é adaptado para contornar as restrições, mantendo progressão e resultado dentro do que é seguro para cada caso.",
   },
   {
-    question: "Como começar a treinar com personal trainer em Tamboré?",
-    answer:
-      "O primeiro passo é uma conversa pelo WhatsApp para entender seu objetivo, rotina e disponibilidade. Depois, marcamos uma avaliação inicial para montar o protocolo. A partir daí, as sessões presenciais começam — sem longa burocracia, sem formulários intermináveis.",
-  },
-  {
     question: "Personal trainer em Tamboré funciona para quem tem pouco tempo disponível?",
     answer:
       "Funciona justamente para esse perfil. Treino eficiente com acompanhamento profissional produz mais resultado em 3 sessões semanais bem estruturadas do que em 5 sessões sem método. A questão não é quanto tempo você tem — é o que fazemos com o tempo disponível.",
+  },
+  {
+    question: "Você também oferece consultoria online para quem viaja muito?",
+    answer:
+      "Sim. Muitos moradores de Tamboré alternam presencial e online por causa de viagens de trabalho. A consultoria online mantém protocolo individualizado, ajustes periódicos e suporte pelo WhatsApp — e pode ser combinada com sessões presenciais quando você está em casa.",
   },
 ];
 
@@ -95,7 +110,7 @@ export default function PersonalTrainerTambore() {
             Personal Trainer em Tamboré: treino que cabe na rotina de quem mora aqui.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Tamboré é um bairro residencial com ritmo próprio — mais tranquilo, mais familiar, mais próximo. Meu trabalho respeita esse contexto: acompanhamento próximo, sem pressa e com a atenção que quem vive aqui valoriza.
+            Tamboré é uma região de condomínios de alto padrão entre Barueri e Santana de Parnaíba, vizinha imediata de Alphaville — com ritmo próprio, mais tranquilo e familiar. Meu trabalho respeita esse contexto: treino na sua residência, no espaço fitness do condomínio ou em academia próxima, com acompanhamento próximo e a atenção que quem vive aqui valoriza.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -128,7 +143,29 @@ export default function PersonalTrainerTambore() {
               Sou da região há mais de 20 anos. Conheço os condomínios, as academias, as ruas, os horários de pico. Quando monto um protocolo para um morador de Tamboré, não estou imaginando um ambiente genérico — estou pensando na realidade local: academia de condomínio com equipamento limitado, horário de treino espremido entre a saída dos filhos para a escola e o início do expediente, o almoço em casa que é uma oportunidade de comer bem.
             </p>
             <p>
-              Comecei na musculação pela mesma razão que muitos dos meus alunos hoje: insatisfação com o próprio corpo e uma longa sequência de métodos que prometiam muito e entregavam frustração. O que mudou foi quando parei de buscar atalho e passei a entender de fato como o corpo funciona. Essa virada foi o começo do meu trabalho como personal trainer — e é o que guia cada protocolo que monto até hoje.
+              A região dos Residenciais Tamboré 1 a 11 se estende entre Barueri e Santana de Parnaíba, colada em Alphaville, com o Shopping Tamboré como referência de todo mundo que circula por aqui. É um dos endereços de mais alto padrão da Grande São Paulo — e um dos que mais concentram alunos meus. O deslocamento curto entre os residenciais me permite atender em horários que realmente cabem na sua agenda.
+            </p>
+            <p>
+              Comecei na musculação pela mesma razão que muitos dos meus alunos hoje: insatisfação com o próprio corpo e uma longa sequência de métodos que prometiam muito e entregavam frustração. Fui obeso, perdi mais de 40kg — conto essa trajetória em{" "}
+              <Link href="/minha-historia" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
+                minha história
+              </Link>
+              . O que mudou foi quando parei de buscar atalho e passei a entender de fato como o corpo funciona. Essa virada foi o começo do meu trabalho como personal trainer — e, somada a mais de 20 anos de musculação, cursos e especializações em treinamento, é o que guia cada protocolo que monto até hoje.
+            </p>
+            <h3 className="text-white font-semibold text-lg pt-2">Onde acontecem as sessões em Tamboré</h3>
+            <p>
+              O formato se adapta à sua realidade de condomínio fechado: treino na sua residência (com ou sem equipamentos), no espaço fitness do próprio condomínio ou em academias próximas aos residenciais. Em todos os casos, o protocolo contempla musculação, treinamento funcional, mobilidade e condicionamento físico — a estrutura disponível muda a ferramenta, não a qualidade do trabalho.
+            </p>
+            <p>
+              Tenho conteúdo dedicado a vários residenciais da região — como o{" "}
+              <Link href="/blog/personal-trainer-tambore-1" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
+                Tamboré 1
+              </Link>{" "}
+              e as{" "}
+              <Link href="/blog/personal-trainer-quintas-de-tambore" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
+                Quintas de Tamboré
+              </Link>
+              . Se você mora em outro condomínio da região, o atendimento funciona da mesma forma.
             </p>
           </div>
           <div className="mt-10" style={{ maxWidth: "220px" }}>
@@ -214,6 +251,94 @@ export default function PersonalTrainerTambore() {
               className="object-cover object-top"
               sizes="(max-width: 768px) 100vw, 896px"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* DORES E LIMITAÇÕES */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Treino com segurança
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Dores e limitações não precisam te afastar do treino
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light">
+            <p>
+              Uma parte importante dos meus alunos em Tamboré chega com alguma dor ou limitação musculoesquelética: lombar que trava, joelho que reclama na escada, ombro que impede certos movimentos. Fiz cursos voltados especificamente para o treinamento de pessoas com dores e limitações — e, ao longo da minha própria trajetória de treinos, também vivenciei várias dessas dores. Sei, na prática, o quanto elas minam a motivação.
+            </p>
+            <p>
+              Minha metodologia une conhecimento técnico, experiência prática e acompanhamento individualizado para que você treine com segurança e eficiência. Em vez de excluir o treino, adaptamos: seleção de exercícios, amplitude, progressão de carga e trabalho de mobilidade e postura entram no protocolo para fortalecer o que precisa ser fortalecido e prevenir novas lesões. É um método refinado e validado na prática ao longo do atendimento de alunos.
+            </p>
+            <p>
+              Se esse é o seu caso, dois conteúdos podem ajudar antes mesmo da primeira conversa:{" "}
+              <Link href="/blog/dor-lombar-na-musculacao" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
+                dor lombar na musculação
+              </Link>{" "}
+              e{" "}
+              <Link href="/blog/treino-funcional-para-idosos" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
+                treino funcional para idosos
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* OBJETIVOS E REGIÃO */}
+      <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Objetivos e região
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Do emagrecimento à hipertrofia: o que os moradores de Tamboré buscam
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light">
+            <p>
+              Os objetivos mais comuns por aqui são emagrecimento e melhora da composição corporal, hipertrofia, ganho de força e resistência, correção de postura e mais qualidade de vida no dia a dia. Tudo começa com uma avaliação física — medidas, percentual de gordura, histórico e limitações — e vira um protocolo com periodização clara, reavaliado mês a mês. Sem promessa milagrosa: prazos realistas, progressão consistente e recuperação muscular respeitada.
+            </p>
+            <p>
+              Dois conteúdos que costumo indicar já na primeira conversa:{" "}
+              <Link href="/blog/por-que-voce-nao-consegue-emagrecer" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
+                por que você não consegue emagrecer
+              </Link>{" "}
+              e{" "}
+              <Link href="/blog/como-ganhar-massa-muscular" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
+                como ganhar massa muscular
+              </Link>
+              .
+            </p>
+            <p>
+              E como Tamboré fica no meio do caminho de tudo, também atendo nas regiões vizinhas:{" "}
+              <Link href="/personal-trainer-alphaville" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
+                Alphaville
+              </Link>
+              ,{" "}
+              <Link href="/personal-trainer-barueri" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
+                Barueri
+              </Link>{" "}
+              e{" "}
+              <Link href="/personal-trainer-santana-de-parnaiba" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
+                Santana de Parnaíba
+              </Link>
+              . Se preferir entender o formato do acompanhamento antes, veja a página de{" "}
+              <Link href="/consultoria" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
+                consultoria
+              </Link>{" "}
+              ou fale comigo pela página de{" "}
+              <Link href="/contato" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
+                contato
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </section>

@@ -16103,7 +16103,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       {
         question: "Preciso estar matriculado em alguma academia para ter personal trainer no Residencial 1?",
         answer:
-          "Não. Atendo na academia do condomínio, em academia parceira na região ou a domicílio, conforme a preferência e a disponibilidade do aluno. A matrícula em academia específica não é necessária.",
+          "Não. Atendo no espaço fitness do residencial (quando disponível), em academia parceira próxima ou na sua casa, conforme a preferência e a disponibilidade do aluno. A matrícula em academia específica não é necessária.",
       },
       {
         question: "Como começa o atendimento com personal trainer no Alphaville Residencial 1?",
@@ -16117,50 +16117,76 @@ RIR 3 = parou com 3 reps sobrando.</p>
       },
     ],
     faqSchema: [
-      { question: "O que faz um personal trainer?", answer: "Um personal trainer avalia o condicionamento físico, define objetivos realistas, prescreve e supervisiona treinos individualizados e acompanha a evolução ao longo do tempo. O acompanhamento profissional aumenta significativamente a adesão e os resultados." },
-      { question: "Quantas sessões por semana com personal trainer são ideais?", answer: "Para iniciantes, 3 sessões semanais com personal trainer são ideais para aprender a técnica correta e criar consistência. Alunos mais avançados podem treinar com frequência maior, usando o personal para sessões-chave e monitoramento da periodização." },
-      { question: "Personal trainer presencial ou online: qual escolher?", answer: "O personal presencial oferece correção de execução em tempo real, ideal para iniciantes e quem tem histórico de lesões. O online é mais flexível e acessível. A escolha depende do objetivo, experiência prévia e disponibilidade de horário." },
-      { question: "Quanto tempo leva para ver resultados com personal trainer?", answer: "Com treino consistente e nutrição adequada, os primeiros resultados de composição corporal aparecem em 4 a 8 semanas. Resultados significativos na força e desempenho são perceptíveis em 8 a 12 semanas para iniciantes." },
-      { question: "Como escolher um bom personal trainer?", answer: "Busque profissionais com graduação em Educação Física, experiência comprovada com o seu perfil de objetivo, metodologia baseada em evidências científicas e que priorizem sua individualidade. Avalie também comunicação, disponibilidade e compatibilidade de método." }
+      { question: "Quanto custa um personal trainer no Alphaville Residencial 1?", answer: "O investimento varia conforme a frequência semanal, o formato de atendimento (residencial, espaço fitness ou academia próxima) e o nível de acompanhamento. O valor é apresentado após uma conversa inicial, porque o plano é montado sob medida para cada aluno — entre em contato pelo WhatsApp para receber uma proposta personalizada." },
+      { question: "O personal trainer atende dentro do Alphaville Residencial 1?", answer: "Sim. O atendimento pode acontecer na sua casa, no espaço fitness ou nas áreas comuns do residencial (quando o condomínio dispõe dessas estruturas) ou em academia próxima ao Residencial 1. O formato é definido junto com o aluno, de acordo com rotina e preferência." },
+      { question: "Dá para treinar em casa no Residencial 1 sem equipamentos de academia?", answer: "Sim. Com um kit básico de halteres, elásticos e o peso do próprio corpo é possível estruturar um treino completo de força, mobilidade e condicionamento. Conforme a evolução, o protocolo pode migrar para o espaço fitness do residencial ou para uma academia próxima, se fizer sentido para o objetivo." },
+      { question: "Quantas vezes por semana devo treinar com personal trainer?", answer: "Para a maioria dos moradores, 2 a 3 sessões semanais acompanhadas geram excelente progresso, especialmente quando combinadas com orientação para os dias de treino autônomo. Iniciantes se beneficiam de mais supervisão no início para consolidar a técnica correta." },
+      { question: "O personal trainer atende iniciantes que nunca treinaram?", answer: "Sim, e é um dos perfis mais frequentes. O início é gradual: avaliação física, aprendizado dos padrões de movimento, progressão de carga controlada e construção de hábitos saudáveis. Ninguém precisa 'estar em forma' para começar — o treino é ajustado ao seu ponto de partida." },
+      { question: "Há acompanhamento para idosos no Alphaville Residencial 1?", answer: "Sim. O treinamento para terceira idade prioriza força, equilíbrio, mobilidade e autonomia, com atenção especial a limitações articulares e histórico de saúde. O atendimento residencial é o formato preferido de muitos alunos mais velhos do residencial, pelo conforto e pela segurança." },
+      { question: "Quem tem dor nas costas ou no joelho pode treinar?", answer: "Pode e, na maioria dos casos, deve. Com avaliação criteriosa e exercícios adaptados, o treino de força bem orientado ajuda a fortalecer a musculatura de suporte, melhorar a postura e reduzir o impacto das dores no dia a dia, sempre respeitando limites individuais e orientações médicas quando existirem." },
+      { question: "Existe opção de consultoria online para quem viaja com frequência?", answer: "Sim. A consultoria online inclui protocolo individualizado, ajustes periódicos e suporte à distância — ideal para moradores do Residencial 1 com agenda de viagens. Também há o formato híbrido, que combina sessões presenciais no residencial com acompanhamento remoto." }
     ],
     content: `
-<p>Alphaville Residencial 1 é um dos endereços mais tradicionais de Alphaville. O condomínio combina infraestrutura consolidada com o perfil de morador que não aceita resultado mediano — nem no trabalho, nem na saúde.</p>
+<p>O Alphaville Residencial 1 é um dos primeiros residenciais implantados em Alphaville, em Barueri — um endereço que carrega a história do próprio bairro planejado. Quem mora aqui escolheu tradição, arborização e uma localização privilegiada, a poucos minutos do centro comercial de Alphaville. E, em geral, quem faz essa escolha não aceita resultado mediano em nenhuma área da vida — muito menos na saúde.</p>
 
 
 
 <figure style="margin:2rem 0">
   <img src="/blog-images/personal-trainer-alphaville-residencial-1-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 1: Protocolo Individualizado para Que — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 1: Protocolo Indi" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
-<p>Treinar com um <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a> que conhece essa realidade faz diferença concreta no resultado. Não porque o profissional vive no bairro, mas porque entende a rotina, o perfil e as demandas de quem mora aqui.</p>
+<p>Treinar com um <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a> que conhece essa realidade faz diferença concreta no resultado. Não porque o profissional vive no bairro, mas porque entende a rotina, o perfil e as demandas de quem mora aqui: agenda apertada, deslocamentos frequentes e a expectativa de que cada hora investida gere retorno mensurável.</p>
+
+<h2>O que faz um personal trainer no Alphaville Residencial 1</h2>
+
+<p>Na prática, o trabalho vai muito além de contar repetições. O processo começa com uma avaliação física completa: composição corporal, percentual de gordura, histórico de lesões, padrões de movimento, postura e nível atual de força e condicionamento físico. É esse diagnóstico que define o ponto de partida real — não uma ficha genérica.</p>
+
+<p>A partir daí, entra a periodização: o planejamento das fases do treino ao longo das semanas e meses, com progressão de carga estruturada, controle de volume e reavaliações periódicas. Musculação, treinamento funcional, trabalho de mobilidade e flexibilidade e condicionamento cardiovascular são combinados conforme o objetivo — emagrecimento, hipertrofia, resistência ou simplesmente mais qualidade de vida.</p>
 
 <h2>Treino individualizado: o que isso significa na prática no Residencial 1</h2>
 
 <p>Individualizado não é um adjetivo de marketing — é uma descrição técnica. Significa que o seu protocolo de treino foi construído com base nas suas características específicas: composição corporal atual, histórico de lesões, disponibilidade de treino, objetivo real e resposta individual ao estímulo.</p>
 
-<p>O oposto é a ficha genérica da academia, usada por dezenas de pessoas diferentes ao mesmo tempo, sem avaliação, sem progressão estruturada e sem ninguém corrigindo a execução. Para moradores do Residencial 1 que já tentaram isso e não viram resultado, a diferença com acompanhamento profissional é imediata.</p>
+<p>O oposto é a ficha genérica, usada por dezenas de pessoas diferentes ao mesmo tempo, sem avaliação, sem progressão estruturada e sem ninguém corrigindo a execução. Para moradores do Residencial 1 que já tentaram treinar sozinhos e não viram resultado, a diferença com acompanhamento individualizado é imediata: cada sessão tem propósito, cada exercício tem justificativa e cada ajuste responde ao que o seu corpo mostrou na prática.</p>
 
 <h2>Como a ciência do treino evoluiu — e como isso muda o resultado</h2>
 
 <p>O conhecimento sobre hipertrofia, emagrecimento e longevidade muscular avançou muito nas últimas duas décadas. O que era prescrito como ideal em 2005 mudou significativamente com base em pesquisas sólidas. Personal trainer que atualiza o método continuamente entrega resultado que o de 2005 não entregava.</p>
 
-<p>Trabalho com método baseado na ciência mais atual: <a href="https://pubmed.ncbi.nlm.nih.gov/24734894/" target="_blank" rel="noopener noreferrer">sobrecarga progressiva estruturada, volume adequado</a> por grupo muscular, execução biomecânica correta e periodização planejada. Nada de modismos. Nada de protocolos sem evidência.</p>
+<p>Trabalho com método refinado e validado na prática ao longo do atendimento de alunos, apoiado na ciência mais atual: <a href="https://pubmed.ncbi.nlm.nih.gov/24734894/" target="_blank" rel="noopener noreferrer">sobrecarga progressiva estruturada, volume adequado</a> por grupo muscular, execução biomecânica correta e periodização planejada. Nada de modismos. Nada de protocolos sem evidência.</p>
+
+<h3>Prazos realistas: quando o resultado aparece</h3>
+
+<p>Com consistência de 2 a 3 sessões semanais e alimentação minimamente organizada, as primeiras mudanças de disposição e força surgem nas primeiras semanas. Alterações visíveis de composição corporal costumam aparecer entre 8 e 12 semanas. Prometer menos que isso seria desonesto; entregar um caminho claro até lá é exatamente o papel do acompanhamento profissional.</p>
+
+<h2>Dores e limitações: treinar com segurança é possível</h2>
+
+<p>Boa parte dos alunos chega com alguma queixa: dor lombar, desconforto no joelho, ombro que trava, limitações posturais acumuladas por anos de trabalho sentado. Tenho cursos voltados especificamente para o treinamento de pessoas com dores e limitações musculoesqueléticas — e, mais do que isso, já vivenciei dores comuns ao longo da minha própria trajetória de treinos, o que aumenta a compreensão real das dificuldades de cada aluno.</p>
+
+<p>A metodologia une conhecimento técnico, experiência prática e acompanhamento individualizado para que você treine com segurança e eficiência: seleção criteriosa de exercícios, fortalecimento da musculatura de suporte, trabalho de mobilidade e prevenção de lesões integrados ao protocolo. Se a dor lombar é a sua barreira, vale ler o artigo sobre <a href="/blog/dor-lombar-na-musculacao">dor lombar na musculação</a>.</p>
 
 <h2>História: de onde vem a empatia que orienta o meu trabalho</h2>
 
-<p>Convivi com obesidade por anos antes de entender como o corpo realmente funciona. Esse caminho — do excesso de peso ao método científico aplicado — é o que me dá não apenas conhecimento técnico, mas empatia real para entender o que cada aluno enfrenta. Você pode ler mais sobre essa trajetória na <a href="/minha-historia">minha história</a>.</p>
+<p>Convivi com obesidade por anos antes de entender como o corpo realmente funciona — e perdi mais de 40kg nesse processo. São mais de 20 anos de musculação, cursos e especializações em treinamento e atualização constante. Esse caminho, do excesso de peso ao método aplicado com critério, é o que me dá não apenas conhecimento técnico, mas empatia real para entender o que cada aluno enfrenta. Você pode ler mais sobre essa trajetória na <a href="/minha-historia">minha história</a>.</p>
 
 <h2>Modalidades de atendimento para moradores do Residencial 1</h2>
 
-<p>O atendimento se adapta à sua rotina — não ao contrário. Para moradores do Alphaville Residencial 1, as opções incluem:</p>
+<p>O atendimento se adapta à sua rotina — não ao contrário. Uma das vantagens do Residencial 1 é a localização: além do atendimento dentro do próprio residencial, há academias próximas na região do centro comercial de Alphaville, a poucos minutos de casa. As opções incluem:</p>
 
 <ul>
-<li>Presencial na academia do condomínio ou academia parceira na região</li>
-<li>A domicílio para quem prefere treinar em casa</li>
+<li>Atendimento residencial: treino na sua casa, com estrutura simples e protocolo adaptado</li>
+<li>Espaço fitness ou áreas comuns do residencial, quando o condomínio dispõe dessas estruturas</li>
+<li>Academia parceira próxima ao Residencial 1, para quem prefere equipamentos completos</li>
 <li>Online para quem viaja ou tem agenda variável</li>
 <li>Híbrido: sessões presenciais + suporte nos dias de treino autônomo</li>
 </ul>
 
-<p>Detalhes completos de cada modalidade na <a href="/consultoria">página de consultoria</a>. Se ainda tiver dúvidas sobre como funciona, as <a href="/faq">perguntas frequentes</a> respondem as principais.</p>
+<p>Detalhes completos de cada modalidade na <a href="/consultoria">página de consultoria</a>. Para dar o primeiro passo, basta chamar pela <a href="/contato">página de contato</a> — a conversa inicial não tem compromisso.</p>
+
+<h2>Quem se beneficia do acompanhamento no Residencial 1</h2>
+
+<p>Executivos que precisam de eficiência máxima em pouco tempo. Mulheres e homens em processo de emagrecimento que já tentaram de tudo — se esse é o seu caso, o artigo <a href="/blog/por-que-voce-nao-consegue-emagrecer">por que você não consegue emagrecer</a> ajuda a entender os erros mais comuns. Quem busca hipertrofia com método, como explico em <a href="/blog/como-ganhar-massa-muscular">como ganhar massa muscular</a>. E moradores na terceira idade, para quem força, equilíbrio e autonomia são prioridade — tema do artigo sobre <a href="/blog/treino-funcional-para-idosos">treino funcional para idosos</a>.</p>
+
+<p>Atendo também os residenciais vizinhos — como o <a href="/blog/personal-trainer-alphaville-residencial-2">Alphaville Residencial 2</a>, logo ao lado — e toda a região: <a href="/personal-trainer-barueri">Barueri</a>, <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a> e <a href="/personal-trainer-tambore">Tamboré</a>.</p>
 
 <h3>Leia Também</h3>
 <ul>
