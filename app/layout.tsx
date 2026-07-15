@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import CookieBanner from "@/components/layout/CookieBanner";
+import AnalyticsTracker from "@/components/analytics/AnalyticsTracker";
 
 const dmSans = DM_Sans({
   variable: "--font-inter",
@@ -22,6 +23,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.montinhopersonal.com.br"),
+  applicationName: "Montinho Personal Trainer",
   title: {
     default: "Personal Trainer Alphaville | Montinho",
     template: "%s | Montinho Personal Trainer",
@@ -50,7 +52,7 @@ export const metadata: Metadata = {
       "Personal Trainer em Alphaville especialista em emagrecimento. Resultados reais sem fórmulas mágicas. Ciência, experiência e acompanhamento próximo.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://www.montinhopersonal.com.br/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Montinho Personal Trainer — Alphaville, Barueri e Santana de Parnaíba",
@@ -59,9 +61,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Montinho Personal Trainer | Alphaville",
+    title: "Personal Trainer Alphaville | Montinho",
     description:
-      "Transforme seu corpo sem fórmulas mágicas. Personal Trainer em Alphaville e online em todo o Brasil.",
+      "Personal Trainer em Alphaville especialista em emagrecimento. Resultados reais sem fórmulas mágicas.",
+    images: ["https://www.montinhopersonal.com.br/og-image.jpg"],
   },
   verification: {
     google: "GY5qVJsmTgcHb8sJfYzc9QaWmc9zfvT71hhFbGwV8OM",
@@ -83,6 +86,9 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Montinho Personal Trainer",
+  alternateName: "Montinho Personal",
+  image: "https://www.montinhopersonal.com.br/og-image.jpg",
+  logo: "https://www.montinhopersonal.com.br/brand-icon.png",
   description:
     "Personal Trainer especialista em emagrecimento em Alphaville, Barueri e Santana de Parnaíba. Consultoria online para todo o Brasil.",
   url: "https://www.montinhopersonal.com.br",
@@ -121,7 +127,8 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Montinho Personal Trainer",
-  url: "https://www.montinhopersonal.com.br",
+  alternateName: "Montinho Personal",
+  url: "https://www.montinhopersonal.com.br/",
   "@id": "https://www.montinhopersonal.com.br/#website",
   potentialAction: {
     "@type": "SearchAction",
@@ -157,6 +164,13 @@ export default function RootLayout({
       className={`${dmSans.variable} ${playfair.variable}`}
     >
       <head>
+        {/* Google Tag Manager — o mais alto possível no <head> (snippet oficial) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TDKJMPMR');`,
+          }}
+        />
+        {/* End Google Tag Manager */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
@@ -171,11 +185,26 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col bg-black text-white antialiased">
+        {/* Google Tag Manager (noscript) — imediatamente após a abertura do <body> */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TDKJMPMR"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <Header />
         <main className="flex-1 pt-16 lg:pt-20">{children}</main>
         <Footer />
         <WhatsAppFloat />
         <CookieBanner />
+        <AnalyticsTracker />
+        {/* GA4 instalado diretamente (pré-GTM). Ao configurar a tag GA4 dentro
+            do GTM (GTM-TDKJMPMR), remover este bloco para evitar pageviews
+            duplicados. Futuras tags (Google Ads, Remarketing, Clarity, Meta
+            Pixel) devem ser adicionadas exclusivamente via GTM. */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-J1ZSPMDJZE"
           strategy="afterInteractive"

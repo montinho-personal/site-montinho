@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Como Manter a Dieta nas Festas de Fim de Ano">
+  <title>Como Manter a Dieta nas Festas de Fim de Ano</title>
+  <desc>Infografico: Como Manter a Dieta nas Festas de Fim de Ano - Montinho Personal Trainer</desc>
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <rect x="25" y="22" width="132" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="91" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Nutrição</text>
+  <text x="600" y="110" font-family="Arial,sans-serif" font-size="30" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Como Manter a Dieta nas Festas de Fim de Ano</text>
+  <line x1="80" y1="145" x2="1120" y2="145" stroke="#BA9E50" stroke-width="1" opacity="0.4"/>
+  <circle cx="90" cy="205" r="6" fill="#BA9E50" fill-opacity="0.8"/>
+  <text x="115" y="210" font-family="Arial,sans-serif" font-size="21" fill="#F5F5F5">Dezembro É o Mês Mais Difícil Para Quem Está em Dieta</text>
+  <circle cx="90" cy="297" r="6" fill="#BA9E50" fill-opacity="0.8"/>
+  <text x="115" y="302" font-family="Arial,sans-serif" font-size="21" fill="#F5F5F5">Mude o Objetivo: De Emagrecimento para Manutenção</text>
+  <circle cx="90" cy="389" r="6" fill="#BA9E50" fill-opacity="0.8"/>
+  <text x="115" y="394" font-family="Arial,sans-serif" font-size="21" fill="#F5F5F5">A Estrutura da Semana em Dezembro</text>
+  <circle cx="90" cy="481" r="6" fill="#BA9E50" fill-opacity="0.8"/>
+  <text x="115" y="486" font-family="Arial,sans-serif" font-size="21" fill="#F5F5F5">Planejamento: Saiba Quais Dias São de Exceção</text>
+  <text x="1176" y="618" font-family="Arial,sans-serif" font-size="11" fill="#444" text-anchor="end">montinhopersonal.com.br</text>
+</svg>

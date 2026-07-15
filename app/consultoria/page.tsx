@@ -296,7 +296,7 @@ export default function Consultoria() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-white text-black text-center">
+      <section className="py-16 bg-white text-black text-center" data-track-section="pricing">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl sm:text-4xl font-bold text-black mb-5"

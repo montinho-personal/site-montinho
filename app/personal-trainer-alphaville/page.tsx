@@ -24,7 +24,37 @@ const faq = [
   {
     question: "Onde são realizados os treinos presenciais em Alphaville?",
     answer:
-      "Os atendimentos presenciais acontecem na própria academia do aluno em Alphaville ou em espaços parceiros na região. Na primeira conversa, alinhamos o local mais conveniente para a sua rotina.",
+      "Os atendimentos presenciais acontecem na própria academia do aluno em Alphaville, no espaço fitness do condomínio, em casa ou em espaços parceiros na região. Na primeira conversa, alinhamos o local mais conveniente para a sua rotina.",
+  },
+  {
+    question: "Quanto custa um personal trainer em Alphaville?",
+    answer:
+      "O investimento varia conforme o formato de atendimento (domicílio, condomínio ou academia), a frequência semanal e os objetivos de cada aluno. Por isso não trabalho com tabela fechada: na primeira conversa entendo o seu cenário e apresento uma proposta sob medida, sem compromisso.",
+  },
+  {
+    question: "Você atende em condomínios residenciais de Alphaville e no Tamboré?",
+    answer:
+      "Sim. Grande parte dos meus alunos treina no espaço fitness do próprio condomínio ou em casa, com equipamentos adaptados à estrutura disponível. Atendo residenciais de Alphaville, Tamboré e também condomínios da região de Aldeia da Serra, em Santana de Parnaíba.",
+  },
+  {
+    question: "Quantas vezes por semana preciso treinar para ter resultado?",
+    answer:
+      "Depende do objetivo e do ponto de partida. Para a maioria dos alunos, entre duas e quatro sessões semanais bem estruturadas geram evolução consistente de força, condicionamento físico e composição corporal. Mais importante que a quantidade é a regularidade e a qualidade da execução — e é exatamente isso que o acompanhamento garante.",
+  },
+  {
+    question: "Nunca treinei na vida. Consigo acompanhar?",
+    answer:
+      "Sim — e começar com acompanhamento é a forma mais segura de fazer isso. Iniciantes evoluem rápido quando o protocolo respeita o ponto de partida: aprendemos primeiro a técnica e a postura, construímos base de força e mobilidade, e só então aumentamos a intensidade com progressão de carga gradual.",
+  },
+  {
+    question: "Você trabalha com idosos e com pessoas com dores ou limitações?",
+    answer:
+      "Sim. Tenho cursos voltados especificamente para o treinamento de pessoas com dores e limitações musculoesqueléticas, e boa parte dos meus alunos em Alphaville está na faixa dos 50, 60 e 70 anos. O treino de força bem orientado é uma das melhores ferramentas para autonomia, equilíbrio, prevenção de quedas e qualidade de vida nessa fase.",
+  },
+  {
+    question: "E se eu viajar muito ou não estiver em Alphaville toda semana?",
+    answer:
+      "Isso é comum entre executivos da região — e tem solução. Além do presencial, ofereço consultoria online com protocolo individualizado, ajustes contínuos e suporte à distância. Muitos alunos combinam os dois formatos: presencial quando estão em Alphaville, online quando estão viajando.",
   },
   {
     question: "Você atende alunos que já treinam há anos sem resultado?",
@@ -59,7 +89,9 @@ const localSchema = {
   telephone: "+5511981063409",
   areaServed: [
     { "@type": "City", name: "Barueri" },
+    { "@type": "City", name: "Santana de Parnaíba" },
     { "@type": "Neighborhood", name: "Alphaville" },
+    { "@type": "Neighborhood", name: "Tamboré" },
   ],
   serviceType: "Personal Trainer",
   priceRange: "$$",
@@ -259,6 +291,228 @@ export default function PersonalTrainerAlphaville() {
         </div>
       </section>
 
+      {/* ONDE ATENDO */}
+      <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Onde atendo
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Atendimento em toda a região de Alphaville
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base mb-10">
+            <p>
+              Alphaville não é um bairro comum — é um polo empresarial e residencial que se estende por Barueri e Santana de Parnaíba. Quem trabalha nas torres do Centro Industrial e Empresarial ou nos escritórios da Alameda Rio Negro e mora nos residenciais sabe: o dia é curto e o deslocamento precisa fazer sentido. Por isso o treino vai até você, não o contrário.
+            </p>
+            <p>
+              Atendo em toda a malha de Alphaville e arredores — dos residenciais próximos ao Iguatemi Alphaville à região do Shopping Tamboré, passando pelos condomínios do Tamboré e pela Aldeia da Serra. Para quem chega pela Castelo Branco no fim do dia, encaixamos o horário de forma realista, sem depender de janelas que o trânsito engole.
+            </p>
+          </div>
+          <h3 className="text-white font-semibold text-lg mb-4">Área de atendimento e vias de acesso</h3>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base mb-10">
+            <p>
+              A base do atendimento é o eixo formado pela Alameda Rio Negro e pela Alameda Araguaia, de onde se chega com facilidade a qualquer residencial de Alphaville. A Rodovia Castelo Branco corta a região e conecta rapidamente o Tamboré, o centro de Barueri e Santana de Parnaíba — o que me permite montar uma agenda realista, sem horários que dependem de sorte no trânsito.
+            </p>
+            <p>
+              Em tempos práticos: do centro de Alphaville até o Tamboré são cerca de 5 a 10 minutos de carro; até o centro de Barueri, em torno de 10 a 15 minutos; e até Santana de Parnaíba, algo entre 10 e 15 minutos, dependendo do trânsito e do horário. São regiões contíguas — por isso consigo atender alunos em qualquer uma delas sem comprometer a pontualidade das sessões.
+            </p>
+          </div>
+          <h3 className="text-white font-semibold text-lg mb-4">Formatos de atendimento na região</h3>
+          <ul className="space-y-4 mb-10">
+            {[
+              "Atendimento em domicílio — treino em casa, com estrutura adaptada ao espaço e aos equipamentos disponíveis",
+              "Espaço fitness do condomínio — aproveitando a academia do próprio residencial, sem deslocamento nenhum",
+              "Academias de Alphaville e região — acompanho você na academia onde já treina, em Barueri ou Santana de Parnaíba",
+              "Consultoria online — protocolo individualizado à distância, ideal para quem viaja com frequência",
+            ].map((item, i) => (
+              <li key={i} className="flex items-start gap-3 text-gray-300 font-light">
+                <span className="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-white/40" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <h3 className="text-white font-semibold text-lg mb-4">Condomínios atendidos em Alphaville</h3>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base mb-10">
+            <p>
+              Atendo moradores em todos os residenciais de Alphaville — do{" "}
+              <Link href="/blog/personal-trainer-alphaville-residencial-zero" className="text-white underline underline-offset-4 hover:text-gray-300">Residencial Zero</Link>, um dos mais tradicionais, aos residenciais{" "}
+              <Link href="/blog/personal-trainer-alphaville-residencial-1" className="text-white underline underline-offset-4 hover:text-gray-300">1</Link>,{" "}
+              <Link href="/blog/personal-trainer-alphaville-residencial-2" className="text-white underline underline-offset-4 hover:text-gray-300">2</Link>,{" "}
+              <Link href="/blog/personal-trainer-alphaville-residencial-3" className="text-white underline underline-offset-4 hover:text-gray-300">3</Link>,{" "}
+              <Link href="/blog/personal-trainer-alphaville-residencial-4" className="text-white underline underline-offset-4 hover:text-gray-300">4</Link>,{" "}
+              <Link href="/blog/personal-trainer-alphaville-residencial-5" className="text-white underline underline-offset-4 hover:text-gray-300">5</Link> e{" "}
+              <Link href="/blog/personal-trainer-alphaville-residencial-6" className="text-white underline underline-offset-4 hover:text-gray-300">6</Link>, mais próximos do centro comercial, até os residenciais{" "}
+              <Link href="/blog/personal-trainer-alphaville-residencial-8" className="text-white underline underline-offset-4 hover:text-gray-300">8</Link>,{" "}
+              <Link href="/blog/personal-trainer-alphaville-residencial-9" className="text-white underline underline-offset-4 hover:text-gray-300">9</Link>,{" "}
+              <Link href="/blog/personal-trainer-alphaville-residencial-10" className="text-white underline underline-offset-4 hover:text-gray-300">10</Link>,{" "}
+              <Link href="/blog/personal-trainer-alphaville-residencial-11" className="text-white underline underline-offset-4 hover:text-gray-300">11</Link> e{" "}
+              <Link href="/blog/personal-trainer-alphaville-residencial-12" className="text-white underline underline-offset-4 hover:text-gray-300">12</Link>, já na porção de Santana de Parnaíba.
+            </p>
+            <p>
+              Na vizinhança imediata, também acompanho alunos nos condomínios do Tamboré — como o{" "}
+              <Link href="/blog/personal-trainer-quintas-de-tambore" className="text-white underline underline-offset-4 hover:text-gray-300">Quintas de Tamboré</Link>, o{" "}
+              <Link href="/blog/personal-trainer-boulevard-tambore" className="text-white underline underline-offset-4 hover:text-gray-300">Boulevard Tamboré</Link> e o{" "}
+              <Link href="/blog/personal-trainer-resort-tambore" className="text-white underline underline-offset-4 hover:text-gray-300">Tamboré Resort</Link> — em geral no espaço fitness do próprio condomínio ou na residência do aluno.
+            </p>
+          </div>
+          <h3 className="text-white font-semibold text-lg mb-4">Academias de Alphaville onde acompanho alunos</h3>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base mb-10">
+            <p>
+              Se você prefere treinar em academia, não precisa mudar de lugar: acompanho alunos nas principais unidades da região, como a{" "}
+              <Link href="/blog/ironberg-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">Ironberg Alphaville</Link>, a{" "}
+              <Link href="/blog/bodytech-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">Bodytech</Link>, a{" "}
+              <Link href="/blog/bio-ritmo-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">Bio Ritmo</Link>, a{" "}
+              <Link href="/blog/smart-fit-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">Smart Fit</Link>, a{" "}
+              <Link href="/blog/bluefit-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">Bluefit</Link>, a{" "}
+              <Link href="/blog/academia-gavioes-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">Gaviões</Link> e a{" "}
+              <Link href="/blog/nitrogym-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">NitroGym</Link>.
+            </p>
+            <p>
+              Cada uma tem estrutura e perfil de público diferentes — e parte do meu trabalho é adaptar o protocolo aos equipamentos disponíveis onde você já treina, sem exigir troca de plano ou de academia.
+            </p>
+          </div>
+          <p className="text-gray-400 leading-relaxed font-light">
+            Também atendo alunos nas cidades vizinhas — conheça as páginas de{" "}
+            <Link href="/personal-trainer-barueri" className="text-white underline underline-offset-4 hover:text-gray-300">
+              personal trainer em Barueri
+            </Link>
+            ,{" "}
+            <Link href="/personal-trainer-santana-de-parnaiba" className="text-white underline underline-offset-4 hover:text-gray-300">
+              Santana de Parnaíba
+            </Link>{" "}
+            e{" "}
+            <Link href="/personal-trainer-tambore" className="text-white underline underline-offset-4 hover:text-gray-300">
+              Tamboré
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
+      {/* PERFIL E DICAS LOCAIS */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Treinar em Alphaville
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Quem treina em Alphaville — e como aproveitar melhor a região
+          </h2>
+          <h3 className="text-white font-semibold text-lg mb-4">O perfil de quem me procura aqui</h3>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base mb-10">
+            <p>
+              Alphaville reúne três perfis que dominam a minha agenda. O primeiro é o executivo entre 35 e 55 anos que passa o dia em reuniões e horas sentado — e chega com queixas de{" "}
+              <Link href="/blog/postura-trabalho-sentado-exercicios" className="text-white underline underline-offset-4 hover:text-gray-300">postura comprometida pelo trabalho sentado</Link>, ganho de peso gradual e disposição em queda. O objetivo típico: emagrecimento e condicionamento físico que caibam numa agenda imprevisível.
+            </p>
+            <p>
+              O segundo são as famílias dos residenciais: casais que treinam juntos no espaço fitness do condomínio, mães e pais que querem hipertrofia e força sem abrir mão do tempo com os filhos. E o terceiro, cada vez maior, é o público 50+ e 60+ — moradores antigos da região que entenderam que o treino de força é o melhor investimento em autonomia e qualidade de vida a longo prazo.
+            </p>
+          </div>
+          <h3 className="text-white font-semibold text-lg mb-4">Dicas práticas para treinar na região</h3>
+          <ul className="space-y-4">
+            {[
+              "As academias de Alphaville lotam entre 6h e 8h e depois das 18h — quem tem flexibilidade encontra equipamentos livres entre 10h e 16h, e é aí que muitos dos meus alunos treinam com mais qualidade",
+              "Se o seu residencial tem espaço fitness, use-o a favor: eliminar o deslocamento é o fator que mais aumenta a constância — e adapto o protocolo aos equipamentos disponíveis",
+              "Para caminhadas e trabalho aeróbico ao ar livre, as alamedas arborizadas dos residenciais e o calçadão da região central funcionam muito bem no início da manhã",
+              "Chegou de viagem ou passou a semana fora? Uma sessão de mobilidade articular antes de retomar a carga evita o erro clássico de voltar no ritmo em que parou",
+            ].map((item, i) => (
+              <li key={i} className="flex items-start gap-3 text-gray-300 font-light">
+                <span className="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-white/40" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="text-gray-400 leading-relaxed font-light mt-8">
+            Sobre esse último ponto, vale a leitura:{" "}
+            <Link href="/blog/mobilidade-articular-pre-treino" className="text-white underline underline-offset-4 hover:text-gray-300">
+              mobilidade articular no pré-treino
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
+      {/* METODOLOGIA E RESULTADOS */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Metodologia
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            O que um treinamento personalizado entrega — e em quanto tempo
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
+            <p>
+              Musculação e treinamento personalizado não são sinônimos de estética apenas. O trabalho envolve emagrecimento, hipertrofia, ganho de força e resistência, mobilidade, flexibilidade, correção de postura e condicionamento físico — sempre partindo de uma avaliação física completa, com análise de composição corporal e percentual de gordura.
+            </p>
+            <p>
+              A partir daí entra a periodização: o planejamento que organiza fases de treino, progressão de carga e recuperação muscular para que o corpo evolua sem estagnar e sem se machucar. É um método refinado e validado na prática ao longo do atendimento de alunos — não uma fórmula copiada de aplicativo.
+            </p>
+            <p>
+              Sobre prazos, prefiro ser honesto: nas primeiras semanas a evolução aparece em disposição, sono e técnica de execução. Mudanças visíveis de composição corporal costumam surgir entre oito e doze semanas de treino consistente, e transformações profundas se consolidam ao longo de meses — junto com hábitos saudáveis que se sustentam depois. Se você já tentou de tudo e não saiu do lugar, vale ler{" "}
+              <Link href="/blog/por-que-voce-nao-consegue-emagrecer" className="text-white underline underline-offset-4 hover:text-gray-300">
+                por que você não consegue emagrecer
+              </Link>{" "}
+              e{" "}
+              <Link href="/blog/como-ganhar-massa-muscular" className="text-white underline underline-offset-4 hover:text-gray-300">
+                como ganhar massa muscular de verdade
+              </Link>
+              .
+            </p>
+            <p>
+              Essa forma de trabalhar nasceu da minha própria transformação: convivi com a obesidade, perdi mais de 40kg e há mais de 20 anos vivo a musculação todos os dias — história que conto em detalhes em{" "}
+              <Link href="/minha-historia" className="text-white underline underline-offset-4 hover:text-gray-300">
+                minha história
+              </Link>
+              . Desde então, sigo em atualização constante, com cursos e especializações em treinamento que alimentam uma metodologia própria.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* DORES E LIMITAÇÕES */}
+      <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Treino com segurança
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Dores e limitações não são motivo para parar de treinar
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
+            <p>
+              Dor lombar depois de horas sentado no escritório, ombro que reclama, joelho que trava na escada — são queixas frequentes entre executivos e moradores de Alphaville. E a resposta certa raramente é ficar parado: é treinar com orientação adequada.
+            </p>
+            <p>
+              Tenho cursos voltados especificamente para o treinamento de pessoas com dores e limitações musculoesqueléticas. E, mais do que isso, já vivenciei na pele muitas dessas dores ao longo da minha própria trajetória de treinos — o que aumenta a minha compreensão real das dificuldades que os alunos enfrentam.
+            </p>
+            <p>
+              Minha metodologia une conhecimento técnico, experiência prática e acompanhamento individualizado para você treinar com segurança e eficiência: fortalecimento progressivo, trabalho de mobilidade e postura, prevenção de lesões e respeito absoluto aos limites de cada fase. Para se aprofundar, leia sobre{" "}
+              <Link href="/blog/dor-lombar-na-musculacao" className="text-white underline underline-offset-4 hover:text-gray-300">
+                dor lombar na musculação
+              </Link>{" "}
+              e{" "}
+              <Link href="/blog/treino-funcional-para-idosos" className="text-white underline underline-offset-4 hover:text-gray-300">
+                treino funcional para idosos
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Video */}
       <section className="py-16 border-t border-white/10 bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -308,7 +562,11 @@ export default function PersonalTrainerAlphaville() {
             Pronto para começar em Alphaville?
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            A primeira conversa é sem compromisso. Me conta o que você quer alcançar — e eu te mostro como podemos chegar lá juntos.
+            A primeira conversa é sem compromisso. Me conta o que você quer alcançar — e eu te mostro como podemos chegar lá juntos. Se preferir, envie sua mensagem pela{" "}
+            <Link href="/contato" className="text-white underline underline-offset-4 hover:text-gray-300">
+              página de contato
+            </Link>
+            .
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

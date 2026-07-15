@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { getWhatsAppUrl, WHATSAPP_NUMBER_DISPLAY } from "@/lib/whatsapp";
 
 const navLinks = [
@@ -20,13 +19,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-block mb-4">
-              <div className="relative h-16 w-40">
-                <Image
-                  src="/Logo-final.png"
+            <Link href="/" className="block mb-4">
+              {/* Logo centralizado no mobile, alinhado à esquerda no desktop */}
+              <div className="relative h-16 w-40 mx-auto md:mx-0">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/logo.svg"
                   alt="Montinho Personal Trainer"
-                  fill
-                  style={{ filter: "invert(1)", objectFit: "contain", objectPosition: "left center" }}
+                  loading="lazy"
+                  className="footer-logo"
+                  style={{ maxWidth: "100%", maxHeight: "100%" }}
                 />
               </div>
             </Link>
@@ -38,7 +40,7 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h3 className="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-5">
+            <h3 className="text-gray-300 text-xs font-semibold tracking-[0.15em] uppercase mb-5" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               Navegação
             </h3>
             <nav className="flex flex-col gap-3">
@@ -56,7 +58,7 @@ export default function Footer() {
 
           {/* Local Pages */}
           <div>
-            <h3 className="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-5">
+            <h3 className="text-gray-300 text-xs font-semibold tracking-[0.15em] uppercase mb-5" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               Atendimento Local
             </h3>
             <nav className="flex flex-col gap-3">
@@ -70,7 +72,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-5">
+            <h3 className="text-gray-300 text-xs font-semibold tracking-[0.15em] uppercase mb-5" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               Contato
             </h3>
             <div className="flex flex-col gap-4">

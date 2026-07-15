@@ -37,12 +37,13 @@ export default function Header() {
             aria-label="Montinho Personal Trainer – Página inicial"
           >
             <div className="relative h-10 w-24 lg:h-12 lg:w-32">
-              <Image
-                src="/Logo-final.png"
+              {/* SVG servido direto (vetor não precisa do otimizador do next/image) */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/logo.svg"
                 alt="Montinho Personal Trainer – Personal Trainer em Alphaville, Barueri e Santana de Parnaíba"
-                fill
-                style={{ filter: "invert(1)", objectFit: "contain", objectPosition: "left center" }}
-                priority
+                fetchPriority="high"
+                style={{ position: "absolute", inset: 0, width: "100%", height: "100%", filter: "invert(1)", objectFit: "contain", objectPosition: "left center" }}
               />
             </div>
           </Link>

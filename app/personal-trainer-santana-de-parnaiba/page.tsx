@@ -46,6 +46,36 @@ const faq = [
     answer:
       "Com protocolo bem estruturado e alimentação adequada, mudanças perceptíveis na composição corporal aparecem entre 6 e 8 semanas. Transformações visíveis e consistentes ocorrem entre 3 e 6 meses. O prazo depende do ponto de partida e do grau de comprometimento fora das sessões.",
   },
+  {
+    question: "Quanto custa um personal trainer em Santana de Parnaíba?",
+    answer:
+      "O valor varia conforme o formato (domicílio, academia de condomínio ou academia da região), a frequência semanal e a distância do deslocamento. Prefiro não trabalhar com tabela fixa: primeiro entendo seu objetivo e sua rotina, depois apresento uma proposta que faça sentido. Entre em contato pelo WhatsApp para uma conversa sem compromisso.",
+  },
+  {
+    question: "Você atende em academias de condomínio em Santana de Parnaíba?",
+    answer:
+      "Sim. Grande parte dos condomínios residenciais de Santana de Parnaíba — em Alphaville, Aldeia da Serra, Fazendinha e Cidade São Pedro — possui espaço fitness próprio. Atendo diretamente na academia do seu condomínio, na sua casa ou em academias da região, conforme a estrutura disponível e a sua preferência.",
+  },
+  {
+    question: "Quantas vezes por semana devo treinar com personal em Santana de Parnaíba?",
+    answer:
+      "Depende do objetivo e do ponto de partida. Para a maioria dos alunos, duas a três sessões semanais acompanhadas já garantem progressão consistente de carga e correção de técnica. Quem busca resultados mais rápidos em emagrecimento ou hipertrofia costuma combinar sessões presenciais com treinos complementares orientados por mim.",
+  },
+  {
+    question: "Nunca treinei. Consigo acompanhar o treino personalizado?",
+    answer:
+      "Sim — e iniciantes são justamente quem mais se beneficia do acompanhamento individualizado. Começamos com avaliação física completa, construímos a base de técnica e mobilidade e evoluímos a intensidade de forma gradual. Ninguém precisa 'estar em forma' para começar; o treino é montado para o seu momento atual.",
+  },
+  {
+    question: "Você trabalha com idosos e pessoas com dores ou limitações?",
+    answer:
+      "Sim. Tenho cursos voltados ao treinamento de pessoas com dores e limitações musculoesqueléticas, e trabalho força, equilíbrio, mobilidade e prevenção de quedas com alunos acima dos 60 anos. O treino respeita o histórico de cada um e progride com segurança — sem infantilizar nem expor a riscos desnecessários.",
+  },
+  {
+    question: "Existe opção de consultoria online para quem viaja muito?",
+    answer:
+      "Sim. Para quem tem agenda instável ou passa parte da semana fora de Santana de Parnaíba, ofereço consultoria online com planilha de treino individualizada, ajustes periódicos e suporte pelo WhatsApp. Muitos alunos combinam o formato híbrido: presencial quando estão na cidade, online quando estão viajando.",
+  },
 ];
 
 const localSchema = {
@@ -61,6 +91,10 @@ const localSchema = {
     { "@type": "City", name: "Santana de Parnaíba" },
     { "@type": "Neighborhood", name: "Tamboré" },
     { "@type": "Neighborhood", name: "Aldeia da Serra" },
+    { "@type": "Neighborhood", name: "Alphaville" },
+    { "@type": "Neighborhood", name: "Fazendinha" },
+    { "@type": "Neighborhood", name: "Centro Histórico" },
+    { "@type": "Neighborhood", name: "Cidade São Pedro" },
   ],
   serviceType: "Personal Trainer",
   priceRange: "$$",
@@ -128,7 +162,11 @@ export default function PersonalTrainerSantanaDeParnaiba() {
               Quem mora em Santana de Parnaíba tem uma relação diferente com o tempo. Não é a pressa de Alphaville Empresarial ou o ritmo frenético do centro de Barueri. É uma rotina que, quando bem organizada, tem espaço genuíno para cuidar do corpo — desde que haja um método que valha a pena seguir.
             </p>
             <p>
-              Minha trajetória na musculação começou pela necessidade pessoal. Passei anos convivendo com o sobrepeso até entender que o problema não era falta de esforço — era falta de método. Quando aprendi a base científica do que funciona de verdade, a transformação aconteceu. Não em semanas, mas de forma real e permanente. Esse aprendizado é o que transmito hoje para os meus alunos de Santana de Parnaíba e da região.
+              Minha trajetória na musculação começou pela necessidade pessoal. Fui obeso, perdi mais de 40kg e passei anos convivendo com o sobrepeso até entender que o problema não era falta de esforço — era falta de método. Quando aprendi a base do que funciona de verdade, a transformação aconteceu. Não em semanas, mas de forma real e permanente. Essa história completa está em{" "}
+              <Link href="/minha-historia" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">minha história</Link> — e é o aprendizado que transmito hoje para os meus alunos de Santana de Parnaíba e da região.
+            </p>
+            <p>
+              São mais de 20 anos de musculação somados a cursos e especializações em treinamento, com um método refinado e validado na prática ao longo do atendimento de alunos. Cada protocolo une avaliação física, periodização, progressão de carga e atenção à postura e à prevenção de lesões — porque resultado que não se sustenta não é resultado.
             </p>
           </div>
           <div className="mt-10" style={{ maxWidth: "260px" }}>
@@ -143,6 +181,170 @@ export default function PersonalTrainerSantanaDeParnaiba() {
               decoding="async"
               className="w-full h-auto"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* ONDE ATENDO */}
+      <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Bairros e formatos de atendimento
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Onde atendo em Santana de Parnaíba
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
+            <p>
+              Santana de Parnaíba é extensa e cada região tem sua dinâmica. Atendo moradores da parte de Alphaville que pertence ao município, dos residenciais de Aldeia da Serra, da Fazendinha, da Cidade São Pedro e do entorno do Centro Histórico. Conheço os trajetos e organizo a agenda por região, o que reduz atrasos e mantém a regularidade das sessões.
+            </p>
+            <p>
+              O perfil da cidade é de condomínios residenciais e famílias — e o atendimento acompanha isso. Você escolhe o formato que cabe na sua rotina:
+            </p>
+          </div>
+          <div className="mt-8 space-y-4">
+            {[
+              {
+                perfil: "Na academia ou espaço fitness do seu condomínio",
+                desc: "A maioria dos residenciais da região tem espaço fitness próprio. Monto o protocolo com base nos equipamentos disponíveis, trabalhando musculação, treinamento funcional e condicionamento físico sem que você precise sair de casa.",
+              },
+              {
+                perfil: "Atendimento em domicílio",
+                desc: "Para quem prefere treinar dentro de casa, levo o material necessário e estruturo treinos de força, mobilidade e resistência adaptados ao espaço. Qualidade e progressão de carga não dependem de sala cheia de máquinas.",
+              },
+              {
+                perfil: "Em academias da região",
+                desc: "Quem já frequenta uma academia em Santana de Parnaíba ou nas proximidades pode ser acompanhado lá mesmo. A estrutura completa amplia as possibilidades de periodização, especialmente para hipertrofia.",
+              },
+              {
+                perfil: "Consultoria online",
+                desc: "Para rotinas com viagens frequentes, a consultoria online mantém o processo andando: planilha individualizada, vídeos de execução e ajustes contínuos. Saiba mais na página de consultoria.",
+              },
+            ].map((item, i) => (
+              <div key={i} className="flex gap-5 items-start border-b border-white/10 pb-5">
+                <span className="flex-shrink-0 mt-1 w-2 h-2 rounded-full" style={{ background: "#BA9E50" }} />
+                <div>
+                  <p className="text-white font-semibold mb-1">{item.perfil}</p>
+                  <p className="text-gray-400 text-sm leading-relaxed font-light">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 space-y-5 text-gray-300 leading-relaxed font-light text-base">
+            <h3 className="text-white font-semibold text-lg">Área de atendimento e vias de acesso</h3>
+            <p>
+              A área de atendimento cobre os principais eixos da cidade: a parte de Alphaville que fica dentro do município de Santana de Parnaíba, os residenciais de Aldeia da Serra, a Fazendinha, a Cidade São Pedro e o entorno do Centro Histórico. Os trajetos são diretos — a Estrada dos Romeiros conecta o Centro Histórico à região de Aldeia da Serra, e quem vem do eixo da Rodovia Castelo Branco chega pelo acesso via Alphaville.
+            </p>
+            <p>
+              Na prática, o deslocamento entre esses bairros e Alphaville, Tamboré ou o centro de Barueri leva cerca de 10 a 20 minutos de carro, dependendo do bairro e do trânsito. Isso permite manter horários regulares mesmo para quem mora nas partes mais afastadas, como Aldeia da Serra — a agenda é organizada por região justamente para preservar essa pontualidade.
+            </p>
+          </div>
+          <p className="mt-8 text-gray-400 text-sm leading-relaxed font-light">
+            Também atendo cidades e regiões vizinhas: veja as páginas de{" "}
+            <Link href="/personal-trainer-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">personal trainer em Alphaville</Link>,{" "}
+            <Link href="/personal-trainer-barueri" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">personal trainer em Barueri</Link> e{" "}
+            <Link href="/personal-trainer-tambore" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">personal trainer no Tamboré</Link>. Para consultoria a distância, conheça a{" "}
+            <Link href="/consultoria" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">consultoria online</Link>.
+          </p>
+        </div>
+      </section>
+
+      {/* CONDOMÍNIOS E ACADEMIAS DA REGIÃO */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Condomínios e academias
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Condomínios e academias que atendo em Santana de Parnaíba
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
+            <h3 className="text-white font-semibold text-lg">Condomínios atendidos</h3>
+            <p>
+              Boa parte dos meus alunos de Santana de Parnaíba mora em condomínio — e é lá mesmo que muitos treinam. Atendo os residenciais de{" "}
+              <Link href="/blog/personal-trainer-aldeia-da-serra" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">Aldeia da Serra</Link>, os condomínios da parte parnaibana de Alphaville e os residenciais da Fazendinha e da Cidade São Pedro, seja no espaço fitness do condomínio ou dentro de casa.
+            </p>
+            <p>
+              O cluster do Tamboré, vizinho imediato, também faz parte da rota: atendo alunos do{" "}
+              <Link href="/blog/personal-trainer-tambore-1" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">Tamboré 1</Link> e do{" "}
+              <Link href="/blog/personal-trainer-quintas-de-tambore" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">Quintas de Tamboré</Link>, entre outros residenciais do entorno — para quem circula entre os dois municípios no dia a dia, isso simplifica bastante a logística.
+            </p>
+            <h3 className="text-white font-semibold text-lg pt-2">Academias da região onde acompanho alunos</h3>
+            <p>
+              Quem prefere estrutura completa de máquinas e pesos livres pode ser acompanhado na própria academia que já frequenta. Em Santana de Parnaíba, atendo alunos em espaços como a{" "}
+              <Link href="/blog/xsuperacao-santana-de-parnaiba" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">XSuperação</Link>, a{" "}
+              <Link href="/blog/coliseu-fitness-santana-de-parnaiba" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">Coliseu Fitness</Link> e a{" "}
+              <Link href="/blog/forma-fisica-santana-de-parnaiba" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">Forma Física</Link>. Para quem mora em Aldeia da Serra, a{" "}
+              <Link href="/blog/scelta-aldeia-da-serra" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">Scelta Aldeia da Serra</Link> é a opção mais próxima de casa.
+            </p>
+            <p>
+              Conhecer os equipamentos e a dinâmica de cada academia faz diferença na periodização: sei o que cada espaço oferece e monto o protocolo em cima do que realmente está disponível — sem improvisar substituições na hora do treino.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* COMO FUNCIONA */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Método, não improviso
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Como funciona o treinamento personalizado em Santana de Parnaíba
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
+            <p>
+              Tudo começa com uma avaliação física: composição corporal, percentual de gordura, histórico de treino, postura, mobilidade e limitações. É essa fotografia inicial que permite medir evolução real — não impressão.
+            </p>
+            <p>
+              A partir dela, monto a periodização do seu ciclo de treino. Cada fase tem objetivo definido — construir base, ganhar força, acelerar o emagrecimento ou consolidar a hipertrofia — e a progressão de carga é registrada sessão a sessão. Quando o corpo se adapta, o estímulo muda antes de o resultado estagnar.
+            </p>
+            <p>
+              Os prazos são honestos: melhora de disposição e sono nas primeiras semanas, mudanças perceptíveis na composição corporal entre 6 e 8 semanas, transformações consistentes entre 3 e 6 meses. Quem quer entender melhor os bastidores pode ler no blog{" "}
+              <Link href="/blog/por-que-voce-nao-consegue-emagrecer" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">por que você não consegue emagrecer</Link> e{" "}
+              <Link href="/blog/como-ganhar-massa-muscular" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">como ganhar massa muscular</Link>.
+            </p>
+            <p>
+              Entre as sessões, o acompanhamento continua: orientações sobre recuperação muscular, hábitos saudáveis e ajustes de rotina que sustentam o resultado. Flexibilidade, resistência e qualidade de vida não são efeitos colaterais do treino — fazem parte do planejamento.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* DORES E LIMITAÇÕES */}
+      <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Treinar com dor não é normal
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Dores e limitações não precisam te afastar do treino
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
+            <p>
+              Muita gente em Santana de Parnaíba adia o início do treino por causa de dor lombar, desconforto no joelho ou no ombro. O medo é legítimo — treinar errado com dor piora o quadro. Mas parar de se mover também piora.
+            </p>
+            <p>
+              Tenho cursos voltados especificamente para o treinamento de pessoas com dores e limitações musculoesqueléticas. E, ao longo da minha própria trajetória de mais de 20 anos de musculação, também vivenciei dores comuns de quem treina — o que me faz entender na prática as dificuldades que os alunos enfrentam, e não apenas na teoria.
+            </p>
+            <p>
+              Minha metodologia une conhecimento técnico, experiência prática e acompanhamento individualizado para que você treine com segurança e eficiência: fortalecendo a musculatura de suporte, corrigindo padrões de movimento e progredindo no ritmo que o seu corpo permite. No blog, escrevi sobre{" "}
+              <Link href="/blog/dor-lombar-na-musculacao" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">dor lombar na musculação</Link> e{" "}
+              <Link href="/blog/treino-funcional-para-idosos" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">treino funcional para idosos</Link> — dois temas frequentes entre alunos da região.
+            </p>
           </div>
         </div>
       </section>
@@ -236,6 +438,14 @@ export default function PersonalTrainerSantanaDeParnaiba() {
                 desc: "O metabolismo muda, os hormônios mudam, a recuperação muda. O que não muda é o potencial de transformação — desde que o protocolo respeite a fisiologia dessa faixa etária em vez de ignorá-la.",
               },
               {
+                perfil: "Famílias em condomínio",
+                desc: "Casais e famílias que escolheram os residenciais da cidade pela segurança e pelo espaço. Muitas vezes atendo mais de uma pessoa da mesma casa, cada uma com seu protocolo — o espaço fitness do condomínio vira uma extensão da rotina da família.",
+              },
+              {
+                perfil: "Aposentados ativos e alunos 60+",
+                desc: "Santana de Parnaíba atrai quem quer envelhecer bem. Com esses alunos, o foco é força, equilíbrio, mobilidade e autonomia — treino sério, com progressão de carga adequada, para continuar subindo escada, carregando neto e vivendo sem depender de ninguém.",
+              },
+              {
                 perfil: "Quem nunca treinou direito",
                 desc: "Muitas pessoas chegam sem nunca ter tido acompanhamento profissional de verdade. Construir a base de forma sólida — técnica, progressão, hábito — é o trabalho mais importante que existe e o que gera os resultados mais duradouros.",
               },
@@ -261,6 +471,34 @@ export default function PersonalTrainerSantanaDeParnaiba() {
               decoding="async"
               className="w-full h-auto"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* DICAS LOCAIS */}
+      <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Aproveite onde você mora
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Dicas para treinar melhor em Santana de Parnaíba
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
+            <p>
+              A cidade oferece algo raro na Grande São Paulo: contato com natureza. Se o seu bairro ou condomínio tem áreas verdes, trilhas ou ruas arborizadas e tranquilas, dá para usar isso a favor do condicionamento físico — caminhadas e corridas leves nos dias sem sessão presencial ajudam na recuperação muscular e somam volume de atividade sem sobrecarregar o treino de força.
+            </p>
+            <p>
+              Para quem mora nos residenciais mais afastados, como em Aldeia da Serra, treinar dentro do próprio condomínio costuma ser a escolha mais inteligente: elimina o deslocamento, facilita a constância e o espaço fitness — quando existe — cobre bem as necessidades de um bom protocolo de musculação. Quando não existe, o treino em casa com material que eu levo resolve.
+            </p>
+            <p>
+              Se você trabalha sentado boa parte do dia, dois cuidados fazem diferença antes mesmo do treino: trabalhar a postura com{" "}
+              <Link href="/blog/postura-trabalho-sentado-exercicios" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">exercícios para quem passa o dia sentado</Link> e dedicar alguns minutos à{" "}
+              <Link href="/blog/mobilidade-articular-pre-treino" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">mobilidade articular no pré-treino</Link>. São ajustes simples que reduzem desconfortos e melhoram a qualidade de cada sessão.
+            </p>
           </div>
         </div>
       </section>
@@ -314,7 +552,8 @@ export default function PersonalTrainerSantanaDeParnaiba() {
             A qualidade de vida de Santana de Parnaíba começa no treino.
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            Você escolheu morar num lugar que favorece saúde e bem-estar. Faz sentido que o treino reflita essa escolha. Me conte o que você busca — e vejo como posso ajudar.
+            Você escolheu morar num lugar que favorece saúde e bem-estar. Faz sentido que o treino reflita essa escolha. Me conte o que você busca pelo WhatsApp ou pela{" "}
+            <Link href="/contato" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">página de contato</Link> — e vejo como posso ajudar.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
