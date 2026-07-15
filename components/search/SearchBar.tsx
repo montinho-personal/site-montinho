@@ -220,7 +220,7 @@ export default function SearchBar({
   // ── FULL MODE (blog page, mobile menu) ───────────────────────────────
   return (
     <div ref={containerRef} className="relative w-full">
-      <form
+      <form data-form-name="busca_interna"
         onSubmit={(e) => {
           e.preventDefault();
           navigate();

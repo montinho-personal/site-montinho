@@ -5,6 +5,7 @@ import { marked } from "marked";
 import { getBlogPost, getRelatedPosts, blogPosts, SITE_URL } from "@/lib/blog";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
+import ArticleReadTracker from "@/components/analytics/ArticleReadTracker";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -107,6 +108,7 @@ export default async function BlogPost({ params }: Props) {
 
   return (
     <>
+      <ArticleReadTracker articleTitle={post.title} slug={post.slug} category={post.category} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

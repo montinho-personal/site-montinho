@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import CookieBanner from "@/components/layout/CookieBanner";
+import AnalyticsTracker from "@/components/analytics/AnalyticsTracker";
 
 const dmSans = DM_Sans({
   variable: "--font-inter",
@@ -199,6 +200,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppFloat />
         <CookieBanner />
+        <AnalyticsTracker />
         {/* GA4 instalado diretamente (pré-GTM). Ao configurar a tag GA4 dentro
             do GTM (GTM-TDKJMPMR), remover este bloco para evitar pageviews
             duplicados. Futuras tags (Google Ads, Remarketing, Clarity, Meta
