@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Contato",
   description:
     "Entre em contato com o Montinho Personal Trainer pelo WhatsApp. Atendimento presencial em Alphaville (Barueri e Santana de Parnaíba) e online em todo o Brasil.",
+  alternates: {
+    canonical: "https://www.montinhopersonal.com.br/contato",
+  },
 };
 
 export default function Contato() {

@@ -14,17 +14,21 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // URL fixa que nunca existiu, linkada no footer por engano (404 no GSC)
+      {
+        source: "/personal-trainer-aldeia-da-serra",
+        destination: "/blog/personal-trainer-aldeia-da-serra",
+        permanent: true,
+      },
       // Slugs antigos com caracteres invalidos em URL (acento / maiusculas)
       {
         source: "/blog/horm%C3%B4nios-femininos-apos-40-treino",
         destination: "/blog/hormonios-femininos-apos-40-treino",
         permanent: true,
       },
-      {
-        source: "/blog/deficiencia-energia-atleta-RED-S-recuperacao",
-        destination: "/blog/deficiencia-energia-atleta-red-s-recuperacao",
-        permanent: true,
-      },
+      // NOTA: não criar redirect de variação de maiúsculas para o mesmo path
+      // (ex.: RED-S → red-s): o matching de `source` é case-insensitive e o
+      // redirect captura a própria URL de destino, gerando loop infinito.
       // Slugs planejados que nunca existiram mas receberam links internos
       // (links corrigidos na origem; redirects cobrem URLs ja rastreadas)
       { source: "/blog/sobrecarga-progressiva-guia-completo", destination: "/blog/progressao-de-carga", permanent: true },

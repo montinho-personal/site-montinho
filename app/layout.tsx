@@ -77,9 +77,6 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
-  alternates: {
-    canonical: "https://www.montinhopersonal.com.br",
-  },
 };
 
 const localBusinessSchema = {
