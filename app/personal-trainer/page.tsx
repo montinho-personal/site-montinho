@@ -194,10 +194,31 @@ export default function LandingPage() {
             </div>
 
             <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">
-              {["/antes-depois.jpg", "/antes-depois-montinho-personal-trainer-alphaville.jpg"].map((src) => (
-                <div key={src} className="relative aspect-square rounded-2xl overflow-hidden border border-white/10">
-                  <Image src={src} alt="Antes e depois de aluno do Montinho Personal Trainer" fill loading="lazy" sizes="(max-width: 640px) 90vw, 400px" className="object-cover" />
-                </div>
+              {[
+                {
+                  src: "/antes-depois-montinho-personal-trainer-2.jpg",
+                  alt: "Antes e depois da Adriana: 20kg eliminados com o Montinho Personal Trainer",
+                  name: "Adriana",
+                  kg: "−20kg",
+                  frase: "Anos tentando sozinha. 8 meses com estratégia.",
+                },
+                {
+                  src: "/antes-depois-montinho-personal-trainer-4.jpg",
+                  alt: "Antes e depois da Elisa: 20kg eliminados com o Montinho Personal Trainer",
+                  name: "Elisa",
+                  kg: "−20kg",
+                  frase: "Sem viver em função da academia. Só com o plano certo.",
+                },
+              ].map((a) => (
+                <figure key={a.src} className="relative aspect-square rounded-2xl overflow-hidden border border-white/10">
+                  <Image src={a.src} alt={a.alt} fill loading="lazy" sizes="(max-width: 640px) 90vw, 400px" className="object-cover" />
+                  <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/85 to-transparent pt-12 pb-4 px-4 text-center">
+                    <p className="text-white font-bold text-lg" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                      {a.name} · <span className="text-[#BA9E50]">{a.kg}</span>
+                    </p>
+                    <p className="text-gray-300 text-xs mt-0.5">{a.frase}</p>
+                  </figcaption>
+                </figure>
               ))}
             </div>
 
