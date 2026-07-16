@@ -151,16 +151,27 @@ export default function LandingPage() {
               </ul>
             </div>
             <div className="relative mx-auto w-full max-w-md lg:max-w-none">
-              <div className="relative aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+              <figure className="relative aspect-square rounded-3xl overflow-hidden border border-[#BA9E50]/30 shadow-2xl">
                 <Image
-                  src="/foto-hero.jpg"
-                  alt="Montinho, personal trainer em Alphaville"
+                  src="/antes-depois-montinho-personal-trainer.jpg"
+                  alt="Antes e depois do Montinho: a própria transformação de mais de 40kg"
                   fill
                   priority
                   sizes="(max-width: 1024px) 90vw, 45vw"
                   className="object-cover"
                 />
-              </div>
+                <span className="absolute top-4 left-4 bg-[#BA9E50] text-black text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">
+                  Minha própria transformação
+                </span>
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/80 to-transparent pt-14 pb-5 px-5 text-center">
+                  <p className="text-white font-bold text-lg leading-snug" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                    A mesma pessoa. <span className="text-[#BA9E50]">40kg de diferença.</span>
+                  </p>
+                  <p className="text-gray-300 text-sm mt-1">
+                    O método que me tirou dali é o que vou aplicar em você.
+                  </p>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </section>
@@ -183,7 +194,7 @@ export default function LandingPage() {
             </div>
 
             <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">
-              {["/antes-depois.jpg", "/antes-depois-montinho-personal-trainer.jpg"].map((src) => (
+              {["/antes-depois.jpg", "/antes-depois-montinho-personal-trainer-alphaville.jpg"].map((src) => (
                 <div key={src} className="relative aspect-square rounded-2xl overflow-hidden border border-white/10">
                   <Image src={src} alt="Antes e depois de aluno do Montinho Personal Trainer" fill loading="lazy" sizes="(max-width: 640px) 90vw, 400px" className="object-cover" />
                 </div>
