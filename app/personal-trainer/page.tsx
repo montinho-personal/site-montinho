@@ -29,48 +29,28 @@ export const metadata: Metadata = {
 
 const faqLp = [
   {
-    q: "Quanto custa o acompanhamento?",
-    a: "O valor depende do formato (presencial ou consultoria online), da frequência semanal e do local de atendimento. Na primeira conversa pelo WhatsApp eu entendo seu objetivo e te passo uma proposta clara, sem compromisso.",
+    q: "Nunca treinei. Posso começar?",
+    a: "Sim. Todo o planejamento é adaptado ao seu nível de condicionamento e experiência.",
   },
   {
-    q: "Como funciona a primeira conversa?",
-    a: "É uma conversa simples pelo WhatsApp: você conta seu objetivo, sua rotina e seu histórico. Sem pressão e sem compromisso — o objetivo é entender se posso te ajudar de verdade.",
+    q: "Você atende em condomínios?",
+    a: "Sim. Atendo em condomínios, academias e residências em Alphaville e região.",
   },
   {
-    q: "Você atende dentro do meu condomínio?",
-    a: "Sim. Atendo na academia do condomínio, em casa ou em áreas comuns — em Alphaville, Tamboré, Barueri e Santana de Parnaíba. Levo equipamentos portáteis quando necessário.",
+    q: "Quanto tempo dura uma aula?",
+    a: "A duração varia de acordo com o planejamento definido para cada aluno.",
   },
   {
-    q: "Posso treinar na minha academia com você?",
-    a: "Sim. Acompanho alunos nas principais academias da região. Se você já tem matrícula, aproveitamos a estrutura que você já paga.",
+    q: "Você atende quem quer apenas emagrecer?",
+    a: "Sim. O acompanhamento é totalmente personalizado para objetivos como emagrecimento, hipertrofia, condicionamento físico e qualidade de vida.",
   },
   {
-    q: "Estou muito acima do peso. Posso começar mesmo assim?",
-    a: "Pode — e talvez eu seja a pessoa certa para te entender. Eu comecei exatamente daí: mais de 40kg acima do peso. Ninguém vai te julgar, ninguém vai te expor. Começamos no seu ritmo, no lugar em que você se sentir mais confortável — inclusive na sua casa.",
+    q: "Em quanto tempo aparecem os resultados?",
+    a: "Os resultados dependem de fatores como frequência, alimentação, sono e comprometimento. Cada pessoa evolui em um ritmo diferente, mas um planejamento individualizado aumenta significativamente suas chances de progresso.",
   },
   {
-    q: "Atende iniciantes que nunca treinaram?",
-    a: "Sim — e é um dos públicos que mais atendo. Você não precisa 'estar em forma' para começar. Começamos do seu ponto atual, no seu ritmo, com segurança.",
-  },
-  {
-    q: "Atende pessoas mais velhas ou com dores?",
-    a: "Sim. Tenho cursos voltados para treino de pessoas com dores e limitações, e adapto cada exercício à sua condição. Treino seguro é a base do método.",
-  },
-  {
-    q: "Quais horários você tem disponíveis?",
-    a: "Atendo de segunda a sábado, em horários que se encaixam na rotina de quem trabalha — manhã cedo, horário de almoço e fim de tarde. Me chame no WhatsApp para ver a agenda da semana.",
-  },
-  {
-    q: "Em quanto tempo vejo resultado?",
-    a: "Disposição e força melhoram nas primeiras semanas. Mudanças visíveis de composição corporal costumam aparecer entre o 2º e o 3º mês, com constância. Não prometo milagre — prometo método.",
-  },
-  {
-    q: "Quanto tempo dura cada sessão?",
-    a: "Em geral, 60 minutos de treino focado — sem enrolação e sem tempo perdido. A frequência ideal (2x, 3x ou mais por semana) é definida junto com você, conforme objetivo e rotina.",
-  },
-  {
-    q: "Preciso ter equipamentos em casa?",
-    a: "Não. Para atendimento em casa eu levo equipamentos portáteis quando necessário, e o treino é desenhado para o espaço e os recursos disponíveis. Halteres e acessórios podem ser incorporados aos poucos, se você quiser.",
+    q: "O acompanhamento continua depois das aulas?",
+    a: "Sim. Além das aulas presenciais, acompanho sua evolução e realizo ajustes sempre que necessário.",
   },
 ];
 
@@ -138,20 +118,25 @@ export default function LandingPage() {
                 Transforme seu corpo em Alphaville com quem já{" "}
                 <span className="text-[#BA9E50]">esteve do outro lado</span>.
               </h1>
-              <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-lg">
-                Para quem quer <strong className="text-white">emagrecer, ganhar massa muscular ou voltar
-                a ter saúde</strong> — mesmo sem tempo, mesmo tendo tentado antes.
-                Atendimento na sua casa, no seu condomínio ou na sua academia, em{" "}
-                <strong className="text-white">Alphaville, Tamboré, Barueri e Santana de Parnaíba</strong>.
+              <p className="text-gray-300 text-lg leading-relaxed mb-4 max-w-lg">
+                Você não precisa de mais um treino genérico ou de tentar descobrir
+                sozinho o que funciona. Você precisa de um{" "}
+                <strong className="text-white">plano criado para a sua realidade</strong>, com
+                acompanhamento contínuo, estratégia e ajustes conforme sua evolução.
+              </p>
+              <p className="text-gray-400 text-sm mb-8">
+                Atendo presencialmente em <strong className="text-gray-200">Alphaville, Tamboré, Barueri e
+                Santana de Parnaíba</strong>, em condomínios, academias e residências.
               </p>
               <WhatsButton
-                label="Quero minha avaliação — WhatsApp"
+                label="Quero conversar pelo WhatsApp"
                 sub="Resposta rápida · Primeira conversa sem compromisso"
               />
-              <ul className="flex flex-col sm:flex-row flex-wrap items-center sm:items-start gap-x-6 gap-y-2 mt-6 text-sm text-gray-300">
-                <li className="flex items-center gap-2"><Stars /> <strong className="text-white">5.0</strong>&nbsp;· {testimonials.totalReviews} avaliações no Google</li>
-                <li className="flex items-center gap-2"><span className="text-[#BA9E50]">●</span> Ex-obeso: perdeu mais de 40kg</li>
-                <li className="flex items-center gap-2"><span className="text-[#BA9E50]">●</span> 20+ anos de experiência</li>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-6 text-sm text-gray-300 max-w-lg">
+                <li className="flex items-center gap-2">⭐ <span><strong className="text-white">5.0</strong> · {testimonials.totalReviews} avaliações de alunos</span></li>
+                <li className="flex items-center gap-2">💪 Ex-obeso que perdeu mais de 40kg</li>
+                <li className="flex items-center gap-2">📍 Atendimento personalizado</li>
+                <li className="flex items-center gap-2">📲 Acompanhamento contínuo</li>
               </ul>
             </div>
             <div className="relative mx-auto w-full max-w-md lg:max-w-none">
@@ -184,9 +169,13 @@ export default function LandingPage() {
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-6xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-              Resultados de quem confiou
+              Resultados que falam mais alto do que qualquer promessa
             </h2>
-            <p className="text-center text-gray-400 mb-10">Alunos reais de Alphaville e região — com agendas tão cheias quanto a sua.</p>
+            <p className="text-center text-gray-400 mb-10 max-w-2xl mx-auto">
+              Nada transmite mais confiança do que ver pessoas reais conquistando
+              resultados — alunos que decidiram mudar de vida com estratégia,
+              acompanhamento e constância.
+            </p>
 
             <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-12 text-center">
               {[["-40kg","na própria pele"],["20+","anos de experiência"],["5.0 ★","17 avaliações Google"]].map(([n,d]) => (
@@ -263,24 +252,25 @@ export default function LandingPage() {
             </div>
             <div className="md:col-span-3">
               <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-                Eu sei exatamente como você se sente.
+                Eu sei exatamente como é começar do zero.
               </h2>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Porque eu já estive aí: acima do peso, sem energia, preso no
-                efeito sanfona — emagrecia um pouco, recuperava tudo, e a culpa
-                parecia ser sempre minha.
+                Durante muito tempo, eu também olhava no espelho e não gostava do
+                que via. Já fui obeso. Passei pelo efeito sanfona. Comecei diversas
+                vezes. Desisti algumas delas. Achei que nunca conseguiria mudar.
               </p>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Foram <strong className="text-white">mais de 40kg eliminados</strong> — não com sorte,
-                mas com o método que refinei ao longo de mais de 20 anos e que hoje
-                aplico em cada aluno.
+                Até perceber que o problema não era falta de força de vontade.{" "}
+                <strong className="text-white">Era falta de um método.</strong>
               </p>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Quando eu digo que entendo sua dificuldade, não é frase de vendedor.
-                É memória.
+                Quando consegui perder <strong className="text-white">mais de 40kg</strong> e transformar
+                meu corpo, decidi dedicar minha carreira a ajudar outras pessoas a
+                conquistarem essa mesma mudança.
               </p>
               <p className="text-[#BA9E50] font-semibold italic mb-8">
-                &ldquo;Não vendo fórmula mágica. Divido o caminho que eu mesmo percorri.&rdquo;
+                &ldquo;Hoje meu objetivo não é apenas montar treinos. É encurtar o caminho
+                entre onde você está e onde deseja chegar.&rdquo;
               </p>
               <WhatsButton label="Quero percorrer esse caminho" />
             </div>
@@ -292,24 +282,28 @@ export default function LandingPage() {
         <section className="py-16 border-t border-white/10">
           <div className="max-w-6xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-              O que muda na sua vida
+              Muito mais do que treinar
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+              Você terá um acompanhamento pensado para facilitar sua evolução.
+            </p>
+            <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-4 max-w-3xl mx-auto">
               {[
-                ["Roupas que voltam a servir", "Emagrecimento com estratégia, sem dieta maluca. O espelho muda — e o guarda-roupa inteiro volta a fazer sentido."],
-                ["Um corpo que você tem orgulho", "Músculos construídos com inteligência, no ritmo certo. Você para de 'ir na academia' e começa a ver evolução real."],
-                ["Adeus ao medo de se machucar", "Cada movimento adaptado ao seu corpo e histórico. Quem tem dor não precisa parar — precisa de orientação certa."],
-                ["Energia que sobra no fim do dia", "Disposição para o trabalho, os filhos e a vida. É o primeiro resultado que aparece — nas primeiras semanas."],
-                ["Você nunca mais treina no escuro", "Reavaliações periódicas mostram preto no branco o que está funcionando. Progresso que você VÊ."],
-                ["Alguém que não te deixa desistir", "Dúvida na terça à noite? Me chama. O acompanhamento não termina quando a sessão acaba."],
-              ].map(([t, d]) => (
-                <div key={t} className="bg-white/[0.03] border border-white/10 rounded-2xl p-7 hover:border-[#BA9E50]/40 transition-colors duration-300">
-                  <span className="text-[#25D366] text-xl">✔</span>
-                  <h3 className="text-white font-bold text-lg mt-3 mb-2">{t}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">{d}</p>
-                </div>
+                "Emagreça de forma inteligente e sustentável.",
+                "Ganhe massa muscular com um plano adequado para você.",
+                "Aprenda a treinar corretamente.",
+                "Evite perder tempo com métodos aleatórios.",
+                "Reduza o risco de lesões com uma execução mais segura.",
+                "Tenha alguém acompanhando sua evolução.",
+                "Pare de começar e desistir.",
+                "Transforme o treino em um hábito que faça parte da sua rotina.",
+              ].map((b) => (
+                <li key={b} className="flex items-start gap-3 bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4">
+                  <span className="text-[#25D366] font-bold mt-0.5">✔</span>
+                  <span className="text-gray-200 text-sm leading-relaxed">{b}</span>
+                </li>
               ))}
-            </div>
+            </ul>
             <div className="mt-10">
               <WhatsButton label="Quero essa transformação" />
             </div>
@@ -320,15 +314,15 @@ export default function LandingPage() {
         <section className="py-16 border-t border-white/10">
           <div className="max-w-5xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-              Como funciona — em 5 passos simples
+              Como funciona o acompanhamento
             </h2>
             <ol className="grid sm:grid-cols-5 gap-4 text-center">
               {[
-                ["1", "Conversa", "Você me chama no WhatsApp e conta seu objetivo."],
-                ["2", "Avaliação", "Entendo seu corpo, rotina e histórico."],
-                ["3", "Plano", "Estratégia desenhada para você — não um PDF genérico."],
-                ["4", "Treinos", "Em casa, no condomínio ou na sua academia."],
-                ["5", "Resultados", "Ajustes constantes até o resultado — e além."],
+                ["1", "Conversa inicial", "Entendo sua rotina, objetivos, dificuldades, limitações e expectativas."],
+                ["2", "Avaliação", "Identifico seu ponto de partida para criar uma estratégia personalizada."],
+                ["3", "Planejamento", "Você recebe um plano desenvolvido exclusivamente para o seu objetivo."],
+                ["4", "Acompanhamento", "Sua evolução é acompanhada de perto e o plano é ajustado sempre que necessário."],
+                ["5", "Resultados", "Você evolui com mais segurança, consistência e confiança."],
               ].map(([n, t, d]) => (
                 <li key={n} className="bg-white/[0.03] border border-white/10 rounded-2xl p-5">
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#BA9E50] text-black font-bold mb-3">{n}</span>
@@ -347,28 +341,26 @@ export default function LandingPage() {
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-4xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-              Por que alunos escolhem (e ficam)
+              Por que escolher o Montinho Personal?
             </h2>
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="border border-white/10 rounded-2xl p-7 bg-black/40">
-                <h3 className="text-gray-400 font-bold uppercase text-xs tracking-[0.15em] mb-5">Acompanhamento comum</h3>
+                <h3 className="text-gray-400 font-bold uppercase text-xs tracking-[0.15em] mb-5">Outros personais</h3>
                 <ul className="space-y-3 text-gray-500 text-sm">
-                  <li>❌ Treino genérico copiado de aluno para aluno</li>
-                  <li>❌ Atenção que termina quando a aula acaba</li>
-                  <li>❌ Meses fazendo a mesma planilha</li>
-                  <li>❌ Nenhuma medição de progresso</li>
-                  <li>❌ Foco em contar repetições</li>
+                  <li>❌ Utilizam treinos parecidos para diferentes alunos</li>
+                  <li>❌ Pouco acompanhamento entre as aulas</li>
+                  <li>❌ Ajustes esporádicos</li>
+                  <li>❌ Foco apenas na aula</li>
                 </ul>
               </div>
               <div className="border border-[#BA9E50]/50 rounded-2xl p-7 bg-[#BA9E50]/[0.06] shadow-[0_0_40px_rgba(186,158,80,0.08)]">
-                <h3 className="text-[#BA9E50] font-bold uppercase text-xs tracking-[0.15em] mb-5">Método Montinho</h3>
+                <h3 className="text-[#BA9E50] font-bold uppercase text-xs tracking-[0.15em] mb-5">Montinho Personal</h3>
                 <ul className="space-y-3 text-gray-200 text-sm">
-                  <li>✅ Estratégia individual, do seu corpo para o seu objetivo</li>
-                  <li>✅ Suporte contínuo pelo WhatsApp entre as sessões</li>
-                  <li>✅ Ajustes frequentes conforme você evolui</li>
-                  <li>✅ Reavaliações periódicas com dados reais</li>
-                  <li>✅ Foco em resultado — e em mantê-lo</li>
-                  <li>✅ De quem viveu na pele a transformação que você busca</li>
+                  <li>✅ Estratégia personalizada para cada aluno</li>
+                  <li>✅ Acompanhamento contínuo</li>
+                  <li>✅ Ajustes conforme sua evolução</li>
+                  <li>✅ Suporte durante toda a jornada</li>
+                  <li>✅ Foco em resultados consistentes</li>
                 </ul>
               </div>
             </div>
@@ -378,26 +370,29 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* ───────────────────── AUTORIDADE ───────────────────── */}
+        {/* ───────────────────── PARA QUEM É ───────────────────── */}
         <section className="py-16 border-t border-white/10">
-          <div className="max-w-5xl mx-auto px-5 sm:px-8">
+          <div className="max-w-4xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-              Quem vai cuidar do seu resultado
+              Esse acompanhamento é ideal para você que...
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
               {[
-                ["🏋️", "20+ anos de prática", "Mais de duas décadas vivendo musculação todos os dias — não é teoria de apostila."],
-                ["📚", "Estudo constante", "Cursos e especializações em treinamento, incluindo formação para alunos com dores e limitações."],
-                ["🎯", "Método próprio", "Refinado e validado na prática, aluno após aluno — avaliação, periodização e ajuste contínuo."],
-                ["🤝", "Vivência real", "Ex-obeso que percorreu o mesmo caminho. Empatia aqui não é discurso: é história."],
-              ].map(([ic, t, d]) => (
-                <div key={t} className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 text-center">
-                  <span className="text-3xl">{ic}</span>
-                  <h3 className="text-white font-bold mt-3 mb-2">{t}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">{d}</p>
-                </div>
+                "Quer emagrecer de forma saudável.",
+                "Deseja ganhar massa muscular.",
+                "Nunca treinou.",
+                "Está voltando para a academia.",
+                "Já tentou sozinho e não conseguiu manter resultados.",
+                "Tem uma rotina corrida.",
+                "Quer treinar com segurança.",
+                "Mora em Alphaville, Tamboré, Barueri ou Santana de Parnaíba.",
+              ].map((b) => (
+                <li key={b} className="flex items-start gap-3 bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4">
+                  <span className="text-[#BA9E50] font-bold mt-0.5">✔</span>
+                  <span className="text-gray-200 text-sm leading-relaxed">{b}</span>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </section>
 
@@ -405,11 +400,11 @@ export default function LandingPage() {
         <section className="py-16 border-t border-white/10">
           <div className="max-w-5xl mx-auto px-5 sm:px-8 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-              Atendimento onde você está
+              Regiões atendidas
             </h2>
             <p className="text-gray-400 mb-10 max-w-2xl mx-auto">
-              Presencial em toda a região de Alphaville — na sua casa, na academia do
-              seu condomínio ou na academia onde você já treina.
+              Atendimento presencial em Alphaville, Tamboré, Barueri e Santana de
+              Parnaíba — além de diversos condomínios e academias da região.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 text-left mb-10">
               {[
@@ -467,18 +462,22 @@ export default function LandingPage() {
               <Image src="/montinho-personal-trainer-shape.jpg" alt="Montinho Personal Trainer" fill loading="lazy" sizes="128px" className="object-cover" />
             </div>
             <h2 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-              Daqui a 3 meses, você vai desejar<br className="hidden sm:block" /> ter começado hoje.
+              Sua transformação pode<br className="hidden sm:block" /> começar hoje.
             </h2>
             <p className="text-gray-300 text-lg mb-4 max-w-xl mx-auto">
-              A primeira conversa não custa nada — nem dinheiro, nem compromisso.
-              Só uma mensagem separa você do plano que finalmente funciona.
+              Eu sei que dar o primeiro passo nem sempre é fácil. Também já estive
+              desse lado. Por isso, meu compromisso é entender seus objetivos, criar
+              um plano que faça sentido para sua rotina e acompanhar sua evolução de
+              forma próxima.
             </p>
-            <p className="text-gray-500 text-sm mb-10">
-              Atendo um número limitado de alunos por vez — é o que mantém o
-              acompanhamento realmente próximo.
+            <p className="text-gray-400 mb-10 max-w-xl mx-auto">
+              Se você procura um Personal Trainer em Alphaville que realmente se
+              importe com seus resultados, será um prazer conversar com você. Vamos
+              entender seus objetivos e descobrir qual é a melhor estratégia para
+              alcançar a transformação que você deseja.
             </p>
             <WhatsButton
-              label="Falar com o Montinho agora"
+              label="Quero começar minha transformação"
               sub="Respondo pessoalmente — geralmente em poucos minutos"
             />
             <p className="text-gray-600 text-xs mt-12">
