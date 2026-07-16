@@ -246,13 +246,13 @@ export default function LandingPage() {
             <div className="md:col-span-2 grid grid-cols-2 gap-3">
               <figure>
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-white/10">
-                  <Image src="/foto-historia.jpg" alt="Montinho antes: mais de 40kg acima do peso" fill loading="lazy" sizes="(max-width: 768px) 45vw, 170px" className="object-cover" />
+                  <Image src="/foto-historia-4.jpg" alt="Montinho antes: mais de 40kg acima do peso" fill loading="lazy" sizes="(max-width: 768px) 45vw, 170px" className="object-cover" />
                 </div>
                 <figcaption className="text-center text-gray-500 text-xs mt-2 uppercase tracking-wider">Antes</figcaption>
               </figure>
               <figure>
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#BA9E50]/40">
-                  <Image src="/montinho-personal-trainer-shape.jpg" alt="Montinho hoje, personal trainer" fill loading="lazy" sizes="(max-width: 768px) 45vw, 170px" className="object-cover" />
+                  <Image src="/foto-hoje-praia.jpg" alt="Montinho hoje: em forma, personal trainer em Alphaville" fill loading="lazy" sizes="(max-width: 768px) 45vw, 170px" className="object-cover" />
                 </div>
                 <figcaption className="text-center text-[#BA9E50] text-xs mt-2 uppercase tracking-wider">Hoje</figcaption>
               </figure>
