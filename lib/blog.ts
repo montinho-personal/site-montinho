@@ -17156,24 +17156,52 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
     faq: [
       {
-        question: "Personal trainer no Residencial 9 de Alphaville trabalha com objetivo de saúde — não de estética?",
+        question:
+          "Personal trainer no Residencial 9 de Alphaville trabalha com objetivo de saúde — não de estética?",
         answer:
           "Sim. Qualidade de vida, longevidade, disposição, saúde cardiovascular e metabólica são objetivos tão válidos quanto emagrecimento ou hipertrofia. O protocolo é montado em função do que o aluno realmente quer — não de um objetivo padrão.",
       },
       {
-        question: "Treino de força ajuda na saúde de moradores do Residencial 9 acima de 50 anos?",
+        question:
+          "Treino de força ajuda na saúde de moradores do Residencial 9 acima de 50 anos?",
         answer:
           "Especialmente acima de 50 anos. A ciência documenta benefícios amplos do treino de força para essa faixa etária: manutenção de massa muscular, saúde óssea, controle glicêmico, saúde cardiovascular, equilíbrio e qualidade do sono. O protocolo é adaptado ao nível e às limitações de cada aluno.",
       },
       {
-        question: "Personal trainer no Alphaville Residencial 9 trabalha com alunos com doenças crônicas?",
+        question:
+          "Personal trainer no Alphaville Residencial 9 trabalha com alunos com doenças crônicas?",
         answer:
           "Sim. Hipertensão, diabetes tipo 2, osteoporose, artrose e outras condições crônicas são consideradas na montagem do protocolo. Em casos de restrições médicas específicas, o trabalho é feito em parceria com o médico do aluno.",
       },
       {
-        question: "Como personal trainer no Residencial 9 avalia melhora em qualidade de vida?",
+        question:
+          "Como personal trainer no Residencial 9 avalia melhora em qualidade de vida?",
         answer:
           "Além das métricas físicas (composição corporal, força), avalio indicadores funcionais: qualidade do sono, disposição ao longo do dia, capacidade de realizar atividades cotidianas sem dor e percepção geral de bem-estar. Esses indicadores são tão importantes quanto os números.",
+      },
+      {
+        question:
+          "O atendimento pode ser na minha casa dentro do Residencial 9 ou no espaço fitness do condomínio?",
+        answer:
+          "Sim. Atendo na residência do aluno, no espaço fitness do condomínio quando disponível, ou em academias próximas da região de Alphaville, como Smart Fit, Bodytech e Bio Ritmo. O formato é definido junto com o aluno conforme conforto e objetivo.",
+      },
+      {
+        question:
+          "Quanto custa personal trainer no Alphaville Residencial 9?",
+        answer:
+          "O valor depende do formato de atendimento (residencial, academia ou consultoria online), da frequência semanal e do plano escolhido. Entre em contato para receber uma proposta personalizada para a sua rotina e objetivo.",
+      },
+      {
+        question:
+          "Nunca treinei na vida. Consigo começar com personal no Residencial 9?",
+        answer:
+          "Sim — iniciantes são um dos perfis que mais evoluem com acompanhamento. O protocolo começa do seu nível real, com ênfase em técnica, mobilidade e progressão gradual de carga, sem sobrecarga precoce e com prevenção de lesões desde o primeiro treino.",
+      },
+      {
+        question:
+          "Existe opção de consultoria online para moradores do Residencial 9?",
+        answer:
+          "Sim. A consultoria online é indicada para quem viaja com frequência ou prefere treinar de forma autônoma com orientação profissional: protocolo individualizado, ajustes periódicos e suporte a distância. Detalhes na página de consultoria do site.",
       },
     ],
     faqSchema: [
@@ -17207,17 +17235,71 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Como <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a> com 20 anos de experiência, vi esses benefícios se materializarem em centenas de alunos. Não como estatística — como realidade cotidiana de pessoas reais.</p>
 
+<h2>Como funciona o acompanhamento no Residencial 9</h2>
+
+<p>O processo segue etapas claras. Primeiro, uma avaliação física completa: composição corporal, percentual de gordura, medidas, testes de força, mobilidade e histórico de saúde. A partir dela, monto a periodização — a organização dos ciclos de treino ao longo dos meses, com progressão de carga gradual e segura.</p>
+
+<p>O treinamento personalizado combina musculação como base com elementos de treinamento funcional, trabalho de mobilidade, flexibilidade e condicionamento físico, conforme o objetivo: emagrecimento, hipertrofia, força, resistência ou simplesmente qualidade de vida. A reavaliação periódica confirma se a composição corporal e os indicadores funcionais estão evoluindo — e o protocolo é ajustado quando necessário.</p>
+
+<h3>Prazos honestos de resultado</h3>
+
+<p>Com consistência, as primeiras mudanças em disposição e sono aparecem nas primeiras semanas. Alterações mensuráveis de composição corporal costumam surgir entre 6 e 8 semanas, e mudanças significativas em 3 a 6 meses — dependendo do ponto de partida e da adesão. Quem quer entender melhor os caminhos, vale ler <a href="/blog/por-que-voce-nao-consegue-emagrecer">por que você não consegue emagrecer</a> e <a href="/blog/como-ganhar-massa-muscular">como ganhar massa muscular</a>.</p>
+
 <h2>Treino que respeita limitações e potencializa capacidades</h2>
 
 <p>Para moradores do Residencial 9 que chegam com histórico de dores, cirurgias, lesões antigas ou condições crônicas, o protocolo começa pelo diagnóstico dessas limitações — e é construído para trabalhar dentro delas, não contra elas.</p>
 
 <p>Limitação não é impedimento para treinar. É um parâmetro que o protocolo precisa respeitar. Com a abordagem certa, é possível treinar com segurança, progredir dentro das restrições e, muitas vezes, reduzir as próprias limitações ao longo do tempo.</p>
 
+<h3>Dores e limitações: preparo específico para treinar com segurança</h3>
+
+<p>Tenho cursos voltados especificamente para o treinamento de pessoas com dores e limitações musculoesqueléticas. E, ao longo de mais de 20 anos de musculação, eu mesmo vivenciei dores comuns da trajetória de treinos — o que aumenta minha compreensão real das dificuldades de quem chega com desconforto no joelho, no ombro ou na coluna.</p>
+
+<p>A metodologia une conhecimento técnico, experiência prática e acompanhamento individualizado para treinar com segurança e eficiência, com atenção à postura, à prevenção de lesões e à recuperação muscular. Conteúdos como <a href="/blog/dor-lombar-na-musculacao">dor lombar na musculação</a>, <a href="/blog/mobilidade-articular-pre-treino">mobilidade articular no pré-treino</a> e <a href="/blog/treino-funcional-para-idosos">treino funcional para idosos</a> mostram como essa abordagem funciona na prática.</p>
+
+<h2>Perfil dos moradores do Residencial 9 e objetivos mais comuns</h2>
+
+<p>O Residencial 9 concentra muitas famílias consolidadas e moradores acima dos 50 anos que já venceram a fase de correria máxima da carreira e agora priorizam saúde. Os objetivos que mais aparecem nesse perfil:</p>
+
+<ul>
+<li>Manter massa muscular e força para preservar autonomia nas próximas décadas</li>
+<li>Controlar pressão, glicemia e colesterol com apoio do exercício</li>
+<li>Reduzir dores articulares e melhorar postura e equilíbrio</li>
+<li>Ter energia para acompanhar filhos, netos e viagens</li>
+<li>Criar hábitos saudáveis que se sustentem sem depender de motivação</li>
+</ul>
+
+<h2>Onde treinar: em casa, no condomínio ou em academia próxima</h2>
+
+<p>O atendimento no Residencial 9 é flexível quanto ao local:</p>
+
+<ul>
+<li><strong>Atendimento residencial:</strong> treino na sua casa, com equipamentos portáteis que levo ou estrutura que você já tenha. É o formato preferido de quem valoriza privacidade e zero deslocamento.</li>
+<li><strong>Espaço fitness do condomínio:</strong> muitos residenciais de Alphaville contam com academia ou espaço fitness nas áreas comuns — quando é o caso, adapto o protocolo aos equipamentos disponíveis.</li>
+<li><strong>Academias próximas:</strong> para quem prefere estrutura completa, acompanho alunos em academias da região de Alphaville, como <a href="/blog/smart-fit-alphaville">Smart Fit</a>, <a href="/blog/bodytech-alphaville">Bodytech</a>, <a href="/blog/bio-ritmo-alphaville">Bio Ritmo</a> e <a href="/blog/ironberg-alphaville">Ironberg</a>.</li>
+</ul>
+
+<h3>Dicas para treinar morando no Residencial 9</h3>
+
+<ul>
+<li>Se optar por academia, o meio da manhã e o início da tarde costumam ser os horários mais tranquilos das unidades da região.</li>
+<li>As áreas comuns e ruas internas arborizadas do condomínio funcionam bem para caminhadas e trabalho de condicionamento complementar.</li>
+<li>Para quem passa horas sentado, exercícios de <a href="/blog/postura-trabalho-sentado-exercicios">postura para quem trabalha sentado</a> ajudam entre as sessões.</li>
+</ul>
+
+<h2>Área de atendimento e deslocamentos</h2>
+
+<p>O Alphaville Residencial 9 fica em Santana de Parnaíba (SP), em região contígua a Alphaville e Barueri. Na prática, do condomínio até o centro comercial de Alphaville são cerca de 10 a 15 minutos de carro; até o <a href="/personal-trainer-tambore">Tamboré</a>, cerca de 15 minutos; e até o centro de <a href="/personal-trainer-barueri">Barueri</a>, cerca de 15 a 20 minutos, dependendo do trânsito. Também atendo em toda <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>.</p>
+
+<h3>Condomínios vizinhos atendidos</h3>
+
+<p>Além do Residencial 9, atendo moradores dos condomínios vizinhos: <a href="/blog/personal-trainer-alphaville-residencial-8">Residencial 8</a>, <a href="/blog/personal-trainer-alphaville-residencial-10">Residencial 10</a>, <a href="/blog/personal-trainer-alphaville-residencial-11">Residencial 11</a>, <a href="/blog/personal-trainer-alphaville-residencial-12">Residencial 12</a> e <a href="/blog/personal-trainer-melville">Melville</a>, entre outros residenciais de Alphaville.</p>
+
 <h2>Minha história: do excesso de peso à saúde que se mantém</h2>
 
-<p>Convivi com obesidade antes de entender como o corpo funciona de verdade. Esse processo de transformação — descrito na <a href="/minha-historia">minha história</a> — me deu não apenas o método, mas a compreensão de que resultado sustentável exige abordagem individualizada e consistência no longo prazo. É o que ofereço para cada aluno no Residencial 9.</p>
+<p>Convivi com obesidade antes de entender como o corpo funciona de verdade. Esse processo de transformação — perdi mais de 40kg, história descrita na <a href="/minha-historia">minha história</a> — me deu não apenas o método, refinado e validado na prática ao longo do atendimento de alunos, mas a compreensão de que resultado sustentável exige abordagem individualizada e consistência no longo prazo. É o que ofereço para cada aluno no Residencial 9.</p>
 
-<p>Veja exemplos de alunos reais na <a href="/resultados">página de resultados</a>. Para conhecer as modalidades de atendimento disponíveis, acesse a <a href="/consultoria">consultoria</a>.</p>
+<p>Veja exemplos de alunos reais na <a href="/resultados">página de resultados</a>. Para conhecer as modalidades de atendimento disponíveis — incluindo consultoria online para quem viaja com frequência —, acesse a <a href="/consultoria">consultoria</a> ou fale comigo pela página de <a href="/contato">contato</a>.</p>
 
 <h3>Leia Também</h3>
 <ul>
@@ -17250,24 +17332,52 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
     faq: [
       {
-        question: "O que torna um protocolo de treino verdadeiramente individualizado no Residencial 10?",
+        question:
+          "O que torna um protocolo de treino verdadeiramente individualizado no Residencial 10?",
         answer:
           "Um protocolo individualizado é construído com base em avaliação física do aluno, não adaptado de outro protocolo pronto. Considera composição corporal atual, histórico de lesões, objetivo real, disponibilidade de treino e resposta individual ao estímulo. Não existe ficha genérica.",
       },
       {
-        question: "Personal trainer no Alphaville Residencial 10 atende mulheres?",
+        question:
+          "Personal trainer no Alphaville Residencial 10 atende mulheres?",
         answer:
           "Sim. Atendo homens e mulheres de todas as idades. O protocolo feminino considera as especificidades fisiológicas — incluindo as variações hormonais ao longo do mês — para otimizar o resultado.",
       },
       {
-        question: "Personal trainer no Residencial 10 de Alphaville atende executivos com agenda muito cheia?",
+        question:
+          "Personal trainer no Residencial 10 de Alphaville atende executivos com agenda muito cheia?",
         answer:
           "Esse é um perfil frequente no atendimento. O protocolo é montado para maximizar resultado dentro do tempo real disponível — com sessões objetivas, progressão eficiente e suporte online nos dias de treino autônomo.",
       },
       {
-        question: "Como saber se o personal trainer no Alphaville Residencial 10 é o profissional certo?",
+        question:
+          "Como saber se o personal trainer no Alphaville Residencial 10 é o profissional certo?",
         answer:
           "A primeira conversa resolve essa dúvida. Explico meu método, mostro como funciona o processo e apresento resultados de alunos reais. A decisão é tomada com informação — sem pressão de fechamento.",
+      },
+      {
+        question:
+          "O treino pode acontecer na minha casa ou no espaço fitness do Residencial 10?",
+        answer:
+          "Sim. Atendo na residência do aluno dentro do condomínio, no espaço fitness quando o residencial dispõe de um, ou em academias próximas de Alphaville, como Ironberg, Smart Fit e NitroGym. O local é escolhido conforme sua rotina e preferência.",
+      },
+      {
+        question:
+          "Quantas vezes por semana devo treinar com personal no Residencial 10?",
+        answer:
+          "Para a maioria dos alunos, 2 a 4 sessões semanais com acompanhamento geram excelente progresso — combinadas, quando necessário, com treinos autônomos orientados. A frequência ideal depende do objetivo, do nível atual e da agenda; definimos juntos na avaliação inicial.",
+      },
+      {
+        question:
+          "Quanto custa personal trainer no Alphaville Residencial 10?",
+        answer:
+          "O investimento varia conforme formato (residencial, academia ou consultoria online), frequência semanal e plano. Entre em contato para uma proposta personalizada — sem tabela genérica, porque o atendimento também não é genérico.",
+      },
+      {
+        question:
+          "Trabalho em home office no Residencial 10. O treino ajuda com dores de tanto ficar sentado?",
+        answer:
+          "Sim. O protocolo inclui fortalecimento, mobilidade e correções posturais específicas para quem passa muitas horas sentado — reduzindo dores lombares e cervicais comuns nesse perfil e melhorando disposição ao longo do dia de trabalho.",
       },
     ],
     faqSchema: [
@@ -17293,17 +17403,65 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para que esse resultado aconteça, o protocolo precisa ser sustentável desde o início. Carga adequada ao nível atual, progressão gradual, alimentação que não exige heroísmo cotidiano e frequência de treino compatível com a vida real do aluno.</p>
 
+<h2>Como o protocolo individualizado é construído</h2>
+
+<p>Tudo parte de uma avaliação física detalhada: composição corporal, percentual de gordura, medidas, força, mobilidade, histórico de lesões e rotina real de trabalho e sono. Com esses dados, monto a periodização — treino organizado em ciclos, com progressão de carga planejada — combinando musculação, condicionamento físico e, quando faz sentido, treinamento funcional.</p>
+
+<p>O acompanhamento é contínuo: reavaliações periódicas, ajustes de estímulo, atenção à recuperação muscular e à técnica de execução. Seja o objetivo emagrecimento, hipertrofia ou os dois em sequência, o método é o mesmo que uso há mais de 20 anos — refinado e validado na prática ao longo do atendimento de alunos. Para aprofundar, vale ler <a href="/blog/por-que-voce-nao-consegue-emagrecer">por que você não consegue emagrecer</a> e <a href="/blog/como-ganhar-massa-muscular">como ganhar massa muscular</a>.</p>
+
+<h2>Perfil dos moradores do Residencial 10 e objetivos mais comuns</h2>
+
+<p>Entre executivos que passam o dia entre reuniões e viagens e profissionais que migraram para o home office, os objetivos que mais escuto no Residencial 10 são:</p>
+
+<ul>
+<li>Recuperar condicionamento físico depois de anos priorizando a carreira</li>
+<li>Perder gordura abdominal acumulada na rotina sedentária de escritório</li>
+<li>Ganhar força e massa muscular com o menor número de sessões possível</li>
+<li>Corrigir postura e reduzir tensões de quem trabalha muitas horas sentado — tema que trato em <a href="/blog/postura-trabalho-sentado-exercicios">exercícios de postura para quem trabalha sentado</a></li>
+<li>Manter constância mesmo com agenda imprevisível, alternando presencial e suporte online</li>
+</ul>
+
+<h2>Treino com dores e limitações: segurança antes de intensidade</h2>
+
+<p>Boa parte dos profissionais que atendo chega com alguma dor: lombar, ombro, joelho. Tenho cursos voltados ao treinamento de pessoas com dores e limitações musculoesqueléticas — e, por ter vivenciado dores comuns na minha própria trajetória de mais de 20 anos de treinos, entendo na prática a insegurança de treinar sentindo desconforto.</p>
+
+<p>A metodologia une conhecimento técnico, experiência prática e acompanhamento individualizado para treinar com segurança e eficiência: mobilidade e aquecimento direcionados (veja <a href="/blog/mobilidade-articular-pre-treino">mobilidade articular no pré-treino</a>), seleção inteligente de exercícios e progressão respeitando o quadro — como explico em <a href="/blog/dor-lombar-na-musculacao">dor lombar na musculação</a>.</p>
+
+<h2>Onde treinar morando no Residencial 10</h2>
+
+<ul>
+<li><strong>Na sua casa:</strong> atendimento residencial dentro do condomínio, com equipamentos portáteis ou a estrutura que você já possui — o formato mais eficiente para agendas apertadas.</li>
+<li><strong>No espaço fitness do condomínio:</strong> muitos residenciais de Alphaville contam com academia nas áreas comuns; quando é o caso, o protocolo é adaptado aos equipamentos disponíveis.</li>
+<li><strong>Em academias da região:</strong> acompanho alunos em unidades próximas de Alphaville, como <a href="/blog/ironberg-alphaville">Ironberg</a>, <a href="/blog/smart-fit-alphaville">Smart Fit</a>, <a href="/blog/nitrogym-alphaville">NitroGym</a> e <a href="/blog/academia-gavioes-alphaville">Gaviões</a>.</li>
+</ul>
+
+<h3>Dicas práticas para a rotina de treino no Residencial 10</h3>
+
+<ul>
+<li>Executivo com agenda cheia: sessões no início da manhã, antes do trânsito da Castello Branco, tendem a ser as mais consistentes.</li>
+<li>Quem treina em academia da região encontra menos movimento entre 9h e 11h e no início da tarde.</li>
+<li>Home office: uma sessão residencial no meio do dia quebra o ciclo de horas sentado e melhora o rendimento da tarde.</li>
+</ul>
+
+<h2>Área de atendimento e deslocamentos</h2>
+
+<p>O Residencial 10 fica em Santana de Parnaíba (SP), colado à região de Alphaville e Barueri. Do condomínio, o centro comercial de Alphaville fica a cerca de 10 a 15 minutos de carro; o <a href="/personal-trainer-tambore">Tamboré</a>, a cerca de 15 minutos; e o centro de <a href="/personal-trainer-barueri">Barueri</a>, a cerca de 15 a 20 minutos, dependendo do trânsito. Atendo também em toda <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a> e nos demais bairros de <a href="/personal-trainer-alphaville">Alphaville</a>.</p>
+
+<h3>Condomínios vizinhos atendidos</h3>
+
+<p>Também atendo moradores dos residenciais próximos: <a href="/blog/personal-trainer-alphaville-residencial-8">Residencial 8</a>, <a href="/blog/personal-trainer-alphaville-residencial-9">Residencial 9</a>, <a href="/blog/personal-trainer-alphaville-residencial-11">Residencial 11</a>, <a href="/blog/personal-trainer-alphaville-residencial-12">Residencial 12</a> e <a href="/blog/personal-trainer-melville">Melville</a>.</p>
+
 <h2>Atendendo no Residencial 10: o que muda com experiência local</h2>
 
 <p>Trabalho como <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a> e Santana de Parnaíba há mais de 20 anos. O Residencial 10 faz parte desse território de experiência. Conheço as academias da região, sei quais têm equipamento adequado, quais têm limitações e como adaptar o protocolo a cada contexto.</p>
 
-<p>Mais do que isso: conheço o tipo de vida que se leva aqui. E isso muda a conversa — porque o protocolo é construído para uma realidade que entendo de dentro, não imaginada de fora.</p>
+<p>Mais do que isso: conheço o tipo de vida que se leva aqui. E isso muda a conversa — porque o protocolo é construído para uma realidade que entendo de dentro, não imaginada de fora. Minha própria transformação — fui obeso e perdi mais de 40kg, como conto na <a href="/minha-historia">minha história</a> — é a base dessa compreensão.</p>
 
 <h2>Próximos passos para moradores do Residencial 10</h2>
 
-<p>A primeira conversa é sem compromisso. Me conta o que você quer, o que já tentou e qual é a sua rotina. A partir daí, apresento como funciona o processo e o que você pode esperar como resultado.</p>
+<p>A primeira conversa é sem compromisso. Me conta o que você quer, o que já tentou e qual é a sua rotina. A partir daí, apresento como funciona o processo e o que você pode esperar como resultado. Se a agenda pede flexibilidade total, a <a href="/consultoria">consultoria online</a> também é uma opção.</p>
 
-<p>Veja exemplos na <a href="/resultados">página de resultados</a>, conheça as modalidades disponíveis na <a href="/consultoria">consultoria</a> e tire dúvidas nas <a href="/faq">perguntas frequentes</a>.</p>
+<p>Veja exemplos na <a href="/resultados">página de resultados</a>, conheça as modalidades disponíveis na <a href="/consultoria">consultoria</a>, tire dúvidas nas <a href="/faq">perguntas frequentes</a> ou fale comigo pelo <a href="/contato">contato</a>.</p>
 
 <h3>Leia Também</h3>
 <ul>
@@ -17336,24 +17494,52 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
     faq: [
       {
-        question: "O que é recomposição corporal e como personal trainer no Residencial 11 aplica?",
+        question:
+          "O que é recomposição corporal e como personal trainer no Residencial 11 aplica?",
         answer:
           "Recomposição corporal é o processo de perder gordura e ganhar músculo ao mesmo tempo. É possível especialmente para iniciantes e para pessoas com sobrepeso. O protocolo combina treino de força com déficit calórico moderado e ingestão proteica adequada.",
       },
       {
-        question: "Como composição corporal é medida com personal trainer no Alphaville Residencial 11?",
+        question:
+          "Como composição corporal é medida com personal trainer no Alphaville Residencial 11?",
         answer:
           "Através de avaliação mensal com medidas corporais (circunferências), dobras cutâneas ou bioimpedância, conforme disponibilidade. O percentual de gordura e a massa magra são monitorados para garantir que a perda de peso está sendo de gordura — não de músculo.",
       },
       {
-        question: "Personal trainer no Residencial 11 trabalha com suplementação?",
+        question:
+          "Personal trainer no Residencial 11 trabalha com suplementação?",
         answer:
           "Dou orientações sobre suplementos com evidência científica sólida — proteína whey, creatina e cafeína, principalmente. Para prescrição detalhada, recomendo nutricionista. Suplementação é complemento, não substituto de treino e alimentação adequados.",
       },
       {
-        question: "Quanto tempo leva para melhorar composição corporal com personal no Residencial 11?",
+        question:
+          "Quanto tempo leva para melhorar composição corporal com personal no Residencial 11?",
         answer:
           "Os primeiros resultados visíveis em composição corporal aparecem em 6 a 8 semanas de protocolo consistente. Mudanças significativas e sustentáveis acontecem em 3 a 6 meses — dependendo do ponto de partida, do objetivo e da adesão ao protocolo.",
+      },
+      {
+        question:
+          "O atendimento pode ser na minha casa no Residencial 11 ou no espaço fitness do condomínio?",
+        answer:
+          "Sim. Atendo na residência do aluno, no espaço fitness do condomínio quando disponível, ou em academias próximas da região de Alphaville, como Smart Fit, Bodytech e Panobianco. Definimos o formato mais prático para a sua rotina.",
+      },
+      {
+        question:
+          "Quanto custa personal trainer no Alphaville Residencial 11?",
+        answer:
+          "O valor depende do formato (residencial, academia ou consultoria online), da frequência semanal e do plano contratado. Entre em contato para receber uma proposta adequada ao seu objetivo e à sua rotina.",
+      },
+      {
+        question:
+          "Sou iniciante e tenho pouco tempo. Quantas sessões semanais no Residencial 11 fazem diferença?",
+        answer:
+          "Para iniciantes, 2 a 3 sessões semanais bem estruturadas já geram melhora clara de composição corporal em poucos meses. Com técnica correta e progressão de carga adequada, qualidade de estímulo compensa quantidade de tempo.",
+      },
+      {
+        question:
+          "Casais ou familiares do Residencial 11 podem treinar juntos?",
+        answer:
+          "Sim. Atendo duplas — casais ou familiares — com protocolos individualizados executados na mesma sessão. É um formato prático para famílias do condomínio que querem criar hábitos saudáveis juntas mantendo a individualização do treino.",
       },
     ],
     faqSchema: [
@@ -17379,17 +17565,65 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Com <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>, o protocolo de treino é construído para maximizar estímulo muscular enquanto o déficit calórico cuida da gordura. Os dois objetivos em paralelo — com a proporção certa para cada fase.</p>
 
+<h2>Como funciona o processo no Residencial 11, passo a passo</h2>
+
+<p>O trabalho começa com avaliação física completa: medidas, percentual de gordura, testes de força e mobilidade, histórico de saúde e rotina. Em seguida, a periodização organiza o treinamento personalizado em fases — com progressão de carga planejada, musculação como base e complementos de condicionamento físico e treinamento funcional conforme o objetivo.</p>
+
+<p>Quem busca emagrecimento encontra caminho detalhado em <a href="/blog/por-que-voce-nao-consegue-emagrecer">por que você não consegue emagrecer</a>; quem prioriza hipertrofia, em <a href="/blog/como-ganhar-massa-muscular">como ganhar massa muscular</a>. Nos dois casos, o eixo é o mesmo: força, resistência, boa técnica e consistência — com prazos honestos: primeiras mudanças visíveis em 6 a 8 semanas e transformações consolidadas em 3 a 6 meses.</p>
+
 <h2>Como a avaliação mensal garante que o resultado está indo na direção certa</h2>
 
 <p>A reavaliação mensal serve para confirmar que a composição corporal está evoluindo na direção correta: gordura diminuindo, massa muscular mantida ou aumentando. Se não estiver, o protocolo é ajustado — seja no treino, na orientação alimentar ou na combinação dos dois.</p>
 
 <p>Esse monitoramento contínuo é o que separa um programa de resultados de uma tentativa sem feedback. Você sabe o que está funcionando, o que precisa mudar e por que.</p>
 
+<h2>Perfil dos moradores do Residencial 11 e objetivos mais comuns</h2>
+
+<p>No Residencial 11 predominam casais e famílias jovens em fase ativa da vida — gente entre 30 e 50 anos conciliando carreira, filhos pequenos e pouco tempo livre. Os pedidos mais frequentes:</p>
+
+<ul>
+<li>Recompor o corpo depois da gestação ou de anos de sedentarismo</li>
+<li>Reduzir percentual de gordura sem dietas radicais que não cabem na rotina da casa</li>
+<li>Ganhar massa muscular e definição treinando 3 vezes por semana</li>
+<li>Melhorar flexibilidade, mobilidade e disposição para acompanhar as crianças</li>
+<li>Construir hábitos saudáveis que toda a família consiga sustentar</li>
+</ul>
+
+<h2>Dores e limitações não impedem a recomposição corporal</h2>
+
+<p>Dor no joelho, lombar sensível ou ombro limitado não são motivo para adiar o início. Tenho cursos voltados ao treinamento de pessoas com dores e limitações musculoesqueléticas — e vivi na pele dores comuns ao longo da minha própria trajetória de treinos, o que me faz entender de perto a dificuldade de quem treina com receio.</p>
+
+<p>A metodologia une conhecimento técnico, experiência prática e acompanhamento individualizado para treinar com segurança e eficiência: seleção de exercícios compatível com o quadro, trabalho de postura e mobilidade (veja <a href="/blog/mobilidade-articular-pre-treino">mobilidade articular no pré-treino</a>), atenção à recuperação muscular e prevenção de lesões — princípios que detalho também em <a href="/blog/dor-lombar-na-musculacao">dor lombar na musculação</a> e, para outra faixa etária, em <a href="/blog/treino-funcional-para-idosos">treino funcional para idosos</a>.</p>
+
+<h2>Onde treinar: residência, condomínio ou academias próximas</h2>
+
+<ul>
+<li><strong>Atendimento residencial:</strong> treino na sua casa dentro do Residencial 11, com equipamentos portáteis ou a estrutura que você já tem — sem deslocamento e com total privacidade.</li>
+<li><strong>Espaço fitness do condomínio:</strong> muitos residenciais de Alphaville contam com academia nas áreas comuns; quando existe, o protocolo é adaptado ao que está disponível.</li>
+<li><strong>Academias da região:</strong> acompanho alunos em unidades próximas, como <a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a>, <a href="/blog/bodytech-alphaville">Bodytech</a>, <a href="/blog/panobianco-alphaville">Panobianco</a> e <a href="/blog/bio-ritmo-alphaville">Bio Ritmo</a> — cada uma com estrutura diferente, e ajudo a escolher a que melhor serve ao seu objetivo.</li>
+</ul>
+
+<h3>Dicas para treinar morando no Residencial 11</h3>
+
+<ul>
+<li>Pais de crianças pequenas: sessões residenciais no fim da manhã ou início da tarde evitam os horários de escola e sono dos filhos.</li>
+<li>Nas academias da região de Alphaville, meio da manhã e início da tarde são os períodos mais vazios para treinar com equipamentos livres.</li>
+<li>As áreas comuns arborizadas do condomínio servem bem para caminhadas e trabalho aeróbico complementar entre as sessões de força.</li>
+</ul>
+
+<h2>Área de atendimento e deslocamentos</h2>
+
+<p>O Alphaville Residencial 11 está em Santana de Parnaíba (SP), região contígua a Alphaville e Barueri. Do condomínio ao centro comercial de Alphaville são cerca de 10 a 15 minutos de carro; ao <a href="/personal-trainer-tambore">Tamboré</a>, cerca de 15 minutos; e ao centro de <a href="/personal-trainer-barueri">Barueri</a>, cerca de 15 a 20 minutos, dependendo do trânsito. O atendimento cobre também toda <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a>.</p>
+
+<h3>Condomínios vizinhos atendidos</h3>
+
+<p>Além do Residencial 11, atendo moradores dos condomínios vizinhos: <a href="/blog/personal-trainer-alphaville-residencial-9">Residencial 9</a>, <a href="/blog/personal-trainer-alphaville-residencial-10">Residencial 10</a>, <a href="/blog/personal-trainer-alphaville-residencial-12">Residencial 12</a>, <a href="/blog/personal-trainer-alphaville-residencial-8">Residencial 8</a> e <a href="/blog/personal-trainer-melville">Melville</a>.</p>
+
 <h2>Resultados reais e modalidades disponíveis</h2>
 
-<p>A <a href="/minha-historia">minha história</a> começa exatamente aqui: na minha própria transformação de composição corporal — do excesso de gordura ao entendimento de como o corpo funciona. Esse processo me deu o método que aplico há mais de 20 anos com alunos em Alphaville e Santana de Parnaíba.</p>
+<p>A <a href="/minha-historia">minha história</a> começa exatamente aqui: na minha própria transformação de composição corporal — fui obeso, perdi mais de 40kg e passei do excesso de gordura ao entendimento de como o corpo funciona. Esse processo me deu o método que aplico há mais de 20 anos com alunos em Alphaville e Santana de Parnaíba — refinado e validado na prática, com atualização constante por meio de cursos e especializações em treinamento.</p>
 
-<p>Veja exemplos de alunos reais na <a href="/resultados">página de resultados</a>. Para conhecer as opções de atendimento para moradores do Residencial 11, acesse a <a href="/consultoria">consultoria</a>.</p>
+<p>Veja exemplos de alunos reais na <a href="/resultados">página de resultados</a>. Para conhecer as opções de atendimento para moradores do Residencial 11 — presencial ou consultoria online —, acesse a <a href="/consultoria">consultoria</a> ou envie uma mensagem pelo <a href="/contato">contato</a>.</p>
 
 <h3>Leia Também</h3>
 <ul>
@@ -17422,24 +17656,52 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
     faq: [
       {
-        question: "Personal trainer no Alphaville Residencial 12 atende alunos acima de 60 anos?",
+        question:
+          "Personal trainer no Alphaville Residencial 12 atende alunos acima de 60 anos?",
         answer:
           "Sim. Treino de força para terceira idade é uma das especialidades mais importantes do atendimento. O protocolo é adaptado para preservar e aumentar massa muscular, melhorar equilíbrio, saúde óssea e capacidade funcional no dia a dia.",
       },
       {
-        question: "O protocolo de treino muda com a idade com personal no Residencial 12?",
+        question:
+          "O protocolo de treino muda com a idade com personal no Residencial 12?",
         answer:
           "Sim. Cada fase da vida exige adaptações específicas: capacidade de recuperação, limitações articulares, objetivos e fatores de risco mudam. O protocolo é construído para o momento atual do aluno — não para um padrão fixo.",
       },
       {
-        question: "Personal trainer no Alphaville Residencial 12 atende mulheres na menopausa?",
+        question:
+          "Personal trainer no Alphaville Residencial 12 atende mulheres na menopausa?",
         answer:
           "Sim. A menopausa traz mudanças hormonais que afetam composição corporal, massa óssea e disposição. O treino de força é uma das intervenções mais eficazes para mitigar esses efeitos — e o protocolo leva em conta as especificidades dessa fase.",
       },
       {
-        question: "Como funciona o atendimento para jovens adultos no Residencial 12 de Alphaville?",
+        question:
+          "Como funciona o atendimento para jovens adultos no Residencial 12 de Alphaville?",
         answer:
           "Para jovens adultos, o foco costuma estar em hipertrofia, emagrecimento ou condicionamento físico. O protocolo é mais agressivo em progressão — porque a capacidade de recuperação é maior — mas igualmente individualizado.",
+      },
+      {
+        question:
+          "O personal trainer atende dentro do Residencial 12 ou preciso ir a uma academia?",
+        answer:
+          "As duas opções existem. Atendo em casa (atendimento residencial), no espaço fitness do condomínio quando o acesso de profissional externo é permitido, ou acompanhando o aluno em academias próximas da região de Alphaville, como Smart Fit, Ironberg, Bodytech e Bio Ritmo.",
+      },
+      {
+        question:
+          "Quantas vezes por semana devo treinar com personal no Residencial 12?",
+        answer:
+          "Para a maioria dos moradores, duas a três sessões semanais com acompanhamento geram progressão consistente — complementadas, quando faz sentido, por treinos orientados nos demais dias. A frequência ideal depende do objetivo, da fase da vida e da capacidade de recuperação de cada aluno.",
+      },
+      {
+        question:
+          "Quanto custa personal trainer na região do Alphaville Residencial 12?",
+        answer:
+          "O valor depende da modalidade (residencial, academia ou online), da frequência semanal e do formato de acompanhamento. Por isso não trabalho com tabela fechada: a proposta é apresentada com transparência após a primeira conversa, de acordo com o que faz sentido para o seu objetivo e rotina.",
+      },
+      {
+        question:
+          "Existe consultoria online para quem mora no Residencial 12 e viaja muito?",
+        answer:
+          "Sim. A consultoria online entrega protocolo individualizado, ajustes periódicos e check-ins semanais — mantendo a progressão mesmo com agenda imprevisível ou viagens frequentes. Muitos alunos combinam sessões presenciais com o acompanhamento online.",
       },
     ],
     faqSchema: [
@@ -17463,11 +17725,13 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>O jovem adulto que treina com método — <a href="https://pubmed.ncbi.nlm.nih.gov/28319102/" target="_blank" rel="noopener noreferrer">técnica correta, progressão estruturada, periodização baseada em evidência</a> — está construindo uma base de força e composição corporal que vai proteger a saúde nas décadas seguintes. Não é apenas resultado estético de curto prazo: é investimento em longevidade funcional.</p>
 
-<p>Para moradores jovens do Residencial 12, o protocolo tem progressão mais agressiva, volume maior e foco em construção muscular ou condicionamento aeróbico — com a técnica de execução estabelecida corretamente desde o início.</p>
+<p>Para moradores jovens do Residencial 12, o protocolo tem progressão mais agressiva, volume maior e foco em construção muscular ou condicionamento aeróbico — com a técnica de execução estabelecida corretamente desde o início. Para quem busca hipertrofia, o caminho passa por progressão de carga bem planejada e recuperação muscular adequada — expliquei os fundamentos no guia sobre <a href="/blog/como-ganhar-massa-muscular">como ganhar massa muscular</a>.</p>
 
 <h2>Treino na meia-idade: manter a progressão enquanto o corpo muda</h2>
 
 <p>A partir dos 35-40 anos, o corpo começa a responder de forma diferente ao treino. A recuperação é mais lenta, a perda de massa muscular começa a se acelerar e os objetivos tendem a mudar — de puramente estéticos para saúde e qualidade de vida. O protocolo precisa acompanhar essas mudanças.</p>
+
+<p>Nessa fase também aparecem as consequências de anos de trabalho sentado: encurtamentos, dor lombar ocasional, postura comprometida. O treino passa a incluir mobilidade, flexibilidade e fortalecimento postural — temas que abordo em <a href="/blog/postura-trabalho-sentado-exercicios">exercícios para quem trabalha sentado</a> e em <a href="/blog/mobilidade-articular-pre-treino">mobilidade articular no pré-treino</a>. E quando o objetivo é reverter o acúmulo de gordura dessa fase, o ponto de partida costuma ser entender <a href="/blog/por-que-voce-nao-consegue-emagrecer">por que o emagrecimento travou</a>.</p>
 
 <p>Com <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>, o protocolo é revisado periodicamente para refletir o momento atual do aluno — não o momento de dois anos atrás.</p>
 
@@ -17475,13 +17739,49 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para alunos acima de 60 anos, o treino de força é uma das intervenções mais importantes para preservar autonomia e qualidade de vida. Prevenção de quedas, manutenção de massa muscular, saúde óssea, controle metabólico — todos esses benefícios estão documentados pela ciência e são verificáveis na prática com meus alunos.</p>
 
-<p>A terceira idade não é contraindicação para treino — é uma fase que exige treino mais cuidadoso, não treino menos eficiente.</p>
+<p>A terceira idade não é contraindicação para treino — é uma fase que exige treino mais cuidadoso, não treino menos eficiente. Para os avós ativos do Residencial 12, o <a href="/blog/treino-funcional-para-idosos">treino funcional para idosos</a> complementa a musculação com padrões de movimento que fazem diferença direta no dia a dia: subir escadas, carregar netos, levantar do chão com segurança.</p>
+
+<h2>Como funciona o atendimento no Alphaville Residencial 12</h2>
+
+<p>O atendimento para moradores do Residencial 12 é pensado para a rotina de condomínio residencial fechado. Tudo começa com avaliação física completa — composição corporal, histórico de saúde, limitações articulares, objetivos e disponibilidade real de agenda. A partir daí, o protocolo é construído do zero, com periodização definida e reavaliação periódica para ajustar antes que a estagnação apareça.</p>
+
+<p><strong>Atendimento residencial</strong> — treino na sua casa, com equipamentos portáteis ou com o que você já tem. Ideal para quem quer eliminar o deslocamento da equação.</p>
+
+<p><strong>Espaço fitness do condomínio</strong> — muitos condomínios da região de Alphaville contam com academia interna ou áreas comuns adequadas ao treino; quando o Residencial 12 permite o acesso de profissional externo, a sessão acontece ali mesmo, sem sair do portão.</p>
+
+<p><strong>Academia da região</strong> — para quem prefere infraestrutura completa de musculação, acompanho o aluno em academias próximas de Alphaville.</p>
+
+<p><strong>Consultoria online</strong> — protocolo individualizado com check-ins semanais, para quem viaja com frequência ou prefere flexibilidade total. Conheça o formato na página de <a href="/consultoria">consultoria</a>.</p>
+
+<h2>Área de atendimento: Residencial 12 e região</h2>
+
+<p>O Alphaville Residencial 12 fica em Santana de Parnaíba, integrado à malha de alamedas e avenidas que conecta os residenciais de Alphaville. Além do próprio condomínio, atendo toda a região vizinha: os demais residenciais de Alphaville, o Tamboré, o centro comercial de Alphaville e os bairros próximos de <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a> e <a href="/personal-trainer-barueri">Barueri</a>.</p>
+
+<p>Os deslocamentos são curtos: o centro comercial de Alphaville fica a cerca de 10–15 minutos de carro, o <a href="/personal-trainer-tambore">Tamboré</a> a cerca de 10–15 minutos e o centro de Barueri a cerca de 15–20 minutos, dependendo do trânsito. Essa proximidade permite encaixar a sessão de treino na rotina sem que o deslocamento vire desculpa.</p>
+
+<h3>Condomínios vizinhos que também atendo</h3>
+
+<p>Além do Residencial 12, atendo moradores dos residenciais vizinhos de Alphaville — como o <a href="/blog/personal-trainer-alphaville-residencial-10">Residencial 10</a>, o <a href="/blog/personal-trainer-alphaville-residencial-11">Residencial 11</a>, o <a href="/blog/personal-trainer-alphaville-residencial-5">Residencial 5</a> e o <a href="/blog/personal-trainer-alphaville-residencial-6">Residencial 6</a> — além de condomínios próximos como o <a href="/blog/personal-trainer-melville">Melville</a> e os <a href="/blog/personal-trainer-genesis-1">Gênesis 1</a> e <a href="/blog/personal-trainer-genesis-2">Gênesis 2</a>, em Santana de Parnaíba.</p>
+
+<h3>Academias próximas ao Residencial 12</h3>
+
+<p>Para quem prefere treinar fora do condomínio, a região de Alphaville concentra boas opções onde posso acompanhar o aluno: a <a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a>, para quem busca praticidade e custo acessível; a <a href="/blog/ironberg-alphaville">Ironberg Alphaville</a>, referência em musculação pesada; a <a href="/blog/bodytech-alphaville">Bodytech Alphaville</a> e a <a href="/blog/bio-ritmo-alphaville">Bio Ritmo Alphaville</a>, com estrutura completa e ambiente premium. A escolha depende do seu objetivo, do equipamento necessário para o protocolo e da logística da sua rotina.</p>
+
+<h2>Treinar com dores e limitações: uma especialidade do atendimento</h2>
+
+<p>Boa parte dos alunos chega com alguma dor ou limitação musculoesquelética — lombar sensível, joelho que reclama, ombro com histórico de lesão. Tenho cursos voltados especificamente para o treinamento de pessoas com dores e limitações, e eu mesmo já vivenciei dores comuns ao longo da minha trajetória de treinos — o que aumenta a compreensão real das dificuldades de quem chega nessa condição.</p>
+
+<p>A metodologia une conhecimento técnico, experiência prática e acompanhamento individualizado para treinar com segurança e eficiência — respeitando a limitação sem usá-la como pretexto para não progredir. Quem sente incômodo lombar, por exemplo, pode entender melhor o tema no artigo sobre <a href="/blog/dor-lombar-na-musculacao">dor lombar na musculação</a>. É um método refinado e validado na prática ao longo do atendimento de alunos de todas as fases da vida.</p>
+
+<h2>Dicas para treinar morando no Residencial 12</h2>
+
+<p>Algumas recomendações práticas para moradores: se o condomínio conta com espaço fitness, os horários fora do pico (meio da manhã e início da tarde) costumam ser os mais tranquilos para uma sessão com atenção total à execução. As áreas comuns e ruas internas arborizadas do condomínio funcionam bem para caminhadas, corridas leves e treino funcional ao ar livre — ótimo complemento aeróbico entre as sessões de força. E para quem treina em academia da região, sair antes das 7h ou depois das 20h evita o horário de maior movimento das unidades de Alphaville.</p>
 
 <h2>Uma experiência pessoal que fundamenta o atendimento</h2>
 
-<p>Minha trajetória com o treino começa com a minha própria transformação física — e continua com 20 anos de aprendizado prático com centenas de alunos em diferentes fases da vida. Você pode ler mais sobre isso na <a href="/minha-historia">minha história</a>.</p>
+<p>Minha trajetória com o treino começa com a minha própria transformação física — fui obeso, perdi mais de 40kg e reconstruí minha relação com o corpo e com o treino. Essa vivência, somada a mais de 20 anos de musculação, cursos e especializações em treinamento e atualização constante, continua com o aprendizado prático de centenas de alunos em diferentes fases da vida. Você pode ler mais sobre isso na <a href="/minha-historia">minha história</a>.</p>
 
-<p>Para ver resultados de alunos de diferentes fases e perfis, acesse a <a href="/resultados">página de resultados</a>. Para conhecer as modalidades de atendimento disponíveis para moradores do Residencial 12, visite a <a href="/consultoria">consultoria</a>.</p>
+<p>Para ver resultados de alunos de diferentes fases e perfis, acesse a <a href="/resultados">página de resultados</a>. Para conhecer as modalidades de atendimento disponíveis para moradores do Residencial 12, visite a <a href="/consultoria">consultoria</a> ou fale comigo pela página de <a href="/contato">contato</a>.</p>
 
 <h3>Leia Também</h3>
 <ul>
@@ -17666,20 +17966,52 @@ RIR 3 = parou com 3 reps sobrando.</p>
     tags: ["personal trainer", "Melville", "Alphaville", "Santana de Parnaíba", "personal trainer condomínio"],
     faq: [
       {
-        question: "Tem personal trainer que atende no Melville Alphaville?",
-        answer: "Sim. Atendo moradores do Melville com protocolo individualizado — presencialmente na academia do condomínio, em academia parceira na região ou online. Mais de 20 anos na região de Alphaville e Tamboré.",
+        question:
+          "Tem personal trainer que atende no Melville Alphaville?",
+        answer:
+          "Sim. Atendo moradores do Melville com protocolo individualizado — presencialmente na academia do condomínio, em academia parceira na região ou online. Mais de 20 anos na região de Alphaville e Tamboré.",
       },
       {
-        question: "Personal trainer no Melville atende famílias?",
-        answer: "Sim. Atendo adultos em diferentes fases — desde jovens adultos em busca de hipertrofia ou emagrecimento até moradores mais experientes focados em saúde, longevidade e qualidade de movimento. Cada protocolo é construído para o objetivo individual.",
+        question:
+          "Personal trainer no Melville atende famílias?",
+        answer:
+          "Sim. Atendo adultos em diferentes fases — desde jovens adultos em busca de hipertrofia ou emagrecimento até moradores mais experientes focados em saúde, longevidade e qualidade de movimento. Cada protocolo é construído para o objetivo individual.",
       },
       {
-        question: "Como é o atendimento de personal trainer no Melville?",
-        answer: "O atendimento começa com uma avaliação completa — objetivos, histórico de saúde, limitações e rotina. A partir daí: protocolo individualizado, sessões com atenção exclusiva, suporte entre sessões e reavaliação mensal. Sem fichas genéricas.",
+        question:
+          "Como é o atendimento de personal trainer no Melville?",
+        answer:
+          "O atendimento começa com uma avaliação completa — objetivos, histórico de saúde, limitações e rotina. A partir daí: protocolo individualizado, sessões com atenção exclusiva, suporte entre sessões e reavaliação mensal. Sem fichas genéricas.",
       },
       {
-        question: "Personal trainer no Melville trabalha com reabilitação?",
-        answer: "Sim. Trabalho com recondicionamento físico pós-lesão em parceria com médicos e fisioterapeutas — um dos perfis mais frequentes na região. O retorno ao treino após cirurgia ou lesão é feito com protocolo seguro e progressão controlada.",
+        question:
+          "Personal trainer no Melville trabalha com reabilitação?",
+        answer:
+          "Sim. Trabalho com recondicionamento físico pós-lesão em parceria com médicos e fisioterapeutas — um dos perfis mais frequentes na região. O retorno ao treino após cirurgia ou lesão é feito com protocolo seguro e progressão controlada.",
+      },
+      {
+        question:
+          "O atendimento no Melville pode ser em casa ou no espaço fitness do condomínio?",
+        answer:
+          "Sim. O atendimento residencial acontece na sua casa com equipamentos portáteis, e, quando o condomínio permite acesso de profissional externo ao espaço fitness, a sessão pode acontecer ali mesmo. Também acompanho alunos em academias próximas, como Smart Fit, Ironberg, Bodytech e Bio Ritmo em Alphaville.",
+      },
+      {
+        question:
+          "Quantas sessões semanais são ideais para quem mora no Melville e viaja a trabalho?",
+        answer:
+          "Duas a três sessões presenciais bem periodizadas sustentam progressão consistente para a maioria dos moradores. Em semanas de viagem, o protocolo é adaptado para hotel ou peso corporal e o acompanhamento continua online — a consistência não depende de estar no condomínio.",
+      },
+      {
+        question:
+          "Quanto custa personal trainer na região do Melville?",
+        answer:
+          "O investimento varia conforme a modalidade (residencial, academia ou online), a frequência semanal e o nível de acompanhamento. Não trabalho com tabela única: após a primeira conversa e a avaliação dos seus objetivos, apresento uma proposta transparente e sem custos escondidos.",
+      },
+      {
+        question:
+          "Personal trainer no Melville atende iniciantes e alunos 50+?",
+        answer:
+          "Sim. Iniciantes se beneficiam de aprender a técnica correta desde a primeira sessão, e alunos 50+ têm no treino de força uma das intervenções mais importantes para massa muscular, saúde óssea e autonomia. O protocolo respeita o ponto de partida de cada um.",
       },
     ],
     faqSchema: [
@@ -17707,7 +18039,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Individualizado não é sinônimo de "diferente do que está na planilha padrão". É construído do zero — levando em conta sua biomecânica, seu histórico, seus objetivos e o equipamento disponível no local onde você treina.</p>
 
-<p>No Melville, o atendimento acontece na academia do condomínio (quando acessível), em academia parceira na região de Alphaville ou no modelo online. Em qualquer das modalidades, o protocolo tem a mesma qualidade e o acompanhamento é o mesmo.</p>
+<p>No Melville, o atendimento acontece na academia do condomínio (quando acessível), em academia parceira na região de Alphaville ou no modelo online. Em qualquer das modalidades, o protocolo tem a mesma qualidade e o acompanhamento é o mesmo. Tudo parte de uma avaliação física completa — composição corporal, percentual de gordura, histórico articular, mobilidade — que se transforma em periodização com progressão de carga definida e reavaliação mensal.</p>
 
 <h2>Saúde, longevidade e desempenho: os três pilares do atendimento no Melville</h2>
 
@@ -17715,9 +18047,41 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Esses três perfis convivem no Melville — e eu atendo todos com a mesma atenção e o mesmo método. Leia sobre minha trajetória pessoal de superação que fundamenta esse atendimento na <a href="/minha-historia">minha história</a> e veja resultados de alunos da região na <a href="/resultados">página de resultados</a>.</p>
 
+<h2>Perfil dos moradores do Melville e os objetivos mais frequentes</h2>
+
+<p>O Melville abriga em grande parte profissionais que usam a Rodovia Castello Branco diariamente — executivos e empresários que saem cedo para São Paulo e voltam no fim do dia — ao lado de cônjuges que administram a rotina da família e de moradores 50+ que já consolidaram a carreira e agora priorizam saúde. Isso gera três demandas recorrentes no meu atendimento no condomínio:</p>
+
+<p><strong>Recomposição corporal do executivo</strong> — reduzir percentual de gordura acumulado em anos de restaurante e reunião, sem abrir mão de energia para o trabalho. Quando o esforço isolado não funcionou, o primeiro passo é entender <a href="/blog/por-que-voce-nao-consegue-emagrecer">por que o emagrecimento não acontece</a>.</p>
+
+<p><strong>Força e hipertrofia com técnica</strong> — para quem já treina, mas estagnou por falta de periodização. O caminho está detalhado no guia de <a href="/blog/como-ganhar-massa-muscular">ganho de massa muscular</a>.</p>
+
+<p><strong>Movimento sem dor</strong> — quem passa o dia sentado no carro e no escritório acumula rigidez e desconforto lombar. Trabalho mobilidade, flexibilidade e fortalecimento com base nos princípios que explico em <a href="/blog/mobilidade-articular-pre-treino">mobilidade articular no pré-treino</a> e <a href="/blog/postura-trabalho-sentado-exercicios">exercícios de postura para quem trabalha sentado</a>.</p>
+
+<h2>Treinar com dores, limitações e pós-lesão: atendimento com segurança</h2>
+
+<p>O recondicionamento pós-lesão é um dos perfis mais frequentes no Melville — e é uma área em que invisto de forma contínua. Tenho cursos voltados especificamente para o treinamento de pessoas com dores e limitações musculoesqueléticas, e eu mesmo já convivi com dores comuns ao longo de mais de 20 anos de musculação. Essa vivência muda a forma como eu escuto o aluno: sei a diferença entre o desconforto que faz parte do processo e o sinal que exige ajuste imediato.</p>
+
+<p>A metodologia une conhecimento técnico, experiência prática e acompanhamento individualizado — um método refinado e validado na prática ao longo do atendimento de alunos — para que a limitação não vire sedentarismo. Em casos de reabilitação, o trabalho acontece em parceria com médicos e fisioterapeutas, com prevenção de lesões e progressão controlada como prioridades. Quem convive com incômodo nas costas encontra orientações no artigo sobre <a href="/blog/dor-lombar-na-musculacao">dor lombar na musculação</a>; para alunos mais velhos, o <a href="/blog/treino-funcional-para-idosos">treino funcional para idosos</a> mostra como manter autonomia e equilíbrio.</p>
+
+<h2>Área de atendimento: Melville, Alphaville e região</h2>
+
+<p>O Melville fica em Santana de Parnaíba, com acesso direto pela região da Rodovia Castello Branco e vizinhança imediata com o Tamboré. Os deslocamentos na região são curtos: o <a href="/personal-trainer-tambore">Tamboré</a> fica a cerca de 10–15 minutos de carro, o centro comercial de Alphaville a cerca de 10–15 minutos e o centro de <a href="/personal-trainer-barueri">Barueri</a> a cerca de 15–20 minutos, dependendo do trânsito. Também atendo os bairros próximos de <a href="/personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a> e toda a área de <a href="/personal-trainer-alphaville">Alphaville</a>.</p>
+
+<h3>Condomínios vizinhos ao Melville que também atendo</h3>
+
+<p>Além do Melville, atendo moradores de condomínios vizinhos da região: <a href="/blog/personal-trainer-valville">Valville</a>, <a href="/blog/personal-trainer-genesis-1">Gênesis 1</a> e <a href="/blog/personal-trainer-genesis-2">Gênesis 2</a>, os residenciais de Alphaville — como o <a href="/blog/personal-trainer-alphaville-residencial-1">Residencial 1</a>, o <a href="/blog/personal-trainer-alphaville-residencial-2">Residencial 2</a> e o <a href="/blog/personal-trainer-alphaville-residencial-12">Residencial 12</a> — e condomínios do Tamboré, como o <a href="/blog/personal-trainer-tambore-1">Tamboré 1</a> e o <a href="/blog/personal-trainer-quintas-de-tambore">Quintas de Tamboré</a>.</p>
+
+<h3>Academias próximas ao Melville</h3>
+
+<p>Para quem prefere estrutura completa de musculação fora do condomínio, acompanho alunos nas principais academias da região de Alphaville: <a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a> (praticidade e bom custo), <a href="/blog/ironberg-alphaville">Ironberg Alphaville</a> (referência para treino de força pesado), <a href="/blog/bodytech-alphaville">Bodytech Alphaville</a> e <a href="/blog/bio-ritmo-alphaville">Bio Ritmo Alphaville</a> (estrutura premium e aulas complementares). E muitos condomínios da região contam com espaço fitness próprio — quando é o caso do seu, a sessão pode acontecer ali, sem sair do portão.</p>
+
+<h2>Dicas para treinar morando no Melville</h2>
+
+<p>Recomendações práticas: quem usa a Castello Branco diariamente rende mais treinando antes de sair (6h–7h) ou logo ao voltar, antes do jantar — encaixar a sessão nas bordas do expediente elimina a principal causa de falta. Se o condomínio dispõe de espaço fitness, o meio da manhã costuma ser o horário mais vazio. As áreas comuns arborizadas funcionam bem para o trabalho aeróbico complementar e para treinamento funcional ao ar livre. E nas academias da região, evitar a faixa das 18h–20h garante acesso livre aos equipamentos do protocolo.</p>
+
 <h2>Por que moradores do Melville escolhem personal trainer com experiência regional</h2>
 
-<p>Viver na região de Alphaville e Tamboré há mais de 20 anos significa entender o contexto local — os deslocamentos, a rotina dos moradores, as academias disponíveis e o padrão de exigência de quem mora aqui. Não é um profissional que chega de fora — é alguém que conhece a região de dentro. Acesse a <a href="/personal-trainer-alphaville">página de personal trainer em Alphaville</a> para mais detalhes.</p>
+<p>Viver na região de Alphaville e Tamboré há mais de 20 anos significa entender o contexto local — os deslocamentos, a rotina dos moradores, as academias disponíveis e o padrão de exigência de quem mora aqui. Não é um profissional que chega de fora — é alguém que conhece a região de dentro. Somo a isso uma transformação pessoal real — fui obeso e perdi mais de 40kg, história que conto em <a href="/minha-historia">minha história</a> — e atualização constante por meio de cursos e especializações em treinamento. Acesse a <a href="/personal-trainer-alphaville">página de personal trainer em Alphaville</a> para mais detalhes ou fale comigo pela página de <a href="/contato">contato</a>.</p>
 
 <h3>Leia Também</h3>
 <ul>
