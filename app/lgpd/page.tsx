@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description:
     "Saiba como o Montinho Personal Trainer coleta, usa e protege seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).",
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: "https://www.montinhopersonal.com.br/lgpd",
+  },
 };
 
 export default function LGPD() {
