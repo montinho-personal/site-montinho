@@ -45,6 +45,10 @@ const faqLp = [
     a: "Sim. Acompanho alunos nas principais academias da região. Se você já tem matrícula, aproveitamos a estrutura que você já paga.",
   },
   {
+    q: "Estou muito acima do peso. Posso começar mesmo assim?",
+    a: "Pode — e talvez eu seja a pessoa certa para te entender. Eu comecei exatamente daí: mais de 40kg acima do peso. Ninguém vai te julgar, ninguém vai te expor. Começamos no seu ritmo, no lugar em que você se sentir mais confortável — inclusive na sua casa.",
+  },
+  {
     q: "Atende iniciantes que nunca treinaram?",
     a: "Sim — e é um dos públicos que mais atendo. Você não precisa 'estar em forma' para começar. Começamos do seu ponto atual, no seu ritmo, com segurança.",
   },
@@ -182,7 +186,7 @@ export default function LandingPage() {
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
               Resultados de quem confiou
             </h2>
-            <p className="text-center text-gray-400 mb-10">Pessoas reais, da sua região, com rotinas tão corridas quanto a sua.</p>
+            <p className="text-center text-gray-400 mb-10">Alunos reais de Alphaville e região — com agendas tão cheias quanto a sua.</p>
 
             <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-12 text-center">
               {[["-40kg","na própria pele"],["20+","anos de experiência"],["5.0 ★","17 avaliações Google"]].map(([n,d]) => (
@@ -236,7 +240,7 @@ export default function LandingPage() {
                 </figure>
               ))}
             </div>
-            <WhatsButton label="Quero resultados assim" />
+            <WhatsButton label="Quero ser o próximo resultado" />
           </div>
         </section>
 
@@ -262,8 +266,9 @@ export default function LandingPage() {
                 Eu sei exatamente como você se sente.
               </h2>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Porque eu já estive aí: acima do peso, sem energia, tentando dietas
-                que não duravam e treinos que não funcionavam.
+                Porque eu já estive aí: acima do peso, sem energia, preso no
+                efeito sanfona — emagrecia um pouco, recuperava tudo, e a culpa
+                parecia ser sempre minha.
               </p>
               <p className="text-gray-300 leading-relaxed mb-4">
                 Foram <strong className="text-white">mais de 40kg eliminados</strong> — não com sorte,
@@ -315,7 +320,7 @@ export default function LandingPage() {
         <section className="py-16 border-t border-white/10">
           <div className="max-w-5xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-              Simples assim
+              Como funciona — em 5 passos simples
             </h2>
             <ol className="grid sm:grid-cols-5 gap-4 text-center">
               {[
@@ -464,13 +469,17 @@ export default function LandingPage() {
             <h2 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
               Daqui a 3 meses, você vai desejar<br className="hidden sm:block" /> ter começado hoje.
             </h2>
-            <p className="text-gray-300 text-lg mb-10 max-w-xl mx-auto">
+            <p className="text-gray-300 text-lg mb-4 max-w-xl mx-auto">
               A primeira conversa não custa nada — nem dinheiro, nem compromisso.
               Só uma mensagem separa você do plano que finalmente funciona.
             </p>
+            <p className="text-gray-500 text-sm mb-10">
+              Atendo um número limitado de alunos por vez — é o que mantém o
+              acompanhamento realmente próximo.
+            </p>
             <WhatsButton
               label="Falar com o Montinho agora"
-              sub="🟢 Online — respondo pessoalmente"
+              sub="Respondo pessoalmente — geralmente em poucos minutos"
             />
             <p className="text-gray-600 text-xs mt-12">
               Montinho Personal Trainer · Alphaville, Barueri e Santana de Parnaíba · São Paulo
