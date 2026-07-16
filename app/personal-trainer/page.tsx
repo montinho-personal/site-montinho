@@ -60,6 +60,14 @@ const faqLp = [
     q: "Em quanto tempo vejo resultado?",
     a: "Disposição e força melhoram nas primeiras semanas. Mudanças visíveis de composição corporal costumam aparecer entre o 2º e o 3º mês, com constância. Não prometo milagre — prometo método.",
   },
+  {
+    q: "Quanto tempo dura cada sessão?",
+    a: "Em geral, 60 minutos de treino focado — sem enrolação e sem tempo perdido. A frequência ideal (2x, 3x ou mais por semana) é definida junto com você, conforme objetivo e rotina.",
+  },
+  {
+    q: "Preciso ter equipamentos em casa?",
+    a: "Não. Para atendimento em casa eu levo equipamentos portáteis quando necessário, e o treino é desenhado para o espaço e os recursos disponíveis. Halteres e acessórios podem ser incorporados aos poucos, se você quiser.",
+  },
 ];
 
 const faqSchema = {
@@ -123,27 +131,24 @@ export default function LandingPage() {
                 className="text-4xl sm:text-5xl lg:text-[3.4rem] font-bold leading-[1.08] mb-6"
                 style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
               >
-                Perca peso e ganhe saúde com quem já{" "}
+                Transforme seu corpo em Alphaville com quem já{" "}
                 <span className="text-[#BA9E50]">esteve do outro lado</span>.
               </h1>
-              <p className="text-gray-300 text-lg leading-relaxed mb-4 max-w-lg">
-                Eu já fui obeso. Perdi mais de 40kg sem fórmula mágica — e há mais
-                de 20 anos ajudo pessoas como você a fazerem o mesmo, com método,
-                segurança e acompanhamento de verdade.
-              </p>
-              <p className="text-gray-400 text-sm mb-8">
-                📍 Atendimento em <strong className="text-gray-200">Alphaville, Tamboré, Barueri e Santana de Parnaíba</strong> — em casa, no condomínio ou na sua academia.
+              <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-lg">
+                Para quem quer <strong className="text-white">emagrecer, ganhar massa muscular ou voltar
+                a ter saúde</strong> — mesmo sem tempo, mesmo tendo tentado antes.
+                Atendimento na sua casa, no seu condomínio ou na sua academia, em{" "}
+                <strong className="text-white">Alphaville, Tamboré, Barueri e Santana de Parnaíba</strong>.
               </p>
               <WhatsButton
-                label="Quero começar — falar no WhatsApp"
+                label="Quero minha avaliação — WhatsApp"
                 sub="Resposta rápida · Primeira conversa sem compromisso"
               />
-              <div className="flex items-center justify-center sm:justify-start gap-2 mt-5 text-sm text-gray-300">
-                <Stars />
-                <span>
-                  <strong className="text-white">5.0</strong> no Google · {testimonials.totalReviews} avaliações
-                </span>
-              </div>
+              <ul className="flex flex-col sm:flex-row flex-wrap items-center sm:items-start gap-x-6 gap-y-2 mt-6 text-sm text-gray-300">
+                <li className="flex items-center gap-2"><Stars /> <strong className="text-white">5.0</strong>&nbsp;· {testimonials.totalReviews} avaliações no Google</li>
+                <li className="flex items-center gap-2"><span className="text-[#BA9E50]">●</span> Ex-obeso: perdeu mais de 40kg</li>
+                <li className="flex items-center gap-2"><span className="text-[#BA9E50]">●</span> 20+ anos de experiência</li>
+              </ul>
             </div>
             <div className="relative mx-auto w-full max-w-md lg:max-w-none">
               <div className="relative aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
@@ -166,7 +171,16 @@ export default function LandingPage() {
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
               Resultados de quem confiou
             </h2>
-            <p className="text-center text-gray-400 mb-12">Pessoas reais, da sua região, com rotinas tão corridas quanto a sua.</p>
+            <p className="text-center text-gray-400 mb-10">Pessoas reais, da sua região, com rotinas tão corridas quanto a sua.</p>
+
+            <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-12 text-center">
+              {[["-40kg","na própria pele"],["20+","anos de experiência"],["5.0 ★","17 avaliações Google"]].map(([n,d]) => (
+                <div key={n} className="border border-white/10 rounded-2xl py-5 px-2 bg-black/40">
+                  <p className="text-[#BA9E50] text-2xl sm:text-3xl font-bold" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>{n}</p>
+                  <p className="text-gray-400 text-xs mt-1">{d}</p>
+                </div>
+              ))}
+            </div>
 
             <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">
               {["/antes-depois.jpg", "/antes-depois-montinho-personal-trainer.jpg"].map((src) => (
@@ -194,36 +208,22 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* ───────────────────── 3. BENEFÍCIOS ───────────────────── */}
-        <section className="py-16 border-t border-white/10">
-          <div className="max-w-6xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-              O que muda na sua vida
-            </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                ["Emagreça com estratégia", "Sem dieta maluca e sem viver de salada. Um plano que cabe na sua rotina — e que você consegue manter depois."],
-                ["Ganhe músculos com inteligência", "Treino certo, na dose certa. Você para de 'ir na academia' e começa a evoluir de verdade, semana após semana."],
-                ["Treine sem medo de lesão", "Cada exercício adaptado ao seu corpo e histórico. Quem tem dor não precisa parar — precisa treinar certo."],
-                ["Energia para o dia inteiro", "Disposição para o trabalho, para a família e para a vida. É o primeiro resultado que aparece — em semanas."],
-                ["Evolução acompanhada", "Você nunca fica perdido: reavaliações periódicas mostram preto no branco o que está funcionando."],
-                ["Suporte de verdade", "Dúvida no meio da semana? Me chama. O acompanhamento não termina quando a sessão acaba."],
-              ].map(([t, d]) => (
-                <div key={t} className="bg-white/[0.03] border border-white/10 rounded-2xl p-7 hover:border-[#BA9E50]/40 transition-colors duration-300">
-                  <span className="text-[#25D366] text-xl">✔</span>
-                  <h3 className="text-white font-bold text-lg mt-3 mb-2">{t}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">{d}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* ───────────────────── 4. HISTÓRIA ───────────────────── */}
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-4xl mx-auto px-5 sm:px-8 grid md:grid-cols-5 gap-10 items-center">
-            <div className="md:col-span-2 relative aspect-[3/4] rounded-2xl overflow-hidden border border-white/10">
-              <Image src="/foto-historia.jpg" alt="Montinho antes da transformação de mais de 40kg" fill loading="lazy" sizes="(max-width: 768px) 80vw, 320px" className="object-cover" />
+            <div className="md:col-span-2 grid grid-cols-2 gap-3">
+              <figure>
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-white/10">
+                  <Image src="/foto-historia.jpg" alt="Montinho antes: mais de 40kg acima do peso" fill loading="lazy" sizes="(max-width: 768px) 45vw, 170px" className="object-cover" />
+                </div>
+                <figcaption className="text-center text-gray-500 text-xs mt-2 uppercase tracking-wider">Antes</figcaption>
+              </figure>
+              <figure>
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#BA9E50]/40">
+                  <Image src="/montinho-personal-trainer-shape.jpg" alt="Montinho hoje, personal trainer" fill loading="lazy" sizes="(max-width: 768px) 45vw, 170px" className="object-cover" />
+                </div>
+                <figcaption className="text-center text-[#BA9E50] text-xs mt-2 uppercase tracking-wider">Hoje</figcaption>
+              </figure>
             </div>
             <div className="md:col-span-3">
               <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
@@ -242,9 +242,39 @@ export default function LandingPage() {
                 Quando eu digo que entendo sua dificuldade, não é frase de vendedor.
                 É memória.
               </p>
-              <p className="text-[#BA9E50] font-semibold italic">
+              <p className="text-[#BA9E50] font-semibold italic mb-8">
                 &ldquo;Não vendo fórmula mágica. Divido o caminho que eu mesmo percorri.&rdquo;
               </p>
+              <WhatsButton label="Quero percorrer esse caminho" />
+            </div>
+          </div>
+        </section>
+
+
+        {/* ───────────────────── 3. BENEFÍCIOS ───────────────────── */}
+        <section className="py-16 border-t border-white/10">
+          <div className="max-w-6xl mx-auto px-5 sm:px-8">
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+              O que muda na sua vida
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                ["Roupas que voltam a servir", "Emagrecimento com estratégia, sem dieta maluca. O espelho muda — e o guarda-roupa inteiro volta a fazer sentido."],
+                ["Um corpo que você tem orgulho", "Músculos construídos com inteligência, no ritmo certo. Você para de 'ir na academia' e começa a ver evolução real."],
+                ["Adeus ao medo de se machucar", "Cada movimento adaptado ao seu corpo e histórico. Quem tem dor não precisa parar — precisa de orientação certa."],
+                ["Energia que sobra no fim do dia", "Disposição para o trabalho, os filhos e a vida. É o primeiro resultado que aparece — nas primeiras semanas."],
+                ["Você nunca mais treina no escuro", "Reavaliações periódicas mostram preto no branco o que está funcionando. Progresso que você VÊ."],
+                ["Alguém que não te deixa desistir", "Dúvida na terça à noite? Me chama. O acompanhamento não termina quando a sessão acaba."],
+              ].map(([t, d]) => (
+                <div key={t} className="bg-white/[0.03] border border-white/10 rounded-2xl p-7 hover:border-[#BA9E50]/40 transition-colors duration-300">
+                  <span className="text-[#25D366] text-xl">✔</span>
+                  <h3 className="text-white font-bold text-lg mt-3 mb-2">{t}</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">{d}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-10">
+              <WhatsButton label="Quero essa transformação" />
             </div>
           </div>
         </section>
@@ -261,7 +291,7 @@ export default function LandingPage() {
                 ["2", "Avaliação", "Entendo seu corpo, rotina e histórico."],
                 ["3", "Plano", "Estratégia desenhada para você — não um PDF genérico."],
                 ["4", "Treinos", "Em casa, no condomínio ou na sua academia."],
-                ["5", "Evolução", "Ajustes constantes até o resultado — e além."],
+                ["5", "Resultados", "Ajustes constantes até o resultado — e além."],
               ].map(([n, t, d]) => (
                 <li key={n} className="bg-white/[0.03] border border-white/10 rounded-2xl p-5">
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#BA9E50] text-black font-bold mb-3">{n}</span>
@@ -305,6 +335,32 @@ export default function LandingPage() {
                 </ul>
               </div>
             </div>
+            <div className="mt-10">
+              <WhatsButton label="Quero o Método Montinho" />
+            </div>
+          </div>
+        </section>
+
+        {/* ───────────────────── AUTORIDADE ───────────────────── */}
+        <section className="py-16 border-t border-white/10">
+          <div className="max-w-5xl mx-auto px-5 sm:px-8">
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+              Quem vai cuidar do seu resultado
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                ["🏋️", "20+ anos de prática", "Mais de duas décadas vivendo musculação todos os dias — não é teoria de apostila."],
+                ["📚", "Estudo constante", "Cursos e especializações em treinamento, incluindo formação para alunos com dores e limitações."],
+                ["🎯", "Método próprio", "Refinado e validado na prática, aluno após aluno — avaliação, periodização e ajuste contínuo."],
+                ["🤝", "Vivência real", "Ex-obeso que percorreu o mesmo caminho. Empatia aqui não é discurso: é história."],
+              ].map(([ic, t, d]) => (
+                <div key={t} className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 text-center">
+                  <span className="text-3xl">{ic}</span>
+                  <h3 className="text-white font-bold mt-3 mb-2">{t}</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">{d}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -318,16 +374,25 @@ export default function LandingPage() {
               Presencial em toda a região de Alphaville — na sua casa, na academia do
               seu condomínio ou na academia onde você já treina.
             </p>
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 text-left mb-10">
               {[
-                "Alphaville", "Tamboré", "Barueri", "Santana de Parnaíba",
-                "Residenciais Alphaville", "Tamboré 1 a 11", "Gênesis", "Alpha Conde",
-                "Alpha Sítio", "Melville", "Valville", "Burle Marx", "Aldeia da Serra", "Quintas de Tamboré",
-              ].map((r) => (
-                <span key={r} className="border border-white/15 rounded-full px-5 py-2 text-sm text-gray-300 bg-white/[0.03]">
-                  📍 {r}
-                </span>
+                ["Alphaville", ["Residenciais 1 a 12", "Gênesis", "Alpha Conde", "Alpha Sítio", "Melville", "Burle Marx"]],
+                ["Tamboré", ["Tamboré 1 a 11", "Quintas de Tamboré", "Valville", "Condomínios da região"]],
+                ["Barueri", ["Centro", "Jardim Belval", "Vila Porto", "Região da Estação CPTM"]],
+                ["Santana de Parnaíba", ["Aldeia da Serra", "Fazendinha", "Cidade São Pedro", "Centro Histórico"]],
+              ].map(([city, areas]) => (
+                <div key={city as string} className="border border-white/10 rounded-2xl p-6 bg-white/[0.02] hover:border-[#BA9E50]/40 transition-colors">
+                  <h3 className="text-[#BA9E50] font-bold mb-3">📍 {city}</h3>
+                  <ul className="space-y-1.5 text-gray-400 text-sm">
+                    {(areas as string[]).map((a) => <li key={a}>{a}</li>)}
+                  </ul>
+                </div>
               ))}
+            </div>
+            <div className="relative max-w-2xl mx-auto rounded-2xl border border-white/10 bg-[radial-gradient(circle_at_center,rgba(186,158,80,0.12),transparent_70%)] py-10 px-6 mb-2">
+              <span className="text-3xl">🗺️</span>
+              <p className="text-white font-semibold mt-2">Base em Alphaville — atendimento em um raio de ~20 minutos</p>
+              <p className="text-gray-400 text-sm mt-1">Tamboré a ~10 min · Centro de Barueri a ~15 min · Aldeia da Serra a ~20 min</p>
             </div>
             <p className="text-gray-500 text-sm mt-8">
               Seu condomínio não está na lista? Me chama — provavelmente eu atendo aí também.
@@ -351,6 +416,9 @@ export default function LandingPage() {
                   <p className="px-6 pb-5 text-gray-400 text-sm leading-relaxed">{f.a}</p>
                 </details>
               ))}
+            </div>
+            <div className="mt-10">
+              <WhatsButton label="Tirar minha dúvida no WhatsApp" sub="Respondo pessoalmente, sem robô" />
             </div>
           </div>
         </section>
