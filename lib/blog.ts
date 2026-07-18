@@ -87792,6 +87792,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Na maioria dos casos, entre o segundo e o terceiro mês a musculação é liberada. Começamos com máquinas e cargas leves, priorizando técnica e reconexão neuromuscular, e progredimos devagar. Escrevi um guia geral sobre <a href="/blog/como-voltar-a-treinar-apos-cirurgia">como voltar a treinar depois de uma cirurgia</a> que complementa bem este artigo.</p>
 
+<p>No vídeo abaixo, dicas fundamentais para quem está começando na musculação — princípios que valem em dobro para quem retorna após a bariátrica:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculacao para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
 <h2>Como montar o treino nos primeiros meses</h2>
 
 <p>O aluno bariátrico chega com duas características quase universais: pouca familiaridade com treino de força e pouca energia disponível, porque está comendo muito pouco. O treino precisa respeitar isso.</p>
@@ -87939,6 +87942,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Na prática, muitos casos que parecem "flacidez de pele" são majoritariamente falta de músculo. Já vi alunos transformarem braços e pernas em poucos meses de treino sério, sem qualquer procedimento estético. É por isso que a estratégia mais inteligente depois de emagrecer é a <a href="/blog/recomposicao-corporal">recomposição corporal</a>: manter (ou reduzir levemente) o peso enquanto troca gordura por músculo.</p>
 
+<p>Para entender na prática como combinar dieta e treino para trocar gordura por músculo, veja o vídeo abaixo:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/DpBnBbwGgUU?rel=0" title="Dieta e treino para recomposicao corporal — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
 <h2>Como treinar para combater a flacidez</h2>
 
 <p>Não existe "exercício antiflacidez". Existe treino de hipertrofia bem feito, priorizando as regiões que mais incomodam:</p>
@@ -88085,6 +88091,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Antes de começar: avaliação médica</h2>
 
 <p>O primeiro passo não é a academia, é o consultório. Uma avaliação médica com liberação para exercício resistido é indispensável, principalmente se você tem hipertensão, diabetes, cardiopatia, osteoporose diagnosticada ou próteses articulares. Nenhuma dessas condições costuma impedir a musculação — na maioria dos casos, ela é justamente recomendada — mas o treino precisa ser ajustado a elas.</p>
+
+<p>O formato full body é exatamente o recomendado para quem começa depois dos 60 — veja como estruturar no vídeo:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dvshstAxvMM?rel=0" title="Treino full body para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <h2>Como começar do zero: as primeiras 8 semanas</h2>
 
@@ -88238,6 +88247,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Importante repetir: o treino melhora o quadro e os sintomas, mas não remove a gordura do lipedema. Quem promete isso não entende a condição.</p>
 
+<p>Sobre o papel do cardio de baixo impacto dentro da rotina, o vídeo abaixo resume bem os princípios:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mOn0uTTR57A?rel=0" title="A importancia do cardio no treino — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
 <h2>Como montar o treino: o que ajuda</h2>
 
 <h3>Musculação de membros inferiores, sim</h3>
@@ -88378,6 +88390,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 
 <p>Com um kit de superbands, um jogo de tubes com âncora e duas mini bands, você monta uma "academia de gaveta" completa por uma fração do custo de halteres. Se quiser expandir depois, veja o guia de <a href="/blog/como-montar-home-gym-barato">como montar um home gym barato</a>.</p>
+
+<p>No vídeo abaixo, os princípios de progressão para treino em casa — que se aplicam diretamente ao trabalho com elásticos:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <h2>Os melhores exercícios com elástico por grupo muscular</h2>
 
@@ -88548,6 +88563,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Traduzindo: exercício ajuda por si só, e exercício + emagrecimento é a combinação mais poderosa que existe hoje para tratar a esteatose. Não existe remédio que substitua esse pacote — e é exatamente por isso que seu médico insistiu no assunto.</p>
 
+<p>Como a reversão da esteatose passa pela perda de gordura corporal, vale assistir este tutorial completo:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
 <h2>Qual o melhor exercício para gordura no fígado?</h2>
 
 <p>A resposta curta: o que você conseguir fazer com constância. A resposta completa envolve combinar dois tipos de estímulo.</p>
@@ -88712,6 +88730,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Quem está obeso e sedentário deve passar por avaliação médica antes de iniciar. Pressão arterial, glicemia, articulações e coração precisam ser checados — não para te impedir de treinar, mas para o treino ser desenhado com segurança.</p>
 
 <p>Sobre expectativas: você não vai "compensar anos parados" em um mês. E não precisa. O objetivo das primeiras 8 semanas não é queimar o máximo de calorias — é <strong>construir o hábito e aprender os movimentos</strong>. Quem entende isso continua; quem tenta se punir com treinos devastadores desiste na terceira semana com dor em tudo.</p>
+
+<p>Eu já estive exatamente onde você está. No vídeo abaixo, falo sobre como quebrar o ciclo do efeito sanfona — a armadilha que me prendeu por anos:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>As adaptações que ninguém te explica</h2>
 
@@ -88892,6 +88913,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Quem trata exercício como sinônimo de corrida e bike queima calorias, mas não dá ao corpo nenhum estímulo para construir músculo. O cardio é ótimo para a saúde — mas não resolve o problema estrutural do skinny fat, que é a falta de massa muscular.</p>
 
+<p>Como a saída do skinny fat passa por construir músculo, o vídeo abaixo mostra como acelerar a hipertrofia com inteligência:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rapido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
 <h2>O erro clássico: cortar calorias e aumentar o cardio</h2>
 
 <p>O instinto do falso magro que se olha no espelho é "preciso perder essa barriga" — então corta comida e corre mais. O resultado, alguns meses depois: uma versão menor do mesmo corpo sem forma. Menos peso, mesma flacidez, ainda menos músculo.</p>
@@ -89039,6 +89063,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>O estresse crônico piora tudo: o cortisol elevado aumenta o apetite e direciona a preferência para alimentos calóricos, além de favorecer o acúmulo de gordura abdominal. Escrevi sobre essa cascata em <a href="/blog/cortisol-e-treino">cortisol e treino</a>.</p>
 
 <p>E tem mais um cúmplice silencioso: o sono. A privação de sono desregula os hormônios da fome — reduz a leptina (saciedade) e aumenta a grelina (apetite), elevando a fome e o desejo por comidas calóricas, como demonstrado em estudo clássico publicado nos Annals of Internal Medicine (<a href="https://pubmed.ncbi.nlm.nih.gov/15583226/" target="_blank" rel="noopener">Spiegel et al., 2004</a>). Quem dorme mal briga contra a fome emocional com o dobro de desvantagem.</p>
+
+<p>Sobre como montar uma alimentação que funciona na vida real — sem gatilhos de restrição extrema — veja o vídeo:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mHZKGBlPHg4?rel=0" title="Dieta na prática" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <h2>Identifique seus gatilhos: o diário de contexto</h2>
 
@@ -89196,6 +89223,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Estimativa das calorias que seu corpo gasta em repouso, calculada a partir da massa magra. Útil como ponto de partida para montar a dieta — mas lembre que é estimativa sobre estimativa; a resposta real do seu corpo ao longo das semanas é que calibra o plano.</p>
 
+<p>A bioimpedância brilha quando você acompanha recomposição corporal — o vídeo abaixo mostra como conduzir esse processo:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/DpBnBbwGgUU?rel=0" title="Dieta e treino para recomposicao corporal — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
 <h2>Por que a bioimpedância é melhor que a balança e o IMC</h2>
 
 <p>A balança diz quanto você pesa; a bioimpedância diz <strong>do que</strong> você é feito. A diferença é enorme na prática: em um processo bem conduzido de treino + dieta, é comum perder gordura e ganhar músculo ao mesmo tempo — e a balança fica parada enquanto o corpo se transforma. Já vi muitos alunos desanimarem com o peso estável quando a bioimpedância mostrava exatamente o resultado desejado. Se isso te soa familiar, leia <a href="/blog/balanca-nao-muda-mas-o-corpo-muda">a balança não muda, mas o corpo muda</a>.</p>
@@ -89340,6 +89370,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 
 <p>A boa notícia: a ciência é clara sobre o antídoto. Treino de força durante a perda de peso preserva (e em iniciantes pode até aumentar) a massa muscular, como demonstram ensaios clínicos de emagrecimento com exercício resistido (<a href="https://pubmed.ncbi.nlm.nih.gov/28514618/" target="_blank" rel="noopener">Villareal et al., 2017</a>).</p>
+
+<p>Para aprofundar no tema medicamentos de emagrecimento e treino, veja a conversa abaixo:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <h2>Os 4 pilares do treino para quem usa Saxenda</h2>
 
