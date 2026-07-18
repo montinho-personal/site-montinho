@@ -19076,6 +19076,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para moradores que preferem treinar com mais variedade de equipamentos, acompanho alunos nas principais academias da região de Alphaville, a poucos minutos da Aldeia da Serra — como a <a href="/blog/smart-fit-alphaville">Smart Fit</a>, a <a href="/blog/ironberg-alphaville">Ironberg</a> e a <a href="/blog/bodytech-alphaville">Bodytech</a>. Se você já tem matrícula em alguma delas, aproveitamos a estrutura que você já paga — eu me desloco até lá.</p>
 
+<figure style="margin:2rem 0;max-width:520px;margin-left:auto;margin-right:auto">
+  <img src="/blog-images/treinador-aldeia-da-serra.jpg" alt="Treinador na Aldeia da Serra: Montinho Personal Trainer em treino de musculação em academia da região de Alphaville" title="Treinador Aldeia da Serra — Montinho Personal Trainer" width="1200" height="2131" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Acompanho alunos da Aldeia da Serra nas academias da região de Alphaville — ou no conforto do seu condomínio.</figcaption>
+</figure>
+
 <h2>Perfil de quem treina comigo na Aldeia da Serra</h2>
 
 <p>O morador da Aldeia da Serra escolheu viver perto da natureza sem abrir mão de estrutura — e isso se reflete nos objetivos que mais aparecem no atendimento: famílias que querem criar o hábito de treinar juntas, executivos que passam o dia entre reuniões e trajetos pela Castello Branco e precisam de treino eficiente, praticantes de corrida e ciclismo que buscam força e prevenção de lesões, e moradores 50+ focados em manter autonomia, massa muscular e qualidade de movimento por décadas.</p>
@@ -19104,6 +19109,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>20 anos de presença na região como diferencial na Aldeia da Serra</h2>
 
 <p>Trabalho na região de Alphaville e Tamboré — a poucos minutos da Aldeia da Serra — há mais de 20 anos. Essa experiência regional, combinada com minha própria trajetória de superação física, é o que fundamenta o método que aplico com cada aluno. Leia na <a href="/minha-historia">minha história</a> e acesse a <a href="/personal-trainer-alphaville">página de personal trainer em Alphaville</a> para conhecer mais sobre o atendimento na região.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-aldeia-da-serra.jpg" alt="Antes e depois do personal trainer da Aldeia da Serra: transformação de ex-obeso com perda de mais de 40kg" title="Personal Trainer Aldeia da Serra — antes e depois" width="1400" height="1400" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Minha própria transformação: já estive do outro lado — perdi mais de 40kg antes de dedicar minha carreira a treinar outras pessoas.</figcaption>
+</figure>
 
 <h3>Leia Também</h3>
 <ul>
