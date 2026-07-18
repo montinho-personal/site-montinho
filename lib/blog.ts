@@ -18976,20 +18976,52 @@ RIR 3 = parou com 3 reps sobrando.</p>
     tags: ["personal trainer", "Aldeia da Serra", "Barueri", "Alphaville", "personal trainer bairro"],
     faq: [
       {
-        question: "Tem personal trainer na Aldeia da Serra?",
-        answer: "Sim. Atendo moradores da Aldeia da Serra com protocolo individualizado — presencialmente em academia parceira na região de Alphaville/Barueri ou no modelo online. Mais de 20 anos de experiência na região.",
+        question:
+          "Tem personal trainer na Aldeia da Serra?",
+        answer:
+          "Sim. Atendo moradores da Aldeia da Serra com protocolo individualizado — presencialmente em casa, no espaço fitness do condomínio ou em academia da região de Alphaville/Barueri, além do modelo online. Mais de 20 anos de experiência na região.",
       },
       {
-        question: "Personal trainer na Aldeia da Serra atende em casa?",
-        answer: "Sim. O atendimento domiciliar é uma das modalidades — o protocolo é adaptado ao equipamento disponível na casa ou na academia do condomínio. Para quem prefere não se deslocar, é uma opção eficiente.",
+        question:
+          "Personal trainer na Aldeia da Serra atende em casa?",
+        answer:
+          "Sim. O atendimento domiciliar é uma das modalidades — o protocolo é adaptado ao equipamento disponível na casa ou na academia do condomínio. Para quem prefere não se deslocar, é uma opção eficiente.",
       },
       {
-        question: "Personal trainer na Aldeia da Serra trabalha com corrida ou esportes ao ar livre?",
-        answer: "A Aldeia da Serra tem um ambiente propício para atividades ao ar livre — e o treino de força complementa qualquer atividade aeróbica ou esportiva. Melhora de força, mobilidade e prevenção de lesões são benefícios diretos do protocolo de musculação bem prescrito.",
+        question:
+          "Você atende dentro dos condomínios da Aldeia da Serra?",
+        answer:
+          "Sim. Atendo nos residenciais da Aldeia da Serra — como Morada dos Pássaros, Morada dos Pinheiros e Morada dos Lagos — em casa, no espaço fitness do condomínio ou em áreas comuns, levando equipamentos portáteis quando necessário.",
       },
       {
-        question: "Personal trainer na Aldeia da Serra atende moradores com restrição médica?",
-        answer: "Sim. Restrições médicas são parte da realidade de muitos moradores — hipertensão, diabetes, problemas ortopédicos. O protocolo é adaptado em função das restrições, sempre em diálogo com o médico responsável quando necessário.",
+        question:
+          "Personal trainer na Aldeia da Serra trabalha com corrida ou esportes ao ar livre?",
+        answer:
+          "A Aldeia da Serra tem um ambiente propício para atividades ao ar livre — e o treino de força complementa qualquer atividade aeróbica ou esportiva. Melhora de força, mobilidade e prevenção de lesões são benefícios diretos do protocolo de musculação bem prescrito.",
+      },
+      {
+        question:
+          "Personal trainer na Aldeia da Serra atende moradores com restrição médica?",
+        answer:
+          "Sim. Restrições médicas são parte da realidade de muitos moradores — hipertensão, diabetes, problemas ortopédicos. O protocolo é adaptado em função das restrições, sempre em diálogo com o médico responsável quando necessário.",
+      },
+      {
+        question:
+          "Tenho dor na lombar. Posso treinar mesmo assim?",
+        answer:
+          "Na maioria dos casos, sim — e o treino bem prescrito costuma ser parte da solução. Tenho cursos voltados para treinamento de pessoas com dores e limitações, e o protocolo começa respeitando a sua condição atual, com fortalecimento progressivo e técnica correta.",
+      },
+      {
+        question:
+          "Quanto custa personal trainer na Aldeia da Serra?",
+        answer:
+          "O valor depende do formato (residencial, no condomínio, em academia ou online), da frequência semanal e do deslocamento. Na primeira conversa pelo WhatsApp eu entendo seu objetivo e passo uma proposta clara, sem compromisso.",
+      },
+      {
+        question:
+          "Quanto tempo de deslocamento até a Aldeia da Serra?",
+        answer:
+          "A Aldeia da Serra fica a cerca de 15 a 20 minutos de Alphaville e a cerca de 10 a 15 minutos do centro de Santana de Parnaíba, dependendo do trânsito — o que permite encaixar o atendimento em diversos horários da semana.",
       },
     ],
     faqSchema: [
@@ -19000,14 +19032,14 @@ RIR 3 = parou com 3 reps sobrando.</p>
       { question: "Como escolher um bom personal trainer?", answer: "Busque profissionais com graduação em Educação Física, experiência comprovada com o seu perfil de objetivo, metodologia baseada em evidências científicas e que priorizem sua individualidade. Avalie também comunicação, disponibilidade e compatibilidade de método." }
     ],
     content: `
-<h2>Personal trainer na Aldeia da Serra: treino com método no bairro mais exclusivo de Barueri</h2>
+<h2>Personal trainer na Aldeia da Serra: treino com método em um dos bairros mais exclusivos da região de Alphaville</h2>
 
 
 
 <figure style="margin:2rem 0">
   <img src="/blog-images/personal-trainer-aldeia-da-serra-infographic.svg" alt="Infográfico sobre Personal Trainer Aldeia da Serra | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Aldeia da Serra | Montinho Personal Trainer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
-<p>A Aldeia da Serra é um dos bairros de maior prestígio em Barueri — com infraestrutura de alto padrão, natureza preservada e um perfil de moradores que valoriza qualidade em todas as dimensões da vida. O personal trainer na Aldeia da Serra precisa acompanhar esse padrão — com método, individualização e resultado mensurável.</p>
+<p>A Aldeia da Serra é um dos bairros de maior prestígio da região, entre Santana de Parnaíba e Barueri — com infraestrutura de alto padrão, natureza preservada e um perfil de moradores que valoriza qualidade em todas as dimensões da vida. O personal trainer na Aldeia da Serra precisa acompanhar esse padrão — com método, individualização e resultado mensurável.</p>
 
 <p>Atendo moradores da Aldeia da Serra há mais de 20 anos. Conheço o bairro, as academias disponíveis na região e o perfil de quem mora aqui. O que ofereço é um protocolo construído para o seu objetivo — não para um perfil genérico.</p>
 
@@ -19022,6 +19054,52 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Na Aldeia da Serra, o objetivo mais comum no atendimento é saúde a longo prazo — não apenas estética de curto prazo. O morador quer manter disposição, qualidade de movimento e independência física por décadas — não apenas para uma ocasião específica.</p>
 
 <p>Esse objetivo de longo prazo exige um protocolo que evolui com o tempo: progressão de carga estruturada, ajuste contínuo do treino e reavaliação mensal de composição corporal e qualidade de movimento. Veja resultados de alunos em diferentes perfis e faixas etárias na <a href="/resultados">página de resultados</a>.</p>
+
+<h2>Área de atendimento: Aldeia da Serra e região</h2>
+
+<p>A Aldeia da Serra fica entre Santana de Parnaíba e Barueri, com acesso pela Estrada dos Romeiros e conexão rápida com a região de Alphaville pela Avenida Yojiro Takaoka. Atendo moradores de toda a área — e também das regiões vizinhas, com deslocamentos curtos e previsíveis:</p>
+
+<ul>
+<li><a href="/personal-trainer-alphaville">Alphaville</a> — cerca de 15 a 20 minutos de carro, dependendo do trânsito</li>
+<li><a href="/personal-trainer-tambore">Tamboré</a> — cerca de 20 minutos</li>
+<li><a href="/personal-trainer-barueri">Centro de Barueri</a> — cerca de 20 minutos</li>
+<li><a href="/personal-trainer-santana-de-parnaiba">Centro de Santana de Parnaíba</a> — cerca de 10 a 15 minutos</li>
+</ul>
+
+<p>O atendimento acontece onde for melhor para a sua rotina: na sua casa, no espaço fitness do condomínio (muitos condomínios da Aldeia da Serra contam com academia própria), em áreas comuns ou em academia da região.</p>
+
+<h2>Condomínios atendidos na Aldeia da Serra</h2>
+
+<p>A Aldeia da Serra é formada por condomínios residenciais consolidados, cercados de mata preservada — entre eles Morada dos Pássaros, Morada dos Pinheiros e Morada dos Lagos, além dos demais residenciais do entorno. Em todos, o formato mais comum é o atendimento residencial ou no espaço fitness do próprio condomínio: sem deslocamento, com privacidade e com o protocolo adaptado ao equipamento disponível.</p>
+
+<h2>Academias da região para quem prefere estrutura completa</h2>
+
+<p>Para moradores que preferem treinar com mais variedade de equipamentos, acompanho alunos nas principais academias da região de Alphaville, a poucos minutos da Aldeia da Serra — como a <a href="/blog/smart-fit-alphaville">Smart Fit</a>, a <a href="/blog/ironberg-alphaville">Ironberg</a> e a <a href="/blog/bodytech-alphaville">Bodytech</a>. Se você já tem matrícula em alguma delas, aproveitamos a estrutura que você já paga — eu me desloco até lá.</p>
+
+<h2>Perfil de quem treina comigo na Aldeia da Serra</h2>
+
+<p>O morador da Aldeia da Serra escolheu viver perto da natureza sem abrir mão de estrutura — e isso se reflete nos objetivos que mais aparecem no atendimento: famílias que querem criar o hábito de treinar juntas, executivos que passam o dia entre reuniões e trajetos pela Castello Branco e precisam de treino eficiente, praticantes de corrida e ciclismo que buscam força e prevenção de lesões, e moradores 50+ focados em manter autonomia, massa muscular e qualidade de movimento por décadas.</p>
+
+<p>Para cada perfil, o caminho é o mesmo: avaliação física inicial, definição de metas realistas de composição corporal, periodização do treino e reavaliações periódicas — seja o objetivo <a href="/blog/por-que-voce-nao-consegue-emagrecer">emagrecimento</a>, <a href="/blog/como-ganhar-massa-muscular">hipertrofia</a> ou condicionamento físico geral.</p>
+
+<h2>Dores e limitações não são impedimento — são ponto de partida</h2>
+
+<p>Uma parte significativa dos alunos chega com alguma dor ou limitação: lombar sensível após anos de trabalho sentado, joelhos que reclamam na corrida, ombros com histórico de lesão. Tenho cursos voltados especificamente para o treinamento de pessoas com dores e limitações musculoesqueléticas — e já vivenciei na própria trajetória várias das dores mais comuns de quem treina, o que me faz compreender na prática o que o aluno sente.</p>
+
+<p>A dor lombar é a queixa mais frequente. No vídeo abaixo, mostro um dos pontos-chave de técnica para proteger e fortalecer a lombar no treino:</p>
+
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Dores na lombar: como treinar com segurança — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<p>Com mobilidade, fortalecimento progressivo e execução correta, é possível treinar com segurança — e, muitas vezes, reduzir as próprias limitações ao longo do tempo. Aprofunde-se em <a href="/blog/dor-lombar-na-musculacao">dor lombar na musculação</a>, <a href="/blog/postura-trabalho-sentado-exercicios">postura para quem trabalha sentado</a> e <a href="/blog/mobilidade-articular-pre-treino">mobilidade articular antes do treino</a>. Para o público 50+, veja também <a href="/blog/treino-funcional-para-idosos">treino funcional para idosos</a>.</p>
+
+<h2>Dicas para treinar morando na Aldeia da Serra</h2>
+
+<ul>
+<li><strong>Use a natureza a seu favor:</strong> as ruas arborizadas e áreas verdes dos condomínios são perfeitas para caminhadas e corridas leves nos dias sem treino de força.</li>
+<li><strong>Treine cedo:</strong> quem trabalha em Alphaville ou São Paulo ganha muito treinando antes de pegar a Estrada dos Romeiros — o treino em casa ou no condomínio elimina o deslocamento.</li>
+<li><strong>Aproveite o espaço fitness do condomínio:</strong> com um protocolo bem montado, a academia do condomínio cobre a grande maioria dos objetivos — e nos horários de menor movimento você treina praticamente sozinho.</li>
+<li><strong>Combine força e atividade ao ar livre:</strong> o treino de força é a base que sustenta corrida, ciclismo e esportes — e é o que previne as lesões de quem só faz aeróbico.</li>
+</ul>
 
 <h2>20 anos de presença na região como diferencial na Aldeia da Serra</h2>
 
