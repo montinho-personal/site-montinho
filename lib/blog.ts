@@ -15989,6 +15989,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "O Alphaville Residencial Zero foi o ponto de partida de tudo. Morar aqui é estar no núcleo original de um dos projetos urbanos mais bem-sucedidos do Brasil — e treinar aqui exige um profissional que entenda essa realidade de dentro.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-11",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -16086,6 +16087,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Alphaville Residencial 1 é um dos condomínios mais tradicionais da região. Quem mora aqui tem padrão de exigência alto — e o treino não pode ser diferente.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-11",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -16265,6 +16267,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "No Alphaville Residencial 2, a rotina dos moradores é exigente. O treino precisa ser eficiente — sem tempo perdido, sem ficha genérica, com resultado verificável.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-11",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -16413,6 +16416,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "No Alphaville Residencial 3, resultado de treino não é questão de esforço — é questão de método. Com acompanhamento profissional e protocolo individualizado, a progressão acontece de forma estruturada e verificável.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-11",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -16550,6 +16554,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Treino no Alphaville Residencial 4 com personal trainer que vive na região há mais de 20 anos. Método científico, protocolo individual e resultado que se sustenta.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-11",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -16716,6 +16721,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "O Alphaville Residencial 5 fica em Santana de Parnaíba, com infraestrutura e rotina distintas dos residenciais em Barueri. Personal trainer que conhece essa diferença monta um protocolo que funciona de verdade.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-11",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -16882,6 +16888,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "No Alphaville Residencial 6, cada sessão de treino com personal trainer é 100% dedicada ao aluno — sem divisão de atenção, sem ficha genérica, com progressão planejada e resultado mensurável.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-11",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -17060,6 +17067,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Muitos moradores do Alphaville Residencial 8 treinam há anos sem progressão. O platô não é genética — é método. Com personal trainer e periodização correta, a evolução retoma.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-11",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -17146,6 +17154,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "No Alphaville Residencial 9, muitos moradores buscam treino não pelo espelho — mas pela saúde. Mais disposição no dia a dia, menos dor, melhor sono e mais anos de vida ativa.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-07-18",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -17322,6 +17331,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "No Alphaville Residencial 10, resultado de treino que se sustenta vem de protocolo construído para a sua realidade específica — não para um aluno genérico. Personal trainer com 20 anos na região sabe a diferença.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-18",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -17484,6 +17494,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Composição corporal — a relação entre gordura e músculo — é o indicador mais importante para saúde e aparência. No Alphaville Residencial 11, trabalho com protocolo individualizado para melhorar esse índice de forma real.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-18",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -17646,6 +17657,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "No Alphaville Residencial 12, atendo moradores de todas as fases da vida — cada um com protocolo construído para o seu momento, suas limitações e seus objetivos reais.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-18",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -17961,6 +17973,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Personal trainer no Melville Alphaville com método estruturado, atenção exclusiva e progressão real. Mais de 20 anos atendendo Santana de Parnaíba.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-18",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "Melville", "Alphaville", "Santana de Parnaíba", "personal trainer condomínio"],
@@ -18971,6 +18984,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Personal trainer na Aldeia da Serra com método estruturado e atenção exclusiva. Treino individualizado para moradores do bairro em Barueri.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-07-18",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "Aldeia da Serra", "Barueri", "Alphaville", "personal trainer bairro"],
