@@ -18,6 +18,7 @@ interface IndexEntry {
   date: string;
   readTime: string;
   titleLower: string;
+  slugLower: string;
   excerptLower: string;
   categoryLower: string;
   tagsLower: string[];
@@ -40,6 +41,7 @@ const index: IndexEntry[] = blogPosts.map((post) => ({
   date: post.date,
   readTime: post.readTime ?? "",
   titleLower: (post.title ?? "").toLowerCase(),
+  slugLower: post.slug.replace(/-/g, " ").toLowerCase(),
   excerptLower: (post.excerpt ?? "").toLowerCase(),
   categoryLower: (post.category ?? "").toLowerCase(),
   tagsLower: (post.tags ?? []).map((t) => (t ?? "").toLowerCase()),
@@ -58,6 +60,11 @@ function scoreEntry(entry: IndexEntry, query: string, terms: string[]): number {
   else if (entry.titleLower.startsWith(queryLower)) score += 120;
   else if (entry.titleLower.includes(queryLower)) score += 90;
   terms.forEach((t) => { if (entry.titleLower.includes(t)) score += 30; });
+
+  // Slug com hifens convertidos em espaços — cobre variações de palavra
+  // que existem na URL mas não no título (ex.: "obesos" vs "obeso")
+  if (entry.slugLower.includes(queryLower)) score += 70;
+  terms.forEach((t) => { if (entry.slugLower.includes(t)) score += 25; });
 
   if (entry.categoryLower.includes(queryLower)) score += 50;
   terms.forEach((t) => { if (entry.categoryLower.includes(t)) score += 20; });
