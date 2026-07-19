@@ -417,7 +417,7 @@ export const blogPosts = ([
       "Às vezes não é a dieta ou o treino o problema. São comportamentos do cotidiano que você nem percebe que estão impedindo seu progresso.",
     category: "Hábitos",
     date: "2024-10-30",
-    updatedAt: "2026-06-25",
+    updatedAt: "2026-07-19",
     readTime: "5 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -504,6 +504,9 @@ export const blogPosts = ([
 <p>Transformação real e duradoura não vem de dietas temporárias, mas de hábitos construídos com consistência ao longo do tempo. Cada um desses cinco pontos, corrigido gradualmente, pode fazer uma diferença significativa nos seus resultados — mesmo sem alterar o treino ou a dieta.</p>
 
 <p>Seja no atendimento presencial em Alphaville ou na <a href="/consultoria">consultoria online</a> para todo o Brasil, parte do meu trabalho é exatamente isso: identificar o que está travando o progresso de cada aluno e construir uma estratégia prática e sustentável para a sua realidade.</p>
+
+<p>O shape não é construído nos dias de ânimo, mas nos dias em que seria mais fácil desistir — como explico neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Conclusão</h2>
 
@@ -12115,6 +12118,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Você emagrece, comemora — e alguns meses depois o peso volta. Isso não é fraqueza, é biologia. Entenda o efeito sanfona, a adaptação metabólica, e o que realmente funciona para manter o resultado.",
     category: "Emagrecimento",
     date: "2026-06-26",
+    updatedAt: "2026-07-19",
     readTime: "10 min",
     author: "Montinho",
     tags: [
@@ -12286,6 +12290,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Quer ajuda para manter o resultado?</h2>
 
 <p>Se você está emagrecendo — com ou sem medicamento — e quer estruturar o processo de forma que o resultado se mantenha a longo prazo, posso te ajudar com treino e nutrição personalizada. Acesse a página de <a href="/consultoria">consultoria online</a>.</p>
+
+<p>Eu vivi esse ciclo por anos — sempre encontrava um motivo para flexibilizar e estava sempre recomeçando. É sobre isso que falo neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -32814,6 +32821,7 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
   excerpt: "A maioria das pessoas não desiste por falta de força de vontade — desiste porque a abordagem está errada. Criar o hábito de treinar tem a ver com ciência comportamental, não com motivação.",
   category: "Hábitos",
   date: "2026-06-27",
+  updatedAt: "2026-07-19",
   readTime: "10 min",
   author: "Montinho",
   tags: ["hábito de treinar", "consistência academia", "como não desistir treino", "motivação treino"],
@@ -32908,6 +32916,9 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 <p>A ideia popular de "21 dias para criar um hábito" não tem suporte científico. O estudo de Phillippa Lally (UCL, 2010) mostrou que a automatização de comportamentos leva em média 66 dias — com variação de 18 a 254 dias dependendo da pessoa e do comportamento.</p>
 
 <p>Para o treino, que é um comportamento mais complexo, espere pelo menos 3 meses para que comece a parecer automático.</p>
+
+<p>No Short abaixo, mostro a recompensa real de quem cumpre o que prometeu a si mesmo — a sensação de dever feito que constrói confiança:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Conclusão</h2>
 
@@ -34634,6 +34645,7 @@ Em pé em uma perna, agache devagar até 30-40° mantendo o joelho alinhado sobr
   excerpt: "A dieta não falha porque o plano é ruim — falha porque a estratégia de adesão é inexistente. Aqui estão as ferramentas reais para manter o foco quando tudo conspira contra você.",
   category: "Hábitos",
   date: "2026-06-27",
+  updatedAt: "2026-07-19",
   readTime: "9 min",
   author: "Montinho",
   tags: ["como não desistir da dieta", "aderência dieta", "compulsão alimentar", "dieta consistência", "emagrecimento psicologia"],
@@ -34720,6 +34732,9 @@ Em pé em uma perna, agache devagar até 30-40° mantendo o joelho alinhado sobr
 <li>Retome na próxima refeição — não na próxima segunda</li>
 <li>Se o padrão se repete, o problema é estrutural — o plano precisa de ajuste, não mais força de vontade</li>
 </ol>
+
+<p>No Short abaixo, falo sobre a verdade que aprendi na prática: uma exceção vira duas, duas viram hábito — e quem chega lá é quem protege o objetivo:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Conclusão</h2>
 
@@ -60391,10 +60406,13 @@ Não é obrigatório, mas acelera muito o processo. Um profissional evita os err
 Não é prioridade. Na primeira semana, foque em aprender os movimentos de musculação. O cardio pode ser adicionado nas semanas seguintes.
 
 **O que comer antes de treinar?**
-Uma refeição leve 1-2 horas antes com carboidrato e proteína. Exemplos: banana com pasta de amendoim, pão integral com ovo, iogurte com fruta. Não treine completamente em jejum na primeira semana.`,
+Uma refeição leve 1-2 horas antes com carboidrato e proteína. Exemplos: banana com pasta de amendoim, pão integral com ovo, iogurte com fruta. Não treine completamente em jejum na primeira semana.
+<p>A melhor parte dos primeiros treinos? A sensação de dever cumprido. É dela que falo neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
+    updatedAt: "2026-07-19",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["primeira semana academia", "iniciante musculação", "como começar academia", "dicas academia iniciante"],
@@ -69516,7 +69534,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     excerpt: "A motivação pós-Carnaval some rápido. Aprenda estratégias concretas para se manter consistente nos treinos mesmo quando a empolgação diminui.",
     category: "Treinamento",
     date: "2026-03-14",
-    updatedAt: "2026-03-14",
+    updatedAt: "2026-07-19",
     readTime: "7 min",
     author: "Montinho",
     tags: ["motivação", "consistência", "hábitos", "treino regular", "pós-carnaval"],
@@ -69591,6 +69609,9 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <h2>One More Thing</h2>
 <p>É exatamente aqui que entra a virada. A <strong>consultoria online do Montinho</strong> transforma tudo o que você leu em sistema: plano montado, execução acompanhada, ajustes na hora certa — e aquele compromisso social que faz você aparecer nos dias em que a cama argumenta melhor. A ciência do hábito, mastigada e aplicada em você. <a href="/consultoria">Fale com ele e descubra como funciona a consultoria personalizada.</a></p>
 
+<p>Motivação vai e volta — o que fica é a confiança de quem fez o que só ele poderia fazer. Veja no Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Leia também</h2>
 <ul><li><a href="/blog/como-ganhar-massa-muscular">Como ganhar massa muscular de verdade: guia completo</a></li><li><a href="/blog/erros-comuns-no-treino-de-musculacao">7 erros comuns na musculação que sabotam seus resultados</a></li><li><a href="/blog/como-manter-treinos-durante-ferias">Como Manter os Treinos Durante as Férias</a></li></ul>
 `,
@@ -69610,7 +69631,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     excerpt: "Os primeiros resultados animam, mas manter o emagrecimento após o início é onde a maioria desiste. Veja como continuar evoluindo com estratégia.",
     category: "Emagrecimento",
     date: "2026-04-02",
-    updatedAt: "2026-04-02",
+    updatedAt: "2026-07-19",
     readTime: "8 min",
     author: "Montinho",
     tags: ["emagrecimento", "motivação", "perda de peso", "dieta", "treino para emagrecer"],
@@ -69681,6 +69702,9 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>E tem mais uma coisa. Se você está travado e não sabe qual das variáveis ajustar — déficit, treino, refeed, sono — é exatamente esse diagnóstico que a <strong>consultoria do Montinho</strong> entrega: toda a ciência deste artigo aplicada ao seu corpo, sem dieta da moda, sem promessa impossível. Só o próximo ajuste certo, na hora certa.</p>
 
 <p><a href="/consultoria">Fale com o Montinho e veja como a consultoria pode destravar seu processo.</a></p>
+
+<p>Não existe fórmula mágica: existe disciplina, constância e a capacidade de escolher o que importa todos os dias — como falo neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul><li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por que você não consegue emagrecer (e como mudar isso de vez)</a></li><li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">5 hábitos do dia a dia que sabotam seu emagrecimento</a></li><li><a href="/blog/como-definir-abdomen-ate-dezembro">Como Definir o Abdômen até Dezembro</a></li></ul>
@@ -86206,7 +86230,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "A vergonha de treinar na academia trava milhões de iniciantes. Entenda por que ela existe e as estratégias práticas para superá-la de vez.",
     category: "Hábitos",
     date: "2026-07-11",
-    updatedAt: "2026-07-11",
+    updatedAt: "2026-07-19",
     readTime: "9 min",
     author: "Montinho",
     tags: ["vergonha de treinar", "gymtimidation", "iniciantes na academia", "motivação", "hábitos"],
@@ -86340,6 +86364,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>É exatamente assim que o Montinho trabalha: no presencial, com correção em tempo real; ou na <a href="/consultoria">consultoria online</a>, com treino individualizado, <strong>vídeos de execução de cada exercício</strong> e suporte para você tirar dúvidas — inclusive enviando vídeos seus para correção. Você entra na academia sabendo exatamente o que fazer, do primeiro ao último exercício.</p>
 
 <p>Quer trocar a vergonha por confiança já na próxima semana? <a href="/contato">Agende uma avaliação</a> e comece acompanhado.</p>
+
+<p>Toda transformação começa com uma decisão — inclusive a de entrar na academia pela primeira vez. É sobre isso este Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 
@@ -88996,6 +89023,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Você abre a geladeira sem estar com fome. Come rápido, escondido, e depois vem a culpa. Isso é fome emocional — e ela sabota mais dietas do que qualquer carboidrato. Aprenda a identificar os gatilhos e as estratégias práticas para retomar o controle.",
     category: "Emagrecimento",
     date: "2026-07-18",
+    updatedAt: "2026-07-19",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["fome emocional", "comer emocional", "emagrecimento", "ansiedade e comida", "comportamento alimentar"],
@@ -89115,6 +89143,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Existe uma linha em que o comer emocional vira algo mais sério: episódios frequentes de ingestão muito grande em pouco tempo, sensação de perda total de controle, comer escondido, sofrimento significativo. Isso pode indicar transtorno de compulsão alimentar — condição de saúde que merece acompanhamento de psicólogo e/ou psiquiatra, sem vergonha nenhuma.</p>
 
 <p>Escrevi em detalhes sobre essa diferença e os caminhos de tratamento em <a href="/blog/compulsao-alimentar-como-controlar">compulsão alimentar: como controlar</a>. Se você se reconheceu nesse parágrafo, leia — e procure ajuda profissional. Buscar apoio não é fraqueza; é estratégia.</p>
+
+<p>Quem conseguiu mudar de vida aprendeu a dizer não para aquilo que afastava do objetivo — como falo neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Conclusão: a fome que não é de comida</h2>
 
