@@ -72345,7 +72345,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     excerpt: "O Natal não precisa ser o vilão do seu shape. Com planejamento simples, você celebra sem destruir meses de trabalho.",
     category: "Treinamento",
     date: "2025-12-01",
-    updatedAt: "2025-12-01",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["shape no natal", "treino dezembro", "manter forma natal", "fitness festas", "personal trainer alphaville"],
@@ -72361,7 +72361,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>O mercado fitness vendeu a você uma escolha falsa: ou você vira o chato da festa com marmita de frango, ou aceita que dezembro é terra arrasada e "janeiro eu começo de novo". Os dois caminhos falham. O primeiro rouba sua vida. O segundo rouba seu corpo.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-nao-perder-o-shape-no-natal-infographic.svg" alt="Infográfico sobre Como Não Perder o Shape no Natal — Montinho Personal Trainer" title="Como Não Perder o Shape no Natal" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-nao-perder-o-shape-no-natal.webp" alt="Como não perder o shape no Natal: treine sempre, faça escolhas inteligentes, hidrate-se, mantenha a rotina e aproveite sem culpa — equilíbrio, não perfeição" title="Como Não Perder o Shape no Natal — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">É possível ser disciplinado e aproveitar o Natal: equilíbrio em vez de perfeição.</figcaption>
 </figure>
 
 
