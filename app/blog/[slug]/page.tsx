@@ -6,6 +6,7 @@ import { getBlogPost, getRelatedPosts, blogPosts, SITE_URL } from "@/lib/blog";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import ArticleReadTracker from "@/components/analytics/ArticleReadTracker";
+import ArticleLightbox from "@/components/blog/ArticleLightbox";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -184,6 +185,7 @@ export default async function BlogPost({ params }: Props) {
             className="prose-blog"
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           />
+          <ArticleLightbox />
 
           {/* Video */}
           {post.slug === "como-prevenir-lesoes-no-treino" && (
