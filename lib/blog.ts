@@ -72819,7 +72819,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Férias não precisam significar acúmulo de gordura. Veja como se manter ativo e comer bem mesmo longe da rotina e da academia.",
     category: "Emagrecimento",
     date: "2025-12-15",
-    updatedAt: "2025-12-15",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["férias de verão sem engordar", "manter peso férias", "treino nas férias", "alimentação saudável viagem", "emagrecimento verão"],
@@ -72835,7 +72835,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Todo dezembro, o mesmo chantagismo mental: ou você aproveita as férias, ou mantém o corpo. Escolha um. Essa é a mentira que faz milhões de brasileiros voltarem de janeiro com 3 kg a mais e a sensação de ter que "recomeçar do zero".</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-evitar-ganhar-peso-nas-ferias-infographic.svg" alt="Infográfico sobre Como Evitar Ganhar Peso nas Férias de Verão — Montinho Personal Trainer" title="Como Evitar Ganhar Peso nas Férias de Verão" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-evitar-ganhar-peso-nas-ferias.webp" alt="Como evitar ganhar peso nas férias de verão: mantenha a rotina, faça escolhas inteligentes, hidrate-se, controle as porções e movimente-se — férias sim, exagero nunca" title="Como Evitar Ganhar Peso nas Férias de Verão — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Dê férias para a rotina, não para os resultados: constância vence perfeição.</figcaption>
 </figure>
 
 
