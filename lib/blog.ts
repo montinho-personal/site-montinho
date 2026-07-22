@@ -41,7 +41,7 @@ export const blogPosts = ([
       "Você já tentou de tudo: dieta da moda, jejum, treinar todos os dias... e mesmo assim o peso não sai. Entenda o que realmente está te impedindo e como resolver de vez.",
     category: "Emagrecimento",
     date: "2024-12-10",
-    updatedAt: "2026-06-25",
+    updatedAt: "2026-07-22",
     readTime: "8 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -88,7 +88,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/por-que-voce-nao-consegue-emagrecer-infographic.svg" alt="Infográfico sobre Por Que Você Não Consegue Emagrecer (E Como Mudar Isso de Vez) — Montinho Personal Trainer" title="Por Que Você Não Consegue Emagrecer (E Como Mudar Isso de Ve" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/por-que-voce-nao-consegue-emagrecer.webp" alt="Por que você não consegue emagrecer: alimentação desalinhada, sedentarismo, noites mal dormidas, estresse em excesso e falta de consistência — e como mudar com déficit calórico, treino planejado, sono e disciplina" title="Por Que Você Não Consegue Emagrecer (e Como Mudar Isso de Vez) — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O que te impede de emagrecer — e como mudar cada ponto de vez.</figcaption>
 </figure>
 <p>Se isso soa familiar, você não está sozinho. E, mais importante: você não está falhando por falta de força de vontade. O problema está em mecanismos biológicos que a maioria das pessoas — e dos métodos por aí — ignora completamente.</p>
 
