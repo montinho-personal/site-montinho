@@ -300,7 +300,7 @@ export const blogPosts = ([
       "Lesões são o maior inimigo dos resultados a longo prazo. Aprenda as estratégias que uso com meus alunos para treinar com intensidade e sem se machucar.",
     category: "Lesões",
     date: "2024-11-15",
-    updatedAt: "2026-06-25",
+    updatedAt: "2026-07-22",
     readTime: "6 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -353,7 +353,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-prevenir-lesoes-no-treino-infographic.svg" alt="Infográfico sobre Como Prevenir Lesões na Musculação e Treinar Por Décadas Sem Dor — Montinho Personal Trainer" title="Como Prevenir Lesões na Musculação e Treinar Por Décadas Sem" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-prevenir-lesoes-no-treino.webp" alt="Como prevenir lesões na musculação: técnica correta, progressão gradual, alongamento e mobilidade, descanso de qualidade e respeito aos sinais do corpo" title="Como Prevenir Lesões na Musculação e Treinar Por Décadas Sem Dor — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Os pilares da prevenção de lesões para treinar por décadas sem dor.</figcaption>
 </figure>
 <p>O pior: a maioria das lesões não acontece de repente. Elas se desenvolvem silenciosamente por semanas, como resultado de padrões de movimento incorretos, sobrecarga mal distribuída e falta de mobilidade. E são amplamente evitáveis com a abordagem correta.</p>
 
