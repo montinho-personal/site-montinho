@@ -160,6 +160,19 @@ export default async function BlogPost({ params }: Props) {
             </time>
             <span>·</span>
             <span>{post.readTime} de leitura</span>
+            {post.updatedAt && post.updatedAt !== post.date && (
+              <>
+                <span>·</span>
+                <time dateTime={post.updatedAt} className="text-[#BA9E50]">
+                  Atualizado em{" "}
+                  {new Date(post.updatedAt + "T12:00:00").toLocaleDateString("pt-BR", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </time>
+              </>
+            )}
           </div>
         </div>
       </section>
