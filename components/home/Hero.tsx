@@ -4,27 +4,37 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* Foto de fundo (LCP) — prioridade de carregamento */}
+    <section className="relative min-h-screen flex items-end lg:items-center justify-center overflow-hidden bg-black">
+      {/* Foto de fundo (LCP) — prioridade de carregamento.
+          Mobile: foto inteira no topo (models enquadrados). Desktop: cobre a área. */}
       <Image
         src="/hero-banner.webp"
         alt="Montinho Personal Trainer acompanhando aluna em treino de musculação"
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[70%_center] lg:object-center"
+        className="object-contain object-top lg:object-cover lg:object-center"
       />
 
-      {/* Overlay de gradiente para legibilidade do texto à esquerda */}
+      {/* Overlay mobile: escurece a parte de baixo, onde fica o texto */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 lg:hidden"
+        style={{
+          background:
+            "linear-gradient(0deg, rgba(0,0,0,0.97) 0%, rgba(0,0,0,0.9) 38%, rgba(0,0,0,0.4) 62%, transparent 80%)",
+        }}
+      />
+
+      {/* Overlay desktop: escurece a esquerda, onde fica o texto */}
+      <div
+        className="absolute inset-0 hidden lg:block"
         style={{
           background:
             "linear-gradient(90deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.78) 32%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0.2) 100%), linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 28%)",
         }}
       />
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center lg:text-left">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-0 lg:py-32 text-center lg:text-left">
         {/* Eyebrow */}
         <p className="text-xs font-semibold tracking-[0.3em] uppercase text-gray-400 mb-6">
           Personal Trainer · Alphaville · Online
