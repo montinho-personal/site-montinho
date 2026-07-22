@@ -417,7 +417,7 @@ export const blogPosts = ([
       "Às vezes não é a dieta ou o treino o problema. São comportamentos do cotidiano que você nem percebe que estão impedindo seu progresso.",
     category: "Hábitos",
     date: "2024-10-30",
-    updatedAt: "2026-07-19",
+    updatedAt: "2026-07-22",
     readTime: "5 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -470,7 +470,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/habitos-que-sabotam-seu-emagrecimento-infographic.svg" alt="Infográfico sobre 5 Hábitos do Dia a Dia Que Estão Sabotando Seu Emagrecimento — Montinho Personal Trainer" title="5 Hábitos do Dia a Dia Que Estão Sabotando Seu Emagrecimento" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/habitos-que-sabotam-seu-emagrecimento.webp" alt="Hábitos do dia a dia que sabotam o emagrecimento: sedentarismo, noites mal dormidas, excesso de álcool, estresse crônico, beliscos e falta de planejamento alimentar" title="Hábitos Que Estão Sabotando Seu Emagrecimento — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Os 8 hábitos silenciosos que mais travam o emagrecimento no dia a dia.</figcaption>
 </figure>
 <p>Comportamentos cotidianos aparentemente inofensivos podem estar sabotando silenciosamente todo o seu esforço. Alguns deles você provavelmente não imaginava que tinham impacto direto no emagrecimento e na composição corporal.</p>
 
