@@ -45991,6 +45991,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     readTime: "10 min",
     author: "Montinho",
     date: "2026-06-28",
+    updatedAt: "2026-07-22",
     faq: [
       { question: "É melhor treinar de manhã ou à noite para perder gordura?", answer: "Para emagrecimento, o horário total tem impacto mínimo — o que determina a perda de gordura é o déficit calórico total diário. O melhor horário é aquele que você consegue manter com consistência semanas a fio." },
       { question: "Treino de manhã em jejum queima mais gordura?", answer: "O treino em jejum mobiliza mais gordura durante o exercício, mas isso não se traduz em mais gordura perdida ao final do dia quando as calorias totais são iguais. Meta-análises não mostram vantagem do treino em jejum para perda de gordura corporal total." },
@@ -46011,7 +46012,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-manha-ou-noite-qual-e-melhor-infographic.svg" alt="Infográfico sobre Treino de Manhã ou à Noite: Qual Realmente Produz Mais Resultado? — Montinho Personal Trainer" title="Treino de Manhã ou à Noite: Qual Realmente Produz Mais Resul" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-manha-ou-noite-qual-e-melhor.webp" alt="Melhor horário para treinar, manhã ou noite: treinar de manhã dá mais energia e disciplina; à noite, mais força e desempenho — o melhor horário é o que você consegue manter" title="Melhor Horário para Treinar: Manhã ou Noite? — Montinho Personal Trainer" width="1024" height="1536" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Não há horário mágico: constância vence horário. Treine no horário que você consegue manter.</figcaption>
 </figure>
 <h2>O Que Muda Fisiologicamente ao Longo do Dia</h2>
 
