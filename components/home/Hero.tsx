@@ -13,7 +13,7 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-contain object-top lg:object-cover lg:object-center"
+        className="object-contain object-[center_14%] scale-[1.28] lg:scale-100 lg:object-cover lg:object-center"
       />
 
       {/* Overlay mobile: escurece a parte de baixo, onde fica o texto */}
