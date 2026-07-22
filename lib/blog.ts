@@ -177,7 +177,7 @@ export const blogPosts = ([
       "A maioria das pessoas passa meses na academia sem ver resultado por causa de erros simples que são fáceis de corrigir. Veja se você está cometendo algum deles.",
     category: "Treinamento",
     date: "2024-11-28",
-    updatedAt: "2026-06-25",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -230,7 +230,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/erros-comuns-no-treino-de-musculacao-infographic.svg" alt="Infográfico sobre 7 Erros Comuns na Musculação Que Sabotam Seus Resultados — Montinho Personal Trainer" title="7 Erros Comuns na Musculação Que Sabotam Seus Resultados" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/erros-comuns-no-treino-de-musculacao.webp" alt="7 erros comuns na musculação que sabotam resultados: treinar sem planejamento, execução incorreta, carga inadequada, volume mal distribuído, descanso insuficiente, alimentação desalinhada e falta de constância" title="7 Erros Comuns na Musculação Que Sabotam Seus Resultados — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Os 7 erros que mais atrasam resultados na musculação — e todos têm solução.</figcaption>
 </figure>
 <p>Isso é mais comum do que parece — e quase sempre tem uma explicação concreta. Acompanhando alunos como Personal Trainer em Alphaville e em consultoria online em todo o Brasil, percebi que os mesmos erros aparecem repetidamente. Erros que nenhum app de treino corrige sozinho e que nenhuma ficha genérica de academia resolve.</p>
 
