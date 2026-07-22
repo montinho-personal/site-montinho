@@ -1,29 +1,30 @@
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* Background texture */}
+      {/* Foto de fundo (LCP) — prioridade de carregamento */}
+      <Image
+        src="/hero-banner.webp"
+        alt="Montinho Personal Trainer acompanhando aluna em treino de musculação"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-[70%_center] lg:object-center"
+      />
+
+      {/* Overlay de gradiente para legibilidade do texto à esquerda */}
       <div
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0"
         style={{
-          backgroundImage:
-            "radial-gradient(circle at 20% 50%, #333 0%, transparent 60%), radial-gradient(circle at 80% 20%, #222 0%, transparent 50%)",
+          background:
+            "linear-gradient(90deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.78) 32%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0.2) 100%), linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 28%)",
         }}
       />
 
-      {/* Grid pattern overlay */}
-      <div
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
-          backgroundSize: "50px 50px",
-        }}
-      />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center lg:text-left">
         {/* Eyebrow */}
         <p className="text-xs font-semibold tracking-[0.3em] uppercase text-gray-400 mb-6">
           Personal Trainer · Alphaville · Online
@@ -31,7 +32,7 @@ export default function Hero() {
 
         {/* Main Headline */}
         <h1
-          className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6 max-w-5xl mx-auto"
+          className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6 max-w-5xl mx-auto lg:mx-0 lg:max-w-3xl"
           style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
         >
           Transforme seu corpo.{" "}
@@ -39,13 +40,13 @@ export default function Hero() {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto mb-10 font-light">
+        <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-10 font-light">
           Ciência aplicada, experiência real e acompanhamento próximo para
           resultados que duram. Para quem quer transformação de verdade.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
           <a
             href={getWhatsAppUrl()}
             target="_blank"
@@ -87,7 +88,7 @@ export default function Hero() {
         </div>
 
         {/* Social proof */}
-        <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-500">
+        <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 text-gray-500">
           <div className="flex items-center gap-2">
             <span className="text-white font-bold text-2xl" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>+20 anos</span>
             <span className="text-sm">de experiência em musculação</span>
