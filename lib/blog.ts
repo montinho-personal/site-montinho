@@ -72439,7 +72439,7 @@ Sexta: treino e rotina de volta. Um dia de retomada resolve tudo.</p>
     excerpt: "Comer bem na ceia de Natal sem culpa é possível. Veja como aproveitar cada garfada com consciência e sair da mesa satisfeito, não arrependido.",
     category: "Nutrição",
     date: "2025-12-05",
-    updatedAt: "2025-12-05",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["ceia de natal saudável", "nutrição festas", "comer sem culpa natal", "alimentação dezembro", "personal trainer alphaville"],
@@ -72455,7 +72455,8 @@ Sexta: treino e rotina de volta. Um dia de retomada resolve tudo.</p>
 <p>O mercado das dietas transformou a ceia de Natal em vilã. E você acreditou: passou o dia 24 em jejum "para compensar", chegou à mesa faminto, comeu o dobro — e acordou dia 25 com culpa e plano de punição. A verdade incômoda: <strong>a ceia dura três horas; quem estraga o resultado é o comportamento ao redor dela</strong>.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-aproveitar-ceia-sem-exagerar-infographic.svg" alt="Infográfico sobre Como Aproveitar a Ceia de Natal sem Exagerar — Montinho Personal Trainer" title="Como Aproveitar a Ceia de Natal sem Exagerar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-aproveitar-ceia-sem-exagerar.webp" alt="Como aproveitar a ceia de Natal sem exagerar: planeje-se, priorize alimentos de verdade, coma com calma, hidrate-se, escute seu corpo e movimente-se — equilíbrio em vez de tudo ou nada" title="Como Aproveitar a Ceia de Natal sem Exagerar — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Natal é uma vez por ano — aproveite com equilíbrio, sem culpa e sem exagero.</figcaption>
 </figure>
 
 
@@ -72530,7 +72531,7 @@ Sexta: treino e rotina de volta. Um dia de retomada resolve tudo.</p>
     excerpt: "Manter a dieta nas festas é difícil, mas não impossível. Com as estratégias certas, você atravessa dezembro sem culpa e sem perder resultados.",
     category: "Nutrição",
     date: "2025-12-08",
-    updatedAt: "2025-12-08",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["dieta festas fim de ano", "alimentação saudável dezembro", "manter dieta natal", "nutrição festas", "emagrecimento dezembro"],
@@ -72546,7 +72547,8 @@ Sexta: treino e rotina de volta. Um dia de retomada resolve tudo.</p>
 <p>Dezembro é uma maratona de convites: confraternização da empresa, almoço de família, happy hour, ceia, amigo secreto com mesa farta. E o mercado te oferece a saída covarde de sempre — abandonar tudo agora e "começar sério em janeiro". É a mentira mais repetida do calendário fitness.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-manter-dieta-festas-fim-de-ano-infographic.svg" alt="Infográfico sobre Como Manter a Dieta nas Festas de Fim de Ano — Montinho Personal Trainer" title="Como Manter a Dieta nas Festas de Fim de Ano" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-manter-dieta-festas-fim-de-ano.webp" alt="Como manter a dieta nas festas de fim de ano: planeje antes, priorize proteína, hidrate-se, controle as porções e movimente-se — 80% de boas escolhas, 20% de flexibilidade, 100% de consistência" title="Como Manter a Dieta nas Festas de Fim de Ano — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Equilíbrio não é perfeição: boas escolhas na maioria das vezes é o que mantém o resultado.</figcaption>
 </figure>
 
 
