@@ -16738,7 +16738,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "O Alphaville Residencial 5 fica em Santana de Parnaíba, com infraestrutura e rotina distintas dos residenciais em Barueri. Personal trainer que conhece essa diferença monta um protocolo que funciona de verdade.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-11",
+    updatedAt: "2026-07-22",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -16802,7 +16802,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alphaville-residencial-5-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 5: Treino Individual em Santana de Pa — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 5: Treino Individ" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alphaville-residencial-5.webp" alt="Personal trainer no Condomínio Residencial 5 de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Residencial 5 Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Residencial 5 de Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>Atendo em Alphaville, Santana de Parnaíba e região há mais de 20 anos. O Residencial 5 faz parte do meu território de trabalho desde o início — não é uma área nova de atendimento.</p>
 
@@ -16905,7 +16906,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "No Alphaville Residencial 6, cada sessão de treino com personal trainer é 100% dedicada ao aluno — sem divisão de atenção, sem ficha genérica, com progressão planejada e resultado mensurável.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-11",
+    updatedAt: "2026-07-22",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -16969,7 +16970,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alphaville-residencial-6-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 6: Atenção Exclusiva e Resultado Veri — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 6: Atenção Exclus" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alphaville-residencial-6.webp" alt="Personal trainer no Condomínio Residencial 6 de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Residencial 6 Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Residencial 6 de Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>Com <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>, a estrutura é o ponto de partida — não a meta. O protocolo é construído com estrutura, executado com supervisão e revisado com base em dados reais.</p>
 
@@ -17084,7 +17086,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Muitos moradores do Alphaville Residencial 8 treinam há anos sem progressão. O platô não é genética — é método. Com personal trainer e periodização correta, a evolução retoma.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-11",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -17128,7 +17130,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alphaville-residencial-8-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 8: Superação de Platô e Progressão Co — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 8: Superação de P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alphaville-residencial-8.webp" alt="Personal trainer no Condomínio Residencial 8 de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Residencial 8 Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Residencial 8 de Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>Esse estado tem nome: platô. E quase nunca é causado por genética ou "limitação natural". Quase sempre é causado por método inadequado ou por ausência de progressão planejada.</p>
 
@@ -17171,7 +17174,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "No Alphaville Residencial 9, muitos moradores buscam treino não pelo espelho — mas pela saúde. Mais disposição no dia a dia, menos dor, melhor sono e mais anos de vida ativa.",
     category: "Saúde",
     date: "2026-06-26",
-    updatedAt: "2026-07-18",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -17243,7 +17246,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alphaville-residencial-9-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 9: Treino para Qualidade de Vida e Lo — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 9: Treino para Qu" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alphaville-residencial-9.webp" alt="Personal trainer no Condomínio Residencial 9 de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Residencial 9 Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Residencial 9 de Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>Esses objetivos são tão legítimos quanto qualquer meta estética — e exigem o mesmo nível de método e individualização para serem alcançados.</p>
 
