@@ -7912,7 +7912,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-perder-gordura-abdominal-infographic.svg" alt="Infográfico sobre Como Perder Gordura Abdominal de Verdade (Sem Mitos) — Montinho Personal Trainer" title="Como Perder Gordura Abdominal de Verdade (Sem Mitos)" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-perder-gordura-abdominal.webp" alt="Como perder gordura abdominal com estratégias comprovadas: alimentação inteligente, treino estratégico, cardio eficiente e foco e consistência" title="Como Perder Gordura Abdominal — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Estratégias comprovadas para definir, emagrecer e transformar: alimentação, treino, cardio e consistência.</figcaption>
 </figure>
 <p>Vamos direto: <strong>não existe maneira de eliminar gordura especificamente da barriga</strong>. Mas existem estratégias comprovadas para reduzir a gordura corporal total — e a barriga vai junto.</p>
 
@@ -8062,7 +8063,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     `,
     category: "Emagrecimento",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-22",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["gordura abdominal", "emagrecimento", "déficit calórico", "cortisol", "barriga"],
