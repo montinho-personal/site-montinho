@@ -16099,7 +16099,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Alphaville Residencial 1 é um dos condomínios mais tradicionais da região. Quem mora aqui tem padrão de exigência alto — e o treino não pode ser diferente.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-11",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -16146,7 +16146,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alphaville-residencial-1-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 1: Protocolo Individualizado para Que — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 1: Protocolo Indi" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alphaville-residencial-1.webp" alt="Personal trainer no Condomínio Residencial 1 de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Residencial 1 Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Residencial 1 de Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>Treinar com um <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a> que conhece essa realidade faz diferença concreta no resultado. Não porque o profissional vive no bairro, mas porque entende a rotina, o perfil e as demandas de quem mora aqui: agenda apertada, deslocamentos frequentes e a expectativa de que cada hora investida gere retorno mensurável.</p>
 
@@ -16279,7 +16280,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "No Alphaville Residencial 2, a rotina dos moradores é exigente. O treino precisa ser eficiente — sem tempo perdido, sem ficha genérica, com resultado verificável.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-11",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -16326,7 +16327,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alphaville-residencial-2-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 2: Treino que Funciona Dentro da Sua  — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 2: Treino que Fun" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alphaville-residencial-2.webp" alt="Personal trainer no Condomínio Residencial 2 de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Residencial 2 Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Residencial 2 de Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>Trabalho com <a href="/personal-trainer-alphaville">personal training em Alphaville</a> há mais de duas décadas. Conheço o Residencial 2 e o perfil de quem mora aqui. Esse conhecimento localizado é o que me permite montar um protocolo que realmente se encaixa na rotina do morador — não que exige uma rotina nova.</p>
 
@@ -17985,7 +17987,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Personal trainer no Melville Alphaville com método estruturado, atenção exclusiva e progressão real. Mais de 20 anos atendendo Santana de Parnaíba.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-18",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "Melville", "Alphaville", "Santana de Parnaíba", "personal trainer condomínio"],
@@ -18052,7 +18054,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-melville-infographic.svg" alt="Infográfico sobre Personal Trainer Melville Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Melville Alphaville | Montinho Personal Tra" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-melville.webp" alt="Personal trainer no Condomínio Melville em Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Melville Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Melville, Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>O Melville é um dos condomínios de referência em Alphaville — com uma comunidade consolidada, infraestrutura completa e um perfil de morador que valoriza qualidade de vida em todas as dimensões. Treino não é exceção.</p>
 
@@ -18996,7 +18999,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Personal trainer na Aldeia da Serra com método estruturado e atenção exclusiva. Treino individualizado para moradores do bairro em Barueri.",
     category: "Saúde",
     date: "2026-06-26",
-    updatedAt: "2026-07-18",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "Aldeia da Serra", "Barueri", "Alphaville", "personal trainer bairro"],
@@ -19063,7 +19066,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-aldeia-da-serra-infographic.svg" alt="Infográfico sobre Personal Trainer Aldeia da Serra | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Aldeia da Serra | Montinho Personal Trainer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-aldeia-da-serra.webp" alt="Personal trainer na Aldeia da Serra: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio em Santana de Parnaíba e Barueri" title="Personal Trainer Aldeia da Serra — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento na Aldeia da Serra: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>A Aldeia da Serra é um dos bairros de maior prestígio da região, entre Santana de Parnaíba e Barueri — com infraestrutura de alto padrão, natureza preservada e um perfil de moradores que valoriza qualidade em todas as dimensões da vida. O personal trainer na Aldeia da Serra precisa acompanhar esse padrão — com método, individualização e resultado mensurável.</p>
 
