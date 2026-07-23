@@ -17352,7 +17352,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "No Alphaville Residencial 10, resultado de treino que se sustenta vem de protocolo construído para a sua realidade específica — não para um aluno genérico. Personal trainer com 20 anos na região sabe a diferença.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-18",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -17424,7 +17424,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alphaville-residencial-10-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 10: Protocolo Individual para Resulta — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 10: Protocolo Ind" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alphaville-residencial-10.webp" alt="Personal trainer no Condomínio Residencial 10 em Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Residencial 10 Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Residencial 10, Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>Para esse perfil, a individualização do protocolo não é um diferencial de marketing — é uma exigência funcional. Um treino genérico não respeita a rotina, não considera as limitações e não entrega o resultado que esse nível de aluno espera.</p>
 
@@ -17515,7 +17516,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Composição corporal — a relação entre gordura e músculo — é o indicador mais importante para saúde e aparência. No Alphaville Residencial 11, trabalho com protocolo individualizado para melhorar esse índice de forma real.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-18",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -17587,7 +17588,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alphaville-residencial-11-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 11: Treino de Força com Foco em Compo — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 11: Treino de For" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alphaville-residencial-11.webp" alt="Personal trainer no Condomínio Residencial 11 em Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Residencial 11 Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Residencial 11, Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>Melhorar essa proporção — perder gordura enquanto mantém ou ganha músculo — é o que transforma aparência, saúde e desempenho físico de forma real e sustentável.</p>
 
@@ -17678,7 +17680,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "No Alphaville Residencial 12, atendo moradores de todas as fases da vida — cada um com protocolo construído para o seu momento, suas limitações e seus objetivos reais.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-18",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -17750,7 +17752,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alphaville-residencial-12-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 12: Treino que Acompanha Cada Fase da — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 12: Treino que Ac" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alphaville-residencial-12.webp" alt="Personal trainer no Condomínio Residencial 12 em Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Residencial 12 Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Residencial 12, Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>Atender bem cada uma dessas fases exige mais do que um método genérico. Exige adaptação real ao momento de vida do aluno — com base científica e com a experiência prática de quem passou 20 anos vendo como o corpo responde ao longo das décadas.</p>
 
@@ -17834,6 +17837,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Personal trainer no Alphaville Gênesis 1 com protocolo individualizado e mais de 20 anos atendendo a região. Treino presencial, domiciliar e online.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "Gênesis 1", "Alphaville", "Santana de Parnaíba", "personal trainer condomínio"],
@@ -17868,7 +17872,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-genesis-1-infographic.svg" alt="Infográfico sobre Personal Trainer Gênesis 1 | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Gênesis 1 | Montinho Personal Trainer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-genesis-1.webp" alt="Personal trainer no Condomínio Gênesis 1 em Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Gênesis 1 Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Gênesis 1, Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>O Alphaville Gênesis 1 é um dos condomínios mais tradicionais e consolidados de Santana de Parnaíba. Quem mora aqui tem um padrão de vida construído ao longo de anos — e espera o mesmo padrão quando contrata qualquer serviço, incluindo o personal trainer.</p>
 
@@ -17920,6 +17925,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Personal trainer no Alphaville Gênesis 2 com método estruturado e atenção exclusiva. Resultado para moradores com agenda exigente em Santana de Parnaíba.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "Gênesis 2", "Alphaville", "Santana de Parnaíba", "treino condomínio"],
@@ -17954,7 +17960,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-genesis-2-infographic.svg" alt="Infográfico sobre Personal Trainer Gênesis 2 | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Gênesis 2 | Montinho Personal Trainer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-genesis-2.webp" alt="Personal trainer no Condomínio Gênesis 2 em Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Gênesis 2 Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Gênesis 2, Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>O Alphaville Gênesis 2 concentra um perfil de morador que conhece o valor do tempo. Executivos, empresários e profissionais liberais que trabalham no Gênesis 2 ou se deslocam diariamente para São Paulo não têm margem para treino sem resultado — cada sessão precisa entregar.</p>
 
@@ -18134,6 +18141,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Personal trainer no Valville Alphaville com atenção exclusiva e método sólido. Treino presencial e online para moradores de Santana de Parnaíba.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "Valville", "Alphaville", "Santana de Parnaíba", "personal trainer condomínio"],
@@ -18168,7 +18176,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-valville-infographic.svg" alt="Infográfico sobre Personal Trainer Valville Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Valville Alphaville | Montinho Personal Tra" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-valville.webp" alt="Personal trainer no Condomínio Valville em Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Valville Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Valville, Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>O Valville é um condomínio que combina segurança, natureza e infraestrutura de qualidade em Santana de Parnaíba. O morador do Valville tem acesso a um ambiente propício para uma vida ativa — e o personal trainer certo transforma esse ambiente em resultado concreto.</p>
 
@@ -18206,6 +18215,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Personal trainer no Burle Marx Alphaville com método estruturado e progressão real. Mais de 20 anos atendendo moradores da região de Alphaville.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "Burle Marx", "Alphaville", "Santana de Parnaíba", "treino condomínio"],
@@ -18240,7 +18250,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-burle-marx-infographic.svg" alt="Infográfico sobre Personal Trainer Burle Marx Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Burle Marx Alphaville | Montinho Personal T" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-burle-marx.webp" alt="Personal trainer no Condomínio Burle Marx em Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Burle Marx Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Burle Marx, Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>O Burle Marx Alphaville é reconhecido pela arquitetura paisagística diferenciada e pelo ambiente que integra natureza e qualidade de vida urbana. Quem mora aqui tem uma relação com o entorno que vai além do condomínio convencional — e o treino pode e deve fazer parte dessa relação.</p>
 
