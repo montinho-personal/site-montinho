@@ -16001,7 +16001,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "O Alphaville Residencial Zero foi o ponto de partida de tudo. Morar aqui é estar no núcleo original de um dos projetos urbanos mais bem-sucedidos do Brasil — e treinar aqui exige um profissional que entenda essa realidade de dentro.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-11",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -16046,7 +16046,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alphaville-residencial-zero-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial Zero: Método Individual no Berço do C — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial Zero: Método Indi" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alphaville-residencial-zero.webp" alt="Personal trainer no Condomínio Residencial Zero de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Residencial Zero Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Residencial Zero de Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>Trabalho como <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a> há mais de 20 anos. Conheço o Residencial Zero, conheço a rotina de quem vive aqui e sei como o perfil de vida do morador influencia diretamente no tipo de protocolo que funciona — e no que não funciona.</p>
 
@@ -16430,7 +16431,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "No Alphaville Residencial 3, resultado de treino não é questão de esforço — é questão de método. Com acompanhamento profissional e protocolo individualizado, a progressão acontece de forma estruturada e verificável.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-11",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -16477,7 +16478,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alphaville-residencial-3-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 3: Progressão Real com Acompanhamento — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 3: Progressão Rea" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alphaville-residencial-3.webp" alt="Personal trainer no Condomínio Residencial 3 de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Residencial 3 Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Residencial 3 de Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>Essa expectativa é absolutamente legítima. E é exatamente o que o acompanhamento profissional garante: protocolo eficiente, progressão verificável e uso inteligente de cada minuto de treino.</p>
 
@@ -16568,7 +16570,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Treino no Alphaville Residencial 4 com personal trainer que vive na região há mais de 20 anos. Método científico, protocolo individual e resultado que se sustenta.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-11",
+    updatedAt: "2026-07-22",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -16632,7 +16634,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alphaville-residencial-4-infographic.svg" alt="Infográfico sobre Personal Trainer no Alphaville Residencial 4: Método Científico Aplicado ao Cont — Montinho Personal Trainer" title="Personal Trainer no Alphaville Residencial 4: Método Científ" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alphaville-residencial-4.webp" alt="Personal trainer no Condomínio Residencial 4 de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Residencial 4 Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Residencial 4 de Alphaville: treino inteligente, resultados reais.</figcaption>
 </figure>
 <p>No Alphaville Residencial 4, moradores com histórico de treino que não progrediu chegam com as mesmas perguntas: "Treino há anos, por que não evoluo?" A resposta quase sempre está no método — não na genética, não na falta de esforço.</p>
 
