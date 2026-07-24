@@ -8585,7 +8585,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/exercicio-para-perder-barriga-infographic.svg" alt="Infográfico sobre Exercício para perder barriga: o que realmente funciona — Montinho Personal Trainer" title="Exercício para perder barriga: o que realmente funciona" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/exercicio-para-perder-barriga.webp" alt="Exercício para perder barriga: treino de força, cardio e déficit calórico — não existe redução localizada, mas a estratégia certa elimina a gordura abdominal" title="Exercício Para Perder Barriga — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Não existe abdominal mágico: a barriga sai com treino, alimentação e consistência.</figcaption>
 </figure>
 <p>Spoiler: não existe.</p>
 
@@ -8756,7 +8757,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     `,
     category: "Emagrecimento",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-22",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["perder barriga", "gordura abdominal", "exercício", "emagrecimento", "redução localizada", "abdominais"],
@@ -20229,6 +20230,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Perder gordura sem perder músculo é possível — mas exige estratégia. Déficit calibrado, proteína suficiente e treino de força são os pilares que a ciência confirma.",
     category: "Emagrecimento",
     date: "2026-06-27",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["emagrecimento", "massa muscular", "déficit calórico", "recomposição corporal"],
@@ -20274,7 +20276,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-perder-gordura-sem-perder-massa-muscular-infographic.svg" alt="Infográfico sobre Como Perder Gordura Sem Perder Massa Muscular: O Guia Baseado em Evidência — Montinho Personal Trainer" title="Como Perder Gordura Sem Perder Massa Muscular: O Guia Basead" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-perder-gordura-sem-perder-massa-muscular.webp" alt="Como perder gordura sem perder massa muscular: déficit moderado, proteína alta, treino de força e sono — recomposição corporal na prática" title="Como Perder Gordura Sem Perder Massa Muscular — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Perder gordura preservando músculo: déficit inteligente, proteína e treino de força.</figcaption>
 </figure>
 <h2>Os três pilares para perder gordura sem perder músculo</h2>
 
@@ -20732,6 +20735,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "16:8, 5:2, jejum de 24h — qual protocolo funciona e para quem? A ciência tem uma resposta clara sobre emagrecimento com jejum intermitente.",
     category: "Emagrecimento",
     date: "2026-06-27",
+    updatedAt: "2026-07-22",
     readTime: "8 min",
     author: "Montinho",
     tags: ["jejum intermitente", "emagrecimento", "déficit calórico", "16:8", "dieta"],
@@ -20754,7 +20758,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/jejum-intermitente-para-emagrecer-infographic.svg" alt="Infográfico sobre Jejum Intermitente para Emagrecer: Funciona? O Que a Ciência Diz — Montinho Personal Trainer" title="Jejum Intermitente para Emagrecer: Funciona? O Que a Ciência" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/jejum-intermitente-para-emagrecer.webp" alt="Jejum intermitente para emagrecer: como funciona, protocolos e para quem faz sentido — a ferramenta ajuda, mas quem emagrece é o déficit calórico" title="Jejum Intermitente Para Emagrecer — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O jejum é uma ferramenta, não mágica: quem emagrece é o déficit calórico.</figcaption>
 </figure>
 <h2>O que é jejum intermitente</h2>
 <p>Jejum intermitente (JI) é um padrão alimentar que alterna períodos de jejum com janelas de alimentação. Não é uma dieta específica — é uma estratégia de distribuição temporal das refeições. Os protocolos mais estudados:</p>
@@ -85237,7 +85242,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "A resposta honesta sobre perder barriga rápido: o que acelera de verdade, o que é ilusão e quais prazos esperar de acordo com o seu ponto de partida.",
     category: "Emagrecimento",
     date: "2026-07-08",
-    updatedAt: "2026-07-08",
+    updatedAt: "2026-07-22",
     readTime: "9 min",
     author: "Montinho",
     tags: ["perder barriga","emagrecimento","gordura abdominal","déficit calórico","dieta"],
@@ -85256,7 +85261,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você quer <strong>perder barriga rápido</strong>. E provavelmente já tentou: cortou o jantar, fez abdominal até doer, comprou chá, talvez até cinta. A barriga continua aí.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-perder-barriga-rapido-infographic.svg" alt="Infográfico sobre Como Perder Barriga Rápido: O Que Funciona de Verdade — Montinho Personal Trainer" title="Como Perder Barriga Rápido: O Que Funciona de Verdade" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-perder-barriga-rapido.webp" alt="Como perder barriga rápido de forma saudável: déficit calórico, treino de força, cardio e controle do cortisol — sem fórmulas milagrosas" title="Como Perder Barriga Rápido — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Rápido e sustentável: o que realmente reduz a barriga sem efeito sanfona.</figcaption>
 </figure>
 
 <p>O problema não é falta de esforço — é gastar esforço no lugar errado. Cada semana em método que não funciona é uma semana a mais de frustração e uma chance a mais de desistir.</p>
