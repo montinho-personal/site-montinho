@@ -19243,6 +19243,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Treinar em casa em Alphaville não significa abrir mão de qualidade. Com protocolo individualizado e acompanhamento presencial, o resultado chega — independente do local.",
     category: "Treinamento",
     date: "2026-06-27",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "domicílio", "Alphaville", "treino em casa"],
@@ -19282,7 +19283,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-a-domicilio-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer a Domicílio Alphaville: Treino em Casa sem Perder Qualidade — Montinho Personal Trainer" title="Personal Trainer a Domicílio Alphaville: Treino em Casa sem " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-a-domicilio-alphaville.webp" alt="Personal trainer a domicílio em Alphaville: treino personalizado na sua casa, com equipamentos adaptados e sem deslocamento" title="Personal Trainer a Domicílio em Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino personalizado na sua casa, em Alphaville — sem deslocamento.</figcaption>
 </figure>
 <h2>Eficácia do treino em casa: o que a ciência diz</h2>
 <p>A ideia de que treinar em casa é inferior ao treino em academia não tem respaldo científico quando o protocolo é bem estruturado. Pesquisas publicadas no <em>Journal of Strength and Conditioning Research</em> confirmam que ganhos de força e hipertrofia dependem fundamentalmente de volume, intensidade e progressão de carga — variáveis que um bom protocolo domiciliar controla com precisão. O que muda é o tipo de equipamento disponível, não o resultado possível. Veja um resumo das evidências sobre treino de força em diferentes ambientes em <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) no PubMed</a>.</p>
@@ -19488,6 +19490,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Quando você busca personal trainer perto de você em Alphaville, proximidade é um critério — mas não o único. Entenda o que realmente diferencia o profissional certo.",
     category: "Treinamento",
     date: "2026-06-27",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "Alphaville", "perto de mim", "personal trainer local"],
@@ -19527,7 +19530,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-perto-de-mim-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer Perto de Mim Alphaville: Como Encontrar o Profissional Certo — Montinho Personal Trainer" title="Personal Trainer Perto de Mim Alphaville: Como Encontrar o P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-perto-de-mim-alphaville.webp" alt="Personal trainer perto de mim em Alphaville: atendimento onde você está — casa, condomínio ou academia da região, com horários flexíveis" title="Personal Trainer Perto de Mim em Alphaville — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Personal trainer perto de você em Alphaville: treino onde for mais prático.</figcaption>
 </figure>
 <h2>Por que a localidade do personal trainer importa</h2>
 <p>Um personal trainer que mora e trabalha em Alphaville há anos conhece a dinâmica local de uma forma que profissionais de fora não conseguem replicar. Conhece os condomínios, sabe quais academias parceiras existem na região, entende o trânsito em cada horário e consegue organizar a agenda do aluno de forma realista — sem prometer sessões às 7h da manhã sabendo que o trânsito na Alphaville Flamboyant torna isso impossível em certos dias.</p>
@@ -19561,6 +19565,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Professor de musculação em Alphaville vai além de montar ficha: é quem entende biomecânica, progressão e individualidade para gerar resultado real em qualquer nível.",
     category: "Treinamento",
     date: "2026-06-27",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["musculação", "professor", "Alphaville", "treino de força"],
@@ -19600,7 +19605,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/professor-de-musculacao-alphaville-infographic.svg" alt="Infográfico sobre Professor de Musculação Alphaville: Técnica, Método e Resultado Real — Montinho Personal Trainer" title="Professor de Musculação Alphaville: Técnica, Método e Result" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/professor-de-musculacao-alphaville.webp" alt="Professor de musculação em Alphaville: orientação técnica, execução correta e progressão de carga para treinar com segurança" title="Professor de Musculação em Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Professor de musculação em Alphaville: técnica correta e progressão segura.</figcaption>
 </figure>
 <h2>Musculação e ciência: o que a pesquisa confirma</h2>
 <p>A musculação é a modalidade de exercício mais estudada do ponto de vista científico para objetivos como hipertrofia, emagrecimento, melhora de composição corporal e saúde metabólica. Revisões publicadas no <em>Journal of Strength and Conditioning Research</em> confirmam que o treino de força bem prescrito é eficaz para todos os perfis — jovens, adultos, idosos, sedentários e atletas. O que varia não é a eficácia da musculação, mas a qualidade do protocolo. Veja um resumo das evidências em <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) no PubMed</a>.</p>
@@ -19642,6 +19648,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Ter treinador particular em Alphaville é a diferença entre treinar e progredir. Protocolo individual, atenção exclusiva e mais de 20 anos de experiência na região.",
     category: "Treinamento",
     date: "2026-06-27",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["treinador particular", "Alphaville", "personal trainer", "treino individualizado"],
@@ -19681,7 +19688,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treinador-particular-alphaville-infographic.svg" alt="Infográfico sobre Treinador Particular Alphaville: Atenção Exclusiva, Protocolo Individual — Montinho Personal Trainer" title="Treinador Particular Alphaville: Atenção Exclusiva, Protocol" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treinador-particular-alphaville.webp" alt="Treinador particular em Alphaville: acompanhamento individual, treino personalizado e horários flexíveis no conforto de casa, condomínio ou academia" title="Treinador Particular Alphaville — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treinador particular em Alphaville: atenção exclusiva e treino sob medida.</figcaption>
 </figure>
 <h2>Por que o treino individualizado entrega mais resultado</h2>
 <p>A individualidade biológica é um dos princípios fundamentais do treinamento. Cada pessoa responde de forma diferente ao mesmo estímulo — em função de histórico de treino, composição corporal, nível hormonal, qualidade do sono, alimentação e uma série de outros fatores. Um protocolo que funciona para uma pessoa pode ser ineficiente ou até contraproducente para outra. O treinador particular em Alphaville considera essa individualidade na montagem de cada protocolo. Pesquisas publicadas no <em>Journal of Physiology</em> confirmam a variabilidade individual de resposta ao treino em <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Morton et al. (2018) no PubMed</a>.</p>
@@ -19721,6 +19729,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Trabalhar no Centro Comercial Alphaville e encontrar tempo para treinar é possível. Com personal trainer e protocolo adaptado à rotina corporativa, o resultado chega sem comprometer a agenda.",
     category: "Treinamento",
     date: "2026-06-27",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "Centro Comercial Alphaville", "executivo", "treino corporativo"],
@@ -19760,7 +19769,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-centro-comercial-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer Centro Comercial Alphaville: Treino para Quem Trabalha Aqui — Montinho Personal Trainer" title="Personal Trainer Centro Comercial Alphaville: Treino para Qu" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-centro-comercial-alphaville.webp" alt="Personal trainer no Centro Comercial de Alphaville: atendimento personalizado para quem vive e trabalha na região" title="Personal Trainer Centro Comercial Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento personalizado no Centro Comercial de Alphaville.</figcaption>
 </figure>
 <h2>O desafio do profissional que trabalha em Alphaville</h2>
 <p>Quem trabalha no Centro Comercial de Alphaville sabe como é o dia: reuniões desde cedo, almoços de trabalho, trânsito de saída. Encaixar treino em uma rotina dessas exige planejamento — e um protocolo que seja eficiente dentro do tempo disponível. Sessões longas de 90 minutos de musculação não cabem no cotidiano de quem tem reunião às 8h. Sessões de 50 minutos com protocolo preciso, sim.</p>
@@ -19932,6 +19942,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Próximo ao Iguatemi Alphaville, com acesso a academia de alto nível, o personal trainer certo transforma a infraestrutura disponível em resultado mensurável.",
     category: "Treinamento",
     date: "2026-06-27",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "Iguatemi Alphaville", "Alphaville", "treino alto padrão"],
@@ -19971,7 +19982,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-iguatemi-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer Iguatemi Alphaville: Treino de Alta Performance na Região — Montinho Personal Trainer" title="Personal Trainer Iguatemi Alphaville: Treino de Alta Perform" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-iguatemi-alphaville.webp" alt="Personal trainer perto do Shopping Iguatemi Alphaville: atendimento personalizado em academias, condomínios e residências da região" title="Personal Trainer Iguatemi Alphaville — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento personalizado na região do Iguatemi Alphaville.</figcaption>
 </figure>
 <h2>Infraestrutura de alto nível precisa de protocolo de alto nível</h2>
 <p>Ter acesso a uma academia bem equipada próxima ao Iguatemi Alphaville é uma vantagem real — equipamento moderno, variedade de máquinas, espaço para treinamento funcional. O problema que persiste mesmo com boa infraestrutura é a falta de protocolo individualizado. Sem método, o melhor equipamento do mundo gera resultado mediano. Com personal trainer, a mesma academia entrega resultado superior porque cada variável — exercício, carga, volume, progressão — é gerenciada com precisão.</p>
@@ -24143,6 +24155,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Exercício durante a gravidez é seguro, recomendado e benéfico para mãe e bebê. Saiba como treinar com segurança com personal trainer especializado.",
     category: "Saúde",
     date: "2026-06-27",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["personal trainer gestantes", "exercício na gravidez", "gestante", "Alphaville", "Tamboré"],
@@ -24159,7 +24172,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-para-gestantes-alphaville-tambore-infographic.svg" alt="Infográfico sobre Personal Trainer para Gestantes em Alphaville e Tamboré — Montinho Personal Trainer" title="Personal Trainer para Gestantes em Alphaville e Tamboré" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-para-gestantes-alphaville-tambore.webp" alt="Personal trainer para gestantes em Alphaville e Tamboré: treino seguro e adaptado a cada fase da gravidez, com acompanhamento próximo" title="Personal Trainer Para Gestantes Alphaville e Tamboré — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino seguro na gestação, adaptado a cada fase — em Alphaville e Tamboré.</figcaption>
 </figure>
 <h2>Benefícios do exercício durante a gravidez</h2>
 <ul>
@@ -24263,7 +24277,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-custa-personal-trainer-alphaville-infographic.svg" alt="Infográfico sobre Quanto custa um personal trainer em Alphaville em 2026? — Montinho Personal Trainer" title="Quanto custa um personal trainer em Alphaville em 2026?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-custa-personal-trainer-alphaville.webp" alt="Quanto custa personal trainer em Alphaville: o que influencia o valor (formato, frequência e local) e como ter o melhor custo-benefício" title="Quanto Custa Personal Trainer em Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Quanto custa um personal trainer em Alphaville: o que realmente pesa no valor.</figcaption>
 </figure>
 <p>Essa é, de longe, a pergunta que mais recebo de quem está pensando em começar a treinar com acompanhamento profissional na região de Alphaville, Tamboré e Barueri. E a resposta honesta é: depende — mas não da forma vaga que você está acostumado a ouvir. Depende de fatores muito específicos que vou detalhar neste artigo para que você consiga comparar preços com inteligência.</p>
 
@@ -24468,6 +24483,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia muscular (PubMed)</a>.</p>`,
     category: "Treinamento",
     date: "2026-06-27",
+    updatedAt: "2026-07-22",
     readTime: "9 min",
     author: "Montinho",
     tags: ["personal trainer alphaville", "preço personal trainer", "quanto custa personal trainer", "personal trainer executivos", "alphaville tamboré"],
@@ -24514,7 +24530,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-para-executivos-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer para Executivos em Alphaville: por que a abordagem precisa ser  — Montinho Personal Trainer" title="Personal Trainer para Executivos em Alphaville: por que a ab" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-para-executivos-alphaville.webp" alt="Personal trainer para executivos em Alphaville: treino eficiente para rotina corrida, encaixado na agenda de quem tem pouco tempo" title="Personal Trainer Para Executivos em Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino eficiente para a rotina do executivo em Alphaville.</figcaption>
 </figure>
 <p>Depois de mais de 20 anos atendendo executivos, empresários e profissionais de alta performance em Alphaville e Tamboré, posso afirmar com segurança: o corpo de um executivo de 45 anos que trabalha 10 horas por dia, viaja frequentemente e carrega o estresse de decisões de alto impacto não responde da mesma forma que o de um jovem de 25 anos com tempo livre e baixo estresse.</p>
 
@@ -24661,6 +24678,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia muscular (PubMed)</a>.</p>`,
     category: "Treinamento",
     date: "2026-06-27",
+    updatedAt: "2026-07-22",
     readTime: "11 min",
     author: "Montinho",
     tags: ["personal trainer executivos alphaville", "treino para executivos", "personal trainer alphaville", "fitness executivo", "treino para quem trabalha muito"],
@@ -47283,6 +47301,7 @@ Mini-série 3: 3 reps → encerrar aqui (< 3 reps = fatigado demais)<br>
     readTime: "11 min",
     author: "Montinho",
     date: "2026-06-28",
+    updatedAt: "2026-07-22",
     faq: [
       { question: "Como escolher um bom personal trainer em Santana de Parnaíba?", answer: "Avalie: formação acadêmica em Educação Física, pós-graduação ou certificações reconhecidas (NSCA, FMS), realização de avaliação inicial completa antes de prescrever treino, capacidade de explicar o porquê de cada escolha e apresentação de periodização estruturada. Solicite referências de clientes e uma sessão de avaliação antes de contratar." },
       { question: "Quanto custa um personal trainer em Santana de Parnaíba?", answer: "Na região (Santana de Parnaíba, Alphaville, Tamboré, Barueri), o valor varia de R$ 80-120/hora para profissionais iniciantes até R$ 220-350/hora para especialistas experientes. Online coaching varia de R$ 300-1200/mês. O menor preço raramente representa o melhor custo-benefício." },
@@ -47298,7 +47317,8 @@ Mini-série 3: 3 reps → encerrar aqui (< 3 reps = fatigado demais)<br>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-santana-de-parnaiba-infographic.svg" alt="Infográfico sobre Personal Trainer em Santana de Parnaíba: Como Escolher o Profissional Certo — Montinho Personal Trainer" title="Personal Trainer em Santana de Parnaíba: Como Escolher o Pro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-santana-de-parnaiba.webp" alt="Personal trainer em Santana de Parnaíba: acompanhamento personalizado em casa, condomínio ou academia, com horários flexíveis" title="Personal Trainer Santana de Parnaíba — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Acompanhamento personalizado em Santana de Parnaíba.</figcaption>
 </figure>
 <h2>Critérios Técnicos para Avaliar um Personal Trainer</h2>
 
@@ -78924,7 +78944,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Análise honesta da Smart Fit em Alphaville: para quem o modelo low cost funciona, para quem não funciona e como extrair o máximo da estrutura.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-07-22",
     readTime: "8 min",
     author: "Montinho",
     tags: ["smart fit","academia em alphaville","musculação","low cost","barueri"],
@@ -78942,7 +78962,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você pesquisou <strong>Smart Fit Alphaville</strong> porque quer treinar sem pagar caro — mas tem medo de assinar o plano, ir três semanas e desistir. Esse medo é legítimo: academia errada para o seu perfil é dinheiro escorrendo todo mês.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/smart-fit-alphaville-infographic.svg" alt="Infográfico sobre Smart Fit Alphaville: Vale a Pena? Análise Completa — Montinho Personal Trainer" title="Smart Fit Alphaville: Vale a Pena? Análise Completa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/smart-fit-alphaville.webp" alt="Smart Fit Alphaville vale a pena? Estrutura, custo-benefício, preço e lotação da unidade para você decidir" title="Smart Fit Alphaville Vale a Pena? — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Smart Fit Alphaville: estrutura, preço e lotação — vale a pena?</figcaption>
 </figure>
 
 <p>E o pior não é a mensalidade perdida. É a história que você conta para si mesmo depois: "academia não é para mim". Não é a academia que falha — é o encaixe entre o modelo dela e o que você precisa.</p>
@@ -79101,7 +79122,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "A Ironberg nasceu da cultura do fisiculturismo. Veja para quem ela é indicada em Alphaville — e para quem o clima maromba pode não ser o ideal.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-07-22",
     readTime: "8 min",
     author: "Montinho",
     tags: ["ironberg","academia em alphaville","hipertrofia","fisiculturismo","musculação"],
@@ -79118,7 +79139,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Se você pesquisou <strong>Ironberg Alphaville</strong>, provavelmente já está cansado de academia genérica: equipamento ocupado por quem está no celular, clima morno, treino que não anda. E teme pagar mais caro por... mais do mesmo.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/ironberg-alphaville-infographic.svg" alt="Infográfico sobre Ironberg Alphaville: A Academia dos Marombas — Montinho Personal Trainer" title="Ironberg Alphaville: A Academia dos Marombas" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/ironberg-alphaville.webp" alt="Ironberg Alphaville: estrutura, custo-benefício e experiência de treino nesta academia premium da região" title="Ironberg Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Ironberg Alphaville: estrutura, preço e experiência de treino.</figcaption>
 </figure>
 
 <p>A frustração é real: quem quer <strong>hipertrofia</strong> de verdade precisa de ambiente, equipamento e cultura que puxem para cima. Errar essa escolha é passar mais um ano platinado no mesmo shape.</p>
@@ -80380,7 +80402,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Análise honesta da Smart Fit em Barueri: para quem funciona, para quem não funciona e como aproveitar de verdade uma academia low-cost.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-07-22",
     readTime: "8 min",
     author: "Montinho",
     tags: ["smart fit barueri","academia em barueri","academia low cost","musculação barueri","academia perto da estação barueri"],
@@ -80398,7 +80420,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Escolher academia errada em Barueri custa caro — não só a mensalidade, mas os meses de resultado que não vêm. Você assina no impulso de janeiro, treina três semanas e o plano vira só uma cobrança no cartão.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/smart-fit-barueri-infographic.svg" alt="Infográfico sobre Smart Fit Barueri: Vale a Pena? Análise Completa — Montinho Personal Trainer" title="Smart Fit Barueri: Vale a Pena? Análise Completa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/smart-fit-barueri.webp" alt="Smart Fit Barueri vale a pena? Estrutura, custo-benefício, preço e lotação da unidade para você decidir" title="Smart Fit Barueri Vale a Pena? — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Smart Fit Barueri: estrutura, preço e lotação — vale a pena?</figcaption>
 </figure>
 
 <p>E o pior: a culpa raramente é da academia. É do <strong>descasamento entre o seu perfil e a proposta do lugar</strong>. Uma academia low-cost pede um tipo de aluno; uma boutique de treino pede outro.</p>
@@ -83948,7 +83971,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Faixas de preço de personal trainer em Barueri e Alphaville, o que está incluído no valor por sessão ou pacote mensal, e como escolher sem desperdiçar dinheiro.",
     category: "Treinamento",
     date: "2026-07-08",
-    updatedAt: "2026-07-08",
+    updatedAt: "2026-07-22",
     readTime: "9 min",
     author: "Montinho",
     tags: ["personal trainer barueri","preço","quanto custa","alphaville","treino personalizado"],
@@ -83965,7 +83988,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você decidiu investir num personal trainer em Barueri, mas trava na pergunta óbvia: <strong>quanto isso vai custar — e quanto é justo pagar?</strong> Os preços que aparecem por aí variam tanto que mais confundem do que ajudam.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-custa-personal-trainer-barueri-infographic.svg" alt="Infográfico sobre Quanto Custa um Personal Trainer em Barueri? — Montinho Personal Trainer" title="Quanto Custa um Personal Trainer em Barueri?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-custa-personal-trainer-barueri.webp" alt="Quanto custa personal trainer em Barueri: o que influencia o valor (formato, frequência e local) e como ter o melhor custo-benefício" title="Quanto Custa Personal Trainer em Barueri — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Quanto custa um personal trainer em Barueri: o que realmente pesa no valor.</figcaption>
 </figure>
 
 
@@ -84052,7 +84076,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Quanto custa treinar com personal em Santana de Parnaíba: faixas de mercado, avulso vs pacote, atendimento em condomínio e a alternativa da consultoria online.",
     category: "Treinamento",
     date: "2026-07-08",
-    updatedAt: "2026-07-08",
+    updatedAt: "2026-07-22",
     readTime: "9 min",
     author: "Montinho",
     tags: ["personal trainer santana de parnaiba","preço","quanto custa","aldeia da serra","treino personalizado"],
@@ -84069,7 +84093,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Morar em Santana de Parnaíba — seja na Aldeia da Serra, na Fazendinha ou perto do Centro Histórico — e querer treinar com orientação esbarra sempre na mesma dúvida: <strong>quanto custa um personal trainer por aqui, e o que é um preço justo?</strong></p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-custa-personal-trainer-santana-de-parnaiba-infographic.svg" alt="Infográfico sobre Quanto Custa Personal Trainer em Santana de Parnaíba? — Montinho Personal Trainer" title="Quanto Custa Personal Trainer em Santana de Parnaíba?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-custa-personal-trainer-santana-de-parnaiba.webp" alt="Quanto custa personal trainer em Santana de Parnaíba: o que influencia o valor e como ter o melhor custo-benefício no acompanhamento" title="Quanto Custa Personal Trainer em Santana de Parnaíba — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Quanto custa um personal trainer em Santana de Parnaíba: entenda o valor.</figcaption>
 </figure>
 
 
@@ -84148,7 +84173,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Do Centro de Barueri aos condomínios próximos ao Tamboré: como funciona o personal a domicílio, para quem faz sentido e o que checar antes de contratar.",
     category: "Treinamento",
     date: "2026-07-08",
-    updatedAt: "2026-07-08",
+    updatedAt: "2026-07-22",
     readTime: "9 min",
     author: "Montinho",
     tags: ["personal trainer a domicílio","barueri","treino em casa","treino em condomínio","personal trainer"],
@@ -84166,7 +84191,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Quem vive em Barueri conhece a rotina: trabalho puxado, trânsito na saída para a Castelo Branco, o vagão cheio na Estação Barueri da Linha 8. Quando sobra tempo, <strong>não sobra energia para ir à academia</strong>.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-a-domicilio-barueri-infographic.svg" alt="Infográfico sobre Personal Trainer a Domicílio em Barueri — Montinho Personal Trainer" title="Personal Trainer a Domicílio em Barueri" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-a-domicilio-barueri.webp" alt="Personal trainer a domicílio em Barueri: treino personalizado na sua casa, com equipamentos adaptados e sem deslocamento" title="Personal Trainer a Domicílio em Barueri — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino personalizado na sua casa, em Barueri — sem deslocamento.</figcaption>
 </figure>
 
 <p>E aí o ciclo se repete: matrícula em janeiro, frequência caindo em março, mensalidade virando doação em junho. Não é falta de vontade — é excesso de fricção entre você e o treino.</p>
@@ -84233,7 +84259,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Ninguém deveria se autoproclamar 'o melhor'. Em vez disso, use estes 7 critérios objetivos para avaliar qualquer personal trainer de Alphaville — inclusive o Montinho.",
     category: "Treinamento",
     date: "2026-07-08",
-    updatedAt: "2026-07-08",
+    updatedAt: "2026-07-22",
     readTime: "10 min",
     author: "Montinho",
     tags: ["melhor personal trainer","alphaville","como escolher personal","personal trainer","avaliação"],
@@ -84251,7 +84277,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Digite "melhor personal trainer de Alphaville" no Google e você encontrará dezenas de profissionais se apresentando como a resposta. O problema: <strong>escolher errado custa caro</strong> — em dinheiro, em meses perdidos e, às vezes, em lesões.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/melhor-personal-trainer-de-alphaville-infographic.svg" alt="Infográfico sobre Como Escolher o Melhor Personal Trainer de Alphaville — Montinho Personal Trainer" title="Como Escolher o Melhor Personal Trainer de Alphaville" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/melhor-personal-trainer-de-alphaville.webp" alt="Melhor personal trainer de Alphaville: como escolher, o que avaliar e por que método e acompanhamento fazem a diferença nos resultados" title="Melhor Personal Trainer de Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Como escolher o melhor personal trainer de Alphaville.</figcaption>
 </figure>
 
 <p>E o custo invisível é pior: quem contrata o profissional errado uma vez tende a concluir que "personal não funciona" e desiste de vez. A frustração vira sedentarismo com carimbo.</p>
@@ -84311,7 +84338,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Medo de 'ficar grande', treino de glúteos que funciona, hormônios, gestação e pós-parto: o que um bom acompanhamento feminino em Alphaville precisa considerar.",
     category: "Treinamento",
     date: "2026-07-08",
-    updatedAt: "2026-07-08",
+    updatedAt: "2026-07-22",
     readTime: "10 min",
     author: "Montinho",
     tags: ["personal trainer feminino","alphaville","treino para mulheres","glúteos","hipertrofia feminina"],
@@ -84329,7 +84356,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Muitas mulheres em Alphaville me procuram com a mesma frase: "quero firmar o corpo, mas <strong>tenho medo de ficar grande</strong>". Outras já treinam há anos e não veem o glúteo evoluir. Outras acabaram de ter bebê e não sabem por onde recomeçar.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-feminino-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer para Mulheres em Alphaville — Montinho Personal Trainer" title="Personal Trainer para Mulheres em Alphaville" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-feminino-alphaville.webp" alt="Personal trainer feminino em Alphaville: treino personalizado para mulheres, com foco em emagrecimento, glúteos, força e saúde" title="Personal Trainer Feminino em Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino personalizado para mulheres em Alphaville: força, definição e saúde.</figcaption>
 </figure>
 
 <p>O que essas situações têm em comum? Treinos genéricos que ignoram o corpo feminino — o ciclo hormonal, as prioridades estéticas reais, as fases da vida. Resultado: esforço sem retorno e a sensação de que "meu corpo não responde".</p>
