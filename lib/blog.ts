@@ -2489,7 +2489,8 @@ export const blogPosts = ([
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rapido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 </div>
 
 
@@ -16079,6 +16080,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você quer começar ou quer entender melhor como funciona o atendimento no Residencial Zero, a primeira conversa é sem compromisso. <a href="/consultoria">Entre em contato</a> e me conta o que você precisa.</p>
 
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -16260,6 +16264,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><strong>Não pule a preparação:</strong> alguns minutos de <a href="/blog/mobilidade-articular-pre-treino">mobilidade articular antes do treino</a> melhoram a execução e reduzem o risco de desconfortos, especialmente para quem passa o dia sentado.</li>
 </ul>
 
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -16410,6 +16417,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para ver como esse método se traduz em resultado concreto, acesse a <a href="/resultados">página de resultados</a>. Se prefere começar com acompanhamento a distância, conheça a <a href="/consultoria">consultoria online</a>. Dúvidas sobre como funciona o processo? As <a href="/faq">perguntas frequentes</a> cobrem as principais — ou fale direto comigo pela <a href="/contato">página de contato</a>.</p>
 
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -16548,6 +16558,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Vivo e trabalho em Alphaville e região há mais de 20 anos. Conheço o Residencial 3, conheço a rotina de quem mora aqui e entendo o contexto real do atendimento. Antes disso, passei pela minha própria transformação — fui obeso, perdi mais de 40kg e construí, com estudo e prática, um método refinado e validado ao longo do atendimento de alunos. Essa história está em mais detalhe na <a href="/minha-historia">página sobre minha trajetória</a>.</p>
 
 <p>Quer ver resultados de alunos reais que passaram por esse processo? Acesse a <a href="/resultados">página de resultados</a>. Para entender todas as modalidades disponíveis para moradores do Residencial 3 — incluindo acompanhamento online —, visite a <a href="/consultoria">página de consultoria</a> ou envie uma mensagem pela <a href="/contato">página de contato</a>.</p>
+
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -16717,6 +16730,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para ver resultados de alunos reais atendidos com esse método, acesse a <a href="/resultados">página de resultados</a>. Para detalhes sobre as modalidades disponíveis — presencial, a domicílio, online ou híbrido — veja a <a href="/consultoria">consultoria</a>. Prefere conversar direto? Fale comigo pela página de <a href="/contato">contato</a>.</p>
 
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -16884,6 +16900,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>O processo começa com uma conversa sem compromisso pelo WhatsApp. Me conta seu objetivo, histórico e rotina. A partir daí, definimos a modalidade de atendimento mais adequada e agendamos a avaliação inicial. O primeiro treino pode acontecer na mesma semana.</p>
 
 <p>Conheça as modalidades disponíveis na <a href="/consultoria">página de consultoria</a> e veja exemplos de resultados reais na <a href="/resultados">página de resultados</a>. Para mais informações sobre como funciona o processo, acesse as <a href="/faq">perguntas frequentes</a> ou envie mensagem pela página de <a href="/contato">contato</a>.</p>
+
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -17065,6 +17084,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Exemplos de alunos reais atendidos com esse método estão na <a href="/resultados">página de resultados</a>. Para entender todas as opções de atendimento para moradores do Residencial 6, acesse a <a href="/consultoria">consultoria</a> ou fale direto pela página de <a href="/contato">contato</a>. A primeira conversa é sem compromisso.</p>
 
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -17152,6 +17174,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Comecei na musculação pela necessidade de transformar meu próprio corpo — e entendi na prática o que é treinar muito sem resultado, antes de entender o que é treinar com método. Esse processo está descrito na <a href="/minha-historia">minha história</a>. O que ficou dessa experiência é a clareza sobre o que realmente funciona — e o comprometimento de aplicar isso em cada aluno.</p>
 
 <p>Para ver resultados de alunos que saíram do platô com esse método, acesse a <a href="/resultados">página de resultados</a>. Para entender como funciona o atendimento para moradores do Residencial 8, visite a <a href="/consultoria">consultoria</a>.</p>
+
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -17331,6 +17356,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Veja exemplos de alunos reais na <a href="/resultados">página de resultados</a>. Para conhecer as modalidades de atendimento disponíveis — incluindo consultoria online para quem viaja com frequência —, acesse a <a href="/consultoria">consultoria</a> ou fale comigo pela página de <a href="/contato">contato</a>.</p>
 
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
@@ -17494,6 +17522,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>A primeira conversa é sem compromisso. Me conta o que você quer, o que já tentou e qual é a sua rotina. A partir daí, apresento como funciona o processo e o que você pode esperar como resultado. Se a agenda pede flexibilidade total, a <a href="/consultoria">consultoria online</a> também é uma opção.</p>
 
 <p>Veja exemplos na <a href="/resultados">página de resultados</a>, conheça as modalidades disponíveis na <a href="/consultoria">consultoria</a>, tire dúvidas nas <a href="/faq">perguntas frequentes</a> ou fale comigo pelo <a href="/contato">contato</a>.</p>
+
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -17659,6 +17690,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Veja exemplos de alunos reais na <a href="/resultados">página de resultados</a>. Para conhecer as opções de atendimento para moradores do Residencial 11 — presencial ou consultoria online —, acesse a <a href="/consultoria">consultoria</a> ou envie uma mensagem pelo <a href="/contato">contato</a>.</p>
 
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -17819,6 +17853,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para ver resultados de alunos de diferentes fases e perfis, acesse a <a href="/resultados">página de resultados</a>. Para conhecer as modalidades de atendimento disponíveis para moradores do Residencial 12, visite a <a href="/consultoria">consultoria</a> ou fale comigo pela página de <a href="/contato">contato</a>.</p>
 
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -17909,6 +17946,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Avaliação física e anamnese completa, protocolo 100% individualizado, sessões com atenção exclusiva, suporte pelo WhatsApp entre as sessões e reavaliação mensal — sem cobranças extras. O que é combinado na primeira conversa é o que está incluso. Veja as modalidades disponíveis na <a href="/personal-trainer-alphaville">página de personal trainer em Alphaville</a>.</p>
 
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -17984,6 +18024,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>A experiência de 20 anos na região como diferencial</h2>
 
 <p>Moro e trabalho na região de Alphaville e Tamboré há mais de 20 anos. Essa presença local não é detalhe — é o que me permite entender o ritmo de vida do morador do Gênesis 2 e construir protocolos que funcionam dentro dessa realidade. Minha própria trajetória de superação física está na base do método que aplico. Leia na <a href="/minha-historia">minha história</a> e acesse a <a href="/personal-trainer-alphaville">página de personal trainer em Alphaville</a> para mais informações.</p>
+
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -18125,6 +18168,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Viver na região de Alphaville e Tamboré há mais de 20 anos significa entender o contexto local — os deslocamentos, a rotina dos moradores, as academias disponíveis e o padrão de exigência de quem mora aqui. Não é um profissional que chega de fora — é alguém que conhece a região de dentro. Somo a isso uma transformação pessoal real — fui obeso e perdi mais de 40kg, história que conto em <a href="/minha-historia">minha história</a> — e atualização constante por meio de cursos e especializações em treinamento. Acesse a <a href="/personal-trainer-alphaville">página de personal trainer em Alphaville</a> para mais detalhes ou fale comigo pela página de <a href="/contato">contato</a>.</p>
 
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -18198,6 +18244,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Experiência local de mais de 20 anos no atendimento no Valville</h2>
 
 <p>Viver e trabalhar na região de Alphaville e Tamboré há mais de 20 anos me dá uma perspectiva que vai além do conhecimento técnico. Entendo o ritmo de vida de quem mora aqui, os deslocamentos, a pressão da rotina e o que é preciso para encaixar treino de qualidade nessa vida. Minha própria transformação física está na base de como atendo cada aluno. Leia na <a href="/minha-historia">minha história</a> e veja resultados na <a href="/resultados">página de resultados</a>.</p>
+
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -18276,6 +18325,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Mais de 20 anos de presença local que faz diferença</h2>
 
 <p>Trabalho na região de Alphaville e Tamboré há mais de 20 anos — e minha própria trajetória de superação de obesidade está na base do que ofereço como profissional. Essa experiência pessoal me dá uma perspectiva que vai além da teoria. Leia mais na <a href="/minha-historia">minha história</a>, veja resultados de alunos na <a href="/resultados">página de resultados</a> e acesse a <a href="/personal-trainer-alphaville">página de personal trainer em Alphaville</a>.</p>
+
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -19244,6 +19296,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para conhecer as modalidades completas de atendimento, acesse a <a href="/consultoria">página de consultoria</a>. Para entender o método por trás do trabalho, leia a <a href="/minha-historia">minha história</a>.</p>
 
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -19323,6 +19378,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Conheça as modalidades completas de atendimento na <a href="/consultoria">página de consultoria</a> e veja os resultados de alunos da região na <a href="/resultados">página de resultados</a>.</p>
 
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -19400,6 +19458,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Acesse a <a href="/consultoria">página de consultoria</a> para ver todas as modalidades disponíveis ou entre em contato para uma conversa sem compromisso. Saiba mais sobre a trajetória e o método na <a href="/minha-historia">minha história</a>.</p>
 
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -19470,6 +19531,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Moro e trabalho em Alphaville e Tamboré há mais de 20 anos. Atendo em residências, academias de condomínio, academias parceiras e no modelo online. Tenho histórico de resultado com alunos de todos os perfis — executivos, mães, iniciantes, pessoas em reabilitação, atletas recreacionais. A combinação de proximidade local e qualificação técnica é exatamente o que diferencia o profissional certo do profissional mais conveniente.</p>
 
 <p>Conheça o método completo na <a href="/personal-trainer-alphaville">página de personal trainer em Alphaville</a> e veja resultados reais na <a href="/resultados">página de resultados</a>.</p>
+
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -19548,6 +19612,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para saber mais sobre o método, acesse a <a href="/minha-historia">minha história</a> ou a <a href="/consultoria">página de consultoria</a>.</p>
 
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -19624,6 +19691,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Conheça todas as modalidades na <a href="/consultoria">página de consultoria</a> ou acesse a <a href="/personal-trainer-alphaville">página de personal trainer em Alphaville</a> para saber mais.</p>
 
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
@@ -19694,6 +19764,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Atendo em academias próximas ao Centro Comercial de Alphaville e na academia do condomínio residencial do aluno em Tamboré e região — o que elimina o deslocamento adicional. Para profissionais que viajam com frequência, ofereço modelo híbrido com sessões presenciais nos dias disponíveis e suporte online nos demais.</p>
 
 <p>Trabalho com profissionais de alta performance há mais de 20 anos na região de Alphaville. Conheço a rotina corporativa da área e sei montar protocolo que funciona dentro da agenda real — não da agenda ideal. Acesse a <a href="/consultoria">página de consultoria</a> para ver as modalidades disponíveis.</p>
+
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -19900,6 +19973,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Minha presença na região de Alphaville há mais de 20 anos</h2>
 <p>Trabalho com personal training em Alphaville e Tamboré desde antes do Iguatemi da região ser inaugurado. Esses 20 anos de presença local significam conhecimento profundo da região — academias, condomínios, rotinas, logística. Quando defino a academia mais conveniente para um aluno da região do Iguatemi, estou tomando uma decisão baseada em conhecimento real, não em pesquisa online. Conheça mais sobre o método na <a href="/minha-historia">minha história</a> e as modalidades de atendimento na <a href="/consultoria">página de consultoria</a>.</p>
+
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -24014,6 +24090,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Para o executivo individual</h2>
 <p>Se você é um profissional que trabalha em Alphaville e busca personal trainer para uso individual — não corporativo — o atendimento presencial e a consultoria online também estão disponíveis com toda a flexibilidade que a agenda de um executivo exige.</p>
 
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Objetivos mais comuns dos executivos de Alphaville</h2>
 <ul>
   <li>Perder gordura abdominal sem abrir mão do resultado profissional</li>
@@ -24126,6 +24205,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li>Ruptura prematura de membranas</li>
 </ul>
 <p>Qualquer dessas condições requer afastamento imediato do exercício e avaliação obstétrica urgente.</p>
+
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Por que o acompanhamento de personal especializado importa</h2>
 <p>Treinar sem orientação durante a gravidez é um risco desnecessário. Um personal trainer com conhecimento em exercício gestacional adapta cada exercício, monitora sinais de alerta e ajusta o programa trimestre a trimestre. Em Alphaville e Tamboré, onde o perfil da população inclui muitas mulheres com alto nível de exigência e objetivos claros, o acompanhamento especializado garante que o treino continue sendo seguro e eficiente.</p>
@@ -24360,6 +24442,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para quem tem uma rotina de executivo, com pouco tempo e alta exigência de resultado, o investimento em um profissional experiente e especializado costuma ser muito mais eficiente do que anos tentando aprender sozinho — ou pagando barato para não sair do lugar.</p>
     
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
@@ -24550,6 +24635,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você tem entre 35 e 55 anos, agenda lotada e quer colocar a saúde de volta no centro da sua vida, estou aqui para ajudar.</p>
     
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h3>Leia Também</h3>
 <ul>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular de Forma Eficiente</a></li>
@@ -47054,7 +47142,8 @@ Mini-série 3: 3 reps → encerrar aqui (< 3 reps = fatigado demais)<br>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculacao para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 </div>
 
 
@@ -47277,6 +47366,9 @@ Mini-série 3: 3 reps → encerrar aqui (< 3 reps = fatigado demais)<br>
 <li>Médico do esporte ou cardiologista (quando há condições de saúde específicas)</li>
 </ul>
 <p>Profissionais que trabalham em rede — ou pelo menos que reconhecem os limites de sua competência e referem para outros especialistas quando necessário — são os que produzem os melhores resultados ao longo do tempo.</p>
+
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -59021,7 +59113,8 @@ Depende do objetivo e da consistência, mas a maioria dos alunos percebe mudanç
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="Treino Personalizado com Montinho" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 </div>
 
 <figure style="margin:2rem 0">
@@ -60859,7 +60952,8 @@ A "janela anabólica" de 30 minutos pós-treino é um mito superado. O total de 
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="Como Escolher a Academia Certa" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 </div>
 
 <figure style="margin:2rem 0">
@@ -62878,7 +62972,8 @@ Proteína em pó e creatina (se você usa) valem a pena manter, pois têm impact
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="Treino para Quem Odeia Academia: Alternativas Eficazes" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 </div>
 
 <figure style="margin:2rem 0">
@@ -67702,7 +67797,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 </ul>
 
 
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Conclusão</h2>
 <p>O melhor treino para iniciantes não é o mais complexo nem o mais intenso. É o que você consegue repetir por semanas e meses sem quebrar. Três dias, exercícios compostos, carga progressiva, descanso de verdade. <strong>Simples de entender, poderoso de executar.</strong></p>
@@ -68108,7 +68204,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 </ul>
 
 
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>E Tem Mais Uma Coisa</h2>
 <p>Voltar depois de meses parado não é derrota — é decisão. Com progressão inteligente e paciência nas primeiras semanas, a memória muscular faz o trabalho pesado por você. Mas existe um jeito de tornar esse retorno ainda mais rápido e à prova de erro: a <strong>consultoria personalizada do Montinho</strong>, que transforma todo o protocolo deste artigo num plano ajustado ao seu histórico, sua rotina e seus objetivos.</p>
@@ -69537,7 +69634,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>O treino online brilha quando você já tem bagagem técnica ou quando a agenda não perdoa. Mas mesmo aí, ter um personal montando e acompanhando o programa muda o jogo por completo.</p>
 
 
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>E Tem Mais Uma Coisa</h2>
 <p>Tudo o que você acabou de ler — o objetivo claro, a frequência certa, a técnica antes da carga, a progressão anotada — pode chegar até você já montado. Se você está em Alphaville, Barueri, Santana de Parnaíba ou em qualquer lugar do Brasil, a consultoria do Montinho pega toda essa ciência e transforma em um plano com o seu nome: presencial ou online, sem fórmula mágica, sem promessa de 30 dias. Estratégia, progressão e resultado que fica.</p>
@@ -73948,7 +74046,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 
 
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dvshstAxvMM?rel=0" title="Treino full body para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>E Tem Mais Uma Coisa</h2>
 <p>Você acabou de ganhar uma habilidade que vale para a vida inteira: treinar em qualquer lugar. Férias, mudança, orçamento apertado — nada mais te para. Agora imagine essa liberdade com um programa desenhado para o seu nível, seus objetivos e o espaço que você tem. É isso que a <strong>consultoria online do Montinho</strong> faz: pega toda a ciência deste guia e entrega mastigada, no seu ritmo, com acompanhamento real.</p>
@@ -75994,7 +76093,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Antes de qualquer compra fitness em novembro, uma pergunta honesta no espelho: <strong>"Se eu comprar isso hoje, eu vou usar?"</strong> Se a resposta hesitar, o desconto não importa. Espere. O melhor preço do mundo não conserta uma compra que você não vai viver.</p>
 
 
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Compre Menos. Use Mais.</h2>
 <p>A Black Friday pode ser o melhor momento do ano para investir na sua saúde — desde que você compre sabendo o quê e por quê. Pesquise antes, leia o contrato, confirme o desconto. E lembre: <strong>desconto bom é o que vira resultado, não o que vira lembrança no extrato</strong>.</p>
@@ -76305,8 +76405,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Estrutura a serviço do objetivo:</strong> piscina que você nunca vai usar não justifica mensalidade maior.</li>
 <li><strong>Leia o contrato:</strong> fidelidade e multa de cancelamento importam mais do que o preço de vitrine.</li>
 </ol>
-<p>Se está começando agora, este vídeo resume os fundamentos que valem em qualquer academia da lista.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare no ponto central do vídeo: técnica e consistência valem mais que a máquina mais moderna. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda</a> pelo menos 150 minutos semanais de atividade física — e isso cabe em qualquer uma dessas academias.</p>
 <h2>A verdade que nenhuma academia te conta</h2>
 <p><strong>Academia é ferramenta. Resultado vem de orientação.</strong> Você pode ter a melhor estrutura de Alphaville à disposição e ainda assim estagnar, porque treino sem planejamento é só cansaço com hora marcada.</p>
@@ -76377,7 +76477,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p><em>Preços e horários variam por unidade e plano — confirme sempre nos canais oficiais.</em></p>
 <h2>Quantas vezes por semana treinar?</h2>
 <p>Mais importante do que a academia escolhida é a frequência sustentável. Para a maioria dos moradores de Barueri — com trânsito na <strong>Rodovia Castelo Branco</strong> e agenda apertada — 3 a 5 treinos semanais bem planejados batem qualquer rotina heroica que dura duas semanas.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Como o vídeo mostra, a frequência ideal depende do seu objetivo e da sua recuperação — e é exatamente esse tipo de decisão que um plano profissional resolve por você. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">recomendação da OMS</a> de 150 a 300 minutos semanais é o piso, não o teto.</p>
 <h2>O que separa quem evolui de quem desiste</h2>
 <p>Aqui vai a virada: <strong>a academia é o palco, o treino é o roteiro</strong>. Barueri tem estrutura de sobra — o que a maioria não tem é um plano que conecte objetivo, rotina e progressão de carga.</p>
@@ -76453,7 +76554,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Aula experimental:</strong> nenhum contrato antes de sentir o ambiente.</li>
 </ul>
 <p>E se o objetivo é ganhar massa muscular, entenda o que realmente acelera o processo — em qualquer academia da cidade.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>O recado do vídeo vale dobrado aqui: hipertrofia depende de treino progressivo e consistente, não de equipamento raro. A <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">ciência do treinamento resistido</a> confirma: o estímulo certo, repetido ao longo de meses, é o que constrói músculo e saúde.</p>
 <h2>A peça que falta no seu treino</h2>
 <p>Agora a virada: <strong>toda academia da lista funciona — se o seu treino funcionar</strong>. O que trava a evolução da maioria não é a estrutura, é treinar sem plano, sem progressão e sem correção de técnica.</p>
@@ -76527,8 +76629,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <p><em>Valores variam por unidade e plano — confirme nos canais oficiais de cada academia.</em></p>
 <h2>Treino que cabe na agenda de executivo</h2>
-<p>Se você tem 45 minutos, 3 a 4 vezes por semana, dá para evoluir de verdade — desde que cada sessão tenha propósito e a carga progrida com método. É exatamente disso que trata este vídeo.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Como fazer uma progressão de carga eficiente — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Progressão de carga é o motor do resultado — e é o que falta na maioria dos treinos "de condomínio". A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS</a> reforça: além do aeróbico, fortalecimento muscular ao menos 2 vezes por semana.</p>
 <h2>O detalhe que muda tudo</h2>
 <p>Aqui está a virada: no Tamboré, <strong>estrutura não é o gargalo — direção é</strong>. Entre a academia premium e a do condomínio, ganha quem tiver o plano certo e alguém cobrando execução.</p>
@@ -76602,8 +76704,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Filtro do horário:</strong> visitou no horário real do seu treino e o ambiente funcionou?</li>
 <li><strong>Filtro do objetivo:</strong> a estrutura serve ao que você quer — e não ao que a propaganda vende?</li>
 </ol>
-<p>Passou nos três? Então o que decide o resultado daqui em diante é o treino em si. Este guia em vídeo resume o essencial.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Como o vídeo deixa claro, os princípios da musculação são os mesmos em qualquer academia — o que muda é a qualidade da execução. Há <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">evidência científica robusta</a> de que o treinamento resistido bem conduzido melhora força e saúde em qualquer idade.</p>
 <h2>One more thing: o multiplicador de resultado</h2>
 <p>A virada é simples: <strong>academia perto resolve a frequência; orientação resolve o resultado</strong>. Um sem o outro é dinheiro parado.</p>
@@ -76672,8 +76774,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <p><em>Planos, horários e valores mudam com frequência — confirme sempre na unidade ou no site oficial.</em></p>
 <h2>Se o objetivo é emagrecer, leia isto antes</h2>
-<p>Nenhuma academia emagrece ninguém. O que emagrece é o processo: treino consistente, alimentação ajustada e progressão — em qualquer uma das opções acima. Este vídeo explica o mecanismo sem enrolação.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Percebeu? O protocolo importa mais que o CEP da academia. E os órgãos de saúde confirmam a base: o <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer">Ministério da Saúde</a> e a <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS</a> apontam a atividade física regular como pilar de prevenção — a regularidade é o segredo.</p>
 <h2>A peça que transforma mensalidade em resultado</h2>
 <p>Agora, a virada: <strong>matrícula é o começo da história, não o final</strong>. Barueri está cheia de gente matriculada e parada no mesmo corpo há dois anos — porque estrutura sem estratégia não evolui ninguém.</p>
@@ -76742,8 +76844,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <p><em>Planos e horários variam por unidade — confirme sempre nos canais oficiais antes de decidir.</em></p>
 <h2>Começando (ou recomeçando): o essencial</h2>
-<p>Se você está voltando a treinar depois de um tempo parado, o maior risco não é a academia errada — é o começo errado: volume demais, técnica de menos, desistência em 3 semanas. Este vídeo resume o que um iniciante precisa saber.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Guarde a essência: começar leve, progredir sempre. É o mesmo princípio da <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">recomendação da OMS</a> — atividade regular e fortalecimento muscular como hábito, não como maratona de janeiro.</p>
 <h2>O que nenhum mapa de academias te mostra</h2>
 <p>A virada final: <strong>escolher a academia é 20% da decisão; os outros 80% são o que você faz dentro dela</strong>. Estrutura sem método é potencial desperdiçado — em Santana de Parnaíba ou em qualquer lugar.</p>
@@ -76978,8 +77080,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Aula experimental ou day use:</strong> treine um dia antes de assinar. Ambiente se sente, não se lê.</li>
 </ul>
 <h2>O fator que decide a hipertrofia (e não está na fachada)</h2>
-<p>Estrutura pesada acelera quem já sabe o que fazer. Mas hipertrofia é consequência de <strong>programa, progressão de carga e recuperação</strong> — em qualquer academia. Este vídeo do Leandro Twin resume o que realmente acelera a hipertrofia:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Note que nenhum dos fatores citados é "a marca da academia". Ironberg e NitroGym dão o palco perfeito — mas o roteiro do espetáculo é seu treino. A <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">ciência do treinamento resistido</a> é clara: dose, progressão e constância mandam.</p>
 <h2>One more thing: o palco não faz o ator</h2>
 <p><strong>Academia top é ferramenta afiada. Nas mãos erradas, corta do mesmo jeito — para o lado errado.</strong> Quem migra para uma academia de bodybuilding sem plano estruturado costuma copiar treino de atleta avançado e estagnar (ou se lesionar).</p>
@@ -77055,8 +77157,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ol>
 <p>E lembre-se do básico que a <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda sobre atividade física</a>: constância semanal, incluindo fortalecimento muscular. Qualquer academia da lista permite cumprir isso.</p>
 <h2>O critério que ninguém coloca no comparativo</h2>
-<p>Antes da virada, vale assistir a este resumo do Leandro Twin sobre o que realmente estrutura um bom treino de musculação — o critério invisível de qualquer "melhor academia":</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Reparou que nada ali depende da marca da academia? Técnica, progressão e constância viajam com você — da low cost do Centro de Barueri à premium de Alphaville. <strong>O treino é portátil; o resultado, também.</strong></p>
 <h2>One more thing: a resposta honesta de quem treina aqui</h2>
 <p>Depois de anos treinando e atendendo em Alphaville, a conclusão do <strong>Montinho</strong> é direta: <strong>a melhor academia de Alphaville é a que você frequenta com um plano inteligente.</strong> Academia é ferramenta. Orientação é o que gera resultado.</p>
@@ -77130,8 +77232,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Pergunte sobre fidelidade e cancelamento</strong> antes de dar o cartão.</li>
 <li><strong>Cronometre o trajeto</strong> saindo do trabalho ou de casa.</li>
 </ol>
-<p>Está começando agora? Este vídeo do Leandro Twin resume o que todo iniciante deveria saber antes do primeiro treino — e ajuda a avaliar se a academia (e o professor de salão) está te orientando bem:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Perceba: quase tudo que define o sucesso do iniciante acontece <strong>dentro do treino</strong>, não na escolha da marca. A academia certa facilita; o treino certo transforma. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">recomendação da OMS</a> é clara: o que importa é a regularidade da atividade física — e regularidade nasce de rotina bem desenhada.</p>
 <h2>One more thing: a variável que muda tudo</h2>
 <p>Aqui está a verdade que nenhum ranking entrega: <strong>a melhor academia de Barueri, sem orientação, perde para uma academia mediana com um plano inteligente.</strong> Ferramenta não substitui método.</p>
@@ -77219,8 +77321,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>O erro que anula qualquer ranking</h2>
 <p>De nada adianta escolher a "melhor" se ela fica do lado errado da <strong>Rodovia Castelo Branco</strong> no seu horário de pico. <strong>Constância vence estrutura.</strong> Antes de assinar, faça o teste do trajeto real e uma <strong>aula experimental</strong> no horário em que você de fato vai treinar.</p>
 <p>E lembre: a <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda atividade física regular</a> — o que exige uma escolha sustentável, não impressionante.</p>
-<p>Se você está começando agora e quer errar menos na academia, este vídeo do Leandro Twin resume o essencial antes do primeiro treino.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare no ponto central do vídeo: o resultado vem do método, não do equipamento. Isso vale para qualquer academia desta lista — e nos leva à parte mais importante deste artigo.</p>
 <h2>A verdade que nenhum ranking conta</h2>
 <p>Aqui vai a virada: <strong>academia é ferramenta; orientação é o que gera resultado.</strong> Já vi aluno estagnado na academia mais cara de Alphaville e aluno transformado numa low-cost — a diferença era o treino prescrito, a progressão e a cobrança.</p>
@@ -77303,8 +77405,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Antes de assinar: o teste dos 3 pontos</h2>
 <p>1) <strong>Trajeto real</strong>: a academia está no caminho casa-trabalho? Quem depende da <strong>Linha 8 da CPTM</strong> ou enfrenta a Castelo Branco sabe que 15 minutos a mais matam o hábito. 2) <strong>Horário real</strong>: visite na hora em que você vai treinar. 3) <strong>Aula experimental</strong>: sempre.</p>
 <p>Não é frescura: o <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer">Ministério da Saúde</a> reforça a importância da atividade física regular — e regularidade nasce de logística, não de motivação.</p>
-<p>Sobre frequência, aliás: quantas vezes por semana você realmente precisa treinar? Este vídeo do Leandro Twin responde com base prática.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A conclusão do vídeo conversa com este ranking: a frequência sustentável importa mais que a frequência ideal. E é aí que entra o fator que nenhuma academia vende na recepção.</p>
 <h2>One more thing: a matrícula não treina por você</h2>
 <p><strong>Academia é ferramenta. Orientação é motor.</strong> Em anos atendendo em Barueri e Alphaville, vi o mesmo padrão: quem tem treino prescrito, progressão de carga e alguém cobrando evolui em qualquer academia desta lista. Quem não tem, estagna até na melhor.</p>
@@ -77383,8 +77485,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Fazendinha, Aldeia ou Centro: decida pela logística</h2>
 <p>Quem mora na <strong>Fazendinha</strong> e trabalha em Alphaville pode preferir treinar no trajeto; quem vive em <strong>Aldeia da Serra</strong> ganha tempo treinando na própria região; quem está perto do <strong>Centro Histórico</strong> tem opções locais honestas. A conta é simples: <strong>cada 10 minutos a mais de trajeto é uma desculpa a mais para faltar.</strong></p>
 <p>A ciência confirma que o que importa é a regularidade: o <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">treinamento resistido tem benefícios bem documentados</a> — desde que praticado com constância e progressão.</p>
-<p>Se você está começando agora em qualquer uma dessas academias, este vídeo do Leandro Twin evita os erros clássicos de iniciante.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Percebeu o padrão das dicas? Técnica, progressão e consistência — nada disso vem da academia em si. Vem de orientação. E é aqui que a maioria trava.</p>
 <h2>One more thing: o que separa matrícula de resultado</h2>
 <p><strong>Academia é ferramenta; quem constrói o resultado é o método.</strong> Atendo alunos em Santana de Parnaíba e vejo todo dia: com treino prescrito para o seu corpo e alguém acompanhando a evolução, qualquer academia desta lista entrega resultado.</p>
@@ -77464,8 +77566,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Unidade errada</strong>: economizar na mensalidade e gastar em deslocamento pela <strong>Castelo Branco</strong> não é economia.</li>
 </ol>
 <p>Treinar com pouco investimento funciona — o <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">mínimo recomendado pela OMS</a> cabe em qualquer estrutura básica. O gargalo nunca é o equipamento.</p>
-<p>Se o seu objetivo é emagrecer gastando pouco, este vídeo do Leandro Twin mostra o que realmente importa no processo — e não é a esteira mais cara.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Notou? Dieta, treino estruturado e constância — tudo coisa que independe do valor da mensalidade. O que nos leva à conta que quase ninguém faz.</p>
 <h2>One more thing: a matemática do custo por resultado</h2>
 <p>Pense assim: <strong>não existe mensalidade barata sem resultado — existe dinheiro jogado fora em prestações pequenas.</strong> A academia econômica te dá a ferramenta pelo menor preço. O que transforma ferramenta em resultado é o método: treino prescrito para o seu corpo, progressão de carga e alguém acompanhando.</p>
@@ -77541,8 +77643,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p><strong>Se paga quando:</strong> a unidade está no seu trajeto (região do <strong>Iguatemi Alphaville</strong>, <strong>Alameda Rio Negro</strong>, <strong>Tamboré</strong>), você usa 2+ serviços além da musculação, e o conforto elimina desculpas para faltar.</p>
 <p><strong>Não se paga quando:</strong> você faz o mesmo treino de musculação básica que faria numa rede econômica, vai 2x por semana e nunca pisou na piscina. Nesse cenário, o dinheiro renderia mais em orientação profissional.</p>
 <p>A ciência é clara: os ganhos vêm do estímulo e da progressão — o <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">treinamento resistido bem estruturado</a> é o que constrói músculo, em qualquer estrutura.</p>
-<p>Se hipertrofia é seu objetivo, este vídeo do Leandro Twin mostra o que de fato acelera resultados — repare quanto depende de método, não de estrutura.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Viu o ponto? Intensidade, técnica, progressão e consistência. A academia premium pode facilitar tudo isso — mas não faz nenhum deles por você. Alguém precisa fazer. E é aqui que entra a decisão inteligente.</p>
 <h2>One more thing: o verdadeiro premium é o método</h2>
 <p><strong>Academia é ferramenta — premium ou não. O que gera resultado é a orientação.</strong> O aluno que mais evolui não é o da academia mais cara: é o que tem treino prescrito para o próprio corpo, progressão planejada e alguém acompanhando de perto.</p>
@@ -77622,8 +77724,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>O maior de todos</strong>: meses pagos sem frequentar. A mensalidade mais cara é a da academia que você não usa.</li>
 </ul>
 <h2>Antes de assinar qualquer plano, veja isto</h2>
-<p>Boa parte de quem se matricula em Alphaville é iniciante ou está voltando depois de anos parado. Antes de escolher pelo preço, vale entender o básico de como estruturar seus primeiros treinos — o vídeo abaixo resume bem.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Percebeu o padrão? Tudo que gera resultado — técnica, progressão, constância — independe do valor da mensalidade. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda atividade física regular</a> para todos os adultos, e isso cabe em qualquer orçamento.</p>
 <h2>A conta que quase ninguém faz: o barato que sai caro</h2>
 <p>Aqui está a virada. <strong>Academia é ferramenta. Orientação é o que gera resultado.</strong> Você pode pagar a mensalidade mais barata de Barueri e transformar o corpo — ou pagar a mais cara de Alphaville e passar um ano estagnado.</p>
@@ -77708,8 +77810,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 <p><strong>A melhor academia de Barueri é a que você consegue frequentar 4 vezes por semana</strong> — o resto é detalhe negociável.</p>
 <h2>Quantas vezes por semana você precisa ir para a conta fechar?</h2>
-<p>Uma forma inteligente de avaliar preço é o custo por treino: quem vai 4 vezes por semana paga por treino uma fração de quem vai 4 vezes por mês. Mas quantas vezes treinar? O vídeo abaixo responde com base sólida.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Conclusão prática: com 3 a 4 sessões bem planejadas por semana, qualquer plano de academia em Barueri se paga em saúde. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda 150 a 300 minutos semanais de atividade</a> — e treino de força pelo menos duas vezes na semana.</p>
 <h2>A virada: onde está o investimento de verdade</h2>
 <p><strong>Academia é a ferramenta. Orientação é o resultado.</strong> A diferença entre quem transforma o corpo e quem desiste raramente é o valor da mensalidade — é saber o que fazer quando pisa no salão.</p>
@@ -77783,8 +77885,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td><strong>Premium (Alphaville)</strong></td><td>Estrutura completa de clube</td><td>Natação, coletivas, musculação</td><td>Quem usa a estrutura e aceita deslocar-se</td></tr>
 </table>
 <h2>O objetivo define o investimento</h2>
-<p>Antes de comparar mensalidades, defina a meta. Se o objetivo é emagrecer, por exemplo, o que decide o jogo é a combinação de treino, alimentação e constância — não o valor do plano. O vídeo abaixo explica a lógica da perda de gordura de forma direta.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Ou seja: o processo que emagrece cabe em qualquer academia da cidade — e até na do seu condomínio. O que não pode faltar é programação. <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">A ciência do treinamento resistido</a> é clara: progressão estruturada é o motor do resultado.</p>
 <h2>A pergunta certa não é "quanto custa" — é "quanto rende"</h2>
 <p>Aqui vai a virada que economiza dinheiro de verdade: <strong>a academia é a ferramenta; a orientação é o que transforma mensalidade em resultado</strong>. Pagar pouco e treinar errado é desperdício. Pagar muito e treinar errado é desperdício maior.</p>
@@ -77862,8 +77964,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Há ainda o fator região: em Alphaville, Barueri e Santana de Parnaíba, quem treina no horário de pico — antes ou depois do expediente — deve visitar a unidade nesse horário antes de assinar. <strong>Salão lotado transforma treino de 50 minutos em novela de 90.</strong></p>
 <p>Se você se reconheceu no perfil iniciante, não descarte a academia barata: descarte treinar sem direção. A combinação certa resolve os dois problemas de uma vez, como você verá a seguir. Antes disso, um teste simples: visite a unidade, peça a aula experimental e observe quanto tempo você espera pelos equipamentos principais — supino, agachamento, puxada. Esse número, no seu horário real, vale mais que qualquer comparação de mensalidade feita no sofá.</p>
 <h2>Como transformar mensalidade econômica em resultado</h2>
-<p>Equipamento você já tem — falta o método. O vídeo abaixo é um excelente ponto de partida para entender como estruturar a musculação do jeito certo, em qualquer academia.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Note que nada no vídeo depende de academia cara: <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">as evidências sobre treinamento resistido</a> apontam que progressão de carga e consistência são o que constrói músculo e saúde — com halteres de qualquer marca, em qualquer salão.</p>
 <h2>One more thing: o barato que não gera resultado é o mais caro de todos</h2>
 <p>Aqui está a verdade que a comparação de preços esconde: <strong>a mensalidade mais cara é a da academia onde você não evolui</strong>. Pagar pouco e treinar errado por um ano custa doze mensalidades e zero resultado.</p>
@@ -77945,8 +78047,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td><strong>Premium</strong></td><td>Estrutura completa</td><td>Isenções em campanhas e planos longos</td><td>Quem fecha planos de maior duração</td></tr>
 </table>
 <h2>Matrícula zero é só o começo — o hábito é o jogo</h2>
-<p>Economizar na entrada é ótimo, mas o que define se o dinheiro rendeu é a frequência nos meses seguintes. E frequência nasce de rotina bem desenhada — quantas vezes por semana treinar é a decisão que sustenta tudo. O vídeo abaixo ajuda a definir isso com critério.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Com uma frequência realista definida, a matrícula isenta e a mensalidade viram investimento de verdade — a <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda atividade física regular</a> justamente porque o benefício vem da constância, não do contrato.</p>
 <h2>One more thing: a taxa mais cara é a do treino errado</h2>
 <p>Você negociou a matrícula, fugiu das taxas, fechou um bom plano. Falta o essencial: <strong>saber o que fazer dentro da academia</strong>. Porque taxa zero com treino aleatório ainda é prejuízo — só que parcelado em meses de estagnação.</p>
@@ -78018,8 +78120,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>O erro que faz você desistir em 3 meses</h2>
 <p>A maioria escolhe academia pela estrutura e desiste pela logística. Se o treino exige 20 minutos de carro contra o fluxo, ele será a primeira coisa cortada na semana corrida.</p>
 <p>Antes de fechar plano, faça o teste do trajeto real: vá até a academia <strong>no horário em que pretende treinar</strong>, num dia útil. Avalie trânsito, estacionamento e lotação. E peça uma <strong>aula experimental</strong> — quase todas oferecem.</p>
-<p>Se você está começando do zero, este vídeo resume o que realmente importa nos primeiros meses de musculação — antes mesmo de escolher onde treinar.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare no ponto central do vídeo: técnica e progressão vêm antes de equipamento. Ou seja, a academia perto do Shopping Tamboré resolve o "onde" — mas o "como" continua sendo a variável que separa quem evolui de quem estaciona.</p>
 <h2>Quanto treinar por semana faz diferença?</h2>
 <p>A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">Organização Mundial da Saúde</a> recomenda pelo menos 150 minutos semanais de atividade moderada, além de fortalecimento muscular 2 vezes por semana. Traduzindo: <strong>3 a 4 treinos bem feitos por semana já mudam seu corpo e sua saúde</strong> — desde que tenham método.</p>
@@ -78093,8 +78195,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>O teste de 15 minutos antes de assinar qualquer plano</h2>
 <p>Visite a academia <strong>no exato horário em que pretende treinar</strong>. Conte quantas pessoas esperam pelos equipamentos que você mais usaria. Observe a manutenção. Pergunte sobre <strong>aula experimental</strong> e período de teste.</p>
 <p>E lembre: segundo <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">evidências científicas sobre treinamento resistido</a>, o que gera resultado é a combinação de estímulo adequado e progressão — variáveis que dependem do seu programa, não do CEP da academia.</p>
-<p>Se o seu objetivo é evoluir de verdade na musculação, este vídeo explica como acelerar a hipertrofia com o que realmente importa.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Percebeu o padrão? Intensidade, técnica e consistência. Nenhuma dessas variáveis vem instalada na academia — todas dependem de orientação. É por isso que tanta gente treina há anos em ótimas academias de Alphaville e continua com o mesmo corpo.</p>
 <h2>One more thing: o que o público de Alphaville já entendeu</h2>
 <p>Quem tem agenda de executivo não tem tempo para tentativa e erro. <strong>Academia é ferramenta; método é resultado.</strong> A diferença entre 6 meses de evolução e 6 meses de frustração é ter alguém ajustando treino, carga e técnica para o seu caso.</p>
@@ -78164,8 +78266,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td><strong>Treino em casa/condomínio</strong></td><td>Sua estrutura, zero deslocamento extra</td><td>Personal presencial, consultoria</td><td>Quem quer eliminar o trajeto de vez</td></tr>
 </table>
 <h2>Quantas vezes por semana treinar com essa rotina?</h2>
-<p>Para quem dirige muito, a dúvida clássica é frequência: 3, 4, 5 vezes? A resposta depende do seu objetivo e da sua recuperação — e este vídeo explica exatamente como decidir.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A conclusão prática: <strong>frequência sustentável vence frequência ideal.</strong> Três treinos que acontecem toda semana valem mais que cinco planejados que o trânsito engole. E um bom programa extrai o máximo de cada sessão.</p>
 <p>Vale lembrar: a <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda</a> fortalecimento muscular ao menos 2 vezes por semana — meta alcançável até para a agenda mais caótica.</p>
 <h2>One more thing: e se o treino não precisasse nem de desvio?</h2>
@@ -78237,8 +78339,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <h2>Sedentarismo de trem e escritório: por que a musculação é urgente</h2>
 <p>Horas sentado no vagão e mais oito na cadeira do escritório cobram caro: postura, lombar, disposição. <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências sobre treinamento resistido</a> mostram benefícios amplos de força e saúde — e o <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer">Ministério da Saúde</a> reforça a atividade física regular como pilar de prevenção.</p>
-<p>Se você está começando agora, este vídeo entrega o essencial para não errar nos primeiros meses de musculação.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare: as dicas giram em torno de técnica, constância e progressão — não de equipamento. A academia perto da Estação Barueri te dá acesso; <strong>quem te dá direção é o acompanhamento.</strong></p>
 <h2>One more thing: o método que viaja com você</h2>
 <p>Aqui vai a verdade que economiza meses: <strong>matrícula não gera resultado — método gera.</strong> Treino genérico de aplicativo é o motivo de tanta gente frequentar academia e não mudar.</p>
@@ -78308,8 +78410,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <h2>Objetivo emagrecimento: o que realmente funciona</h2>
 <p>Boa parte de quem procura academia na região quer <strong>perder gordura</strong>. E aqui mora o maior desperdício de tempo das academias: horas de esteira sem estratégia. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS</a> recomenda combinar atividade aeróbica com fortalecimento muscular — e o método importa mais que o suor.</p>
-<p>Este vídeo explica, sem enrolação, como funciona a perda de gordura de verdade.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A mensagem central: emagrecimento é estratégia, não punição. Treino de força, constância e ajuste fino — exatamente o que um programa genérico de aplicativo não entrega. <strong>Quem treina sem método paga a mensalidade duas vezes: em dinheiro e em tempo.</strong></p>
 <h2>One more thing: o acompanhamento que cabe na sua rotina</h2>
 <p>A real é essa: a academia perto da estação resolve o acesso, mas <strong>o resultado vem da orientação</strong>. Execução correta, carga certa, progressão planejada — é isso que separa 6 meses de mudança visível de 6 meses de frustração.</p>
@@ -78379,8 +78481,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <h2>Treino de 45 minutos funciona? A ciência diz que sim — com uma condição</h2>
 <p>A condição é <strong>progressão</strong>. Treino curto sem evolução de carga vira aquecimento glorificado. <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">As evidências sobre treinamento resistido</a> são claras: o estímulo precisa progredir para o corpo mudar.</p>
-<p>Este vídeo mostra exatamente como fazer uma progressão de carga eficiente — o detalhe que separa quem evolui de quem repete o mesmo treino há um ano.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Como fazer uma progressão de carga eficiente — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Note que progressão exige registro, ajuste e critério — coisas difíceis de gerenciar sozinho entre uma reunião e outra. É aqui que a maioria dos treinos de almoço em Alphaville estaciona: frequência boa, evolução nenhuma.</p>
 <h2>One more thing: o ativo mais escasso de Alphaville é o seu tempo</h2>
 <p>Quem trabalha no centro comercial não precisa de mais uma academia — precisa que <strong>cada minuto de treino renda o máximo</strong>. E isso é método, não sorte.</p>
@@ -78456,8 +78558,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <p>Perto do <strong>Iguatemi Alphaville</strong>, do <strong>Shopping Tamboré</strong> e ao longo da <strong>Alameda Rio Negro</strong> você encontra praticamente todos esses perfis — o que reforça: o problema nunca foi falta de opção.</p>
 <h2>Antes de assinar, entenda o básico do treino</h2>
-<p>Escolher bem a academia é metade do jogo. A outra metade é saber o que fazer lá dentro — e este vídeo resume os fundamentos que evitam os erros mais comuns de quem está começando:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare como quase todas as dicas envolvem <strong>técnica, constância e progressão</strong> — nada disso depende da marca da academia. Depende de orientação. E é aí que a maioria trava, mesmo com a matrícula em dia.</p>
 <h2>O erro que ninguém te conta</h2>
 <p>Depois de anos atendendo em Alphaville, Barueri e Santana de Parnaíba, vi o mesmo filme dezenas de vezes: a pessoa pesquisa academia por semanas... e não pesquisa nada sobre <strong>o que vai fazer dentro dela</strong>.</p>
@@ -78543,7 +78645,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Honestidade em primeiro lugar: <strong>nem todo mundo precisa de personal</strong>. Se você treina há mais de dois anos, executa bem os básicos, progride cargas com critério e não falha treinos, contratar um personal fixo pode ser luxo, não necessidade. Nesse caso, uma revisão pontual de planilha a cada ciclo já resolve.</p>
 <p>Por outro lado, se você acumula matrículas abandonadas, sente dor em exercícios básicos ou está há meses com as mesmas cargas, treinar sozinho está custando mais caro do que parece — só que em tempo, não em dinheiro.</p>
 <p>Antes de decidir, vale entender o que um bom programa de treino precisa conter. Este guia geral de musculação dá uma visão clara do tamanho do jogo:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Percebeu a quantidade de variáveis — volume, intensidade, frequência, progressão? É exatamente isso que separa quem evolui de quem repete a mesma ficha o ano inteiro. E a <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">ciência do treinamento resistido</a> é clara: essas variáveis, bem manipuladas, é que geram resultado.</p>
 <h2>A terceira via que quase ninguém considera</h2>
 <p>Aqui vai a virada: você não precisa escolher. <strong>Academia é a ferramenta; orientação é o motor.</strong> O modelo que mais cresce entre meus alunos da região é o híbrido.</p>
@@ -78777,8 +78880,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td><strong>Noite (após 21h)</strong></td><td>Baixa</td><td>Silêncio e liberdade total</td><td>Quem dorme bem após treinar</td></tr>
 </table>
 <h2>Frequência importa mais que horário</h2>
-<p>Antes de otimizar o relógio, otimize o calendário: quantas vezes por semana você treina define muito mais o seu resultado do que a hora do dia. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda</a> atividade aeróbica regular mais fortalecimento muscular ao menos 2x por semana — e este vídeo ajuda a decidir sua frequência ideal:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Percebeu o padrão? A resposta depende do seu nível, da sua recuperação e da sua rotina — ou seja, é <strong>individual</strong>. Exatamente como a escolha do horário. Fórmulas prontas da internet ignoram a única variável que importa: a sua vida.</p>
 <h2>O segredo não é o horário — é o que você faz nele</h2>
 <p>Agora a virada que este artigo estava guardando: gente demais otimiza o horário e negligencia o treino. Trocar 19h por 6h não muda nada se a ficha continua genérica e a execução, improvisada. <strong>Academia é ferramenta, horário é logística — orientação é o que gera resultado.</strong></p>
@@ -78859,8 +78962,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Executivos que querem praticidade perto do trabalho</td><td>Você só pode treinar no pico e detesta espera</td></tr>
 <tr><td>Quem viaja e quer rede nacional</td><td>Você depende de aulas coletivas variadas</td></tr>
 </table>
-<p>Antes de decidir, vale a pena entender os fundamentos de um bom começo na musculação. Este vídeo resume o que todo aluno deveria saber antes do primeiro treino:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare como quase tudo no vídeo depende de <strong>orientação e método</strong>, não do logo na fachada. É exatamente isso que separa quem evolui na Smart Fit de quem paga e some.</p>
 <h2>Como aproveitar a Smart Fit ao máximo</h2>
 <ol>
@@ -78946,7 +79049,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Quem prefere investir a diferença em orientação</td><td>Você busca experiência premium completa</td></tr>
 </table>
 <p>Um dos maiores erros de quem entra numa academia econômica é treinar sem entender a lógica do treino. Este guia resolve boa parte disso:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Perceba: nada do que faz um treino funcionar depende de a academia ser cara. Depende de <strong>método, progressão e constância</strong> — coisas que você leva com você para qualquer estrutura.</p>
 <h2>Como extrair o máximo da Bluefit</h2>
 <ol>
@@ -79034,8 +79138,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Praticantes e fãs da cultura do fisiculturismo</td><td>Você busca a mensalidade mais econômica da região</td></tr>
 <tr><td>Iniciantes sérios com orientação profissional</td><td>Você quer estrutura família (piscina, kids, etc.)</td></tr>
 </table>
-<p>Se hipertrofia é o seu objetivo, entender os princípios que aceleram o ganho muscular vale mais do que qualquer equipamento. Este vídeo é um ótimo ponto de partida:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Note o padrão: <strong>progressão de carga, técnica e consistência</strong>. A Ironberg oferece o palco perfeito para aplicar isso — mas o roteiro do treino continua sendo responsabilidade sua (ou de quem te orienta). A <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">evidência científica sobre treinamento resistido</a> confirma: é a estrutura do programa que dita o resultado.</p>
 <h2>Como aproveitar a Ironberg ao máximo</h2>
 <ol>
@@ -79124,8 +79228,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Famílias que treinam juntas</td><td>Só um membro da família frequentaria</td></tr>
 <tr><td>Quem desiste em ambiente "básico"</td><td>Você acha que estrutura substitui método</td></tr>
 </table>
-<p>Uma dúvida comum de quem assina um plano completo é: quantas vezes por semana treinar para valer o investimento? Este vídeo responde com base em ciência:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A conclusão vale ouro para quem paga premium: <strong>frequência ideal é a que você sustenta com qualidade</strong>. De nada adianta plano ilimitado com presença limitada. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS</a> aponta os mínimos de atividade física — a partir daí, é individualização.</p>
 <h2>Como fazer o premium se pagar</h2>
 <ol>
@@ -79213,8 +79317,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Executivos e moradores da região que treinam perto da rotina</td><td>A mensalidade premium comprometeria sua constância financeira</td></tr>
 <tr><td>Quem desiste em ambientes básicos</td><td>Você acredita que estrutura substitui método</td></tr>
 </table>
-<p>Seja no premium ou no econômico, o motor do progresso é o mesmo: progressão inteligente de carga. Este vídeo explica como fazer isso do jeito certo:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Como fazer uma progressão de carga eficiente — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>É isso que separa quem evolui de quem frequenta: <strong>progressão planejada</strong>. A <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">literatura científica do treinamento resistido</a> mostra que a variável decisiva é o desenho do programa — em qualquer academia.</p>
 <h2>Como aproveitar o Bio Ritmo ao máximo</h2>
 <ol>
@@ -79302,8 +79406,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Ex-alunos de academia genérica em busca de foco</td><td>Sua prioridade é conveniência e serviços agregados</td></tr>
 <tr><td>Iniciantes sérios com orientação profissional</td><td>Você espera acompanhamento individual incluso</td></tr>
 </table>
-<p>Ambiente focado é meio caminho; o resto é saber transformar treino em evolução contínua. Este vídeo mostra como estruturar isso na prática:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Como fazer uma progressão de carga eficiente — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare que tudo passa por <strong>planejamento e progressão</strong> — exatamente o que a <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">ciência do treinamento resistido</a> aponta como determinante do resultado. O ambiente da Gaviões potencializa; o programa decide.</p>
 <h2>Como aproveitar a Gaviões ao máximo</h2>
 <ol>
@@ -79396,8 +79500,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li>Pergunte sobre <strong>aula experimental</strong> e período de teste antes do plano longo.</li>
 <li>Converse com dois alunos: ninguém mente sobre a academia onde treina há um ano.</li>
 </ol>
-<p>Antes de fechar qualquer plano, vale entender o básico de treino para saber o que exigir da estrutura. Este vídeo resume bem o que um iniciante precisa dominar:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare que quase todas as dicas dependem menos da academia e mais da <strong>execução e da consistência</strong> — exatamente o que uma boa orientação resolve. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda atividade física regular</a>, mas regularidade só vem quando o plano cabe na sua vida.</p>
 <h2>One more thing: a academia é a ferramenta, não o resultado</h2>
 <p><strong>Ninguém fica forte por pagar mensalidade — fica forte por treinar certo, semana após semana.</strong> A NitroGym pode ser um ótimo palco, mas o roteiro é o treino: progressão de carga, técnica e ajustes constantes.</p>
@@ -79479,8 +79583,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Política de planos</strong>: fidelidade, trancamento, aula experimental — pergunte tudo e peça por escrito.</li>
 <li><strong>Equipe</strong>: os professores circulam e corrigem, ou ficam no balcão?</li>
 </ol>
-<p>E lembre: a frequência semanal que você consegue sustentar importa mais que a academia perfeita. Este vídeo ajuda a definir quantos treinos por semana fazem sentido para você:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Percebeu o padrão? A resposta certa depende do <strong>seu contexto</strong> — rotina, recuperação, objetivo. É por isso que copiar treino de internet funciona tão mal quanto escolher academia por propaganda. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">recomendação da OMS</a> é clara sobre regularidade — e regularidade se constrói com plano realista.</p>
 <h2>One more thing: quem transforma estrutura em resultado é a orientação</h2>
 <p><strong>A academia dá o palco; o método escreve o espetáculo.</strong> Seja na Arena 18 ou em qualquer outra academia entre o Iguatemi Alphaville e o Shopping Tamboré, o que separa quem evolui de quem desiste é ter um plano feito para a própria vida.</p>
@@ -79557,7 +79661,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Quem busca constância com baixa fricção</td><td>Você depende de múltiplas unidades pela região</td></tr>
 </table>
 <p>Seja qual for a estrutura, o que define resultado é o treino bem construído. Este guia resume os fundamentos que valem em qualquer academia:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Note como os princípios — técnica, progressão, consistência — não dependem de equipamento de última geração. As <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">evidências sobre treinamento resistido</a> confirmam: o estímulo certo importa mais que o cenário.</p>
 <h2>One more thing: a variável que ninguém coloca na conta</h2>
 <p>Você pode passar semanas comparando academias entre Alphaville e <strong>Santana de Parnaíba</strong> — e ainda assim estagnar, porque <strong>academia é ferramenta; orientação é o que gera resultado</strong>.</p>
@@ -79639,8 +79744,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li>Pergunte o <strong>tamanho das turmas</strong> — orientação diluída entre 20 pessoas deixa de ser orientação.</li>
 <li>Verifique como é a <strong>progressão de carga</strong>: existe registro da sua evolução ou cada dia é um treino solto?</li>
 </ol>
-<p>Progressão, aliás, é o coração de qualquer treino que funciona — em centro de performance ou academia tradicional. Este vídeo explica como fazê-la direito:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Como fazer uma progressão de carga eficiente — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Se o espaço que você avalia não tem resposta clara para "como vocês progridem meu treino?", esse é o sinal amarelo. As <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">evidências sobre treinamento resistido</a> apontam a sobrecarga progressiva como motor do resultado.</p>
 <h2>One more thing: performance é método, não endereço</h2>
 <p><strong>Você não precisa de um lugar chamado performance para ter performance — precisa de um plano que evolui com você.</strong></p>
@@ -79721,8 +79826,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Registre:</strong> quem não anota carga e repetição não progride, só repete.</li>
 <li><strong>Priorize técnica antes de carga:</strong> ego lifting é a lesão marcando hora.</li>
 </ol>
-<p>Se hipertrofia é o seu objetivo — e nesse perfil de academia costuma ser —, este vídeo resume o que realmente acelera o ganho muscular:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare: os fatores decisivos são treino estruturado, recuperação e consistência — tudo método, nada mágica. As <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">evidências científicas sobre treinamento resistido</a> reforçam o mesmo ponto.</p>
 <h2>One more thing: a estrutura é dela, o resultado é seu</h2>
 <p><strong>Academia premium com treino genérico entrega resultado genérico.</strong> A diferença entre pagar por estrutura e lucrar com ela é ter um plano desenhado para o seu corpo, sua rotina e seu objetivo.</p>
@@ -79799,8 +79904,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <h2>Como fazer uma rede econômica render como premium</h2>
 <p>O segredo está em suprir por fora o que o modelo corta por dentro: <strong>orientação individual</strong>. Com um treino bem desenhado, a estrutura essencial da Panobianco cobre emagrecimento, hipertrofia e condicionamento.</p>
-<p>Se o seu objetivo é perder gordura — o mais comum entre quem está começando —, este vídeo explica o processo sem atalhos milagrosos:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Note que nada ali exige academia cara: exige constância, treino de força e ajuste alimentar. A própria <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS</a> reforça que o fator decisivo é a regularidade da atividade física — não o luxo do ambiente.</p>
 <h2>One more thing: a conta que quase ninguém faz</h2>
 <p>Some uma mensalidade econômica com uma <strong>consultoria de treino individualizada</strong>. Em muitos casos, o total fica comparável ao de uma academia premium — só que com um plano feito para você, ajustado mês a mês, em vez de estrutura bonita e treino genérico.</p>
@@ -79887,8 +79992,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Quem já treina com autonomia e segue um programa estruturado</td><td>"Vou a qualquer hora" costuma virar "não vou nunca" na sua vida</td></tr>
 </table>
 <h2>Frequência de treino: quantas vezes por semana faz diferença?</h2>
-<p>Com acesso 24h, a pergunta deixa de ser "quando a academia abre" e passa a ser "quantas vezes por semana eu deveria treinar". A resposta muda conforme objetivo, recuperação e experiência — e o vídeo abaixo explica isso com clareza.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Percebeu o ponto central? <strong>Frequência ideal é a que você sustenta por meses</strong> — e a <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda atividade física regular</a> justamente pela constância, não pelo pico de motivação. Uma academia 24h remove a barreira do horário; o que ela não remove é a necessidade de um plano inteligente.</p>
 <h2>One more thing: a academia é a ferramenta, não o resultado</h2>
 <p>Aqui está a verdade que poucos falam: <strong>ninguém transforma o corpo por ter acesso 24 horas a aparelhos — transforma por saber o que fazer com eles</strong>.</p>
@@ -79974,8 +80079,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Quem mora ou trabalha perto da unidade e valoriza praticidade</td><td>Você busca experiência premium com serviços agregados</td></tr>
 </table>
 <h2>O que realmente define seu resultado (dica: não é a logo da academia)</h2>
-<p>A ciência é clara: <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">o treinamento resistido bem estruturado</a> gera resultado em praticamente qualquer estrutura decente. O que muda o jogo é <strong>como você treina</strong>, não onde. O vídeo abaixo é um guia direto sobre isso.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare: tudo que o vídeo ensina — seleção de exercícios, volume, progressão — cabe dentro de uma SkyFit. O gargalo nunca é o equipamento; é a ausência de um plano que evolua com você.</p>
 <h2>One more thing: a virada que separa quem paga de quem progride</h2>
 <p>Academia acessível é uma ferramenta excelente. Mas ferramenta não constrói nada sozinha — <strong>quem constrói é o método</strong>.</p>
@@ -80061,8 +80166,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Quem odeia academia lotada e valoriza ambiente reservado</td><td>Você gosta do ambiente social e da energia de academia grande</td></tr>
 </table>
 <h2>Começando agora? Veja isto antes da primeira sessão</h2>
-<p>O formato estúdio atrai muitos iniciantes — e com razão. Mas mesmo com supervisão, entender os fundamentos da musculação faz você aproveitar cada sessão paga. O vídeo abaixo resume o essencial.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Note como as dicas convergem para um ponto: <strong>técnica e consistência vencem intensidade aleatória</strong>. É exatamente isso que um bom estúdio — ou um bom profissional — deve garantir. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS reforça</a>: o benefício vem da regularidade, não do treino perfeito ocasional.</p>
 <h2>One more thing: atenção individual sem depender de um endereço</h2>
 <p>Se o que te atrai no estúdio é a <strong>atenção individual</strong>, aqui vai a virada: você pode ter esse nível de acompanhamento <strong>em qualquer academia da região</strong> — sem ficar preso a um único espaço ou a uma grade de horários.</p>
@@ -80147,8 +80252,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Quem está recomeçando e quer baixo risco financeiro</td><td>Você decide por promoção sem visitar a unidade no seu horário</td></tr>
 </table>
 <h2>Emagrecimento: o objetivo mais comum (e mais mal executado)</h2>
-<p>Boa parte de quem se matricula em academias acessíveis quer <strong>perder gordura</strong>. E é justamente aí que mais gente erra: cardio sem fim, dieta de guerra, desistência no segundo mês. O vídeo abaixo organiza o processo do jeito certo.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A lição central: <strong>perda de gordura é projeto, não punição</strong>. Musculação, déficit sustentável e paciência — tudo executável em qualquer academia com o básico bem feito, como recomendam as <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer">diretrizes do Ministério da Saúde</a> sobre atividade física regular.</p>
 <h2>One more thing: o upgrade que nenhuma academia vende na recepção</h2>
 <p>Aqui está o segredo do custo-benefício real: <strong>academia acessível + orientação profissional custa menos que academia premium sem método — e entrega mais</strong>.</p>
@@ -80233,8 +80338,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Quem valoriza equipamento funcional acima de conforto e estética</td><td>Você espera estrutura premium com serviços agregados</td></tr>
 </table>
 <h2>Hipertrofia séria: o que realmente acelera o ganho de massa</h2>
-<p>Ambiente hardcore ajuda, mas hipertrofia obedece a princípios: volume adequado, intensidade, técnica e progressão. A <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">literatura científica sobre treinamento resistido</a> é clara nisso. O vídeo abaixo mostra como acelerar o processo sem atalhos furados.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A conclusão que importa: <strong>músculo não responde a ambiente — responde a estímulo progressivo</strong>. A academia hardcore te dá as ferramentas; a periodização inteligente é o que transforma ferro em resultado.</p>
 <h2>One more thing: intensidade sem direção é só cansaço</h2>
 <p>Aqui vai a verdade que o platô te ensinou: <strong>treinar pesado não é o mesmo que treinar certo</strong>. Muita gente muda de academia buscando intensidade, quando o que faltava era estratégia.</p>
@@ -80317,8 +80422,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>O erro que faz o plano barato sair caro</h2>
 <p>O padrão que mais vejo em Barueri: a pessoa assina a Smart Fit, faz duas semanas do mesmo treino genérico de app, não vê resultado e desiste. <strong>A mensalidade era barata; a desistência custou o ano inteiro.</strong></p>
 <p>A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda atividade física regular</a> combinando exercício aeróbico e fortalecimento muscular — e a Smart Fit dá estrutura de sobra para isso. O que ela não dá é o <strong>plano progressivo</strong> que transforma frequência em resultado.</p>
-<p>Se você está começando agora, vale assistir a este vídeo antes do primeiro treino — ele resume os erros clássicos de quem entra numa academia low-cost sem orientação:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare como quase todas as dicas do vídeo giram em torno de um ponto: <strong>método vence motivação</strong>. E método é exatamente o que o modelo low-cost deixa por sua conta.</p>
 <h2>Como aproveitar a Smart Fit ao máximo (a virada)</h2>
 <p>Aqui está a verdade que ninguém que vende plano vai te contar: <strong>academia é ferramenta; orientação é o que gera resultado</strong>. Uma Smart Fit com um bom programa de treino entrega mais que uma academia premium usada no improviso.</p>
@@ -80403,7 +80508,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>O que separa quem evolui de quem desiste na Bluefit</h2>
 <p>Estrutura a Bluefit tem. A pergunta é: <strong>você tem um plano para usá-la?</strong> A ciência é clara: o <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">treinamento resistido bem estruturado</a> é uma das intervenções mais eficazes para saúde e composição corporal — a palavra-chave é "estruturado".</p>
 <p>Antes de montar sua rotina na Bluefit, vale entender os fundamentos que separam treino de passatempo. Este guia resume o essencial:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>O recado do vídeo se aplica direto ao modelo low-cost: <strong>quem entende o básico bem executado passa na frente de quem coleciona exercícios da moda</strong>. E é exatamente isso que um bom programa de treino organiza para você.</p>
 <h2>A virada: academia é ferramenta, orientação é resultado</h2>
 <p>Depois de anos atendendo em Barueri e Alphaville, posso resumir assim: <strong>a diferença entre alunos que evoluem e alunos que desistem quase nunca é a academia — é o método</strong>.</p>
@@ -80489,7 +80595,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>O teste que vale mais que qualquer análise</h2>
 <p>Nenhum texto substitui a visita. Vá no <strong>seu horário real de treino</strong>, olhe o fluxo, os equipamentos que você mais usa e pergunte sobre planos sem se comprometer. O <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer">Ministério da Saúde</a> reforça a importância da atividade física regular — e regularidade nasce de logística que funciona.</p>
 <p>E antes de fechar qualquer plano, entenda quantos dias por semana fazem sentido para você — porque isso muda até o tipo de plano que vale contratar:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Como o vídeo mostra, <strong>a frequência ideal é a que você sustenta</strong> — e um bom programa de treino faz 3 dias renderem mais que 6 dias improvisados.</p>
 <h2>A virada: o que transforma matrícula em resultado</h2>
 <p>Depois de anos vendo alunos migrarem de academia em academia na região, aprendi: <strong>trocar de academia raramente resolve; trocar de método quase sempre resolve</strong>.</p>
@@ -80573,8 +80680,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p><em>Estrutura, planos e serviços variam por unidade — consulte o site oficial ou a unidade para informações atualizadas.</em></p>
 <h2>Hipertrofia de verdade: o que o ambiente não faz por você</h2>
 <p>Ambiente pesado ajuda, mas <strong>hipertrofia é matemática de estímulo, recuperação e progressão</strong>. A ciência do <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">treinamento resistido</a> é consistente: resultado vem de programa estruturado, não de intensidade aleatória.</p>
-<p>Se seu objetivo na Gaviões é crescer, este vídeo resume o que realmente acelera a hipertrofia — e o que é só folclore de vestiário:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Note o padrão: <strong>tudo que funciona é planejável</strong> — volume, intensidade, progressão, recuperação. E planejamento é exatamente o que separa quem treina pesado de quem só se cansa pesado.</p>
 <h2>A virada: treino raiz com método profissional</h2>
 <p>Aqui vai a provocação: <strong>a academia mais raiz da cidade não compensa um treino improvisado</strong>. Já vi muito aluno forte estagnado por anos porque confundia esforço com programa.</p>
@@ -80658,8 +80765,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p><em>Planos, estrutura e serviços variam por unidade — consulte o site oficial ou a unidade da RedFit para informações atualizadas.</em></p>
 <h2>Emagrecimento no low-cost: onde a conta fecha (ou não)</h2>
 <p>Grande parte de quem assina uma academia econômica em Barueri quer <strong>perder gordura</strong>. E aqui mora a pegadinha: esteira sem estratégia emagrece pouco e desanima muito. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS</a> recomenda combinar exercício aeróbico e fortalecimento muscular — não escolher um e abandonar o outro.</p>
-<p>Este vídeo explica, sem mágica, como a perda de gordura realmente funciona — assista antes de montar sua rotina na RedFit:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A conclusão do vídeo é a mesma que repito aos meus alunos: <strong>emagrecer é um sistema — treino, alimentação e constância — não uma máquina específica</strong>. E sistema se monta com orientação.</p>
 <h2>A virada: a peça que o plano econômico não inclui</h2>
 <p>A RedFit te dá o palco; ninguém sobe no palco por você. <strong>Academia é ferramenta; orientação é o que gera resultado.</strong></p>
@@ -80743,8 +80850,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p><em>Estrutura, planos e serviços variam — consulte a unidade ou os canais oficiais da Primax para informações atualizadas.</em></p>
 <h2>Como testar a Primax do jeito certo</h2>
 <p>Com academias locais, a visita vale ainda mais que com redes: peça para conhecer o espaço, pergunte sobre <strong>aula experimental</strong> e observe se a equipe se interessa pelo seu objetivo — esse é o diferencial que você está comprando. A recomendação do <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer">Ministério da Saúde</a> de atividade física regular só vira realidade quando a logística e o ambiente jogam a seu favor.</p>
-<p>E seja qual for a academia, sua evolução vai depender de um conceito que a maioria ignora: progressão de carga. Este vídeo explica como fazer isso direito:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Como fazer uma progressão de carga eficiente — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare: <strong>progressão não exige a academia mais equipada — exige plano e registro</strong>. Ou seja, numa academia local bem escolhida, com método certo, você evolui tanto quanto em qualquer gigante.</p>
 <h2>A virada: o método que faz qualquer academia funcionar</h2>
 <p>Se tem algo que anos atendendo em Barueri me ensinaram é isto: <strong>academia é ferramenta; orientação é o que gera resultado</strong>. Local ou rede, grande ou pequena — quem tem programa evolui, quem improvisa estagna.</p>
@@ -80834,8 +80941,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Avalie a logística:</strong> box perto do Centro de Barueri, da Estação Barueri (CPTM Linha 8) ou no caminho de Alphaville vence box "perfeito" a 30 minutos de trânsito;</li>
 <li><strong>Converse com alunos antigos</strong> — retenção longa é o melhor indicador de qualidade.</li>
 </ol>
-<p>A base científica ajuda a calibrar expectativas: o <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">treinamento resistido estruturado</a> é pilar de saúde e desempenho — e a força construída fora do WOD é o que sustenta a intensidade dentro dele. Este vídeo mostra como progredir cargas com inteligência:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Como fazer uma progressão de carga eficiente — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>É exatamente esse raciocínio de progressão que separa quem evolui anos no CrossFit de quem coleciona picos de empolgação e pausas por dores.</p>
 <h2>A virada: a base que faz o CrossFit render (e não machucar)</h2>
 <p>Minha visão honesta como profissional da região: <strong>o CrossFit é uma ferramenta poderosa — e ferramenta poderosa pede base</strong>. Força fundamental, mobilidade e técnica construídas individualmente fazem você entrar no box pronto para render, não para sobreviver.</p>
@@ -80919,8 +81026,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p><em>Modalidades, regras de acesso e valores variam por unidade e período — consulte os canais oficiais do SESI-SP para informações atualizadas.</em></p>
 <h2>Como aproveitar a estrutura do SESI de verdade</h2>
 <p>Estrutura diversificada é ótima — desde que vire rotina. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda</a> atividade aeróbica regular combinada com fortalecimento muscular ao longo da semana, e um centro esportivo permite montar exatamente esse mix.</p>
-<p>A pergunta prática é: quantos dias por semana treinar, e como distribuir? Este vídeo ajuda a decidir com critério:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>O recado central vale demais para o contexto do SESI: <strong>a melhor frequência é a que cabe na sua vida real</strong> — e num espaço com várias modalidades, um plano bem montado evita que a variedade vire dispersão.</p>
 <h2>A virada: estrutura pública, resultado particular</h2>
 <p>Aqui está o ponto que quase ninguém fala: <strong>estrutura é ferramenta; orientação é o que gera resultado</strong>. O SESI pode te dar quadras, espaços e modalidades — mas o seu corpo responde a programa, progressão e constância.</p>
@@ -80994,8 +81101,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Iniciantes que querem começar sem intimidação</td><td>Você só treina em horário de pico e não tolera fila em aparelho</td></tr>
 <tr><td>Quem busca custo-benefício regional</td><td>Você decide sem visitar — nunca assine sem conhecer a unidade</td></tr>
 </table>
-<p>Se você está começando do zero, vale assistir este vídeo antes da primeira visita: ele resume os fundamentos que separam quem evolui de quem desiste no primeiro mês.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare no padrão do vídeo: técnica, consistência e progressão importam mais que o logo da academia. É exatamente o filtro que você deve levar para a visita à XSuperAção — ou a qualquer academia da região.</p>
 <h2>A virada: academia é ferramenta, orientação é resultado</h2>
 <p><strong>Ninguém fica em forma por pagar mensalidade — fica em forma por treinar certo.</strong> A academia é o palco; o treino inteligente é o roteiro. E é aí que a maioria trava: entra sem plano, copia treino de internet e estaciona.</p>
@@ -81068,8 +81175,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Quem busca condicionamento geral e comunidade</td><td>Você está voltando de lesão sem liberação para alta intensidade</td></tr>
 <tr><td>Moradores da região que querem treinar perto de casa</td><td>Você não visitou nem fez aula experimental ainda</td></tr>
 </table>
-<p>Frequência é a dúvida número um de quem entra em treinos por turma: quantas vezes por semana faz sentido? Este vídeo responde com base em evidência e prática.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A conclusão vale para qualquer formato: <strong>frequência sustentável vence frequência heroica</strong>. Monte sua semana em torno da grade que você consegue cumprir por meses — e recupere bem entre as sessões intensas.</p>
 <h2>One more thing: quem organiza o seu progresso?</h2>
 <p>Treino em turma dá energia; <strong>direção individual dá resultado</strong>. A pergunta que separa quem evolui de quem só sua: alguém está acompanhando SUA progressão, SUAS cargas, SEU corpo?</p>
@@ -81143,8 +81250,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Quem valoriza ambiente conhecido e atendimento próximo</td><td>Você quer plano multiunidade para treinar em várias cidades</td></tr>
 <tr><td>Iniciantes que precisam de porta de entrada sem atrito</td><td>Você ainda não visitou nem fez aula experimental</td></tr>
 </table>
-<p>Independente de onde treinar, o método pesa mais que o endereço. Este guia condensa o que realmente move o ponteiro na musculação — assista antes de montar sua rotina.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>O recado do guia se aplica direto à sua decisão: com progressão de carga, técnica e constância, uma academia local entrega tudo que a maioria precisa. Sem isso, nem a melhor rede salva.</p>
 <h2>One more thing: a academia é o palco, não o espetáculo</h2>
 <p><strong>Matrícula não constrói músculo; método constrói.</strong> A diferença entre quem transforma o corpo e quem paga boleto raramente é a academia — é a orientação.</p>
@@ -81212,8 +81319,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Quem valoriza ambiente raiz e atendimento próximo</td><td>Só treina em pico e não tolera revezar aparelho</td></tr>
 <tr><td>Quem busca custo-benefício regional</td><td>Pensa em assinar sem visitar e sem aula experimental</td></tr>
 </table>
-<p>Se hipertrofia é seu objetivo, o vídeo abaixo resume o que acelera (de verdade) o ganho de massa muscular — e o que é mito de vestiário.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare: tudo que o vídeo lista — progressão, técnica, recuperação — cabe em qualquer academia com o essencial. Ou seja: o Coliseu pode ser suficiente. A variável que falta é quem planeja o seu treino.</p>
 <h2>One more thing: quem escreve o seu plano?</h2>
 <p><strong>Treino copiado da internet é terno de outra pessoa: até veste, mas não serve.</strong> A academia dá o ferro; o resultado vem do plano que respeita seu corpo, sua rotina e seu ponto de partida.</p>
@@ -81283,8 +81390,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Quem prefere ambiente próximo, sem anonimato de rede</td><td>Você só pode treinar no pico e não tolera revezamento</td></tr>
 <tr><td>Quem busca custo-benefício regional</td><td>Você pretende assinar sem visitar a unidade antes</td></tr>
 </table>
-<p>Seja qual for a academia, o que separa 6 meses de evolução de 6 meses de marcha lenta é a progressão de carga. Este vídeo explica como fazer isso direito.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Como fazer uma progressão de carga eficiente — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>E aqui está o ponto: progressão eficiente não exige academia de luxo — exige registro, método e alguém acompanhando. É o que falta em 90% dos treinos que estacionam.</p>
 <h2>One more thing: o ferro é igual em todo lugar</h2>
 <p><strong>Anilha não tem CEP: 20 kg pesam 20 kg na Sparta ou em qualquer rede premium.</strong> O que muda o resultado é o plano, a execução e a constância — e isso é orientação, não estrutura.</p>
@@ -81357,8 +81464,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Iniciantes que querem atendimento próximo</td><td>Você só treina no pico e não aceita revezar equipamentos</td></tr>
 <tr><td>Quem busca custo-benefício regional</td><td>Você está prestes a assinar sem visitar</td></tr>
 </table>
-<p>Se performance é o objetivo, hipertrofia costuma ser parte central da equação. O vídeo abaixo mostra o que acelera o ganho muscular de forma realista.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Note que nada na receita depende de estrutura de luxo: depende de <strong>execução, progressão e constância</strong>. A academia local dá conta do palco; falta o roteiro individual.</p>
 <h2>One more thing: performance é plano, não fachada</h2>
 <p><strong>Performance não se compra na recepção; se constrói na planilha.</strong> Quem define exercícios, cargas, ordem e descanso pelo SEU corpo e SEU histórico — esse é o fator que muda o gráfico.</p>
@@ -81426,8 +81533,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Famílias e moradores dos bairros próximos</td><td>Você só treina no pico e não tolera aparelho ocupado</td></tr>
 <tr><td>Quem prioriza custo-benefício regional</td><td>Você quer assinar sem visitar nem fazer aula experimental</td></tr>
 </table>
-<p>Se o seu objetivo central é perder gordura, este vídeo é um mini-curso honesto sobre o que funciona — sem atalhos milagrosos.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A síntese do vídeo confirma a tese do artigo: <strong>deficit calórico sustentado + treino resistido + constância</strong>. Nada disso exige rede premium — exige plano e regularidade. E plano é a peça que a mensalidade não inclui.</p>
 <h2>One more thing: a forma volta com direção, não com desejo</h2>
 <p><strong>Academia é a ferramenta; orientação é o que transforma suor em resultado.</strong> Quem monta seu treino pelo seu nível atual, ajusta a cada mês e cobra presença — essa é a variável que faltou nas suas tentativas anteriores.</p>
@@ -81498,7 +81605,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Quem busca custo-benefício regional</td><td>Você pensa em assinar sem visitar a unidade</td></tr>
 </table>
 <p>Se você está recomeçando, estas 7 dicas evitam os erros que derrubam iniciantes nas primeiras semanas — vale os minutos antes da sua primeira visita.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>O fio condutor das dicas: começar leve, progredir com método e não treinar no improviso. Ou seja — a "vida nova" não depende da academia escolhida, e sim do plano que entra com você pela porta.</p>
 <h2>One more thing: vida nova precisa de treinador, não de promessa</h2>
 <p><strong>Matrícula é intenção; acompanhamento é execução.</strong> A diferença entre este recomeço e os anteriores pode ser simplesmente ter alguém desenhando e ajustando o caminho.</p>
@@ -81576,8 +81684,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Premium com horário ampliado</td><td>Premium</td><td>Estrutura completa, aulas, vestiários amplos</td><td>Executivos que treinam 6h–22h</td></tr>
 <tr><td>Estúdio/box com grade fixa</td><td>Intermediário</td><td>Aulas em horários marcados</td><td>Quem prefere treino guiado em turma</td></tr>
 </table>
-<p>Um ponto que pouca gente considera: treinar de madrugada muitas vezes significa treinar sozinho. Sem professor por perto, saber <strong>quantas vezes por semana treinar</strong> e como distribuir os estímulos vira responsabilidade sua. O vídeo abaixo ajuda a estruturar essa decisão.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Perceba o padrão: a frequência ideal depende da sua rotina real — e é exatamente isso que um treino feito sob medida para horários alternativos resolve. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda pelo menos 150 minutos semanais de atividade física</a>, e eles valem o mesmo às 5h ou às 23h.</p>
 <h2>Treino de madrugada sem plano é só insônia com pesos</h2>
 <p>Aqui está a virada que ninguém te conta: <strong>a academia é a ferramenta; a orientação é o resultado</strong>. Acesso 24 horas resolve o "quando", mas não o "como" — e de madrugada, sem professor na sala, o "como" pesa dobrado.</p>
@@ -81655,8 +81763,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Academia de bairro</td><td>Econômico a intermediário</td><td>Variável, atendimento próximo</td><td>Quem valoriza relacionamento e proximidade</td></tr>
 <tr><td>Rede premium</td><td>Premium</td><td>Completa, horário largo mas raramente 24h</td><td>Quem treina cedo/tarde, não de madrugada</td></tr>
 </table>
-<p>Treinar de madrugada quase sempre significa treinar por conta própria. Antes de entrar sozinho na sala de musculação às 23h, vale dominar o básico bem feito — o vídeo abaixo resume o essencial para não desperdiçar treino.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Essas dicas evitam os erros mais comuns — mas note que todas dependem de um treino estruturado por trás. E é aí que a maioria dos treinos de madrugada falha: <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">as evidências sobre treinamento resistido</a> mostram que progressão organizada é o que gera resultado, em qualquer horário.</p>
 <h2>A madrugada testa quem não tem plano</h2>
 <p>Aqui vai a verdade incômoda: <strong>a catraca abre 24 horas, mas o resultado só abre para quem tem método</strong>. Sem professor na sala, sem plano e sem cobrança, o treino de madrugada vira repetição do mesmo treino por meses.</p>
@@ -81733,8 +81841,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Escola de natação</td><td>Intermediário</td><td>Metodologia de ensino, turmas por nível</td><td>Aprender a nadar, natação infantil</td></tr>
 <tr><td>Rede low-cost</td><td>Econômico</td><td>Geralmente sem piscina</td><td>Foco em musculação e cardio</td></tr>
 </table>
-<p>Uma dúvida comum de quem ama a água: "se eu nado, preciso de musculação?" A resposta curta é que os estímulos se complementam — e o vídeo abaixo é um bom panorama de como a musculação funciona e por que ela segue insubstituível para força e composição corporal.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Ou seja: a combinação vencedora para a maioria das pessoas é <strong>água + ferro</strong> — natação ou hidro para condicionamento e prazer, musculação para força, ossos e músculos. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda combinar atividade aeróbica com fortalecimento muscular</a> pelo menos duas vezes por semana.</p>
 <h2>Piscina é estrutura. Resultado é estratégia.</h2>
 <p>Agora, a virada: muita gente escolhe a academia pela piscina e continua sem resultado — porque <strong>estrutura não treina ninguém; quem treina você é o método</strong>.</p>
@@ -81813,8 +81921,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Convênio vizinho</td><td>Intermediário</td><td>Gratuito ou com desconto</td><td>Áreas comerciais densas</td></tr>
 <tr><td>Vaga na rua</td><td>Econômico</td><td>Gratuito</td><td>Quem treina fora do pico</td></tr>
 </table>
-<p>E há um efeito indireto: quanto menos atrito para chegar, mais dias por semana você treina — e frequência é uma das variáveis que mais influenciam resultado. O vídeo abaixo ajuda a definir quantas idas por semana fazem sentido para você.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare: a frequência ideal é a que você sustenta. Por isso a logística — estacionamento incluído — não é frescura; é planejamento. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">recomendação da OMS de 150 minutos semanais</a> só se cumpre com rotina que funciona na prática.</p>
 <h2>E se o treino viesse até você?</h2>
 <p>Agora, a pergunta que vale a virada: <strong>e se o problema não for a vaga, mas o deslocamento em si?</strong> Academia é ferramenta — e ferramenta boa é a que você usa.</p>
@@ -81891,8 +81999,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Intermediária de rua</td><td>Intermediário</td><td>Variável por unidade</td><td>Quem visita e testa antes</td></tr>
 <tr><td>Low-cost</td><td>Econômico</td><td>De ar-condicionado a só ventilação</td><td>Quem aceita variação em troca de economia</td></tr>
 </table>
-<p>Conforto térmico ajuda a treinar mais e melhor — mas o que transforma esse volume em músculo é a forma como você progride as cargas. O vídeo abaixo explica como fazer essa progressão do jeito certo.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Como fazer uma progressão de carga eficiente — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>É essa combinação — ambiente que não sabota + progressão planejada — que gera resultado consistente. <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">As evidências sobre treinamento resistido</a> são claras: o estímulo progressivo é o que constrói força e massa muscular.</p>
 <h2>Ar gelado não hipertrofia ninguém</h2>
 <p>A virada honesta: <strong>climatização mantém você na academia; método é o que muda seu corpo</strong>. Muita gente treina anos em academias impecáveis — e estaciona, porque ninguém ajusta seu treino.</p>
@@ -81963,8 +82071,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Estúdio de grupos pequenos</td><td>Intermediário a premium</td><td>Turmas reduzidas, atendimento próximo</td><td>Quem não gosta de academia lotada</td></tr>
 <tr><td>Personal individual</td><td>Premium (investimento por resultado)</td><td>Totalmente controlado</td><td>Quem quer segurança, técnica e constância</td></tr>
 </table>
-<p>Um ponto que merece ser dito com todas as letras: musculação é uma das melhores decisões de saúde que uma mulher pode tomar — para força, ossos, estética e longevidade. Se o receio é "ficar grande", o vídeo abaixo mostra o que realmente é necessário para hipertrofiar (spoiler: é muito mais difícil do que parece).</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Ou seja: o "medo de ficar grande" não deveria afastar ninguém do ferro — a hipertrofia é gradual e controlável. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda fortalecimento muscular ao menos duas vezes por semana</a> para adultos, mulheres incluídas.</p>
 <h2>O ambiente certo é o começo. O acompanhamento é a diferença.</h2>
 <p>Aqui está a virada: <strong>academia — feminina ou mista — é ferramenta; quem gera resultado é a orientação</strong>. E para quem sente insegurança na sala de musculação, o acompanhamento individual resolve as duas coisas de uma vez: ambiente acolhedor e técnica correta desde o dia um.</p>
@@ -82045,8 +82153,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ol>
 <p>Se quiser ajuda para montar esse plano desde o início, <a href="/contato">agende uma avaliação</a> — a primeira conversa já esclarece por onde começar.</p>
 <h2>Quantas vezes por semana treinar depois dos 60?</h2>
-<p>Antes de decidir plano e frequência, vale entender o raciocínio por trás da escolha de treinar 2, 3 ou mais vezes por semana — o vídeo abaixo explica isso de forma direta:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Para a terceira idade, a conclusão prática é tranquilizadora: <strong>2 a 3 sessões bem orientadas por semana bastam</strong> para ganhos consistentes. Não é preciso morar na academia — é preciso constância e método.</p>
 <h2>A virada: a academia é a ferramenta, a orientação é o resultado</h2>
 <p>Aqui vai a verdade que nenhuma academia coloca no panfleto: <strong>para o público 60+, o local importa menos que o método</strong>. O mesmo aparelho que fortalece um joelho pode inflamá-lo — a diferença é quem ajusta a carga, a amplitude e a progressão.</p>
@@ -82130,8 +82238,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 <p>Quer pular a fase de tentativa e erro? <a href="/contato">Agende uma avaliação</a> e comece com um plano montado para o seu corpo e a sua rotina.</p>
 <h2>7 dicas essenciais antes do primeiro treino</h2>
-<p>Se você quer um resumo direto do que realmente importa para quem está começando na musculação, este vídeo condensa os pontos que evitam meses de erro:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare que quase todas as dicas convergem para o mesmo ponto: <strong>método e consistência</strong>. Não é sobre a academia perfeita nem o treino secreto — é sobre fazer o básico bem feito, por tempo suficiente. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS</a> recomenda fortalecimento muscular ao menos 2x por semana justamente porque o básico consistente já transforma a saúde.</p>
 <h2>A virada: por que iniciantes orientados não desistem</h2>
 <p>Aqui está o segredo que as estatísticas de desistência escondem: <strong>iniciante não desiste do treino — desiste da incerteza</strong>. Sem saber se está fazendo certo, qualquer semana ruim vira desculpa para parar.</p>
@@ -82210,8 +82318,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ol>
 <p>Quer esse plano desenhado para o seu corpo e rotina? <a href="/contato">Agende uma avaliação</a>.</p>
 <h2>Entenda a lógica da perda de gordura</h2>
-<p>Antes de sair correndo para qualquer aula "queima-tudo", vale entender o mecanismo real da perda de gordura — este vídeo explica o processo do início ao fim:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Percebeu? Nada ali depende da marca da academia. Tudo depende de <strong>planejamento, execução e ajuste</strong> — exatamente as três coisas que a mensalidade não inclui.</p>
 <h2>A virada: emagrecimento é a especialidade da casa</h2>
 <p>Se existe um objetivo em que a orientação faz diferença brutal, é o emagrecimento. Porque o problema quase nunca é "não saber que precisa comer menos e treinar" — é <strong>sustentar isso por meses</strong>, ajustar quando o peso trava e não se sabotar na primeira semana difícil.</p>
@@ -82295,8 +82403,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ol>
 <p>Quer um plano de hipertrofia estruturado para o seu nível? <a href="/contato">Agende uma avaliação</a>.</p>
 <h2>Como acelerar a hipertrofia (sem mudar de academia)</h2>
-<p>Se o seu ganho estagnou, o vídeo abaixo mostra os fatores que realmente aceleram a hipertrofia — e nenhum deles é "trocar de academia":</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A conclusão se repete: <strong>planejamento, execução e progressão</strong>. A academia é o palco; o método é o espetáculo.</p>
 <h2>A virada: treine com quem vive hipertrofia</h2>
 <p>Aqui a conversa fica pessoal: o <strong>Montinho é bodybuilder</strong>. Hipertrofia não é um serviço no cardápio dele — é a vida dele, dentro e fora do palco. Quem constrói o próprio físico competitivamente sabe, na prática, o que separa treino que estimula de treino que só cansa.</p>
@@ -82373,7 +82481,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Quer estruturar sua próxima fase com método? <a href="/contato">Agende uma avaliação</a>.</p>
 <h2>Acelerando a hipertrofia: os fundamentos</h2>
 <p>Antes da parte final, vale revisitar os fundamentos que sustentam qualquer preparação — do primeiro off-season ao palco:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Nada ali é segredo — e é exatamente esse o ponto. <strong>Fisiculturismo não é sobre segredos: é sobre executar o óbvio com rigor que quase ninguém sustenta.</strong> E rigor sustentado exige acompanhamento.</p>
 <h2>A virada: treine com quem sobe no palco</h2>
 <p>Existe uma diferença entre quem estudou hipertrofia e quem <strong>vive</strong> hipertrofia. O <strong>Montinho é bodybuilder</strong>: constrói o próprio físico com a mesma disciplina que cobra dos alunos, conhece por experiência própria cada fase — o bulking que sai do controle, o cutting que testa a sanidade, o platô que exige criatividade.</p>
@@ -82451,8 +82560,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Funciona porque combina o melhor dos dois mundos: a estrutura da academia (que é boa e abundante na região, do eixo da Alameda Rio Negro ao Centro de Barueri) com a dedicação de um profissional que responde só a você.</p>
 <p>Quer saber como isso se encaixa na sua rotina? <a href="/contato">Agende uma avaliação</a> — sem compromisso.</p>
 <h2>Progressão de carga: o que o acompanhamento realmente destrava</h2>
-<p>Se você quer ver um exemplo concreto do que separa treino acompanhado de treino solto, observe o tema deste vídeo — progressão de carga, a habilidade que quase todo praticante sem acompanhamento executa mal:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Como fazer uma progressão de carga eficiente — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Progressão eficiente exige registro, critério e ajuste fino semana a semana. É exatamente o tipo de trabalho que <strong>nenhuma ficha genérica faz</strong> — e que um personal dedicado faz por padrão.</p>
 <h2>A virada: um personal dedicado, nas academias que você já conhece</h2>
 <p>É aqui que tudo se conecta. O <strong>Montinho</strong> é personal trainer particular e atende <strong>dentro das academias de Alphaville, Barueri e Santana de Parnaíba</strong> — a que você já frequenta ou a que fizer mais sentido para o seu objetivo — além de espaços fitness de condomínios da região.</p>
@@ -82531,8 +82640,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>2 sessões de pilates</strong> — mobilidade, core e recuperação ativa;</li>
 <li>1 dia de descanso completo ou caminhada leve.</li>
 </ul>
-<p>Antes de montar sua semana, vale entender os fundamentos da musculação que vai acompanhar o pilates. O vídeo abaixo resume o essencial para quem está estruturando a rotina.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare como o vídeo reforça o que dissemos: a base do resultado é <strong>consistência com progressão</strong> — e é exatamente aí que a maioria falha quando tenta conciliar duas modalidades sem um plano integrado.</p>
 <p>Se você quer essa integração desenhada para a sua rotina, <a href="/consultoria">conheça a consultoria online</a> do Montinho.</p>
 <h2>Erros comuns de quem procura pilates em Alphaville</h2>
@@ -82616,8 +82725,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>2 sessões de natação</strong> em dias alternados ou no contraturno;</li>
 <li>Evite nadar forte logo antes de treinos pesados de membros superiores — a fadiga compromete a técnica.</li>
 </ul>
-<p>Quantas vezes por semana treinar cada coisa? Essa é a dúvida mais comum de quem combina modalidades — e o vídeo abaixo responde com clareza.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Como o vídeo mostra, a frequência ideal depende de recuperação e rotina — e é exatamente por isso que copiar a semana de treino de outra pessoa raramente funciona. Se quiser um plano feito para a sua agenda, <a href="/consultoria">conheça a consultoria online</a>.</p>
 <h2>Checklist antes de assinar plano com piscina</h2>
 <ol>
@@ -82702,8 +82811,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>2 aulas de spinning</strong> afastadas do treino de pernas por pelo menos 24h;</li>
 <li>Spinning leve pode servir de <strong>recuperação ativa</strong> no dia seguinte ao treino pesado.</li>
 </ul>
-<p>Se o seu objetivo principal é emagrecer, spinning é a peça de cardio — mas a estratégia completa envolve mais do que pedalar. O vídeo abaixo organiza o processo inteiro.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Como o vídeo deixa claro, cardio sem estratégia de alimentação e força é remar contra a maré. A boa notícia: dá para integrar tudo num plano só — <a href="/consultoria">conheça a consultoria online</a> e veja como.</p>
 <h2>Dicas para sua primeira aula de spinning</h2>
 <ol>
@@ -82786,8 +82895,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>2 sessões de funcional</strong> para condicionamento, mobilidade e variedade;</li>
 <li>Evite empilhar funcional intenso e treino pesado de força no mesmo dia.</li>
 </ul>
-<p>O segredo para os dois convergirem é a progressão: sem aumentar o desafio de forma planejada, qualquer modalidade estaciona. O vídeo abaixo explica como fazer isso direito.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Como fazer uma progressão de carga eficiente — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare: progressão vale para o kettlebell da aula de funcional tanto quanto para o supino. Quem não mede, não progride — e é aí que um plano estruturado muda o jogo. <a href="/consultoria">Conheça a consultoria online</a> se quiser essa estrutura na sua rotina.</p>
 <h2>Como identificar um funcional bem feito</h2>
 <ol>
@@ -82871,8 +82980,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li>Ou o inverso: musculação como base e cross training 1-2x como condicionamento;</li>
 <li>Monitore a recuperação — o volume total da semana é o que lesiona, não a aula isolada.</li>
 </ul>
-<p>Quem busca também ganho de massa muscular precisa entender como o corpo responde a estímulos de força — e onde o cross training ajuda ou atrapalha nesse objetivo. O vídeo abaixo esclarece.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A lição do vídeo vale dobrada para praticantes de cross training: hipertrofia exige estímulo direcionado e recuperação — duas variáveis que o treino do dia, feito para a turma toda, nem sempre entrega para você. Um plano individual resolve isso; <a href="/consultoria">conheça a consultoria online</a>.</p>
 <h2>Checklist antes de entrar num box</h2>
 <ol>
@@ -82958,8 +83067,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li>Evite sessões longas após treinos muito intensos de pernas — o corpo já está sobrecarregado;</li>
 <li>Recuperação de verdade se constrói no <strong>sono e na alimentação</strong>; a sauna complementa.</li>
 </ul>
-<p>Aliás, recuperação é metade da equação da evolução. A outra metade é treinar com estímulo certo e frequência adequada — e é sobre isso que o vídeo abaixo trata.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Como o vídeo mostra, frequência e recuperação andam juntas: de nada adianta a melhor sauna da região se o volume de treino está errado. Quer acertar essa equação? <a href="/consultoria">Conheça a consultoria online</a>.</p>
 <h2>Vale pagar mais por academia com sauna?</h2>
 <p>Faça a conta honesta: se o conforto pós-treino é o que faz você <strong>frequentar 4x por semana em vez de desistir em março</strong>, o plano premium se paga em resultado. Se a sauna seria usada uma vez por mês, escolha pela estrutura de treino e invista a diferença em orientação profissional.</p>
@@ -83208,7 +83317,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p><em>Valores variam por unidade, plano e época — consulte o site oficial ou a unidade para condições atualizadas.</em></p>
 <h2>A conta que quase ninguém faz</h2>
 <p>Antes de escolher pelo menor preço, defina quantas vezes por semana você consegue treinar de verdade. Frequência realista muda tudo — inclusive qual plano compensa:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Viu o ponto? A frequência ideal depende do seu contexto — e o custo por treino é a métrica honesta: mensalidade dividida pelas vezes que você realmente vai. <strong>Quem treina 12 vezes no mês paga barato em qualquer academia; quem vai 2 vezes paga caro até na mais econômica.</strong></p>
 <h2>One more thing: onde o dinheiro vira resultado</h2>
 <p>Depois de anos treinando gente em Alphaville, Barueri e Santana de Parnaíba, a fórmula que mais vejo funcionar é contraintuitiva: <strong>economize na estrutura, invista na orientação</strong>. Academia é ferramenta; método é motor.</p>
@@ -83289,7 +83399,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p><em>Padrões gerais do setor — a realidade de cada unidade varia; confirme visitando no seu horário.</em></p>
 <h2>Treinar no pico sem perder o treino</h2>
 <p>Se sua única janela é o horário cheio, a frequência semanal e a estrutura do treino precisam ser pensadas para isso — treinos mais curtos, exercícios com alternativas e divisão inteligente:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A lição do vídeo vale dobrado para quem treina no pico: <strong>frequência e estrutura certas valem mais do que horário perfeito</strong>. Um treino com plano B para cada exercício não trava na fila do equipamento.</p>
 <h2>One more thing: academia cheia não é desculpa — é falta de estratégia</h2>
 <p>Em anos atendendo em Alphaville, Barueri e Santana de Parnaíba, vi muita gente desistir "porque a academia lota". A verdade? <strong>Quem tem plano não depende de aparelho vago.</strong> Quem improvisa, sim.</p>
@@ -83366,8 +83477,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <p><em>Faixas qualitativas — valores e serviços variam por unidade; consulte o site oficial ou a unidade para condições atualizadas.</em></p>
 <h2>O processo de perda de gordura, sem mágica</h2>
-<p>Antes de escolher onde treinar, entenda <em>como</em> a gordura realmente sai do corpo — este vídeo resume o processo com honestidade rara no setor:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Percebeu o padrão? Déficit, treino resistido, aeróbico como coadjuvante, paciência. Nada disso depende da academia — <strong>tudo isso depende de um plano individualizado e de alguém ajustando as variáveis conforme seu corpo responde</strong>.</p>
 <h2>One more thing: o método tem endereço (e também funciona online)</h2>
 <p>Se você chegou até aqui, já entendeu: a pergunta certa não é "qual academia emagrece", e sim <strong>"quem vai desenhar e acompanhar o meu processo?"</strong>. É aí que a maioria falha sozinha — e é exatamente isso que eu resolvo.</p>
@@ -83450,8 +83561,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <p>Tabela qualitativa: estrutura, horários e regras variam por unidade — <strong>consulte o site oficial ou a própria unidade para informações atualizadas</strong>.</p>
 <h2>Como treinar bem mesmo quando a academia está cheia</h2>
-<p>Às vezes, o único horário que cabe na sua agenda é o pico. Tudo bem: <strong>quem tem plano B para cada exercício nunca fica parado esperando equipamento</strong>. Antes de ver como aplicar isso na prática, vale assistir a este guia de musculação que ajuda a organizar seu treino de forma inteligente:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Percebeu o padrão? Treino bom não depende de um equipamento específico, e sim de estímulo bem aplicado. Halteres, polias e peso corporal substituem quase qualquer máquina ocupada — desde que você saiba o que está fazendo. É aí que a orientação profissional muda o jogo. Se quiser um treino com substituições prontas para qualquer cenário, <a href="/consultoria">conheça a consultoria online</a>.</p>
 <p>E lembre-se: a <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda atividade física regular</a>, incluindo fortalecimento muscular ao menos duas vezes por semana. Melhor um treino adaptado num horário cheio do que nenhum treino.</p>
 <h2>A verdade que ninguém te conta sobre academia lotada</h2>
@@ -83526,8 +83637,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <p>Comparativo qualitativo: horários, planos e estrutura variam por unidade — <strong>consulte o site oficial ou a unidade para informações atualizadas</strong>.</p>
 <h2>Como encaixar o domingo numa semana de treinos inteligente</h2>
-<p>Treinar no domingo só faz sentido dentro de um plano semanal coerente. Quantas vezes por semana você realmente precisa treinar? Este vídeo responde de forma direta:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A lição central: <strong>frequência ideal é a que cabe na sua vida e distribui bem estímulo e recuperação</strong>. Para o executivo de Alphaville, isso pode significar 3 treinos em dias úteis mais o domingo. Para a mãe de família de Barueri, talvez dois treinos no fim de semana e um no meio. Não existe fórmula única — existe planejamento. Se quiser uma semana desenhada para a sua agenda, <a href="/consultoria">conheça a consultoria online</a>.</p>
 <p>Vale lembrar que a <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda pelo menos 150 minutos semanais de atividade física</a> — e o domingo pode ser peça-chave para fechar essa conta.</p>
 <h2>O detalhe que muda tudo: quem planeja não depende de horário</h2>
@@ -83604,8 +83715,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <p>O treinamento resistido tem <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">benefícios bem documentados pela ciência</a> — e a boa notícia é que ele pode ser mantido, em versão adaptada, mesmo longe das máquinas.</p>
 <h2>Frequência importa mais que perfeição</h2>
-<p>O medo de "perder resultado" num feriado geralmente vem de não entender como a frequência semanal funciona. Este vídeo esclarece quantos treinos por semana realmente fazem diferença:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Moral da história: <strong>um feriado não destrói resultado nenhum — o abandono destrói</strong>. Se a sua semana está bem distribuída, dá para reorganizar os estímulos sem perder nada. O que você não pode é ficar sem plano. Para ter uma rotina que se adapta a feriados, viagens e imprevistos, <a href="/consultoria">conheça a consultoria online</a>.</p>
 <h2>One more thing: o treino que não depende de calendário</h2>
 <p>A virada de chave é simples: <strong>academia é ferramenta; planejamento é o motor</strong>. Quem treina com método tem sempre uma resposta pronta — academia fechada? Treino do condomínio. Viajou? Treino de hotel. Feriado prolongado? Ajuste na divisão semanal.</p>
@@ -83677,8 +83788,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <p>Comparativo qualitativo, sem preços: <strong>mensalidades e planos variam bastante — confirme valores e estrutura no site oficial ou na unidade</strong>.</p>
 <h2>Estrutura completa só rende com treino completo</h2>
-<p>Aqui está o ponto que quase ninguém fala: de nada adianta ter 50 máquinas se o seu treino não tem lógica de progressão. Este vídeo é um excelente ponto de partida para entender como organizar a musculação:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare: os princípios do vídeo — seleção de exercícios, volume, progressão — funcionam em qualquer estrutura, da rede econômica à premium. <strong>A academia define o teto de possibilidades; o treino define o quanto você sobe.</strong> A ciência confirma: os <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">benefícios do treinamento resistido</a> vêm do estímulo bem aplicado, não do logotipo na fachada.</p>
 <h2>Checklist antes de assinar o plano</h2>
 <ul>
@@ -83881,9 +83992,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Consultoria online</td><td>Mais acessível</td><td>Treino individualizado a distância com ajustes</td><td>Quem tem autonomia e quer orientação profissional com menor custo</td></tr>
 </table>
 
-<p>E quanto à frequência ideal — que impacta diretamente o valor do pacote? O vídeo abaixo ajuda a entender quantas vezes por semana realmente faz sentido treinar:</p>
-
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <p>Repare: a frequência ideal depende do seu objetivo e da sua recuperação — não do pacote mais caro. Um bom personal em Barueri monta exatamente essa conta com você: <strong>quantas sessões supervisionadas você precisa e quantas pode fazer sozinho seguindo o plano</strong>. Isso otimiza resultado e orçamento ao mesmo tempo.</p>
 
@@ -83984,9 +84094,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Consultoria online</td><td>Mais acessível</td><td>Individualização com flexibilidade total</td><td>Quem executa sozinho e quer orientação profissional com menor custo</td></tr>
 </table>
 
-<p>E se você está começando agora — ou voltando depois de anos parado — vale assistir ao vídeo abaixo antes de decidir qualquer coisa. São os fundamentos que todo iniciante precisa dominar:</p>
-
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <p>Note que quase todas as dicas passam por <strong>técnica, progressão e constância</strong> — exatamente os três pontos em que um treino sem orientação mais falha. É por isso que o acompanhamento profissional não é luxo: é o que transforma esforço em resultado.</p>
 
@@ -84082,8 +84191,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ol>
 <h2>Como é uma sessão na prática</h2>
 <p>Sessões de 50 a 60 minutos: aquecimento direcionado, bloco principal com correção de execução em tempo real e registro de tudo — para que o treino da semana seguinte sempre evolua. Nos dias sem acompanhamento, você recebe orientações para manter o ritmo.</p>
-<p>Sobre frequência, aliás, esta é uma das dúvidas mais comuns dos meus alunos em Barueri — o vídeo abaixo explica com clareza quantas vezes por semana treinar de acordo com sua rotina:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A conclusão prática do vídeo conversa com o que vejo todos os dias: <strong>a melhor frequência é a que você consegue sustentar</strong> — e o treino a domicílio existe exatamente para tornar isso sustentável.</p>
 <h2>O que realmente gera resultado (spoiler: não é o CEP)</h2>
 <p><strong>Academia, sala de casa ou salão do condomínio: o local é ferramenta. Orientação é o que gera resultado.</strong> A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda</a> 150 a 300 minutos semanais de atividade — o desafio nunca foi saber disso, e sim executar com constância.</p>
@@ -84160,8 +84269,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Acompanhamento</td><td>Orienta os dias sem sessão</td><td>Só existe durante a hora contratada</td></tr>
 </table>
 <h2>Antes de decidir, entenda o que é treinar com método</h2>
-<p>Grande parte do valor de um bom personal está na <strong>progressão de carga</strong> — a arte de aumentar o estímulo na medida certa, semana após semana. O vídeo abaixo explica esse conceito com precisão:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Como fazer uma progressão de carga eficiente — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Agora você tem um teste prático: pergunte ao candidato a personal como ele faz progressão de carga. Compare a resposta com o que acabou de assistir. <strong>Quem domina o básico bem-feito vale mais do que quem promete fórmulas secretas.</strong></p>
 <h2>Meu convite: use estes critérios para me avaliar</h2>
 <p>Eu sou o Montinho, personal trainer em Alphaville, Barueri e Santana de Parnaíba — atendimento presencial (inclusive a domicílio e em condomínios) e consultoria online. Em vez de me declarar o melhor, faço um convite mais honesto: <strong>me avalie pelos sete critérios acima</strong>.</p>
@@ -84238,8 +84347,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Consultoria online</td><td>Total</td><td>Alta, com ajustes remotos</td><td>Treina onde quiser</td><td>Quem viaja muito ou tem agenda imprevisível</td></tr>
 </table>
 <h2>Entenda a ciência antes de treinar</h2>
-<p>Para quem quer entender por que a progressão de carga é o motor da mudança corporal — inclusive (e principalmente) para mulheres — este vídeo resume o essencial:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare: nada no vídeo é "treino de homem". São princípios fisiológicos que valem para todo mundo — o que muda é a aplicação: prioridades, fases hormonais e contexto de vida. É exatamente aí que o acompanhamento individual faz diferença.</p>
 <h2>Um ambiente onde você treina sem se explicar</h2>
 <p><strong>Treino é ferramenta. Acompanhamento que respeita a sua história é o que gera resultado.</strong> Trabalho há anos com alunas em Alphaville, Barueri e Santana de Parnaíba — executivas do Centro Industrial e Empresarial, mães de condomínios do Tamboré, mulheres retomando o corpo depois da gestação. Cada plano é construído a partir da avaliação individual, com metas realistas e sem julgamento.</p>
@@ -86613,8 +86722,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <p>A Organização Mundial da Saúde recomenda pelo menos 150 minutos semanais de atividade física para adultos — e treino de força ao menos duas vezes por semana (<a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" rel="noopener" target="_blank">OMS</a>). Com o treino acontecendo dentro do condomínio, cumprir essa meta deixa de ser projeto e vira rotina.</p>
 <h2>Está começando agora? Veja por onde iniciar</h2>
-<p>Se você está há anos parado, o vídeo abaixo mostra como estruturar os primeiros passos sem se machucar e sem desistir na segunda semana — exatamente a lógica aplicada nos treinos dentro do condomínio:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="Treino para iniciantes: por onde começar" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <h2>Comodidade premium, método de verdade</h2>
 <p>Treinar no Tamboré 1 com o Montinho não é "ginástica em casa": é periodização, controle de execução e progressão de cargas — o mesmo rigor de um bom centro de treinamento, a poucos metros da sua sala. <a href="/contato">Agende uma avaliação</a> e descubra como sua casa pode virar seu melhor lugar de treino. Se preferir começar à distância, conheça a <a href="/consultoria">consultoria online</a> ou veja o panorama completo do <a href="/personal-trainer-tambore">personal trainer no Tamboré</a>.</p>
 <h2>Leia também</h2>
@@ -86680,8 +86789,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Plano de contingência:</strong> semana de viagem ou reunião que estourou não zera o progresso — o programa se adapta.</li>
 </ul>
 <h2>Frequência realista, resultado consistente</h2>
-<p>Executivos costumam oscilar entre o tudo (cinco treinos na semana de janeiro) e o nada (zero em fevereiro). A ciência é clara: frequência sustentável vence intensidade esporádica. Este vídeo explica quantas vezes por semana você realmente precisa treinar para ter resultado:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Quantas vezes por semana treinar" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>A atividade física regular também é uma das intervenções mais bem documentadas contra doenças cardiovasculares e mortalidade precoce, como mostra a literatura científica (<a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" rel="noopener" target="_blank">PubMed</a>). Para quem vive sob pressão, treino não é estética: é gestão de risco.</p>
 <h2>Método de alto padrão, a poucos passos da sua porta</h2>
 <p>O atendimento no Tamboré 2 une o que o executivo mais valoriza: eficiência e resultado mensurável. Periodização, reavaliações e progressão — sem abrir mão da comodidade de treinar em casa. <a href="/contato">Agende uma avaliação</a> e monte sua rotina. Viaja muito? A <a href="/consultoria">consultoria online</a> mantém o plano rodando em qualquer cidade. E para conhecer toda a região, veja a página de <a href="/personal-trainer-tambore">personal trainer no Tamboré</a>.</p>
@@ -86752,7 +86861,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Vale reforçar: força e cardio trabalham juntos. A recomendação da OMS de ao menos 150 minutos semanais de atividade e duas sessões de fortalecimento (<a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" rel="noopener" target="_blank">veja a diretriz</a>) é o piso — o desenho fino de como distribuir isso é papel do acompanhamento profissional.</p>
 <h2>Entenda a lógica da perda de gordura</h2>
 <p>Antes de contratar qualquer programa, vale entender o que realmente faz o corpo queimar gordura — e por que tanta gente treina muito e emagrece pouco:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Como funciona a perda de gordura" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <blockquote>Emagrecer com acompanhamento não é pagar por exercícios. É pagar por alguém que não deixa você desistir na semana em que tudo dá errado.</blockquote>
 <h2>Seu treino, sua casa, seu ritmo</h2>
 <p>No Tamboré 3, a especialidade do Montinho acontece onde a mudança é mais fácil de sustentar: dentro da sua rotina, a poucos metros da sua porta. Comodidade premium, método sério. <a href="/contato">Agende uma avaliação</a> e comece pelo diagnóstico. Prefere formato remoto? Conheça a <a href="/consultoria">consultoria online</a>. E veja também a página completa de <a href="/personal-trainer-tambore">personal trainer no Tamboré</a>.</p>
@@ -86824,8 +86934,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Fase de progressão:</strong> cargas e volume subindo de forma planejada, com registro de cada sessão.</li>
 <li><strong>Ciclos de intensificação:</strong> técnicas avançadas entram quando o corpo está pronto — não antes.</li>
 </ol>
-<p>Quer entender a lógica por trás do ganho de massa antes de começar? Este vídeo resume o que realmente importa na hipertrofia:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Hipertrofia: o que realmente importa" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade mesmo treinando sem equipamento — ideal para quem treina no conforto de casa ou do condomínio.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>E não é só estética: o treino de força regular está associado a menor risco cardiovascular e maior longevidade, como aponta a literatura (<a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" rel="noopener" target="_blank">estudo no PubMed</a>).</p>
 <h2>Treino de verdade, sem sair do portão</h2>
 <p>O diferencial do atendimento no Tamboré 4 é unir rigor de centro de treinamento com a comodidade do condomínio: cada série anotada, cada progressão planejada, zero deslocamento. <a href="/contato">Agende uma avaliação</a> e descubra o que a sua estrutura pode entregar. Se você já treina e quer só o planejamento, a <a href="/consultoria">consultoria online</a> resolve. Conheça também a página de <a href="/personal-trainer-tambore">personal trainer no Tamboré</a>.</p>
@@ -86887,8 +86997,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h3>Treino onde você se sente em casa — literalmente</h3>
 <p>A sessão acontece na sua residência, com equipamentos portáteis levados quando necessário, ou na academia do condomínio. Muitos condomínios da região contam com academia própria — e a do seu condomínio pode se tornar seu melhor centro de treino com a orientação certa e supervisão constante.</p>
 <h3>Progressão gradual, sem pressa e sem sustos</h3>
-<p>O princípio que guia tudo é a progressão inteligente: cada avanço de carga ou complexidade acontece quando o corpo demonstra estar pronto. Este vídeo explica como funciona a progressão bem-feita no treino:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Progressão de treino com segurança" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <h2>O que muda em cada década</h2>
 <table>
 <tr><th>Fase</th><th>Prioridade do treino</th><th>Ganho principal</th></tr>
@@ -86967,8 +87077,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <p>Para a maioria dos moradores que me procuram no Tamboré 6, a recomposição é a rota mais inteligente: resultados visíveis sem os extremos de "cutting" e "bulking".</p>
 <h2>O papel do treino de força na queima de gordura</h2>
-<p>Muita gente ainda associa perda de gordura apenas a esteira e bicicleta. Na prática, o treino de força bem periodizado eleva o gasto energético, preserva massa magra e melhora a sensibilidade à insulina — o combo que muda a composição corporal de verdade. No vídeo abaixo, explico como estruturar o treino quando o objetivo é reduzir gordura sem sacrificar músculo:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Treino para perda de gordura com preservação muscular" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Depois de assistir, note o ponto central: não é sobre treinar mais, é sobre treinar com intenção — cada série tem um porquê dentro do plano.</p>
 <h2>Comodidade premium, sem abrir mão de método</h2>
 <p>Morar no Tamboré 6 já resolve metade da equação: você não precisa enfrentar a Castelo Branco no horário de pico para treinar bem. Com o personal indo até você, o treino deixa de competir com trânsito, fila de equipamento e falta de vaga. A outra metade — método, progressão e cobrança na medida certa — é exatamente o que 20 anos de experiência entregam. <a href="/contato">Agende uma avaliação</a> e descubra seu ponto de partida real, ou conheça o trabalho completo de <a href="/personal-trainer-tambore">personal trainer no Tamboré</a>.</p>
@@ -87035,8 +87145,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>"Treino em casa é sempre mais fraco"</td><td>Com progressão de carga e técnica supervisionada, o resultado equivale ao da academia</td></tr>
 </table>
 <h2>Frequência: o segredo silencioso do resultado</h2>
-<p>Mais importante do que a sessão espetacular é a semana bem distribuída. No vídeo abaixo, explico como definir a frequência ideal de treino — e por que duas a três sessões consistentes vencem cinco sessões que não se sustentam:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Qual a frequência ideal de treino por semana" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare no critério apresentado: a frequência certa é definida pela sua rotina real, não por um padrão genérico de revista.</p>
 <h2>Treinar bem, morando bem</h2>
 <p>O Tamboré 7 oferece o cenário; o método transforma o cenário em resultado. Com o personal indo até você, o treino deixa de ser mais um compromisso na rua e vira parte natural da sua rotina dentro do condomínio — comodidade premium sem abrir mão de técnica, progressão e acompanhamento de verdade. <a href="/contato">Agende uma avaliação</a> e comece pelo diagnóstico, não pelo achismo. Conheça também o trabalho completo de <a href="/personal-trainer-tambore">personal trainer no Tamboré</a>.</p>
@@ -87093,8 +87203,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Tamboré 10: seu condomínio como ponto de partida</h2>
 <p>O atendimento no Tamboré 10 funciona de forma simples. Depois da avaliação inicial, o treino acontece onde for mais confortável: na sua residência, com equipamentos portáteis levados pelo personal quando necessário, ou na academia do condomínio — muitos condomínios da região contam com academia própria, e a do seu pode se tornar seu melhor centro de treino com a orientação certa. Sem trânsito na Castelo Branco, sem catraca, sem desculpa.</p>
 <h2>Veja como é o início da jornada</h2>
-<p>Antes de continuar, assista ao vídeo abaixo: nele mostro como estruturo o treino de quem está começando do absoluto zero — o que fazer, o que evitar e por que as primeiras semanas definem se você continua ou desiste:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="Treino para iniciantes: como começar do zero" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>O recado central do vídeo vale ser repetido: o melhor treino para iniciante não é o mais intenso — é o que você consegue repetir na próxima semana.</p>
 <h2>Academia comercial x personal no condomínio: a visão do iniciante</h2>
 <table>
@@ -87172,8 +87282,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Recuperação</td><td>Descanso é "dia perdido"</td><td>Programada como parte do estímulo</td></tr>
 </table>
 <h2>Progressão de carga na prática</h2>
-<p>Destravar não é adicionar peso a qualquer custo — é saber quando subir carga, quando subir repetições, quando trocar o exercício e quando recuar de propósito. No vídeo abaixo, mostro os critérios objetivos que uso para decidir a progressão, sessão a sessão:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Progressão de carga: como evoluir sem estagnar" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Se ao assistir você perceber que nunca registrou suas cargas de forma sistemática, encontrou o primeiro gargalo do seu platô.</p>
 <h2>Alta performance dentro do Tamboré 11</h2>
 <p>O atendimento começa com uma avaliação diferente da de iniciantes: análise do seu treino atual, técnica dos levantamentos principais, histórico de lesões e identificação de pontos fracos. A partir daí, o programa roda onde fizer sentido — na sua casa, com equipamentos portáteis quando necessário, ou na academia do condomínio; muitos condomínios da região contam com academia própria, e a do seu pode se tornar seu melhor centro de treino com a orientação certa. Nas semanas de viagem, a <a href="/consultoria">consultoria online</a> mantém a periodização intacta.</p>
@@ -87241,8 +87351,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <p>O segredo está na costura: os três ambientes servem ao mesmo programa, com registro e progressão únicos. Variedade sem método é distração; variedade com método é longevidade no treino.</p>
 <h2>Full body: o formato que ama a variedade</h2>
-<p>Para quem alterna ambientes, o treino full body — corpo inteiro em cada sessão — costuma ser o encaixe perfeito: cada encontro é completo em si mesmo, e nenhum grupo muscular fica refém do dia em que o treino "não aconteceu". No vídeo abaixo, explico como montar e progredir um full body de verdade:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dvshstAxvMM?rel=0" title="Treino full body: como estruturar" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Guarde a lógica do vídeo: menos sessões, mais completas — exatamente o que uma rotina exigente pede.</p>
 <h2>Saúde além da estética</h2>
 <p>Treinar em movimento variado não é só mais divertido — é mais completo. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener">OMS</a> recomenda combinar atividade aeróbica e fortalecimento muscular semanalmente, e um programa que circula entre casa, área externa e academia entrega os dois sem esforço de logística.</p>
@@ -87311,8 +87421,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 <p>Na prática, o melhor programa mistura os dois — e é exatamente isso que o acompanhamento personalizado permite.</p>
 <h2>Começando do zero? Veja por onde começar</h2>
-<p>Muitos moradores adiam o início por acharem que precisam "estar em forma" antes de contratar um personal. É o contrário: quanto mais iniciante, mais o acompanhamento acelera e protege. No vídeo abaixo, explico como estruturar os primeiros passos de quem está começando:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="Treino para iniciantes: por onde começar" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Depois de assistir, note como tudo converge para um ponto: método vence improviso. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity">OMS recomenda</a> ao menos 150 minutos semanais de atividade moderada — e cumpri-los fica muito mais fácil quando o treino acontece a poucos metros da sua porta.</p>
 <h3>Treino funcional ao ar livre: exemplo de estrutura</h3>
 <ul>
@@ -87387,8 +87497,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Constância no longo prazo</td><td>Alta — hora marcada, zero deslocamento</td><td>Média</td><td>Baixa</td></tr>
 </table>
 <h2>Frequência: quantas vezes por semana no prédio?</h2>
-<p>Essa é a pergunta que mais escuto de moradores de apartamento com agenda cheia. A resposta depende do objetivo e da capacidade de recuperação — e explico os critérios neste vídeo:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Quantas vezes por semana treinar" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Como regra prática: 3 sessões semanais bem distribuídas atendem a maioria dos objetivos de saúde e estética. Estudos publicados no <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/">PubMed</a> reforçam que treinamento de força regular está associado a benefícios amplos de saúde — a chave é a regularidade, e regularidade nasce da conveniência.</p>
 <blockquote>Praticidade sem método é apenas comodismo. Praticidade com método é vantagem competitiva sobre a sua própria agenda.</blockquote>
 <h2>One more thing</h2>
@@ -87457,8 +87567,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Circuito família</td><td>Pais e filhos juntos</td><td>Exemplo e convivência</td><td>Complementa, não substitui, o treino dos adultos</td></tr>
 </table>
 <h2>Perder gordura depois dos 35: o objetivo número 1 dos pais</h2>
-<p>Entre casais do Parque Tamboré, o pedido mais comum é recompor o corpo depois de anos de rotina corrida e prioridade total aos filhos. Neste vídeo, explico o que realmente funciona para perda de gordura — e o que é mito:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Perda de gordura: o que funciona de verdade" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre como quebrar o ciclo do efeito sanfona e emagrecer de vez.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare que nenhuma estratégia do vídeo depende de estrutura sofisticada. Depende de constância — e constância, para quem tem filhos, se chama conveniência.</p>
 <h2>One more thing</h2>
 <p>Montinho atende dentro do Parque Tamboré. Para uma família, isso significa treinar sem terceirizar o tempo com os filhos, sem trânsito e sem logística — comodidade premium com método de mais de 20 anos de experiência.</p>
@@ -87531,8 +87641,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Evolução</td><td>Troca de ficha periódica</td><td>Ajuste contínuo, sessão a sessão</td></tr>
 </table>
 <h2>Progressão: o motor invisível do resultado</h2>
-<p>O que separa quem transforma o corpo de quem apenas "se exercita" é a progressão inteligente de estímulos. Neste vídeo, mostro como estruturá-la na prática:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Progressão de treino: como evoluir de verdade" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Note que progressão exige registro, leitura e decisão — trabalho artesanal que nenhum aplicativo faz por você. A ciência sustenta o investimento: dados publicados no <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/">PubMed</a> associam o treinamento de força regular a benefícios amplos e duradouros de saúde.</p>
 <h2>One more thing</h2>
 <p>Montinho atende dentro do Premium Tamboré. O serviço vai até você — comodidade premium à altura do endereço, sem abrir mão de método, exigência técnica e resultado mensurável.</p>
@@ -87599,8 +87709,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Como funciona o atendimento no Resort Tamboré</h2>
 <p>Primeiro, uma <strong>avaliação inicial</strong>: histórico de saúde, testes de condicionamento e objetivos. Em seguida, mapeamos os espaços do condomínio que farão parte do seu programa. Muitos condomínios da região contam com academia própria — e a do seu pode se tornar seu melhor centro de treino com a orientação certa. Onde faltar equipamento, levo materiais portáteis (halteres, elásticos, TRX). As sessões duram de 45 a 60 minutos, com reavaliações periódicas.</p>
 <h3>Full body: a sessão perfeita para quem quer viver o condomínio</h3>
-<p>Para a maioria dos moradores, o formato ideal é o <strong>treino full body</strong>: corpo inteiro em cada sessão, 2 a 3 vezes por semana — resultado máximo com o mínimo de sessões, sobrando tempo (e energia) para aproveitar o resto da estrutura. Explico a lógica neste vídeo:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dvshstAxvMM?rel=0" title="Treino full body: corpo inteiro em uma sessão" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Perceba: o full body bem periodizado cumpre com folga as recomendações da <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity">OMS</a> — 150 minutos semanais de atividade moderada e fortalecimento muscular ao menos 2 vezes por semana — sem transformar sua vida em uma agenda de academia.</p>
 <blockquote>Você já paga pela estrutura. Treinar nela não é custo extra — é finalmente colher o que o endereço oferece.</blockquote>
 <h2>One more thing</h2>
@@ -87670,8 +87780,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 
 <h2>Começando do zero no Ghaia Tamboré? Melhor ainda</h2>
-<p>Quem nunca treinou — ou parou há anos — costuma ter os ganhos mais rápidos quando começa com orientação. O vídeo abaixo mostra exatamente como estruturar os primeiros passos sem se machucar e sem se frustrar:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="Treino para iniciantes: como começar do jeito certo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Depois de assistir, note o padrão: começar leve, progredir sempre. É esse princípio que aplicamos sessão a sessão dentro do condomínio.</p>
 
 <h2>Sono e hábitos: o treino invisível</h2>
@@ -87749,8 +87859,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </table>
 
 <h2>Resultado de alto padrão: força e hipertrofia com método</h2>
-<p>Um dos pedidos mais comuns entre executivos e moradores da região é ganhar massa muscular com segurança. Hipertrofia não exige uma academia gigante — exige progressão bem controlada. O vídeo abaixo explica os princípios que aplicamos sessão a sessão:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Hipertrofia: como ganhar massa muscular com método" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Repare como tudo gira em torno de controle de variáveis — exatamente o que um atendimento individual permite fazer melhor do que qualquer ambiente coletivo. E o benefício vai além da estética: <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener">a literatura científica</a> associa a prática regular de exercício a ganhos amplos de saúde e longevidade.</p>
 
 <blockquote>Alto padrão, no treino, não é luxo: é precisão. É cada repetição ter um motivo para existir.</blockquote>
