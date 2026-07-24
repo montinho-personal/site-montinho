@@ -538,7 +538,7 @@ export const blogPosts = ([
       "Treinar muito não é o mesmo que treinar certo. Entenda os mecanismos reais da hipertrofia e o que você precisa ajustar para finalmente ganhar massa muscular de forma consistente.",
     category: "Hipertrofia",
     date: "2026-06-25",
-    updatedAt: "2026-06-25",
+    updatedAt: "2026-07-22",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -597,7 +597,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-ganhar-massa-muscular-infographic.svg" alt="Infográfico sobre Como Ganhar Massa Muscular de Verdade: O Guia Completo de Hipertrofia — Montinho Personal Trainer" title="Como Ganhar Massa Muscular de Verdade: O Guia Completo de Hi" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-ganhar-massa-muscular.webp" alt="Como ganhar massa muscular: treino de força com progressão de carga, superávit calórico, proteína adequada, descanso e consistência" title="Como Ganhar Massa Muscular — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Os pilares que realmente constroem músculo: treino, dieta, descanso e constância.</figcaption>
 </figure>
 <p>Isso acontece porque a maioria das pessoas treina — mas não treina para hipertrofia. São coisas diferentes. E entender essa diferença muda tudo.</p>
 
@@ -2896,7 +2897,7 @@ export const blogPosts = ([
       "A confusão sobre proteína é enorme: 2 g/kg? 3 g/kg? Por refeição ou por dia? A ciência tem resposta clara — e ela é bem diferente do que a maioria dos influencers defende.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-22",
     readTime: "14 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -2966,7 +2967,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanta-proteina-por-dia-para-ganhar-massa-muscular-infographic.svg" alt="Infográfico sobre Quanta Proteína por Dia Para Ganhar Massa Muscular? A Resposta da Ciência — Montinho Personal Trainer" title="Quanta Proteína por Dia Para Ganhar Massa Muscular? A Respos" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanta-proteina-por-dia-para-ganhar-massa-muscular.webp" alt="Quanta proteína por dia para ganhar massa muscular: faixas práticas por peso corporal, distribuição nas refeições e fontes de proteína" title="Quanta Proteína Por Dia Para Ganhar Massa — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A quantidade certa de proteína por dia para construir músculo de verdade.</figcaption>
 </figure>
 <p>A confusão é real. E ela existe porque muita informação sobre proteína circula sem base científica — ou com base em estudos mal interpretados, com interesses comerciais por trás ou simplesmente desatualizados.</p>
 
@@ -3750,7 +3752,7 @@ export const blogPosts = ([
       "Esses 10 erros aparecem toda semana na minha consultoria. São específicos de quem busca hipertrofia — e cada um deles pode travar meses de progresso sozinho.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-22",
     readTime: "13 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -3813,7 +3815,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/erros-de-quem-quer-ganhar-massa-muscular-infographic.svg" alt="Infográfico sobre Os 10 Maiores Erros de Quem Quer Ganhar Massa Muscular — Montinho Personal Trainer" title="Os 10 Maiores Erros de Quem Quer Ganhar Massa Muscular" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/erros-de-quem-quer-ganhar-massa-muscular.webp" alt="Erros de quem quer ganhar massa muscular: treinar sem progressão, comer pouca proteína, dormir mal, falta de constância e volume mal distribuído" title="Erros de Quem Quer Ganhar Massa Muscular — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Os erros que travam o ganho de massa — e como corrigir cada um.</figcaption>
 </figure>
 <p>Este artigo não é sobre os erros gerais de musculação — isso está coberto nos <a href="/blog/erros-comuns-no-treino-de-musculacao">7 erros mais comuns na musculação</a>. Aqui o foco é específico: os erros que aparecem exatamente em quem está buscando hipertrofia e não consegue chegar lá.</p>
 
@@ -4419,7 +4422,7 @@ export const blogPosts = ([
       "Creatina é o suplemento com mais evidência científica na história do esporte. Mas a maioria das pessoas ainda tem dúvidas básicas sobre dose, horário e segurança. Aqui está o que a ciência diz.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-22",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -4482,7 +4485,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/creatina-para-hipertrofia-infographic.svg" alt="Infográfico sobre Creatina Para Hipertrofia: O Que a Ciência Realmente Diz — Montinho Personal Trainer" title="Creatina Para Hipertrofia: O Que a Ciência Realmente Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/creatina-para-hipertrofia.webp" alt="Creatina para hipertrofia: como funciona, dose de 3 a 5g por dia, benefícios de força e ganho muscular e mitos comuns" title="Creatina Para Hipertrofia — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O suplemento mais estudado do mundo: como a creatina potencializa força e hipertrofia.</figcaption>
 </figure>
 <p>A creatina é o suplemento mais estudado da história do esporte. Mais de 500 estudos publicados, décadas de uso em populações variadas, posição oficial de praticamente todas as entidades científicas de nutrição esportiva. E ainda assim, o mito persiste — provavelmente porque é um suplemento que realmente funciona, o que gera desconfiança numa indústria cheia de promessas vazias.</p>
 
@@ -6849,7 +6853,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Passados os 40, o corpo muda. A sarcopenia começa silenciosamente. Mas a ciência é categórica: é totalmente possível ganhar músculo em qualquer idade com o protocolo certo.",
     category: "Saúde",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-22",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -6911,7 +6915,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/hipertrofia-apos-os-40-anos-infographic.svg" alt="Infográfico sobre Hipertrofia Após os 40 Anos: É Possível Ganhar Músculo Envelhecendo? — Montinho Personal Trainer" title="Hipertrofia Após os 40 Anos: É Possível Ganhar Músculo Envel" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/hipertrofia-apos-os-40-anos.webp" alt="Hipertrofia após os 40 anos: é possível ganhar massa muscular com treino de força, proteína suficiente, recuperação e paciência estratégica" title="Hipertrofia Após os 40 Anos — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Depois dos 40 dá para ganhar músculo: como treinar com inteligência nessa fase.</figcaption>
 </figure>
 <p>A resposta é sempre a mesma: não só dá tempo — você precisa disso.</p>
 
@@ -9058,6 +9063,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "O Mounjaro emagrece — mas sem as estratégias certas, parte do que você perde é músculo, não só gordura. Veja como proteger sua massa magra durante o tratamento.",
     category: "Emagrecimento",
     date: "2026-06-26",
+    updatedAt: "2026-07-22",
     readTime: "11 min",
     author: "Montinho",
     tags: ["mounjaro", "tirzepatida", "massa muscular", "emagrecimento", "GLP-1", "proteína", "treino de força"],
@@ -9100,7 +9106,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-evitar-perder-massa-muscular-mounjaro-infographic.svg" alt="Infográfico sobre Como Evitar Perder Massa Muscular Usando Mounjaro — Montinho Personal Trainer" title="Como Evitar Perder Massa Muscular Usando Mounjaro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-evitar-perder-massa-muscular-mounjaro.webp" alt="Como evitar perder massa muscular no Mounjaro: treino de força, proteína alta, monitoramento da composição corporal e déficit controlado" title="Como Evitar Perder Massa Muscular no Mounjaro — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Preservar músculo durante o Mounjaro: os pilares para emagrecer com qualidade.</figcaption>
 </figure>
 <p>O problema? Peso perdido não é sinônimo de gordura perdida. E quando o emagrecimento acontece em velocidade alta, sem as estratégias certas, uma parcela significativa do que vai embora é <strong>massa muscular</strong>.</p>
 
@@ -23583,6 +23590,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Sim, Ozempic pode fazer perder músculo — mas isso não é inevitável. Entenda o mecanismo e as estratégias para preservar sua massa magra.",
     category: "Saúde",
     date: "2026-06-27",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["Ozempic", "perda muscular", "GLP-1", "sarcopenia", "massa muscular"],
@@ -23605,7 +23613,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/ozempic-faz-perder-musculo-infographic.svg" alt="Infográfico sobre Ozempic Faz Perder Músculo? Como Proteger a Massa Muscular — Montinho Personal Trainer" title="Ozempic Faz Perder Músculo? Como Proteger a Massa Muscular" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/ozempic-faz-perder-musculo.webp" alt="Ozempic faz perder músculo? O emagrecimento acelerado leva junto massa magra se não houver treino de força e proteína adequada" title="Ozempic Faz Perder Músculo? — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Emagrecer com Ozempic sem perder músculo: treino de força e proteína são indispensáveis.</figcaption>
 </figure>
 <h2>O que os estudos mostram</h2>
 <p>No estudo STEP 1 (semaglutida 2,4mg para obesidade), participantes perderam em média 15,3 kg ao longo de 68 semanas. A análise de composição corporal revelou que aproximadamente 38–40% dessa perda foi massa magra (músculo + água intracelular + glicogênio), não gordura pura.</p>
@@ -84570,7 +84579,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Milhares de abdominais depois, a barriga continua lá. Não é falta de esforço: é o mito da redução localizada. Veja o que realmente seca o abdômen.",
     category: "Emagrecimento",
     date: "2026-07-08",
-    updatedAt: "2026-07-08",
+    updatedAt: "2026-07-22",
     readTime: "8 min",
     author: "Montinho",
     tags: ["abdominal","perder barriga","gordura abdominal","redução localizada","core"],
@@ -84588,7 +84597,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você faz série de abdominais todo santo dia. Arde, treme, cansa. E a barriga? <strong>Continua exatamente onde estava.</strong></p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/abdominal-todo-dia-perde-barriga-infographic.svg" alt="Infográfico sobre Fazer Abdominal Todo Dia Perde Barriga? — Montinho Personal Trainer" title="Fazer Abdominal Todo Dia Perde Barriga?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/abdominal-todo-dia-perde-barriga.webp" alt="Abdominal todo dia perde barriga? Não existe redução localizada: a barriga sai com déficit calórico, treino de força e cardio, não com abdominais" title="Abdominal Todo Dia Perde Barriga? — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Abdominal fortalece o core, mas não elimina a gordura da barriga — quem faz isso é o déficit.</figcaption>
 </figure>
 
 <p>A sensação é de injustiça: tanto esforço no lugar certo... e nada. Enquanto isso, a internet vende desafios de "30 dias de abdominal" que nunca funcionaram para ninguém.</p>
