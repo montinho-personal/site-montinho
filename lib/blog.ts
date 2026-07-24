@@ -87120,7 +87120,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Treino feminino no Tamboré 7 com privacidade total: acompanhamento individual, método e resultados reais sem precisar sair do condomínio.",
     category: "Treinamento",
     date: "2026-07-12",
-    updatedAt: "2026-07-12",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["personal trainer Tamboré 7","treino feminino","treino em casa","privacidade","Santana de Parnaíba"],
@@ -87137,7 +87137,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Para muitas mulheres, o obstáculo não é a vontade de treinar — é tudo o que vem junto: a academia lotada no fim do dia, os olhares na área de peso livre, o professor que atende dez pessoas ao mesmo tempo, a logística de sair de casa depois de um dia inteiro de trabalho ou com os filhos. O resultado? O treino vira a primeira coisa cortada da agenda.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-tambore-7-infographic.svg" alt="Infográfico sobre Personal Trainer no Tamboré 7: Resultado sem Sair do Condomínio — Montinho Personal Trainer" title="Personal Trainer no Tamboré 7: Resultado sem Sair do Condom…" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-tambore-7.webp" alt="Personal trainer no Condomínio Tamboré 7, região de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Tamboré 7 — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Tamboré 7: treino inteligente, resultados reais.</figcaption>
 </figure>
 
 <p>Sim, o <strong>Tamboré 7</strong> conta com atendimento de personal trainer a domicílio: as moradoras do condomínio podem treinar em casa ou na academia do próprio residencial, com acompanhamento individual, privacidade total e um método construído em mais de 20 anos de experiência na região de Alphaville, Barueri e Santana de Parnaíba.</p>
@@ -87187,7 +87188,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Nunca treinou na vida? No Tamboré 10, sua primeira experiência com exercício pode ser guiada, segura e em casa — longe da intimidação da academia comercial.",
     category: "Treinamento",
     date: "2026-07-12",
-    updatedAt: "2026-07-12",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["personal trainer Tamboré 10","treino para iniciantes","treino em casa","começar a treinar","Santana de Parnaíba"],
@@ -87204,7 +87205,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Todo mundo tem aquele amigo que assinou o plano anual da academia em janeiro e parou em fevereiro. Talvez você já tenha sido esse amigo. O motivo quase nunca é preguiça: é entrar num salão cheio de máquinas desconhecidas, sem saber por onde começar, cercado de gente que parece saber exatamente o que está fazendo. Para quem nunca treinou, a academia comercial pode ser o ambiente mais hostil possível para dar o primeiro passo.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-tambore-10-infographic.svg" alt="Infográfico sobre Personal Trainer no Tamboré 10: Treino Premium em Casa — Montinho Personal Trainer" title="Personal Trainer no Tamboré 10: Treino Premium em Casa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-tambore-10.webp" alt="Personal trainer no Condomínio Tamboré 10, região de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Tamboré 10 — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Tamboré 10: treino inteligente, resultados reais.</figcaption>
 </figure>
 
 <p>Sim, o <strong>Tamboré 10</strong> conta com atendimento de personal trainer a domicílio — e para iniciantes essa é a porta de entrada ideal: Montinho, com mais de 20 anos de experiência na região de Alphaville, Barueri e Santana de Parnaíba, conduz sua primeira experiência de treino dentro do condomínio, no seu ritmo e sem plateia.</p>
@@ -87256,7 +87258,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Você treina, mas parou de evoluir? No Tamboré 11, periodização e progressão de carga bem aplicadas destravam o platô — em casa ou na academia do condomínio.",
     category: "Treinamento",
     date: "2026-07-12",
-    updatedAt: "2026-07-12",
+    updatedAt: "2026-07-22",
     readTime: "8 min",
     author: "Montinho",
     tags: ["personal trainer Tamboré 11","platô de treino","periodização","progressão de carga","hipertrofia"],
@@ -87273,7 +87275,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Três anos de treino. As mesmas cargas dos últimos oito meses. O shape que não muda mais, o supino travado no mesmo número, a sensação de esforço sem retorno. Se essa descrição doeu, você está no platô — o cemitério silencioso de quem treina por conta própria. E a saída não é treinar mais horas: é treinar com engenharia.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-tambore-11-infographic.svg" alt="Infográfico sobre Personal Trainer no Tamboré 11: Alta Performance em Casa — Montinho Personal Trainer" title="Personal Trainer no Tamboré 11: Alta Performance em Casa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-tambore-11.webp" alt="Personal trainer no Condomínio Tamboré 11, região de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Tamboré 11 — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Tamboré 11: treino inteligente, resultados reais.</figcaption>
 </figure>
 
 <p>Sim, o <strong>Tamboré 11</strong> conta com atendimento de personal trainer a domicílio para praticantes avançados: Montinho, com mais de 20 anos de experiência na região de Alphaville e Tamboré, atende moradores do condomínio com periodização estruturada e progressão de carga planejada, em casa ou na academia do próprio residencial.</p>
@@ -87327,7 +87330,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "No Quintas de Tamboré, espaço não falta — falta variedade com método. Treinos que alternam casa, áreas externas e academia do condomínio para nunca cair na monotonia.",
     category: "Treinamento",
     date: "2026-07-12",
-    updatedAt: "2026-07-12",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["personal trainer Quintas de Tamboré","treino ao ar livre","treino em casa","full body","Santana de Parnaíba"],
@@ -87344,7 +87347,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Existe um paradoxo curioso em quem mora em casa ampla, com quintal, área gourmet e condomínio cheio de área verde: o treino, quando existe, acontece sempre no mesmo canto, do mesmo jeito — até a monotonia vencer. Não é falta de espaço. É falta de um programa que transforme todo esse espaço em estímulo.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-quintas-de-tambore-infographic.svg" alt="Infográfico sobre Personal Trainer no Quintas de Tamboré — Montinho Personal Trainer" title="Personal Trainer no Quintas de Tamboré" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-quintas-de-tambore.webp" alt="Personal trainer no Condomínio Quintas de Tamboré, região de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Quintas de Tamboré — Montinho Personal Trainer" width="1491" height="1055" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Quintas de Tamboré: treino inteligente, resultados reais.</figcaption>
 </figure>
 
 <p>Sim, o <strong>Quintas de Tamboré</strong> conta com atendimento de personal trainer a domicílio: Montinho, com mais de 20 anos de experiência na região de Alphaville, Barueri e Santana de Parnaíba, atende moradores do condomínio combinando treino em casa, em áreas externas e na academia do próprio residencial — a variedade como ferramenta, não como enfeite.</p>
@@ -87395,7 +87399,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Morar cercado de verde e treinar dentro de quatro paredes? No Green Tamboré, seu treino pode acontecer onde a vida acontece: ao ar livre, com método e resultado.",
     category: "Treinamento",
     date: "2026-07-12",
-    updatedAt: "2026-07-12",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["personal trainer Green Tamboré","treino ao ar livre","treino funcional","treino em casa","Tamboré"],
@@ -87412,7 +87416,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você escolheu o <strong>Green Tamboré</strong> justamente pelo que o nome promete: verde, ar puro, espaço para viver bem. E, mesmo assim, a rotina de treino — quando existe — acontece trancada em uma sala de academia lotada, depois de enfrentar trânsito. Há uma contradição aí: morar em um dos endereços mais arborizados da região do Tamboré e não usar esse cenário a favor da própria saúde.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-green-tambore-infographic.svg" alt="Infográfico sobre Personal Trainer no Green Tamboré: Treino em Casa — Montinho Personal Trainer" title="Personal Trainer no Green Tamboré: Treino em Casa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-green-tambore.webp" alt="Personal trainer no Condomínio Green Tamboré, região de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Green Tamboré — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Green Tamboré: treino inteligente, resultados reais.</figcaption>
 </figure>
 
 <p>Sim, o Green Tamboré conta com atendimento de <strong>personal trainer a domicílio</strong>: Montinho, com mais de 20 anos de experiência, atende moradores do condomínio em casa, nas áreas comuns e ao ar livre, levando equipamentos portáteis quando necessário.</p>
@@ -87471,7 +87476,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "No Boulevard Tamboré, o treino mais eficiente é o que acontece no elevador de distância: 45 a 60 minutos na academia do prédio, com método e sem tempo perdido.",
     category: "Treinamento",
     date: "2026-07-12",
-    updatedAt: "2026-07-12",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["personal trainer Boulevard Tamboré","academia do prédio","treino eficiente","apartamento","Tamboré"],
@@ -87488,7 +87493,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Quem mora em apartamento no <strong>Boulevard Tamboré</strong> escolheu praticidade: tudo perto, tudo resolvido, tempo otimizado. Mas há um paradoxo comum — a academia fica a um elevador de distância e, ainda assim, o treino não acontece. Falta o quê? Não é estrutura. É direção. Sem um programa claro, a academia do prédio vira um lugar de "dar uma treinada" ocasional, sem progressão e sem resultado.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-boulevard-tambore-infographic.svg" alt="Infográfico sobre Personal Trainer no Boulevard Tamboré — Montinho Personal Trainer" title="Personal Trainer no Boulevard Tamboré" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-boulevard-tambore.webp" alt="Personal trainer no Condomínio Boulevard Tamboré, região de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Boulevard Tamboré — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Boulevard Tamboré: treino inteligente, resultados reais.</figcaption>
 </figure>
 
 <p>Sim, o Boulevard Tamboré conta com atendimento de <strong>personal trainer</strong>: Montinho atende moradores na academia do condomínio ou dentro do próprio apartamento, com sessões objetivas de 45 a 60 minutos e mais de 20 anos de experiência em treinamento individualizado.</p>
@@ -87541,7 +87547,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "No Parque Tamboré, saúde pode ser projeto de família: treino de casal, exemplo para os filhos e rotina ativa sem sair do condomínio.",
     category: "Treinamento",
     date: "2026-07-12",
-    updatedAt: "2026-07-12",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["personal trainer Parque Tamboré","treino em família","treino de casal","treino no condomínio","Tamboré"],
@@ -87558,7 +87564,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Existe uma cena que se repete em muitas famílias do <strong>Parque Tamboré</strong>: agenda dos filhos impecável — escola, inglês, esporte — e a saúde dos pais permanentemente adiada para "quando der". O problema é que não dá. E os filhos aprendem menos com o que os pais dizem e mais com o que os pais fazem: uma casa onde ninguém treina forma adultos que não treinam.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-parque-tambore-infographic.svg" alt="Infográfico sobre Personal Trainer no Parque Tamboré: Treino no Condomínio — Montinho Personal Trainer" title="Personal Trainer no Parque Tamboré: Treino no Condomínio" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-parque-tambore.webp" alt="Personal trainer no Condomínio Parque Tamboré, região de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Parque Tamboré — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Parque Tamboré: treino inteligente, resultados reais.</figcaption>
 </figure>
 
 <p>Sim, o Parque Tamboré conta com atendimento de <strong>personal trainer a domicílio</strong>: Montinho atende moradores do condomínio — individualmente, em casal ou em formatos de família — em casa, nas áreas comuns ou na academia interna, quando disponível.</p>
@@ -87610,7 +87617,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "No Premium Tamboré, o verdadeiro luxo não é ter mais — é ter sob medida. O mesmo vale para o seu treino: personalização total, no seu endereço.",
     category: "Treinamento",
     date: "2026-07-12",
-    updatedAt: "2026-07-12",
+    updatedAt: "2026-07-22",
     readTime: "8 min",
     author: "Montinho",
     tags: ["personal trainer Premium Tamboré","treino personalizado","atendimento a domicílio","alto padrão","Tamboré"],
@@ -87627,7 +87634,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Quem vive no <strong>Premium Tamboré</strong> não escolheu o endereço por acaso: escolheu um padrão. E é curioso como esse padrão, presente na casa, no carro e nas escolhas do dia a dia, muitas vezes desaparece na hora de cuidar do próprio corpo — treinos genéricos, aplicativos de planilha pronta, orientação dividida com dezenas de alunos ao mesmo tempo. O corpo que sustenta tudo o mais acaba recebendo o serviço menos personalizado da sua vida.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-premium-tambore-infographic.svg" alt="Infográfico sobre Personal Trainer no Premium Tamboré — Montinho Personal Trainer" title="Personal Trainer no Premium Tamboré" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-premium-tambore.webp" alt="Personal trainer no Condomínio Premium Tamboré, região de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Premium Tamboré — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Premium Tamboré: treino inteligente, resultados reais.</figcaption>
 </figure>
 
 <p>Sim, o Premium Tamboré conta com atendimento de <strong>personal trainer a domicílio</strong>: Montinho, com mais de 20 anos de experiência, atende moradores do condomínio em casa ou na estrutura interna, com um programa desenhado exclusivamente para cada aluno.</p>
@@ -87684,7 +87692,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Você mora em um condomínio com alma de resort. A pergunta é: essa estrutura está gerando lazer ocasional ou saúde de verdade? Com método, ela vira as duas coisas.",
     category: "Treinamento",
     date: "2026-07-12",
-    updatedAt: "2026-07-12",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["personal trainer Resort Tamboré","treino no condomínio","estrutura de lazer","treino full body","Tamboré"],
@@ -87701,7 +87709,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Condomínios com estrutura de resort têm um destino comum e silencioso: a subutilização. No <strong>Resort Tamboré</strong>, a vida acontece cercada de possibilidades de lazer — e, ainda assim, muita gente atravessa o ano usando essa estrutura apenas em fins de semana ocasionais, enquanto a saúde segue no modo "segunda-feira que vem". A estrutura está lá. O que falta é um plano que a transforme em resultado.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-resort-tambore-infographic.svg" alt="Infográfico sobre Personal Trainer no Resort Tamboré: Treine Onde Vive — Montinho Personal Trainer" title="Personal Trainer no Resort Tamboré: Treine Onde Vive" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-resort-tambore.webp" alt="Personal trainer no Condomínio Resort Tamboré, região de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Resort Tamboré — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Resort Tamboré: treino inteligente, resultados reais.</figcaption>
 </figure>
 
 <p>Sim, o Resort Tamboré conta com atendimento de <strong>personal trainer a domicílio</strong>: Montinho, com mais de 20 anos de experiência na região de Alphaville e Tamboré, atende moradores dentro do condomínio — em casa, na academia interna e nas áreas de lazer — com treino estruturado e progressivo.</p>
@@ -87753,7 +87762,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Bem-estar de verdade não cabe em uma planilha de exercícios. Veja como o atendimento de personal trainer no Ghaia Tamboré integra treino, sono e hábitos em uma visão 360º.",
     category: "Treinamento",
     date: "2026-07-12",
-    updatedAt: "2026-07-12",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["personal trainer Ghaia Tamboré", "treino em casa", "bem-estar", "condomínio Tamboré", "hábitos saudáveis"],
@@ -87770,7 +87779,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você mora no <strong>Ghaia Tamboré</strong>, treina quando dá, dorme menos do que gostaria e sente que a energia não acompanha a rotina. O problema raramente é falta de esforço: é falta de sistema. Treinar sem olhar para sono, recuperação e hábitos é como encher um balde furado — o esforço entra, o resultado escapa.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-ghaia-tambore-infographic.svg" alt="Infográfico sobre Personal Trainer no Ghaia Tamboré: Treino em Casa — Montinho Personal Trainer" title="Personal Trainer no Ghaia Tamboré: Treino em Casa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-ghaia-tambore.webp" alt="Personal trainer no Condomínio Ghaia Tamboré, região de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio Ghaia Tamboré — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no Ghaia Tamboré: treino inteligente, resultados reais.</figcaption>
 </figure>
 
 
@@ -87829,7 +87839,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "No The Penthouses Tamboré, o treino também pode ser sob medida: atendimento um-a-um, plano exclusivo e acompanhamento de alto padrão, com substância.",
     category: "Treinamento",
     date: "2026-07-12",
-    updatedAt: "2026-07-12",
+    updatedAt: "2026-07-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["personal trainer The Penthouses Tamboré", "treino exclusivo", "atendimento a domicílio", "alto padrão", "hipertrofia"],
@@ -87846,7 +87856,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Quem escolhe morar no <strong>The Penthouses Tamboré</strong> não escolhe por acaso: escolhe por padrão de serviço, privacidade e atenção ao detalhe. E então vai treinar — e encontra o oposto: fichas genéricas, atenção dividida, o mesmo estímulo para todo mundo. O corpo que carrega sua agenda, suas reuniões e sua saúde merece o mesmo nível de curadoria do lugar onde você vive.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-the-penthouses-tambore-infographic.svg" alt="Infográfico sobre Personal Trainer no The Penthouses Tamboré — Montinho Personal Trainer" title="Personal Trainer no The Penthouses Tamboré" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-the-penthouses-tambore.webp" alt="Personal trainer no Condomínio The Penthouses Tamboré, região de Alphaville: atendimento personalizado, discreto e com horários flexíveis, no conforto do seu condomínio" title="Personal Trainer Condomínio The Penthouses Tamboré — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento exclusivo no The Penthouses Tamboré: treino inteligente, resultados reais.</figcaption>
 </figure>
 
 
