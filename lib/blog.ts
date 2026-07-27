@@ -93063,6 +93063,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Treinar 3 horas por dia não é mérito — muitas vezes é treino mal montado. O tempo ideal de treino depende do seu objetivo, do volume de séries e da sua rotina. Neste artigo eu mostro quanto tempo realmente faz diferença e quando mais vira menos.",
     category: "Treino",
     date: "2026-07-25",
+    updatedAt: "2026-07-27",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["duracao do treino", "musculacao", "hipertrofia", "rotina de treino", "volume de treino"],
@@ -93101,7 +93102,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Quanto tempo eu preciso treinar por dia?" — essa é uma das perguntas que mais escuto em mais de 20 anos de musculação. E a resposta honesta incomoda quem espera um número mágico: depende. Mas depende de coisas bem específicas, que dá para explicar.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-tempo-de-treino-por-dia-infographic.svg" alt="Infográfico sobre Quanto Tempo de Treino Por Dia é o Ideal? — Montinho Personal Trainer" title="Quanto Tempo de Treino Por Dia é o Ideal?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-tempo-de-treino-por-dia.webp" alt="Quanto tempo de treino por dia é o ideal: o volume manda, não o relógio — faixas por objetivo e nível de experiência" title="Quanto Tempo de Treino Por Dia é o Ideal? — Montinho Personal Trainer" width="1491" height="1055" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O volume manda, não o relógio: o tempo ideal de treino por objetivo.</figcaption>
 </figure>
 
 
@@ -93232,6 +93234,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O famoso aeróbico em jejum divide opiniões há décadas. A ciência já respondeu: você oxida mais gordura durante a sessão, mas isso não muda o resultado no fim do dia. Entenda por que o balanço calórico manda — e por que o jejum ainda pode ser uma escolha válida.",
     category: "Emagrecimento",
     date: "2026-07-25",
+    updatedAt: "2026-07-27",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["cardio em jejum", "aerobico em jejum", "emagrecimento", "queima de gordura", "deficit calorico"],
@@ -93270,7 +93273,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Acordar, tomar um café preto e sair para o aeróbico de estômago vazio: o cardio em jejum é quase um ritual no mundo fitness. A promessa é sedutora — sem comida no sistema, o corpo seria "obrigado" a queimar gordura.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/cardio-em-jejum-emagrece-infographic.svg" alt="Infográfico sobre Cardio em Jejum Emagrece Mais? O Que a Ciência Diz — Montinho Personal Trainer" title="Cardio em Jejum Emagrece Mais? O Que a Ciência Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/cardio-em-jejum-emagrece.webp" alt="Cardio em jejum emagrece mais? Oxida mais gordura durante a sessão, mas o balanço calórico do dia é o que decide o resultado" title="Cardio em Jejum Emagrece Mais? — Montinho Personal Trainer" width="1491" height="1055" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Cardio em jejum: preferência válida, mas quem decide o emagrecimento é o déficit.</figcaption>
 </figure>
 
 
@@ -93387,6 +93391,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Whey não é vilão nem milagre: é proteína do leite em pó. Se ele te faz estourar as calorias do dia, engorda como qualquer alimento. Se te ajuda a bater a meta de proteína, é um aliado prático. Neste artigo eu desmonto o mito dos dois lados.",
     category: "Nutrição",
     date: "2026-07-25",
+    updatedAt: "2026-07-27",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["whey protein", "suplementos", "proteina", "emagrecimento", "nutricao"],
@@ -93425,7 +93430,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Tem gente que evita whey com medo de engordar. Tem gente que toma whey achando que ele emagrece ou "vira músculo" sozinho. Os dois grupos estão cometendo o mesmo erro: tratar um alimento como se fosse algo mágico — para o bem ou para o mal.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/whey-protein-engorda-infographic.svg" alt="Infográfico sobre Whey Protein Engorda? Entenda de Uma Vez — Montinho Personal Trainer" title="Whey Protein Engorda? Entenda de Uma Vez" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/whey-protein-engorda.webp" alt="Whey protein engorda? Whey é proteína em pó: engorda se estourar as calorias e ajuda quando completa a meta de proteína do dia" title="Whey Protein Engorda? — Montinho Personal Trainer" width="1491" height="1055" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Whey é comida em pó: o que engorda é o excesso de calorias, não o suplemento.</figcaption>
 </figure>
 
 
@@ -93555,6 +93561,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Durante décadas ouvimos que comer de 3 em 3 horas 'mantém o metabolismo acelerado'. A ciência já mostrou que a frequência das refeições não muda o gasto calórico. Mas isso não significa que a estratégia seja inútil — entenda para quem ela pode funcionar.",
     category: "Nutrição",
     date: "2026-07-25",
+    updatedAt: "2026-07-27",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["frequencia de refeicoes", "comer de 3 em 3 horas", "metabolismo", "emagrecimento", "saciedade"],
@@ -93593,7 +93600,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Você precisa comer de 3 em 3 horas para manter o metabolismo ativo." Se você tem mais de 25 anos, provavelmente já ouviu isso de nutricionista, professor de academia, revista ou da sua mãe. Foi um dos conselhos mais repetidos da história da nutrição.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/comer-de-3-em-3-horas-infographic.svg" alt="Infográfico sobre Comer de 3 em 3 Horas Emagrece ou é Mito? — Montinho Personal Trainer" title="Comer de 3 em 3 Horas Emagrece ou é Mito?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/comer-de-3-em-3-horas.webp" alt="Comer de 3 em 3 horas emagrece ou é mito? A frequência não acelera o metabolismo — o total do dia decide; para alguns, ajuda no controle da fome" title="Comer de 3 em 3 Horas: Emagrece ou é Mito? — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A frequência das refeições não acelera o metabolismo — o total do dia é o que conta.</figcaption>
 </figure>
 
 
@@ -93712,6 +93720,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "A gordura visceral não aparece no espelho do jeito que você imagina, mas é a que mais preocupa. Ela envolve órgãos como fígado e intestino e está ligada a diabetes, pressão alta e inflamação. A boa notícia: ela responde muito bem a treino e déficit calórico.",
     category: "Saúde",
     date: "2026-07-27",
+    updatedAt: "2026-07-27",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["gordura visceral", "saúde metabólica", "emagrecimento", "barriga", "exercício"],
@@ -93750,7 +93759,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Existe um tipo de gordura que não dá para beliscar. Ela fica por dentro, envolvendo fígado, intestino e outros órgãos da região abdominal. É a gordura visceral — e, entre todos os tipos de gordura do corpo, é a que mais preocupa quem estuda saúde metabólica.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/gordura-visceral-como-eliminar-infographic.svg" alt="Infográfico sobre Gordura Visceral: O Perigo Invisível e Como Eliminar — Montinho Personal Trainer" title="Gordura Visceral: O Perigo Invisível e Como Eliminar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/gordura-visceral-como-eliminar.webp" alt="Gordura visceral, o perigo invisível: riscos metabólicos e como eliminar com déficit calórico, treino de força e cardio" title="Gordura Visceral: O Perigo Invisível — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A gordura que não aparece no espelho, mas aparece nos exames — e como eliminar.</figcaption>
 </figure>
 
 
@@ -93877,6 +93887,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Muitas mulheres sentem que o corpo mudou da noite para o dia na menopausa: a gordura migra para a barriga e o que funcionava antes parece não funcionar mais. A queda hormonal explica parte disso — mas engordar não é destino. Veja o que a ciência mostra e o que fazer.",
     category: "Saúde",
     date: "2026-07-27",
+    updatedAt: "2026-07-27",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["menopausa", "emagrecimento feminino", "hormônios", "musculação", "saúde da mulher"],
@@ -93915,7 +93926,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Depois da menopausa, engordei sem mudar nada na alimentação." Eu escuto variações dessa frase com frequência de alunas na faixa dos 45 aos 60 anos. E a pergunta que vem junto é sempre a mesma: a menopausa engorda ou é desculpa?</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/menopausa-engorda-infographic.svg" alt="Infográfico sobre Menopausa Engorda? Por Que o Corpo Muda e o Que Fazer — Montinho Personal Trainer" title="Menopausa Engorda? Por Que o Corpo Muda e o Que Fazer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/menopausa-engorda.webp" alt="Menopausa engorda? A queda hormonal muda a distribuição de gordura e massa magra, mas engordar não é inevitável — treino de força, proteína e sono fazem a diferença" title="Menopausa Engorda? — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A menopausa muda o corpo, mas engordar não é inevitável.</figcaption>
 </figure>
 
 
@@ -94037,6 +94049,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Acordar com a barriga chapada e terminar o dia parecendo grávida de meses: isso é inchaço, não gordura. Mas como ter certeza? Veja os sinais que diferenciam os dois, as causas mais comuns de estufamento e quando o caso é para médico.",
     category: "Emagrecimento",
     date: "2026-07-27",
+    updatedAt: "2026-07-27",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["barriga inchada", "gordura abdominal", "digestão", "emagrecimento", "alimentação"],
@@ -94075,7 +94088,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Você acorda com a barriga relativamente chapada. Lá pelas 18h, parece outra pessoa: calça apertando, abdômen estufado, desconforto. Aí vem a dúvida clássica: isso é gordura ou é inchaço?</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/barriga-inchada-ou-gordura-infographic.svg" alt="Infográfico sobre Barriga Inchada ou Gordura? Como Diferenciar — Montinho Personal Trainer" title="Barriga Inchada ou Gordura? Como Diferenciar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/barriga-inchada-ou-gordura.webp" alt="Barriga inchada ou gordura: como diferenciar — inchaço flutua ao longo do dia, gordura é constante; causas e o que fazer em cada caso" title="Barriga Inchada ou Gordura? — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Inchaço flutua, gordura é constante: aprenda a diferenciar e o que fazer.</figcaption>
 </figure>
 
 
@@ -94209,6 +94223,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Todo mundo quer saber o número: quantos quilos dá para perder em um mês? A resposta honesta depende do seu peso atual, mas a faixa sustentável fica entre 2 e 4kg mensais para a maioria. Perdi mais de 40kg respeitando essa matemática — e explico por que ela funciona.",
     category: "Emagrecimento",
     date: "2026-07-27",
+    updatedAt: "2026-07-27",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["emagrecimento", "perda de peso", "déficit calórico", "metas realistas", "balança"],
@@ -94247,7 +94262,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Essa talvez seja a pergunta que eu mais escuto na primeira conversa com um aluno: "em quanto tempo eu perco X quilos?". E eu entendo a ansiedade — quando decidi emagrecer, eu também queria uma data.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quantos-quilos-da-para-perder-por-mes-infographic.svg" alt="Infográfico sobre Quantos Quilos Dá Para Perder Por Mês? A Velocidade Real — Montinho Personal Trainer" title="Quantos Quilos Dá Para Perder Por Mês? A Velocidade Real" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quantos-quilos-da-para-perder-por-mes.webp" alt="Quantos quilos dá para perder por mês: faixas realistas de 0,5 a 1% do peso por semana — 2 a 4kg por mês de forma sustentável" title="Quantos Quilos Dá Para Perder Por Mês? — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O ritmo realista: 2 a 4kg por mês, sem efeito sanfona.</figcaption>
 </figure>
 
 
@@ -94369,6 +94385,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O óleo de coco já foi vendido como termogênico natural, acelerador de metabolismo e aliado número um da dieta. A ciência conta outra história: é uma gordura saturada com 9 calorias por grama e nenhuma evidência sólida de emagrecimento. Vamos desmontar o mito sem terrorismo.",
     category: "Nutrição",
     date: "2026-07-27",
+    updatedAt: "2026-07-27",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["óleo de coco", "mitos da nutrição", "emagrecimento", "gordura saturada", "dieta"],
@@ -94407,7 +94424,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Poucos alimentos tiveram uma ascensão de marketing tão impressionante quanto o óleo de coco. Em poucos anos, ele saiu da prateleira comum e virou "superalimento": queimador de gordura, acelerador do metabolismo, colherada milagrosa no café. Eu perdi a conta de quantos alunos chegaram tomando óleo de coco puro "para emagrecer".</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/oleo-de-coco-emagrece-infographic.svg" alt="Infográfico sobre Óleo de Coco Emagrece? O Mito Que Não Morre — Montinho Personal Trainer" title="Óleo de Coco Emagrece? O Mito Que Não Morre" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/oleo-de-coco-emagrece.webp" alt="Óleo de coco emagrece? Não há evidência de emagrecimento — é gordura saturada com 120 kcal por colher; uso culinário eventual ok, milagre não" title="Óleo de Coco Emagrece? — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">120 kcal por colher e nenhuma evidência de emagrecimento: o mito do óleo de coco.</figcaption>
 </figure>
 
 
