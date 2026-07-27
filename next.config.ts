@@ -10,6 +10,17 @@ const nextConfig: NextConfig = {
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],
       },
+      // Assets internos não são conteúdo indexável: o Google pode baixá-los
+      // para renderizar as páginas, mas o noindex os tira do relatório
+      // "rastreada, mas não indexada" do Search Console.
+      {
+        source: "/_next/static/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
+      },
+      {
+        source: "/favicon.ico",
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
+      },
     ];
   },
   async redirects() {
