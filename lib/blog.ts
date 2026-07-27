@@ -76907,7 +76907,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Smart Fit e Bluefit disputam o mesmo público low cost. Veja um comparativo honesto para decidir qual faz mais sentido para a sua rotina em Alphaville e Barueri.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-07-27",
     readTime: "8 min",
     author: "Montinho",
     tags: ["smart fit","bluefit","academia low cost","alphaville","barueri"],
@@ -76924,7 +76924,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você está entre <strong>Smart Fit e Bluefit</strong> e tem medo de escolher errado. Faz sentido: mensalidade paga e academia não frequentada é o jeito mais comum de perder dinheiro com saúde em Alphaville e Barueri.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/smart-fit-vs-bluefit-infographic.svg" alt="Infográfico sobre Smart Fit vs Bluefit: Qual Vale Mais a Pena? — Montinho Personal Trainer" title="Smart Fit vs Bluefit: Qual Vale Mais a Pena?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/smart-fit-vs-bluefit.webp" alt="Smart Fit vs Bluefit: qual vale mais a pena — comparativo de estrutura, preço e lotação" title="Smart Fit vs Bluefit: Qual Vale Mais a Pena? — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Smart Fit ou Bluefit: estrutura, preço e lotação comparados.</figcaption>
 </figure>
 
 <p>E o pior não é o dinheiro. É o ciclo: matricula, vai duas semanas, o horário de pico lota, o treino não rende, você desiste — e culpa a academia errada, quando o problema era a escolha (ou o treino).</p>
@@ -76992,7 +76993,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Smart Fit e Bodytech representam dois modelos opostos de academia. Entenda as diferenças reais entre low cost e premium antes de assinar qualquer plano.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-07-27",
     readTime: "8 min",
     author: "Montinho",
     tags: ["smart fit","bodytech","academia premium","academia low cost","alphaville"],
@@ -77009,7 +77010,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Pagar caro numa academia que você mal usa dói. Pagar barato numa academia onde você não evolui também. Entre <strong>Smart Fit e Bodytech</strong>, o risco de errar existe nos dois extremos.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/smart-fit-vs-bodytech-infographic.svg" alt="Infográfico sobre Smart Fit vs Bodytech: Low Cost ou Premium? — Montinho Personal Trainer" title="Smart Fit vs Bodytech: Low Cost ou Premium?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/smart-fit-vs-bodytech.webp" alt="Smart Fit vs Bodytech: low cost ou premium — comparativo de estrutura, preço e experiência para decidir" title="Smart Fit vs Bodytech: Low Cost ou Premium? — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Smart Fit ou Bodytech: low cost ou premium — qual faz sentido para você?</figcaption>
 </figure>
 
 <p>E em Alphaville esse dilema é clássico: o executivo sai do escritório no Centro Industrial e Empresarial, passa pelo <strong>Iguatemi Alphaville</strong>, e se pergunta se vale pagar o premium — ou se o low cost do caminho resolve.</p>
@@ -77067,7 +77069,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Ironberg e NitroGym atraem quem leva musculação a sério em Alphaville. Compare a cultura, o perfil e o público de cada uma antes de escolher.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-07-27",
     readTime: "8 min",
     author: "Montinho",
     tags: ["ironberg","nitrogym","academia alphaville","musculação","hipertrofia"],
@@ -77084,7 +77086,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Se você pesquisa <strong>Ironberg vs NitroGym</strong>, você não quer "fazer um exercício". Você quer treinar pesado — e tem medo de pagar caro numa academia que não entrega o ambiente que promete.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/ironberg-vs-nitrogym-alphaville-infographic.svg" alt="Infográfico sobre Ironberg vs NitroGym em Alphaville: Comparativo — Montinho Personal Trainer" title="Ironberg vs NitroGym em Alphaville: Comparativo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/ironberg-vs-nitrogym-alphaville.webp" alt="Ironberg vs Nitrogym Alphaville: comparativo de estrutura, ambiente, público e experiência — qual combina mais com você" title="Ironberg vs Nitrogym Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Ironberg ou Nitrogym: estrutura, ambiente, público e experiência.</figcaption>
 </figure>
 
 <p>A frustração é real: sair de uma rede comum buscando estrutura de bodybuilding, pagar mais, e descobrir que o gargalo continuava sendo o próprio treino, não a academia.</p>
@@ -79032,7 +79035,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "A Bluefit aposta no modelo econômico com estrutura ampla. Veja para quem ela é indicada em Alphaville e como tirar resultado de verdade da mensalidade.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-07-27",
     readTime: "8 min",
     author: "Montinho",
     tags: ["bluefit","academia em alphaville","musculação","low cost","tamboré"],
@@ -79049,7 +79052,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Escolher academia em Alphaville parece simples até você perceber o custo do erro: plano assinado, rotina que não engata e mais um ano adiado. Se você está avaliando a <strong>Bluefit Alphaville</strong>, essa análise existe para evitar exatamente isso.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/bluefit-alphaville-infographic.svg" alt="Infográfico sobre Bluefit Alphaville: Análise Completa — Montinho Personal Trainer" title="Bluefit Alphaville: Análise Completa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/bluefit-alphaville.webp" alt="Bluefit Alphaville vale a pena? Estrutura, custo-benefício, preço e lotação da unidade" title="Bluefit Alphaville Vale a Pena? — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Bluefit Alphaville: estrutura, preço e lotação — vale a pena?</figcaption>
 </figure>
 
 <p>Porque o problema raramente é a academia em si. É assinar um modelo que não combina com o seu momento — e descobrir isso só depois da terceira semana de desânimo.</p>
@@ -79212,7 +79216,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "A Bodytech representa o padrão premium nacional. Veja o que esse modelo entrega em Alphaville, para quem faz sentido e quando o investimento se paga.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-07-27",
     readTime: "8 min",
     author: "Montinho",
     tags: ["bodytech","academia premium","academia em alphaville","musculação","tamboré"],
@@ -79229,7 +79233,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Pagar caro em academia dói duas vezes quando você não usa: no boleto e na consciência. Se você está considerando a <strong>Bodytech Alphaville</strong>, a pergunta certa não é "é boa?" — é "eu vou usar o que ela cobra?".</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/bodytech-alphaville-infographic.svg" alt="Infográfico sobre Bodytech Alphaville: Experiência Premium — Montinho Personal Trainer" title="Bodytech Alphaville: Experiência Premium" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/bodytech-alphaville.webp" alt="Bodytech Alphaville: experiência premium — estrutura, serviços e para quem vale a pena" title="Bodytech Alphaville: Experiência Premium — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Bodytech Alphaville: a experiência premium da região.</figcaption>
 </figure>
 
 <p>Porque o erro clássico do premium não é a qualidade: é assinar um clube completo e usar 15% dele. Aí a mensalidade vira aluguel de status, não investimento em saúde.</p>
@@ -79302,7 +79307,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "O Bio Ritmo é o braço premium da holding da Smart Fit. Veja o que isso significa na prática em Alphaville e para quem o modelo compensa.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-07-27",
     readTime: "8 min",
     author: "Montinho",
     tags: ["bio ritmo","academia premium","academia em alphaville","musculação","barueri"],
@@ -79319,7 +79324,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você conhece a Smart Fit. Mas quando pesquisa <strong>Bio Ritmo Alphaville</strong>, surge a dúvida: pagar mais pela marca premium da mesma holding vale a pena — ou é a mesma academia com carpete melhor?</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/bio-ritmo-alphaville-infographic.svg" alt="Infográfico sobre Bio Ritmo Alphaville: Análise Completa — Montinho Personal Trainer" title="Bio Ritmo Alphaville: Análise Completa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/bio-ritmo-alphaville.webp" alt="Bio Ritmo Alphaville: estrutura, custo-benefício e experiência de treino na unidade" title="Bio Ritmo Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Bio Ritmo Alphaville: estrutura, preço e experiência de treino.</figcaption>
 </figure>
 
 <p>A dúvida é justa. Escolher errado aqui significa ou pagar premium por algo que você não usa, ou economizar e sentir falta do que fazia você aparecer. Nos dois casos, quem perde é a sua constância.</p>
@@ -79480,7 +79486,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Uma análise honesta da NitroGym Alphaville: para quem é indicada, prós, contras e como avaliar se ela combina com o seu objetivo.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-07-27",
     readTime: "8 min",
     author: "Montinho",
     tags: ["nitrogym","academia em alphaville","musculação","alphaville","avaliação de academia"],
@@ -79497,7 +79503,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Escolher a academia errada em Alphaville custa caro — e não é só a <strong>mensalidade</strong>. É a matrícula paga, os três meses de plano e, pior, a motivação que evapora quando o treino não encaixa na sua rotina.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/nitrogym-alphaville-infographic.svg" alt="Infográfico sobre NitroGym Alphaville: Análise Completa — Montinho Personal Trainer" title="NitroGym Alphaville: Análise Completa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/nitrogym-alphaville.webp" alt="Nitrogym Alphaville: estrutura, ambiente e experiência de treino na unidade" title="Nitrogym Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Nitrogym Alphaville: estrutura, ambiente e experiência de treino.</figcaption>
 </figure>
 
 <p>A agitação é real: você fecha um plano anual empolgado, treina duas semanas, o horário aperta, o ambiente não combina, e a academia vira mais um débito automático que dói todo mês.</p>
@@ -80491,7 +80498,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "A Bluefit aposta no modelo low-cost com estrutura ampla. Veja se ela combina com seu perfil em Barueri e como transformar mensalidade em resultado.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-07-27",
     readTime: "8 min",
     author: "Montinho",
     tags: ["bluefit barueri","academia em barueri","academia low cost","musculação barueri","plano de academia"],
@@ -80508,7 +80515,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Assinar academia em Barueri virou decisão de supermercado: prateleiras cheias de redes low-cost, todas parecidas, todas prometendo o mesmo. E quando tudo parece igual, a gente escolhe pelo preço — e às vezes erra pelo que não está na etiqueta.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/bluefit-barueri-infographic.svg" alt="Infográfico sobre Bluefit Barueri: Análise Completa — Montinho Personal Trainer" title="Bluefit Barueri: Análise Completa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/bluefit-barueri.webp" alt="Bluefit Barueri vale a pena? Estrutura, custo-benefício, preço e lotação da unidade" title="Bluefit Barueri Vale a Pena? — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Bluefit Barueri: estrutura, preço e lotação — vale a pena?</figcaption>
 </figure>
 
 <p>O erro custa caro: <strong>plano de 12 meses pago e três semanas de uso</strong>. Não porque a academia é ruim, mas porque ela não combinava com o que você precisava.</p>
@@ -80577,7 +80585,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "A Panobianco é uma rede tradicional do interior paulista com proposta de custo-benefício. Veja o que esperar dela em Barueri e se combina com seu perfil.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-07-27",
     readTime: "8 min",
     author: "Montinho",
     tags: ["panobianco barueri","academia em barueri","musculação barueri","academia custo-benefício","plano de academia barueri"],
@@ -80594,7 +80602,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você pesquisa "academia em Barueri", aparecem dez opções e todas dizem a mesma coisa: equipamentos novos, ambiente motivador, planos que cabem no bolso. Como decidir sem cair em marketing?</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/panobianco-barueri-infographic.svg" alt="Infográfico sobre Panobianco Barueri: O Que Esperar — Montinho Personal Trainer" title="Panobianco Barueri: O Que Esperar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/panobianco-barueri.webp" alt="Panobianco Barueri: estrutura, custo-benefício e experiência de treino na unidade" title="Panobianco Barueri — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Panobianco Barueri: estrutura, preço e experiência de treino.</figcaption>
 </figure>
 
 <p>Decidir mal significa pagar por meses de academia que você não frequenta — ou frequenta sem sair do lugar. <strong>Dinheiro perdido dói; tempo perdido dói mais.</strong></p>
