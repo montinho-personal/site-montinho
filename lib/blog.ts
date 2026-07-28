@@ -96336,8 +96336,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Se você sente que o fim de semana sempre destrói seu progresso, isso é um problema de estratégia, não de força de vontade. Na <a href="/consultoria">consultoria</a>, monto seu plano de treino e organizo suas metas considerando sua vida real — churrasco, happy hour e tudo.</p>
 
-<p>Eu vivi o ciclo do happy hour que anulava a semana inteira — no vídeo abaixo, do meu canal, falo sobre quebrar esse ciclo:</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>Para aprofundar no impacto estético da cerveja no corpo — do acúmulo de gordura à retenção —, veja a análise completa no vídeo:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/GTKcN6-7-Bg?rel=0" title="Como a cerveja impacta na parte estética do corpo — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <h2>Conclusão</h2>
 
