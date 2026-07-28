@@ -96241,7 +96241,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Cerveja engorda? A resposta curta: a cerveja tem calorias, e calorias em excesso engordam. Mas a famosa "barriga de chope" não é causada por uma substância mágica da cerveja que deposita gordura no abdômen. Ela é o resultado de um excesso calórico crônico — no qual a cerveja costuma ser sócia majoritária, junto com os petiscos que a acompanham.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/cerveja-engorda-infographic.svg" alt="Infográfico sobre Cerveja Engorda? A Verdade Sobre a Barriga de Chope — Montinho Personal Trainer" title="Cerveja Engorda? A Verdade Sobre a Barriga de Chope" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/cerveja-engorda.webp" alt="Cerveja engorda? A verdade sobre a barriga de chope: o excesso calórico leva ao ganho de gordura — álcool tem calorias vazias e menor saciedade, e a gordura abdominal vem do estilo de vida, não apenas da cerveja" title="Cerveja Engorda? A Verdade Sobre a Barriga de Chope — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A barriga de chope é resultado do estilo de vida — não apenas da cerveja.</figcaption>
 </figure>
 
 
