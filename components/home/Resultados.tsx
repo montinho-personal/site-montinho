@@ -17,9 +17,9 @@ const resultados = [
   },
   {
     name: "Natália N.",
-    result: "−10kg em 9 meses",
-    description: "Transformou o corpo. Além de perder 10kg de gordura, ganhou massa magra e melhorou muito a composição corporal.",
-    photo: "/antes-depois-montinho-personal-trainer-3.jpg",
+    result: "−13kg em 9 meses",
+    description: "Transformou o corpo. Além de perder 13kg de gordura, ganhou massa magra e melhorou muito a composição corporal.",
+    photo: "/antes-depois-natalia-montinho-personal.webp",
   },
   {
     name: "Elisa C.",
