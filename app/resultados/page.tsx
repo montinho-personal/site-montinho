@@ -62,9 +62,9 @@ const resultados: ResultadoItem[] = [
     name: "Natália Nascimento",
     age: "40 anos",
     duration: "9 meses",
-    result: "−10kg",
+    result: "−13kg",
     modality: "Personal Presencial · Alphaville",
-    photo: "/antes-depois-montinho-personal-trainer-3.jpg",
+    photo: "/antes-depois-natalia-montinho-personal.webp",
     description:
       "Natália já treinava há anos e sabia exatamente como executar os exercícios. Já havia conquistado um ótimo físico, mas vivia presa ao efeito sanfona. O que faltava não era esforço, e sim um planejamento estruturado, uma estratégia de treino e o suporte necessário para confiar no processo. Com consistência e acompanhamento, voltou a evoluir e conquistou uma transformação duradoura.",
     quote:
