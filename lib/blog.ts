@@ -730,7 +730,7 @@ export const blogPosts = ([
       "Todo mundo quer saber quanto tempo vai levar. A resposta honesta depende de fatores que poucos explicam direito. Veja o que realmente acontece mês a mês no seu corpo.",
     category: "Hipertrofia",
     date: "2026-06-25",
-    updatedAt: "2026-06-25",
+    updatedAt: "2026-07-28",
     readTime: "12 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -789,7 +789,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-tempo-para-ganhar-massa-muscular-infographic.svg" alt="Infográfico sobre Quanto Tempo Demora Para Ganhar Massa Muscular? A Resposta Honesta — Montinho Personal Trainer" title="Quanto Tempo Demora Para Ganhar Massa Muscular? A Resposta H" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-tempo-para-ganhar-massa-muscular.webp" alt="Quanto tempo para ganhar massa muscular: prazos reais por nível de experiência e o que acelera ou trava a hipertrofia" title="Quanto Tempo Para Ganhar Massa Muscular — Montinho Personal Trainer" width="1491" height="1055" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Prazos reais da hipertrofia: o que esperar em 3, 6 e 12 meses de treino.</figcaption>
 </figure>
 <p>É uma pergunta legítima. Mas a maioria das respostas que circulam na internet é ou vaga demais ("depende de cada pessoa") ou otimista demais ("em 4 semanas seu corpo muda"). Nenhuma das duas te ajuda de verdade.</p>
 
@@ -3940,7 +3941,7 @@ export const blogPosts = ([
       "Montar um treino de hipertrofia envolve mais do que escolher exercícios. Volume, frequência, divisão e progressão precisam funcionar juntos — e aqui está como fazer isso na prática.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-28",
     readTime: "14 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -3997,7 +3998,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-montar-treino-de-hipertrofia-infographic.svg" alt="Infográfico sobre Como Montar um Treino de Hipertrofia: O Guia Prático Completo — Montinho Personal Trainer" title="Como Montar um Treino de Hipertrofia: O Guia Prático Complet" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-montar-treino-de-hipertrofia.webp" alt="Como montar treino de hipertrofia: divisão, volume, intensidade, progressão de carga e descanso organizados do jeito certo" title="Como Montar Treino de Hipertrofia — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Divisão, volume, progressão e descanso: a estrutura de um treino que faz crescer.</figcaption>
 </figure>
 <p>Este é um guia prático. Não apenas teoria — você vai sair daqui sabendo exatamente como estruturar seu treino de hipertrofia, com exemplos concretos de divisões para 3, 4 e 5 dias de treino por semana.</p>
 
@@ -7247,7 +7249,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/cardio-antes-ou-depois-da-musculacao-infographic.svg" alt="Infográfico sobre Cardio Antes ou Depois da Musculação? A Resposta Definitiva — Montinho Personal Trainer" title="Cardio Antes ou Depois da Musculação? A Resposta Definitiva" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/cardio-antes-ou-depois-da-musculacao.webp" alt="Cardio antes ou depois da musculação? Depois preserva força e desempenho — antes só em casos específicos; o objetivo decide" title="Cardio Antes ou Depois da Musculação — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Na dúvida, musculação primeiro: preserve força para o que constrói músculo.</figcaption>
 </figure>
 <p>Vamos direto ao ponto: <strong>não existe uma ordem universalmente superior</strong>. A ordem ideal depende do seu objetivo principal. E entender por quê vai transformar a qualidade dos seus treinos.</p>
 
@@ -7395,7 +7398,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     `,
     category: "Emagrecimento",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-28",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["cardio", "musculação", "emagrecimento", "treino", "ordem do treino"],
@@ -10354,6 +10357,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "A maioria dos usuários de Mounjaro prefere só caminhar. Mas se o objetivo é emagrecer sem perder músculo, a musculação deve ser prioridade. Veja por que — e como combinar os dois da forma certa.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-28",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -10411,7 +10415,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/cardio-ou-musculacao-mounjaro-infographic.svg" alt="Infográfico sobre Cardio ou Musculação Durante o Uso de Mounjaro? — Montinho Personal Trainer" title="Cardio ou Musculação Durante o Uso de Mounjaro?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/cardio-ou-musculacao-mounjaro.webp" alt="Cardio ou musculação no Mounjaro? A musculação preserva massa magra durante o emagrecimento acelerado — o cardio complementa" title="Cardio ou Musculação no Mounjaro — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">No Mounjaro, musculação é prioridade: preserva o músculo que a balança leva.</figcaption>
 </figure>
 <p>O problema é que caminhada, por mais saudável que seja, não é suficiente para preservar a massa muscular durante o emagrecimento acelerado que o Mounjaro provoca. E perder músculo junto com gordura é exatamente o que você não quer — pois compromete o metabolismo, piora a aparência mesmo magro(a) e facilita o reganho de peso quando o tratamento for encerrado.</p>
 
@@ -10730,6 +10735,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "A Retatrutida é o agonista triplo mais potente disponível e pode causar perda de peso acima de 20%. Sem as estratégias certas, boa parte dessa perda vem dos músculos. Veja o protocolo completo para preservar cada grama de massa magra.",
     category: "Emagrecimento",
     date: "2026-06-26",
+    updatedAt: "2026-07-28",
     readTime: "11 min",
     author: "Montinho",
     tags: [
@@ -10788,7 +10794,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-evitar-perder-massa-muscular-retatrutida-infographic.svg" alt="Infográfico sobre Como Evitar Perder Massa Muscular Usando Retatrutida — Montinho Personal Trainer" title="Como Evitar Perder Massa Muscular Usando Retatrutida" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-evitar-perder-massa-muscular-retatrutida.webp" alt="Como evitar perder massa muscular na retatrutida: treino de força, proteína alta e monitoramento da composição corporal" title="Como Evitar Perder Massa Muscular na Retatrutida — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Preservar músculo na retatrutida: força, proteína e acompanhamento.</figcaption>
 </figure>
 <p>Esse poder extraordinário de emagrecimento traz um risco igualmente extraordinário: <strong>perda acelerada de massa muscular</strong>. Sem as contramedidas corretas, estima-se que 25 a 40% do peso perdido em déficits calóricos severos pode ser proveniente de tecido magro — músculos, água intramuscular e tecido conectivo. No contexto da Retatrutida, onde o déficit calórico é imenso e contínuo, essa proporção pode ser ainda maior.</p>
 
@@ -11776,6 +11783,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Quem usa Retatrutida tende a ir para a caminhada. Faz sentido — mas não é o suficiente. Entenda por que a musculação é indispensável e como combinar cardio e força da forma certa.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-28",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -11833,7 +11841,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/cardio-ou-musculacao-retatrutida-infographic.svg" alt="Infográfico sobre Cardio ou Musculação Usando Retatrutida? — Montinho Personal Trainer" title="Cardio ou Musculação Usando Retatrutida?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/cardio-ou-musculacao-retatrutida.webp" alt="Cardio ou musculação na retatrutida? A musculação preserva massa magra durante o emagrecimento acelerado — o cardio complementa" title="Cardio ou Musculação na Retatrutida — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Na retatrutida, musculação é prioridade: preserva o músculo que a balança leva.</figcaption>
 </figure>
 <p>O problema é quando a caminhada se torna a única forma de exercício. Porque quando se trata de composição corporal — ou seja, a proporção entre músculo e gordura no seu corpo —, o cardio sozinho não é suficiente. E durante o emagrecimento acelerado provocado pela Retatrutida, isso importa muito mais do que a maioria imagina.</p>
 
@@ -69982,7 +69991,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     excerpt: "O inverno oferece condições ideais para ganhar massa muscular. Veja como estruturar treino e alimentação para aproveitar ao máximo essa época do ano.",
     category: "Treinamento",
     date: "2026-05-06",
-    updatedAt: "2026-05-06",
+    updatedAt: "2026-07-28",
     readTime: "8 min",
     author: "Montinho",
     tags: ["ganho de massa muscular", "inverno", "bulking", "hipertrofia", "treino de força"],
@@ -69998,7 +70007,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>O mercado fitness vendeu uma mentira conveniente: a de que corpo se constrói no verão. Aí chega o frio, a academia esvazia, e a maioria aperta o botão de pausa — para recomeçar do zero em setembro, frustrada, correndo atrás do próprio rabo.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-ganhar-massa-muscular-no-inverno-infographic.svg" alt="Infográfico sobre Como Ganhar Massa Muscular no Inverno — Montinho Personal Trainer" title="Como Ganhar Massa Muscular no Inverno" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-ganhar-massa-muscular-no-inverno.webp" alt="Como ganhar massa muscular no inverno: treino, superávit controlado e consistência na estação ideal para crescer" title="Como Ganhar Massa Muscular no Inverno — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O inverno é a estação de construção: treino pesado e superávit controlado.</figcaption>
 </figure>
 
 <p>A verdade é o oposto. <strong>O inverno é a estação da construção.</strong> Apetite naturalmente maior, zero pressão de espelho, sono mais profundo. Quem entende isso não sobrevive ao frio — usa o frio. O corpo do verão nasce em julho.</p>
@@ -70079,7 +70089,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     excerpt: "O bulking de inverno é estratégia ou mito? Entenda quando e como fazer um ciclo de ganho muscular de forma inteligente e sem acumular gordura excessiva.",
     category: "Treinamento",
     date: "2026-05-13",
-    updatedAt: "2026-05-13",
+    updatedAt: "2026-07-28",
     readTime: "7 min",
     author: "Montinho",
     tags: ["bulking", "inverno", "ganho de massa", "hipertrofia", "ciclo de treino"],
@@ -70094,7 +70104,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>Chega o frio e a academia inteira repete o mesmo mantra: "inverno é época de bulking, pode comer". E todo ano o mesmo filme: gente que confundiu ganhar massa com ganhar barriga — e passa a primavera inteira tentando desfazer o estrago de "estratégia" que era só desculpa.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/melhor-epoca-para-fazer-bulking-infographic.svg" alt="Infográfico sobre Melhor Época para Fazer Bulking: Inverno Vale a Pena? — Montinho Personal Trainer" title="Melhor Época para Fazer Bulking: Inverno Vale a Pena?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/melhor-epoca-para-fazer-bulking.webp" alt="Melhor época para fazer bulking: por que o inverno favorece o ganho de massa muscular e como planejar o ciclo" title="Melhor Época Para Fazer Bulking — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Planeje o bulking na época certa e chegue ao verão com o shape construído.</figcaption>
 </figure>
 
 <p>Então vale ou não vale fazer bulking no inverno? Vale — mas não pelo motivo que te venderam. Bulking é uma fase deliberada de construção: treino de força pesado, comida acima do gasto, recuperação de sobra. Bem feito, entrega músculo de verdade com o mínimo de gordura. <strong>Bulking não é permissão para comer. É projeto para crescer.</strong></p>
@@ -70176,7 +70187,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     excerpt: "Fazer bulking no inverno é uma estratégia real ou apenas um mito popular? Veja a análise completa com prós, contras e como decidir para o seu caso.",
     category: "Treinamento",
     date: "2026-05-20",
-    updatedAt: "2026-05-20",
+    updatedAt: "2026-07-28",
     readTime: "7 min",
     author: "Montinho",
     tags: ["bulking inverno", "ganho de massa", "hipertrofia", "nutrição esportiva", "composição corporal"],
@@ -70192,7 +70203,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>Todo mês de maio, a academia se divide em duas tribos: os que juram que "inverno é época de crescer" e os que acham que isso é desculpa para comer sem culpa. Os dois estão errados pela metade — e é essa meia-verdade que faz tanta gente terminar agosto com mais gordura e o mesmo músculo de antes.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/vale-a-pena-fazer-bulking-no-inverno-infographic.svg" alt="Infográfico sobre Vale a Pena Fazer Bulking no Inverno? — Montinho Personal Trainer" title="Vale a Pena Fazer Bulking no Inverno?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/vale-a-pena-fazer-bulking-no-inverno.webp" alt="Vale a pena fazer bulking no inverno? Prós, contras e como fazer o ganho de massa com o mínimo de gordura" title="Vale a Pena Fazer Bulking no Inverno? — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Bulking de inverno: mais massa com estratégia, sem virar desculpa para exageros.</figcaption>
 </figure>
 
 <p>A resposta direta: para quem já treina com consistência e não está com gordura elevada, o inverno é sim uma <strong>janela estratégica</strong> para construir músculo. Não porque o frio tenha poderes mágicos — mas porque ele empilha vantagens práticas a seu favor. Vamos ver quais, e para quem.</p>
@@ -70280,7 +70292,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     excerpt: "Aumentar a força muscular exige mais do que esforço — exige estratégia. Este guia cobre treino, alimentação, recuperação e os erros mais comuns.",
     category: "Treinamento",
     date: "2026-05-27",
-    updatedAt: "2026-05-27",
+    updatedAt: "2026-07-28",
     readTime: "9 min",
     author: "Montinho",
     tags: ["força muscular", "treino de força", "powerlifting", "progressão de carga", "hipertrofia"],
@@ -70296,7 +70308,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>O mito mais caro da academia é este: força vem de esforço. Suar mais, gemer mais, destruir o corpo todo dia. Milhões de pessoas seguem essa cartilha há anos — e continuam levantando a mesma carga de sempre. Esforço sem estratégia é só cansaço com hora marcada.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-aumentar-a-forca-muscular-infographic.svg" alt="Infográfico sobre Como Aumentar a Força Muscular: Guia Completo — Montinho Personal Trainer" title="Como Aumentar a Força Muscular: Guia Completo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-aumentar-a-forca-muscular.webp" alt="Como aumentar a força muscular: progressão de carga, exercícios compostos, técnica e descanso — os pilares da força" title="Como Aumentar a Força Muscular — Montinho Personal Trainer" width="1491" height="1055" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Força se constrói com progressão, compostos pesados, técnica e descanso.</figcaption>
 </figure>
 
 <p>A verdade? <strong>Força é uma habilidade.</strong> E habilidade se constrói com método: o estímulo certo, na dose certa, repetido pelo tempo certo. Quem entende isso progride em semanas o que outros não progridem em anos.</p>
