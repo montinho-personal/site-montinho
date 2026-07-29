@@ -2677,7 +2677,7 @@ export const blogPosts = ([
       "Parar de evoluir na musculação raramente tem uma causa única. Quase sempre é uma combinação de fatores que se acumulam silenciosamente. Descubra qual está te travando.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "12 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -2736,7 +2736,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-sair-do-plato-da-musculacao-infographic.svg" alt="Infográfico sobre Como Sair do Platô da Musculação? As Causas Reais e as Soluções Práticas — Montinho Personal Trainer" title="Como Sair do Platô da Musculação? As Causas Reais e as Soluç" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-sair-do-plato-da-musculacao.webp" alt="Como sair do platô da musculação: progressão de carga, variação de estímulo, recuperação e nutrição revisadas" title="Como Sair do Platô da Musculação — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Platô não é o fim: é sinal de que o estímulo precisa mudar.</figcaption>
 </figure>
 <p>Isso é o platô. E a maioria das pessoas que chegam até mim nessa situação acredita que o problema é um só — que só precisam "mudar o treino" ou "aumentar a proteína" ou "dormir mais". Na maioria dos casos, o platô não tem uma causa única. Ele é o resultado da combinação de variáveis que foram se acumulando silenciosamente até que o corpo simplesmente parou de responder.</p>
 
@@ -8124,7 +8125,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/deficit-calorico-como-calcular-infographic.svg" alt="Infográfico sobre Déficit calórico: o que é e como calcular — Montinho Personal Trainer" title="Déficit calórico: o que é e como calcular" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/deficit-calorico-como-calcular.webp" alt="Déficit calórico: o que é e como calcular — gasto total, calorias consumidas e o tamanho certo do déficit para emagrecer" title="Déficit Calórico: O Que É e Como Calcular — Montinho Personal Trainer" width="1491" height="1055" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A base de todo emagrecimento: entenda e calcule o seu déficit.</figcaption>
 </figure>
 <p>Mas saber que o déficit existe é diferente de saber como calculá-lo corretamente — e principalmente como aplicá-lo de forma inteligente. Neste artigo, você vai aprender tudo sobre o conceito, a fórmula e os erros mais comuns.</p>
 
@@ -8328,7 +8330,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     `,
     category: "Emagrecimento",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["déficit calórico", "emagrecimento", "TDEE", "cálculo calórico", "metabolismo", "dieta"],
@@ -8817,7 +8819,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-manter-massa-muscular-emagrecendo-infographic.svg" alt="Infográfico sobre Como manter massa muscular emagrecendo — Montinho Personal Trainer" title="Como manter massa muscular emagrecendo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-manter-massa-muscular-emagrecendo.webp" alt="Como manter massa muscular emagrecendo: déficit moderado, proteína alta, treino de força pesado e sono" title="Como Manter Massa Muscular Emagrecendo — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Emagrecer sem derreter músculo: os pilares da preservação de massa.</figcaption>
 </figure>
 <p>Mas com as estratégias certas, é totalmente possível perder gordura e preservar (ou até ganhar) massa muscular ao mesmo tempo. Este guia vai te mostrar como fazer isso de forma prática e baseada em evidências.</p>
 
@@ -9025,7 +9028,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     `,
     category: "Emagrecimento",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["massa muscular", "emagrecimento", "déficit calórico", "proteína", "treino de força", "composição corporal"],
@@ -10541,6 +10544,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Muitos usuários de Mounjaro eram sedentários antes do medicamento. Retomar o treino enquanto se adapta ao remédio tem desafios específicos. Veja como começar de forma segura e sustentável.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "10 min",
     author: "Montinho",
     tags: [
@@ -10603,7 +10607,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-voltar-a-treinar-apos-comecar-mounjaro-infographic.svg" alt="Infográfico sobre Como Voltar a Treinar Após Começar o Mounjaro — Montinho Personal Trainer" title="Como Voltar a Treinar Após Começar o Mounjaro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-voltar-a-treinar-apos-comecar-mounjaro.webp" alt="Como voltar a treinar após começar o Mounjaro: retomada gradual, prioridade na musculação e proteína para preservar massa magra" title="Como Voltar a Treinar Após Começar o Mounjaro — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Retomada gradual no Mounjaro: força primeiro, sem pressa e sem fraqueza.</figcaption>
 </figure>
 <p>É excelente que essa motivação exista. Mas iniciar o treino enquanto o corpo ainda está se adaptando ao Mounjaro tem desafios específicos que precisam ser considerados. Começar de forma muito intensa pode resultar em lesões, piora das náuseas ou abandono precoce do treino — exatamente o oposto do que você quer.</p>
 
@@ -11114,6 +11119,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Usar Retatrutida não é motivo para parar de malhar — é motivo para malhar com mais inteligência. Entenda como adaptar sua musculação ao novo cenário metabólico e hormonal do medicamento.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "10 min",
     author: "Montinho",
     tags: [
@@ -11170,7 +11176,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/musculacao-durante-uso-de-retatrutida-infographic.svg" alt="Infográfico sobre Musculação Durante o Uso de Retatrutida: O Que Você Precisa Saber — Montinho Personal Trainer" title="Musculação Durante o Uso de Retatrutida: O Que Você Precisa " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/musculacao-durante-uso-de-retatrutida.webp" alt="Musculação durante o uso de retatrutida: por que o treino de força é indispensável para preservar massa magra" title="Musculação Durante Uso de Retatrutida — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Musculação na retatrutida: o seguro contra a perda de massa magra.</figcaption>
 </figure>
 <p>Mas há uma ressalva importante: a musculação durante o uso de Retatrutida precisa de adaptações. O cenário metabólico é diferente. O apetite está suprimido, o aporte calórico é menor, e a energia disponível para o treino pode ser reduzida. Ignorar esses fatores e treinar como se nada tivesse mudado é um erro que pode levar a lesões, overtraining ou abandono do treino.</p>
 
@@ -11976,6 +11983,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "A Retatrutida faz a maior parte do trabalho no déficit calórico. Mas o que define se você vai terminar o tratamento com boa composição corporal — ou só mais leve — é o que você faz junto com ela.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "10 min",
     author: "Montinho",
     tags: [
@@ -12038,7 +12046,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-potencializar-resultados-retatrutida-infographic.svg" alt="Infográfico sobre Como Potencializar os Resultados da Retatrutida — Montinho Personal Trainer" title="Como Potencializar os Resultados da Retatrutida" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-potencializar-resultados-retatrutida.webp" alt="Como potencializar os resultados da retatrutida: treino de força, proteína adequada, sono e constância junto ao tratamento" title="Como Potencializar os Resultados da Retatrutida — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O tratamento abre a porta — treino, proteína e sono constroem o resultado.</figcaption>
 </figure>
 <p>Mas existe uma distinção crucial que a maioria das pessoas ignora: perder peso e melhorar a composição corporal são coisas diferentes. E o que define em qual dos dois cenários você vai terminar o tratamento não é o medicamento — é o que você faz ao lado dele.</p>
 
@@ -12692,6 +12701,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Com a Retatrutida causando supressão intensa de apetite, muitos usuários ficam em estado quase permanente de jejum. Fazer musculação nesse contexto sem nenhuma estratégia pode acelerar a perda muscular. Entenda como minimizar os riscos.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -12748,7 +12758,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/musculacao-em-jejum-retatrutida-infographic.svg" alt="Infográfico sobre Posso Fazer Musculação em Jejum Usando Retatrutida? — Montinho Personal Trainer" title="Posso Fazer Musculação em Jejum Usando Retatrutida?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/musculacao-em-jejum-retatrutida.webp" alt="Musculação em jejum usando retatrutida: riscos de fraqueza e hipoglicemia — na maioria dos casos, é melhor treinar alimentado" title="Musculação em Jejum Usando Retatrutida — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Jejum + retatrutida no treino: entenda os riscos antes de tentar.</figcaption>
 </figure>
 <p>Entender os riscos e como contorná-los na prática é essencial para preservar o que mais importa durante o emagrecimento: a massa muscular.</p>
 
@@ -12847,6 +12858,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Sentir fraqueza durante o treino é uma das reclamações mais frequentes de quem usa Retatrutida. As causas são identificáveis — e a maioria tem solução prática. Descubra como treinar melhor mesmo em déficit calórico.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -12903,7 +12915,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/fraqueza-durante-treino-retatrutida-infographic.svg" alt="Infográfico sobre Como Evitar Fraqueza Durante os Treinos Usando Retatrutida — Montinho Personal Trainer" title="Como Evitar Fraqueza Durante os Treinos Usando Retatrutida" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/fraqueza-durante-treino-retatrutida.webp" alt="Como evitar fraqueza nos treinos usando retatrutida: ajuste de volume, alimentação estratégica e progressão adaptada" title="Como Evitar Fraqueza nos Treinos Usando Retatrutida — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treinar sem fraqueza na retatrutida: volume ajustado e energia no lugar certo.</figcaption>
 </figure>
 <p>Essa queixa é tão comum entre usuários de GLP-1 que alguns médicos e personal trainers já a tratam como parte previsível do processo. Mas ela não precisa ser permanente — e tem causas bem definidas que podem ser endereçadas.</p>
 
@@ -13022,6 +13035,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Montar um treino eficiente durante o uso de Retatrutida exige adaptar princípios clássicos à realidade de menor disponibilidade energética. Este guia mostra como fazer isso passo a passo.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "10 min",
     author: "Montinho",
     tags: [
@@ -13083,7 +13097,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-montar-treino-retatrutida-infographic.svg" alt="Infográfico sobre Como Montar um Treino Usando Retatrutida — Montinho Personal Trainer" title="Como Montar um Treino Usando Retatrutida" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-montar-treino-retatrutida.webp" alt="Como montar um treino usando retatrutida: musculação como base, volume adequado ao déficit e recuperação priorizada" title="Como Montar Treino Usando Retatrutida — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O treino certo para a fase de retatrutida: base de força e recuperação.</figcaption>
 </figure>
 <p>Este guia apresenta um passo a passo para construir um programa de treino eficiente e seguro durante o tratamento com Retatrutida.</p>
 
@@ -13585,6 +13600,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Wegovy e Retatrutida são dois dos medicamentos mais discutidos para obesidade. Entenda o que os diferencia farmacologicamente e por que, na prática do treino, os princípios são os mesmos.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -13642,7 +13658,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/retatrutida-ou-wegovy-infographic.svg" alt="Infográfico sobre Retatrutida ou Wegovy: Quais as Diferenças? — Montinho Personal Trainer" title="Retatrutida ou Wegovy: Quais as Diferenças?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/retatrutida-ou-wegovy.webp" alt="Retatrutida ou Wegovy: comparativo de mecanismos, resultados e perfil — a decisão é sempre médica" title="Retatrutida ou Wegovy — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Retatrutida vs Wegovy: as diferenças — e por que a escolha é do seu médico.</figcaption>
 </figure>
 <p>Antes de qualquer coisa: <strong>a decisão sobre qual medicamento usar é do médico</strong>. O meu papel aqui é explicar o que cada um faz no contexto da composição corporal — e por que treino de força e proteína são inegociáveis em qualquer cenário.</p>
 
