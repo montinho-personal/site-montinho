@@ -6239,7 +6239,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Ganhar músculo enquanto perde gordura parece contradição — mas existe uma ciência por trás disso. Em certas condições, isso é não só possível como esperado.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -6301,7 +6301,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/deficit-calorico-e-hipertrofia-infographic.svg" alt="Infográfico sobre Déficit Calórico e Hipertrofia: É Possível Ganhar Massa Magra Cortando Calorias? — Montinho Personal Trainer" title="Déficit Calórico e Hipertrofia: É Possível Ganhar Massa Magr" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/deficit-calorico-e-hipertrofia.webp" alt="Déficit calórico e hipertrofia: dá para ganhar músculo emagrecendo? Recomposição corporal, proteína alta e treino de força" title="Déficit Calórico e Hipertrofia — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Ganhar músculo no déficit: quando a recomposição corporal é possível.</figcaption>
 </figure>
 <p>Essa é uma das perguntas mais frequentes que recebo — e a resposta é mais nuançada do que qualquer resposta rápida que você vai encontrar por aí.</p>
 
@@ -7056,7 +7057,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/melhor-treino-para-emagrecer-infographic.svg" alt="Infográfico sobre Melhor Treino para Emagrecer: Musculação, Cardio ou os Dois? — Montinho Personal Trainer" title="Melhor Treino para Emagrecer: Musculação, Cardio ou os Dois?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/melhor-treino-para-emagrecer.webp" alt="Melhor treino para emagrecer: musculação como base, cardio como complemento e consistência como multiplicador" title="Melhor Treino Para Emagrecer — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O treino que emagrece de verdade: força na base, cardio no complemento.</figcaption>
 </figure>
 <p>A boa notícia é que a ciência já tem uma resposta clara. E ela vai contra o que muita gente ainda acredita.</p>
 
@@ -7199,7 +7201,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     `,
     category: "Emagrecimento",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["emagrecimento", "musculação", "cardio", "metabolismo", "treino"],
@@ -9236,6 +9238,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Usar Mounjaro sem treinar certo é desperdiçar metade do resultado. Veja qual tipo de treino funciona melhor durante o tratamento com tirzepatida.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "10 min",
     author: "Montinho",
     tags: ["mounjaro", "tirzepatida", "treino", "musculação", "GLP-1", "emagrecimento", "composição corporal"],
@@ -9284,7 +9287,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/melhor-treino-para-quem-usa-mounjaro-infographic.svg" alt="Infográfico sobre Melhor Treino Para Quem Usa Mounjaro — Montinho Personal Trainer" title="Melhor Treino Para Quem Usa Mounjaro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/melhor-treino-para-quem-usa-mounjaro.webp" alt="Melhor treino para quem usa Mounjaro: musculação como prioridade para preservar massa magra, com cardio complementar e progressão adaptada" title="Melhor Treino Para Quem Usa Mounjaro — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Musculação como prioridade: o treino que preserva músculo durante o Mounjaro.</figcaption>
 </figure>
 <p>A resposta curta é sim — e muito. A resposta longa é o que este artigo vai te dar.</p>
 
@@ -9532,6 +9536,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Fazer musculação enquanto usa Mounjaro não só é seguro — é essencial. Veja como adaptar o treino ao contexto do medicamento e continuar progredindo.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "10 min",
     author: "Montinho",
     tags: ["mounjaro", "tirzepatida", "musculação", "treino de força", "GLP-1", "emagrecimento", "composição corporal"],
@@ -9580,7 +9585,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/musculacao-durante-uso-de-mounjaro-infographic.svg" alt="Infográfico sobre Musculação Durante o Uso de Mounjaro: O Que Você Precisa Saber — Montinho Personal Trainer" title="Musculação Durante o Uso de Mounjaro: O Que Você Precisa Sab" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/musculacao-durante-uso-de-mounjaro.webp" alt="Musculação durante o uso de Mounjaro: por que o treino de força é indispensável para emagrecer preservando músculo" title="Musculação Durante Uso de Mounjaro — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Musculação no Mounjaro: o seguro contra a perda de massa magra.</figcaption>
 </figure>
 <p>A resposta é não só que pode — você <strong>deve</strong>. A musculação é a principal ferramenta para garantir que o peso perdido com o Mounjaro venha de gordura, não de músculo.</p>
 
@@ -9695,6 +9701,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Perder gordura sem perder músculo é possível — mas exige estratégia. Veja os 3 pilares da preservação muscular durante o emagrecimento e como aplicá-los na prática.",
     category: "Emagrecimento",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "11 min",
     author: "Montinho",
     tags: ["massa muscular", "emagrecimento", "déficit calórico", "proteína", "treino de força", "composição corporal", "mounjaro"],
@@ -9737,7 +9744,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-preservar-massa-muscular-durante-emagrecimento-infographic.svg" alt="Infográfico sobre Como Preservar Massa Muscular Durante o Emagrecimento — Montinho Personal Trainer" title="Como Preservar Massa Muscular Durante o Emagrecimento" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-preservar-massa-muscular-durante-emagrecimento.webp" alt="Como preservar massa muscular durante o emagrecimento: déficit moderado, proteína alta, treino de força e sono" title="Como Preservar Massa Muscular Durante Emagrecimento — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Os pilares para emagrecer perdendo gordura — e não músculo.</figcaption>
 </figure>
 <p>A resposta é simples: junto com a gordura, foi embora também o músculo. E a culpa raramente é do metabolismo — é da estratégia.</p>
 
@@ -9851,6 +9859,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "O Mounjaro mata o apetite, mas sua necessidade de proteína não diminui — ela aumenta. Descubra quanto consumir por dia e as estratégias práticas para bater essa meta mesmo sem sentir fome.",
     category: "Emagrecimento",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -9908,7 +9917,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/proteina-para-quem-usa-mounjaro-infographic.svg" alt="Infográfico sobre Quanto de Proteína Consumir Usando Mounjaro — Montinho Personal Trainer" title="Quanto de Proteína Consumir Usando Mounjaro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/proteina-para-quem-usa-mounjaro.webp" alt="Proteína para quem usa Mounjaro: como bater a meta diária com o apetite suprimido e preservar massa muscular" title="Proteína Para Quem Usa Mounjaro — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Proteína no Mounjaro: a meta diária que protege sua massa muscular.</figcaption>
 </figure>
 <p>Como personal trainer especializado em pessoas que usam GLP-1, vejo esse erro constantemente. A pessoa perde 15, 20 kg e fica feliz com o número na balança — mas ao tirar a foto, percebe que ficou "mole", com pouca definição. É o sinal clássico de que perdeu músculo junto com gordura. E isso é evitável.</p>
 
@@ -10023,6 +10033,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "A creatina é segura, barata e amplamente estudada. Para quem usa Mounjaro e treina em déficit calórico, ela pode ser a diferença entre preservar ou perder massa muscular. Veja os fatos.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -10080,7 +10091,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/creatina-para-quem-usa-mounjaro-infographic.svg" alt="Infográfico sobre Creatina Para Quem Usa Mounjaro: Vale a Pena? — Montinho Personal Trainer" title="Creatina Para Quem Usa Mounjaro: Vale a Pena?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/creatina-para-quem-usa-mounjaro.webp" alt="Creatina para quem usa Mounjaro: 3 a 5g por dia ajudam a manter força e desempenho durante o emagrecimento acelerado" title="Creatina Para Quem Usa Mounjaro — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Creatina no Mounjaro: força e desempenho preservados no déficit.</figcaption>
 </figure>
 <p>Mas eu sei que surgem dúvidas: "não vou inchar?", "não vai interferir com o remédio?", "não é perigoso para os rins?". Neste artigo vou responder essas perguntas com base na ciência e te explicar por que a creatina pode ser o suplemento mais importante para você nessa fase.</p>
 
@@ -10187,6 +10199,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Quando o Mounjaro tira toda a sua fome, comer proteína suficiente vira um desafio real. O whey protein é a solução mais prática — mas há forma certa de usar. Veja quando, quanto e como.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -10249,7 +10262,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/whey-protein-para-quem-usa-mounjaro-infographic.svg" alt="Infográfico sobre Whey Protein Para Quem Usa Mounjaro: Quando e Como Usar — Montinho Personal Trainer" title="Whey Protein Para Quem Usa Mounjaro: Quando e Como Usar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/whey-protein-para-quem-usa-mounjaro.webp" alt="Whey protein para quem usa Mounjaro: praticidade para bater a meta de proteína com o apetite suprimido" title="Whey Protein Para Quem Usa Mounjaro — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Whey no Mounjaro: proteína prática quando o apetite não colabora.</figcaption>
 </figure>
 <p>Com o Mounjaro (tirzepatida) suprimindo o apetite de forma tão eficaz, atingir a meta de proteína diária é um dos maiores desafios práticos para quem usa o medicamento. E como personal trainer trabalhando com pessoas nesse cenário, aprendi que o whey protein, usado de forma estratégica, resolve grande parte desse problema.</p>
 
@@ -10919,6 +10933,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "A Retatrutida suprime o apetite de forma intensa e pode deixar você sem energia para treinar. Saiba como montar o treino ideal para preservar músculos e ter resultados reais durante o tratamento.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "10 min",
     author: "Montinho",
     tags: [
@@ -10976,7 +10991,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/melhor-treino-para-quem-usa-retatrutida-infographic.svg" alt="Infográfico sobre Melhor Treino Para Quem Usa Retatrutida — Montinho Personal Trainer" title="Melhor Treino Para Quem Usa Retatrutida" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/melhor-treino-para-quem-usa-retatrutida.webp" alt="Melhor treino para quem usa retatrutida: musculação como prioridade para preservar massa magra, com cardio complementar e progressão adaptada" title="Melhor Treino Para Quem Usa Retatrutida — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Musculação como prioridade: o treino que preserva músculo durante a retatrutida.</figcaption>
 </figure>
 <p>Este artigo apresenta o modelo de treino mais adequado para quem usa Retatrutida, com base em princípios científicos de treinamento e nas particularidades do medicamento.</p>
 
@@ -11431,6 +11447,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Com a Retatrutida suprimindo o apetite ao máximo, bater a meta de proteína exige estratégia. Saiba qual é o mínimo necessário para preservar músculo e como alcançá-lo mesmo sem fome.",
     category: "Emagrecimento",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -11488,7 +11505,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/proteina-para-quem-usa-retatrutida-infographic.svg" alt="Infográfico sobre Quanto de Proteína Consumir Usando Retatrutida — Montinho Personal Trainer" title="Quanto de Proteína Consumir Usando Retatrutida" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/proteina-para-quem-usa-retatrutida.webp" alt="Proteína para quem usa retatrutida: como bater a meta diária com o apetite suprimido e preservar massa muscular" title="Proteína Para Quem Usa Retatrutida — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Proteína na retatrutida: a meta diária que protege sua massa muscular.</figcaption>
 </figure>
 <p>O problema é que, justamente quando a pessoa mais precisa de proteína — durante um emagrecimento rápido e profundo —, a vontade de comer está no piso. O resultado previsível, sem intervenção, é a perda de massa muscular junto com a gordura.</p>
 
@@ -11612,6 +11630,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "A Retatrutida promove perda de peso acelerada — mas junto com ela pode vir perda de músculo. A creatina é um dos aliados mais estudados para preservar a massa magra nesse processo. Entenda como e por quê.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -11674,7 +11693,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/creatina-para-quem-usa-retatrutida-infographic.svg" alt="Infográfico sobre Creatina Para Quem Usa Retatrutida: Vale a Pena? — Montinho Personal Trainer" title="Creatina Para Quem Usa Retatrutida: Vale a Pena?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/creatina-para-quem-usa-retatrutida.webp" alt="Creatina para quem usa retatrutida: 3 a 5g por dia ajudam a manter força e desempenho durante o emagrecimento acelerado" title="Creatina Para Quem Usa Retatrutida — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Creatina na retatrutida: força e desempenho preservados no déficit.</figcaption>
 </figure>
 <p>É exatamente nesse cenário que a creatina entra como aliada. Não por ser um "truque" ou suplemento milagroso — mas por ser o suplemento mais estudado da história do esporte, com décadas de evidência científica robusta demonstrando seus benefícios para preservação e ganho de massa muscular.</p>
 
@@ -13202,6 +13222,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Retatrutida e Mounjaro são medicamentos diferentes com mecanismos distintos. Este artigo compara os dois de forma objetiva — mecanismo, dados de eficácia e implicações para o treino. A decisão sobre qual usar é sempre do seu médico.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "10 min",
     author: "Montinho",
     tags: [
@@ -13259,7 +13280,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/retatrutida-ou-mounjaro-infographic.svg" alt="Infográfico sobre Retatrutida ou Mounjaro: Quais as Diferenças? — Montinho Personal Trainer" title="Retatrutida ou Mounjaro: Quais as Diferenças?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/retatrutida-ou-mounjaro.webp" alt="Retatrutida ou Mounjaro: comparativo de mecanismos, resultados e perfil — a decisão é sempre médica" title="Retatrutida ou Mounjaro — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Retatrutida vs Mounjaro: as diferenças — e por que a escolha é do seu médico.</figcaption>
 </figure>
 <p>Este artigo apresenta uma comparação objetiva e informativa. <strong>Não recomendo nem prescrevo nenhum dos dois — isso é domínio exclusivo do médico.</strong> O que posso oferecer é um entendimento claro das diferenças e o que elas significam do ponto de vista do treino e da preservação muscular.</p>
 
@@ -13393,6 +13415,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Retatrutida e Ozempic são frequentemente comparados, mas atuam de formas bem diferentes no organismo. Saiba o que cada medicamento faz e por que treino e proteína são indispensáveis nos dois casos.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -13450,7 +13473,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/retatrutida-ou-ozempic-infographic.svg" alt="Infográfico sobre Retatrutida ou Ozempic: Quais as Diferenças? — Montinho Personal Trainer" title="Retatrutida ou Ozempic: Quais as Diferenças?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/retatrutida-ou-ozempic.webp" alt="Retatrutida ou Ozempic: comparativo de mecanismos, resultados e perfil — a decisão é sempre médica" title="Retatrutida ou Ozempic — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Retatrutida vs Ozempic: as diferenças — e por que a escolha é do seu médico.</figcaption>
 </figure>
 <p>Antes de qualquer coisa: a escolha entre qualquer medicamento é responsabilidade exclusiva do seu médico. Aqui, o meu papel — como personal trainer — é explicar o que cada um faz no contexto do corpo e por que o treino de força continua sendo inegociável em qualquer cenário.</p>
 
