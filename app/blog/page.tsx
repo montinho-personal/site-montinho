@@ -7,8 +7,11 @@ import SearchBar from "@/components/search/SearchBar";
 const sortedPosts = blogPosts
   .map((post, index) => ({ post, index }))
   .sort((a, b) => {
-    const dateA = new Date((a.post.updatedAt ?? a.post.date) + "T12:00:00").getTime();
-    const dateB = new Date((b.post.updatedAt ?? b.post.date) + "T12:00:00").getTime();
+    // Datas futuras (artigos sazonais agendados) não podem ancorar o topo:
+    // o teto é a data do build, então atualizações recentes vêm primeiro.
+    const now = Date.now();
+    const dateA = Math.min(new Date((a.post.updatedAt ?? a.post.date) + "T12:00:00").getTime(), now);
+    const dateB = Math.min(new Date((b.post.updatedAt ?? b.post.date) + "T12:00:00").getTime(), now);
     return dateB !== dateA ? dateB - dateA : b.index - a.index;
   })
   .map(({ post }) => post);
