@@ -3346,7 +3346,7 @@ export const blogPosts = ([
       "Se você treina há meses mas sente que chegou num teto, a periodização é provavelmente o que está faltando. Entenda como estruturar seu treino no tempo para evoluir sem parar.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "12 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -3414,7 +3414,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/periodizacao-de-treino-infographic.svg" alt="Infográfico sobre Periodização de Treino: O Que É e Como Usar Para Nunca Mais Parar de Evoluir — Montinho Personal Trainer" title="Periodização de Treino: O Que É e Como Usar Para Nunca Mais " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/periodizacao-de-treino.webp" alt="Periodização de treino: o que é e como alternar fases de volume e intensidade para nunca estagnar" title="Periodização de Treino — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Periodizar é alternar estímulos com estratégia — para nunca parar de evoluir.</figcaption>
 </figure>
 <p>Quando isso acontece, a primeira reação quase sempre é treinar mais. Adicionar séries, aumentar dias, mudar exercícios aleatoriamente. E paradoxalmente, esse caminho costuma piorar a situação.</p>
 
@@ -3574,7 +3575,7 @@ export const blogPosts = ([
       "Você treina com consistência mas não cresce? Há pelo menos 8 fatores que podem estar travando sua hipertrofia — e a maioria deles não tem nada a ver com o treino em si.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -3637,7 +3638,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/o-que-impede-a-hipertrofia-infographic.svg" alt="Infográfico sobre O Que Está Impedindo Sua Hipertrofia (E Como Resolver Cada Problema) — Montinho Personal Trainer" title="O Que Está Impedindo Sua Hipertrofia (E Como Resolver Cada P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/o-que-impede-a-hipertrofia.webp" alt="O que está impedindo sua hipertrofia: volume errado, falta de progressão, sono ruim, proteína baixa e inconsistência" title="O Que Está Impedindo Sua Hipertrofia — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Os bloqueios reais da hipertrofia — e como resolver cada um.</figcaption>
 </figure>
 <p>Esforço não falta. O que falta, na maioria dos casos, é estrutura. E o primeiro passo é identificar com precisão o que está travando o processo.</p>
 
@@ -4629,7 +4631,7 @@ export const blogPosts = ([
       "A resposta não é 3 séries de 10. O volume semanal por músculo é o principal determinante do crescimento — mas existe um teto. Entenda a faixa que funciona e como aplicar no seu treino.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -4691,7 +4693,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quantas-series-para-hipertrofia-infographic.svg" alt="Infográfico sobre Quantas Séries Fazer Para Hipertrofia? A Resposta Baseada em Evidência — Montinho Personal Trainer" title="Quantas Séries Fazer Para Hipertrofia? A Resposta Baseada em" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quantas-series-para-hipertrofia.webp" alt="Quantas séries fazer para hipertrofia: o volume semanal por grupo muscular baseado em evidência" title="Quantas Séries Fazer Para Hipertrofia — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O volume semanal certo por grupo muscular para crescer.</figcaption>
 </figure>
 <p>A realidade é mais específica. O volume semanal por músculo é um dos principais determinantes da hipertrofia — mas existe uma faixa efetiva, e sair dela para cima não acelera o resultado, só aumenta o risco de excesso de treinamento.</p>
 
@@ -4861,7 +4864,7 @@ export const blogPosts = ([
       "Passou décadas treinando na faixa de 8 a 12 repetições por ser 'a zona de hipertrofia'? Esse conceito tem mais de 50 anos e a ciência avançou bastante desde então. Entenda o que realmente importa.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -4918,7 +4921,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quantas-repeticoes-para-hipertrofia-infographic.svg" alt="Infográfico sobre Quantas Repetições Fazer Para Hipertrofia? A Verdade Sobre Faixas de Rep — Montinho Personal Trainer" title="Quantas Repetições Fazer Para Hipertrofia? A Verdade Sobre F" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quantas-repeticoes-para-hipertrofia.webp" alt="Quantas repetições fazer para hipertrofia: faixas de 6 a 20 funcionam — proximidade da falha e progressão importam mais" title="Quantas Repetições Fazer Para Hipertrofia — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A faixa de repetições ideal para hipertrofia — e o que importa mais que o número.</figcaption>
 </figure>
 <p>Esse conceito tem raízes nos anos 1950 e, durante décadas, foi tratado como verdade absoluta na musculação. O problema é que a ciência avançou. E o que temos agora é uma resposta mais útil — e menos arbitrária.</p>
 
@@ -5813,7 +5817,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "A pergunta certa não é quantos dias você treina por semana — é quantas vezes cada músculo é estimulado. A resposta muda completamente o resultado.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -5876,7 +5880,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/frequencia-de-treino-infographic.svg" alt="Infográfico sobre Frequência de Treino: Quantas Vezes por Semana Estimular Cada Músculo? — Montinho Personal Trainer" title="Frequência de Treino: Quantas Vezes por Semana Estimular Cad" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/frequencia-de-treino.webp" alt="Frequência de treino: quantas vezes por semana estimular cada músculo para hipertrofia — o volume semanal decide" title="Frequência de Treino: Quantas Vezes por Semana — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Quantas vezes treinar cada músculo por semana: o que a ciência recomenda.</figcaption>
 </figure>
 <p>A pergunta certa é: <strong>quantas vezes por semana cada músculo é estimulado?</strong></p>
 
@@ -6436,7 +6441,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Iniciante na musculação tem uma vantagem que quem treina há anos nunca mais vai ter: o newbie gains. Entenda como aproveitá-lo ao máximo.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "12 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -6498,7 +6503,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/hipertrofia-para-iniciantes-infographic.svg" alt="Infográfico sobre Hipertrofia Para Iniciantes: Tudo o Que Você Precisa Saber Para Começar — Montinho Personal Trainer" title="Hipertrofia Para Iniciantes: Tudo o Que Você Precisa Saber P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/hipertrofia-para-iniciantes.webp" alt="Hipertrofia para iniciantes: técnica, progressão de carga, frequência e alimentação para os primeiros meses de ganho" title="Hipertrofia Para Iniciantes — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O guia do iniciante para construir músculo do jeito certo desde o início.</figcaption>
 </figure>
 <p>Iniciantes têm algo que praticantes avançados dariam tudo para ter de volta: o período de newbie gains — quando qualquer estímulo bem estruturado de treino produz resultados. O músculo nunca cresce tão rápido, a força nunca aumenta tão depressa, e o aprendizado motor nunca se instala com tanta facilidade.</p>
 
@@ -6651,7 +6657,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "O medo de 'ficar grande' faz muitas mulheres evitarem a musculação séria. A biologia diz o contrário: é biologicamente impossível ficar masculinizada naturalmente.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-29",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -6707,7 +6713,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/hipertrofia-feminina-infographic.svg" alt="Infográfico sobre Hipertrofia Feminina: Como a Musculação Muda o Corpo Feminino de Verdade — Montinho Personal Trainer" title="Hipertrofia Feminina: Como a Musculação Muda o Corpo Feminin" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/hipertrofia-feminina.webp" alt="Hipertrofia feminina: como a musculação muda o corpo da mulher — definição, curvas e força, sem masculinizar" title="Hipertrofia Feminina — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Como a musculação transforma o corpo feminino: definição, curvas e força.</figcaption>
 </figure>
 <p>Vou explicar por que, e depois vou contar o que a musculação realmente faz no corpo feminino.</p>
 
