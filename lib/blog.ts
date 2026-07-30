@@ -1296,7 +1296,7 @@ export const blogPosts = ([
       "Mais tempo na academia não significa mais resultado. Descubra qual é a duração ideal de treino, o que a fisiologia diz sobre treinos longos — e o que realmente está desperdiçando o seu tempo.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-30",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -1349,7 +1349,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-tempo-dura-um-treino-infographic.svg" alt="Infográfico sobre Quanto Tempo Deve Durar um Treino? A Resposta Que Ninguém Te Dá — Montinho Personal Trainer" title="Quanto Tempo Deve Durar um Treino? A Resposta Que Ninguém Te" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-tempo-dura-um-treino.webp" alt="Quanto tempo deve durar um treino: o volume e a qualidade decidem, não o relógio — faixas práticas por objetivo" title="Quanto Tempo Deve Durar um Treino — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A duração certa do treino: qualidade e volume acima do relógio.</figcaption>
 </figure>
 <p>A realidade é mais simples e mais útil do que qualquer uma dessas fórmulas prontas. A duração ideal de um treino não existe em abstrato. Ela é consequência do que você está fazendo dentro desse tempo — e da qualidade com que está fazendo.</p>
 
@@ -5051,7 +5052,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Existe um volume mínimo abaixo do qual você não cresce, e um volume máximo acima do qual você só acumula fadiga. A ciência tem nome para esses dois pontos — e encontrar o seu é o que separa o progresso da estagnação.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-30",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -5113,7 +5114,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/volume-de-treino-ideal-infographic.svg" alt="Infográfico sobre Volume de Treino Ideal Para Hipertrofia: MEV, MAV e MRV Explicados — Montinho Personal Trainer" title="Volume de Treino Ideal Para Hipertrofia: MEV, MAV e MRV Expl" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/volume-de-treino-ideal.webp" alt="Volume de treino ideal para hipertrofia: MEV, MAV e MRV — como encontrar a dose certa de séries semanais" title="Volume de Treino Ideal Para Hipertrofia — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">MEV, MAV e MRV: a dose de treino que faz crescer sem estagnar.</figcaption>
 </figure>
 <p>Entender o conceito de volume de treino ideal exige conhecer três pontos no continuum de volume: o mínimo para crescer, o máximo para adaptar e o máximo para recuperar. São siglas simples que representam conceitos práticos — e que mudam completamente como você estrutura seu treino.</p>
 
@@ -7707,7 +7709,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-de-cardio-fazer-infographic.svg" alt="Infográfico sobre Quanto de Cardio Fazer para Emagrecer? A Quantidade Certa — Montinho Personal Trainer" title="Quanto de Cardio Fazer para Emagrecer? A Quantidade Certa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-de-cardio-fazer.webp" alt="Quanto de cardio fazer para emagrecer: a quantidade certa por semana sem atrapalhar a musculação" title="Quanto de Cardio Fazer Para Emagrecer — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A dose certa de cardio para emagrecer sem perder músculo.</figcaption>
 </figure>
 <p>A resposta depende do seu nível atual, objetivo e como você combina o cardio com o treino de força. Vamos detalhar tudo.</p>
 
@@ -7881,7 +7884,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     `,
     category: "Emagrecimento",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-30",
     readTime: "8 min",
     author: "Montinho Personal Trainer",
     tags: ["cardio", "emagrecimento", "frequência", "OMS", "treino aeróbico"],
@@ -8387,7 +8390,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/metabolismo-lento-existe-infographic.svg" alt="Infográfico sobre Metabolismo lento existe? — Montinho Personal Trainer" title="Metabolismo lento existe?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/metabolismo-lento-existe.webp" alt="Metabolismo lento existe? O que realmente trava seu emagrecimento — massa muscular, NEAT e hábitos" title="Metabolismo Lento Existe? — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Metabolismo lento: o que é real e o que é desculpa — e como acelerar o seu.</figcaption>
 </figure>
 <p>Neste artigo, vamos separar o mito da realidade: entender o que é a Taxa Metabólica Basal (TMB), quais fatores a influenciam, qual a real diferença entre pessoas e — principalmente — o que você pode fazer para aumentar seu gasto energético.</p>
 
@@ -8554,7 +8558,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     `,
     category: "Emagrecimento",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-07-30",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["metabolismo", "metabolismo lento", "TMB", "emagrecimento", "gasto calórico", "massa muscular"],
@@ -14722,7 +14726,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/dor-lombar-na-musculacao-infographic.svg" alt="Infográfico sobre Dor Lombar na Musculação: Causas, Erros Comuns e Como Treinar com Segurança — Montinho Personal Trainer" title="Dor Lombar na Musculação: Causas, Erros Comuns e Como Treina" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/dor-lombar-na-musculacao.webp" alt="Dor lombar na musculação: causas, erros comuns de execução e como treinar protegendo a coluna" title="Dor Lombar na Musculação — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Dor lombar no treino: os erros que causam e a técnica que protege.</figcaption>
 </figure>
 <p>O paradoxo é que a musculação, quando bem orientada, é um dos tratamentos mais eficazes para dor lombar crônica. O problema está no "quando bem orientada". Erros de técnica, progressão de carga equivocada e falta de trabalho de core transformam o treino de solução em problema. Este artigo detalha as causas, os erros mais comuns e como estruturar um treino seguro mesmo com dor lombar.</p>
 
@@ -14890,6 +14895,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     `,
     category: "Lesões",
     date: "2026-06-26",
+    updatedAt: "2026-07-30",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["dor lombar", "musculação", "core", "lombalgia", "levantamento terra", "agachamento", "personal trainer alphaville", "prevenção de lesões"],
@@ -15123,6 +15129,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Ter escoliose não significa abandonar a academia. Entenda quais exercícios são seguros, quais devem ser evitados e como o treino adaptado pode até melhorar sua qualidade de vida.",
     category: "Lesões",
     date: "2026-06-26",
+    updatedAt: "2026-07-30",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["escoliose", "musculação com escoliose", "exercícios para coluna", "lesões na coluna", "personal trainer alphaville", "treino adaptado", "saúde da coluna"],
@@ -15163,7 +15170,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/escoliose-pode-fazer-musculacao-infographic.svg" alt="Infográfico sobre Escoliose Pode Fazer Musculação? O Que a Ciência Realmente Diz — Montinho Personal Trainer" title="Escoliose Pode Fazer Musculação? O Que a Ciência Realmente D" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/escoliose-pode-fazer-musculacao.webp" alt="Escoliose pode fazer musculação? Sim, com adaptação e orientação — o treino de força fortalece e protege a coluna" title="Escoliose Pode Fazer Musculação? — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Escoliose e musculação: treinar com adaptação fortalece a coluna.</figcaption>
 </figure>
 <p>A verdade é que a escoliose não é uma contraindicação absoluta ao treinamento com pesos. Pelo contrário: quando o treino é corretamente planejado, ele pode ser uma das ferramentas mais eficazes para estabilizar a curvatura, reduzir dores e melhorar a função muscular — em consonância com as <a href="https://pubmed.ncbi.nlm.nih.gov/28449692/" target="_blank" rel="noopener noreferrer">diretrizes internacionais de reabilitação para escoliose idiopática (SOSORT)</a>. O problema está no treino genérico, sem adaptação, que ignora as particularidades da condição.</p>
 
@@ -15415,6 +15423,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "A janela anabólica de 30 minutos após o treino ainda assombra as academias. Mas a ciência atual conta uma história diferente sobre o momento ideal para consumir proteína.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-07-30",
     readTime: "8 min",
     author: "Montinho Personal Trainer",
     tags: ["proteína", "janela anabólica", "timing proteico", "whey protein", "nutrição esportiva", "hipertrofia", "personal trainer alphaville"],
@@ -15455,7 +15464,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/melhor-horario-para-proteina-infographic.svg" alt="Infográfico sobre Melhor Horário para Tomar Proteína: Antes ou Depois do Treino? — Montinho Personal Trainer" title="Melhor Horário para Tomar Proteína: Antes ou Depois do Trein" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/melhor-horario-para-proteina.webp" alt="Melhor horário para tomar proteína: antes ou depois do treino? O total diário importa mais que o timing" title="Melhor Horário Para Tomar Proteína — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O total do dia vence o timing: quando a proteína realmente importa.</figcaption>
 </figure>
 <p>Esse cenário, ainda muito comum nas academias, é baseado em uma interpretação exagerada — e parcialmente equivocada — da fisiologia do exercício. A ciência evoluiu muito desde o surgimento do conceito de janela anabólica, e os dados mais recentes contam uma história bem diferente.</p>
 
@@ -15532,6 +15542,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "1,6 g/kg, 2,0 g/kg ou 2,4 g/kg? A resposta depende do seu objetivo. Veja como calcular sua necessidade real de proteína e como distribuí-la ao longo do dia.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-07-30",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["proteína", "quantidade de proteína", "hipertrofia", "emagrecimento", "nutrição esportiva", "whey protein", "personal trainer alphaville", "dieta"],
@@ -15572,7 +15583,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-de-proteina-consumir-infographic.svg" alt="Infográfico sobre Quanto de Proteína Consumir por Dia para Ganhar Músculo e Emagrecer — Montinho Personal Trainer" title="Quanto de Proteína Consumir por Dia para Ganhar Músculo e Em" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-de-proteina-consumir.webp" alt="Quanto de proteína consumir por dia para ganhar músculo: faixas práticas por peso corporal e como distribuir" title="Quanto de Proteína Consumir por Dia — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A quantidade de proteína por dia que constrói músculo de verdade.</figcaption>
 </figure>
 <h2>Por que a proteína é tão importante</h2>
 
@@ -15838,6 +15850,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Carboidrato antes do treino melhora a performance ou é desnecessário? A resposta depende do seu objetivo, horário e tipo de treino. Veja o que a ciência recomenda.",
     category: "Treinamento",
     date: "2026-06-26",
+    updatedAt: "2026-07-30",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["carboidrato pré-treino", "alimentação pré-treino", "glicogênio muscular", "treino em jejum", "hipertrofia", "emagrecimento", "personal trainer alphaville", "nutrição esportiva"],
@@ -15878,7 +15891,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/carboidrato-antes-do-treino-infographic.svg" alt="Infográfico sobre Carboidrato Antes do Treino: Você Realmente Precisa? — Montinho Personal Trainer" title="Carboidrato Antes do Treino: Você Realmente Precisa?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/carboidrato-antes-do-treino.webp" alt="Carboidrato antes do treino: você realmente precisa? Energia, desempenho e quando faz diferença" title="Carboidrato Antes do Treino — Montinho Personal Trainer" width="1491" height="1055" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Carboidrato pré-treino: quando ajuda o desempenho e quando é opcional.</figcaption>
 </figure>
 <p>A resposta honesta é: depende. Mas depende de fatores específicos que você pode controlar. Neste artigo, vou explicar a fisiologia por trás da energia no treino de força, o que os estudos dizem sobre treino em jejum versus alimentado, e como montar uma estratégia pré-treino adequada ao seu objetivo.</p>
 
@@ -15951,6 +15965,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "O mito de que comer carboidrato à noite engorda persiste há décadas. A ciência conta uma história diferente — e mais simples. Entenda o que realmente determina o ganho de gordura.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-07-30",
     readTime: "8 min",
     author: "Montinho Personal Trainer",
     tags: ["carboidrato à noite", "mito nutricional", "emagrecimento", "balanço calórico", "metabolismo", "timing de nutrientes", "personal trainer alphaville", "nutrição e saúde"],
@@ -15991,7 +16006,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/carboidrato-a-noite-engorda-infographic.svg" alt="Infográfico sobre Carboidrato à Noite Engorda? O Que a Ciência Realmente Diz — Montinho Personal Trainer" title="Carboidrato à Noite Engorda? O Que a Ciência Realmente Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/carboidrato-a-noite-engorda.webp" alt="Carboidrato à noite engorda? Não — o total do dia decide; a distribuição é questão de preferência e sono" title="Carboidrato à Noite Engorda? — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Carboidrato à noite não engorda: o balanço do dia é o que conta.</figcaption>
 </figure>
 <h2>O Que os Estudos Dizem: Metabolismo Noturno e Carboidratos</h2>
 
