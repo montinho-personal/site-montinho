@@ -95852,6 +95852,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Comer à noite engorda? Não por si só — o total do dia é que decide. Mas um jantar bem montado ajuda no sono, na saciedade e evita o ataque à geladeira. Veja o que comer à noite, com exemplos práticos.",
     category: "Nutrição",
     date: "2026-07-28",
+    updatedAt: "2026-07-31",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["jantar leve", "emagrecimento", "alimentação noturna", "saciedade", "sono"],
@@ -95890,7 +95891,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Não como nada depois das 18h" — quantas vezes você já ouviu (ou seguiu) essa regra? Eu segui. Na minha fase de tentativas frustradas de emagrecer, cheguei a pular o jantar por semanas. Resultado: às 23h eu estava na cozinha, devorando o que via pela frente, e acordava me sentindo um fracasso.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/jantar-leve-para-emagrecer-infographic.svg" alt="Infográfico sobre Jantar Leve Para Emagrecer: O Que Comer à Noite — Montinho Personal Trainer" title="Jantar Leve Para Emagrecer: O Que Comer à Noite" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/jantar-leve-para-emagrecer.webp" alt="Jantar leve para emagrecer: ideias de refeições noturnas com proteína e vegetais que ajudam no déficit calórico" title="Jantar leve para emagrecer — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Hoje, mais de 40 kg mais leve, sei que o problema nunca foi jantar. Era como eu jantava — e o que acontecia depois. Neste artigo, você vai entender o que a ciência diz sobre comer à noite e como montar um jantar leve que ajuda a emagrecer sem passar fome.</p>
@@ -96442,6 +96443,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O refrigerante zero tem praticamente zero calorias — e caloria é o que engorda. Mas existem nuances sobre adoçantes, apetite e comportamento que valem entender antes de abrir a próxima latinha.",
     category: "Nutrição",
     date: "2026-07-28",
+    updatedAt: "2026-07-31",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["refrigerante zero", "adoçantes", "emagrecimento", "nutrição", "déficit calórico"],
@@ -96480,7 +96482,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Refrigerante zero engorda? Pela lógica mais básica da nutrição, não: engordar exige excesso de calorias, e o refrigerante zero tem praticamente zero. Mesmo assim, essa é uma das perguntas que mais recebo de alunos — quase sempre acompanhada de alguma teoria assustadora vista nas redes sociais: "o adoçante engana o cérebro", "o zero dá mais fome", "adoçante engorda mais que açúcar".</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/refrigerante-zero-engorda-infographic.svg" alt="Infográfico sobre Refrigerante Zero Engorda? O Que a Ciência Diz — Montinho Personal Trainer" title="Refrigerante Zero Engorda? O Que a Ciência Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/refrigerante-zero-engorda.webp" alt="Refrigerante zero engorda? Análise do impacto dos refrigerantes diet e zero no emagrecimento e na saúde" title="Refrigerante zero engorda? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -97302,6 +97304,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Nenhuma fruta engorda ou emagrece sozinha — o contexto calórico decide. Mas algumas entregam mais saciedade por caloria e facilitam muito o processo. Veja quais priorizar e onde vale atenção à porção.",
     category: "Nutrição",
     date: "2026-07-30",
+    updatedAt: "2026-07-31",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["frutas", "emagrecimento", "nutrição", "saciedade", "déficit calórico"],
@@ -97340,7 +97343,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Banana engorda?" "Manga tem muito açúcar?" "Posso comer fruta à noite?" Essas são algumas das perguntas que mais escuto de alunos que querem emagrecer. E a resposta curta para todas é a mesma: nenhuma fruta engorda ou emagrece por si só.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/melhores-frutas-para-emagrecer-infographic.svg" alt="Infográfico sobre Melhores Frutas Para Emagrecer (e as Que Pedem Moderação) — Montinho Personal Trainer" title="Melhores Frutas Para Emagrecer (e as Que Pedem Moderação)" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/melhores-frutas-para-emagrecer.webp" alt="Melhores frutas para emagrecer: opções com menos calorias e mais fibras para incluir na dieta de emagrecimento" title="Melhores frutas para emagrecer — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>O que decide se você perde ou ganha peso é o balanço calórico do dia inteiro — não um alimento isolado. Dito isso, existem frutas que facilitam muito o emagrecimento porque entregam bastante saciedade com poucas calorias. E outras que, sendo mais calóricas, pedem apenas atenção à porção.</p>
@@ -97422,6 +97425,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Lanche não é obrigação — é ferramenta de saciedade. Veja opções práticas que seguram a fome de verdade, as armadilhas dos produtos fit e como montar lanches que cabem no seu déficit.",
     category: "Nutrição",
     date: "2026-07-30",
+    updatedAt: "2026-07-31",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["lanches saudáveis", "emagrecimento", "saciedade", "nutrição", "proteína"],
@@ -97460,7 +97464,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Entre o almoço e o jantar existe um território perigoso: a tarde. É ali que a maioria das dietas desmorona — no biscoito da gaveta, no pão de queijo da padaria, na "fominha" das 16h que termina em exagero no jantar.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/lanches-saudaveis-para-emagrecer-infographic.svg" alt="Infográfico sobre Lanches Saudáveis Para Emagrecer: O Que Comer Entre as Refeições — Montinho Personal Trainer" title="Lanches Saudáveis Para Emagrecer: O Que Comer Entre as Refei" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/lanches-saudaveis-para-emagrecer.webp" alt="Lanches saudáveis para emagrecer: opções práticas com proteína e fibras para controlar a fome entre as refeições" title="Lanches saudáveis para emagrecer — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>O lanche certo resolve isso. Mas atenção a um ponto que pouca gente fala: lanche é ferramenta de saciedade, não obrigação. Se você não sente fome entre as refeições, não precisa comer "para acelerar o metabolismo" — isso é mito.</p>
@@ -98124,6 +98128,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Você pode fortalecer o abdômen em casa sem nenhum equipamento — e isso melhora postura, estabilidade e desempenho. Mas abdominal não queima gordura da barriga. Veja os melhores exercícios, uma rotina completa e o que realmente define a barriga.",
     category: "Treino",
     date: "2026-07-30",
+    updatedAt: "2026-07-31",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["abdômen", "treino em casa", "core", "prancha", "exercícios abdominais"],
@@ -98162,7 +98167,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Treinar abdômen em casa é totalmente possível — e você não precisa de nenhum equipamento para isso. O core responde muito bem a exercícios com o peso do corpo, e uma rotina de 15 a 20 minutos, feita com técnica, já entrega um abdômen mais forte e estável.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-de-abdomen-em-casa-infographic.svg" alt="Infográfico sobre Treino de Abdômen em Casa: Exercícios e Rotina — Montinho Personal Trainer" title="Treino de Abdômen em Casa: Exercícios e Rotina" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-de-abdomen-em-casa.webp" alt="Treino de abdômen em casa: exercícios sem equipamento como prancha e abdominal para fortalecer o core" title="Treino de abdômen em casa — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
