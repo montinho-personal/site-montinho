@@ -95594,6 +95594,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O ovo já foi vilão, virou herói e continua gerando dúvida. Afinal, quantos ovos por dia dá para comer sem medo? Veja o que os principais estudos mostram sobre ovo e colesterol — e como usá-lo a favor do emagrecimento.",
     category: "Nutrição",
     date: "2026-07-28",
+    updatedAt: "2026-07-31",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["ovos", "colesterol", "proteína", "nutrição", "emagrecimento"],
@@ -95632,7 +95633,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Poucos alimentos geraram tanta polêmica quanto o ovo. Durante décadas ele foi tratado como vilão do colesterol. Depois virou queridinho fitness. E até hoje muita gente me pergunta, meio desconfiada: "posso mesmo comer ovo todo dia?"</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quantos-ovos-por-dia-infographic.svg" alt="Infográfico sobre Quantos Ovos Por Dia Pode Comer? O Que a Ciência Diz — Montinho Personal Trainer" title="Quantos Ovos Por Dia Pode Comer? O Que a Ciência Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quantos-ovos-por-dia.webp" alt="Quantos ovos por dia pode comer: 1 a 3 ovos diários são seguros para a maioria das pessoas saudáveis — proteína completa e saciedade" title="Quantos Ovos Por Dia Pode Comer? — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Ovos todos os dias: o que a ciência diz sobre quantidade, colesterol e saúde.</figcaption>
 </figure>
 
 <p>A resposta curta, baseada no consenso científico atual: para a maioria das pessoas saudáveis, sim — o consumo diário de ovos é considerado seguro. A resposta completa tem nuances importantes, e é isso que você vai ver aqui.</p>
@@ -97161,6 +97163,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Dá para treinar pernas de verdade em casa, sem nenhum equipamento. Neste guia você encontra os melhores exercícios, como montar as séries e como progredir quando o peso do corpo ficar leve.",
     category: "Treino",
     date: "2026-07-30",
+    updatedAt: "2026-07-31",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["treino em casa", "pernas", "sem equipamentos", "hipertrofia", "treino"],
@@ -97199,7 +97202,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Muita gente acha que treino de pernas só funciona com leg press, cadeira extensora e barra nas costas. Não é verdade. Pernas respondem muito bem ao peso do corpo — desde que o treino seja bem montado e você saiba progredir.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-de-pernas-em-casa-infographic.svg" alt="Infográfico sobre Treino de Pernas em Casa: Guia Completo Sem Equipamentos — Montinho Personal Trainer" title="Treino de Pernas em Casa: Guia Completo Sem Equipamentos" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-de-pernas-em-casa.webp" alt="Treino de pernas em casa sem equipamentos: agachamentos, afundos, progressões unilaterais e tempo sob tensão" title="Treino de Pernas em Casa — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Pernas fortes sem equipamento: exercícios e progressões para treinar em casa.</figcaption>
 </figure>
 
 <p>Em mais de 20 anos de musculação, já passei por fases em que treinar em casa era a única opção. E aprendi na prática: o que define resultado não é o equipamento, é o esforço aplicado com técnica e constância.</p>
@@ -97952,6 +97956,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Dá para emagrecer treinando em casa? Dá — desde que o treino tenha progressão e a alimentação gere déficit calórico. Neste guia, mostro exercícios, uma rotina semanal realista e os limites honestos do treino em casa comparado à academia.",
     category: "Treino",
     date: "2026-07-30",
+    updatedAt: "2026-07-31",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["treino em casa", "emagrecimento", "déficit calórico", "exercícios sem equipamento", "rotina de treino"],
@@ -97990,7 +97995,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Treino em casa emagrece? Essa é uma das perguntas que mais recebo. E a resposta honesta é: sim, emagrece — desde que duas condições sejam cumpridas. O treino precisa ter progressão, e a alimentação precisa gerar déficit calórico.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-para-emagrecer-em-casa-infographic.svg" alt="Infográfico sobre Treino Para Emagrecer em Casa: Guia Completo — Montinho Personal Trainer" title="Treino Para Emagrecer em Casa: Guia Completo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-para-emagrecer-em-casa.webp" alt="Treino para emagrecer em casa: rotina completa sem equipamentos, com progressão e o déficit calórico como base do resultado" title="Treino Para Emagrecer em Casa — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Emagrecer treinando em casa: rotina, progressão e o déficit como base.</figcaption>
 </figure>
 
 
