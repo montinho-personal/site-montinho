@@ -95448,6 +95448,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Todo mundo quer saber o numero magico do percentual de gordura. A verdade: existem faixas de referencia, nao um numero unico. Veja as tabelas por sexo e idade e entenda por que a medicao importa menos do que a tendencia.",
     category: "Saúde",
     date: "2026-07-28",
+    updatedAt: "2026-07-31",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["percentual de gordura", "composição corporal", "avaliação física", "emagrecimento", "saúde"],
@@ -95486,7 +95487,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se você já fez uma bioimpedância na academia, provavelmente saiu de lá com um número na mão e uma pergunta na cabeça: esse percentual de gordura é bom ou ruim?</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/percentual-de-gordura-ideal-infographic.svg" alt="Infográfico sobre Percentual de Gordura Ideal: Tabelas Por Idade e Sexo — Montinho Personal Trainer" title="Percentual de Gordura Ideal: Tabelas Por Idade e Sexo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/percentual-de-gordura-ideal.webp" alt="Percentual de gordura ideal por idade e sexo: faixas de referência, margem de erro dos métodos e por que a tendência importa mais que o número" title="Percentual de Gordura Ideal — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">As faixas de percentual de gordura por idade e sexo — e como interpretar a sua.</figcaption>
 </figure>
 
 <p>A resposta honesta: depende do seu sexo, da sua idade e do seu objetivo. Não existe um número único "ideal" que sirva para todo mundo — existem faixas de referência. E qualquer profissional sério trabalha com faixas, não com números mágicos.</p>
@@ -99053,6 +99055,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Caminhar na esteira inclinada virou febre com o metodo 12-3-30. Faz sentido? Faz — a inclinacao aumenta muito o gasto sem impacto. Mas nao e magica: veja como usar do jeito certo e adaptar ao seu nivel.",
     category: "Emagrecimento",
     date: "2026-07-30",
+    updatedAt: "2026-07-31",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["esteira inclinada", "12-3-30", "caminhada", "emagrecimento", "cardio"],
@@ -99091,7 +99094,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se você abriu qualquer rede social nos últimos tempos, viu alguém caminhando numa esteira bem inclinada falando do "12-3-30". O método viralizou no mundo inteiro e chegou com força nas academias brasileiras.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/caminhada-na-esteira-inclinada-infographic.svg" alt="Infográfico sobre Caminhada Inclinada na Esteira: Por Que Virou Febre (Método 12-3-30) — Montinho Personal Trainer" title="Caminhada Inclinada na Esteira: Por Que Virou Febre (Método " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/caminhada-na-esteira-inclinada.webp" alt="Caminhada inclinada na esteira e o método 12-3-30: inclinação de 12%, velocidade 3 mph, 30 minutos — gasto real e adaptações por nível" title="Caminhada Inclinada na Esteira (12-3-30) — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O 12-3-30 explicado: por que a caminhada inclinada virou febre — e como adaptar.</figcaption>
 </figure>
 
 
@@ -99564,6 +99568,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Antes do treino? Depois? Em jejum? A pergunta sobre o melhor horário da creatina é uma das que mais recebo. A resposta da ciência é mais simples do que parece: o timing tem efeito marginal, e a consistência diária é o que realmente decide seus resultados.",
     category: "Nutrição",
     date: "2026-07-30",
+    updatedAt: "2026-07-31",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["creatina", "suplementação", "horário da creatina", "hipertrofia", "musculação"],
@@ -99602,7 +99607,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se você já pesquisou sobre creatina, provavelmente encontrou opiniões para todos os gostos: tem quem jure que só funciona antes do treino, quem defenda o pós-treino com unhas e dentes, e quem tome de manhã em jejum sem pensar duas vezes.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/melhor-horario-para-tomar-creatina-infographic.svg" alt="Infográfico sobre Melhor Horário Para Tomar Creatina: Antes, Depois ou Tanto Faz? — Montinho Personal Trainer" title="Melhor Horário Para Tomar Creatina: Antes, Depois ou Tanto F" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/melhor-horario-para-tomar-creatina.webp" alt="Melhor horário para tomar creatina: antes, depois ou tanto faz — a consistência diária importa mais que o timing" title="Melhor Horário Para Tomar Creatina — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O melhor horário da creatina é o que você não esquece: consistência vence timing.</figcaption>
 </figure>
 
 
@@ -99743,6 +99749,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Cortar o açúcar de uma vez parece atitude de disciplina, mas quase sempre termina em compulsão no fim de semana. Existe um caminho mais inteligente: redução gradual, adaptação do paladar e zero terrorismo nutricional. Foi assim que eu saí do açúcar como válvula de escape.",
     category: "Nutrição",
     date: "2026-07-30",
+    updatedAt: "2026-07-31",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["açúcar", "emagrecimento", "reeducação alimentar", "compulsão alimentar", "nutrição"],
@@ -99781,7 +99788,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Toda segunda-feira alguém decide: "a partir de hoje, açúcar nunca mais". Na quarta, a pessoa está irritada. Na sexta, come uma barra de chocolate inteira escondida e conclui que "não tem força de vontade".</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-tirar-o-acucar-da-dieta-infographic.svg" alt="Infográfico sobre Como Tirar o Açúcar da Dieta (Sem Sofrimento) — Montinho Personal Trainer" title="Como Tirar o Açúcar da Dieta (Sem Sofrimento)" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-tirar-o-acucar-da-dieta.webp" alt="Como tirar o açúcar da dieta sem sofrimento: redução gradual, paladar que se adapta e substituições realistas" title="Como Tirar o Açúcar da Dieta — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Redução gradual vence proibição: o método de 8 semanas para destravar do açúcar.</figcaption>
 </figure>
 
 
