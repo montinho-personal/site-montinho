@@ -95724,6 +95724,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Água com limão em jejum é um dos rituais mais famosos de quem quer emagrecer. Mas ela queima gordura mesmo? Eu já acreditei nisso na época em que pesava 40 kg a mais. A verdade é mais simples — e mais útil.",
     category: "Nutrição",
     date: "2026-07-28",
+    updatedAt: "2026-08-02",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["água com limão", "emagrecimento", "jejum", "mitos", "hidratação"],
@@ -95762,7 +95763,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Acordar, espremer meio limão num copo de água morna e beber em jejum. Se você já tentou emagrecer, alguém provavelmente te vendeu esse ritual como o segredo para "destravar o metabolismo", "desintoxicar o fígado" ou "queimar gordura dormindo".</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/agua-com-limao-em-jejum-infographic.svg" alt="Infográfico sobre Água com Limão em Jejum Emagrece? A Verdade Sobre o Ritual — Montinho Personal Trainer" title="Água com Limão em Jejum Emagrece? A Verdade Sobre o Ritual" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/agua-com-limao-em-jejum.webp" alt="Água com limão em jejum emagrece? A verdade científica sobre o ritual matinal e o emagrecimento" title="Água com limão em jejum emagrece? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Eu conheço bem essa história — dos dois lados. Na época em que estava obeso, testei praticamente todo atalho milagroso que apareceu na minha frente, e a água com limão foi um deles. Perdi mais de 40 kg depois, e posso te garantir: não foi o limão. Foi o que veio junto quando parei de procurar atalhos (conto essa trajetória completa <a href="/minha-historia">aqui</a>).</p>
@@ -96576,6 +96577,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O Pilates é excelente para core, postura e mobilidade — mas seu gasto calórico é modesto. Entenda o papel real do método no emagrecimento e como combiná-lo com déficit calórico e treino de força.",
     category: "Treino",
     date: "2026-07-28",
+    updatedAt: "2026-08-02",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["pilates", "emagrecimento", "core", "postura", "treino de força"],
@@ -96614,7 +96616,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Pilates emagrece? Sozinho, dificilmente — e quem promete o contrário está vendendo ilusão. Mas isso não faz do Pilates um método ruim; faz dele um método com um papel específico. Ele é excelente para core, postura, mobilidade e consciência corporal. Só não é uma ferramenta potente de gasto calórico.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/pilates-emagrece-infographic.svg" alt="Infográfico sobre Pilates Emagrece? O Papel Real do Método — Montinho Personal Trainer" title="Pilates Emagrece? O Papel Real do Método" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/pilates-emagrece.webp" alt="Pilates emagrece? O papel real do método no gasto calórico, postura e fortalecimento do core" title="Pilates emagrece? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -96723,6 +96725,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "A natação é um dos melhores aeróbicos de baixo impacto que existem, com gasto calórico alto. Mas a fome pós-piscina e a ausência de sobrecarga óssea são nuances que você precisa conhecer antes de apostar tudo nela.",
     category: "Treino",
     date: "2026-07-28",
+    updatedAt: "2026-08-02",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["natação", "emagrecimento", "cardio", "baixo impacto", "treino de força"],
@@ -96761,7 +96764,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Natação emagrece? Pode emagrecer, sim — é um aeróbico completo, de gasto calórico alto e impacto quase nulo nas articulações. Mas ela carrega duas nuances que quase ninguém conta: a fome feroz que costuma vir depois da piscina e a ausência de estímulo ósseo e de sobrecarga progressiva para os músculos. Ignorar esses detalhes é o motivo de tanta gente nadar por meses sem ver a balança se mexer.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/natacao-emagrece-infographic.svg" alt="Infográfico sobre Natação Emagrece? Calorias, Prós e Contras — Montinho Personal Trainer" title="Natação Emagrece? Calorias, Prós e Contras" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/natacao-emagrece.webp" alt="Natação emagrece? Calorias gastas na natação, prós e contras para o emagrecimento" title="Natação emagrece? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -96874,6 +96877,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O cochilo pós-almoço não engorda por si — quem decide isso é o balanço calórico do dia. Entenda o que a ciência diz sobre a sesta, quando ela ajuda e os cuidados reais, como o refluxo.",
     category: "Saúde",
     date: "2026-07-28",
+    updatedAt: "2026-08-02",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["sono", "cochilo", "metabolismo", "emagrecimento", "recuperação"],
@@ -96912,7 +96916,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Dormir depois do almoço engorda? Essa é daquelas crenças passadas de geração em geração: "não deita depois de comer que engorda". A resposta direta: não, o cochilo em si não engorda. Engordar depende de uma única equação — calorias que entram versus calorias que saem ao longo do tempo. Uma soneca de 20 minutos não altera essa conta de forma relevante.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/dormir-depois-do-almoco-engorda-infographic.svg" alt="Infográfico sobre Dormir Depois do Almoço Engorda? Mito ou Verdade — Montinho Personal Trainer" title="Dormir Depois do Almoço Engorda? Mito ou Verdade" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/dormir-depois-do-almoco-engorda.webp" alt="Dormir depois do almoço engorda? O que a ciência diz sobre a soneca pós-refeição e o ganho de peso" title="Dormir depois do almoço engorda? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -97016,6 +97020,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Chocolate tem alta densidade calórica, mas proibi-lo costuma custar mais caro do que encaixá-lo. Veja as diferenças entre amargo e ao leite e as estratégias de porção que salvam a dieta.",
     category: "Nutrição",
     date: "2026-07-28",
+    updatedAt: "2026-08-02",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["chocolate", "emagrecimento", "dieta flexível", "compulsão alimentar", "nutrição"],
@@ -97054,7 +97059,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Chocolate engorda? Como qualquer alimento de alta densidade calórica: em excesso, sim; em porções conscientes dentro de uma dieta organizada, não. A pergunta mais útil não é se o chocolate engorda, mas por que tanta gente não consegue comer só um pedaço — e o que fazer a respeito.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/chocolate-engorda-infographic.svg" alt="Infográfico sobre Chocolate Engorda? Como Encaixar Sem Sabotar a Dieta — Montinho Personal Trainer" title="Chocolate Engorda? Como Encaixar Sem Sabotar a Dieta" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/chocolate-engorda.webp" alt="Chocolate engorda? Como encaixar o chocolate na dieta de emagrecimento sem sabotar o déficit calórico" title="Chocolate engorda? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
