@@ -103940,6 +103940,737 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li>Bull FC, Al-Ansari SS, Biddle S, et al. World Health Organization 2020 guidelines on physical activity and sedentary behaviour. <em>British Journal of Sports Medicine</em>, 2020.</li>
 </ul>`,
   },
+  {
+    slug: "insonia-e-exercicio",
+    title: "Insônia: Como o Exercício Ajuda a Dormir Melhor",
+    metaTitle: "Insônia e Exercício: Como Treinar Ajuda a Dormir",
+    metaDescription:
+      "Insônia e exercício: entenda o que a ciência mostra sobre treino e qualidade do sono, qual horário treinar, o que funciona e quando procurar um médico.",
+    excerpt:
+      "O exercício é uma das intervenções não medicamentosas mais estudadas para melhorar o sono. Mas ele não é um interruptor mágico, e insônia crônica tem tratamento próprio. Aqui vai o que funciona, o que não funciona e onde está o limite.",
+    category: "Saúde",
+    date: "2026-08-05",
+    readTime: "10 min",
+    author: "Montinho Personal Trainer",
+    tags: ["insônia", "sono", "exercício", "saúde", "recuperação"],
+    faq: [
+      {
+        question:
+          "Treinar à noite atrapalha o sono?",
+        answer:
+          "Para a maioria das pessoas, não. Revisões sistemáticas mostram que exercício noturno em geral não piora o sono e pode até melhorar. A exceção são sessões muito intensas terminando menos de uma hora antes de deitar, e o uso de pré-treinos com cafeína à noite.",
+      },
+      {
+        question:
+          "Quanto tempo de exercício por semana melhora o sono?",
+        answer:
+          "As diretrizes gerais de 150 a 300 minutos semanais de atividade moderada, mais dois dias de treino de força, já cobrem a maior parte do benefício. Não é preciso volume de atleta. Consistência importa mais do que intensidade.",
+      },
+      {
+        question:
+          "Em quanto tempo eu percebo melhora no sono treinando?",
+        answer:
+          "Algumas pessoas notam diferença em uma ou duas semanas, outras levam mais de um mês. O efeito costuma ser mais claro na qualidade percebida e na facilidade de adormecer do que no número total de horas. Se em seis a oito semanas nada mudou, vale investigar outras causas.",
+      },
+      {
+        question:
+          "Exercício cura insônia?",
+        answer:
+          "Não. Exercício é um coadjuvante útil, mas o tratamento de primeira linha para insônia crônica é a Terapia Cognitivo-Comportamental para Insônia (TCC-I), recomendada por diretrizes médicas antes de medicação. Insônia persistente merece avaliação médica.",
+      },
+      {
+        question:
+          "Ronco alto e acordo cansado mesmo dormindo 8 horas. Pode ser só falta de treino?",
+        answer:
+          "Esse padrão é bastante sugestivo de apneia obstrutiva do sono, que precisa de diagnóstico médico. Exercício e perda de peso ajudam a reduzir a gravidade, mas não substituem a investigação. Procure um médico.",
+      },
+      {
+        question:
+          "Devo tomar melatonina para dormir melhor?",
+        answer:
+          "Melatonina tem uso mais respaldado em ajuste de ritmo circadiano, como jet lag e horários trocados, do que em insônia crônica clássica. Não é um sonífero. Qualquer suplementação deve passar por orientação médica, especialmente se você usa outros medicamentos.",
+      },
+    ],
+    content: `
+<p>Eu convivi anos com noites ruins. Quando eu estava com 40 kg a mais, dormir era um problema diário: eu roncava, acordava várias vezes, levantava mais cansado do que deitei e passava o dia inteiro no automático, refém de café. Quando comecei a treinar de verdade e o peso foi saindo, o sono foi uma das primeiras coisas que mudaram. Não da noite para o dia, e não como mágica — mas mudou. Por isso esse assunto me interessa tanto, e por isso também eu faço questão de ser honesto: exercício ajuda muito no sono, mas insônia crônica é um problema clínico com tratamento próprio, e não se resolve só com academia.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/insonia-e-exercicio-infographic.svg" alt="Infográfico sobre Insônia: Como o Exercício Ajuda a Dormir Melhor — Montinho Personal Trainer" title="Insônia: Como o Exercício Ajuda a Dormir Melhor" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+
+<h2>O que é insônia de verdade</h2>
+<p>Existe uma diferença importante entre "dormir mal" e "ter insônia". Dormir mal de vez em quando é normal: uma viagem, um problema no trabalho, uma noite de café demais. Insônia, no sentido clínico, é dificuldade persistente para iniciar o sono, manter o sono ou acordar cedo demais sem conseguir voltar a dormir — <strong>associada a prejuízo durante o dia</strong> (cansaço, irritabilidade, dificuldade de concentração).</p>
+<p>Quando isso acontece pelo menos três noites por semana e dura três meses ou mais, os manuais chamam de insônia crônica. É um quadro comum e bem descrito, e tem tratamento de primeira linha estabelecido — que, aliás, não é remédio, como vou explicar mais adiante.</p>
+<p>Faço essa distinção logo no começo porque muda a expectativa. Se você dorme razoavelmente bem e quer melhorar a qualidade do sono, exercício é uma alavanca excelente. Se você tem insônia crônica há meses, exercício é um coadjuvante importante, mas você precisa de mais do que isso.</p>
+
+<h2>Por que o exercício melhora o sono</h2>
+<p>Não é uma coisa só. São vários mecanismos agindo juntos, e entender isso ajuda a treinar de um jeito que favoreça o sono em vez de atrapalhar.</p>
+
+<h3>1. Pressão homeostática do sono</h3>
+<p>Existe um sistema no corpo que basicamente acumula "necessidade de dormir" ao longo do dia. Quanto mais tempo acordado e quanto maior o gasto metabólico, maior essa pressão. Atividade física aumenta esse acúmulo. Na prática, quem se mexe mais tende a chegar na noite com mais sono legítimo — e não só com cansaço mental, que é uma coisa diferente e às vezes até atrapalha.</p>
+
+<h3>2. Regulação do ritmo circadiano</h3>
+<p>Seu relógio biológico se ajusta com sinais externos: luz, alimentação, temperatura e atividade física. Treinar em horários razoavelmente consistentes, especialmente com exposição à luz natural, ajuda a ancorar esse relógio. Quem treina ao ar livre pela manhã costuma relatar o efeito mais forte, porque soma exercício com luz solar — dois dos sinais mais potentes que existem.</p>
+
+<h3>3. Temperatura corporal</h3>
+<p>O corpo precisa baixar a temperatura central para iniciar o sono. O exercício eleva a temperatura durante a sessão e, nas horas seguintes, ela cai — e essa queda favorece o adormecer. É por isso que treinar de tarde ou início da noite funciona bem para muita gente: a curva de queda coincide com a hora de deitar.</p>
+
+<h3>4. Ansiedade, humor e ruminação</h3>
+<p>Boa parte da insônia é mantida por ansiedade e pensamento acelerado na hora de deitar. Exercício tem efeito consistente na redução de sintomas ansiosos e depressivos. Também ajuda na regulação da resposta ao estresse — e vale a pena entender melhor como isso funciona lendo sobre <a href="/blog/cortisol-e-treino">cortisol e treino</a>, porque o cortisol elevado à noite é um dos vilões clássicos de quem não desliga.</p>
+
+<h3>5. Composição corporal e apneia</h3>
+<p>Esse foi o meu caso. Excesso de peso, principalmente na região do pescoço e do abdômen, aumenta muito o risco de apneia obstrutiva do sono — pausas respiratórias que fragmentam a noite sem que a pessoa perceba. Emagrecer reduz a gravidade da apneia em boa parte dos casos. Se você ronca alto, acorda engasgado ou dorme oito horas e acorda destruído, esse é um alerta sério: leia sobre <a href="/blog/apneia-do-sono-e-exercicio">apneia do sono e exercício</a> e procure avaliação médica.</p>
+
+<h2>Que tipo de exercício funciona melhor</h2>
+<p>A resposta honesta: o que você consegue manter. Os estudos mostram benefício tanto com exercício aeróbico quanto com treino de força, e as combinações costumam ir bem. Não existe um protocolo mágico do sono.</p>
+<ul>
+<li><strong>Aeróbico moderado e contínuo</strong> — caminhada rápida, bicicleta, corrida leve. É o tipo mais estudado em insônia e o de resultado mais consistente. Se você está começando do zero, <a href="/blog/exercicio-para-sedentario">exercício para sedentário</a> é o ponto de partida certo.</li>
+<li><strong>Musculação</strong> — tem evidência crescente de melhora na qualidade subjetiva do sono e no tempo de sono profundo, além de todos os outros benefícios estruturais.</li>
+<li><strong>Caminhada</strong> — subestimada. É de baixo impacto, fácil de encaixar e some com a desculpa de "não tenho tempo". Vale ler sobre <a href="/blog/caminhada-emagrece">o que a caminhada realmente faz</a>.</li>
+<li><strong>Treino de altíssima intensidade tarde da noite</strong> — para uma parte das pessoas, atrapalha. Não para todas, mas se você é sensível, é o primeiro suspeito.</li>
+</ul>
+<p>Sobre volume: as diretrizes de atividade física falam em 150 a 300 minutos semanais de atividade moderada, mais dois dias de força. Isso já é suficiente para colher a maior parte dos benefícios no sono. Não é preciso virar atleta.</p>
+
+<h2>Qual o melhor horário para treinar?</h2>
+<p>Essa é a dúvida que mais recebo. A crença popular de que "treinar à noite estraga o sono" é bem mais frágil do que parece. Revisões que juntaram vários estudos mostram que exercício à noite, no geral, <strong>não prejudica</strong> o sono da maioria das pessoas — e pode até melhorar. A ressalva real é: sessões muito intensas terminando menos de uma hora antes de deitar tendem a atrapalhar mais.</p>
+<p>Minha recomendação prática:</p>
+<ol>
+<li>Treine no horário em que você consegue ser <strong>consistente</strong>. Consistência vence otimização.</li>
+<li>Se treinar à noite, tente terminar pelo menos 1h30 a 2h antes de deitar.</li>
+<li>Se você é sensível a estimulantes, corte pré-treino com cafeína à noite. A cafeína tem meia-vida longa e é uma causa mais comum de insônia do que o treino em si.</li>
+<li>Teste. O corpo de cada um responde diferente. Duas semanas de teste com anotação valem mais do que qualquer regra genérica.</li>
+</ol>
+
+<h2>O que o exercício NÃO resolve</h2>
+<p>Aqui eu preciso ser bem direto, porque é onde a maioria dos conteúdos sobre o tema falha.</p>
+<p><strong>O tratamento de primeira linha para insônia crônica é a Terapia Cognitivo-Comportamental para Insônia (TCC-I)</strong> — não é remédio e não é academia. As principais diretrizes médicas, incluindo as do Colégio Americano de Médicos, recomendam a TCC-I como primeira escolha, antes de medicação. Ela trabalha restrição de tempo na cama, controle de estímulos e reestruturação das crenças sobre o sono, com efeito que se mantém depois do fim do tratamento.</p>
+<p>Exercício entra como suporte valioso. Ele melhora o terreno. Mas se você tem insônia há meses, sofre para dormir toda semana e isso está atrapalhando sua vida, treinar mais não vai substituir uma avaliação adequada. Procure um médico — de preferência com experiência em medicina do sono. Insônia persistente também pode ser sintoma de outra coisa: apneia, tireoide, depressão, ansiedade, dor crônica, efeito de medicamentos. Se além da insônia você anda arrastando o corpo o dia todo, vale checar exames simples — inclusive <a href="/blog/vitamina-d-baixa-sintomas">vitamina D baixa</a>, que costuma passar despercebida.</p>
+<p>E não, eu não vou prometer que treinar vai curar sua insônia. Não é assim que funciona. O que eu posso dizer com segurança é que, para a grande maioria das pessoas, adicionar atividade física regular melhora algum aspecto do sono — e não tem efeito colateral ruim.</p>
+
+<h2>O básico que quase ninguém faz direito</h2>
+<p>Antes de procurar soluções sofisticadas, vale checar o feijão com arroz. Na minha experiência acompanhando alunos, boa parte das queixas de sono melhora só com isso:</p>
+<ul>
+<li><strong>Horário fixo para acordar</strong>, inclusive fim de semana. Esse é o mais poderoso e o mais ignorado. Ancorar o despertar organiza o resto.</li>
+<li><strong>Luz natural pela manhã</strong> — 10 a 20 minutos ao ar livre nas primeiras horas do dia.</li>
+<li><strong>Cafeína até o começo da tarde.</strong> Se você toma café às 18h e não dorme às 23h, o problema não é misterioso.</li>
+<li><strong>Álcool não é sedativo bom.</strong> Ele até acelera o adormecer, mas fragmenta a segunda metade da noite e piora a apneia.</li>
+<li><strong>Cama é para dormir.</strong> Se passar mais de 20 minutos rolando, levante, vá para outro cômodo com luz fraca e volte quando o sono vier.</li>
+</ul>
+
+<h2>Sono, treino e resultado: a via de mão dupla</h2>
+<p>Não é só o exercício que melhora o sono — o sono também determina o quanto o exercício rende. Dormir mal reduz força, prejudica recuperação, aumenta percepção de esforço e mexe com apetite e escolhas alimentares. Quem dorme pouco tende a comer mais e pior, o que atrapalha diretamente qualquer processo de emagrecimento.</p>
+<p>Se você quer entender esse lado, vale ler sobre <a href="/blog/sono-e-crescimento-muscular">sono e crescimento muscular</a> e sobre como <a href="/blog/otimizar-sono-para-recuperacao-muscular">otimizar o sono para a recuperação</a>. É um ciclo: treino melhora sono, sono melhora treino. Quando você entra nesse ciclo, os dois lados se puxam para cima. Quando sai, os dois despencam juntos.</p>
+
+<h2>Como eu montaria a primeira semana</h2>
+<p>Se você quer algo prático, faria assim:</p>
+<ol>
+<li><strong>Dias 1 a 7:</strong> horário fixo de acordar, 15 minutos de luz natural de manhã, cafeína só até as 14h.</li>
+<li><strong>Semana 2:</strong> adicione 30 minutos de caminhada em 4 dias, de preferência ao ar livre.</li>
+<li><strong>Semana 3 e 4:</strong> inclua dois treinos de força por semana. Nada heroico — o suficiente para sair cansado, não destruído.</li>
+<li><strong>A partir daí:</strong> mantenha e observe. Anote hora de deitar, quanto demorou para dormir e como acordou.</li>
+</ol>
+<p>Se depois de seis a oito semanas de rotina consistente o sono continuar ruim, não insista sozinho — procurar ajuda profissional nesse ponto não é fracasso, é a decisão inteligente.</p>
+
+<p>Sono e recuperação andam juntos: neste Short do meu canal eu falo sobre por que descansar faz parte do treino:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar todos os dias faz mal? O que a fisiologia diz" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<h2>Referências</h2>
+<ul>
+<li>Qaseem A, et al. <em>Management of Chronic Insomnia Disorder in Adults: A Clinical Practice Guideline from the American College of Physicians.</em> Annals of Internal Medicine, 2016.</li>
+<li>Kredlow MA, et al. <em>The effects of physical activity on sleep: a meta-analytic review.</em> Journal of Behavioral Medicine, 2015.</li>
+<li>Stutz J, Eiholzer R, Spengler CM. <em>Effects of Evening Exercise on Sleep in Healthy Participants: A Systematic Review and Meta-Analysis.</em> Sports Medicine, 2019.</li>
+</ul>`,
+  },
+  {
+    slug: "anemia-e-treino",
+    title: "Anemia e Treino: Como o Ferro Baixo Derruba o Rendimento",
+    metaTitle: "Anemia e Treino: Ferro Baixo Derruba o Rendimento",
+    metaDescription:
+      "Anemia e treino: entenda como ferro e ferritina baixos derrubam seu rendimento, quais sintomas observar, que exames pedir e por que não se automedica.",
+    excerpt:
+      "Ferro baixo tira força, fôlego e disposição muito antes de virar anemia no exame. Entenda os sinais, os exames que importam e por que suplementar por conta própria é uma péssima ideia.",
+    category: "Saúde",
+    date: "2026-08-05",
+    readTime: "10 min",
+    author: "Montinho Personal Trainer",
+    tags: ["anemia", "ferro", "ferritina", "rendimento", "saúde"],
+    faq: [
+      {
+        question:
+          "Dá para ter falta de ferro com hemograma normal?",
+        answer:
+          "Sim, e é comum. A ferritina, que mede os estoques, cai antes da hemoglobina. Nessa fase você pode já sentir cansaço e queda de rendimento com um hemograma aparentemente bom. Por isso o médico costuma avaliar ferritina e outros marcadores junto.",
+      },
+      {
+        question:
+          "Posso tomar ferro por conta própria se me sinto cansado?",
+        answer:
+          "Não. Ferro em excesso é tóxico e o corpo não tem como eliminar o que absorve em excesso. Além disso, suplementar sem diagnóstico pode mascarar causas sérias, como sangramento digestivo. Diagnóstico e prescrição são médicos.",
+      },
+      {
+        question:
+          "Quanto tempo leva para o rendimento voltar depois de tratar anemia?",
+        answer:
+          "A hemoglobina costuma começar a subir em algumas semanas, mas repor os estoques de ferro geralmente leva de dois a três meses. O rendimento acompanha essa curva, e a volta ao volume de treino anterior deve ser progressiva.",
+      },
+      {
+        question:
+          "Vegetarianos precisam de mais ferro?",
+        answer:
+          "Como o ferro vegetal é bem menos absorvido, as recomendações costumam ser mais altas para quem não come carne. Combinar fontes vegetais com vitamina C e afastar café e chá das refeições ajuda bastante, mas o acompanhamento com exames é ainda mais importante nesse grupo.",
+      },
+      {
+        question:
+          "Corredores têm mais risco de ferro baixo?",
+        answer:
+          "Sim. Perda pelo suor, microssangramento intestinal, hemólise pelo impacto da pisada e o aumento da hepcidina após esforço intenso somam-se e aumentam o risco, especialmente em mulheres e em quem faz volumes altos.",
+      },
+      {
+        question:
+          "Suco de laranja com feijão realmente ajuda?",
+        answer:
+          "Ajuda, sim. A vitamina C aumenta de forma relevante a absorção do ferro não-heme presente em feijão, lentilha e folhas. É um ajuste simples, barato e com boa base científica — embora não substitua tratamento quando já existe deficiência.",
+      },
+    ],
+    content: `
+<p>Tem um tipo de aluno que eu aprendi a reconhecer rápido. Ele treina certinho, come razoavelmente bem, dorme o que dá — e mesmo assim vive arrastado. Fica sem ar subindo dois lances de escada. Perde carga do nada. Fica pálido e reclama de tontura ao levantar. Quando eu sugiro um exame de sangue, uma parte considerável volta com o mesmo achado: ferro ou ferritina lá embaixo. Não é a explicação de todo cansaço, mas é uma das mais comuns e uma das mais ignoradas.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/anemia-e-treino-infographic.svg" alt="Infográfico sobre Anemia e Treino: Como o Ferro Baixo Derruba o Rendimento — Montinho Personal Trainer" title="Anemia e Treino: Como o Ferro Baixo Derruba o Rendimento" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+
+<h2>O que o ferro faz no seu corpo</h2>
+<p>O ferro é o componente central da hemoglobina, a proteína dentro das hemácias que carrega oxigênio do pulmão para os músculos. Ele também compõe a mioglobina, que estoca oxigênio no tecido muscular, e faz parte de enzimas da cadeia respiratória mitocondrial — onde a energia é de fato produzida.</p>
+<p>Traduzindo para a academia: sem ferro suficiente, seu sangue transporta menos oxigênio, seu músculo armazena menos oxigênio e sua mitocôndria produz energia com menos eficiência. Os três ao mesmo tempo. Não tem treino que compense isso.</p>
+
+<h3>Anemia não é a primeira parada</h3>
+<p>Esse é o ponto que mais gera confusão. A deficiência de ferro acontece em estágios:</p>
+<ol>
+<li><strong>Depleção dos estoques:</strong> a ferritina cai, mas a hemoglobina ainda está normal. O hemograma vem "bom". Aqui já pode haver queda de rendimento e cansaço.</li>
+<li><strong>Deficiência sem anemia:</strong> os estoques estão vazios, a produção de hemácias começa a sofrer, mas a hemoglobina ainda não cruzou o limite. Sintomas ficam mais claros.</li>
+<li><strong>Anemia ferropriva:</strong> a hemoglobina cai. Aqui o hemograma finalmente acusa.</li>
+</ol>
+<p>Ou seja: <strong>é perfeitamente possível estar mal por falta de ferro com hemograma normal.</strong> Por isso pedir só hemograma pode não contar a história toda, e por isso quem tem sintomas persistentes precisa de um médico avaliando o conjunto — não de um autodiagnóstico pelo Google.</p>
+
+<h2>Sintomas que aparecem no treino</h2>
+<p>A queixa clássica é cansaço, mas quem treina percebe sinais mais específicos e mais cedo:</p>
+<ul>
+<li><strong>Falta de ar desproporcional</strong> em esforços que antes eram tranquilos.</li>
+<li><strong>Frequência cardíaca alta demais</strong> para o ritmo que você está fazendo. O corpo tenta compensar o menor transporte de oxigênio bombeando mais.</li>
+<li><strong>Perda de resistência antes da perda de força.</strong> A série de 12 fica insuportável, mas o pico de força cai menos.</li>
+<li><strong>Recuperação lenta</strong> entre séries e entre treinos.</li>
+<li><strong>Percepção de esforço inflada</strong> — tudo parece mais pesado do que a carga justifica.</li>
+<li><strong>Palidez, unhas quebradiças, queda de cabelo, tontura ao levantar, mãos e pés frios.</strong></li>
+<li><strong>Síndrome das pernas inquietas</strong> e vontade estranha de mastigar gelo — sinais menos conhecidos, mas bem associados a ferro baixo.</li>
+</ul>
+<p>Nada disso, isoladamente, fecha diagnóstico. Cansaço tem muitas causas e mais de uma pode coexistir — vale conhecer também os quadros de <a href="/blog/hipotireoidismo-e-musculacao">hipotireoidismo</a>, <a href="/blog/vitamina-d-baixa-sintomas">vitamina D baixa</a> e <a href="/blog/apneia-do-sono-e-exercicio">apneia do sono</a>, que produzem sintomas parecidos.</p>
+
+<h2>Quem tem mais risco</h2>
+<p>Deficiência de ferro é a carência nutricional mais prevalente do mundo. Alguns grupos merecem atenção redobrada:</p>
+<ul>
+<li><strong>Mulheres em idade fértil</strong>, principalmente com fluxo menstrual intenso. É de longe o grupo mais afetado.</li>
+<li><strong>Gestantes</strong>, pela demanda aumentada.</li>
+<li><strong>Vegetarianos e veganos</strong>, porque o ferro vegetal (não-heme) é bem menos absorvido que o de origem animal.</li>
+<li><strong>Atletas de endurance</strong>, especialmente corredores. Existe perda por suor, por microssangramento intestinal e pela chamada hemólise de impacto — o rompimento de hemácias pela pisada repetida. Some-se a isso a hepcidina, um hormônio que sobe após exercício intenso e reduz temporariamente a absorção de ferro.</li>
+<li><strong>Pessoas com sangramento digestivo, doença celíaca, gastrite, uso crônico de inibidores de bomba de prótons</strong> ou cirurgia bariátrica.</li>
+</ul>
+<p>Um detalhe que vale sublinhar: em homens adultos e mulheres na pós-menopausa, deficiência de ferro <strong>não é normal</strong> e deve levar à investigação da causa, porque pode indicar sangramento no trato digestivo. Isso é assunto médico, e é sério.</p>
+
+<h2>Os exames que importam</h2>
+<p>Eu não peço exames, não interpreto exames e não prescrevo nada — isso é papel do médico. Mas ajuda saber o que costuma entrar na conta para você conversar melhor na consulta:</p>
+<ul>
+<li><strong>Hemograma completo</strong> — hemoglobina, hematócrito, VCM e HCM. Anemia ferropriva clássica dá hemácias pequenas e pálidas.</li>
+<li><strong>Ferritina</strong> — o marcador de estoque. É o que costuma cair primeiro. Importante: ferritina também é proteína de fase aguda, ou seja, sobe em inflamação e infecção, o que pode mascarar deficiência.</li>
+<li><strong>Ferro sérico, transferrina e saturação de transferrina</strong> — completam o quadro.</li>
+<li><strong>Proteína C reativa</strong> — ajuda a interpretar a ferritina no contexto certo.</li>
+</ul>
+<p>Existe discussão legítima na literatura esportiva sobre limiares de ferritina mais altos para atletas do que os usados na população geral, justamente porque o rendimento sofre antes da anemia se instalar. Mas isso é decisão clínica, caso a caso.</p>
+
+<h2>Por que NÃO suplementar por conta própria</h2>
+<p>Esse é o recado mais importante do texto. Ferro em cápsula é vendido livremente, é barato e virou moda na internet. E é uma péssima ideia tomar sem indicação.</p>
+<p>Primeiro, porque <strong>ferro em excesso é tóxico</strong>. O corpo humano não tem mecanismo eficiente de excreção do ferro absorvido. O acúmulo crônico pode causar sobrecarga com dano em fígado, coração e pâncreas. Quem tem hemocromatose hereditária — condição mais comum do que se imagina — pode se prejudicar seriamente suplementando às cegas.</p>
+<p>Segundo, porque <strong>tratar sem diagnosticar mascara a causa</strong>. Se o ferro está baixo por sangramento intestinal, tomar cápsula melhora o exame e atrasa a descoberta de um problema que podia ser grave.</p>
+<p>Terceiro, porque <strong>efeitos colaterais são reais</strong>: náusea, constipação, dor abdominal, fezes escuras. Muita gente abandona o tratamento correto por tomar do jeito errado.</p>
+<p>Diagnóstico e prescrição de ferro são médicos. Ponto. Meu papel é o treino — e o de te empurrar para a consulta quando os sinais aparecem.</p>
+
+<h2>O que dá para fazer pela alimentação</h2>
+<p>Alimentação não trata anemia instalada, mas sustenta os estoques e ajuda na prevenção. Vale entender a diferença entre os dois tipos de ferro:</p>
+<ul>
+<li><strong>Ferro heme</strong> (carnes vermelhas, fígado, aves, peixes): absorção alta, na faixa de 15% a 35%, e pouco afetada por outros componentes da refeição.</li>
+<li><strong>Ferro não-heme</strong> (feijão, lentilha, grão-de-bico, folhas escuras, tofu): absorção bem menor, entre 2% e 20%, e muito influenciada pelo que acompanha.</li>
+</ul>
+<p>Dois ajustes simples com boa evidência:</p>
+<ol>
+<li><strong>Vitamina C junto da refeição</strong> aumenta bastante a absorção do ferro vegetal. Um copo de suco de laranja, limão no feijão, tomate na salada.</li>
+<li><strong>Café e chá longe das refeições principais.</strong> Os polifenóis reduzem a absorção de forma significativa. Cálcio em dose alta no mesmo horário também compete.</li>
+</ol>
+<p>Se quiser montar o cardápio direito, escrevi um guia sobre <a href="/blog/alimentos-ricos-em-ferro">alimentos ricos em ferro</a> com as principais fontes e quantidades. E vale lembrar que a base alimentar precisa estar de pé como um todo: <a href="/blog/alimentos-ricos-em-proteina">proteína adequada</a> e calorias suficientes fazem parte da mesma conta.</p>
+
+<h2>Como treinar enquanto o quadro está sendo corrigido</h2>
+<p>Se você foi diagnosticado e está em tratamento, algumas orientações práticas que costumo dar:</p>
+<ul>
+<li><strong>Não force o mesmo volume de antes.</strong> Seu transporte de oxigênio está reduzido; insistir só acumula desgaste sem estímulo produtivo.</li>
+<li><strong>Reduza o volume aeróbico intenso</strong> temporariamente. Trabalho leve a moderado segue valendo.</li>
+<li><strong>Mantenha o treino de força</strong>, com carga ajustada e séries mais longe da falha. Preservar massa muscular é prioridade em qualquer cenário.</li>
+<li><strong>Espere semanas, não dias.</strong> Repor estoques leva de dois a três meses de tratamento na maioria dos casos, mesmo quando a hemoglobina normaliza antes.</li>
+<li><strong>Volte progressivamente</strong> conforme a energia retorna. Voltar com tudo em duas semanas é receita para lesão — o assunto está detalhado em <a href="/blog/como-prevenir-lesoes-no-treino">como prevenir lesões no treino</a>.</li>
+</ul>
+<p>Se você está no início e nem sabe por onde recomeçar, <a href="/blog/exercicio-para-sedentario">exercício para sedentário</a> tem um caminho seguro de retomada.</p>
+
+<h2>Meu recado final</h2>
+<p>Eu perdi 40 kg e sei o que é passar anos achando que cansaço era característica de personalidade. Não era. Era o corpo funcionando mal. A diferença é que, no meu caso, a causa era o peso e o sedentarismo — no seu, pode ser outra coisa, e ferro baixo é uma das candidatas mais frequentes e mais tratáveis.</p>
+<p>O que eu peço é simples: se você treina há semanas com boa alimentação e sono razoável, e mesmo assim o rendimento não sai do lugar, pare de tentar resolver com mais treino. Marque uma consulta, faça os exames, descubra o que está acontecendo. Treinar em cima de um problema não corrigido não é disciplina — é desperdício.</p>
+
+<p>Quando a energia está baixa, ajustar o volume do treino ajuda mais do que insistir — falo sobre duração de treino neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Quanto tempo deve durar o seu treino na academia" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<h2>Referências</h2>
+<ul>
+<li>Camaschella C. <em>Iron Deficiency.</em> Blood, 2019.</li>
+<li>Sim M, Garvican-Lewis LA, Cox GR, et al. <em>Iron considerations for the athlete: a narrative review.</em> European Journal of Applied Physiology, 2019.</li>
+<li>Pasricha SR, Tye-Din J, Muckenthaler MU, Swinkels DW. <em>Iron deficiency.</em> The Lancet, 2021.</li>
+</ul>`,
+  },
+  {
+    slug: "varizes-e-musculacao",
+    title: "Varizes: Pode Fazer Musculação?",
+    metaTitle: "Varizes e Musculação: Pode Treinar? O Que Saber",
+    metaDescription:
+      "Varizes e musculação: entenda se pode treinar, quais mitos não se sustentam, como ajustar exercícios e por que a avaliação vascular é indispensável.",
+    excerpt:
+      "Musculação não causa varizes e, na maioria dos casos, é segura e até favorável à circulação. Mas o quadro é individual e quem decide o que pode ou não é o cirurgião vascular. Aqui vão os fatos e os ajustes práticos.",
+    category: "Saúde",
+    date: "2026-08-05",
+    readTime: "10 min",
+    author: "Montinho Personal Trainer",
+    tags: ["varizes", "musculação", "circulação", "saúde", "pernas"],
+    faq: [
+      {
+        question:
+          "Agachamento causa varizes?",
+        answer:
+          "Não há evidência de que agachar cause varizes. Elas resultam principalmente de genética, hormônios, gestações, idade, obesidade e imobilidade prolongada. A contração muscular durante o exercício na verdade favorece o retorno venoso.",
+      },
+      {
+        question:
+          "Quem tem varizes pode fazer musculação?",
+        answer:
+          "Na grande maioria dos casos, sim, e a atividade física é recomendada como parte do manejo da doença venosa. O que muda é o ajuste de carga, volume e comportamento entre séries. A liberação deve vir de um angiologista ou cirurgião vascular que conheça o seu quadro.",
+      },
+      {
+        question:
+          "Musculação faz varizes sumirem?",
+        answer:
+          "Não. Válvulas venosas danificadas não se recuperam com exercício. O treino melhora sintomas como peso e inchaço e a eficiência da bomba muscular, mas o tratamento da variz em si é médico: escleroterapia, laser, radiofrequência ou cirurgia.",
+      },
+      {
+        question:
+          "Prender a respiração no agachamento é ruim para varizes?",
+        answer:
+          "A manobra de Valsalva aumenta a pressão abdominal e dificulta momentaneamente o retorno venoso. Em quadros mais avançados, vale evitar séries longas com apneia prolongada e cargas máximas frequentes. Isso é um ajuste de dose, não uma proibição de treinar.",
+      },
+      {
+        question:
+          "Preciso usar meia de compressão para treinar?",
+        answer:
+          "Meias de compressão graduada têm boa evidência para alívio de sintomas e controle de inchaço, e alguns médicos indicam uso durante o exercício. Como existem classes de compressão diferentes, a indicação deve partir do médico e não da escolha na farmácia.",
+      },
+      {
+        question:
+          "Qual exercício é melhor para circulação das pernas?",
+        answer:
+          "Caminhada, bicicleta, natação e hidroginástica são excelentes, e elevação de panturrilha treina diretamente a bomba muscular. O pior para o sistema venoso não é nenhum exercício específico, e sim ficar longos períodos em pé ou sentado sem se mover.",
+      },
+    ],
+    content: `
+<p>"Montinho, agachamento causa varizes?" Essa pergunta aparece na academia com uma frequência impressionante, quase sempre vinda de alunas que já têm alguma veia aparente e estão com medo de piorar. A resposta curta é não — agachamento não causa varizes. A resposta longa é mais interessante, porque envolve entender o que realmente acontece nas veias das pernas e onde existe, sim, motivo para ajuste e para uma avaliação médica.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/varizes-e-musculacao-infographic.svg" alt="Infográfico sobre Varizes: Pode Fazer Musculação? — Montinho Personal Trainer" title="Varizes: Pode Fazer Musculação?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+
+<h2>O que são varizes, de verdade</h2>
+<p>As veias das pernas têm uma missão difícil: levar sangue de volta ao coração contra a gravidade. Elas fazem isso com dois recursos. O primeiro são válvulas internas, que funcionam como portinhas de mão única e impedem o sangue de descer de volta. O segundo é a chamada bomba muscular da panturrilha: cada vez que você contrai a panturrilha, ela espreme as veias profundas e empurra o sangue para cima.</p>
+<p>Varizes surgem quando essas válvulas param de fechar direito. O sangue reflui, a pressão dentro da veia aumenta, a parede se distende e ela vai ficando dilatada e tortuosa. É um processo chamado insuficiência venosa crônica, e ele é progressivo.</p>
+<p>Os principais fatores de risco são bem estabelecidos e a maioria não tem nada a ver com academia:</p>
+<ul>
+<li><strong>Genética</strong> — de longe o mais forte. Se pai e mãe têm, seu risco é alto.</li>
+<li><strong>Sexo feminino</strong> e influência hormonal.</li>
+<li><strong>Gestações</strong>, pelo aumento de volume sanguíneo e pressão abdominal.</li>
+<li><strong>Idade</strong>, pelo desgaste natural das válvulas.</li>
+<li><strong>Obesidade</strong>.</li>
+<li><strong>Ficar muito tempo em pé ou sentado parado</strong> — a bomba muscular não trabalha, o sangue estagna.</li>
+</ul>
+<p>Repare no último item. O grande vilão da circulação venosa é a <strong>imobilidade</strong>, não o movimento.</p>
+
+<h2>Desmontando os mitos</h2>
+
+<h3>Mito 1: "Agachamento causa varizes"</h3>
+<p>Não existe evidência de que agachar cause insuficiência venosa. O que existe é uma coincidência estatística mal interpretada: muita gente começa a treinar na fase da vida em que as varizes naturalmente aparecem, e passa a reparar mais nas pernas depois que começa a se olhar no espelho. Correlação temporal não é causa.</p>
+<p>Além disso, a contração muscular durante o agachamento e a caminhada faz exatamente o que o sistema venoso precisa: bombeia sangue para cima. Se você tem dúvidas sobre a execução em si, o ponto crítico do agachamento é técnico, não vascular — vale ler sobre <a href="/blog/dor-no-joelho-no-agachamento">dor no joelho no agachamento</a> para separar as coisas.</p>
+
+<h3>Mito 2: "Musculação faz veia saltar"</h3>
+<p>Aquela veia que salta no braço e na perna de quem treina não é variz. São veias superficiais normais que ficam mais visíveis por dois motivos: menos gordura subcutânea e maior fluxo sanguíneo local. Elas são retas, não doem e desaparecem quando você deita. Variz é tortuosa, dilatada de forma irregular, costuma dar peso e cansaço nas pernas e não some ao deitar.</p>
+
+<h3>Mito 3: "Quem tem variz não pode treinar perna"</h3>
+<p>Falso na esmagadora maioria dos casos. Sociedades vasculares recomendam atividade física regular como parte do manejo da insuficiência venosa. Treino de força da panturrilha melhora a capacidade da bomba muscular, e existem estudos mostrando ganho funcional em pacientes com doença venosa após programas de exercício supervisionado.</p>
+
+<h3>Mito 4: "Treino trata ou cura variz"</h3>
+<p>Também falso, e essa é a parte que exige honestidade. Exercício <strong>não faz a variz sumir</strong>. Válvula danificada não se regenera com treino. O que o exercício faz é melhorar os sintomas — sensação de peso, inchaço, cansaço — e o funcionamento geral do retorno venoso. Quem trata a variz em si é o médico, com escleroterapia, laser, radiofrequência ou cirurgia, conforme o caso.</p>
+
+<h2>Onde existe motivo legítimo de atenção</h2>
+<p>Nada disso significa que qualquer treino serve para qualquer pessoa. Existem situações que merecem cuidado real:</p>
+<h3>Manobra de Valsalva</h3>
+<p>Prender a respiração e fazer força — a manobra de Valsalva — aumenta bastante a pressão intra-abdominal, e isso momentaneamente dificulta o retorno venoso das pernas. Em cargas altas de agachamento e levantamento terra, isso é inevitável e faz parte da estabilização do tronco. O ponto é a dose: séries longuíssimas com apneia prolongada e cargas máximas repetidas, dia após dia, não são a melhor escolha para quem tem doença venosa mais avançada. Isso não proíbe o exercício, mas justifica ajustar volume e intensidade.</p>
+<h3>Ficar muito tempo em pé parado</h3>
+<p>Aqui está um detalhe curioso: descansar em pé e imóvel entre séries é pior para as veias do que o próprio exercício. Se você tem varizes, caminhe entre as séries em vez de ficar plantado ao lado do aparelho.</p>
+<h3>Impacto e progressão brusca</h3>
+<p>Não é que impacto piore variz. Mas pernas que já doem e incham com facilidade toleram mal aumentos bruscos de volume. Progressão gradual vale sempre.</p>
+
+<h2>Como eu monto o treino de quem tem varizes</h2>
+<p>Sempre depois de liberação médica, e sempre respeitando o que o angiologista ou cirurgião vascular orientou. Dito isso, o esqueleto costuma ser assim:</p>
+<ul>
+<li><strong>Panturrilha em destaque.</strong> Elevação de panturrilha em pé e sentada, com boa amplitude e controle. É o treino direto da bomba muscular. Faixas de 12 a 20 repetições funcionam bem.</li>
+<li><strong>Trabalho de perna completo</strong> — agachamento, leg press, cadeira extensora, flexora, stiff. Sem proibições genéricas, com carga que permita respirar de forma razoável.</li>
+<li><strong>Exercícios deitados ou com pernas elevadas</strong> como complemento. Leg press, mesa flexora e abdução deitada favorecem o retorno pela posição.</li>
+<li><strong>Aeróbico de baixo impacto</strong> — caminhada, bicicleta, elíptico e principalmente natação e hidroginástica, onde a pressão da água ajuda o retorno venoso. A <a href="/blog/caminhada-emagrece">caminhada</a> é provavelmente a melhor relação custo-benefício aqui.</li>
+<li><strong>Mobilidade de tornozelo.</strong> Tornozelo travado reduz a eficiência da bomba da panturrilha. Vale trabalhar isso.</li>
+<li><strong>Evitar ficar imóvel em pé</strong> nos descansos.</li>
+</ul>
+<p>Se você está saindo do zero, comece pelo caminho seguro descrito em <a href="/blog/exercicio-para-sedentario">exercício para sedentário</a> e suba a partir dali. E, como em qualquer início, os princípios de <a href="/blog/como-prevenir-lesoes-no-treino">prevenção de lesões</a> valem integralmente.</p>
+
+<h2>O papel do peso corporal</h2>
+<p>Obesidade é fator de risco reconhecido para insuficiência venosa. Mais peso significa mais pressão abdominal, mais volume sanguíneo e mais carga sobre um sistema já sobrecarregado. Não é o único fator — gente magra tem varizes por genética — mas é dos poucos que você consegue modificar.</p>
+<p>Eu perdi 40 kg e uma das coisas que mais mudou foi o quanto minhas pernas doíam no fim do dia. Não era variz no meu caso, era peso puro e circulação preguiçosa. Mas o mecanismo se sobrepõe: reduzir gordura corporal e aumentar a atividade da musculatura das pernas melhora sintomas de peso e inchaço em muita gente. Não promete acabar com a variz. Promete um corpo que trabalha menos para fazer a mesma coisa.</p>
+
+<h2>Meias de compressão e outras medidas</h2>
+<p>Meias de compressão graduada têm boa evidência para alívio de sintomas e controle de edema, e são frequentemente indicadas por médicos, inclusive para uso durante o exercício em alguns casos. Mas compressão tem classes e níveis diferentes, e a escolha errada pode ser inútil ou desconfortável. Quem indica a classe é o médico.</p>
+<p>Outras medidas com respaldo: elevar as pernas em alguns momentos do dia, evitar longos períodos imóvel, manter hidratação adequada e cuidar da pele das pernas. Nada disso substitui tratamento, mas soma no dia a dia.</p>
+
+<h2>Quando parar e procurar médico com urgência</h2>
+<p>Existem sinais que não são para ignorar nem para resolver com ajuste de treino:</p>
+<ul>
+<li>Dor súbita, intensa e localizada na panturrilha, com inchaço assimétrico, calor e vermelhidão — pode indicar trombose venosa profunda e é emergência.</li>
+<li>Mudança de cor da pele do tornozelo, escurecimento, endurecimento.</li>
+<li>Feridas ou úlceras que não cicatrizam perto do tornozelo.</li>
+<li>Sangramento de uma variz.</li>
+<li>Piora rápida de inchaço em uma perna só.</li>
+</ul>
+<p>Nesses casos, treino é a última das preocupações. Procure atendimento.</p>
+
+<h2>Resumindo com honestidade</h2>
+<p>Musculação, na esmagadora maioria dos casos, é segura para quem tem varizes e provavelmente ajuda mais do que atrapalha, porque ativa a bomba muscular e ataca fatores de risco como obesidade e sedentarismo. Ela não causa varizes e não vai fazê-las desaparecer.</p>
+<p>Mas insuficiência venosa é doença, e doença é território médico. O grau do seu quadro, se há refluxo em veia profunda ou superficial, se existe indicação de procedimento — nada disso se avalia na academia. Vá ao angiologista ou cirurgião vascular, leve suas dúvidas sobre treino para a consulta e depois volte com as orientações. É assim que se faz direito: cada um no seu papel, sem que ninguém tenha que adivinhar.</p>
+
+<p>Este Short não é sobre varizes: é sobre manter a constância no treino, que é o que sustenta qualquer adaptação de longo prazo:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<h2>Referências</h2>
+<ul>
+<li>Gloviczki P, et al. <em>The care of patients with varicose veins and associated chronic venous diseases: clinical practice guidelines of the Society for Vascular Surgery and the American Venous Forum.</em> Journal of Vascular Surgery, 2011.</li>
+<li>Araujo DN, et al. <em>Physical exercise for the treatment of non-ulcerated chronic venous insufficiency.</em> Cochrane Database of Systematic Reviews, 2016.</li>
+<li>Nicolaides A, et al. <em>Management of chronic venous disorders of the lower limbs: guidelines according to scientific evidence.</em> International Angiology, 2018.</li>
+</ul>`,
+  },
+  {
+    slug: "cansaco-e-falta-de-disposicao",
+    title: "Cansaço o Dia Todo: Falta de Treino ou Algo Mais?",
+    metaTitle: "Cansaço o Dia Todo: Falta de Treino ou Algo Mais?",
+    metaDescription:
+      "Cansaço e falta de disposição: entenda as causas tratáveis pelo estilo de vida, os sinais de alerta que exigem investigação médica e por onde começar hoje.",
+    excerpt:
+      "Cansaço constante às vezes é sedentarismo, sono ruim e alimentação bagunçada. Mas também pode ser anemia, tireoide, apneia ou depressão. Aqui vai como separar o que você resolve sozinho do que precisa de médico.",
+    category: "Saúde",
+    date: "2026-08-05",
+    readTime: "10 min",
+    author: "Montinho Personal Trainer",
+    tags: ["cansaço", "disposição", "energia", "saúde", "sedentarismo"],
+    faq: [
+      {
+        question:
+          "Cansaço o dia todo é falta de exercício?",
+        answer:
+          "Pode ser, e sedentarismo é uma causa real e comum de fadiga. Mas cansaço persistente por mais de algumas semanas também pode indicar anemia, hipotireoidismo, apneia do sono, deficiências vitamínicas ou depressão. O caminho seguro é ajustar o básico e, se não melhorar, investigar com médico.",
+      },
+      {
+        question:
+          "Quais exames pedir para cansaço persistente?",
+        answer:
+          "Quem define é o médico, mas os mais comuns na avaliação inicial incluem hemograma, ferritina, TSH, vitamina D, vitamina B12 e glicemia. Levar um registro dos seus sintomas e do sono nas últimas semanas ajuda muito na consulta.",
+      },
+      {
+        question:
+          "Treinar cansado piora ou melhora a disposição?",
+        answer:
+          "Em pessoas sedentárias, exercício leve a moderado costuma aumentar a sensação de energia e reduzir fadiga. O que piora é começar com volume e intensidade altos demais. Comece pequeno o bastante para conseguir repetir na semana seguinte.",
+      },
+      {
+        question:
+          "Durmo 8 horas e acordo cansado. O que pode ser?",
+        answer:
+          "Esse padrão sugere sono de má qualidade, e apneia obstrutiva do sono é uma das causas mais frequentes, especialmente com ronco alto, engasgos noturnos e sonolência diurna. O diagnóstico exige exame de sono e avaliação médica.",
+      },
+      {
+        question:
+          "Em quanto tempo a disposição melhora depois que começo a treinar?",
+        answer:
+          "Muitas pessoas percebem diferença entre a terceira e a sexta semana de rotina consistente. Se em seis a oito semanas com sono, alimentação e movimento ajustados nada mudou, isso é um sinal claro de que vale investigar causas clínicas.",
+      },
+      {
+        question:
+          "Tomar mais vitamina resolve cansaço?",
+        answer:
+          "Só se existir deficiência comprovada. Suplementar sem exame não corrige nada e, em nutrientes como ferro, pode ser prejudicial. O caminho correto é dosar, tratar o que estiver alterado e reavaliar com acompanhamento médico.",
+      },
+    ],
+    content: `
+<p>Eu passei anos achando que era só do meu jeito. Acordava cansado, arrastava o corpo até o meio da tarde, tomava café atrás de café e chegava em casa sem energia para nada. Eu tinha 40 kg a mais e tinha me convencido de que aquilo era personalidade — "eu sou uma pessoa cansada". Não era. Era o meu corpo funcionando mal, e o cansaço era o sintoma. Quando o peso saiu e o treino entrou, a disposição voltou de um jeito que eu tinha esquecido que existia. Por isso eu levo esse assunto a sério: cansaço crônico não é frescura, e às vezes não é nem falta de treino.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/cansaco-e-falta-de-disposicao-infographic.svg" alt="Infográfico sobre Cansaço o Dia Todo: Falta de Treino ou Algo Mais? — Montinho Personal Trainer" title="Cansaço o Dia Todo: Falta de Treino ou Algo Mais?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+
+<h2>Primeiro, separe cansaço de fadiga</h2>
+<p>Cansaço normal tem causa identificável e passa com descanso: você virou a noite, teve uma semana pesada, dormiu mal por três dias. Fadiga persistente é diferente — dura semanas ou meses, não melhora com repouso e atrapalha suas atividades normais. Essa segunda categoria merece investigação. Não é para tratar com mais café e força de vontade.</p>
+<p>A regra prática que eu uso: <strong>se dura mais de duas a quatro semanas sem explicação clara, é sinal amarelo. Se vem acompanhado de outros sintomas, é sinal vermelho.</strong></p>
+
+<h2>As causas ligadas ao estilo de vida</h2>
+<p>Vou começar pelo que está mais na minha alçada, porque é onde a maioria das pessoas de fato encontra a resposta.</p>
+
+<h3>1. Sono insuficiente ou de má qualidade</h3>
+<p>Óbvio, e mesmo assim é o mais negligenciado. Adultos precisam, na média, de sete a nove horas. Mas quantidade não é tudo: sono fragmentado de oito horas rende menos que sono contínuo de sete. Se você quer atacar a qualidade e não só a quantidade, vale ler como <a href="/blog/otimizar-sono-para-recuperacao-muscular">otimizar o sono para a recuperação</a>. Se dorme mal por outro motivo e está na dúvida se treina no dia seguinte, escrevi sobre <a href="/blog/dormi-mal-devo-treinar">dormi mal, devo treinar</a>.</p>
+
+<h3>2. Sedentarismo</h3>
+<p>É contraintuitivo, mas verdadeiro: quanto menos você se move, menos energia você tem. Ensaios clínicos mostram que exercício de intensidade baixa a moderada em pessoas sedentárias reduz fadiga e aumenta níveis de energia — em alguns estudos, mais do que exercício intenso. A explicação envolve mitocôndrias mais eficientes, melhor condicionamento cardiovascular e efeito sobre humor. Se essa é a sua situação, comece por <a href="/blog/exercicio-para-sedentario">exercício para sedentário</a>.</p>
+
+<h3>3. Alimentação desregulada</h3>
+<p>Três padrões que eu vejo direto:</p>
+<ul>
+<li><strong>Comer muito pouco.</strong> Dietas agressivas demais entregam cansaço, irritabilidade e queda de rendimento. Déficit calórico funciona; déficit brutal, não.</li>
+<li><strong>Proteína insuficiente</strong>, que compromete a manutenção de massa muscular e a saciedade. Vale conferir <a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">quanta proteína consumir por dia</a>.</li>
+<li><strong>Refeições muito espaçadas seguidas de exageros</strong>, que produzem aquela montanha-russa de energia ao longo do dia.</li>
+</ul>
+<p>Desidratação também entra aqui. Perdas leves de água já reduzem desempenho cognitivo e aumentam a sensação de esforço.</p>
+
+<h3>4. Excesso de estresse</h3>
+<p>Estresse crônico consome. Cortisol constantemente elevado desregula sono, apetite e humor. Vale entender melhor essa relação lendo sobre <a href="/blog/cortisol-e-treino">cortisol e treino</a> — inclusive porque treinar demais sem recuperação é uma forma de estresse que produz exatamente o cansaço que você está tentando resolver.</p>
+
+<h3>5. Cafeína e álcool</h3>
+<p>Cafeína em excesso ou tarde demais atrapalha o sono e cria um ciclo: dorme mal, toma mais café, dorme pior. Álcool fragmenta a segunda metade da noite e piora apneia. Os dois são candidatos fáceis de testar: corte por duas semanas e observe.</p>
+
+<h2>As causas médicas que você não resolve sozinho</h2>
+<p>Agora a parte que me faz escrever esse texto. Se você ajustou sono, alimentação e movimento por algumas semanas e o cansaço não cedeu, existe uma lista de condições comuns, tratáveis e frequentemente não diagnosticadas.</p>
+
+<h3>Anemia e deficiência de ferro</h3>
+<p>Extremamente comum, especialmente em mulheres em idade fértil. Além do cansaço, costuma vir com falta de ar aos esforços, palidez, tontura, queda de cabelo e unhas quebradiças. Detalhe importante: dá para estar com estoques de ferro baixos e cansaço com hemograma normal. Escrevi em detalhe sobre <a href="/blog/alimentos-ricos-em-ferro">alimentos ricos em ferro</a>, mas diagnóstico e suplementação são médicos — ferro em excesso é tóxico.</p>
+
+<h3>Hipotireoidismo</h3>
+<p>Tireoide lenta produz cansaço, ganho de peso, intolerância ao frio, pele seca, prisão de ventre, lentidão de raciocínio e queda de cabelo. É subdiagnosticado e o tratamento é simples quando identificado. Vale ler sobre <a href="/blog/hipotireoidismo-e-musculacao">hipotireoidismo e musculação</a>.</p>
+
+<h3>Apneia obstrutiva do sono</h3>
+<p>Esse foi o meu caso na época da obesidade. A pessoa dorme oito horas e acorda destruída porque a respiração para dezenas de vezes por noite, fragmentando o sono sem que ela perceba. Sinais: ronco alto, engasgos noturnos, boca seca ao acordar, dor de cabeça matinal, sonolência ao volante. Se você se reconhece, leia sobre <a href="/blog/apneia-do-sono-e-exercicio">apneia do sono e exercício</a> e procure um médico — o diagnóstico se faz com exame de sono.</p>
+
+<h3>Deficiência de vitamina D e vitamina B12</h3>
+<p>Ambas associadas a fadiga, fraqueza muscular e alterações de humor. Deficiência de B12 é mais frequente em veganos, idosos e usuários crônicos de metformina ou inibidores de bomba de prótons. Os sintomas de <a href="/blog/vitamina-d-baixa-sintomas">vitamina D baixa</a> se confundem facilmente com cansaço comum.</p>
+
+<h3>Depressão e ansiedade</h3>
+<p>Precisa estar nessa lista, e sem rodeio. Fadiga é um dos sintomas centrais da depressão, e frequentemente aparece antes da tristeza óbvia. Perda de interesse por coisas que antes davam prazer, sono alterado, dificuldade de concentração e irritabilidade formam um conjunto que merece ajuda profissional. Não é falta de disciplina.</p>
+
+<h3>Outras causas</h3>
+<ul>
+<li><strong>Diabetes ou pré-diabetes</strong> — com sede excessiva, urinar muito, perda de peso inexplicada.</li>
+<li><strong>Efeito colateral de medicamentos</strong> — anti-hipertensivos, antialérgicos, antidepressivos, entre outros.</li>
+<li><strong>Infecções crônicas</strong> e quadros pós-virais.</li>
+<li><strong>Doença celíaca</strong> e outras causas de má absorção.</li>
+<li><strong>Insuficiência cardíaca ou renal</strong>, em quadros mais avançados.</li>
+</ul>
+
+<h2>Sinais de alerta: procure médico sem esperar</h2>
+<p>Não vale ficar meses testando ajustes de rotina se algum destes estiver presente:</p>
+<ul>
+<li>Perda de peso sem explicação.</li>
+<li>Febre persistente ou suores noturnos.</li>
+<li>Falta de ar em esforços leves ou inchaço nas pernas.</li>
+<li>Dor no peito.</li>
+<li>Sangramentos, fezes escuras ou fluxo menstrual muito intenso.</li>
+<li>Aumento de linfonodos.</li>
+<li>Cansaço que piora progressivamente ao longo de semanas.</li>
+<li>Pensamentos de desesperança ou de morte.</li>
+</ul>
+<p>Nesses casos, o passo seguinte é consulta médica, não academia.</p>
+
+<h2>O plano que eu sugeriria</h2>
+<p>Para quem não tem sinais de alerta e quer um caminho ordenado:</p>
+<ol>
+<li><strong>Semanas 1 e 2 — arrumar o básico.</strong> Horário fixo para acordar, sete a oito horas na cama, cafeína só até o começo da tarde, álcool reduzido, três refeições organizadas com proteína em todas, água suficiente. Anote seu nível de energia de 0 a 10 todo dia.</li>
+<li><strong>Semanas 3 a 6 — colocar movimento.</strong> Comece com 20 a 30 minutos de caminhada em quatro dias e dois treinos de força leves. A <a href="/blog/caminhada-emagrece">caminhada</a> é o melhor ponto de entrada que existe. Não faça treino puxado logo de cara: quem está exausto e começa treinando pesado desiste na segunda semana.</li>
+<li><strong>Semana 6 — avaliar.</strong> Compare suas anotações. Se a energia subiu, siga progredindo. Se não mudou nada, marque uma consulta e leve seus registros.</li>
+<li><strong>Consulta médica com exames.</strong> Hemograma, ferritina, TSH, vitamina D, B12, glicemia e o que mais o médico julgar. Investigar não é exagero — é o que evita anos perdidos.</li>
+</ol>
+
+<h2>O que eu aprendi na própria pele</h2>
+<p>Quando eu era obeso, ninguém precisava me explicar o que era falta de disposição. Eu vivia nela. E a armadilha era exatamente esta: eu estava cansado demais para treinar, e não treinava, o que me deixava mais cansado. O ciclo se fecha sozinho e a pessoa acredita que aquilo é o normal dela.</p>
+<p>O que quebrou o ciclo no meu caso não foi motivação. Foi começar pequeno o suficiente para conseguir repetir. Caminhada. Depois treino leve. Depois consistência. A disposição não voltou no primeiro mês — ela veio devagar, e num certo ponto eu percebi que já não estava mais me arrastando.</p>
+<p>Mas eu também sei que exercício não é resposta para tudo. Se o seu cansaço não cede depois de semanas fazendo o básico direito, isso é informação valiosa: significa que existe algo que estilo de vida não alcança. Investigar não é fraqueza. É a coisa mais produtiva que você pode fazer.</p>
+
+<p>O Paulo Muzy fez um vídeo direto sobre o que investigar primeiro quando o cansaço não passa — vale como complemento médico ao que eu trato aqui pelo lado do treino.</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/PZ67mCJkzeo?rel=0" title="Cansado de estar sempre cansado? Faça isso primeiro | Muzy Explica" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<h2>Referências</h2>
+<ul>
+<li>Puetz TW, Flowers SS, O'Connor PJ. <em>A randomized controlled trial of the effect of aerobic exercise training on feelings of energy and fatigue in sedentary young adults with persistent fatigue.</em> Psychotherapy and Psychosomatics, 2008.</li>
+<li>Rosenthal TC, Majeroni BA, Pretorius R, Malik K. <em>Fatigue: an overview.</em> American Family Physician, 2008.</li>
+<li>Pasricha SR, Tye-Din J, Muckenthaler MU, Swinkels DW. <em>Iron deficiency.</em> The Lancet, 2021.</li>
+</ul>`,
+  },
+  {
+    slug: "corrida-para-iniciantes",
+    title: "Corrida Para Iniciantes: Do Sofá aos 5 km",
+    metaTitle: "Corrida Para Iniciantes: Do Sofá aos 5 km em 8 Semanas",
+    metaDescription:
+      "Corrida para iniciantes: plano de 8 semanas do sofá aos 5 km com método caminhada e corrida, escolha do tênis, treino de força e prevenção de lesões.",
+    excerpt:
+      "Um plano honesto de 8 semanas para sair do zero e completar 5 km correndo. Sem heroísmo, com progressão gradual, treino de força e os erros que colocam iniciantes fora de jogo na terceira semana.",
+    category: "Treino",
+    date: "2026-08-05",
+    readTime: "10 min",
+    author: "Montinho Personal Trainer",
+    tags: ["corrida", "iniciantes", "5 km", "cardio", "planilha"],
+    faq: [
+      {
+        question:
+          "Quanto tempo leva para conseguir correr 5 km do zero?",
+        answer:
+          "Com três sessões semanais e progressão gradual, oito semanas é um prazo realista para a maioria das pessoas. Quem está bem acima do peso ou parado há muitos anos pode levar dez a doze semanas, e isso é perfeitamente normal.",
+      },
+      {
+        question:
+          "Posso correr todos os dias no começo?",
+        answer:
+          "Não é recomendado. Tendões, ossos e articulações se adaptam bem mais devagar que o sistema cardiovascular, e o descanso é onde a adaptação acontece. Três sessões por semana com um dia de folga entre elas é o padrão que funciona para iniciantes.",
+      },
+      {
+        question:
+          "Preciso de tênis caro para começar a correr?",
+        answer:
+          "Precisa de um tênis específico de corrida, confortável já na loja e cerca de meio número maior. Amortecimento neutro atende a maioria. Prescrever tênis pelo tipo de pisada não mostrou reduzir lesões de forma consistente nos estudos.",
+      },
+      {
+        question:
+          "Vale mais correr ou caminhar para emagrecer?",
+        answer:
+          "Correr gasta mais calorias por minuto, mas caminhar é mais sustentável para quem está começando e tem menor risco de lesão. O emagrecimento depende principalmente do balanço calórico e da preservação de massa muscular, não do tipo de cardio escolhido.",
+      },
+      {
+        question:
+          "Preciso fazer musculação se só quero correr?",
+        answer:
+          "Sim, e essa é uma das recomendações com melhor respaldo. Duas sessões semanais de força reduzem risco de lesão e melhoram a economia de corrida. Priorize quadril, glúteo médio, panturrilha, posteriores de coxa e core.",
+      },
+      {
+        question:
+          "Sinto dor na canela quando corro. É normal?",
+        answer:
+          "Desconforto muscular difuso que passa em um ou dois dias é comum no começo. Dor localizada na canela que piora ao correr costuma ser sinal de progressão rápida demais. Reduza volume, repita a semana anterior e, se persistir, procure avaliação profissional.",
+      },
+    ],
+    content: `
+<p>Correr 5 km parece pouco para quem já corre e parece impossível para quem nunca correu. Eu já estive dos dois lados. Com 40 kg a mais, eu não conseguia correr dois minutos seguidos sem achar que ia passar mal — e a frustração daquilo é real. O que quase ninguém conta para o iniciante é que a barreira dos 5 km é vencida com paciência, não com esforço heroico. Quem tenta correr direto no primeiro dia costuma parar na terceira semana com dor no joelho ou canelite. Quem alterna caminhada e corrida chega.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/corrida-para-iniciantes-infographic.svg" alt="Infográfico sobre Corrida Para Iniciantes: Do Sofá aos 5 km — Montinho Personal Trainer" title="Corrida Para Iniciantes: Do Sofá aos 5 km" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+
+<h2>Antes de calçar o tênis</h2>
+<p>Duas checagens que eu não pulo com ninguém.</p>
+<p><strong>Avaliação médica.</strong> Se você tem mais de 40 anos, está acima do peso, é fumante, tem pressão alta, diabetes, colesterol alterado, histórico familiar de doença cardíaca ou está parado há anos, faça uma consulta antes. Corrida é um esforço cardiovascular significativo. Não é para assustar — é para começar com segurança. Se você já sente falta de ar desproporcional ou cansaço estranho, investigue antes — <a href="/blog/alimentos-ricos-em-ferro">ferro baixo</a> é uma das causas mais comuns e derruba o rendimento aeróbico.</p>
+<p><strong>Expectativa calibrada.</strong> Oito semanas é um prazo realista para a maioria das pessoas que segue o plano. Algumas levam dez, doze. Se você está bem acima do peso ou parado há muitos anos, considere começar com quatro semanas só de caminhada antes de entrar na planilha — <a href="/blog/exercicio-para-sedentario">exercício para sedentário</a> cobre esse degrau anterior.</p>
+
+<h2>O método caminhada/corrida</h2>
+<p>A ideia é simples e funciona: você alterna blocos curtos de corrida leve com blocos de caminhada, e ao longo das semanas o tempo correndo cresce enquanto o de caminhada encolhe. Isso dá tempo ao sistema cardiovascular de se adaptar sem que tendões, ossos e articulações levem uma pancada de volume para a qual não estão prontos.</p>
+<p>Aqui está o ponto que separa quem chega de quem se machuca: <strong>o coração e o pulmão se adaptam em semanas; tendões e ossos levam meses.</strong> Seu fôlego vai melhorar mais rápido do que sua estrutura aguenta. Por isso a tentação de acelerar a progressão é o maior risco do iniciante.</p>
+<p>Sobre o ritmo da parte corrida: deve ser <strong>confortável a ponto de você conseguir falar frases inteiras</strong>. Se você não consegue conversar, está rápido demais. Iniciante correndo devagar não está fazendo pouco — está fazendo certo.</p>
+
+<h2>O plano de 8 semanas</h2>
+<p>Três sessões por semana, com pelo menos um dia de descanso entre elas. Sempre com 5 minutos de caminhada leve para aquecer no início e 5 minutos para desaquecer no fim (não contados na tabela).</p>
+<table>
+<tr><th>Semana</th><th>Sessão (3x/semana)</th><th>Tempo total correndo</th><th>Duração aproximada</th></tr>
+<tr><td>1</td><td>8x (1 min corrida + 2 min caminhada)</td><td>8 min</td><td>34 min</td></tr>
+<tr><td>2</td><td>7x (1,5 min corrida + 2 min caminhada)</td><td>10,5 min</td><td>35 min</td></tr>
+<tr><td>3</td><td>6x (2 min corrida + 2 min caminhada)</td><td>12 min</td><td>34 min</td></tr>
+<tr><td>4</td><td>5x (3 min corrida + 2 min caminhada)</td><td>15 min</td><td>35 min</td></tr>
+<tr><td>5</td><td>4x (5 min corrida + 2 min caminhada)</td><td>20 min</td><td>38 min</td></tr>
+<tr><td>6</td><td>3x (8 min corrida + 2 min caminhada)</td><td>24 min</td><td>38 min</td></tr>
+<tr><td>7</td><td>2x (13 min corrida + 3 min caminhada)</td><td>26 min</td><td>39 min</td></tr>
+<tr><td>8</td><td>30 min corrida contínua (≈5 km)</td><td>30 min</td><td>40 min</td></tr>
+</table>
+<p>Regras de uso da tabela:</p>
+<ul>
+<li><strong>Não pule semanas</strong>, mesmo que a atual pareça fácil. A facilidade é justamente o sinal de que está funcionando.</li>
+<li><strong>Repita a semana</strong> se ela ainda estiver difícil no terceiro treino. Repetir não é atraso, é a diferença entre terminar e se lesionar.</li>
+<li><strong>Perdeu mais de uma semana?</strong> Volte um degrau ao retomar.</li>
+<li><strong>Na semana 8</strong>, o objetivo é completar os 30 minutos correndo. A distância vem junto e varia conforme o ritmo — para muita gente vai dar entre 4 e 5,5 km, e está tudo certo.</li>
+</ul>
+<p>Se você tem dúvida sobre onde fazer, escrevi comparando <a href="/blog/esteira-ou-rua-para-correr">esteira ou rua para correr</a>. Resumo: os dois funcionam, e para iniciante a esteira tem a vantagem de controlar ritmo e reduzir impacto.</p>
+
+<h2>O tênis</h2>
+<p>Vale investir, mas não em marketing. O que importa:</p>
+<ul>
+<li><strong>Tênis específico de corrida</strong>, não de academia ou casual. A construção é diferente.</li>
+<li><strong>Meio número maior</strong> do que seu calçado social. O pé incha e desliza para frente na descida — unha roxa vem daí.</li>
+<li><strong>Conforto imediato</strong> na loja. Tênis de corrida não "amacia" para se ajustar a um desconforto. Se apertou na prova, vai apertar aos 4 km.</li>
+<li><strong>Amortecimento neutro</strong> resolve para a maioria. A ciência do controle de pronação vendida nos anos 2000 não se sustentou bem nos estudos posteriores: prescrever tênis pelo tipo de pisada não mostrou reduzir lesões de forma consistente.</li>
+<li><strong>Troque</strong> a cada 500 a 800 km, aproximadamente, ou quando o amortecimento visivelmente ceder.</li>
+</ul>
+
+<h2>Força: a parte que ninguém quer ouvir</h2>
+<p>Se eu pudesse dar um único conselho para quem começa a correr, seria este: <strong>não corra só.</strong> Duas sessões semanais de treino de força reduzem risco de lesão e melhoram economia de corrida. Isso tem respaldo consistente na literatura — programas de força e treino multicomponente aparecem como das intervenções mais eficazes para prevenir lesões esportivas.</p>
+<p>A corrida sobrecarrega repetidamente as mesmas estruturas com pouca variação. O treino de força prepara tendões, fortalece quadril e core e corrige desequilíbrios que a corrida sozinha só agrava. Os pontos que mais importam para corredor:</p>
+<ul>
+<li><strong>Glúteo médio e quadril</strong> — quadril fraco deixa o joelho colapsar para dentro, causa clássica de dor patelofemoral.</li>
+<li><strong>Panturrilha e sóleo</strong> — absorvem enormes cargas a cada passada. Elevação de panturrilha em pé e sentada é obrigatória.</li>
+<li><strong>Posterior de coxa</strong> — stiff, mesa flexora, elevação pélvica.</li>
+<li><strong>Quadríceps</strong> — agachamento e leg press. Se você já tem histórico de incômodo, veja <a href="/blog/dor-no-joelho-no-agachamento">dor no joelho no agachamento</a> antes de carregar.</li>
+<li><strong>Core</strong> — prancha e variações antirrotação.</li>
+</ul>
+<p>Duas sessões de 30 a 40 minutos por semana já entregam quase tudo. E não, treinar força não vai te deixar "pesado demais para correr" — essa preocupação não corresponde ao que acontece na prática com o volume que estamos falando aqui. Os princípios gerais estão em <a href="/blog/como-prevenir-lesoes-no-treino">como prevenir lesões no treino</a>.</p>
+
+<h2>Os erros que derrubam iniciante</h2>
+<ol>
+<li><strong>Correr rápido demais.</strong> O erro número um. Se você termina o bloco de 1 minuto arrasado, não é falta de condicionamento — é ritmo errado.</li>
+<li><strong>Aumentar volume rápido demais.</strong> A regra dos 10% de acréscimo semanal é uma referência grosseira, mas a ideia por trás dela é sólida: progressão gradual.</li>
+<li><strong>Pular o descanso.</strong> A adaptação acontece nos dias de folga, não durante o treino. Três sessões com descanso entre elas superam cinco sessões seguidas de lesão.</li>
+<li><strong>Ignorar dor.</strong> Desconforto muscular difuso que passa em um ou dois dias é normal. Dor localizada, que piora durante a corrida ou aparece ao caminhar, não é. Pare e avalie.</li>
+<li><strong>Achar que corrida sozinha emagrece.</strong> Ela ajuda no gasto calórico, mas a composição corporal se resolve principalmente na alimentação e na preservação de massa muscular. O tema está detalhado em <a href="/blog/musculacao-ou-corrida-para-emagrecer">musculação ou corrida para emagrecer</a>.</li>
+</ol>
+
+<h2>Detalhes que fazem diferença</h2>
+<h3>Respiração</h3>
+<p>Não complique. Respire pela boca e pelo nariz, no ritmo que o corpo pedir. Padrões rígidos de "três passos inspira, dois expira" são desnecessários para iniciante e só criam ansiedade.</p>
+<h3>Técnica</h3>
+<p>Cadência levemente mais alta (passadas mais curtas e frequentes) tende a reduzir carga no joelho. Mas não vire um projeto de reforma de técnica na primeira semana. Postura ereta, olhar à frente, ombros relaxados e pé caindo sob o corpo, não muito à frente. É o suficiente.</p>
+<h3>Hidratação e alimentação</h3>
+<p>Para sessões de até 40 minutos, água resolve. Bebida esportiva e gel são desnecessários nesse volume. Coma algo leve uma a duas horas antes se treinar de manhã — mas se você funciona bem em jejum nesses tempos curtos, também está tudo bem.</p>
+<h3>Aquecimento</h3>
+<p>Caminhada leve progressiva de 5 minutos e alguns movimentos dinâmicos (balanço de perna, elevação de joelho, deslocamento lateral). Alongamento estático longo antes de correr não é a melhor escolha.</p>
+
+<h2>E depois dos 5 km?</h2>
+<p>Quando você fechar os 30 minutos contínuos, tem três caminhos razoáveis:</p>
+<ul>
+<li><strong>Consolidar.</strong> Passe um mês fazendo 3 a 4 corridas de 30 minutos por semana antes de aumentar qualquer coisa. Muita gente pula essa fase e paga caro depois.</li>
+<li><strong>Aumentar distância</strong> gradualmente rumo aos 10 km, adicionando alguns minutos em apenas uma das sessões por semana.</li>
+<li><strong>Adicionar variedade</strong> — um treino mais longo e leve, um de ritmo, um confortável.</li>
+</ul>
+<p>Em qualquer um deles, o treino de força continua. Ele não é a fase de preparação; é parte permanente do pacote.</p>
+
+<h2>O que eu diria para o meu eu de 40 kg atrás</h2>
+<p>Que o primeiro mês é o mais difícil e o menos representativo. Que não conseguir correr dois minutos não diz nada sobre você — diz sobre onde você está hoje. E que a única forma de errar esse plano é tentar acelerar. Corrida recompensa quem tem paciência de sobra e pune quem tem pressa. Oito semanas passam de qualquer jeito. A diferença é se, no fim delas, você vai estar correndo ou parado com uma canelite.</p>
+
+<p>Sair do sofá é sempre a parte mais difícil — é exatamente sobre esse primeiro passo que falo neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<h2>Referências</h2>
+<ul>
+<li>Lauersen JB, Bertelsen DM, Andersen LB. <em>The effectiveness of exercise interventions to prevent sports injuries: a systematic review and meta-analysis of randomised controlled trials.</em> British Journal of Sports Medicine, 2014.</li>
+<li>Blagrove RC, Howatson G, Hayes PR. <em>Effects of Strength Training on the Physiological Determinants of Middle- and Long-Distance Running Performance: A Systematic Review.</em> Sports Medicine, 2018.</li>
+<li>Nielsen RO, et al. <em>Training errors and running related injuries: a systematic review.</em> International Journal of Sports Physical Therapy, 2012.</li>
+</ul>`,
+  },
 ]) as BlogPost[];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
