@@ -102989,6 +102989,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Depois dos 70, treino de força deixa de ser estética e vira autonomia: levantar da cadeira, carregar compras, não cair. Explico como começar com segurança, o que a evidência mostra e por que nunca é tarde.",
     category: "Saúde",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["terceira idade", "idosos", "sarcopenia", "prevenção de quedas", "força"],
@@ -103033,7 +103034,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Existe uma frase que eu ouço com frequência de filhos que me procuram em Alphaville: "meu pai tem 74 anos, será que ainda dá?". Dá. E não é uma resposta de otimismo — é o que a literatura mostra há décadas. Estudos clássicos com pessoas acima dos 85 anos, inclusive institucionalizadas e frágeis, demonstraram ganhos expressivos de força e de velocidade de marcha com poucas semanas de treino resistido. O músculo responde ao estímulo em qualquer idade. O que muda depois dos 70 é como você aplica esse estímulo.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/musculacao-terceira-idade-infographic.svg" alt="Infográfico sobre Musculação na Terceira Idade: Guia Para Depois dos 70 — Montinho Personal Trainer" title="Musculação na Terceira Idade: Guia Para Depois dos 70" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/musculacao-terceira-idade.webp" alt="Musculação na terceira idade: treino de força após os 70 anos para autonomia e prevenção de quedas" title="Musculação na terceira idade — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>Primeiro: liberação e acompanhamento médico</h2>
@@ -103143,6 +103144,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Quase toda semana alguém me pergunta como desinchar rápido. A resposta honesta é que retenção de líquido tem várias causas e nenhuma delas se resolve com chá. Aqui explico o que realmente muda o quadro e o sinal de alerta que exige médico.",
     category: "Saúde",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["retenção de líquido", "inchaço", "sódio", "hidratação", "saúde da mulher"],
@@ -103188,7 +103190,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Se tem uma frase que eu escuto quase toda semana no treino em Alphaville, é essa: "Montinho, eu acordei inchada, o que faço para desinchar?". E eu entendo perfeitamente a angústia. Você acorda com o rosto diferente, o anel aperta, a calça que serviu ontem hoje marca. É um incômodo real, não é frescura. Mas depois de anos acompanhando alunos — e depois de ter passado eu mesmo por um emagrecimento de 40 kg, com todas as oscilações de peso que isso envolve — aprendi que a retenção de líquido é um dos assuntos onde mais se vende bobagem e menos se explica o básico.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/retencao-de-liquido-como-desinchar-infographic.svg" alt="Infográfico sobre Retenção de Líquido: Como Desinchar de Verdade — Montinho Personal Trainer" title="Retenção de Líquido: Como Desinchar de Verdade" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/retencao-de-liquido-como-desinchar.webp" alt="Retenção de líquido: como desinchar de verdade com hidratação, sódio equilibrado e movimento" title="Retenção de líquido: como desinchar — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Então vamos direto ao ponto. Retenção de líquido não é uma doença: é um <strong>sinal</strong>. Às vezes é um sinal banal, ligado ao que você comeu, quanto dormiu ou em que fase do ciclo você está. Às vezes é um sinal que precisa ser investigado por um médico. E, em nenhum dos dois casos, a solução passa por chá desinchante, drenagem milagrosa ou "detox" de três dias.</p>
@@ -103298,6 +103300,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Intestino preso é uma das queixas mais comuns entre meus alunos, especialmente quem acabou de mudar a dieta. Aqui explico como fibra, água e treino atuam juntos, por que laxante não é solução e quais sinais pedem investigação médica.",
     category: "Saúde",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["prisão de ventre", "intestino", "fibras", "hidratação", "saúde digestiva"],
@@ -103343,7 +103346,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Prisão de ventre é daqueles assuntos que ninguém comenta na academia, mas que aparece na conversa individual com uma frequência impressionante. Já perdi a conta de quantos alunos me disseram, meio sem jeito, que começaram a dieta e "travaram" o intestino. E faz sentido: quando você muda drasticamente o que come, quanto come e quanto se move, o intestino sente. O problema é que a reação da maioria das pessoas é procurar um laxante em vez de entender o que aconteceu.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/prisao-de-ventre-o-que-fazer-infographic.svg" alt="Infográfico sobre Prisão de Ventre: Como Treino e Fibras Ajudam — Montinho Personal Trainer" title="Prisão de Ventre: Como Treino e Fibras Ajudam" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/prisao-de-ventre-o-que-fazer.webp" alt="Prisão de ventre: como fibras, hidratação e exercício ajudam o intestino a funcionar melhor" title="Prisão de ventre: o que fazer — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Vou tratar esse tema com o cuidado que ele merece. Sou personal trainer, não médico — e prisão de ventre é um sintoma que, em algumas situações, indica coisas que precisam de investigação séria. Mas boa parte dos casos que eu vejo no dia a dia tem causa comportamental clara: pouca fibra, pouca água, pouco movimento, rotina desregulada e o hábito de ignorar a vontade de ir ao banheiro.</p>
@@ -103468,6 +103471,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O famoso tchauzinho é uma das queixas que mais escuto. Vou ser honesto: não existe exercício que queime gordura do braço. O que funciona é perder gordura corporal e construir músculo — e eu passei por isso na pele.",
     category: "Treino",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["braço flácido", "tríceps", "flacidez", "emagrecimento", "musculação feminina"],
@@ -103513,7 +103517,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>O "tchauzinho" — aquela parte de trás do braço que balança quando você acena — é provavelmente a queixa estética que eu mais escuto de alunas em Alphaville. E é também uma das áreas onde mais se vende ilusão. Vídeo de "5 exercícios para acabar com o braço flácido em 7 dias", creme firmador, faixa de compressão, aparelho. Vou economizar seu tempo e seu dinheiro: nada disso funciona isoladamente. Mas existe, sim, um caminho que funciona, e ele é bem menos misterioso do que parece.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/braco-flacido-como-firmar-infographic.svg" alt="Infográfico sobre Braço Flácido: Como Firmar o "Tchauzinho" — Montinho Personal Trainer" title="Braço Flácido: Como Firmar o "Tchauzinho"" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/braco-flacido-como-firmar.webp" alt="Braço flácido: como firmar o tríceps combinando perda de gordura e ganho de massa muscular" title="Braço flácido: como firmar — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Antes de qualquer coisa, preciso ser transparente com você sobre um ponto que muita gente prefere não falar: <strong>não existe emagrecimento localizado</strong>. Nenhum exercício de tríceps queima a gordura que está por cima do tríceps. O corpo mobiliza gordura de forma sistêmica, seguindo uma ordem determinada principalmente pela sua genética, pelos seus hormônios e pela densidade de receptores nos adipócitos de cada região. Você não escolhe de onde sai primeiro. Eu já detalhei essa fisiologia em <a href="/blog/gordura-localizada-mitos-e-fatos">gordura localizada: mitos e fatos</a>, e recomendo a leitura se ainda restar dúvida.</p>
@@ -103648,6 +103652,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Emagrecer amamentando é possível, mas o leite vem primeiro. Aqui explico o ritmo seguro, o que priorizar na alimentação, quando o obstetra costuma liberar o treino e por que dieta agressiva nessa fase é um erro sério.",
     category: "Emagrecimento",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["amamentação", "pós-parto", "emagrecimento", "déficit calórico", "saúde da mulher"],
@@ -103693,7 +103698,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Esse é um dos temas mais delicados que eu abordo aqui, e vou tratá-lo com o cuidado que ele exige. A pressão que uma mulher recebe para "voltar ao corpo de antes" logo depois de ter um filho é uma das coisas mais cruéis que a cultura fitness produziu. Chega ao meu WhatsApp com frequência: mulheres com bebê de dois meses querendo saber qual dieta faz perder 10 kg rápido. E a minha resposta sempre começa do mesmo jeito — devagar, e com médico junto.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/emagrecer-amamentando-infographic.svg" alt="Infográfico sobre Emagrecer Amamentando: O Que Pode e o Que Não Pode — Montinho Personal Trainer" title="Emagrecer Amamentando: O Que Pode e o Que Não Pode" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/emagrecer-amamentando.webp" alt="Emagrecer amamentando: o que pode e o que não pode na dieta durante a amamentação" title="Emagrecer amamentando — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Deixo claro logo no começo: eu sou personal trainer. Amamentação envolve obstetra, pediatra e nutricionista, e nada do que está escrito aqui substitui esse acompanhamento. O que eu posso fazer é organizar as informações, apontar os erros que vejo com mais frequência e ajudar você a fazer as perguntas certas para os profissionais que cuidam de você e do bebê.</p>
