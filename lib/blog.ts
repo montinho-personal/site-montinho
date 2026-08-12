@@ -102246,6 +102246,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "A dieta da sopa promete quilos a menos em uma semana — e até entrega. O problema é o que vem depois: perda de músculo, metabolismo em câmera lenta e o peso voltando com juros. Mostro o que a balança não conta e como usar a sopa do jeito certo.",
     category: "Emagrecimento",
     date: "2026-08-04",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["dieta da sopa", "emagrecimento", "efeito sanfona", "dietas restritivas", "saciedade"],
@@ -102290,7 +102291,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Toda semana chega alguém para mim com a mesma história: “Montinho, minha amiga fez a dieta da sopa e perdeu 5 kg em uma semana!”. E eu sempre respondo com a pergunta que ninguém faz: e onde ela está seis meses depois? Porque a dieta da sopa emagrece, sim — a balança desce rápido. O problema é o que ela emagrece, e principalmente o que acontece quando a sopa acaba. Neste artigo eu abro essa conta toda: o que você perde de verdade, por que o peso volta com juros e como usar a sopa do jeito inteligente — como ferramenta, não como milagre.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/sopa-emagrece-infographic.svg" alt="Infográfico sobre Dieta da Sopa Emagrece? O Que Acontece Depois Que Ela Acaba — Montinho Personal Trainer" title="Dieta da Sopa Emagrece? O Que Acontece Depois Que Ela Acaba" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/sopa-emagrece.webp" alt="Dieta da sopa emagrece? O que acontece depois da restrição e o risco do efeito sanfona" title="Dieta da sopa emagrece? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>O que é a dieta da sopa</h2>
 <p>Existem várias versões — a famosa “sopa do hospital do coração”, a sopa de repolho, os desafios de 7 dias — mas a estrutura é sempre a mesma: substituir a maior parte das refeições (às vezes todas) por sopa de legumes, durante uma ou duas semanas. O resultado é uma dieta extremamente hipocalórica: muitas versões ficam entre 600 e 900 kcal por dia, às vezes menos.</p>
@@ -102371,6 +102372,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Vinho não é remédio nem veneno instantâneo: é caloria líquida com efeitos reais sobre sono e recuperação. Mostro quantas calorias tem cada taça, por que o álcool atrapalha mais do que a conta sugere e como encaixar de forma consciente no seu planejamento.",
     category: "Nutrição",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["vinho", "álcool", "emagrecimento", "déficit calórico", "nutrição"],
@@ -102415,7 +102417,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Essa é uma das perguntas que mais recebo de alunos em Alphaville, geralmente numa quinta-feira, com um tom meio de confissão: "Montinho, vinho engorda?". A resposta honesta é que nenhum alimento isolado engorda — o que engorda é o balanço calórico ao longo das semanas. Mas seria desonesto parar por aí, porque o vinho tem particularidades que fazem ele pesar mais na conta do que o número de calorias sugere. Vou te mostrar os números, o que a ciência realmente diz hoje e como encaixar a taça sem se enganar.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/vinho-engorda-infographic.svg" alt="Infográfico sobre Vinho Engorda? Como Encaixar na Dieta Sem Sabotar o Emagrecimento — Montinho Personal Trainer" title="Vinho Engorda? Como Encaixar na Dieta Sem Sabotar o Emagrecimento" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/vinho-engorda.webp" alt="Vinho engorda? Calorias do vinho e como encaixar a bebida na dieta de emagrecimento" title="Vinho engorda? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>Quantas calorias tem uma taça de vinho</h2>
@@ -102521,6 +102523,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Leite não engorda por si só, mas a diferença entre integral e desnatado importa quando você soma o dia inteiro. Comparo os números, falo de saciedade, lactose e mostro como encaixar o leite no seu planejamento.",
     category: "Nutrição",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["leite", "leite integral", "leite desnatado", "proteína", "emagrecimento"],
@@ -102565,7 +102568,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>O leite virou um alimento politicamente carregado. Tem gente que jura que ele é essencial e tem gente que jura que ele é veneno. A pergunta que chega para mim é sempre mais prática: "Montinho, leite engorda?". Resposta curta: leite não engorda mais nem menos do que qualquer outro alimento — o que determina ganho ou perda de peso é o balanço calórico ao longo do tempo. Mas a diferença entre integral e desnatado existe, e dependendo de quanto você consome por dia, ela pesa. Vamos aos números.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/leite-engorda-infographic.svg" alt="Infográfico sobre Leite Engorda? Integral vs Desnatado: O Que Muda de Verdade — Montinho Personal Trainer" title="Leite Engorda? Integral vs Desnatado: O Que Muda de Verdade" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/leite-engorda.webp" alt="Leite engorda? Comparação entre leite integral e desnatado na dieta de emagrecimento" title="Leite engorda? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>Os números: integral, semidesnatado e desnatado</h2>
@@ -102676,6 +102679,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "A creatina é um dos suplementos mais estudados do mundo, e a maior parte do medo que ronda o uso feminino não se sustenta na evidência. Explico retenção intracelular, dose, segurança e o que esperar de resultado real.",
     category: "Nutrição",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["creatina", "mulheres", "suplementação", "força", "hipertrofia feminina"],
@@ -102720,7 +102724,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Poucos assuntos geram tanta insegurança nas alunas quanto a creatina. A cena se repete: a mulher lê que o suplemento é bom, começa a considerar, e aí alguém solta a frase "mas você vai inchar" ou "isso é coisa de homem". Vou ser bem direto com você — a creatina é um dos suplementos mais estudados da história da nutrição esportiva, com centenas de ensaios publicados, e boa parte do medo que circula em torno do uso feminino simplesmente não se sustenta quando você olha os dados.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/creatina-para-mulheres-infographic.svg" alt="Infográfico sobre Creatina Para Mulheres: Funciona? Engorda? Deixa Inchada? — Montinho Personal Trainer" title="Creatina Para Mulheres: Funciona? Engorda? Deixa Inchada?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/creatina-para-mulheres.webp" alt="Creatina para mulheres: funciona, engorda ou deixa inchada? O que a ciência mostra" title="Creatina para mulheres — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>O que a creatina faz no corpo</h2>
@@ -102816,6 +102820,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Sair do sedentarismo não é sobre motivação, é sobre começar pequeno o suficiente para não desistir. Eu comecei 40 kg mais pesado e sem fôlego para subir um lance de escada — aqui está o caminho que funciona.",
     category: "Treino",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["sedentarismo", "iniciante", "começar a treinar", "emagrecimento", "caminhada"],
@@ -102860,7 +102865,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Eu quero começar esse texto contando de onde eu falo. Há alguns anos eu carregava 40 kg a mais do que carrego hoje. Subia um lance de escada e chegava ofegante no topo. Tinha vergonha de entrar em academia. Já tinha começado e desistido de tantos planos que a palavra "segunda-feira" tinha virado piada interna comigo mesmo. Então quando eu escrevo sobre exercício para sedentário, não estou escrevendo de um pedestal — estou escrevendo do lugar onde eu já estive.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/exercicio-para-sedentario-infographic.svg" alt="Infográfico sobre Exercício Para Sedentário: Como Começar do Zero Sem Desistir — Montinho Personal Trainer" title="Exercício Para Sedentário: Como Começar do Zero Sem Desistir" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/exercicio-para-sedentario.webp" alt="Exercício para sedentário: como começar do zero com progressão gradual e sem desistir" title="Exercício para sedentário — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>Antes de tudo: procure um médico</h2>
