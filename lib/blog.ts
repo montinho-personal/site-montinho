@@ -74480,7 +74480,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "A volta das férias é o momento crítico para quem treina. Veja como retomar os treinos de forma inteligente, sem lesões e com motivação renovada.",
     category: "Treinamento",
     date: "2026-07-28",
-    updatedAt: "2026-07-01",
+    updatedAt: "2026-08-12",
     readTime: "7 min",
     author: "Montinho",
     tags: ["voltar treinar após férias", "retorno treino agosto", "como recomeçar academia", "após férias treino", "motivação treino"],
@@ -74496,7 +74496,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Agosto chegou, as férias de julho ficaram para trás — e o mercado te oferece dois roteiros igualmente ruins. O primeiro: compensar tudo no primeiro dia, treinar até quase morrer e passar a semana destruído (ou lesionado). O segundo: o eterno "começo segunda", que vira "depois do feriado", que vira setembro.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-voltar-aos-treinos-depois-das-ferias-infographic.svg" alt="Infográfico sobre Como Voltar aos Treinos Depois das Férias — Montinho Personal Trainer" title="Como Voltar aos Treinos Depois das Férias" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-voltar-aos-treinos-depois-das-ferias.webp" alt="Como voltar aos treinos depois das férias: retomada gradual da rotina de exercícios sem lesão" title="Como voltar aos treinos depois das férias — Montinho Personal Trainer Alphaville" width="1491" height="1055" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Nenhum dos dois funciona. Existe um caminho do meio — inteligente, testado, e mais rápido do que você imagina. E a melhor parte: <strong>o que levou 6 meses para construir, você recupera em 3 a 4 semanas.</strong> Não é otimismo, é fisiologia. Vou te mostrar como.</p>
@@ -95995,6 +95995,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "HIIT em casa é uma das formas mais eficientes de treinar cardio em pouco tempo, sem nenhum equipamento. Veja protocolos prontos de 10 a 20 minutos, os exercícios certos e como adaptar se você está começando agora.",
     category: "Treino",
     date: "2026-07-28",
+    updatedAt: "2026-08-12",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["HIIT", "treino em casa", "cardio", "emagrecimento", "sem equipamentos"],
@@ -96033,7 +96034,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Pouco tempo, nenhum equipamento e vontade de suar de verdade: se essa é a sua situação, o HIIT em casa é provavelmente a ferramenta de cardio mais eficiente que você pode usar.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-hiit-em-casa-infographic.svg" alt="Infográfico sobre Treino HIIT em Casa: Guia Prático Sem Equipamentos — Montinho Personal Trainer" title="Treino HIIT em Casa: Guia Prático Sem Equipamentos" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-hiit-em-casa.webp" alt="Treino HIIT em casa: exercícios intervalados de alta intensidade sem equipamento nenhum" title="Treino HIIT em casa — Montinho Personal Trainer Alphaville" width="1491" height="1055" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Mas antes de sair pulando na sala, dois avisos honestos: HIIT é treino intenso de verdade — não é para todo iniciante absoluto — e ele não é mágico. Neste guia você vai ver como fazer direito, com protocolos prontos, exercícios sem equipamento e as adaptações para quem está começando.</p>
@@ -96158,6 +96159,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Treinar com o parceiro pode ser o empurrão que faltava para a constância — ou uma fonte de atrito. A diferença está em como vocês estruturam a rotina. Veja como treinar junto respeitando os níveis de cada um.",
     category: "Treino",
     date: "2026-07-28",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["treino em casal", "motivação", "hábito", "musculação", "constância"],
@@ -96196,7 +96198,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Meu marido não sai do sofá." "Minha esposa começa e desiste." Se você já pensou em chamar o parceiro para treinar junto, saiba: pode ser uma das melhores decisões para a saúde dos dois — ou uma fonte de briga semanal. A diferença está em como vocês fazem.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-para-casal-infographic.svg" alt="Infográfico sobre Treino Para Casal: Como Treinar Junto e Manter a Motivação — Montinho Personal Trainer" title="Treino Para Casal: Como Treinar Junto e Manter a Motivação" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-para-casal.webp" alt="Treino para casal: como treinar junto, manter a motivação e dividir a rotina de exercícios" title="Treino para casal — Montinho Personal Trainer Alphaville" width="1491" height="1055" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Depois de mais de 20 anos de treino e de acompanhar muitos casais como personal aqui em Alphaville, aprendi o que faz o treino a dois funcionar e o que faz ele desandar. Este guia reúne tudo: os benefícios reais, como estruturar os treinos e os erros que você precisa evitar.</p>
@@ -100095,6 +100097,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O muay thai queima muitas calorias e tem uma vantagem que pouca gente valoriza: é divertido o bastante para você não abandonar. Mas nenhuma luta emagrece ninguém sem déficit calórico. Veja os números reais por aula e como montar a equação completa.",
     category: "Emagrecimento",
     date: "2026-07-30",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["muay thai", "emagrecimento", "queima de calorias", "artes marciais", "cardio"],
@@ -100133,7 +100136,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Comecei muay thai para emagrecer, quanto tempo até ver resultado?" Essa pergunta chega para mim com frequência — geralmente de alguém que odiava esteira, experimentou uma aula de luta e finalmente encontrou um exercício que não parece castigo.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/muay-thai-emagrece-infographic.svg" alt="Infográfico sobre Muay Thai Emagrece? Calorias e O Que Esperar — Montinho Personal Trainer" title="Muay Thai Emagrece? Calorias e O Que Esperar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/muay-thai-emagrece.webp" alt="Muay thai emagrece: treino de luta com alto gasto calórico para quem quer perder gordura" title="Muay thai emagrece? — Montinho Personal Trainer Alphaville" width="1491" height="1055" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -100241,6 +100244,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "A zumba transforma cardio em festa — e isso vale ouro para quem odeia academia. Mas quantas calorias uma aula queima de verdade? E dá para emagrecer só dançando? Números honestos, limites reais e o plano para fazer a dança render na balança.",
     category: "Emagrecimento",
     date: "2026-07-30",
+    updatedAt: "2026-08-12",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["zumba", "emagrecimento", "dança", "queima de calorias", "cardio"],
@@ -100279,7 +100283,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Tem gente que sofre 30 minutos numa esteira olhando o relógio — e dança uma hora inteira de zumba sem perceber o tempo passar. Se você é dessas pessoas, já entendeu intuitivamente algo que muita gente demora anos para aprender: <strong>o exercício que diverte é o exercício que continua</strong>.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/zumba-emagrece-infographic.svg" alt="Infográfico sobre Zumba Emagrece? O Que Esperar da Dança — Montinho Personal Trainer" title="Zumba Emagrece? O Que Esperar da Dança" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/zumba-emagrece.webp" alt="Zumba emagrece: aula de dança aeróbica e o gasto calórico real para quem quer perder peso" title="Zumba emagrece? — Montinho Personal Trainer Alphaville" width="1491" height="1055" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
