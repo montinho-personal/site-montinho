@@ -99257,6 +99257,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Postura curvada incomoda no espelho e cansa nas costas. A boa noticia: exercicio melhora, e muito. Veja os movimentos que fortalecem a cadeia posterior, o core e a mobilidade — e por que a postura perfeita unica e um mito.",
     category: "Saúde",
     date: "2026-07-30",
+    updatedAt: "2026-08-12",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["postura", "exercícios", "coluna", "fortalecimento", "mobilidade"],
@@ -99295,7 +99296,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Ombros caídos para frente, cabeça projetada, costas curvadas na cadeira. Se você se reconheceu, bem-vindo ao clube de quase todo mundo que trabalha sentado.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/exercicios-para-melhorar-a-postura-infographic.svg" alt="Infográfico sobre Exercícios Para Melhorar a Postura: Guia Completo — Montinho Personal Trainer" title="Exercícios Para Melhorar a Postura: Guia Completo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/exercicios-para-melhorar-a-postura.webp" alt="Exercícios para melhorar a postura: fortalecimento de core, costas e mobilidade da coluna" title="Exercícios para melhorar a postura — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -101189,6 +101190,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O banho gelado virou moda entre atletas e influenciadores, prometendo de recuperação muscular a queima de gordura. Mas será que ele emagrece de verdade? Analiso o que a ciência mostra sobre imersão no frio, gordura marrom e gasto calórico — sem exagero e sem promessa milagrosa.",
     category: "Emagrecimento",
     date: "2026-08-02",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["banho gelado", "imersão no frio", "emagrecimento", "gordura marrom", "metabolismo"],
@@ -101233,7 +101235,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se você passa cinco minutos nas redes sociais, já viu alguém dentro de uma banheira de gelo jurando que aquilo acelera o metabolismo, queima gordura e transforma o corpo. O banho gelado virou febre — e, como quase toda febre fitness, mistura um fundo de verdade com muito exagero. Como personal trainer especializado em emagrecimento, e como alguém que já perdeu mais de 40 kg na própria pele, aprendi a desconfiar de qualquer atalho. Então vamos direto ao ponto: banho gelado emagrece? A resposta honesta é: um pouquinho, em teoria — mas muito menos do que vendem por aí.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/banho-gelado-emagrece-infographic.svg" alt="Infográfico sobre Banho Gelado Emagrece? Benefícios e Mitos da Imersão no Frio — Montinho Personal Trainer" title="Banho Gelado Emagrece? Benefícios e Mitos da Imersão no Frio" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/banho-gelado-emagrece.webp" alt="Banho gelado emagrece: efeitos reais da imersão no frio no gasto calórico e na recuperação" title="Banho gelado emagrece? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>O que acontece no corpo quando você entra na água fria</h2>
 <p>Quando o corpo é exposto ao frio, ele precisa gastar energia para manter a temperatura interna em torno de 36-37 °C. Esse processo se chama <strong>termogênese</strong>. Ela acontece de duas formas principais:</p>
@@ -101306,6 +101308,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Suco verde, dias de líquidos, chás que 'limpam o organismo': a indústria detox fatura bilhões prometendo desintoxicar o corpo. Mas seu fígado e seus rins já fazem isso de graça, 24 horas por dia. Explico o que realmente acontece quando você faz detox — e o que funciona de verdade para emagrecer.",
     category: "Nutrição",
     date: "2026-08-02",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["dieta detox", "suco detox", "emagrecimento", "nutrição", "mitos"],
@@ -101350,7 +101353,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Toda segunda-feira depois de um fim de semana exagerado, alguém me pergunta: "Montinho, vale a pena fazer uns dias de detox para limpar o organismo?" Eu entendo a tentação — a promessa é sedutora: beber sucos verdes por três dias, eliminar as "toxinas" e ver a balança despencar. Como personal trainer focado em emagrecimento, e como alguém que já perdeu mais de 40 kg testando de tudo antes de aprender o que funciona, posso responder com tranquilidade: <strong>dieta detox, como vendida por aí, não funciona</strong>. E explicar o porquê vai te economizar dinheiro e frustração.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/dieta-detox-funciona-infographic.svg" alt="Infográfico sobre Dieta Detox Funciona? O Que a Ciência Diz Sobre Sucos e Desintoxicação — Montinho Personal Trainer" title="Dieta Detox Funciona? O Que a Ciência Diz Sobre Sucos e Desintoxicação" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/dieta-detox-funciona.webp" alt="Dieta detox funciona? O que a ciência diz sobre sucos detox e desintoxicação do organismo" title="Dieta detox funciona? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Seu corpo já tem um sistema detox — e ele é excelente</h2>
 <p>A premissa central da dieta detox é que o corpo acumula "toxinas" que precisam ser eliminadas com sucos, chás ou jejuns especiais. Só que essa premissa ignora a fisiologia básica: você já possui um sistema de desintoxicação sofisticado funcionando agora, enquanto lê este texto.</p>
@@ -101422,6 +101425,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O elíptico (ou transport) é um dos aparelhos mais usados — e mais mal usados — da academia. Ele emagrece? Sim, dentro de um déficit calórico, e com a vantagem do baixo impacto nas articulações. Mostro quantas calorias ele gasta de verdade e como montar treinos que funcionam.",
     category: "Emagrecimento",
     date: "2026-08-02",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["elíptico", "transport", "cardio", "emagrecimento", "queima de gordura"],
@@ -101466,7 +101470,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>O elíptico — ou transport, como muita gente chama — é aquele aparelho que quase todo mundo já subiu "para dar uma queimada", mas que pouca gente usa com estratégia. Sempre me perguntam: elíptico emagrece? A resposta honesta, como personal trainer especializado em emagrecimento, é a mesma que dou para esteira, bike e escada: <strong>emagrece se — e somente se — estiver dentro de um déficit calórico</strong>. Nenhum aparelho queima gordura por conta própria. Mas o elíptico tem características que o tornam uma excelente ferramenta para muita gente, especialmente quem está acima do peso ou tem joelhos sensíveis. Eu sei bem: quando comecei minha própria transformação, com mais de 40 kg a perder, o baixo impacto fazia toda a diferença.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/eliptico-emagrece-infographic.svg" alt="Infográfico sobre Elíptico Emagrece? Calorias Gastas e Como Usar do Jeito Certo — Montinho Personal Trainer" title="Elíptico Emagrece? Calorias Gastas e Como Usar do Jeito Certo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/eliptico-emagrece.webp" alt="Elíptico emagrece: gasto calórico do aparelho elíptico e como usar no treino de emagrecimento" title="Elíptico emagrece? — Montinho Personal Trainer Alphaville" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Quantas calorias o elíptico gasta?</h2>
 <p>O gasto depende do seu peso, da resistência, da cadência e do uso (ou não) dos braços. Valores aproximados para 30 minutos:</p>
@@ -101542,6 +101546,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Treinar menstruada não só pode como muitas vezes ajuda: o exercício tende a aliviar cólicas leves e melhorar o humor. Explico o que acontece em cada fase do ciclo, quando faz sentido ajustar a intensidade e por que dor incapacitante merece investigação médica.",
     category: "Saúde",
     date: "2026-08-02",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["ciclo menstrual", "treino feminino", "menstruação", "musculação", "saúde da mulher"],
@@ -101586,7 +101591,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Essa é uma das perguntas que mais recebo das minhas alunas: "Montinho, posso treinar menstruada?" E a resposta, com respaldo da ciência e da prática de anos acompanhando mulheres, é clara: <strong>pode — e, para a maioria, faz bem</strong>. O exercício durante a menstruação é seguro, tende a aliviar cólicas leves e melhora o humor. Mas a resposta completa é mais interessante do que um simples "pode": o ciclo menstrual influencia energia, disposição e recuperação ao longo do mês, e entender isso ajuda a treinar melhor — sem virar refém de tabelinhas rígidas que a internet adora vender.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-e-ciclo-menstrual-infographic.svg" alt="Infográfico sobre Treinar Menstruada Pode? Como Ajustar o Treino ao Ciclo Menstrual — Montinho Personal Trainer" title="Treinar Menstruada Pode? Como Ajustar o Treino ao Ciclo Menstrual" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-e-ciclo-menstrual.webp" alt="Treinar menstruada pode: como adaptar o treino às fases do ciclo menstrual com segurança" title="Treinar menstruada pode? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Primeiro, o essencial: treinar menstruada é seguro</h2>
 <p>Não existe nenhuma contraindicação fisiológica para exercício durante a menstruação em mulheres saudáveis. Pelo contrário: a atividade física libera endorfinas, melhora o fluxo sanguíneo e tem efeito analgésico natural. Revisões sobre dismenorreia (a cólica menstrual) — como a publicada na Cochrane por Armour e colaboradores (2019) — indicam que o <strong>exercício regular reduz a intensidade da dor menstrual</strong>, com efeito comparável ao de alguns analgésicos em casos leves a moderados.</p>
