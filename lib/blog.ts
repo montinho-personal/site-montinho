@@ -104568,6 +104568,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Um plano honesto de 8 semanas para sair do zero e completar 5 km correndo. Sem heroísmo, com progressão gradual, treino de força e os erros que colocam iniciantes fora de jogo na terceira semana.",
     category: "Treino",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["corrida", "iniciantes", "5 km", "cardio", "planilha"],
@@ -104612,7 +104613,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Correr 5 km parece pouco para quem já corre e parece impossível para quem nunca correu. Eu já estive dos dois lados. Com 40 kg a mais, eu não conseguia correr dois minutos seguidos sem achar que ia passar mal — e a frustração daquilo é real. O que quase ninguém conta para o iniciante é que a barreira dos 5 km é vencida com paciência, não com esforço heroico. Quem tenta correr direto no primeiro dia costuma parar na terceira semana com dor no joelho ou canelite. Quem alterna caminhada e corrida chega.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/corrida-para-iniciantes-infographic.svg" alt="Infográfico sobre Corrida Para Iniciantes: Do Sofá aos 5 km — Montinho Personal Trainer" title="Corrida Para Iniciantes: Do Sofá aos 5 km" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/corrida-para-iniciantes.webp" alt="Corrida para iniciantes: plano do sofá aos 5 km com método caminhada e corrida" title="Corrida para iniciantes — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>Antes de calçar o tênis</h2>
@@ -104720,6 +104721,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Churrasco de domingo não precisa ser o vilão do seu emagrecimento. Com escolha de cortes, ordem do prato e um pouco de estratégia com o álcool, dá para comer bem e continuar dentro do seu plano. Aqui está o guia que eu passo para os meus alunos em Alphaville.",
     category: "Nutrição",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["churrasco", "dieta", "emagrecimento", "alimentação social", "déficit calórico"],
@@ -104764,7 +104766,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Todo domingo eu recebo a mesma mensagem de aluno: "Montinho, vou num churrasco hoje, tô ferrado?". A resposta é não. Você não está ferrado. Churrasco não desfaz semana nenhuma — o que desfaz é a soma de decisões repetidas sem consciência. Eu perdi 40 kg e continuei indo a churrasco de família nesse período inteiro. Não foi apesar disso: foi aprendendo a caber isso dentro do plano.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/churrasco-sem-sair-da-dieta-infographic.svg" alt="Infográfico sobre Churrasco Sem Sair da Dieta: Guia Prático — Montinho Personal Trainer" title="Churrasco Sem Sair da Dieta: Guia Prático" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/churrasco-sem-sair-da-dieta.webp" alt="Churrasco sem sair da dieta: escolha de cortes, bebidas e estratégias para aproveitar sem culpa" title="Churrasco sem sair da dieta — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Este texto é o guia prático que eu passo pros meus alunos. Nada de "só coma alface" ou "pule o almoço pra compensar". A ideia é simples: você entende de onde vêm as calorias do churrasco, escolhe onde quer gastar seu orçamento do dia e volta para a rotina na refeição seguinte, sem drama.</p>
@@ -104907,6 +104909,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Restaurante, happy hour e almoço de trabalho não precisam ser inimigos do seu emagrecimento. Existe uma forma de comer fora com frequência e continuar progredindo — e ela não passa por pedir salada sem molho e sair com fome.",
     category: "Nutrição",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["comer fora", "restaurante", "dieta", "emagrecimento", "rotina"],
@@ -104951,7 +104954,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Uma das coisas que mais me irrita no discurso fitness é a ideia de que emagrecer exige comer todas as refeições em casa, na balança, dentro de um pote. Eu perdi 40 kg comendo fora várias vezes por semana, porque a minha vida — como a sua — inclui almoço de trabalho, aniversário, jantar com a família e sexta-feira com os amigos. Um plano que só funciona dentro da sua cozinha não é um plano: é uma pausa.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/comer-fora-sem-estragar-a-dieta-infographic.svg" alt="Infográfico sobre Como Comer Fora Sem Estragar a Dieta — Montinho Personal Trainer" title="Como Comer Fora Sem Estragar a Dieta" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/comer-fora-sem-estragar-a-dieta.webp" alt="Como comer fora sem estragar a dieta: escolhas em restaurante, rodízio e buffet no dia a dia" title="Comer fora sem estragar a dieta — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>O que eu vou te mostrar aqui é como comer fora com frequência sem que isso apague o seu progresso. Não tem mágica e não tem proibição. Tem escolha informada, um pouco de antecipação e a disposição de aceitar que às vezes você vai comer mais do que o planejado — e que tudo bem.</p>
@@ -105080,6 +105083,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Você faz tudo certo de segunda a sexta e a balança não anda. Na maioria das vezes o motivo não é metabolismo travado: é a aritmética do sábado e do domingo. Aqui está a conta real, sem culpa e sem terrorismo.",
     category: "Emagrecimento",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["fim de semana", "déficit calórico", "média semanal", "emagrecimento", "consistência"],
@@ -105124,7 +105128,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Montinho, eu faço tudo certo a semana inteira e a balança não sai do lugar." Eu ouço essa frase toda semana, e na esmagadora maioria das vezes a resposta não está na segunda-feira. Está no sábado. Não porque o sábado seja pecado, mas porque a matemática do emagrecimento não é diária — é semanal, e quase ninguém faz essa conta.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/fim-de-semana-estraga-a-dieta-infographic.svg" alt="Infográfico sobre Fim de Semana Estraga a Dieta? A Matemática do Sábado e Domingo — Montinho Personal Trainer" title="Fim de Semana Estraga a Dieta? A Matemática do Sábado e Domingo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/fim-de-semana-estraga-a-dieta.webp" alt="Fim de semana estraga a dieta? A matemática do sábado e domingo no déficit calórico semanal" title="Fim de semana estraga a dieta? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Este texto é sobre essa conta. Vou mostrar os números de forma bem transparente, sem julgamento, porque quando as pessoas veem a aritmética elas param de se achar quebradas e começam a resolver o problema certo.</p>
