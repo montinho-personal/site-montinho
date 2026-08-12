@@ -103820,6 +103820,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Toda semana um pai me pergunta se musculação atrapalha o crescimento do filho. A evidência diz que não, quando o treino é supervisionado e bem orientado. Mas antes disso vem o que realmente importa na infância: brincar, variar e se movimentar todos os dias.",
     category: "Saúde",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["exercício infantil", "crianças", "adolescentes", "musculação", "saúde"],
@@ -103865,7 +103866,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>"Montinho, meu filho de 12 anos pode fazer musculação? Não vai parar o crescimento dele?" Essa pergunta chega até mim com uma regularidade impressionante, quase sempre acompanhada de uma certeza absoluta de que a resposta é sim. Meus próprios pais acreditavam nisso. Meu professor de educação física acreditava. E, no entanto, é um dos mitos mais bem documentados e mais persistentemente errados da área.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/exercicio-para-criancas-infographic.svg" alt="Infográfico sobre Exercício Para Crianças: O Que a Idade Permite — Montinho Personal Trainer" title="Exercício Para Crianças: O Que a Idade Permite" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/exercicio-para-criancas.webp" alt="Exercício para crianças: o que a idade permite, brincadeira, variedade e musculação supervisionada" title="Exercício para crianças — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Antes de chegar lá, quero começar por um ponto que acho mais importante: a pergunta que a maioria dos pais deveria estar fazendo não é "meu filho pode levantar peso?", e sim "meu filho está se movendo o suficiente?". Porque o problema real da infância brasileira hoje não é excesso de treino. É tela, sedentarismo e a perda quase completa da brincadeira livre.</p>
@@ -103984,6 +103985,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O exercício é uma das intervenções não medicamentosas mais estudadas para melhorar o sono. Mas ele não é um interruptor mágico, e insônia crônica tem tratamento próprio. Aqui vai o que funciona, o que não funciona e onde está o limite.",
     category: "Saúde",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["insônia", "sono", "exercício", "saúde", "recuperação"],
@@ -104028,7 +104030,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Eu convivi anos com noites ruins. Quando eu estava com 40 kg a mais, dormir era um problema diário: eu roncava, acordava várias vezes, levantava mais cansado do que deitei e passava o dia inteiro no automático, refém de café. Quando comecei a treinar de verdade e o peso foi saindo, o sono foi uma das primeiras coisas que mudaram. Não da noite para o dia, e não como mágica — mas mudou. Por isso esse assunto me interessa tanto, e por isso também eu faço questão de ser honesto: exercício ajuda muito no sono, mas insônia crônica é um problema clínico com tratamento próprio, e não se resolve só com academia.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/insonia-e-exercicio-infographic.svg" alt="Infográfico sobre Insônia: Como o Exercício Ajuda a Dormir Melhor — Montinho Personal Trainer" title="Insônia: Como o Exercício Ajuda a Dormir Melhor" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/insonia-e-exercicio.webp" alt="Insônia e exercício: como o treino ajuda a dormir melhor e o que fazer na insônia crônica" title="Insônia: como o exercício ajuda a dormir — Montinho Personal Trainer Alphaville" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>O que é insônia de verdade</h2>
@@ -104124,6 +104126,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Ferro baixo tira força, fôlego e disposição muito antes de virar anemia no exame. Entenda os sinais, os exames que importam e por que suplementar por conta própria é uma péssima ideia.",
     category: "Saúde",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["anemia", "ferro", "ferritina", "rendimento", "saúde"],
@@ -104168,7 +104171,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Tem um tipo de aluno que eu aprendi a reconhecer rápido. Ele treina certinho, come razoavelmente bem, dorme o que dá — e mesmo assim vive arrastado. Fica sem ar subindo dois lances de escada. Perde carga do nada. Fica pálido e reclama de tontura ao levantar. Quando eu sugiro um exame de sangue, uma parte considerável volta com o mesmo achado: ferro ou ferritina lá embaixo. Não é a explicação de todo cansaço, mas é uma das mais comuns e uma das mais ignoradas.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/anemia-e-treino-infographic.svg" alt="Infográfico sobre Anemia e Treino: Como o Ferro Baixo Derruba o Rendimento — Montinho Personal Trainer" title="Anemia e Treino: Como o Ferro Baixo Derruba o Rendimento" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/anemia-e-treino.webp" alt="Anemia e treino: como o ferro baixo derruba o rendimento no exercício e o que fazer" title="Anemia e treino — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>O que o ferro faz no seu corpo</h2>
@@ -104273,6 +104276,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Musculação não causa varizes e, na maioria dos casos, é segura e até favorável à circulação. Mas o quadro é individual e quem decide o que pode ou não é o cirurgião vascular. Aqui vão os fatos e os ajustes práticos.",
     category: "Saúde",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["varizes", "musculação", "circulação", "saúde", "pernas"],
@@ -104317,7 +104321,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Montinho, agachamento causa varizes?" Essa pergunta aparece na academia com uma frequência impressionante, quase sempre vinda de alunas que já têm alguma veia aparente e estão com medo de piorar. A resposta curta é não — agachamento não causa varizes. A resposta longa é mais interessante, porque envolve entender o que realmente acontece nas veias das pernas e onde existe, sim, motivo para ajuste e para uma avaliação médica.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/varizes-e-musculacao-infographic.svg" alt="Infográfico sobre Varizes: Pode Fazer Musculação? — Montinho Personal Trainer" title="Varizes: Pode Fazer Musculação?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/varizes-e-musculacao.webp" alt="Varizes e musculação: quem tem varizes pode treinar? O que dizem as evidências" title="Varizes: pode fazer musculação? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>O que são varizes, de verdade</h2>
@@ -104413,6 +104417,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Cansaço constante às vezes é sedentarismo, sono ruim e alimentação bagunçada. Mas também pode ser anemia, tireoide, apneia ou depressão. Aqui vai como separar o que você resolve sozinho do que precisa de médico.",
     category: "Saúde",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["cansaço", "disposição", "energia", "saúde", "sedentarismo"],
@@ -104457,7 +104462,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Eu passei anos achando que era só do meu jeito. Acordava cansado, arrastava o corpo até o meio da tarde, tomava café atrás de café e chegava em casa sem energia para nada. Eu tinha 40 kg a mais e tinha me convencido de que aquilo era personalidade — "eu sou uma pessoa cansada". Não era. Era o meu corpo funcionando mal, e o cansaço era o sintoma. Quando o peso saiu e o treino entrou, a disposição voltou de um jeito que eu tinha esquecido que existia. Por isso eu levo esse assunto a sério: cansaço crônico não é frescura, e às vezes não é nem falta de treino.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/cansaco-e-falta-de-disposicao-infographic.svg" alt="Infográfico sobre Cansaço o Dia Todo: Falta de Treino ou Algo Mais? — Montinho Personal Trainer" title="Cansaço o Dia Todo: Falta de Treino ou Algo Mais?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/cansaco-e-falta-de-disposicao.webp" alt="Cansaço e falta de disposição o dia todo: causas tratáveis e quando investigar com médico" title="Cansaço e falta de disposição — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>Primeiro, separe cansaço de fadiga</h2>
