@@ -97577,6 +97577,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Dor no punho é uma das queixas mais comuns de quem treina — e quase sempre tem causa identificável: pegada errada, punho quebrado sob carga ou sobrecarga rápida demais. Veja os ajustes práticos e quando buscar avaliação.",
     category: "Saúde",
     date: "2026-07-30",
+    updatedAt: "2026-08-12",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["dor no punho", "lesões", "mobilidade", "técnica", "treino"],
@@ -97615,7 +97616,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Você desce no supino e sente aquela fisgada no punho. Ou tenta fazer flexão e o punho reclama antes do peitoral. Ou termina a rosca direta com a região dolorida. Se identificou alguma dessas cenas, este artigo é para você.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/dor-no-punho-ao-treinar-infographic.svg" alt="Infográfico sobre Dor no Punho ao Treinar: Causas e Como Resolver — Montinho Personal Trainer" title="Dor no Punho ao Treinar: Causas e Como Resolver" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/dor-no-punho-ao-treinar.webp" alt="Dor no punho ao treinar: causas comuns na musculação e como ajustar pegada e carga" title="Dor no punho ao treinar — Montinho Personal Trainer Alphaville" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Dor no punho ao treinar é extremamente comum — e, na maioria dos casos, tem causa mecânica identificável: posição errada da pegada, falta de mobilidade ou sobrecarga que cresceu rápido demais. A boa notícia é que quase sempre dá para resolver com ajustes simples.</p>
@@ -97720,6 +97721,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "A dose prática fica entre 30 e 60 minutos por dia — mas o que decide o emagrecimento é o déficit calórico. Veja quanto a caminhada gasta de verdade, como usar os passos a seu favor e por que ela é porta de entrada, não teto.",
     category: "Emagrecimento",
     date: "2026-07-30",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["caminhada", "emagrecimento", "cardio", "passos por dia", "déficit calórico"],
@@ -97758,7 +97760,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Essa é uma das perguntas que mais recebo de quem está começando: "quantos minutos de caminhada por dia eu preciso para emagrecer?" A resposta honesta tem duas partes.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-tempo-de-caminhada-por-dia-infographic.svg" alt="Infográfico sobre Quanto Tempo de Caminhada Por Dia Para Emagrecer? — Montinho Personal Trainer" title="Quanto Tempo de Caminhada Por Dia Para Emagrecer?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-tempo-de-caminhada-por-dia.webp" alt="Quanto tempo de caminhada por dia para emagrecer: duração ideal e gasto calórico da caminhada" title="Quanto tempo de caminhada por dia? — Montinho Personal Trainer Alphaville" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>A parte prática: para a maioria das pessoas, 30 a 60 minutos por dia de caminhada em ritmo acelerado é uma dose excelente. A parte que ninguém quer ouvir, mas que muda tudo: nenhum minuto de caminhada emagrece se a alimentação anular o gasto. Quem decide o emagrecimento é o déficit calórico — a caminhada é uma ferramenta para construí-lo.</p>
@@ -97845,6 +97847,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "1kg de gordura corporal armazena cerca de 7.700 kcal. Esse número é uma régua poderosa para planejar sua perda de peso — desde que você entenda onde a conta funciona e onde o corpo insiste em não ser calculadora.",
     category: "Emagrecimento",
     date: "2026-07-30",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["calorias", "gordura corporal", "déficit calórico", "emagrecimento", "matemática do emagrecimento"],
@@ -97883,7 +97886,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se você quer emagrecer, esse é talvez o número mais útil que você pode aprender: 1kg de gordura corporal armazena aproximadamente 7.700 kcal.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quantas-calorias-tem-1kg-de-gordura-infographic.svg" alt="Infográfico sobre Quantas Calorias Tem 1kg de Gordura? A Matemática do Emagrecimento — Montinho Personal Trainer" title="Quantas Calorias Tem 1kg de Gordura? A Matemática do Emagrec" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quantas-calorias-tem-1kg-de-gordura.webp" alt="Quantas calorias tem 1 kg de gordura: a matemática do déficit calórico no emagrecimento" title="Quantas calorias tem 1kg de gordura? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Esse número transforma o emagrecimento de mistério em matemática. Ele explica por que a balança demora, por que dietas milagrosas mentem e por que o fim de semana consegue apagar a semana inteira. Quando eu entendi essa conta — na pele, perdendo mais de 40kg — o processo deixou de ser loteria e virou planejamento.</p>
@@ -98739,6 +98742,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Ferro baixo derruba energia, treino e disposicao. Veja a lista completa de alimentos ricos em ferro, a diferenca entre ferro heme e nao heme e as combinacoes que aumentam (ou destroem) a absorcao.",
     category: "Nutrição",
     date: "2026-07-30",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["ferro", "alimentação", "anemia", "nutrição", "absorção de nutrientes"],
@@ -98777,7 +98781,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Cansaço que não passa, treino rendendo menos, falta de ar em esforços que antes eram fáceis. Antes de culpar o treino ou o sono, vale olhar para um mineral que muita gente negligencia: o ferro.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/alimentos-ricos-em-ferro-infographic.svg" alt="Infográfico sobre Alimentos Ricos em Ferro: Lista Completa e Como Absorver Melhor — Montinho Personal Trainer" title="Alimentos Ricos em Ferro: Lista Completa e Como Absorver Mel" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/alimentos-ricos-em-ferro.webp" alt="Alimentos ricos em ferro: lista completa de fontes animais e vegetais e como melhorar a absorção" title="Alimentos ricos em ferro — Montinho Personal Trainer Alphaville" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -98907,6 +98911,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Vitamina D baixa e extremamente comum e costuma passar despercebida. Conheca os sintomas mais frequentes, por que so o exame confirma o diagnostico e o que fazer — sem cair em modismos de dose alta.",
     category: "Saúde",
     date: "2026-07-30",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["vitamina D", "saúde", "imunidade", "fadiga", "exames"],
@@ -98945,7 +98950,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Cansaço sem explicação, dor muscular difusa, gripes que emendam uma na outra. Esses sintomas têm mil causas possíveis — mas uma delas é tão comum que merece atenção: vitamina D baixa.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/vitamina-d-baixa-sintomas-infographic.svg" alt="Infográfico sobre Vitamina D Baixa: Sintomas e O Que Fazer — Montinho Personal Trainer" title="Vitamina D Baixa: Sintomas e O Que Fazer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/vitamina-d-baixa-sintomas.webp" alt="Vitamina D baixa: sintomas, causas e o que fazer para corrigir a deficiência com orientação médica" title="Vitamina D baixa: sintomas — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
