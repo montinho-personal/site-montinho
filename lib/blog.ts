@@ -98311,6 +98311,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Subir escada é um dos exercícios mais subestimados que existem: gratuito, acessível e com gasto calórico real por minuto. Sozinho não emagrece ninguém — quem decide é o déficit —, mas como aumento de NEAT foi uma das ferramentas que usei para perder mais de 40kg.",
     category: "Emagrecimento",
     date: "2026-07-30",
+    updatedAt: "2026-08-12",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["subir escada", "NEAT", "gasto calórico", "emagrecimento", "atividade física"],
@@ -98349,7 +98350,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Subir escada emagrece? Vou responder do jeito que respondo tudo por aqui: com honestidade. Subir escada, sozinho, não emagrece ninguém — assim como nenhum exercício isolado emagrece. Quem decide é o déficit calórico.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/subir-escada-emagrece-infographic.svg" alt="Infográfico sobre Subir Escada Emagrece? O Exercício Gratuito Que Você Ignora — Montinho Personal Trainer" title="Subir Escada Emagrece? O Exercício Gratuito Que Você Ignora" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/subir-escada-emagrece.webp" alt="Subir escada emagrece: exercício gratuito com alto gasto calórico para incluir no dia a dia" title="Subir escada emagrece? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -98456,6 +98457,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "A cinta modeladora comprime, molda a silhueta na hora e faz você suar mais na região — mas não queima um grama de gordura. Explico o que a compressão realmente faz, os riscos do uso excessivo e por que eu mesmo caí nessa promessa quando era obeso.",
     category: "Emagrecimento",
     date: "2026-07-30",
+    updatedAt: "2026-08-12",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["cinta modeladora", "emagrecimento", "mitos", "gordura abdominal", "compressão"],
@@ -98494,7 +98496,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Cinta modeladora emagrece? Não. E eu queria muito poder te dar outra resposta, porque sei exatamente o que você está sentindo ao pesquisar isso — eu já estive do outro lado dessa busca.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/cinta-modeladora-emagrece-infographic.svg" alt="Infográfico sobre Cinta Modeladora Emagrece? A Verdade Sobre a Compressão — Montinho Personal Trainer" title="Cinta Modeladora Emagrece? A Verdade Sobre a Compressão" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/cinta-modeladora-emagrece.webp" alt="Cinta modeladora emagrece? A verdade sobre a compressão abdominal e a perda de gordura" title="Cinta modeladora emagrece? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -98589,6 +98591,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O café é provavelmente o pré-treino mais barato e estudado do mundo. A cafeína melhora força, resistência e disposição — mas dose, timing e sensibilidade individual fazem toda a diferença. Veja como usar bem e quem deve evitar.",
     category: "Nutrição",
     date: "2026-07-30",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["café", "cafeína", "pré-treino", "desempenho", "nutrição esportiva"],
@@ -98627,7 +98630,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Aquele café antes do treino é mais do que ritual: é provavelmente o recurso ergogênico mais barato, acessível e bem estudado que existe. A cafeína é uma das poucas substâncias com evidência robusta de melhora de desempenho — força, resistência e disposição.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/cafe-antes-do-treino-infographic.svg" alt="Infográfico sobre Café Antes do Treino: Benefícios e Como Usar — Montinho Personal Trainer" title="Café Antes do Treino: Benefícios e Como Usar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/cafe-antes-do-treino.webp" alt="Café antes do treino: cafeína como pré-treino natural, dose e melhor horário para tomar" title="Café antes do treino — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -99413,6 +99416,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Da para construir peitoral em casa? Da — com flexoes bem progredidas, variacoes inteligentes e, se possivel, elasticos. Veja o treino completo, como progredir sem carga e o que esperar de forma realista.",
     category: "Treino",
     date: "2026-07-30",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["treino em casa", "peito", "flexão", "calistenia", "hipertrofia"],
@@ -99451,7 +99455,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Sem academia, sem banco, sem halteres — dá para treinar peito de verdade? Dá. Com uma condição: levar a progressão a sério, e não repetir as mesmas 3 séries de 15 flexões para sempre.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-de-peito-em-casa-infographic.svg" alt="Infográfico sobre Treino de Peito em Casa: Exercícios e Progressão — Montinho Personal Trainer" title="Treino de Peito em Casa: Exercícios e Progressão" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-de-peito-em-casa.webp" alt="Treino de peito em casa: exercícios sem equipamento e progressão para peitoral" title="Treino de peito em casa — Montinho Personal Trainer Alphaville" width="1024" height="1536" loading="lazy" decoding="async" style="width:100%;max-width:520px;height:auto;border-radius:8px;display:block;margin:0 auto;" />
 </figure>
 
 
@@ -99925,6 +99929,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Desafios de 50, 100 ou 200 flexões por dia viralizam todo ano. Eles funcionam para criar hábito, mas escondem um problema: sem progressão, o corpo para de responder em poucas semanas. Veja o que esperar de verdade e como fazer as flexões renderem músculo.",
     category: "Treino",
     date: "2026-07-30",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["flexões", "treino em casa", "calistenia", "hipertrofia", "progressão de carga"],
@@ -99963,7 +99968,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"100 flexões por dia durante 30 dias" — você já viu esse desafio no YouTube, no TikTok ou num grupo de amigos. A promessa implícita é sedutora: um número redondo, todo dia, e no fim do mês um peitoral novo.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quantas-flexoes-por-dia-infographic.svg" alt="Infográfico sobre Quantas Flexões Por Dia? A Verdade Sobre os Desafios — Montinho Personal Trainer" title="Quantas Flexões Por Dia? A Verdade Sobre os Desafios" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quantas-flexoes-por-dia.webp" alt="Quantas flexões por dia fazer: progressão realista e a verdade sobre os desafios de 100 flexões" title="Quantas flexões por dia? — Montinho Personal Trainer Alphaville" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
