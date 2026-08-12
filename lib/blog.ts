@@ -101651,6 +101651,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Cortar o glúten virou sinônimo de vida saudável, e muita gente jura que emagreceu com isso. Mas o glúten não engorda por si só — e produtos gluten-free podem até ter mais calorias. Explico quem realmente precisa cortar o glúten e o que de fato faz a balança descer.",
     category: "Nutrição",
     date: "2026-08-02",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["dieta sem glúten", "glúten", "emagrecimento", "doença celíaca", "nutrição"],
@@ -101695,7 +101696,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se eu ganhasse um real por cada vez que ouvi "cortei o glúten e emagreci", já teria montado um estúdio novo. A dieta sem glúten virou símbolo de alimentação saudável: prateleiras inteiras de produtos gluten-free, celebridades atribuindo o shape ao corte do trigo, e a sensação geral de que pão é veneno. Como personal trainer especializado em emagrecimento — e alguém que perdeu mais de 40 kg comendo pão dentro das calorias certas —, preciso te contar a verdade com calma: <strong>o glúten, por si só, não engorda, e cortá-lo, por si só, não emagrece</strong>. Mas existe um grupo de pessoas que DEVE cortar o glúten, e vamos falar sério sobre elas também.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/dieta-sem-gluten-emagrece-infographic.svg" alt="Infográfico sobre Dieta Sem Glúten Emagrece? A Verdade Que Ninguém Te Conta — Montinho Personal Trainer" title="Dieta Sem Glúten Emagrece? A Verdade Que Ninguém Te Conta" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/dieta-sem-gluten-emagrece.webp" alt="Dieta sem glúten emagrece? O que muda ao cortar o glúten sem ter doença celíaca" title="Dieta sem glúten emagrece? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>O que é glúten, afinal?</h2>
 <p>Glúten é um conjunto de proteínas (gliadina e glutenina) presente no trigo, centeio e cevada — e, por contaminação cruzada, frequentemente na aveia. É ele que dá elasticidade à massa do pão e estrutura a fermentação. Nutricionalmente, é uma proteína como outras: não tem poder especial de estocar gordura, não "inflama" o corpo de pessoas saudáveis em doses normais e não trava seu emagrecimento por mágica.</p>
@@ -101766,6 +101767,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "A tapioca ganhou fama de alimento fit, mas será que ela merece? Comparo calorias com o pão francês, explico o índice glicêmico e mostro quando ela ajuda — e quando atrapalha — o emagrecimento.",
     category: "Nutrição",
     date: "2026-08-04",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["tapioca", "emagrecimento", "calorias", "carboidratos", "café da manhã"],
@@ -101810,7 +101812,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se eu ganhasse um real cada vez que um aluno me perguntou se tapioca engorda, provavelmente já teria aposentado. A tapioca virou símbolo de alimentação saudável no Brasil: trocou o pão no café da manhã de milhões de pessoas e ganhou status de alimento “fit”. Mas aqui vai a resposta curta e honesta: a tapioca não engorda nem emagrece sozinha. Nenhum alimento tem esse poder. O que decide se você ganha ou perde gordura é o seu balanço calórico ao longo dos dias e semanas — e é exatamente aí que a tapioca pode tanto ajudar quanto atrapalhar.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/tapioca-engorda-infographic.svg" alt="Infográfico sobre Tapioca Engorda ou Emagrece? A Verdade Sobre a Queridinha do Café da Manhã — Montinho Personal Trainer" title="Tapioca Engorda ou Emagrece? A Verdade Sobre a Queridinha do Café da Manhã" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/tapioca-engorda.webp" alt="Tapioca engorda ou emagrece? Calorias da tapioca e como usar no plano alimentar" title="Tapioca engorda ou emagrece? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>O que é a tapioca, afinal?</h2>
 <p>A tapioca é feita da goma da mandioca: um amido quase puro, hidratado e espalhado na frigideira. E esse detalhe importa muito. Quando digo “amido quase puro”, quero dizer que a tapioca é praticamente só carboidrato. Ela tem pouquíssima proteína, quase nenhuma fibra e praticamente zero gordura.</p>
@@ -101889,6 +101891,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O açaí puro é uma fruta de valor nutricional interessante. O problema é que quase ninguém come açaí puro. Comparo as calorias da polpa com a tigela completa — e a diferença assusta.",
     category: "Nutrição",
     date: "2026-08-04",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["açaí", "calorias", "emagrecimento", "alimentação saudável", "dieta"],
@@ -101933,7 +101936,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>O açaí talvez seja o alimento mais contraditório do Brasil: metade das pessoas jura que é um superalimento saudável, a outra metade jura que engorda demais. E sabe o que é curioso? As duas metades têm razão — porque estão falando de coisas diferentes. A polpa de açaí pura é uma fruta com perfil nutricional interessante e calorias moderadas. Já a tigela de açaí da esquina, batida com xarope de guaraná e coberta de leite condensado, granola e leite em pó, é uma sobremesa de mais de 1.000 kcal disfarçada de lanche fit. Neste artigo eu separo uma coisa da outra, com números.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/acai-engorda-infographic.svg" alt="Infográfico sobre Açaí Engorda? Calorias da Tigela vs Polpa Pura (a Diferença é Brutal) — Montinho Personal Trainer" title="Açaí Engorda? Calorias da Tigela vs Polpa Pura (a Diferença é Brutal)" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/acai-engorda.webp" alt="Açaí engorda? Calorias da tigela de açaí com complementos comparadas à polpa pura" title="Açaí engorda? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Açaí puro: o que ele realmente é</h2>
 <p>A polpa de açaí pura (sem adição de açúcar ou xarope) tem, em média, 58 kcal por 100 g. É mais calórica que a maioria das frutas — porque, diferente delas, o açaí tem gordura. Mas é uma gordura de perfil bom, majoritariamente insaturada, parecida em composição com a do azeite. Além disso, o açaí entrega fibras e uma quantidade enorme de antocianinas, os antioxidantes responsáveis pela cor roxa intensa.</p>
@@ -102003,6 +102006,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Pão integral virou sinônimo de dieta, mas ele tem quase as mesmas calorias do pão branco. Explico onde o integral realmente ganha, onde é só marketing e como escolher um integral de verdade no mercado.",
     category: "Nutrição",
     date: "2026-08-04",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["pão integral", "carboidratos", "emagrecimento", "fibras", "rótulos"],
@@ -102047,7 +102051,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>“Montinho, troquei o pão francês pelo integral, já posso comer à vontade?” Essa pergunta resume o maior mal-entendido sobre pão no Brasil. A resposta rápida: pão integral não engorda nem emagrece por si só — e, surpresa, ele tem praticamente as mesmas calorias do pão branco. A diferença entre eles existe, é real e importa, mas não está onde a maioria imagina. Vou te mostrar os números, explicar onde o integral realmente vale a pena e ensinar a fugir dos falsos integrais que dominam as prateleiras.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/pao-integral-engorda-infographic.svg" alt="Infográfico sobre Pão Integral Engorda? Integral vs Branco na Prática — Montinho Personal Trainer" title="Pão Integral Engorda? Integral vs Branco na Prática" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/pao-integral-engorda.webp" alt="Pão integral engorda? Diferenças reais entre pão integral e pão branco na dieta" title="Pão integral engorda? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Integral vs branco: os números que ninguém mostra</h2>
 <p>Vamos direto à comparação, por 50 g (cerca de 2 fatias de pão de forma ou 1 pão francês):</p>
@@ -102125,6 +102129,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Frango com batata-doce virou uniforme de quem treina. Mas a batata-doce tem mais calorias que a batata inglesa — e não emagrece ninguém sozinha. Explico o que ela tem de bom de verdade e como usá-la com inteligência.",
     category: "Nutrição",
     date: "2026-08-04",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["batata-doce", "emagrecimento", "carboidratos", "índice glicêmico", "dieta fitness"],
@@ -102169,7 +102174,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se existe um prato que virou uniforme oficial de quem treina, é frango com batata-doce. A batata-doce ganhou uma aura quase mágica no mundo fitness: dizem que emagrece, que “não engorda”, que é o único carboidrato permitido para quem quer secar. Vou ser direto com você, como sou com meus alunos: a batata-doce é um ótimo alimento, mas ela não emagrece ninguém. Aliás, ela tem mais calorias do que a batata inglesa que todo mundo evita. Vem comigo entender de onde veio essa fama, o que é verdade e como usar a batata-doce a seu favor.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/batata-doce-emagrece-infographic.svg" alt="Infográfico sobre Batata-Doce Emagrece? Por Que Ela Virou a Queridinha Fit — Montinho Personal Trainer" title="Batata-Doce Emagrece? Por Que Ela Virou a Queridinha Fit" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/batata-doce-emagrece.webp" alt="Batata-doce emagrece? Por que virou a queridinha fitness e como usar no pré-treino" title="Batata-doce emagrece? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Os números que derrubam o mito</h2>
 <p>Primeiro, a comparação que quase ninguém faz. Valores aproximados por 100 g de alimento cozido:</p>
