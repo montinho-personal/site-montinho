@@ -105264,6 +105264,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Oito, dez horas sentado por dia cobram um preço em dor, rigidez e gasto calórico. A boa notícia é que a solução não é largar o emprego: é somar pausas ativas, mobilidade, força e movimento espalhado pelo dia.",
     category: "Saúde",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["trabalho sentado", "sedentarismo", "postura", "NEAT", "escritório"],
@@ -105308,7 +105309,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>A maioria dos meus alunos em Alphaville passa entre oito e dez horas por dia sentada. Reunião, planilha, chamada de vídeo, carro no trânsito, sofá à noite. E aí chega na consulta com dor lombar, ombro travado, pescoço tenso e a sensação de que o corpo está enferrujando aos 35 anos. Não é impressão. O corpo responde muito rápido à ausência de movimento — e responde igualmente rápido quando o movimento volta.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quem-trabalha-sentado-infographic.svg" alt="Infográfico sobre Quem Trabalha Sentado: O Que Fazer Pelo Corpo — Montinho Personal Trainer" title="Quem Trabalha Sentado: O Que Fazer Pelo Corpo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quem-trabalha-sentado.webp" alt="Quem trabalha sentado: pausas ativas, mobilidade e treino de força para compensar o dia no escritório" title="Quem trabalha sentado — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Eu não vou te dizer para largar o emprego nem comprar uma mesa de esteira. Vou te mostrar o que dá para fazer dentro da vida que você já tem, e por que a solução não é uma coisa só: é a combinação de quatro frentes.</p>
@@ -105456,6 +105457,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Motivação é inconstante por natureza. Quem treina há anos não é quem sente vontade todo dia — é quem construiu um sistema que funciona mesmo no dia ruim. Eu perdi 40 kg tendo dezenas de dias assim.",
     category: "Treino",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["preguiça de treinar", "motivação", "hábito", "consistência", "academia"],
@@ -105500,7 +105502,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Eu pesava 40 kg a mais do que peso hoje. E preciso te contar uma coisa que talvez ninguém tenha te contado: nesse processo inteiro, houve muito mais dias em que eu não quis treinar do que dias em que eu acordei animado. A diferença entre quem chega e quem desiste não é a quantidade de vontade. É o que a pessoa faz quando a vontade não aparece.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/preguica-de-treinar-infographic.svg" alt="Infográfico sobre Preguiça de Treinar: Como Vencer o Dia Ruim — Montinho Personal Trainer" title="Preguiça de Treinar: Como Vencer o Dia Ruim" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/preguica-de-treinar.webp" alt="Preguiça de treinar: como vencer o dia ruim com hábito e ambiente em vez de motivação" title="Preguiça de treinar — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Este texto é sobre isso. Não vou te dar frase de motivação, porque frase de motivação dura 20 minutos. Vou te dar o que sustenta treino por anos: hábito, ambiente e algumas decisões tomadas antes do dia ruim chegar.</p>
@@ -105630,6 +105632,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Ler rótulo não é decorar tabela, é saber onde olhar primeiro. Neste guia eu mostro o passo a passo que uso com meus alunos em Alphaville para comparar dois produtos no supermercado em menos de 30 segundos.",
     category: "Nutrição",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["rótulos", "tabela nutricional", "ingredientes", "açúcar", "alimentação"],
@@ -105675,7 +105678,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Quando eu pesei 40 kg a mais do que peso hoje, eu não fazia ideia do que estava comendo. Eu olhava a embalagem, via "integral", "light", "fonte de fibras", e achava que estava fazendo a escolha certa. Levei anos para entender que o rótulo é dividido em duas partes muito diferentes: a parte que o marketing escreveu para me convencer, e a parte que a lei obrigou a empresa a escrever. A segunda é a única que importa.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-ler-rotulos-de-alimentos-infographic.svg" alt="Infográfico sobre Como Ler Rótulos de Alimentos: Guia Prático — Montinho Personal Trainer" title="Como Ler Rótulos de Alimentos: Guia Prático" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-ler-rotulos-de-alimentos.webp" alt="Como ler rótulos de alimentos: porção real, lista de ingredientes e açúcares escondidos" title="Como ler rótulos de alimentos — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Este guia é o que eu ensino aos meus alunos em Alphaville quando eles me mandam foto de um produto no supermercado perguntando "esse pode?". A resposta quase nunca é sim ou não. É: <strong>vamos olhar juntos onde a informação real está</strong>. Ler rótulo não emagrece ninguém sozinho — quem emagrece é o <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a> sustentado ao longo de semanas. Mas saber ler rótulo te ajuda a montar esse déficit sem passar fome e sem cair em armadilha de embalagem.</p>
@@ -105819,6 +105822,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Vontade de doce não é falta de força de vontade. Quase sempre tem explicação: glicemia oscilando, sono ruim, restrição exagerada ou hábito. Aqui eu explico cada causa e o que fazer com cada uma.",
     category: "Nutrição",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["vontade de doce", "açúcar", "compulsão", "TPM", "hábitos"],
@@ -105864,7 +105868,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Quase toda semana alguém me diz a mesma frase: "Montinho, eu vou super bem o dia inteiro, aí chega a noite e eu não resisto ao doce". Eu conheço essa cena por dentro. Quando eu ainda carregava os 40 kg que perdi, minha noite era isso: um dia inteiro de comportamento exemplar desmoronando às 21h na frente da geladeira. E a explicação, na maioria absoluta das vezes, não é caráter fraco. É fisiologia, hábito e uma dieta mal desenhada.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/vontade-de-doce-infographic.svg" alt="Infográfico sobre Vontade de Doce: Por Que Dá e Como Controlar — Montinho Personal Trainer" title="Vontade de Doce: Por Que Dá e Como Controlar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/vontade-de-doce.webp" alt="Vontade de doce: por que dá e como controlar sem restrição extrema nem culpa" title="Vontade de doce: como controlar — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Neste artigo eu vou destrinchar as causas mais comuns da vontade de doce e o que fazer com cada uma. Aviso desde já: <strong>não existe truque que mata a vontade de doce para sempre</strong>. Quem promete isso está te vendendo alguma coisa. O que existe é reduzir a frequência e a intensidade da vontade, e ganhar capacidade de escolher o que fazer quando ela aparece.</p>
@@ -105980,6 +105984,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Você não precisa pesar tudo para emagrecer. Precisa acertar a proporção do prato. Aqui eu mostro o método visual adaptado à comida brasileira de verdade, com ajustes para emagrecer, manter ou ganhar massa.",
     category: "Emagrecimento",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["montar prato", "emagrecimento", "porções", "arroz e feijão", "saciedade"],
@@ -106025,7 +106030,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>A pergunta que mais recebo de quem está começando não é sobre treino. É "o que eu como no almoço?". E por trás dela quase sempre existe um medo: o de precisar comprar balança de cozinha, pesar cada grão de arroz e transformar a refeição em planilha. Eu perdi 40 kg e posso dizer com tranquilidade: <strong>na maior parte do tempo eu não pesei nada</strong>. Eu aprendi a montar o prato.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-montar-o-prato-para-emagrecer-infographic.svg" alt="Infográfico sobre Como Montar o Prato Para Emagrecer — Montinho Personal Trainer" title="Como Montar o Prato Para Emagrecer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-montar-o-prato-para-emagrecer.webp" alt="Como montar o prato para emagrecer: método visual com vegetais, proteína e carboidrato" title="Como montar o prato para emagrecer — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Montar o prato é uma ferramenta visual. Ela não é tão precisa quanto contar calorias, mas é infinitamente mais fácil de sustentar por meses — e sustentar é o que produz resultado. Nada disso substitui a lógica do <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a>: você emagrece porque come menos energia do que gasta. O prato é apenas a forma mais prática de chegar lá sem passar fome.</p>
