@@ -6720,7 +6720,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 </figure>
 <p>Vou explicar por que, e depois vou contar o que a musculação realmente faz no corpo feminino.</p>
 
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Hipertrofia feminina: treinar pesado não faz ficar grande" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>Sobre o que é possível construir naturalmente no físico feminino, veja a análise do Leandro Twin:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/FIiOd412sRs?rel=0" title="Hipertrofia feminina | O que é possível conseguir natural? — Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <h2>A biologia que desmonta o mito</h2>
 
@@ -7871,7 +7872,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Se quiser um plano de cardio e musculação estruturado especificamente para o seu perfil e objetivo, a <a href="/consultoria">consultoria personalizada</a> é o caminho mais eficiente.</p>
 
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja também este vídeo com dicas rápidas sobre como encaixar o cardio na rotina sem exagerar.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como encaixar o cardio na rotina de treino sem exagerar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>Sobre volume de cardio, vale essa discussão do Monster Cast:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/hoWAZg_liUM?rel=0" title="FAZER 2 HORAS DE CARDIO POR DIA É MUITO OU NÃO? | Leandro Twin Dudu Haluch — Monster Cast — Monster Cast" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -21219,7 +21221,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>A técnica correta é o que separa resultado de lesão. Para aprender os movimentos fundamentais com supervisão presencial ou online, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/como-fazer-levantamento-terra-corretamente">levantamento terra</a> — o outro movimento composto fundamental.</p>
 
-<p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
+<p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>
+<p>Para ver a execução completa em vídeo, veja a demonstração do Leandro Twin:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/zgk71dUUt0Y?rel=0" title="Como fazer agachamento — Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+`,
     faq: [
       {
         question: "Agachamento faz mal para o joelho?",
@@ -21326,7 +21331,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><strong>Carga excessiva sem base técnica:</strong> o ego mata as costas. Comece leve, construa o padrão motor</li>
 </ul>
 
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Levantamento terra: técnica correta para não machucar a coluna" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>Para visualizar a técnica passo a passo, veja a demonstração do Leandro Twin:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/50AkPBZwACQ?rel=0" title="Como fazer levantamento terra — Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <h2>Progressão para iniciantes</h2>
 <ol>
@@ -22034,7 +22040,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><strong>Repetições:</strong> 6–10 para força/hipertrofia em compostos; 10–15 para isolados</li>
 </ul>
 
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Como montar treino ABC: estrutura, exercícios e progressão" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>Para complementar, veja como o Leandro Twin monta um treino ABC:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/lpEnBOvNmac?rel=0" title="Como montar um treino ABC 1x — Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <h2>Como progredir</h2>
 <p>A progressão de carga é o princípio mais importante:</p>
@@ -54970,8 +54977,8 @@ NMN e resveratrol são suplementos interessantes com mecanismos biologicamente p
     content: `<p>O femoral é o músculo mais subestimado da musculação. Enquanto todos querem quadriceps grandes, a maioria negligencia a cadeia posterior — e paga o preço com joelhos instáveis, lombar sobrecarregada e desempenho limitado. O leg curl é o principal isolamento para o femoral, mas Montinho vê erros de técnica em praticamente todos os iniciantes e muitos intermediários. Vamos corrigir isso agora.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Como Fazer Leg Curl: Técnica Perfeita" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="yt-caption">Para ver a execução correta na mesa flexora, veja a demonstração do Leandro Twin:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/2-ULaRrQa7c?rel=0" title="Como fazer mesa flexora — Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 <figure style="margin:2rem 0">
@@ -55639,8 +55646,8 @@ Crossover e crucifixo não são concorrentes — são aliados complementares em 
     content: `<p>A elevação lateral parece um exercício simples — e é exatamente por isso que é tão mal executado. Carga alta, balanço de tronco e elevação além de 90° são combinações que Montinho vê diariamente e que explicam por que síndrome do impacto e tendinite de manguito rotador são tão comuns entre praticantes de musculação. O deltóide lateral é um músculo pequeno que responde a cargas modestas com técnica precisa.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Como Fazer Elevação Lateral: Técnica Perfeita" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="yt-caption">Para ver a execução correta em vídeo, veja a demonstração do Leandro Twin:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/IwWvZ0rlNXs?rel=0" title="Como fazer elevação lateral — Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 <figure style="margin:2rem 0">
@@ -59834,8 +59841,8 @@ O tríceps francês é feito em pé ou sentado, com halter ou barra acima da cab
     content: `<p>A remada unilateral com haltere é um dos exercícios mais eficazes para o desenvolvimento das costas, especialmente do grande dorsal e romboides. É também um dos exercícios onde mais vejo erros na academia — principalmente na posição da coluna e na trajetória da puxada. Vamos corrigir isso.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Remada Unilateral — Técnica Correta" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="yt-caption">Para ver a execução correta em vídeo, veja a demonstração do Leandro Twin:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/m4h4jT9patY?rel=0" title="Como fazer remada halteres unilateral — Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 <figure style="margin:2rem 0">
@@ -60089,8 +60096,8 @@ Reduza o peso, sente mais ereto e foque em empurrar com o glúteo, não com a co
     content: `<p>A extensão lombar no aparelho (também chamada de hiperextensão lombar) é um dos exercícios mais subestimados e mal executados da academia. Quando bem feita, fortalece os eretores da espinha, previne dor lombar e melhora a postura. Quando mal feita, é um convite para lesão discal.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Extensão Lombar — Técnica Correta" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="yt-caption">Para ver a execução correta em vídeo, veja a demonstração do Leandro Twin:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/z0rx9swRDR0?rel=0" title="Como fazer extensão lombar — Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 <figure style="margin:2rem 0">
@@ -61814,8 +61821,8 @@ Se você treina em Alphaville ou quer um acompanhamento online com programa pers
     content: `<p>Quer costas mais espessas, não só mais largas? Então a puxada fechada precisa entrar no seu treino agora. Enquanto a puxada aberta desenvolve a largura das costas (ênfase nos dorsais), a puxada fechada com pegada neutra foca na espessura — romboides, trapézio médio e a porção baixa do dorsal. São dois exercícios diferentes para objetivos complementares.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Como Fazer Puxada Fechada: Técnica e Diferença para a Puxada Aberta" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="yt-caption">Para ver a execução em vídeo, veja a demonstração do Leandro Twin:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/9FFLBDWXSZA?rel=0" title="Como realizar perfeitamente puxada costas — Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 <figure style="margin:2rem 0">
@@ -64429,8 +64436,8 @@ Entre em contato pelo [WhatsApp](https://wa.me/5511940779041). O atendimento par
     content: `<p>Você já fez pullover e ficou em dúvida se estava sentindo mais no peito ou nas costas? Essa confusão é mais comum do que parece — e ela existe por um bom motivo: o pullover é um dos poucos exercícios da musculação que recruta, de forma significativa, tanto o grande dorsal quanto o peitoral maior, dependendo de como é executado. Se você quer aproveitar todo o potencial desse movimento, precisa entender a anatomia por trás dele, as variações disponíveis e como encaixá-lo na sua programação de treino.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Como Fazer Pullover Corretamente" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="yt-caption">Para ver a execução em vídeo, veja a demonstração do Leandro Twin:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/-KaMXMMIVrU?rel=0" title="Como fazer pull over — Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 <figure style="margin:2rem 0">
@@ -92191,8 +92198,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Quem ganha devagar mas nunca para acaba, muitas vezes, ultrapassando o "genético rápido" que treina de forma inconsistente. No longo prazo, consistência vence talento parado. Já vi isso acontecer inúmeras vezes.</p>
 
-<p>Genética é o ponto de partida, não o destino. Sobre a decisão que muda tudo, veja este Short:</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>Sobre genética e ganho muscular, veja a análise do Leandro Twin:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/IVQ0w1YYO48?rel=0" title="A PIOR GENÉTICA PARA GANHAR MASSA MUSCULAR DE TODAS | Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <h2>Conclusão realista e otimista</h2>
 
@@ -94835,8 +94842,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>E aqui entra a virtude mais difícil: paciência. Glúteo é músculo grande e cresce em meses de consistência, não em uma semana de motivação. Quem desiste no primeiro mês nunca vê o resultado que estava a caminho. Fotografe seu progresso a cada 4 semanas em vez de olhar a balança todo dia — a mudança no formato aparece antes no espelho do que no número.</p>
 
-<p>No vídeo abaixo, do meu canal, mostro como progredir de verdade treinando em casa sem equipamento:</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Treino em casa sem equipamento: como progredir de verdade — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>Para um treino de glúteos em casa completo em vídeo, veja a aula do Leandro Twin:</p>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/PTUiMcnu8as?rel=0" title="Treino de glúteos em casa *completo* — Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <h2>Quando vale ter acompanhamento</h2>
 
