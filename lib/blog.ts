@@ -18487,7 +18487,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
 <li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
 <li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
-</ul>`,
+</ul>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
   },
 
   {
@@ -18559,7 +18562,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
 <li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
 <li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
-</ul>`,
+</ul>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
   },
 
   {
@@ -18635,7 +18641,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
 <li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
 <li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
-</ul>`,
+</ul>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
   },
 
   {
@@ -18707,7 +18716,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
 <li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
 <li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
-</ul>`,
+</ul>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
   },
 
   {
@@ -18779,7 +18791,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
 <li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
 <li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
-</ul>`,
+</ul>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
   },
 
   {
@@ -18851,7 +18866,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
 <li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
 <li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
-</ul>`,
+</ul>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
   },
 
   {
@@ -18923,7 +18941,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
 <li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
 <li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
-</ul>`,
+</ul>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
   },
 
   {
@@ -18995,7 +19016,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
 <li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
 <li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
-</ul>`,
+</ul>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
   },
 
   {
@@ -19067,7 +19091,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
 <li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
 <li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
-</ul>`,
+</ul>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
   },
 
   {
@@ -19139,7 +19166,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
 <li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
 <li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
-</ul>`,
+</ul>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
   },
 
   {
@@ -19934,7 +19964,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
 <li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
 <li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
-</ul>`,
+</ul>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
   },
 
   {
@@ -20002,7 +20035,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
 <li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
 <li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
-</ul>`,
+</ul>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
   },
 
   {
@@ -20145,7 +20181,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <li><a href="/blog/como-ganhar-massa-muscular">Como Ganhar Massa Muscular</a></li>
 <li><a href="/blog/progressao-de-carga">Sobrecarga Progressiva: Guia Completo</a></li>
 <li><a href="/blog/frequencia-de-treino">Frequência de Treino Ideal para Hipertrofia</a></li>
-</ul>`,
+</ul>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
   },
 
   // ── 4 NOVOS ARTIGOS – HIPERTROFIA PARTE 2 ─────────────────────────────────
@@ -24036,7 +24075,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para saber mais sobre o método e verificar disponibilidade para sua região, acesse a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a> — região adjacente com o mesmo perfil de atendimento.</p>
 
-<p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
+<p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
     faq: [
       {
         question: "Personal trainer atende em Granja Viana com deslocamento até o cliente?",
@@ -24119,7 +24161,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para dar o primeiro passo com um diagnóstico gratuito do seu nível e objetivos, acesse a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/personal-trainer-online-como-funciona">personal trainer online</a> para entender como funciona o acompanhamento remoto.</p>
 
-<p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
+<p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+`,
     faq: [
       {
         question: "Como funciona a consultoria online para quem mora em Cotia?",
