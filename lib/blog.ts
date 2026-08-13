@@ -106149,6 +106149,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Comer de 3 em 3 horas acelera o metabolismo? A evidência diz que não. Neste artigo eu explico o que realmente importa na frequência de refeições e como escolher a sua.",
     category: "Nutrição",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["frequência alimentar", "metabolismo", "refeições", "dieta", "emagrecimento"],
@@ -106194,7 +106195,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Existe uma frase que virou dogma nas academias brasileiras nos últimos vinte anos: "você precisa comer de 3 em 3 horas para acelerar o metabolismo". Eu acreditei nela por muito tempo. Andava com potinhos, colocava alarme no celular, sentia culpa se passasse quatro horas sem comer. Quando comecei a estudar de verdade e a olhar o que a evidência mostrava, descobri que essa frase é, na melhor das hipóteses, uma simplificação equivocada.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quantas-refeicoes-por-dia-infographic.svg" alt="Infográfico sobre Quantas Refeições Por Dia? 3, 5 ou 6 — Montinho Personal Trainer" title="Quantas Refeições Por Dia? 3, 5 ou 6" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quantas-refeicoes-por-dia.webp" alt="Quantas refeições por dia fazer: 3, 5 ou 6? O que importa é o total e a adesão" title="Quantas refeições por dia? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Vou explicar de onde veio o mito, o que a pesquisa realmente mostra e — mais importante — como escolher a frequência que funciona para a sua rotina. Adianto o final: <strong>o número de refeições é uma questão de preferência e adesão, não de metabolismo</strong>.</p>
@@ -106314,6 +106315,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Você faz tudo certo nas refeições e não emagrece? O problema pode estar nas calorias que ninguém anota. Aqui eu mostro a matemática do beliscar, os gatilhos mais comuns e o que fazer.",
     category: "Emagrecimento",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["beliscar", "calorias invisíveis", "emagrecimento", "hábitos", "saciedade"],
@@ -106359,7 +106361,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Tem um tipo de aluno que me deixa intrigado nas primeiras semanas. Ele treina certinho, descreve refeições impecáveis, come arroz, feijão, frango, salada — e a balança não sai do lugar. Aí eu peço uma coisa simples: anote absolutamente tudo o que entrar na sua boca por três dias, incluindo o que você acha que não conta. Em quase todos os casos, o mistério se resolve na primeira anotação.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/beliscar-engorda-infographic.svg" alt="Infográfico sobre Beliscar Engorda? O Vilão Invisível da Dieta — Montinho Personal Trainer" title="Beliscar Engorda? O Vilão Invisível da Dieta" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/beliscar-engorda.webp" alt="Beliscar engorda? As calorias invisíveis dos beliscos que sabotam a dieta sem você perceber" title="Beliscar engorda? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Beliscar engorda? A resposta honesta é: <strong>beliscar não é bom nem ruim por natureza — beliscar engorda quando ele adiciona calorias que ninguém está contabilizando</strong>. E o problema do belisco é exatamente esse: ele é invisível. Não vira refeição, não vira lembrança, não vira consciência. Mas vira caloria.</p>
@@ -106483,6 +106485,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Escolher a carga certa é uma das dúvidas mais comuns de quem treina. Neste guia eu explico como usar RIR e RPE, por que a faixa de repetições é mais ampla do que dizem e como saber a hora exata de subir o peso.",
     category: "Treino",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["carga ideal", "RIR", "RPE", "progressão de carga", "hipertrofia"],
@@ -106527,7 +106530,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se existe uma pergunta que eu escuto toda semana dentro das academias de Alphaville, é essa: "Montinho, quanto peso eu coloco?". A resposta honesta é que não existe um número mágico impresso na barra. A carga ideal é aquela que faz você chegar perto o suficiente do limite dentro da faixa de repetições que você planejou, com uma técnica que você consegue repetir série após série. Parece simples, mas na prática quase todo mundo erra — para mais ou para menos.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/carga-ideal-como-escolher-infographic.svg" alt="Infográfico sobre Qual a Carga Ideal? Como Escolher o Peso Certo no Treino — Montinho Personal Trainer" title="Qual a Carga Ideal? Como Escolher o Peso Certo no Treino" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/carga-ideal-como-escolher.webp" alt="Qual a carga ideal na musculação: como escolher o peso certo usando RIR e progressão" title="Carga ideal: como escolher o peso — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <p>Eu perdi mais de 40 kg e passei por todas as fases dessa confusão: já treinei com peso ridículo achando que estava "sentindo o músculo" e já coloquei carga que só serviu para me machucar o ombro. O que me fez evoluir de verdade foi aprender a medir o esforço, e não o ego. É exatamente isso que eu vou te ensinar aqui.</p>
 
@@ -106630,6 +106633,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Trocar de treino toda semana não faz o músculo crescer mais rápido. Neste texto eu explico por que o mito de chocar o músculo atrapalha, quais são os sinais reais de que a troca é necessária e por quanto tempo manter os mesmos exercícios.",
     category: "Treino",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["trocar treino", "chocar o músculo", "progressão", "platô", "periodização"],
@@ -106674,7 +106678,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Montinho, faz quanto tempo que eu estou nesse treino? Acho que meu corpo já acostumou." Eu ouço essa frase praticamente toda semana. E quase sempre a pessoa está treinando o mesmo programa há cinco ou seis semanas, ainda evoluindo em carga, ainda melhorando técnica — e querendo jogar tudo fora por causa de uma ideia que se espalhou nas academias e nunca teve base científica: a de que é preciso "chocar o músculo".</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quando-trocar-o-treino-infographic.svg" alt="Infográfico sobre Quando Trocar o Treino? Sinais de Que Está na Hora — Montinho Personal Trainer" title="Quando Trocar o Treino? Sinais de Que Está na Hora" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quando-trocar-o-treino.webp" alt="Quando trocar o treino: sinais reais de que está na hora de mudar a ficha de musculação" title="Quando trocar o treino — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <p>Vou ser direto: mudar exercício não é estímulo. Estímulo é sobrecarga progressiva. Quando você troca o treino toda semana, você reinicia a curva de aprendizado do movimento e perde justamente a capacidade de medir se está progredindo ou não. Neste texto eu mostro o que a evidência sugere, quais são os sinais legítimos para trocar e como eu organizo blocos de treino com os alunos que acompanho em Alphaville.</p>
 
