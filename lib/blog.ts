@@ -150,7 +150,7 @@ export const blogPosts = ([
 <p>Se você quer entender como funciona na prática, veja os <a href="/resultados">resultados de quem já passou por esse processo</a>.</p>
 
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer ver na prática como quebrar o ciclo do efeito sanfona? Assista ao vídeo abaixo.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Conclusão</h2>
 
@@ -12356,8 +12356,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você está emagrecendo — com ou sem medicamento — e quer estruturar o processo de forma que o resultado se mantenha a longo prazo, posso te ajudar com treino e nutrição personalizada. Acesse a página de <a href="/consultoria">consultoria online</a>.</p>
 
-<p>Eu vivi esse ciclo por anos — sempre encontrava um motivo para flexibilizar e estava sempre recomeçando. É sobre isso que falo neste Short:</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>O efeito sanfona se quebra na reação ao primeiro erro — falo sobre essa mentalidade neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -69895,8 +69895,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <h2>One More Thing</h2>
 <p>É exatamente aqui que entra a virada. A <strong>consultoria online do Montinho</strong> transforma tudo o que você leu em sistema: plano montado, execução acompanhada, ajustes na hora certa — e aquele compromisso social que faz você aparecer nos dias em que a cama argumenta melhor. A ciência do hábito, mastigada e aplicada em você. <a href="/consultoria">Fale com ele e descubra como funciona a consultoria personalizada.</a></p>
 
-<p>Motivação vai e volta — o que fica é a confiança de quem fez o que só ele poderia fazer. Veja no Short:</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>Recomeçar exige mais atitude do que motivação — falo sobre isso neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul><li><a href="/blog/como-ganhar-massa-muscular">Como ganhar massa muscular de verdade: guia completo</a></li><li><a href="/blog/erros-comuns-no-treino-de-musculacao">7 erros comuns na musculação que sabotam seus resultados</a></li><li><a href="/blog/como-manter-treinos-durante-ferias">Como Manter os Treinos Durante as Férias</a></li></ul>
@@ -69989,8 +69989,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 
 <p><a href="/consultoria">Fale com o Montinho e veja como a consultoria pode destravar seu processo.</a></p>
 
-<p>Não existe fórmula mágica: existe disciplina, constância e a capacidade de escolher o que importa todos os dias — como falo neste Short:</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>Quem fez o trampo sabe: é impossível dar errado — falo sobre essa mentalidade neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul><li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por que você não consegue emagrecer (e como mudar isso de vez)</a></li><li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">5 hábitos do dia a dia que sabotam seu emagrecimento</a></li><li><a href="/blog/como-definir-abdomen-ate-dezembro">Como Definir o Abdômen até Dezembro</a></li></ul>
@@ -90724,8 +90724,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Os dois modelos funcionam. O que não funciona é o modelo "8 ou 80": semana perfeita e fim de semana caótico. Se é aí que você está travado, o caminho costuma ser afrouxar a semana (dieta menos restritiva, mais alimentos que você gosta) para não precisar explodir no sábado — exatamente o que abordo em <a href="/blog/como-nao-desistir-da-dieta">como não desistir da dieta</a>.</p>
 
-<p>Uma exceção vira duas, duas viram hábito — é sobre isso que falo neste Short:</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>O que define o resultado não é o dia do erro, é a resposta no dia seguinte — falo sobre isso neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Minha posição depois de 40kg perdidos</h2>
 
@@ -91566,8 +91566,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Por isso eu insisto tanto em começar pelo movimento, e não pela dieta perfeita. Tentar reformar tudo ao mesmo tempo sobrecarrega e leva ao abandono. Uma mudança pequena e sustentável abre espaço para as próximas.</p>
 
-<p>Eu já estive exatamente onde você está. No vídeo abaixo falo sobre dar o primeiro passo e não voltar atrás:</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>Sair do sedentarismo é decidir não desistir como das outras vezes — falo sobre isso neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>O plano em uma frase</h2>
 
@@ -105296,8 +105296,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Uma última nota honesta: se você está fazendo tudo isso, a média semanal está de fato em déficit por várias semanas e nada acontece, vale investigar. Alterações de tireoide, medicações, sono muito ruim e questões clínicas podem influenciar, e isso é conversa para médico e nutricionista, não para post de internet. Individualidade existe e merece avaliação de verdade.</p>
 
-<p>Esse vai e vem entre semana perfeita e fim de semana perdido é o começo do efeito sanfona — falo sobre esse ciclo neste Short:</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>Errou no fim de semana? O que decide é a segunda-feira — falo sobre essa mentalidade neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Referências</h2>
 <ul>
@@ -105664,8 +105664,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>O que eu posso dizer, com honestidade, é o seguinte: nos dias em que você não quiser ir e for mesmo assim, mesmo que para fazer metade, você está construindo exatamente a coisa que separa quem muda de quem só tenta. Não é glamouroso. É só aparecer, de novo, na quarta-feira comum de uma semana comum.</p>
 
-<p>No dia ruim, o que decide é a decisão de aparecer mesmo assim — é sobre isso que falo neste Short do meu canal:</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>No dia ruim, o que separa quem evolui de quem desiste é a mentalidade — falo sobre ela neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Referências</h2>
 <ul>
@@ -106016,8 +106016,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>E quando eu como, eu como. Sem penitência no dia seguinte, sem "compensar" pulando refeição, sem treino de castigo. Emagrecimento é resultado do que você faz na média de semanas e meses, não do que aconteceu ontem à noite. Consistência imperfeita vence perfeição interrompida, sempre.</p>
 
-<p>Restringir demais e depois descontar no doce é o ciclo clássico do efeito sanfona — falo sobre ele neste Short:</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>Deslizou no doce? Faz parte. O que não pode é transformar o deslize em desistência — falo sobre isso neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Referências</h2>
 <ul>
@@ -108321,8 +108321,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>O burpee na minha história</h2>
 <p>Quando pesava 40 kg a mais, burpee era humanamente impossível para mim — e tudo bem. Comecei com caminhada e musculação básica, e o burpee só entrou na minha rotina muito depois, primeiro na versão com passo, sem flexão e sem salto. Hoje ele é presença constante nos meus circuitos. Conto isso porque muita gente olha o exercício "completo" no vídeo e desanima. A comparação certa não é com o atleta do vídeo: é com você de um mês atrás. Progressão vence intensidade, sempre.</p>
 <p>Se você treina em casa e quer encaixar o burpee num programa maior, com força e cardio equilibrados, dá uma olhada no meu <a href="/blog/treino-em-casa-sem-equipamento">treino em casa sem equipamento</a> — o burpee é uma das peças, não o plano inteiro.</p>
-<p>O burpee é o exercício que mais testa a disciplina — e é sobre ela que falo neste Short:</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p>O burpee é o teste perfeito do "é só fazer" — falo sobre essa mentalidade neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Referências</h2>
 <ul>
