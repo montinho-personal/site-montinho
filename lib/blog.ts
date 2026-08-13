@@ -106785,6 +106785,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Fazer o movimento inteiro ou só meio caminho? Neste guia eu mostro o que a evidência atual indica sobre amplitude de movimento, o achado interessante do treino na posição alongada e as situações em que a amplitude parcial é uma escolha inteligente.",
     category: "Hipertrofia",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["amplitude de movimento", "hipertrofia", "técnica", "repetição parcial", "alongamento"],
@@ -106829,7 +106830,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Você já viu as duas cenas na academia. De um lado, o cara com meia tonelada no leg press descendo cinco centímetros. Do outro, alguém pregando que "amplitude parcial não conta" e que quem não desce até o chão está perdendo tempo. Como quase tudo em treinamento, a resposta honesta está no meio — mas, nesse caso específico, a evidência pende bastante para um dos lados.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/amplitude-de-movimento-infographic.svg" alt="Infográfico sobre Amplitude de Movimento: Meio ou Completo? — Montinho Personal Trainer" title="Amplitude de Movimento: Meio ou Completo?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/amplitude-de-movimento.webp" alt="Amplitude de movimento na musculação: meio ou completo? O que a evidência mostra" title="Amplitude de movimento — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <p>Resumo antecipado: para a maioria das pessoas e na maioria dos exercícios, a amplitude completa produz mais hipertrofia do que a amplitude reduzida. Isso é razoavelmente consistente na literatura. Mas existe uma nuance importante descoberta nos últimos anos, e existem situações reais em que treinar parcial é a decisão mais inteligente. Vamos por partes.</p>
 
@@ -106925,6 +106926,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "A briga entre máquina e peso livre já dura décadas e continua rendendo discussão na academia. Neste texto eu comparo os dois de forma honesta, mostro o que a evidência diz sobre hipertrofia e explico como escolher de acordo com o seu contexto.",
     category: "Treino",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["máquina", "peso livre", "hipertrofia", "segurança", "seleção de exercícios"],
@@ -106969,7 +106971,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Poucos assuntos geram tanta discussão inútil na academia quanto esse. De um lado, o pessoal que diz que máquina é "coisa de quem tem preguiça de treinar de verdade". Do outro, quem jura que peso livre é perigoso e desnecessário. Eu já treinei nos dois extremos e acompanho alunos em Alphaville que evoluem muito bem com combinações completamente diferentes. A resposta é chata mas verdadeira: os dois funcionam, e o contexto decide.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/maquina-ou-peso-livre-infographic.svg" alt="Infográfico sobre Máquina ou Peso Livre: Qual É Melhor? — Montinho Personal Trainer" title="Máquina ou Peso Livre: Qual É Melhor?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/maquina-ou-peso-livre.webp" alt="Máquina ou peso livre: qual é melhor para hipertrofia, segurança e aprendizado técnico" title="Máquina ou peso livre? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <p>O que eu quero fazer aqui é tirar essa conversa do território da opinião. Vou comparar segurança, curva de aprendizado, estabilizadores, isolamento e praticidade — e mostrar o que a evidência sugere sobre hipertrofia quando o estímulo é equivalente.</p>
 
@@ -107078,6 +107080,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Contar segundos em cada repetição realmente faz diferença? Neste texto eu explico o que a evidência mostra sobre cadência, por que tempo sob tensão não é o fator mágico e em quais situações vale desacelerar ou acelerar o movimento.",
     category: "Hipertrofia",
     date: "2026-08-05",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["cadência", "tempo sob tensão", "excêntrico", "concêntrico", "hipertrofia"],
@@ -107122,7 +107125,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Montinho, tem que descer contando três segundos?" Essa pergunta aparece toda semana, geralmente vinda de quem leu que "tempo sob tensão é tudo" ou viu alguém fazendo repetições de dez segundos e jurando que aquele era o segredo. Eu entendo o apelo: contar segundos parece científico e dá a sensação de estar fazendo algo mais elaborado. Mas a realidade é mais simples e menos glamourosa.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/cadencia-do-movimento-infographic.svg" alt="Infográfico sobre Cadência do Movimento: Rápido ou Devagar? — Montinho Personal Trainer" title="Cadência do Movimento: Rápido ou Devagar?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/cadencia-do-movimento.webp" alt="Cadência do movimento na musculação: rápido ou devagar? Fases excêntrica e concêntrica" title="Cadência do movimento — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <p>A evidência atual sugere que a hipertrofia acontece numa faixa relativamente ampla de cadências, e que velocidades muito lentas — acima de uns dez segundos por repetição — parecem render menos, provavelmente porque obrigam a reduzir muito a carga. Vamos entender o porquê e, principalmente, quando vale a pena mexer nesse parâmetro.</p>
 
@@ -107218,6 +107221,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Escapar xixi ao tossir, rir ou correr é comum, mas não é normal nem algo com que você precise conviver calado. Explico como funciona o assoalho pélvico, o que a ciência mostra sobre treinar essa musculatura e onde o treino de força e o controle de peso entram como apoio.",
     category: "Saúde",
     date: "2026-08-12",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["incontinência urinária", "assoalho pélvico", "saúde da mulher", "treino de força", "emagrecimento"],
@@ -107263,7 +107267,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Poucos assuntos chegam até mim com tanta vergonha embutida quanto esse. A pessoa treina há meses, está indo bem, e um dia, no fim do treino, me chama de lado e fala baixinho: "Montinho, eu escapei um pouco de xixi no agachamento". Ou no salto. Ou na corrida. Ou tossindo. E vem sempre acompanhado de um pedido implícito de que ninguém mais fique sabendo. Então quero começar por aqui: <strong>perder urina involuntariamente é extremamente comum, não é motivo de vergonha e, na maioria dos casos, tem tratamento.</strong> O que não dá é para aceitar como destino.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/incontinencia-urinaria-exercicios-infographic.svg" alt="Infográfico sobre Incontinência Urinária: Exercícios do Assoalho Pélvico e o Que a Musculação Tem a Ver Com Isso — Montinho Personal Trainer" title="Incontinência Urinária: Exercícios do Assoalho Pélvico e o Que a Musculação Tem a Ver Com Isso" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/incontinencia-urinaria-exercicios.webp" alt="Incontinência urinária: exercícios do assoalho pélvico e o papel do treino e do peso corporal" title="Incontinência urinária e assoalho pélvico — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Eu não sou médico nem fisioterapeuta. Sou personal trainer em Alphaville, e boa parte do meu dia é com pessoas querendo emagrecer e ficar mais fortes — inclusive porque eu mesmo perdi 40 kg. Então o que vou fazer aqui é explicar o assunto com honestidade, mostrar onde o exercício ajuda e ser muito claro sobre o que precisa ser conduzido por quem tem formação clínica. Este texto é informativo e não substitui avaliação.</p>
@@ -107380,6 +107384,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Depois dos 40 muita coisa muda no corpo do homem, mas nem tudo que vendem como andropausa é andropausa. Separo o que a fisiologia mostra do que é discurso de venda, e explico onde treino, sono e composição corporal realmente pesam.",
     category: "Saúde",
     date: "2026-08-12",
+    updatedAt: "2026-08-12",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["andropausa", "testosterona", "treino após os 40", "hipogonadismo", "saúde do homem"],
@@ -107425,7 +107430,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Depois que passei dos 40, o assunto virou rotina nas conversas de vestiário. "Montinho, será que é a andropausa?" A frase vem sempre junto de cansaço, barriga que não sai, treino que rende menos e libido em baixa. E vem também, quase sempre, de alguém que viu um anúncio prometendo resolver tudo com um "protocolo hormonal". Então vamos organizar isso, porque tem muita fisiologia real misturada com muito marketing.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/andropausa-e-treino-infographic.svg" alt="Infográfico sobre Andropausa: O Que Realmente Muda no Corpo do Homem Após os 40 — Montinho Personal Trainer" title="Andropausa: O Que Realmente Muda no Corpo do Homem Após os 40" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/andropausa-e-treino.webp" alt="Andropausa: o que muda no corpo do homem após os 40 e o papel do treino de força" title="Andropausa e treino — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Trabalho como personal em Alphaville, e boa parte dos meus alunos são homens entre 35 e 60 anos, executivos, com agenda apertada e sono ruim. Eu mesmo perdi 40 kg e sei o que é olhar no espelho e não reconhecer o corpo. Justamente por isso faço questão de ser honesto: existe algo real acontecendo nessa faixa etária, e existe uma indústria explorando isso.</p>
