@@ -104,6 +104,10 @@ button {
   border-collapse: collapse;
   margin-bottom: 2rem;
   font-size: 0.9rem;
+  /* Tabelas largas rolam no próprio espaço em vez de estourar a página no mobile */
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .blog-content th,
@@ -269,6 +273,10 @@ img {
   border-collapse: collapse;
   margin-bottom: 1.5rem;
   font-size: 0.9375rem;
+  /* Tabelas largas rolam no próprio espaço em vez de estourar a página no mobile */
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .prose-blog th {
