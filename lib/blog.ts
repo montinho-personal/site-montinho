@@ -109336,6 +109336,558 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li>Jones BM, Grover R. Reducing submental fat: clinical review of deoxycholic acid (ATX-101) for submental contouring. Aesthetic Plastic Surgery / clinical literature, 2016.</li>
 </ul>`,
   },
+  {
+    slug: "joelho-estalando-e-normal",
+    title: "Joelho Estalando: É Normal ou Sinal de Problema?",
+    metaTitle: "Joelho Estalando: É Normal ou Sinal de Problema?",
+    metaDescription:
+      "Joelho estalando ao agachar ou subir escada: quando a crepitação é benigna, quando procurar ortopedista e como o fortalecimento ajuda. Guia honesto.",
+    excerpt:
+      "Seu joelho estala quando você agacha e você já imaginou o pior? Calma. Na maioria dos casos, estalo sem dor é benigno. Explico quando é normal, quando investigar e por que fortalecer é melhor do que parar de treinar.",
+    category: "Saúde",
+    date: "2026-08-13",
+    readTime: "10 min",
+    author: "Montinho Personal Trainer",
+    tags: ["joelho estalando", "crepitação no joelho", "saúde articular", "dor no joelho", "prevenção de lesões"],
+    faq: [
+      {
+        question:
+          "Joelho estalando sem dor é normal?",
+        answer:
+          "Na grande maioria dos casos, sim. Crepitação sem dor, inchaço ou travamento costuma vir de bolhas de gás no líquido sinovial ou do deslizamento normal de tendões, e é muito comum mesmo em joelhos saudáveis. Não é sinal de desgaste.",
+      },
+      {
+        question:
+          "Quando devo me preocupar com o estalo no joelho?",
+        answer:
+          "Quando o estalo vem acompanhado de dor, inchaço, calor local, travamento, sensação de falseio ou surgiu após um trauma ou entorse. Nesses casos, procure um ortopedista para avaliação — a maioria das causas tem bom tratamento.",
+      },
+      {
+        question:
+          "Agachamento faz mal para o joelho?",
+        answer:
+          "Não. Feito com técnica adequada e progressão de carga, o agachamento fortalece a musculatura que protege o joelho. O que causa problema é excesso de carga ou volume sem preparo, não o exercício em si.",
+      },
+      {
+        question:
+          "Estalar o joelho causa artrose?",
+        answer:
+          "Não há evidência de que crepitação indolor cause ou preveja artrose. Artrose tem relação com genética, peso corporal, idade e histórico de lesões. Manter-se forte e ativo é fator de proteção, não de risco.",
+      },
+      {
+        question:
+          "Por que o joelho estala mais quando fico muito tempo sentado?",
+        answer:
+          "Após períodos parados, a articulação está menos lubrificada e os tecidos, menos aquecidos, o que favorece os ruídos nos primeiros movimentos. Por isso o estalo costuma diminuir depois de aquecer — mais um sinal de que é benigno.",
+      },
+      {
+        question:
+          "Preciso fazer ressonância porque meu joelho estala?",
+        answer:
+          "Se não há dor nem outros sintomas, normalmente não. Exames de imagem em joelhos sem dor frequentemente mostram achados irrelevantes que só geram ansiedade. Quem decide se a imagem é necessária é o médico, com base no exame clínico.",
+      },
+    ],
+    content: `
+<p>Se eu ganhasse um real por cada aluno que chegou em mim dizendo “Montinho, meu joelho estala quando eu agacho, será que estou gastando a articulação?”, eu já tinha aposentado. É uma das perguntas mais comuns que escuto em Alphaville — de gente de 25 anos e de gente de 65. E a resposta curta, que talvez te surpreenda, é: na grande maioria dos casos, joelho estalando sem dor não é sinal de problema nenhum. Mas existe o outro lado da moeda, e é sobre ele que você precisa ficar atento. Neste artigo vou te mostrar a diferença entre o estalo benigno e o estalo que merece uma cadeira no consultório do ortopedista.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/joelho-estalando-e-normal-infographic.svg" alt="Infográfico sobre Joelho Estalando: É Normal ou Sinal de Problema? — Montinho Personal Trainer" title="Joelho Estalando: É Normal ou Sinal de Problema?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+<h2>Por que o joelho estala?</h2>
+<p>O nome técnico do barulho articular é crepitação. E ela pode ter várias origens, quase todas inofensivas:</p>
+<ul>
+<li><strong>Cavitação:</strong> dentro da articulação existe líquido sinovial, e nele há gases dissolvidos. Quando a articulação se move e a pressão muda, formam-se e colapsam pequenas bolhas de gás — é o mesmo mecanismo do estalo de dedos. Faz barulho, não faz dano.</li>
+<li><strong>Deslizamento de tendões e ligamentos:</strong> estruturas que passam sobre proeminências ósseas podem “ressaltar” durante o movimento, gerando um clique. Comum na parte lateral do joelho e no quadril.</li>
+<li><strong>Atrito normal das superfícies:</strong> a cartilagem não é uma superfície de vidro polido. Pequenas irregularidades, completamente normais, podem gerar sons durante o movimento, principalmente na articulação entre a patela e o fêmur.</li>
+</ul>
+<p>Um detalhe importante: estudos com ultrassom e ressonância em pessoas sem nenhuma dor mostram que crepitação é extremamente comum na população geral. Ter joelho “barulhento” é mais regra do que exceção.</p>
+<h2>O mito do “joelho gasto”</h2>
+<p>Aqui eu preciso ser direto, porque esse mito faz muito estrago: <strong>estalo não é sinônimo de desgaste</strong>. A ideia de que a articulação é uma peça de carro que “gasta com o uso” é uma metáfora ruim. Cartilagem é tecido vivo: ela responde a carga, se adapta, se nutre justamente através do movimento e da compressão cíclica. Ficar parado, com medo de usar o joelho, é pior para a articulação do que treinar com progressão inteligente.</p>
+<p>O problema desse mito é o comportamento que ele gera. A pessoa ouve o estalo, entra em pânico, para de agachar, para de subir escada, enfraquece quadríceps e glúteo — e aí sim cria um ambiente onde a dor tende a aparecer, porque a articulação perde o suporte muscular. Eu vejo isso acontecer com frequência: o medo do barulho causa mais prejuízo do que o barulho em si.</p>
+<h2>Agachamento destrói o joelho? Não.</h2>
+<p>Outro mito irmão do anterior. O agachamento, feito com técnica razoável e carga progressiva, é um dos exercícios que mais protege o joelho, porque fortalece exatamente a musculatura que estabiliza a articulação. Se você quer aprender a executar bem, escrevi um guia completo sobre <a href="/blog/como-fazer-agachamento-livre-corretamente">como fazer agachamento livre corretamente</a>. E se o seu caso é estalo acompanhado de incômodo no movimento, vale ler também o artigo sobre <a href="/blog/dor-no-joelho-no-agachamento">dor no joelho no agachamento</a>, onde entro nas causas mais comuns.</p>
+<p>O que machuca joelho não é agachar. É a combinação de carga muito acima do que o corpo está preparado, volume que sobe rápido demais, técnica ruim mantida por meses e recuperação insuficiente. Ou seja: erro de dose, não o exercício.</p>
+<h2>Quando o estalo é benigno e quando é sinal de alerta</h2>
+<p>Essa é a parte mais importante do artigo. Guarde essa tabela:</p>
+<table>
+<thead><tr><th>Provavelmente benigno</th><th>Sinal de alerta — procure ortopedista</th></tr></thead>
+<tbody>
+<tr><td>Estalo <strong>sem dor</strong>, sem inchaço</td><td>Estalo <strong>com dor</strong> no momento ou depois</td></tr>
+<tr><td>Acontece há anos, sempre igual</td><td>Começou de repente, principalmente após trauma ou entorse</td></tr>
+<tr><td>Não limita nenhum movimento</td><td>Joelho que “trava” ou “falseia” (sensação de falha)</td></tr>
+<tr><td>Some ou diminui quando você aquece</td><td>Inchaço, calor local, vermelhidão</td></tr>
+<tr><td>Barulho isolado, sem outros sintomas</td><td>Perda de amplitude: não consegue esticar ou dobrar totalmente</td></tr>
+</tbody>
+</table>
+<p>Se você está na coluna da esquerda: respire. O mais provável é que seja crepitação fisiológica. Se qualquer item da coluna da direita aparecer, não é para entrar em pânico — a maioria das causas ainda é tratável e tem bom prognóstico — mas é para agendar avaliação com ortopedista. Estalo com dor e travamento, por exemplo, pode indicar lesão de menisco; estalo doloroso atrás da patela com dor ao subir e descer escada pode estar ligado a dor patelofemoral. São diagnósticos que precisam de exame clínico, não de achismo de internet — nem do meu.</p>
+<h2>E a condromalácia? E a artrose?</h2>
+<p>Duas palavras que assustam muita gente que pesquisa “joelho estalando” no Google. Vamos com calma. Condromalácia patelar é um achado de amolecimento da cartilagem da patela que aparece em muitos exames de imagem — inclusive de pessoas sem dor nenhuma. Achado de imagem não é sentença: o que guia a conduta é o sintoma, e o tratamento de primeira linha é justamente fortalecimento. A artrose, por sua vez, é um processo que envolve a articulação toda e tem forte relação com genética, peso corporal e histórico de lesões — e mesmo nela o exercício é tratamento, não vilão. Tenho alunos com diagnóstico de artrose treinando comigo há anos, com menos dor do que quando chegaram.</p>
+<p>Aliás, aqui entra minha história: eu já pesei 40 kg a mais do que peso hoje. Sei na pele o que é sobrecarga articular de verdade — cada quilo extra de peso corporal multiplica a força que atravessa o joelho em atividades como descer escada. Quando emagreci e fortaleci as pernas, meus joelhos agradeceram muito mais do que qualquer “repouso” teria feito.</p>
+<h2>O que fazer na prática se seu joelho estala (sem dor)</h2>
+<ol>
+<li><strong>Continue treinando.</strong> Não existe motivo para tirar agachamento, leg press ou escada da sua vida por causa de barulho indolor.</li>
+<li><strong>Fortaleça quadríceps, posteriores e glúteos.</strong> Musculatura forte distribui melhor a carga articular. Exercícios como cadeira extensora, agachamento e afundo são bem-vindos com progressão adequada.</li>
+<li><strong>Não esqueça a panturrilha e o pé.</strong> A estabilidade do joelho depende também do que está abaixo dele — um bom <a href="/blog/treino-de-panturrilha">treino de panturrilha</a> contribui mais do que parece.</li>
+<li><strong>Aqueça antes de cargas altas.</strong> Séries leves de aproximação melhoram a lubrificação articular e, curiosamente, costumam reduzir o barulho.</li>
+<li><strong>Progrida carga com paciência.</strong> A maioria das dores de joelho em quem treina vem de saltos bruscos de volume e intensidade. Escrevi sobre isso no guia de <a href="/blog/como-prevenir-lesoes-no-treino">como prevenir lesões no treino</a>.</li>
+<li><strong>Controle o peso corporal, se for o caso.</strong> É o fator modificável com maior impacto na saúde do joelho a longo prazo.</li>
+</ol>
+<h2>E se estalar COM dor?</h2>
+<p>Aí o caminho muda: avaliação com ortopedista, possivelmente fisioterapeuta no circuito, e ajuste do treino — quase nunca suspensão total. Na imensa maioria dos quadros dolorosos de joelho, o tratamento moderno envolve exercício dosado, não repouso absoluto. O que muda é a seleção de exercícios, a amplitude e a carga durante a fase sensível. Quem corre e sente dor na lateral do joelho, por exemplo, pode se beneficiar de ajustes que descrevo no artigo sobre <a href="/blog/joelho-de-corredor">joelho de corredor</a>; quem está começando na corrida faz bem em seguir uma progressão como a do guia de <a href="/blog/corrida-para-iniciantes">corrida para iniciantes</a>, que existe justamente para o joelho se adaptar sem sustos.</p>
+<h2>O papel do profissional</h2>
+<p>Vou repetir o que digo em todos os artigos de saúde: <strong>este texto não substitui avaliação individual</strong>. Ortopedista diagnostica, fisioterapeuta reabilita, e o meu papel como treinador é montar um treino que fortaleça sem agredir — de preferência conversando com esses profissionais quando há um quadro clínico envolvido. É assim que trabalho com meus alunos em Alphaville: quando aparece dor, ninguém finge que é normal, e ninguém para de treinar por pânico. A resposta quase sempre está no meio.</p>
+<h2>Resumindo</h2>
+<p>Joelho estalando sem dor, sem inchaço e sem travamento é, com altíssima probabilidade, um fenômeno benigno — cavitação, deslizamento de tendões, atrito normal. Não é “joelho gasto”, não é motivo para abandonar o agachamento e não prediz artrose. Estalo com dor, inchaço, travamento, falseio ou após trauma merece avaliação médica sem demora. E em qualquer cenário, a melhor coisa que você pode fazer pelos seus joelhos ao longo da vida é mantê-los fortes, com carga progressiva e peso corporal sob controle.</p>
+<p>O fortalecimento que protege o joelho é construído na constância — tema deste Short do meu canal:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<h2>Referências</h2>
+<ul>
+<li>Robertson CJ, Hurley M, Jones F. People's beliefs about the meaning of crepitus in patellofemoral pain and the impact of these beliefs on their behaviour: a qualitative study. Musculoskeletal Science and Practice, 2017.</li>
+<li>Kawchuk GN et al. Real-time visualization of joint cavitation. PLoS ONE, 2015.</li>
+<li>Lo GH et al. Habitual running any time in life is not associated with symptomatic knee osteoarthritis: data from the Osteoarthritis Initiative. Arthritis Care &amp; Research, 2017.</li>
+</ul>`,
+  },
+  {
+    slug: "caibra-por-que-da",
+    title: "Cãibra: Por Que Dá e Como Evitar",
+    metaTitle: "Cãibra: Por Que Dá e Como Evitar de Verdade",
+    metaDescription:
+      "Cãibra no treino, na madrugada, na panturrilha: o que a ciência atual diz sobre as causas, o mito da banana e o que realmente funciona para prevenir.",
+    excerpt:
+      "Cãibra é aquela dor que chega sem pedir licença — no meio do treino ou às 3 da manhã. A ciência mudou de ideia sobre as causas, e a banana não é a heroína que te venderam. Explico o que realmente ajuda a prevenir.",
+    category: "Saúde",
+    date: "2026-08-13",
+    readTime: "10 min",
+    author: "Montinho Personal Trainer",
+    tags: ["cãibra", "cãibra muscular", "fadiga muscular", "hidratação", "prevenção"],
+    faq: [
+      {
+        question:
+          "O que causa cãibra durante o treino?",
+        answer:
+          "A hipótese mais aceita hoje é a fadiga neuromuscular: quando o músculo trabalha além do que está condicionado, o controle entre contração e relaxamento se desregula e o músculo contrai involuntariamente. Desidratação e eletrólitos têm papel menor do que se pensava, exceto em esforços muito longos no calor.",
+      },
+      {
+        question:
+          "Comer banana evita cãibra?",
+        answer:
+          "Provavelmente não, na maioria dos casos. A deficiência de potássio raramente é a causa da cãibra de quem treina, e a banana não age em minutos. Ela é um bom alimento pré-treino, mas não é remédio anti-cãibra.",
+      },
+      {
+        question:
+          "O que fazer na hora da cãibra?",
+        answer:
+          "Alongue o músculo afetado de forma lenta e sustentada por 20 a 30 segundos — na panturrilha, puxe a ponta do pé em direção ao corpo com a perna esticada. O alongamento ativa os sinais de relaxamento do sistema nervoso e costuma resolver rápido.",
+      },
+      {
+        question:
+          "Por que dá cãibra na panturrilha à noite?",
+        answer:
+          "Cãibras noturnas são comuns e geralmente benignas, favorecidas pela posição do pé na cama (músculo encurtado), fadiga acumulada e idade. Alongar a panturrilha antes de dormir e fortalecê-la no treino ajuda a reduzir os episódios.",
+      },
+      {
+        question:
+          "Cãibra frequente pode ser doença?",
+        answer:
+          "Pode, embora seja a minoria dos casos. Cãibras muito frequentes, em repouso, com fraqueza, formigamento ou após iniciar medicamentos como diuréticos e estatinas merecem avaliação médica para investigar circulação, tireoide, rins e deficiências reais.",
+      },
+      {
+        question:
+          "Magnésio resolve cãibra?",
+        answer:
+          "As revisões científicas não mostraram benefício claro do magnésio para cãibras na população geral. Ele pode fazer sentido para quem tem deficiência comprovada, mas não é solução universal. Converse com seu médico antes de suplementar.",
+      },
+    ],
+    content: `
+<p>Poucas dores são tão democráticas quanto a cãibra. Pega o iniciante na primeira semana de treino, pega o maratonista no quilômetro 35, pega o executivo dormindo às três da manhã com a panturrilha em nó. Eu mesmo, na época em que estava 40 kg acima do peso e resolvi voltar a treinar, colecionei cãibras de panturrilha que me faziam pular da cama. E como quase todo mundo, eu acreditava na explicação clássica: “é falta de potássio, come uma banana”. Só que a ciência das últimas duas décadas conta uma história diferente — e entender essa história é o que realmente te ajuda a prevenir. Vamos lá.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/caibra-por-que-da-infographic.svg" alt="Infográfico sobre Cãibra: Por Que Dá e Como Evitar — Montinho Personal Trainer" title="Cãibra: Por Que Dá e Como Evitar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+<h2>O que é uma cãibra, afinal?</h2>
+<p>Cãibra é uma contração muscular involuntária, súbita e dolorosa, que endurece o músculo e não te deixa relaxá-lo pela vontade. Dura de segundos a alguns minutos e pode deixar o músculo dolorido por horas ou até dias. Os alvos preferidos são panturrilha, posterior de coxa e pé — músculos que cruzam duas articulações ou que trabalham encurtados com frequência.</p>
+<h2>A explicação antiga: desidratação e eletrólitos</h2>
+<p>Durante décadas, a teoria dominante foi a de que cãibra vinha de desidratação e perda de eletrólitos (sódio, potássio, magnésio) no suor. Faz sentido intuitivo, e há situações em que esse componente existe — trabalhadores em calor extremo, atletas com sudorese muito intensa e perdas grandes de sódio. Mas quando os pesquisadores foram medir de verdade, os dados incomodaram: estudos com corredores de ultramaratona e triatletas compararam quem teve cãibra com quem não teve e <strong>não encontraram diferenças consistentes de hidratação nem de eletrólitos no sangue</strong> entre os dois grupos. Atleta com cãibra e atleta sem cãibra chegavam ao fim da prova igualmente desidratados.</p>
+<p>Isso não significa que hidratação não importa — importa para desempenho, termorregulação e saúde geral, e escrevi um guia sobre <a href="/blog/quanta-agua-beber-por-dia">quanta água beber por dia</a>. Significa que ela explica menos a cãibra do que se pensava. É a nuance que separa a informação boa do mito: papel menor, não papel nenhum.</p>
+<h2>A explicação atual: fadiga neuromuscular</h2>
+<p>A hipótese mais forte hoje, defendida principalmente pelo pesquisador Martin Schwellnus, é a do <strong>controle neuromuscular alterado pela fadiga</strong>. Em resumo: quando o músculo trabalha além do que está acostumado, o equilíbrio entre os sinais que mandam o músculo contrair (dos fusos musculares) e os que mandam relaxar (dos órgãos tendinosos de Golgi) se desregula. O sistema nervoso fica “excitado demais e freado de menos” — e o músculo dispara uma contração que você não pediu.</p>
+<p>Essa teoria explica o que a antiga não explicava:</p>
+<ul>
+<li>Por que a cãibra ataca justamente o músculo que mais trabalhou, e não o corpo todo (se fosse só química do sangue, seria generalizada);</li>
+<li>Por que ela aparece no fim da prova, do treino ou do dia, quando a fadiga acumulou;</li>
+<li>Por que alongar o músculo na hora resolve — o alongamento ativa os receptores do tendão que mandam o sinal de relaxar;</li>
+<li>Por que quem aumenta o volume de treino de repente tem mais cãibra, mesmo bem hidratado.</li>
+</ul>
+<h2>E a banana? O mito parcial do potássio</h2>
+<p>A banana é ótima: prática, gostosa, boa fonte de carboidrato para treinar. Mas como “remédio anti-cãibra”, ela foi superestimada. Primeiro, porque, como vimos, a deficiência de eletrólitos explica poucas cãibras. Segundo, porque uma banana tem menos potássio do que muita gente imagina e ele nem é absorvido em minutos. Se suas cãibras vêm de fadiga — que é o mais comum em quem treina —, comer banana não muda nada. Coma banana porque é boa comida, não como amuleto.</p>
+<p>O magnésio segue lógica parecida: em pessoas com deficiência real, suplementar pode ajudar em vários aspectos; mas revisões sistemáticas não mostraram benefício claro do magnésio para cãibras na população geral. Falo mais sobre ele no artigo sobre <a href="/blog/magnesio-para-dormir-e-treinar">magnésio para dormir e treinar</a>.</p>
+<h2>Como evitar cãibras: o que funciona de verdade</h2>
+<ol>
+<li><strong>Progressão de carga inteligente.</strong> A causa número um de cãibra em quem treina é fazer hoje muito mais do que o corpo estava preparado. Aumente volume e intensidade aos poucos — o mesmo princípio que descrevo no guia de <a href="/blog/como-prevenir-lesoes-no-treino">como prevenir lesões no treino</a>. Músculo condicionado fadiga menos; músculo que fadiga menos, cãibra menos.</li>
+<li><strong>Treine o músculo que dá cãibra.</strong> Parece contraintuitivo, mas fortalecer a panturrilha, por exemplo, aumenta a reserva dela contra a fadiga. Um <a href="/blog/treino-de-panturrilha">treino de panturrilha</a> bem-feito, com amplitude completa, é das melhores prevenções para quem sofre com cãibras nessa região.</li>
+<li><strong>Durma bem.</strong> Fadiga não é só do treino: privação de sono piora o controle neuromuscular e a recuperação. Sono ruim, mais cãibra — simples assim.</li>
+<li><strong>Hidrate-se e cuide do sódio em treinos longos no calor.</strong> Aqui o componente eletrolítico ainda tem seu lugar, especialmente em provas longas com muito suor. Para quem treina intenso, escrevi sobre <a href="/blog/eletrolitos-hidratacao-treino-intenso">eletrólitos e hidratação no treino intenso</a>.</li>
+<li><strong>Alongamento leve antes de dormir.</strong> Para cãibras noturnas de panturrilha, alongar suavemente a região antes de deitar tem baixo custo e ajuda parte das pessoas. Sobre o papel geral do alongamento, veja <a href="/blog/alongamento-antes-ou-depois-do-treino">alongamento antes ou depois do treino</a>.</li>
+<li><strong>Aqueça antes de esforços intensos.</strong> Entrar frio em intensidade alta é convite para o sistema neuromuscular se desorganizar.</li>
+</ol>
+<h2>O que fazer na hora da cãibra</h2>
+<p>O tratamento imediato é quase consenso e é simples: <strong>alongue o músculo afetado, devagar e mantendo a posição</strong>. Na panturrilha: perna esticada, puxe a ponta do pé em direção ao corpo (ou apoie o antepé num degrau e desça o calcanhar). Mantenha 20 a 30 segundos, respire, repita se precisar. Massagear suavemente ajuda a aliviar depois. Não adianta “esperar passar” contraído nem sair pulando — o alongamento é o que envia ao sistema nervoso o sinal de relaxamento que está faltando.</p>
+<table>
+<thead><tr><th>Cãibra comum (benigna)</th><th>Quando investigar com médico</th></tr></thead>
+<tbody>
+<tr><td>Durante ou após esforço maior que o habitual</td><td>Cãibras frequentes <strong>em repouso</strong>, sem relação com exercício</td></tr>
+<tr><td>Noturna ocasional de panturrilha ou pé</td><td>Episódios muito frequentes, que atrapalham o sono toda semana</td></tr>
+<tr><td>Passa com alongamento e não deixa sequela</td><td>Acompanhada de fraqueza, atrofia, formigamento ou alteração de sensibilidade</td></tr>
+<tr><td>Isolada, sem outros sintomas</td><td>Início após começar um medicamento novo (diuréticos, estatinas)</td></tr>
+<tr><td>Melhora com condicionamento</td><td>Suspeita de problema circulatório, tireoidiano, renal ou gestação</td></tr>
+</tbody>
+</table>
+<h2>Quando a cãibra é sinal de outra coisa</h2>
+<p>A imensa maioria das cãibras é benigna. Mas vale honestidade: cãibras muito frequentes, em repouso, bilaterais ou acompanhadas de outros sintomas podem estar ligadas a causas que merecem investigação — má circulação nas pernas (doença arterial periférica), alterações da tireoide, doença renal, diabetes, deficiências reais de minerais e efeito de medicamentos como diuréticos e estatinas. Gestantes também têm mais cãibras, por razões próprias da gestação. Se o seu quadro foge do padrão “esforço → cãibra → alívio com alongamento”, converse com seu médico e leve a lista dos remédios que usa. Exame clínico e alguns exames de sangue simples resolvem a dúvida na maioria das vezes.</p>
+<p>E se a dor no músculo persistir dias após uma cãibra forte, vale diferenciar de um estiramento — pode ter havido um pequeno estiramento, e aí vale avaliação em vez de insistir no treino pesado da região.</p>
+<h2>Minha experiência prática</h2>
+<p>Com meus alunos em Alphaville, o padrão se repete: cãibra aparece quando a pessoa voltou de férias e quis recuperar o tempo perdido em uma semana, quando dormiu mal por uma sequência de noites, ou quando subimos o volume de treino rápido demais — culpa minha quando acontece, e ajusto. Quase nunca o problema se resolve com suplemento; quase sempre se resolve com dose de treino certa, sono e paciência. Foi assim comigo também: minhas cãibras noturnas sumiram não com banana, mas quando minhas panturrilhas ficaram condicionadas para o corpo que eu estava construindo.</p>
+<p>Para fechar, o de sempre — e é sério: este artigo é informação, não diagnóstico. Cãibra recorrente e fora do padrão merece avaliação médica. Para o resto, treino progressivo, sono decente e alongamento na hora do aperto resolvem a esmagadora maioria dos casos.</p>
+<p>Volume bem dosado é parte da prevenção da cãibra — falo sobre a duração ideal do treino neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Quanto tempo deve durar o seu treino na academia" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<h2>Referências</h2>
+<ul>
+<li>Schwellnus MP. Cause of exercise associated muscle cramps (EAMC) — altered neuromuscular control, dehydration or electrolyte depletion? British Journal of Sports Medicine, 2009.</li>
+<li>Schwellnus MP, Drew N, Collins M. Increased running speed and previous cramps rather than dehydration or serum sodium changes predict exercise-associated muscle cramping: a prospective cohort study in 210 Ironman triathletes. British Journal of Sports Medicine, 2011.</li>
+<li>Garrison SR et al. Magnesium for skeletal muscle cramps. Cochrane Database of Systematic Reviews, 2020.</li>
+</ul>`,
+  },
+  {
+    slug: "travou-a-lombar-o-que-fazer",
+    title: "Travou a Lombar: O Que Fazer Agora",
+    metaTitle: "Travou a Lombar: O Que Fazer Agora (Guia Prático)",
+    metaDescription:
+      "Lombar travada: por que repouso absoluto piora, o que fazer nas primeiras 48h, sinais de alerta que exigem médico imediato e como prevenir a próxima crise.",
+    excerpt:
+      "Abaixou para pegar algo, sentiu a fisgada e travou tudo? Respira. A crise aguda de lombar assusta muito, mas na maioria dos casos melhora em dias. O erro clássico é ficar de cama — explico o que fazer, hora a hora.",
+    category: "Saúde",
+    date: "2026-08-13",
+    readTime: "10 min",
+    author: "Montinho Personal Trainer",
+    tags: ["lombar travada", "dor lombar aguda", "dor nas costas", "coluna", "bandeiras vermelhas"],
+    faq: [
+      {
+        question:
+          "Travei a lombar, devo ficar de repouso?",
+        answer:
+          "Não em repouso absoluto. A evidência é clara: ficar de cama atrasa a recuperação. Descanse em blocos curtos nas posições de alívio, mas caminhe e se mova dentro do que a dor tolera — o movimento leve é parte do tratamento.",
+      },
+      {
+        question:
+          "Quanto tempo demora para a lombar destravar?",
+        answer:
+          "A dor forte costuma ceder em 3 a 7 dias, e o desconforto residual melhora ao longo de 2 a 6 semanas na maioria dos casos. Se não houver melhora nesse período, ou se houver piora, procure avaliação médica e fisioterapia.",
+      },
+      {
+        question:
+          "Lombar travada é hérnia de disco?",
+        answer:
+          "Quase nunca. Cerca de 90% das crises agudas são dor lombar inespecífica, sem lesão estrutural grave — o travamento vem de espasmo muscular protetor. E mesmo hérnias em exames aparecem em muitas pessoas sem dor alguma.",
+      },
+      {
+        question:
+          "Quando a dor lombar é emergência?",
+        answer:
+          "Procure atendimento imediato se houver perda de controle de bexiga ou intestino, dormência na virilha ou períneo, perda de força na perna, febre junto com a dor, ou dor após trauma significativo. São sinais raros, mas exigem avaliação urgente.",
+      },
+      {
+        question:
+          "Calor ou gelo para lombar travada?",
+        answer:
+          "Para a crise aguda de lombar, o calor tem melhor suporte: bolsa térmica ou banho quente por 15 a 20 minutos relaxa a musculatura e alivia a dor. O gelo não é proibido, mas o calor costuma funcionar melhor nesse quadro.",
+      },
+      {
+        question:
+          "Preciso fazer ressonância depois de travar a lombar?",
+        answer:
+          "Sem sinais de alerta, normalmente não nas primeiras semanas. A imagem precoce não muda o tratamento da dor inespecífica e costuma mostrar achados comuns e irrelevantes que só geram medo. Quem indica o exame é o médico, conforme a evolução.",
+      },
+    ],
+    content: `
+<p>A cena é quase sempre a mesma: a pessoa abaixa para pegar um objeto banal — um sapato, uma caneta, a mala do carro —, sente uma fisgada na lombar e trava. Não consegue endireitar o tronco, qualquer movimento arranca um gemido, e a cabeça dispara: “herniei a coluna, estou lesionado para sempre”. Eu já vi isso acontecer com alunos, com amigos e com gente da minha família. Então deixa eu te dar a notícia boa logo no primeiro parágrafo: a crise aguda de dor lombar, por mais dramática que pareça, na grande maioria das vezes <strong>não é lesão grave e melhora em dias a poucas semanas</strong>. E a segunda notícia, que contraria o instinto: ficar de cama é uma das piores coisas que você pode fazer.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/travou-a-lombar-o-que-fazer-infographic.svg" alt="Infográfico sobre Travou a Lombar: O Que Fazer Agora — Montinho Personal Trainer" title="Travou a Lombar: O Que Fazer Agora" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+<h2>O que aconteceu com a sua lombar?</h2>
+<p>O “travamento” é, na maior parte dos casos, um espasmo muscular protetor: os músculos da região contraem com força para imobilizar a área que o cérebro interpretou como ameaçada. A dor intensa vem mais desse espasmo e da sensibilização dos tecidos do que de um dano estrutural sério. Em cerca de 90% dos episódios de dor lombar aguda, nenhuma causa estrutural específica é identificada — é o que a medicina chama de dor lombar inespecífica. Isso não diminui a sua dor, que é real e forte; apenas muda o prognóstico: é um quadro que tende à melhora espontânea.</p>
+<p>E antes que você pergunte: não, dor forte não significa hérnia. E mesmo quando há hérnia de disco em exame de imagem, ela aparece também em muita gente sem dor nenhuma — escrevi sobre isso em <a href="/blog/hernia-de-disco-pode-treinar">hérnia de disco pode treinar?</a>.</p>
+<h2>Primeiro: descarte os sinais de alerta</h2>
+<p>Antes de qualquer conduta caseira, cheque esta lista. São as chamadas bandeiras vermelhas — raras, mas sérias. Se QUALQUER uma estiver presente, procure atendimento médico <strong>imediato</strong> (pronto-socorro, não consulta para semana que vem):</p>
+<ul>
+<li><strong>Perda de controle da bexiga ou do intestino</strong> (incontinência ou retenção que não existia);</li>
+<li><strong>Dormência na região da virilha, períneo ou parte interna das coxas</strong> (a chamada “anestesia em sela”);</li>
+<li><strong>Dor irradiando para a perna com perda de força</strong> — pé caindo, perna falhando, dificuldade real de mover;</li>
+<li><strong>Febre</strong> junto com a dor nas costas;</li>
+<li><strong>Trauma significativo</strong> — queda, acidente — especialmente em pessoas com osteoporose;</li>
+<li>Dor que piora progressivamente à noite, em repouso, com perda de peso inexplicada ou histórico de câncer.</li>
+</ul>
+<p>Nada disso? Então o mais provável é que você esteja no grupo gigante da dor lombar inespecífica, e o plano abaixo se aplica.</p>
+<h2>O que fazer nas primeiras 48 horas</h2>
+<ol>
+<li><strong>Não vá para a cama “até melhorar”.</strong> Este é o ponto mais importante e mais baseado em evidência deste artigo: repouso absoluto de cama <strong>atrasa</strong> a recuperação. Estudos e diretrizes internacionais são unânimes — quem se mantém ativo dentro do tolerável melhora mais rápido e tem menos recorrência do que quem fica deitado.</li>
+<li><strong>Mova-se dentro do tolerável.</strong> Caminhe pela casa em intervalos curtos e frequentes, mesmo devagar e meio torto. Troque de posição com frequência. O movimento leve “informa” ao sistema nervoso que a região é segura, e o espasmo cede aos poucos.</li>
+<li><strong>Calor local.</strong> Bolsa térmica ou banho quente na região por 15 a 20 minutos ajuda a relaxar a musculatura e alivia a dor. É das medidas simples com melhor suporte para a fase aguda.</li>
+<li><strong>Analgésico ou anti-inflamatório, se orientado.</strong> Medicação simples pode ser usada por curto período <strong>com orientação do seu médico ou farmacêutico</strong> — especialmente se você tem problemas gástricos, renais, cardíacos ou usa outros remédios. O objetivo dela não é “mascarar”: é permitir que você se mova, e o movimento é o tratamento.</li>
+<li><strong>Encontre posições de alívio.</strong> Deitar de lado com um travesseiro entre os joelhos, ou de costas com as pernas apoiadas em uma cadeira, costuma dar trégua. Use essas posições para descansar em blocos curtos — não para morar nelas.</li>
+<li><strong>Evite apenas o que provoca dor forte.</strong> Não precisa (nem deve) testar seus limites nos primeiros dias. Flexões profundas de tronco e cargas podem esperar. Mas “evitar o que dói muito” é diferente de “evitar tudo”.</li>
+</ol>
+<h2>Dos dias seguintes às próximas semanas</h2>
+<p>A evolução típica: a dor forte cede bastante em 3 a 7 dias, e o desconforto residual some ao longo de 2 a 6 semanas. Conforme melhora, aumente gradualmente a atividade: caminhadas mais longas, tarefas normais, e retorno progressivo ao treino — começando com exercícios que a lombar tolera bem. Tenho um artigo inteiro com <a href="/blog/exercicios-para-dor-nas-costas-coluna">exercícios para dor nas costas e coluna</a> que se encaixa exatamente nessa fase, e outro sobre <a href="/blog/dor-lombar-na-musculacao">dor lombar na musculação</a> para quem quer voltar aos pesos com critério.</p>
+<p>Se em 4 a 6 semanas a dor não estiver melhorando, ou se estiver piorando, procure avaliação médica e fisioterapia — sem drama, mas sem enrolar. E se a dor desce pela perna abaixo do joelho, formigando, vale ler sobre <a href="/blog/dor-no-ciatico-exercicio-tratamento">dor no ciático: exercício e tratamento</a> e conversar com um profissional.</p>
+<h2>O que NÃO fazer</h2>
+<table>
+<thead><tr><th>Erro comum</th><th>Por que evitar</th></tr></thead>
+<tbody>
+<tr><td>Repouso absoluto de cama por dias</td><td>Comprovadamente atrasa a recuperação e enfraquece a musculatura de suporte</td></tr>
+<tr><td>Correr para fazer ressonância sem indicação</td><td>Sem bandeiras vermelhas, a imagem precoce não muda o tratamento e frequentemente mostra achados irrelevantes que só assustam</td></tr>
+<tr><td>“Destravar” no estalo com manipulação brusca de curioso</td><td>Manipulação é ato de profissional habilitado; na fase aguda, força bruta pode piorar o espasmo</td></tr>
+<tr><td>Colete/cinta o dia inteiro por semanas</td><td>Uso prolongado desabitua a musculatura de fazer o próprio trabalho</td></tr>
+<tr><td>Tratar a coluna como vidro para sempre</td><td>Medo do movimento (cinesiofobia) é um dos maiores preditores de dor crônica</td></tr>
+</tbody>
+</table>
+<h2>Por que travou — e como evitar a próxima</h2>
+<p>Quase nunca o culpado é o objeto que você pegou. A crise costuma ser a gota d'água de um acúmulo: muitas horas sentado, musculatura de tronco e quadril enfraquecida, sono ruim, estresse alto (sim, estresse modula dor de forma muito concreta) e, às vezes, um aumento súbito de atividade a que o corpo não estava acostumado. Eu carreguei 40 kg de sobrepeso durante anos e sei o que é conviver com a lombar reclamando; o que mudou o jogo para mim não foi colchão novo nem cinta — foi emagrecer e, principalmente, fortalecer.</p>
+<p>A prevenção com melhor evidência é exatamente essa: <strong>exercício regular de fortalecimento</strong>, com ênfase em tronco, glúteos e posteriores, somado a uma vida menos sedentária. Movimentos como o levantamento terra, cercado de má fama, são na verdade excelentes professores de como usar o quadril para poupar a lombar — desde que aprendidos com técnica e progressão, como descrevo em <a href="/blog/como-fazer-levantamento-terra-corretamente">como fazer levantamento terra corretamente</a>. Com meus alunos em Alphaville, a regra é clara: quem já teve crise de lombar não vira paciente eterno de repouso — vira aluno com tronco cada vez mais forte. E as recidivas despencam.</p>
+<h2>O circuito certo de profissionais</h2>
+<p>Para deixar organizado: crise aguda com bandeira vermelha → médico imediatamente. Crise aguda sem bandeira vermelha → manejo caseiro como descrito; se não melhorar em poucas semanas, médico e fisioterapeuta. Fase de recuperação e prevenção → fisioterapeuta e treinador trabalhando juntos. Este artigo te ajuda a entender o quadro e a não entrar em pânico, mas ele não examina você — avaliação individual é insubstituível, e eu sou o primeiro a encaminhar quando o caso pede.</p>
+<p>Resumo honesto: lombar travada dói demais e assusta mais ainda, mas o prognóstico típico é excelente. Cheque os sinais de alerta, mova-se dentro do tolerável, use calor, medique-se com orientação se precisar, e transforme o susto em motivo para construir um tronco forte. A melhor época para prevenir a próxima crise é agora, quando a memória da dor ainda está fresca.</p>
+<p>Gravei um Short com 5 dicas práticas para quem sofre com dores na lombar — assista:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<h2>Referências</h2>
+<ul>
+<li>Foster NE et al. Prevention and treatment of low back pain: evidence, challenges, and promising directions. The Lancet, 2018.</li>
+<li>Dahm KT et al. Advice to rest in bed versus advice to stay active for acute low-back pain and sciatica. Cochrane Database of Systematic Reviews, 2010.</li>
+<li>Qaseem A et al. Noninvasive treatments for acute, subacute, and chronic low back pain: a clinical practice guideline from the American College of Physicians. Annals of Internal Medicine, 2017.</li>
+</ul>`,
+  },
+  {
+    slug: "entorse-de-tornozelo",
+    title: "Entorse de Tornozelo: Recuperação e Fortalecimento",
+    metaTitle: "Entorse de Tornozelo: Recuperação e Fortalecimento",
+    metaDescription:
+      "Torceu o tornozelo? Conheça o protocolo atual PEACE & LOVE, os graus de entorse, quando fazer raio-X e como fortalecer para nunca mais viver torcendo.",
+    excerpt:
+      "Torcer o tornozelo é comum — tratar mal é mais comum ainda. O protocolo mudou: gelo indiscriminado e repouso longo saíram de cena. Explico o PEACE & LOVE, quando procurar médico e como fortalecer para quebrar o ciclo das entorses de repetição.",
+    category: "Saúde",
+    date: "2026-08-13",
+    readTime: "10 min",
+    author: "Montinho Personal Trainer",
+    tags: ["entorse de tornozelo", "PEACE & LOVE", "propriocepção", "reabilitação", "prevenção de lesões"],
+    faq: [
+      {
+        question:
+          "Torci o tornozelo, devo colocar gelo?",
+        answer:
+          "O protocolo atual (PEACE & LOVE) não recomenda mais gelo indiscriminado por dias: a inflamação inicial faz parte do reparo. Gelo pontual para aliviar dor intensa nas primeiras horas é aceitável, mas o foco deve ser proteção breve, elevação, compressão e retorno progressivo à carga.",
+      },
+      {
+        question:
+          "Quando a entorse de tornozelo precisa de raio-X?",
+        answer:
+          "Pelas regras de Ottawa simplificadas: se você não consegue dar quatro passos apoiando o pé, ou se há dor à pressão diretamente nos ossos dos maléolos ou do meio do pé, procure avaliação médica para descartar fratura.",
+      },
+      {
+        question:
+          "Quanto tempo leva para curar uma entorse de tornozelo?",
+        answer:
+          "Depende do grau: entorses leves melhoram em 1 a 3 semanas, moderadas em 3 a 6, e graves podem levar meses. Mas a dor sumir não significa recuperação completa — sem fortalecimento e propriocepção, o risco de nova entorse fica alto.",
+      },
+      {
+        question:
+          "Posso andar com o tornozelo torcido?",
+        answer:
+          "Assim que a dor permitir, sim — a carga progressiva faz parte do tratamento moderno e acelera a recuperação. Nos primeiros dias, respeite a dor e proteja; depois, volte a apoiar e caminhar gradualmente.",
+      },
+      {
+        question:
+          "Por que meu tornozelo vive torcendo?",
+        answer:
+          "Entorses de repetição geralmente indicam instabilidade crônica: a entorse anterior não foi reabilitada e o tornozelo perdeu força e propriocepção. Um programa de fortalecimento e equilíbrio com fisioterapeuta resolve a maioria dos casos.",
+      },
+      {
+        question:
+          "Entorse de tornozelo precisa de cirurgia?",
+        answer:
+          "Raramente. Mesmo roturas completas costumam responder bem ao tratamento conservador com reabilitação estruturada. A cirurgia fica reservada a casos selecionados de instabilidade persistente, decisão que cabe ao ortopedista.",
+      },
+    ],
+    content: `
+<p>O tornozelo virou para dentro, você sentiu aquela pontada, talvez até ouviu um estalo, e agora está com o pé inchado se perguntando o que fazer. A entorse de tornozelo é provavelmente a lesão musculoesquelética mais comum que existe — acontece descendo da calçada, jogando futebol com os amigos, pisando num buraco na corrida. E justamente por ser tão comum, é a lesão mais mal tratada que eu conheço: a maioria das pessoas coloca gelo dois dias, espera desinchar e volta à vida normal. Resultado? Tornozelo frouxo, instável, e a famosa entorse de repetição. Neste artigo vou te mostrar o que mudou no tratamento — porque mudou bastante — e como transformar a recuperação em um tornozelo mais forte do que era antes.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/entorse-de-tornozelo-infographic.svg" alt="Infográfico sobre Entorse de Tornozelo: Recuperação e Fortalecimento — Montinho Personal Trainer" title="Entorse de Tornozelo: Recuperação e Fortalecimento" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+<h2>O que é uma entorse e quais os graus</h2>
+<p>Entorse é o estiramento ou rompimento dos ligamentos que estabilizam a articulação, causado por um movimento além da amplitude normal — no tornozelo, o mecanismo clássico é a inversão (pé virando para dentro), que lesiona os ligamentos laterais. A gravidade é dividida em graus:</p>
+<ul>
+<li><strong>Grau 1:</strong> estiramento sem rotura significativa. Dor e inchaço leves, consegue andar com desconforto. Recuperação típica: 1 a 3 semanas.</li>
+<li><strong>Grau 2:</strong> rotura parcial do ligamento. Inchaço e hematoma evidentes, dor moderada, andar fica difícil. Recuperação típica: 3 a 6 semanas.</li>
+<li><strong>Grau 3:</strong> rotura completa. Inchaço importante, instabilidade, muitas vezes incapacidade de apoiar o pé. Recuperação: semanas a meses, com acompanhamento profissional obrigatório.</li>
+</ul>
+<h2>Preciso de raio-X? As regras de Ottawa simplificadas</h2>
+<p>Nem toda entorse precisa de imagem — e existe um critério clínico validado, as regras de Ottawa, que os médicos usam para decidir. Em versão simplificada para você saber quando ir direto ao pronto atendimento:</p>
+<ul>
+<li><strong>Você não consegue dar quatro passos</strong> apoiando o pé, nem logo após a torção nem agora; ou</li>
+<li><strong>Há dor à pressão no osso</strong> — na ponta ou borda de trás dos maléolos (aquelas saliências ósseas dos lados do tornozelo) ou em pontos ósseos do meio do pé.</li>
+</ul>
+<p>Qualquer um desses sinais: procure avaliação médica para descartar fratura. Fora isso, se você anda mancando mas anda, e a dor é mais no “mole” do que no osso, o mais provável é entorse ligamentar — que também merece cuidado, mas raramente cirurgia ou imagem urgente. Na dúvida, avaliação médica nunca é exagero, especialmente se o inchaço for grande ou a dor, desproporcional.</p>
+<h2>Esquece o RICE antigo: o protocolo agora é PEACE &amp; LOVE</h2>
+<p>Por décadas mandaram você fazer RICE: repouso, gelo, compressão e elevação, com gelo a rodo por dias. A ciência da reabilitação revisou isso. Em 2020, os pesquisadores Blaise Dubois e Jean-François Esculier publicaram no British Journal of Sports Medicine o acrônimo que virou referência: <strong>PEACE &amp; LOVE</strong>. A mudança de filosofia é grande: a inflamação inicial não é inimiga a ser esmagada — ela é parte do processo de reparo. Gelo indiscriminado por dias e anti-inflamatórios em excesso podem até atrasar a cicatrização. Veja o protocolo:</p>
+<p><strong>Nos primeiros dias — PEACE:</strong></p>
+<ul>
+<li><strong>P (Protect):</strong> proteja. Evite atividades e movimentos que provocam dor nos primeiros 1 a 3 dias. Proteção, não imobilização eterna.</li>
+<li><strong>E (Elevate):</strong> eleve o pé acima do nível do coração sempre que puder, para drenar o inchaço.</li>
+<li><strong>A (Avoid anti-inflammatories):</strong> evite anti-inflamatórios de rotina (e gelo em excesso) — eles podem interferir no reparo tecidual. Para dor, converse com o médico sobre analgésicos simples. Gelo pontual para alívio de dor intensa é aceitável; “gelo o dia todo por uma semana” não é mais a recomendação.</li>
+<li><strong>C (Compress):</strong> comprima com bandagem elástica para controlar o edema.</li>
+<li><strong>E (Educate):</strong> eduque-se — é exatamente o que você está fazendo. Entender que o corpo se recupera com carga progressiva evita tanto a negligência quanto o excesso de proteção.</li>
+</ul>
+<p><strong>Nos dias e semanas seguintes — LOVE:</strong></p>
+<ul>
+<li><strong>L (Load):</strong> carga. Volte a apoiar, andar e exercitar assim que a dor permitir. Carga mecânica progressiva é o que organiza a cicatrização do ligamento.</li>
+<li><strong>O (Optimism):</strong> otimismo. Não é autoajuda: expectativa e medo influenciam mensurabilmente a recuperação.</li>
+<li><strong>V (Vascularisation):</strong> exercício cardiovascular sem dor (bike, por exemplo) aumenta o fluxo sanguíneo para a região em reparo.</li>
+<li><strong>E (Exercise):</strong> exercício — mobilidade, fortalecimento e propriocepção. É o pilar que separa quem recupera de verdade de quem vive torcendo.</li>
+</ul>
+<p>Esse mesmo princípio de reabilitação ativa vale para outras lesões — detalhei a lógica no artigo sobre <a href="/blog/cicatrizacao-lesao-muscular-reabilitacao-ativa">cicatrização de lesão e reabilitação ativa</a>.</p>
+<h2>A fase que quase todo mundo pula: fortalecimento e propriocepção</h2>
+<p>Aqui está o segredo sujo da entorse: o inchaço passa em uma ou duas semanas, a dor some, e a pessoa se dá por curada. Mas o ligamento lesionado perdeu parte dos seus receptores de posição — a chamada propriocepção, o “GPS” que avisa o cérebro onde o pé está no espaço. Sem retreinar isso, o tornozelo reage mais devagar ao próximo desequilíbrio... e torce de novo. É assim que nasce a instabilidade crônica: até 40% das entorses mal reabilitadas evoluem para sintomas persistentes ou recidivas.</p>
+<p>O que a reabilitação completa inclui (com progressão orientada por fisioterapeuta, especialmente nos graus 2 e 3):</p>
+<ol>
+<li><strong>Mobilidade:</strong> recuperar a amplitude de dorsiflexão (joelho em direção à parede com o pé no chão é o exercício clássico).</li>
+<li><strong>Fortalecimento:</strong> panturrilha (elevações em pé e sentado), músculos fibulares (eversão com elástico) e músculos do pé. Um bom <a href="/blog/treino-de-panturrilha">treino de panturrilha</a> é peça central aqui.</li>
+<li><strong>Propriocepção:</strong> equilíbrio unipodal — primeiro no chão firme, depois de olhos fechados, depois em superfícies instáveis, depois com perturbações. Minutos por dia, semanas de consistência.</li>
+<li><strong>Retorno gradual ao impacto:</strong> saltitos, corrida leve, mudanças de direção — nessa ordem, sem dor.</li>
+</ol>
+<p>Com meus alunos em Alphaville, tornozelo pós-entorse liberado pelo fisioterapeuta continua recebendo trabalho de equilíbrio e panturrilha na rotina normal de treino por meses. É barato, rápido e corta o ciclo de repetição. Quem joga futebol, beach tennis ou corre no fim de semana agradece — e quem está começando a correr faz bem em fortalecer antes, como explico no guia de <a href="/blog/corrida-para-iniciantes">corrida para iniciantes</a> e no artigo sobre <a href="/blog/como-prevenir-lesoes-no-treino">como prevenir lesões no treino</a>.</p>
+<h2>Entorses de repetição: pare o ciclo</h2>
+<p>Se você já torceu o mesmo tornozelo três, quatro vezes, isso não é azar — é instabilidade não tratada. O caminho certo é avaliação com fisioterapeuta (e ortopedista, se houver falseios frequentes), um bloco estruturado de fortalecimento e propriocepção e, em casos selecionados, discussão de outras opções com o médico. Continuar torcendo “porque meu tornozelo é fraco mesmo” é aceitar um problema que tem solução na maioria dos casos. Dores na perna que aparecem junto, como as da canela, também merecem atenção — falo delas em <a href="/blog/canelite-dor-na-canela">canelite: dor na canela</a>.</p>
+<h2>Voltar ao esporte: quando é seguro?</h2>
+<p>Um critério prático que uso alinhado com os fisioterapeutas: antes de voltar a esportes com corrida e mudança de direção, você deveria conseguir ficar em apoio unipodal no tornozelo lesionado por 30 segundos de olhos fechados, fazer 20 a 25 elevações de panturrilha unilaterais sem dor e saltitar no lugar com aterrissagem estável. Se algum desses testes falha, o corpo está avisando que ainda falta base — e voltar antes da hora é a receita clássica da recidiva. Paciência de duas semanas a mais agora economiza meses depois.</p>
+<h2>Palavra final</h2>
+<p>Entorse de tornozelo não é frescura nem é tragédia: é uma lesão real, com protocolo moderno claro — proteger poucos dias, carregar progressivamente, fortalecer e retreinar o equilíbrio. Eu passei anos com o corpo pesando 40 kg a mais e sei o quanto tornozelos sobrecarregados e fracos cobram a conta; hoje trato o trabalho de base do pé e tornozelo como seguro de vida esportivo. E o de sempre, dito com sinceridade: este artigo orienta, mas não examina. Dor óssea, incapacidade de pisar, inchaço desproporcional ou entorses repetidas pedem médico e fisioterapeuta no circuito — comigo ou com qualquer bom treinador trabalhando em conjunto depois.</p>
+<p>A reabilitação bem feita começa com a decisão de não pular etapas — falo sobre esse primeiro passo neste Short:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<h2>Referências</h2>
+<ul>
+<li>Dubois B, Esculier JF. Soft-tissue injuries simply need PEACE and LOVE. British Journal of Sports Medicine, 2020.</li>
+<li>Stiell IG et al. Decision rules for the use of radiography in acute ankle injuries (Ottawa Ankle Rules). JAMA, 1993.</li>
+<li>Vuurberg G et al. Diagnosis, treatment and prevention of ankle sprains: update of an evidence-based clinical guideline. British Journal of Sports Medicine, 2018.</li>
+</ul>`,
+  },
+  {
+    slug: "dormencia-e-formigamento-ao-treinar",
+    title: "Dormência e Formigamento ao Treinar: Quando se Preocupar",
+    metaTitle: "Dormência ao Treinar: Quando se Preocupar",
+    metaDescription:
+      "Mão formigando no supino, pé dormente na bike? Veja as causas comuns de dormência no treino, o que é banal, o que é túnel do carpo e quando ir ao médico.",
+    excerpt:
+      "Mão que formiga no supino, pé que dorme no spinning, dedos dormentes depois do treino de costas. Na maioria das vezes é compressão banal que passa em minutos — mas alguns padrões merecem investigação. Aprenda a diferenciar.",
+    category: "Saúde",
+    date: "2026-08-13",
+    readTime: "10 min",
+    author: "Montinho Personal Trainer",
+    tags: ["formigamento", "dormência", "túnel do carpo", "compressão nervosa", "treino seguro"],
+    faq: [
+      {
+        question:
+          "É normal a mão formigar durante o supino?",
+        answer:
+          "É comum e geralmente banal: costuma vir da barra mal apoiada na palma ou do punho quebrado para trás, comprimindo nervos do punho. Ajuste a pegada para o punho neutro. Se o formigamento persistir após o treino ou aparecer à noite, procure avaliação médica.",
+      },
+      {
+        question:
+          "Por que meu pé fica dormente na bike ou no spinning?",
+        answer:
+          "Normalmente por compressão: sapatilha ou tênis apertado, pressão constante no antepé ou ajuste inadequado da bike. Alternar posição, conferir o calçado e regular selim e sapata costuma resolver. Dormência genital indica revisão urgente do selim e da posição.",
+      },
+      {
+        question:
+          "Como sei se tenho síndrome do túnel do carpo?",
+        answer:
+          "O quadro típico é formigamento no polegar, indicador e dedo médio, que piora à noite e melhora ao sacudir a mão, aparecendo também em atividades como dirigir e usar o celular. O diagnóstico é médico; procurar cedo melhora muito o resultado do tratamento.",
+      },
+      {
+        question:
+          "Quando o formigamento é sinal de algo sério?",
+        answer:
+          "Quando persiste horas após o gatilho, acorda você à noite, vem com perda de força, é bilateral em mãos e pés, ou acompanha dor irradiada da coluna. Diabéticos com dormência nos pés devem investigar sempre. Nesses casos, médico ou neurologista.",
+      },
+      {
+        question:
+          "Formigamento pode vir da coluna?",
+        answer:
+          "Pode. Compressões cervicais irradiam formigamento pelo braço, e compressões lombares, pela perna — geralmente seguindo um trajeto definido e acompanhando dor no pescoço ou nas costas. Esse padrão merece avaliação profissional em vez de autotratamento.",
+      },
+      {
+        question:
+          "Devo parar de treinar se sentir dormência?",
+        answer:
+          "Se ela some ao soltar a pegada ou mudar de posição, basta ajustar a técnica e seguir observando. Se persiste, progride ou vem com fraqueza, pause os exercícios que provocam o sintoma e procure avaliação — quase sempre dá para manter o resto do treino enquanto investiga.",
+      },
+    ],
+    content: `
+<p>Você está na terceira série de supino e os dedos mindinho e anular começam a formigar. Ou desce da bike do spinning com o pé dormente. Ou acorda de madrugada com a mão “morta” e precisa sacudi-la para voltar ao normal. Formigamento e dormência assustam porque a gente associa imediatamente a coisa grave — nervo, circulação, coluna. A boa notícia: no contexto do treino, a causa mais comum é compressão mecânica simples e temporária, que passa minutos depois de soltar a pegada ou mudar a posição. A notícia importante: existem padrões que <strong>não</strong> são banais e merecem investigação. Este artigo é para você aprender a separar um do outro — sem pânico e sem negligência.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/dormencia-e-formigamento-ao-treinar-infographic.svg" alt="Infográfico sobre Dormência e Formigamento ao Treinar: Quando se Preocupar — Montinho Personal Trainer" title="Dormência e Formigamento ao Treinar: Quando se Preocupar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+<h2>Por que dá formigamento no treino?</h2>
+<p>Formigamento (o nome técnico é parestesia) acontece quando um nervo é comprimido, esticado ou fica temporariamente com irrigação reduzida. Os nervos que descem para as mãos e pés passam por túneis e desfiladeiros anatômicos apertados — punho, cotovelo, ombro, pelve — e o treino, com suas pegadas firmes e posições sustentadas, adora pressionar exatamente esses pontos. As situações clássicas:</p>
+<ul>
+<li><strong>Supino e pegadas com extensão de punho:</strong> a barra apoiada errada na palma comprime estruturas do punho; punho quebrado para trás sob carga estressa o túnel do carpo, por onde passa o nervo mediano. Resultado: formigamento no polegar, indicador e dedo médio.</li>
+<li><strong>Pegada apertada demais e por muito tempo:</strong> barra fixa, remadas, levantamento terra e longas séries agarrando firme comprimem nervos do punho e da mão. O nervo ulnar (mindinho e anular) é vítima frequente.</li>
+<li><strong>Cotovelo apoiado ou flexionado por longos períodos:</strong> o nervo ulnar também passa num sulco superficial no cotovelo — apoiar o cotovelo no banco scott ou mantê-lo muito flexionado pode despertar o formigamento no mindinho.</li>
+<li><strong>Bike e spinning:</strong> selim comprimindo nervos da região perineal (dormência genital — mais comum do que se fala) e sapatilha apertada ou apoio constante do antepé causando dormência nos dedos do pé.</li>
+<li><strong>Mochilas, barras apoiadas no trapézio e posições de ombro:</strong> compressões na saída do pescoço podem irradiar formigamento pelo braço.</li>
+<li><strong>Pump muscular extremo:</strong> em séries muito longas, o inchaço do músculo pode comprimir estruturas vizinhas e gerar formigamento passageiro.</li>
+</ul>
+<p>O denominador comum de todos esses cenários benignos: <strong>o sintoma aparece durante a posição ou pegada específica e desaparece em segundos a minutos depois que você solta</strong>. Sem dor persistente, sem fraqueza, sem voltar à noite.</p>
+<h2>O que fazer nos casos banais</h2>
+<ol>
+<li><strong>Ajuste a pegada:</strong> no supino, a barra deve apoiar na base da palma, alinhada com o antebraço, com o punho neutro — não quebrado para trás. Descrevo a técnica completa em <a href="/blog/como-fazer-supino-reto">como fazer supino reto</a>.</li>
+<li><strong>Afrouxe o estrangulamento:</strong> você não precisa esmagar a barra em toda série. Straps em séries pesadas de puxada tiram a necessidade de aperto máximo contínuo.</li>
+<li><strong>Varie posições:</strong> na bike, alterne a posição das mãos e do quadril, confira altura e inclinação do selim; no treino, evite manter a mesma articulação espremida por séries e séries seguidas.</li>
+<li><strong>Luvas ou grip acolchoado</strong> podem ajudar quem tem sensibilidade em pontos de pressão da palma.</li>
+<li><strong>Fortaleça punho e antebraço:</strong> estruturas mais fortes toleram melhor a carga. Se o seu problema envolve dor além do formigamento, veja o artigo sobre <a href="/blog/dor-no-punho-ao-treinar">dor no punho ao treinar</a>.</li>
+</ol>
+<h2>Síndrome do túnel do carpo: a causa que merece nome próprio</h2>
+<p>Se o seu formigamento é nos três primeiros dedos (polegar, indicador, médio), <strong>piora à noite</strong> a ponto de te acordar, melhora quando você sacode a mão, e começa a aparecer também fora do treino — segurando celular, dirigindo, digitando —, o quadro clássico é a síndrome do túnel do carpo: compressão do nervo mediano no punho. É muito comum, mais ainda em mulheres, em quem trabalha com movimentos repetitivos de punho, em diabéticos, no hipotireoidismo e na gestação. O treino raramente é a causa isolada, mas pegadas com punho quebrado podem agravar.</p>
+<p>Por que não dá para ignorar: compressão prolongada e não tratada pode evoluir para perda de sensibilidade permanente e atrofia da musculatura da base do polegar. Diagnóstico é clínico, às vezes confirmado por eletroneuromiografia, e o tratamento vai de ajustes e órteses noturnas até infiltração ou cirurgia — decisão do médico, caso a caso. Quanto mais cedo se trata, melhor o resultado.</p>
+<h2>Formigamento que desce da coluna</h2>
+<p>Nem todo formigamento no braço nasce no punho: compressões na coluna cervical podem irradiar dormência pelo braço até os dedos, geralmente acompanhando dor no pescoço ou trapézio — falo desse quadro em <a href="/blog/cervicalgia-dor-no-pescoco-treino">cervicalgia: dor no pescoço e treino</a>. Nas pernas, o equivalente é a irradiação lombar: dormência que desce pela parte de trás da coxa e perna, tema do artigo sobre <a href="/blog/dor-no-ciatico-exercicio-tratamento">dor no ciático</a>. A pista para suspeitar da coluna: o formigamento segue um “trilho” pelo membro, muda com posições do pescoço ou tronco, e costuma vir com dor irradiada.</p>
+<h2>Tabela: banal ou investigar?</h2>
+<table>
+<thead><tr><th>Provavelmente banal</th><th>Merece avaliação médica</th></tr></thead>
+<tbody>
+<tr><td>Aparece numa pegada/posição específica e some minutos após soltar</td><td><strong>Persiste</strong> horas após o treino ou aparece sem gatilho claro</td></tr>
+<tr><td>Só durante o exercício, sem outros sintomas</td><td>Te <strong>acorda à noite</strong> com frequência</td></tr>
+<tr><td>Ocasional, não progride</td><td>Vem com <strong>perda de força</strong>: objetos caindo da mão, dificuldade de abotoar, pé tropeçando</td></tr>
+<tr><td>Um lado, ligado a apoio/pegada evidente</td><td><strong>Bilateral</strong> e simétrico (mãos e/ou pés dos dois lados), padrão “luva e meia”</td></tr>
+<tr><td>Melhora com ajuste técnico</td><td>Você é <strong>diabético</strong> e notou dormência nos pés — investigação obrigatória</td></tr>
+<tr><td>—</td><td>Acompanha dor cervical/lombar irradiada, ou surgiu após trauma</td></tr>
+</tbody>
+</table>
+<p>Dois destaques da coluna da direita. Primeiro, a <strong>perda de força</strong>: formigamento é sintoma sensitivo e frequentemente benigno; fraqueza é sintoma motor e nunca deve ser ignorada. Segundo, o padrão <strong>bilateral em mãos e pés</strong>, que levanta a hipótese de neuropatia periférica — cujas causas incluem diabetes (às vezes ainda não diagnosticado), deficiência de B12, álcool, tireoide e medicamentos. Nesses cenários, o caminho é médico, possivelmente neurologista, com exames simples que esclarecem muito.</p>
+<h2>E a circulação?</h2>
+<p>Muita gente atribui formigamento a “má circulação”, mas em pessoas jovens e ativas a causa vascular é bem menos comum do que a nervosa. O quadro circulatório clássico é outro: dor em aperto na panturrilha que aparece ao caminhar certa distância e alivia parado (claudicação), pés frios e pálidos, feridas que demoram a cicatrizar — mais frequente em fumantes, diabéticos e hipertensos de mais idade. Se essa descrição soa familiar, a conversa é com o médico, e o exercício orientado costuma fazer parte do próprio tratamento.</p>
+<h2>Como eu lido com isso na prática</h2>
+<p>Nos meus anos como personal em Alphaville, a esmagadora maioria dos formigamentos que aparecem nos treinos se resolve com ajuste de pegada, punho neutro e variação de posição — em uma ou duas sessões o sintoma some. Mas eu tenho uma regra inegociável: formigamento que persiste, acorda o aluno de noite ou vem com qualquer queda de força sai da minha alçada e vai para o médico, com o treino ajustado enquanto isso (dá quase sempre para continuar treinando o resto do corpo normalmente). Já encaminhei aluno que descobriu túnel do carpo e trata hoje com ótimo resultado; já vi caso em que a dormência no pé foi o fio da meada para diagnosticar diabetes. Eu mesmo, na época dos meus 40 kg a mais, convivia com formigamentos que sumiram junto com o peso e o sedentarismo — o corpo avisa, e vale a pena ouvir.</p>
+<p>Para fechar com a honestidade de sempre: este artigo ajuda você a interpretar sinais, mas não substitui avaliação. Na dúvida entre “é banal” e “é melhor investigar”, invista na consulta — um formigamento esclarecido cedo é quase sempre um problema pequeno; ignorado por anos, pode virar um grande. E prevenção continua sendo a mesma receita de todo o resto: técnica bem-feita, cargas progressivas e atenção aos sinais, como detalho em <a href="/blog/como-prevenir-lesoes-no-treino">como prevenir lesões no treino</a>.</p>
+<p>Este Short não é sobre dormência: é sobre a disciplina de ajustar os detalhes do treino — pegada e posição incluídas:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<h2>Referências</h2>
+<ul>
+<li>Padua L et al. Carpal tunnel syndrome: clinical features, diagnosis, and management. The Lancet Neurology, 2016.</li>
+<li>Callaghan BC et al. Distal symmetric polyneuropathy: a review. JAMA, 2015.</li>
+<li>Leibovitch I, Mor Y. The vicious cycling: bicycling related urogenital disorders. European Urology, 2005.</li>
+</ul>`,
+  },
 ]) as BlogPost[];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
