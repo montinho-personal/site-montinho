@@ -107605,6 +107605,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Muita gente treina pesado com tênis feito para correr e não entende por que perde estabilidade no agachamento. Explico as diferenças reais entre os tipos de calçado, o que amortecimento e drop significam e como escolher sem gastar à toa.",
     category: "Treino",
     date: "2026-08-12",
+    updatedAt: "2026-08-21",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["tênis para treinar", "calçado esportivo", "musculação", "corrida", "prevenção de lesões"],
@@ -107650,7 +107651,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Se tem uma pergunta que eu ouço quase toda semana na academia em Alphaville é essa: "Montinho, qual tênis eu compro?" E quase sempre a pessoa está me perguntando por causa de preço ou de estética, quando o critério que mais importa é outro: <strong>para que você vai usar</strong>. O mesmo par não serve bem para correr 10 km, agachar com barra e fazer um circuito de funcional. Não porque o tênis é ruim, mas porque foram projetados para resolver problemas diferentes.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-escolher-tenis-para-treinar-infographic.svg" alt="Infográfico sobre Como Escolher o Tênis Certo Para Treinar (e Por Que o Mesmo Não Serve Para Tudo) — Montinho Personal Trainer" title="Como Escolher o Tênis Certo Para Treinar (e Por Que o Mesmo Não Serve Para Tudo)" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-escolher-tenis-para-treinar.webp" alt="Como escolher o tênis certo para treinar: diferenças entre corrida, musculação e funcional" title="Como escolher o tênis para treinar — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Vou deixar claro desde já: não vou indicar marca nem modelo. Primeiro porque o mercado muda toda temporada. Segundo porque o mesmo modelo que é perfeito para um aluno é desconfortável para outro. O que eu posso te dar são os critérios, que não mudam.</p>
@@ -107763,6 +107764,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Barrinha de proteína pode ser um lanche prático e útil ou um chocolate caro com apelo fitness. A diferença está no rótulo. Mostro exatamente o que olhar e como comparar com comida de verdade.",
     category: "Nutrição",
     date: "2026-08-12",
+    updatedAt: "2026-08-21",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["barrinha de proteína", "rótulo de alimentos", "lanche saudável", "suplementos", "emagrecimento"],
@@ -107808,7 +107810,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>A barrinha de proteína é provavelmente o produto que mais aparece na bolsa dos meus alunos em Alphaville. Executivo com reunião emendada, mãe correndo entre compromissos, gente que sai da academia direto para o trabalho. E a pergunta é sempre a mesma: "isso aqui é bom ou é enganação?" A resposta honesta é: <strong>depende inteiramente do rótulo e do contexto</strong>. Existe barrinha que resolve muito bem um problema real, e existe barrinha que é doce embrulhado em marketing.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/barrinha-de-proteina-vale-a-pena-infographic.svg" alt="Infográfico sobre Barrinha de Proteína Vale a Pena? Como Ler o Rótulo e Decidir — Montinho Personal Trainer" title="Barrinha de Proteína Vale a Pena? Como Ler o Rótulo e Decidir" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/barrinha-de-proteina-vale-a-pena.webp" alt="Barrinha de proteína vale a pena? Como ler o rótulo e comparar com alimentos reais" title="Barrinha de proteína vale a pena? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Não vou demonizar nenhum alimento aqui, nem vender nenhum. Quando eu perdi meus 40 kg, aprendi que a diferença entre progredir e travar quase nunca está em um produto específico — está no total do dia e na consistência ao longo dos meses. Mas saber ler rótulo economiza dinheiro e evita decisões ruins repetidas 300 vezes por ano.</p>
@@ -107923,6 +107925,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Dá para construir músculo com dieta vegetariana ou vegana, e a evidência recente sustenta isso. O que muda é o planejamento: proteína total, qualidade das fontes e alguns nutrientes que pedem acompanhamento.",
     category: "Nutrição",
     date: "2026-08-12",
+    updatedAt: "2026-08-21",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["dieta vegetariana", "proteína vegetal", "hipertrofia", "vegano", "nutrição esportiva"],
@@ -107968,7 +107971,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Toda vez que um aluno me diz que virou vegetariano, o assunto seguinte é sempre o mesmo: "e agora, vou perder músculo?" A resposta curta é não. A resposta longa, que é a que interessa, é que <strong>dá para ganhar massa muscular com dieta vegetariana ou vegana, desde que o planejamento seja mais deliberado</strong>. Não é uma dieta pior. É uma dieta que perdoa menos improviso.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/dieta-vegetariana-e-musculacao-infographic.svg" alt="Infográfico sobre Dieta Vegetariana e Musculação: Dá Para Ganhar Massa Muscular? — Montinho Personal Trainer" title="Dieta Vegetariana e Musculação: Dá Para Ganhar Massa Muscular?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/dieta-vegetariana-e-musculacao.webp" alt="Dieta vegetariana e musculação: como ganhar massa muscular com proteína vegetal" title="Dieta vegetariana e musculação — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Trabalho como personal em Alphaville e já acompanhei bastante gente nessa transição. O que eu vejo travar resultado quase nunca é "falta de proteína animal". É falta de proteína total, porque a pessoa trocou frango por salada e não recalculou nada. Quando eu perdi meus 40 kg, aprendi na prática que o que muda o jogo é a organização do que entra no dia, não a origem ideológica do alimento.</p>
@@ -108091,6 +108094,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Polichinelo virou febre nos desafios de internet, mas será que ele emagrece de verdade? Explico o gasto calórico real do exercício, quantos fazer por dia conforme o seu nível e por que ele funciona melhor dentro de um circuito do que sozinho.",
     category: "Emagrecimento",
     date: "2026-08-12",
+    updatedAt: "2026-08-21",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["polichinelo", "emagrecimento", "exercício aeróbico", "HIIT", "treino em casa"],
@@ -108135,7 +108139,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se você já caiu num "desafio de 500 polichinelos por dia" no Instagram, esse artigo é pra você. O polichinelo é provavelmente o exercício mais democrático que existe: não precisa de equipamento, cabe em qualquer sala e todo mundo aprendeu na aula de educação física. Mas será que ele emagrece de verdade? A resposta honesta é: sozinho, pouco. Dentro de uma estratégia bem montada, ele pode sim ajudar bastante. Vou explicar a diferença — e ela é enorme.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/polichinelo-emagrece-infographic.svg" alt="Infográfico sobre Polichinelo Emagrece? Quantos Fazer Por Dia (Resposta Honesta) — Montinho Personal Trainer" title="Polichinelo Emagrece? Quantos Fazer Por Dia (Resposta Honesta)" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/polichinelo-emagrece.webp" alt="Polichinelo emagrece? Quantos fazer por dia e o papel real no aquecimento e no HIIT" title="Polichinelo emagrece? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Quantas calorias o polichinelo queima de verdade?</h2>
 <p>Vamos começar pelos números, porque é aí que a maioria dos desafios de internet desmorona. O polichinelo em ritmo moderado tem um gasto em torno de 8 METs — o que, para uma pessoa de 70 kg, significa algo entre <strong>8 e 10 calorias por minuto</strong>. Em ritmo muito intenso, pode chegar perto de 12 a 14 calorias por minuto, mas quase ninguém sustenta esse ritmo por mais de um ou dois minutos.</p>
@@ -108218,6 +108222,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O burpee é odiado por um bom motivo: ele é um dos exercícios mais completos e exigentes que existem. Ensino a técnica passo a passo, as variações do iniciante ao avançado e os erros que transformam esse exercício excelente em dor na lombar.",
     category: "Treino",
     date: "2026-08-12",
+    updatedAt: "2026-08-21",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["burpee", "treino em casa", "exercício funcional", "condicionamento", "HIIT"],
@@ -108262,7 +108267,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Poucos exercícios provocam tanta reação quanto o burpee. Tem gente que ama, a maioria odeia, mas ninguém fica indiferente — porque 10 repetições bem feitas deixam qualquer pessoa ofegante. E é exatamente por isso que ele funciona: o burpee combina agachamento, prancha, flexão e salto num único movimento, recrutando praticamente o corpo inteiro enquanto o coração dispara. Neste artigo ensino a técnica passo a passo, as variações para cada nível e os erros que vejo todos os dias.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/burpee-como-fazer-infographic.svg" alt="Infográfico sobre Burpee: Como Fazer Passo a Passo e Por Que Ele Funciona Tanto — Montinho Personal Trainer" title="Burpee: Como Fazer Passo a Passo e Por Que Ele Funciona Tanto" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/burpee-como-fazer.webp" alt="Burpee: como fazer passo a passo, variações do iniciante ao avançado e erros comuns" title="Burpee: como fazer — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>O que é o burpee e por que ele é tão exigente</h2>
 <p>O burpee nasceu na década de 1930 como teste de condicionamento físico criado pelo fisiologista Royal Burpee, nos Estados Unidos. A versão moderna virou queridinha do treinamento funcional e do CrossFit por um motivo simples: ele junta trabalho muscular e cardiovascular ao mesmo tempo.</p>
@@ -108341,6 +108346,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Quantos abdominais por dia para ter barriga definida? A pergunta parte de uma premissa errada: abdominal não queima gordura da barriga. Explico o que o exercício realmente faz, quantos fazer por nível e por que qualidade vence quantidade.",
     category: "Treino",
     date: "2026-08-12",
+    updatedAt: "2026-08-21",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["abdominal", "core", "treino de abdômen", "definição abdominal", "treino em casa"],
@@ -108385,7 +108391,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Montinho, quantos abdominais eu preciso fazer por dia pra trincar a barriga?" Essa é, fácil, uma das perguntas que mais recebo. E a resposta honesta começa desmontando a própria pergunta: não existe número de abdominais que revele a barriga, porque abdominal não queima a gordura que está na frente dela. Neste artigo explico o que o exercício realmente faz, quantos fazer conforme o seu nível e por que progredir em dificuldade vale mais do que colecionar repetições.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quantos-abdominais-por-dia-infographic.svg" alt="Infográfico sobre Quantos Abdominais Por Dia? O Número Importa Menos do Que Você Pensa — Montinho Personal Trainer" title="Quantos Abdominais Por Dia? O Número Importa Menos do Que Você Pensa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quantos-abdominais-por-dia.webp" alt="Quantos abdominais por dia fazer: qualidade e progressão valem mais que repetições infinitas" title="Quantos abdominais por dia? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Primeiro, o mito: abdominal não queima barriga</h2>
 <p>Esse é um dos mitos mais persistentes do mundo fitness, então vou ser direto: <strong>gordura localizada não se queima com exercício localizado</strong>. Quando você faz abdominal, os músculos do abdômen trabalham — mas a energia que eles usam vem do corpo inteiro, não da gordura que está por cima deles. Estudos clássicos testaram exatamente isso: seis semanas de treino abdominal intenso não reduziram a gordura da região abdominal mais do que a de qualquer outra parte do corpo.</p>
@@ -108463,6 +108469,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Quanto tempo segurar a prancha? A internet vende recordes de 5 minutos, mas a ciência e a prática apontam para outro caminho: séries de 30 a 60 segundos com técnica impecável. Explico os tempos por nível, as progressões e se vale fazer todo dia.",
     category: "Treino",
     date: "2026-08-12",
+    updatedAt: "2026-08-21",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["prancha", "core", "isometria", "treino de abdômen", "treino em casa"],
@@ -108507,7 +108514,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>A prancha é aquele exercício enganosamente simples: é "só" ficar parado, apoiado nos antebraços e nas pontas dos pés. Mas quem já passou dos 40 segundos sabe que esse "parado" é um dos trabalhos mais intensos que o core pode receber. A dúvida que todo mundo me traz é a mesma: quanto tempo segurar? Um minuto? Cinco? E precisa fazer todo dia? Vou responder com números realistas — e desmontar o mito do recorde de prancha no caminho.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-tempo-de-prancha-infographic.svg" alt="Infográfico sobre Quanto Tempo de Prancha? Vale Fazer Todo Dia? — Montinho Personal Trainer" title="Quanto Tempo de Prancha? Vale Fazer Todo Dia?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-tempo-de-prancha.webp" alt="Quanto tempo de prancha fazer: tempos por nível e se vale treinar prancha todo dia" title="Quanto tempo de prancha? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>O que a prancha realmente treina</h2>
 <p>A prancha é um exercício <strong>isométrico</strong>: o músculo contrai sem movimento. E ela treina exatamente o que o core faz na vida real — <strong>resistir</strong>. Resistir à extensão da lombar, resistir ao colapso do quadril, manter o tronco rígido enquanto o resto do corpo trabalha. É por isso que pesquisadores de coluna, como o canadense Stuart McGill, colocam exercícios de estabilidade como a prancha no centro dos programas de proteção lombar: eles fortalecem o abdômen com muito menos estresse nas vértebras do que flexões de tronco repetidas.</p>
