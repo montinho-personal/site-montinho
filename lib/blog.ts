@@ -108609,6 +108609,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Dança emagrece, sim — mas não pelos motivos milagrosos que vendem por aí. Mostro o gasto calórico honesto de cada ritmo, explico por que a diversão é o maior trunfo da dança para quem quer perder peso e como combiná-la com treino de força.",
     category: "Emagrecimento",
     date: "2026-08-12",
+    updatedAt: "2026-08-21",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["dança", "emagrecimento", "zumba", "cardio", "gasto calórico"],
@@ -108653,7 +108654,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Montinho, eu odeio esteira, mas amo dançar. Dança emagrece?" Recebo essa pergunta com frequência — e a resposta me deixa feliz de dar: sim, dança emagrece, desde que as regras de sempre sejam respeitadas. E ela carrega um trunfo que nenhuma esteira tem: diversão. Neste artigo mostro o gasto calórico honesto de cada ritmo, explico por que a adesão vale mais que a intensidade e ensino a combinar a dança com força para o resultado aparecer e ficar.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/danca-emagrece-infographic.svg" alt="Infográfico sobre Dança Emagrece? Qualquer Ritmo Vale? Calorias Por Estilo — Montinho Personal Trainer" title="Dança Emagrece? Qualquer Ritmo Vale? Calorias Por Estilo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/danca-emagrece.webp" alt="Dança emagrece? Gasto calórico por ritmo e por que a adesão é o maior trunfo da dança" title="Dança emagrece? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>A regra que vale para dança, corrida e qualquer exercício</h2>
 <p>Nenhuma atividade emagrece por mágica. O peso cai quando o corpo gasta mais energia do que recebe — o famoso <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a>. A dança entra nessa equação como uma forma de aumentar o gasto: uma aula movimentada queima algumas centenas de calorias. Se a alimentação está no lugar, isso acelera o processo. Se você compensa a aula com um lanche "merecido" de 600 calorias, o efeito evapora.</p>
@@ -108735,6 +108736,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Aquela dor na parte interna da canela que aparece quando você começa a correr tem nome: canelite. Explico o que causa, como diferenciar de algo mais sério e o que realmente funciona para resolver.",
     category: "Saúde",
     date: "2026-08-13",
+    updatedAt: "2026-08-21",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["canelite", "dor na canela", "corrida", "lesões", "prevenção de lesões"],
@@ -108779,7 +108781,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se você começou a correr recentemente e sente uma dor chata na parte interna da canela — que aparece durante o treino, às vezes melhora quando o corpo aquece e volta depois — muito provavelmente está lidando com a famosa canelite. O nome técnico é síndrome do estresse tibial medial, e ela é uma das queixas mais comuns entre corredores iniciantes. Eu vejo isso o tempo todo com alunos que empolgam na corrida: a motivação está lá em cima, o corpo ainda não acompanhou. Neste artigo eu explico o que é, por que acontece, como diferenciar de uma fratura por estresse (que é coisa séria) e o que fazer para resolver de verdade.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/canelite-dor-na-canela-infographic.svg" alt="Infográfico sobre Canelite: Dor na Canela ao Correr — O Que Fazer (e Quando Procurar Médico) — Montinho Personal Trainer" title="Canelite: Dor na Canela ao Correr — O Que Fazer (e Quando Procurar Médico)" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/canelite-dor-na-canela.webp" alt="Canelite: dor na canela ao correr, causas, prevenção e quando procurar o médico" title="Canelite: dor na canela ao correr — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>O que é canelite, afinal?</h2>
 <p>A canelite é uma resposta inflamatória e de sobrecarga na região onde músculos e fáscia se inserem na tíbia, o osso da canela. O próprio periósteo — a "capa" que reveste o osso — fica irritado. O resultado é uma dor difusa ao longo da borda interna da canela, geralmente no terço inferior, que piora com impacto: correr, pular, às vezes até caminhar rápido.</p>
@@ -108858,6 +108860,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Dá para treinar bem em casa gastando pouco — se você comprar as coisas certas na ordem certa. Monto aqui três faixas de orçamento realistas em reais e falo com honestidade sobre quando a academia comum ainda é a melhor escolha.",
     category: "Treino",
     date: "2026-08-13",
+    updatedAt: "2026-08-21",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["academia em casa", "home gym", "treino em casa", "equipamentos de treino", "orçamento fitness"],
@@ -108902,7 +108905,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Montar uma academia em casa é um daqueles projetos que pode ser a melhor decisão da sua vida fitness — ou um monte de dinheiro parado embaixo da cama. A diferença está em comprar as coisas certas, na ordem certa, para o seu objetivo real. Neste guia eu organizo tudo por faixa de orçamento, em reais, do kit básico de R$150 até a estrutura completa de R$3.000+, e falo com a honestidade de sempre: para muita gente, a academia do bairro ainda sai mais barato e funciona melhor. Vamos por partes.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-montar-academia-em-casa-infographic.svg" alt="Infográfico sobre Como Montar uma Academia em Casa (Por Orçamento: de R$150 a R$3.000+) — Montinho Personal Trainer" title="Como Montar uma Academia em Casa (Por Orçamento: de R$150 a R$3.000+)" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-montar-academia-em-casa.webp" alt="Como montar uma academia em casa: equipamentos por faixa de orçamento e espaço necessário" title="Como montar academia em casa — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Antes de gastar um real: três perguntas</h2>
 <p><strong>1. Você vai realmente treinar em casa?</strong> Seja sincero. Se você nunca conseguiu manter constância nem pagando mensalidade, o problema não é o local — é o hábito. Equipamento novo dá motivação por duas semanas; depois, vale o que sempre valeu: rotina, plano e consistência.</p>
