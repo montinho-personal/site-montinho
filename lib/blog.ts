@@ -109567,6 +109567,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Abaixou para pegar algo, sentiu a fisgada e travou tudo? Respira. A crise aguda de lombar assusta muito, mas na maioria dos casos melhora em dias. O erro clássico é ficar de cama — explico o que fazer, hora a hora.",
     category: "Saúde",
     date: "2026-08-13",
+    updatedAt: "2026-08-18",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["lombar travada", "dor lombar aguda", "dor nas costas", "coluna", "bandeiras vermelhas"],
@@ -109611,7 +109612,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>A cena é quase sempre a mesma: a pessoa abaixa para pegar um objeto banal — um sapato, uma caneta, a mala do carro —, sente uma fisgada na lombar e trava. Não consegue endireitar o tronco, qualquer movimento arranca um gemido, e a cabeça dispara: “herniei a coluna, estou lesionado para sempre”. Eu já vi isso acontecer com alunos, com amigos e com gente da minha família. Então deixa eu te dar a notícia boa logo no primeiro parágrafo: a crise aguda de dor lombar, por mais dramática que pareça, na grande maioria das vezes <strong>não é lesão grave e melhora em dias a poucas semanas</strong>. E a segunda notícia, que contraria o instinto: ficar de cama é uma das piores coisas que você pode fazer.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/travou-a-lombar-o-que-fazer-infographic.svg" alt="Infográfico sobre Travou a Lombar: O Que Fazer Agora — Montinho Personal Trainer" title="Travou a Lombar: O Que Fazer Agora" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/travou-a-lombar-o-que-fazer.webp" alt="Travou a lombar: o que fazer nos primeiros dias da crise de dor lombar aguda" title="Travou a lombar: o que fazer — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>O que aconteceu com a sua lombar?</h2>
 <p>O “travamento” é, na maior parte dos casos, um espasmo muscular protetor: os músculos da região contraem com força para imobilizar a área que o cérebro interpretou como ameaçada. A dor intensa vem mais desse espasmo e da sensibilização dos tecidos do que de um dano estrutural sério. Em cerca de 90% dos episódios de dor lombar aguda, nenhuma causa estrutural específica é identificada — é o que a medicina chama de dor lombar inespecífica. Isso não diminui a sua dor, que é real e forte; apenas muda o prognóstico: é um quadro que tende à melhora espontânea.</p>
