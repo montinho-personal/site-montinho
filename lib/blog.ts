@@ -23824,6 +23824,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Wegovy é a versão de maior dose da semaglutida, aprovada especificamente para tratamento da obesidade. O treino de força transforma o resultado de bom em excelente.",
     category: "Saúde",
     date: "2026-06-27",
+    updatedAt: "2026-08-24",
     readTime: "7 min",
     author: "Montinho",
     tags: ["Wegovy", "semaglutida", "obesidade", "emagrecimento", "GLP-1"],
@@ -23846,7 +23847,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/wegovy-e-musculacao-infographic.svg" alt="Infográfico sobre Wegovy e Musculação: Como Combinar para Resultados Melhores — Montinho Personal Trainer" title="Wegovy e Musculação: Como Combinar para Resultados Melhores" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/wegovy-e-musculacao.webp" alt="Wegovy e musculação: como combinar semaglutida com treino de força para melhores resultados" title="Wegovy e musculação — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Wegovy vs Ozempic: qual a diferença?</h2>
 <table>
@@ -29150,7 +29151,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-usar-smartwatch-musculacao-infographic.svg" alt="Infográfico sobre Como Usar o Smartwatch (Apple Watch / Garmin) para Potencializar seus Treinos de — Montinho Personal Trainer" title="Como Usar o Smartwatch (Apple Watch / Garmin) para Potencial" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-usar-smartwatch-musculacao.webp" alt="Como usar smartwatch na musculação: métricas úteis do Apple Watch e Garmin no treino de força" title="Smartwatch na musculação — Montinho Personal Trainer Alphaville" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
   <p>Em Alphaville, o smartwatch — especialmente Apple Watch e Garmin — é quase uniforme entre os executivos que treino. A maioria usa para notificações, para checar mensagens entre séries, para ver calorias ao final do treino e para fechar os anéis ou bater a meta de passos. Isso é subutilização.</p>
 
@@ -29319,6 +29320,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia muscular (PubMed)</a>.</p>`,
     category: "Treinamento",
     date: "2026-06-27",
+    updatedAt: "2026-08-24",
     readTime: "12 min",
     author: "Montinho",
     tags: [
@@ -29863,6 +29865,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   excerpt: "A tirzepatida tem a maior perda de peso já registrada em estudos clínicos — até 21%. Mas sem musculação, parte dessa perda é músculo. Veja como treinar certo usando Mounjaro.",
   category: "Saúde",
   date: "2026-06-27",
+    updatedAt: "2026-08-24",
   readTime: "10 min",
   author: "Montinho",
   tags: ["tirzepatida", "mounjaro", "musculação", "GLP-1", "GIP", "preservar músculo"],
@@ -29884,7 +29887,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/tirzepatida-e-musculacao-infographic.svg" alt="Infográfico sobre Tirzepatida e Musculação: Guia Completo para Quem Usa Mounjaro — Montinho Personal Trainer" title="Tirzepatida e Musculação: Guia Completo para Quem Usa Mounja" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/tirzepatida-e-musculacao.webp" alt="Tirzepatida e musculação: como treinar força para preservar massa muscular usando Mounjaro" title="Tirzepatida e musculação — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <p>Os trials SURMOUNT confirmaram isso de forma inequívoca: perda média de <strong>20,9% do peso corporal</strong> em 72 semanas na dose de 15mg. Número histórico. Mas essa perda de peso expressiva cria um risco proporcional de perda muscular quando não há treino de força.</p>
 
@@ -34117,6 +34120,7 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
   excerpt: "Sem calorias suficientes, o músculo não cresce — mesmo com o treino perfeito. Mas comer demais só engorda. O equilíbrio correto existe e é calculável. Este guia ensina como.",
   category: "Nutrição",
   date: "2026-06-27",
+    updatedAt: "2026-08-24",
   readTime: "9 min",
   author: "Montinho",
   tags: ["calorias para ganhar massa", "superávit calórico", "bulk", "hipertrofia", "nutrição musculação"],
@@ -34138,7 +34142,7 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/calorias-para-ganhar-massa-muscular-infographic.svg" alt="Infográfico sobre Quantas Calorias Para Ganhar Massa Muscular? Cálculo e Estratégia — Montinho Personal Trainer" title="Quantas Calorias Para Ganhar Massa Muscular? Cálculo e Estra" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/calorias-para-ganhar-massa-muscular.webp" alt="Quantas calorias para ganhar massa muscular: como calcular o superávit calórico ideal" title="Calorias para ganhar massa muscular — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <p>Mas superávit excessivo resulta em ganho de gordura desnecessário. O objetivo é encontrar o ponto certo.</p>
 
@@ -38999,6 +39003,7 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
   excerpt: "Você treina há meses sem progredir? Provavelmente está repetindo o mesmo microciclo sem pensar no macro. Entender esses três conceitos transforma seu planejamento de treino.",
   category: "Treinamento",
   date: "2026-06-27",
+    updatedAt: "2026-08-24",
   readTime: "10 min",
   author: "Montinho",
   tags: ["macrociclo mesociclo microciclo", "periodização de treino", "planejamento de treino", "periodização linear", "DUP musculação"],
@@ -39020,7 +39025,7 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/macrociclo-mesociclo-microciclo-infographic.svg" alt="Infográfico sobre Macrociclo, Mesociclo e Microciclo: Como Planejar o Treino do Ano — Montinho Personal Trainer" title="Macrociclo, Mesociclo e Microciclo: Como Planejar o Treino d" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/macrociclo-mesociclo-microciclo.webp" alt="Macrociclo, mesociclo e microciclo: como planejar a periodização do treino do ano" title="Macrociclo, mesociclo e microciclo — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <p>A periodização resolve esse problema. E ela começa com três conceitos fundamentais que o treinamento esportivo de elite usa há décadas.</p>
 
@@ -48866,6 +48871,7 @@ Verdade: A vantagem genética acelera os resultados — não os entrega automati
     readTime: "10 min",
     author: "Montinho",
     date: "2026-06-28",
+    updatedAt: "2026-08-24",
     faq: [
       { question: "O que são fibras musculares tipo 1 e tipo 2?", answer: "Fibras tipo 1 (lentas) são resistentes à fadiga, aeróbicas, ativadas em exercícios de baixa a moderada intensidade. Fibras tipo 2 (rápidas) são mais poderosas, fadigam rapidamente e têm maior potencial de hipertrofia — subdivididas em 2A (intermediárias) e 2X (as mais explosivas). O equilíbrio entre os tipos varia entre músculos e indivíduos." },
       { question: "Como recrutar fibras musculares tipo 2 no treino?", answer: "Fibras tipo 2 (especialmente 2X) são recrutadas com cargas altas (>70% do 1RM) ou quando séries de repetições moderadas chegam próximo à falha muscular. Isso explica por que simplesmente usar pesos leves com muitas reps sem esforço máximo deixa as fibras mais poderosas sem estímulo adequado." },
@@ -48886,7 +48892,7 @@ Verdade: A vantagem genética acelera os resultados — não os entrega automati
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/fibras-musculares-tipo-1-tipo-2-infographic.svg" alt="Infográfico sobre Fibras Musculares Tipo 1 e Tipo 2: Como Isso Afeta Seu Treino de Verdade — Montinho Personal Trainer" title="Fibras Musculares Tipo 1 e Tipo 2: Como Isso Afeta Seu Trein" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/fibras-musculares-tipo-1-tipo-2.webp" alt="Fibras musculares tipo 1 e tipo 2: diferenças e como afetam seu treino de força e resistência" title="Fibras musculares tipo 1 e 2 — Montinho Personal Trainer Alphaville" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Os Tipos de Fibras Musculares Esqueléticas</h2>
 <p>A classificação moderna divide as fibras musculares em três tipos principais, baseada na isoforma de miosina ATPase que expressam:</p>
@@ -50813,7 +50819,7 @@ Neste guia você aprende a técnica correta, os erros mais comuns, variações e
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/agachamento-bulgaro-como-fazer-infographic.svg" alt="Infográfico sobre Agachamento Búlgaro: Técnica Correta, Benefícios e Como Progredir — Montinho Personal Trainer" title="Agachamento Búlgaro: Técnica Correta, Benefícios e Como Prog" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/agachamento-bulgaro-como-fazer.webp" alt="Agachamento búlgaro: técnica correta, benefícios e progressão do exercício unilateral de pernas" title="Agachamento búlgaro: como fazer — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 O agachamento búlgaro é um agachamento **unilateral** em que o pé traseiro fica elevado em um banco, step ou caixa. Isso:
 
@@ -50981,6 +50987,7 @@ O agachamento búlgaro é incômodo, exige coordenação e mobilidade — e exat
 - Jakobsen MD, et al. Muscle activity during leg-press exercise performed with and without restricted knee flexion. Eur J Appl Physiol. 2012`,
     category: "Treino",
     date: "2026-06-28",
+    updatedAt: "2026-08-24",
     readTime: "12 min",
     author: "Montinho Personal Trainer",
     tags: ["agachamento búlgaro", "bulgarian split squat", "treino de pernas", "glúteos", "quadríceps", "exercício unilateral", "técnica de treino"],
@@ -55548,7 +55555,7 @@ French press é insubstituível para quem quer tríceps volumosos — especialme
     excerpt: "Crossover e crucifixo trabalham o mesmo movimento, mas de formas diferentes. A escolha certa depende do seu objetivo e fase do treino — veja a análise completa.",
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
+    updatedAt: "2026-08-24",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["crossover", "crucifixo", "peito", "peitoral", "técnica", "musculação", "cabo"],
@@ -55560,7 +55567,7 @@ French press é insubstituível para quem quer tríceps volumosos — especialme
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/crossover-vs-crucifixo-infographic.svg" alt="Infográfico Crossover vs Crucifixo — Montinho Personal Trainer" title="Crossover vs Crucifixo: Análise Completa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/crossover-vs-crucifixo.webp" alt="Crossover vs crucifixo: diferenças, vantagens e qual escolher para o treino de peito" title="Crossover vs crucifixo — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 ## A Diferença Fundamental: Perfil de Tensão
@@ -71863,7 +71870,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     excerpt: "Antes de definir quanto quer perder, você precisa saber quanto é possível perder com saúde — e o que realmente vai aparecer no espelho ao final do processo.",
     category: "Emagrecimento",
     date: "2026-07-01",
-    updatedAt: "2026-07-01",
+    updatedAt: "2026-08-24",
     readTime: "8 min",
     author: "Montinho",
     tags: ["quantos quilos perder", "meta de emagrecimento", "perda de peso saudável", "emagrecimento até dezembro", "personal trainer"],
@@ -71879,7 +71886,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>Outubro chega e a contagem regressiva para o verão liga o alarme na cabeça de todo mundo: "quanto eu consigo perder até dezembro?" O mercado responde com promessas de 10, 15, 20 kg. E é exatamente essa promessa que faz você fracassar — porque meta impossível não motiva, sabota.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quantos-quilos-perder-ate-fim-do-ano-infographic.svg" alt="Infográfico sobre Quantos Quilos Dá para Perder até o Fim do Ano? — Montinho Personal Trainer" title="Quantos Quilos Dá para Perder até o Fim do Ano?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quantos-quilos-perder-ate-fim-do-ano.webp" alt="Quantos quilos dá para perder até o fim do ano: expectativa realista de emagrecimento" title="Quantos quilos perder até o fim do ano — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Então aqui vai a resposta honesta: em 10 a 12 semanas de consistência, <strong>5 a 8 kg de gordura real</strong>. E o detalhe que muda tudo: o espelho vai mostrar muito mais do que a balança. Meta real, resultado real. O resto é marketing.</p>
@@ -73634,7 +73641,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "A pamonha não é o vilão que parece. Entenda a relação entre esse clássico junino, suas calorias e como encaixá-la no seu processo de emagrecimento.",
     category: "Nutrição",
     date: "2026-06-12",
-    updatedAt: "2026-07-01",
+    updatedAt: "2026-08-24",
     readTime: "6 min",
     author: "Montinho",
     tags: ["pamonha emagrecer", "pamonha calorias", "dieta festa junina", "emagrecimento", "alimentos permitidos na dieta"],
@@ -73650,7 +73657,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Chega junho e o tribunal da dieta se instala na festa junina. Ré: a pamonha. Acusações: "bomba calórica", "veneno para a balança", "proibida para quem quer emagrecer". Sentença dada sem julgamento — como quase tudo no mercado fitness.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/da-para-comer-pamonha-e-emagrecer-infographic.svg" alt="Infográfico sobre Dá para Comer Pamonha e Emagrecer? — Montinho Personal Trainer" title="Dá para Comer Pamonha e Emagrecer?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/da-para-comer-pamonha-e-emagrecer.webp" alt="Dá para comer pamonha e emagrecer: calorias da pamonha e como encaixar no déficit calórico" title="Pamonha e emagrecimento — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Aqui vai a resposta direta: sim, dá para comer pamonha e emagrecer. <strong>Nenhum alimento engorda sozinho. Nenhum alimento emagrece sozinho.</strong> O que decide o jogo é o total de calorias das suas semanas — não uma unidade de milho na festa de sábado.</p>
@@ -83360,7 +83367,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "A Bluefit vale a pena? Análise sem enrolação do modelo low-cost: pontos fortes, limitações reais e para qual perfil de aluno ela funciona.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-08-24",
     readTime: "8 min",
     author: "Montinho",
     tags: ["bluefit","academia low cost","academias em barueri","academias em alphaville","custo-benefício"],
@@ -83378,7 +83385,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Assinar academia errada é como comprar um tênis do número errado: parece bom na vitrine, machuca no uso diário. E o custo não é só a <strong>mensalidade</strong> — é a motivação que escorre pelo ralo.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/vale-a-pena-bluefit-infographic.svg" alt="Infográfico sobre Vale a Pena a Bluefit? Análise Honesta — Montinho Personal Trainer" title="Vale a Pena a Bluefit? Análise Honesta" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/vale-a-pena-bluefit.webp" alt="Vale a pena a Bluefit: análise honesta da academia, estrutura, preço e para quem serve" title="Vale a pena a Bluefit? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Na região de <strong>Alphaville, Barueri e Santana de Parnaíba</strong>, as opções se multiplicaram: redes low-cost, academias de bairro, estúdios boutique. Com tanta oferta, a dúvida "vale a pena a Bluefit?" é legítima — e merece resposta honesta.</p>
@@ -90132,6 +90139,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Musculação ou corrida: qual emagrece mais? A resposta honesta não é escolher um lado, mas entender o que cada um faz melhor. O segredo está em combinar as duas de acordo com o seu objetivo, seu corpo e sua rotina.",
     category: "Emagrecimento",
     date: "2026-07-19",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["emagrecimento", "corrida", "musculacao", "cardio", "gasto calorico"],
@@ -90170,7 +90178,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Montinho, para secar eu devo correr ou puxar ferro?" Essa é uma das perguntas que mais recebo. A resposta curta é decepcionante para quem quer uma fórmula mágica: <strong>depende do seu objetivo e do seu contexto</strong>. A resposta longa, que você vai ler aqui, é o que realmente te ajuda a decidir.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/musculacao-ou-corrida-para-emagrecer-infographic.svg" alt="Infográfico sobre Musculação ou Corrida: Qual Emagrece Mais? — Montinho Personal Trainer" title="Musculação ou Corrida: Qual Emagrece Mais?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/musculacao-ou-corrida-para-emagrecer.webp" alt="Musculação ou corrida para emagrecer: comparação de gasto calórico e efeito no metabolismo" title="Musculação ou corrida para emagrecer? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -100998,6 +101006,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O boxe é um dos treinos que mais queimam calorias por hora — mas nenhuma luta vence uma alimentação desregulada. Aqui explico quanto uma aula realmente gasta, por que o boxe funciona tão bem para tanta gente e como encaixá-lo num plano de emagrecimento de verdade.",
     category: "Emagrecimento",
     date: "2026-08-01",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["boxe", "emagrecimento", "cardio", "queima de calorias", "lutas"],
@@ -101042,7 +101051,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Boxe emagrece? A resposta curta e honesta: o boxe é uma das atividades que mais queimam calorias por hora e um dos treinos com maior taxa de adesão que eu conheço — gente que odeia esteira treina boxe sorrindo. Mas nenhuma modalidade, por mais intensa que seja, emagrece alguém que come acima do que gasta. Neste artigo eu coloco os números na mesa, explico por que o boxe funciona tão bem para tantas pessoas e mostro como usá-lo dentro de um plano de emagrecimento que se sustenta.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/boxe-emagrece-infographic.svg" alt="Infográfico sobre Boxe Emagrece? Quantas Calorias Queima e Como Usar a Favor — Montinho Personal Trainer" title="Boxe Emagrece? Quantas Calorias Queima e Como Usar a Favor" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/boxe-emagrece.webp" alt="Boxe emagrece: gasto calórico do treino de boxe e como usar a luta para perder gordura" title="Boxe emagrece? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Quantas calorias uma aula de boxe queima?</h2>
 <p>Depende do formato da aula, da intensidade e do seu peso corporal. Faixas realistas para uma hora de treino:</p>
@@ -101121,6 +101130,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Aula de spinning queima muita caloria, protege os joelhos e vicia muita gente — mas emagrecer depende do conjunto. Aqui trago os números reais de gasto calórico, os erros que travam o resultado e como montar uma semana que funciona.",
     category: "Emagrecimento",
     date: "2026-08-01",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["spinning", "bike indoor", "emagrecimento", "cardio", "queima de calorias"],
@@ -101165,7 +101175,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Spinning emagrece? Poucas atividades enchem tanto uma sala de academia às 7 da manhã quanto uma boa aula de bike indoor — música alta, professor animado, suor pingando. E a pergunta que todo mundo faz ao descer da bike é se aquilo tudo vira resultado na balança. A resposta honesta: o spinning é uma excelente ferramenta de gasto calórico e condicionamento, com baixíssimo impacto articular, mas ele só emagrece dentro de um contexto de déficit calórico. Vamos aos números e ao que realmente importa.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/spinning-emagrece-infographic.svg" alt="Infográfico sobre Spinning Emagrece? Calorias, Benefícios e Como Aproveitar — Montinho Personal Trainer" title="Spinning Emagrece? Calorias, Benefícios e Como Aproveitar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/spinning-emagrece.webp" alt="Spinning emagrece: gasto calórico da aula de bike indoor e como usar para perder gordura" title="Spinning emagrece? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Quantas calorias uma aula de spinning queima?</h2>
 <p>O gasto varia com o seu peso, o seu condicionamento e — principalmente — a carga que você coloca na bike. É aí que mora o segredo (e o autoengano, como veremos):</p>
