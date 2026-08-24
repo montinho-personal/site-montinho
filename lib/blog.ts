@@ -23267,6 +23267,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "A balança parou mas as roupas estão mais folgadas. Você não regrediu — você está progredindo de um jeito que a balança não consegue mostrar.",
     category: "Emagrecimento",
     date: "2026-06-27",
+    updatedAt: "2026-08-24",
     readTime: "6 min",
     author: "Montinho",
     tags: ["composição corporal", "balança", "gordura", "massa muscular", "recomposição"],
@@ -23289,7 +23290,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/balanca-nao-muda-mas-o-corpo-muda-infographic.svg" alt="Infográfico sobre Por Que a Balança Não Muda Mas o Corpo Está Mudando? — Montinho Personal Trainer" title="Por Que a Balança Não Muda Mas o Corpo Está Mudando?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/balanca-nao-muda-mas-o-corpo-muda.webp" alt="Por que a balança não muda mas o corpo está mudando: recomposição corporal explicada" title="Balança não muda, corpo muda — Montinho Personal Trainer Alphaville" width="1659" height="948" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>O que a balança mede (e o que ela não mede)</h2>
 <p>A balança mede peso total: músculos, gordura, água, ossos, órgãos, conteúdo intestinal, o café que você tomou. Ela não separa gordura de músculo — e essa separação é o que realmente importa para aparência, saúde e desempenho.</p>
@@ -25962,7 +25963,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/hipotireoidismo-e-musculacao-infographic.svg" alt="Infográfico sobre Hipotireoidismo e Musculação: Como o Treino de Força Ajuda a Controlar Peso e Fa — Montinho Personal Trainer" title="Hipotireoidismo e Musculação: Como o Treino de Força Ajuda a" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/hipotireoidismo-e-musculacao.webp" alt="Hipotireoidismo e musculação: como o treino de força ajuda no controle de peso e na fadiga" title="Hipotireoidismo e musculação — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <p>Hipotireoidismo é uma das condições mais prevalentes entre os adultos de 35 a 55 anos — e é especialmente comum em mulheres. A tireóide produz hormônios (T3 e T4) que regulam o metabolismo de praticamente todas as células do corpo. Quando ela funciona abaixo do ideal, as consequências são múltiplas: metabolismo mais lento, ganho de peso mesmo com alimentação controlada, fadiga persistente, raciocínio mais lento, humor comprometido e dificuldade em perder gordura.</p>
 
@@ -26154,6 +26155,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 </ul>`,
     category: "Saúde",
     date: "2026-06-27",
+    updatedAt: "2026-08-24",
     readTime: "13 min",
     author: "Montinho",
     tags: ["hipotireoidismo", "musculação", "tireóide", "metabolismo", "fadiga", "composição corporal"],
@@ -46001,6 +46003,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     readTime: "10 min",
     author: "Montinho",
     date: "2026-06-28",
+    updatedAt: "2026-08-24",
     faq: [
       { question: "Qual é a diferença entre pulldown e barra fixa?", answer: "O pulldown usa a máquina de polia alta com peso ajustável — você puxa a barra para baixo. A barra fixa você puxa o próprio corpo para cima. A barra fixa é considerada superior para recrutamento de estabilizadores, mas o pulldown permite progressão mais gradual de carga, sendo melhor para iniciantes." },
       { question: "Pulldown para largura ou espessura das costas?", answer: "O pulldown com barra larga e pegada pronada (palmas para frente) foca mais na largura (dorsal). Variações com triângulo ou pegada neutra focam mais na espessura (romboides, infraespinhoso). Para desenvolver as costas completas, alterne variações." },
@@ -46021,7 +46024,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-pulldown-puxada-frontal-infographic.svg" alt="Infográfico sobre Como Fazer Pulldown (Puxada Frontal): Técnica Correta e Erros Comuns — Montinho Personal Trainer" title="Como Fazer Pulldown (Puxada Frontal): Técnica Correta e Erro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-pulldown-puxada-frontal.webp" alt="Como fazer pulldown (puxada frontal): técnica correta, pegadas e erros comuns no treino de costas" title="Pulldown (puxada frontal): como fazer — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Músculos Trabalhados no Pulldown</h2>
 <ul>
@@ -56310,7 +56313,7 @@ Diástase abdominal é tratável com a abordagem correta. O exercício é parte 
     excerpt: "Hip dips são aquelas curvas côncavas laterais no quadril que tantas mulheres querem eliminar. A boa notícia: musculação pode minimizá-los — mas entender a anatomia muda tudo.",
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
+    updatedAt: "2026-08-24",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["hip dips", "glúteo médio", "musculação feminina", "corpo feminino", "hipertrofia feminina", "personal trainer alphaville"],
@@ -56330,7 +56333,7 @@ Diástase abdominal é tratável com a abordagem correta. O exercício é parte 
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/hip-dips-musculacao-infographic.svg" alt="Infográfico sobre Hip Dips e Musculação — Montinho Personal Trainer" title="Hip Dips: O Que São e Como Minimizar com Musculação" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/hip-dips-musculacao.webp" alt="Hip dips: o que são e como a musculação ajuda a minimizar a aparência com treino de glúteos" title="Hip dips e musculação — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 ## O Que São Hip Dips (Anatomia Sem Enrolação)
@@ -60350,7 +60353,7 @@ Provavelmente está com o tronco muito vertical e joelhos indo muito à frente. 
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/exercicios-para-gluteo-medio-infographic.svg" alt="Infográfico sobre Exercícios para Glúteo Médio — Montinho Personal Trainer" title="Exercícios para Glúteo Médio — Os 6 Melhores" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/exercicios-para-gluteo-medio.webp" alt="Exercícios para glúteo médio: os melhores movimentos para estabilidade do quadril e estética" title="Exercícios para glúteo médio — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 ## Glúteo Médio vs Glúteo Máximo — Entenda a Diferença
@@ -60457,7 +60460,7 @@ Desenvolve o músculo na lateral — o que cria a curva lateral do glúteo. Em m
 Minimamente. O hip thrust é excelente para o máximo. Para o médio, use os exercícios deste artigo.`,
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
+    updatedAt: "2026-08-24",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["glúteo médio", "exercícios glúteo médio", "abdução quadril", "treino glúteo", "musculação feminina"],
@@ -61833,7 +61836,7 @@ Se você treina em Alphaville ou quer um acompanhamento online com programa pers
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-puxada-fechada-infographic.svg" alt="Infográfico sobre Como Fazer Puxada Fechada: Técnica e Diferença para a Puxada Aberta — Montinho Personal Trainer" title="Como Fazer Puxada Fechada: Técnica e Diferença para a Puxada Aberta" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-puxada-fechada.webp" alt="Como fazer puxada fechada: técnica correta e diferença para a puxada aberta no treino de costas" title="Puxada fechada: como fazer — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 ## O Que é a Puxada Fechada
@@ -61938,7 +61941,7 @@ A puxada fechada com pegada neutra é um exercício versátil, seguro para os om
 Atendo presencialmente em Alphaville e online para todo o Brasil. Se quiser um programa de costas estruturado com progressão inteligente, fale comigo — vamos montar juntos.`,
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
+    updatedAt: "2026-08-24",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["puxada fechada", "costas", "lat pulldown", "pegada neutra", "hipertrofia", "grande dorsal", "técnica"],
@@ -64770,7 +64773,7 @@ Quer um treino de braço personalizado com exercícios selecionados para o seu b
     metaDescription: "Guia completo da rosca martelo: técnica com halter e cabo, músculos trabalhados, diferença para a rosca direta e programação por objetivo.",
     author: "Montinho Personal Trainer",
     date: "2026-06-30",
-    updatedAt: "2026-06-30",
+    updatedAt: "2026-08-24",
     category: "Treinamento",
     readTime: "8 min",
     tags: ["rosca martelo", "bíceps", "braquial", "braquiorradial", "antebraço"],
@@ -64783,7 +64786,7 @@ Quer um treino de braço personalizado com exercícios selecionados para o seu b
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-rosca-martelo-infographic.svg" alt="Infográfico sobre Como Fazer Rosca Martelo: Guia Completo de Técnica — Montinho Personal Trainer" title="Como Fazer Rosca Martelo: Guia Completo de Técnica" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-rosca-martelo.webp" alt="Como fazer rosca martelo: técnica correta para bíceps e braquiorradial com halteres" title="Rosca martelo: como fazer — Montinho Personal Trainer Alphaville" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 ## Músculos Trabalhados na Rosca Martelo
@@ -76526,7 +76529,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Das redes econômicas às academias premium: um mapa honesto das principais academias de Alphaville para você escolher sem errar.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-08-24",
     readTime: "8 min",
     author: "Montinho",
     tags: ["academias em alphaville","alphaville","musculação","treino","onde treinar"],
@@ -76543,7 +76546,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Escolher errado a academia em <strong>Alphaville</strong> custa caro: plano anual pago, três semanas de treino e depois o cartão virando doação mensal para a rede. Você conhece alguém assim — ou já foi essa pessoa.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academias-em-alphaville-infographic.svg" alt="Infográfico sobre Academias em Alphaville: Guia Completo 2026 — Montinho Personal Trainer" title="Academias em Alphaville: Guia Completo 2026" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/academias-em-alphaville.webp" alt="Academias em Alphaville: guia completo com estrutura, preços e perfil de cada academia da região" title="Academias em Alphaville: guia completo — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>E o problema piora porque Alphaville tem <strong>muitas opções</strong>: da rede econômica ao clube premium, do templo da musculação pesada ao estúdio boutique. Sem critério, você escolhe pela fachada e desiste pela rotina.</p>
@@ -76828,7 +76831,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Um raio-x das academias em Alphaville e arredores — Tamboré, Barueri e Aldeia da Serra — para escolher pela rotina, não pela propaganda.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-08-24",
     readTime: "8 min",
     author: "Montinho",
     tags: ["academias perto de alphaville","alphaville","tamboré","musculação","treino"],
@@ -76845,7 +76848,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Buscar <strong>academia perto de Alphaville</strong> parece simples até você abrir o mapa: dezenas de opções entre Alphaville, <strong>Tamboré</strong>, Barueri e <strong>Aldeia da Serra</strong>. E escolher errado significa pagar por conveniência que não existe.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academias-perto-de-alphaville-infographic.svg" alt="Infográfico sobre Academias Perto de Alphaville: Melhores Opções — Montinho Personal Trainer" title="Academias Perto de Alphaville: Melhores Opções" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/academias-perto-de-alphaville.webp" alt="Academias perto de Alphaville: melhores opções em Barueri e Santana de Parnaíba" title="Academias perto de Alphaville — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>A armadilha clássica: assinar na academia "famosa" que fica a 20 minutos de casa. Nas primeiras semanas você vai. Depois o trânsito decide por você.</p>
@@ -88403,6 +88406,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Depois dos 60, a musculação deixa de ser estética e vira medicina preventiva: força, ossos, equilíbrio e independência. Veja como começar do zero com segurança, mesmo sem nunca ter pisado numa academia.",
     category: "Saúde",
     date: "2026-07-18",
+    updatedAt: "2026-08-24",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["musculação para idosos", "terceira idade", "sarcopenia", "saúde", "longevidade"],
@@ -88441,7 +88445,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se você passou dos 60 e está pensando em começar musculação, tenho uma boa notícia: você está olhando para a ferramenta mais poderosa que existe para envelhecer com força, autonomia e qualidade de vida. E uma notícia ainda melhor: nunca é tarde. O músculo responde ao treino em qualquer idade — aos 60, aos 70, aos 90.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/musculacao-apos-60-anos-infographic.svg" alt="Infográfico sobre Musculação Depois dos 60 Anos: Guia Para Começar com Segurança — Montinho Personal Trainer" title="Musculação Depois dos 60 Anos: Guia Para Começar com Seguran" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/musculacao-apos-60-anos.webp" alt="Musculação depois dos 60 anos: guia para começar com segurança e ganhar força e autonomia" title="Musculação depois dos 60 anos — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -100608,6 +100612,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Sim, dá para treinar braço em casa sem halteres — e com resultado. Aqui mostro os melhores exercícios de bíceps e tríceps com peso corporal e objetos domésticos, como organizar as séries e o que fazer para continuar evoluindo.",
     category: "Treino",
     date: "2026-08-01",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["treino de braço", "bíceps", "tríceps", "treino em casa", "peso corporal"],
@@ -100652,7 +100657,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Braço é provavelmente o grupo muscular que mais gente quer desenvolver — e, curiosamente, um dos que melhor respondem ao treino em casa. O tríceps, que representa cerca de dois terços do volume do braço, trabalha muito bem com o peso do corpo. O bíceps exige um pouco mais de improviso, mas nada que uma mochila, uma toalha e criatividade não resolvam. Neste artigo mostro como eu montaria um treino de braço em casa de verdade, sem promessas milagrosas e com progressão que funciona.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-de-braco-em-casa-infographic.svg" alt="Infográfico sobre Treino de Braço em Casa: Bíceps e Tríceps Sem Academia — Montinho Personal Trainer" title="Treino de Braço em Casa: Bíceps e Tríceps Sem Academia" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-de-braco-em-casa.webp" alt="Treino de braço em casa: exercícios para bíceps e tríceps sem academia e com progressão" title="Treino de braço em casa — Montinho Personal Trainer Alphaville" width="1086" height="1448" loading="lazy" decoding="async" style="width:100%;max-width:520px;height:auto;border-radius:8px;display:block;margin:0 auto;" />
 </figure>
 <h2>Antes de tudo: braço grande começa fora do braço</h2>
 <p>Uma verdade que pouca gente conta: os braços crescem muito com exercícios compostos. Flexões e mergulhos constroem tríceps; remadas e barras constroem bíceps. Se você faz só rosca e extensão, está deixando estímulo na mesa. Por isso, o treino de braço em casa ideal combina compostos pesados com isoladores bem executados — e conversa diretamente com o seu <a href="/blog/treino-em-casa-sem-equipamento">treino em casa sem equipamento</a> como um todo.</p>
@@ -100748,6 +100753,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Fazer 100 agachamentos por dia transforma o corpo? Depende do seu nível, do seu objetivo e de como você progride. Aqui trago números realistas, o que a ciência diz sobre frequência e volume, e por que qualidade vence quantidade.",
     category: "Treino",
     date: "2026-08-01",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["agachamento", "peso corporal", "treino de pernas", "volume de treino", "treino em casa"],
@@ -100792,7 +100798,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Quantos agachamentos por dia eu preciso fazer?" é uma das perguntas que mais recebo — e a resposta honesta é: depende do seu nível, do seu objetivo e, principalmente, de como você progride ao longo das semanas. Não existe número mágico. Mas existem faixas realistas, e é isso que vou te dar neste artigo: números concretos por objetivo, o que esperar deles e os erros que transformam o desafio dos "100 agachamentos por dia" em dor no joelho em vez de perna forte.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quantos-agachamentos-por-dia-infographic.svg" alt="Infográfico sobre Quantos Agachamentos Por Dia? A Resposta Honesta — Montinho Personal Trainer" title="Quantos Agachamentos Por Dia? A Resposta Honesta" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quantos-agachamentos-por-dia.webp" alt="Quantos agachamentos por dia fazer: progressão realista em vez de desafios de repetições" title="Quantos agachamentos por dia? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>A resposta rápida, por nível e objetivo</h2>
 <table>
