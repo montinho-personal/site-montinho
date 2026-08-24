@@ -70533,7 +70533,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     excerpt: "Ganhar músculo sem acumular gordura é possível — mas exige precisão na alimentação e no treino. Veja como estruturar cada variável para o resultado ideal.",
     category: "Treinamento",
     date: "2026-05-30",
-    updatedAt: "2026-05-30",
+    updatedAt: "2026-08-24",
     readTime: "8 min",
     author: "Montinho",
     tags: ["ganho de massa limpo", "recomposição corporal", "hipertrofia", "nutrição", "bulking limpo"],
@@ -70549,7 +70549,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>"Para crescer, tem que engordar." Você já ouviu isso — provavelmente de alguém com braço grande e cintura maior ainda. O mercado transformou o bulking numa licença para comer mal, e milhares de pessoas passam o ano trocando gordura por músculo e músculo por gordura, sem nunca sair do lugar.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-ganhar-massa-sem-ganhar-gordura-infographic.svg" alt="Infográfico sobre Como Ganhar Massa Muscular sem Ganhar Muita Gordura — Montinho Personal Trainer" title="Como Ganhar Massa Muscular sem Ganhar Muita Gordura" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-ganhar-massa-sem-ganhar-gordura.webp" alt="Como ganhar massa muscular sem ganhar muita gordura: superávit moderado e treino de força" title="Como ganhar massa muscular — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>A resposta direta: dá para ganhar músculo com um ganho de gordura tão pequeno que se torna irrelevante. E em alguns casos — iniciantes, quem tem sobrepeso, quem está voltando de pausa — dá até para ganhar músculo <strong>perdendo</strong> gordura ao mesmo tempo. É a chamada <strong>recomposição corporal</strong>, e ela não é mito. É questão de ponto de partida.</p>
