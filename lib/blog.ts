@@ -100471,6 +100471,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Costas é o grupo muscular mais difícil de treinar em casa — mas está longe de ser impossível. Neste guia mostro os exercícios que realmente funcionam sem equipamento, como improvisar cargas com o que você tem e como progredir semana a semana.",
     category: "Treino",
     date: "2026-08-01",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["treino de costas", "treino em casa", "exercícios sem equipamento", "remada", "peso corporal"],
@@ -100515,7 +100516,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Vou ser honesto logo de cara: costas é o grupo muscular mais difícil de treinar em casa sem equipamento. Peito tem flexão, perna tem agachamento, mas costas trabalha principalmente com movimentos de puxada — e puxar exige algo para puxar. Ainda assim, dá para fazer um treino de costas em casa que gera resultado real, desde que você escolha bem os exercícios, capriche na execução e aceite improvisar um pouco. Neste artigo mostro exatamente como eu montaria esse treino.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-de-costas-em-casa-infographic.svg" alt="Infográfico sobre Treino de Costas em Casa: Exercícios Sem Equipamento — Montinho Personal Trainer" title="Treino de Costas em Casa: Exercícios Sem Equipamento" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-de-costas-em-casa.webp" alt="Treino de costas em casa: exercícios sem equipamento e com elásticos para fortalecer as costas" title="Treino de costas em casa — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Por que treinar costas é diferente dos outros grupos</h2>
 <p>A musculatura das costas é composta principalmente pelo latíssimo do dorso (o famoso "dorsal"), trapézio, romboides e eretores da espinha. Esses músculos respondem a dois padrões de movimento: puxada vertical (como a barra fixa) e puxada horizontal (como a remada). Além deles, os eretores da espinha trabalham em extensão de tronco — e esses, sim, são fáceis de treinar só com o peso do corpo.</p>
@@ -100875,6 +100876,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Fibra é a aliada mais subestimada de quem quer emagrecer e cuidar da saúde. Aqui você encontra a lista dos alimentos mais ricos em fibra com quantidades reais, a diferença entre fibra solúvel e insolúvel e como aumentar o consumo sem sofrer.",
     category: "Nutrição",
     date: "2026-08-01",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["fibras", "alimentação saudável", "saciedade", "nutrição", "emagrecimento"],
@@ -100919,7 +100921,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se eu tivesse que apontar o nutriente mais subestimado por quem quer emagrecer, eu não hesitaria: fibra. Enquanto todo mundo discute proteína e corta carboidrato, a maioria dos brasileiros consome menos da metade da fibra recomendada por dia — e depois se pergunta por que sente fome o tempo todo na dieta. Neste artigo trago a lista dos alimentos realmente ricos em fibra, com quantidades de verdade, e como eu uso essa informação na prática, tanto na minha alimentação quanto na dos meus alunos.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/alimentos-ricos-em-fibra-infographic.svg" alt="Infográfico sobre Alimentos Ricos em Fibra: Lista Completa e Como Usar — Montinho Personal Trainer" title="Alimentos Ricos em Fibra: Lista Completa e Como Usar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/alimentos-ricos-em-fibra.webp" alt="Alimentos ricos em fibra: lista completa de fontes e como usar as fibras na saciedade" title="Alimentos ricos em fibra — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>O que a fibra faz por você (além de soltar o intestino)</h2>
 <p>Fibra alimentar é a parte dos vegetais que nosso corpo não digere. E é justamente por não ser digerida que ela faz tanta coisa boa:</p>
@@ -109007,6 +109009,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Apps de treino custam pouco, cabem no bolso e têm bibliotecas gigantes de exercícios. Mas será que funcionam de verdade? Analiso os prós reais, os limites que ninguém conta e para qual perfil cada opção faz sentido.",
     category: "Treino",
     date: "2026-08-13",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["app de treino", "aplicativo de academia", "treino online", "personal trainer", "tecnologia fitness"],
@@ -109051,7 +109054,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Aplicativo de treino funciona? A resposta honesta é: depende de quem está usando. Existem apps excelentes que entregam muito valor por R$20-50 por mês — e existe uma multidão de pessoas pagando assinatura de app sem treinar há três meses. Como personal, eu poderia simplesmente falar mal de aplicativo e puxar a sardinha para o meu lado. Não vou fazer isso. Vou fazer o que faço com meus alunos: colocar os fatos na mesa, os prós reais, os limites reais, e ajudar você a decidir o que faz sentido para o seu caso.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/app-de-treino-funciona-infographic.svg" alt="Infográfico sobre App de Treino Funciona? Prós, Contras e Para Quem Vale a Pena — Montinho Personal Trainer" title="App de Treino Funciona? Prós, Contras e Para Quem Vale a Pena" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/app-de-treino-funciona.webp" alt="App de treino funciona? Prós, contras e para quem vale o aplicativo ou a orientação individualizada" title="App de treino funciona? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>O que os apps de treino fazem bem</h2>
 <h3>1. Custo baixo</h3>
@@ -109134,6 +109137,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "As 'dobrinhas' nas costas e a região do sutiã incomodam muita gente — e a internet está cheia de exercícios milagrosos para elas. A verdade é menos glamourosa e mais eficaz: déficit calórico, treino de costas e postura. Explico o caminho completo.",
     category: "Emagrecimento",
     date: "2026-08-13",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["gordura nas costas", "emagrecimento", "gordura localizada", "treino de costas", "déficit calórico"],
@@ -109178,7 +109182,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>A gordura nas costas — as dobrinhas na linha do sutiã, os "pneuzinhos" laterais acima do quadril, aquele acúmulo perto da axila — está entre as queixas estéticas mais comuns que eu ouço, principalmente de mulheres. E está também entre as que mais atraem promessas vazias: "5 exercícios para eliminar a gordura das costas", "queime as dobrinhas em 2 semanas". Eu vou te contar como isso funciona de verdade, sem enrolação, porque já estive dos dois lados: cheguei a carregar 40 kg a mais e sei exatamente o que funcionou — e o que era perda de tempo.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/gordura-nas-costas-infographic.svg" alt="Infográfico sobre Gordura nas Costas: Como Perder de Verdade (Sem Cair em Promessa Milagrosa) — Montinho Personal Trainer" title="Gordura nas Costas: Como Perder de Verdade (Sem Cair em Promessa Milagrosa)" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/gordura-nas-costas.webp" alt="Gordura nas costas: como perder com déficit calórico e treino de costas para preencher a região" title="Gordura nas costas: como perder — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>A verdade número 1: não existe queima localizada</h2>
 <p>Nenhum exercício queima a gordura da região que ele trabalha. Remada não queima gordura das costas, assim como abdominal não queima gordura da barriga. Quando você treina um músculo, a energia vem de estoques do corpo inteiro, mobilizados pela corrente sanguínea — não da gordura que está por cima do músculo em ação. Isso é fisiologia básica e foi testado diretamente em estudos que treinaram um lado do corpo e mediram a gordura dos dois lados: a perda foi igual. Eu detalho essa ciência no artigo sobre <a href="/blog/gordura-localizada-mitos-e-fatos">gordura localizada: mitos e fatos</a>.</p>
@@ -109254,6 +109258,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "A papada tem várias causas — gordura corporal, genética, estrutura do queixo, idade e até postura. Explico o que a ciência diz sobre exercícios faciais (spoiler: a evidência é fraca), o que realmente reduz e quando o caminho é um especialista.",
     category: "Saúde",
     date: "2026-08-13",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["papada", "emagrecimento", "gordura no rosto", "ginástica facial", "estética"],
@@ -109298,7 +109303,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>A papada é uma das queixas estéticas que mais mexem com a autoestima — talvez porque, diferente da barriga, ela aparece em toda foto, toda videochamada, todo espelho. E é também um dos temas com mais promessa furada na internet: gadgets vibratórios, "ginástica facial milagrosa", cintas de queixo, cursos de exercícios que juram afinar o rosto em duas semanas. Vou te dar a visão honesta: o que causa a papada, o que exercício pode e não pode fazer por ela, e quando o caminho certo é outro profissional. Eu perdi 40 kg e vi meu rosto mudar completamente nesse processo — então esse assunto eu conheço por dentro e por fora.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-perder-papada-infographic.svg" alt="Infográfico sobre Papada: Exercício Ajuda a Perder? A Verdade Sem Filtro — Montinho Personal Trainer" title="Papada: Exercício Ajuda a Perder? A Verdade Sem Filtro" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-perder-papada.webp" alt="Como perder papada: fatores reais, o papel do emagrecimento e o limite do exercício facial" title="Papada: como perder — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>O que causa a papada (quase nunca é uma coisa só)</h2>
 <p>Papada é o acúmulo de volume — gordura e/ou pele — na região submentoniana, abaixo do queixo. As causas principais:</p>
@@ -109372,6 +109377,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Seu joelho estala quando você agacha e você já imaginou o pior? Calma. Na maioria dos casos, estalo sem dor é benigno. Explico quando é normal, quando investigar e por que fortalecer é melhor do que parar de treinar.",
     category: "Saúde",
     date: "2026-08-13",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["joelho estalando", "crepitação no joelho", "saúde articular", "dor no joelho", "prevenção de lesões"],
@@ -109416,7 +109422,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se eu ganhasse um real por cada aluno que chegou em mim dizendo “Montinho, meu joelho estala quando eu agacho, será que estou gastando a articulação?”, eu já tinha aposentado. É uma das perguntas mais comuns que escuto em Alphaville — de gente de 25 anos e de gente de 65. E a resposta curta, que talvez te surpreenda, é: na grande maioria dos casos, joelho estalando sem dor não é sinal de problema nenhum. Mas existe o outro lado da moeda, e é sobre ele que você precisa ficar atento. Neste artigo vou te mostrar a diferença entre o estalo benigno e o estalo que merece uma cadeira no consultório do ortopedista.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/joelho-estalando-e-normal-infographic.svg" alt="Infográfico sobre Joelho Estalando: É Normal ou Sinal de Problema? — Montinho Personal Trainer" title="Joelho Estalando: É Normal ou Sinal de Problema?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/joelho-estalando-e-normal.webp" alt="Joelho estalando é normal? Diferença entre crepitação benigna e sinais de alerta no joelho" title="Joelho estalando: é normal? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Por que o joelho estala?</h2>
 <p>O nome técnico do barulho articular é crepitação. E ela pode ter várias origens, quase todas inofensivas:</p>
@@ -109483,6 +109489,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Cãibra é aquela dor que chega sem pedir licença — no meio do treino ou às 3 da manhã. A ciência mudou de ideia sobre as causas, e a banana não é a heroína que te venderam. Explico o que realmente ajuda a prevenir.",
     category: "Saúde",
     date: "2026-08-13",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["cãibra", "cãibra muscular", "fadiga muscular", "hidratação", "prevenção"],
@@ -109527,7 +109534,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Poucas dores são tão democráticas quanto a cãibra. Pega o iniciante na primeira semana de treino, pega o maratonista no quilômetro 35, pega o executivo dormindo às três da manhã com a panturrilha em nó. Eu mesmo, na época em que estava 40 kg acima do peso e resolvi voltar a treinar, colecionei cãibras de panturrilha que me faziam pular da cama. E como quase todo mundo, eu acreditava na explicação clássica: “é falta de potássio, come uma banana”. Só que a ciência das últimas duas décadas conta uma história diferente — e entender essa história é o que realmente te ajuda a prevenir. Vamos lá.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/caibra-por-que-da-infographic.svg" alt="Infográfico sobre Cãibra: Por Que Dá e Como Evitar — Montinho Personal Trainer" title="Cãibra: Por Que Dá e Como Evitar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/caibra-por-que-da.webp" alt="Cãibra: por que dá, o papel da fadiga muscular e como evitar cãibras no treino e à noite" title="Cãibra: por que dá e como evitar — Montinho Personal Trainer Alphaville" width="1024" height="1536" loading="lazy" decoding="async" style="width:100%;max-width:520px;height:auto;border-radius:8px;display:block;margin:0 auto;" />
 </figure>
 <h2>O que é uma cãibra, afinal?</h2>
 <p>Cãibra é uma contração muscular involuntária, súbita e dolorosa, que endurece o músculo e não te deixa relaxá-lo pela vontade. Dura de segundos a alguns minutos e pode deixar o músculo dolorido por horas ou até dias. Os alvos preferidos são panturrilha, posterior de coxa e pé — músculos que cruzam duas articulações ou que trabalham encurtados com frequência.</p>
@@ -109703,6 +109710,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Torcer o tornozelo é comum — tratar mal é mais comum ainda. O protocolo mudou: gelo indiscriminado e repouso longo saíram de cena. Explico o PEACE & LOVE, quando procurar médico e como fortalecer para quebrar o ciclo das entorses de repetição.",
     category: "Saúde",
     date: "2026-08-13",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["entorse de tornozelo", "PEACE & LOVE", "propriocepção", "reabilitação", "prevenção de lesões"],
@@ -109747,7 +109755,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>O tornozelo virou para dentro, você sentiu aquela pontada, talvez até ouviu um estalo, e agora está com o pé inchado se perguntando o que fazer. A entorse de tornozelo é provavelmente a lesão musculoesquelética mais comum que existe — acontece descendo da calçada, jogando futebol com os amigos, pisando num buraco na corrida. E justamente por ser tão comum, é a lesão mais mal tratada que eu conheço: a maioria das pessoas coloca gelo dois dias, espera desinchar e volta à vida normal. Resultado? Tornozelo frouxo, instável, e a famosa entorse de repetição. Neste artigo vou te mostrar o que mudou no tratamento — porque mudou bastante — e como transformar a recuperação em um tornozelo mais forte do que era antes.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/entorse-de-tornozelo-infographic.svg" alt="Infográfico sobre Entorse de Tornozelo: Recuperação e Fortalecimento — Montinho Personal Trainer" title="Entorse de Tornozelo: Recuperação e Fortalecimento" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/entorse-de-tornozelo.webp" alt="Entorse de tornozelo: recuperação com protocolo PEACE & LOVE e fortalecimento com propriocepção" title="Entorse de tornozelo — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>O que é uma entorse e quais os graus</h2>
 <p>Entorse é o estiramento ou rompimento dos ligamentos que estabilizam a articulação, causado por um movimento além da amplitude normal — no tornozelo, o mecanismo clássico é a inversão (pé virando para dentro), que lesiona os ligamentos laterais. A gravidade é dividida em graus:</p>
@@ -109817,6 +109825,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Mão que formiga no supino, pé que dorme no spinning, dedos dormentes depois do treino de costas. Na maioria das vezes é compressão banal que passa em minutos — mas alguns padrões merecem investigação. Aprenda a diferenciar.",
     category: "Saúde",
     date: "2026-08-13",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["formigamento", "dormência", "túnel do carpo", "compressão nervosa", "treino seguro"],
@@ -109861,7 +109870,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Você está na terceira série de supino e os dedos mindinho e anular começam a formigar. Ou desce da bike do spinning com o pé dormente. Ou acorda de madrugada com a mão “morta” e precisa sacudi-la para voltar ao normal. Formigamento e dormência assustam porque a gente associa imediatamente a coisa grave — nervo, circulação, coluna. A boa notícia: no contexto do treino, a causa mais comum é compressão mecânica simples e temporária, que passa minutos depois de soltar a pegada ou mudar a posição. A notícia importante: existem padrões que <strong>não</strong> são banais e merecem investigação. Este artigo é para você aprender a separar um do outro — sem pânico e sem negligência.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/dormencia-e-formigamento-ao-treinar-infographic.svg" alt="Infográfico sobre Dormência e Formigamento ao Treinar: Quando se Preocupar — Montinho Personal Trainer" title="Dormência e Formigamento ao Treinar: Quando se Preocupar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/dormencia-e-formigamento-ao-treinar.webp" alt="Dormência e formigamento ao treinar: causas comuns de compressão e quando investigar com médico" title="Dormência e formigamento ao treinar — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Por que dá formigamento no treino?</h2>
 <p>Formigamento (o nome técnico é parestesia) acontece quando um nervo é comprimido, esticado ou fica temporariamente com irrigação reduzida. Os nervos que descem para as mãos e pés passam por túneis e desfiladeiros anatômicos apertados — punho, cotovelo, ombro, pelve — e o treino, com suas pegadas firmes e posições sustentadas, adora pressionar exatamente esses pontos. As situações clássicas:</p>
@@ -109925,6 +109934,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O supino inclinado é o exercício mais usado para enfatizar a porção superior do peitoral — e também um dos mais mal executados na academia. Aqui eu explico o ângulo ideal do banco, a diferença entre barra e halteres, os erros que travam seu progresso e como encaixar o movimento na sua rotina.",
     category: "Treino",
     date: "2026-08-18",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["supino inclinado", "peitoral", "técnica de exercício", "musculação", "treino de peito"],
@@ -109969,7 +109979,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>O supino inclinado é, para a maioria das pessoas, o exercício mais eficiente para dar volume à parte de cima do peitoral — aquela região que aparece na linha da clavícula e que muita gente reclama de não conseguir desenvolver. Só que na prática eu vejo, todo dia, alunos aqui em Alphaville regulando o banco em 45 graus, tirando o cotovelo de posição e transformando o movimento em um desenvolvimento de ombro disfarçado. Vamos arrumar isso.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-supino-inclinado-infographic.svg" alt="Infográfico sobre Como Fazer Supino Inclinado: Técnica e Ângulo Ideal — Montinho Personal Trainer" title="Como Fazer Supino Inclinado: Técnica e Ângulo Ideal" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-supino-inclinado.webp" alt="Como fazer supino inclinado: técnica correta e ângulo ideal para o peitoral superior" title="Supino inclinado: como fazer — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>O que é o supino inclinado e quais músculos ele trabalha</h2>
@@ -110104,6 +110114,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "A remada baixa é um dos melhores exercícios para construir costas — e um dos que mais vejo sendo feito com impulso de tronco e puxada de bíceps. Aqui eu destrincho a postura da coluna, a retração escapular, o que muda em cada pegada e como corrigir os erros mais frequentes.",
     category: "Treino",
     date: "2026-08-18",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["remada baixa", "costas", "técnica de exercício", "musculação", "dorsais"],
@@ -110148,7 +110159,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>A remada baixa — também chamada de remada sentada ou remada na polia baixa — é um dos exercícios mais completos para costas que existe. E também um dos que eu mais corrijo. O padrão é sempre o mesmo: a pessoa senta, coloca peso demais, joga o tronco para trás como se estivesse remando um barco a favor da correnteza e puxa tudo com o bíceps. Sai da série com o antebraço queimando e a dorsal intocada. Vamos resolver isso ponto a ponto.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-remada-baixa-infographic.svg" alt="Infográfico sobre Como Fazer Remada Baixa: Técnica e Erros Comuns — Montinho Personal Trainer" title="Como Fazer Remada Baixa: Técnica e Erros Comuns" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-remada-baixa.webp" alt="Como fazer remada baixa: técnica correta, pegadas e erros comuns no treino de costas" title="Remada baixa: como fazer — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>O que é a remada baixa e quais músculos ela trabalha</h2>
@@ -110274,6 +110285,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O agachamento frontal deixa o tronco mais ereto, exige mais do quadríceps e reduz o braço de alavanca sobre a lombar. Mas cobra mobilidade de punho, ombro e tornozelo. Aqui eu explico a técnica, o racking, para quem o exercício realmente serve e como progredir até ele.",
     category: "Treino",
     date: "2026-08-18",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["agachamento frontal", "pernas", "quadríceps", "técnica de exercício", "musculação"],
@@ -110318,7 +110330,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>O agachamento frontal tem fama de ser "o agachamento difícil", e em parte é verdade — ele expõe qualquer falta de mobilidade que você tenha. Mas é justamente por isso que ele é um dos exercícios mais honestos que existem: se a técnica quebra, a barra cai na frente e o movimento se interrompe sozinho. Nenhum outro agachamento avisa tão rápido quando você está errando.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-agachamento-frontal-infographic.svg" alt="Infográfico sobre Como Fazer Agachamento Frontal: Técnica e Para Quem Serve — Montinho Personal Trainer" title="Como Fazer Agachamento Frontal: Técnica e Para Quem Serve" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-agachamento-frontal.webp" alt="Como fazer agachamento frontal: técnica, racking e diferenças para o agachamento livre" title="Agachamento frontal: como fazer — Montinho Personal Trainer Alphaville" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>O que é o agachamento frontal e quais músculos ele trabalha</h2>
@@ -110471,6 +110483,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Todo mundo quer treinar o \"infra\". O problema é que o reto abdominal é um músculo só, e a diferença de ativação entre porções é bem menor do que a internet promete. Aqui eu mostro o que a evidência diz de verdade, quais exercícios enfatizam a região inferior e por que o percentual de gordura decide o resultado.",
     category: "Treino",
     date: "2026-08-18",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["abdômen inferior", "abdominal infra", "reto abdominal", "treino de abdômen", "musculação"],
@@ -110515,7 +110528,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Poucos assuntos geram tanta confusão na academia quanto o famoso "infra". A pergunta chega todo mês: qual exercício isola o abdômen inferior? A resposta honesta é que a pergunta parte de uma premissa errada — e entender isso vai te poupar muito tempo perdido em séries que não estavam levando você a lugar nenhum.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/abdomen-inferior-exercicios-infographic.svg" alt="Infográfico sobre Abdômen Inferior: A Verdade Sobre o "Infra" — Montinho Personal Trainer" title="Abdômen Inferior: A Verdade Sobre o "Infra"" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/abdomen-inferior-exercicios.webp" alt="Abdômen inferior: exercícios que enfatizam o infra e a verdade sobre isolar a região" title="Abdômen inferior: exercícios — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>O reto abdominal é um músculo só</h2>
@@ -110626,6 +110639,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "A cadeira adutora é cercada de promessa falsa: ela não seca a parte interna da coxa, porque redução localizada não existe. O que ela faz de verdade é fortalecer os adutores, um grupo importante para estabilidade de quadril e prevenção de lesão de virilha. Aqui está como usá-la bem.",
     category: "Treino",
     date: "2026-08-18",
+    updatedAt: "2026-08-24",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["cadeira adutora", "adutores", "parte interna da coxa", "técnica de exercício", "musculação"],
@@ -110670,7 +110684,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>A cadeira adutora é provavelmente o aparelho mais mal compreendido de qualquer academia. Ela é procurada por quem quer "secar a parte interna da coxa" e evitada por quem ouviu falar que é um exercício inútil. As duas visões estão erradas. Vamos separar o que ela faz do que ela nunca vai fazer.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/cadeira-adutora-parte-interna-coxa-infographic.svg" alt="Infográfico sobre Cadeira Adutora: Exercício Para Parte Interna da Coxa — Montinho Personal Trainer" title="Cadeira Adutora: Exercício Para Parte Interna da Coxa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/cadeira-adutora-parte-interna-coxa.webp" alt="Cadeira adutora: para que serve o exercício de parte interna da coxa e como executar" title="Cadeira adutora — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <h2>Que músculos a cadeira adutora trabalha</h2>
