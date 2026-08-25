@@ -16,6 +16,31 @@ export interface BlogPost {
   faq?: Array<{ question: string; answer: string }>;
 }
 
+/**
+ * Resolve a imagem de capa de um artigo a partir da primeira <img> do content.
+ * A capa é sempre a primeira imagem (foto real .webp/.jpg/.png quando existe,
+ * senão o infográfico .svg — a foto substitui o infográfico no mesmo lugar).
+ * Fallback: og-image.jpg padrão do site. Retorna URL absoluta.
+ */
+export function getPostCoverImage(post: BlogPost): {
+  url: string;
+  width?: number;
+  height?: number;
+} {
+  const m = post.content.match(/<img[^>]*\ssrc="(\/blog-images\/[^"]+)"[^>]*>/);
+  if (m) {
+    const tag = m[0];
+    const w = tag.match(/\swidth="(\d+)"/);
+    const h = tag.match(/\sheight="(\d+)"/);
+    return {
+      url: `${SITE_URL}${m[1]}`,
+      width: w ? Number(w[1]) : undefined,
+      height: h ? Number(h[1]) : undefined,
+    };
+  }
+  return { url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 };
+}
+
 export const BLOG_CATEGORIES = [
   "Todos",
   "Emagrecimento",

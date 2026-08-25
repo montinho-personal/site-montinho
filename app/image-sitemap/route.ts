@@ -1,17 +1,44 @@
-import { blogPosts, SITE_URL } from "@/lib/blog";
+import fs from "fs";
+import path from "path";
+import { blogPosts, getPostCoverImage, SITE_URL } from "@/lib/blog";
+
+function escapeXml(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
 
 export async function GET() {
+  const blogImagesDir = path.join(process.cwd(), "public", "blog-images");
+
   const urls = blogPosts.map((post) => {
-    const imgUrl = `${SITE_URL}/blog-images/${post.slug}-infographic.svg`;
     const pageUrl = `${SITE_URL}/blog/${post.slug}`;
-    const title = post.title.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    return `  <url>
-    <loc>${pageUrl}</loc>
-    <image:image>
-      <image:loc>${imgUrl}</image:loc>
+    const title = escapeXml(post.title);
+    const cover = getPostCoverImage(post);
+    const coverIsInfographic = cover.url.endsWith("-infographic.svg");
+
+    const images: string[] = [
+      `    <image:image>
+      <image:loc>${cover.url}</image:loc>
+      <image:title>${title}</image:title>
+      <image:caption>${coverIsInfographic ? "Infográfico: " : ""}${title} — Montinho Personal Trainer</image:caption>
+    </image:image>`,
+    ];
+
+    // Quando a capa é foto real, o infográfico (se o arquivo existir) também é
+    // conteúdo indexável do artigo — lista os dois.
+    if (!coverIsInfographic) {
+      const infographicFile = path.join(blogImagesDir, `${post.slug}-infographic.svg`);
+      if (fs.existsSync(infographicFile)) {
+        images.push(`    <image:image>
+      <image:loc>${SITE_URL}/blog-images/${post.slug}-infographic.svg</image:loc>
       <image:title>${title}</image:title>
       <image:caption>Infográfico: ${title} — Montinho Personal Trainer</image:caption>
-    </image:image>
+    </image:image>`);
+      }
+    }
+
+    return `  <url>
+    <loc>${pageUrl}</loc>
+${images.join("\n")}
   </url>`;
   });
 
