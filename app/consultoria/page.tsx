@@ -17,6 +17,9 @@ export const metadata: Metadata = {
       "Consultoria online de treino para todo o Brasil e personal trainer presencial em Alphaville. Treino personalizado e suporte diário no WhatsApp.",
     url: `${SITE_URL}/consultoria`,
     type: "website",
+    // O merge de metadata do Next é raso: definir openGraph aqui descarta o
+    // images do layout raiz, então a imagem padrão precisa ser redeclarada.
+    images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
   },
 };
 

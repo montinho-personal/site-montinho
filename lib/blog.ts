@@ -16,6 +16,53 @@ export interface BlogPost {
   faq?: Array<{ question: string; answer: string }>;
 }
 
+/**
+ * Resolve a imagem de compartilhamento de um artigo a partir do content.
+ *
+ * Usa a primeira imagem em formato raster (.webp/.jpg/.png) — normalmente a
+ * foto de capa, mas também vale quando a foto está no corpo e o infográfico
+ * ocupa o topo. SVG é ignorado de propósito: Facebook e WhatsApp não renderizam
+ * SVG em og:image e o Google não aceita SVG como imagem de artigo em rich
+ * results — nesses casos o og-image.jpg padrão do site rende um preview válido.
+ */
+export function getPostCoverImage(post: BlogPost): {
+  url: string;
+  width?: number;
+  height?: number;
+} {
+  const tags = post.content.match(/<img[^>]*\ssrc="\/blog-images\/[^"]+"[^>]*>/g) ?? [];
+
+  const pick = (tag: string, src: string) => {
+    const w = tag.match(/\swidth="(\d+)"/);
+    const h = tag.match(/\sheight="(\d+)"/);
+    return {
+      url: `${SITE_URL}${src}`,
+      width: w ? Number(w[1]) : undefined,
+      height: h ? Number(h[1]) : undefined,
+    };
+  };
+
+  // Imagem do PRÓPRIO artigo: o arquivo é nomeado pelo slug. Isso evita pegar
+  // miniaturas de outros artigos que aparecem em blocos de "leia também".
+  for (const tag of tags) {
+    const src = tag.match(/\ssrc="(\/blog-images\/[^"]+)"/)?.[1];
+    if (!src || !/\.(webp|jpe?g|png)$/i.test(src)) continue;
+    const file = src.split("/").pop() ?? "";
+    if (file.startsWith(`${post.slug}.`) || file.startsWith(`${post.slug}-`)) {
+      return pick(tag, src);
+    }
+  }
+
+  // Fallback: a primeira imagem do artigo, se for raster (nomes legados).
+  const first = tags[0];
+  const firstSrc = first?.match(/\ssrc="(\/blog-images\/[^"]+)"/)?.[1];
+  if (first && firstSrc && /\.(webp|jpe?g|png)$/i.test(firstSrc)) {
+    return pick(first, firstSrc);
+  }
+
+  return { url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 };
+}
+
 export const BLOG_CATEGORIES = [
   "Todos",
   "Emagrecimento",

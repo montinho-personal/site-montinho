@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { marked } from "marked";
-import { getBlogPost, getRelatedPosts, blogPosts, SITE_URL } from "@/lib/blog";
+import { getBlogPost, getRelatedPosts, getPostCoverImage, blogPosts, SITE_URL } from "@/lib/blog";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import ArticleReadTracker from "@/components/analytics/ArticleReadTracker";
@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return { title: "Artigo não encontrado" };
   const title = post.metaTitle || post.title;
   const description = post.metaDescription || post.excerpt;
+  const cover = getPostCoverImage(post);
   return {
     title,
     description,
@@ -38,11 +39,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.date,
       modifiedTime: post.updatedAt || post.date,
       authors: [post.author],
+      images: [{ url: cover.url, width: cover.width, height: cover.height, alt: title }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: [cover.url],
     },
   };
 }
@@ -55,12 +58,14 @@ export default async function BlogPost({ params }: Props) {
 
   const relatedPosts = getRelatedPosts(slug, post.category);
   const contentHtml = marked(post.content) as string;
+  const cover = getPostCoverImage(post);
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.metaTitle || post.title,
     description: post.metaDescription || post.excerpt,
+    image: [cover.url],
     author: {
       "@type": "Person",
       name: "Montinho",
