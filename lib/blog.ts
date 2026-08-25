@@ -19537,9 +19537,13 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-em-condominio-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, de acima do peso ao físico definido — Personal Trainer em Condomínio Alphaville" title="Personal Trainer em Condomínio Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-em-condominio-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer em Condomínio Alphaville: Método Profissional na Sua Academia — Montinho Personal Trainer" title="Personal Trainer em Condomínio Alphaville: Método Profission" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-em-condominio-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, de acima do peso ao físico definido — Personal Trainer em Condomínio Alphaville" title="Personal Trainer em Condomínio Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Personal Trainer em Condomínio Alphaville: acompanhamento presencial e online com quem vive o treino na prática.</figcaption>
 </figure>
+
 <h2>O problema de treinar sozinho na academia do condomínio</h2>
 <p>Sem acompanhamento profissional, o treino em academia de condomínio tende a cair em dois padrões: ou o morador faz sempre os mesmos exercícios com a mesma carga até parar de ter resultado, ou começa com entusiasmo e abandona por falta de progressão visível. Ambos os cenários têm a mesma causa: ausência de protocolo individualizado e progressão estruturada.</p>
 
@@ -19620,9 +19624,13 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-para-condominio-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, evolução de composição corporal — Personal Trainer para Condomínio Alphaville" title="Personal Trainer para Condomínio Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-para-condominio-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer para Condomínio Alphaville: Protocolo Adaptado ao Seu Espaço — Montinho Personal Trainer" title="Personal Trainer para Condomínio Alphaville: Protocolo Adapt" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-para-condominio-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, evolução de composição corporal — Personal Trainer para Condomínio Alphaville" title="Personal Trainer para Condomínio Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Personal Trainer para Condomínio Alphaville: acompanhamento presencial e online com quem vive o treino na prática.</figcaption>
 </figure>
+
 <h2>Adaptando o protocolo ao espaço disponível</h2>
 <p>Cada condomínio de Alphaville tem um perfil diferente de espaço fitness. Condomínios horizontais maiores, como os das primeiras fases de Alphaville, costumam ter academias bem equipadas com máquinas de musculação, halteres e equipamentos aeróbicos. Condomínios verticais ou menores têm espaços mais compactos. Em todos os casos, o protocolo começa pelo espaço — não por uma lista ideal de exercícios.</p>
 
@@ -20093,9 +20101,13 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-empresarial-18-do-forte-foto.webp" alt="Antes e depois de Montinho, personal trainer no Empresarial 18 do Forte, Alphaville: da vida sedentária ao físico atlético" title="Personal Trainer no Empresarial 18 do Forte — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-empresarial-18-do-forte-infographic.svg" alt="Infográfico sobre Personal Trainer Empresarial 18 do Forte: Treino para Quem Trabalha no Hub Corpo — Montinho Personal Trainer" title="Personal Trainer Empresarial 18 do Forte: Treino para Quem T" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-empresarial-18-do-forte-foto.webp" alt="Antes e depois de Montinho, personal trainer no Empresarial 18 do Forte, Alphaville: da vida sedentária ao físico atlético" title="Personal Trainer no Empresarial 18 do Forte — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Performance corporativa começa no corpo: a transformação do Montinho, personal trainer no 18 do Forte.</figcaption>
 </figure>
+
 <h2>Treino como ferramenta de performance corporativa</h2>
 <p>A relação entre exercício regular e performance profissional está bem documentada na literatura científica. Pesquisas publicadas no <em>British Journal of Sports Medicine</em> mostram que profissionais que treinam regularmente reportam mais energia durante o dia, melhor foco, maior resistência ao estresse e qualidade de sono superior. Esses benefícios se traduzem diretamente em performance — tomada de decisão, criatividade e produtividade. Veja os dados em <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">Haskell et al. (2009) no PubMed</a>.</p>
 
@@ -20238,9 +20250,13 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-academia-arena-18.webp" alt="Antes e depois de Montinho, personal trainer na Alameda Rio Negro, Alphaville: transformação corporal com treino orientado" title="Personal Trainer na Alameda Rio Negro — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alameda-rio-negro-infographic.svg" alt="Infográfico sobre Personal Trainer Alameda Rio Negro Alphaville: Treino para o Hub Corporativo — Montinho Personal Trainer" title="Personal Trainer Alameda Rio Negro Alphaville: Treino para o" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-academia-arena-18.webp" alt="Antes e depois de Montinho, personal trainer na Alameda Rio Negro, Alphaville: transformação corporal com treino orientado" title="Personal Trainer na Alameda Rio Negro — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Resultado real com método: o antes e depois do Montinho, personal trainer na Alameda Rio Negro.</figcaption>
 </figure>
+
 <h2>O profissional da Alameda Rio Negro e o tempo como recurso escasso</h2>
 <p>Quem trabalha na Alameda Rio Negro sabe que o tempo é o recurso mais escasso. Treinar sem objetivo claro, sem progressão e sem correção técnica é desperdiçar esse recurso. Com personal trainer e protocolo preciso, 50 minutos de treino produzem mais resultado do que 90 minutos de treino livre sem método. Cada sessão tem propósito — e o profissional que a conduz garante que nenhum minuto seja perdido.</p>
 
@@ -24202,8 +24218,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-empresarial-18-do-forte-foto.webp" alt="Antes e depois de Montinho, personal trainer em Cotia: da vida sedentária ao físico atlético com treino de força" title="Personal Trainer em Cotia — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A transformação do próprio Montinho, personal trainer que atende em Cotia e região.</figcaption>
+  <img src="/blog-images/personal-trainer-cotia-infographic.svg" alt="Infográfico sobre Personal Trainer em Cotia: Treinamento Especializado na Sua Região — Montinho Personal Trainer" title="Personal Trainer em Cotia: Treinamento Especializado na Sua " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 <h2>Diferenciais do acompanhamento personalizado em Cotia</h2>
 <p>Ao contrário de treinar sozinho ou seguir um programa genérico da internet, o acompanhamento personalizado oferece:</p>
@@ -24214,6 +24229,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li>Ajustes semanais conforme evolução</li>
   <li>Suporte e accountability — o principal motivo de desistência é a falta de estrutura</li>
 </ul>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-empresarial-18-do-forte-foto.webp" alt="Antes e depois de Montinho, personal trainer em Cotia: da vida sedentária ao físico atlético com treino de força" title="Personal Trainer em Cotia — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A transformação do próprio Montinho, personal trainer que atende em Cotia e região.</figcaption>
+</figure>
 
 <h2>Para quem é o atendimento em Cotia</h2>
 <ul>
@@ -24289,8 +24309,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-para-empresas-alphaville.webp" alt="Montinho, personal trainer em Alphaville, na área de musculação com halteres e máquinas — Personal Trainer para Empresas em Alphaville" title="Personal Trainer para Empresas em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Personal Trainer para Empresas em Alphaville: acompanhamento presencial e online com quem vive o treino na prática.</figcaption>
+  <img src="/blog-images/personal-trainer-para-empresas-alphaville-infographic.svg" alt="Infográfico sobre Personal Trainer para Empresas em Alphaville: Bem-Estar Corporativo — Montinho Personal Trainer" title="Personal Trainer para Empresas em Alphaville: Bem-Estar Corp" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 <h2>O retorno do investimento em saúde corporativa</h2>
 <p>Dados do setor mostram que programas de bem-estar corporativo geram:</p>
@@ -24301,6 +24320,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li>Aumento de satisfação e retenção de talentos</li>
 </ul>
 <p>Para empresas com equipes de 10 a 200 pessoas, o ROI de programas estruturados de atividade física é positivo em 12–24 meses.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-para-empresas-alphaville.webp" alt="Montinho, personal trainer em Alphaville, na área de musculação com halteres e máquinas — Personal Trainer para Empresas em Alphaville" title="Personal Trainer para Empresas em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Personal Trainer para Empresas em Alphaville: acompanhamento presencial e online com quem vive o treino na prática.</figcaption>
+</figure>
 
 <h2>Programas disponíveis para empresas em Alphaville</h2>
 
@@ -64300,8 +64324,7 @@ A estratégia proteína-primeiro funciona sem chamar atenção. Pedir a proteín
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-jandira.webp" alt="Antes e depois de Montinho, personal trainer em Jandira, da vida sedentária ao físico atlético — Personal Trainer em Jandira" title="Personal Trainer em Jandira — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Personal Trainer em Jandira: acompanhamento presencial e online com quem vive o treino na prática.</figcaption>
+  <img src="/blog-images/personal-trainer-jandira-infographic.svg" alt="Infográfico sobre Personal Trainer em Jandira — Montinho Personal Trainer" title="Personal Trainer em Jandira: Acompanhamento Online e Presencial" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 ## Jandira e a proximidade com Alphaville
@@ -64392,6 +64415,11 @@ O primeiro passo é uma conversa. Sem compromisso, sem taxa de inscrição. O ob
 Entre em contato pelo [WhatsApp](https://wa.me/5511940779041) e agende a sua avaliação inicial gratuita. Atendimento para moradores de Jandira na modalidade presencial em Alphaville ou online para qualquer cidade do Brasil.
 
 <section class="faq-section">
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-jandira.webp" alt="Antes e depois de Montinho, personal trainer em Jandira, da vida sedentária ao físico atlético — Personal Trainer em Jandira" title="Personal Trainer em Jandira — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Personal Trainer em Jandira: acompanhamento presencial e online com quem vive o treino na prática.</figcaption>
+</figure>
+
 <h2>Perguntas Frequentes</h2>
 `,
     faq: [
@@ -64421,8 +64449,7 @@ Entre em contato pelo [WhatsApp](https://wa.me/5511940779041) e agende a sua ava
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-itapevi.webp" alt="Antes e depois de Montinho, personal trainer em Itapevi, de acima do peso ao físico definido — Personal Trainer em Itapevi" title="Personal Trainer em Itapevi — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Personal Trainer em Itapevi: acompanhamento presencial e online com quem vive o treino na prática.</figcaption>
+  <img src="/blog-images/personal-trainer-itapevi-infographic.svg" alt="Infográfico sobre Personal Trainer em Itapevi — Montinho Personal Trainer" title="Personal Trainer em Itapevi: Acompanhamento Online e Presencial" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 ## Itapevi e o acesso à região de Alphaville
@@ -64510,6 +64537,11 @@ Antes de qualquer coisa, uma conversa. O objetivo é entender o seu caso, o que 
 Entre em contato pelo [WhatsApp](https://wa.me/5511940779041). O atendimento para moradores de Itapevi acontece de forma presencial em Alphaville ou 100% online. A avaliação inicial é gratuita.
 
 <section class="faq-section">
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-itapevi.webp" alt="Antes e depois de Montinho, personal trainer em Itapevi, de acima do peso ao físico definido — Personal Trainer em Itapevi" title="Personal Trainer em Itapevi — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Personal Trainer em Itapevi: acompanhamento presencial e online com quem vive o treino na prática.</figcaption>
+</figure>
+
 <h2>Perguntas Frequentes</h2>
 `,
     faq: [
@@ -77399,14 +77431,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você busca a <strong>melhor academia de Alphaville</strong> porque já sabe o custo de errar: matrícula, fidelidade, três semanas de empolgação — e um plano parado no cartão de crédito.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/arena-18-alphaville.webp" alt="Montinho, personal trainer em Alphaville, na área de musculação de uma das melhores academias da região" title="Qual a Melhor Academia de Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Estrutura, ambiente e público: o que define a melhor academia de Alphaville para o seu perfil.</figcaption>
+  <img src="/blog-images/melhor-academia-de-alphaville-infographic.svg" alt="Infográfico sobre Qual a Melhor Academia de Alphaville? Análise Honesta — Montinho Personal Trainer" title="Qual a Melhor Academia de Alphaville? Análise Honesta" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>E a região não facilita: entre Tamboré, Alameda Rio Negro e o entorno do <strong>Iguatemi Alphaville</strong>, há academia low cost, premium e templo de musculação, cada uma jurando ser a melhor.</p>
 <p>Aqui vai uma análise honesta, sem ranking inventado: <strong>não existe "a melhor academia de Alphaville" — existe a melhor para o seu objetivo.</strong> E este guia te ajuda a encontrá-la em minutos.</p>
 <h2>Resposta direta: a melhor academia de Alphaville por objetivo</h2>
 <p><strong>Para custo-benefício:</strong> redes low cost como <strong>Smart Fit e Bluefit</strong>. <strong>Para experiência premium:</strong> <strong>Bodytech e Bio Ritmo</strong>, com aulas e serviços agregados. <strong>Para musculação pesada e cultura bodybuilding:</strong> casas como <strong>Ironberg e NitroGym</strong>. Valores, unidades e horários mudam — <strong>consulte o site oficial ou a unidade para informações atualizadas</strong>.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/arena-18-alphaville.webp" alt="Montinho, personal trainer em Alphaville, na área de musculação de uma das melhores academias da região" title="Qual a Melhor Academia de Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Estrutura, ambiente e público: o que define a melhor academia de Alphaville para o seu perfil.</figcaption>
+</figure>
+
 <h2>Os três perfis de academia em Alphaville</h2>
 <h3>Low cost: pagar pouco e treinar com autonomia</h3>
 <p>As redes econômicas entregam <strong>musculação e cardio</strong> com mensalidade acessível e modelo enxuto. Perfeitas para quem já sabe treinar (ou tem quem monte o treino) e quer praticidade no trajeto — especialmente para quem circula pela <strong>Castelo Branco</strong> entre Barueri e Alphaville.</p>
@@ -77477,14 +77513,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Escolher a <strong>melhor academia de Barueri</strong> parece simples até você pesquisar: dezenas de opções entre o Centro, Tamboré e a divisa com Alphaville — e todas prometem ser a ideal.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/melhor-academia-de-barueri-foto.webp" alt="Montinho, personal trainer em Barueri, na área de musculação com halteres e máquinas de academia da região" title="Qual a Melhor Academia de Barueri — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Escolha pela rotina, não pela marca: o que faz uma academia de Barueri funcionar para você.</figcaption>
+  <img src="/blog-images/melhor-academia-de-barueri-infographic.svg" alt="Infográfico sobre Qual a Melhor Academia de Barueri? Guia de Escolha — Montinho Personal Trainer" title="Qual a Melhor Academia de Barueri? Guia de Escolha" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>Escolher errado custa caro: plano com fidelidade, trajeto que não cabe na rotina, horário de pico insuportável depois do expediente. Resultado? Desistência em poucas semanas e a sensação de que "academia não é para mim".</p>
 <p>É para quebrar esse ciclo que existe este guia: uma análise honesta, por objetivo e por região da cidade — sem ranking inventado, sem nota mágica.</p>
 <h2>Resposta direta: a melhor academia de Barueri por perfil</h2>
 <p><strong>Para economizar:</strong> redes low cost como <strong>Smart Fit e Bluefit</strong>, presentes na região. <strong>Para experiência premium:</strong> redes como <strong>Bodytech e Bio Ritmo</strong>, mais comuns no eixo Alphaville/Tamboré. <strong>Para musculação pesada:</strong> casas com cultura bodybuilding, como <strong>Ironberg e NitroGym</strong>, no entorno de Alphaville. Unidades, planos e valores mudam — <strong>consulte o site oficial ou a unidade para informações atualizadas</strong>.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/melhor-academia-de-barueri-foto.webp" alt="Montinho, personal trainer em Barueri, na área de musculação com halteres e máquinas de academia da região" title="Qual a Melhor Academia de Barueri — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Escolha pela rotina, não pela marca: o que faz uma academia de Barueri funcionar para você.</figcaption>
+</figure>
+
 <h2>Escolha primeiro pela sua rotina, depois pela marca</h2>
 <h3>Quem treina perto do Centro de Barueri</h3>
 <p>O <strong>Centro de Barueri</strong> e o entorno da <strong>Estação Barueri (CPTM Linha 8)</strong> concentram opções econômicas e intermediárias. Se você usa o trem todos os dias, uma academia nesse eixo elimina a maior causa de desistência: o deslocamento.</p>
@@ -77554,14 +77594,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Escolher errado a academia em <strong>Alphaville</strong> custa caro: plano anual travado, deslocamento que não fecha com sua rotina e, no fim, mais uma matrícula abandonada em março.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/10-melhores-academias-de-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, da adolescência ao físico atual — 10 Melhores Academias de Alphaville em 2026" title="10 Melhores Academias de Alphaville em 2026 — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">10 Melhores Academias de Alphaville em 2026: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/10-melhores-academias-de-alphaville-infographic.svg" alt="Infográfico sobre 10 Melhores Academias de Alphaville em 2026 — Montinho Personal Trainer" title="10 Melhores Academias de Alphaville em 2026" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>E o problema é real — a região tem dezenas de opções, do low-cost ao ultra premium, espalhadas entre o <strong>Centro Industrial e Empresarial</strong>, <strong>Tamboré</strong> e a região da <strong>Alameda Rio Negro</strong>. Sem critério, você escolhe pelo marketing, não pelo que serve para você.</p>
 <p>Este guia resolve isso. Como personal trainer que atua há anos em Alphaville, organizei as <strong>10 melhores academias de Alphaville</strong> por critérios transparentes: estrutura, proposta e perfil de público. <strong>Academia boa não é a mais famosa — é a que você consegue frequentar 4 vezes por semana.</strong></p>
 <h2>Resposta rápida: as 10 melhores academias de Alphaville</h2>
 <p>Em resumo: <strong>Smart Fit</strong> e <strong>Bluefit</strong> para custo-benefício; <strong>Bodytech</strong> e <strong>Bio Ritmo</strong> para experiência premium; <strong>Ironberg</strong> para musculação séria; <strong>Gaviões</strong> e <strong>NitroGym</strong> para treino pesado com preço intermediário; <strong>Scelta</strong> e <strong>24 Wellness</strong> para quem quer serviço diferenciado; <strong>4Perform</strong> para treinamento funcional e performance. Sempre confirme valores e horários no site oficial ou na unidade.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/10-melhores-academias-de-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, da adolescência ao físico atual — 10 Melhores Academias de Alphaville em 2026" title="10 Melhores Academias de Alphaville em 2026 — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">10 Melhores Academias de Alphaville em 2026: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Como este ranking foi feito (e por que ele é diferente)</h2>
 <p>Nada de nota inventada. Esta é uma <strong>análise editorial</strong> minha, Montinho, baseada no que vejo atendendo alunos na região: proposta de cada academia, tipo de estrutura e para quem ela funciona melhor. Preços e horários mudam — <strong>consulte sempre o site oficial ou a unidade para valores atualizados</strong>.</p>
 <h2>As 10 melhores academias de Alphaville em 2026</h2>
@@ -79659,14 +79703,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Quem pesquisa <strong>Academia Gaviões em Alphaville</strong> geralmente quer uma coisa: treinar de verdade. E carrega um medo específico — trocar de academia e cair de novo num lugar onde musculação é coadjuvante.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-gavioes-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, transformação corporal com musculação — Academia Gaviões em Alphaville" title="Academia Gaviões em Alphaville — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia Gaviões em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-gavioes-alphaville-infographic.svg" alt="Infográfico sobre Academia Gaviões em Alphaville: O Que Esperar — Montinho Personal Trainer" title="Academia Gaviões em Alphaville: O Que Esperar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>Esse medo custa caro: cada troca errada consome matrícula, adaptação e semanas de motivação. E motivação, depois dos 30, é um recurso que ninguém quer desperdiçar.</p>
 <p>Eu sou o Montinho, personal trainer em <strong>Alphaville, Barueri e Santana de Parnaíba</strong>. Atendo alunos em academias de todos os perfis da região, e aqui está o que você pode esperar — sem marketing — de uma Gaviões.</p>
 <h2>Resposta direta: o que esperar da Gaviões</h2>
 <p><strong>A Gaviões é uma rede paulista com identidade forte em musculação: ambiente de treino raiz, foco em hipertrofia e comunidade que leva o ferro a sério.</strong> É indicada para quem quer profundidade em musculação. Quem procura clube completo, com dezenas de modalidades e serviços de conveniência, encontrará propostas mais aderentes nas redes premium generalistas.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-gavioes-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, transformação corporal com musculação — Academia Gaviões em Alphaville" title="Academia Gaviões em Alphaville — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia Gaviões em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>A proposta da Gaviões: musculação como identidade</h2>
 <p>Enquanto muitas redes tentam agradar todos os públicos, a Gaviões cresceu em São Paulo fazendo o oposto: <strong>assumir a musculação como núcleo da marca</strong>. Isso cria um efeito poderoso — quem entra sabe o que veio fazer, e o salão reflete isso.</p>
 <p>Para a região de Alphaville, isso preenche um nicho claro: o morador do <strong>Tamboré</strong> ou da <strong>Fazendinha (Santana de Parnaíba)</strong> que já passou por academias genéricas, o executivo do <strong>Centro Industrial e Empresarial</strong> que quer treino denso em pouco tempo, e quem vem do eixo da <strong>Castelo Branco</strong> buscando ambiente com cultura de treino.</p>
@@ -79834,8 +79882,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você já pagou plano de academia que virou doação mensal? Em Alphaville, onde a rotina de <strong>executivos e famílias de condomínio</strong> é apertada, esse é o erro mais caro do fitness.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/arena-18-alphaville.webp" alt="Montinho Personal Trainer na Arena 18 Alphaville: área de musculação com halteres, máquinas e vista para a cidade" title="Arena 18 Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino na Arena 18 Alphaville: estrutura de musculação e ambiente da academia.</figcaption>
+  <img src="/blog-images/arena-18-alphaville-infographic.svg" alt="Infográfico sobre Arena 18 Alphaville: O Que Esperar — Montinho Personal Trainer" title="Arena 18 Alphaville: O Que Esperar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>E o ciclo se repete: matrícula empolgada, três semanas de treino, uma viagem a trabalho, e a academia — seja na <strong>Alameda Rio Negro</strong> ou no <strong>Tamboré</strong> — vira lembrança no extrato do cartão.</p>
@@ -79843,6 +79890,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Arena 18: resposta direta</h2>
 <p><strong>Resumo:</strong> a Arena 18 é uma academia local de Alphaville. Por não ser uma rede nacional com padrão público amplamente conhecido, o caminho honesto é: <strong>verifique diretamente com a unidade</strong> estrutura, modalidades, planos e horários — e use os critérios deste artigo para avaliar se a proposta combina com seu perfil.</p>
 <p><strong>Academia não se escolhe por fama; se escolhe por encaixe.</strong> E encaixe se descobre na visita, não no Instagram.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/arena-18-alphaville.webp" alt="Montinho Personal Trainer na Arena 18 Alphaville: área de musculação com halteres, máquinas e vista para a cidade" title="Arena 18 Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino na Arena 18 Alphaville: estrutura de musculação e ambiente da academia.</figcaption>
+</figure>
+
 <h2>O que uma academia local de Alphaville costuma oferecer</h2>
 <p>Academias independentes da região tendem a apostar em dois trunfos que as redes têm dificuldade de copiar: <strong>proximidade</strong> (física e humana) e <strong>ambiente estável</strong>, com menos rotatividade de alunos e equipe.</p>
 <p>Para quem mora nos residenciais de Alphaville ou trabalha no <strong>Centro Industrial e Empresarial</strong>, treinar a cinco minutos de casa vale mais que qualquer equipamento importado do outro lado da <strong>Castelo Branco</strong>.</p>
@@ -80001,8 +80053,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Pagar academia e treinar sem direção é como ter carro potente e dirigir em círculos: gasta combustível, não chega a lugar nenhum. Em Alphaville, onde o tempo do <strong>executivo</strong> vale ouro, esse desperdício dói em dobro.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/4perform-alphaville.webp" alt="Montinho, personal trainer em Alphaville, em pose no espelho da academia mostrando o desenvolvimento das costas — 4Perform Alphaville" title="4Perform Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">4Perform Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/4perform-alphaville-infographic.svg" alt="Infográfico sobre 4Perform Alphaville: Treinamento de Performance — Montinho Personal Trainer" title="4Perform Alphaville: Treinamento de Performance" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>E a frustração cresce: meses de esteira e máquinas aleatórias, zero mudança no espelho, e a conclusão errada de que "academia não funciona para mim".</p>
@@ -80010,6 +80061,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>4Perform em resumo: o que é um centro de performance?</h2>
 <p><strong>Resposta direta:</strong> a 4Perform se insere no modelo de <strong>centro de treinamento de performance</strong> — espaços em que o produto principal não é o acesso livre às máquinas, mas o <strong>treino orientado</strong>, geralmente com sessões programadas e acompanhamento mais próximo que o de uma academia tradicional. Detalhes de metodologia, turmas, planos e horários? <strong>Consulte a unidade</strong> — cada centro tem seu formato.</p>
 <p>Como se trata de um espaço local, e não de uma rede com padrão amplamente documentado, <strong>verifique diretamente com a unidade</strong> como funcionam avaliação inicial, tamanho das turmas e progressão.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/4perform-alphaville.webp" alt="Montinho, personal trainer em Alphaville, em pose no espelho da academia mostrando o desenvolvimento das costas — 4Perform Alphaville" title="4Perform Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">4Perform Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Para quem o modelo de performance faz sentido</h2>
 <p>O público típico desse formato na região — entre o <strong>Tamboré</strong>, a <strong>Alameda Rio Negro</strong> e os condomínios de Alphaville — é quem já entendeu que <strong>estrutura sem método é enfeite</strong>.</p>
 <h3>Prós honestos, por perfil</h3>
@@ -80246,14 +80302,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você trabalha no <strong>Alphaville Centro Industrial e Empresarial</strong>, sai tarde, chega em reunião cedo — e a academia fecha justamente quando você finalmente consegue treinar. Resultado: mais uma semana sem treino.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/24-wellness-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, da adolescência ao físico atual — 24 Wellness Alphaville" title="24 Wellness Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">24 Wellness Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/24-wellness-alphaville-infographic.svg" alt="Infográfico sobre 24 Wellness Alphaville: Análise Completa — Montinho Personal Trainer" title="24 Wellness Alphaville: Análise Completa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>É assim que a maioria das matrículas morre na região: não por falta de vontade, mas por <strong>incompatibilidade de agenda</strong>. Você paga, não usa, se frustra e cancela. Dinheiro perdido e meta adiada.</p>
 <p>A proposta de uma academia 24 horas, como a <strong>24 Wellness em Alphaville</strong>, ataca exatamente essa dor. Mas será que faz sentido para o seu perfil? É isso que esta análise responde — com honestidade, sem promessa vazia.</p>
 <h2>24 Wellness Alphaville: resposta direta</h2>
 <p>A <strong>24 Wellness</strong> se posiciona no formato de <strong>academia com acesso ampliado</strong>, voltada a quem precisa de flexibilidade total de horário. Para executivos e moradores de condomínios de Alphaville e Tamboré com rotina imprevisível, o modelo pode ser a diferença entre treinar com constância ou desistir. Detalhes de estrutura, planos, horários e aulas variam: <strong>consulte o site oficial ou visite a unidade</strong> para confirmar as condições atuais.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/24-wellness-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, da adolescência ao físico atual — 24 Wellness Alphaville" title="24 Wellness Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">24 Wellness Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>O que significa, na prática, uma academia 24 horas?</h2>
 <p>O modelo 24h nasceu para resolver um problema simples: a vida real não cabe no horário comercial. Quem mora perto da <strong>Alameda Rio Negro</strong> ou trabalha em Tamboré sabe que o trânsito da <strong>Rodovia Castelo Branco</strong> pode transformar o "treino das 19h" em treino nenhum.</p>
 <p>Em geral, academias desse formato funcionam com <strong>acesso autônomo</strong> em horários alternativos: você entra com credencial ou aplicativo e treina por conta própria. Nos horários de pico, costuma haver equipe presente; de madrugada, o suporte tende a ser reduzido.</p>
@@ -80944,14 +81004,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Tem gente que entra numa academia comum e sente que falta alma: música morna, todo mundo no celular, ninguém treinando de verdade. Se você já sentiu isso, sabe que <strong>ambiente também é equipamento</strong>.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-gavioes-barueri.webp" alt="Montinho, personal trainer em Barueri, em selfie mantendo o físico durante viagem à praia — Academia Gaviões em Barueri" title="Academia Gaviões em Barueri — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia Gaviões em Barueri: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-gavioes-barueri-infographic.svg" alt="Infográfico sobre Academia Gaviões em Barueri: Análise — Montinho Personal Trainer" title="Academia Gaviões em Barueri: Análise" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>Só que o oposto também assusta: entrar num templo da musculação sem saber se você "pertence" ali. Escolher errado nos dois sentidos gera o mesmo fim — desistência e plano pago à toa.</p>
 <p>Eu sou o Montinho, personal trainer em Alphaville, Barueri e Santana de Parnaíba, e nesta análise explico o que a <strong>Academia Gaviões em Barueri</strong> representa, para quem ela é um lar e para quem ela é um susto.</p>
 <h2>Resposta direta: para quem é a Gaviões em Barueri</h2>
 <p><strong>A Gaviões é para quem leva musculação a sério — ou quer levar.</strong> A marca é conhecida na Grande São Paulo pela cultura de treino pesado e comunidade forte de praticantes, ligada ao universo do fisiculturismo. Se você busca ambiente que respira ferro, é candidata forte. Se busca academia generalista e discreta, talvez prefira uma rede convencional.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-gavioes-barueri.webp" alt="Montinho, personal trainer em Barueri, em selfie mantendo o físico durante viagem à praia — Academia Gaviões em Barueri" title="Academia Gaviões em Barueri — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia Gaviões em Barueri: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>A proposta: cultura de musculação raiz</h2>
 <p>Enquanto as redes low-cost vendem conveniência, a <strong>Gaviões vende identidade</strong>. A marca construiu reputação na região metropolitana de São Paulo como academia "raiz": foco em musculação, público engajado e clima de quem vai lá para treinar — não para passar o tempo.</p>
 <p>Em Barueri, isso cria um contraste interessante com o perfil corporativo de <strong>Alphaville e Tamboré</strong>: executivo de dia, maromba à noite. E para quem mora perto do <strong>Centro de Barueri</strong> ou usa a <strong>Estação Barueri (CPTM Linha 8)</strong>, é uma alternativa de personalidade num mar de academias padronizadas.</p>
@@ -81952,14 +82016,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você sai da empresa no <strong>Centro Industrial e Empresarial de Alphaville</strong> tarde da noite, ou acorda antes do sol para fugir da <strong>Castelo Branco</strong> lotada — e a academia está fechada. Resultado: o treino vira a primeira coisa a ser cortada da agenda.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-24-horas-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, transformação corporal com musculação — Academia 24 Horas em Alphaville" title="Academia 24 Horas em Alphaville — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia 24 Horas em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-24-horas-alphaville-infographic.svg" alt="Infográfico sobre Academia 24 Horas em Alphaville: Opções e Guia — Montinho Personal Trainer" title="Academia 24 Horas em Alphaville: Opções e Guia" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>E aqui mora o perigo: cada semana sem treinar cobra juros. A constância desaba, a motivação vai junto e a mensalidade vira doação. <strong>Academia fechada no seu horário é o jeito mais caro de não treinar.</strong></p>
 <p>A boa notícia: existe caminho. Neste guia você vai entender como funciona o modelo de <strong>academia 24 horas em Alphaville</strong>, quais tipos de rede costumam oferecer acesso estendido e como avaliar se a unidade realmente atende sua rotina.</p>
 <h2>Resposta direta: existe academia 24 horas em Alphaville?</h2>
 <p>Sim, o modelo de <strong>acesso 24 horas ou horário estendido</strong> existe na região de Alphaville e Tamboré, geralmente em unidades de redes low-cost com planos de acesso ampliado ou em academias de autoatendimento. Como horários mudam com frequência, <strong>confirme sempre no site oficial ou na unidade</strong> antes de assinar o plano.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-24-horas-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, transformação corporal com musculação — Academia 24 Horas em Alphaville" title="Academia 24 Horas em Alphaville — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia 24 Horas em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Quem precisa de academia 24 horas? (Provavelmente você)</h2>
 <p>Alphaville tem um perfil claro: <strong>executivos com agenda imprevisível</strong>, moradores de condomínio que querem treinar antes do trânsito e profissionais de escala. Para esse público, o horário comercial é o pior horário possível.</p>
 <p>Treinar às 5h30 ou às 23h tem um bônus escondido: <strong>academia vazia é academia mais eficiente</strong>. Sem fila no agachamento, sem revezamento de banco, treino de 50 minutos que rende como 90.</p>
@@ -82031,14 +82099,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Barueri é uma cidade que não para: turnos em Tamboré, plantões, comércio no <strong>Centro de Barueri</strong>, gente descendo da <strong>Estação Barueri (CPTM Linha 8)</strong> depois das 22h. Mas a maioria das academias para — e o seu treino para junto.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-24-horas-barueri.webp" alt="Montinho, personal trainer em Barueri, executando exercício em máquina de academia — Academia 24 Horas em Barueri" title="Academia 24 Horas em Barueri — Montinho Personal Trainer" width="1600" height="1067" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia 24 Horas em Barueri: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-24-horas-barueri-infographic.svg" alt="Infográfico sobre Academia 24 Horas em Barueri: Onde Treinar de Madrugada — Montinho Personal Trainer" title="Academia 24 Horas em Barueri: Onde Treinar de Madrugada" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>O ciclo é conhecido: você paga a mensalidade, o horário nunca fecha com o seu, as faltas se acumulam e em três meses você cancela se sentindo culpado. <strong>Não foi você que desistiu da academia; foi a academia que desistiu do seu horário.</strong></p>
 <p>Este guia mostra como encontrar <strong>academia 24 horas em Barueri</strong> (ou com horário estendido de verdade), o que verificar antes de assinar e como treinar bem quando não há professor na sala.</p>
 <h2>Resposta direta</h2>
 <p>Em Barueri, o acesso 24 horas ou estendido aparece principalmente em <strong>redes low-cost com planos ampliados</strong> e em <strong>academias de autoatendimento</strong>, concentradas em áreas de grande circulação como o Centro, o entorno da estação da CPTM e Tamboré. Horários mudam com frequência: <strong>confirme sempre no site oficial ou na unidade</strong>.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-24-horas-barueri.webp" alt="Montinho, personal trainer em Barueri, executando exercício em máquina de academia — Academia 24 Horas em Barueri" title="Academia 24 Horas em Barueri — Montinho Personal Trainer" width="1600" height="1067" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia 24 Horas em Barueri: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>O público que treina fora de hora em Barueri</h2>
 <p>Barueri concentra centros empresariais, logística e comércio — ou seja, <strong>muita gente em escala e turno</strong>. Somam-se os executivos de Alphaville e Tamboré que preferem treinar antes da <strong>Castelo Branco</strong> travar.</p>
 <p>Para todos eles, vale a mesma regra: <strong>o melhor treino é o que cabe na sua vida real</strong>, não o que cabe no horário comercial.</p>
@@ -82111,14 +82183,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você quer nadar, fazer hidroginástica ou dar aula de natação para os filhos — mas descobre que <strong>quase nenhuma academia perto de você tem piscina</strong>. E as que parecem ter, você não sabe se a estrutura vale a mensalidade.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-com-piscina-alphaville-barueri.webp" alt="Montinho, personal trainer em Alphaville, em selfie mantendo o físico durante viagem à praia — Academia com Piscina em Alphaville e Barueri" title="Academia com Piscina em Alphaville e Barueri — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Piscina em Alphaville e Barueri: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-com-piscina-alphaville-barueri-infographic.svg" alt="Infográfico sobre Academia com Piscina em Alphaville e Barueri — Montinho Personal Trainer" title="Academia com Piscina em Alphaville e Barueri" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>Errar nessa escolha custa caro: planos de academia com piscina tendem a ser mais robustos, e uma piscina fria, lotada ou mal cuidada transforma o investimento em frustração na segunda semana.</p>
 <p>Este guia mostra <strong>onde procurar academia com piscina em Alphaville e Barueri</strong>, quais tipos de rede costumam oferecer estrutura aquática e como avaliar antes de assinar.</p>
 <h2>Resposta direta</h2>
 <p>Na região de Alphaville, Tamboré e Barueri, piscina é encontrada principalmente em <strong>redes premium e full-service</strong> (a <strong>Bodytech</strong> é o exemplo clássico desse perfil no país), em <strong>clubes</strong> e em <strong>escolas de natação</strong> especializadas. Redes low-cost geralmente não têm piscina. A oferta varia por unidade: <strong>confirme no site oficial ou visite antes de fechar o plano</strong>.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-com-piscina-alphaville-barueri.webp" alt="Montinho, personal trainer em Alphaville, em selfie mantendo o físico durante viagem à praia — Academia com Piscina em Alphaville e Barueri" title="Academia com Piscina em Alphaville e Barueri — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Piscina em Alphaville e Barueri: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Quem costuma ter piscina — e quem não tem</h2>
 <h3>Redes premium e full-service</h3>
 <p>O modelo premium se sustenta justamente em estrutura ampla: piscina, aulas coletivas variadas, vestiários completos. É o perfil que atende bem executivos e famílias de <strong>Alphaville e Tamboré</strong>, próximas a polos como a <strong>Alameda Rio Negro</strong> e o <strong>Iguatemi Alphaville</strong>.</p>
@@ -82190,14 +82266,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Em Alphaville, o treino começa antes da catraca: começa na vaga. Você sai do <strong>Centro Industrial e Empresarial</strong> às 18h30, encara o fluxo da <strong>Castelo Branco</strong>, chega na academia... e dá três voltas no quarteirão procurando onde estacionar.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-com-estacionamento-alphaville.webp" alt="Montinho, personal trainer em Alphaville, na área de musculação com halteres e máquinas — Academia com Estacionamento em Alphaville" title="Academia com Estacionamento em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Estacionamento em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-com-estacionamento-alphaville-infographic.svg" alt="Infográfico sobre Academia com Estacionamento em Alphaville — Montinho Personal Trainer" title="Academia com Estacionamento em Alphaville" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>Parece detalhe, mas não é: <strong>atrito diário é o assassino silencioso da constância</strong>. Quinze minutos perdidos e um estacionamento caro por dia são motivos que o cérebro adora usar para faltar.</p>
 <p>Este guia mostra como avaliar <strong>academia com estacionamento em Alphaville</strong>, quais formatos existem na região e como transformar conveniência em frequência.</p>
 <h2>Resposta direta</h2>
 <p>Em Alphaville, a maioria das academias oferece alguma solução de estacionamento, porque a região é movida a carro. Os formatos mais comuns: <strong>estacionamento próprio</strong> (típico de academias premium e de rua), <strong>estacionamento de shopping</strong> (unidades no <strong>Iguatemi Alphaville</strong> e no <strong>Shopping Tamboré</strong>, às vezes com validação) e <strong>convênios ou vaga na rua</strong>. Se é gratuito, conveniado ou pago varia por unidade — <strong>confirme antes de assinar</strong>.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-com-estacionamento-alphaville.webp" alt="Montinho, personal trainer em Alphaville, na área de musculação com halteres e máquinas — Academia com Estacionamento em Alphaville" title="Academia com Estacionamento em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Estacionamento em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Por que em Alphaville isso pesa mais que em outros lugares</h2>
 <p>O desenho urbano da região — condomínios residenciais, centros empresariais, alamedas comerciais como a <strong>Alameda Rio Negro</strong> — praticamente obriga o deslocamento de carro. Quem vem de <strong>Aldeia da Serra</strong> ou <strong>Santana de Parnaíba</strong> nem tem alternativa.</p>
 <p>Resultado: para o público local — executivos e famílias de condomínio — <strong>a qualidade do estacionamento vale tanto quanto a qualidade do equipamento</strong>.</p>
@@ -82271,14 +82351,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você já desistiu de um treino porque a sala parecia uma sauna? Em dias quentes, uma academia abafada em <strong>Alphaville</strong> ou <strong>Tamboré</strong> transforma o supino em prova de resistência térmica — e a vontade de voltar amanhã derrete junto.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-climatizada-alphaville.webp" alt="Montinho, personal trainer em Alphaville, em selfie mantendo o físico durante viagem à praia — Academia Climatizada em Alphaville" title="Academia Climatizada em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia Climatizada em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-climatizada-alphaville-infographic.svg" alt="Infográfico sobre Academia Climatizada em Alphaville: Conforto no Treino — Montinho Personal Trainer" title="Academia Climatizada em Alphaville: Conforto no Treino" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>O problema é maior do que conforto: calor excessivo aumenta a percepção de esforço, acelera a desidratação e corta o volume do seu treino. <strong>Você não fica mais forte sofrendo calor; fica apenas mais suado.</strong></p>
 <p>Neste guia: quais tipos de academia costumam ser <strong>climatizadas em Alphaville</strong>, o que a temperatura muda no seu desempenho e como testar antes de assinar o plano.</p>
 <h2>Resposta direta</h2>
 <p>Em Alphaville, a climatização é mais comum em <strong>redes premium</strong> (perfil Bodytech e similares) e em <strong>unidades novas de redes intermediárias</strong>, que usam o conforto como diferencial competitivo. Em redes low-cost, varia por unidade: algumas têm ar-condicionado, outras só ventilação. Como não há padrão, <strong>visite a unidade num horário de pico e sinta o ambiente</strong> antes de fechar.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-climatizada-alphaville.webp" alt="Montinho, personal trainer em Alphaville, em selfie mantendo o físico durante viagem à praia — Academia Climatizada em Alphaville" title="Academia Climatizada em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia Climatizada em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Climatização é frescura? A ciência diz que não</h2>
 <p>Treinar no calor eleva frequência cardíaca e percepção de esforço para a mesma carga. Na prática: <strong>você cansa antes de o músculo trabalhar o suficiente</strong>. Em treinos longos ou intensos, o ambiente quente reduz volume total — e volume é um dos motores da hipertrofia.</p>
 <p>Há também o fator adesão: para o público de Alphaville — executivos que treinam de manhã antes de ir ao <strong>Centro Industrial e Empresarial</strong> ou no fim do dia — <strong>sair do treino apresentável</strong> para um compromisso não é detalhe.</p>
@@ -82350,14 +82434,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você quer treinar, mas a ideia de uma sala de musculação lotada e majoritariamente masculina te faz adiar a matrícula há meses. Ou já se matriculou — e desistiu porque nunca se sentiu à vontade.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-feminina-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, da adolescência ao físico atual — Academia Feminina em Alphaville" title="Academia Feminina em Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia Feminina em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-feminina-alphaville-infographic.svg" alt="Infográfico sobre Academia Feminina em Alphaville: Opções e Alternativas — Montinho Personal Trainer" title="Academia Feminina em Alphaville: Opções e Alternativas" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>Esse desconforto tem custo real: cada mês sem treinar é força, disposição e saúde óssea que ficam na mesa. <strong>O pior treino não é o imperfeito; é o que nunca acontece.</strong></p>
 <p>A boa notícia: em <strong>Alphaville e região</strong> existem caminhos — de academias com espaços femininos a estúdios e acompanhamento individual. Este guia mostra as opções e como escolher.</p>
 <h2>Resposta direta</h2>
 <p>Academias <strong>exclusivamente femininas</strong> existem no Brasil em redes especializadas e estúdios, mas a presença em Alphaville varia ao longo do tempo — <strong>pesquise e confirme as unidades atuais</strong>. Alternativas consolidadas: <strong>redes com espaço reservado feminino</strong> (a Smart Fit, por exemplo, já adotou esse formato em parte das unidades), <strong>estúdios de grupos pequenos</strong> e <strong>treino com acompanhamento individual</strong>.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-feminina-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, da adolescência ao físico atual — Academia Feminina em Alphaville" title="Academia Feminina em Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia Feminina em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Por que o formato feminino existe — e para quem faz sentido</h2>
 <p>Não é sobre separar por separar: é sobre <strong>remover a barreira que impede o treino de acontecer</strong>. Privacidade, menos sensação de julgamento e ambiente acolhedor são motivos legítimos relatados por muitas mulheres.</p>
 <p>Em Alphaville — onde o público inclui executivas com agenda apertada e moradoras de condomínios de <strong>Tamboré</strong> à <strong>Aldeia da Serra</strong> — conforto e eficiência caminham juntos: <strong>ninguém mantém rotina em lugar onde não se sente bem</strong>.</p>
@@ -82423,14 +82511,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Depois dos 60, escolher a <strong>academia errada</strong> em Alphaville não custa só a mensalidade: custa a confiança. Uma lesão no primeiro mês, um instrutor que entrega a mesma ficha genérica de sempre, um ambiente que intimida — e a pessoa desiste da decisão de saúde mais importante que poderia tomar.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-para-idosos-alphaville.webp" alt="Montinho, personal trainer em Alphaville, executando exercício em máquina de academia — Academia para Idosos em Alphaville" title="Academia para Idosos em Alphaville — Montinho Personal Trainer" width="1600" height="1067" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia para Idosos em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-para-idosos-alphaville-infographic.svg" alt="Infográfico sobre Academia para Idosos em Alphaville: Guia Completo — Montinho Personal Trainer" title="Academia para Idosos em Alphaville: Guia Completo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>E a agitação é real: a cada ano sem treino de força, o corpo perde massa muscular, densidade óssea e equilíbrio. <strong>Sarcopenia não espera</strong> você achar a academia perfeita.</p>
 <p>A boa notícia: a academia certa para um idoso em Alphaville existe — e provavelmente é mais simples (e mais perto) do que você imagina. O segredo não está na marca na fachada, está em <strong>quem orienta o treino</strong>.</p>
 <h2>Resposta direta: o que define uma boa academia para idosos</h2>
 <p>Uma boa academia para idosos em Alphaville, Barueri ou Santana de Parnaíba precisa de quatro coisas: <strong>acessibilidade física</strong> (sem escadas intransponíveis, com equipamentos ajustáveis), <strong>horários tranquilos</strong> (meio da manhã e início da tarde), <strong>ambiente acolhedor</strong> e — acima de tudo — <strong>orientação individualizada</strong>. Estrutura de ponta sem acompanhamento vale menos que uma sala simples com um bom profissional.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-para-idosos-alphaville.webp" alt="Montinho, personal trainer em Alphaville, executando exercício em máquina de academia — Academia para Idosos em Alphaville" title="Academia para Idosos em Alphaville — Montinho Personal Trainer" width="1600" height="1067" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia para Idosos em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Por que musculação é inegociável na terceira idade</h2>
 <p>A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">Organização Mundial da Saúde</a> recomenda que adultos acima de 65 anos façam atividades de fortalecimento muscular pelo menos duas vezes por semana, além de exercícios de equilíbrio.</p>
 <p>O treinamento resistido tem <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">evidência científica robusta</a> para ganho de força e massa muscular em qualquer idade. Traduzindo: <strong>músculo é o plano de previdência do corpo</strong> — e nunca é tarde para começar a investir.</p>
@@ -82507,14 +82599,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Todo janeiro é igual: você entra numa academia de Alphaville cheio de motivação, paga o plano anual, treina três semanas... e a vida engole. Em março, a mensalidade virou <strong>doação para a academia</strong>.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-para-iniciantes-alphaville.webp" alt="Montinho, personal trainer em Alphaville, executando exercício em máquina de academia — Academia para Iniciantes em Alphaville" title="Academia para Iniciantes em Alphaville — Montinho Personal Trainer" width="1600" height="1067" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia para Iniciantes em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-para-iniciantes-alphaville-infographic.svg" alt="Infográfico sobre Academia para Iniciantes em Alphaville: Por Onde Começar — Montinho Personal Trainer" title="Academia para Iniciantes em Alphaville: Por Onde Começar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>Não é falta de força de vontade. É que iniciante sem método enfrenta três inimigos ao mesmo tempo: não sabe <strong>o que fazer</strong>, não sabe <strong>se está fazendo certo</strong> e não vê <strong>resultado rápido o suficiente</strong> para continuar acreditando.</p>
 <p>Este guia resolve os três: como escolher a academia certa em Alphaville, Barueri ou Santana de Parnaíba sendo iniciante — e como atravessar os primeiros 90 dias, o período em que quase todo mundo desiste.</p>
 <h2>Resposta direta: a melhor academia para iniciantes</h2>
 <p>Para quem está começando, a melhor academia é a que você <strong>consegue frequentar sem esforço logístico</strong>: até 10 minutos de casa ou do trabalho, com ambiente que não intimida e horários compatíveis com sua rotina. Estrutura de elite é irrelevante no início — <strong>constância vence equipamento</strong>. O diferencial real é ter alguém que monte e acompanhe seu treino na primeira fase.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-para-iniciantes-alphaville.webp" alt="Montinho, personal trainer em Alphaville, executando exercício em máquina de academia — Academia para Iniciantes em Alphaville" title="Academia para Iniciantes em Alphaville — Montinho Personal Trainer" width="1600" height="1067" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia para Iniciantes em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>O erro nº 1 do iniciante: escolher pela estrutura</h2>
 <p>Piscina, sauna, três andares de aparelhos. Nada disso importa se a academia fica do outro lado da Castelo Branco e você trava no trânsito às 19h.</p>
 <p>Em Alphaville, a geografia manda: quem trabalha no <strong>Centro Industrial e Empresarial</strong> ou perto da <strong>Alameda Rio Negro</strong> deve procurar academias nesse eixo; quem mora em <strong>Tamboré</strong> ou perto do <strong>Shopping Tamboré</strong>, idem; quem está em Barueri, considere o entorno do <strong>Centro de Barueri e da Estação Barueri (CPTM Linha 8)</strong>.</p>
@@ -82592,14 +82688,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você já pagou academia para emagrecer e o ponteiro da balança não se mexeu? Em Alphaville isso é epidemia silenciosa: planos anuais assinados no Iguatemi da vida, três meses de esteira... e <strong>o mesmo corpo de antes</strong>.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-para-emagrecer-alphaville.webp" alt="Montinho, personal trainer em Alphaville, na área de musculação com halteres — Academia para Emagrecer em Alphaville" title="Academia para Emagrecer em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia para Emagrecer em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-para-emagrecer-alphaville-infographic.svg" alt="Infográfico sobre Academia para Emagrecer em Alphaville: Como Escolher — Montinho Personal Trainer" title="Academia para Emagrecer em Alphaville: Como Escolher" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>A agitação dói: cada mês nessa roda é dinheiro queimado, autoestima corroída e a conclusão errada de que "academia não funciona para mim".</p>
 <p>A verdade liberta: <strong>nenhuma academia emagrece ninguém</strong>. Quem emagrece é o método — déficit calórico, treino de força e constância. A academia é só a ferramenta. Este guia mostra como escolher a ferramenta certa em Alphaville e, principalmente, o método que faz ela funcionar.</p>
 <h2>Resposta direta: qual academia escolher para emagrecer</h2>
 <p>Para emagrecer, escolha a academia <strong>mais conveniente para a sua rotina</strong> — perto de casa, do trabalho no Centro Industrial e Empresarial ou do trajeto diário. Qualquer unidade com área de pesos e cardio serve. O resultado virá de: <strong>déficit calórico</strong> na alimentação, <strong>musculação 3-4x por semana</strong> para preservar músculo, e <strong>cardio como complemento</strong>. Invista a diferença de mensalidade em orientação profissional.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-para-emagrecer-alphaville.webp" alt="Montinho, personal trainer em Alphaville, na área de musculação com halteres — Academia para Emagrecer em Alphaville" title="Academia para Emagrecer em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia para Emagrecer em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>O mito da "academia que emagrece"</h2>
 <p>Marketing fitness adora vender estrutura: mais aulas, mais aparelhos, mais tecnologia. Mas a fisiologia é teimosa: <strong>gordura sai quando você gasta mais do que consome</strong>, ponto. O <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer">Ministério da Saúde</a> e a <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS</a> convergem: atividade física regular + alimentação adequada, sem atalhos mágicos.</p>
 <blockquote><p>Academia não emagrece. Método emagrece. Academia é onde o método acontece.</p></blockquote>
@@ -82673,14 +82773,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você treina há meses, "pega pesado", toma whey — e o shape continua o mesmo. Aí vem a suspeita clássica de quem busca <strong>hipertrofia em Alphaville</strong>: será que o problema é a minha academia?</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-para-hipertrofia-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, da adolescência ao físico atual — Academia para Hipertrofia em Alphaville" title="Academia para Hipertrofia em Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia para Hipertrofia em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-para-hipertrofia-alphaville-infographic.svg" alt="Infográfico sobre Academia para Hipertrofia em Alphaville — Montinho Personal Trainer" title="Academia para Hipertrofia em Alphaville" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>A agitação é legítima: academia sem anilha livre às 19h, máquina ocupada, halteres que param em 30 kg. Cada treino improvisado é um estímulo desperdiçado — e músculo não cresce com estímulo pela metade.</p>
 <p>Mas a resposta honesta tem duas camadas: sim, estrutura importa para hipertrofia (mais do que para emagrecer). E não, ela não é o que está travando seu ganho na maioria dos casos. <strong>O que trava é o método.</strong> Vamos às duas camadas.</p>
 <h2>Resposta direta: o que procurar numa academia para hipertrofia</h2>
 <p>Para hipertrofia, priorize: <strong>pesos livres com ampla faixa de cargas</strong>, <strong>máquinas de qualidade para grandes grupos musculares</strong>, <strong>disponibilidade no seu horário</strong> (teste no pico) e ambiente onde treinar intenso é normal. Em Alphaville e região, isso existe da rede econômica à academia raiz de musculação — o desempate é logística e cultura de treino.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-para-hipertrofia-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, da adolescência ao físico atual — Academia para Hipertrofia em Alphaville" title="Academia para Hipertrofia em Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia para Hipertrofia em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Estrutura: o que realmente faz diferença</h2>
 <h3>O essencial (inegociável)</h3>
 <ul>
@@ -82759,14 +82863,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Quem leva o físico a sério conhece a frustração: chegar numa academia bonita e descobrir que o <strong>dumbbell mais pesado tem 40 kg</strong>, que treinar em dupla é "malvisto" e que intensidade de verdade assusta o salão.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-para-fisiculturistas-alphaville.webp" alt="Montinho, personal trainer em Alphaville, em pose de costas mostrando o desenvolvimento muscular — Academia para Fisiculturistas em Alphaville" title="Academia para Fisiculturistas em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia para Fisiculturistas em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-para-fisiculturistas-alphaville-infographic.svg" alt="Infográfico sobre Academia para Fisiculturistas em Alphaville — Montinho Personal Trainer" title="Academia para Fisiculturistas em Alphaville" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>Para quem pensa em palco — ou simplesmente treina como quem pensa — isso não é detalhe. <strong>Ambiente errado dilui treino certo.</strong> E cada fase de preparação desperdiçada não volta.</p>
 <p>A boa notícia: Alphaville e região são um dos melhores lugares do Brasil para viver musculação pesada. E a notícia ainda melhor: o fator que mais define seu shape não está na academia — está em <strong>quem conduz a sua preparação</strong>.</p>
 <h2>Resposta direta: onde treina quem leva a sério</h2>
 <p>Fisiculturistas e entusiastas de treino pesado em Alphaville gravitam para academias com <strong>cultura de musculação raiz</strong>: cargas altas, máquinas robustas e comunidade que respira o esporte. A <strong>Ironberg</strong>, em Alphaville, é o exemplo mais conhecido — nascida da cena do fisiculturismo e hoje referência nacional. Mas a preparação em si depende do método e do coach, não do endereço.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-para-fisiculturistas-alphaville.webp" alt="Montinho, personal trainer em Alphaville, em pose de costas mostrando o desenvolvimento muscular — Academia para Fisiculturistas em Alphaville" title="Academia para Fisiculturistas em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia para Fisiculturistas em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>A cultura maromba da região</h2>
 <p>A Grande São Paulo construiu uma cena de musculação pesada com nomes que qualquer praticante conhece: <strong>Ironberg</strong> (com sua bandeira fincada em Alphaville), <strong>Fábrica de Monstros</strong> e <strong>Gaviões</strong>. São academias que viraram sinônimo de uma cultura: treino intenso é regra, o ferro é levado a sério e o salão é povoado por gente grande de verdade.</p>
 <p>Esse ambiente tem valor real: <strong>o padrão ao redor puxa o seu padrão</strong>. Ver gente treinando pesado normaliza treinar pesado. Para quem vem de academia convencional, a diferença de atmosfera é imediata.</p>
@@ -82838,14 +82946,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>"Aqui tem personal incluso." Você já ouviu isso ao visitar uma academia em Alphaville — e é aqui que mora o <strong>mal-entendido mais caro do fitness</strong>.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-com-personal-trainer-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, da adolescência ao físico atual — Academia com Personal Trainer em Alphaville" title="Academia com Personal Trainer em Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Personal Trainer em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-com-personal-trainer-alphaville-infographic.svg" alt="Infográfico sobre Academia com Personal Trainer em Alphaville — Montinho Personal Trainer" title="Academia com Personal Trainer em Alphaville" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>Porque três meses depois, você percebe: o "personal" da academia montou sua ficha em dez minutos, some no salão lotado das 19h e atende outros trinta alunos ao mesmo tempo. O treino não muda, o corpo não muda, e a culpa parece sua.</p>
 <p>Não é. É a diferença — que ninguém explica na recepção — entre <strong>instrutor de salão</strong> e <strong>personal trainer particular</strong>. Entender isso antes de pagar qualquer plano é o que este guia entrega.</p>
 <h2>Resposta direta: as duas coisas chamadas de "personal"</h2>
 <p>Existem dois modelos distintos: o <strong>profissional da academia</strong> (instrutor rotativo, pago pela academia, que atende todo o salão e monta fichas gerais) e o <strong>personal particular</strong> (contratado por você, com sessão 100% dedicada, plano individualizado e responsabilidade direta pelo seu resultado). O primeiro está incluído na mensalidade; o segundo é um serviço à parte — e é ele que transforma corpo.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-com-personal-trainer-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, da adolescência ao físico atual — Academia com Personal Trainer em Alphaville" title="Academia com Personal Trainer em Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Personal Trainer em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Instrutor da academia: o que ele pode (e não pode) fazer por você</h2>
 <p>Sejamos justos: o instrutor de salão tem valor. Ele orienta o uso dos aparelhos, corrige um movimento quando vê, monta uma ficha inicial. Em redes como Smart Fit, Bio Ritmo ou Bodytech, esse suporte existe em algum grau — consulte cada unidade sobre como funciona.</p>
 <p>O problema é estrutural, não pessoal: <strong>um instrutor para dezenas de alunos simultâneos</strong>. Ele não tem como acompanhar sua execução série a série, ajustar seu plano toda semana ou perceber que você está estagnado há dois meses.</p>
@@ -82919,14 +83031,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você quer praticar <strong>pilates em Alphaville</strong>, mas descobre na prática que nem toda academia oferece a modalidade — e algumas que anunciam têm horários que não cabem na sua agenda de executivo.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-com-pilates-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, transformação corporal com musculação — Academia com Pilates em Alphaville" title="Academia com Pilates em Alphaville — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Pilates em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-com-pilates-alphaville-infographic.svg" alt="Infográfico sobre Academia com Pilates em Alphaville: Onde Praticar — Montinho Personal Trainer" title="Academia com Pilates em Alphaville: Onde Praticar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>O resultado? Você fecha um plano anual, frequenta duas semanas e desiste. Dinheiro parado no cartão e a dor nas costas continua lá, cobrando a conta em cada reunião longa.</p>
 <p>Este guia mostra <strong>onde o pilates costuma estar disponível</strong> na região de Alphaville, Tamboré e Barueri, o que a ciência diz sobre os benefícios e como combinar pilates com musculação para multiplicar resultados.</p>
 <h2>Resposta direta: onde encontrar pilates em Alphaville?</h2>
 <p>Em Alphaville, o pilates aparece principalmente em dois formatos: <strong>academias premium</strong> (que costumam incluir mat pilates ou estúdio próprio na estrutura) e <strong>estúdios especializados</strong>, comuns nas alamedas do Centro Industrial e Empresarial e na região da Alameda Rio Negro. Redes econômicas raramente oferecem a modalidade. Como a grade muda com frequência, <strong>confirme a grade de aulas na unidade</strong> antes de assinar qualquer plano.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-com-pilates-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, transformação corporal com musculação — Academia com Pilates em Alphaville" title="Academia com Pilates em Alphaville — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Pilates em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Que tipo de academia oferece pilates?</h2>
 <h3>Academias premium: pilates dentro da estrutura completa</h3>
 <p>Redes de perfil premium — pense em estruturas com piscina, sauna e grade ampla de aulas — costumam incluir <strong>mat pilates</strong> ou até estúdio com aparelhos. É o formato preferido de quem quer tudo no mesmo lugar: musculação, cardio e pilates numa única mensalidade.</p>
@@ -83007,14 +83123,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você quer <strong>nadar em Alphaville</strong>, mas piscina não é item de qualquer academia — e fechar plano num lugar sem a estrutura certa é jogar mensalidade no ralo.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-com-natacao-alphaville.webp" alt="Montinho, personal trainer em Alphaville, na área de musculação com halteres e máquinas — Academia com Natação em Alphaville e Região" title="Academia com Natação em Alphaville e Região — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Natação em Alphaville e Região: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-com-natacao-alphaville-infographic.svg" alt="Infográfico sobre Academia com Natação em Alphaville e Região — Montinho Personal Trainer" title="Academia com Natação em Alphaville e Região" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>Pior: muita gente assina o plano premium pela piscina, descobre que os horários de raia livre não batem com a agenda e acaba usando só a esteira. Pagou caro pelo que não usa.</p>
 <p>Este guia mostra <strong>onde a natação costuma estar disponível</strong> em Alphaville, Barueri e Santana de Parnaíba, o que verificar antes de assinar e como combinar natação com musculação para resultado completo.</p>
 <h2>Resposta direta: onde nadar na região de Alphaville?</h2>
 <p>Natação e piscina são estruturas típicas de <strong>academias premium</strong> — o perfil que se concentra no eixo Alphaville/Tamboré, perto do Iguatemi Alphaville e do Shopping Tamboré. Alternativas incluem <strong>escolas de natação dedicadas</strong> e clubes. Redes econômicas praticamente não oferecem piscina. Antes de fechar, <strong>confirme a grade de aulas e os horários de raia livre na unidade</strong>.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-com-natacao-alphaville.webp" alt="Montinho, personal trainer em Alphaville, na área de musculação com halteres e máquinas — Academia com Natação em Alphaville e Região" title="Academia com Natação em Alphaville e Região — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Natação em Alphaville e Região: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Que tipo de academia tem natação?</h2>
 <h3>Academias premium: piscina dentro do pacote completo</h3>
 <p>Redes premium — como a Bodytech, conhecida nacionalmente por estruturas com piscina — são o formato clássico de quem quer <strong>nadar e treinar musculação no mesmo lugar</strong>. A mensalidade é mais alta, mas concentra tudo: piscina, sauna, aulas e área de peso.</p>
@@ -83093,14 +83213,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você quer <strong>spinning em Alphaville</strong> — aquela aula com música alta que faz 45 minutos passarem voando — mas nem toda academia tem sala de bike, e as que têm nem sempre têm horário compatível com sua rotina.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-com-spinning-alphaville.webp" alt="Montinho, personal trainer em Alphaville, em selfie na academia após o treino — Academia com Spinning em Alphaville" title="Academia com Spinning em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Spinning em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-com-spinning-alphaville-infographic.svg" alt="Infográfico sobre Academia com Spinning em Alphaville: Guia — Montinho Personal Trainer" title="Academia com Spinning em Alphaville: Guia" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>E aí mora o prejuízo: você assina o plano, a aula das 19h lota ou some da grade, e a bike vira cabide. Mensalidade paga, resultado zero.</p>
 <p>Este guia mostra <strong>onde o spinning costuma estar disponível</strong> na região, por que ele funciona tão bem para emagrecimento e como encaixá-lo na semana sem sabotar seu treino de pernas.</p>
 <h2>Resposta direta: onde fazer spinning em Alphaville?</h2>
 <p>O spinning (ciclismo indoor) aparece principalmente em <strong>academias intermediárias e premium</strong> com salas de aulas coletivas — perfil comum no eixo Alphaville/Tamboré e perto do Iguatemi Alphaville — e em <strong>estúdios dedicados de ciclismo indoor</strong>. Em redes econômicas, a presença varia por unidade. Regra prática: <strong>confirme a grade de aulas na unidade</strong>, porque horários de spinning mudam com frequência.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-com-spinning-alphaville.webp" alt="Montinho, personal trainer em Alphaville, em selfie na academia após o treino — Academia com Spinning em Alphaville" title="Academia com Spinning em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Spinning em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Que tipo de academia oferece spinning?</h2>
 <h3>Academias intermediárias e premium: a casa clássica da bike</h3>
 <p>Salas de ciclismo indoor com dezenas de bikes são marca registrada de academias completas. Redes premium e intermediárias — perfil comum na região da Alameda Rio Negro e do Shopping Tamboré — costumam ter <strong>várias aulas por dia</strong>, dos horários de pico da manhã ao pós-expediente.</p>
@@ -83179,14 +83303,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você quer um treino que prepare o corpo para a vida real — carregar filho no colo, correr no fim de semana, passar horas no escritório sem dor. O <strong>treino funcional em Alphaville</strong> promete exatamente isso.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-com-funcional-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, da adolescência ao físico atual — Academia com Treino Funcional em Alphaville" title="Academia com Treino Funcional em Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Treino Funcional em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-com-funcional-alphaville-infographic.svg" alt="Infográfico sobre Academia com Treino Funcional em Alphaville — Montinho Personal Trainer" title="Academia com Treino Funcional em Alphaville" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>O problema: "funcional" virou etiqueta para qualquer coisa. Tem aula lotada com 30 pessoas pulando sem correção, e tem estúdio sério com progressão de verdade. Escolher errado significa pagar, se frustrar e desistir — de novo.</p>
 <p>Este guia separa o joio do trigo: <strong>onde o funcional costuma ser bem feito</strong> na região, o que a ciência diz e como combiná-lo com musculação.</p>
 <h2>Resposta direta: onde fazer funcional em Alphaville?</h2>
 <p>O treino funcional aparece em três formatos na região: <strong>aulas coletivas em academias</strong> intermediárias e premium (eixo Tamboré e Alameda Rio Negro), <strong>estúdios especializados</strong> em treinamento funcional — formato forte em Alphaville, Aldeia da Serra e Fazendinha, em Santana de Parnaíba — e <strong>treinos ao ar livre</strong> em praças e condomínios. Em todos os casos, <strong>confirme a grade de aulas na unidade</strong> antes de fechar.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-com-funcional-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, da adolescência ao físico atual — Academia com Treino Funcional em Alphaville" title="Academia com Treino Funcional em Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Treino Funcional em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Que tipo de lugar oferece treino funcional?</h2>
 <h3>Estúdios de funcional: turmas pequenas, correção de verdade</h3>
 <p>Estúdios especializados são o formato onde o funcional brilha: turmas de 6 a 12 pessoas, professor que conhece seu nome e seu joelho, progressão individualizada. É o perfil comum nas alamedas de Alphaville e nos bairros residenciais de Santana de Parnaíba.</p>
@@ -83265,14 +83393,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você já ouviu que <strong>cross training em Alphaville</strong> vicia: comunidade forte, treino sempre diferente, resultado visível. Mas também ouviu histórias de lesão e de mensalidades bem acima da média.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-com-cross-training-alphaville.webp" alt="Montinho, personal trainer em Alphaville, em selfie no espelho da academia após o treino — Academia com Cross Training em Alphaville" title="Academia com Cross Training em Alphaville — Montinho Personal Trainer" width="1476" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Cross Training em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-com-cross-training-alphaville-infographic.svg" alt="Infográfico sobre Academia com Cross Training em Alphaville — Montinho Personal Trainer" title="Academia com Cross Training em Alphaville" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>Entrar no box errado — ou entrar do jeito errado — custa caro duas vezes: no bolso e no ombro. E desistir por lesão é o pior tipo de desistência: ela derruba até quem estava motivado.</p>
 <p>Este guia mostra <strong>onde a modalidade costuma ser praticada</strong> na região, para quem ela serve de verdade e como começar sem virar estatística.</p>
 <h2>Resposta direta: onde fazer cross training em Alphaville?</h2>
 <p>O cross training é praticado principalmente em <strong>boxes</strong> — espaços especializados na modalidade, formato presente em Alphaville, Tamboré e Barueri, geralmente em galpões próximos aos eixos comerciais e à Rodovia Castelo Branco. Algumas <strong>academias completas</strong> oferecem áreas ou aulas de alta intensidade inspiradas no método. Antes de fechar, <strong>confirme a grade de aulas e o programa de iniciação na unidade</strong>.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-com-cross-training-alphaville.webp" alt="Montinho, personal trainer em Alphaville, em selfie no espelho da academia após o treino — Academia com Cross Training em Alphaville" title="Academia com Cross Training em Alphaville — Montinho Personal Trainer" width="1476" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Cross Training em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Onde a modalidade vive: boxes e academias</h2>
 <h3>Boxes: o formato nativo</h3>
 <p>O box é o habitat do cross training: aulas com hora marcada, treino do dia no quadro, coach acompanhando a turma inteira e uma <strong>comunidade que cobra sua presença</strong> — o fator que mais segura gente na rotina.</p>
@@ -83351,14 +83483,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Depois de um dia de reuniões no Centro Industrial e Empresarial e um treino pesado, poucas coisas pagam a mensalidade como 15 minutos de <strong>sauna</strong> antes de encarar o trânsito da Castelo Branco.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-com-sauna-alphaville.webp" alt="Montinho, personal trainer em Alphaville, a caminho do atendimento com mochila de treino — Academia com Sauna em Alphaville" title="Academia com Sauna em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Sauna em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+  <img src="/blog-images/academia-com-sauna-alphaville-infographic.svg" alt="Infográfico sobre Academia com Sauna em Alphaville: Conforto Pós-Treino — Montinho Personal Trainer" title="Academia com Sauna em Alphaville: Conforto Pós-Treino" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>O problema: sauna não é item de qualquer academia — e muita gente assina plano premium acreditando em estrutura que não existe na unidade escolhida, ou que vive em manutenção.</p>
 <p>Este guia mostra <strong>onde a sauna costuma estar disponível em Alphaville</strong>, o que ela realmente faz pela sua recuperação (e o que é mito) e como decidir se vale pagar mais por ela.</p>
 <h2>Resposta direta: quais academias têm sauna em Alphaville?</h2>
 <p>Sauna é estrutura característica de <strong>academias premium</strong> — perfil como o da Bodytech, concentrado no eixo Alphaville/Tamboré, perto do Iguatemi Alphaville e do Shopping Tamboré. Redes econômicas, como as unidades low-cost do Centro de Barueri, não costumam oferecer. Como a disponibilidade varia por endereço, <strong>confirme a estrutura, os horários e as regras de uso na unidade</strong> antes de assinar.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academia-com-sauna-alphaville.webp" alt="Montinho, personal trainer em Alphaville, a caminho do atendimento com mochila de treino — Academia com Sauna em Alphaville" title="Academia com Sauna em Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Sauna em Alphaville: avaliação de quem treina e atende na região.</figcaption>
+</figure>
+
 <h2>Sauna: em que tipo de academia procurar</h2>
 <h3>Premium: onde a sauna faz parte do pacote</h3>
 <p>No segmento premium, a sauna compõe o trio clássico de conforto: <strong>piscina, sauna e vestiários completos</strong>. É o perfil que atende executivos e famílias de condomínios de Alphaville e da Aldeia da Serra — gente que trata a academia como extensão do clube.</p>
