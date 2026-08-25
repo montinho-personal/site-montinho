@@ -88,6 +88,8 @@ const nextConfig: NextConfig = {
       { source: "/blog/como-montar-treino-em-casa", destination: "/blog/treino-em-casa-sem-equipamento", permanent: true },
       { source: "/blog/como-comecar-na-musculacao", destination: "/blog/primeira-semana-na-academia", permanent: true },
       { source: "/blog/avaliacao-fisica-para-que-serve", destination: "/blog/personal-trainer-online-como-funciona", permanent: true },
+      // Consolidação de duplicata: o artigo antigo tratava o mesmo tema do novo
+      { source: "/blog/maquinas-ou-pesos-livres", destination: "/blog/maquina-ou-peso-livre", permanent: true },
     ];
   },
 };
