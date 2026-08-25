@@ -77248,6 +77248,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td><strong>Ambiente</strong></td><td>Identidade forte ligada ao esporte</td><td>Clima de treino sério e performance</td></tr>
 <tr><td><strong>Indicado para</strong></td><td>Quem respira musculação e quer a cultura do esporte</td><td>Quem quer estrutura pesada com ambiente intenso</td></tr>
 </table>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-ironberg-alphaville.webp" alt="Montinho, personal trainer em Alphaville, na área de treino da Ironberg com espelhos e iluminação característica" title="Personal Trainer na Ironberg Alphaville — Montinho Personal Trainer" width="1600" height="1734" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Montinho na Ironberg Alphaville: quem treina nas duas academias sabe o que cada uma entrega.</figcaption>
+</figure>
+
 <h2>O que avaliar na visita (checklist de quem treina em Alphaville)</h2>
 <ul>
 <li><strong>Horário de pico:</strong> quem sai do trabalho no Centro Industrial e Empresarial ou em Tamboré encontra pico no fim da tarde. Visite nesse horário e observe a fila nos equipamentos que você mais usa.</li>
@@ -79320,6 +79325,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 <p>Note o padrão: <strong>progressão de carga, técnica e consistência</strong>. A Ironberg oferece o palco perfeito para aplicar isso — mas o roteiro do treino continua sendo responsabilidade sua (ou de quem te orienta). A <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">evidência científica sobre treinamento resistido</a> confirma: é a estrutura do programa que dita o resultado.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/ironberg-alphaville-sp.webp" alt="Montinho Personal Trainer treinando na Ironberg Alphaville SP: máquina de elevação de pernas com estrutura vermelha característica da academia" title="Ironberg Alphaville SP — Montinho Personal Trainer" width="1600" height="2844" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino na Ironberg Alphaville: equipamentos de fisiculturismo com a identidade vermelha da rede.</figcaption>
+</figure>
+
 <h2>Como aproveitar a Ironberg ao máximo</h2>
 <ol>
 <li><strong>Entre com um programa periodizado</strong>, não com uma ficha copiada de influenciador — o que funciona para um atleta avançado pode travar (ou lesionar) você.</li>
@@ -79727,7 +79737,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você já pagou plano de academia que virou doação mensal? Em Alphaville, onde a rotina de <strong>executivos e famílias de condomínio</strong> é apertada, esse é o erro mais caro do fitness.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/arena-18-alphaville-infographic.svg" alt="Infográfico sobre Arena 18 Alphaville: O Que Esperar — Montinho Personal Trainer" title="Arena 18 Alphaville: O Que Esperar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/arena-18-alphaville.webp" alt="Montinho Personal Trainer na Arena 18 Alphaville: área de musculação com halteres, máquinas e vista para a cidade" title="Arena 18 Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino na Arena 18 Alphaville: estrutura de musculação e ambiente da academia.</figcaption>
 </figure>
 
 <p>E o ciclo se repete: matrícula empolgada, três semanas de treino, uma viagem a trabalho, e a academia — seja na <strong>Alameda Rio Negro</strong> ou no <strong>Tamboré</strong> — vira lembrança no extrato do cartão.</p>
@@ -79758,6 +79769,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Foco em <strong>treino de força e constância</strong></td><td>Sua motivação depende de grade extensa de aulas</td></tr>
 <tr><td>Quem prefere avaliar no olho antes de assinar</td><td>Você quer padrão de rede previsível sem visitar</td></tr>
 </table>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-academia-arena-18.webp" alt="Antes e depois de Montinho, personal trainer que atende na Arena 18 Alphaville: transformação corporal com musculação e acompanhamento" title="Personal Trainer na Academia Arena 18 — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Resultado real de quem treina com orientação: antes e depois do Montinho, personal trainer que atende na Arena 18.</figcaption>
+</figure>
+
 <h2>Checklist: o que verificar na visita à Arena 18</h2>
 <ol>
 <li><strong>Lotação no seu horário real</strong> de treino — vá às 7h ou às 19h, não às 15h.</li>
