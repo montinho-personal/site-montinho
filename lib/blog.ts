@@ -71358,7 +71358,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>O mercado fitness vendeu uma mentira conveniente: a de que setembro é tarde demais. Que agora só resta esperar o ano que vem, a próxima dieta da moda, o próximo "desafio de 21 dias". Enquanto isso, você fica parado — esperando uma largada perfeita que nunca chega.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/projeto-verao-ainda-da-tempo-setembro-infographic.svg" alt="Infográfico sobre Projeto Verão em Setembro: Ainda Dá Tempo? — Montinho Personal Trainer" title="Projeto Verão em Setembro: Ainda Dá Tempo?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/projeto-verao-ainda-da-tempo-setembro.webp" alt="Ilustração de capa: corredor, halteres, sol e piscina em estilo retrô — Projeto Verão em Setembro, Montinho Personal Trainer" title="Projeto Verão em Setembro — Montinho Personal Trainer" width="1248" height="848" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Projeto verão começando em setembro: o que dá para conquistar até dezembro.</figcaption>
 </figure>
 
 
@@ -71465,7 +71466,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>O mercado te vendeu uma equação errada: definição = emagrecer = comer menos e correr mais. Milhões seguem essa fórmula todo ano. E todo ano chegam ao verão menores, mais fracos — e sem um único músculo aparente. Perderam peso. Não ganharam corpo.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-definir-corpo-ate-o-verao-infographic.svg" alt="Infográfico sobre Como Definir o Corpo até o Verão — Montinho Personal Trainer" title="Como Definir o Corpo até o Verão" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-definir-corpo-ate-o-verao.webp" alt="Ilustração de capa: atleta correndo com halteres em estilo retrô — guia Como Definir o Corpo até o Verão, Montinho Personal Trainer" title="Como Definir o Corpo até o Verão — Montinho Personal Trainer" width="1248" height="848" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Como definir o corpo até o verão: guia prático de treino e dieta.</figcaption>
 </figure>
 
 
@@ -71574,7 +71576,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>O mercado do emagrecimento tem um modelo de negócio simples: quanto mais confuso você estiver, mais ele vende. Chá seca-barriga, dieta da moda, treino milagroso — todo ano uma novidade, todo ano o mesmo resultado: nenhum. E enquanto você segue conselho errado, queima semanas de esforço sem queimar um grama a mais de gordura.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-reduzir-gordura-corporal-rapidamente-infographic.svg" alt="Infográfico sobre Como Reduzir Gordura Corporal de Forma Eficiente — Montinho Personal Trainer" title="Como Reduzir Gordura Corporal de Forma Eficiente" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-reduzir-gordura-corporal-rapidamente.webp" alt="Ilustração de capa: homem treinando em máquina de academia com ícones de dieta, exercício e metabolismo — Como Reduzir Gordura Corporal, Montinho Personal Trainer" title="Como Reduzir Gordura Corporal de Forma Eficiente — Montinho Personal Trainer" width="1344" height="768" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Como reduzir gordura corporal: dieta, treino e metabolismo trabalhando juntos.</figcaption>
 </figure>
 
 
@@ -71685,7 +71688,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>Todo ano, milhões de pessoas prometem chegar ao verão diferentes. E todo ano, a maioria falha. O mercado te convenceu de que o problema é falta de força de vontade — e te vende motivação em frascos, desafios de 30 dias e dietas milagrosas. Mentira. <strong>Vontade nunca foi o seu problema. Falta de plano é.</strong></p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/plano-para-chegar-em-forma-no-verao-infographic.svg" alt="Infográfico sobre Como Montar um Plano para Chegar em Forma no Verão — Montinho Personal Trainer" title="Como Montar um Plano para Chegar em Forma no Verão" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/plano-para-chegar-em-forma-no-verao.webp" alt="Ilustração de capa: corredor estilizado em movimento — Plano para Chegar em Forma no Verão, Montinho Personal Trainer" title="Como Montar um Plano para Chegar em Forma no Verão — Montinho Personal Trainer" width="1232" height="848" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Plano para chegar em forma no verão: etapas, prazos e prioridades.</figcaption>
 </figure>
 
 
@@ -95100,7 +95104,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Uma das perguntas que mais recebo é simples: dá para treinar glúteos em casa, sem academia e sem peso, e ainda assim ter resultado? A resposta honesta é sim — desde que você treine com técnica, intensidade suficiente e progressão. O glúteo é um músculo grande e responde muito bem a estímulo, mesmo com o peso do próprio corpo.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-de-gluteos-em-casa-infographic.svg" alt="Infográfico sobre Treino de Glúteos em Casa: Guia Completo Sem Equipamentos — Montinho Personal Trainer" title="Treino de Glúteos em Casa: Guia Completo Sem Equipamentos" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-de-gluteos-em-casa.webp" alt="Ilustração de capa: mulher fazendo elevação pélvica na sala de casa — Treino de Glúteos em Casa, Montinho Personal Trainer" title="Treino de Glúteos em Casa — Montinho Personal Trainer" width="1408" height="768" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino de glúteos em casa: guia completo sem equipamentos.</figcaption>
 </figure>
 
 
@@ -95278,7 +95283,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Poucos temas geram tanta confusão quanto a quantidade de proteína. De um lado, quem treina quer comer mais para ganhar massa. Do outro, sempre aparece alguém dizendo que "proteína demais faz mal", "sobrecarrega os rins" ou "vira gordura". Afinal, existe exagero? E ele é perigoso?</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/proteina-demais-faz-mal-infographic.svg" alt="Infográfico sobre Proteína Demais Faz Mal? Limites, Rins e o Que a Ciência Diz — Montinho Personal Trainer" title="Proteína Demais Faz Mal? Limites, Rins e o Que a Ciência Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/proteina-demais-faz-mal.webp" alt="Ilustração de capa: halter, silhueta de rim e músculo em vermelho — Proteína Demais Faz Mal?, Montinho Personal Trainer" title="Proteína Demais Faz Mal? Limites, Rins e o Que a Ciência Diz — Montinho Personal Trainer" width="1248" height="848" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Proteína demais faz mal? Limites, rins e o que a ciência diz.</figcaption>
 </figure>
 
 
@@ -95434,7 +95440,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>A cena é comum: correria, sem tempo de almoçar, e a solução aparece na forma de um shake de proteína. Rápido, prático e "saudável". Mas será que um shake pode realmente ocupar o lugar de uma refeição de verdade? A resposta é: às vezes sim, às vezes é furada — e a diferença está nos detalhes.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/shake-de-proteina-substitui-refeicao-infographic.svg" alt="Infográfico sobre Shake de Proteína Substitui Refeição? Quando Sim e Quando Não — Montinho Personal Trainer" title="Shake de Proteína Substitui Refeição? Quando Sim e Quando Nã" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/shake-de-proteina-substitui-refeicao.webp" alt="Ilustração de capa: shake de proteína, garfo e faca em estilo retrô — Shake de Proteína Substitui Refeição?, Montinho Personal Trainer" title="Shake de Proteína Substitui Refeição? Quando Sim e Quando Não — Montinho Personal Trainer" width="1024" height="572" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Shake de proteína substitui refeição? Quando sim e quando não.</figcaption>
 </figure>
 
 
