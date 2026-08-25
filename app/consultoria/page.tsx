@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { SITE_URL } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Consultoria e Personal Training em Alphaville",
+  title: "Consultoria Online e Personal Trainer em Alphaville",
   description:
-    "Personal Trainer presencial em Alphaville (Barueri e Santana de Parnaíba) e consultoria online para todo o Brasil. Treino personalizado, acompanhamento próximo e resultados reais.",
+    "Consultoria online de treino para todo o Brasil e personal trainer presencial em Alphaville. Treino personalizado, suporte diário no WhatsApp e acompanhamento de quem já perdeu 40 kg.",
   alternates: {
     canonical: `${SITE_URL}/consultoria`,
   },
   openGraph: {
-    title: "Consultoria e Personal Training em Alphaville | Montinho PT",
+    title: "Consultoria Online e Personal Trainer | Montinho PT",
     description:
-      "Personal Trainer presencial em Alphaville (Barueri e Santana de Parnaíba) e consultoria online para todo o Brasil.",
+      "Consultoria online de treino para todo o Brasil e personal trainer presencial em Alphaville. Treino personalizado e suporte diário no WhatsApp.",
     url: `${SITE_URL}/consultoria`,
     type: "website",
   },
@@ -63,6 +64,44 @@ const breadcrumbSchema = {
     { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
     { "@type": "ListItem", position: 2, name: "Consultoria", item: `${SITE_URL}/consultoria` },
   ],
+};
+
+const faq = [
+  {
+    question: "Como funciona a consultoria online?",
+    answer:
+      "Depois de uma conversa inicial gratuita e de uma anamnese completa, você recebe um treino personalizado com vídeos demonstrativos, orientação prática e suporte diário via WhatsApp. Fazemos check-ins semanais e reavaliações mensais para ajustar o plano conforme a sua evolução.",
+  },
+  {
+    question: "Quanto custa a consultoria online e o personal presencial?",
+    answer:
+      "O valor depende da modalidade (online, presencial ou híbrida), da frequência e do período do plano. A conversa inicial é gratuita e sem compromisso — nela eu entendo seu objetivo e te passo as opções com transparência, para você decidir com calma.",
+  },
+  {
+    question: "Consultoria online funciona de verdade?",
+    answer:
+      "Funciona quando existe plano individualizado e acompanhamento de verdade — não um PDF genérico. Na minha consultoria o treino é montado para a sua rotina e o suporte é diário: você manda vídeo da execução, tira dúvidas e o protocolo é ajustado sempre que necessário.",
+  },
+  {
+    question: "Preciso de experiência ou posso começar do zero?",
+    answer:
+      "Pode começar do zero. Boa parte dos meus alunos chegou sedentária ou depois de várias tentativas frustradas. O plano parte do seu nível atual e evolui de forma gradual — eu já estive do outro lado da balança e sei como é recomeçar.",
+  },
+  {
+    question: "Atende em qual região no presencial?",
+    answer:
+      "Atendo presencialmente em Alphaville e região — Barueri e Santana de Parnaíba —, em academias e condomínios. Para o restante do Brasil, o atendimento é pela consultoria online, com o mesmo método e acompanhamento próximo.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.answer },
+  })),
 };
 
 const services = [
@@ -152,6 +191,21 @@ const steps = [
   },
 ];
 
+const trustItems = [
+  { value: "-40 kg", label: "na minha própria transformação" },
+  { value: "100%", label: "dos treinos personalizados — nada de PDF genérico" },
+  { value: "7 dias", label: "por semana de suporte no WhatsApp" },
+  { value: "Grátis", label: "a conversa inicial, sem compromisso" },
+];
+
+function WhatsAppIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width={size} height={size}>
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg>
+  );
+}
+
 export default function Consultoria() {
   return (
     <>
@@ -163,19 +217,86 @@ export default function Consultoria() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      {/* Hero */}
-      <section className="py-16 bg-black border-b border-white/10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      {/* Hero — resposta direta ao anúncio, CTA acima da dobra */}
+      <section className="py-14 sm:py-16 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <SectionTitle
-            eyebrow="Consultoria & Personal Training"
-            title="Escolha como quer ser acompanhado"
-            subtitle="Presencial em Alphaville ou online em qualquer lugar do Brasil. O método é o mesmo, o resultado também."
-          />
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-5">
+            Consultoria Online · Personal Trainer em Alphaville
+          </p>
+          <h1
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Treino personalizado com acompanhamento de verdade
+          </h1>
+          <p className="text-gray-300 text-lg leading-relaxed mb-3">
+            Presencial em Alphaville ou online em qualquer lugar do Brasil — com
+            suporte diário no WhatsApp e um plano montado para a sua rotina.
+          </p>
+          <p className="text-gray-400 text-base leading-relaxed mb-8">
+            Eu já perdi <strong className="text-white">40 kg</strong> na minha
+            própria transformação. Sei o que funciona fora do papel — e é isso
+            que aplico com cada aluno.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href={getWhatsAppUrl(
+                "Olá! Vi a página de consultoria e quero saber como funciona o acompanhamento."
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200 w-full sm:w-auto"
+            >
+              <WhatsAppIcon size={18} />
+              Começar com uma conversa gratuita
+            </a>
+            <a
+              href="#modalidades"
+              className="inline-flex items-center justify-center gap-2 border border-white/40 text-white px-8 py-4 text-base font-semibold tracking-wide hover:bg-white hover:text-black transition-all duration-200 w-full sm:w-auto"
+            >
+              Ver modalidades
+            </a>
+          </div>
+          <p className="text-gray-600 text-xs mt-4">
+            Resposta direto comigo, sem robô e sem compromisso.
+          </p>
+        </div>
+      </section>
+
+      {/* Trust strip */}
+      <section className="py-10 bg-black border-b border-white/10">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+            {trustItems.map((item, i) => (
+              <div key={i}>
+                <p
+                  className="text-2xl sm:text-3xl font-bold text-white mb-1"
+                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                >
+                  {item.value}
+                </p>
+                <p className="text-gray-500 text-xs sm:text-sm leading-snug">{item.label}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-center mt-8">
+            <Link
+              href="/resultados"
+              className="text-gray-400 text-sm underline underline-offset-4 decoration-1 hover:text-white transition-colors duration-200"
+            >
+              Veja transformações reais de alunos →
+            </Link>
+          </p>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-black">
+      <section id="modalidades" className="py-20 bg-black scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
@@ -250,9 +371,7 @@ export default function Consultoria() {
                       : "border border-white text-white hover:bg-white hover:text-black"
                   }`}
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-                  </svg>
+                  <WhatsAppIcon />
                   {service.cta}
                 </a>
               </div>
@@ -295,6 +414,40 @@ export default function Consultoria() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-16 bg-black border-t border-white/10">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <SectionTitle
+              eyebrow="Dúvidas Frequentes"
+              title="Perguntas antes de começar"
+              subtitle="As respostas diretas para o que todo mundo pergunta."
+            />
+          </div>
+          <div className="space-y-4">
+            {faq.map((item, i) => (
+              <details
+                key={i}
+                className="group border border-white/15 px-6 py-5 open:bg-white/[0.03]"
+              >
+                <summary className="cursor-pointer list-none flex items-center justify-between gap-4">
+                  <span
+                    className="text-white font-semibold text-base"
+                    style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                  >
+                    {item.question}
+                  </span>
+                  <span className="text-gray-500 text-xl leading-none group-open:rotate-45 transition-transform duration-200">
+                    +
+                  </span>
+                </summary>
+                <p className="text-gray-400 text-sm leading-relaxed mt-4">{item.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-16 bg-white text-black text-center" data-track-section="pricing">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -306,7 +459,7 @@ export default function Consultoria() {
           </h2>
           <p className="text-gray-600 mb-8 text-lg">
             Me manda uma mensagem. Vamos conversar sobre o que faz mais sentido
-            para a sua realidade.
+            para a sua realidade — a conversa inicial é gratuita.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -314,6 +467,7 @@ export default function Consultoria() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-black text-white px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-900 transition-all duration-200"
           >
+            <WhatsAppIcon size={18} />
             Falar com Montinho
           </a>
         </div>
