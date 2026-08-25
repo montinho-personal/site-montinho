@@ -19316,6 +19316,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Atendo moradores da Aldeia da Serra há mais de 20 anos. Conheço o bairro, as academias disponíveis na região e o perfil de quem mora aqui. O que ofereço é um protocolo construído para o seu objetivo — não para um perfil genérico.</p>
 
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-5-foto.webp" alt="Antes e depois de Montinho, personal trainer na Aldeia da Serra: da adolescência ao físico atual" title="Personal Trainer em Aldeia da Serra — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A relação com a atividade física muda quando há método: o antes e depois do Montinho, personal trainer na Aldeia da Serra.</figcaption>
+</figure>
+
 <h2>A relação do morador da Aldeia da Serra com atividade física</h2>
 
 <p>Quem mora na Aldeia da Serra geralmente tem uma relação positiva com movimento e natureza — o ambiente favorece caminhadas, corridas, ciclismo e esportes. Mas atividade ao ar livre e treino estruturado têm papéis diferentes: a atividade aeróbica tem benefícios cardiovasculares, e o <a href="https://pubmed.ncbi.nlm.nih.gov/28319102/" target="_blank" rel="noopener noreferrer">treino de força constrói a base muscular que sustenta tudo</a> — inclusive o desempenho aeróbico.</p>
@@ -19937,6 +19942,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <img src="/blog-images/personal-trainer-centro-comercial-alphaville.webp" alt="Personal trainer no Centro Comercial de Alphaville: atendimento personalizado para quem vive e trabalha na região" title="Personal Trainer Centro Comercial Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento personalizado no Centro Comercial de Alphaville.</figcaption>
 </figure>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-centro-comercial-alphaville-foto.webp" alt="Antes e depois de Montinho, personal trainer no Centro Comercial Alphaville: de acima do peso ao físico definido com musculação" title="Personal Trainer no Centro Comercial Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Quem trabalha no Centro Comercial Alphaville treina com quem já viveu a transformação na prática.</figcaption>
+</figure>
+
 <h2>O desafio do profissional que trabalha em Alphaville</h2>
 <p>Quem trabalha no Centro Comercial de Alphaville sabe como é o dia: reuniões desde cedo, almoços de trabalho, trânsito de saída. Encaixar treino em uma rotina dessas exige planejamento — e um protocolo que seja eficiente dentro do tempo disponível. Sessões longas de 90 minutos de musculação não cabem no cotidiano de quem tem reunião às 8h. Sessões de 50 minutos com protocolo preciso, sim.</p>
 
@@ -20081,7 +20091,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-empresarial-18-do-forte-infographic.svg" alt="Infográfico sobre Personal Trainer Empresarial 18 do Forte: Treino para Quem Trabalha no Hub Corpo — Montinho Personal Trainer" title="Personal Trainer Empresarial 18 do Forte: Treino para Quem T" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-empresarial-18-do-forte-foto.webp" alt="Antes e depois de Montinho, personal trainer no Empresarial 18 do Forte, Alphaville: da vida sedentária ao físico atlético" title="Personal Trainer no Empresarial 18 do Forte — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Performance corporativa começa no corpo: a transformação do Montinho, personal trainer no 18 do Forte.</figcaption>
 </figure>
 <h2>Treino como ferramenta de performance corporativa</h2>
 <p>A relação entre exercício regular e performance profissional está bem documentada na literatura científica. Pesquisas publicadas no <em>British Journal of Sports Medicine</em> mostram que profissionais que treinam regularmente reportam mais energia durante o dia, melhor foco, maior resistência ao estresse e qualidade de sono superior. Esses benefícios se traduzem diretamente em performance — tomada de decisão, criatividade e produtividade. Veja os dados em <a href="https://pubmed.ncbi.nlm.nih.gov/19204579/" target="_blank" rel="noopener noreferrer">Haskell et al. (2009) no PubMed</a>.</p>
@@ -20225,7 +20236,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alameda-rio-negro-infographic.svg" alt="Infográfico sobre Personal Trainer Alameda Rio Negro Alphaville: Treino para o Hub Corporativo — Montinho Personal Trainer" title="Personal Trainer Alameda Rio Negro Alphaville: Treino para o" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-academia-arena-18.webp" alt="Antes e depois de Montinho, personal trainer na Alameda Rio Negro, Alphaville: transformação corporal com treino orientado" title="Personal Trainer na Alameda Rio Negro — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Resultado real com método: o antes e depois do Montinho, personal trainer na Alameda Rio Negro.</figcaption>
 </figure>
 <h2>O profissional da Alameda Rio Negro e o tempo como recurso escasso</h2>
 <p>Quem trabalha na Alameda Rio Negro sabe que o tempo é o recurso mais escasso. Treinar sem objetivo claro, sem progressão e sem correção técnica é desperdiçar esse recurso. Com personal trainer e protocolo preciso, 50 minutos de treino produzem mais resultado do que 90 minutos de treino livre sem método. Cada sessão tem propósito — e o profissional que a conduz garante que nenhum minuto seja perdido.</p>
@@ -24188,7 +24200,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-cotia-infographic.svg" alt="Infográfico sobre Personal Trainer em Cotia: Treinamento Especializado na Sua Região — Montinho Personal Trainer" title="Personal Trainer em Cotia: Treinamento Especializado na Sua " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-empresarial-18-do-forte-foto.webp" alt="Antes e depois de Montinho, personal trainer em Cotia: da vida sedentária ao físico atlético com treino de força" title="Personal Trainer em Cotia — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">A transformação do próprio Montinho, personal trainer que atende em Cotia e região.</figcaption>
 </figure>
 <h2>Diferenciais do acompanhamento personalizado em Cotia</h2>
 <p>Ao contrário de treinar sozinho ou seguir um programa genérico da internet, o acompanhamento personalizado oferece:</p>
@@ -24374,6 +24387,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li>Benefícios para o bebê: melhor desenvolvimento cardiovascular, neurodesenvolvimento</li>
 </ul>
 
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-academia-arena-18.webp" alt="Antes e depois de Montinho, personal trainer para gestantes em Alphaville e Tamboré: experiência própria de transformação corporal" title="Personal Trainer para Gestantes em Alphaville e Tamboré — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Quem orienta o treino na gestação conhece na própria pele o que é mudar o corpo com método e segurança.</figcaption>
+</figure>
+
 <h2>O que muda no treino durante a gravidez</h2>
 
 <h3>Primeiro trimestre (0–12 semanas)</h3>
@@ -24470,6 +24488,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Essa é, de longe, a pergunta que mais recebo de quem está pensando em começar a treinar com acompanhamento profissional na região de Alphaville, Tamboré e Barueri. E a resposta honesta é: depende — mas não da forma vaga que você está acostumado a ouvir. Depende de fatores muito específicos que vou detalhar neste artigo para que você consiga comparar preços com inteligência.</p>
 
 <p>Depois de mais de 20 anos trabalhando como personal trainer em Alphaville, já vi de tudo: clientes que pagaram barato e ficaram meses sem resultado, e clientes que investiram bem e transformaram o corpo e a saúde em menos de seis meses. O preço importa, mas o valor entregue importa muito mais.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/quanto-custa-personal-trainer-alphaville-foto.webp" alt="Montinho, personal trainer em Alphaville, em selfie na academia após o treino" title="Quanto Custa um Personal Trainer em Alphaville em 2026 — Montinho Personal Trainer" width="901" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O que você paga é o método e a experiência de quem acompanha: Montinho, personal trainer em Alphaville.</figcaption>
+</figure>
 
 <h2>Faixa de preços praticada em Alphaville em 2026</h2>
 
@@ -76915,6 +76938,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Aqui está o raio-x da região — organizado por localização e perfil — para você escolher pela <strong>sua rotina</strong>, não pela propaganda. Porque <strong>a academia certa é a que está no seu caminho</strong>.</p>
 <h2>Resposta rápida</h2>
 <p>Perto de Alphaville você encontra: dentro do próprio bairro, <strong>Smart Fit, Bluefit, Ironberg, Bodytech, Bio Ritmo, Gaviões, NitroGym, Arena 18, Scelta, 4Perform, Competition, Panobianco, 24 Wellness, SkyFit e Voi Fit</strong>; no eixo Barueri, <strong>RedFit, Primax e CrossFit Barueri</strong>; e na Aldeia da Serra, a <strong>Scelta Aldeia da Serra</strong>. Valores e horários variam — consulte o site oficial ou a unidade.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/academias-perto-de-alphaville-foto.webp" alt="Antes e depois de Montinho, personal trainer que atende nas academias perto de Alphaville: da adolescência ao físico atual" title="Academias Perto de Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Mais importante que a academia é o método: a transformação do próprio Montinho, que atende na região de Alphaville.</figcaption>
+</figure>
+
 <h2>Escolha pela geografia da sua vida</h2>
 <h3>Se você trabalha no eixo empresarial</h3>
 <p>Quem passa o dia entre a <strong>Alameda Rio Negro</strong> e o <strong>Centro Industrial e Empresarial</strong> deve priorizar unidades a até 10 minutos do escritório. Treino no almoço ou antes do expediente é o que sobrevive à agenda de executivo.</p>
@@ -77366,7 +77394,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você busca a <strong>melhor academia de Alphaville</strong> porque já sabe o custo de errar: matrícula, fidelidade, três semanas de empolgação — e um plano parado no cartão de crédito.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/melhor-academia-de-alphaville-infographic.svg" alt="Infográfico sobre Qual a Melhor Academia de Alphaville? Análise Honesta — Montinho Personal Trainer" title="Qual a Melhor Academia de Alphaville? Análise Honesta" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/arena-18-alphaville.webp" alt="Montinho, personal trainer em Alphaville, na área de musculação de uma das melhores academias da região" title="Qual a Melhor Academia de Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Estrutura, ambiente e público: o que define a melhor academia de Alphaville para o seu perfil.</figcaption>
 </figure>
 
 <p>E a região não facilita: entre Tamboré, Alameda Rio Negro e o entorno do <strong>Iguatemi Alphaville</strong>, há academia low cost, premium e templo de musculação, cada uma jurando ser a melhor.</p>
@@ -77443,7 +77472,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Escolher a <strong>melhor academia de Barueri</strong> parece simples até você pesquisar: dezenas de opções entre o Centro, Tamboré e a divisa com Alphaville — e todas prometem ser a ideal.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/melhor-academia-de-barueri-infographic.svg" alt="Infográfico sobre Qual a Melhor Academia de Barueri? Guia de Escolha — Montinho Personal Trainer" title="Qual a Melhor Academia de Barueri? Guia de Escolha" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/melhor-academia-de-barueri-foto.webp" alt="Montinho, personal trainer em Barueri, na área de musculação com halteres e máquinas de academia da região" title="Qual a Melhor Academia de Barueri — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Escolha pela rotina, não pela marca: o que faz uma academia de Barueri funcionar para você.</figcaption>
 </figure>
 
 <p>Escolher errado custa caro: plano com fidelidade, trajeto que não cabe na rotina, horário de pico insuportável depois do expediente. Resultado? Desistência em poucas semanas e a sensação de que "academia não é para mim".</p>
@@ -84423,6 +84453,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>A solução mais direta é inverter a lógica: em vez de você ir até o treino, <strong>o treino vai até você</strong>. É isso que o personal trainer a domicílio faz — em casa, no condomínio ou em espaço próximo.</p>
 <h2>Como funciona o personal a domicílio em Barueri</h2>
 <p><strong>Resposta direta:</strong> o personal trainer a domicílio em Barueri atende você na sua residência ou na academia do seu condomínio, com avaliação física, treino individualizado e progressão planejada. O formato atende do Centro de Barueri à região do Tamboré, e é ideal para quem tem rotina apertada e quer <strong>constância sem deslocamento</strong>.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-a-domicilio-barueri-foto.webp" alt="Montinho, personal trainer a domicílio em Barueri, em pose de costas mostrando o desenvolvimento muscular" title="Personal Trainer a Domicílio em Barueri — Montinho Personal Trainer" width="739" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino em casa com a mesma exigência técnica da academia: o resultado depende do método, não do lugar.</figcaption>
+</figure>
+
 <h2>Por que o formato funciona tão bem para quem mora em Barueri</h2>
 <h3>O deslocamento é o maior assassino de treinos</h3>
 <p>Entre pegar o carro, enfrentar o trânsito perto do Shopping Tamboré e encontrar vaga, o "treino de 1 hora" vira um compromisso de 2 horas e meia. <strong>Quando o treino acontece na sua garagem, na sua sala ou no salão do condomínio, a desculpa acaba.</strong></p>
@@ -86973,6 +87008,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Treinar sem sair de casa: o estilo de vida que combina com o Tamboré 1</h2>
 <p>No condomínio que abriu caminho para todos os outros, treinar em casa não é improviso: é um estilo de vida consolidado. Muitos condomínios da região contam com academia própria — e a do seu condomínio pode se tornar seu melhor centro de treino com a orientação certa. Quando a estrutura da casa ou do residencial é mais simples, equipamentos portáteis (halteres, elásticos, kettlebells) resolvem sem perder qualidade.</p>
 <p>O ganho mais subestimado é a <strong>adesão</strong>: sem deslocamento, a taxa de faltas despenca. E constância é o que separa quem tem resultado de quem tem apenas matrícula.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-5-foto.webp" alt="Antes e depois de Montinho, personal trainer no Tamboré 1: da adolescência ao físico atual com treino no condomínio" title="Personal Trainer no Tamboré 1 — Treino no Condomínio — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino no condomínio Tamboré 1 com quem já percorreu o caminho da transformação.</figcaption>
+</figure>
+
 <h2>Como funciona o atendimento de personal trainer no Tamboré 1</h2>
 <ol>
 <li><strong>Avaliação inicial:</strong> histórico de saúde, objetivos, análise postural e de padrões de movimento.</li>
@@ -87048,6 +87088,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Tempo total comprometido</td><td>Aproximadamente o dobro da sessão</td><td>Apenas a sessão</td></tr>
 </table>
 <p>Para quem mede o dia em blocos de reunião, eliminar o deslocamento não é conforto: é a diferença entre treinar e não treinar.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-9-foto.webp" alt="Montinho, personal trainer no Tamboré 2, em pose no espelho da academia mostrando o desenvolvimento das costas" title="Personal Trainer no Tamboré 2 — Montinho Personal Trainer" width="739" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino de costas bem executado: técnica que protege a coluna e constrói postura no Tamboré 2.</figcaption>
+</figure>
+
 <h2>Manhãs e fins de tarde: o treino que respeita a agenda</h2>
 <p>Os horários preferidos dos executivos do condomínio são as primeiras horas da manhã — treino concluído antes da primeira call, banho em casa, dia começando com energia — e o fim de tarde, como transição entre o trabalho e a noite em família. Em ambos, o formato é o mesmo: sessões objetivas, sem enrolação, com cada minuto planejado.</p>
 <h3>Como funciona na prática</h3>
@@ -87112,6 +87157,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Leitura do platô:</strong> quando a balança trava, o profissional experiente sabe se o problema é treino, recuperação ou expectativa — e ajusta antes de você desanimar.</li>
 <li><strong>Compromisso real:</strong> ter alguém tocando a campainha do Tamboré 3 no horário marcado elimina a negociação interna do "hoje não".</li>
 </ul>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-8-foto.webp" alt="Montinho, personal trainer no Tamboré 3, em estádio de futebol: rotina ativa fora da academia" title="Personal Trainer no Tamboré 3 — Montinho Personal Trainer" width="901" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Emagrecimento sustentável nasce de uma rotina ativa, dentro e fora da academia.</figcaption>
+</figure>
+
 <h2>Como funciona o processo de emagrecimento no Tamboré 3</h2>
 <h3>1. Avaliação inicial</h3>
 <p>Composição corporal, medidas, histórico de saúde e de tentativas anteriores, análise de movimento. Aqui nasce o plano — realista, para a sua rotina, não a de um atleta.</p>
@@ -87186,6 +87236,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Volume semanal:</strong> séries totais por grupo muscular, distribuídas de forma inteligente pela semana.</li>
 <li><strong>Progressão:</strong> mais carga, mais repetições, mais amplitude ou cadência mais controlada, semana após semana.</li>
 </ul>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-tambore-11-foto.webp" alt="Antes e depois de Montinho, personal trainer no Tamboré 4: de acima do peso ao físico definido com musculação" title="Personal Trainer no Tamboré 4 — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Extrair o máximo da estrutura do Tamboré 4 exige método: a transformação do próprio Montinho.</figcaption>
+</figure>
+
 <h2>Como extrair o máximo da estrutura do Tamboré 4</h2>
 <p>Muitos condomínios da região contam com academia própria — e a do seu condomínio pode se tornar seu melhor centro de treino com a orientação certa. O papel do personal é justamente adaptar o programa ao que existe:</p>
 <table>
@@ -87259,6 +87314,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Cérebro e humor:</strong> exercício regular está associado a melhor cognição, sono e disposição.</li>
 </ul>
 <p>A própria OMS recomenda que adultos mais velhos façam, além dos 150 minutos semanais de atividade, treino de força e exercícios de equilíbrio ao menos duas a três vezes por semana (<a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" rel="noopener" target="_blank">diretriz completa</a>).</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-12-foto.webp" alt="Montinho, personal trainer no Tamboré 5, na academia em selfie no espelho após o treino" title="Personal Trainer no Tamboré 5 — Montinho Personal Trainer" width="900" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino 50+ com segurança e progressão, acompanhado presencialmente no Tamboré 5.</figcaption>
+</figure>
+
 <h2>Segurança em primeiro lugar: como o treino 50+ funciona no Tamboré 5</h2>
 <h3>Avaliação criteriosa antes de qualquer exercício</h3>
 <p>Histórico médico, medicações, cirurgias, dores e limitações — tudo mapeado na avaliação inicial, em diálogo com as orientações do seu médico. Nada de protocolo genérico.</p>
@@ -87329,6 +87389,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Consistência realista</strong> — um plano que cabe na sua rotina no Tamboré 6, e não uma maratona insustentável.</li>
 </ul>
 <p>A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener">Organização Mundial da Saúde</a> recomenda treino de fortalecimento muscular ao menos duas vezes por semana — e para recomposição corporal, esse é o mínimo, não o teto.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-zero-foto.webp" alt="Montinho, personal trainer no Tamboré 6, a caminho do atendimento em condomínio com mochila de treino" title="Personal Trainer no Tamboré 6 — Montinho Personal Trainer" width="901" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento presencial no condomínio: o treino vai até o morador do Tamboré 6.</figcaption>
+</figure>
+
 <h2>Como funciona o atendimento no Tamboré 6</h2>
 <p>Tudo começa com uma avaliação inicial no próprio condomínio: histórico de treino, composição corporal, mobilidade, rotina e objetivos. A partir daí, o treino acontece onde fizer mais sentido para você:</p>
 <ol>
@@ -87401,6 +87466,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>A exposição</strong> — você aprende técnica e evolui carga sem plateia;</li>
 <li><strong>A atenção dividida</strong> — 100% da sessão é sobre você, sua postura, sua execução.</li>
 </ul>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-11-foto.webp" alt="Montinho, personal trainer no Tamboré 7, em pose de costas ao ar livre com vista para o mar" title="Personal Trainer no Tamboré 7 — Montinho Personal Trainer" width="900" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Acompanhamento individual no Tamboré 7 com quem vive o treino de força na prática.</figcaption>
+</figure>
+
 <h2>Como é o treino feminino com acompanhamento individual</h2>
 <p>Esqueça a ideia de "treininho leve para mulher". O trabalho começa com uma avaliação inicial no condomínio — histórico, postura, mobilidade, fases da vida (pós-parto, menopausa, rotina de sono) — e evolui para um plano com treino de força como espinha dorsal. A pesquisa é clara: o fortalecimento muscular está associado a menor risco de mortalidade e melhor saúde metabólica, como mostra <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener">esta revisão publicada no PubMed</a>.</p>
 <h3>Onde acontece o treino no Tamboré 7</h3>
@@ -87470,6 +87540,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Doses progressivas</strong> — a intensidade sobe conforme o corpo se adapta, e não conforme a ansiedade manda;</li>
 <li><strong>Zero constrangimento</strong> — o treino é na sua casa ou na academia do condomínio, só você e o profissional.</li>
 </ol>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-10-foto.webp" alt="Montinho, personal trainer no Tamboré 10, mantendo o físico com treino consistente mesmo em viagem" title="Personal Trainer no Tamboré 10 — Montinho Personal Trainer" width="901" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Constância que acompanha a rotina do morador do Tamboré 10, dentro e fora de casa.</figcaption>
+</figure>
+
 <h2>Tamboré 10: seu condomínio como ponto de partida</h2>
 <p>O atendimento no Tamboré 10 funciona de forma simples. Depois da avaliação inicial, o treino acontece onde for mais confortável: na sua residência, com equipamentos portáteis levados pelo personal quando necessário, ou na academia do condomínio — muitos condomínios da região contam com academia própria, e a do seu pode se tornar seu melhor centro de treino com a orientação certa. Sem trânsito na Castelo Branco, sem catraca, sem desculpa.</p>
 <h2>Veja como é o início da jornada</h2>
@@ -87541,6 +87616,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Recuperação negligenciada</strong> — sono, estresse e pausas tratados como detalhe, quando são metade da equação.</li>
 </ul>
 <p>A ciência é clara sobre o valor do treino de força bem dosado — <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener">esta revisão no PubMed</a> associa o fortalecimento muscular a benefícios profundos de saúde — mas dose e variação são exatamente o que se perde treinando no piloto automático.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-tambore-11-foto.webp" alt="Antes e depois de Montinho, personal trainer no Tamboré 11: de acima do peso ao físico definido com periodização" title="Personal Trainer no Tamboré 11 — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Periodização na prática: a transformação do Montinho, personal trainer no Tamboré 11.</figcaption>
+</figure>
+
 <h2>Periodização: o antídoto técnico</h2>
 <p>Periodizar é organizar o treino em ciclos com propósitos distintos — acúmulo de volume, intensificação, recuperação estratégica — de modo que cada fase prepare a próxima. Na prática, no Tamboré 11, isso significa que seu treino deixa de ser uma sequência de sessões soltas e vira um projeto com começo, meio e checkpoint.</p>
 <h3>As variáveis que o personal manipula por você</h3>
@@ -87606,6 +87686,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Sim, o <strong>Quintas de Tamboré</strong> conta com atendimento de personal trainer a domicílio: Montinho, com mais de 20 anos de experiência na região de Alphaville, Barueri e Santana de Parnaíba, atende moradores do condomínio combinando treino em casa, em áreas externas e na academia do próprio residencial — a variedade como ferramenta, não como enfeite.</p>
 <h2>Monotonia: o assassino silencioso da constância</h2>
 <p>Poucas pessoas desistem do treino porque ele é difícil. A maioria desiste porque ele fica <em>chato</em>. A repetição do mesmo cenário e da mesma rotina esvazia a motivação muito antes de esvaziar o corpo. A resposta não é trocar de treino toda semana ao acaso — é ter um programa que alterna ambientes e estímulos de forma planejada, mantendo a progressão intacta.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-quintas-de-tambore-foto.webp" alt="Antes e depois de Montinho, personal trainer no Quintas de Tamboré: evolução de composição corporal com treino de força" title="Personal Trainer no Quintas de Tamboré — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Um único programa, três ambientes: a evolução do Montinho, personal trainer no Quintas de Tamboré.</figcaption>
+</figure>
+
 <h2>Três ambientes, um único programa</h2>
 <p>No Quintas de Tamboré, o desenho do treino pode aproveitar o que o seu estilo de moradia oferece:</p>
 <h3>1. Dentro de casa</h3>
@@ -87676,6 +87761,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Vida ativa em contato com o verde: o diferencial do Green Tamboré</h2>
 <p>Treinar ao ar livre não é apenas agradável — é estratégico. Exercício em contato com áreas verdes tende a aumentar a adesão, reduzir a percepção de esforço e melhorar o humor. Muitos condomínios da região contam com espaços abertos, pistas de caminhada e áreas de lazer que se transformam em um verdadeiro centro de treino funcional com a orientação certa.</p>
 <p>Um circuito funcional bem montado usa o que o ambiente oferece: bancos para exercícios de empurrar e subir, gramados para trabalho de solo, trajetos internos para intervalos de caminhada e corrida. Somado a elásticos, halteres e TRX portátil, o resultado é um treino completo — força, cardio e mobilidade — sem sair do condomínio.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-5-foto.webp" alt="Antes e depois de Montinho, personal trainer no Green Tamboré: da adolescência ao físico atual" title="Personal Trainer no Green Tamboré — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O antes e depois do Montinho, personal trainer que atende no Green Tamboré.</figcaption>
+</figure>
+
 <h2>Como funciona o atendimento de personal trainer no Green Tamboré</h2>
 <ol>
 <li><strong>Avaliação inicial:</strong> histórico de saúde, condicionamento, objetivos e mapeamento dos espaços disponíveis (sua casa, áreas comuns, academia do condomínio, se houver).</li>
@@ -87760,6 +87850,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>40–48 min:</strong> finalizador metabólico ou trabalho de core</li>
 <li><strong>48–50 min:</strong> desaquecimento e registro da sessão</li>
 </ul>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/arena-18-alphaville.webp" alt="Montinho, personal trainer no Boulevard Tamboré, na área de musculação de academia em Alphaville" title="Personal Trainer no Boulevard Tamboré — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento no Boulevard Tamboré: em casa, na academia do condomínio ou em academia próxima.</figcaption>
+</figure>
+
 <h2>Como funciona o atendimento no Boulevard Tamboré</h2>
 <p>Tudo começa com uma <strong>avaliação inicial</strong>: histórico de saúde, objetivos, rotina e um reconhecimento da academia do prédio. Muitos condomínios da região contam com academia própria — e a do seu condomínio pode se tornar seu melhor centro de treino com a orientação certa. Quando falta algum equipamento, o personal leva materiais portáteis (elásticos, halteres, TRX) para completar o estímulo. Se preferir privacidade total, a sessão acontece dentro do apartamento.</p>
 <h2>Onde treinar? Um comparativo honesto</h2>
@@ -87829,6 +87924,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Circuito em família:</strong> em datas específicas, atividades funcionais adaptadas por idade transformam o exercício em momento de convivência.</li>
 </ul>
 <p>Há também um efeito silencioso: constância. Estudos indicam que treinar acompanhado aumenta a adesão ao exercício — e a <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity">OMS</a> lembra que adultos precisam de pelo menos 150 minutos semanais de atividade moderada, enquanto crianças e adolescentes precisam de cerca de 60 minutos por dia.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/ironberg-alphaville-sp.webp" alt="Montinho, personal trainer no Parque Tamboré, executando exercício em máquina de academia em Alphaville" title="Personal Trainer no Parque Tamboré — Montinho Personal Trainer" width="1600" height="2844" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Execução técnica em cada exercício: a base do atendimento no Parque Tamboré.</figcaption>
+</figure>
+
 <h2>Como funciona o atendimento no Parque Tamboré</h2>
 <p>O processo começa com uma <strong>avaliação inicial de cada participante</strong>: histórico de saúde, condicionamento, objetivos e preferências. Depois, definimos o cenário de treino — sua casa, as áreas comuns ou a academia do condomínio. Muitos condomínios da região contam com academia própria, e a do seu pode se tornar o centro de treino da família com a orientação certa. Quando necessário, levo equipamentos portáteis para garantir o estímulo completo.</p>
 <h3>Objetivos diferentes, mesma sessão: como isso é possível?</h3>
@@ -87900,6 +88000,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>A progressão</strong> é recalculada continuamente, sessão a sessão, e não a cada troca trimestral de ficha.</li>
 </ul>
 <blockquote>Personalização não é um adicional do serviço. É o serviço. Todo o resto é treino genérico entregue com embalagem melhor.</blockquote>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-academia-arena-18.webp" alt="Antes e depois de Montinho, personal trainer no Premium Tamboré: transformação corporal com método científico" title="Personal Trainer no Premium Tamboré — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Resultado real com método: o antes e depois do Montinho, personal trainer no Premium Tamboré.</figcaption>
+</figure>
+
 <h2>Como funciona o atendimento no Premium Tamboré</h2>
 <h3>1. Avaliação profunda</h3>
 <p>Anamnese de saúde, análise de movimento, testes de força e condicionamento, mapeamento de rotina e agenda. É a etapa que separa um programa sob medida de uma planilha adaptada.</p>
@@ -87974,6 +88079,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Academia do condomínio</strong> (quando disponível) → base de força com progressão de cargas</li>
 <li><strong>Quadras e piscina</strong> → condicionamento complementar e lazer ativo com a família</li>
 </ul>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-6-foto.webp" alt="Montinho, personal trainer no Resort Tamboré, em selfie na academia após o treino" title="Personal Trainer no Resort Tamboré — Montinho Personal Trainer" width="901" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Do lazer ao resultado: quem acompanha o treino no Resort Tamboré vive o que ensina.</figcaption>
+</figure>
+
 <h2>Do lazer ao resultado: o que muda com método</h2>
 <table>
 <tr><th>Uso da estrutura</th><th>Sem método (lazer ocasional)</th><th>Com método (treino orientado)</th></tr>
@@ -88045,6 +88155,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   <li><strong>Sono reparador:</strong> é durante o descanso que músculo cresce e gordura cede;</li>
   <li><strong>Hábitos sustentáveis:</strong> pequenas rotinas diárias que mantêm o corpo em movimento entre as sessões.</li>
 </ul>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-ironberg-alphaville.webp" alt="Montinho, personal trainer no Ghaia Tamboré, na área de treino de academia em Alphaville" title="Personal Trainer no Ghaia Tamboré — Treino em Casa — Montinho Personal Trainer" width="1600" height="1734" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino em casa no Ghaia Tamboré com a estrutura mínima e a técnica máxima.</figcaption>
+</figure>
 
 <h2>Como funciona o atendimento no Ghaia Tamboré</h2>
 <p>Tudo começa com uma avaliação inicial: histórico de saúde, rotina de sono, nível de estresse, objetivos e espaço disponível. Muitos condomínios da região contam com academia própria — e a do seu condomínio pode se tornar seu melhor centro de treino com a orientação certa. Quando o treino acontece dentro de casa, equipamentos portáteis resolvem: elásticos, halteres, kettlebell e o peso do próprio corpo.</p>
@@ -88123,6 +88238,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   <li><strong>Ajuste em tempo real:</strong> se o dia pede menos intensidade ou o ombro reclama, a sessão muda na hora;</li>
   <li><strong>Revisão periódica:</strong> o plano evolui junto com você, medido por progresso real, não por sensação.</li>
 </ol>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-5-foto.webp" alt="Antes e depois de Montinho, personal trainer no The Penthouses Tamboré: da adolescência ao físico atual" title="Personal Trainer no The Penthouses Tamboré — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Em casa ou na academia do condomínio: a transformação do Montinho, personal trainer no The Penthouses.</figcaption>
+</figure>
 
 <h2>Treino no The Penthouses Tamboré: em casa ou na academia do condomínio</h2>
 <p>Muitos condomínios da região contam com academia própria — e a do seu condomínio pode se tornar seu melhor centro de treino com a orientação certa. Quando a preferência é treinar dentro de casa, equipamentos portáteis selecionados garantem estímulo completo de força. Privacidade total, sem deslocamento, no seu horário.</p>
