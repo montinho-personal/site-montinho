@@ -90244,7 +90244,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Não tenho tempo para treinar." Em mais de 20 anos de musculação, essa é a frase que eu mais ouvi. E eu entendo: agenda cheia, trânsito, filhos, reuniões que atravessam o horário do almoço. A boa notícia é direta: <strong>treino de 30 minutos funciona</strong> — desde que seja bem montado.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-de-30-minutos-funciona-infographic.svg" alt="Infográfico sobre Treino de 30 Minutos Funciona? Como Ter Resultado com Pouco Tempo — Montinho Personal Trainer" title="Treino de 30 Minutos Funciona? Como Ter Resultado com Pouco " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-de-30-minutos-funciona.webp" alt="Arte de capa: corredor estilizado saindo de um cronômetro de 30 minutos, com os ícones constância, intensidade e foco — Treino de 30 Minutos Funciona?, Montinho Personal Trainer" title="Treino de 30 Minutos Funciona? — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino de 30 minutos funciona? Quando pouco tempo gera resultado.</figcaption>
 </figure>
 
 
@@ -95764,7 +95765,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>"Musculação rejuvenesce?" É uma pergunta que ouço cada vez mais, e ela merece uma resposta honesta. Não, treinar não vai te devolver a pele de 20 anos nem parar o relógio. Ninguém faz isso. Mas se a pergunta é "musculação muda a forma como você envelhece?", então a resposta é um sim retumbante, apoiado pela ciência.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/musculacao-rejuvenesce-infographic.svg" alt="Infográfico sobre Musculação Rejuvenesce? O Efeito do Treino no Envelhecimento — Montinho Personal Trainer" title="Musculação Rejuvenesce? O Efeito do Treino no Envelhecimento" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/musculacao-rejuvenesce.webp" alt="Arte de capa: homem maduro de cabelos grisalhos e braços cruzados, com o texto Musculação Rejuvenesce? — mais força, mais energia, mais vida — Montinho Personal Trainer" title="Musculação Rejuvenesce? — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Musculação rejuvenesce? O efeito do treino de força no envelhecimento.</figcaption>
 </figure>
 
 
