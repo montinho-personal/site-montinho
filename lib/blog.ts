@@ -16147,6 +16147,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Você pode ler mais sobre essa trajetória na <a href="/minha-historia">minha história</a>. O que importa aqui é o reflexo prático: entendo o que o aluno sente quando não está progredindo, porque já estive lá. E entendo o que muda quando o método está certo.</p>
 
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-zero-foto.webp" alt="Montinho, personal trainer no Alphaville Residencial Zero, a caminho do atendimento em condomínio com mochila de treino" title="Personal Trainer no Alphaville Residencial Zero — Montinho Personal Trainer" width="901" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atendimento presencial no condomínio: o treino vai até o morador do Residencial Zero.</figcaption>
+</figure>
+
 <h2>Como funciona o protocolo individualizado no Residencial Zero</h2>
 
 <p>Todo atendimento começa com uma avaliação completa: histórico de saúde, objetivos reais, limitações físicas, disponibilidade de treino e rotina da semana. Sem essa base, qualquer protocolo é tentativa e erro.</p>
@@ -16244,6 +16249,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Na prática, o trabalho vai muito além de contar repetições. O processo começa com uma avaliação física completa: composição corporal, percentual de gordura, histórico de lesões, padrões de movimento, postura e nível atual de força e condicionamento físico. É esse diagnóstico que define o ponto de partida real — não uma ficha genérica.</p>
 
 <p>A partir daí, entra a periodização: o planejamento das fases do treino ao longo das semanas e meses, com progressão de carga estruturada, controle de volume e reavaliações periódicas. Musculação, treinamento funcional, trabalho de mobilidade e flexibilidade e condicionamento cardiovascular são combinados conforme o objetivo — emagrecimento, hipertrofia, resistência ou simplesmente mais qualidade de vida.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/arena-18-alphaville.webp" alt="Montinho, personal trainer que atende o Alphaville Residencial 1, na área de musculação de academia em Alphaville" title="Personal Trainer no Alphaville Residencial 1 — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino individualizado para moradores do Residencial 1, em casa, no condomínio ou em academia próxima.</figcaption>
+</figure>
 
 <h2>Treino individualizado: o que isso significa na prática no Residencial 1</h2>
 
@@ -16429,6 +16439,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para moradores do Residencial 2 com agenda apertada, isso não é detalhe — é a diferença entre treino que produz resultado e treino que apenas consome tempo.</p>
 
+<figure style="margin:2rem 0">
+  <img src="/blog-images/ironberg-alphaville-sp.webp" alt="Montinho, personal trainer do Alphaville Residencial 2, executando exercício em máquina de academia em Alphaville" title="Personal Trainer no Alphaville Residencial 2 — Montinho Personal Trainer" width="1600" height="2844" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Protocolo eficiente: cada exercício com propósito para quem tem pouco tempo no Residencial 2.</figcaption>
+</figure>
+
 <h2>O que inclui o protocolo individualizado no Residencial 2</h2>
 
 <p>O protocolo começa com uma avaliação completa e resulta num programa estruturado que inclui:</p>
@@ -16581,6 +16596,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Um dos equívocos mais comuns em treino de força é priorizar carga antes de dominar a execução. O resultado é certo: compensação muscular, desgaste articular e, eventualmente, lesão. Com <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>, a técnica é estabelecida primeiro — e a carga progride sobre uma base sólida.</p>
 
 <p>Essa sequência correta não apenas previne lesão. Ela também maximiza o estímulo muscular, porque quando a execução está correta, o músculo certo é recrutado com a intensidade certa. O resultado aparece mais rápido — e se mantém.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-ironberg-alphaville.webp" alt="Montinho, personal trainer que atende o Alphaville Residencial 3, na área de treino de academia em Alphaville" title="Personal Trainer no Alphaville Residencial 3 — Montinho Personal Trainer" width="1600" height="1734" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Progressão estruturada e execução técnica: a base do acompanhamento no Residencial 3.</figcaption>
+</figure>
 
 <h2>Progressão estruturada: o que separa quem evolui de quem estagna</h2>
 
@@ -16748,6 +16768,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Aplicar esses princípios de forma individualizada — respeitando o nível, as limitações e o objetivo de cada aluno — é o que faço há mais de 20 anos como <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>.</p>
 
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-academia-arena-18.webp" alt="Antes e depois de Montinho, personal trainer do Alphaville Residencial 4: transformação corporal com método científico" title="Personal Trainer no Alphaville Residencial 4 — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Resultado real com método: o antes e depois do próprio Montinho, personal trainer no Residencial 4.</figcaption>
+</figure>
+
 <h2>Perfil dos moradores do Residencial 4: agenda cheia não pode ser desculpa nem obstáculo</h2>
 
 <p>O Alphaville Residencial 4 concentra um perfil muito característico: executivos, empresários e profissionais liberais com agenda comprimida, reuniões que atravessam o dia e, muitas vezes, viagens frequentes. Os objetivos que mais escuto por aqui são recomposição corporal (perder gordura sem perder massa muscular), reversão do sedentarismo acumulado em anos de escritório e melhora de postura e disposição.</p>
@@ -16911,6 +16936,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Quem mora no Alphaville Residencial 5 tem acesso a uma das regiões com melhor qualidade de vida do estado de São Paulo — mas também convive com os desafios logísticos que isso implica. O deslocamento, a rotina de condomínio e a vida familiar estruturada criam uma agenda específica que o treino precisa respeitar.</p>
 
 <p>Montar um protocolo de treino sem considerar essa realidade é montar um protocolo para um aluno genérico imaginário. Meu trabalho começa entendendo a realidade concreta de cada morador — e construindo o treino a partir daí.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-5-foto.webp" alt="Antes e depois de Montinho, personal trainer do Alphaville Residencial 5 em Santana de Parnaíba: da adolescência ao físico atual" title="Personal Trainer no Alphaville Residencial 5 — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Da adolescência ao físico de hoje: a transformação que orienta o treino de cada fase da vida no Residencial 5.</figcaption>
+</figure>
 
 <h2>Perfil dos moradores: famílias multigeracionais sob o mesmo teto</h2>
 
@@ -17083,6 +17113,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Com acompanhamento exclusivo, os desvios são identificados e corrigidos antes de virarem hábito. Isso é mais valioso do que qualquer planilha de treino — porque a planilha perfeita executada com técnica ruim entrega resultado ruim.</p>
 
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-6-foto.webp" alt="Montinho, personal trainer do Alphaville Residencial 6, em selfie na academia após o treino" title="Personal Trainer no Alphaville Residencial 6 — Montinho Personal Trainer" width="901" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Atenção exclusiva: quem acompanha o treino no Residencial 6 vive o que ensina.</figcaption>
+</figure>
+
 <h2>Como funciona o atendimento no Alphaville Residencial 6</h2>
 
 <p>O treinamento personalizado se adapta ao espaço que você tem — não o contrário. Os formatos mais comuns entre moradores do Residencial 6 são:</p>
@@ -17252,6 +17287,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para moradores do Residencial 8 que querem progressão de longo prazo — não apenas nos próximos 2 meses, mas nos próximos 2 anos — periodização é a ferramenta essencial. É o que transforma treino em estratégia.</p>
 
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-8-foto.webp" alt="Montinho, personal trainer do Alphaville Residencial 8, em estádio de futebol: rotina ativa fora da academia" title="Personal Trainer no Alphaville Residencial 8 — Montinho Personal Trainer" width="901" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Constância dentro e fora da academia: a trajetória que embasa o trabalho no Residencial 8.</figcaption>
+</figure>
+
 <h2>Minha trajetória com o treino de força</h2>
 
 <p>Comecei na musculação pela necessidade de transformar meu próprio corpo — e entendi na prática o que é treinar muito sem resultado, antes de entender o que é treinar com método. Esse processo está descrito na <a href="/minha-historia">minha história</a>. O que ficou dessa experiência é a clareza sobre o que realmente funciona — e o comprometimento de aplicar isso em cada aluno.</p>
@@ -17372,6 +17412,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 </ul>
 
 <p>Como <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a> com 20 anos de experiência, vi esses benefícios se materializarem em centenas de alunos. Não como estatística — como realidade cotidiana de pessoas reais.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-9-foto.webp" alt="Montinho, personal trainer do Alphaville Residencial 9, mostrando o desenvolvimento das costas em pose no espelho da academia" title="Personal Trainer no Alphaville Residencial 9 — Montinho Personal Trainer" width="739" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Força e longevidade: treino de costas bem executado protege a coluna por décadas.</figcaption>
+</figure>
 
 <h2>Como funciona o acompanhamento no Residencial 9</h2>
 
@@ -17546,6 +17591,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para que esse resultado aconteça, o protocolo precisa ser sustentável desde o início. Carga adequada ao nível atual, progressão gradual, alimentação que não exige heroísmo cotidiano e frequência de treino compatível com a vida real do aluno.</p>
 
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-10-foto.webp" alt="Montinho, personal trainer do Alphaville Residencial 10, em viagem à praia mantendo o físico com treino consistente" title="Personal Trainer no Alphaville Residencial 10 — Montinho Personal Trainer" width="901" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Resultado duradouro é o que se mantém nas férias, nas viagens e na rotina do Residencial 10.</figcaption>
+</figure>
+
 <h2>Como o protocolo individualizado é construído</h2>
 
 <p>Tudo parte de uma avaliação física detalhada: composição corporal, percentual de gordura, medidas, força, mobilidade, histórico de lesões e rotina real de trabalho e sono. Com esses dados, monto a periodização — treino organizado em ciclos, com progressão de carga planejada — combinando musculação, condicionamento físico e, quando faz sentido, treinamento funcional.</p>
@@ -17712,6 +17762,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>O cardio queima calorias durante o exercício. O <a href="https://pubmed.ncbi.nlm.nih.gov/24734894/" target="_blank" rel="noopener noreferrer">treino de força muda o metabolismo basal</a> — a quantidade de energia que o corpo gasta em repouso. Mais massa muscular significa maior gasto calórico mesmo sem treinar. Essa é a diferença entre emagrecer enquanto perde músculo (efeito sanfona praticamente garantido) e emagrecer enquanto preserva e constrói músculo (resultado que se mantém).</p>
 
 <p>Com <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>, o protocolo de treino é construído para maximizar estímulo muscular enquanto o déficit calórico cuida da gordura. Os dois objetivos em paralelo — com a proporção certa para cada fase.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-11-foto.webp" alt="Montinho, personal trainer do Alphaville Residencial 11, em pose de costas ao ar livre com vista para o mar e as montanhas" title="Personal Trainer no Alphaville Residencial 11 — Montinho Personal Trainer" width="900" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Composição corporal construída com treino de força: o método aplicado no Residencial 11.</figcaption>
+</figure>
 
 <h2>Como funciona o processo no Residencial 11, passo a passo</h2>
 
@@ -17893,6 +17948,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Para alunos acima de 60 anos, o treino de força é uma das intervenções mais importantes para preservar autonomia e qualidade de vida. Prevenção de quedas, manutenção de massa muscular, saúde óssea, controle metabólico — todos esses benefícios estão documentados pela ciência e são verificáveis na prática com meus alunos.</p>
 
 <p>A terceira idade não é contraindicação para treino — é uma fase que exige treino mais cuidadoso, não treino menos eficiente. Para os avós ativos do Residencial 12, o <a href="/blog/treino-funcional-para-idosos">treino funcional para idosos</a> complementa a musculação com padrões de movimento que fazem diferença direta no dia a dia: subir escadas, carregar netos, levantar do chão com segurança.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-12-foto.webp" alt="Montinho, personal trainer do Alphaville Residencial 12, na academia em selfie no espelho após o treino" title="Personal Trainer no Alphaville Residencial 12 — Montinho Personal Trainer" width="900" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino que acompanha cada fase da vida, com acompanhamento presencial no Residencial 12.</figcaption>
+</figure>
 
 <h2>Como funciona o atendimento no Alphaville Residencial 12</h2>
 
