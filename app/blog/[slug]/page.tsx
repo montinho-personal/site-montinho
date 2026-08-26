@@ -3,11 +3,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { marked } from "marked";
 import { getBlogPost, getRelatedPosts, getPostCoverImage, blogPosts, SITE_URL } from "@/lib/blog";
-import { getWhatsAppUrl } from "@/lib/whatsapp";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import ArticleReadTracker from "@/components/analytics/ArticleReadTracker";
 import ArticleLightbox from "@/components/blog/ArticleLightbox";
 import AskEmbed from "@/components/ask/AskEmbed";
+import ContextualCTA from "@/components/cta/ContextualCTA";
+import { planCTAs } from "@/lib/cta/classify";
+import { splitAtNaturalBreak } from "@/lib/cta/placement";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -60,6 +62,12 @@ export default async function BlogPost({ params }: Props) {
   const relatedPosts = getRelatedPosts(slug, post.category);
   const contentHtml = marked(post.content) as string;
   const cover = getPostCoverImage(post);
+
+  // Plano de CTA: classificação determinística no build, nunca em runtime.
+  const cta = planCTAs(post);
+  // Só divide o HTML se houver um CTA de meio E um ponto de corte editorial
+  // seguro. Sem os dois, o artigo fica inteiro e leva só o CTA final.
+  const split = cta.mid ? splitAtNaturalBreak(contentHtml) : null;
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -187,10 +195,22 @@ export default async function BlogPost({ params }: Props) {
       {/* Content */}
       <article className="py-16 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            className="prose-blog"
-            dangerouslySetInnerHTML={{ __html: contentHtml }}
-          />
+          {split && cta.mid ? (
+            <>
+              <div className="prose-blog" dangerouslySetInnerHTML={{ __html: split.before }} />
+              <ContextualCTA
+                cta={cta.mid}
+                position="mid_article"
+                articleSlug={post.slug}
+                articleCategory={post.category}
+                cluster={cta.cluster}
+                stage={cta.stage}
+              />
+              <div className="prose-blog" dangerouslySetInnerHTML={{ __html: split.after }} />
+            </>
+          ) : (
+            <div className="prose-blog" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          )}
           <ArticleLightbox />
 
           {/* Video */}
@@ -209,10 +229,26 @@ export default async function BlogPost({ params }: Props) {
             </div>
           )}
 
-          {/* Pergunte ao Montinho — entrada leve, sem carregar o chat aqui */}
-          <div className="mt-14">
-            <AskEmbed context={{ slug: post.slug, title: post.title, category: post.category }} />
-          </div>
+          {/* CTA contextual final — a próxima ação escolhida para ESTE artigo. */}
+          <ContextualCTA
+            cta={cta.end}
+            position="end_article"
+            articleSlug={post.slug}
+            articleCategory={post.category}
+            cluster={cta.cluster}
+            stage={cta.stage}
+          />
+
+          {/* Dedupe: o embed do Pergunte só aparece quando nenhum dos CTAs
+              contextuais já leva para lá — senão seriam duas caixas pedindo
+              a mesma ação, lado a lado. */}
+          {cta.end.primary.destination !== "ask" &&
+            cta.end.secondary?.destination !== "ask" &&
+            cta.mid?.primary.destination !== "ask" && (
+              <div className="mt-14">
+                <AskEmbed context={{ slug: post.slug, title: post.title, category: post.category }} />
+              </div>
+            )}
 
           {/* Author box */}
           <div className="mt-16 pt-8 border-t border-white/10 flex items-start gap-5">
@@ -230,47 +266,6 @@ export default async function BlogPost({ params }: Props) {
             </div>
           </div>
 
-          {/* CTA */}
-          <div className="mt-12 pt-10 border-t border-white/10">
-            <div className="bg-white/[0.03] border border-white/10 px-8 py-7">
-              <h2
-                className="text-lg font-bold text-white mb-4"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-              >
-                Quer transformar seu corpo?
-              </h2>
-              <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                Se você chegou até aqui, provavelmente está buscando uma forma segura e eficiente de emagrecer ou transformar seu corpo.
-              </p>
-              <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                Se deseja um acompanhamento individualizado com um{" "}
-                <strong className="text-white font-semibold">Personal Trainer em Alphaville</strong>{" "}
-                ou uma{" "}
-                <strong className="text-white font-semibold">Consultoria Online</strong>,
-                estou pronto para ajudar você a conquistar resultados reais, respeitando sua rotina e seus objetivos.
-              </p>
-              <p className="text-gray-300 text-xs leading-relaxed mb-3">
-                Não sabe qual estratégia faz mais sentido para a sua rotina?{" "}
-                <Link href="/diagnostico" className="underline underline-offset-2 decoration-1 hover:text-white transition-colors">
-                  Faça o Diagnóstico Montinho
-                </Link>{" "}
-                — gratuito, leva 1–2 minutos.
-              </p>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                Para saber mais,{" "}
-                <a
-                  href={getWhatsAppUrl()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold italic underline underline-offset-2 decoration-1 transition-opacity duration-200 hover:opacity-70"
-                  style={{ color: "#BA9E50" }}
-                >
-                  clique aqui
-                </a>
-                .
-              </p>
-            </div>
-          </div>
         </div>
       </article>
 
