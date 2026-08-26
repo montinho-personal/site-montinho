@@ -41,6 +41,11 @@ const CASOS: Array<[string, boolean]> = [
   ["cardio antes ou depois da musculação?", true],
   ["máquina ou peso livre?", true],
   ["treino de peito em casa", true],
+  // grafias compostas — vieram de um erro real de usuário em produção
+  ["Fullbody ou ABC?", true],
+  ["fullbody funciona?", true],
+  ["fullbody ou upperlower?", true],
+  ["treino ppl é bom?", true],
   // — deve recusar —
   ["qual o melhor investimento em criptomoedas", false],
   ["qual a melhor criptomoeda?", false],

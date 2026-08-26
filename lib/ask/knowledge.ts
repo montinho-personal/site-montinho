@@ -139,8 +139,26 @@ const SYNONYMS: Record<string, string[]> = {
   dieta: ["alimentacao", "nutricao", "deficit calorico"],
   iniciante: ["comecar", "começar", "primeira vez", "academia"],
   dor: ["lesao", "lesão", "dores"],
+  ppl: ["push pull legs"],
   caneta: ["ozempic", "mounjaro", "wegovy", "retatrutida", "tirzepatida", "semaglutida", "glp-1"],
 };
+
+/**
+ * Grafias compostas reescritas antes de qualquer processamento. Anexar como
+ * sinônimo não serve aqui: o termo original ("fullbody") continuaria na
+ * pergunta, nunca casaria com nada e derrubaria a cobertura da âncora.
+ */
+const REWRITES: Array<[RegExp, string]> = [
+  [/\bfull-?body\b/gi, "full body"],
+  [/\bupper-?lower\b/gi, "upper lower"],
+  [/\bpush-?pull(-?legs)?\b/gi, "push pull legs"],
+];
+
+export function rewriteQuery(q: string): string {
+  let out = q;
+  for (const [re, sub] of REWRITES) out = out.replace(re, sub);
+  return out;
+}
 
 function expandQuery(q: string): string {
   const nq = norm(q);
@@ -214,7 +232,8 @@ export interface PageContext {
 }
 
 export function retrieve(question: string, context?: PageContext): RetrievalResult {
-  const expanded = expandQuery(question);
+  const rewritten = rewriteQuery(question);
+  const expanded = expandQuery(rewritten);
   // Pontuação precisa sair antes de virar termo: "divisão?" normalizava para
   // "divisao?" e nunca casava com o slug "full-body-vs-divisao-abc". Toda
   // pergunta cuja palavra-chave era a última palavra caía em "sem resposta".
@@ -228,7 +247,7 @@ export function retrieve(question: string, context?: PageContext): RetrievalResu
   let evidence = 0;
 
   // 1) Docs de negócio (lexical simples sobre keywords)
-  const nq = norm(question);
+  const nq = norm(rewritten);
   const hasDomainHint = DOMAIN_HINT.test(nq);
   const bizHits = BUSINESS_DOCS.map((d) => ({
     d,
