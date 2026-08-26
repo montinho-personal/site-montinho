@@ -91,6 +91,17 @@ const ABRE_MAXIMO: Partial<Record<Horario, number>> = {
   manha: 8,
 };
 
+/**
+ * Normaliza hora de fechamento que passa da meia-noite.
+ *
+ * Uma academia que fecha à 0h fecha DEPOIS de uma que fecha às 22h — mas
+ * `0 < 22`. Sem isso, a que fica aberta até mais tarde é justamente a que
+ * seria descartada de quem só treina à noite. Tratamos 0h–4h como 24h–28h.
+ */
+function normalizaFechamento(h: number): number {
+  return h <= 4 ? h + 24 : h;
+}
+
 function avaliar(a: Academia, r: Respostas): Resultado {
   const criterios: Criterio[] = [];
   const ressalvas: string[] = [];
@@ -112,7 +123,7 @@ function avaliar(a: Academia, r: Respostas): Resultado {
     const abre24 = a.vinteQuatroHoras.valor === true;
     add(
       `Aberta no seu horário (${r.horario === "pos_22h" ? "depois das 22h" : "à noite"})`,
-      abre24 ? true : v === null ? null : v >= minFecha,
+      abre24 ? true : v === null ? null : normalizaFechamento(v) >= minFecha,
       "Horário de funcionamento não confirmado — vale checar com a unidade."
     );
   }

@@ -39,7 +39,11 @@ check(
   ACADEMIAS.every((a) => !a.artigoSlug || blogPosts.some((p) => p.slug === a.artigoSlug)),
   ACADEMIAS.filter((a) => a.artigoSlug && !blogPosts.some((p) => p.slug === a.artigoSlug)).map((a) => a.id).join(", ")
 );
-check("nenhuma academia encerrada na base ativa", ACADEMIAS.every((a) => a.status !== "encerrada"));
+check(
+  "toda academia encerrada continua registrada, com artigo",
+  ACADEMIAS.filter((a) => a.status !== "ativa").every((a) => !!a.artigoSlug),
+  ACADEMIAS.filter((a) => a.status !== "ativa" && !a.artigoSlug).map((a) => a.id).join(", ")
+);
 check(
   "todo campo confirmado tem fonte e data",
   ACADEMIAS.every((a) =>
@@ -93,6 +97,49 @@ console.log("=".repeat(60));
 check("mesmas respostas → mesmo resultado",
   JSON.stringify(recomendar(com({ horario: "noite" })).top.map((r) => r.academia.id)) ===
   JSON.stringify(recomendar(com({ horario: "noite" })).top.map((r) => r.academia.id)));
+
+console.log("\n" + "=".repeat(60) + "\nHORÁRIO QUE VIRA O DIA\n" + "=".repeat(60));
+
+/**
+ * Regressão real: a Bluefit fecha à meia-noite. Guardar isso como 0 e comparar
+ * cru faria a academia que fica aberta ATÉ MAIS TARDE ser a descartada de quem
+ * treina à noite, porque 0 < 21. Quem fecha depois da meia-noite tem de passar.
+ */
+{
+  const madrugada = ACADEMIAS.filter(
+    (a) => a.status === "ativa" && a.fechaDiaUtil.valor !== null && a.fechaDiaUtil.valor >= 23
+  );
+  check("existe alguma academia que fecha 23h ou depois", madrugada.length > 0);
+
+  for (const h of ["noite", "pos_22h"] as const) {
+    const rec = recomendar(com({ horario: h, regiao: "indiferente" }));
+    const nomes = rec.top.map((t) => t.academia.nome);
+    for (const a of madrugada) {
+      const res = rec.top.find((t) => t.academia.id === a.id);
+      if (!res) continue;
+      const crit = res.criterios.find((c) => c.rotulo.startsWith("Aberta no seu horário"));
+      check(
+        `${a.nome} passa no filtro de ${h}`,
+        !crit || crit.atende !== false,
+        `fecha às ${a.fechaDiaUtil.valor}h e foi marcada como incompatível`
+      );
+    }
+    check(`${h}: alguma recomendação sobrou`, nomes.length > 0);
+  }
+}
+
+console.log("\n" + "=".repeat(60) + "\nACADEMIA ENCERRADA\n" + "=".repeat(60));
+
+/** Recomendar academia que fechou é o pior erro possível da ferramenta. */
+{
+  const encerradas = ACADEMIAS.filter((a) => a.status !== "ativa");
+  const rec = recomendar(com({ regiao: "indiferente" }));
+  check(
+    "nenhuma academia encerrada aparece na recomendação",
+    !rec.top.some((t) => encerradas.some((e) => e.id === t.academia.id)),
+    encerradas.map((e) => e.nome).join(", ")
+  );
+}
 
 console.log("\n" + (falhas === 0 ? "TODOS OS TESTES PASSARAM" : `${falhas} FALHARAM`));
 process.exit(falhas === 0 ? 0 : 1);
