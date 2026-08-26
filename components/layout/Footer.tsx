@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer className="bg-black border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10">
           {/* Brand */}
           <div>
             <Link href="/" className="block mb-4">
@@ -53,6 +53,31 @@ export default function Footer() {
                   {link.label}
                 </Link>
               ))}
+            </nav>
+          </div>
+
+          {/* Ferramentas */}
+          <div>
+            <h3 className="text-gray-300 text-xs font-semibold tracking-[0.15em] uppercase mb-5" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+              Ferramentas Gratuitas
+            </h3>
+            <nav className="flex flex-col gap-4">
+              <Link href="/diagnostico" className="group block">
+                <span className="text-gray-400 group-hover:text-white text-sm transition-colors duration-200">
+                  Diagnóstico Montinho
+                </span>
+                <span className="block text-gray-600 text-xs mt-0.5 leading-relaxed">
+                  Descubra seu perfil em 1 minuto
+                </span>
+              </Link>
+              <Link href="/pergunte-ao-montinho" className="group block">
+                <span className="text-gray-400 group-hover:text-white text-sm transition-colors duration-200">
+                  Pergunte ao Montinho
+                </span>
+                <span className="block text-gray-600 text-xs mt-0.5 leading-relaxed">
+                  Tire dúvidas de treino na hora
+                </span>
+              </Link>
             </nav>
           </div>
 
