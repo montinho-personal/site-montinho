@@ -242,9 +242,10 @@ export default function AskMontinho({
         {messages.length === 0 && !loading && (
           <div>
             <p className="text-gray-300 text-sm leading-relaxed mb-4">
-              Oi! Posso buscar respostas nos conteúdos do site sobre musculação,
-              emagrecimento, exercícios e sobre o acompanhamento do Montinho. O que
-              você quer saber?
+              Oi! Pergunte o que quiser sobre musculação, emagrecimento, execução de
+              exercícios ou sobre o acompanhamento. Eu busco a resposta nos conteúdos
+              que o Montinho escreveu — experiência prática somada à evidência
+              científica — e te mostro de onde ela veio.
             </p>
             <p className="text-gray-600 text-xs uppercase tracking-[0.1em] mb-2">
               Você pode perguntar:
