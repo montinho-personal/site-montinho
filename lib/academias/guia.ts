@@ -81,7 +81,7 @@ export interface ItemGuia {
 }
 
 /**
- * As 16 unidades. Cada linha resume o que o artigo daquela academia já
+ * As unidades ativas e as encerradas que ainda têm artigo. Cada linha resume o que o artigo daquela academia já
  * defende — se você mudar a posição no artigo, mude aqui também.
  */
 export const ITENS: ItemGuia[] = [
@@ -131,12 +131,6 @@ export const ITENS: ItemGuia[] = [
     penseDuasVezes: "Sua rotina exige treinar em horários muito fora do comercial.",
   },
   {
-    id: "scelta-alphaville",
-    grupo: "bairro",
-    paraQuem: "Quem mora ou trabalha no Centro Comercial e valoriza proximidade acima de metragem.",
-    penseDuasVezes: "Você quer a maior variedade de equipamento da região.",
-  },
-  {
     id: "scelta-aldeia-da-serra",
     grupo: "bairro",
     paraQuem: "Quem é da Aldeia da Serra e não quer entrar em Alphaville para treinar.",
@@ -156,11 +150,12 @@ export const ITENS: ItemGuia[] = [
     paraQuem: "Quem quer ambiente premium com a operação de uma rede grande por trás.",
     penseDuasVezes: "Preço é o seu critério principal de decisão.",
   },
+
   {
-    id: "competition-alphaville",
+    id: "scelta-alphaville",
     grupo: "premium",
-    paraQuem: "Quem quer musculação em ambiente premium, com foco em sala de peso e não em variedade de aulas.",
-    penseDuasVezes: "Você procura clube completo, com piscina e agenda cheia de modalidades.",
+    paraQuem: "Quem trabalha no Centro Comercial e quer resolver musculação, aulas e funcional no mesmo lugar, sem atravessar Alphaville no fim do dia.",
+    penseDuasVezes: "Seu critério principal é mensalidade baixa — aqui você paga pelo ambiente e pela proximidade.",
   },
 
   // ── Propostas específicas ─────────────────────────────────────────────────
