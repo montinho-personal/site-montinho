@@ -110,6 +110,7 @@ export default function Footer() {
               <Link href="/personal-trainer-santana-de-parnaiba" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">Personal Trainer Santana de Parnaíba</Link>
               <Link href="/personal-trainer-tambore" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">Personal Trainer Tamboré</Link>
               <Link href="/blog/personal-trainer-aldeia-da-serra" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">Personal Trainer Aldeia da Serra</Link>
+              <Link href="/academias-alphaville" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">Academias de Alphaville</Link>
             </nav>
           </div>
 
