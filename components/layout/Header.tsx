@@ -15,6 +15,17 @@ const navLinks = [
   { href: "/contato", label: "Contato" },
 ];
 
+/**
+ * Ferramentas gratuitas. Ficam em grupo próprio no menu mobile, acima do
+ * atendimento local: são o diferencial do site e o item mais útil para quem
+ * ainda está decidindo — enterrá-las no rodapé só alcança quem rola até o fim.
+ */
+const toolLinks = [
+  { href: "/diagnostico", label: "Diagnóstico Montinho", hint: "Descubra seu perfil em 1 minuto" },
+  { href: "/treino-para-minha-rotina", label: "Treino Para Minha Rotina", hint: "A divisão que cabe na sua semana" },
+  { href: "/pergunte-ao-montinho", label: "Pergunte ao Montinho", hint: "Tire dúvidas de treino na hora" },
+];
+
 const localLinks = [
   { href: "/personal-trainer-alphaville", label: "Personal Trainer Alphaville" },
   { href: "/personal-trainer-barueri", label: "Personal Trainer Barueri" },
@@ -164,6 +175,25 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <div className="mt-4 pt-4 border-t border-white/10">
+              <p className="text-xs font-semibold tracking-[0.15em] uppercase px-2 mb-2" style={{ color: "#BA9E50" }}>
+                Ferramentas Gratuitas
+              </p>
+              {toolLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block py-2.5 px-2 border-b border-white/5 group"
+                >
+                  <span className="text-gray-300 group-hover:text-white text-sm font-medium transition-colors duration-200">
+                    {link.label}
+                  </span>
+                  <span className="block text-gray-400 text-xs mt-0.5">{link.hint}</span>
+                </Link>
+              ))}
+            </div>
+
             <div className="mt-4 pt-4 border-t border-white/10">
               <p className="text-gray-400 text-xs font-semibold tracking-[0.15em] uppercase px-2 mb-2">Atendimento Local</p>
               {localLinks.map((link) => (
