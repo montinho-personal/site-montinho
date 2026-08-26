@@ -66,7 +66,16 @@ console.log("\nCTA FINAL POR ID");
 [...porEnd.entries()].sort((a, b) => b[1] - a[1]).forEach(([k, v]) =>
   console.log(`  ${pad(k, 18)} ${v}`)
 );
-console.log("\nCTA DO MEIO");
+// Fase 1: o CTA final contextual não é renderizado, então o plano da página
+// usa renderEnd:false. Contamos aqui o que de fato vai ao ar.
+let fase1 = 0;
+for (const p of blogPosts) {
+  const plan = planCTAs(p, { renderEnd: false });
+  if (plan.mid && splitAtNaturalBreak(marked(p.content) as string)) fase1++;
+}
+console.log(`\nFASE 1 — artigos que recebem CTA do meio agora: ${fase1} (${((fase1 / blogPosts.length) * 100).toFixed(1)}%)`);
+
+console.log("\nCTA DO MEIO (plano completo, fase 2)");
 console.log(`  com CTA no meio         ${comMid}`);
 console.log(`  sem ponto de corte seguro ${midSuprimidoPorCorte}`);
 console.log(`  artigo curto / sem mid    ${blogPosts.length - comMid - midSuprimidoPorCorte}`);

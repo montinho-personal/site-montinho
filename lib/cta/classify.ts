@@ -263,7 +263,13 @@ export function allowsMidCta(post: BlogPost): boolean {
   return post.content.length >= 6000 && h2 >= 5;
 }
 
-export function planCTAs(post: BlogPost): CtaPlan {
+/**
+ * @param renderEnd  se o CTA final contextual será realmente renderizado.
+ *   Na fase 1 ele não é (o bloco final antigo segue no lugar), então o dedupe
+ *   contra ele precisa ser desligado — senão o CTA do meio se anula contra um
+ *   bloco que não existe na página.
+ */
+export function planCTAs(post: BlogPost, { renderEnd = true } = {}): CtaPlan {
   const auto = classify(post);
   const override = CTA_OVERRIDES[post.slug];
 
@@ -289,7 +295,8 @@ export function planCTAs(post: BlogPost): CtaPlan {
     const midId = override?.mid ?? MID_BY_CLUSTER[cluster];
     const candidate = midId ? CTA_REGISTRY[midId] ?? null : null;
     // Só entra se o artigo comporta e se a ação difere do CTA final.
-    if (candidate && (override?.mid || allowsMidCta(post)) && candidate.primary.destination !== end.primary.destination) {
+    const conflita = renderEnd && candidate?.primary.destination === end.primary.destination;
+    if (candidate && (override?.mid || allowsMidCta(post)) && !conflita) {
       mid = candidate;
     }
   }

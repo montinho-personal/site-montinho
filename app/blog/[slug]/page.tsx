@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { marked } from "marked";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { getBlogPost, getRelatedPosts, getPostCoverImage, blogPosts, SITE_URL } from "@/lib/blog";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import ArticleReadTracker from "@/components/analytics/ArticleReadTracker";
@@ -64,7 +65,16 @@ export default async function BlogPost({ params }: Props) {
   const cover = getPostCoverImage(post);
 
   // Plano de CTA: classificação determinística no build, nunca em runtime.
-  const cta = planCTAs(post);
+  //
+  // FASE 1 (atual): só o CTA do meio é renderizado. O bloco final continua
+  // sendo o antigo, igual em todos os artigos, para não alterar de uma vez os
+  // 813 links de WhatsApp e de /consultoria que hoje saem dos artigos — e para
+  // que exista base de comparação antes de mexer neles.
+  //
+  // FASE 2: trocar o bloco final por <ContextualCTA cta={cta.end}
+  // position="end_article" ...> e remover o bloco fixo abaixo. O plano de
+  // cta.end já está calculado e testado; só não está em uso.
+  const cta = planCTAs(post, { renderEnd: false });
   // Só divide o HTML se houver um CTA de meio E um ponto de corte editorial
   // seguro. Sem os dois, o artigo fica inteiro e leva só o CTA final.
   const split = cta.mid ? splitAtNaturalBreak(contentHtml) : null;
@@ -229,26 +239,14 @@ export default async function BlogPost({ params }: Props) {
             </div>
           )}
 
-          {/* CTA contextual final — a próxima ação escolhida para ESTE artigo. */}
-          <ContextualCTA
-            cta={cta.end}
-            position="end_article"
-            articleSlug={post.slug}
-            articleCategory={post.category}
-            cluster={cta.cluster}
-            stage={cta.stage}
-          />
-
-          {/* Dedupe: o embed do Pergunte só aparece quando nenhum dos CTAs
-              contextuais já leva para lá — senão seriam duas caixas pedindo
-              a mesma ação, lado a lado. */}
-          {cta.end.primary.destination !== "ask" &&
-            cta.end.secondary?.destination !== "ask" &&
-            cta.mid?.primary.destination !== "ask" && (
-              <div className="mt-14">
-                <AskEmbed context={{ slug: post.slug, title: post.title, category: post.category }} />
-              </div>
-            )}
+          {/* Dedupe: o embed do Pergunte só aparece quando o CTA do meio já
+              não leva para lá — senão seriam duas caixas pedindo a mesma ação
+              no mesmo artigo. */}
+          {cta.mid?.primary.destination !== "ask" && (
+            <div className="mt-14">
+              <AskEmbed context={{ slug: post.slug, title: post.title, category: post.category }} />
+            </div>
+          )}
 
           {/* Author box */}
           <div className="mt-16 pt-8 border-t border-white/10 flex items-start gap-5">
@@ -266,6 +264,47 @@ export default async function BlogPost({ params }: Props) {
             </div>
           </div>
 
+          {/* CTA */}
+          <div className="mt-12 pt-10 border-t border-white/10">
+            <div className="bg-white/[0.03] border border-white/10 px-8 py-7">
+              <h2
+                className="text-lg font-bold text-white mb-4"
+                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              >
+                Quer transformar seu corpo?
+              </h2>
+              <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                Se você chegou até aqui, provavelmente está buscando uma forma segura e eficiente de emagrecer ou transformar seu corpo.
+              </p>
+              <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                Se deseja um acompanhamento individualizado com um{" "}
+                <strong className="text-white font-semibold">Personal Trainer em Alphaville</strong>{" "}
+                ou uma{" "}
+                <strong className="text-white font-semibold">Consultoria Online</strong>,
+                estou pronto para ajudar você a conquistar resultados reais, respeitando sua rotina e seus objetivos.
+              </p>
+              <p className="text-gray-300 text-xs leading-relaxed mb-3">
+                Não sabe qual estratégia faz mais sentido para a sua rotina?{" "}
+                <Link href="/diagnostico" className="underline underline-offset-2 decoration-1 hover:text-white transition-colors">
+                  Faça o Diagnóstico Montinho
+                </Link>{" "}
+                — gratuito, leva 1–2 minutos.
+              </p>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Para saber mais,{" "}
+                <a
+                  href={getWhatsAppUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold italic underline underline-offset-2 decoration-1 transition-opacity duration-200 hover:opacity-70"
+                  style={{ color: "#BA9E50" }}
+                >
+                  clique aqui
+                </a>
+                .
+              </p>
+            </div>
+          </div>
         </div>
       </article>
 
