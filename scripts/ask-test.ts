@@ -46,6 +46,19 @@ const CASOS: Array<[string, boolean]> = [
   ["fullbody funciona?", true],
   ["fullbody ou upperlower?", true],
   ["treino ppl é bom?", true],
+  // typos de 1 erro — corrigidos pela distância de edição
+  ["hipertorfia como funciona", true],
+  ["muculação emagrece?", true],
+  ["execicios para perna", true],
+  ["como perder a bariga", true],
+  ["emagreser rapido", true],
+  // gírias e abreviações do dicionário curado
+  ["como trincar o abdomen", true],
+  ["sou frango na academia", true],
+  ["aej funciona?", true],
+  ["treino abs em casa", true],
+  ["bf ideal", true],
+  ["quanto de prote por dia", true],
   // — deve recusar —
   ["qual o melhor investimento em criptomoedas", false],
   ["qual a melhor criptomoeda?", false],

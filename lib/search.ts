@@ -93,7 +93,7 @@ function idf(term: string): number {
 }
 
 function scoreEntry(entry: IndexEntry, query: string, terms: string[]): number {
-  const queryLower = fold(query);
+  const queryLower = query; // já canonicalizada
   let score = 0;
 
   if (entry.titleLower === queryLower) score += 200;
@@ -132,6 +132,161 @@ function scoreEntry(entry: IndexEntry, query: string, terms: string[]): number {
   return score;
 }
 
+
+// ── Canonicalização da consulta ──────────────────────────────────────────────
+//
+// Camada compartilhada pela busca do site e pelo Pergunte ao Montinho. Três
+// mecanismos, nesta ordem:
+//
+//   1. Dicionário de gírias, abreviações e grafias compostas do vocabulário
+//      real de academia no Brasil, mapeadas para os termos que o acervo usa.
+//   2. Regra de substituição × acréscimo decidida pelo próprio acervo: se o
+//      termo original existe em algum artigo, mantemos e ACRESCENTAMOS a
+//      expansão (não perder o casamento exato); se não existe em lugar nenhum,
+//      SUBSTITUÍMOS — manter um termo que não casa com nada só envenena o
+//      ranking e a âncora anti-fora-de-domínio.
+//   3. Correção de digitação: termo desconhecido no acervo é comparado ao
+//      vocabulário de títulos/slugs/tags por distância de edição (OSA, que
+//      trata a troca de letras vizinhas — "hipertorfia" — como 1 erro).
+//
+// Tudo determinístico, sem rede, com caches — mesma consulta, mesmo resultado.
+
+/**
+ * Gírias e abreviações → termos do acervo.
+ * Regra de uso decidida em tempo de execução (ver docs acima): df>0 acrescenta,
+ * df=0 substitui. Manter o mapa curto e curado — cada entrada nova deve vir de
+ * uma busca real que falhou, não de imaginação.
+ */
+const TOKEN_MAP: Record<string, string> = {
+  // abreviações
+  abs: "abdomen abdominal",
+  prote: "proteina",
+  carb: "carboidrato",
+  suple: "suplemento suplementacao",
+  acad: "academia",
+  bf: "percentual de gordura corporal",
+  aej: "aerobico em jejum cardio jejum",
+  bcaa: "aminoacidos suplementacao",
+  // gírias de academia
+  trincar: "definir abdomen definicao",
+  trincado: "definido abdomen definicao",
+  secar: "emagrecer definicao",
+  shape: "fisico corpo definicao",
+  maromba: "musculacao",
+  marombeiro: "musculacao praticante",
+  frango: "iniciante magro ganhar massa",
+  monstro: "hipertrofia massa muscular",
+  cutting: "definicao deficit calorico",
+  bulking: "ganhar massa superavit",
+};
+
+/**
+ * Grafias compostas: SEMPRE substituem, sem consultar o acervo. Aqui a forma
+ * separada é estritamente melhor — mesmo que um artigo perdido escreva
+ * "fullbody" junto, manter o token junto só derruba a âncora do assistente
+ * (foi um bug real: 1 artigo escrevia junto e a regra df>0 mantinha o termo).
+ */
+const COMPOUND_MAP: Record<string, string> = {
+  fullbody: "full body",
+  upperlower: "upper lower",
+  pushpull: "push pull",
+  pushpulllegs: "push pull legs",
+  legpress: "leg press",
+  pullup: "pull up",
+  chinup: "chin up",
+  ppl: "push pull legs",
+};
+
+/** Vocabulário para correção de typo: palavras de título, slug, tag e categoria. */
+let vocabCache: string[] | null = null;
+function vocabulary(): string[] {
+  if (!vocabCache) {
+    const words = new Set<string>();
+    for (const e of index) {
+      for (const w of `${e.titleLower} ${e.slugLower} ${e.categoryLower} ${e.tagsLower.join(" ")}`
+        .split(/[^a-z0-9]+/))
+        if (w.length >= 4) words.add(w);
+    }
+    vocabCache = [...words].sort();
+  }
+  return vocabCache;
+}
+
+/** Distância OSA (Levenshtein + transposição adjacente), com teto para sair cedo. */
+function osa(a: string, b: string, max: number): number {
+  if (Math.abs(a.length - b.length) > max) return max + 1;
+  const d: number[][] = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+  for (let i = 0; i <= a.length; i++) d[i][0] = i;
+  for (let j = 0; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++) {
+    let rowMin = Infinity;
+    for (let j = 1; j <= b.length; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + cost);
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1])
+        d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + 1);
+      rowMin = Math.min(rowMin, d[i][j]);
+    }
+    if (rowMin > max) return max + 1;
+  }
+  return d[a.length][b.length];
+}
+
+const typoCache = new Map<string, string>();
+
+/**
+ * Corrige um termo que não existe no acervo — no máximo 1 erro de edição.
+ *
+ * Tolerância de 2 parecia razoável e corrigia "presidente" para "presente",
+ * abrindo a porta para pergunta fora do domínio. Os erros de digitação reais
+ * (hipertorfia, muculacao, academeia, bariga, emagreser) são todos de
+ * distância 1; correção falsa custa mais caro que correção perdida.
+ */
+function correctTerm(t: string): string {
+  const hit = typoCache.get(t);
+  if (hit !== undefined) return hit;
+  let best = t;
+  if (t.length >= 5 && idf(t) >= Math.log(index.length + 1) - 1e-9) {
+    // idf máximo ⇒ df 0 ⇒ o termo não existe em nenhum artigo
+    for (const w of vocabulary()) {
+      if (osa(t, w, 1) <= 1) { best = w; break; }
+    }
+  }
+  typoCache.set(t, best);
+  return best;
+}
+
+/**
+ * Normaliza a consulta: dobra acento, remove pontuação, aplica o dicionário
+ * de gírias e corrige typos. Exportada — o Pergunte ao Montinho usa a mesma.
+ */
+export function canonicalizeQuery(q: string): string {
+  const tokens = fold(q)
+    .replace(/[^\p{L}\p{N}\s-]+/gu, " ")
+    .split(/\s+/)
+    .filter(Boolean);
+  const out: string[] = [];
+  for (const t of tokens) {
+    const compound = COMPOUND_MAP[t];
+    if (compound) { out.push(compound); continue; }
+    const mapped = TOKEN_MAP[t];
+    if (mapped) {
+      // Acervo decide: termo real é mantido + expandido; termo inexistente é trocado.
+      if (dfOf(t) > 0) out.push(t, mapped);
+      else out.push(mapped);
+      continue;
+    }
+    out.push(correctTerm(t));
+  }
+  return out.join(" ");
+}
+
+/** df bruto (nº de artigos contendo o termo) — reusa o cache do idf. */
+function dfOf(term: string): number {
+  idf(term); // popula o cache
+  return dfCache.get(term) ?? 0;
+}
+
 /**
  * Raridade do termo no acervo. Quanto maior, mais distintivo — usado pelo
  * Pergunte ao Montinho para saber qual palavra a pergunta realmente trata.
@@ -141,12 +296,10 @@ export function termRarity(term: string): number {
 }
 
 export function search(query: string, limit = 20): SearchResult[] {
-  const q = query.trim();
+  const q = canonicalizeQuery(query.trim());
   if (q.length < 2) return [];
 
-  const terms = fold(q)
-    .split(/\s+/)
-    .filter((t) => t.length >= 2);
+  const terms = q.split(/\s+/).filter((t) => t.length >= 2);
 
   const results: SearchResult[] = [];
 

@@ -17,7 +17,7 @@
  */
 
 import { getBlogPost, SITE_URL } from "@/lib/blog";
-import { search, termRarity } from "@/lib/search";
+import { search, termRarity, canonicalizeQuery } from "@/lib/search";
 
 export interface KnowledgeChunk {
   articleId: string; // slug ou id do doc de negócio
@@ -143,23 +143,6 @@ const SYNONYMS: Record<string, string[]> = {
   caneta: ["ozempic", "mounjaro", "wegovy", "retatrutida", "tirzepatida", "semaglutida", "glp-1"],
 };
 
-/**
- * Grafias compostas reescritas antes de qualquer processamento. Anexar como
- * sinônimo não serve aqui: o termo original ("fullbody") continuaria na
- * pergunta, nunca casaria com nada e derrubaria a cobertura da âncora.
- */
-const REWRITES: Array<[RegExp, string]> = [
-  [/\bfull-?body\b/gi, "full body"],
-  [/\bupper-?lower\b/gi, "upper lower"],
-  [/\bpush-?pull(-?legs)?\b/gi, "push pull legs"],
-];
-
-export function rewriteQuery(q: string): string {
-  let out = q;
-  for (const [re, sub] of REWRITES) out = out.replace(re, sub);
-  return out;
-}
-
 function expandQuery(q: string): string {
   const nq = norm(q);
   const extras: string[] = [];
@@ -232,7 +215,7 @@ export interface PageContext {
 }
 
 export function retrieve(question: string, context?: PageContext): RetrievalResult {
-  const rewritten = rewriteQuery(question);
+  const rewritten = canonicalizeQuery(question);
   const expanded = expandQuery(rewritten);
   // Pontuação precisa sair antes de virar termo: "divisão?" normalizava para
   // "divisao?" e nunca casava com o slug "full-body-vs-divisao-abc". Toda
