@@ -89,5 +89,30 @@ for (const { grupo, entradas: es } of guia) {
   console.log(`  ${grupo.titulo.padEnd(36)} ${es.length} academias`);
 }
 
+console.log("\n" + "=".repeat(60) + "\nACADEMIAS ENCERRADAS NO CONTEÚDO\n" + "=".repeat(60));
+
+/**
+ * Uma academia que fechou não pode continuar sendo oferecida como opção no
+ * meio dos artigos. O nome só pode sobreviver no artigo dela própria, que
+ * fica no ar avisando do encerramento — quem pesquisa o nome ainda chega lá.
+ */
+for (const a of ACADEMIAS.filter((x) => x.status !== "ativa")) {
+  const nome = a.nome.replace(/\s+Alphaville$/, "").trim();
+  const re = new RegExp(nome.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/g, "\\s+"), "i");
+  const vazando = blogPosts.filter((p) => p.slug !== a.artigoSlug && re.test(p.content ?? ""));
+  ok(
+    `"${a.nome}" não aparece em outros artigos`,
+    vazando.length === 0,
+    vazando.map((p) => p.slug).join(", ")
+  );
+
+  const proprio = blogPosts.find((p) => p.slug === a.artigoSlug);
+  ok(
+    `artigo de "${a.nome}" avisa que encerrou`,
+    !!proprio && /não está mais em operação|encerrou as atividades/i.test(proprio.content ?? ""),
+    "o artigo segue no ar como se a unidade existisse"
+  );
+}
+
 console.log(falhas === 0 ? "\nTODOS OS TESTES PASSARAM\n" : `\n${falhas} TESTE(S) FALHARAM\n`);
 process.exit(falhas === 0 ? 0 : 1);

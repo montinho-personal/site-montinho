@@ -1,4 +1,4 @@
-import { confirmado, naoConfirmado, type Academia, type Estilo, type FaixaPreco } from "./tipos";
+import { REGIAO_LABEL, confirmado, naoConfirmado, type Academia, type Estilo, type FaixaPreco, type Regiao } from "./tipos";
 
 /**
  * Base de academias de Alphaville.
@@ -318,7 +318,7 @@ export const ACADEMIAS: Academia[] = [
     artigoSlug: "scelta-aldeia-da-serra",
     regiao: "aldeia-da-serra",
     tipo: "local",
-    status: "ativa",
+    status: "encerrada",
     vinteQuatroHoras: naoConfirmado<boolean>(),
     abreDomingo: naoConfirmado<boolean>(),
     abreSabado: naoConfirmado<boolean>(),
@@ -332,3 +332,18 @@ export const ACADEMIAS: Academia[] = [
     estilos: naoConfirmado<Estilo[]>(),
   },
 ];
+
+/**
+ * Regiões que têm pelo menos uma academia ativa na base.
+ *
+ * O questionário só pode oferecer estas. Perguntar "em qual região você passa
+ * mais tempo?" e listar uma região onde não temos nenhuma academia ativa é
+ * prometer uma resposta que não existe — a pessoa escolhe, e recebe uma lista
+ * que ignora justamente o que ela pediu. Quando uma academia daquela região
+ * voltar à base, a opção reaparece sozinha.
+ */
+export function regioesComAcademia(): Regiao[] {
+  const vistas = new Set<Regiao>();
+  for (const a of ACADEMIAS) if (a.status === "ativa") vistas.add(a.regiao);
+  return (Object.keys(REGIAO_LABEL) as Regiao[]).filter((r) => vistas.has(r));
+}
