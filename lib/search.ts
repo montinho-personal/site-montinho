@@ -307,6 +307,23 @@ function dfOf(term: string): number {
  * Raridade do termo no acervo. Quanto maior, mais distintivo — usado pelo
  * Pergunte ao Montinho para saber qual palavra a pergunta realmente trata.
  */
+/**
+ * O termo é um ASSUNTO do acervo — não apenas uma palavra que aparece nele.
+ *
+ * Filtro de privacidade do radar de conteúdo, com duas exigências:
+ *  1. a palavra aparece em título, slug, tag ou categoria — ou seja, é sobre o
+ *     que um artigo trata, não algo citado de passagem no meio do texto;
+ *  2. aparece em pelo menos 3 artigos, o que descarta menção isolada.
+ *
+ * Só o critério "existe no acervo" não bastava: nomes próprios aparecem em
+ * depoimentos dentro dos textos, e "joão" passava no filtro. Título e tag são
+ * escritos pelo Montinho sobre o tema — é onde nome de aluno não entra.
+ */
+export function ehAssuntoDoAcervo(term: string): boolean {
+  const t = fold(term);
+  return vocabulary().includes(t) && dfOf(t) >= 3;
+}
+
 export function termRarity(term: string): number {
   return idf(fold(term));
 }

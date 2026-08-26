@@ -13,6 +13,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { retrieve, type PageContext } from "@/lib/ask/knowledge";
+import { canonicalizeQuery, termRarity, ehAssuntoDoAcervo } from "@/lib/search";
 import {
   checkRedFlag,
   checkSubstanceProtocol,
@@ -63,9 +64,43 @@ interface AskResponse {
   cta: CTA;
   noAnswer: boolean;
   fallback?: boolean;
+  /** Assunto detectado — só palavras do acervo. Vai para analytics. */
+  topics?: string[];
 }
 
 const EVIDENCE_MIN = 60;
+
+/** Palavras vazias — não são assunto de nada. */
+const TOPIC_STOP = new Set([
+  "como","qual","quais","para","fazer","melhor","melhores","devo","posso","quero",
+  "mais","menos","muito","pouco","isso","essa","esse","minha","meu","meus","minhas",
+  "com","sem","por","que","uma","dia","dias","vezes","semana","ano","hoje","agora",
+  "sobre","entre","depois","antes","ainda","consigo","preciso","tenho","esta","estou",
+  "ser","tem","nao","sim","voce","vou","estar","tudo","pode","seria","muita",
+  // verbos e medidas genéricas: aparecem em qualquer pergunta e não são assunto
+  "treinar","treino","fazer","funciona","perder","ganhar","tomar","usar","comer",
+  "anos","minutos","horas","quanto","quantas","quantos","preciso","gente","coisa",
+  "melhora","ajuda","serve","vale","pena","certo","errado","bom","boa","ruim",
+]);
+
+/**
+ * Assunto da pergunta, para o radar de conteúdo.
+ *
+ * Devolve no máximo duas palavras, e SÓ palavras que existem em algum artigo do
+ * site — esse é o filtro de privacidade: o que a pessoa escreve sobre si mesma
+ * (nome, cidade, remédio, condição incomum) não está no acervo e nunca sai
+ * daqui. Ordenado por raridade: a palavra mais específica é o assunto real.
+ */
+function extrairAssunto(question: string): string[] {
+  return canonicalizeQuery(question)
+    .split(/\s+/)
+    .filter((t) => t.length >= 4 && !TOPIC_STOP.has(t) && ehAssuntoDoAcervo(t))
+    .map((t) => ({ t, r: termRarity(t) }))
+    .sort((a, b) => b.r - a.r)
+    .map((x) => x.t)
+    .filter((t, i, arr) => arr.indexOf(t) === i)
+    .slice(0, 2);
+}
 
 const SYSTEM_PROMPT = `Você é o assistente do site do Montinho, personal trainer em Alphaville especialista em emagrecimento (ele perdeu 40 kg na própria transformação). Você responde dúvidas de treino, emagrecimento, exercícios e sobre os serviços do Montinho usando EXCLUSIVAMENTE os trechos de conteúdo fornecidos como contexto.
 
@@ -193,18 +228,22 @@ export async function POST(req: NextRequest) {
   const history = sanitizeHistory((body as { history?: unknown })?.history);
   const context = sanitizeContext((body as { context?: unknown })?.context);
   const intent = classifyIntent(question);
+  // Assunto para o radar de conteúdo — só palavras que existem no acervo.
+  const topics = extrairAssunto(question);
 
   // Guardrails determinísticos — respondem sem LLM
   const redFlag = checkRedFlag(question);
   if (redFlag) {
     return NextResponse.json<AskResponse>({
       answer: redFlag, sources: [], intent: "dor", cta: null, noAnswer: false,
+      topics,
     });
   }
   const substance = checkSubstanceProtocol(question);
   if (substance) {
     return NextResponse.json<AskResponse>({
       answer: substance, sources: [], intent, cta: null, noAnswer: false,
+      topics,
     });
   }
   if (looksLikeInjection(question)) {
@@ -212,6 +251,7 @@ export async function POST(req: NextRequest) {
       answer:
         "Posso te ajudar com dúvidas sobre treino, emagrecimento, exercícios e sobre o acompanhamento do Montinho — mas configurações internas não fazem parte da conversa. O que você quer saber sobre treino?",
       sources: [], intent: "outra", cta: null, noAnswer: false,
+      topics,
     });
   }
 
@@ -225,6 +265,7 @@ export async function POST(req: NextRequest) {
       JSON.stringify({
         t: "ask_metric",
         intent,
+        topics,
         answered,
         mode,
         evidence: Math.round(retrieval.evidence),
@@ -243,6 +284,7 @@ export async function POST(req: NextRequest) {
       intent,
       cta: cta ?? "whatsapp",
       noAnswer: true,
+      topics,
     });
   }
 
@@ -265,6 +307,7 @@ export async function POST(req: NextRequest) {
       intent,
       cta,
       noAnswer: false,
+      topics,
       fallback: true,
     });
   }
@@ -276,5 +319,6 @@ export async function POST(req: NextRequest) {
     intent,
     cta,
     noAnswer: false,
+      topics,
   });
 }

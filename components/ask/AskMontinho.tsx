@@ -17,6 +17,7 @@ interface Msg {
   sources?: Source[];
   cta?: "whatsapp" | "diagnostico" | "consultoria" | null;
   intent?: string;
+  topics?: string[];
   noAnswer?: boolean;
   feedback?: "up" | "down";
 }
@@ -123,12 +124,17 @@ export default function AskMontinho({
           sources: data.sources,
           cta: data.cta,
           intent: data.intent,
+          topics: data.topics,
           noAnswer: data.noAnswer,
         };
         setMessages((prev) => [...prev, msg]);
         trackEvent(data.noAnswer ? "ask_montinho_no_answer" : "ask_montinho_answer", {
           intent_category: data.intent,
           sources_count: data.sources?.length ?? 0,
+          // Assunto detectado — só palavras de título/tag do próprio acervo,
+          // nunca o texto digitado. É o que alimenta o radar de conteúdo.
+          ask_topic: data.topics?.[0],
+          ask_topic_2: data.topics?.[1],
         });
       } catch {
         trackEvent("ask_montinho_error");
