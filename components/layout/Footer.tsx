@@ -59,7 +59,9 @@ export default function Footer() {
           {/* Ferramentas */}
           <div>
             <h3 className="text-gray-300 text-xs font-semibold tracking-[0.15em] uppercase mb-5" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-              Ferramentas Gratuitas
+              <Link href="/ferramentas" className="hover:text-white transition-colors duration-200">
+                Ferramentas Gratuitas
+              </Link>
             </h3>
             <nav className="flex flex-col gap-4">
               <Link href="/diagnostico" className="group block">
