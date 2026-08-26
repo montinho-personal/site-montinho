@@ -243,6 +243,13 @@ export default async function BlogPost({ params }: Props) {
                 <strong className="text-white font-semibold">Consultoria Online</strong>,
                 estou pronto para ajudar você a conquistar resultados reais, respeitando sua rotina e seus objetivos.
               </p>
+              <p className="text-gray-400 text-xs leading-relaxed mb-3">
+                Não sabe qual estratégia faz mais sentido para a sua rotina?{" "}
+                <Link href="/diagnostico" className="underline underline-offset-2 decoration-1 hover:text-white transition-colors">
+                  Faça o Diagnóstico Montinho
+                </Link>{" "}
+                — gratuito, leva 1–2 minutos.
+              </p>
               <p className="text-gray-300 text-sm leading-relaxed">
                 Para saber mais,{" "}
                 <a

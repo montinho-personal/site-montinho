@@ -473,6 +473,13 @@ export default function Consultoria() {
             <WhatsAppIcon size={18} />
             Falar com Montinho
           </a>
+          <p className="text-gray-500 text-sm mt-6">
+            Prefere entender primeiro qual caminho combina com você?{" "}
+            <Link href="/diagnostico" className="underline underline-offset-4 decoration-1 hover:text-black transition-colors">
+              Faça o Diagnóstico Montinho
+            </Link>{" "}
+            — gratuito, 1–2 minutos.
+          </p>
         </div>
       </section>
     </>

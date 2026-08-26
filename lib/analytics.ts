@@ -11,7 +11,18 @@ export type AnalyticsEvent =
   | "view_pricing"
   | "scroll_75"
   | "engaged_time"
-  | "article_read";
+  | "article_read"
+  // Diagnóstico Montinho (funil da ferramenta /diagnostico)
+  | "diagnostic_view"
+  | "diagnostic_start"
+  | "diagnostic_progress_25"
+  | "diagnostic_progress_50"
+  | "diagnostic_progress_75"
+  | "diagnostic_complete"
+  | "diagnostic_result_view"
+  | "diagnostic_whatsapp_click"
+  | "diagnostic_article_click"
+  | "diagnostic_service_click";
 
 export interface EventParams {
   [key: string]: string | number | boolean | undefined;
