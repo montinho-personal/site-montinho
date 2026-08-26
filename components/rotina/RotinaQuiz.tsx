@@ -528,7 +528,13 @@ export default function RotinaQuiz() {
               <li key={art.slug}>
                 <Link
                   href={`/blog/${art.slug}`}
-                  onClick={() => trackEvent("routine_article_click", { routine_structure: plan.structureId })}
+                  onClick={() =>
+                    trackEvent("routine_article_click", {
+                      routine_structure: plan.structureId,
+                      // qual artigo — as outras ferramentas já mandavam o slug
+                      article_slug: art.slug,
+                    })
+                  }
                   className="text-gray-300 underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors text-sm sm:text-base"
                 >
                   {art.title}
