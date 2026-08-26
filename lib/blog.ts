@@ -18569,11 +18569,17 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alpha-conde-infographic.svg" alt="Infográfico sobre Personal Trainer Alpha Condé Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Alpha Condé Alphaville | Montinho Personal " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alpha-conde-capa.webp" alt="Arte de capa ilustrada: personal trainer orientando treino com halteres na área externa do condomínio Alpha Condé, em Alphaville" title="Personal Trainer Alpha Condé Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino personalizado no seu condomínio, no Alpha Condé Alphaville.</figcaption>
 </figure>
 <p>O Alpha Condé é um dos condomínios mais reconhecidos de Alphaville — pelo padrão arquitetônico, pela infraestrutura e pelo perfil dos moradores. Quem mora aqui não aceita mediocridade em nenhum aspecto da vida, e o treino não é exceção.</p>
 
 <p>Atendo moradores do Alpha Condé com protocolo individualizado há mais de 20 anos. Conheço o perfil de quem mora em condomínios de alto padrão na região — e sei que o que faz diferença não é o equipamento da academia, é o método aplicado durante o treino.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/arena-18-alphaville.webp" alt="Montinho, personal trainer que atende o Alpha Condé Alphaville, na área de musculação com halteres e máquinas" title="Personal Trainer Alpha Condé Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Quem orienta o treino no Alpha Condé vive a musculação na prática.</figcaption>
+</figure>
 
 <h2>Por que personal trainer com método importa no Alpha Condé</h2>
 
@@ -18644,11 +18650,17 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-alpha-sitio-infographic.svg" alt="Infográfico sobre Personal Trainer Alpha Sítio Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Alpha Sítio Alphaville | Montinho Personal " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-alpha-sitio-capa.webp" alt="Arte de capa ilustrada: personal trainer orientando exercício de afundo em área verde do Alpha Sítio, em Alphaville" title="Personal Trainer Alpha Sítio Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Acompanhamento individual no Alpha Sítio Alphaville.</figcaption>
 </figure>
 <p>O Alpha Sítio é um condomínio com identidade própria — combinando a tranquilidade de um espaço com apelo à natureza e a comodidade da infraestrutura de Alphaville. Quem mora aqui tem um estilo de vida que valoriza qualidade e bem-estar — e o treino precisa acompanhar esse padrão.</p>
 
 <p>Atendo moradores do Alpha Sítio com protocolo individualizado há mais de 20 anos. O atendimento é presencial (na academia do condomínio ou parceira) ou online — sempre com a mesma qualidade de protocolo e o mesmo nível de acompanhamento.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-6-foto.webp" alt="Montinho, personal trainer que atende o Alpha Sítio Alphaville, em selfie na academia após o treino" title="Personal Trainer Alpha Sítio Alphaville — Montinho Personal Trainer" width="901" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Constância é o que sustenta o resultado — no Alpha Sítio e em qualquer lugar.</figcaption>
+</figure>
 
 <h2>Treino domiciliar no Alpha Sítio: quando a comodidade não compromete o resultado</h2>
 
@@ -18724,6 +18736,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>O Itahyê é um condomínio com história e tradição em Alphaville. Quem mora aqui tem um vínculo com a região e valoriza serviços que acompanham o padrão do condomínio. O personal trainer não é diferente — a exigência é por resultado real, não por aparência de serviço.</p>
 
 <p>Atendo moradores do Itahyê há mais de 20 anos. O que ofereço é protocolo construído para o seu objetivo, execução supervisionada com atenção exclusiva e progressão que não estagna. Seja para emagrecer, ganhar massa muscular, melhorar saúde ou retornar ao treino após lesão.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-5-foto.webp" alt="Antes e depois de Montinho, personal trainer que atende o Itahyê Alphaville: da adolescência ao físico atual" title="Personal Trainer Itahyê Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Transformação real com treino orientado — a mesma base do trabalho no Itahyê.</figcaption>
+</figure>
 
 <h2>O que diferencia o atendimento no Itahyê do treino sem orientação</h2>
 
@@ -18948,11 +18965,17 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-campos-do-conde-infographic.svg" alt="Infográfico sobre Personal Trainer Campos do Conde Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Campos do Conde Alphaville | Montinho Perso" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-campos-do-conde-capa.webp" alt="Arte de capa ilustrada: personal trainer orientando treino ao ar livre no condomínio Campos do Conde, em Alphaville" title="Personal Trainer Campos do Conde Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino orientado dentro do Campos do Conde Alphaville.</figcaption>
 </figure>
 <p>O Campos do Conde é um condomínio que combina espaço, natureza e infraestrutura — um ambiente naturalmente propício para um estilo de vida ativo. Quem mora aqui tende a ter relação positiva com movimento e atividade física — mas relação positiva não é sinônimo de treino eficiente.</p>
 
 <p>Atendo moradores do Campos do Conde com protocolo individualizado há mais de 20 anos. O que ofereço é a diferença entre uma rotina de movimento e um treino com método — que entrega resultado mensurável e progressão consistente.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/arena-18-alphaville.webp" alt="Montinho, personal trainer que atende o Campos do Conde Alphaville, na área de musculação com halteres e máquinas" title="Personal Trainer Campos do Conde Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino com técnica e progressão para moradores do Campos do Conde.</figcaption>
+</figure>
 
 <h2>Treino estruturado vs. atividade física no Campos do Conde</h2>
 
@@ -19028,6 +19051,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>O New Ville Alphaville representa uma das novas gerações de condomínios da região — com arquitetura contemporânea e um perfil de moradores que inclui jovens profissionais e famílias recém-chegadas a Alphaville. Um perfil que tem clareza do que quer e pouca tolerância para tempo perdido.</p>
 
 <p>Atendo moradores do New Ville com protocolo individualizado há mais de 20 anos na região. O que ofereço é resultado — não apenas acompanhamento. Protocolo correto, progressão estruturada e presença exclusiva durante as sessões.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-9-foto.webp" alt="Montinho, personal trainer que atende o New Ville Alphaville, em pose no espelho mostrando o desenvolvimento das costas" title="Personal Trainer New Ville Alphaville — Montinho Personal Trainer" width="739" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Execução correta constrói postura e protege a coluna, no New Ville e fora dele.</figcaption>
+</figure>
 
 <h2>O treino para jovens adultos no New Ville: mais do que intensidade</h2>
 
@@ -20077,8 +20105,14 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-green-valley-infographic.svg" alt="Infográfico sobre Personal Trainer Green Valley Alphaville: Treino no Seu Condomínio — Montinho Personal Trainer" title="Personal Trainer Green Valley Alphaville: Treino no Seu Cond" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-green-valley-capa.webp" alt="Arte de capa ilustrada: personal trainer conduzindo treino com halteres em frente aos prédios do Green Valley, em Alphaville" title="Personal Trainer Green Valley Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino no seu condomínio, no Green Valley Alphaville.</figcaption>
 </figure>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-alphaville-residencial-5-foto.webp" alt="Antes e depois de Montinho, personal trainer que atende o Green Valley Alphaville: da adolescência ao físico atual" title="Personal Trainer Green Valley Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O antes e depois do Montinho: método aplicado por quem já percorreu o caminho.</figcaption>
+</figure>
+
 <h2>Por que a academia do condomínio funciona quando há método</h2>
 <p>Muitos moradores de condomínio usam a academia disponível por semanas ou meses sem resultado perceptível. O problema raramente é o equipamento — é a ausência de protocolo estruturado, progressão de carga e correção técnica. Com personal trainer, a academia do Green Valley se torna um ambiente de treino eficiente, independente do tamanho ou da variedade de equipamentos.</p>
 
@@ -61711,7 +61745,8 @@ Se você mora em Alphaville ou região e quer aprender o hip thrust com supervis
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-cadeira-extensora-infographic.svg" alt="Infográfico sobre Como Fazer Cadeira Extensora: Técnica, Segurança e Quando Usar no Treino — Montinho Personal Trainer" title="Como Fazer Cadeira Extensora: Técnica, Segurança e Quando Usar no Treino" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-cadeira-extensora-capa.webp" alt="Arte de capa: homem executando cadeira extensora em máquina de academia, com destaque para quadríceps, controle, segurança e execução" title="Como Fazer Cadeira Extensora — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Cadeira extensora: técnica, segurança e quando usar no treino.</figcaption>
 </figure>
 
 ## O Que é a Cadeira Extensora
