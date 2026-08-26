@@ -41,7 +41,21 @@ export type AnalyticsEvent =
 
   // CTAs contextuais nos artigos
   | "contextual_cta_view"
-  | "contextual_cta_click";
+  | "contextual_cta_click"
+
+  // Treino Para Minha Rotina
+  | "routine_tool_view"
+  | "routine_tool_start"
+  | "routine_tool_progress_50"
+  | "routine_tool_complete"
+  | "routine_result_view"
+  | "routine_plan_b_view"
+  | "routine_schedule_commit"
+  | "routine_article_click"
+  | "routine_diagnostic_click"
+  | "routine_ask_click"
+  | "routine_service_click"
+  | "routine_whatsapp_click";
 
 export interface EventParams {
   [key: string]: string | number | boolean | undefined;

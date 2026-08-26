@@ -42,7 +42,8 @@ export type CtaDestination =
   | "presencial"
   | "whatsapp"
   | "article"
-  | "results";
+  | "results"
+  | "rotina";
 
 /** Variantes visuais. Todas compartilham o design system; mudam só o peso. */
 export type CtaVariant = "light" | "diagnostic" | "service" | "local";

@@ -259,6 +259,18 @@ export const CTA_REGISTRY: Record<string, CtaDefinition> = {
     secondary: diagnostic("Prefere descobrir sua estrutura antes?"),
   },
 
+  rotina_mid: {
+    id: "rotina_mid",
+    variant: "light",
+    title: "Quantos dias você realmente consegue treinar?",
+    body: "Responda algumas perguntas sobre sua rotina real e descubra qual estrutura de treino parece mais compatível com a sua semana.",
+    primary: {
+      label: "Montar minha rotina",
+      href: "/treino-para-minha-rotina",
+      destination: "rotina",
+    },
+  },
+
   // ------------------------------------------------------------------ Neutros
   // Fallback: nunca deixar classificação incerta gerar oferta inadequada.
 

@@ -214,7 +214,7 @@ const MID_BY_CLUSTER: Partial<Record<CtaCluster, string>> = {
   hypertrophy: "ask_concept",
   weight_loss: "ask_concept",
   beginner: "ask_concept",
-  routine: "ask_concept",
+  routine: "rotina_mid",
   glp1: "ask_health",
   pain: "ask_health",
   health: "ask_health",
