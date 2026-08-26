@@ -466,24 +466,38 @@ export default function RotinaQuiz() {
           longo do caminho — é onde a individualização começa.{" "}
           <strong className="text-white">A ferramenta encontra a estrutura. A individualização começa depois.</strong>
         </p>
-        <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 mb-4">
-          <Link
-            href="/consultoria"
-            onClick={() => trackEvent("routine_service_click", { routine_structure: plan.structureId })}
+        {/* Quem terminou o quiz está no ponto de maior intenção da página: a
+            ação principal abre a conversa já com o contexto preenchido. A
+            consultoria fica como secundária para quem quer ver como funciona
+            antes de falar — tirar essa opção troca lead por abandono. */}
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 mb-2">
+          <a
+            href={getWhatsAppUrl(buildRotinaWhatsApp(plan, answers, agendaFeita ? diasEscolhidos : undefined))}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() =>
+              trackEvent("routine_whatsapp_click", {
+                routine_structure: plan.structureId,
+                routine_has_schedule: agendaFeita,
+              })
+            }
             className="inline-flex items-center justify-center bg-white text-black px-6 py-3.5 text-sm font-semibold tracking-wide hover:bg-gray-100 transition-colors min-h-[52px]"
           >
             Quero transformar essa estrutura no meu treino →
-          </Link>
-          <a
-            href={getWhatsAppUrl(buildRotinaWhatsApp(plan, answers))}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => trackEvent("routine_whatsapp_click", { routine_structure: plan.structureId })}
+          </a>
+          <Link
+            href="/consultoria"
+            onClick={() => trackEvent("routine_service_click", { routine_structure: plan.structureId })}
             className="inline-flex items-center text-sm text-gray-300 underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors min-h-[44px]"
           >
-            Falar com o Montinho no WhatsApp
-          </a>
+            Ver como funciona o acompanhamento
+          </Link>
         </div>
+        {/* Dizer para onde o botão leva antes do clique: sair do site sem aviso
+            é fricção, e a pessoa hesita se não sabe o que vai abrir. */}
+        <p className="text-gray-400 text-xs leading-relaxed mb-4">
+          Abre o WhatsApp com a sua estrutura já preenchida — é só enviar.
+        </p>
         <p className="text-gray-400 text-xs leading-relaxed">
           Quer ir além da divisão? O{" "}
           <Link href="/diagnostico" onClick={() => trackEvent("routine_diagnostic_click")} className="underline underline-offset-2 hover:text-white transition-colors">
