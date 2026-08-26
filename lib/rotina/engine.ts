@@ -369,12 +369,28 @@ export function validarDias(escolhidos: number[], plan: RotinaPlan): string | nu
   return null;
 }
 
-export function buildRotinaWhatsApp(plan: RotinaPlan, a: RotinaAnswers): string {
+/**
+ * Mensagem que a pessoa envia ao abrir o WhatsApp a partir do resultado.
+ *
+ * Leva só o contexto de treino que ela mesma declarou — nada de dado pessoal,
+ * clínico ou de identificação. O objetivo é que a conversa comece já sabendo
+ * a rotina, e não em "oi, quanto custa?".
+ */
+export function buildRotinaWhatsApp(
+  plan: RotinaPlan,
+  a: RotinaAnswers,
+  diasEscolhidos?: number[]
+): string {
+  const agenda =
+    diasEscolhidos && diasEscolhidos.length > 0
+      ? `Dias que reservei: ${diasEscolhidos.map((i) => DIAS_SEMANA[i]).join(", ")}\n`
+      : "";
   return (
-    `Oi, Montinho! Fiz o Treino Para Minha Rotina.\n\n` +
+    `Oi, Montinho! Fiz o Treino Para Minha Rotina no seu site.\n\n` +
     `Estrutura sugerida: ${plan.structureName}\n` +
     `Disponibilidade: ${a.dias} dias por semana\n` +
     `Tempo por sessão: ${TEMPO_LABEL[a.tempo]}\n` +
+    agenda +
     `Objetivo: ${OBJETIVO_LABEL[a.objetivo]}\n\n` +
     `Quero entender como transformar essa estrutura em um treino individualizado.`
   );
