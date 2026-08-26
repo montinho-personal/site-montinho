@@ -60,7 +60,15 @@ export type AnalyticsEvent =
   // Revisão Gratuita de Execução
   | "execution_review_view"
   | "execution_review_whatsapp_click"
-  | "execution_review_article_cta_view";
+  | "execution_review_article_cta_view"
+
+  // Academia Ideal em Alphaville
+  | "gym_finder_view"
+  | "gym_finder_start"
+  | "gym_finder_complete"
+  | "gym_result_click"
+  | "gym_routine_tool_click"
+  | "gym_personal_click";
 
 export interface EventParams {
   [key: string]: string | number | boolean | undefined;
