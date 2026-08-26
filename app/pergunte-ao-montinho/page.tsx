@@ -155,13 +155,26 @@ export default function PergunteAoMontinhoPage() {
               </Link>
               .
             </p>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed mb-3">
               A ferramenta foi criada sobre os conteúdos do{" "}
               <Link href="/minha-historia" className="underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors">
                 Montinho, personal trainer em Alphaville
               </Link>{" "}
               que perdeu mais de 40 kg na própria transformação — a mesma
               experiência prática que sustenta cada artigo usado nas respostas.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              Cada dica nasce de três lugares: a experiência de quem vive isso na
+              prática e acompanha alunos todos os dias; a{" "}
+              <strong className="text-white font-semibold">evidência científica</strong>{" "}
+              — os estudos estão citados nas referências dos próprios artigos, para
+              você conferir; e o trabalho de grandes treinadores do Brasil e do
+              mundo que o Montinho estuda e acompanha, entre eles Fabrício
+              Pacholok, Leandro Twin, Júlio Balestrin, Coach Rubens e Hany Rambod.
+              No fim, nenhuma dessas fontes entrega uma fórmula secreta: elas dão
+              direção. A melhor estratégia continua sendo a que se encaixa nas suas
+              individualidades e na sua rotina de agora — a que você consegue
+              seguir por mais tempo, com mais consistência e melhor progressão.
             </p>
           </div>
 
