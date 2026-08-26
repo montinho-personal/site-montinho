@@ -59,7 +59,7 @@ export default function DiagnosticoPage() {
       {/* Hero */}
       <section className="py-16 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-5">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-5">
             Diagnóstico Montinho
           </p>
           <h1
@@ -94,14 +94,14 @@ export default function DiagnosticoPage() {
               >
                 O que é o Diagnóstico Montinho
               </h2>
-              <p className="text-gray-400 leading-relaxed mb-3">
+              <p className="text-gray-300 leading-relaxed mb-3">
                 É uma ferramenta gratuita que traduz a experiência prática do
                 Montinho em uma orientação inicial: a partir do seu objetivo, da
                 sua disponibilidade real e da sua maior dificuldade, ela indica
                 qual caminho de treino tende a fazer mais sentido para a sua vida
                 — e não para uma rotina idealizada que ninguém cumpre.
               </p>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 O resultado considera seu objetivo, disponibilidade, experiência e
                 principal dificuldade para identificar o ponto de partida mais
                 compatível com a sua rotina. É uma orientação inicial — não é
@@ -117,7 +117,7 @@ export default function DiagnosticoPage() {
               >
                 Como funciona
               </h2>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 São 9 perguntas rápidas — objetivo, rotina atual, dias e tempo
                 disponíveis, experiência, principal dificuldade, onde pretende
                 treinar e como prefere ser acompanhado. Ao final, você recebe seu
@@ -135,7 +135,7 @@ export default function DiagnosticoPage() {
               >
                 Por que rotina e frequência importam mais do que o treino perfeito
               </h2>
-              <p className="text-gray-400 leading-relaxed mb-3">
+              <p className="text-gray-300 leading-relaxed mb-3">
                 A maioria das pessoas não para de treinar por falta de um plano
                 melhor — para porque o plano não cabia na vida real. Um programa
                 de 5 dias é inútil para quem consegue treinar 3; um treino de 90
@@ -143,7 +143,7 @@ export default function DiagnosticoPage() {
                 pergunta o que você <em>consegue</em> fazer, não o que você
                 gostaria.
               </p>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 Essa é a mesma lógica que o Montinho aplica com alunos: a{" "}
                 <Link
                   href="/blog/frequencia-de-treino"
@@ -169,7 +169,7 @@ export default function DiagnosticoPage() {
               >
                 E depois do diagnóstico?
               </h2>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 Se quiser transformar a orientação em um plano de verdade, o
                 Montinho atende{" "}
                 <Link
@@ -199,7 +199,7 @@ export default function DiagnosticoPage() {
               >
                 Quem criou o Diagnóstico Montinho
               </h2>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 A ferramenta foi criada pelo{" "}
                 <Link
                   href="/minha-historia"

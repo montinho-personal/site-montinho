@@ -170,7 +170,7 @@ export default function PersonalTrainerOnlineTambore() {
             ].map((item, i) => (
               <div key={i} className="p-6 border-b border-r border-white/10">
                 <p className="text-white font-semibold mb-2">{item.title}</p>
-                <p className="text-gray-400 text-sm leading-relaxed font-light">{item.text}</p>
+                <p className="text-gray-300 text-sm leading-relaxed font-light">{item.text}</p>
               </div>
             ))}
           </div>
@@ -193,7 +193,7 @@ export default function PersonalTrainerOnlineTambore() {
             {faq.map((item, i) => (
               <div key={i} className="border-b border-white/10 pb-8">
                 <h3 className="text-white font-semibold text-lg mb-3">{item.question}</h3>
-                <p className="text-gray-400 leading-relaxed font-light">{item.answer}</p>
+                <p className="text-gray-300 leading-relaxed font-light">{item.answer}</p>
               </div>
             ))}
           </div>

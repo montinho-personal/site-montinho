@@ -228,7 +228,7 @@ export default function Consultoria() {
       {/* Hero — resposta direta ao anúncio, CTA acima da dobra */}
       <section className="py-14 sm:py-16 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-5">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-5">
             Consultoria Online · Personal Trainer em Alphaville
           </p>
           <h1
@@ -241,7 +241,7 @@ export default function Consultoria() {
             Presencial em Alphaville ou online em qualquer lugar do Brasil — com
             suporte diário no WhatsApp e um plano montado para a sua rotina.
           </p>
-          <p className="text-gray-400 text-base leading-relaxed mb-8">
+          <p className="text-gray-300 text-base leading-relaxed mb-8">
             Eu já perdi <strong className="text-white">40 kg</strong> na minha
             própria transformação. Sei o que funciona fora do papel — e é isso
             que aplico com cada aluno.
@@ -265,7 +265,7 @@ export default function Consultoria() {
               Ver modalidades
             </a>
           </div>
-          <p className="text-gray-600 text-xs mt-4">
+          <p className="text-gray-400 text-xs mt-4">
             Resposta direto comigo, sem robô e sem compromisso.
           </p>
         </div>
@@ -283,14 +283,14 @@ export default function Consultoria() {
                 >
                   {item.value}
                 </p>
-                <p className="text-gray-500 text-xs sm:text-sm leading-snug">{item.label}</p>
+                <p className="text-gray-400 text-xs sm:text-sm leading-snug">{item.label}</p>
               </div>
             ))}
           </div>
           <p className="text-center mt-8">
             <Link
               href="/resultados"
-              className="text-gray-400 text-sm underline underline-offset-4 decoration-1 hover:text-white transition-colors duration-200"
+              className="text-gray-300 text-sm underline underline-offset-4 decoration-1 hover:text-white transition-colors duration-200"
             >
               Veja transformações reais de alunos →
             </Link>
@@ -331,7 +331,7 @@ export default function Consultoria() {
                 >
                   {service.title}
                 </h2>
-                <p className="text-gray-400 text-sm mb-5">{service.subtitle}</p>
+                <p className="text-gray-300 text-sm mb-5">{service.subtitle}</p>
 
                 <p className="text-gray-300 text-sm leading-relaxed mb-8 border-b border-white/10 pb-8">
                   {service.description}
@@ -410,7 +410,7 @@ export default function Consultoria() {
                 >
                   {step.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{step.description}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>
@@ -440,11 +440,11 @@ export default function Consultoria() {
                   >
                     {item.question}
                   </span>
-                  <span className="text-gray-500 text-xl leading-none group-open:rotate-45 transition-transform duration-200">
+                  <span className="text-gray-400 text-xl leading-none group-open:rotate-45 transition-transform duration-200">
                     +
                   </span>
                 </summary>
-                <p className="text-gray-400 text-sm leading-relaxed mt-4">{item.answer}</p>
+                <p className="text-gray-300 text-sm leading-relaxed mt-4">{item.answer}</p>
               </details>
             ))}
           </div>
@@ -460,7 +460,7 @@ export default function Consultoria() {
           >
             Não sabe qual modalidade escolher?
           </h2>
-          <p className="text-gray-600 mb-8 text-lg">
+          <p className="text-gray-400 mb-8 text-lg">
             Me manda uma mensagem. Vamos conversar sobre o que faz mais sentido
             para a sua realidade — a conversa inicial é gratuita.
           </p>
@@ -473,7 +473,7 @@ export default function Consultoria() {
             <WhatsAppIcon size={18} />
             Falar com Montinho
           </a>
-          <p className="text-gray-500 text-sm mt-6">
+          <p className="text-gray-400 text-sm mt-6">
             Prefere entender primeiro qual caminho combina com você?{" "}
             <Link href="/diagnostico" className="underline underline-offset-4 decoration-1 hover:text-black transition-colors">
               Faça o Diagnóstico Montinho

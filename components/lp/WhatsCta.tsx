@@ -24,7 +24,7 @@ export default function WhatsCta({ label, message, sub }: WhatsCtaProps) {
         </svg>
         {label}
       </a>
-      {sub && <p className="text-gray-400 text-sm mt-3">{sub}</p>}
+      {sub && <p className="text-gray-300 text-sm mt-3">{sub}</p>}
     </div>
   );
 }

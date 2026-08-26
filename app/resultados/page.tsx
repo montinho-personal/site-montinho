@@ -189,7 +189,7 @@ export default function Resultados() {
                     />
                   ) : (
                     <div className="w-full h-full bg-gray-800 flex items-center justify-center">
-                      <span className="text-gray-600 text-sm">Antes &amp; Depois</span>
+                      <span className="text-gray-400 text-sm">Antes &amp; Depois</span>
                     </div>
                   )}
                 </div>
@@ -199,7 +199,7 @@ export default function Resultados() {
                   <div className="flex items-start justify-between mb-3">
                     <div>
                       <p className="text-white font-semibold">{item.name}</p>
-                      <p className="text-gray-500 text-xs">{item.age} · {item.modality}</p>
+                      <p className="text-gray-400 text-xs">{item.age} · {item.modality}</p>
                     </div>
                     <span
                       className="font-bold text-sm text-right"
@@ -215,12 +215,12 @@ export default function Resultados() {
                   {item.duration && (
                     <div className="flex items-center gap-2 mb-4">
                       <div className="h-px flex-1 bg-white/10" />
-                      <span className="text-gray-500 text-xs">{item.duration}</span>
+                      <span className="text-gray-400 text-xs">{item.duration}</span>
                       <div className="h-px flex-1 bg-white/10" />
                     </div>
                   )}
 
-                  <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                  <p className="text-gray-300 text-sm leading-relaxed mb-4">
                     {item.description}
                   </p>
 
@@ -245,7 +245,7 @@ export default function Resultados() {
           >
             A próxima história pode ser a sua.
           </h2>
-          <p className="text-gray-600 mb-8 text-lg">
+          <p className="text-gray-400 mb-8 text-lg">
             Estas pessoas tinham dúvidas, medos e já tinham tentado de tudo antes. O que mudou foi o método e o acompanhamento.
           </p>
           <a

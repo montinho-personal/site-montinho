@@ -86,7 +86,7 @@ export default function AskEmbed({
             dos maiores pesquisadores de hipertrofia e emagrecimento do mundo, e o
             que as principais referências do treinamento de força ensinam na prática.
           </p>
-          <p className="text-gray-400 text-base leading-relaxed">
+          <p className="text-gray-300 text-base leading-relaxed">
             Nada de achismo nem fórmula mágica: você recebe a explicação e vê
             exatamente quais artigos meus a embasaram.
           </p>
@@ -106,7 +106,7 @@ export default function AskEmbed({
             onChange={(e) => setQ(e.target.value)}
             maxLength={500}
             placeholder={placeholder}
-            className="flex-1 bg-black border border-white/25 text-white text-base px-5 py-4 outline-none placeholder:text-gray-600 min-h-[56px] transition-colors focus:border-[#BA9E50]"
+            className="flex-1 bg-black border border-white/25 text-white text-base px-5 py-4 outline-none placeholder:text-gray-400 min-h-[56px] transition-colors focus:border-[#BA9E50]"
           />
           <button
             type="submit"
@@ -117,7 +117,7 @@ export default function AskEmbed({
         </form>
 
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-gray-600 text-xs uppercase tracking-[0.1em] mr-1">
+          <span className="text-gray-400 text-xs uppercase tracking-[0.1em] mr-1">
             Ou tente:
           </span>
           {examples.slice(0, 3).map((ex) => (
@@ -137,7 +137,7 @@ export default function AskEmbed({
 
   return (
     <div className="border border-white/20 bg-white/[0.03] p-6 sm:p-7">
-      <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-2">
+      <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-2">
         {eyebrow}
       </p>
       <p
@@ -146,7 +146,7 @@ export default function AskEmbed({
       >
         Pergunte ao Montinho
       </p>
-      <p className="text-gray-500 text-sm mb-4">
+      <p className="text-gray-400 text-sm mb-4">
         Busque uma resposta nos conteúdos do site.
       </p>
       <form
@@ -163,7 +163,7 @@ export default function AskEmbed({
           onChange={(e) => setQ(e.target.value)}
           maxLength={500}
           placeholder={placeholder}
-          className="flex-1 bg-black border border-white/20 text-white text-sm px-4 py-3 focus:border-white/60 outline-none placeholder:text-gray-600 min-h-[48px]"
+          className="flex-1 bg-black border border-white/20 text-white text-sm px-4 py-3 focus:border-white/60 outline-none placeholder:text-gray-400 min-h-[48px]"
         />
         <button
           type="submit"

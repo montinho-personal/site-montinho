@@ -54,7 +54,7 @@ export default function MinhaHistoria() {
       {/* Hero */}
       <section className="pt-16 pb-10 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-6">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-300 mb-6">
             Minha História
           </p>
           <h1
@@ -236,7 +236,7 @@ export default function MinhaHistoria() {
                   >
                     +40kg
                   </p>
-                  <p className="text-gray-400 text-sm">perdidos na transformação pessoal</p>
+                  <p className="text-gray-300 text-sm">perdidos na transformação pessoal</p>
                 </div>
                 <div>
                   <p
@@ -245,7 +245,7 @@ export default function MinhaHistoria() {
                   >
                     +20 anos
                   </p>
-                  <p className="text-gray-400 text-sm">de experiência em musculação</p>
+                  <p className="text-gray-300 text-sm">de experiência em musculação</p>
                 </div>
                 <div>
                   <p
@@ -254,7 +254,7 @@ export default function MinhaHistoria() {
                   >
                     100+
                   </p>
-                  <p className="text-gray-400 text-sm">alunos transformados</p>
+                  <p className="text-gray-300 text-sm">alunos transformados</p>
                 </div>
               </div>
             </div>

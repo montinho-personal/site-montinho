@@ -49,7 +49,7 @@ export default function Depoimentos() {
             subtitle="Histórias reais de pessoas que decidiram investir em si mesmas."
           />
           {fromGoogle && testimonials.placeRating && (
-            <p className="mt-4 text-gray-400 text-sm">
+            <p className="mt-4 text-gray-300 text-sm">
               <span className="text-white font-semibold">{Number(testimonials.placeRating).toFixed(1)} ★</span>
               {" "}no Google · {testimonials.totalReviews} avaliações
             </p>
@@ -75,7 +75,7 @@ export default function Depoimentos() {
                 </div>
                 <div>
                   <p className="text-white text-sm font-medium">{dep.name}</p>
-                  <p className="text-gray-500 text-xs">{dep.role}</p>
+                  <p className="text-gray-400 text-xs">{dep.role}</p>
                 </div>
               </div>
             </div>

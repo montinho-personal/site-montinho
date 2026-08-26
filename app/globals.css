@@ -138,7 +138,7 @@ button {
   border-left: 3px solid #BA9E50;
   padding-left: 1.25rem;
   margin: 1.5rem 0;
-  color: #a0a0a0;
+  color: #d1d5db;
   font-style: italic;
 }
 
@@ -243,7 +243,7 @@ img {
   border-left: 3px solid #BA9E50;
   padding-left: 1.25rem;
   margin: 1.75rem 0;
-  color: #9ca3af;
+  color: #d1d5db;
   font-style: italic;
 }
 
@@ -319,7 +319,7 @@ img {
 
 .prose-blog figcaption {
   text-align: center;
-  color: #6b7280;
+  color: #9ca3af;
   font-size: 0.875rem;
   margin-top: 0.5rem;
 }
@@ -330,7 +330,7 @@ img {
 }
 
 .yt-caption {
-  color: #6b7280;
+  color: #9ca3af;
   font-size: 0.875rem;
   font-style: italic;
   margin-bottom: 0.75rem;

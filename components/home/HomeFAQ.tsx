@@ -42,7 +42,7 @@ export default function HomeFAQ() {
         >
           Perguntas Frequentes
         </h2>
-        <p className="text-gray-400 text-center text-sm mb-12">
+        <p className="text-gray-300 text-center text-sm mb-12">
           Dúvidas comuns sobre personal trainer e acompanhamento
         </p>
 
@@ -71,7 +71,7 @@ export default function HomeFAQ() {
                 </button>
               </dt>
               {open === index && (
-                <dd className="pb-5 text-gray-400 text-sm leading-relaxed">
+                <dd className="pb-5 text-gray-300 text-sm leading-relaxed">
                   {faq.answer}
                 </dd>
               )}

@@ -66,7 +66,7 @@ export default function PergunteAoMontinhoPage() {
       {/* Hero */}
       <section className="py-14 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-5">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-5">
             Assistente do site
           </p>
           <h1
@@ -82,7 +82,7 @@ export default function PergunteAoMontinhoPage() {
             os dias, apoiada na evidência científica e no que as principais
             referências do treinamento de força ensinam.
           </p>
-          <p className="text-gray-500 text-base leading-relaxed">
+          <p className="text-gray-400 text-base leading-relaxed">
             Você recebe a explicação e vê exatamente quais artigos a embasaram.
           </p>
         </div>
@@ -105,7 +105,7 @@ export default function PergunteAoMontinhoPage() {
             >
               O que é o Pergunte ao Montinho
             </h2>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed">
               É um assistente inteligente que transforma o acervo do site — centenas
               de artigos sobre treino, emagrecimento, exercícios, nutrição e
               acompanhamento — em respostas diretas. Em vez de procurar artigo por
@@ -122,7 +122,7 @@ export default function PergunteAoMontinhoPage() {
             >
               Que tipo de dúvida ele responde
             </h2>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed">
               Perguntas sobre treino e frequência ("quantas vezes por semana devo
               treinar?"), execução de exercícios ("como fazer remada curvada?"),
               emagrecimento e alimentação ("musculação emagrece?"), e também sobre o
@@ -140,7 +140,7 @@ export default function PergunteAoMontinhoPage() {
             >
               De onde vêm as respostas — e os limites
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-3">
+            <p className="text-gray-300 leading-relaxed mb-3">
               A fonte é o próprio site: os artigos do{" "}
               <Link href="/blog" className="underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors">
                 blog
@@ -155,7 +155,7 @@ export default function PergunteAoMontinhoPage() {
               </Link>
               .
             </p>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed">
               A ferramenta foi criada sobre os conteúdos do{" "}
               <Link href="/minha-historia" className="underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors">
                 Montinho, personal trainer em Alphaville

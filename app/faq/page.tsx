@@ -139,7 +139,7 @@ export default function FAQ() {
           >
             Ainda tem dúvidas?
           </h2>
-          <p className="text-gray-400 mb-8">
+          <p className="text-gray-300 mb-8">
             Me mande uma mensagem pelo WhatsApp. Respondo pessoalmente e sem enrolação.
           </p>
           <a

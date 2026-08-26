@@ -190,7 +190,7 @@ export default function PersonalTrainerBarueri() {
           >
             Como o treino personalizado funciona na prática
           </h2>
-          <p className="text-gray-400 font-light mb-10 leading-relaxed">
+          <p className="text-gray-300 font-light mb-10 leading-relaxed">
             Não existe atalho inteligente — mas existe um método que elimina o desperdício de esforço. Isso é o que ofereço:
           </p>
 
@@ -219,7 +219,7 @@ export default function PersonalTrainerBarueri() {
             ].map((item, i) => (
               <div key={i} className="border-l-2 border-white/20 pl-6">
                 <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-400 leading-relaxed font-light text-sm">{item.text}</p>
+                <p className="text-gray-300 leading-relaxed font-light text-sm">{item.text}</p>
               </div>
             ))}
           </div>
@@ -248,7 +248,7 @@ export default function PersonalTrainerBarueri() {
           >
             Objetivos que trabalho com meus alunos em Barueri
           </h2>
-          <p className="text-gray-400 font-light mb-8">
+          <p className="text-gray-300 font-light mb-8">
             Cada pessoa chega com um ponto de partida e um objetivo diferente. Adapto o protocolo a cada um deles:
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -262,11 +262,11 @@ export default function PersonalTrainerBarueri() {
             ].map((item, i) => (
               <div key={i} className="border border-white/10 p-5">
                 <p className="text-white font-semibold mb-2">{item.obj}</p>
-                <p className="text-gray-400 text-sm leading-relaxed font-light">{item.desc}</p>
+                <p className="text-gray-300 text-sm leading-relaxed font-light">{item.desc}</p>
               </div>
             ))}
           </div>
-          <div className="mt-8 space-y-5 text-gray-400 leading-relaxed font-light">
+          <div className="mt-8 space-y-5 text-gray-300 leading-relaxed font-light">
             <p>
               Em todos os casos, o ponto de partida é a avaliação física e o desenho da periodização: quanto treinar, com que intensidade e como progredir. Quanto tempo até ver resultado? Em geral, as primeiras mudanças de disposição e força aparecem nas primeiras semanas; alterações visíveis de composição corporal e percentual de gordura costumam se consolidar entre o segundo e o quarto mês de constância. Sem prazos mágicos — com processo.
             </p>
@@ -315,7 +315,7 @@ export default function PersonalTrainerBarueri() {
             ].map((item, i) => (
               <div key={i} className="border border-white/10 p-5">
                 <p className="text-white font-semibold mb-2">{item.obj}</p>
-                <p className="text-gray-400 text-sm leading-relaxed font-light">{item.desc}</p>
+                <p className="text-gray-300 text-sm leading-relaxed font-light">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -481,7 +481,7 @@ export default function PersonalTrainerBarueri() {
           >
             5 Dicas para acabar com dores no lombar
           </h2>
-          <p className="text-gray-400 leading-relaxed mb-8">
+          <p className="text-gray-300 leading-relaxed mb-8">
             Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
           </p>
           <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
@@ -504,7 +504,7 @@ export default function PersonalTrainerBarueri() {
             {faq.map((item, i) => (
               <div key={i} className="border-b border-white/10 pb-8">
                 <h3 className="text-white font-semibold text-lg mb-3">{item.question}</h3>
-                <p className="text-gray-400 leading-relaxed font-light">{item.answer}</p>
+                <p className="text-gray-300 leading-relaxed font-light">{item.answer}</p>
               </div>
             ))}
           </div>

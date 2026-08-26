@@ -137,15 +137,15 @@ export default async function BlogPost({ params }: Props) {
           <div className="flex items-center gap-3 mb-6">
             <Link
               href="/blog"
-              className="text-gray-500 hover:text-white text-sm transition-colors duration-200 flex items-center gap-1"
+              className="text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-1"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
               Blog
             </Link>
-            <span className="text-gray-700">/</span>
-            <span className="text-gray-500 text-sm">{post.category}</span>
+            <span className="text-gray-500">/</span>
+            <span className="text-gray-400 text-sm">{post.category}</span>
           </div>
 
           <h1
@@ -155,7 +155,7 @@ export default async function BlogPost({ params }: Props) {
             {post.title}
           </h1>
 
-          <div className="flex items-center gap-4 text-sm text-gray-500">
+          <div className="flex items-center gap-4 text-sm text-gray-400">
             <span>{post.author}</span>
             <span>·</span>
             <time dateTime={post.date}>
@@ -202,7 +202,7 @@ export default async function BlogPost({ params }: Props) {
               >
                 5 Dicas para acabar com dores no lombar
               </h2>
-              <p className="text-gray-400 leading-relaxed mb-8">
+              <p className="text-gray-300 leading-relaxed mb-8">
                 Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
               </p>
               <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
@@ -224,7 +224,7 @@ export default async function BlogPost({ params }: Props) {
             </div>
             <div>
               <p className="text-white font-semibold mb-1">{post.author}</p>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-300 text-sm leading-relaxed">
                 Personal Trainer especialista em emagrecimento e transformação corporal. Atendimento presencial em Alphaville (Barueri e Santana de Parnaíba) e online em todo o Brasil.
               </p>
             </div>
@@ -249,7 +249,7 @@ export default async function BlogPost({ params }: Props) {
                 <strong className="text-white font-semibold">Consultoria Online</strong>,
                 estou pronto para ajudar você a conquistar resultados reais, respeitando sua rotina e seus objetivos.
               </p>
-              <p className="text-gray-400 text-xs leading-relaxed mb-3">
+              <p className="text-gray-300 text-xs leading-relaxed mb-3">
                 Não sabe qual estratégia faz mais sentido para a sua rotina?{" "}
                 <Link href="/diagnostico" className="underline underline-offset-2 decoration-1 hover:text-white transition-colors">
                   Faça o Diagnóstico Montinho
@@ -291,14 +291,14 @@ export default async function BlogPost({ params }: Props) {
                   href={`/blog/${rp.slug}`}
                   className="border border-white/10 p-6 hover:border-white/30 transition-colors duration-200 group block"
                 >
-                  <span className="text-xs text-gray-500 tracking-wide uppercase">{rp.category}</span>
+                  <span className="text-xs text-gray-400 tracking-wide uppercase">{rp.category}</span>
                   <h3
                     className="text-white font-semibold mt-2 mb-2 group-hover:text-gray-200 transition-colors"
                     style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
                   >
                     {rp.title}
                   </h3>
-                  <p className="text-gray-500 text-xs">{rp.readTime} de leitura</p>
+                  <p className="text-gray-400 text-xs">{rp.readTime} de leitura</p>
                 </Link>
               ))}
             </div>

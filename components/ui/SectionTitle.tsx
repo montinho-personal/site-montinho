@@ -19,10 +19,10 @@ export default function SectionTitle({
   const eyebrowColor = accent
     ? ""
     : light
-    ? "text-gray-400"
+    ? "text-gray-300"
     : "";
   const titleColor = "text-white";
-  const subtitleColor = light ? "text-gray-300" : "text-gray-400";
+  const subtitleColor = light ? "text-gray-300" : "text-gray-300";
 
   return (
     <div className={`max-w-3xl ${alignClass}`}>

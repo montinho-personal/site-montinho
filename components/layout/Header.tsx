@@ -165,13 +165,13 @@ export default function Header() {
               </Link>
             ))}
             <div className="mt-4 pt-4 border-t border-white/10">
-              <p className="text-gray-600 text-xs font-semibold tracking-[0.15em] uppercase px-2 mb-2">Atendimento Local</p>
+              <p className="text-gray-400 text-xs font-semibold tracking-[0.15em] uppercase px-2 mb-2">Atendimento Local</p>
               {localLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-gray-400 hover:text-white text-sm font-medium py-2.5 px-2 border-b border-white/5 transition-colors duration-200 block"
+                  className="text-gray-300 hover:text-white text-sm font-medium py-2.5 px-2 border-b border-white/5 transition-colors duration-200 block"
                 >
                   {link.label}
                 </Link>

@@ -69,7 +69,7 @@ export default function Resultados() {
                     {item.result}
                   </span>
                 </div>
-                <p className="text-gray-500 text-sm leading-relaxed">{item.description}</p>
+                <p className="text-gray-400 text-sm leading-relaxed">{item.description}</p>
               </div>
             </div>
           ))}

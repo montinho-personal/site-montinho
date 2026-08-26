@@ -196,7 +196,7 @@ export default function PersonalTrainerTambore() {
           >
             Acompanhamento presencial em Tamboré: tudo que está incluso
           </h2>
-          <p className="text-gray-400 font-light mb-10 leading-relaxed">
+          <p className="text-gray-300 font-light mb-10 leading-relaxed">
             Não vendo sessões avulsas sem contexto. Ofereço acompanhamento — que é diferente de apenas treinar junto:
           </p>
 
@@ -235,7 +235,7 @@ export default function PersonalTrainerTambore() {
             ].map((item, i) => (
               <div key={i} className="p-6 border-b border-r border-white/10">
                 <p className="text-white font-semibold mb-2">{item.title}</p>
-                <p className="text-gray-400 text-sm leading-relaxed font-light">{item.text}</p>
+                <p className="text-gray-300 text-sm leading-relaxed font-light">{item.text}</p>
               </div>
             ))}
           </div>
@@ -410,7 +410,7 @@ export default function PersonalTrainerTambore() {
               </Link>
             ))}
           </div>
-          <p className="text-gray-400 leading-relaxed font-light mt-8 text-sm">
+          <p className="text-gray-300 leading-relaxed font-light mt-8 text-sm">
             O perfil de quem mora nesses residenciais é bem definido: executivos com agenda apertada e muitas viagens, famílias com filhos em idade escolar e um número crescente de alunos acima dos 50 anos que buscam força, autonomia e prevenção. Os objetivos mais frequentes que recebo por aqui são recompor a rotina de treino depois de anos parado, reduzir percentual de gordura sem dietas extremas e treinar com segurança apesar de dores antigas.
           </p>
         </div>
@@ -514,18 +514,18 @@ export default function PersonalTrainerTambore() {
               <p className="text-gray-300 italic text-lg leading-relaxed font-light mb-3">
                 "Tentei de tudo antes de contratar o Montinho — personal anterior, app de treino, grupo na academia. Nada funcionou de verdade porque nenhum deles realmente me conhecia. O acompanhamento dele é diferente."
               </p>
-              <footer className="text-gray-500 text-sm">Aluna da região de Tamboré · 6 meses de consultoria</footer>
+              <footer className="text-gray-400 text-sm">Aluna da região de Tamboré · 6 meses de consultoria</footer>
             </blockquote>
 
             <blockquote className="border-l-2 border-white/30 pl-6 py-2">
               <p className="text-gray-300 italic text-lg leading-relaxed font-light mb-3">
                 "Eu viajava muito e achei que treino personalizado não ia funcionar para a minha rotina. Criamos um protocolo que funciona seja qual for a semana — na academia do condomínio, no hotel ou em casa. Resultado consistente mesmo com imprevistos."
               </p>
-              <footer className="text-gray-500 text-sm">Aluno morador de Tamboré · Personal presencial + suporte online</footer>
+              <footer className="text-gray-400 text-sm">Aluno morador de Tamboré · Personal presencial + suporte online</footer>
             </blockquote>
           </div>
 
-          <p className="mt-8 text-gray-500 text-sm">
+          <p className="mt-8 text-gray-400 text-sm">
             Veja mais transformações na{" "}
             <Link href="/resultados" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
               página de resultados
@@ -557,7 +557,7 @@ export default function PersonalTrainerTambore() {
           >
             5 Dicas para acabar com dores no lombar
           </h2>
-          <p className="text-gray-400 leading-relaxed mb-8">
+          <p className="text-gray-300 leading-relaxed mb-8">
             Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
           </p>
           <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
@@ -580,7 +580,7 @@ export default function PersonalTrainerTambore() {
             {faq.map((item, i) => (
               <div key={i} className="border-b border-white/10 pb-8">
                 <h3 className="text-white font-semibold text-lg mb-3">{item.question}</h3>
-                <p className="text-gray-400 leading-relaxed font-light">{item.answer}</p>
+                <p className="text-gray-300 leading-relaxed font-light">{item.answer}</p>
               </div>
             ))}
           </div>
