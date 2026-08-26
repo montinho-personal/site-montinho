@@ -75,10 +75,15 @@ export default function PergunteAoMontinhoPage() {
           >
             Pergunte ao Montinho
           </h1>
-          <p className="text-gray-300 text-lg leading-relaxed">
-            Tire suas dúvidas sobre musculação, treino e emagrecimento — as
-            respostas vêm dos conteúdos publicados pelo Montinho, sempre com as
-            fontes para você se aprofundar.
+          <p className="text-gray-300 text-lg leading-relaxed mb-4">
+            Pergunte o que quiser sobre musculação, treino e emagrecimento. Cada
+            resposta é construída a partir dos mais de 800 conteúdos escritos pelo
+            Montinho — a experiência de quem perdeu 40 kg e acompanha alunos todos
+            os dias, apoiada na evidência científica e no que as principais
+            referências do treinamento de força ensinam.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            Você recebe a explicação e vê exatamente quais artigos a embasaram.
           </p>
         </div>
       </section>

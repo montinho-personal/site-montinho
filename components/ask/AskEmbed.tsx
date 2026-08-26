@@ -71,10 +71,26 @@ export default function AskEmbed({
           Pergunte ao Montinho
         </h2>
 
-        <p className="text-gray-300 text-base leading-relaxed mb-7 max-w-xl">
-          Escreva sua dúvida e receba uma resposta buscada nos mais de 800
-          conteúdos do site — com os artigos que embasaram cada explicação.
-        </p>
+        <div className="mb-8 max-w-2xl space-y-4">
+          <p className="text-white text-lg sm:text-xl leading-relaxed font-medium">
+            Escreva sua dúvida do jeito que você me perguntaria pessoalmente.
+          </p>
+          <p className="text-gray-300 text-base leading-relaxed">
+            A resposta vem dos mais de 800 conteúdos que eu escrevi — onde eu reúno
+            três coisas: a experiência de quem perdeu{" "}
+            <strong className="text-white font-semibold">40 kg</strong> e acompanha
+            alunos todos os dias, a{" "}
+            <strong className="text-white font-semibold">
+              evidência científica
+            </strong>{" "}
+            dos maiores pesquisadores de hipertrofia e emagrecimento do mundo, e o
+            que as principais referências do treinamento de força ensinam na prática.
+          </p>
+          <p className="text-gray-400 text-base leading-relaxed">
+            Nada de achismo nem fórmula mágica: você recebe a explicação e vê
+            exatamente quais artigos meus a embasaram.
+          </p>
+        </div>
 
         <form
           onSubmit={(e) => { e.preventDefault(); go(); }}
