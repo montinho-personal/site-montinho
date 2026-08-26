@@ -152,5 +152,13 @@ check(
   retrieve("você atende em Alphaville?").evidence >= EVIDENCE_MIN
 );
 
+// Links internos não podem levar UTM: parâmetro de campanha em navegação
+// interna reinicia a sessão no GA4 e reatribui a origem — quem veio do Google
+// vira "tráfego do próprio site" e a aquisição real se perde.
+check(
+  "nenhum link de artigo do assistente carrega UTM",
+  retrieve("como fazer rosca direta?").sources.every((s) => !s.slug.includes("utm_"))
+);
+
 console.log("\n" + (falhas === 0 ? "TODOS OS TESTES PASSARAM" : `${falhas} FALHARAM`));
 process.exit(falhas === 0 ? 0 : 1);
