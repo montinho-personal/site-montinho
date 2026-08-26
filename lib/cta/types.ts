@@ -43,7 +43,8 @@ export type CtaDestination =
   | "whatsapp"
   | "article"
   | "results"
-  | "rotina";
+  | "rotina"
+  | "revisao";
 
 /** Variantes visuais. Todas compartilham o design system; mudam só o peso. */
 export type CtaVariant = "light" | "diagnostic" | "service" | "local";

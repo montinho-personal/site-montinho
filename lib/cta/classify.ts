@@ -1,6 +1,7 @@
 import type { BlogPost } from "@/lib/blog";
 import { CTA_REGISTRY } from "./registry";
 import { CTA_OVERRIDES } from "./overrides";
+import { artigoDeExecucao } from "@/lib/revisao";
 import type { CtaCluster, CtaDefinition, CtaPlan, CtaStage } from "./types";
 
 /**
@@ -210,7 +211,7 @@ export function classify(post: BlogPost): { cluster: CtaCluster; stage: CtaStage
 
 /** CTA do meio por cluster. null = não interromper a leitura deste tema. */
 const MID_BY_CLUSTER: Partial<Record<CtaCluster, string>> = {
-  exercise: "ask_exercise",
+  exercise: "revisao_execucao",
   hypertrophy: "ask_concept",
   weight_loss: "ask_concept",
   beginner: "ask_concept",
@@ -292,7 +293,14 @@ export function planCTAs(post: BlogPost, { renderEnd = true } = {}): CtaPlan {
   // CTA do meio
   let mid: CtaDefinition | null = null;
   if (override?.mid !== null) {
-    const midId = override?.mid ?? MID_BY_CLUSTER[cluster];
+    let midId = override?.mid ?? MID_BY_CLUSTER[cluster];
+    // O convite para mandar vídeo só vale onde existe execução para revisar.
+    // O cluster "exercise" pega alguns artigos por colisão de palavra
+    // ("abdominal" em como-perder-gordura-abdominal); ali o CTA volta a ser
+    // o educativo. Dor e lesão nunca chegam aqui — ficam fora por regra.
+    if (midId === "revisao_execucao" && !artigoDeExecucao(post)) {
+      midId = "ask_exercise";
+    }
     const candidate = midId ? CTA_REGISTRY[midId] ?? null : null;
     // Só entra se o artigo comporta e se a ação difere do CTA final.
     const conflita = renderEnd && candidate?.primary.destination === end.primary.destination;
