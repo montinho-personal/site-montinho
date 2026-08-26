@@ -157,7 +157,7 @@ export const ACADEMIAS: Academia[] = [
     wellhub: naoConfirmado<boolean>(),
     totalpass: naoConfirmado<boolean>(),
     personalExterno: confirmado(true, "montinho", "verificacao direta do Montinho, que atende alunos na regiao", "2026-08-26"),
-    faixaPreco: confirmado("premium", "montinho", "verificacao direta do Montinho, que atende alunos na regiao", "2026-08-26"),
+    faixaPreco: confirmado("intermediario", "montinho", "verificacao direta do Montinho, que atende alunos na regiao", "2026-08-26"),
     estilos: confirmado(["musculacao_completa", "pesos_livres", "maquinas", "cardio"], "montinho", "verificacao direta do Montinho, que atende alunos na regiao", "2026-08-26"),
   },
   {

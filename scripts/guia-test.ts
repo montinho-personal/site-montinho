@@ -9,7 +9,7 @@
 
 import { ACADEMIAS } from "../lib/academias/base";
 import { blogPosts } from "../lib/blog";
-import { GRUPOS, ITENS, montarGuia } from "../lib/academias/guia";
+import { GRUPOS, ITENS, montarGuia, type GrupoId } from "../lib/academias/guia";
 
 let falhas = 0;
 const ok = (nome: string, cond: boolean, detalhe = "") => {
@@ -111,6 +111,35 @@ for (const a of ACADEMIAS.filter((x) => x.status !== "ativa")) {
     `artigo de "${a.nome}" avisa que encerrou`,
     !!proprio && /não está mais em operação|encerrou as atividades/i.test(proprio.content ?? ""),
     "o artigo segue no ar como se a unidade existisse"
+  );
+}
+
+console.log("\n" + "=".repeat(60) + "\nPREÇO x GRUPO\n" + "=".repeat(60));
+
+/**
+ * A faixa de preço confirmada na base não pode contradizer o grupo em que a
+ * academia aparece no guia. O leitor vê as duas coisas na mesma página: uma
+ * academia listada em "custo-benefício" e marcada como das mais caras destrói
+ * a confiança nas duas informações de uma vez.
+ *
+ * "Propostas específicas" aceita qualquer faixa de propósito — o grupo é
+ * definido pela especialização, não pelo preço.
+ */
+const TIER: Record<string, GrupoId[]> = {
+  economico: ["economicas"],
+  custo_beneficio: ["bairro", "economicas"],
+  intermediario: ["bairro", "especificas"],
+  premium: ["premium", "especificas"],
+};
+
+for (const a of ACADEMIAS.filter((x) => x.status === "ativa")) {
+  const f = a.faixaPreco.valor;
+  if (!f) continue;
+  const item = ITENS.find((i) => i.id === a.id);
+  ok(
+    `${a.nome}: faixa "${f}" combina com o grupo do guia`,
+    !!item && TIER[f].includes(item.grupo),
+    `está em "${item?.grupo}", e ${f} não pertence a esse grupo`
   );
 }
 
