@@ -22,7 +22,22 @@ export type AnalyticsEvent =
   | "diagnostic_result_view"
   | "diagnostic_whatsapp_click"
   | "diagnostic_article_click"
-  | "diagnostic_service_click";
+  | "diagnostic_service_click"
+  // Pergunte ao Montinho (nunca enviar o texto da pergunta — só categorias)
+  | "ask_montinho_view"
+  | "ask_montinho_start"
+  | "ask_montinho_question"
+  | "ask_montinho_answer"
+  | "ask_montinho_source_click"
+  | "ask_montinho_followup"
+  | "ask_montinho_diagnostic_click"
+  | "ask_montinho_service_click"
+  | "ask_montinho_whatsapp_click"
+  | "ask_montinho_no_answer"
+  | "ask_montinho_error"
+  | "ask_montinho_feedback_positive"
+  | "ask_montinho_feedback_negative"
+  | "ask_montinho_embed_submit";
 
 export interface EventParams {
   [key: string]: string | number | boolean | undefined;

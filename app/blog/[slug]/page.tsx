@@ -7,6 +7,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import ArticleReadTracker from "@/components/analytics/ArticleReadTracker";
 import ArticleLightbox from "@/components/blog/ArticleLightbox";
+import AskEmbed from "@/components/ask/AskEmbed";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -207,6 +208,11 @@ export default async function BlogPost({ params }: Props) {
               <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
             </div>
           )}
+
+          {/* Pergunte ao Montinho — entrada leve, sem carregar o chat aqui */}
+          <div className="mt-14">
+            <AskEmbed context={{ slug: post.slug, title: post.title, category: post.category }} />
+          </div>
 
           {/* Author box */}
           <div className="mt-16 pt-8 border-t border-white/10 flex items-start gap-5">

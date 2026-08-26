@@ -8,6 +8,7 @@ import Resultados from "@/components/home/Resultados";
 import Depoimentos from "@/components/home/Depoimentos";
 import CTAFinal from "@/components/home/CTAFinal";
 import DiagnosticoCTA from "@/components/home/DiagnosticoCTA";
+import AskEmbed from "@/components/ask/AskEmbed";
 import HomeFAQ from "@/components/home/HomeFAQ";
 
 const faqSchema = {
@@ -97,6 +98,11 @@ export default function Home() {
       <Depoimentos />
       <DiagnosticoCTA />
       <HomeFAQ />
+      <section className="py-14 bg-black border-t border-white/10">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AskEmbed eyebrow="Tem alguma dúvida sobre treino?" />
+        </div>
+      </section>
       <CTAFinal />
     </>
   );
