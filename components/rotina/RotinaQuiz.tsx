@@ -461,10 +461,19 @@ export default function RotinaQuiz() {
           individualidades em um minuto. O que ela encontrou foi uma estrutura
           coerente com seu objetivo e com a rotina que você descreveu hoje.
         </p>
+        <p className="text-gray-300 leading-relaxed mb-3">
+          O que você acabou de ver se apoia em três coisas: a prática de acompanhar
+          alunos todos os dias, a evidência científica (as fontes estão logo abaixo
+          da página) e o trabalho de grandes treinadores do Brasil e do mundo.
+          Nenhuma delas entrega fórmula secreta — todas apontam direções.
+        </p>
         <p className="text-gray-300 leading-relaxed mb-6">
           A partir daqui — exercícios, volume, intensidade, progressão e ajustes ao
           longo do caminho — é onde a individualização começa.{" "}
-          <strong className="text-white">A ferramenta encontra a estrutura. A individualização começa depois.</strong>
+          <strong className="text-white">A ferramenta encontra a estrutura. A individualização começa depois.</strong>{" "}
+          E essa parte é feita por alguém que perdeu mais de 40 kg antes de treinar
+          qualquer pessoa — e que faz isso porque gosta de ver alguém descobrir que
+          também consegue.
         </p>
         {/* Quem terminou o quiz está no ponto de maior intenção da página: a
             ação principal abre a conversa já com o contexto preenchido. A
@@ -533,7 +542,8 @@ export default function RotinaQuiz() {
       <div className="flex items-center justify-between">
         <p className="text-gray-500 text-xs max-w-md leading-relaxed">
           Você não encontrou o treino perfeito. Encontrou algo mais útil: um treino
-          que pode existir na sua vida real — e ele pode mudar quando a sua vida mudar.
+          que pode existir na sua vida real. A melhor estratégia é sempre a que você
+          consegue sustentar — e ela muda quando a sua vida muda.
         </p>
         <button type="button" onClick={refazer} className="text-xs text-gray-400 hover:text-white underline underline-offset-2 transition-colors whitespace-nowrap ml-4">
           Refazer

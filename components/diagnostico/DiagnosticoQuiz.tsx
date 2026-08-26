@@ -11,6 +11,7 @@ import {
   type QuestionId,
 } from "@/lib/diagnostico";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
+import NotaMetodo from "@/components/filosofia/NotaMetodo";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 
 const STORAGE_KEY = "mt_diagnostico_v1";
@@ -296,6 +297,10 @@ export default function DiagnosticoQuiz() {
             </button>
           </div>
         </div>
+
+        {/* Variante escolhida pelo perfil: cada resultado do diagnóstico carrega
+            uma leitura diferente da mesma filosofia. */}
+        <NotaMetodo chave={`diagnostico-${result.profileId}`} />
 
         <p className="text-gray-400 text-xs leading-relaxed mt-6">
           Esta é uma orientação inicial baseada nas suas respostas — não é avaliação

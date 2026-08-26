@@ -11,6 +11,8 @@ import AskEmbed from "@/components/ask/AskEmbed";
 import ContextualCTA from "@/components/cta/ContextualCTA";
 import { planCTAs } from "@/lib/cta/classify";
 import { splitAtNaturalBreak } from "@/lib/cta/placement";
+import NotaMetodo from "@/components/filosofia/NotaMetodo";
+import { clusterRecebeNota } from "@/lib/filosofia";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -238,6 +240,11 @@ export default async function BlogPost({ params }: Props) {
               <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
             </div>
           )}
+
+          {/* Nota de método: fecha o conteúdo com a filosofia antes de qualquer
+              próxima ação. Só em artigos que de fato dão orientação — o
+              cluster vem do mesmo classificador que escolhe o CTA. */}
+          {clusterRecebeNota(cta.cluster) && <NotaMetodo chave={post.slug} />}
 
           {/* Dedupe: o embed do Pergunte só aparece quando o CTA do meio já
               não leva para lá — senão seriam duas caixas pedindo a mesma ação
