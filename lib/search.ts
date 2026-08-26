@@ -167,6 +167,22 @@ const TOKEN_MAP: Record<string, string> = {
   bf: "percentual de gordura corporal",
   aej: "aerobico em jejum cardio jejum",
   bcaa: "aminoacidos suplementacao",
+  // partes do corpo pelo nome popular
+  bumbum: "gluteo gluteos",
+  bunda: "gluteo gluteos",
+  gluteo: "gluteos",
+  pochete: "gordura abdominal barriga",
+  pneu: "gordura abdominal barriga",
+  pochetes: "gordura abdominal barriga",
+  tanquinho: "abdomen definicao abdominal",
+  batata: "panturrilha",
+  peitoral: "peito",
+  dorsais: "costas dorsal",
+  // verbos de objetivo — como as pessoas dizem o que querem
+  engrossar: "hipertrofia massa muscular",
+  aumentar: "hipertrofia ganhar massa",
+  definir: "definicao",
+  marombar: "musculacao",
   // gírias de academia
   trincar: "definir abdomen definicao",
   trincado: "definido abdomen definicao",

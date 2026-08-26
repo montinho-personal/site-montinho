@@ -18,6 +18,7 @@
 
 import { getBlogPost, SITE_URL } from "@/lib/blog";
 import { search, termRarity, canonicalizeQuery } from "@/lib/search";
+import { classify } from "@/lib/cta/classify";
 
 export interface KnowledgeChunk {
   articleId: string; // slug ou id do doc de negócio
@@ -214,6 +215,15 @@ export interface PageContext {
   category?: string;
 }
 
+/**
+ * Limiar de cobertura da âncora. Calibrado varrendo 0,30–0,55 contra 14
+ * perguntas legítimas e 9 fora do domínio: 0,35 acertou 21/23, contra 19/23
+ * em 0,55. Acima disso, declarações de objetivo ("quero ganhar bumbum",
+ * "quero engrossar as pernas") eram recusadas mesmo com a fonte certa em mãos.
+ * O prompt do modelo é a segunda linha de defesa para o que passa.
+ */
+const LIMIAR = 0.35;
+
 export function retrieve(question: string, context?: PageContext): RetrievalResult {
   const rewritten = canonicalizeQuery(question);
   const expanded = expandQuery(rewritten);
@@ -257,11 +267,27 @@ export function retrieve(question: string, context?: PageContext): RetrievalResu
       text: d.text,
     });
     sources.push({ title: d.title, slug: d.path, url: `${SITE_URL}${d.path}` });
-    evidence += score * 20;
+    // Peso do conteúdo institucional. Quando ele casa, é a fonte definitiva
+    // ("quem é o Montinho", "quanto custa") — e desde que páginas locais
+    // deixaram de entrar como fonte, ele precisa se sustentar sozinho.
+    evidence += score * 35;
   }
 
   // 2) Artigos via a mesma camada de busca do site
-  const results = search(expanded, 8);
+  let results = search(expanded, 8);
+
+  // Sem sinal geográfico na pergunta, páginas de serviço local e de academia
+  // saem da disputa. Elas casam por colisão de palavra ("forte" no nome de um
+  // residencial) e entregam a fonte errada — pior do que não responder.
+  const GEO = /alphaville|tambore|tamboré|barueri|santana|parnaiba|parnaíba|aldeia|regiao|região|perto|proximo|próximo|cidade|bairro|condominio|condomínio|presencial|academia/;
+  if (!GEO.test(nq)) {
+    results = results.filter((r) => {
+      const post = getBlogPost(r.slug);
+      if (!post) return true;
+      const cluster = classify(post).cluster;
+      return cluster !== "local_service" && cluster !== "gym_local" && cluster !== "local_other";
+    });
+  }
 
   // Boost de contexto: se a pergunta nasce dentro de um artigo, ele entra
   // na disputa mesmo que a busca não o traga (sem forçar exclusividade).
@@ -335,7 +361,14 @@ export function retrieve(question: string, context?: PageContext): RetrievalResu
     "2026","2027","hoje","agora","sobre","entre","depois","antes","ainda",
     "consigo","preciso","quero","tenho","esta","estou","ser","tem","nao",
   ]);
-  const anchorTerms = terms.filter((t) => t.length >= 4 && !STOP.has(t));
+  // A âncora mede se o conteúdo responde ao que o USUÁRIO pediu — então usa as
+  // palavras dele (já corrigidas de grafia e gíria), não os sinônimos temáticos
+  // que nós acrescentamos depois. Padding nosso não pode reprovar a pergunta:
+  // "quero engrossar as pernas" virava 5 termos e afundava a cobertura.
+  const anchorTerms = norm(rewritten)
+    .replace(/[^\p{L}\p{N}\s-]+/gu, " ")
+    .split(/\s+/)
+    .filter((t) => t.length >= 4 && !STOP.has(t));
   // Âncora anti-fora-de-domínio, por cobertura ponderada.
   //
   // Duas ideias: (1) termo raro no acervo vale mais que termo comum — "divisao"
@@ -359,7 +392,7 @@ export function retrieve(question: string, context?: PageContext): RetrievalResu
     else if (metaFraca.includes(t)) encontrado += peso * 0.5;
   }
   const cobertura = total === 0 ? 1 : encontrado / total;
-  const anchored = anchorTerms.length === 0 || cobertura >= 0.55;
+  const anchored = anchorTerms.length === 0 || cobertura >= LIMIAR;
 
   return {
     chunks: anchored ? chunks : [],
