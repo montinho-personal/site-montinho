@@ -17,7 +17,7 @@
  */
 
 import { getBlogPost, SITE_URL } from "@/lib/blog";
-import { search } from "@/lib/search";
+import { search, termRarity } from "@/lib/search";
 
 export interface KnowledgeChunk {
   articleId: string; // slug ou id do doc de negócio
@@ -98,6 +98,20 @@ const BUSINESS_DOCS: BusinessDoc[] = [
       "O canal principal de contato é o WhatsApp +55 (11) 98106-3409, disponível pelos botões do site. Também é possível conhecer o trabalho pelo Instagram @montinhopersonal. A conversa inicial é gratuita e sem compromisso.",
   },
 ];
+
+/**
+ * Palavras que sozinhas não provam que a pergunta é sobre o negócio.
+ * "Qual o melhor investimento em criptomoedas" casava com a palavra-chave
+ * "investimento" do bloco de preços e virava pergunta legítima. Elas só valem
+ * quando a pergunta também traz algum termo do domínio.
+ */
+const GENERIC_KEYWORDS = new Set([
+  "valor", "plano", "pacote", "investimento", "preco", "preço",
+  "quem", "falar", "mensagem", "modalidade", "regiao", "região",
+]);
+
+const DOMAIN_HINT =
+  /(treino|treinar|musculacao|musculação|academia|personal|consultoria|acompanhamento|montinho|emagrec|hipertrofia|exercicio|exercício|aula|dieta|fitness|massa muscular|shape)/;
 
 // ── Normalização e sinônimos ─────────────────────────────────────────────────
 
@@ -201,7 +215,11 @@ export interface PageContext {
 
 export function retrieve(question: string, context?: PageContext): RetrievalResult {
   const expanded = expandQuery(question);
+  // Pontuação precisa sair antes de virar termo: "divisão?" normalizava para
+  // "divisao?" e nunca casava com o slug "full-body-vs-divisao-abc". Toda
+  // pergunta cuja palavra-chave era a última palavra caía em "sem resposta".
   const terms = norm(expanded)
+    .replace(/[^\p{L}\p{N}\s-]+/gu, " ")
     .split(/\s+/)
     .filter((t) => t.length >= 3);
 
@@ -211,9 +229,16 @@ export function retrieve(question: string, context?: PageContext): RetrievalResu
 
   // 1) Docs de negócio (lexical simples sobre keywords)
   const nq = norm(question);
+  const hasDomainHint = DOMAIN_HINT.test(nq);
   const bizHits = BUSINESS_DOCS.map((d) => ({
     d,
-    score: d.keywords.reduce((acc, k) => acc + (nq.includes(norm(k)) ? 1 : 0), 0),
+    score: d.keywords.reduce((acc, k) => {
+      const kn = norm(k);
+      if (!nq.includes(kn)) return acc;
+      // Palavra genérica só conta com um termo do domínio junto.
+      if (GENERIC_KEYWORDS.has(kn) && !hasDomainHint) return acc;
+      return acc + 1;
+    }, 0),
   }))
     .filter((x) => x.score > 0)
     .sort((a, b) => b.score - a.score)
@@ -309,15 +334,30 @@ export function retrieve(question: string, context?: PageContext): RetrievalResu
     "consigo","preciso","quero","tenho","esta","estou","ser","tem","nao",
   ]);
   const anchorTerms = terms.filter((t) => t.length >= 4 && !STOP.has(t));
-  const sourceMeta = norm(
-    sources
-      .map((s) => s.title + " " + s.slug)
-      .join(" ") +
+  // Âncora anti-fora-de-domínio, por cobertura ponderada.
+  //
+  // Duas ideias: (1) termo raro no acervo vale mais que termo comum — "divisao"
+  // pesa 6, "melhor" pesa 0,25; (2) aparecer no título ou no slug prova que o
+  // conteúdo é SOBRE aquilo, enquanto aparecer só no corpo do texto é sinal
+  // fraco, porque num acervo de 813 artigos quase toda palavra aparece em
+  // algum parágrafo. Sem essa distinção, "qual o melhor celular" passava.
+  const metaForte = norm(
+    sources.map((s) => s.title + " " + s.slug).join(" ") +
       " " +
-      chunks.map((c) => c.heading + " " + c.category).join(" ")
+      chunks.map((c) => `${c.heading} ${c.category}`).join(" ")
   );
-  const anchored =
-    anchorTerms.length === 0 || anchorTerms.some((t) => sourceMeta.includes(t));
+  const metaFraca = norm(chunks.map((c) => c.text).join(" "));
+
+  let encontrado = 0;
+  let total = 0;
+  for (const t of anchorTerms) {
+    const peso = termRarity(t);
+    total += peso;
+    if (metaForte.includes(t)) encontrado += peso;
+    else if (metaFraca.includes(t)) encontrado += peso * 0.5;
+  }
+  const cobertura = total === 0 ? 1 : encontrado / total;
+  const anchored = anchorTerms.length === 0 || cobertura >= 0.55;
 
   return {
     chunks: anchored ? chunks : [],
