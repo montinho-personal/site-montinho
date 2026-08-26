@@ -39,4 +39,16 @@ export const CTA_OVERRIDES: Record<string, CtaOverride> = {
     mid: null,
     note: "comparativo de preço — não interromper com CTA no meio",
   },
+
+  // Artigos cuja pergunta central é "como estruturar minha semana" — o CTA do
+  // meio leva para o Treino Para Minha Rotina, que responde exatamente isso.
+  "full-body-vs-divisao-abc": { mid: "rotina_mid", note: "divisão → ferramenta de rotina" },
+  "treino-upper-lower-superior-inferior": { mid: "rotina_mid", note: "divisão → ferramenta de rotina" },
+  "push-pull-legs": { mid: "rotina_mid", note: "divisão → ferramenta de rotina" },
+  "como-montar-treino-abc": { mid: "rotina_mid", note: "divisão → ferramenta de rotina" },
+  "como-montar-treino-abcde": { mid: "rotina_mid", note: "divisão → ferramenta de rotina" },
+  "treino-abcd-para-hipertrofia": { mid: "rotina_mid", note: "divisão → ferramenta de rotina" },
+  "frequencia-de-treino": { mid: "rotina_mid", note: "frequência → ferramenta de rotina" },
+  "treino-de-30-minutos-funciona": { mid: "rotina_mid", note: "tempo → ferramenta de rotina" },
+  "treinar-todos-os-dias-faz-mal": { mid: "rotina_mid", note: "frequência → ferramenta de rotina" },
 };
