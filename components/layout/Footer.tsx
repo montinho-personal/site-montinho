@@ -80,6 +80,14 @@ export default function Footer() {
                   Tire dúvidas de treino na hora
                 </span>
               </Link>
+              <Link href="/revisao-de-execucao" className="group block">
+                <span className="text-gray-300 group-hover:text-white text-sm transition-colors duration-200">
+                  Revisão de Execução
+                </span>
+                <span className="block text-gray-400 text-xs mt-0.5 leading-relaxed">
+                  Mande um vídeo, eu assisto
+                </span>
+              </Link>
               <Link href="/treino-para-minha-rotina" className="group block">
                 <span className="text-gray-300 group-hover:text-white text-sm transition-colors duration-200">
                   Treino Para Minha Rotina

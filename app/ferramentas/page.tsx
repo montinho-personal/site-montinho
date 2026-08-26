@@ -5,12 +5,12 @@ import { SITE_URL, blogPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Ferramentas Gratuitas de Treino",
   description:
-    "Três ferramentas gratuitas do Montinho: descubra seu perfil de treino, monte a estrutura que cabe na sua semana e tire dúvidas de musculação com base nos conteúdos do site. Sem cadastro.",
+    "Quatro ferramentas gratuitas do Montinho: descubra seu perfil de treino, monte a estrutura que cabe na sua semana, mande um vídeo da sua execução e tire dúvidas de musculação. Sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas` },
   openGraph: {
     title: "Ferramentas Gratuitas de Treino | Montinho",
     description:
-      "Descubra seu perfil, monte a estrutura que cabe na sua semana e tire dúvidas de treino. Gratuito e sem cadastro.",
+      "Descubra seu perfil, monte a estrutura da sua semana, mande um vídeo da sua execução e tire dúvidas de treino. Gratuito e sem cadastro.",
     url: `${SITE_URL}/ferramentas`,
     type: "website",
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
@@ -27,7 +27,7 @@ const breadcrumbSchema = {
 };
 
 /**
- * ItemList é o tipo correto aqui: a página existe para listar as três
+ * ItemList é o tipo correto aqui: a página existe para listar as
  * ferramentas. Nada de Review, Rating ou FAQ inventado.
  */
 const itemListSchema = {
@@ -38,6 +38,7 @@ const itemListSchema = {
     { "@type": "ListItem", position: 1, name: "Diagnóstico Montinho", url: `${SITE_URL}/diagnostico` },
     { "@type": "ListItem", position: 2, name: "Treino Para Minha Rotina", url: `${SITE_URL}/treino-para-minha-rotina` },
     { "@type": "ListItem", position: 3, name: "Pergunte ao Montinho", url: `${SITE_URL}/pergunte-ao-montinho` },
+    { "@type": "ListItem", position: 4, name: "Revisão Gratuita de Execução", url: `${SITE_URL}/revisao-de-execucao` },
   ],
 };
 
@@ -65,6 +66,15 @@ const FERRAMENTAS = [
     quando: "Use quando você já vai treinar e a dúvida é como distribuir os treinos na semana.",
   },
   {
+    href: "/revisao-de-execucao",
+    nome: "Revisão Gratuita de Execução",
+    pergunta: "Estou fazendo certo?",
+    tempo: "grave uma série · envie pelo WhatsApp",
+    texto:
+      "Você grava uma série completa do exercício e me manda pelo WhatsApp. Eu mesmo assisto e te passo os principais pontos que vale observar na execução — amplitude, ritmo, controle, o que muda quando a fadiga aparece.",
+    quando: "Use quando a dúvida é sobre o seu movimento, não sobre o conceito. Sem cadastro e sem custo.",
+  },
+  {
     href: "/pergunte-ao-montinho",
     nome: "Pergunte ao Montinho",
     pergunta: "Tenho uma dúvida específica",
@@ -87,16 +97,16 @@ export default function FerramentasPage() {
             Gratuitas · sem cadastro
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5" style={h}>
-            Três ferramentas para sair do &ldquo;não sei o que fazer&rdquo;
+            Quatro ferramentas para sair do &ldquo;não sei o que fazer&rdquo;
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed">
-            Cada uma responde a uma pergunta diferente. Você não precisa usar as
-            três — comece pela que descreve melhor a sua dúvida de agora.
+            Cada uma responde a uma pergunta diferente. Você não precisa usar
+            todas — comece pela que descreve melhor a sua dúvida de agora.
           </p>
         </div>
       </section>
 
-      {/* As três */}
+      {/* As ferramentas */}
       <section className="py-14 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-6">
           {FERRAMENTAS.map((f) => (
@@ -137,7 +147,10 @@ export default function FerramentasPage() {
               <strong className="text-white">&ldquo;por onde eu começo?&rdquo;</strong>, o
               Diagnóstico olha o contexto inteiro. Se você já vai treinar e a dúvida
               é <strong className="text-white">&ldquo;como organizo minha semana?&rdquo;</strong>,
-              o Treino Para Minha Rotina resolve. Se é algo pontual —{" "}
+              o Treino Para Minha Rotina resolve. Se a dúvida é sobre o{" "}
+              <strong className="text-white">seu próprio movimento</strong>, a
+              Revisão de Execução é a única que olha para você de verdade — você
+              grava uma série e eu assisto. Se é algo pontual —{" "}
               <strong className="text-white">&ldquo;posso treinar com dor?&rdquo;</strong>,{" "}
               <strong className="text-white">&ldquo;whey antes ou depois?&rdquo;</strong> —, o
               Pergunte ao Montinho responde na hora.

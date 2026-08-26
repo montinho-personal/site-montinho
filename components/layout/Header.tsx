@@ -25,6 +25,7 @@ const toolLinks = [
   { href: "/diagnostico", label: "Diagnóstico Montinho", hint: "Descubra seu perfil em 1 minuto" },
   { href: "/treino-para-minha-rotina", label: "Treino Para Minha Rotina", hint: "A divisão que cabe na sua semana" },
   { href: "/pergunte-ao-montinho", label: "Pergunte ao Montinho", hint: "Tire dúvidas de treino na hora" },
+  { href: "/revisao-de-execucao", label: "Revisão de Execução", hint: "Mande um vídeo, eu assisto" },
 ];
 
 const localLinks = [

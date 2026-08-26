@@ -55,7 +55,12 @@ export type AnalyticsEvent =
   | "routine_diagnostic_click"
   | "routine_ask_click"
   | "routine_service_click"
-  | "routine_whatsapp_click";
+  | "routine_whatsapp_click"
+
+  // Revisão Gratuita de Execução
+  | "execution_review_view"
+  | "execution_review_whatsapp_click"
+  | "execution_review_article_cta_view";
 
 export interface EventParams {
   [key: string]: string | number | boolean | undefined;

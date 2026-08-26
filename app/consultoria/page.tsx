@@ -417,6 +417,36 @@ export default function Consultoria() {
         </div>
       </section>
 
+      {/* Amostra grátis do trabalho — entrega valor antes de pedir decisão */}
+      <section className="py-14 bg-black border-t border-white/10">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="border-l-2 pl-5 sm:pl-7" style={{ borderColor: "#BA9E50" }}>
+            <p className="text-xs font-semibold tracking-[0.18em] uppercase mb-3" style={{ color: "#BA9E50" }}>
+              Antes de decidir
+            </p>
+            <p
+              className="text-white font-bold text-xl sm:text-2xl leading-snug mb-3"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Quer experimentar como eu olho para uma execução?
+            </p>
+            <p className="text-gray-300 leading-relaxed mb-5 max-w-2xl">
+              Grave uma série completa de qualquer exercício e me mande pelo
+              WhatsApp. Eu assisto e te passo os principais pontos que vale
+              observar — gratuitamente, sem cadastro e sem compromisso nenhum.
+              É a forma mais honesta de você sentir como funciona antes de
+              contratar qualquer coisa.
+            </p>
+            <Link
+              href="/revisao-de-execucao"
+              className="inline-flex items-center text-sm text-white underline underline-offset-4 decoration-1 decoration-white/40 hover:decoration-white transition-colors min-h-[44px]"
+            >
+              Ver como funciona a revisão gratuita →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-16 bg-black border-t border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

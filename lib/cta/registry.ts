@@ -271,6 +271,19 @@ export const CTA_REGISTRY: Record<string, CtaDefinition> = {
     },
   },
 
+  revisao_execucao: {
+    id: "revisao_execucao",
+    variant: "light",
+    eyebrow: "Revisão gratuita",
+    title: "Quer saber como está a sua execução?",
+    body: "Grave uma série completa e me mande pelo WhatsApp. Eu mesmo assisto e te passo os principais pontos que vale observar. Sem cadastro, sem custo — e não precisa estar perfeito.",
+    primary: {
+      label: "Enviar meu vídeo",
+      href: "/revisao-de-execucao",
+      destination: "revisao",
+    },
+  },
+
   // ------------------------------------------------------------------ Neutros
   // Fallback: nunca deixar classificação incerta gerar oferta inadequada.
 
