@@ -7,6 +7,7 @@ import MinhaHistoriaPreview from "@/components/home/MinhaHistoriaPreview";
 import Resultados from "@/components/home/Resultados";
 import Depoimentos from "@/components/home/Depoimentos";
 import CTAFinal from "@/components/home/CTAFinal";
+import DiagnosticoCTA from "@/components/home/DiagnosticoCTA";
 import HomeFAQ from "@/components/home/HomeFAQ";
 
 const faqSchema = {
@@ -94,6 +95,7 @@ export default function Home() {
       <MinhaHistoriaPreview />
       <Resultados />
       <Depoimentos />
+      <DiagnosticoCTA />
       <HomeFAQ />
       <CTAFinal />
     </>
