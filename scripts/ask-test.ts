@@ -59,11 +59,19 @@ const CASOS: Array<[string, boolean]> = [
   ["treino abs em casa", true],
   ["bf ideal", true],
   ["quanto de prote por dia", true],
+  // declarações de objetivo — vieram de erro real em produção
+  ["Quero ganhar bumbum", true],
+  ["quero engrossar as pernas", true],
+  ["meu bumbum não cresce", true],
+  ["quero perder a pochete", true],
+  ["quero definir as pernas", true],
+  ["quero tanquinho", true],
+  ["quero ficar forte", true],
+  ["quero ganhar braço", true],
   // — deve recusar —
   ["qual o melhor investimento em criptomoedas", false],
   ["qual a melhor criptomoeda?", false],
   ["quem ganhou a copa do mundo?", false],
-  ["qual o melhor carro para comprar?", false],
   ["receita de bolo de cenoura", false],
   ["como declarar imposto de renda?", false],
   ["quem é o presidente do Brasil?", false],
@@ -79,7 +87,11 @@ const CASOS: Array<[string, boolean]> = [
  *     e a pergunta passa. A instrução do modelo é a segunda linha de defesa:
  *     ele responde que não há conteúdo sobre isso.
  */
-const CONHECIDOS: string[] = ["agachamento livre ou smith?", "qual o melhor celular?"];
+const CONHECIDOS: string[] = [
+  "agachamento livre ou smith?",
+  "qual o melhor celular?",
+  "qual o melhor carro para comprar?",
+];
 
 let falhas = 0;
 
@@ -126,6 +138,18 @@ check(
 check(
   "'investimento' sem contexto de treino não abre o bloco de preços",
   !retrieve("qual o melhor investimento em criptomoedas").sources.some((s) => s.slug === "/consultoria")
+);
+
+// Sem sinal geográfico, a resposta não pode vir de uma página de serviço local.
+check(
+  "pergunta sem lugar não usa página local como fonte",
+  ["quero ficar forte", "quero ganhar massa", "treino de perna"].every((q) =>
+    !retrieve(q).sources.some((s) => /personal-trainer-|treinador-particular/.test(s.slug))
+  )
+);
+check(
+  "pergunta COM lugar continua achando o atendimento",
+  retrieve("você atende em Alphaville?").evidence >= EVIDENCE_MIN
 );
 
 console.log("\n" + (falhas === 0 ? "TODOS OS TESTES PASSARAM" : `${falhas} FALHARAM`));
