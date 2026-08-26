@@ -114,6 +114,29 @@ for (const a of ACADEMIAS.filter((x) => x.status !== "ativa")) {
   );
 }
 
+/**
+ * A Competition saiu da base porque a rede não tem unidade em Alphaville —
+ * não é encerramento, é correção de uma afirmação que nunca foi verdadeira.
+ * Como ela não está mais em ACADEMIAS, o laço acima não a cobre; esta guarda
+ * impede que o aviso de correção seja removido por engano.
+ */
+{
+  const art = blogPosts.find((p) => p.slug === "competition-alphaville");
+  ok(
+    "artigo da Competition mantém a correção",
+    !!art && /não tem unidade em Alphaville/i.test(art.content ?? ""),
+    "o aviso de correção sumiu do artigo"
+  );
+  const vazando = blogPosts.filter(
+    (p) => p.slug !== "competition-alphaville" && /\bCompetition\b/.test(p.content ?? "") && !/Biggest Loser/i.test(p.content ?? "")
+  );
+  ok(
+    "Competition não é oferecida como academia da região",
+    vazando.length === 0,
+    vazando.map((p) => p.slug).join(", ")
+  );
+}
+
 console.log("\n" + "=".repeat(60) + "\nPREÇO x GRUPO\n" + "=".repeat(60));
 
 /**
