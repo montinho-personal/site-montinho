@@ -37,7 +37,11 @@ export type AnalyticsEvent =
   | "ask_montinho_error"
   | "ask_montinho_feedback_positive"
   | "ask_montinho_feedback_negative"
-  | "ask_montinho_embed_submit";
+  | "ask_montinho_embed_submit"
+
+  // CTAs contextuais nos artigos
+  | "contextual_cta_view"
+  | "contextual_cta_click";
 
 export interface EventParams {
   [key: string]: string | number | boolean | undefined;

@@ -2,12 +2,15 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { marked } from "marked";
-import { getBlogPost, getRelatedPosts, getPostCoverImage, blogPosts, SITE_URL } from "@/lib/blog";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
+import { getBlogPost, getRelatedPosts, getPostCoverImage, blogPosts, SITE_URL } from "@/lib/blog";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import ArticleReadTracker from "@/components/analytics/ArticleReadTracker";
 import ArticleLightbox from "@/components/blog/ArticleLightbox";
 import AskEmbed from "@/components/ask/AskEmbed";
+import ContextualCTA from "@/components/cta/ContextualCTA";
+import { planCTAs } from "@/lib/cta/classify";
+import { splitAtNaturalBreak } from "@/lib/cta/placement";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -60,6 +63,21 @@ export default async function BlogPost({ params }: Props) {
   const relatedPosts = getRelatedPosts(slug, post.category);
   const contentHtml = marked(post.content) as string;
   const cover = getPostCoverImage(post);
+
+  // Plano de CTA: classificação determinística no build, nunca em runtime.
+  //
+  // FASE 1 (atual): só o CTA do meio é renderizado. O bloco final continua
+  // sendo o antigo, igual em todos os artigos, para não alterar de uma vez os
+  // 813 links de WhatsApp e de /consultoria que hoje saem dos artigos — e para
+  // que exista base de comparação antes de mexer neles.
+  //
+  // FASE 2: trocar o bloco final por <ContextualCTA cta={cta.end}
+  // position="end_article" ...> e remover o bloco fixo abaixo. O plano de
+  // cta.end já está calculado e testado; só não está em uso.
+  const cta = planCTAs(post, { renderEnd: false });
+  // Só divide o HTML se houver um CTA de meio E um ponto de corte editorial
+  // seguro. Sem os dois, o artigo fica inteiro e leva só o CTA final.
+  const split = cta.mid ? splitAtNaturalBreak(contentHtml) : null;
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -187,10 +205,22 @@ export default async function BlogPost({ params }: Props) {
       {/* Content */}
       <article className="py-16 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            className="prose-blog"
-            dangerouslySetInnerHTML={{ __html: contentHtml }}
-          />
+          {split && cta.mid ? (
+            <>
+              <div className="prose-blog" dangerouslySetInnerHTML={{ __html: split.before }} />
+              <ContextualCTA
+                cta={cta.mid}
+                position="mid_article"
+                articleSlug={post.slug}
+                articleCategory={post.category}
+                cluster={cta.cluster}
+                stage={cta.stage}
+              />
+              <div className="prose-blog" dangerouslySetInnerHTML={{ __html: split.after }} />
+            </>
+          ) : (
+            <div className="prose-blog" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          )}
           <ArticleLightbox />
 
           {/* Video */}
@@ -209,10 +239,14 @@ export default async function BlogPost({ params }: Props) {
             </div>
           )}
 
-          {/* Pergunte ao Montinho — entrada leve, sem carregar o chat aqui */}
-          <div className="mt-14">
-            <AskEmbed context={{ slug: post.slug, title: post.title, category: post.category }} />
-          </div>
+          {/* Dedupe: o embed do Pergunte só aparece quando o CTA do meio já
+              não leva para lá — senão seriam duas caixas pedindo a mesma ação
+              no mesmo artigo. */}
+          {cta.mid?.primary.destination !== "ask" && (
+            <div className="mt-14">
+              <AskEmbed context={{ slug: post.slug, title: post.title, category: post.category }} />
+            </div>
+          )}
 
           {/* Author box */}
           <div className="mt-16 pt-8 border-t border-white/10 flex items-start gap-5">
