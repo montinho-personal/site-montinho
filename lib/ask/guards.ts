@@ -18,6 +18,43 @@ export type Intent =
 
 export type CTA = "whatsapp" | "diagnostico" | "consultoria" | null;
 
+/**
+ * Assunto da conversa, em linguagem de gente, para a mensagem de WhatsApp.
+ *
+ * Só a categoria — nunca o texto que a pessoa digitou. A pergunta é livre e
+ * pode conter informação de saúde que ela contou ao assistente sem intenção
+ * de mandar para ninguém; pré-preencher isso seria expor algo que ela não
+ * escolheu compartilhar.
+ */
+const INTENT_FRASE: Record<Intent, string> = {
+  emagrecimento:
+    "Estava tirando dúvidas sobre emagrecimento e quero entender como seria um acompanhamento para o meu caso.",
+  hipertrofia:
+    "Estava tirando dúvidas sobre ganho de massa muscular e quero entender como seria um acompanhamento para o meu caso.",
+  exercicio:
+    "Estava tirando dúvidas sobre execução de exercícios e quero entender como seria um acompanhamento para o meu caso.",
+  dor: "Estava tirando dúvidas sobre treinar respeitando uma limitação e quero entender como seria um acompanhamento no meu caso.",
+  iniciante:
+    "Estou começando a treinar e quero entender como seria um acompanhamento para o meu caso.",
+  cardio:
+    "Estava tirando dúvidas sobre cardio e condicionamento e quero entender como seria um acompanhamento para o meu caso.",
+  alimentacao:
+    "Estava tirando dúvidas sobre alimentação e suplementação e quero entender como seria um acompanhamento de treino para o meu caso.",
+  servico: "Quero entender como funciona o seu acompanhamento e qual opção faz mais sentido para mim.",
+  local: "Quero saber sobre o seu atendimento presencial na região.",
+  diagnostico:
+    "Ainda não sei qual treino combina comigo e quero entender como seria um acompanhamento para o meu caso.",
+  outra: "Quero entender como funciona o seu acompanhamento.",
+};
+
+/** Mensagem de WhatsApp a partir do Pergunte ao Montinho. */
+export function buildAskWhatsApp(intent: Intent | undefined): string {
+  return (
+    `Oi, Montinho! Vim pelo Pergunte ao Montinho no seu site.\n\n` +
+    INTENT_FRASE[intent ?? "outra"]
+  );
+}
+
 function norm(s: string): string {
   return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }

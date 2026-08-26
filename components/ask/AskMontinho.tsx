@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
+import { buildAskWhatsApp, type Intent } from "@/lib/ask/guards";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 
 const STORAGE_KEY = "mt_ask_v1";
@@ -174,14 +175,9 @@ export default function AskMontinho({
 
   const ctaBlock = (m: Msg) => {
     if (m.cta === "whatsapp") {
-      const interesse =
-        m.intent === "hipertrofia" ? "hipertrofia" :
-        m.intent === "emagrecimento" ? "emagrecimento" : "acompanhamento";
       return (
         <a
-          href={getWhatsAppUrl(
-            `Oi, Montinho! Vim pelo Pergunte ao Montinho e gostaria de saber mais sobre acompanhamento. Meu interesse principal é ${interesse}.`
-          )}
+          href={getWhatsAppUrl(buildAskWhatsApp(m.intent as Intent | undefined))}
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => trackEvent("ask_montinho_whatsapp_click", { intent_category: m.intent })}
