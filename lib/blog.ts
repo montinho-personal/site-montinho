@@ -16371,7 +16371,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a> — estrutura completa e boa relação custo-benefício para o treino acompanhado</li>
 <li><a href="/blog/ironberg-alphaville">Ironberg Alphaville</a> — para quem busca ambiente focado em musculação séria e hipertrofia</li>
-<li><a href="/blog/bio-ritmo-alphaville">Bio Ritmo Alphaville</a> — opção premium, com equipamentos variados e ambiente confortável</li>
 </ul>
 
 <p>E, quando o Residencial 1 dispõe de espaço fitness ou áreas comuns adequadas, o treino pode acontecer sem sair do condomínio — com protocolo adaptado à estrutura disponível. A escolha do local não muda o método: avaliação física, periodização e progressão de carga acompanham o aluno onde ele estiver.</p>
@@ -16534,7 +16533,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <ul>
 <li><a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a> — custo-benefício e boa estrutura de musculação</li>
-<li><a href="/blog/bio-ritmo-alphaville">Bio Ritmo Alphaville</a> — estrutura completa e ambiente confortável</li>
 <li><a href="/blog/bodytech-alphaville">Bodytech Alphaville</a> — equipamentos premium e piscina</li>
 <li><a href="/blog/ironberg-alphaville">Ironberg Alphaville</a> — referência para quem foca em musculação pesada</li>
 </ul>
@@ -16683,7 +16681,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <ul>
 <li><a href="/blog/bodytech-alphaville">Bodytech Alphaville</a> — estrutura premium, opção frequente entre moradores do Residencial 3</li>
-<li><a href="/blog/bio-ritmo-alphaville">Bio Ritmo Alphaville</a> — ambiente completo e confortável</li>
 <li><a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a> — praticidade e bom parque de musculação</li>
 <li><a href="/blog/ironberg-alphaville">Ironberg Alphaville</a> — para quem busca musculação de alto nível</li>
 </ul>
@@ -17183,7 +17180,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <ul>
 <li><a href="/blog/bodytech-alphaville">Bodytech Alphaville</a> — estrutura completa, boa para quem valoriza variedade de equipamentos;</li>
-<li><a href="/blog/bio-ritmo-alphaville">Bio Ritmo Alphaville</a> — ambiente premium, alinhado ao perfil da região;</li>
 <li><a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a> — opção acessível e funcional para treinos de musculação bem estruturados.</li>
 </ul>
 
@@ -17506,7 +17502,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><strong>Atendimento residencial:</strong> treino na sua casa, com equipamentos portáteis que levo ou estrutura que você já tenha. É o formato preferido de quem valoriza privacidade e zero deslocamento.</li>
 <li><strong>Espaço fitness do condomínio:</strong> muitos residenciais de Alphaville contam com academia ou espaço fitness nas áreas comuns — quando é o caso, adapto o protocolo aos equipamentos disponíveis.</li>
-<li><strong>Academias próximas:</strong> para quem prefere estrutura completa, acompanho alunos em academias da região de Alphaville, como <a href="/blog/smart-fit-alphaville">Smart Fit</a>, <a href="/blog/bodytech-alphaville">Bodytech</a>, <a href="/blog/bio-ritmo-alphaville">Bio Ritmo</a> e <a href="/blog/ironberg-alphaville">Ironberg</a>.</li>
+<li><strong>Academias próximas:</strong> para quem prefere estrutura completa, acompanho alunos em academias da região de Alphaville, como <a href="/blog/smart-fit-alphaville">Smart Fit</a>, <a href="/blog/bodytech-alphaville">Bodytech</a> e <a href="/blog/ironberg-alphaville">Ironberg</a>.</li>
 </ul>
 
 <h3>Dicas para treinar morando no Residencial 9</h3>
@@ -17850,7 +17846,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
 <li><strong>Atendimento residencial:</strong> treino na sua casa dentro do Residencial 11, com equipamentos portáteis ou a estrutura que você já tem — sem deslocamento e com total privacidade.</li>
 <li><strong>Espaço fitness do condomínio:</strong> muitos residenciais de Alphaville contam com academia nas áreas comuns; quando existe, o protocolo é adaptado ao que está disponível.</li>
-<li><strong>Academias da região:</strong> acompanho alunos em unidades próximas, como <a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a>, <a href="/blog/bodytech-alphaville">Bodytech</a>, <a href="/blog/panobianco-alphaville">Panobianco</a> e <a href="/blog/bio-ritmo-alphaville">Bio Ritmo</a> — cada uma com estrutura diferente, e ajudo a escolher a que melhor serve ao seu objetivo.</li>
+<li><strong>Academias da região:</strong> acompanho alunos em unidades próximas, como <a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a>, <a href="/blog/bodytech-alphaville">Bodytech</a>, <a href="/blog/panobianco-alphaville">Panobianco</a> e <a href="/blog/competition-alphaville">Competition</a> — cada uma com estrutura diferente, e ajudo a escolher a que melhor serve ao seu objetivo.</li>
 </ul>
 
 <h3>Dicas para treinar morando no Residencial 11</h3>
@@ -18025,7 +18021,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h3>Academias próximas ao Residencial 12</h3>
 
-<p>Para quem prefere treinar fora do condomínio, a região de Alphaville concentra boas opções onde posso acompanhar o aluno: a <a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a>, para quem busca praticidade e custo acessível; a <a href="/blog/ironberg-alphaville">Ironberg Alphaville</a>, referência em musculação pesada; a <a href="/blog/bodytech-alphaville">Bodytech Alphaville</a> e a <a href="/blog/bio-ritmo-alphaville">Bio Ritmo Alphaville</a>, com estrutura completa e ambiente premium. A escolha depende do seu objetivo, do equipamento necessário para o protocolo e da logística da sua rotina.</p>
+<p>Para quem prefere treinar fora do condomínio, a região de Alphaville concentra boas opções onde posso acompanhar o aluno: a <a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a>, para quem busca praticidade e custo acessível; a <a href="/blog/ironberg-alphaville">Ironberg Alphaville</a>, referência em musculação pesada; a <a href="/blog/bodytech-alphaville">Bodytech Alphaville</a> e a <a href="/blog/competition-alphaville">Competition Alphaville</a>, com estrutura completa e ambiente premium. A escolha depende do seu objetivo, do equipamento necessário para o protocolo e da logística da sua rotina.</p>
 
 <h2>Treinar com dores e limitações: uma especialidade do atendimento</h2>
 
@@ -18348,7 +18344,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h3>Academias próximas ao Melville</h3>
 
-<p>Para quem prefere estrutura completa de musculação fora do condomínio, acompanho alunos nas principais academias da região de Alphaville: <a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a> (praticidade e bom custo), <a href="/blog/ironberg-alphaville">Ironberg Alphaville</a> (referência para treino de força pesado), <a href="/blog/bodytech-alphaville">Bodytech Alphaville</a> e <a href="/blog/bio-ritmo-alphaville">Bio Ritmo Alphaville</a> (estrutura premium e aulas complementares). E muitos condomínios da região contam com espaço fitness próprio — quando é o caso do seu, a sessão pode acontecer ali, sem sair do portão.</p>
+<p>Para quem prefere estrutura completa de musculação fora do condomínio, acompanho alunos nas principais academias da região de Alphaville: <a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a> (praticidade e bom custo), <a href="/blog/ironberg-alphaville">Ironberg Alphaville</a> (referência para treino de força pesado), <a href="/blog/bodytech-alphaville">Bodytech Alphaville</a> (estrutura premium e aulas complementares). E muitos condomínios da região contam com espaço fitness próprio — quando é o caso do seu, a sessão pode acontecer ali, sem sair do portão.</p>
 
 <h2>Dicas para treinar morando no Melville</h2>
 
@@ -76766,7 +76762,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>E o problema piora porque Alphaville tem <strong>muitas opções</strong>: da rede econômica ao clube premium, do templo da musculação pesada ao estúdio boutique. Sem critério, você escolhe pela fachada e desiste pela rotina.</p>
 <p>Este guia mapeia as principais <strong>academias em Alphaville</strong> por perfil — sem inventar preço, sem achismo — para você acertar de primeira. Porque <strong>academia boa é a que você frequenta</strong>.</p>
 <h2>Resposta rápida: quais são as academias de Alphaville?</h2>
-<p>Alphaville concentra redes econômicas (<strong>Smart Fit, Bluefit, Panobianco, SkyFit, Voi Fit</strong>), opções intermediárias e de musculação forte (<strong>Ironberg, Gaviões, NitroGym, Arena 18, Competition, 24 Wellness</strong>) e academias de perfil premium ou especializado (<strong>Bodytech, Bio Ritmo, Scelta, 4Perform</strong>). Valores e horários variam por unidade — consulte sempre o site oficial ou a recepção.</p>
+<p>Alphaville concentra redes econômicas (<strong>Smart Fit, Bluefit, Panobianco, SkyFit, Voi Fit</strong>), opções intermediárias e de musculação forte (<strong>Ironberg, Gaviões, NitroGym, Arena 18, Competition, 24 Wellness</strong>) e academias de perfil premium ou especializado (<strong>Bodytech, Scelta, 4Perform</strong>). Valores e horários variam por unidade — consulte sempre o site oficial ou a recepção.</p>
 <h2>O mapa das academias por perfil</h2>
 <h3>Econômicas: treinar bem gastando pouco</h3>
 <p><strong>Smart Fit</strong> é a maior rede low-cost do país e tem presença forte na região. <strong>Bluefit</strong>, <strong>Panobianco</strong>, <strong>SkyFit</strong> e <strong>Voi Fit</strong> seguem lógica parecida: <strong>mensalidade acessível</strong>, equipamentos modernos e autonomia no treino.</p>
@@ -76774,14 +76770,14 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h3>Musculação séria: para quem quer carga</h3>
 <p><strong>Ironberg</strong> e <strong>Gaviões</strong> nasceram da cultura do fisiculturismo e atraem quem leva hipertrofia a sério. <strong>NitroGym</strong>, <strong>Arena 18</strong> e <strong>Competition</strong> completam o time das academias com pegada de musculação intensa em Alphaville e arredores.</p>
 <h3>Premium e experiência completa</h3>
-<p><strong>Bodytech</strong> é referência nacional no segmento premium, e <strong>Bio Ritmo</strong> — da mesma holding da Smart Fit — ocupa o posicionamento mais sofisticado do grupo. <strong>Scelta</strong>, <strong>4Perform</strong> e <strong>24 Wellness</strong> atendem quem valoriza estrutura, aulas e atendimento mais próximo.</p>
+<p><strong>Bodytech</strong> é referência nacional no segmento premium, e a <strong>Competition</strong> atende quem quer ambiente premium com foco em sala de peso. <strong>Scelta</strong>, <strong>4Perform</strong> e <strong>24 Wellness</strong> atendem quem valoriza estrutura, aulas e atendimento mais próximo.</p>
 <p>Para o público de Alphaville — executivos do <strong>Centro Industrial e Empresarial</strong>, famílias de condomínio, moradores do <strong>Tamboré</strong> — a conveniência pesa: muitas unidades ficam a minutos da <strong>Alameda Rio Negro</strong>, do <strong>Iguatemi Alphaville</strong> e do <strong>Shopping Tamboré</strong>.</p>
 <h2>Comparativo rápido (qualitativo)</h2>
 <table>
 <tr><th>Grupo</th><th>Perfil</th><th>Estrutura</th><th>Indicado para</th></tr>
 <tr><td>Smart Fit, Bluefit, Panobianco, SkyFit, Voi Fit</td><td>Econômico</td><td>Musculação e cardio, autoatendimento</td><td>Quem treina com autonomia e busca custo-benefício</td></tr>
 <tr><td>Ironberg, Gaviões, NitroGym, Arena 18, Competition</td><td>Musculação intensa</td><td>Foco em pesos e hipertrofia</td><td>Quem busca ambiente de treino pesado</td></tr>
-<tr><td>Bodytech, Bio Ritmo, 24 Wellness</td><td>Premium</td><td>Aulas, serviços e atendimento amplo</td><td>Quem valoriza experiência completa</td></tr>
+<tr><td>Bodytech, 24 Wellness</td><td>Premium</td><td>Aulas, serviços e atendimento amplo</td><td>Quem valoriza experiência completa</td></tr>
 <tr><td>Scelta, 4Perform</td><td>Especializado</td><td>Atendimento mais próximo</td><td>Quem quer acompanhamento e ambiente reservado</td></tr>
 </table>
 <p><em>Faixas de preço variam por plano e unidade — confirme no site oficial de cada academia.</em></p>
@@ -76916,13 +76912,13 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Muita gente resolve "depois", vai empurrando, e o depois vira nunca. Enquanto isso, disposição, sono e saúde cobram a conta em silêncio.</p>
 <p>A boa notícia: a cidade tem opções sólidas, do <strong>Centro Histórico</strong> à <strong>Aldeia da Serra</strong>. Este guia organiza as <strong>academias de Santana de Parnaíba</strong> para você decidir hoje — porque <strong>o melhor treino é o que começa esta semana</strong>.</p>
 <h2>Resposta rápida: onde treinar em Santana de Parnaíba?</h2>
-<p>As academias mais conhecidas da cidade incluem <strong>XSuperAção, OBOX Training Club, Coliseu Fitness, Sparta Fitness, Forma Física</strong> e, na região da Aldeia da Serra, a <strong>Scelta Aldeia da Serra</strong>. Perfis variam entre musculação tradicional e treino em grupo — consulte cada unidade para valores, horários e modalidades atualizados.</p>
+<p>As academias mais conhecidas da cidade incluem <strong>XSuperAção, OBOX Training Club, Coliseu Fitness, Sparta Fitness</strong> e <strong>Forma Física</strong>. Perfis variam entre musculação tradicional e treino em grupo — consulte cada unidade para valores, horários e modalidades atualizados.</p>
 <h2>As academias da cidade, bairro a bairro</h2>
 <h3>Região central e Fazendinha</h3>
 <p>Quem mora perto do <strong>Centro Histórico de Santana de Parnaíba</strong> ou na <strong>Fazendinha</strong> encontra academias locais como <strong>XSuperAção</strong>, <strong>Coliseu Fitness</strong>, <strong>Sparta Fitness</strong> e <strong>Forma Física</strong>, com foco em <strong>musculação</strong> e atendimento de bairro — aquele ambiente onde a recepção sabe seu nome.</p>
 <p>Vantagem real das academias locais: menos rotatividade, mais vínculo. Desvantagem possível: estrutura menor que a de grandes redes. O que pesa mais? Depende do seu perfil.</p>
-<h3>Aldeia da Serra: treino perto dos condomínios</h3>
-<p>A <strong>Scelta Aldeia da Serra</strong> atende os moradores dos condomínios da região, que antes precisavam descer até Alphaville para treinar. Para famílias da Aldeia, treinar a minutos de casa muda o jogo da <strong>constância</strong>.</p>
+<h3>Aldeia da Serra: hoje sem academia na região</h3>
+<p>A academia que atendia os condomínios da Aldeia encerrou as atividades, e hoje a região não tem uma unidade em operação. Na prática, quem mora ali escolhe entre descer para Alphaville, treinar em Santana de Parnaíba ou usar o espaço fitness do próprio condomínio com acompanhamento. Vale calcular o deslocamento no horário real em que você vai treinar — para quem mora na Aldeia, é esse número que decide a <strong>constância</strong>, não a estrutura da academia.</p>
 <h3>Treino em grupo e funcional</h3>
 <p>O <strong>OBOX Training Club</strong> representa a vertente do treino em grupo e funcional na cidade — boa pedida para quem precisa de energia coletiva para manter a rotina.</p>
 <h2>Comparativo qualitativo</h2>
@@ -76930,7 +76926,6 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><th>Academia</th><th>Perfil</th><th>Proposta</th><th>Indicado para</th></tr>
 <tr><td>XSuperAção, Coliseu Fitness, Sparta Fitness, Forma Física</td><td>Academia local</td><td>Musculação e atendimento de bairro</td><td>Quem valoriza proximidade e ambiente familiar</td></tr>
 <tr><td>OBOX Training Club</td><td>Treino em grupo</td><td>Funcional e comunidade</td><td>Quem rende mais treinando acompanhado</td></tr>
-<tr><td>Scelta Aldeia da Serra</td><td>Regional/condomínios</td><td>Estrutura próxima da Aldeia da Serra</td><td>Moradores da Aldeia e arredores</td></tr>
 </table>
 <p><em>Valores e horários variam — confirme sempre com a unidade antes de fechar plano.</em></p>
 <h2>O critério que ninguém usa (e deveria)</h2>
@@ -76993,7 +76988,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>O resultado? Executivos que pagam plano e não vão. Moradores de condomínio com academia embaixo de casa e treino aleatório. Energia caindo, estresse subindo.</p>
 <p>Este guia mostra <strong>onde treinar no Tamboré</strong> e arredores — e, mais importante, como fazer o treino caber na sua rotina. Porque <strong>agenda cheia não é desculpa, é variável de planejamento</strong>.</p>
 <h2>Resposta rápida: onde treinar no Tamboré?</h2>
-<p>A região do Tamboré é atendida pelas academias do eixo Alphaville-Barueri: redes econômicas como <strong>Smart Fit</strong> e <strong>Bluefit</strong>, opções premium como <strong>Bodytech</strong> e <strong>Bio Ritmo</strong>, e academias de musculação forte como <strong>Ironberg</strong>, <strong>Gaviões</strong> e <strong>NitroGym</strong>, além de espaços como <strong>Scelta</strong> e <strong>24 Wellness</strong>. Consulte o site oficial de cada rede para localizar a unidade mais próxima e confirmar valores.</p>
+<p>A região do Tamboré é atendida pelas academias do eixo Alphaville-Barueri: redes econômicas como <strong>Smart Fit</strong> e <strong>Bluefit</strong>, opções premium como <strong>Bodytech</strong> e <strong>Competition</strong>, e academias de musculação forte como <strong>Ironberg</strong>, <strong>Gaviões</strong> e <strong>NitroGym</strong>, além de espaços como <strong>Scelta</strong> e <strong>24 Wellness</strong>. Consulte o site oficial de cada rede para localizar a unidade mais próxima e confirmar valores.</p>
 <h2>O mapa do treino na região</h2>
 <h3>Perto do trabalho: o eixo empresarial</h3>
 <p>Quem trabalha no <strong>Centro Industrial e Empresarial de Alphaville</strong> ou no entorno do <strong>Shopping Tamboré</strong> tem opções a minutos de carro. Treinar no <strong>horário de almoço</strong> ou antes do expediente evita o trânsito da <strong>Rodovia Castelo Branco</strong> e o pico das 18h.</p>
@@ -77003,7 +76998,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <ul>
 <li><strong>Custo-benefício e autonomia:</strong> Smart Fit, Bluefit, Panobianco.</li>
 <li><strong>Musculação intensa:</strong> Ironberg, Gaviões, NitroGym, Arena 18.</li>
-<li><strong>Experiência premium:</strong> Bodytech, Bio Ritmo, 24 Wellness.</li>
+<li><strong>Experiência premium:</strong> Bodytech, 24 Wellness.</li>
 <li><strong>Atendimento próximo:</strong> Scelta, 4Perform.</li>
 </ul>
 <h2>Comparativo qualitativo</h2>
@@ -77011,7 +77006,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><th>Perfil</th><th>Exemplos na região</th><th>Estrutura</th><th>Indicado para</th></tr>
 <tr><td>Econômico</td><td>Smart Fit, Bluefit, Panobianco</td><td>Musculação e cardio, autoatendimento</td><td>Quem treina sozinho com plano definido</td></tr>
 <tr><td>Musculação intensa</td><td>Ironberg, Gaviões, NitroGym</td><td>Foco em força e hipertrofia</td><td>Quem busca ambiente de treino pesado</td></tr>
-<tr><td>Premium</td><td>Bodytech, Bio Ritmo, 24 Wellness</td><td>Aulas e serviços amplos</td><td>Quem valoriza experiência completa</td></tr>
+<tr><td>Premium</td><td>Bodytech, 24 Wellness</td><td>Aulas e serviços amplos</td><td>Quem valoriza experiência completa</td></tr>
 <tr><td>Condomínio</td><td>Academias residenciais do Tamboré</td><td>Estrutura compacta</td><td>Máxima conveniência com plano bem montado</td></tr>
 </table>
 <p><em>Valores variam por unidade e plano — confirme nos canais oficiais de cada academia.</em></p>
@@ -77068,7 +77063,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>A armadilha clássica: assinar na academia "famosa" que fica a 20 minutos de casa. Nas primeiras semanas você vai. Depois o trânsito decide por você.</p>
 <p>Aqui está o raio-x da região — organizado por localização e perfil — para você escolher pela <strong>sua rotina</strong>, não pela propaganda. Porque <strong>a academia certa é a que está no seu caminho</strong>.</p>
 <h2>Resposta rápida</h2>
-<p>Perto de Alphaville você encontra: dentro do próprio bairro, <strong>Smart Fit, Bluefit, Ironberg, Bodytech, Bio Ritmo, Gaviões, NitroGym, Arena 18, Scelta, 4Perform, Competition, Panobianco, 24 Wellness, SkyFit e Voi Fit</strong>; no eixo Barueri, <strong>RedFit, Primax e CrossFit Barueri</strong>; e na Aldeia da Serra, a <strong>Scelta Aldeia da Serra</strong>. Valores e horários variam — consulte o site oficial ou a unidade.</p>
+<p>Perto de Alphaville você encontra: dentro do próprio bairro, <strong>Smart Fit, Bluefit, Ironberg, Bodytech, Gaviões, NitroGym, Arena 18, Scelta, 4Perform, Competition, Panobianco, 24 Wellness, SkyFit e Voi Fit</strong>; no eixo Barueri, <strong>RedFit, Primax e CrossFit Barueri</strong>. Na Aldeia da Serra não há academia em operação hoje — quem mora nos condomínios de lá treina em Alphaville ou em Santana de Parnaíba. Valores e horários variam — consulte o site oficial ou a unidade.</p>
 <figure style="margin:2rem 0">
   <img src="/blog-images/academias-perto-de-alphaville-foto.webp" alt="Antes e depois de Montinho, personal trainer que atende nas academias perto de Alphaville: da adolescência ao físico atual" title="Academias Perto de Alphaville — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Mais importante que a academia é o método: a transformação do próprio Montinho, que atende na região de Alphaville.</figcaption>
@@ -77084,10 +77079,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Comparativo qualitativo da região</h2>
 <table>
 <tr><th>Localização</th><th>Exemplos</th><th>Perfil</th><th>Indicado para</th></tr>
-<tr><td>Alphaville (centro comercial)</td><td>Smart Fit, Bio Ritmo, Bodytech, 24 Wellness</td><td>Do econômico ao premium</td><td>Quem trabalha no eixo empresarial</td></tr>
+<tr><td>Alphaville (centro comercial)</td><td>Smart Fit, Bodytech, 24 Wellness</td><td>Do econômico ao premium</td><td>Quem trabalha no eixo empresarial</td></tr>
 <tr><td>Alphaville/Tamboré</td><td>Ironberg, Gaviões, NitroGym, Arena 18</td><td>Musculação intensa</td><td>Foco em força e hipertrofia</td></tr>
 <tr><td>Barueri (centro)</td><td>Bluefit, Panobianco, RedFit, Primax</td><td>Econômico e musculação</td><td>Quem mora ou circula por Barueri</td></tr>
-<tr><td>Aldeia da Serra</td><td>Scelta Aldeia da Serra</td><td>Regional</td><td>Moradores da Aldeia e condomínios próximos</td></tr>
 </table>
 <p><em>Confirme unidades, planos e horários nos canais oficiais — eles mudam com frequência.</em></p>
 <h2>Antes de assinar: o teste dos 3 filtros</h2>
@@ -77148,7 +77142,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>E tem o custo invisível: cada mês sem treinar é disposição a menos, estresse a mais e saúde empurrada com a barriga. O corpo cobra juros.</p>
 <p>Este guia organiza as <strong>academias perto de Barueri</strong> — centro, Alphaville e arredores — por perfil e trajeto. Decisão em 10 minutos de leitura. Porque <strong>quem simplifica a escolha, começa antes</strong>.</p>
 <h2>Resposta rápida</h2>
-<p>Perto de Barueri, as principais opções são: no <strong>Centro de Barueri</strong>, <strong>Smart Fit, Bluefit, Panobianco, Gaviões, RedFit, Primax, CrossFit Barueri</strong> e <strong>SESI</strong>; no eixo Alphaville/Tamboré, <strong>Ironberg, Bodytech, Bio Ritmo, NitroGym, Arena 18, Scelta</strong> e outras. Valores e horários variam por unidade — consulte os canais oficiais.</p>
+<p>Perto de Barueri, as principais opções são: no <strong>Centro de Barueri</strong>, <strong>Smart Fit, Bluefit, Panobianco, Gaviões, RedFit, Primax, CrossFit Barueri</strong> e <strong>SESI</strong>; no eixo Alphaville/Tamboré, <strong>Ironberg, Bodytech, NitroGym, Arena 18, Scelta</strong> e outras. Valores e horários variam por unidade — consulte os canais oficiais.</p>
 <h2>Onde treinar, segundo o seu trajeto</h2>
 <h3>Quem circula pelo Centro de Barueri</h3>
 <p>Se a sua rotina passa pelo centro ou pela <strong>Estação Barueri (CPTM Linha 8)</strong>, você tem redes econômicas e academias de musculação a curta distância. Para quem depende do trem, treinar no trajeto é a jogada que mantém a <strong>frequência</strong> alta o ano inteiro.</p>
@@ -77162,7 +77156,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Centro de Barueri</td><td>Smart Fit, Bluefit, Panobianco</td><td>Econômico</td><td>Treino no trajeto casa-trabalho</td></tr>
 <tr><td>Barueri</td><td>Gaviões, RedFit, Primax</td><td>Musculação</td><td>Foco em força e hipertrofia</td></tr>
 <tr><td>Barueri</td><td>CrossFit Barueri, SESI</td><td>Funcional/esportivo</td><td>Treino em grupo e esporte</td></tr>
-<tr><td>Alphaville/Tamboré</td><td>Ironberg, Bodytech, Bio Ritmo</td><td>Do intenso ao premium</td><td>Quem trabalha no eixo Alphaville</td></tr>
+<tr><td>Alphaville/Tamboré</td><td>Ironberg, Bodytech</td><td>Do intenso ao premium</td><td>Quem trabalha no eixo Alphaville</td></tr>
 </table>
 <p><em>Planos, horários e valores mudam com frequência — confirme sempre na unidade ou no site oficial.</em></p>
 <h2>Se o objetivo é emagrecer, leia isto antes</h2>
@@ -77218,21 +77212,20 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>E o custo não para na mensalidade: cada mês adiado é condicionamento perdido, e recomeçar sempre dói mais do que manter.</p>
 <p>Este guia mapeia as <strong>academias perto de Santana de Parnaíba</strong> — dentro e fora da cidade — pelo critério que realmente importa: o seu trajeto. Porque <strong>a melhor academia da região é a que fica no seu caminho</strong>.</p>
 <h2>Resposta rápida</h2>
-<p>Perto de Santana de Parnaíba você encontra: na cidade, <strong>XSuperAção, OBOX Training Club, Coliseu Fitness, Sparta Fitness e Forma Física</strong>; na região da Aldeia da Serra, a <strong>Scelta Aldeia da Serra</strong>; e no eixo Alphaville-Barueri, redes como <strong>Smart Fit, Bluefit, Panobianco, Ironberg, Gaviões, Bodytech e Bio Ritmo</strong>. Consulte o site oficial ou a unidade para valores e horários atualizados.</p>
+<p>Perto de Santana de Parnaíba você encontra: na cidade, <strong>XSuperAção, OBOX Training Club, Coliseu Fitness, Sparta Fitness e Forma Física</strong>; e no eixo Alphaville-Barueri, redes como <strong>Smart Fit, Bluefit, Panobianco, Ironberg, Gaviões e Bodytech</strong>. Consulte o site oficial ou a unidade para valores e horários atualizados.</p>
 <h2>Três rotas, três estratégias</h2>
 <h3>Rota 1: treinar na própria cidade</h3>
 <p>Para quem vive entre o <strong>Centro Histórico</strong> e a <strong>Fazendinha</strong>, as academias locais — <strong>XSuperAção, Coliseu Fitness, Sparta Fitness, Forma Física</strong> — oferecem <strong>musculação</strong> e atendimento próximo, sem pegar estrada. O <strong>OBOX Training Club</strong> soma a opção de treino em grupo e funcional.</p>
 <p>Não subestime a academia de bairro: com um bom plano, ela entrega o mesmo resultado da rede famosa — a ciência do treino é a mesma.</p>
 <h3>Rota 2: Aldeia da Serra</h3>
-<p>Moradores dos condomínios da <strong>Aldeia da Serra</strong> têm a <strong>Scelta Aldeia da Serra</strong> como opção regional, evitando a descida diária até Alphaville. Para famílias, treinar a minutos de casa é o que separa rotina de promessa.</p>
+<p>Moradores dos condomínios da <strong>Aldeia da Serra</strong> não têm hoje uma academia na própria região — a opção que existia ali encerrou. Na prática sobram três caminhos: descer para Alphaville, treinar em Santana de Parnaíba ou usar o espaço fitness do próprio condomínio com acompanhamento. Para famílias, treinar a minutos de casa é o que separa rotina de promessa.</p>
 <h3>Rota 3: o eixo Alphaville-Barueri</h3>
-<p>Se você já trabalha perto da <strong>Alameda Rio Negro</strong>, do <strong>Iguatemi Alphaville</strong> ou no <strong>Centro de Barueri</strong>, faz sentido treinar por lá: do econômico (<strong>Smart Fit, Bluefit</strong>) ao premium (<strong>Bodytech, Bio Ritmo</strong>), passando pela musculação pesada (<strong>Ironberg, Gaviões</strong>). A regra: academia no trajeto, nunca fora dele.</p>
+<p>Se você já trabalha perto da <strong>Alameda Rio Negro</strong>, do <strong>Iguatemi Alphaville</strong> ou no <strong>Centro de Barueri</strong>, faz sentido treinar por lá: do econômico (<strong>Smart Fit, Bluefit</strong>) ao premium (<strong>Bodytech, Competition</strong>), passando pela musculação pesada (<strong>Ironberg, Gaviões</strong>). A regra: academia no trajeto, nunca fora dele.</p>
 <h2>Comparativo qualitativo</h2>
 <table>
 <tr><th>Rota</th><th>Exemplos</th><th>Perfil</th><th>Indicado para</th></tr>
 <tr><td>Santana de Parnaíba (cidade)</td><td>XSuperAção, Coliseu, Sparta, Forma Física, OBOX</td><td>Local, atendimento próximo</td><td>Quem vive e trabalha na cidade</td></tr>
-<tr><td>Aldeia da Serra</td><td>Scelta Aldeia da Serra</td><td>Regional</td><td>Moradores dos condomínios da Aldeia</td></tr>
-<tr><td>Eixo Alphaville-Barueri</td><td>Smart Fit, Bluefit, Ironberg, Bodytech, Bio Ritmo</td><td>Do econômico ao premium</td><td>Quem já trabalha ou circula pelo eixo</td></tr>
+<tr><td>Eixo Alphaville-Barueri</td><td>Smart Fit, Bluefit, Ironberg, Bodytech</td><td>Do econômico ao premium</td><td>Quem já trabalha ou circula pelo eixo</td></tr>
 </table>
 <p><em>Planos e horários variam por unidade — confirme sempre nos canais oficiais antes de decidir.</em></p>
 <h2>Começando (ou recomeçando): o essencial</h2>
@@ -77378,7 +77371,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p><strong>Smart Fit é low cost: musculação e cardio com autonomia e mensalidade econômica. Bodytech é premium: estrutura ampla, aulas coletivas e serviços agregados, com investimento maior.</strong> Se você quer só treinar pesos com eficiência, o low cost basta. Se valoriza experiência completa (aulas, conforto, conveniência), o premium se justifica. Valores variam por unidade e plano — <strong>consulte o site oficial ou a unidade para valores e horários atualizados</strong>.</p>
 <h2>Dois modelos de negócio, duas experiências</h2>
 <h3>Smart Fit: eficiência e escala</h3>
-<p>A <strong>Smart Fit</strong> é a maior rede low cost da América Latina. O modelo é enxuto: salão de musculação, área de cardio, autoatendimento e app. Professores presentes, mas o atendimento é coletivo. Curiosidade útil: ela é da mesma holding da <strong>Bio Ritmo</strong>, rede de posicionamento mais premium — o grupo domina os dois extremos do mercado.</p>
+<p>A <strong>Smart Fit</strong> é a maior rede low cost da América Latina. O modelo é enxuto: salão de musculação, área de cardio, autoatendimento e app. Professores presentes, mas o atendimento é coletivo. Curiosidade útil: a holding dona da Smart Fit também opera redes de posicionamento premium — o grupo trabalha os dois extremos do mercado.</p>
 <h3>Bodytech: experiência completa</h3>
 <p>A <strong>Bodytech</strong> se posiciona no segmento premium: unidades maiores, grade de <strong>aulas coletivas</strong>, serviços agregados e, em muitos endereços, estrutura aquática. O público típico valoriza conforto e conveniência — perfil forte entre executivos e famílias de condomínios de Alphaville e Tamboré.</p>
 <p>Soundbite: <strong>a Smart Fit vende acesso ao treino; a Bodytech vende uma experiência em volta dele.</strong></p>
@@ -77532,7 +77525,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>E a região não facilita: entre Tamboré, Alameda Rio Negro e o entorno do <strong>Iguatemi Alphaville</strong>, há academia low cost, premium e templo de musculação, cada uma jurando ser a melhor.</p>
 <p>Aqui vai uma análise honesta, sem ranking inventado: <strong>não existe "a melhor academia de Alphaville" — existe a melhor para o seu objetivo.</strong> E este guia te ajuda a encontrá-la em minutos.</p>
 <h2>Resposta direta: a melhor academia de Alphaville por objetivo</h2>
-<p><strong>Para custo-benefício:</strong> redes low cost como <strong>Smart Fit e Bluefit</strong>. <strong>Para experiência premium:</strong> <strong>Bodytech e Bio Ritmo</strong>, com aulas e serviços agregados. <strong>Para musculação pesada e cultura bodybuilding:</strong> casas como <strong>Ironberg e NitroGym</strong>. Valores, unidades e horários mudam — <strong>consulte o site oficial ou a unidade para informações atualizadas</strong>.</p>
+<p><strong>Para custo-benefício:</strong> redes low cost como <strong>Smart Fit e Bluefit</strong>. <strong>Para experiência premium:</strong> <strong>Bodytech e Competition</strong>, com estrutura e serviços mais completos. <strong>Para musculação pesada e cultura bodybuilding:</strong> casas como <strong>Ironberg e NitroGym</strong>. Valores, unidades e horários mudam — <strong>consulte o site oficial ou a unidade para informações atualizadas</strong>.</p>
 <figure style="margin:2rem 0">
   <img src="/blog-images/arena-18-alphaville.webp" alt="Montinho, personal trainer em Alphaville, na área de musculação de uma das melhores academias da região" title="Qual a Melhor Academia de Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Estrutura, ambiente e público: o que define a melhor academia de Alphaville para o seu perfil.</figcaption>
@@ -77542,7 +77535,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h3>Low cost: pagar pouco e treinar com autonomia</h3>
 <p>As redes econômicas entregam <strong>musculação e cardio</strong> com mensalidade acessível e modelo enxuto. Perfeitas para quem já sabe treinar (ou tem quem monte o treino) e quer praticidade no trajeto — especialmente para quem circula pela <strong>Castelo Branco</strong> entre Barueri e Alphaville.</p>
 <h3>Premium: experiência completa</h3>
-<p><strong>Bodytech e Bio Ritmo</strong> (esta, da mesma holding da Smart Fit) miram executivos e famílias de condomínio: ambiente confortável, grade de aulas coletivas e serviços agregados. Custam mais — e se pagam apenas se você usa o que oferecem.</p>
+<p><strong>Bodytech e Competition</strong> miram executivos e famílias de condomínio: ambiente confortável, grade de aulas coletivas e serviços agregados. Custam mais — e se pagam apenas se você usa o que oferecem.</p>
 <h3>Musculação séria: cultura de treino pesado</h3>
 <p><strong>Ironberg e NitroGym</strong> atraem quem vive musculação: pesos livres em destaque, equipamentos para hipertrofia e público que treina de verdade. Ambiente que motiva — e que exige plano de treino à altura.</p>
 <p>Soundbite: <strong>em Alphaville não falta academia boa; falta clareza sobre o que você precisa dela.</strong></p>
@@ -77550,7 +77543,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <table>
 <tr><th>Perfil</th><th>Exemplos</th><th>Estrutura</th><th>Indicado para</th></tr>
 <tr><td><strong>Econômica (low cost)</strong></td><td>Smart Fit, Bluefit</td><td>Musculação e cardio, modelo enxuto</td><td>Autonomia e custo baixo</td></tr>
-<tr><td><strong>Premium</strong></td><td>Bodytech, Bio Ritmo</td><td>Aulas coletivas, conforto, serviços agregados</td><td>Experiência completa e conveniência</td></tr>
+<tr><td><strong>Premium</strong></td><td>Bodytech, Competition</td><td>Aulas coletivas, conforto, serviços agregados</td><td>Experiência completa e conveniência</td></tr>
 <tr><td><strong>Musculação pesada</strong></td><td>Ironberg, NitroGym</td><td>Foco em hipertrofia e pesos livres</td><td>Praticantes sérios e avançados</td></tr>
 </table>
 <h2>Checklist local: como escolher sem se arrepender</h2>
@@ -77615,7 +77608,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Escolher errado custa caro: plano com fidelidade, trajeto que não cabe na rotina, horário de pico insuportável depois do expediente. Resultado? Desistência em poucas semanas e a sensação de que "academia não é para mim".</p>
 <p>É para quebrar esse ciclo que existe este guia: uma análise honesta, por objetivo e por região da cidade — sem ranking inventado, sem nota mágica.</p>
 <h2>Resposta direta: a melhor academia de Barueri por perfil</h2>
-<p><strong>Para economizar:</strong> redes low cost como <strong>Smart Fit e Bluefit</strong>, presentes na região. <strong>Para experiência premium:</strong> redes como <strong>Bodytech e Bio Ritmo</strong>, mais comuns no eixo Alphaville/Tamboré. <strong>Para musculação pesada:</strong> casas com cultura bodybuilding, como <strong>Ironberg e NitroGym</strong>, no entorno de Alphaville. Unidades, planos e valores mudam — <strong>consulte o site oficial ou a unidade para informações atualizadas</strong>.</p>
+<p><strong>Para economizar:</strong> redes low cost como <strong>Smart Fit e Bluefit</strong>, presentes na região. <strong>Para experiência premium:</strong> redes como <strong>Bodytech</strong>, mais comuns no eixo Alphaville/Tamboré. <strong>Para musculação pesada:</strong> casas com cultura bodybuilding, como <strong>Ironberg e NitroGym</strong>, no entorno de Alphaville. Unidades, planos e valores mudam — <strong>consulte o site oficial ou a unidade para informações atualizadas</strong>.</p>
 <figure style="margin:2rem 0">
   <img src="/blog-images/melhor-academia-de-barueri-foto.webp" alt="Montinho, personal trainer em Barueri, na área de musculação com halteres e máquinas de academia da região" title="Qual a Melhor Academia de Barueri — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Escolha pela rotina, não pela marca: o que faz uma academia de Barueri funcionar para você.</figcaption>
@@ -77633,7 +77626,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <table>
 <tr><th>Perfil</th><th>Exemplos</th><th>Estrutura</th><th>Indicado para</th></tr>
 <tr><td><strong>Econômica (low cost)</strong></td><td>Smart Fit, Bluefit</td><td>Musculação e cardio com autonomia</td><td>Custo baixo e praticidade no Centro</td></tr>
-<tr><td><strong>Premium</strong></td><td>Bodytech, Bio Ritmo</td><td>Aulas coletivas e serviços agregados</td><td>Executivos e famílias do eixo Tamboré/Alphaville</td></tr>
+<tr><td><strong>Premium</strong></td><td>Bodytech, Competition</td><td>Aulas coletivas e serviços agregados</td><td>Executivos e famílias do eixo Tamboré/Alphaville</td></tr>
 <tr><td><strong>Musculação pesada</strong></td><td>Ironberg, NitroGym</td><td>Cultura bodybuilding e foco em hipertrofia</td><td>Quem treina sério e busca ambiente intenso</td></tr>
 </table>
 <h2>O teste de 15 minutos antes de assinar qualquer plano</h2>
@@ -77697,7 +77690,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>E o problema é real — a região tem dezenas de opções, do low-cost ao ultra premium, espalhadas entre o <strong>Centro Industrial e Empresarial</strong>, <strong>Tamboré</strong> e a região da <strong>Alameda Rio Negro</strong>. Sem critério, você escolhe pelo marketing, não pelo que serve para você.</p>
 <p>Este guia resolve isso. Como personal trainer que atua há anos em Alphaville, organizei as <strong>10 melhores academias de Alphaville</strong> por critérios transparentes: estrutura, proposta e perfil de público. <strong>Academia boa não é a mais famosa — é a que você consegue frequentar 4 vezes por semana.</strong></p>
 <h2>Resposta rápida: as 10 melhores academias de Alphaville</h2>
-<p>Em resumo: <strong>Smart Fit</strong> e <strong>Bluefit</strong> para custo-benefício; <strong>Bodytech</strong> e <strong>Bio Ritmo</strong> para experiência premium; <strong>Ironberg</strong> para musculação séria; <strong>Gaviões</strong> e <strong>NitroGym</strong> para treino pesado com preço intermediário; <strong>Scelta</strong> e <strong>24 Wellness</strong> para quem quer serviço diferenciado; <strong>4Perform</strong> para treinamento funcional e performance. Sempre confirme valores e horários no site oficial ou na unidade.</p>
+<p>Em resumo: <strong>Smart Fit</strong> e <strong>Bluefit</strong> para custo-benefício; <strong>Bodytech</strong> e <strong>Competition</strong> para experiência premium; <strong>Ironberg</strong> para musculação séria; <strong>Gaviões</strong> e <strong>NitroGym</strong> para treino pesado com preço intermediário; <strong>Scelta</strong> e <strong>24 Wellness</strong> para quem quer serviço diferenciado; <strong>4Perform</strong> para treinamento funcional e performance. Sempre confirme valores e horários no site oficial ou na unidade.</p>
 <figure style="margin:2rem 0">
   <img src="/blog-images/10-melhores-academias-de-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, da adolescência ao físico atual — 10 Melhores Academias de Alphaville em 2026" title="10 Melhores Academias de Alphaville em 2026 — Montinho Personal Trainer" width="1600" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">10 Melhores Academias de Alphaville em 2026: avaliação de quem treina e atende na região.</figcaption>
@@ -77710,8 +77703,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Rede conhecida nacionalmente pela cultura de <strong>musculação e fisiculturismo</strong>. Se seu objetivo é hipertrofia e você gosta de ambiente de treino pesado, é referência na região.</p>
 <h3>2. Bodytech — a experiência premium clássica</h3>
 <p>Proposta <strong>premium</strong>: variedade de modalidades, piscina em muitas unidades e público executivo. Combina com quem valoriza conforto e serviço completo.</p>
-<h3>3. Bio Ritmo — premium da holding da Smart Fit</h3>
-<p>Mesma holding da Smart Fit, mas no segmento superior: ambiente cuidado, aulas coletivas fortes e experiência de clube urbano.</p>
+<h3>3. Competition — musculação em ambiente premium</h3>
+<p>Perfil premium com foco em sala de peso, e não em variedade de aulas. Combina com quem quer estrutura cuidada sem abrir mão do treino sério.</p>
 <h3>4. Smart Fit — o custo-benefício nacional</h3>
 <p>A maior rede <strong>low-cost</strong> do país. Estrutura padronizada, equipamentos modernos e plano acessível. Ideal para quem quer treinar sem pesar no bolso.</p>
 <h3>5. Bluefit — econômica com boa estrutura</h3>
@@ -77732,7 +77725,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Smart Fit / Bluefit</td><td>Econômica</td><td>Padronizada, musculação e cardio</td><td>Quem quer treinar gastando pouco</td></tr>
 <tr><td>Gaviões / NitroGym / Panobianco</td><td>Intermediária</td><td>Salões amplos, treino pesado</td><td>Quem leva musculação a sério</td></tr>
 <tr><td>Ironberg / Competition</td><td>Intermediária a premium</td><td>Foco total em musculação</td><td>Hipertrofia e fisiculturismo</td></tr>
-<tr><td>Bodytech / Bio Ritmo / 24 Wellness</td><td>Premium</td><td>Modalidades variadas, conforto</td><td>Executivos e famílias</td></tr>
+<tr><td>Bodytech / 24 Wellness</td><td>Premium</td><td>Modalidades variadas, conforto</td><td>Executivos e famílias</td></tr>
 <tr><td>Scelta / 4Perform / Arena 18</td><td>Boutique</td><td>Turmas menores, atendimento próximo</td><td>Quem busca acompanhamento</td></tr>
 </table>
 <p><em>Faixas de preço são qualitativas e variam por unidade e promoção — confirme sempre na academia.</em></p>
@@ -77874,7 +77867,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Resultado: muita gente fecha plano na academia "famosa", enfrenta trânsito, falta uma semana, depois duas — e desiste. Dinheiro parado no cartão, objetivo parado no espelho.</p>
 <p>Este ranking resolve pelo critério certo. Sou o Montinho, personal trainer que atende em Santana de Parnaíba, Alphaville e Barueri, e organizei as <strong>melhores academias de Santana de Parnaíba</strong> por estrutura, proposta e região. <strong>A melhor academia é a que fica no seu caminho — não no caminho dos outros.</strong></p>
 <h2>Resposta rápida</h2>
-<p>Referências locais: <strong>XSuperAção</strong> e <strong>Forma Física</strong> (musculação consolidada), <strong>Coliseu</strong> e <strong>Sparta</strong> (treino raiz), <strong>OBOX</strong> (alta intensidade em grupo) e <strong>Scelta Aldeia da Serra</strong> (serviço diferenciado para os condomínios da Aldeia). Valores e horários variam — <strong>consulte a unidade ou o site oficial</strong>.</p>
+<p>Referências locais: <strong>XSuperAção</strong> e <strong>Forma Física</strong> (musculação consolidada), <strong>Coliseu</strong> e <strong>Sparta</strong> (treino raiz), <strong>OBOX</strong> (alta intensidade em grupo). Na Aldeia da Serra não há academia em operação hoje. Valores e horários variam — <strong>consulte a unidade ou o site oficial</strong>.</p>
 <h2>Como avaliei (critério transparente)</h2>
 <p>Esta é uma <strong>análise editorial</strong>, sem nota inventada, feita por quem atua profissionalmente na região. O critério: proposta da academia, tipo de estrutura e perfil de público que ela atende melhor. Preço aparece só como faixa qualitativa, porque muda o tempo todo.</p>
 <h2>As melhores academias de Santana de Parnaíba, por perfil</h2>
@@ -77882,8 +77875,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Academia consolidada na cidade, com foco em <strong>musculação</strong> e público fiel. Boa porta de entrada para quem quer estrutura completa sem sair de Santana de Parnaíba.</p>
 <h3>Forma Física — tradição e atendimento próximo</h3>
 <p>Perfil de academia de bairro no melhor sentido: <strong>atendimento próximo</strong>, comunidade forte e ambiente acolhedor para iniciantes e famílias.</p>
-<h3>Scelta Aldeia da Serra — o diferencial da Aldeia</h3>
-<p>Para quem mora nos <strong>condomínios de Aldeia da Serra</strong>, é a opção de serviço diferenciado perto de casa — sem precisar descer para Alphaville todo dia.</p>
+<h3>Aldeia da Serra — hoje sem academia na região</h3>
+<p>Para quem mora nos <strong>condomínios de Aldeia da Serra</strong>, a opção que existia ali encerrou. Restam três caminhos: descer para Alphaville, treinar em Santana de Parnaíba ou aproveitar o espaço fitness do condomínio com acompanhamento — que costuma ser o que mais preserva a constância de quem mora longe.</p>
 <h3>OBOX — intensidade e comunidade</h3>
 <p>Treino em grupo de <strong>alta intensidade</strong>, clima de equipe e aquele empurrão de constância que treino solitário não dá. Iniciantes: comecem com progressão orientada.</p>
 <h3>Coliseu — musculação raiz</h3>
@@ -77895,7 +77888,6 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><th>Academia</th><th>Perfil</th><th>Estrutura</th><th>Indicado para</th></tr>
 <tr><td>XSuperAção</td><td>Intermediária</td><td>Musculação completa</td><td>Quem quer estrutura na cidade</td></tr>
 <tr><td>Forma Física</td><td>Acessível</td><td>Academia de bairro completa</td><td>Iniciantes e famílias</td></tr>
-<tr><td>Scelta Aldeia da Serra</td><td>Diferenciada</td><td>Atendimento próximo</td><td>Moradores da Aldeia da Serra</td></tr>
 <tr><td>OBOX</td><td>Intermediária</td><td>Box de alta intensidade</td><td>Treino em grupo e comunidade</td></tr>
 <tr><td>Coliseu / Sparta</td><td>Acessível a intermediária</td><td>Foco em musculação pesada</td><td>Hipertrofia e treino raiz</td></tr>
 </table>
@@ -78034,13 +78026,13 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Esse é o risco silencioso do premium: pagar caro por piscina, toalha e café gourmet que você não usa, achando que o preço da mensalidade compraria o resultado. Não compra.</p>
 <p>Aqui vai uma análise honesta, de quem atende alunos dessas academias todos os dias: quais são as <strong>academias premium de Alphaville</strong>, o que elas realmente entregam e quando o investimento vale. <strong>Premium compra conveniência; resultado se constrói com método.</strong></p>
 <h2>Resposta rápida: vale o investimento?</h2>
-<p>Vale <strong>se você usa o que paga</strong>: modalidades variadas, conforto, localização no seu trajeto e serviços agregados. As referências premium da região são <strong>Bodytech</strong> e <strong>Bio Ritmo</strong>; no segmento diferenciado/boutique, <strong>24 Wellness</strong>, <strong>Scelta</strong>, <strong>4Perform</strong> e <strong>Arena 18</strong>. Valores variam por plano e unidade — <strong>consulte o site oficial ou a unidade</strong>.</p>
+<p>Vale <strong>se você usa o que paga</strong>: modalidades variadas, conforto, localização no seu trajeto e serviços agregados. A referência premium clássica da região é a <strong>Bodytech</strong>; no segmento diferenciado/boutique, <strong>24 Wellness</strong>, <strong>Scelta</strong>, <strong>4Perform</strong> e <strong>Arena 18</strong>. Valores variam por plano e unidade — <strong>consulte o site oficial ou a unidade</strong>.</p>
 <h2>Análise editorial: quem é quem no premium de Alphaville</h2>
 <p>Critério transparente: proposta, estrutura e perfil de público — sem nota inventada. É a leitura de quem trabalha na região, não um ranking pago.</p>
 <h3>Bodytech — o clube completo</h3>
 <p>A rede premium clássica: modalidades variadas, estrutura de clube e público <strong>executivo e familiar</strong>. Faz sentido para quem quer resolver treino, aulas e bem-estar num lugar só.</p>
-<h3>Bio Ritmo — sofisticação da holding da Smart Fit</h3>
-<p>Mesma holding da Smart Fit, posicionamento oposto: ambiente sofisticado, <strong>aulas coletivas</strong> de alto nível e experiência pensada nos detalhes.</p>
+<h3>Competition — premium com foco em musculação</h3>
+<p>Proposta premium construída em torno da sala de peso, e não da grade de aulas: ambiente controlado, equipamento cuidado e público que leva treino a sério. Faz sentido para quem quer conforto sem trocar musculação por variedade de modalidades.</p>
 <h3>24 Wellness — conveniência para agenda imprevisível</h3>
 <p>Proposta de bem-estar com flexibilidade — atraente para quem trabalha no <strong>Centro Industrial e Empresarial</strong> e não tem horário fixo.</p>
 <h3>Scelta — o boutique dos condomínios</h3>
@@ -78051,7 +78043,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <table>
 <tr><th>Academia</th><th>Perfil</th><th>Estrutura</th><th>Indicado para</th></tr>
 <tr><td>Bodytech</td><td>Premium clube</td><td>Modalidades variadas, serviços agregados</td><td>Executivos e famílias</td></tr>
-<tr><td>Bio Ritmo</td><td>Premium urbano</td><td>Ambiente sofisticado, coletivas fortes</td><td>Quem valoriza experiência</td></tr>
+<tr><td>Competition</td><td>Premium musculação</td><td>Sala de peso cuidada, ambiente controlado</td><td>Quem quer treino sério com conforto</td></tr>
 <tr><td>24 Wellness</td><td>Premium conveniência</td><td>Flexibilidade e bem-estar</td><td>Agenda imprevisível</td></tr>
 <tr><td>Scelta</td><td>Boutique</td><td>Atendimento próximo</td><td>Moradores de condomínio</td></tr>
 <tr><td>4Perform / Arena 18</td><td>Boutique performance</td><td>Turmas menores, treino orientado</td><td>Quem busca acompanhamento</td></tr>
@@ -78879,7 +78871,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Mas a rotina de quem trabalha ali é traiçoeira: reunião que atrasa, almoço que vira compromisso, e o treino escorrega para a noite — quando o cansaço vence. Resultado: plano pago, corpo parado.</p>
 <p>Este guia mostra como virar o jogo: <strong>quais perfis de academia existem na região do centro comercial</strong>, como encaixar o treino no expediente e o ingrediente que transforma frequência em resultado.</p>
 <h2>Resposta direta</h2>
-<p>O <strong>Centro Comercial Alphaville</strong> e o entorno — <strong>Alameda Rio Negro</strong>, <strong>Centro Industrial e Empresarial de Alphaville</strong> e a região do <strong>Iguatemi Alphaville</strong> — formam o polo com maior densidade de academias da região: redes econômicas (como a Smart Fit), intermediárias (a Bio Ritmo, da mesma holding da Smart Fit, tem perfil mais completo), opções premium e estúdios boutique. Consulte o site oficial de cada rede para unidades, planos e horários atualizados.</p>
+<p>O <strong>Centro Comercial Alphaville</strong> e o entorno — <strong>Alameda Rio Negro</strong>, <strong>Centro Industrial e Empresarial de Alphaville</strong> e a região do <strong>Iguatemi Alphaville</strong> — formam o polo com maior densidade de academias da região: redes econômicas (como a Smart Fit), intermediárias (a Panobianco tem perfil mais completo), opções premium e estúdios boutique. Consulte o site oficial de cada rede para unidades, planos e horários atualizados.</p>
 <h2>O mapa mental de quem trabalha na região</h2>
 <p>Quem está no centro comercial tem três janelas reais de treino:</p>
 <ul>
@@ -78970,7 +78962,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <table>
 <tr><th>Perfil</th><th>Estrutura</th><th>Modalidades</th><th>Indicado para</th></tr>
 <tr><td><strong>Rede econômica</strong> (ex.: Smart Fit)</td><td>Musculação e cardio padronizados</td><td>Treino livre, apps de treino</td><td>Quem já treina sozinho e quer custo baixo</td></tr>
-<tr><td><strong>Intermediária</strong> (ex.: Bio Ritmo, da mesma holding da Smart Fit)</td><td>Musculação + aulas coletivas</td><td>Coletivas, cardio, musculação</td><td>Quem gosta de variedade e ambiente</td></tr>
+<tr><td><strong>Intermediária</strong> (ex.: Panobianco)</td><td>Musculação + aulas coletivas</td><td>Coletivas, cardio, musculação</td><td>Quem gosta de variedade e ambiente</td></tr>
 <tr><td><strong>Premium</strong> (ex.: Bodytech)</td><td>Estrutura completa, amenidades</td><td>Piscina, coletivas, musculação</td><td>Famílias e quem usa a estrutura toda</td></tr>
 <tr><td><strong>Estúdio boutique</strong></td><td>Espaço menor, atendimento próximo</td><td>Turmas reduzidas, treino orientado</td><td>Quem quer proximidade e não abre mão de atenção</td></tr>
 </table>
@@ -79371,7 +79363,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 <h3>Se você busca experiência premium ou aulas variadas</h3>
 <ul>
-<li><strong>Contras:</strong> esse simplesmente não é o produto. Serviços extras, quando existem, variam por plano e unidade. Se experiência completa é prioridade, avalie o Bio Ritmo ou a Bodytech da região.</li>
+<li><strong>Contras:</strong> esse simplesmente não é o produto. Serviços extras, quando existem, variam por plano e unidade. Se experiência completa é prioridade, avalie a Bodytech ou a Competition da região.</li>
 </ul>
 <h2>Indicado para vs. pense duas vezes</h2>
 <table>
@@ -79458,7 +79450,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 <h3>Quem busca experiência completa</h3>
 <ul>
-<li><strong>Contras:</strong> se sua motivação depende de variedade de aulas, serviços agregados e atmosfera premium, o low cost vai parecer "faltando algo" — não por defeito, mas por proposta. Nesse caso, compare com Bodytech e Bio Ritmo na região.</li>
+<li><strong>Contras:</strong> se sua motivação depende de variedade de aulas, serviços agregados e atmosfera premium, o low cost vai parecer "faltando algo" — não por defeito, mas por proposta. Nesse caso, compare com Bodytech e Competition na região.</li>
 </ul>
 <h2>Indicado para vs. pense duas vezes</h2>
 <table>
@@ -79687,13 +79679,13 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   },
   {
     slug: "bio-ritmo-alphaville",
-    title: "Bio Ritmo Alphaville: Análise Completa",
+    title: "Bio Ritmo Alphaville Fechou: O Que Fazer Agora",
     metaTitle: "Bio Ritmo Alphaville: Vale a Pena? Análise Completa",
     metaDescription: "Bio Ritmo em Alphaville: o premium da holding da Smart Fit vale a pena? Prós, contras por perfil e como aproveitar. Análise honesta — confira.",
-    excerpt: "O Bio Ritmo é o braço premium da holding da Smart Fit. Veja o que isso significa na prática em Alphaville e para quem o modelo compensa.",
+    excerpt: "A unidade do Bio Ritmo em Alphaville encerrou as atividades. Veja as alternativas premium que continuam abertas na região e como escolher a que combina com a sua rotina.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-27",
+    updatedAt: "2026-08-26",
     readTime: "8 min",
     author: "Montinho",
     tags: ["bio ritmo","academia premium","academia em alphaville","musculação","barueri"],
@@ -79707,7 +79699,13 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Bio Ritmo ou Bodytech: qual escolher em Alphaville?", answer: "Ambas são premium generalistas. Compare localização em relação à sua rotina, modalidades que você realmente usará e as condições de plano de cada unidade — e faça aula experimental nas duas." },
       { question: "Posso treinar no Bio Ritmo com personal externo ou consultoria?", answer: "Políticas sobre personal externo variam por unidade; confirme na recepção. Já a consultoria online funciona em qualquer academia: você segue o programa no app com suporte a distância." }
     ],
-    content: `<p>Você conhece a Smart Fit. Mas quando pesquisa <strong>Bio Ritmo Alphaville</strong>, surge a dúvida: pagar mais pela marca premium da mesma holding vale a pena — ou é a mesma academia com carpete melhor?</p>
+    content: `<div style="border-left:3px solid #BA9E50;padding:0.25rem 0 0.25rem 1.25rem;margin:0 0 2rem">
+<p><strong>Atualização de agosto de 2026: esta unidade não está mais em operação.</strong> O Bio Ritmo de Alphaville encerrou as atividades. A marca continua existindo em outras cidades — o que fechou foi a unidade daqui.</p>
+<p>Se você chegou procurando uma academia premium em Alphaville, as opções que seguem abertas são a <a href="/blog/bodytech-alphaville">Bodytech</a>, no Iguatemi, e a <a href="/blog/competition-alphaville">Competition</a>, com perfil premium focado em musculação. O <a href="/academias-alphaville">guia das academias de Alphaville</a> compara as duas e as demais da região.</p>
+<p>Mantive o texto abaixo porque a análise do modelo continua útil para entender o que se paga numa academia premium — só não vale mais como avaliação de uma unidade que você possa visitar.</p>
+</div>
+
+<p>Você conhece a Smart Fit. Mas quando pesquisa <strong>Bio Ritmo Alphaville</strong>, surge a dúvida: pagar mais pela marca premium da mesma holding vale a pena — ou é a mesma academia com carpete melhor?</p>
 
 <figure style="margin:2rem 0">
   <img src="/blog-images/bio-ritmo-alphaville.webp" alt="Bio Ritmo Alphaville: estrutura, custo-benefício e experiência de treino na unidade" title="Bio Ritmo Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
@@ -81664,13 +81662,13 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   },
   {
     slug: "scelta-aldeia-da-serra",
-    title: "Scelta Aldeia da Serra: Análise Completa",
+    title: "Scelta Aldeia da Serra Fechou: Onde Treinar na Região",
     metaTitle: "Scelta Aldeia da Serra: Vale a Pena? Análise Completa",
     metaDescription: "Análise da Scelta em Aldeia da Serra: como avaliar academia perto de condomínios, prós, contras e para quem é. Agende sua avaliação.",
-    excerpt: "A Scelta pela ótica de quem conhece Aldeia da Serra: critérios de avaliação, trade-offs de academia local e para quem ela tende a servir.",
+    excerpt: "A Scelta da Aldeia da Serra encerrou as atividades e a região ficou sem academia. Veja as três alternativas reais para quem mora nos condomínios da Aldeia.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-08-26",
     readTime: "8 min",
     author: "Montinho",
     tags: ["scelta","aldeia da serra","academia em santana de parnaiba","musculação","academia perto de condomínio"],
@@ -81684,7 +81682,13 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Quantos treinos por semana são suficientes?", answer: "Entre 3 e 5 sessões bem planejadas atendem a maioria dos objetivos. Constância ao longo de meses importa mais que semanas perfeitas e isoladas." },
       { question: "O Montinho atende em Aldeia da Serra?", answer: "Sim, o Montinho atende presencialmente em Santana de Parnaíba e região, incluindo Aldeia da Serra, além de consultoria online para quem prefere treinar por conta própria com plano individualizado." }
     ],
-    content: `<p>Morar em <strong>Aldeia da Serra</strong> tem um preço silencioso na rotina fitness: tudo parece longe. Descer a serra para treinar vira desculpa, e a desculpa vira meses sem treino.</p>
+    content: `<div style="border-left:3px solid #BA9E50;padding:0.25rem 0 0.25rem 1.25rem;margin:0 0 2rem">
+<p><strong>Atualização de agosto de 2026: esta unidade não está mais em operação.</strong> Com o encerramento, a Aldeia da Serra ficou sem academia na própria região.</p>
+<p>Na prática sobram três caminhos, e a escolha certa depende menos da estrutura e mais do deslocamento: descer para <a href="/academias-alphaville">Alphaville</a>, treinar em <a href="/blog/academias-em-santana-de-parnaiba">Santana de Parnaíba</a>, ou usar o espaço fitness do próprio condomínio com acompanhamento — que costuma ser o que mais preserva a constância de quem mora longe. Se a dúvida é como organizar a semana, o <a href="/treino-para-minha-rotina">Treino Para Minha Rotina</a> ajuda.</p>
+<p>Deixei o texto abaixo porque os critérios para avaliar uma academia local continuam valendo — só não valem mais para esta unidade.</p>
+</div>
+
+<p>Morar em <strong>Aldeia da Serra</strong> tem um preço silencioso na rotina fitness: tudo parece longe. Descer a serra para treinar vira desculpa, e a desculpa vira meses sem treino.</p>
 
 <figure style="margin:2rem 0">
   <img src="/blog-images/scelta-aldeia-da-serra-infographic.svg" alt="Infográfico sobre Scelta Aldeia da Serra: Análise Completa — Montinho Personal Trainer" title="Scelta Aldeia da Serra: Análise Completa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
@@ -82729,7 +82733,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <table>
 <tr><th>Perfil</th><th>Ambiente para iniciante</th><th>Acompanhamento</th><th>Indicado para</th></tr>
 <tr><td><strong>Rede econômica</strong> (ex.: Smart Fit)</td><td>Prático, sem burocracia, público variado</td><td>Básico; app com treinos genéricos</td><td>Quem quer começar com baixo compromisso financeiro</td></tr>
-<tr><td><strong>Intermediária</strong> (ex.: Bio Ritmo, da mesma holding da Smart Fit)</td><td>Mais confortável, aulas coletivas</td><td>Instrutores mais presentes</td><td>Quem quer variedade para descobrir do que gosta</td></tr>
+<tr><td><strong>Intermediária</strong> (ex.: Panobianco)</td><td>Mais confortável, aulas coletivas</td><td>Instrutores mais presentes</td><td>Quem quer variedade para descobrir do que gosta</td></tr>
 <tr><td><strong>Premium</strong> (ex.: Bodytech)</td><td>Estrutura ampla, serviços agregados</td><td>Avaliações e programas de acompanhamento</td><td>Quem valoriza conforto e serviços</td></tr>
 <tr><td><strong>Studio/box</strong></td><td>Turmas pequenas, acolhimento alto</td><td>Treino sempre supervisionado</td><td>Quem tem vergonha de academia grande</td></tr>
 </table>
@@ -82824,7 +82828,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <table>
 <tr><th>Perfil</th><th>Estrutura para emagrecer</th><th>Modalidades</th><th>Indicado para</th></tr>
 <tr><td><strong>Rede econômica</strong> (ex.: Smart Fit)</td><td>Completa: pesos + cardio</td><td>Musculação, esteiras, bikes</td><td>Quem já tem (ou vai contratar) orientação própria</td></tr>
-<tr><td><strong>Intermediária</strong> (ex.: Bio Ritmo)</td><td>Completa + aulas coletivas</td><td>HIIT, spinning, dança</td><td>Quem precisa de variedade para manter a constância</td></tr>
+<tr><td><strong>Intermediária</strong> (ex.: Panobianco)</td><td>Completa + aulas coletivas</td><td>HIIT, spinning, dança</td><td>Quem precisa de variedade para manter a constância</td></tr>
 <tr><td><strong>Premium</strong> (ex.: Bodytech)</td><td>Ampla, com piscina e serviços</td><td>Musculação, natação, aulas</td><td>Quem quer conforto e agregados</td></tr>
 <tr><td><strong>Studio funcional/cross</strong></td><td>Turmas intensas e curtas</td><td>Funcional, HIIT</td><td>Quem rende mais em grupo com hora marcada</td></tr>
 </table>
@@ -83073,7 +83077,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </figure>
 
 <h2>Instrutor da academia: o que ele pode (e não pode) fazer por você</h2>
-<p>Sejamos justos: o instrutor de salão tem valor. Ele orienta o uso dos aparelhos, corrige um movimento quando vê, monta uma ficha inicial. Em redes como Smart Fit, Bio Ritmo ou Bodytech, esse suporte existe em algum grau — consulte cada unidade sobre como funciona.</p>
+<p>Sejamos justos: o instrutor de salão tem valor. Ele orienta o uso dos aparelhos, corrige um movimento quando vê, monta uma ficha inicial. Em redes como Smart Fit, Panobianco ou Bodytech, esse suporte existe em algum grau — consulte cada unidade sobre como funciona.</p>
 <p>O problema é estrutural, não pessoal: <strong>um instrutor para dezenas de alunos simultâneos</strong>. Ele não tem como acompanhar sua execução série a série, ajustar seu plano toda semana ou perceber que você está estagnado há dois meses.</p>
 <blockquote><p>Instrutor de salão cuida da academia. Personal particular cuida de você.</p></blockquote>
 <h2>Personal particular: o que muda na prática</h2>
@@ -84127,7 +84131,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <table>
 <tr><th>Tipo de academia</th><th>Perfil</th><th>Comportamento de lotação</th><th>Indicado para</th></tr>
 <tr><td>Rede econômica (ex.: Smart Fit)</td><td>Grande volume de alunos, planos acessíveis</td><td>Picos fortes à noite; apps podem mostrar lotação</td><td>Quem tem horário flexível e quer custo-benefício</td></tr>
-<tr><td>Rede intermediária/premium (ex.: Bio Ritmo, Bodytech)</td><td>Estrutura ampla, aulas coletivas</td><td>Picos existem, mas mais equipamentos diluem filas</td><td>Quem só consegue treinar no horário nobre</td></tr>
+<tr><td>Rede intermediária/premium (ex.: Panobianco, Bodytech)</td><td>Estrutura ampla, aulas coletivas</td><td>Picos existem, mas mais equipamentos diluem filas</td><td>Quem só consegue treinar no horário nobre</td></tr>
 <tr><td>Estúdio ou academia de bairro</td><td>Poucos alunos por horário</td><td>Menos gente, porém menos equipamentos</td><td>Quem valoriza ambiente reservado</td></tr>
 <tr><td>Academia de condomínio</td><td>Uso restrito aos moradores</td><td>Quase sempre tranquila fora do início da noite</td><td>Moradores com treino bem orientado</td></tr>
 </table>
@@ -84203,7 +84207,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <table>
 <tr><th>Opção</th><th>Perfil</th><th>Funcionamento típico aos domingos</th><th>Indicado para</th></tr>
 <tr><td>Rede econômica (ex.: Smart Fit)</td><td>Musculação e cardio com bom custo-benefício</td><td>Costuma abrir em horário reduzido; confirme no app</td><td>Quem quer flexibilidade e várias unidades</td></tr>
-<tr><td>Rede premium (ex.: Bodytech, Bio Ritmo)</td><td>Estrutura completa, aulas e serviços</td><td>Costuma abrir com grade reduzida; confirme na unidade</td><td>Famílias e quem usa a academia como programa de domingo</td></tr>
+<tr><td>Rede premium (ex.: Bodytech)</td><td>Estrutura completa, aulas e serviços</td><td>Costuma abrir com grade reduzida; confirme na unidade</td><td>Famílias e quem usa a academia como programa de domingo</td></tr>
 <tr><td>Academia de bairro/estúdio</td><td>Ambiente próximo e pessoal</td><td>Varia muito; muitas fecham</td><td>Quem treina principalmente em dias úteis</td></tr>
 <tr><td>Academia de condomínio</td><td>Estrutura enxuta dentro de casa</td><td>Geralmente disponível todos os dias</td><td>Moradores com treino bem orientado</td></tr>
 </table>
@@ -84264,7 +84268,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Na maioria dos casos, sim. <strong>Redes grandes costumam abrir nos feriados em horário reduzido</strong>, num esquema parecido com o de domingos — esse é o padrão do setor. Exceções comuns são datas como Natal e Ano Novo, quando muitas unidades fecham. Como cada unidade define seu funcionamento, <strong>confirme sempre no app ou no site oficial antes de sair de casa</strong>.</p>
 <h2>Como as academias funcionam nos feriados: o que esperar</h2>
 <h3>O padrão das grandes redes</h3>
-<p>Redes econômicas e premium — como <strong>Smart Fit</strong>, <strong>Bio Ritmo</strong> (da mesma holding) e <strong>Bodytech</strong> — costumam manter unidades abertas nos feriados com <strong>horário reduzido</strong> e, muitas vezes, grade de aulas suspensa ou enxuta. Os horários exatos mudam por unidade e por data: a fonte confiável é sempre o canal oficial.</p>
+<p>Redes econômicas e premium — como <strong>Smart Fit</strong> e <strong>Bodytech</strong> — costumam manter unidades abertas nos feriados com <strong>horário reduzido</strong> e, muitas vezes, grade de aulas suspensa ou enxuta. Os horários exatos mudam por unidade e por data: a fonte confiável é sempre o canal oficial.</p>
 <h3>Feriados nacionais x municipais</h3>
 <p>Aqui mora uma pegadinha da nossa região: além dos feriados nacionais, <strong>Barueri e Santana de Parnaíba têm feriados municipais próprios</strong>. Uma unidade no Centro de Barueri pode operar em esquema especial num dia em que as academias de Alphaville (lado Barueri ou Santana de Parnaíba) funcionam normalmente — e vice-versa.</p>
 <h3>As datas em que quase tudo fecha</h3>
@@ -84338,7 +84342,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Seis meses depois, a realidade: você usa 10% da estrutura, não pisou na piscina, nunca fez as aulas — e o corpo continua o mesmo. <strong>Pagar por estrutura que você não usa é o jeito mais caro de não ter resultado.</strong></p>
 <p>Este guia mostra o que realmente define uma academia completa, onde encontrar as melhores estruturas de Alphaville e — mais importante — como transformar estrutura em evolução.</p>
 <h2>Resposta rápida: quais são as academias mais completas de Alphaville?</h2>
-<p>Em Alphaville, as estruturas mais amplas costumam estar nas unidades de <strong>redes premium, como a Bodytech</strong>, e de <strong>redes intermediárias, como a Bio Ritmo</strong> (da mesma holding da Smart Fit), concentradas no entorno do <strong>Iguatemi Alphaville</strong>, da <strong>Alameda Rio Negro</strong> e de <strong>Tamboré</strong>. Elas tendem a reunir musculação ampla, cardio, aulas coletivas e serviços de apoio. Estrutura, aulas e valores variam por unidade — <strong>consulte o site oficial ou visite a unidade para informações atualizadas</strong>.</p>
+<p>Em Alphaville, as estruturas mais amplas costumam estar nas unidades de <strong>redes premium, como a Bodytech</strong>, e de <strong>redes intermediárias, como a Panobianco</strong>, concentradas no entorno do <strong>Iguatemi Alphaville</strong>, da <strong>Alameda Rio Negro</strong> e de <strong>Tamboré</strong>. Elas tendem a reunir musculação ampla, cardio, aulas coletivas e serviços de apoio. Estrutura, aulas e valores variam por unidade — <strong>consulte o site oficial ou visite a unidade para informações atualizadas</strong>.</p>
 <h2>O que faz uma academia ser "completa" de verdade</h2>
 <h3>1. Musculação com profundidade, não só quantidade</h3>
 <p>Não é o número de máquinas: é ter <strong>pesos livres suficientes, barras, halteres em várias cargas e máquinas para os padrões básicos de movimento</strong>. Uma academia com 80 máquinas repetidas pode ser menos completa que uma com área de peso livre bem montada.</p>
@@ -84354,7 +84358,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <table>
 <tr><th>Perfil</th><th>Estrutura</th><th>Modalidades</th><th>Indicado para</th></tr>
 <tr><td>Rede premium (ex.: Bodytech)</td><td>Ampla: musculação, cardio, áreas complementares</td><td>Musculação, aulas coletivas variadas, serviços de bem-estar</td><td>Quem usa a academia como clube e valoriza serviços</td></tr>
-<tr><td>Rede intermediária (ex.: Bio Ritmo)</td><td>Completa, com ambiente diferenciado</td><td>Musculação, cardio, grade de aulas</td><td>Executivos que querem estrutura sem pagar o topo</td></tr>
+<tr><td>Rede intermediária (ex.: Panobianco)</td><td>Completa, com ambiente diferenciado</td><td>Musculação, cardio, grade de aulas</td><td>Executivos que querem estrutura sem pagar o topo</td></tr>
 <tr><td>Rede econômica (ex.: Smart Fit)</td><td>Focada no essencial, bem equipada</td><td>Musculação e cardio</td><td>Quem treina por conta e busca custo-benefício</td></tr>
 <tr><td>Estúdio/box especializado</td><td>Enxuta e especializada</td><td>Funcional, cross training, personal</td><td>Quem prefere atendimento próximo e turmas pequenas</td></tr>
 </table>

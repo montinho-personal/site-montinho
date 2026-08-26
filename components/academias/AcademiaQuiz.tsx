@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { recomendar, resumoRespostas, type Respostas } from "@/lib/academias/motor";
+import { regioesComAcademia } from "@/lib/academias/base";
 import { ESTILO_LABEL, PRECO_LABEL, REGIAO_LABEL, type Estilo } from "@/lib/academias/tipos";
 
 /**
@@ -29,7 +30,7 @@ const PERGUNTAS: P[] = [
     { v: "casa", r: "Perto de casa" }, { v: "trabalho", r: "Perto do trabalho" },
     { v: "caminho", r: "No caminho entre os dois" }, { v: "indiferente", r: "Localização não é prioridade" } ] },
   { id: "regiao", t: "Em qual região você passa mais tempo?", sub: "Só a região — não precisamos do seu endereço.",
-    ops: [...(Object.entries(REGIAO_LABEL).map(([v, r]) => ({ v, r }))), { v: "indiferente", r: "Tanto faz" }] },
+    ops: [...regioesComAcademia().map((v) => ({ v, r: REGIAO_LABEL[v] })), { v: "indiferente", r: "Tanto faz" }] },
   { id: "horario", t: "Em que horário você costuma treinar?", ops: [
     { v: "muito_cedo", r: "Muito cedo (antes das 6h)" }, { v: "manha", r: "De manhã" },
     { v: "almoco", r: "No almoço" }, { v: "tarde", r: "À tarde" }, { v: "noite", r: "À noite" },
