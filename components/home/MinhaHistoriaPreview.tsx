@@ -24,7 +24,7 @@ export default function MinhaHistoriaPreview() {
 
           {/* Content */}
           <div className="flex flex-col gap-6">
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400">
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-300">
               Minha História
             </p>
 

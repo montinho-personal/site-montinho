@@ -193,7 +193,7 @@ export default function PersonalTrainerIdososTambore() {
             {faq.map((item, i) => (
               <div key={i} className="border-b border-white/10 pb-8">
                 <h3 className="text-white font-semibold text-lg mb-3">{item.question}</h3>
-                <p className="text-gray-400 leading-relaxed font-light">{item.answer}</p>
+                <p className="text-gray-300 leading-relaxed font-light">{item.answer}</p>
               </div>
             ))}
           </div>

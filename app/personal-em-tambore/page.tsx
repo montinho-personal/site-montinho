@@ -189,12 +189,12 @@ export default function PersonalEmTambore() {
                 </span>
                 <div>
                   <h3 className="text-white font-semibold text-lg mb-2">{step.title}</h3>
-                  <p className="text-gray-400 leading-relaxed font-light">{step.text}</p>
+                  <p className="text-gray-300 leading-relaxed font-light">{step.text}</p>
                 </div>
               </div>
             ))}
           </div>
-          <p className="mt-10 text-gray-400 font-light">
+          <p className="mt-10 text-gray-300 font-light">
             Detalhes completos de cada modalidade na{" "}
             <Link href="/consultoria" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
               página de consultoria
@@ -220,7 +220,7 @@ export default function PersonalEmTambore() {
             {faq.map((item, i) => (
               <div key={i} className="border-b border-white/10 pb-8">
                 <h3 className="text-white font-semibold text-lg mb-3">{item.question}</h3>
-                <p className="text-gray-400 leading-relaxed font-light">{item.answer}</p>
+                <p className="text-gray-300 leading-relaxed font-light">{item.answer}</p>
               </div>
             ))}
           </div>

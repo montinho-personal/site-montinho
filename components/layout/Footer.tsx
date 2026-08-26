@@ -32,7 +32,7 @@ export default function Footer() {
                 />
               </div>
             </Link>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+            <p className="text-gray-300 text-sm leading-relaxed max-w-xs">
               Transformação real do corpo através de ciência, experiência prática
               e acompanhamento humano próximo.
             </p>
@@ -48,7 +48,7 @@ export default function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
+                  className="text-gray-300 hover:text-white text-sm transition-colors duration-200"
                 >
                   {link.label}
                 </Link>
@@ -63,18 +63,18 @@ export default function Footer() {
             </h3>
             <nav className="flex flex-col gap-4">
               <Link href="/diagnostico" className="group block">
-                <span className="text-gray-400 group-hover:text-white text-sm transition-colors duration-200">
+                <span className="text-gray-300 group-hover:text-white text-sm transition-colors duration-200">
                   Diagnóstico Montinho
                 </span>
-                <span className="block text-gray-600 text-xs mt-0.5 leading-relaxed">
+                <span className="block text-gray-400 text-xs mt-0.5 leading-relaxed">
                   Descubra seu perfil em 1 minuto
                 </span>
               </Link>
               <Link href="/pergunte-ao-montinho" className="group block">
-                <span className="text-gray-400 group-hover:text-white text-sm transition-colors duration-200">
+                <span className="text-gray-300 group-hover:text-white text-sm transition-colors duration-200">
                   Pergunte ao Montinho
                 </span>
-                <span className="block text-gray-600 text-xs mt-0.5 leading-relaxed">
+                <span className="block text-gray-400 text-xs mt-0.5 leading-relaxed">
                   Tire dúvidas de treino na hora
                 </span>
               </Link>
@@ -87,11 +87,11 @@ export default function Footer() {
               Atendimento Local
             </h3>
             <nav className="flex flex-col gap-3">
-              <Link href="/personal-trainer-alphaville" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">Personal Trainer Alphaville</Link>
-              <Link href="/personal-trainer-barueri" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">Personal Trainer Barueri</Link>
-              <Link href="/personal-trainer-santana-de-parnaiba" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">Personal Trainer Santana de Parnaíba</Link>
-              <Link href="/personal-trainer-tambore" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">Personal Trainer Tamboré</Link>
-              <Link href="/blog/personal-trainer-aldeia-da-serra" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">Personal Trainer Aldeia da Serra</Link>
+              <Link href="/personal-trainer-alphaville" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">Personal Trainer Alphaville</Link>
+              <Link href="/personal-trainer-barueri" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">Personal Trainer Barueri</Link>
+              <Link href="/personal-trainer-santana-de-parnaiba" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">Personal Trainer Santana de Parnaíba</Link>
+              <Link href="/personal-trainer-tambore" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">Personal Trainer Tamboré</Link>
+              <Link href="/blog/personal-trainer-aldeia-da-serra" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">Personal Trainer Aldeia da Serra</Link>
             </nav>
           </div>
 
@@ -105,7 +105,7 @@ export default function Footer() {
                 href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-200 group"
+                className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-200 group"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +119,7 @@ export default function Footer() {
                 </svg>
                 <span className="text-sm">{WHATSAPP_NUMBER_DISPLAY}</span>
               </a>
-              <div className="text-gray-400 text-sm">
+              <div className="text-gray-300 text-sm">
                 <p className="font-medium text-gray-300 mb-1">Atendimento Presencial</p>
                 <p>Alphaville — Barueri e Santana de Parnaíba</p>
                 <p>São Paulo, Brasil</p>
@@ -128,7 +128,7 @@ export default function Footer() {
                 href="https://instagram.com/montinho_personal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-200"
+                className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -148,19 +148,19 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-gray-500 text-xs">
+          <p className="text-gray-400 text-xs">
             &copy; {currentYear} Montinho Personal Trainer. Todos os direitos
             reservados.
           </p>
           <div className="flex items-center gap-4">
             <Link
               href="/lgpd"
-              className="text-gray-600 hover:text-gray-400 text-xs transition-colors"
+              className="text-gray-400 hover:text-gray-300 text-xs transition-colors"
             >
               Política de Privacidade & LGPD
             </Link>
-            <span className="text-gray-700 text-xs">•</span>
-            <p className="text-gray-600 text-xs">
+            <span className="text-gray-500 text-xs">•</span>
+            <p className="text-gray-400 text-xs">
               Alphaville • Barueri • Santana de Parnaíba
             </p>
           </div>

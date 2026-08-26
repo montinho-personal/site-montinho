@@ -81,7 +81,7 @@ export default function Diferenciais() {
               key={index}
               className="bg-black p-8 group hover:bg-white/5 transition-colors duration-300"
             >
-              <div className="text-gray-400 group-hover:text-white transition-colors duration-300 mb-5">
+              <div className="text-gray-300 group-hover:text-white transition-colors duration-300 mb-5">
                 {item.icon}
               </div>
               <h3
@@ -90,7 +90,7 @@ export default function Diferenciais() {
               >
                 {item.title}
               </h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-300 text-sm leading-relaxed">
                 {item.description}
               </p>
             </li>

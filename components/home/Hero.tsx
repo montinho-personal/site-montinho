@@ -36,7 +36,7 @@ export default function Hero() {
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-0 lg:py-32 text-center lg:text-left">
         {/* Eyebrow */}
-        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-gray-400 mb-6">
+        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-gray-300 mb-6">
           Personal Trainer · Alphaville · Online
         </p>
 
@@ -98,7 +98,7 @@ export default function Hero() {
         </div>
 
         {/* Social proof */}
-        <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 text-gray-500">
+        <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 text-gray-400">
           <div className="flex items-center gap-2">
             <span className="text-white font-bold text-2xl" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>+20 anos</span>
             <span className="text-sm">de experiência em musculação</span>
@@ -117,7 +117,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400">
         <span className="text-xs tracking-[0.2em] uppercase">Scroll</span>
         <div className="w-px h-8 bg-gradient-to-b from-gray-500 to-transparent" />
       </div>

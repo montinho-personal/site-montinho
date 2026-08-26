@@ -154,7 +154,7 @@ export default function PersonalTrainerEmagrecerTambore() {
           >
             Como o emagrecimento acontece com acompanhamento de personal em Tamboré
           </h2>
-          <p className="text-gray-400 font-light mb-10 leading-relaxed">
+          <p className="text-gray-300 font-light mb-10 leading-relaxed">
             Não existe fórmula mágica. Existe método aplicado com consistência:
           </p>
           <div className="space-y-8">
@@ -186,12 +186,12 @@ export default function PersonalTrainerEmagrecerTambore() {
                 </span>
                 <div>
                   <h3 className="text-white font-semibold text-lg mb-2">{step.title}</h3>
-                  <p className="text-gray-400 leading-relaxed font-light">{step.text}</p>
+                  <p className="text-gray-300 leading-relaxed font-light">{step.text}</p>
                 </div>
               </div>
             ))}
           </div>
-          <p className="mt-10 text-gray-400 font-light">
+          <p className="mt-10 text-gray-300 font-light">
             Veja resultados reais de alunos que emagreceram com acompanhamento na{" "}
             <Link href="/resultados" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
               página de resultados
@@ -217,7 +217,7 @@ export default function PersonalTrainerEmagrecerTambore() {
             {faq.map((item, i) => (
               <div key={i} className="border-b border-white/10 pb-8">
                 <h3 className="text-white font-semibold text-lg mb-3">{item.question}</h3>
-                <p className="text-gray-400 leading-relaxed font-light">{item.answer}</p>
+                <p className="text-gray-300 leading-relaxed font-light">{item.answer}</p>
               </div>
             ))}
           </div>

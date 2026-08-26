@@ -29,7 +29,7 @@ export default async function BuscaPage({ searchParams }: Props) {
       {/* Search hero */}
       <section className="py-16 border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-4">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-4">
             Pesquisa
           </p>
           <h1
@@ -37,14 +37,14 @@ export default async function BuscaPage({ searchParams }: Props) {
             style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
           >
             {query
-              ? <>Resultados para <span className="text-gray-400">&ldquo;{query}&rdquo;</span></>
+              ? <>Resultados para <span className="text-gray-300">&ldquo;{query}&rdquo;</span></>
               : "O que você está procurando?"}
           </h1>
 
           <SearchBar autoFocus={!query} />
 
           {query && results.length > 0 && (
-            <p className="mt-4 text-gray-500 text-sm">
+            <p className="mt-4 text-gray-400 text-sm">
               {results.length} {results.length === 1 ? "resultado encontrado" : "resultados encontrados"}
             </p>
           )}
@@ -83,11 +83,11 @@ function ResultsList({
         >
           <Link href={`/blog/${r.slug}`} className="block p-6 sm:p-8">
             <div className="flex items-center gap-3 mb-3">
-              <span className="text-xs font-semibold tracking-[0.1em] uppercase text-gray-500 border border-white/10 px-2 py-1">
+              <span className="text-xs font-semibold tracking-[0.1em] uppercase text-gray-400 border border-white/10 px-2 py-1">
                 {r.category}
               </span>
-              <span className="text-gray-600 text-xs">{r.readTime} de leitura</span>
-              <span className="text-gray-600 text-xs">
+              <span className="text-gray-400 text-xs">{r.readTime} de leitura</span>
+              <span className="text-gray-400 text-xs">
                 {new Date(r.date + "T12:00:00").toLocaleDateString("pt-BR", {
                   day: "numeric",
                   month: "short",
@@ -103,7 +103,7 @@ function ResultsList({
               <HighlightText text={r.title} query={query} />
             </h2>
 
-            <p className="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-2">
+            <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-2">
               <HighlightText text={r.excerpt} query={query} />
             </p>
 
@@ -164,7 +164,7 @@ function EmptyState({ query }: { query: string }) {
             viewBox="0 0 24 24"
             stroke="currentColor"
             strokeWidth={1.5}
-            className="mx-auto text-gray-700 mb-4"
+            className="mx-auto text-gray-500 mb-4"
           >
             <path
               strokeLinecap="round"
@@ -175,7 +175,7 @@ function EmptyState({ query }: { query: string }) {
           <p className="text-white font-semibold mb-1">
             Nenhum resultado para &ldquo;{query}&rdquo;
           </p>
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-400 text-sm">
             Tente palavras diferentes ou mais curtas, ou navegue pelos artigos abaixo.
           </p>
         </div>
@@ -183,7 +183,7 @@ function EmptyState({ query }: { query: string }) {
 
       {/* Popular posts */}
       <div className="mb-10">
-        <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gray-500 mb-6">
+        <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gray-400 mb-6">
           Artigos populares
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -193,7 +193,7 @@ function EmptyState({ query }: { query: string }) {
               href={`/blog/${p.slug}`}
               className="border border-white/10 hover:border-white/30 p-5 transition-colors duration-300 group"
             >
-              <span className="text-xs font-semibold tracking-[0.1em] uppercase text-gray-500 border border-white/10 px-2 py-1">
+              <span className="text-xs font-semibold tracking-[0.1em] uppercase text-gray-400 border border-white/10 px-2 py-1">
                 {p.category}
               </span>
               <h3
@@ -209,7 +209,7 @@ function EmptyState({ query }: { query: string }) {
 
       {/* Service links */}
       <div className="mb-10">
-        <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gray-500 mb-6">
+        <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gray-400 mb-6">
           Páginas de serviço
         </p>
         <div className="flex flex-wrap gap-3">
@@ -234,7 +234,7 @@ function EmptyState({ query }: { query: string }) {
       {/* WhatsApp CTA */}
       <div className="border border-white/10 p-6 sm:p-8 text-center">
         <p className="text-white font-semibold mb-2">Não encontrou o que buscava?</p>
-        <p className="text-gray-400 text-sm mb-6">
+        <p className="text-gray-300 text-sm mb-6">
           Fale diretamente com o Montinho e tire todas as suas dúvidas sobre treino e acompanhamento.
         </p>
         <a

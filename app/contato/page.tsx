@@ -16,7 +16,7 @@ export default function Contato() {
       {/* Hero */}
       <section className="py-16 bg-black border-b border-white/10">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-6">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-300 mb-6">
             Vamos Conversar
           </p>
           <h1
@@ -63,9 +63,9 @@ export default function Contato() {
               >
                 Falar no WhatsApp
               </p>
-              <p className="text-gray-400 text-base">{WHATSAPP_NUMBER_DISPLAY}</p>
+              <p className="text-gray-300 text-base">{WHATSAPP_NUMBER_DISPLAY}</p>
             </div>
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-400 text-sm">
               Clique para abrir a conversa diretamente
             </p>
           </a>
@@ -95,7 +95,7 @@ export default function Contato() {
 
           {/* Instagram */}
           <div className="border-t border-white/10 pt-10">
-            <p className="text-gray-500 text-sm mb-4">Siga no Instagram para conteúdo diário</p>
+            <p className="text-gray-400 text-sm mb-4">Siga no Instagram para conteúdo diário</p>
             <a
               href="https://instagram.com/montinhopt"
               target="_blank"

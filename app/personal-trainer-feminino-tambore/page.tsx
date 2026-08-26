@@ -154,7 +154,7 @@ export default function PersonalTrainerFemininoTambore() {
           >
             O que o treino feminino com acompanhamento muda na prática
           </h2>
-          <p className="text-gray-400 font-light mb-10 leading-relaxed">
+          <p className="text-gray-300 font-light mb-10 leading-relaxed">
             Resultado que aparece e se mantém não acontece por acaso. Acontece quando o protocolo foi pensado para você:
           </p>
           <ul className="space-y-4 mb-10">
@@ -172,7 +172,7 @@ export default function PersonalTrainerFemininoTambore() {
               </li>
             ))}
           </ul>
-          <p className="text-gray-400 font-light">
+          <p className="text-gray-300 font-light">
             Veja os resultados de alunas reais na{" "}
             <Link href="/resultados" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
               página de resultados
@@ -198,7 +198,7 @@ export default function PersonalTrainerFemininoTambore() {
             {faq.map((item, i) => (
               <div key={i} className="border-b border-white/10 pb-8">
                 <h3 className="text-white font-semibold text-lg mb-3">{item.question}</h3>
-                <p className="text-gray-400 leading-relaxed font-light">{item.answer}</p>
+                <p className="text-gray-300 leading-relaxed font-light">{item.answer}</p>
               </div>
             ))}
           </div>

@@ -187,7 +187,7 @@ export default function SearchBar({
             {loading && (
               <span className="absolute right-2 top-1/2 -translate-y-1/2">
                 <svg
-                  className="animate-spin text-gray-500"
+                  className="animate-spin text-gray-400"
                   width="12"
                   height="12"
                   viewBox="0 0 24 24"
@@ -236,7 +236,7 @@ export default function SearchBar({
           viewBox="0 0 24 24"
           stroke="currentColor"
           strokeWidth={2}
-          className="absolute left-4 text-gray-500 pointer-events-none"
+          className="absolute left-4 text-gray-400 pointer-events-none"
         >
           <path
             strokeLinecap="round"
@@ -264,7 +264,7 @@ export default function SearchBar({
               setSuggestions([]);
               inputRef.current?.focus();
             }}
-            className="absolute right-3 text-gray-500 hover:text-white transition-colors"
+            className="absolute right-3 text-gray-400 hover:text-white transition-colors"
             aria-label="Limpar"
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
@@ -274,7 +274,7 @@ export default function SearchBar({
         )}
         {loading && !query && (
           <span className="absolute right-3">
-            <svg className="animate-spin text-gray-500" width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <svg className="animate-spin text-gray-400" width="14" height="14" viewBox="0 0 24 24" fill="none">
               <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" strokeDasharray="30 70" />
             </svg>
           </span>
@@ -314,7 +314,7 @@ function DropdownContent({
 }) {
   if (loading && suggestions.length === 0) {
     return (
-      <div className="px-4 py-3 text-gray-500 text-sm flex items-center gap-2">
+      <div className="px-4 py-3 text-gray-400 text-sm flex items-center gap-2">
         <svg className="animate-spin" width="12" height="12" viewBox="0 0 24 24" fill="none">
           <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" strokeDasharray="30 70" />
         </svg>
@@ -325,7 +325,7 @@ function DropdownContent({
 
   if (suggestions.length === 0) {
     return (
-      <div className="px-4 py-3 text-gray-500 text-sm">
+      <div className="px-4 py-3 text-gray-400 text-sm">
         Nenhum resultado para &ldquo;{query}&rdquo;
       </div>
     );
@@ -351,7 +351,7 @@ function DropdownContent({
               viewBox="0 0 24 24"
               stroke="currentColor"
               strokeWidth={2}
-              className="shrink-0 mt-0.5 text-gray-600"
+              className="shrink-0 mt-0.5 text-gray-400"
             >
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
             </svg>
@@ -359,7 +359,7 @@ function DropdownContent({
               <p className="text-white text-sm font-medium leading-snug line-clamp-1">
                 <Highlight text={s.title} query={query} />
               </p>
-              <p className="text-gray-500 text-xs mt-0.5">{s.category} · {s.readTime}</p>
+              <p className="text-gray-400 text-xs mt-0.5">{s.category} · {s.readTime}</p>
             </div>
           </div>
         </button>
@@ -367,7 +367,7 @@ function DropdownContent({
       <button
         type="button"
         onClick={onViewAll}
-        className="w-full text-left px-4 py-3 text-xs text-gray-400 hover:text-white hover:bg-white/5 transition-colors duration-150 flex items-center gap-1.5"
+        className="w-full text-left px-4 py-3 text-xs text-gray-300 hover:text-white hover:bg-white/5 transition-colors duration-150 flex items-center gap-1.5"
       >
         Ver todos os resultados para &ldquo;{query}&rdquo;
         <svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

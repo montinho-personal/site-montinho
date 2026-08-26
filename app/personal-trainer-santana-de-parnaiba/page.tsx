@@ -228,7 +228,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
                 <span className="flex-shrink-0 mt-1 w-2 h-2 rounded-full" style={{ background: "#BA9E50" }} />
                 <div>
                   <p className="text-white font-semibold mb-1">{item.perfil}</p>
-                  <p className="text-gray-400 text-sm leading-relaxed font-light">{item.desc}</p>
+                  <p className="text-gray-300 text-sm leading-relaxed font-light">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -242,7 +242,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
               Na prática, o deslocamento entre esses bairros e Alphaville, Tamboré ou o centro de Barueri leva cerca de 10 a 20 minutos de carro, dependendo do bairro e do trânsito. Isso permite manter horários regulares mesmo para quem mora nas partes mais afastadas, como Aldeia da Serra — a agenda é organizada por região justamente para preservar essa pontualidade.
             </p>
           </div>
-          <p className="mt-8 text-gray-400 text-sm leading-relaxed font-light">
+          <p className="mt-8 text-gray-300 text-sm leading-relaxed font-light">
             Também atendo cidades e regiões vizinhas: veja as páginas de{" "}
             <Link href="/personal-trainer-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">personal trainer em Alphaville</Link>,{" "}
             <Link href="/personal-trainer-barueri" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">personal trainer em Barueri</Link> e{" "}
@@ -391,7 +391,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
             ].map((item, i) => (
               <div key={i} className="border border-white/10 p-6 hover:border-white/25 transition-colors duration-200">
                 <h3 className="text-white font-semibold mb-3">{item.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed font-light">{item.text}</p>
+                <p className="text-gray-300 text-sm leading-relaxed font-light">{item.text}</p>
               </div>
             ))}
           </div>
@@ -420,7 +420,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           >
             Quem são meus alunos em Santana de Parnaíba
           </h2>
-          <p className="text-gray-400 font-light mb-8 leading-relaxed">
+          <p className="text-gray-300 font-light mb-8 leading-relaxed">
             A região tem um perfil de morador bastante específico — e meu trabalho se adapta a cada um deles:
           </p>
           <div className="space-y-4">
@@ -454,7 +454,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
                 <span className="flex-shrink-0 mt-1 w-2 h-2 rounded-full" style={{ background: "#BA9E50" }} />
                 <div>
                   <p className="text-white font-semibold mb-1">{item.perfil}</p>
-                  <p className="text-gray-400 text-sm leading-relaxed font-light">{item.desc}</p>
+                  <p className="text-gray-300 text-sm leading-relaxed font-light">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -512,7 +512,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           >
             5 Dicas para acabar com dores no lombar
           </h2>
-          <p className="text-gray-400 leading-relaxed mb-8">
+          <p className="text-gray-300 leading-relaxed mb-8">
             Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
           </p>
           <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
@@ -535,7 +535,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
             {faq.map((item, i) => (
               <div key={i} className="border-b border-white/10 pb-8">
                 <h3 className="text-white font-semibold text-lg mb-3">{item.question}</h3>
-                <p className="text-gray-400 leading-relaxed font-light">{item.answer}</p>
+                <p className="text-gray-300 leading-relaxed font-light">{item.answer}</p>
               </div>
             ))}
           </div>

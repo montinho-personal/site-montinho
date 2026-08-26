@@ -78,7 +78,7 @@ function WhatsButton({ label, sub }: { label: string; sub?: string }) {
         </svg>
         {label}
       </a>
-      {sub && <p className="text-gray-400 text-sm mt-3">{sub}</p>}
+      {sub && <p className="text-gray-300 text-sm mt-3">{sub}</p>}
     </div>
   );
 }
@@ -124,7 +124,7 @@ export default function LandingPage() {
                 <strong className="text-white">plano criado para a sua realidade</strong>, com
                 acompanhamento contínuo, estratégia e ajustes conforme sua evolução.
               </p>
-              <p className="text-gray-400 text-sm mb-8">
+              <p className="text-gray-300 text-sm mb-8">
                 Atendo presencialmente em <strong className="text-gray-200">Alphaville, Tamboré, Barueri e
                 Santana de Parnaíba</strong>, em condomínios, academias e residências.
               </p>
@@ -171,7 +171,7 @@ export default function LandingPage() {
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
               Resultados que falam mais alto do que qualquer promessa
             </h2>
-            <p className="text-center text-gray-400 mb-10 max-w-2xl mx-auto">
+            <p className="text-center text-gray-300 mb-10 max-w-2xl mx-auto">
               Nada transmite mais confiança do que ver pessoas reais conquistando
               resultados — alunos que decidiram mudar de vida com estratégia,
               acompanhamento e constância.
@@ -181,7 +181,7 @@ export default function LandingPage() {
               {[["-40kg","na própria pele"],["20+","anos de experiência"],["5.0 ★","17 avaliações Google"]].map(([n,d]) => (
                 <div key={n} className="border border-white/10 rounded-2xl py-5 px-2 bg-black/40">
                   <p className="text-[#BA9E50] text-2xl sm:text-3xl font-bold" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>{n}</p>
-                  <p className="text-gray-400 text-xs mt-1">{d}</p>
+                  <p className="text-gray-300 text-xs mt-1">{d}</p>
                 </div>
               ))}
             </div>
@@ -224,7 +224,7 @@ export default function LandingPage() {
                   </blockquote>
                   <figcaption className="text-sm">
                     <span className="text-white font-semibold">{r.name}</span>
-                    <span className="text-gray-500"> · Avaliação no Google</span>
+                    <span className="text-gray-400"> · Avaliação no Google</span>
                   </figcaption>
                 </figure>
               ))}
@@ -241,7 +241,7 @@ export default function LandingPage() {
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-white/10">
                   <Image src="/foto-historia-4.jpg" alt="Montinho antes: mais de 40kg acima do peso" fill loading="lazy" sizes="(max-width: 768px) 45vw, 170px" className="object-cover" />
                 </div>
-                <figcaption className="text-center text-gray-500 text-xs mt-2 uppercase tracking-wider">Antes</figcaption>
+                <figcaption className="text-center text-gray-400 text-xs mt-2 uppercase tracking-wider">Antes</figcaption>
               </figure>
               <figure>
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#BA9E50]/40">
@@ -284,7 +284,7 @@ export default function LandingPage() {
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
               Muito mais do que treinar
             </h2>
-            <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
               Você terá um acompanhamento pensado para facilitar sua evolução.
             </p>
             <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-4 max-w-3xl mx-auto">
@@ -327,7 +327,7 @@ export default function LandingPage() {
                 <li key={n} className="bg-white/[0.03] border border-white/10 rounded-2xl p-5">
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#BA9E50] text-black font-bold mb-3">{n}</span>
                   <h3 className="text-white font-bold mb-1">{t}</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed">{d}</p>
+                  <p className="text-gray-300 text-xs leading-relaxed">{d}</p>
                 </li>
               ))}
             </ol>
@@ -345,8 +345,8 @@ export default function LandingPage() {
             </h2>
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="border border-white/10 rounded-2xl p-7 bg-black/40">
-                <h3 className="text-gray-400 font-bold uppercase text-xs tracking-[0.15em] mb-5">Outros personais</h3>
-                <ul className="space-y-3 text-gray-500 text-sm">
+                <h3 className="text-gray-300 font-bold uppercase text-xs tracking-[0.15em] mb-5">Outros personais</h3>
+                <ul className="space-y-3 text-gray-400 text-sm">
                   <li>❌ Utilizam treinos parecidos para diferentes alunos</li>
                   <li>❌ Pouco acompanhamento entre as aulas</li>
                   <li>❌ Ajustes esporádicos</li>
@@ -402,7 +402,7 @@ export default function LandingPage() {
             <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
               Regiões atendidas
             </h2>
-            <p className="text-gray-400 mb-10 max-w-2xl mx-auto">
+            <p className="text-gray-300 mb-10 max-w-2xl mx-auto">
               Atendimento presencial em Alphaville, Tamboré, Barueri e Santana de
               Parnaíba — além de diversos condomínios e academias da região.
             </p>
@@ -415,7 +415,7 @@ export default function LandingPage() {
               ].map(([city, areas]) => (
                 <div key={city as string} className="border border-white/10 rounded-2xl p-6 bg-white/[0.02] hover:border-[#BA9E50]/40 transition-colors">
                   <h3 className="text-[#BA9E50] font-bold mb-3">📍 {city}</h3>
-                  <ul className="space-y-1.5 text-gray-400 text-sm">
+                  <ul className="space-y-1.5 text-gray-300 text-sm">
                     {(areas as string[]).map((a) => <li key={a}>{a}</li>)}
                   </ul>
                 </div>
@@ -424,9 +424,9 @@ export default function LandingPage() {
             <div className="relative max-w-2xl mx-auto rounded-2xl border border-white/10 bg-[radial-gradient(circle_at_center,rgba(186,158,80,0.12),transparent_70%)] py-10 px-6 mb-2">
               <span className="text-3xl">🗺️</span>
               <p className="text-white font-semibold mt-2">Base em Alphaville — atendimento em um raio de ~20 minutos</p>
-              <p className="text-gray-400 text-sm mt-1">Tamboré a ~10 min · Centro de Barueri a ~15 min · Aldeia da Serra a ~20 min</p>
+              <p className="text-gray-300 text-sm mt-1">Tamboré a ~10 min · Centro de Barueri a ~15 min · Aldeia da Serra a ~20 min</p>
             </div>
-            <p className="text-gray-500 text-sm mt-8">
+            <p className="text-gray-400 text-sm mt-8">
               Seu condomínio não está na lista? Me chama — provavelmente eu atendo aí também.
             </p>
           </div>
@@ -445,7 +445,7 @@ export default function LandingPage() {
                     {f.q}
                     <span className="text-[#BA9E50] group-open:rotate-45 transition-transform text-xl leading-none">+</span>
                   </summary>
-                  <p className="px-6 pb-5 text-gray-400 text-sm leading-relaxed">{f.a}</p>
+                  <p className="px-6 pb-5 text-gray-300 text-sm leading-relaxed">{f.a}</p>
                 </details>
               ))}
             </div>
@@ -470,7 +470,7 @@ export default function LandingPage() {
               um plano que faça sentido para sua rotina e acompanhar sua evolução de
               forma próxima.
             </p>
-            <p className="text-gray-400 mb-10 max-w-xl mx-auto">
+            <p className="text-gray-300 mb-10 max-w-xl mx-auto">
               Se você procura um Personal Trainer em Alphaville que realmente se
               importe com seus resultados, será um prazer conversar com você. Vamos
               entender seus objetivos e descobrir qual é a melhor estratégia para
@@ -480,7 +480,7 @@ export default function LandingPage() {
               label="Quero começar minha transformação"
               sub="Respondo pessoalmente — geralmente em poucos minutos"
             />
-            <p className="text-gray-600 text-xs mt-12">
+            <p className="text-gray-400 text-xs mt-12">
               Montinho Personal Trainer · Alphaville, Barueri e Santana de Parnaíba · São Paulo
             </p>
           </div>

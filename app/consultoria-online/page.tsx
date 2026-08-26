@@ -147,7 +147,7 @@ export default function ConsultoriaOnlineLP() {
                 montado para a sua realidade, vídeos de execução, correções e ajustes
                 conforme a sua evolução — com suporte direto pelo WhatsApp.
               </p>
-              <p className="text-gray-400 text-sm mb-8">
+              <p className="text-gray-300 text-sm mb-8">
                 Para quem quer <strong className="text-gray-200">emagrecer ou ganhar massa muscular</strong>{" "}
                 treinando em casa, no condomínio, na academia ou em viagem — em qualquer lugar do Brasil.
               </p>
@@ -194,7 +194,7 @@ export default function ConsultoriaOnlineLP() {
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
               Resultados reais, de pessoas reais
             </h2>
-            <p className="text-center text-gray-400 mb-10 max-w-2xl mx-auto">
+            <p className="text-center text-gray-300 mb-10 max-w-2xl mx-auto">
               Antes de decidir, veja o que aconteceu com quem parou de tentar sozinho
               e passou a treinar com estratégia, acompanhamento e constância.
             </p>
@@ -203,7 +203,7 @@ export default function ConsultoriaOnlineLP() {
               {[["-40kg", "na própria pele"], ["20+", "anos de musculação"], ["5.0 ★", `${testimonials.totalReviews} avaliações Google`]].map(([n, d]) => (
                 <div key={n} className="border border-white/10 rounded-2xl py-5 px-2 bg-black/40">
                   <p className="text-[#BA9E50] text-2xl sm:text-3xl font-bold" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>{n}</p>
-                  <p className="text-gray-400 text-xs mt-1">{d}</p>
+                  <p className="text-gray-300 text-xs mt-1">{d}</p>
                 </div>
               ))}
             </div>
@@ -246,7 +246,7 @@ export default function ConsultoriaOnlineLP() {
                   </blockquote>
                   <figcaption className="text-sm">
                     <span className="text-white font-semibold">{r.name}</span>
-                    <span className="text-gray-500"> · Avaliação no Google</span>
+                    <span className="text-gray-400"> · Avaliação no Google</span>
                   </figcaption>
                 </figure>
               ))}
@@ -261,7 +261,7 @@ export default function ConsultoriaOnlineLP() {
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
               &ldquo;Mas consultoria online funciona?&rdquo;
             </h2>
-            <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
               Funciona — quando não é só uma planilha. A diferença está no
               acompanhamento. Veja como o formato online mantém a mesma proximidade
               do presencial:
@@ -275,7 +275,7 @@ export default function ConsultoriaOnlineLP() {
                 <div key={t} className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 text-center">
                   <span className="text-3xl">{icon}</span>
                   <h3 className="text-white font-bold mt-3 mb-2">{t}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">{d}</p>
+                  <p className="text-gray-300 text-sm leading-relaxed">{d}</p>
                 </div>
               ))}
             </div>
@@ -293,7 +293,7 @@ export default function ConsultoriaOnlineLP() {
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
               Tudo o que está incluso na sua consultoria
             </h2>
-            <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
               Não é um treino avulso. É uma estratégia completa de transformação,
               acompanhada de perto do início ao fim.
             </p>
@@ -312,7 +312,7 @@ export default function ConsultoriaOnlineLP() {
                   <p className="text-white font-semibold text-sm mb-1">
                     <span className="text-[#25D366] mr-2">✔</span>{t}
                   </p>
-                  <p className="text-gray-400 text-sm leading-relaxed">{d}</p>
+                  <p className="text-gray-300 text-sm leading-relaxed">{d}</p>
                 </li>
               ))}
             </ul>
@@ -339,7 +339,7 @@ export default function ConsultoriaOnlineLP() {
                 <li key={n} className="bg-white/[0.03] border border-white/10 rounded-2xl p-5">
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#BA9E50] text-black font-bold mb-3">{n}</span>
                   <h3 className="text-white font-bold mb-1">{t}</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed">{d}</p>
+                  <p className="text-gray-300 text-xs leading-relaxed">{d}</p>
                 </li>
               ))}
             </ol>
@@ -357,7 +357,7 @@ export default function ConsultoriaOnlineLP() {
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-white/10">
                   <Image src="/foto-historia-4.jpg" alt="Montinho antes: mais de 40kg acima do peso" fill loading="lazy" sizes="(max-width: 768px) 45vw, 170px" className="object-cover" />
                 </div>
-                <figcaption className="text-center text-gray-500 text-xs mt-2 uppercase tracking-wider">Antes</figcaption>
+                <figcaption className="text-center text-gray-400 text-xs mt-2 uppercase tracking-wider">Antes</figcaption>
               </figure>
               <figure>
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#BA9E50]/40">
@@ -400,8 +400,8 @@ export default function ConsultoriaOnlineLP() {
             </h2>
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="border border-white/10 rounded-2xl p-7 bg-black/40">
-                <h3 className="text-gray-400 font-bold uppercase text-xs tracking-[0.15em] mb-5">Apps e planilhas genéricas</h3>
-                <ul className="space-y-3 text-gray-500 text-sm">
+                <h3 className="text-gray-300 font-bold uppercase text-xs tracking-[0.15em] mb-5">Apps e planilhas genéricas</h3>
+                <ul className="space-y-3 text-gray-400 text-sm">
                   <li>❌ O mesmo treino para milhares de pessoas</li>
                   <li>❌ Ninguém vê se você executa certo</li>
                   <li>❌ Dúvida fica sem resposta</li>
@@ -450,8 +450,8 @@ export default function ConsultoriaOnlineLP() {
                 </ul>
               </div>
               <div className="border border-white/10 rounded-2xl p-7 bg-black/40">
-                <h3 className="text-gray-400 font-bold mb-5">Não é para você que:</h3>
-                <ul className="space-y-3 text-gray-500 text-sm">
+                <h3 className="text-gray-300 font-bold mb-5">Não é para você que:</h3>
+                <ul className="space-y-3 text-gray-400 text-sm">
                   {[
                     "Procura fórmula mágica ou resultado sem esforço.",
                     "Quer apenas receber uma planilha e sumir.",
@@ -463,7 +463,7 @@ export default function ConsultoriaOnlineLP() {
                     </li>
                   ))}
                 </ul>
-                <p className="text-gray-400 text-sm mt-6 leading-relaxed">
+                <p className="text-gray-300 text-sm mt-6 leading-relaxed">
                   Prefiro ser honesto agora do que te decepcionar depois: transformação
                   real exige método <em>e</em> participação. Eu cuido do método — e caminho
                   com você no resto.
@@ -484,7 +484,7 @@ export default function ConsultoriaOnlineLP() {
               A primeira conversa não custa nada — você explica seu objetivo, eu
               explico como posso te ajudar, e só então você decide.
             </p>
-            <p className="text-gray-400 text-sm max-w-xl mx-auto mb-8">
+            <p className="text-gray-300 text-sm max-w-xl mx-auto mb-8">
               E se contratar e se arrepender nos primeiros 7 dias, seu investimento é
               devolvido — conforme o direito de arrependimento previsto no Código de
               Defesa do Consumidor. Sem burocracia e sem constrangimento.
@@ -506,7 +506,7 @@ export default function ConsultoriaOnlineLP() {
                     {f.q}
                     <span className="text-[#BA9E50] group-open:rotate-45 transition-transform text-xl leading-none">+</span>
                   </summary>
-                  <p className="px-6 pb-5 text-gray-400 text-sm leading-relaxed">{f.a}</p>
+                  <p className="px-6 pb-5 text-gray-300 text-sm leading-relaxed">{f.a}</p>
                 </details>
               ))}
             </div>
@@ -530,12 +530,12 @@ export default function ConsultoriaOnlineLP() {
               acompanhando de verdade. Eu sei porque já estive exatamente onde você
               está agora.
             </p>
-            <p className="text-gray-400 mb-6 max-w-xl mx-auto">
+            <p className="text-gray-300 mb-6 max-w-xl mx-auto">
               Me mande uma mensagem. Vamos entender seus objetivos e descobrir a
               melhor estratégia para a transformação que você deseja — onde quer que
               você esteja.
             </p>
-            <p className="text-gray-500 text-sm mb-10">
+            <p className="text-gray-400 text-sm mb-10">
               Atendo um número limitado de alunos em acompanhamento por vez — é o
               que mantém as correções e o suporte realmente próximos.
             </p>
@@ -543,7 +543,7 @@ export default function ConsultoriaOnlineLP() {
               label="Quero começar minha transformação"
               sub="Respondo pessoalmente — geralmente em poucos minutos"
             />
-            <p className="text-gray-600 text-xs mt-12">
+            <p className="text-gray-400 text-xs mt-12">
               Montinho Personal Trainer · Consultoria Online para todo o Brasil
             </p>
           </div>

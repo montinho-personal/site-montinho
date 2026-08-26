@@ -157,7 +157,7 @@ export default function PersonalTrainerDomicilioTambore() {
           >
             Treino a domicílio em Tamboré: do primeiro contato à primeira sessão
           </h2>
-          <p className="text-gray-400 leading-relaxed font-light mb-10">
+          <p className="text-gray-300 leading-relaxed font-light mb-10">
             O processo é simples e rápido. Não existe burocracia entre a decisão de começar e o primeiro treino.
           </p>
 
@@ -190,7 +190,7 @@ export default function PersonalTrainerDomicilioTambore() {
                 </span>
                 <div>
                   <h3 className="text-white font-semibold text-lg mb-2">{step.title}</h3>
-                  <p className="text-gray-400 leading-relaxed font-light">{step.text}</p>
+                  <p className="text-gray-300 leading-relaxed font-light">{step.text}</p>
                 </div>
               </div>
             ))}
@@ -207,7 +207,7 @@ export default function PersonalTrainerDomicilioTambore() {
           >
             Para quem o treino a domicílio em Tamboré faz mais sentido
           </h2>
-          <p className="text-gray-400 font-light mb-10 leading-relaxed">
+          <p className="text-gray-300 font-light mb-10 leading-relaxed">
             O atendimento a domicílio resolve problemas reais de quem tem rotina exigente ou preferência por privacidade:
           </p>
           <ul className="space-y-4 mb-10">
@@ -225,7 +225,7 @@ export default function PersonalTrainerDomicilioTambore() {
               </li>
             ))}
           </ul>
-          <p className="text-gray-400 font-light">
+          <p className="text-gray-300 font-light">
             Para conhecer todas as modalidades de atendimento disponíveis, acesse a{" "}
             <Link href="/consultoria" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
               página de consultoria
@@ -251,7 +251,7 @@ export default function PersonalTrainerDomicilioTambore() {
             {faq.map((item, i) => (
               <div key={i} className="border-b border-white/10 pb-8">
                 <h3 className="text-white font-semibold text-lg mb-3">{item.question}</h3>
-                <p className="text-gray-400 leading-relaxed font-light">{item.answer}</p>
+                <p className="text-gray-300 leading-relaxed font-light">{item.answer}</p>
               </div>
             ))}
           </div>

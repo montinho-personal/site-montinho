@@ -5,7 +5,7 @@ export default function CTAFinal() {
   return (
     <section className="py-24 bg-white text-black" id="cta">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-6">
+        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-6">
           Pronto para começar?
         </p>
 
@@ -16,7 +16,7 @@ export default function CTAFinal() {
           Sua transformação começa com uma conversa.
         </h2>
 
-        <p className="text-lg text-gray-600 leading-relaxed max-w-xl mx-auto mb-10">
+        <p className="text-lg text-gray-400 leading-relaxed max-w-xl mx-auto mb-10">
           Sem compromisso, sem julgamento. Apenas uma conversa para entender
           onde você está e como posso te ajudar a chegar onde quer.
         </p>
@@ -47,7 +47,7 @@ export default function CTAFinal() {
           </Link>
         </div>
 
-        <p className="mt-8 text-gray-400 text-sm">
+        <p className="mt-8 text-gray-300 text-sm">
           Atendimento presencial em Alphaville (Barueri e Santana de Parnaíba) e online em todo o Brasil.
         </p>
       </div>

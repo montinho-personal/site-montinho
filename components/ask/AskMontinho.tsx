@@ -226,7 +226,7 @@ export default function AskMontinho({
         >
           Pergunte ao Montinho
         </p>
-        <p className="text-gray-500 text-xs mt-1">
+        <p className="text-gray-400 text-xs mt-1">
           Assistente inteligente que busca respostas nos conteúdos publicados pelo
           Montinho. Conteúdo educativo — não substitui avaliação individual de
           profissionais de saúde.
@@ -247,7 +247,7 @@ export default function AskMontinho({
               que o Montinho escreveu — experiência prática somada à evidência
               científica — e te mostro de onde ela veio.
             </p>
-            <p className="text-gray-600 text-xs uppercase tracking-[0.1em] mb-2">
+            <p className="text-gray-400 text-xs uppercase tracking-[0.1em] mb-2">
               Você pode perguntar:
             </p>
             <div className="flex flex-wrap gap-2">
@@ -281,7 +281,7 @@ export default function AskMontinho({
 
               {m.sources && m.sources.length > 0 && (
                 <div className="mt-3 border-t border-white/10 pt-3">
-                  <p className="text-gray-600 text-[11px] uppercase tracking-[0.1em] mb-2">
+                  <p className="text-gray-400 text-[11px] uppercase tracking-[0.1em] mb-2">
                     Conteúdos usados nesta resposta
                   </p>
                   <ul className="space-y-1.5">
@@ -305,21 +305,21 @@ export default function AskMontinho({
               {/* Feedback */}
               <div className="mt-3 flex items-center gap-3">
                 {m.feedback ? (
-                  <span className="text-gray-600 text-xs">Obrigado pelo retorno!</span>
+                  <span className="text-gray-400 text-xs">Obrigado pelo retorno!</span>
                 ) : (
                   <>
-                    <span className="text-gray-600 text-xs">Esta resposta ajudou?</span>
+                    <span className="text-gray-400 text-xs">Esta resposta ajudou?</span>
                     <button
                       aria-label="Resposta ajudou"
                       onClick={() => feedback(i, "up")}
-                      className="text-gray-500 hover:text-white text-sm px-1.5 py-0.5 transition-colors"
+                      className="text-gray-400 hover:text-white text-sm px-1.5 py-0.5 transition-colors"
                     >
                       👍
                     </button>
                     <button
                       aria-label="Resposta não ajudou"
                       onClick={() => feedback(i, "down")}
-                      className="text-gray-500 hover:text-white text-sm px-1.5 py-0.5 transition-colors"
+                      className="text-gray-400 hover:text-white text-sm px-1.5 py-0.5 transition-colors"
                     >
                       👎
                     </button>
@@ -331,13 +331,13 @@ export default function AskMontinho({
         )}
 
         {loading && (
-          <p className="text-gray-500 text-sm animate-pulse" role="status">
+          <p className="text-gray-400 text-sm animate-pulse" role="status">
             Buscando nos conteúdos do Montinho…
           </p>
         )}
 
         {error && (
-          <div className="text-sm text-gray-400">
+          <div className="text-sm text-gray-300">
             {error}{" "}
             <button onClick={retry} className="underline underline-offset-2 hover:text-white">
               Tentar novamente
@@ -363,8 +363,8 @@ export default function AskMontinho({
             onKeyDown={onKeyDown}
             rows={1}
             maxLength={500}
-            placeholder="Digite sua dúvida sobre treino…"
-            className="flex-1 bg-black border border-white/20 text-white text-sm px-4 py-3 resize-none focus:border-white/60 outline-none placeholder:text-gray-600 min-h-[48px]"
+            placeholder="Digite sua dúvida…"
+            className="flex-1 bg-black border border-white/20 text-white text-base sm:text-sm px-4 py-3 resize-none focus:border-white/60 outline-none placeholder:text-gray-300 min-h-[48px]"
           />
           <button
             type="submit"
@@ -377,7 +377,7 @@ export default function AskMontinho({
         {messages.length > 0 && (
           <button
             onClick={reset}
-            className="text-gray-600 text-xs mt-2 hover:text-white transition-colors"
+            className="text-gray-400 text-xs mt-2 hover:text-white transition-colors"
           >
             Nova conversa
           </button>

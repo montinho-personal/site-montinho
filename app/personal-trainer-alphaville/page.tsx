@@ -193,7 +193,7 @@ export default function PersonalTrainerAlphaville() {
           >
             Treino presencial em Alphaville: como é trabalhar comigo
           </h2>
-          <p className="text-gray-400 leading-relaxed font-light mb-10">
+          <p className="text-gray-300 leading-relaxed font-light mb-10">
             Do primeiro contato até os resultados, o processo é estruturado para eliminar tentativa e erro e garantir progresso consistente desde a primeira semana.
           </p>
 
@@ -226,7 +226,7 @@ export default function PersonalTrainerAlphaville() {
                 </span>
                 <div>
                   <h3 className="text-white font-semibold text-lg mb-2">{step.title}</h3>
-                  <p className="text-gray-400 leading-relaxed font-light">{step.text}</p>
+                  <p className="text-gray-300 leading-relaxed font-light">{step.text}</p>
                 </div>
               </div>
             ))}
@@ -257,7 +257,7 @@ export default function PersonalTrainerAlphaville() {
           >
             Para quem é esse trabalho
           </h2>
-          <p className="text-gray-400 font-light mb-10 leading-relaxed">
+          <p className="text-gray-300 font-light mb-10 leading-relaxed">
             Alphaville concentra um perfil de pessoa muito específico. Executivos, empreendedores, profissionais liberais, mães que conciliam filhos e carreira — todos com uma coisa em comum: tempo escasso e exigência alta. Trabalho com:
           </p>
           <ul className="space-y-4 mb-10">
@@ -374,7 +374,7 @@ export default function PersonalTrainerAlphaville() {
               Cada uma tem estrutura e perfil de público diferentes — e parte do meu trabalho é adaptar o protocolo aos equipamentos disponíveis onde você já treina, sem exigir troca de plano ou de academia.
             </p>
           </div>
-          <p className="text-gray-400 leading-relaxed font-light">
+          <p className="text-gray-300 leading-relaxed font-light">
             Também atendo alunos nas cidades vizinhas — conheça as páginas de{" "}
             <Link href="/personal-trainer-barueri" className="text-white underline underline-offset-4 hover:text-gray-300">
               personal trainer em Barueri
@@ -428,7 +428,7 @@ export default function PersonalTrainerAlphaville() {
               </li>
             ))}
           </ul>
-          <p className="text-gray-400 leading-relaxed font-light mt-8">
+          <p className="text-gray-300 leading-relaxed font-light mt-8">
             Sobre esse último ponto, vale a leitura:{" "}
             <Link href="/blog/mobilidade-articular-pre-treino" className="text-white underline underline-offset-4 hover:text-gray-300">
               mobilidade articular no pré-treino
@@ -522,7 +522,7 @@ export default function PersonalTrainerAlphaville() {
           >
             5 Dicas para acabar com dores no lombar
           </h2>
-          <p className="text-gray-400 leading-relaxed mb-8">
+          <p className="text-gray-300 leading-relaxed mb-8">
             Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
           </p>
           <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
@@ -545,7 +545,7 @@ export default function PersonalTrainerAlphaville() {
             {faq.map((item, i) => (
               <div key={i} className="border-b border-white/10 pb-8">
                 <h3 className="text-white font-semibold text-lg mb-3">{item.question}</h3>
-                <p className="text-gray-400 leading-relaxed font-light">{item.answer}</p>
+                <p className="text-gray-300 leading-relaxed font-light">{item.answer}</p>
               </div>
             ))}
           </div>

@@ -136,7 +136,7 @@ export default function DiagnosticoQuiz() {
   if (screen === "intro") {
     return (
       <div className="border border-white/20 bg-white/[0.03] p-8 sm:p-10 text-center">
-        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-4">
+        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-4">
           Gratuito · Leva de 1 a 2 minutos
         </p>
         <h2
@@ -147,7 +147,7 @@ export default function DiagnosticoQuiz() {
         >
           Pronto para descobrir seu caminho?
         </h2>
-        <p className="text-gray-400 text-base leading-relaxed mb-8 max-w-lg mx-auto">
+        <p className="text-gray-300 text-base leading-relaxed mb-8 max-w-lg mx-auto">
           São {TOTAL_QUESTIONS} perguntas rápidas sobre seu objetivo, rotina e
           dificuldades. No final, você recebe uma orientação inicial feita para a sua situação.
         </p>
@@ -157,7 +157,7 @@ export default function DiagnosticoQuiz() {
         >
           Fazer meu diagnóstico
         </button>
-        <p className="text-gray-600 text-xs mt-5">
+        <p className="text-gray-400 text-xs mt-5">
           Sem cadastro. Suas respostas não saem do seu navegador.
         </p>
       </div>
@@ -169,7 +169,7 @@ export default function DiagnosticoQuiz() {
     const waMessage = buildWhatsAppMessage(answers, result);
     return (
       <div aria-live="polite" className="border border-white/20 bg-white/[0.03] p-6 sm:p-10">
-        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-3">
+        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-3">
           Seu resultado
         </p>
         <h2
@@ -192,19 +192,19 @@ export default function DiagnosticoQuiz() {
             <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-2">
               Frequência para a sua rotina
             </h3>
-            <p className="text-gray-400 text-sm leading-relaxed">{result.frequency}</p>
+            <p className="text-gray-300 text-sm leading-relaxed">{result.frequency}</p>
           </div>
           <div>
             <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-2">
               Seu principal gargalo
             </h3>
-            <p className="text-gray-400 text-sm leading-relaxed">{result.bottleneck}</p>
+            <p className="text-gray-300 text-sm leading-relaxed">{result.bottleneck}</p>
           </div>
           <div>
             <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-2">
               Acompanhamento mais compatível: {result.modality}
             </h3>
-            <p className="text-gray-400 text-sm leading-relaxed">{result.modalityReason}</p>
+            <p className="text-gray-300 text-sm leading-relaxed">{result.modalityReason}</p>
           </div>
           <div>
             <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-3">
@@ -212,7 +212,7 @@ export default function DiagnosticoQuiz() {
             </h3>
             <ol className="space-y-3">
               {result.steps.map((s, i) => (
-                <li key={i} className="flex gap-3 text-gray-400 text-sm leading-relaxed">
+                <li key={i} className="flex gap-3 text-gray-300 text-sm leading-relaxed">
                   <span
                     className="font-bold flex-shrink-0"
                     style={{ color: "#BA9E50", fontFamily: "var(--font-playfair), Georgia, serif" }}
@@ -234,7 +234,7 @@ export default function DiagnosticoQuiz() {
           >
             Quer que o Montinho analise seu resultado?
           </h3>
-          <p className="text-gray-400 text-sm leading-relaxed mb-6">
+          <p className="text-gray-300 text-sm leading-relaxed mb-6">
             Manda seu diagnóstico direto no WhatsApp — ele responde pessoalmente e
             te diz qual seria o próximo passo para o seu caso.
           </p>
@@ -277,27 +277,27 @@ export default function DiagnosticoQuiz() {
           <Link
             href="/consultoria"
             onClick={() => trackEvent("diagnostic_service_click")}
-            className="text-gray-400 text-sm underline underline-offset-4 decoration-1 hover:text-white transition-colors duration-200"
+            className="text-gray-300 text-sm underline underline-offset-4 decoration-1 hover:text-white transition-colors duration-200"
           >
             Entender como funciona o acompanhamento
           </Link>
           <div className="flex gap-5">
             <button
               onClick={back}
-              className="text-gray-500 text-sm hover:text-white transition-colors duration-200"
+              className="text-gray-400 text-sm hover:text-white transition-colors duration-200"
             >
               Revisar respostas
             </button>
             <button
               onClick={restart}
-              className="text-gray-500 text-sm hover:text-white transition-colors duration-200"
+              className="text-gray-400 text-sm hover:text-white transition-colors duration-200"
             >
               Refazer
             </button>
           </div>
         </div>
 
-        <p className="text-gray-600 text-xs leading-relaxed mt-6">
+        <p className="text-gray-400 text-xs leading-relaxed mt-6">
           Esta é uma orientação inicial baseada nas suas respostas — não é avaliação
           médica, não substitui a anamnese individual e não promete resultados.
         </p>
@@ -314,12 +314,12 @@ export default function DiagnosticoQuiz() {
       {/* Progresso */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-gray-500 text-xs tracking-[0.1em] uppercase">
+          <span className="text-gray-400 text-xs tracking-[0.1em] uppercase">
             Pergunta {step + 1} de {TOTAL_QUESTIONS}
           </span>
           <button
             onClick={back}
-            className="text-gray-500 text-sm hover:text-white transition-colors duration-200"
+            className="text-gray-400 text-sm hover:text-white transition-colors duration-200"
           >
             ← Voltar
           </button>

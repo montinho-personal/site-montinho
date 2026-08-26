@@ -17,7 +17,7 @@ export default function LGPD() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-4">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-300 mb-4">
             Privacidade & LGPD
           </p>
           <h1
@@ -26,7 +26,7 @@ export default function LGPD() {
           >
             Política de Privacidade
           </h1>
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-300 text-sm">
             Última atualização: junho de 2025 &nbsp;·&nbsp; Em conformidade com
             a Lei nº 13.709/2018 (LGPD)
           </p>
@@ -315,7 +315,7 @@ export default function LGPD() {
         <div className="mt-16 pt-8 border-t border-white/10">
           <Link
             href="/"
-            className="text-sm text-gray-400 hover:text-white transition-colors"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
           >
             ← Voltar ao início
           </Link>

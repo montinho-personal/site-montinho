@@ -33,7 +33,7 @@ function FAQItem({ question, answer }: FAQItem) {
             viewBox="0 0 24 24"
             stroke="currentColor"
             strokeWidth={1.5}
-            className={`text-gray-400 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+            className={`text-gray-300 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
             aria-hidden="true"
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
