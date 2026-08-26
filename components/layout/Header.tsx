@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/minha-historia", label: "Minha História" },
   { href: "/consultoria", label: "Consultoria" },
   { href: "/resultados", label: "Resultados" },
+  { href: "/ferramentas", label: "Ferramentas" },
   { href: "/blog", label: "Blog" },
   { href: "/faq", label: "FAQ" },
   { href: "/contato", label: "Contato" },
