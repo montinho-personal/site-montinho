@@ -9,15 +9,26 @@ import { trackEvent } from "@/lib/analytics";
  * Não carrega o chat nem a lógica de IA: guarda a pergunta e o contexto na
  * sessão e navega para a página da ferramenta, que pergunta automaticamente.
  * Sem query params — nenhuma pergunta vira URL.
+ *
+ * variant="featured" → home: presença visual, exemplos clicáveis.
+ * variant="inline"   → artigos: discreto, não compete com a leitura.
  */
 export default function AskEmbed({
   context,
   placeholder = "Ex.: Quantas vezes por semana devo treinar?",
   eyebrow = "Ficou com alguma dúvida?",
+  variant = "inline",
+  examples = [
+    "Quantas vezes por semana devo treinar?",
+    "Treino de 30 minutos funciona?",
+    "Musculação emagrece?",
+  ],
 }: {
   context?: { slug: string; title?: string; category?: string };
   placeholder?: string;
   eyebrow?: string;
+  variant?: "inline" | "featured";
+  examples?: string[];
 }) {
   const router = useRouter();
   const [q, setQ] = useState("");
@@ -35,6 +46,78 @@ export default function AskEmbed({
     });
     router.push("/pergunte-ao-montinho");
   };
+
+  if (variant === "featured") {
+    return (
+      <div className="relative border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-7 sm:p-10">
+        {/* filete dourado superior */}
+        <div
+          className="absolute top-0 left-0 h-[2px] w-24"
+          style={{ background: "#BA9E50" }}
+          aria-hidden="true"
+        />
+
+        <p
+          className="text-xs font-semibold tracking-[0.2em] uppercase mb-4"
+          style={{ color: "#BA9E50" }}
+        >
+          {eyebrow}
+        </p>
+
+        <h2
+          className="text-white font-bold text-3xl sm:text-4xl leading-tight mb-3"
+          style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+        >
+          Pergunte ao Montinho
+        </h2>
+
+        <p className="text-gray-300 text-base leading-relaxed mb-7 max-w-xl">
+          Escreva sua dúvida e receba uma resposta buscada nos mais de 800
+          conteúdos do site — com os artigos que embasaram cada explicação.
+        </p>
+
+        <form
+          onSubmit={(e) => { e.preventDefault(); go(); }}
+          className="flex flex-col sm:flex-row gap-3 mb-6"
+        >
+          <label htmlFor="ask-embed-input" className="sr-only">
+            Digite sua pergunta sobre treino
+          </label>
+          <input
+            id="ask-embed-input"
+            type="text"
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            maxLength={500}
+            placeholder={placeholder}
+            className="flex-1 bg-black border border-white/25 text-white text-base px-5 py-4 outline-none placeholder:text-gray-600 min-h-[56px] transition-colors focus:border-[#BA9E50]"
+          />
+          <button
+            type="submit"
+            className="bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-colors min-h-[56px] whitespace-nowrap"
+          >
+            Perguntar
+          </button>
+        </form>
+
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-gray-600 text-xs uppercase tracking-[0.1em] mr-1">
+            Ou tente:
+          </span>
+          {examples.slice(0, 3).map((ex) => (
+            <button
+              key={ex}
+              type="button"
+              onClick={() => go(ex)}
+              className="text-sm text-gray-300 border border-white/20 px-3 py-2 hover:border-[#BA9E50] hover:text-white transition-colors text-left"
+            >
+              {ex}
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="border border-white/20 bg-white/[0.03] p-6 sm:p-7">

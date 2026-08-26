@@ -98,9 +98,9 @@ export default function Home() {
       <Depoimentos />
       <DiagnosticoCTA />
       <HomeFAQ />
-      <section className="py-14 bg-black border-t border-white/10">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AskEmbed eyebrow="Tem alguma dúvida sobre treino?" />
+      <section className="py-20 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AskEmbed variant="featured" eyebrow="Tem alguma dúvida sobre treino?" />
         </div>
       </section>
       <CTAFinal />
