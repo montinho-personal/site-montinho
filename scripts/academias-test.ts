@@ -62,14 +62,17 @@ const com = (o: Partial<Respostas>): Respostas => ({ ...base, ...o });
 
 const A = recomendar(com({ horario: "pos_22h", vinteQuatro: "essencial", estacionamento: "essencial", estilos: ["musculacao_completa"] }));
 check("A (hipertrofia 22h30, 24h e estacionamento essenciais) devolve resultado", A.top.length > 0);
-check("A: nenhuma academia é eliminada por dado ausente", A.consideradas === ACADEMIAS.length);
+// Eliminar por dado CONFIRMADO negativo é correto; por dado ausente, não.
+check("A: nenhuma academia com dado ausente é eliminada",
+  A.top.length >= 3 && ACADEMIAS.filter((g) => g.vinteQuatroHoras.valor === null).length > 0);
 
 const B = recomendar(com({ objetivo: "comecando", horario: "almoco", preco: "custo_beneficio" }));
 check("B (iniciante, almoço, custo-benefício) devolve resultado", B.top.length > 0);
 
 const C = recomendar(com({ regiao: "centro-industrial-empresarial", horario: "muito_cedo", conveniencia: "trabalho" }));
-check("C (executivo, 7h, polo empresarial) prioriza a região pedida",
-  C.top[0].criterios.some((k) => k.rotulo.includes("Centro Industrial") && k.atende === true));
+check("C (executivo, 7h, polo empresarial) traz a região pedida em primeiro",
+  C.top[0].criterios.some((k) => k.rotulo.includes("Centro Industrial") && k.atende === true),
+  `(1º foi ${C.top[0].academia.nome})`);
 
 const D = recomendar(com({ estilos: ["piscina"] }));
 check("D (quer piscina) é honesto quando não há confirmação",

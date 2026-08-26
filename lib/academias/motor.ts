@@ -48,6 +48,13 @@ export interface Criterio {
   rotulo: string;
   /** true = atendido, false = sabidamente não atendido, null = não confirmado. */
   atende: boolean | null;
+  /**
+   * Peso no ranqueamento. Região e itens marcados como essenciais valem o
+   * dobro: são escolhas explícitas da pessoa, e tratá-las igual a um critério
+   * secundário faz uma academia com mais dados confirmados passar na frente de
+   * outra que fica exatamente onde ela pediu.
+   */
+  peso: number;
 }
 
 export interface Resultado {
@@ -56,6 +63,8 @@ export interface Resultado {
   atendidos: number;
   aplicaveis: number;
   naoConfirmados: number;
+  /** Soma ponderada — usada só para ordenar. O que aparece na tela é a contagem. */
+  pontos: number;
   /** Ressalvas honestas para mostrar junto do resultado. */
   ressalvas: string[];
 }
@@ -86,14 +95,14 @@ function avaliar(a: Academia, r: Respostas): Resultado {
   const criterios: Criterio[] = [];
   const ressalvas: string[] = [];
 
-  const add = (rotulo: string, atende: boolean | null, ressalva?: string) => {
-    criterios.push({ rotulo, atende });
+  const add = (rotulo: string, atende: boolean | null, ressalva?: string, peso = 1) => {
+    criterios.push({ rotulo, atende, peso });
     if (atende === null && ressalva) ressalvas.push(ressalva);
   };
 
   // Região
   if (r.regiao !== "indiferente") {
-    add(`Fica em ${REGIAO_LABEL[r.regiao]}`, a.regiao === r.regiao);
+    add(`Fica em ${REGIAO_LABEL[r.regiao]}`, a.regiao === r.regiao, undefined, 2);
   }
 
   // Horário de fechamento / abertura
@@ -134,12 +143,14 @@ function avaliar(a: Academia, r: Respostas): Resultado {
 
   // 24 horas
   if (r.vinteQuatro !== "indiferente") {
-    add("Funciona 24 horas", a.vinteQuatroHoras.valor, "Não confirmamos se a unidade opera 24h.");
+    add("Funciona 24 horas", a.vinteQuatroHoras.valor, "Não confirmamos se a unidade opera 24h.",
+      r.vinteQuatro === "essencial" ? 2 : 1);
   }
 
   // Estacionamento
   if (r.estacionamento !== "indiferente") {
-    add("Tem estacionamento", a.estacionamento.valor, "Estacionamento não confirmado.");
+    add("Tem estacionamento", a.estacionamento.valor, "Estacionamento não confirmado.",
+      r.estacionamento === "essencial" ? 2 : 1);
   }
 
   // Estilos
@@ -171,7 +182,9 @@ function avaliar(a: Academia, r: Respostas): Resultado {
   const atendidos = criterios.filter((c) => c.atende === true).length;
   const naoConfirmados = criterios.filter((c) => c.atende === null).length;
 
-  return { academia: a, criterios, atendidos, aplicaveis, naoConfirmados, ressalvas };
+  const pontos = criterios.reduce((acc, c) => acc + (c.atende === true ? c.peso : 0), 0);
+
+  return { academia: a, criterios, atendidos, aplicaveis, naoConfirmados, ressalvas, pontos };
 }
 
 /** Critérios marcados como essenciais que a academia sabidamente não atende. */
@@ -195,8 +208,8 @@ export function recomendar(respostas: Respostas): Recomendacao {
   const base = passaram.length > 0 ? passaram : avaliadas;
 
   const ordenadas = [...base].sort((x, y) => {
-    // 1) mais critérios atendidos
-    if (y.atendidos !== x.atendidos) return y.atendidos - x.atendidos;
+    // 1) soma ponderada — região e essenciais pesam o dobro
+    if (y.pontos !== x.pontos) return y.pontos - x.pontos;
     // 2) menos incerteza — quem tem dado confirmado ganha do que é chute
     if (x.naoConfirmados !== y.naoConfirmados) return x.naoConfirmados - y.naoConfirmados;
     // 3) desempate estável por id, para o resultado nunca mudar sozinho
@@ -205,7 +218,7 @@ export function recomendar(respostas: Respostas): Recomendacao {
 
   const top = ordenadas.slice(0, 3);
   const empateTecnico =
-    top.length >= 2 && top[0].atendidos === top[1].atendidos && top[0].naoConfirmados === top[1].naoConfirmados;
+    top.length >= 2 && top[0].pontos === top[1].pontos && top[0].naoConfirmados === top[1].naoConfirmados;
 
   return {
     top,
