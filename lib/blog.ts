@@ -61181,7 +61181,7 @@ Em geral sim — temperatura e umidade menores facilitam a termorregulação e m
     metaTitle: "Proteína em Alimentos — Tabela Completa 2026",
     metaDescription: "Tabela completa de proteína em alimentos: carnes, ovos, laticínios, leguminosas e suplementos. Saiba quanto come e como atingir sua meta diária.",
     excerpt: "Atingir a meta de proteína diária é o desafio nutricional mais comum de quem treina. Veja a tabela completa com o teor proteico dos principais alimentos e as estratégias para bater sua meta.",
-    content: `<p>A proteína é o macronutriente mais importante para quem treina musculação. Sem proteína suficiente, a hipertrofia não acontece e o emagrecimento leva à perda de massa muscular. O problema: a maioria das pessoas que treina consume menos proteína do que precisa — e nem sabe disso.</p>
+    content: `<p>A proteína é o macronutriente mais importante para quem treina musculação. Sem proteína suficiente, a hipertrofia não acontece e o emagrecimento leva à perda de massa muscular. O problema: a maioria das pessoas que treina consomem menos proteína do que precisa — e nem sabe disso.</p>
 
 <p>Esta tabela completa vai resolver esse problema. Você vai saber exatamente quanto de proteína está em cada alimento — e como montar o cardápio para atingir sua meta.</p>
 
@@ -61196,26 +61196,27 @@ Em geral sim — temperatura e umidade menores facilitam a termorregulação e m
 
 ## Quanto de Proteína Você Precisa?
 
-Antes da tabela, defina sua meta:
+Antes da tabela, defina sua meta. Para quem treina musculação, a referência está entre **1,6 e 2,2 g de proteína por kg de peso corporal por dia** — faixa estimada por Morton et al. (British Journal of Sports Medicine, 2018), uma revisão com 49 estudos e 1.863 participantes.
 
-- **Manutenção:** 1.2-1.4g por kg de peso corporal/dia
-- **Hipertrofia (ganho muscular):** 1.6-2.0g por kg/dia
-- **Emagrecimento (preservar músculo):** 2.0-2.4g por kg/dia
-- **Mulheres pós-menopáusicas:** 1.8-2.0g por kg/dia (resistência anabólica)
+Dentro dessa faixa:
 
-**Exemplo:** pessoa de 80 kg em fase de hipertrofia → 128-160g de proteína por dia.
+- **Ganho de massa muscular:** a faixa inteira serve. Já a partir de 1,6 g/kg mais proteína não mostrou benefício adicional claro para massa magra.
+- **Emagrecimento (preservar músculo):** a parte de cima da faixa tende a ajudar, porque em déficit calórico a proteína é o que protege a massa magra.
+- **Mulheres na pós-menopausa:** também costumam se beneficiar da parte de cima, por causa da resistência anabólica.
+
+**Exemplo:** uma pessoa de 80 kg fica entre 128 g e 176 g de proteína por dia.
 
 ## Tabela Completa: Carnes e Peixes
 
 | Alimento | Porção | Proteína | Calorias |
 |---------|--------|---------|---------|
-| Peito de frango grelhado | 100g | 31g | 165 kcal |
+| Peito de frango grelhado | 100g | 32g | 165 kcal |
 | Frango inteiro (coxa) | 100g | 26g | 215 kcal |
 | Atum em água (lata) | 100g | 29g | 116 kcal |
 | Sardinha em água | 100g | 25g | 135 kcal |
 | Salmão grelhado | 100g | 25g | 208 kcal |
 | Tilápia grelhada | 100g | 26g | 128 kcal |
-| Carne bovina magra (patinho) | 100g | 26g | 160 kcal |
+| Carne bovina magra (patinho) | 100g | 36g | 160 kcal |
 | Alcatra grelhada | 100g | 27g | 180 kcal |
 | Carne moída (15% gordura) | 100g | 23g | 218 kcal |
 | Lombo suíno | 100g | 22g | 185 kcal |
@@ -61225,24 +61226,24 @@ Antes da tabela, defina sua meta:
 
 | Alimento | Porção | Proteína | Calorias |
 |---------|--------|---------|---------|
-| Ovo inteiro | 1 unidade (50g) | 6g | 78 kcal |
+| Ovo inteiro | 1 unidade (50g) | 7g | 78 kcal |
 | Clara de ovo | 1 unidade (33g) | 4g | 17 kcal |
 | Iogurte grego natural (0%) | 200g | 17g | 100 kcal |
 | Queijo cottage | 100g | 14g | 98 kcal |
 | Ricota | 100g | 11g | 174 kcal |
 | Leite integral | 240ml | 8g | 150 kcal |
 | Leite desnatado | 240ml | 8g | 90 kcal |
-| Queijo minas frescal | 100g | 12g | 220 kcal |
+| Queijo minas frescal | 100g | 17g | 220 kcal |
 | Requeijão light | 30g | 4g | 55 kcal |
 
 ## Tabela: Leguminosas e Vegetais Proteicos
 
 | Alimento | Porção | Proteína | Calorias |
 |---------|--------|---------|---------|
-| Feijão cozido | 100g | 8g | 132 kcal |
-| Lentilha cozida | 100g | 9g | 116 kcal |
+| Feijão carioca cozido | 100g | 5g | 132 kcal |
+| Lentilha cozida | 100g | 6g | 116 kcal |
 | Grão-de-bico cozido | 100g | 9g | 164 kcal |
-| Tofu firme | 100g | 8g | 76 kcal |
+| Tofu | 100g | 7g | 76 kcal |
 | Edamame | 100g | 11g | 122 kcal |
 | Proteína de soja texturizada (seca) | 30g | 17g | 96 kcal |
 
@@ -61256,17 +61257,25 @@ Antes da tabela, defina sua meta:
 | Albumina (clara em pó) | 30g | 24g | 110 kcal |
 | Proteína vegana (ervilha+arroz) | 30g | 20-22g | 120 kcal |
 
+Os valores de suplemento acima são faixas típicas, não números fixos: cada fabricante tem a sua formulação. **Confira sempre o rótulo do produto que você comprou** — é o único valor que vale para o seu pote.
+
 ## Como Montar um Dia de 150g de Proteína
 
 **Exemplo de distribuição:**
 
 | Refeição | Alimentos | Proteína |
 |---------|---------|---------|
-| Café da manhã | 4 ovos mexidos + 200g iogurte grego | 41g |
-| Almoço | 150g frango + feijão | 51g |
+| Café da manhã | 3 ovos mexidos + 200g iogurte grego | 38g |
+| Almoço | 150g frango + 100g feijão | 53g |
 | Pré/pós-treino | 1 dose de whey | 24g |
 | Jantar | 150g salmão | 38g |
-| **Total** | | **~154g** |
+| **Total** | | **~153g** |
+
+## De onde vêm esses números
+
+Os valores de alimentos in natura têm como referência a **TACO — Tabela Brasileira de Composição de Alimentos (NEPA/Unicamp, 4ª edição)**, a base pública brasileira. São os mesmos valores usados na [calculadora de proteína](/ferramentas/calculadora-de-proteina) deste site, de propósito: número que muda de página para página não serve de referência para ninguém.
+
+Duas ressalvas honestas: o teor varia conforme corte, marca e preparo — cru e cozido não são a mesma coisa, e por isso o estado do alimento está sempre indicado. E as calorias da tabela são aproximadas, úteis para comparar alimentos entre si, não para fechar um controle calórico exato.
 
 ## Estratégias para Atingir a Meta
 
@@ -61281,7 +61290,7 @@ Antes da tabela, defina sua meta:
 ## FAQ — Proteína em Alimentos
 
 **É possível atingir a meta de proteína só com alimentação, sem suplementos?**
-Sim, completamente. Suplementos são convenientes, não obrigatórios. Com boas escolhas alimentares, 1.6-2g/kg/dia é alcançável.
+Sim, completamente. Suplementos são convenientes, não obrigatórios. Com boas escolhas alimentares, a faixa de 1,6 a 2,2 g/kg/dia é alcançável só com comida.
 
 **Proteína vegetal é inferior à animal para musculação?**
 Em termos de biodisponibilidade e perfil de aminoácidos, sim — ligeiramente. Mas a diferença é superada aumentando um pouco a ingestão total e combinando fontes (ex: arroz + feijão formam proteína completa).

@@ -146,6 +146,71 @@ for (const s of ["proteina-para-quem-usa-mounjaro", "proteina-para-quem-usa-reta
   );
 }
 
+console.log("\n" + "=".repeat(60) + "\nO SITE NÃO PODE SE CONTRADIZER\n" + "=".repeat(60));
+
+/**
+ * O artigo da tabela mostra os mesmos alimentos que a calculadora, na mesma
+ * página, a centímetros de distância. Se os números divergirem, o leitor vê
+ * o site se contradizendo — foi exatamente o que acontecia (frango 31 na
+ * tabela, 32 na calculadora; patinho 26 contra 36). ALIMENTOS é a fonte da
+ * verdade; a tabela do artigo tem que bater com ela.
+ */
+const TABELA = html("proteina-em-alimentos-tabela-completa");
+
+/** Nome exato na linha da tabela → alimento correspondente em ALIMENTOS. */
+const PARES: [string, string][] = [
+  ["Peito de frango grelhado", "Peito de frango grelhado"],
+  ["Carne bovina magra (patinho)", "Carne bovina magra (patinho) grelhada"],
+  ["Queijo minas frescal", "Queijo minas frescal"],
+  ["Feijão carioca cozido", "Feijão carioca cozido"],
+  ["Lentilha cozida", "Lentilha cozida"],
+  ["Tofu", "Tofu"],
+];
+
+for (const [naTabela, emAlimentos] of PARES) {
+  const alimento = ALIMENTOS.find((a) => a.nome === emAlimentos);
+  if (!alimento) {
+    ok(`alimento "${emAlimentos}" existe em ALIMENTOS`, false, "o par do teste ficou órfão — renomearam o alimento?");
+    continue;
+  }
+  // A linha: | Nome | 100g | Ng | ... — pegamos a 3ª célula.
+  const linha = new RegExp(`<td[^>]*>${naTabela.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}</td>\\s*<td[^>]*>[^<]*</td>\\s*<td[^>]*>(\\d+)g</td>`, "i");
+  const m = TABELA.match(linha);
+  ok(
+    `a linha de "${naTabela}" existe na tabela do artigo`,
+    m !== null,
+    "se a linha mudou de formato, este teste precisa saber — não apague, atualize"
+  );
+  if (m) {
+    ok(
+      `${naTabela}: artigo (${m[1]}g) bate com a calculadora (${alimento.proteinaG}g)`,
+      Number(m[1]) === alimento.proteinaG,
+      "o mesmo alimento não pode ter dois valores no mesmo site"
+    );
+  }
+}
+
+/** O ovo aparece por unidade no artigo e por unidade em ALIMENTOS. */
+const ovo = ALIMENTOS.find((a) => a.nome === "Ovo cozido")!;
+ok(
+  `ovo: artigo bate com a calculadora (${ovo.proteinaG}g por unidade)`,
+  new RegExp(`<td[^>]*>Ovo inteiro</td>\\s*<td[^>]*>[^<]*</td>\\s*<td[^>]*>${ovo.proteinaG}g</td>`, "i").test(TABELA)
+);
+
+/** A faixa citada no artigo é a mesma da calculadora — 1,6 a 2,2. */
+const gMin = Math.min(...FAIXAS.map((f) => f.gPorKg));
+const gMax = Math.max(...FAIXAS.map((f) => f.gPorKg));
+ok(
+  `o artigo cita a mesma faixa da calculadora (${gMin} a ${gMax} g/kg)`,
+  TABELA.includes(`${String(gMin).replace(".", ",")} e ${String(gMax).replace(".", ",")} g de proteína por kg`),
+  "a calculadora é injetada logo depois dessa seção; faixas diferentes se contradizem na mesma tela"
+);
+ok(
+  "o artigo não sugere teto acima da faixa (2,4 g/kg)",
+  !/2[.,]4\s*g/.test(TABELA),
+  "a calculadora vai só até 2,2 — prometer 2,4 ao lado dela é incoerente"
+);
+
 console.log("\n" + "=".repeat(60) + "\nPRIVACIDADE E EVENTOS\n" + "=".repeat(60));
 
 const componente = fs.readFileSync("components/proteina/CalculadoraProteina.tsx", "utf8");
