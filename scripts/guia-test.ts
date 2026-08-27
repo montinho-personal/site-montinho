@@ -166,5 +166,36 @@ for (const a of ACADEMIAS.filter((x) => x.status === "ativa")) {
   );
 }
 
+console.log("\n" + "=".repeat(60) + "\n24H NO CONTEÚDO x 24H NA BASE\n" + "=".repeat(60));
+
+/**
+ * O caso 24 Wellness: o nome da academia dizia 24 horas, o artigo inteiro foi
+ * escrito sobre essa premissa, e a unidade não opera 24h. Nome não é dado.
+ *
+ * A regra: se a base diz que a academia NÃO funciona 24 horas, o artigo dela
+ * não pode vender o modelo 24h. Menção que nega ("não funciona 24 horas",
+ * "não cobre madrugada") é justamente o que queremos e passa.
+ */
+for (const a of ACADEMIAS.filter((x) => x.status === "ativa" && x.vinteQuatroHoras.valor === false)) {
+  const art = blogPosts.find((p) => p.slug === a.artigoSlug);
+  if (!art) continue;
+  const texto = (art.content ?? "").replace(/<[^>]+>/g, " ");
+
+  /* Frases que AFIRMAM o modelo 24h como proposta da unidade. */
+  const afirma = [
+    /\bacademia 24\s*horas, como a/i,
+    /proposta 24h faz sentido/i,
+    /o modelo 24h nasceu/i,
+    /entrada de madrugada\?/i,
+    /acesso 24 horas a aparelhos/i,
+  ].filter((re) => re.test(texto));
+
+  ok(
+    `artigo de "${a.nome}" não vende o modelo 24h`,
+    afirma.length === 0,
+    `a base diz que não é 24h, mas o texto ainda afirma: ${afirma.map(String).join(" | ")}`
+  );
+}
+
 console.log(falhas === 0 ? "\nTODOS OS TESTES PASSARAM\n" : `\n${falhas} TESTE(S) FALHARAM\n`);
 process.exit(falhas === 0 ? 0 : 1);
