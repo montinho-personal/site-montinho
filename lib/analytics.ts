@@ -69,6 +69,7 @@ export type AnalyticsEvent =
   | "calorie_deficit_select"
   | "calorie_article_click"
   | "calorie_cta_click"
+  | "calorie_macros_click"
 
   /**
    * Calculadora de 1RM. Mesma regra: carga, repetições e o 1RM estimado são
@@ -83,6 +84,21 @@ export type AnalyticsEvent =
   | "one_rm_methodology_open"
   | "one_rm_article_click"
   | "one_rm_cta_click"
+
+  /**
+   * Calculadora de macros. Peso, calorias e os gramas calculados são dados
+   * corporais e de dieta — nunca entram em parâmetro de evento.
+   */
+  | "macro_calculator_view"
+  | "macro_calculator_complete"
+  | "macro_protein_change"
+  | "macro_fat_change"
+  | "macro_meal_split_open"
+  | "macro_methodology_open"
+  | "macro_deficit_click"
+  | "macro_protein_calculator_click"
+  | "macro_article_click"
+  | "macro_cta_click"
   | "ask_montinho_feedback_positive"
   | "ask_montinho_feedback_negative"
   | "ask_montinho_embed_submit"

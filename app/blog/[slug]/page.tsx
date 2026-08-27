@@ -17,6 +17,8 @@ import CalculadoraProteina from "@/components/proteina/CalculadoraProteina";
 import { ARTIGOS_COM_CALCULADORA_DEFICIT } from "@/lib/calorias";
 import CalculadoraDeficit from "@/components/calorias/CalculadoraDeficit";
 import { ARTIGOS_COM_CALCULADORA_1RM, ARTIGOS_COM_LINK_1RM } from "@/lib/onerm";
+import { ARTIGOS_COM_CALCULADORA_MACROS } from "@/lib/macros";
+import CalculadoraMacros from "@/components/macros/CalculadoraMacros";
 import CalculadoraOneRM from "@/components/onerm/CalculadoraOneRM";
 import LinkFerramenta1RM from "@/components/onerm/LinkFerramenta1RM";
 import NotaMetodo from "@/components/filosofia/NotaMetodo";
@@ -99,7 +101,9 @@ export default async function BlogPost({ params }: Props) {
       ? "deficit"
       : ARTIGOS_COM_CALCULADORA_1RM.includes(post.slug)
         ? "onerm"
-        : null;
+        : ARTIGOS_COM_CALCULADORA_MACROS.includes(post.slug)
+          ? "macros"
+          : null;
   const calcSplit = qualCalc ? splitAtPrimeiraSecao(contentHtml) : null;
   const corpoRestante = calcSplit ? calcSplit.after : contentHtml;
 
@@ -241,8 +245,10 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraProteina placement={post.slug === "quanta-proteina-por-dia-para-ganhar-massa-muscular" ? "artigo-proteina-dia" : `artigo-${post.slug}`} />
                 ) : qualCalc === "deficit" ? (
                   <CalculadoraDeficit placement={post.slug} />
-                ) : (
+                ) : qualCalc === "onerm" ? (
                   <CalculadoraOneRM placement={post.slug} />
+                ) : (
+                  <CalculadoraMacros placement={post.slug} />
                 )}
               </div>
             </>
