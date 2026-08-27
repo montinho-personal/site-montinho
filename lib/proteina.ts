@@ -197,10 +197,28 @@ export const NOTA_FONTES =
  * O critério de entrada não é "fala de proteína" — é "o leitor chegou com a
  * pergunta que a calculadora responde". Artigo de whey fala de proteína, mas
  * a dúvida lá é sobre o suplemento, não sobre a meta diária.
+ *
+ * Ficaram de fora, por decisão e não por esquecimento:
+ *
+ * - Timing (melhor horário, antes de dormir), fonte (vegetal vs animal) e
+ *   suplementos (whey, barrinha, shake): a pergunta do leitor ali é "quando",
+ *   "qual" ou "vale a pena" — não "quantos gramas".
+ * - "Proteína demais faz mal": a dúvida é de segurança. A calculadora mostra
+ *   uma faixa de referência, não um teto seguro; responderia outra pergunta.
+ * - Os artigos de GLP-1 (Mounjaro, Retatrutida, Ozempic): o título deles é
+ *   literalmente a pergunta da calculadora, e ainda assim não entram. A conta
+ *   aqui é peso corporal × g/kg, e o Morton foi feito com pessoas treinadas —
+ *   não com pessoas em déficit calórico grande e obesidade, onde a
+ *   recomendação usa peso ajustado. Uma pessoa de 130 kg veria "286 g/dia",
+ *   número que o próprio artigo não recomenda. É justamente o público em que
+ *   um número errado pesa mais, então a explicação em texto serve melhor.
  */
 export const ARTIGOS_COM_CALCULADORA: string[] = [
   "quanta-proteina-por-dia-para-ganhar-massa-muscular",
   "quanto-de-proteina-consumir",
   "alimentos-ricos-em-proteina",
+  "proteina-em-alimentos-tabela-completa",
   "cardapio-para-hipertrofia",
+  "cardapio-semanal-ganho-de-massa-muscular",
+  "cardapio-semanal-emagrecer-com-musculo",
 ];

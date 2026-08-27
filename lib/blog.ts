@@ -45678,6 +45678,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     readTime: "15 min",
     author: "Montinho",
     date: "2026-06-28",
+    updatedAt: "2026-08-27",
     faq: [
       { question: "Quantas calorias devo comer para emagrecer sem perder músculo?", answer: "O déficit ideal é de 300 a 500 kcal abaixo do seu gasto calórico total diário. Para manter músculo, a ingestão proteica deve ser de 1,6 a 2,2g por kg de peso corporal — esse é o fator mais crítico." },
       { question: "Posso comer carboidrato durante o emagrecimento?", answer: "Sim. O carboidrato é fundamental para manter a performance no treino, que por sua vez preserva o músculo. Priorize carboidratos antes e depois do treino e reduza nas refeições distantes do treino." },
@@ -45819,6 +45820,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     readTime: "14 min",
     author: "Montinho",
     date: "2026-06-28",
+    updatedAt: "2026-08-27",
     faq: [
       { question: "Quantas calorias comer por dia para ganhar massa muscular?", answer: "Para ganho de massa, some 200 a 400 kcal ao seu gasto calórico total diário. Superávits maiores aumentam o ganho de gordura sem acelerar o ganho de músculo, já que o corpo tem capacidade máxima de síntese proteica diária." },
       { question: "Quanto de proteína comer por dia para hipertrofia?", answer: "O consenso científico é de 1,6 a 2,2g de proteína por kg de peso corporal por dia. Para 80kg, isso significa 128 a 176g de proteína diária, distribuídas em todas as refeições." },
@@ -61294,7 +61296,7 @@ Clara de ovo e peito de frango são os mais eficientes: alta proteína, baixa ca
 A "janela anabólica" de 30 minutos pós-treino é um mito superado. O total de proteína no dia é mais importante que o timing. Dito isso, consumir proteína dentro de 1-2h pós-treino é uma boa prática.`,
     category: "Hipertrofia",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
+    updatedAt: "2026-08-27",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["proteína em alimentos", "tabela de proteínas", "alimentos proteicos", "nutrição musculação", "meta de proteína"],
