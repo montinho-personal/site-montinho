@@ -19,6 +19,7 @@
 import { getBlogPost, SITE_URL } from "@/lib/blog";
 import { search, termRarity, canonicalizeQuery } from "@/lib/search";
 import { classify } from "@/lib/cta/classify";
+import { BORDOES } from "@/lib/bordoes";
 
 export interface KnowledgeChunk {
   articleId: string; // slug ou id do doc de negócio
@@ -97,6 +98,38 @@ const BUSINESS_DOCS: BusinessDoc[] = [
     keywords: ["contato", "whatsapp", "falar", "telefone", "mensagem", "instagram"],
     text:
       "O canal principal de contato é o WhatsApp +55 (11) 98106-3409, disponível pelos botões do site. Também é possível conhecer o trabalho pelo Instagram @montinhopersonal. A conversa inicial é gratuita e sem compromisso.",
+  },
+  {
+    /**
+     * O chalalá aparece em várias páginas do site, mas em nenhum artigo do
+     * blog — e a recuperação só olhava o acervo. Quem perguntava "o que é
+     * chalalá" recebia "não encontrei conteúdo suficiente", o que é o pior
+     * resultado possível: a palavra é do Montinho, está por todo lado, e a
+     * ferramenta dizia não conhecer.
+     *
+     * O texto vem de lib/bordoes.ts, que é a fonte canônica das duas frases.
+     * Escrever a definição de novo aqui criaria a chance de as duas
+     * divergirem — o mesmo erro da tabela de proteína.
+     */
+    id: "bordao-chalala",
+    /**
+     * O título carrega as duas frases inteiras de propósito. A âncora
+     * anti-fora-de-domínio exige que os termos distintivos da pergunta
+     * apareçam nos METADADOS da fonte — com o título só em "chalalá", a
+     * pergunta sobre a segunda frase achava o documento e era descartada na
+     * âncora por falta de cobertura. O título também traz a condição junto,
+     * porque ele aparece como fonte na resposta — e a regra do bordão vale
+     * para tudo que o leitor vê.
+     */
+    title: 'Os bordões do Montinho: chalalá e "é impossível dar errado quando você faz o que precisa"',
+    path: "/minha-historia",
+    heading: "O que é chalalá e quando é impossível dar errado",
+    keywords: [
+      "chalala", "chalalá", "bordao", "bordão", "girio",
+      "gíria", "expressao", "expressão", "significa", "significado", "frase",
+      "impossivel dar errado", "impossível dar errado",
+    ],
+    text: `Chalalá é o bordão do Montinho: ${BORDOES.chalala}. É aquele detalhe que você acrescenta depois que o básico já está de pé — o treino que você faz, a comida que você come, o sono que você dorme. ${BORDOES.chalalaNaoEhSegredo} Por isso ele nunca aparece como atalho ou fórmula: chalalá é acréscimo, não substituto do trabalho. A outra frase que anda junto é "${BORDOES.impossivelCompleta}" — ela vem sempre com a condição na frente, porque a promessa não é que dá certo de qualquer jeito, e sim que dá certo quando o que precisa ser feito é feito. As duas juntas: "${BORDOES.duplaCompleta}"`,
   },
 ];
 

@@ -58,6 +58,7 @@ export default function AskMontinho({
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const listRef = useRef<HTMLDivElement>(null);
+  const caixaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const startedRef = useRef(false);
   const lastQuestionRef = useRef("");
@@ -81,9 +82,39 @@ export default function AskMontinho({
     return () => window.clearTimeout(id);
   }, []);
 
+  /**
+   * Rolagem da conversa — e por que ela não usa scroll suave.
+   *
+   * O `scrollTo({ behavior: "smooth" })` num container interno propaga para
+   * os ancestrais em navegador mobile: ao mandar a pergunta, a página inteira
+   * descia e o box saía da tela, deixando a pessoa perdida no meio do site.
+   * Atribuir scrollTop direto move só o container, sem envolver a janela.
+   *
+   * Duas proteções a mais:
+   *
+   * 1. Só acompanha o fim da conversa se a pessoa JÁ estava perto do fim. Se
+   *    ela subiu para reler uma resposta antiga, puxar a rolagem seria
+   *    arrancar o texto da mão dela.
+   * 2. A posição da janela é restaurada depois do paint. Quando o conteúdo
+   *    cresce, o navegador tenta manter o campo focado visível e desloca a
+   *    página; guardar e devolver o scrollY neutraliza esse empurrão.
+   */
   useEffect(() => {
     if (messages.length) saveJSON(STORAGE_KEY, messages.slice(-12));
-    listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: "smooth" });
+
+    const lista = listRef.current;
+    if (!lista) return;
+
+    const distanciaDoFim = lista.scrollHeight - lista.scrollTop - lista.clientHeight;
+    const estavaNoFim = distanciaDoFim < 120;
+    const scrollDaJanela = window.scrollY;
+
+    if (estavaNoFim) lista.scrollTop = lista.scrollHeight;
+
+    const id = window.requestAnimationFrame(() => {
+      if (window.scrollY !== scrollDaJanela) window.scrollTo({ top: scrollDaJanela });
+    });
+    return () => window.cancelAnimationFrame(id);
   }, [messages, loading]);
 
   const ask = useCallback(
@@ -172,10 +203,40 @@ export default function AskMontinho({
     });
   };
 
+  /**
+   * Traz a ferramenta de volta para a tela depois de perguntar.
+   *
+   * No celular, mandar a pergunta mexe no viewport: o teclado abre ou fecha,
+   * a altura visível muda e o navegador reposiciona a página — o resultado
+   * era a caixa sair da tela e a pessoa se perder no meio do site.
+   *
+   * Em vez de tentar adivinhar qual dos gatilhos disparou, a ferramenta
+   * simplesmente se recoloca em vista. É mais robusto do que combater cada
+   * causa: qualquer que seja o empurrão, o destino final é o mesmo.
+   *
+   * O atraso existe porque o navegador só reposiciona depois de fechar o
+   * teclado, e ancorar antes disso seria desfeito no quadro seguinte.
+   */
+  const ancoraCaixa = useCallback(() => {
+    const executa = () => {
+      const caixa = caixaRef.current;
+      if (!caixa) return;
+      const r = caixa.getBoundingClientRect();
+      const alturaVisivel = window.visualViewport?.height ?? window.innerHeight;
+      /** Só age se a caixa saiu (ou quase saiu) da área visível. */
+      if (r.top < 0 || r.top > alturaVisivel - 120) {
+        caixa.scrollIntoView({ block: "nearest" });
+      }
+    };
+    executa();
+    window.setTimeout(executa, 350);
+  }, []);
+
   const onKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing) {
       e.preventDefault();
       void ask(input);
+      ancoraCaixa();
     }
   };
 
@@ -219,7 +280,7 @@ export default function AskMontinho({
   };
 
   return (
-    <div className="border border-white/20 bg-white/[0.03]">
+    <div ref={caixaRef} className="border border-white/20 bg-white/[0.03]">
       {/* Cabeçalho com transparência */}
       <div className="px-5 sm:px-8 pt-6 pb-4 border-b border-white/10">
         <p
@@ -351,7 +412,7 @@ export default function AskMontinho({
       {/* Entrada */}
       <div className="px-5 sm:px-8 py-4 border-t border-white/10">
         <form
-          onSubmit={(e) => { e.preventDefault(); void ask(input); }}
+          onSubmit={(e) => { e.preventDefault(); void ask(input); ancoraCaixa(); }}
           className="flex gap-3 items-end"
         >
           <label htmlFor="ask-input" className="sr-only">
