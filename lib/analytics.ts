@@ -99,6 +99,23 @@ export type AnalyticsEvent =
   | "macro_protein_calculator_click"
   | "macro_article_click"
   | "macro_cta_click"
+
+  /**
+   * Calculadora de volume de treino. A ficha de treino inteira é dado
+   * pessoal de desempenho — nada dela vai para o Analytics. Só o
+   * comportamento: viu, começou, adicionou exercício, concluiu.
+   */
+  | "training_volume_view"
+  | "training_volume_start"
+  | "training_volume_exercise_add"
+  | "training_volume_complete"
+  | "training_volume_secondary_toggle"
+  | "training_volume_muscle_open"
+  | "training_volume_methodology_open"
+  | "training_volume_share"
+  | "training_volume_1rm_click"
+  | "training_volume_article_click"
+  | "training_volume_cta_click"
   | "ask_montinho_feedback_positive"
   | "ask_montinho_feedback_negative"
   | "ask_montinho_embed_submit"

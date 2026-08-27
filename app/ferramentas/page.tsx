@@ -43,7 +43,8 @@ const itemListSchema = {
     { "@type": "ListItem", position: 6, name: "Calculadora de Déficit Calórico", url: `${SITE_URL}/ferramentas/calculadora-deficit-calorico` },
     { "@type": "ListItem", position: 7, name: "Calculadora de 1RM", url: `${SITE_URL}/ferramentas/calculadora-1rm` },
     { "@type": "ListItem", position: 8, name: "Calculadora de Macros", url: `${SITE_URL}/ferramentas/calculadora-macros` },
-    { "@type": "ListItem", position: 9, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: 9, name: "Calculadora de Volume de Treino", url: `${SITE_URL}/ferramentas/calculadora-volume-treino` },
+    { "@type": "ListItem", position: 10, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -114,6 +115,15 @@ const FERRAMENTAS = [
     texto:
       "Informe suas calorias e seu peso para calcular proteínas, carboidratos e gorduras. Ao trocar a referência de proteína ou o percentual de gordura, o carboidrato se ajusta na hora — mostrando que os três dividem o mesmo orçamento.",
     quando: "Use depois de já ter uma meta calórica. Se ainda não tem, comece pela calculadora de déficit.",
+  },
+  {
+    href: "/ferramentas/calculadora-volume-treino",
+    nome: "Calculadora de Volume de Treino",
+    pergunta: "Meu treino está bem distribuído?",
+    tempo: "monte sua semana · sem cadastro",
+    texto:
+      "Adicione os dias e os exercícios que você faz e a ferramenta identifica os músculos, soma as séries semanais de cada grupo, mostra em quantas sessões ele é treinado e onde o volume está concentrado.",
+    quando: "Use quando quiser saber quantas séries por músculo você realmente faz — sem precisar contar na mão.",
   },
   {
     href: "/pergunte-ao-montinho",

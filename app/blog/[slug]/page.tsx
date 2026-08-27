@@ -18,6 +18,9 @@ import { ARTIGOS_COM_CALCULADORA_DEFICIT } from "@/lib/calorias";
 import CalculadoraDeficit from "@/components/calorias/CalculadoraDeficit";
 import { ARTIGOS_COM_CALCULADORA_1RM, ARTIGOS_COM_LINK_1RM } from "@/lib/onerm";
 import { ARTIGOS_COM_CALCULADORA_MACROS } from "@/lib/macros";
+import { ARTIGOS_COM_CALCULADORA_VOLUME, ARTIGOS_COM_LINK_VOLUME } from "@/lib/treino/volume";
+import CalculadoraVolume from "@/components/volume/CalculadoraVolume";
+import LinkFerramentaVolume from "@/components/volume/LinkFerramentaVolume";
 import CalculadoraMacros from "@/components/macros/CalculadoraMacros";
 import CalculadoraOneRM from "@/components/onerm/CalculadoraOneRM";
 import LinkFerramenta1RM from "@/components/onerm/LinkFerramenta1RM";
@@ -103,7 +106,9 @@ export default async function BlogPost({ params }: Props) {
         ? "onerm"
         : ARTIGOS_COM_CALCULADORA_MACROS.includes(post.slug)
           ? "macros"
-          : null;
+          : ARTIGOS_COM_CALCULADORA_VOLUME.includes(post.slug)
+            ? "volume"
+            : null;
   const calcSplit = qualCalc ? splitAtPrimeiraSecao(contentHtml) : null;
   const corpoRestante = calcSplit ? calcSplit.after : contentHtml;
 
@@ -247,8 +252,10 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraDeficit placement={post.slug} />
                 ) : qualCalc === "onerm" ? (
                   <CalculadoraOneRM placement={post.slug} />
-                ) : (
+                ) : qualCalc === "macros" ? (
                   <CalculadoraMacros placement={post.slug} />
+                ) : (
+                  <CalculadoraVolume placement={post.slug} />
                 )}
               </div>
             </>
@@ -275,6 +282,7 @@ export default async function BlogPost({ params }: Props) {
               dos grandes exercícios — a ferramenta inteira ali atrapalharia a
               leitura, mas quem terminou de ler quer saber a própria carga. */}
           {ARTIGOS_COM_LINK_1RM.includes(post.slug) && <LinkFerramenta1RM slug={post.slug} />}
+          {ARTIGOS_COM_LINK_VOLUME.includes(post.slug) && <LinkFerramentaVolume slug={post.slug} />}
 
           {/* Video */}
           {post.slug === "como-prevenir-lesoes-no-treino" && (
