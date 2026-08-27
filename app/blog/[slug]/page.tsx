@@ -16,6 +16,9 @@ import { ARTIGOS_COM_CALCULADORA } from "@/lib/proteina";
 import CalculadoraProteina from "@/components/proteina/CalculadoraProteina";
 import { ARTIGOS_COM_CALCULADORA_DEFICIT } from "@/lib/calorias";
 import CalculadoraDeficit from "@/components/calorias/CalculadoraDeficit";
+import { ARTIGOS_COM_CALCULADORA_1RM, ARTIGOS_COM_LINK_1RM } from "@/lib/onerm";
+import CalculadoraOneRM from "@/components/onerm/CalculadoraOneRM";
+import LinkFerramenta1RM from "@/components/onerm/LinkFerramenta1RM";
 import NotaMetodo from "@/components/filosofia/NotaMetodo";
 import { clusterRecebeNota } from "@/lib/filosofia";
 
@@ -94,7 +97,9 @@ export default async function BlogPost({ params }: Props) {
     ? "proteina"
     : ARTIGOS_COM_CALCULADORA_DEFICIT.includes(post.slug)
       ? "deficit"
-      : null;
+      : ARTIGOS_COM_CALCULADORA_1RM.includes(post.slug)
+        ? "onerm"
+        : null;
   const calcSplit = qualCalc ? splitAtPrimeiraSecao(contentHtml) : null;
   const corpoRestante = calcSplit ? calcSplit.after : contentHtml;
 
@@ -234,8 +239,10 @@ export default async function BlogPost({ params }: Props) {
               <div className="my-10">
                 {qualCalc === "proteina" ? (
                   <CalculadoraProteina placement={post.slug === "quanta-proteina-por-dia-para-ganhar-massa-muscular" ? "artigo-proteina-dia" : `artigo-${post.slug}`} />
-                ) : (
+                ) : qualCalc === "deficit" ? (
                   <CalculadoraDeficit placement={post.slug} />
+                ) : (
+                  <CalculadoraOneRM placement={post.slug} />
                 )}
               </div>
             </>
@@ -257,6 +264,11 @@ export default async function BlogPost({ params }: Props) {
             <div className="prose-blog" dangerouslySetInnerHTML={{ __html: corpoRestante }} />
           )}
           <ArticleLightbox />
+
+          {/* Link contextual para a calculadora de 1RM nos artigos de técnica
+              dos grandes exercícios — a ferramenta inteira ali atrapalharia a
+              leitura, mas quem terminou de ler quer saber a própria carga. */}
+          {ARTIGOS_COM_LINK_1RM.includes(post.slug) && <LinkFerramenta1RM slug={post.slug} />}
 
           {/* Video */}
           {post.slug === "como-prevenir-lesoes-no-treino" && (
