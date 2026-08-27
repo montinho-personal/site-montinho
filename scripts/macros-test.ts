@@ -205,14 +205,20 @@ ok("nenhuma chamada de rede", !/fetch\(|axios|XMLHttpRequest/.test(componente));
  * e existe só para a ponte vinda do déficit. Precisa ser lida e apagada na
  * mesma função — senão o número fica sobrando na sessão.
  */
-ok("a ponte usa sessionStorage e não a URL", /sessionStorage/.test(libSrc) && !/searchParams|useSearchParams/.test(componente));
+const ponteSrc = fs.readFileSync("lib/ferramentas/ponte.ts", "utf8");
+ok("a ponte usa sessionStorage e não a URL", /sessionStorage/.test(ponteSrc) && !/searchParams|useSearchParams/.test(componente));
 ok(
   "o valor é apagado assim que é consumido",
-  /removeItem\(CHAVE_KCAL\)/.test(libSrc),
-  "sem o removeItem, a caloria fica guardada na sessão sem necessidade"
+  /removeItem\(chave\)/.test(ponteSrc),
+  "sem o removeItem, o valor fica guardado na sessão sem necessidade"
+);
+ok(
+  "a mecânica da ponte está num lugar só",
+  !/sessionStorage/.test(libSrc),
+  "cada ferramenta com sua cópia de try/catch é como as regras divergem"
 );
 ok("o componente não grava nada por conta própria", !/setItem/.test(componente));
-ok("storage bloqueado não quebra a ferramenta", /catch\s*\{/.test(libSrc));
+ok("storage bloqueado não quebra a ferramenta", (ponteSrc.match(/catch\s*\{/g) ?? []).length >= 2);
 
 console.log("\n" + "=".repeat(64) + "\nACESSIBILIDADE E UX\n" + "=".repeat(64));
 

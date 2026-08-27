@@ -27,6 +27,7 @@ import {
   consomeKcalDeDeficit,
   dentroDoAMDR,
   formataNumero,
+  guardaPesoParaProteina,
   normalizaNumero,
   porRefeicao,
 } from "@/lib/macros";
@@ -468,7 +469,12 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
                 <li>
                   <Link
                     href="/ferramentas/calculadora-de-proteina"
-                    onClick={() => trackEvent("macro_protein_calculator_click", { placement })}
+                    onClick={() => {
+                      /* Leva o peso já digitado — a outra ferramenta pede
+                         exatamente o mesmo dado, e redigitar é atrito puro. */
+                      if (peso !== null) guardaPesoParaProteina(peso);
+                      trackEvent("macro_protein_calculator_click", { placement });
+                    }}
                     className="text-gray-300 hover:text-white transition-colors text-sm underline underline-offset-4 decoration-1"
                     style={{ textDecorationColor: "#BA9E50" }}
                   >

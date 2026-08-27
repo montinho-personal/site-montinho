@@ -228,7 +228,12 @@ ok(
   chamadas.filter((c) => SENSIVEL.test(c)).join(" | ")
 );
 ok("nenhuma chamada de rede", !/fetch\(|axios|XMLHttpRequest/.test(componente));
-ok("nada é gravado em storage", !/localStorage|sessionStorage/.test(componente));
+/**
+ * O 1RM passou a LER o exercício vindo da Calculadora de Volume, mas não
+ * grava nada — e nunca fala com o storage direto, só pela ponte.
+ */
+ok("não grava nada em storage", !/setItem|localStorage/.test(componente));
+ok("só fala com storage pela ponte", !/sessionStorage/.test(componente) && /consome\(PONTE\.exercicio\)/.test(componente));
 ok("copiar só acontece por ação explícita", /onClick=\{copiar\}/.test(componente));
 
 console.log("\n" + "=".repeat(64) + "\nACESSIBILIDADE E UX\n" + "=".repeat(64));

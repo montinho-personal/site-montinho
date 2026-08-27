@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import { PONTE, consome } from "@/lib/ferramentas/ponte";
 import {
   ANILHAS_PADRAO,
   AVISO_MUITAS_REPS,
@@ -78,6 +79,21 @@ export default function CalculadoraOneRM({
 
   const raiz = useRef<HTMLDivElement>(null);
   const jaUsou = useRef(false);
+
+  /**
+   * Exercício vindo da Calculadora de Volume. Como o campo aqui é só
+   * contexto (não entra na conta), aceitamos qualquer nome da base de 120 —
+   * o select ganha uma opção extra em vez de forçar o nome a caber numa
+   * lista de seis.
+   */
+  const [exercicioExterno, setExercicioExterno] = useState<string | null>(null);
+  useEffect(() => {
+    const nome = consome(PONTE.exercicio);
+    if (nome) {
+      setExercicioExterno(nome);
+      setExercicio(nome);
+    }
+  }, []);
 
   const carga = useMemo(() => normalizaCarga(cargaTexto), [cargaTexto]);
   const reps = useMemo(() => normalizaReps(repsTexto), [repsTexto]);
@@ -225,6 +241,11 @@ export default function CalculadoraOneRM({
         <label htmlFor={`ex-${placement}`} className={rotulo}>
           Exercício <span className="text-gray-500 font-normal">(opcional)</span>
         </label>
+        {exercicioExterno && (
+          <p className="text-gray-400 text-sm mb-2 border-l-2 pl-3" style={{ borderColor: "#BA9E50" }}>
+            Exercício trazido da sua análise de volume.
+          </p>
+        )}
         <select
           id={`ex-${placement}`}
           value={exercicio}
@@ -232,6 +253,9 @@ export default function CalculadoraOneRM({
           className="w-full sm:w-auto bg-black border border-white/25 focus:border-[#BA9E50] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#BA9E50] text-gray-200 text-base px-4 py-3 min-h-[48px]"
         >
           <option value="">Não informar</option>
+          {exercicioExterno && !EXERCICIOS.includes(exercicioExterno as (typeof EXERCICIOS)[number]) && (
+            <option value={exercicioExterno}>{exercicioExterno}</option>
+          )}
           {EXERCICIOS.map((e) => (
             <option key={e} value={e}>
               {e}

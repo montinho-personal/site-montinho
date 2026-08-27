@@ -250,7 +250,14 @@ ok(
   chamadas.filter((c) => /peso|texto|total|gramas|kg/i.test(c)).join(" | ")
 );
 ok("nenhuma chamada de rede no componente", !/fetch\(|axios|XMLHttpRequest/.test(componente));
-ok("nada é gravado em storage", !/localStorage|sessionStorage\.setItem\(\s*["']peso/i.test(componente.replace(/trackOncePerSession/g, "")));
+/**
+ * A calculadora passou a LER o peso vindo dos macros (ver
+ * lib/ferramentas/ponte.ts), mas continua sem gravar nada. A regra ficou
+ * mais precisa em vez de ser removida: nenhuma gravação, e nenhum acesso
+ * direto ao storage — só pela ponte, que apaga o valor ao ler.
+ */
+ok("não grava nada em storage", !/setItem|localStorage/.test(componente));
+ok("só fala com storage pela ponte", !/sessionStorage/.test(componente) && /consomeNumero\(PONTE\.peso/.test(componente));
 
 console.log("\n" + "=".repeat(60) + "\nACESSIBILIDADE E UX\n" + "=".repeat(60));
 

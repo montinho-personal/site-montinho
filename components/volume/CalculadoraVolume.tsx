@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import { PONTE, guarda } from "@/lib/ferramentas/ponte";
 import { DIAS, MUSCULOS, nomeMusculo, type Dia, type MusculoId } from "@/lib/treino/musculos";
 import { EXERCICIO_POR_ID, buscaExercicios } from "@/lib/treino/exercicios";
 import {
@@ -615,12 +616,30 @@ function MusculoCard({
                 {diretos.map((e, i) => (
                   <li key={i} className="text-gray-300 text-sm flex justify-between gap-3">
                     <span>
-                      {e.nome} <span className="text-gray-500">· {e.dia}</span>
+                      {/* O nome leva para o 1RM já preenchido: aqui a pessoa
+                          está analisando, não montando — é o momento em que a
+                          pergunta "e com quanto peso?" aparece sozinha. */}
+                      <Link
+                        href="/ferramentas/calculadora-1rm"
+                        onClick={() => {
+                          guarda(PONTE.exercicio, e.nome);
+                          trackEvent("training_volume_1rm_click", { placement: "detalhe-musculo" });
+                        }}
+                        className="underline underline-offset-4 decoration-1 hover:text-white transition-colors"
+                        style={{ textDecorationColor: "#BA9E50" }}
+                        title={`Estimar 1RM de ${e.nome}`}
+                      >
+                        {e.nome}
+                      </Link>{" "}
+                      <span className="text-gray-500">· {e.dia}</span>
                     </span>
                     <span className="text-white font-medium tabular-nums">{e.series}</span>
                   </li>
                 ))}
               </ul>
+              <p className="text-gray-500 text-xs mt-2">
+                Toque no nome de um exercício para estimar o 1RM dele.
+              </p>
             </div>
           )}
 

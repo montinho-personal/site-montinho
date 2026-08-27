@@ -3,6 +3,7 @@
 import { useMemo, useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import { PONTE, consomeNumero } from "@/lib/ferramentas/ponte";
 import {
   ALIMENTOS,
   FAIXAS,
@@ -44,6 +45,19 @@ export default function CalculadoraProteina({
   const [mostrarAlimentos, setMostrarAlimentos] = useState(false);
   const raiz = useRef<HTMLDivElement>(null);
   const jaUsou = useRef(false);
+
+  /**
+   * Peso vindo da Calculadora de Macros, quando a pessoa chegou por lá. É
+   * consumido uma vez e some — ver lib/ferramentas/ponte.ts.
+   */
+  const [veioDeMacros, setVeioDeMacros] = useState(false);
+  useEffect(() => {
+    const p = consomeNumero(PONTE.peso, PESO_MIN, PESO_MAX);
+    if (p !== null) {
+      setTexto(String(p).replace(".", ","));
+      setVeioDeMacros(true);
+    }
+  }, []);
 
   const peso = useMemo(() => parsePeso(texto), [texto]);
   const foraDoLimite = peso !== null && (peso < PESO_MIN || peso > PESO_MAX);
@@ -119,12 +133,20 @@ export default function CalculadoraProteina({
             autoComplete="off"
             placeholder="80"
             value={texto}
-            onChange={(e) => setTexto(e.target.value)}
+            onChange={(e) => {
+              setTexto(e.target.value);
+              setVeioDeMacros(false);
+            }}
             className="w-32 bg-black border border-white/25 focus:border-[#BA9E50] text-white text-2xl font-bold px-4 py-3 outline-none transition-colors"
             aria-describedby={`peso-ajuda-${placement}`}
           />
           <span className="text-gray-300 text-lg">kg</span>
         </div>
+        {veioDeMacros && (
+          <p className="text-gray-400 text-sm mt-2 border-l-2 pl-3" style={{ borderColor: "#BA9E50" }}>
+            Peso trazido da sua calculadora de macros. Pode alterar à vontade.
+          </p>
+        )}
         <p id={`peso-ajuda-${placement}`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
           {texto.trim() === ""
             ? "Exemplo: para 70 kg, 1,6 g/kg corresponde a 112 g de proteína por dia."
