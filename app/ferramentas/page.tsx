@@ -41,7 +41,8 @@ const itemListSchema = {
     { "@type": "ListItem", position: 4, name: "Revisão Gratuita de Execução", url: `${SITE_URL}/revisao-de-execucao` },
     { "@type": "ListItem", position: 5, name: "Calculadora de Proteína", url: `${SITE_URL}/ferramentas/calculadora-de-proteina` },
     { "@type": "ListItem", position: 6, name: "Calculadora de Déficit Calórico", url: `${SITE_URL}/ferramentas/calculadora-deficit-calorico` },
-    { "@type": "ListItem", position: 7, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: 7, name: "Calculadora de 1RM", url: `${SITE_URL}/ferramentas/calculadora-1rm` },
+    { "@type": "ListItem", position: 8, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -94,6 +95,15 @@ const FERRAMENTAS = [
     texto:
       "Estime sua taxa metabólica, seu gasto diário e veja faixas de déficit de 10%, 15–20% e 25% a partir do seu peso, altura, idade e rotina — com a conta aberta, mostrando de onde vem cada número.",
     quando: "Use quando a dúvida é quantas calorias comer por dia. Seus dados não saem do navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-1rm",
+    nome: "Calculadora de 1RM",
+    pergunta: "Quanto colocar na barra?",
+    tempo: "10 segundos · sem cadastro",
+    texto:
+      "Informe uma carga e suas repetições para estimar seu 1RM, ver as cargas de 50% a 100% e descobrir exatamente quais anilhas colocar de cada lado da barra — considerando as que a sua academia tem.",
+    quando: "Use no meio do treino, entre uma série e outra. Não é preciso testar carga máxima.",
   },
   {
     href: "/pergunte-ao-montinho",

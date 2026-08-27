@@ -69,6 +69,20 @@ export type AnalyticsEvent =
   | "calorie_deficit_select"
   | "calorie_article_click"
   | "calorie_cta_click"
+
+  /**
+   * Calculadora de 1RM. Mesma regra: carga, repetições e o 1RM estimado são
+   * desempenho individual e NUNCA entram em parâmetro de evento. Não
+   * precisamos armazenar o quanto ninguém levanta para saber se a
+   * ferramenta é usada.
+   */
+  | "one_rm_calculator_view"
+  | "one_rm_calculator_use"
+  | "one_rm_percentage_select"
+  | "one_rm_plate_calculator_open"
+  | "one_rm_methodology_open"
+  | "one_rm_article_click"
+  | "one_rm_cta_click"
   | "ask_montinho_feedback_positive"
   | "ask_montinho_feedback_negative"
   | "ask_montinho_embed_submit"
