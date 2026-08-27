@@ -55,6 +55,20 @@ export type AnalyticsEvent =
   | "protein_food_examples_open"
   | "protein_article_click"
   | "protein_cta_click"
+
+  /**
+   * Calculadora de déficit calórico. Mesma regra de privacidade, e aqui ela
+   * pesa mais: peso, altura, idade e sexo juntos são dados corporais
+   * sensíveis. NADA disso — nem a TMB, nem o TDEE, nem a meta calculada —
+   * entra em parâmetro de evento. Só o comportamento anônimo.
+   */
+  | "calorie_calculator_view"
+  | "calorie_calculator_complete"
+  | "calorie_activity_help_open"
+  | "calorie_methodology_open"
+  | "calorie_deficit_select"
+  | "calorie_article_click"
+  | "calorie_cta_click"
   | "ask_montinho_feedback_positive"
   | "ask_montinho_feedback_negative"
   | "ask_montinho_embed_submit"

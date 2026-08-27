@@ -40,7 +40,8 @@ const itemListSchema = {
     { "@type": "ListItem", position: 3, name: "Pergunte ao Montinho", url: `${SITE_URL}/pergunte-ao-montinho` },
     { "@type": "ListItem", position: 4, name: "Revisão Gratuita de Execução", url: `${SITE_URL}/revisao-de-execucao` },
     { "@type": "ListItem", position: 5, name: "Calculadora de Proteína", url: `${SITE_URL}/ferramentas/calculadora-de-proteina` },
-    { "@type": "ListItem", position: 6, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: 6, name: "Calculadora de Déficit Calórico", url: `${SITE_URL}/ferramentas/calculadora-deficit-calorico` },
+    { "@type": "ListItem", position: 7, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -84,6 +85,15 @@ const FERRAMENTAS = [
     texto:
       "Informe seu peso e veja referências de 1,6, 2,0 e 2,2 g de proteína por kg por dia, com divisão por refeições e exemplos de alimentos com a fonte de cada valor.",
     quando: "Use quando quiser sair do achismo sobre a meta de proteína — o peso não sai do seu navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-deficit-calorico",
+    nome: "Calculadora de Déficit Calórico",
+    pergunta: "Quanto devo comer para emagrecer?",
+    tempo: "1 minuto · sem cadastro",
+    texto:
+      "Estime sua taxa metabólica, seu gasto diário e veja faixas de déficit de 10%, 15–20% e 25% a partir do seu peso, altura, idade e rotina — com a conta aberta, mostrando de onde vem cada número.",
+    quando: "Use quando a dúvida é quantas calorias comer por dia. Seus dados não saem do navegador.",
   },
   {
     href: "/pergunte-ao-montinho",

@@ -14,6 +14,8 @@ import { planCTAs } from "@/lib/cta/classify";
 import { splitAtNaturalBreak, splitAtPrimeiraSecao } from "@/lib/cta/placement";
 import { ARTIGOS_COM_CALCULADORA } from "@/lib/proteina";
 import CalculadoraProteina from "@/components/proteina/CalculadoraProteina";
+import { ARTIGOS_COM_CALCULADORA_DEFICIT } from "@/lib/calorias";
+import CalculadoraDeficit from "@/components/calorias/CalculadoraDeficit";
 import NotaMetodo from "@/components/filosofia/NotaMetodo";
 import { clusterRecebeNota } from "@/lib/filosofia";
 
@@ -84,9 +86,16 @@ export default async function BlogPost({ params }: Props) {
   // depois da primeira seção (a resposta direta), antes da explicação longa.
   // O CTA do meio continua existindo, mas passa a operar sobre o restante do
   // texto, para os dois nunca disputarem o mesmo corte.
-  const calcSplit = ARTIGOS_COM_CALCULADORA.includes(post.slug)
-    ? splitAtPrimeiraSecao(contentHtml)
-    : null;
+  // Uma ferramenta por artigo, no máximo. Os dois registros são disjuntos
+  // hoje, mas se algum dia se cruzarem, duas calculadoras no mesmo corte
+  // brigariam pelo mesmo espaço — a proteína tem precedência por ser a mais
+  // antiga e a mais linkada.
+  const qualCalc = ARTIGOS_COM_CALCULADORA.includes(post.slug)
+    ? "proteina"
+    : ARTIGOS_COM_CALCULADORA_DEFICIT.includes(post.slug)
+      ? "deficit"
+      : null;
+  const calcSplit = qualCalc ? splitAtPrimeiraSecao(contentHtml) : null;
   const corpoRestante = calcSplit ? calcSplit.after : contentHtml;
 
   // Só divide o HTML se houver um CTA de meio E um ponto de corte editorial
@@ -223,7 +232,11 @@ export default async function BlogPost({ params }: Props) {
             <>
               <div className="prose-blog" dangerouslySetInnerHTML={{ __html: calcSplit.before }} />
               <div className="my-10">
-                <CalculadoraProteina placement={post.slug === "quanta-proteina-por-dia-para-ganhar-massa-muscular" ? "artigo-proteina-dia" : `artigo-${post.slug}`} />
+                {qualCalc === "proteina" ? (
+                  <CalculadoraProteina placement={post.slug === "quanta-proteina-por-dia-para-ganhar-massa-muscular" ? "artigo-proteina-dia" : `artigo-${post.slug}`} />
+                ) : (
+                  <CalculadoraDeficit placement={post.slug} />
+                )}
               </div>
             </>
           )}
