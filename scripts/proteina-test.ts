@@ -9,6 +9,7 @@
  */
 
 import * as fs from "fs";
+import { marked } from "marked";
 import { blogPosts } from "../lib/blog";
 import {
   ALIMENTOS,
@@ -106,20 +107,44 @@ ok(
   `${ARTIGOS_COM_CALCULADORA.length} artigos — a regra é aparecer onde responde a dúvida, não onde a palavra aparece`
 );
 
-/** O corte cedo precisa funcionar em todos os artigos do registro. */
+/**
+ * O corte cedo precisa funcionar em todos os artigos do registro.
+ *
+ * Sobre o marked(): a página divide `marked(post.content)`, não o content
+ * cru. Este teste checava o cru e passava por acaso — os quatro primeiros
+ * artigos do registro são escritos em HTML, então tinham <h2> literal. O
+ * acervo tem artigos escritos em Markdown ("## Título"), e neles a checagem
+ * no cru dava zero <h2> e teria reprovado um artigo que funciona perfeito na
+ * página. Testar o que o usuário não vê é como não testar.
+ */
+const html = (s: string) => marked(blogPosts.find((x) => x.slug === s)!.content ?? "") as string;
+
 for (const s of ARTIGOS_COM_CALCULADORA) {
-  const p = blogPosts.find((x) => x.slug === s)!;
-  const corte = splitAtPrimeiraSecao(p.content ?? "");
+  const corte = splitAtPrimeiraSecao(html(s));
   ok(`corte cedo funciona em ${s}`, corte !== null && corte.before.length > 100);
 }
 
-/** A tabela existente do artigo principal NÃO pode ter sido removida. */
-const principal = blogPosts.find((p) => p.slug === "quanta-proteina-por-dia-para-ganhar-massa-muscular")!;
-ok(
-  "a tabela do artigo principal continua lá (a calculadora complementa, não substitui)",
-  /<table/.test(principal.content ?? ""),
-  "a tabela é o conteúdo indexável; removê-la trocaria SEO por caixa vazia"
-);
+/** A tabela existente NÃO pode ter sido removida em nenhum artigo do registro. */
+for (const s of ARTIGOS_COM_CALCULADORA) {
+  ok(
+    `a tabela continua lá em ${s} (a calculadora complementa, não substitui)`,
+    /<table/.test(html(s)),
+    "a tabela é o conteúdo indexável; removê-la trocaria SEO por caixa vazia"
+  );
+}
+
+/**
+ * Os artigos de GLP-1 ficam de fora por segurança, não por acaso — a conta é
+ * peso × g/kg e superestima para quem tem obesidade. Se alguém adicionar um
+ * deles sem rediscutir a conta, o teste avisa.
+ */
+for (const s of ["proteina-para-quem-usa-mounjaro", "proteina-para-quem-usa-retatrutida", "ozempic-faz-perder-musculo", "glp1-apetite-suprimido-proteina-musculo"]) {
+  ok(
+    `artigo de GLP-1 permanece fora do registro: ${s}`,
+    !ARTIGOS_COM_CALCULADORA.includes(s),
+    "peso corporal × g/kg superestima nesse público; ver a justificativa em lib/proteina.ts"
+  );
+}
 
 console.log("\n" + "=".repeat(60) + "\nPRIVACIDADE E EVENTOS\n" + "=".repeat(60));
 
