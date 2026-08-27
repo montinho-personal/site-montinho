@@ -19,6 +19,8 @@ import { metadata as meta404 } from "../app/not-found";
 import { metadata as metaFerramentas } from "../app/ferramentas/page";
 import { metadata as metaGuia } from "../app/academias-alphaville/page";
 import { metadata as metaQuiz } from "../app/academia-ideal-alphaville/page";
+import { metadata as metaContato } from "../app/contato/page";
+import { metadata as metaLgpd } from "../app/lgpd/page";
 
 let falhas = 0;
 const ok = (nome: string, cond: boolean, detalhe = "") => {
@@ -26,13 +28,21 @@ const ok = (nome: string, cond: boolean, detalhe = "") => {
   if (!cond) falhas++;
 };
 
-/** Texto efetivo do preview, considerando a herança do layout raiz. */
-function preview(m: Metadata): { titulo: string; descricao: string } {
-  const og = m.openGraph as { title?: string; description?: string } | undefined;
-  const tw = m.twitter as { title?: string; description?: string } | undefined;
+/**
+ * Texto efetivo do preview.
+ *
+ * Cuidado que custou caro: a versão anterior desta função caía em `m.title`
+ * quando `openGraph` não existia — e openGraph ausente É o bug. O teste
+ * passava exatamente no caso que existia para pegar, porque comparava o
+ * título da aba, que estava certo, em vez das tags og:*, que estavam herdadas
+ * da home. Agora só o que o leitor de link realmente lê conta.
+ */
+function preview(m: Metadata): { titulo: string; descricao: string; url: string } {
+  const og = m.openGraph as { title?: string; description?: string; url?: string } | undefined;
   return {
-    titulo: String(og?.title ?? tw?.title ?? m.title ?? ""),
-    descricao: String(og?.description ?? tw?.description ?? m.description ?? ""),
+    titulo: String(og?.title ?? ""),
+    descricao: String(og?.description ?? ""),
+    url: String(og?.url ?? ""),
   };
 }
 
@@ -61,12 +71,18 @@ const paginas: [string, Metadata][] = [
   ["/ferramentas", metaFerramentas],
   ["/academias-alphaville", metaGuia],
   ["/academia-ideal-alphaville", metaQuiz],
+  ["/contato", metaContato],
+  ["/lgpd", metaLgpd],
 ];
 
 for (const [nome, m] of paginas) {
   const p = preview(m);
-  ok(`${nome}: título diferente do da home`, p.titulo !== home.titulo, `atual: "${p.titulo}"`);
-  ok(`${nome}: descrição diferente da home`, p.descricao !== home.descricao);
+  // A checagem que importa: sem bloco próprio, as tags og:* da home passam
+  // inteiras — incluindo o og:url, que aponta o card para a raiz do site.
+  ok(`${nome}: declara openGraph próprio`, !!m.openGraph, "sem isso o card mostra a home");
+  ok(`${nome}: título diferente do da home`, !!p.titulo && p.titulo !== home.titulo, `atual: "${p.titulo}"`);
+  ok(`${nome}: descrição diferente da home`, !!p.descricao && p.descricao !== home.descricao);
+  ok(`${nome}: og:url aponta para a própria página`, p.url.endsWith(nome), `atual: "${p.url}"`);
   ok(`${nome}: tem canonical`, !!(m.alternates as { canonical?: string } | undefined)?.canonical);
 }
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/blog";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -8,6 +9,21 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   alternates: {
     canonical: "https://www.montinhopersonal.com.br/lgpd",
+  },
+  openGraph: {
+    title: "Política de Privacidade | Montinho Personal Trainer",
+    description:
+      "Como os seus dados são tratados neste site: o que é coletado, para quê, por quanto tempo e como solicitar exclusão.",
+    url: `${SITE_URL}/lgpd`,
+    type: "website",
+    images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Política de Privacidade | Montinho Personal Trainer",
+    description:
+      "Como os seus dados são tratados neste site: o que é coletado, para quê, por quanto tempo e como solicitar exclusão.",
+    images: [`${SITE_URL}/og-image.jpg`],
   },
 };
 
