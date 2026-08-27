@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { marked } from "marked";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
+import PreferredSourceCTA from "@/components/google/PreferredSourceCTA";
 import { getBlogPost, getRelatedPosts, getPostCoverImage, blogPosts, SITE_URL } from "@/lib/blog";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import ArticleReadTracker from "@/components/analytics/ArticleReadTracker";
@@ -311,6 +312,15 @@ export default async function BlogPost({ params }: Props) {
                 .
               </p>
             </div>
+          </div>
+
+          {/* Fontes preferidas do Google.
+              Vem DEPOIS do CTA comercial de propósito. Retenção e conversão
+              têm objetivos diferentes, e quando disputam o mesmo espaço quem
+              perde é a conversão. A hierarquia aqui é visual, não só verbal:
+              o CTA comercial é uma caixa; este é uma linha. */}
+          <div className="mt-10">
+            <PreferredSourceCTA placement="article_end" pageType="article" />
           </div>
         </div>
       </article>

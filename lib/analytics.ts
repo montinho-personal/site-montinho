@@ -35,6 +35,15 @@ export type AnalyticsEvent =
   | "ask_montinho_whatsapp_click"
   | "ask_montinho_no_answer"
   | "ask_montinho_error"
+
+  /**
+   * Fontes preferidas do Google. Só existem dois eventos, e a ausência de um
+   * terceiro é deliberada: o site NÃO recebe confirmação de que a pessoa
+   * concluiu a seleção do lado do Google. Um evento chamado
+   * "preferred_source_added" seria dado inventado.
+   */
+  | "preferred_source_cta_view"
+  | "preferred_source_cta_interaction"
   | "ask_montinho_feedback_positive"
   | "ask_montinho_feedback_negative"
   | "ask_montinho_embed_submit"
