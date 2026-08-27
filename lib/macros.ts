@@ -21,6 +21,7 @@
  */
 
 import { FAIXAS, type FaixaProteina } from "./proteina";
+import { PONTE, consomeNumero, guarda } from "./ferramentas/ponte";
 
 // ─── Fonte única de verdade compartilhada ────────────────────────────────────
 
@@ -219,39 +220,21 @@ export function dentroDoAMDR(macro: "proteina" | "carboidrato" | "gordura", perc
 // ─── Integração com a Calculadora de Déficit ─────────────────────────────────
 
 /**
- * Chave da passagem de calorias entre as duas ferramentas.
- *
- * Usamos sessionStorage e NÃO parâmetro de URL de propósito: uma URL com
- * "?kcal=2150" é copiada, colada, compartilhada e cai em log de servidor e
- * de referrer. O sessionStorage fica só naquela aba, naquele navegador,
- * morre quando a aba fecha, nunca é enviado a lugar nenhum — e a
- * calculadora de macros apaga o valor assim que o usa, para o número não
- * ficar sobrando na sessão.
- *
- * É a única coisa que qualquer das ferramentas grava, e existe só porque a
- * alternativa (a pessoa decorar e redigitar o número) é pior.
+ * A mecânica da ponte mora em lib/ferramentas/ponte.ts, compartilhada por
+ * todas as ferramentas. Aqui ficam só os nomes específicos desta travessia,
+ * com os limites de validação que valem para calorias.
  */
-export const CHAVE_KCAL = "montinho:macros:kcal";
-
 export function guardaKcalParaMacros(kcal: number): void {
-  try {
-    sessionStorage.setItem(CHAVE_KCAL, String(Math.round(kcal)));
-  } catch {
-    /* modo privado ou storage bloqueado: a integração some, a ferramenta continua. */
-  }
+  guarda(PONTE.kcal, Math.round(kcal));
 }
 
-/** Lê e já apaga — o valor serve para preencher o campo uma vez. */
 export function consomeKcalDeDeficit(): number | null {
-  try {
-    const v = sessionStorage.getItem(CHAVE_KCAL);
-    if (!v) return null;
-    sessionStorage.removeItem(CHAVE_KCAL);
-    const n = Number(v);
-    return Number.isFinite(n) && n >= KCAL_MIN && n <= KCAL_MAX ? n : null;
-  } catch {
-    return null;
-  }
+  return consomeNumero(PONTE.kcal, KCAL_MIN, KCAL_MAX);
+}
+
+/** Macros → Proteína: leva o peso já informado. */
+export function guardaPesoParaProteina(peso: number): void {
+  guarda(PONTE.peso, peso);
 }
 
 // ─── Textos ──────────────────────────────────────────────────────────────────
