@@ -295,6 +295,35 @@ export function resumo(dias: DiaTreino[], volumes: VolumeMusculo[]): ResumoTrein
 // ─── Fontes ──────────────────────────────────────────────────────────────────
 
 export const FONTES = {
+  /**
+   * A evidência de que a resposta é MUITO individual. Hubal et al. treinaram
+   * 585 pessoas com o mesmo programa por 12 semanas e mediram por ressonância:
+   * a variação de tamanho do músculo foi de −2% a +59%. Mesmo estímulo, mesma
+   * duração, respostas completamente diferentes.
+   *
+   * É a citação mais importante desta ferramenta. Sem ela, qualquer faixa de
+   * volume vira promessa; com ela, fica claro que a faixa é o ponto de
+   * partida e o corpo da pessoa é o juiz.
+   */
+  hubal: {
+    rotulo: "Hubal et al., Medicine & Science in Sports & Exercise (2005)",
+    url: "https://pubmed.ncbi.nlm.nih.gov/15947721/",
+    resumo:
+      "585 pessoas treinaram o mesmo programa por 12 semanas. O ganho de tamanho do músculo variou de −2% a +59% entre os participantes — algumas praticamente sem mudança, outras com ganho enorme, fazendo exatamente o mesmo treino.",
+  },
+  /**
+   * Proximidade da falha. A leitura tem que ser precisa nos dois sentidos:
+   * séries longe da falha não entregam o mesmo estímulo, MAS a falha absoluta
+   * não se mostrou superior. Refalo et al. sugerem inclusive relação não
+   * linear. Dizer "vá até a falha sempre" seria tão errado quanto ignorar o
+   * esforço.
+   */
+  refalo: {
+    rotulo: "Refalo et al., Sports Medicine (2023) e meta-regressões (2024)",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36334240/",
+    resumo:
+      "Revisões sistemáticas com meta-análise sobre proximidade da falha. Não encontraram evidência de que treinar até a falha momentânea seja superior ao treino sem falha para hipertrofia, sugerindo uma relação não linear — o que importa é a série ser desafiadora, não necessariamente terminar em falha.",
+  },
   acsm: {
     rotulo:
       "American College of Sports Medicine. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews (Position Stand, 2026)",
@@ -313,6 +342,35 @@ export const FONTES = {
 
 export const NOTA_VOLUME_NAO_E_TUDO =
   "Volume é apenas uma das variáveis do treinamento. Carga, esforço, progressão, escolha de exercício, frequência, amplitude, recuperação e execução também influenciam o resultado.";
+
+/**
+ * O aviso mais importante da ferramenta, e por isso ele aparece na tela e
+ * não escondido num accordion.
+ *
+ * Toda faixa de referência aqui é MÉDIA DE ESTUDO. Média descreve grupo, não
+ * pessoa. Os mesmos 15 exercícios, as mesmas 15 séries, aplicados em 585
+ * pessoas, produziram de −2% a +59% de mudança. Uma calculadora que mostra
+ * "volume moderado" sem dizer isso está fingindo saber o que só o corpo da
+ * pessoa responde ao longo das semanas.
+ */
+export const NOTA_INDIVIDUALIDADE =
+  "Tudo aqui é o que os estudos mostram em média — e média descreve grupo, não pessoa. A resposta ao treino varia muito de um indivíduo para outro: genética, sono, alimentação, estresse, histórico, idade e recuperação mudam o que funciona para você. Use estes números como ponto de partida e teste no seu corpo, acompanhando desempenho, recuperação e resultado ao longo das semanas. Quem decide o seu volume é a sua resposta, não a tabela.";
+
+/**
+ * O que faz uma série contar de verdade.
+ *
+ * As faixas de referência vêm de estudos em que as séries foram levadas
+ * PERTO DA FALHA. Uma série com seis repetições sobrando não entrega o mesmo
+ * estímulo — mas continua contando 1 na planilha de qualquer um. É por isso
+ * que duas pessoas com "16 séries de peitoral" podem estar em situações
+ * completamente diferentes.
+ *
+ * A copy precisa acertar os dois lados: séries fáceis inflam o número, e
+ * falha absoluta em tudo não é o remédio — a evidência não mostra
+ * superioridade da falha momentânea.
+ */
+export const NOTA_SERIE_VALIDA =
+  "Uma série só conta de verdade quando é desafiadora: levada até a falha ou perto dela, com poucas repetições sobrando. Séries confortáveis, longe da falha, enchem a planilha sem entregar o mesmo estímulo — 16 séries fáceis não são 16 séries. Isso não quer dizer ir à falha absoluta em tudo: a evidência não mostra que treinar até a falha momentânea seja superior. O ponto é que a série precisa exigir esforço real para valer o que a tabela diz.";
 
 export const NOTA_SERIES_CONTABILIZADAS =
   "Contamos as séries que você registrou como trabalho. A ferramenta não sabe o quanto cada série chegou perto da falha, e por isso não as chama de séries efetivas.";

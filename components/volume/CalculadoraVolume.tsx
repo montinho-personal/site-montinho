@@ -10,7 +10,9 @@ import {
   FONTES,
   NOTA_EQUIVALENTES,
   NOTA_FREQUENCIA,
+  NOTA_INDIVIDUALIDADE,
   NOTA_SERIES_CONTABILIZADAS,
+  NOTA_SERIE_VALIDA,
   NOTA_TECNICAS,
   NOTA_UNILATERAL,
   NOTA_VOLUME_NAO_E_TUDO,
@@ -318,6 +320,12 @@ export default function CalculadoraVolume({ placement }: { placement: string }) 
             <p className="text-gray-500 text-sm mt-3">
               Tudo acontece no seu aparelho — nada é enviado para lugar nenhum.
             </p>
+            {/* A regra do que conta aparece ANTES de a pessoa preencher: ela
+                muda o que se digita, não só como se lê o resultado. */}
+            <p className="text-gray-300 text-sm leading-relaxed mt-4 border-l-2 pl-3" style={{ borderColor: "#BA9E50" }}>
+              <strong className="text-white">Conte só as séries que valem:</strong> as desafiadoras, levadas até a
+              falha ou perto dela. Séries de aquecimento têm um botão próprio e ficam de fora do volume.
+            </p>
           </div>
         ) : (
           <div className="space-y-8">
@@ -357,6 +365,19 @@ export default function CalculadoraVolume({ placement }: { placement: string }) 
               {comSecundarios && (
                 <p className="text-gray-400 text-sm mt-3 leading-relaxed max-w-2xl">{NOTA_EQUIVALENTES}</p>
               )}
+            </div>
+
+            {/* O que conta como série. Vem ANTES dos números de propósito:
+                muda a leitura de todos eles. */}
+            <div className="border-l-2 pl-4 py-1" style={{ borderColor: "#BA9E50" }}>
+              <p className="text-white font-semibold mb-1.5">Antes de ler os números: o que conta como série</p>
+              <p className="text-gray-300 text-sm leading-relaxed">{NOTA_SERIE_VALIDA}</p>
+              <p className="text-gray-500 text-xs leading-relaxed mt-2">
+                {FONTES.refalo.resumo}{" "}
+                <a href={FONTES.refalo.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-gray-300">
+                  {FONTES.refalo.rotulo}
+                </a>
+              </p>
             </div>
 
             {/* Volume por músculo */}
@@ -412,6 +433,21 @@ export default function CalculadoraVolume({ placement }: { placement: string }) 
               </div>
             )}
 
+            {/* Individualidade — o aviso mais importante da ferramenta, e por
+                isso na tela, não escondido num accordion. */}
+            <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.05] p-5">
+              <p className="text-white font-bold text-lg mb-2" style={h}>
+                Isso é a média dos estudos — não é você
+              </p>
+              <p className="text-gray-300 text-sm leading-relaxed mb-3">{NOTA_INDIVIDUALIDADE}</p>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                {FONTES.hubal.resumo}{" "}
+                <a href={FONTES.hubal.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-white">
+                  {FONTES.hubal.rotulo}
+                </a>
+              </p>
+            </div>
+
             {/* Distribuição semanal */}
             {modo === "completo" && dias.length > 0 && <Distribuicao dias={dias} volumes={volumes} />}
 
@@ -445,6 +481,8 @@ export default function CalculadoraVolume({ placement }: { placement: string }) 
                   </p>
                   <p className="text-gray-400">{NOTA_EQUIVALENTES}</p>
                   <p className="text-gray-400">{NOTA_SERIES_CONTABILIZADAS}</p>
+                  <p className="text-gray-400">{NOTA_SERIE_VALIDA}</p>
+                  <p className="text-gray-400">{NOTA_INDIVIDUALIDADE}</p>
                   <p className="text-gray-400">{NOTA_UNILATERAL}</p>
                   <p className="text-gray-400">{NOTA_TECNICAS}</p>
                   <p className="text-gray-400">{NOTA_FREQUENCIA}</p>

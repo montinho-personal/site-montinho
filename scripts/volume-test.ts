@@ -23,6 +23,8 @@ import {
   ARTIGOS_COM_LINK_VOLUME,
   FAIXAS,
   FONTES,
+  NOTA_INDIVIDUALIDADE,
+  NOTA_SERIE_VALIDA,
   PESO_SECUNDARIO,
   calculaVolume,
   classificaVolume,
@@ -234,6 +236,75 @@ ok("a nota de frequência existe e é honesta", /NOTA_FREQUENCIA/.test(component
 ok("o 0,5 é declarado como convenção, não ciência", /convenção de modelagem/.test(libVolume) && /NOTA_EQUIVALENTES/.test(componente));
 ok("diz que volume não é tudo", /NOTA_VOLUME_NAO_E_TUDO/.test(componente));
 ok("o peso secundário é 0,5", PESO_SECUNDARIO === 0.5);
+
+console.log("\n" + "=".repeat(64) + "\nINDIVIDUALIDADE E SÉRIE VÁLIDA\n" + "=".repeat(64));
+
+/**
+ * Os dois avisos precisam estar VISÍVEIS, não escondidos no accordion. A
+ * checagem confirma que aparecem fora do bloco de metodologia — o que o
+ * leitor vê sem clicar é o que de fato comunica.
+ */
+/**
+ * O bloco de imports precisa sair antes da checagem. Sem isso a assertion é
+ * vacuosa: `import { NOTA_INDIVIDUALIDADE }` no topo do arquivo já satisfaz
+ * "aparece antes do accordion", mesmo que o aviso só exista escondido lá
+ * dentro. Descoberto por mutação — removi o bloco visível e o teste passou.
+ */
+const semImports = componente.replace(/^import[\s\S]*?from "[^"]+";$/gm, "");
+const forasDoAccordion = semImports.split("Como contamos suas séries?")[0];
+ok(
+  "o aviso de individualidade aparece antes do accordion",
+  forasDoAccordion.includes("NOTA_INDIVIDUALIDADE"),
+  "escondido num accordion, o aviso mais importante não comunica nada"
+);
+ok(
+  "o aviso de série válida aparece antes do accordion",
+  forasDoAccordion.includes("NOTA_SERIE_VALIDA")
+);
+ok(
+  "o zero state já ensina o que conta como série",
+  /Conte s[óo] as s[ée]ries que valem/.test(componente) &&
+    componente.indexOf("Conte só as séries que valem") < componente.indexOf("Seu volume semanal"),
+  "a regra muda o que a pessoa digita, então precisa vir antes do preenchimento"
+);
+ok(
+  "o aviso de série válida vem ANTES dos cards de volume",
+  componente.indexOf("NOTA_SERIE_VALIDA") < componente.indexOf("Seu volume semanal"),
+  "ele muda como se lê todo número abaixo; depois já é tarde"
+);
+
+/** A copy tem que dizer as duas coisas sobre falha, não só uma. */
+ok(
+  "diz que a série precisa ser perto da falha",
+  /falha ou perto dela|perto da falha/i.test(NOTA_SERIE_VALIDA)
+);
+ok(
+  "diz que séries fáceis não valem o mesmo",
+  /n[ãa]o s[ãa]o 16 s[ée]ries|longe da falha/i.test(NOTA_SERIE_VALIDA)
+);
+/**
+ * E o contrapeso: a evidência NÃO sustenta que falha absoluta seja superior.
+ * Sem esta parte, o aviso viraria incentivo a treinar destruído.
+ */
+ok(
+  "NÃO manda ir à falha absoluta sempre",
+  /n[ãa]o (quer dizer|significa) ir [àa] falha absoluta/i.test(NOTA_SERIE_VALIDA) &&
+    /n[ãa]o mostra que treinar at[ée] a falha momentânea seja superior/i.test(NOTA_SERIE_VALIDA),
+  "a evidência não sustenta superioridade da falha momentânea"
+);
+
+/** O aviso de individualidade precisa mandar testar no próprio corpo. */
+ok("manda testar no próprio corpo", /teste no seu corpo/i.test(NOTA_INDIVIDUALIDADE));
+ok("diz que média descreve grupo, não pessoa", /m[ée]dia descreve grupo, n[ãa]o pessoa/i.test(NOTA_INDIVIDUALIDADE));
+ok("cita fatores individuais concretos", /gen[ée]tica|sono|recupera[çc][ãa]o/i.test(NOTA_INDIVIDUALIDADE));
+
+/** As duas fontes novas, conferidas na origem. */
+ok("cita Hubal et al. com PMID real", FONTES.hubal.url.includes("15947721"));
+ok("o dado do Hubal está na copy (−2% a +59%)", /−2% a \+59%|-2% a \+59%/.test(FONTES.hubal.resumo));
+ok("cita Refalo et al. com PMID real", FONTES.refalo.url.includes("36334240"));
+ok("as duas fontes aparecem na página", pagina.includes("FONTES.hubal") && pagina.includes("FONTES.refalo"));
+ok("as duas fontes aparecem no componente", componente.includes("FONTES.hubal") && componente.includes("FONTES.refalo"));
+ok("a página tem seção própria para cada tema", /O que conta como uma s[ée]rie v[áa]lida\?/.test(pagina) && /Cada pessoa responde de um jeito/.test(pagina));
 
 console.log("\n" + "=".repeat(64) + "\nFONTES\n" + "=".repeat(64));
 
