@@ -24,8 +24,11 @@ const ALTURA = 630;
 
 /** Mesmo preto do site. */
 const FUNDO = "#0a0a0a";
-/** Dourado da marca, usado só na linha de baixo. */
-const OURO = "#BA9E50";
+/**
+ * Cor do wordmark. As duas linhas usam a mesma, como na logo original — o
+ * arquivo de origem as desenha em #111111 justamente para serem invertidas.
+ */
+const WORDMARK = "#FFFFFF";
 
 const ORIGEM = "public/logo.svg";
 const DESTINO = "public/og-image.jpg";
@@ -35,8 +38,16 @@ async function main() {
 
   /**
    * O wordmark são dois grupos com fill="#111111": "MONTINHO" em cima e
-   * "PERSONAL TRAINER" embaixo. Recolorir na ordem em que aparecem mantém a
-   * hierarquia da marca — nome em branco, descritor em dourado.
+   * "PERSONAL TRAINER" embaixo. Os dois viram branco.
+   *
+   * Uma versão anterior pintava o descritor de dourado, para criar hierarquia
+   * e amarrar com o accent do site. Estava errado, e o Montinho reparou: na
+   * logo dele as duas linhas têm a mesma cor. Esta imagem aparece em 852
+   * páginas e é o que as pessoas veem no WhatsApp — é o rosto da marca fora
+   * do site. Ali fidelidade vale mais que hierarquia: hierarquia é problema
+   * de página, identidade é problema de marca. A única liberdade que a
+   * geração toma é clarear o wordmark, porque o original é quase preto e
+   * some no fundo escuro.
    */
   const ocorrencias = (svg.match(/fill="#111111"/g) ?? []).length;
   if (ocorrencias !== 2) {
@@ -46,10 +57,7 @@ async function main() {
     );
   }
 
-  let i = 0;
-  const svgColorido = svg.replace(/fill="#111111"/g, () =>
-    i++ === 0 ? `fill="#FFFFFF"` : `fill="${OURO}"`
-  );
+  const svgColorido = svg.replace(/fill="#111111"/g, `fill="${WORDMARK}"`);
 
   /**
    * Densidade alta: o SVG é pequeno (469x321) e vai ser ampliado bastante.
