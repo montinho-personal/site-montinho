@@ -188,6 +188,24 @@ for (const [naTabela, emAlimentos] of PARES) {
       "o mesmo alimento não pode ter dois valores no mesmo site"
     );
   }
+  /** As calorias vinham erradas (feijão marcava 132 contra 76 na TACO). */
+  const linhaCal = new RegExp(`<td[^>]*>${naTabela.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}</td>\\s*<td[^>]*>[^<]*</td>\\s*<td[^>]*>[^<]*</td>\\s*<td[^>]*>(\\d+) kcal</td>`, "i");
+  const mc = TABELA.match(linhaCal);
+  if (mc) {
+    ok(
+      `${naTabela}: calorias do artigo (${mc[1]}) batem com a ficha (${alimento.caloriasKcal})`,
+      Number(mc[1]) === alimento.caloriasKcal
+    );
+  }
+}
+
+/** Toda ficha precisa dizer que foi conferida, não só transcrita. */
+for (const a of ALIMENTOS) {
+  ok(
+    `"${a.nome}" tem calorias e data de verificação`,
+    a.caloriasKcal > 0 && !!a.verificadoEm,
+    "valor sem verificação registrada volta a ser chute publicado"
+  );
 }
 
 /** O ovo aparece por unidade no artigo e por unidade em ALIMENTOS. */

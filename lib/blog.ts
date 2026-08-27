@@ -61210,13 +61210,13 @@ Dentro dessa faixa:
 
 | Alimento | Porção | Proteína | Calorias |
 |---------|--------|---------|---------|
-| Peito de frango grelhado | 100g | 32g | 165 kcal |
+| Peito de frango grelhado | 100g | 32g | 159 kcal |
 | Frango inteiro (coxa) | 100g | 26g | 215 kcal |
 | Atum em água (lata) | 100g | 29g | 116 kcal |
 | Sardinha em água | 100g | 25g | 135 kcal |
 | Salmão grelhado | 100g | 25g | 208 kcal |
 | Tilápia grelhada | 100g | 26g | 128 kcal |
-| Carne bovina magra (patinho) | 100g | 36g | 160 kcal |
+| Carne bovina magra (patinho) | 100g | 36g | 219 kcal |
 | Alcatra grelhada | 100g | 27g | 180 kcal |
 | Carne moída (15% gordura) | 100g | 23g | 218 kcal |
 | Lombo suíno | 100g | 22g | 185 kcal |
@@ -61226,24 +61226,24 @@ Dentro dessa faixa:
 
 | Alimento | Porção | Proteína | Calorias |
 |---------|--------|---------|---------|
-| Ovo inteiro | 1 unidade (50g) | 7g | 78 kcal |
+| Ovo inteiro | 1 unidade (50g) | 7g | 73 kcal |
 | Clara de ovo | 1 unidade (33g) | 4g | 17 kcal |
 | Iogurte grego natural (0%) | 200g | 17g | 100 kcal |
 | Queijo cottage | 100g | 14g | 98 kcal |
 | Ricota | 100g | 11g | 174 kcal |
 | Leite integral | 240ml | 8g | 150 kcal |
 | Leite desnatado | 240ml | 8g | 90 kcal |
-| Queijo minas frescal | 100g | 17g | 220 kcal |
+| Queijo minas frescal | 100g | 17g | 264 kcal |
 | Requeijão light | 30g | 4g | 55 kcal |
 
 ## Tabela: Leguminosas e Vegetais Proteicos
 
 | Alimento | Porção | Proteína | Calorias |
 |---------|--------|---------|---------|
-| Feijão carioca cozido | 100g | 5g | 132 kcal |
-| Lentilha cozida | 100g | 6g | 116 kcal |
+| Feijão carioca cozido | 100g | 5g | 76 kcal |
+| Lentilha cozida | 100g | 6g | 93 kcal |
 | Grão-de-bico cozido | 100g | 9g | 164 kcal |
-| Tofu | 100g | 7g | 76 kcal |
+| Tofu | 100g | 7g | 64 kcal |
 | Edamame | 100g | 11g | 122 kcal |
 | Proteína de soja texturizada (seca) | 30g | 17g | 96 kcal |
 
@@ -61275,7 +61275,9 @@ Os valores de suplemento acima são faixas típicas, não números fixos: cada f
 
 Os valores de alimentos in natura têm como referência a **TACO — Tabela Brasileira de Composição de Alimentos (NEPA/Unicamp, 4ª edição)**, a base pública brasileira. São os mesmos valores usados na [calculadora de proteína](/ferramentas/calculadora-de-proteina) deste site, de propósito: número que muda de página para página não serve de referência para ninguém.
 
-Duas ressalvas honestas: o teor varia conforme corte, marca e preparo — cru e cozido não são a mesma coisa, e por isso o estado do alimento está sempre indicado. E as calorias da tabela são aproximadas, úteis para comparar alimentos entre si, não para fechar um controle calórico exato.
+Uma ressalva honesta: o teor varia conforme corte, marca e preparo — cru, cozido e grelhado não são a mesma coisa, e por isso o estado do alimento está sempre indicado. O mesmo patinho tem 133 kcal cru e 219 kcal grelhado, porque a água evapora e a porção concentra.
+
+Os alimentos in natura acima foram conferidos um a um contra a TACO. Os demais itens da tabela — peixes, frutos do mar e alguns derivados — vêm de outras bases e ainda não passaram por essa conferência; trate-os como boa aproximação, não como valor fechado.
 
 ## Estratégias para Atingir a Meta
 

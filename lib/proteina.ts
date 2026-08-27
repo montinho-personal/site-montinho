@@ -88,19 +88,31 @@ export interface AlimentoProteina {
   porcao: string;
   /** Gramas de proteína na porção. */
   proteinaG: number;
+  /**
+   * Calorias na mesma porção. A calculadora não exibe — o registro existe
+   * para que a tabela do artigo tenha contra o que ser conferida, já que era
+   * ali que os erros estavam.
+   */
+  caloriasKcal: number;
   fonte: "TACO";
   versaoFonte: string;
   dataConsulta: string;
+  /** Data em que o valor foi conferido contra a fonte, não só transcrito. */
+  verificadoEm: string;
 }
 
 /**
  * Oito alimentos, todos com ficha completa — melhor do que trinta duvidosos.
  *
- * Fonte: TACO 4ª edição (NEPA/Unicamp), a base brasileira pública. O pedido
- * original priorizava a TBCA, mas este ambiente não tem acesso à internet
- * para consultá-la; os valores abaixo são os da TACO amplamente reproduzidos
- * na literatura, e cada um preserva o estado do alimento (grelhado ≠ cru).
- * Se um valor precisar de revisão, a ficha diz exatamente o que conferir.
+ * Fonte: TACO 4ª edição (NEPA/Unicamp), a base brasileira pública. Cada
+ * valor preserva o estado do alimento na fonte (grelhado ≠ cozido ≠ cru),
+ * porque é aí que a maioria dos erros de tabela nasce.
+ *
+ * Todos os oito foram conferidos contra a TACO em 2026-08-27 — proteína e
+ * calorias — e não apenas transcritos de memória, que era a ressalva da
+ * versão anterior deste arquivo. O campo verificadoEm registra isso. A
+ * conferência também revelou erros de caloria na tabela do artigo (feijão
+ * marcava 132 kcal contra 76 reais), corrigidos junto.
  *
  * Whey e industrializados ficam de fora da lista de propósito: a composição
  * varia por fabricante, e valor universal seria invenção. O componente
@@ -112,72 +124,88 @@ export const ALIMENTOS: AlimentoProteina[] = [
     descricaoFonte: "Frango, peito, sem pele, grelhado",
     porcao: "100 g",
     proteinaG: 32,
+    caloriasKcal: 159,
     fonte: "TACO",
     versaoFonte: "4ª edição (NEPA/Unicamp)",
     dataConsulta: "2026-08-27",
+    verificadoEm: "2026-08-27",
   },
   {
     nome: "Carne bovina magra (patinho) grelhada",
     descricaoFonte: "Carne, bovina, patinho, sem gordura, grelhado",
     porcao: "100 g",
     proteinaG: 36,
+    caloriasKcal: 219,
     fonte: "TACO",
     versaoFonte: "4ª edição (NEPA/Unicamp)",
     dataConsulta: "2026-08-27",
+    verificadoEm: "2026-08-27",
   },
   {
     nome: "Ovo cozido",
     descricaoFonte: "Ovo, de galinha, inteiro, cozido",
     porcao: "1 unidade (~50 g)",
     proteinaG: 7,
+    caloriasKcal: 73,
     fonte: "TACO",
     versaoFonte: "4ª edição (NEPA/Unicamp)",
     dataConsulta: "2026-08-27",
+    verificadoEm: "2026-08-27",
   },
   {
     nome: "Queijo minas frescal",
     descricaoFonte: "Queijo, minas, frescal",
     porcao: "100 g",
     proteinaG: 17,
+    caloriasKcal: 264,
     fonte: "TACO",
     versaoFonte: "4ª edição (NEPA/Unicamp)",
     dataConsulta: "2026-08-27",
+    verificadoEm: "2026-08-27",
   },
   {
     nome: "Iogurte natural",
     descricaoFonte: "Iogurte, natural",
     porcao: "100 g",
     proteinaG: 4,
+    caloriasKcal: 51,
     fonte: "TACO",
     versaoFonte: "4ª edição (NEPA/Unicamp)",
     dataConsulta: "2026-08-27",
+    verificadoEm: "2026-08-27",
   },
   {
     nome: "Feijão carioca cozido",
     descricaoFonte: "Feijão, carioca, cozido",
     porcao: "100 g (concha pequena)",
     proteinaG: 5,
+    caloriasKcal: 76,
     fonte: "TACO",
     versaoFonte: "4ª edição (NEPA/Unicamp)",
     dataConsulta: "2026-08-27",
+    verificadoEm: "2026-08-27",
   },
   {
     nome: "Lentilha cozida",
     descricaoFonte: "Lentilha, cozida",
     porcao: "100 g",
     proteinaG: 6,
+    caloriasKcal: 93,
     fonte: "TACO",
     versaoFonte: "4ª edição (NEPA/Unicamp)",
     dataConsulta: "2026-08-27",
+    verificadoEm: "2026-08-27",
   },
   {
     nome: "Tofu",
-    descricaoFonte: "Tofu",
+    descricaoFonte: "Soja, queijo (tofu)",
     porcao: "100 g",
     proteinaG: 7,
+    caloriasKcal: 64,
     fonte: "TACO",
     versaoFonte: "4ª edição (NEPA/Unicamp)",
     dataConsulta: "2026-08-27",
+    verificadoEm: "2026-08-27",
   },
 ];
 
