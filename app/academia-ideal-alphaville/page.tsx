@@ -35,8 +35,12 @@ const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
 const ln = "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
 
 export default function AcademiaIdealPage() {
-  const total = ACADEMIAS.reduce((acc, a) => acc + completude(a).total, 0);
-  const preenchidos = ACADEMIAS.reduce((acc, a) => acc + completude(a).preenchidos, 0);
+  // Só academias ativas contam. As encerradas ficam na base para registro,
+  // mas nunca são recomendadas — deixá-las puxando a completude para baixo
+  // mediria um buraco de dados que não existe.
+  const ativas = ACADEMIAS.filter((a) => a.status === "ativa");
+  const total = ativas.reduce((acc, a) => acc + completude(a).total, 0);
+  const preenchidos = ativas.reduce((acc, a) => acc + completude(a).preenchidos, 0);
   const pronta = preenchidos / total >= 0.6;
 
   return (
