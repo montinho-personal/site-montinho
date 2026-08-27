@@ -35,5 +35,11 @@ mensagens no WhatsApp de antes, para saber comparar.
 
 ## Lacunas de conteúdo já identificadas
 
-- **Máquina Smith**: citada em 18 artigos, nenhum é sobre ela. "agachamento
-  livre ou smith?" é recusado pelo assistente por falta de conteúdo próprio.
+- ~~**Máquina Smith**~~ — fechada em 2026-08-27 com o artigo
+  `agachamento-livre-ou-maquina-smith`; o assistente voltou a responder
+  "agachamento livre ou smith?".
+- **Blocos aprovados e ainda não escritos** (o Montinho pediu só o bloco 1
+  por enquanto): 3 perfis (agenda imprevisível, já tentou e parou, começar
+  depois dos 50) e 5 mitos (peso leve define, eletroestimulação/drenagem,
+  vacuum abdominal, musculação x crescimento do adolescente, pré-exaustão).
+  Pautas verificadas contra o acervo — nenhuma canibaliza artigo existente.

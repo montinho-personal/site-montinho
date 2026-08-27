@@ -81,14 +81,13 @@ const CASOS: Array<[string, boolean]> = [
 /**
  * Casos conhecidos que ainda erram. Ficam listados de propósito — escondê-los
  * num teste que "passa" seria pior do que admitir o limite da heurística.
- *   · "agachamento livre ou smith?" — o site cita a smith em 18 artigos mas
- *     nenhum é sobre ela; a âncora exige o termo no título e recusa.
  *   · "qual o melhor celular?" — a palavra aparece no corpo de um conteúdo
  *     e a pergunta passa. A instrução do modelo é a segunda linha de defesa:
  *     ele responde que não há conteúdo sobre isso.
  */
 const CONHECIDOS: string[] = [
-  "agachamento livre ou smith?",
+  // "agachamento livre ou smith?" saiu daqui em 2026-08-27: o artigo
+  // agachamento-livre-ou-maquina-smith fechou a lacuna e a pergunta responde.
   "qual o melhor celular?",
   "qual o melhor carro para comprar?",
 ];
