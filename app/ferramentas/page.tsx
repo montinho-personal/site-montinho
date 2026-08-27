@@ -39,7 +39,8 @@ const itemListSchema = {
     { "@type": "ListItem", position: 2, name: "Treino Para Minha Rotina", url: `${SITE_URL}/treino-para-minha-rotina` },
     { "@type": "ListItem", position: 3, name: "Pergunte ao Montinho", url: `${SITE_URL}/pergunte-ao-montinho` },
     { "@type": "ListItem", position: 4, name: "Revisão Gratuita de Execução", url: `${SITE_URL}/revisao-de-execucao` },
-    { "@type": "ListItem", position: 5, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: 5, name: "Calculadora de Proteína", url: `${SITE_URL}/ferramentas/calculadora-de-proteina` },
+    { "@type": "ListItem", position: 6, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -74,6 +75,15 @@ const FERRAMENTAS = [
     texto:
       "Você grava uma série completa do exercício e me manda pelo WhatsApp. Eu mesmo assisto e te passo os principais pontos que vale observar na execução — amplitude, ritmo, controle, o que muda quando a fadiga aparece.",
     quando: "Use quando a dúvida é sobre o seu movimento, não sobre o conceito. Sem cadastro e sem custo.",
+  },
+  {
+    href: "/ferramentas/calculadora-de-proteina",
+    nome: "Calculadora de Proteína",
+    pergunta: "Quanto de proteína eu preciso?",
+    tempo: "10 segundos · sem cadastro",
+    texto:
+      "Informe seu peso e veja referências de 1,6, 2,0 e 2,2 g de proteína por kg por dia, com divisão por refeições e exemplos de alimentos com a fonte de cada valor.",
+    quando: "Use quando quiser sair do achismo sobre a meta de proteína — o peso não sai do seu navegador.",
   },
   {
     href: "/pergunte-ao-montinho",

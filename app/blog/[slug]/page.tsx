@@ -11,7 +11,9 @@ import ArticleLightbox from "@/components/blog/ArticleLightbox";
 import AskEmbed from "@/components/ask/AskEmbed";
 import ContextualCTA from "@/components/cta/ContextualCTA";
 import { planCTAs } from "@/lib/cta/classify";
-import { splitAtNaturalBreak } from "@/lib/cta/placement";
+import { splitAtNaturalBreak, splitAtPrimeiraSecao } from "@/lib/cta/placement";
+import { ARTIGOS_COM_CALCULADORA } from "@/lib/proteina";
+import CalculadoraProteina from "@/components/proteina/CalculadoraProteina";
 import NotaMetodo from "@/components/filosofia/NotaMetodo";
 import { clusterRecebeNota } from "@/lib/filosofia";
 
@@ -78,9 +80,18 @@ export default async function BlogPost({ params }: Props) {
   // position="end_article" ...> e remover o bloco fixo abaixo. O plano de
   // cta.end já está calculado e testado; só não está em uso.
   const cta = planCTAs(post, { renderEnd: false });
+  // Calculadora de proteína: nos artigos do registro, ela entra cedo —
+  // depois da primeira seção (a resposta direta), antes da explicação longa.
+  // O CTA do meio continua existindo, mas passa a operar sobre o restante do
+  // texto, para os dois nunca disputarem o mesmo corte.
+  const calcSplit = ARTIGOS_COM_CALCULADORA.includes(post.slug)
+    ? splitAtPrimeiraSecao(contentHtml)
+    : null;
+  const corpoRestante = calcSplit ? calcSplit.after : contentHtml;
+
   // Só divide o HTML se houver um CTA de meio E um ponto de corte editorial
   // seguro. Sem os dois, o artigo fica inteiro e leva só o CTA final.
-  const split = cta.mid ? splitAtNaturalBreak(contentHtml) : null;
+  const split = cta.mid ? splitAtNaturalBreak(corpoRestante) : null;
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -208,6 +219,14 @@ export default async function BlogPost({ params }: Props) {
       {/* Content */}
       <article className="py-16 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          {calcSplit && (
+            <>
+              <div className="prose-blog" dangerouslySetInnerHTML={{ __html: calcSplit.before }} />
+              <div className="my-10">
+                <CalculadoraProteina placement={post.slug === "quanta-proteina-por-dia-para-ganhar-massa-muscular" ? "artigo-proteina-dia" : `artigo-${post.slug}`} />
+              </div>
+            </>
+          )}
           {split && cta.mid ? (
             <>
               <div className="prose-blog" dangerouslySetInnerHTML={{ __html: split.before }} />
@@ -222,7 +241,7 @@ export default async function BlogPost({ params }: Props) {
               <div className="prose-blog" dangerouslySetInnerHTML={{ __html: split.after }} />
             </>
           ) : (
-            <div className="prose-blog" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+            <div className="prose-blog" dangerouslySetInnerHTML={{ __html: corpoRestante }} />
           )}
           <ArticleLightbox />
 

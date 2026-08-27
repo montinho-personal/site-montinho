@@ -1,0 +1,206 @@
+/**
+ * Calculadora de Proteína — dados e regras.
+ *
+ * Tudo que é FATO mora aqui, fora do componente: as faixas com a referência
+ * científica de onde saíram, os alimentos com ficha completa de fonte, e o
+ * registro de quais artigos exibem a calculadora. O componente só apresenta.
+ *
+ * As três faixas não são três prescrições. Morton et al. (BJSM 2018; 49
+ * estudos, 1.863 participantes — o mesmo trabalho já citado no artigo de
+ * proteína do acervo) estimou ~1,6 g/kg/dia como o ponto a partir do qual
+ * mais proteína não mostrou benefício adicional claro para massa magra, com
+ * intervalo de confiança até ~2,2. A calculadora mostra a faixa inteira e
+ * diz isso — nunca que 2,2 rende mais músculo que 1,6.
+ */
+
+export const REFERENCIA_CIENTIFICA = {
+  rotulo: "Morton et al., British Journal of Sports Medicine (2018)",
+  url: "https://pubmed.ncbi.nlm.nih.gov/28698222/",
+};
+
+export interface FaixaProteina {
+  id: "eficaz" | "pratica" | "superior";
+  gPorKg: number;
+  titulo: string;
+  descricao: string;
+  /** A "meta prática" ganha leve destaque visual — sem afirmar superioridade. */
+  destaque?: boolean;
+}
+
+export const FAIXAS: FaixaProteina[] = [
+  {
+    id: "eficaz",
+    gPorKg: 1.6,
+    titulo: "Referência eficaz",
+    descricao:
+      "Uma referência sólida para quem pratica musculação e quer garantir uma ingestão adequada de proteína.",
+  },
+  {
+    id: "pratica",
+    gPorKg: 2.0,
+    titulo: "Meta prática",
+    descricao:
+      "Um valor intermediário, fácil de usar como referência no dia a dia dentro da faixa.",
+    destaque: true,
+  },
+  {
+    id: "superior",
+    gPorKg: 2.2,
+    titulo: "Faixa superior",
+    descricao:
+      "A parte de cima da faixa comumente usada como referência por quem treina musculação.",
+  },
+];
+
+/** Limites técnicos do campo de peso. Fora deles, pedimos para conferir. */
+export const PESO_MIN = 30;
+export const PESO_MAX = 300;
+
+/**
+ * Normaliza a digitação brasileira: aceita "70", "70,5" e "70.5".
+ * Retorna null quando não dá para interpretar como peso.
+ */
+export function parsePeso(texto: string): number | null {
+  const limpo = texto.trim().replace(",", ".");
+  if (!/^\d+(\.\d+)?$/.test(limpo)) return null;
+  const n = Number(limpo);
+  if (!Number.isFinite(n) || n <= 0) return null;
+  return n;
+}
+
+/** Gramas de proteína por dia, inteiro — decimais aqui seriam falsa precisão. */
+export function gramasPorDia(pesoKg: number, gPorKg: number): number {
+  return Math.round(pesoKg * gPorKg);
+}
+
+/** Divisão por refeição, arredondada — o total diário é a referência, não a fatia. */
+export function gramasPorRefeicao(totalDia: number, refeicoes: number): number {
+  return Math.round(totalDia / refeicoes);
+}
+
+// ─── Alimentos ───────────────────────────────────────────────────────────────
+
+export interface AlimentoProteina {
+  nome: string;
+  /** Descrição exata na fonte — cru/cozido/grelhado preservado de propósito. */
+  descricaoFonte: string;
+  /** Porção mostrada ao leitor. */
+  porcao: string;
+  /** Gramas de proteína na porção. */
+  proteinaG: number;
+  fonte: "TACO";
+  versaoFonte: string;
+  dataConsulta: string;
+}
+
+/**
+ * Oito alimentos, todos com ficha completa — melhor do que trinta duvidosos.
+ *
+ * Fonte: TACO 4ª edição (NEPA/Unicamp), a base brasileira pública. O pedido
+ * original priorizava a TBCA, mas este ambiente não tem acesso à internet
+ * para consultá-la; os valores abaixo são os da TACO amplamente reproduzidos
+ * na literatura, e cada um preserva o estado do alimento (grelhado ≠ cru).
+ * Se um valor precisar de revisão, a ficha diz exatamente o que conferir.
+ *
+ * Whey e industrializados ficam de fora da lista de propósito: a composição
+ * varia por fabricante, e valor universal seria invenção. O componente
+ * mostra a nota de rótulo em vez de um número.
+ */
+export const ALIMENTOS: AlimentoProteina[] = [
+  {
+    nome: "Peito de frango grelhado",
+    descricaoFonte: "Frango, peito, sem pele, grelhado",
+    porcao: "100 g",
+    proteinaG: 32,
+    fonte: "TACO",
+    versaoFonte: "4ª edição (NEPA/Unicamp)",
+    dataConsulta: "2026-08-27",
+  },
+  {
+    nome: "Carne bovina magra (patinho) grelhada",
+    descricaoFonte: "Carne, bovina, patinho, sem gordura, grelhado",
+    porcao: "100 g",
+    proteinaG: 36,
+    fonte: "TACO",
+    versaoFonte: "4ª edição (NEPA/Unicamp)",
+    dataConsulta: "2026-08-27",
+  },
+  {
+    nome: "Ovo cozido",
+    descricaoFonte: "Ovo, de galinha, inteiro, cozido",
+    porcao: "1 unidade (~50 g)",
+    proteinaG: 7,
+    fonte: "TACO",
+    versaoFonte: "4ª edição (NEPA/Unicamp)",
+    dataConsulta: "2026-08-27",
+  },
+  {
+    nome: "Queijo minas frescal",
+    descricaoFonte: "Queijo, minas, frescal",
+    porcao: "100 g",
+    proteinaG: 17,
+    fonte: "TACO",
+    versaoFonte: "4ª edição (NEPA/Unicamp)",
+    dataConsulta: "2026-08-27",
+  },
+  {
+    nome: "Iogurte natural",
+    descricaoFonte: "Iogurte, natural",
+    porcao: "100 g",
+    proteinaG: 4,
+    fonte: "TACO",
+    versaoFonte: "4ª edição (NEPA/Unicamp)",
+    dataConsulta: "2026-08-27",
+  },
+  {
+    nome: "Feijão carioca cozido",
+    descricaoFonte: "Feijão, carioca, cozido",
+    porcao: "100 g (concha pequena)",
+    proteinaG: 5,
+    fonte: "TACO",
+    versaoFonte: "4ª edição (NEPA/Unicamp)",
+    dataConsulta: "2026-08-27",
+  },
+  {
+    nome: "Lentilha cozida",
+    descricaoFonte: "Lentilha, cozida",
+    porcao: "100 g",
+    proteinaG: 6,
+    fonte: "TACO",
+    versaoFonte: "4ª edição (NEPA/Unicamp)",
+    dataConsulta: "2026-08-27",
+  },
+  {
+    nome: "Tofu",
+    descricaoFonte: "Tofu",
+    porcao: "100 g",
+    proteinaG: 7,
+    fonte: "TACO",
+    versaoFonte: "4ª edição (NEPA/Unicamp)",
+    dataConsulta: "2026-08-27",
+  },
+];
+
+export const NOTA_INDUSTRIALIZADOS =
+  "Whey, iogurtes proteicos e barrinhas variam por marca — confira sempre o rótulo nutricional. Não usamos um valor universal para eles de propósito.";
+
+export const NOTA_FONTES =
+  "Valores de composição alimentar baseados na TACO (NEPA/Unicamp, 4ª edição). Podem variar conforme corte, marca e preparo do alimento.";
+
+// ─── Onde a calculadora aparece ──────────────────────────────────────────────
+
+/**
+ * Artigos que exibem a calculadora cedo no corpo (antes da segunda seção).
+ * Registro central: um lugar para mudar, e o teste garante que todo slug
+ * daqui existe de verdade no acervo.
+ *
+ * O critério de entrada não é "fala de proteína" — é "o leitor chegou com a
+ * pergunta que a calculadora responde". Artigo de whey fala de proteína, mas
+ * a dúvida lá é sobre o suplemento, não sobre a meta diária.
+ */
+export const ARTIGOS_COM_CALCULADORA: string[] = [
+  "quanta-proteina-por-dia-para-ganhar-massa-muscular",
+  "quanto-de-proteina-consumir",
+  "alimentos-ricos-em-proteina",
+  "cardapio-para-hipertrofia",
+];
