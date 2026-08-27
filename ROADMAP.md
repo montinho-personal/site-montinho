@@ -38,7 +38,14 @@ mensagens no WhatsApp de antes, para saber comparar.
 - ~~**Máquina Smith**~~ — fechada em 2026-08-27 com o artigo
   `agachamento-livre-ou-maquina-smith`; o assistente voltou a responder
   "agachamento livre ou smith?".
-- **Blocos aprovados e ainda não escritos**: 2 mitos (musculação x
-  crescimento do adolescente, pré-exaustão). Já publicados (2026-08-27):
-  agenda imprevisível, já-tentei-e-parei, começar depois dos 50, peso leve
-  define, eletroestimulação/drenagem, vacuum abdominal.
+- ~~**Blocos aprovados**~~ — os três blocos foram publicados em 2026-08-27:
+  Smith (lacuna), 3 perfis (agenda imprevisível, já-tentei-e-parei, começar
+  depois dos 50) e 5 mitos (peso leve define, eletroestimulação/drenagem,
+  vacuum abdominal, musculação x crescimento, pré-exaustão). 9 artigos,
+  acervo de 813 para 822.
+
+- **Próxima análise de lacunas**: refazer o levantamento por formato daqui a
+  alguns meses. O que sobrou baixo na última medição: estudos de caso reais
+  (1 artigo) — depende de o Montinho autorizar histórias de alunos — e
+  guias/listas numeradas (10). Cobertura de tema estava em 49/54 tópicos
+  antes deste bloco.
