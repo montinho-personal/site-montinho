@@ -60,3 +60,21 @@ export function splitAtNaturalBreak(html: string): SplitResult | null {
 
   return { before: html.slice(0, corte), after: html.slice(corte) };
 }
+
+/**
+ * Corta o artigo logo depois da primeira seção — antes do segundo <h2>.
+ *
+ * Existe para a calculadora de proteína: o pedido é que ela apareça cedo,
+ * depois da resposta direta e antes da explicação longa, sem obrigar o
+ * leitor a atravessar duas mil palavras até a ferramenta. Não reaproveita o
+ * splitAtNaturalBreak porque a intenção é oposta: lá o corte busca o meio
+ * editorial; aqui, o começo.
+ */
+export function splitAtPrimeiraSecao(html: string): SplitResult | null {
+  const idx: number[] = [];
+  const re = /<h2[\s>]/gi;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(html)) !== null) idx.push(m.index);
+  if (idx.length < 2) return null;
+  return { before: html.slice(0, idx[1]), after: html.slice(idx[1]) };
+}

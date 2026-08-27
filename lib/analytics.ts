@@ -44,6 +44,17 @@ export type AnalyticsEvent =
    */
   | "preferred_source_cta_view"
   | "preferred_source_cta_interaction"
+
+  /**
+   * Calculadora de proteína. Privacidade por desenho: o peso digitado e o
+   * resultado NUNCA entram nos parâmetros — só o comportamento anônimo.
+   */
+  | "protein_calculator_view"
+  | "protein_calculator_use"
+  | "protein_meals_open"
+  | "protein_food_examples_open"
+  | "protein_article_click"
+  | "protein_cta_click"
   | "ask_montinho_feedback_positive"
   | "ask_montinho_feedback_negative"
   | "ask_montinho_embed_submit"

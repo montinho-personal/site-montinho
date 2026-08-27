@@ -1,0 +1,317 @@
+"use client";
+
+import { useMemo, useRef, useState, useEffect } from "react";
+import Link from "next/link";
+import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import {
+  ALIMENTOS,
+  FAIXAS,
+  NOTA_FONTES,
+  NOTA_INDUSTRIALIZADOS,
+  PESO_MAX,
+  PESO_MIN,
+  REFERENCIA_CIENTIFICA,
+  gramasPorDia,
+  gramasPorRefeicao,
+  parsePeso,
+} from "@/lib/proteina";
+
+/**
+ * Calculadora de proteína diária.
+ *
+ * Um campo, três referências. O cálculo é instantâneo — obrigar um clique em
+ * "calcular" para uma multiplicação seria cerimônia. Tudo roda no navegador:
+ * nenhuma chamada externa, nenhum backend, e o peso digitado nunca sai daqui —
+ * os eventos de analytics registram uso, jamais o valor.
+ *
+ * As três faixas vêm de `lib/proteina.ts` com a referência científica junto.
+ * A copy nunca diz que a faixa alta rende mais músculo que a baixa — o Morton
+ * et al. que fundamenta os números diz exatamente o contrário, e é por isso
+ * que os cards se chamam "referências", não "níveis".
+ */
+
+const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
+
+export default function CalculadoraProteina({
+  placement,
+}: {
+  /** Onde o componente está — segmenta os eventos, nunca carrega o peso. */
+  placement: string;
+}) {
+  const [texto, setTexto] = useState("");
+  const [refeicoes, setRefeicoes] = useState<number | null>(null);
+  const [faixaRefeicao, setFaixaRefeicao] = useState<number>(2.0);
+  const [mostrarAlimentos, setMostrarAlimentos] = useState(false);
+  const raiz = useRef<HTMLDivElement>(null);
+  const jaUsou = useRef(false);
+
+  const peso = useMemo(() => parsePeso(texto), [texto]);
+  const foraDoLimite = peso !== null && (peso < PESO_MIN || peso > PESO_MAX);
+  const valido = peso !== null && !foraDoLimite;
+
+  /** View: só quando o bloco entra de fato na tela. */
+  useEffect(() => {
+    const el = raiz.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const obs = new IntersectionObserver(
+      (es) => {
+        if (es.some((e) => e.isIntersecting)) {
+          trackOncePerSession("protein_calculator_view", { placement });
+          obs.disconnect();
+        }
+      },
+      { threshold: 0.4 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [placement]);
+
+  /** Uso: primeira vez que um peso válido produz resultado. Sem o peso. */
+  useEffect(() => {
+    if (valido && !jaUsou.current) {
+      jaUsou.current = true;
+      trackEvent("protein_calculator_use", { placement });
+    }
+  }, [valido, placement]);
+
+  const totalPratico = valido ? gramasPorDia(peso, faixaRefeicao) : null;
+
+  function copiarResultado() {
+    if (!valido) return;
+    const linhas = [
+      `Para ${texto.replace(".", ",")} kg:`,
+      ...FAIXAS.map((f) => `${String(f.gPorKg).replace(".", ",")} g/kg = ${gramasPorDia(peso, f.gPorKg)} g/dia`),
+      "Calculado no Montinho Personal.",
+    ].join("\n");
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(linhas).catch(() => {});
+    }
+  }
+
+  return (
+    <div
+      ref={raiz}
+      className="border border-white/15 bg-gradient-to-b from-white/[0.05] to-transparent p-6 sm:p-8 relative"
+      data-testid="calculadora-proteina"
+    >
+      <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: "#BA9E50" }} aria-hidden="true" />
+
+      <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#BA9E50" }}>
+        Gratuito · o peso não sai do seu navegador
+      </p>
+      <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-2" style={h}>
+        Calculadora de Proteína
+      </h2>
+      <p className="text-gray-300 leading-relaxed mb-6 max-w-xl">
+        Descubra uma referência de proteína diária de acordo com o seu peso.
+      </p>
+
+      {/* Campo de peso */}
+      <div className="mb-6">
+        <label htmlFor={`peso-${placement}`} className="block text-gray-300 text-sm font-medium mb-2">
+          Seu peso
+        </label>
+        <div className="flex items-center gap-3">
+          <input
+            id={`peso-${placement}`}
+            type="text"
+            inputMode="decimal"
+            autoComplete="off"
+            placeholder="80"
+            value={texto}
+            onChange={(e) => setTexto(e.target.value)}
+            className="w-32 bg-black border border-white/25 focus:border-[#BA9E50] text-white text-2xl font-bold px-4 py-3 outline-none transition-colors"
+            aria-describedby={`peso-ajuda-${placement}`}
+          />
+          <span className="text-gray-300 text-lg">kg</span>
+        </div>
+        <p id={`peso-ajuda-${placement}`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
+          {texto.trim() === ""
+            ? "Exemplo: para 70 kg, 1,6 g/kg corresponde a 112 g de proteína por dia."
+            : !valido
+              ? "Confira o peso informado."
+              : ""}
+        </p>
+      </div>
+
+      {/* Resultados — aria-live anuncia a atualização para leitores de tela */}
+      <div aria-live="polite">
+        {valido && (
+          <>
+            <div className="grid gap-4 sm:grid-cols-3 mb-2">
+              {FAIXAS.map((f) => (
+                <div
+                  key={f.id}
+                  className={`border p-5 ${f.destaque ? "border-[#BA9E50]/60 bg-[#BA9E50]/[0.06]" : "border-white/15"}`}
+                >
+                  <p className="text-[11px] font-semibold tracking-[0.18em] uppercase mb-1" style={{ color: "#BA9E50" }}>
+                    {f.titulo}
+                  </p>
+                  <p className="text-gray-400 text-sm mb-3">{String(f.gPorKg).replace(".", ",")} g/kg</p>
+                  <p className="text-white font-bold text-4xl leading-none mb-1" style={h}>
+                    {gramasPorDia(peso, f.gPorKg)}
+                    <span className="text-lg font-normal text-gray-300"> g</span>
+                  </p>
+                  <p className="text-gray-400 text-xs mb-3">por dia</p>
+                  <p className="text-gray-300 text-sm leading-relaxed">{f.descricao}</p>
+                </div>
+              ))}
+            </div>
+
+            <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-2xl">
+              As três são referências educacionais para quem treina musculação —
+              não três prescrições. A faixa vem de{" "}
+              <a
+                href={REFERENCIA_CIENTIFICA.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-2 decoration-1 hover:text-white transition-colors"
+              >
+                {REFERENCIA_CIENTIFICA.rotulo}
+              </a>
+              , e necessidades individuais variam.
+            </p>
+
+            {/* Dividir entre refeições */}
+            <div className="border-t border-white/10 pt-5 mb-6">
+              <p className="text-white text-sm font-semibold mb-3">Quer dividir sua proteína ao longo do dia?</p>
+              <div className="flex flex-wrap items-center gap-2 mb-3">
+                {[3, 4, 5].map((n) => (
+                  <button
+                    key={n}
+                    type="button"
+                    onClick={() => {
+                      if (refeicoes === null) trackEvent("protein_meals_open", { placement });
+                      setRefeicoes(refeicoes === n ? null : n);
+                    }}
+                    aria-pressed={refeicoes === n}
+                    className={`px-4 py-2.5 text-sm font-medium border transition-colors min-h-[44px] ${
+                      refeicoes === n
+                        ? "border-[#BA9E50] text-white bg-[#BA9E50]/10"
+                        : "border-white/20 text-gray-300 hover:border-white/40"
+                    }`}
+                  >
+                    {n} refeições
+                  </button>
+                ))}
+                {refeicoes !== null && (
+                  <select
+                    value={faixaRefeicao}
+                    onChange={(e) => setFaixaRefeicao(Number(e.target.value))}
+                    aria-label="Referência de g/kg usada na divisão"
+                    className="bg-black border border-white/20 text-gray-300 text-sm px-3 py-2.5 min-h-[44px]"
+                  >
+                    {FAIXAS.map((f) => (
+                      <option key={f.id} value={f.gPorKg}>
+                        usando {String(f.gPorKg).replace(".", ",")} g/kg
+                      </option>
+                    ))}
+                  </select>
+                )}
+              </div>
+              {refeicoes !== null && totalPratico !== null && (
+                <div>
+                  <p className="text-gray-200 text-base">
+                    Em {refeicoes} refeições:{" "}
+                    <strong className="text-white text-xl" style={h}>
+                      ≈ {gramasPorRefeicao(totalPratico, refeicoes)} g
+                    </strong>{" "}
+                    por refeição.
+                  </p>
+                  <p className="text-gray-400 text-sm mt-1">
+                    Você não precisa dividir de forma perfeitamente igual — o total
+                    diário continua sendo a principal referência.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* Como isso aparece nos alimentos */}
+            <div className="border-t border-white/10 pt-5 mb-6">
+              <button
+                type="button"
+                onClick={() => {
+                  if (!mostrarAlimentos) trackEvent("protein_food_examples_open", { placement });
+                  setMostrarAlimentos(!mostrarAlimentos);
+                }}
+                aria-expanded={mostrarAlimentos}
+                className="text-white text-sm font-semibold underline underline-offset-4 decoration-1 hover:opacity-80 transition-opacity min-h-[44px]"
+                style={{ textDecorationColor: "#BA9E50" }}
+              >
+                Como essa quantidade aparece nos alimentos?
+              </button>
+              {mostrarAlimentos && (
+                <div className="mt-4">
+                  <p className="text-gray-400 text-sm mb-4 max-w-2xl">
+                    Referências para dar noção de grandeza — isto não é um cardápio,
+                    e ninguém deveria bater a meta com um alimento só.
+                  </p>
+                  <ul className="grid gap-2 sm:grid-cols-2 mb-4">
+                    {ALIMENTOS.map((a) => (
+                      <li key={a.nome} className="flex items-baseline justify-between gap-3 border-b border-white/10 pb-2">
+                        <span className="text-gray-300 text-sm">
+                          {a.nome}
+                          <span className="text-gray-500 text-xs"> · {a.porcao}</span>
+                        </span>
+                        <span className="text-white text-sm font-semibold whitespace-nowrap">
+                          ≈ {a.proteinaG} g
+                          <span className="text-gray-500 font-normal text-[11px]"> · {a.fonte}</span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-gray-400 text-xs leading-relaxed mb-2">{NOTA_INDUSTRIALIZADOS}</p>
+                  <p className="text-gray-500 text-xs leading-relaxed">{NOTA_FONTES}</p>
+                </div>
+              )}
+            </div>
+
+            {/* Ações e links contextuais */}
+            <div className="flex flex-wrap items-center gap-4 mb-6">
+              <button
+                type="button"
+                onClick={copiarResultado}
+                className="border border-white/25 text-gray-300 hover:text-white hover:border-white/50 text-sm px-4 py-2.5 transition-colors min-h-[44px]"
+              >
+                Copiar resultado
+              </button>
+              {placement !== "artigo-proteina-dia" && (
+                <Link
+                  href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular"
+                  onClick={() => trackEvent("protein_article_click", { placement })}
+                  className="text-gray-300 hover:text-white text-sm underline underline-offset-4 decoration-1 transition-colors"
+                  style={{ textDecorationColor: "#BA9E50" }}
+                >
+                  Entenda de onde vêm esses números →
+                </Link>
+              )}
+            </div>
+
+            {/* CTA discreto — depois do valor entregue, nunca antes */}
+            <div className="border-t border-white/10 pt-4">
+              <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">
+                A calculadora dá a referência; o seu caso tem contexto — treino,
+                rotina, objetivo.{" "}
+                <Link
+                  href="/consultoria"
+                  onClick={() => trackEvent("protein_cta_click", { placement })}
+                  className="text-gray-300 underline underline-offset-2 decoration-1 hover:text-white transition-colors"
+                >
+                  É isso que o acompanhamento do Montinho ajusta
+                </Link>
+                .
+              </p>
+            </div>
+          </>
+        )}
+      </div>
+
+      <p className="text-gray-500 text-xs leading-relaxed mt-5 max-w-2xl">
+        Esta calculadora oferece referências educacionais baseadas no peso
+        corporal e não substitui avaliação individual de nutricionista ou
+        médico. Necessidades variam conforme objetivo, idade, atividade e
+        condições de saúde.
+      </p>
+    </div>
+  );
+}
