@@ -19,6 +19,21 @@ export const metadata: Metadata = {
   description:
     "Musculação, 24 horas, estacionamento, localização ou aulas? Responda algumas perguntas e descubra quais academias de Alphaville combinam mais com a sua rotina.",
   alternates: { canonical: `${SITE_URL}/academia-ideal-alphaville` },
+  openGraph: {
+    title: "Qual Academia de Alphaville Combina com Você? | Montinho",
+    description:
+      "Musculação, 24 horas, estacionamento ou aulas? Responda algumas perguntas e descubra quais academias de Alphaville combinam com a sua rotina. Gratuito, sem cadastro.",
+    url: `${SITE_URL}/academia-ideal-alphaville`,
+    type: "website",
+    images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Qual Academia de Alphaville Combina com Você? | Montinho",
+    description:
+      "Musculação, 24 horas, estacionamento ou aulas? Responda algumas perguntas e descubra quais academias de Alphaville combinam com a sua rotina. Gratuito, sem cadastro.",
+    images: [`${SITE_URL}/og-image.jpg`],
+  },
 };
 
 const breadcrumbSchema = {

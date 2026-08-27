@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/blog";
 import { getWhatsAppUrl, WHATSAPP_NUMBER_DISPLAY } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
@@ -7,6 +8,21 @@ export const metadata: Metadata = {
     "Entre em contato com o Montinho Personal Trainer pelo WhatsApp. Atendimento presencial em Alphaville (Barueri e Santana de Parnaíba) e online em todo o Brasil.",
   alternates: {
     canonical: "https://www.montinhopersonal.com.br/contato",
+  },
+  openGraph: {
+    title: "Contato | Montinho Personal Trainer",
+    description:
+      "Fale direto comigo pelo WhatsApp. Atendimento presencial em Alphaville, Barueri e Santana de Parnaíba, e consultoria online para todo o Brasil.",
+    url: `${SITE_URL}/contato`,
+    type: "website",
+    images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contato | Montinho Personal Trainer",
+    description:
+      "Fale direto comigo pelo WhatsApp. Atendimento presencial em Alphaville, Barueri e Santana de Parnaíba, e consultoria online para todo o Brasil.",
+    images: [`${SITE_URL}/og-image.jpg`],
   },
 };
 
