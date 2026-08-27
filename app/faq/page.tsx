@@ -77,6 +77,11 @@ const faqs = [
       "É como eu chamo o algo a mais que faz diferença. Pode ser uma carga que sobe, uma técnica no fim da série, uma repetição que você não ia fazer, um detalhe de execução que muda o exercício inteiro. Se deu uma incrementada na parada, deu um chalalá. E vale dizer o que ele não é: chalalá não é segredo nem fórmula mágica — é justamente o contrário, é o extra que você coloca de propósito, sabendo por quê. Treino bom já funciona sem ele; o chalalá é o que faz o treino bom virar treino seu.",
   },
   {
+    question: "Você fala \u201cé impossível dar errado\u201d. Isso é promessa?",
+    answer:
+      "Não, e faço questão de explicar. Não significa que eu garanto um número na balança ou uma data — ninguém honesto garante isso. Significa outra coisa: quando existe uma estratégia feita para a pessoa que você é hoje, e não para uma rotina imaginária, e você executa essa estratégia por tempo suficiente, o resultado deixa de depender de sorte. Seguir o plano também não é viver perfeito: se tem refeição livre planejada, ela faz parte; se tem descanso, faz parte; se num dia o treino precisa ser mais curto, pode fazer parte. E quando o corpo responde diferente do esperado, a gente não abandona o processo — ajusta o cardio, revê as calorias, muda o volume, cuida da recuperação. É isso que quero dizer: a gente não depende de esperança, a gente constrói.",
+  },
+  {
     question: "Como começo?",
     answer:
       "O primeiro passo é uma conversa. Me mande uma mensagem pelo WhatsApp, me conte seu objetivo e vamos marcar uma conversa inicial sem compromisso. Sem pressão, sem pitch de venda — apenas uma conversa para entender se faz sentido trabalharmos juntos.",

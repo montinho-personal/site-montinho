@@ -32,6 +32,13 @@ export interface Filosofia {
 
 export const FILOSOFIAS: Filosofia[] = [
   {
+    id: "impossivel",
+    titulo: "Por que eu digo que é impossível dar errado",
+    evitarEm: ["pain", "health", "glp1"],
+    texto:
+      "Não é promessa de número nem de prazo — nenhum artigo, e nenhuma pessoa honesta, garante isso. É outra coisa: quando existe uma estratégia feita para a rotina que você tem hoje e você a executa por tempo suficiente, o resultado deixa de depender de sorte. E quando o corpo responde diferente do esperado, não se abandona o plano: ajusta-se. Montar uma estratégia assim, medir e ir corrigindo pelo caminho, é o trabalho do {link}.",
+  },
+  {
     id: "chalala",
     titulo: "E onde entra o chalalá",
     evitarEm: ["pain", "health", "glp1"],

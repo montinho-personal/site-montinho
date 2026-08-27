@@ -393,10 +393,63 @@ export default function MinhaHistoria() {
                 </p>
               </div>
             </section>
+
+            {/* Fecho da história. A frase só aparece aqui depois de o leitor
+                ter visto os 40 kg, a recaída e o recomeço — antes disso ela
+                seria slogan; depois, é a conclusão de quem viveu o processo.
+                A condição vem sempre colada: sem ela, vira promessa. */}
+            <section>
+              <h2
+                className="text-2xl sm:text-3xl font-bold text-white mb-5"
+                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              >
+                O que aprendi no caminho
+              </h2>
+              <div className="space-y-4 text-gray-300 leading-relaxed">
+                <p>
+                  Que resultado não é sorte. Quando existe uma estratégia feita
+                  para a pessoa que você é hoje — e não para uma rotina imaginária
+                  que você não sustenta — e você executa essa estratégia por tempo
+                  suficiente, o resultado deixa de ser aposta.
+                </p>
+                <p>
+                  Seguir o plano não é viver perfeito. Se tem refeição livre
+                  planejada, ela faz parte. Se tem descanso, ele faz parte. Se num
+                  dia o treino precisa ser mais curto, isso também pode fazer
+                  parte. Treino, comida, cardio, sono e rotina precisam conversar
+                  entre si — e o plano vai mudando junto com você.
+                </p>
+                <p>
+                  Às vezes o corpo responde diferente do que a gente imaginava.
+                  Quando isso acontece, não se abandona o processo: usa-se a
+                  resposta para ajustar. Mexe no cardio, revê as calorias, muda o
+                  volume do treino, cuida melhor da recuperação. É por isso que eu
+                  falo, e falo sério:{" "}
+                  <strong className="text-white">
+                    é impossível dar errado quando você faz, por tempo suficiente,
+                    aquilo que precisa ser feito
+                  </strong>{" "}
+                  — dentro de uma estratégia que realmente cabe na sua vida.
+                </p>
+                <p>
+                  Repare no que essa frase não diz. Ela não promete um número na
+                  balança nem uma data. Ela diz que não vamos depender de
+                  esperança: a gente monta, executa, mede, aprende, ajusta e
+                  continua. O resultado a gente constrói.
+                </p>
+              </div>
+            </section>
           </div>
 
           {/* CTA */}
           <div className="mt-16 pt-12 border-t border-white/10 text-center">
+            <p
+              className="text-white text-xl sm:text-2xl italic leading-relaxed mb-8 max-w-2xl mx-auto"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              &ldquo;Seu shape merece um chalalá. E fazendo o que precisa ser
+              feito, é impossível dar errado.&rdquo;
+            </p>
             <p className="text-gray-300 text-lg mb-6">
               Se você se identificou com alguma parte dessa história, quero
               conversar com você.
