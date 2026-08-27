@@ -21,6 +21,14 @@ export default function CTAFinal() {
           onde você está e como posso te ajudar a chegar onde quer.
         </p>
 
+        {/* O bordão entra aqui e em mais quatro lugares do site — nunca em
+            conteúdo de dor, lesão ou saúde, onde o tom é sóbrio de propósito. */}
+        <p className="text-base text-gray-400 leading-relaxed max-w-xl mx-auto mb-10 -mt-6">
+          Treinar você já treina, ou já sabe que precisa. O que costuma faltar é
+          o <strong className="text-black">chalalá</strong> — aquele algo a mais
+          que faz diferença.
+        </p>
+
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href={getWhatsAppUrl()}

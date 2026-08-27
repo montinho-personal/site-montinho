@@ -70,5 +70,24 @@ check(
 );
 check("todas as variantes são usadas", dist.size === FILOSOFIAS.length);
 
+// Variantes com restrição de cluster nunca podem escapar para onde não cabem.
+{
+  const restritas = FILOSOFIAS.filter((f) => f.evitarEm?.length);
+  check("existe pelo menos uma variante com restrição", restritas.length > 0);
+  for (const f of restritas) {
+    for (const c of f.evitarEm ?? []) {
+      // Varre chaves suficientes para cobrir o espaço de hash com folga.
+      const vazou = Array.from({ length: 4000 }, (_, i) => pickFilosofia(`slug-de-teste-${i}`, c))
+        .some((escolhida) => escolhida.id === f.id);
+      check(`"${f.id}" nunca aparece em cluster "${c}"`, !vazou);
+    }
+  }
+  // Sem cluster informado, todas continuam elegíveis.
+  const semCluster = new Set(
+    Array.from({ length: 4000 }, (_, i) => pickFilosofia(`x-${i}`).id)
+  );
+  check("sem cluster, toda variante continua alcançável", semCluster.size === FILOSOFIAS.length);
+}
+
 console.log("\n" + (falhas === 0 ? "TODOS OS TESTES PASSARAM" : `${falhas} FALHARAM`));
 process.exit(falhas === 0 ? 0 : 1);

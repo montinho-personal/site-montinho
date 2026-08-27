@@ -248,7 +248,9 @@ export default function FerramentasPage() {
               </Link>
               , presencial em Alphaville e região ou online. Feito por quem perdeu
               mais de 40 kg antes de treinar qualquer pessoa — e que faz isso porque
-              gosta de ver alguém descobrir que também consegue.
+              gosta de ver alguém descobrir que também consegue. As ferramentas dão
+              a direção; o <strong className="text-white">chalalá</strong> vem de
+              alguém olhando o seu caso.
             </p>
           </div>
 
