@@ -3,7 +3,7 @@ import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
 import { EXERCICIOS } from "@/lib/treino/exercicios";
 import { MUSCULOS } from "@/lib/treino/musculos";
-import { FAIXAS, FONTES, NOTA_FREQUENCIA, PESO_SECUNDARIO } from "@/lib/treino/volume";
+import { FAIXAS, FONTES, NOTA_FREQUENCIA, NOTA_INDIVIDUALIDADE, NOTA_SERIE_VALIDA, PESO_SECUNDARIO } from "@/lib/treino/volume";
 import CalculadoraVolume from "@/components/volume/CalculadoraVolume";
 
 /**
@@ -133,6 +133,47 @@ export default function CalculadoraVolumePage() {
               Repare que nenhuma faixa se chama "ideal", "certa" ou "excessiva". Um volume muito elevado não
               significa overtreinamento — significa que vale observar desempenho e recuperação ao longo das
               semanas.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>
+              O que conta como uma série válida?
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-3">{NOTA_SERIE_VALIDA}</p>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              Essa distinção é o que separa duas pessoas com o mesmo número na planilha. Quem faz 16 séries de
+              peitoral parando bem antes do esforço real não está no mesmo lugar de quem faz 16 séries
+              desafiadoras — e a ferramenta não tem como saber a diferença, porque ela conta o que você
+              registrou, não o esforço que você aplicou.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              Sobre a falha em si, vale a precisão:{" "}
+              <a href={FONTES.refalo.url} target="_blank" rel="noopener noreferrer" className={ln}>
+                {FONTES.refalo.rotulo}
+              </a>{" "}
+              {FONTES.refalo.resumo} Ou seja: a série precisa ser difícil, mas transformar todo treino em falha
+              absoluta não é o caminho — cobra recuperação e não mostrou entregar mais.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>
+              Cada pessoa responde de um jeito
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-3">{NOTA_INDIVIDUALIDADE}</p>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              O melhor retrato disso vem de{" "}
+              <a href={FONTES.hubal.url} target="_blank" rel="noopener noreferrer" className={ln}>
+                {FONTES.hubal.rotulo}
+              </a>
+              : {FONTES.hubal.resumo}
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              Ninguém sabe de antemão em que ponto dessa distribuição você está — nem uma calculadora, nem um
+              estudo, nem um professor no primeiro dia. O que dá para fazer é começar por uma referência
+              razoável, aplicar com esforço de verdade, e ajustar a partir do que o seu corpo mostrar em
+              desempenho, recuperação e resultado ao longo das semanas. A tabela é o mapa; o território é você.
             </p>
           </div>
 
