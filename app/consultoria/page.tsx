@@ -499,6 +499,13 @@ export default function Consultoria() {
             treino pede um <strong className="text-black">chalalá</strong> — e
             onde ele só ia te cansar à toa.
           </p>
+          <p className="text-gray-400 mb-8 text-lg">
+            Não vou te dar um número nem uma data. Vou te dar uma estratégia que
+            cabe na sua vida, medir o que acontece e ajustar junto com você.
+            Fazendo isso por tempo suficiente,{" "}
+            <strong className="text-black">é impossível dar errado</strong> — não
+            porque eu prometo, mas porque a gente para de depender de sorte.
+          </p>
           <a
             href={getWhatsAppUrl()}
             target="_blank"

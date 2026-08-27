@@ -70205,7 +70205,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 
 <p><a href="/consultoria">Fale com o Montinho e veja como a consultoria pode destravar seu processo.</a></p>
 
-<p>Quem fez o trampo sabe: é impossível dar errado — falo sobre essa mentalidade neste Short:</p>
+<p>Quem fez o trampo sabe: quando a estratégia cabe na sua vida e você a segue por tempo suficiente, é impossível dar errado — não porque alguém garante um número, mas porque você para de depender de sorte. Falo sobre essa mentalidade neste Short:</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
