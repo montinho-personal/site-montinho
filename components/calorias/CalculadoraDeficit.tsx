@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import { guardaKcalParaMacros } from "@/lib/macros";
 import {
   ALTURA_MAX,
   ALTURA_MIN,
@@ -435,6 +436,25 @@ export default function CalculadoraDeficit({
                 </div>
 
                 <p className="text-gray-400 text-sm leading-relaxed mt-4">{NOTA_SEM_PROMESSA}</p>
+
+                {/* Ponte para a Calculadora de Macros. A meta usada é a da
+                    faixa moderada, que é a que aparece em destaque; o valor
+                    viaja em sessionStorage e não na URL. */}
+                <Link
+                  href="/ferramentas/calculadora-macros"
+                  onClick={() => {
+                    const moderada = FAIXAS_DEFICIT.find((f) => f.destaque);
+                    if (moderada) {
+                      const m = aplicaDeficit(resultado.tdee, moderada.percentualMax);
+                      guardaKcalParaMacros(m.min);
+                    }
+                    trackEvent("calorie_macros_click", { placement });
+                  }}
+                  className="inline-block mt-4 text-white text-sm font-semibold underline underline-offset-4 decoration-1 hover:opacity-80 transition-opacity min-h-[44px]"
+                  style={{ textDecorationColor: "#BA9E50" }}
+                >
+                  Distribuir minhas calorias em macros →
+                </Link>
               </div>
 
               {/* Como chegamos nesse resultado */}

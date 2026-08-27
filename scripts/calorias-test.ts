@@ -231,7 +231,25 @@ ok(
   chamadas.filter((c) => SENSIVEL.test(c)).join(" | ")
 );
 ok("nenhuma chamada de rede no componente", !/fetch\(|axios|XMLHttpRequest/.test(componente));
-ok("nada é gravado em storage", !/localStorage|sessionStorage/.test(componente));
+/**
+ * Storage: a regra ficou mais precisa quando a ponte para a Calculadora de
+ * Macros passou a existir. Nada é gravado passivamente — o único write é a
+ * meta calórica, e só quando a pessoa CLICA em "distribuir em macros". Não
+ * pode haver localStorage (que persiste), nem gravação fora de um onClick.
+ *
+ * Esta assertion nasceu falhando: o teste original proibia qualquer storage
+ * e pegou a mudança de comportamento na hora, que é exatamente o que ele
+ * tinha que fazer.
+ */
+ok("nunca usa localStorage", !/localStorage/.test(componente));
+const semImports = componente.replace(/^import .*$/gm, "");
+ok(
+  "o único write é a ponte para macros, dentro de um onClick",
+  !/setItem/.test(componente) &&
+    (semImports.match(/guardaKcalParaMacros\(/g) ?? []).length === 1 &&
+    /onClick=\{\(\) => \{[\s\S]*?guardaKcalParaMacros\(/.test(semImports),
+  "gravar a meta calórica sem ação explícita seria mudar o contrato de privacidade da ferramenta"
+);
 
 console.log("\n" + "=".repeat(64) + "\nACESSIBILIDADE E UX\n" + "=".repeat(64));
 

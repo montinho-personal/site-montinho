@@ -42,7 +42,8 @@ const itemListSchema = {
     { "@type": "ListItem", position: 5, name: "Calculadora de Proteína", url: `${SITE_URL}/ferramentas/calculadora-de-proteina` },
     { "@type": "ListItem", position: 6, name: "Calculadora de Déficit Calórico", url: `${SITE_URL}/ferramentas/calculadora-deficit-calorico` },
     { "@type": "ListItem", position: 7, name: "Calculadora de 1RM", url: `${SITE_URL}/ferramentas/calculadora-1rm` },
-    { "@type": "ListItem", position: 8, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: 8, name: "Calculadora de Macros", url: `${SITE_URL}/ferramentas/calculadora-macros` },
+    { "@type": "ListItem", position: 9, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -104,6 +105,15 @@ const FERRAMENTAS = [
     texto:
       "Informe uma carga e suas repetições para estimar seu 1RM, ver as cargas de 50% a 100% e descobrir exatamente quais anilhas colocar de cada lado da barra — considerando as que a sua academia tem.",
     quando: "Use no meio do treino, entre uma série e outra. Não é preciso testar carga máxima.",
+  },
+  {
+    href: "/ferramentas/calculadora-macros",
+    nome: "Calculadora de Macros",
+    pergunta: "Como distribuo minhas calorias?",
+    tempo: "30 segundos · sem cadastro",
+    texto:
+      "Informe suas calorias e seu peso para calcular proteínas, carboidratos e gorduras. Ao trocar a referência de proteína ou o percentual de gordura, o carboidrato se ajusta na hora — mostrando que os três dividem o mesmo orçamento.",
+    quando: "Use depois de já ter uma meta calórica. Se ainda não tem, comece pela calculadora de déficit.",
   },
   {
     href: "/pergunte-ao-montinho",
