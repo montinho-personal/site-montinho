@@ -398,8 +398,12 @@ export default function Consultoria() {
               <div key={index} className="text-center">
                 <div className="mb-4">
                   <span
-                    className="text-5xl font-bold text-white/15"
-                    style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                    className="text-5xl font-bold"
+                    style={{
+                      fontFamily: "var(--font-playfair), Georgia, serif",
+                      // Mesmo critério da home: 3,80:1, visível e secundário.
+                      color: "rgba(186, 158, 80, 0.65)",
+                    }}
                   >
                     {step.number}
                   </span>
