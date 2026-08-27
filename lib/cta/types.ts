@@ -44,7 +44,9 @@ export type CtaDestination =
   | "article"
   | "results"
   | "rotina"
-  | "revisao";
+  | "revisao"
+  | "academias"
+  | "academias";
 
 /** Variantes visuais. Todas compartilham o design system; mudam só o peso. */
 export type CtaVariant = "light" | "diagnostic" | "service" | "local";

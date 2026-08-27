@@ -111,13 +111,14 @@ export const ITENS: ItemGuia[] = [
     penseDuasVezes: "Você precisa de grande variedade de máquinas para uma rotina muito específica.",
   },
 
-  // ── Custo-benefício e bairro ──────────────────────────────────────────────
   {
     id: "panobianco-alphaville",
-    grupo: "bairro",
-    paraQuem: "Quem quer estrutura de rede consolidada sem pagar faixa premium.",
-    penseDuasVezes: "Você busca o menor preço possível ou, no outro extremo, serviço premium completo.",
+    grupo: "economicas",
+    paraQuem: "Quem quer preço baixo com estrutura de rede consolidada e horário que vai da madrugada ao fim da noite.",
+    penseDuasVezes: "Você espera atendimento individual incluído na mensalidade.",
   },
+
+  // ── Custo-benefício e bairro ──────────────────────────────────────────────
   {
     id: "nitrogym-alphaville",
     grupo: "bairro",

@@ -161,6 +161,35 @@ export default function AcademiasAlphavillePage() {
         </div>
       </section>
 
+      {/* Ponte para o comparador — depois dos grupos, nunca antes: quem ainda
+          não leu as opções não tem o que comparar. */}
+      <section className="pb-6 bg-black">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-7 sm:p-9">
+            <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: "#BA9E50" }} aria-hidden="true" />
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#BA9E50" }}>
+              Gratuito · sem cadastro
+            </p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white leading-tight mb-4" style={h}>
+              Ainda em dúvida entre duas ou três?
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-6">
+              Responda algumas perguntas sobre a sua rotina — em que região você
+              passa o dia, que horas consegue treinar, o que não pode faltar — e
+              veja quais destas academias mais combinam, critério por critério.
+              Sem nota, sem ranking: só o que bate e o que não bate com o que
+              você pediu.
+            </p>
+            <Link
+              href="/academia-ideal-alphaville"
+              className="inline-flex items-center justify-center bg-white text-black px-6 py-3.5 text-sm font-semibold tracking-wide hover:bg-gray-100 transition-colors min-h-[52px]"
+            >
+              Comparar academias <span aria-hidden="true">&nbsp;→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Conteúdo de apoio */}
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
