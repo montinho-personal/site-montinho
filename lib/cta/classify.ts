@@ -2,6 +2,7 @@ import type { BlogPost } from "@/lib/blog";
 import { CTA_REGISTRY } from "./registry";
 import { CTA_OVERRIDES } from "./overrides";
 import { artigoDeExecucao } from "@/lib/revisao";
+import { artigoDeAcademiaAlphaville } from "@/lib/academias/artigos";
 import type { CtaCluster, CtaDefinition, CtaPlan, CtaStage } from "./types";
 
 /**
@@ -221,7 +222,7 @@ const MID_BY_CLUSTER: Partial<Record<CtaCluster, string>> = {
   health: "ask_health",
   nutrition: "ask_nutrition",
   gym_generic: "ask_concept",
-  gym_local: "ask_concept",
+  gym_local: "academia_ideal",
   local_service: "ask_concept",
   local_other: "ask_concept",
   service_online: "ask_concept",
@@ -298,6 +299,12 @@ export function planCTAs(post: BlogPost, { renderEnd = true } = {}): CtaPlan {
     // O cluster "exercise" pega alguns artigos por colisão de palavra
     // ("abdominal" em como-perder-gordura-abdominal); ali o CTA volta a ser
     // o educativo. Dor e lesão nunca chegam aqui — ficam fora por regra.
+    // O comparador só cobre academias de Alphaville. Fora disso, o convite
+    // manda a pessoa responder oito perguntas para receber uma lista de outra
+    // cidade — pior do que não convidar.
+    if (midId === "academia_ideal" && !artigoDeAcademiaAlphaville(post)) {
+      midId = "ask_concept";
+    }
     if (midId === "revisao_execucao" && !artigoDeExecucao(post)) {
       midId = "ask_exercise";
     }

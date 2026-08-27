@@ -303,6 +303,15 @@ export const CTA_REGISTRY: Record<string, CtaDefinition> = {
     primary: ask(),
     secondary: diagnostic("Fazer o diagnóstico"),
   },
+  academia_ideal: {
+    id: "academia_ideal",
+    variant: "light",
+    eyebrow: "Gratuito · sem cadastro",
+    title: "Ainda na dúvida sobre qual academia?",
+    body:
+      "Responda algumas perguntas sobre a sua rotina — região, horário, o que não pode faltar — e veja quais academias de Alphaville mais combinam, com o motivo de cada uma.",
+    primary: { label: "Comparar academias", href: "/academia-ideal-alphaville", destination: "academias" },
+  },
 };
 
 export function getCta(id: string): CtaDefinition | null {

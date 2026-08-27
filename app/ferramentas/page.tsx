@@ -5,7 +5,7 @@ import { SITE_URL, blogPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Ferramentas Gratuitas de Treino",
   description:
-    "Quatro ferramentas gratuitas do Montinho: descubra seu perfil de treino, monte a estrutura que cabe na sua semana, mande um vídeo da sua execução e tire dúvidas de musculação. Sem cadastro.",
+    "Ferramentas gratuitas do Montinho: descubra seu perfil de treino, monte a estrutura que cabe na sua semana, mande um vídeo da sua execução, tire dúvidas de musculação e compare as academias de Alphaville. Sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas` },
   openGraph: {
     title: "Ferramentas Gratuitas de Treino | Montinho",
@@ -39,6 +39,7 @@ const itemListSchema = {
     { "@type": "ListItem", position: 2, name: "Treino Para Minha Rotina", url: `${SITE_URL}/treino-para-minha-rotina` },
     { "@type": "ListItem", position: 3, name: "Pergunte ao Montinho", url: `${SITE_URL}/pergunte-ao-montinho` },
     { "@type": "ListItem", position: 4, name: "Revisão Gratuita de Execução", url: `${SITE_URL}/revisao-de-execucao` },
+    { "@type": "ListItem", position: 5, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -84,6 +85,23 @@ const FERRAMENTAS = [
   },
 ];
 
+/**
+ * Ferramenta de alcance local, separada das outras de propósito. As quatro
+ * acima respondem perguntas de treino e servem qualquer pessoa; esta responde
+ * uma pergunta de localização e só faz sentido para quem está em Alphaville.
+ * Misturar as duas coisas na mesma lista faria a maioria dos leitores abrir
+ * uma ferramenta que não pode usar.
+ */
+const FERRAMENTA_LOCAL = {
+  href: "/academia-ideal-alphaville",
+  nome: "Qual Academia Combina com Você",
+  pergunta: "Onde eu treino em Alphaville?",
+  tempo: "8 perguntas · cerca de 1 minuto",
+  texto:
+    "Cruza o que você marcou como prioridade — região, horário, estacionamento, estilo de treino — com informações verificadas sobre cada academia de Alphaville, e mostra as que mais se encaixam, listando critério por critério o que bate e o que não bate.",
+  quando: "Use se você mora ou trabalha em Alphaville e ainda não decidiu onde treinar. Não elege a melhor academia — mostra qual combina com a sua rotina.",
+};
+
 export default function FerramentasPage() {
   return (
     <>
@@ -97,7 +115,7 @@ export default function FerramentasPage() {
             Gratuitas · sem cadastro
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5" style={h}>
-            Quatro ferramentas para sair do &ldquo;não sei o que fazer&rdquo;
+            Ferramentas para sair do &ldquo;não sei o que fazer&rdquo;
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed">
             Cada uma responde a uma pergunta diferente. Você não precisa usar
@@ -132,6 +150,35 @@ export default function FerramentasPage() {
               </Link>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Ferramenta local */}
+      <section className="pb-14 bg-black">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="border-t border-white/10 pt-12">
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-6" style={{ color: "#BA9E50" }}>
+              Só para quem é de Alphaville
+            </p>
+            <div className="relative border border-white/15 bg-gradient-to-b from-white/[0.05] to-transparent p-7 sm:p-9">
+              <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: "#BA9E50" }} aria-hidden="true" />
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#BA9E50" }}>
+                {FERRAMENTA_LOCAL.pergunta}
+              </p>
+              <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-2" style={h}>
+                {FERRAMENTA_LOCAL.nome}
+              </h2>
+              <p className="text-gray-400 text-sm mb-4">{FERRAMENTA_LOCAL.tempo}</p>
+              <p className="text-gray-300 leading-relaxed mb-4">{FERRAMENTA_LOCAL.texto}</p>
+              <p className="text-gray-400 text-sm leading-relaxed mb-6">{FERRAMENTA_LOCAL.quando}</p>
+              <Link
+                href={FERRAMENTA_LOCAL.href}
+                className="inline-flex items-center justify-center bg-white text-black px-6 py-3.5 text-sm font-semibold tracking-wide hover:bg-gray-100 transition-colors min-h-[52px]"
+              >
+                Comparar academias <span aria-hidden="true">&nbsp;→</span>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 

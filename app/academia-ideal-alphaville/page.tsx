@@ -8,18 +8,17 @@ import AcademiaQuiz from "@/components/academias/AcademiaQuiz";
 /**
  * Academia Ideal em Alphaville.
  *
- * NOINDEX E FORA DO MENU DE PROPÓSITO enquanto a base de dados não estiver
- * preenchida. A ferramenta funciona, mas recomendar com atributos "não
- * confirmado" entregaria exatamente o oposto do que ela promete. Assim que
- * `npx tsx scripts/academias-test.ts` acusar 60%+ de completude, basta remover
- * o bloco `robots` abaixo e adicionar a página ao sitemap e ao menu.
+ * Ficou noindex e fora do menu enquanto a base não tinha dados suficientes —
+ * recomendar com tudo "não confirmado" entregaria o oposto do que a página
+ * promete. Aberta em agosto de 2026, com a completude das unidades ativas
+ * acima do limiar. O aviso de preparação continua no código e volta sozinho
+ * se a base regredir (uma academia nova entra vazia, por exemplo).
  */
 export const metadata: Metadata = {
   title: "Qual Academia de Alphaville Combina com Você?",
   description:
     "Musculação, 24 horas, estacionamento, localização ou aulas? Responda algumas perguntas e descubra quais academias de Alphaville combinam mais com a sua rotina.",
   alternates: { canonical: `${SITE_URL}/academia-ideal-alphaville` },
-  robots: { index: false, follow: true },
 };
 
 const breadcrumbSchema = {
