@@ -18811,7 +18811,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-villa-solaia-infographic.svg" alt="Infográfico sobre Personal Trainer Villa Solaia Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Villa Solaia Alphaville | Montinho Personal" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-villa-solaia-capa.webp" alt="Arte de capa ilustrada: personal trainer conduzindo treino de casal em frente às casas do Villa Solaia, em Alphaville" title="Personal Trainer Villa Solaia Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino personalizado no seu condomínio, no Villa Solaia Alphaville.</figcaption>
 </figure>
 <p>O Villa Solaia tem uma identidade sofisticada em Alphaville — com arquitetura diferenciada e um padrão de vida elevado. O morador do Villa Solaia que busca personal trainer tem expectativas claras: atendimento individualizado, resultado concreto e profissional que entende o padrão de exigência do condomínio.</p>
 
@@ -19122,7 +19123,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-scenic-infographic.svg" alt="Infográfico sobre Personal Trainer Scenic Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Scenic Alphaville | Montinho Personal Train" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-scenic-capa.webp" alt="Arte de capa ilustrada: personal trainer orientando treino com halteres na área externa do condomínio Scenic, em Alphaville" title="Personal Trainer Scenic Alphaville — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino personalizado dentro do Scenic Alphaville.</figcaption>
 </figure>
 <p>O Scenic é um condomínio que combina localização estratégica em Alphaville com infraestrutura de alto padrão. Quem mora aqui tem um estilo de vida que inclui qualidade em todas as dimensões — e o corpo não fica de fora. O resultado no treino é uma expectativa legítima, não um luxo.</p>
 
@@ -21780,7 +21782,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/alongamento-antes-ou-depois-do-treino-infographic.svg" alt="Infográfico sobre Alongamento Antes ou Depois do Treino? A Resposta Definitiva — Montinho Personal Trainer" title="Alongamento Antes ou Depois do Treino? A Resposta Definitiva" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/alongamento-antes-ou-depois-do-treino-capa.webp" alt="Arte de capa: homem alongando antes do treino e depois do treino, comparando preparação e desempenho com recuperação e flexibilidade" title="Alongamento Antes ou Depois do Treino — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Alongar antes ou depois? O que muda em desempenho, recuperação e flexibilidade.</figcaption>
 </figure>
 <h2>Os dois tipos de alongamento</h2>
 <p>A confusão começa porque "alongamento" pode significar coisas diferentes:</p>
@@ -54408,7 +54411,8 @@ A pergunta certa não é "app ou personal?" — é "o que eu realmente preciso p
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/beach-tennis-e-musculacao-infographic.svg" alt="Infográfico Beach Tennis e Musculação — Montinho Personal Trainer" title="Beach Tennis e Musculação: Como Combinar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/beach-tennis-e-musculacao-capa.webp" alt="Arte de capa: atletas jogando beach tennis na areia e treinando musculação, ilustrando força, explosão e prevenção de lesões" title="Beach Tennis e Musculação — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Beach tennis e musculação: como combinar para mais força, explosão e menos lesão.</figcaption>
 </figure>
 
 ## Por Que Musculação Melhora o Beach Tennis
@@ -56095,7 +56099,8 @@ O afundo é um exercício que deve estar no programa de qualquer praticante sér
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/agachamento-sumo-infographic.svg" alt="Infográfico Agachamento Sumo — Montinho Personal Trainer" title="Agachamento Sumo vs Convencional" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/agachamento-sumo-capa.webp" alt="Arte de capa ilustrada: homem executando agachamento sumô com kettlebell, com destaque para postura, glúteos e adutores" title="Agachamento Sumo — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Agachamento sumô: técnica, músculos envolvidos e quando usar no treino.</figcaption>
 </figure>
 
 ## Sumo vs Convencional: Diferenças Musculares
@@ -76418,7 +76423,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Todo novembro, o mercado fitness monta o mesmo espetáculo: matrículas pela metade do preço, planos anuais que custam uma mensalidade, pacotes "imperdíveis" de tudo. E todo janeiro, as academias lotam de gente que pagou — e sumiu em março. Esse é o segredo sujo do setor: <strong>o modelo de negócio de muita academia é você pagar e não aparecer</strong>.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/black-friday-academia-vale-a-pena-infographic.svg" alt="Infográfico sobre Black Friday de Academia Vale a Pena? — Montinho Personal Trainer" title="Black Friday de Academia Vale a Pena?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/black-friday-academia-vale-a-pena-capa.webp" alt="Arte de capa: homem avaliando planos de academia em tablet com etiqueta de Black Friday e até 60% off, comparando preço, contrato e taxas" title="Black Friday de Academia Vale a Pena — Montinho Personal Trainer" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Black Friday de academia: como avaliar planos, descontos e armadilhas de contrato.</figcaption>
 </figure>
 
 <p>Então, vale a pena comprar academia na Black Friday? A resposta curta: <strong>vale — se você comprar com estratégia, não com euforia</strong>. Desconto real existe. Armadilha disfarçada de desconto também. A diferença entre os dois é o que decide se novembro foi o mês em que você investiu na sua saúde ou o mês em que você doou dinheiro para uma academia.</p>
