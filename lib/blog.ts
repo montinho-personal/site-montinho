@@ -4679,7 +4679,7 @@ export const blogPosts = ([
       "A resposta não é 3 séries de 10. O volume semanal por músculo é o principal determinante do crescimento — mas existe um teto. Entenda a faixa que funciona e como aplicar no seu treino.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-07-29",
+    updatedAt: "2026-08-27",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -5099,7 +5099,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Existe um volume mínimo abaixo do qual você não cresce, e um volume máximo acima do qual você só acumula fadiga. A ciência tem nome para esses dois pontos — e encontrar o seu é o que separa o progresso da estagnação.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-07-30",
+    updatedAt: "2026-08-27",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -5866,7 +5866,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "A pergunta certa não é quantos dias você treina por semana — é quantas vezes cada músculo é estimulado. A resposta muda completamente o resultado.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-29",
+    updatedAt: "2026-08-27",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -22145,6 +22145,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Guia prático para montar um treino ABC eficiente — com exemplos de exercícios, séries, repetições e a lógica por trás da divisão.",
     category: "Treinamento",
     date: "2026-06-27",
+    updatedAt: "2026-08-27",
     readTime: "8 min",
     author: "Montinho",
     tags: ["treino ABC", "programa de musculação", "como montar treino", "divisão de treino", "musculação"],
@@ -45368,6 +45369,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     readTime: "13 min",
     author: "Montinho",
     date: "2026-06-28",
+    updatedAt: "2026-08-27",
     faq: [
       { question: "O que é treino upper lower?", answer: "O treino upper/lower (superior/inferior) é uma divisão em que você separa o corpo em membros superiores e inferiores, treinando cada parte 2 vezes por semana em 4 sessões semanais." },
       { question: "Upper lower é bom para iniciantes?", answer: "O upper/lower funciona bem para iniciantes a intermediários. Para iniciantes absolutos, um full body 3x/semana pode ser mais eficiente nos primeiros 3–6 meses. A partir daí, o upper/lower é uma progressão natural excelente." },
