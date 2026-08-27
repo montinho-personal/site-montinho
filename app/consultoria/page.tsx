@@ -494,6 +494,11 @@ export default function Consultoria() {
             Me manda uma mensagem. Vamos conversar sobre o que faz mais sentido
             para a sua realidade — a conversa inicial é gratuita.
           </p>
+          <p className="text-gray-400 mb-8 text-lg">
+            No fim, é isso que você está contratando: alguém que sabe onde o seu
+            treino pede um <strong className="text-black">chalalá</strong> — e
+            onde ele só ia te cansar à toa.
+          </p>
           <a
             href={getWhatsAppUrl()}
             target="_blank"

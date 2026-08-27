@@ -11,15 +11,18 @@ import { pickFilosofia } from "@/lib/filosofia";
  */
 export default function NotaMetodo({
   chave,
+  cluster,
   href = "/consultoria",
   rotulo = "acompanhamento personalizado",
 }: {
   /** Slug ou identificador da página — decide qual variante aparece. */
   chave: string;
+  /** Cluster do conteúdo — algumas variantes não cabem em dor ou saúde. */
+  cluster?: string;
   href?: string;
   rotulo?: string;
 }) {
-  const f = pickFilosofia(chave);
+  const f = pickFilosofia(chave, cluster);
   const [antes, depois = ""] = f.texto.split("{link}");
 
   return (

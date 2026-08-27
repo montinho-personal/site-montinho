@@ -382,6 +382,15 @@ export default function MinhaHistoria() {
                   você é fraco. É porque ninguém te mostrou o caminho certo ainda.
                   E é exatamente para isso que estou aqui.
                 </p>
+                <p>
+                  Quem treina comigo já ouviu a palavra:{" "}
+                  <strong className="text-white">chalalá</strong>. É como eu chamo
+                  o algo a mais que faz diferença — a carga que sobe, a técnica no
+                  fim da série, a repetição que você jurava não ter. Não é segredo,
+                  e faço questão de dizer isso: segredo é o que alguém esconde,
+                  chalalá é o que você acrescenta de propósito. O básico bem feito
+                  já leva você longe. O chalalá é o que faz o caminho ser seu.
+                </p>
               </div>
             </section>
           </div>

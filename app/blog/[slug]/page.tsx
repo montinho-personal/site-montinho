@@ -244,7 +244,7 @@ export default async function BlogPost({ params }: Props) {
           {/* Nota de método: fecha o conteúdo com a filosofia antes de qualquer
               próxima ação. Só em artigos que de fato dão orientação — o
               cluster vem do mesmo classificador que escolhe o CTA. */}
-          {clusterRecebeNota(cta.cluster) && <NotaMetodo chave={post.slug} />}
+          {clusterRecebeNota(cta.cluster) && <NotaMetodo chave={post.slug} cluster={cta.cluster} />}
 
           {/* Dedupe: o embed do Pergunte só aparece quando o CTA do meio já
               não leva para lá — senão seriam duas caixas pedindo a mesma ação

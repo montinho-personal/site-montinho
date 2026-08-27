@@ -72,6 +72,11 @@ const faqs = [
       "Tenho contato direto via WhatsApp. Respondo dúvidas sobre treino e alimentação, acompanho o progresso através de fotos e dados que você me envia, e faço ajustes sempre que necessário. Não sou o tipo de personal que some até a próxima sessão — estou disponível para te apoiar ao longo de todo o processo.",
   },
   {
+    question: "O que é esse tal de \u201cchalalá\u201d?",
+    answer:
+      "É como eu chamo o algo a mais que faz diferença. Pode ser uma carga que sobe, uma técnica no fim da série, uma repetição que você não ia fazer, um detalhe de execução que muda o exercício inteiro. Se deu uma incrementada na parada, deu um chalalá. E vale dizer o que ele não é: chalalá não é segredo nem fórmula mágica — é justamente o contrário, é o extra que você coloca de propósito, sabendo por quê. Treino bom já funciona sem ele; o chalalá é o que faz o treino bom virar treino seu.",
+  },
+  {
     question: "Como começo?",
     answer:
       "O primeiro passo é uma conversa. Me mande uma mensagem pelo WhatsApp, me conte seu objetivo e vamos marcar uma conversa inicial sem compromisso. Sem pressão, sem pitch de venda — apenas uma conversa para entender se faz sentido trabalharmos juntos.",

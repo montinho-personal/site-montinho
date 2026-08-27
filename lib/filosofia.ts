@@ -21,9 +21,23 @@ export interface Filosofia {
   id: string;
   titulo: string;
   texto: string;
+  /**
+   * Clusters em que esta variante NÃO deve aparecer. Existe por causa da
+   * variante do chalalá: "mais uma repetição que você jurava não ter" é
+   * bom-humor em conteúdo de treino e é insensível em conteúdo de dor,
+   * lesão ou saúde mental, onde o tom precisa ser sóbrio.
+   */
+  evitarEm?: string[];
 }
 
 export const FILOSOFIAS: Filosofia[] = [
+  {
+    id: "chalala",
+    titulo: "E onde entra o chalalá",
+    evitarEm: ["pain", "health", "glp1"],
+    texto:
+      "Tem uma palavra que eu uso direto com os alunos: chalalá — o algo a mais que faz diferença. A carga que sobe, a técnica no fim da série, a repetição que você não ia fazer. E repare: chalalá não é segredo. Segredo é o que alguém esconde; chalalá é o que você acrescenta de propósito, em cima de uma estratégia que já funciona. Saber onde colocar esse extra, e onde ele só ia te cansar à toa, é o trabalho do {link}.",
+  },
   {
     id: "direcao",
     titulo: "Uma palavra sobre o que você acabou de ler",
@@ -91,10 +105,17 @@ export const FILOSOFIAS: Filosofia[] = [
  * página). Determinístico: a mesma página mostra sempre o mesmo texto, e
  * páginas diferentes tendem a mostrar textos diferentes.
  */
-export function pickFilosofia(key: string): Filosofia {
+export function pickFilosofia(key: string, cluster?: string): Filosofia {
+  // O conjunto elegível muda com o cluster, mas o sorteio continua estável:
+  // a mesma página mostra sempre o mesmo texto.
+  const elegiveis = cluster
+    ? FILOSOFIAS.filter((f) => !f.evitarEm?.includes(cluster))
+    : FILOSOFIAS;
+  const pool = elegiveis.length > 0 ? elegiveis : FILOSOFIAS;
+
   let h = 0;
   for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0;
-  return FILOSOFIAS[h % FILOSOFIAS.length];
+  return pool[h % pool.length];
 }
 
 /**
