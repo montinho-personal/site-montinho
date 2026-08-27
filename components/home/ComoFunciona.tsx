@@ -51,8 +51,13 @@ export default function ComoFunciona() {
               >
                 <div className="flex-shrink-0">
                   <span
-                    className="text-4xl font-bold text-white/10 group-hover:text-white/20 transition-colors duration-300 leading-none"
-                    style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                    className="text-4xl font-bold transition-colors duration-300 leading-none group-hover:!text-[#BA9E50]"
+                    style={{
+                      fontFamily: "var(--font-playfair), Georgia, serif",
+                      // 3,80:1 sobre preto. Número de passo é sequência, não
+                      // enfeite — e em texto grande o critério AA é 3:1.
+                      color: "rgba(186, 158, 80, 0.65)",
+                    }}
                   >
                     {step.number}
                   </span>
