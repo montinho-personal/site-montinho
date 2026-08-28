@@ -125,6 +125,14 @@ export type AnalyticsEvent =
    */
   | "meal_planner_view"
   | "meal_planner_start"
+  /**
+   * A pessoa marcou uma situação que pede acompanhamento, leu a orientação
+   * e escolheu seguir com a simulação. Disparado SEM parâmetro de situação:
+   * gestação, idade, condição clínica e histórico de transtorno alimentar
+   * são dados de saúde e não entram em evento nenhum. Saber quantas pessoas
+   * seguem já responde a pergunta de produto.
+   */
+  | "meal_planner_special_continue"
   | "meal_planner_goal_selected"
   | "meal_planner_preferences_complete"
   | "meal_plan_generated"
