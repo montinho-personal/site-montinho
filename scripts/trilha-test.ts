@@ -179,5 +179,21 @@ console.log("\n" + "=".repeat(64) + "\nA ROTINA BIFURCA COM HONESTIDADE\n" + "="
   ok("o evento routine_volume_click está declarado", ler("lib/analytics.ts").includes('"routine_volume_click"'));
 }
 
+console.log("\n" + "=".repeat(64) + "\nA ÚLTIMA EMENDA: CARGA ENTREGA NA EXECUÇÃO\n" + "=".repeat(64));
+
+/**
+ * O 1RM (passo 4) terminava em artigo + consultoria, e o passo 5 — a
+ * Revisão de Execução, que é gratuita e desemboca na conversa — nunca era
+ * oferecido. É a melhor emenda do caminho: quem acabou de descobrir a
+ * carga está se perguntando se aguenta o peso com técnica.
+ */
+{
+  const onerm = ler("components/onerm/CalculadoraOneRM.tsx").replace(/\/\*[\s\S]*?\*\//g, "");
+  ok("o 1RM tem o bloco 'Próximo passo' para a Revisão de Execução", /Próximo passo/.test(onerm) && /revisao-de-execucao/.test(onerm) && /Revisar minha execução/.test(onerm));
+  ok("a copy explica o porquê (carga sem técnica é risco)", /técnica errada é risco/.test(onerm));
+  ok("e diz que é gratuito — a barreira certa é zero", /É gratuito|grátis/.test(onerm));
+  ok("o evento one_rm_review_click está declarado", ler("lib/analytics.ts").includes('"one_rm_review_click"'));
+}
+
 console.log("\n" + "=".repeat(64) + (falhas === 0 ? "\nTODOS OS TESTES PASSARAM" : `\n${falhas} TESTE(S) FALHARAM`));
 if (falhas > 0) process.exit(1);
