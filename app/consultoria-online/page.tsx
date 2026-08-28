@@ -400,7 +400,7 @@ export default function ConsultoriaOnlineLP() {
             </h2>
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="border border-white/10 rounded-2xl p-7 bg-black/40">
-                <h3 className="text-gray-300 font-bold uppercase text-xs tracking-[0.15em] mb-5">Apps e planilhas genéricas</h3>
+                <h3 className="text-gray-300 font-bold uppercase text-xs tracking-[0.15em] mb-5" style={{ fontFamily: "var(--font-inter), sans-serif" }}>Apps e planilhas genéricas</h3>
                 <ul className="space-y-3 text-gray-400 text-sm">
                   <li>❌ O mesmo treino para milhares de pessoas</li>
                   <li>❌ Ninguém vê se você executa certo</li>
@@ -409,7 +409,7 @@ export default function ConsultoriaOnlineLP() {
                 </ul>
               </div>
               <div className="border border-[#BA9E50]/50 rounded-2xl p-7 bg-[#BA9E50]/[0.06] shadow-[0_0_40px_rgba(186,158,80,0.08)]">
-                <h3 className="text-[#BA9E50] font-bold uppercase text-xs tracking-[0.15em] mb-5">Consultoria Montinho</h3>
+                <h3 className="text-[#BA9E50] font-bold uppercase text-xs tracking-[0.15em] mb-5" style={{ fontFamily: "var(--font-inter), sans-serif" }}>Consultoria Montinho</h3>
                 <ul className="space-y-3 text-gray-200 text-sm">
                   <li>✅ Plano criado exclusivamente para você</li>
                   <li>✅ Correções da sua execução por vídeo</li>
