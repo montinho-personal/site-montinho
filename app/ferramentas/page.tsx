@@ -47,7 +47,8 @@ const itemListSchema = {
     { "@type": "ListItem", position: 9, name: "Calculadora de Macros", url: `${SITE_URL}/ferramentas/calculadora-macros` },
     { "@type": "ListItem", position: 10, name: "Calculadora de Volume de Treino", url: `${SITE_URL}/ferramentas/calculadora-volume-treino` },
     { "@type": "ListItem", position: 11, name: "Montinho FitChef", url: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
-    { "@type": "ListItem", position: 12, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: 12, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` },
+    { "@type": "ListItem", position: 13, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -136,6 +137,15 @@ const FERRAMENTAS = [
     texto:
       "Adicione os dias e os exercícios que você faz e a ferramenta identifica os músculos, soma as séries semanais de cada grupo, mostra em quantas sessões ele é treinado e onde o volume está concentrado.",
     quando: "Use quando quiser saber quantas séries por músculo você realmente faz — sem precisar contar na mão.",
+  },
+  {
+    href: "/ferramentas/teste-mobilidade",
+    nome: "Destrave Seu Corpo",
+    pergunta: "Alguma amplitude está atrapalhando meus exercícios?",
+    tempo: "5 minutos · sem cadastro",
+    texto:
+      "Cinco testes simples, feitos com uma parede e uma cadeira, mostram um mapa das suas regiões. No fim você recebe um protocolo de dois ou três exercícios — e o motivo de cada um estar ali.",
+    quando: "Use quando o calcanhar levanta no agachamento, o braço não sobe confortável ou você sente o corpo rígido.",
   },
   {
     href: "/ferramentas/monte-seu-cardapio",

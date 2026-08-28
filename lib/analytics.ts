@@ -36,6 +36,29 @@ export type AnalyticsEvent =
   | "ask_montinho_whatsapp_click"
   | "ask_montinho_no_answer"
   | "ask_montinho_error"
+  /**
+   * Destrave Seu Corpo (funil do teste de mobilidade).
+   *
+   * Nenhum evento carrega resposta de teste ou de triagem — só categorias.
+   * As respostas dizem onde o corpo da pessoa tem limitação e o que ela sente:
+   * é dado de saúde, e dado de saúde não sai do aparelho dela.
+   */
+  | "mobility_tool_view"
+  | "mobility_start"
+  | "mobility_screening_block"
+  | "mobility_quick_test"
+  | "mobility_full_test"
+  | "mobility_test_complete"
+  | "mobility_result_view"
+  | "mobility_protocol_generated"
+  | "mobility_protocol_duration"
+  | "mobility_plan_b"
+  | "mobility_save"
+  | "mobility_whatsapp"
+  | "mobility_share"
+  | "mobility_retest_start"
+  | "mobility_retest_complete"
+  | "mobility_restart"
 
   /**
    * Fontes preferidas do Google. Só existem dois eventos, e a ausência de um
