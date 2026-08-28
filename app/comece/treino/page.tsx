@@ -96,7 +96,7 @@ export default function ComeceTreinoPage() {
       {/* ── A dor, na primeira pessoa ──────────────────────────────── */}
       <section className="py-12 border-b border-white/10" style={{ background: "#0d0d0d" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-gray-300 leading-relaxed mb-4">
+          <p className="text-gray-300 leading-relaxed mb-3">
             Eu sei o que é entrar na academia sem saber o que fazer. Copiar o
             treino de um vídeo, trocar de ficha toda semana porque um
             influencer disse que a anterior estava errada, treinar muito e
@@ -150,7 +150,7 @@ export default function ComeceTreinoPage() {
           <h2 className="text-2xl font-bold text-white mb-4" style={h}>
             Onde o gratuito termina — dito com todas as letras
           </h2>
-          <p className="text-gray-300 leading-relaxed mb-4">
+          <p className="text-gray-300 leading-relaxed mb-3">
             Nenhuma ferramenta aqui monta os exercícios do seu treino. Isso
             não é limitação — é honestidade: escolher exercícios, séries e
             progressão para o <em>seu</em> corpo, com a <em>sua</em> execução

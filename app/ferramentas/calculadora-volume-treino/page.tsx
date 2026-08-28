@@ -101,12 +101,12 @@ export default function CalculadoraVolumePage() {
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>
               Quantas séries por semana fazer para cada músculo?
             </h2>
-            <p className="text-gray-300 leading-relaxed mb-4">
+            <p className="text-gray-300 leading-relaxed mb-3">
               Não existe um número universal. O que a literatura permite dizer é que há uma relação dose-resposta:
               mais séries semanais tendem a produzir mais hipertrofia em média, até certo ponto, e depois os
               ganhos adicionais vão diminuindo enquanto a demanda de recuperação continua subindo.
             </p>
-            <p className="text-gray-300 leading-relaxed mb-5">
+            <p className="text-gray-300 leading-relaxed mb-3">
               O <a href={FONTES.acsm.url} target="_blank" rel="noopener noreferrer" className={ln}>{FONTES.acsm.rotulo}</a>{" "}
               — {FONTES.acsm.resumo} A meta-análise de{" "}
               <a href={FONTES.schoenfeld.url} target="_blank" rel="noopener noreferrer" className={ln}>

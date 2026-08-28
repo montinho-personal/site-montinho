@@ -370,7 +370,7 @@ export default function ConsultoriaOnlineLP() {
               <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
                 Eu não aprendi isso em livro. Eu vivi.
               </h2>
-              <p className="text-gray-300 leading-relaxed mb-4">
+              <p className="text-gray-300 leading-relaxed mb-3">
                 Já fui obeso. Passei pelo efeito sanfona, comecei e desisti várias
                 vezes, achei que nunca conseguiria mudar. Até entender que o problema
                 não era falta de força de vontade —{" "}

@@ -254,7 +254,7 @@ export default function FerramentasPage() {
                 {f.nome}
               </h2>
               <p className="text-gray-400 text-sm mb-4">{f.tempo}</p>
-              <p className="text-gray-300 leading-relaxed mb-4">{f.texto}</p>
+              <p className="text-gray-300 leading-relaxed mb-3">{f.texto}</p>
               <p className="text-gray-400 text-sm leading-relaxed mb-6">{f.quando}</p>
               <Link
                 href={f.href}
@@ -283,7 +283,7 @@ export default function FerramentasPage() {
                 {FERRAMENTA_LOCAL.nome}
               </h2>
               <p className="text-gray-400 text-sm mb-4">{FERRAMENTA_LOCAL.tempo}</p>
-              <p className="text-gray-300 leading-relaxed mb-4">{FERRAMENTA_LOCAL.texto}</p>
+              <p className="text-gray-300 leading-relaxed mb-3">{FERRAMENTA_LOCAL.texto}</p>
               <p className="text-gray-400 text-sm leading-relaxed mb-6">{FERRAMENTA_LOCAL.quando}</p>
               <Link
                 href={FERRAMENTA_LOCAL.href}

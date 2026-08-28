@@ -254,12 +254,12 @@ export default function LandingPage() {
               <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
                 Eu sei exatamente como é começar do zero.
               </h2>
-              <p className="text-gray-300 leading-relaxed mb-4">
+              <p className="text-gray-300 leading-relaxed mb-3">
                 Durante muito tempo, eu também olhava no espelho e não gostava do
                 que via. Já fui obeso. Passei pelo efeito sanfona. Comecei diversas
                 vezes. Desisti algumas delas. Achei que nunca conseguiria mudar.
               </p>
-              <p className="text-gray-300 leading-relaxed mb-4">
+              <p className="text-gray-300 leading-relaxed mb-3">
                 Até perceber que o problema não era falta de força de vontade.{" "}
                 <strong className="text-white">Era falta de um método.</strong>
               </p>

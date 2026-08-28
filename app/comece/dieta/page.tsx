@@ -93,7 +93,7 @@ export default function ComeceDietaPage() {
       {/* ── A dor, na primeira pessoa ──────────────────────────────── */}
       <section className="py-12 border-b border-white/10" style={{ background: "#0d0d0d" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-gray-300 leading-relaxed mb-4">
+          <p className="text-gray-300 leading-relaxed mb-3">
             Eu já estive do seu lado da tela. Pesquisando &ldquo;quantas
             calorias devo comer&rdquo; à meia-noite, abrindo cinco abas que se
             contradiziam, anotando uma dieta de revista que não tinha nada a

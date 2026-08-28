@@ -282,7 +282,7 @@ export default function CalculadoraProteina({
                       </li>
                     ))}
                   </ul>
-                  <p className="text-gray-400 text-xs leading-relaxed mb-2">{NOTA_INDUSTRIALIZADOS}</p>
+                  <p className="text-gray-400 text-xs leading-relaxed mb-3">{NOTA_INDUSTRIALIZADOS}</p>
                   <p className="text-gray-500 text-xs leading-relaxed">{NOTA_FONTES}</p>
                 </div>
               )}

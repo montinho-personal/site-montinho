@@ -193,10 +193,13 @@ export default function ComecePage() {
           <p className="text-2xl sm:text-3xl text-white font-bold leading-snug mb-4" style={h}>
             &ldquo;{BORDOES.impossivelCompleta}&rdquo;
           </p>
-          <p className="text-gray-400 text-sm leading-relaxed max-w-xl mx-auto mb-10">
+          <p className="text-gray-400 text-sm leading-relaxed max-w-xl mx-auto mb-3">
             {BORDOES.impossivelNaoEh}
           </p>
-          <p className="text-gray-300 leading-relaxed mb-6">
+          {/* Separação entre BLOCOS de ideia vem do container (mt-10), não de
+              uma margem gigante num parágrafo — foi isso que quebrou o ritmo
+              do texto em relação ao resto do site. */}
+          <p className="text-gray-300 leading-relaxed mb-3 mt-10">
             O caminho acima é o &ldquo;o que precisa ser feito&rdquo;. E quando
             você quiser o {BORDOES.chalala} — o acompanhamento de quem já
             percorreu tudo isso no próprio corpo —{" "}

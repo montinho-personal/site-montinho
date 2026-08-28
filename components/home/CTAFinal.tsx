@@ -16,14 +16,14 @@ export default function CTAFinal() {
           Sua transformação começa com uma conversa.
         </h2>
 
-        <p className="text-lg text-gray-400 leading-relaxed max-w-xl mx-auto mb-10">
+        <p className="text-lg text-gray-400 leading-relaxed max-w-xl mx-auto mb-3">
           Sem compromisso, sem julgamento. Apenas uma conversa para entender
           onde você está e como posso te ajudar a chegar onde quer.
         </p>
 
         {/* O bordão entra aqui e em mais quatro lugares do site — nunca em
             conteúdo de dor, lesão ou saúde, onde o tom é sóbrio de propósito. */}
-        <p className="text-base text-gray-400 leading-relaxed max-w-xl mx-auto mb-10 -mt-6">
+        <p className="text-base text-gray-400 leading-relaxed max-w-xl mx-auto mb-10">
           Treinar você já treina, ou já sabe que precisa. O que costuma faltar é
           o <strong className="text-black">chalalá</strong> — aquele algo a mais
           que faz diferença.
