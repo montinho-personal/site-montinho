@@ -23,7 +23,7 @@ import {
   selecionaTestes,
 } from "@/lib/mobilidade/motor";
 import { NOTA_FOAM_ROLLER } from "@/lib/mobilidade/exercicios";
-import { figurasDoTeste } from "@/lib/mobilidade/figuras";
+import { figuraDoExercicio, figurasDoTeste } from "@/lib/mobilidade/figuras";
 import FiguraTeste from "./Figura";
 import {
   DIFICULDADES,
@@ -832,10 +832,24 @@ function Bloco({ titulo, freq, itens }: {
       <ol className="flex flex-col gap-4">
         {itens.map(({ exercicio, dose }, i) => (
           <li key={exercicio.id}>
-            <p className="text-white font-semibold text-[15px] mb-1">
-              {i + 1}. {exercicio.nome}
-            </p>
-            <p className="text-[#BA9E50] text-sm mb-2" style={sans}>{dose}</p>
+            {/* A figura acompanha o NOME e a DOSE, não o texto inteiro. Quando
+                ela ficava ao lado de tudo, a coluna de texto sobrava com uns
+                quarenta por cento da largura no celular e cada frase quebrava
+                em três linhas — o card virava uma torre. As instruções ficam
+                em largura cheia logo abaixo. */}
+            <div className="flex items-start gap-3 mb-2">
+              {figuraDoExercicio(exercicio.id) && (
+                <div className="w-[78px] flex-none">
+                  <FiguraTeste figura={figuraDoExercicio(exercicio.id)!} compacta />
+                </div>
+              )}
+              <div className="min-w-0">
+                <p className="text-white font-semibold text-[15px] mb-1">
+                  {i + 1}. {exercicio.nome}
+                </p>
+                <p className="text-[#BA9E50] text-sm" style={sans}>{dose}</p>
+              </div>
+            </div>
             {/* Lista de definições, e não parágrafos: são três fatos rotulados
                 sobre o mesmo exercício, lidos de relance no meio da série. O
                 <dl> é o HTML correto para isso e mantém o card compacto no

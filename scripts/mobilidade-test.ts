@@ -33,7 +33,7 @@ import type { Contexto, EstadoRegiao, Resposta } from "../lib/mobilidade/tipos";
 import { blogPosts } from "../lib/blog";
 import { ARTIGOS_COM_TESTE_MOBILIDADE, SLUGS_COM_TESTE_MOBILIDADE } from "../lib/mobilidade/artigos";
 import { AVISO_HISTORICO } from "../lib/mobilidade/historico";
-import { figurasDoTeste } from "../lib/mobilidade/figuras";
+import { FIGURAS_EXERCICIO, figuraDoExercicio, figurasDoTeste } from "../lib/mobilidade/figuras";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -401,6 +401,49 @@ check("a informação nunca depende só da cor: há título escrito e alt",
   /figura.titulo/.test(figuraComp) && /aria-label=\{figura.alt\}/.test(figuraComp));
 check("o componente do teste renderiza as duas figuras",
   /figurasDoTeste\(testeAtual\.id\)/.test(comp));
+
+// ─── 13b ── AS FIGURAS DOS EXERCÍCIOS ───────────────────────────────────────
+bloco("13b. TODO EXERCÍCIO DO PROTOCOLO TEM DESENHO");
+
+check("os 13 exercícios do banco têm figura",
+  EXERCICIOS.every((e) => figuraDoExercicio(e.id) !== null),
+  EXERCICIOS.filter((e) => !figuraDoExercicio(e.id)).map((e) => e.id).join());
+check("nenhuma figura sobrando sem exercício",
+  Object.keys(FIGURAS_EXERCICIO).every((id) => EXERCICIOS.some((e) => e.id === id)));
+
+const figsEx = Object.values(FIGURAS_EXERCICIO);
+check("toda figura de exercício tem alt descritivo",
+  figsEx.every((f) => f.alt.length > 70));
+check("nenhum alt de exercício se repete",
+  new Set(figsEx.map((f) => f.alt)).size === figsEx.length);
+
+/**
+ * As figuras de exercício aparecem pequenas ao lado do texto. Rótulo de cinco
+ * pixels não se lê — seria enfeite fingindo ser informação, e é por isso que
+ * elas não têm nenhum.
+ */
+check("figura de exercício não carrega rótulo (não caberia)",
+  figsEx.every((f) => f.anotacoes.length === 0));
+
+/** Movimento contínuo precisa de seta; posição sustentada, não. */
+const dinamicos = EXERCICIOS.filter((e) => e.tipo !== "estatico");
+check("todo exercício dinâmico mostra a direção do movimento",
+  dinamicos.every((e) => figuraDoExercicio(e.id)?.movimento !== undefined),
+  dinamicos.filter((e) => !figuraDoExercicio(e.id)?.movimento).map((e) => e.id).join());
+
+const foraEx = figsEx.flatMap((f) =>
+  [
+    ...f.segmentos.flatMap((s) => [[s[0], s[1]], [s[2], s[3]]]),
+    ...(f.destaque ? [[f.destaque.cx, f.destaque.cy]] : []),
+    ...(f.movimento ? [[f.movimento.x1, f.movimento.y1], [f.movimento.x2, f.movimento.y2]] : []),
+  ].filter(([x, y]) => x < 2 || x > 98 || y < 2 || y > 98),
+);
+check("nada sai do quadro nas figuras de exercício", foraEx.length === 0,
+  foraEx.map((p) => p.join(",")).join(" | "));
+
+check("o card do protocolo renderiza a figura", /figuraDoExercicio\(exercicio\.id\)/.test(comp));
+check("a figura do card usa o modo compacto (sem legenda repetindo o nome)",
+  /compacta/.test(comp) && /compacta = false/.test(figuraComp));
 
 // ─── 14 ── INTEGRAÇÃO COM O SITE ────────────────────────────────────────────
 bloco("13. A FERRAMENTA ESTÁ LIGADA AO SITE");
