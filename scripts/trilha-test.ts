@@ -129,7 +129,11 @@ console.log("\n" + "=".repeat(64) + "\nO DIAGNÓSTICO ENTREGA O PASSO 2\n" + "="
   ok("o resultado tem o bloco 'Próximo passo' para a Rotina", /Próximo passo/.test(diag) && /treino-para-minha-rotina/.test(diag) && /Montar minha rotina de treino/.test(diag));
   const iAnalise = diag.indexOf("Quero uma análise do Montinho");
   const iProximo = diag.indexOf("Montar minha rotina de treino");
-  ok("o convite de análise vem antes (é a conversão), a trilha depois", iAnalise > -1 && iProximo > iAnalise);
+  ok(
+    "a trilha vem ANTES do convite de análise (passo 1 avança a jornada; a venda tem momentos melhores adiante)",
+    iProximo > -1 && iAnalise > iProximo,
+    "pedir WhatsApp antes de entregar caminho, no primeiro contato, é atrito que derruba os dois números"
+  );
   ok("o evento diagnostic_routine_click está declarado", ler("lib/analytics.ts").includes('"diagnostic_routine_click"'));
 }
 
