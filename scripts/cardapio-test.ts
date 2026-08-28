@@ -38,6 +38,7 @@ import {
   geraSemana,
   listaDeCompras,
   perfilNutricional,
+  proximaVersao,
   sugestoesGordura,
   totalDia,
   totalRefeicao,
@@ -330,6 +331,61 @@ ok(
   }),
   "a variação troca por equivalente calórico; se sair da margem, a troca está errada"
 );
+
+/**
+ * "Gerar outra versão" num motor determinístico é uma contradição: regerar
+ * com as mesmas respostas devolve o mesmo prato, e o botão parece quebrado.
+ * A variação tem que ser pedida explicitamente — e continuar equilibrada.
+ */
+{
+  const v1 = proximaVersao(dia, p7);
+  ok("existe uma próxima versão do dia", v1 !== null);
+  if (v1) {
+    const ids = (c: typeof dia) => c.refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId)).join(",");
+    ok("a outra versão é realmente diferente do cardápio original", ids(v1) !== ids(dia), ids(v1));
+    const val = validaCardapio(v1);
+    ok(
+      `a outra versão continua equilibrada (${Math.round(totalDia(v1).kcal)} kcal, nível ${val.nivel})`,
+      val.nivel !== "incompativel",
+      JSON.stringify(val)
+    );
+    ok(
+      "a outra versão respeita dieta, restrições e porções caseiras",
+      v1.refeicoes.every((r) =>
+        r.itens.every((it) => {
+          const a = ALIMENTO_CARDAPIO_POR_ID.get(it.alimentoId)!;
+          return permitido(a, p7.dieta, p7.restricoes) && Math.round(it.porcoes / a.passo) * a.passo === it.porcoes && it.porcoes <= a.maxPorcoes;
+        })
+      )
+    );
+  }
+  ok(
+    "pedir outra versão é determinístico como o resto do motor",
+    JSON.stringify(proximaVersao(dia, p7)) === JSON.stringify(proximaVersao(dia, p7))
+  );
+  {
+    const componenteBotao = fs.readFileSync("components/cardapio/MonteSeuCardapio.tsx", "utf8");
+    ok(
+      "o botão 'gerar outra versão' pede variação, não regera o mesmo",
+      /Gerar outra vers/.test(componenteBotao) && /onClick=\{\(\) => outraVersao\(pedido\)\}/.test(componenteBotao),
+      "chamar gerar() ali devolveria o cardápio idêntico — botão que não faz nada"
+    );
+    ok("e quando não há variação possível, a ferramenta diz isso", /SEM_VARIACAO/.test(componenteBotao));
+  }
+}
+
+/**
+ * Rolagem: um wizard muda de altura a cada etapa. Sem reancorar, o clique em
+ * "recomeçar" no fim de uma tela longa deixa a pessoa no texto que vem
+ * DEPOIS da ferramenta — foi exatamente o que aconteceu em produção.
+ */
+{
+  const comp = fs.readFileSync("components/cardapio/MonteSeuCardapio.tsx", "utf8");
+  ok("o card reancora a cada mudança de etapa", /ancoraNoTopo\(raiz\.current\)/.test(comp) && /\[carregado, e\.etapa, e\.momentoIdx\]/.test(comp));
+  ok("e reserva a folga do header fixo", /scroll-mt-\d+/.test(comp));
+  const quiz = fs.readFileSync("components/academias/AcademiaQuiz.tsx", "utf8");
+  ok("o quiz de academia reancora do mesmo jeito", /ancoraNoTopo\(raiz\.current\)/.test(quiz) && /scroll-mt-\d+/.test(quiz));
+}
 
 const lista = listaDeCompras(repetida);
 ok("a lista de compras cobre todos os alimentos da semana", lista.length === new Set(repetida[0].refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId))).size);

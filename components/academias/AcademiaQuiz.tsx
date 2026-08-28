@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { recomendar, resumoRespostas, type Respostas } from "@/lib/academias/motor";
 import { regioesComAcademia } from "@/lib/academias/base";
 import { ESTILO_LABEL, PRECO_LABEL, REGIAO_LABEL, type Estilo } from "@/lib/academias/tipos";
+import { ancoraNoTopo } from "@/lib/ferramentas/ancora";
 
 /**
  * Quiz da Academia Ideal.
@@ -56,6 +57,20 @@ const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
 
 export default function AcademiaQuiz() {
   const [etapa, setEtapa] = useState<Etapa>("intro");
+  /**
+   * Reancora a cada troca de etapa. Sem isso, "refazer" — clicado no fim de
+   * uma tela longa de resultado — encolhe o quiz e deixa a pessoa parada no
+   * conteúdo que vem depois dele.
+   */
+  const raiz = useRef<HTMLDivElement>(null);
+  const primeiraAncora = useRef(true);
+  useEffect(() => {
+    if (primeiraAncora.current) {
+      primeiraAncora.current = false;
+      return;
+    }
+    ancoraNoTopo(raiz.current);
+  }, [etapa]);
   const [resp, setResp] = useState<Partial<Respostas>>({ estilos: [], personal: "nao" });
 
   const responder = (i: number, v: string) => {
@@ -88,7 +103,7 @@ export default function AcademiaQuiz() {
 
   if (etapa === "intro") {
     return (
-      <div className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-7 sm:p-10 relative">
+      <div ref={raiz} className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-7 sm:p-10 relative scroll-mt-24">
         <div className="absolute top-0 left-0 h-[2px] w-24" style={{ background: "#BA9E50" }} aria-hidden="true" />
         <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-4" style={h}>
           Não procure a melhor academia de Alphaville. Procure a melhor para a sua rotina.
@@ -114,7 +129,7 @@ export default function AcademiaQuiz() {
     const prog = ((etapa + 1) / PERGUNTAS.length) * 100;
     const sel = resp[p.id];
     return (
-      <div className="border border-white/15 bg-white/[0.03] p-6 sm:p-9">
+      <div ref={raiz} className="border border-white/15 bg-white/[0.03] p-6 sm:p-9 scroll-mt-24">
         <div className="flex items-center justify-between mb-2">
           <p className="text-xs text-gray-400">{etapa + 1} de {PERGUNTAS.length}</p>
           {etapa > 0 && (
@@ -158,7 +173,7 @@ export default function AcademiaQuiz() {
   const rotulos = ["Melhor encaixe com suas prioridades", "Outra boa opção", "Vale considerar se..."];
 
   return (
-    <div className="space-y-6">
+    <div ref={raiz} className="space-y-6 scroll-mt-24">
       <div className="border border-white/15 bg-white/[0.03] p-6 sm:p-8">
         <p className="text-white font-semibold mb-3">Você disse que:</p>
         <ul className="list-disc pl-5 space-y-1 text-gray-300 text-sm">
