@@ -132,7 +132,7 @@ const FERRAMENTAS = [
     href: "/ferramentas/calculadora-volume-treino",
     nome: "Calculadora de Volume de Treino",
     pergunta: "Meu treino está bem distribuído?",
-    tempo: "monte sua semana · sem cadastro",
+    tempo: "1 minuto no modo rápido · sem cadastro",
     texto:
       "Adicione os dias e os exercícios que você faz e a ferramenta identifica os músculos, soma as séries semanais de cada grupo, mostra em quantas sessões ele é treinado e onde o volume está concentrado.",
     quando: "Use quando quiser saber quantas séries por músculo você realmente faz — sem precisar contar na mão.",
@@ -141,7 +141,7 @@ const FERRAMENTAS = [
     href: "/ferramentas/monte-seu-cardapio",
     nome: "Montinho FitChef",
     pergunta: "Como transformo a meta em comida?",
-    tempo: "2 minutos · sem cadastro",
+    tempo: "3 a 5 minutos · sem cadastro",
     texto:
       "Sua meta de calorias, sua rotina e os alimentos que você gosta viram uma sugestão de cardápio com porções caseiras, substituições, plano semanal e lista de compras — priorizando o que você já come.",
     quando: "Use depois de saber suas calorias. É a continuação natural da calculadora de déficit e da de macros.",

@@ -664,7 +664,9 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
         >
           <p className="text-gray-400 text-sm mb-4 max-w-xl leading-relaxed">
             Marque o que já faz parte da sua rotina — o cardápio prioriza
-            esses. Pode pular se preferir uma sugestão do zero.
+            esses. É a etapa que mais melhora o resultado, e também a única
+            opcional: dá para gerar agora e ajustar depois pelo botão de
+            trocar.
           </p>
           <div className="flex flex-wrap gap-2 mb-6">
             {ALIMENTOS_CARDAPIO.filter(
@@ -709,6 +711,26 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
           >
             {e.momentoIdx < momentosPerguntaveis.length - 1 ? "Próxima refeição" : "Montar meu cardápio"}
           </button>
+          {/**
+           * A saída explícita. A etapa de habituais é a mais longa do wizard
+           * (uma tela por refeição) e a única opcional — deixar isso só num
+           * texto cinza fazia a pessoa sentir que precisava responder tudo,
+           * e abandono no meio é o modo de falha nº 1 de qualquer wizard.
+           * Aqui ela pula TODAS as refeições restantes de uma vez.
+           */}
+          {e.momentoIdx < momentosPerguntaveis.length - 1 && (
+            <button
+              type="button"
+              onClick={() => {
+                trackEvent("meal_planner_preferences_complete", { placement, pulou: "sim" });
+                avanca({ etapa: "habituais" });
+                gerar(pedido);
+              }}
+              className="ml-4 text-gray-300 text-sm underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors min-h-[44px]"
+            >
+              Pular e gerar agora
+            </button>
+          )}
         </Tela>
       )}
 

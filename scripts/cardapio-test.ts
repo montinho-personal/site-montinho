@@ -565,6 +565,27 @@ ok("está no sitemap", fs.readFileSync("app/sitemap.ts", "utf8").includes("/ferr
   ok("o bloco explica o porquê (estímulo, não só comida)", /músculo vem do\s+estímulo/.test(compGanho.replace(/\n\s+/g, " ")));
   ok("o evento meal_training_click está declarado", fs.readFileSync("lib/analytics.ts", "utf8").includes('"meal_training_click"'));
 }
+/**
+ * Honestidade de tempo e saída explícita. A etapa de habituais é a mais
+ * longa do wizard (uma tela por refeição) e a única opcional — sem um botão
+ * de verdade para pular, a pessoa sente que precisa responder tudo, e
+ * abandono no meio é o modo de falha nº 1. O card na central também não
+ * pode prometer menos tempo do que a ferramenta leva.
+ */
+{
+  const comp = fs.readFileSync("components/cardapio/MonteSeuCardapio.tsx", "utf8").replace(/\/\*[\s\S]*?\*\//g, "");
+  /** JSX quebra frases em várias linhas: normalizar antes de casar texto. */
+  const corrido = comp.replace(/\s+/g, " ");
+  ok("existe o botão de pular a etapa de habituais", /Pular e gerar agora/.test(comp));
+  ok("pular gera o cardápio de fato", /Pular e gerar agora/.test(comp) && /avanca\(\{ etapa: "habituais" \}\); gerar\(pedido\)/.test(corrido));
+  ok("o texto diz que a etapa é opcional e ajustável depois", /única opcional/.test(corrido) && /botão de trocar/.test(corrido));
+  const hub = fs.readFileSync("app/ferramentas/page.tsx", "utf8");
+  ok(
+    "o card não promete 2 minutos para um wizard de 7 telas",
+    !/tempo: "2 minutos · sem cadastro"/.test(hub) && /3 a 5 minutos/.test(hub),
+    "prometer menos do que se entrega gera abandono no meio"
+  );
+}
 ok("está na central /ferramentas", fs.readFileSync("app/ferramentas/page.tsx", "utf8").includes("/ferramentas/monte-seu-cardapio"));
 {
   const paginaNome = fs.readFileSync("app/ferramentas/monte-seu-cardapio/page.tsx", "utf8");
