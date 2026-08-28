@@ -1,3 +1,4 @@
+import { MOBILIDADE_NO_AR } from "@/lib/mobilidade/lancamento";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, blogPosts } from "@/lib/blog";
@@ -47,8 +48,11 @@ const itemListSchema = {
     { "@type": "ListItem", position: 9, name: "Calculadora de Macros", url: `${SITE_URL}/ferramentas/calculadora-macros` },
     { "@type": "ListItem", position: 10, name: "Calculadora de Volume de Treino", url: `${SITE_URL}/ferramentas/calculadora-volume-treino` },
     { "@type": "ListItem", position: 11, name: "Montinho FitChef", url: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
-    { "@type": "ListItem", position: 12, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` },
-    { "@type": "ListItem", position: 13, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
+    ...(MOBILIDADE_NO_AR
+      ? [{ "@type": "ListItem", position: 12, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      : []),
+    { "@type": "ListItem", position: MOBILIDADE_NO_AR ? 13 : 12, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -138,7 +142,8 @@ const FERRAMENTAS = [
       "Adicione os dias e os exercícios que você faz e a ferramenta identifica os músculos, soma as séries semanais de cada grupo, mostra em quantas sessões ele é treinado e onde o volume está concentrado.",
     quando: "Use quando quiser saber quantas séries por músculo você realmente faz — sem precisar contar na mão.",
   },
-  {
+  // O card do teste de mobilidade some junto com a chave de lançamento.
+  ...(MOBILIDADE_NO_AR ? [{
     href: "/ferramentas/teste-mobilidade",
     nome: "Destrave Seu Corpo",
     pergunta: "Alguma amplitude está atrapalhando meus exercícios?",
@@ -146,7 +151,7 @@ const FERRAMENTAS = [
     texto:
       "Cinco testes simples, feitos com uma parede e uma cadeira, mostram um mapa das suas regiões. No fim você recebe um protocolo de dois ou três exercícios — e o motivo de cada um estar ali.",
     quando: "Use quando o calcanhar levanta no agachamento, o braço não sobe confortável ou você sente o corpo rígido.",
-  },
+  }] : []),
   {
     href: "/ferramentas/monte-seu-cardapio",
     nome: "Montinho FitChef",

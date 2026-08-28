@@ -1,3 +1,4 @@
+import { MOBILIDADE_NO_AR } from "@/lib/mobilidade/lancamento";
 import type { MetadataRoute } from "next";
 import { blogPosts, SITE_URL } from "@/lib/blog";
 
@@ -99,12 +100,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    {
-      url: `${SITE_URL}/ferramentas/teste-mobilidade`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
+    // O teste de mobilidade só entra quando a chave de lançamento abrir.
+    ...(MOBILIDADE_NO_AR
+      ? [{
+          url: `${SITE_URL}/ferramentas/teste-mobilidade`,
+          lastModified: new Date(),
+          changeFrequency: "monthly" as const,
+          priority: 0.8,
+        }]
+      : []),
     {
       url: `${SITE_URL}/academia-ideal-alphaville`,
       lastModified: new Date(),

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { MOBILIDADE_NO_AR } from "@/lib/mobilidade/lancamento";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
 import TesteMobilidade from "@/components/mobilidade/TesteMobilidade";
@@ -65,6 +67,7 @@ const ln =
   "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
 
 export default function TesteMobilidadePage() {
+  if (!MOBILIDADE_NO_AR) notFound();
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
