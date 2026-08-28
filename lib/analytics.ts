@@ -80,6 +80,7 @@ export type AnalyticsEvent =
   | "tdee_calculator_complete"
   | "tdee_activity_change"
   | "tdee_methodology_open"
+  | "tdee_gain_open"
   | "tdee_deficit_click"
   | "tdee_macros_click"
   | "tdee_article_click"

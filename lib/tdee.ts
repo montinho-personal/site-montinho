@@ -79,6 +79,28 @@ export const NOTA_ATIVIDADE_AMPLA =
 export const NOTA_BMR_RMR =
   "Tecnicamente, taxa metabólica basal (TMB) e taxa metabólica de repouso não são exatamente a mesma medida — a basal é aferida em condições mais estritas. Calculadoras online usam TMB como o termo mais conhecido para essa estimativa de repouso.";
 
+// ─── Ganho de massa: o superávit ─────────────────────────────────────────────
+
+/**
+ * A faixa de superávit para ganho de massa — 200 a 400 kcal acima do gasto.
+ *
+ * Os números vêm do próprio acervo (artigo "como ganhar massa muscular"):
+ * superávit moderado é suficiente para maximizar o ganho muscular, e
+ * superávits grandes aceleram o ganho de gordura sem acelerar
+ * proporcionalmente o de músculo. A ferramenta usa a MESMA faixa que os
+ * artigos ensinam — número que muda de página para página não é referência.
+ */
+export const SUPERAVIT_MIN = 200;
+export const SUPERAVIT_MAX = 400;
+
+export const NARRATIVA_GANHO =
+  "Para ganhar massa magra, o caminho é comer um pouco ACIMA do gasto — não muito acima. Um superávit moderado dá energia para treinar e construir tecido novo; superávits grandes aceleram o ganho de gordura, não o de músculo. Proteína adequada e treino de força fazem parte da equação.";
+
+/** A faixa de ingestão para ganho, calculada sobre o gasto da pessoa. */
+export function faixaGanho(tdee: Faixa): Faixa {
+  return { min: tdee.min + SUPERAVIT_MIN, max: tdee.max + SUPERAVIT_MAX };
+}
+
 // ─── Comparação de atividade ─────────────────────────────────────────────────
 
 /**

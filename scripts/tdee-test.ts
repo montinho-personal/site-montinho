@@ -17,7 +17,11 @@ import { blogPosts } from "../lib/blog";
 import * as calorias from "../lib/calorias";
 import {
   ARTIGOS_COM_CALCULADORA_TDEE,
+  NARRATIVA_GANHO,
   NIVEIS,
+  SUPERAVIT_MAX,
+  SUPERAVIT_MIN,
+  faixaGanho,
   arredondaKcal,
   calculaTDEE,
   calculaTMB,
@@ -145,6 +149,31 @@ for (const [re, motivo] of PROIBIDO) {
   ok(`nunca diz: ${motivo}`, !re.test(tudo), (tudo.match(re) ?? [""])[0]);
 }
 ok("as palavras honestas estão lá: estimativa, tenderia, ponto de partida", /estimativa/i.test(tudo) && /tenderia/.test(libTdeeSrc) && /ponto de partida/.test(libTdeeSrc));
+
+console.log("\n" + "=".repeat(64) + "\nA NARRATIVA DE GANHO DE MASSA\n" + "=".repeat(64));
+
+/**
+ * A opção "quero ganhar massa magra" usa a MESMA faixa de superávit que o
+ * acervo ensina (200–400 kcal) — número que muda de página para página não
+ * é referência. E parte do começo conservador: em superávit, errar para
+ * mais custa gordura.
+ */
+{
+  ok("a faixa de superávit é a do acervo: 200 a 400 kcal", SUPERAVIT_MIN === 200 && SUPERAVIT_MAX === 400);
+  ok(
+    "o acervo realmente ensina essa faixa (o artigo diz 200 a 400)",
+    /superávit calórico moderado \(200 a 400 kcal/.test(ler("lib/blog.ts")),
+    "se o artigo mudar a faixa, a ferramenta tem que mudar junto"
+  );
+  const g = faixaGanho({ min: 2671.8125, max: 2671.8125 });
+  ok("a faixa de ganho soma sobre o gasto da pessoa", Math.abs(g.min - 2871.8125) < 1e-6 && Math.abs(g.max - 3071.8125) < 1e-6);
+  ok("a narrativa explica o porquê do moderado", /ACIMA do gasto/.test(NARRATIVA_GANHO) && /gordura/.test(NARRATIVA_GANHO));
+  ok("as três direções existem: emagrecer, manter e ganhar", /Quero emagrecer/.test(componente) && /Quero manter/.test(componente) && /ganhar massa magra/.test(componente));
+  ok("a meta de ganho parte do começo conservador da faixa (+200)", /tdee\.min \+ SUPERAVIT_MIN/.test(componente));
+  ok("o painel de ganho leva para macros E para o FitChef", /objetivo: "ganhar"/.test(componente) && /monte-seu-cardapio/.test(componente));
+  ok("o painel linka o artigo de calorias para ganhar massa", /calorias-para-ganhar-massa-muscular/.test(componente));
+  ok("nunca chama o superávit de prescrição individual", !/seu superávit ideal|superávit ideal para você/i.test(componente));
+}
 
 console.log("\n" + "=".repeat(64) + "\nPRIVACIDADE E ANALYTICS\n" + "=".repeat(64));
 
