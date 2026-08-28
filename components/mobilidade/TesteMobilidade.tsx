@@ -23,6 +23,8 @@ import {
   selecionaTestes,
 } from "@/lib/mobilidade/motor";
 import { NOTA_FOAM_ROLLER } from "@/lib/mobilidade/exercicios";
+import { figurasDoTeste } from "@/lib/mobilidade/figuras";
+import FiguraTeste from "./Figura";
 import {
   DIFICULDADES,
   NOME_REGIAO,
@@ -476,7 +478,17 @@ export default function TesteMobilidade() {
               </h2>
               <p className="text-gray-400 text-sm mb-5">{testeAtual.porqueImporta}</p>
 
-              {/* espaço reservado para o vídeo do Montinho (v2) */}
+              {/* As duas figuras vêm ANTES do texto: quem está de pé com o
+                  celular na mão olha o desenho e já monta a posição. O texto
+                  fica para conferir o detalhe. */}
+              {figurasDoTeste(testeAtual.id) && (
+                <div className="grid grid-cols-2 gap-3 mb-5">
+                  {figurasDoTeste(testeAtual.id)!.map((f) => (
+                    <FiguraTeste key={f.tipo} figura={f} />
+                  ))}
+                </div>
+              )}
+
               <div className="border border-white/10 bg-black/40 p-4 mb-5 text-sm leading-relaxed flex flex-col gap-2">
                 <p className="text-gray-300">
                   <strong className="text-white">Posição:</strong> {testeAtual.posicaoInicial}
