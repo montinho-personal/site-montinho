@@ -78,5 +78,27 @@ ok(
   fora.map((p) => `${p.arquivo}:${p.linha} usa mb-${p.mb}`).join("\n           ")
 );
 
+console.log("\n" + "=".repeat(64) + "\nO MENU MOBILE PRECISA ROLAR\n" + "=".repeat(64));
+
+/**
+ * O bug: o menu mobile vive dentro de um <header> `fixed`. Conteúdo fixo
+ * mais alto que a tela fica INALCANÇÁVEL — não existe barra de rolagem para
+ * ele. Medido no navegador: 1.130 px de conteúdo em 780 px visíveis, ou
+ * seja, 350 px de menu que simplesmente não existiam no celular (o
+ * atendimento local e o botão de WhatsApp inteiros).
+ */
+{
+  const header = fs.readFileSync("components/layout/Header.tsx", "utf8");
+  ok("o menu mobile tem altura limitada e rolagem própria", /max-h-\[calc\(100dvh-4rem\)\][\s\S]{0,80}overflow-y-auto/.test(header));
+  ok(
+    "usa dvh, não vh (a barra do navegador do celular muda de altura)",
+    /100dvh/.test(header) && !/max-h-\[calc\(100vh/.test(header),
+    "com vh o fim do menu fica atrás da barra de endereço"
+  );
+  ok("a rolagem não vaza para a página atrás", /overscroll-contain/.test(header));
+  ok("menu aberto trava a rolagem do corpo e devolve ao fechar", /document\.body\.style\.overflow = "hidden"/.test(header) && /document\.body\.style\.overflow = anterior/.test(header));
+  ok("Escape fecha o menu", /e\.key === "Escape"/.test(header));
+}
+
 console.log("\n" + "=".repeat(64) + (falhas === 0 ? "\nTODOS OS TESTES PASSARAM" : `\n${falhas} TESTE(S) FALHARAM`));
 if (falhas > 0) process.exit(1);

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
@@ -22,6 +22,7 @@ const navLinks = [
  * ainda está decidindo — enterrá-las no rodapé só alcança quem rola até o fim.
  */
 const toolLinks = [
+  { href: "/comece", label: "Comece Aqui", hint: "O caminho completo, do zero ao plano" },
   { href: "/diagnostico", label: "Diagnóstico Montinho", hint: "Descubra seu perfil em 1 minuto" },
   { href: "/treino-para-minha-rotina", label: "Treino Para Minha Rotina", hint: "A divisão que cabe na sua semana" },
   { href: "/pergunte-ao-montinho", label: "Pergunte ao Montinho", hint: "Tire dúvidas de treino na hora" },
@@ -37,6 +38,27 @@ const localLinks = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  /**
+   * Menu aberto trava a página atrás e responde ao Escape.
+   *
+   * Sem a trava, o gesto de rolar o menu "vaza" para a página e a pessoa
+   * perde o lugar; ao fechar, ela reaparece num ponto que não escolheu. O
+   * Escape é o atalho que todo menu modal deve ter — e custa três linhas.
+   */
+  useEffect(() => {
+    if (!isMenuOpen) return;
+    const anterior = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const aoTeclar = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsMenuOpen(false);
+    };
+    window.addEventListener("keydown", aoTeclar);
+    return () => {
+      document.body.style.overflow = anterior;
+      window.removeEventListener("keydown", aoTeclar);
+    };
+  }, [isMenuOpen]);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-white/10">
@@ -158,9 +180,23 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/**
+       * Mobile Menu
+       *
+       * O container PRECISA de altura limitada e rolagem própria: o header é
+       * `fixed`, e conteúdo fixo que passa da altura da tela fica
+       * inalcançável — não existe barra de rolagem para ele. Era o bug: o
+       * menu terminava no meio das ferramentas e o resto (atendimento local,
+       * WhatsApp) não existia para quem usava celular.
+       *
+       * `100dvh` e não `100vh`: no celular a barra de endereço encolhe e
+       * volta, e `vh` congela na altura MAIOR — com `vh` o fim do menu
+       * ficaria escondido atrás da barra do navegador. `4rem` é a altura da
+       * barra (h-16). `overscroll-contain` impede que, ao chegar no fim do
+       * menu, o gesto continue rolando a página atrás dele.
+       */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-black border-t border-white/10">
+        <div className="lg:hidden bg-black border-t border-white/10 max-h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain">
           {/* Search field in mobile menu */}
           <div className="px-4 pt-4 pb-2">
             <SearchBar onClose={() => setIsMenuOpen(false)} />
