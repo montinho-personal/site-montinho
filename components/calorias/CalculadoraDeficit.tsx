@@ -81,6 +81,13 @@ export default function CalculadoraDeficit({
   const raiz = useRef<HTMLDivElement>(null);
   const jaCompletou = useRef(false);
   const [veioDaTdee, setVeioDaTdee] = useState(false);
+  /**
+   * A faixa ESCOLHIDA — o título sempre disse "escolha uma faixa", mas os
+   * cards eram divs que não escolhiam nada (só registravam analytics). A
+   * escolha agora existe, começa na moderada (a referência prática) e é o
+   * que as pontes para macros e cardápio levam adiante.
+   */
+  const [faixaSel, setFaixaSel] = useState<"leve" | "moderado" | "maior">("moderado");
 
   /**
    * Travessia TMB/TDEE → déficit: consome o pacote de dados (leitura
@@ -180,8 +187,9 @@ export default function CalculadoraDeficit({
 
       {veioDaTdee && (
         <p className="text-sm mb-6 -mt-3" style={{ color: "#BA9E50" }}>
-          Seus dados vieram da Calculadora de TMB e Gasto Calórico — o gasto
-          abaixo é o mesmo que você acabou de ver. Pode editar qualquer campo.
+          Seus dados vieram da Calculadora de TMB e Gasto Calórico
+          {resultado ? ` — seu gasto estimado é ≈ ${formataFaixa(resultado.tdee)} kcal/dia` : ""}. Escolha
+          abaixo o tamanho do corte; pode editar qualquer campo.
         </p>
       )}
 
@@ -430,12 +438,20 @@ export default function CalculadoraDeficit({
                         ? `${arredondaKcal(cortadoMin).toLocaleString("pt-BR")}`
                         : `${arredondaKcal(cortadoMin).toLocaleString("pt-BR")}–${arredondaKcal(cortadoMax).toLocaleString("pt-BR")}`;
 
+                    const escolhida = faixaSel === f.id;
                     return (
-                      <div
+                      <button
+                        type="button"
                         key={f.id}
-                        onClick={() => trackEvent("calorie_deficit_select", { placement, faixa: f.id })}
-                        className={`border p-5 ${
-                          f.destaque ? "border-[#BA9E50]/60 bg-[#BA9E50]/[0.06]" : "border-white/15"
+                        aria-pressed={escolhida}
+                        onClick={() => {
+                          if (!escolhida) trackEvent("calorie_deficit_select", { placement, faixa: f.id });
+                          setFaixaSel(f.id);
+                        }}
+                        className={`border p-5 text-left w-full transition-colors ${
+                          escolhida
+                            ? "border-[#BA9E50] bg-[#BA9E50]/[0.08]"
+                            : "border-white/15 hover:border-white/35"
                         }`}
                       >
                         <div className="flex items-baseline justify-between gap-3 mb-3">
@@ -443,7 +459,9 @@ export default function CalculadoraDeficit({
                             className="text-[11px] font-semibold tracking-[0.18em] uppercase"
                             style={{ color: "#BA9E50" }}
                           >
+                            {escolhida && <span aria-hidden="true">✓ </span>}
                             {f.titulo}
+                            {f.destaque && <span className="text-gray-500 normal-case tracking-normal font-normal"> · referência prática</span>}
                           </p>
                           <p className="text-gray-400 text-sm font-medium whitespace-nowrap">{pct}</p>
                         </div>
@@ -464,7 +482,7 @@ export default function CalculadoraDeficit({
                             {AVISO_META_BAIXA}
                           </p>
                         )}
-                      </div>
+                      </button>
                     );
                   })}
                 </div>
@@ -485,16 +503,21 @@ export default function CalculadoraDeficit({
                     Próximo passo
                   </p>
                   <p className="text-gray-200 text-sm leading-relaxed mb-3">
-                    Sua meta está definida. Agora distribua essas calorias em
-                    proteína, carboidrato e gordura — é o passo 3 do caminho da
-                    dieta, e sua meta já vai preenchida.
+                    Sua meta está definida{(() => {
+                      const f = FAIXAS_DEFICIT.find((x) => x.id === faixaSel);
+                      if (!f) return "";
+                      const m = aplicaDeficit(resultado.tdee, f.percentualMax);
+                      return ` — ≈ ${formataFaixa(m)} kcal/dia, com o ${f.titulo.toLowerCase()}`;
+                    })()}. Agora distribua essas calorias em proteína,
+                    carboidrato e gordura — é o passo 3 do caminho da dieta, e
+                    sua meta já vai preenchida.
                   </p>
                   <Link
                     href="/ferramentas/calculadora-macros"
                     onClick={() => {
-                      const moderada = FAIXAS_DEFICIT.find((f) => f.destaque);
-                      if (moderada) {
-                        const m = aplicaDeficit(resultado.tdee, moderada.percentualMax);
+                      const f = FAIXAS_DEFICIT.find((x) => x.id === faixaSel);
+                      if (f) {
+                        const m = aplicaDeficit(resultado.tdee, f.percentualMax);
                         guardaKcalParaMacros(m.min);
                       }
                       trackEvent("calorie_macros_click", { placement });
@@ -509,9 +532,9 @@ export default function CalculadoraDeficit({
                     <Link
                       href="/ferramentas/monte-seu-cardapio"
                       onClick={() => {
-                        const moderada = FAIXAS_DEFICIT.find((f) => f.destaque);
-                        if (moderada) {
-                          const m = aplicaDeficit(resultado.tdee, moderada.percentualMax);
+                        const f = FAIXAS_DEFICIT.find((x) => x.id === faixaSel);
+                        if (f) {
+                          const m = aplicaDeficit(resultado.tdee, f.percentualMax);
                           guardaKcalParaMacros(m.min);
                         }
                         if (peso !== null) guardaPesoParaProteina(peso);
