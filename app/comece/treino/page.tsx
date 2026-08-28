@@ -83,7 +83,8 @@ export default function ComeceTreinoPage() {
             O caminho do treino · 5 passos · gratuito
           </p>
           <h1 className="text-3xl sm:text-5xl font-bold text-white leading-tight mb-6" style={h}>
-            Do &ldquo;por onde eu começo?&rdquo; à barra carregada com confiança
+            Do &ldquo;por onde eu começo?&rdquo; ao &ldquo;eu sei o que estou
+            fazendo&rdquo;
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
             Cinco passos em ordem: descubra seu perfil, monte a divisão que
