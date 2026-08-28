@@ -44,7 +44,7 @@ const itemListSchema = {
     { "@type": "ListItem", position: 7, name: "Calculadora de 1RM", url: `${SITE_URL}/ferramentas/calculadora-1rm` },
     { "@type": "ListItem", position: 8, name: "Calculadora de Macros", url: `${SITE_URL}/ferramentas/calculadora-macros` },
     { "@type": "ListItem", position: 9, name: "Calculadora de Volume de Treino", url: `${SITE_URL}/ferramentas/calculadora-volume-treino` },
-    { "@type": "ListItem", position: 10, name: "Monte seu Cardápio", url: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
+    { "@type": "ListItem", position: 10, name: "Montinho FitChef", url: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
     { "@type": "ListItem", position: 11, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
@@ -128,7 +128,7 @@ const FERRAMENTAS = [
   },
   {
     href: "/ferramentas/monte-seu-cardapio",
-    nome: "Monte seu Cardápio",
+    nome: "Montinho FitChef",
     pergunta: "Como transformo a meta em comida?",
     tempo: "2 minutos · sem cadastro",
     texto:

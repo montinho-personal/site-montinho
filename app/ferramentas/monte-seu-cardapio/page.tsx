@@ -6,7 +6,10 @@ import { PERFIS_REFEICAO, TOLERANCIA_KCAL } from "@/lib/cardapio/motor";
 import MonteSeuCardapio from "@/components/cardapio/MonteSeuCardapio";
 
 /**
- * Monte seu Cardápio — página própria.
+ * Montinho FitChef (Monte seu Cardápio) — página própria. O nome é FitChef;
+ * a frase "monte seu cardápio com o Montinho" fica como tagline, e a URL não
+ * muda com o batismo — trocar slug por nome de marca custaria a indexação já
+ * conquistada.
  *
  * Landing editorial + ferramenta, atendendo a intenção "como montar um
  * cardápio" nas duas formas: quem quer fazer, faz; quem quer entender, lê.
@@ -21,12 +24,12 @@ import MonteSeuCardapio from "@/components/cardapio/MonteSeuCardapio";
  * não faz.
  */
 export const metadata: Metadata = {
-  title: "Monte seu Cardápio: Calorias, Porções e Refeições",
+  title: "Montinho FitChef: Monte seu Cardápio, Calorias e Porções",
   description:
     "Informe sua meta, sua rotina e os alimentos que você gosta. A ferramenta monta uma sugestão de cardápio com calorias, proteínas, porções caseiras e substituições. Gratuito, sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
   openGraph: {
-    title: "Monte seu Cardápio com o Montinho",
+    title: "Montinho FitChef — monte seu cardápio com o Montinho",
     description:
       "Sua meta de calorias vira comida de verdade: cardápio com porções caseiras, substituições, plano semanal e lista de compras. Gratuito, sem cadastro.",
     url: `${SITE_URL}/ferramentas/monte-seu-cardapio`,
@@ -41,7 +44,7 @@ const breadcrumbSchema = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
     { "@type": "ListItem", position: 2, name: "Ferramentas", item: `${SITE_URL}/ferramentas` },
-    { "@type": "ListItem", position: 3, name: "Monte seu Cardápio", item: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
+    { "@type": "ListItem", position: 3, name: "Montinho FitChef", item: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
   ],
 };
 
@@ -91,9 +94,12 @@ export default function MonteSeuCardapioPage() {
           <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-5" style={{ color: "#BA9E50" }}>
             Gratuito · sem cadastro
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5" style={h}>
-            Monte seu cardápio com o Montinho
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-2" style={h}>
+            Montinho FitChef
           </h1>
+          <p className="text-base sm:text-lg font-medium mb-5" style={{ color: "#BA9E50" }}>
+            Monte seu cardápio com o Montinho
+          </p>
           <p className="text-gray-300 text-lg leading-relaxed">
             Informe sua meta, sua rotina e os alimentos que você gosta. A
             ferramenta monta uma sugestão alimentar com calorias, proteínas,
