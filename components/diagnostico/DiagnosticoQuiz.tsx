@@ -227,6 +227,37 @@ export default function DiagnosticoQuiz() {
           </div>
         </div>
 
+        {/**
+         * A continuação da trilha VEM ANTES do convite de análise, de
+         * propósito: o diagnóstico é o passo 1 — a pessoa acabou de chegar,
+         * e pedir WhatsApp antes de entregar caminho é atrito que derruba os
+         * dois números. O trabalho do passo 1 é avançar a jornada; a venda
+         * tem os momentos dela mais adiante (resultado da Rotina, achados do
+         * Volume), quando a confiança já foi construída. O convite de
+         * análise continua aqui embaixo para quem já chegou pronto.
+         */}
+        <div className="border border-[#BA9E50]/50 bg-[#BA9E50]/[0.06] p-5 mb-8">
+          <p
+            className="text-xs font-semibold tracking-[0.2em] uppercase mb-1.5"
+            style={{ color: "#BA9E50", fontFamily: "var(--font-inter), sans-serif" }}
+          >
+            Próximo passo
+          </p>
+          <p className="text-gray-200 text-sm leading-relaxed mb-3">
+            Você já sabe seu perfil e seu gargalo — é o passo 1 do caminho do
+            treino. O passo 2 é transformar isso numa semana concreta: qual
+            divisão cabe nos seus dias e no seu tempo.
+          </p>
+          <Link
+            href="/treino-para-minha-rotina"
+            onClick={() => trackEvent("diagnostic_routine_click", { result_profile: result.profileId })}
+            className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 text-sm font-semibold min-h-[48px] hover:opacity-90 transition-opacity"
+          >
+            Montar minha rotina de treino
+            <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+
         {/* CTA principal */}
         <div className="border border-white/20 bg-black p-6 sm:p-8 text-center mb-8">
           <h3
@@ -250,34 +281,6 @@ export default function DiagnosticoQuiz() {
           >
             Quero uma análise do Montinho
           </a>
-        </div>
-
-        {/**
-         * A continuação da trilha — o diagnóstico é o passo 1 do caminho do
-         * treino, e o resultado não pode ser um beco. O convite de análise
-         * (acima) é a conversão; este bloco é a direção para quem prefere
-         * seguir sozinho por enquanto: os dois públicos saem com caminho.
-         */}
-        <div className="border border-[#BA9E50]/50 bg-[#BA9E50]/[0.06] p-5 mb-8">
-          <p
-            className="text-xs font-semibold tracking-[0.2em] uppercase mb-1.5"
-            style={{ color: "#BA9E50", fontFamily: "var(--font-inter), sans-serif" }}
-          >
-            Próximo passo
-          </p>
-          <p className="text-gray-200 text-sm leading-relaxed mb-3">
-            Você já sabe seu perfil e seu gargalo — é o passo 1 do caminho do
-            treino. O passo 2 é transformar isso numa semana concreta: qual
-            divisão cabe nos seus dias e no seu tempo.
-          </p>
-          <Link
-            href="/treino-para-minha-rotina"
-            onClick={() => trackEvent("diagnostic_routine_click", { result_profile: result.profileId })}
-            className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 text-sm font-semibold min-h-[48px] hover:opacity-90 transition-opacity"
-          >
-            Montar minha rotina de treino
-            <span aria-hidden="true">→</span>
-          </Link>
         </div>
 
         {/* Conteúdo recomendado */}
