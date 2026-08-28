@@ -27,6 +27,8 @@ import {
 import {
   KCAL_MIN_CARDAPIO,
   LIMITE_DURO,
+  ORIENTACAO_ESPECIAL,
+  ORIENTACAO_POR_SITUACAO,
   PERFIS_REFEICAO,
   PISO_PROTEINA,
   SITUACOES_ESPECIAIS,
@@ -402,7 +404,72 @@ ok(
 );
 
 const componente = fs.readFileSync("components/cardapio/MonteSeuCardapio.tsx", "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
-ok("situação especial bloqueia a geração e orienta", /situacaoBloqueia \?/.test(componente) && /ORIENTACAO_ESPECIAL/.test(componente));
+/**
+ * Situação especial: consentimento informado, não bloqueio.
+ *
+ * A ferramenta travava nessas situações. A intenção era boa e o efeito era
+ * ruim — quem convive com uma condição há anos ficava sem nem a parte
+ * educativa, sem entender o motivo. O contrato agora é: a orientação vem
+ * ANTES, com o motivo específico da situação marcada, e a pessoa escolhe.
+ * Estes testes travam as três partes que fazem isso ser consentimento e
+ * não teatro: a orientação precede a escolha, existe saída para falar com
+ * gente, e o lembrete persiste no resultado.
+ */
+{
+  const semImports = componente.replace(/^import [\s\S]*?} from "@\/lib\/cardapio\/motor";$/m, "");
+  const iOrientacao = semImports.indexOf("ORIENTACAO_ESPECIAL");
+  const iEscolha = semImports.indexOf("Entendi — quero ver a simulação");
+  const iComecar = semImports.indexOf("Começar meu cardápio");
+  ok("a orientação aparece antes da escolha", iOrientacao > -1 && iEscolha > iOrientacao, `orientação em ${iOrientacao}, escolha em ${iEscolha}`);
+  ok("e antes do botão que inicia o cardápio", iComecar > iOrientacao, `começar em ${iComecar}`);
+  ok(
+    "a simulação só segue com consentimento explícito",
+    /situacaoEspecial && !e\.consentiu \?/.test(semImports) && /consentiu: true/.test(semImports)
+  );
+  ok("existe a saída de falar com gente antes de decidir", /Prefiro tirar dúvidas antes/.test(semImports));
+  ok(
+    "desmarcar ou trocar a situação derruba o consentimento",
+    (semImports.match(/consentiu: false/g) ?? []).length >= 2,
+    "consentimento dado para uma situação não pode valer para outra"
+  );
+  {
+    /**
+     * O lembrete aparece duas vezes: no aviso da tela de segurança e no
+     * resultado. O do resultado é o que importa aqui — ele tem que estar
+     * DEPOIS do início do bloco de resultado e num container sem
+     * print:hidden, senão some justamente no papel que vira "minha dieta".
+     */
+    const iResultado = semImports.indexOf('e.etapa === "resultado"');
+    const noResultado = semImports.indexOf("LEMBRETE_SITUACAO_ESPECIAL", iResultado);
+    const bloco = semImports.slice(Math.max(noResultado - 300, 0), noResultado);
+    ok(
+      "o lembrete acompanha o resultado de quem seguiu",
+      iResultado > -1 && noResultado > iResultado && /situacaoEspecial &&/.test(bloco)
+    );
+    ok("e não some na impressão", !/print:hidden/.test(bloco), bloco.slice(-160));
+  }
+  ok(
+    "cada uma das quatro situações tem a explicação dela",
+    SITUACOES_ESPECIAIS.every((s) => (ORIENTACAO_POR_SITUACAO[s.id] ?? "").length > 60),
+    SITUACOES_ESPECIAIS.filter((s) => !ORIENTACAO_POR_SITUACAO[s.id]).map((s) => s.id).join(", ")
+  );
+  ok(
+    "a de transtorno alimentar oferece saída sem culpa",
+    /feche/i.test(ORIENTACAO_POR_SITUACAO.ta) && /n[ãa]o\s\w*\s?falha/i.test(ORIENTACAO_POR_SITUACAO.ta),
+    ORIENTACAO_POR_SITUACAO.ta
+  );
+  ok(
+    "a orientação diz que o profissional vale mais, sem rodeio",
+    /profissional/i.test(ORIENTACAO_ESPECIAL) && /(nutricionista|médico)/i.test(ORIENTACAO_ESPECIAL)
+  );
+  /** O evento de consentimento não pode carregar dado de saúde. */
+  const eventoConsent = semImports.match(/trackEvent\("meal_planner_special_continue"[^)]*\)/)?.[0] ?? "";
+  ok(
+    "seguir mesmo assim não manda a situação para o Analytics",
+    eventoConsent.length > 0 && !/gestacao|menor|clinica|\bta\b|situac/i.test(eventoConsent),
+    eventoConsent
+  );
+}
 ok("meta abaixo do piso mostra a mensagem em vez de gerar", /MENSAGEM_META_BAIXA/.test(componente) && /kcalBaixa/.test(componente));
 
 const libSrc = fs.readFileSync("lib/cardapio/motor.ts", "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");

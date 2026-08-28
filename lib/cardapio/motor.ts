@@ -78,8 +78,41 @@ export const SITUACOES_ESPECIAIS = [
   { id: "ta", rotulo: "Histórico de transtorno alimentar" },
 ] as const;
 
+/**
+ * A orientação vem ANTES da escolha, e a escolha é da pessoa.
+ *
+ * A versão anterior simplesmente travava a ferramenta nessas situações. A
+ * intenção era certa e o efeito era ruim: quem convive com uma condição
+ * crônica há dez anos, ou quem está amamentando, ficava sem NADA — nem a
+ * parte educativa — e sem entender o motivo. Isso não protege ninguém;
+ * empurra a pessoa para o gerador do concorrente, que não avisa nada.
+ *
+ * O desenho novo é consentimento informado: dizemos com todas as letras que
+ * no caso dela um profissional vale mais que qualquer gerador, explicamos
+ * por quê, e aí perguntamos se ela quer ver a simulação mesmo assim. Quem
+ * segue, segue sabendo — e o lembrete continua no resultado, inclusive na
+ * versão impressa, para não virar um papel que parece prescrição.
+ */
 export const ORIENTACAO_ESPECIAL =
-  "Nessas situações, um cardápio gerado automaticamente não é a ferramenta certa — as necessidades mudam de um jeito que só uma avaliação individual alcança. O caminho aqui é um nutricionista ou médico. O restante do site continua todo disponível para você.";
+  "No seu caso, o acompanhamento de um profissional vale mais do que qualquer cardápio automático — e isso não é formalidade. Gestação, amamentação, adolescência, condições clínicas e histórico de transtorno alimentar mudam as necessidades de um jeito que só uma avaliação individual enxerga: um nutricionista ou médico vai ajustar o que nenhuma ferramenta consegue adivinhar.";
+
+export const CONVITE_SIMULACAO =
+  "Dito isso, a decisão é sua. Se quiser, pode seguir e ver a simulação como material educativo — para entender como um cardápio se organiza, não para substituir orientação.";
+
+export const ORIENTACAO_POR_SITUACAO: Record<string, string> = {
+  gestacao:
+    "Na gestação e na amamentação a necessidade de energia e de vários nutrientes muda ao longo dos meses, e um cálculo genérico não acompanha isso.",
+  menor:
+    "Antes dos 18 anos o corpo ainda está crescendo, e restringir calorias nessa fase tem consequências que um gerador não consegue prever.",
+  clinica:
+    "Condições como doença renal, diabetes e alergia grave mudam quais alimentos e quantidades fazem sentido — algumas trocas comuns aqui seriam inadequadas no seu caso.",
+  ta:
+    "Com histórico de transtorno alimentar, contar calorias e seguir cardápio podem reativar padrões difíceis. Se em algum momento a ferramenta te deixar ansioso ou ansiosa, feche — é a resposta certa, não uma falha sua.",
+};
+
+/** Fica visível no resultado de quem seguiu mesmo assim, impressão inclusa. */
+export const LEMBRETE_SITUACAO_ESPECIAL =
+  "Você marcou uma situação que pede acompanhamento individual. Este cardápio é material educativo — leve-o a um nutricionista ou médico antes de adotá-lo como rotina.";
 
 // ─── Objetivos ───────────────────────────────────────────────────────────────
 

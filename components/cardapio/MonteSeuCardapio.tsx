@@ -26,6 +26,9 @@ import {
   NOTA_TOLERANCIA,
   OBJETIVOS,
   ORIENTACAO_ESPECIAL,
+  ORIENTACAO_POR_SITUACAO,
+  CONVITE_SIMULACAO,
+  LEMBRETE_SITUACAO_ESPECIAL,
   PERFIS_REFEICAO,
   REFEICOES_SUGERIDAS,
   SEM_ALTERNATIVA,
@@ -88,6 +91,12 @@ interface Estado {
   habituais: Partial<Record<Momento, string[]>>;
   /** Índice do momento sendo perguntado dentro da etapa "habituais". */
   momentoIdx: number;
+  /**
+   * A pessoa marcou uma situação que pede acompanhamento e, depois de ler a
+   * orientação, escolheu ver a simulação assim mesmo. Consentimento
+   * informado — não um checkbox escondido.
+   */
+  consentiu: boolean;
 }
 
 const INICIAL: Estado = {
@@ -101,6 +110,7 @@ const INICIAL: Estado = {
   restricoes: [],
   habituais: {},
   momentoIdx: 0,
+  consentiu: false,
 };
 
 export default function MonteSeuCardapio({ placement }: { placement: string }) {
@@ -338,7 +348,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
     "w-full bg-black border border-white/25 focus:border-[#BA9E50] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#BA9E50] text-white text-2xl font-bold px-4 py-3 transition-colors min-h-[52px]";
 
   const progresso = (ORDEM.indexOf(e.etapa) / (ORDEM.length - 1)) * 100;
-  const situacaoBloqueia = e.situacoes.length > 0 && !e.situacoes.includes("nenhuma");
+  const situacaoEspecial = e.situacoes.length > 0 && !e.situacoes.includes("nenhuma");
 
   return (
     <div
@@ -383,6 +393,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                     marcaInicio();
                     setE((a) => ({
                       ...a,
+                      consentiu: false,
                       situacoes: a.situacoes.includes(s.id)
                         ? a.situacoes.filter((x) => x !== s.id)
                         : [...a.situacoes.filter((x) => x !== "nenhuma"), s.id],
@@ -399,7 +410,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                 aria-pressed={e.situacoes.includes("nenhuma")}
                 onClick={() => {
                   marcaInicio();
-                  setE((a) => ({ ...a, situacoes: ["nenhuma"] }));
+                  setE((a) => ({ ...a, situacoes: ["nenhuma"], consentiu: false }));
                 }}
                 className={botaoCard + (e.situacoes.includes("nenhuma") ? " border-[#BA9E50] bg-[#BA9E50]/[0.06]" : "")}
               >
@@ -409,19 +420,60 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
             </div>
           </fieldset>
 
-          {situacaoBloqueia ? (
+          {situacaoEspecial && !e.consentiu ? (
+            /**
+             * Orientação primeiro, escolha depois. A pessoa lê por que um
+             * profissional vale mais no caso dela — inclusive o motivo
+             * específico da situação que marcou — e só então decide se quer
+             * ver a simulação como material educativo.
+             */
             <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.05] p-5">
-              <p className="text-gray-200 leading-relaxed">{ORIENTACAO_ESPECIAL}</p>
+              <p className="text-gray-200 leading-relaxed mb-3">{ORIENTACAO_ESPECIAL}</p>
+              <ul className="space-y-2 mb-4">
+                {e.situacoes
+                  .filter((s) => ORIENTACAO_POR_SITUACAO[s])
+                  .map((s) => (
+                    <li key={s} className="text-gray-300 text-sm leading-relaxed">
+                      {ORIENTACAO_POR_SITUACAO[s]}
+                    </li>
+                  ))}
+              </ul>
+              <p className="text-gray-300 leading-relaxed mb-5">{CONVITE_SIMULACAO}</p>
+              <div className="flex flex-wrap gap-3">
+                <button
+                  type="button"
+                  onClick={() => {
+                    /** Sem parâmetro: a situação marcada é dado de saúde e não vai para o Analytics. */
+                    trackEvent("meal_planner_special_continue", { placement });
+                    setE((a) => ({ ...a, consentiu: true }));
+                  }}
+                  className="bg-white text-black px-6 py-3.5 font-semibold min-h-[52px]"
+                >
+                  Entendi — quero ver a simulação
+                </button>
+                <Link
+                  href="/pergunte-ao-montinho"
+                  onClick={() => trackEvent("meal_article_click", { placement, destino: "ask" })}
+                  className="border border-white/25 text-gray-200 px-6 py-3.5 font-medium min-h-[52px] flex items-center hover:border-white/50 transition-colors"
+                >
+                  Prefiro tirar dúvidas antes
+                </Link>
+              </div>
             </div>
           ) : (
-            <button
-              type="button"
-              disabled={e.situacoes.length === 0}
-              onClick={() => avanca()}
-              className="bg-white text-black px-8 py-3.5 font-semibold disabled:opacity-40 min-h-[52px] transition-opacity"
-            >
-              Começar meu cardápio
-            </button>
+            <>
+              {situacaoEspecial && (
+                <p className="text-gray-400 text-sm leading-relaxed mb-4 max-w-xl">{LEMBRETE_SITUACAO_ESPECIAL}</p>
+              )}
+              <button
+                type="button"
+                disabled={e.situacoes.length === 0}
+                onClick={() => avanca()}
+                className="bg-white text-black px-8 py-3.5 font-semibold disabled:opacity-40 min-h-[52px] transition-opacity"
+              >
+                Começar meu cardápio
+              </button>
+            </>
           )}
         </div>
       )}
@@ -669,6 +721,18 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
           <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-5" style={h}>
             Seu cardápio sugerido
           </h2>
+
+          {/**
+           * Quem seguiu com uma situação especial leva o lembrete junto —
+           * inclusive na impressão. Um papel com refeições e calorias sai
+           * da tela e vira "minha dieta" na cabeça de quem lê; o lembrete
+           * é o que impede a simulação de virar prescrição no caminho.
+           */}
+          {situacaoEspecial && (
+            <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.05] p-4 mb-5">
+              <p className="text-gray-200 text-sm leading-relaxed">{LEMBRETE_SITUACAO_ESPECIAL}</p>
+            </div>
+          )}
 
           {/* Painel de metas */}
           <ResumoDia cardapio={cardapio} />
