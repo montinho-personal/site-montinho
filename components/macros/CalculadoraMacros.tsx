@@ -27,6 +27,7 @@ import {
   consomeKcalDeDeficit,
   dentroDoAMDR,
   formataNumero,
+  guardaKcalParaMacros,
   guardaPesoParaProteina,
   normalizaNumero,
   porRefeicao,
@@ -489,6 +490,22 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
                     style={{ textDecorationColor: "#BA9E50" }}
                   >
                     Revisar sua meta calórica →
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/ferramentas/monte-seu-cardapio"
+                    onClick={() => {
+                      /* Leva meta e peso: o cardápio começa exatamente onde
+                         os macros param — transformar número em comida. */
+                      if (kcal !== null) guardaKcalParaMacros(kcal);
+                      if (peso !== null) guardaPesoParaProteina(peso);
+                      trackEvent("macro_article_click", { placement: `${placement}-cardapio` });
+                    }}
+                    className="text-gray-300 hover:text-white transition-colors text-sm underline underline-offset-4 decoration-1"
+                    style={{ textDecorationColor: "#BA9E50" }}
+                  >
+                    Transformar esses macros em cardápio →
                   </Link>
                 </li>
                 <li>

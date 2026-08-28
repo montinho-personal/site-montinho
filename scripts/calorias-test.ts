@@ -232,24 +232,35 @@ ok(
 );
 ok("nenhuma chamada de rede no componente", !/fetch\(|axios|XMLHttpRequest/.test(componente));
 /**
- * Storage: a regra ficou mais precisa quando a ponte para a Calculadora de
- * Macros passou a existir. Nada é gravado passivamente — o único write é a
- * meta calórica, e só quando a pessoa CLICA em "distribuir em macros". Não
- * pode haver localStorage (que persiste), nem gravação fora de um onClick.
+ * Storage: a regra ficou mais precisa quando as pontes passaram a existir
+ * (primeiro para a Calculadora de Macros, depois para o cardápio). Nada é
+ * gravado passivamente — os únicos writes são as funções guarda* da ponte,
+ * e só quando a pessoa CLICA em um dos links de destino. Não pode haver
+ * localStorage (que persiste), nem setItem direto, nem chamada de guarda*
+ * fora de um handler onClick.
  *
  * Esta assertion nasceu falhando: o teste original proibia qualquer storage
  * e pegou a mudança de comportamento na hora, que é exatamente o que ele
- * tinha que fazer.
+ * tinha que fazer. Quando o link para o cardápio adicionou a segunda
+ * chamada, ela falhou de novo — e a regra foi reescrita para verificar a
+ * invariante real (write só dentro de clique) em vez de contar chamadas.
  */
 ok("nunca usa localStorage", !/localStorage/.test(componente));
 const semImports = componente.replace(/^import .*$/gm, "");
-ok(
-  "o único write é a ponte para macros, dentro de um onClick",
-  !/setItem/.test(componente) &&
-    (semImports.match(/guardaKcalParaMacros\(/g) ?? []).length === 1 &&
-    /onClick=\{\(\) => \{[\s\S]*?guardaKcalParaMacros\(/.test(semImports),
-  "gravar a meta calórica sem ação explícita seria mudar o contrato de privacidade da ferramenta"
-);
+{
+  const guardas = semImports.match(/guarda\w+\(/g) ?? [];
+  // Toda chamada guarda* deve estar dentro de um bloco onClick: cortamos o
+  // arquivo nos inícios de handler e exigimos que nenhuma chamada apareça
+  // fora deles (aproximação por segmento até o fechamento "}}").
+  const foraDeClique = semImports
+    .split(/onClick=\{\(\) => \{[\s\S]*?\}\}/)
+    .some((trecho) => /guarda\w+\(/.test(trecho));
+  ok(
+    "os únicos writes são as pontes, todos dentro de onClick",
+    !/setItem/.test(componente) && guardas.length >= 2 && !foraDeClique,
+    "gravar meta ou peso sem ação explícita seria mudar o contrato de privacidade da ferramenta"
+  );
+}
 
 console.log("\n" + "=".repeat(64) + "\nACESSIBILIDADE E UX\n" + "=".repeat(64));
 

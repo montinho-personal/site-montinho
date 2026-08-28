@@ -1,0 +1,326 @@
+/**
+ * Testes do Monte seu Cardápio.
+ *
+ * O risco número um desta ferramenta é único no site: ela SUGERE COMIDA. Um
+ * mapeamento errado não dá número absurdo — dá um cardápio plausível que
+ * contradiz o que a pessoa pediu: ovo para quem não come ovo, frango para
+ * vegetariano, 9 ovos num dia. Por isso a suíte varre TODAS as combinações
+ * de dieta × restrição e verifica que nenhum alimento proibido aparece.
+ *
+ * O segundo risco é o clássico das ferramentas de dieta: falsa precisão e
+ * porção impossível. Os testes garantem que toda porção é múltiplo do passo
+ * caseiro e que o motor prefere errar a meta em 8% a inventar "83 g de
+ * arroz".
+ */
+
+import * as fs from "fs";
+import { blogPosts } from "../lib/blog";
+import {
+  ALIMENTOS_CARDAPIO,
+  ALIMENTO_CARDAPIO_POR_ID,
+  RESTRICOES,
+  nutrientes,
+  permitido,
+  rotuloPorcao,
+  type Restricao,
+} from "../lib/cardapio/alimentos";
+import {
+  KCAL_MIN_CARDAPIO,
+  PERFIS_REFEICAO,
+  PISO_PROTEINA,
+  SITUACOES_ESPECIAIS,
+  TOLERANCIA_KCAL,
+  alternativas,
+  diaDentroDaTolerancia,
+  geraCardapio,
+  geraSemana,
+  listaDeCompras,
+  totalDia,
+  totalRefeicao,
+  type PedidoCardapio,
+} from "../lib/cardapio/motor";
+import { ARTIGOS_POR_OBJETIVO } from "../components/cardapio/MonteSeuCardapio";
+
+let falhas = 0;
+const ok = (nome: string, cond: boolean, detalhe = "") => {
+  console.log(`  ${cond ? "ok    " : "FALHOU"}  ${nome}${cond || !detalhe ? "" : `\n           ${detalhe}`}`);
+  if (!cond) falhas++;
+};
+
+const pedido = (over: Partial<PedidoCardapio> = {}): PedidoCardapio => ({
+  metaKcal: 2100,
+  pesoKg: 80,
+  objetivo: "emagrecer",
+  refeicoes: 4,
+  dieta: "onivoro",
+  restricoes: [],
+  habituais: {},
+  ...over,
+});
+
+console.log("\n" + "=".repeat(64) + "\nO BANCO DE ALIMENTOS\n" + "=".repeat(64));
+
+ok("a base tem entre 30 e 80 alimentos", ALIMENTOS_CARDAPIO.length >= 30 && ALIMENTOS_CARDAPIO.length <= 80, String(ALIMENTOS_CARDAPIO.length));
+ok("nenhum id duplicado", new Set(ALIMENTOS_CARDAPIO.map((a) => a.id)).size === ALIMENTOS_CARDAPIO.length);
+ok("todo alimento declara o estado", ALIMENTOS_CARDAPIO.every((a) => a.estado.length > 0));
+ok("todo alimento tem fonte", ALIMENTOS_CARDAPIO.every((a) => a.fonte.length > 0));
+ok("toda porção tem rótulo caseiro e peso", ALIMENTOS_CARDAPIO.every((a) => a.porcao.rotulo.length > 0 && a.porcao.g > 0));
+ok(
+  "as calorias batem com os macros (4/4/9, tolerância de fibra)",
+  ALIMENTOS_CARDAPIO.every((a) => {
+    const calc = a.prot100 * 4 + a.carb100 * 4 + a.gord100 * 9;
+    /** TACO desconta fibra do carboidrato disponível; 15% + 25 kcal cobre isso. */
+    return Math.abs(calc - a.kcal100) <= Math.max(25, a.kcal100 * 0.15);
+  }),
+  ALIMENTOS_CARDAPIO.filter((a) => Math.abs(a.prot100 * 4 + a.carb100 * 4 + a.gord100 * 9 - a.kcal100) > Math.max(25, a.kcal100 * 0.15)).map((a) => a.id).join(", ")
+);
+ok(
+  "vegano implica vegetariano (não existe vegano-mas-não-vegetariano)",
+  ALIMENTOS_CARDAPIO.every((a) => !a.vegano || a.vegetariano)
+);
+ok(
+  "alguns valores foram conferidos na fonte, e a maioria da base é TACO",
+  ALIMENTOS_CARDAPIO.filter((a) => a.verificadoEm).length >= 8 &&
+    ALIMENTOS_CARDAPIO.filter((a) => a.fonte.includes("TACO")).length > ALIMENTOS_CARDAPIO.length * 0.7
+);
+ok("whey só entra se for hábito declarado", ALIMENTO_CARDAPIO_POR_ID.get("whey")?.soHabitual === true);
+
+/** Pluralização: os casos que quebravam. */
+const frango = ALIMENTO_CARDAPIO_POR_ID.get("frango-grelhado")!;
+const ovo = ALIMENTO_CARDAPIO_POR_ID.get("ovo-cozido")!;
+ok('2 filés: "2 filés médios"', rotuloPorcao(frango, 2).startsWith("2 filés médios"), rotuloPorcao(frango, 2));
+ok('3 ovos: "3 ovos"', rotuloPorcao(ovo, 3).startsWith("3 ovos"), rotuloPorcao(ovo, 3));
+ok('1,5 porção usa a forma "1,5×"', rotuloPorcao(frango, 1.5).includes("1,5×"), rotuloPorcao(frango, 1.5));
+ok("o peso em gramas sempre aparece", rotuloPorcao(ovo, 2).includes("(~100 g)"));
+
+console.log("\n" + "=".repeat(64) + "\nNUNCA SUGERIR O QUE A PESSOA NÃO COME\n" + "=".repeat(64));
+
+/**
+ * A varredura central: toda dieta × toda restrição, em três metas. Nenhum
+ * cardápio pode conter alimento proibido — este é o teste que justifica a
+ * ferramenta existir sem virar reclamação.
+ */
+let violacoes = 0;
+let gerados = 0;
+for (const dieta of ["onivoro", "vegetariano", "vegano"] as const) {
+  for (const restricao of [[], ...RESTRICOES.map((r) => [r.id])] as Restricao[][]) {
+    for (const metaKcal of [1500, 2100, 3000]) {
+      for (const refeicoes of [3, 4, 5]) {
+        const p = pedido({ dieta, restricoes: restricao, metaKcal, refeicoes });
+        const c = geraCardapio(p);
+        gerados++;
+        for (const r of c.refeicoes) {
+          for (const it of r.itens) {
+            const a = ALIMENTO_CARDAPIO_POR_ID.get(it.alimentoId)!;
+            if (!permitido(a, dieta, restricao)) violacoes++;
+            /** Porção sempre múltiplo do passo e dentro do teto. */
+            if (Math.round(it.porcoes / a.passo) * a.passo !== it.porcoes || it.porcoes > a.maxPorcoes) violacoes++;
+          }
+        }
+      }
+    }
+  }
+}
+ok(`nenhuma violação de dieta/restrição/porção em ${gerados} cardápios`, violacoes === 0, `${violacoes} violações`);
+
+/** Casos nominais das personas do pedido. */
+const vegano = geraCardapio(pedido({ dieta: "vegano", metaKcal: 2400, pesoKg: 75, objetivo: "ganhar" }));
+ok(
+  "vegano não recebe nenhum alimento de origem animal",
+  vegano.refeicoes.every((r) => r.itens.every((it) => ALIMENTO_CARDAPIO_POR_ID.get(it.alimentoId)!.vegano))
+);
+const semOvo = geraCardapio(pedido({ restricoes: ["ovo"] }));
+ok(
+  "quem não come ovo não recebe ovo",
+  semOvo.refeicoes.every((r) => r.itens.every((it) => !it.alimentoId.includes("ovo")))
+);
+ok(
+  "o vegetariano não vira 'onívoro sem carne': a proteína é substituída",
+  geraCardapio(pedido({ dieta: "vegetariano" })).refeicoes
+    .filter((r) => r.momento === "almoco" || r.momento === "jantar")
+    .every((r) => {
+      const t = totalRefeicao(r);
+      return t.prot >= 15;
+    }),
+  "refeição principal vegetariana com menos de 15 g de proteína é remoção, não substituição"
+);
+
+console.log("\n" + "=".repeat(64) + "\nA CONTA FECHA (com tolerância honesta)\n" + "=".repeat(64));
+
+for (const [nome, p] of [
+  ["A: onívoro 90 kg, 2.100 kcal, hábitos BR", pedido({ pesoKg: 90, habituais: { cafe: ["ovo-mexido", "pao-frances", "banana"], almoco: ["arroz-branco", "feijao-carioca", "frango-grelhado"] } })],
+  ["B: vegetariana 60 kg, 1.700 kcal, 5 refeições", pedido({ dieta: "vegetariano", metaKcal: 1700, pesoKg: 60, refeicoes: 5 })],
+  ["C: 3 refeições, 2.000 kcal", pedido({ metaKcal: 2000, refeicoes: 3, objetivo: "manter" })],
+  ["E: vegano 75 kg ganho, 2.400 kcal", pedido({ dieta: "vegano", metaKcal: 2400, pesoKg: 75, objetivo: "ganhar" })],
+  ["F: vindo da calculadora (2.140 kcal)", pedido({ metaKcal: 2140 })],
+] as [string, PedidoCardapio][]) {
+  const c = geraCardapio(p);
+  const t = totalDia(c);
+  const tol = diaDentroDaTolerancia(c);
+  ok(
+    `${nome} → ${Math.round(t.kcal)} kcal (desvio ${(Math.abs(t.kcal / p.metaKcal - 1) * 100).toFixed(1)}%), prot ${Math.round(t.prot)}/${Math.round(c.metaProt)} g`,
+    tol.kcalOk && tol.protOk
+  );
+}
+
+ok("o determinismo vale: mesma entrada, mesmo cardápio", JSON.stringify(geraCardapio(pedido())) === JSON.stringify(geraCardapio(pedido())));
+ok("as constantes de tolerância são as declaradas", TOLERANCIA_KCAL === 0.08 && PISO_PROTEINA === 0.85);
+ok("as frações de cada perfil somam 1", Object.values(PERFIS_REFEICAO).every((perfil) => Math.abs(perfil.reduce((s, x) => s + x.fracao, 0) - 1) < 1e-9));
+
+/** Habituais mandam: quem come arroz recebe arroz, não batata. */
+const comHabito = geraCardapio(pedido({ habituais: { almoco: ["macarrao"] } }));
+ok(
+  "o alimento habitual vence o padrão do grupo",
+  comHabito.refeicoes.find((r) => r.momento === "almoco")!.itens.some((i) => i.alimentoId === "macarrao")
+);
+
+console.log("\n" + "=".repeat(64) + "\nSUBSTITUIÇÕES\n" + "=".repeat(64));
+
+const base = geraCardapio(pedido());
+const almoco = base.refeicoes.find((r) => r.momento === "almoco")!;
+const itemArroz = almoco.itens.find((i) => ALIMENTO_CARDAPIO_POR_ID.get(i.alimentoId)!.grupo === "carbo-base");
+ok("o almoço tem um carboidrato para trocar", itemArroz !== undefined);
+if (itemArroz) {
+  const alts = alternativas(itemArroz, "almoco", pedido(), almoco.itens.map((i) => i.alimentoId));
+  ok("existem alternativas para o carboidrato", alts.length >= 2, String(alts.length));
+  const kcalOriginal = nutrientes(ALIMENTO_CARDAPIO_POR_ID.get(itemArroz.alimentoId)!, itemArroz.porcoes).kcal;
+  ok(
+    "toda alternativa fica a ±35% das kcal do item que sai (equivalência por caloria, não por peso)",
+    alts.every(({ alimento, porcoes }) => {
+      const kcal = nutrientes(alimento, porcoes).kcal;
+      return kcal >= kcalOriginal * 0.65 && kcal <= kcalOriginal * 1.35;
+    })
+  );
+  ok("nenhuma alternativa repete alimento já na refeição", alts.every(({ alimento }) => !almoco.itens.some((i) => i.alimentoId === alimento.id)));
+  ok("alternativas respeitam o grupo", alts.every(({ alimento }) => alimento.grupo === "carbo-base"));
+}
+/** Restrição também vale na troca: sem glúten não pode oferecer macarrão. */
+const semGluten = pedido({ restricoes: ["gluten"] });
+const cGluten = geraCardapio(semGluten);
+const almocoG = cGluten.refeicoes.find((r) => r.momento === "almoco")!;
+const carbG = almocoG.itens.find((i) => ALIMENTO_CARDAPIO_POR_ID.get(i.alimentoId)!.grupo === "carbo-base")!;
+ok(
+  "a troca nunca oferece alimento restrito",
+  alternativas(carbG, "almoco", semGluten, almocoG.itens.map((i) => i.alimentoId)).every(({ alimento }) => !alimento.exclusoes.includes("gluten"))
+);
+
+console.log("\n" + "=".repeat(64) + "\nSEMANA E LISTA DE COMPRAS\n" + "=".repeat(64));
+
+const p7 = pedido();
+const dia = geraCardapio(p7);
+const repetida = geraSemana(dia, p7, "repetir");
+ok("semana 'repetir' tem 7 dias iguais", repetida.length === 7 && repetida.every((d) => d === repetida[0]));
+const variada = geraSemana(dia, p7, "um-pouco");
+ok("semana 'um pouco' alterna 2 versões", variada[0] !== variada[1] && variada[0] === variada[2]);
+ok(
+  "as versões variadas continuam dentro da tolerância",
+  variada.every((d) => {
+    const t = totalDia(d);
+    return Math.abs(t.kcal - d.metaKcal) <= d.metaKcal * (TOLERANCIA_KCAL + 0.05);
+  }),
+  "a variação troca por equivalente calórico; se sair da margem, a troca está errada"
+);
+
+const lista = listaDeCompras(repetida);
+ok("a lista de compras cobre todos os alimentos da semana", lista.length === new Set(repetida[0].refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId))).size);
+ok("itens unitários saem em unidades", lista.filter((i) => i.quantidade.endsWith(" un")).length >= 2, lista.map((i) => `${i.nome}:${i.quantidade}`).join(", "));
+ok("pesos saem redondos (múltiplos de 100 g ou kg)", lista.every((i) => /(\d+00 g|\d+,\d kg|\d+ un)$/.test(i.quantidade)), lista.map((i) => i.quantidade).join(", "));
+ok("toda entrada tem categoria de mercado", lista.every((i) => i.categoria.length > 0));
+
+console.log("\n" + "=".repeat(64) + "\nSEGURANÇA\n" + "=".repeat(64));
+
+ok("o piso de geração automática é 1.200 kcal", KCAL_MIN_CARDAPIO === 1200);
+ok(
+  "as quatro situações especiais estão listadas",
+  SITUACOES_ESPECIAIS.length === 4 && SITUACOES_ESPECIAIS.some((s) => s.id === "ta") && SITUACOES_ESPECIAIS.some((s) => s.id === "gestacao")
+);
+
+const componente = fs.readFileSync("components/cardapio/MonteSeuCardapio.tsx", "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
+ok("situação especial bloqueia a geração e orienta", /situacaoBloqueia \?/.test(componente) && /ORIENTACAO_ESPECIAL/.test(componente));
+ok("meta abaixo do piso mostra a mensagem em vez de gerar", /MENSAGEM_META_BAIXA/.test(componente) && /kcalBaixa/.test(componente));
+
+const libSrc = fs.readFileSync("lib/cardapio/motor.ts", "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
+const pagina = fs.readFileSync("app/ferramentas/monte-seu-cardapio/page.tsx", "utf8");
+const paginaSemComentarios = pagina.replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
+const tudo = componente + libSrc + paginaSemComentarios;
+const PROIBIDO: [RegExp, string][] = [
+  [/sua dieta est[áa] pronta|esta [ée] a sua dieta/i, "sugestão educacional, nunca 'sua dieta'"],
+  [/voc[êe] (vai|ir[áa]) perder \d|perca \d+\s?kg/i, "promessa de resultado"],
+  [/detox|milagros|acelere? o metabolismo|alimento proibido/i, "terrorismo alimentar / mito"],
+  [/\d{2,3}% (adequado|compat[íi]vel|ideal) para voc[êe]/i, "score científico inventado"],
+  [/exatamente \d[\d.,]* ?kcal/i, "falsa precisão"],
+];
+for (const [re, motivo] of PROIBIDO) {
+  ok(`nenhum texto contém ${re}`, !re.test(tudo), motivo);
+}
+ok("o aviso educacional existe e é discreto", /AVISO_EDUCACIONAL/.test(componente) && !/(ATENÇÃO|CUIDADO)!/.test(tudo));
+
+console.log("\n" + "=".repeat(64) + "\nPRIVACIDADE E EVENTOS\n" + "=".repeat(64));
+
+const analytics = fs.readFileSync("lib/analytics.ts", "utf8");
+for (const ev of [
+  "meal_planner_view", "meal_planner_start", "meal_planner_goal_selected", "meal_planner_preferences_complete",
+  "meal_plan_generated", "meal_swap_clicked", "meal_swapped", "weekly_plan_generated",
+  "shopping_list_generated", "meal_plan_saved", "meal_methodology_open", "meal_article_click", "meal_cta_click",
+]) {
+  ok(`evento declarado: ${ev}`, analytics.includes(`"${ev}"`));
+}
+const chamadas = componente.match(/track(Event|OncePerSession)\([^)]*\)/g) ?? [];
+ok("existem chamadas de analytics para auditar", chamadas.length > 0);
+const SENSIVEL = /kcalTexto|pesoTexto|habituais|restricoes|situacoes|alimentoId|metaKcal|pesoKg/;
+ok(
+  "nenhuma chamada carrega resposta, meta, peso ou alimento",
+  chamadas.every((c) => !SENSIVEL.test(c)),
+  chamadas.filter((c) => SENSIVEL.test(c)).join(" | ")
+);
+ok("nenhuma chamada de rede", !/fetch\(|axios|XMLHttpRequest/.test(componente));
+ok("só fala com sessionStorage pela ponte", !/sessionStorage/.test(componente) && /consomeNumero\(PONTE\./.test(componente));
+ok("o salvamento local é declarado na interface", /salvas neste dispositivo/.test(componente));
+ok("existe recomeçar que apaga tudo", /removeItem\(CHAVE\)/.test(componente));
+ok("o resultado nunca vira URL (sem router, sem searchParams)", !/useSearchParams|useRouter|router\.push/.test(componente));
+
+console.log("\n" + "=".repeat(64) + "\nUX E ACESSIBILIDADE\n" + "=".repeat(64));
+
+ok("é um wizard com progresso e voltar", /progresso/.test(componente) && /← Voltar/.test(componente));
+ok("teclado decimal nos campos numéricos", (componente.match(/inputMode="decimal"/g) ?? []).length >= 2);
+ok("resultado anunciado por aria-live", /aria-live="polite"/.test(componente));
+ok("estados com aria-pressed e aria-expanded", /aria-pressed/.test(componente) && /aria-expanded/.test(componente));
+ok("alvos de toque adequados", (componente.match(/min-h-\[4[048]px\]|min-h-\[5[26]px\]/g) ?? []).length >= 6);
+ok("erro humano, sem grito", /Confira as calorias|Confira o peso/.test(componente) && !/ERRO!|INVALID/.test(componente));
+ok("checkbox da lista não depende só de cor", /☑|☐/.test(componente) && /line-through/.test(componente));
+ok("controles somem na impressão", (componente.match(/print:hidden/g) ?? []).length >= 5);
+ok("o chalalá aparece uma vez, discreto", (componente.match(/chalalá/g) ?? []).length === 1);
+ok("estado vazio de troca não inventa", /SEM_ALTERNATIVA/.test(componente));
+ok("estado corrompido tem recuperação, não tela branca", /Faltou alguma resposta/.test(componente));
+
+console.log("\n" + "=".repeat(64) + "\nSEO E ECOSSISTEMA\n" + "=".repeat(64));
+
+ok("canonical para ela mesma", /canonical: `\$\{SITE_URL\}\/ferramentas\/monte-seu-cardapio`/.test(pagina));
+ok("declara openGraph e H1", /openGraph:/.test(pagina) && /<h1/.test(pagina));
+ok("tem conteúdo editorial de verdade", (pagina.match(/<h2/g) ?? []).length >= 6 && pagina.length > 8000);
+ok(
+  "BreadcrumbList, sem FAQPage nem schema inventado",
+  /BreadcrumbList/.test(paginaSemComentarios) && !/FAQPage|AggregateRating|"Review"|SoftwareApplication/.test(paginaSemComentarios)
+);
+ok("está no sitemap", fs.readFileSync("app/sitemap.ts", "utf8").includes("/ferramentas/monte-seu-cardapio"));
+ok("está na central /ferramentas", fs.readFileSync("app/ferramentas/page.tsx", "utf8").includes("/ferramentas/monte-seu-cardapio"));
+
+const deficit = fs.readFileSync("components/calorias/CalculadoraDeficit.tsx", "utf8");
+const macros = fs.readFileSync("components/macros/CalculadoraMacros.tsx", "utf8");
+ok("o déficit leva para o cardápio", deficit.includes("/ferramentas/monte-seu-cardapio"));
+ok("os macros levam para o cardápio", macros.includes("/ferramentas/monte-seu-cardapio"));
+ok("o cardápio leva de volta para o déficit", componente.includes("/ferramentas/calculadora-deficit-calorico"));
+
+/** Todo artigo roteado por objetivo precisa existir de verdade. */
+const slugs = new Set(blogPosts.map((p) => p.slug));
+for (const [objetivo, artigos] of Object.entries(ARTIGOS_POR_OBJETIVO)) {
+  for (const art of artigos) {
+    const slug = art.href.replace("/blog/", "");
+    ok(`artigo roteado (${objetivo}) existe: ${slug}`, slugs.has(slug));
+  }
+}
+const internos = [...pagina.matchAll(/href="\/blog\/([a-z0-9-]+)"/g)].map((m) => m[1]);
+for (const s of internos) ok(`link interno da página existe: ${s}`, slugs.has(s));
+
+console.log(falhas === 0 ? "\nTODOS OS TESTES PASSARAM\n" : `\n${falhas} TESTE(S) FALHARAM\n`);
+process.exit(falhas === 0 ? 0 : 1);

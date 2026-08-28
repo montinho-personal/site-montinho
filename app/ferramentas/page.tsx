@@ -44,7 +44,8 @@ const itemListSchema = {
     { "@type": "ListItem", position: 7, name: "Calculadora de 1RM", url: `${SITE_URL}/ferramentas/calculadora-1rm` },
     { "@type": "ListItem", position: 8, name: "Calculadora de Macros", url: `${SITE_URL}/ferramentas/calculadora-macros` },
     { "@type": "ListItem", position: 9, name: "Calculadora de Volume de Treino", url: `${SITE_URL}/ferramentas/calculadora-volume-treino` },
-    { "@type": "ListItem", position: 10, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: 10, name: "Monte seu Cardápio", url: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
+    { "@type": "ListItem", position: 11, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -124,6 +125,15 @@ const FERRAMENTAS = [
     texto:
       "Adicione os dias e os exercícios que você faz e a ferramenta identifica os músculos, soma as séries semanais de cada grupo, mostra em quantas sessões ele é treinado e onde o volume está concentrado.",
     quando: "Use quando quiser saber quantas séries por músculo você realmente faz — sem precisar contar na mão.",
+  },
+  {
+    href: "/ferramentas/monte-seu-cardapio",
+    nome: "Monte seu Cardápio",
+    pergunta: "Como transformo a meta em comida?",
+    tempo: "2 minutos · sem cadastro",
+    texto:
+      "Sua meta de calorias, sua rotina e os alimentos que você gosta viram uma sugestão de cardápio com porções caseiras, substituições, plano semanal e lista de compras — priorizando o que você já come.",
+    quando: "Use depois de saber suas calorias. É a continuação natural da calculadora de déficit e da de macros.",
   },
   {
     href: "/pergunte-ao-montinho",
