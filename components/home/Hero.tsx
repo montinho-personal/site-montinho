@@ -129,8 +129,21 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400">
+      {/*
+        Indicador de scroll — só no desktop.
+
+        Ele é posicionado em absolute no rodapé da seção, e no mobile o
+        conteúdo do hero desce até lá: o "Scroll" e o tracinho caíam por cima
+        do bloco de +20 anos / 100+ / Online, virando texto fantasma sobre
+        texto. Medido, a colisão acontecia em celular e tablet e não no
+        desktop — daí o corte em lg.
+
+        Esconder é a resposta certa e não um paliativo: no mobile o indicador
+        não informa nada, porque a seção já ocupa mais que a tela e a rolagem
+        é óbvia. Empurrar o conteúdo para caber os dois só encolheria o hero
+        para acomodar um enfeite.
+      */}
+      <div className="hidden lg:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-gray-400">
         <span className="text-xs tracking-[0.2em] uppercase">Scroll</span>
         <div className="w-px h-8 bg-gradient-to-b from-gray-500 to-transparent" />
       </div>
