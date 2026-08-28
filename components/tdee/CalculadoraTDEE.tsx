@@ -4,11 +4,15 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { PONTE, guarda } from "@/lib/ferramentas/ponte";
-import { guardaKcalParaMacros } from "@/lib/macros";
+import { guardaKcalParaMacros, guardaPesoParaProteina } from "@/lib/macros";
 import {
   ALTURA_MAX,
   ALTURA_MIN,
   DICA_ATIVIDADE,
+  NARRATIVA_GANHO,
+  SUPERAVIT_MAX,
+  SUPERAVIT_MIN,
+  faixaGanho,
   DISCLAIMER,
   DISCLAIMER_ESPECIAL,
   EXPLICA_MANUTENCAO,
@@ -76,6 +80,7 @@ export default function CalculadoraTDEE({
   const [nivelId, setNivelId] = useState<string | null>(null);
   const [ajudaAberta, setAjudaAberta] = useState(false);
   const [metodoAberto, setMetodoAberto] = useState(false);
+  const [ganhoAberto, setGanhoAberto] = useState(false);
 
   const raiz = useRef<HTMLDivElement>(null);
   const jaCompletou = useRef(false);
@@ -421,7 +426,7 @@ export default function CalculadoraTDEE({
                   <Link
                     href="/ferramentas/calculadora-macros"
                     onClick={() => {
-                      trackEvent("tdee_macros_click", { placement });
+                      trackEvent("tdee_macros_click", { placement, objetivo: "manter" });
                       /** Manutenção: o gasto vira a meta que os macros distribuem. */
                       guardaKcalParaMacros(arredondaKcal(tdee.min));
                     }}
@@ -430,7 +435,83 @@ export default function CalculadoraTDEE({
                     <span>Quero manter — distribuir em macros</span>
                     <span aria-hidden="true">→</span>
                   </Link>
+                  <button
+                    type="button"
+                    aria-expanded={ganhoAberto}
+                    onClick={() => {
+                      if (!ganhoAberto) trackEvent("tdee_gain_open", { placement });
+                      setGanhoAberto(!ganhoAberto);
+                    }}
+                    className={`border px-4 py-3 text-sm font-medium transition-colors min-h-[48px] flex items-center justify-between text-left ${
+                      ganhoAberto ? "border-[#BA9E50] text-white bg-[#BA9E50]/[0.06]" : "border-white/25 hover:border-[#BA9E50] text-gray-200"
+                    }`}
+                  >
+                    <span>Quero ganhar massa magra — planejar o superávit</span>
+                    <span aria-hidden="true">{ganhoAberto ? "▾" : "→"}</span>
+                  </button>
                 </div>
+
+                {/**
+                 * A narrativa de ganho: a mesma faixa de superávit que o
+                 * acervo ensina (200–400 kcal), aplicada ao gasto DESTA
+                 * pessoa. Nada aqui prescreve — mostra a referência, explica
+                 * o porquê do "moderado" e entrega os próximos passos com o
+                 * número já carregado.
+                 */}
+                {ganhoAberto && (
+                  <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.05] p-5 mt-2">
+                    <p className="text-gray-200 text-sm leading-relaxed mb-3">{NARRATIVA_GANHO}</p>
+                    <p className="text-gray-300 text-sm leading-relaxed mb-1">
+                      Superávit moderado: {SUPERAVIT_MIN} a {SUPERAVIT_MAX} kcal acima do gasto — a mesma
+                      referência dos artigos do site. Para o seu gasto estimado, isso significa comer
+                    </p>
+                    <p className="text-white font-bold text-2xl mb-3" style={h}>
+                      ≈ {formataFaixa(faixaGanho(tdee))} <span className="text-sm font-normal text-gray-300">kcal/dia</span>
+                    </p>
+                    <div className="grid gap-2 mb-3">
+                      <Link
+                        href="/ferramentas/calculadora-macros"
+                        onClick={() => {
+                          trackEvent("tdee_macros_click", { placement, objetivo: "ganhar" });
+                          /**
+                           * Parte do começo conservador da faixa (+200): em
+                           * superávit, errar para menos custa semanas; errar
+                           * para mais custa gordura. Editável nos macros.
+                           */
+                          guardaKcalParaMacros(arredondaKcal(tdee.min + SUPERAVIT_MIN));
+                        }}
+                        className="border border-white/25 hover:border-[#BA9E50] text-gray-200 px-4 py-3 text-sm font-medium transition-colors min-h-[48px] flex items-center justify-between"
+                      >
+                        <span>Distribuir essa meta em macros</span>
+                        <span aria-hidden="true">→</span>
+                      </Link>
+                      <Link
+                        href="/ferramentas/monte-seu-cardapio"
+                        onClick={() => {
+                          trackEvent("tdee_macros_click", { placement, objetivo: "ganhar-cardapio" });
+                          guardaKcalParaMacros(arredondaKcal(tdee.min + SUPERAVIT_MIN));
+                          if (peso !== null) guardaPesoParaProteina(peso);
+                        }}
+                        className="border border-white/25 hover:border-[#BA9E50] text-gray-200 px-4 py-3 text-sm font-medium transition-colors min-h-[48px] flex items-center justify-between"
+                      >
+                        <span>Transformar em cardápio de ganho (FitChef)</span>
+                        <span aria-hidden="true">→</span>
+                      </Link>
+                    </div>
+                    <p className="text-gray-400 text-xs leading-relaxed">
+                      A meta parte do começo da faixa (+{SUPERAVIT_MIN} kcal) e pode ser ajustada na próxima
+                      ferramenta. Para entender o superávit em detalhe,{" "}
+                      <Link
+                        href="/blog/calorias-para-ganhar-massa-muscular"
+                        onClick={() => trackEvent("tdee_article_click", { placement })}
+                        className={ln}
+                      >
+                        quantas calorias para ganhar massa muscular
+                      </Link>
+                      .
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
           )}
