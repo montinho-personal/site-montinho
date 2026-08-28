@@ -262,6 +262,22 @@ const semImports = componente.replace(/^import .*$/gm, "");
   );
 }
 
+/**
+ * "Escolha uma faixa" tem que escolher de verdade. Os cards eram divs que
+ * só registravam analytics — reclamação real de uso. Agora são botões com
+ * aria-pressed, e a faixa escolhida é a que atravessa a ponte.
+ */
+ok("as faixas de déficit são botões selecionáveis", /aria-pressed=\{escolhida\}/.test(componente) && /setFaixaSel\(f\.id\)/.test(componente));
+ok(
+  "a ponte leva a faixa ESCOLHIDA, não uma fixa",
+  /x\.id === faixaSel/.test(componente) && !/find\(\(f\) => f\.destaque\);\s*\n\s*if \(moderada\)/.test(componente)
+);
+ok("o próximo passo mostra a meta da faixa escolhida", /com o \$\{f\.titulo\.toLowerCase\(\)\}/.test(componente));
+ok(
+  "quem vem da TMB/TDEE vê o gasto no topo, sem precisar rolar",
+  /veioDaTdee[\s\S]{0,400}?formataFaixa\(resultado\.tdee\)/.test(componente)
+);
+
 console.log("\n" + "=".repeat(64) + "\nACESSIBILIDADE E UX\n" + "=".repeat(64));
 
 ok("os três campos têm label verdadeiro", (componente.match(/<label htmlFor=/g) ?? []).length >= 3);
