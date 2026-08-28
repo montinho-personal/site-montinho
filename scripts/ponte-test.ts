@@ -34,7 +34,10 @@ const proteina = ler("components/proteina/CalculadoraProteina.tsx");
 const volume = ler("components/volume/CalculadoraVolume.tsx");
 const onerm = ler("components/onerm/CalculadoraOneRM.tsx");
 
+const tdee = ler("components/tdee/CalculadoraTDEE.tsx");
+
 const COMPONENTES: [string, string][] = [
+  ["TMB/TDEE", tdee],
   ["Déficit", deficit],
   ["Macros", macros],
   ["Proteína", proteina],
@@ -44,7 +47,12 @@ const COMPONENTES: [string, string][] = [
 
 console.log("\n" + "=".repeat(64) + "\nA MECÂNICA MORA NUM LUGAR SÓ\n" + "=".repeat(64));
 
-ok("existem exatamente três travessias declaradas", Object.keys(PONTE).length === 3, Object.keys(PONTE).join(", "));
+/**
+ * Quatro desde que a TMB/TDEE nasceu: kcal, peso, exercício e o pacote de
+ * dados corporais TMB→Déficit. O número é travado para uma chave nova nunca
+ * entrar sem passar por esta suíte.
+ */
+ok("existem exatamente quatro travessias declaradas", Object.keys(PONTE).length === 4, Object.keys(PONTE).join(", "));
 ok("toda chave tem prefixo do site", Object.values(PONTE).every((v) => v.startsWith("montinho:ponte:")));
 ok("as chaves são únicas", new Set(Object.values(PONTE)).size === Object.keys(PONTE).length);
 
@@ -76,6 +84,8 @@ console.log("\n" + "=".repeat(64) + "\nGRAVAR SÓ POR CLIQUE\n" + "=".repeat(64)
  * pega o trecho entre o onClick e o fim do handler.
  */
 const GRAVADORES: [string, string, string][] = [
+  ["TMB/TDEE → Déficit", tdee, "guarda("],
+  ["TMB/TDEE → Macros", tdee, "guardaKcalParaMacros"],
   ["Déficit → Macros", deficit, "guardaKcalParaMacros"],
   ["Macros → Proteína", macros, "guardaPesoParaProteina"],
   ["Volume → 1RM", volume, "guarda(PONTE.exercicio"],
@@ -107,7 +117,8 @@ ok("consomeNumero usa consome (herda o remove)", /consomeNumero[\s\S]*?consome\(
 const funcoesComStorage = (ponte.match(/export function \w+[\s\S]*?\n\}/g) ?? []).filter((f) =>
   /sessionStorage/.test(f)
 );
-ok("duas funções tocam o storage", funcoesComStorage.length === 2, String(funcoesComStorage.length));
+ok("duas funções tocam o storage (consomeDadosCorporais e consomeNumero delegam)", funcoesComStorage.length === 2, String(funcoesComStorage.length));
+ok("consomeDadosCorporais valida campo a campo", /numOk\(d\.peso|Number\.isFinite\(v\) && v >= min/.test(ponte) && /limites\.niveis\.includes\(d\.nivel\)/.test(ponte));
 ok(
   "toda função que toca o storage tem catch",
   funcoesComStorage.every((f) => /catch\s*\{/.test(f)),
@@ -122,6 +133,7 @@ ok("a caloria recebida é validada por faixa", /consomeNumero\(PONTE\.kcal, KCAL
 console.log("\n" + "=".repeat(64) + "\nAS TRÊS TRAVESSIAS FUNCIONAM PONTA A PONTA\n" + "=".repeat(64));
 
 const travessias: [string, string, string, string, string][] = [
+  ["TMB/TDEE → Déficit", tdee, "/ferramentas/calculadora-deficit-calorico", deficit, "consomeDadosCorporais"],
   ["Déficit → Macros", deficit, "/ferramentas/calculadora-macros", macros, "consomeKcalDeDeficit"],
   ["Macros → Proteína", macros, "/ferramentas/calculadora-de-proteina", proteina, "PONTE.peso"],
   ["Volume → 1RM", volume, "/ferramentas/calculadora-1rm", onerm, "PONTE.exercicio"],

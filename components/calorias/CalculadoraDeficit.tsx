@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { guardaKcalParaMacros, guardaPesoParaProteina } from "@/lib/macros";
+import { PONTE, consomeDadosCorporais } from "@/lib/ferramentas/ponte";
 import {
   ALTURA_MAX,
   ALTURA_MIN,
@@ -79,6 +80,32 @@ export default function CalculadoraDeficit({
 
   const raiz = useRef<HTMLDivElement>(null);
   const jaCompletou = useRef(false);
+  const [veioDaTdee, setVeioDaTdee] = useState(false);
+
+  /**
+   * Travessia TMB/TDEE → déficit: consome o pacote de dados (leitura
+   * destrói), valida contra os limites DESTA ferramenta e preenche o
+   * formulário. O déficit refaz a conta com as próprias funções — que são
+   * as mesmas — e chega no mesmo gasto que a pessoa acabou de ver.
+   */
+  useEffect(() => {
+    const d = consomeDadosCorporais(PONTE.dados, {
+      pesoMin: PESO_MIN,
+      pesoMax: PESO_MAX,
+      alturaMin: ALTURA_MIN,
+      alturaMax: ALTURA_MAX,
+      idadeMin: IDADE_MIN,
+      idadeMax: IDADE_MAX,
+      niveis: NIVEIS.map((n) => n.id),
+    });
+    if (!d) return;
+    setPesoTexto(String(d.peso).replace(".", ","));
+    setAlturaTexto(String(d.altura));
+    setIdadeTexto(String(d.idade));
+    setSexo(d.sexo);
+    setNivelId(d.nivel);
+    setVeioDaTdee(true);
+  }, []);
 
   const peso = useMemo(() => normalizaNumero(pesoTexto), [pesoTexto]);
   const altura = useMemo(() => normalizaAltura(alturaTexto), [alturaTexto]);
@@ -150,6 +177,13 @@ export default function CalculadoraDeficit({
       <p className="text-gray-300 leading-relaxed mb-7 max-w-xl">
         Estime seu gasto diário e veja quanto comer para criar um déficit.
       </p>
+
+      {veioDaTdee && (
+        <p className="text-sm mb-6 -mt-3" style={{ color: "#BA9E50" }}>
+          Seus dados vieram da Calculadora de TMB e Gasto Calórico — o gasto
+          abaixo é o mesmo que você acabou de ver. Pode editar qualquer campo.
+        </p>
+      )}
 
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
         {/* ── Formulário ─────────────────────────────────────────────── */}
