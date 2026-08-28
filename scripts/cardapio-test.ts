@@ -402,6 +402,18 @@ ok("controles somem na impressão", (componente.match(/print:hidden/g) ?? []).le
 ok("o chalalá aparece uma vez, discreto", (componente.match(/chalalá/g) ?? []).length === 1);
 ok("estado vazio de troca não inventa", /SEM_ALTERNATIVA/.test(componente));
 ok("estado corrompido tem recuperação, não tela branca", /Faltou alguma resposta/.test(componente));
+/**
+ * O bug do card vazio: as respostas persistem, o cardápio não. Quem
+ * recarregava a página na tela de resultado voltava com etapa="resultado" e
+ * cardapio=null — nenhum bloco casava e a ferramenta sumia. Tem que haver
+ * uma rota de volta: regenerar (motor determinístico) ou devolver à
+ * pergunta anterior.
+ */
+ok(
+  "recarregar na tela de resultado não deixa a ferramenta vazia",
+  /etapa !== "resultado" \|\| cardapio\) return;[\s\S]{0,200}?gerar\(pedido\)[\s\S]{0,120}?etapa: "habituais"/.test(componente),
+  "sem essa recuperação, quem volta ao site na tela de resultado vê um card em branco"
+);
 
 console.log("\n" + "=".repeat(64) + "\nSEO E ECOSSISTEMA\n" + "=".repeat(64));
 
