@@ -3,6 +3,7 @@ import {
   ARTIGOS_COM_TESTE_MOBILIDADE,
   HREF_TESTE_MOBILIDADE,
 } from "@/lib/mobilidade/artigos";
+import { MOBILIDADE_NO_AR } from "@/lib/mobilidade/lancamento";
 
 /**
  * O convite ao teste de mobilidade dentro de um artigo.
@@ -16,6 +17,9 @@ import {
  * aparecer é editorial e mora em lib/mobilidade/artigos.ts.
  */
 export default function ConviteMobilidade({ slug }: { slug: string }) {
+  /* Fora do ar, o convite levaria a um 404 — então ele nem existe. */
+  if (!MOBILIDADE_NO_AR) return null;
+
   const convite = ARTIGOS_COM_TESTE_MOBILIDADE[slug];
   if (!convite) return null;
 

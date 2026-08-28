@@ -33,6 +33,7 @@ import type { Contexto, EstadoRegiao, Resposta } from "../lib/mobilidade/tipos";
 import { blogPosts } from "../lib/blog";
 import { ARTIGOS_COM_TESTE_MOBILIDADE, SLUGS_COM_TESTE_MOBILIDADE } from "../lib/mobilidade/artigos";
 import { AVISO_HISTORICO } from "../lib/mobilidade/historico";
+import { MOBILIDADE_NO_AR } from "../lib/mobilidade/lancamento";
 import { FIGURAS_EXERCICIO, figuraDoExercicio, figurasDoTeste } from "../lib/mobilidade/figuras";
 
 let falhas = 0;
@@ -457,6 +458,23 @@ const convite = readFileSync("components/mobilidade/ConviteMobilidade.tsx", "utf
 
 check("a página existe com canonical própria",
   /alternates:\s*{\s*canonical:[\s\S]*?teste-mobilidade/.test(pagina));
+
+/**
+ * A chave de lançamento. Enquanto MOBILIDADE_NO_AR for false, a ferramenta
+ * precisa estar INVISÍVEL de ponta a ponta — página em 404, fora do sitemap,
+ * sem card, sem convite. Estes testes garantem que nenhuma das quatro pontas
+ * foi esquecida, nos dois estados da chave.
+ */
+check("a página respeita a chave (notFound quando fora do ar)",
+  /if \(!MOBILIDADE_NO_AR\) notFound\(\);/.test(pagina));
+check("o sitemap respeita a chave",
+  /MOBILIDADE_NO_AR[\s\S]{0,200}teste-mobilidade/.test(sitemap));
+check("o card de /ferramentas respeita a chave",
+  /MOBILIDADE_NO_AR[\s\S]{0,300}teste-mobilidade/.test(hub));
+check("o convite nos artigos respeita a chave",
+  /if \(!MOBILIDADE_NO_AR\) return null;/.test(convite));
+check("estado atual documentado: a ferramenta está " + (MOBILIDADE_NO_AR ? "NO AR" : "FORA DO AR"),
+  true);
 // Sem descontar comentários, este teste reprova a própria linha que explica
 // por que FAQPage não é usado. O schema real é o que sobra depois deles.
 check("só BreadcrumbList no schema — nada de FAQPage nem AggregateRating",
