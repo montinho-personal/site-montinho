@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
 import { NIVEIS, REFERENCIA_TMB } from "@/lib/tdee";
 import CalculadoraTDEE from "@/components/tdee/CalculadoraTDEE";
+import Trilha from "@/components/ferramentas/Trilha";
 
 /**
  * Calculadora de TMB e TDEE — página própria.
@@ -61,6 +62,8 @@ export default function CalculadoraTmbTdeePage() {
           </p>
         </div>
       </section>
+
+      <Trilha atual="/ferramentas/calculadora-tmb-tdee" />
 
       <section className="py-10 bg-black">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

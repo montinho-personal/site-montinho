@@ -13,6 +13,7 @@ import {
   epley1RM,
 } from "@/lib/onerm";
 import CalculadoraOneRM from "@/components/onerm/CalculadoraOneRM";
+import Trilha from "@/components/ferramentas/Trilha";
 
 /**
  * Página própria da calculadora de 1RM.
@@ -84,6 +85,8 @@ export default function CalculadoraOneRMPage() {
           </p>
         </div>
       </section>
+
+      <Trilha atual="/ferramentas/calculadora-1rm" />
 
       <section className="py-10 bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

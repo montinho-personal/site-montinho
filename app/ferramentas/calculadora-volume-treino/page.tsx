@@ -5,6 +5,7 @@ import { EXERCICIOS } from "@/lib/treino/exercicios";
 import { MUSCULOS } from "@/lib/treino/musculos";
 import { FAIXAS, FONTES, NOTA_FREQUENCIA, NOTA_INDIVIDUALIDADE, NOTA_SERIE_VALIDA, PESO_SECUNDARIO } from "@/lib/treino/volume";
 import CalculadoraVolume from "@/components/volume/CalculadoraVolume";
+import Trilha from "@/components/ferramentas/Trilha";
 
 /**
  * Página própria da Calculadora de Volume.
@@ -68,6 +69,8 @@ export default function CalculadoraVolumePage() {
           </p>
         </div>
       </section>
+
+      <Trilha atual="/ferramentas/calculadora-volume-treino" />
 
       <section className="py-10 bg-black">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
 import { revisaoWhatsAppUrl } from "@/lib/revisao";
 import RevisaoCTA from "@/components/revisao/RevisaoCTA";
+import Trilha from "@/components/ferramentas/Trilha";
 
 export const metadata: Metadata = {
   title: "Revisão Gratuita de Execução de Exercícios",
@@ -86,6 +87,8 @@ export default function RevisaoDeExecucaoPage() {
           </p>
         </div>
       </section>
+
+      <Trilha atual="/revisao-de-execucao" />
 
       {/* Como funciona */}
       <section className="py-14 bg-black">

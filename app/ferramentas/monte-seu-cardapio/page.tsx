@@ -4,6 +4,7 @@ import { SITE_URL } from "@/lib/blog";
 import { ALIMENTOS_CARDAPIO } from "@/lib/cardapio/alimentos";
 import { PERFIS_REFEICAO, TOLERANCIA_KCAL } from "@/lib/cardapio/motor";
 import MonteSeuCardapio from "@/components/cardapio/MonteSeuCardapio";
+import Trilha from "@/components/ferramentas/Trilha";
 
 /**
  * Montinho FitChef (Monte seu Cardápio) — página própria. O nome é FitChef;
@@ -108,6 +109,8 @@ export default function MonteSeuCardapioPage() {
           </p>
         </div>
       </section>
+
+      <Trilha atual="/ferramentas/monte-seu-cardapio" />
 
       <section className="py-10 bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

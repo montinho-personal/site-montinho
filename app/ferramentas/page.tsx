@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, blogPosts } from "@/lib/blog";
+import { TRILHAS } from "@/lib/ferramentas/trilha";
 
 export const metadata: Metadata = {
   title: "Ferramentas Gratuitas de Treino",
@@ -191,6 +192,49 @@ export default function FerramentasPage() {
             Cada uma responde a uma pergunta diferente. Você não precisa usar
             todas — comece pela que descreve melhor a sua dúvida de agora.
           </p>
+        </div>
+      </section>
+
+      {/**
+       * As trilhas: o caminho explícito para quem não sabe por onde começar.
+       * As ferramentas sempre se conectaram por baixo (as pontes de dados);
+       * aqui o caminho ganha nome e número, porque a pessoa leiga precisa de
+       * direção antes de precisar de ferramenta.
+       */}
+      <section className="py-12 bg-black border-b border-white/10">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2" style={h}>
+            Não sabe por onde começar? Siga o caminho
+          </h2>
+          <p className="text-gray-300 leading-relaxed mb-8">
+            As ferramentas conversam entre si: cada passo calcula o número que
+            o próximo usa, e seus dados atravessam sozinhos — sem redigitar
+            nada. Comece pelo passo 1 e vá seguindo.
+          </p>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {(Object.keys(TRILHAS) as (keyof typeof TRILHAS)[]).map((id) => (
+              <div key={id} className="border border-white/15 p-6">
+                <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+                  {TRILHAS[id].titulo}
+                </p>
+                <ol className="space-y-3">
+                  {TRILHAS[id].passos.map((p, i) => (
+                    <li key={p.href}>
+                      <Link href={p.href} className="group flex items-baseline gap-3">
+                        <span className="text-gray-500 text-sm font-semibold whitespace-nowrap">{i + 1}.</span>
+                        <span>
+                          <span className="text-white font-semibold group-hover:underline underline-offset-4 decoration-1">
+                            {p.nome}
+                          </span>{" "}
+                          <span className="text-gray-400 text-sm">— {p.pergunta}</span>
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

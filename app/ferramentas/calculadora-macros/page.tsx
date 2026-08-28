@@ -12,6 +12,7 @@ import {
   formataNumero,
 } from "@/lib/macros";
 import CalculadoraMacros from "@/components/macros/CalculadoraMacros";
+import Trilha from "@/components/ferramentas/Trilha";
 
 /**
  * Página própria da calculadora de macros.
@@ -82,6 +83,8 @@ export default function CalculadoraMacrosPage() {
           </p>
         </div>
       </section>
+
+      <Trilha atual="/ferramentas/calculadora-macros" />
 
       <section className="py-10 bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

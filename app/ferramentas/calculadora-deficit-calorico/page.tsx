@@ -12,6 +12,7 @@ import {
   formataFaixa,
 } from "@/lib/calorias";
 import CalculadoraDeficit from "@/components/calorias/CalculadoraDeficit";
+import Trilha from "@/components/ferramentas/Trilha";
 
 /**
  * Página própria da calculadora de déficit calórico.
@@ -93,6 +94,8 @@ export default function CalculadoraDeficitPage() {
           </p>
         </div>
       </section>
+
+      <Trilha atual="/ferramentas/calculadora-deficit-calorico" />
 
       <section className="py-10 bg-black">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

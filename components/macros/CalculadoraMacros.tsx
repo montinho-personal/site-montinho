@@ -412,6 +412,35 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
               )}
             </div>
 
+            {/**
+             * O próximo passo da trilha, em destaque — não escondido na
+             * lista de links. Macros calculados são número; o cardápio é
+             * onde o número vira comida, e a pessoa leiga precisa VER essa
+             * porta, não achá-la.
+             */}
+            <div className="border border-[#BA9E50]/50 bg-[#BA9E50]/[0.06] p-5 mt-6">
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-1.5" style={{ color: "#BA9E50" }}>
+                Próximo passo
+              </p>
+              <p className="text-gray-200 text-sm leading-relaxed mb-3">
+                Seus macros estão calculados. Agora transforme os números em
+                comida de verdade: o Montinho FitChef monta um cardápio com
+                porções caseiras usando exatamente esta meta.
+              </p>
+              <Link
+                href="/ferramentas/monte-seu-cardapio"
+                onClick={() => {
+                  if (kcal !== null) guardaKcalParaMacros(kcal);
+                  if (peso !== null) guardaPesoParaProteina(peso);
+                  trackEvent("macro_cardapio_click", { placement });
+                }}
+                className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 text-sm font-semibold min-h-[48px] hover:opacity-90 transition-opacity"
+              >
+                Montar meu cardápio com esses macros
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+
             {/* Como calculamos */}
             <div className="border-t border-white/10 pt-5">
               <button
