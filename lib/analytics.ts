@@ -168,6 +168,9 @@ export type AnalyticsEvent =
   | "ask_montinho_feedback_negative"
   | "ask_montinho_embed_submit"
 
+  /** Páginas /comece — as portas de entrada dos caminhos. */
+  | "comece_view"
+
   // CTAs contextuais nos artigos
   | "contextual_cta_view"
   | "contextual_cta_click"

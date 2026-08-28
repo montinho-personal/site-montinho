@@ -195,5 +195,44 @@ console.log("\n" + "=".repeat(64) + "\nA ÚLTIMA EMENDA: CARGA ENTREGA NA EXECU�
   ok("o evento one_rm_review_click está declarado", ler("lib/analytics.ts").includes('"one_rm_review_click"'));
 }
 
+console.log("\n" + "=".repeat(64) + "\nAS PORTAS DE ENTRADA: /comece\n" + "=".repeat(64));
+
+/**
+ * As três LPs dos caminhos. Regras: leem TRILHAS (fonte única — nada de
+ * passo duplicado à mão), canonical própria, os bordões entram pelas
+ * constantes de lib/bordoes (a frase do impossível nunca sem a condição),
+ * a história carrega os fatos reais (40 kg, o problema era a abordagem), e
+ * o único JS é o rastreio de view.
+ */
+for (const [arq, url] of [
+  ["app/comece/page.tsx", "/comece"],
+  ["app/comece/dieta/page.tsx", "/comece/dieta"],
+  ["app/comece/treino/page.tsx", "/comece/treino"],
+] as const) {
+  const src = ler(arq);
+  ok(`${url} existe e tem canonical própria`, src.includes("canonical: `${SITE_URL}" + url + "`"));
+  ok(`${url} lê os passos de TRILHAS (fonte única)`, /from "@\/lib\/ferramentas\/trilha"/.test(src));
+  ok(`${url} usa os bordões pelas constantes, nunca à mão`, /from "@\/lib\/bordoes"/.test(src) && /BORDOES\./.test(src));
+  ok(`${url} tem BreadcrumbList e H1`, /BreadcrumbList/.test(src) && /<h1/.test(src));
+  ok(`${url} não usa hooks (o único JS é o RastreioComece)`, !/useState|useEffect/.test(src) && /RastreioComece/.test(src));
+}
+{
+  const geral = ler("app/comece/page.tsx");
+  ok("a geral conta a história com os fatos reais", /gordinho da turma/.test(geral) && /40 kg/.test(geral) && /o problema era a abordagem/.test(geral));
+  ok("a geral apresenta os DOIS caminhos", /\/comece\/dieta|`\/comece\/\$\{id\}`/.test(geral));
+  ok("a frase do impossível vem da constante completa (com condição)", /BORDOES\.impossivelCompleta/.test(geral) && /BORDOES\.impossivelNaoEh/.test(geral));
+  ok("as três estão no sitemap", ["/comece", "/comece/dieta", "/comece/treino"].every((u) => ler("app/sitemap.ts").includes("${SITE_URL}" + u + "`")));
+  ok("a faixa de trilha linka a LP do caminho", /href=\{`\/comece\/\$\{pos\.trilha\}`\}/.test(ler("components/ferramentas/Trilha.tsx")));
+  ok("o evento comece_view está declarado", ler("lib/analytics.ts").includes('"comece_view"'));
+}
+{
+  /** Cada LP específica cobre TODOS os passos do caminho dela. */
+  for (const id of ["dieta", "treino"] as const) {
+    const src = ler(`app/comece/${id}/page.tsx`);
+    const faltando = TRILHAS[id].passos.filter((p) => !src.includes(`"${p.href}"`));
+    ok(`/comece/${id} detalha todos os ${TRILHAS[id].passos.length} passos`, faltando.length === 0, faltando.map((p) => p.href).join(", "));
+  }
+}
+
 console.log("\n" + "=".repeat(64) + (falhas === 0 ? "\nTODOS OS TESTES PASSARAM" : `\n${falhas} TESTE(S) FALHARAM`));
 if (falhas > 0) process.exit(1);

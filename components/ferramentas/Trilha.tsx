@@ -22,7 +22,10 @@ export default function Trilha({ atual }: { atual: string }) {
     <nav aria-label={titulo} className="border-b border-white/10 bg-black print:hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <p className="text-xs text-gray-500 mb-2.5">
-          {titulo} · passo {pos.indice + 1} de {passos.length}
+          <Link href={`/comece/${pos.trilha}`} className="hover:text-gray-300 underline underline-offset-2 decoration-white/20 transition-colors">
+            {titulo}
+          </Link>{" "}
+          · passo {pos.indice + 1} de {passos.length}
         </p>
         <ol className="flex flex-wrap items-center gap-y-2">
           {passos.map((p, i) => (
