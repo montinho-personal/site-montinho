@@ -319,9 +319,13 @@ export const AVISO_META_BAIXA =
  * tempo (quantos kg por mês), cuja dúvida é sobre velocidade e não sobre
  * quanto comer.
  */
+/**
+ * "como-calcular-tmb-tdee-calorias" e "quantas-calorias-eu-gasto-por-dia"
+ * moraram aqui até a Calculadora de TMB/TDEE existir — migraram para
+ * ARTIGOS_COM_CALCULADORA_TDEE (lib/tdee.ts) porque a pergunta dos dois é
+ * "quanto eu gasto?", não "quanto cortar?". Uma ferramenta por artigo.
+ */
 export const ARTIGOS_COM_CALCULADORA_DEFICIT: string[] = [
   "deficit-calorico-como-calcular",
-  "como-calcular-tmb-tdee-calorias",
   "quantas-calorias-cortar-para-emagrecer",
-  "quantas-calorias-eu-gasto-por-dia",
 ];

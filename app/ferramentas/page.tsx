@@ -40,12 +40,13 @@ const itemListSchema = {
     { "@type": "ListItem", position: 3, name: "Pergunte ao Montinho", url: `${SITE_URL}/pergunte-ao-montinho` },
     { "@type": "ListItem", position: 4, name: "Revisão Gratuita de Execução", url: `${SITE_URL}/revisao-de-execucao` },
     { "@type": "ListItem", position: 5, name: "Calculadora de Proteína", url: `${SITE_URL}/ferramentas/calculadora-de-proteina` },
-    { "@type": "ListItem", position: 6, name: "Calculadora de Déficit Calórico", url: `${SITE_URL}/ferramentas/calculadora-deficit-calorico` },
-    { "@type": "ListItem", position: 7, name: "Calculadora de 1RM", url: `${SITE_URL}/ferramentas/calculadora-1rm` },
-    { "@type": "ListItem", position: 8, name: "Calculadora de Macros", url: `${SITE_URL}/ferramentas/calculadora-macros` },
-    { "@type": "ListItem", position: 9, name: "Calculadora de Volume de Treino", url: `${SITE_URL}/ferramentas/calculadora-volume-treino` },
-    { "@type": "ListItem", position: 10, name: "Montinho FitChef", url: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
-    { "@type": "ListItem", position: 11, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: 6, name: "Calculadora de TMB e TDEE", url: `${SITE_URL}/ferramentas/calculadora-tmb-tdee` },
+    { "@type": "ListItem", position: 7, name: "Calculadora de Déficit Calórico", url: `${SITE_URL}/ferramentas/calculadora-deficit-calorico` },
+    { "@type": "ListItem", position: 8, name: "Calculadora de 1RM", url: `${SITE_URL}/ferramentas/calculadora-1rm` },
+    { "@type": "ListItem", position: 9, name: "Calculadora de Macros", url: `${SITE_URL}/ferramentas/calculadora-macros` },
+    { "@type": "ListItem", position: 10, name: "Calculadora de Volume de Treino", url: `${SITE_URL}/ferramentas/calculadora-volume-treino` },
+    { "@type": "ListItem", position: 11, name: "Montinho FitChef", url: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
+    { "@type": "ListItem", position: 12, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -89,6 +90,15 @@ const FERRAMENTAS = [
     texto:
       "Informe seu peso e veja referências de 1,6, 2,0 e 2,2 g de proteína por kg por dia, com divisão por refeições e exemplos de alimentos com a fonte de cada valor.",
     quando: "Use quando quiser sair do achismo sobre a meta de proteína — o peso não sai do seu navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-tmb-tdee",
+    nome: "Calculadora de TMB e TDEE",
+    pergunta: "Quanto meu corpo gasta por dia?",
+    tempo: "30 segundos · sem cadastro",
+    texto:
+      "Informe peso, altura, idade e nível de atividade para estimar seu metabolismo em repouso e seu gasto energético diário total — com a conta aberta, sem caixa-preta.",
+    quando: "Use quando a dúvida é quanto você gasta. É o primeiro número da cadeia: gasto → meta → macros → cardápio.",
   },
   {
     href: "/ferramentas/calculadora-deficit-calorico",

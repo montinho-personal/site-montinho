@@ -72,6 +72,19 @@ export type AnalyticsEvent =
   | "calorie_macros_click"
 
   /**
+   * Calculadora de TMB e Gasto Calórico (TDEE). Mesma regra de privacidade
+   * da calculadora de déficit: peso, altura, idade, sexo, TMB e TDEE são
+   * dados corporais e NUNCA entram em parâmetro de evento.
+   */
+  | "tdee_calculator_view"
+  | "tdee_calculator_complete"
+  | "tdee_activity_change"
+  | "tdee_methodology_open"
+  | "tdee_deficit_click"
+  | "tdee_macros_click"
+  | "tdee_article_click"
+
+  /**
    * Calculadora de 1RM. Mesma regra: carga, repetições e o 1RM estimado são
    * desempenho individual e NUNCA entram em parâmetro de evento. Não
    * precisamos armazenar o quanto ninguém levanta para saber se a

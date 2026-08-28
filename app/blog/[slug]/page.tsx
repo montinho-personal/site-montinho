@@ -15,7 +15,9 @@ import { splitAtNaturalBreak, splitAtPrimeiraSecao } from "@/lib/cta/placement";
 import { ARTIGOS_COM_CALCULADORA } from "@/lib/proteina";
 import CalculadoraProteina from "@/components/proteina/CalculadoraProteina";
 import { ARTIGOS_COM_CALCULADORA_DEFICIT } from "@/lib/calorias";
+import { ARTIGOS_COM_CALCULADORA_TDEE } from "@/lib/tdee";
 import CalculadoraDeficit from "@/components/calorias/CalculadoraDeficit";
+import CalculadoraTDEE from "@/components/tdee/CalculadoraTDEE";
 import { ARTIGOS_COM_CALCULADORA_1RM, ARTIGOS_COM_LINK_1RM } from "@/lib/onerm";
 import { ARTIGOS_COM_CALCULADORA_MACROS } from "@/lib/macros";
 import { ARTIGOS_COM_CALCULADORA_VOLUME, ARTIGOS_COM_LINK_VOLUME } from "@/lib/treino/volume";
@@ -100,6 +102,8 @@ export default async function BlogPost({ params }: Props) {
   // antiga e a mais linkada.
   const qualCalc = ARTIGOS_COM_CALCULADORA.includes(post.slug)
     ? "proteina"
+    : ARTIGOS_COM_CALCULADORA_TDEE.includes(post.slug)
+      ? "tdee"
     : ARTIGOS_COM_CALCULADORA_DEFICIT.includes(post.slug)
       ? "deficit"
       : ARTIGOS_COM_CALCULADORA_1RM.includes(post.slug)
@@ -248,6 +252,8 @@ export default async function BlogPost({ params }: Props) {
               <div className="my-10">
                 {qualCalc === "proteina" ? (
                   <CalculadoraProteina placement={post.slug === "quanta-proteina-por-dia-para-ganhar-massa-muscular" ? "artigo-proteina-dia" : `artigo-${post.slug}`} />
+                ) : qualCalc === "tdee" ? (
+                  <CalculadoraTDEE placement={post.slug} />
                 ) : qualCalc === "deficit" ? (
                   <CalculadoraDeficit placement={post.slug} />
                 ) : qualCalc === "onerm" ? (

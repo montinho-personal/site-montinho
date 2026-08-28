@@ -28,6 +28,15 @@ export const PONTE = {
   peso: "montinho:ponte:peso",
   /** Volume de treino → 1RM: o nome do exercício em análise. */
   exercicio: "montinho:ponte:exercicio",
+  /**
+   * TMB/TDEE → Déficit: os cinco dados do formulário, como JSON.
+   *
+   * A alternativa — passar só o TDEE pronto — seria um número opaco que o
+   * déficit não saberia explicar. Passando os DADOS, o déficit refaz a
+   * mesma conta determinística, chega no mesmo gasto, e todo o "como
+   * calculamos" dele continua verdadeiro.
+   */
+  dados: "montinho:ponte:dados-corporais",
 } as const;
 
 export type ChavePonte = (typeof PONTE)[keyof typeof PONTE];
@@ -59,4 +68,46 @@ export function consomeNumero(chave: ChavePonte, min: number, max: number): numb
   if (v === null) return null;
   const n = Number(v);
   return Number.isFinite(n) && n >= min && n <= max ? n : null;
+}
+
+/** O pacote da travessia TMB/TDEE → Déficit. */
+export interface DadosCorporais {
+  peso: number;
+  altura: number;
+  idade: number;
+  sexo: "masculino" | "feminino" | "nao_informado";
+  /** Id do nível de atividade (o receptor valida contra a lista dele). */
+  nivel: string;
+}
+
+/**
+ * Consome o pacote de dados corporais, validando campo a campo — a regra de
+ * toda ponte: quem recebe não confia, confere. Qualquer campo fora das
+ * faixas invalida o pacote inteiro; melhor a pessoa digitar de novo que um
+ * formulário meio-preenchido com dado corrompido.
+ */
+export function consomeDadosCorporais(
+  chave: ChavePonte,
+  limites: { pesoMin: number; pesoMax: number; alturaMin: number; alturaMax: number; idadeMin: number; idadeMax: number; niveis: string[] }
+): DadosCorporais | null {
+  const bruto = consome(chave);
+  if (bruto === null) return null;
+  try {
+    const d = JSON.parse(bruto) as Partial<DadosCorporais>;
+    const numOk = (v: unknown, min: number, max: number): v is number =>
+      typeof v === "number" && Number.isFinite(v) && v >= min && v <= max;
+    if (
+      numOk(d.peso, limites.pesoMin, limites.pesoMax) &&
+      numOk(d.altura, limites.alturaMin, limites.alturaMax) &&
+      numOk(d.idade, limites.idadeMin, limites.idadeMax) &&
+      (d.sexo === "masculino" || d.sexo === "feminino" || d.sexo === "nao_informado") &&
+      typeof d.nivel === "string" &&
+      limites.niveis.includes(d.nivel)
+    ) {
+      return { peso: d.peso, altura: d.altura, idade: d.idade, sexo: d.sexo, nivel: d.nivel };
+    }
+    return null;
+  } catch {
+    return null;
+  }
 }
