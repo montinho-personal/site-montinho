@@ -179,6 +179,7 @@ export type AnalyticsEvent =
   | "routine_result_view"
   | "routine_plan_b_view"
   | "routine_schedule_commit"
+  | "routine_volume_click"
   | "routine_article_click"
   | "routine_diagnostic_click"
   | "routine_ask_click"

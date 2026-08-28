@@ -159,5 +159,25 @@ for (const arq of [
   );
 }
 
+console.log("\n" + "=".repeat(64) + "\nA ROTINA BIFURCA COM HONESTIDADE\n" + "=".repeat(64));
+
+/**
+ * O caminho do treino atende duas pessoas. Quem NÃO tem treino: a jornada
+ * gratuita termina na Rotina (montar exercícios é o produto — lacuna
+ * proposital, e o CTA de WhatsApp é a saída dela). Quem JÁ treina: segue
+ * para o Volume auditar a ficha. O resultado da Rotina precisa dizer isso
+ * com todas as letras, senão a primeira pessoa cai no passo 3 sem ter o
+ * que digitar.
+ */
+{
+  const rot = ler("components/rotina/RotinaQuiz.tsx").replace(/\/\*[\s\S]*?\*\//g, "");
+  ok("existe a porta de quem já treina, para o Volume", /Já treina com uma ficha pronta\?/.test(rot) && /calculadora-volume-treino/.test(rot) && /routine_volume_click/.test(rot));
+  ok("e a honestidade sobre a lacuna: sem treino, o gratuito termina ali", /caminho gratuito termina aqui/.test(rot));
+  const iWhats = rot.indexOf("Quero transformar essa estrutura no meu treino");
+  const iVolume = rot.indexOf("Já treina com uma ficha pronta?");
+  ok("o WhatsApp continua sendo a ação principal, a bifurcação vem depois", iWhats > -1 && iVolume > iWhats);
+  ok("o evento routine_volume_click está declarado", ler("lib/analytics.ts").includes('"routine_volume_click"'));
+}
+
 console.log("\n" + "=".repeat(64) + (falhas === 0 ? "\nTODOS OS TESTES PASSARAM" : `\n${falhas} TESTE(S) FALHARAM`));
 if (falhas > 0) process.exit(1);
