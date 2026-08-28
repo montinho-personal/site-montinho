@@ -33,6 +33,7 @@ import type { Contexto, EstadoRegiao, Resposta } from "../lib/mobilidade/tipos";
 import { blogPosts } from "../lib/blog";
 import { ARTIGOS_COM_TESTE_MOBILIDADE, SLUGS_COM_TESTE_MOBILIDADE } from "../lib/mobilidade/artigos";
 import { AVISO_HISTORICO } from "../lib/mobilidade/historico";
+import { figurasDoTeste } from "../lib/mobilidade/figuras";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -345,7 +346,63 @@ check("toda região tem ao menos 2 exercícios",
 check("toda região tem ao menos 1 exercício liberado para pré-treino",
   REGIOES.every((r) => EXERCICIOS.some((e) => e.regiao === r && e.momentos.includes("pre"))));
 
-// ─── 13 ── INTEGRAÇÃO COM O SITE ────────────────────────────────────────────
+const comp = readFileSync("components/mobilidade/TesteMobilidade.tsx", "utf8").replace(/\s+/g, " ");
+
+// ─── 13 ── AS FIGURAS ───────────────────────────────────────────────────────
+bloco("13. TODO TESTE MOSTRA O CERTO E O ERRO");
+
+check("todos os 5 testes têm figuras",
+  TESTES.every((t) => figurasDoTeste(t.id) !== null),
+  TESTES.filter((t) => !figurasDoTeste(t.id)).map((t) => t.id).join());
+check("sempre um par: certo primeiro, erro depois",
+  TESTES.every((t) => {
+    const f = figurasDoTeste(t.id)!;
+    return f.length === 2 && f[0].tipo === "certo" && f[1].tipo === "erro";
+  }));
+
+const todasFiguras = TESTES.flatMap((t) => figurasDoTeste(t.id)!);
+check("toda figura tem alt descritivo de verdade",
+  todasFiguras.every((f) => f.alt.length > 80));
+check("nenhum alt é igual a outro",
+  new Set(todasFiguras.map((f) => f.alt)).size === todasFiguras.length);
+check("toda figura tem corpo desenhado",
+  todasFiguras.every((f) => f.segmentos.length >= 3));
+
+/**
+ * A trava que pega o bug que apareceu na primeira renderização: rótulo com
+ * âncora "start" colocado à direita saía do quadro, e o texto era cortado. O
+ * viewBox vai de 0 a 100 e nada pode encostar na borda.
+ */
+const foraDoQuadro = todasFiguras.flatMap((f) =>
+  f.anotacoes
+    .filter((a) => a.x < 5 || a.x > 95 || a.y < 5 || a.y > 98)
+    .map((a) => `${f.titulo}: "${a.texto}" em ${a.x},${a.y}`),
+);
+check("nenhum rótulo escapa do quadro", foraDoQuadro.length === 0, foraDoQuadro.join(" | "));
+
+const pontosFora = todasFiguras.flatMap((f) =>
+  [
+    ...f.segmentos.flatMap((s) => [[s[0], s[1]], [s[2], s[3]]]),
+    ...(f.destaque ? [[f.destaque.cx, f.destaque.cy]] : []),
+  ].filter(([x, y]) => x < 2 || x > 98 || y < 2 || y > 98),
+);
+check("nenhum traço do corpo sai do quadro", pontosFora.length === 0,
+  pontosFora.map((p) => p.join(",")).join(" | "));
+
+check("a figura do erro nomeia o erro, e não a pessoa",
+  todasFiguras
+    .filter((f) => f.tipo === "erro")
+    .every((f) => f.anotacoes.some((a) => /não vale|subiu|saiu|andou|dobrou|girou|emprestado|veio de fora/.test(a.texto))));
+
+const figuraComp = readFileSync("components/mobilidade/Figura.tsx", "utf8");
+check("a figura é componente de servidor (zero JavaScript)",
+  !/"use client"/.test(figuraComp) && !/useState|useEffect/.test(figuraComp));
+check("a informação nunca depende só da cor: há título escrito e alt",
+  /figura.titulo/.test(figuraComp) && /aria-label=\{figura.alt\}/.test(figuraComp));
+check("o componente do teste renderiza as duas figuras",
+  /figurasDoTeste\(testeAtual\.id\)/.test(comp));
+
+// ─── 14 ── INTEGRAÇÃO COM O SITE ────────────────────────────────────────────
 bloco("13. A FERRAMENTA ESTÁ LIGADA AO SITE");
 
 const artigos = readFileSync("lib/mobilidade/artigos.ts", "utf8");
@@ -409,7 +466,6 @@ check("os eventos do funil estão declarados",
   ["mobility_tool_view", "mobility_start", "mobility_test_complete",
    "mobility_result_view", "mobility_protocol_generated", "mobility_whatsapp",
    "mobility_save", "mobility_restart"].every((e) => analytics.includes(`"${e}"`)));
-const comp = readFileSync("components/mobilidade/TesteMobilidade.tsx", "utf8").replace(/\s+/g, " ");
 check("nenhum evento carrega resposta de teste ou de triagem",
   !/trackEvent\([^)]*respostas/.test(comp) && !/trackEvent\([^)]*triagem/.test(comp) &&
   !/trackEvent\([^)]*mapa/.test(comp));
