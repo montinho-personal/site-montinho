@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
-import { guardaKcalParaMacros } from "@/lib/macros";
+import { guardaKcalParaMacros, guardaPesoParaProteina } from "@/lib/macros";
 import {
   ALTURA_MAX,
   ALTURA_MIN,
@@ -454,6 +454,22 @@ export default function CalculadoraDeficit({
                   style={{ textDecorationColor: "#BA9E50" }}
                 >
                   Distribuir minhas calorias em macros →
+                </Link>
+                <Link
+                  href="/ferramentas/monte-seu-cardapio"
+                  onClick={() => {
+                    const moderada = FAIXAS_DEFICIT.find((f) => f.destaque);
+                    if (moderada) {
+                      const m = aplicaDeficit(resultado.tdee, moderada.percentualMax);
+                      guardaKcalParaMacros(m.min);
+                    }
+                    if (peso !== null) guardaPesoParaProteina(peso);
+                    trackEvent("calorie_macros_click", { placement: `${placement}-cardapio` });
+                  }}
+                  className="inline-block mt-4 ml-6 text-white text-sm font-semibold underline underline-offset-4 decoration-1 hover:opacity-80 transition-opacity min-h-[44px]"
+                  style={{ textDecorationColor: "#BA9E50" }}
+                >
+                  Transformar em cardápio →
                 </Link>
               </div>
 

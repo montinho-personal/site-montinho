@@ -116,6 +116,26 @@ export type AnalyticsEvent =
   | "training_volume_1rm_click"
   | "training_volume_article_click"
   | "training_volume_cta_click"
+
+  /**
+   * Monte seu Cardápio. Funil completo, zero conteúdo: nenhuma resposta,
+   * meta, peso ou alimento escolhido entra em parâmetro — só o passo do
+   * funil e as dimensões agregáveis (objetivo, nº de refeições, dieta), que
+   * são as únicas coisas necessárias para melhorar o produto.
+   */
+  | "meal_planner_view"
+  | "meal_planner_start"
+  | "meal_planner_goal_selected"
+  | "meal_planner_preferences_complete"
+  | "meal_plan_generated"
+  | "meal_swap_clicked"
+  | "meal_swapped"
+  | "weekly_plan_generated"
+  | "shopping_list_generated"
+  | "meal_plan_saved"
+  | "meal_methodology_open"
+  | "meal_article_click"
+  | "meal_cta_click"
   | "ask_montinho_feedback_positive"
   | "ask_montinho_feedback_negative"
   | "ask_montinho_embed_submit"
