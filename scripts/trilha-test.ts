@@ -116,5 +116,44 @@ console.log("\n" + "=".repeat(64) + "\nO PRÓXIMO PASSO TAMBÉM É CLARO NO DÉF
   ok("o atalho explica por que pular é seguro", /calcula os macros por dentro/.test(deficit));
 }
 
+console.log("\n" + "=".repeat(64) + "\nO DIAGNÓSTICO ENTREGA O PASSO 2\n" + "=".repeat(64));
+
+/**
+ * O resultado do diagnóstico é o passo 1 do caminho do treino e parava num
+ * beco: convite de análise e artigos, mas nenhuma direção para a próxima
+ * ferramenta. Agora os dois públicos saem com caminho — quem quer falar
+ * com o Montinho fala; quem quer seguir sozinho vai para a Rotina.
+ */
+{
+  const diag = ler("components/diagnostico/DiagnosticoQuiz.tsx").replace(/\/\*[\s\S]*?\*\//g, "");
+  ok("o resultado tem o bloco 'Próximo passo' para a Rotina", /Próximo passo/.test(diag) && /treino-para-minha-rotina/.test(diag) && /Montar minha rotina de treino/.test(diag));
+  const iAnalise = diag.indexOf("Quero uma análise do Montinho");
+  const iProximo = diag.indexOf("Montar minha rotina de treino");
+  ok("o convite de análise vem antes (é a conversão), a trilha depois", iAnalise > -1 && iProximo > iAnalise);
+  ok("o evento diagnostic_routine_click está declarado", ler("lib/analytics.ts").includes('"diagnostic_routine_click"'));
+}
+
+console.log("\n" + "=".repeat(64) + "\nRÓTULOS EM CAIXA ALTA NUNCA HERDAM A SERIFADA\n" + "=".repeat(64));
+
+/**
+ * O CSS global põe Playfair em todo h1–h6. Em título grande isso é a
+ * identidade do site; em rótulo pequeno em caixa alta é ilegível — foi
+ * reclamação real de uso. Todo heading pequeno uppercase precisa declarar
+ * a fonte sans explicitamente.
+ */
+for (const arq of [
+  "components/diagnostico/DiagnosticoQuiz.tsx",
+  "app/personal-trainer/page.tsx",
+  "app/consultoria-online/page.tsx",
+]) {
+  const src = ler(arq);
+  const rotulos = src.match(/<h[3-6][^>]*uppercase[^>]*>/g) ?? [];
+  ok(
+    `${arq}: todo heading uppercase declara fonte sans (${rotulos.length} rótulos)`,
+    rotulos.length === 0 || rotulos.every((r) => /font-inter|sans-serif/.test(r)),
+    rotulos.filter((r) => !/font-inter|sans-serif/.test(r)).join(" | ")
+  );
+}
+
 console.log("\n" + "=".repeat(64) + (falhas === 0 ? "\nTODOS OS TESTES PASSARAM" : `\n${falhas} TESTE(S) FALHARAM`));
 if (falhas > 0) process.exit(1);

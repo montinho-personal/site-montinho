@@ -345,7 +345,7 @@ export default function LandingPage() {
             </h2>
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="border border-white/10 rounded-2xl p-7 bg-black/40">
-                <h3 className="text-gray-300 font-bold uppercase text-xs tracking-[0.15em] mb-5">Outros personais</h3>
+                <h3 className="text-gray-300 font-bold uppercase text-xs tracking-[0.15em] mb-5" style={{ fontFamily: "var(--font-inter), sans-serif" }}>Outros personais</h3>
                 <ul className="space-y-3 text-gray-400 text-sm">
                   <li>❌ Utilizam treinos parecidos para diferentes alunos</li>
                   <li>❌ Pouco acompanhamento entre as aulas</li>
@@ -354,7 +354,7 @@ export default function LandingPage() {
                 </ul>
               </div>
               <div className="border border-[#BA9E50]/50 rounded-2xl p-7 bg-[#BA9E50]/[0.06] shadow-[0_0_40px_rgba(186,158,80,0.08)]">
-                <h3 className="text-[#BA9E50] font-bold uppercase text-xs tracking-[0.15em] mb-5">Montinho Personal</h3>
+                <h3 className="text-[#BA9E50] font-bold uppercase text-xs tracking-[0.15em] mb-5" style={{ fontFamily: "var(--font-inter), sans-serif" }}>Montinho Personal</h3>
                 <ul className="space-y-3 text-gray-200 text-sm">
                   <li>✅ Estratégia personalizada para cada aluno</li>
                   <li>✅ Acompanhamento contínuo</li>

@@ -21,6 +21,7 @@ export type AnalyticsEvent =
   | "diagnostic_complete"
   | "diagnostic_result_view"
   | "diagnostic_whatsapp_click"
+  | "diagnostic_routine_click"
   | "diagnostic_article_click"
   | "diagnostic_service_click"
   // Pergunte ao Montinho (nunca enviar o texto da pergunta — só categorias)

@@ -190,25 +190,25 @@ export default function DiagnosticoQuiz() {
 
         <div className="space-y-6 mb-10">
           <div>
-            <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-2">
+            <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-2" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               Frequência para a sua rotina
             </h3>
             <p className="text-gray-300 text-sm leading-relaxed">{result.frequency}</p>
           </div>
           <div>
-            <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-2">
+            <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-2" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               Seu principal gargalo
             </h3>
             <p className="text-gray-300 text-sm leading-relaxed">{result.bottleneck}</p>
           </div>
           <div>
-            <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-2">
+            <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-2" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               Acompanhamento mais compatível: {result.modality}
             </h3>
             <p className="text-gray-300 text-sm leading-relaxed">{result.modalityReason}</p>
           </div>
           <div>
-            <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-3">
+            <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-3" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               Três próximos passos
             </h3>
             <ol className="space-y-3">
@@ -252,9 +252,37 @@ export default function DiagnosticoQuiz() {
           </a>
         </div>
 
+        {/**
+         * A continuação da trilha — o diagnóstico é o passo 1 do caminho do
+         * treino, e o resultado não pode ser um beco. O convite de análise
+         * (acima) é a conversão; este bloco é a direção para quem prefere
+         * seguir sozinho por enquanto: os dois públicos saem com caminho.
+         */}
+        <div className="border border-[#BA9E50]/50 bg-[#BA9E50]/[0.06] p-5 mb-8">
+          <p
+            className="text-xs font-semibold tracking-[0.2em] uppercase mb-1.5"
+            style={{ color: "#BA9E50", fontFamily: "var(--font-inter), sans-serif" }}
+          >
+            Próximo passo
+          </p>
+          <p className="text-gray-200 text-sm leading-relaxed mb-3">
+            Você já sabe seu perfil e seu gargalo — é o passo 1 do caminho do
+            treino. O passo 2 é transformar isso numa semana concreta: qual
+            divisão cabe nos seus dias e no seu tempo.
+          </p>
+          <Link
+            href="/treino-para-minha-rotina"
+            onClick={() => trackEvent("diagnostic_routine_click", { result_profile: result.profileId })}
+            className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 text-sm font-semibold min-h-[48px] hover:opacity-90 transition-opacity"
+          >
+            Montar minha rotina de treino
+            <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+
         {/* Conteúdo recomendado */}
         <div className="mb-8">
-          <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-4">
+          <h3 className="text-white text-sm font-semibold tracking-[0.1em] uppercase mb-4" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
             Conteúdo recomendado para o seu perfil
           </h3>
           <ul className="space-y-3">
