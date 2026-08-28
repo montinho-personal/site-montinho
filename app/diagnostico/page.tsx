@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
 import DiagnosticoQuiz from "@/components/diagnostico/DiagnosticoQuiz";
+import Trilha from "@/components/ferramentas/Trilha";
 
 export const metadata: Metadata = {
   title: "Diagnóstico Montinho: Descubra Sua Estratégia de Treino",
@@ -75,6 +76,8 @@ export default function DiagnosticoPage() {
           </p>
         </div>
       </section>
+
+      <Trilha atual="/diagnostico" />
 
       {/* Quiz */}
       <section className="py-12 bg-black">

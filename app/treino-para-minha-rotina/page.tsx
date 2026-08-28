@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
 import { EVIDENCE, EVIDENCE_REVIEWED_AT } from "@/lib/rotina/evidence";
 import RotinaQuiz from "@/components/rotina/RotinaQuiz";
+import Trilha from "@/components/ferramentas/Trilha";
 
 export const metadata: Metadata = {
   title: "Treino Para Minha Rotina: Descubra Sua Melhor Divisão",
@@ -76,6 +77,8 @@ export default function TreinoParaMinhaRotinaPage() {
           </p>
         </div>
       </section>
+
+      <Trilha atual="/treino-para-minha-rotina" />
 
       {/* Ferramenta */}
       <section className="py-10 bg-black">

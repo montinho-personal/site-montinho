@@ -111,6 +111,7 @@ export type AnalyticsEvent =
   | "macro_methodology_open"
   | "macro_deficit_click"
   | "macro_protein_calculator_click"
+  | "macro_cardapio_click"
   | "macro_article_click"
   | "macro_cta_click"
 
