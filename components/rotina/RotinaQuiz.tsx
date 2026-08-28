@@ -507,6 +507,35 @@ export default function RotinaQuiz() {
         <p className="text-gray-400 text-xs leading-relaxed mb-4">
           Abre o WhatsApp com a sua estrutura já preenchida — é só enviar.
         </p>
+        {/**
+         * A bifurcação honesta. A trilha do treino atende duas pessoas: quem
+         * NÃO tem treino (para essa, o caminho gratuito termina aqui — os
+         * exercícios são exatamente onde o Montinho entra, e é o CTA acima) e
+         * quem JÁ treina com ficha pronta. Sem esta porta, a segunda pessoa
+         * clicava no passo 3 da trilha, caía na Calculadora de Volume sem
+         * nada para auditar... e a primeira também, e saía frustrada. Cada
+         * uma agora tem a sua saída dita com todas as letras.
+         */}
+        <div className="border border-white/15 p-4 mb-4">
+          <p className="text-gray-300 text-sm leading-relaxed">
+            <strong className="text-white">Já treina com uma ficha pronta?</strong>{" "}
+            Então o seu próximo passo é outro: confira se o volume dela bate com
+            a estrutura sugerida —{" "}
+            <Link
+              href="/ferramentas/calculadora-volume-treino"
+              onClick={() => trackEvent("routine_volume_click", { routine_structure: plan.structureId })}
+              className="text-white font-semibold underline underline-offset-4 decoration-1 hover:opacity-80 transition-opacity"
+              style={{ textDecorationColor: "#BA9E50" }}
+            >
+              analisar meu treino atual (passo 3 do caminho) →
+            </Link>
+          </p>
+          <p className="text-gray-500 text-xs leading-relaxed mt-2">
+            Ainda não tem os exercícios? Aí o caminho gratuito termina aqui
+            mesmo — montar o treino certo para o seu corpo é exatamente onde o
+            Montinho entra, no botão acima.
+          </p>
+        </div>
         <p className="text-gray-400 text-xs leading-relaxed">
           Quer ir além da divisão? O{" "}
           <Link href="/diagnostico" onClick={() => trackEvent("routine_diagnostic_click")} className="underline underline-offset-2 hover:text-white transition-colors">
