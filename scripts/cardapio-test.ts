@@ -26,17 +26,23 @@ import {
 } from "../lib/cardapio/alimentos";
 import {
   KCAL_MIN_CARDAPIO,
+  LIMITE_DURO,
   PERFIS_REFEICAO,
   PISO_PROTEINA,
   SITUACOES_ESPECIAIS,
+  TOLERANCIA_IDEAL,
   TOLERANCIA_KCAL,
   alternativas,
   diaDentroDaTolerancia,
   geraCardapio,
   geraSemana,
   listaDeCompras,
+  perfilNutricional,
+  sugestoesGordura,
   totalDia,
   totalRefeicao,
+  validaCardapio,
+  validaTotais,
   type PedidoCardapio,
 } from "../lib/cardapio/motor";
 import { ARTIGOS_POR_OBJETIVO } from "../components/cardapio/MonteSeuCardapio";
@@ -174,6 +180,91 @@ ok(
   comHabito.refeicoes.find((r) => r.momento === "almoco")!.itens.some((i) => i.alimentoId === "macarrao")
 );
 
+console.log("\n" + "=".repeat(64) + "\nMACROS: O DIA FECHA NOS QUATRO, NÃO SÓ NAS CALORIAS\n" + "=".repeat(64));
+
+/**
+ * A seção nasceu de um caso real: meta 2.100 kcal / 136 P / 233 C / 70 G,
+ * cardápio gerado com 2.009 kcal / 154 P / 280 C / 29 G. Calorias "certas",
+ * gordura a -59% — o motor antigo otimizava kcal + proteína e compensava
+ * gordura com carboidrato. Estes testes tornam esse resultado impossível de
+ * voltar sem a suíte gritar.
+ */
+const metaReal = { kcal: 2100, prot: 136, carb: 233, gord: 70 };
+
+/** TESTE 1 — o caso real que motivou a correção NÃO pode ser aprovado. */
+const casoRuim = validaTotais({ kcal: 2009, prot: 154, carb: 280, gord: 29 }, metaReal);
+ok("o cardápio do bug real (gordura 29/70 g) reprova na validação", !casoRuim.gordOk && casoRuim.nivel === "incompativel", JSON.stringify(casoRuim));
+
+/** TESTE 2 — uma distribuição coerente é aprovada. */
+const casoBom = validaTotais({ kcal: 2080, prot: 140, carb: 226, gord: 69 }, metaReal);
+ok("uma distribuição coerente (2.080/140/226/69) aprova", casoBom.kcalOk && casoBom.protOk && casoBom.carbOk && casoBom.gordOk, JSON.stringify(casoBom));
+ok("e o score prefere a distribuição coerente à do bug", casoBom.score < casoRuim.score, `${casoBom.score.toFixed(2)} vs ${casoRuim.score.toFixed(2)}`);
+
+/** TESTE 3 — só alimentos magros: o motor tem que ACUSAR, não fingir. */
+const soMagros = validaTotais({ kcal: 2050, prot: 150, carb: 290, gord: 20 }, metaReal);
+ok("dia montado só com alimentos magros é marcado incompatível na gordura", !soMagros.gordOk && soMagros.nivel === "incompativel");
+ok("existem fontes de gordura para sugerir em toda dieta", (["onivoro", "vegetariano", "vegano"] as const).every((d) => sugestoesGordura(pedido({ dieta: d })).length >= 1));
+{
+  const componenteResultado = fs.readFileSync("components/cardapio/MonteSeuCardapio.tsx", "utf8");
+  ok(
+    "a interface mostra o aviso de gordura quando a validação reprova",
+    /validaCardapio\(cardapio\)\.gordOk/.test(componenteResultado) && /MENSAGEM_FALTA_GORDURA/.test(componenteResultado)
+  );
+}
+
+/** TESTE 4 — o gerador de verdade, na meta do caso real (85 kg → 136 g). */
+{
+  const c = geraCardapio(pedido({ metaKcal: 2100, pesoKg: 85 }));
+  const t = totalDia(c);
+  const v = validaCardapio(c);
+  ok(
+    `gerado para a meta do caso real: ${Math.round(t.kcal)} kcal / ${Math.round(t.prot)} P / ${Math.round(t.carb)} C / ${Math.round(t.gord)} G → ${v.nivel}`,
+    v.nivel === "excelente" || v.nivel === "bom"
+  );
+  ok("gordura gerada fica a menos de 20% da meta (o bug era -59%)", Math.abs(t.gord - c.metaGord) <= c.metaGord * 0.2, `${Math.round(t.gord)}/${Math.round(c.metaGord)} g`);
+  ok("carboidrato gerado fica a menos de 15% da meta (o bug era +20%)", Math.abs(t.carb - c.metaCarb) <= c.metaCarb * 0.15, `${Math.round(t.carb)}/${Math.round(c.metaCarb)} g`);
+}
+
+/** Nenhum cardápio comum sai com limite duro estourado. */
+{
+  let incompativeis = 0;
+  const casos: PedidoCardapio[] = [];
+  for (const dieta of ["onivoro", "vegetariano"] as const) {
+    for (const metaKcal of [1500, 1800, 2100, 2500, 3000]) {
+      for (const refeicoes of [3, 4, 5]) casos.push(pedido({ dieta, metaKcal, refeicoes }));
+    }
+  }
+  for (const p of casos) if (validaCardapio(geraCardapio(p)).nivel === "incompativel") incompativeis++;
+  ok(`nenhum dos ${casos.length} cardápios onívoro/vegetariano comuns sai incompatível`, incompativeis === 0, `${incompativeis} incompatíveis`);
+}
+
+/** TESTE 5 — nenhuma refeição absurda: cada uma fica perto da fatia dela. */
+{
+  const desvios: string[] = [];
+  for (const refeicoes of [3, 4, 5]) {
+    const c = geraCardapio(pedido({ refeicoes, metaKcal: 2200, pesoKg: 85 }));
+    for (const r of c.refeicoes) {
+      const razao = totalRefeicao(r).kcal / r.alvoKcal;
+      if (razao < 0.5 || razao > 1.7) desvios.push(`${refeicoes}ref/${r.momento}: ${razao.toFixed(2)}×`);
+    }
+  }
+  ok("com 3, 4 e 5 refeições, nenhuma fica gigante nem mirrada (0,5×–1,7× da fatia)", desvios.length === 0, desvios.join(", "));
+}
+
+/** A classificação nutricional que guia o ajuste. */
+ok("azeite é gorduroso, frango é proteico, arroz é carbo, ovo é misto",
+  perfilNutricional(ALIMENTO_CARDAPIO_POR_ID.get("azeite")!) === "gorduroso" &&
+  perfilNutricional(ALIMENTO_CARDAPIO_POR_ID.get("frango-grelhado")!) === "proteico" &&
+  perfilNutricional(ALIMENTO_CARDAPIO_POR_ID.get("arroz-branco")!) === "carbo" &&
+  perfilNutricional(ALIMENTO_CARDAPIO_POR_ID.get("ovo-cozido")!) === "misto");
+
+/** As constantes do contrato: tolerâncias ideais e limites duros. */
+ok("tolerâncias ideais: ±5% kcal, ±10% P, ±10% C, ±15% G",
+  TOLERANCIA_IDEAL.kcal === 0.05 && TOLERANCIA_IDEAL.prot === 0.1 && TOLERANCIA_IDEAL.carb === 0.1 && TOLERANCIA_IDEAL.gord === 0.15);
+ok("limites duros: kcal ±8%, proteína -15%, gordura -20%",
+  LIMITE_DURO.kcal === 0.08 && LIMITE_DURO.protAbaixo === 0.15 && LIMITE_DURO.gordAbaixo === 0.2);
+ok("o piso de proteína do texto (85%) é o mesmo do limite duro", Math.abs(PISO_PROTEINA - (1 - LIMITE_DURO.protAbaixo)) < 1e-9);
+
 console.log("\n" + "=".repeat(64) + "\nSUBSTITUIÇÕES\n" + "=".repeat(64));
 
 const base = geraCardapio(pedido());
@@ -194,6 +285,25 @@ if (itemArroz) {
   ok("nenhuma alternativa repete alimento já na refeição", alts.every(({ alimento }) => !almoco.itens.some((i) => i.alimentoId === alimento.id)));
   ok("alternativas respeitam o grupo", alts.every(({ alimento }) => alimento.grupo === "carbo-base"));
 }
+/**
+ * A troca preserva função nutricional, não só caloria: quem troca a fonte
+ * proteica do almoço não pode receber algo com calorias parecidas e quase
+ * nenhuma proteína.
+ */
+{
+  const itemProt = almoco.itens.find((i) => {
+    const a = ALIMENTO_CARDAPIO_POR_ID.get(i.alimentoId)!;
+    return a.grupo === "proteina-animal" || a.grupo === "proteina-vegetal";
+  })!;
+  const protSai = nutrientes(ALIMENTO_CARDAPIO_POR_ID.get(itemProt.alimentoId)!, itemProt.porcoes).prot;
+  const altsProt = alternativas(itemProt, "almoco", pedido(), almoco.itens.map((i) => i.alimentoId));
+  ok(
+    "trocar a fonte proteica mantém pelo menos 60% da proteína que sai",
+    protSai < 10 || altsProt.every(({ alimento, porcoes }) => nutrientes(alimento, porcoes).prot >= protSai * 0.6),
+    altsProt.map(({ alimento, porcoes }) => `${alimento.id}: ${nutrientes(alimento, porcoes).prot.toFixed(1)} g vs ${protSai.toFixed(1)} g`).join(", ")
+  );
+}
+
 /** Restrição também vale na troca: sem glúten não pode oferecer macarrão. */
 const semGluten = pedido({ restricoes: ["gluten"] });
 const cGluten = geraCardapio(semGluten);
@@ -304,6 +414,16 @@ ok(
 );
 ok("está no sitemap", fs.readFileSync("app/sitemap.ts", "utf8").includes("/ferramentas/monte-seu-cardapio"));
 ok("está na central /ferramentas", fs.readFileSync("app/ferramentas/page.tsx", "utf8").includes("/ferramentas/monte-seu-cardapio"));
+{
+  const paginaNome = fs.readFileSync("app/ferramentas/monte-seu-cardapio/page.tsx", "utf8");
+  const compNome = fs.readFileSync("components/cardapio/MonteSeuCardapio.tsx", "utf8");
+  ok(
+    "chama Montinho FitChef e mantém a frase 'monte seu cardápio com o Montinho'",
+    /Montinho FitChef/.test(paginaNome) && /Monte seu cardápio com o Montinho/.test(paginaNome) &&
+      /Montinho FitChef/.test(compNome) && /Monte seu cardápio com o Montinho/.test(compNome)
+  );
+  ok("o batismo não mudou a URL nem a canonical", paginaNome.includes("/ferramentas/monte-seu-cardapio"));
+}
 
 const deficit = fs.readFileSync("components/calorias/CalculadoraDeficit.tsx", "utf8");
 const macros = fs.readFileSync("components/macros/CalculadoraMacros.tsx", "utf8");

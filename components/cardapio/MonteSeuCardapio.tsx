@@ -20,6 +20,7 @@ import {
   AVISO_EDUCACIONAL,
   DIAS_SEMANA,
   KCAL_MIN_CARDAPIO,
+  MENSAGEM_FALTA_GORDURA,
   MENSAGEM_META_BAIXA,
   NOTA_TOLERANCIA,
   OBJETIVOS,
@@ -33,6 +34,8 @@ import {
   geraSemana,
   listaDeCompras,
   porQueAssim,
+  sugestoesGordura,
+  validaCardapio,
   totalDia,
   totalRefeicao,
   type CardapioDia,
@@ -233,7 +236,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
     if (!cardapio) return;
     const t = totalDia(cardapio);
     const linhas = [
-      "Meu cardápio sugerido — Montinho Personal",
+      "Meu cardápio sugerido — Montinho FitChef",
       `≈ ${Math.round(t.kcal)} kcal · ${Math.round(t.prot)} g de proteína`,
       "",
       ...cardapio.refeicoes.flatMap((r) => [
@@ -290,9 +293,12 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
       {/* ── Etapas ─────────────────────────────────────────────────── */}
       {e.etapa === "seguranca" && (
         <div>
-          <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-2" style={h}>
-            Monte seu cardápio com o Montinho
+          <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-1" style={h}>
+            Montinho FitChef
           </h2>
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#BA9E50" }}>
+            Monte seu cardápio com o Montinho
+          </p>
           <p className="text-gray-300 leading-relaxed mb-6 max-w-xl">
             Sua meta, sua rotina e os alimentos que você gosta viram uma
             sugestão de cardápio com porções e substituições. Antes, uma
@@ -599,6 +605,21 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
 
           {/* Painel de metas */}
           <ResumoDia cardapio={cardapio} />
+
+          {/* Validação: quando a gordura não fecha nem com as fontes do
+              banco, dizemos isso — nunca apresentamos um dia desequilibrado
+              como se estivesse tudo bem. */}
+          {!validaCardapio(cardapio).gordOk && (
+            <div className="border border-white/15 p-4 mt-4 print:hidden" style={{ background: "#0d0d0d" }}>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {MENSAGEM_FALTA_GORDURA}{" "}
+                <span className="text-white">
+                  {sugestoesGordura(pedido).map((a) => a.nome.toLowerCase()).join(", ")}
+                </span>
+                . Use o botão de trocar, ou ajuste as porções no dia a dia.
+              </p>
+            </div>
+          )}
 
           {/* Refeições */}
           <div className="space-y-4 mt-6">

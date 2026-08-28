@@ -47,6 +47,22 @@ export const KCAL_MAX_CARDAPIO = 5000;
 export const TOLERANCIA_KCAL = 0.08;
 export const PISO_PROTEINA = 0.85;
 
+/**
+ * Tolerâncias IDEAIS por macro — o alvo que o refinamento persegue. Gordura
+ * ganha a folga maior (±15%) porque as fontes têm porções pequenas e passos
+ * proporcionais grandes (meia colher de azeite = 4 g de gordura).
+ */
+export const TOLERANCIA_IDEAL = { kcal: 0.05, prot: 0.1, carb: 0.1, gord: 0.15 } as const;
+
+/**
+ * Limites DUROS — abaixo/acima disso o cardápio não pode ser apresentado
+ * como resultado normal, por melhor que esteja o resto. Nasceram de um caso
+ * real: meta de 70 g de gordura, cardápio com 29 g e calorias "certas". O
+ * motor antigo otimizava só kcal + proteína e compensava gordura com
+ * carboidrato; estes limites tornam esse resultado invalidável por regra.
+ */
+export const LIMITE_DURO = { kcal: 0.08, protAbaixo: 0.15, gordAbaixo: 0.2 } as const;
+
 export const MENSAGEM_META_BAIXA =
   "Com os dados informados, prefiro não gerar automaticamente um cardápio nessa faixa de calorias. Vale rever sua meta ou procurar orientação individual.";
 
@@ -227,7 +243,20 @@ export function escolheAlimentos(momento: Momento, pedido: PedidoCardapio): Alim
       const doGrupo = pool.filter((a) => a.grupo === grupo && !escolhidos.includes(a));
       if (doGrupo.length === 0) continue;
       const habitual = doGrupo.find((a) => habituais.has(a.id));
-      const escolhido = habitual ?? (papel === 0 ? [...doGrupo].sort((x, y) => y.prot100 - x.prot100)[0] : doGrupo[0]);
+      let escolhido = habitual ?? (papel === 0 ? [...doGrupo].sort((x, y) => y.prot100 - x.prot100)[0] : doGrupo[0]);
+      /**
+       * Salvaguarda proteica das refeições principais: se o vencedor da
+       * ordem de grupos é fraco em proteína (< 15 g/100 g) e outro grupo do
+       * mesmo papel tem fonte mais densa, ela vence. É o que dá PTS ao
+       * vegetariano no almoço em vez de ovo (13,3 g, teto de 3) — sem isso
+       * a meta proteica dele é inalcançável por construção. Habitual
+       * continua mandando, e o café mantém a ordem (ovo antes de iogurte).
+       */
+      if (!habitual && papel === 0 && (momento === "almoco" || momento === "jantar") && escolhido.prot100 < 15) {
+        const todos = grupos.flatMap((g) => pool.filter((a) => a.grupo === g && !escolhidos.includes(a)));
+        const maisDenso = [...todos].sort((x, y) => y.prot100 - x.prot100)[0];
+        if (maisDenso && maisDenso.prot100 > escolhido.prot100) escolhido = maisDenso;
+      }
       escolhidos.push(escolhido);
       return;
     }
@@ -298,6 +327,126 @@ export function montaRefeicao(
   return itens;
 }
 
+// ─── Classificação nutricional ───────────────────────────────────────────────
+
+export type PerfilNutricional = "proteico" | "carbo" | "gorduroso" | "misto" | "vegetal";
+
+/**
+ * O que este alimento É, nutricionalmente — derivado das densidades, não de
+ * uma lista mantida à mão. É o mapa que o refinamento usa para saber QUAL
+ * porção mexer quando um macro está fora: gordura baixa se corrige com
+ * alimento gorduroso, nunca com mais arroz.
+ */
+export function perfilNutricional(a: AlimentoCardapio): PerfilNutricional {
+  if (a.grupo === "vegetal") return "vegetal";
+  const kcalProt = a.prot100 * 4;
+  const kcalCarb = a.carb100 * 4;
+  const kcalGord = a.gord100 * 9;
+  const total = Math.max(kcalProt + kcalCarb + kcalGord, 1);
+  const fp = kcalProt / total, fc = kcalCarb / total, fg = kcalGord / total;
+  /**
+   * O corte de gordura é mais alto (65%) de propósito: no ovo, 60% da
+   * energia vem da gordura, mas tratá-lo como "fonte de gordura" faria o
+   * ajuste usar ovo onde deveria usar azeite. Ovo é misto.
+   */
+  if (fg >= 0.65) return "gorduroso";
+  if (fp >= 0.55) return "proteico";
+  if (fc >= 0.55) return "carbo";
+  return "misto";
+}
+
+// ─── Score e refinamento do dia ──────────────────────────────────────────────
+
+interface Metas { kcal: number; prot: number; carb: number; gord: number }
+
+function metasDe(c: CardapioDia): Metas {
+  return { kcal: c.metaKcal, prot: c.metaProt, carb: c.metaCarb, gord: c.metaGord };
+}
+
+/** Erro relativo de cada macro; meta 0 (cascata impossível) não pontua. */
+export function errosRelativos(t: Metas, m: Metas) {
+  const rel = (v: number, meta: number) => (meta > 0 ? Math.abs(v - meta) / meta : 0);
+  return { kcal: rel(t.kcal, m.kcal), prot: rel(t.prot, m.prot), carb: rel(t.carb, m.carb), gord: rel(t.gord, m.gord) };
+}
+
+/**
+ * Score global: menor é melhor. Pesos 4/3/3/2 — calorias mandam, proteína e
+ * gordura empatam logo atrás, carboidrato é a variável de ajuste e por isso
+ * pesa menos. Violações dos limites duros recebem penalidade dominante:
+ * nenhuma combinação de acertos pequenos compensa gordura a -59% da meta.
+ */
+export function scoreTotais(t: Metas, m: Metas): number {
+  const e = errosRelativos(t, m);
+  let s = 4 * e.kcal + 3 * e.prot + 3 * e.gord + 2 * e.carb;
+  if (e.kcal > LIMITE_DURO.kcal) s += 5 + 40 * (e.kcal - LIMITE_DURO.kcal);
+  if (m.prot > 0 && t.prot < m.prot * (1 - LIMITE_DURO.protAbaixo)) {
+    s += 5 + 40 * ((m.prot * (1 - LIMITE_DURO.protAbaixo) - t.prot) / m.prot);
+  }
+  if (m.gord > 0 && t.gord < m.gord * (1 - LIMITE_DURO.gordAbaixo)) {
+    s += 5 + 40 * ((m.gord * (1 - LIMITE_DURO.gordAbaixo) - t.gord) / m.gord);
+  }
+  return s;
+}
+
+/**
+ * Score do dia = score dos totais + forma das refeições. A penalidade de
+ * forma impede o refinamento de "resolver" o dia concentrando tudo numa
+ * refeição só: cada refeição deve ficar entre 60% e 150% da fatia calórica
+ * dela. É penalidade branda de propósito — os alimentos escolhidos mandam
+ * mais que a fração teórica.
+ */
+function scoreDia(c: CardapioDia): number {
+  let s = scoreTotais(totalDia(c), metasDe(c));
+  for (const r of c.refeicoes) {
+    if (r.alvoKcal <= 0) continue;
+    const razao = totalRefeicao(r).kcal / r.alvoKcal;
+    if (razao < 0.6) s += (0.6 - razao) * 2;
+    if (razao > 1.5) s += (razao - 1.5) * 2;
+  }
+  return s;
+}
+
+/**
+ * Refinamento iterativo do dia inteiro — a correção central deste motor.
+ *
+ * A montagem gulosa por refeição olha só kcal + proteína; aqui o dia é
+ * tratado como um problema único de 4 metas. Hill-climbing determinístico:
+ * a cada iteração, avalia TODOS os movimentos legais (±1 passo de porção em
+ * qualquer item não-vegetal) e aplica o que mais reduz o score. Para quando
+ * nenhum movimento melhora ou no teto de iterações.
+ *
+ * Movimentos continuam presos às porções caseiras (passo e maxPorcoes do
+ * banco): o refinamento nunca produz "137 g de arroz". Itens marcados como
+ * extras (fontes de gordura injetadas) podem descer até 0 — se a gordura já
+ * fecha sem eles, eles somem do prato; os demais nunca descem abaixo de um
+ * passo, porque foram escolhidos por papel ou por hábito.
+ */
+export function refinaDia(c: CardapioDia, extras: Set<string>, maxIteracoes = 250): void {
+  let atual = scoreDia(c);
+  for (let i = 0; i < maxIteracoes; i++) {
+    let melhor: { item: ItemCardapio; porcoes: number; score: number } | null = null;
+    for (const r of c.refeicoes) {
+      for (const item of r.itens) {
+        const a = ALIMENTO_CARDAPIO_POR_ID.get(item.alimentoId);
+        if (!a || a.grupo === "vegetal") continue;
+        const minimo = extras.has(item.alimentoId) ? 0 : a.passo;
+        for (const delta of [a.passo, -a.passo]) {
+          const nova = Math.round((item.porcoes + delta) * 2) / 2;
+          if (nova < minimo || nova > a.maxPorcoes) continue;
+          const antes = item.porcoes;
+          item.porcoes = nova;
+          const s = scoreDia(c);
+          item.porcoes = antes;
+          if (s < atual - 1e-9 && (!melhor || s < melhor.score)) melhor = { item, porcoes: nova, score: s };
+        }
+      }
+    }
+    if (!melhor) break;
+    melhor.item.porcoes = melhor.porcoes;
+    atual = melhor.score;
+  }
+}
+
 /** O dia inteiro. */
 export function geraCardapio(pedido: PedidoCardapio): CardapioDia {
   const macros = calculaMacros(pedido.metaKcal, pedido.pesoKg, pedido.objetivo === "ganhar" ? 2.0 : 1.6, 30);
@@ -320,22 +469,128 @@ export function geraCardapio(pedido: PedidoCardapio): CardapioDia {
     };
   });
 
-  return {
+  const cardapio: CardapioDia = {
     refeicoes,
     metaKcal: pedido.metaKcal,
     metaProt,
     metaCarb: macros.impossivel ? 0 : macros.carboidrato.gramas,
     metaGord: macros.impossivel ? 0 : macros.gordura.gramas,
   };
+
+  /**
+   * Injeta uma fonte de gordura opcional (porção 0) nas refeições que não
+   * têm nenhuma. Sem isso a meta de gordura é estruturalmente inalcançável:
+   * os papéis clássicos (proteína + base + leguminosa + vegetal) somam pouca
+   * gordura, e o refinamento só ajusta o que está no prato. A regra de
+   * seleção é a mesma de sempre — habitual primeiro, depois o banco — e o
+   * item só permanece se o refinamento precisar dele.
+   */
+  const extras = new Set<string>();
+  for (const r of cardapio.refeicoes) {
+    const temGordura = r.itens.some((it) => {
+      const a = ALIMENTO_CARDAPIO_POR_ID.get(it.alimentoId);
+      return a && perfilNutricional(a) === "gorduroso";
+    });
+    if (temGordura) continue;
+    const fonte = candidatos(r.momento, pedido).find(
+      (a) => a.grupo === "gordura" && !r.itens.some((it) => it.alimentoId === a.id)
+    );
+    if (fonte) {
+      r.itens.push({ alimentoId: fonte.id, porcoes: 0 });
+      extras.add(fonte.id);
+    }
+  }
+
+  refinaDia(cardapio, extras);
+
+  /** Extras que o refinamento não usou saem do prato. */
+  for (const r of cardapio.refeicoes) {
+    r.itens = r.itens.filter((it) => it.porcoes > 0);
+  }
+
+  if (process.env.NODE_ENV === "development") {
+    const t = totalDia(cardapio);
+    const e = errosRelativos(t, metasDe(cardapio));
+    // eslint-disable-next-line no-console
+    console.debug("[cardapio]", {
+      meta: { kcal: cardapio.metaKcal, prot: cardapio.metaProt, carb: cardapio.metaCarb, gord: cardapio.metaGord },
+      total: { kcal: Math.round(t.kcal), prot: Math.round(t.prot), carb: Math.round(t.carb), gord: Math.round(t.gord) },
+      erroPct: Object.fromEntries(Object.entries(e).map(([k, v]) => [k, Math.round(v * 100)])),
+      validacao: validaCardapio(cardapio),
+    });
+  }
+
+  return cardapio;
+}
+
+// ─── Validação final ─────────────────────────────────────────────────────────
+
+export type NivelCardapio = "excelente" | "bom" | "ajustavel" | "incompativel";
+
+export interface ValidacaoCardapio {
+  kcalOk: boolean;
+  protOk: boolean;
+  carbOk: boolean;
+  gordOk: boolean;
+  score: number;
+  nivel: NivelCardapio;
+}
+
+/**
+ * Validação obrigatória antes de apresentar o cardápio — pura, sobre totais,
+ * para ser testável com qualquer número. Os níveis existem internamente:
+ * "excelente" = tudo na tolerância ideal; "incompativel" = algum limite duro
+ * estourado (é o caso que a interface trata em vez de fingir sucesso).
+ */
+export function validaTotais(t: Metas, m: Metas): ValidacaoCardapio {
+  const e = errosRelativos(t, m);
+  const kcalOk = e.kcal <= LIMITE_DURO.kcal;
+  const protOk = m.prot <= 0 || t.prot >= m.prot * (1 - LIMITE_DURO.protAbaixo);
+  const gordOk = m.gord <= 0 || t.gord >= m.gord * (1 - LIMITE_DURO.gordAbaixo);
+  const carbOk = m.carb <= 0 || e.carb <= 0.25;
+  const ideais =
+    e.kcal <= TOLERANCIA_IDEAL.kcal &&
+    e.prot <= TOLERANCIA_IDEAL.prot &&
+    e.carb <= TOLERANCIA_IDEAL.carb &&
+    e.gord <= TOLERANCIA_IDEAL.gord;
+  const nivel: NivelCardapio = !kcalOk || !protOk || !gordOk
+    ? "incompativel"
+    : ideais
+      ? "excelente"
+      : e.kcal <= TOLERANCIA_IDEAL.kcal * 1.5 && e.prot <= 0.15 && e.gord <= 0.2 && e.carb <= 0.2
+        ? "bom"
+        : "ajustavel";
+  return { kcalOk, protOk, carbOk, gordOk, score: scoreTotais(t, m), nivel };
+}
+
+export function validaCardapio(c: CardapioDia): ValidacaoCardapio {
+  return validaTotais(totalDia(c), metasDe(c));
 }
 
 /** O dia fechou dentro da tolerância? */
-export function diaDentroDaTolerancia(c: CardapioDia): { kcalOk: boolean; protOk: boolean } {
+export function diaDentroDaTolerancia(c: CardapioDia): { kcalOk: boolean; protOk: boolean; carbOk: boolean; gordOk: boolean } {
   const t = totalDia(c);
+  const v = validaCardapio(c);
   return {
     kcalOk: Math.abs(t.kcal - c.metaKcal) <= c.metaKcal * TOLERANCIA_KCAL,
     protOk: t.prot >= c.metaProt * PISO_PROTEINA,
+    carbOk: v.carbOk,
+    gordOk: v.gordOk,
   };
+}
+
+/**
+ * Quando nem com as fontes injetadas a gordura fecha, a saída honesta é
+ * dizer isso e oferecer as fontes cadastradas — nunca entregar 29 g numa
+ * meta de 70 g como se estivesse tudo bem.
+ */
+export const MENSAGEM_FALTA_GORDURA =
+  "Com os alimentos deste cardápio, chegamos perto das calorias e da proteína, mas a gordura ficou abaixo do equilíbrio que a sua meta pede. Vale incluir pelo menos uma fonte de gordura nas refeições:";
+
+export function sugestoesGordura(pedido: PedidoCardapio): AlimentoCardapio[] {
+  return ALIMENTOS_CARDAPIO.filter(
+    (a) => a.grupo === "gordura" && !a.soHabitual && permitido(a, pedido.dieta, pedido.restricoes)
+  );
 }
 
 // ─── Substituições ───────────────────────────────────────────────────────────
@@ -354,7 +609,8 @@ export function alternativas(
 ): { alimento: AlimentoCardapio; porcoes: number }[] {
   const atual = ALIMENTO_CARDAPIO_POR_ID.get(item.alimentoId);
   if (!atual) return [];
-  const kcalAlvo = nutrientes(atual, item.porcoes).kcal;
+  const saem = nutrientes(atual, item.porcoes);
+  const kcalAlvo = saem.kcal;
 
   return ALIMENTOS_CARDAPIO
     .filter(
@@ -373,8 +629,16 @@ export function alternativas(
     })
     .filter(({ alimento, porcoes }) => {
       /** Se nem a melhor porção chega perto (±35%), a troca engana — fora. */
-      const kcal = nutrientes(alimento, porcoes).kcal;
-      return kcal >= kcalAlvo * 0.65 && kcal <= kcalAlvo * 1.35;
+      const entram = nutrientes(alimento, porcoes);
+      if (entram.kcal < kcalAlvo * 0.65 || entram.kcal > kcalAlvo * 1.35) return false;
+      /**
+       * Função nutricional preservada: se o item que sai é fonte proteica
+       * relevante (≥10 g na porção), o substituto precisa entregar pelo
+       * menos 60% dessa proteína — calorias parecidas com proteína sumindo
+       * é troca que sabota o dia sem a pessoa perceber.
+       */
+      if (saem.prot >= 10 && entram.prot < saem.prot * 0.6) return false;
+      return true;
     })
     .slice(0, 4);
 }
