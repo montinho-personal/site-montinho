@@ -281,4 +281,11 @@ export const ARTIGOS_COM_CALCULADORA_MACROS: string[] = [
   "recomposicao-corporal",
   "dieta-cutting-para-definicao-muscular",
   "calorias-para-ganhar-massa-muscular",
+  /**
+   * Carb cycling é redistribuir macros entre os dias; recomposição em
+   * déficit exige proteína alta com carboidrato ajustado. Nos dois, a
+   * pergunta do leitor é a cascata da calculadora.
+   */
+  "ciclo-de-carboidratos-carb-cycling",
+  "deficit-calorico-e-hipertrofia",
 ];

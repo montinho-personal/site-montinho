@@ -246,7 +246,11 @@ export const ARTIGOS_COM_CALCULADORA: string[] = [
   "quanto-de-proteina-consumir",
   "alimentos-ricos-em-proteina",
   "proteina-em-alimentos-tabela-completa",
-  "cardapio-para-hipertrofia",
-  "cardapio-semanal-ganho-de-massa-muscular",
-  "cardapio-semanal-emagrecer-com-musculo",
+  /**
+   * Os três artigos de "cardápio semanal" moraram aqui até o Montinho
+   * FitChef existir. Migraram para ARTIGOS_COM_CALCULADORA_CARDAPIO: num
+   * artigo chamado "Cardápio Semanal para...", a pergunta do leitor é que
+   * cardápio seguir — não quanto de proteína comer. Uma ferramenta por
+   * artigo, e ganha a que responde o título.
+   */
 ];

@@ -16,8 +16,11 @@ import { ARTIGOS_COM_CALCULADORA } from "@/lib/proteina";
 import CalculadoraProteina from "@/components/proteina/CalculadoraProteina";
 import { ARTIGOS_COM_CALCULADORA_DEFICIT } from "@/lib/calorias";
 import { ARTIGOS_COM_CALCULADORA_TDEE } from "@/lib/tdee";
+import { ARTIGOS_COM_CALCULADORA_CARDAPIO } from "@/lib/cardapio/motor";
 import CalculadoraDeficit from "@/components/calorias/CalculadoraDeficit";
 import CalculadoraTDEE from "@/components/tdee/CalculadoraTDEE";
+import MonteSeuCardapio from "@/components/cardapio/MonteSeuCardapio";
+import BlocoCaminho from "@/components/comece/BlocoCaminho";
 import { ARTIGOS_COM_CALCULADORA_1RM, ARTIGOS_COM_LINK_1RM } from "@/lib/onerm";
 import { ARTIGOS_COM_CALCULADORA_MACROS } from "@/lib/macros";
 import { ARTIGOS_COM_CALCULADORA_VOLUME, ARTIGOS_COM_LINK_VOLUME } from "@/lib/treino/volume";
@@ -102,6 +105,8 @@ export default async function BlogPost({ params }: Props) {
   // antiga e a mais linkada.
   const qualCalc = ARTIGOS_COM_CALCULADORA.includes(post.slug)
     ? "proteina"
+    : ARTIGOS_COM_CALCULADORA_CARDAPIO.includes(post.slug)
+      ? "cardapio"
     : ARTIGOS_COM_CALCULADORA_TDEE.includes(post.slug)
       ? "tdee"
     : ARTIGOS_COM_CALCULADORA_DEFICIT.includes(post.slug)
@@ -252,6 +257,8 @@ export default async function BlogPost({ params }: Props) {
               <div className="my-10">
                 {qualCalc === "proteina" ? (
                   <CalculadoraProteina placement={post.slug === "quanta-proteina-por-dia-para-ganhar-massa-muscular" ? "artigo-proteina-dia" : `artigo-${post.slug}`} />
+                ) : qualCalc === "cardapio" ? (
+                  <MonteSeuCardapio placement={post.slug} />
                 ) : qualCalc === "tdee" ? (
                   <CalculadoraTDEE placement={post.slug} />
                 ) : qualCalc === "deficit" ? (
@@ -289,6 +296,11 @@ export default async function BlogPost({ params }: Props) {
               leitura, mas quem terminou de ler quer saber a própria carga. */}
           {ARTIGOS_COM_LINK_1RM.includes(post.slug) && <LinkFerramenta1RM slug={post.slug} />}
           {ARTIGOS_COM_LINK_VOLUME.includes(post.slug) && <LinkFerramentaVolume slug={post.slug} />}
+
+          {/* O caminho, para quem terminou de ler um artigo de começo: a dor
+              dele não é uma conta, é não saber a ordem das coisas. Renderiza
+              nada fora do registro editorial. */}
+          <BlocoCaminho slug={post.slug} />
 
           {/* Video */}
           {post.slug === "como-prevenir-lesoes-no-treino" && (

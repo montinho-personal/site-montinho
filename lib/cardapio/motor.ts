@@ -826,3 +826,28 @@ export function porQueAssim(pedido: PedidoCardapio): string {
 
 export const SEM_VARIACAO =
   "Com a sua dieta e as suas restrições, o banco não tem outra combinação boa o suficiente para variar sem sair da meta. Use o botão de trocar em cada item para ajustar do seu jeito.";
+
+// ─── Onde a ferramenta aparece ───────────────────────────────────────────────
+
+/**
+ * Artigos que exibem o Montinho FitChef no primeiro corte editorial.
+ *
+ * A ferramenta mais completa do site nascia sem nenhum artigo: existia só em
+ * /ferramentas e nas trilhas, ou seja, era invisível para quem chega pelo
+ * Google — que é quase todo mundo. Estes seis são os artigos em que a
+ * pergunta do leitor É a que a ferramenta responde: "que cardápio eu sigo",
+ * "o que eu boto na marmita", "o que eu compro no mercado".
+ *
+ * Os três de cardápio semanal saíram do registro da Calculadora de Proteína
+ * ao entrar aqui — a regra de uma ferramenta por artigo continua valendo, e
+ * entre "quanto de proteína" e "que cardápio seguir", num artigo chamado
+ * "Cardápio Semanal para..." a segunda pergunta é a do título.
+ */
+export const ARTIGOS_COM_CALCULADORA_CARDAPIO: string[] = [
+  "cardapio-semanal-emagrecer-com-musculo",
+  "cardapio-semanal-ganho-de-massa-muscular",
+  "cardapio-para-hipertrofia",
+  "marmita-fitness-como-montar",
+  "lista-de-compras-fitness-semanal",
+  "quantas-refeicoes-por-dia",
+];
