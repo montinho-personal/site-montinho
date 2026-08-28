@@ -471,40 +471,59 @@ export default function CalculadoraDeficit({
 
                 <p className="text-gray-400 text-sm leading-relaxed mt-4">{NOTA_SEM_PROMESSA}</p>
 
-                {/* Ponte para a Calculadora de Macros. A meta usada é a da
-                    faixa moderada, que é a que aparece em destaque; o valor
-                    viaja em sessionStorage e não na URL. */}
-                <Link
-                  href="/ferramentas/calculadora-macros"
-                  onClick={() => {
-                    const moderada = FAIXAS_DEFICIT.find((f) => f.destaque);
-                    if (moderada) {
-                      const m = aplicaDeficit(resultado.tdee, moderada.percentualMax);
-                      guardaKcalParaMacros(m.min);
-                    }
-                    trackEvent("calorie_macros_click", { placement });
-                  }}
-                  className="inline-block mt-4 text-white text-sm font-semibold underline underline-offset-4 decoration-1 hover:opacity-80 transition-opacity min-h-[44px]"
-                  style={{ textDecorationColor: "#BA9E50" }}
-                >
-                  Distribuir minhas calorias em macros →
-                </Link>
-                <Link
-                  href="/ferramentas/monte-seu-cardapio"
-                  onClick={() => {
-                    const moderada = FAIXAS_DEFICIT.find((f) => f.destaque);
-                    if (moderada) {
-                      const m = aplicaDeficit(resultado.tdee, moderada.percentualMax);
-                      guardaKcalParaMacros(m.min);
-                    }
-                    if (peso !== null) guardaPesoParaProteina(peso);
-                    trackEvent("calorie_macros_click", { placement: `${placement}-cardapio` });
-                  }}
-                  className="inline-block mt-4 ml-6 text-white text-sm font-semibold underline underline-offset-4 decoration-1 hover:opacity-80 transition-opacity min-h-[44px]"
-                  style={{ textDecorationColor: "#BA9E50" }}
-                >
-                  Transformar em cardápio →
-                </Link>
+                {/**
+                 * Próximo passo com hierarquia explícita — dois links de
+                 * mesmo peso deixavam a pessoa sem saber se o caminho era
+                 * macros ou cardápio. A trilha responde: macros é o passo 3
+                 * (botão primário), e o cardápio é o passo 4, oferecido como
+                 * atalho secundário para quem quer pular a distribuição. A
+                 * meta que atravessa é a da faixa moderada, em sessionStorage
+                 * e nunca na URL.
+                 */}
+                <div className="border border-[#BA9E50]/50 bg-[#BA9E50]/[0.06] p-5 mt-5">
+                  <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-1.5" style={{ color: "#BA9E50" }}>
+                    Próximo passo
+                  </p>
+                  <p className="text-gray-200 text-sm leading-relaxed mb-3">
+                    Sua meta está definida. Agora distribua essas calorias em
+                    proteína, carboidrato e gordura — é o passo 3 do caminho da
+                    dieta, e sua meta já vai preenchida.
+                  </p>
+                  <Link
+                    href="/ferramentas/calculadora-macros"
+                    onClick={() => {
+                      const moderada = FAIXAS_DEFICIT.find((f) => f.destaque);
+                      if (moderada) {
+                        const m = aplicaDeficit(resultado.tdee, moderada.percentualMax);
+                        guardaKcalParaMacros(m.min);
+                      }
+                      trackEvent("calorie_macros_click", { placement });
+                    }}
+                    className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 text-sm font-semibold min-h-[48px] hover:opacity-90 transition-opacity"
+                  >
+                    Distribuir minhas calorias em macros
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                  <p className="text-gray-400 text-xs leading-relaxed mt-3">
+                    Com pressa?{" "}
+                    <Link
+                      href="/ferramentas/monte-seu-cardapio"
+                      onClick={() => {
+                        const moderada = FAIXAS_DEFICIT.find((f) => f.destaque);
+                        if (moderada) {
+                          const m = aplicaDeficit(resultado.tdee, moderada.percentualMax);
+                          guardaKcalParaMacros(m.min);
+                        }
+                        if (peso !== null) guardaPesoParaProteina(peso);
+                        trackEvent("calorie_macros_click", { placement: `${placement}-cardapio` });
+                      }}
+                      className="text-gray-300 underline underline-offset-2 decoration-1 hover:text-white transition-colors"
+                    >
+                      pule direto para o cardápio
+                    </Link>{" "}
+                    — ele calcula os macros por dentro, sozinho.
+                  </p>
+                </div>
               </div>
 
               {/* Como chegamos nesse resultado */}

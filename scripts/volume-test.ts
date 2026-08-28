@@ -34,6 +34,9 @@ import {
   mediaPorSessao,
   resumo,
   type DiaTreino,
+  achadosParaRevisao,
+  buildVolumeWhatsApp,
+  CONVITE_REVISAO,
 } from "../lib/treino/volume";
 import { ARTIGOS_COM_CALCULADORA } from "../lib/proteina";
 import { ARTIGOS_COM_CALCULADORA_DEFICIT } from "../lib/calorias";
@@ -393,6 +396,44 @@ ok("liga com a calculadora de 1RM", componente.includes("/ferramentas/calculador
 const internos = [...pagina.matchAll(/href="\/blog\/([a-z0-9-]+)"/g)].map((m) => m[1]);
 ok("a página linka pelo menos 4 artigos", internos.length >= 4, internos.join(", "));
 for (const s of internos) ok(`link interno aponta para artigo real: ${s}`, slugs.has(s));
+
+
+console.log("\n" + "=".repeat(64) + "\nO CONVITE DE REVISÃO (o ponto de venda no ponto de intenção)\n" + "=".repeat(64));
+
+/**
+ * O convite só existe quando a análise achou algo concreto — convite sem
+ * contexto é banner. E os achados são só os extremos: "baixo" e "elevado"
+ * são escolhas legítimas demais para virarem bandeira.
+ */
+{
+  const vol = (musculo: string, diretas: number, porDia: number[]) => ({
+    musculo, diretas, equivalentesIndiretas: 0, sessoes: porDia.length,
+    porDia: porDia.map((series, i) => ({ dia: "Seg", indice: i, series })),
+  }) as unknown as Parameters<typeof achadosParaRevisao>[0][number];
+
+  ok("ficha rasa (menos de 3 exercícios) não gera convite", achadosParaRevisao([vol("peitoral", 2, [2])], 2).length === 0);
+  const a1 = achadosParaRevisao([vol("peitoral", 3, [3])], 5);
+  ok("3 séries semanais é achado: muito baixo", a1.length === 1 && a1[0].tipo === "muito-baixo", JSON.stringify(a1));
+  const a2 = achadosParaRevisao([vol("costas", 24, [8, 8, 8])], 5);
+  ok("24 séries é achado: muito elevado", a2.length === 1 && a2[0].tipo === "muito-elevado");
+  const a3 = achadosParaRevisao([vol("quadriceps", 12, [12])], 5);
+  ok("12 séries num dia só é achado: concentrado", a3.length === 1 && a3[0].tipo === "concentrado");
+  ok("volume moderado bem distribuído NÃO é achado", achadosParaRevisao([vol("ombros", 12, [6, 6])], 5).length === 0);
+  ok("no máximo 3 achados — convite não vira lista de defeitos",
+    achadosParaRevisao([vol("a", 2, [2]), vol("b", 3, [3]), vol("c", 25, [25]), vol("d", 30, [30])], 8).length === 3);
+  ok("o texto do convite devolve a decisão para a pessoa", /escolha sua/.test(CONVITE_REVISAO) && /intencional/.test(CONVITE_REVISAO));
+  ok("nenhum achado usa linguagem de erro/diagnóstico",
+    !/erro|errado|problema|ruim/i.test(JSON.stringify([...a1, ...a2, ...a3]) + CONVITE_REVISAO.replace("erro na certa", "")));
+  const msg = buildVolumeWhatsApp(a1.concat(a3), (m) => String(m));
+  ok("a mensagem do WhatsApp carrega os achados e pede a revisão", /peitoral/.test(msg) && /quadriceps/.test(msg) && /treino inteiro/.test(msg));
+}
+{
+  ok("o componente só mostra o convite quando há achados", /achados\.length > 0 &&/.test(componente));
+  ok("o CTA principal abre o WhatsApp com os pontos escritos", /buildVolumeWhatsApp\(achados/.test(componente) && /training_volume_whatsapp_click/.test(componente));
+  ok("a pessoa é avisada de que o botão abre o WhatsApp", /Abre o WhatsApp com esses pontos/.test(componente));
+  ok("existe a saída de ver como funciona antes de falar", /Ver como funciona o acompanhamento/.test(componente));
+  ok("o evento do convite está declarado", fs.readFileSync("lib/analytics.ts", "utf8").includes('"training_volume_whatsapp_click"'));
+}
 
 console.log(falhas === 0 ? "\nTODOS OS TESTES PASSARAM\n" : `\n${falhas} TESTE(S) FALHARAM\n`);
 process.exit(falhas === 0 ? 0 : 1);

@@ -27,7 +27,11 @@ import {
   itemDeExercicio,
   mediaPorSessao,
   resumo,
+  achadosParaRevisao,
+  buildVolumeWhatsApp,
+  CONVITE_REVISAO,
 } from "@/lib/treino/volume";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 /**
  * Calculadora de volume de treino.
@@ -219,6 +223,12 @@ export default function CalculadoraVolume({ placement }: { placement: string }) 
     }`;
 
   const ranking = [...volumes].filter((v) => v.diretas > 0).sort((a, b) => b.diretas - a.diretas);
+  /**
+   * No modo rápido não existem "exercícios" — o porte da ficha é o número
+   * de músculos preenchidos. Sem isso o convite nunca apareceria no rápido.
+   */
+  const porteFicha = modo === "completo" ? r.exercicios : volumes.filter((v) => v.diretas > 0).length;
+  const achados = useMemo(() => achadosParaRevisao(volumes, porteFicha), [volumes, porteFicha]);
   const maxSeries = ranking.length ? ranking[0].diretas : 1;
 
   return (
@@ -430,6 +440,51 @@ export default function CalculadoraVolume({ placement }: { placement: string }) 
                     </li>
                   ))}
                 </ol>
+              </div>
+            )}
+
+            {/**
+             * O convite no ponto de intenção máxima: a análise acabou de
+             * apontar algo concreto NO TREINO DESTA PESSOA, e a pergunta
+             * natural dela é "e o que eu faço com isso?". A resposta certa
+             * não é uma ferramenta — é a revisão individual, que é o
+             * produto. Só aparece quando há achado: convite sem contexto é
+             * banner, e banner ninguém lê.
+             */}
+            {achados.length > 0 && (
+              <div className="border border-[#BA9E50]/50 bg-[#BA9E50]/[0.06] p-5">
+                <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-2" style={{ color: "#BA9E50" }}>
+                  O que a análise encontrou
+                </p>
+                <ul className="space-y-1.5 mb-3">
+                  {achados.map((a) => (
+                    <li key={`${a.musculo}-${a.tipo}`} className="text-gray-200 text-sm leading-relaxed">
+                      <strong className="text-white">{nomeMusculo(a.musculo)}</strong>: {a.texto}.
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-gray-300 text-sm leading-relaxed mb-4">{CONVITE_REVISAO}</p>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                  <a
+                    href={getWhatsAppUrl(buildVolumeWhatsApp(achados, nomeMusculo))}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackEvent("training_volume_whatsapp_click", { placement })}
+                    className="inline-flex items-center justify-center bg-white text-black px-6 py-3 text-sm font-semibold min-h-[48px] hover:opacity-90 transition-opacity"
+                  >
+                    Quero que o Montinho revise meu treino →
+                  </a>
+                  <Link
+                    href="/consultoria"
+                    onClick={() => trackEvent("training_volume_cta_click", { placement })}
+                    className="text-gray-300 text-sm underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors min-h-[44px] inline-flex items-center"
+                  >
+                    Ver como funciona o acompanhamento
+                  </Link>
+                </div>
+                <p className="text-gray-500 text-xs leading-relaxed mt-2">
+                  Abre o WhatsApp com esses pontos já escritos — é só enviar.
+                </p>
               </div>
             )}
 

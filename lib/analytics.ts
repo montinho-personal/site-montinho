@@ -128,6 +128,7 @@ export type AnalyticsEvent =
   | "training_volume_muscle_open"
   | "training_volume_methodology_open"
   | "training_volume_share"
+  | "training_volume_whatsapp_click"
   | "training_volume_1rm_click"
   | "training_volume_article_click"
   | "training_volume_cta_click"
