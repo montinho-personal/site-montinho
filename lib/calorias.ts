@@ -328,4 +328,11 @@ export const AVISO_META_BAIXA =
 export const ARTIGOS_COM_CALCULADORA_DEFICIT: string[] = [
   "deficit-calorico-como-calcular",
   "quantas-calorias-cortar-para-emagrecer",
+  /**
+   * "Plano realista para emagrecer 10 kg" e "a matemática do
+   * emagrecimento" pedem a conta ao lado do texto: os dois artigos
+   * ENSINAM a fazer o cálculo que a ferramenta faz.
+   */
+  "como-emagrecer-10-kg",
+  "quantas-calorias-tem-1kg-de-gordura",
 ];

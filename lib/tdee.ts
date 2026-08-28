@@ -127,4 +127,12 @@ export function comparaAtividades(tmb: Faixa): { id: string; titulo: string; fat
 export const ARTIGOS_COM_CALCULADORA_TDEE: string[] = [
   "como-calcular-tmb-tdee-calorias",
   "quantas-calorias-eu-gasto-por-dia",
+  /**
+   * Os três de metabolismo: quem lê "meu metabolismo é lento?" quer ver o
+   * próprio número, e a calculadora responde melhor que qualquer parágrafo.
+   * NEAT entra porque é literalmente o que o fator de atividade estima.
+   */
+  "metabolismo-lento-existe",
+  "como-acelerar-o-metabolismo",
+  "neat-gasto-calorico-diario",
 ];

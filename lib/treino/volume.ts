@@ -451,6 +451,21 @@ export const ARTIGOS_COM_CALCULADORA_VOLUME: string[] = [
   "push-pull-legs",
   "treino-upper-lower-superior-inferior",
   "como-montar-treino-abc",
+  /**
+   * Comparar divisões (full body vs ABC) e montar ABCD/ABCDE é decidir
+   * distribuição de volume — a ferramenta transforma a teoria do artigo
+   * na conta do treino real de quem lê.
+   */
+  "full-body-vs-divisao-abc",
+  "treino-abcd-para-hipertrofia",
+  /**
+   * "como-montar-treino-abcde" ficou de fora conscientemente: com ele o
+   * registro passaria a ter SEIS artigos de divisão quase idênticos (PPL,
+   * upper/lower, ABC, ABCD, ABCDE, full body vs ABC) todos com o mesmo
+   * embed. O teste de seletividade pegou isso, e ele está certo — o valor
+   * marginal do sexto é baixo e o custo (parecer ferramenta espalhada por
+   * todo lado) é alto.
+   */
 ];
 
 /** Artigos de treino por grupo: recebem só um link contextual. */

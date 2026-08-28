@@ -9,6 +9,15 @@
 
 import * as fs from "fs";
 import { TRILHAS, encontraPasso } from "../lib/ferramentas/trilha";
+import { CAMINHO_POR_ARTIGO, HREFS } from "../lib/ferramentas/comece-artigos";
+import { blogPosts } from "../lib/blog";
+import { ARTIGOS_COM_CALCULADORA_CARDAPIO } from "../lib/cardapio/motor";
+import { ARTIGOS_COM_CALCULADORA } from "../lib/proteina";
+import { ARTIGOS_COM_CALCULADORA_DEFICIT } from "../lib/calorias";
+import { ARTIGOS_COM_CALCULADORA_TDEE } from "../lib/tdee";
+import { ARTIGOS_COM_CALCULADORA_1RM } from "../lib/onerm";
+import { ARTIGOS_COM_CALCULADORA_MACROS } from "../lib/macros";
+import { ARTIGOS_COM_CALCULADORA_VOLUME } from "../lib/treino/volume";
 
 let falhas = 0;
 const ok = (nome: string, cond: boolean, detalhe = "") => {
@@ -232,6 +241,91 @@ for (const [arq, url] of [
     const faltando = TRILHAS[id].passos.filter((p) => !src.includes(`"${p.href}"`));
     ok(`/comece/${id} detalha todos os ${TRILHAS[id].passos.length} passos`, faltando.length === 0, faltando.map((p) => p.href).join(", "));
   }
+}
+
+console.log("\n" + "=".repeat(64) + "\nAS FERRAMENTAS NOS ARTIGOS\n" + "=".repeat(64));
+
+/**
+ * A regra estrutural do acervo: UMA ferramenta por artigo. Os registros
+ * precisam ser disjuntos — dois embeds no mesmo corte editorial brigariam
+ * pelo mesmo espaço e a página viraria uma feira.
+ */
+{
+  const slugs = new Set(blogPosts.map((p) => p.slug));
+  const registros: [string, string[]][] = [
+    ["proteína", ARTIGOS_COM_CALCULADORA],
+    ["déficit", ARTIGOS_COM_CALCULADORA_DEFICIT],
+    ["TMB/TDEE", ARTIGOS_COM_CALCULADORA_TDEE],
+    ["1RM", ARTIGOS_COM_CALCULADORA_1RM],
+    ["macros", ARTIGOS_COM_CALCULADORA_MACROS],
+    ["volume", ARTIGOS_COM_CALCULADORA_VOLUME],
+    ["cardápio", ARTIGOS_COM_CALCULADORA_CARDAPIO],
+  ];
+
+  for (const [nome, lista] of registros) {
+    const faltando = lista.filter((s) => !slugs.has(s));
+    ok(`[${nome}] todos os ${lista.length} artigos do registro existem`, faltando.length === 0, faltando.join(", "));
+  }
+
+  const vistos = new Map<string, string>();
+  const colisoes: string[] = [];
+  for (const [nome, lista] of registros) {
+    for (const s of lista) {
+      if (vistos.has(s)) colisoes.push(`${s} está em ${vistos.get(s)} E em ${nome}`);
+      else vistos.set(s, nome);
+    }
+  }
+  ok("uma ferramenta por artigo: nenhum slug em dois registros", colisoes.length === 0, colisoes.join("\n           "));
+
+  /** O FitChef nascia sem artigo nenhum — a ferramenta mais completa era invisível. */
+  ok("o Montinho FitChef aparece em artigos", ARTIGOS_COM_CALCULADORA_CARDAPIO.length >= 5, String(ARTIGOS_COM_CALCULADORA_CARDAPIO.length));
+  ok(
+    "o blog renderiza o FitChef nos artigos dele",
+    /ARTIGOS_COM_CALCULADORA_CARDAPIO/.test(ler("app/blog/[slug]/page.tsx")) && /MonteSeuCardapio placement=\{post\.slug\}/.test(ler("app/blog/[slug]/page.tsx"))
+  );
+  ok(`cobertura total: ${vistos.size} artigos com ferramenta`, vistos.size >= 40, String(vistos.size));
+}
+
+console.log("\n" + "=".repeat(64) + "\nO CAMINHO NOS ARTIGOS DE COMEÇO\n" + "=".repeat(64));
+
+{
+  const slugs = new Set(blogPosts.map((p) => p.slug));
+  const faltando = Object.keys(CAMINHO_POR_ARTIGO).filter((s) => !slugs.has(s));
+  ok(`todos os ${Object.keys(CAMINHO_POR_ARTIGO).length} artigos do caminho existem`, faltando.length === 0, faltando.join(", "));
+  ok("todo destino aponta para uma LP real", Object.values(CAMINHO_POR_ARTIGO).every((c) => ["/comece", "/comece/dieta", "/comece/treino"].includes(HREFS[c])));
+  const comp = ler("components/comece/BlocoCaminho.tsx");
+  ok("o bloco renderiza nada fora do registro", /if \(!caminho\) return null;/.test(comp));
+  ok("é componente de servidor e some na impressão", !/"use client"|useState/.test(comp) && /print:hidden/.test(comp));
+  ok("o blog renderiza o bloco", /<BlocoCaminho slug=\{post\.slug\} \/>/.test(ler("app/blog/[slug]/page.tsx")));
+  /**
+   * O bloco é direção, não calculadora: entra DEPOIS do corpo do artigo. Se
+   * subisse para o meio, competiria com a leitura — e com o embed de
+   * ferramenta, quando o artigo tiver os dois.
+   */
+  const blog = ler("app/blog/[slug]/page.tsx");
+  ok("o bloco vem depois do corpo do artigo", blog.indexOf("<BlocoCaminho") > blog.indexOf("corpoRestante }}"));
+}
+
+console.log("\n" + "=".repeat(64) + "\nA FOTO NA HISTÓRIA\n" + "=".repeat(64));
+
+/**
+ * A antes/depois é o ativo de autoridade mais forte do site — e o mais
+ * fácil de usar errado. Ela funciona como PROVA da frase "eu estive aí";
+ * viraria promessa se a legenda dissesse "veja o que é possível". Por isso
+ * a legenda é travada: fala do passado dele, nunca do futuro de quem lê.
+ */
+{
+  const comece = ler("app/comece/page.tsx");
+  ok("a foto está na página, dentro de figure", /<figure/.test(comece) && /antes-depois-montinho-personal-trainer\.jpg/.test(comece));
+  ok("usa next/image (otimização e proporção corretas)", /<Image/.test(comece) && /from "next\/image"/.test(comece));
+  ok("tem alt descritivo de verdade", /alt="Montinho antes e depois[^"]{40,}"/.test(comece));
+  ok("a legenda fala de empatia, não de promessa", /Este era eu/.test(comece) && /não estou te vendendo o meu resultado/i.test(comece));
+  ok(
+    "a legenda NÃO promete resultado a quem lê",
+    !/(veja o que é possível|você (também )?pode (ter|conseguir) (isso|esse)|seu resultado será)/i.test(comece)
+  );
+  /** No herói ela faria a página ser sobre ele; no meio, prova a frase. */
+  ok("a foto vem depois do H1 e do título da história", comece.indexOf("<figure") > comece.indexOf("porque eu estive aí"));
 }
 
 console.log("\n" + "=".repeat(64) + (falhas === 0 ? "\nTODOS OS TESTES PASSARAM" : `\n${falhas} TESTE(S) FALHARAM`));

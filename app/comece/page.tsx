@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { SITE_URL } from "@/lib/blog";
 import { TRILHAS } from "@/lib/ferramentas/trilha";
 import { BORDOES } from "@/lib/bordoes";
@@ -76,6 +77,41 @@ export default function ComecePage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-5" style={h}>
             Eu sei exatamente onde você está — porque eu estive aí
           </h2>
+          {/**
+           * A foto entra AQUI, no meio da história — não no topo.
+           *
+           * No herói ela faria a página ser sobre o Montinho; no meio da
+           * história ela PROVA a frase que acabou de ser lida ("eu estive
+           * aí"). E a legenda faz o trabalho que separa autoridade de
+           * promessa: "eu era essa pessoa", nunca "você pode ser esta". A
+           * mesma foto vive em /resultados; aqui ela tem outra função.
+           *
+           * Fora do herói também por performance: no meio da página ela
+           * carrega preguiçosamente e não vira o LCP.
+           */}
+          <figure className="mb-6">
+            {/**
+             * next/image e não <img>: o arquivo original tem 4096×4096 e
+             * 439 KB para ser exibido em ~350 px de largura no celular. O
+             * otimizador serve a versão do tamanho certo, em formato
+             * moderno. As dimensões declaradas são as REAIS (quadrada) —
+             * declarar proporção errada reserva a caixa errada e produz
+             * salto de layout quando a imagem chega.
+             */}
+            <Image
+              src="/antes-depois-montinho-personal-trainer.jpg"
+              alt="Montinho antes e depois: à esquerda, adolescente acima do peso; à direita, adulto com a composição corporal transformada após perder mais de 40 kg"
+              width={1024}
+              height={1024}
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="w-full h-auto border border-white/15"
+            />
+            <figcaption className="text-gray-400 text-sm leading-relaxed mt-3">
+              Este era eu. Não estou te vendendo o meu resultado — estou te
+              entregando a ordem das peças que eu levei anos para encontrar.
+            </figcaption>
+          </figure>
+
           <div className="space-y-4 text-gray-300 leading-relaxed">
             <p>
               Eu fui o gordinho da turma. O que sorria por fora e se escondia
