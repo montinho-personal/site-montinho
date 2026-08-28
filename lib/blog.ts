@@ -1112,7 +1112,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quantos-dias-por-semana-treinar-infographic.svg" alt="Infográfico sobre Quantos Dias por Semana Devo Treinar? A Resposta Baseada em Ciência — Montinho Personal Trainer" title="Quantos Dias por Semana Devo Treinar? A Resposta Baseada em " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quantos-dias-por-semana-treinar-capa.webp" alt="Arte de capa ilustrada sobre frequência semanal de treino e distribuição dos estímulos" title="Quantos Dias por Semana Devo Treinar? — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Quantos dias treinar por semana: a resposta baseada em evidência.</figcaption>
 </figure>
 <p>A verdade é que não existe uma resposta única. Mas existe uma forma certa de chegar à resposta certa — e ela começa por entender o que a frequência de treino realmente faz no seu corpo.</p>
 
@@ -2263,7 +2264,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/descansar-tambem-faz-crescer-infographic.svg" alt="Infográfico sobre Descansar Também Faz Crescer? A Ciência Por Trás da Recuperação Muscular — Montinho Personal Trainer" title="Descansar Também Faz Crescer? A Ciência Por Trás da Recupera" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/descansar-tambem-faz-crescer-capa.webp" alt="Arte de capa ilustrada sobre recuperação muscular e descanso como parte do treino" title="Descansar Também Faz Crescer? — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Descanso é parte do treino: a ciência da recuperação muscular.</figcaption>
 </figure>
 <p>Essa crença não só está errada — ela é o motivo pelo qual tanta gente treina com dedicação por meses e vê resultado abaixo do esperado.</p>
 
@@ -7508,7 +7510,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/hiit-funciona-infographic.svg" alt="Infográfico sobre HIIT Funciona para Emagrecer? O Que a Ciência Diz — Montinho Personal Trainer" title="HIIT Funciona para Emagrecer? O Que a Ciência Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/hiit-funciona-capa.webp" alt="Arte de capa ilustrada sobre treino intervalado de alta intensidade (HIIT) para emagrecimento" title="HIIT Funciona para Emagrecer? — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">HIIT para emagrecer: o que a ciência mostra e para quem faz sentido.</figcaption>
 </figure>
 <p>Mas será que isso é verdade? O HIIT realmente funciona para emagrecer? E funciona para qualquer pessoa?</p>
 
@@ -21562,7 +21565,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-em-casa-sem-equipamento-infographic.svg" alt="Infográfico sobre Treino em Casa Sem Equipamento: Programa Completo para Iniciantes — Montinho Personal Trainer" title="Treino em Casa Sem Equipamento: Programa Completo para Inici" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-em-casa-sem-equipamento-capa.webp" alt="Arte de capa ilustrada de treino em casa sem equipamento, usando o peso do corpo" title="Treino em Casa Sem Equipamento — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Programa completo de treino em casa usando o peso do corpo.</figcaption>
 </figure>
 <h2>O princípio que faz o treino em casa funcionar</h2>
 <p>Músculo responde a tensão mecânica, volume e progressão — não a equipamentos específicos. Se você aumenta progressivamente a dificuldade dos exercícios (mais repetições, variações mais difíceis, menos tempo de descanso), o músculo se adapta. O problema do treino em casa não é a ausência de equipamento — é a falta de progressão estruturada.</p>
@@ -31056,7 +31060,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/cortisol-e-treino-infographic.svg" alt="Infográfico sobre Cortisol e Treino: Como o Estresse Sabota Seus Resultados — Montinho Personal Trainer" title="Cortisol e Treino: Como o Estresse Sabota Seus Resultados" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/cortisol-e-treino-capa.webp" alt="Arte de capa ilustrada: homem levantando barra com destaque para estresse, recuperação e equilíbrio — Cortisol e Treino" title="Cortisol e Treino — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Cortisol e treino: estresse, recuperação e performance em equilíbrio.</figcaption>
 </figure>
 <p>O cortisol é o principal hormônio do estresse do corpo humano. É essencial para a sobrevivência — mas quando cronicamente elevado, ele se torna um dos maiores obstáculos para a transformação corporal.</p>
 
@@ -40031,7 +40036,8 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/otimizar-sono-para-recuperacao-muscular-infographic.svg" alt="Infográfico sobre Como Otimizar o Sono para Recuperação Muscular: Protocolo Completo — Montinho Personal Trainer" title="Como Otimizar o Sono para Recuperação Muscular: Protocolo Co" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/otimizar-sono-para-recuperacao-muscular-capa.webp" alt="Arte de capa: quarto escuro preparado para dormir bem, com destaque para sono de qualidade, recuperação muscular e performance" title="Otimizar o Sono para Recuperação Muscular — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Sono de qualidade: o multiplicador silencioso da recuperação muscular.</figcaption>
 </figure>
 <p>Mas a maioria das discussões sobre sono e musculação se limita a "durma 8 horas". A realidade é mais nuançada — e mais acionável do que isso.</p>
 
@@ -76860,7 +76866,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Em <strong>Barueri</strong>, não faltam academias. Falta critério. E quando o critério falha, o roteiro é conhecido: matrícula empolgada em janeiro, treino aleatório, resultado nenhum, desistência em março.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academias-em-barueri-infographic.svg" alt="Infográfico sobre Academias em Barueri: Guia Completo 2026 — Montinho Personal Trainer" title="Academias em Barueri: Guia Completo 2026" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/academias-em-barueri-capa.webp" alt="Arte de capa ilustrada sobre as academias de Barueri, com silhuetas de treino e a cidade ao fundo" title="Academias em Barueri: Guia Completo 2026 — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Guia das academias de Barueri: perfis, propostas e como escolher.</figcaption>
 </figure>
 
 <p>O prejuízo não é só a mensalidade debitada. É o ano perdido, a saúde adiada, a sensação de que "academia não é para mim" — quando o problema foi só a escolha errada.</p>
@@ -78961,7 +78968,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Escolher a <strong>academia errada</strong> custa caro — e não é só a mensalidade. É o plano anual que vira doação, a motivação que evapora na terceira semana e mais um ano adiando o corpo e a saúde que você queria.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-escolher-uma-academia-infographic.svg" alt="Infográfico sobre Como Escolher uma Academia: Guia Definitivo — Montinho Personal Trainer" title="Como Escolher uma Academia: Guia Definitivo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-escolher-uma-academia-capa.webp" alt="Arte de capa ilustrada sobre como avaliar uma academia — estrutura, horário, localização e custo" title="Como Escolher uma Academia — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Os critérios que realmente importam na hora de escolher a academia.</figcaption>
 </figure>
 
 <p>Em Alphaville, Barueri e Santana de Parnaíba o problema é ainda maior: a oferta explodiu. Redes econômicas, estúdios boutique, academias premium dentro de shopping... Com tanta opção, a chance de escolher pela propaganda — e não pelo que importa — é enorme.</p>
@@ -79050,7 +79058,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você quer resultado, tem <strong>tempo curto</strong> e um orçamento definido. E aí trava na dúvida clássica: pagar a mensalidade da academia ou investir em um <strong>personal trainer</strong>?</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-ou-personal-trainer-infographic.svg" alt="Infográfico sobre Academia ou Personal Trainer: Qual Escolher? — Montinho Personal Trainer" title="Academia ou Personal Trainer: Qual Escolher?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/academia-ou-personal-trainer-capa.webp" alt="Arte de capa ilustrada comparando treinar sozinho na academia e treinar com personal trainer" title="Academia ou Personal Trainer: Qual Escolher? — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia ou personal trainer: o que muda no resultado de cada escolha.</figcaption>
 </figure>
 
 <p>Escolher errado dói dos dois lados. Academia sem método vira mensalidade jogada fora — o famoso "sócio que não frequenta". Personal contratado sem necessidade vira custo alto para algo que você talvez conseguisse sozinho.</p>
@@ -85110,7 +85119,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você quer emagrecer, mas academia intimida, corrida machuca e dieta radical você já sabe como termina. Sobra a <strong>caminhada</strong> — simples, gratuita, possível.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/caminhada-emagrece-infographic.svg" alt="Infográfico sobre Caminhada Emagrece? Guia Honesto para Iniciantes — Montinho Personal Trainer" title="Caminhada Emagrece? Guia Honesto para Iniciantes" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/caminhada-emagrece-capa.webp" alt="Arte de capa ilustrada com pessoa caminhando em ritmo acelerado ao ar livre" title="Caminhada Emagrece? — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Caminhada emagrece? O que esperar e como tornar o estímulo eficiente.</figcaption>
 </figure>
 
 <p>Só que aí bate a dúvida: "será que caminhar resolve mesmo, ou estou perdendo tempo?" Você caminha uma semana, sobe na balança, nada acontece, e a motivação evapora.</p>
@@ -91301,7 +91311,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Se tem uma coisa que eu aprendi perdendo mais de 40kg é esta: nenhuma dieta sobrevive à fome constante. Você pode ter a planilha perfeita, o déficit calculado no decimal — se passa o dia com fome, uma hora o corpo vence. Comigo venceu várias vezes, até eu entender que o segredo não era ter mais força de vontade, e sim montar o prato de um jeito que a fome demorasse a voltar (conto essa virada na <a href="/minha-historia">minha história</a>).</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/alimentos-que-dao-saciedade-infographic.svg" alt="Infográfico sobre Alimentos Que Dão Saciedade: O Que Comer Para Sentir Menos Fome — Montinho Personal Trainer" title="Alimentos Que Dão Saciedade: O Que Comer Para Sentir Menos F" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/alimentos-que-dao-saciedade-capa.webp" alt="Arte de capa ilustrada com alimentos de alta saciedade — proteínas, fibras e alimentos integrais" title="Alimentos Que Dão Saciedade — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O que comer para sentir menos fome ao longo do dia.</figcaption>
 </figure>
 
 
