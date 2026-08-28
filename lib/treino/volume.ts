@@ -259,6 +259,61 @@ export function estaConcentrado(v: VolumeMusculo): boolean {
 export const TEXTO_CONCENTRACAO =
   "Grande parte do volume desse músculo está concentrada em uma única sessão. Dependendo do esforço e da qualidade das séries, distribuir parte desse volume em outra sessão pode facilitar a manutenção do desempenho — não é uma regra, e treinar um músculo uma vez por semana também funciona para muita gente.";
 
+// ─── Achados para revisão ────────────────────────────────────────────────────
+
+export type TipoAchado = "muito-baixo" | "muito-elevado" | "concentrado";
+
+export interface Achado {
+  musculo: MusculoId;
+  tipo: TipoAchado;
+  /** Frase curta e neutra — observação, nunca diagnóstico. */
+  texto: string;
+}
+
+/**
+ * O que a análise encontrou de concreto no treino DESTA pessoa — a matéria-
+ * prima do convite de revisão. Só entram os extremos (muito baixo, muito
+ * elevado, concentrado num dia): "volume baixo" e "elevado" são escolhas
+ * legítimas demais para virarem bandeira. E nada aqui é diagnóstico — cada
+ * frase observa e devolve a decisão para a pessoa (ou para a conversa).
+ *
+ * O corte de 3+ exercícios existe porque uma ficha quase vazia gera
+ * "achados" em tudo — e convite construído sobre análise rasa é spam.
+ */
+export function achadosParaRevisao(volumes: VolumeMusculo[], totalExercicios: number): Achado[] {
+  if (totalExercicios < 3) return [];
+  const achados: Achado[] = [];
+  for (const v of volumes) {
+    if (v.diretas <= 0) continue;
+    const faixa = classificaVolume(v.diretas);
+    if (faixa.nivel === "muito-baixo") {
+      achados.push({ musculo: v.musculo, tipo: "muito-baixo", texto: `${v.diretas} séries semanais — bem abaixo das faixas normalmente estudadas` });
+    } else if (faixa.nivel === "muito-elevado") {
+      achados.push({ musculo: v.musculo, tipo: "muito-elevado", texto: `${v.diretas} séries semanais — acima da faixa da maioria dos protocolos` });
+    } else if (estaConcentrado(v)) {
+      achados.push({ musculo: v.musculo, tipo: "concentrado", texto: "quase todo o volume numa única sessão" });
+    }
+  }
+  return achados.slice(0, 3);
+}
+
+export const CONVITE_REVISAO =
+  "Nenhum desses pontos é um erro na certa — pode ser escolha sua, fase, prioridade. Mas é exatamente o tipo de coisa que eu olho no treino dos meus alunos: o que é intencional fica, o que é acidente a gente ajusta.";
+
+/**
+ * A mensagem que abre no WhatsApp — os achados já descritos, para a
+ * conversa começar no assunto. Dado do treino da pessoa, enviado só quando
+ * ELA clica em enviar: o mesmo contrato do Treino Para Minha Rotina.
+ */
+export function buildVolumeWhatsApp(achados: Achado[], nomeDe: (m: MusculoId) => string): string {
+  const linhas = achados.map((a) => `- ${nomeDe(a.musculo)}: ${a.texto}`).join("\n");
+  return (
+    `Oi, Montinho! Analisei meu treino na Calculadora de Volume do seu site e apareceram estes pontos:\n\n` +
+    `${linhas}\n\n` +
+    `Queria que você olhasse meu treino inteiro e me dissesse o que vale ajustar.`
+  );
+}
+
 // ─── Resumo geral ────────────────────────────────────────────────────────────
 
 export interface ResumoTreino {

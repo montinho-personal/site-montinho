@@ -100,5 +100,21 @@ console.log("\n" + "=".repeat(64) + "\nO PRÓXIMO PASSO EM DESTAQUE NOS MACROS\n
   ok("o evento macro_cardapio_click está declarado", ler("lib/analytics.ts").includes('"macro_cardapio_click"'));
 }
 
+console.log("\n" + "=".repeat(64) + "\nO PRÓXIMO PASSO TAMBÉM É CLARO NO DÉFICIT\n" + "=".repeat(64));
+
+/**
+ * Dois links de mesmo peso ("macros" e "cardápio") deixavam a pessoa sem
+ * saber qual era O caminho. A hierarquia agora segue a trilha: macros é o
+ * botão primário (passo 3), cardápio é o atalho secundário explicado.
+ */
+{
+  const deficit = ler("components/calorias/CalculadoraDeficit.tsx").replace(/\/\*[\s\S]*?\*\//g, "");
+  ok("o déficit tem o bloco 'Próximo passo' com macros como primário", /Próximo passo/.test(deficit) && /passo 3 do caminho/.test(deficit));
+  const iPrimario = deficit.indexOf("Distribuir minhas calorias em macros");
+  const iAtalho = deficit.indexOf("pule direto para o cardápio");
+  ok("o cardápio é atalho secundário, depois do primário", iPrimario > -1 && iAtalho > iPrimario);
+  ok("o atalho explica por que pular é seguro", /calcula os macros por dentro/.test(deficit));
+}
+
 console.log("\n" + "=".repeat(64) + (falhas === 0 ? "\nTODOS OS TESTES PASSARAM" : `\n${falhas} TESTE(S) FALHARAM`));
 if (falhas > 0) process.exit(1);
