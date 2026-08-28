@@ -43,11 +43,11 @@ export default function Hero() {
         a sobra. Como no celular a folga era de ~10px, o eyebrow encostava na
         borda do header.
 
-        pt-28 (112px) ultrapassa a folga: a seção cresce um pouco e o conteúdo
-        desce, deixando ~48px livres abaixo do header. No desktop o lg:py-32
-        continua mandando, onde nunca houve o problema.
+        pt-20 (80px) ultrapassa a folga: a seção cresce um pouco e o conteúdo
+        desce, deixando ~79px livres abaixo do header — medido, não estimado. No
+        desktop o lg:py-32 continua mandando, onde nunca houve o problema.
       */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-28 sm:pt-32 lg:py-32 text-center lg:text-left">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-20 sm:pt-24 lg:py-32 text-center lg:text-left">
         {/* Eyebrow */}
         <p className="text-xs font-semibold tracking-[0.3em] uppercase text-gray-300 mb-6">
           Personal Trainer · Alphaville · Online
