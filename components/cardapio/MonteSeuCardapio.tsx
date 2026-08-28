@@ -146,6 +146,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
     }
   }, [e, carregado]);
 
+
   useEffect(() => {
     const el = raiz.current;
     if (!el || typeof IntersectionObserver === "undefined") return;
@@ -191,6 +192,27 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
           habituais: e.habituais,
         }
       : null;
+
+  /**
+   * Volta do "resultado" depois de recarregar a página.
+   *
+   * As RESPOSTAS são salvas; o cardápio gerado não é (ele é derivado — e
+   * guardar comida sugerida em localStorage seria guardar dado alimentar
+   * sem precisar). Quem fechava a aba na tela de resultado voltava com
+   * etapa="resultado" e cardapio=null: nenhum bloco casava, e a ferramenta
+   * aparecia vazia, só com o aviso no rodapé. Era o pior sintoma possível —
+   * parecia site quebrado, não estado perdido.
+   *
+   * Com as respostas completas, regeneramos (o motor é determinístico: sai
+   * o mesmo cardápio de antes). Sem elas, devolvemos a pessoa à última
+   * pergunta em vez de deixar a tela em branco.
+   */
+  useEffect(() => {
+    if (!carregado || e.etapa !== "resultado" || cardapio) return;
+    if (pedido) gerar(pedido);
+    else setE((a) => ({ ...a, etapa: "habituais", momentoIdx: 0 }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [carregado, e.etapa, cardapio, pedido]);
 
   function avanca(patch: Partial<Estado> = {}) {
     setE((atual) => {
