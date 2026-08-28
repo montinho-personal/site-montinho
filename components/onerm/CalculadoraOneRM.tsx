@@ -620,6 +620,33 @@ export default function CalculadoraOneRM({
               </Link>
             </div>
 
+            {/**
+             * A última emenda do caminho do treino. A pessoa acabou de
+             * descobrir a carga — e a pergunta seguinte é inevitável: "será
+             * que eu aguento esse peso com técnica?". O passo 5 responde
+             * exatamente isso, e não entrega numa ferramenta: entrega na
+             * conversa, por um serviço gratuito. Carga sem técnica é risco.
+             */}
+            <div className="border border-[#BA9E50]/50 bg-[#BA9E50]/[0.06] p-5">
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-1.5" style={{ color: "#BA9E50" }}>
+                Próximo passo
+              </p>
+              <p className="text-gray-200 text-sm leading-relaxed mb-3">
+                Você sabe a carga. A pergunta agora é outra: o seu movimento
+                aguenta essa carga? Carga certa com técnica errada é risco, não
+                estímulo. Grave uma série e me mande — eu mesmo assisto e te
+                devolvo os pontos de atenção. É gratuito.
+              </p>
+              <Link
+                href="/revisao-de-execucao"
+                onClick={() => trackEvent("one_rm_review_click", { placement })}
+                className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 text-sm font-semibold min-h-[48px] hover:opacity-90 transition-opacity"
+              >
+                Revisar minha execução — grátis
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+
             {/* CTA — depois de todo o valor entregue */}
             <div className="border-t border-white/10 pt-5">
               <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">

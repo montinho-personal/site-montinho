@@ -98,6 +98,7 @@ export type AnalyticsEvent =
   | "one_rm_percentage_select"
   | "one_rm_plate_calculator_open"
   | "one_rm_methodology_open"
+  | "one_rm_review_click"
   | "one_rm_article_click"
   | "one_rm_cta_click"
 
