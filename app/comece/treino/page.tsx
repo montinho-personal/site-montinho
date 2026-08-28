@@ -159,7 +159,8 @@ export default function ComeceTreinoPage() {
             atravessa a porta comigo atravessa sabendo o porquê.
           </p>
           <p className="text-gray-300 leading-relaxed">
-            E o {BORDOES.chalala}? {BORDOES.chalalaNaoEhSegredo} O caminho
+            {/* BORDOES.chalala já traz o artigo ("o algo a mais..."). */}
+            E {BORDOES.chalala}? {BORDOES.chalalaNaoEhSegredo} O caminho
             gratuito é o que funciona. O acompanhamento é o chalalá em cima
             dele.
           </p>

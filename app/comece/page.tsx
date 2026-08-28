@@ -237,7 +237,9 @@ export default function ComecePage() {
               do texto em relação ao resto do site. */}
           <p className="text-gray-300 leading-relaxed mb-3 mt-10">
             O caminho acima é o &ldquo;o que precisa ser feito&rdquo;. E quando
-            você quiser o {BORDOES.chalala} — o acompanhamento de quem já
+            {/* A constante já começa com artigo ("o algo a mais..."), então
+                o texto não repete o "o" — era daí que saía "o o algo a mais". */}
+            você quiser {BORDOES.chalala} — o acompanhamento de quem já
             percorreu tudo isso no próprio corpo —{" "}
             <Link
               href="/consultoria"
