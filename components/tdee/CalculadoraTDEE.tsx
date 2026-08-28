@@ -498,7 +498,7 @@ export default function CalculadoraTDEE({
                         <span aria-hidden="true">→</span>
                       </Link>
                     </div>
-                    <p className="text-gray-400 text-xs leading-relaxed">
+                    <p className="text-gray-400 text-xs leading-relaxed mb-3">
                       A meta parte do começo da faixa (+{SUPERAVIT_MIN} kcal) e pode ser ajustada na próxima
                       ferramenta. Para entender o superávit em detalhe,{" "}
                       <Link
@@ -509,6 +509,23 @@ export default function CalculadoraTDEE({
                         quantas calorias para ganhar massa muscular
                       </Link>
                       .
+                    </p>
+                    {/**
+                     * A metade que a comida não resolve: superávit sem treino
+                     * de força vira gordura. Quem escolheu ganhar sai daqui
+                     * sabendo que o caminho continua na trilha do treino.
+                     */}
+                    <p className="text-gray-300 text-sm leading-relaxed border-t border-[#BA9E50]/30 pt-3">
+                      E o treino? O superávit é metade da equação — o músculo
+                      vem do estímulo.{" "}
+                      <Link
+                        href="/treino-para-minha-rotina"
+                        onClick={() => trackEvent("tdee_training_click", { placement })}
+                        className="text-white font-semibold underline underline-offset-4 decoration-1 hover:opacity-80 transition-opacity"
+                        style={{ textDecorationColor: "#BA9E50" }}
+                      >
+                        Descubra qual divisão de treino cabe na sua semana →
+                      </Link>
                     </p>
                   </div>
                 )}

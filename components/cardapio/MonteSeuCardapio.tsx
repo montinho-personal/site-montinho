@@ -1023,6 +1023,41 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
             )}
           </div>
 
+          {/**
+           * Quem quer ganhar massa não termina no cardápio: o superávit é
+           * metade da equação — o músculo vem do estímulo. O ciclo da dieta
+           * fecha entregando a pessoa na trilha do treino, não num beco.
+           */}
+          {pedido.objetivo === "ganhar" && (
+            <div className="border border-[#BA9E50]/50 bg-[#BA9E50]/[0.06] p-5 mt-6 print:hidden">
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-1.5" style={{ color: "#BA9E50" }}>
+                Próximo passo
+              </p>
+              <p className="text-gray-200 text-sm leading-relaxed mb-3">
+                Seu cardápio dá o superávit e a proteína. Mas o músculo vem do
+                estímulo: sem treino de força progredindo, o excedente vira
+                gordura, não massa magra. O caminho do treino começa aqui:
+              </p>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                <Link
+                  href="/treino-para-minha-rotina"
+                  onClick={() => trackEvent("meal_training_click", { placement })}
+                  className="inline-flex items-center justify-center gap-2 bg-white text-black px-6 py-3 text-sm font-semibold min-h-[48px] hover:opacity-90 transition-opacity"
+                >
+                  Montar minha rotina de treino
+                  <span aria-hidden="true">→</span>
+                </Link>
+                <Link
+                  href="/ferramentas/calculadora-volume-treino"
+                  onClick={() => trackEvent("meal_training_click", { placement })}
+                  className="text-gray-300 text-sm underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors min-h-[44px] inline-flex items-center"
+                >
+                  Já treino — conferir meu volume
+                </Link>
+              </div>
+            </div>
+          )}
+
           {/* Artigos contextuais */}
           <div className="border-t border-white/10 mt-6 pt-5 print:hidden">
             <p className="text-white text-sm font-semibold mb-3">Talvez isso também ajude você</p>

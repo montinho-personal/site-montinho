@@ -83,6 +83,7 @@ export type AnalyticsEvent =
   | "tdee_gain_open"
   | "tdee_deficit_click"
   | "tdee_macros_click"
+  | "tdee_training_click"
   | "tdee_article_click"
 
   /**
@@ -158,6 +159,7 @@ export type AnalyticsEvent =
   | "shopping_list_generated"
   | "meal_plan_saved"
   | "meal_methodology_open"
+  | "meal_training_click"
   | "meal_article_click"
   | "meal_cta_click"
   | "ask_montinho_feedback_positive"
