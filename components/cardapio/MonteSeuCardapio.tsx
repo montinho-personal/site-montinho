@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { PONTE, consomeNumero } from "@/lib/ferramentas/ponte";
+import { ancoraNoTopo } from "@/lib/ferramentas/ancora";
 import { KCAL_MIN, KCAL_MAX, PESO_MIN, PESO_MAX, normalizaNumero } from "@/lib/macros";
 import {
   ALIMENTOS_CARDAPIO,
@@ -28,9 +29,11 @@ import {
   PERFIS_REFEICAO,
   REFEICOES_SUGERIDAS,
   SEM_ALTERNATIVA,
+  SEM_VARIACAO,
   SITUACOES_ESPECIAIS,
   alternativas,
   geraCardapio,
+  proximaVersao,
   geraSemana,
   listaDeCompras,
   porQueAssim,
@@ -110,6 +113,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
   const [comprados, setComprados] = useState<string[]>([]);
   const [metodoAberto, setMetodoAberto] = useState(false);
   const [copiado, setCopiado] = useState(false);
+  const [semVariacao, setSemVariacao] = useState(false);
 
   const raiz = useRef<HTMLDivElement>(null);
   const jaComecou = useRef(false);
@@ -146,6 +150,26 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
     }
   }, [e, carregado]);
 
+
+  /**
+   * Toda mudança de etapa reancora a ferramenta. É o que impede o clique em
+   * "recomeçar" (feito no fim de uma tela longa) de largar a pessoa no texto
+   * editorial que vem depois do card, quando o wizard encolhe de volta para
+   * a primeira pergunta.
+   *
+   * A primeira execução é ignorada: ela acontece na restauração do estado
+   * salvo, com a página recém-carregada, e rolar ali seria sequestrar a
+   * entrada de quem só abriu o link.
+   */
+  const primeiraAncora = useRef(true);
+  useEffect(() => {
+    if (!carregado) return;
+    if (primeiraAncora.current) {
+      primeiraAncora.current = false;
+      return;
+    }
+    ancoraNoTopo(raiz.current);
+  }, [carregado, e.etapa, e.momentoIdx]);
 
   useEffect(() => {
     const el = raiz.current;
@@ -244,8 +268,29 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
 
   function gerar(p: PedidoCardapio) {
     setCardapio(geraCardapio(p));
+    setSemVariacao(false);
     setVariedade(null);
     trackEvent("meal_plan_generated", { placement, objetivo: p.objetivo, refeicoes: String(p.refeicoes), dieta: p.dieta });
+  }
+
+  /**
+   * "Gerar outra versão" NÃO é um novo sorteio: o motor é determinístico e
+   * regerar devolveria o mesmo prato — um botão que parece quebrado. Aqui
+   * pedimos explicitamente a próxima variação (troca a proteína e o
+   * carboidrato das refeições principais e reajusta as porções), e quando o
+   * banco não tem alternativa para aquelas restrições, dizemos isso.
+   */
+  function outraVersao(p: PedidoCardapio) {
+    if (!cardapio) return;
+    const nova = proximaVersao(cardapio, p);
+    if (!nova) {
+      setSemVariacao(true);
+      return;
+    }
+    setSemVariacao(false);
+    setCardapio(nova);
+    setVariedade(null);
+    trackEvent("meal_plan_generated", { placement, objetivo: p.objetivo, refeicoes: String(p.refeicoes), dieta: p.dieta, variacao: "sim" });
   }
 
   const semana = useMemo(
@@ -298,7 +343,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
   return (
     <div
       ref={raiz}
-      className="border border-white/15 bg-gradient-to-b from-white/[0.05] to-transparent p-5 sm:p-8 relative"
+      className="border border-white/15 bg-gradient-to-b from-white/[0.05] to-transparent p-5 sm:p-8 relative scroll-mt-24"
       data-testid="monte-seu-cardapio"
     >
       <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: "#BA9E50" }} aria-hidden="true" />
@@ -855,13 +900,18 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
             >
               Imprimir / salvar PDF
             </button>
-            <button type="button" onClick={() => gerar(pedido)} className={chip(false)}>
+            <button type="button" onClick={() => outraVersao(pedido)} className={chip(false)}>
               Gerar outra versão
             </button>
             <button type="button" onClick={recomeca} className={chip(false)}>
               Recomeçar do zero
             </button>
           </div>
+          {semVariacao && (
+            <p className="text-gray-400 text-sm mt-3 print:hidden" role="status">
+              {SEM_VARIACAO}
+            </p>
+          )}
           <p className="text-gray-500 text-xs mt-2 print:hidden">Suas respostas ficam salvas neste dispositivo, no seu navegador.</p>
 
           {/* Metodologia */}

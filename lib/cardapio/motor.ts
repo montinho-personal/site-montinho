@@ -661,28 +661,62 @@ export const DIAS_SEMANA = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "S
  * nutricionalmente equivalente por construção. Repetição não é defeito:
  * cardápio que repete é cardápio que a pessoa consegue cozinhar.
  */
+/**
+ * A próxima versão do MESMO dia: troca a proteína e o carboidrato do almoço
+ * e do jantar pela alternativa seguinte do grupo e reajusta as porções.
+ *
+ * Existe porque "gerar outra versão" num motor determinístico é uma
+ * contradição: as mesmas respostas devolvem sempre o mesmo cardápio, então
+ * o botão precisa pedir explicitamente uma variação — não um novo sorteio,
+ * que a ferramenta não faz e não deve fazer.
+ *
+ * Devolve null quando não existe variação possível (banco sem alternativa
+ * para aquelas restrições). Null é resposta: melhor dizer "não tem outra"
+ * que devolver o mesmo prato fingindo novidade.
+ */
+export function proximaVersao(base: CardapioDia, pedido: PedidoCardapio): CardapioDia | null {
+  const nova: CardapioDia = {
+    ...base,
+    refeicoes: base.refeicoes.map((r) => ({ ...r, itens: r.itens.map((i) => ({ ...i })) })),
+  };
+  let mudou = false;
+
+  for (const r of nova.refeicoes) {
+    if (r.momento !== "almoco" && r.momento !== "jantar") continue;
+    r.itens = r.itens.map((item) => {
+      const a = ALIMENTO_CARDAPIO_POR_ID.get(item.alimentoId);
+      if (!a || (a.grupo !== "proteina-animal" && a.grupo !== "proteina-vegetal" && a.grupo !== "carbo-base")) {
+        return item;
+      }
+      const alt = alternativas(item, r.momento, pedido, r.itens.map((i) => i.alimentoId))[0];
+      if (!alt) return item;
+      mudou = true;
+      return { alimentoId: alt.alimento.id, porcoes: alt.porcoes };
+    });
+  }
+  if (!mudou) return null;
+
+  /**
+   * A troca mexe nos macros do dia, então a versão passa pelo mesmo
+   * refinamento do original — variação não pode custar equilíbrio. As
+   * fontes de gordura entram como ajustáveis até zero, igual na geração.
+   */
+  const extras = new Set(
+    nova.refeicoes.flatMap((r) =>
+      r.itens.filter((i) => ALIMENTO_CARDAPIO_POR_ID.get(i.alimentoId)?.grupo === "gordura").map((i) => i.alimentoId)
+    )
+  );
+  refinaDia(nova, extras);
+  for (const r of nova.refeicoes) r.itens = r.itens.filter((i) => i.porcoes > 0);
+  return nova;
+}
+
 export function geraSemana(base: CardapioDia, pedido: PedidoCardapio, variedade: Variedade): CardapioDia[] {
   const versoes = variedade === "repetir" ? 1 : variedade === "um-pouco" ? 2 : 3;
   const variantes: CardapioDia[] = [base];
 
   for (let v = 1; v < versoes; v++) {
-    const anterior = variantes[v - 1];
-    const nova: CardapioDia = {
-      ...anterior,
-      refeicoes: anterior.refeicoes.map((r) => {
-        if (r.momento !== "almoco" && r.momento !== "jantar") return { ...r, itens: r.itens.map((i) => ({ ...i })) };
-        const itens = r.itens.map((item) => {
-          const a = ALIMENTO_CARDAPIO_POR_ID.get(item.alimentoId)!;
-          if (a.grupo !== "proteina-animal" && a.grupo !== "proteina-vegetal" && a.grupo !== "carbo-base") {
-            return { ...item };
-          }
-          const alt = alternativas(item, r.momento, pedido, r.itens.map((i) => i.alimentoId))[0];
-          return alt ? { alimentoId: alt.alimento.id, porcoes: alt.porcoes } : { ...item };
-        });
-        return { ...r, itens };
-      }),
-    };
-    variantes.push(nova);
+    variantes.push(proximaVersao(variantes[v - 1], pedido) ?? variantes[v - 1]);
   }
 
   return DIAS_SEMANA.map((_, i) => variantes[i % versoes]);
@@ -756,3 +790,6 @@ export function porQueAssim(pedido: PedidoCardapio): string {
   ];
   return `${partes.join(" ")}. As calorias vêm da sua meta, a proteína usa a mesma referência das calculadoras do site, e as porções são caseiras de propósito — um cardápio que você consegue montar sem balança de precisão.`;
 }
+
+export const SEM_VARIACAO =
+  "Com a sua dieta e as suas restrições, o banco não tem outra combinação boa o suficiente para variar sem sair da meta. Use o botão de trocar em cada item para ajustar do seu jeito.";

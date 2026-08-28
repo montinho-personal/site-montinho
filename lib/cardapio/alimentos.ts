@@ -190,7 +190,13 @@ export function rotuloPorcao(a: AlimentoCardapio, porcoes: number): string {
       ? a.porcao.rotulo
       : pluralizavel && Number.isInteger(porcoes)
         ? `${n} ${base.split(" ").map(pluraliza).join(" ")}`
-        : `${n}× ${a.porcao.rotulo}`;
+        : /**
+           * Forma "N×": usa a porção SEM o "1" da frente, senão sai
+           * "1,5× 1 unidade", que faz o leitor multiplicar duas vezes.
+           * Rótulos que já começam com outro número ("4 colheres") ficam
+           * inteiros — ali o número faz parte da medida.
+           */
+          `${n}× ${base}`;
   return `${plural} (~${g} g)`;
 }
 
