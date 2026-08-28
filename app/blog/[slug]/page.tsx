@@ -21,6 +21,7 @@ import CalculadoraDeficit from "@/components/calorias/CalculadoraDeficit";
 import CalculadoraTDEE from "@/components/tdee/CalculadoraTDEE";
 import MonteSeuCardapio from "@/components/cardapio/MonteSeuCardapio";
 import BlocoCaminho from "@/components/comece/BlocoCaminho";
+import ConviteMobilidade from "@/components/mobilidade/ConviteMobilidade";
 import { ARTIGOS_COM_CALCULADORA_1RM, ARTIGOS_COM_LINK_1RM } from "@/lib/onerm";
 import { ARTIGOS_COM_CALCULADORA_MACROS } from "@/lib/macros";
 import { ARTIGOS_COM_CALCULADORA_VOLUME, ARTIGOS_COM_LINK_VOLUME } from "@/lib/treino/volume";
@@ -296,6 +297,11 @@ export default async function BlogPost({ params }: Props) {
               leitura, mas quem terminou de ler quer saber a própria carga. */}
           {ARTIGOS_COM_LINK_1RM.includes(post.slug) && <LinkFerramenta1RM slug={post.slug} />}
           {ARTIGOS_COM_LINK_VOLUME.includes(post.slug) && <LinkFerramentaVolume slug={post.slug} />}
+
+          {/* O teste de mobilidade entra como CONVITE, não embutido: ele tem
+              cinco telas e pede a pessoa de pé, o que não combina com quem
+              está lendo. Componente de servidor, zero JavaScript. */}
+          <ConviteMobilidade slug={post.slug} />
 
           {/* O caminho, para quem terminou de ler um artigo de começo: a dor
               dele não é uma conta, é não saber a ordem das coisas. Renderiza
