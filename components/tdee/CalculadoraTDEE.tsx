@@ -342,7 +342,7 @@ export default function CalculadoraTDEE({
                 <p className="text-white font-bold text-4xl sm:text-5xl leading-none mb-3" style={h}>
                   ≈ {formataFaixa(tdee)} <span className="text-lg font-normal text-gray-300">kcal/dia</span>
                 </p>
-                <p className="text-gray-300 text-sm leading-relaxed mb-2">{EXPLICA_TDEE}</p>
+                <p className="text-gray-300 text-sm leading-relaxed mb-3">{EXPLICA_TDEE}</p>
                 <p className="text-gray-400 text-sm leading-relaxed">{EXPLICA_MANUTENCAO}</p>
               </div>
 
@@ -394,7 +394,7 @@ export default function CalculadoraTDEE({
                 </div>
               </details>
 
-              <p className="text-gray-400 text-sm leading-relaxed mb-2">{NOTA_NAO_E_MEDICAO}</p>
+              <p className="text-gray-400 text-sm leading-relaxed mb-3">{NOTA_NAO_E_MEDICAO}</p>
               <p className="text-gray-400 text-sm leading-relaxed mb-5">{NOTA_NAO_E_PRESCRICAO}</p>
 
               {/* ── E agora? ───────────────────────────────────────── */}

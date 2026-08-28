@@ -139,7 +139,7 @@ export default function PreferredSourceCTA({
     >
       <Script id={SCRIPT_ID} src={SCRIPT_SRC} strategy="lazyOnload" />
 
-      <p className="text-gray-400 text-sm leading-relaxed mb-1">{COPY[variant]}</p>
+      <p className="text-gray-400 text-sm leading-relaxed mb-3">{COPY[variant]}</p>
       <p className="text-gray-300 text-sm leading-relaxed mb-4 max-w-xl">
         Você pode adicionar o Montinho às suas fontes preferidas no Google e
         encontrar estes conteúdos com mais facilidade.

@@ -119,7 +119,7 @@ export default function AcademiasAlphavillePage() {
               <h2 className="text-2xl sm:text-3xl font-bold text-white leading-tight mb-4" style={h}>
                 {grupo.titulo}
               </h2>
-              <p className="text-gray-300 leading-relaxed mb-4">{grupo.descricao}</p>
+              <p className="text-gray-300 leading-relaxed mb-3">{grupo.descricao}</p>
               <p className="text-gray-400 text-sm leading-relaxed mb-8">
                 <strong className="text-gray-200">O trade-off honesto:</strong> {grupo.tradeOff}
               </p>
