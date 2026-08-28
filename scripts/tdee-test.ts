@@ -173,6 +173,15 @@ console.log("\n" + "=".repeat(64) + "\nA NARRATIVA DE GANHO DE MASSA\n" + "=".re
   ok("o painel de ganho leva para macros E para o FitChef", /objetivo: "ganhar"/.test(componente) && /monte-seu-cardapio/.test(componente));
   ok("o painel linka o artigo de calorias para ganhar massa", /calorias-para-ganhar-massa-muscular/.test(componente));
   ok("nunca chama o superávit de prescrição individual", !/seu superávit ideal|superávit ideal para você/i.test(componente));
+  /**
+   * O ciclo de quem quer ganhar não fecha na comida: superávit sem treino
+   * de força vira gordura. O painel entrega a pessoa na trilha do treino.
+   */
+  ok(
+    "o painel de ganho continua no treino (metade da equação)",
+    /treino-para-minha-rotina/.test(componente) && /tdee_training_click/.test(componente) && /músculo\s+vem do estímulo/.test(componente)
+  );
+  ok("o evento tdee_training_click está declarado", ler("lib/analytics.ts").includes('"tdee_training_click"'));
 }
 
 console.log("\n" + "=".repeat(64) + "\nPRIVACIDADE E ANALYTICS\n" + "=".repeat(64));

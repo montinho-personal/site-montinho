@@ -548,6 +548,23 @@ ok(
   /BreadcrumbList/.test(paginaSemComentarios) && !/FAQPage|AggregateRating|"Review"|SoftwareApplication/.test(paginaSemComentarios)
 );
 ok("está no sitemap", fs.readFileSync("app/sitemap.ts", "utf8").includes("/ferramentas/monte-seu-cardapio"));
+/**
+ * Quem gera cardápio de GANHO sai com a ponta do treino amarrada: o
+ * superávit é metade da equação, e o resultado entrega a trilha do treino
+ * em destaque — só para esse objetivo, porque quem emagrece já tem o
+ * roteamento de artigos dele.
+ */
+{
+  const compGanho = fs.readFileSync("components/cardapio/MonteSeuCardapio.tsx", "utf8").replace(/\/\*[\s\S]*?\*\//g, "");
+  ok(
+    "objetivo 'ganhar' recebe o próximo passo do treino no resultado",
+    /pedido\.objetivo === "ganhar" && \(/.test(compGanho) &&
+      /Montar minha rotina de treino/.test(compGanho) &&
+      /calculadora-volume-treino/.test(compGanho)
+  );
+  ok("o bloco explica o porquê (estímulo, não só comida)", /músculo vem do\s+estímulo/.test(compGanho.replace(/\n\s+/g, " ")));
+  ok("o evento meal_training_click está declarado", fs.readFileSync("lib/analytics.ts", "utf8").includes('"meal_training_click"'));
+}
 ok("está na central /ferramentas", fs.readFileSync("app/ferramentas/page.tsx", "utf8").includes("/ferramentas/monte-seu-cardapio"));
 {
   const paginaNome = fs.readFileSync("app/ferramentas/monte-seu-cardapio/page.tsx", "utf8");
