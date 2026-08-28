@@ -22,18 +22,32 @@ const CINZA = "#6B6B70";
 const VERDE = "#6FA86B";
 const LARANJA = "#D08A3E";
 
-export default function FiguraTeste({ figura }: { figura: Figura }) {
+export default function FiguraTeste({
+  figura,
+  compacta = false,
+}: {
+  figura: Figura;
+  /**
+   * Modo compacto: a figura do exercício, pequena ao lado do texto do card.
+   * Aqui o título vira o texto alternativo e some da tela — o nome do
+   * exercício já está a dois centímetros de distância, e repeti-lo embaixo do
+   * desenho seria ruído num espaço que não sobra.
+   */
+  compacta?: boolean;
+}) {
   const cor = figura.tipo === "certo" ? VERDE : LARANJA;
 
   return (
     <figure className="m-0">
-      <figcaption
-        className="text-[11px] tracking-[0.14em] uppercase mb-2 flex items-center gap-2"
-        style={{ color: cor, fontFamily: "var(--font-inter), sans-serif" }}
-      >
-        <span aria-hidden="true" className="w-2 h-2 rounded-full" style={{ background: cor }} />
-        {figura.titulo}
-      </figcaption>
+      {!compacta && (
+        <figcaption
+          className="text-[11px] tracking-[0.14em] uppercase mb-2 flex items-center gap-2"
+          style={{ color: cor, fontFamily: "var(--font-inter), sans-serif" }}
+        >
+          <span aria-hidden="true" className="w-2 h-2 rounded-full" style={{ background: cor }} />
+          {figura.titulo}
+        </figcaption>
+      )}
 
       <svg
         viewBox="0 0 100 100"
@@ -119,6 +133,25 @@ export default function FiguraTeste({ figura }: { figura: Figura }) {
             </text>
           </g>
         )}
+
+        {/* a seta de movimento, nas figuras de exercício */}
+        {figura.movimento && (() => {
+          const m = figura.movimento;
+          const ang = Math.atan2(m.y2 - m.y1, m.x2 - m.x1);
+          /* A ponta é desenhada à mão em vez de <marker> porque marker exige
+             um id único por documento, e várias figuras convivem na mesma
+             página — ids repetidos fariam uma herdar a ponta da outra. */
+          const p1 = [m.x2 - 4.5 * Math.cos(ang - 0.42), m.y2 - 4.5 * Math.sin(ang - 0.42)];
+          const p2 = [m.x2 - 4.5 * Math.cos(ang + 0.42), m.y2 - 4.5 * Math.sin(ang + 0.42)];
+          return (
+            <g>
+              <line x1={m.x1} y1={m.y1} x2={m.x2} y2={m.y2}
+                stroke={cor} strokeWidth="1.6" strokeLinecap="round" opacity="0.85" />
+              <polygon points={`${m.x2},${m.y2} ${p1[0]},${p1[1]} ${p2[0]},${p2[1]}`}
+                fill={cor} opacity="0.85" />
+            </g>
+          );
+        })()}
 
         {/* rótulos com seta */}
         {figura.anotacoes.map((a, i) => (

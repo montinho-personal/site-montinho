@@ -48,6 +48,15 @@ export interface Figura {
   referencia?: [number, number, number, number];
   /** A medida, quando o teste tem uma. */
   medida?: { x1: number; x2: number; y: number; rotulo: string };
+  /**
+   * A seta de movimento, para as figuras de exercício.
+   *
+   * Nos testes o assunto é uma POSIÇÃO, e a figura parada basta. Num exercício
+   * o assunto é o movimento, e uma figura parada mostra metade — a pessoa vê
+   * onde chegar e não para onde ir. A seta resolve isso sem precisar de duas
+   * figuras nem de animação.
+   */
+  movimento?: { x1: number; y1: number; x2: number; y2: number };
   anotacoes: Anotacao[];
   /** Descrição textual equivalente, para quem usa leitor de tela. */
   alt: string;
@@ -293,4 +302,287 @@ export const FIGURAS: Record<string, [Figura, Figura]> = {
 
 export function figurasDoTeste(testeId: string): [Figura, Figura] | null {
   return FIGURAS[testeId] ?? null;
+}
+
+/**
+ * As figuras dos exercícios — uma por exercício, não um par.
+ *
+ * A diferença para os testes é deliberada. Lá o par certo/erro existe porque
+ * uma medida feita torto invalida tudo o que vem depois. Aqui o card já traz
+ * "Como", "Você deve sentir" e "Evite" em texto ao lado, e o desenho tem outro
+ * trabalho: mostrar a FORMA da posição e para onde o movimento vai.
+ *
+ * Por isso estas figuras não têm rótulo nenhum. Elas aparecem pequenas, do
+ * lado do texto, e rótulo de 5 pixels não se lê — seria enfeite fingindo ser
+ * informação. O que a figura precisa comunicar nesse tamanho é silhueta e
+ * direção, e é só isso que ela tenta.
+ */
+export const FIGURAS_EXERCICIO: Record<string, Figura> = {
+  // ── Tornozelo ───────────────────────────────────────────────────────────
+  "knee-to-wall-dinamico": {
+    tipo: "certo",
+    titulo: "Joelho na parede",
+    cenario: [{ tipo: "parede-esq" }, { tipo: "chao" }],
+    segmentos: [
+      [32, 88, 46, 88],
+      [40, 88, 26, 62],
+      [26, 62, 58, 48],
+      [58, 48, 56, 25],
+      [58, 48, 70, 66],
+      [70, 66, 74, 88],
+      [70, 88, 82, 88],
+      [56, 27, 32, 36],
+    ],
+    cabeca: { cx: 55, cy: 18, r: 5.2 },
+    destaque: { cx: 45, cy: 87 },
+    movimento: { x1: 40, y1: 55, x2: 26, y2: 58 },
+    anotacoes: [],
+    alt: "De frente para a parede, com o pé inteiro no chão, o joelho avança até tocar a parede e volta, num movimento contínuo.",
+  },
+  "dorsiflexao-afundo": {
+    tipo: "certo",
+    titulo: "Balanço no afundo",
+    cenario: [{ tipo: "chao" }],
+    segmentos: [
+      [22, 88, 36, 88],
+      [30, 88, 26, 62],
+      [26, 62, 52, 50],
+      [52, 50, 50, 26],
+      [52, 50, 68, 68],
+      [68, 68, 78, 84],
+      [76, 88, 86, 88],
+      [50, 30, 34, 44],
+    ],
+    cabeca: { cx: 49, cy: 19, r: 5.2 },
+    destaque: { cx: 27, cy: 62 },
+    movimento: { x1: 40, y1: 58, x2: 24, y2: 58 },
+    anotacoes: [],
+    alt: "Em posição de afundo, com o pé da frente inteiro no chão, o joelho da frente avança sobre o pé e volta.",
+  },
+  "panturrilha-joelho-reto": {
+    tipo: "certo",
+    titulo: "Panturrilha, joelho estendido",
+    cenario: [{ tipo: "parede-esq" }, { tipo: "chao" }],
+    segmentos: [
+      [34, 88, 46, 88],
+      [40, 88, 44, 62],
+      [44, 62, 52, 44],
+      [52, 44, 50, 22],
+      [52, 44, 78, 84],
+      [74, 88, 88, 88],
+      [50, 25, 28, 32],
+    ],
+    cabeca: { cx: 49, cy: 15, r: 5.2 },
+    destaque: { cx: 79, cy: 87 },
+    anotacoes: [],
+    alt: "De pé com as mãos na parede, a perna de trás fica completamente estendida, numa linha reta do quadril ao calcanhar, que permanece apoiado no chão.",
+  },
+  "panturrilha-joelho-flexionado": {
+    tipo: "certo",
+    titulo: "Panturrilha, joelho dobrado",
+    cenario: [{ tipo: "parede-esq" }, { tipo: "chao" }],
+    segmentos: [
+      [34, 88, 46, 88],
+      [40, 88, 44, 62],
+      [44, 62, 52, 44],
+      [52, 44, 50, 22],
+      [52, 44, 72, 56],
+      [72, 56, 74, 84],
+      [70, 88, 84, 88],
+      [50, 25, 28, 32],
+    ],
+    cabeca: { cx: 49, cy: 15, r: 5.2 },
+    destaque: { cx: 73, cy: 56 },
+    anotacoes: [],
+    alt: "A mesma posição, mas com o joelho de trás nitidamente dobrado e o calcanhar ainda apoiado no chão. É a dobra do joelho que muda o alvo do alongamento.",
+  },
+
+  // ── Ombro ───────────────────────────────────────────────────────────────
+  "wall-slide": {
+    tipo: "certo",
+    titulo: "Deslize na parede",
+    cenario: [{ tipo: "parede-dir" }, { tipo: "chao" }],
+    segmentos: [
+      [70, 28, 70, 54],
+      [70, 54, 65, 71],
+      [65, 71, 65, 88],
+      [57, 88, 69, 88],
+      [70, 30, 58, 22],
+      [58, 22, 68, 12],
+    ],
+    cabeca: { cx: 67, cy: 21, r: 5.2 },
+    destaque: { cx: 71, cy: 50 },
+    movimento: { x1: 50, y1: 30, x2: 50, y2: 12 },
+    anotacoes: [],
+    alt: "De costas para a parede, com a lombar encostada, os antebraços deslizam para cima ao longo da parede e voltam.",
+  },
+  "flexao-ombro-bastao": {
+    tipo: "certo",
+    titulo: "Braços acima da cabeça",
+    cenario: [{ tipo: "chao" }],
+    segmentos: [
+      [50, 30, 50, 56],
+      [50, 56, 42, 72],
+      [42, 72, 42, 88],
+      [50, 56, 58, 72],
+      [58, 72, 58, 88],
+      [36, 88, 46, 88],
+      [54, 88, 64, 88],
+      [50, 32, 30, 20],
+      [50, 32, 70, 20],
+      [26, 16, 74, 16],
+    ],
+    cabeca: { cx: 50, cy: 22, r: 5.2 },
+    destaque: { cx: 50, cy: 16 },
+    movimento: { x1: 50, y1: 40, x2: 50, y2: 24 },
+    anotacoes: [],
+    alt: "De pé, segurando um bastão com as mãos afastadas, os braços sobem por cima da cabeça e vão para trás até onde for confortável.",
+  },
+  "peitoral-porta": {
+    tipo: "certo",
+    titulo: "Abertura na porta",
+    cenario: [{ tipo: "parede-esq" }, { tipo: "chao" }],
+    segmentos: [
+      [50, 46, 46, 66],
+      [46, 66, 44, 88],
+      [50, 46, 60, 66],
+      [60, 66, 62, 88],
+      [38, 88, 50, 88],
+      [56, 88, 68, 88],
+      [50, 46, 50, 28],
+      [50, 30, 34, 30],
+      [34, 30, 26, 40],
+    ],
+    cabeca: { cx: 52, cy: 20, r: 5.2 },
+    destaque: { cx: 40, cy: 30 },
+    movimento: { x1: 62, y1: 40, x2: 74, y2: 40 },
+    anotacoes: [],
+    alt: "Com o antebraço apoiado no batente da porta e o cotovelo na altura do ombro, o corpo dá um passo à frente e gira levemente para o lado oposto.",
+  },
+
+  // ── Torácica ────────────────────────────────────────────────────────────
+  /**
+   * Vista de cima, como no teste de rotação torácica — e pelo mesmo motivo: a
+   * primeira versão, desenhada de lado, virou um emaranhado de linhas que não
+   * se lia como pessoa deitada. De cima, o braço que varre é imediato.
+   */
+  "open-book": {
+    tipo: "certo",
+    titulo: "Abrir o livro",
+    cenario: [],
+    segmentos: [
+      [34, 74, 66, 74],
+      [50, 74, 50, 52],
+      [50, 56, 24, 48],
+    ],
+    cabeca: { cx: 50, cy: 47, r: 5.5 },
+    destaque: { cx: 50, cy: 58 },
+    referencia: [50, 56, 78, 60],
+    movimento: { x1: 74, y1: 32, x2: 28, y2: 32 },
+    anotacoes: [],
+    alt: "Visto de cima: deitado de lado com os joelhos empilhados e parados, o braço de cima parte da posição à frente do corpo e varre até o outro lado.",
+  },
+  "rotacao-quatro-apoios": {
+    tipo: "certo",
+    titulo: "Giro em quatro apoios",
+    cenario: [{ tipo: "chao" }],
+    segmentos: [
+      [34, 60, 66, 56],
+      [34, 60, 30, 88],
+      [66, 56, 72, 88],
+      [26, 88, 38, 88],
+      [66, 88, 78, 88],
+      [38, 58, 44, 38],
+      [44, 38, 34, 30],
+    ],
+    cabeca: { cx: 28, cy: 54, r: 5.2 },
+    destaque: { cx: 44, cy: 38 },
+    movimento: { x1: 54, y1: 40, x2: 46, y2: 30 },
+    anotacoes: [],
+    alt: "Em quatro apoios, com uma mão atrás da cabeça, o cotovelo gira para cima acompanhando o olhar e depois desce por baixo do corpo.",
+  },
+
+  // ── Quadril ─────────────────────────────────────────────────────────────
+  /**
+   * Também de cima. No chão, o 90/90 é definido pelo ÂNGULO das duas pernas —
+   * e ângulo é exatamente o que uma vista lateral esconde.
+   */
+  "noventa-noventa": {
+    tipo: "certo",
+    titulo: "90/90",
+    cenario: [],
+    segmentos: [
+      [50, 60, 50, 44],
+      [50, 60, 26, 60],
+      [26, 60, 26, 84],
+      [50, 60, 74, 60],
+      [74, 60, 74, 34],
+    ],
+    cabeca: { cx: 50, cy: 39, r: 5.2 },
+    destaque: { cx: 50, cy: 60 },
+    movimento: { x1: 30, y1: 92, x2: 70, y2: 92 },
+    anotacoes: [],
+    alt: "Visto de cima: sentado no chão com uma perna à frente e outra ao lado, ambas dobradas a noventa graus. Os dois joelhos giram juntos para o outro lado e voltam.",
+  },
+  "rock-back-adutor": {
+    tipo: "certo",
+    titulo: "Balanço com a perna aberta",
+    cenario: [{ tipo: "chao" }],
+    segmentos: [
+      [34, 58, 64, 56],
+      [34, 58, 30, 88],
+      [64, 56, 70, 82],
+      [26, 88, 38, 88],
+      [64, 56, 86, 86],
+      [80, 88, 92, 88],
+    ],
+    cabeca: { cx: 28, cy: 52, r: 5.2 },
+    destaque: { cx: 78, cy: 74 },
+    movimento: { x1: 48, y1: 44, x2: 66, y2: 44 },
+    anotacoes: [],
+    alt: "Em quatro apoios, com uma perna estendida para o lado e o pé no chão, o quadril senta para trás e volta.",
+  },
+
+  // ── Cadeia posterior ────────────────────────────────────────────────────
+  "posterior-deitado": {
+    tipo: "certo",
+    titulo: "Perna reta, deitado",
+    cenario: [{ tipo: "chao" }],
+    segmentos: [
+      [24, 80, 52, 80],
+      [52, 80, 70, 82],
+      [70, 82, 86, 82],
+      [52, 80, 63, 57],
+      [63, 57, 74, 34],
+      [74, 34, 79, 31],
+      [30, 78, 50, 52],
+      [50, 52, 66, 50],
+    ],
+    cabeca: { cx: 18, cy: 76, r: 5.2 },
+    destaque: { cx: 63, cy: 57 },
+    anotacoes: [],
+    alt: "Deitado de barriga para cima, uma perna sobe com o joelho estendido e as mãos seguram atrás da coxa, enquanto a outra perna fica apoiada no chão.",
+  },
+  "hinge-controlado": {
+    tipo: "certo",
+    titulo: "Dobradiça de quadril",
+    cenario: [{ tipo: "chao" }],
+    segmentos: [
+      [46, 46, 44, 68],
+      [44, 68, 42, 88],
+      [36, 88, 48, 88],
+      [46, 46, 70, 34],
+      [68, 36, 64, 56],
+      [70, 34, 78, 31],
+    ],
+    cabeca: { cx: 82, cy: 29, r: 5.2 },
+    destaque: { cx: 46, cy: 46 },
+    movimento: { x1: 40, y1: 46, x2: 24, y2: 52 },
+    anotacoes: [],
+    alt: "De pé com os joelhos levemente dobrados, o quadril empurra para trás mantendo as costas retas, até sentir a parte de trás da coxa, e volta.",
+  },
+};
+
+export function figuraDoExercicio(id: string): Figura | null {
+  return FIGURAS_EXERCICIO[id] ?? null;
 }
