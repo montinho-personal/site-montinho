@@ -70,51 +70,63 @@ export interface Figura {
  * parece certo na cabeça sai torto na tela.
  */
 export const FIGURAS: Record<string, [Figura, Figura]> = {
+  /**
+   * Posição de meio ajoelhado, como o Montinho pediu: o joelho de trás fica
+   * APOIADO no chão. É a forma padrão do weight-bearing lunge test para
+   * autoaplicação — sem equilíbrio para administrar, sobra atenção para o que
+   * importa, que é o calcanhar da frente.
+   */
   "knee-to-wall": [
     {
       tipo: "certo",
       titulo: "Assim",
       cenario: [{ tipo: "parede-esq" }, { tipo: "chao" }],
       segmentos: [
+        // pé da frente + canela: joelho avança e encosta na parede
         [32, 88, 46, 88],
-        [40, 88, 24, 62],
-        [24, 62, 58, 48],
-        [58, 48, 56, 25],
-        [58, 48, 70, 66],
-        [70, 66, 74, 88],
-        [70, 88, 82, 88],
-        [56, 27, 32, 36],
+        [40, 88, 24, 64],
+        // coxa da frente, subindo para o quadril
+        [24, 64, 56, 56],
+        // tronco ereto
+        [56, 56, 55, 30],
+        // coxa de trás: do quadril ao joelho APOIADO no chão
+        [56, 56, 68, 86],
+        // canela de trás deitada no chão, pé atrás
+        [68, 86, 84, 86],
+        // braço apoiando na parede
+        [55, 33, 30, 40],
       ],
-      cabeca: { cx: 55, cy: 18, r: 5.2 },
+      cabeca: { cx: 54, cy: 23, r: 5.2 },
       destaque: { cx: 45, cy: 87 },
       medida: { x1: 22, x2: 32, y: 92, rotulo: "meça aqui" },
       anotacoes: [
-        { texto: "joelho encosta", x: 30, y: 44, seta: { x: 25, y: 60 }, ancora: "start" },
-        { texto: "calcanhar no chão", x: 94, y: 78, seta: { x: 47, y: 86 }, ancora: "end" },
+        { texto: "joelho encosta", x: 30, y: 48, seta: { x: 25, y: 62 }, ancora: "start" },
+        { texto: "calcanhar no chão", x: 94, y: 74, seta: { x: 47, y: 86 }, ancora: "end" },
+        { texto: "joelho apoiado", x: 94, y: 96, seta: { x: 70, y: 88 }, ancora: "end" },
       ],
-      alt: "Pessoa de lado, de frente para uma parede, com o pé da frente inteiro no chão e o joelho avançado até tocar a parede. O calcanhar está apoiado. A medida é a distância entre o dedão e a parede.",
+      alt: "Pessoa meio ajoelhada de frente para uma parede: o joelho de trás está apoiado no chão, o pé da frente fica inteiro no chão e o joelho da frente avança até tocar a parede. O calcanhar da frente permanece apoiado, e a medida é a distância entre o dedão e a parede.",
     },
     {
       tipo: "erro",
       titulo: "Assim não",
       cenario: [{ tipo: "parede-esq" }, { tipo: "chao" }],
       segmentos: [
+        // mesmo desenho, mas o calcanhar da frente subiu
         [32, 88, 48, 81],
-        [41, 84, 24, 60],
-        [24, 60, 58, 47],
-        [58, 47, 56, 25],
-        [58, 47, 70, 65],
-        [70, 65, 74, 88],
-        [70, 88, 82, 88],
-        [56, 27, 32, 35],
+        [41, 84, 24, 62],
+        [24, 62, 56, 55],
+        [56, 55, 55, 30],
+        [56, 55, 68, 86],
+        [68, 86, 84, 86],
+        [55, 33, 30, 39],
       ],
-      cabeca: { cx: 55, cy: 18, r: 5.2 },
+      cabeca: { cx: 54, cy: 23, r: 5.2 },
       destaque: { cx: 47, cy: 83 },
       anotacoes: [
-        { texto: "calcanhar subiu", x: 94, y: 73, seta: { x: 48, y: 82 }, ancora: "end" },
+        { texto: "calcanhar subiu", x: 94, y: 72, seta: { x: 48, y: 82 }, ancora: "end" },
         { texto: "a medida não vale", x: 50, y: 97, ancora: "middle" },
       ],
-      alt: "A mesma posição, mas com o calcanhar da frente levantado do chão. Quando isso acontece, a medida não é válida.",
+      alt: "A mesma posição meio ajoelhada, mas com o calcanhar da frente levantado do chão. Quando isso acontece, a medida não é válida.",
     },
   ],
 

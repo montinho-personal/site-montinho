@@ -68,7 +68,7 @@ export const TESTES: TesteMobilidade[] = [
       "É a amplitude que permite o joelho avançar sobre o pé. Aparece em quase todo movimento de perna em que você desce.",
     bilateral: true,
     posicaoInicial:
-      "De frente para uma parede, um pé à frente, o dedão apontando para ela. O outro pé fica atrás, para apoio.",
+      "Ajoelhe de frente para uma parede, com um pé à frente e o dedão apontando para ela. O joelho da perna de trás fica APOIADO no chão — é ele que dá a estabilidade para você medir sem se equilibrar.",
     movimento:
       "Sem tirar o calcanhar da frente do chão, leve o joelho até encostar na parede. Se encostar fácil, afaste o pé e tente de novo. Pare na maior distância em que o joelho ainda encosta com o calcanhar no chão.",
     erroComum:
