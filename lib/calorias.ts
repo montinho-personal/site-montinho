@@ -327,6 +327,15 @@ export const AVISO_META_BAIXA =
  */
 export const ARTIGOS_COM_CALCULADORA_DEFICIT: string[] = [
   /**
+   * O bloco sazonal de projeto verão. Todos terminam na mesma pergunta —
+   * "quanto eu preciso cortar e em quanto tempo dá" — e nenhum tinha a
+   * conta na página. É a ferramenta que responde a intenção de busca
+   * inteira desse cluster.
+   */
+  "projeto-verao-ainda-da-tempo-setembro",
+  "como-reduzir-gordura-corporal-rapidamente",
+  "plano-para-chegar-em-forma-no-verao",
+  /**
    * A resposta mais frequente para "por que não consigo emagrecer" é que a
    * pessoa não está no déficit que imagina estar. O artigo explica o
    * mecanismo; a calculadora entrega o número que falta.

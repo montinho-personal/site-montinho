@@ -844,6 +844,13 @@ export const SEM_VARIACAO =
  * "Cardápio Semanal para..." a segunda pergunta é a do título.
  */
 export const ARTIGOS_COM_CALCULADORA_CARDAPIO: string[] = [
+  /**
+   * Dois artigos que terminam em "e o que eu ponho no prato". O de verão
+   * porque definição é execução alimentar; o do pré-treino porque a dúvida
+   * de horário só se resolve dentro de um dia inteiro planejado.
+   */
+  "como-definir-corpo-ate-o-verao",
+  "o-que-comer-antes-do-treino",
   "cardapio-semanal-emagrecer-com-musculo",
   "cardapio-semanal-ganho-de-massa-muscular",
   "cardapio-para-hipertrofia",

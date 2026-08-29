@@ -484,6 +484,11 @@ export const ARTIGOS_COM_LINK_VOLUME: string[] = [
   "descansar-tambem-faz-crescer",
   /* 31 links: frequência e volume são as duas faces da mesma conta. */
   "quantos-dias-por-semana-treinar",
+  /* A duração da sessão é consequência do volume — o artigo faz essa conta
+     em prosa, e a ferramenta faz com a ficha real da pessoa. */
+  "duracao-ideal-do-treino",
+  /* Treino de grupo muscular: mesmo critério dos outros quatro da lista. */
+  "treino-de-posterior-de-coxa",
   "treino-de-peito-hipertrofia",
   "treino-de-costas-hipertrofia",
   "treino-de-perna-completo",
