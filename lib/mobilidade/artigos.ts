@@ -49,6 +49,26 @@ export const ARTIGOS_COM_TESTE_MOBILIDADE: Record<string, ConviteArtigo> = {
       "Se você passa o dia sentado e sente o corpo rígido, o teste diz quais regiões pedem atenção primeiro. São cinco minutos, e o protocolo cabe em seis — feito para caber num dia de trabalho, não numa academia.",
     rotulo: "Ver o que trabalhar primeiro",
   },
+  /**
+   * O cluster editorial escrito para sustentar a ferramenta. Estes três
+   * saíram depois dela e entram aqui já registrados — quando a chave de
+   * lançamento abrir, o convite aparece sem ninguém precisar lembrar.
+   */
+  "mobilidade-de-tornozelo": {
+    texto:
+      "Você acabou de ler como medir um tornozelo. O teste completo mede cinco regiões em cinco minutos, cruza o resultado com os exercícios que você faz e devolve um protocolo de dois ou três exercícios — com a dose que a literatura sustenta.",
+    rotulo: "Fazer o teste completo",
+  },
+  "mobilidade-de-quadril": {
+    texto:
+      "Quadril é uma das cinco regiões que o teste avalia. Fazendo as cinco você descobre qual delas pede atenção primeiro — porque trabalhar duas de cada vez funciona melhor que atacar todas.",
+    rotulo: "Ver minhas cinco regiões",
+  },
+  "flexibilidade-e-musculacao": {
+    texto:
+      "Se a conclusão é que você deve alongar pouco e direcionado, falta a parte difícil: saber onde. O teste mede cinco regiões e devolve as duas que valem o seu tempo — dentro dos dez minutos semanais que a evidência aponta.",
+    rotulo: "Descobrir onde direcionar",
+  },
   "dor-no-ombro-ao-treinar": {
     texto:
       "Levar o braço acima da cabeça sem compensar com a lombar exige uma amplitude que nem todo mundo tem. O teste mede a sua. Ele não investiga dor — para isso o caminho é avaliação individual —, mas mostra o que dá para trabalhar.",
