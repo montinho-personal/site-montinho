@@ -209,6 +209,8 @@ export type AnalyticsEvent =
   | "routine_volume_click"
   | "routine_article_click"
   | "routine_diagnostic_click"
+  | "routine_plan_copied"
+  | "routine_plan_saved"
   | "routine_ask_click"
   | "routine_service_click"
   | "routine_whatsapp_click"

@@ -128,6 +128,7 @@ export default function RotinaQuiz() {
   const [respostas, setRespostas] = useState<Partial<RotinaAnswers>>({});
   const [plan, setPlan] = useState<RotinaPlan | null>(null);
   const [diasEscolhidos, setDiasEscolhidos] = useState<number[]>([]);
+  const [copiado, setCopiado] = useState(false);
   const [agendaFeita, setAgendaFeita] = useState(false);
   const topoRef = useRef<HTMLDivElement>(null);
   const meioTrackRef = useRef(false);
@@ -573,6 +574,53 @@ export default function RotinaQuiz() {
           </ul>
         </div>
       )}
+
+      {/* Levar o plano embora — o mesmo par de ações do cardápio, porque a
+          jornada da dieta termina com algo na mão e a do treino terminava só
+          com a tela. Copiar cobre o WhatsApp e as notas; imprimir cobre o PDF
+          e o papel colado na geladeira. */}
+      <div className="flex flex-wrap items-center gap-3 border-t border-white/10 pt-5 print:hidden">
+        <button
+          type="button"
+          onClick={() => {
+            const linhas = [
+              `Minha rotina de treino — ${plan.structureName}`,
+              `${plan.sessoesPorSemana}x por semana · ${plan.duracaoAlvo}`,
+              agendaFeita && diasEscolhidos.length > 0
+                ? `Meus dias: ${diasEscolhidos.map((i) => DIAS_SEMANA[i]).join(", ")}`
+                : "",
+              "",
+              "Semana:",
+              ...plan.semana
+                .filter((d) => d.sessao)
+                .map((d) => `${d.dia}: ${d.sessao}`),
+              "",
+              `Por que essa estrutura: ${plan.porque}`,
+              plan.planoB ? `Plano B (semana apertada): ${plan.planoB.texto}` : "",
+              "",
+              "Montado no Treino Para Minha Rotina — montinhopersonal.com.br/treino-para-minha-rotina",
+            ].filter((l) => l !== "");
+            navigator.clipboard?.writeText(linhas.join("\n")).then(() => {
+              setCopiado(true);
+              setTimeout(() => setCopiado(false), 2500);
+            });
+            trackEvent("routine_plan_copied", { routine_structure: plan.structureId });
+          }}
+          className="px-4 py-2.5 min-h-[44px] border border-white/25 text-gray-200 text-sm hover:border-white/50 transition-colors"
+        >
+          {copiado ? "Copiado ✓" : "Copiar meu plano"}
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            trackEvent("routine_plan_saved", { routine_structure: plan.structureId });
+            window.print();
+          }}
+          className="px-4 py-2.5 min-h-[44px] border border-white/25 text-gray-200 text-sm hover:border-white/50 transition-colors"
+        >
+          Imprimir / salvar PDF
+        </button>
+      </div>
 
       <div className="flex items-center justify-between">
         <p className="text-gray-500 text-xs max-w-md leading-relaxed">
