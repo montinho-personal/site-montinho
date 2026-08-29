@@ -105,6 +105,41 @@ export function normalizaNumero(texto: string): number | null {
 }
 
 export const PERCENTUAIS_GORDURA = [20, 25, 30, 35] as const;
+
+/**
+ * Para quem cada opção serve, em português de gente.
+ *
+ * "1,6 g/kg" e "Referência eficaz" são precisos e não dizem nada para quem
+ * nunca ouviu falar em grama por quilo. Quem chega aqui não quer escolher
+ * entre três números — quer saber qual é o seu. Estas frases respondem isso,
+ * e a tela mostra o resultado em gramas ao lado, para o número abstrato virar
+ * comida.
+ */
+export const PARA_QUEM_PROTEINA: Record<string, string> = {
+  eficaz: "Se você treina e quer o básico bem feito",
+  pratica: "Se você está emagrecendo ou quer margem de sobra",
+  superior: "Se o corte é agressivo ou você já treina há anos",
+};
+
+export const PARA_QUEM_GORDURA: Record<number, string> = {
+  20: "Sobra mais carboidrato para treinar pesado",
+  25: "Meio-termo entre energia e saciedade",
+  30: "Confortável para a maioria das pessoas",
+  35: "Segura mais a fome ao longo do dia",
+};
+
+/**
+ * O que a escolha de gordura realmente faz.
+ *
+ * A confusão mais comum é achar que mais gordura significa mais calorias.
+ * Não significa: o total já está fixado. O que muda é de onde ele vem — e
+ * dizer isso em uma frase evita a pergunta que todo iniciante faz.
+ */
+export const EXPLICA_TROCA =
+  "As calorias do dia são as mesmas nas quatro opções. O que muda é quanto sobra para o carboidrato: mais gordura, menos carboidrato — e vice-versa.";
+
+export const EXPLICA_PROTEINA_SIMPLES =
+  "Quanto de proteína por quilo do seu peso. Não existe um número certo para todo mundo — as três estão dentro da faixa que funciona.";
 export const GORDURA_PADRAO = 30;
 export const REFEICOES = [3, 4, 5, 6] as const;
 
@@ -230,6 +265,18 @@ export function guardaKcalParaMacros(kcal: number): void {
 
 export function consomeKcalDeDeficit(): number | null {
   return consomeNumero(PONTE.kcal, KCAL_MIN, KCAL_MAX);
+}
+
+/**
+ * Déficit/TDEE → Macros: traz o peso que a pessoa já informou lá atrás.
+ *
+ * Esta função faltava, e a falta era invisível no código: o déficit GRAVA o
+ * peso na ponte desde sempre, mas ninguém do lado dos macros lia. O valor
+ * ficava na sessão até expirar, e a pessoa que acabou de digitar peso, altura
+ * e idade na tela anterior era recebida com o campo de peso vazio.
+ */
+export function consomePesoDeDeficit(): number | null {
+  return consomeNumero(PONTE.peso, PESO_MIN, PESO_MAX);
 }
 
 /** Macros → Proteína: leva o peso já informado. */

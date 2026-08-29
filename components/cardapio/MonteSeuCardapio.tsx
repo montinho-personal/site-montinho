@@ -447,14 +447,14 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                     trackEvent("meal_planner_special_continue", { placement });
                     setE((a) => ({ ...a, consentiu: true }));
                   }}
-                  className="bg-white text-black px-6 py-3.5 font-semibold min-h-[52px]"
+                  className="bg-white text-black px-6 py-3.5 text-[15px] font-semibold min-h-[52px]"
                 >
                   Entendi — quero ver a simulação
                 </button>
                 <Link
                   href="/pergunte-ao-montinho"
                   onClick={() => trackEvent("meal_article_click", { placement, destino: "ask" })}
-                  className="border border-white/25 text-gray-200 px-6 py-3.5 font-medium min-h-[52px] flex items-center hover:border-white/50 transition-colors"
+                  className="border border-white/25 text-gray-200 px-6 py-3.5 text-[15px] font-medium min-h-[52px] flex items-center hover:border-white/50 transition-colors"
                 >
                   Prefiro tirar dúvidas antes
                 </Link>
