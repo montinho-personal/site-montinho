@@ -5353,7 +5353,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/progressao-de-carga-infographic.svg" alt="Infográfico sobre Progressão de Carga: O Principal Motor da Hipertrofia (e Como Aplicar) — Montinho Personal Trainer" title="Progressão de Carga: O Principal Motor da Hipertrofia (e Com" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/progressao-de-carga-capa.webp" alt="Arte de capa ilustrada sobre progressão de carga ao longo das semanas de treino" title="Progressão de Carga — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Progressão de carga: o principal motor da hipertrofia.</figcaption>
 </figure>
 <p>Esse é o problema. Sem progressão sistemática, o corpo não tem motivo para mudar. O organismo se adapta ao estímulo ao qual é exposto — e quando o estímulo não muda, a adaptação para.</p>
 
@@ -21324,7 +21325,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-agachamento-livre-corretamente-infographic.svg" alt="Infográfico sobre Como Fazer Agachamento Livre Corretamente: Técnica Passo a Passo — Montinho Personal Trainer" title="Como Fazer Agachamento Livre Corretamente: Técnica Passo a P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-agachamento-livre-corretamente-capa.webp" alt="Arte de capa ilustrada: execução do agachamento livre com barra, com destaque para postura e profundidade" title="Como Fazer Agachamento Livre Corretamente — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Agachamento livre: postura, profundidade e execução segura.</figcaption>
 </figure>
 <h2>Benefícios do agachamento livre</h2>
 <ul>
@@ -21447,7 +21449,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-levantamento-terra-corretamente-infographic.svg" alt="Infográfico sobre Como Fazer Levantamento Terra Corretamente: Técnica e Erros Fatais — Montinho Personal Trainer" title="Como Fazer Levantamento Terra Corretamente: Técnica e Erros " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-levantamento-terra-corretamente-capa.webp" alt="Arte de capa ilustrada: execução do levantamento terra com coluna neutra, barra próxima ao corpo, quadril para trás e pés firmes no chão" title="Como Fazer Levantamento Terra Corretamente — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Levantamento terra: técnica, postura e execução segura.</figcaption>
 </figure>
 <h2>Modalidades do levantamento terra</h2>
 <ul>
@@ -30236,7 +30239,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/recomposicao-corporal-infographic.svg" alt="Infográfico sobre Recomposição Corporal: É Possível Ganhar Músculo e Perder Gordura ao Mesmo Tempo — Montinho Personal Trainer" title="Recomposição Corporal: É Possível Ganhar Músculo e Perder Go" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/recomposicao-corporal-capa.webp" alt="Arte de capa ilustrada mostrando perda de gordura e ganho de músculo ao mesmo tempo, com destaque para treino, proteína e consistência" title="Recomposição Corporal — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Recomposição corporal: perder gordura e ganhar músculo ao mesmo tempo.</figcaption>
 </figure>
 <p>A realidade, como quase sempre em fisiologia, é mais nuançada. <strong>Recomposição corporal é possível — mas não para todo mundo, não o tempo todo, e não da mesma forma.</strong></p>
 
@@ -32736,7 +32740,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-de-gluteos-feminino-infographic.svg" alt="Infográfico sobre Treino de Glúteos para Mulheres: Guia Completo com Ciência e Prática — Montinho Personal Trainer" title="Treino de Glúteos para Mulheres: Guia Completo com Ciência e" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-de-gluteos-feminino-capa.webp" alt="Arte de capa ilustrada: mulher executando elevação de quadril com barra, com destaque para glúteos, força e construção" title="Treino de Glúteos Feminino — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino de glúteos: força e construção com os exercícios certos.</figcaption>
 </figure>
 <p>A diferença não está no esforço. Está na estratégia.</p>
 
@@ -33789,7 +33794,8 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-de-costas-hipertrofia-infographic.svg" alt="Infográfico sobre Treino de Costas para Hipertrofia: Exercícios, Séries e Técnica — Montinho Personal Trainer" title="Treino de Costas para Hipertrofia: Exercícios, Séries e Técn" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-de-costas-hipertrofia-capa.webp" alt="Arte de capa ilustrada de treino de costas para hipertrofia, com puxadas e remadas" title="Treino de Costas para Hipertrofia — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino de costas: os movimentos que constroem espessura e largura.</figcaption>
 </figure>
 <p>Um treino de costas bem montado não apenas constrói músculo — muda completamente a silhueta, melhora a postura e reduz dores crônicas na região.</p>
 
@@ -34221,7 +34227,8 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/alimentos-ricos-em-proteina-infographic.svg" alt="Infográfico sobre Alimentos Ricos em Proteína: Lista Completa para Ganhar Músculo — Montinho Personal Trainer" title="Alimentos Ricos em Proteína: Lista Completa para Ganhar Músc" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/alimentos-ricos-em-proteina-capa.webp" alt="Arte de capa ilustrada com fontes de proteína — ovos, frango, carne, iogurte e whey" title="Alimentos Ricos em Proteína — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Fontes de proteína para saciedade e recuperação muscular.</figcaption>
 </figure>
 <p>Para alguém de 70 kg, isso significa 112 a 154g de proteína diária. Parece muito — até você saber quais alimentos usar.</p>
 
@@ -36261,7 +36268,8 @@ Ativa de forma mais uniforme as porções superior e inferior. Boa variação pa
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-de-perna-completo-infographic.svg" alt="Infográfico sobre Treino de Perna Completo: Quadríceps, Posterior, Glúteo e Panturrilha — Montinho Personal Trainer" title="Treino de Perna Completo: Quadríceps, Posterior, Glúteo e Pa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-de-perna-completo-capa.webp" alt="Arte de capa ilustrada de treino de perna completo, cobrindo quadríceps, posteriores e panturrilhas" title="Treino de Perna Completo — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino de perna completo: quadríceps, posteriores e panturrilhas.</figcaption>
 </figure>
 <p>Este guia cobre cada componente do treino de perna com a estratégia correta para desenvolvimento completo.</p>
 
@@ -45713,7 +45721,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/cardapio-semanal-emagrecer-com-musculo-infographic.svg" alt="Infográfico sobre Cardápio Semanal para Emagrecer Sem Perder Músculo: 7 Dias Completos — Montinho Personal Trainer" title="Cardápio Semanal para Emagrecer Sem Perder Músculo: 7 Dias C" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/cardapio-semanal-emagrecer-com-musculo-capa.webp" alt="Arte de capa ilustrada de cardápio semanal para emagrecer preservando massa muscular" title="Cardápio Semanal para Emagrecer com Músculo — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Cardápio da semana para perder gordura sem perder músculo.</figcaption>
 </figure>
 <h2>Princípios do Cardápio</h2>
 <ul>
@@ -48861,7 +48870,8 @@ Verdade: A maior vantagem é preventiva. Iniciar antes da dor aparecer evita sem
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-calcular-tmb-tdee-calorias-infographic.svg" alt="Infográfico sobre Como Calcular Seu Gasto Calórico (TMB e TDEE): Guia Prático com Fórmulas — Montinho Personal Trainer" title="Como Calcular Seu Gasto Calórico (TMB e TDEE): Guia Prático " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-calcular-tmb-tdee-calorias-capa.webp" alt="Arte de capa ilustrada sobre cálculo de TMB, TDEE e necessidade calórica diária" title="Como Calcular TMB, TDEE e Calorias — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">TMB, TDEE e calorias: como chegar ao seu número de verdade.</figcaption>
 </figure>
 <h2>O Que é TMB (Taxa Metabólica Basal)</h2>
 <p>A TMB é o número de calorias que seu corpo queima apenas para manter as funções vitais em repouso absoluto: respiração, bombeamento cardíaco, temperatura corporal, síntese proteica basal, funcionamento neurológico. Representa 60-70% do gasto calórico total de uma pessoa sedentária.</p>
