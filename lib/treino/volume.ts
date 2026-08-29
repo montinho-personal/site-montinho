@@ -468,8 +468,22 @@ export const ARTIGOS_COM_CALCULADORA_VOLUME: string[] = [
    */
 ];
 
-/** Artigos de treino por grupo: recebem só um link contextual. */
+/**
+ * Artigos de treino por grupo: recebem só um link contextual.
+ *
+ * Aqui também entram artigos muito linkados cujo tema encosta em volume sem
+ * ser sobre volume. O registro do embed está no teto de oito e o teste de
+ * seletividade existe justamente para impedir a ferramenta de parecer
+ * espalhada por todo lado — então o link é a forma certa de servir esses
+ * leitores sem furar a regra.
+ */
 export const ARTIGOS_COM_LINK_VOLUME: string[] = [
+  /* 68 links internos: o erro de volume mal distribuído é um dos sete. */
+  "erros-comuns-no-treino-de-musculacao",
+  /* 41 links: a demanda de recuperação sai do volume que se faz. */
+  "descansar-tambem-faz-crescer",
+  /* 31 links: frequência e volume são as duas faces da mesma conta. */
+  "quantos-dias-por-semana-treinar",
   "treino-de-peito-hipertrofia",
   "treino-de-costas-hipertrofia",
   "treino-de-perna-completo",

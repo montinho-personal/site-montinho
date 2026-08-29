@@ -242,6 +242,12 @@ export const NOTA_FONTES =
  *   um número errado pesa mais, então a explicação em texto serve melhor.
  */
 export const ARTIGOS_COM_CALCULADORA: string[] = [
+  /**
+   * O artigo diz que proteína alta é o fator mais importante para preservar
+   * músculo no déficit — e para toda pessoa isso vira a pergunta "alta
+   * quanto?". A calculadora responde ali, sem tirar ninguém da leitura.
+   */
+  "como-manter-massa-muscular-emagrecendo",
   "quanta-proteina-por-dia-para-ganhar-massa-muscular",
   "quanto-de-proteina-consumir",
   "alimentos-ricos-em-proteina",

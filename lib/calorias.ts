@@ -326,6 +326,12 @@ export const AVISO_META_BAIXA =
  * "quanto eu gasto?", não "quanto cortar?". Uma ferramenta por artigo.
  */
 export const ARTIGOS_COM_CALCULADORA_DEFICIT: string[] = [
+  /**
+   * A resposta mais frequente para "por que não consigo emagrecer" é que a
+   * pessoa não está no déficit que imagina estar. O artigo explica o
+   * mecanismo; a calculadora entrega o número que falta.
+   */
+  "por-que-voce-nao-consegue-emagrecer",
   "deficit-calorico-como-calcular",
   "quantas-calorias-cortar-para-emagrecer",
   /**
