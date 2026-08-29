@@ -25,6 +25,11 @@ import {
   REFERENCIA_PROTEINA,
   calculaMacros,
   consomeKcalDeDeficit,
+  consomePesoDeDeficit,
+  EXPLICA_PROTEINA_SIMPLES,
+  EXPLICA_TROCA,
+  PARA_QUEM_GORDURA,
+  PARA_QUEM_PROTEINA,
   dentroDoAMDR,
   formataNumero,
   guardaKcalParaMacros,
@@ -73,12 +78,23 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
   const raiz = useRef<HTMLDivElement>(null);
   const jaCompletou = useRef(false);
 
-  /** Calorias vindas da Calculadora de Déficit, se a pessoa veio de lá. */
+  /**
+   * Dados vindos da Calculadora de Déficit ou de TMB/TDEE.
+   *
+   * As duas gravam calorias E peso ao mandar a pessoa para cá. Ler só as
+   * calorias — que era o comportamento anterior — obrigava quem tinha acabado
+   * de informar o peso na tela anterior a digitá-lo de novo.
+   */
   const [veioDoDeficit, setVeioDoDeficit] = useState(false);
   useEffect(() => {
     const kcal = consomeKcalDeDeficit();
+    const p = consomePesoDeDeficit();
     if (kcal !== null) {
       setKcalTexto(String(kcal));
+      setVeioDoDeficit(true);
+    }
+    if (p !== null) {
+      setPesoTexto(String(p));
       setVeioDoDeficit(true);
     }
   }, []);
@@ -242,11 +258,22 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
                 )}
                 {String(f.gPorKg).replace(".", ",")} g/kg
               </span>
-              <span className="block text-[11px] text-gray-500 font-normal">{f.titulo}</span>
+              {/* O peso em gramas ao lado do g/kg: é o que transforma uma
+                  unidade abstrata em quantidade de comida. Só aparece quando
+                  há peso — antes disso não há o que calcular. */}
+              {pesoOk && peso ? (
+                <span className="block text-[13px] font-semibold" style={{ color: "#BA9E50" }}>
+                  = {Math.round(f.gPorKg * peso)} g por dia
+                </span>
+              ) : null}
+              <span className="block text-[11px] text-gray-400 font-normal leading-snug">
+                {PARA_QUEM_PROTEINA[f.id] ?? f.titulo}
+              </span>
             </button>
           ))}
         </div>
-        <p className="text-gray-400 text-sm mt-2 leading-relaxed">{NOTA_PROTEINA_FAIXAS}</p>
+        <p className="text-gray-300 text-sm mt-2 leading-relaxed">{EXPLICA_PROTEINA_SIMPLES}</p>
+        <p className="text-gray-500 text-[13px] mt-1.5 leading-relaxed">{NOTA_PROTEINA_FAIXAS}</p>
       </fieldset>
 
       <fieldset className="mb-7">
@@ -261,18 +288,29 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
                 trackEvent("macro_fat_change", { placement });
               }}
               aria-pressed={pctGordura === p}
-              className={chip(pctGordura === p)}
+              className={`${chip(pctGordura === p)} flex-col items-start !py-2.5`}
             >
-              {pctGordura === p && (
-                <span aria-hidden="true" style={{ color: "#BA9E50" }}>
-                  ✓{" "}
+              <span className="flex items-center">
+                {pctGordura === p && (
+                  <span aria-hidden="true" style={{ color: "#BA9E50" }}>
+                    ✓{" "}
+                  </span>
+                )}
+                {p}%
+              </span>
+              {kcalOk && kcal ? (
+                <span className="block text-[13px] font-semibold" style={{ color: "#BA9E50" }}>
+                  = {Math.round((kcal * p) / 100 / 9)} g por dia
                 </span>
-              )}
-              {p}%
+              ) : null}
+              <span className="block text-[11px] text-gray-400 font-normal leading-snug">
+                {PARA_QUEM_GORDURA[p]}
+              </span>
             </button>
           ))}
         </div>
-        <p className="text-gray-400 text-sm mt-2 leading-relaxed">
+        <p className="text-gray-300 text-sm mt-2 leading-relaxed">{EXPLICA_TROCA}</p>
+        <p className="text-gray-500 text-[13px] mt-1.5 leading-relaxed">
           Faixa de referência para adultos: {AMDR.gordura.min}–{AMDR.gordura.max}% da energia.
         </p>
       </fieldset>
