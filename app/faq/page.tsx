@@ -145,7 +145,7 @@ export default function FAQ() {
         <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-2xl sm:text-3xl font-bold text-white mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Ainda tem dúvidas?
           </h2>

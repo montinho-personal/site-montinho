@@ -65,7 +65,7 @@ export default function DiagnosticoPage() {
           </p>
           <h1
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Descubra qual estratégia de treino combina com você
           </h1>
@@ -93,7 +93,7 @@ export default function DiagnosticoPage() {
             <div>
               <h2
                 className="text-2xl font-bold text-white mb-4"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 O que é o Diagnóstico Montinho
               </h2>
@@ -116,7 +116,7 @@ export default function DiagnosticoPage() {
             <div>
               <h2
                 className="text-2xl font-bold text-white mb-4"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 Como funciona
               </h2>
@@ -134,7 +134,7 @@ export default function DiagnosticoPage() {
             <div>
               <h2
                 className="text-2xl font-bold text-white mb-4"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 Por que rotina e frequência importam mais do que o treino perfeito
               </h2>
@@ -168,7 +168,7 @@ export default function DiagnosticoPage() {
             <div>
               <h2
                 className="text-2xl font-bold text-white mb-4"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 E depois do diagnóstico?
               </h2>
@@ -198,7 +198,7 @@ export default function DiagnosticoPage() {
             <div>
               <h2
                 className="text-2xl font-bold text-white mb-4"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 Quem criou o Diagnóstico Montinho
               </h2>

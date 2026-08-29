@@ -215,7 +215,7 @@ export default async function BlogPost({ params }: Props) {
 
           <h1
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             {post.title}
           </h1>
@@ -313,7 +313,7 @@ export default async function BlogPost({ params }: Props) {
             <div className="mt-16 pt-10 border-t border-white/10">
               <h2
                 className="text-2xl font-bold text-white mb-6"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 5 Dicas para acabar com dores no lombar
               </h2>
@@ -359,7 +359,7 @@ export default async function BlogPost({ params }: Props) {
             <div className="bg-white/[0.03] border border-white/10 px-8 py-7">
               <h2
                 className="text-lg font-bold text-white mb-4"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 Quer transformar seu corpo?
               </h2>
@@ -413,7 +413,7 @@ export default async function BlogPost({ params }: Props) {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2
               className="text-xl font-bold text-white mb-8"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
             >
               Artigos relacionados
             </h2>
@@ -427,7 +427,7 @@ export default async function BlogPost({ params }: Props) {
                   <span className="text-xs text-gray-400 tracking-wide uppercase">{rp.category}</span>
                   <h3
                     className="text-white font-semibold mt-2 mb-2 group-hover:text-gray-200 transition-colors"
-                    style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                    style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
                   >
                     {rp.title}
                   </h3>

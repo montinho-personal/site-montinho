@@ -149,7 +149,7 @@ console.log("\n" + "=".repeat(64) + "\nO DIAGNÓSTICO ENTREGA O PASSO 2\n" + "="
 console.log("\n" + "=".repeat(64) + "\nRÓTULOS EM CAIXA ALTA NUNCA HERDAM A SERIFADA\n" + "=".repeat(64));
 
 /**
- * O CSS global põe Playfair em todo h1–h6. Em título grande isso é a
+ * O CSS global põe a serifada em todo h1–h6. Em título grande isso é a
  * identidade do site; em rótulo pequeno em caixa alta é ilegível — foi
  * reclamação real de uso. Todo heading pequeno uppercase precisa declarar
  * a fonte sans explicitamente.

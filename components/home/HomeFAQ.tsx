@@ -38,7 +38,7 @@ export default function HomeFAQ() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2
           className="text-white text-3xl font-bold mb-2 text-center"
-          style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
         >
           Perguntas Frequentes
         </h2>

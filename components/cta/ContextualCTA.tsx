@@ -155,7 +155,7 @@ export default function ContextualCTA({
           de headings do artigo, que o Google usa para entender a estrutura. */}
       <p
         className="text-white font-bold text-lg sm:text-xl leading-snug mb-2"
-        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+        style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
       >
         <strong className="font-bold">{cta.title}</strong>
       </p>

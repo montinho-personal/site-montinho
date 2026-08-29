@@ -47,7 +47,7 @@ const breadcrumbSchema = {
 };
 
 const ln = "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
-const h2s = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
+const h2s = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 
 export default function TreinoParaMinhaRotinaPage() {
   return (

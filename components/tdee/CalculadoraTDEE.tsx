@@ -59,7 +59,7 @@ import {
  * eventos de analytics registram uso, jamais valores.
  */
 
-const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
+const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 
 const SEXOS: { id: Sexo; rotulo: string }[] = [
   { id: "masculino", rotulo: "Masculino" },

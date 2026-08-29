@@ -37,7 +37,7 @@ export default function Contato() {
           </p>
           <h1
             className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-5"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Primeiro contato. Sem compromisso.
           </h1>
@@ -75,7 +75,7 @@ export default function Contato() {
             <div>
               <p
                 className="text-white text-2xl font-bold mb-1 group-hover:text-gray-100 transition-colors"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 Falar no WhatsApp
               </p>

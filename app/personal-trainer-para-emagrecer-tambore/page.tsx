@@ -89,7 +89,7 @@ export default function PersonalTrainerEmagrecerTambore() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Personal trainer para emagrecer em Tamboré: resultado que fica.
           </h1>
@@ -115,7 +115,7 @@ export default function PersonalTrainerEmagrecerTambore() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Já fui exatamente onde muitos dos meus alunos estão agora.
           </h2>
@@ -150,7 +150,7 @@ export default function PersonalTrainerEmagrecerTambore() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Como o emagrecimento acontece com acompanhamento de personal em Tamboré
           </h2>
@@ -209,7 +209,7 @@ export default function PersonalTrainerEmagrecerTambore() {
           </p>
           <h2
             className="text-3xl font-bold text-white mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dúvidas sobre personal trainer para emagrecer em Tamboré
           </h2>
@@ -229,7 +229,7 @@ export default function PersonalTrainerEmagrecerTambore() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Chega de tentar sozinho em Tamboré.
           </h2>

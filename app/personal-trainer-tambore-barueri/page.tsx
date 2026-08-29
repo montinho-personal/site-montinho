@@ -89,7 +89,7 @@ export default function PersonalTrainerTamboreBarueri() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Personal trainer em Tamboré e Barueri: 20 anos na região, um método que funciona.
           </h1>
@@ -115,7 +115,7 @@ export default function PersonalTrainerTamboreBarueri() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Conheço cada canto de Tamboré e Barueri. Isso muda o protocolo.
           </h2>
@@ -156,7 +156,7 @@ export default function PersonalTrainerTamboreBarueri() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Onde atendo em Tamboré, Barueri e região
           </h2>
@@ -205,7 +205,7 @@ export default function PersonalTrainerTamboreBarueri() {
           </p>
           <h2
             className="text-3xl font-bold text-white mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dúvidas sobre personal trainer em Tamboré e Barueri
           </h2>
@@ -225,7 +225,7 @@ export default function PersonalTrainerTamboreBarueri() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Tamboré ou Barueri — estou perto de você.
           </h2>

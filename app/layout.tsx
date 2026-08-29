@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, Playfair_Display } from "next/font/google";
+import { DM_Sans, Source_Serif_4 } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/layout/Header";
@@ -15,8 +15,24 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+/**
+ * A fonte dos títulos.
+ *
+ * Era Playfair Display, e a troca não foi questão de gosto. Playfair é uma
+ * didone: contraste altíssimo entre o traço grosso e o fino. Num site de
+ * fundo preto com texto branco, o traço fino some — o branco "vaza" sobre o
+ * preto e come a parte mais delicada da letra —, e o olho tem que remontar a
+ * forma a cada palavra. Cansa, e no celular cansa mais.
+ *
+ * Source Serif 4 foi desenhada para tela: contraste baixo, hastes de espessura
+ * parecida, aberturas largas. Mantém o ar editorial e aguenta o fundo escuro.
+ *
+ * A variável se chama --font-titulo, e não --font-<nome da fonte>, justamente
+ * porque batizá-la com o nome da fonte foi o que fez esta troca tocar em
+ * dezenas de arquivos.
+ */
+const serifTitulo = Source_Serif_4({
+  variable: "--font-titulo",
   subsets: ["latin"],
   display: "swap",
 });
@@ -158,7 +174,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${dmSans.variable} ${playfair.variable}`}
+      className={`${dmSans.variable} ${serifTitulo.variable}`}
     >
       <head>
         {/* Google Tag Manager — o mais alto possível no <head> (snippet oficial) */}

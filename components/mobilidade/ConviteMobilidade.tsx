@@ -33,7 +33,7 @@ export default function ConviteMobilidade({ slug }: { slug: string }) {
       </p>
       <p
         className="text-white font-bold text-xl mb-2"
-        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+        style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
       >
         Destrave Seu Corpo
       </p>

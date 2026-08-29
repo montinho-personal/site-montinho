@@ -121,7 +121,7 @@ export default function PersonalTrainerAlphaville() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Personal Trainer em Alphaville que conhece a sua rotina de dentro.
           </h1>
@@ -147,7 +147,7 @@ export default function PersonalTrainerAlphaville() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Vivo em Alphaville há mais de 20 anos. Conheço esse lugar como poucos.
           </h2>
@@ -189,7 +189,7 @@ export default function PersonalTrainerAlphaville() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Treino presencial em Alphaville: como é trabalhar comigo
           </h2>
@@ -253,7 +253,7 @@ export default function PersonalTrainerAlphaville() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Para quem é esse trabalho
           </h2>
@@ -299,7 +299,7 @@ export default function PersonalTrainerAlphaville() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Atendimento em toda a região de Alphaville
           </h2>
@@ -400,7 +400,7 @@ export default function PersonalTrainerAlphaville() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Quem treina em Alphaville — e como aproveitar melhor a região
           </h2>
@@ -446,7 +446,7 @@ export default function PersonalTrainerAlphaville() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             O que um treinamento personalizado entrega — e em quanto tempo
           </h2>
@@ -487,7 +487,7 @@ export default function PersonalTrainerAlphaville() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dores e limitações não são motivo para parar de treinar
           </h2>
@@ -518,7 +518,7 @@ export default function PersonalTrainerAlphaville() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             5 Dicas para acabar com dores no lombar
           </h2>
@@ -537,7 +537,7 @@ export default function PersonalTrainerAlphaville() {
           </p>
           <h2
             className="text-3xl font-bold text-white mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dúvidas sobre personal trainer em Alphaville
           </h2>
@@ -557,7 +557,7 @@ export default function PersonalTrainerAlphaville() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Pronto para começar em Alphaville?
           </h2>

@@ -233,7 +233,7 @@ export default function Consultoria() {
           </p>
           <h1
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Treino personalizado com acompanhamento de verdade
           </h1>
@@ -279,7 +279,7 @@ export default function Consultoria() {
               <div key={i}>
                 <p
                   className="text-2xl sm:text-3xl font-bold text-white mb-1"
-                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                  style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
                 >
                   {item.value}
                 </p>
@@ -327,7 +327,7 @@ export default function Consultoria() {
                 {/* Title */}
                 <h2
                   className="text-2xl font-bold text-white mb-1"
-                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                  style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
                 >
                   {service.title}
                 </h2>
@@ -400,7 +400,7 @@ export default function Consultoria() {
                   <span
                     className="text-5xl font-bold"
                     style={{
-                      fontFamily: "var(--font-playfair), Georgia, serif",
+                      fontFamily: "var(--font-titulo), Georgia, serif",
                       // Mesmo critério da home: 3,80:1, visível e secundário.
                       color: "rgba(186, 158, 80, 0.65)",
                     }}
@@ -410,7 +410,7 @@ export default function Consultoria() {
                 </div>
                 <h3
                   className="text-white font-semibold text-lg mb-3"
-                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                  style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
                 >
                   {step.title}
                 </h3>
@@ -430,7 +430,7 @@ export default function Consultoria() {
             </p>
             <p
               className="text-white font-bold text-xl sm:text-2xl leading-snug mb-3"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
             >
               Quer experimentar como eu olho para uma execução?
             </p>
@@ -470,7 +470,7 @@ export default function Consultoria() {
                 <summary className="cursor-pointer list-none flex items-center justify-between gap-4">
                   <span
                     className="text-white font-semibold text-base"
-                    style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                    style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
                   >
                     {item.question}
                   </span>
@@ -490,7 +490,7 @@ export default function Consultoria() {
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl sm:text-4xl font-bold text-black mb-5"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Não sabe qual modalidade escolher?
           </h2>

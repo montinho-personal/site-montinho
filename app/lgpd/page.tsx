@@ -38,7 +38,7 @@ export default function LGPD() {
           </p>
           <h1
             className="text-3xl sm:text-4xl font-bold text-white mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Política de Privacidade
           </h1>

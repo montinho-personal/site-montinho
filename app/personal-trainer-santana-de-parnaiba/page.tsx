@@ -124,7 +124,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Personal Trainer em Santana de Parnaíba para quem quer resultado — não apenas movimento.
           </h1>
@@ -150,7 +150,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Conheço Santana de Parnaíba desde quando era diferente.
           </h2>
@@ -193,7 +193,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Onde atendo em Santana de Parnaíba
           </h2>
@@ -260,7 +260,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Condomínios e academias que atendo em Santana de Parnaíba
           </h2>
@@ -298,7 +298,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Como funciona o treinamento personalizado em Santana de Parnaíba
           </h2>
@@ -329,7 +329,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dores e limitações não precisam te afastar do treino
           </h2>
@@ -357,7 +357,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             O que muda quando o treino é realmente personalizado
           </h2>
@@ -416,7 +416,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl font-bold text-white mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Quem são meus alunos em Santana de Parnaíba
           </h2>
@@ -483,7 +483,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dicas para treinar melhor em Santana de Parnaíba
           </h2>
@@ -508,7 +508,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             5 Dicas para acabar com dores no lombar
           </h2>
@@ -527,7 +527,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           </p>
           <h2
             className="text-3xl font-bold text-white mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dúvidas sobre personal trainer em Santana de Parnaíba
           </h2>
@@ -547,7 +547,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             A qualidade de vida de Santana de Parnaíba começa no treino.
           </h2>

@@ -136,7 +136,7 @@ export default function ConsultoriaOnlineLP() {
               </p>
               <h1
                 className="text-4xl sm:text-5xl lg:text-[3.4rem] font-bold leading-[1.08] mb-6"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 Consultoria online com treino personalizado — criada por quem já{" "}
                 <span className="text-[#BA9E50]">perdeu 40kg</span>.
@@ -176,7 +176,7 @@ export default function ConsultoriaOnlineLP() {
                   Minha própria transformação
                 </span>
                 <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/80 to-transparent pt-14 pb-5 px-5 text-center">
-                  <p className="text-white font-bold text-lg leading-snug" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                  <p className="text-white font-bold text-lg leading-snug" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
                     A mesma pessoa. <span className="text-[#BA9E50]">40kg de diferença.</span>
                   </p>
                   <p className="text-gray-300 text-sm mt-1">
@@ -191,7 +191,7 @@ export default function ConsultoriaOnlineLP() {
         {/* ───────────────────── 2. PROVA SOCIAL ───────────────────── */}
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-6xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Resultados reais, de pessoas reais
             </h2>
             <p className="text-center text-gray-300 mb-10 max-w-2xl mx-auto">
@@ -202,7 +202,7 @@ export default function ConsultoriaOnlineLP() {
             <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-12 text-center">
               {[["-40kg", "na própria pele"], ["20+", "anos de musculação"], ["5.0 ★", `${testimonials.totalReviews} avaliações Google`]].map(([n, d]) => (
                 <div key={n} className="border border-white/10 rounded-2xl py-5 px-2 bg-black/40">
-                  <p className="text-[#BA9E50] text-2xl sm:text-3xl font-bold" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>{n}</p>
+                  <p className="text-[#BA9E50] text-2xl sm:text-3xl font-bold" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>{n}</p>
                   <p className="text-gray-300 text-xs mt-1">{d}</p>
                 </div>
               ))}
@@ -228,7 +228,7 @@ export default function ConsultoriaOnlineLP() {
                 <figure key={a.src} className="relative aspect-square rounded-2xl overflow-hidden border border-white/10">
                   <Image src={a.src} alt={a.alt} fill loading="lazy" sizes="(max-width: 640px) 90vw, 400px" className="object-cover" />
                   <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/85 to-transparent pt-12 pb-4 px-4 text-center">
-                    <p className="text-white font-bold text-lg" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                    <p className="text-white font-bold text-lg" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
                       {a.name} · <span className="text-[#BA9E50]">{a.kg}</span>
                     </p>
                     <p className="text-gray-300 text-xs mt-0.5">{a.frase}</p>
@@ -258,7 +258,7 @@ export default function ConsultoriaOnlineLP() {
         {/* ───────────────────── 3. OBJEÇÃO CENTRAL: ONLINE FUNCIONA? ───────────────────── */}
         <section className="py-16 border-t border-white/10">
           <div className="max-w-4xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               &ldquo;Mas consultoria online funciona?&rdquo;
             </h2>
             <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
@@ -290,7 +290,7 @@ export default function ConsultoriaOnlineLP() {
         {/* ───────────────────── 4. O QUE VOCÊ RECEBE ───────────────────── */}
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-5xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Tudo o que está incluso na sua consultoria
             </h2>
             <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
@@ -325,7 +325,7 @@ export default function ConsultoriaOnlineLP() {
         {/* ───────────────────── 5. COMO FUNCIONA ───────────────────── */}
         <section className="py-16 border-t border-white/10">
           <div className="max-w-5xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Como funciona a consultoria online
             </h2>
             <ol className="grid sm:grid-cols-5 gap-4 text-center">
@@ -367,7 +367,7 @@ export default function ConsultoriaOnlineLP() {
               </figure>
             </div>
             <div className="md:col-span-3">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
                 Eu não aprendi isso em livro. Eu vivi.
               </h2>
               <p className="text-gray-300 leading-relaxed mb-3">
@@ -395,7 +395,7 @@ export default function ConsultoriaOnlineLP() {
         {/* ───────────────────── 7. COMPARATIVO ───────────────────── */}
         <section className="py-16 border-t border-white/10">
           <div className="max-w-4xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Por que essa consultoria é diferente?
             </h2>
             <div className="grid sm:grid-cols-2 gap-6">
@@ -428,7 +428,7 @@ export default function ConsultoriaOnlineLP() {
         {/* ───────────────────── 8. PARA QUEM É / NÃO É ───────────────────── */}
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-5xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Essa consultoria é para você?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -477,7 +477,7 @@ export default function ConsultoriaOnlineLP() {
         <section className="py-16 border-t border-white/10">
           <div className="max-w-3xl mx-auto px-5 sm:px-8 text-center">
             <span className="text-4xl">🛡️</span>
-            <h2 className="text-3xl sm:text-4xl font-bold mt-4 mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-3xl sm:text-4xl font-bold mt-4 mb-4" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Comece sem risco
             </h2>
             <p className="text-gray-300 leading-relaxed max-w-xl mx-auto mb-2">
@@ -496,7 +496,7 @@ export default function ConsultoriaOnlineLP() {
         {/* ───────────────────── 10. FAQ ───────────────────── */}
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-3xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Suas dúvidas, respondidas
             </h2>
             <div className="space-y-3">
@@ -522,7 +522,7 @@ export default function ConsultoriaOnlineLP() {
             <div className="relative w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-2 border-[#BA9E50]">
               <Image src="/montinho-personal-trainer-shape.jpg" alt="Montinho Personal Trainer" fill loading="lazy" sizes="128px" className="object-cover" />
             </div>
-            <h2 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               A distância nunca foi<br className="hidden sm:block" /> o seu problema.
             </h2>
             <p className="text-gray-300 text-lg mb-4 max-w-xl mx-auto">

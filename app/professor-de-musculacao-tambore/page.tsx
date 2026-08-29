@@ -89,7 +89,7 @@ export default function ProfessorMusculacaoTambore() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Professor de musculação em Tamboré: técnica certa, progressão real.
           </h1>
@@ -115,7 +115,7 @@ export default function ProfessorMusculacaoTambore() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Mais de 20 anos ensinando musculação em Tamboré e Alphaville.
           </h2>
@@ -150,7 +150,7 @@ export default function ProfessorMusculacaoTambore() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Por que musculação com professor individual em Tamboré faz diferença
           </h2>
@@ -187,7 +187,7 @@ export default function ProfessorMusculacaoTambore() {
           </p>
           <h2
             className="text-3xl font-bold text-white mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dúvidas sobre professor de musculação em Tamboré
           </h2>
@@ -207,7 +207,7 @@ export default function ProfessorMusculacaoTambore() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Pronto para treinar musculação do jeito certo em Tamboré?
           </h2>

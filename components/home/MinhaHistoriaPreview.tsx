@@ -30,7 +30,7 @@ export default function MinhaHistoriaPreview() {
 
             <h2
               className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
             >
               Eu já estive do outro lado.
             </h2>
@@ -56,7 +56,7 @@ export default function MinhaHistoriaPreview() {
             <blockquote className="border-l-2 border-white/30 pl-5 py-1">
               <p
                 className="text-white text-lg italic leading-relaxed"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 "Resultados reais. Sem fórmulas mágicas."
               </p>

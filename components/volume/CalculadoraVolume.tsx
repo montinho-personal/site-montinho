@@ -48,7 +48,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
  * uso recorrente. Nada é enviado a lugar nenhum, e há um botão para apagar.
  */
 
-const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
+const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const CHAVE = "montinho:volume:treino:v1";
 
 let contador = 0;

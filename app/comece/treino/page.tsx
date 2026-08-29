@@ -39,7 +39,7 @@ const breadcrumbSchema = {
   ],
 };
 
-const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
+const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const sans = { fontFamily: "var(--font-inter), sans-serif" } as const;
 
 const DETALHES: Record<string, { entrega: string; detalhe: string }> = {

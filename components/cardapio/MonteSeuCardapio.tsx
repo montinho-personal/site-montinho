@@ -64,7 +64,7 @@ import {
  * registram funil, nunca resposta.
  */
 
-const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
+const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const CHAVE = "montinho:cardapio:v1";
 
 type Etapa =

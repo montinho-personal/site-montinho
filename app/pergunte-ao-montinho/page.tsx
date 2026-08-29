@@ -71,7 +71,7 @@ export default function PergunteAoMontinhoPage() {
           </p>
           <h1
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Pergunte ao Montinho
           </h1>
@@ -101,7 +101,7 @@ export default function PergunteAoMontinhoPage() {
           <div>
             <h2
               className="text-2xl font-bold text-white mb-4"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
             >
               O que é o Pergunte ao Montinho
             </h2>
@@ -118,7 +118,7 @@ export default function PergunteAoMontinhoPage() {
           <div>
             <h2
               className="text-2xl font-bold text-white mb-4"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
             >
               Que tipo de dúvida ele responde
             </h2>
@@ -136,7 +136,7 @@ export default function PergunteAoMontinhoPage() {
           <div>
             <h2
               className="text-2xl font-bold text-white mb-4"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
             >
               De onde vêm as respostas — e os limites
             </h2>
@@ -181,7 +181,7 @@ export default function PergunteAoMontinhoPage() {
           <div>
             <h2
               className="text-2xl font-bold text-white mb-4"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
             >
               Conteúdos mais buscados
             </h2>

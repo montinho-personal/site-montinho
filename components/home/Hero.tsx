@@ -56,7 +56,7 @@ export default function Hero() {
         {/* Main Headline */}
         <h1
           className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6 max-w-5xl mx-auto lg:mx-0 lg:max-w-3xl"
-          style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
         >
           Transforme seu corpo.{" "}
           <span style={{ color: "#BA9E50" }}>Sem fórmulas mágicas.</span>
@@ -113,17 +113,17 @@ export default function Hero() {
         {/* Social proof */}
         <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 text-gray-400">
           <div className="flex items-center gap-2">
-            <span className="text-white font-bold text-2xl" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>+20 anos</span>
+            <span className="text-white font-bold text-2xl" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>+20 anos</span>
             <span className="text-sm">de experiência em musculação</span>
           </div>
           <div className="hidden sm:block w-px h-8 bg-white/20" />
           <div className="flex items-center gap-2">
-            <span className="text-white font-bold text-2xl" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>100+</span>
+            <span className="text-white font-bold text-2xl" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>100+</span>
             <span className="text-sm">alunos transformados</span>
           </div>
           <div className="hidden sm:block w-px h-8 bg-white/20" />
           <div className="flex items-center gap-2">
-            <span className="text-white font-bold text-2xl" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Online</span>
+            <span className="text-white font-bold text-2xl" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>Online</span>
             <span className="text-sm">em todo o Brasil</span>
           </div>
         </div>

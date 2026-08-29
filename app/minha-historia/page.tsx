@@ -59,7 +59,7 @@ export default function MinhaHistoria() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Eu já estive do outro lado.
           </h1>
@@ -92,7 +92,7 @@ export default function MinhaHistoria() {
             <section>
               <h2
                 className="text-2xl sm:text-3xl font-bold text-white mb-5"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 O menino que sorria por fora
               </h2>
@@ -141,7 +141,7 @@ export default function MinhaHistoria() {
             <div className="border-l-2 border-white/20 pl-6 py-2">
               <p
                 className="text-white text-xl italic leading-relaxed"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 "Cresci acreditando que o problema era eu. Levei anos para
                 entender que o problema era a abordagem."
@@ -151,7 +151,7 @@ export default function MinhaHistoria() {
             <section>
               <h2
                 className="text-2xl sm:text-3xl font-bold text-white mb-5"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 O efeito sanfona que me destruía
               </h2>
@@ -203,7 +203,7 @@ export default function MinhaHistoria() {
             <section>
               <h2
                 className="text-2xl sm:text-3xl font-bold text-white mb-5"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 A virada: decidir entender de vez
               </h2>
@@ -232,7 +232,7 @@ export default function MinhaHistoria() {
                 <div>
                   <p
                     className="text-3xl font-bold text-white mb-1"
-                    style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                    style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
                   >
                     +40kg
                   </p>
@@ -241,7 +241,7 @@ export default function MinhaHistoria() {
                 <div>
                   <p
                     className="text-3xl font-bold text-white mb-1"
-                    style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                    style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
                   >
                     +20 anos
                   </p>
@@ -250,7 +250,7 @@ export default function MinhaHistoria() {
                 <div>
                   <p
                     className="text-3xl font-bold text-white mb-1"
-                    style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                    style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
                   >
                     100+
                   </p>
@@ -262,7 +262,7 @@ export default function MinhaHistoria() {
             <section>
               <h2
                 className="text-2xl sm:text-3xl font-bold text-white mb-5"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 A transformação que mudou tudo
               </h2>
@@ -323,7 +323,7 @@ export default function MinhaHistoria() {
             <section>
               <h2
                 className="text-2xl sm:text-3xl font-bold text-white mb-5"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 Por que me tornei Personal Trainer
               </h2>
@@ -352,7 +352,7 @@ export default function MinhaHistoria() {
             <div className="border-l-2 border-white/30 pl-6 py-2">
               <p
                 className="text-white text-xl italic leading-relaxed"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 "Não é sobre ter o corpo perfeito. É sobre ter um corpo que
                 respeita, que tem energia, que te permite viver plenamente."
@@ -362,7 +362,7 @@ export default function MinhaHistoria() {
             <section>
               <h2
                 className="text-2xl sm:text-3xl font-bold text-white mb-5"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 O que me diferencia
               </h2>
@@ -401,7 +401,7 @@ export default function MinhaHistoria() {
             <section>
               <h2
                 className="text-2xl sm:text-3xl font-bold text-white mb-5"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 O que aprendi no caminho
               </h2>
@@ -445,7 +445,7 @@ export default function MinhaHistoria() {
           <div className="mt-16 pt-12 border-t border-white/10 text-center">
             <p
               className="text-white text-xl sm:text-2xl italic leading-relaxed mb-8 max-w-2xl mx-auto"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
             >
               &ldquo;Seu shape merece um chalalá. E fazendo o que precisa ser
               feito, é impossível dar errado.&rdquo;

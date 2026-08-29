@@ -114,7 +114,7 @@ export default function PersonalTrainerBarueri() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Personal Trainer em Barueri que entrega resultado — não apenas presença.
           </h1>
@@ -140,7 +140,7 @@ export default function PersonalTrainerBarueri() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Barueri cresceu. A exigência por qualidade também.
           </h2>
@@ -186,7 +186,7 @@ export default function PersonalTrainerBarueri() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Como o treino personalizado funciona na prática
           </h2>
@@ -244,7 +244,7 @@ export default function PersonalTrainerBarueri() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl font-bold text-white mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Objetivos que trabalho com meus alunos em Barueri
           </h2>
@@ -297,7 +297,7 @@ export default function PersonalTrainerBarueri() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Onde e como o treino acontece
           </h2>
@@ -351,7 +351,7 @@ export default function PersonalTrainerBarueri() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Bairros e regiões de Barueri onde atendo
           </h2>
@@ -415,7 +415,7 @@ export default function PersonalTrainerBarueri() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Quem treina comigo em Barueri — e como aproveitar melhor a cidade
           </h2>
@@ -446,7 +446,7 @@ export default function PersonalTrainerBarueri() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Treinar com dor não é normal — e não precisa ser sua realidade
           </h2>
@@ -477,7 +477,7 @@ export default function PersonalTrainerBarueri() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             5 Dicas para acabar com dores no lombar
           </h2>
@@ -496,7 +496,7 @@ export default function PersonalTrainerBarueri() {
           </p>
           <h2
             className="text-3xl font-bold text-white mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dúvidas sobre personal trainer em Barueri
           </h2>
@@ -516,7 +516,7 @@ export default function PersonalTrainerBarueri() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Vamos conversar sobre o que você quer alcançar?
           </h2>

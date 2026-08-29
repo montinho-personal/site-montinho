@@ -34,7 +34,7 @@ export default async function BuscaPage({ searchParams }: Props) {
           </p>
           <h1
             className="text-3xl sm:text-4xl font-bold text-white mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             {query
               ? <>Resultados para <span className="text-gray-300">&ldquo;{query}&rdquo;</span></>
@@ -98,7 +98,7 @@ function ResultsList({
 
             <h2
               className="text-white text-xl font-bold leading-snug mb-3 group-hover:text-gray-200 transition-colors duration-200"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
             >
               <HighlightText text={r.title} query={query} />
             </h2>
@@ -198,7 +198,7 @@ function EmptyState({ query }: { query: string }) {
               </span>
               <h3
                 className="text-white text-base font-bold leading-snug mt-3 group-hover:text-gray-200 transition-colors duration-200"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 {p.title}
               </h3>
