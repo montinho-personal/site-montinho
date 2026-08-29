@@ -68,6 +68,27 @@ export default function ComecePage() {
             ferramentas conectadas que te levam do zero ao plano, passo a
             passo, com seus dados atravessando sozinhos de uma para a outra.
           </p>
+
+          {/* No hub o CTA do herói não é "começar" — é ESCOLHER, porque a
+              página tem duas saídas e forçar uma seria escolher pela pessoa.
+              Os mesmos dois destinos aparecem detalhados mais abaixo; aqui
+              eles servem quem já sabe qual é o seu e não quer ler a história
+              antes. */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-8">
+            {(Object.keys(TRILHAS) as (keyof typeof TRILHAS)[]).map((id) => (
+              <Link
+                key={id}
+                href={`/comece/${id}`}
+                className="inline-flex items-center justify-center gap-2 bg-white text-black px-7 py-4 text-base font-semibold min-h-[52px] hover:opacity-90 transition-opacity w-full sm:w-auto"
+              >
+                {id === "dieta" ? "Começar pela comida" : "Começar pelo treino"}
+                <span aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
+          <p className="text-gray-500 text-sm mt-4">
+            Os dois se encontram no final. Dá para fazer os dois.
+          </p>
         </div>
       </section>
 

@@ -91,6 +91,28 @@ export default function ComeceTreinoPage() {
             cabe na sua semana, confira seu volume, saiba a carga certa — e
             termine com a sua execução conferida em vídeo, por mim, de graça.
           </p>
+
+          {/* O botão no HERÓI, e não só no rodapé.
+              A página é narrativa de propósito — a história antes dos passos
+              é o que constrói confiança em quem chega em dúvida. Mas quem
+              chega já decidido não deveria rolar oitenta por cento da página
+              para achar por onde entrar. O par atende os dois: o botão serve
+              quem quer começar, a âncora serve quem quer entender antes. */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-8">
+            <Link
+              href={passos[0].href}
+              className="inline-flex items-center justify-center gap-2 bg-white text-black px-8 py-4 text-base font-semibold min-h-[52px] hover:opacity-90 transition-opacity w-full sm:w-auto"
+            >
+              Começar agora — passo 1
+              <span aria-hidden="true">→</span>
+            </Link>
+            <a
+              href="#passos"
+              className="text-gray-300 text-sm underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors min-h-[44px] inline-flex items-center"
+            >
+              Ver os {passos.length} passos antes
+            </a>
+          </div>
         </div>
       </section>
 
@@ -116,7 +138,7 @@ export default function ComeceTreinoPage() {
       </section>
 
       {/* ── Os 5 passos ────────────────────────────────────────────── */}
-      <section className="py-14 bg-black border-b border-white/10">
+      <section id="passos" className="py-14 bg-black border-b border-white/10 scroll-mt-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-10" style={h}>
             O caminho, passo a passo
