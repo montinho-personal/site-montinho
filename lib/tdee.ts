@@ -125,6 +125,14 @@ export function comparaAtividades(tmb: Faixa): { id: string; titulo: string; fat
  * saíram do registro do déficit ao entrar aqui.
  */
 export const ARTIGOS_COM_CALCULADORA_TDEE: string[] = [
+  /**
+   * O artigo mais linkado do site inteiro (191 links internos) e, até aqui,
+   * sem ferramenta nenhuma. Quem lê sobre os pilares da hipertrofia sai
+   * sabendo que precisa de superávit e sem saber de quanto — que é
+   * exatamente a conta que esta calculadora faz, com a narrativa de ganho
+   * de massa magra já embutida.
+   */
+  "como-ganhar-massa-muscular",
   "como-calcular-tmb-tdee-calorias",
   "quantas-calorias-eu-gasto-por-dia",
   /**

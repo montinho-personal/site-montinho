@@ -276,6 +276,11 @@ export const DISCLAIMER_ESPECIAL =
  * timing ficam de fora: a dúvida ali não é a divisão do orçamento.
  */
 export const ARTIGOS_COM_CALCULADORA_MACROS: string[] = [
+  /**
+   * Quem lê sobre carboidrato no pré-treino chega na dúvida de quanto
+   * carboidrato cabe no dia — que é a divisão que os macros resolvem.
+   */
+  "carboidrato-antes-do-treino",
   "dieta-flexivel-iifym",
   "como-contar-calorias",
   "recomposicao-corporal",

@@ -29,6 +29,20 @@ export const CAMINHO_POR_ARTIGO: Record<string, CaminhoId> = {
 
   /* Geral: a decisão ainda é "vale a pena?", então mostramos os dois. */
   "vale-a-pena-comecar-academia-agora": "geral",
+
+  /*
+   * Quem está escolhendo academia já decidiu começar — o que falta é a
+   * ordem. São os artigos mais linkados do site fora dos pilares, e nenhum
+   * deles tinha para onde mandar o leitor depois da escolha feita.
+   */
+  "academia-ou-personal-trainer": "geral",
+  "como-escolher-uma-academia": "geral",
+  "academias-em-alphaville": "geral",
+  "melhor-academia-de-alphaville": "geral",
+  "academias-em-barueri": "geral",
+
+  /* Treino: já está treinando em casa, e a dúvida é como organizar. */
+  "treino-em-casa-sem-equipamento": "treino",
 };
 
 export const TITULOS: Record<CaminhoId, string> = {
