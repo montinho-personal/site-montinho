@@ -31,6 +31,19 @@ const nextConfig: NextConfig = {
         destination: "/blog/personal-trainer-aldeia-da-serra",
         permanent: true,
       },
+      /**
+       * Duplicata publicada por engano em 29/08/2026. O artigo
+       * `quando-trocar-o-treino`, de 05/08, já cobria o mesmo assunto com
+       * mais profundidade e referências — a verificação de canibalização
+       * falhou porque procurava "trocar DE treino" e o slug existente é
+       * "trocar O treino". Redirect em vez de 404 porque a página chegou a
+       * ficar no ar e pode ter sido rastreada.
+       */
+      {
+        source: "/blog/quando-trocar-de-ficha-de-treino",
+        destination: "/blog/quando-trocar-o-treino",
+        permanent: true,
+      },
       // Slugs antigos com caracteres invalidos em URL (acento / maiusculas)
       {
         source: "/blog/horm%C3%B4nios-femininos-apos-40-treino",
