@@ -89,7 +89,7 @@ export default function PersonalTrainerReabilitacaoTambore() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Personal trainer para reabilitação em Tamboré: voltar a treinar com segurança.
           </h1>
@@ -115,7 +115,7 @@ export default function PersonalTrainerReabilitacaoTambore() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Lesão antiga não precisa ser limitação permanente.
           </h2>
@@ -153,7 +153,7 @@ export default function PersonalTrainerReabilitacaoTambore() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Como funciona o recondicionamento em Tamboré
           </h2>
@@ -202,7 +202,7 @@ export default function PersonalTrainerReabilitacaoTambore() {
           </p>
           <h2
             className="text-3xl font-bold text-white mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dúvidas sobre personal trainer para reabilitação em Tamboré
           </h2>
@@ -222,7 +222,7 @@ export default function PersonalTrainerReabilitacaoTambore() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             A lesão passou. Agora é hora de reconstruir.
           </h2>

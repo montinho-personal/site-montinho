@@ -44,7 +44,7 @@ const webPageSchema = {
   },
 };
 
-const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
+const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const ln = "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
 
 const PASSOS = [
@@ -102,7 +102,7 @@ export default function RevisaoDeExecucaoPage() {
               <li key={p.n} className="border border-white/15 bg-white/[0.03] p-6">
                 <span
                   className="block text-3xl font-bold mb-2"
-                  style={{ fontFamily: "var(--font-playfair), Georgia, serif", color: "#BA9E50" }}
+                  style={{ fontFamily: "var(--font-titulo), Georgia, serif", color: "#BA9E50" }}
                   aria-hidden="true"
                 >
                   {p.n}

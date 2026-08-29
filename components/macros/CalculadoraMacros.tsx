@@ -54,7 +54,7 @@ import {
  * imediato, justamente para o número não viajar na URL.
  */
 
-const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
+const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 
 /**
  * Cores da barra. Dentro da paleta do site — dourado, off-white e bronze

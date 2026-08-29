@@ -11,7 +11,7 @@ export default function CTAFinal() {
 
         <h2
           className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black leading-tight mb-6"
-          style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
         >
           Sua transformação começa com uma conversa.
         </h2>

@@ -285,7 +285,7 @@ export default function AskMontinho({
       <div className="px-5 sm:px-8 pt-6 pb-4 border-b border-white/10">
         <p
           className="text-white font-bold text-lg"
-          style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
         >
           Pergunte ao Montinho
         </p>

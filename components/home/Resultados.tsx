@@ -64,7 +64,7 @@ export default function Resultados() {
                   <p className="text-gray-300 font-medium text-sm">{item.name}</p>
                   <span
                     className="font-bold text-sm"
-                    style={{ color: "#BA9E50", fontFamily: "var(--font-playfair), Georgia, serif" }}
+                    style={{ color: "#BA9E50", fontFamily: "var(--font-titulo), Georgia, serif" }}
                   >
                     {item.result}
                   </span>

@@ -53,7 +53,7 @@ export default function ComoFunciona() {
                   <span
                     className="text-4xl font-bold transition-colors duration-300 leading-none group-hover:!text-[#BA9E50]"
                     style={{
-                      fontFamily: "var(--font-playfair), Georgia, serif",
+                      fontFamily: "var(--font-titulo), Georgia, serif",
                       // 3,80:1 sobre preto. Número de passo é sequência, não
                       // enfeite — e em texto grande o critério AA é 3:1.
                       color: "rgba(186, 158, 80, 0.65)",
@@ -65,7 +65,7 @@ export default function ComoFunciona() {
                 <div>
                   <h3
                     className="text-white text-lg font-semibold mb-2"
-                    style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                    style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
                   >
                     {step.title}
                   </h3>

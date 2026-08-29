@@ -36,7 +36,7 @@ export default function SectionTitle({
       )}
       <h2
         className={`text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4 ${titleColor}`}
-        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+        style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
       >
         {title}
       </h2>

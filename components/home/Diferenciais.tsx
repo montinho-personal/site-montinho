@@ -86,7 +86,7 @@ export default function Diferenciais() {
               </div>
               <h3
                 className="text-white text-xl font-semibold mb-3"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 {item.title}
               </h3>

@@ -89,7 +89,7 @@ export default function PersonalTrainerFemininoTambore() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Personal trainer feminino em Tamboré: treino que entende o corpo feminino.
           </h1>
@@ -115,7 +115,7 @@ export default function PersonalTrainerFemininoTambore() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             A maioria das minhas alunas em Tamboré já tentou de tudo antes.
           </h2>
@@ -150,7 +150,7 @@ export default function PersonalTrainerFemininoTambore() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             O que o treino feminino com acompanhamento muda na prática
           </h2>
@@ -190,7 +190,7 @@ export default function PersonalTrainerFemininoTambore() {
           </p>
           <h2
             className="text-3xl font-bold text-white mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dúvidas sobre personal trainer feminino em Tamboré
           </h2>
@@ -210,7 +210,7 @@ export default function PersonalTrainerFemininoTambore() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Pronta para começar em Tamboré?
           </h2>

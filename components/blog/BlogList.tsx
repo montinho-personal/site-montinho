@@ -61,7 +61,7 @@ export default function BlogList({ posts, categories }: Props) {
 
                     <h2
                       className="text-white text-xl font-bold leading-snug mb-3 group-hover:text-gray-200 transition-colors duration-200"
-                      style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                      style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
                     >
                       {post.title}
                     </h2>

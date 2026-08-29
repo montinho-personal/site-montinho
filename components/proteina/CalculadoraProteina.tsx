@@ -31,7 +31,7 @@ import {
  * que os cards se chamam "referências", não "níveis".
  */
 
-const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
+const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 
 export default function CalculadoraProteina({
   placement,

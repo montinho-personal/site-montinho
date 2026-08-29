@@ -39,7 +39,7 @@ const breadcrumbSchema = {
   ],
 };
 
-const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
+const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const sans = { fontFamily: "var(--font-inter), sans-serif" } as const;
 
 /** O que cada passo entrega — a copy da LP, por cima da trilha canônica. */

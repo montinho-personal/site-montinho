@@ -233,7 +233,7 @@ export default function RotinaQuiz() {
         <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
           Ferramenta gratuita
         </p>
-        <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+        <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-4" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
           Quantos dias você realmente tem? Vamos começar por aí.
         </h2>
         <p className="text-gray-300 leading-relaxed mb-3 max-w-2xl">
@@ -274,7 +274,7 @@ export default function RotinaQuiz() {
         <div className="h-1 bg-white/10 mb-7" role="progressbar" aria-valuenow={Math.round(progresso)} aria-valuemin={0} aria-valuemax={100} aria-label="Progresso do questionário">
           <div className="h-full transition-all duration-300" style={{ width: `${progresso}%`, background: "#BA9E50" }} />
         </div>
-        <h3 className="text-white font-bold text-xl sm:text-2xl leading-snug mb-2" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+        <h3 className="text-white font-bold text-xl sm:text-2xl leading-snug mb-2" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
           {p.titulo}
         </h3>
         {p.sub && <p className="text-gray-400 text-sm mb-5">{p.sub}</p>}
@@ -303,7 +303,7 @@ export default function RotinaQuiz() {
     return (
       <div ref={topoRef} className="border border-white/15 bg-white/[0.03] p-6 sm:p-9">
         <p className="text-xs text-gray-400 tracking-wide mb-6">Última pergunta</p>
-        <h3 className="text-white font-bold text-xl sm:text-2xl leading-snug mb-2" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+        <h3 className="text-white font-bold text-xl sm:text-2xl leading-snug mb-2" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
           Existe alguma condição, dor ou limitação que exija adaptação individual do treino?
         </h3>
         <p className="text-gray-400 text-sm mb-6">
@@ -348,7 +348,7 @@ export default function RotinaQuiz() {
         <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#BA9E50" }}>
           Sua estrutura sugerida agora
         </p>
-        <h3 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-2" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+        <h3 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-2" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
           {plan.structureName}
         </h3>
         <p className="text-gray-300 mb-6">
@@ -401,7 +401,7 @@ export default function RotinaQuiz() {
         <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#BA9E50" }}>
           E quando a semana der errado?
         </p>
-        <p className="text-white font-bold text-lg mb-2" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+        <p className="text-white font-bold text-lg mb-2" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
           Plano B: {plan.planoB.estrutura}
         </p>
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{plan.planoB.texto}</p>
@@ -409,7 +409,7 @@ export default function RotinaQuiz() {
 
       {/* Agenda — implementation intentions */}
       <div className="border border-white/15 bg-white/[0.03] p-6 sm:p-8">
-        <p className="text-white font-bold text-lg mb-1" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+        <p className="text-white font-bold text-lg mb-1" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
           Agora transforme intenção em agenda
         </p>
         <p className="text-gray-400 text-sm mb-5">
@@ -454,7 +454,7 @@ export default function RotinaQuiz() {
       {/* Quebra de crença + conversão */}
       <div className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-7 sm:p-9 relative">
         <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: "#BA9E50" }} aria-hidden="true" />
-        <p className="text-white font-bold text-xl mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+        <p className="text-white font-bold text-xl mb-3" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
           Mas esse é o treino perfeito?
         </p>
         <p className="text-gray-300 leading-relaxed mb-3">

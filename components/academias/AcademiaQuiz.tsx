@@ -53,7 +53,7 @@ const PERGUNTAS: P[] = [
 ];
 
 const btn = "text-left border px-5 py-4 min-h-[52px] transition-colors text-base";
-const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
+const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 
 export default function AcademiaQuiz() {
   const [etapa, setEtapa] = useState<Etapa>("intro");

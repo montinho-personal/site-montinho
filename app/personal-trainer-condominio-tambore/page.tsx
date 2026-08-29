@@ -89,7 +89,7 @@ export default function PersonalTrainerCondomínioTambore() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Personal trainer no condomínio em Tamboré: sua academia, meu método.
           </h1>
@@ -115,7 +115,7 @@ export default function PersonalTrainerCondomínioTambore() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Conheço os condomínios de Tamboré como poucos profissionais conhecem.
           </h2>
@@ -153,7 +153,7 @@ export default function PersonalTrainerCondomínioTambore() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Acompanhamento completo na academia do seu condomínio em Tamboré
           </h2>
@@ -208,7 +208,7 @@ export default function PersonalTrainerCondomínioTambore() {
           </p>
           <h2
             className="text-3xl font-bold text-white mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dúvidas sobre personal trainer em condomínio de Tamboré
           </h2>
@@ -228,7 +228,7 @@ export default function PersonalTrainerCondomínioTambore() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             A academia do seu condomínio pode te entregar mais do que entrega hoje.
           </h2>

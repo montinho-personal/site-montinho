@@ -144,7 +144,7 @@ export default function DiagnosticoQuiz() {
           ref={headingRef}
           tabIndex={-1}
           className="text-2xl sm:text-3xl font-bold text-white mb-4 outline-none"
-          style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
         >
           Pronto para descobrir seu caminho?
         </h2>
@@ -177,7 +177,7 @@ export default function DiagnosticoQuiz() {
           ref={headingRef}
           tabIndex={-1}
           className="text-2xl sm:text-3xl font-bold text-white mb-5 outline-none"
-          style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
         >
           Seu perfil: {result.profileName}
         </h2>
@@ -216,7 +216,7 @@ export default function DiagnosticoQuiz() {
                 <li key={i} className="flex gap-3 text-gray-300 text-sm leading-relaxed">
                   <span
                     className="font-bold flex-shrink-0"
-                    style={{ color: "#BA9E50", fontFamily: "var(--font-playfair), Georgia, serif" }}
+                    style={{ color: "#BA9E50", fontFamily: "var(--font-titulo), Georgia, serif" }}
                   >
                     {i + 1}.
                   </span>
@@ -262,7 +262,7 @@ export default function DiagnosticoQuiz() {
         <div className="border border-white/20 bg-black p-6 sm:p-8 text-center mb-8">
           <h3
             className="text-xl font-bold text-white mb-3"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Quer que o Montinho analise seu resultado?
           </h3>
@@ -379,7 +379,7 @@ export default function DiagnosticoQuiz() {
         ref={headingRef}
         tabIndex={-1}
         className="text-xl sm:text-2xl font-bold text-white mb-8 outline-none"
-        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+        style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
       >
         {question.title}
       </h2>

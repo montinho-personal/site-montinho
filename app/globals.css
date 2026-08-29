@@ -7,7 +7,7 @@
 
 @theme inline {
   --font-sans: var(--font-inter);
-  --font-serif: var(--font-playfair);
+  --font-serif: var(--font-titulo);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 }
@@ -33,10 +33,20 @@ body {
   letter-spacing: -0.01em;
 }
 
+/**
+ * O espacejamento foi ajustado junto com a troca da fonte dos títulos.
+ *
+ * -0.02em era um acerto para a Playfair, que é estreita e apertada de origem.
+ * A Source Serif 4 tem letras mais largas e altura de x maior: manter aquele
+ * aperto encostaria as serifas umas nas outras. E 1.2 de entrelinha, que
+ * servia numa fonte de mancha leve, fecha demais um título de duas linhas
+ * numa fonte mais encorpada — que é como quase todo título aparece no
+ * celular.
+ */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-playfair), Georgia, serif;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  font-family: var(--font-titulo), Georgia, serif;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
 }
 
 ::selection {

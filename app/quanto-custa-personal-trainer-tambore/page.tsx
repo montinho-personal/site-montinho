@@ -88,7 +88,7 @@ export default function QuantoCustaPersonalTrainerTambore() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Quanto custa personal trainer em Tamboré — e o que você recebe por isso.
           </h1>
@@ -114,7 +114,7 @@ export default function QuantoCustaPersonalTrainerTambore() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             O que determina o preço do personal trainer em Tamboré.
           </h2>
@@ -140,7 +140,7 @@ export default function QuantoCustaPersonalTrainerTambore() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             O que está incluso no valor do meu atendimento em Tamboré
           </h2>
@@ -195,7 +195,7 @@ export default function QuantoCustaPersonalTrainerTambore() {
           </p>
           <h2
             className="text-3xl font-bold text-white mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dúvidas sobre preço de personal trainer em Tamboré
           </h2>
@@ -215,7 +215,7 @@ export default function QuantoCustaPersonalTrainerTambore() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Transparência primeiro. Decisão depois.
           </h2>

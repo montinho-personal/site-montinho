@@ -89,7 +89,7 @@ export default function PersonalTrainerDomicilioTambore() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Personal trainer a domicílio em Tamboré: o treino vai até você.
           </h1>
@@ -115,7 +115,7 @@ export default function PersonalTrainerDomicilioTambore() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Tamboré tem espaço para treinar bem. Basta saber usar.
           </h2>
@@ -153,7 +153,7 @@ export default function PersonalTrainerDomicilioTambore() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Treino a domicílio em Tamboré: do primeiro contato à primeira sessão
           </h2>
@@ -203,7 +203,7 @@ export default function PersonalTrainerDomicilioTambore() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Para quem o treino a domicílio em Tamboré faz mais sentido
           </h2>
@@ -243,7 +243,7 @@ export default function PersonalTrainerDomicilioTambore() {
           </p>
           <h2
             className="text-3xl font-bold text-white mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dúvidas sobre personal trainer a domicílio em Tamboré
           </h2>
@@ -263,7 +263,7 @@ export default function PersonalTrainerDomicilioTambore() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             O treino vem até você em Tamboré.
           </h2>

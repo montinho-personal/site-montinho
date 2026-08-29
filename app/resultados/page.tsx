@@ -205,7 +205,7 @@ export default function Resultados() {
                       className="font-bold text-sm text-right"
                       style={{
                         color: item.photo ? "#BA9E50" : "white",
-                        fontFamily: "var(--font-playfair), Georgia, serif",
+                        fontFamily: "var(--font-titulo), Georgia, serif",
                       }}
                     >
                       {item.result}
@@ -241,7 +241,7 @@ export default function Resultados() {
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl sm:text-4xl font-bold text-black mb-5"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             A próxima história pode ser a sua.
           </h2>

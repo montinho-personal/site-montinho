@@ -89,7 +89,7 @@ export default function AcademiaPersonalTrainerTambore() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Academia com personal trainer em Tamboré: atenção exclusiva, resultado diferente.
           </h1>
@@ -115,7 +115,7 @@ export default function AcademiaPersonalTrainerTambore() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             O que muda quando você treina em academia com personal trainer em Tamboré.
           </h2>
@@ -153,7 +153,7 @@ export default function AcademiaPersonalTrainerTambore() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             O que torna o treino em academia com personal trainer diferente em Tamboré
           </h2>
@@ -190,7 +190,7 @@ export default function AcademiaPersonalTrainerTambore() {
           </p>
           <h2
             className="text-3xl font-bold text-white mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dúvidas sobre personal trainer em academia em Tamboré
           </h2>
@@ -210,7 +210,7 @@ export default function AcademiaPersonalTrainerTambore() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             A academia está pronta. Falta o método.
           </h2>

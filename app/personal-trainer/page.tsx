@@ -113,7 +113,7 @@ export default function LandingPage() {
               </p>
               <h1
                 className="text-4xl sm:text-5xl lg:text-[3.4rem] font-bold leading-[1.08] mb-6"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
                 Transforme seu corpo em Alphaville com quem já{" "}
                 <span className="text-[#BA9E50]">esteve do outro lado</span>.
@@ -153,7 +153,7 @@ export default function LandingPage() {
                   Minha própria transformação
                 </span>
                 <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/80 to-transparent pt-14 pb-5 px-5 text-center">
-                  <p className="text-white font-bold text-lg leading-snug" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                  <p className="text-white font-bold text-lg leading-snug" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
                     A mesma pessoa. <span className="text-[#BA9E50]">40kg de diferença.</span>
                   </p>
                   <p className="text-gray-300 text-sm mt-1">
@@ -168,7 +168,7 @@ export default function LandingPage() {
         {/* ───────────────────── 2. PROVA SOCIAL ───────────────────── */}
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-6xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Resultados que falam mais alto do que qualquer promessa
             </h2>
             <p className="text-center text-gray-300 mb-10 max-w-2xl mx-auto">
@@ -180,7 +180,7 @@ export default function LandingPage() {
             <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-12 text-center">
               {[["-40kg","na própria pele"],["20+","anos de experiência"],["5.0 ★","17 avaliações Google"]].map(([n,d]) => (
                 <div key={n} className="border border-white/10 rounded-2xl py-5 px-2 bg-black/40">
-                  <p className="text-[#BA9E50] text-2xl sm:text-3xl font-bold" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>{n}</p>
+                  <p className="text-[#BA9E50] text-2xl sm:text-3xl font-bold" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>{n}</p>
                   <p className="text-gray-300 text-xs mt-1">{d}</p>
                 </div>
               ))}
@@ -206,7 +206,7 @@ export default function LandingPage() {
                 <figure key={a.src} className="relative aspect-square rounded-2xl overflow-hidden border border-white/10">
                   <Image src={a.src} alt={a.alt} fill loading="lazy" sizes="(max-width: 640px) 90vw, 400px" className="object-cover" />
                   <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/85 to-transparent pt-12 pb-4 px-4 text-center">
-                    <p className="text-white font-bold text-lg" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                    <p className="text-white font-bold text-lg" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
                       {a.name} · <span className="text-[#BA9E50]">{a.kg}</span>
                     </p>
                     <p className="text-gray-300 text-xs mt-0.5">{a.frase}</p>
@@ -251,7 +251,7 @@ export default function LandingPage() {
               </figure>
             </div>
             <div className="md:col-span-3">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
                 Eu sei exatamente como é começar do zero.
               </h2>
               <p className="text-gray-300 leading-relaxed mb-3">
@@ -281,7 +281,7 @@ export default function LandingPage() {
         {/* ───────────────────── 3. BENEFÍCIOS ───────────────────── */}
         <section className="py-16 border-t border-white/10">
           <div className="max-w-6xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Muito mais do que treinar
             </h2>
             <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
@@ -313,7 +313,7 @@ export default function LandingPage() {
         {/* ───────────────────── 5. COMO FUNCIONA ───────────────────── */}
         <section className="py-16 border-t border-white/10">
           <div className="max-w-5xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Como funciona o acompanhamento
             </h2>
             <ol className="grid sm:grid-cols-5 gap-4 text-center">
@@ -340,7 +340,7 @@ export default function LandingPage() {
         {/* ───────────────────── 6+7. DIFERENCIAIS / COMPARATIVO ───────────────────── */}
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-4xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Por que escolher o Montinho Personal?
             </h2>
             <div className="grid sm:grid-cols-2 gap-6">
@@ -373,7 +373,7 @@ export default function LandingPage() {
         {/* ───────────────────── PARA QUEM É ───────────────────── */}
         <section className="py-16 border-t border-white/10">
           <div className="max-w-4xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Esse acompanhamento é ideal para você que...
             </h2>
             <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
@@ -399,7 +399,7 @@ export default function LandingPage() {
         {/* ───────────────────── 8. REGIÕES ───────────────────── */}
         <section className="py-16 border-t border-white/10">
           <div className="max-w-5xl mx-auto px-5 sm:px-8 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Regiões atendidas
             </h2>
             <p className="text-gray-300 mb-10 max-w-2xl mx-auto">
@@ -435,7 +435,7 @@ export default function LandingPage() {
         {/* ───────────────────── 9. FAQ ───────────────────── */}
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-3xl mx-auto px-5 sm:px-8">
-            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Suas dúvidas, respondidas
             </h2>
             <div className="space-y-3">
@@ -461,7 +461,7 @@ export default function LandingPage() {
             <div className="relative w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-2 border-[#BA9E50]">
               <Image src="/montinho-personal-trainer-shape.jpg" alt="Montinho Personal Trainer" fill loading="lazy" sizes="128px" className="object-cover" />
             </div>
-            <h2 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Sua transformação pode<br className="hidden sm:block" /> começar hoje.
             </h2>
             <p className="text-gray-300 text-lg mb-4 max-w-xl mx-auto">

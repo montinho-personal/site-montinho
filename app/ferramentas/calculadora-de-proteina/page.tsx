@@ -39,7 +39,7 @@ const breadcrumbSchema = {
   ],
 };
 
-const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
+const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const ln = "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
 
 /** Exemplo fixo indexável — o crawler não digita peso. */

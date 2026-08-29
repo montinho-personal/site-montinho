@@ -13,7 +13,7 @@ export default function DiagnosticoCTA() {
         </p>
         <h2
           className="text-2xl sm:text-3xl font-bold text-white mb-4"
-          style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
         >
           Descubra qual estratégia de treino combina com você
         </h2>

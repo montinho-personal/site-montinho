@@ -66,7 +66,7 @@ export default function AskEmbed({
 
         <h2
           className="text-white font-bold text-3xl sm:text-4xl leading-tight mb-3"
-          style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
         >
           Pergunte ao Montinho
         </h2>
@@ -142,7 +142,7 @@ export default function AskEmbed({
       </p>
       <p
         className="text-white font-bold text-xl mb-1"
-        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+        style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
       >
         Pergunte ao Montinho
       </p>

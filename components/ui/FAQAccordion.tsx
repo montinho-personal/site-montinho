@@ -20,7 +20,7 @@ function FAQItem({ question, answer }: FAQItem) {
       >
         <span
           className="text-white font-medium text-base pr-4 group-hover:text-gray-200 transition-colors"
-          style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
         >
           {question}
         </span>

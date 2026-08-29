@@ -89,7 +89,7 @@ export default function MelhorPersonalTrainerTambore() {
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Melhor personal trainer em Tamboré: o critério certo para escolher.
           </h1>
@@ -115,7 +115,7 @@ export default function MelhorPersonalTrainerTambore() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             O que separa um bom personal trainer dos demais em Tamboré.
           </h2>
@@ -150,7 +150,7 @@ export default function MelhorPersonalTrainerTambore() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             O que encontrar em um personal trainer de referência em Tamboré
           </h2>
@@ -189,7 +189,7 @@ export default function MelhorPersonalTrainerTambore() {
           </p>
           <h2
             className="text-3xl font-bold text-white mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Dúvidas sobre como escolher personal trainer em Tamboré
           </h2>
@@ -209,7 +209,7 @@ export default function MelhorPersonalTrainerTambore() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
             Julgue pelo processo. E pelos resultados.
           </h2>

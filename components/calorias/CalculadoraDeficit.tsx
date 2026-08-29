@@ -55,7 +55,7 @@ import {
  * entendendo de onde o número veio.
  */
 
-const h = { fontFamily: "var(--font-playfair), Georgia, serif" } as const;
+const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const ln = "underline underline-offset-2 decoration-1 hover:text-white transition-colors";
 
 const SEXOS: { id: Sexo; rotulo: string }[] = [
