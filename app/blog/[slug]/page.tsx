@@ -13,6 +13,8 @@ import ContextualCTA from "@/components/cta/ContextualCTA";
 import { planCTAs } from "@/lib/cta/classify";
 import { splitAtNaturalBreak, splitAtPrimeiraSecao } from "@/lib/cta/placement";
 import { ARTIGOS_COM_CALCULADORA } from "@/lib/proteina";
+import { ARTIGOS_COM_FICHA } from "@/lib/alimentos/artigos";
+import FichaNoArtigo from "@/components/alimentos/FichaNoArtigo";
 import CalculadoraProteina from "@/components/proteina/CalculadoraProteina";
 import { ARTIGOS_COM_CALCULADORA_DEFICIT } from "@/lib/calorias";
 import { ARTIGOS_COM_CALCULADORA_TDEE } from "@/lib/tdee";
@@ -295,6 +297,14 @@ export default async function BlogPost({ params }: Props) {
           {/* Link contextual para a calculadora de 1RM nos artigos de técnica
               dos grandes exercícios — a ferramenta inteira ali atrapalharia a
               leitura, mas quem terminou de ler quer saber a própria carga. */}
+          {/*
+              A ficha do alimento. Fica no fim, junto dos links de ferramenta,
+              e não no corte do meio: ali disputaria espaço com a calculadora
+              que vários desses artigos já embutem. E ela pode conviver com a
+              calculadora porque responde outra pergunta — a calculadora diz
+              quanto a pessoa precisa, a ficha diz quanto tem na comida.
+          */}
+          {ARTIGOS_COM_FICHA.includes(post.slug) && <FichaNoArtigo slug={post.slug} />}
           {ARTIGOS_COM_LINK_1RM.includes(post.slug) && <LinkFerramenta1RM slug={post.slug} />}
           {ARTIGOS_COM_LINK_VOLUME.includes(post.slug) && <LinkFerramentaVolume slug={post.slug} />}
 

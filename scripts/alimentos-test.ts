@@ -42,6 +42,10 @@ import {
   validaValor,
 } from "../lib/alimentos/validacao";
 import type { Alimento, ValorNutriente } from "../lib/alimentos/tipos";
+import { blogPosts } from "../lib/blog";
+import { ARTIGOS_COM_FICHA, FICHAS_POR_ARTIGO } from "../lib/alimentos/artigos";
+import { nomeNatural } from "../lib/alimentos/base";
+import { NUTRIENTE_POR_ID } from "../lib/alimentos/nutrientes";
 
 let falhas = 0;
 function ok(nome: string, cond: boolean, detalhe = "") {
@@ -517,6 +521,79 @@ bloco("11. MEDIDA CASEIRA — SÓ COM PESO DOCUMENTADO");
      */
     console.log(`\n  ${comPorcao.length} de ${base.alimentos.length} alimentos com medida caseira documentada`);
   }
+}
+
+// ─── 12 ─────────────────────────────────────────────────────────────────────
+bloco("12. FICHAS NOS ARTIGOS — APONTAM PARA COISAS QUE EXISTEM");
+
+{
+  const caminho = "data/alimentos/processado/taco.json";
+  const artigos = new Set(blogPosts.map((p) => p.slug));
+  const slugsBase = existsSync(caminho)
+    ? new Set((JSON.parse(readFileSync(caminho, "utf8")) as { alimentos: Alimento[] }).alimentos.map((a) => a.slug))
+    : new Set<string>();
+
+  const artigoFantasma = ARTIGOS_COM_FICHA.filter((s) => !artigos.has(s));
+  ok("toda ficha aponta para um artigo que existe", artigoFantasma.length === 0, artigoFantasma.join(", "));
+
+  const alimentoFantasma = Object.entries(FICHAS_POR_ARTIGO).flatMap(([artigo, f]) =>
+    f.alimentos.filter((a) => !slugsBase.has(a)).map((a) => `${artigo} → ${a}`),
+  );
+  ok("toda ficha aponta para alimentos que existem na base",
+    alimentoFantasma.length === 0, alimentoFantasma.join(", "));
+
+  const destaqueRuim = Object.entries(FICHAS_POR_ARTIGO)
+    .filter(([, f]) => !NUTRIENTE_POR_ID.has(f.destaque))
+    .map(([artigo, f]) => `${artigo} → ${f.destaque}`);
+  ok("todo nutriente em destaque existe no catálogo", destaqueRuim.length === 0, destaqueRuim.join(", "));
+
+  /**
+   * Uma ficha em que o nutriente do destaque falta em TODOS os alimentos
+   * renderiza vazio — o componente omite linha sem valor, e com todas
+   * omitidas sobra um bloco com título e nada dentro.
+   */
+  if (slugsBase.size) {
+    const base = JSON.parse(readFileSync(caminho, "utf8")) as { alimentos: Alimento[] };
+    const porSlug = new Map(base.alimentos.map((a) => [a.slug, a]));
+    const vazias = Object.entries(FICHAS_POR_ARTIGO).filter(([, f]) =>
+      f.alimentos.every((s) => {
+        const a = porSlug.get(s);
+        const v = a?.nutrientes.find((n) => n.nutrienteId === f.destaque);
+        return !v || v.estado !== "analisado";
+      }),
+    ).map(([artigo]) => artigo);
+    ok("nenhuma ficha ficaria vazia na tela", vazias.length === 0, vazias.join(", "));
+  }
+
+  /**
+   * A ficha convive com calculadora de propósito — ela cita dado, não
+   * calcula. Mas conviver com OUTRA ficha no mesmo artigo seria duplicata.
+   */
+  ok("nenhum artigo aparece duas vezes no registro",
+    new Set(ARTIGOS_COM_FICHA).size === ARTIGOS_COM_FICHA.length);
+
+  console.log(`\n  ${ARTIGOS_COM_FICHA.length} artigos com ficha de alimento`);
+}
+
+/**
+ * O nome dentro de uma frase.
+ *
+ * A TACO escreve para tabela: ordem invertida com vírgulas, e o tempo de
+ * cozimento colado por barra. As duas notações são corretas na origem e
+ * travam a leitura em texto corrido.
+ */
+{
+  ok("a vírgula da tabela some no texto corrido",
+    nomeNatural("Feijão, carioca, cozido") === "Feijão carioca cozido",
+    nomeNatural("Feijão, carioca, cozido"));
+  ok("o tempo de cozimento vira frase, não barra",
+    nomeNatural("Ovo, de galinha, inteiro, cozido/10minutos") === "Ovo de galinha inteiro cozido por 10 minutos",
+    nomeNatural("Ovo, de galinha, inteiro, cozido/10minutos"));
+  ok("nenhum nome natural mantém barra ou espaço duplo",
+    !/[\/]|\s{2}/.test(
+      [...new Set(["Ovo, de galinha, clara, cozida/10minutos", "Arroz, integral, cozido"])]
+        .map(nomeNatural).join(" "),
+    ));
 }
 
 /** A fonte das medidas está registrada e travada até ser conferida. */
