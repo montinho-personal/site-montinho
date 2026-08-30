@@ -7,6 +7,7 @@ import { NUTRIENTES, NUTRIENTE_POR_ID, DEFINICAO_BRANCO, DEFINICAO_NA, DEFINICAO
 import { AVISO_NAO_SUBSTITUI, AVISO_VARIACAO, FONTES } from "@/lib/alimentos/fontes";
 import { formataNumero, formataValor, escalaValor } from "@/lib/alimentos/escala";
 import SeletorQuantidade from "@/components/alimentos/SeletorQuantidade";
+import QuantoPreciso from "@/components/alimentos/QuantoPreciso";
 
 /**
  * Página de um alimento.
@@ -195,6 +196,15 @@ export default async function AlimentoPage({ params }: { params: Promise<{ slug:
               <p><strong className="text-gray-200">—</strong> — {DEFINICAO_BRANCO}</p>
             </div>
           </div>
+
+          {/*
+              A conta inversa. Só aparece quando o alimento tem proteína de
+              verdade: oferecê-la no azeite produziria uma recusa educada onde
+              não havia pergunta.
+          */}
+          {prot !== null && prot >= 1 && (
+            <QuantoPreciso nomeNatural={nomeNatural(a.nome)} proteinaPor100g={prot} />
+          )}
 
           <div>
             <h2 className="text-xl sm:text-2xl font-bold text-white mb-3" style={h}>
