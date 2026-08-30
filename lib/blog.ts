@@ -22077,7 +22077,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/full-body-vs-divisao-abc-infographic.svg" alt="Infográfico sobre Full Body vs Divisão ABC: Qual é Melhor para Iniciantes? — Montinho Personal Trainer" title="Full Body vs Divisão ABC: Qual é Melhor para Iniciantes?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/full-body-vs-divisao-abc-capa.webp" alt="Arte de capa ilustrada comparando treino full body e divisão ABC, com os grupos musculares de cada dia" title="Full Body vs Divisão ABC — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Full body ou ABC: frequência, volume e recuperação para escolher melhor.</figcaption>
 </figure>
 <h2>O que é Full Body?</h2>
 <p>No treino full body, você trabalha todos os grupos musculares principais em cada sessão. A frequência de estímulo por músculo é alta — 3x por semana se você treinar 3 dias.</p>
@@ -22169,7 +22170,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-montar-treino-abc-infographic.svg" alt="Infográfico sobre Como Montar um Treino ABC de Musculação do Zero — Montinho Personal Trainer" title="Como Montar um Treino ABC de Musculação do Zero" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-montar-treino-abc-capa.webp" alt="Arte de capa ilustrada sobre como montar um treino ABC, com a divisão dos grupos musculares por dia" title="Como Montar Treino ABC — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino ABC: como dividir os grupos musculares na semana.</figcaption>
 </figure>
 <h2>O que é a divisão ABC</h2>
 <p>Na divisão ABC, a semana de treino é organizada em 3 tipos de sessão (A, B e C), cada uma com foco em grupos musculares diferentes. Existem várias formas de dividir — aqui apresentamos as duas mais eficientes.</p>
@@ -29596,7 +29598,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/escala-rpe-musculacao-infographic.svg" alt="Infográfico sobre O Que é RPE e Como Usar a Escala de Esforço para Treinar com Mais Inteligência — Montinho Personal Trainer" title="O Que é RPE e Como Usar a Escala de Esforço para Treinar com" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/escala-rpe-musculacao-capa.webp" alt="Arte de capa ilustrada: velocímetro de esforço de 1 a 10 com RPE 6 confortável, RPE 8 pesado e RPE 10 limite, ao lado de atleta agachando" title="Escala RPE na Musculação — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Escala RPE: como medir o esforço de 1 a 10 para ajustar a carga.</figcaption>
 </figure>
   <p>Durante anos, a progressão de carga foi a métrica principal de sucesso no treino de musculação. Se você levantou mais peso do que na semana passada, você progrediu. Simples assim. E de fato, a progressão de carga é um dos princípios fundamentais da hipertrofia — sem estímulo progressivo, o músculo não tem razão para se adaptar.</p>
 
@@ -31950,7 +31953,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-emagrecer-10-kg-infographic.svg" alt="Infográfico sobre Como Emagrecer 10 kg: O Plano Realista Para Quem Quer Resultado de Verdade — Montinho Personal Trainer" title="Como Emagrecer 10 kg: O Plano Realista Para Quem Quer Result" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-emagrecer-10-kg-capa.webp" alt="Arte de capa ilustrada sobre o processo de emagrecer 10 kg com déficit calórico, treino e consistência" title="Como Emagrecer 10 kg — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Como emagrecer 10 kg: prazo realista, déficit e consistência.</figcaption>
 </figure>
 <p>Este artigo não vai te prometer milagre. Vai te dar o mapa honesto de como chegar lá.</p>
 
@@ -33466,7 +33470,8 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-supino-reto-infographic.svg" alt="Infográfico sobre Como Fazer Supino Reto Corretamente: Técnica, Erros e Variações — Montinho Personal Trainer" title="Como Fazer Supino Reto Corretamente: Técnica, Erros e Variaç" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-supino-reto-capa.webp" alt="Arte de capa ilustrada: execução do supino reto com barra, com destaque para pegada firme, trajetória da barra, escápulas estabilizadas e pés firmes no chão" title="Como Fazer Supino Reto Corretamente — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Supino reto: técnica, postura e execução segura.</figcaption>
 </figure>
 <p>Uma técnica ruim no supino limita o ganho de força, reduz a ativação muscular e aumenta o risco de lesão no ombro e no punho. Este guia cobre cada detalhe da execução correta.</p>
 
@@ -37266,7 +37271,8 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/dieta-flexivel-iifym-infographic.svg" alt="Infográfico sobre Dieta Flexível (IIFYM): O Que É, Como Funciona e Se Vale a Pena — Montinho Personal Trainer" title="Dieta Flexível (IIFYM): O Que É, Como Funciona e Se Vale a P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/dieta-flexivel-iifym-capa.webp" alt="Arte de capa ilustrada sobre dieta flexível (IIFYM) e contagem de macronutrientes" title="Dieta Flexível (IIFYM) — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Dieta flexível: como encaixar os alimentos dentro dos seus macros.</figcaption>
 </figure>
 <p>Isso soa como uma permissão para comer sorvete e pizza e ainda assim ter resultado — e é exatamente essa interpretação que leva muita gente ao erro. A versão real é mais sofisticada e tem embasamento sólido.</p>
 
@@ -45226,7 +45232,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-abcd-para-hipertrofia-infographic.svg" alt="Infográfico sobre Treino ABCD para Hipertrofia: Guia Completo com Fichas e Ciência — Montinho Personal Trainer" title="Treino ABCD para Hipertrofia: Guia Completo com Fichas e Ciê" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-abcd-para-hipertrofia-capa.webp" alt="Arte de capa ilustrada sobre a divisão de treino ABCD para hipertrofia" title="Treino ABCD para Hipertrofia — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino ABCD: como distribuir volume e frequência para crescer.</figcaption>
 </figure>
 <h2>ABCD vs Outras Divisões: Qual Escolher?</h2>
 <table>
@@ -45546,7 +45553,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/lista-de-compras-fitness-semanal-infographic.svg" alt="Infográfico sobre Lista de Compras Fitness Semanal: 60 Alimentos para Músculo e Emagrecimento — Montinho Personal Trainer" title="Lista de Compras Fitness Semanal: 60 Alimentos para Músculo " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/lista-de-compras-fitness-semanal-capa.webp" alt="Arte de capa ilustrada com lista de compras semanal de alimentos para quem treina" title="Lista de Compras Fitness Semanal — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Lista de compras da semana para sustentar treino e dieta.</figcaption>
 </figure>
 <h2>Lista de Compras Fitness por Categoria</h2>
 
@@ -61219,7 +61227,8 @@ Em geral sim — temperatura e umidade menores facilitam a termorregulação e m
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/proteina-em-alimentos-tabela-completa-infographic.svg" alt="Infográfico sobre Proteína em Alimentos — Montinho Personal Trainer" title="Proteína em Alimentos — Tabela Completa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/proteina-em-alimentos-tabela-completa-capa.webp" alt="Arte de capa ilustrada com tabela de proteína em alimentos e suas quantidades por porção" title="Proteína em Alimentos: Tabela Completa — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Quanta proteína tem em cada alimento: tabela por porção.</figcaption>
 </figure>
 
 ## Quanto de Proteína Você Precisa?
@@ -86934,7 +86943,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Segunda-feira, 12h47. Reunião atrasou, fome apertou, e a decisão cai no piloto automático: delivery, fast food ou o salgado da padaria. De novo.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/marmita-fitness-como-montar-infographic.svg" alt="Infográfico sobre Marmita Fitness: Como Montar sua Semana (Meal Prep) — Montinho Personal Trainer" title="Marmita Fitness: Como Montar sua Semana (Meal Prep)" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/marmita-fitness-como-montar-capa.webp" alt="Arte de capa ilustrada: marmita montada com frango grelhado, arroz integral e vegetais, destacando proteína, carboidrato e vegetais" title="Marmita Fitness: Como Montar — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Marmita fitness: proteína, carboidrato e vegetais para praticidade e resultado.</figcaption>
 </figure>
 
 <p>O problema não é falta de disciplina — é <strong>excesso de decisões</strong>. Quem decide o que comer na hora da fome decide mal. E uma semana de decisões ruins apaga qualquer treino bem feito.</p>
