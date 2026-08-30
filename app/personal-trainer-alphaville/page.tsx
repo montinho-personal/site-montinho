@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/blog";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 
 export const metadata: Metadata = {
-  title: "Personal Trainer em Alphaville | Montinho Personal Trainer",
+  title: { absolute: "Personal Trainer em Alphaville | Montinho Personal Trainer" },
   description:
     "Personal Trainer em Alphaville com mais de 20 anos de experiência. Treino presencial individualizado para moradores de Alphaville, Barueri e região. Resultados reais, sem fórmulas mágicas.",
   alternates: {

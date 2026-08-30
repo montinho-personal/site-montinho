@@ -5,7 +5,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Personal Trainer para Idosos Tamboré | Montinho Personal Trainer",
+  title: { absolute: "Personal Trainer para Idosos Tamboré | Montinho Personal Trainer" },
   description:
     "Personal trainer para idosos em Tamboré com protocolo adaptado para a terceira idade. Força, equilíbrio, mobilidade e qualidade de vida com segurança e método. Mais de 20 anos na região.",
   alternates: {

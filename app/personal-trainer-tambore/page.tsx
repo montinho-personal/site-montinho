@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/blog";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 
 export const metadata: Metadata = {
-  title: "Personal Trainer Tamboré | Montinho Personal Trainer",
+  title: { absolute: "Personal Trainer Tamboré | Montinho Personal Trainer" },
   description:
     "Personal Trainer em Tamboré com atendimento individualizado e presencial. Treino de força, emagrecimento e qualidade de vida para moradores da região de Tamboré e Alphaville.",
   alternates: {

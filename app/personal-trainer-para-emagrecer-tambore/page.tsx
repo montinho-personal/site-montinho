@@ -5,7 +5,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Personal Trainer para Emagrecer Tamboré | Montinho Personal Trainer",
+  title: { absolute: "Personal Trainer para Emagrecer Tamboré | Montinho Personal Trainer" },
   description:
     "Personal trainer para emagrecer em Tamboré com método baseado em ciência. Emagrecimento sem efeito sanfona, sem dietas radicais. Mais de 20 anos na região. Resultados reais e duradouros.",
   alternates: {

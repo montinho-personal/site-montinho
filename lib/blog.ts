@@ -9919,9 +9919,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "proteina-para-quem-usa-mounjaro",
     title: "Quanto de Proteína Consumir Usando Mounjaro",
-    metaTitle: "Quanto de Proteína Consumir Usando Mounjaro",
+    metaTitle: "Proteína no Mounjaro: 1,6 a 2 g/kg e Como Bater a Meta",
     metaDescription:
-      "Com o Mounjaro suprimindo o apetite, atingir a proteína mínima diária fica difícil — mas é exatamente quando mais importa.",
+      "A meta é 1,6 a 2 g por kg de peso — 128 a 160 g para quem tem 80 kg. Veja como distribuir no dia e as estratégias para chegar lá comendo pouco volume.",
     excerpt:
       "O Mounjaro mata o apetite, mas sua necessidade de proteína não diminui — ela aumenta. Descubra quanto consumir por dia e as estratégias práticas para bater essa meta mesmo sem sentir fome.",
     category: "Emagrecimento",
@@ -10431,9 +10431,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "cardio-ou-musculacao-mounjaro",
     title: "Cardio ou Musculação Durante o Uso de Mounjaro?",
-    metaTitle: "Cardio ou Musculação Durante o Uso de Mounjaro?",
+    metaTitle: "Cardio ou Musculação no Mounjaro? O Que Preserva Músculo",
     metaDescription:
-      "Muitos usuários de Mounjaro optam só por caminhadas. Mas a musculação é superior para composição corporal durante o uso de GLP-1.",
+      "Em déficit forte, quem só caminha perde mais massa magra. Veja como dividir a semana, que volume de treino basta e o que fazer nos dias sem energia.",
     excerpt:
       "A maioria dos usuários de Mounjaro prefere só caminhar. Mas se o objetivo é emagrecer sem perder músculo, a musculação deve ser prioridade. Veja por que — e como combinar os dois da forma certa.",
     category: "Treinamento",
@@ -11353,9 +11353,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "retatrutida-faz-perder-musculos",
     title: "Retatrutida Faz Perder Músculos?",
-    metaTitle: "Retatrutida Faz Perder Músculos? | Montinho Personal Trainer",
+    metaTitle: "Retatrutida Faz Perder Músculo? O Que o Estudo Mostra",
     metaDescription:
-      "A resposta honesta é: sim, se não houver contramedidas. Entenda os dados do ensaio clínico da Retatrutida, quanto é músculo versus gordura e como...",
+      "No ensaio de fase 2, a perda foi de 17,5% a 24,2% do peso em 48 semanas. Veja quanto disso tende a ser massa magra e o que reduz essa proporção.",
     excerpt:
       "A Retatrutida causou perda média de 24% do peso corporal em estudos clínicos. Parte desse peso pode ser músculo. Saiba o que os dados mostram e o que você pode fazer a respeito.",
     category: "Saúde",
@@ -45383,8 +45383,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   {
     slug: "treino-upper-lower-superior-inferior",
     title: "Treino Upper/Lower: A Divisão que Maximiza Hipertrofia em 4 Dias",
-    metaTitle: "Treino Upper Lower: Guia Completo e Fichas",
-    metaDescription: "Treino upper lower: o que é, como montar, fichas prontas e por que essa divisão superior/inferior é a favorita dos especialistas para hipertrofia.",
+    metaTitle: "Treino Upper Lower: Fichas Prontas de 4 Dias e Como Montar",
+    metaDescription: "A divisão superior/inferior treina cada grupo 2x por semana — a frequência que a literatura associa a mais hipertrofia. Fichas, semana montada e erros comuns.",
     excerpt: "O treino upper/lower é a divisão favorita de pesquisadores como Brad Schoenfeld e Eric Helms — e por razões sólidas. Frequência 2x por semana por grupo muscular com estrutura prática.",
     category: "Treino",
     readTime: "13 min",
@@ -55783,8 +55783,8 @@ French press é insubstituível para quem quer tríceps volumosos — especialme
   {
     slug: "crossover-vs-crucifixo",
     title: "Crossover vs Crucifixo: Qual é Melhor para o Peito?",
-    metaTitle: "Crossover vs Crucifixo: Qual é Melhor?",
-    metaDescription: "Crossover no cabo ou crucifixo com halteres: qual exercício ativa mais o peitoral? Análise técnica, EMG e quando usar cada um no treino.",
+    metaTitle: "Crossover ou Crucifixo: Qual Ativa Mais o Peitoral?",
+    metaDescription: "Cabo e halter mudam a tensão em pontos diferentes do movimento. Veja o que a eletromiografia aponta e em que fase do treino cada um rende mais.",
     excerpt: "Crossover e crucifixo trabalham o mesmo movimento, mas de formas diferentes. A escolha certa depende do seu objetivo e fase do treino — veja a análise completa.",
     category: "Treinamento",
     date: "2026-06-28",
@@ -72129,7 +72129,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     slug: "quantos-quilos-perder-ate-fim-do-ano",
     title: "Quantos Quilos Dá para Perder até o Fim do Ano?",
     metaTitle: "Quantos Quilos Dá para Perder até o Fim do Ano?",
-    metaDescription: "Descubra quantos quilos você pode perder até dezembro com segurança. Personal trainer em Alphaville explica as metas reais de emagrecimento.",
+    metaDescription: "Quanto dá para perder por mês sem sacrificar músculo, a meta realista pelo seu ponto de partida e o plano para as semanas que ainda restam até dezembro.",
     excerpt: "Antes de definir quanto quer perder, você precisa saber quanto é possível perder com saúde — e o que realmente vai aparecer no espelho ao final do processo.",
     category: "Emagrecimento",
     date: "2026-07-01",
@@ -73899,8 +73899,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "da-para-comer-pamonha-e-emagrecer",
     title: "Dá para Comer Pamonha e Emagrecer?",
-    metaTitle: "Dá para Comer Pamonha e Emagrecer? | Montinho",
-    metaDescription: "Pamonha e emagrecimento podem coexistir? Descubra a verdade sobre esse alimento junino e como incluí-lo na dieta sem culpa.",
+    metaTitle: "Pamonha Engorda? 290 kcal por Unidade e Como Encaixar",
+    metaDescription: "Uma pamonha doce de 150 g tem cerca de 290 kcal — menos que 3 fatias de pão de forma. Veja a comparação completa e como ela cabe num dia de déficit.",
     excerpt: "A pamonha não é o vilão que parece. Entenda a relação entre esse clássico junino, suas calorias e como encaixá-la no seu processo de emagrecimento.",
     category: "Nutrição",
     date: "2026-06-12",
@@ -77306,7 +77306,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     slug: "smart-fit-vs-bluefit",
     title: "Smart Fit vs Bluefit: Qual Vale Mais a Pena?",
     metaTitle: "Smart Fit vs Bluefit: Qual Vale Mais a Pena?",
-    metaDescription: "Comparativo honesto entre Smart Fit e Bluefit na região de Alphaville e Barueri. Perfil, estrutura e para quem cada uma é indicada. Confira!",
+    metaDescription: "Estrutura, lotação, aparelhos e perfil de aluno das duas redes em Alphaville e Barueri — com os 4 critérios para decidir sem precisar visitar as duas.",
     excerpt: "Smart Fit e Bluefit disputam o mesmo público low cost. Veja um comparativo honesto para decidir qual faz mais sentido para a sua rotina em Alphaville e Barueri.",
     category: "Academias",
     date: "2026-07-02",
@@ -98298,9 +98298,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "quantas-calorias-tem-1kg-de-gordura",
     title: "Quantas Calorias Tem 1kg de Gordura? A Matemática do Emagrecimento",
-    metaTitle: "Quantas Calorias Tem 1kg de Gordura? A Matemática",
+    metaTitle: "Quantas Calorias Tem 1 kg de Gordura? São 7.700 kcal",
     metaDescription:
-      "1kg de gordura corporal equivale a cerca de 7.700 kcal. Veja de onde vem esse número, como usá-lo para planejar o emagrecimento e onde a conta falha.",
+      "De onde vem o número, como transformá-lo em meta semanal de peso e por que a balança demora a obedecer à conta nas primeiras semanas de dieta.",
     excerpt:
       "1kg de gordura corporal armazena cerca de 7.700 kcal. Esse número é uma régua poderosa para planejar sua perda de peso — desde que você entenda onde a conta funciona e onde o corpo insiste em não ser calculadora.",
     category: "Emagrecimento",
@@ -101882,9 +101882,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "eliptico-emagrece",
     title: "Elíptico Emagrece? Calorias Gastas e Como Usar do Jeito Certo",
-    metaTitle: "Elíptico Emagrece? Calorias e Como Usar Certo",
+    metaTitle: "Elíptico Emagrece? Calorias por Hora e 3 Protocolos",
     metaDescription:
-      "Elíptico emagrece? Veja quantas calorias o transport gasta, como montar treinos contínuos e intervalados e por que ele é ótimo para joelhos sensíveis.",
+      "Quanto o aparelho gasta de verdade por sessão, treinos contínuos e intervalados prontos, e por que ele costuma ser a saída de quem tem joelho sensível.",
     excerpt:
       "O elíptico (ou transport) é um dos aparelhos mais usados — e mais mal usados — da academia. Ele emagrece? Sim, dentro de um déficit calórico, e com a vantagem do baixo impacto nas articulações. Mostro quantas calorias ele gasta de verdade e como montar treinos que funcionam.",
     category: "Emagrecimento",
@@ -102348,9 +102348,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "acai-engorda",
     title: "Açaí Engorda? Calorias da Tigela vs Polpa Pura (a Diferença é Brutal)",
-    metaTitle: "Açaí Engorda? Calorias da Tigela vs Polpa Pura",
+    metaTitle: "Açaí Engorda? Da Polpa de 58 kcal à Tigela de 1.000",
     metaDescription:
-      "Açaí engorda? A polpa pura tem ~58 kcal/100 g, mas a tigela completa pode passar de 1.000 kcal. Veja a comparação real e como consumir sem sabotar a dieta.",
+      "O que transforma 58 kcal em mais de 1.000: xarope de guaraná, granola e o tamanho da porção. Veja onde as calorias entram e como montar uma tigela leve.",
     excerpt:
       "O açaí puro é uma fruta de valor nutricional interessante. O problema é que quase ninguém come açaí puro. Comparo as calorias da polpa com a tigela completa — e a diferença assusta.",
     category: "Nutrição",
@@ -108499,9 +108499,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "polichinelo-emagrece",
     title: "Polichinelo Emagrece? Quantos Fazer Por Dia (Resposta Honesta)",
-    metaTitle: "Polichinelo Emagrece? Quantos Fazer Por Dia",
+    metaTitle: "Polichinelo Emagrece? Gasto Calórico Real e Quantos Fazer",
     metaDescription:
-      "Polichinelo emagrece? Veja o gasto calórico real, quantos fazer por nível, como usar em circuitos HIIT e alternativas de baixo impacto para o joelho.",
+      "Quantas calorias o polichinelo queima de verdade, quantos fazer por nível de condicionamento e por que ele rende mais dentro de um circuito do que sozinho.",
     excerpt:
       "Polichinelo virou febre nos desafios de internet, mas será que ele emagrece de verdade? Explico o gasto calórico real do exercício, quantos fazer por dia conforme o seu nível e por que ele funciona melhor dentro de um circuito do que sozinho.",
     category: "Emagrecimento",
