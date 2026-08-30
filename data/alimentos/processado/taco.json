@@ -14649,7 +14649,7 @@
      "nutrienteId": "vitamina-c",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     }
    ],
    "porcoes": [],
@@ -38718,13 +38718,13 @@
      "nutrienteId": "tiamina",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "riboflavina",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "piridoxina",
@@ -38742,7 +38742,7 @@
      "nutrienteId": "vitamina-c",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     }
    ],
    "porcoes": [],
@@ -49811,7 +49811,7 @@
      "nutrienteId": "niacina",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "vitamina-c",
@@ -49888,7 +49888,7 @@
      "nutrienteId": "fibra",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "cinzas",
@@ -51954,7 +51954,7 @@
      "nutrienteId": "niacina",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "vitamina-c",
@@ -52042,7 +52042,7 @@
      "nutrienteId": "calcio",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "magnesio",
@@ -58023,7 +58023,7 @@
      "nutrienteId": "niacina",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "vitamina-c",
@@ -58816,7 +58816,7 @@
      "nutrienteId": "fibra",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "cinzas",
@@ -58995,7 +58995,7 @@
      "nutrienteId": "fibra",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "cinzas",
@@ -62050,7 +62050,7 @@
      "nutrienteId": "calcio",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "magnesio",
@@ -74030,7 +74030,7 @@
      "nutrienteId": "fibra",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "cinzas",
@@ -74209,7 +74209,7 @@
      "nutrienteId": "fibra",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "cinzas",
@@ -74388,7 +74388,7 @@
      "nutrienteId": "fibra",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "cinzas",
@@ -80167,7 +80167,7 @@
      "nutrienteId": "retinol",
      "unidade": "mcg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "vitamina-a-re",
@@ -80237,31 +80237,31 @@
      "nutrienteId": "umidade",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "energia",
      "unidade": "kcal",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "energia-kj",
      "unidade": "kJ",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "proteina",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "lipideos",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "colesterol",
@@ -80273,79 +80273,79 @@
      "nutrienteId": "carboidrato",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "fibra",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "cinzas",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "calcio",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "magnesio",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "manganes",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "fosforo",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "ferro",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "sodio",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "potassio",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "cobre",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "zinco",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "retinol",
      "unidade": "mcg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "vitamina-a-re",
@@ -80363,25 +80363,25 @@
      "nutrienteId": "tiamina",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "riboflavina",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "piridoxina",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "niacina",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "vitamina-c",
@@ -81486,31 +81486,31 @@
      "nutrienteId": "umidade",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "energia",
      "unidade": "kcal",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "energia-kj",
      "unidade": "kJ",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "proteina",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "lipideos",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "colesterol",
@@ -81522,7 +81522,7 @@
      "nutrienteId": "carboidrato",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "fibra",
@@ -81665,31 +81665,31 @@
      "nutrienteId": "umidade",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "energia",
      "unidade": "kcal",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "energia-kj",
      "unidade": "kJ",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "proteina",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "lipideos",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "colesterol",
@@ -81701,7 +81701,7 @@
      "nutrienteId": "carboidrato",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "fibra",
@@ -81994,7 +81994,7 @@
      "nutrienteId": "vitamina-c",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     }
    ],
    "porcoes": [],
@@ -104354,7 +104354,7 @@
      "nutrienteId": "manganes",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "fosforo",
@@ -104532,7 +104532,7 @@
      "nutrienteId": "manganes",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "fosforo",
@@ -105359,109 +105359,109 @@
      "nutrienteId": "umidade",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "energia",
      "unidade": "kcal",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "energia-kj",
      "unidade": "kJ",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "proteina",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "lipideos",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "colesterol",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "carboidrato",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "fibra",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "cinzas",
      "unidade": "g",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "calcio",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "magnesio",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "manganes",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "fosforo",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "ferro",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "sodio",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "potassio",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "cobre",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "zinco",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "retinol",
@@ -105485,31 +105485,31 @@
      "nutrienteId": "tiamina",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "riboflavina",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "piridoxina",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "niacina",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     },
     {
      "nutrienteId": "vitamina-c",
      "unidade": "mg",
      "valorPor100g": null,
-     "estado": "naoDisponivel"
+     "estado": "emReavaliacao"
     }
    ],
    "porcoes": [],

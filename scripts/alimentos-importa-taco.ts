@@ -95,6 +95,7 @@ const CATEGORIAS: Record<string, Categoria> = {
  *
  *   "Tr"     → traço
  *   "NA"     → não aplicável
+ *   "*"      → análise sendo reavaliada pela fonte
  *   em branco → "análises não solicitadas" (a legenda diz isso literalmente)
  *
  * Nenhum dos três vira zero. Essa é a decisão que separa uma tabela honesta
@@ -109,6 +110,14 @@ function leValor(c: { texto: string; numerico: boolean } | undefined, nutrienteI
   const t = c.texto.toLowerCase();
   if (t === "tr") return { ...base, valorPor100g: null, estado: "traco" };
   if (t === "na") return { ...base, valorPor100g: null, estado: "naoAplicavel" };
+  /*
+   * "*" é o quinto estado, e a legenda o define: "as análises estão sendo
+   * reavaliadas". Não é ausência de dado nem zero — é a fonte dizendo que
+   * ainda está olhando. O leite de vaca integral inteiro está assim nesta
+   * edição, e tratar isso como "não analisado" esconderia que a TACO tem uma
+   * posição sobre o assunto.
+   */
+  if (t === "*") return { ...base, valorPor100g: null, estado: "emReavaliacao" };
 
   const n = Number(c.texto.replace(/\./g, "").replace(",", "."));
   const direto = Number(c.texto);

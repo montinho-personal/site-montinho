@@ -80,5 +80,8 @@ export const DEFINICAO_TRACO =
 export const DEFINICAO_BRANCO =
   "Um campo vazio na TACO significa que a análise daquele nutriente não foi solicitada para aquele alimento — não que o nutriente seja zero.";
 
+export const DEFINICAO_REAVALIACAO =
+  "Um asterisco na TACO indica que aquela análise está sendo reavaliada — a fonte não publica valor nesta edição. É o caso do leite de vaca integral.";
+
 export const DEFINICAO_NA =
   "\"NA\" na TACO marca nutriente não aplicável ao alimento.";

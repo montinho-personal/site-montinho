@@ -95,6 +95,7 @@ export function formataNumero(valor: number, unidade: Unidade): string {
 /** O símbolo de cada estado não-numérico, com o significado dito por extenso. */
 export const SIMBOLO_TRACO = "tr";
 export const SIMBOLO_NAO_APLICAVEL = "n/a";
+export const SIMBOLO_REAVALIACAO = "em revisão";
 export const SIMBOLO_INDISPONIVEL = "—";
 
 /**
@@ -108,6 +109,8 @@ export const EXPLICA_ESTADO: Record<EstadoDado, string> = {
   traco:
     "Traço: presente em quantidade pequena demais para a fonte quantificar — abaixo do limite de detecção do método.",
   naoAplicavel: "A fonte marca este nutriente como não aplicável a este alimento.",
+  emReavaliacao:
+    "A fonte informa que esta análise está sendo reavaliada e não publica valor nesta edição.",
   naoDisponivel: "A fonte não analisou este nutriente neste alimento.",
 };
 
@@ -121,6 +124,7 @@ export const EXPLICA_ESTADO: Record<EstadoDado, string> = {
 export function formataValor(v: ValorEscalado): string {
   if (v.estado === "traco") return SIMBOLO_TRACO;
   if (v.estado === "naoAplicavel") return SIMBOLO_NAO_APLICAVEL;
+  if (v.estado === "emReavaliacao") return SIMBOLO_REAVALIACAO;
   if (v.estado === "naoDisponivel" || v.valor === null) return SIMBOLO_INDISPONIVEL;
   return `${formataNumero(v.valor, v.unidade)} ${v.unidade}`;
 }

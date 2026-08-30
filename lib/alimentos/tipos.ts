@@ -12,6 +12,9 @@
  *         (ou 0,05 / 0,005 conforme as casas decimais), ou abaixo do limite
  *         de quantificação do método.
  *   NA  — "não aplicável". O nutriente não faz sentido naquele alimento.
+ *   *   — a própria TACO informa que aquela análise está sendo reavaliada.
+ *         É o caso do leite de vaca integral, que nesta edição não traz
+ *         valor nenhum de macronutriente.
  *   —   — em branco na fonte, que a legenda define como "análises não
  *         solicitadas". O nutriente existe, e ninguém mediu.
  *
@@ -38,6 +41,8 @@ export type EstadoDado =
   | "traco"
   /** "NA" na fonte: o nutriente não se aplica àquele alimento. */
   | "naoAplicavel"
+  /** "*" na fonte: a TACO está reavaliando esta análise. */
+  | "emReavaliacao"
   /** Em branco na fonte: análise não solicitada. O dado simplesmente não existe. */
   | "naoDisponivel";
 
