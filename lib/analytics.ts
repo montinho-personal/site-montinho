@@ -136,6 +136,8 @@ export type AnalyticsEvent =
   | "macro_meal_split_open"
   | "macro_methodology_open"
   | "macro_deficit_click"
+  /** Clique no botão que leva de volta ao campo que falta preencher. */
+  | "macro_fill_jump"
   | "macro_protein_calculator_click"
   | "macro_cardapio_click"
   | "macro_article_click"

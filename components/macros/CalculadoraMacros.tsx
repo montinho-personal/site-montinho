@@ -134,6 +134,37 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
     }
   }, [r, placement]);
 
+  /**
+   * O atalho de volta para o campo que falta.
+   *
+   * O aviso de "informe suas calorias e seu peso" aparece no fim do bloco de
+   * resultado, e no celular o campo já saiu da tela há muito scroll. A pessoa
+   * lê o que precisa fazer e não tem como fazer dali — foi reclamação de uso.
+   *
+   * Ele manda para o campo que realmente falta, não sempre para o primeiro:
+   * quem veio do déficit já chega com as calorias preenchidas, e mandar essa
+   * pessoa para o campo de calorias seria mandá-la para o lugar errado.
+   *
+   * O foco vem com preventScroll porque focar um input rola a página na hora,
+   * de forma abrupta, e brigaria com o scroll suave que vem logo depois.
+   */
+  const faltaKcal = !kcalOk;
+  const idDoCampoQueFalta = `${faltaKcal ? "kcal" : "peso"}-${placement}`;
+  const rotuloDoBotaoDeFalta = !kcalOk && !pesoOk
+    ? "Preencher calorias e peso"
+    : faltaKcal
+      ? "Preencher as calorias"
+      : "Preencher o peso";
+
+  const vaiParaCampoQueFalta = () => {
+    /* Sem parâmetro de campo: o evento mede se o atalho é usado, e nada mais. */
+    trackEvent("macro_fill_jump", { placement });
+    const el = document.getElementById(idDoCampoQueFalta) as HTMLInputElement | null;
+    if (!el) return;
+    el.focus({ preventScroll: true });
+    el.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+
   const campo =
     "w-full bg-black border border-white/25 focus:border-[#BA9E50] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#BA9E50] text-white text-3xl font-bold px-4 py-3.5 transition-colors min-h-[56px]";
   const rotulo = "block text-gray-300 text-sm font-medium mb-2";
@@ -331,6 +362,13 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
             <p className="text-gray-500 text-sm mt-3">
               Nada é enviado para lugar nenhum: a conta acontece no seu próprio navegador.
             </p>
+            <button
+              type="button"
+              onClick={() => vaiParaCampoQueFalta()}
+              className="mt-5 bg-white text-black px-6 py-3 text-[15px] font-semibold min-h-[48px]"
+            >
+              {rotuloDoBotaoDeFalta}
+            </button>
           </div>
         ) : r.impossivel ? (
           <div className="border border-[#BA9E50]/50 bg-[#BA9E50]/[0.05] p-6">
