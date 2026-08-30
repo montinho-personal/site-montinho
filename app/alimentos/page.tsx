@@ -5,6 +5,7 @@ import { alimentosIndexaveis, todosAlimentos, NOME_CATEGORIA } from "@/lib/alime
 import { ORDEM_LEVE, type AlimentoLeve } from "@/lib/alimentos/indice";
 import { AVISO_NAO_SUBSTITUI, AVISO_VARIACAO, FONTES } from "@/lib/alimentos/fontes";
 import BuscaAlimentos from "@/components/alimentos/BuscaAlimentos";
+import Descoberta from "@/components/alimentos/Descoberta";
 
 /**
  * A central do buscador nutricional.
@@ -120,6 +121,17 @@ export default function AlimentosPage() {
             {todos.length} alimentos da {FONTES.TACO.atribuicao}. A busca acontece no seu aparelho — nada do que você
             digita é enviado para lugar nenhum.
           </p>
+        </div>
+      </section>
+
+      {/*
+          Descoberta vem DEPOIS da busca, e a ordem não é acidental: quem
+          chega com um alimento na cabeça resolve na primeira tela e nem
+          precisa rolar. Quem não sabe o que procurar encontra aqui.
+      */}
+      <section className="py-10 bg-black border-t border-white/10">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Descoberta alimentos={leves} />
         </div>
       </section>
 

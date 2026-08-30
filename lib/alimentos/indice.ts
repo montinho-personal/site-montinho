@@ -26,10 +26,18 @@ export interface AlimentoLeve {
   /** aliases */
   a: string[];
   /**
-   * Os cinco principais por 100 g, na ordem: energia, proteína, carboidrato,
-   * lipídeos, fibra. `null` quando o valor não é número — traço, não
-   * aplicável ou não analisado. A distinção fina fica para a página do
-   * alimento; aqui, o que importa é não inventar zero.
+   * Os valores por 100 g, na ordem de ORDEM_LEVE.
+   *
+   * Os CINCO PRIMEIROS são o card principal e essa ordem é fixa — telas
+   * dependem dos índices 0 a 4. Ferro e potássio vêm depois porque servem só
+   * à descoberta ("alimentos com mais ferro"), e não ao card: acrescentá-los
+   * no fim mantém os índices antigos válidos.
+   *
+   * `null` quando o valor não é número — traço, não aplicável, em reavaliação
+   * ou não analisado. A distinção fina fica para a página do alimento; aqui,
+   * o que importa é não inventar zero. E não inventar zero é o que impede um
+   * ranking de "mais ferro" de ordenar alimento não-medido como se tivesse
+   * zero ferro.
    */
   v: (number | null)[];
   /**
@@ -46,4 +54,10 @@ export interface AlimentoLeve {
   i: boolean;
 }
 
-export const ORDEM_LEVE = ["energia", "proteina", "carboidrato", "lipideos", "fibra"] as const;
+export const ORDEM_LEVE = [
+  "energia", "proteina", "carboidrato", "lipideos", "fibra",
+  "ferro", "potassio",
+] as const;
+
+/** Quantos dos valores acima formam o card principal. */
+export const QTD_PRINCIPAIS = 5;

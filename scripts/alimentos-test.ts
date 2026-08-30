@@ -48,6 +48,7 @@ import { ARTIGOS_COM_FICHA, FICHAS_POR_ARTIGO } from "../lib/alimentos/artigos";
 import { nomeNatural, todosAlimentos } from "../lib/alimentos/base";
 import { NUTRIENTE_POR_ID } from "../lib/alimentos/nutrientes";
 import { ALIMENTOS_INDEXAVEIS } from "../lib/alimentos/indexaveis";
+import { ORDEM_LEVE, QTD_PRINCIPAIS } from "../lib/alimentos/indice";
 
 let falhas = 0;
 function ok(nome: string, cond: boolean, detalhe = "") {
@@ -588,6 +589,54 @@ bloco("11. MEDIDA CASEIRA — SÓ COM PESO DOCUMENTADO");
 
     console.log(`\n  ${entradas.length} alimentos com medida caseira · ${todasMedidas.length} medidas`);
   }
+}
+
+// ─── 13 ─────────────────────────────────────────────────────────────────────
+bloco("13. DESCOBERTA — O RANKING NÃO PODE MENTIR SOZINHO");
+
+/**
+ * Ordenar por nutriente por 100 g é trivial de programar e traiçoeiro de
+ * publicar. As regras abaixo são o que separa uma lista útil de uma lista
+ * tecnicamente correta e inútil — e as duas primeiras foram escritas depois
+ * de ver a saída real.
+ */
+{
+  const componente = readFileSync("components/alimentos/Descoberta.tsx", "utf8");
+
+  ok("bebidas e condimentos ficam fora do ranking",
+    /FORA_DO_RANKING[^=]*=\s*\["bebidas", "miscelaneas"\]/.test(componente),
+    "100 g de chá é água; 100 g de café em pó é um pote de café");
+
+  ok("e a exclusão é dita na tela, não escondida",
+    /Bebidas e condimentos ficam\s*\n?\s*de fora/.test(componente.replace(/\s+/g, " ")) ||
+    /Bebidas e condimentos ficam de fora/.test(componente.replace(/\s+/g, " ")));
+
+  ok("alimento sem o nutriente medido sai da lista, não vai para o fim",
+    /return a\.v\[criterio\.i\] !== null;/.test(componente),
+    "ordenar ausência como zero afirmaria que o alimento não tem o nutriente");
+
+  ok("o teor de água aparece na linha do alimento seco",
+    /alimento seco — \{formataNumero\(a\.u/.test(componente));
+
+  ok("a lista nunca chama alimento de melhor ou pior",
+    /contém mais nesta comparação/.test(componente) &&
+    !/\bo melhor alimento\b|\bmais saudável\b|\bpior alimento\b/i.test(componente));
+
+  /* Só "menos calorias" inverte a ordem. */
+  ok("existe um critério ascendente e os demais são descendentes",
+    (componente.match(/desc: false/g) ?? []).length === 1 &&
+    (componente.match(/desc: true/g) ?? []).length >= 4);
+}
+
+/** O índice leve cresceu para a descoberta sem quebrar o card. */
+{
+  ok("o índice leve carrega sete valores", ORDEM_LEVE.length === 7, String(ORDEM_LEVE.length));
+  ok("e os cinco primeiros continuam sendo os do card",
+    ORDEM_LEVE.slice(0, QTD_PRINCIPAIS).join(",") === "energia,proteina,carboidrato,lipideos,fibra",
+    ORDEM_LEVE.slice(0, QTD_PRINCIPAIS).join(","));
+  ok("a busca só renderiza os cinco do card",
+    /slice\(0, QTD_PRINCIPAIS\)/.test(readFileSync("components/alimentos/BuscaAlimentos.tsx", "utf8")),
+    "sem o corte, sairiam duas linhas com rótulo indefinido");
 }
 
 /** A fonte das medidas está registrada e travada até ser conferida. */
