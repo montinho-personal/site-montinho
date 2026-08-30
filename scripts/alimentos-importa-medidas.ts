@@ -104,6 +104,24 @@ const VINCULOS: Record<string, Vinculo> = {
   "abacate-cru": { codigo: "6802701", descricao: "ABACATE", preparacoes: ["CRU(A)", "NAO SE APLICA"] },
   "maca-fuji-com-casca-crua": { codigo: "6803001", descricao: "MACA", preparacoes: ["CRU(A)", "NAO SE APLICA"] },
 
+  /*
+   * Pão francês e "pão de sal" são o mesmo pão com nomes regionais — como
+   * cacetinho e pão d'água. O IBGE registra pelo nome que a maioria dos
+   * informantes usou; a TACO, pelo outro.
+   */
+  "pao-trigo-frances": { codigo: "8000105", descricao: "PAO DE SAL", preparacoes: ["NAO SE APLICA"] },
+  "macarrao-instantaneo": { codigo: "6504802", descricao: "MACARRAO INSTANTANEO", preparacoes: ["NAO SE APLICA", "CROZIDO(A)"] },
+  /*
+   * A TACO descreve a tapioca já com manteiga e o IBGE, a goma. Para o VALOR
+   * nutricional isso importa e cada base fica com o seu; para o PESO de uma
+   * tapioca não importa — a medida descreve o disco, não a receita.
+   */
+  "tapioca-com-manteiga": { codigo: "6501516", descricao: "TAPIOCA DE GOMA", preparacoes: ["NAO SE APLICA", "CROZIDO(A)"] },
+  "queijo-minas-frescal": { codigo: "7902001", descricao: "QUEIJO DE MINAS", preparacoes: ["NAO SE APLICA"] },
+  "queijo-mozarela": { codigo: "7901801", descricao: "QUEIJO MUZARELLA", preparacoes: ["NAO SE APLICA"] },
+  /* Castanha-do-Brasil e castanha-do-Pará são a mesma castanha. */
+  "castanha-do-brasil-crua": { codigo: "6600701", descricao: "CASTANHA DO PARA", preparacoes: ["NAO SE APLICA", "CRU(A)"] },
+
   "iogurte-natural": { codigo: "7901204", descricao: "IOGURTE NATURAL", preparacoes: ["NAO SE APLICA"] },
   "queijo-requeijao-cremoso": { codigo: "7902901", descricao: "REQUEIJAO", preparacoes: ["NAO SE APLICA"] },
   "azeite-de-oliva-extra-virgem": { codigo: "8400101", descricao: "AZEITE DE OLIVA", preparacoes: ["NAO SE APLICA"] },
