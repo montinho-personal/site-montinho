@@ -5,7 +5,7 @@ import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { buscaAlimentos, montaIndice } from "@/lib/alimentos/busca";
 import { GRAMAS_MAX, GRAMAS_PADRAO, formataNumero, leGramas } from "@/lib/alimentos/escala";
-import type { AlimentoLeve } from "@/lib/alimentos/indice";
+import { QTD_PRINCIPAIS, type AlimentoLeve } from "@/lib/alimentos/indice";
 import type { Alimento } from "@/lib/alimentos/tipos";
 
 /**
@@ -262,7 +262,8 @@ export default function BuscaAlimentos({
 
           {/* Os cinco números */}
           <div aria-live="polite" className="divide-y divide-white/10 border-y border-white/10">
-            {escolhido.v.map((valor, i) => (
+            {/* Só os cinco do card: o índice leve carrega mais que isso. */}
+            {escolhido.v.slice(0, QTD_PRINCIPAIS).map((valor, i) => (
               <div key={ROTULOS[i]} className="flex items-baseline justify-between py-3.5">
                 <span className="text-gray-300">{ROTULOS[i]}</span>
                 <span className="text-white text-lg font-bold tabular-nums">

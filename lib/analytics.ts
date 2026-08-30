@@ -158,6 +158,9 @@ export type AnalyticsEvent =
   | "food_compare_open"
   | "food_portion_select"
   | "food_protein_target_change"
+  /* O critério é categoria de produto, não dado da pessoa — pode ir. */
+  | "food_discover_sort"
+  | "food_discover_filter"
   | "food_page_view"
   | "food_protein_calculator_click"
   | "food_macros_click"
