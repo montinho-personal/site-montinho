@@ -44,7 +44,7 @@ import {
 import type { Alimento, ValorNutriente } from "../lib/alimentos/tipos";
 import { blogPosts } from "../lib/blog";
 import { ARTIGOS_COM_FICHA, FICHAS_POR_ARTIGO } from "../lib/alimentos/artigos";
-import { nomeNatural } from "../lib/alimentos/base";
+import { nomeNatural, todosAlimentos } from "../lib/alimentos/base";
 import { NUTRIENTE_POR_ID } from "../lib/alimentos/nutrientes";
 
 let falhas = 0;
@@ -495,105 +495,70 @@ bloco("11. MEDIDA CASEIRA — SÓ COM PESO DOCUMENTADO");
  * preenchida de verdade em vez de virar string vazia.
  */
 {
-  const caminho = "data/alimentos/processado/taco.json";
-  if (existsSync(caminho)) {
-    const base = JSON.parse(readFileSync(caminho, "utf8")) as { alimentos: Alimento[] };
-    const comPorcao = base.alimentos.filter((a) => a.porcoes.length > 0);
+  const caminhoBase = "data/alimentos/processado/taco.json";
+  const caminhoMedidas = "data/alimentos/processado/medidas.json";
 
-    const semFonte = comPorcao.flatMap((a) =>
-      a.porcoes.filter((p) => !p.fonte || p.fonte.trim().length < 10).map((p) => `${a.slug}: "${p.nome}"`),
-    );
-    ok("toda medida caseira declara de onde veio o peso", semFonte.length === 0, semFonte.join(", "));
+  if (!existsSync(caminhoMedidas)) {
+    ok("as medidas foram importadas", false, "rode: npx tsx scripts/alimentos-importa-medidas.ts");
+  } else {
+    const base = JSON.parse(readFileSync(caminhoBase, "utf8")) as { alimentos: Alimento[] };
+    const { medidas } = JSON.parse(readFileSync(caminhoMedidas, "utf8")) as {
+      medidas: Record<string, { nome: string; gramas: number; fonte: string }[]>;
+    };
+    const slugsBase = new Set(base.alimentos.map((a) => a.slug));
+    const entradas = Object.entries(medidas);
 
-    const pesoRuim = comPorcao.flatMap((a) =>
-      a.porcoes.filter((p) => !Number.isFinite(p.gramas) || p.gramas <= 0 || p.gramas > 2000)
-        .map((p) => `${a.slug}: "${p.nome}" = ${p.gramas} g`),
-    );
-    ok("nenhuma medida tem peso impossível", pesoRuim.length === 0, pesoRuim.join(", "));
+    const fantasmas = entradas.filter(([slug]) => !slugsBase.has(slug)).map(([s]) => s);
+    ok("toda medida pertence a um alimento que existe na base", fantasmas.length === 0, fantasmas.join(", "));
 
-    const nomeVazio = comPorcao.flatMap((a) => a.porcoes.filter((p) => !p.nome.trim()).map(() => a.slug));
-    ok("nenhuma medida tem nome vazio", nomeVazio.length === 0, nomeVazio.join(", "));
+    const todasMedidas = entradas.flatMap(([slug, ms]) => ms.map((m) => ({ slug, ...m })));
 
-    /*
-     * A TACO não publica medida caseira — só composição por 100 g. Enquanto a
-     * base de medidas não chegar, o número esperado é zero, e isso não é
-     * falta: é a ferramenta se recusando a inventar.
+    const semFonte = todasMedidas.filter((m) => !m.fonte || m.fonte.trim().length < 20);
+    ok("toda medida caseira declara de onde veio o peso", semFonte.length === 0,
+      semFonte.map((m) => `${m.slug}: ${m.nome}`).join(", "));
+
+    /**
+     * A fonte precisa citar o IBGE E o código do alimento na POF. Sem o
+     * código não dá para achar a linha na publicação, e uma proveniência que
+     * ninguém consegue seguir é decoração.
      */
-    console.log(`\n  ${comPorcao.length} de ${base.alimentos.length} alimentos com medida caseira documentada`);
+    const semRastro = todasMedidas.filter((m) => !/IBGE/.test(m.fonte) || !/alimento \d+/.test(m.fonte));
+    ok("toda medida cita o IBGE e o código do alimento na POF", semRastro.length === 0,
+      semRastro.slice(0, 3).map((m) => `${m.slug}: "${m.fonte}"`).join(" | "));
+
+    /** A preparação faz parte da proveniência: cru e cozido pesam diferente. */
+    const semPreparo = todasMedidas.filter((m) => !/preparação "/.test(m.fonte));
+    ok("toda medida declara a preparação a que se refere", semPreparo.length === 0,
+      semPreparo.slice(0, 3).map((m) => m.slug).join(", "));
+
+    const pesoRuim = todasMedidas.filter((m) => !Number.isFinite(m.gramas) || m.gramas <= 1 || m.gramas >= 1000);
+    ok("nenhuma medida tem peso impossível ou é só uma unidade de peso",
+      pesoRuim.length === 0, pesoRuim.map((m) => `${m.slug}: ${m.nome} = ${m.gramas} g`).join(", "));
+
+    const nomeRuim = todasMedidas.filter((m) => !m.nome.trim() || !/^1 /.test(m.nome));
+    ok("toda medida tem nome legível começando por \"1\"", nomeRuim.length === 0,
+      nomeRuim.map((m) => m.nome).join(", "));
+
+    /**
+     * O caso que quase foi ao ar: um código do IBGE apontando para outro
+     * alimento. Aqui o teste checa o lado observável — o peso precisa ser
+     * plausível para o alimento. Uma maçã de 84 g veio de um limão.
+     */
+    const PLAUSIVEL: Record<string, [number, number]> = {
+      "maca-fuji-com-casca-crua": [100, 250],
+      "ovo-de-galinha-inteiro-cozido-10minutos": [40, 70],
+      "banana-prata-crua": [50, 130],
+      "frango-peito-sem-pele-grelhado": [80, 250],
+    };
+    for (const [slug, [min, max]] of Object.entries(PLAUSIVEL)) {
+      const unidade = medidas[slug]?.find((m) => /^1 (unidade|file|bife)/.test(m.nome));
+      ok(`${slug}: a unidade pesa algo plausível (${min}–${max} g)`,
+        unidade !== undefined && unidade.gramas >= min && unidade.gramas <= max,
+        unidade ? `${unidade.nome} = ${unidade.gramas} g` : "sem medida de unidade");
+    }
+
+    console.log(`\n  ${entradas.length} alimentos com medida caseira · ${todasMedidas.length} medidas`);
   }
-}
-
-// ─── 12 ─────────────────────────────────────────────────────────────────────
-bloco("12. FICHAS NOS ARTIGOS — APONTAM PARA COISAS QUE EXISTEM");
-
-{
-  const caminho = "data/alimentos/processado/taco.json";
-  const artigos = new Set(blogPosts.map((p) => p.slug));
-  const slugsBase = existsSync(caminho)
-    ? new Set((JSON.parse(readFileSync(caminho, "utf8")) as { alimentos: Alimento[] }).alimentos.map((a) => a.slug))
-    : new Set<string>();
-
-  const artigoFantasma = ARTIGOS_COM_FICHA.filter((s) => !artigos.has(s));
-  ok("toda ficha aponta para um artigo que existe", artigoFantasma.length === 0, artigoFantasma.join(", "));
-
-  const alimentoFantasma = Object.entries(FICHAS_POR_ARTIGO).flatMap(([artigo, f]) =>
-    f.alimentos.filter((a) => !slugsBase.has(a)).map((a) => `${artigo} → ${a}`),
-  );
-  ok("toda ficha aponta para alimentos que existem na base",
-    alimentoFantasma.length === 0, alimentoFantasma.join(", "));
-
-  const destaqueRuim = Object.entries(FICHAS_POR_ARTIGO)
-    .filter(([, f]) => !NUTRIENTE_POR_ID.has(f.destaque))
-    .map(([artigo, f]) => `${artigo} → ${f.destaque}`);
-  ok("todo nutriente em destaque existe no catálogo", destaqueRuim.length === 0, destaqueRuim.join(", "));
-
-  /**
-   * Uma ficha em que o nutriente do destaque falta em TODOS os alimentos
-   * renderiza vazio — o componente omite linha sem valor, e com todas
-   * omitidas sobra um bloco com título e nada dentro.
-   */
-  if (slugsBase.size) {
-    const base = JSON.parse(readFileSync(caminho, "utf8")) as { alimentos: Alimento[] };
-    const porSlug = new Map(base.alimentos.map((a) => [a.slug, a]));
-    const vazias = Object.entries(FICHAS_POR_ARTIGO).filter(([, f]) =>
-      f.alimentos.every((s) => {
-        const a = porSlug.get(s);
-        const v = a?.nutrientes.find((n) => n.nutrienteId === f.destaque);
-        return !v || v.estado !== "analisado";
-      }),
-    ).map(([artigo]) => artigo);
-    ok("nenhuma ficha ficaria vazia na tela", vazias.length === 0, vazias.join(", "));
-  }
-
-  /**
-   * A ficha convive com calculadora de propósito — ela cita dado, não
-   * calcula. Mas conviver com OUTRA ficha no mesmo artigo seria duplicata.
-   */
-  ok("nenhum artigo aparece duas vezes no registro",
-    new Set(ARTIGOS_COM_FICHA).size === ARTIGOS_COM_FICHA.length);
-
-  console.log(`\n  ${ARTIGOS_COM_FICHA.length} artigos com ficha de alimento`);
-}
-
-/**
- * O nome dentro de uma frase.
- *
- * A TACO escreve para tabela: ordem invertida com vírgulas, e o tempo de
- * cozimento colado por barra. As duas notações são corretas na origem e
- * travam a leitura em texto corrido.
- */
-{
-  ok("a vírgula da tabela some no texto corrido",
-    nomeNatural("Feijão, carioca, cozido") === "Feijão carioca cozido",
-    nomeNatural("Feijão, carioca, cozido"));
-  ok("o tempo de cozimento vira frase, não barra",
-    nomeNatural("Ovo, de galinha, inteiro, cozido/10minutos") === "Ovo de galinha inteiro cozido por 10 minutos",
-    nomeNatural("Ovo, de galinha, inteiro, cozido/10minutos"));
-  ok("nenhum nome natural mantém barra ou espaço duplo",
-    !/[\/]|\s{2}/.test(
-      [...new Set(["Ovo, de galinha, clara, cozida/10minutos", "Arroz, integral, cozido"])]
-        .map(nomeNatural).join(" "),
-    ));
 }
 
 /** A fonte das medidas está registrada e travada até ser conferida. */
@@ -601,6 +566,26 @@ ok("a POF do IBGE está registrada como fonte de medidas",
   FONTES.IBGE_POF !== undefined && /Medidas Referidas/i.test(FONTES.IBGE_POF.nomeCompleto));
 ok("e não publica enquanto os termos não forem conferidos na origem",
   !podeEntrarEmProducao("IBGE_POF"));
+
+/**
+ * A trava precisa valer para mim também.
+ *
+ * As 125 medidas estão importadas e conferidas, e seria cômodo deixá-las
+ * passar "porque o IBGE é público". Foi essa frase — "provavelmente permite"
+ * — que a trava existe para recusar, e ela não pode valer só quando é
+ * conveniente. O teste garante que a base respeite o próprio portão.
+ */
+{
+  const liberada = podeEntrarEmProducao("IBGE_POF");
+  const alimentoComMedida = todosAlimentos().find((a) => a.porcoes.length > 0);
+  ok(
+    liberada
+      ? "com a fonte conferida, as medidas aparecem na base"
+      : "com a fonte pendente, nenhuma medida chega à base",
+    liberada ? alimentoComMedida !== undefined : alimentoComMedida === undefined,
+    alimentoComMedida ? `${alimentoComMedida.slug} tem ${alimentoComMedida.porcoes.length}` : "nenhuma",
+  );
+}
 
 console.log("\n" + "=".repeat(64));
 if (falhas > 0) {

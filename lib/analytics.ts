@@ -79,6 +79,8 @@ export type AnalyticsEvent =
   | "protein_food_examples_open"
   | "protein_article_click"
   | "protein_cta_click"
+  /** Ponte da meta de proteína para a tabela nutricional de alimentos. */
+  | "protein_food_search_click"
 
   /**
    * Calculadora de déficit calórico. Mesma regra de privacidade, e aqui ela
@@ -142,6 +144,7 @@ export type AnalyticsEvent =
   | "macro_cardapio_click"
   | "macro_article_click"
   | "macro_cta_click"
+  | "macro_food_search_click"
 
   /**
    * Buscador nutricional. O TERMO pesquisado nunca entra em parâmetro: é

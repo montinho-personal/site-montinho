@@ -1,0 +1,696 @@
+{
+ "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE",
+ "medidas": {
+  "arroz-tipo-1-cozido": [
+   {
+    "nome": "1 concha",
+    "gramas": 100,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6300101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 escumadeira",
+    "gramas": 85,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6300101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 45,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6300101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 25,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6300101, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "arroz-integral-cozido": [
+   {
+    "nome": "1 concha",
+    "gramas": 117,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6300201, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 escumadeira",
+    "gramas": 59,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6300201, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 63,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6300201, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 20,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6300201, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "feijao-carioca-cozido": [
+   {
+    "nome": "1 concha",
+    "gramas": 140,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6303102, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 escumadeira",
+    "gramas": 35,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6303102, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 35,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6303102, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 17,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6303102, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "feijao-preto-cozido": [
+   {
+    "nome": "1 concha",
+    "gramas": 140,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6303102, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 escumadeira",
+    "gramas": 35,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6303102, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 35,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6303102, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 17,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6303102, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "lentilha-cozida": [
+   {
+    "nome": "1 concha",
+    "gramas": 160,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6302901, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 escumadeira",
+    "gramas": 32,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6302901, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 32,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6302901, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 18,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6302901, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "grao-de-bico-cru": [
+   {
+    "nome": "1 concha",
+    "gramas": 120,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6302801, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 45,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6302801, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 22,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6302801, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 36,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6302801, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "frango-peito-sem-pele-grelhado": [
+   {
+    "nome": "1 unidade",
+    "gramas": 180,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7800401, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 file",
+    "gramas": 100,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7800401, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 bife",
+    "gramas": 100,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7800401, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 fatia",
+    "gramas": 180,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7800401, preparação \"CROZIDO(A)\""
+   }
+  ],
+  "frango-peito-sem-pele-cru": [
+   {
+    "nome": "1 unidade",
+    "gramas": 180,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7800401, preparação \"CRU(A)\""
+   },
+   {
+    "nome": "1 pedaco",
+    "gramas": 180,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7800401, preparação \"CRU(A)\""
+   }
+  ],
+  "carne-bovina-patinho-sem-gordura-grelhado": [
+   {
+    "nome": "1 bife",
+    "gramas": 100,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7100501, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 fatia",
+    "gramas": 35,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7100501, preparação \"GRELHADO(A)/BRASA/CHURRASCO\""
+   },
+   {
+    "nome": "1 pedaco",
+    "gramas": 35,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7100501, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 75,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7100501, preparação \"CROZIDO(A)\""
+   }
+  ],
+  "carne-bovina-acem-moido-cozido": [
+   {
+    "nome": "1 bife",
+    "gramas": 100,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7100801, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 70,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7100801, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 pedaco",
+    "gramas": 35,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7100801, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 75,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7100801, preparação \"CROZIDO(A)\""
+   }
+  ],
+  "ovo-de-galinha-inteiro-cozido-10minutos": [
+   {
+    "nome": "1 unidade",
+    "gramas": 45,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7803301, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 45,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7803301, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 15,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7803301, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 pedaco",
+    "gramas": 22.5,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7803301, preparação \"CROZIDO(A)\""
+   }
+  ],
+  "ovo-de-galinha-inteiro-cru": [
+   {
+    "nome": "1 unidade",
+    "gramas": 45,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7803301, preparação \"CRU(A)\""
+   },
+   {
+    "nome": "1 metade",
+    "gramas": 22.5,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7803301, preparação \"CRU(A)\""
+   }
+  ],
+  "sardinha-conserva-em-oleo": [
+   {
+    "nome": "1 unidade",
+    "gramas": 41.5,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7703002, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 32,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7703002, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 16,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7703002, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 41.5,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7703002, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "atum-conserva-em-oleo": [
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 16,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7703402, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 112,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7703402, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 lata (n. e.)",
+    "gramas": 135,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7703402, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "batata-inglesa-cozida": [
+   {
+    "nome": "1 unidade",
+    "gramas": 140,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6400101, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 fatia",
+    "gramas": 16,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6400101, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 concha",
+    "gramas": 80,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6400101, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 escumadeira",
+    "gramas": 80,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6400101, preparação \"CROZIDO(A)\""
+   }
+  ],
+  "batata-doce-cozida": [
+   {
+    "nome": "1 unidade",
+    "gramas": 355,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6400401, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 fatia",
+    "gramas": 70,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6400401, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 concha",
+    "gramas": 100,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6400401, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 100,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6400401, preparação \"CROZIDO(A)\""
+   }
+  ],
+  "mandioca-cozida": [
+   {
+    "nome": "1 fatia",
+    "gramas": 100,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6400601, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 concha",
+    "gramas": 120,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6400601, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 escumadeira",
+    "gramas": 60,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6400601, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 60,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6400601, preparação \"CROZIDO(A)\""
+   }
+  ],
+  "aveia-flocos-crua": [
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 30,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6500401, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 15,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6500401, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 37.5,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6500401, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "cenoura-crua": [
+   {
+    "nome": "1 unidade",
+    "gramas": 120,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6401201, preparação \"CRU(A)\""
+   },
+   {
+    "nome": "1 fatia",
+    "gramas": 5,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6401201, preparação \"CRU(A)\""
+   },
+   {
+    "nome": "1 concha",
+    "gramas": 48,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6401201, preparação \"CRU(A)\""
+   },
+   {
+    "nome": "1 escumadeira",
+    "gramas": 48,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6401201, preparação \"CRU(A)\""
+   }
+  ],
+  "tomate-com-semente-cru": [
+   {
+    "nome": "1 unidade",
+    "gramas": 100,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6705101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 fatia",
+    "gramas": 15,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6705101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 concha",
+    "gramas": 120,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6705101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 escumadeira",
+    "gramas": 60,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6705101, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "alface-crespa-crua": [
+   {
+    "nome": "1 unidade",
+    "gramas": 200,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6700101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 concha",
+    "gramas": 32,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6700101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 escumadeira",
+    "gramas": 16,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6700101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 16,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6700101, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "brocolis-cozido": [
+   {
+    "nome": "1 unidade",
+    "gramas": 60,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6701704, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 concha",
+    "gramas": 40,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6701704, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 escumadeira",
+    "gramas": 20,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6701704, preparação \"CROZIDO(A)\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 20,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6701704, preparação \"CROZIDO(A)\""
+   }
+  ],
+  "banana-prata-crua": [
+   {
+    "nome": "1 unidade",
+    "gramas": 75,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6801101, preparação \"CRU(A)\""
+   },
+   {
+    "nome": "1 fatia",
+    "gramas": 26,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6801101, preparação \"CRU(A)\""
+   },
+   {
+    "nome": "1 pedaco",
+    "gramas": 16,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6801101, preparação \"CRU(A)\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 86,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6801101, preparação \"CRU(A)\""
+   }
+  ],
+  "banana-nanica-crua": [
+   {
+    "nome": "1 unidade",
+    "gramas": 75,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6801101, preparação \"CRU(A)\""
+   },
+   {
+    "nome": "1 fatia",
+    "gramas": 26,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6801101, preparação \"CRU(A)\""
+   },
+   {
+    "nome": "1 pedaco",
+    "gramas": 16,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6801101, preparação \"CRU(A)\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 86,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6801101, preparação \"CRU(A)\""
+   }
+  ],
+  "mamao-formosa-cru": [
+   {
+    "nome": "1 unidade",
+    "gramas": 310,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6803101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 fatia",
+    "gramas": 170,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6803101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 concha",
+    "gramas": 140,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6803101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 70,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6803101, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "laranja-pera-crua": [
+   {
+    "nome": "1 unidade",
+    "gramas": 180,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6801801, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 fatia",
+    "gramas": 18,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6801801, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 pedaco",
+    "gramas": 18,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6801801, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 144,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6801801, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "melancia-crua": [
+   {
+    "nome": "1 fatia",
+    "gramas": 200,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6803401, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 pedaco",
+    "gramas": 150,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6803401, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 296,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6803401, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 copo americano",
+    "gramas": 62.5,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6803401, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "abacate-cru": [
+   {
+    "nome": "1 unidade",
+    "gramas": 430,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6802701, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 fatia",
+    "gramas": 90,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6802701, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 45,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6802701, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 pedaco",
+    "gramas": 22.5,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6802701, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "maca-fuji-com-casca-crua": [
+   {
+    "nome": "1 unidade",
+    "gramas": 150,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6803001, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 fatia",
+    "gramas": 37.5,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6803001, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 pedaco",
+    "gramas": 37.5,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6803001, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 130,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6803001, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "iogurte-natural": [
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 15,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7901204, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 copo americano",
+    "gramas": 150,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7901204, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 copo de requeijao",
+    "gramas": 240,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7901204, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 copo grande",
+    "gramas": 300,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7901204, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "queijo-requeijao-cremoso": [
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 60,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7902901, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 30,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7902901, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 45,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7902901, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 copo medio",
+    "gramas": 240,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 7902901, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "azeite-de-oliva-extra-virgem": [
+   {
+    "nome": "1 colher de arroz ou servir",
+    "gramas": 16,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 8400101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 8,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 8400101, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 7.6,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 8400101, preparação \"NAO SE APLICA\""
+   }
+  ],
+  "amendoim-torrado-salgado": [
+   {
+    "nome": "1 colher de sopa",
+    "gramas": 17,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6301001, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 porcao",
+    "gramas": 9,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6301001, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 pacote",
+    "gramas": 50,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6301001, preparação \"NAO SE APLICA\""
+   },
+   {
+    "nome": "1 punhado",
+    "gramas": 30,
+    "fonte": "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE — alimento 6301001, preparação \"NAO SE APLICA\""
+   }
+  ]
+ }
+}
