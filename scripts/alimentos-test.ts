@@ -475,6 +475,56 @@ bloco("10. A BASE IMPORTADA REPRODUZ A TABELA PUBLICADA");
   }
 }
 
+// ─── 11 ─────────────────────────────────────────────────────────────────────
+bloco("11. MEDIDA CASEIRA — SÓ COM PESO DOCUMENTADO");
+
+/**
+ * A regra que impede o pior erro possível desta ferramenta.
+ *
+ * Uma concha de feijão não tem peso universal: a sua é diferente da minha.
+ * Se o site afirma "1 concha = 120 g" sem ter de onde tirar isso, a pessoa
+ * confia — porque o site disse — e leva embora um erro que ela não tem como
+ * perceber. Pedir "120 g" é sempre correto; afirmar o que são 120 g exige
+ * fonte.
+ *
+ * Por isso `fonte` é obrigatória no tipo, e este teste garante que ela seja
+ * preenchida de verdade em vez de virar string vazia.
+ */
+{
+  const caminho = "data/alimentos/processado/taco.json";
+  if (existsSync(caminho)) {
+    const base = JSON.parse(readFileSync(caminho, "utf8")) as { alimentos: Alimento[] };
+    const comPorcao = base.alimentos.filter((a) => a.porcoes.length > 0);
+
+    const semFonte = comPorcao.flatMap((a) =>
+      a.porcoes.filter((p) => !p.fonte || p.fonte.trim().length < 10).map((p) => `${a.slug}: "${p.nome}"`),
+    );
+    ok("toda medida caseira declara de onde veio o peso", semFonte.length === 0, semFonte.join(", "));
+
+    const pesoRuim = comPorcao.flatMap((a) =>
+      a.porcoes.filter((p) => !Number.isFinite(p.gramas) || p.gramas <= 0 || p.gramas > 2000)
+        .map((p) => `${a.slug}: "${p.nome}" = ${p.gramas} g`),
+    );
+    ok("nenhuma medida tem peso impossível", pesoRuim.length === 0, pesoRuim.join(", "));
+
+    const nomeVazio = comPorcao.flatMap((a) => a.porcoes.filter((p) => !p.nome.trim()).map(() => a.slug));
+    ok("nenhuma medida tem nome vazio", nomeVazio.length === 0, nomeVazio.join(", "));
+
+    /*
+     * A TACO não publica medida caseira — só composição por 100 g. Enquanto a
+     * base de medidas não chegar, o número esperado é zero, e isso não é
+     * falta: é a ferramenta se recusando a inventar.
+     */
+    console.log(`\n  ${comPorcao.length} de ${base.alimentos.length} alimentos com medida caseira documentada`);
+  }
+}
+
+/** A fonte das medidas está registrada e travada até ser conferida. */
+ok("a POF do IBGE está registrada como fonte de medidas",
+  FONTES.IBGE_POF !== undefined && /Medidas Referidas/i.test(FONTES.IBGE_POF.nomeCompleto));
+ok("e não publica enquanto os termos não forem conferidos na origem",
+  !podeEntrarEmProducao("IBGE_POF"));
+
 console.log("\n" + "=".repeat(64));
 if (falhas > 0) {
   console.log(`${falhas} TESTE(S) FALHARAM`);

@@ -140,6 +140,7 @@ export default async function AlimentoPage({ params }: { params: Promise<{ slug:
               estado: valores.get(n.id)?.estado ?? "naoDisponivel",
               nota: n.nota,
             }))}
+            porcoes={a.porcoes.map((p) => ({ nome: p.nome, gramas: p.gramas, fonte: p.fonte }))}
           />
         </div>
       </section>

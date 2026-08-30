@@ -20,7 +20,7 @@
  * `podeEntrarEmProducao()` no fim do arquivo.
  */
 
-export type IdFonte = "TACO" | "USDA" | "TBCA" | "ROTULO";
+export type IdFonte = "TACO" | "USDA" | "TBCA" | "IBGE_POF" | "ROTULO";
 
 export interface FonteNutricional {
   id: IdFonte;
@@ -137,6 +137,36 @@ export const FONTES: Record<IdFonte, FonteNutricional> = {
     verificadoEm: "",
     pendencia:
       "Bloqueada por licença. Só muda com autorização escrita da coordenação da TBCA. Não importar enquanto isso.",
+  },
+
+  /**
+   * As medidas caseiras.
+   *
+   * A TACO diz o que tem em 100 g e não diz o que é 100 g de comida. Quem
+   * não tem balança precisa da ponte entre as duas coisas — "1 concha", "1
+   * filé médio" —, e essa ponte não pode ser chutada: uma concha não tem
+   * peso universal, e um número inventado aqui produz erro que a pessoa não
+   * tem como perceber.
+   *
+   * A POF do IBGE resolve isso com autoridade: as medidas vêm do que a
+   * população brasileira efetivamente relatou consumir numa pesquisa
+   * nacional, não da estimativa de quem escreveu o site.
+   */
+  IBGE_POF: {
+    id: "IBGE_POF",
+    atribuicao: "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE",
+    nomeCompleto: "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil",
+    instituicao: "IBGE — Instituto Brasileiro de Geografia e Estatística",
+    edicao: "Pesquisa de Orçamentos Familiares 2008-2009",
+    url: "https://biblioteca.ibge.gov.br/",
+    licenca:
+      "Publicação oficial do IBGE, de acesso livre. Os termos de uso e a exigência de citação PRECISAM ser conferidos na página da publicação antes de qualquer dado ir ao ar — o mesmo procedimento aplicado à TACO.",
+    podePublicar: true,
+    exigeAtribuicao: true,
+    podeTransformar: true,
+    verificadoEm: "",
+    pendencia:
+      "Obter a publicação oficial e conferir os termos na página do IBGE. Esta sessão não tem acesso de rede a ibge.gov.br (proxy bloqueia). Enquanto verificadoEm estiver vazio, nenhuma medida desta fonte publica.",
   },
 
   /**
