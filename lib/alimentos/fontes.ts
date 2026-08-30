@@ -48,6 +48,24 @@ export interface FonteNutricional {
   verificadoEm: string;
   /** Como a fonte levantou os dados, quando isso importa para o leitor. */
   metodologia?: string;
+  /**
+   * Decisão do responsável pelo site, para quando a fonte é SILENTE.
+   *
+   * Existe porque nem toda publicação diz o que pode ser feito com ela. A
+   * TACO diz ("é permitida a reprodução... desde que citada a fonte"); a POF
+   * do IBGE não diz nada — nem autoriza nem proíbe, só afirma o copyright.
+   *
+   * Diante do silêncio, alguém decide. Este campo faz essa decisão aparecer
+   * com nome e data, em vez de virar um `verificadoEm` preenchido como se
+   * uma conferência tivesse acontecido. Os dois estados são diferentes e
+   * continuam diferentes no código e na tela.
+   *
+   * NÃO é um atalho para contornar proibição: `podePublicar` continua sendo
+   * verificado antes, e uma fonte que veda o uso — como a TBCA — não é
+   * destravada por decisão nenhuma. O responsável decide sobre silêncio,
+   * nunca sobre "não".
+   */
+  decisaoDoResponsavel?: { em: string; nota: string };
   /** O que precisa acontecer antes desta fonte poder ser usada. */
   pendencia?: string;
 }
@@ -178,8 +196,11 @@ export const FONTES: Record<IdFonte, FonteNutricional> = {
     exigeAtribuicao: true,
     podeTransformar: true,
     verificadoEm: "",
-    pendencia:
-      "Falta conferir os termos de uso na publicação. A apresentação e a página de convenções do CD-ROM oficial foram lidas e não os trazem — eles ficam na página de créditos do volume impresso, como na TACO. Enquanto verificadoEm estiver vazio, nenhuma medida desta fonte chega à tela.",
+    decisaoDoResponsavel: {
+      em: "2026-08-30",
+      nota:
+        "Os termos de reprodução não constam da publicação nem dos Termos de Uso do Portal do IBGE, que tratam de dados pessoais e não de reuso de conteúdo. Procuramos na página de créditos do volume (traz apenas \u201c© IBGE. 2011\u201d), na apresentação e nas convenções do CD-ROM oficial. Diante do silêncio da fonte, o responsável pelo site decidiu usar as medidas com atribuição integral ao IBGE, incluindo o código do alimento na pesquisa e a preparação a que cada peso se refere.",
+    },
   },
 
   /**
@@ -220,10 +241,23 @@ export const IDS_FONTE = Object.keys(FONTES) as IdFonte[];
  */
 export function podeEntrarEmProducao(id: IdFonte): boolean {
   const f = FONTES[id];
-  return f.podePublicar && f.verificadoEm !== "";
+  /*
+   * A ordem importa: `podePublicar` vem primeiro e não é negociável. Fonte
+   * que veda o uso continua vedada por decisão nenhuma — o responsável pode
+   * decidir diante do silêncio da fonte, nunca contra o que ela diz.
+   */
+  if (!f.podePublicar) return false;
+  return f.verificadoEm !== "" || f.decisaoDoResponsavel !== undefined;
 }
 
 /** As fontes que hoje travam a publicação, e por quê. */
+/** Fontes que publicam por decisão do responsável, e não por conferência. */
+export function porDecisaoDoResponsavel(): IdFonte[] {
+  return IDS_FONTE.filter(
+    (id) => podeEntrarEmProducao(id) && FONTES[id].verificadoEm === "" && FONTES[id].decisaoDoResponsavel,
+  );
+}
+
 export function pendenciasDeLicenca(): { id: IdFonte; motivo: string }[] {
   return IDS_FONTE.filter((id) => !podeEntrarEmProducao(id)).map((id) => ({
     id,

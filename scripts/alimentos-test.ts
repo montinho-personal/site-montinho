@@ -19,6 +19,7 @@ import {
   IDS_FONTE,
   podeEntrarEmProducao,
   pendenciasDeLicenca,
+  porDecisaoDoResponsavel,
   AVISO_VARIACAO,
 } from "../lib/alimentos/fontes";
 import {
@@ -564,8 +565,40 @@ bloco("11. MEDIDA CASEIRA — SÓ COM PESO DOCUMENTADO");
 /** A fonte das medidas está registrada e travada até ser conferida. */
 ok("a POF do IBGE está registrada como fonte de medidas",
   FONTES.IBGE_POF !== undefined && /Medidas Referidas/i.test(FONTES.IBGE_POF.nomeCompleto));
-ok("e não publica enquanto os termos não forem conferidos na origem",
-  !podeEntrarEmProducao("IBGE_POF"));
+/**
+ * A POF entra por DECISÃO, não por conferência — e a diferença fica visível.
+ *
+ * A TACO autoriza a reprodução por escrito. A POF não diz nada: a página de
+ * créditos traz só o copyright, e os Termos de Uso do Portal tratam de dados
+ * pessoais. Diante do silêncio, alguém precisa decidir, e a decisão aparece
+ * com nome e data em vez de virar um "verificadoEm" preenchido como se uma
+ * conferência tivesse acontecido.
+ */
+{
+  ok("a POF publica", podeEntrarEmProducao("IBGE_POF"));
+  ok("mas NÃO por conferência na origem", FONTES.IBGE_POF.verificadoEm === "");
+  ok("e sim por decisão registrada do responsável, com data",
+    /^\d{4}-\d{2}-\d{2}$/.test(FONTES.IBGE_POF.decisaoDoResponsavel?.em ?? ""));
+  ok("a decisão explica o que foi procurado e onde",
+    (FONTES.IBGE_POF.decisaoDoResponsavel?.nota ?? "").length > 200);
+  ok("a lista de fontes por decisão a inclui", porDecisaoDoResponsavel().includes("IBGE_POF"));
+  ok("a TACO continua entrando por conferência, não por decisão",
+    !porDecisaoDoResponsavel().includes("TACO"));
+}
+
+/**
+ * A trava que a decisão NÃO pode furar.
+ *
+ * O responsável decide diante do silêncio da fonte, nunca contra o que ela
+ * diz. A TBCA veda o uso comercial expressamente: nenhuma decisão a
+ * destrava, e este teste simula uma tentativa para provar isso.
+ */
+{
+  const tentativa = { ...FONTES.TBCA, decisaoDoResponsavel: { em: "2026-08-30", nota: "x".repeat(220) } };
+  const destravaria = tentativa.podePublicar && (tentativa.verificadoEm !== "" || tentativa.decisaoDoResponsavel);
+  ok("decisão do responsável não destrava fonte que veda o uso",
+    !destravaria && !podeEntrarEmProducao("TBCA"));
+}
 
 /**
  * A trava precisa valer para mim também.

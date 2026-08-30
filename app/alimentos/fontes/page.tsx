@@ -101,12 +101,28 @@ export default function FontesPage() {
               {FONTES.IBGE_POF.instituicao}.
             </p>
             <p className="mb-3 text-gray-400">{FONTES.IBGE_POF.metodologia}</p>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm mb-3">
               É por isso que esses pesos valem mais que a estimativa de quem escreve um site: não são chute, são
               consumo relatado por milhares de domicílios, cruzado com pesagem direta em universidade. Cada medida
               aqui carrega o código do alimento na pesquisa e a preparação a que se refere — porque 1 unidade de peito
               de frango cru pesa quase o dobro de 1 filé cozido.
             </p>
+            {/*
+              A diferença entre "conferido" e "decidido" fica na tela, e não
+              só no código. Quem lê tem direito de saber que a autorização da
+              TACO é expressa e a da POF não é — em vez de ver as duas
+              apresentadas com a mesma segurança.
+            */}
+            {FONTES.IBGE_POF.decisaoDoResponsavel && (
+              <p className="text-gray-500 text-sm leading-relaxed border-l-2 pl-3" style={{ borderColor: "#BA9E50" }}>
+                <strong className="text-gray-300">Sobre a autorização.</strong> Diferente da TACO, que autoriza a
+                reprodução por escrito, esta publicação não trata do assunto — nem na página de créditos, nem nos
+                termos de uso do portal do IBGE, que cuidam de dados pessoais. Diante do silêncio da fonte, o uso das
+                medidas foi decisão do responsável por este site, em{" "}
+                {FONTES.IBGE_POF.decisaoDoResponsavel.em.split("-").reverse().join("/")}, com atribuição integral ao
+                IBGE em cada alimento.
+              </p>
+            )}
           </div>
 
           <div>
