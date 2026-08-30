@@ -53,7 +53,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = post.metaDescription || post.excerpt;
   const cover = getPostCoverImage(post);
   return {
-    title,
+    /*
+     * `absolute` desliga o template `%s | Montinho Personal Trainer` do layout
+     * raiz. Não é preferência de estilo: o sufixo tem 28 caracteres e o Google
+     * corta o título por volta de 60, então ele comia quase metade do espaço
+     * de TODO artigo. Quando medimos, 815 dos 830 títulos estouravam o limite
+     * por causa dele — e em 83 a marca ainda vinha escrita à mão no metaTitle,
+     * o que produzia "… | Montinho Personal Trainer | Montinho Personal
+     * Trainer" na SERP.
+     *
+     * Em artigo informacional a marca não ajuda o clique: quem busca
+     * "polichinelo emagrece" não conhece o Montinho ainda. Nas páginas locais
+     * (fora deste arquivo) o cálculo é outro e o template segue valendo.
+     */
+    title: { absolute: title },
     description,
     alternates: {
       canonical: `${SITE_URL}/blog/${slug}`,

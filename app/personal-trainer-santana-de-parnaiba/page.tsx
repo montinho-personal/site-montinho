@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/blog";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 
 export const metadata: Metadata = {
-  title: "Personal Trainer em Santana de Parnaíba | Montinho Personal Trainer",
+  title: { absolute: "Personal Trainer em Santana de Parnaíba | Montinho Personal Trainer" },
   description:
     "Personal Trainer em Santana de Parnaíba com atendimento presencial individualizado. Especialista em emagrecimento, hipertrofia e qualidade de vida para moradores da região.",
   alternates: {

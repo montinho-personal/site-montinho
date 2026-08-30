@@ -5,7 +5,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Personal Trainer Feminino Tamboré | Montinho Personal Trainer",
+  title: { absolute: "Personal Trainer Feminino Tamboré | Montinho Personal Trainer" },
   description:
     "Personal trainer feminino em Tamboré especializado em emagrecimento, definição e qualidade de vida para mulheres. Mais de 20 anos na região. Protocolo individual, resultado real.",
   alternates: {

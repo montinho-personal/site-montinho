@@ -5,7 +5,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Personal Trainer para Hipertrofia Tamboré | Montinho Personal Trainer",
+  title: { absolute: "Personal Trainer para Hipertrofia Tamboré | Montinho Personal Trainer" },
   description:
     "Personal trainer para hipertrofia em Tamboré com protocolo baseado em ciência. Ganho de massa muscular real, progressão de carga e método individualizado. Mais de 20 anos na região.",
   alternates: {

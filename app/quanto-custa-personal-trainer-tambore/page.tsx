@@ -4,7 +4,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Quanto Custa Personal Trainer Tamboré | Montinho Personal Trainer",
+  title: { absolute: "Quanto Custa Personal Trainer Tamboré | Montinho Personal Trainer" },
   description:
     "Quanto custa personal trainer em Tamboré? Entenda os fatores que influenciam o preço, o que está incluso no investimento e como comparar o custo com o resultado real.",
   alternates: {
