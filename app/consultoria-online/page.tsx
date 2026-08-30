@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import WhatsCta from "@/components/lp/WhatsCta";
+import Etapa, { FaqRastreado, VistaDaPagina } from "@/components/consultoria/Funil";
+import PonteInterna from "@/components/consultoria/PonteInterna";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import testimonials from "@/data/testimonials.json";
 
@@ -12,8 +14,29 @@ import testimonials from "@/data/testimonials.json";
  *   online") — não compete com /consultoria (página institucional de serviços)
  */
 
-const LP_MESSAGE =
-  "Olá, Montinho! Quero saber mais sobre a Consultoria Online. Pode me explicar como funciona?";
+/**
+ * As mensagens que abrem a conversa, uma por momento da página.
+ *
+ * Quem clica no topo ainda está entendendo o serviço; quem clica depois do
+ * FAQ já leu tudo e tem uma dúvida específica. Abrir as duas conversas com o
+ * mesmo texto joga fora esse contexto e obriga o Montinho a perguntar o que
+ * a página já sabia.
+ *
+ * Nenhuma delas soa como formulário de vendedor: são frases que uma pessoa
+ * escreveria de verdade.
+ */
+const MSG = {
+  hero: "Olá, Montinho! Vi a página da Consultoria Online e queria entender se ela faz sentido para o meu caso.",
+  prova: "Olá, Montinho! Vi os resultados dos seus alunos e queria entender como funcionaria comigo.",
+  incluso: "Olá, Montinho! Vi o que está incluso na consultoria e queria conversar sobre o meu treino.",
+  historia: "Olá, Montinho! Li a sua história e queria entender como seria o acompanhamento no meu caso.",
+  garantia: "Olá, Montinho! Queria conversar sobre a Consultoria Online antes de decidir.",
+  faq: "Olá, Montinho! Li a página da Consultoria Online e fiquei com uma dúvida:",
+  final: "Olá, Montinho! Quero começar minha consultoria online. Podemos conversar?",
+} as const;
+
+/** O CTA da barra fixa no mobile, sempre disponível. */
+const LP_MESSAGE = MSG.hero;
 
 export const metadata: Metadata = {
   title: "Consultoria Online de Treino | Personal Trainer Online — Montinho",
@@ -106,8 +129,8 @@ function Stars() {
   );
 }
 
-function Cta({ label, sub }: { label: string; sub?: string }) {
-  return <WhatsCta label={label} message={LP_MESSAGE} sub={sub} />;
+function Cta({ label, sub, em }: { label: string; sub?: string; em: keyof typeof MSG }) {
+  return <WhatsCta label={label} message={MSG[em]} sub={sub} posicao={em} />;
 }
 
 export default function ConsultoriaOnlineLP() {
@@ -116,7 +139,14 @@ export default function ConsultoriaOnlineLP() {
   return (
     <>
       {/* Oculta navegação global: LP sem saídas */}
-      <style>{`header, footer { display: none !important; } main { padding-top: 0 !important; }`}</style>
+      {/*
+        LP sem saídas de navegação. O botão flutuante global também sai: no
+        celular ele fica no canto inferior direito, exatamente sobre a barra
+        fixa desta página — dois botões de WhatsApp empilhados, um deles
+        cobrindo o outro, e com mensagens diferentes. Aqui quem manda é a
+        barra da página, que carrega a mensagem contextual.
+      */}
+      <style>{`header, footer, a[aria-label="Fale conosco pelo WhatsApp"] { display: none !important; } main { padding-top: 0 !important; }`}</style>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -125,6 +155,8 @@ export default function ConsultoriaOnlineLP() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
+
+      <VistaDaPagina />
 
       <div className="bg-black text-white">
         {/* ───────────────────────── 1. HERO ───────────────────────── */}
@@ -151,9 +183,18 @@ export default function ConsultoriaOnlineLP() {
                 Para quem quer <strong className="text-gray-200">emagrecer ou ganhar massa muscular</strong>{" "}
                 treinando em casa, no condomínio, na academia ou em viagem — em qualquer lugar do Brasil.
               </p>
+              {/*
+                O CTA do topo pede a MENOR decisão possível.
+                
+                "Quero minha consultoria" é um pedido de compra feito a quem
+                está na página há cinco segundos e ainda não sabe o que está
+                comprando. "Entender como funciona" é o passo que a pessoa
+                está disposta a dar agora — e leva ao mesmo WhatsApp.
+              */}
               <Cta
-                label="Quero minha consultoria online"
-                sub="Resposta rápida · Primeira conversa sem compromisso"
+                em="hero"
+                label="Quero entender como funciona"
+                sub="Você conversa comigo antes de decidir qualquer coisa"
               />
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-6 text-sm text-gray-300 max-w-lg">
                 <li className="flex items-center gap-2">⭐ <span><strong className="text-white">5.0</strong> · {testimonials.totalReviews} avaliações de alunos</span></li>
@@ -188,7 +229,56 @@ export default function ConsultoriaOnlineLP() {
           </div>
         </section>
 
+        {/*
+          ───────────────── 1B. IDENTIFICAÇÃO ─────────────────
+          
+          A página ia do hero direto para a prova social — mostrava o
+          resultado de outra pessoa antes de reconhecer o problema de quem
+          está lendo. Prova convence quem já se sentiu compreendido; para
+          quem não se sentiu, é só a foto de um desconhecido magro.
+          
+          São situações, não uma lista de dores. E nenhuma delas é
+          sensacionalista: é o que a pessoa realmente pensa antes de procurar
+          um profissional.
+        */}
+        <Etapa evento="consultoria_etapa_proposta">
+          <section className="py-16 border-t border-white/10">
+            <div className="max-w-4xl mx-auto px-5 sm:px-8">
+              <h2 className="text-center text-3xl sm:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
+                Se você se reconhecer aqui, a consultoria foi feita para isso
+              </h2>
+              <p className="text-center text-gray-300 mb-10 max-w-2xl mx-auto">
+                Nenhuma dessas situações é falta de esforço. Todas elas são falta de
+                alguém olhando o seu caso.
+              </p>
+              <ul className="grid sm:grid-cols-2 gap-4">
+                {[
+                  "Você treina, mas não sabe dizer se o seu treino faz sentido para o seu objetivo.",
+                  "Troca de exercício com frequência e nunca sabe se era hora de trocar.",
+                  "Não sabe quando aumentar a carga — então mantém a mesma há meses.",
+                  "Já começou na academia várias vezes e não conseguiu manter.",
+                  "Emagreceu e agora quer preservar músculo, não só continuar perdendo peso.",
+                  "Está voltando a treinar depois de anos parado e não sabe por onde recomeçar.",
+                  "Segue um treino pronto da internet sem saber se ele serve para você.",
+                  "Treina sozinho e sente falta de alguém dizendo se está certo.",
+                ].map((t) => (
+                  <li key={t} className="flex gap-3 bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4">
+                    <span className="text-[#BA9E50] shrink-0" aria-hidden>—</span>
+                    <p className="text-gray-300 text-sm leading-relaxed">{t}</p>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-center text-gray-300 mt-8 max-w-2xl mx-auto">
+                O que falta nesses casos quase nunca é disciplina.{" "}
+                <strong className="text-white">É direção</strong> — e alguém acompanhando
+                para corrigir a rota quando ela sai do lugar.
+              </p>
+            </div>
+          </section>
+        </Etapa>
+
         {/* ───────────────────── 2. PROVA SOCIAL ───────────────────── */}
+        <Etapa evento="consultoria_etapa_prova">
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-6xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
@@ -251,9 +341,22 @@ export default function ConsultoriaOnlineLP() {
                 </figure>
               ))}
             </div>
-            <Cta label="Quero ser o próximo resultado" />
+            {/*
+              A única saída da página, e ela existe por um motivo: quem ainda
+              duvida da prova precisa poder conferir mais, e obrigá-lo a
+              decidir sem conferir custa mais conversão do que a saída custa.
+              Fica DEPOIS do CTA, não antes — quem já se convenceu clica no
+              verde e nunca vê o link.
+            */}
+            <Cta em="prova" label="Quero um plano assim para mim" />
+            <PonteInterna
+              href="/resultados"
+              evento="consultoria_resultados_click"
+              texto="Ver mais transformações de alunos"
+            />
           </div>
         </section>
+        </Etapa>
 
         {/* ───────────────────── 3. OBJEÇÃO CENTRAL: ONLINE FUNCIONA? ───────────────────── */}
         <section className="py-16 border-t border-white/10">
@@ -317,12 +420,13 @@ export default function ConsultoriaOnlineLP() {
               ))}
             </ul>
             <div className="mt-10">
-              <Cta label="Quero tudo isso no meu treino" />
+              <Cta em="incluso" label="Quero conversar sobre o meu treino" />
             </div>
           </div>
         </section>
 
         {/* ───────────────────── 5. COMO FUNCIONA ───────────────────── */}
+        <Etapa evento="consultoria_etapa_metodo">
         <section className="py-16 border-t border-white/10">
           <div className="max-w-5xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
@@ -344,10 +448,11 @@ export default function ConsultoriaOnlineLP() {
               ))}
             </ol>
             <div className="mt-10">
-              <Cta label="Dar o primeiro passo agora" sub="Leva 2 minutos. Sem compromisso." />
+              <Cta em="incluso" label="Dar o primeiro passo agora" sub="Leva 2 minutos. Sem compromisso." />
             </div>
           </div>
         </section>
+        </Etapa>
 
         {/* ───────────────────── 6. HISTÓRIA / AUTORIDADE ───────────────────── */}
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
@@ -387,7 +492,13 @@ export default function ConsultoriaOnlineLP() {
                 &ldquo;Quem só estudou o caminho te explica o mapa. Quem percorreu, te
                 guia pelos atalhos.&rdquo;
               </p>
-              <Cta label="Quero esse método comigo" />
+              <Cta em="historia" label="Quero esse acompanhamento comigo" />
+              <PonteInterna
+                href="/minha-historia"
+                evento="consultoria_historia_click"
+                texto="Ler a história completa"
+                alinhamento="left"
+              />
             </div>
           </div>
         </section>
@@ -420,7 +531,7 @@ export default function ConsultoriaOnlineLP() {
               </div>
             </div>
             <div className="mt-10">
-              <Cta label="Quero a Consultoria Montinho" />
+              <Cta em="garantia" label="Quero a Consultoria Montinho" />
             </div>
           </div>
         </section>
@@ -489,11 +600,12 @@ export default function ConsultoriaOnlineLP() {
               devolvido — conforme o direito de arrependimento previsto no Código de
               Defesa do Consumidor. Sem burocracia e sem constrangimento.
             </p>
-            <Cta label="Começar sem compromisso" sub="Primeira conversa gratuita pelo WhatsApp" />
+            <Cta em="garantia" label="Começar sem compromisso" sub="Primeira conversa gratuita pelo WhatsApp" />
           </div>
         </section>
 
         {/* ───────────────────── 10. FAQ ───────────────────── */}
+        <Etapa evento="consultoria_etapa_objecoes">
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-3xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
@@ -501,20 +613,23 @@ export default function ConsultoriaOnlineLP() {
             </h2>
             <div className="space-y-3">
               {faqLp.map((f) => (
-                <details key={f.q} className="group border border-white/10 rounded-xl bg-black/40 open:border-[#BA9E50]/40 transition-colors">
+                <FaqRastreado key={f.q} pergunta={f.q}>
+                <details className="group border border-white/10 rounded-xl bg-black/40 open:border-[#BA9E50]/40 transition-colors">
                   <summary className="cursor-pointer list-none flex items-center justify-between px-6 py-4 text-white font-semibold">
                     {f.q}
                     <span className="text-[#BA9E50] group-open:rotate-45 transition-transform text-xl leading-none">+</span>
                   </summary>
                   <p className="px-6 pb-5 text-gray-300 text-sm leading-relaxed">{f.a}</p>
                 </details>
+                </FaqRastreado>
               ))}
             </div>
             <div className="mt-10">
-              <Cta label="Tirar minha dúvida no WhatsApp" sub="Respondo pessoalmente, sem robô" />
+              <Cta em="faq" label="Tirar minha dúvida no WhatsApp" sub="Respondo pessoalmente, sem robô" />
             </div>
           </div>
         </section>
+        </Etapa>
 
         {/* ───────────────────── 11. CTA FINAL ───────────────────── */}
         <section className="py-20 border-t border-white/10 relative overflow-hidden">
@@ -540,7 +655,8 @@ export default function ConsultoriaOnlineLP() {
               que mantém as correções e o suporte realmente próximos.
             </p>
             <Cta
-              label="Quero começar minha transformação"
+              em="final"
+              label="Quero começar minha consultoria"
               sub="Respondo pessoalmente — geralmente em poucos minutos"
             />
             <p className="text-gray-400 text-xs mt-12">
