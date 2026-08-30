@@ -588,6 +588,18 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
                   </Link>
                 </li>
                 <li>
+                  {/* Planejamento vira conhecimento: os macros dizem quanto,
+                      a tabela diz o que tem na comida. */}
+                  <Link
+                    href="/alimentos"
+                    onClick={() => trackEvent("macro_food_search_click", { placement })}
+                    className="text-gray-300 hover:text-white transition-colors text-sm underline underline-offset-4 decoration-1"
+                    style={{ textDecorationColor: "#BA9E50" }}
+                  >
+                    Consultar os valores dos alimentos →
+                  </Link>
+                </li>
+                <li>
                   <Link
                     href="/ferramentas/calculadora-deficit-calorico"
                     onClick={() => trackEvent("macro_deficit_click", { placement })}

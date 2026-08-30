@@ -11,10 +11,12 @@
  */
 
 import bruto from "@/data/alimentos/processado/taco.json";
-import type { Alimento, Categoria, ValorEscalado } from "./tipos";
+import medidas from "@/data/alimentos/processado/medidas.json";
+import type { Alimento, Categoria, Porcao, ValorEscalado } from "./tipos";
 import { escalaTodos } from "./escala";
 import { buscaAlimentos, montaIndice, type OpcoesBusca, type ResultadoBusca } from "./busca";
 import { ALIMENTOS_INDEXAVEIS } from "./indexaveis";
+import { podeEntrarEmProducao } from "./fontes";
 
 const TODOS: Alimento[] = (bruto as { alimentos: Alimento[] }).alimentos.map((a) => ({
   ...a,
@@ -26,6 +28,28 @@ const TODOS: Alimento[] = (bruto as { alimentos: Alimento[] }).alimentos.map((a)
    * com o tempo, e por isso mora numa lista curada e versionada à parte.
    */
   indexavel: ALIMENTOS_INDEXAVEIS.includes(a.slug),
+  /**
+   * As medidas caseiras vêm da POF/IBGE e são casadas por slug aqui, em vez
+   * de dentro do JSON da TACO. Os dois arquivos têm fontes diferentes e ciclos
+   * de atualização diferentes: misturá-los faria a reimportação de um apagar
+   * o outro, e faria a proveniência dos pesos se perder dentro da tabela de
+   * composição — que não publica peso de concha nenhum.
+   */
+  porcoes: podeEntrarEmProducao("IBGE_POF")
+    ? ((medidas as { medidas: Record<string, Porcao[]> }).medidas[a.slug] ?? [])
+    : /*
+       * A trava de licença vale para mim também.
+       *
+       * As medidas estão importadas, conferidas e prontas — 125 delas, com
+       * código do IBGE e preparação em cada uma. Mas os termos de uso da
+       * publicação ainda não foram lidos na origem, e foi exatamente a frase
+       * "provavelmente permite" que esta trava existe para recusar. Ela não
+       * pode valer só quando é cômoda.
+       *
+       * Assim que os termos forem conferidos e verificadoEm for preenchido em
+       * fontes.ts, os botões de medida caseira aparecem sozinhos.
+       */
+      [],
 }));
 
 const POR_SLUG = new Map(TODOS.map((a) => [a.slug, a]));

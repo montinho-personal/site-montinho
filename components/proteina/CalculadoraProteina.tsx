@@ -309,6 +309,30 @@ export default function CalculadoraProteina({
               )}
             </div>
 
+            {/*
+              A ponte para a tabela nutricional.
+              
+              A calculadora entrega uma meta em gramas por dia, e gramas de
+              proteína não são um alimento — a pessoa fica com o número e sem
+              saber o que ele significa no prato. Este link fecha essa
+              distância, e fica DEPOIS do resultado: quem ainda não tem a meta
+              não tem o que consultar.
+              
+              Não monta dieta nem sugere cardápio: leva para consultar dado.
+            */}
+            <div className="border-t border-white/10 pt-4 mb-4">
+              <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                Quer saber quanta proteína existe nos alimentos que você já come?
+              </p>
+              <Link
+                href="/alimentos"
+                onClick={() => trackEvent("protein_food_search_click", { placement })}
+                className="inline-flex items-center border border-white/25 text-gray-200 px-5 py-3 text-sm font-medium min-h-[48px] hover:border-white/50 transition-colors"
+              >
+                Pesquisar alimentos →
+              </Link>
+            </div>
+
             {/* CTA discreto — depois do valor entregue, nunca antes */}
             <div className="border-t border-white/10 pt-4">
               <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">
