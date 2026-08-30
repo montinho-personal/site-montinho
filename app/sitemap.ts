@@ -1,4 +1,5 @@
 import { MOBILIDADE_NO_AR } from "@/lib/mobilidade/lancamento";
+import { alimentosIndexaveis } from "@/lib/alimentos/base";
 import type { MetadataRoute } from "next";
 import { blogPosts, SITE_URL } from "@/lib/blog";
 
@@ -34,6 +35,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${SITE_URL}/alimentos`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/alimentos/fontes`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    /**
+     * Só os alimentos promovidos a indexáveis entram. Os outros 555 são
+     * pesquisáveis na ferramenta e não existem como página — é a diferença
+     * entre uma base útil e centenas de URLs fracas competindo entre si.
+     */
+    ...alimentosIndexaveis().map((a) => ({
+      url: `${SITE_URL}/alimentos/${a.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "yearly" as const,
+      priority: 0.6,
+    })),
     {
       url: `${SITE_URL}/ferramentas`,
       lastModified: new Date(),

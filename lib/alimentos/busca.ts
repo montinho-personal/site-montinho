@@ -117,6 +117,24 @@ interface Entrada {
 }
 
 /**
+ * O bônus de curadoria.
+ *
+ * Sem ele, o desempate acabava sendo o comprimento do nome — e nome curto é
+ * o que alimento obscuro costuma ter. Na prática, "feijão" trazia "Feijão,
+ * broto, cru" na frente do feijão carioca, e "frnago" trazia "Frango,
+ * fígado, cru" na frente do peito. Tecnicamente corretos, e nenhum deles é o
+ * que a pessoa foi procurar.
+ *
+ * Alimento promovido a página própria já passou por decisão editorial sobre
+ * o que o brasileiro come. Esse julgamento vale mais que contar caracteres.
+ *
+ * O valor é menor que a distância entre as faixas de confiança de propósito:
+ * ele desempata DENTRO de uma faixa e nunca faz um resultado aproximado
+ * passar à frente de um exato.
+ */
+const BONUS_CURADORIA = 50;
+
+/**
  * O índice.
  *
  * Construído uma vez por processo. Cada alimento entra com o nome
@@ -217,7 +235,10 @@ export function buscaAlimentos(
   for (const e of indice) {
     if (opcoes.categoria && e.alimento.categoria !== opcoes.categoria) continue;
     const p = pontua(e, q);
-    if (p) achados.push({ alimento: e.alimento, score: p.score, motivo: p.motivo });
+    if (p) {
+      const bonus = e.alimento.indexavel ? BONUS_CURADORIA : 0;
+      achados.push({ alimento: e.alimento, score: p.score + bonus, motivo: p.motivo });
+    }
   }
 
   achados.sort((a, b) => b.score - a.score || a.alimento.nome.localeCompare(b.alimento.nome, "pt-BR"));

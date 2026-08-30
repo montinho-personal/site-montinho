@@ -144,6 +144,19 @@ export type AnalyticsEvent =
   | "macro_cta_click"
 
   /**
+   * Buscador nutricional. O TERMO pesquisado nunca entra em parâmetro: é
+   * dado de dieta, e vale aqui a mesma regra das calculadoras. A demanda por
+   * alimentos que faltam na base é medida no Search Console, não no evento.
+   */
+  | "food_search_view"
+  | "food_result_open"
+  | "food_quantity_change"
+  | "food_nutrients_expand"
+  | "food_page_view"
+  | "food_protein_calculator_click"
+  | "food_macros_click"
+
+  /**
    * Calculadora de volume de treino. A ficha de treino inteira é dado
    * pessoal de desempenho — nada dela vai para o Analytics. Só o
    * comportamento: viu, começou, adicionou exercício, concluiu.

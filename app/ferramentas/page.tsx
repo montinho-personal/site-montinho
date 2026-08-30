@@ -162,6 +162,15 @@ const FERRAMENTAS = [
     quando: "Use depois de saber suas calorias. É a continuação natural da calculadora de déficit e da de macros.",
   },
   {
+    href: "/alimentos",
+    nome: "Tabela Nutricional de Alimentos",
+    pergunta: "Quanto tem nesse alimento?",
+    tempo: "resposta em segundos · sem cadastro",
+    texto:
+      "Pesquise um alimento e veja calorias, proteína, carboidratos, gorduras e fibras — por 100 g ou na quantidade que você come de verdade. São 597 alimentos da tabela da UNICAMP, com o preparo declarado: arroz cru e arroz cozido são comidas diferentes, e aqui elas não se misturam.",
+    quando: "Use quando a dúvida é sobre a comida, não sobre a meta: quanta proteína tem o feijão, quantas calorias tem a banana.",
+  },
+  {
     href: "/pergunte-ao-montinho",
     nome: "Pergunte ao Montinho",
     pergunta: "Tenho uma dúvida específica",
