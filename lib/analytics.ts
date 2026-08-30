@@ -215,6 +215,29 @@ export type AnalyticsEvent =
   | "ask_montinho_feedback_negative"
   | "ask_montinho_embed_submit"
 
+  /**
+   * Consultoria Online — o funil da página.
+   *
+   * O clique no WhatsApp já é capturado globalmente por click_whatsapp, com
+   * delegação no document. Estes eventos NÃO o repetem: eles respondem o que
+   * o global não responde — de qual seção da página o clique partiu, e até
+   * onde a pessoa leu antes de desistir.
+   *
+   * As etapas são seções vistas, e não porcentagem de rolagem, de propósito.
+   * "Rolou 50%" muda de significado toda vez que a página muda de tamanho;
+   * "viu a prova social" continua querendo dizer a mesma coisa daqui a um
+   * ano, e é isso que permite comparar antes e depois de uma alteração.
+   */
+  | "consultoria_view"
+  | "consultoria_etapa_proposta"
+  | "consultoria_etapa_metodo"
+  | "consultoria_etapa_prova"
+  | "consultoria_etapa_objecoes"
+  | "consultoria_cta_click"
+  | "consultoria_faq_open"
+  | "consultoria_resultados_click"
+  | "consultoria_historia_click"
+
   /** Páginas /comece — as portas de entrada dos caminhos. */
   | "comece_view"
 

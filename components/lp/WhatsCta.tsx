@@ -1,22 +1,41 @@
+"use client";
+
+import { trackEvent } from "@/lib/analytics";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 interface WhatsCtaProps {
   label: string;
   message: string;
   sub?: string;
+  /**
+   * Onde na página este CTA está — "hero", "prova", "faq", "final".
+   *
+   * O clique no WhatsApp já é contado globalmente por `click_whatsapp`. O
+   * que ele não diz é DE ONDE a pessoa clicou, e é essa informação que
+   * responde a pergunta de produto: se quase todo mundo clica no CTA final,
+   * a página está convencendo devagar; se clicam no primeiro, o topo já
+   * resolve e o resto é confirmação.
+   */
+  posicao: string;
 }
 
 /**
- * CTA de WhatsApp para landing pages de tráfego pago.
- * Botão verde oficial (#25D366) com micro-copy opcional abaixo.
+ * CTA de WhatsApp das landing pages.
+ *
+ * A mensagem é PRÉ-PREENCHIDA e muda conforme a posição, porque a conversa
+ * começa de onde a pessoa parou de ler. Quem clica logo no topo ainda está
+ * entendendo o serviço; quem clica depois do FAQ já tem uma dúvida
+ * específica. Abrir as duas com o mesmo texto joga fora esse contexto — e
+ * obriga o Montinho a perguntar o que a página já sabia.
  */
-export default function WhatsCta({ label, message, sub }: WhatsCtaProps) {
+export default function WhatsCta({ label, message, sub, posicao }: WhatsCtaProps) {
   return (
     <div className="text-center">
       <a
         href={getWhatsAppUrl(message)}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackEvent("consultoria_cta_click", { placement: "consultoria-online", posicao })}
         className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-black font-bold text-lg sm:text-xl px-8 sm:px-12 py-5 rounded-2xl shadow-[0_8px_30px_rgba(37,211,102,0.35)] hover:shadow-[0_8px_40px_rgba(37,211,102,0.55)] hover:scale-[1.02] transition-all duration-200 w-full sm:w-auto"
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26" aria-hidden>
