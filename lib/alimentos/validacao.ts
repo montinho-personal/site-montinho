@@ -86,9 +86,58 @@ const TETO: Record<Unidade, number> = {
   kcal: 950,
   kJ: 4000,
   g: 100,
-  mg: 5000,
+  /**
+   * 40.000 mg = 40 g por 100 g. O sal puro tem cerca de 39,3 g de sódio por
+   * 100 g, e esse é o limite físico de verdade.
+   *
+   * O teto começou em 5.000 e reprovou o caldo de carne em tablete (22.180
+   * mg de sódio), o bacalhau salgado e o sal dietético — todos corretos. Um
+   * teto apertado demais não protege de nada: só recusa a comida salgada de
+   * verdade, que é justamente a que a pessoa tem motivo para consultar.
+   */
+  mg: 40000,
   mcg: 500000,
 };
+
+/**
+ * Limite de quantificação da composição centesimal na TACO, em g/100 g.
+ *
+ * Vem da legenda da própria tabela. É o que autoriza a única normalização
+ * automática deste pipeline — ver `normalizaNegativoResidual`.
+ */
+export const LQ_COMPOSICAO_CENTESIMAL = 0.1;
+
+/**
+ * O carboidrato negativo minúsculo.
+ *
+ * A TACO calcula carboidrato POR DIFERENÇA: 100 menos umidade, proteína,
+ * lipídeos e cinzas. Em alimento que praticamente não tem carboidrato — peixe,
+ * fígado, carne —, o acúmulo de arredondamento das outras frações leva a
+ * resultado ligeiramente negativo. É artefato aritmético, não medição.
+ *
+ * Recusar a ficha inteira por -0,027 g descartaria alimentos bons. Trocar por
+ * zero em silêncio seria a limpeza que este pipeline existe para não fazer.
+ *
+ * A saída vem da legenda da própria TACO, que manda usar TRAÇO para valores
+ * abaixo do limite de quantificação. Um valor entre -0,1 e 0 está abaixo do
+ * limite por definição. Então ele vira traço — a conversão é explícita, tem
+ * nome, é contada e aparece no relatório da importação.
+ *
+ * Negativo MAIOR que o limite continua sendo erro: aí não é arredondamento,
+ * é problema de verdade.
+ */
+export function normalizaNegativoResidual(v: ValorNutriente): { valor: ValorNutriente; convertido: boolean } {
+  if (
+    v.estado === "analisado" &&
+    v.valorPor100g !== null &&
+    v.valorPor100g < 0 &&
+    v.valorPor100g >= -LQ_COMPOSICAO_CENTESIMAL &&
+    v.unidade === "g"
+  ) {
+    return { valor: { ...v, valorPor100g: null, estado: "traco" }, convertido: true };
+  }
+  return { valor: v, convertido: false };
+}
 
 /** Um valor por si só: negativo, absurdo, unidade desconhecida. */
 export function validaValor(v: ValorNutriente, onde: string): Problema[] {
