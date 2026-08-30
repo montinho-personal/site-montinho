@@ -30,6 +30,7 @@ import {
   gramasPara,
   leGramas,
 } from "../lib/alimentos/escala";
+import { existsSync, readFileSync } from "node:fs";
 import { buscaAlimentos, montaIndice, normaliza } from "../lib/alimentos/busca";
 import {
   conferenciaEnergetica,
@@ -58,7 +59,7 @@ function alimento(nome: string, slug: string, aliases: string[], extra: Partial<
     id: slug,
     slug,
     nome,
-    categoria: "outros",
+    categoria: "miscelaneas",
     preparo: "cozido",
     aliases,
     nutrientes: [],
@@ -359,6 +360,97 @@ ok("nutriente duplicado na mesma ficha é erro",
 
   const boa = validaFicha({ nome: "Feijão", idNaFonte: "123", verificadoEm: "2026-08-30", nutrientes: [analisado(5), traco, ausente] });
   ok("ficha completa, com traço e ausente declarados, publica", podePublicar(boa), resumo(boa));
+}
+
+// ─── 10 ─────────────────────────────────────────────────────────────────────
+bloco("10. A BASE IMPORTADA REPRODUZ A TABELA PUBLICADA");
+
+/**
+ * O teste mais importante do arquivo.
+ *
+ * Um pipeline de importação pode estar inteiramente errado e ainda assim
+ * rodar sem reclamar: coluna trocada, casa decimal perdida, célula herdando
+ * o valor da vizinha. Nada disso quebra nada — só produz números plausíveis
+ * e errados, que é o pior resultado possível numa tabela nutricional.
+ *
+ * A única defesa real é conferir contra os valores IMPRESSOS na publicação.
+ * Se o arredondamento da base bate com o que a TACO publica, então a coluna
+ * é a certa, a escala é a certa e a leitura da célula é a certa.
+ *
+ * Foi exatamente assim que se descobriu que o sódio do sal dietético estava
+ * sendo lido como manganês.
+ */
+{
+  const caminho = "data/alimentos/processado/taco.json";
+  if (!existsSync(caminho)) {
+    ok("base importada existe", false, `rode: npx tsx scripts/alimentos-importa-taco.ts`);
+  } else {
+    const base = JSON.parse(readFileSync(caminho, "utf8")) as { alimentos: Alimento[] };
+    const acha = (nome: string) => base.alimentos.find((a) => a.nome === nome);
+
+    ok("a base tem os 597 alimentos da 4ª edição", base.alimentos.length === 597, String(base.alimentos.length));
+    ok("todo slug é único",
+      new Set(base.alimentos.map((a) => a.slug)).size === base.alimentos.length);
+    ok("todo alimento tem código da TACO na proveniência",
+      base.alimentos.every((a) => /^TACO-\d+$/.test(a.proveniencia.idNaFonte)),
+      base.alimentos.filter((a) => !/^TACO-\d+$/.test(a.proveniencia.idNaFonte)).length + " sem código");
+    ok("nenhum alimento nasce indexável", base.alimentos.every((a) => a.indexavel === false));
+
+    /**
+     * Valores conferidos contra a TACO 4ª ed. impressa. Se um destes mudar,
+     * a importação passou a ler outra coisa.
+     */
+    const ESPERADO: [string, Record<string, string>][] = [
+      ["Arroz, integral, cozido", { energia: "124", proteina: "2,6", carboidrato: "25,8", lipideos: "1,0", fibra: "2,7" }],
+      ["Feijão, carioca, cozido", { energia: "76", proteina: "4,8", carboidrato: "13,6", lipideos: "0,5", fibra: "8,5" }],
+      ["Banana, prata, crua", { energia: "98", proteina: "1,3", carboidrato: "26,0", lipideos: "0,1" }],
+      ["Frango, peito, sem pele, grelhado", { energia: "159", proteina: "32,0", lipideos: "2,5" }],
+      ["Abacate, cru", { energia: "96", proteina: "1,2", carboidrato: "6,0", lipideos: "8,4" }],
+    ];
+
+    for (const [nome, esperado] of ESPERADO) {
+      const a = acha(nome);
+      if (!a) { ok(`"${nome}" existe na base`, false); continue; }
+      for (const [nutrienteId, valorEsperado] of Object.entries(esperado)) {
+        const v = a.nutrientes.find((n) => n.nutrienteId === nutrienteId);
+        const saida = v ? formataNumero(v.valorPor100g ?? NaN, v.unidade) : "(ausente)";
+        ok(`${nome} · ${nutrienteId} = ${valorEsperado}`, saida === valorEsperado, `veio ${saida}`);
+      }
+    }
+
+    /**
+     * A trava contra o bug de célula que absorve a vizinha. O sal dietético
+     * tem muito sódio e nenhum manganês — se o manganês voltar a ter valor,
+     * o recorte de células quebrou de novo.
+     */
+    {
+      const sal = acha("Sal, dietético");
+      const mn = sal?.nutrientes.find((n) => n.nutrienteId === "manganes");
+      const na = sal?.nutrientes.find((n) => n.nutrienteId === "sodio");
+      ok("sal dietético: o sódio está na coluna do sódio",
+        na?.estado === "analisado" && Math.round(na.valorPor100g ?? 0) === 23432, String(na?.valorPor100g));
+      ok("sal dietético: manganês continua vazio, não herda o sódio",
+        mn?.estado !== "analisado", `${mn?.estado} ${mn?.valorPor100g}`);
+    }
+
+    /** Óleos: gordura pura, sem cinzas analisadas — e sem número inventado. */
+    {
+      const oleo = acha("Óleo, de soja");
+      const cinzas = oleo?.nutrientes.find((n) => n.nutrienteId === "cinzas");
+      ok("óleo de soja: 884 kcal",
+        formataNumero(oleo?.nutrientes.find((n) => n.nutrienteId === "energia")?.valorPor100g ?? NaN, "kcal") === "884");
+      ok("óleo de soja: cinzas não viraram número", cinzas?.estado !== "analisado", String(cinzas?.estado));
+    }
+
+    /** Os quatro estados aparecem de verdade na base real. */
+    {
+      const estados = new Set<string>();
+      for (const a of base.alimentos) for (const n of a.nutrientes) estados.add(n.estado);
+      ok("a base usa os quatro estados de dado",
+        ["analisado", "traco", "naoAplicavel", "naoDisponivel"].every((e) => estados.has(e)),
+        [...estados].join(", "));
+    }
+  }
 }
 
 console.log("\n" + "=".repeat(64));
