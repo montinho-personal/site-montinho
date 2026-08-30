@@ -31,6 +31,15 @@ import {
   leGramas,
 } from "../lib/alimentos/escala";
 import { buscaAlimentos, montaIndice, normaliza } from "../lib/alimentos/busca";
+import {
+  conferenciaEnergetica,
+  leCelula,
+  podePublicar,
+  resumo,
+  validaDuplicatas,
+  validaFicha,
+  validaValor,
+} from "../lib/alimentos/validacao";
 import type { Alimento, ValorNutriente } from "../lib/alimentos/tipos";
 
 let falhas = 0;
@@ -269,6 +278,88 @@ bloco("8. PROVENIÊNCIA — TODO NÚMERO RASTREÁVEL");
     semRastro.length === 0, semRastro.map((a) => a.slug).join(", "));
 }
 ok("nenhum alimento nasce indexável", BASE.every((a) => a.indexavel === false));
+
+// ─── 9 ──────────────────────────────────────────────────────────────────────
+bloco("9. IMPORTAÇÃO — RECUSAR, NUNCA CONSERTAR EM SILÊNCIO");
+
+/**
+ * A vírgula decimal brasileira. É o erro mais traiçoeiro de importar tabela
+ * daqui: o número continua parecendo número depois de lido errado.
+ */
+ok('"1,5" é lido como 1.5', leCelula("1,5").valor === 1.5, String(leCelula("1,5").valor));
+ok('"1.234,5" (milhar + decimal) é lido como 1234.5',
+  leCelula("1.234,5").valor === 1234.5, String(leCelula("1.234,5").valor));
+ok('"1.5" (ponto decimal) também é lido como 1.5', leCelula("1.5").valor === 1.5);
+ok('"128" é lido como inteiro', leCelula("128").valor === 128);
+
+/** Traço e ausente são estados DIFERENTES já na leitura da célula. */
+ok('"Tr" vira traço, não zero', leCelula("Tr").estado === "traco" && leCelula("Tr").valor === null);
+ok('"NA" vira não-disponível', leCelula("NA").estado === "naoDisponivel");
+ok('célula vazia vira não-disponível', leCelula("   ").estado === "naoDisponivel");
+ok("traço e ausente não colapsam num estado só",
+  leCelula("Tr").estado !== leCelula("NA").estado);
+ok("lixo inesperado é sinalizado, não engolido",
+  leCelula("abc").naoReconhecido === "abc");
+
+/** Valores impossíveis. */
+{
+  const neg: ValorNutriente = { nutrienteId: "proteina", valorPor100g: -1, unidade: "g", estado: "analisado" };
+  ok("valor negativo é erro", validaValor(neg, "x").some((p) => p.gravidade === "erro"));
+
+  const absurdo: ValorNutriente = { nutrienteId: "proteina", valorPor100g: 250, unidade: "g", estado: "analisado" };
+  ok("250 g de proteína em 100 g de comida é erro", validaValor(absurdo, "x").some((p) => p.gravidade === "erro"));
+
+  const kcalAbsurda: ValorNutriente = { nutrienteId: "energia", valorPor100g: 5000, unidade: "kcal", estado: "analisado" };
+  ok("5000 kcal por 100 g é erro", validaValor(kcalAbsurda, "x").some((p) => p.gravidade === "erro"));
+
+  const azeite: ValorNutriente = { nutrienteId: "energia", valorPor100g: 884, unidade: "kcal", estado: "analisado" };
+  ok("mas 884 kcal (azeite) passa — o teto é físico, não nutricional",
+    validaValor(azeite, "x").length === 0);
+
+  const unidadeRuim = { nutrienteId: "x", valorPor100g: 1, unidade: "onças", estado: "analisado" } as unknown as ValorNutriente;
+  ok("unidade desconhecida é erro", validaValor(unidadeRuim, "x").some((p) => p.gravidade === "erro"));
+
+  const contradicao: ValorNutriente = { nutrienteId: "ferro", valorPor100g: 2, unidade: "mg", estado: "traco" };
+  ok("traço carregando número é contradição e vira erro",
+    validaValor(contradicao, "x").some((p) => p.gravidade === "erro"));
+}
+
+ok("nutriente duplicado na mesma ficha é erro",
+  validaDuplicatas([analisado(1), analisado(2)], "x").length === 1);
+
+/**
+ * A conferência energética. Ela existe para pescar outlier — e o teste mais
+ * importante é o que garante que ela NÃO reescreve o valor oficial.
+ */
+{
+  ok("macros coerentes não geram aviso",
+    conferenciaEnergetica(160, 30, 5, 3, "x").length === 0);
+  const divergente = conferenciaEnergetica(160, 30, 50, 30, "x");
+  ok("divergência grande gera aviso", divergente.length === 1);
+  ok("e o aviso é AVISO, não erro — a fonte manda",
+    divergente[0].gravidade === "aviso");
+  ok("o aviso diz explicitamente para não substituir o valor oficial",
+    /NÃO deve ser substituído/.test(divergente[0].mensagem));
+  ok("ficha com só um aviso ainda pode publicar", podePublicar(divergente));
+}
+
+/** A ficha inteira: sem rastro, não publica. */
+{
+  const semRastro = validaFicha({ nome: "Feijão", idNaFonte: "", verificadoEm: "2026-08-30", nutrientes: [analisado(5)] });
+  ok("ficha sem identificador na fonte não publica", !podePublicar(semRastro));
+
+  const semData = validaFicha({ nome: "Feijão", idNaFonte: "123", verificadoEm: "", nutrientes: [analisado(5)] });
+  ok("ficha sem data de verificação não publica", !podePublicar(semData));
+
+  const semNome = validaFicha({ nome: "  ", idNaFonte: "123", verificadoEm: "2026-08-30", nutrientes: [analisado(5)] });
+  ok("ficha sem nome não publica", !podePublicar(semNome));
+
+  const vazia = validaFicha({ nome: "Feijão", idNaFonte: "123", verificadoEm: "2026-08-30", nutrientes: [] });
+  ok("ficha sem nenhum nutriente não publica", !podePublicar(vazia));
+
+  const boa = validaFicha({ nome: "Feijão", idNaFonte: "123", verificadoEm: "2026-08-30", nutrientes: [analisado(5), traco, ausente] });
+  ok("ficha completa, com traço e ausente declarados, publica", podePublicar(boa), resumo(boa));
+}
 
 console.log("\n" + "=".repeat(64));
 if (falhas > 0) {
