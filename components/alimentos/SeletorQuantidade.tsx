@@ -20,6 +20,12 @@ import type { EstadoDado, Unidade } from "@/lib/alimentos/tipos";
 
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 
+export interface PorcaoUI {
+  nome: string;
+  gramas: number;
+  fonte: string;
+}
+
 export interface LinhaNutriente {
   id: string;
   nome: string;
@@ -34,11 +40,19 @@ export default function SeletorQuantidade({
   slug,
   principais,
   secundarios,
+  porcoes = [],
 }: {
   nome: string;
   slug: string;
   principais: LinhaNutriente[];
   secundarios: LinhaNutriente[];
+  /**
+   * Medidas caseiras com peso documentado. Vazio é o estado normal enquanto
+   * a base de medidas não existir — e aí a ferramenta oferece gramas e só,
+   * que é sempre correto. Melhor pedir "120 g" do que afirmar "1 concha =
+   * 120 g" sem ter de onde tirar isso.
+   */
+  porcoes?: PorcaoUI[];
 }) {
   const [texto, setTexto] = useState(String(GRAMAS_PADRAO));
   const [aberto, setAberto] = useState(false);
@@ -65,6 +79,45 @@ export default function SeletorQuantidade({
 
   return (
     <div className="bg-[#0d0d0d] border border-white/10 p-5 sm:p-8">
+      {porcoes.length > 0 && (
+        <div className="mb-5">
+          <p className="text-gray-300 text-sm font-medium mb-2">Medida caseira</p>
+          <div className="flex flex-wrap gap-2">
+            {porcoes.map((p) => {
+              const ativo = gramas === p.gramas;
+              return (
+                <button
+                  key={p.nome}
+                  type="button"
+                  onClick={() => {
+                    setTexto(String(p.gramas));
+                    trackEvent("food_portion_select", { placement: "pagina-alimento" });
+                  }}
+                  aria-pressed={ativo}
+                  className={`px-4 py-2.5 text-sm border transition-colors min-h-[44px] text-left ${
+                    ativo
+                      ? "border-[#BA9E50] text-white bg-[#BA9E50]/10"
+                      : "border-white/20 text-gray-300 hover:border-white/40"
+                  }`}
+                >
+                  {p.nome}
+                  <span className="block text-gray-500 text-xs mt-0.5">{p.gramas} g</span>
+                </button>
+              );
+            })}
+          </div>
+          {/*
+            A fonte da MEDIDA fica junto dela, e separada da fonte dos
+            nutrientes: os dois números vêm de lugares diferentes, e juntar
+            tudo numa linha só de crédito faria parecer que a TACO também
+            publica pesos de concha — o que ela não faz.
+          */}
+          <p className="text-gray-500 text-xs mt-2.5">
+            Pesos das medidas: {porcoes[0].fonte}
+          </p>
+        </div>
+      )}
+
       <div className="mb-7">
         <label htmlFor="qtd-alimento" className="block text-gray-300 text-sm font-medium mb-2">
           Quantidade de {nome.split(",")[0].toLowerCase()}
