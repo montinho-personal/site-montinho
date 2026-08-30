@@ -65,7 +65,14 @@ export const ALIMENTOS_INDEXAVEIS: string[] = [
   "melancia-crua",
 
   // ── Lácteos ─────────────────────────────────────────────────────────────
-  "leite-de-vaca-integral",
+  /*
+   * O leite de vaca integral ficou de fora, e não por esquecimento: a TACO
+   * marca energia, proteína, carboidrato e lipídeos dele como análise em
+   * reavaliação, sem publicar valor nenhum nesta edição. Uma página própria
+   * mostraria "em revisão" nas cinco linhas principais — página de alimento
+   * sem os números do alimento. Ele continua pesquisável, e volta a ser
+   * indexável quando a fonte publicar os valores.
+   */
   "iogurte-natural",
   "queijo-minas-frescal",
   "queijo-mozarela",

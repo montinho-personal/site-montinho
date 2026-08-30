@@ -56,7 +56,7 @@ const POPULARES = [
   "banana-prata-crua",
   "aveia-flocos-crua",
   "batata-doce-cozida",
-  "leite-de-vaca-integral",
+  "queijo-minas-frescal",
 ];
 
 export default function AlimentosPage() {

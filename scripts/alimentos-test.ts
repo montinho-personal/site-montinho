@@ -47,6 +47,7 @@ import { blogPosts } from "../lib/blog";
 import { ARTIGOS_COM_FICHA, FICHAS_POR_ARTIGO } from "../lib/alimentos/artigos";
 import { nomeNatural, todosAlimentos } from "../lib/alimentos/base";
 import { NUTRIENTE_POR_ID } from "../lib/alimentos/nutrientes";
+import { ALIMENTOS_INDEXAVEIS } from "../lib/alimentos/indexaveis";
 
 let falhas = 0;
 function ok(nome: string, cond: boolean, detalhe = "") {
@@ -422,6 +423,33 @@ bloco("10. A BASE IMPORTADA REPRODUZ A TABELA PUBLICADA");
       base.alimentos.every((a) => /^TACO-\d+$/.test(a.proveniencia.idNaFonte)),
       base.alimentos.filter((a) => !/^TACO-\d+$/.test(a.proveniencia.idNaFonte)).length + " sem código");
     ok("nenhum alimento nasce indexável", base.alimentos.every((a) => a.indexavel === false));
+
+    /**
+     * Página de alimento precisa ter os números do alimento.
+     *
+     * O leite de vaca integral chegou a ter página própria e nenhum macro: a
+     * TACO marca energia, proteína, carboidrato e lipídeos dele como análise
+     * em reavaliação nesta edição, então as cinco linhas principais sairiam
+     * como "em revisão". Uma página assim não responde a pergunta que trouxe
+     * a pessoa, e ainda gasta orçamento de rastreamento do Google.
+     *
+     * A recusa é honesta e o alimento continua pesquisável — o que ele não
+     * tem é página.
+     */
+    {
+      const PRINCIPAIS_MINIMOS = ["energia", "proteina", "carboidrato", "lipideos"];
+      const ocas = base.alimentos
+        .filter((a) => ALIMENTOS_INDEXAVEIS.includes(a.slug))
+        .filter((a) => {
+          const faltando = PRINCIPAIS_MINIMOS.filter((id) => {
+            const v = a.nutrientes.find((n) => n.nutrienteId === id);
+            return !v || v.estado !== "analisado";
+          });
+          return faltando.length >= 3;
+        })
+        .map((a) => a.slug);
+      ok("nenhuma página indexável fica sem os macros principais", ocas.length === 0, ocas.join(", "));
+    }
 
     /**
      * Valores conferidos contra a TACO 4ª ed. impressa. Se um destes mudar,
