@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent } from "@/lib/analytics";
+import { PONTE, consome } from "@/lib/ferramentas/ponte";
 import { buscaAlimentos, montaIndice } from "@/lib/alimentos/busca";
 import { GRAMAS_MAX, GRAMAS_PADRAO, formataNumero, leGramas } from "@/lib/alimentos/escala";
 import type { AlimentoLeve } from "@/lib/alimentos/indice";
@@ -49,6 +50,7 @@ function Seletor({
   escolhido,
   onEscolhe,
   id,
+  focar = false,
 }: {
   titulo: string;
   indice: ReturnType<typeof montaIndice>;
@@ -56,8 +58,22 @@ function Seletor({
   escolhido: AlimentoLeve | null;
   onEscolhe: (a: AlimentoLeve | null) => void;
   id: string;
+  /** Leva o cursor para cá quando o outro campo chegou preenchido de fora. */
+  focar?: boolean;
 }) {
   const [consulta, setConsulta] = useState("");
+  const campo = useRef<HTMLInputElement>(null);
+
+  /**
+   * Só foca quando alguém pediu — nunca no carregamento normal da página.
+   * Mover o cursor sozinho abre o teclado do celular por cima do conteúdo, e
+   * quem só abriu o comparador para olhar não pediu nada disso. Já quem
+   * clicou em "comparar isto com outro" tem exatamente uma coisa a fazer
+   * aqui, e é digitar neste campo.
+   */
+  useEffect(() => {
+    if (focar) campo.current?.focus({ preventScroll: true });
+  }, [focar]);
   const resultados = useMemo(
     () => (escolhido ? [] : buscaAlimentos(indice, consulta, { limite: 6 })),
     [indice, consulta, escolhido],
@@ -82,6 +98,7 @@ function Seletor({
       ) : (
         <>
           <input
+            ref={campo}
             id={id}
             type="search"
             autoComplete="off"
@@ -147,6 +164,32 @@ export default function ComparadorAlimentos({
     [alimentos],
   );
 
+  /**
+   * O alimento que veio da página anterior.
+   *
+   * Roda em efeito, e não no estado inicial, por duas razões. A primeira é
+   * técnica: o servidor pré-renderiza esta página e não tem sessionStorage,
+   * então ler na inicialização daria hidratação divergente. A segunda é a
+   * regra da ponte — `consome` apaga ao ler, e apagar precisa acontecer uma
+   * vez só, depois que o componente existe de verdade.
+   *
+   * A validação é a mesma de toda travessia: quem recebe não confia,
+   * confere. O slug que chega tem que existir no índice desta página. Se não
+   * existir — base mudou, alimento saiu, valor adulterado à mão no
+   * storage —, o campo simplesmente fica vazio, que é o estado normal do
+   * comparador.
+   */
+  const [veioDaPonte, setVeioDaPonte] = useState(false);
+  useEffect(() => {
+    const slug = consome(PONTE.alimento);
+    if (slug === null) return;
+    const achado = porSlug.get(slug);
+    if (!achado) return;
+    setA(achado);
+    setVeioDaPonte(true);
+    trackEvent("food_compare_open", { placement: "ponte-alimento" });
+  }, [porSlug]);
+
   const qA = leGramas(gA);
   const qB = leGramas(gB);
   const pronto = a && b && qA !== null && qB !== null;
@@ -169,9 +212,20 @@ export default function ComparadorAlimentos({
 
   return (
     <div className="bg-[#0d0d0d] border border-white/10 p-5 sm:p-8">
+      {/*
+          Diz de onde veio o campo já preenchido. Sem essa linha, o alimento
+          aparece sozinho na tela e a pessoa fica sem saber se ela escolheu,
+          se o site escolheu por ela, ou se pode trocar.
+      */}
+      {veioDaPonte && !b && (
+        <p className="text-gray-400 text-sm mb-5" aria-live="polite">
+          Trouxemos <span className="text-white">{a?.n}</span> da página anterior. Escolha o segundo alimento — ou
+          toque em “trocar” para mudar o primeiro.
+        </p>
+      )}
       <div className="grid gap-5 sm:grid-cols-2">
         <Seletor titulo="Primeiro alimento" id="cmp-a" indice={indice} porSlug={porSlug} escolhido={a} onEscolhe={(v) => escolhe("a", v)} />
-        <Seletor titulo="Segundo alimento" id="cmp-b" indice={indice} porSlug={porSlug} escolhido={b} onEscolhe={(v) => escolhe("b", v)} />
+        <Seletor titulo="Segundo alimento" id="cmp-b" indice={indice} porSlug={porSlug} escolhido={b} onEscolhe={(v) => escolhe("b", v)} focar={veioDaPonte && !b} />
       </div>
 
       {!a && !b && (

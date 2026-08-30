@@ -7,6 +7,7 @@ import { buscaAlimentos, montaIndice } from "@/lib/alimentos/busca";
 import { GRAMAS_MAX, GRAMAS_PADRAO, formataNumero, leGramas } from "@/lib/alimentos/escala";
 import { QTD_PRINCIPAIS, type AlimentoLeve } from "@/lib/alimentos/indice";
 import type { Alimento } from "@/lib/alimentos/tipos";
+import LinkComparar from "@/components/alimentos/LinkComparar";
 
 /**
  * A busca de alimentos.
@@ -19,6 +20,8 @@ import type { Alimento } from "@/lib/alimentos/tipos";
  * quantidade. Não navega, não abre modal: quem procurou "feijão" vê o feijão
  * na mesma tela em que digitou.
  */
+
+const ln = "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
 
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 
@@ -315,15 +318,26 @@ export default function BuscaAlimentos({
             Fonte: Tabela Brasileira de Composição de Alimentos — TACO, NEPA/UNICAMP.
           </p>
 
-          {escolhido.i && (
-            <Link
-              href={`/alimentos/${escolhido.s}`}
-              onClick={() => trackEvent("food_nutrients_expand", { placement })}
-              className="inline-block mt-5 bg-white text-black px-6 py-3 text-[15px] font-semibold min-h-[48px]"
-            >
-              Ver tabela completa →
-            </Link>
-          )}
+          {/*
+              As duas saídas de quem já tem um alimento na tela. "Comparar"
+              aparece para qualquer alimento — inclusive os que não têm página
+              própria, porque o comparador funciona com o índice inteiro e não
+              só com os indexáveis.
+          */}
+          <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-3">
+            {escolhido.i && (
+              <Link
+                href={`/alimentos/${escolhido.s}`}
+                onClick={() => trackEvent("food_nutrients_expand", { placement })}
+                className="inline-block bg-white text-black px-6 py-3 text-[15px] font-semibold min-h-[48px]"
+              >
+                Ver tabela completa →
+              </Link>
+            )}
+            <LinkComparar slug={escolhido.s} className={`text-gray-300 text-[15px] ${ln}`}>
+              Comparar com outro alimento →
+            </LinkComparar>
+          </div>
         </div>
       )}
     </div>

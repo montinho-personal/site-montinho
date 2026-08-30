@@ -29,6 +29,18 @@ export const PONTE = {
   /** Volume de treino → 1RM: o nome do exercício em análise. */
   exercicio: "montinho:ponte:exercicio",
   /**
+   * Tabela de alimentos → Comparador: o slug do alimento já escolhido.
+   *
+   * Diferente das outras pontes, o que atravessa aqui não é dado do corpo de
+   * ninguém — é o identificador público de uma página do site. Mesmo assim
+   * usa sessionStorage, e não `?alimento=`: o comparador tem canonical
+   * próprio, e URL com parâmetro é URL que alguém indexa, compartilha e
+   * depois cobra que funcione como página de comparação salva. Isso é outra
+   * funcionalidade, com outro custo — não um efeito colateral de preencher
+   * um campo.
+   */
+  alimento: "montinho:ponte:alimento",
+  /**
    * TMB/TDEE → Déficit: os cinco dados do formulário, como JSON.
    *
    * A alternativa — passar só o TDEE pronto — seria um número opaco que o
