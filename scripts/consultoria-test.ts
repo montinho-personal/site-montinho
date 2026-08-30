@@ -76,7 +76,7 @@ for (const [nome, re] of PROIBIDOS) {
 bloco("2. TODO CTA SABE DE ONDE FOI CLICADO");
 
 {
-  const ctas = semComentarios.match(/<Cta\b[^>]*\/>/gs) ?? [];
+  const ctas = semComentarios.match(/<Cta\b[^>]*\/>/g) ?? [];
   ok("existem CTAs na página", ctas.length >= 6, `${ctas.length}`);
   const semPosicao = ctas.filter((c) => !/\bem=/.test(c));
   ok("todo CTA declara a posição", semPosicao.length === 0, `${semPosicao.length} sem`);
