@@ -634,6 +634,23 @@ bloco("13. DESCOBERTA — O RANKING NÃO PODE MENTIR SOZINHO");
   ok("e os cinco primeiros continuam sendo os do card",
     ORDEM_LEVE.slice(0, QTD_PRINCIPAIS).join(",") === "energia,proteina,carboidrato,lipideos,fibra",
     ORDEM_LEVE.slice(0, QTD_PRINCIPAIS).join(","));
+  /**
+   * O buscador e a página do alimento mostram o MESMO alimento. Ter medida
+   * caseira num e não no outro é a pessoa ver a ferramenta piorar ao mudar
+   * de tela — foi assim que isso apareceu em uso: o arroz na /alimentos não
+   * tinha os botões que o arroz na página própria tinha.
+   */
+  {
+    const busca = readFileSync("components/alimentos/BuscaAlimentos.tsx", "utf8");
+    const pagina = readFileSync("components/alimentos/SeletorQuantidade.tsx", "utf8");
+    for (const [nome, src] of [["o buscador", busca], ["a página do alimento", pagina]] as const) {
+      ok(`${nome} oferece medida caseira`, /Medida caseira/.test(src));
+      ok(`${nome} cita a fonte das medidas junto dos botões`, /Pesos das medidas/.test(src));
+    }
+    ok("o índice leve carrega as porções para o buscador",
+      /p\?: \{ n: string; g: number \}\[\]/.test(readFileSync("lib/alimentos/indice.ts", "utf8")));
+  }
+
   ok("a busca só renderiza os cinco do card",
     /slice\(0, QTD_PRINCIPAIS\)/.test(readFileSync("components/alimentos/BuscaAlimentos.tsx", "utf8")),
     "sem o corte, sairiam duas linhas com rótulo indefinido");

@@ -212,6 +212,42 @@ export default function BuscaAlimentos({
             </button>
           </div>
 
+          {/*
+            Medida caseira. Mesma função que na página do alimento: quem não
+            tem balança precisa da ponte entre "100 g" e "1 concha". Estava
+            só na página, e o buscador mostrava o alimento sem ela — duas
+            telas do mesmo alimento com recursos diferentes.
+          */}
+          {escolhido.p && escolhido.p.length > 0 && (
+            <div className="mb-5">
+              <p className="text-gray-300 text-sm font-medium mb-2">Medida caseira</p>
+              <div className="flex flex-wrap gap-2">
+                {escolhido.p.map((m) => (
+                  <button
+                    key={m.n}
+                    type="button"
+                    onClick={() => {
+                      setGramasTexto(String(m.g));
+                      trackEvent("food_portion_select", { placement });
+                    }}
+                    aria-pressed={gramas === m.g}
+                    className={`px-4 py-2.5 text-sm border transition-colors min-h-[44px] text-left ${
+                      gramas === m.g
+                        ? "border-[#BA9E50] text-white bg-[#BA9E50]/10"
+                        : "border-white/20 text-gray-300 hover:border-white/40"
+                    }`}
+                  >
+                    {m.n}
+                    <span className="block text-gray-500 text-xs mt-0.5">{m.g} g</span>
+                  </button>
+                ))}
+              </div>
+              <p className="text-gray-500 text-xs mt-2.5">
+                Pesos das medidas: Tabela de Medidas Referidas — POF 2008-2009, IBGE.
+              </p>
+            </div>
+          )}
+
           {/* Quantidade */}
           <div className="mb-6">
             <label htmlFor={`qtd-${placement}`} className="block text-gray-300 text-sm font-medium mb-2">

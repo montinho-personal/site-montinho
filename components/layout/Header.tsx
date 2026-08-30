@@ -23,6 +23,14 @@ const navLinks = [
  */
 const toolLinks = [
   { href: "/comece", label: "Comece Aqui", hint: "O caminho completo, do zero ao plano" },
+  /*
+   * A tabela de alimentos entra no menu porque é a ferramenta de MAIOR
+   * frequência de uso: consultar quanto tem de proteína num alimento é algo
+   * que a pessoa faz toda semana, e não uma vez. Chegar nela só por
+   * /ferramentas exigiria dois cliques para a pergunta mais repetida do
+   * site.
+   */
+  { href: "/alimentos", label: "Tabela de Alimentos", hint: "Calorias e macros de 597 alimentos" },
   { href: "/diagnostico", label: "Diagnóstico Montinho", hint: "Descubra seu perfil em 1 minuto" },
   { href: "/treino-para-minha-rotina", label: "Treino Para Minha Rotina", hint: "A divisão que cabe na sua semana" },
   { href: "/pergunte-ao-montinho", label: "Pergunte ao Montinho", hint: "Tire dúvidas de treino na hora" },
