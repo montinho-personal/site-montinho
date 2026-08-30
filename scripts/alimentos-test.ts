@@ -68,7 +68,7 @@ function alimento(nome: string, slug: string, aliases: string[], extra: Partial<
       fonte: "TACO",
       idNaFonte: "000",
       descricaoOriginal: nome,
-      versao: "4ª ed.",
+      versao: "4ª ed. rev. e ampl., 2011",
       verificadoEm: "2026-08-30",
     },
     indexavel: false,
@@ -114,17 +114,39 @@ ok("o USDA é registrado como domínio público", /domínio público|CC0/i.test(
 ok("toda fonte tem termo escrito", IDS_FONTE.every((id) => FONTES[id].licenca.length > 60));
 ok("toda fonte não-liberada explica a pendência",
   IDS_FONTE.filter((id) => !podeEntrarEmProducao(id)).every((id) => (FONTES[id].pendencia ?? "").length > 40));
+/* Fonte liberada não precisa mais de pendência — e não deve carregar uma. */
+ok("fonte já conferida não fica com pendência pendurada",
+  IDS_FONTE.filter((id) => podeEntrarEmProducao(id)).every((id) => FONTES[id].pendencia === undefined),
+  IDS_FONTE.filter((id) => podeEntrarEmProducao(id) && FONTES[id].pendencia).join(", "));
 
 /**
- * A trava de verificação. Enquanto os termos não forem conferidos na origem,
- * NENHUMA fonte publica — nem a TACO, que provavelmente permite. "Provavelmente
- * permite" é exatamente a frase que este teste existe para não aceitar.
+ * A trava de verificação, agora com a TACO do outro lado dela.
+ *
+ * Por um tempo este teste exigia que NENHUMA fonte estivesse liberada,
+ * porque nenhuma tinha sido conferida na origem — nem a TACO, que
+ * "provavelmente permitia". Essa frase era exatamente o que a trava existia
+ * para não aceitar.
+ *
+ * A conferência aconteceu: a página de créditos do PDF oficial da 4ª edição
+ * traz a autorização, e ela está reproduzida ao pé da letra em fontes.ts. A
+ * TACO passou a publicar; as outras continuam paradas onde estavam, cada uma
+ * pelo seu próprio motivo.
  */
 {
+  ok("a TACO foi conferida na publicação oficial e pode publicar",
+    podeEntrarEmProducao("TACO"), FONTES.TACO.verificadoEm || "sem data");
+  ok("a licença guarda a frase da fonte, não uma paráfrase",
+    /É permitida a reprodução parcial ou total desta obra, desde que citada a fonte/.test(FONTES.TACO.licenca));
+  ok("a edição registrada é a que a ficha catalográfica declara",
+    /4ª edição revisada e ampliada/.test(FONTES.TACO.edicao) && /2011/.test(FONTES.TACO.edicao));
+
+  /* Conferir uma não libera as outras. */
+  ok("a TBCA continua bloqueada", !podeEntrarEmProducao("TBCA"));
+  ok("o USDA continua pendente de importação", !podeEntrarEmProducao("USDA"));
+
   const pendentes = pendenciasDeLicenca().map((p) => p.id);
-  ok("hoje nenhuma fonte está liberada para produção (verificação pendente)",
-    IDS_FONTE.every((id) => pendentes.includes(id)),
-    `liberadas: ${IDS_FONTE.filter((id) => podeEntrarEmProducao(id)).join(", ") || "nenhuma"}`);
+  ok("toda fonte ainda pendente aparece na lista de pendências",
+    IDS_FONTE.filter((id) => !podeEntrarEmProducao(id)).every((id) => pendentes.includes(id)));
 }
 
 ok("o aviso de variabilidade não promete exatidão",

@@ -73,6 +73,10 @@ export default function AlimentosPage() {
       const n = a.nutrientes.find((x) => x.nutrienteId === id);
       return n && n.estado === "analisado" ? n.valorPor100g : null;
     }),
+    u: (() => {
+      const n = a.nutrientes.find((x) => x.nutrienteId === "umidade");
+      return n && n.estado === "analisado" ? n.valorPor100g : null;
+    })(),
     i: a.indexavel,
   }));
 
@@ -106,7 +110,13 @@ export default function AlimentosPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <BuscaAlimentos alimentos={leves} populares={POPULARES} placement="pagina-alimentos" />
 
-          <p className="text-gray-500 text-sm mt-5 leading-relaxed">
+          <p className="mt-5">
+            <Link href="/alimentos/comparar" className={`text-gray-300 ${ln}`}>
+              Comparar dois alimentos lado a lado →
+            </Link>
+          </p>
+
+          <p className="text-gray-500 text-sm mt-4 leading-relaxed">
             {todos.length} alimentos da {FONTES.TACO.atribuicao}. A busca acontece no seu aparelho — nada do que você
             digita é enviado para lugar nenhum.
           </p>

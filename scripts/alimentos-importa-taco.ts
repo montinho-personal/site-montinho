@@ -29,17 +29,18 @@ const ENTRADA = "data/alimentos/bruto/taco-4a-edicao.xlsx";
 const SAIDA = "data/alimentos/processado/taco.json";
 
 /**
- * A proveniência desta importação, dita com honestidade desconfortável.
+ * A proveniência, agora confirmada na publicação.
  *
- * O arquivo recebido se chama "Taco4aEdicao_1.xlsx", mas as três abas
- * internas estão rotuladas "taco3". Não dá para saber, só olhando o arquivo,
- * se é a 4ª edição num arquivo que herdou nomes de abas da 3ª, ou outra
- * coisa. Registrar "4ª edição" como fato seria inventar uma certeza.
+ * Por um tempo esta constante descrevia o arquivo em vez da edição, porque as
+ * três abas internas da planilha estão rotuladas "taco3" e não dava para
+ * afirmar a edição só olhando o arquivo.
  *
- * Então a versão gravada em cada alimento descreve o arquivo, não a edição —
- * e a divergência fica escrita para quem for conferir.
+ * A ficha catalográfica do PDF oficial resolveu: "4. ed. rev. e ampl. --
+ * Campinas: NEPA-UNICAMP, 2011". Os rótulos das abas eram nomes herdados da
+ * planilha da edição anterior — e a contagem de 597 alimentos, que bate com a
+ * 4ª edição, já apontava para isso.
  */
-const VERSAO = "Arquivo Taco4aEdicao_1.xlsx (abas internas rotuladas \"taco3\") — edição a confirmar na fonte";
+const VERSAO = "4ª edição revisada e ampliada — Campinas: NEPA-UNICAMP, 2011";
 const VERIFICADO_EM = new Date().toISOString().slice(0, 10);
 
 /** Coluna → nutriente. A ordem é a do arquivo, conferida no cabeçalho. */

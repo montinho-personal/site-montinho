@@ -168,7 +168,7 @@ const FERRAMENTAS = [
     tempo: "resposta em segundos · sem cadastro",
     texto:
       "Pesquise um alimento e veja calorias, proteína, carboidratos, gorduras e fibras — por 100 g ou na quantidade que você come de verdade. São 597 alimentos da tabela da UNICAMP, com o preparo declarado: arroz cru e arroz cozido são comidas diferentes, e aqui elas não se misturam.",
-    quando: "Use quando a dúvida é sobre a comida, não sobre a meta: quanta proteína tem o feijão, quantas calorias tem a banana.",
+    quando: "Use quando a dúvida é sobre a comida, não sobre a meta: quanta proteína tem o feijão, quantas calorias tem a banana. Tem também comparador de dois alimentos lado a lado.",
   },
   {
     href: "/pergunte-ao-montinho",

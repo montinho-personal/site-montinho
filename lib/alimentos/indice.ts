@@ -32,6 +32,16 @@ export interface AlimentoLeve {
    * alimento; aqui, o que importa é não inventar zero.
    */
   v: (number | null)[];
+  /**
+   * Umidade em g por 100 g, quando analisada.
+   *
+   * Está no índice leve por um motivo de produto: é ela que permite avisar
+   * que dois alimentos não são comparáveis por peso quando um é seco e o
+   * outro é cozido. Sem esse número, o comparador apresentaria a aveia crua
+   * como "muito mais calórica" que o mingau e deixaria a conclusão errada
+   * de pé.
+   */
+  u: number | null;
   /** tem página própria? */
   i: boolean;
 }
