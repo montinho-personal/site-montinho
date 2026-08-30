@@ -8,6 +8,7 @@ import { AVISO_NAO_SUBSTITUI, AVISO_VARIACAO, FONTES } from "@/lib/alimentos/fon
 import { formataNumero, formataValor, escalaValor } from "@/lib/alimentos/escala";
 import SeletorQuantidade from "@/components/alimentos/SeletorQuantidade";
 import QuantoPreciso from "@/components/alimentos/QuantoPreciso";
+import LinkComparar from "@/components/alimentos/LinkComparar";
 
 /**
  * Página de um alimento.
@@ -214,12 +215,13 @@ export default async function AlimentoPage({ params }: { params: Promise<{ slug:
               Coloque {nomeNatural(a.nome).toLowerCase()} lado a lado com outro alimento e veja os dois na quantidade
               que você quiser.
             </p>
-            <Link
-              href="/alimentos/comparar"
+            {/* Leva este alimento junto: quem clica aqui já escolheu o primeiro dos dois. */}
+            <LinkComparar
+              slug={a.slug}
               className="border border-white/25 text-gray-200 px-6 py-3.5 text-[15px] font-medium min-h-[52px] inline-flex items-center hover:border-white/50 transition-colors"
             >
-              Abrir o comparador →
-            </Link>
+              Comparar {nomeNatural(a.nome).toLowerCase()} com outro →
+            </LinkComparar>
           </div>
 
           {relacionados.length > 0 && (

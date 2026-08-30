@@ -35,6 +35,9 @@ const volume = ler("components/volume/CalculadoraVolume.tsx");
 const onerm = ler("components/onerm/CalculadoraOneRM.tsx");
 
 const tdee = ler("components/tdee/CalculadoraTDEE.tsx");
+const linkComparar = ler("components/alimentos/LinkComparar.tsx");
+const comparador = ler("components/alimentos/ComparadorAlimentos.tsx");
+const buscaAlimentos = ler("components/alimentos/BuscaAlimentos.tsx");
 
 const COMPONENTES: [string, string][] = [
   ["TMB/TDEE", tdee],
@@ -43,16 +46,24 @@ const COMPONENTES: [string, string][] = [
   ["Proteína", proteina],
   ["Volume", volume],
   ["1RM", onerm],
+  ["Link comparar", linkComparar],
+  ["Comparador", comparador],
+  ["Busca de alimentos", buscaAlimentos],
 ];
 
 console.log("\n" + "=".repeat(64) + "\nA MECÂNICA MORA NUM LUGAR SÓ\n" + "=".repeat(64));
 
 /**
- * Quatro desde que a TMB/TDEE nasceu: kcal, peso, exercício e o pacote de
- * dados corporais TMB→Déficit. O número é travado para uma chave nova nunca
- * entrar sem passar por esta suíte.
+ * Cinco: kcal, peso, exercício, o pacote de dados corporais TMB→Déficit e o
+ * alimento que vai da tabela para o comparador. O número é travado para uma
+ * chave nova nunca entrar sem passar por esta suíte.
+ *
+ * A do alimento é a única que não carrega dado do corpo de ninguém — é o
+ * slug de uma página pública. Mesmo assim atravessa pela ponte, e não por
+ * querystring, porque URL com parâmetro é URL que alguém indexa e
+ * compartilha, e o comparador tem canonical próprio.
  */
-ok("existem exatamente quatro travessias declaradas", Object.keys(PONTE).length === 4, Object.keys(PONTE).join(", "));
+ok("existem exatamente cinco travessias declaradas", Object.keys(PONTE).length === 5, Object.keys(PONTE).join(", "));
 ok("toda chave tem prefixo do site", Object.values(PONTE).every((v) => v.startsWith("montinho:ponte:")));
 ok("as chaves são únicas", new Set(Object.values(PONTE)).size === Object.keys(PONTE).length);
 
@@ -89,6 +100,7 @@ const GRAVADORES: [string, string, string][] = [
   ["Déficit → Macros", deficit, "guardaKcalParaMacros"],
   ["Macros → Proteína", macros, "guardaPesoParaProteina"],
   ["Volume → 1RM", volume, "guarda(PONTE.exercicio"],
+  ["Alimento → Comparador", linkComparar, "guarda(PONTE.alimento"],
 ];
 for (const [nome, src, fn] of GRAVADORES) {
   const chamadas = src.split(fn).length - 1;
@@ -128,6 +140,27 @@ ok("não existe getItem sem removeItem em volta", (ponte.match(/getItem/g) ?? []
 
 /** Quem consome tem que validar o que recebeu — sessionStorage é editável. */
 ok("o peso recebido é validado por faixa", /consomeNumero\(PONTE\.peso, PESO_MIN, PESO_MAX\)/.test(proteina));
+
+/**
+ * O comparador recebe um slug, e slug não tem faixa numérica para validar —
+ * a conferência é a existência no índice da própria página. Sem ela, um
+ * valor qualquer no storage viraria um alimento fantasma na tela.
+ */
+ok(
+  "o alimento recebido é conferido contra o índice",
+  /consome\(PONTE\.alimento\)/.test(comparador) && /porSlug\.get\(slug\)/.test(comparador) && /if \(!achado\) return;/.test(comparador),
+  "quem recebe não confia, confere"
+);
+
+/**
+ * O ponto de partida da travessia. Os dois lugares onde a pessoa já tem um
+ * alimento escolhido precisam oferecer a passagem — senão a ponte existe no
+ * código e não existe na tela, que foi exatamente o que aconteceu com as
+ * medidas caseiras.
+ */
+for (const [nome, src] of [["página do alimento", ler("app/alimentos/[slug]/page.tsx")], ["busca da tabela", buscaAlimentos]] as [string, string][]) {
+  ok(`${nome} oferece o comparador com o alimento junto`, /<LinkComparar[\s\S]{0,200}?slug=/.test(src));
+}
 ok("a caloria recebida é validada por faixa", /consomeNumero\(PONTE\.kcal, KCAL_MIN, KCAL_MAX\)/.test(ler("lib/macros.ts")));
 
 console.log("\n" + "=".repeat(64) + "\nAS TRÊS TRAVESSIAS FUNCIONAM PONTA A PONTA\n" + "=".repeat(64));
