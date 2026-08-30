@@ -195,6 +195,22 @@ export default async function AlimentoPage({ params }: { params: Promise<{ slug:
             </div>
           </div>
 
+          <div>
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-3" style={h}>
+              Comparar com outro alimento
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-5">
+              Coloque {nomeNatural(a.nome).toLowerCase()} lado a lado com outro alimento e veja os dois na quantidade
+              que você quiser.
+            </p>
+            <Link
+              href="/alimentos/comparar"
+              className="border border-white/25 text-gray-200 px-6 py-3.5 text-[15px] font-medium min-h-[52px] inline-flex items-center hover:border-white/50 transition-colors"
+            >
+              Abrir o comparador →
+            </Link>
+          </div>
+
           {relacionados.length > 0 && (
             <div>
               <h2 className="text-xl sm:text-2xl font-bold text-white mb-4" style={h}>

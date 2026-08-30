@@ -65,16 +65,23 @@ export const FONTES: Record<IdFonte, FonteNutricional> = {
     atribuicao: "Tabela Brasileira de Composição de Alimentos — TACO, NEPA/UNICAMP",
     nomeCompleto: "Tabela Brasileira de Composição de Alimentos (TACO)",
     instituicao: "NEPA — Núcleo de Estudos e Pesquisas em Alimentação / UNICAMP",
-    edicao: "4ª edição revisada e ampliada (2011)",
-    url: "https://www.nepa.unicamp.br/taco/tabela.php",
+    edicao: "4ª edição revisada e ampliada — Campinas: NEPA-UNICAMP, 2011",
+    url: "https://www.unicamp.br/nepa/taco",
+    /**
+     * Conferida na publicação oficial em 30/08/2026, na página de créditos do
+     * PDF da 4ª edição.
+     *
+     * A frase está reproduzida ao pé da letra, e não parafraseada. Uma
+     * paráfrase é o tipo de coisa que muda de sentido quando alguém a
+     * reescreve daqui a um ano — e é justamente esta frase que autoriza o
+     * projeto inteiro a existir.
+     */
     licenca:
-      "A publicação informa ser permitida a reprodução parcial ou total desde que citada a fonte. Uso condicionado à atribuição, não domínio público.",
+      "\u00a92011. Núcleo de Estudos e Pesquisas em Alimentação – NEPA, Universidade Estadual de Campinas – UNICAMP. No original: \u201cÉ permitida a reprodução parcial ou total desta obra, desde que citada a fonte.\u201d Uso condicionado à atribuição, não domínio público.",
     podePublicar: true,
     exigeAtribuicao: true,
     podeTransformar: true,
-    verificadoEm: "",
-    pendencia:
-      "Conferir os termos na página oficial e baixar o arquivo original (PDF/planilha da 4ª ed.) para dentro de data/alimentos/bruto/. Esta sessão não teve acesso de rede à nepa.unicamp.br.",
+    verificadoEm: "2026-08-30",
   },
 
   /**

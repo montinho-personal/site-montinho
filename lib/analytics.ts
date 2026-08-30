@@ -152,6 +152,7 @@ export type AnalyticsEvent =
   | "food_result_open"
   | "food_quantity_change"
   | "food_nutrients_expand"
+  | "food_compare_open"
   | "food_page_view"
   | "food_protein_calculator_click"
   | "food_macros_click"
