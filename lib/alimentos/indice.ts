@@ -50,6 +50,20 @@ export interface AlimentoLeve {
    * de pé.
    */
   u: number | null;
+  /**
+   * Medidas caseiras: nome e gramas.
+   *
+   * Vai no índice leve porque o buscador da /alimentos mostra o alimento sem
+   * navegar, e a medida caseira precisa estar onde o alimento aparece — não
+   * só na página própria. São 39 alimentos com ~4 medidas cada; o peso disso
+   * é desprezível perto de ter duas telas do mesmo alimento com recursos
+   * diferentes.
+   *
+   * A proveniência detalhada de cada medida (código na POF e preparação) NÃO
+   * vem junto: ela é longa e vive na página do alimento. Aqui a atribuição à
+   * fonte aparece uma vez, embaixo dos botões.
+   */
+  p?: { n: string; g: number }[];
   /** tem página própria? */
   i: boolean;
 }

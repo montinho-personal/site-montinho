@@ -70,6 +70,7 @@ export default function CompararPage() {
       const n = a.nutrientes.find((x) => x.nutrienteId === "umidade");
       return n && n.estado === "analisado" ? n.valorPor100g : null;
     })(),
+    p: a.porcoes.length ? a.porcoes.map((x) => ({ n: x.nome, g: x.gramas })) : undefined,
     i: a.indexavel,
   }));
 
