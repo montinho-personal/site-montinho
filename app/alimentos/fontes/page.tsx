@@ -93,6 +93,24 @@ export default function FontesPage() {
 
           <div>
             <h2 className="text-xl sm:text-2xl font-bold text-white mb-3" style={h}>
+              As medidas caseiras
+            </h2>
+            <p className="mb-3">
+              A TACO diz o que tem em 100 g e não diz o que são 100 g de comida. A ponte entre as duas coisas — “1
+              concha”, “1 filé” — vem da <strong className="text-white">{FONTES.IBGE_POF.nomeCompleto}</strong>, do{" "}
+              {FONTES.IBGE_POF.instituicao}.
+            </p>
+            <p className="mb-3 text-gray-400">{FONTES.IBGE_POF.metodologia}</p>
+            <p className="text-gray-400 text-sm">
+              É por isso que esses pesos valem mais que a estimativa de quem escreve um site: não são chute, são
+              consumo relatado por milhares de domicílios, cruzado com pesagem direta em universidade. Cada medida
+              aqui carrega o código do alimento na pesquisa e a preparação a que se refere — porque 1 unidade de peito
+              de frango cru pesa quase o dobro de 1 filé cozido.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-3" style={h}>
               Cru e cozido são alimentos diferentes
             </h2>
             <p>

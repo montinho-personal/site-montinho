@@ -46,6 +46,8 @@ export interface FonteNutricional {
    * por uma sessão com acesso à rede. Vazio = não conferido = não publica.
    */
   verificadoEm: string;
+  /** Como a fonte levantou os dados, quando isso importa para o leitor. */
+  metodologia?: string;
   /** O que precisa acontecer antes desta fonte poder ser usada. */
   pendencia?: string;
 }
@@ -157,8 +159,19 @@ export const FONTES: Record<IdFonte, FonteNutricional> = {
     atribuicao: "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil — POF 2008-2009, IBGE",
     nomeCompleto: "Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil",
     instituicao: "IBGE — Instituto Brasileiro de Geografia e Estatística",
-    edicao: "Pesquisa de Orçamentos Familiares 2008-2009",
+    edicao: "Pesquisa de Orçamentos Familiares 2008-2009 — IBGE, 2011",
     url: "https://biblioteca.ibge.gov.br/",
+    /**
+     * Como as medidas foram levantadas, na palavra do próprio IBGE
+     * (apresentação da publicação, conferida no CD-ROM oficial).
+     *
+     * Vale citar porque explica por que estes pesos valem mais que a
+     * estimativa de quem escreve um site: não são chute de redator, são
+     * consumo relatado por milhares de domicílios, cruzado com pesagem
+     * direta em universidade.
+     */
+    metodologia:
+      "Compilada a partir do que os informantes relataram consumir, em domicílio e fora dele, nas áreas urbana e rural de todo o País, cruzada com publicações técnico-científicas, rótulos de alimentos e pesagens diretas realizadas em centros de pesquisa de universidades brasileiras. Realizada em parceria com o Ministério da Saúde.",
     licenca:
       "Publicação oficial do IBGE, de acesso livre. Os termos de uso e a exigência de citação PRECISAM ser conferidos na página da publicação antes de qualquer dado ir ao ar — o mesmo procedimento aplicado à TACO.",
     podePublicar: true,
@@ -166,7 +179,7 @@ export const FONTES: Record<IdFonte, FonteNutricional> = {
     podeTransformar: true,
     verificadoEm: "",
     pendencia:
-      "Obter a publicação oficial e conferir os termos na página do IBGE. Esta sessão não tem acesso de rede a ibge.gov.br (proxy bloqueia). Enquanto verificadoEm estiver vazio, nenhuma medida desta fonte publica.",
+      "Falta conferir os termos de uso na publicação. A apresentação e a página de convenções do CD-ROM oficial foram lidas e não os trazem — eles ficam na página de créditos do volume impresso, como na TACO. Enquanto verificadoEm estiver vazio, nenhuma medida desta fonte chega à tela.",
   },
 
   /**
