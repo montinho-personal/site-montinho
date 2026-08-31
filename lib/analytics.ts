@@ -211,6 +211,8 @@ export type AnalyticsEvent =
   | "meal_training_click"
   | "meal_article_click"
   | "meal_cta_click"
+  /* Fim do cardápio → WhatsApp com objetivo e meta preenchidos. */
+  | "meal_whatsapp_click"
   | "ask_montinho_feedback_positive"
   | "ask_montinho_feedback_negative"
   | "ask_montinho_embed_submit"

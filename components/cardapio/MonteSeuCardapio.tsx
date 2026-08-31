@@ -5,6 +5,7 @@ import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { PONTE, consomeNumero } from "@/lib/ferramentas/ponte";
 import { ancoraNoTopo } from "@/lib/ferramentas/ancora";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { KCAL_MIN, KCAL_MAX, PESO_MIN, PESO_MAX, normalizaNumero } from "@/lib/macros";
 import {
   ALIMENTOS_CARDAPIO,
@@ -19,6 +20,7 @@ import {
 } from "@/lib/cardapio/alimentos";
 import {
   AVISO_EDUCACIONAL,
+  buildCardapioWhatsApp,
   DIAS_SEMANA,
   KCAL_MIN_CARDAPIO,
   MENSAGEM_FALTA_GORDURA,
@@ -1099,19 +1101,69 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
             </ul>
           </div>
 
-          {/* CTA — depois de todo o valor */}
-          <div className="border-t border-white/10 mt-6 pt-5 print:hidden">
-            <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">
-              O cardápio organiza a alimentação. O treino precisa acompanhar o
-              seu objetivo também.{" "}
+          {/*
+              CTA — depois de todo o valor.
+
+              A versão anterior era um link cinza dentro de um parágrafo. Quem
+              tinha acabado de montar um cardápio inteiro saía por uma porta
+              menor do que a que existe no fim do quiz de treino, e sem levar
+              nada do que construiu — teria que recomeçar do outro lado.
+
+              A honestidade vem ANTES do botão, e não é enfeite: é ela que faz
+              o convite valer. Ferramenta que diz o que não sabe fazer é a
+              única que a pessoa acredita quando diz o que sabe.
+          */}
+          <div className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-6 sm:p-8 mt-8 relative print:hidden">
+            <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: "#BA9E50" }} aria-hidden="true" />
+            <p className="text-white font-bold text-xl mb-3" style={h}>
+              E o treino?
+            </p>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              Você acabou de organizar a parte mais trabalhosa. O que este
+              cardápio não faz — e nenhuma ferramenta faz em alguns minutos — é
+              ajustar quando a rotina muda, quando o peso trava por três
+              semanas ou quando a fome não bate com a conta.
+            </p>
+            <p className="text-gray-300 leading-relaxed mb-6">
+              E tem a outra metade: comer para emagrecer sem treinar é perder
+              peso e músculo junto.{" "}
+              <strong className="text-white">
+                A alimentação organiza o resultado. O treino decide quanto dele
+                é músculo.
+              </strong>
+            </p>
+
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 mb-2">
+              <a
+                href={getWhatsAppUrl(
+                  buildCardapioWhatsApp({
+                    objetivo: e.objetivo!,
+                    metaKcal: cardapio.metaKcal,
+                    refeicoes: e.refeicoes!,
+                    dieta: e.dieta!,
+                    restricoes: e.restricoes,
+                  }),
+                )}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackEvent("meal_whatsapp_click", { placement })}
+                className="inline-flex items-center justify-center bg-white text-black px-6 py-3.5 text-sm font-semibold tracking-wide hover:bg-gray-100 transition-colors min-h-[52px]"
+              >
+                Quero o treino que acompanha esse objetivo →
+              </a>
               <Link
                 href="/consultoria"
                 onClick={() => trackEvent("meal_cta_click", { placement })}
-                className="text-gray-300 underline underline-offset-2 decoration-1 hover:text-white transition-colors"
+                className="inline-flex items-center text-sm text-gray-300 underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors min-h-[44px]"
               >
-                Conheça o acompanhamento do Montinho
+                Ver como funciona o acompanhamento
               </Link>
-              .
+            </div>
+
+            {/* Dizer para onde o botão leva antes do clique — sair do site sem aviso faz hesitar. */}
+            <p className="text-gray-400 text-xs leading-relaxed">
+              Abre o WhatsApp com o seu objetivo e a sua meta já escritos — é só
+              enviar. Não vai o seu peso nem o que você marcou na tela de saúde.
             </p>
           </div>
         </div>

@@ -35,6 +35,7 @@ import {
   TOLERANCIA_IDEAL,
   TOLERANCIA_KCAL,
   alternativas,
+  buildCardapioWhatsApp,
   diaDentroDaTolerancia,
   geraCardapio,
   geraSemana,
@@ -614,6 +615,73 @@ for (const [objetivo, artigos] of Object.entries(ARTIGOS_POR_OBJETIVO)) {
 }
 const internos = [...pagina.matchAll(/href="\/blog\/([a-z0-9-]+)"/g)].map((m) => m[1]);
 for (const s of internos) ok(`link interno da página existe: ${s}`, slugs.has(s));
+
+
+console.log("\n" + "=".repeat(64) + "\nA SAÍDA DO FIM: WHATSAPP COM CONTEXTO, SEM DADO DE SAÚDE\n" + "=".repeat(64));
+
+/**
+ * O fim do cardápio era um link cinza dentro de um parágrafo, e quem tinha
+ * acabado de montar o dia inteiro saía sem levar nada do que construiu. O CTA
+ * agora abre o WhatsApp preenchido — e é justamente por levar contexto que
+ * ele precisa de trava sobre O QUE leva.
+ */
+{
+  const msg = buildCardapioWhatsApp({
+    objetivo: "emagrecer",
+    metaKcal: 1834.6,
+    refeicoes: 5,
+    dieta: "vegetariano",
+    restricoes: ["lactose", "gluten"],
+  });
+
+  ok("a mensagem se apresenta como gente", /^Oi, Montinho!/.test(msg), msg.slice(0, 40));
+  ok("leva o objetivo em português", msg.includes("Emagrecer"));
+  ok("leva a meta arredondada, sem casa decimal", msg.includes("1835 kcal") && !/1834[.,]6/.test(msg));
+  ok("leva o número de refeições", /5 por dia/.test(msg));
+  ok("leva o tipo de alimentação", msg.includes("vegetariana"));
+  ok("leva o que a pessoa não come", msg.includes("Leite e derivados") && msg.includes("Glúten"));
+
+  /**
+   * O PEDIDO É DE TREINO.
+   *
+   * O cardápio é material educativo, não prescrição — o aviso da ferramenta
+   * diz isso na tela. Uma mensagem pedindo que alguém assuma a dieta
+   * contradiria o próprio aviso, na mesma página.
+   */
+  ok("o pedido é de treino, não de dieta", /treino/i.test(msg) && !/monta(r)? (a )?minha dieta|prescre|passar uma dieta/i.test(msg));
+
+  /**
+   * O QUE NÃO PODE ATRAVESSAR.
+   *
+   * As situações de saúde existem na ferramenta para uma coisa só: decidir se
+   * ela deve gerar a simulação. Usá-las num texto que a pessoa dispara sem
+   * reler seria reaproveitar para outro fim um dado pedido para um fim
+   * declarado. O peso não entra porque não é necessário: a meta calórica já
+   * diz o que precisa ser dito para a conversa começar.
+   */
+  const semAcento = (t: string) => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const corpo = semAcento(msg);
+  ok("a mensagem não carrega o peso", !/\bpeso\b|\d+[.,]?\d*\s?kg/.test(corpo), msg);
+  for (const sit of SITUACOES_ESPECIAIS) {
+    ok(`a mensagem não carrega a situação "${sit.rotulo}"`, !corpo.includes(semAcento(sit.rotulo)));
+  }
+
+  /** Sem restrição marcada, a linha não aparece vazia. */
+  const semRestricao = buildCardapioWhatsApp({
+    objetivo: "ganhar", metaKcal: 2600, refeicoes: 4, dieta: "onivoro", restricoes: [],
+  });
+  ok("sem restrição, não sobra linha vazia", !/N[ãa]o como:\s*\n/.test(semRestricao), semRestricao);
+
+  /** A função é o único lugar que monta essa mensagem. */
+  ok("o componente não monta a mensagem à mão", /buildCardapioWhatsApp\(/.test(componente) && !/Oi, Montinho!/.test(componente));
+
+  /** E o botão existe mesmo na tela, com o evento próprio. */
+  ok("o CTA de WhatsApp está na tela", /getWhatsAppUrl\(\s*\n?\s*buildCardapioWhatsApp/.test(componente));
+  ok("o clique é medido separado do link secundário",
+    /meal_whatsapp_click/.test(componente) && /meal_cta_click/.test(componente));
+  ok("o evento novo está declarado", fs.readFileSync("lib/analytics.ts", "utf8").includes('"meal_whatsapp_click"'));
+  ok("a tela avisa o que NÃO vai na mensagem", /N[ãa]o vai o seu peso/.test(componente));
+}
 
 console.log(falhas === 0 ? "\nTODOS OS TESTES PASSARAM\n" : `\n${falhas} TESTE(S) FALHARAM\n`);
 process.exit(falhas === 0 ? 0 : 1);
