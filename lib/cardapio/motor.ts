@@ -22,6 +22,7 @@
 import {
   ALIMENTOS_CARDAPIO,
   ALIMENTO_CARDAPIO_POR_ID,
+  RESTRICOES,
   nutrientes,
   permitido,
   type AlimentoCardapio,
@@ -811,6 +812,62 @@ export function listaDeCompras(semana: CardapioDia[]): ItemCompra[] {
 
 export const AVISO_EDUCACIONAL =
   "Esta é uma sugestão de organização alimentar com finalidade educativa — não é prescrição de dieta. Os valores são estimativas: gasto energético, peso dos alimentos, marcas e preparo variam. Situações clínicas específicas pedem avaliação de nutricionista ou médico.";
+
+/** Rótulo de dieta como a pessoa leu na tela, para a mensagem sair igual. */
+const DIETA_LABEL: Record<Dieta, string> = {
+  onivoro: "como de tudo",
+  vegetariano: "vegetariana",
+  vegano: "vegana",
+};
+
+/**
+ * A mensagem que a pessoa envia ao abrir o WhatsApp no fim do cardápio.
+ *
+ * O QUE VAI, E POR QUÊ NÃO VAI MAIS QUE ISSO
+ *
+ * Vai o que faz a conversa começar informada: objetivo, meta calórica,
+ * número de refeições, tipo de alimentação e o que ela não come. É
+ * exatamente o que o Montinho perguntaria nas primeiras cinco mensagens, e
+ * poupar essas cinco mensagens é o ponto.
+ *
+ * NÃO vai o peso, e não vão as situações de saúde. As situações são o dado
+ * clínico que existe na ferramenta só para decidir se ela deve gerar a
+ * simulação — colocá-las num texto que a pessoa dispara sem reler seria usar
+ * para outra coisa um dado que foi pedido para uma. E o peso não é
+ * necessário para a conversa começar: a meta calórica já diz o que precisa
+ * ser dito, e ele aparece naturalmente se a conversa avançar.
+ *
+ * O PEDIDO É DE TREINO
+ *
+ * O cardápio é material educativo, não prescrição — o aviso da ferramenta diz
+ * isso, e a mensagem não pode contradizê-lo. Por isso ela pede acompanhamento
+ * de TREINO alinhado ao que a pessoa montou, e não que alguém assuma a dieta
+ * dela. Quem precisa de conduta alimentar precisa de nutricionista, e o
+ * cardápio já fala isso na tela.
+ */
+export function buildCardapioWhatsApp(dados: {
+  objetivo: Objetivo;
+  metaKcal: number;
+  refeicoes: number;
+  dieta: Dieta;
+  restricoes: Restricao[];
+}): string {
+  const objetivo = OBJETIVOS.find((o) => o.id === dados.objetivo)?.rotulo ?? "";
+  const nao = dados.restricoes
+    .map((r) => RESTRICOES.find((x) => x.id === r)?.rotulo)
+    .filter(Boolean)
+    .join(", ");
+  const linhaNao = nao ? `Não como: ${nao}\n` : "";
+  return (
+    `Oi, Montinho! Montei meu cardápio no seu site.\n\n` +
+    `Objetivo: ${objetivo}\n` +
+    `Meta do dia: ${Math.round(dados.metaKcal)} kcal\n` +
+    `Refeições: ${dados.refeicoes} por dia\n` +
+    `Alimentação: ${DIETA_LABEL[dados.dieta]}\n` +
+    linhaNao +
+    `\nA alimentação eu já organizei. Quero entender como fica o treino para acompanhar esse objetivo.`
+  );
+}
 
 export const NOTA_TOLERANCIA =
   "O total do dia não bate a meta no centavo de propósito: as porções são caseiras (1 ovo, 1 concha), e uma diferença de até 8% é menor que a variação normal de quem pesa comida. Referência é para orientar, não para escravizar.";
