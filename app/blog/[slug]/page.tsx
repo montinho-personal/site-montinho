@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import Link from "next/link";
 import { marked } from "marked";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
@@ -95,7 +95,24 @@ export default async function BlogPost({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
 
-  if (!post) notFound();
+  /*
+   * URL certa, caixa errada.
+   *
+   * O Search Console apontou /blog/deficiencia-energia-atleta-RED-S-recuperacao
+   * como 404: o artigo existe, o slug é o mesmo, só as letras estão em caixa
+   * alta. A rota dinâmica compara literalmente, então "RED-S" não encontra
+   * "red-s".
+   *
+   * Isso NÃO dá para resolver em next.config: o casamento de `source` ali
+   * ignora maiúsculas, então a regra pegaria também a URL minúscula e a
+   * mandaria para ela mesma — laço infinito. Aqui a comparação é explícita,
+   * e a correção vale para qualquer variação de caixa que apareça depois.
+   */
+  if (!post) {
+    const minusculo = slug.toLowerCase();
+    if (minusculo !== slug && getBlogPost(minusculo)) permanentRedirect(`/blog/${minusculo}`);
+    notFound();
+  }
 
   const relatedPosts = getRelatedPosts(slug, post.category);
   const contentHtml = marked(post.content) as string;

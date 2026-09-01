@@ -103,6 +103,34 @@ const nextConfig: NextConfig = {
       { source: "/blog/avaliacao-fisica-para-que-serve", destination: "/blog/personal-trainer-online-como-funciona", permanent: true },
       // Consolidação de duplicata: o artigo antigo tratava o mesmo tema do novo
       { source: "/blog/maquinas-ou-pesos-livres", destination: "/blog/maquina-ou-peso-livre", permanent: true },
+
+      /*
+       * 404 do Search Console em 01/09/2026.
+       *
+       * Nenhum link interno aponta para estas quatro — a linkagem do site
+       * está limpa (504 links, zero quebrados). São URLs que o Google
+       * guardou de versões antigas ou que vieram de link externo. Redirect
+       * em vez de deixar 404 porque URL que já foi rastreada pode ter
+       * backlink, e 404 joga fora a força que ele traz.
+       */
+      { source: "/blog/5-habitos-que-sabotam-seu-progresso", destination: "/blog/habitos-que-sabotam-seu-emagrecimento", permanent: true },
+      { source: "/blog/personal-trainer-online-vs-presencial", destination: "/blog/personal-trainer-online-como-funciona", permanent: true },
+      { source: "/blog/quanto-tempo-para-ver-resultados-no-treino", destination: "/blog/quanto-tempo-para-aparecer-resultado-na-academia", permanent: true },
+      /*
+       * O 404 que falta aqui — /blog/deficiencia-energia-atleta-RED-S-recuperacao,
+       * que difere do slug real só pela caixa alta — NÃO pode ser resolvido
+       * nesta lista, e a tentativa derrubou o artigo.
+       *
+       * O casamento de `source` ignora maiúsculas e minúsculas, mas a rota
+       * dinâmica [slug] não. Então a regra "RED-S → red-s" casou também com a
+       * URL minúscula e a mandou para ela mesma: laço infinito, artigo fora
+       * do ar. O teste de cadeia não pegou porque, como texto, origem e
+       * destino são diferentes.
+       *
+       * A correção mora em app/blog/[slug]/page.tsx, onde dá para comparar a
+       * caixa antes de decidir — e vale para qualquer variação de maiúsculas,
+       * não só para esta URL.
+       */
     ];
   },
 };
