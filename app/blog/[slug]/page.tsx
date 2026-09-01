@@ -8,6 +8,7 @@ import { getBlogPost, getRelatedPosts, getPostCoverImage, blogPosts, SITE_URL } 
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import ArticleReadTracker from "@/components/analytics/ArticleReadTracker";
 import ArticleLightbox from "@/components/blog/ArticleLightbox";
+import VideoMedido from "@/components/blog/VideoMedido";
 import AskEmbed from "@/components/ask/AskEmbed";
 import ContextualCTA from "@/components/cta/ContextualCTA";
 import { planCTAs } from "@/lib/cta/classify";
@@ -306,6 +307,7 @@ export default async function BlogPost({ params }: Props) {
             <div className="prose-blog" dangerouslySetInnerHTML={{ __html: corpoRestante }} />
           )}
           <ArticleLightbox />
+          <VideoMedido slug={post.slug} />
 
           {/* Link contextual para a calculadora de 1RM nos artigos de técnica
               dos grandes exercícios — a ferramenta inteira ali atrapalharia a

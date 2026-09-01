@@ -12,6 +12,16 @@ export type AnalyticsEvent =
   | "scroll_75"
   | "engaged_time"
   | "article_read"
+  /**
+   * Vídeos dentro dos artigos.
+   *
+   * `article_video_view` conta quantas páginas com vídeo foram abertas e
+   * quantos players havia; `article_video_play` conta quem apertou play. Um
+   * sem o outro não responde nada: 40 plays é ótimo em 100 visitas e
+   * irrelevante em 5.000.
+   */
+  | "article_video_view"
+  | "article_video_play"
   // Diagnóstico Montinho (funil da ferramenta /diagnostico)
   | "diagnostic_view"
   | "diagnostic_start"
