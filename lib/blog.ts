@@ -1975,7 +1975,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treinar-o-mesmo-musculo-dois-dias-seguidos-infographic.svg" alt="Infográfico sobre Posso Treinar o Mesmo Músculo Dois Dias Seguidos? Depende de Uma Coisa — Montinho Personal Trainer" title="Posso Treinar o Mesmo Músculo Dois Dias Seguidos? Depende de" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treinar-o-mesmo-musculo-dois-dias-seguidos-capa.webp" alt="Arte de capa ilustrada sobre treinar o mesmo grupo muscular em dias seguidos e a recuperação necessária" title="Treinar o Mesmo Músculo Dois Dias Seguidos — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treinar o mesmo músculo dois dias seguidos: quando faz sentido.</figcaption>
 </figure>
 <p>A fisiologia não trabalha com regras absolutas. Ela trabalha com equações. E a equação aqui é sempre a mesma: o que você fez no treino anterior, com qual intensidade, com qual volume — e o que o seu corpo tem disponível para recuperar entre uma sessão e outra.</p>
 
@@ -11417,7 +11418,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/retatrutida-faz-perder-musculos-infographic.svg" alt="Infográfico sobre Retatrutida Faz Perder Músculos? — Montinho Personal Trainer" title="Retatrutida Faz Perder Músculos?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/retatrutida-faz-perder-musculos-capa.webp" alt="Arte de capa ilustrada sobre retatrutida e perda de massa magra, destacando proteína, treino e preservação de massa muscular" title="Retatrutida Faz Perder Músculos? — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Retatrutida: o risco de perder massa magra e como preservá-la.</figcaption>
 </figure>
 <p>Neste artigo, exploramos o que os dados clínicos mostram, os mecanismos pelos quais a perda muscular acontece e o que você pode fazer para evitá-la.</p>
 
@@ -23047,7 +23049,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/tendinite-no-cotovelo-como-treinar-infographic.svg" alt="Infográfico sobre Tendinite no Cotovelo: Como Treinar Sem Agravar a Lesão — Montinho Personal Trainer" title="Tendinite no Cotovelo: Como Treinar Sem Agravar a Lesão" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/tendinite-no-cotovelo-como-treinar-capa.webp" alt="Arte de capa ilustrada sobre tendinite no cotovelo e como seguir treinando com carga, técnica e controle" title="Tendinite no Cotovelo: Como Treinar — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Tendinite no cotovelo: como treinar com mais segurança.</figcaption>
 </figure>
 <h2>Os dois tipos de tendinite no cotovelo</h2>
 <ul>
@@ -32101,7 +32104,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quantos-kg-perder-por-mes-infographic.svg" alt="Infográfico sobre Quantos kg Perder por Mês? A Taxa Ideal de Emagrecimento — Montinho Personal Trainer" title="Quantos kg Perder por Mês? A Taxa Ideal de Emagrecimento" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quantos-kg-perder-por-mes-capa.webp" alt="Arte de capa ilustrada sobre ritmo saudável de perda de peso por mês" title="Quantos Kg Perder por Mês — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Quantos quilos dá para perder por mês sem sacrificar músculo.</figcaption>
 </figure>
 <p>A taxa de emagrecimento importa não apenas por segurança, mas por uma razão prática muito importante: afeta diretamente quantos kg você mantém a longo prazo.</p>
 
@@ -32218,7 +32222,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/hipertrofia-natural-limite-infographic.svg" alt="Infográfico sobre Hipertrofia Natural: Qual é o Limite e Quanto Músculo Você Pode Ganhar — Montinho Personal Trainer" title="Hipertrofia Natural: Qual é o Limite e Quanto Músculo Você P" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/hipertrofia-natural-limite-capa.webp" alt="Arte de capa ilustrada sobre o limite de ganho muscular do atleta natural ao longo dos anos" title="Hipertrofia Natural: Qual o Limite — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Até onde dá para crescer sendo natural: expectativas realistas.</figcaption>
 </figure>
 <p>A ciência tem modelos razoavelmente bem fundamentados para responder a primeira pergunta. A segunda é mais complexa — e não é o foco deste artigo.</p>
 
@@ -35569,7 +35574,8 @@ Em pé em uma perna, agache devagar até 30-40° mantendo o joelho alinhado sobr
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-de-biceps-infographic.svg" alt="Infográfico sobre Treino de Bíceps para Hipertrofia: Exercícios, Volume e Técnica Completa — Montinho Personal Trainer" title="Treino de Bíceps para Hipertrofia: Exercícios, Volume e Técn" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-de-biceps-capa.webp" alt="Arte de capa ilustrada de treino de bíceps, com roscas e variações de pegada" title="Treino de Bíceps — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino de bíceps: exercícios, volume e execução que funcionam.</figcaption>
 </figure>
 <p>Vou mostrar como o bíceps funciona, quais exercícios têm maior ativação comprovada e como estruturar o treino para crescimento real.</p>
 
@@ -37802,7 +37808,8 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/hipercalorico-vale-a-pena-infographic.svg" alt="Infográfico sobre Hipercalórico Vale a Pena? O Que a Ciência Diz Sobre Esse Suplemento — Montinho Personal Trainer" title="Hipercalórico Vale a Pena? O Que a Ciência Diz Sobre Esse Su" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/hipercalorico-vale-a-pena-capa.webp" alt="Arte de capa ilustrada sobre suplemento hipercalórico e se ele vale a pena para ganho de massa" title="Hipercalórico Vale a Pena? — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Hipercalórico vale a pena? Custo, composição e alternativas.</figcaption>
 </figure>
 <p>Mas vale a pena mesmo? Ou é dinheiro jogado fora — ou pior, um produto que atrapalha mais do que ajuda?</p>
 
@@ -40184,7 +40191,8 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/calistenia-avancada-infographic.svg" alt="Infográfico sobre Calistenia Avançada: Progressões para Planche, Front Lever e Human Flag — Montinho Personal Trainer" title="Calistenia Avançada: Progressões para Planche, Front Lever e" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/calistenia-avancada-capa.webp" alt="Arte de capa ilustrada de calistenia avançada, com movimentos de força usando o peso do corpo" title="Calistenia Avançada — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Calistenia avançada: progressões e força com o peso do corpo.</figcaption>
 </figure>
 <p>Mas skills como planche, front lever e human flag não são conquistados por força bruta. Eles exigem progressão metodológica, paciência e consistência.</p>
 
@@ -45412,7 +45420,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-upper-lower-superior-inferior-infographic.svg" alt="Infográfico sobre Treino Upper/Lower: A Divisão que Maximiza Hipertrofia em 4 Dias — Montinho Personal Trainer" title="Treino Upper/Lower: A Divisão que Maximiza Hipertrofia em 4 " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-upper-lower-superior-inferior-capa.webp" alt="Arte de capa ilustrada comparando os dias upper (superior) e lower (inferior) da divisão de treino, com frequência, recuperação e hipertrofia" title="Treino Upper Lower — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Upper/lower: como dividir o treino para ganhar massa e recuperar melhor.</figcaption>
 </figure>
 <h2>Por Que o Upper/Lower É Tão Eficiente?</h2>
 <p>A meta-análise de Schoenfeld, Ogborn e Krieger (2016) — <a href="https://pubmed.ncbi.nlm.nih.gov/26609282/" target="_blank" rel="noopener noreferrer">publicada no JSCR</a> — mostrou que treinar cada grupo muscular <strong>2x por semana produz ~40% mais hipertrofia</strong> do que treinar 1x, com volume semanal igual. O upper/lower é a forma mais prática de atingir essa frequência sem comprometer a recuperação.</p>
@@ -53766,7 +53775,8 @@ Assimetrias leves são normais (todo ser humano tem dominância lateral e pequen
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/imbalance-muscular-como-corrigir-infographic.svg" alt="Infográfico sobre Assimetria Muscular: Como Identificar e Corrigir o Lado Mais Fraco — Montinho Personal Trainer" title="Assimetria Muscular: Como Identificar e Corrigir o Lado Mais" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/imbalance-muscular-como-corrigir-capa.webp" alt="Arte de capa ilustrada mostrando assimetria entre os dois lados do corpo, com foco em força, simetria e performance" title="Imbalance Muscular: Como Corrigir — Montinho Personal Trainer" width="1254" height="1254" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Desequilíbrio muscular: como identificar e corrigir com treino.</figcaption>
 </figure>
 **Dominância lateral:** a mão dominante e o lado correspondente desenvolvem maior habilidade motora e frequentemente maior força pela vida toda.
 
@@ -56223,7 +56233,8 @@ O agachamento sumo é uma variação poderosa para quem busca glúteo médio, ad
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/chin-up-vs-pull-up-infographic.svg" alt="Infográfico Chin-Up vs Pull-Up — Montinho Personal Trainer" title="Chin-Up vs Pull-Up: Diferenças" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/chin-up-vs-pull-up-capa.webp" alt="Arte de capa ilustrada comparando chin-up com pegada supinada e pull-up com pegada pronada, destacando bíceps e dorsais" title="Chin-Up vs Pull-Up — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Chin-up ou pull-up: pegada, músculos ativados e quando usar cada um.</figcaption>
 </figure>
 
 ## As Diferenças Fundamentais
@@ -57980,7 +57991,8 @@ Trabalho com hardgainers há mais de 20 anos em Alphaville. Se você quer um pro
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/frutas-antes-do-treino-infographic.svg" alt="Infográfico sobre Frutas Antes do Treino — Montinho Personal Trainer" title="Frutas Antes do Treino: Quais Comer e Quanto" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/frutas-antes-do-treino-capa.webp" alt="Arte de capa ilustrada com frutas consumidas antes do treino como fonte de energia" title="Frutas Antes do Treino — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Frutas antes do treino: quais funcionam e em que quantidade.</figcaption>
 </figure>
 
 ## Por Que Carboidratos São Necessários no Pré-Treino
@@ -62225,7 +62237,8 @@ Atendo presencialmente em Alphaville e online para todo o Brasil. Se quiser um p
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-elevacao-frontal-infographic.svg" alt="Infográfico sobre Como Fazer Elevação Frontal: Técnica para o Deltoide Anterior — Montinho Personal Trainer" title="Como Fazer Elevação Frontal: Técnica para o Deltoide Anterior" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-elevacao-frontal-capa.webp" alt="Arte de capa ilustrada da execução da elevação frontal de ombros com halteres" title="Como Fazer Elevação Frontal — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Elevação frontal: execução, amplitude e erros comuns.</figcaption>
 </figure>
 
 ## O Que é a Elevação Frontal
@@ -62381,7 +62394,8 @@ Se você está em Alphaville ou prefere treinar online, posso montar um programa
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-encolhimento-trapezio-infographic.svg" alt="Infográfico sobre Como Fazer Encolhimento de Ombros para Trapézio: Técnica e Variações — Montinho Personal Trainer" title="Como Fazer Encolhimento de Ombros para Trapézio: Técnica e Variações" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-encolhimento-trapezio-capa.webp" alt="Arte de capa ilustrada da execução do encolhimento para trapézio com halteres" title="Como Fazer Encolhimento para Trapézio — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Encolhimento de trapézio: técnica, carga e amplitude correta.</figcaption>
 </figure>
 
 ## Anatomia do Trapézio: Por Que o Encolhimento Funciona
@@ -62713,7 +62727,8 @@ Não necessariamente. Muitos praticantes aplicam o protocolo de 5 a 6 dias por s
 </div>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/dieta-carnivora-musculacao-infographic.svg" alt="Infográfico sobre Dieta Carnívora e Musculação: Funciona? O Que a Ciência Diz — Montinho Personal Trainer" title="Dieta Carnívora e Musculação: Funciona? O Que a Ciência Diz" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/dieta-carnivora-musculacao-capa.webp" alt="Arte de capa ilustrada sobre dieta carnívora aplicada a quem treina musculação" title="Dieta Carnívora e Musculação — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Dieta carnívora e musculação: o que a evidência mostra.</figcaption>
 </figure>
 
 ## O Que É a Dieta Carnívora
@@ -68559,7 +68574,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     content: `<p>Meses parado. Foi lesão, viagem, projeto no trabalho, mudança de cidade — a vida, enfim. E agora que você decidiu voltar, o mercado te empurra o pior dos venenos: a vergonha. "Você perdeu tudo." "Vai ter que começar do zero." Mentira. E é essa mentira que faz metade das pessoas desistirem antes do primeiro treino.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-voltar-academia-depois-de-parado-infographic.svg" alt="Infográfico sobre Como Voltar para a Academia Depois de Meses Parado — Montinho Personal Trainer" title="Como Voltar para a Academia Depois de Meses Parado" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-voltar-academia-depois-de-parado-capa.webp" alt="Arte de capa ilustrada sobre retomar os treinos depois de um período parado" title="Como Voltar à Academia Depois de Parado — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Voltar a treinar depois de parado: por onde começar sem se machucar.</figcaption>
 </figure>
 
 <p>Aqui está a verdade: <strong>você não recomeça do zero. Você recomeça com vantagem.</strong> Seu corpo guarda memória de tudo que construiu — e este artigo mostra como ativá-la sem se machucar, sem se frustrar e mais rápido do que você imagina.</p>
@@ -77258,7 +77274,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Quem mora em <strong>Santana de Parnaíba</strong> conhece o dilema: treinar na cidade, na <strong>Aldeia da Serra</strong> ou encarar o trajeto até Alphaville? Escolher errado significa semanas de empolgação e meses de plano sem uso.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academias-perto-de-santana-de-parnaiba-infographic.svg" alt="Infográfico sobre Academias Perto de Santana de Parnaíba — Montinho Personal Trainer" title="Academias Perto de Santana de Parnaíba" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/academias-perto-de-santana-de-parnaiba-capa.webp" alt="Arte de capa ilustrada sobre as academias próximas a Santana de Parnaíba" title="Academias Perto de Santana de Parnaíba — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Onde treinar perto de Santana de Parnaíba: opções e critérios.</figcaption>
 </figure>
 
 <p>E o custo não para na mensalidade: cada mês adiado é condicionamento perdido, e recomeçar sempre dói mais do que manter.</p>
@@ -78231,7 +78248,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Barueri cresceu, a oferta de academias explodiu — e com ela a confusão de preços. De planos econômicos perto da <strong>Estação Barueri (CPTM Linha 8)</strong> a estruturas premium na divisa com Alphaville, a pergunta fica: <strong>quanto custa uma academia em Barueri</strong> e qual vale seu dinheiro?</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-custa-academia-em-barueri-infographic.svg" alt="Infográfico sobre Quanto Custa uma Academia em Barueri? — Montinho Personal Trainer" title="Quanto Custa uma Academia em Barueri?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-custa-academia-em-barueri-capa.webp" alt="Arte de capa ilustrada sobre o custo das academias em Barueri e as faixas de preço praticadas" title="Quanto Custa uma Academia em Barueri — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Quanto custa academia em Barueri: faixas de preço e o que muda entre elas.</figcaption>
 </figure>
 
 <p>Errar nessa escolha dói duas vezes. Primeiro no bolso: mensalidade, matrícula e fidelidade somam rápido. Depois na motivação: quem escolhe mal treina mal, não vê resultado e desiste — estatística que se repete todo mês de março.</p>
@@ -78471,7 +78489,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você achou a academia, gostou do preço da mensalidade — e na hora de fechar aparece ela: a <strong>taxa de matrícula</strong>. Um valor extra que ninguém anunciou e que pode representar mais uma mensalidade inteira só para começar.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academias-sem-taxa-de-matricula-infographic.svg" alt="Infográfico sobre Academias sem Taxa de Matrícula: Como Encontrar — Montinho Personal Trainer" title="Academias sem Taxa de Matrícula: Como Encontrar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/academias-sem-taxa-de-matricula-capa.webp" alt="Arte de capa ilustrada sobre academias sem taxa de matrícula e como identificar as cobranças do contrato" title="Academias sem Taxa de Matrícula — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academias sem taxa de matrícula: como encontrar e o que checar no contrato.</figcaption>
 </figure>
 
 <p>Pior: junto dela às vezes vêm primas disfarçadas — taxa de adesão, manutenção anual, avaliação obrigatória. Quem assina sem ler paga sem perceber. E quem paga caro para entrar sente ainda mais o peso de desistir depois.</p>
@@ -81676,7 +81695,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você quer treinar, mas a ideia de ficar sozinho entre máquinas te desanima. Já tentou academia tradicional e desistiu. Agora avalia o <strong>OBOX Training Club</strong>, em <strong>Santana de Parnaíba</strong> — e teme errar de novo.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/obox-training-club-santana-de-parnaiba-infographic.svg" alt="Infográfico sobre OBOX Training Club: O Que Esperar — Montinho Personal Trainer" title="OBOX Training Club: O Que Esperar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/obox-training-club-santana-de-parnaiba-capa.webp" alt="Arte de capa ilustrada do OBOX Training Club em Santana de Parnaíba, com atleta treinando com corda naval" title="OBOX Training Club Santana de Parnaíba — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">OBOX Training Club: estrutura, treino e ambiente para evoluir.</figcaption>
 </figure>
 
 <p>O medo faz sentido: formato errado é dinheiro queimado. Treino em grupo com intensidade alta é motivador para uns e porta de saída para outros. <strong>O melhor treino do mundo é o que você não abandona.</strong></p>
