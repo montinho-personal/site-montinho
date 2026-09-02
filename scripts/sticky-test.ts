@@ -14,7 +14,6 @@ import { blogPosts } from "../lib/blog";
 import { artigoDeExecucao } from "../lib/revisao";
 import { regraParaArtigo } from "../lib/sticky/artigo";
 import {
-  EVENTOS_DE_RESULTADO,
   LIMIARES,
   REGRAS,
   SUPRIMIDA,
@@ -96,10 +95,9 @@ for (const id of ["dor", "saude", "glp1"]) {
   ok(`${id}: primeiro passo é educativo, não conversa`, r.destino !== "whatsapp");
 }
 
-/* Ferramenta só aparece depois do resultado; comercial aparece cedo. */
-for (const { id, r } of TODAS) {
-  if (id.startsWith("ferramenta_")) ok(`${id}: só depois do resultado`, r.gatilho === "resultado");
-}
+/* Ferramentas não têm regra: o próximo passo é o bloco pós-resultado. */
+ok("nenhuma regra de ferramenta de cálculo (isso é do PosResultado)",
+  !TODAS.some(({ id }) => id.startsWith("ferramenta_")));
 ok("local aparece cedo", REGRAS.local({}).gatilho === "cedo");
 ok("consultoria aparece cedo", REGRAS.consultoria({}).gatilho === "cedo");
 ok("exercício não aparece antes do sinal", REGRAS.exercicio({}).gatilho === "padrao");
@@ -156,19 +154,19 @@ for (const s of SUPRIMIDA) {
 ok("/consultoria-online fica sem barra (tem a própria)", regraPorRota("/consultoria-online") === null);
 ok("/consultoria tem a regra de consultoria", regraPorRota("/consultoria") === "consultoria");
 ok("/personal-trainer-tambore → local", regraPorRota("/personal-trainer-tambore") === "local");
-ok("/ferramentas/calculadora-de-proteina → continuidade para macros",
-  regraPorRota("/ferramentas/calculadora-de-proteina") === "ferramenta_proteina" &&
-  REGRAS.ferramenta_proteina({}).href === "/ferramentas/calculadora-macros");
-ok("/diagnostico → conversa depois do resultado", regraPorRota("/diagnostico") === "ferramenta_diagnostico");
+for (const rota of [
+  "/ferramentas/calculadora-de-proteina", "/ferramentas/calculadora-macros", "/ferramentas/calculadora-deficit-calorico",
+  "/ferramentas/calculadora-tmb-tdee", "/ferramentas/calculadora-volume-treino", "/ferramentas/calculadora-1rm",
+  "/diagnostico", "/academia-ideal-alphaville",
+]) ok(`${rota} fica sem barra (o próximo passo é o bloco pós-resultado)`, regraPorRota(rota) === null);
+ok("/alimentos continua com barra (não tem resultado)", regraPorRota("/alimentos/frango") === "alimentos");
 ok("/treino-para-minha-rotina fica sem barra (já tem WhatsApp no fim)", regraPorRota("/treino-para-minha-rotina") === null);
 ok("/ferramentas/monte-seu-cardapio fica sem barra (já tem WhatsApp no fim)", regraPorRota("/ferramentas/monte-seu-cardapio") === null);
 ok("home → institucional", regraPorRota("/") === "institucional");
 ok("rota desconhecida → fallback", regraPorRota("/uma-pagina-qualquer") === "fallback");
 
-/* Toda rota de ferramenta com resultado precisa de um evento que a barra reconheça. */
-ok("os eventos de resultado existem no analytics",
-  [...EVENTOS_DE_RESULTADO].every((e) => analytics.includes(`"${e}"`)),
-  [...EVENTOS_DE_RESULTADO].filter((e) => !analytics.includes(`"${e}"`)).join(", "));
+ok("a barra não escuta evento de resultado (isso saiu com as regras de ferramenta)",
+  !/EVENTOS_DE_RESULTADO/.test(comp) && !/montinho:evento/.test(comp));
 
 // ─── 5 ──────────────────────────────────────────────────────────────────────
 bloco("5. RECORRÊNCIA: SÓ ESCALA O QUE É EDUCATIVO");
@@ -178,7 +176,7 @@ ok("2ª visita: hipertrofia vira 'organizar'", resolve("hipertrofia", { visitas:
 ok("4ª visita: vira conversa", resolve("hipertrofia", { visitas: 4 })?.id === "retorno_conversa");
 ok("local NÃO escala (já é a ação certa)", resolve("local", { visitas: 5, local: "Barueri" })?.id === "local");
 ok("exercício NÃO escala", resolve("exercicio", { visitas: 5 })?.id === "exercicio");
-ok("ferramenta NÃO escala", resolve("ferramenta_deficit", { visitas: 5 })?.id === "ferramenta_deficit");
+ok("consultoria NÃO escala", resolve("consultoria", { visitas: 5 })?.id === "consultoria");
 ok("regra inexistente devolve null", resolve("nao-existe") === null);
 
 // ─── 6 ──────────────────────────────────────────────────────────────────────
@@ -190,7 +188,6 @@ ok("a rota é a key — cada navegação nasce zerada", /<Barra key=\{pathname\}
 ok("não aparece no carregamento: espera rolagem OU tempo",
   /addEventListener\("scroll"/.test(comp) && /setTimeout\(mostra, ms\)/.test(comp));
 ok("os limiares são os do briefing", LIMIARES.padrao.scroll === 0.25 && LIMIARES.padrao.ms === 15_000 && LIMIARES.cedo.ms <= 5_000);
-ok("ferramenta só depois do evento de resultado", /EVENTOS_DE_RESULTADO\.has\(nome\)/.test(comp));
 ok("espera o banner de cookies ser respondido", /bannerDeCookiesNaTela\(\)/.test(comp) && /montinho:cookies/.test(comp));
 ok("não aparece com modal aberto", /modalAberto\(\)/.test(comp));
 ok("some enquanto a pessoa digita", /digitando\(\)/.test(comp) && /focusin/.test(comp));

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import { registraConclusao } from "@/lib/ferramentas/historico";
 import {
   computeRotina,
   validarDias,
@@ -200,6 +201,7 @@ export default function RotinaQuiz() {
       routine_structure: resultado.structureId,
     });
     trackEvent("routine_result_view", { routine_structure: resultado.structureId });
+    registraConclusao("rotina");
     irPara("resultado");
   };
 

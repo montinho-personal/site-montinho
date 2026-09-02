@@ -213,7 +213,6 @@ for (const ev of [
   "calorie_methodology_open",
   "calorie_deficit_select",
   "calorie_article_click",
-  "calorie_cta_click",
 ]) {
   ok(`evento declarado: ${ev}`, analytics.includes(`"${ev}"`));
 }
@@ -249,11 +248,12 @@ ok("nunca usa localStorage", !/localStorage/.test(componente));
 const semImports = componente.replace(/^import .*$/gm, "");
 {
   const guardas = semImports.match(/guarda\w+\(/g) ?? [];
-  // Toda chamada guarda* deve estar dentro de um bloco onClick: cortamos o
-  // arquivo nos inícios de handler e exigimos que nenhuma chamada apareça
-  // fora deles (aproximação por segmento até o fechamento "}}").
+  // Toda chamada guarda* deve estar dentro de um bloco onClick (ou do
+  // aoContinuar do PosResultado, que só roda no clique): cortamos o arquivo
+  // nos inícios de handler e exigimos que nenhuma chamada apareça fora deles
+  // (aproximação por segmento até o fechamento "}}").
   const foraDeClique = semImports
-    .split(/onClick=\{\(\) => \{[\s\S]*?\}\}/)
+    .split(/(?:onClick|aoContinuar)=\{\(\) => \{[\s\S]*?\}\}/)
     .some((trecho) => /guarda\w+\(/.test(trecho));
   ok(
     "os únicos writes são as pontes, todos dentro de onClick",

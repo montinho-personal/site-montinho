@@ -185,7 +185,7 @@ const analytics = fs.readFileSync("lib/analytics.ts", "utf8");
 for (const ev of [
   "macro_calculator_view", "macro_calculator_complete", "macro_protein_change", "macro_fat_change",
   "macro_meal_split_open", "macro_methodology_open", "macro_deficit_click",
-  "macro_protein_calculator_click", "macro_article_click", "macro_cta_click", "calorie_macros_click",
+  "macro_protein_calculator_click", "macro_article_click", "calorie_macros_click",
 ]) {
   ok(`evento declarado: ${ev}`, analytics.includes(`"${ev}"`));
 }

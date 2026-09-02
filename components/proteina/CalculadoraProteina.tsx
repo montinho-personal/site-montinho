@@ -3,6 +3,7 @@
 import { useMemo, useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import PosResultado from "@/components/ferramentas/PosResultado";
 import { PONTE, consomeNumero } from "@/lib/ferramentas/ponte";
 import {
   ALIMENTOS,
@@ -333,21 +334,13 @@ export default function CalculadoraProteina({
               </Link>
             </div>
 
-            {/* CTA discreto — depois do valor entregue, nunca antes */}
-            <div className="border-t border-white/10 pt-4">
-              <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">
-                A calculadora dá a referência; o seu caso tem contexto — treino,
-                rotina, objetivo.{" "}
-                <Link
-                  href="/consultoria"
-                  onClick={() => trackEvent("protein_cta_click", { placement })}
-                  className="text-gray-300 underline underline-offset-2 decoration-1 hover:text-white transition-colors"
-                >
-                  É isso que o acompanhamento do Montinho ajusta
-                </Link>
-                .
-              </p>
-            </div>
+            {/* Próximo passo — depois do valor entregue, nunca antes */}
+            <PosResultado
+              ferramenta="proteina"
+              categoria={faixaRefeicao >= 2.2 ? "alta" : faixaRefeicao <= 1.6 ? "baixa" : "padrao"}
+              resumo={totalPratico !== null ? `${totalPratico} g de proteína por dia` : null}
+              placement={placement}
+            />
           </>
         )}
       </div>

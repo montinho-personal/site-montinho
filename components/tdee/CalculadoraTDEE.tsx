@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import PosResultado from "@/components/ferramentas/PosResultado";
 import { PONTE, guarda } from "@/lib/ferramentas/ponte";
 import { guardaKcalParaMacros, guardaPesoParaProteina } from "@/lib/macros";
 import {
@@ -530,6 +531,16 @@ export default function CalculadoraTDEE({
                   </div>
                 )}
               </div>
+              <PosResultado
+                ferramenta="tdee"
+                ocultaNoEstagio="proxima"
+                resumo={`gasto estimado de ≈ ${formataFaixa(tdee)} kcal/dia`}
+                placement={placement}
+                aoContinuar={() => {
+                  /* Mesma travessia do botão "calcular meu déficit": os dados, não o número. */
+                  guarda(PONTE.dados, JSON.stringify({ peso, altura, idade, sexo, nivel: nivel.id }));
+                }}
+              />
             </div>
           )}
         </div>

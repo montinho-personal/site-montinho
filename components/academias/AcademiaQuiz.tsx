@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import PosResultado from "@/components/ferramentas/PosResultado";
 import { recomendar, resumoRespostas, type Respostas } from "@/lib/academias/motor";
 import { regioesComAcademia } from "@/lib/academias/base";
 import { ESTILO_LABEL, PRECO_LABEL, REGIAO_LABEL, type Estilo } from "@/lib/academias/tipos";
@@ -260,24 +261,11 @@ export default function AcademiaQuiz() {
         </p>
       </div>
 
-      <div className="border border-white/15 bg-white/[0.03] p-6 sm:p-8">
-        <p className="text-white font-bold text-xl mb-2" style={h}>Já sabe onde treinar?</p>
-        <p className="text-gray-300 leading-relaxed mb-5">
-          A academia é o lugar. O treino é a estratégia. Se você treina em
-          Alphaville, posso acompanhar seu treino presencialmente — e se ainda não
-          sabe como organizar a semana, dá para descobrir agora.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
-          <Link href="/consultoria" onClick={() => trackEvent("gym_personal_click")}
-            className="inline-flex items-center justify-center bg-white text-black px-6 py-3.5 text-sm font-semibold hover:bg-gray-100 transition-colors min-h-[52px]">
-            Conhecer o acompanhamento →
-          </Link>
-          <Link href="/treino-para-minha-rotina" onClick={() => trackEvent("gym_routine_tool_click")}
-            className="inline-flex items-center text-sm text-gray-300 underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors min-h-[44px]">
-            Montar meu treino para a semana
-          </Link>
-        </div>
-      </div>
+      <PosResultado
+        ferramenta="academia"
+        resumo={rec.top.length ? `a academia sugerida foi ${rec.top[0].academia.nome}` : null}
+        placement="academia-ideal"
+      />
 
       <div className="flex items-center justify-between">
         <p className="text-gray-500 text-xs max-w-md leading-relaxed">
