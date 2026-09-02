@@ -190,6 +190,8 @@ ok("não aparece no carregamento: espera rolagem OU tempo",
 ok("os limiares são os do briefing", LIMIARES.padrao.scroll === 0.25 && LIMIARES.padrao.ms === 15_000 && LIMIARES.cedo.ms <= 5_000);
 ok("espera o banner de cookies ser respondido", /bannerDeCookiesNaTela\(\)/.test(comp) && /montinho:cookies/.test(comp));
 ok("não aparece com modal aberto", /modalAberto\(\)/.test(comp));
+ok("no celular o texto tem a linha inteira e o botão vem embaixo (não corta o texto)",
+  /grid-cols-\[1fr_auto\] sm:grid-cols-\[1fr_auto_auto\]/.test(comp) && /col-span-2 sm:col-span-1/.test(comp));
 ok("some enquanto a pessoa digita", /digitando\(\)/.test(comp) && /focusin/.test(comp));
 ok("fechar guarda na sessão", /CH\.fechada, "1"/.test(comp));
 ok("clicar guarda a conversão por regra", /CH\.convertida \+ regra\.id/.test(comp));
