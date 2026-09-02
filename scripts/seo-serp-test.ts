@@ -38,6 +38,19 @@ const pagina = readFileSync("app/blog/[slug]/page.tsx", "utf8");
  * acervo ainda não passou por revisão e só responde às travas globais.
  */
 const REVISADOS = [
+  /* Lote 2 — 02/09/2026: as dez com CTR ZERO e mais impressões, todas já na
+     primeira página. 2.808 impressões e nenhum clique em três meses. */
+  "dormir-depois-do-almoco-engorda",
+  "quanto-tempo-de-caminhada-por-dia",
+  "quanto-tempo-para-ganhar-massa-muscular",
+  "quanto-de-cardio-fazer",
+  "tirzepatida-e-musculacao",
+  "fibras-musculares-tipo-1-tipo-2",
+  "zumba-emagrece",
+  "agachamento-bulgaro-como-fazer",
+  "tapioca-engorda",
+  "musculacao-ou-corrida-para-emagrecer",
+  /* Lote 1 — 30/08/2026: as doze de maior impressão. */
   "polichinelo-emagrece",
   "quantas-calorias-tem-1kg-de-gordura",
   "crossover-vs-crucifixo",
@@ -94,6 +107,35 @@ for (const slug of REVISADOS) {
   const p = porSlug.get(slug)!;
   const t = p.metaTitle || p.title;
   ok(`${slug}: título com ${t.length} caracteres`, t.length <= 62, t);
+}
+
+// ─── 3b ─────────────────────────────────────────────────────────────────────
+bloco("3b. O TÍTULO NÃO ESTÁ CORTADO NEM MAL ESCRITO");
+
+/**
+ * Dois defeitos que aparecem NA BUSCA e não em lugar nenhum do site.
+ *
+ * Reticências: dois metaTitles terminavam em "…" literal — cortados na hora
+ * de escrever para caber no limite, e publicados assim. O leitor vê um
+ * título que morre no meio.
+ *
+ * Acentuação: o metaTitle de musculacao-ou-corrida trazia "Musculacao" sem
+ * cedilha enquanto o H1 estava correto. Como é o metaTitle que vai para o
+ * Google, o erro só existia onde ninguém do site olhava.
+ */
+for (const slug of REVISADOS) {
+  const p = porSlug.get(slug)!;
+  const t = p.metaTitle || p.title;
+  ok(`${slug}: título não termina cortado`, !/(\.\.\.|…)\s*$/.test(t), t);
+}
+{
+  /* Palavras que existem com e sem acento e passam batido no título. */
+  const SEM_ACENTO = /\b(musculacao|nutricao|proteina|calorias?\b(?! )|abdomen|exercicio|refeicao|reducao|hipertrofia\b(?! )|saude|voce|nao|tecnica|gluteo|joelho\b(?! ))\b/i;
+  const erradas = REVISADOS
+    .map((s) => ({ s, t: porSlug.get(s)!.metaTitle || porSlug.get(s)!.title }))
+    .filter((x) => SEM_ACENTO.test(x.t));
+  ok("nenhum título com palavra sem acento", erradas.length === 0,
+    erradas.map((x) => `${x.s}: ${x.t}`).join(" | "));
 }
 
 // ─── 4 ──────────────────────────────────────────────────────────────────────
