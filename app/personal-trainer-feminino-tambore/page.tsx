@@ -8,43 +8,43 @@ import FAQ from "@/components/ui/FAQ";
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer Feminino Tamboré | Montinho Personal Trainer" },
   description:
-    "Personal trainer feminino em Tamboré especializado em emagrecimento, definição e qualidade de vida para mulheres. Mais de 20 anos na região. Protocolo individual, resultado real.",
+    "Personal trainer feminino no Tamboré especializado em emagrecimento, definição e qualidade de vida para mulheres. Mais de 20 anos na região. Protocolo individual, resultado real.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-feminino-tambore`,
   },
   openGraph: {
     title: "Personal Trainer Feminino Tamboré | Montinho Personal Trainer",
     description:
-      "Treino personalizado para mulheres em Tamboré. Protocolo que respeita as especificidades do corpo feminino e entrega resultado sustentável.",
+      "Treino personalizado para mulheres no Tamboré. Protocolo que respeita as especificidades do corpo feminino e entrega resultado sustentável.",
     url: `${SITE_URL}/personal-trainer-feminino-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Personal trainer masculino pode atender mulheres em Tamboré?",
+    question: "Personal trainer masculino pode atender mulheres no Tamboré?",
     answer:
-      "Sim. A maioria das minhas alunas em Tamboré e Alphaville são mulheres. O que importa no atendimento feminino é o conhecimento sobre as especificidades hormonais, as diferenças de composição corporal entre homens e mulheres, e a escuta ativa para entender o que cada aluna realmente quer mudar. O gênero do profissional é irrelevante — o método e a atenção são o que diferencia.",
+      "Sim. A maioria das minhas alunas no Tamboré e Alphaville são mulheres. O que importa no atendimento feminino é o conhecimento sobre as especificidades hormonais, as diferenças de composição corporal entre homens e mulheres, e a escuta ativa para entender o que cada aluna realmente quer mudar. O gênero do profissional é irrelevante — o método e a atenção são o que diferencia.",
   },
   {
-    question: "Treino com personal feminino em Tamboré deixa a mulher muito musculosa?",
+    question: "Treino com personal feminino no Tamboré deixa a mulher muito musculosa?",
     answer:
       "Não. O ganho excessivo de massa muscular em mulheres é fisiologicamente limitado pela quantidade de testosterona disponível — significativamente menor que nos homens. O treino de força para mulheres produz definição, tônus e melhora postural — não volume desproporcional. O protocolo é montado para o objetivo de cada aluna.",
   },
   {
-    question: "Personal trainer feminino em Tamboré atende mulheres grávidas ou no pós-parto?",
+    question: "Personal trainer feminino no Tamboré atende mulheres grávidas ou no pós-parto?",
     answer:
       "Atendo mulheres no pós-parto com protocolo adaptado, com foco em reabilitação do assoalho pélvico, fortalecimento progressivo e retorno gradual à atividade. Para gestantes, o acompanhamento depende da fase da gestação e do aval médico — e sempre trabalho em conjunto com as orientações do obstetra.",
   },
   {
-    question: "Qual o melhor treino para mulheres que querem emagrecer em Tamboré?",
+    question: "Qual o melhor treino para mulheres que querem emagrecer no Tamboré?",
     answer:
       "A combinação mais eficaz para emagrecimento feminino é treino de força associado a déficit calórico moderado. O treino de força preserva massa muscular durante o emagrecimento — o que mantém o metabolismo ativo e evita o efeito sanfona. Cardio é um complemento, não a base.",
   },
   {
-    question: "Personal trainer feminino em Tamboré atende também online?",
+    question: "Personal trainer feminino no Tamboré atende também online?",
     answer:
-      "Sim. Ofereço modalidade híbrida — sessões presenciais em Tamboré combinadas com suporte online nos dias sem sessão — e também acompanhamento 100% online para quem tem agenda mais imprevisível. Veja as opções em detalhes na página de consultoria.",
+      "Sim. Ofereço modalidade híbrida — sessões presenciais no Tamboré combinadas com suporte online nos dias sem sessão — e também acompanhamento 100% online para quem tem agenda mais imprevisível. Veja as opções em detalhes na página de consultoria.",
   },
 ];
 
@@ -54,7 +54,7 @@ const localSchema = {
   "@id": `${SITE_URL}/personal-trainer-feminino-tambore`,
   name: "Montinho Personal Trainer – Atendimento Feminino Tamboré",
   description:
-    "Personal trainer feminino em Tamboré. Treino individualizado para mulheres com foco em emagrecimento, definição e qualidade de vida.",
+    "Personal trainer feminino no Tamboré. Treino individualizado para mulheres com foco em emagrecimento, definição e qualidade de vida.",
   url: `${SITE_URL}/personal-trainer-feminino-tambore`,
   telephone: "+5511981063409",
   areaServed: [
@@ -92,10 +92,10 @@ export default function PersonalTrainerFemininoTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal trainer feminino em Tamboré: treino que entende o corpo feminino.
+            Personal trainer feminino no Tamboré: treino que entende o corpo feminino.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Mulheres em Tamboré que buscam resultado de verdade — não apenas treino — encontram aqui um método que respeita as especificidades hormonais, a rotina real e os objetivos de cada uma.
+            Mulheres no Tamboré que buscam resultado de verdade — não apenas treino — encontram aqui um método que respeita as especificidades hormonais, a rotina real e os objetivos de cada uma.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -118,17 +118,17 @@ export default function PersonalTrainerFemininoTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            A maioria das minhas alunas em Tamboré já tentou de tudo antes.
+            A maioria das minhas alunas no Tamboré já tentou de tudo antes.
           </h2>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light">
             <p>
-              Dieta restritiva que funcionou por três semanas. Personal anterior que dava a mesma ficha para todo mundo. App de treino que ignorava as fases do ciclo menstrual. Grupo na academia onde ninguém corrigia nada. Essa é a história que ouço com mais frequência das mulheres que chegam até mim em Tamboré — e é exatamente o que o meu trabalho se propõe a resolver.
+              Dieta restritiva que funcionou por três semanas. Personal anterior que dava a mesma ficha para todo mundo. App de treino que ignorava as fases do ciclo menstrual. Grupo na academia onde ninguém corrigia nada. Essa é a história que ouço com mais frequência das mulheres que chegam até mim no Tamboré — e é exatamente o que o meu trabalho se propõe a resolver.
             </p>
             <p>
               O corpo feminino responde ao treino de forma diferente do masculino. Hormônios, composição corporal, variação metabólica ao longo do ciclo — tudo isso influencia como o protocolo deve ser montado e ajustado. Ignorar essas variáveis é o motivo pelo qual tantos treinos genéricos não funcionam para mulheres.
             </p>
             <p>
-              Moro e trabalho em Tamboré e Alphaville há mais de 20 anos. Ao longo desse tempo, a maioria das alunas que acompanhei eram mulheres com rotina exigente — mães, profissionais, empreendedoras — que precisavam de resultado real com o tempo que tinham disponível. É para esse perfil que meu método foi desenvolvido.
+              Moro e trabalho no Tamboré e Alphaville há mais de 20 anos. Ao longo desse tempo, a maioria das alunas que acompanhei eram mulheres com rotina exigente — mães, profissionais, empreendedoras — que precisavam de resultado real com o tempo que tinham disponível. É para esse perfil que meu método foi desenvolvido.
             </p>
           </div>
           <div className="mt-10" style={{ maxWidth: "220px" }}>
@@ -193,7 +193,7 @@ export default function PersonalTrainerFemininoTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre personal trainer feminino em Tamboré
+            Dúvidas sobre personal trainer feminino no Tamboré
           </h2>
           <FAQ itens={faq} placement="personal-trainer-feminino-tambore" />
         </div>
@@ -206,7 +206,7 @@ export default function PersonalTrainerFemininoTambore() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Pronta para começar em Tamboré?
+            Pronta para começar no Tamboré?
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
             A primeira conversa é sem compromisso. Me conta o que você quer mudar — e eu te mostro o caminho mais eficiente para chegar lá.

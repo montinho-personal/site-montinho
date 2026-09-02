@@ -14,14 +14,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Personal Trainer Online Tamboré | Montinho Personal Trainer",
     description:
-      "Personal trainer online para quem mora em Tamboré e precisa de flexibilidade. Protocolo individual, acompanhamento remoto e progressão real.",
+      "Personal trainer online para quem mora no Tamboré e precisa de flexibilidade. Protocolo individual, acompanhamento remoto e progressão real.",
     url: `${SITE_URL}/personal-trainer-online-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Personal trainer online para quem mora em Tamboré funciona de verdade?",
+    question: "Personal trainer online para quem mora no Tamboré funciona de verdade?",
     answer:
       "Funciona — quando o protocolo é bem estruturado e o acompanhamento é genuíno. O modelo online exige protocolos mais detalhados, comunicação frequente e avaliações periódicas para compensar a ausência física. Para alunos com disciplina e agenda imprevisível, é uma opção eficiente e com resultado real.",
   },
@@ -41,7 +41,7 @@ const faq = [
       "O acompanhamento inclui: protocolo de treino individualizado com descrição detalhada de cada exercício, check-ins semanais via WhatsApp, feedback de vídeos de execução quando necessário, ajuste de protocolo conforme a resposta do corpo e reavaliação mensal com análise de composição corporal.",
   },
   {
-    question: "Personal trainer online é mais barato que presencial em Tamboré?",
+    question: "Personal trainer online é mais barato que presencial no Tamboré?",
     answer:
       "Em geral, sim — o modelo online tem custo menor porque elimina o deslocamento e permite atender mais alunos com qualidade. O investimento varia conforme o pacote e a frequência de interação. O valor exato é apresentado com transparência na primeira conversa.",
   },
@@ -94,7 +94,7 @@ export default function PersonalTrainerOnlineTambore() {
             Personal trainer online para Tamboré: protocolo real, acompanhamento de verdade.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Para quem mora em Tamboré e viaja com frequência, tem agenda imprevisível ou prefere a praticidade do treino remoto, o personal trainer online entrega protocolo individualizado e resultado concreto — sem precisar de horário fixo.
+            Para quem mora no Tamboré e viaja com frequência, tem agenda imprevisível ou prefere a praticidade do treino remoto, o personal trainer online entrega protocolo individualizado e resultado concreto — sem precisar de horário fixo.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -121,7 +121,7 @@ export default function PersonalTrainerOnlineTambore() {
           </h2>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light">
             <p>
-              Quem mora em Tamboré e trabalha em São Paulo conhece a realidade de perder uma, duas horas por dia no trânsito. Encaixar treino presencial com personal nessa agenda é um desafio logístico real. O modelo online resolve esse problema: o treino acontece onde e quando você pode — sem deslocamento, sem horário fixo.
+              Quem mora no Tamboré e trabalha em São Paulo conhece a realidade de perder uma, duas horas por dia no trânsito. Encaixar treino presencial com personal nessa agenda é um desafio logístico real. O modelo online resolve esse problema: o treino acontece onde e quando você pode — sem deslocamento, sem horário fixo.
             </p>
             <p>
               O personal trainer online não é uma planilha mandada por e-mail uma vez por mês. É um protocolo individualizado com acompanhamento genuíno: check-ins semanais, feedback de execução, ajuste conforme a resposta do corpo e revisão mensal completa. A diferença está na qualidade do acompanhamento — e é aí que a maioria dos serviços online falha.
@@ -188,7 +188,7 @@ export default function PersonalTrainerOnlineTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre personal trainer online em Tamboré
+            Dúvidas sobre personal trainer online no Tamboré
           </h2>
           <FAQ itens={faq} placement="personal-trainer-online-tambore" />
         </div>

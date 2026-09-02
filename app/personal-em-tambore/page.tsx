@@ -6,43 +6,43 @@ import { SITE_URL } from "@/lib/blog";
 import FAQ from "@/components/ui/FAQ";
 
 export const metadata: Metadata = {
-  title: { absolute: "Personal em Tamboré | Montinho Personal Trainer" },
+  title: { absolute: "Personal no Tamboré | Montinho Personal Trainer" },
   description:
-    "Personal em Tamboré com mais de 20 anos na região. Treino individualizado presencial e online para emagrecimento, hipertrofia e qualidade de vida. Sem fórmulas genéricas, sem resultado provisório.",
+    "Personal no Tamboré com mais de 20 anos na região. Treino individualizado presencial e online para emagrecimento, hipertrofia e qualidade de vida. Sem fórmulas genéricas, sem resultado provisório.",
   alternates: {
     canonical: `${SITE_URL}/personal-em-tambore`,
   },
   openGraph: {
-    title: "Personal em Tamboré | Montinho Personal Trainer",
+    title: "Personal no Tamboré | Montinho Personal Trainer",
     description:
-      "Personal em Tamboré com método baseado em ciência e 20 anos de experiência na região. Protocolo individual e resultado real.",
+      "Personal no Tamboré com método baseado em ciência e 20 anos de experiência na região. Protocolo individual e resultado real.",
     url: `${SITE_URL}/personal-em-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Como encontrar um bom personal em Tamboré?",
+    question: "Como encontrar um bom personal no Tamboré?",
     answer:
       "Procure profissional com formação em Educação Física, experiência comprovada na região e metodologia clara — não apenas fichas de treino genéricas. Verifique resultados reais de alunos anteriores e pergunte como o protocolo é montado e ajustado. Um bom personal explica o raciocínio por trás de cada decisão de treino.",
   },
   {
-    question: "Personal em Tamboré atende na academia ou a domicílio?",
+    question: "Personal no Tamboré atende na academia ou a domicílio?",
     answer:
       "Atendo em ambas as modalidades. Presencial em academias e condomínios de Tamboré e região, a domicílio para quem prefere treinar em casa, e online para quem tem agenda mais imprevisível. A melhor opção é alinhada na primeira conversa.",
   },
   {
-    question: "Qual o valor do personal em Tamboré?",
+    question: "Qual o valor do personal no Tamboré?",
     answer:
       "O investimento varia conforme a modalidade (presencial, domiciliar ou online), a frequência semanal e o pacote contratado. O valor é apresentado com transparência na primeira conversa — sem surpresas ou cobranças adicionais depois.",
   },
   {
-    question: "Personal em Tamboré atende aos finais de semana?",
+    question: "Personal no Tamboré atende aos finais de semana?",
     answer:
       "Dependendo da disponibilidade de agenda, sim. Para alunos com rotina de segunda a sexta muito carregada, horários aos sábados podem ser organizados. Conversamos sobre isso no primeiro contato.",
   },
   {
-    question: "Personal em Tamboré pode atender iniciantes?",
+    question: "Personal no Tamboré pode atender iniciantes?",
     answer:
       "Esse é um dos perfis que mais atendo. Quem nunca treinou ou voltou ao treino após anos afastado precisa de uma base técnica sólida desde o início — e é exatamente aí que o acompanhamento profissional faz mais diferença. Começar certo evita lesões e garante progressão mais rápida.",
   },
@@ -54,7 +54,7 @@ const localSchema = {
   "@id": `${SITE_URL}/personal-em-tambore`,
   name: "Montinho Personal Trainer – Tamboré",
   description:
-    "Personal em Tamboré com mais de 20 anos na região. Treino individualizado para emagrecimento, hipertrofia e qualidade de vida.",
+    "Personal no Tamboré com mais de 20 anos na região. Treino individualizado para emagrecimento, hipertrofia e qualidade de vida.",
   url: `${SITE_URL}/personal-em-tambore`,
   telephone: "+5511981063409",
   areaServed: [
@@ -92,7 +92,7 @@ export default function PersonalEmTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal em Tamboré que mora aqui, conhece aqui e entrega resultado aqui.
+            Personal no Tamboré que mora aqui, conhece aqui e entrega resultado aqui.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
             Tamboré não precisa de mais uma ficha genérica. Precisa de um profissional que entenda a rotina de quem vive aqui e monte um protocolo que funcione de verdade — dentro da agenda real, não da agenda ideal.
@@ -103,7 +103,7 @@ export default function PersonalEmTambore() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
           >
-            Quero um personal em Tamboré
+            Quero um personal no Tamboré
           </a>
         </div>
       </section>
@@ -118,7 +118,7 @@ export default function PersonalEmTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Mais de 20 anos em Tamboré e Alphaville. Conheço esse lugar como poucos.
+            Mais de 20 anos no Tamboré e Alphaville. Conheço esse lugar como poucos.
           </h2>
           <div className="grid sm:grid-cols-[1fr_auto] gap-10 items-start">
             <div className="space-y-5 text-gray-300 leading-relaxed font-light">
@@ -135,8 +135,8 @@ export default function PersonalEmTambore() {
             <div className="flex-shrink-0 mx-auto sm:mx-0">
               <Image
                 src="/Personal%20Trainer%20Tambor%C3%A9.jpg"
-                alt="Personal em Tamboré"
-                title="Personal em Tamboré"
+                alt="Personal no Tamboré"
+                title="Personal no Tamboré"
                 width={220}
                 height={476}
                 loading="lazy"
@@ -159,14 +159,14 @@ export default function PersonalEmTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Como posso te atender em Tamboré
+            Como posso te atender no Tamboré
           </h2>
           <div className="space-y-8 mt-10">
             {[
               {
                 num: "01",
                 title: "Presencial em academia ou condomínio",
-                text: "Atendo na academia do aluno em Tamboré e região. Sessões individuais com acompanhamento exclusivo durante todo o treino.",
+                text: "Atendo na academia do aluno no Tamboré e região. Sessões individuais com acompanhamento exclusivo durante todo o treino.",
               },
               {
                 num: "02",
@@ -215,7 +215,7 @@ export default function PersonalEmTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre personal em Tamboré
+            Dúvidas sobre personal no Tamboré
           </h2>
           <FAQ itens={faq} placement="personal-em-tambore" />
         </div>
@@ -246,7 +246,7 @@ export default function PersonalEmTambore() {
               href="/personal-trainer-tambore"
               className="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-8 py-4 text-base font-medium tracking-wide hover:border-white hover:bg-white/5 transition-all duration-200"
             >
-              Saiba mais sobre o atendimento em Tamboré
+              Saiba mais sobre o atendimento no Tamboré
             </Link>
           </div>
         </div>

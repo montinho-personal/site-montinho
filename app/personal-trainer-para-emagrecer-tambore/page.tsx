@@ -8,41 +8,41 @@ import FAQ from "@/components/ui/FAQ";
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer para Emagrecer Tamboré | Montinho Personal Trainer" },
   description:
-    "Personal trainer para emagrecer em Tamboré com método baseado em ciência. Emagrecimento sem efeito sanfona, sem dietas radicais. Mais de 20 anos na região. Resultados reais e duradouros.",
+    "Personal trainer para emagrecer no Tamboré com método baseado em ciência. Emagrecimento sem efeito sanfona, sem dietas radicais. Mais de 20 anos na região. Resultados reais e duradouros.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-para-emagrecer-tambore`,
   },
   openGraph: {
     title: "Personal Trainer para Emagrecer Tamboré | Montinho Personal Trainer",
     description:
-      "Emagrecimento com método em Tamboré. Protocolo individual, progressão real e acompanhamento de quem vive na região há mais de 20 anos.",
+      "Emagrecimento com método no Tamboré. Protocolo individual, progressão real e acompanhamento de quem vive na região há mais de 20 anos.",
     url: `${SITE_URL}/personal-trainer-para-emagrecer-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Quantas sessões por semana são necessárias para emagrecer em Tamboré com personal?",
+    question: "Quantas sessões por semana são necessárias para emagrecer no Tamboré com personal?",
     answer:
       "Três sessões semanais de treino de força, combinadas com orientação alimentar adequada, são suficientes para emagrecimento consistente na maioria dos casos. O resultado depende muito mais da qualidade do protocolo e da consistência do que da quantidade de horas na academia.",
   },
   {
-    question: "Qual é o melhor exercício para emagrecer em Tamboré?",
+    question: "Qual é o melhor exercício para emagrecer no Tamboré?",
     answer:
       "Não existe um único exercício. O que funciona é a combinação de treino de força — que preserva massa muscular e mantém o metabolismo ativo — com déficit calórico sustentável. Cardio é um complemento útil, não a base. Personal trainer garante que esse protocolo seja montado corretamente para o seu caso.",
   },
   {
-    question: "É possível emagrecer rápido com personal trainer em Tamboré?",
+    question: "É possível emagrecer rápido com personal trainer no Tamboré?",
     answer:
       "Emagrecimento sustentável acontece em ritmo de 0,5 a 1 kg por semana para a maioria das pessoas. Perder peso rápido demais geralmente significa perda de massa muscular — o que reduz o metabolismo e leva ao efeito sanfona. O objetivo é emagrecer de forma progressiva e manter o resultado.",
   },
   {
-    question: "Personal trainer para emagrecer em Tamboré trabalha com alimentação também?",
+    question: "Personal trainer para emagrecer no Tamboré trabalha com alimentação também?",
     answer:
       "Dou orientações gerais sobre alimentação voltadas para o objetivo do emagrecimento — como distribuição de macronutrientes, tamanho de porções e estratégias práticas. Para acompanhamento nutricional detalhado e prescritivo, recomendo o trabalho conjunto com nutricionista.",
   },
   {
-    question: "Quanto tempo leva para ver resultado emagrecendo com personal em Tamboré?",
+    question: "Quanto tempo leva para ver resultado emagrecendo com personal no Tamboré?",
     answer:
       "Os primeiros sinais de melhora — mais disposição, roupas menos apertadas, menos inchaço — costumam aparecer nas primeiras 3 a 4 semanas. Resultados visíveis na composição corporal ficam mais evidentes a partir do segundo mês de protocolo consistente.",
   },
@@ -54,7 +54,7 @@ const localSchema = {
   "@id": `${SITE_URL}/personal-trainer-para-emagrecer-tambore`,
   name: "Montinho Personal Trainer – Emagrecimento Tamboré",
   description:
-    "Personal trainer para emagrecer em Tamboré. Protocolo individualizado com método baseado em ciência para emagrecimento duradouro.",
+    "Personal trainer para emagrecer no Tamboré. Protocolo individualizado com método baseado em ciência para emagrecimento duradouro.",
   url: `${SITE_URL}/personal-trainer-para-emagrecer-tambore`,
   telephone: "+5511981063409",
   areaServed: [
@@ -92,10 +92,10 @@ export default function PersonalTrainerEmagrecerTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal trainer para emagrecer em Tamboré: resultado que fica.
+            Personal trainer para emagrecer no Tamboré: resultado que fica.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Emagrecer sem método é perder peso temporariamente. Com protocolo individualizado e acompanhamento profissional em Tamboré, o resultado é construído para durar — não para impressionar na balança por duas semanas.
+            Emagrecer sem método é perder peso temporariamente. Com protocolo individualizado e acompanhamento profissional no Tamboré, o resultado é construído para durar — não para impressionar na balança por duas semanas.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -125,7 +125,7 @@ export default function PersonalTrainerEmagrecerTambore() {
               Cresci convivendo com o excesso de peso. Passei anos tentando dietas da moda, protocolos copiados da internet, suplementos que prometiam resultado rápido e entregavam frustração. Cada vez que parava, o peso voltava — às vezes com acréscimo. Esse ciclo tem nome: efeito sanfona. E é o que acontece quando o método está errado.
             </p>
             <p>
-              O que mudou foi quando decidi entender de fato como o corpo funciona: como o metabolismo responde ao déficit calórico, por que a massa muscular é o principal aliado do emagrecimento, como o treino de força transforma a composição corporal de dentro para fora. Essa compreensão, aplicada de forma sistemática, foi o que funcionou — para mim primeiro e depois para centenas de alunos em Tamboré e Alphaville ao longo de mais de 20 anos.
+              O que mudou foi quando decidi entender de fato como o corpo funciona: como o metabolismo responde ao déficit calórico, por que a massa muscular é o principal aliado do emagrecimento, como o treino de força transforma a composição corporal de dentro para fora. Essa compreensão, aplicada de forma sistemática, foi o que funcionou — para mim primeiro e depois para centenas de alunos no Tamboré e Alphaville ao longo de mais de 20 anos.
             </p>
             <p>
               Hoje sei que emagrecimento sustentável não tem segredo. Tem método. E método requer individualização — porque o que funciona para um não funciona para outro.
@@ -153,7 +153,7 @@ export default function PersonalTrainerEmagrecerTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Como o emagrecimento acontece com acompanhamento de personal em Tamboré
+            Como o emagrecimento acontece com acompanhamento de personal no Tamboré
           </h2>
           <p className="text-gray-300 font-light mb-10 leading-relaxed">
             Não existe fórmula mágica. Existe método aplicado com consistência:
@@ -212,7 +212,7 @@ export default function PersonalTrainerEmagrecerTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre personal trainer para emagrecer em Tamboré
+            Dúvidas sobre personal trainer para emagrecer no Tamboré
           </h2>
           <FAQ itens={faq} placement="personal-trainer-para-emagrecer-tambore" />
         </div>
@@ -225,7 +225,7 @@ export default function PersonalTrainerEmagrecerTambore() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Chega de tentar sozinho em Tamboré.
+            Chega de tentar sozinho no Tamboré.
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
             Com protocolo certo e acompanhamento profissional, o emagrecimento deixa de ser uma luta contra o próprio corpo e passa a ser uma progressão consistente. Vamos começar?

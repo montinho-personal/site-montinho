@@ -22,9 +22,9 @@ export const metadata: Metadata = {
 
 const faq = [
   {
-    question: "Qual a diferença entre treinar com personal trainer em academia e treinar sozinho em Tamboré?",
+    question: "Qual a diferença entre treinar com personal trainer em academia e treinar sozinho no Tamboré?",
     answer:
-      "A diferença fundamental é a atenção e a individualização. Na academia sem personal, você executa uma ficha genérica sem ninguém corrigindo a técnica ou ajustando a carga. Com personal trainer em academia em Tamboré, cada sessão tem atenção exclusiva: execução corrigida, carga adequada, progressão estruturada e protocolo montado especificamente para você.",
+      "A diferença fundamental é a atenção e a individualização. Na academia sem personal, você executa uma ficha genérica sem ninguém corrigindo a técnica ou ajustando a carga. Com personal trainer em academia no Tamboré, cada sessão tem atenção exclusiva: execução corrigida, carga adequada, progressão estruturada e protocolo montado especificamente para você.",
   },
   {
     question: "Personal trainer em academia de Tamboré atende na academia do aluno?",
@@ -32,7 +32,7 @@ const faq = [
       "Sim. Atendo na academia onde o aluno já é matriculado — desde que o espaço permita acesso ao personal externo. Quando isso não é possível, a alternativa é uma academia parceira na região de Tamboré com infraestrutura adequada. Resolvemos isso na primeira conversa.",
   },
   {
-    question: "Qual academia em Tamboré tem personal trainer individualizado?",
+    question: "Qual academia no Tamboré tem personal trainer individualizado?",
     answer:
       "O personal trainer individualizado não depende de uma academia específica — depende do profissional. Atendo em diferentes academias de Tamboré e Alphaville, sempre com protocolo exclusivo e atenção total durante a sessão. O local é escolhido conforme a conveniência e equipamento disponível.",
   },
@@ -92,7 +92,7 @@ export default function AcademiaPersonalTrainerTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Academia com personal trainer em Tamboré: atenção exclusiva, resultado diferente.
+            Academia com personal trainer no Tamboré: atenção exclusiva, resultado diferente.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
             A academia fornece o equipamento. O personal trainer garante que cada equipamento seja usado corretamente, com carga certa, na ordem certa e com a técnica que gera resultado — sem lesão.
@@ -118,12 +118,12 @@ export default function AcademiaPersonalTrainerTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            O que muda quando você treina em academia com personal trainer em Tamboré.
+            O que muda quando você treina em academia com personal trainer no Tamboré.
           </h2>
           <div className="grid sm:grid-cols-[1fr_auto] gap-10 items-start">
             <div className="space-y-5 text-gray-300 leading-relaxed font-light">
               <p>
-                A maioria das pessoas que treina em academia em Tamboré executa a mesma ficha há meses, às vezes anos. A carga não aumenta, a técnica ninguém corrige, e o resultado estagna. É a realidade de quem treina sem orientação — não por falta de esforço, mas por falta de método.
+                A maioria das pessoas que treina em academia no Tamboré executa a mesma ficha há meses, às vezes anos. A carga não aumenta, a técnica ninguém corrige, e o resultado estagna. É a realidade de quem treina sem orientação — não por falta de esforço, mas por falta de método.
               </p>
               <p>
                 Com personal trainer em academia, o cenário muda completamente. O protocolo é montado especificamente para você — não adaptado de outro aluno. A execução é observada e corrigida em cada repetição. A carga progride de forma estruturada. E quando o corpo se adapta, o protocolo muda antes que a estagnação apareça.
@@ -156,7 +156,7 @@ export default function AcademiaPersonalTrainerTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            O que torna o treino em academia com personal trainer diferente em Tamboré
+            O que torna o treino em academia com personal trainer diferente no Tamboré
           </h2>
           <ul className="space-y-4 mb-10">
             {[
@@ -193,7 +193,7 @@ export default function AcademiaPersonalTrainerTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre personal trainer em academia em Tamboré
+            Dúvidas sobre personal trainer em academia no Tamboré
           </h2>
           <FAQ itens={faq} placement="academia-com-personal-trainer-tambore" />
         </div>
@@ -209,7 +209,7 @@ export default function AcademiaPersonalTrainerTambore() {
             A academia está pronta. Falta o método.
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            Me conta em qual academia você treina ou prefere treinar em Tamboré — e organizamos o atendimento no melhor local para você.
+            Me conta em qual academia você treina ou prefere treinar no Tamboré — e organizamos o atendimento no melhor local para você.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -224,7 +224,7 @@ export default function AcademiaPersonalTrainerTambore() {
               href="/personal-trainer-tambore"
               className="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-8 py-4 text-base font-medium tracking-wide hover:border-white hover:bg-white/5 transition-all duration-200"
             >
-              Saiba mais sobre o atendimento em Tamboré
+              Saiba mais sobre o atendimento no Tamboré
             </Link>
           </div>
         </div>

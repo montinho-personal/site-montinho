@@ -8,31 +8,31 @@ import FAQ from "@/components/ui/FAQ";
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer a Domicílio Tamboré | Montinho Personal Trainer" },
   description:
-    "Personal trainer a domicílio em Tamboré com atendimento individualizado na sua casa, condomínio ou academia particular. Mais de 20 anos na região. Treino de força, emagrecimento e hipertrofia.",
+    "Personal trainer a domicílio no Tamboré com atendimento individualizado na sua casa, condomínio ou academia particular. Mais de 20 anos na região. Treino de força, emagrecimento e hipertrofia.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-a-domicilio-tambore`,
   },
   openGraph: {
     title: "Personal Trainer a Domicílio Tamboré | Montinho Personal Trainer",
     description:
-      "Treino personalizado na sua casa em Tamboré. Protocolo individual, progressão real e acompanhamento de quem vive na região há mais de 20 anos.",
+      "Treino personalizado na sua casa no Tamboré. Protocolo individual, progressão real e acompanhamento de quem vive na região há mais de 20 anos.",
     url: `${SITE_URL}/personal-trainer-a-domicilio-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Personal trainer a domicílio em Tamboré precisa de academia em casa?",
+    question: "Personal trainer a domicílio no Tamboré precisa de academia em casa?",
     answer:
       "Não necessariamente. Com halteres ajustáveis, faixas elásticas, TRX e o peso do próprio corpo, é possível montar protocolos completos e progressivos sem academia. O equipamento ideal é avaliado na visita inicial — e adaptamos o treino ao que você já tem disponível.",
   },
   {
-    question: "O atendimento a domicílio em Tamboré tem custo maior que o presencial em academia?",
+    question: "O atendimento a domicílio no Tamboré tem custo maior que o presencial em academia?",
     answer:
-      "O investimento pode variar conforme a distância e a estrutura disponível. Na maioria dos casos em Tamboré e condomínios vizinhos, o deslocamento está incluído no pacote. O valor é alinhado na primeira conversa, sem surpresas depois.",
+      "O investimento pode variar conforme a distância e a estrutura disponível. Na maioria dos casos no Tamboré e condomínios vizinhos, o deslocamento está incluído no pacote. O valor é alinhado na primeira conversa, sem surpresas depois.",
   },
   {
-    question: "Qual a frequência ideal de treino com personal a domicílio em Tamboré?",
+    question: "Qual a frequência ideal de treino com personal a domicílio no Tamboré?",
     answer:
       "Para a maioria dos objetivos — emagrecimento, hipertrofia ou condicionamento geral — três sessões semanais de 50 a 60 minutos são suficientes para progressão consistente. Ajustamos a frequência conforme sua disponibilidade real, não a ideal no papel.",
   },
@@ -42,7 +42,7 @@ const faq = [
       "Sim. Atendo em condomínios horizontais e verticais de Tamboré, Alphaville e região. Basta autorização de entrada no porteiro — o restante fica por minha conta.",
   },
   {
-    question: "Como começar o treino a domicílio em Tamboré?",
+    question: "Como começar o treino a domicílio no Tamboré?",
     answer:
       "O primeiro contato é pelo WhatsApp. Conversamos sobre objetivo, rotina e estrutura disponível. Depois agendamos uma visita inicial gratuita para avaliar o espaço e definir o protocolo. A primeira sessão começa em até uma semana após esse contato.",
   },
@@ -54,7 +54,7 @@ const localSchema = {
   "@id": `${SITE_URL}/personal-trainer-a-domicilio-tambore`,
   name: "Montinho Personal Trainer – Atendimento a Domicílio Tamboré",
   description:
-    "Personal trainer a domicílio em Tamboré. Treino individualizado na sua casa ou condomínio para emagrecimento, hipertrofia e qualidade de vida.",
+    "Personal trainer a domicílio no Tamboré. Treino individualizado na sua casa ou condomínio para emagrecimento, hipertrofia e qualidade de vida.",
   url: `${SITE_URL}/personal-trainer-a-domicilio-tambore`,
   telephone: "+5511981063409",
   areaServed: [
@@ -92,10 +92,10 @@ export default function PersonalTrainerDomicilioTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal trainer a domicílio em Tamboré: o treino vai até você.
+            Personal trainer a domicílio no Tamboré: o treino vai até você.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Para quem mora em Tamboré e prefere treinar sem sair de casa — sem trânsito, sem espera por equipamento, sem hora marcada em outro lugar. O protocolo chega até você, e os resultados ficam.
+            Para quem mora no Tamboré e prefere treinar sem sair de casa — sem trânsito, sem espera por equipamento, sem hora marcada em outro lugar. O protocolo chega até você, e os resultados ficam.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -156,7 +156,7 @@ export default function PersonalTrainerDomicilioTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Treino a domicílio em Tamboré: do primeiro contato à primeira sessão
+            Treino a domicílio no Tamboré: do primeiro contato à primeira sessão
           </h2>
           <p className="text-gray-300 leading-relaxed font-light mb-10">
             O processo é simples e rápido. Não existe burocracia entre a decisão de começar e o primeiro treino.
@@ -206,7 +206,7 @@ export default function PersonalTrainerDomicilioTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Para quem o treino a domicílio em Tamboré faz mais sentido
+            Para quem o treino a domicílio no Tamboré faz mais sentido
           </h2>
           <p className="text-gray-300 font-light mb-10 leading-relaxed">
             O atendimento a domicílio resolve problemas reais de quem tem rotina exigente ou preferência por privacidade:
@@ -246,7 +246,7 @@ export default function PersonalTrainerDomicilioTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre personal trainer a domicílio em Tamboré
+            Dúvidas sobre personal trainer a domicílio no Tamboré
           </h2>
           <FAQ itens={faq} placement="personal-trainer-a-domicilio-tambore" />
         </div>
@@ -259,7 +259,7 @@ export default function PersonalTrainerDomicilioTambore() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            O treino vem até você em Tamboré.
+            O treino vem até você no Tamboré.
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
             Sem precisar sair de casa, sem esperar equipamento, sem compromisso de academia. Me conta o que você quer mudar — e a gente começa.

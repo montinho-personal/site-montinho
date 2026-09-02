@@ -8,41 +8,41 @@ import FAQ from "@/components/ui/FAQ";
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer para Idosos Tamboré | Montinho Personal Trainer" },
   description:
-    "Personal trainer para idosos em Tamboré com protocolo adaptado para a terceira idade. Força, equilíbrio, mobilidade e qualidade de vida com segurança e método. Mais de 20 anos na região.",
+    "Personal trainer para idosos no Tamboré com protocolo adaptado para a terceira idade. Força, equilíbrio, mobilidade e qualidade de vida com segurança e método. Mais de 20 anos na região.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-para-idosos-tambore`,
   },
   openGraph: {
     title: "Personal Trainer para Idosos Tamboré | Montinho Personal Trainer",
     description:
-      "Treino de força para idosos em Tamboré. Protocolo adaptado para terceira idade com foco em equilíbrio, mobilidade e qualidade de vida.",
+      "Treino de força para idosos no Tamboré. Protocolo adaptado para terceira idade com foco em equilíbrio, mobilidade e qualidade de vida.",
     url: `${SITE_URL}/personal-trainer-para-idosos-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Personal trainer para idosos em Tamboré é seguro?",
+    question: "Personal trainer para idosos no Tamboré é seguro?",
     answer:
       "O treino de força para idosos é não apenas seguro como altamente recomendado pela ciência — quando bem orientado. Protocolos adequados para a terceira idade levam em conta a capacidade individual, as limitações articulares, o histórico de saúde e a velocidade de progressão adequada para cada fase da vida. O risco existe quando não há acompanhamento — não quando há.",
   },
   {
-    question: "Que tipo de exercício personal trainer indica para idosos em Tamboré?",
+    question: "Que tipo de exercício personal trainer indica para idosos no Tamboré?",
     answer:
       "Treino de força com pesos adaptados, exercícios de equilíbrio, mobilidade articular e atividades funcionais que melhoram a autonomia no dia a dia. A composição do protocolo depende do histórico de saúde e dos objetivos individuais — não existe programa padrão para idosos, assim como não existe para nenhum outro perfil.",
   },
   {
-    question: "Personal trainer para idosos em Tamboré atende pessoas com doenças crônicas?",
+    question: "Personal trainer para idosos no Tamboré atende pessoas com doenças crônicas?",
     answer:
       "O protocolo de treino é sempre adaptado às condições de saúde existentes — hipertensão, diabetes tipo 2, osteoporose, artrose, entre outras. Em casos de patologias específicas, o trabalho é feito em conjunto com o médico do aluno, respeitando as orientações e restrições clínicas.",
   },
   {
-    question: "Quais os benefícios do treino com personal para idosos em Tamboré?",
+    question: "Quais os benefícios do treino com personal para idosos no Tamboré?",
     answer:
       "A ciência documenta benefícios amplos: aumento e manutenção de massa muscular (sarcopenia é uma das principais causas de perda de autonomia), melhora da densidade óssea, redução do risco de quedas, controle glicêmico, saúde cardiovascular, melhora do humor e sono, e maior capacidade funcional no cotidiano.",
   },
   {
-    question: "Personal trainer para idosos em Tamboré atende a domicílio?",
+    question: "Personal trainer para idosos no Tamboré atende a domicílio?",
     answer:
       "Sim. Para pessoas que têm dificuldade de deslocamento ou preferem treinar em casa, o atendimento domiciliar é uma opção disponível. O protocolo é adaptado ao equipamento e espaço disponíveis no domicílio.",
   },
@@ -54,7 +54,7 @@ const localSchema = {
   "@id": `${SITE_URL}/personal-trainer-para-idosos-tambore`,
   name: "Montinho Personal Trainer – Idosos Tamboré",
   description:
-    "Personal trainer para idosos em Tamboré. Protocolo adaptado para terceira idade com foco em força, equilíbrio e qualidade de vida.",
+    "Personal trainer para idosos no Tamboré. Protocolo adaptado para terceira idade com foco em força, equilíbrio e qualidade de vida.",
   url: `${SITE_URL}/personal-trainer-para-idosos-tambore`,
   telephone: "+5511981063409",
   areaServed: [
@@ -92,10 +92,10 @@ export default function PersonalTrainerIdososTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal trainer para idosos em Tamboré: força, equilíbrio e autonomia.
+            Personal trainer para idosos no Tamboré: força, equilíbrio e autonomia.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            O treino de força é o investimento mais importante que uma pessoa acima de 60 anos pode fazer na própria saúde. Com protocolo adaptado e acompanhamento profissional em Tamboré, os benefícios são reais e mensuráveis.
+            O treino de força é o investimento mais importante que uma pessoa acima de 60 anos pode fazer na própria saúde. Com protocolo adaptado e acompanhamento profissional no Tamboré, os benefícios são reais e mensuráveis.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -129,7 +129,7 @@ export default function PersonalTrainerIdososTambore() {
                 O protocolo para a terceira idade não é uma versão simplificada do treino de adultos jovens. É um protocolo específico que leva em conta a capacidade de recuperação, as limitações articulares, o histórico de saúde e a importância de construir confiança no próprio corpo. Cada detalhe importa — e exige experiência para ser bem aplicado.
               </p>
               <p>
-                Atendo idosos em Tamboré e Alphaville há mais de 20 anos, em academia e a domicílio. O retorno que mais ouço dos alunos dessa faixa etária não é sobre estética — é sobre poder subir escada sem apoio, carregar os netos, dormir melhor e ter mais energia no dia a dia. Esse é o resultado que importa.
+                Atendo idosos no Tamboré e Alphaville há mais de 20 anos, em academia e a domicílio. O retorno que mais ouço dos alunos dessa faixa etária não é sobre estética — é sobre poder subir escada sem apoio, carregar os netos, dormir melhor e ter mais energia no dia a dia. Esse é o resultado que importa.
               </p>
             </div>
             <div className="flex-shrink-0 mx-auto sm:mx-0">
@@ -156,7 +156,7 @@ export default function PersonalTrainerIdososTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            O que o treino com personal traz para idosos em Tamboré
+            O que o treino com personal traz para idosos no Tamboré
           </h2>
           <ul className="space-y-4 mb-10">
             {[
@@ -188,7 +188,7 @@ export default function PersonalTrainerIdososTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre personal trainer para idosos em Tamboré
+            Dúvidas sobre personal trainer para idosos no Tamboré
           </h2>
           <FAQ itens={faq} placement="personal-trainer-para-idosos-tambore" />
         </div>

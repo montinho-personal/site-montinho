@@ -109,5 +109,53 @@ for (const f of comFrase) {
   );
 }
 
+console.log("\n" + "=".repeat(60) + "\nTAMBORÉ LEVA ARTIGO: \"NO\", NÃO \"EM\"\n" + "=".repeat(60));
+
+/*
+ * Quem mora ali diz "no Tamboré", como se diz "no Morumbi". O site nasceu
+ * misturando as duas formas — havia 268 "em Tamboré" convivendo com 166 "no
+ * Tamboré" — e quem percebe a diferença é justamente o público local, que é
+ * de onde vêm os leads presenciais.
+ *
+ * O slug NÃO entra nesta regra: /blog/academias-em-tambore e
+ * /personal-trainer-em-tambore são endereços publicados, e trocar endereço
+ * por causa de gramática quebra link e joga posição fora.
+ */
+{
+  const erradas: string[] = [];
+  for (const raiz of RAIZES) {
+    if (!fs.existsSync(raiz)) continue;
+    for (const arquivo of arquivos(raiz)) {
+      /* Este teste e o helper falam SOBRE a regra, citando a forma errada. */
+      if (arquivo.endsWith("scripts/bordoes-test.ts") || arquivo.endsWith("lib/sticky/regras.ts")) continue;
+      const texto = fs.readFileSync(arquivo, "utf8");
+      const re = /em Tamboré/g;
+      let m: RegExpExecArray | null;
+      while ((m = re.exec(texto))) {
+        erradas.push(`${arquivo}:${texto.slice(0, m.index).split("\n").length}`);
+      }
+    }
+  }
+  ok(`nenhum "em Tamboré" no texto do site`, erradas.length === 0, erradas.slice(0, 5).join(", "));
+
+  /* A forma certa precisa existir de verdade, senão o teste acima passa com o site vazio. */
+  let certas = 0;
+  for (const raiz of RAIZES) {
+    if (!fs.existsSync(raiz)) continue;
+    for (const arquivo of arquivos(raiz)) {
+      certas += (fs.readFileSync(arquivo, "utf8").match(/no Tamboré/g) ?? []).length;
+    }
+  }
+  ok(`"no Tamboré" é a forma usada (${certas} ocorrências)`, certas > 300);
+
+  /* Os endereços publicados continuam com "em-tambore". */
+  ok(
+    "os slugs com em-tambore continuam intactos",
+    fs.existsSync("app/personal-trainer-em-tambore/page.tsx") &&
+      fs.existsSync("app/personal-em-tambore/page.tsx") &&
+      fs.readFileSync("lib/blog.ts", "utf8").includes("/blog/academias-em-tambore"),
+  );
+}
+
 console.log(falhas === 0 ? "\nTODOS OS TESTES PASSARAM\n" : `\n${falhas} TESTE(S) FALHARAM\n`);
 process.exit(falhas === 0 ? 0 : 1);

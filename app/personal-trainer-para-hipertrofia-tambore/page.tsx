@@ -8,41 +8,41 @@ import FAQ from "@/components/ui/FAQ";
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer para Hipertrofia Tamboré | Montinho Personal Trainer" },
   description:
-    "Personal trainer para hipertrofia em Tamboré com protocolo baseado em ciência. Ganho de massa muscular real, progressão de carga e método individualizado. Mais de 20 anos na região.",
+    "Personal trainer para hipertrofia no Tamboré com protocolo baseado em ciência. Ganho de massa muscular real, progressão de carga e método individualizado. Mais de 20 anos na região.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-para-hipertrofia-tambore`,
   },
   openGraph: {
     title: "Personal Trainer para Hipertrofia Tamboré | Montinho Personal Trainer",
     description:
-      "Hipertrofia com método em Tamboré. Protocolo individual, sobrecarga progressiva e acompanhamento de quem vive na região há mais de 20 anos.",
+      "Hipertrofia com método no Tamboré. Protocolo individual, sobrecarga progressiva e acompanhamento de quem vive na região há mais de 20 anos.",
     url: `${SITE_URL}/personal-trainer-para-hipertrofia-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Quanto tempo leva para ganhar massa muscular com personal em Tamboré?",
+    question: "Quanto tempo leva para ganhar massa muscular com personal no Tamboré?",
     answer:
       "Iniciantes podem ganhar de 1 a 2 kg de massa muscular por mês nos primeiros meses com protocolo adequado. Praticantes intermediários evoluem mais lentamente — cerca de 0,5 a 1 kg por mês. O que importa é a progressão consistente ao longo do tempo, não resultados imediatos que não se sustentam.",
   },
   {
-    question: "É possível ganhar massa muscular sem academia em Tamboré?",
+    question: "É possível ganhar massa muscular sem academia no Tamboré?",
     answer:
       "É possível, mas com limitações. A hipertrofia eficiente requer sobrecarga progressiva — que é mais fácil de implementar com pesos livres e máquinas. Com equipamento doméstico básico (halteres ajustáveis, barra, elásticos), dá para avançar até um ponto. Para maximizar o resultado, academia ou academia de condomínio bem equipada fazem diferença.",
   },
   {
-    question: "Personal trainer para hipertrofia em Tamboré precisa de suplementação?",
+    question: "Personal trainer para hipertrofia no Tamboré precisa de suplementação?",
     answer:
       "Suplementação não é obrigatória, mas pode ser conveniente. Whey protein, creatina e cafeína têm respaldo científico sólido para hipertrofia. O que nunca pode faltar é ingestão proteica adequada (1.6 a 2.2 g por kg de peso corporal) — seja pela alimentação, seja com suplementação como apoio.",
   },
   {
-    question: "Como personal trainer monta protocolo de hipertrofia em Tamboré?",
+    question: "Como personal trainer monta protocolo de hipertrofia no Tamboré?",
     answer:
       "O protocolo é construído com base no nível atual do aluno, nos grupos musculares prioritários, na disponibilidade de treino e no equipamento disponível. Inclui definição de volume (séries e repetições), seleção de exercícios, progressão de carga e periodização — com revisão mensal baseada na resposta individual.",
   },
   {
-    question: "Personal trainer para hipertrofia em Tamboré também orienta sobre alimentação?",
+    question: "Personal trainer para hipertrofia no Tamboré também orienta sobre alimentação?",
     answer:
       "Dou orientações práticas sobre ingestão proteica, timing nutricional e estratégias para sustentar o ganho muscular. Para acompanhamento nutricional completo e prescritivo, recomendo trabalho conjunto com nutricionista — especialmente para quem busca otimizar ganhos em nível avançado.",
   },
@@ -54,7 +54,7 @@ const localSchema = {
   "@id": `${SITE_URL}/personal-trainer-para-hipertrofia-tambore`,
   name: "Montinho Personal Trainer – Hipertrofia Tamboré",
   description:
-    "Personal trainer para hipertrofia em Tamboré. Protocolo individualizado com sobrecarga progressiva para ganho de massa muscular real.",
+    "Personal trainer para hipertrofia no Tamboré. Protocolo individualizado com sobrecarga progressiva para ganho de massa muscular real.",
   url: `${SITE_URL}/personal-trainer-para-hipertrofia-tambore`,
   telephone: "+5511981063409",
   areaServed: [
@@ -92,10 +92,10 @@ export default function PersonalTrainerHipertrofiaTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal trainer para hipertrofia em Tamboré: ganho muscular com método real.
+            Personal trainer para hipertrofia no Tamboré: ganho muscular com método real.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Quem busca hipertrofia em Tamboré sem acompanhamento costuma treinar muito e evoluir pouco. Com protocolo individualizado e sobrecarga progressiva, o estímulo certo chega no músculo certo — e o resultado aparece.
+            Quem busca hipertrofia no Tamboré sem acompanhamento costuma treinar muito e evoluir pouco. Com protocolo individualizado e sobrecarga progressiva, o estímulo certo chega no músculo certo — e o resultado aparece.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -125,7 +125,7 @@ export default function PersonalTrainerHipertrofiaTambore() {
               Quem treina há meses sem ver resultado no espelho geralmente tem um dos seguintes problemas: volume insuficiente, sobrecarga mal distribuída, execução incorreta ou recuperação inadequada. Raramente é genética. Quase sempre é método.
             </p>
             <p>
-              A hipertrofia muscular é hoje um dos temas mais estudados em ciência do exercício. Sabemos com clareza o que funciona: volume de treino adequado por grupo muscular, frequência de estímulo otimizada, sobrecarga progressiva ao longo do tempo, ingestão proteica suficiente e recuperação respeitada. Aplicar isso tudo de forma individualizada — respeitando o nível atual do aluno, suas limitações e sua disponibilidade — é o que faço há mais de 20 anos em Tamboré e região.
+              A hipertrofia muscular é hoje um dos temas mais estudados em ciência do exercício. Sabemos com clareza o que funciona: volume de treino adequado por grupo muscular, frequência de estímulo otimizada, sobrecarga progressiva ao longo do tempo, ingestão proteica suficiente e recuperação respeitada. Aplicar isso tudo de forma individualizada — respeitando o nível atual do aluno, suas limitações e sua disponibilidade — é o que faço há mais de 20 anos no Tamboré e região.
             </p>
             <p>
               Minha paixão pela musculação começa na própria transformação: fui do excesso de peso à composição corporal que queria, entendendo cada etapa do caminho. Hoje reproduzo esse processo — com base científica e individualização — para cada aluno que busca o mesmo.
@@ -153,7 +153,7 @@ export default function PersonalTrainerHipertrofiaTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            O que o protocolo de hipertrofia inclui em Tamboré
+            O que o protocolo de hipertrofia inclui no Tamboré
           </h2>
           <div className="grid sm:grid-cols-2 gap-px border border-white/10 mt-10">
             {[
@@ -201,7 +201,7 @@ export default function PersonalTrainerHipertrofiaTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre personal trainer para hipertrofia em Tamboré
+            Dúvidas sobre personal trainer para hipertrofia no Tamboré
           </h2>
           <FAQ itens={faq} placement="personal-trainer-para-hipertrofia-tambore" />
         </div>
@@ -214,7 +214,7 @@ export default function PersonalTrainerHipertrofiaTambore() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Pronto para ganhar músculo de verdade em Tamboré?
+            Pronto para ganhar músculo de verdade no Tamboré?
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
             Com protocolo certo, progressão estruturada e acompanhamento real, o ganho muscular deixa de ser promessa e vira realidade mensurável.
