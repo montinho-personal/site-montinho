@@ -379,3 +379,19 @@ img {
     object-position: left center;
   }
 }
+
+/* ── Sticky bar contextual ──────────────────────────────────────────────
+   Entrada discreta: sobe 240 ms. Quem pediu menos movimento não vê a
+   animação (motion-safe: no componente). O botão flutuante de WhatsApp
+   divide o canto com a barra: sobe quando ela aparece e some quando a
+   própria barra já é um WhatsApp. */
+@keyframes sticky-sobe {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+body.sticky-visivel a[aria-label="Fale conosco pelo WhatsApp"] {
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 4.75rem);
+}
+body.sticky-whats a[aria-label="Fale conosco pelo WhatsApp"] {
+  display: none;
+}
