@@ -787,9 +787,9 @@ export const blogPosts = ([
   {
     slug: "quanto-tempo-para-ganhar-massa-muscular",
     title: "Quanto Tempo Demora Para Ganhar Massa Muscular? A Resposta Honesta",
-    metaTitle: "Quanto Tempo Para Ganhar Massa Muscular? Resposta Completa",
+    metaTitle: "Quanto Tempo Para Ganhar Massa Muscular? 3 a 6 Meses",
     metaDescription:
-      "Quanto tempo demora para ganhar massa muscular de verdade? Descubra o que acontece em 1, 3, 6 meses e 1 ano de treino — com tabelas, dados reais e sem...",
+      "Iniciante ganha de 0,8 a 1,5 kg de músculo por mês nos primeiros meses, e depois desacelera. Veja o que muda no corpo mês a mês e o que atrasa o processo.",
     excerpt:
       "Todo mundo quer saber quanto tempo vai levar. A resposta honesta depende de fatores que poucos explicam direito. Veja o que realmente acontece mês a mês no seu corpo.",
     category: "Hipertrofia",
@@ -7853,8 +7853,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "quanto-de-cardio-fazer",
     title: "Quanto de Cardio Fazer para Emagrecer? A Quantidade Certa",
-    metaTitle: "Quanto de Cardio Fazer para Emagrecer? Quantidade Ideal…",
-    metaDescription: "Quanto cardio fazer para emagrecer? OMS recomenda 150-300 min/semana. Saiba a quantidade ideal por objetivo, nível e como evitar o excesso de cardio.",
+    metaTitle: "Quanto de Cardio Fazer? 150 a 300 Minutos por Semana",
+    metaDescription: "A faixa da OMS é o piso da saúde, não a meta de quem quer emagrecer. Veja quanto fazer por nível, onde o excesso passa a custar músculo e o que pesa mais.",
     excerpt: "A OMS recomenda 150 a 300 minutos de cardio moderado por semana para saúde. Para emagrecer, mais pode ser melhor — mas excesso de cardio sem treino de força é contraproducente.",
     faqSchema: [
       { question: "Quais são os principais benefícios de Quanto de Cardio Fazer para Emagrecer? A Quantidade Certa?", answer: "Os benefícios incluem melhora da composição corporal, aumento da força e condicionamento, melhora da saúde metabólica e bem-estar geral. Resultados consistentes dependem de treino planejado, nutrição adequada e recuperação suficiente." },
@@ -30501,8 +30501,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
   slug: "tirzepatida-e-musculacao",
   title: "Tirzepatida e Musculação: Guia Completo para Quem Usa Mounjaro",
-  metaTitle: "Tirzepatida e Musculação: Como Preservar Músculo Usando…",
-  metaDescription: "Usando tirzepatida (Mounjaro)? Veja o protocolo de treino e nutrição para preservar massa muscular e potencializar os resultados com base em evidências.",
+  metaTitle: "Tirzepatida e Musculação: Como Não Perder Músculo",
+  metaDescription: "No SURMOUNT, a perda foi de 20,9% do peso em 72 semanas na dose de 15 mg. Veja o treino em três fases e como bater a proteína com o apetite reduzido.",
   excerpt: "A tirzepatida tem a maior perda de peso já registrada em estudos clínicos — até 21%. Mas sem musculação, parte dessa perda é músculo. Veja como treinar certo usando Mounjaro.",
   category: "Saúde",
   date: "2026-06-27",
@@ -49910,8 +49910,8 @@ Verdade: A vantagem genética acelera os resultados — não os entrega automati
   {
     slug: "fibras-musculares-tipo-1-tipo-2",
     title: "Fibras Musculares Tipo 1 e Tipo 2: Como Isso Afeta Seu Treino de Verdade",
-    metaTitle: "Fibras Musculares Tipo 1 e Tipo 2: Como Afeta Seu Treino",
-    metaDescription: "Fibras musculares tipo 1 (lentas) e tipo 2 (rápidas): o que são, como se diferem, qual treino recruta cada tipo e como usar esse conhecimento para hipertrofia e performance.",
+    metaTitle: "Fibras Musculares Tipo 1 e 2: Qual Treino Recruta Cada Uma",
+    metaDescription: "A tipo 2 só entra com carga alta ou perto da falha. É por isso que a panturrilha resiste: o sóleo tem de 75% a 80% de fibra tipo 1 e pede repetição alta.",
     excerpt: "Entender fibras musculares tipo 1 e tipo 2 não é só para fisiologistas — é conhecimento prático que muda como você programa repetições, séries e cargas para maximar resultados.",
     category: "Treino",
     readTime: "10 min",
@@ -51883,8 +51883,8 @@ Não existe atalho em cápsula que substitua esses fundamentos. A boa notícia: 
   {
     slug: "agachamento-bulgaro-como-fazer",
     title: "Agachamento Búlgaro: Técnica Correta, Benefícios e Como Progredir",
-    metaTitle: "Agachamento Búlgaro: Guia Completo de Técnica e Progressão",
-    metaDescription: "Aprenda a fazer o agachamento búlgaro com técnica perfeita, descubra seus benefícios para glúteos e pernas e como progredir com segurança.",
+    metaTitle: "Agachamento Búlgaro: Técnica, Erros Comuns e Progressão",
+    metaDescription: "O pé traseiro elevado transforma o agachamento em trabalho unilateral de quadríceps e glúteo. Veja a altura do banco, os erros de equilíbrio e a progressão.",
     excerpt: "O agachamento búlgaro é um dos exercícios mais eficazes para pernas e glúteos — e um dos mais mal executados. Aprenda a técnica correta e como progressar de forma segura.",
     content: `# Agachamento Búlgaro: Técnica Correta, Benefícios e Como Progredir
 
@@ -92599,9 +92599,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "musculacao-ou-corrida-para-emagrecer",
     title: "Musculação ou Corrida: Qual Emagrece Mais?",
-    metaTitle: "Musculacao ou Corrida: Qual Emagrece Mais?",
+    metaTitle: "Musculação ou Corrida para Emagrecer: O Que a Ciência Diz",
     metaDescription:
-      "Musculação ou corrida para emagrecer? A resposta honesta depende do seu objetivo e contexto. Veja o que a ciência mostra e como escolher por perfil.",
+      "A corrida gasta mais na hora; a musculação protege o músculo que sustenta o gasto do resto do dia. Veja o que muda no espelho e como dividir os dois por perfil.",
     excerpt:
       "Musculação ou corrida: qual emagrece mais? A resposta honesta não é escolher um lado, mas entender o que cada um faz melhor. O segredo está em combinar as duas de acordo com o seu objetivo, seu corpo e sua rotina.",
     category: "Emagrecimento",
@@ -99332,9 +99332,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "dormir-depois-do-almoco-engorda",
     title: "Dormir Depois do Almoço Engorda? Mito ou Verdade",
-    metaTitle: "Dormir Depois do Almoço Engorda? Mito ou Verdade",
+    metaTitle: "Dormir Depois do Almoço Engorda? Não — o Risco é o Refluxo",
     metaDescription:
-      "Dormir depois do almoço engorda? Entenda por que o cochilo não muda o balanço calórico, quando a sesta ajuda na recuperação e os cuidados com refluxo.",
+      "Uma soneca de 20 minutos não muda o balanço calórico do dia. O que muda é o esôfago: veja quanto esperar antes de deitar e a janela ideal do cochilo.",
     excerpt:
       "O cochilo pós-almoço não engorda por si — quem decide isso é o balanço calórico do dia. Entenda o que a ciência diz sobre a sesta, quando ela ajuda e os cuidados reais, como o refluxo.",
     category: "Saúde",
@@ -100186,9 +100186,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "quanto-tempo-de-caminhada-por-dia",
     title: "Quanto Tempo de Caminhada Por Dia Para Emagrecer?",
-    metaTitle: "Quanto Tempo de Caminhada Por Dia Para Emagrecer?",
+    metaTitle: "Quanto Tempo de Caminhada por Dia? 30 a 60 Minutos",
     metaDescription:
-      "30, 45 ou 60 minutos? Veja quanto tempo de caminhada por dia ajuda a emagrecer, quantas calorias ela gasta de verdade e como progredir sem estagnar.",
+      "Meia hora queima de 130 a 180 kcal; uma hora, de 250 a 350. Veja a faixa por objetivo, quando contar passos em vez de minutos e por onde progredir.",
     excerpt:
       "A dose prática fica entre 30 e 60 minutos por dia — mas o que decide o emagrecimento é o déficit calórico. Veja quanto a caminhada gasta de verdade, como usar os passos a seu favor e por que ela é porta de entrada, não teto.",
     category: "Emagrecimento",
@@ -102752,9 +102752,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "zumba-emagrece",
     title: "Zumba Emagrece? O Que Esperar da Dança",
-    metaTitle: "Zumba Emagrece? Calorias Reais e O Que Esperar",
+    metaTitle: "Zumba Emagrece? São 350 a 600 kcal por Aula",
     metaDescription:
-      "Zumba queima de 300 a 600 kcal por aula e tem adesão altíssima. Veja números honestos, os limites da dança e como combinar com força para emagrecer de vez.",
+      "A promessa de 1.000 kcal por aula é marketing, não medição. Veja a faixa real, em quantos quilos isso dá e por que a adesão da zumba vale mais que o gasto.",
     excerpt:
       "A zumba transforma cardio em festa — e isso vale ouro para quem odeia academia. Mas quantas calorias uma aula queima de verdade? E dá para emagrecer só dançando? Números honestos, limites reais e o plano para fazer a dança render na balança.",
     category: "Emagrecimento",
@@ -104281,9 +104281,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "tapioca-engorda",
     title: "Tapioca Engorda ou Emagrece? A Verdade Sobre a Queridinha do Café da Manhã",
-    metaTitle: "Tapioca Engorda? Calorias, Mitos e Como Usar na Dieta",
+    metaTitle: "Tapioca Engorda? A Massa Tem 150 kcal — o Recheio Decide",
     metaDescription:
-      "Tapioca engorda ou emagrece? Veja calorias reais, comparação com pão, índice glicêmico e como encaixar a tapioca na dieta sem sabotar o déficit calórico.",
+      "Três colheres de goma dão cerca de 150 kcal, quase o mesmo que um pão francês. Com queijo, coco ou leite condensado passa de 350. Veja como montar a sua.",
     excerpt:
       "A tapioca ganhou fama de alimento fit, mas será que ela merece? Comparo calorias com o pão francês, explico o índice glicêmico e mostro quando ela ajuda — e quando atrapalha — o emagrecimento.",
     category: "Nutrição",
