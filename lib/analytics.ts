@@ -45,6 +45,12 @@ export type AnalyticsEvent =
   | "post_tool_secondary_click"
   | "tool_journey_continue"
   | "tool_to_whatsapp"
+  /**
+   * Abertura de pergunta do FAQ, em qualquer página. A pergunta vai no
+   * parâmetro porque é conteúdo editorial nosso, não dado de quem leu:
+   * saber qual dúvida abre mais diz o que a página devia responder antes.
+   */
+  | "faq_open"
   // Diagnóstico Montinho (funil da ferramenta /diagnostico)
   | "diagnostic_view"
   | "diagnostic_start"
@@ -265,7 +271,6 @@ export type AnalyticsEvent =
   | "consultoria_etapa_prova"
   | "consultoria_etapa_objecoes"
   | "consultoria_cta_click"
-  | "consultoria_faq_open"
   | "consultoria_resultados_click"
   | "consultoria_historia_click"
 

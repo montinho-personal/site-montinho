@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, type ReactNode } from "react";
-import { trackEvent, trackOncePerSession, type AnalyticsEvent } from "@/lib/analytics";
+import { trackOncePerSession, type AnalyticsEvent } from "@/lib/analytics";
 
 /**
  * O funil da página de Consultoria Online.
@@ -72,26 +72,4 @@ export function VistaDaPagina() {
     trackOncePerSession("consultoria_view", { placement: "consultoria-online" });
   }, []);
   return null;
-}
-
-/**
- * Abertura de pergunta do FAQ.
- *
- * A pergunta aberta vai no parâmetro porque é conteúdo editorial nosso, e
- * não dado de quem leu. Saber que "quanto custa" é a dúvida mais aberta
- * muda o que a página precisa responder mais cedo — e é o tipo de coisa que
- * só a medição revela.
- */
-export function FaqRastreado({ pergunta, children }: { pergunta: string; children: ReactNode }) {
-  return (
-    <div
-      onToggle={(e) => {
-        if ((e.target as HTMLDetailsElement).open) {
-          trackEvent("consultoria_faq_open", { placement: "consultoria-online", pergunta });
-        }
-      }}
-    >
-      {children}
-    </div>
-  );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
+import FAQ from "@/components/ui/FAQ";
 
 export const metadata: Metadata = {
   title: { absolute: "Quanto Custa Personal Trainer Tamboré | Montinho Personal Trainer" },
@@ -199,14 +200,7 @@ export default function QuantoCustaPersonalTrainerTambore() {
           >
             Dúvidas sobre preço de personal trainer em Tamboré
           </h2>
-          <div className="space-y-8">
-            {faq.map((item, i) => (
-              <div key={i} className="border-b border-white/10 pb-8">
-                <h3 className="text-white font-semibold text-lg mb-3">{item.question}</h3>
-                <p className="text-gray-300 leading-relaxed font-light">{item.answer}</p>
-              </div>
-            ))}
-          </div>
+          <FAQ itens={faq} placement="quanto-custa-personal-trainer-tambore" />
         </div>
       </section>
 

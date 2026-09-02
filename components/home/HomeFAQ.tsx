@@ -1,6 +1,4 @@
-"use client";
-
-import { useState } from "react";
+import FAQ from "@/components/ui/FAQ";
 
 const faqs = [
   {
@@ -31,8 +29,6 @@ const faqs = [
 ];
 
 export default function HomeFAQ() {
-  const [open, setOpen] = useState<number | null>(null);
-
   return (
     <section className="py-20 bg-black border-t border-white/10" id="faq">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,38 +42,7 @@ export default function HomeFAQ() {
           Dúvidas comuns sobre personal trainer e acompanhamento
         </p>
 
-        <dl className="flex flex-col gap-0">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-white/10 last:border-0">
-              <dt>
-                <button
-                  onClick={() => setOpen(open === index ? null : index)}
-                  className="w-full flex items-center justify-between gap-4 py-5 text-left text-white font-medium text-base hover:text-gray-300 transition-colors"
-                  aria-expanded={open === index}
-                >
-                  <span>{faq.question}</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.5}
-                    className={`flex-shrink-0 transition-transform duration-200 ${open === index ? "rotate-180" : ""}`}
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                  </svg>
-                </button>
-              </dt>
-              {open === index && (
-                <dd className="pb-5 text-gray-300 text-sm leading-relaxed">
-                  {faq.answer}
-                </dd>
-              )}
-            </div>
-          ))}
-        </dl>
+        <FAQ itens={faqs} placement="home" />
       </div>
     </section>
   );

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { SITE_URL } from "@/lib/blog";
+import FAQ from "@/components/ui/FAQ";
 
 export const metadata: Metadata = {
   title: "Consultoria Online e Personal Trainer em Alphaville",
@@ -461,27 +462,7 @@ export default function Consultoria() {
               subtitle="As respostas diretas para o que todo mundo pergunta."
             />
           </div>
-          <div className="space-y-4">
-            {faq.map((item, i) => (
-              <details
-                key={i}
-                className="group border border-white/15 px-6 py-5 open:bg-white/[0.03]"
-              >
-                <summary className="cursor-pointer list-none flex items-center justify-between gap-4">
-                  <span
-                    className="text-white font-semibold text-base"
-                    style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
-                  >
-                    {item.question}
-                  </span>
-                  <span className="text-gray-400 text-xl leading-none group-open:rotate-45 transition-transform duration-200">
-                    +
-                  </span>
-                </summary>
-                <p className="text-gray-300 text-sm leading-relaxed mt-4">{item.answer}</p>
-              </details>
-            ))}
-          </div>
+          <FAQ itens={faq} placement="consultoria" />
         </div>
       </section>
 

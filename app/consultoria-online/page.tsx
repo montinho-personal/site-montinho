@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import WhatsCta from "@/components/lp/WhatsCta";
-import Etapa, { FaqRastreado, VistaDaPagina } from "@/components/consultoria/Funil";
+import Etapa, { VistaDaPagina } from "@/components/consultoria/Funil";
 import PonteInterna from "@/components/consultoria/PonteInterna";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import testimonials from "@/data/testimonials.json";
+import FAQ from "@/components/ui/FAQ";
 
 /**
  * Landing Page de alta conversão para Google Ads — Consultoria Online.
@@ -612,17 +613,7 @@ export default function ConsultoriaOnlineLP() {
               Suas dúvidas, respondidas
             </h2>
             <div className="space-y-3">
-              {faqLp.map((f) => (
-                <FaqRastreado key={f.q} pergunta={f.q}>
-                <details className="group border border-white/10 rounded-xl bg-black/40 open:border-[#BA9E50]/40 transition-colors">
-                  <summary className="cursor-pointer list-none flex items-center justify-between px-6 py-4 text-white font-semibold">
-                    {f.q}
-                    <span className="text-[#BA9E50] group-open:rotate-45 transition-transform text-xl leading-none">+</span>
-                  </summary>
-                  <p className="px-6 pb-5 text-gray-300 text-sm leading-relaxed">{f.a}</p>
-                </details>
-                </FaqRastreado>
-              ))}
+              <FAQ itens={faqLp.map((f) => ({ question: f.q, answer: f.a }))} placement="consultoria-online" />
             </div>
             <div className="mt-10">
               <Cta em="faq" label="Tirar minha dúvida no WhatsApp" sub="Respondo pessoalmente, sem robô" />

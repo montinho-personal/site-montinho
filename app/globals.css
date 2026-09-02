@@ -395,3 +395,11 @@ body.sticky-visivel a[aria-label="Fale conosco pelo WhatsApp"] {
 body.sticky-whats a[aria-label="Fale conosco pelo WhatsApp"] {
   display: none;
 }
+
+/* ── FAQ (details/summary) ──────────────────────────────────────────────
+   O Safari desenha um triângulo próprio no summary, que o Tailwind
+   `list-none` não remove. Sem esta regra o acordeão aparece com dois
+   indicadores no iPhone: o triângulo do sistema e o "+" nosso. */
+summary::-webkit-details-marker {
+  display: none;
+}
