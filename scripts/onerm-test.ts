@@ -213,7 +213,6 @@ for (const ev of [
   "one_rm_plate_calculator_open",
   "one_rm_methodology_open",
   "one_rm_article_click",
-  "one_rm_cta_click",
 ]) {
   ok(`evento declarado: ${ev}`, analytics.includes(`"${ev}"`));
 }

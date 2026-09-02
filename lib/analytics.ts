@@ -31,6 +31,20 @@ export type AnalyticsEvent =
   | "sticky_view"
   | "sticky_click"
   | "sticky_close"
+  /**
+   * Bloco pós-resultado das ferramentas. `post_tool_cta_view` uma vez por
+   * ferramenta por sessão; `post_tool_cta_click` a ação principal;
+   * `tool_journey_continue` quando ela leva a outra ferramenta ou ao
+   * diagnóstico; `tool_to_whatsapp` quando abre conversa;
+   * `post_tool_secondary_click` a ação discreta. Parâmetros: tool_name,
+   * tool_result_category (faixa, nunca o número), cta_variant (a/b/c),
+   * cta_destination, session_tool_count, previous_tool.
+   */
+  | "post_tool_cta_view"
+  | "post_tool_cta_click"
+  | "post_tool_secondary_click"
+  | "tool_journey_continue"
+  | "tool_to_whatsapp"
   // Diagnóstico Montinho (funil da ferramenta /diagnostico)
   | "diagnostic_view"
   | "diagnostic_start"
@@ -97,7 +111,6 @@ export type AnalyticsEvent =
   | "protein_meals_open"
   | "protein_food_examples_open"
   | "protein_article_click"
-  | "protein_cta_click"
   /** Ponte da meta de proteína para a tabela nutricional de alimentos. */
   | "protein_food_search_click"
 
@@ -113,7 +126,6 @@ export type AnalyticsEvent =
   | "calorie_methodology_open"
   | "calorie_deficit_select"
   | "calorie_article_click"
-  | "calorie_cta_click"
   | "calorie_macros_click"
 
   /**
@@ -144,7 +156,6 @@ export type AnalyticsEvent =
   | "one_rm_methodology_open"
   | "one_rm_review_click"
   | "one_rm_article_click"
-  | "one_rm_cta_click"
 
   /**
    * Calculadora de macros. Peso, calorias e os gramas calculados são dados
@@ -162,7 +173,6 @@ export type AnalyticsEvent =
   | "macro_protein_calculator_click"
   | "macro_cardapio_click"
   | "macro_article_click"
-  | "macro_cta_click"
   | "macro_food_search_click"
 
   /**
@@ -292,9 +302,7 @@ export type AnalyticsEvent =
   | "gym_finder_view"
   | "gym_finder_start"
   | "gym_finder_complete"
-  | "gym_result_click"
-  | "gym_routine_tool_click"
-  | "gym_personal_click";
+  | "gym_result_click";
 
 export interface EventParams {
   [key: string]: string | number | boolean | undefined;

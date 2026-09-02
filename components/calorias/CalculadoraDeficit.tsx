@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import PosResultado from "@/components/ferramentas/PosResultado";
 import { guardaKcalParaMacros, guardaPesoParaProteina } from "@/lib/macros";
 import { PONTE, consomeDadosCorporais } from "@/lib/ferramentas/ponte";
 import {
@@ -662,22 +663,21 @@ export default function CalculadoraDeficit({
                 </ul>
               </div>
 
-              {/* CTA — só depois de todo o resultado entregue */}
-              <div className="border-t border-white/10 pt-5">
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Saber as calorias é uma parte da estratégia. Treino, proteína,
-                  progressão e aderência determinam quanto disso vira um
-                  processo que se sustenta.{" "}
-                  <Link
-                    href="/consultoria"
-                    onClick={() => trackEvent("calorie_cta_click", { placement })}
-                    className="text-gray-300 underline underline-offset-2 decoration-1 hover:text-white transition-colors"
-                  >
-                    É isso que o acompanhamento do Montinho ajusta
-                  </Link>
-                  .
-                </p>
-              </div>
+              {/* Próximo passo — só depois de todo o resultado entregue */}
+              <PosResultado
+                ferramenta="deficit"
+                categoria={faixaSel}
+                resumo={(() => {
+                  const f = FAIXAS_DEFICIT.find((x) => x.id === faixaSel);
+                  return f ? `${f.titulo.toLowerCase()} sobre um gasto de ≈ ${formataFaixa(resultado.tdee)} kcal/dia` : null;
+                })()}
+                placement={placement}
+                aoContinuar={() => {
+                  const f = FAIXAS_DEFICIT.find((x) => x.id === faixaSel);
+                  if (f) guardaKcalParaMacros(aplicaDeficit(resultado.tdee, f.percentualMax).min);
+                  if (peso !== null) guardaPesoParaProteina(peso);
+                }}
+              />
             </div>
           )}
         </div>

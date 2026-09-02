@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import PosResultado from "@/components/ferramentas/PosResultado";
 import {
   AMDR,
   COMBINACAO_IMPOSSIVEL,
@@ -382,6 +383,7 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
               Reduzir a referência de proteína, baixar o percentual de gordura ou revisar a meta calórica
               resolve — a escolha é sua.
             </p>
+            <PosResultado ferramenta="macros" categoria="impossivel" resumo="uma combinação que não fecha (proteína e gordura passam da meta calórica)" placement={placement} />
           </div>
         ) : (
           <div className="space-y-7">
@@ -638,21 +640,13 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
               </ul>
             </div>
 
-            {/* CTA — depois de todo o resultado */}
-            <div className="border-t border-white/10 pt-5">
-              <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">
-                Calorias e macros organizam a alimentação, mas treino, progressão, rotina e aderência
-                também fazem parte do resultado.{" "}
-                <Link
-                  href="/consultoria"
-                  onClick={() => trackEvent("macro_cta_click", { placement })}
-                  className="text-gray-300 underline underline-offset-2 decoration-1 hover:text-white transition-colors"
-                >
-                  É isso que o acompanhamento do Montinho organiza
-                </Link>
-                .
-              </p>
-            </div>
+            {/* Próximo passo — depois de todo o resultado */}
+            <PosResultado
+              ferramenta="macros"
+              categoria={foraDoAMDR ? "fora_amdr" : "padrao"}
+              resumo={`${formataNumero(r.proteina.gramas)} g de proteína, ${formataNumero(r.carboidrato.gramas)} g de carboidrato e ${formataNumero(r.gordura.gramas)} g de gordura por dia`}
+              placement={placement}
+            />
           </div>
         )}
       </div>

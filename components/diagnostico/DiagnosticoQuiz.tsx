@@ -13,6 +13,7 @@ import {
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import NotaMetodo from "@/components/filosofia/NotaMetodo";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import { registraConclusao } from "@/lib/ferramentas/historico";
 
 const STORAGE_KEY = "mt_diagnostico_v1";
 
@@ -111,6 +112,7 @@ export default function DiagnosticoQuiz() {
       const result = computeResult(next);
       trackEvent("diagnostic_complete", { result_profile: result.profileId });
       trackEvent("diagnostic_result_view", { result_profile: result.profileId });
+      registraConclusao("diagnostico");
     }
   };
 

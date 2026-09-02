@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import PosResultado from "@/components/ferramentas/PosResultado";
 import { PONTE, consome } from "@/lib/ferramentas/ponte";
 import {
   ANILHAS_PADRAO,
@@ -647,21 +648,12 @@ export default function CalculadoraOneRM({
               </Link>
             </div>
 
-            {/* CTA — depois de todo o valor entregue */}
-            <div className="border-t border-white/10 pt-5">
-              <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">
-                Saber a carga é útil. Saber quando aumentar, quantas séries fazer e como organizar a
-                progressão é o que transforma o número em treino.{" "}
-                <Link
-                  href="/consultoria"
-                  onClick={() => trackEvent("one_rm_cta_click", { placement })}
-                  className="text-gray-300 underline underline-offset-2 decoration-1 hover:text-white transition-colors"
-                >
-                  É isso que o acompanhamento do Montinho organiza
-                </Link>
-                .
-              </p>
-            </div>
+            {/* Próximo passo — depois de todo o valor entregue */}
+            <PosResultado
+              ferramenta="onerm"
+              resumo={`1RM estimado de ≈ ${arredondaKg(umRM)} kg${exercicio && exercicio !== "Outro" ? ` no ${exercicio.toLowerCase()}` : ""}`}
+              placement={placement}
+            />
           </div>
         )}
       </div>

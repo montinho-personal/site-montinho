@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { trackEvent } from "@/lib/analytics";
 import {
-  EVENTOS_DE_RESULTADO,
   LIMIARES,
   localDoPathname,
   regraPorRota,
@@ -22,9 +21,10 @@ import {
  *
  * 1. DESCOBRIR A REGRA. Primeiro a meta tag que a página declarou no build
  *    (artigos), depois a rota (ferramentas, locais, institucionais).
- * 2. ESPERAR O SINAL. 25% de rolagem ou 15 s; páginas comerciais, antes;
- *    ferramentas, só depois do resultado. Aparecer no carregamento seria a
- *    barra pedindo atenção antes de a pessoa ter lido uma linha.
+ * 2. ESPERAR O SINAL. 25% de rolagem ou 15 s; páginas comerciais, antes.
+ *    Aparecer no carregamento seria a barra pedindo atenção antes de a
+ *    pessoa ter lido uma linha. (Ferramentas não têm barra: o próximo passo
+ *    delas é o bloco pós-resultado, dentro da própria ferramenta.)
  * 3. SUMIR QUANDO ATRAPALHA. Banner de cookies na tela, modal aberto, pessoa
  *    digitando, já fechou nesta sessão, já clicou nesta ação nesta sessão.
  *
@@ -188,29 +188,17 @@ function Barra({ pathname }: { pathname: string }) {
       });
     };
 
-    if (r.gatilho === "resultado") {
-      const ouve = (e: Event) => {
-        const nome = (e as CustomEvent<{ event: string }>).detail?.event;
-        if (nome && EVENTOS_DE_RESULTADO.has(nome)) {
-          /* Dá um respiro depois do resultado: a pessoa quer ler o número primeiro. */
-          setTimeout(mostra, 4_000);
-        }
-      };
-      window.addEventListener("montinho:evento", ouve);
-      desfazer.push(() => window.removeEventListener("montinho:evento", ouve));
-    } else {
-      const { scroll, ms } = LIMIARES[r.gatilho];
-      const timer = setTimeout(mostra, ms);
-      const aoRolar = () => {
-        const alt = document.documentElement.scrollHeight - window.innerHeight;
-        if (alt <= 0 || window.scrollY / alt >= scroll) {
-          window.removeEventListener("scroll", aoRolar);
-          mostra();
-        }
-      };
-      window.addEventListener("scroll", aoRolar, { passive: true });
-      desfazer.push(() => { clearTimeout(timer); window.removeEventListener("scroll", aoRolar); });
-    }
+    const { scroll, ms } = LIMIARES[r.gatilho];
+    const timer = setTimeout(mostra, ms);
+    const aoRolar = () => {
+      const alt = document.documentElement.scrollHeight - window.innerHeight;
+      if (alt <= 0 || window.scrollY / alt >= scroll) {
+        window.removeEventListener("scroll", aoRolar);
+        mostra();
+      }
+    };
+    window.addEventListener("scroll", aoRolar, { passive: true });
+    desfazer.push(() => { clearTimeout(timer); window.removeEventListener("scroll", aoRolar); });
 
     /* Some enquanto a pessoa digita em qualquer campo; volta quando sai. */
     const entrou = () => { if (digitando()) setOculta(true); };

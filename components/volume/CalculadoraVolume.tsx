@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
+import { registraConclusao } from "@/lib/ferramentas/historico";
 import { PONTE, guarda } from "@/lib/ferramentas/ponte";
 import { DIAS, MUSCULOS, nomeMusculo, type Dia, type MusculoId } from "@/lib/treino/musculos";
 import { EXERCICIO_POR_ID, buscaExercicios } from "@/lib/treino/exercicios";
@@ -141,6 +142,7 @@ export default function CalculadoraVolume({ placement }: { placement: string }) 
     if (temResultado && !jaCompletou.current) {
       jaCompletou.current = true;
       trackEvent("training_volume_complete", { placement });
+      registraConclusao("volume");
     }
   }, [temResultado, placement]);
 

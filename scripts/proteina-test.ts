@@ -234,7 +234,7 @@ console.log("\n" + "=".repeat(60) + "\nPRIVACIDADE E EVENTOS\n" + "=".repeat(60)
 const componente = fs.readFileSync("components/proteina/CalculadoraProteina.tsx", "utf8");
 const analytics = fs.readFileSync("lib/analytics.ts", "utf8");
 
-for (const ev of ["protein_calculator_view", "protein_calculator_use", "protein_meals_open", "protein_food_examples_open", "protein_article_click", "protein_cta_click"]) {
+for (const ev of ["protein_calculator_view", "protein_calculator_use", "protein_meals_open", "protein_food_examples_open", "protein_article_click"]) {
   ok(`evento declarado: ${ev}`, analytics.includes(`"${ev}"`));
 }
 

@@ -35,9 +35,7 @@ export type Gatilho =
   /** 25% de rolagem ou 15 s — o menor sinal de interesse. */
   | "padrao"
   /** 10% ou 5 s — página comercial, a pessoa já veio decidida. */
-  | "cedo"
-  /** Só depois que a ferramenta entregou resultado. Antes, não interrompe. */
-  | "resultado";
+  | "cedo";
 
 export type Destino = "whatsapp" | "diagnostico" | "ferramenta" | "pagina";
 
@@ -292,95 +290,12 @@ export const REGRAS: Record<string, (c: Contexto) => Regra> = {
     prioridade: 3,
   }),
 
-  // ─── Ferramentas: continuidade, só depois do resultado ─────────────────
-
-  ferramenta_deficit: () => ({
-    id: "ferramenta_deficit",
-    intencao: "aplicar",
-    texto: "Quer saber como aplicar isso no seu treino?",
-    botao: "Falar comigo",
-    destino: "whatsapp",
-    href: z("Olá, Montinho! Acabei de calcular meu déficit no seu site e queria entender como aplicar isso no treino."),
-    gatilho: "resultado",
-    prioridade: 2,
-  }),
-
-  ferramenta_tdee: () => ({
-    id: "ferramenta_tdee",
-    intencao: "próximo cálculo",
-    texto: "Já sabe o gasto. Qual é o déficit?",
-    botao: "Calcular déficit",
-    destino: "ferramenta",
-    href: "/ferramentas/calculadora-deficit-calorico",
-    gatilho: "resultado",
-    prioridade: 2,
-  }),
-
-  ferramenta_proteina: () => ({
-    id: "ferramenta_proteina",
-    intencao: "completar a estratégia",
-    texto: "Quer montar o restante da estratégia?",
-    botao: "Ver macros",
-    destino: "ferramenta",
-    href: "/ferramentas/calculadora-macros",
-    gatilho: "resultado",
-    prioridade: 2,
-  }),
-
-  ferramenta_macros: () => ({
-    id: "ferramenta_macros",
-    intencao: "virar prato",
-    texto: "Quer transformar isso em cardápio?",
-    botao: "Montar cardápio",
-    destino: "ferramenta",
-    href: "/ferramentas/monte-seu-cardapio",
-    gatilho: "resultado",
-    prioridade: 2,
-  }),
-
-  ferramenta_volume: () => ({
-    id: "ferramenta_volume",
-    intencao: "ver o treino inteiro",
-    texto: "Quer saber se seu treino inteiro faz sentido?",
-    botao: "Fazer diagnóstico",
-    destino: "diagnostico",
-    href: "/diagnostico",
-    gatilho: "resultado",
-    prioridade: 2,
-  }),
-
-  ferramenta_1rm: () => ({
-    id: "ferramenta_1rm",
-    intencao: "usar a carga",
-    texto: "Carga certa. E o volume?",
-    botao: "Conferir volume",
-    destino: "ferramenta",
-    href: "/ferramentas/calculadora-volume-treino",
-    gatilho: "resultado",
-    prioridade: 2,
-  }),
-
-  ferramenta_diagnostico: () => ({
-    id: "ferramenta_diagnostico",
-    intencao: "ajuda humana",
-    texto: "Quer que eu olhe seu resultado?",
-    botao: "Falar comigo",
-    destino: "whatsapp",
-    href: z("Olá, Montinho! Acabei de fazer o diagnóstico no seu site e queria conversar sobre o resultado."),
-    gatilho: "resultado",
-    prioridade: 1,
-  }),
-
-  ferramenta_academia: () => ({
-    id: "ferramenta_academia",
-    intencao: "treinar na academia escolhida",
-    texto: "Já escolheu? Veja o acompanhamento na academia",
-    botao: "Ver presencial",
-    destino: "pagina",
-    href: "/personal-trainer-alphaville",
-    gatilho: "resultado",
-    prioridade: 2,
-  }),
+  // ─── Ferramentas ────────────────────────────────────────────────────────
+  // As ferramentas de cálculo NÃO têm sticky: o próximo passo delas é o bloco
+  // pós-resultado (components/ferramentas/PosResultado.tsx), que sabe o
+  // resultado, a faixa e quantas ferramentas a pessoa já usou. Uma barra por
+  // cima disso seria duas ofertas na mesma tela. Só a tabela de alimentos —
+  // que não tem "resultado" — fica com barra.
 
   alimentos: () => ({
     id: "alimentos",
@@ -440,7 +355,7 @@ export const REGRAS: Record<string, (c: Contexto) => Regra> = {
  *
  * Só as educativas. Quem está numa página local, de exercício ou de
  * consultoria já tem a ação certa na frente — trocar por "quer conversar?"
- * seria pior. E a regra de ferramenta depende do resultado, não da visita.
+ * seria pior. As ferramentas nem passam por aqui.
  */
 const ESCALAVEIS = new Set([
   "hipertrofia", "volume", "emagrecimento", "emagrecimento_travado", "proteina", "macros",
@@ -489,17 +404,10 @@ export function regraPorRota(pathname: string): string | null {
   const p = pathname.replace(/\/$/, "") || "/";
   if (SUPRIMIDA.some((s) => s.padrao.test(p))) return null;
 
-  if (p === "/ferramentas/calculadora-deficit-calorico") return "ferramenta_deficit";
-  if (p === "/ferramentas/calculadora-tmb-tdee") return "ferramenta_tdee";
-  if (p === "/ferramentas/calculadora-de-proteina") return "ferramenta_proteina";
-  if (p === "/ferramentas/calculadora-macros") return "ferramenta_macros";
-  if (p === "/ferramentas/calculadora-volume-treino") return "ferramenta_volume";
-  if (p === "/ferramentas/calculadora-1rm") return "ferramenta_1rm";
-  if (p === "/ferramentas/monte-seu-cardapio") return null; // já tem WhatsApp no fim
-  if (p === "/ferramentas/teste-mobilidade") return null; // ainda não está no ar
-  if (p === "/diagnostico") return "ferramenta_diagnostico";
-  if (p === "/treino-para-minha-rotina") return null; // já tem WhatsApp no resultado
-  if (p === "/academia-ideal-alphaville") return "ferramenta_academia";
+  // Ferramentas de cálculo e quizzes: sem barra. O próximo passo é o bloco
+  // pós-resultado da própria ferramenta (ver REGRAS).
+  if (p.startsWith("/ferramentas/")) return null;
+  if (p === "/diagnostico" || p === "/treino-para-minha-rotina" || p === "/academia-ideal-alphaville") return null;
   if (p.startsWith("/alimentos")) return "alimentos";
 
   if (p === "/consultoria") return "consultoria";
@@ -530,23 +438,7 @@ export function resolve(id: string, c: Contexto = {}): Regra | null {
 }
 
 /** Tempo e rolagem por gatilho. Exportado para o teste travar os números. */
-export const LIMIARES: Record<Exclude<Gatilho, "resultado">, { scroll: number; ms: number }> = {
+export const LIMIARES: Record<Gatilho, { scroll: number; ms: number }> = {
   padrao: { scroll: 0.25, ms: 15_000 },
   cedo: { scroll: 0.1, ms: 5_000 },
 };
-
-/**
- * Eventos de ferramenta que significam "entregou resultado". A barra de
- * gatilho "resultado" só aparece depois de um destes. A lista vem dos eventos
- * que as ferramentas JÁ disparam — nenhuma precisou mudar.
- */
-export const EVENTOS_DE_RESULTADO = new Set([
-  "calorie_calculator_complete",
-  "tdee_calculator_complete",
-  "macro_calculator_complete",
-  "training_volume_complete",
-  "protein_calculator_use",
-  "one_rm_calculator_use",
-  "diagnostic_result_view",
-  "gym_finder_complete",
-]);
