@@ -38,6 +38,17 @@ const pagina = readFileSync("app/blog/[slug]/page.tsx", "utf8");
  * acervo ainda não passou por revisão e só responde às travas globais.
  */
 const REVISADOS = [
+  /* Lote 3 — 02/09/2026: as dez seguintes com CTR zero na primeira página. */
+  "cerveja-engorda",
+  "quantos-kg-perder-por-mes",
+  "frutas-antes-do-treino",
+  "quanto-tempo-dura-um-treino",
+  "whey-protein-para-quem-usa-mounjaro",
+  "musculacao-apos-60-anos",
+  "bluefit-alphaville",
+  "balanca-nao-muda-mas-o-corpo-muda",
+  "natacao-emagrece",
+  "como-voltar-academia-depois-de-parado",
   /* Lote 2 — 02/09/2026: as dez com CTR ZERO e mais impressões, todas já na
      primeira página. 2.808 impressões e nenhum clique em três meses. */
   "dormir-depois-do-almoco-engorda",
@@ -206,7 +217,7 @@ bloco("7. PÁGINA NACIONAL NÃO SE ANUNCIA COMO LOCAL");
  * A trava vale só para os artigos SEM intenção local. Smart Fit vs Bluefit
  * compara duas unidades da região, então ali o sinal local é legítimo.
  */
-const COM_INTENCAO_LOCAL = new Set(["smart-fit-vs-bluefit"]);
+const COM_INTENCAO_LOCAL = new Set(["smart-fit-vs-bluefit", "bluefit-alphaville"]);
 for (const slug of REVISADOS) {
   if (COM_INTENCAO_LOCAL.has(slug)) continue;
   const p = porSlug.get(slug)!;
