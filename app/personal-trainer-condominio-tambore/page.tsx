@@ -8,26 +8,26 @@ import FAQ from "@/components/ui/FAQ";
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer Condomínio Tamboré | Montinho Personal Trainer" },
   description:
-    "Personal trainer para condomínios em Tamboré. Treino individualizado na academia do seu condomínio ou espaço fitness. Mais de 20 anos na região. Resultados reais, método comprovado.",
+    "Personal trainer para condomínios no Tamboré. Treino individualizado na academia do seu condomínio ou espaço fitness. Mais de 20 anos na região. Resultados reais, método comprovado.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-condominio-tambore`,
   },
   openGraph: {
     title: "Personal Trainer Condomínio Tamboré | Montinho Personal Trainer",
     description:
-      "Treino personalizado na academia do seu condomínio em Tamboré. Protocolo individual e acompanhamento de quem conhece a região há mais de 20 anos.",
+      "Treino personalizado na academia do seu condomínio no Tamboré. Protocolo individual e acompanhamento de quem conhece a região há mais de 20 anos.",
     url: `${SITE_URL}/personal-trainer-condominio-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Personal trainer pode treinar na academia do meu condomínio em Tamboré?",
+    question: "Personal trainer pode treinar na academia do meu condomínio no Tamboré?",
     answer:
       "Sim. A maioria dos condomínios de Tamboré permite acesso de personal trainers cadastrados. O processo de cadastro varia por condomínio — em alguns basta apresentar documentação profissional, em outros há aprovação pelo síndico. Facilito esse processo para novos alunos.",
   },
   {
-    question: "A academia do condomínio em Tamboré é suficiente para ter resultado?",
+    question: "A academia do condomínio no Tamboré é suficiente para ter resultado?",
     answer:
       "Na maioria dos casos, sim. Mesmo academias de condomínio com equipamento limitado permitem treinos de força, hipertrofia e emagrecimento eficientes quando o protocolo é bem estruturado. O problema raramente é o equipamento — é a falta de método para usar o que está disponível.",
   },
@@ -54,7 +54,7 @@ const localSchema = {
   "@id": `${SITE_URL}/personal-trainer-condominio-tambore`,
   name: "Montinho Personal Trainer – Condomínios Tamboré",
   description:
-    "Personal trainer para condomínios em Tamboré. Treino individualizado na academia do condomínio para emagrecimento, hipertrofia e condicionamento.",
+    "Personal trainer para condomínios no Tamboré. Treino individualizado na academia do condomínio para emagrecimento, hipertrofia e condicionamento.",
   url: `${SITE_URL}/personal-trainer-condominio-tambore`,
   telephone: "+5511981063409",
   areaServed: [
@@ -92,7 +92,7 @@ export default function PersonalTrainerCondomínioTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal trainer no condomínio em Tamboré: sua academia, meu método.
+            Personal trainer no condomínio no Tamboré: sua academia, meu método.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
             A academia do seu condomínio está ali, mas o resultado não aparece. Não é por falta de equipamento — é por falta de protocolo. Com acompanhamento profissional, o que parece limitado se transforma em suficiente.
@@ -156,7 +156,7 @@ export default function PersonalTrainerCondomínioTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Acompanhamento completo na academia do seu condomínio em Tamboré
+            Acompanhamento completo na academia do seu condomínio no Tamboré
           </h2>
           <div className="grid sm:grid-cols-2 gap-px border border-white/10 mt-10">
             {[
@@ -194,7 +194,7 @@ export default function PersonalTrainerCondomínioTambore() {
           <p className="mt-8 text-gray-300 font-light">
             Conheça também a{" "}
             <Link href="/personal-trainer-tambore" className="text-white underline underline-offset-2 hover:opacity-70 transition-opacity">
-              página de personal trainer em Tamboré
+              página de personal trainer no Tamboré
             </Link>{" "}
             para mais informações sobre o atendimento presencial na região.
           </p>

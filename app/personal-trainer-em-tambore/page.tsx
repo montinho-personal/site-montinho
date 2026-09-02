@@ -6,45 +6,45 @@ import { SITE_URL } from "@/lib/blog";
 import FAQ from "@/components/ui/FAQ";
 
 export const metadata: Metadata = {
-  title: { absolute: "Personal Trainer em Tamboré | Montinho Personal Trainer" },
+  title: { absolute: "Personal Trainer no Tamboré | Montinho Personal Trainer" },
   description:
-    "Personal trainer em Tamboré com mais de 20 anos na região. Protocolo individualizado, acompanhamento exclusivo e resultado real. Presencial, a domicílio ou online.",
+    "Personal trainer no Tamboré com mais de 20 anos na região. Protocolo individualizado, acompanhamento exclusivo e resultado real. Presencial, a domicílio ou online.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-em-tambore`,
   },
   openGraph: {
-    title: "Personal Trainer em Tamboré | Montinho Personal Trainer",
+    title: "Personal Trainer no Tamboré | Montinho Personal Trainer",
     description:
-      "Personal trainer em Tamboré com método baseado em ciência e 20 anos de experiência local. Treino individualizado para quem quer resultado de verdade.",
+      "Personal trainer no Tamboré com método baseado em ciência e 20 anos de experiência local. Treino individualizado para quem quer resultado de verdade.",
     url: `${SITE_URL}/personal-trainer-em-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Como funciona o atendimento de personal trainer em Tamboré?",
+    question: "Como funciona o atendimento de personal trainer no Tamboré?",
     answer:
       "O atendimento começa com uma conversa pelo WhatsApp para entender seu objetivo e histórico. Depois, fazemos uma avaliação presencial e montamos o protocolo de treino do zero. As sessões podem ser em academia parceira, na academia do seu condomínio ou a domicílio — conforme sua preferência e rotina.",
   },
   {
-    question: "Personal trainer em Tamboré cobra por sessão ou por pacote mensal?",
+    question: "Personal trainer no Tamboré cobra por sessão ou por pacote mensal?",
     answer:
       "O modelo mais comum é o pacote mensal, com frequência de duas a quatro sessões por semana. Essa estrutura permite planejamento de progressão, revisão mensal e continuidade no protocolo — o que é muito mais efetivo do que sessões avulsas sem continuidade.",
   },
   {
-    question: "Personal trainer em Tamboré atende alunos sem experiência anterior?",
+    question: "Personal trainer no Tamboré atende alunos sem experiência anterior?",
     answer:
       "Sim. Iniciantes representam um dos perfis mais importantes a se acompanhar: a base técnica construída corretamente no início evita lesões, acelera a progressão e cria hábitos de treino sólidos. Começar com acompanhamento profissional é o caminho mais eficiente — independente do ponto de partida.",
   },
   {
-    question: "Qual a diferença de personal trainer em Tamboré para professor de academia comum?",
+    question: "Qual a diferença de personal trainer no Tamboré para professor de academia comum?",
     answer:
-      "O professor de academia atende dezenas de alunos simultaneamente — quando atende. O personal trainer em Tamboré está dedicado exclusivamente a você durante toda a sessão: corrige execução, ajusta carga, monitora recuperação e adapta o protocolo conforme sua resposta individual. É uma diferença de atenção e resultado que não tem comparação.",
+      "O professor de academia atende dezenas de alunos simultaneamente — quando atende. O personal trainer no Tamboré está dedicado exclusivamente a você durante toda a sessão: corrige execução, ajusta carga, monitora recuperação e adapta o protocolo conforme sua resposta individual. É uma diferença de atenção e resultado que não tem comparação.",
   },
   {
-    question: "Personal trainer em Tamboré atende nos condomínios da região?",
+    question: "Personal trainer no Tamboré atende nos condomínios da região?",
     answer:
-      "Sim. Atendo nas academias de condomínios em Tamboré e região, incluindo Alphaville, Barueri e Santana de Parnaíba. Para alunos que preferem treinar sem sair do condomínio, essa é uma opção prática que elimina o deslocamento e otimiza o tempo.",
+      "Sim. Atendo nas academias de condomínios no Tamboré e região, incluindo Alphaville, Barueri e Santana de Parnaíba. Para alunos que preferem treinar sem sair do condomínio, essa é uma opção prática que elimina o deslocamento e otimiza o tempo.",
   },
 ];
 
@@ -54,7 +54,7 @@ const localSchema = {
   "@id": `${SITE_URL}/personal-trainer-em-tambore`,
   name: "Montinho Personal Trainer – Tamboré",
   description:
-    "Personal trainer em Tamboré com mais de 20 anos de experiência. Atendimento individualizado presencial e online.",
+    "Personal trainer no Tamboré com mais de 20 anos de experiência. Atendimento individualizado presencial e online.",
   url: `${SITE_URL}/personal-trainer-em-tambore`,
   telephone: "+5511981063409",
   areaServed: [
@@ -92,7 +92,7 @@ export default function PersonalTrainerEmTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal trainer em Tamboré: protocolo seu, atenção exclusiva, resultado real.
+            Personal trainer no Tamboré: protocolo seu, atenção exclusiva, resultado real.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
             Em Tamboré, o tempo é escasso e a exigência é alta. Personal trainer que vive na região há mais de 20 anos sabe como montar um protocolo que funciona dentro da sua rotina — não apesar dela.
@@ -103,7 +103,7 @@ export default function PersonalTrainerEmTambore() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
           >
-            Quero um personal trainer em Tamboré
+            Quero um personal trainer no Tamboré
           </a>
         </div>
       </section>
@@ -118,7 +118,7 @@ export default function PersonalTrainerEmTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Mais de 20 anos vivendo e trabalhando em Tamboré e Alphaville.
+            Mais de 20 anos vivendo e trabalhando no Tamboré e Alphaville.
           </h2>
           <div className="grid sm:grid-cols-[1fr_auto] gap-10 items-start">
             <div className="space-y-5 text-gray-300 leading-relaxed font-light">
@@ -135,8 +135,8 @@ export default function PersonalTrainerEmTambore() {
             <div className="flex-shrink-0 mx-auto sm:mx-0">
               <Image
                 src="/Personal%20Trainer%20Tambor%C3%A9.jpg"
-                alt="Personal Trainer em Tamboré"
-                title="Personal Trainer em Tamboré"
+                alt="Personal Trainer no Tamboré"
+                title="Personal Trainer no Tamboré"
                 width={220}
                 height={390}
                 loading="lazy"
@@ -159,7 +159,7 @@ export default function PersonalTrainerEmTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Por que personal trainer em Tamboré faz diferença real
+            Por que personal trainer no Tamboré faz diferença real
           </h2>
           <div className="grid sm:grid-cols-2 gap-px border border-white/10">
             {[
@@ -207,7 +207,7 @@ export default function PersonalTrainerEmTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre personal trainer em Tamboré
+            Dúvidas sobre personal trainer no Tamboré
           </h2>
           <FAQ itens={faq} placement="personal-trainer-em-tambore" />
         </div>

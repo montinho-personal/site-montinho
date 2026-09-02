@@ -8,41 +8,41 @@ import FAQ from "@/components/ui/FAQ";
 export const metadata: Metadata = {
   title: { absolute: "Melhor Personal Trainer Tamboré | Montinho Personal Trainer" },
   description:
-    "Procurando o melhor personal trainer em Tamboré? Mais de 20 anos de experiência na região, método baseado em ciência e resultados verificáveis. Saiba o que diferencia um personal trainer de verdade.",
+    "Procurando o melhor personal trainer no Tamboré? Mais de 20 anos de experiência na região, método baseado em ciência e resultados verificáveis. Saiba o que diferencia um personal trainer de verdade.",
   alternates: {
     canonical: `${SITE_URL}/melhor-personal-trainer-tambore`,
   },
   openGraph: {
     title: "Melhor Personal Trainer Tamboré | Montinho Personal Trainer",
     description:
-      "O que define o melhor personal trainer em Tamboré? Método, experiência, resultados comprovados e presença exclusiva. Conheça o critério certo para escolher.",
+      "O que define o melhor personal trainer no Tamboré? Método, experiência, resultados comprovados e presença exclusiva. Conheça o critério certo para escolher.",
     url: `${SITE_URL}/melhor-personal-trainer-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Como identificar o melhor personal trainer em Tamboré?",
+    question: "Como identificar o melhor personal trainer no Tamboré?",
     answer:
       "Verifique a formação em Educação Física, a metodologia de trabalho, os resultados de alunos anteriores e a clareza com que o profissional explica as decisões de treino. O melhor personal trainer não é o que tem mais seguidores nas redes sociais — é o que entrega resultado consistente e explica o raciocínio por trás de cada escolha.",
   },
   {
-    question: "O melhor personal trainer em Tamboré é o mais caro?",
+    question: "O melhor personal trainer no Tamboré é o mais caro?",
     answer:
       "Preço alto não é sinônimo de qualidade — assim como preço baixo não é garantia de má qualidade. O que determina o valor de um personal trainer é o resultado que entrega, o método que aplica e a experiência que acumula. Profissionais experientes com histórico sólido cobram mais — e geralmente valem o investimento.",
   },
   {
-    question: "Qual a formação do melhor personal trainer em Tamboré?",
+    question: "Qual a formação do melhor personal trainer no Tamboré?",
     answer:
       "Graduação em Educação Física é o ponto de partida. Pós-graduação em áreas como fisiologia do exercício, musculação, reabilitação ou nutrição esportiva agrega. Mais importante ainda é a atualização constante — o conhecimento científico sobre treino evoluiu muito nos últimos anos e o profissional precisa acompanhar.",
   },
   {
-    question: "Melhor personal trainer em Tamboré atende online também?",
+    question: "Melhor personal trainer no Tamboré atende online também?",
     answer:
       "Sim. A qualidade do método não depende da modalidade — o que muda é o formato de acompanhamento. O modelo online exige protocolos bem estruturados, comunicação frequente e avaliações periódicas para compensar a ausência de presença física. Para alunos com agenda imprevisível, o modelo híbrido costuma ser o mais eficiente.",
   },
   {
-    question: "Como saber se estou com o personal trainer certo em Tamboré?",
+    question: "Como saber se estou com o personal trainer certo no Tamboré?",
     answer:
       "Você está com o profissional certo quando: o protocolo é montado especificamente para você (não adaptado de outro aluno), a execução é corrigida em todas as sessões, você entende o porquê de cada escolha de treino e, principalmente, quando os resultados aparecem de forma consistente ao longo do tempo.",
   },
@@ -54,7 +54,7 @@ const localSchema = {
   "@id": `${SITE_URL}/melhor-personal-trainer-tambore`,
   name: "Montinho – Personal Trainer Tamboré",
   description:
-    "Personal trainer com mais de 20 anos em Tamboré. Método baseado em ciência, protocolo individualizado e resultados comprovados.",
+    "Personal trainer com mais de 20 anos no Tamboré. Método baseado em ciência, protocolo individualizado e resultados comprovados.",
   url: `${SITE_URL}/melhor-personal-trainer-tambore`,
   telephone: "+5511981063409",
   areaServed: [
@@ -92,10 +92,10 @@ export default function MelhorPersonalTrainerTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Melhor personal trainer em Tamboré: o critério certo para escolher.
+            Melhor personal trainer no Tamboré: o critério certo para escolher.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            "Melhor" não é opinião — é resultado verificável. Mais de 20 anos em Tamboré e Alphaville, centenas de alunos atendidos e um método que entrega progressão real. Esse é o critério que importa na hora de escolher.
+            "Melhor" não é opinião — é resultado verificável. Mais de 20 anos no Tamboré e Alphaville, centenas de alunos atendidos e um método que entrega progressão real. Esse é o critério que importa na hora de escolher.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -118,7 +118,7 @@ export default function MelhorPersonalTrainerTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            O que separa um bom personal trainer dos demais em Tamboré.
+            O que separa um bom personal trainer dos demais no Tamboré.
           </h2>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light">
             <p>
@@ -128,7 +128,7 @@ export default function MelhorPersonalTrainerTambore() {
               Um personal trainer de qualidade faz perguntas antes de prescrever. Avalia postura, histórico de lesões, objetivos reais e disponibilidade de tempo antes de escrever uma única série. O protocolo que entrega é específico — não adaptado de outro aluno. E as sessões que conduz são exclusivas: atenção total, correção técnica em tempo real, sem divisão de foco.
             </p>
             <p>
-              Trabalho em Tamboré e Alphaville há mais de 20 anos. Meu método é construído sobre base científica atualizada, experiência prática acumulada e um histórico de resultados que pode ser verificado por alunos reais. Não tenho promessas de prazo impossível — tenho processo estruturado e progressão mensurável.
+              Trabalho no Tamboré e Alphaville há mais de 20 anos. Meu método é construído sobre base científica atualizada, experiência prática acumulada e um histórico de resultados que pode ser verificado por alunos reais. Não tenho promessas de prazo impossível — tenho processo estruturado e progressão mensurável.
             </p>
           </div>
           <div className="mt-10" style={{ maxWidth: "220px" }}>
@@ -153,7 +153,7 @@ export default function MelhorPersonalTrainerTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            O que encontrar em um personal trainer de referência em Tamboré
+            O que encontrar em um personal trainer de referência no Tamboré
           </h2>
           <ul className="space-y-4 mb-10">
             {[
@@ -192,7 +192,7 @@ export default function MelhorPersonalTrainerTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre como escolher personal trainer em Tamboré
+            Dúvidas sobre como escolher personal trainer no Tamboré
           </h2>
           <FAQ itens={faq} placement="melhor-personal-trainer-tambore" />
         </div>

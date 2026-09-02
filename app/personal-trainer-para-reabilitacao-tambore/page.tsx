@@ -8,41 +8,41 @@ import FAQ from "@/components/ui/FAQ";
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer para Reabilitação Tamboré | Montinho Personal Trainer" },
   description:
-    "Personal trainer para reabilitação em Tamboré. Retorno ao treino após lesão com segurança, progressão adequada e protocolo individualizado. Mais de 20 anos na região.",
+    "Personal trainer para reabilitação no Tamboré. Retorno ao treino após lesão com segurança, progressão adequada e protocolo individualizado. Mais de 20 anos na região.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-para-reabilitacao-tambore`,
   },
   openGraph: {
     title: "Personal Trainer para Reabilitação Tamboré | Montinho Personal Trainer",
     description:
-      "Retorno ao treino após lesão em Tamboré com protocolo seguro e individualizado. Personal trainer com experiência em reabilitação e recondiccionamento físico.",
+      "Retorno ao treino após lesão no Tamboré com protocolo seguro e individualizado. Personal trainer com experiência em reabilitação e recondiccionamento físico.",
     url: `${SITE_URL}/personal-trainer-para-reabilitacao-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Personal trainer pode atuar na reabilitação de lesões em Tamboré?",
+    question: "Personal trainer pode atuar na reabilitação de lesões no Tamboré?",
     answer:
       "O personal trainer atua no recondicionamento físico — a fase que vem após a reabilitação fisioterapêutica — e no suporte ao retorno ao treino de forma segura. Não substitui o fisioterapeuta nas fases agudas da lesão, mas é essencial para garantir que o retorno à atividade física seja gradual, supervisionado e sem risco de recorrência.",
   },
   {
-    question: "Quais lesões mais comuns personal trainer em Tamboré trabalha?",
+    question: "Quais lesões mais comuns personal trainer no Tamboré trabalha?",
     answer:
       "Lesões de joelho (menisco, ligamentos, condromalácia), ombro (manguito rotador, impingement), coluna lombar e cervical, quadril e tornozelo são as mais frequentes no meu atendimento. O trabalho é sempre baseado no laudo médico ou fisioterapêutico e adaptado às restrições de cada caso.",
   },
   {
-    question: "Como funciona o retorno ao treino após cirurgia com personal em Tamboré?",
+    question: "Como funciona o retorno ao treino após cirurgia com personal no Tamboré?",
     answer:
       "O processo começa com a liberação médica e o relatório de alta da fisioterapia. A partir daí, montamos um protocolo de recondicionamento progressivo: exercícios de baixo impacto, fortalecimento muscular ao redor da articulação comprometida e aumento gradual de carga conforme a resposta do corpo. Cada etapa é monitorada de perto.",
   },
   {
-    question: "Personal trainer em Tamboré trabalha junto com fisioterapeuta?",
+    question: "Personal trainer no Tamboré trabalha junto com fisioterapeuta?",
     answer:
       "Sempre que possível, sim. O trabalho integrado entre personal trainer e fisioterapeuta garante que a progressão do recondicionamento esteja alinhada com a evolução clínica do aluno. Em muitos casos, o fisioterapeuta libera atividades específicas que são incorporadas ao protocolo de treino.",
   },
   {
-    question: "Pessoa com dor crônica pode treinar com personal trainer em Tamboré?",
+    question: "Pessoa com dor crônica pode treinar com personal trainer no Tamboré?",
     answer:
       "Dor crônica não é impeditivo para o treino — na maioria dos casos, o treino de força bem prescrito é parte do tratamento. Condições como lombalgia crônica, artrose, tendinites e fibromialgia respondem bem ao treino supervisionado. O protocolo é montado em função das restrições e com progressão cuidadosa.",
   },
@@ -54,7 +54,7 @@ const localSchema = {
   "@id": `${SITE_URL}/personal-trainer-para-reabilitacao-tambore`,
   name: "Montinho Personal Trainer – Reabilitação Tamboré",
   description:
-    "Personal trainer para reabilitação e recondicionamento físico em Tamboré. Retorno ao treino após lesão com segurança e protocolo individualizado.",
+    "Personal trainer para reabilitação e recondicionamento físico no Tamboré. Retorno ao treino após lesão com segurança e protocolo individualizado.",
   url: `${SITE_URL}/personal-trainer-para-reabilitacao-tambore`,
   telephone: "+5511981063409",
   areaServed: [
@@ -92,10 +92,10 @@ export default function PersonalTrainerReabilitacaoTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal trainer para reabilitação em Tamboré: voltar a treinar com segurança.
+            Personal trainer para reabilitação no Tamboré: voltar a treinar com segurança.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Lesão não é o fim do treino — é um ponto de reconstrução. Com protocolo adaptado e progressão controlada em Tamboré, o retorno ao treino é feito com segurança e sem comprometer a recuperação.
+            Lesão não é o fim do treino — é um ponto de reconstrução. Com protocolo adaptado e progressão controlada no Tamboré, o retorno ao treino é feito com segurança e sem comprometer a recuperação.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -129,7 +129,7 @@ export default function PersonalTrainerReabilitacaoTambore() {
                 O trabalho de recondicionamento com personal trainer vai além de evitar o movimento que dói. Inclui identificar as causas biomecânicas da lesão, fortalecer os grupos musculares de suporte, reestabelecer padrões de movimento corretos e progredir a carga de forma que o corpo esteja preparado para o próximo estímulo antes de recebê-lo.
               </p>
               <p>
-                Trabalho com alunos em reabilitação em Tamboré há mais de 20 anos, em parceria com médicos e fisioterapeutas. O protocolo é sempre baseado no laudo clínico — não em suposições. Segurança não é cautela excessiva, é planejamento inteligente.
+                Trabalho com alunos em reabilitação no Tamboré há mais de 20 anos, em parceria com médicos e fisioterapeutas. O protocolo é sempre baseado no laudo clínico — não em suposições. Segurança não é cautela excessiva, é planejamento inteligente.
               </p>
             </div>
             <div className="flex-shrink-0 mx-auto sm:mx-0">
@@ -156,7 +156,7 @@ export default function PersonalTrainerReabilitacaoTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Como funciona o recondicionamento em Tamboré
+            Como funciona o recondicionamento no Tamboré
           </h2>
           <div className="space-y-8">
             {[
@@ -205,7 +205,7 @@ export default function PersonalTrainerReabilitacaoTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre personal trainer para reabilitação em Tamboré
+            Dúvidas sobre personal trainer para reabilitação no Tamboré
           </h2>
           <FAQ itens={faq} placement="personal-trainer-para-reabilitacao-tambore" />
         </div>

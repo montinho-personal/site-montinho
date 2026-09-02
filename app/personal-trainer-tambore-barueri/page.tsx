@@ -15,21 +15,21 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Personal Trainer Tamboré e Barueri | Montinho Personal Trainer",
     description:
-      "Personal trainer em Tamboré e Barueri com método científico e experiência local de mais de 20 anos. Protocolo individual, resultado duradouro.",
+      "Personal trainer no Tamboré e Barueri com método científico e experiência local de mais de 20 anos. Protocolo individual, resultado duradouro.",
     url: `${SITE_URL}/personal-trainer-tambore-barueri`,
   },
 };
 
 const faq = [
   {
-    question: "Personal trainer atende tanto em Tamboré quanto em Barueri?",
+    question: "Personal trainer atende tanto no Tamboré quanto em Barueri?",
     answer:
       "Sim. Atendo em toda a região — Tamboré, Alphaville, Barueri centro, Jardim Belval, Jardim Silveira e demais bairros próximos. A localização exata do atendimento é definida com base na conveniência do aluno, seja em academia parceira, condomínio ou domicílio.",
   },
   {
-    question: "Qual a diferença entre personal trainer em Tamboré e em Barueri?",
+    question: "Qual a diferença entre personal trainer no Tamboré e em Barueri?",
     answer:
-      "O serviço é o mesmo — protocolo individualizado, acompanhamento exclusivo e progressão estruturada. A diferença é geográfica: em Tamboré o perfil de atendimento costuma ser mais voltado a condomínios e academias de bairro residencial, enquanto em Barueri há mais academias comerciais e espaços corporativos. O protocolo é adaptado ao contexto de cada local.",
+      "O serviço é o mesmo — protocolo individualizado, acompanhamento exclusivo e progressão estruturada. A diferença é geográfica: no Tamboré o perfil de atendimento costuma ser mais voltado a condomínios e academias de bairro residencial, enquanto em Barueri há mais academias comerciais e espaços corporativos. O protocolo é adaptado ao contexto de cada local.",
   },
   {
     question: "Personal trainer em Barueri precisa de avaliação antes de começar?",
@@ -92,10 +92,10 @@ export default function PersonalTrainerTamboreBarueri() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal trainer em Tamboré e Barueri: 20 anos na região, um método que funciona.
+            Personal trainer no Tamboré e Barueri: 20 anos na região, um método que funciona.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Seja em Tamboré, Alphaville ou Barueri, o protocolo de treino precisa respeitar a realidade de quem vive aqui. Profissional com duas décadas na região conhece essa realidade melhor do que ninguém.
+            Seja no Tamboré, Alphaville ou Barueri, o protocolo de treino precisa respeitar a realidade de quem vive aqui. Profissional com duas décadas na região conhece essa realidade melhor do que ninguém.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -159,7 +159,7 @@ export default function PersonalTrainerTamboreBarueri() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Onde atendo em Tamboré, Barueri e região
+            Onde atendo no Tamboré, Barueri e região
           </h2>
           <div className="space-y-8">
             {[
@@ -208,7 +208,7 @@ export default function PersonalTrainerTamboreBarueri() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre personal trainer em Tamboré e Barueri
+            Dúvidas sobre personal trainer no Tamboré e Barueri
           </h2>
           <FAQ itens={faq} placement="personal-trainer-tambore-barueri" />
         </div>

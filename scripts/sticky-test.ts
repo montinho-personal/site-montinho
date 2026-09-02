@@ -17,6 +17,7 @@ import {
   LIMIARES,
   REGRAS,
   SUPRIMIDA,
+  emLocal,
   regraPorRota,
   resolve,
 } from "../lib/sticky/regras";
@@ -105,6 +106,22 @@ ok("exercício não aparece antes do sinal", REGRAS.exercicio({}).gatilho === "p
 /* O contexto entra na mensagem: exercício cita o artigo, local cita o lugar. */
 ok("exercício leva o título do artigo",
   decodeURIComponent(REGRAS.exercicio({ titulo: "Como Fazer Remada Curvada" }).href).includes("Como Fazer Remada Curvada"));
+/*
+ * A preposição acompanha o lugar. Tamboré leva artigo ("no Tamboré"), as
+ * outras cidades não. É a barra que a pessoa de Tamboré vê antes de clicar.
+ */
+ok("Tamboré leva artigo", emLocal("Tamboré") === "no Tamboré");
+for (const cidade of ["Barueri", "Alphaville", "Santana de Parnaíba"]) {
+  ok(`${cidade} não leva artigo`, emLocal(cidade) === `em ${cidade}`);
+}
+ok("a barra de Tamboré diz 'no Tamboré' no texto e na mensagem", (() => {
+  const r = REGRAS.local({ local: "Tamboré" });
+  return r.texto.includes("no Tamboré") && decodeURIComponent(r.href).includes("no Tamboré");
+})());
+ok("a barra de Barueri continua com 'em Barueri'", (() => {
+  const r = REGRAS.local({ local: "Barueri" });
+  return r.texto.includes("em Barueri") && decodeURIComponent(r.href).includes("em Barueri");
+})());
 ok("local leva o nome do lugar no texto e na mensagem",
   REGRAS.local({ local: "Barueri" }).texto.includes("Barueri") &&
   decodeURIComponent(REGRAS.local({ local: "Barueri" }).href).includes("Barueri"));

@@ -7,41 +7,41 @@ import FAQ from "@/components/ui/FAQ";
 export const metadata: Metadata = {
   title: { absolute: "Quanto Custa Personal Trainer Tamboré | Montinho Personal Trainer" },
   description:
-    "Quanto custa personal trainer em Tamboré? Entenda os fatores que influenciam o preço, o que está incluso no investimento e como comparar o custo com o resultado real.",
+    "Quanto custa personal trainer no Tamboré? Entenda os fatores que influenciam o preço, o que está incluso no investimento e como comparar o custo com o resultado real.",
   alternates: {
     canonical: `${SITE_URL}/quanto-custa-personal-trainer-tambore`,
   },
   openGraph: {
     title: "Quanto Custa Personal Trainer Tamboré | Montinho Personal Trainer",
     description:
-      "Transparência sobre o investimento em personal trainer em Tamboré. O que determina o preço, o que está incluso e como avaliar o custo-benefício real.",
+      "Transparência sobre o investimento em personal trainer no Tamboré. O que determina o preço, o que está incluso e como avaliar o custo-benefício real.",
     url: `${SITE_URL}/quanto-custa-personal-trainer-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Quanto custa personal trainer em Tamboré por mês?",
+    question: "Quanto custa personal trainer no Tamboré por mês?",
     answer:
       "O valor mensal varia conforme a modalidade (presencial em academia, domiciliar ou online), a frequência semanal (duas, três ou quatro sessões) e o profissional. Em Tamboré e Alphaville, o valor de mercado para personal trainer qualificado e experiente fica entre R$ 800 e R$ 2.500 por mês. O valor exato depende do pacote — e é apresentado com total transparência na primeira conversa.",
   },
   {
-    question: "Personal trainer mais barato em Tamboré vale a pena?",
+    question: "Personal trainer mais barato no Tamboré vale a pena?",
     answer:
       "Depende do que está por trás do preço. Um profissional jovem e recém-formado pode cobrar menos e entregar bom trabalho. Mas preço baixo também pode significar ausência de método, ficha genérica e sem reavaliação. Avalie o que está incluso: protocolo individualizado, presença exclusiva, correção técnica e reavaliação mensal — esses elementos são inegociáveis para resultado real.",
   },
   {
-    question: "Personal trainer domiciliar em Tamboré custa mais caro?",
+    question: "Personal trainer domiciliar no Tamboré custa mais caro?",
     answer:
       "Em geral, sim — o atendimento domiciliar inclui o deslocamento do profissional, o que é incorporado ao valor. A conveniência de treinar em casa ou na academia do condomínio sem sair do portão tem um custo a mais, mas para muitos alunos a economia de tempo no deslocamento até a academia justifica o investimento.",
   },
   {
-    question: "O que está incluso no preço do personal trainer em Tamboré?",
+    question: "O que está incluso no preço do personal trainer no Tamboré?",
     answer:
       "No meu atendimento, o valor inclui: avaliação física inicial, protocolo de treino individualizado, sessões com atenção exclusiva, suporte pelo WhatsApp entre as sessões e reavaliação mensal. Não há cobranças extras ou surpresas depois da contratação. O que é combinado na primeira conversa é o que está incluso.",
   },
   {
-    question: "Como saber se o preço do personal trainer em Tamboré é justo?",
+    question: "Como saber se o preço do personal trainer no Tamboré é justo?",
     answer:
       "Compare o que está incluso, não apenas o número. Um personal a R$ 600/mês que manda ficha genérica e não faz reavaliação é mais caro do que um a R$ 1.500/mês que entrega protocolo individual, presença exclusiva e resultado mensurável. O custo real do treino sem método é o tempo perdido sem progressão — e isso tem um valor muito alto.",
   },
@@ -53,7 +53,7 @@ const localSchema = {
   "@id": `${SITE_URL}/quanto-custa-personal-trainer-tambore`,
   name: "Montinho Personal Trainer – Tamboré",
   description:
-    "Personal trainer em Tamboré com preço transparente. Protocolo individualizado, presença exclusiva e resultado real.",
+    "Personal trainer no Tamboré com preço transparente. Protocolo individualizado, presença exclusiva e resultado real.",
   url: `${SITE_URL}/quanto-custa-personal-trainer-tambore`,
   telephone: "+5511981063409",
   areaServed: [
@@ -91,7 +91,7 @@ export default function QuantoCustaPersonalTrainerTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Quanto custa personal trainer em Tamboré — e o que você recebe por isso.
+            Quanto custa personal trainer no Tamboré — e o que você recebe por isso.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
             Preço sem contexto não informa nada. O que importa é o custo-benefício real: o que está incluso, o resultado que entrega e quanto tempo e dinheiro você economiza ao não tentar resolver sozinho.
@@ -117,14 +117,14 @@ export default function QuantoCustaPersonalTrainerTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            O que determina o preço do personal trainer em Tamboré.
+            O que determina o preço do personal trainer no Tamboré.
           </h2>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light">
             <p>
-              O valor de um personal trainer em Tamboré é influenciado por alguns fatores principais: a experiência e formação do profissional, a modalidade de atendimento (presencial em academia, domiciliar ou online), a frequência semanal de sessões e o que está incluso no pacote além das sessões em si.
+              O valor de um personal trainer no Tamboré é influenciado por alguns fatores principais: a experiência e formação do profissional, a modalidade de atendimento (presencial em academia, domiciliar ou online), a frequência semanal de sessões e o que está incluso no pacote além das sessões em si.
             </p>
             <p>
-              Profissionais com mais anos de experiência, especialização na área e histórico de resultados comprovados cobram mais — e isso é justificado. O custo do personal trainer experiente em Tamboré é superado pelo valor do resultado que entrega: menos tempo chegando ao objetivo, menos risco de lesão e progressão mais eficiente.
+              Profissionais com mais anos de experiência, especialização na área e histórico de resultados comprovados cobram mais — e isso é justificado. O custo do personal trainer experiente no Tamboré é superado pelo valor do resultado que entrega: menos tempo chegando ao objetivo, menos risco de lesão e progressão mais eficiente.
             </p>
             <p>
               Meu investimento é apresentado com total transparência na primeira conversa — sem letras miúdas, sem cobranças extras. O que é combinado é o que está incluso. O objetivo é que você tome uma decisão informada, não uma compra por impulso.
@@ -143,7 +143,7 @@ export default function QuantoCustaPersonalTrainerTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            O que está incluso no valor do meu atendimento em Tamboré
+            O que está incluso no valor do meu atendimento no Tamboré
           </h2>
           <div className="grid sm:grid-cols-2 gap-px border border-white/10">
             {[
@@ -198,7 +198,7 @@ export default function QuantoCustaPersonalTrainerTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre preço de personal trainer em Tamboré
+            Dúvidas sobre preço de personal trainer no Tamboré
           </h2>
           <FAQ itens={faq} placement="quanto-custa-personal-trainer-tambore" />
         </div>

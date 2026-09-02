@@ -8,41 +8,41 @@ import FAQ from "@/components/ui/FAQ";
 export const metadata: Metadata = {
   title: { absolute: "Treinador Particular Tamboré | Montinho Personal Trainer" },
   description:
-    "Treinador particular em Tamboré com mais de 20 anos na região. Atendimento exclusivo, protocolo individual e resultados comprovados. Presencial, a domicílio ou online.",
+    "Treinador particular no Tamboré com mais de 20 anos na região. Atendimento exclusivo, protocolo individual e resultados comprovados. Presencial, a domicílio ou online.",
   alternates: {
     canonical: `${SITE_URL}/treinador-particular-tambore`,
   },
   openGraph: {
     title: "Treinador Particular Tamboré | Montinho Personal Trainer",
     description:
-      "Treinador particular em Tamboré com método baseado em ciência. Protocolo 100% individual e acompanhamento de quem conhece a região há mais de 20 anos.",
+      "Treinador particular no Tamboré com método baseado em ciência. Protocolo 100% individual e acompanhamento de quem conhece a região há mais de 20 anos.",
     url: `${SITE_URL}/treinador-particular-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Qual a diferença entre treinador particular e personal trainer em Tamboré?",
+    question: "Qual a diferença entre treinador particular e personal trainer no Tamboré?",
     answer:
       "São essencialmente a mesma coisa. O termo 'treinador particular' é usado popularmente para descrever um profissional de educação física que atende de forma exclusiva e individualizada — o que corresponde exatamente à função do personal trainer. O que importa é a qualificação do profissional, o método aplicado e os resultados que entrega.",
   },
   {
-    question: "Treinador particular em Tamboré atende em academia ou a domicílio?",
+    question: "Treinador particular no Tamboré atende em academia ou a domicílio?",
     answer:
-      "Atendo nas duas modalidades. Em academia parceira ou do aluno em Tamboré e região, e a domicílio para quem prefere treinar em casa ou na academia do condomínio. A escolha é feita com base na sua preferência e na melhor opção para a sua rotina.",
+      "Atendo nas duas modalidades. Em academia parceira ou do aluno no Tamboré e região, e a domicílio para quem prefere treinar em casa ou na academia do condomínio. A escolha é feita com base na sua preferência e na melhor opção para a sua rotina.",
   },
   {
-    question: "Vale a pena contratar treinador particular em Tamboré?",
+    question: "Vale a pena contratar treinador particular no Tamboré?",
     answer:
       "Para quem quer resultado com eficiência — sem desperdício de tempo e sem risco de lesão — sim. O treinador particular garante que cada sessão seja produtiva, o protocolo seja adequado ao objetivo real e a progressão aconteça de forma estruturada. O custo do profissional é superado pelo valor do resultado que se obtém e do tempo que se poupa tentando acertar sozinho.",
   },
   {
-    question: "Treinador particular em Tamboré é indicado para quem já treina há anos?",
+    question: "Treinador particular no Tamboré é indicado para quem já treina há anos?",
     answer:
       "Especialmente para esse perfil. Quem treina há anos sem evolução geralmente está no platô — onde os estímulos já não são mais suficientes para gerar adaptação. Um treinador particular identifica o que precisa mudar, reestrutura o protocolo e retoma a progressão.",
   },
   {
-    question: "Como escolher um bom treinador particular em Tamboré?",
+    question: "Como escolher um bom treinador particular no Tamboré?",
     answer:
       "Pergunte sobre a metodologia de trabalho, entenda como os protocolos são montados e revisados, verifique resultados reais de alunos anteriores. Desconfie de quem promete resultados milagrosos em prazos irrealistas. Um bom treinador particular é transparente sobre o processo, tem resultados verificáveis e explica o raciocínio por trás de cada escolha de treino.",
   },
@@ -54,7 +54,7 @@ const localSchema = {
   "@id": `${SITE_URL}/treinador-particular-tambore`,
   name: "Montinho – Treinador Particular Tamboré",
   description:
-    "Treinador particular em Tamboré. Atendimento exclusivo e individualizado para emagrecimento, hipertrofia e qualidade de vida.",
+    "Treinador particular no Tamboré. Atendimento exclusivo e individualizado para emagrecimento, hipertrofia e qualidade de vida.",
   url: `${SITE_URL}/treinador-particular-tambore`,
   telephone: "+5511981063409",
   areaServed: [
@@ -92,10 +92,10 @@ export default function TreinadorParticularTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Treinador particular em Tamboré: atenção exclusiva, protocolo seu.
+            Treinador particular no Tamboré: atenção exclusiva, protocolo seu.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Ter um treinador particular em Tamboré significa ter alguém que conhece o seu objetivo, entende a sua rotina e monta um protocolo que funciona para você — não para uma pessoa genérica. É a diferença entre treinar e progredir.
+            Ter um treinador particular no Tamboré significa ter alguém que conhece o seu objetivo, entende a sua rotina e monta um protocolo que funciona para você — não para uma pessoa genérica. É a diferença entre treinar e progredir.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -126,7 +126,7 @@ export default function TreinadorParticularTambore() {
                 Antes de ser treinador, fui aluno frustrado. Convivi com o excesso de peso por anos, tentei métodos que prometiam resultado rápido e entregavam frustração, passei por academias onde ninguém me corrigia e fichas que eram as mesmas para todo mundo. Essa experiência — de dentro — é o que moldou minha forma de trabalhar.
               </p>
               <p>
-                Quando decidi entender de fato como o corpo funciona — metabolismo, fisiologia do exercício, nutrição aplicada — tudo mudou. Esse conhecimento foi aplicado primeiro em mim mesmo, depois em alunos em Tamboré e Alphaville ao longo de mais de 20 anos. Hoje sei o que funciona, o que não funciona e por que — e essa clareza é o que ofereço para cada aluno que me contrata.
+                Quando decidi entender de fato como o corpo funciona — metabolismo, fisiologia do exercício, nutrição aplicada — tudo mudou. Esse conhecimento foi aplicado primeiro em mim mesmo, depois em alunos no Tamboré e Alphaville ao longo de mais de 20 anos. Hoje sei o que funciona, o que não funciona e por que — e essa clareza é o que ofereço para cada aluno que me contrata.
               </p>
               <p>
                 Moro na região há mais de duas décadas. Conheço a rotina de Tamboré — o trânsito, os condomínios, os horários, as academias locais. Quando monto um protocolo, não estou imaginando um ambiente ideal. Estou pensando na realidade de quem vive aqui.
@@ -159,7 +159,7 @@ export default function TreinadorParticularTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            O que você recebe ao contratar um treinador particular em Tamboré
+            O que você recebe ao contratar um treinador particular no Tamboré
           </h2>
           <div className="grid sm:grid-cols-2 gap-px border border-white/10 mt-10">
             {[
@@ -214,7 +214,7 @@ export default function TreinadorParticularTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre treinador particular em Tamboré
+            Dúvidas sobre treinador particular no Tamboré
           </h2>
           <FAQ itens={faq} placement="treinador-particular-tambore" />
         </div>
@@ -245,7 +245,7 @@ export default function TreinadorParticularTambore() {
               href="/personal-trainer-tambore"
               className="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-8 py-4 text-base font-medium tracking-wide hover:border-white hover:bg-white/5 transition-all duration-200"
             >
-              Saiba mais sobre o atendimento em Tamboré
+              Saiba mais sobre o atendimento no Tamboré
             </Link>
           </div>
         </div>

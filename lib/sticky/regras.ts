@@ -94,11 +94,11 @@ export const REGRAS: Record<string, (c: Contexto) => Regra> = {
   local: (c) => ({
     id: "local",
     intencao: "contratar presencial",
-    texto: `Procura personal em ${c.local ?? "Alphaville"}?`,
+    texto: `Procura personal ${emLocal(c.local ?? "Alphaville")}?`,
     botao: "Falar no WhatsApp",
     destino: "whatsapp",
     href: z(
-      `Olá, Montinho! Vi sua página sobre personal trainer em ${c.local ?? "Alphaville"} e queria saber como funciona o atendimento.`,
+      `Olá, Montinho! Vi sua página sobre personal trainer ${emLocal(c.local ?? "Alphaville")} e queria saber como funciona o atendimento.`,
     ),
     gatilho: "cedo",
     prioridade: 1,
@@ -384,6 +384,20 @@ export const SUPRIMIDA: Array<{ padrao: RegExp; motivo: string }> = [
  * Nome legível do lugar a partir do pathname de uma página local do app.
  * Ordem importa: "tambore-barueri" é Tamboré e Barueri, e cai em Tamboré.
  */
+/**
+ * A preposição certa para cada lugar.
+ *
+ * Quem mora ali diz "no Tamboré", não "em Tamboré" — o bairro leva artigo
+ * masculino, como o Morumbi ou o Butantã. As outras cidades não levam
+ * artigo, então continuam com "em". Sem isto, a barra escreveria "Procura
+ * personal em Tamboré?" para justamente o público que mais percebe a
+ * diferença.
+ */
+const COM_ARTIGO = new Set(["Tamboré"]);
+export function emLocal(local: string): string {
+  return `${COM_ARTIGO.has(local) ? "no" : "em"} ${local}`;
+}
+
 export function localDoPathname(pathname: string): string | null {
   if (/tambore/.test(pathname)) return "Tamboré";
   if (/barueri/.test(pathname)) return "Barueri";

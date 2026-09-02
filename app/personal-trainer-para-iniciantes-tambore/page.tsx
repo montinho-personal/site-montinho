@@ -8,41 +8,41 @@ import FAQ from "@/components/ui/FAQ";
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer para Iniciantes Tamboré | Montinho Personal Trainer" },
   description:
-    "Personal trainer para iniciantes em Tamboré. Comece do zero com base técnica sólida, progressão segura e protocolo individualizado. Mais de 20 anos formando alunos iniciantes na região.",
+    "Personal trainer para iniciantes no Tamboré. Comece do zero com base técnica sólida, progressão segura e protocolo individualizado. Mais de 20 anos formando alunos iniciantes na região.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-para-iniciantes-tambore`,
   },
   openGraph: {
     title: "Personal Trainer para Iniciantes Tamboré | Montinho Personal Trainer",
     description:
-      "Começar do zero em Tamboré com acompanhamento profissional. Base técnica correta, progressão segura e protocolo que respeita o seu ponto de partida.",
+      "Começar do zero no Tamboré com acompanhamento profissional. Base técnica correta, progressão segura e protocolo que respeita o seu ponto de partida.",
     url: `${SITE_URL}/personal-trainer-para-iniciantes-tambore`,
   },
 };
 
 const faq = [
   {
-    question: "Personal trainer para iniciantes em Tamboré vale a pena desde o começo?",
+    question: "Personal trainer para iniciantes no Tamboré vale a pena desde o começo?",
     answer:
       "Especialmente desde o começo. O início do treino é quando os hábitos e padrões de movimento são formados. Começar com técnica correta, progressão adequada e protocolo individualizado acelera o resultado e evita lesões que podem comprometer meses de treino. Corrigir erros depois que viraram hábito é muito mais difícil.",
   },
   {
-    question: "Iniciante precisa de academia para começar com personal em Tamboré?",
+    question: "Iniciante precisa de academia para começar com personal no Tamboré?",
     answer:
       "Não necessariamente. Para iniciantes, o treinamento pode começar com equipamento básico — inclusive na academia do condomínio — e progredir conforme a capacidade física melhora. O protocolo é adaptado ao equipamento disponível, não o contrário.",
   },
   {
-    question: "Quantas vezes por semana iniciante deve treinar com personal em Tamboré?",
+    question: "Quantas vezes por semana iniciante deve treinar com personal no Tamboré?",
     answer:
       "Para iniciantes, duas a três sessões semanais são suficientes para progressão consistente. O corpo precisa de tempo de recuperação para se adaptar ao novo estímulo — e treinar mais do que o necessário no início pode gerar excesso de fadiga e desmotivação. A frequência aumenta conforme a adaptação avança.",
   },
   {
-    question: "Personal trainer em Tamboré atende iniciantes que nunca treinaram?",
+    question: "Personal trainer no Tamboré atende iniciantes que nunca treinaram?",
     answer:
       "Esse é um dos perfis mais frequentes no meu atendimento. Quem nunca treinou parte com uma vantagem: não tem padrões errados para corrigir. Com acompanhamento desde o início, a base técnica é construída corretamente — e a progressão acontece de forma mais rápida e segura do que para quem treinou anos sem orientação.",
   },
   {
-    question: "Quanto tempo um iniciante leva para ver resultado com personal em Tamboré?",
+    question: "Quanto tempo um iniciante leva para ver resultado com personal no Tamboré?",
     answer:
       "Para iniciantes, os primeiros sinais de melhora — mais disposição, sono melhor, roupas menos apertadas — costumam aparecer entre 3 e 6 semanas. Mudanças visíveis na composição corporal ficam evidentes a partir do segundo ou terceiro mês de protocolo consistente. A progressão inicial tende a ser mais rápida do que em alunos avançados.",
   },
@@ -54,7 +54,7 @@ const localSchema = {
   "@id": `${SITE_URL}/personal-trainer-para-iniciantes-tambore`,
   name: "Montinho Personal Trainer – Iniciantes Tamboré",
   description:
-    "Personal trainer para iniciantes em Tamboré. Base técnica correta, progressão segura e protocolo individualizado desde o primeiro dia.",
+    "Personal trainer para iniciantes no Tamboré. Base técnica correta, progressão segura e protocolo individualizado desde o primeiro dia.",
   url: `${SITE_URL}/personal-trainer-para-iniciantes-tambore`,
   telephone: "+5511981063409",
   areaServed: [
@@ -92,10 +92,10 @@ export default function PersonalTrainerIniciantesTambore() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal trainer para iniciantes em Tamboré: começar certo muda tudo.
+            Personal trainer para iniciantes no Tamboré: começar certo muda tudo.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            O início do treino é a fase mais importante — e a mais negligenciada. Com acompanhamento profissional desde o começo em Tamboré, você constrói base técnica sólida, evita lesões e progride mais rápido do que tentando sozinho.
+            O início do treino é a fase mais importante — e a mais negligenciada. Com acompanhamento profissional desde o começo no Tamboré, você constrói base técnica sólida, evita lesões e progride mais rápido do que tentando sozinho.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -123,7 +123,7 @@ export default function PersonalTrainerIniciantesTambore() {
           <div className="grid sm:grid-cols-[1fr_auto] gap-10 items-start">
             <div className="space-y-5 text-gray-300 leading-relaxed font-light">
               <p>
-                A maioria das pessoas que começa a treinar sozinha em Tamboré enfrenta o mesmo conjunto de problemas: execução incorreta dos exercícios, carga inadequada, progressão mal distribuída e ausência de avaliação. Resultado: estagnação rápida, desmotivação e, frequentemente, lesão.
+                A maioria das pessoas que começa a treinar sozinha no Tamboré enfrenta o mesmo conjunto de problemas: execução incorreta dos exercícios, carga inadequada, progressão mal distribuída e ausência de avaliação. Resultado: estagnação rápida, desmotivação e, frequentemente, lesão.
               </p>
               <p>
                 Com personal trainer, o iniciante começa de onde deve começar — não de onde acha que deve. A avaliação inicial define o ponto de partida real: histórico de saúde, limitações físicas, objetivos e rotina disponível. Com essa base, o protocolo é construído de forma progressiva, respeitando o ritmo de adaptação do corpo.
@@ -156,7 +156,7 @@ export default function PersonalTrainerIniciantesTambore() {
             className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Como funciona o processo para iniciantes em Tamboré
+            Como funciona o processo para iniciantes no Tamboré
           </h2>
           <div className="space-y-8">
             {[
@@ -205,7 +205,7 @@ export default function PersonalTrainerIniciantesTambore() {
             className="text-3xl font-bold text-white mb-10"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Dúvidas sobre personal trainer para iniciantes em Tamboré
+            Dúvidas sobre personal trainer para iniciantes no Tamboré
           </h2>
           <FAQ itens={faq} placement="personal-trainer-para-iniciantes-tambore" />
         </div>
