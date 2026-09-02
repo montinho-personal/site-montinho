@@ -22,14 +22,22 @@
  *
  * O CSV
  *
- * Search Console → Resultados da pesquisa → Exportar → CSV. O ZIP traz
- * "Páginas.csv" e "Consultas.csv". Os números vêm em pt-BR: milhar com ponto,
- * decimal com vírgula, CTR com %. Ler isso com Number() dá NaN silencioso, e
- * NaN em relatório é pior que erro — por isso o parse é explícito e qualquer
- * campo ilegível derruba a execução em vez de virar zero.
+ * Search Console → Resultados da pesquisa → Exportar. Serve tanto o .xlsx
+ * quanto o ZIP de CSVs, e a diferença entre os dois não é cosmética.
+ *
+ * O .xlsx guarda número como número: CTR 0,0249 e posição 11,46, cru. O CSV
+ * exporta em pt-BR: "1.234" impressões, "11,4" de posição, "1,23%" de CTR.
+ * Number("1.234") devolve 1,234 — mil vezes menos, sem erro nenhum. Por isso
+ * o .xlsx é o caminho preferido, e o parse do CSV recusa campo ilegível em
+ * vez de deixá-lo virar zero.
+ *
+ * O CTR também muda de escala entre os dois: fração no xlsx, percentual no
+ * CSV. Normalizar isso na entrada é obrigatório — 0,0249 lido como 2,49% e
+ * comparado com uma régua em percentual inverteria todo o diagnóstico.
  */
 
 import { readFileSync, existsSync } from "node:fs";
+import { leZip, leTextos, leePlanilha } from "./lib-xlsx";
 
 /** Bairros e cidades que o site atende. A ordem importa: o primeiro que casar nomeia o cluster. */
 export const CLUSTERS: Array<[string, RegExp]> = [
@@ -124,19 +132,53 @@ export function leGsc(texto: string, rotuloChave = "Página"): Linha[] {
   }));
 }
 
+/**
+ * Planilha do Search Console: aba "Páginas" ou "Consultas".
+ * Aqui não há parse de locale — o Excel guardou os números como números.
+ */
+export function leXlsx(caminho: string, aba: "Páginas" | "Consultas"): Linha[] {
+  const zip = leZip(caminho);
+  const textos = leTextos(zip.get("xl/sharedStrings.xml") ?? "");
+  const wb = zip.get("xl/workbook.xml") ?? "";
+  const nomes = [...wb.matchAll(/<sheet[^>]*name="([^"]+)"/g)].map((m) => m[1]);
+  const i = nomes.indexOf(aba);
+  if (i < 0) throw new Error(`A planilha não tem a aba "${aba}". Abas: ${nomes.join(" | ")}`);
+  const xml = zip.get(`xl/worksheets/sheet${i + 1}.xml`);
+  if (!xml) throw new Error(`Não achei a aba ${i + 1} dentro do arquivo.`);
+
+  const linhas = [...leePlanilha(xml, textos).entries()].sort((a, b) => a[0] - b[0]);
+  const saida: Linha[] = [];
+  for (const [n, cels] of linhas) {
+    if (n === 1) continue; /* cabeçalho */
+    const col = (c: string) => cels.get(c)?.texto ?? "";
+    const url = col("A").trim();
+    if (!url) continue;
+    const numero = (c: string) => {
+      const v = Number(col(c));
+      if (!Number.isFinite(v)) throw new Error(`Célula ${c}${n} ilegível: "${col(c)}"`);
+      return v;
+    };
+    /* CTR vem como fração (0,0249). A régua e o relatório trabalham em %. */
+    saida.push({ url, cliques: numero("B"), impressoes: numero("C"), ctr: numero("D") * 100, posicao: numero("E") });
+  }
+  return saida;
+}
+
 const arred = (n: number, c = 1) => Math.round(n * 10 ** c) / 10 ** c;
 const pad = (s: string | number, n: number) => String(s).padStart(n);
 
 function main() {
   const args = process.argv.slice(2);
   if (!args.length) {
-    console.error('Uso: npx tsx scripts/gsc-local.ts "Páginas.csv" ["Consultas.csv"]');
-    console.error("Search Console → Resultados da pesquisa → Exportar → CSV (o ZIP traz os dois).");
+    console.error("Uso: npx tsx scripts/gsc-local.ts <export do Search Console>");
+    console.error('  planilha:  npx tsx scripts/gsc-local.ts "PerformanceonSearch.xlsx"');
+    console.error('  csv:       npx tsx scripts/gsc-local.ts "Páginas.csv" ["Consultas.csv"]');
     process.exit(1);
   }
   for (const a of args) if (!existsSync(a)) { console.error(`Arquivo não encontrado: ${a}`); process.exit(1); }
 
-  const paginas = leGsc(readFileSync(args[0], "utf8"));
+  const ehXlsx = args[0].toLowerCase().endsWith(".xlsx");
+  const paginas = ehXlsx ? leXlsx(args[0], "Páginas") : leGsc(readFileSync(args[0], "utf8"));
   const locais = paginas.filter((p) => cluster(p.url));
   const totalCliques = paginas.reduce((s, p) => s + p.cliques, 0);
   const totalImpr = paginas.reduce((s, p) => s + p.impressoes, 0);
@@ -217,8 +259,11 @@ function main() {
   }
 
   // ─── 4. Consultas, se veio o segundo arquivo ──────────────────────────────
-  if (args[1]) {
-    const consultas = leGsc(readFileSync(args[1], "utf8"), "Consulta").filter((c) => cluster(c.url));
+  /* A planilha traz as duas abas no mesmo arquivo; o CSV precisa do segundo. */
+  const brutasConsultas = ehXlsx ? leXlsx(args[0], "Consultas")
+    : args[1] ? leGsc(readFileSync(args[1], "utf8"), "Consulta") : null;
+  if (brutasConsultas) {
+    const consultas = brutasConsultas.filter((c) => cluster(c.url));
     console.log("\n" + "-".repeat(96));
     console.log("4. BUSCAS LOCAIS — o que digitam para chegar aqui");
     console.log("-".repeat(96));

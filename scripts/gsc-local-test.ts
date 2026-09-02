@@ -13,7 +13,7 @@
  * Foi para não decidir conteúdo em cima disso que esta suíte existe.
  */
 
-import { num, csv, leGsc, cluster, ctrEsperado } from "./gsc-local";
+import { num, csv, leGsc, leXlsx, cluster, ctrEsperado } from "./gsc-local";
 
 let falhas = 0;
 function ok(nome: string, cond: boolean, detalhe = "") {
@@ -70,6 +70,51 @@ bloco("3. AS COLUNAS SÃO ACHADAS PELO NOME, NÃO PELA ORDEM");
   let erro = false;
   try { leGsc("Foo,Bar\n1,2\n"); } catch { erro = true; }
   ok("CSV que não é do GSC derruba com mensagem", erro);
+}
+
+// ─── 3b ─────────────────────────────────────────────────────────────────────
+bloco("3b. A PLANILHA, QUE É O CAMINHO PREFERIDO");
+
+/*
+ * O .xlsx guarda número como número — não há locale para errar. O que HÁ para
+ * errar é a escala do CTR: a planilha traz fração (0,0348) e a régua trabalha
+ * em percentual. Ler 0,0348 como 3,48% sem multiplicar faria toda página
+ * parecer cem vezes pior do que é, e o relatório mandaria reescrever títulos
+ * que estão bons.
+ *
+ * A fixture também tem a aba "Gráfico" na frente, como o export de verdade:
+ * pegar a aba por posição em vez de por nome leria a planilha errada.
+ */
+const FIX = "scripts/fixtures/gsc-exemplo.xlsx";
+{
+  const pgs = leXlsx(FIX, "Páginas");
+  ok("acha a aba Páginas pelo nome, não pela posição", pgs.length === 3);
+  const t = pgs.find((p) => p.url.endsWith("/personal-trainer-tambore"))!;
+  ok("cliques", t.cliques === 8);
+  ok("impressões", t.impressoes === 230);
+  ok("posição com decimal", t.posicao === 16.8);
+  ok("CTR vira percentual (0,0348 → 3,48)", Math.abs(t.ctr - 3.48) < 0.001, String(t.ctr));
+  ok("CTR não fica em fração", t.ctr > 1);
+
+  const qs = leXlsx(FIX, "Consultas");
+  ok("a aba Consultas sai do mesmo arquivo", qs.length === 2);
+  ok("consulta traz o texto da busca, não URL", qs[0].url === "personal trainer alphaville");
+  ok("CTR da consulta também em percentual", Math.abs(qs[0].ctr - 2.49) < 0.001);
+}
+{
+  let erro = false;
+  try { leXlsx(FIX, "Países" as "Páginas"); } catch { erro = true; }
+  ok("aba inexistente derruba com a lista de abas", erro);
+}
+/* A mesma régua precisa valer para os dois caminhos, senão o diagnóstico muda de formato. */
+{
+  const doXlsx = leXlsx(FIX, "Páginas").find((p) => p.url.endsWith("/personal-trainer-barueri"))!;
+  const [doCsv] = leGsc('Páginas principais,Cliques,Impressões,CTR,Posição\n'
+    + 'https://www.montinhopersonal.com.br/personal-trainer-barueri,5,256,"1,95%","14,3"\n');
+  ok("planilha e CSV chegam ao mesmo número",
+    doXlsx.cliques === doCsv.cliques && doXlsx.impressoes === doCsv.impressoes
+    && Math.abs(doXlsx.ctr - doCsv.ctr) < 0.01 && doXlsx.posicao === doCsv.posicao,
+    `xlsx ${doXlsx.ctr} × csv ${doCsv.ctr}`);
 }
 
 // ─── 4 ──────────────────────────────────────────────────────────────────────
