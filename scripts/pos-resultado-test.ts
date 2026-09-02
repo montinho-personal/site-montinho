@@ -242,6 +242,12 @@ for (const [arq, f] of INTEGRADAS) {
   ok(`${arq}: monta <PosResultado ferramenta="${f}">`, new RegExp(`<PosResultado[\\s\\S]{0,40}ferramenta="${f}"`).test(s));
   ok(`${arq}: não tem mais o link genérico para /consultoria`, !/href="\/consultoria"/.test(s));
 }
+/* Déficit e gasto já têm o passo "próxima" no resultado: o bloco não repete. */
+for (const arq of ["components/calorias/CalculadoraDeficit.tsx", "components/tdee/CalculadoraTDEE.tsx"]) {
+  ok(`${arq}: não duplica a próxima ferramenta (ocultaNoEstagio="proxima")`, /ocultaNoEstagio="proxima"/.test(readFileSync(arq, "utf8")));
+}
+ok("o componente respeita ocultaNoEstagio antes de medir", /if \(est === ocultaNoEstagio\) return;/.test(comp) && comp.indexOf("ocultaNoEstagio) return") < comp.indexOf('"post_tool_cta_view"'));
+ok("a exposição oculta ainda registra a conclusão", comp.indexOf("registraConclusao(ferramenta)") < comp.indexOf("ocultaNoEstagio) return"));
 ok("a variante a/b/c é estável por visitante (localStorage) e só muda a pergunta",
   /localStorage\.getItem\(CH_VARIANTE\)/.test(comp) && /VARIANTES_PERGUNTA/.test(lib));
 ok("as três variantes têm o mesmo destino e a mesma mensagem", (() => {

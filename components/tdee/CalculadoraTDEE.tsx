@@ -533,6 +533,7 @@ export default function CalculadoraTDEE({
               </div>
               <PosResultado
                 ferramenta="tdee"
+                ocultaNoEstagio="proxima"
                 resumo={`gasto estimado de ≈ ${formataFaixa(tdee)} kcal/dia`}
                 placement={placement}
                 aoContinuar={() => {

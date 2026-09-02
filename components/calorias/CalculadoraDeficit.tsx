@@ -666,6 +666,7 @@ export default function CalculadoraDeficit({
               {/* Próximo passo — só depois de todo o resultado entregue */}
               <PosResultado
                 ferramenta="deficit"
+                ocultaNoEstagio="proxima"
                 categoria={faixaSel}
                 resumo={(() => {
                   const f = FAIXAS_DEFICIT.find((x) => x.id === faixaSel);

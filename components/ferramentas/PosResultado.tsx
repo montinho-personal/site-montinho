@@ -6,7 +6,6 @@ import { trackEvent } from "@/lib/analytics";
 import {
   anterior,
   estagio,
-  leHistorico,
   registraConclusao,
   registraWhatsapp,
   type Estagio,
@@ -46,6 +45,13 @@ interface Props {
    * para o bloco novo não perder o comportamento que a ferramenta já tinha.
    */
   aoContinuar?: () => void;
+  /**
+   * Ferramentas que JÁ têm o passo "próxima" no próprio resultado (déficit
+   * com a meta preenchida, gasto com os três objetivos) não repetem a mesma
+   * ação num segundo bloco. Nesse estágio o bloco não monta e não conta
+   * exposição — mas a conclusão entra no histórico do mesmo jeito.
+   */
+  ocultaNoEstagio?: Estagio;
 }
 
 const CH_VARIANTE = "montinho:ab:pos-ferramenta";
@@ -73,7 +79,7 @@ interface Montado {
 
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 
-export default function PosResultado({ ferramenta, categoria = "padrao", resumo = null, placement, aoContinuar }: Props) {
+export default function PosResultado({ ferramenta, categoria = "padrao", resumo = null, placement, aoContinuar, ocultaNoEstagio }: Props) {
   const [m, setM] = useState<Montado | null>(null);
 
   /*
@@ -85,6 +91,7 @@ export default function PosResultado({ ferramenta, categoria = "padrao", resumo 
     const id = requestAnimationFrame(() => {
       const antes = registraConclusao(ferramenta);
       const est = estagio(antes, ferramenta);
+      if (est === ocultaNoEstagio) return;
       const v = variante();
       const bloco = blocoPosResultado(ferramenta, categoria, est, v, resumo);
       const params = {
@@ -109,7 +116,7 @@ export default function PosResultado({ ferramenta, categoria = "padrao", resumo 
       }
     });
     return () => cancelAnimationFrame(id);
-  }, [ferramenta, categoria, resumo, placement]);
+  }, [ferramenta, categoria, resumo, placement, ocultaNoEstagio]);
 
   if (!m) return null;
   const { bloco, params } = m;
