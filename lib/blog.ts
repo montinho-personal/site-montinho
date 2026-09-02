@@ -32547,8 +32547,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
   slug: "quantos-kg-perder-por-mes",
   title: "Quantos kg Perder por Mês? A Taxa Ideal de Emagrecimento",
-  metaTitle: "Quantos kg Perder por Mês? Entre 2 e 4 kg",
-  metaDescription: "A faixa segura é 0,5 a 1% do peso por semana, o que dá um déficit de 300 a 700 kcal por dia. Veja quem pode acelerar e o que se perde indo rápido demais.",
+  metaTitle: "Quantos kg Perder por Mês? 2 a 4 kg — e Quem Pode Mais",
+  metaDescription: "A faixa segura é 0,5 a 1% do peso por semana — um déficit de 300 a 700 kcal por dia. Veja o que o corpo cobra de quem tenta ir mais rápido que isso.",
   excerpt: "Perder peso rápido parece bom — mas pode significar perder músculo, desacelerar o metabolismo e recuperar tudo depois. Saiba qual é a taxa ideal de emagrecimento e por que ela importa.",
   category: "Emagrecimento",
   date: "2026-06-27",
@@ -100186,9 +100186,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "quanto-tempo-de-caminhada-por-dia",
     title: "Quanto Tempo de Caminhada Por Dia Para Emagrecer?",
-    metaTitle: "Quanto Tempo de Caminhada por Dia? 30 a 60 Minutos",
+    metaTitle: "Quanto Tempo de Caminhada por Dia? 30 a 60 Min, com um Porém",
     metaDescription:
-      "Meia hora queima de 130 a 180 kcal; uma hora, de 250 a 350. Veja a faixa por objetivo, quando contar passos em vez de minutos e por onde progredir.",
+      "Meia hora queima de 130 a 180 kcal — e um pão de queijo devolve tudo. Veja a faixa por objetivo, quando contar passos e por onde progredir depois.",
     excerpt:
       "A dose prática fica entre 30 e 60 minutos por dia — mas o que decide o emagrecimento é o déficit calórico. Veja quanto a caminhada gasta de verdade, como usar os passos a seu favor e por que ela é porta de entrada, não teto.",
     category: "Emagrecimento",
@@ -100314,9 +100314,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "quantas-calorias-tem-1kg-de-gordura",
     title: "Quantas Calorias Tem 1kg de Gordura? A Matemática do Emagrecimento",
-    metaTitle: "Quantas Calorias Tem 1 kg de Gordura? São 7.700 kcal",
+    metaTitle: "1 kg de Gordura São 7.700 kcal — Mas a Balança Não Obedece",
     metaDescription:
-      "De onde vem o número, como transformá-lo em meta semanal de peso e por que a balança demora a obedecer à conta nas primeiras semanas de dieta.",
+      "A régua funciona no papel, mas o corpo não é calculadora. Veja como virar meta semanal, por que os primeiros quilos desmentem a conta e onde ela falha.",
     excerpt:
       "1kg de gordura corporal armazena cerca de 7.700 kcal. Esse número é uma régua poderosa para planejar sua perda de peso — desde que você entenda onde a conta funciona e onde o corpo insiste em não ser calculadora.",
     category: "Emagrecimento",
