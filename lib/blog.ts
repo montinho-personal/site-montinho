@@ -63,6 +63,31 @@ export function getPostCoverImage(post: BlogPost): {
   return { url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 };
 }
 
+/**
+ * Todas as imagens que o artigo realmente exibe, na ordem em que aparecem.
+ *
+ * Lê o HTML do próprio artigo, e é essa a diferença que importa: a versão
+ * anterior do sitemap de imagens adivinhava por convenção de nome de arquivo
+ * e acabou declarando 373 infográficos que não estão em página nenhuma.
+ * Imagem que o Google não encontra na página não deveria ser anunciada como
+ * se estivesse lá.
+ *
+ * Inclui SVG. Infográfico é conteúdo do artigo tanto quanto a foto — quem
+ * exclui SVG é o og:image, por causa de Facebook e WhatsApp, não o sitemap.
+ */
+export function imagensDoArtigo(post: BlogPost): string[] {
+  const tags = post.content.match(/<img[^>]*\ssrc="\/blog-images\/[^"]+"[^>]*>/g) ?? [];
+  const vistas = new Set<string>();
+  const saida: string[] = [];
+  for (const tag of tags) {
+    const src = tag.match(/\ssrc="(\/blog-images\/[^"]+)"/)?.[1];
+    if (!src || vistas.has(src)) continue;
+    vistas.add(src);
+    saida.push(`${SITE_URL}${src}`);
+  }
+  return saida;
+}
+
 export const BLOG_CATEGORIES = [
   "Todos",
   "Emagrecimento",
