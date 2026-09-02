@@ -1360,9 +1360,9 @@ export const blogPosts = ([
   {
     slug: "quanto-tempo-dura-um-treino",
     title: "Quanto Tempo Deve Durar um Treino? A Resposta Que Ninguém Te Dá",
-    metaTitle: "Quanto Tempo Deve Durar um Treino Ideal?",
+    metaTitle: "Quanto Tempo Deve Durar um Treino? 45 a 60 Minutos",
     metaDescription:
-      "Treinos longos são melhores? Existe um tempo ideal? Descubra quanto tempo deve durar um treino de musculação para hipertrofia, emagrecimento e saúde —...",
+      "Depois de 60 a 90 minutos intensos o cortisol sobe e o rendimento cai. Veja a duração por objetivo, o descanso entre séries e onde o tempo some no treino.",
     excerpt:
       "Mais tempo na academia não significa mais resultado. Descubra qual é a duração ideal de treino, o que a fisiologia diz sobre treinos longos — e o que realmente está desperdiçando o seu tempo.",
     category: "Treinamento",
@@ -10396,9 +10396,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "whey-protein-para-quem-usa-mounjaro",
     title: "Whey Protein Para Quem Usa Mounjaro: Quando e Como Usar",
-    metaTitle: "Whey Protein Para Quem Usa Mounjaro: Quando e Como Usar",
+    metaTitle: "Whey Protein e Mounjaro: Quando Tomar e Como Evitar Náusea",
     metaDescription:
-      "Com o Mounjaro suprimindo o apetite, o whey protein vira aliado estratégico para bater a meta de proteína. Veja quando usar, quanto tomar e como evitar náuseas.",
+      "Uma dose de 30 g entrega cerca de 25 g de proteína — mais que 100 g de frango, em muito menos volume. Veja o melhor momento e o que corta o enjoo.",
     excerpt:
       "Quando o Mounjaro tira toda a sua fome, comer proteína suficiente vira um desafio real. O whey protein é a solução mais prática — mas há forma certa de usar. Veja quando, quanto e como.",
     category: "Saúde",
@@ -23789,8 +23789,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "balanca-nao-muda-mas-o-corpo-muda",
     title: "Por Que a Balança Não Muda Mas o Corpo Está Mudando?",
-    metaTitle: "Por Que a Balança Não Muda Mas o Corpo Está Mudando?",
-    metaDescription: "Treina há semanas, a roupa está folgando, mas o peso na balança é o mesmo? Entenda o que está acontecendo com sua composição corporal e por que a balança mente.",
+    metaTitle: "Por Que a Balança Não Muda Mas a Roupa Está Folgando",
+    metaDescription: "Perder 2 kg de gordura e ganhar 2 kg de músculo dá o mesmo peso e 4 kg de diferença no corpo. Veja como medir progresso sem depender só da balança.",
     excerpt: "A balança parou mas as roupas estão mais folgadas. Você não regrediu — você está progredindo de um jeito que a balança não consegue mostrar.",
     category: "Emagrecimento",
     date: "2026-06-27",
@@ -32547,8 +32547,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
   slug: "quantos-kg-perder-por-mes",
   title: "Quantos kg Perder por Mês? A Taxa Ideal de Emagrecimento",
-  metaTitle: "Quantos kg Perder por Mês? Taxa Ideal de Emagrecimento…",
-  metaDescription: "Qual é a taxa ideal de perda de peso por mês? Entenda o que é saudável, por que mais rápido não é melhor e como calcular sua meta realista de emagrecimento.",
+  metaTitle: "Quantos kg Perder por Mês? Entre 2 e 4 kg",
+  metaDescription: "A faixa segura é 0,5 a 1% do peso por semana, o que dá um déficit de 300 a 700 kcal por dia. Veja quem pode acelerar e o que se perde indo rápido demais.",
   excerpt: "Perder peso rápido parece bom — mas pode significar perder músculo, desacelerar o metabolismo e recuperar tudo depois. Saiba qual é a taxa ideal de emagrecimento e por que ela importa.",
   category: "Emagrecimento",
   date: "2026-06-27",
@@ -59001,8 +59001,8 @@ Trabalho com hardgainers há mais de 20 anos em Alphaville. Se você quer um pro
   {
     slug: "frutas-antes-do-treino",
     title: "Frutas Antes do Treino: Quais Comer e em Que Quantidade",
-    metaTitle: "Frutas Antes do Treino: Quais e Quanto Comer",
-    metaDescription: "Frutas são boas antes do treino? Saiba quais frutas escolher, em que quantidade e quando consumir para maximizar energia e desempenho na musculação.",
+    metaTitle: "Frutas Antes do Treino: Quais Comer e Quanto Tempo Antes",
+    metaDescription: "Banana, uva e melancia caem bem 30 a 45 minutos antes; maçã e pera pedem de 60 a 90. Veja a porção certa e o que combinar para o treino render mais.",
     excerpt: "Banana, maçã, tâmara, manga — as frutas têm açúcares naturais ideais para o pré-treino. Mas não é qualquer fruta, qualquer hora ou qualquer quantidade.",
     category: "Treinamento",
     date: "2026-06-28",
@@ -69879,8 +69879,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
   {
     slug: "como-voltar-academia-depois-de-parado",
     title: "Como Voltar para a Academia Depois de Meses Parado",
-    metaTitle: "Como Voltar para a Academia Depois de Meses Parado",
-    metaDescription: "Saiba como voltar para a academia depois de meses parado sem lesão, sem frustração e com progresso rápido. Protocolo seguro para recomeçar.",
+    metaTitle: "Como Voltar à Academia Depois de Parado em 4 a 8 Semanas",
+    metaDescription: "A memória muscular faz o trabalho pesado: quem já treinou recupera a força em 4 a 8 semanas. Comece com 30 a 40% menos carga — é aí que mora a lesão.",
     excerpt: "Voltar para a academia depois de um período longo parado não é recomeçar do zero — é recomeçar com experiência. Saiba como fazer isso da forma certa.",
     category: "Treinamento",
     date: "2026-07-01",
@@ -81048,8 +81048,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "bluefit-alphaville",
     title: "Bluefit Alphaville: Análise Completa",
-    metaTitle: "Bluefit Alphaville: Vale a Pena? Análise Completa",
-    metaDescription: "Bluefit em Alphaville: prós, contras e para quem o modelo low cost funciona. Análise honesta de quem atende na região. Confira antes de assinar.",
+    metaTitle: "Bluefit Alphaville Vale a Pena? Prós e Contras por Perfil",
+    metaDescription: "Estrutura, lotação e o que o modelo econômico não inclui. Para quem treina sozinho compensa; para quem precisa de acompanhamento, o cálculo muda de figura.",
     excerpt: "A Bluefit aposta no modelo econômico com estrutura ampla. Veja para quem ela é indicada em Alphaville e como tirar resultado de verdade da mensalidade.",
     category: "Academias",
     date: "2026-07-02",
@@ -90837,9 +90837,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "musculacao-apos-60-anos",
     title: "Musculação Depois dos 60 Anos: Guia Para Começar com Segurança",
-    metaTitle: "Musculação Depois dos 60 Anos: Guia Para Começar",
+    metaTitle: "Musculação Depois dos 60 Anos: as 8 Primeiras Semanas",
     metaDescription:
-      "Guia completo de musculação após os 60 anos: benefícios comprovados, como começar do zero com segurança, frequência ideal, cuidados com articulações e proteína.",
+      "Se funciona aos 90, funciona aos 60. Veja como começar do zero com segurança, que carga usar de verdade e por que treinar “levinho” para sempre atrasa tudo.",
     excerpt:
       "Depois dos 60, a musculação deixa de ser estética e vira medicina preventiva: força, ossos, equilíbrio e independência. Veja como começar do zero com segurança, mesmo sem nunca ter pisado numa academia.",
     category: "Saúde",
@@ -98733,9 +98733,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "cerveja-engorda",
     title: "Cerveja Engorda? A Verdade Sobre a Barriga de Chope",
-    metaTitle: "Cerveja Engorda? A Verdade Sobre a Barriga de Chope",
+    metaTitle: "Cerveja Engorda? 140 a 150 kcal por Lata de 350 ml",
     metaDescription:
-      "Cerveja engorda? Entenda as calorias do álcool, por que a barriga de chope aparece de verdade e como beber com moderação sem sabotar o emagrecimento.",
+      "A lata comum tem 140 a 150 kcal e a zero, de 60 a 90. Só que o vilão costuma ser o petisco que vem junto. Veja como beber sem sair do déficit.",
     excerpt:
       "A cerveja tem calorias reais e o contexto em que ela aparece costuma pesar ainda mais. Entenda o que de fato causa a famosa barriga de chope e como encaixar a cerveja na vida real sem travar o emagrecimento.",
     category: "Nutrição",
@@ -99178,9 +99178,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "natacao-emagrece",
     title: "Natação Emagrece? Calorias, Prós e Contras",
-    metaTitle: "Natação Emagrece? Calorias, Prós e Contras",
+    metaTitle: "Natação Emagrece? 400 a 900 kcal por Hora de Nado",
     metaDescription:
-      "Natação emagrece? Veja o gasto calórico real, os prós do baixo impacto, as nuances da fome pós-piscina e por que combinar natação com treino de força.",
+      "O crawl moderado gasta de 550 a 700 kcal por hora, perto da corrida e sem impacto. Veja a fome que vem depois e por que a piscina pede força junto.",
     excerpt:
       "A natação é um dos melhores aeróbicos de baixo impacto que existem, com gasto calórico alto. Mas a fome pós-piscina e a ausência de sobrecarga óssea são nuances que você precisa conhecer antes de apostar tudo nela.",
     category: "Treino",
