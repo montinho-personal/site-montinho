@@ -6,6 +6,7 @@ import { ORDEM_LEVE, type AlimentoLeve } from "@/lib/alimentos/indice";
 import { AVISO_NAO_SUBSTITUI, AVISO_VARIACAO, FONTES } from "@/lib/alimentos/fontes";
 import BuscaAlimentos from "@/components/alimentos/BuscaAlimentos";
 import Descoberta from "@/components/alimentos/Descoberta";
+import LinksCalculadoras from "@/components/alimentos/LinksCalculadoras";
 
 /**
  * A central do buscador nutricional.
@@ -197,20 +198,7 @@ export default function AlimentosPage() {
             Esta tabela responde o que TEM no alimento. Quanto você precisa por dia é outra conta — e ela tem
             calculadora própria.
           </p>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href="/ferramentas/calculadora-de-proteina"
-              className="border border-white/25 text-gray-200 px-6 py-3.5 text-[15px] font-medium min-h-[52px] flex items-center hover:border-white/50 transition-colors"
-            >
-              Calculadora de proteína
-            </Link>
-            <Link
-              href="/ferramentas/calculadora-macros"
-              className="border border-white/25 text-gray-200 px-6 py-3.5 text-[15px] font-medium min-h-[52px] flex items-center hover:border-white/50 transition-colors"
-            >
-              Calculadora de macros
-            </Link>
-          </div>
+            <LinksCalculadoras placement="tabela-alimentos" />
         </div>
       </section>
     </>

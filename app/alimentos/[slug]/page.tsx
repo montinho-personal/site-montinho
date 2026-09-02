@@ -9,6 +9,7 @@ import { formataNumero, formataValor, escalaValor } from "@/lib/alimentos/escala
 import SeletorQuantidade from "@/components/alimentos/SeletorQuantidade";
 import QuantoPreciso from "@/components/alimentos/QuantoPreciso";
 import LinkComparar from "@/components/alimentos/LinkComparar";
+import LinksCalculadoras from "@/components/alimentos/LinksCalculadoras";
 
 /**
  * Página de um alimento.
@@ -248,20 +249,7 @@ export default async function AlimentoPage({ params }: { params: Promise<{ slug:
             <p className="text-gray-300 leading-relaxed mb-5">
               Esta página diz o que tem no alimento. Quanto você precisa é outra conta.
             </p>
-            <div className="flex flex-wrap gap-3">
-              <Link
-                href="/ferramentas/calculadora-de-proteina"
-                className="border border-white/25 text-gray-200 px-6 py-3.5 text-[15px] font-medium min-h-[52px] flex items-center hover:border-white/50 transition-colors"
-              >
-                Calculadora de proteína
-              </Link>
-              <Link
-                href="/ferramentas/calculadora-macros"
-                className="border border-white/25 text-gray-200 px-6 py-3.5 text-[15px] font-medium min-h-[52px] flex items-center hover:border-white/50 transition-colors"
-              >
-                Calculadora de macros
-              </Link>
-            </div>
+              <LinksCalculadoras placement="alimento" />
           </div>
         </div>
       </section>

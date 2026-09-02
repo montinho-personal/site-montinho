@@ -4,6 +4,7 @@ import { SITE_URL } from "@/lib/blog";
 import { revisaoWhatsAppUrl } from "@/lib/revisao";
 import RevisaoCTA from "@/components/revisao/RevisaoCTA";
 import Trilha from "@/components/ferramentas/Trilha";
+import VistaMedida from "@/components/ui/VistaMedida";
 
 export const metadata: Metadata = {
   title: "Revisão Gratuita de Execução de Exercícios",
@@ -58,6 +59,7 @@ export default function RevisaoDeExecucaoPage() {
 
   return (
     <>
+      <VistaMedida evento="execution_review_view" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 

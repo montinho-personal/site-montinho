@@ -64,6 +64,10 @@ export default function AcademiaQuiz() {
    * conteúdo que vem depois dele.
    */
   const raiz = useRef<HTMLDivElement>(null);
+  /* O denominador do quiz: sem ele, "12 pessoas concluíram" não vira taxa. */
+  useEffect(() => {
+    trackOncePerSession("gym_finder_view");
+  }, []);
   const primeiraAncora = useRef(true);
   useEffect(() => {
     if (primeiraAncora.current) {

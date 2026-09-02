@@ -132,11 +132,15 @@ ok("o texto da pergunta não é só ícone", /\{item\.question\}/.test(compSC));
 bloco("5. MEDIÇÃO: SÓ ABERTURA, SÓ CONTEÚDO NOSSO");
 
 ok("faq_open declarado e disparado", analytics.includes(`"faq_open"`) && compSC.includes(`"faq_open"`));
+ok("faq_view declarado e disparado (o denominador do FAQ)",
+  analytics.includes(`"faq_view"`) && compSC.includes(`"faq_view"`));
+ok("faq_view conta uma vez por página por sessão", /CH_VISTO \+ placement/.test(compSC));
 ok("só a abertura conta, não o fechamento", /\.open\)/.test(compSC) && !/faq_close/.test(compSC));
 {
   const chamadas = compSC.match(/trackEvent\([\s\S]*?\);/g) ?? [];
-  ok("o evento leva placement e a pergunta, nada mais",
-    chamadas.length === 1 && /placement/.test(chamadas[0]) && /pergunta: item\.question/.test(chamadas[0]));
+  ok("os eventos levam placement, e a abertura leva a pergunta",
+    chamadas.length === 2 && chamadas.every((c) => /placement/.test(c)) &&
+    chamadas.some((c) => /pergunta: item\.question/.test(c)));
   ok("nenhum dado de quem leu no evento",
     chamadas.every((c) => !/peso|kcal|idade|sexo|altura|email|nome|telefone|referrer|utm_source|href|url/i.test(c)));
 }
