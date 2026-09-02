@@ -493,4 +493,6 @@ export const ARTIGOS_COM_LINK_VOLUME: string[] = [
   "treino-de-costas-hipertrofia",
   "treino-de-perna-completo",
   "treino-de-gluteos-feminino",
+  /* Termina em "3 séries no fim do treino de peito": a pergunta que sobra é quantas séries de peito cabem na semana. */
+  "como-fazer-cross-over-com-halteres",
 ];

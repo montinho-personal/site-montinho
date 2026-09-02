@@ -143,4 +143,11 @@ export const ARTIGOS_COM_CALCULADORA_TDEE: string[] = [
   "metabolismo-lento-existe",
   "como-acelerar-o-metabolismo",
   "neat-gasto-calorico-diario",
+  /**
+   * O leitor sai com "500 polichinelos = 90 kcal" e a pergunta seguinte é
+   * "quanto isso pesa no meu dia". Só o gasto diário responde: 90 kcal é 4%
+   * de 2.400. O registro de déficit está no teto de oito; este é o encaixe
+   * certo, não o que sobrou.
+   */
+  "polichinelo-queima-quantas-calorias",
 ];
