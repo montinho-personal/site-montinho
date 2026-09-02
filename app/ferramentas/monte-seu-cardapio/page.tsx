@@ -5,6 +5,7 @@ import { ALIMENTOS_CARDAPIO } from "@/lib/cardapio/alimentos";
 import { PERFIS_REFEICAO, TOLERANCIA_KCAL } from "@/lib/cardapio/motor";
 import MonteSeuCardapio from "@/components/cardapio/MonteSeuCardapio";
 import Trilha from "@/components/ferramentas/Trilha";
+import FAQ from "@/components/ui/FAQ";
 
 /**
  * Montinho FitChef (Monte seu Cardápio) — página própria. O nome é FitChef;
@@ -212,14 +213,7 @@ export default function MonteSeuCardapioPage() {
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>
               Perguntas frequentes
             </h2>
-            <div className="space-y-5">
-              {FAQ_EDITORIAL.map((f) => (
-                <div key={f.pergunta}>
-                  <h3 className="text-white font-semibold mb-1.5">{f.pergunta}</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">{f.resposta}</p>
-                </div>
-              ))}
-            </div>
+            <FAQ itens={FAQ_EDITORIAL.map((f) => ({ question: f.pergunta, answer: f.resposta }))} placement="monte-seu-cardapio" />
           </div>
 
           <div>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import SectionTitle from "@/components/ui/SectionTitle";
-import FAQAccordion from "@/components/ui/FAQAccordion";
+import FAQ from "@/components/ui/FAQ";
 import { SITE_URL } from "@/lib/blog";
 
 export const metadata: Metadata = {
@@ -110,7 +110,7 @@ const breadcrumbSchema = {
   ],
 };
 
-export default function FAQ() {
+export default function PaginaFAQ() {
   return (
     <>
       <script
@@ -136,7 +136,7 @@ export default function FAQ() {
       {/* FAQ */}
       <section className="py-16 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FAQAccordion items={faqs} />
+          <FAQ itens={faqs} placement="faq" />
         </div>
       </section>
 
