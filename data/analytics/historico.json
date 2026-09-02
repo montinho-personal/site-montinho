@@ -20,7 +20,10 @@
    "cliquesWhatsapp": 218,
    "usuariosWhatsapp": 189,
    "taxaWhatsapp": 8.6,
-   "conversoes": 243
+   "conversoes": 243,
+   "leads": 79,
+   "taxaEnvio": 41.8,
+   "visitanteParaLead": 3.6
   },
   "blog": {
    "artigos": 488,

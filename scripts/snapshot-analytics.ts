@@ -68,7 +68,18 @@ interface Snapshot {
   periodo: { inicio: string; fim: string; dias: number };
   publico: { usuarios: number; visualizacoes: number; usuariosPorDia: number; paginasPorUsuario: number };
   engajamento: { engajados: number; scroll75: number; artigoLido: number };
-  conversa: { cliquesWhatsapp: number; usuariosWhatsapp: number; taxaWhatsapp: number; conversoes: number };
+  conversa: {
+    cliquesWhatsapp: number;
+    usuariosWhatsapp: number;
+    taxaWhatsapp: number;
+    conversoes: number;
+    /** Conversas que realmente chegaram. null quando o Montinho não informou. */
+    leads: number | null;
+    /** De quem abriu o WhatsApp, quantos enviaram. */
+    taxaEnvio: number | null;
+    /** De todo visitante do site, quantos viraram conversa. */
+    visitanteParaLead: number | null;
+  };
   blog: { artigos: number; usuarios: number; conversoes: number; porCemUsuarios: number };
   leitura: { execucaoMediana: number; demaisMediana: number; distancia: number };
   blocos: Record<string, { exposicoes: number; acoes: number; taxa: number | null }>;
@@ -76,11 +87,25 @@ interface Snapshot {
 }
 
 const args = process.argv.slice(2);
-if (args.length < 2) {
-  console.error("Uso: npx tsx scripts/snapshot-analytics.ts <Eventos.csv> <Páginas e telas.csv>");
+/**
+ * Leads reais: quantas conversas de fato chegaram no WhatsApp do Montinho.
+ * É o único número do funil que o site não enxerga — clicar em wa.me abre o
+ * aplicativo, e o envio acontece fora do nosso alcance. Sem ele, a última
+ * etapa do funil é chute; com ele, dá para separar problema de tráfego de
+ * problema de mensagem.
+ */
+const iLeads = args.indexOf("--leads");
+const leads = iLeads >= 0 ? Number(args[iLeads + 1]) : null;
+if (iLeads >= 0 && !Number.isFinite(leads)) {
+  console.error("--leads precisa de um número. Ex.: --leads 79");
   process.exit(1);
 }
-const [arqEventos, arqPaginas] = args;
+const arquivos = args.filter((a, i) => a !== "--leads" && i !== iLeads + 1);
+if (arquivos.length < 2) {
+  console.error("Uso: npx tsx scripts/snapshot-analytics.ts <Eventos.csv> <Páginas e telas.csv> [--leads N]");
+  process.exit(1);
+}
+const [arqEventos, arqPaginas] = arquivos;
 for (const a of [arqEventos, arqPaginas]) {
   if (!existsSync(a)) { console.error(`Arquivo não encontrado: ${a}`); process.exit(1); }
 }
@@ -183,6 +208,9 @@ const snap: Snapshot = {
     usuariosWhatsapp: eu("click_whatsapp"),
     taxaWhatsapp: usuarios ? arred((100 * eu("click_whatsapp")) / usuarios, 1) : 0,
     conversoes: conversoesTotais,
+    leads,
+    taxaEnvio: leads !== null && eu("click_whatsapp") ? arred((100 * leads) / eu("click_whatsapp"), 1) : null,
+    visitanteParaLead: leads !== null && usuarios ? arred((100 * leads) / usuarios, 2) : null,
   },
   blog: {
     artigos: artigos.length,
@@ -202,7 +230,16 @@ const snap: Snapshot = {
 // ─── Grava, substituindo se o mesmo período já estiver registrado ────────────
 const historico: Snapshot[] = existsSync(HIST) ? JSON.parse(readFileSync(HIST, "utf8")) : [];
 const jaTem = historico.findIndex((s) => s.periodo.fim === snap.periodo.fim && s.periodo.inicio === snap.periodo.inicio);
-if (jaTem >= 0) { historico[jaTem] = snap; console.log(`(período já registrado, substituído)`); }
+if (jaTem >= 0) {
+  /* Rodar de novo sem --leads não pode apagar um lead já informado. */
+  if (snap.conversa.leads === null && historico[jaTem].conversa.leads !== null) {
+    snap.conversa.leads = historico[jaTem].conversa.leads;
+    snap.conversa.taxaEnvio = historico[jaTem].conversa.taxaEnvio;
+    snap.conversa.visitanteParaLead = historico[jaTem].conversa.visitanteParaLead;
+  }
+  historico[jaTem] = snap;
+  console.log("(período já registrado, substituído)");
+}
 else historico.push(snap);
 historico.sort((a, b) => a.periodo.fim.localeCompare(b.periodo.fim));
 writeFileSync(HIST, JSON.stringify(historico, null, 1) + "\n");
@@ -236,6 +273,11 @@ titulo("CONVERSA");
 linha("  % que clica no WhatsApp", (s) => s.conversa.taxaWhatsapp.toFixed(1) + "%");
 linha("  cliques por dia", (s) => (s.conversa.cliquesWhatsapp / s.periodo.dias).toFixed(1));
 linha("  conversões por dia", (s) => (s.conversa.conversoes / s.periodo.dias).toFixed(1));
+linha("  LEADS reais no período", (s) => (s.conversa.leads ?? "—").toString());
+linha("  leads por dia", (s) => (s.conversa.leads === null ? "—" : (s.conversa.leads / s.periodo.dias).toFixed(2)));
+linha("  % de quem clicou que enviou", (s) => (s.conversa.taxaEnvio === null ? "—" : s.conversa.taxaEnvio.toFixed(1) + "%"));
+linha("  % do visitante que vira lead", (s) => (s.conversa.visitanteParaLead === null ? "—" : s.conversa.visitanteParaLead.toFixed(2) + "%"));
+linha("  visitantes por lead", (s) => (s.conversa.leads ? Math.round(s.publico.usuarios / s.conversa.leads).toString() : "—"));
 
 titulo("BLOG");
 linha("  conversões por 100 usuários", (s) => s.blog.porCemUsuarios.toFixed(1));
