@@ -1,0 +1,3426 @@
+{
+ "periodo": {
+  "inicio": "2026-06-15",
+  "fim": "2026-09-02",
+  "dias": 79
+ },
+ "observacao": "Linha de base ANTES da mudança que levou os vídeos para o fim (01/set) e antes de sticky, bloco pós-resultado e FAQ acordeão.",
+ "artigos": {
+  "como-fazer-cadeira-extensora": {
+   "usuarios": 84,
+   "visualizacoes": 112,
+   "segundos": 13.1,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "travou-a-lombar-o-que-fazer": {
+   "usuarios": 54,
+   "visualizacoes": 78,
+   "segundos": 65.7,
+   "conversoes": 2,
+   "execucao": false
+  },
+  "melhor-treino-para-quem-usa-mounjaro": {
+   "usuarios": 43,
+   "visualizacoes": 68,
+   "segundos": 29.9,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cerveja-engorda": {
+   "usuarios": 31,
+   "visualizacoes": 51,
+   "segundos": 121.4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-upper-lower-superior-inferior": {
+   "usuarios": 24,
+   "visualizacoes": 47,
+   "segundos": 98.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-fazer-hip-thrust": {
+   "usuarios": 31,
+   "visualizacoes": 46,
+   "segundos": 20.2,
+   "conversoes": 7,
+   "execucao": true
+  },
+  "smart-fit-vs-bluefit": {
+   "usuarios": 29,
+   "visualizacoes": 31,
+   "segundos": 87.4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "plano-para-chegar-em-forma-no-verao": {
+   "usuarios": 3,
+   "visualizacoes": 29,
+   "segundos": 119,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "lista-de-compras-fitness-semanal": {
+   "usuarios": 26,
+   "visualizacoes": 26,
+   "segundos": 16.4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "beliscar-engorda": {
+   "usuarios": 18,
+   "visualizacoes": 24,
+   "segundos": 214.2,
+   "conversoes": 1,
+   "execucao": false
+  },
+  "panobianco-barueri": {
+   "usuarios": 3,
+   "visualizacoes": 23,
+   "segundos": 103,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-aldeia-da-serra": {
+   "usuarios": 10,
+   "visualizacoes": 22,
+   "segundos": 54.3,
+   "conversoes": 1,
+   "execucao": false
+  },
+  "proteina-para-quem-usa-mounjaro": {
+   "usuarios": 17,
+   "visualizacoes": 21,
+   "segundos": 118.6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "erros-comuns-no-treino-de-musculacao": {
+   "usuarios": 7,
+   "visualizacoes": 19,
+   "segundos": 227.1,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-fazer-leg-press": {
+   "usuarios": 13,
+   "visualizacoes": 17,
+   "segundos": 8.1,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "wegovy-e-musculacao": {
+   "usuarios": 16,
+   "visualizacoes": 17,
+   "segundos": 1.9,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alphaville-residencial-zero": {
+   "usuarios": 4,
+   "visualizacoes": 16,
+   "segundos": 14.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "bio-ritmo-alphaville": {
+   "usuarios": 4,
+   "visualizacoes": 15,
+   "segundos": 50.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "retatrutida-faz-perder-musculos": {
+   "usuarios": 12,
+   "visualizacoes": 15,
+   "segundos": 51.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "whey-protein-para-quem-usa-mounjaro": {
+   "usuarios": 14,
+   "visualizacoes": 15,
+   "segundos": 102.9,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-fazer-agachamento-goblet": {
+   "usuarios": 14,
+   "visualizacoes": 14,
+   "segundos": 2.2,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-nao-perder-o-shape-no-natal": {
+   "usuarios": 2,
+   "visualizacoes": 14,
+   "segundos": 46,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "musculacao-para-obesos-como-comecar": {
+   "usuarios": 11,
+   "visualizacoes": 14,
+   "segundos": 41.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-a-domicilio-alphaville": {
+   "usuarios": 13,
+   "visualizacoes": 14,
+   "segundos": 3.8,
+   "conversoes": 1,
+   "execucao": false
+  },
+  "como-fazer-abducao-quadril-maquina": {
+   "usuarios": 6,
+   "visualizacoes": 13,
+   "segundos": 28.7,
+   "conversoes": 4,
+   "execucao": true
+  },
+  "por-que-voce-nao-consegue-emagrecer": {
+   "usuarios": 6,
+   "visualizacoes": 13,
+   "segundos": 20.2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "celulite-musculacao-tratamento": {
+   "usuarios": 9,
+   "visualizacoes": 12,
+   "segundos": 4.4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-perder-gordura-abdominal": {
+   "usuarios": 1,
+   "visualizacoes": 12,
+   "segundos": 129,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-usar-smartwatch-musculacao": {
+   "usuarios": 3,
+   "visualizacoes": 12,
+   "segundos": 31,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "mounjaro-faz-perder-musculos": {
+   "usuarios": 8,
+   "visualizacoes": 12,
+   "segundos": 7.4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-fazer-extensao-lombar": {
+   "usuarios": 4,
+   "visualizacoes": 11,
+   "segundos": 3,
+   "conversoes": 3,
+   "execucao": true
+  },
+  "escala-rpe-musculacao": {
+   "usuarios": 2,
+   "visualizacoes": 11,
+   "segundos": 32,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "ironberg-alphaville": {
+   "usuarios": 3,
+   "visualizacoes": 11,
+   "segundos": 51,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "percentual-de-gordura-ideal": {
+   "usuarios": 11,
+   "visualizacoes": 11,
+   "segundos": 148.2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "proteina-para-quem-usa-retatrutida": {
+   "usuarios": 6,
+   "visualizacoes": 11,
+   "segundos": 21.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "tendinite-patelar-exercicio-joelho": {
+   "usuarios": 2,
+   "visualizacoes": 11,
+   "segundos": 38,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-potencia-e-explosividade": {
+   "usuarios": 9,
+   "visualizacoes": 11,
+   "segundos": 16.6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "habitos-que-sabotam-seu-emagrecimento": {
+   "usuarios": 1,
+   "visualizacoes": 10,
+   "segundos": 91,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "hashimoto-e-treino": {
+   "usuarios": 9,
+   "visualizacoes": 10,
+   "segundos": 141.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quantas-calorias-tem-1kg-de-gordura": {
+   "usuarios": 10,
+   "visualizacoes": 10,
+   "segundos": 8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "smart-fit-vs-bodytech": {
+   "usuarios": 5,
+   "visualizacoes": 10,
+   "segundos": 56.8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-evitar-perder-massa-muscular-retatrutida": {
+   "usuarios": 9,
+   "visualizacoes": 9,
+   "segundos": 15.6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-fazer-desenvolvimento-ombros": {
+   "usuarios": 3,
+   "visualizacoes": 9,
+   "segundos": 18,
+   "conversoes": 2,
+   "execucao": true
+  },
+  "como-tirar-medidas-corporais": {
+   "usuarios": 3,
+   "visualizacoes": 9,
+   "segundos": 1.7,
+   "conversoes": 4,
+   "execucao": false
+  },
+  "lipedema-e-musculacao": {
+   "usuarios": 7,
+   "visualizacoes": 9,
+   "segundos": 319.9,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-para-mulher-iniciante": {
+   "usuarios": 5,
+   "visualizacoes": 9,
+   "segundos": 90,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "10-melhores-academias-de-alphaville": {
+   "usuarios": 5,
+   "visualizacoes": 8,
+   "segundos": 41,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "arena-18-alphaville": {
+   "usuarios": 3,
+   "visualizacoes": 8,
+   "segundos": 36.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-definir-corpo-ate-o-verao": {
+   "usuarios": 3,
+   "visualizacoes": 8,
+   "segundos": 18,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-evitar-efeito-sanfona": {
+   "usuarios": 1,
+   "visualizacoes": 8,
+   "segundos": 66,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-fazer-pullover": {
+   "usuarios": 3,
+   "visualizacoes": 8,
+   "segundos": 6,
+   "conversoes": 2,
+   "execucao": true
+  },
+  "fibromialgia-e-musculacao": {
+   "usuarios": 8,
+   "visualizacoes": 8,
+   "segundos": 14,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alphaville-residencial-12": {
+   "usuarios": 3,
+   "visualizacoes": 8,
+   "segundos": 60,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-ia-vs-personal-real": {
+   "usuarios": 2,
+   "visualizacoes": 8,
+   "segundos": 33.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-tambore-1": {
+   "usuarios": 5,
+   "visualizacoes": 8,
+   "segundos": 9,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "polichinelo-emagrece": {
+   "usuarios": 7,
+   "visualizacoes": 8,
+   "segundos": 69,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "proteina-em-alimentos-tabela-completa": {
+   "usuarios": 6,
+   "visualizacoes": 8,
+   "segundos": 75.3,
+   "conversoes": 1,
+   "execucao": false
+  },
+  "academias-em-alphaville": {
+   "usuarios": 5,
+   "visualizacoes": 7,
+   "segundos": 21.8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-manter-massa-muscular-emagrecendo": {
+   "usuarios": 3,
+   "visualizacoes": 7,
+   "segundos": 167,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "crossover-vs-crucifixo": {
+   "usuarios": 6,
+   "visualizacoes": 7,
+   "segundos": 50.3,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "musculacao-para-artrite-reumatoide": {
+   "usuarios": 4,
+   "visualizacoes": 7,
+   "segundos": 360.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "ozempic-e-treino": {
+   "usuarios": 7,
+   "visualizacoes": 7,
+   "segundos": 3.4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alphaville-residencial-1": {
+   "usuarios": 2,
+   "visualizacoes": 7,
+   "segundos": 114,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-santana-de-parnaiba": {
+   "usuarios": 1,
+   "visualizacoes": 7,
+   "segundos": 143,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "plato-do-emagrecimento-como-quebrar": {
+   "usuarios": 5,
+   "visualizacoes": 7,
+   "segundos": 3.8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "suplementos-para-emagrecer-funcionam": {
+   "usuarios": 1,
+   "visualizacoes": 7,
+   "segundos": 42,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-funcional-para-iniciantes": {
+   "usuarios": 1,
+   "visualizacoes": 7,
+   "segundos": 6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-hiit-em-casa": {
+   "usuarios": 7,
+   "visualizacoes": 7,
+   "segundos": 33.1,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-com-sauna-alphaville": {
+   "usuarios": 6,
+   "visualizacoes": 6,
+   "segundos": 74,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cardio-ou-musculacao-mounjaro": {
+   "usuarios": 3,
+   "visualizacoes": 6,
+   "segundos": 129.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-fazer-remada-curvada-tecnica": {
+   "usuarios": 1,
+   "visualizacoes": 6,
+   "segundos": 3,
+   "conversoes": 2,
+   "execucao": true
+  },
+  "como-manter-dieta-festas-fim-de-ano": {
+   "usuarios": 1,
+   "visualizacoes": 6,
+   "segundos": 170,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-prevenir-lesoes-no-treino": {
+   "usuarios": 2,
+   "visualizacoes": 6,
+   "segundos": 25.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-reduzir-gordura-corporal-rapidamente": {
+   "usuarios": 3,
+   "visualizacoes": 6,
+   "segundos": 26.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "deficit-calorico-como-calcular": {
+   "usuarios": 4,
+   "visualizacoes": 6,
+   "segundos": 45.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "eletrolitos-hidratacao-treino-intenso": {
+   "usuarios": 3,
+   "visualizacoes": 6,
+   "segundos": 158.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "fibras-musculares-tipo-1-tipo-2": {
+   "usuarios": 6,
+   "visualizacoes": 6,
+   "segundos": 37.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "musculacao-apos-cirurgia-bariatrica": {
+   "usuarios": 2,
+   "visualizacoes": 6,
+   "segundos": 148,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alphaville-residencial-10": {
+   "usuarios": 2,
+   "visualizacoes": 6,
+   "segundos": 14,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alphaville-residencial-9": {
+   "usuarios": 2,
+   "visualizacoes": 6,
+   "segundos": 16,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quanto-tempo-de-treino-por-dia": {
+   "usuarios": 2,
+   "visualizacoes": 6,
+   "segundos": 6.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "retatrutida-ou-mounjaro": {
+   "usuarios": 6,
+   "visualizacoes": 6,
+   "segundos": 48,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academias-perto-de-alphaville": {
+   "usuarios": 3,
+   "visualizacoes": 5,
+   "segundos": 12.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "bioimpedancia-como-interpretar": {
+   "usuarios": 4,
+   "visualizacoes": 5,
+   "segundos": 184.8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "calorias-para-ganhar-massa-muscular": {
+   "usuarios": 3,
+   "visualizacoes": 5,
+   "segundos": 19.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cinta-modeladora-emagrece": {
+   "usuarios": 5,
+   "visualizacoes": 5,
+   "segundos": 9.2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-aproveitar-ceia-sem-exagerar": {
+   "usuarios": 1,
+   "visualizacoes": 5,
+   "segundos": 32,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-fazer-agachamento-livre-corretamente": {
+   "usuarios": 1,
+   "visualizacoes": 5,
+   "segundos": 107,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-fazer-barra-fixa": {
+   "usuarios": 5,
+   "visualizacoes": 5,
+   "segundos": 27.4,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-fazer-french-press": {
+   "usuarios": 3,
+   "visualizacoes": 5,
+   "segundos": 4.7,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-preservar-massa-muscular-durante-emagrecimento": {
+   "usuarios": 2,
+   "visualizacoes": 5,
+   "segundos": 20,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "creatina-para-quem-usa-mounjaro": {
+   "usuarios": 4,
+   "visualizacoes": 5,
+   "segundos": 101.8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "diastase-abdominal-exercicio": {
+   "usuarios": 2,
+   "visualizacoes": 5,
+   "segundos": 239,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "hipertrofia-natural-limite": {
+   "usuarios": 5,
+   "visualizacoes": 5,
+   "segundos": 40,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "imbalance-muscular-como-corrigir": {
+   "usuarios": 4,
+   "visualizacoes": 5,
+   "segundos": 4.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "melhor-academia-de-alphaville": {
+   "usuarios": 3,
+   "visualizacoes": 5,
+   "segundos": 15.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "melhores-academias-de-barueri": {
+   "usuarios": 5,
+   "visualizacoes": 5,
+   "segundos": 90,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "musculacao-apos-60-anos": {
+   "usuarios": 4,
+   "visualizacoes": 5,
+   "segundos": 21.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "projeto-verao-ainda-da-tempo-setembro": {
+   "usuarios": 2,
+   "visualizacoes": 5,
+   "segundos": 25,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quanto-custa-personal-trainer-alphaville": {
+   "usuarios": 4,
+   "visualizacoes": 5,
+   "segundos": 38.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "tapioca-engorda": {
+   "usuarios": 5,
+   "visualizacoes": 5,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-gluteos-em-casa": {
+   "usuarios": 5,
+   "visualizacoes": 5,
+   "segundos": 4.4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-peito-hipertrofia": {
+   "usuarios": 5,
+   "visualizacoes": 5,
+   "segundos": 70.6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-pernas-em-casa": {
+   "usuarios": 5,
+   "visualizacoes": 5,
+   "segundos": 6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "zumba-emagrece": {
+   "usuarios": 3,
+   "visualizacoes": 5,
+   "segundos": 27.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academias-em-santana-de-parnaiba": {
+   "usuarios": 4,
+   "visualizacoes": 4,
+   "segundos": 5.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "bluefit-alphaville": {
+   "usuarios": 4,
+   "visualizacoes": 4,
+   "segundos": 53.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "calorias-alimentos-festa-junina": {
+   "usuarios": 2,
+   "visualizacoes": 4,
+   "segundos": 14.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-aquecer-antes-do-treino": {
+   "usuarios": 4,
+   "visualizacoes": 4,
+   "segundos": 2.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-fazer-afundo-passadas": {
+   "usuarios": 4,
+   "visualizacoes": 4,
+   "segundos": 18.5,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-fazer-elevacao-frontal": {
+   "usuarios": 3,
+   "visualizacoes": 4,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-montar-academia-em-casa": {
+   "usuarios": 4,
+   "visualizacoes": 4,
+   "segundos": 44,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-montar-o-prato-para-emagrecer": {
+   "usuarios": 4,
+   "visualizacoes": 4,
+   "segundos": 6.3,
+   "conversoes": 1,
+   "execucao": false
+  },
+  "como-montar-treino-abcde": {
+   "usuarios": 2,
+   "visualizacoes": 4,
+   "segundos": 58,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-sair-do-plato-da-musculacao": {
+   "usuarios": 2,
+   "visualizacoes": 4,
+   "segundos": 69.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "condromalacia-patelar-musculacao": {
+   "usuarios": 1,
+   "visualizacoes": 4,
+   "segundos": 431,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "hipertrofia-feminina": {
+   "usuarios": 3,
+   "visualizacoes": 4,
+   "segundos": 8.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "melhor-academia-de-barueri": {
+   "usuarios": 1,
+   "visualizacoes": 4,
+   "segundos": 23,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "menopausa-engorda": {
+   "usuarios": 2,
+   "visualizacoes": 4,
+   "segundos": 80,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alphaville-residencial-2": {
+   "usuarios": 2,
+   "visualizacoes": 4,
+   "segundos": 24,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alphaville-residencial-3": {
+   "usuarios": 2,
+   "visualizacoes": 4,
+   "segundos": 10,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-granja-viana": {
+   "usuarios": 3,
+   "visualizacoes": 4,
+   "segundos": 13.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-green-tambore": {
+   "usuarios": 3,
+   "visualizacoes": 4,
+   "segundos": 9,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-online-como-funciona": {
+   "usuarios": 3,
+   "visualizacoes": 4,
+   "segundos": 60.3,
+   "conversoes": 1,
+   "execucao": false
+  },
+  "personal-trainer-perdizes-sao-paulo": {
+   "usuarios": 2,
+   "visualizacoes": 4,
+   "segundos": 33,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-resort-tambore": {
+   "usuarios": 3,
+   "visualizacoes": 4,
+   "segundos": 6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-tambore-3": {
+   "usuarios": 3,
+   "visualizacoes": 4,
+   "segundos": 11.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quanta-proteina-por-dia-para-ganhar-massa-muscular": {
+   "usuarios": 3,
+   "visualizacoes": 4,
+   "segundos": 43,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quanto-de-cardio-fazer": {
+   "usuarios": 2,
+   "visualizacoes": 4,
+   "segundos": 37.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quantos-dias-por-semana-treinar": {
+   "usuarios": 4,
+   "visualizacoes": 4,
+   "segundos": 79.8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "rest-pause-drop-set-superserie-guia": {
+   "usuarios": 3,
+   "visualizacoes": 4,
+   "segundos": 100.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treinar-o-mesmo-musculo-dois-dias-seguidos": {
+   "usuarios": 4,
+   "visualizacoes": 4,
+   "segundos": 52.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treinar-todos-os-dias-faz-mal": {
+   "usuarios": 1,
+   "visualizacoes": 4,
+   "segundos": 44,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "4perform-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 3,
+   "segundos": 53,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-para-idosos-alphaville": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 106.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-perto-do-iguatemi-alphaville": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 10.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academias-em-barueri": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 22.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "agachamento-bulgaro-como-fazer": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 19.5,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "agua-e-emagrecimento": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 60,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "barriga-inchada-ou-gordura": {
+   "usuarios": 1,
+   "visualizacoes": 3,
+   "segundos": 44,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "bodytech-alphaville": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 58.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "boxe-emagrece": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 79.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cardapio-para-hipertrofia": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 32.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cha-verde-emagrece": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 5.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-continuar-emagrecendo-sem-perder-motivacao": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 4.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-evitar-perder-massa-muscular-mounjaro": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 16,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-fazer-pulldown-puxada-frontal": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 4.3,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-fazer-rosca-martelo": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 5.7,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "dieta-cetogenica-musculacao": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 94.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "dieta-sem-gluten-emagrece": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 75.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "dieta-vegetariana-e-musculacao": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 172.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "dor-no-ciatico-exercicio-tratamento": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 62,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "fascite-plantar-exercicio": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 64.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "fim-de-semana-estraga-a-dieta": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "flacidez-apos-emagrecer-musculacao": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 127,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "flexao-de-braco-como-fazer-e-evoluir": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "fraqueza-durante-treino-retatrutida": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "hipertrofia-apos-os-40-anos": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 68.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "hipotireoidismo-e-musculacao": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 65,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "ironberg-vs-nitrogym-alphaville": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 38.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "liberacao-miofascial-foam-roller": {
+   "usuarios": 1,
+   "visualizacoes": 3,
+   "segundos": 23,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "melhor-horario-para-tomar-creatina": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 232.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "melhor-treino-para-emagrecer": {
+   "usuarios": 1,
+   "visualizacoes": 3,
+   "segundos": 23,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "musculacao-pos-cancer": {
+   "usuarios": 1,
+   "visualizacoes": 3,
+   "segundos": 761,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "padel-e-musculacao": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 33,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-a-domicilio-barueri": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 60.5,
+   "conversoes": 1,
+   "execucao": false
+  },
+  "personal-trainer-alphaville-residencial-4": {
+   "usuarios": 1,
+   "visualizacoes": 3,
+   "segundos": 11,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-melville": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 15.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-premium-tambore": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 3.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "posso-treinar-com-gripe": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 0.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "psicologia-atleta-lesionado-recuperacao-mental": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 87,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quanto-tempo-dura-um-treino": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 81.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quanto-tempo-para-ganhar-massa-muscular": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quantos-agachamentos-por-dia": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 101,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "quantos-quilos-perder-ate-fim-do-ano": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "refluxo-gastrico-e-exercicio": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 11.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "smart-fit-barueri": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 14,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "subir-escada-emagrece": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-com-elasticos-em-casa": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 76,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-abdomen-em-casa": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 12.7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-abdomen-funcional": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-perna-completo": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-low-carb-musculacao": {
+   "usuarios": 1,
+   "visualizacoes": 3,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "vale-a-pena-bluefit": {
+   "usuarios": 2,
+   "visualizacoes": 3,
+   "segundos": 54.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "volume-de-treino-ideal": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 56.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "yoga-e-musculacao": {
+   "usuarios": 3,
+   "visualizacoes": 3,
+   "segundos": 19.3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-com-personal-trainer-alphaville": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 52.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-com-piscina-alphaville-barueri": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 21,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-ou-personal-trainer": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 56.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-perto-do-shopping-tambore": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 0.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academias-mais-completas-alphaville": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 8.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academias-menos-lotadas-alphaville": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 35,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academias-perto-de-barueri": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academias-premium-alphaville": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 10.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "alcool-e-emagrecimento": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 47,
+   "conversoes": 1,
+   "execucao": false
+  },
+  "barrinha-de-proteina-vale-a-pena": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 12,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "bicicleta-emagrece": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 15,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cadeira-adutora-parte-interna-coxa": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 17.5,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "calistenia-avancada": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 5.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "caminhada-na-esteira-inclinada": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cardapio-semanal-ganho-de-massa-muscular": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 28,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cardio-antes-ou-depois-da-musculacao": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 19,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cardio-em-jejum-emagrece": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 4.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cardio-ou-musculacao-retatrutida": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "chocolate-engorda": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "ciclo-menstrual-fase-folicular-lutea-treino": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 44,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-acelerar-o-metabolismo": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 4.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-aumentar-a-forca-muscular": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 26,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-calcular-tmb-tdee-calorias": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 13.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-escolher-tenis-para-treinar": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 16,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-evitar-ganhar-peso-nas-ferias": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-fazer-levantamento-terra-corretamente": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-fazer-mergulho-paralelas": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 3.5,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-fazer-stiff": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-fazer-supino-reto": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-fazer-voador-pec-deck": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 1,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-manter-treino-em-viagem-executivos": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 21,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-nao-desistir-da-dieta": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 48,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-voltar-a-treinar-apos-pausa-longa": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cortisol-e-treino": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 15,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "deficit-calorico-e-hipertrofia": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "dieta-carnivora-musculacao": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "dieta-flexivel-iifym": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 167.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "dor-no-joelho-no-agachamento": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "dor-no-ombro-ao-treinar": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 14,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "dormencia-e-formigamento-ao-treinar": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 1.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "emagrecer-amamentando": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 19,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "exercicio-para-perder-barriga": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 15,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "exercicios-para-dor-nas-costas-coluna": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 120,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "hiit-funciona": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "hipertrofia-para-iniciantes": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 8.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "hormonios-femininos-apos-40-treino": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 270,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "incontinencia-urinaria-exercicios": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 30,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "massagem-pistola-foam-roller-qual-melhor": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 22,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "musculacao-em-jejum-retatrutida": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 1,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "musculacao-ou-corrida-para-emagrecer": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "musculacao-para-adolescentes": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 170,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "natacao-emagrece": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 2.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "o-que-comer-no-cafe-da-manha-para-treinar": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 0.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "peptideos-para-emagrecer": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 23.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "periodizacao-nutricional": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alameda-rio-negro": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 17,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alpha-conde": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 19,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alphaville-residencial-11": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 10,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alphaville-residencial-6": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alphaville-residencial-8": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-burle-marx": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 3.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-cotia": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-em-condominio-alphaville": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-genesis-2": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 24.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-iguatemi-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 1,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-tambore-11": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 35,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-tambore-2": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-tambore-4": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-tambore-6": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 2.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-tambore-7": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "progressao-de-carga": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 22,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "promocoes-fitness-black-friday": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 11,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "qual-academia-e-melhor-para-emagrecer": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 45,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quantas-flexoes-por-dia": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 220,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quanto-custa-academia-em-alphaville": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 13,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quanto-custa-academia-em-santana-de-parnaiba": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 2.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quanto-custa-consultoria-online-de-treino": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 44,
+   "conversoes": 1,
+   "execucao": false
+  },
+  "quanto-de-proteina-consumir": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 21,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quanto-tempo-para-aparecer-resultado-na-academia": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 49,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quantos-quilos-da-para-perder-por-mes": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 183,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "sauna-recuperacao-muscular-ciencia": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "smart-fit-alphaville": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 64,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "spinning-emagrece": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 238,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-abcd-para-hipertrofia": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-costas-em-casa": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 24.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-gluteos-feminino": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 79,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-em-casa-sem-equipamento": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 19,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-funcional-vs-musculacao": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-heavy-duty-mike-mentzer": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 47,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-para-casal": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-para-quem-odeia-academia": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 4.5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "vale-a-pena-contratar-personal-trainer": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 79,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "vitamina-d-musculacao": {
+   "usuarios": 1,
+   "visualizacoes": 2,
+   "segundos": 20,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "whey-protein-engorda": {
+   "usuarios": 2,
+   "visualizacoes": 2,
+   "segundos": 66,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "24-wellness-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 218,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "abdomen-inferior-exercicios": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-24-horas-barueri": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 38,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-com-funcional-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-com-pilates-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-em-condominio-como-aproveitar": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-para-fisiculturistas-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-perto-da-estacao-antonio-joao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 51,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-perto-da-estacao-barueri": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academia-perto-do-centro-comercial-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 205,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academias-abertas-nos-feriados": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academias-perto-de-santana-de-parnaiba": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 19,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "academias-sem-taxa-de-matricula": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "acai-engorda": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "agua-interfere-na-hipertrofia": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 119,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "alimentos-anti-inflamatorios-treino": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 10,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "alimentos-que-dao-saciedade": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "alimentos-ricos-em-fibra": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 1,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "alimentos-ricos-em-proteina": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "alzheimer-exercicio-prevencao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 34,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "anemia-e-treino": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "antes-e-depois-musculacao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "apneia-do-sono-e-exercicio": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "app-de-treino-funciona": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 10,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "balanca-nao-muda-mas-o-corpo-muda": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 10,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "banho-gelado-emagrece": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "beach-tennis-e-musculacao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 1,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "bluefit-barueri": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 22,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "bursite-no-ombro": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 123,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cafe-antes-do-treino": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cafeina-no-treino-dose-timing": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 36,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "caminhada-emagrece": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "carboidrato-a-noite-engorda": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 11,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "carboidrato-antes-do-treino": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cardapio-semanal-emagrecer-com-musculo": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 11,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "carga-ideal-como-escolher": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 25,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "cervicalgia-dor-no-pescoco-treino": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "chin-up-vs-pull-up": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "ciclo-menstrual-e-treino": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "colageno-hidrolisado-tipos-articulacoes-tendoes": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-acelerar-emagrecimento-para-verao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-acelerar-resultados-antes-do-verao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-aproveitar-festa-junina-sem-engordar": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-contar-calorias": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-criar-habito-de-treinar": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 157,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-emagrecer-em-30-dias": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 22,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-emagrecer-para-casamento": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 133,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-escolher-academia-certa": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-escolher-personal-trainer-black-friday": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 43,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-escolher-uma-academia": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-fazer-encolhimento-trapezio": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-fazer-puxada-fechada": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-fazer-rosca-direta": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 692,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-fazer-supino-inclinado": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-ganhar-massa-sem-ganhar-gordura": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-ganhar-perna-mais-rapido": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-ganhar-peso-saudavel": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-ler-rotulos-de-alimentos": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-manter-foco-festas-fim-de-ano": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-manter-massa-muscular-nas-ferias-verao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-montar-home-gym-barato": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 91,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-montar-treino-abc": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-montar-treino-de-hipertrofia": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-nao-perder-resultados-nas-ferias": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "como-perder-barriga-rapido": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-perder-gordura-sem-perder-massa-muscular": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-sair-do-sedentarismo": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-secar-em-4-semanas": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-treinar-no-calor": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-voltar-a-treinar-apos-comecar-mounjaro": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 42,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-voltar-aos-treinos-depois-das-ferias": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 10,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-voltar-rotina-depois-do-carnaval": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "conexao-mente-musculo": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "corrida-e-musculacao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "corrida-para-iniciantes": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 116,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "creatina-para-hipertrofia": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "crossfit-barueri": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "danca-emagrece": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "deficiencia-energia-atleta-red-s-recuperacao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "descansar-tambem-faz-crescer": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "dieta-mediterranea-e-treino": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 59,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "dor-no-punho-ao-treinar": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 19,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "dor-no-quadril-ao-agachar": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 12,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "dormir-depois-do-almoco-engorda": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 144,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "eliptico-emagrece": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "endometriose-e-exercicio": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 62,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "entorse-de-tornozelo": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "estrogenio-alto-homens-treino": {
+   "usuarios": 2,
+   "visualizacoes": 1,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "exercicio-gravidez-gestante-treino-seguro": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "exercicio-para-criancas": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "exercicio-para-sedentario": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 16,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "exercicios-para-fortalecer-joelho": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 17,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "exercicios-para-gluteo-medio": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "fabrica-de-monstros-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 1,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "falso-magro-skinny-fat": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 240,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "fisioterapia-preventiva-musculacao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "frutas-antes-do-treino": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 1,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "full-body-vs-divisao-abc": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "hernia-de-disco-pode-treinar": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 20,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "hiit-usando-retatrutida": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "hip-dips-musculacao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 9,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "ia-e-treino-personalizado": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "imunidade-e-exercicio": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 48,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "indice-glicemico-carboidrato-pre-pos-treino-timing": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 123,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "insonia-e-exercicio": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "janela-anabolica": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 11,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "jejum-intermitente-para-emagrecer": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 11,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "joelho-de-corredor": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "lanches-saudaveis-para-emagrecer": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 249,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "leite-engorda": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 85,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "macrociclo-mesociclo-microciclo": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "magnesio-para-dormir-e-treinar": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "melhor-horario-para-proteina": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "melhor-horario-para-treinar-academia": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "melhor-treino-para-quem-usa-retatrutida": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "metabolismo-lento-existe": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "mobilidade-articular-pre-treino": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 13,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "mobilidade-de-tornozelo": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "muay-thai-emagrece": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "mulheres-emagrecem-mais-devagar-que-homens": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "musculacao-durante-uso-de-mounjaro": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 1,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "musculacao-durante-uso-de-retatrutida": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 25,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "musculacao-e-parkinson": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "musculacao-para-maiores-de-60": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "musculacao-pos-60-feminino": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "musculo-vira-gordura-se-parar-de-treinar": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 119,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "new-life-fitness-santana-de-parnaiba": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "nitrogym-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 57,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "nutrient-timing-pos-treino-2025": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "o-que-comer-antes-do-treino": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 31,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "obox-training-club-santana-de-parnaiba": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 95,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "otimizar-sono-para-recuperacao-muscular": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 19,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "perimenopausa-treino-e-hormonios": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 404,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-a-domicilio-tambore": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alpha-sitio": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 17,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-alphaville-residencial-5": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-boulevard-tambore": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-carapicuiba": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-centro-comercial-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 21,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-empresarial-18-do-forte": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 13,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-genesis-1": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 21,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-ghaia-tambore": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 12,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-higienopolis-sao-paulo": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 1,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-itapevi": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-itu": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 13,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-jandira": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-morada-dos-lagos": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-new-ville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-osasco": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-para-condominio-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-para-gestantes-alphaville-tambore": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-parque-tambore": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 5,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-perto-de-mim-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-pinheiros-sao-paulo": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-pirapora-do-bom-jesus": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-quintas-de-tambore": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-tambore-10": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-tambore-5": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-the-penthouses-tambore": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 6,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-vargem-grande-paulista": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "personal-trainer-villa-solaia": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 91,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "pilates-emagrece": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "pilates-vs-musculacao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "postura-trabalho-sentado-exercicios": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 1,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "prancha-abdominal-como-fazer-e-beneficios": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 47,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "professor-de-musculacao-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "proteina-antes-de-dormir": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 63,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "proteina-demais-faz-mal": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "pular-refeicao-emagrece": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 1,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "qual-academia-e-menos-cheia-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quantas-calorias-cortar-para-emagrecer": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 40,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quanto-tempo-de-caminhada-por-dia": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 8,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quantos-meses-faltam-para-o-verao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "quantos-quilos-perder-ate-carnaval": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "recomposicao-corporal": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 4,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "retatrutida-emagrece-mais": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "retatrutida-ou-wegovy": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 3,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "retatrutida-ou-zepbound": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 1,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "saude-hormonal-feminina-treino": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "scelta-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 50,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "shake-de-proteina-substitui-refeicao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "sindrome-metabolica-e-exercicio": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 7,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "sop-exercicio-hormonal": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "sopa-emagrece": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 792,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "studio-mormaii-alphaville": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "suplementacao-basica-para-iniciantes": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 151,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "testosterona-baixa-sintomas": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "tirzepatida-e-musculacao": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treinamento-multimodal-forca-mobilidade-mindfulness-2025": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 34,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treinar-em-jejum-faz-perder-massa-muscular": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 89,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-ao-ar-livre-estruturado": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-30-minutos-funciona": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 30,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-biceps": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 53,
+   "conversoes": 0,
+   "execucao": true
+  },
+  "treino-de-braco-em-casa": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 9,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-costas-hipertrofia": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 10,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-forca-para-mulheres": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 59,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-de-peito-em-casa": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 75,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-e-ciclo-menstrual": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 13,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-manha-ou-noite-qual-e-melhor": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "treino-para-definir-abdomen-carnaval": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "vergonha-de-treinar-na-academia": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 9,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "vinho-engorda": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "vitamina-d-baixa-sintomas": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 2,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "vo2-maximo-longevidade": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 67,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "wearables-garmin-whoop-treino": {
+   "usuarios": 1,
+   "visualizacoes": 1,
+   "segundos": 110,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "como-ganhar-massa-muscular-no-inverno": {
+   "usuarios": 1,
+   "visualizacoes": 0,
+   "segundos": 1100,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "push-pull-legs": {
+   "usuarios": 1,
+   "visualizacoes": 0,
+   "segundos": 0,
+   "conversoes": 0,
+   "execucao": false
+  },
+  "scelta-aldeia-da-serra": {
+   "usuarios": 1,
+   "visualizacoes": 0,
+   "segundos": 11,
+   "conversoes": 0,
+   "execucao": false
+  }
+ }
+}
