@@ -50,6 +50,7 @@ export type AnalyticsEvent =
    * parâmetro porque é conteúdo editorial nosso, não dado de quem leu:
    * saber qual dúvida abre mais diz o que a página devia responder antes.
    */
+  | "faq_view"
   | "faq_open"
   // Diagnóstico Montinho (funil da ferramenta /diagnostico)
   | "diagnostic_view"
@@ -301,7 +302,6 @@ export type AnalyticsEvent =
   // Revisão Gratuita de Execução
   | "execution_review_view"
   | "execution_review_whatsapp_click"
-  | "execution_review_article_cta_view"
 
   // Academia Ideal em Alphaville
   | "gym_finder_view"

@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { trackEvent } from "@/lib/analytics";
 
 /**
@@ -37,7 +38,25 @@ interface Props {
   className?: string;
 }
 
+const CH_VISTO = "montinho:faq:visto:";
+
 export default function FAQ({ itens, placement, className = "" }: Props) {
+  /*
+   * O denominador. Sem ele, "30 aberturas" não vira taxa — e a pergunta
+   * que interessa é qual porcentagem de quem CHEGA no FAQ abre alguma
+   * coisa. Uma vez por página por sessão: rolar de volta não é ver de novo.
+   */
+  useEffect(() => {
+    try {
+      const k = CH_VISTO + placement;
+      if (sessionStorage.getItem(k)) return;
+      sessionStorage.setItem(k, "1");
+    } catch {
+      /* sem storage: conta mesmo assim, melhor repetir do que perder */
+    }
+    trackEvent("faq_view", { placement, faq_count: itens.length });
+  }, [placement, itens.length]);
+
   return (
     <div className={`flex flex-col gap-3 ${className}`}>
       {itens.map((item) => (
