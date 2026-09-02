@@ -1,0 +1,20 @@
+[
+ {
+  "data": "2026-09-02",
+  "parcial": "14:46",
+  "fonte": "app GA4 — Engajamento › Eventos",
+  "eventos": {
+   "page_view": 26,
+   "session_start": 26,
+   "first_visit": 23,
+   "user_engagement": 17,
+   "article_video_view": 11,
+   "faq_view": 11,
+   "click_whatsapp": 5,
+   "generate_lead": 5,
+   "scroll": 5,
+   "scroll_75": 5
+  },
+  "nota": "Primeiro dia com FAQ em acordeão e sticky nova no ar. article_video_play e faq_open não apareceram na lista: 11 exposições de cada, zero ação."
+ }
+]
