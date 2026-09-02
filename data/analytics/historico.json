@@ -1,0 +1,115 @@
+[
+ {
+  "periodo": {
+   "inicio": "2026-06-15",
+   "fim": "2026-09-02",
+   "dias": 80
+  },
+  "publico": {
+   "usuarios": 2193,
+   "visualizacoes": 5524,
+   "usuariosPorDia": 27.4,
+   "paginasPorUsuario": 2.52
+  },
+  "engajamento": {
+   "engajados": 1014,
+   "scroll75": 422,
+   "artigoLido": 114
+  },
+  "conversa": {
+   "cliquesWhatsapp": 218,
+   "usuariosWhatsapp": 189,
+   "taxaWhatsapp": 8.6,
+   "conversoes": 243
+  },
+  "blog": {
+   "artigos": 488,
+   "usuarios": 1387,
+   "conversoes": 35,
+   "porCemUsuarios": 2.5
+  },
+  "leitura": {
+   "execucaoMediana": 13.1,
+   "demaisMediana": 36.3,
+   "distancia": 23.2
+  },
+  "blocos": {
+   "sticky": {
+    "exposicoes": 4,
+    "acoes": 1,
+    "taxa": 25
+   },
+   "pos_ferramenta": {
+    "exposicoes": 0,
+    "acoes": 0,
+    "taxa": null
+   },
+   "faq": {
+    "exposicoes": 0,
+    "acoes": 1,
+    "taxa": null
+   },
+   "video": {
+    "exposicoes": 27,
+    "acoes": 0,
+    "taxa": 0
+   },
+   "cta_contextual": {
+    "exposicoes": 102,
+    "acoes": 3,
+    "taxa": 2.9
+   },
+   "fonte_preferida": {
+    "exposicoes": 36,
+    "acoes": 0,
+    "taxa": 0
+   }
+  },
+  "ferramentas": {
+   "deficit": {
+    "viram": 17,
+    "concluiram": 20
+   },
+   "tdee": {
+    "viram": 14,
+    "concluiram": 12
+   },
+   "macros": {
+    "viram": 13,
+    "concluiram": 11
+   },
+   "cardapio": {
+    "viram": 14,
+    "concluiram": 8
+   },
+   "volume": {
+    "viram": 11,
+    "concluiram": 2
+   },
+   "diagnostico": {
+    "viram": 8,
+    "concluiram": 2
+   },
+   "rotina": {
+    "viram": 3,
+    "concluiram": 2
+   },
+   "proteina": {
+    "viram": 4,
+    "concluiram": 2
+   },
+   "onerm": {
+    "viram": 3,
+    "concluiram": 1
+   },
+   "academia": {
+    "viram": 0,
+    "concluiram": 1
+   },
+   "alimentos": {
+    "viram": 3,
+    "concluiram": 2
+   }
+  }
+ }
+]
