@@ -9,6 +9,7 @@ import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import ArticleReadTracker from "@/components/analytics/ArticleReadTracker";
 import ArticleLightbox from "@/components/blog/ArticleLightbox";
 import VideoMedido from "@/components/blog/VideoMedido";
+import { regraParaArtigo } from "@/lib/sticky/artigo";
 import AskEmbed from "@/components/ask/AskEmbed";
 import ContextualCTA from "@/components/cta/ContextualCTA";
 import { planCTAs } from "@/lib/cta/classify";
@@ -53,7 +54,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = post.metaTitle || post.title;
   const description = post.metaDescription || post.excerpt;
   const cover = getPostCoverImage(post);
+  /*
+   * A sticky bar lê estas duas meta tags para saber o assunto do artigo. A
+   * decisão é tomada aqui, no build, pelo mesmo classificador do CTA
+   * contextual — o navegador não carrega regra nenhuma. Nome de meta fora
+   * do padrão é ignorado por buscador e não vira conteúdo indexável.
+   */
+  const sticky = regraParaArtigo(post);
   return {
+    other: {
+      "montinho-sticky": sticky.id,
+      ...(sticky.contexto ? { "montinho-sticky-contexto": sticky.contexto } : {}),
+    },
     /*
      * `absolute` desliga o template `%s | Montinho Personal Trainer` do layout
      * raiz. Não é preferência de estilo: o sufixo tem 28 caracteres e o Google

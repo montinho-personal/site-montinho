@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import CookieBanner from "@/components/layout/CookieBanner";
+import StickyBar from "@/components/sticky/StickyBar";
 import AnalyticsTracker from "@/components/analytics/AnalyticsTracker";
 
 const dmSans = DM_Sans({
@@ -212,6 +213,7 @@ export default function RootLayout({
         <main className="flex-1 pt-16 lg:pt-20">{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <StickyBar />
         <CookieBanner />
         <AnalyticsTracker />
         {/* GA4 instalado diretamente (pré-GTM). Ao configurar a tag GA4 dentro

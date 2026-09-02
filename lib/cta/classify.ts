@@ -108,7 +108,7 @@ function fields(post: BlogPost): { core: string; full: string } {
  * Santana de Parnaíba e Aldeia da Serra), conforme as páginas de serviço.
  * Retorna qual página presencial é a correta para aquele artigo.
  */
-function matchRegiao(hay: string): string | null {
+export function matchRegiao(hay: string): string | null {
   if (/tambore/.test(hay)) return "tambore";
   if (/barueri/.test(hay)) return "barueri";
   if (/santana-de-parnaiba|aldeia-da-serra/.test(hay)) return "santana";

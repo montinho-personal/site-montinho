@@ -22,6 +22,15 @@ export type AnalyticsEvent =
    */
   | "article_video_view"
   | "article_video_play"
+  /**
+   * Sticky bar contextual. `sticky_view` conta exposição, `sticky_click` a
+   * ação, `sticky_close` o descarte. Parâmetros: content_category (a regra),
+   * cta_variant (a/b), cta_destination, traffic_source — nunca conteúdo
+   * digitado, nunca dado corporal.
+   */
+  | "sticky_view"
+  | "sticky_click"
+  | "sticky_close"
   // Diagnóstico Montinho (funil da ferramenta /diagnostico)
   | "diagnostic_view"
   | "diagnostic_start"
@@ -328,6 +337,18 @@ export function trackEvent(event: AnalyticsEvent, params: EventParams = {}): voi
   // Caminho 1 — GTM (triggers de evento personalizado)
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({ event, ...payload });
+
+  /*
+   * Caminho 0 — a própria página. A sticky bar precisa saber quando uma
+   * ferramenta entregou resultado, e as ferramentas já anunciam isso aqui.
+   * Um evento DOM evita acoplar cada ferramenta à barra: quem quiser ouvir,
+   * ouve; ninguém precisa importar ninguém.
+   */
+  try {
+    window.dispatchEvent(new CustomEvent("montinho:evento", { detail: { event } }));
+  } catch {
+    /* ambiente sem CustomEvent: só perde o aviso local. */
+  }
 
   // Caminho 2 — GA4 direto via Google Tag API.
   // Se gtag ainda não foi definido pelo snippet (clique muito cedo),

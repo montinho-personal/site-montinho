@@ -11,15 +11,18 @@ export default function CookieBanner() {
     if (!consent) setVisible(true);
   }, []);
 
-  function accept() {
-    localStorage.setItem("cookie_consent", "accepted");
+  /*
+   * Avisa a página quando a decisão acontece. A sticky bar não pode aparecer
+   * enquanto este banner está na tela — os dois ocupariam o mesmo canto —, e
+   * o evento `storage` não dispara na própria aba que gravou.
+   */
+  function decide(valor: "accepted" | "declined") {
+    localStorage.setItem("cookie_consent", valor);
     setVisible(false);
+    window.dispatchEvent(new CustomEvent("montinho:cookies"));
   }
-
-  function decline() {
-    localStorage.setItem("cookie_consent", "declined");
-    setVisible(false);
-  }
+  const accept = () => decide("accepted");
+  const decline = () => decide("declined");
 
   if (!visible) return null;
 
