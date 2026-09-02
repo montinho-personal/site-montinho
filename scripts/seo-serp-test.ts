@@ -20,6 +20,7 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { blogPosts } from "../lib/blog";
+import { ABERTO, FECHADO, INICIO, LEITURA_A_PARTIR_DE } from "./experimento-titulos";
 
 let falhas = 0;
 function ok(nome: string, cond: boolean, detalhe = "") {
@@ -310,6 +311,58 @@ bloco("10. NENHUMA PÁGINA DO APP DUPLICA A MARCA NO TÍTULO");
   });
   ok("página que desliga o template ainda declara a marca", locaisSemMarca.length === 0,
     locaisSemMarca.join(", "));
+}
+
+
+// ─── 10 ─────────────────────────────────────────────────────────────────────
+bloco("10. O EXPERIMENTO DE TÍTULO CONTINUA DE PÉ");
+
+/**
+ * Seis artigos em que a faixa numérica responde a pergunta inteira. Três
+ * receberam ponta solta, três ficaram com a resposta fechada, para descobrir
+ * qual formato rende mais clique NESTE site.
+ *
+ * Um experimento morre de duas formas silenciosas: alguém mexe no grupo de
+ * controle, ou alguém mexe no grupo de teste e desfaz o que estava sendo
+ * medido. Nos dois casos ninguém percebe até a leitura sair errada, semanas
+ * depois. As travas abaixo pinam os dois lados.
+ */
+{
+  const todos = [...ABERTO, ...FECHADO];
+  ok(`o experimento tem seis artigos (${todos.length})`, todos.length === 6);
+  ok("os dois grupos têm o mesmo tamanho", ABERTO.length === FECHADO.length);
+
+  const slugsAberto = new Set(ABERTO.map((a) => a.slug));
+  ok("os grupos não se sobrepõem", FECHADO.every((a) => !slugsAberto.has(a.slug)));
+
+  /* O título de cada artigo tem que ser exatamente o que o experimento registrou. */
+  for (const a of todos) {
+    const p = porSlug.get(a.slug);
+    if (!p) { ok(`${a.slug} existe`, false); continue; }
+    const atual = p.metaTitle || p.title;
+    ok(`${a.slug}: título é o do experimento`, atual === a.titulo,
+      `esperado "${a.titulo}", achei "${atual}"`);
+  }
+
+  /* Todo artigo do experimento passa também pela régua geral desta suíte. */
+  const foraDaRegua = todos.filter((a) => !REVISADOS.includes(a.slug));
+  ok("todos estão na lista de revisados", foraDaRegua.length === 0,
+    foraDaRegua.map((a) => a.slug).join(", "));
+
+  /*
+   * A marca da ponta solta: um travessão ou uma vírgula que abre a segunda
+   * metade DEPOIS da resposta. Sem isso o grupo ABERTO não é aberto, e os
+   * dois braços viram a mesma coisa.
+   */
+  const semPonta = ABERTO.filter((a) => !/(—|,)\s+\S/.test(a.titulo.split("?").pop() ?? a.titulo));
+  ok("todo título do grupo aberto tem segunda metade", semPonta.length === 0,
+    semPonta.map((a) => a.titulo).join(" | "));
+
+  /* E a base tem que estar registrada, senão não há com o que comparar. */
+  const semBase = todos.filter((a) => a.base.impressoes <= 0);
+  ok("toda página tem linha de base de impressões", semBase.length === 0);
+  ok("as datas do experimento estão declaradas",
+    /^\d{4}-\d{2}-\d{2}$/.test(INICIO) && LEITURA_A_PARTIR_DE > INICIO);
 }
 
 console.log("\n" + "=".repeat(64));
