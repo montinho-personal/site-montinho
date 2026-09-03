@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Parar de Tomar Mounjaro: o que muda no corpo">
+  <title>Parar de Tomar Mounjaro: o que muda no corpo</title>
+  <desc>Infografico: ao parar o Mounjaro a fome volta e o gasto esta menor; o que segura o resultado e proteina alta e treino de forca - Montinho Personal Trainer</desc>
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <rect x="25" y="22" width="66" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="58" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">GLP-1</text>
+  <text x="600" y="92" font-family="Arial,sans-serif" font-size="30" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Parar de tomar Mounjaro: o que muda</text>
+  <text x="600" y="124" font-family="Arial,sans-serif" font-size="17" fill="#BA9E50" text-anchor="middle">Duas coisas mudam ao mesmo tempo — e e a soma delas que traz o peso de volta</text>
+
+  <rect x="70" y="160" width="480" height="190" rx="14" fill="#1a1a1a" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="110" y="205" font-family="Arial,sans-serif" font-size="34" fill="#BA9E50" font-weight="bold">&#8593;</text>
+  <text x="150" y="205" font-family="Arial,sans-serif" font-size="22" fill="#F5F5F5" font-weight="bold">A fome volta</text>
+  <text x="110" y="248" font-family="Arial,sans-serif" font-size="16" fill="#CFCFCF">O remedio segurava a saciedade.</text>
+  <text x="110" y="276" font-family="Arial,sans-serif" font-size="16" fill="#CFCFCF">Sem ele, o apetite retorna em</text>
+  <text x="110" y="304" font-family="Arial,sans-serif" font-size="16" fill="#CFCFCF">poucas semanas — e mais alto.</text>
+
+  <rect x="650" y="160" width="480" height="190" rx="14" fill="#1a1a1a" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="690" y="205" font-family="Arial,sans-serif" font-size="34" fill="#BA9E50" font-weight="bold">&#8595;</text>
+  <text x="730" y="205" font-family="Arial,sans-serif" font-size="22" fill="#F5F5F5" font-weight="bold">O gasto esta menor</text>
+  <text x="690" y="248" font-family="Arial,sans-serif" font-size="16" fill="#CFCFCF">Voce pesa menos. E se perdeu</text>
+  <text x="690" y="276" font-family="Arial,sans-serif" font-size="16" fill="#CFCFCF">musculo no caminho, gasta menos</text>
+  <text x="690" y="304" font-family="Arial,sans-serif" font-size="16" fill="#CFCFCF">ainda em repouso.</text>
+
+  <rect x="70" y="380" width="1060" height="70" rx="12" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="600" y="424" font-family="Arial,sans-serif" font-size="20" fill="#F5F5F5" text-anchor="middle">Quem para sem plano recupera, em media, <tspan font-weight="bold" fill="#BA9E50">cerca de 70% do peso perdido em um ano</tspan></text>
+
+  <text x="600" y="500" font-family="Arial,sans-serif" font-size="19" fill="#F5F5F5" text-anchor="middle" font-weight="bold">O que separa quem mantem</text>
+  <rect x="180" y="522" width="380" height="62" rx="12" fill="#1a1a1a" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="370" y="560" font-family="Arial,sans-serif" font-size="17" fill="#F5F5F5" text-anchor="middle">Proteina de 1,6 a 2,2 g por quilo</text>
+  <rect x="640" y="522" width="380" height="62" rx="12" fill="#1a1a1a" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="830" y="560" font-family="Arial,sans-serif" font-size="17" fill="#F5F5F5" text-anchor="middle">Treino de forca 2 a 3x por semana</text>
+
+  <text x="1175" y="612" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" text-anchor="end" opacity="0.7">montinhopersonal.com.br</text>
+</svg>

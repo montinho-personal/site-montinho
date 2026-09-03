@@ -100,6 +100,189 @@ export const BLOG_CATEGORIES = [
 ];
 
 export const blogPosts = ([
+  {
+    slug: "parar-de-tomar-mounjaro",
+    title: "Parar de Tomar Mounjaro: O Que Acontece com o Peso",
+    metaTitle: "Parar de Tomar Mounjaro: O Que Acontece com o Peso",
+    metaDescription:
+      "Em média se recupera cerca de 70% do peso perdido no primeiro ano sem o remédio. Por que isso acontece e o plano de 12 semanas que segura o resultado.",
+    excerpt:
+      "O remédio segurava o apetite. Quando ele sai, a fome volta e o gasto está menor do que antes — e a diferença entre manter e recuperar cabe em duas coisas: proteína e músculo.",
+    category: "GLP-1",
+    date: "2026-09-03",
+    updatedAt: "2026-09-03",
+    readTime: "8 min",
+    author: "Montinho",
+    tags: ["mounjaro", "tirzepatida", "parar de tomar", "reganho de peso", "GLP-1", "manutenção"],
+    faq: [
+      { question: "O que acontece quando paro de tomar Mounjaro?", answer: "A fome volta em poucas semanas, porque o remédio agia mantendo a saciedade e a digestão mais lenta. Como o corpo agora pesa menos e muitas vezes tem menos músculo, o gasto diário também está menor do que antes do tratamento. Fome maior e gasto menor ao mesmo tempo é a combinação que explica o reganho." },
+      { question: "Quantas pessoas recuperam o peso depois de parar?", answer: "O acompanhamento de quem para esses medicamentos aponta recuperação média em torno de 70% do peso perdido no primeiro ano. O número assusta e serve para a decisão certa: parar sem plano é o que costuma dar errado, não parar em si." },
+      { question: "Dá para manter o peso depois de parar o Mounjaro?", answer: "Dá, e o que separa quem mantém de quem recupera é quanto músculo sobrou e quanta proteína continua entrando. Músculo é o tecido que mais consome energia em repouso: preservá-lo é o que mantém o gasto diário alto o suficiente para a comida normal caber. Treino de força pelo menos duas vezes por semana e proteína alta são as duas peças que não podem faltar." },
+      { question: "Quanto músculo se perde usando GLP-1?", answer: "Sem treino de força, uma parte relevante do peso perdido com esses medicamentos vem de massa magra, e os dados do SURMOUNT-1 apontam algo entre 30 e 40% do peso perdido. Com treino de resistência e proteína adequada, essa fração cai muito. É por isso que a musculação durante o tratamento não é acessório: ela decide o que sobra quando o remédio sai." },
+      { question: "Quanta proteína comer depois de parar o Mounjaro?", answer: "A faixa de referência para quem treina e quer preservar massa magra fica entre 1,6 e 2,2 gramas por quilo de peso por dia. Depois de parar o medicamento, a dificuldade muda de lado: durante o tratamento faltava apetite para comer a proteína, e agora sobra apetite para comer o resto. Manter a proteína alta ajuda nas duas coisas, porque ela é o macro que mais sacia." },
+      { question: "Devo parar de uma vez ou reduzir a dose aos poucos?", answer: "A decisão é do médico que prescreveu, e ela costuma envolver reduzir a dose por etapas em vez de interromper de uma vez, para o apetite voltar de forma gradual e dar tempo de a rotina se ajustar. O que cabe a você preparar é o outro lado: o treino e a alimentação precisam estar de pé antes de a última dose acontecer." },
+    ],
+    content: `
+<h2>A resposta rápida</h2>
+<p>Parar de tomar o Mounjaro não desfaz o que você perdeu — mas muda duas coisas ao mesmo tempo, e é a soma delas que traz o peso de volta:</p>
+<ul>
+  <li><strong>A fome volta.</strong> O remédio agia deixando a saciedade mais longa; sem ele, o apetite retorna em poucas semanas.</li>
+  <li><strong>O gasto está menor.</strong> Você pesa menos, e se perdeu músculo no caminho, gasta menos ainda em repouso.</li>
+  <li><strong>O número:</strong> quem para sem plano recupera, em média, <strong>cerca de 70% do peso perdido em um ano</strong>.</li>
+  <li><strong>O que separa quem mantém:</strong> músculo preservado e proteína alta. Não é força de vontade.</li>
+</ul>
+<p>O resto desta página explica por que o corpo reage assim, o que dá para fazer antes da última dose e o plano das 12 semanas seguintes.</p>
+
+<h2>Por que o peso volta</h2>
+<p>A tentação é ler o reganho como falha de disciplina. Não é, e entender o mecanismo muda o que você faz a respeito.</p>
+<p>Durante o tratamento, o medicamento fez um trabalho que você não precisou fazer: segurou o apetite. Comer menos ficou fácil porque a vontade de comer era menor. Quando a última dose sai do corpo, essa ajuda some — e o apetite não volta ao nível de antes, ele volta ao nível de <em>um corpo que perdeu peso</em>, que costuma ser um apetite ainda maior, porque o organismo interpreta a perda como algo a ser corrigido.</p>
+<p>Do outro lado da conta, o gasto caiu. Parte da queda é inevitável: um corpo de 80 kg gasta menos que o mesmo corpo de 95 kg, simplesmente porque há menos massa para manter. Mas outra parte é evitável, e é aí que a maioria perde a briga: <strong>quando parte do peso perdido é músculo, o gasto cai mais do que precisava cair.</strong></p>
+<p>Fome maior e gasto menor, ao mesmo tempo, sem o freio químico. É a receita do reganho, e ela não tem nada a ver com querer mais ou menos.</p>
+<img src="/blog-images/parar-de-tomar-mounjaro-capa.webp" alt="Infográfico: ao parar o Mounjaro, a fome volta e o gasto está menor; quem para sem plano recupera em média cerca de 70% do peso perdido em um ano; proteína de 1,6 a 2,2 g por quilo e duas sessões de força por semana são o que segura o resultado" loading="lazy" style="width:100%;height:auto;border-radius:12px;margin:1.5rem 0;" />
+
+<h2>O músculo é a variável que você controla</h2>
+<p>Das duas pontas do problema, uma não está no seu alcance: você não decide o quanto o apetite volta. A outra está inteira.</p>
+<p>Músculo é o tecido que mais consome energia em repouso, e é o que sustenta o gasto diário quando o peso desce. Sem treino de força, uma fatia relevante do que se perde com esses medicamentos é massa magra — os dados do SURMOUNT-1 apontam <strong>entre 30 e 40% do peso perdido</strong> vindo de massa magra. Com treino de resistência e proteína adequada, essa fração cai muito.</p>
+<p>A consequência prática é dura e simples: <strong>duas pessoas que perderam 15 kg com o mesmo remédio chegam ao fim do tratamento em situações diferentes</strong>. Quem treinou chega com quase todo o músculo, o gasto próximo do que dá para sustentar com comida normal, e força para continuar treinando. Quem não treinou chega mais fraco, gastando menos, e com a comida normal já sobrando. A primeira mantém; a segunda recupera.</p>
+<p>Se você ainda está tomando, essa é a hora — o artigo sobre <a href="/blog/como-evitar-perder-massa-muscular-mounjaro">como evitar perder massa muscular no Mounjaro</a> trata exatamente disso. Se já parou, dá para recuperar, e leva mais tempo do que teria levado.</p>
+
+<h2>O que fazer antes da última dose</h2>
+<p>A pior hora de começar a treinar é depois que a fome voltou. Se a data de parar já está no horizonte, três coisas precisam estar de pé antes:</p>
+<ol>
+  <li><strong>Treino de força rodando há pelo menos 8 semanas.</strong> Não adianta começar na semana da última dose: a adaptação leva tempo, e você quer chegar com o hábito já formado, não em construção.</li>
+  <li><strong>Proteína na faixa alta, medida.</strong> Durante o tratamento é comum não chegar perto da meta, porque falta apetite. Comer proteína quando não se tem fome é chato e é o que garante que o músculo fique.</li>
+  <li><strong>Uma noção do seu gasto real.</strong> Sem o remédio segurando o apetite, comer "no olho" volta a ser arriscado. Saber quantas calorias o seu corpo gasta hoje — o corpo de agora, não o de antes — é o que transforma manutenção em conta em vez de aposta.</li>
+</ol>
+<p>A decisão de <strong>como</strong> parar é do médico que prescreveu. Reduzir a dose por etapas costuma ser preferido a interromper de uma vez, justamente para o apetite voltar de forma gradual. O que cabe a você é chegar nessa conversa com o treino já acontecendo.</p>
+
+<h2>As 12 semanas depois</h2>
+<p>Este é o período em que o reganho começa, e ele é bem descrito: a fome sobe primeiro, o peso vem depois. O plano abaixo não é sofisticado — é o que precisa acontecer.</p>
+<table style="width:100%; border-collapse:collapse; margin: 1.5rem 0; font-size: 0.9rem;">
+  <thead>
+    <tr style="background:#1a1a1a;">
+      <th style="padding:10px; text-align:left; border:1px solid #333;">Período</th>
+      <th style="padding:10px; text-align:left; border:1px solid #333;">O que muda no corpo</th>
+      <th style="padding:10px; text-align:left; border:1px solid #333;">O que fazer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding:10px; border:1px solid #333;">Semanas 1 a 4</td><td style="padding:10px; border:1px solid #333;">A fome volta, e é o choque maior. O peso costuma ficar estável.</td><td style="padding:10px; border:1px solid #333;">Manter o treino sem falhar. Proteína em todas as refeições. Não cortar calorias por susto.</td></tr>
+    <tr><td style="padding:10px; border:1px solid #333;">Semanas 5 a 8</td><td style="padding:10px; border:1px solid #333;">O apetite estabiliza num patamar mais alto que o do tratamento. Pode aparecer 1 a 2 kg.</td><td style="padding:10px; border:1px solid #333;">Aqui a conta importa: comer na manutenção, não no déficit. Subir carga no treino.</td></tr>
+    <tr><td style="padding:10px; border:1px solid #333;">Semanas 9 a 12</td><td style="padding:10px; border:1px solid #333;">É onde o hábito decide. Quem parou de treinar já sente a diferença.</td><td style="padding:10px; border:1px solid #333;">Conferir o peso semanalmente, não diariamente. Ajustar comida, não motivação.</td></tr>
+  </tbody>
+</table>
+<p>Dois avisos sobre esse quadro. Primeiro: <strong>1 a 2 kg nas primeiras semanas não é recaída</strong>. Parte é água e glicogênio voltando junto com a comida normal, principalmente se o carboidrato subiu. Segundo: cortar calorias com medo do reganho é o erro mais comum e o mais caro — déficit agressivo sem o remédio segurando a fome costuma terminar em compulsão, e aí sim o peso volta.</p>
+
+<h2>A proteína muda de papel</h2>
+<p>Durante o tratamento, o problema da proteína era <em>conseguir comer</em>: com o apetite suprimido, bater 130 ou 150 gramas por dia vira tarefa. Depois de parar, o problema inverte — sobra apetite, e a proteína passa a ter uma segunda função além de preservar músculo: <strong>ela é o macro que mais sacia</strong>. Cada refeição com proteína alta é uma refeição que segura a fome por mais tempo.</p>
+<p>A faixa de referência para quem treina e quer preservar massa magra fica entre <strong>1,6 e 2,2 gramas por quilo por dia</strong>. A calculadora abaixo dá o número para o seu peso; o artigo sobre <a href="/blog/proteina-para-quem-usa-mounjaro">proteína para quem usa Mounjaro</a> explica como dividir isso ao longo do dia.</p>
+
+<h2>Quando o peso já voltou</h2>
+<p>Se você está lendo isto depois do reganho, a notícia é melhor do que parece. O corpo que treinou durante o tratamento mantém a memória muscular, e retomar é mais rápido do que construir do zero. E o segundo ciclo — com ou sem medicamento — tende a correr melhor, porque agora você sabe qual era a peça que faltava.</p>
+<p>O que não funciona é repetir o mesmo caminho esperando final diferente: voltar ao remédio sem treino de força leva ao mesmo lugar, com menos músculo a cada volta. O artigo sobre <a href="/blog/como-evitar-efeito-sanfona">efeito sanfona</a> trata desse ciclo, e vale mais que qualquer promessa nova.</p>
+
+<h2>Quem deve conversar com o médico antes</h2>
+<ul>
+  <li><strong>Quem usa o medicamento para diabetes</strong>, e não só para peso: parar muda o controle glicêmico, e isso não é decisão de artigo nenhum.</li>
+  <li><strong>Quem teve efeito colateral que motivou a parada</strong>: a conversa é outra, e a pressa costuma ser maior.</li>
+  <li><strong>Quem pensa em reduzir a dose por conta própria</strong>: o esquema de redução é prescrição, não ajuste caseiro.</li>
+</ul>
+
+<h2>Leia também</h2>
+<ul>
+  <li><a href="/blog/como-evitar-perder-massa-muscular-mounjaro">Como Evitar Perder Massa Muscular no Mounjaro</a></li>
+  <li><a href="/blog/proteina-para-quem-usa-mounjaro">Proteína para Quem Usa Mounjaro</a></li>
+  <li><a href="/blog/melhor-treino-para-quem-usa-mounjaro">O Melhor Treino para Quem Usa Mounjaro</a></li>
+  <li><a href="/blog/como-evitar-efeito-sanfona">Como Evitar o Efeito Sanfona</a></li>
+</ul>
+
+<h2>Referências</h2>
+<ul>
+<li>Leidy HJ, Clifton PM, Astrup A, et al. The role of protein in weight loss and maintenance. American Journal of Clinical Nutrition, 2015.</li>
+<li>Donnelly JE et al. Appropriate physical activity intervention strategies for weight loss and prevention of weight regain for adults. American College of Sports Medicine Position Stand, 2009.</li>
+</ul>
+`,
+  },
+  {
+    slug: "por-quanto-tempo-tomar-mounjaro",
+    title: "Por Quanto Tempo Tomar Mounjaro? Como Saber a Hora de Parar",
+    metaTitle: "Por Quanto Tempo Tomar Mounjaro? Como Saber a Hora",
+    metaDescription:
+      "Não existe prazo fixo, e a pergunta certa não é quando parar, e sim se o corpo está pronto. Os sinais de que está, e os três que dizem que ainda não.",
+    excerpt:
+      "A pergunta que quase todo mundo faz depois do quinto mês. A resposta não é um número de semanas — é um conjunto de condições que precisam estar de pé antes da última dose.",
+    category: "GLP-1",
+    date: "2026-09-03",
+    updatedAt: "2026-09-03",
+    readTime: "7 min",
+    author: "Montinho",
+    tags: ["mounjaro", "tirzepatida", "tempo de uso", "quando parar", "GLP-1", "desmame"],
+    faq: [
+      { question: "Por quanto tempo posso tomar Mounjaro?", answer: "Não existe prazo fixo, e quem define é o médico que prescreveu. Os estudos que embasaram o uso acompanharam pessoas por 72 semanas ou mais, e boa parte dos protocolos trata o medicamento como tratamento contínuo, não como ciclo com data de fim. A pergunta mais útil não é quantas semanas, e sim se o que sustenta o resultado já está construído." },
+      { question: "Como saber que chegou a hora de parar o Mounjaro?", answer: "Três condições costumam indicar que sim: o peso está estável há semanas na dose atual, o treino de força já é hábito de pelo menos dois meses, e a alimentação se sustenta sem depender do apetite suprimido. Faltando qualquer uma delas, parar é apostar. A decisão final é médica, mas essas três são o que você pode preparar." },
+      { question: "Posso parar o Mounjaro de uma vez?", answer: "A conduta usual é reduzir a dose por etapas em vez de interromper de uma hora para outra, para o apetite voltar de forma gradual e a rotina ter tempo de absorver a mudança. O esquema de redução é prescrição médica e varia por caso — não é ajuste que se faça por conta própria." },
+      { question: "O que acontece se eu tomar Mounjaro por muito tempo?", answer: "O uso prolongado é acompanhado pelo médico com exames e avaliação periódica, e é assim que os efeitos ao longo do tempo são monitorados. Do lado do treino, o risco que se acumula com os meses é outro e é o que cabe a você: cada mês emagrecendo sem treino de força é músculo a menos, e músculo a menos é gasto diário menor para sustentar depois." },
+      { question: "Preciso tomar Mounjaro para sempre?", answer: "Não necessariamente, mas tratar o medicamento como uma fase que termina sozinha é o que costuma dar errado. Ele resolve o apetite enquanto está sendo usado; o que precisa existir para depois é músculo, hábito de treino e uma alimentação que se sustente sem a ajuda química. Construir isso durante o tratamento é o que torna a parada possível." },
+    ],
+    content: `
+<h2>A resposta honesta</h2>
+<p><strong>Não existe um número de semanas.</strong> Quem define o tempo de uso é o médico que prescreveu, e os estudos que embasaram esses medicamentos acompanharam as pessoas por 72 semanas ou mais — vários protocolos tratam o remédio como tratamento contínuo, não como ciclo com data de fim.</p>
+<p>Mas existe uma pergunta melhor que "quantas semanas", e é ela que decide se a parada vai dar certo:</p>
+<ul>
+  <li><strong>O peso está estável</strong> há várias semanas na dose atual?</li>
+  <li><strong>O treino de força já é hábito</strong>, rodando há pelo menos dois meses sem falhar?</li>
+  <li><strong>A alimentação se sustenta</strong> sem depender do apetite suprimido?</li>
+</ul>
+<p>Três sins: o corpo está pronto, e a conversa com o médico sobre reduzir a dose faz sentido. Qualquer não: <strong>parar agora é apostar</strong>, e a aposta tem estatística conhecida — recupera-se, em média, cerca de 70% do peso perdido no primeiro ano sem o remédio.</p>
+
+<h2>Por que o prazo é a pergunta errada</h2>
+<p>Quem pergunta "por quanto tempo" quase sempre está perguntando outra coisa: <em>quando é que eu vou poder parar sem estragar tudo</em>. E essa pergunta não tem resposta em semanas, porque o que muda o resultado não é o calendário.</p>
+<p>O medicamento faz uma coisa só, e faz bem: reduz o apetite. Enquanto ele age, comer menos é fácil. Mas ele não constrói músculo, não cria hábito de treino e não ensina a comer — e são essas três coisas que precisam estar de pé quando ele sair. <strong>Seis meses de tratamento com treino valem mais que dois anos sem.</strong></p>
+<p>É por isso que a mesma pergunta tem respostas opostas para duas pessoas com o mesmo tempo de uso. Uma treinou desde o começo, come proteína alta e sabe o que come; a outra só tomou o remédio. Para a primeira, parar em oito meses funciona. Para a segunda, parar em dois anos vai dar no mesmo lugar.</p>
+<img src="/blog-images/por-quanto-tempo-tomar-mounjaro-capa.webp" alt="Infográfico com as três condições para poder parar o Mounjaro: peso estável há semanas na dose atual, treino de força há pelo menos dois meses e alimentação que se sustenta sem o apetite suprimido; faltando uma delas, parar é apostar" loading="lazy" style="width:100%;height:auto;border-radius:12px;margin:1.5rem 0;" />
+
+<h2>Os três sinais de que ainda não é hora</h2>
+<p>São mais úteis que os sinais positivos, porque cada um deles é acionável hoje.</p>
+<p><strong>1. Você ainda não treina força, ou treina há pouco tempo.</strong> Este é o mais grave e o mais comum. Cada mês emagrecendo sem treino de resistência é músculo a menos — e músculo a menos significa gasto diário menor para sustentar depois, exatamente quando a fome voltar. Se este é o seu caso, a resposta para "quando parar" é: <em>não antes de dois meses treinando</em>. O artigo sobre <a href="/blog/melhor-treino-para-quem-usa-mounjaro">o melhor treino para quem usa Mounjaro</a> mostra por onde começar.</p>
+<p><strong>2. A proteína nunca chegou perto da meta.</strong> Com apetite suprimido, é comum comer muito pouco de tudo, inclusive proteína — e é assim que a perda de massa magra acelera sem ninguém perceber. Se você não sabe quanta proteína come por dia, essa é a primeira coisa a resolver, e <a href="/blog/proteina-para-quem-usa-mounjaro">tem artigo específico sobre isso</a>.</p>
+<p><strong>3. Você não faz ideia de quanto come.</strong> Enquanto o remédio segura o apetite, comer "no olho" funciona. Sem ele, não funciona mais — e descobrir isso depois de parar é descobrir tarde. Ter uma noção do gasto diário do corpo de agora é o que transforma a manutenção em conta.</p>
+
+<h2>Como a redução costuma acontecer</h2>
+<p>A conduta usual não é interromper de uma vez, e sim <strong>reduzir a dose por etapas</strong>, do mesmo jeito que a dose subiu no começo do tratamento. A lógica é a mesma dos dois lados: dar tempo ao corpo. Subindo, o objetivo é reduzir efeito colateral; descendo, é o apetite voltar de forma gradual em vez de tudo de uma vez.</p>
+<p>O esquema exato — quanto reduzir, de quanto em quanto tempo — é prescrição, varia por caso e não é ajuste caseiro. O que você leva para essa conversa é o outro lado da mesa: <em>estou treinando há X meses, minha proteína está em Y gramas, meu peso está estável há Z semanas</em>. Com essas três informações, a conversa muda de "quero parar" para "estou pronto para reduzir", que é uma conversa melhor.</p>
+
+<h2>O que fazer enquanto ainda está tomando</h2>
+<p>Se a resposta hoje é "ainda não é hora", o tempo de tratamento é a melhor janela que existe — e ela é finita. O apetite suprimido torna mais fácil algo que normalmente é difícil: comer certo enquanto se constrói o hábito de treinar.</p>
+<ol>
+  <li><strong>Treino de força duas a três vezes por semana</strong>, corpo inteiro, com carga subindo. Não é cardio que preserva músculo.</li>
+  <li><strong>Proteína entre 1,6 e 2,2 g por quilo</strong>, mesmo sem fome. É a parte chata e é a que decide o que sobra.</li>
+  <li><strong>Registrar o que come</strong> por algumas semanas, só para ter noção de grandeza. Ninguém precisa contar caloria para sempre; todo mundo precisa saber o tamanho da própria porção.</li>
+</ol>
+<p>Quem faz essas três coisas durante o tratamento chega ao fim dele com o resultado sustentável. Quem não faz chega com o mesmo peso e nada para segurá-lo — e é aí que a conta do <a href="/blog/parar-de-tomar-mounjaro">reganho depois de parar</a> aparece.</p>
+
+<h2>Quem decide é o médico</h2>
+<ul>
+  <li><strong>O tempo de uso é prescrição</strong>, e nada neste artigo substitui a avaliação de quem acompanha o seu caso.</li>
+  <li><strong>Quem usa para diabetes</strong> está numa conversa diferente: parar muda o controle glicêmico, e o critério não é o peso.</li>
+  <li><strong>Efeito colateral</strong> que motive interrupção antecipa a conversa e muda a ordem das coisas.</li>
+  <li>O que este artigo responde é a outra metade da pergunta — a que depende de você, e que costuma ser a que decide o resultado.</li>
+</ul>
+
+<h2>Leia também</h2>
+<ul>
+  <li><a href="/blog/parar-de-tomar-mounjaro">Parar de Tomar Mounjaro: O Que Acontece com o Peso</a></li>
+  <li><a href="/blog/melhor-treino-para-quem-usa-mounjaro">O Melhor Treino para Quem Usa Mounjaro</a></li>
+  <li><a href="/blog/proteina-para-quem-usa-mounjaro">Proteína para Quem Usa Mounjaro</a></li>
+  <li><a href="/blog/mounjaro-faz-perder-musculos">Mounjaro Faz Perder Músculos?</a></li>
+</ul>
+
+<h2>Referências</h2>
+<ul>
+<li>Leidy HJ, Clifton PM, Astrup A, et al. The role of protein in weight loss and maintenance. American Journal of Clinical Nutrition, 2015.</li>
+<li>Donnelly JE et al. Appropriate physical activity intervention strategies for weight loss and prevention of weight regain for adults. American College of Sports Medicine Position Stand, 2009.</li>
+</ul>
+`,
+  },
   // ─────────────────────────────────────────────────────────────────────────
   // ARTIGO 1
   // ─────────────────────────────────────────────────────────────────────────

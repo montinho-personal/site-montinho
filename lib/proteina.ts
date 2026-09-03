@@ -253,6 +253,13 @@ export const ARTIGOS_COM_CALCULADORA: string[] = [
   "alimentos-ricos-em-proteina",
   "proteina-em-alimentos-tabela-completa",
   /**
+   * Ao parar o GLP-1 a proteína muda de papel: durante o tratamento ela
+   * preservava músculo, depois ela também é o macro que mais sacia — e é o
+   * músculo preservado que segura o gasto quando a fome volta. O leitor sai
+   * do artigo com "quanta proteína, no meu peso?" e a conta é essa.
+   */
+  "parar-de-tomar-mounjaro",
+  /**
    * Os três artigos de "cardápio semanal" moraram aqui até o Montinho
    * FitChef existir. Migraram para ARTIGOS_COM_CALCULADORA_CARDAPIO: num
    * artigo chamado "Cardápio Semanal para...", a pergunta do leitor é que

@@ -52,6 +52,9 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
 
   "personal-trainer-ou-aula-coletiva":
     "Decisão de formato, não de número. Quem termina de ler quer saber qual dos dois marca, e a resposta depende de lesão, objetivo e rotina — coisas que a conversa inicial resolve e nenhuma calculadora resolve.",
+
+  "por-quanto-tempo-tomar-mounjaro":
+    "A pergunta que sobra é 'já posso parar?', e a resposta são três condições — peso estável, treino de força há dois meses, comida que se sustenta — nenhuma delas um número que se calcule. Quem quiser a conta de proteína encontra a calculadora no artigo irmão, sobre parar de tomar; repeti-la aqui responderia uma pergunta que este leitor ainda não fez.",
 };
 
 export const SLUGS_SEM_FERRAMENTA = Object.keys(ARTIGOS_SEM_FERRAMENTA);
