@@ -142,10 +142,29 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
     const kcal = consomeNumero(PONTE.kcal, KCAL_MIN, KCAL_MAX);
     const peso = consomeNumero(PONTE.peso, PESO_MIN, PESO_MAX);
     if (kcal !== null || peso !== null) {
+      const anterior = restaurado ?? INICIAL;
       restaurado = {
-        ...(restaurado ?? INICIAL),
-        kcalTexto: kcal !== null ? String(kcal) : (restaurado?.kcalTexto ?? ""),
-        pesoTexto: peso !== null ? String(peso).replace(".", ",") : (restaurado?.pesoTexto ?? ""),
+        ...anterior,
+        kcalTexto: kcal !== null ? String(kcal) : anterior.kcalTexto,
+        pesoTexto: peso !== null ? String(peso).replace(".", ",") : anterior.pesoTexto,
+        /*
+         * Quem chega pela ponte veio de OUTRA calculadora com números novos e
+         * quer um cardápio novo — não o de semana passada. Como o estado
+         * salvo guarda a etapa, quem já tinha terminado uma vez voltava com
+         * etapa="resultado": o efeito de regeneração rodava na hora e a
+         * pessoa caía direto no cardápio pronto, sem ver nenhuma pergunta,
+         * inclusive a de hábitos, que é a que mais muda o resultado.
+         *
+         * A ponte entrega exatamente o que a etapa "metas" perguntaria, e só
+         * isso. As respostas seguintes continuam salvas, mas precisam ser
+         * reconfirmadas contra a meta nova, então o wizard retoma na etapa
+         * seguinte a metas em vez de pular para o fim.
+         *
+         * Só mexemos em quem estava no fim: quem parou no meio continua de
+         * onde parou, com os números novos já preenchidos.
+         */
+        etapa: anterior.etapa === "resultado" ? ORDEM[ORDEM.indexOf("metas") + 1] : anterior.etapa,
+        momentoIdx: anterior.etapa === "resultado" ? 0 : anterior.momentoIdx,
       };
       setVeioDeFora(true);
     }

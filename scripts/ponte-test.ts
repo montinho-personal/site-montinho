@@ -28,6 +28,7 @@ const semComentarios = (s: string) => s.replace(/\/\*[\s\S]*?\*\//g, "").replace
 const ler = (p: string) => semComentarios(fs.readFileSync(p, "utf8"));
 
 const ponte = fs.readFileSync("lib/ferramentas/ponte.ts", "utf8");
+const cardapio = ler("components/cardapio/MonteSeuCardapio.tsx");
 const deficit = ler("components/calorias/CalculadoraDeficit.tsx");
 const macros = ler("components/macros/CalculadoraMacros.tsx");
 const proteina = ler("components/proteina/CalculadoraProteina.tsx");
@@ -194,6 +195,40 @@ ok(
   "o 1RM aceita exercício fora da sua lista fixa",
   /exercicioExterno && !EXERCICIOS\.includes/.test(onerm),
   "sem isso, 'Cadeira extensora' viraria opção inexistente e sumiria"
+);
+
+console.log("\n" + "=".repeat(64) + "\nA PONTE NÃO PULA AS PERGUNTAS DO CARDÁPIO\n" + "=".repeat(64));
+
+/**
+ * O cardápio é a única ferramenta que salva EM QUE ETAPA a pessoa estava.
+ * Isso é bom para quem recarrega a página no meio, e foi armadilha para quem
+ * chega pela ponte: quem já tinha terminado uma vez voltava com
+ * etapa="resultado", o efeito de regeneração rodava na hora e a pessoa caía
+ * direto no cardápio pronto — sem ver nenhuma pergunta, inclusive a de
+ * hábitos, que é a que mais muda o resultado.
+ *
+ * A ponte entrega o que a etapa "metas" perguntaria, e só isso. Então quem
+ * chega por ela retoma na etapa SEGUINTE a metas, e não no fim.
+ */
+ok(
+  "quem chega pela ponte no fim do wizard volta para as perguntas",
+  /etapa:\s*anterior\.etapa === "resultado"\s*\?\s*ORDEM\[ORDEM\.indexOf\("metas"\) \+ 1\]\s*:\s*anterior\.etapa/.test(cardapio),
+  "sem isso a ponte cai direto no cardápio pronto e pula a pergunta de hábitos"
+);
+ok(
+  "a volta às perguntas zera o momento da etapa de hábitos",
+  /momentoIdx:\s*anterior\.etapa === "resultado"\s*\?\s*0\s*:\s*anterior\.momentoIdx/.test(cardapio),
+  "senão a etapa de hábitos recomeça no meio da lista de refeições"
+);
+ok(
+  "quem parou no meio continua de onde parou",
+  !/etapa:\s*ORDEM\[ORDEM\.indexOf\("metas"\) \+ 1\],/.test(cardapio),
+  "a etapa só pode ser reescrita no caso resultado — nunca incondicionalmente"
+);
+ok(
+  "recarregar SEM ponte continua devolvendo o resultado",
+  /if \(!carregado \|\| e\.etapa !== "resultado" \|\| cardapio\) return;/.test(cardapio),
+  "esse efeito é o que evita a tela em branco de quem fecha a aba no resultado"
 );
 
 console.log(falhas === 0 ? "\nTODOS OS TESTES PASSARAM\n" : `\n${falhas} TESTE(S) FALHARAM\n`);
