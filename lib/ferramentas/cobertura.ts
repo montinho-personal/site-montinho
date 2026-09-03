@@ -46,6 +46,12 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
 
   "acessorios-de-treino-valem-a-pena":
     "O artigo responde uma decisão de compra, não uma conta. Quem termina de ler quer saber se compra o cinto — e nenhuma calculadora responde isso.",
+
+  "primeira-sessao-com-personal-trainer":
+    "O leitor termina sem conta na cabeça: ele quer saber se pode marcar sem medo. A pergunta que sobra é para o WhatsApp, e o artigo já leva lá. Ferramenta aqui seria desvio no fundo do funil.",
+
+  "personal-trainer-ou-aula-coletiva":
+    "Decisão de formato, não de número. Quem termina de ler quer saber qual dos dois marca, e a resposta depende de lesão, objetivo e rotina — coisas que a conversa inicial resolve e nenhuma calculadora resolve.",
 };
 
 export const SLUGS_SEM_FERRAMENTA = Object.keys(ARTIGOS_SEM_FERRAMENTA);

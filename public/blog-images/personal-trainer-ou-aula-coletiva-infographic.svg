@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Personal trainer ou aula coletiva: a decisão por situação">
+  <title>Personal trainer ou aula coletiva: a decisão por situação</title>
+  <desc>Quando cada formato ganha, e a combinação que mais funciona - Montinho Personal Trainer</desc>
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <rect x="25" y="22" width="160" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="105" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Personal Trainer</text>
+  <text x="600" y="100" font-family="Arial,sans-serif" font-size="30" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Personal trainer ou aula coletiva: a decisão por situação</text>
+  <line x1="80" y1="130" x2="1120" y2="130" stroke="#BA9E50" stroke-width="1" opacity="0.4"/>
+  <rect x="80" y="160" width="500" height="290" rx="8" fill="#BA9E50" fill-opacity="0.10" stroke="#BA9E50" stroke-width="1" opacity="0.8"/>
+  <text x="330" y="200" font-family="Arial,sans-serif" font-size="21" fill="#BA9E50" text-anchor="middle" font-weight="bold">PERSONAL TRAINER</text>
+  <text x="110" y="245" font-family="Arial,sans-serif" font-size="19" fill="#F5F5F5">• Nunca treinou, ou parou há anos</text>
+  <text x="110" y="285" font-family="Arial,sans-serif" font-size="19" fill="#F5F5F5">• Volta de lesão ou tem limitação</text>
+  <text x="110" y="325" font-family="Arial,sans-serif" font-size="19" fill="#F5F5F5">• Quer ganhar músculo ou força</text>
+  <text x="110" y="365" font-family="Arial,sans-serif" font-size="19" fill="#F5F5F5">• Objetivo com número e prazo</text>
+  <text x="110" y="405" font-family="Arial,sans-serif" font-size="19" fill="#F5F5F5">• Precisa de correção de execução</text>
+  <rect x="620" y="160" width="500" height="290" rx="8" fill="#F5F5F5" fill-opacity="0.05" stroke="#F5F5F5" stroke-width="1" opacity="0.5"/>
+  <text x="870" y="200" font-family="Arial,sans-serif" font-size="21" fill="#F5F5F5" text-anchor="middle" font-weight="bold">AULA COLETIVA</text>
+  <text x="650" y="245" font-family="Arial,sans-serif" font-size="19" fill="#F5F5F5">• Já treina e sabe executar</text>
+  <text x="650" y="285" font-family="Arial,sans-serif" font-size="19" fill="#F5F5F5">• Quer emagrecer com gasto alto</text>
+  <text x="650" y="325" font-family="Arial,sans-serif" font-size="19" fill="#F5F5F5">• Precisa de grupo para não desistir</text>
+  <text x="650" y="365" font-family="Arial,sans-serif" font-size="19" fill="#F5F5F5">• Orçamento apertado</text>
+  <text x="650" y="405" font-family="Arial,sans-serif" font-size="19" fill="#F5F5F5">• Quer variedade e clima</text>
+  <rect x="80" y="485" width="1040" height="80" rx="8" fill="#BA9E50" fill-opacity="0.18" stroke="#BA9E50" stroke-width="1"/>
+  <text x="600" y="518" font-family="Arial,sans-serif" font-size="20" fill="#F5F5F5" text-anchor="middle" font-weight="bold">A combinação que mais funciona</text>
+  <text x="600" y="548" font-family="Arial,sans-serif" font-size="17" fill="#F5F5F5" text-anchor="middle">Personal 1 ou 2× por semana na musculação · aula coletiva como aeróbico nos outros dias</text>
+  <text x="1170" y="605" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="end" opacity="0.7">montinhopersonal.com.br</text>
+</svg>
