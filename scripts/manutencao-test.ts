@@ -21,7 +21,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { blogPosts, type BlogPost } from "../lib/blog";
 import {
-  ACADEMIA_DE_CIDADE, ALT_GENERICO, TAREFAS, altGenerico, contaH2, impressoes,
+  ACADEMIA_DE_CIDADE, ALT_GENERICO, ARTIGO_DE_LUGAR, TAREFAS, altGenerico, citaFonteNoTexto, contaH2, impressoes,
   lote, metaForaDoLimite, semCapa, semReferencias,
 } from "./manutencao";
 import { LARGURA, ALTURA, caminhoCapa, caminhoSvg } from "./gerar-capa";
@@ -45,6 +45,23 @@ ok("referências: a palavra no meio do texto NÃO conta como seção",
   semReferencias(finge({ content: "<p>as referências da literatura mostram que…</p>" })),
   "senão o robô pula artigo que precisa da seção");
 ok("referências: aceita 'Referencias' sem acento", !semReferencias(finge({ content: "<h2>Referencias</h2>" })));
+
+/* A divisão em duas filas: quem já nomeia fonte vai para a rápida. */
+ok("transcrever: reconhece fonte nomeada em prosa",
+  citaFonteNoTexto(finge({ content: "<p>Segundo Morton et al., no British Journal of Sports Medicine…</p>" })));
+ok("transcrever: texto sem fonte nenhuma não entra",
+  !citaFonteNoTexto(finge({ content: "<p>treine três vezes por semana e coma bem</p>" })));
+ok("lugar: artigo de academia de bairro fica fora das duas filas",
+  ARTIGO_DE_LUGAR(finge({ slug: "melhores-academias-de-barueri" })));
+ok("lugar: artigo científico continua dentro",
+  !ARTIGO_DE_LUGAR(finge({ slug: "creatina-para-hipertrofia" })));
+{
+  const T = TAREFAS.filter((t) => t.id.startsWith("referencias"));
+  const juntos = T.flatMap((t) => t.pendentes().map((p) => p.slug));
+  ok("nenhum artigo cai nas duas filas de referência", new Set(juntos).size === juntos.length);
+  ok("nenhum artigo de lugar entrou em fila de referência",
+    T.every((t) => t.pendentes().every((p) => !ARTIGO_DE_LUGAR(p))));
+}
 
 /* Capa: o og:image é que manda, não a existência de arquivo no disco. */
 ok("capa: artigo com <slug>-capa.webp no corpo sai da fila", !semCapa(post("quantos-dias-por-semana-treinar")));
@@ -90,10 +107,20 @@ for (const t of TAREFAS) {
 {
   const ids = TAREFAS.map((t) => t.id);
   ok("os ids são únicos", new Set(ids).size === ids.length);
-  ok("as cinco filas do combinado estão aqui",
-    ["capa-academia", "referencias", "meta", "subtitulos", "alt"].every((i) => ids.includes(i)));
-  ok("as quotas são as combinadas em 03/09 (2+2+3+3+2 = 12/dia)",
-    TAREFAS.reduce((s, t) => s + t.quota, 0) === 12);
+  ok("as seis filas do combinado estão aqui",
+    ["capa-academia", "referencias-transcrever", "referencias-pesquisar", "meta", "subtitulos", "alt"].every((i) => ids.includes(i)));
+  ok("as quotas combinadas em 03/09 (2+5+2+3+3+2 = 17/dia)",
+    TAREFAS.reduce((s, t) => s + t.quota, 0) === 17);
+  /*
+   * A divisão de 03/09: transcrever anda rápido porque a fonte já está no
+   * texto; pesquisar anda devagar porque alguém escolhe o estudo. Inverter
+   * as duas quotas seria correr risco exatamente onde não se deve.
+   */
+  const transc = TAREFAS.find((t) => t.id === "referencias-transcrever")!;
+  const pesq = TAREFAS.find((t) => t.id === "referencias-pesquisar")!;
+  ok("transcrever anda mais rápido que pesquisar", transc.quota > pesq.quota);
+  ok("pesquisar não passa de 2 por dia", pesq.quota <= 2);
+  ok("a fila de pesquisar manda marcar no PR para revisão humana", /MARQUE|PR/.test(pesq.regra));
 }
 {
   /* Um artigo em duas filas no mesmo dia significaria dois commits no mesmo texto. */
@@ -137,8 +164,8 @@ ok("o pool de fontes existe", existsSync("data/manutencao/fontes-usadas.json"));
   ok(`tem fontes suficientes para escolher (${f.length})`, f.length > 100);
   ok("toda entrada tem texto e contagem", f.every((x) => x.texto.length > 30 && x.vezes >= 1));
   ok("nenhuma entrada é um placeholder", !f.some((x) => /lorem|exemplo|TODO|xxx/i.test(x.texto)));
-  ok("a regra da tarefa aponta para este arquivo",
-    TAREFAS.find((t) => t.id === "referencias")!.regra.includes("fontes-usadas.json"));
+  ok("as duas filas de referência apontam para este arquivo",
+    TAREFAS.filter((t) => t.id.startsWith("referencias")).every((t) => t.regra.includes("fontes-usadas.json")));
 }
 
 bloco("5. A GERAÇÃO DE CAPA");

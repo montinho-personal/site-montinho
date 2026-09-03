@@ -7,10 +7,22 @@
  *
  * O QUE ESTE ARQUIVO É
  *
- * A varredura de 03/09/2026 achou cinco filas de trabalho repetitivo no
- * acervo, somando mais de 1.100 artigos. O combinado com o Renato é atacar
- * um lote por dia, sem parar o resto do trabalho. Este arquivo decide QUAIS
- * artigos entram no lote de hoje.
+ * A varredura de 03/09/2026 achou filas de trabalho repetitivo no acervo,
+ * somando mais de mil artigos. O combinado com o Renato é atacar um lote por
+ * dia, sem parar o resto do trabalho. Este arquivo decide QUAIS artigos
+ * entram no lote de hoje.
+ *
+ * A FILA DE REFERÊNCIAS É DUAS, E ISSO NÃO É DETALHE
+ *
+ * Dos 759 artigos sem referência, 496 JÁ NOMEIAM a fonte no meio do texto —
+ * ali o trabalho é transcrever, e transcrever a 5 por dia é seguro. Outros
+ * 105 não nomeiam nada: alguém precisa escolher o estudo, e é onde uma
+ * citação errada num site de saúde faz estrago. Esses vão a 2 por dia e
+ * saem marcados no PR para o Renato conferir.
+ *
+ * Os outros 158 são artigos de lugar e preço — "Melhores academias de
+ * Barueri" não se sustenta em estudo, se sustenta em ter visitado a
+ * academia. Ficam fora das duas filas.
  *
  * A FILA É DERIVADA, NUNCA ARMAZENADA
  *
@@ -97,6 +109,28 @@ export const svgDeTemplate = (p: BlogPost) => {
   return false;
 };
 
+/**
+ * O artigo já NOMEIA uma fonte no meio do texto.
+ *
+ * Foi o caso de quantas-calorias-tem-1kg-de-gordura, que dizia "Wishnofsky,
+ * 1958" em prosa e não tinha seção nenhuma. Formalizar isso é transcrição,
+ * não julgamento — e é por isso que essa fila anda mais rápido que a outra.
+ * 496 dos 759 pendentes estão neste caso, depois de tirar os de lugar.
+ */
+const NOMEIA_FONTE = /\b(et al\.|Journal of|British Journal|American Journal|Medicine & Science|Sports Medicine|Cochrane|meta-an[áa]lise|meta-analysis|PubMed|The Lancet|NEJM|revisão sistemática|systematic review)\b/i;
+export const citaFonteNoTexto = (p: BlogPost) => NOMEIA_FONTE.test(p.content);
+
+/**
+ * Artigo de lugar, preço ou comparação de academia.
+ *
+ * Estes NÃO entram na fila de referências, e a razão é de conteúdo, não de
+ * risco: "Melhores academias de Barueri" não se sustenta em estudo, se
+ * sustenta em ter visitado a academia. Anexar bibliografia científica ali é
+ * enfeite, e enfeite o Google reconhece. São 158 dos 759.
+ */
+export const ARTIGO_DE_LUGAR = (p: BlogPost) =>
+  /academia|quanto-custa|melhor-|melhores-|onde-|perto-de|como-escolher-.*(academia|personal)|alphaville|barueri|tambore|parnaiba|aldeia-da-serra|carapicuiba|osasco/i.test(p.slug);
+
 export interface Tarefa {
   id: string;
   nome: string;
@@ -119,14 +153,26 @@ export const TAREFAS: Tarefa[] = [
       + "Só então insira a <img> no topo do artigo. Se não houver SVG, PULE e diga no relatório: capa inventada é pior que capa ausente.",
   },
   {
-    id: "referencias",
-    nome: "Seção de referências",
-    quota: 2,
-    pendentes: () => blogPosts.filter(semReferencias),
+    id: "referencias-transcrever",
+    nome: "Referências: a fonte já está no texto",
+    quota: 5,
+    pendentes: () => blogPosts.filter((p) => semReferencias(p) && citaFonteNoTexto(p) && !ARTIGO_DE_LUGAR(p)),
     regra:
-      "NUNCA invente fonte, DOI, ano ou revista. Use o que está em data/manutencao/fontes-usadas.json OU uma fonte que o PRÓPRIO texto do artigo já nomeia, "
-      + "e apenas quando a fonte de fato sustenta o que o artigo afirma. Artigo em Markdown recebe `## Referências`, não a tag HTML. "
-      + "Se nenhuma servir, PULE o artigo e registre o motivo. Zero referências hoje é melhor que uma inventada.",
+      "O artigo JÁ nomeia a fonte em prosa — o trabalho é formalizar numa seção, não escolher estudo. "
+      + "Leia o trecho onde a fonte aparece e transcreva com autor, título, revista e ano. Complete com o pool "
+      + "(data/manutencao/fontes-usadas.json) quando fizer sentido. NUNCA invente DOI, ano ou revista, e NUNCA "
+      + "cite estudo que o texto não menciona. Artigo em Markdown recebe `## Referências`, não a tag HTML.",
+  },
+  {
+    id: "referencias-pesquisar",
+    nome: "Referências: precisa escolher a fonte",
+    quota: 2,
+    pendentes: () => blogPosts.filter((p) => semReferencias(p) && !citaFonteNoTexto(p) && !ARTIGO_DE_LUGAR(p)),
+    regra:
+      "AQUI MORA O RISCO: o texto não nomeia fonte nenhuma, então você escolhe. Use SÓ o pool em "
+      + "data/manutencao/fontes-usadas.json, e só quando a fonte sustenta de fato a afirmação do artigo. "
+      + "Nenhuma serve? PULE e registre. MARQUE estes artigos no corpo do PR, em seção própria, para o Renato "
+      + "conferir — foi o combinado de 03/09. Zero hoje é melhor que uma citação que não sustenta o que está escrito.",
   },
   {
     id: "meta",
@@ -188,7 +234,7 @@ function main() {
   console.log("=".repeat(78));
   console.log(`MANUTENÇÃO DO ACERVO — lote de ${new Date().toISOString().slice(0, 10)}`);
   console.log("=".repeat(78));
-  console.log(`${blogPosts.length} artigos · ${total} pendências nas cinco filas · ${lotes.reduce((s, l) => s + l.tarefa.quota, 0)} artigos por dia\n`);
+  console.log(`${blogPosts.length} artigos · ${total} pendências nas filas · ${lotes.reduce((s, l) => s + l.tarefa.quota, 0)} artigos por dia\n`);
 
   console.log("fila".padEnd(42) + "pendentes".padStart(10) + "impr".padStart(9) + "por dia".padStart(9) + "faltam".padStart(9));
   console.log("-".repeat(78));
