@@ -25,6 +25,7 @@ import {
   lote, metaForaDoLimite, semCapa, semReferencias,
 } from "./manutencao";
 import { LARGURA, ALTURA, caminhoCapa, caminhoSvg } from "./gerar-capa";
+import { acrescentaNoFim, conteudoDoArtigo, fechoDoContent, substituiNoArtigo } from "./editar-artigo";
 
 let falhas = 0;
 const ok = (nome: string, cond: boolean, detalhe = "") => {
@@ -150,6 +151,56 @@ ok("lê o infográfico do próprio slug", caminhoSvg("meu-slug").includes("/meu-
   const fila = lote(TAREFAS.find((t) => t.id === "capa-academia")!);
   const semSvg = fila.hoje.filter((p) => !existsSync(caminhoSvg(p.slug)));
   console.log(`   (aviso) do lote de hoje, ${semSvg.length} sem SVG — esses precisam ser pulados: ${semSvg.map((p) => p.slug).join(", ") || "nenhum"}`);
+}
+
+bloco("6. EDIÇÃO SEGURA DENTRO DE lib/blog.ts");
+
+/*
+ * Em 03/09/2026, duas tentativas de inserir uma seção de referências caíram
+ * no artigo errado — uma delas dentro do corpo de getPostCoverImage. Nas duas
+ * o TypeScript compilou. O culpado foi procurar o fim do artigo por
+ * indexOf("`,\n  },"), que só funciona em artigo sem campo depois do content.
+ * Estes testes existem para essa classe de erro não voltar.
+ */
+{
+  const fonte = readFileSync("lib/blog.ts", "utf8");
+  const comCampoDepois = blogPosts.find((p) => (p as any).faq?.length)!;
+  const corpo = conteudoDoArtigo(fonte, comCampoDepois.slug);
+  ok(`o content lido bate com o do blogPosts (${comCampoDepois.slug})`,
+    corpo.length === comCampoDepois.content.length,
+    `${corpo.length} × ${comCampoDepois.content.length}`);
+
+  /*
+   * O método ingênuo acerta por acaso em parte do acervo — o que o torna
+   * traiçoeiro. Aqui a afirmação é a honesta: existe artigo em que ele erra,
+   * e crossover-vs-crucifixo é um deles (foi o que mandou a referência para
+   * hip-dips-musculacao, 71 mil caracteres adiante).
+   */
+  const erram = blogPosts.filter((p) => {
+    const i = fonte.indexOf(`slug: "${p.slug}"`);
+    return fonte.indexOf("`,\n  },", i) !== fechoDoContent(fonte, p.slug);
+  });
+  ok(`o método ingênuo erra em parte do acervo (${erram.length} de ${blogPosts.length})`, erram.length > 0);
+  ok("e erra em crossover-vs-crucifixo, o caso de 03/09",
+    erram.some((p) => p.slug === "crossover-vs-crucifixo"));
+
+  const alvo = "quantas-calorias-tem-1kg-de-gordura";
+  const depois = acrescentaNoFim(fonte, alvo, "\n<p>marcador de teste</p>\n");
+  ok("acrescentaNoFim escreve no artigo certo", conteudoDoArtigo(depois, alvo).endsWith("<p>marcador de teste</p>\n"));
+  ok("e não encosta no artigo seguinte",
+    conteudoDoArtigo(depois, "crossover-vs-crucifixo") === conteudoDoArtigo(fonte, "crossover-vs-crucifixo"));
+
+  for (const [nome, fn] of [
+    ["crase fecharia o literal", () => acrescentaNoFim(fonte, alvo, "tem ` crase")],
+    ["${ seria interpolado", () => acrescentaNoFim(fonte, alvo, "tem ${x}")],
+    ["slug inexistente", () => acrescentaNoFim(fonte, "nao-existe-mesmo", "x")],
+    ["trecho ambíguo dentro do artigo", () => substituiNoArtigo(fonte, alvo, "a", "b")],
+    ["trecho que não existe no artigo", () => substituiNoArtigo(fonte, alvo, "zzz-nao-existe-zzz", "b")],
+  ] as [string, () => string][]) {
+    let erro = false;
+    try { fn(); } catch { erro = true; }
+    ok(`recusa: ${nome}`, erro);
+  }
 }
 
 console.log("\n" + "=".repeat(64));

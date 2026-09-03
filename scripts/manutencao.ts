@@ -46,9 +46,23 @@ export const ACADEMIA_DE_CIDADE = (p: BlogPost) =>
 /** og:image caiu no genérico do site: o artigo não tem capa própria. */
 export const semCapa = (p: BlogPost) => getPostCoverImage(p).url.includes("og-image.jpg");
 
-export const semReferencias = (p: BlogPost) => !/<h2>\s*Refer[êe]ncias?\s*<\/h2>/i.test(p.content);
+/**
+ * Seção de referências, nas DUAS sintaxes — mesmo motivo do contaH2: 98
+ * artigos são Markdown e escrevem `## Referências`, não `<h2>`.
+ */
+export const semReferencias = (p: BlogPost) =>
+  !/<h2>\s*Refer[êe]ncias?\s*<\/h2>/i.test(p.content) && !/^\s*##\s+Refer[êe]ncias?\s*$/im.test(p.content);
 
-export const contaH2 = (p: BlogPost) => (p.content.match(/<h2[\s>]/g) ?? []).length;
+/**
+ * Subtítulos do artigo, contando as DUAS sintaxes.
+ *
+ * 98 artigos do acervo são escritos em Markdown e usam `## `, não `<h2>`.
+ * A primeira versão desta função só via a tag HTML e jogou os 98 na fila de
+ * "sem subtítulo" — todos falsos positivos, e o robô teria "consertado" 98
+ * artigos que já estavam estruturados.
+ */
+export const contaH2 = (p: BlogPost) =>
+  (p.content.match(/<h2[\s>]/g) ?? []).length + (p.content.match(/^\s*##\s+\S/gm) ?? []).length;
 
 /** Título ou descrição que o Google corta, ou descrição curta que desperdiça espaço. */
 export const metaForaDoLimite = (p: BlogPost) => {
@@ -64,6 +78,24 @@ export const metaForaDoLimite = (p: BlogPost) => {
  */
 export const ALT_GENERICO = /alt="Infográfico sobre [^"]*—\s*Montinho Personal Trainer"/;
 export const altGenerico = (p: BlogPost) => ALT_GENERICO.test(p.content);
+
+/**
+ * Infográfico que saiu do gerador com o texto de exemplo dentro — "Ponto
+ * principal", "detalhe e contexto aqui". São 57 no disco, e vários estão
+ * PUBLICADOS: o leitor vê um cartão com texto de template.
+ *
+ * Eles ficam fora da fila de alt de propósito. Descrever o que a imagem
+ * mostra, quando ela não mostra nada, é polir problema errado — o conserto
+ * desses é refazer ou remover o infográfico, decisão que é do Renato.
+ */
+const TEXTO_DE_TEMPLATE = /Ponto principal|detalhe e contexto aqui|mais informacao relevante|dica pratica e objetiva|baseado em ciencia/i;
+export const svgDeTemplate = (p: BlogPost) => {
+  for (const m of p.content.matchAll(/src="\/blog-images\/([^"]+\.svg)"/g)) {
+    const caminho = `public/blog-images/${m[1]}`;
+    if (existsSync(caminho) && TEXTO_DE_TEMPLATE.test(readFileSync(caminho, "utf8"))) return true;
+  }
+  return false;
+};
 
 export interface Tarefa {
   id: string;
@@ -92,8 +124,8 @@ export const TAREFAS: Tarefa[] = [
     quota: 2,
     pendentes: () => blogPosts.filter(semReferencias),
     regra:
-      "NUNCA invente fonte, DOI, ano ou revista. Use apenas o que já está em data/manutencao/fontes-usadas.json, "
-      + "que é o conjunto de fontes já citadas no acervo, e apenas quando a fonte de fato sustenta o que o artigo afirma. "
+      "NUNCA invente fonte, DOI, ano ou revista. Use o que está em data/manutencao/fontes-usadas.json OU uma fonte que o PRÓPRIO texto do artigo já nomeia, "
+      + "e apenas quando a fonte de fato sustenta o que o artigo afirma. Artigo em Markdown recebe `## Referências`, não a tag HTML. "
       + "Se nenhuma servir, PULE o artigo e registre o motivo. Zero referências hoje é melhor que uma inventada.",
   },
   {
@@ -120,7 +152,7 @@ export const TAREFAS: Tarefa[] = [
     id: "alt",
     nome: "Descrição de imagem genérica",
     quota: 2,
-    pendentes: () => blogPosts.filter(altGenerico),
+    pendentes: () => blogPosts.filter((p) => altGenerico(p) && !svgDeTemplate(p)),
     regra:
       "O alt novo descreve o que a imagem MOSTRA — os números da tabela, os passos do movimento —, lendo o conteúdo "
       + "do próprio SVG em public/blog-images. Não repita o título do artigo: isso é o que o alt genérico já fazia.",
