@@ -55,6 +55,7 @@ export const NOME: Record<Ferramenta, string> = {
   tdee: "Calculadora de Gasto Calórico",
   volume: "Calculadora de Volume",
   onerm: "Calculadora de 1RM",
+  fc: "Calculadora de Zonas de Frequência Cardíaca",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -86,6 +87,7 @@ export const ROTA: Record<Ferramenta, string> = {
   tdee: "/ferramentas/calculadora-tmb-tdee",
   volume: "/ferramentas/calculadora-volume-treino",
   onerm: "/ferramentas/calculadora-1rm",
+  fc: "/ferramentas/zonas-de-frequencia-cardiaca",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -100,6 +102,7 @@ export const ROTA: Record<Ferramenta, string> = {
  *   gasto → déficit → macros               (a conta, do gasto à distribuição)
  *   1RM → volume → diagnóstico             (a carga, do exercício ao treino)
  *   academia → rotina                      (o lugar, depois a semana)
+ *   FC → gasto                             (a zona diz o esforço; o gasto diz o que ele custa)
  */
 export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string } | null> = {
   proteina: { ferramenta: "macros", label: "Calcular meus macros" },
@@ -107,6 +110,7 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   deficit: { ferramenta: "macros", label: "Distribuir em macros" },
   tdee: { ferramenta: "deficit", label: "Calcular meu déficit" },
   onerm: { ferramenta: "volume", label: "Conferir meu volume" },
+  fc: { ferramenta: "tdee", label: "Calcular meu gasto diário" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -206,6 +210,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
       interpretacao:
         "Saber a carga máxima é útil para escolher a carga de treino. Saber quando subir, quantas séries fazer e como progredir é o que transforma o número em resultado.",
       pedido: "Queria entender como usar esse número para organizar a progressão.",
+    },
+  },
+  fc: {
+    padrao: {
+      interpretacao:
+        "As zonas dizem em que esforço treinar. O que decide o resultado é quanto tempo por semana você passa em cada uma — e a régua da fala confere se o relógio está certo para você.",
+      pedido: "Queria entender como distribuir minha semana entre as zonas.",
     },
   },
   volume: {

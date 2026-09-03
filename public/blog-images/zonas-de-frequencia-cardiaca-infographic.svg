@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="As cinco zonas de frequência cardíaca para 40 anos">
+  <title>As cinco zonas de frequência cardíaca para 40 anos</title>
+  <desc>FC máxima de 180 bpm por 208 − 0,7 × idade, e as cinco zonas em batimentos com a régua da fala - Montinho Personal Trainer</desc>
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <rect x="25" y="22" width="100" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="75" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">Treino</text>
+  <text x="600" y="100" font-family="Arial,sans-serif" font-size="30" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Zonas de frequência cardíaca para 40 anos (máxima 180 bpm)</text>
+  <line x1="80" y1="130" x2="1120" y2="130" stroke="#BA9E50" stroke-width="1" opacity="0.4"/>
+  <text x="80" y="170" font-family="Arial,sans-serif" font-size="14" fill="#9a9a9a">FC máxima = 208 − 0,7 × 40 = 180 bpm · zona = % da máxima</text>
+  <rect x="80" y="195" width="208" height="56" fill="#BA9E50" fill-opacity="0.18"/>
+  <rect x="288" y="195" width="208" height="56" fill="#BA9E50" fill-opacity="0.85"/>
+  <rect x="496" y="195" width="208" height="56" fill="#BA9E50" fill-opacity="0.40"/>
+  <rect x="704" y="195" width="208" height="56" fill="#BA9E50" fill-opacity="0.55"/>
+  <rect x="912" y="195" width="208" height="56" fill="#BA9E50" fill-opacity="0.70"/>
+  <text x="184" y="219" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Zona 1</text>
+  <text x="184" y="240" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">90 a 108</text>
+  <text x="392" y="219" font-family="Arial,sans-serif" font-size="15" fill="#0d0d0d" text-anchor="middle" font-weight="bold">Zona 2</text>
+  <text x="392" y="240" font-family="Arial,sans-serif" font-size="14" fill="#0d0d0d" text-anchor="middle" font-weight="bold">108 a 126</text>
+  <text x="600" y="219" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Zona 3</text>
+  <text x="600" y="240" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">126 a 144</text>
+  <text x="808" y="219" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Zona 4</text>
+  <text x="808" y="240" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">144 a 162</text>
+  <text x="1016" y="219" font-family="Arial,sans-serif" font-size="15" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Zona 5</text>
+  <text x="1016" y="240" font-family="Arial,sans-serif" font-size="14" fill="#F5F5F5" text-anchor="middle">162 a 180</text>
+  <text x="184" y="275" font-family="Arial,sans-serif" font-size="12" fill="#9a9a9a" text-anchor="middle">50–60%</text>
+  <text x="392" y="275" font-family="Arial,sans-serif" font-size="12" fill="#9a9a9a" text-anchor="middle">60–70%</text>
+  <text x="600" y="275" font-family="Arial,sans-serif" font-size="12" fill="#9a9a9a" text-anchor="middle">70–80%</text>
+  <text x="808" y="275" font-family="Arial,sans-serif" font-size="12" fill="#9a9a9a" text-anchor="middle">80–90%</text>
+  <text x="1016" y="275" font-family="Arial,sans-serif" font-size="12" fill="#9a9a9a" text-anchor="middle">90–100%</text>
+  <text x="80" y="325" font-family="Arial,sans-serif" font-size="15" fill="#BA9E50" font-weight="600" letter-spacing="1">A RÉGUA DA FALA</text>
+  <circle cx="90" cy="365" r="6" fill="#BA9E50" fill-opacity="0.8"/>
+  <text x="115" y="371" font-family="Arial,sans-serif" font-size="20" fill="#F5F5F5">Zona 1: conversa com total conforto · Zona 2: frases inteiras</text>
+  <circle cx="90" cy="415" r="6" fill="#BA9E50" fill-opacity="0.8"/>
+  <text x="115" y="421" font-family="Arial,sans-serif" font-size="20" fill="#F5F5F5">Zona 3: só frases curtas · Zona 4: palavras soltas · Zona 5: não fala</text>
+  <circle cx="90" cy="465" r="6" fill="#BA9E50" fill-opacity="0.8"/>
+  <text x="115" y="471" font-family="Arial,sans-serif" font-size="20" fill="#F5F5F5">A régua corrige o relógio, nunca o contrário</text>
+  <circle cx="90" cy="515" r="6" fill="#BA9E50" fill-opacity="0.8"/>
+  <text x="115" y="521" font-family="Arial,sans-serif" font-size="20" fill="#F5F5F5">A máxima real varia ±10 bpm em torno da estimada</text>
+  <text x="80" y="595" font-family="Arial,sans-serif" font-size="13" fill="#9a9a9a">Tanaka, Monahan e Seals, JACC 2001 · cortes das zonas: ACSM</text>
+  <text x="1170" y="605" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="end" opacity="0.7">montinhopersonal.com.br</text>
+</svg>

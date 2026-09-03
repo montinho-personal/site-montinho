@@ -494,7 +494,7 @@ check("a página declara as limitações",
 // A regra da casa: uma ferramenta por artigo.
 const outros = [
   "lib/proteina.ts", "lib/cardapio/motor.ts", "lib/tdee.ts", "lib/calorias.ts",
-  "lib/onerm.ts", "lib/macros.ts", "lib/treino/volume.ts",
+  "lib/onerm.ts", "lib/macros.ts", "lib/treino/volume.ts", "lib/fc.ts",
 ];
 const registrosOutros = outros
   .map((f) => readFileSync(f, "utf8"))
