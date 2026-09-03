@@ -115229,6 +115229,191 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 `,
   },
+  {
+    slug: "primeira-sessao-com-personal-trainer",
+    title: "Primeira Sessão com Personal: O Que Acontece de Verdade",
+    metaTitle: "Primeira Sessão com Personal: O Que Acontece de Verdade",
+    metaDescription:
+      "Conversa, avaliação, teste de movimento e treino leve. O que rola na primeira sessão com personal, o que levar, o que não vai acontecer e os sinais de alerta.",
+    excerpt:
+      "A primeira sessão não é um treino pesado nem uma prova. É uma conversa longa, uma avaliação e um treino leve para o personal entender seu corpo. Aqui está o roteiro inteiro, para você chegar sem medo.",
+    category: "Personal Trainer",
+    date: "2026-09-03",
+    updatedAt: "2026-09-03",
+    readTime: "7 min",
+    author: "Montinho",
+    tags: ["primeira sessão", "personal trainer", "avaliação física", "iniciante", "como funciona", "personal trainer alphaville"],
+    faq: [
+      { question: "O que acontece na primeira sessão com personal trainer?", answer: "Quatro coisas, nessa ordem: uma conversa sobre histórico, rotina, lesões e objetivo; uma avaliação física com medidas e testes simples; um teste de movimento com agachamento, empurrar e puxar sem carga; e um treino leve de 20 a 30 minutos para o personal ver como você reage. Quem sai da primeira sessão sem conseguir andar treinou com o profissional errado." },
+      { question: "Preciso estar em forma para começar com personal?", answer: "Não. A primeira sessão existe justamente para descobrir de onde você parte. Personal é para quem quer começar do jeito certo, e a maioria dos alunos chega sedentária, acima do peso ou voltando de lesão. Não existe pré-requisito de condicionamento." },
+      { question: "O que levar na primeira sessão com personal?", answer: "Roupa confortável, tênis fechado, garrafa de água, e qualquer exame ou laudo médico recente que você tenha, principalmente de coluna, joelho, coração ou pressão. Se toma remédio de uso contínuo, anote o nome. Não precisa de luva, cinto ou suplemento." },
+      { question: "A primeira sessão com personal é paga?", answer: "Depende do profissional. Alguns cobram como sessão normal, outros oferecem a avaliação como aula experimental sem custo, e há quem inclua na primeira mensalidade. Pergunte antes de marcar. O que não muda é o conteúdo: mesmo sendo grátis, ela precisa ter conversa, avaliação e teste de movimento." },
+      { question: "Quanto tempo dura a primeira sessão com personal?", answer: "Entre 60 e 90 minutos, mais que uma sessão normal, porque a conversa e a avaliação tomam metade do tempo. Se durou 30 minutos e foi direto para o treino, faltou a parte mais importante." },
+      { question: "Vou sentir dor depois da primeira sessão?", answer: "Um pouco de dor muscular tardia nos dois dias seguintes é normal e passa sozinha. Dor articular, dor aguda ou não conseguir descer escada não é normal: significa que a carga da primeira sessão foi alta demais, o que é erro do profissional, não seu." },
+    ],
+    content: `
+<h2>O roteiro inteiro, em uma lista</h2>
+<p>A primeira sessão com personal trainer <strong>não é um treino pesado e não é uma prova</strong>. É uma sessão de 60 a 90 minutos em que o personal aprende sobre você antes de prescrever qualquer coisa. Com um bom profissional, ela tem quatro partes:</p>
+<ul>
+  <li><strong>Conversa (20 a 30 min):</strong> histórico, lesões, rotina, sono, o que já tentou, o que quer</li>
+  <li><strong>Avaliação (15 a 20 min):</strong> peso, medidas, pressão, e testes simples de força e mobilidade</li>
+  <li><strong>Teste de movimento (10 a 15 min):</strong> agachar, empurrar, puxar e dobrar o quadril sem carga</li>
+  <li><strong>Treino leve (20 a 30 min):</strong> os exercícios que vão aparecer no seu plano, com carga baixa, para o personal ver como você reage</li>
+  <li><strong>Depois:</strong> o plano chega em um ou dois dias, montado com o que ele viu, não antes</li>
+</ul>
+<img src="/blog-images/primeira-sessao-com-personal-trainer-infographic.svg" alt="Infográfico da primeira sessão com personal trainer: conversa de 20 a 30 minutos, avaliação de 15 a 20, teste de movimento de 10 a 15 e treino leve de 20 a 30; o plano chega em um ou dois dias" loading="lazy" style="width:100%;height:auto;border-radius:12px;margin:1.5rem 0;" />
+<p>Se você está adiando a primeira sessão porque não sabe o que esperar, o resto desta página é para você. Se já marcou, ela diz o que levar e o que cobrar.</p>
+
+<h2>Parte 1: a conversa, que é a parte mais importante</h2>
+<p>Um personal que começa a sessão mandando você para a esteira não está avaliando, está preenchendo tempo. A primeira meia hora precisa ser sentada, e o profissional é quem faz as perguntas:</p>
+<ul>
+  <li><strong>Histórico de saúde:</strong> lesões, cirurgias, dores recorrentes, pressão, diabetes, remédios de uso contínuo, e qualquer exame recente</li>
+  <li><strong>Histórico de treino:</strong> o que já fez, por quanto tempo, por que parou. Quem parou três vezes por causa de dor no joelho precisa de outro plano que quem parou por falta de tempo</li>
+  <li><strong>Rotina real:</strong> horário de trabalho, sono, quantos dias por semana cabem de verdade, se viaja, se tem filho pequeno. O treino que não cabe na sua semana é o treino que você abandona</li>
+  <li><strong>Objetivo, e o motivo por trás dele:</strong> "emagrecer" é o que a pessoa diz; "subir escada sem cansar" ou "caber na roupa do casamento" é o que ela quer. O segundo é o que dá para medir</li>
+</ul>
+<p>Nesta parte, seja honesto sobre o que não vai fazer. Se você não vai treinar cinco vezes por semana, diga. Se odeia correr, diga. O plano bom é o que parte da sua vida, não da vida ideal.</p>
+
+<h2>Parte 2: a avaliação física</h2>
+<p>Peso, altura, circunferências (cintura, quadril, braço, coxa), e em geral pressão arterial e frequência cardíaca de repouso. Alguns profissionais usam adipômetro ou bioimpedância para estimar o percentual de gordura; outros preferem só fita e fotos, que são mais consistentes ao longo do tempo. Nenhum dos dois é "melhor": o que importa é repetir o mesmo método a cada 6 a 8 semanas para ver a direção.</p>
+<p>Um aviso. A avaliação existe para marcar o ponto de partida, não para julgar. Personal que comenta o número da balança com cara feia, ou que usa a avaliação para vender pacote em cima da sua insegurança, está te dizendo quem ele é. Bom profissional anota, explica o que cada número significa e segue em frente.</p>
+
+<h2>Parte 3: o teste de movimento</h2>
+<p>Esta é a parte que separa avaliação de verdade de formulário. O personal pede alguns movimentos básicos <strong>sem carga ou com carga mínima</strong> e observa:</p>
+<ul>
+  <li><strong>Agachamento livre:</strong> os joelhos caem para dentro? O calcanhar levanta? Até onde desce sem a lombar arredondar?</li>
+  <li><strong>Dobrar o quadril</strong> (levantamento terra com bastão ou halter leve): você dobra pelo quadril ou pela coluna?</li>
+  <li><strong>Empurrar</strong> (flexão na parede ou no banco): o ombro sobe até a orelha? O cotovelo abre demais?</li>
+  <li><strong>Puxar</strong> (remada com elástico ou máquina leve): a escápula se mexe ou só o braço?</li>
+  <li><strong>Mobilidade de ombro e tornozelo:</strong> os dois limitam mais exercícios do que qualquer outra articulação</li>
+</ul>
+<p>O que ele vê aqui decide o seu primeiro mês. Quem não consegue agachar sem o calcanhar subir não vai receber agachamento livre com barra na semana 1, vai receber o degrau anterior. Isso não é "treino de fraco": é a diferença entre progredir e se machucar em 60 dias.</p>
+
+<h2>Parte 4: o treino leve</h2>
+<p>Os últimos 20 a 30 minutos são um treino de verdade, mas com carga baixa e volume pequeno: 5 ou 6 exercícios, 2 séries cada, longe da falha. O objetivo não é cansar você. É o personal ver como você executa com um pouco de peso, quanto descansa entre séries, e como reage a esforço.</p>
+<p><strong>O que não vai acontecer:</strong> você não vai fazer 60 minutos de exercício até tremer, não vai "testar seu limite", não vai vomitar. Personal que faz isso na primeira sessão está tentando impressionar, e o custo é uma <a href="/blog/dor-muscular-tardia-doms">dor muscular</a> tão forte nos dias seguintes que metade dos alunos não volta para a segunda. Um pouco de dor muscular tardia é normal. Não conseguir descer escada não é.</p>
+
+<h2>O que levar e como ir</h2>
+<ul>
+  <li><strong>Roupa confortável e tênis fechado.</strong> Nada especial</li>
+  <li><strong>Água.</strong> A academia costuma ter, mas não dependa</li>
+  <li><strong>Exames ou laudos recentes</strong>, se tiver: coluna, joelho, coração, pressão, ortopedista. Foto no celular basta</li>
+  <li><strong>Nome dos remédios</strong> de uso contínuo. Betabloqueador, por exemplo, muda como o personal deve ler sua frequência cardíaca</li>
+  <li><strong>Coma algo leve</strong> 1 a 2 horas antes. Não vá em jejum, não vá depois de um almoço pesado</li>
+  <li><strong>Não precisa</strong> de luva, cinto, suplemento, nem de estar em forma. A sessão existe justamente para descobrir de onde você parte</li>
+</ul>
+
+<h2>Sinais de que você está com o profissional errado</h2>
+<p>A primeira sessão também é a sua avaliação dele. Alguns sinais que aparecem já no primeiro dia:</p>
+<ul>
+  <li><strong>Foi direto para o treino</strong>, sem perguntar sobre lesão, rotina ou objetivo</li>
+  <li><strong>Entregou a ficha pronta antes de te ver</strong> treinar. Ficha genérica com nome trocado</li>
+  <li><strong>Treino pesado no primeiro dia</strong>, "para ver do que você é capaz"</li>
+  <li><strong>Olhou o celular</strong> durante as suas séries</li>
+  <li><strong>Usou a balança para vender</strong> pacote maior, suplemento ou "detox"</li>
+  <li><strong>Prometeu resultado com prazo</strong>: "10 kg em 30 dias". Quem faz isso ou está mentindo ou vai te colocar em risco</li>
+</ul>
+<p>O guia de <a href="/blog/como-escolher-um-bom-personal-trainer">como escolher um bom personal trainer</a> aprofunda esses critérios. Aqui o ponto é: na primeira sessão, você já tem informação suficiente para decidir se continua.</p>
+
+<h2>Como eu faço a primeira sessão</h2>
+<p>Eu pesava mais de 40 kg a mais do que peso hoje quando comecei a treinar, e a minha primeira sessão foi com alguém que me mandou correr. Lembro da vergonha, e lembro de quase não voltar. É por isso que a minha primeira sessão é a mais longa de todas e a menos cansativa. Sento, pergunto, ouço. Meço o que precisa ser medido e explico cada número. Peço quatro movimentos sem peso e observo. Depois, um treino curto com carga que você consegue fazer sorrindo. O plano chega no dia seguinte, montado a partir do que eu vi, e não antes.</p>
+<p>Quem me procura em <a href="/personal-trainer-alphaville">Alphaville</a> e região chega, na maioria das vezes, sem treinar há anos, ou voltando de uma lesão, ou cansado de academia sem resultado. A primeira sessão é para essa pessoa, não para quem já está em forma. Se você está nesse ponto e quer saber como funciona antes de marcar, a <a href="/contato">conversa inicial</a> é sem compromisso, e a resposta honesta sobre o que <a href="/blog/quanto-custa-personal-trainer-alphaville">custa</a> está no site.</p>
+
+<h2>E depois da primeira sessão</h2>
+<p>O plano deve chegar em um ou dois dias, com os exercícios que você já fez na sessão e a progressão das primeiras semanas. As primeiras quatro sessões costumam ser de aprendizado de execução, com carga subindo devagar. Resultado visível na roupa leva de 6 a 8 semanas para a maioria das pessoas; na energia e no sono, duas. Se você está começando do zero, o artigo sobre a <a href="/blog/primeira-semana-na-academia">primeira semana na academia</a> mostra o que esperar do corpo nesses dias, e o de <a href="/blog/como-sair-do-sedentarismo">como sair do sedentarismo</a> explica por que o primeiro mês é o que mais importa.</p>
+
+<h2>Leia também</h2>
+<ul>
+  <li><a href="/blog/como-escolher-um-bom-personal-trainer">Como Escolher um Bom Personal Trainer</a></li>
+  <li><a href="/blog/academia-ou-personal-trainer">Academia ou Personal Trainer: Qual Vale Mais a Pena?</a></li>
+  <li><a href="/blog/quanto-custa-personal-trainer-alphaville">Quanto Custa um Personal Trainer em Alphaville</a></li>
+  <li><a href="/blog/personal-trainer-online-como-funciona">Personal Trainer Online: Como Funciona</a></li>
+</ul>
+`,
+  },
+  {
+    slug: "personal-trainer-ou-aula-coletiva",
+    title: "Personal Trainer ou Aula Coletiva: Qual Escolher?",
+    metaTitle: "Personal Trainer ou Aula Coletiva: Qual Escolher?",
+    metaDescription:
+      "Aula coletiva custa menos e anima mais; personal corrige, individualiza e progride. A comparação honesta por objetivo, orçamento, lesão e rotina.",
+    excerpt:
+      "A aula coletiva ganha em preço e clima. O personal ganha em correção, progressão e resultado medido. A resposta depende do que você quer, e do que já deu errado antes.",
+    category: "Personal Trainer",
+    date: "2026-09-03",
+    updatedAt: "2026-09-03",
+    readTime: "7 min",
+    author: "Montinho",
+    tags: ["personal trainer", "aula coletiva", "aula em grupo", "como escolher", "comparativo", "personal trainer alphaville"],
+    faq: [
+      { question: "Aula coletiva dá resultado?", answer: "Dá, para condicionamento, gasto calórico e constância, principalmente para quem gosta do clima de grupo. Onde ela perde é em correção de execução, progressão de carga e adaptação a lesão: o professor divide a atenção com 20 pessoas e o treino é o mesmo para todos. Para emagrecer com quem já é ativo, funciona bem; para ganhar força, corrigir postura ou voltar de lesão, não é a ferramenta certa." },
+      { question: "Personal trainer vale a pena para iniciante?", answer: "É quando ele mais vale. Os primeiros três meses definem os padrões de movimento que a pessoa vai carregar por anos, e é o momento de maior risco de lesão e de desistência. Um personal nesse período custa mais que a aula coletiva, mas costuma ser o que separa quem continua de quem para em 60 dias." },
+      { question: "Qual é a diferença de preço entre personal e aula coletiva?", answer: "A aula coletiva em geral vem incluída na mensalidade da academia ou custa uma fração dela. O personal presencial em Alphaville e região fica entre 100 e 250 reais por sessão, dependendo de frequência e formato. A conta certa não é o preço da sessão, é o custo por resultado: uma aula coletiva que você abandona em dois meses custa mais que um personal que te mantém treinando por um ano." },
+      { question: "Dá para fazer personal e aula coletiva ao mesmo tempo?", answer: "É uma das melhores combinações. O personal cuida da parte que precisa de individualização, em geral a musculação e a progressão de carga, uma ou duas vezes por semana; a aula coletiva entra como aeróbico e como o dia de treinar por prazer. O personal, sabendo da aula, ajusta o volume para os dois não se atrapalharem." },
+      { question: "Quem tem lesão pode fazer aula coletiva?", answer: "Depende da lesão e da aula, mas a regra é cautela: a aula coletiva não adapta o exercício para você, e o professor não vai ver o seu joelho ceder no meio de 20 alunos. Quem volta de lesão começa com acompanhamento individual, aprende o que pode e o que não pode, e só depois entra em aula de grupo com esse conhecimento." },
+    ],
+    content: `
+<h2>A resposta rápida</h2>
+<p>Depende de três coisas: <strong>o que você quer, o que já deu errado antes, e se tem alguma lesão</strong>. A aula coletiva ganha em preço, clima e constância para quem gosta de grupo. O personal ganha em correção de execução, progressão de carga e adaptação ao seu corpo. A tabela resume; o resto da página explica cada linha.</p>
+<table style="width:100%; border-collapse:collapse; margin: 1.5rem 0; font-size: 0.9rem;">
+  <thead>
+    <tr style="background:#1a1a1a;">
+      <th style="padding:10px; text-align:left; border:1px solid #333;">Critério</th>
+      <th style="padding:10px; text-align:left; border:1px solid #333;">Aula coletiva</th>
+      <th style="padding:10px; text-align:left; border:1px solid #333;">Personal trainer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding:10px; border:1px solid #333;">Preço</td><td style="padding:10px; border:1px solid #333;">Baixo, muitas vezes incluído na academia</td><td style="padding:10px; border:1px solid #333;">Alto por sessão</td></tr>
+    <tr><td style="padding:10px; border:1px solid #333;">Correção de execução</td><td style="padding:10px; border:1px solid #333;">Pouca: 1 professor para 15 a 30 alunos</td><td style="padding:10px; border:1px solid #333;">Total: é o trabalho dele</td></tr>
+    <tr><td style="padding:10px; border:1px solid #333;">Progressão de carga</td><td style="padding:10px; border:1px solid #333;">Igual para todos, ou nenhuma</td><td style="padding:10px; border:1px solid #333;">Planejada para você, semana a semana</td></tr>
+    <tr><td style="padding:10px; border:1px solid #333;">Lesão ou limitação</td><td style="padding:10px; border:1px solid #333;">Não adapta; você se vira</td><td style="padding:10px; border:1px solid #333;">Adapta cada exercício</td></tr>
+    <tr><td style="padding:10px; border:1px solid #333;">Motivação</td><td style="padding:10px; border:1px solid #333;">Alta pelo grupo e pela música</td><td style="padding:10px; border:1px solid #333;">Alta pelo compromisso marcado</td></tr>
+    <tr><td style="padding:10px; border:1px solid #333;">Horário</td><td style="padding:10px; border:1px solid #333;">Fixo, da grade da academia</td><td style="padding:10px; border:1px solid #333;">Combinado com você</td></tr>
+    <tr><td style="padding:10px; border:1px solid #333;">Melhor para</td><td style="padding:10px; border:1px solid #333;">Condicionamento, gasto calórico, quem já treina</td><td style="padding:10px; border:1px solid #333;">Iniciante, força, hipertrofia, volta de lesão</td></tr>
+  </tbody>
+</table>
+
+<h2>Onde a aula coletiva ganha</h2>
+<p><strong>Preço.</strong> Na maioria das academias a aula coletiva vem na mensalidade. É a forma mais barata de ter alguém conduzindo o seu treino.</p>
+<p><strong>Clima.</strong> Música, gente junto, um professor animando. Para muita gente é isso que faz a diferença entre ir e não ir, e constância é o que mais importa no primeiro ano. Quem vai três vezes por semana à aula de que gosta está na frente de quem tem o plano perfeito e vai uma.</p>
+<p><strong>Gasto calórico.</strong> Aulas de bike, dança, HIIT e funcional acumulam 300 a 500 calorias por sessão com facilidade, porque o formato empurra você a se mexer sem parar. Para quem quer emagrecer e já tem base, é eficiente.</p>
+<p><strong>Variedade.</strong> A grade muda, o professor muda, o estímulo muda. Tédio é uma das razões mais comuns de abandono e a aula coletiva combate isso de graça.</p>
+
+<h2>Onde o personal ganha</h2>
+<p><strong>Correção.</strong> Um professor de aula coletiva olha para 20 pessoas. Ele vai ver que o seu joelho cai para dentro no agachamento? Talvez, uma vez. Vai corrigir a cada série até virar automático? Não tem como. O personal faz exatamente isso, e é aí que se decide se você vai treinar por dez anos ou parar por causa do joelho em dois.</p>
+<p><strong>Progressão.</strong> O corpo muda quando a carga sobe de forma planejada. Na aula coletiva, o peso do kettlebell é o que está no chão, e o número de repetições é o que cabe na música. Com personal, existe um <a href="/blog/como-ganhar-massa-muscular">plano de progressão</a>: mais carga, mais série ou mais dificuldade a cada semana, registrado. É a diferença entre se exercitar e treinar.</p>
+<p><strong>Adaptação.</strong> Hérnia, ombro operado, pressão alta, gestação, 65 anos, joelho que dói ao agachar: a aula coletiva não tem como adaptar para você, e o professor não vai te ver falhar no meio da turma. O personal troca o exercício, muda a amplitude, regula a carga. Para quem tem qualquer limitação, isso não é luxo, é segurança.</p>
+<p><strong>Objetivo específico.</strong> Ganhar massa muscular, fazer a primeira barra fixa, tirar a dor lombar, chegar a um percentual de gordura: objetivos com número precisam de plano individual. A aula coletiva entrega condicionamento geral, e é ótima nisso, mas não entrega um objetivo específico seu.</p>
+
+<h2>A decisão, por situação</h2>
+<img src="/blog-images/personal-trainer-ou-aula-coletiva-infographic.svg" alt="Infográfico: personal trainer ou aula coletiva por situação. Iniciante do zero, volta de lesão, hipertrofia e força: personal. Já treina e quer emagrecer, quer constância e clima, orçamento apertado: aula coletiva. Combinação: personal 1 a 2 vezes na musculação, aula coletiva como aeróbico" loading="lazy" style="width:100%;height:auto;border-radius:12px;margin:1.5rem 0;" />
+<ul>
+  <li><strong>Nunca treinou, ou parou há anos:</strong> personal, pelo menos nos 3 primeiros meses. É quando os padrões de movimento se formam e quando o risco de desistir é maior. Depois de aprender a executar, a aula coletiva vira uma opção segura.</li>
+  <li><strong>Volta de lesão ou tem limitação:</strong> personal, sem discussão. A aula coletiva entra depois, com o conhecimento do que pode e do que não pode.</li>
+  <li><strong>Quer ganhar músculo ou força:</strong> personal, ou pelo menos um plano individual. <a href="/blog/treino-funcional-vs-musculacao">Funcional em grupo</a> não constrói hipertrofia de forma consistente porque não progride carga.</li>
+  <li><strong>Já treina, sabe executar, quer emagrecer:</strong> aula coletiva funciona muito bem, principalmente as de maior gasto. O que decide o emagrecimento é o déficit calórico, e a aula ajuda a fechar a conta com clima.</li>
+  <li><strong>Precisa de gente para não desistir:</strong> aula coletiva. Ou personal em dupla, que existe e divide o custo.</li>
+  <li><strong>Orçamento apertado:</strong> aula coletiva agora, e uma sessão avulsa de personal a cada 4 a 6 semanas para revisar execução e progressão. Custa pouco e resolve o maior defeito do grupo.</li>
+</ul>
+
+<h2>A combinação que mais funciona</h2>
+<p>Não é ou um ou outro. A montagem que mais vejo dar certo é <strong>personal uma ou duas vezes por semana na musculação</strong>, que é a parte que exige correção e progressão, e <strong>aula coletiva como aeróbico</strong> nos outros dias, que é a parte em que o grupo ajuda e a individualização importa menos. O personal, sabendo da aula, regula o volume para os dois não se atrapalharem, e você tem correção, progressão, clima e preço num plano só.</p>
+<p>O que não funciona é a aula coletiva como única fonte de musculação por anos. O corpo se adapta em três meses ao estímulo fixo, e a partir daí é manutenção, não evolução. Se você faz funcional há dois anos e está igual, o problema não é você.</p>
+
+<h2>Como eu vejo isso, do lado de dentro</h2>
+<p>Comecei a treinar com mais de 40 kg acima do peso, e no começo o que me segurou foi grupo, gente perto, alguém animando. Não teria continuado sozinho. Mas o que me fez mudar de corpo foi outra coisa: alguém olhando para a minha execução, subindo a carga quando eu podia e segurando quando não podia. As duas coisas foram necessárias, em momentos diferentes.</p>
+<p>É por isso que quem me procura em <a href="/personal-trainer-alphaville">Alphaville</a> e região não ouve de mim que aula coletiva é ruim. Ouve a pergunta: o que você quer, o que já tentou, o que dói. A resposta define a montagem, e às vezes a resposta é "continue na sua aula e me chame uma vez por mês". A <a href="/contato">conversa inicial</a> é para isso, e o que cada formato <a href="/blog/quanto-custa-personal-trainer-alphaville">custa</a> está explicado sem enrolação.</p>
+
+<h2>Leia também</h2>
+<ul>
+  <li><a href="/blog/academia-ou-personal-trainer">Academia ou Personal Trainer: Qual Vale Mais a Pena?</a></li>
+  <li><a href="/blog/primeira-sessao-com-personal-trainer">Primeira Sessão com Personal Trainer: O Que Acontece</a></li>
+  <li><a href="/blog/treino-funcional-vs-musculacao">Treino Funcional vs Musculação</a></li>
+  <li><a href="/blog/como-escolher-um-bom-personal-trainer">Como Escolher um Bom Personal Trainer</a></li>
+</ul>
+`,
+  },
 ]) as BlogPost[];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
