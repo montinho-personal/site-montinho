@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Por quanto tempo tomar Mounjaro: as tres condicoes para poder parar">
+  <title>Por quanto tempo tomar Mounjaro: as tres condicoes para poder parar</title>
+  <desc>Infografico: as tres condicoes para poder parar o Mounjaro - peso estavel, treino de forca ha dois meses e alimentacao que se sustenta - Montinho Personal Trainer</desc>
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <rect x="0" y="0" width="5" height="630" fill="#BA9E50"/>
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#BA9E50" stroke-width="1" opacity="0.3"/>
+  <rect x="25" y="22" width="66" height="28" rx="12" fill="#BA9E50" fill-opacity="0.15" stroke="#BA9E50" stroke-width="1" opacity="0.6"/>
+  <text x="58" y="41" font-family="Arial,sans-serif" font-size="13" fill="#BA9E50" text-anchor="middle" font-weight="600">GLP-1</text>
+  <text x="600" y="92" font-family="Arial,sans-serif" font-size="30" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Nao e quantas semanas. E se o corpo esta pronto.</text>
+  <text x="600" y="124" font-family="Arial,sans-serif" font-size="17" fill="#BA9E50" text-anchor="middle">As tres condicoes que precisam estar de pe antes da ultima dose</text>
+
+  <rect x="60" y="170" width="340" height="250" rx="14" fill="#1a1a1a" stroke="#BA9E50" stroke-width="1.5"/>
+  <circle cx="230" cy="222" r="30" fill="#0d0d0d" stroke="#BA9E50" stroke-width="2"/>
+  <text x="230" y="232" font-family="Arial,sans-serif" font-size="24" fill="#BA9E50" text-anchor="middle" font-weight="bold">1</text>
+  <text x="230" y="290" font-family="Arial,sans-serif" font-size="20" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Peso estavel</text>
+  <text x="230" y="330" font-family="Arial,sans-serif" font-size="15" fill="#CFCFCF" text-anchor="middle">Ha varias semanas</text>
+  <text x="230" y="356" font-family="Arial,sans-serif" font-size="15" fill="#CFCFCF" text-anchor="middle">na dose atual</text>
+
+  <rect x="430" y="170" width="340" height="250" rx="14" fill="#1a1a1a" stroke="#BA9E50" stroke-width="1.5"/>
+  <circle cx="600" cy="222" r="30" fill="#0d0d0d" stroke="#BA9E50" stroke-width="2"/>
+  <text x="600" y="232" font-family="Arial,sans-serif" font-size="24" fill="#BA9E50" text-anchor="middle" font-weight="bold">2</text>
+  <text x="600" y="290" font-family="Arial,sans-serif" font-size="20" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Treino ja e habito</text>
+  <text x="600" y="330" font-family="Arial,sans-serif" font-size="15" fill="#CFCFCF" text-anchor="middle">Forca rodando ha pelo</text>
+  <text x="600" y="356" font-family="Arial,sans-serif" font-size="15" fill="#CFCFCF" text-anchor="middle">menos dois meses</text>
+
+  <rect x="800" y="170" width="340" height="250" rx="14" fill="#1a1a1a" stroke="#BA9E50" stroke-width="1.5"/>
+  <circle cx="970" cy="222" r="30" fill="#0d0d0d" stroke="#BA9E50" stroke-width="2"/>
+  <text x="970" y="232" font-family="Arial,sans-serif" font-size="24" fill="#BA9E50" text-anchor="middle" font-weight="bold">3</text>
+  <text x="970" y="290" font-family="Arial,sans-serif" font-size="20" fill="#F5F5F5" text-anchor="middle" font-weight="bold">Comida se sustenta</text>
+  <text x="970" y="330" font-family="Arial,sans-serif" font-size="15" fill="#CFCFCF" text-anchor="middle">Sem depender do</text>
+  <text x="970" y="356" font-family="Arial,sans-serif" font-size="15" fill="#CFCFCF" text-anchor="middle">apetite suprimido</text>
+
+  <rect x="60" y="452" width="1080" height="66" rx="12" fill="#BA9E50" fill-opacity="0.12" stroke="#BA9E50" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="600" y="493" font-family="Arial,sans-serif" font-size="19" fill="#F5F5F5" text-anchor="middle">Tres sins: a conversa com o medico sobre reduzir a dose faz sentido</text>
+  <rect x="60" y="534" width="1080" height="58" rx="12" fill="#1a1a1a" stroke="#BA9E50" stroke-width="1.5"/>
+  <text x="600" y="570" font-family="Arial,sans-serif" font-size="19" fill="#CFCFCF" text-anchor="middle">Qualquer nao: parar agora e apostar — e a estatistica e conhecida</text>
+
+  <text x="1175" y="616" font-family="Arial,sans-serif" font-size="12" fill="#BA9E50" text-anchor="end" opacity="0.7">montinhopersonal.com.br</text>
+</svg>
