@@ -13,7 +13,8 @@
  * Foi para não decidir conteúdo em cima disso que esta suíte existe.
  */
 
-import { num, csv, leGsc, leXlsx, cluster, ctrEsperado } from "./gsc-local";
+import { num, csv, leGsc, leXlsx, cluster, ctrEsperado, montaMarco, marcoAnterior, dataFimDoExport, VIGIADAS, PASTA_MARCOS } from "./gsc-local";
+import { existsSync, readdirSync } from "node:fs";
 
 let falhas = 0;
 function ok(nome: string, cond: boolean, detalhe = "") {
@@ -148,6 +149,50 @@ ok("posição 20 abaixo da 10", ctrEsperado(20) < ctrEsperado(10));
 ok("interpola entre pontos", ctrEsperado(12.5) < ctrEsperado(10) && ctrEsperado(12.5) > ctrEsperado(15));
 ok("posição absurda não vira negativo", ctrEsperado(300) > 0);
 ok("posição fracionária funciona", ctrEsperado(8.1) < ctrEsperado(8) && ctrEsperado(8.1) > ctrEsperado(9));
+
+// ─── 6 ──────────────────────────────────────────────────────────────────────
+bloco("6. O MARCO E A COMPARAÇÃO");
+
+/*
+ * A decisão de 03/09/2026 foi "deixar como está e vigiar". Vigiar é comparar
+ * com o marco anterior — e o erro possível aqui é comparar com o marco
+ * ERRADO: o mais novo em vez do imediatamente anterior, ou o próprio período
+ * consigo mesmo, o que mostraria "=" em tudo e pareceria estabilidade.
+ */
+{
+  const L = (url: string, cliques: number, impressoes: number, posicao: number) =>
+    ({ url: "https://www.montinhopersonal.com.br" + url, cliques, impressoes, ctr: impressoes ? (100 * cliques) / impressoes : 0, posicao });
+  const m = montaMarco("2026-09-02", [
+    L("/personal-trainer-alphaville", 1, 130, 32.6),
+    L("/blog/personal-trainer-tambore-1", 2, 4, 6.2),
+    L("/blog/personal-trainer-tambore-4", 0, 1, 2.0),
+    L("/blog/personal-trainer-alphaville-residencial-1", 2, 69, 15.8),
+    L("/personal-trainer-tambore", 8, 230, 16.8),
+  ]);
+  ok("guarda o caminho, não a URL inteira", m.locais.every((p) => p.url.startsWith("/")));
+  ok("Tamboré numerados: só os com dígito", m.chaves.tamboreNumerados.paginas === 2 && m.chaves.tamboreNumerados.impressoes === 5);
+  ok("Alphaville residenciais contados à parte", m.chaves.alphavilleResidenciais.paginas === 1);
+  ok("páginas sem clique", m.chaves.locaisSemClique === 1);
+  ok("posição do cluster ponderada por impressão",
+    Math.abs(m.clusters["Tamboré"].posicao - ((230 * 16.8 + 4 * 6.2 + 1 * 2) / 235)) < 0.1, String(m.clusters["Tamboré"].posicao));
+  ok("cluster Alphaville soma as duas páginas", m.clusters["Alphaville"].paginas === 2);
+}
+{
+  ok("o marco de 02/09/2026 está gravado", existsSync(`${PASTA_MARCOS}/2026-09-02.json`));
+  ok("marcoAnterior a 2026-09-02 é null (é o primeiro)", marcoAnterior("2026-09-02") === null);
+  const depois = marcoAnterior("2026-12-31");
+  ok("marcoAnterior a uma data futura devolve o de 02/09", depois?.periodo === "2026-09-02");
+  ok("o marco gravado tem as páginas vigiadas",
+    VIGIADAS.every(([u]) => depois!.locais.some((p) => p.url === u)),
+    VIGIADAS.filter(([u]) => !depois!.locais.some((p) => p.url === u)).map(([u]) => u).join(", "));
+  ok("nomes de arquivo são a data-fim do período",
+    readdirSync(PASTA_MARCOS).every((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)));
+}
+{
+  /* A data sai da aba Filtros; a fixture não tem essa aba, então cai no dia de hoje. */
+  const hoje = new Date().toISOString().slice(0, 10);
+  ok("sem aba Filtros, a data do marco é hoje", dataFimDoExport(FIX) === hoje);
+}
 
 console.log("\n" + "=".repeat(64));
 if (falhas) { console.log(`${falhas} TESTE(S) FALHARAM`); process.exit(1); }
