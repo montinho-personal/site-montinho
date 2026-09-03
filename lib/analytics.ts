@@ -151,6 +151,17 @@ export type AnalyticsEvent =
   | "tdee_article_click"
 
   /**
+   * Calculadora de zonas de frequência cardíaca. Idade e FC de repouso são
+   * dados do corpo, e FC máxima e limite de zona são função direta da
+   * idade — nada disso entra em parâmetro de evento. Só placement.
+   */
+  | "heart_rate_calculator_view"
+  | "heart_rate_calculator_use"
+  | "heart_rate_resting_open"
+  | "heart_rate_methodology_open"
+  | "heart_rate_article_click"
+
+  /**
    * Calculadora de 1RM. Mesma regra: carga, repetições e o 1RM estimado são
    * desempenho individual e NUNCA entram em parâmetro de evento. Não
    * precisamos armazenar o quanto ninguém levanta para saber se a

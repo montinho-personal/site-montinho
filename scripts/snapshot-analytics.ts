@@ -185,6 +185,7 @@ const FERR: Array<[string, string, string]> = [
   ["rotina", "routine_tool_view", "routine_tool_complete"],
   ["proteina", "protein_calculator_view", "protein_calculator_use"],
   ["onerm", "one_rm_calculator_view", "one_rm_calculator_use"],
+  ["fc", "heart_rate_calculator_view", "heart_rate_calculator_use"],
   ["academia", "gym_finder_view", "gym_finder_complete"],
   ["alimentos", "food_search_view", "food_result_open"],
 ];

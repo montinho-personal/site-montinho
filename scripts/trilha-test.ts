@@ -16,6 +16,7 @@ import { ARTIGOS_COM_CALCULADORA } from "../lib/proteina";
 import { ARTIGOS_COM_CALCULADORA_DEFICIT } from "../lib/calorias";
 import { ARTIGOS_COM_CALCULADORA_TDEE } from "../lib/tdee";
 import { ARTIGOS_COM_CALCULADORA_1RM } from "../lib/onerm";
+import { ARTIGOS_COM_CALCULADORA_FC } from "../lib/fc";
 import { ARTIGOS_COM_CALCULADORA_MACROS } from "../lib/macros";
 import { ARTIGOS_COM_CALCULADORA_VOLUME } from "../lib/treino/volume";
 
@@ -260,6 +261,7 @@ console.log("\n" + "=".repeat(64) + "\nAS FERRAMENTAS NOS ARTIGOS\n" + "=".repea
     ["macros", ARTIGOS_COM_CALCULADORA_MACROS],
     ["volume", ARTIGOS_COM_CALCULADORA_VOLUME],
     ["cardápio", ARTIGOS_COM_CALCULADORA_CARDAPIO],
+    ["FC", ARTIGOS_COM_CALCULADORA_FC],
   ];
 
   for (const [nome, lista] of registros) {

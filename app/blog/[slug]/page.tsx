@@ -34,6 +34,9 @@ import LinkFerramentaVolume from "@/components/volume/LinkFerramentaVolume";
 import CalculadoraMacros from "@/components/macros/CalculadoraMacros";
 import CalculadoraOneRM from "@/components/onerm/CalculadoraOneRM";
 import LinkFerramenta1RM from "@/components/onerm/LinkFerramenta1RM";
+import { ARTIGOS_COM_CALCULADORA_FC, ARTIGOS_COM_LINK_FC } from "@/lib/fc";
+import CalculadoraFC from "@/components/fc/CalculadoraFC";
+import LinkFerramentaFC from "@/components/fc/LinkFerramentaFC";
 import NotaMetodo from "@/components/filosofia/NotaMetodo";
 import { clusterRecebeNota } from "@/lib/filosofia";
 
@@ -163,7 +166,9 @@ export default async function BlogPost({ params }: Props) {
           ? "macros"
           : ARTIGOS_COM_CALCULADORA_VOLUME.includes(post.slug)
             ? "volume"
-            : null;
+            : ARTIGOS_COM_CALCULADORA_FC.includes(post.slug)
+              ? "fc"
+              : null;
   const calcSplit = qualCalc ? splitAtPrimeiraSecao(contentHtml) : null;
   const corpoRestante = calcSplit ? calcSplit.after : contentHtml;
 
@@ -313,6 +318,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraOneRM placement={post.slug} />
                 ) : qualCalc === "macros" ? (
                   <CalculadoraMacros placement={post.slug} />
+                ) : qualCalc === "fc" ? (
+                  <CalculadoraFC placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}
@@ -351,6 +358,7 @@ export default async function BlogPost({ params }: Props) {
           {ARTIGOS_COM_FICHA.includes(post.slug) && <FichaNoArtigo slug={post.slug} />}
           {ARTIGOS_COM_LINK_1RM.includes(post.slug) && <LinkFerramenta1RM slug={post.slug} />}
           {ARTIGOS_COM_LINK_VOLUME.includes(post.slug) && <LinkFerramentaVolume slug={post.slug} />}
+          {ARTIGOS_COM_LINK_FC.includes(post.slug) && <LinkFerramentaFC slug={post.slug} />}
 
           {/* O teste de mobilidade entra como CONVITE, não embutido: ele tem
               cinco telas e pede a pessoa de pé, o que não combina com quem

@@ -44,6 +44,7 @@ const CATEGORIAS: Record<Ferramenta, string[]> = {
   deficit: ["padrao", "leve", "moderado", "maior"],
   tdee: ["padrao"],
   onerm: ["padrao"],
+  fc: ["padrao"],
   volume: ["padrao", "baixo", "alto", "adequado"],
   diagnostico: ["padrao"],
   rotina: ["padrao"],
@@ -148,6 +149,7 @@ ok("proteína → macros → cardápio", PROXIMA.proteina?.ferramenta === "macro
 ok("gasto → déficit → macros", PROXIMA.tdee?.ferramenta === "deficit" && PROXIMA.deficit?.ferramenta === "macros");
 ok("1RM → volume → diagnóstico", PROXIMA.onerm?.ferramenta === "volume" && PROXIMA.volume?.ferramenta === "diagnostico");
 ok("academia → rotina", PROXIMA.academia?.ferramenta === "rotina");
+ok("FC → gasto", PROXIMA.fc?.ferramenta === "tdee");
 ok("a jornada não tem ciclo", (() => {
   for (const f of FERRAMENTAS) {
     const vistos = new Set<Ferramenta>([f]);
@@ -200,6 +202,8 @@ const RESUMOS: Array<[string, RegExp]> = [
   ["components/calorias/CalculadoraDeficit.tsx", /sobre um gasto de ≈ \$\{formataFaixa\(resultado\.tdee\)\} kcal\/dia/],
   ["components/tdee/CalculadoraTDEE.tsx", /resumo=\{`gasto estimado de ≈ \$\{formataFaixa\(tdee\)\} kcal\/dia`\}/],
   ["components/onerm/CalculadoraOneRM.tsx", /resumo=\{`1RM estimado de ≈ \$\{arredondaKg\(umRM\)\} kg/],
+  /* FC: o resumo é null de propósito — qualquer número dali é função da idade. */
+  ["components/fc/CalculadoraFC.tsx", /resumo=\{null\}/],
   ["components/academias/AcademiaQuiz.tsx", /resumo=\{rec\.top\.length \? `a academia sugerida foi \$\{rec\.top\[0\]\.academia\.nome\}` : null\}/],
 ];
 for (const [arq, re] of RESUMOS) {
@@ -235,6 +239,7 @@ const INTEGRADAS: Array<[string, Ferramenta]> = [
   ["components/calorias/CalculadoraDeficit.tsx", "deficit"],
   ["components/tdee/CalculadoraTDEE.tsx", "tdee"],
   ["components/onerm/CalculadoraOneRM.tsx", "onerm"],
+  ["components/fc/CalculadoraFC.tsx", "fc"],
   ["components/academias/AcademiaQuiz.tsx", "academia"],
 ];
 for (const [arq, f] of INTEGRADAS) {

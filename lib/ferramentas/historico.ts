@@ -32,6 +32,7 @@ export type Ferramenta =
   | "tdee"
   | "volume"
   | "onerm"
+  | "fc"
   | "diagnostico"
   | "rotina"
   | "academia"

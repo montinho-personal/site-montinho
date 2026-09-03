@@ -48,11 +48,12 @@ const itemListSchema = {
     { "@type": "ListItem", position: 9, name: "Calculadora de Macros", url: `${SITE_URL}/ferramentas/calculadora-macros` },
     { "@type": "ListItem", position: 10, name: "Calculadora de Volume de Treino", url: `${SITE_URL}/ferramentas/calculadora-volume-treino` },
     { "@type": "ListItem", position: 11, name: "Montinho FitChef", url: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
+    { "@type": "ListItem", position: 12, name: "Calculadora de Zonas de Frequência Cardíaca", url: `${SITE_URL}/ferramentas/zonas-de-frequencia-cardiaca` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 12, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 13, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
-    { "@type": "ListItem", position: MOBILIDADE_NO_AR ? 13 : 12, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: MOBILIDADE_NO_AR ? 14 : 13, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -141,6 +142,15 @@ const FERRAMENTAS = [
     texto:
       "Adicione os dias e os exercícios que você faz e a ferramenta identifica os músculos, soma as séries semanais de cada grupo, mostra em quantas sessões ele é treinado e onde o volume está concentrado.",
     quando: "Use quando quiser saber quantas séries por músculo você realmente faz — sem precisar contar na mão.",
+  },
+  {
+    href: "/ferramentas/zonas-de-frequencia-cardiaca",
+    nome: "Calculadora de Zonas de Frequência Cardíaca",
+    pergunta: "Em que batimento eu treino?",
+    tempo: "10 segundos · sem cadastro",
+    texto:
+      "Informe sua idade para estimar sua frequência cardíaca máxima e ver as cinco zonas de treino em batimentos por minuto — com o que cada uma serve e a régua da fala para conferir sem relógio. Se souber a de repouso, a conta troca para o método de Karvonen.",
+    quando: "Use quando um treino pede \"zona 2\" ou \"70% da máxima\" e você não sabe que número é esse. A idade não sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{

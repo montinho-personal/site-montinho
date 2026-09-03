@@ -27,6 +27,7 @@ import { ARTIGOS_COM_CALCULADORA_1RM, ARTIGOS_COM_LINK_1RM } from "../lib/onerm"
 import { ARTIGOS_COM_CALCULADORA_MACROS } from "../lib/macros";
 import { ARTIGOS_COM_CALCULADORA_VOLUME, ARTIGOS_COM_LINK_VOLUME } from "../lib/treino/volume";
 import { SLUGS_COM_TESTE_MOBILIDADE } from "../lib/mobilidade/artigos";
+import { ARTIGOS_COM_CALCULADORA_FC, ARTIGOS_COM_LINK_FC } from "../lib/fc";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -49,6 +50,8 @@ const REGISTROS: [string, string[]][] = [
   ["volume", ARTIGOS_COM_CALCULADORA_VOLUME],
   ["volume (link)", ARTIGOS_COM_LINK_VOLUME],
   ["mobilidade", SLUGS_COM_TESTE_MOBILIDADE],
+  ["FC", ARTIGOS_COM_CALCULADORA_FC],
+  ["FC (link)", ARTIGOS_COM_LINK_FC],
 ];
 
 const onde = new Map<string, string>();
