@@ -34,10 +34,35 @@
  * O CTR também muda de escala entre os dois: fração no xlsx, percentual no
  * CSV. Normalizar isso na entrada é obrigatório — 0,0249 lido como 2,49% e
  * comparado com uma régua em percentual inverteria todo o diagnóstico.
+ *
+ * MARCO E COMPARAÇÃO
+ *
+ *   npx tsx scripts/gsc-local.ts export.xlsx --salvar
+ *
+ * grava o recorte local em data/analytics/gsc-local/<data-fim>.json. Nas
+ * execuções seguintes, o relatório compara com o marco anterior e mostra o
+ * que mudou nas páginas vigiadas — porque a decisão de 03/09/2026 foi "deixar
+ * como está e vigiar", e vigiar sem comparação é reler o mesmo número.
  */
 
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync, writeFileSync, mkdirSync } from "node:fs";
 import { leZip, leTextos, leePlanilha } from "./lib-xlsx";
+
+export const PASTA_MARCOS = "data/analytics/gsc-local";
+
+/**
+ * As páginas que a decisão de 03/09/2026 mandou vigiar, e por quê. Cada uma
+ * responde uma pergunta específica; o relatório mostra a variação delas
+ * antes de qualquer outra coisa.
+ */
+export const VIGIADAS: Array<[string, string]> = [
+  ["/personal-trainer-alphaville", "a página que vende, na posição 32,6 — canibalizada por 18 irmãs"],
+  ["/personal-trainer-tambore", "a maior de Tamboré (230 impr) — se cair, o termo esfria de vez"],
+  ["/personal-trainer-barueri", "comercial de Barueri, 2ª página (14,3)"],
+  ["/blog/obox-training-club-santana-de-parnaiba", "posição 2,3 com CTR de 3ª página — título fraco"],
+  ["/blog/bluefit-alphaville", "artigo que ranqueia no lugar da comercial (9,0)"],
+  ["/blog/10-melhores-academias-de-alphaville", "artigo que ranqueia no lugar da comercial (6,1)"],
+];
 
 /** Bairros e cidades que o site atende. A ordem importa: o primeiro que casar nomeia o cluster. */
 export const CLUSTERS: Array<[string, RegExp]> = [
@@ -167,12 +192,145 @@ export function leXlsx(caminho: string, aba: "Páginas" | "Consultas"): Linha[] 
 const arred = (n: number, c = 1) => Math.round(n * 10 ** c) / 10 ** c;
 const pad = (s: string | number, n: number) => String(s).padStart(n);
 
+export interface Marco {
+  periodo: string;
+  /** Só o recorte local: é o que este relatório vigia. */
+  locais: Array<{ url: string; cliques: number; impressoes: number; ctr: number; posicao: number }>;
+  clusters: Record<string, { paginas: number; cliques: number; impressoes: number; posicao: number }>;
+  /** Os números de decisão, para a comparação não depender de recomputar tudo. */
+  chaves: {
+    tamboreNumerados: { paginas: number; impressoes: number; cliques: number };
+    alphavilleResidenciais: { paginas: number; impressoes: number; cliques: number };
+    locaisSemClique: number;
+  };
+}
+
+/** "24 de jun. de 2026-2 de set. de 2026" → "2026-09-02". Sem a aba Filtros, usa hoje. */
+export function dataFimDoExport(caminho: string): string {
+  try {
+    const zip = leZip(caminho);
+    const textos = leTextos(zip.get("xl/sharedStrings.xml") ?? "");
+    const wb = zip.get("xl/workbook.xml") ?? "";
+    const nomes = [...wb.matchAll(/<sheet[^>]*name="([^"]+)"/g)].map((m) => m[1]);
+    const i = nomes.indexOf("Filtros");
+    const xml = i >= 0 ? zip.get(`xl/worksheets/sheet${i + 1}.xml`) : undefined;
+    if (!xml) throw new Error("sem aba Filtros");
+    const linhas = [...leePlanilha(xml, textos).values()];
+    const data = linhas.map((l) => l.get("B")?.texto ?? "").find((t) => /\d{4}\s*$/.test(t)) ?? "";
+    const MES: Record<string, string> = { jan: "01", fev: "02", mar: "03", abr: "04", mai: "05", jun: "06",
+      jul: "07", ago: "08", set: "09", out: "10", nov: "11", dez: "12" };
+    const fim = data.split("-").pop()!.trim();
+    const m = fim.match(/(\d{1,2}) de (\w{3})\.? de (\d{4})/);
+    if (!m) throw new Error(`data ilegível: "${data}"`);
+    return `${m[3]}-${MES[m[2].toLowerCase()]}-${m[1].padStart(2, "0")}`;
+  } catch {
+    return new Date().toISOString().slice(0, 10);
+  }
+}
+
+export function montaMarco(periodo: string, locais: Linha[]): Marco {
+  const porCluster = new Map<string, Linha[]>();
+  for (const p of locais) porCluster.set(cluster(p.url)!, [...(porCluster.get(cluster(p.url)!) ?? []), p]);
+  const clusters: Marco["clusters"] = {};
+  for (const [nome, ps] of porCluster) {
+    const im = ps.reduce((s, p) => s + p.impressoes, 0);
+    clusters[nome] = {
+      paginas: ps.length,
+      cliques: ps.reduce((s, p) => s + p.cliques, 0),
+      impressoes: im,
+      posicao: im ? arred(ps.reduce((s, p) => s + p.posicao * p.impressoes, 0) / im) : 0,
+    };
+  }
+  const soma = (ps: Linha[]) => ({
+    paginas: ps.length,
+    impressoes: ps.reduce((s, p) => s + p.impressoes, 0),
+    cliques: ps.reduce((s, p) => s + p.cliques, 0),
+  });
+  return {
+    periodo,
+    locais: locais.map((p) => ({ ...p, url: caminho(p.url), ctr: arred(p.ctr, 2), posicao: arred(p.posicao) })),
+    clusters,
+    chaves: {
+      tamboreNumerados: soma(locais.filter((p) => /tambore-\d/.test(p.url))),
+      alphavilleResidenciais: soma(locais.filter((p) => /alphaville-residencial-\d/.test(p.url))),
+      locaisSemClique: locais.filter((p) => p.cliques === 0).length,
+    },
+  };
+}
+
+export function marcoAnterior(antesDe: string): Marco | null {
+  if (!existsSync(PASTA_MARCOS)) return null;
+  const arquivos = readdirSync(PASTA_MARCOS).filter((f) => f.endsWith(".json") && f.slice(0, 10) < antesDe).sort();
+  if (!arquivos.length) return null;
+  return JSON.parse(readFileSync(`${PASTA_MARCOS}/${arquivos[arquivos.length - 1]}`, "utf8"));
+}
+
+/** Variação com sinal, no formato de cada métrica. Posição menor é melhor, e a seta diz isso. */
+function delta(atual: number, antes: number, tipo: "n" | "pos" | "pct"): string {
+  const d = atual - antes;
+  if (Math.abs(d) < (tipo === "n" ? 1 : 0.05)) return "=";
+  const seta = tipo === "pos" ? (d < 0 ? "↑" : "↓") : (d > 0 ? "↑" : "↓");
+  const v = tipo === "n" ? String(Math.abs(Math.round(d))) : arred(Math.abs(d)).toFixed(1) + (tipo === "pct" ? "pp" : "");
+  return `${seta}${v}`;
+}
+
+export function imprimeComparacao(agora: Marco, antes: Marco) {
+  console.log("\n" + "-".repeat(96));
+  console.log(`0. O QUE MUDOU DESDE ${antes.periodo}  (decisão de 03/09: deixar como está e vigiar)`);
+  console.log("-".repeat(96));
+  const acha = (m: Marco, url: string) => m.locais.find((p) => p.url === url);
+  console.log("página vigiada".padEnd(46) + pad("posição", 18) + pad("impr", 12) + pad("cliques", 12) + "  por quê");
+  for (const [url, motivo] of VIGIADAS) {
+    const a = acha(agora, url), b = acha(antes, url);
+    if (!a && !b) continue;
+    const pos = a && b ? `${b.posicao}→${a.posicao} ${delta(a.posicao, b.posicao, "pos")}` : a ? `nova ${a.posicao}` : "sumiu";
+    const im = a && b ? `${a.impressoes} ${delta(a.impressoes, b.impressoes, "n")}` : String(a?.impressoes ?? "—");
+    const cl = a && b ? `${a.cliques} ${delta(a.cliques, b.cliques, "n")}` : String(a?.cliques ?? "—");
+    console.log(url.padEnd(46).slice(0, 46) + pad(pos, 18) + pad(im, 12) + pad(cl, 12) + "  " + motivo);
+  }
+
+  console.log("\nbairro".padEnd(23) + pad("págs", 8) + pad("impr", 14) + pad("cliques", 12) + pad("posição", 16));
+  for (const nome of Object.keys(agora.clusters)) {
+    const a = agora.clusters[nome], b = antes.clusters[nome];
+    if (!b) { console.log(nome.padEnd(22) + pad(a.paginas, 8) + pad(a.impressoes, 14) + pad(a.cliques, 12) + pad(a.posicao, 16) + "  novo"); continue; }
+    console.log(nome.padEnd(22) + pad(`${a.paginas} ${delta(a.paginas, b.paginas, "n")}`, 8)
+      + pad(`${a.impressoes} ${delta(a.impressoes, b.impressoes, "n")}`, 14)
+      + pad(`${a.cliques} ${delta(a.cliques, b.cliques, "n")}`, 12)
+      + pad(`${b.posicao}→${a.posicao} ${delta(a.posicao, b.posicao, "pos")}`, 16));
+  }
+
+  const c = agora.chaves, d = antes.chaves;
+  console.log("\nA comparação que decidiu não mexer em Tamboré:");
+  console.log(`  Tamboré 1, 2, 3…            ${c.tamboreNumerados.paginas} págs  ${c.tamboreNumerados.impressoes} impr ${delta(c.tamboreNumerados.impressoes, d.tamboreNumerados.impressoes, "n")}  ${c.tamboreNumerados.cliques} cliques`);
+  console.log(`  Alphaville Residencial 1, 2… ${c.alphavilleResidenciais.paginas} págs  ${c.alphavilleResidenciais.impressoes} impr ${delta(c.alphavilleResidenciais.impressoes, d.alphavilleResidenciais.impressoes, "n")}  ${c.alphavilleResidenciais.cliques} cliques`);
+  console.log(`  páginas locais sem clique:   ${c.locaisSemClique} ${delta(c.locaisSemClique, d.locaisSemClique, "n")}`);
+
+  /* Quem mais andou, fora das vigiadas: é onde aparece o que ninguém previu. */
+  const vig = new Set(VIGIADAS.map(([u]) => u));
+  const movs = agora.locais
+    .filter((a) => !vig.has(a.url) && a.impressoes >= 30)
+    .map((a) => ({ a, b: acha(antes, a.url) }))
+    .filter((x): x is { a: Marco["locais"][number]; b: Marco["locais"][number] } => !!x.b && x.b.impressoes >= 30)
+    .map((x) => ({ ...x, d: x.a.posicao - x.b.posicao }))
+    .filter((x) => Math.abs(x.d) >= 3)
+    .sort((x, y) => Math.abs(y.d) - Math.abs(x.d))
+    .slice(0, 8);
+  if (movs.length) {
+    console.log("\nMaiores movimentos de posição fora da lista (≥3 posições, ≥30 impr nos dois períodos):");
+    for (const { a, b, d } of movs) console.log(`  ${d < 0 ? "↑" : "↓"} ${pad(Math.abs(arred(d)), 5)}  ${b.posicao}→${a.posicao}  ${a.url}`);
+  }
+  console.log("\nPeríodos de tamanhos diferentes distorcem impressões e cliques; posição e CTR comparam direto.");
+}
+
 function main() {
-  const args = process.argv.slice(2);
+  const todos = process.argv.slice(2);
+  const salvar = todos.includes("--salvar");
+  const args = todos.filter((a) => a !== "--salvar");
   if (!args.length) {
     console.error("Uso: npx tsx scripts/gsc-local.ts <export do Search Console>");
     console.error('  planilha:  npx tsx scripts/gsc-local.ts "PerformanceonSearch.xlsx"');
     console.error('  csv:       npx tsx scripts/gsc-local.ts "Páginas.csv" ["Consultas.csv"]');
+    console.error("  --salvar   grava este export como marco em data/analytics/gsc-local/");
     process.exit(1);
   }
   for (const a of args) if (!existsSync(a)) { console.error(`Arquivo não encontrado: ${a}`); process.exit(1); }
@@ -192,6 +350,12 @@ function main() {
   console.log(`Elas somam ${locCliques} cliques (${arred((100 * locCliques) / (totalCliques || 1))}% do site)`
     + ` e ${locImpr} impressões (${arred((100 * locImpr) / (totalImpr || 1))}%).`);
   if (!locais.length) { console.log("\nNenhuma página local no export."); return; }
+
+  const periodo = ehXlsx ? dataFimDoExport(args[0]) : new Date().toISOString().slice(0, 10);
+  const marco = montaMarco(periodo, locais);
+  const anterior = marcoAnterior(periodo);
+  if (anterior) imprimeComparacao(marco, anterior);
+  else console.log(`\n(sem marco anterior a ${periodo} em ${PASTA_MARCOS}; rode com --salvar para este virar o primeiro)`);
 
   // ─── 1. Por cluster ───────────────────────────────────────────────────────
   console.log("\n" + "-".repeat(96));
@@ -272,6 +436,13 @@ function main() {
       console.log(c.url.padEnd(50).slice(0, 50) + pad(c.cliques, 6) + pad(c.impressoes, 8)
         + pad(arred(c.ctr, 2) + "%", 8) + pad(arred(c.posicao), 6));
     }
+  }
+
+  if (salvar) {
+    mkdirSync(PASTA_MARCOS, { recursive: true });
+    const destino = `${PASTA_MARCOS}/${periodo}.json`;
+    writeFileSync(destino, JSON.stringify(marco, null, 1) + "\n");
+    console.log(`\nMarco gravado: ${destino} (${marco.locais.length} páginas locais).`);
   }
 
   console.log("\n" + "-".repeat(96));
