@@ -495,4 +495,8 @@ export const ARTIGOS_COM_LINK_VOLUME: string[] = [
   "treino-de-gluteos-feminino",
   /* Termina em "3 séries no fim do treino de peito": a pergunta que sobra é quantas séries de peito cabem na semana. */
   "como-fazer-cross-over-com-halteres",
+  /* Diz "90 a 120 minutos, 9 a 14 séries por sessão" e manda quem quer a
+     conta exata por músculo para a calculadora. O link é o encaixe: o
+     artigo é de saúde, não de hipertrofia, e o embed diria o contrário. */
+  "quanto-treinar-por-semana-para-viver-mais",
 ];

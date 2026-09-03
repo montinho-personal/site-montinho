@@ -150,4 +150,11 @@ export const ARTIGOS_COM_CALCULADORA_TDEE: string[] = [
    * certo, não o que sobrou.
    */
   "polichinelo-queima-quantas-calorias",
+  /**
+   * Mesmo caso do polichinelo, com o mesmo destino: o leitor sai com
+   * "30 minutos = 165 kcal" e a pergunta que sobra é quanto isso pesa no
+   * gasto do dia. Oitavo do registro — o teto. O próximo artigo de gasto
+   * calórico vai para a variante de link ou desloca um destes.
+   */
+  "caminhada-japonesa",
 ];
