@@ -26569,7 +26569,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     slug: "hipotireoidismo-e-musculacao",
     title: "Hipotireoidismo e Musculação: Como o Treino de Força Ajuda a Controlar Peso e Fadiga",
     metaTitle: "Hipotireoidismo e Musculação: Guia Completo",
-    metaDescription: "Saiba como o treino de força impacta o hipotireoidismo, controla o peso e reduz a fadiga.",
+    metaDescription: "Como a musculação age no metabolismo, no peso e na fadiga de quem tem hipotireoidismo, o que muda por causa do remédio e como montar a semana.",
     excerpt: "Hipotireoidismo não é uma sentença de vida sedentária e peso descontrolado. Entenda como a musculação atua diretamente sobre os mecanismos que o hipotireoidismo compromete — e por que o exercício pode ser o aliado mais poderoso do seu tratamento.",
     faqSchema: [
       { question: "Quantas vezes por semana devo treinar para ganhar massa muscular?", answer: "Para hipertrofia, a literatura científica aponta que treinar cada grupo muscular 2 vezes por semana com volume adequado é mais eficaz do que treinar apenas 1 vez. 3 a 5 sessões semanais são o intervalo mais comum para iniciantes a avançados." },
@@ -50095,7 +50095,7 @@ Verdade: A vantagem genética acelera os resultados — não os entrega automati
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/rest-pause-drop-set-superserie-guia-infographic.svg" alt="Infográfico sobre Rest-Pause, Drop Set e Supersérie: Guia Definitivo Para Usar Cada Técnica — Montinho Personal Trainer" title="Rest-Pause, Drop Set e Supersérie: Guia Definitivo Para Usar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/rest-pause-drop-set-superserie-guia-infographic.svg" alt="Infográfico comparando as três técnicas: rest-pause para intensidade máxima, drop set para volume extra e supersérie para tempo reduzido" title="Rest-Pause, Drop Set e Supersérie: Guia Definitivo Para Usar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 <h2>Rest-Pause: O Método da Extensão Forçada</h2>
 <h3>Mecanismo</h3>
@@ -54680,8 +54680,8 @@ Esse nível de personalização é o que separa um programa genérico de um prog
   {
     slug: "imbalance-muscular-como-corrigir",
     title: "Assimetria Muscular: Como Identificar e Corrigir o Lado Mais Fraco",
-    metaTitle: "Assimetria Muscular: Como Identificar e Corrigir Desequilíbrios",
-    metaDescription: "Todo mundo tem um lado mais forte. Aprenda como identificar assimetrias musculares, quais exercícios unilaterais corrigem o desequilíbrio e como prevenir lesões.",
+    metaTitle: "Assimetria Muscular: Como Identificar e Corrigir",
+    metaDescription: "Todo mundo tem um lado mais forte. Como identificar assimetrias musculares, quais exercícios unilaterais corrigem o desequilíbrio e como prevenir lesões.",
     excerpt: "Assimetrias musculares são normais — até o ponto em que se tornam risco de lesão. Aprenda a identificar e corrigir os desequilíbrios com exercícios unilaterais estratégicos.",
     content: `# Assimetria Muscular: Como Identificar e Corrigir o Lado Mais Fraco
 
@@ -55443,7 +55443,7 @@ Para quem combina os dois esportes com volume alto, atenção à [proteína diá
 
 ## Conclusão
 
-Beach tennis e musculação não são concorrentes — são parceiros. O treino de força torna você mais potente no saque, mais estável na areia e mais resistente à lesão. Se você está em Alphaville, Tambore ou região e quer montar um programa que respeite seu calendário de jogos, [fale com o Montinho pelo WhatsApp](https://wa.me/5511999999999). Para quem está fora da região, a consultoria online funciona igualmente bem — treinos, planilha e acompanhamento semanal.
+Beach tennis e musculação não são concorrentes — são parceiros. O treino de força torna você mais potente no saque, mais estável na areia e mais resistente à lesão. Se você está em Alphaville, Tambore ou região e quer montar um programa que respeite seu calendário de jogos, [fale com o Montinho pelo WhatsApp](https://wa.me/5511981063409). Para quem está fora da região, a consultoria online funciona igualmente bem — treinos, planilha e acompanhamento semanal.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -55536,7 +55536,7 @@ Verdade: treinamento de força com foco em potência (cargas moderadas, execuç�
 
 ## Conclusão
 
-Se você joga padel em Alphaville, Barueri ou Santana de Parnaíba, a musculação é o seu maior aliado para jogar mais, melhor e sem se machucar. Montinho monta programas personalizados que respeitam seu calendário de jogos. [Fale pelo WhatsApp](https://wa.me/5511999999999) ou acesse a consultoria online para jogadores de todo o Brasil.
+Se você joga padel em Alphaville, Barueri ou Santana de Parnaíba, a musculação é o seu maior aliado para jogar mais, melhor e sem se machucar. Montinho monta programas personalizados que respeitam seu calendário de jogos. [Fale pelo WhatsApp](https://wa.me/5511981063409) ou acesse a consultoria online para jogadores de todo o Brasil.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -55656,7 +55656,7 @@ Para corridas até 45 minutos, não é necessário gel ou suplemento durante o e
 
 ## Conclusão
 
-Completar os primeiros 5km é uma das conquistas mais marcantes para quem começa. Com a progressão certa e apoio de musculação, você chega lá sem se machucar. Se você está em Alphaville, Barueri ou Santana de Parnaíba e quer um programa montado do zero para corrida e academia, [fale com o Montinho](https://wa.me/5511999999999). Consultoria online disponível para todo o Brasil.
+Completar os primeiros 5km é uma das conquistas mais marcantes para quem começa. Com a progressão certa e apoio de musculação, você chega lá sem se machucar. Se você está em Alphaville, Barueri ou Santana de Parnaíba e quer um programa montado do zero para corrida e academia, [fale com o Montinho](https://wa.me/5511981063409). Consultoria online disponível para todo o Brasil.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -55741,7 +55741,7 @@ Verdade: pedalar fortalece resistência muscular, não força máxima. São qual
 
 ## Conclusão
 
-A combinação musculação + ciclismo é superior ao ciclismo isolado para potência, prevenção de lesões e longevidade no esporte. Montinho atende ciclistas presencialmente em Alphaville/Tambore e online em todo o Brasil. [Entre em contato pelo WhatsApp](https://wa.me/5511999999999) e monte seu programa integrado.
+A combinação musculação + ciclismo é superior ao ciclismo isolado para potência, prevenção de lesões e longevidade no esporte. Montinho atende ciclistas presencialmente em Alphaville/Tambore e online em todo o Brasil. [Entre em contato pelo WhatsApp](https://wa.me/5511981063409) e monte seu programa integrado.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -55834,7 +55834,7 @@ Verdade: haverá desconforto e ardência local — normal pelo acúmulo de metab
 
 ## Conclusão
 
-O BFR é uma ferramenta poderosa quando aplicada com conhecimento técnico. Para alunos de Montinho em Alphaville e Tambore, o BFR é integrado ao programa quando há indicação clínica — não como modismo. Se você tem limitação articular ou está em reabilitação e quer manter seus ganhos, [fale com o Montinho pelo WhatsApp](https://wa.me/5511999999999).
+O BFR é uma ferramenta poderosa quando aplicada com conhecimento técnico. Para alunos de Montinho em Alphaville e Tambore, o BFR é integrado ao programa quando há indicação clínica — não como modismo. Se você tem limitação articular ou está em reabilitação e quer manter seus ganhos, [fale com o Montinho pelo WhatsApp](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -55943,7 +55943,7 @@ Verdade: [personal trainer online](/blog/personal-trainer-online-como-funciona) 
 
 ## Conclusão
 
-Montinho não teme a IA — usa ferramentas digitais no dia a dia do trabalho. O que não abre mão é da observação direta do aluno e da adaptação que só a presença permite. Se você está em Alphaville, Tambore ou região, venha para uma avaliação presencial. Se está em qualquer lugar do Brasil, a consultoria online do Montinho entrega personalização real — não algoritmo. [Fale pelo WhatsApp](https://wa.me/5511999999999).
+Montinho não teme a IA — usa ferramentas digitais no dia a dia do trabalho. O que não abre mão é da observação direta do aluno e da adaptação que só a presença permite. Se você está em Alphaville, Tambore ou região, venha para uma avaliação presencial. Se está em qualquer lugar do Brasil, a consultoria online do Montinho entrega personalização real — não algoritmo. [Fale pelo WhatsApp](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -56062,7 +56062,7 @@ Verdade: HRV baixo é um sinal de atenção, não uma ordem. Contexto importa: H
 
 ## Conclusão
 
-Wearables são aliados, não oráculos. Os dados são úteis quando você sabe interpretá-los dentro do contexto do seu programa de treino. Alunos de Montinho em Alphaville e no programa online aprendem a usar esses dados de forma inteligente — sem ficar escravo do número no pulso. [Fale pelo WhatsApp](https://wa.me/5511999999999) para saber mais sobre consultoria e acompanhamento de treino.
+Wearables são aliados, não oráculos. Os dados são úteis quando você sabe interpretá-los dentro do contexto do seu programa de treino. Alunos de Montinho em Alphaville e no programa online aprendem a usar esses dados de forma inteligente — sem ficar escravo do número no pulso. [Fale pelo WhatsApp](https://wa.me/5511981063409) para saber mais sobre consultoria e acompanhamento de treino.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -56163,7 +56163,7 @@ Verdade: estudos sugerem que altas doses de antioxidantes (incluindo resveratrol
 
 ## Conclusão
 
-NMN e resveratrol são suplementos interessantes com mecanismos biologicamente plausíveis, mas evidências em humanos ainda são preliminares para afirmações fortes. O custo é alto. Antes de investir nesses "longevidade stacks", certifique-se de ter a base sólida: [sono](/blog/sono-e-crescimento-muscular), treino progressivo e nutrição adequada. Se você quiser montar uma estratégia de suplementação baseada em evidências, Montinho pode ajudar — presencialmente em Alphaville ou online. [Fale pelo WhatsApp](https://wa.me/5511999999999).
+NMN e resveratrol são suplementos interessantes com mecanismos biologicamente plausíveis, mas evidências em humanos ainda são preliminares para afirmações fortes. O custo é alto. Antes de investir nesses "longevidade stacks", certifique-se de ter a base sólida: [sono](/blog/sono-e-crescimento-muscular), treino progressivo e nutrição adequada. Se você quiser montar uma estratégia de suplementação baseada em evidências, Montinho pode ajudar — presencialmente em Alphaville ou online. [Fale pelo WhatsApp](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -56287,7 +56287,7 @@ Distribua em 2 dias por semana. Ex: leg curl na segunda + stiff na quinta.
 
 ## Conclusão
 
-Femoral forte é o que separa quem treina de quem treina bem. Incorpore o leg curl com técnica correta e combine com o stiff para desenvolvimento completo. Se você está em Alphaville, Tambore ou Santana de Parnaíba, venha para uma avaliação com Montinho. Consultoria online para todo o Brasil disponível. [Fale pelo WhatsApp](https://wa.me/5511999999999).
+Femoral forte é o que separa quem treina de quem treina bem. Incorpore o leg curl com técnica correta e combine com o stiff para desenvolvimento completo. Se você está em Alphaville, Tambore ou Santana de Parnaíba, venha para uma avaliação com Montinho. Consultoria online para todo o Brasil disponível. [Fale pelo WhatsApp](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Para ver a execução correta na mesa flexora, veja a demonstração do Leandro Twin:</p>
@@ -56420,7 +56420,7 @@ Siga a lógica de [progressão de carga](/blog/progressao-de-carga) — aumente 
 
 ## Conclusão
 
-O stiff feito certo é transformador para a estética do posterior de coxa e para a saúde do joelho e lombar. Se você está em Alphaville, Barueri ou Santana de Parnaíba, Montinho avalia sua técnica pessoalmente. Para quem está em qualquer lugar do Brasil, a consultoria online inclui análise de vídeo de execução. [Fale pelo WhatsApp](https://wa.me/5511999999999).
+O stiff feito certo é transformador para a estética do posterior de coxa e para a saúde do joelho e lombar. Se você está em Alphaville, Barueri ou Santana de Parnaíba, Montinho avalia sua técnica pessoalmente. Para quem está em qualquer lugar do Brasil, a consultoria online inclui análise de vídeo de execução. [Fale pelo WhatsApp](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -56533,7 +56533,7 @@ Verdade: para isolamento de quadriceps, o hack squat pode ser superior. Para for
 
 ## Conclusão
 
-O hack squat, executado com técnica correta e progressão de carga inteligente, é uma das ferramentas mais eficazes para construir quadriceps volumosos e simétricos. Se você está em Alphaville ou região e quer evoluir no treino de pernas com supervisão, [entre em contato com o Montinho](https://wa.me/5511999999999). Consultoria online também disponível.
+O hack squat, executado com técnica correta e progressão de carga inteligente, é uma das ferramentas mais eficazes para construir quadriceps volumosos e simétricos. Se você está em Alphaville ou região e quer evoluir no treino de pernas com supervisão, [entre em contato com o Montinho](https://wa.me/5511981063409). Consultoria online também disponível.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -56645,7 +56645,7 @@ Verdade: forçar amplitude além do ponto de tensão no ombro é a causa mais co
 
 ## Conclusão
 
-Voador e pec deck são complementos excelentes ao supino para um treino de peito completo. A chave é amplitude controlada e posicionamento correto — especialmente na altura dos pads e na flexão do cotovelo. Se você quer um programa de treino de peito completo com técnica supervisionada em Alphaville, [fale com o Montinho](https://wa.me/5511999999999). Consultoria online disponível para todo o Brasil.
+Voador e pec deck são complementos excelentes ao supino para um treino de peito completo. A chave é amplitude controlada e posicionamento correto — especialmente na altura dos pads e na flexão do cotovelo. Se você quer um programa de treino de peito completo com técnica supervisionada em Alphaville, [fale com o Montinho](https://wa.me/5511981063409). Consultoria online disponível para todo o Brasil.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -56760,7 +56760,7 @@ Verdade: são complementares. A corda (polia) isola mais as cabeças lateral e m
 
 ## Conclusão
 
-French press é insubstituível para quem quer tríceps volumosos — especialmente aquela porção de baixo do braço que "aparece" quando o braço está estendido. Com técnica correta, é seguro e muito eficiente. Alunos de Montinho em Alphaville aprendem esses detalhes desde as primeiras sessões. Consultoria online disponível. [Fale pelo WhatsApp](https://wa.me/5511999999999).
+French press é insubstituível para quem quer tríceps volumosos — especialmente aquela porção de baixo do braço que "aparece" quando o braço está estendido. Com técnica correta, é seguro e muito eficiente. Alunos de Montinho em Alphaville aprendem esses detalhes desde as primeiras sessões. Consultoria online disponível. [Fale pelo WhatsApp](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -56857,13 +56857,18 @@ O crucifixo antes do crossover aproveita o músculo mais fresco para o trabalho 
 
 ## Conclusão
 
-Crossover e crucifixo não são concorrentes — são aliados complementares em um treino de peito bem estruturado. Use o crucifixo para amplitude e o crossover para tensão constante e finalização. Montinho monta treinos de peito completos e periodizados para alunos em Alphaville e no Brasil todo via consultoria online. [Entre em contato](https://wa.me/5511999999999).
+Crossover e crucifixo não são concorrentes — são aliados complementares em um treino de peito bem estruturado. Use o crucifixo para amplitude e o crossover para tensão constante e finalização. Montinho monta treinos de peito completos e periodizados para alunos em Alphaville e no Brasil todo via consultoria online. [Entre em contato](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/zToibfjC0_A?rel=0" title="A Maneira Mais Eficaz de Ter Hipertrofia — Leandro Twin"Crossover vs Crucifixo: Qual é Melhor?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
+
+## Referências
+
+- Rogers W, Porcari JP, et al. ACE-sponsored research: Top 3 Most Effective Chest Exercises. American Council on Exercise, 2012.
+- Trebs AA, Brandenburg JP, Pitney WA. An electromyography analysis of 3 muscles surrounding the shoulder joint during the performance of a chest press exercise at several angles. Journal of Strength and Conditioning Research, 2010.
 `,
     faq: [
       { question: "Crossover ativa mais o peitoral que crucifixo?", answer: "Estudos de EMG mostram ativação similar. A diferença está no perfil de tensão: crossover mantém tensão constante ao longo do arco, crucifixo tem maior tensão no alongamento. Ambos são eficientes, com objetivos ligeiramente diferentes." },
@@ -56974,7 +56979,7 @@ Verdade: dor articular ou sensação de "click" não é normal. É sinal de impa
 
 ## Conclusão
 
-A elevação lateral com técnica perfeita é o que faz os ombros crescerem de forma segura e sustentável. Abandone o ego lifting aqui — o deltóide lateral não se impressiona com carga alta. Impressiona com volume, tensão e precisão. Se você quer ombros bem desenvolvidos sem pagar o preço com lesão, fale com Montinho: [WhatsApp](https://wa.me/5511999999999) ou consultoria online para todo o Brasil.
+A elevação lateral com técnica perfeita é o que faz os ombros crescerem de forma segura e sustentável. Abandone o ego lifting aqui — o deltóide lateral não se impressiona com carga alta. Impressiona com volume, tensão e precisão. Se você quer ombros bem desenvolvidos sem pagar o preço com lesão, fale com Montinho: [WhatsApp](https://wa.me/5511981063409) ou consultoria online para todo o Brasil.
 
 <div class="yt-embed">
 <p class="yt-caption">Para ver a execução correta em vídeo, veja a demonstração do Leandro Twin:</p>
@@ -57100,7 +57105,7 @@ Verdade: afundo executado com técnica correta (joelho alinhado, amplitude adequ
 
 ## Conclusão
 
-O afundo é um exercício que deve estar no programa de qualquer praticante sério de musculação. Com técnica perfeita e progressão inteligente, transforma membros inferiores em 8-12 semanas. Montinho atende presencialmente em Alphaville e Tambore, e faz consultoria online para todo o Brasil. [Fale pelo WhatsApp](https://wa.me/5511999999999).
+O afundo é um exercício que deve estar no programa de qualquer praticante sério de musculação. Com técnica perfeita e progressão inteligente, transforma membros inferiores em 8-12 semanas. Montinho atende presencialmente em Alphaville e Tambore, e faz consultoria online para todo o Brasil. [Fale pelo WhatsApp](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -57201,7 +57206,7 @@ Verdade: a eficiência do sumo é determinada pela morfologia do quadril, não p
 
 ## Conclusão
 
-O agachamento sumo é uma variação poderosa para quem busca glúteo médio, adutor e menor estresse lombar. Incorpore ao treino como segundo exercício de pernas ou como alternativa periódica ao convencional. Montinho usa o sumo estrategicamente nos programas de alunos em Alphaville e no programa online. [Fale pelo WhatsApp](https://wa.me/5511999999999).
+O agachamento sumo é uma variação poderosa para quem busca glúteo médio, adutor e menor estresse lombar. Incorpore ao treino como segundo exercício de pernas ou como alternativa periódica ao convencional. Montinho usa o sumo estrategicamente nos programas de alunos em Alphaville e no programa online. [Fale pelo WhatsApp](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -57315,7 +57320,7 @@ Verdade: o pulldown com boa técnica e carga progressiva é igualmente eficiente
 
 ## Conclusão
 
-Os dois exercícios merecem lugar no programa de treino. Não é um ou outro — é saber quando usar cada um estrategicamente. Se você quer aprender a fazer barra fixa pela primeira vez ou adicionar peso a ela, Montinho tem programas de progressão para isso em Alphaville e online. [Fale pelo WhatsApp](https://wa.me/5511999999999).
+Os dois exercícios merecem lugar no programa de treino. Não é um ou outro — é saber quando usar cada um estrategicamente. Se você quer aprender a fazer barra fixa pela primeira vez ou adicionar peso a ela, Montinho tem programas de progressão para isso em Alphaville e online. [Fale pelo WhatsApp](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -57422,7 +57427,7 @@ Verdade: para ganho de massa máximo, dietas com carboidratos adequados ainda s�
 
 ## Conclusão
 
-Ganhar músculo com low carb é possível — mas exige mais atenção à proteína, timing de carboidratos em torno do treino e suplementação de creatina. Para a maioria das pessoas que treina musculação sem objetivo de competição, uma abordagem moderada (100-200g de carboidratos/dia, concentrados ao redor do treino) é superior ao low carb estrito. Se você quer montar uma estratégia nutricional personalizada para o seu treino em Alphaville ou online, [fale com o Montinho pelo WhatsApp](https://wa.me/5511999999999).
+Ganhar músculo com low carb é possível — mas exige mais atenção à proteína, timing de carboidratos em torno do treino e suplementação de creatina. Para a maioria das pessoas que treina musculação sem objetivo de competição, uma abordagem moderada (100-200g de carboidratos/dia, concentrados ao redor do treino) é superior ao low carb estrito. Se você quer montar uma estratégia nutricional personalizada para o seu treino em Alphaville ou online, [fale com o Montinho pelo WhatsApp](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -57542,7 +57547,7 @@ Lembre que o [treino pós-parto](/blog/treino-pos-parto-volta-ao-exercicio) tem 
 
 ## Conclusão
 
-Diástase abdominal é tratável com a abordagem correta. O exercício é parte fundamental do tratamento — mas precisa ser o exercício certo, na fase certa. Montinho trabalha com protocolo específico para diástase em Alphaville e através de consultoria online. A parceria com fisioterapeuta especializado em assoalho pélvico é parte do processo. [Entre em contato pelo WhatsApp](https://wa.me/5511999999999) para saber como funciona o programa de recuperação.
+Diástase abdominal é tratável com a abordagem correta. O exercício é parte fundamental do tratamento — mas precisa ser o exercício certo, na fase certa. Montinho trabalha com protocolo específico para diástase em Alphaville e através de consultoria online. A parceria com fisioterapeuta especializado em assoalho pélvico é parte do processo. [Entre em contato pelo WhatsApp](https://wa.me/5511981063409) para saber como funciona o programa de recuperação.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -57672,7 +57677,7 @@ A área nunca ficará completamente "reta" se a estrutura óssea for pronunciada
 
 Hip dips são normais, comuns e anatomicamente determinados — mas responderem bem ao trabalho de musculação. O glúteo médio é o alvo, abdução e movimentos laterais são o método, e consistência é o diferencial.
 
-Trabalho com alunas em Alphaville e online, incluindo protocolos específicos para remodelar a silhueta com musculação. [Entre em contato](https://wa.me/5511999999999) para montar sua estratégia.
+Trabalho com alunas em Alphaville e online, incluindo protocolos específicos para remodelar a silhueta com musculação. [Entre em contato](https://wa.me/5511981063409) para montar sua estratégia.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -57795,7 +57800,7 @@ Consulte nosso guia de [hipertrofia feminina](/blog/hipertrofia-feminina) para e
 
 Braço fino e definido é consequência de musculação bem feita, não de treinos infinitos com elástico leve. A fisiologia feminina protege naturalmente do exagero — confie no processo, progrida na carga e o resultado vem.
 
-Se você é de Alphaville ou região e quer um programa personalizado, ou prefere a modalidade online, [entre em contato](https://wa.me/5511999999999) para começar.
+Se você é de Alphaville ou região e quer um programa personalizado, ou prefere a modalidade online, [entre em contato](https://wa.me/5511981063409) para começar.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -57931,7 +57936,7 @@ Para leitura complementar, veja nosso artigo sobre [hipertrofia feminina](/blog/
 
 Cintura fina é resultado de déficit calórico, musculação composta, core estratégico e contraste visual — não de abdominais infinitos ou cintas. O processo leva meses, mas é sustentável e transforma de verdade.
 
-Atendo presencialmente em Alphaville/Tambore e online para todo o Brasil. [Fale comigo](https://wa.me/5511999999999) para montar um plano específico para o seu objetivo.
+Atendo presencialmente em Alphaville/Tambore e online para todo o Brasil. [Fale comigo](https://wa.me/5511981063409) para montar um plano específico para o seu objetivo.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -58053,7 +58058,7 @@ Com treino de glúteo médio 2-3x/semana e nutrição com proteína adequada:
 - **6 meses:** redução significativa da aparência "cavada"
 - **12 meses:** resultado expressivo — quadril lateral bem desenvolvido
 
-Para um programa personalizado presencial em Alphaville ou online, [entre em contato](https://wa.me/5511999999999).
+Para um programa personalizado presencial em Alphaville ou online, [entre em contato](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -58176,7 +58181,7 @@ Consulte nosso artigo sobre [piso pélvico e musculação](/blog/piso-pelvico-mu
 
 Musculação para busto firme é sobre fortalecer o peitoral que sustenta, melhorar a postura que projeta e tonificar o corpo que emoldura. Com consistência de 2 treinos por semana e progressão de carga, o resultado aparece em 2-3 meses.
 
-Atendo em Alphaville/Tambore presencialmente e online para todo o Brasil. [Fale comigo](https://wa.me/5511999999999) para começar seu programa.
+Atendo em Alphaville/Tambore presencialmente e online para todo o Brasil. [Fale comigo](https://wa.me/5511981063409) para começar seu programa.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -58309,7 +58314,7 @@ Nenhuma evidência robusta de que colágeno reduz celulite. O marketing explora 
 
 Para a maioria das mulheres que treinam, a prioridade é: proteína adequada, creatina e vitamina D (com confirmação por exame). Todo o resto é opcional e secundário.
 
-Atendo presencialmente em Alphaville e online. Se quiser uma orientação individualizada — integrando treino e suplementação para seus objetivos — [entre em contato](https://wa.me/5511999999999).
+Atendo presencialmente em Alphaville e online. Se quiser uma orientação individualizada — integrando treino e suplementação para seus objetivos — [entre em contato](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -58433,7 +58438,7 @@ A alimentação nesse período afeta muito a tolerância aos sintomas:
 
 TPM e treino não são excludentes — são ajustáveis. Aprenda o seu ciclo, adapte a intensidade nos dias difíceis e mantenha a consistência ao longo do mês. Isso é mais importante do que qualquer sessão "perfeita".
 
-Se você treina comigo presencialmente em Alphaville ou online, sempre levamos o ciclo em consideração no planejamento mensal. [Entre em contato](https://wa.me/5511999999999) para saber mais.
+Se você treina comigo presencialmente em Alphaville ou online, sempre levamos o ciclo em consideração no planejamento mensal. [Entre em contato](https://wa.me/5511981063409) para saber mais.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -58583,7 +58588,7 @@ Para orientação sobre o treino prático na SOP, veja nosso artigo [musculaçã
 
 O exercício na SOP não é só sobre perder peso ou ficar em forma — é sobre alterar diretamente o ambiente hormonal. A melhora da sensibilidade à insulina, a redução dos androgênios e a normalização do ciclo são efeitos documentados e replicáveis com prática consistente.
 
-Se você tem SOP e quer um programa de treino específico, atendo presencialmente em Alphaville e online. [Fale comigo](https://wa.me/5511999999999) para começar.
+Se você tem SOP e quer um programa de treino específico, atendo presencialmente em Alphaville e online. [Fale comigo](https://wa.me/5511981063409) para começar.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -58719,7 +58724,7 @@ Dose recomendada: 2-3 colheres de sopa por dia, preferencialmente cru (saladas, 
 
 A dieta mediterrânea é possivelmente o melhor padrão alimentar para combinar com musculação de longo prazo: anti-inflamatória, rica em micronutrientes, saborosa e sustentável. A adaptação necessária é apenas aumentar a proteína para atender as demandas do treino.
 
-Trabalho com periodização nutricional integrada ao treino em Alphaville e online. [Entre em contato](https://wa.me/5511999999999) para montar seu plano.
+Trabalho com periodização nutricional integrada ao treino em Alphaville e online. [Entre em contato](https://wa.me/5511981063409) para montar seu plano.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -58858,7 +58863,7 @@ Dieta paleo e musculação podem coexistir, mas a adaptação é necessária. Se
 
 Para resultado máximo de hipertrofia, uma dieta convencional flexível com alta proteína tende a ser mais prática.
 
-Atendo em Alphaville e online. [Entre em contato](https://wa.me/5511999999999) para personalizar seu plano nutricional.
+Atendo em Alphaville e online. [Entre em contato](https://wa.me/5511981063409) para personalizar seu plano nutricional.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -59010,7 +59015,7 @@ Força no treino: o indicador mais confiável de ganho muscular. Se você está 
 
 Ganhar peso saudável é um processo metódico: superávit calórico moderado, proteína alta, treino progressivo e recuperação adequada. Não há atalho — mas há um caminho claro.
 
-Trabalho com hardgainers há mais de 20 anos em Alphaville. Se você quer um programa personalizado, [entre em contato](https://wa.me/5511999999999).
+Trabalho com hardgainers há mais de 20 anos em Alphaville. Se você quer um programa personalizado, [entre em contato](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -59173,7 +59178,7 @@ Para guia de proteínas, veja [alimentos ricos em proteína](/blog/alimentos-ric
 
 Frutas são aliadas do pré-treino quando escolhidas corretamente. Banana é a campeã pela praticidade, densidade de nutrientes e tolerância. Combine com proteína para o pré-treino mais eficaz.
 
-Atendo em Alphaville/Tambore e online. [Entre em contato](https://wa.me/5511999999999) para otimizar sua nutrição pré e pós-treino.
+Atendo em Alphaville/Tambore e online. [Entre em contato](https://wa.me/5511981063409) para otimizar sua nutrição pré e pós-treino.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -59322,7 +59327,7 @@ Deficiência de vitamina D está associada a redução do apetite e da disposiç
 
 Ganhar massa com apetite baixo é possível — exige estratégia, não força de vontade. Shakes hipercalóricos, densidade calórica, horários fixos e refeição noturna são as ferramentas práticas que funcionam.
 
-Se você é hardgainer e quer um programa personalizado, atendo presencialmente em Alphaville e online. [Entre em contato](https://wa.me/5511999999999).
+Se você é hardgainer e quer um programa personalizado, atendo presencialmente em Alphaville e online. [Entre em contato](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -59456,7 +59461,7 @@ Beber 1-2x por semana com moderação e compensação é muito diferente de bebe
 
 Álcool e emagrecimento podem coexistir com estratégia — não com abandono total nem com negação do impacto. A frequência reduzida, as escolhas inteligentes e a compensação calórica semanal são as ferramentas que permitem vida social com resultados.
 
-Se você quer um plano de emagrecimento que inclua estratégia para álcool, atendo em Alphaville e online. [Entre em contato](https://wa.me/5511999999999).
+Se você quer um plano de emagrecimento que inclua estratégia para álcool, atendo em Alphaville e online. [Entre em contato](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -59591,7 +59596,7 @@ Muita gente para de tomar nos dias sem treino — erro. A manutenção dos estoq
 
 Pós-treino com refeição proteica e carboidrato é o timing com melhor suporte científico para creatina. Mas se você não conseguir manter essa consistência, escolha o horário que vai tomar **todo dia** — isso importa muito mais.
 
-Para entender todos os benefícios do suplemento, veja [creatina para hipertrofia](/blog/creatina-para-hipertrofia). Para orientação personalizada de suplementação, [entre em contato](https://wa.me/5511999999999).
+Para entender todos os benefícios do suplemento, veja [creatina para hipertrofia](/blog/creatina-para-hipertrofia). Para orientação personalizada de suplementação, [entre em contato](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -59755,7 +59760,7 @@ Alguns medicamentos para AR afetam o metabolismo muscular e a recuperação:
 
 A musculação é aliada, não inimiga, da artrite reumatoide. Com as adaptações certas — amplitude, carga, frequência e respeito ao flare — é possível treinar com segurança e obter benefícios expressivos na dor, na capacidade funcional e na qualidade de vida.
 
-Trabalho com populações especiais em Alphaville e online, incluindo pessoas com condições reumatológicas. [Entre em contato](https://wa.me/5511999999999) para uma avaliação individualizada.
+Trabalho com populações especiais em Alphaville e online, incluindo pessoas com condições reumatológicas. [Entre em contato](https://wa.me/5511981063409) para uma avaliação individualizada.
 
 Veja também: [musculação e diabetes tipo 2](/blog/musculacao-e-diabetes-tipo-2) e [musculação para hipertensão](/blog/musculacao-para-hipertensao) para mais protocolos adaptados a condições de saúde.
 
@@ -59925,7 +59930,7 @@ Veja [alimentos ricos em proteína](/blog/alimentos-ricos-em-proteina) para guia
 
 O exercício pós-câncer não é luxo — é parte do tratamento. A musculação, progressiva e adaptada, reconstrói o corpo, melhora a qualidade de vida e pode reduzir o risco de recorrência em tipos específicos.
 
-Trabalho com populações especiais em Alphaville e online, com comunicação direta com a equipe médica quando necessário. [Entre em contato](https://wa.me/5511999999999) para uma avaliação e protocolo individualizado.
+Trabalho com populações especiais em Alphaville e online, com comunicação direta com a equipe médica quando necessário. [Entre em contato](https://wa.me/5511981063409) para uma avaliação e protocolo individualizado.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -60097,7 +60102,7 @@ Evite treinar no período **"off"** (fim do efeito da dose) quando possível.
 
 Musculação e exercício são ferramentas terapêuticas de primeira linha no Parkinson — com benefícios na rigidez, no equilíbrio, na prevenção de quedas, na cognição e potencialmente na progressão da doença.
 
-Trabalho com populações especiais em Alphaville e online. [Entre em contato](https://wa.me/5511999999999) para um programa adaptado ao Parkinson, sempre em integração com a equipe neurológica.
+Trabalho com populações especiais em Alphaville e online. [Entre em contato](https://wa.me/5511981063409) para um programa adaptado ao Parkinson, sempre em integração com a equipe neurológica.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -60268,7 +60273,7 @@ O ajuste de dose pelo médico é baseado nesses exames — não em como você se
 
 A TRT, quando indicada e bem monitorada, transforma o ambiente hormonal de forma favorável ao treino: melhor recuperação, mais força, composição corporal mais favorável e disposição para treinar com qualidade.
 
-Trabalho com homens em TRT em Alphaville e online, otimizando treino e nutrição para esse contexto específico. [Entre em contato](https://wa.me/5511999999999).
+Trabalho com homens em TRT em Alphaville e online, otimizando treino e nutrição para esse contexto específico. [Entre em contato](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -60439,7 +60444,7 @@ Com treino consistente + estratégia nutricional:
 
 Estrogênio alto em homens é um problema real, com consequências significativas na composição corporal, saúde sexual e qualidade de vida. O treino de força e a dieta estratégica são as intervenções não farmacológicas mais eficazes — e funcionam atacando a raiz do problema: o excesso de gordura e a aromatização.
 
-Trabalho com homens que buscam otimização hormonal natural em Alphaville e online. [Entre em contato](https://wa.me/5511999999999) para uma avaliação completa.
+Trabalho com homens que buscam otimização hormonal natural em Alphaville e online. [Entre em contato](https://wa.me/5511981063409) para uma avaliação completa.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -66121,7 +66126,7 @@ Inicie com um halter que permita completar 12 repetições com técnica perfeita
 
 ---
 
-Quer aprender a técnica correta de todos os exercícios e montar um treino personalizado para o seu objetivo? Entre em contato pelo [WhatsApp](https://wa.me/5511999999999) e agende uma consultoria com o Montinho Personal Trainer.`,
+Quer aprender a técnica correta de todos os exercícios e montar um treino personalizado para o seu objetivo? Entre em contato pelo [WhatsApp](https://wa.me/5511981063409) e agende uma consultoria com o Montinho Personal Trainer.`,
     faq: [
       { question: "O pullover é melhor para costas ou para peitoral?", answer: "Depende da variação e da técnica. Com tronco inclinado à frente (polia), o dorsal domina. Deitado transversalmente no banco (halter), o peitoral tem maior participação. Em ambos os casos, o serrátil anterior é fortemente recrutado." },
       { question: "Posso fazer pullover com coluna cervical instável?", answer: "Não é recomendado sem avaliação e liberação de um profissional de saúde. O movimento exige extensão cervical e mobilidade de ombro — qualquer limitação deve ser avaliada antes de iniciar." },
@@ -66294,7 +66299,7 @@ Para a maioria das pessoas, 2 vezes por semana com pelo menos 48 horas de interv
 
 ---
 
-Quer um treino de braço personalizado com exercícios selecionados para o seu biotipo e objetivo? Fale com o Montinho Personal Trainer pelo [WhatsApp](https://wa.me/5511999999999) e agende sua avaliação.`,
+Quer um treino de braço personalizado com exercícios selecionados para o seu biotipo e objetivo? Fale com o Montinho Personal Trainer pelo [WhatsApp](https://wa.me/5511981063409) e agende sua avaliação.`,
     faq: [
       { question: "Posso fazer rosca concentrada em pé?", answer: "Sim, mas perde-se boa parte do isolamento. Em pé, é difícil fixar o cotovelo com a mesma eficiência. A versão sentada com apoio na coxa é amplamente superior para o objetivo de isolamento." },
       { question: "Qual a diferença entre rosca concentrada e rosca scott?", answer: "Na rosca scott, o cotovelo apoia em um banco inclinado na frente do corpo, o que coloca o bíceps em posição alongada. Na concentrada, o braço fica mais vertical, enfatizando a contração máxima (posição encurtada). As duas se complementam bem." },
@@ -66475,7 +66480,7 @@ Sim. O desenvolvimento do braquial empurra o bíceps para cima, criando mais vol
 
 ---
 
-Quer montar um treino de braço completo e equilibrado, com a combinação certa de exercícios para o seu nível? Entre em contato com o Montinho Personal Trainer pelo [WhatsApp](https://wa.me/5511999999999) e agende sua consultoria personalizada.`,
+Quer montar um treino de braço completo e equilibrado, com a combinação certa de exercícios para o seu nível? Entre em contato com o Montinho Personal Trainer pelo [WhatsApp](https://wa.me/5511981063409) e agende sua consultoria personalizada.`,
     faq: [
       { question: "A rosca martelo substitui a rosca direta?", answer: "Não — elas são complementares. A rosca direta maximiza o bíceps braquial; a rosca martelo trabalha o braquial e o braquiorradial. O ideal é incluir ambas no programa de treinamento." },
       { question: "Posso fazer rosca martelo com barra EZ?", answer: "Sim, com a pegada nas partes inclinadas da barra (posição semi-neutra). Não é tão eficaz quanto os halteres em termos de posição neutra pura, mas é uma alternativa válida para quem tem desconforto no punho." },
@@ -66658,7 +66663,7 @@ Para a maioria dos praticantes, 2 vezes por semana com pelo menos 48 horas de in
 
 ---
 
-Quer aprender a progressão certa para o seu nível atual e montar um programa de calistenia ou musculação completo? Fale com o Montinho Personal Trainer pelo [WhatsApp](https://wa.me/5511999999999) e comece hoje mesmo.`,
+Quer aprender a progressão certa para o seu nível atual e montar um programa de calistenia ou musculação completo? Fale com o Montinho Personal Trainer pelo [WhatsApp](https://wa.me/5511981063409) e comece hoje mesmo.`,
     faq: [
       { question: "O mergulho nas paralelas é melhor que o supino para o peitoral?", answer: "São exercícios complementares. O supino permite cargas muito maiores e é mais fácil de progredir. O mergulho oferece amplitude maior e ativa o serrátil anterior de forma mais eficiente. Idealmente, use ambos no seu programa." },
       { question: "Qual a largura ideal das paralelas?", answer: "A largura ideal é ligeiramente maior que a largura dos ombros — onde os cotovelos ficam próximos ao tronco ou levemente afastados, sem forçar a articulação do ombro. Evite paralelas muito largas, que aumentam o estresse no ombro." },
@@ -66840,7 +66845,7 @@ Depende do diagnóstico. O goblet squat, por promover postura mais ereta e distr
 
 ---
 
-Quer montar um programa personalizado que combine o melhor da musculação tradicional com o kettlebell para o seu objetivo? Entre em contato com o Montinho Personal Trainer pelo [WhatsApp](https://wa.me/5511999999999) e agende sua consultoria.`,
+Quer montar um programa personalizado que combine o melhor da musculação tradicional com o kettlebell para o seu objetivo? Entre em contato com o Montinho Personal Trainer pelo [WhatsApp](https://wa.me/5511981063409) e agende sua consultoria.`,
     faq: [
       { question: "Qual peso de kettlebell devo comprar para começar?", answer: "Para homens iniciantes: 16 kg (para swing) e 12 kg (para press e goblet squat). Para mulheres iniciantes: 12 kg (swing) e 8 kg (press). Esses são pontos de partida gerais — o ideal é uma avaliação presencial para definir o peso correto para cada pessoa." },
       { question: "Posso ganhar massa muscular apenas com kettlebell?", answer: "Sim, especialmente nos primeiros anos de treinamento. A limitação aparece em estágios mais avançados, quando a progressão de carga se torna mais importante e os saltos de peso dos kettlebells (tipicamente de 4 em 4 kg) se tornam muito grandes." },
@@ -78476,7 +78481,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Morar em <strong>Santana de Parnaíba</strong> e escolher academia errada tem um custo duplo: a mensalidade que vaza do orçamento e o deslocamento que rouba seu tempo — em uma cidade onde as distâncias entre bairros são grandes.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academias-em-santana-de-parnaiba-infographic.svg" alt="Infográfico sobre Academias em Santana de Parnaíba: Guia Completo — Montinho Personal Trainer" title="Academias em Santana de Parnaíba: Guia Completo" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/academias-em-santana-de-parnaiba-capa.webp" alt="Infográfico com o roteiro do guia: a resposta rápida sobre onde treinar em Santana de Parnaíba, as academias bairro a bairro, o comparativo qualitativo e o critério que ninguém usa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:12px" />
 </figure>
 
 <p>Muita gente resolve "depois", vai empurrando, e o depois vira nunca. Enquanto isso, disposição, sono e saúde cobram a conta em silêncio.</p>
@@ -79381,7 +79386,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Assinar plano em <strong>academia errada em Barueri</strong> é jogar dinheiro fora duas vezes: na mensalidade que você paga e no resultado que não vem.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/melhores-academias-de-barueri-infographic.svg" alt="Infográfico sobre Melhores Academias de Barueri: Ranking Honesto — Montinho Personal Trainer" title="Melhores Academias de Barueri: Ranking Honesto" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/melhores-academias-de-barueri-capa.webp" alt="Infográfico com o roteiro do ranking: a resposta rápida das melhores academias de Barueri, o critério sem estrelinha inventada, o ranking academia por academia e a tabela comparativa" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:12px" />
 </figure>
 
 <p>A cidade cresceu, as opções se multiplicaram — do <strong>Centro de Barueri</strong> à região da <strong>Estação Barueri (CPTM Linha 8)</strong> — e a maioria das pessoas escolhe pela fachada ou pela promoção do momento. Três meses depois, desiste.</p>
@@ -87956,7 +87961,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você sobe na esteira, sua por 20 minutos, olha o painel... e a balança não muda há semanas. A dúvida vem na hora: <strong>estou fazendo pouco tempo? Devia correr mais?</strong></p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-tempo-de-esteira-para-emagrecer-infographic.svg" alt="Infográfico sobre Quanto Tempo de Esteira para Emagrecer? — Montinho Personal Trainer" title="Quanto Tempo de Esteira para Emagrecer?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-tempo-de-esteira-para-emagrecer-infographic.svg" alt="Infográfico com o roteiro do artigo: a resposta direta sobre quanto tempo de esteira, por que o tempo sozinho não diz nada, a escolha entre caminhada inclinada, corrida e HIIT, e os três erros que anulam o tempo" title="Quanto Tempo de Esteira para Emagrecer?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 
 <p>O problema é que, sem uma referência clara, você oscila entre exagerar (e desistir por cansaço) e fazer de menos (e desistir por falta de resultado). Nos dois casos, o fim é o mesmo: a esteira vira cabide.</p>
@@ -100459,7 +100464,13 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><a href="/blog/deficit-calorico-como-calcular">Déficit Calórico: Como Calcular</a></li>
 <li><a href="/blog/quantos-quilos-da-para-perder-por-mes">Quantos Quilos Dá Para Perder Por Mês?</a></li>
 <li><a href="/blog/plato-do-emagrecimento-como-quebrar">Platô do Emagrecimento: Como Quebrar</a></li>
-</ul>`,
+</ul>
+<h2>Referências</h2>
+<ul>
+<li>Wishnofsky M. Caloric equivalents of gained or lost weight. The American Journal of Clinical Nutrition, 1958.</li>
+<li>Hall KD, et al. Energy balance and its components: implications for body weight regulation. American Journal of Clinical Nutrition, 2012.</li>
+</ul>
+`,
   },
   {
     slug: "treino-para-emagrecer-em-casa",
@@ -114287,9 +114298,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "duracao-ideal-do-treino",
     title: "Quanto Tempo Deve Durar o Treino? A Resposta Honesta",
-    metaTitle: "Duração Ideal do Treino: Quanto Tempo Ficar na Academia | Montinho Personal Trainer",
+    metaTitle: "Duração Ideal do Treino: Quanto Tempo Ficar na Academia",
     metaDescription:
-      "Uma hora? Duas? Trinta minutos servem? O que define a duração do treino não é o relógio — é o volume que você precisa fazer. Como calcular o seu e o que cortar quando falta tempo.",
+      "Uma hora? Duas? Trinta minutos servem? O que define a duração não é o relógio, é o volume que você precisa fazer. Como calcular o seu e o que cortar.",
     excerpt:
       "A pergunta certa não é quanto tempo o treino deve durar, e sim quanto trabalho ele precisa conter. Quando você inverte isso, o relógio deixa de ser o problema.",
     category: "Treinamento",
