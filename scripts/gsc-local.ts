@@ -300,7 +300,7 @@ export function imprimeComparacao(agora: Marco, antes: Marco) {
   }
 
   const c = agora.chaves, d = antes.chaves;
-  console.log("\nA comparação que decidiu não mexer em Tamboré:");
+  console.log("\nA comparação que decidiu não mexer no Tamboré:");
   console.log(`  Tamboré 1, 2, 3…            ${c.tamboreNumerados.paginas} págs  ${c.tamboreNumerados.impressoes} impr ${delta(c.tamboreNumerados.impressoes, d.tamboreNumerados.impressoes, "n")}  ${c.tamboreNumerados.cliques} cliques`);
   console.log(`  Alphaville Residencial 1, 2… ${c.alphavilleResidenciais.paginas} págs  ${c.alphavilleResidenciais.impressoes} impr ${delta(c.alphavilleResidenciais.impressoes, d.alphavilleResidenciais.impressoes, "n")}  ${c.alphavilleResidenciais.cliques} cliques`);
   console.log(`  páginas locais sem clique:   ${c.locaisSemClique} ${delta(c.locaisSemClique, d.locaisSemClique, "n")}`);
