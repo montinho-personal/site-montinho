@@ -66002,7 +66002,7 @@ A variável mais importante não é o programa — é a consistência. Um progra
 
 O primeiro passo é uma conversa. Sem compromisso, sem taxa de inscrição. O objetivo é entender a sua situação, o que você já tentou e o que faz sentido para o seu caso.
 
-Entre em contato pelo [WhatsApp](https://wa.me/5511940779041) e agende a sua avaliação inicial gratuita. Atendimento para moradores de Jandira na modalidade presencial em Alphaville ou online para qualquer cidade do Brasil.
+Entre em contato pelo [WhatsApp](https://wa.me/5511981063409) e agende a sua avaliação inicial gratuita. Atendimento para moradores de Jandira na modalidade presencial em Alphaville ou online para qualquer cidade do Brasil.
 
 <section class="faq-section">
 <figure style="margin:2rem 0">
@@ -66127,7 +66127,7 @@ O fator determinante em todos os casos é a consistência. Um programa de 7/10 e
 
 Antes de qualquer coisa, uma conversa. O objetivo é entender o seu caso, o que você já tentou, o que funcionou, o que não funcionou — e o que faz sentido para o seu objetivo e a sua rotina.
 
-Entre em contato pelo [WhatsApp](https://wa.me/5511940779041). O atendimento para moradores de Itapevi acontece de forma presencial em Alphaville ou 100% online. A avaliação inicial é gratuita.
+Entre em contato pelo [WhatsApp](https://wa.me/5511981063409). O atendimento para moradores de Itapevi acontece de forma presencial em Alphaville ou 100% online. A avaliação inicial é gratuita.
 
 <section class="faq-section">
 <figure style="margin:2rem 0">
