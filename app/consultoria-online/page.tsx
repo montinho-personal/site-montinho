@@ -280,7 +280,7 @@ export default function ConsultoriaOnlineLP() {
 
         {/* ───────────────────── 2. PROVA SOCIAL ───────────────────── */}
         <Etapa evento="consultoria_etapa_prova">
-        <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+        <section id="resultados" className="scroll-mt-24 lg:scroll-mt-28 py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-6xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Resultados reais, de pessoas reais
@@ -392,7 +392,7 @@ export default function ConsultoriaOnlineLP() {
         </section>
 
         {/* ───────────────────── 4. O QUE VOCÊ RECEBE ───────────────────── */}
-        <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+        <section id="o-que-inclui" className="scroll-mt-24 lg:scroll-mt-28 py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-5xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Tudo o que está incluso na sua consultoria
@@ -428,7 +428,7 @@ export default function ConsultoriaOnlineLP() {
 
         {/* ───────────────────── 5. COMO FUNCIONA ───────────────────── */}
         <Etapa evento="consultoria_etapa_metodo">
-        <section className="py-16 border-t border-white/10">
+        <section id="como-funciona" className="scroll-mt-24 lg:scroll-mt-28 py-16 border-t border-white/10">
           <div className="max-w-5xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
               Como funciona a consultoria online
@@ -623,7 +623,7 @@ export default function ConsultoriaOnlineLP() {
         </Etapa>
 
         {/* ───────────────────── 11. CTA FINAL ───────────────────── */}
-        <section className="py-20 border-t border-white/10 relative overflow-hidden">
+        <section id="contato" className="scroll-mt-24 lg:scroll-mt-28 py-20 border-t border-white/10 relative overflow-hidden">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 text-center">
             <div className="relative w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-2 border-[#BA9E50]">
               <Image src="/montinho-personal-trainer-shape.jpg" alt="Montinho Personal Trainer" fill loading="lazy" sizes="128px" className="object-cover" />
