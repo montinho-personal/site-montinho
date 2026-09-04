@@ -39,6 +39,7 @@ import CalculadoraFC from "@/components/fc/CalculadoraFC";
 import LinkFerramentaFC from "@/components/fc/LinkFerramentaFC";
 import NotaMetodo from "@/components/filosofia/NotaMetodo";
 import { clusterRecebeNota } from "@/lib/filosofia";
+import FAQ from "@/components/ui/FAQ";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -390,6 +391,28 @@ export default async function BlogPost({ params }: Props) {
               próxima ação. Só em artigos que de fato dão orientação — o
               cluster vem do mesmo classificador que escolhe o CTA. */}
           {clusterRecebeNota(cta.cluster) && <NotaMetodo chave={post.slug} cluster={cta.cluster} />}
+
+          {/* As perguntas do artigo, para quem LÊ.
+              Elas sempre existiram: 3.853 delas, em 834 artigos, escritas com
+              resposta de verdade — e saíam só no JSON-LD acima, apostando no
+              rich result de FAQ que o Google restringiu a sites de governo e
+              saúde em 2023. Ou seja: conteúdo escrito, publicado e invisível.
+
+              Vem ANTES do Pergunte de propósito. A ordem responde primeiro o
+              que já está respondido, e só então oferece perguntar outra coisa
+              — o contrário desperdiça a pergunta de quem teria achado a
+              resposta dois parágrafos abaixo. */}
+          {post.faq && post.faq.length > 0 && (
+            <section className="mt-16 pt-10 border-t border-white/10">
+              <h2
+                className="text-2xl font-bold text-white mb-6"
+                style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
+              >
+                Perguntas frequentes
+              </h2>
+              <FAQ itens={post.faq} placement={`artigo-${post.slug}`} />
+            </section>
+          )}
 
           {/* Dedupe: o embed do Pergunte só aparece quando o CTA do meio já
               não leva para lá — senão seriam duas caixas pedindo a mesma ação

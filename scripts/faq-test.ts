@@ -147,6 +147,27 @@ ok("só a abertura conta, não o fechamento", /\.open\)/.test(compSC) && !/faq_c
 ok("o evento antigo só da consultoria saiu do catálogo", !analytics.includes(`"consultoria_faq_open"`));
 
 // ─── 6 ──────────────────────────────────────────────────────────────────────
+{
+  /*
+   * O ARTIGO DO BLOG PRECISA EXIBIR O FAQ QUE ELE JÁ GUARDA.
+   *
+   * 834 artigos carregam perguntas e respostas no campo `faq`. Durante muito
+   * tempo a página só emitia isso como JSON-LD — conteúdo escrito, publicado
+   * e que nenhum leitor via, apostado num rich result que o Google restringiu
+   * a sites de governo e saúde em 2023.
+   *
+   * Este teste roda sem build e falha rápido se alguém remover a seção.
+   */
+  const artigo = readFileSync("app/blog/[slug]/page.tsx", "utf8");
+  ok("o artigo do blog renderiza o FAQ canônico", /<FAQ\s+itens=\{post\.faq\}/.test(artigo));
+  ok(
+    "o FAQ do artigo vem antes do embed do Pergunte",
+    artigo.indexOf("<FAQ itens={post.faq}") < artigo.indexOf("<AskEmbed"),
+    "responder o que já está respondido antes de convidar a perguntar outra coisa"
+  );
+  ok("o artigo continua emitindo o JSON-LD de FAQ", /"@type": "FAQPage"/.test(artigo));
+}
+
 bloco("6. O HTML GERADO (roda depois de next build)");
 
 const dirHtml = ".next/server/app";
@@ -160,6 +181,12 @@ if (!existsSync(dirHtml)) {
     ["faq.html", "Os valores variam conforme a modalidade", "/faq"],
     ["index.html", "personal trainer online cria seu programa", "home"],
     ["consultoria.html", "", "consultoria"],
+    /*
+     * O artigo do blog. Entrou depois dos outros quatro: as 3.853 perguntas
+     * dos 834 artigos existiam só no JSON-LD, invisíveis para quem lê. Este
+     * caso é o que impede a regressão de voltar a esconder tudo isso.
+     */
+    ["blog/smart-fit-vs-bluefit.html", "A Smart Fit é do mesmo grupo da Bio Ritmo", "artigo do blog"],
   ];
   for (const [arq, trecho, rotulo] of AMOSTRA) {
     const caminho = join(dirHtml, arq);

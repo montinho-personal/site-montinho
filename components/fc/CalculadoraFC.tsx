@@ -255,7 +255,7 @@ export default function CalculadoraFC({
               </table>
             </div>
 
-            <p className="text-gray-400 text-sm leading-relaxed mb-2 max-w-2xl">{NOTA_ESTIMATIVA}</p>
+            <p className="text-gray-400 text-sm leading-relaxed mb-3 max-w-2xl">{NOTA_ESTIMATIVA}</p>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-2xl">{NOTA_BETABLOQUEADOR}</p>
 
             {/* Metodologia */}
