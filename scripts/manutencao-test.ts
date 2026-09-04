@@ -23,8 +23,9 @@ import { CAMINHO, leRegistros, mudados, registra } from "./meta-antes";
 import { blogPosts, type BlogPost } from "../lib/blog";
 import {
   ACADEMIA_DE_CIDADE, ALT_GENERICO, ARTIGO_DE_LUGAR, TAREFAS, altGenerico, citaFonteNoTexto, contaH2, impressoes,
-  lote, metaForaDoLimite, semCapa, semReferencias,
+  lote, metaForaDoLimite, orfaos, recebemLinkDeArtigo, semCapa, semReferencias,
 } from "./manutencao";
+import { slugsDosIndices } from "../lib/regiao";
 import { LARGURA, ALTURA, caminhoCapa, caminhoSvg } from "./gerar-capa";
 import { acrescentaNoFim, conteudoDoArtigo, fechoDoContent, substituiNoArtigo } from "./editar-artigo";
 
@@ -91,6 +92,30 @@ ok("alt: NÃO pega alt descritivo de verdade",
   !altGenerico(post("caminhada-japonesa")) && !altGenerico(post("zonas-de-frequencia-cardiaca")),
   "os artigos novos descrevem a imagem e não podem entrar na fila");
 
+/*
+ * Órfãos: a sétima fila, de 04/09. O que os testes protegem é a definição —
+ * link de si mesmo não conta, lugar coberto pelos índices não entra, e um
+ * link de verdade tira o artigo da fila (senão o robô linka o mesmo artigo
+ * todo dia, de mais um lugar, e isso é o esquema de links que o Google pune).
+ */
+{
+  const a = finge({ slug: "aaa", content: '<p>veja <a href="/blog/bbb">bbb</a> e <a href="/blog/aaa">eu</a></p>' });
+  const b = finge({ slug: "bbb", content: "<p>nada</p>" });
+  const c = finge({ slug: "ccc", content: "<p>nada</p>" });
+  const r = recebemLinkDeArtigo([a, b, c]);
+  ok("órfãos: link de outro artigo conta", r.has("bbb"));
+  ok("órfãos: link do artigo para si mesmo NÃO conta", !r.has("aaa"));
+  ok("órfãos: quem recebe link sai da fila; quem não recebe entra",
+    orfaos([a, b, c]).map((p) => p.slug).join() === "aaa,ccc");
+  ok("órfãos: a fila de hoje não contém ninguém que já recebe link",
+    lote(TAREFAS.find((t) => t.id === "orfaos")!).hoje.every((p) => !recebemLinkDeArtigo().has(p.slug)));
+  const idx = slugsDosIndices();
+  ok("órfãos: lugar coberto pelos índices de região fica fora",
+    orfaos().every((p) => !idx.includes(p.slug)), "senão o robô refaz o que /onde-atendo resolveu");
+  ok("órfãos: smart-fit-vs-bluefit, o mais visto do site, já recebe link (resgatado em 04/09)",
+    recebemLinkDeArtigo().has("smart-fit-vs-bluefit"));
+}
+
 ok("academia de cidade: reconhece", ACADEMIA_DE_CIDADE(finge({ slug: "academias-em-barueri" })));
 ok("academia de cidade: ignora academia sem cidade", !ACADEMIA_DE_CIDADE(finge({ slug: "como-escolher-uma-academia" })));
 ok("academia de cidade: ignora cidade sem academia", !ACADEMIA_DE_CIDADE(finge({ slug: "personal-trainer-barueri" })));
@@ -108,8 +133,8 @@ for (const t of TAREFAS) {
 {
   const ids = TAREFAS.map((t) => t.id);
   ok("os ids são únicos", new Set(ids).size === ids.length);
-  ok("as seis filas do combinado estão aqui",
-    ["capa-academia", "referencias-transcrever", "referencias-pesquisar", "meta", "subtitulos", "alt"].every((i) => ids.includes(i)));
+  ok("as sete filas do combinado estão aqui",
+    ["capa-academia", "referencias-transcrever", "referencias-pesquisar", "meta", "subtitulos", "alt", "orfaos"].every((i) => ids.includes(i)));
   /*
    * 04/09: o alt subiu de 2 para 8 e o total foi de 17 para 23.
    *
@@ -120,9 +145,15 @@ for (const t of TAREFAS) {
    * fila levava 184 dias, e essa espera não comprava segurança nenhuma.
    *
    * As outras cinco não mudaram, e as duas travas abaixo dizem por quê.
+   *
+   * Ainda em 04/09 entrou a sétima fila, órfãos, a 5 por dia: o total foi
+   * a 28. O teto de 5 é julgamento por item — cada resgate edita 2 ou 3
+   * outros artigos, e alguém decide de onde o link sai.
    */
-  ok("as quotas combinadas em 04/09 (2+5+2+3+3+8 = 23/dia)",
-    TAREFAS.reduce((s, t) => s + t.quota, 0) === 23);
+  ok("as quotas combinadas em 04/09 (2+5+2+3+3+8+5 = 28/dia)",
+    TAREFAS.reduce((s, t) => s + t.quota, 0) === 28);
+  ok("órfãos a 5 por dia: cada um mexe em 2 ou 3 outros artigos", TAREFAS.find((t) => t.id === "orfaos")!.quota === 5);
+  ok("a regra dos órfãos proíbe link forçado", /NUNCA invente|PULE/.test(TAREFAS.find((t) => t.id === "orfaos")!.regra));
   /*
    * O alt tem teto porque cada imagem precisa ser aberta para o texto dizer
    * o que ela mostra. É julgamento por item, só que barato — não é licença
