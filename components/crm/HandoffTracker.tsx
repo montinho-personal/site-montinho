@@ -82,15 +82,24 @@ export default function HandoffTracker() {
         device: /Mobi|Android/i.test(navigator.userAgent) ? "mobile" : "desktop",
         consent,
       };
+      /*
+       * A ordem aqui importa, e o motivo é conversão.
+       *
+       * O href é REESCRITO com o código e o clique segue seu caminho
+       * natural: nada de preventDefault + window.open. Popup aberto por
+       * script é bloqueável (e em celular isso acontece), e um popup
+       * bloqueado numa página de anúncio é um lead pago que se perde. Link
+       * de verdade, clicado por uma pessoa, o navegador nunca bloqueia.
+       *
+       * `dataset.crmRef` marca o link já processado: o handler roda na fase
+       * de captura e não pode registrar o mesmo clique duas vezes.
+       */
+      a.dataset.crmRef = code;
+      a.href = anexarRefNaUrl(a.href, code);
       const body = JSON.stringify(payload);
       let enviado = false;
       try { enviado = navigator.sendBeacon("/api/crm/handoff", new Blob([body], { type: "application/json" })); } catch { /* sem beacon */ }
       if (!enviado) fetch("/api/crm/handoff", { method: "POST", body, headers: { "Content-Type": "application/json" }, keepalive: true }).catch(() => {});
-      // Abre o WhatsApp com a referência, sem esperar o servidor.
-      const url = anexarRefNaUrl(a.href, code);
-      e.preventDefault();
-      const win = window.open(url, "_blank", "noopener");
-      if (!win) location.href = url;
     }
     document.addEventListener("click", onClick, { capture: true });
     return () => document.removeEventListener("click", onClick, { capture: true });
