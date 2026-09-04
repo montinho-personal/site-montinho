@@ -135,7 +135,6 @@ const localBusinessSchema = {
     },
   ],
   sameAs: ["https://www.instagram.com/montinhopersonal/"],
-  priceRange: "$$",
   "@id": "https://www.montinhopersonal.com.br/#localbusiness",
 };
 
@@ -187,18 +186,9 @@ export default function RootLayout({
           }}
         />
         {/* End Google Tag Manager */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
       </head>
       <body className="min-h-screen flex flex-col bg-black text-white antialiased">
         {/* Google Tag Manager (noscript) — imediatamente após a abertura do <body> */}

@@ -5,8 +5,17 @@
 
 export type AnalyticsEvent =
   | "click_whatsapp"
-  /** CTA das landing pages de anúncio (/lp/*): placement = qual LP, posicao = onde na página. */
-  | "lp_cta_click"
+  /**
+   * Clique no WhatsApp a partir de uma landing page de anúncio (/lp/*).
+   *
+   * NÃO substitui `click_whatsapp` nem `generate_lead`, que o listener
+   * global já dispara em qualquer link wa.me e servem de conversão no
+   * Google Ads. Este evento existe para o que aqueles não carregam:
+   * `cta_location` (hero, como_funciona, atendimento, faq, final, sticky…)
+   * e `page_type` (lp_personal_alphaville). É o que responde qual bloco da
+   * página gera contato — sem inflar a contagem de conversões.
+   */
+  | "whatsapp_click"
   | "click_phone"
   | "submit_form"
   | "generate_lead"
