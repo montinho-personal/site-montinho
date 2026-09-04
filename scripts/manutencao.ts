@@ -43,6 +43,7 @@
 
 import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { blogPosts, getPostCoverImage, type BlogPost } from "../lib/blog";
+import { slugsDosIndices } from "../lib/regiao";
 
 const IMPRESSOES: Record<string, number> = existsSync("data/analytics/impressoes-blog.json")
   ? JSON.parse(readFileSync("data/analytics/impressoes-blog.json", "utf8")).impressoes
@@ -130,6 +131,31 @@ export const citaFonteNoTexto = (p: BlogPost) => NOMEIA_FONTE.test(p.content);
  */
 export const ARTIGO_DE_LUGAR = (p: BlogPost) =>
   /academia|quanto-custa|melhor-|melhores-|onde-|perto-de|como-escolher-.*(academia|personal)|alphaville|barueri|tambore|parnaiba|aldeia-da-serra|carapicuiba|osasco/i.test(p.slug);
+
+/**
+ * Órfão: artigo que nenhum OUTRO artigo linka.
+ *
+ * O índice do blog lista os 839 no HTML, então o Google chega a todos — o
+ * problema não é descoberta. O que falta é o link CONTEXTUAL, de dentro de
+ * um texto do mesmo assunto, que é o que passa relevância. Um link dividido
+ * por 839 no índice não vale quase nada.
+ *
+ * Link do próprio artigo para si mesmo não conta. Página de lugar coberta
+ * pelos índices de região (lib/regiao.ts) também não entra: ela já recebe
+ * link contextual de /onde-atendo ou de /academias-alphaville, e voltar a
+ * linkar de dentro de um artigo seria refazer o que os índices resolveram.
+ */
+export const RE_LINK_INTERNO = /href="\/blog\/([a-z0-9-]+)"/g;
+export function recebemLinkDeArtigo(posts: BlogPost[] = blogPosts): Set<string> {
+  const s = new Set<string>();
+  for (const p of posts) for (const m of p.content.matchAll(RE_LINK_INTERNO)) if (m[1] !== p.slug) s.add(m[1]);
+  return s;
+}
+const COBERTOS_PELOS_INDICES = new Set(slugsDosIndices());
+export function orfaos(posts: BlogPost[] = blogPosts): BlogPost[] {
+  const linkados = recebemLinkDeArtigo(posts);
+  return posts.filter((p) => !linkados.has(p.slug) && !COBERTOS_PELOS_INDICES.has(p.slug));
+}
 
 export interface Tarefa {
   id: string;
@@ -220,6 +246,27 @@ export const TAREFAS: Tarefa[] = [
       "O alt novo descreve o que a imagem MOSTRA — os números da tabela, os passos do movimento —, lendo o conteúdo "
       + "do próprio SVG em public/blog-images. Não repita o título do artigo: isso é o que o alt genérico já fazia.",
   },
+  {
+    id: "orfaos",
+    nome: "Órfãos: artigo que nenhum outro linka",
+    /*
+     * 5, porque cada resgate mexe em 2 ou 3 OUTROS artigos.
+     *
+     * Não é medo de penalidade (AGENTS.md): é julgamento por item. Para cada
+     * órfão alguém decide de quais artigos do mesmo assunto o link sai e
+     * em que frase ele cabe sem parecer enfiado. 5 órfãos são até 15
+     * edições num dia, e é isso que limita o ritmo. 259 pendentes em 04/09
+     * dão ~52 dias.
+     */
+    quota: 5,
+    pendentes: () => orfaos(),
+    regra:
+      "Escolha 2 ou 3 artigos do MESMO assunto que já falam do tema (busque a palavra no acervo, normalizando acento) "
+      + "e insira o link onde a frase já existe — no <li> da lista de 'Leia também', ou na própria menção em prosa. "
+      + "Use substituiNoArtigo, um trecho por artigo. NUNCA invente afirmação para justificar o link, NUNCA linke de "
+      + "artigo de outro assunto só para cumprir a quota, e NUNCA linke o artigo para si mesmo. Se não houver artigo do "
+      + "mesmo assunto, PULE e registre: link forçado é o esquema de links que o Google penaliza de verdade.",
+  },
 ];
 
 const arred = (n: number) => Math.round(n * 10) / 10;
@@ -276,6 +323,7 @@ function main() {
       const svg = ARQUIVOS.has(`${p.slug}-infographic.svg`);
       const extra = l.tarefa.id === "capa-academia" ? `  [infográfico no disco: ${svg ? "sim" : "NÃO — pular"}]`
         : l.tarefa.id === "subtitulos" ? `  [h2 hoje: ${contaH2(p)}]`
+        : l.tarefa.id === "orfaos" ? `  [links que ele mesmo dá: ${(p.content.match(RE_LINK_INTERNO) ?? []).length}]`
         : l.tarefa.id === "meta" ? `  [título ${(p.metaTitle ?? p.title).length} · descrição ${(p.metaDescription ?? "").length}]`
         : "";
       console.log(`  ${String(impressoes(p.slug)).padStart(5)} impr  ${p.slug}${extra}`);

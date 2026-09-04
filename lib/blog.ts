@@ -8220,7 +8220,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><strong>Corrida:</strong> eficiente, mas impacto elevado — requer adaptação progressiva</li>
   <li><strong>Bike (ergométrica ou ao ar livre):</strong> ótimo custo-benefício, menor impacto articular</li>
   <li><strong>Natação:</strong> excelente para quem tem problemas articulares</li>
-  <li><strong>Elíptico:</strong> baixo impacto, bom gasto calórico</li>
+  <li><strong>Elíptico:</strong> baixo impacto, bom gasto calórico — veja <a href="/blog/eliptico-emagrece">quantas calorias o elíptico gasta e como usar</a></li>
   <li><strong>HIIT:</strong> eficiente em tempo, mas exige base cardiovascular e limita-se a 2-3x/semana</li>
 </ul>
 
@@ -8917,6 +8917,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><strong>Metabolismo lento tem cura?</strong> A TMB em si não é uma doença. Você pode aumentar o metabolismo com mais massa muscular, mais atividade e melhores hábitos. Se suspeitar de hipotireoidismo, consulte um médico.</li>
   <li><strong>Café acelera o metabolismo?</strong> A cafeína tem um efeito termogênico modesto — aumenta o gasto energético em 3 a 5% por algumas horas. Não é transformador, mas é real.</li>
   <li><strong>Comer de 3 em 3 horas acelera o metabolismo?</strong> Não. Esse mito foi desmistificado. O que importa é o total calórico do dia, não a frequência das refeições.</li>
+<li><strong>Dormir depois do almoço engorda?</strong> Não. O cochilo em si não muda o balanço do dia — expliquei em <a href="/blog/dormir-depois-do-almoco-engorda">dormir depois do almoço engorda?</a></li>
   <li><strong>A genética define meu metabolismo?</strong> A genética explica diferenças pequenas — em torno de 100 kcal/dia. Os fatores de estilo de vida têm impacto muito maior.</li>
   <li><strong>Mulheres têm metabolismo mais lento que homens?</strong> Em média, sim — porque homens têm maior massa muscular e peso corporal. Mas dentro do mesmo sexo, as variações são pequenas.</li>
   <li><strong>Dieta radical pode diminuir meu metabolismo permanentemente?</strong> Não permanentemente, mas a adaptação metabólica pode durar meses após dietas muito restritivas.</li>
@@ -40975,7 +40976,7 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
 
 <h2>Soneca estratégica: o poder do cochilo</h2>
 
-<p>Para atletas com privação de sono ou que treinam em dois períodos, uma <strong>soneca de 20-30 minutos</strong> (não mais) melhora a performance cognitiva, o humor e a recuperação muscular. Sonecas mais longas causam inércia do sono (sensação de grogue) e podem interferir com o sono noturno.</p>
+<p>Para atletas com privação de sono ou que treinam em dois períodos, uma <strong>soneca de 20-30 minutos</strong> (não mais) melhora a performance cognitiva, o humor e a recuperação muscular. Sonecas mais longas causam inércia do sono (sensação de grogue) e podem interferir com o sono noturno. E se a dúvida é o cochilo depois de comer, respondi em <a href="/blog/dormir-depois-do-almoco-engorda">dormir depois do almoço engorda?</a></p>
 
 <p>O timing ideal: entre 13h e 15h — coincidindo com a queda natural de alerta do ritmo circadiano.</p>
 
@@ -44977,7 +44978,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <ul>
 <li>Musculação de alta repetição (15–25 reps)</li>
 <li>HIIT e sprints repetidos</li>
-<li>Esportes de combate (luta, boxe)</li>
+<li>Esportes de combate (luta, <a href="/blog/boxe-emagrece">boxe</a>)</li>
 <li>Natação, remo, ciclismo (provas de 1–4 minutos)</li>
 </ul>
 
@@ -81342,6 +81343,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/academias-em-alphaville">Academias em Alphaville: o guia completo</a></li>
+<li><a href="/blog/smart-fit-vs-bluefit">Smart Fit vs Bluefit: qual vale mais a pena?</a></li>
 <li><a href="/blog/melhor-academia-de-alphaville">Qual a melhor academia de Alphaville?</a></li>
 <li><a href="/blog/como-escolher-uma-academia">Como escolher uma academia sem errar</a></li>
 </ul>`,
@@ -85767,6 +85769,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/vale-a-pena-bluefit">Vale a pena a Bluefit? Análise honesta</a></li>
+<li><a href="/blog/smart-fit-vs-bluefit">Smart Fit vs Bluefit: qual vale mais a pena?</a></li>
 <li><a href="/blog/como-escolher-uma-academia">Como escolher uma academia sem errar</a></li>
 <li><a href="/blog/academia-ou-personal-trainer">Academia ou personal trainer: o que vale mais?</a></li>
 </ul>`,
@@ -85852,6 +85855,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/vale-a-pena-smart-fit">Vale a pena a Smart Fit? Análise honesta</a></li>
+<li><a href="/blog/smart-fit-vs-bluefit">Smart Fit vs Bluefit: qual vale mais a pena?</a></li>
 <li><a href="/blog/academias-em-barueri">Academias em Barueri: guia completo</a></li>
 <li><a href="/blog/qual-academia-e-mais-barata-alphaville-barueri">Qual academia é mais barata em Alphaville e Barueri?</a></li>
 </ul>`,
@@ -97192,7 +97196,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Aqui está a parte que me incomoda como profissional: pessoas em processo de emagrecimento adicionando 2-3 colheres de óleo de coco por dia ao café, à tapioca, à comida — acreditando estar ajudando.</p>
 
-<p>Três colheres de sopa são cerca de <strong>360 calorias</strong>. Isso pode ser mais da metade do déficit diário planejado, apagado por um hábito que a pessoa acha que emagrece. Já vi platôs de meses explicados por esse tipo de "alimento saudável em excesso" — o mesmo raciocínio que vale para açaí, granola e castanhas sem medida.</p>
+<p>Três colheres de sopa são cerca de <strong>360 calorias</strong>. Isso pode ser mais da metade do déficit diário planejado, apagado por um hábito que a pessoa acha que emagrece. Já vi platôs de meses explicados por esse tipo de "alimento saudável em excesso" — o mesmo raciocínio que vale para <a href="/blog/acai-engorda">açaí</a>, granola e castanhas sem medida.</p>
 
 <h2>A anatomia de um mito que não morre</h2>
 
@@ -98633,7 +98637,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 
 <h2>Conclusão</h2>
-<p>Comer à noite não engorda por si — o total do dia decide. Mas um jantar leve, com proteína, vegetais e porções conscientes, é uma das ferramentas mais práticas do emagrecimento: sacia, melhora o sono e fecha o dia sem descontrole.</p>
+<p>Comer à noite não engorda por si — o total do dia decide, e o mesmo vale para <a href="/blog/dormir-depois-do-almoco-engorda">o cochilo depois do almoço</a>. Mas um jantar leve, com proteína, vegetais e porções conscientes, é uma das ferramentas mais práticas do emagrecimento: sacia, melhora o sono e fecha o dia sem descontrole.</p>
 <p>Pare de lutar contra o jantar. Planeje-o. A noite deixa de ser o momento em que a dieta desmorona e vira o momento em que ela se consolida.</p>
 
 <p>A noite é onde a maioria perde o jogo — no vídeo abaixo, do meu canal, falo sobre proteger o objetivo:</p>
@@ -100060,7 +100064,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Algumas frutas concentram mais calorias por grama. Isso não as torna proibidas — torna a porção mais relevante:</p>
 <ul>
 <li><strong>Abacate:</strong> rico em gordura boa, tem cerca de 160 kcal por 100g. Excelente alimento, mas meio abacate grande pode passar de 300 kcal. Use porções de 2-3 colheres de sopa.</li>
-<li><strong>Açaí:</strong> a polpa pura é razoável; o problema é a versão de lanchonete, batida com xarope e coberta de granola, leite condensado e paçoca — aí uma tigela passa fácil de 700 kcal.</li>
+<li><strong>Açaí:</strong> a polpa pura é razoável; o problema é a versão de lanchonete, batida com xarope e coberta de granola, leite condensado e paçoca — aí uma tigela passa fácil de 700 kcal. A conta da tigela contra a polpa pura está em <a href="/blog/acai-engorda">açaí engorda?</a></li>
 <li><strong>Frutas secas (uva passa, damasco, tâmara):</strong> ao tirar a água, as calorias se concentram. Um punhado de passas tem as calorias de um cacho grande de uva, com fração da saciedade.</li>
 <li><strong>Coco:</strong> a polpa é calórica pela gordura. Porções pequenas.</li>
 </ul>
@@ -102966,6 +102970,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><a href="/blog/deficit-calorico-como-calcular">Déficit Calórico: Como Calcular o Seu</a></li>
 <li><a href="/blog/musculacao-ou-corrida-para-emagrecer">Musculação ou Corrida Para Emagrecer?</a></li>
 <li><a href="/blog/crossfit-vs-musculacao">CrossFit vs Musculação: Qual Escolher?</a></li>
+<li><a href="/blog/boxe-emagrece">Boxe Emagrece? Quantas Calorias Queima</a></li>
 </ul>`,
   },
   {
@@ -103039,7 +103044,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <h2>A regra que decide tudo: o déficit calórico</h2>
 
-<p>Aqui não tem exceção, e vale para zumba, luta, corrida ou qualquer modalidade: <strong>você só perde gordura gastando mais do que consome</strong>, de forma sustentada. A aula de zumba contribui com a parte do gasto; a alimentação decide se esse esforço vira resultado ou é anulado.</p>
+<p>Aqui não tem exceção, e vale para zumba, <a href="/blog/boxe-emagrece">luta</a>, corrida ou qualquer modalidade: <strong>você só perde gordura gastando mais do que consome</strong>, de forma sustentada. A aula de zumba contribui com a parte do gasto; a alimentação decide se esse esforço vira resultado ou é anulado.</p>
 
 <p>A matemática honesta:</p>
 
@@ -103873,7 +103878,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <h2>O que o spinning não resolve sozinho</h2>
 <ul>
-<li><strong>A alimentação:</strong> 500 kcal gastas na aula desaparecem com um açaí completo na saída da academia. Sem controle do que entra, o spinning melhora seu condicionamento e mantém seu peso. Entenda o tamanho do seu déficit em <a href="/blog/deficit-calorico-como-calcular">como calcular o déficit calórico</a>.</li>
+<li><strong>A alimentação:</strong> 500 kcal gastas na aula desaparecem com um <a href="/blog/acai-engorda">açaí completo</a> na saída da academia. Sem controle do que entra, o spinning melhora seu condicionamento e mantém seu peso. Entenda o tamanho do seu déficit em <a href="/blog/deficit-calorico-como-calcular">como calcular o déficit calórico</a>.</li>
 <li><strong>A massa muscular:</strong> pedalar trabalha as pernas em resistência, mas não substitui treino de força para o corpo todo. Em processos longos de emagrecimento, musculação (ou um bom <a href="/blog/treino-em-casa-sem-equipamento">treino de força em casa</a>) é o que evita perder músculo junto com a gordura.</li>
 <li><strong>A gordura localizada:</strong> pedalar muito não seca especificamente barriga nem culote. O corpo decide de onde a gordura sai, e ele não aceita sugestões.</li>
 </ul>
@@ -107116,7 +107121,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Panturrilha em destaque.</strong> Elevação de panturrilha em pé e sentada, com boa amplitude e controle. É o treino direto da bomba muscular. Faixas de 12 a 20 repetições funcionam bem.</li>
 <li><strong>Trabalho de perna completo</strong> — agachamento, leg press, cadeira extensora, flexora, stiff. Sem proibições genéricas, com carga que permita respirar de forma razoável.</li>
 <li><strong>Exercícios deitados ou com pernas elevadas</strong> como complemento. Leg press, mesa flexora e abdução deitada favorecem o retorno pela posição.</li>
-<li><strong>Aeróbico de baixo impacto</strong> — caminhada, bicicleta, elíptico e principalmente natação e hidroginástica, onde a pressão da água ajuda o retorno venoso. A <a href="/blog/caminhada-emagrece">caminhada</a> é provavelmente a melhor relação custo-benefício aqui.</li>
+<li><strong>Aeróbico de baixo impacto</strong> — caminhada, bicicleta, <a href="/blog/eliptico-emagrece">elíptico</a> e principalmente natação e hidroginástica, onde a pressão da água ajuda o retorno venoso. A <a href="/blog/caminhada-emagrece">caminhada</a> é provavelmente a melhor relação custo-benefício aqui.</li>
 <li><strong>Mobilidade de tornozelo.</strong> Tornozelo travado reduz a eficiência da bomba da panturrilha. Vale trabalhar isso.</li>
 <li><strong>Evitar ficar imóvel em pé</strong> nos descansos.</li>
 </ul>
@@ -111515,7 +111520,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p><strong>Regra prática:</strong> dor pontual, que você aponta com um dedo, que piora a cada treino ou que aparece em repouso é motivo para parar de correr e procurar um ortopedista com exame de imagem (a radiografia comum frequentemente não mostra fratura por estresse no início — ressonância magnética é o padrão). Não é exagero, é prudência.</p>
 <h2>O que fazer para tratar a canelite</h2>
 <h3>1. Reduza o volume — sem necessariamente zerar</h3>
-<p>Na canelite leve a moderada, o caminho geralmente não é parar tudo, e sim reduzir. Corte o volume de corrida em 30 a 50%, diminua o ritmo e evite tiros, ladeiras e saltos por algumas semanas. Se mesmo assim a dor persistir ou piorar, aí sim vale uma pausa completa do impacto — mantendo condicionamento com bike, natação ou elíptico, que não doem.</p>
+<p>Na canelite leve a moderada, o caminho geralmente não é parar tudo, e sim reduzir. Corte o volume de corrida em 30 a 50%, diminua o ritmo e evite tiros, ladeiras e saltos por algumas semanas. Se mesmo assim a dor persistir ou piorar, aí sim vale uma pausa completa do impacto — mantendo condicionamento com bike, natação ou <a href="/blog/eliptico-emagrece">elíptico</a>, que não doem.</p>
 <h3>2. Fortaleça panturrilha e tibial anterior</h3>
 <p>Músculos fortes absorvem impacto e protegem o osso. Os básicos que uso com meus alunos:</p>
 <ul>
