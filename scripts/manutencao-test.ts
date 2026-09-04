@@ -19,6 +19,7 @@
  */
 
 import { existsSync, readFileSync } from "node:fs";
+import { CAMINHO, leRegistros, mudados, registra } from "./meta-antes";
 import { blogPosts, type BlogPost } from "../lib/blog";
 import {
   ACADEMIA_DE_CIDADE, ALT_GENERICO, ARTIGO_DE_LUGAR, TAREFAS, altGenerico, citaFonteNoTexto, contaH2, impressoes,
@@ -109,8 +110,31 @@ for (const t of TAREFAS) {
   ok("os ids são únicos", new Set(ids).size === ids.length);
   ok("as seis filas do combinado estão aqui",
     ["capa-academia", "referencias-transcrever", "referencias-pesquisar", "meta", "subtitulos", "alt"].every((i) => ids.includes(i)));
-  ok("as quotas combinadas em 03/09 (2+5+2+3+3+2 = 17/dia)",
-    TAREFAS.reduce((s, t) => s + t.quota, 0) === 17);
+  /*
+   * 04/09: o alt subiu de 2 para 8 e o total foi de 17 para 23.
+   *
+   * O motivo da revisão está escrito em AGENTS.md: o que decide o ritmo é
+   * atribuição e julgamento por item, não medo de penalidade. O alt não é
+   * alavanca de ranqueamento com consequência — não dá para piorar posição
+   * escrevendo alt, e não há efeito a atribuir semanas depois. A 2 por dia a
+   * fila levava 184 dias, e essa espera não comprava segurança nenhuma.
+   *
+   * As outras cinco não mudaram, e as duas travas abaixo dizem por quê.
+   */
+  ok("as quotas combinadas em 04/09 (2+5+2+3+3+8 = 23/dia)",
+    TAREFAS.reduce((s, t) => s + t.quota, 0) === 23);
+  /*
+   * O alt tem teto porque cada imagem precisa ser aberta para o texto dizer
+   * o que ela mostra. É julgamento por item, só que barato — não é licença
+   * para lote de 400.
+   */
+  ok("o alt anda rápido, mas não vira lote", TAREFAS.find((t) => t.id === "alt")!.quota === 8);
+  /*
+   * A fila de meta é a única que mexe em CTR, e o efeito demora semanas para
+   * aparecer. A quota baixa só faz sentido junto com o registro do estado
+   * anterior: sem ele, ir devagar não ajuda a atribuir nada.
+   */
+  ok("meta continua em 3 por dia", TAREFAS.find((t) => t.id === "meta")!.quota === 3);
   /*
    * A divisão de 03/09: transcrever anda rápido porque a fonte já está no
    * texto; pesquisar anda devagar porque alguém escolhe o estudo. Inverter
@@ -228,6 +252,58 @@ bloco("6. EDIÇÃO SEGURA DENTRO DE lib/blog.ts");
     try { fn(); } catch { erro = true; }
     ok(`recusa: ${nome}`, erro);
   }
+}
+
+bloco("7. O ANTES/DEPOIS DE TÍTULO E DESCRIÇÃO");
+
+/*
+ * A fila de meta é a única que mexe num sinal de CTR, e o efeito só aparece
+ * no Search Console 2 a 4 semanas depois. Até este registro existir, a rotina
+ * reescrevia o título e não guardava o que estava lá antes — e como ela
+ * ordena por impressão, começava justamente pelas páginas onde isso mais
+ * importaria.
+ *
+ * O que estes testes protegem é o único atributo que faz o registro valer:
+ * o primeiro "antes" nunca é sobrescrito.
+ */
+{
+  const antes = leRegistros();
+  const slugs = Object.keys(antes);
+
+  ok("o arquivo de registro existe e tem forma de objeto", typeof antes === "object" && antes !== null);
+
+  const fantasmas = slugs.filter((s) => !blogPosts.some((p) => p.slug === s));
+  ok("todo slug registrado existe no acervo", fantasmas.length === 0, fantasmas.join(", "));
+
+  const vazios = slugs.filter((s) => !antes[s].titulo?.trim() || !antes[s].data);
+  ok("nenhum registro tem título ou data vazios", vazios.length === 0, vazios.join(", "));
+
+  ok(
+    "a regra da fila de meta manda registrar antes de editar",
+    /meta-antes\.ts registrar/.test(TAREFAS.find((t) => t.id === "meta")!.regra),
+    "sem isso a rotina edita e o registro nunca acontece"
+  );
+
+  /*
+   * O comportamento que sustenta tudo: registrar de novo NÃO sobrescreve.
+   * Testado contra o arquivo real, e conferindo que ele saiu intacto.
+   */
+  if (slugs.length) {
+    const bruto = readFileSync(CAMINHO, "utf8");
+    const alvo = slugs[0];
+    const gravou = registra(alvo);
+    ok("registrar duas vezes não sobrescreve o primeiro antes", gravou === false);
+    ok("e o arquivo sai intacto", readFileSync(CAMINHO, "utf8") === bruto);
+  } else {
+    console.log("  pulado  nenhum registro ainda — nada para conferir contra sobrescrita");
+  }
+
+  /* mudados() só aponta o que de fato divergiu do registro. */
+  const divergentes = mudados();
+  const falsoPositivo = divergentes.filter(
+    (d) => d.antes.titulo === d.agora.titulo && d.antes.descricao === d.agora.descricao
+  );
+  ok("mudados() não inventa mudança onde nada mudou", falsoPositivo.length === 0);
 }
 
 console.log("\n" + "=".repeat(64));
