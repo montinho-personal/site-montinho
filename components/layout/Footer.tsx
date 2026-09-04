@@ -120,6 +120,10 @@ export default function Footer() {
               <Link href="/blog/personal-trainer-aldeia-da-serra" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">Personal Trainer Aldeia da Serra</Link>
               <Link href="/academias-alphaville" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">Academias de Alphaville</Link>
               <Link href="/academia-ideal-alphaville" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">Qual Academia Combina com Você</Link>
+              {/* O índice de região precisa de link sitewide, senão ele mesmo
+                  nasce órfão e não tem relevância para passar às 44 páginas
+                  de lugar que ele linka. */}
+              <Link href="/onde-atendo" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">Onde Eu Atendo</Link>
             </nav>
           </div>
 
