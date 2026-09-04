@@ -217,8 +217,8 @@ export default function RootLayout({
           <Footer />
           <WhatsAppFloat />
           <StickyBar />
-          <CookieBanner />
         </SiteChrome>
+        <SiteChrome sempreEm={["/lp/"]}><CookieBanner /></SiteChrome>
         <AnalyticsTracker />
         {/* Rastreamento first-party do CRM: toques de origem e handoff do WhatsApp. */}
         <HandoffTracker />
