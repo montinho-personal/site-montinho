@@ -8,6 +8,8 @@ import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import CookieBanner from "@/components/layout/CookieBanner";
 import StickyBar from "@/components/sticky/StickyBar";
 import AnalyticsTracker from "@/components/analytics/AnalyticsTracker";
+import HandoffTracker from "@/components/crm/HandoffTracker";
+import SiteChrome, { MainDoSite } from "@/components/layout/SiteChrome";
 
 const dmSans = DM_Sans({
   variable: "--font-inter",
@@ -209,13 +211,17 @@ export default function RootLayout({
           />
         </noscript>
         {/* End Google Tag Manager (noscript) */}
-        <Header />
-        <main className="flex-1 pt-16 lg:pt-20">{children}</main>
-        <Footer />
-        <WhatsAppFloat />
-        <StickyBar />
-        <CookieBanner />
+        <SiteChrome><Header /></SiteChrome>
+        <MainDoSite>{children}</MainDoSite>
+        <SiteChrome>
+          <Footer />
+          <WhatsAppFloat />
+          <StickyBar />
+          <CookieBanner />
+        </SiteChrome>
         <AnalyticsTracker />
+        {/* Rastreamento first-party do CRM: toques de origem e handoff do WhatsApp. */}
+        <HandoffTracker />
         {/* GA4 instalado diretamente (pré-GTM). Ao configurar a tag GA4 dentro
             do GTM (GTM-TDKJMPMR), remover este bloco para evitar pageviews
             duplicados. Futuras tags (Google Ads, Remarketing, Clarity, Meta
