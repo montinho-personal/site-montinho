@@ -180,7 +180,10 @@ export const TAREFAS: Tarefa[] = [
     quota: 3,
     pendentes: () => blogPosts.filter(metaForaDoLimite),
     regra:
-      "Título até 60, descrição entre 120 e 160. Encurtar preserva o termo de busca no começo; alongar não pode "
+      "ANTES de editar qualquer coisa, rode `npx tsx scripts/meta-antes.ts registrar <slug...>` com os slugs do lote. "
+      + "Esta é a única fila que mexe num sinal de CTR, o efeito só aparece no Search Console 2 a 4 semanas depois, "
+      + "e sem o registro não há como olhar para trás e ver o que mudou. "
+      + "Depois: título até 60, descrição entre 120 e 160. Encurtar preserva o termo de busca no começo; alongar não pode "
       + "prometer o que o artigo não entrega. Nenhuma linha de conteúdo muda, e o slug NUNCA muda. "
       + "scripts/seo-serp-test.ts precisa passar.",
   },
@@ -197,7 +200,21 @@ export const TAREFAS: Tarefa[] = [
   {
     id: "alt",
     nome: "Descrição de imagem genérica",
-    quota: 2,
+    /*
+     * 8, e não 2.
+     *
+     * O alt não é alavanca de ranqueamento com consequência: ele serve ao
+     * leitor de tela e à busca por imagem. Não existe aqui o risco que
+     * justifica ritmo baixo em título e descrição — não dá para piorar
+     * posição escrevendo alt, e o efeito não precisa ser atribuído semanas
+     * depois.
+     *
+     * O que sobra é o julgamento por item: cada alt precisa dizer o que
+     * AQUELA imagem mostra, o que exige abrir o SVG. Por isso 8 e não 400.
+     * A 2 por dia, a fila levava 184 dias — meio ano de espera que não
+     * comprava segurança nenhuma.
+     */
+    quota: 8,
     pendentes: () => blogPosts.filter((p) => altGenerico(p) && !svgDeTemplate(p)),
     regra:
       "O alt novo descreve o que a imagem MOSTRA — os números da tabela, os passos do movimento —, lendo o conteúdo "
