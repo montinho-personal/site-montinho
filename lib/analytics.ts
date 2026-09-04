@@ -5,6 +5,8 @@
 
 export type AnalyticsEvent =
   | "click_whatsapp"
+  /** CTA das landing pages de anúncio (/lp/*): placement = qual LP, posicao = onde na página. */
+  | "lp_cta_click"
   | "click_phone"
   | "submit_form"
   | "generate_lead"
