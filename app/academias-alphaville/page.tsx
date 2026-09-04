@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
 import { montarGuia } from "@/lib/academias/guia";
+import IndiceRegiao from "@/components/regiao/IndiceRegiao";
+import { GUIAS_DE_ACADEMIA } from "@/lib/regiao";
 
 /**
  * Guia das academias de Alphaville.
@@ -187,6 +189,26 @@ export default function AcademiasAlphavillePage() {
               Comparar academias <span aria-hidden="true">&nbsp;→</span>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Guias por necessidade.
+          Esta página responde "qual academia?"; estes 33 guias respondem a
+          pergunta que vem antes dela — "qual delas tem piscina?", "qual abre
+          às 5h?". Eram artigos que nenhuma outra página do site linkava, e
+          este é o lugar natural deles: mesma região, mesma decisão, um passo
+          antes. */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-white mb-3" style={h}>
+            Guias por necessidade
+          </h2>
+          <p className="text-gray-300 leading-relaxed mb-10">
+            Se o que decide não é a marca da academia e sim um detalhe — o
+            horário que você consegue, a piscina, o trajeto do trabalho —
+            comece por aqui.
+          </p>
+          <IndiceRegiao grupos={GUIAS_DE_ACADEMIA} />
         </div>
       </section>
 
