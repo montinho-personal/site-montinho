@@ -96,3 +96,24 @@ insere em handoffs, cliques e toques; não lê nada.
 5. **Nada de dado de saúde**: nem coluna, nem FK, nem leitura.
 6. **Importações idempotentes**: ids são UUID v5 do id da fonte; rodar de
    novo não duplica.
+
+## Planos (set/2026)
+
+Cadastrados a partir das duas tabelas de preço do Montinho. O CRM guarda o
+valor do **ciclo** e normaliza para MRR dividindo por `ciclo_meses` — por
+isso a consultoria trimestral de R$ 399 entra como R$ 133/mês, e não como
+R$ 399/mês.
+
+| Serviço | Plano | Cobrança | Valor | Por mês |
+| --- | --- | --- | --- | --- |
+| Presencial | 2 aulas por semana | mensal | R$ 1.200 | R$ 1.200 |
+| Presencial | 3 aulas por semana | mensal | R$ 1.800 | R$ 1.800 |
+| Presencial | 4 aulas por semana | mensal | R$ 2.400 | R$ 2.400 |
+| Presencial | 5 aulas por semana | mensal | R$ 3.000 | R$ 3.000 |
+| Pacote flexível | 10 aulas + consultoria | pacote | R$ 1.500 | pagamento único |
+| Online | Trimestral (12 semanas) | trimestral | R$ 399 | R$ 133 |
+| Online | Semestral (24 semanas) | semestral | R$ 765 | R$ 127,50 |
+| Online | Anual (48 semanas) | anual | R$ 1.440 | R$ 120 |
+
+O desconto de 5% no Pix e o parcelamento sem juros ficam na descrição de
+cada plano, não como planos separados: são forma de pagamento, não produto.
