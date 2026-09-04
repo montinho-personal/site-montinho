@@ -1,6 +1,6 @@
 import { exigirUsuario } from "@/lib/crm/auth";
 import { base, catalogo } from "@/lib/crm/dados";
-import { eventosReceita, clientesMetricas } from "@/lib/crm/analise";
+import { eventosReceita, clientesMetricas, separarPorReceita } from "@/lib/crm/analise";
 import { ltvMedio, ltvPorFonte, ltvProjetado, coortes, churnClientes, retencaoClientes, tenureMeses, taxaRenovacao, ltvRealizado, DIA_MS } from "@/lib/crm/metricas";
 import AnalyticsNav from "@/components/crm/AnalyticsNav";
 import { Aviso, Card, Pagina, Stat, Tabela, brl, pct, Amostra } from "@/components/crm/ui";
@@ -8,13 +8,14 @@ import { Aviso, Card, Pagina, Stat, Tabela, brl, pct, Amostra } from "@/componen
 export default async function Ltv() {
   await exigirUsuario();
   const [b, cat] = await Promise.all([base(), catalogo()]);
-  const ev = eventosReceita(b); const cls = clientesMetricas(b);
+  const ev = eventosReceita(b); const todos = clientesMetricas(b);
+  const { comReceita: cls, semReceita } = separarPorReceita(todos, ev);
   const real = ltvMedio(cls, ev); const proj = ltvProjetado(cls, ev);
   const porFonte = ltvPorFonte(cls, ev);
   const co = coortes(cls, ev);
   const hoje = new Date();
   const ret = [30, 60, 90, 180, 365].map((d) => { const ini = new Date(hoje.getTime() - d * DIA_MS); const ativosInicio = b.clientes.filter((c) => new Date(c.first_purchase_at) <= ini && (!c.cancelled_at || new Date(c.cancelled_at) > ini)); const permanecem = ativosInicio.filter((c) => !c.cancelled_at || new Date(c.cancelled_at) > hoje); return { d, n: ativosInicio.length, retencao: retencaoClientes(ativosInicio.length, permanecem.length), churn: churnClientes(ativosInicio.length, ativosInicio.length - permanecem.length) }; });
-  const ten = tenureMeses(cls);
+  const ten = tenureMeses(todos);
   const elegiveis = b.contratos.filter((c) => c.status !== "ativo"); const renovados = elegiveis.filter((c) => c.status === "renovado");
   const porPlano = cat.planos.map((p) => { const xs = b.clientes.filter((c) => c.current_plan_id === p.id); return { p, n: xs.length, ativos: xs.filter((c) => c.status === "ativo").length, ltv: xs.length ? xs.reduce((s, c) => s + ltvRealizado(ev, c.id), 0) / xs.length : null }; }).filter((x) => x.n);
   const porServico = cat.servicos.map((s) => { const xs = cls.filter((c) => b.clientes.find((k) => k.id === c.id)?.service_id === s.id); return { s, ...ltvMedio(xs, ev) }; });
@@ -31,6 +32,7 @@ export default async function Ltv() {
         <Stat rotulo="LTV indicados" valor={brl(indic.medio)} sub={<Amostra n={indic.n} minimo={5} />} />
         <Stat rotulo="LTV não indicados" valor={brl(naoIndic.medio)} sub={<Amostra n={naoIndic.n} minimo={5} />} />
       </div>
+      {semReceita.length > 0 && <div className="mb-4"><Aviso tom="alerta">{semReceita.length} {semReceita.length === 1 ? "cliente importado sem receita registrada fica" : "clientes importados sem receita registrada ficam"} fora das médias de LTV: o valor deles é desconhecido, não zero. Registre os pagamentos na ficha do cliente para incluí-los.</Aviso></div>}
       {real.n < 15 && <div className="mb-4"><Aviso tom="alerta">Base pequena ({real.n} clientes): compare fontes com cautela e não tire conclusão de LTV final de cliente com 1 mês.</Aviso></div>}
       <div className="grid gap-4 lg:grid-cols-2">
         <Card titulo="LTV por origem"><Tabela cabecalho={["Origem", "Clientes", "LTV médio", "Mediana", "Total"]} linhas={porFonte.map((f) => [nomeF(f.fonte), <span key="n">{f.n} <Amostra n={f.n} minimo={5} /></span>, brl(f.medio), brl(f.mediana), brl(f.total)])} vazio="Sem clientes." /></Card>
