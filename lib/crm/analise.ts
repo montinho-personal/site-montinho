@@ -4,6 +4,15 @@ import { atribuir, cacMidia, coberturaAtribuicao, ltvCac, ltvMedio, ltvRealizado
 import { contagemFunil } from "./visao";
 
 export const eventosReceita = (b: Base): EventoReceita[] => b.receitas.map((r) => ({ clientId: r.client_id, amount: r.amount, tipo: r.tipo, occurredAt: r.occurred_at, status: r.status }));
+/**
+ * Só clientes com alguma receita coletada entram em média de LTV. Cliente
+ * importado sem recibo (planilha, cadastro) tem LTV desconhecido, não zero —
+ * e zero na média derrubaria o número de todo mundo.
+ */
+export function separarPorReceita(clientes: Cliente[], ev: EventoReceita[]) {
+  const com = new Set(ev.filter((e) => e.status === "collected").map((e) => e.clientId));
+  return { comReceita: clientes.filter((c) => com.has(c.id)), semReceita: clientes.filter((c) => !com.has(c.id)) };
+}
 export const clientesMetricas = (b: Base): Cliente[] => b.clientes.map((c) => ({ id: c.id, firstPurchaseAt: c.first_purchase_at, sourceCode: c.source_code, status: c.status, cancelledAt: c.cancelled_at, planId: c.current_plan_id, referredBy: b.contatos.find((x) => x.id === c.contact_id)?.referred_by_contact_id ?? null }));
 
 export interface LinhaFonte { code: string; nome: string; leads: number; qualificados: number; experimentais: number; vendas: number; conversao: number | null; gasto: number | null; cac: ReturnType<typeof cacMidia>; receita: number; ltvMedio: number | null; ltvCac: ReturnType<typeof ltvCac>; roas: number | null; n: number }
@@ -25,7 +34,7 @@ export function tabelaPorFonte(b: Base, cat: Catalogo, de: Date, ate: Date): Lin
     const canal = Object.entries(canalGasto).find(([, fs]) => fs.includes(f.code))?.[0];
     const gasto = f.custo_rastreado ? b.gastos.filter((g) => g.canal === canal && noPeriodo(g.data)).reduce((s, g) => s + Number(g.custo), 0) : null;
     const cac = cacMidia(gasto, cls.length);
-    const lm = ltvMedio(cls, ev);
+    const lm = ltvMedio(separarPorReceita(cls, ev).comReceita, ev);
     return { code: f.code, nome: f.nome, leads: leads.length, qualificados, experimentais, vendas, conversao: razao(vendas, leads.length), gasto, cac, receita, ltvMedio: lm.medio, ltvCac: ltvCac(lm.medio, cac.valor, "observado"), roas: gasto != null && gasto > 0 ? roasReceita(receita, gasto) : null, n: cls.length };
   }).filter((l) => l.leads || l.vendas || l.n || (l.gasto ?? 0) > 0);
 }
