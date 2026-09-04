@@ -119,7 +119,7 @@ Detalhes em `01-data-discovery.md` e `02-arquitetura.md`.
 99. **Build** — `npx tsc --noEmit` e `npx next build` verdes.
 100. **Deploy** — junto com o site, na Vercel, após o merge.
 101. **Limitações** — origem histórica desconhecida; receita histórica piso; Google Ads sem conversão até o GTM ser corrigido; WhatsApp sem API; e-gress do ambiente de desenvolvimento não alcança o Supabase, então a UI foi validada localmente sem banco e as regras por SQL.
-102. **Roadmap** — (a) corrigir GTM e marcar `whatsapp_click`/`generate_lead` como evento-chave; (b) API do Google Ads para custo automático; (c) conversão offline com gclid a partir do CRM; (d) Mercado Pago API; (e) revisar as 6 duplicatas; (f) registrar receita dos 50 clientes importados sem recibo; (g) WhatsApp Cloud API se o volume justificar.
+102. **Roadmap** — (a) corrigir GTM e marcar `whatsapp_click`/`generate_lead` como evento-chave; (b) API do Google Ads para custo automático; (c) conversão offline com gclid a partir do CRM; (d) Mercado Pago API; (e) revisar as 6 duplicatas; (f) registrar receita dos 50 clientes importados sem recibo, agora que os planos reais estão cadastrados; (g) WhatsApp Cloud API se o volume justificar.
 
 ## O que depende do Renato
 
