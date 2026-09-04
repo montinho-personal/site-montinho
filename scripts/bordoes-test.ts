@@ -157,5 +157,48 @@ console.log("\n" + "=".repeat(60) + "\nTAMBORÉ LEVA ARTIGO: \"NO\", NÃO \"EM\"
   );
 }
 
+/**
+ * UM NÚMERO DE WHATSAPP SÓ.
+ *
+ * O site inteiro tem o número num lugar só (lib/whatsapp.ts), mas os 839
+ * artigos carregam o link como TEXTO dentro do conteúdo — e texto não
+ * respeita constante. Já apareceram dois números errados por lá: 45 artigos
+ * com um wa.me inventado (5511999999999) e dois artigos de cidade com um
+ * número que não é o do site. Cada um deles é um cliente mandado para o
+ * lugar errado, sem erro nenhum na tela e sem ninguém perceber.
+ *
+ * A varredura é do repositório inteiro porque o risco não é o artigo escrito
+ * hoje — é o próximo que alguém colar de um rascunho antigo.
+ */
+{
+  const CERTO = "5511981063409";
+  const forasteiros = new Map<string, string[]>();
+  for (const raiz of RAIZES) {
+    if (!fs.existsSync(raiz)) continue;
+    for (const arquivo of arquivos(raiz)) {
+      for (const m of fs.readFileSync(arquivo, "utf8").matchAll(/wa\.me\/(\d+)/g)) {
+        if (m[1] === CERTO) continue;
+        forasteiros.set(m[1], [...(forasteiros.get(m[1]) ?? []), arquivo]);
+      }
+    }
+  }
+  const achados = [...forasteiros].map(([n, fs_]) => `${n} (${fs_.length}x)`);
+  ok(
+    "todo link de WhatsApp do site aponta para o número do Montinho",
+    achados.length === 0,
+    achados.join(", ")
+  );
+  ok(
+    "o número certo está mesmo publicado nos artigos",
+    fs.readFileSync("lib/blog.ts", "utf8").includes(`wa.me/${CERTO}`),
+    "sem isso o teste acima passaria com o site sem nenhum link de WhatsApp"
+  );
+  ok(
+    "a constante do site e o número dos artigos são o mesmo",
+    fs.readFileSync("lib/whatsapp.ts", "utf8").includes(`"${CERTO}"`),
+    "se lib/whatsapp.ts mudar, os artigos precisam mudar junto"
+  );
+}
+
 console.log(falhas === 0 ? "\nTODOS OS TESTES PASSARAM\n" : `\n${falhas} TESTE(S) FALHARAM\n`);
 process.exit(falhas === 0 ? 0 : 1);
