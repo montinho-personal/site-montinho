@@ -114,6 +114,42 @@ export default function LpPersonalAlphaville() {
         </div>
       </section>
 
+      {/*
+        ANTES E DEPOIS DO MONTINHO — a primeira coisa depois da dobra.
+        Não vai no hero porque lá a única tarefa é o message match: quem
+        pesquisou "personal trainer em Alphaville" precisa reconhecer a
+        página em 3 segundos. Aqui, logo abaixo, ela responde a pergunta
+        seguinte — "por que esse cara?" — e nenhuma avaliação do Google
+        responde isso tão bem quanto a transformação de quem vai treinar você.
+        A foto é exibida inteira (quadrada, sem recorte).
+      */}
+      <section className="border-b border-white/10 bg-black">
+        <div className="mx-auto grid max-w-5xl items-center gap-8 px-5 py-12 sm:py-16 md:grid-cols-[minmax(0,420px)_1fr]">
+          <figure className="order-1">
+            <div className="relative overflow-hidden rounded-2xl border border-white/15">
+              <Image
+                src="/antes-depois-montinho-personal-trainer.jpg"
+                alt="Montinho antes e depois: à esquerda, adolescente acima do peso; à direita, adulto com a composição corporal transformada após perder mais de 40 kg"
+                width={1024}
+                height={1024}
+                priority
+                sizes="(max-width: 768px) 92vw, 420px"
+                className="h-auto w-full"
+              />
+              <span className="absolute left-3 top-3 rounded-full bg-black/75 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur">Eu, antes e hoje</span>
+            </div>
+          </figure>
+          <div className="order-2">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25D366]">Antes de ser o seu personal, eu fui o aluno</p>
+            <p className="mt-3 text-2xl font-bold leading-tight sm:text-3xl" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
+              A mesma pessoa. Mais de 40 kg de diferença.
+            </p>
+            <p className="mt-4 text-gray-200">Eu fui o gordinho da turma que tentava de tudo e não saía do lugar. Não perdi esse peso com fórmula mágica: perdi quando parei de procurar atalho e entendi a ordem das coisas. Eu vivi isso na pele — e vivo isso todo dia, ainda hoje.</p>
+            <p className="mt-3 text-gray-300">É por isso que eu não te vendo motivação. Eu te entrego o caminho que eu levei anos para encontrar, aplicado à sua rotina.</p>
+          </div>
+        </div>
+      </section>
+
       {/* DOR */}
       <section className="mx-auto max-w-5xl px-5 py-14 sm:py-20">
         <Titulo>Isso parece com você?</Titulo>
@@ -232,7 +268,7 @@ export default function LpPersonalAlphaville() {
         <div className="mx-auto grid max-w-5xl gap-8 px-5 py-14 sm:grid-cols-[1fr_280px] sm:py-20">
           <div>
             <Titulo>Quem vai treinar com você</Titulo>
-            <p className="mt-4 text-gray-100">Sou o Montinho. Cresci acima do peso e passei anos em dietas que prometiam rápido e entregavam frustração. Perdi mais de 40 kg quando parei de procurar atalho e comecei a estudar de verdade como o corpo responde ao treino. Eu vivi isso na pele — e vivo isso todo dia, ainda hoje.</p>
+            <p className="mt-4 text-gray-100">Sou o Montinho. Cresci acima do peso e passei anos em dietas que prometiam rápido e entregavam frustração. Perdi mais de 40 kg quando parei de procurar atalho e comecei a estudar de verdade como o corpo responde ao treino.</p>
             <p className="mt-3 text-gray-100">Moro em Alphaville há mais de 20 anos. Conheço o trânsito da 6h30, a academia que fecha às 22h e o jantar que só acontece depois das 21h. O treino que eu monto cabe nessa vida porque ela também é a minha.</p>
             <div className="mt-5 rounded-2xl border border-white/15 bg-black/40 p-5">
               <p className="text-lg font-semibold">Todo shape merece um chalalá: {BORDOES.chalala}.</p>
