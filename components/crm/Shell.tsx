@@ -4,6 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
 
+// prefetch={false} em toda a navegação: cada tela do CRM é dinâmica e faz
+// dezenas de consultas ao banco. Com o prefetch padrão, abrir o menu no
+// celular dispara a renderização de todas as telas listadas de uma vez, e o
+// toque de verdade fica na fila atrás delas.
 const PRINCIPAL = [
   { href: "/crm", rotulo: "Hoje", icone: "☀" },
   { href: "/crm/leads", rotulo: "Leads", icone: "👤" },
@@ -35,7 +39,7 @@ export default function Shell({ children, usuario, sair }: { children: ReactNode
         </div>
         <nav className="flex-1 space-y-0.5 px-3">
           {[...PRINCIPAL, ...MAIS].map((i) => (
-            <Link key={i.href} href={i.href} className={`block rounded-lg px-3 py-2 text-sm ${ativo(i.href) ? "bg-white text-black" : "text-zinc-300 hover:bg-white/5 hover:text-white"}`}>{i.rotulo}</Link>
+            <Link key={i.href} href={i.href} prefetch={false} className={`block rounded-lg px-3 py-2 text-sm ${ativo(i.href) ? "bg-white text-black" : "text-zinc-300 hover:bg-white/5 hover:text-white"}`}>{i.rotulo}</Link>
           ))}
         </nav>
         <form action={sair} className="p-3"><button className="w-full rounded-lg px-3 py-2 text-left text-sm text-zinc-500 hover:text-white">Sair</button></form>
@@ -49,7 +53,7 @@ export default function Shell({ children, usuario, sair }: { children: ReactNode
           <details className="relative">
             <summary className="cursor-pointer list-none rounded-lg border border-white/15 px-2 py-1 text-sm">Mais</summary>
             <div className="absolute right-0 mt-2 w-56 rounded-lg border border-white/10 bg-zinc-900 p-1 shadow-xl">
-              {MAIS.map((i) => <Link key={i.href} href={i.href} className="block rounded px-3 py-2 text-sm text-zinc-200 hover:bg-white/10">{i.rotulo}</Link>)}
+              {MAIS.map((i) => <Link key={i.href} href={i.href} prefetch={false} className="block rounded px-3 py-2 text-sm text-zinc-200 hover:bg-white/10">{i.rotulo}</Link>)}
               <form action={sair}><button className="block w-full rounded px-3 py-2 text-left text-sm text-zinc-500 hover:bg-white/10">Sair</button></form>
             </div>
           </details>
@@ -58,16 +62,16 @@ export default function Shell({ children, usuario, sair }: { children: ReactNode
           <form action="/crm/leads" method="get" className="w-full max-w-md">
             <input name="q" placeholder="Buscar por nome, telefone ou e-mail…" className="w-full rounded-lg border border-white/15 bg-black/40 px-3 py-2 text-sm" aria-label="Buscar" />
           </form>
-          <Link href="/crm/leads/novo" className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-black hover:bg-zinc-200">+ Novo lead</Link>
+          <Link href="/crm/leads/novo" prefetch={false} className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-black hover:bg-zinc-200">+ Novo lead</Link>
         </div>
         <main className="flex-1">{children}</main>
         <nav className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-5 border-t border-white/10 bg-zinc-950/95 backdrop-blur lg:hidden" aria-label="Navegação principal">
           {PRINCIPAL.map((i) => (
-            <Link key={i.href} href={i.href} className={`flex flex-col items-center py-2 text-[11px] ${ativo(i.href) ? "text-white" : "text-zinc-500"}`}>
+            <Link key={i.href} href={i.href} prefetch={false} className={`flex flex-col items-center py-2 text-[11px] ${ativo(i.href) ? "text-white" : "text-zinc-500"}`}>
               <span className="text-lg leading-none">{i.icone}</span>{i.rotulo}
             </Link>
           ))}
-          <Link href="/crm/leads/novo" className="flex flex-col items-center py-2 text-[11px] text-zinc-500"><span className="text-lg leading-none">＋</span>Novo</Link>
+          <Link href="/crm/leads/novo" prefetch={false} className="flex flex-col items-center py-2 text-[11px] text-zinc-500"><span className="text-lg leading-none">＋</span>Novo</Link>
         </nav>
       </div>
     </div>

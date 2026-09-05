@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { redirect } from "next/navigation";
 import { supabaseServer } from "./supabase/server";
 
@@ -7,15 +8,19 @@ export interface UsuarioCrm { id: string; email: string; nome: string | null; ro
  * Camada de acesso a dados (DAL) da autenticação. Toda página, action e
  * route handler do CRM passa por aqui — o proxy.ts só faz a checagem
  * otimista pelo cookie, e isso não é autorização.
+ *
+ * Envolvida em cache() do React: o layout e a página pedem o usuário na mesma
+ * renderização, e sem isto cada tela fazia duas chamadas de rede ao Auth do
+ * Supabase mais duas consultas a crm_users.
  */
-export async function usuarioAtual(): Promise<UsuarioCrm | null> {
+export const usuarioAtual = cache(async function usuarioAtual(): Promise<UsuarioCrm | null> {
   const sb = await supabaseServer();
   const { data: { user } } = await sb.auth.getUser();
   if (!user) return null;
   const { data } = await sb.from("crm_users").select("id,email,nome,role,ativo").eq("id", user.id).maybeSingle();
   if (!data || !data.ativo) return null;
   return { id: data.id, email: data.email, nome: data.nome, role: data.role };
-}
+});
 
 export async function exigirUsuario(): Promise<UsuarioCrm> {
   const u = await usuarioAtual();

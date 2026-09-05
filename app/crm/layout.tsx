@@ -6,6 +6,10 @@ import { sair } from "./actions";
 
 export const metadata: Metadata = { title: "CRM", robots: { index: false, follow: false } };
 export const dynamic = "force-dynamic";
+// O banco fica em sa-east-1 (São Paulo) e o usuário também. Sem isto a função
+// roda no padrão da Vercel, nos Estados Unidos, e cada uma das dezenas de
+// consultas por tela paga a ida e volta até lá.
+export const preferredRegion = ["gru1"];
 
 export default async function CrmLayout({ children }: { children: React.ReactNode }) {
   const h = await headers();
