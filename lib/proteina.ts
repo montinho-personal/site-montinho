@@ -233,14 +233,32 @@ export const NOTA_FONTES =
  *   "qual" ou "vale a pena" — não "quantos gramas".
  * - "Proteína demais faz mal": a dúvida é de segurança. A calculadora mostra
  *   uma faixa de referência, não um teto seguro; responderia outra pergunta.
- * - Os artigos de GLP-1 (Mounjaro, Retatrutida, Ozempic): o título deles é
+ * - Os artigos de GLP-1 (Mounjaro, Ozempic, GLP-1 e apetite): o título deles é
  *   literalmente a pergunta da calculadora, e ainda assim não entram. A conta
  *   aqui é peso corporal × g/kg, e o Morton foi feito com pessoas treinadas —
  *   não com pessoas em déficit calórico grande e obesidade, onde a
  *   recomendação usa peso ajustado. Uma pessoa de 130 kg veria "286 g/dia",
  *   número que o próprio artigo não recomenda. É justamente o público em que
  *   um número errado pesa mais, então a explicação em texto serve melhor.
+ *
+ *   EXCEÇÃO, decidida com o Renato em 05/09/2026: o artigo da retatrutida
+ *   entra. O motivo é que ele é o único do grupo que já publica a conta em
+ *   peso corporal ("para uma pessoa de 80 kg, entre 128 g e 176 g") e as
+ *   mesmas três faixas da ferramenta. Negar a calculadora ali não protege
+ *   ninguém do número — o número já está no texto —, só obriga a pessoa a
+ *   fazer a conta de cabeça. A ressalva do peso ajustado passa a aparecer
+ *   junto da calculadora, em NOTA_POR_ARTIGO, que é onde ela é lida.
  */
+/**
+ * Ressalva que acompanha a calculadora em artigos onde o contexto muda a
+ * leitura do número. Fica ao lado da ferramenta, não no rodapé: aviso que
+ * ninguém lê no lugar errado é aviso que não existe.
+ */
+export const NOTA_POR_ARTIGO: Record<string, string> = {
+  "proteina-para-quem-usa-retatrutida":
+    "Esta conta usa o seu peso atual. Em obesidade com déficit grande, parte das recomendações parte do peso ajustado, e aí o número abaixo fica acima do necessário — use como referência de teto e ajuste com quem acompanha o seu tratamento.",
+};
+
 export const ARTIGOS_COM_CALCULADORA: string[] = [
   /**
    * O artigo diz que proteína alta é o fator mais importante para preservar
@@ -259,6 +277,16 @@ export const ARTIGOS_COM_CALCULADORA: string[] = [
    * do artigo com "quanta proteína, no meu peso?" e a conta é essa.
    */
   "parar-de-tomar-mounjaro",
+  /**
+   * O artigo da retatrutida termina a primeira seção explicando POR QUE a
+   * necessidade de proteína sobe no déficit severo, e a seção seguinte
+   * responde "quanto": 1,6 como mínimo, 2,0 a 2,2 como meta. São as três
+   * faixas da calculadora, e o artigo até usa o mesmo exemplo de 80 kg
+   * (128 g e 176 g) e a mesma referência, Morton et al. (2018). A conta no
+   * peso de quem lê é o passo que faltava — e ela cai exatamente entre a
+   * pergunta e a resposta.
+   */
+  "proteina-para-quem-usa-retatrutida",
   /**
    * Os três artigos de "cardápio semanal" moraram aqui até o Montinho
    * FitChef existir. Migraram para ARTIGOS_COM_CALCULADORA_CARDAPIO: num
