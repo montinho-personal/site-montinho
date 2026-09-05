@@ -4,6 +4,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { SITE_URL } from "@/lib/blog";
 import FAQ from "@/components/ui/FAQ";
+import Compartilhar from "@/components/share/Compartilhar";
 
 export const metadata: Metadata = {
   title: "Consultoria Online e Personal Trainer em Alphaville",
@@ -509,6 +510,21 @@ export default function Consultoria() {
           </p>
         </div>
       </section>
+        {/* Secundário por desenho: vem depois do CTA de conversão e sem
+            peso visual. Quem quer mostrar para alguém antes de decidir
+            tem caminho; quem quer falar comigo continua vendo o botão
+            principal primeiro. */}
+        <div className="flex justify-center pb-10">
+          <Compartilhar
+            contexto="commercial"
+            titulo="Consultoria com o Montinho"
+            caminho="/consultoria"
+            local="commercial_page"
+            aparencia="discreto"
+            rotulo="Enviar esta página para alguém"
+          />
+        </div>
+
     </>
   );
 }

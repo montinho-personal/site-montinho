@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import PosResultado from "@/components/ferramentas/PosResultado";
+import Compartilhar from "@/components/share/Compartilhar";
 import {
   AMDR,
   COMBINACAO_IMPOSSIVEL,
@@ -638,6 +639,23 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
                   </Link>
                 </li>
               </ul>
+            </div>
+
+            <div className="mt-6">
+              <Compartilhar
+                contexto="tool-result"
+                titulo="Calculadora de Macros"
+                caminho="/ferramentas/calculadora-macros"
+                local="tool_result"
+                ferramenta="calculadora_macros"
+                resultado={[
+                  `Proteína: ${formataNumero(r.proteina.gramas)} g`,
+                  `Carboidratos: ${formataNumero(r.carboidrato.gramas)} g`,
+                  `Gorduras: ${formataNumero(r.gordura.gramas)} g`,
+                ]}
+                gancho="Minha distribuição de macros:"
+                aparencia="solido"
+              />
             </div>
 
             {/* Próximo passo — depois de todo o resultado */}

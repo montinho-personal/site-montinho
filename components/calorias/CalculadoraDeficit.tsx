@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import PosResultado from "@/components/ferramentas/PosResultado";
+import Compartilhar from "@/components/share/Compartilhar";
 import { guardaKcalParaMacros, guardaPesoParaProteina } from "@/lib/macros";
 import { PONTE, consomeDadosCorporais } from "@/lib/ferramentas/ponte";
 import {
@@ -661,6 +662,30 @@ export default function CalculadoraDeficit({
                       </li>
                     ))}
                 </ul>
+              </div>
+
+              {/* "Estimado" fica na mensagem de propósito: é referência de
+                  cálculo, não prescrição, e quem recebe precisa ler isso. */}
+              <div className="mt-6">
+                <Compartilhar
+                  contexto="tool-result"
+                  titulo="Calculadora de Déficit Calórico"
+                  caminho="/ferramentas/calculadora-deficit-calorico"
+                  local="tool_result"
+                  ferramenta="calculadora_deficit"
+                  resultado={(() => {
+                    const f = FAIXAS_DEFICIT.find((x) => x.id === faixaSel);
+                    const linhas = [`Meu gasto diário estimado: ≈ ${formataFaixa(resultado.tdee)} kcal`];
+                    if (f) {
+                      const alta = aplicaDeficit(resultado.tdee, f.percentualMin);
+                      const baixa = aplicaDeficit(resultado.tdee, f.percentualMax);
+                      linhas.push(`Referência de ${f.titulo.toLowerCase()}: ≈ ${formataFaixa({ min: baixa.min, max: alta.max })} kcal/dia`);
+                    }
+                    return linhas;
+                  })()}
+                  gancho="Meu cálculo:"
+                  aparencia="solido"
+                />
               </div>
 
               {/* Próximo passo — só depois de todo o resultado entregue */}

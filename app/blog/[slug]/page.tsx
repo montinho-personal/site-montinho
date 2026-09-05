@@ -12,6 +12,8 @@ import VideoMedido from "@/components/blog/VideoMedido";
 import { regraParaArtigo } from "@/lib/sticky/artigo";
 import AskEmbed from "@/components/ask/AskEmbed";
 import ContextualCTA from "@/components/cta/ContextualCTA";
+import Compartilhar from "@/components/share/Compartilhar";
+import BlocoCompartilhar from "@/components/share/BlocoCompartilhar";
 import { planCTAs } from "@/lib/cta/classify";
 import { splitAtNaturalBreak, splitAtPrimeiraSecao } from "@/lib/cta/placement";
 import { ARTIGOS_COM_CALCULADORA } from "@/lib/proteina";
@@ -176,6 +178,15 @@ export default async function BlogPost({ params }: Props) {
   // Só divide o HTML se houver um CTA de meio E um ponto de corte editorial
   // seguro. Sem os dois, o artigo fica inteiro e leva só o CTA final.
   const split = cta.mid ? splitAtNaturalBreak(corpoRestante) : null;
+  /*
+   * Convite ao compartilhamento no meio do artigo: SÓ quando não há CTA
+   * contextual ali. Dois blocos disputando a mesma pausa da leitura fazem o
+   * leitor ignorar os dois, e o CTA — que leva a conversa comercial — tem
+   * prioridade. Em artigo curto (menos de três h2) splitAtNaturalBreak
+   * devolve null e nada aparece: interromper uma leitura de dois minutos
+   * para pedir compartilhamento é ruído.
+   */
+  const splitShare = cta.mid ? null : splitAtNaturalBreak(corpoRestante);
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -271,7 +282,7 @@ export default async function BlogPost({ params }: Props) {
             {post.title}
           </h1>
 
-          <div className="flex items-center gap-4 text-sm text-gray-400">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-gray-400">
             <span>{post.author}</span>
             <span>·</span>
             <time dateTime={post.date}>
@@ -283,6 +294,15 @@ export default async function BlogPost({ params }: Props) {
             </time>
             <span>·</span>
             <span>{post.readTime} de leitura</span>
+            <span className="hidden sm:inline">·</span>
+            <Compartilhar
+              contexto="article"
+              titulo={post.title}
+              caminho={`/blog/${post.slug}`}
+              local="article_top"
+              aparencia="discreto"
+              className="basis-full sm:basis-auto"
+            />
             {post.updatedAt && post.updatedAt !== post.date && (
               <>
                 <span>·</span>
@@ -339,6 +359,19 @@ export default async function BlogPost({ params }: Props) {
                 stage={cta.stage}
               />
               <div className="prose-blog" dangerouslySetInnerHTML={{ __html: split.after }} />
+            </>
+          ) : splitShare ? (
+            <>
+              <div className="prose-blog" dangerouslySetInnerHTML={{ __html: splitShare.before }} />
+              <div className="my-10">
+                <BlocoCompartilhar
+                  contexto="article"
+                  titulo={post.title}
+                  caminho={`/blog/${post.slug}`}
+                  local="article_quick_answer"
+                />
+              </div>
+              <div className="prose-blog" dangerouslySetInnerHTML={{ __html: splitShare.after }} />
             </>
           ) : (
             <div className="prose-blog" dangerouslySetInnerHTML={{ __html: corpoRestante }} />
@@ -422,6 +455,19 @@ export default async function BlogPost({ params }: Props) {
               <AskEmbed context={{ slug: post.slug, title: post.title, category: post.category }} />
             </div>
           )}
+
+          {/* Fim do artigo: quem leu até aqui achou útil, e é a hora em que
+              "isso serve para o fulano" acontece de verdade. Fica antes da
+              caixa do autor e do CTA comercial, sem competir com nenhum. */}
+          <div className="mt-14">
+            <BlocoCompartilhar
+              contexto="article"
+              titulo={post.title}
+              caminho={`/blog/${post.slug}`}
+              local="article_end"
+              pergunta="Esse conteúdo te ajudou? Mande para quem também precisa."
+            />
+          </div>
 
           {/* Author box */}
           <div className="mt-16 pt-8 border-t border-white/10 flex items-start gap-5">

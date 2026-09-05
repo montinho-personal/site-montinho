@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import Compartilhar from "@/components/share/Compartilhar";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { registraConclusao } from "@/lib/ferramentas/historico";
 import { PONTE, guarda } from "@/lib/ferramentas/ponte";
@@ -198,6 +199,12 @@ export default function CalculadoraVolume({ placement }: { placement: string }) 
     setRapido({});
     setConfirmandoLimpar(false);
   }
+
+  /*
+   * Volume por músculo é resultado de treino, não dado corporal: pode sair
+   * inteiro. É justamente o número que amigo de academia compara.
+   */
+  const linhasShare = volumes.filter((v) => v.diretas > 0).map((v) => `${nomeMusculo(v.musculo)}: ${fmt(v.diretas)} séries`);
 
   function copiaResumo() {
     const linhas = [
@@ -564,6 +571,18 @@ export default function CalculadoraVolume({ placement }: { placement: string }) 
               <button type="button" onClick={copiaResumo} className={chip(false)}>
                 {copiado ? "Copiado" : "Copiar resumo"}
               </button>
+              {linhasShare.length > 0 && (
+                <Compartilhar
+                  contexto="tool-result"
+                  titulo="Calculadora de Volume de Treino"
+                  caminho="/ferramentas/calculadora-volume-treino"
+                  local="tool_result"
+                  ferramenta="volume_treino"
+                  resultado={linhasShare}
+                  gancho="Meu volume semanal:"
+                  aparencia="solido"
+                />
+              )}
               {confirmandoLimpar ? (
                 <>
                   <span className="text-gray-300 text-sm">Apagar o treino salvo?</span>

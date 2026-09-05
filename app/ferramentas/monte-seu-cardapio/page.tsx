@@ -6,6 +6,7 @@ import { PERFIS_REFEICAO, TOLERANCIA_KCAL } from "@/lib/cardapio/motor";
 import MonteSeuCardapio from "@/components/cardapio/MonteSeuCardapio";
 import Trilha from "@/components/ferramentas/Trilha";
 import FAQ from "@/components/ui/FAQ";
+import Compartilhar from "@/components/share/Compartilhar";
 
 /**
  * Montinho FitChef (Monte seu Cardápio) — página própria. O nome é FitChef;
@@ -99,6 +100,15 @@ export default function MonteSeuCardapioPage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-2" style={h}>
             Montinho FitChef
           </h1>
+          <Compartilhar
+            contexto="tool"
+            titulo="Monte Seu Cardápio"
+            caminho="/ferramentas/monte-seu-cardapio"
+            local="tool_top"
+            ferramenta="monte_cardapio"
+            aparencia="discreto"
+            className="mb-5"
+          />
           <p className="text-base sm:text-lg font-medium mb-5" style={{ color: "#BA9E50" }}>
             Monte seu cardápio com o Montinho
           </p>

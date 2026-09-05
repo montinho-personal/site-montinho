@@ -4,6 +4,7 @@ import { useMemo, useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import PosResultado from "@/components/ferramentas/PosResultado";
+import Compartilhar from "@/components/share/Compartilhar";
 import { PONTE, consomeNumero } from "@/lib/ferramentas/ponte";
 import {
   ALIMENTOS,
@@ -90,6 +91,17 @@ export default function CalculadoraProteina({
   }, [valido, placement]);
 
   const totalPratico = valido ? gramasPorDia(peso, faixaRefeicao) : null;
+
+  /*
+   * O que vai para outra pessoa. Repare no que NÃO está aqui: o peso.
+   * "Copiar resultado" é a pessoa guardando a própria conta e pode levar o
+   * "Para 80 kg"; compartilhar manda para o WhatsApp de outra gente, e o
+   * peso de alguém não é assunto de terceiro. As gramas por dia bastam para
+   * quem recebe entender e querer fazer a própria conta.
+   */
+  const linhasShare = valido
+    ? FAIXAS.map((f) => `${String(f.gPorKg).replace(".", ",")} g/kg → ${gramasPorDia(peso, f.gPorKg)} g/dia`)
+    : [];
 
   function copiarResultado() {
     if (!valido) return;
@@ -298,6 +310,18 @@ export default function CalculadoraProteina({
               >
                 Copiar resultado
               </button>
+              {valido && (
+                <Compartilhar
+                  contexto="tool-result"
+                  titulo="Calculadora de Proteína"
+                  caminho="/ferramentas/calculadora-de-proteina"
+                  local="tool_result"
+                  ferramenta="calculadora_proteina"
+                  resultado={linhasShare}
+                  gancho="Meu cálculo de proteína:"
+                  aparencia="solido"
+                />
+              )}
               {placement !== "artigo-proteina-dia" && (
                 <Link
                   href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular"

@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import Compartilhar from "@/components/share/Compartilhar";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import PosResultado from "@/components/ferramentas/PosResultado";
 import {
@@ -90,6 +91,14 @@ export default function CalculadoraFC({
       trackEvent("heart_rate_calculator_use", { placement });
     }
   }, [idadeValida, placement]);
+
+  /*
+   * A idade fica de fora: ela é o dado de entrada, não o resultado. Quem
+   * recebe quer as zonas em bpm, não a idade de quem calculou.
+   */
+  const linhasShare = faixas && fcMax !== null
+    ? [`FC máxima estimada: ${fcMax} bpm`, ...faixas.map((f) => `Zona ${f.zona.numero} (${f.zona.nome}): ${f.de} a ${f.ate} bpm`)]
+    : [];
 
   function copiarResultado() {
     if (!faixas || fcMax === null) return;
@@ -314,6 +323,18 @@ export default function CalculadoraFC({
               >
                 Copiar resultado
               </button>
+              {linhasShare.length > 0 && (
+                <Compartilhar
+                  contexto="tool-result"
+                  titulo="Zonas de Frequência Cardíaca"
+                  caminho="/ferramentas/zonas-de-frequencia-cardiaca"
+                  local="tool_result"
+                  ferramenta="zonas_fc"
+                  resultado={linhasShare}
+                  gancho="Minhas zonas de treino:"
+                  aparencia="solido"
+                />
+              )}
               {placement !== "zonas-de-frequencia-cardiaca" && (
                 <Link
                   href="/blog/zonas-de-frequencia-cardiaca"

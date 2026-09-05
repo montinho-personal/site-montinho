@@ -5,8 +5,14 @@ import { blogPosts } from "@/lib/blog";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import SearchBar from "@/components/search/SearchBar";
 
+/*
+ * Página de resultado de busca não é conteúdo: fica noindex e não recebe
+ * botão de compartilhar. A descrição existe só para o caso de alguém colar
+ * o link mesmo assim — prévia vazia parece site quebrado.
+ */
 export const metadata: Metadata = {
   title: "Resultados da pesquisa",
+  description: "Busque artigos, ferramentas e alimentos no site do Montinho Personal Trainer.",
   robots: { index: false, follow: true },
 };
 

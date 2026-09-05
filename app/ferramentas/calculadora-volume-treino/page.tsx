@@ -6,6 +6,7 @@ import { MUSCULOS } from "@/lib/treino/musculos";
 import { FAIXAS, FONTES, NOTA_FREQUENCIA, NOTA_INDIVIDUALIDADE, NOTA_SERIE_VALIDA, PESO_SECUNDARIO } from "@/lib/treino/volume";
 import CalculadoraVolume from "@/components/volume/CalculadoraVolume";
 import Trilha from "@/components/ferramentas/Trilha";
+import Compartilhar from "@/components/share/Compartilhar";
 
 /**
  * Página própria da Calculadora de Volume.
@@ -62,6 +63,15 @@ export default function CalculadoraVolumePage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5" style={h}>
             Calculadora de Volume de Treino
           </h1>
+          <Compartilhar
+            contexto="tool"
+            titulo="Calculadora de Volume de Treino"
+            caminho="/ferramentas/calculadora-volume-treino"
+            local="tool_top"
+            ferramenta="volume_treino"
+            aparencia="discreto"
+            className="mb-5"
+          />
           <p className="text-gray-300 text-lg leading-relaxed">
             Monte seu treino e veja automaticamente quantas séries cada músculo
             recebe por semana — com a frequência e a distribuição de cada grupo

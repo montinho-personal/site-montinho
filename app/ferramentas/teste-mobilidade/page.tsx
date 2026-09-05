@@ -16,6 +16,7 @@ import {
 } from "@/lib/mobilidade/evidencia";
 import { TESTES } from "@/lib/mobilidade/testes";
 import { SEMANAS_ATE_RETESTE } from "@/lib/mobilidade/motor";
+import Compartilhar from "@/components/share/Compartilhar";
 
 /**
  * Destrave Seu Corpo — a página da ferramenta.
@@ -80,6 +81,15 @@ export default function TesteMobilidadePage() {
           <h1 className="text-3xl sm:text-5xl font-bold text-white leading-tight mb-5" style={h}>
             Teste de Mobilidade: descubra onde você pode melhorar
           </h1>
+          <Compartilhar
+            contexto="tool"
+            titulo="Teste de Mobilidade"
+            caminho="/ferramentas/teste-mobilidade"
+            local="tool_top"
+            ferramenta="teste_mobilidade"
+            aparencia="discreto"
+            className="mb-5"
+          />
           <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
             Cinco testes simples, cinco minutos. No fim você vê um mapa das suas
             regiões e recebe um protocolo com dois ou três exercícios — não doze.

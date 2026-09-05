@@ -14,6 +14,7 @@ import {
 } from "@/lib/onerm";
 import CalculadoraOneRM from "@/components/onerm/CalculadoraOneRM";
 import Trilha from "@/components/ferramentas/Trilha";
+import Compartilhar from "@/components/share/Compartilhar";
 
 /**
  * Página própria da calculadora de 1RM.
@@ -78,6 +79,15 @@ export default function CalculadoraOneRMPage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5" style={h}>
             Calculadora de 1RM e carga de treino
           </h1>
+          <Compartilhar
+            contexto="tool"
+            titulo="Calculadora de 1RM"
+            caminho="/ferramentas/calculadora-1rm"
+            local="tool_top"
+            ferramenta="calculadora_1rm"
+            aparencia="discreto"
+            className="mb-5"
+          />
           <p className="text-gray-300 text-lg leading-relaxed">
             Informe a carga e quantas repetições você conseguiu fazer para
             estimar seu 1RM e visualizar as cargas correspondentes a diferentes
