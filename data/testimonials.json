@@ -11,6 +11,18 @@
       "stars": 5
     },
     {
+      "name": "Brígida Cibelle Pereira",
+      "role": "Avaliação no Google",
+      "text": "Estou gostando demais do treino que o Renato me passou fora que sempre está disponível para tirar dúvidas, sempre pergunta como está indo o treino e sinto que estou sendo bem acompanhada mesmo sendo online diferente do que estou tendo na academia.",
+      "stars": 5
+    },
+    {
+      "name": "Leandro Martins",
+      "role": "Avaliação no Google",
+      "text": "Extremamente atencioso, e técnico. Preocupado com os detalhes do bem estar, e na execução da técnica correta, pois tinha essa dificuldade e agora consigo executar de forma perfeita o treinamento sem lesionar nada.",
+      "stars": 5
+    },
+    {
       "name": "Bruno Maineri",
       "role": "Avaliação no Google",
       "text": "O Renato é um personal que realmente vive o esporte. Ele pratica aquilo que ensina e isso faz toda a diferença. Não vende fórmulas mágicas nem promete resultados irreais. O foco dele é construir consistência, disciplina e hábitos que permitem não apenas alcançar os objetivos, mas mantê-los a longo prazo. Se você procura um profissional comprometido com resultados reais, recomendo o Renato sem hesitar.",
@@ -34,5 +46,6 @@
       "text": "Excelente Personal, recomendo, muito profissional e estuda o seu caso para focar no que realmente você quer.",
       "stars": 5
     }
-  ]
+  ],
+  "profileUrl": ""
 }
