@@ -160,6 +160,8 @@ export type AnalyticsEvent =
    */
   | "protein_calculator_view"
   | "protein_calculator_use"
+  /** Troca da faixa de referência nos cartões. Vai o id da faixa, nunca o peso. */
+  | "protein_range_select"
   | "protein_meals_open"
   | "protein_food_examples_open"
   | "protein_article_click"

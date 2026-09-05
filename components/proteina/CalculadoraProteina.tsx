@@ -43,7 +43,13 @@ export default function CalculadoraProteina({
 }) {
   const [texto, setTexto] = useState("");
   const [refeicoes, setRefeicoes] = useState<number | null>(null);
-  const [faixaRefeicao, setFaixaRefeicao] = useState<number>(2.0);
+  /**
+   * Faixa escolhida pela pessoa. Começa na que o conteúdo destaca (2 g/kg),
+   * mas é ESCOLHA, não decoração: os três cartões são um grupo de opções de
+   * verdade. Antes o cartão do meio aparecia realçado e não havia como
+   * escolher outro — quem tentava clicar não conseguia, e com razão.
+   */
+  const [faixaId, setFaixaId] = useState<string>(FAIXAS.find((f) => f.destaque)?.id ?? FAIXAS[0].id);
   const [mostrarAlimentos, setMostrarAlimentos] = useState(false);
   const raiz = useRef<HTMLDivElement>(null);
   const jaUsou = useRef(false);
@@ -90,7 +96,8 @@ export default function CalculadoraProteina({
     }
   }, [valido, placement]);
 
-  const totalPratico = valido ? gramasPorDia(peso, faixaRefeicao) : null;
+  const faixaSelecionada = FAIXAS.find((f) => f.id === faixaId) ?? FAIXAS[0];
+  const totalPratico = valido ? gramasPorDia(peso, faixaSelecionada.gPorKg) : null;
 
   /*
    * O que vai para outra pessoa. Repare no que NÃO está aqui: o peso.
@@ -100,7 +107,14 @@ export default function CalculadoraProteina({
    * quem recebe entender e querer fazer a própria conta.
    */
   const linhasShare = valido
-    ? FAIXAS.map((f) => `${String(f.gPorKg).replace(".", ",")} g/kg → ${gramasPorDia(peso, f.gPorKg)} g/dia`)
+    ? [
+        `${String(faixaSelecionada.gPorKg).replace(".", ",")} g/kg → ${gramasPorDia(peso, faixaSelecionada.gPorKg)} g/dia`,
+        "",
+        "Outras referências:",
+        ...FAIXAS.filter((f) => f.id !== faixaSelecionada.id).map(
+          (f) => `${String(f.gPorKg).replace(".", ",")} g/kg → ${gramasPorDia(peso, f.gPorKg)} g/dia`,
+        ),
+      ]
     : [];
 
   function copiarResultado() {
@@ -173,24 +187,62 @@ export default function CalculadoraProteina({
       <div aria-live="polite">
         {valido && (
           <>
-            <div className="grid gap-4 sm:grid-cols-3 mb-2">
-              {FAIXAS.map((f) => (
-                <div
-                  key={f.id}
-                  className={`border p-5 ${f.destaque ? "border-[#BA9E50]/60 bg-[#BA9E50]/[0.06]" : "border-white/15"}`}
-                >
-                  <p className="text-[11px] font-semibold tracking-[0.18em] uppercase mb-1" style={{ color: "#BA9E50" }}>
-                    {f.titulo}
-                  </p>
-                  <p className="text-gray-400 text-sm mb-3">{String(f.gPorKg).replace(".", ",")} g/kg</p>
-                  <p className="text-white font-bold text-4xl leading-none mb-1" style={h}>
-                    {gramasPorDia(peso, f.gPorKg)}
-                    <span className="text-lg font-normal text-gray-300"> g</span>
-                  </p>
-                  <p className="text-gray-400 text-xs mb-3">por dia</p>
-                  <p className="text-gray-300 text-sm leading-relaxed">{f.descricao}</p>
-                </div>
-              ))}
+            {/*
+              Grupo de opções, não três cartões enfeitados: teclado com setas,
+              aria-checked e um só item na ordem de tabulação, como manda o
+              padrão de radiogroup. A escolha vale para a divisão por refeição
+              e para a mensagem compartilhada.
+            */}
+            <div role="radiogroup" aria-label="Escolha a referência de proteína" className="grid gap-4 sm:grid-cols-3 mb-2">
+              {FAIXAS.map((f, i) => {
+                const escolhida = f.id === faixaId;
+                return (
+                  <button
+                    key={f.id}
+                    type="button"
+                    role="radio"
+                    aria-checked={escolhida}
+                    tabIndex={escolhida ? 0 : -1}
+                    onClick={() => {
+                      if (f.id !== faixaId) trackEvent("protein_range_select", { placement, range: f.id });
+                      setFaixaId(f.id);
+                    }}
+                    onKeyDown={(e) => {
+                      if (!["ArrowRight", "ArrowDown", "ArrowLeft", "ArrowUp"].includes(e.key)) return;
+                      e.preventDefault();
+                      const passo = e.key === "ArrowRight" || e.key === "ArrowDown" ? 1 : -1;
+                      const proxima = FAIXAS[(i + passo + FAIXAS.length) % FAIXAS.length];
+                      setFaixaId(proxima.id);
+                      trackEvent("protein_range_select", { placement, range: proxima.id });
+                      const alvo = raiz.current?.querySelector<HTMLButtonElement>(`[data-faixa="${proxima.id}"]`);
+                      alvo?.focus();
+                    }}
+                    data-faixa={f.id}
+                    className={`border p-5 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#BA9E50] ${
+                      escolhida
+                        ? "border-[#BA9E50] bg-[#BA9E50]/[0.08]"
+                        : "border-white/15 hover:border-white/40"
+                    }`}
+                  >
+                    <span className="flex items-center justify-between gap-2 mb-1">
+                      <span className="text-[11px] font-semibold tracking-[0.18em] uppercase" style={{ color: "#BA9E50" }}>
+                        {f.titulo}
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        className={`h-4 w-4 flex-shrink-0 rounded-full border ${escolhida ? "border-[#BA9E50] bg-[#BA9E50]" : "border-white/30"}`}
+                      />
+                    </span>
+                    <span className="block text-gray-400 text-sm mb-3">{String(f.gPorKg).replace(".", ",")} g/kg</span>
+                    <span className="block text-white font-bold text-4xl leading-none mb-1" style={h}>
+                      {gramasPorDia(peso, f.gPorKg)}
+                      <span className="text-lg font-normal text-gray-300"> g</span>
+                    </span>
+                    <span className="block text-gray-400 text-xs mb-3">por dia</span>
+                    <span className="block text-gray-300 text-sm leading-relaxed">{f.descricao}</span>
+                  </button>
+                );
+              })}
             </div>
 
             <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-2xl">
@@ -229,20 +281,11 @@ export default function CalculadoraProteina({
                     {n} refeições
                   </button>
                 ))}
-                {refeicoes !== null && (
-                  <select
-                    value={faixaRefeicao}
-                    onChange={(e) => setFaixaRefeicao(Number(e.target.value))}
-                    aria-label="Referência de g/kg usada na divisão"
-                    className="bg-black border border-white/20 text-gray-300 text-sm px-3 py-2.5 min-h-[44px]"
-                  >
-                    {FAIXAS.map((f) => (
-                      <option key={f.id} value={f.gPorKg}>
-                        usando {String(f.gPorKg).replace(".", ",")} g/kg
-                      </option>
-                    ))}
-                  </select>
-                )}
+                {/*
+                  O seletor de g/kg que existia aqui saiu: agora a escolha
+                  está nos cartões, e dois controles para a mesma decisão só
+                  criavam a dúvida de qual manda.
+                */}
               </div>
               {refeicoes !== null && totalPratico !== null && (
                 <div>
@@ -251,7 +294,7 @@ export default function CalculadoraProteina({
                     <strong className="text-white text-xl" style={h}>
                       ≈ {gramasPorRefeicao(totalPratico, refeicoes)} g
                     </strong>{" "}
-                    por refeição.
+                    por refeição, usando {String(faixaSelecionada.gPorKg).replace(".", ",")} g/kg.
                   </p>
                   <p className="text-gray-400 text-sm mt-1">
                     Você não precisa dividir de forma perfeitamente igual — o total
@@ -361,7 +404,7 @@ export default function CalculadoraProteina({
             {/* Próximo passo — depois do valor entregue, nunca antes */}
             <PosResultado
               ferramenta="proteina"
-              categoria={faixaRefeicao >= 2.2 ? "alta" : faixaRefeicao <= 1.6 ? "baixa" : "padrao"}
+              categoria={faixaSelecionada.gPorKg >= 2.2 ? "alta" : faixaSelecionada.gPorKg <= 1.6 ? "baixa" : "padrao"}
               resumo={totalPratico !== null ? `${totalPratico} g de proteína por dia` : null}
               placement={placement}
             />
