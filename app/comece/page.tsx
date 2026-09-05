@@ -5,6 +5,7 @@ import { SITE_URL } from "@/lib/blog";
 import { TRILHAS } from "@/lib/ferramentas/trilha";
 import { BORDOES } from "@/lib/bordoes";
 import RastreioComece from "@/components/comece/RastreioComece";
+import Compartilhar from "@/components/share/Compartilhar";
 
 /**
  * /comece — a porta de entrada do ecossistema.
@@ -283,6 +284,21 @@ export default function ComecePage() {
           </p>
         </div>
       </section>
+        {/* Secundário por desenho: vem depois do CTA de conversão e sem
+            peso visual. Quem quer mostrar para alguém antes de decidir
+            tem caminho; quem quer falar comigo continua vendo o botão
+            principal primeiro. */}
+        <div className="flex justify-center pb-10">
+          <Compartilhar
+            contexto="commercial"
+            titulo="Comece com o Montinho"
+            caminho="/comece"
+            local="commercial_page"
+            aparencia="discreto"
+            rotulo="Enviar esta página para alguém"
+          />
+        </div>
+
     </>
   );
 }

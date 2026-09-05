@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   description:
     "De onde vêm os dados da tabela nutricional do Montinho: TACO (NEPA/UNICAMP), como normalizamos os valores, o que significa traço e por que campo vazio não é zero.",
   alternates: { canonical: `${SITE_URL}/alimentos/fontes` },
+  openGraph: {
+    title: "Fontes dos Dados Nutricionais | Montinho",
+    description:
+      "De onde vêm os dados da tabela nutricional do Montinho: TACO (NEPA/UNICAMP), como os valores são normalizados e o que a ferramenta não sabe.",
+    url: `${SITE_URL}/alimentos/fontes`,
+    type: "article",
+    images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
+  },
 };
 
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;

@@ -13,6 +13,7 @@ import {
 } from "@/lib/fc";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
 import Trilha from "@/components/ferramentas/Trilha";
+import Compartilhar from "@/components/share/Compartilhar";
 
 /**
  * Página própria da calculadora de zonas de frequência cardíaca.
@@ -79,6 +80,15 @@ export default function CalculadoraFCPage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5" style={h}>
             Calculadora de zonas de frequência cardíaca
           </h1>
+          <Compartilhar
+            contexto="tool"
+            titulo="Zonas de Frequência Cardíaca"
+            caminho="/ferramentas/zonas-de-frequencia-cardiaca"
+            local="tool_top"
+            ferramenta="zonas_fc"
+            aparencia="discreto"
+            className="mb-5"
+          />
           <p className="text-gray-300 text-lg leading-relaxed">
             Informe sua idade para estimar sua frequência cardíaca máxima e ver em que batimento fica cada
             zona de treino — da recuperação ao esforço máximo, com a régua da fala para conferir sem relógio.

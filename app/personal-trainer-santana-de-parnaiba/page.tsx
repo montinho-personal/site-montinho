@@ -5,6 +5,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import FAQ from "@/components/ui/FAQ";
+import Compartilhar from "@/components/share/Compartilhar";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer em Santana de Parnaíba | Montinho Personal Trainer" },
@@ -567,6 +568,21 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           </div>
         </div>
       </section>
+        {/* Secundário por desenho: vem depois do CTA de conversão e sem
+            peso visual. Quem quer mostrar para alguém antes de decidir
+            tem caminho; quem quer falar comigo continua vendo o botão
+            principal primeiro. */}
+        <div className="flex justify-center pb-10">
+          <Compartilhar
+            contexto="local"
+            titulo="Personal Trainer em Santana de Parnaíba"
+            caminho="/personal-trainer-santana-de-parnaiba"
+            local="local_page"
+            aparencia="discreto"
+            rotulo="Enviar esta página para alguém"
+          />
+        </div>
+
     </>
   );
 }

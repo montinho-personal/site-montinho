@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { GRAMAS_MAX, GRAMAS_PADRAO, escalaValor, formataValor, leGramas } from "@/lib/alimentos/escala";
 import type { EstadoDado, Unidade } from "@/lib/alimentos/tipos";
+import Compartilhar from "@/components/share/Compartilhar";
 
 /**
  * O seletor de quantidade e a tabela.
@@ -176,6 +177,29 @@ export default function SeletorQuantidade({
           </tbody>
         </table>
       </div>
+
+      {/*
+        A mensagem leva a quantidade que a pessoa está vendo — é ela que dá
+        sentido aos números ("150 g de feijão", não "por 100 g"). A URL, não:
+        continua a canônica do alimento, sem query de gramas. Assim o link
+        compartilhado não cria uma variação indexável da mesma página, e quem
+        abre cai na ferramenta inteira, com o seletor no padrão.
+      */}
+      {ok && (
+        <div className="mt-5">
+          <Compartilhar
+            contexto="food"
+            titulo={`${gramas} g de ${nome}`}
+            caminho={`/alimentos/${slug}`}
+            local="food_page"
+            ferramenta="tabela_alimento"
+            gancho={`${gramas} g de ${nome}:`}
+            resultado={principais.map((l) => `${l.nome}: ${mostra(l)}`)}
+            aparencia="discreto"
+            rotulo="Compartilhar"
+          />
+        </div>
+      )}
 
       <button
         type="button"

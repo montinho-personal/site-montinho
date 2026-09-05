@@ -4,6 +4,7 @@ import { SITE_URL } from "@/lib/blog";
 import { NIVEIS, REFERENCIA_TMB } from "@/lib/tdee";
 import CalculadoraTDEE from "@/components/tdee/CalculadoraTDEE";
 import Trilha from "@/components/ferramentas/Trilha";
+import Compartilhar from "@/components/share/Compartilhar";
 
 /**
  * Calculadora de TMB e TDEE — página própria.
@@ -55,6 +56,15 @@ export default function CalculadoraTmbTdeePage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5" style={h}>
             Calculadora de TMB e TDEE
           </h1>
+          <Compartilhar
+            contexto="tool"
+            titulo="Calculadora de TMB e TDEE"
+            caminho="/ferramentas/calculadora-tmb-tdee"
+            local="tool_top"
+            ferramenta="calculadora_tdee"
+            aparencia="discreto"
+            className="mb-5"
+          />
           <p className="text-gray-300 text-lg leading-relaxed">
             Informe peso, altura, idade e nível de atividade para estimar sua
             taxa metabólica basal e seu gasto energético diário — quantas

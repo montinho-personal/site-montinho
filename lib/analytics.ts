@@ -121,6 +121,31 @@ export type AnalyticsEvent =
   | "preferred_source_cta_interaction"
 
   /**
+   * Compartilhamento contextual.
+   *
+   * `share_open` é INTENÇÃO (abriu o menu ou o painel nativo); os outros
+   * são AÇÃO escolhida. Contar os dois como a mesma coisa infla o número e
+   * esconde a pergunta que interessa: de cada dez que demonstram vontade de
+   * enviar, quantas realmente enviam.
+   *
+   * O compartilhamento nativo do aparelho não diz qual aplicativo a pessoa
+   * escolheu — `share_native` significa "o painel do sistema foi aberto e
+   * não foi cancelado", e nada além disso. Cancelar não gera evento de
+   * erro: desistir não é falha.
+   *
+   * Parâmetros: page_type, content_type, share_location, share_method,
+   * tool_name. NUNCA o resultado do cálculo, o peso, a idade, a altura, o
+   * sexo, o texto da mensagem nem a URL com dado pessoal.
+   */
+  | "share_open"
+  | "share_native"
+  | "share_whatsapp"
+  | "share_copy_link"
+  | "share_copy_message"
+  | "share_email"
+  | "share_result"
+
+  /**
    * Calculadora de proteína. Privacidade por desenho: o peso digitado e o
    * resultado NUNCA entram nos parâmetros — só o comportamento anônimo.
    */

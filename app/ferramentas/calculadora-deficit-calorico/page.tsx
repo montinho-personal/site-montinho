@@ -13,6 +13,7 @@ import {
 } from "@/lib/calorias";
 import CalculadoraDeficit from "@/components/calorias/CalculadoraDeficit";
 import Trilha from "@/components/ferramentas/Trilha";
+import Compartilhar from "@/components/share/Compartilhar";
 
 /**
  * Página própria da calculadora de déficit calórico.
@@ -86,6 +87,15 @@ export default function CalculadoraDeficitPage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5" style={h}>
             Calculadora de déficit calórico
           </h1>
+          <Compartilhar
+            contexto="tool"
+            titulo="Calculadora de Déficit Calórico"
+            caminho="/ferramentas/calculadora-deficit-calorico"
+            local="tool_top"
+            ferramenta="calculadora_deficit"
+            aparencia="discreto"
+            className="mb-5"
+          />
           <p className="text-gray-300 text-lg leading-relaxed">
             Informe peso, altura, idade e nível de atividade para estimar sua
             taxa metabólica, seu gasto calórico diário e diferentes faixas de

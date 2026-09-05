@@ -6,6 +6,7 @@ import PonteInterna from "@/components/consultoria/PonteInterna";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import testimonials from "@/data/testimonials.json";
 import FAQ from "@/components/ui/FAQ";
+import Compartilhar from "@/components/share/Compartilhar";
 
 /**
  * Landing Page de alta conversão para Google Ads — Consultoria Online.
@@ -650,6 +651,20 @@ export default function ConsultoriaOnlineLP() {
               label="Quero começar minha consultoria"
               sub="Respondo pessoalmente — geralmente em poucos minutos"
             />
+            {/* Compartilhar fica DEPOIS do CTA e visualmente mais fraco: a
+                ação primária desta página é falar comigo. Quem quer mostrar
+                para o marido, a esposa ou um amigo antes de decidir também
+                precisa de um caminho — só que não na frente do outro. */}
+            <div className="mt-10 flex justify-center">
+              <Compartilhar
+                contexto="commercial"
+                titulo="Consultoria Online com o Montinho"
+                caminho="/consultoria-online"
+                local="commercial_page"
+                aparencia="discreto"
+                rotulo="Enviar esta página para alguém"
+              />
+            </div>
             <p className="text-gray-400 text-xs mt-12">
               Montinho Personal Trainer · Consultoria Online para todo o Brasil
             </p>

@@ -13,6 +13,7 @@ import {
 } from "@/lib/macros";
 import CalculadoraMacros from "@/components/macros/CalculadoraMacros";
 import Trilha from "@/components/ferramentas/Trilha";
+import Compartilhar from "@/components/share/Compartilhar";
 
 /**
  * Página própria da calculadora de macros.
@@ -76,6 +77,15 @@ export default function CalculadoraMacrosPage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5" style={h}>
             Calculadora de Macros
           </h1>
+          <Compartilhar
+            contexto="tool"
+            titulo="Calculadora de Macros"
+            caminho="/ferramentas/calculadora-macros"
+            local="tool_top"
+            ferramenta="calculadora_macros"
+            aparencia="discreto"
+            className="mb-5"
+          />
           <p className="text-gray-300 text-lg leading-relaxed">
             Descubra uma distribuição de proteínas, carboidratos e gorduras de
             acordo com seu peso e sua meta calórica — e veja os números mudarem

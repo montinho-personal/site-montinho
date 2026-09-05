@@ -5,6 +5,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import FAQ from "@/components/ui/FAQ";
+import Compartilhar from "@/components/share/Compartilhar";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer Tamboré | Montinho Personal Trainer" },
@@ -611,6 +612,21 @@ export default function PersonalTrainerTambore() {
           </div>
         </div>
       </section>
+        {/* Secundário por desenho: vem depois do CTA de conversão e sem
+            peso visual. Quem quer mostrar para alguém antes de decidir
+            tem caminho; quem quer falar comigo continua vendo o botão
+            principal primeiro. */}
+        <div className="flex justify-center pb-10">
+          <Compartilhar
+            contexto="local"
+            titulo="Personal Trainer no Tamboré"
+            caminho="/personal-trainer-tambore"
+            local="local_page"
+            aparencia="discreto"
+            rotulo="Enviar esta página para alguém"
+          />
+        </div>
+
     </>
   );
 }

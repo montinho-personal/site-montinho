@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import PosResultado from "@/components/ferramentas/PosResultado";
+import Compartilhar from "@/components/share/Compartilhar";
 import { PONTE, guarda } from "@/lib/ferramentas/ponte";
 import { guardaKcalParaMacros, guardaPesoParaProteina } from "@/lib/macros";
 import {
@@ -530,6 +531,22 @@ export default function CalculadoraTDEE({
                     </p>
                   </div>
                 )}
+              </div>
+              {/* Só os dois números estimados saem daqui. Peso, altura,
+                  idade e sexo — que são a entrada — ficam no aparelho: juntos
+                  eles descrevem o corpo de alguém, e isso não é assunto de
+                  quem recebe a mensagem. */}
+              <div className="mt-6">
+                <Compartilhar
+                  contexto="tool-result"
+                  titulo="Calculadora de TMB e TDEE"
+                  caminho="/ferramentas/calculadora-tmb-tdee"
+                  local="tool_result"
+                  ferramenta="calculadora_tdee"
+                  resultado={[`TMB estimada: ≈ ${formataFaixa(tmb)} kcal/dia`, `Gasto diário estimado: ≈ ${formataFaixa(tdee)} kcal/dia`]}
+                  gancho="Meu cálculo:"
+                  aparencia="solido"
+                />
               </div>
               <PosResultado
                 ferramenta="tdee"

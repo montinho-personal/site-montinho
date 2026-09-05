@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import Compartilhar from "@/components/share/Compartilhar";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import PosResultado from "@/components/ferramentas/PosResultado";
 import { PONTE, consome } from "@/lib/ferramentas/ponte";
@@ -143,6 +144,19 @@ export default function CalculadoraOneRM({
       trackEvent("one_rm_calculator_use", { placement });
     }
   }, [umRM, placement]);
+
+  /*
+   * Carga e repetições SÃO o resultado aqui, não dado corporal: é o que
+   * torna a conta interessante para o amigo de academia ("80 kg × 8 → 101").
+   * Peso do corpo, idade e sexo continuam fora — a calculadora nem pergunta.
+   */
+  const linhasShare = umRM !== null
+    ? [
+        exercicio && exercicio !== "Outro" ? exercicio : null,
+        `${formataKg(carga!)} kg × ${reps} ${reps === 1 ? "repetição" : "repetições"}`,
+        `1RM estimado: ≈ ${arredondaKg(umRM)} kg`,
+      ].filter(Boolean) as string[]
+    : [];
 
   function copiar() {
     if (umRM === null) return;
@@ -611,6 +625,18 @@ export default function CalculadoraOneRM({
               >
                 {copiado ? "Copiado" : "Copiar resultado"}
               </button>
+              {umRM !== null && (
+                <Compartilhar
+                  contexto="tool-result"
+                  titulo="Calculadora de 1RM"
+                  caminho="/ferramentas/calculadora-1rm"
+                  local="tool_result"
+                  ferramenta="calculadora_1rm"
+                  resultado={linhasShare}
+                  gancho="Meu 1RM estimado:"
+                  aparencia="solido"
+                />
+              )}
               <Link
                 href="/blog/progressao-de-carga"
                 onClick={() => trackEvent("one_rm_article_click", { placement })}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
 import { FAIXAS, REFERENCIA_CIENTIFICA, gramasPorDia } from "@/lib/proteina";
 import CalculadoraProteina from "@/components/proteina/CalculadoraProteina";
+import Compartilhar from "@/components/share/Compartilhar";
 
 /**
  * Página própria da calculadora — captura a busca direta por "calculadora de
@@ -58,6 +59,15 @@ export default function CalculadoraProteinaPage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5" style={h}>
             Calculadora de proteína por peso
           </h1>
+          <Compartilhar
+            contexto="tool"
+            titulo="Calculadora de Proteína"
+            caminho="/ferramentas/calculadora-de-proteina"
+            local="tool_top"
+            ferramenta="calculadora_proteina"
+            aparencia="discreto"
+            className="mb-5"
+          />
           <p className="text-gray-300 text-lg leading-relaxed">
             Informe seu peso para calcular referências de 1,6, 2,0 e 2,2 g de
             proteína por kg de peso corporal — a faixa usada por quem treina
