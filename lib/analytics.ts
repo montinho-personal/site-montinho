@@ -146,6 +146,15 @@ export type AnalyticsEvent =
   | "share_result"
 
   /**
+   * Depoimentos da home. `testimonials_expand` diz quantas pessoas quiseram
+   * ler além dos três primeiros — é o sinal de que a prova social está
+   * sendo lida, e não apenas rolada. `testimonials_google_click` conta quem
+   * foi conferir na fonte.
+   */
+  | "testimonials_expand"
+  | "testimonials_google_click"
+
+  /**
    * Calculadora de proteína. Privacidade por desenho: o peso digitado e o
    * resultado NUNCA entram nos parâmetros — só o comportamento anônimo.
    */
