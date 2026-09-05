@@ -1,6 +1,6 @@
 import { exigirUsuario } from "@/lib/crm/auth";
 import { base, catalogo } from "@/lib/crm/dados";
-import { funilPeriodo, serieMensal, tabelaPorFonte, eventosReceita, clientesMetricas } from "@/lib/crm/analise";
+import { funilPeriodo, serieMensal, tabelaPorFonte, eventosReceita, clientesMetricas, separarPorReceita } from "@/lib/crm/analise";
 import { taxasFunil, mrrNormalizado, ltvMedio, anomalia, valorPipeline } from "@/lib/crm/metricas";
 import AnalyticsNav, { Periodo } from "@/components/crm/AnalyticsNav";
 import { Card, Pagina, Stat, Tabela, brl, pct, Amostra } from "@/components/crm/ui";
@@ -14,7 +14,9 @@ export default async function Analytics({ searchParams }: { searchParams: Promis
   const serie = serieMensal(b, 6);
   const ultimo = serie[serie.length - 1], anterior = serie[serie.length - 2];
   const fontes = tabelaPorFonte(b, cat, de, ate);
-  const ev = eventosReceita(b); const cls = clientesMetricas(b);
+  const ev = eventosReceita(b);
+  // Cliente importado sem recibo tem LTV desconhecido, não zero: fora da média.
+  const { comReceita: cls, semReceita } = separarPorReceita(clientesMetricas(b), ev);
   const ltv = ltvMedio(cls, ev);
   const mrr = mrrNormalizado(b.contratos.map((c) => ({ clientId: c.client_id, valor: c.valor, cicloMeses: c.ciclo_meses, inicio: c.inicio, fim: c.fim, status: c.status })));
   const abertas = b.oportunidades.filter((o) => !o.won_at && !o.lost_at);
@@ -32,7 +34,7 @@ export default async function Analytics({ searchParams }: { searchParams: Promis
         <Stat rotulo="Vendas" valor={contagem.vendas} sub={`lead → venda ${pct(t.leadParaVenda)}`} />
         <Stat rotulo="Win rate" valor={pct(t.propostaParaVenda)} sub={`${contagem.propostas} propostas`} />
         <Stat rotulo="MRR normalizado" valor={brl(mrr)} />
-        <Stat rotulo="LTV médio realizado" valor={brl(ltv.medio)} sub={<Amostra n={ltv.n} />} />
+        <Stat rotulo="LTV médio realizado" valor={brl(ltv.medio)} sub={<>{<Amostra n={ltv.n} />}{semReceita.length > 0 && <span className="block text-xs text-zinc-500">{semReceita.length} sem receita registrada, fora da média</span>}</>} />
         <Stat rotulo="Pipeline ponderado" valor={brl(pv.ponderado)} sub={`bruto ${brl(pv.bruto)}`} />
       </div>
       <div className="grid gap-4 lg:grid-cols-2">

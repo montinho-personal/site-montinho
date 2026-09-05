@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 
 // prefetch={false} em toda a navegação: cada tela do CRM é dinâmica e faz
 // dezenas de consultas ao banco. Com o prefetch padrão, abrir o menu no
@@ -29,6 +29,16 @@ const MAIS = [
 
 export default function Shell({ children, usuario, sair }: { children: ReactNode; usuario: { nome: string | null; email: string; role: string }; sair: () => Promise<void> }) {
   const pathname = usePathname();
+  const menu = useRef<HTMLDetailsElement>(null);
+  // <details> nativo não fecha sozinho ao tocar fora nem ao navegar.
+  useEffect(() => {
+    const fechar = (e: Event) => { const el = menu.current; if (el?.open && !el.contains(e.target as Node)) el.open = false; };
+    const tecla = (e: KeyboardEvent) => { if (e.key === "Escape" && menu.current) menu.current.open = false; };
+    document.addEventListener("pointerdown", fechar);
+    document.addEventListener("keydown", tecla);
+    return () => { document.removeEventListener("pointerdown", fechar); document.removeEventListener("keydown", tecla); };
+  }, []);
+  useEffect(() => { if (menu.current) menu.current.open = false; }, [pathname]);
   const ativo = (href: string) => (href === "/crm" ? pathname === "/crm" : pathname.startsWith(href));
   return (
     <div className="min-h-screen bg-zinc-950 text-white lg:grid lg:grid-cols-[240px_1fr]">
@@ -50,10 +60,10 @@ export default function Shell({ children, usuario, sair }: { children: ReactNode
           <form action="/crm/leads" method="get" className="flex-1 px-3">
             <input name="q" placeholder="Buscar nome, telefone…" className="w-full rounded-lg border border-white/15 bg-black/40 px-3 py-1.5 text-sm" aria-label="Buscar" />
           </form>
-          <details className="relative">
+          <details ref={menu} className="relative">
             <summary className="cursor-pointer list-none rounded-lg border border-white/15 px-2 py-1 text-sm">Mais</summary>
             <div className="absolute right-0 mt-2 w-56 rounded-lg border border-white/10 bg-zinc-900 p-1 shadow-xl">
-              {MAIS.map((i) => <Link key={i.href} href={i.href} prefetch={false} className="block rounded px-3 py-2 text-sm text-zinc-200 hover:bg-white/10">{i.rotulo}</Link>)}
+              {MAIS.map((i) => <Link key={i.href} href={i.href} prefetch={false} onClick={() => { if (menu.current) menu.current.open = false; }} className="block rounded px-3 py-2 text-sm text-zinc-200 hover:bg-white/10">{i.rotulo}</Link>)}
               <form action={sair}><button className="block w-full rounded px-3 py-2 text-left text-sm text-zinc-500 hover:bg-white/10">Sair</button></form>
             </div>
           </details>
