@@ -4,6 +4,7 @@
  * TypeScript: o volume é de centenas de linhas e isso evita depender de
  * nomes de FK na sintaxe de embed do PostgREST.
  */
+import { cache } from "react";
 import { supabaseServer } from "./supabase/server";
 import type {
   Atividade, ClienteRow, ConfigSla, Contato, Contrato, Etapa, EventoReceitaRow, Experimental, Fonte, GastoAds, Handoff, HistoricoAquisicao, HistoricoEtapa,
@@ -20,7 +21,7 @@ async function todos<T>(sb: SB, tabela: string, mod?: (q: any) => any): Promise<
 }
 
 export interface Catalogo { fontes: Fonte[]; servicos: Servico[]; planos: Plano[]; pipelines: Pipeline[]; etapas: Etapa[]; motivos: MotivoPerda[]; templates: Template[]; usuarios: UsuarioRow[]; config: Record<string, any> }
-export async function catalogo(): Promise<Catalogo> {
+export const catalogo = cache(async function catalogo(): Promise<Catalogo> {
   const sb = await supabaseServer();
   const [fontes, servicos, planos, pipelines, etapas, motivos, templates, usuarios, cfg] = await Promise.all([
     todos<Fonte>(sb, "crm_sources", (q) => q.order("ordem")),
@@ -34,15 +35,19 @@ export async function catalogo(): Promise<Catalogo> {
     todos<{ key: string; value: any }>(sb, "crm_settings"),
   ]);
   return { fontes, servicos, planos, pipelines, etapas, motivos, templates, usuarios, config: Object.fromEntries(cfg.map((c) => [c.key, c.value])) };
-}
+});
 export const slaPadrao: ConfigSla = { novo_lead_sem_contato_horas: 24, proposta_sem_follow_up_dias: 2, lead_parado_dias: 5, negociacao_antiga_dias: 7 };
 
 export interface Base {
   contatos: Contato[]; leads: Lead[]; oportunidades: Oportunidade[]; experimentais: Experimental[]; tarefas: Tarefa[]; clientes: ClienteRow[];
   contratos: Contrato[]; receitas: EventoReceitaRow[]; atividades: Atividade[]; handoffs: Handoff[]; toques: ToqueRow[]; gastos: GastoAds[]; historicoEtapas: HistoricoEtapa[];
 }
-/** Tudo que as telas operacionais e analíticas precisam. Uma leitura, cálculo em memória. */
-export async function base(): Promise<Base> {
+/**
+ * Tudo que as telas operacionais e analíticas precisam. Uma leitura, cálculo
+ * em memória. Envolvida em cache() do React: se a página e um componente
+ * pedirem a base na mesma renderização, o banco é consultado uma vez só.
+ */
+export const base = cache(async function base(): Promise<Base> {
   const sb = await supabaseServer();
   const [contatos, leads, oportunidades, experimentais, tarefas, clientes, contratos, receitas, atividades, handoffs, toques, gastos, historicoEtapas] = await Promise.all([
     todos<Contato>(sb, "crm_contacts", (q) => q.is("merged_into_contact_id", null).order("created_at", { ascending: false })),
@@ -60,7 +65,7 @@ export async function base(): Promise<Base> {
     todos<HistoricoEtapa>(sb, "crm_stage_history"),
   ]);
   return { contatos, leads, oportunidades, experimentais, tarefas, clientes, contratos, receitas, atividades, handoffs, toques, gastos, historicoEtapas };
-}
+});
 
 export async function historicoAquisicao(fonte?: string): Promise<HistoricoAquisicao[]> {
   const sb = await supabaseServer();
