@@ -15,6 +15,7 @@ import {
   ALIMENTOS,
   ARTIGOS_COM_CALCULADORA,
   FAIXAS,
+  NOTA_POR_ARTIGO,
   PESO_MAX,
   PESO_MIN,
   gramasPorDia,
@@ -124,21 +125,37 @@ for (const s of ARTIGOS_COM_CALCULADORA) {
   ok(`corte cedo funciona em ${s}`, corte !== null && corte.before.length > 100);
 }
 
-/** A tabela existente NÃO pode ter sido removida em nenhum artigo do registro. */
-for (const s of ARTIGOS_COM_CALCULADORA) {
+/*
+ * A tabela existente NÃO pode ter sido removida. A lista é explícita de
+ * propósito: exigir <table> de TODO artigo do registro reprovava artigo novo
+ * que nunca teve tabela nenhuma — e um teste que reprova o certo acaba sendo
+ * desligado, que é o pior desfecho possível para um teste.
+ */
+const ARTIGOS_COM_TABELA_PROTEGIDA = [
+  "alimentos-ricos-em-proteina",
+  "proteina-em-alimentos-tabela-completa",
+  "parar-de-tomar-mounjaro",
+];
+for (const s of ARTIGOS_COM_TABELA_PROTEGIDA) {
   ok(
     `a tabela continua lá em ${s} (a calculadora complementa, não substitui)`,
     /<table/.test(html(s)),
     "a tabela é o conteúdo indexável; removê-la trocaria SEO por caixa vazia"
   );
+  ok(`${s} continua no registro da calculadora`, ARTIGOS_COM_CALCULADORA.includes(s));
 }
 
 /**
  * Os artigos de GLP-1 ficam de fora por segurança, não por acaso — a conta é
  * peso × g/kg e superestima para quem tem obesidade. Se alguém adicionar um
  * deles sem rediscutir a conta, o teste avisa.
+ *
+ * A retatrutida saiu desta lista em 05/09/2026 (ver a justificativa em
+ * lib/proteina.ts): ela é a única do grupo cujo texto já publica a conta em
+ * peso corporal. Em troca, ela passou a EXIGIR a ressalva do peso ajustado
+ * ao lado da ferramenta — é o teste logo abaixo.
  */
-for (const s of ["proteina-para-quem-usa-mounjaro", "proteina-para-quem-usa-retatrutida", "ozempic-faz-perder-musculo", "glp1-apetite-suprimido-proteina-musculo"]) {
+for (const s of ["proteina-para-quem-usa-mounjaro", "ozempic-faz-perder-musculo", "glp1-apetite-suprimido-proteina-musculo"]) {
   ok(
     `artigo de GLP-1 permanece fora do registro: ${s}`,
     !ARTIGOS_COM_CALCULADORA.includes(s),
@@ -268,6 +285,32 @@ ok("erro amigável, sem grito", /Confira o peso informado/.test(componente) && !
 ok("zero state útil (exemplo de 70 kg)", /para 70 kg.*112 g/.test(componente));
 ok("alvos de toque adequados", /min-h-\[44px\]/.test(componente));
 ok("o disclaimer existe e é discreto", /não substitui avaliação individual/.test(componente));
+
+console.log("\n" + "=".repeat(60) + "\nRESSALVA DE CONTEXTO\n" + "=".repeat(60));
+
+/*
+ * Onde a calculadora entra num artigo cujo público lê o número de outro
+ * jeito, a ressalva é parte da entrega — não um extra. Sem ela, a decisão de
+ * incluir o artigo da retatrutida não se sustenta.
+ */
+ok(
+  "o artigo da retatrutida tem ressalva de peso ajustado",
+  (NOTA_POR_ARTIGO["proteina-para-quem-usa-retatrutida"] ?? "").length > 80,
+);
+ok(
+  "a ressalva fala em peso ajustado e em teto, não em prescrição",
+  /peso ajustado/.test(NOTA_POR_ARTIGO["proteina-para-quem-usa-retatrutida"] ?? "")
+    && /teto/.test(NOTA_POR_ARTIGO["proteina-para-quem-usa-retatrutida"] ?? ""),
+);
+ok(
+  "a página do artigo renderiza a ressalva antes da calculadora",
+  (() => {
+    const pagina = fs.readFileSync("app/blog/[slug]/page.tsx", "utf8");
+    const i = pagina.indexOf("NOTA_POR_ARTIGO[post.slug]");
+    const j = pagina.indexOf("<CalculadoraProteina");
+    return i > 0 && j > 0 && i < j;
+  })(),
+);
 
 console.log("\n" + "=".repeat(60) + "\nESCOLHA DA FAIXA\n" + "=".repeat(60));
 

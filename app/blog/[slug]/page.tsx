@@ -16,7 +16,7 @@ import Compartilhar from "@/components/share/Compartilhar";
 import BlocoCompartilhar from "@/components/share/BlocoCompartilhar";
 import { planCTAs } from "@/lib/cta/classify";
 import { splitAtNaturalBreak, splitAtPrimeiraSecao } from "@/lib/cta/placement";
-import { ARTIGOS_COM_CALCULADORA } from "@/lib/proteina";
+import { ARTIGOS_COM_CALCULADORA, NOTA_POR_ARTIGO } from "@/lib/proteina";
 import { ARTIGOS_COM_FICHA } from "@/lib/alimentos/artigos";
 import FichaNoArtigo from "@/components/alimentos/FichaNoArtigo";
 import CalculadoraProteina from "@/components/proteina/CalculadoraProteina";
@@ -328,7 +328,17 @@ export default async function BlogPost({ params }: Props) {
               <div className="prose-blog" dangerouslySetInnerHTML={{ __html: calcSplit.before }} />
               <div className="my-10">
                 {qualCalc === "proteina" ? (
-                  <CalculadoraProteina placement={post.slug === "quanta-proteina-por-dia-para-ganhar-massa-muscular" ? "artigo-proteina-dia" : `artigo-${post.slug}`} />
+                  <>
+                    {/* Ressalva de contexto ANTES da ferramenta: quem lê o
+                        número precisa saber como lê-lo, e aviso depois do
+                        resultado chega tarde. */}
+                    {NOTA_POR_ARTIGO[post.slug] && (
+                      <p className="mb-4 border-l-2 border-[#BA9E50] bg-white/[0.03] px-4 py-3 text-sm leading-relaxed text-gray-300">
+                        {NOTA_POR_ARTIGO[post.slug]}
+                      </p>
+                    )}
+                    <CalculadoraProteina placement={post.slug === "quanta-proteina-por-dia-para-ganhar-massa-muscular" ? "artigo-proteina-dia" : `artigo-${post.slug}`} />
+                  </>
                 ) : qualCalc === "cardapio" ? (
                   <MonteSeuCardapio placement={post.slug} />
                 ) : qualCalc === "tdee" ? (
