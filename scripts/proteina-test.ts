@@ -269,5 +269,29 @@ ok("zero state útil (exemplo de 70 kg)", /para 70 kg.*112 g/.test(componente));
 ok("alvos de toque adequados", /min-h-\[44px\]/.test(componente));
 ok("o disclaimer existe e é discreto", /não substitui avaliação individual/.test(componente));
 
+console.log("\n" + "=".repeat(60) + "\nESCOLHA DA FAIXA\n" + "=".repeat(60));
+
+/*
+ * O Renato relatou em 05/09/2026: "não consigo selecionar as outras opções,
+ * fica apenas na do meio". Os três cartões eram <div> e a do meio tinha
+ * destaque visual — parecia selecionada, e a pessoa tentava clicar nas
+ * outras sem conseguir. Destaque que não é escolha é promessa quebrada.
+ *
+ * Estes testes existem para o cartão nunca mais voltar a ser um <div>.
+ */
+ok("os cartões formam um grupo de opções", /role="radiogroup"/.test(componente));
+ok("cada cartão é um botão de opção", /role="radio"/.test(componente));
+ok("o estado da escolha é anunciado", /aria-checked=\{escolhida\}/.test(componente));
+ok("a escolha vive em estado, não no dado", /useState<string>\(FAIXAS\.find/.test(componente));
+ok("teclado: setas navegam entre as faixas", /ArrowRight|ArrowLeft/.test(componente));
+ok("só a opção escolhida entra na tabulação", /tabIndex=\{escolhida \? 0 : -1\}/.test(componente));
+ok("a divisão por refeição usa a faixa escolhida", /gramasPorDia\(peso, faixaSelecionada\.gPorKg\)/.test(componente));
+ok(
+  "não existe um segundo controle para a mesma escolha",
+  !/<select/.test(componente),
+  "o <select> de g/kg foi removido: dois controles para uma decisão só criam dúvida",
+);
+ok("a troca de faixa é medida sem o peso", /trackEvent\("protein_range_select", \{ placement, range/.test(componente));
+
 console.log(falhas === 0 ? "\nTODOS OS TESTES PASSARAM\n" : `\n${falhas} TESTE(S) FALHARAM\n`);
 process.exit(falhas === 0 ? 0 : 1);
