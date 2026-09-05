@@ -179,7 +179,7 @@ export default function LandingPage() {
             </p>
 
             <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-12 text-center">
-              {[["-40kg","na própria pele"],["20+","anos de experiência"],["5.0 ★","17 avaliações Google"]].map(([n,d]) => (
+              {[["-40kg","na própria pele"],["20+","anos de experiência"],["5.0 ★",`${testimonials.totalReviews} avaliações Google`]].map(([n,d]) => (
                 <div key={n} className="border border-white/10 rounded-2xl py-5 px-2 bg-black/40">
                   <p className="text-[#BA9E50] text-2xl sm:text-3xl font-bold" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>{n}</p>
                   <p className="text-gray-300 text-xs mt-1">{d}</p>

@@ -1,9 +1,15 @@
 {
   "source": "google-manual",
-  "fetchedAt": "2026-07-02",
+  "fetchedAt": "2026-09-05",
   "placeRating": 5.0,
-  "totalReviews": 17,
+  "totalReviews": 23,
   "reviews": [
+    {
+      "name": "Nathalia Berti Cardozo",
+      "role": "Avaliação no Google",
+      "text": "Fechei consultoria com o Renato e desde o primeiro contato sempre atencioso. O material que monta é muito detalhado ficando muito fácil de entender os treinos. App tem vídeos de cada exercício o que tb facilita no dia a dia. Sempre manda mensagem para acompanhar o andamento dos treinos e dar suporte... esse é o grande diferencial. Parabéns pelo trabalho e comprometimento",
+      "stars": 5
+    },
     {
       "name": "Bruno Maineri",
       "role": "Avaliação no Google",
