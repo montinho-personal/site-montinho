@@ -41,6 +41,12 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  "academia-24-horas-santana-de-parnaiba":
+    "Guia de onde treinar fora de hora numa cidade específica. O leitor sai com um endereço e uma pergunta para a recepção, não com uma conta.",
+
+  "personal-trainer-feminino-santana-de-parnaiba":
+    "Página de serviço regional para mulheres. A decisão é contratar ou não; a conta que poderia caber (proteína, volume) já mora nos artigos de hipertrofia feminina linkados.",
+
   "quanto-custa-personal-trainer-aldeia-da-serra":
     "O leitor termina querendo uma proposta, não uma conta: o valor depende de local, frequência e deslocamento, e o site não publica tabela. Nenhuma calculadora responde isso — a resposta é a conversa no WhatsApp.",
 
