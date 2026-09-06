@@ -41,6 +41,12 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  "quanto-custa-personal-trainer-aldeia-da-serra":
+    "O leitor termina querendo uma proposta, não uma conta: o valor depende de local, frequência e deslocamento, e o site não publica tabela. Nenhuma calculadora responde isso — a resposta é a conversa no WhatsApp.",
+
+  "personal-trainer-a-domicilio-aldeia-da-serra":
+    "Página de serviço regional. A decisão do leitor é contratar ou não, e o que ele precisa é saber como funciona e o que verificar, não um número.",
+
   "academias-em-aldeia-da-serra":
     "Guia de onde treinar numa região específica. O leitor termina com um endereço e um trajeto na cabeça, não com uma conta — e a ferramenta de academias só cobre Alphaville, onde a Aldeia não entra.",
 
