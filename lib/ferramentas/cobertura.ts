@@ -41,6 +41,12 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  "academias-em-aldeia-da-serra":
+    "Guia de onde treinar numa região específica. O leitor termina com um endereço e um trajeto na cabeça, não com uma conta — e a ferramenta de academias só cobre Alphaville, onde a Aldeia não entra.",
+
+  "melhores-academias-aldeia-da-serra":
+    "Ranking por situação de uma região sem cobertura na base de academias. A decisão do leitor é qual unidade visitar, e nenhuma calculadora do site responde isso.",
+
   "forca-de-pegada-e-antebraco":
     "A pergunta do leitor é o que fazer com a mão que solta a barra, e a resposta é um exercício, não um número. Nenhuma das ferramentas do site calcula pegada — colocar a de volume aqui seria empurrar a ferramenta disponível em vez da certa.",
 

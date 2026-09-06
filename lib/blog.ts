@@ -115722,6 +115722,175 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 `,
   },
+  {
+    slug: "academias-em-aldeia-da-serra",
+    title: "Academias em Aldeia da Serra: Guia Trecho a Trecho",
+    metaTitle: "Academias em Aldeia da Serra: Guia Honesto 2026",
+    metaDescription: "O que existe de verdade para treinar na Aldeia da Serra: academias de bairro em Barueri, sala do condomínio e Alphaville a 15 minutos. Sem lista desatualizada.",
+    excerpt: "A Aldeia da Serra fica em dois municípios e a academia de referência fechou. Este guia mostra, trecho a trecho, onde dá para treinar hoje — e o critério que decide na serra.",
+    category: "Academias",
+    date: "2026-09-06",
+    updatedAt: "2026-09-06",
+    readTime: "8 min",
+    author: "Montinho",
+    tags: ["academias em aldeia da serra","aldeia da serra","barueri","santana de parnaíba","musculação","academia perto de condomínio"],
+    faq: [
+      { question: "Tem academia na Aldeia da Serra?", answer: "Tem, mas são academias de bairro na parte de Barueri, na Avenida dos Patos e na Avenida da Barra: Área Fitness, WFIT Pilates & Musculação e Aldeia Fitness aparecem nos diretórios e nos perfis oficiais. A Scelta, que atendia os condomínios, fechou em 2026. Confirme horário e estrutura com a unidade antes de assinar." },
+      { question: "A Scelta Aldeia da Serra ainda funciona?", answer: "Não. A unidade encerrou as atividades em 2026. Listas que ainda a mostram estão desatualizadas." },
+      { question: "Vale a pena descer para treinar em Alphaville morando na Aldeia?", answer: "Só se você já passa por Alphaville todos os dias. Aí a academia entra no trajeto. Se não passa, o deslocamento extra costuma derrubar a frequência em poucas semanas, e uma academia de bairro ou a sala do condomínio rende mais." },
+      { question: "A academia do condomínio na Aldeia da Serra é suficiente?", answer: "Para os primeiros doze meses de quase todo mundo, sim, desde que exista um plano com progressão de carga. O que costuma faltar nela é método, não aparelho." },
+      { question: "O Montinho atende na Aldeia da Serra?", answer: "Sim, presencialmente em casa ou no espaço fitness do condomínio, acompanhando alunos nas academias de Alphaville, e também por consultoria online com plano individualizado." },
+    ],
+    content: `<h2>Resposta rápida: onde treinar na Aldeia da Serra</h2>
+<p>A Aldeia da Serra é um conjunto de residenciais espalhado por <strong>dois municípios</strong>, Barueri e Santana de Parnaíba, e é por isso que quase toda lista de "academias na Aldeia" que você encontra por aí está errada: ou mistura academia de Alphaville, ou lista uma unidade que já fechou. O quadro real, em setembro de 2026, é este:</p>
+<ul>
+<li><strong>Dentro da Aldeia, na parte de Barueri</strong> (Avenida dos Patos e Avenida da Barra), existem academias pequenas, de bairro — WFIT Pilates &amp; Musculação, Área Fitness e Aldeia Fitness aparecem nos diretórios e nos perfis oficiais. São opções de proximidade, não de estrutura.</li>
+<li><strong>A academia que atendia os condomínios</strong>, a Scelta Aldeia da Serra, encerrou as atividades em 2026. Se você viu o nome dela em alguma lista, a lista está desatualizada.</li>
+<li><strong>Na parte de Santana de Parnaíba</strong> (Morada dos Pinheiros, Morada das Flores), a academia que existe é a do próprio condomínio.</li>
+<li><strong>Descendo a serra</strong>, Alphaville fica a 15 a 20 minutos de carro e concentra as redes: Smart Fit, Bodytech, Ironberg.</li>
+</ul>
+<p>Uma ressalva antes de continuar: as academias de bairro da Aldeia estão aqui pelo que consta nos diretórios e nos perfis delas. Não visitei todas. Antes de assinar qualquer plano, <strong>confirme horário, estrutura e valores diretamente com a unidade</strong> — academia pequena muda tudo isso sem avisar a internet.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treinador-aldeia-da-serra.jpg" alt="Montinho Personal Trainer em treino de musculação em academia da região de Alphaville, onde acompanha alunos que moram na Aldeia da Serra" title="Academias em Aldeia da Serra — Montinho Personal Trainer" width="1200" height="2131" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+
+<h2>Por que a Aldeia é diferente de qualquer outra região</h2>
+<p>Em Alphaville, escolher academia é comparar estrutura. Na Aldeia da Serra, é <strong>comparar deslocamento</strong>. A estrada de serra, o pedágio da rotina de condomínio e o trânsito de quem trabalha em Alphaville ou em São Paulo fazem 15 minutos pesarem como 40. Eu atendo moradores da região há anos e o padrão é sempre o mesmo: a pessoa se matricula numa academia excelente lá embaixo, treina bem por seis semanas e para quando o trajeto vira desculpa.</p>
+<p>Por isso este guia não começa pela melhor estrutura. Começa pelo mapa.</p>
+
+<h2>O que existe hoje, trecho a trecho</h2>
+<h3>Avenida dos Patos (Morada das Estrelas, lado de Barueri)</h3>
+<p>É o trecho comercial mais próximo de quem mora nos residenciais do lado de Barueri, e é onde estão as duas academias de bairro que mais aparecem quando se pesquisa a região.</p>
+<p>A <strong>WFIT Pilates &amp; Musculação</strong>, na Avenida dos Patos, 251, é um estúdio que combina as duas coisas do nome: aparelhos de pilates e sala de musculação, com proposta de atendimento próximo. Está registrada na região desde 2014, o que, para academia pequena, é sinal de que sobreviveu a mais de um ciclo de janeiro. Faz sentido para quem quer musculação orientada sem a impessoalidade de rede, ou para quem já faz pilates e quer juntar as duas coisas no mesmo lugar.</p>
+<p>A <strong>Área Fitness</strong>, na Avenida dos Patos, 35, é a academia de musculação do trecho. Pelo perfil oficial, funciona em dias úteis de manhã e no fim da tarde até a noite, com intervalo no meio do dia, e aos sábados pela manhã — o formato clássico de academia de bairro, que fecha justamente quando a rua esvazia. Se o seu treino é às 14h ou no domingo, esse detalhe decide antes de qualquer outro.</p>
+<h3>Avenida da Barra (Morada dos Lagos, lado de Barueri)</h3>
+<p>No Centro Comercial Morada dos Lagos, na Avenida da Barra, 280, fica a <strong>Aldeia Fitness</strong>, que aparece nos diretórios de Barueri e também como núcleo de artes marciais. Para quem mora na Morada dos Lagos, é a opção que dá para ir a pé ou em cinco minutos de carro — e proximidade dessa ordem, na Aldeia, vale mais que qualquer máquina nova.</p>
+<h3>Morada dos Pinheiros e Morada das Flores (lado de Santana de Parnaíba)</h3>
+<p>Aqui não há academia comercial dentro dos residenciais. O que existe é o <strong>espaço fitness do condomínio</strong>, que muita gente subestima. A maioria dos condomínios da Aldeia tem sala com esteiras, halteres, polia e algum banco — pouco para quem já treina há anos, mas suficiente para os primeiros doze meses de qualquer pessoa, desde que exista um plano que progrida. Escrevi em detalhe sobre isso em <a href="/blog/academia-em-condominio-como-aproveitar">como aproveitar a academia do condomínio</a>.</p>
+<h3>O que fechou: Scelta Aldeia da Serra</h3>
+<p>A Scelta era a academia de referência dos condomínios e encerrou as atividades em 2026. Mantive a <a href="/blog/scelta-aldeia-da-serra">análise da unidade</a> no ar porque os critérios para avaliar uma academia de condomínio continuam valendo, mas o endereço não. Se um diretório ainda mostra a Scelta na Aldeia, desconfie do resto da lista dele também.</p>
+<h3>Descendo a serra: Alphaville</h3>
+<p>A 15 a 20 minutos de carro estão as academias de rede. A <a href="/blog/smart-fit-alphaville">Smart Fit</a> é a porta de entrada de menor atrito, a <a href="/blog/bodytech-alphaville">Bodytech</a> é a opção de estrutura ampla e a <a href="/blog/ironberg-alphaville">Ironberg</a> é a de treino pesado. O guia completo está em <a href="/academias-alphaville">academias em Alphaville</a>. A pergunta que faço a todo morador da Aldeia antes de indicar uma delas é uma só: <strong>você já passa por Alphaville todo dia?</strong> Se passa, a academia entra no trajeto e funciona. Se não passa, ela vira um deslocamento a mais — e deslocamento a mais, na Aldeia, é o que mata treino.</p>
+
+<h2>Comparativo qualitativo</h2>
+<table>
+<tr><th>Opção</th><th>Onde</th><th>Perfil</th><th>Faz sentido para</th></tr>
+<tr><td>WFIT Pilates &amp; Musculação</td><td>Av. dos Patos, 251</td><td>Estúdio: pilates + musculação</td><td>Quem quer orientação próxima e as duas modalidades juntas</td></tr>
+<tr><td>Área Fitness</td><td>Av. dos Patos, 35</td><td>Academia de bairro</td><td>Quem mora perto e treina de manhã ou à noite em dia útil</td></tr>
+<tr><td>Aldeia Fitness</td><td>Av. da Barra, 280</td><td>Academia de bairro + artes marciais</td><td>Moradores da Morada dos Lagos</td></tr>
+<tr><td>Academia do condomínio</td><td>Dentro do residencial</td><td>Sala de equipamentos básicos</td><td>Quem prioriza constância e aceita estrutura enxuta</td></tr>
+<tr><td>Smart Fit, Bodytech, Ironberg</td><td>Alphaville, 15–20 min</td><td>Rede</td><td>Quem já circula por Alphaville diariamente</td></tr>
+</table>
+<p><em>Horários, estrutura e valores mudam com frequência em academia pequena. Confirme sempre com a unidade antes de fechar plano.</em></p>
+
+<h2>O critério que decide na Aldeia</h2>
+<ul>
+<li><strong>Minutos no horário real:</strong> não meça o trajeto no domingo à tarde. Meça às 7h ou às 19h, que é quando você vai treinar.</li>
+<li><strong>Horário de funcionamento contra a sua agenda:</strong> academia de bairro fecha no meio do dia e no domingo. Se é aí que você treina, ela está descartada antes da visita.</li>
+<li><strong>Estrutura mínima, não máxima:</strong> um rack ou estação de agachamento, um banco, halteres até um peso que você não alcança hoje e uma polia. Com isso se constrói força e músculo por anos.</li>
+<li><strong>Aula experimental no seu horário:</strong> nenhum contrato antes de ver a lotação e a conservação com os próprios olhos.</li>
+</ul>
+<p>Para a decisão em geral, o roteiro está em <a href="/blog/como-escolher-uma-academia">como escolher uma academia sem errar</a>.</p>
+
+<h2>A peça que falta no seu treino</h2>
+<p>Toda opção da lista funciona <strong>se o seu treino funcionar</strong>. A academia da Avenida dos Patos, a sala do condomínio e a Bodytech entregam resultado idêntico para quem chega com plano, progressão de carga e técnica corrigida — e resultado nenhum para quem chega sem. É o que vejo há anos atendendo moradores da Aldeia: a diferença entre quem transforma o corpo e quem paga boleto quase nunca está no endereço.</p>
+<p>Atendo presencialmente na Aldeia da Serra, em casa ou no espaço fitness do condomínio, acompanho alunos nas academias de Alphaville e mantenho a <a href="/consultoria-online">consultoria online</a> para quem prefere treinar por conta própria com um plano que evolui. Se quiser conversar sobre onde faz sentido você treinar, <a href="/contato">agende uma avaliação</a> ou veja o atendimento como <a href="/blog/personal-trainer-aldeia-da-serra">personal trainer na Aldeia da Serra</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/melhores-academias-aldeia-da-serra">Melhores academias da Aldeia da Serra: ranking por situação</a></li>
+<li><a href="/blog/academias-em-santana-de-parnaiba">Academias em Santana de Parnaíba: guia completo</a></li>
+<li><a href="/blog/academia-em-condominio-como-aproveitar">Academia de condomínio: como aproveitar</a></li>
+<li><a href="/blog/academia-ou-personal-trainer">Academia ou personal trainer?</a></li>
+</ul>
+`,
+  },
+  {
+    slug: "melhores-academias-aldeia-da-serra",
+    title: "Melhores Academias da Aldeia da Serra: Ranking por Situação",
+    metaTitle: "Melhores Academias da Aldeia da Serra: Ranking Honesto",
+    metaDescription: "Ranking das melhores academias da Aldeia da Serra por situação real: sem descer a serra, com pilates, no condomínio ou em Alphaville. Sem nota inventada.",
+    excerpt: "Sete opções ranqueadas por situação, não por estrelinha: quem não desce a serra, quem quer pilates e orientação próxima, quem já circula por Alphaville. Com o teste dos 3 pontos antes de assinar.",
+    category: "Academias",
+    date: "2026-09-06",
+    updatedAt: "2026-09-06",
+    readTime: "8 min",
+    author: "Montinho",
+    tags: ["melhores academias aldeia da serra","aldeia da serra","ranking de academias","barueri","alphaville","musculação"],
+    faq: [
+      { question: "Qual é a melhor academia da Aldeia da Serra?", answer: "Depende da situação. Sem descer a serra, a Área Fitness e a WFIT Pilates & Musculação, na Avenida dos Patos, são as primeiras a visitar; na Morada dos Lagos, a Aldeia Fitness. Para quem já circula por Alphaville, Smart Fit, Bodytech e Ironberg entram no trajeto. Confirme horários e estrutura com cada unidade." },
+      { question: "Por que a Scelta não está no ranking?", answer: "Porque encerrou as atividades em 2026. Era a academia de referência dos condomínios da Aldeia e ainda aparece em listas desatualizadas." },
+      { question: "Tem academia com pilates na Aldeia da Serra?", answer: "A WFIT Pilates & Musculação, na Avenida dos Patos, 251, combina pilates de aparelho e musculação no mesmo estúdio, com atendimento próximo. Confirme grade e horários diretamente com ela." },
+      { question: "A academia do condomínio pode ser a melhor opção?", answer: "Para muita gente da Aldeia, sim: é a que mais preserva a constância. Com esteira, halteres, banco e polia mais um plano que progride, entrega os primeiros doze meses de resultado. O que falta nela é método, não aparelho." },
+      { question: "O que importa mais: a academia ou o treino?", answer: "O treino. As sete opções do ranking entregam o mesmo resultado para quem chega com plano, progressão de carga e técnica corrigida, e o mesmo nada para quem chega sem." },
+    ],
+    content: `<h2>Resposta rápida</h2>
+<p>Não existe "a melhor academia da Aldeia da Serra" — existe a melhor para a sua situação, e na Aldeia a situação é definida por uma coisa antes de todas: <strong>se você vai descer a serra ou não</strong>. Sem descer, as opções são as academias de bairro da parte de Barueri (Área Fitness e WFIT Pilates &amp; Musculação na Avenida dos Patos, Aldeia Fitness na Avenida da Barra) e a academia do próprio condomínio. Descendo, Alphaville está a 15 a 20 minutos e tem as redes. A Scelta, que era a referência dos condomínios, fechou em 2026 e não entra no ranking.</p>
+<p>O ranking abaixo é por situação, não por nota. E vale o aviso: sobre as academias de bairro, o que sei vem dos diretórios, dos perfis oficiais e do que os moradores que atendo me contam. <strong>Confirme horário, estrutura e valores com a unidade</strong> antes de assinar.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/treinador-aldeia-da-serra.jpg" alt="Montinho Personal Trainer em treino de musculação em academia da região de Alphaville, a 15 minutos da Aldeia da Serra" title="Melhores academias da Aldeia da Serra — Montinho Personal Trainer" width="1200" height="2131" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+
+<h2>Critério do ranking: sem estrelinha inventada</h2>
+<p>Não dou nota, não invento avaliação e não uso "4,8 no Google" como argumento, porque nota de aplicativo mede simpatia da recepção mais do que qualidade de treino. O que uso é o que decide resultado para quem mora na Aldeia:</p>
+<ol>
+<li><strong>Deslocamento no horário em que você treina.</strong> Na Aldeia, é o critério que mais prevê se a pessoa ainda estará treinando em seis meses.</li>
+<li><strong>Horário de funcionamento contra a sua agenda.</strong> Academia de bairro fecha no meio do dia e no domingo.</li>
+<li><strong>Estrutura mínima para progredir</strong>: rack ou estação de agachamento, banco, halteres pesados o bastante, polia.</li>
+<li><strong>Proposta clara.</strong> Estúdio, academia de bairro, rede e sala de condomínio servem a públicos diferentes. Nenhum é melhor em abstrato.</li>
+</ol>
+
+<h2>O ranking honesto, situação por situação</h2>
+<h3>1. Para quem não quer descer a serra: Área Fitness</h3>
+<p>Na Avenida dos Patos, 35, é a academia de musculação mais perto de quem mora nos residenciais do lado de Barueri. Pelo perfil oficial, abre cedo nos dias úteis, fecha no meio do dia, volta à tarde e vai até a noite, e funciona aos sábados pela manhã. É o formato de academia de bairro: você treina antes de sair para Alphaville ou quando volta, e o trajeto é de minutos. Para quem treina de manhã ou à noite, é a primeira a visitar.</p>
+<h3>2. Para quem quer orientação próxima ou pilates junto: WFIT Pilates &amp; Musculação</h3>
+<p>Na Avenida dos Patos, 251, é um estúdio, não uma academia grande — e é essa a vantagem. Pilates de aparelho e musculação no mesmo lugar, com atendimento que acompanha o aluno de perto. Está na região desde 2014. Faz sentido para quem está voltando de uma lesão, para quem nunca treinou e tem medo de sala de musculação cheia, e para quem já faz pilates e quer somar carga sem trocar de endereço.</p>
+<h3>3. Para quem mora na Morada dos Lagos: Aldeia Fitness</h3>
+<p>No Centro Comercial Morada dos Lagos, Avenida da Barra, 280, é a opção que muitos moradores desse residencial alcançam a pé. Aparece nos diretórios de Barueri e também como núcleo de artes marciais. A pergunta a fazer na visita é sobre a sala de musculação especificamente: banco, rack, halteres e polia. Se tem, a proximidade decide.</p>
+<h3>4. Para quem prioriza constância acima de tudo: a academia do seu condomínio</h3>
+<p>Parece cômodo demais para estar num ranking, mas é a opção que mais gente da Aldeia deveria escolher e não escolhe. A sala do condomínio com esteira, halteres, banco e polia, mais um plano que progride, entrega os primeiros doze meses de resultado de qualquer pessoa — e nos horários vazios você treina sozinho. O que falta nela não é aparelho; é método. Detalhei em <a href="/blog/academia-em-condominio-como-aproveitar">como aproveitar a academia do condomínio</a>.</p>
+<h3>5. Para quem já passa por Alphaville todo dia: Smart Fit</h3>
+<p>A <a href="/blog/smart-fit-alphaville">Smart Fit de Alphaville</a> é a porta de entrada de menor atrito para quem vai e volta de Alphaville diariamente: entra no trajeto, funciona em horário amplo e tem o básico que a maioria precisa. Se você não passa por Alphaville, ela sai do ranking — o trajeto extra é exatamente o que derruba a frequência de quem mora na Aldeia.</p>
+<h3>6. Para quem quer a estrutura mais completa da região: Bodytech</h3>
+<p>A <a href="/blog/bodytech-alphaville">Bodytech Alphaville</a> é a opção de estrutura ampla, com piscina e modalidades que nenhuma academia de bairro da Aldeia tem. Vale para quem usa de verdade o que paga — nadar, fazer aula, treinar em máquinas variadas. Para quem só vai fazer musculação, a estrutura extra vira custo, não benefício.</p>
+<h3>7. Para quem treina pesado: Ironberg</h3>
+<p>A <a href="/blog/ironberg-alphaville">Ironberg</a> é a academia de quem prioriza pesos livres e ambiente de treino sério. Se o seu objetivo é força ou hipertrofia avançada e as academias de bairro da Aldeia ficaram pequenas, é para lá que a maioria dos meus alunos da região acaba indo — sempre com a mesma condição: o trajeto precisa caber na semana real, não na semana ideal.</p>
+
+<h2>Tabela comparativa</h2>
+<table>
+<tr><th>Posição</th><th>Academia</th><th>Onde</th><th>Melhor para</th></tr>
+<tr><td>1</td><td>Área Fitness</td><td>Av. dos Patos, 35</td><td>Treinar sem descer a serra, de manhã ou à noite</td></tr>
+<tr><td>2</td><td>WFIT Pilates &amp; Musculação</td><td>Av. dos Patos, 251</td><td>Orientação próxima, pilates + musculação</td></tr>
+<tr><td>3</td><td>Aldeia Fitness</td><td>Av. da Barra, 280</td><td>Moradores da Morada dos Lagos</td></tr>
+<tr><td>4</td><td>Academia do condomínio</td><td>Dentro do residencial</td><td>Constância máxima, com plano</td></tr>
+<tr><td>5</td><td>Smart Fit Alphaville</td><td>Alphaville, 15–20 min</td><td>Quem já circula por Alphaville</td></tr>
+<tr><td>6</td><td>Bodytech Alphaville</td><td>Alphaville, 15–20 min</td><td>Estrutura completa, piscina, aulas</td></tr>
+<tr><td>7</td><td>Ironberg Alphaville</td><td>Alphaville, 15–20 min</td><td>Força e hipertrofia avançada</td></tr>
+</table>
+<p><em>Nenhuma posição é nota de qualidade. É adequação à situação — e situação muda. Confirme tudo com a unidade.</em></p>
+
+<h2>Antes de assinar: o teste dos 3 pontos</h2>
+<ol>
+<li><strong>Vá no seu horário.</strong> Lotação às 19h de terça diz mais que qualquer tour de sábado à tarde.</li>
+<li><strong>Procure o rack e a polia.</strong> Se a sala tem esteira de sobra e nenhum lugar para agachar com barra, é sala de cardio, não de musculação.</li>
+<li><strong>Pergunte sobre cancelamento antes de perguntar sobre desconto.</strong> Fidelidade longa em academia de bairro é aposta contra a sua própria rotina.</li>
+</ol>
+
+<h2>One more thing: a matrícula não treina por você</h2>
+<p>Já vi morador da Aldeia trocar de academia três vezes em um ano procurando a estrutura certa, e o problema nunca foi a estrutura. Era treinar sem plano, sem progressão de carga e sem ninguém corrigindo a técnica. A Área Fitness, a sala do condomínio e a Bodytech entregam o mesmo resultado para quem chega com método — e o mesmo nada para quem chega sem.</p>
+<p>Eu sou o Montinho. Atendo presencialmente na Aldeia da Serra, em casa ou no espaço fitness do condomínio, acompanho alunos nas academias de Alphaville e mantenho a <a href="/consultoria-online">consultoria online</a> para quem quer treinar por conta própria com um plano de verdade. Escolheu a academia? Agora <a href="/contato">agende uma avaliação</a> e transforme a matrícula em resultado. Conheça também o trabalho de <a href="/blog/personal-trainer-aldeia-da-serra">personal trainer na Aldeia da Serra</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/academias-em-aldeia-da-serra">Academias em Aldeia da Serra: guia trecho a trecho</a></li>
+<li><a href="/blog/scelta-aldeia-da-serra">Scelta Aldeia da Serra fechou: onde treinar</a></li>
+<li><a href="/blog/como-escolher-uma-academia">Como escolher uma academia sem se arrepender</a></li>
+<li><a href="/blog/academia-ou-personal-trainer">Academia ou personal trainer: o que traz mais resultado?</a></li>
+</ul>
+`,
+  },
 ]) as BlogPost[];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
