@@ -115891,6 +115891,150 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 `,
   },
+  {
+    slug: "quanto-custa-personal-trainer-aldeia-da-serra",
+    title: "Quanto Custa Personal Trainer na Aldeia da Serra?",
+    metaTitle: "Quanto Custa Personal Trainer na Aldeia da Serra? 2026",
+    metaDescription: "O que define o valor de um personal trainer na Aldeia da Serra: casa, condomínio, academia ou online, frequência semanal e a serra na conta. Como comparar propostas.",
+    excerpt: "Na Aldeia da Serra o preço do personal é definido pelo local, pela frequência e pelo deslocamento na serra. Sem tabela inventada: a ordem dos formatos e como comparar duas propostas.",
+    category: "Treinamento",
+    date: "2026-09-06",
+    updatedAt: "2026-09-06",
+    readTime: "7 min",
+    author: "Montinho",
+    tags: ["quanto custa personal trainer","aldeia da serra","preço","personal trainer a domicílio","consultoria online"],
+    faq: [
+      { question: "Quanto custa um personal trainer na Aldeia da Serra?", answer: "Depende do local da sessão (casa, condomínio, academia de Alphaville ou online), da frequência semanal e do deslocamento do profissional na serra. Sessão avulsa custa mais por hora que pacote; atendimento em casa custa mais que em academia; consultoria online é o formato mais acessível. Peça uma proposta pelo WhatsApp." },
+      { question: "Personal em casa na Aldeia da Serra custa mais que em Alphaville?", answer: "Sim, em geral. O profissional assume o deslocamento de subir e descer a serra, e isso entra no valor. Quem já tem rota montada na Aldeia consegue oferecer valor e horários melhores." },
+      { question: "Pacote de mais aulas por semana sai mais barato?", answer: "Por sessão, sim. Pacotes de duas a cinco aulas semanais têm custo por aula menor quanto maior a frequência. Para agenda irregular existe o pacote flexível, com um número de aulas para usar no ritmo possível." },
+      { question: "Treinar em dupla reduz o custo?", answer: "Reduz. Casal ou dois vizinhos na mesma sessão dividem o deslocamento do profissional, que na Aldeia é a parte cara do valor." },
+      { question: "Qual é a opção mais acessível para quem mora na Aldeia?", answer: "A consultoria online: plano individualizado com ajustes semanais, que você executa na sala do condomínio no seu horário, sem deslocamento de ninguém." },
+    ],
+    content: `<h2>Resposta direta: quanto custa personal trainer na Aldeia da Serra?</h2>
+<p>Na Aldeia da Serra, o valor de um personal trainer é definido por três coisas, nesta ordem: <strong>onde a sessão acontece</strong> (na sua casa, no espaço fitness do condomínio, numa academia de Alphaville ou online), <strong>quantas vezes por semana</strong> e <strong>quanto deslocamento o profissional assume</strong>. A serra pesa nesse terceiro item: atender na Aldeia significa subir e descer, e é isso que faz o atendimento em casa custar mais que o mesmo trabalho numa academia lá embaixo.</p>
+<p>Não publico tabela aqui por um motivo honesto: o valor muda com a frequência e com a logística de cada pessoa, e um número solto na internet vira âncora errada nos dois sentidos. O que dá para dizer com segurança é a <strong>ordem</strong>: sessão avulsa custa mais por hora que pacote; pacote por frequência semanal custa menos por sessão quanto mais aulas na semana; pacote flexível, com aulas para usar quando a agenda permitir, fica no meio; e a <a href="/blog/quanto-custa-consultoria-online-de-treino">consultoria online</a> é o formato mais acessível, porque tira o deslocamento da conta. A proposta fechada vem numa conversa de cinco minutos pelo <a href="/contato">WhatsApp</a>, sem compromisso.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-aldeia-da-serra.webp" alt="Personal trainer na Aldeia da Serra: atendimento personalizado no condomínio, em casa ou em academia da região, com horários flexíveis" title="Quanto custa personal trainer na Aldeia da Serra — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+
+<h2>O que muda o preço especificamente na Aldeia</h2>
+<h3>1. A serra entra na conta do profissional</h3>
+<p>Um personal que atende em Alphaville encadeia alunos a dez minutos um do outro. Para atender na Aldeia, ele reserva o tempo de subir, atender e descer — e nos horários de pico, entre 7h e 9h e depois das 18h, esse trajeto dobra. Por isso o atendimento em casa na Aldeia costuma custar mais que a mesma sessão numa academia de Alphaville, e por isso vale perguntar ao profissional se ele já atende outros moradores da região: quem tem rota montada na Aldeia consegue um valor melhor do que quem sobe só por você.</p>
+<h3>2. Casa, condomínio ou academia</h3>
+<p>Em casa, o profissional traz o equipamento ou trabalha com o que você tem. No espaço fitness do condomínio, ele usa a estrutura da sala — esteira, halteres, banco, polia — e o custo da sessão tende a ser o mesmo da sessão em casa, porque o deslocamento é igual. Na academia de Alphaville, o deslocamento é seu, não dele, e o valor por sessão cai. É a troca clássica da Aldeia: pagar mais para não descer a serra, ou descer a serra para pagar menos.</p>
+<h3>3. Frequência semanal</h3>
+<p>Pacotes fechados por frequência semanal, de duas a cinco aulas, têm custo por sessão menor quanto mais aulas na semana. Para quem viaja ou tem agenda irregular, existe o pacote flexível, com um número de aulas para usar no ritmo possível. Detalhei os formatos na página de <a href="/personal-trainer">personal trainer</a>.</p>
+<h3>4. Individual ou em dupla</h3>
+<p>Casal ou dois vizinhos treinando na mesma sessão dividem o deslocamento do profissional. Na Aldeia, onde o deslocamento é a parte cara, essa divisão faz mais diferença do que em qualquer outra região que atendo. Se você tem alguém no condomínio com objetivo parecido, pergunte pelo formato em dupla.</p>
+
+<h2>Comparativo: os formatos na Aldeia da Serra</h2>
+<table>
+<tr><th>Formato</th><th>Custo relativo</th><th>Quem se desloca</th><th>Indicado para</th></tr>
+<tr><td>Em casa</td><td>Mais alto</td><td>O profissional</td><td>Quem quer privacidade total e não quer sair do residencial</td></tr>
+<tr><td>No espaço fitness do condomínio</td><td>Mais alto</td><td>O profissional</td><td>Quem quer usar a estrutura da sala com orientação</td></tr>
+<tr><td>Em academia de Alphaville</td><td>Intermediário</td><td>Você</td><td>Quem já passa por Alphaville todo dia</td></tr>
+<tr><td>Pacote flexível</td><td>Intermediário</td><td>Depende do local</td><td>Quem viaja ou tem agenda irregular</td></tr>
+<tr><td>Consultoria online</td><td>Mais acessível</td><td>Ninguém</td><td>Quem executa sozinho e quer plano que evolui</td></tr>
+</table>
+<p><em>Custo relativo entre os formatos do mesmo profissional. Valores fechados dependem de frequência e logística — peça a proposta.</em></p>
+
+<h2>Como comparar duas propostas sem se enganar</h2>
+<ul>
+<li><strong>Compare o custo por sessão, não o valor do mês.</strong> Um pacote de três aulas por semana parece mais caro que um de duas, mas costuma custar menos por sessão.</li>
+<li><strong>Pergunte o que acontece com a aula não usada.</strong> Remarcação, validade do pacote e regra para viagem mudam o custo real muito mais que uma diferença pequena no valor.</li>
+<li><strong>Pergunte se o valor inclui avaliação e reavaliação.</strong> Personal que começa a treinar sem avaliar é o barato que sai caro.</li>
+<li><strong>Pergunte quem mais ele atende na Aldeia.</strong> Rota montada na região é o que permite valor e horário melhores.</li>
+</ul>
+
+<h2>Quanto custa não treinar na Aldeia</h2>
+<p>Essa é a conta que ninguém faz. O morador da Aldeia que se matricula numa academia de Alphaville e para no segundo mês pagou mensalidade, gasolina e tempo por zero resultado. O que atende em casa e treina duas vezes por semana durante um ano paga mais por sessão e recebe um corpo diferente no fim do ano. Não é uma questão de preço; é de <strong>qual formato você consegue sustentar morando na serra</strong>. Se a resposta for "nenhum presencial", a consultoria online existe justamente para isso: plano individualizado, ajustes semanais e você treinando na sala do condomínio no seu horário.</p>
+
+<h2>O formato certo para o seu orçamento existe</h2>
+<p>Eu sou o Montinho. Atendo a Aldeia da Serra em casa, no espaço fitness do condomínio e em academias de Alphaville, e mantenho a <a href="/consultoria-online">consultoria online</a> para quem quer orientação com o menor custo. Na primeira conversa pelo WhatsApp eu entendo o seu objetivo, a sua semana e onde faz sentido treinar, e passo uma proposta clara. <a href="/contato">Agende uma avaliação</a> ou conheça o atendimento como <a href="/blog/personal-trainer-aldeia-da-serra">personal trainer na Aldeia da Serra</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/personal-trainer-a-domicilio-aldeia-da-serra">Personal trainer a domicílio na Aldeia da Serra: como funciona</a></li>
+<li><a href="/blog/quanto-custa-personal-trainer-santana-de-parnaiba">Quanto custa personal trainer em Santana de Parnaíba</a></li>
+<li><a href="/blog/quanto-custa-consultoria-online-de-treino">Quanto custa consultoria online de treino</a></li>
+<li><a href="/blog/academias-em-aldeia-da-serra">Academias em Aldeia da Serra: guia trecho a trecho</a></li>
+</ul>
+`,
+  },
+  {
+    slug: "personal-trainer-a-domicilio-aldeia-da-serra",
+    title: "Personal Trainer a Domicílio na Aldeia da Serra",
+    metaTitle: "Personal Trainer a Domicílio na Aldeia da Serra | Montinho",
+    metaDescription: "Personal trainer que sobe a serra até sua casa ou o espaço fitness do condomínio na Aldeia da Serra. Como funciona, para quem faz sentido e o que verificar antes.",
+    excerpt: "Na Aldeia da Serra, o profissional sobe a serra, não você: como funciona o personal em casa e no condomínio, para quem faz sentido, equipamento, portaria e o que checar antes de contratar.",
+    category: "Treinamento",
+    date: "2026-09-06",
+    updatedAt: "2026-09-06",
+    readTime: "8 min",
+    author: "Montinho",
+    tags: ["personal trainer a domicílio","aldeia da serra","treino em condomínio","treino em casa","personal trainer"],
+    faq: [
+      { question: "Existe personal trainer a domicílio na Aldeia da Serra?", answer: "Sim. O Montinho atende em casa e no espaço fitness dos condomínios da Aldeia da Serra, nos lados de Barueri e de Santana de Parnaíba, além de acompanhar alunos em academias de Alphaville." },
+      { question: "Posso treinar na academia do meu condomínio com o personal?", answer: "Na maioria dos residenciais da Aldeia, sim, mediante cadastro do profissional na portaria. Confirme com a administração antes da primeira sessão." },
+      { question: "Preciso ter equipamento em casa?", answer: "Não. O treino começa com peso do corpo, elásticos e halteres ajustáveis, ou usa a sala do condomínio. Resultado vem de progressão, técnica e constância, não de máquina." },
+      { question: "Quanto custa o personal a domicílio na Aldeia da Serra?", answer: "Depende do local, da frequência semanal e do deslocamento na serra, que pesa mais que em outras regiões. Casal ou dupla no mesmo horário divide esse custo. A proposta vem numa conversa pelo WhatsApp." },
+      { question: "Como é uma sessão a domicílio?", answer: "De 50 a 60 minutos: aquecimento direcionado, bloco principal com correção de execução em tempo real e registro de cargas e medidas para a semana seguinte evoluir. Nos dias sem acompanhamento, você recebe o que fazer sozinho." },
+    ],
+    content: `<h2>Como funciona o personal a domicílio na Aldeia da Serra</h2>
+<p>O personal trainer a domicílio na Aldeia da Serra é o formato em que <strong>o profissional sobe a serra, não você</strong>. A sessão acontece na sua casa, na área externa ou no espaço fitness do condomínio, no horário combinado, com avaliação inicial, treino desenhado para o que existe ali e progressão registrada de uma semana para a outra. Atendo os residenciais da Aldeia dos dois lados, Barueri e Santana de Parnaíba, e é o formato que mais preserva a constância de quem mora aqui — porque elimina o único obstáculo que realmente derruba treino na região: o deslocamento.</p>
+
+<figure style="margin:2rem 0">
+  <img src="/blog-images/personal-trainer-aldeia-da-serra.webp" alt="Personal trainer a domicílio na Aldeia da Serra: atendimento em casa e no espaço fitness do condomínio, com horários flexíveis" title="Personal trainer a domicílio na Aldeia da Serra — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+</figure>
+
+<h2>Por que o formato funciona tão bem na Aldeia</h2>
+<h3>A serra é o maior assassino de treinos da região</h3>
+<p>Em regiões planas, 15 minutos a mais de carro incomodam. Na Aldeia, com estrada de serra e portaria, esses minutos decidem se você treina ou não. A <a href="/blog/scelta-aldeia-da-serra">academia que atendia os condomínios fechou</a>, as opções que restaram são pequenas e as redes estão em Alphaville. O personal a domicílio resolve isso do jeito mais simples: o treino acontece onde você já está.</p>
+<h3>Quase todo condomínio da Aldeia tem uma sala que ninguém usa direito</h3>
+<p>Esteira, halteres, banco, polia. É pouco para quem treina há dez anos e suficiente para os primeiros doze meses de quase todo mundo, desde que exista plano. Nos horários fora do pico, você treina praticamente sozinho, com atenção total do profissional. Escrevi sobre isso em <a href="/blog/academia-em-condominio-como-aproveitar">como aproveitar a academia do condomínio</a>.</p>
+<h3>Privacidade, que na Aldeia pesa</h3>
+<p>Boa parte de quem me procura na região não quer treinar em sala cheia: executivos, pessoas voltando de lesão, quem está começando com muito peso acima e não quer plateia. Em casa, a única pessoa olhando a sua execução é quem foi contratado para isso.</p>
+
+<h2>Para quem o personal a domicílio na Aldeia faz sentido</h2>
+<ul>
+<li><strong>Quem trabalha em Alphaville ou São Paulo</strong> e chega tarde: a sessão acontece às 6h ou às 20h, na sala do condomínio, sem trânsito extra.</li>
+<li><strong>Famílias</strong> que querem treinar no mesmo horário ou em sequência, aproveitando uma única visita do profissional.</li>
+<li><strong>Quem está voltando de lesão ou tem limitação</strong> e precisa de correção a cada repetição, sem improviso.</li>
+<li><strong>Quem já tentou academia em Alphaville e parou</strong> pelo trajeto. Não é falta de disciplina; é logística. O formato muda a logística.</li>
+<li><strong>Pessoas acima de 50 anos</strong> que querem força e equilíbrio com segurança, em ambiente conhecido.</li>
+</ul>
+
+<h2>Equipamento não é barreira</h2>
+<p>Se a casa não tem nada, o treino começa com o peso do corpo, elásticos e halteres ajustáveis que eu levo ou indico. Se o condomínio tem sala, ela cobre a maior parte do trabalho. Se você tem um rack e uma barra na garagem, melhor ainda. O que gera resultado é <strong>progressão de carga, técnica e constância</strong>, e nenhum desses depende de máquina rara. Em <a href="/blog/treino-em-casa-sem-equipamento">treino em casa sem equipamento</a> mostro como se progride mesmo do zero.</p>
+
+<h2>O que verificar antes de contratar</h2>
+<ul>
+<li><strong>Se o profissional já atende na Aldeia.</strong> Quem tem rota na região consegue horário e valor melhores, e conhece as regras de portaria dos condomínios.</li>
+<li><strong>Avaliação inicial estruturada.</strong> Desconfie de quem chega treinando na primeira visita.</li>
+<li><strong>Método de progressão registrado</strong>: cargas, medidas e reavaliações que você consegue ver.</li>
+<li><strong>Regras claras de remarcação, viagem e área de atendimento.</strong> É isso que define o custo real, não o valor da sessão.</li>
+<li><strong>Cadastro no condomínio.</strong> A maioria dos residenciais da Aldeia permite profissional externo mediante cadastro na portaria; confirme com a administração antes da primeira sessão.</li>
+</ul>
+
+<h2>Como é uma sessão na prática</h2>
+<p>Sessões de 50 a 60 minutos: aquecimento direcionado ao que vai ser treinado, bloco principal com correção de execução em tempo real e registro de tudo, para que a semana seguinte sempre evolua. Nos dias sem acompanhamento, você recebe o que fazer sozinho na sala do condomínio, com orientação por mensagem. Quem quer o formato inteiro por conta própria, com plano que se ajusta toda semana, tem a <a href="/consultoria-online">consultoria online</a>.</p>
+
+<h2>Quanto custa</h2>
+<p>O valor depende do local, da frequência semanal e do deslocamento, e na Aldeia o deslocamento pesa mais que em qualquer outra região que atendo. Explico o que muda o preço e como comparar propostas em <a href="/blog/quanto-custa-personal-trainer-aldeia-da-serra">quanto custa personal trainer na Aldeia da Serra</a>. A proposta fechada vem numa conversa de cinco minutos pelo <a href="/contato">WhatsApp</a>.</p>
+
+<h2>O que realmente gera resultado (spoiler: não é o CEP)</h2>
+<p>Sala de casa, salão do condomínio ou academia de Alphaville: o local é ferramenta. Orientação é o que gera resultado. Eu sou o Montinho, atendo a Aldeia da Serra há anos, em casa, no condomínio e nas academias da região de Alphaville, e sei exatamente por que morador da serra para de treinar — e como fazer para não parar. <a href="/contato">Agende uma avaliação</a> ou conheça o atendimento como <a href="/blog/personal-trainer-aldeia-da-serra">personal trainer na Aldeia da Serra</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/quanto-custa-personal-trainer-aldeia-da-serra">Quanto custa personal trainer na Aldeia da Serra</a></li>
+<li><a href="/blog/personal-trainer-a-domicilio-barueri">Personal trainer a domicílio em Barueri</a></li>
+<li><a href="/blog/personal-trainer-a-domicilio-alphaville">Personal trainer a domicílio em Alphaville</a></li>
+<li><a href="/blog/academias-em-aldeia-da-serra">Academias em Aldeia da Serra: guia trecho a trecho</a></li>
+</ul>
+`,
+  },
 ]) as BlogPost[];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
