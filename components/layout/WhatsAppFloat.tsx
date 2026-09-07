@@ -4,6 +4,8 @@ export default function WhatsAppFloat() {
   return (
     <a
       href={getWhatsAppUrl()}
+      data-wa-origem="flutuante"
+      data-cta-id="global:flutuante"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Fale conosco pelo WhatsApp"

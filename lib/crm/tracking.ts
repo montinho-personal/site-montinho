@@ -62,6 +62,32 @@ export function gerarRefCode(aleatorio: () => number = Math.random): string {
 }
 
 /** Acrescenta a referência ao texto pré-preenchido de um link de WhatsApp. */
+/** Texto atual do link do WhatsApp, ou "" se não há. */
+export function textoDoHref(href: string): string {
+  try { return new URL(href).searchParams.get("text") ?? ""; } catch { return ""; }
+}
+
+/** Genérico ou vazio: a frase não diz de onde a pessoa veio, e o clique precisa completar. */
+export function precisaDeContexto(texto: string, padrao: string): boolean {
+  const t = texto.trim();
+  return !t || t === padrao.trim();
+}
+
+export function definirTextoNaUrl(href: string, texto: string): string {
+  try { const u = new URL(href); u.searchParams.set("text", texto); return u.toString(); } catch { return href; }
+}
+
+/** De onde o botão foi clicado: atributo explícito, ou inferido pela estrutura da página. */
+export function inferirOrigemWa(el: Element | null): string {
+  if (!el) return "pagina";
+  const marcado = (el.closest("[data-wa-origem]") as HTMLElement | null)?.dataset.waOrigem;
+  if (marcado) return marcado;
+  if (el.closest("header, nav")) return "menu";
+  if (el.closest("footer")) return "rodape";
+  if (el.closest("article, .prose, [data-artigo]")) return "texto";
+  return "pagina";
+}
+
 export function anexarRefNaUrl(href: string, code: string): string {
   try {
     const u = new URL(href);

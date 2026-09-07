@@ -8,8 +8,10 @@
  * recentes ainda sem lead, quais podem ser o dela.
  *
  * O catálogo abaixo espelha as mensagens em app/consultoria-online/page.tsx,
- * app/personal-trainer/page.tsx, lib/sticky/regras.ts, lib/revisao.ts,
- * lib/ferramentas/pos-resultado.ts e lib/whatsapp.ts. Se uma frase mudar lá
+ * app/personal-trainer/page.tsx, app/consultoria/page.tsx, lib/cta/registry.ts,
+ * lib/sticky/regras.ts, lib/revisao.ts, lib/ferramentas/pos-resultado.ts, as
+ * ferramentas (diagnóstico, rotina, volume, cardápio, mobilidade, Pergunte)
+ * e a mensagem montada no clique em lib/whatsapp.ts. Se uma frase mudar lá
  * e não aqui, o teste em scripts/crm-mensagens-test.ts é quem avisa.
  */
 
@@ -73,7 +75,31 @@ const REGRAS: Regra[] = [
     frase: /^Oi, Montinho! Vim pelo site e queria a revisão gratuita da minha execução\./ },
   { origem: "Ferramenta · depois do resultado", pathPadrao: "^/ferramentas/",
     frase: /^Olá, Montinho! Usei a (.+?) no seu site(?: e meu resultado foi (.+?))?\. (.+)$/, grupos: ["ferramenta", "resultado", "pedido"] },
-  { origem: "Botão padrão do site (cabeçalho, rodapé, home)", pathPadrao: null,
+  { origem: "Botão do site (montado no clique)", pathPadrao: null,
+    frase: /^Olá, Montinho! Estou no seu site, na página «(.+?)», e cliquei no (.+?)\. Queria saber como funciona o acompanhamento\.?$/, grupos: ["titulo", "botao"] },
+  { origem: "Artigo do blog · CTA regional", pathPadrao: "^/blog/", botoes: ["Falar pelo WhatsApp"], servico: "presencial",
+    frase: /^Oi, Montinho! Vim pelo blog e queria saber sobre acompanhamento presencial (?:em|no) (.+?)\.?$/, grupos: ["local"] },
+  { origem: "Página /consultoria · topo", pathPadrao: "^/consultoria$",
+    frase: "Olá! Vi a página de consultoria e quero saber como funciona o acompanhamento." },
+  { origem: "Página /consultoria · card Personal Presencial", pathPadrao: "^/consultoria$", servico: "presencial",
+    frase: "Olá! Tenho interesse no Personal Presencial em Alphaville. Pode me contar mais?" },
+  { origem: "Página /consultoria · card Consultoria Online", pathPadrao: "^/consultoria$", servico: "online",
+    frase: "Olá! Tenho interesse na Consultoria Online. Pode me contar mais sobre como funciona?" },
+  { origem: "Página /consultoria · card Modelo Híbrido", pathPadrao: "^/consultoria$",
+    frase: "Olá! Tenho interesse no Modelo Híbrido (presencial + online). Pode me contar mais?" },
+  { origem: "Diagnóstico Montinho · resultado", pathPadrao: "^/diagnostico",
+    frase: /^Oi, Montinho! Fiz o Diagnóstico Montinho no site\./ },
+  { origem: "Treino para Minha Rotina · resultado", pathPadrao: "rotina",
+    frase: /^Oi, Montinho! Fiz o Treino Para Minha Rotina no seu site\./ },
+  { origem: "Calculadora de Volume · análise", pathPadrao: "volume",
+    frase: /^Oi, Montinho! Analisei meu treino na Calculadora de Volume do seu site/ },
+  { origem: "Pergunte ao Montinho", pathPadrao: "^/pergunte-ao-montinho",
+    frase: /^Oi, Montinho! Vim pelo Pergunte ao Montinho no seu site\./ },
+  { origem: "Monte seu Cardápio · resultado", pathPadrao: "cardapio",
+    frase: /^Oi, Montinho! Montei meu cardápio no seu site\./ },
+  { origem: "Teste de Mobilidade", pathPadrao: "mobilidade",
+    frase: /^Oi,? Montinho! Fiz o teste de mobilidade/ },
+  { origem: "Botão padrão do site (frase genérica, sem JavaScript)", pathPadrao: null,
     frase: "Olá, Montinho! Vim pelo seu site e tenho interesse no seu acompanhamento. Gostaria de saber como funciona e qual opção é mais indicada para mim." },
 ];
 
@@ -114,10 +140,15 @@ export function identificarMensagem(texto: string): Identificacao {
 }
 
 /** Um clique registrado no site pode ser o desta mensagem? */
-export function handoffCompativel(h: { page_path: string | null; cta_id: string | null }, id: Identificacao): boolean {
+export function handoffCompativel(h: { page_path: string | null; cta_id: string | null; page_title?: string | null }, id: Identificacao): boolean {
   if (!id.origem) return false;
   if (id.pathPadrao && !(h.page_path && new RegExp(id.pathPadrao).test(h.page_path))) return false;
   if (id.botoes.length && h.cta_id && !id.botoes.some((b) => h.cta_id === `text:${b}` || h.cta_id === `aria:${b}`)) return false;
+  // Mensagem montada no clique carrega o título da página: o clique precisa ser da mesma página.
+  if (id.extra.titulo && !id.pathPadrao && h.page_title != null) {
+    const semMarca = (t: string) => t.replace(/\s*[|—–-]\s*Montinho(?: Personal Trainer)?\s*$/i, "").replace(/\s+/g, " ").trim().toLowerCase();
+    if (!semMarca(h.page_title).includes(semMarca(id.extra.titulo))) return false;
+  }
   return true;
 }
 
@@ -127,6 +158,22 @@ export function detalheDaIdentificacao(id: Identificacao): string | null {
   const partes = [id.origem];
   if (id.extra.local) partes.push(id.extra.local);
   if (id.extra.titulo) partes.push(`"${id.extra.titulo}"`);
+  if (id.extra.botao) partes.push(id.extra.botao);
   if (id.extra.ferramenta) partes.push(id.extra.ferramenta);
   return partes.join(" · ");
+}
+
+/**
+ * Para o teste que espelha o site: um começo de frase (cortado onde o site
+ * interpola uma variável) pertence a alguma regra do catálogo?
+ */
+export function reconheceInicio(prefixo: string): boolean {
+  const p = normalizar(prefixo);
+  if (!p) return false;
+  return REGRAS.some((r) => {
+    const fixo = typeof r.frase === "string"
+      ? normalizar(r.frase)
+      : normalizar(r.frase.source.replace(/^\^/, "").split("(")[0].replace(/\\(.)/g, "$1"));
+    return fixo.startsWith(p) || p.startsWith(fixo);
+  });
 }

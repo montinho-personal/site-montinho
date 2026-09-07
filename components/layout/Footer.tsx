@@ -135,6 +135,8 @@ export default function Footer() {
             <div className="flex flex-col gap-4">
               <a
                 href={getWhatsAppUrl()}
+                data-wa-origem="rodape"
+                data-cta-id="global:rodape"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-200 group"

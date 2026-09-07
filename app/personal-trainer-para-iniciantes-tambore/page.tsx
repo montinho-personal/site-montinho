@@ -98,7 +98,7 @@ export default function PersonalTrainerIniciantesTambore() {
             O início do treino é a fase mais importante — e a mais negligenciada. Com acompanhamento profissional desde o começo no Tamboré, você constrói base técnica sólida, evita lesões e progride mais rápido do que tentando sozinho.
           </p>
           <a
-            href={getWhatsAppUrl()}
+            href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="personal-trainer-para-iniciantes-tambore:topo"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
@@ -225,7 +225,7 @@ export default function PersonalTrainerIniciantesTambore() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={getWhatsAppUrl()}
+              href={getWhatsAppUrl()} data-wa-origem="fim" data-cta-id="personal-trainer-para-iniciantes-tambore:fim"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
