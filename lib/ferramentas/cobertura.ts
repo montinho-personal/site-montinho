@@ -41,6 +41,12 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  "personal-trainer-a-domicilio-santana-de-parnaiba":
+    "Página de serviço regional. A decisão do leitor é contratar ou não; o que ele precisa é saber como funciona e o que verificar, não um número.",
+
+  "personal-trainer-para-emagrecer-alphaville":
+    "Página de serviço. A conta que o leitor poderia querer (déficit, gasto) já mora nos artigos linkados que carregam as calculadoras; aqui a decisão é contratar, e embutir calculadora numa página comercial dilui as duas coisas.",
+
   "academia-24-horas-santana-de-parnaiba":
     "Guia de onde treinar fora de hora numa cidade específica. O leitor sai com um endereço e uma pergunta para a recepção, não com uma conta.",
 
