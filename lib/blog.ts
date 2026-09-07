@@ -100643,8 +100643,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>E a saída seria pelo mesmo caminho, na direção contrária: déficits moderados, repetidos por meses, com paciência de quem entende a matemática. Foi exatamente assim que os 40kg saíram — e não voltaram. Essa trajetória completa está em <a href="/minha-historia">minha história</a>.</p>
 <p>Se você quer aplicar essa matemática com um plano feito para o seu corpo e a sua rotina — com ajustes conforme o gasto muda —, é isso que faço na <a href="/consultoria">consultoria online</a>.</p>
 
-<p>Da matemática à prática: veja o processo completo de perda de gordura no tutorial:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>Da matemática à prática — no vídeo abaixo, do meu canal:</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/nEhysMtPPVw?rel=0" title="Perda de gordura na prática — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
