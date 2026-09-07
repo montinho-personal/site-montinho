@@ -16,6 +16,8 @@ import { exigirAdmin, exigirEscrita, exigirUsuario } from "@/lib/crm/auth";
 import { supabaseServer } from "@/lib/crm/supabase/server";
 import { gerarRefCode } from "@/lib/crm/tracking";
 import { inferirFonte } from "@/lib/crm/metricas";
+import { identificarMensagem, handoffCompativel, detalheDaIdentificacao, type Identificacao } from "@/lib/crm/mensagens";
+import type { Handoff } from "@/lib/crm/tipos";
 
 const REVALIDAR = ["/crm", "/crm/leads", "/crm/pipeline", "/crm/clientes", "/crm/follow-ups", "/crm/agenda", "/crm/analytics", "/crm/indicacoes", "/crm/handoffs"];
 function revalidarTudo(extra: string[] = []) { for (const p of [...REVALIDAR, ...extra]) revalidatePath(p, "layout"); }
@@ -42,6 +44,48 @@ async function etapaPorCodigo(sb: any, pipelineId: string, code: string) {
 // ---------------------------------------------------------------------------
 // Contato + Lead
 // ---------------------------------------------------------------------------
+/** O que o formulário de lead mostra sobre um clique, sem expor o registro inteiro. */
+export interface ResumoHandoff {
+  id: string; ref_code: string; created_at: string; page_path: string | null; cta_id: string | null; device: string | null;
+  source_code: string | null; utm_campaign: string | null; utm_content: string | null; servico_interesse: string | null; ja_ligado: boolean;
+}
+export interface ResultadoOrigem {
+  ref: string | null;
+  identificacao: Identificacao;
+  detalhe: string | null;
+  /** O clique do Ref informado, se existe. */
+  handoff: ResumoHandoff | null;
+  /** Sem Ref: cliques recentes, ainda sem lead, compatíveis com a frase. */
+  candidatos: ResumoHandoff[];
+}
+const resumo = (h: Handoff): ResumoHandoff => ({
+  id: h.id, ref_code: h.ref_code, created_at: h.created_at, page_path: h.page_path, cta_id: h.cta_id, device: h.device,
+  source_code: h.source_code, utm_campaign: h.utm_campaign, utm_content: h.utm_content, servico_interesse: h.servico_interesse, ja_ligado: !!h.lead_id,
+});
+
+/**
+ * Identifica de onde veio uma mensagem: pelo Ref, quando veio; pela frase,
+ * quando a pessoa apagou o código. Com a frase, devolve os cliques dos
+ * últimos 14 dias ainda sem lead que casam com página e botão — a pessoa
+ * escolhe o certo pelo horário.
+ */
+export async function identificarOrigem(mensagem: string, refDigitado: string | null): Promise<ResultadoOrigem> {
+  await exigirEscrita();
+  const sb = await supabaseServer();
+  const identificacao = identificarMensagem(mensagem ?? "");
+  const ref = (refDigitado?.trim().toUpperCase() || identificacao.ref) ?? null;
+  const detalhe = detalheDaIdentificacao(identificacao);
+  if (ref && /^[A-Z0-9]{5}$/.test(ref)) {
+    const { data } = await sb.from("crm_whatsapp_handoffs").select("*").eq("ref_code", ref).maybeSingle();
+    if (data) return { ref, identificacao, detalhe, handoff: resumo(data), candidatos: [] };
+  }
+  if (!identificacao.origem) return { ref, identificacao, detalhe, handoff: null, candidatos: [] };
+  const desde = new Date(Date.now() - 14 * 86400000).toISOString();
+  const { data } = await sb.from("crm_whatsapp_handoffs").select("*").is("lead_id", null).gte("created_at", desde).order("created_at", { ascending: false }).limit(200);
+  const candidatos = (data ?? []).filter((h) => handoffCompativel(h, identificacao)).slice(0, 6).map(resumo);
+  return { ref, identificacao, detalhe, handoff: null, candidatos };
+}
+
 export async function criarLead(fd: FormData) {
   const u = await exigirEscrita();
   const sb = await supabaseServer();
@@ -100,7 +144,7 @@ export async function criarLead(fd: FormData) {
   } else if (sourceCode !== "unknown") {
     await sb.from("crm_attribution_touches").insert({ contact_id: contactId, occurred_at: lead.created_at, source_code: sourceCode, campaign: s(fd, "source_detail"), confidence, origem_registro: "manual" });
   }
-  await atividade(sb, u.id, { contact_id: contactId, lead_id: lead.id, opportunity_id: opp.id, tipo: "lead_created", descricao: `Lead criado (${sourceCode})`, ocorreu_em: lead.created_at });
+  await atividade(sb, u.id, { contact_id: contactId, lead_id: lead.id, opportunity_id: opp.id, tipo: "lead_created", descricao: `Lead criado (${sourceCode})`, ocorreu_em: lead.created_at, metadata: s(fd, "mensagem_whatsapp") ? { mensagem_whatsapp: s(fd, "mensagem_whatsapp") } : undefined });
   if (indicadorId) await atividade(sb, u.id, { contact_id: indicadorId, tipo: "referral", descricao: `Indicou ${nome}`, metadata: { lead_id: lead.id } });
   revalidarTudo();
   redirect(`/crm/leads/${lead.id}`);
