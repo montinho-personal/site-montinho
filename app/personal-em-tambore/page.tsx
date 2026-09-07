@@ -98,7 +98,7 @@ export default function PersonalEmTambore() {
             Tamboré não precisa de mais uma ficha genérica. Precisa de um profissional que entenda a rotina de quem vive aqui e monte um protocolo que funcione de verdade — dentro da agenda real, não da agenda ideal.
           </p>
           <a
-            href={getWhatsAppUrl()}
+            href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="personal-em-tambore:topo"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
@@ -235,7 +235,7 @@ export default function PersonalEmTambore() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={getWhatsAppUrl()}
+              href={getWhatsAppUrl()} data-wa-origem="fim" data-cta-id="personal-em-tambore:fim"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"

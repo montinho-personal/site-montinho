@@ -9,7 +9,7 @@
  * frase fixa de lá é reconhecida aqui.
  */
 import * as fs from "fs";
-import { identificarMensagem, extrairRef, handoffCompativel, detalheDaIdentificacao } from "../lib/crm/mensagens";
+import { identificarMensagem, extrairRef, handoffCompativel, detalheDaIdentificacao, reconheceInicio } from "../lib/crm/mensagens";
 
 let falhas = 0;
 const ok = (nome: string, cond: boolean, detalhe = "") => {
@@ -48,6 +48,16 @@ const nada = identificarMensagem("oi, quanto custa?");
 ok("texto livre não é reconhecido (e não erra)", nada.origem === null && nada.ref === null);
 ok("string vazia não quebra", identificarMensagem("").origem === null);
 
+const ctx = identificarMensagem("Olá, Montinho! Estou no seu site, na página «Personal Trainer no Tamboré», e cliquei no botão do topo. Queria saber como funciona o acompanhamento. Ref: 8BXWH");
+ok("mensagem montada no clique: título, botão e Ref", ctx.extra.titulo === "Personal Trainer no Tamboré" && ctx.extra.botao === "botão do topo" && ctx.ref === "8BXWH");
+const ctxMenu = identificarMensagem("Olá, Montinho! Estou no seu site, na página «Como Emagrecer 10 kg», e cliquei no menu. Queria saber como funciona o acompanhamento.");
+ok("menu de um artigo", ctxMenu.extra.botao === "menu" && /clique/.test(ctxMenu.origem ?? ""));
+const reg = identificarMensagem("Oi, Montinho! Vim pelo blog e queria saber sobre acompanhamento presencial no Tamboré.");
+ok("CTA regional do blog extrai o local", reg.extra.local === "Tamboré" && reg.pathPadrao === "^/blog/");
+ok("card da /consultoria: online", identificarMensagem("Olá! Tenho interesse na Consultoria Online. Pode me contar mais sobre como funciona?").servico === "online");
+ok("diagnóstico com resultado no corpo", /Diagnóstico/.test(identificarMensagem("Oi, Montinho! Fiz o Diagnóstico Montinho no site.\nMeu perfil: Recomeço").origem ?? ""));
+ok("mobilidade com ou sem vírgula", /Mobilidade/.test(identificarMensagem("Oi Montinho! Fiz o teste de mobilidade no seu site e queria sua ajuda.").origem ?? ""));
+
 bloco("3. COMPATIBILIDADE COM CLIQUES REGISTRADOS");
 const h = (page_path: string, cta_id: string | null) => ({ page_path, cta_id });
 ok("hero casa com o botão do topo na consultoria", handoffCompativel(h("/consultoria-online", "text:Falar no WhatsApp agora"), hero));
@@ -57,16 +67,25 @@ ok("clique sem cta_id ainda casa pela página", handoffCompativel(h("/consultori
 ok("botão padrão casa com qualquer página", handoffCompativel(h("/blog/x", "text:WhatsApp"), padrao));
 ok("mensagem não reconhecida não casa com nada", !handoffCompativel(h("/consultoria-online", null), nada));
 ok("detalhe legível para o lead", detalheDaIdentificacao(local) === "Página local · barra fixa · Santana de Parnaíba");
+const hT = (page_path: string, page_title: string) => ({ page_path, cta_id: null, page_title });
+ok("mensagem do clique casa pelo título da página", handoffCompativel(hT("/personal-trainer-tambore", "Personal Trainer no Tamboré | Montinho Personal Trainer"), ctx));
+ok("e não casa com outra página", !handoffCompativel(hT("/personal-trainer-barueri", "Personal Trainer em Barueri | Montinho"), ctx));
+ok("detalhe da mensagem do clique traz título e botão", detalheDaIdentificacao(ctx) === 'Botão do site (montado no clique) · "Personal Trainer no Tamboré" · botão do topo');
 
 bloco("4. O CATÁLOGO ESPELHA O SITE");
-const fontes = ["app/consultoria-online/page.tsx", "app/personal-trainer/page.tsx", "lib/sticky/regras.ts", "lib/whatsapp.ts"];
+const fontes = [
+  "app/consultoria-online/page.tsx", "app/personal-trainer/page.tsx", "app/consultoria/page.tsx", "lib/sticky/regras.ts", "lib/whatsapp.ts",
+  "lib/cta/registry.ts", "lib/revisao.ts", "lib/diagnostico.ts", "lib/rotina/engine.ts", "lib/treino/volume.ts", "lib/ask/guards.ts",
+  "lib/cardapio/motor.ts", "components/mobilidade/TesteMobilidade.tsx",
+];
 const frasesFixas: string[] = [];
 for (const f of fontes) {
   const src = fs.readFileSync(f, "utf8");
-  for (const m of src.matchAll(/"(Olá, Montinho![^"$]*?)"/g)) frasesFixas.push(m[1]);
+  // Frases fixas e o começo fixo das frases com variável (o teste para no primeiro ${).
+  for (const m of src.matchAll(/["`]((?:Olá|Oi),? Montinho!|Olá!)([^"`$\n]*)/g)) frasesFixas.push((m[1] + m[2]).replace(/\\n/g, " ").trim());
 }
-ok(`o site tem frases fixas para conferir (${frasesFixas.length})`, frasesFixas.length >= 10);
-const naoReconhecidas = frasesFixas.filter((f) => !identificarMensagem(f).origem);
+ok(`o site tem frases fixas para conferir (${frasesFixas.length})`, frasesFixas.length >= 25, String(frasesFixas.length));
+const naoReconhecidas = frasesFixas.filter((f) => !identificarMensagem(f).origem && !reconheceInicio(f));
 ok("toda frase fixa do site é reconhecida pelo catálogo", naoReconhecidas.length === 0, naoReconhecidas.join(" | "));
 
 console.log("\n" + "=".repeat(64));

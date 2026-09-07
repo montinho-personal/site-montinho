@@ -5,7 +5,9 @@ import { usePathname } from "next/navigation";
 import {
   CHAVE_AID, CHAVE_ATTR, CHAVE_REF, CHAVE_SID, CONSENT_KEY, anexarRefNaUrl, ehLinkWhatsApp, gerarRefCode, identificarCta,
   inferirServicoDaPagina, lerParametros, temEvidenciaDeOrigem, type ToqueNavegador,
+  textoDoHref, precisaDeContexto, definirTextoNaUrl, inferirOrigemWa,
 } from "@/lib/crm/tracking";
+import { DEFAULT_MESSAGE, mensagemContextual } from "@/lib/whatsapp";
 
 function consentimento(): boolean | null {
   try {
@@ -95,6 +97,10 @@ export default function HandoffTracker() {
        * de captura e não pode registrar o mesmo clique duas vezes.
        */
       a.dataset.crmRef = code;
+      const textoAtual = textoDoHref(a.href);
+      if (precisaDeContexto(textoAtual, DEFAULT_MESSAGE)) {
+        a.href = definirTextoNaUrl(a.href, mensagemContextual(inferirOrigemWa(a), document.title));
+      }
       a.href = anexarRefNaUrl(a.href, code);
       const body = JSON.stringify(payload);
       let enviado = false;

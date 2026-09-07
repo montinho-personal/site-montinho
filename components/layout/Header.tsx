@@ -110,6 +110,8 @@ export default function Header() {
 
             <a
               href={getWhatsAppUrl()}
+              data-wa-origem="menu"
+              data-cta-id="global:menu"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-black px-5 py-2.5 text-sm font-semibold tracking-wide hover:bg-gray-100 transition-colors duration-200"
@@ -255,6 +257,8 @@ export default function Header() {
             </div>
             <a
               href={getWhatsAppUrl()}
+              data-wa-origem="menu-mobile"
+              data-cta-id="global:menu-mobile"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
