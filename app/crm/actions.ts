@@ -16,7 +16,7 @@ import { exigirAdmin, exigirEscrita, exigirUsuario } from "@/lib/crm/auth";
 import { supabaseServer } from "@/lib/crm/supabase/server";
 import { gerarRefCode } from "@/lib/crm/tracking";
 import { inferirFonte } from "@/lib/crm/metricas";
-import { identificarMensagem, handoffCompativel, detalheDaIdentificacao, type Identificacao } from "@/lib/crm/mensagens";
+import { identificarMensagem, handoffCompativel, detalheDaIdentificacao, limparColagem, type Identificacao } from "@/lib/crm/mensagens";
 import type { Handoff } from "@/lib/crm/tipos";
 
 const REVALIDAR = ["/crm", "/crm/leads", "/crm/pipeline", "/crm/clientes", "/crm/follow-ups", "/crm/agenda", "/crm/analytics", "/crm/indicacoes", "/crm/handoffs"];
@@ -73,7 +73,7 @@ export async function identificarOrigem(mensagem: string, refDigitado: string | 
   await exigirEscrita();
   const sb = await supabaseServer();
   const identificacao = identificarMensagem(mensagem ?? "");
-  const ref = (refDigitado?.trim().toUpperCase() || identificacao.ref) ?? null;
+  const ref = (limparColagem(refDigitado ?? "").toUpperCase() || identificacao.ref) ?? null;
   const detalhe = detalheDaIdentificacao(identificacao);
   if (ref && /^[A-Z0-9]{5}$/.test(ref)) {
     const { data } = await sb.from("crm_whatsapp_handoffs").select("*").eq("ref_code", ref).maybeSingle();
@@ -91,7 +91,7 @@ export async function criarLead(fd: FormData) {
   const sb = await supabaseServer();
   const nome = s(fd, "nome"); if (!nome) throw new Error("Nome é obrigatório.");
   let contactId = s(fd, "contact_id");
-  const refCode = s(fd, "ref_code")?.toUpperCase() ?? null;
+  const refCode = limparColagem(s(fd, "ref_code") ?? "").toUpperCase() || null;
   const indicadorId = s(fd, "referred_by_contact_id");
   if (!contactId) {
     const { data, error } = await sb.from("crm_contacts").insert({

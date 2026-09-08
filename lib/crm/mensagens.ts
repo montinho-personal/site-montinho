@@ -105,14 +105,37 @@ const REGRAS: Regra[] = [
 
 const REF = /\bRef:?\s*([A-Z0-9]{5})\b/i;
 
+/**
+ * Marcas invisíveis que sobrevivem ao copiar e colar.
+ *
+ * Isto não é preciosismo: o WhatsApp do iPhone envolve trechos da mensagem
+ * em FSI/PDI (U+2066–U+2069) para controlar direção de texto, e esses
+ * caracteres viajam junto quando a pessoa copia a conversa. O resultado é
+ * uma mensagem que parece idêntica na tela e não casa com nenhuma regra —
+ * foi exatamente o que aconteceu com o Ref G284B, em 08/09/2026, que
+ * existia no banco e o formulário não achava.
+ *
+ * A mesma limpeza resolve o espaço não separável e o zero-width space, que
+ * conseguem partir o código de cinco caracteres no meio.
+ */
+const INVISIVEIS = /[\u00AD\u200B-\u200F\u2028\u2029\u202A-\u202E\u2060-\u2064\u2066-\u206F\uFEFF]/g;
+
+/** Cabeçalho de mensagem copiada com data e autor: "[17:13, 08/09/2026] Fulano:". */
+const CITACAO = /^\[?(?:\d{1,2}\/\d{1,2}\/\d{2,4},?\s*)?\d{1,2}:\d{2}(?::\d{2})?(?:\s*,\s*\d{1,2}\/\d{1,2}\/\d{2,4})?\]?\s*[^:\n]{1,60}:\s*/;
+
+/** Tira o que o aplicativo acrescentou, mantendo o que a pessoa leu. */
+export function limparColagem(t: string): string {
+  return t.replace(INVISIVEIS, "").replace(/\u00A0/g, " ").replace(CITACAO, "").trim();
+}
+
 export function extrairRef(texto: string): string | null {
-  const m = texto.match(REF);
+  const m = limparColagem(texto).match(REF);
   return m ? m[1].toUpperCase() : null;
 }
 
 /** Só espaços e aspas variam de um celular para outro; o resto é o que o site escreveu. */
 function normalizar(t: string): string {
-  return t.replace(REF, "").replace(/[“”]/g, '"').replace(/[‘’]/g, "'").replace(/\s+/g, " ").trim();
+  return limparColagem(t).replace(REF, "").replace(/[“”]/g, '"').replace(/[‘’]/g, "'").replace(/\s+/g, " ").trim();
 }
 
 export function identificarMensagem(texto: string): Identificacao {
