@@ -41,6 +41,12 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  "supino-reto-vs-supino-inclinado":
+    "A dúvida do leitor é qual exercício escolher e em que ângulo, não quanto peso usar. A calculadora de 1RM responde a segunda pergunta, e o registro dela é explícito sobre entrar só onde a pergunta é a carga — os artigos de técnica de supino já têm o link contextual.",
+
+  "agachamento-vs-leg-press":
+    "Mesma razão do par de supino: a decisão é qual exercício faz sentido para o corpo e a limitação de quem lê. Nenhuma ferramenta do site compara exercícios, e a de 1RM aqui seria a disponível, não a certa.",
+
   "personal-trainer-a-domicilio-santana-de-parnaiba":
     "Página de serviço regional. A decisão do leitor é contratar ou não; o que ele precisa é saber como funciona e o que verificar, não um número.",
 

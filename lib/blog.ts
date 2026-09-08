@@ -116287,6 +116287,206 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 `,
   },
+  {
+    slug: "supino-reto-vs-supino-inclinado",
+    title: "Supino Reto vs Supino Inclinado: Qual Constrói Mais Peito?",
+    metaTitle: "Supino Reto ou Inclinado: Qual Pega Mais Peito?",
+    metaDescription: "O ângulo do banco decide qual porção do peitoral trabalha. Veja o que a eletromiografia mostra sobre 30 graus, por que 45 rende menos e como usar os dois.",
+    excerpt: "Reto e inclinado treinam o mesmo músculo em proporções diferentes. A eletromiografia mostra que 30 graus rende mais peito superior que 45 — e por que quase todo mundo inclina demais.",
+    category: "Treinamento",
+    date: "2026-09-08",
+    updatedAt: "2026-09-08",
+    readTime: "7 min",
+    author: "Montinho",
+    tags: ["supino reto", "supino inclinado", "peito", "peitoral", "técnica", "musculação", "hipertrofia"],
+    faq: [
+      { question: "Supino inclinado pega mais peito superior que o reto?", answer: "Pega. A eletromiografia mostra maior atividade da porção clavicular do peitoral no banco inclinado — com um detalhe importante: a 30 graus o recrutamento é maior do que a 45, onde o deltoide anterior passa a assumir boa parte do trabalho." },
+      { question: "Qual é o melhor ângulo para o supino inclinado?", answer: "Cerca de 30 graus. No estudo de Rodríguez-Ridao e colaboradores (2020), essa foi a inclinação com maior ativação da porção clavicular, acima de 15 e de 45 graus. Bancos muito altos transformam o exercício em desenvolvimento de ombro." },
+      { question: "Posso fazer só o inclinado e abandonar o reto?", answer: "Pode, mas perde. O banco reto trabalha a porção esternocostal, que é a maior parte do peitoral, e permite mais carga absoluta. Quem faz só um dos dois por anos costuma desenvolver o peito de forma desequilibrada." },
+      { question: "Em que ordem fazer os dois no treino de peito?", answer: "Reto primeiro, com o músculo descansado e a maior carga da sessão; inclinado a 30 graus em segundo, com amplitude completa. Se o peito superior é a sua prioridade declarada, inverta a ordem por um ciclo — o exercício feito descansado é o que mais progride." },
+      { question: "Supino inclinado com barra ou com halteres?", answer: "Halteres dão trajetória livre e costumam ser mais confortáveis para quem tem ombro sensível, além de corrigir assimetria entre os lados. A barra permite mais carga. Os dois funcionam — a escolha é de conforto articular e de disponibilidade." },
+    ],
+    content: `<p>Supino reto ou supino inclinado — qual constrói mais peito? A pergunta aparece toda semana na sala de musculação, e a resposta honesta não é "um dos dois". É que os dois treinam <strong>o mesmo músculo em proporções diferentes</strong>, e a escolha depende de qual parte do peitoral está atrasada no seu corpo e de quanto peso você ainda consegue mover com técnica.</p>
+
+<h2>A diferença fundamental: o ângulo muda a divisão do trabalho</h2>
+<p>O peitoral maior não é um músculo só. Ele tem duas porções com origens diferentes: a <strong>clavicular</strong> (o "peito superior", que sai da clavícula) e a <strong>esternocostal</strong> (a porção média e inferior, que sai do esterno e das costelas). As fibras das duas puxam o braço em direções ligeiramente diferentes, e é o ângulo do banco que decide qual delas trabalha mais.</p>
+<ul>
+<li><strong>Banco reto (0°):</strong> distribui o esforço pela porção esternocostal, que é a maior parte do peitoral. É onde você move mais carga.</li>
+<li><strong>Banco inclinado (30° a 45°):</strong> desloca parte do trabalho para a porção clavicular e recruta mais o deltoide anterior — o ombro passa a ajudar mais.</li>
+</ul>
+<p>Repare no detalhe que quase ninguém observa: quanto mais você inclina o banco, mais o exercício vira um desenvolvimento de ombro. Existe um ponto em que você não está mais treinando peito superior — está treinando ombro com o peito ajudando.</p>
+
+<h2>O que a eletromiografia mostra</h2>
+<p>Um estudo publicado no <em>International Journal of Environmental Research and Public Health</em> (Rodríguez-Ridao e colaboradores, 2020) testou cinco inclinações de banco — de declinado a 45° — medindo a atividade elétrica do peitoral e do deltoide anterior. O padrão encontrado é o que orienta a prática:</p>
+<ul>
+<li>A porção <strong>clavicular</strong> respondeu mais na inclinação de <strong>30°</strong> do que nas demais, inclusive mais do que a 45°.</li>
+<li>A porção <strong>esternocostal</strong> respondeu mais no banco <strong>reto e declinado</strong>.</li>
+<li>A atividade do <strong>deltoide anterior</strong> subiu junto com a inclinação — quanto mais alto o banco, mais o ombro entra.</li>
+</ul>
+<p>Um trabalho mais antigo, de Barnett e colaboradores (1995), já apontava a mesma direção: inclinar aumenta a participação da porção clavicular. Duas décadas depois, com metodologia melhor, a conclusão se manteve.</p>
+<p>A leitura prática é direta: <strong>se o seu objetivo é peito superior, 30° rende mais que 45°</strong>. Aquele banco quase sentado que você vê na academia está entregando menos peito e mais ombro do que a pessoa imagina.</p>
+
+<h2>Técnica do supino reto</h2>
+<p><strong>Setup:</strong> escápulas retraídas e deprimidas contra o banco, pés firmes no chão, leve arco natural na lombar — sem levantar o quadril.</p>
+<ol>
+<li>Pegada um pouco mais aberta que a largura dos ombros.</li>
+<li>Desça a barra controlada até a linha do mamilo ou pouco abaixo, cotovelos a cerca de 45° do tronco.</li>
+<li>Toque o peito sem quicar. A barra pousa, não bate.</li>
+<li>Empurre pensando em aproximar os cotovelos um do outro, não em empurrar o teto.</li>
+</ol>
+<p>O detalhe está em <a href="/blog/como-fazer-supino-reto">como fazer supino reto</a>, com os erros mais comuns.</p>
+
+<h2>Técnica do supino inclinado</h2>
+<p><strong>Setup:</strong> banco entre 30° e 45°, com preferência pelos 30°. Mesma retração escapular do reto.</p>
+<ol>
+<li>Desça a barra ou os halteres na direção da parte alta do peito, próximo à clavícula — não no meio do peito.</li>
+<li>Não deixe os cotovelos abrirem a 90°: isso joga carga para a articulação do ombro.</li>
+<li>Amplitude completa importa mais aqui do que carga alta, porque a alavanca é menos favorável.</li>
+</ol>
+<p>Se você nunca ajustou o banco com critério, vale ler <a href="/blog/como-fazer-supino-inclinado">como fazer supino inclinado</a>.</p>
+
+<h2>Análise por objetivo</h2>
+<table>
+<tr><th>Objetivo</th><th>Melhor escolha</th><th>Motivo</th></tr>
+<tr><td>Força máxima de empurrar</td><td>Supino reto</td><td>Alavanca mais favorável, mais carga absoluta</td></tr>
+<tr><td>Peito superior atrasado</td><td>Inclinado a 30°</td><td>Maior recrutamento da porção clavicular</td></tr>
+<tr><td>Volume total de peitoral</td><td>Reto</td><td>Trabalha a maior porção do músculo</td></tr>
+<tr><td>Ombro sensível ou com histórico de dor</td><td>Inclinado com halteres</td><td>Trajetória livre, cada braço acha o próprio caminho</td></tr>
+<tr><td>Iniciante</td><td>Reto</td><td>Padrão motor mais simples de aprender</td></tr>
+</table>
+
+<h2>Mitos e verdades</h2>
+<p><strong>Mito: o inclinado é sempre superior porque "todo mundo tem peito superior atrasado".</strong><br>
+Nem todo mundo. Quem tem clavícula mais alta e insercão favorável desenvolve a parte de cima sem esforço extra. Olhe o seu peito no espelho, de perfil, antes de copiar a rotina de outra pessoa.</p>
+<p><strong>Mito: o supino reto trabalha só a parte de baixo do peito.</strong><br>
+Ele trabalha o peitoral inteiro — só que com maior ênfase na porção esternocostal, que é a maior. A porção clavicular participa dos dois exercícios, em proporção diferente.</p>
+<p><strong>Mito: quanto mais inclinado, mais peito superior.</strong><br>
+É a crença que o estudo de 2020 desmonta com clareza: aos 45° a porção clavicular já rende menos que aos 30°, e o ombro assume o que sobra.</p>
+
+<h2>Como usar os dois no mesmo treino</h2>
+<p>Não escolha. Sequencie.</p>
+<ol>
+<li><strong>Supino reto</strong> como primeiro exercício, com o músculo descansado e a carga mais alta da sessão.</li>
+<li><strong>Supino inclinado a 30°</strong> em segundo, com carga menor e amplitude completa.</li>
+<li><strong>Isolamento</strong> — crucifixo ou <a href="/blog/crossover-vs-crucifixo">crossover</a> — para fechar.</li>
+</ol>
+<p>Se o peito superior é a sua prioridade declarada, inverta a ordem por um ciclo: inclinado primeiro, reto depois. O exercício que você faz descansado é o que mais progride. É a mesma lógica que uso para montar <a href="/blog/treino-de-peito-hipertrofia">treino de peito para hipertrofia</a>.</p>
+
+<h2>Conclusão</h2>
+<p>Supino reto e supino inclinado não competem — dividem tarefas. O reto é o exercício de força e de volume total do peitoral. O inclinado, a 30°, é a ferramenta para a porção clavicular. Quem faz só um dos dois por anos costuma acabar com um peito desequilibrado, e quase sempre é o de cima que fica para trás.</p>
+<p>Monto treinos de peito com progressão registrada para alunos em Alphaville, Barueri e Santana de Parnaíba, e para o Brasil inteiro pela <a href="/consultoria-online">consultoria online</a>. Se você quer parar de decidir isso no chute, <a href="/contato">agende uma avaliação</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/crossover-vs-crucifixo">Crossover vs crucifixo: qual é melhor para o peito?</a></li>
+<li><a href="/blog/como-fazer-supino-reto">Como fazer supino reto corretamente</a></li>
+<li><a href="/blog/como-fazer-supino-inclinado">Como fazer supino inclinado</a></li>
+<li><a href="/blog/treino-de-peito-hipertrofia">Treino de peito para hipertrofia</a></li>
+</ul>
+
+<h2>Referências</h2>
+<ul>
+<li>Rodríguez-Ridao D, Antequera-Vique JA, Martín-Fuentes I, Muyor JM. Effect of five bench inclinations on the electromyographic activity of the pectoralis major, anterior deltoid, and triceps brachii during the bench press exercise. International Journal of Environmental Research and Public Health, 2020.</li>
+<li>Barnett C, Kippers V, Turner P. Effects of variations of the bench press exercise on the EMG activity of five shoulder muscles. Journal of Strength and Conditioning Research, 1995.</li>
+</ul>
+`,
+  },
+  {
+    slug: "agachamento-vs-leg-press",
+    title: "Agachamento vs Leg Press: Qual é Melhor para a Perna?",
+    metaTitle: "Agachamento ou Leg Press: Qual é Melhor para a Perna?",
+    metaDescription: "Um exige que você sustente a carga, o outro sustenta por você. Veja o que muda em músculos, risco e resultado — e como usar os dois na mesma semana.",
+    excerpt: "No agachamento você sustenta a carga; no leg press a máquina sustenta por você. Essa diferença muda quais músculos entram, quanto peso você move e o que sobra de resultado fora da academia.",
+    category: "Treinamento",
+    date: "2026-09-08",
+    updatedAt: "2026-09-08",
+    readTime: "8 min",
+    author: "Montinho",
+    tags: ["agachamento", "leg press", "perna", "quadríceps", "glúteo", "técnica", "musculação"],
+    faq: [
+      { question: "Agachamento é melhor que leg press?", answer: "É mais completo: recruta glúteo, posterior de coxa e todo o cinturão do tronco, além do quadríceps, e carrega o esqueleto no eixo. O leg press é melhor para acumular volume de quadríceps com segurança e para quem tem restrição lombar. Perna boa costuma ter os dois na semana." },
+      { question: "Dá para ter perna grande só com leg press?", answer: "Dá. Hipertrofia responde a carga, esforço próximo da falha e volume ao longo do tempo, e o leg press entrega os três. O que se perde sem agachar não é tamanho: é glúteo, core, equilíbrio e transferência para o dia a dia." },
+      { question: "Leg press é mais seguro que agachamento?", answer: "Não automaticamente. O erro mais comum do leg press é descer além do que o quadril permite e arredondar a lombar contra o encosto com centenas de quilos — exatamente a região que a máquina deveria poupar. Os dois são seguros com técnica e perigosos sem." },
+      { question: "A posição dos pés no leg press muda alguma coisa?", answer: "Muda. Pés mais altos na plataforma aumentam a participação de glúteo e posterior de coxa; pés mais baixos concentram no quadríceps. Ajuste conforme o que você quer enfatizar, sem sair da amplitude que a sua mobilidade permite." },
+      { question: "Qual fazer primeiro no treino de perna?", answer: "Agachamento primeiro, com o corpo descansado e a técnica intacta, porque é o que exige mais coordenação. Leg press depois, para acumular volume de quadríceps sem depender do tronco, que já está fatigado." },
+    ],
+    content: `<p>Agachamento ou leg press — qual constrói mais perna? Essa é a discussão mais antiga da sala de musculação, e ela costuma ser mal colocada. Os dois empurram peso com as pernas, mas <strong>um deles exige que você sustente a carga e o outro sustenta a carga por você</strong>. Essa única diferença muda tudo: quais músculos entram, quanto peso você move, o risco envolvido e o que sobra de resultado fora da academia.</p>
+
+<h2>A diferença fundamental: quem segura o peso</h2>
+<p>No <strong>agachamento livre</strong>, a barra está no seu corpo. Além dos quadríceps, entram glúteos, isquiotibiais, adutores, eretores da espinha e todo o cinturão do tronco só para você não cair. É um exercício de corpo inteiro que por acaso treina perna.</p>
+<p>No <strong>leg press</strong>, o banco sustenta o tronco e a máquina define a trajetória. Sobra para você a tarefa de empurrar. Isso concentra o esforço no quadríceps, tira boa parte do trabalho estabilizador e permite mover muito mais carga com muito menos exigência técnica.</p>
+<p>Nenhuma das duas coisas é vantagem absoluta. É por isso que a pergunta "qual é melhor" quase sempre precisa virar "melhor para quê, e para quem".</p>
+
+<h2>O que a biomecânica mostra</h2>
+<p>Escamilla e colaboradores compararam a mecânica do joelho no agachamento e no leg press em trabalhos publicados no <em>Medicine &amp; Science in Sports &amp; Exercise</em> (2001). Dois pontos se repetem na literatura e valem para o seu treino:</p>
+<ul>
+<li>O <strong>agachamento</strong> recruta de forma expressiva a musculatura do quadril — glúteo e isquiotibiais — que participa muito menos no leg press.</li>
+<li>No <strong>leg press</strong>, a posição dos pés muda a distribuição: pés mais altos na plataforma aumentam a participação de glúteo e posterior; pés mais baixos concentram no quadríceps.</li>
+</ul>
+<p>Há ainda uma diferença que não aparece na eletromiografia: o agachamento é um exercício de <strong>carga axial</strong>, com o peso comprimindo o esqueleto de cima para baixo. É esse tipo de estímulo que a literatura associa à manutenção de densidade óssea — algo que importa cada vez mais depois dos 40 anos.</p>
+
+<h2>Onde o leg press ganha</h2>
+<ul>
+<li><strong>Curva de aprendizado.</strong> Um iniciante faz leg press com segurança na primeira semana. Agachamento livre com técnica leva meses.</li>
+<li><strong>Volume de quadríceps sem desgastar o corpo todo.</strong> Você castiga a coxa sem exigir tronco, o que permite mais séries no fim do treino.</li>
+<li><strong>Limitação de coluna.</strong> Quem tem restrição lombar frequentemente consegue treinar perna pesado no leg press quando o agachamento não é viável.</li>
+<li><strong>Falha com segurança.</strong> Falhar no leg press é desconfortável; falhar embaixo de uma barra sem gaiola é perigoso.</li>
+</ul>
+
+<h2>Onde o agachamento ganha</h2>
+<ul>
+<li><strong>Cobertura muscular.</strong> Glúteo, posterior e core entram de verdade — no leg press, quase não.</li>
+<li><strong>Transferência para a vida.</strong> Levantar do sofá, subir escada, pegar a criança no colo: todos são agachamentos com outro nome.</li>
+<li><strong>Estímulo ósseo.</strong> A carga axial que o leg press não oferece.</li>
+<li><strong>Equilíbrio e coordenação</strong>, que se perdem primeiro com a idade e não são treinados sentado.</li>
+</ul>
+
+<h2>Análise por objetivo</h2>
+<table>
+<tr><th>Objetivo</th><th>Melhor escolha</th><th>Motivo</th></tr>
+<tr><td>Perna completa com um exercício só</td><td>Agachamento</td><td>Cobre quadríceps, glúteo, posterior e core</td></tr>
+<tr><td>Quadríceps ao máximo</td><td>Leg press</td><td>Isola a coxa e permite mais carga e mais volume</td></tr>
+<tr><td>Iniciante nas primeiras semanas</td><td>Leg press</td><td>Aprende a empurrar antes de aprender a estabilizar</td></tr>
+<tr><td>Restrição lombar</td><td>Leg press</td><td>Tronco apoiado, sem compressão axial</td></tr>
+<tr><td>Saúde óssea e funcionalidade após os 40</td><td>Agachamento</td><td>Carga axial e transferência para o dia a dia</td></tr>
+<tr><td>Glúteo como prioridade</td><td>Agachamento</td><td>Maior demanda de extensão de quadril</td></tr>
+</table>
+
+<h2>Mitos e verdades</h2>
+<p><strong>Mito: leg press é seguro, agachamento é perigoso.</strong><br>
+Os dois têm riscos, só que diferentes. O erro clássico do leg press — descer além do que o quadril aguenta e arredondar a lombar contra o encosto, com centenas de quilos em cima — machuca exatamente a região que a máquina supostamente protegeria. O agachamento bem executado, dentro de uma gaiola, é seguro; mal executado, não é.</p>
+<p><strong>Mito: quem faz leg press pesado tem perna forte.</strong><br>
+Os números não são comparáveis. A plataforma inclinada e o tronco apoiado permitem cargas muito maiores. Comparar o peso do leg press com o do agachamento não diz nada sobre força.</p>
+<p><strong>Mito: sem agachar não dá para ter perna grande.</strong><br>
+Dá. A hipertrofia responde a carga, esforço próximo da falha e volume ao longo do tempo — e o leg press entrega os três. O que você perde sem agachar não é tamanho; é glúteo, core, equilíbrio e transferência funcional.</p>
+
+<h2>Como usar os dois no mesmo treino</h2>
+<ol>
+<li><strong>Agachamento primeiro</strong>, com o corpo descansado e a técnica intacta. É o exercício que exige mais coordenação, então merece o começo da sessão.</li>
+<li><strong>Leg press depois</strong>, para acumular volume de quadríceps sem depender do tronco, que já está cansado.</li>
+<li><strong>Isolados no fim</strong> — <a href="/blog/como-fazer-cadeira-extensora">cadeira extensora</a>, <a href="/blog/como-fazer-stiff">stiff</a> ou <a href="/blog/agachamento-bulgaro-como-fazer">búlgaro</a> — conforme o ponto fraco.</li>
+</ol>
+<p>Se o agachamento livre ainda não é viável para você, o caminho não é pular perna: é começar pelo <a href="/blog/como-fazer-agachamento-goblet">agachamento goblet</a> ou pelo <a href="/blog/agachamento-livre-ou-maquina-smith">Smith</a> e construir o padrão aos poucos, com o leg press sustentando o volume enquanto isso. Se o problema é dor, vale entender a causa em <a href="/blog/dor-no-joelho-no-agachamento">dor no joelho no agachamento</a> antes de trocar de exercício.</p>
+
+<h2>Conclusão</h2>
+<p>Agachamento e leg press não estão competindo pelo mesmo lugar. O agachamento é o exercício mais completo dos dois e deve ser a base de quem não tem impedimento. O leg press é a melhor ferramenta que existe para acumular volume de quadríceps com segurança, e é a saída legítima de quem tem restrição de coluna ou está começando. Perna boa quase sempre tem os dois na semana — na ordem certa.</p>
+<p>Monto treino de perna com progressão registrada e ajuste de técnica para alunos em Alphaville, Barueri e Santana de Parnaíba, e para o Brasil todo pela <a href="/consultoria-online">consultoria online</a>. <a href="/contato">Agende uma avaliação</a> e pare de decidir isso no chute.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/como-fazer-agachamento-livre-corretamente">Como fazer agachamento livre corretamente</a></li>
+<li><a href="/blog/como-fazer-leg-press">Como fazer leg press</a></li>
+<li><a href="/blog/treino-de-perna-completo">Treino de perna completo</a></li>
+<li><a href="/blog/agachamento-livre-ou-maquina-smith">Agachamento livre ou máquina Smith?</a></li>
+</ul>
+
+<h2>Referências</h2>
+<ul>
+<li>Escamilla RF, Fleisig GS, Zheng N, et al. Effects of technique variations on knee biomechanics during the squat and leg press. Medicine &amp; Science in Sports &amp; Exercise, 2001.</li>
+<li>Escamilla RF. Knee biomechanics of the dynamic squat exercise. Medicine &amp; Science in Sports &amp; Exercise, 2001.</li>
+</ul>
+`,
+  },
 ]) as BlogPost[];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
