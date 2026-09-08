@@ -188,6 +188,9 @@ export const blogPosts = ([
   <li><strong>Quem pensa em reduzir a dose por conta própria</strong>: o esquema de redução é prescrição, não ajuste caseiro.</li>
 </ul>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Leia também</h2>
 <ul>
   <li><a href="/blog/como-evitar-perder-massa-muscular-mounjaro">Como Evitar Perder Massa Muscular no Mounjaro</a></li>
@@ -267,6 +270,9 @@ export const blogPosts = ([
   <li><strong>Efeito colateral</strong> que motive interrupção antecipa a conversa e muda a ordem das coisas.</li>
   <li>O que este artigo responde é a outra metade da pergunta — a que depende de você, e que costuma ser a que decide o resultado.</li>
 </ul>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
@@ -9618,8 +9624,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Quer estruturar esse protocolo de forma personalizada? <a href="/consultoria">Fale comigo na consultoria online</a> e monte um plano adaptado à sua rotina, ao seu momento de uso do Mounjaro e aos seus objetivos de composição corporal.</p>
 
-<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo por que a perda de músculo com o Mounjaro é tão comum — e o que fazer para evitar.</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Por que o Mounjaro pode causar perda de músculo e como evitar" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `
   },
@@ -9773,10 +9779,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Com o estímulo certo e proteína adequada, você pode emagrecer com Mounjaro e sair do processo com mais qualidade muscular do que entrou. Quer montar esse protocolo personalizado para a sua realidade? <a href="/consultoria">Entre em contato pela consultoria online</a> e vamos estruturar tudo juntos.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `
   },
@@ -9920,10 +9924,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você está usando Mounjaro ou vai começar e quer garantir que seu resultado seja de verdade, <a href="/consultoria">entre em contato pela consultoria online</a>. Vamos montar juntos o protocolo que vai fazer o medicamento trabalhar ao seu favor, não contra você.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `
   },
@@ -10088,10 +10090,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Quer um plano de treino personalizado para o seu momento de uso do Mounjaro? <a href="/consultoria">Entre em contato pela consultoria online</a> e vamos construir um protocolo que respeita o seu contexto e maximiza seus resultados.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `
   },
@@ -10931,10 +10931,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você está usando Mounjaro e quer saber exatamente como estruturar seu treino para maximizar a perda de gordura e preservar o máximo de músculo possível, posso te ajudar com um protocolo personalizado. Acesse a página de <a href="/consultoria">consultoria online</a> e saiba mais.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -11142,10 +11140,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você está usando Mounjaro e quer iniciar o treino de forma segura e eficaz — sem náuseas piores, sem lesões e com resultados reais na composição corporal —, posso te ajudar com um plano personalizado. Acesse a página de <a href="/consultoria">consultoria online</a> e saiba como funciona.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -11329,10 +11325,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você está usando Retatrutida e quer garantir que a perda de peso seja predominantemente de gordura, com músculos preservados, posso montar um protocolo personalizado para sua realidade. Acesse a página de <a href="/consultoria">consultoria online</a> e saiba como funciona.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -11512,10 +11506,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você usa Retatrutida e quer um programa de treino personalizado para preservar sua massa muscular durante o emagrecimento, acesse a página de <a href="/consultoria">consultoria online</a> e saiba como funciona.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -11691,10 +11683,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você quer um programa de musculação personalizado para usar durante o tratamento com Retatrutida, posso ajudar. Acesse a página de <a href="/consultoria">consultoria online</a> e saiba como funciona.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -11852,10 +11842,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você está usando Retatrutida e quer um protocolo personalizado para preservar sua composição corporal, acesse a página de <a href="/consultoria">consultoria online</a> e saiba como posso ajudar.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -12386,10 +12374,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você usa Retatrutida e quer um programa de treino estruturado — que combine musculação e cardio de forma eficaz para o seu momento —, posso te ajudar. Acesse a página de <a href="/consultoria">consultoria online</a> e veja como funciona.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -12575,10 +12561,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você usa Retatrutida e quer estruturar o treino e a nutrição de forma personalizada para maximizar a preservação muscular e a qualidade da perda de peso, posso te ajudar. Acesse a página de <a href="/consultoria">consultoria online</a>.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -12943,10 +12927,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Treinar na frequência certa para o seu contexto — incluindo o uso de Retatrutida — é parte do que estruturo na minha <a href="/consultoria">consultoria online</a>. O treino é individualizado para respeitar sua capacidade de recuperação e maximizar a preservação muscular durante o emagrecimento.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -13450,10 +13432,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se a fraqueza está comprometendo seus treinos e você não sabe por onde começar, posso ajudar. Na minha <a href="/consultoria">consultoria online</a>, monto um programa de treino e orientação nutricional adaptado ao seu contexto — incluindo o uso de Retatrutida — para que você consiga treinar com qualidade mesmo em déficit calórico.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -13654,10 +13634,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você quer um programa de treino individualizado que respeite o momento do seu tratamento com Retatrutida e maximize a preservação de massa muscular, estou disponível na minha <a href="/consultoria">consultoria online</a>. O programa é ajustado conforme você avança no tratamento e conforme o seu corpo responde.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/rux_N9zfPXY?rel=0" title="Treinos AB, ABC e ABCD para todos os niveis — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -14708,10 +14686,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><a href="/blog/como-preservar-massa-muscular-durante-emagrecimento">Como preservar massa muscular durante o emagrecimento</a></li>
 </ul>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
   },
@@ -24447,10 +24423,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Usar Ozempic sem treino de força é emagrecer de forma incompleta. Com a combinação certa, o resultado é muito superior em qualidade. Para um programa específico para quem está em tratamento com GLP-1, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/como-treinar-usando-qualquer-glp1">como treinar usando qualquer GLP-1</a>.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
     faq: [
@@ -24554,10 +24528,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/25355851/" target="_blank" rel="noopener noreferrer">Revisão — saúde e exercício (PubMed)</a>.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
     faq: [
@@ -24649,10 +24621,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/25355851/" target="_blank" rel="noopener noreferrer">Revisão — saúde e exercício (PubMed)</a>.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
     faq: [
@@ -24772,10 +24742,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/25355851/" target="_blank" rel="noopener noreferrer">Revisão — saúde e exercício (PubMed)</a>.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
     faq: [
@@ -52894,10 +52862,8 @@ Fracionamento, proteínas líquidas, alimentos de alta densidade proteica e o tr
 - Lim SS, et al. Exercise and the prevention of muscle loss during weight loss: systematic review. Obesity Reviews. 2020
 - Jeppesen C, et al. Protein supplementation strategies during GLP-1 receptor agonist treatment. Curr Obes Rep. 2023
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/OZ_OLBMW3R4?rel=0" title="Whey concentrado, isolado e hidrolisado — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
     category: "GLP-1",
@@ -92497,8 +92463,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Trate o período de tratamento como a sua janela de construção. O peso que você perde é temporariamente mérito da caneta; o corpo e o metabolismo com que você sai do processo são mérito do seu treino.</p>
 
-<p>Para aprofundar no tema medicamentos de emagrecimento e treino, veja a conversa abaixo:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
