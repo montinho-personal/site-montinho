@@ -41,6 +41,12 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  "puxada-vs-remada":
+    "Mesma razão dos outros comparativos de exercício: a decisão do leitor é qual vetor de puxada colocar no treino, e nenhuma ferramenta do site compara exercícios. A de 1RM responde a carga, que é outra pergunta.",
+
+  "stiff-vs-levantamento-terra":
+    "A dúvida é qual exercício serve a qual objetivo, e a resposta é técnica, não numérica. Colocar a calculadora de 1RM aqui seria empurrar a ferramenta disponível — e ainda por cima num artigo cujo recado central é usar MENOS carga no stiff.",
+
   "supino-reto-vs-supino-inclinado":
     "A dúvida do leitor é qual exercício escolher e em que ângulo, não quanto peso usar. A calculadora de 1RM responde a segunda pergunta, e o registro dela é explícito sobre entrar só onde a pergunta é a carga — os artigos de técnica de supino já têm o link contextual.",
 
