@@ -9,7 +9,7 @@
  * frase fixa de lá é reconhecida aqui.
  */
 import * as fs from "fs";
-import { identificarMensagem, extrairRef, handoffCompativel, detalheDaIdentificacao, reconheceInicio } from "../lib/crm/mensagens";
+import { identificarMensagem, extrairRef, handoffCompativel, detalheDaIdentificacao, reconheceInicio, limparColagem } from "../lib/crm/mensagens";
 
 let falhas = 0;
 const ok = (nome: string, cond: boolean, detalhe = "") => {
@@ -57,6 +57,31 @@ ok("CTA regional do blog extrai o local", reg.extra.local === "Tamboré" && reg.
 ok("card da /consultoria: online", identificarMensagem("Olá! Tenho interesse na Consultoria Online. Pode me contar mais sobre como funciona?").servico === "online");
 ok("diagnóstico com resultado no corpo", /Diagnóstico/.test(identificarMensagem("Oi, Montinho! Fiz o Diagnóstico Montinho no site.\nMeu perfil: Recomeço").origem ?? ""));
 ok("mobilidade com ou sem vírgula", /Mobilidade/.test(identificarMensagem("Oi Montinho! Fiz o teste de mobilidade no seu site e queria sua ajuda.").origem ?? ""));
+
+bloco("2B. O QUE O APLICATIVO ACRESCENTA NA COLAGEM");
+
+/*
+ * Em 08/09/2026 um clique real (Ref G284B) estava no banco e o formulário
+ * não achava. A causa: o WhatsApp do iPhone envolve trechos da mensagem em
+ * FSI/PDI, caracteres invisíveis que viajam junto na cópia e quebram
+ * qualquer regra que compare texto. Estes testes existem para que a
+ * limpeza nunca mais seja removida por parecer supérflua.
+ */
+const real = "Olá, Montinho! Estou no seu site, na página «Personal Trainer Alphaville», e cliquei no botão do topo. Queria saber como funciona o acompanhamento. Ref: G284B";
+const variantes: [string, string][] = [
+  ["FSI/PDI do WhatsApp iOS", "\u2068" + real.replace("Ref: G284B", "Ref:\u2068 G284B\u2069") + "\u2069"],
+  ["zero-width space partindo o código", real.replace("G284B", "G28\u200B4B")],
+  ["espaço não separável depois de Ref:", real.replace("Ref: ", "Ref:\u00A0")],
+  ["marca de direção no início", "\u200E" + real],
+  ["copiado com cabeçalho do iOS", "[17:13, 08/09/2026] Fulano: " + real],
+  ["copiado com cabeçalho do Android", "[08/09/2026 17:13] Fulano: " + real],
+];
+for (const [nome, txt] of variantes) {
+  const r = identificarMensagem(txt);
+  ok(`${nome}: acha o Ref e a origem`, r.ref === "G284B" && r.extra.titulo === "Personal Trainer Alphaville", `ref=${r.ref} origem=${r.origem}`);
+}
+ok("a limpeza não come texto de mensagem normal", limparColagem(real) === real);
+ok("cabeçalho só sai quando tem cara de cabeçalho", limparColagem("Olá: tudo bem?") === "Olá: tudo bem?");
 
 bloco("3. COMPATIBILIDADE COM CLIQUES REGISTRADOS");
 const h = (page_path: string, cta_id: string | null) => ({ page_path, cta_id });

@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { identificarOrigem, type ResultadoOrigem, type ResumoHandoff } from "@/app/crm/actions";
 import { Aviso, Campo, Input, Select, Textarea, dataHoraBr } from "@/components/crm/ui";
+import { extrairRef } from "@/lib/crm/mensagens";
 
 /**
  * O bloco "De onde veio" do formulário de lead.
@@ -23,31 +24,9 @@ export default function OrigemLead({ fontes, refInicial, servicos }: {
   const [detalhe, setDetalhe] = useState("");
   const [res, setRes] = useState<ResultadoOrigem | null>(null);
   const [buscando, setBuscando] = useState(false);
+  const [erro, setErro] = useState<string | null>(null);
   const pedido = useRef(0);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  /** Espera a pessoa parar de digitar e busca uma vez; respostas atrasadas são descartadas. */
-  function agendar(msg: string, codigo: string) {
-    if (timer.current) clearTimeout(timer.current);
-    const refOk = /^[A-Z0-9]{5}$/.test(codigo.trim().toUpperCase());
-    if (!msg.trim() && !refOk) { setRes(null); setBuscando(false); return; }
-    const meu = ++pedido.current;
-    setBuscando(true);
-    timer.current = setTimeout(async () => {
-      try {
-        const r = await identificarOrigem(msg, refOk ? codigo : null);
-        if (meu !== pedido.current) return;
-        setRes(r);
-        if (r.ref && r.ref !== codigo.trim().toUpperCase()) setRef(r.ref);
-        aplicar(r.handoff, r);
-      } finally { if (meu === pedido.current) setBuscando(false); }
-    }, 400);
-  }
-  // Ref vindo da URL (/crm/leads/novo?ref=…): busca ao abrir, fora do render.
-  useEffect(() => {
-    if (refInicial) timer.current = setTimeout(() => agendar("", refInicial), 0);
-    return () => { if (timer.current) clearTimeout(timer.current); };
-  }, [refInicial]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function aplicar(h: ResumoHandoff | null, r: ResultadoOrigem) {
     const codigoServico = h?.servico_interesse ?? r.identificacao.servico;
@@ -65,9 +44,48 @@ export default function OrigemLead({ fontes, refInicial, servicos }: {
     }
   }
 
+  /** Espera a pessoa parar de digitar e busca uma vez; respostas atrasadas são descartadas. */
+  function agendar(msg: string, codigo: string) {
+    if (timer.current) clearTimeout(timer.current);
+    const refOk = /^[A-Z0-9]{5}$/.test(codigo.trim().toUpperCase());
+    if (!msg.trim() && !refOk) { setRes(null); setBuscando(false); return; }
+    const meu = ++pedido.current;
+    setBuscando(true);
+    setErro(null);
+    timer.current = setTimeout(async () => {
+      try {
+        const r = await identificarOrigem(msg, refOk ? codigo : null);
+        if (meu !== pedido.current) return;
+        setRes(r);
+        if (r.ref && r.ref !== codigo.trim().toUpperCase()) setRef(r.ref);
+        aplicar(r.handoff, r);
+      } catch (e) {
+        /*
+         * Sem este catch a busca falhava calada: a promessa era rejeitada,
+         * nada aparecia na tela e a pessoa concluía que o CRM "não estava
+         * reconhecendo" — sem nenhuma pista do motivo. Falha visível é
+         * melhor que ausência de resposta.
+         */
+        if (meu !== pedido.current) return;
+        setRes(null);
+        setErro(e instanceof Error ? e.message : "Não consegui consultar o clique. Recarregue a página e tente de novo.");
+      } finally { if (meu === pedido.current) setBuscando(false); }
+    }, 400);
+  }
+  // Ref vindo da URL (/crm/leads/novo?ref=…): busca ao abrir, fora do render.
+  useEffect(() => {
+    if (refInicial) timer.current = setTimeout(() => agendar("", refInicial), 0);
+    return () => { if (timer.current) clearTimeout(timer.current); };
+  }, [refInicial]); // eslint-disable-line react-hooks/exhaustive-deps
+
   function escolher(c: ResumoHandoff) { setRef(c.ref_code); agendar(mensagem, c.ref_code); }
   const onMensagem = (v: string) => { setMensagem(v); agendar(v, ref); };
-  const onRef = (v: string) => { const u = v.toUpperCase(); setRef(u); agendar(mensagem, u); };
+  /** Aceita o código digitado, colado com lixo invisível, ou a mensagem inteira colada no campo errado. */
+  const onRef = (v: string) => {
+    const u = extrairRef(v) ?? v.replace(/[^A-Za-z0-9]/g, "").toUpperCase().slice(0, 5);
+    setRef(u);
+    agendar(mensagem, u);
+  };
 
   const h = res?.handoff ?? null;
   return (
@@ -76,6 +94,7 @@ export default function OrigemLead({ fontes, refInicial, servicos }: {
         <Textarea name="mensagem_whatsapp" value={mensagem} onChange={(e) => onMensagem(e.target.value)} placeholder="Olá, Montinho! Vi a página da… Ref: A7K2Q" />
       </Campo>
       {buscando && <p className="text-xs text-zinc-500">Procurando o clique…</p>}
+      {erro && <Aviso tom="alerta">Não deu para consultar: {erro}</Aviso>}
       {h && (
         <Aviso>
           Clique encontrado (ref <strong>{h.ref_code}</strong>) em {dataHoraBr(h.created_at)}: {h.page_path ?? "página desconhecida"}
