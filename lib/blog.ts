@@ -39879,7 +39879,8 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-de-potencia-e-explosividade-infographic.svg" alt="Infográfico sobre Treino de Potência e Explosividade: Protocolos para Força Rápida — Montinho Personal Trainer" title="Treino de Potência e Explosividade: Protocolos para Força Rá" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-de-potencia-e-explosividade-capa.webp" alt="Arte de capa ilustrada de treino de potência e explosividade, com movimentos rápidos e saltos" title="Treino de Potência e Explosividade — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino de potência: como desenvolver força rápida com segurança.</figcaption>
 </figure>
 <h2>O que é potência muscular?</h2>
 
@@ -50247,7 +50248,8 @@ Verdade: A vantagem genética acelera os resultados — não os entrega automati
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/rest-pause-drop-set-superserie-guia-infographic.svg" alt="Infográfico comparando as três técnicas: rest-pause para intensidade máxima, drop set para volume extra e supersérie para tempo reduzido" title="Rest-Pause, Drop Set e Supersérie: Guia Definitivo Para Usar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/rest-pause-drop-set-superserie-guia-capa.webp" alt="Arte de capa ilustrada comparando as técnicas rest-pause, drop-set e supersérie, com atletas executando cada método" title="Rest-Pause, Drop-Set e Supersérie: Guia Completo — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Técnicas de intensidade: quando rest-pause, drop-set e supersérie valem a pena.</figcaption>
 </figure>
 <h2>Rest-Pause: O Método da Extensão Forçada</h2>
 <h3>Mecanismo</h3>
@@ -57165,7 +57167,8 @@ A elevação lateral com técnica perfeita é o que faz os ombros crescerem de f
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-afundo-passadas-infographic.svg" alt="Infográfico Afundo Técnica — Montinho Personal Trainer" title="Como Fazer Afundo: 4 Passos" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-afundo-passadas-capa.webp" alt="Arte de capa ilustrada da execução do afundo e das passadas, com foco em postura e estabilidade" title="Como Fazer Afundo e Passadas — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Afundo e passadas: execução, amplitude e erros comuns.</figcaption>
 </figure>
 
 ## Por Que o Afundo é Tão Eficiente
@@ -68050,7 +68053,8 @@ A endometriose é uma condição complexa que exige uma abordagem individualizad
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/hashimoto-e-treino-infographic.svg" alt="Infográfico sobre Hashimoto e Treino: Como Exercitar com Tireoidite — Montinho Personal Trainer" title="Hashimoto e Treino: Como Exercitar com Tireoidite" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/hashimoto-e-treino-capa.webp" alt="Arte de capa ilustrada sobre tireoidite de Hashimoto e treino, destacando energia, preservação de massa muscular, metabolismo e qualidade de vida" title="Hashimoto e Treino — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Hashimoto e treino: movimento também é tratamento.</figcaption>
 </figure>
 
 ## O Que é a Tireoidite de Hashimoto
@@ -69171,7 +69175,8 @@ O segredo, como sempre no treinamento, é a especificidade: escolher a modalidad
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/yoga-e-musculacao-infographic.svg" alt="Infográfico sobre Yoga e Musculação: Como Combinar para Melhores Resultados — Montinho Personal Trainer" title="Yoga e Musculação: Como Combinar para Melhores Resultados" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/yoga-e-musculacao-capa.webp" alt="Arte de capa ilustrada combinando yoga e musculação, com mobilidade e força no mesmo programa" title="Yoga e Musculação — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Yoga e musculação: como as duas se complementam.</figcaption>
 </figure>
 
 ## O que o yoga faz que a musculação não faz
@@ -78710,7 +78715,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>O <strong>Tamboré</strong> tem um paradoxo: é uma das regiões com melhor infraestrutura da Grande São Paulo, mas quem mora ou trabalha ali vive sem tempo. E treino que não cabe na agenda é treino que não acontece.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academias-em-tambore-infographic.svg" alt="Infográfico sobre Academias no Tamboré: Onde Treinar na Região — Montinho Personal Trainer" title="Academias no Tamboré: Onde Treinar na Região" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/academias-em-tambore-capa.webp" alt="Arte de capa ilustrada das academias do Tamboré, com fachada de academia e a região ao fundo" title="Academias no Tamboré — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academias no Tamboré: estrutura, qualidade e o que há perto de você.</figcaption>
 </figure>
 
 <p>O resultado? Executivos que pagam plano e não vão. Moradores de condomínio com academia embaixo de casa e treino aleatório. Energia caindo, estresse subindo.</p>
@@ -78870,7 +78876,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você mora ou trabalha em <strong>Barueri</strong> e quer treinar — mas cada esquina tem uma academia prometendo ser "a melhor da região". Escolher no impulso é assinar um plano que vira boleto sem uso.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academias-perto-de-barueri-infographic.svg" alt="Infográfico sobre Academias Perto de Barueri: Onde Treinar — Montinho Personal Trainer" title="Academias Perto de Barueri: Onde Treinar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/academias-perto-de-barueri-capa.webp" alt="Arte de capa ilustrada sobre as academias próximas a Barueri" title="Academias Perto de Barueri — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Onde treinar perto de Barueri: opções por região e perfil.</figcaption>
 </figure>
 
 <p>E tem o custo invisível: cada mês sem treinar é disposição a menos, estresse a mais e saúde empurrada com a barriga. O corpo cobra juros.</p>
@@ -79623,7 +79630,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Em <strong>Santana de Parnaíba</strong>, escolher academia tem uma pegadinha: a cidade é espalhada. O que serve para quem mora na <strong>Fazendinha</strong> não serve para quem vive em <strong>Aldeia da Serra</strong> ou perto do <strong>Centro Histórico</strong>.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/melhores-academias-de-santana-de-parnaiba-infographic.svg" alt="Infográfico sobre Melhores Academias de Santana de Parnaíba — Montinho Personal Trainer" title="Melhores Academias de Santana de Parnaíba" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/melhores-academias-de-santana-de-parnaiba-capa.webp" alt="Arte de capa ilustrada com as melhores academias de Santana de Parnaíba" title="Melhores Academias de Santana de Parnaíba — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Ranking honesto das academias de Santana de Parnaíba.</figcaption>
 </figure>
 
 <p>Resultado: muita gente fecha plano na academia "famosa", enfrenta trânsito, falta uma semana, depois duas — e desiste. Dinheiro parado no cartão, objetivo parado no espelho.</p>
@@ -79704,7 +79712,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você quer treinar, mas não quer (ou não pode) pagar mensalidade premium em <strong>Alphaville ou Barueri</strong>. Justo. O problema é que "barato" mal escolhido vira caro: taxa de adesão escondida, multa de cancelamento e uma academia lotada às 19h que você abandona em dois meses.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academias-mais-baratas-alphaville-barueri-infographic.svg" alt="Infográfico sobre Academias Mais Baratas em Alphaville e Barueri — Montinho Personal Trainer" title="Academias Mais Baratas em Alphaville e Barueri" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/academias-mais-baratas-alphaville-barueri-capa.webp" alt="Arte de capa ilustrada sobre as academias mais baratas de Alphaville e Barueri e a comparação de mensalidades" title="Academias Mais Baratas em Alphaville e Barueri — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Onde treinar gastando menos em Alphaville e Barueri.</figcaption>
 </figure>
 
 <p>E a região tem armadilha dupla: em Alphaville, o padrão premium infla expectativas; em Barueri, a variedade confunde. Sem critério, você assina o plano errado.</p>
@@ -80042,7 +80051,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Santana de Parnaíba é uma cidade de contrastes: o charme do <strong>Centro Histórico</strong>, os condomínios de <strong>Aldeia da Serra</strong>, o movimento da <strong>Fazendinha</strong>. E quem procura <strong>quanto custa academia em Santana de Parnaíba</strong> descobre que os preços variam tanto quanto a paisagem.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-custa-academia-em-santana-de-parnaiba-infographic.svg" alt="Infográfico sobre Quanto Custa Academia em Santana de Parnaíba? — Montinho Personal Trainer" title="Quanto Custa Academia em Santana de Parnaíba?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-custa-academia-em-santana-de-parnaiba-capa.webp" alt="Arte de capa ilustrada sobre o custo das academias em Santana de Parnaíba" title="Quanto Custa Academia em Santana de Parnaíba — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Faixas de preço das academias em Santana de Parnaíba.</figcaption>
 </figure>
 
 <p>O risco de escolher errado é conhecido: pagar por uma academia longe demais, cara demais ou simples demais para o que você precisa — e abandonar em poucas semanas, com contrato de fidelidade correndo.</p>
@@ -83832,7 +83842,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>"Performance" é uma das palavras mais usadas — e menos explicadas — do mercado fitness. Você vê o nome na fachada, mas a dúvida continua: <strong>essa academia vai me fazer evoluir ou só me cobrar?</strong></p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academia-performance-santana-de-parnaiba-infographic.svg" alt="Infográfico sobre Academia Performance em Santana de Parnaíba — Montinho Personal Trainer" title="Academia Performance em Santana de Parnaíba" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/academia-performance-santana-de-parnaiba-capa.webp" alt="Arte de capa ilustrada da academia Performance em Santana de Parnaíba" title="Academia Performance Santana de Parnaíba — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia Performance: estrutura, proposta e para quem faz sentido.</figcaption>
 </figure>
 
 <p>Errar essa aposta em <strong>Santana de Parnaíba</strong> custa mensalidade, fidelidade e motivação. E motivação queimada é o prejuízo mais caro: cada recomeço fica mais difícil que o anterior.</p>
@@ -85939,7 +85950,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você chega motivado às 19h e encontra <strong>fila no leg press</strong>, esteiras ocupadas e vestiário lotado. O treino de 50 minutos vira 1h30 — e a motivação vira irritação.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/qual-academia-e-menos-cheia-alphaville-infographic.svg" alt="Infográfico sobre Qual Academia É Menos Cheia em Alphaville? — Montinho Personal Trainer" title="Qual Academia É Menos Cheia em Alphaville?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/qual-academia-e-menos-cheia-alphaville-capa.webp" alt="Arte de capa ilustrada sobre qual academia é menos cheia em Alphaville e os horários de pico" title="Qual Academia É Menos Cheia em Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Fugir da lotação em Alphaville: horários e academias mais tranquilas.</figcaption>
 </figure>
 
 <p>Em <strong>Alphaville</strong>, onde executivos saem do trabalho quase todos no mesmo horário, esse cenário se repete em qualquer academia da região, do entorno da <strong>Alameda Rio Negro</strong> ao <strong>Tamboré</strong>.</p>
@@ -86104,7 +86116,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você chega na academia depois do trabalho, e a cena se repete: <strong>fila no supino, esteiras ocupadas, revezamento em três equipamentos ao mesmo tempo</strong>. O treino que deveria durar 50 minutos vira uma hora e meia de espera.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academias-menos-lotadas-alphaville-infographic.svg" alt="Infográfico sobre Academias Menos Lotadas em Alphaville: Como Encontrar — Montinho Personal Trainer" title="Academias Menos Lotadas em Alphaville: Como Encontrar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/academias-menos-lotadas-alphaville-capa.webp" alt="Arte de capa ilustrada sobre academias menos lotadas em Alphaville e os horários de menor movimento" title="Academias Menos Lotadas em Alphaville — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Como encontrar academia vazia em Alphaville: horários e opções.</figcaption>
 </figure>
 
 <p>O problema é maior do que parece. Treino interrompido perde intensidade, perde ritmo — e, com o tempo, você perde a vontade de ir. <strong>Academia lotada não rouba só seu tempo: rouba sua constância.</strong> E constância é o que gera resultado.</p>
@@ -86192,7 +86205,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Segunda a sexta você vive no modo sobrevivência: reuniões, trânsito na <strong>Rodovia Castelo Branco</strong>, filhos, prazos. Quando finalmente sobra tempo para treinar — domingo — bate a dúvida: <strong>a academia está aberta?</strong></p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/academias-abertas-aos-domingos-alphaville-barueri-infographic.svg" alt="Infográfico sobre Academias Abertas aos Domingos em Alphaville e Barueri — Montinho Personal Trainer" title="Academias Abertas aos Domingos em Alphaville e Barueri" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/academias-abertas-aos-domingos-alphaville-barueri-capa.webp" alt="Arte de capa ilustrada: pessoa entrando na academia num domingo, com destaque para flexibilidade de horário e rotina de treino" title="Academias Abertas aos Domingos em Alphaville e Barueri — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treinar no domingo: onde a rotina não precisa parar no fim de semana.</figcaption>
 </figure>
 
 <p>E aí mora o perigo. Sem saber se pode contar com o domingo, você deixa de planejar. O treino vira loteria, a semana passa em branco, e a mensalidade vira doação. <strong>Rotina que depende de sorte não é rotina.</strong></p>
@@ -88114,7 +88128,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você sobe na esteira, sua por 20 minutos, olha o painel... e a balança não muda há semanas. A dúvida vem na hora: <strong>estou fazendo pouco tempo? Devia correr mais?</strong></p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-tempo-de-esteira-para-emagrecer-infographic.svg" alt="Infográfico com o roteiro do artigo: a resposta direta sobre quanto tempo de esteira, por que o tempo sozinho não diz nada, a escolha entre caminhada inclinada, corrida e HIIT, e os três erros que anulam o tempo" title="Quanto Tempo de Esteira para Emagrecer?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-tempo-de-esteira-para-emagrecer-capa.webp" alt="Arte de capa ilustrada sobre tempo de esteira necessário para emagrecer" title="Quanto Tempo de Esteira para Emagrecer — Montinho Personal Trainer" width="1536" height="1024" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Quanto tempo de esteira faz diferença no emagrecimento.</figcaption>
 </figure>
 
 <p>O problema é que, sem uma referência clara, você oscila entre exagerar (e desistir por cansaço) e fazer de menos (e desistir por falta de resultado). Nos dois casos, o fim é o mesmo: a esteira vira cabide.</p>
