@@ -116673,6 +116673,191 @@ Não. "Stiff" quer dizer rígido, não travado. O joelho fica levemente flexiona
 </ul>
 `,
   },
+  {
+    slug: "rosca-direta-vs-rosca-martelo",
+    title: "Rosca Direta vs Rosca Martelo: Qual Faz o Braço Crescer Mais?",
+    metaTitle: "Rosca Direta ou Martelo: Qual Constrói Mais Braço?",
+    metaDescription: "A posição da mão decide qual músculo lidera: bíceps na direta, braquial e braquiorradial na martelo. Veja o que cada uma constrói e como usar as duas.",
+    excerpt: "Mesmo movimento, protagonistas diferentes. A rosca direta constrói o pico do bíceps; a martelo, a espessura que se vê de lado e o antebraço. Quem faz só uma acaba com braço de um ângulo só.",
+    category: "Treinamento",
+    date: "2026-09-09",
+    updatedAt: "2026-09-09",
+    readTime: "7 min",
+    author: "Montinho",
+    tags: ["rosca direta", "rosca martelo", "bíceps", "braquial", "antebraço", "técnica", "musculação"],
+    faq: [
+      { question: "Rosca direta ou rosca martelo: qual é melhor para o bíceps?", answer: "Para o bíceps braquial em si, a rosca direta: a palma para cima coloca o músculo na posição em que ele rende mais. A martelo desloca parte do trabalho para o braquial e o braquiorradial, que dão espessura ao braço e volume ao antebraço. Um braço completo precisa das duas." },
+      { question: "Rosca martelo treina bíceps ou antebraço?", answer: "Os dois, mais o braquial. O bíceps participa com menos vantagem mecânica, o braquial assume boa parte da flexão e o braquiorradial, que é músculo de antebraço, aparece na pegada neutra. É por isso que a martelo engrossa o braço visto de lado." },
+      { question: "Por que consigo mais peso na rosca martelo?", answer: "Porque a pegada neutra recruta três flexores ao mesmo tempo, em vez de depender principalmente do bíceps, e porque o punho fica numa posição mais forte. Use essa carga a favor, sem transformar o exercício em balanço de tronco." },
+      { question: "Qual fazer primeiro no treino de braço?", answer: "Rosca direta primeiro, com o bíceps descansado, e martelo depois, aproveitando que ela aceita mais carga mesmo com o bíceps já fatigado. Se a prioridade for espessura, inverta por um ciclo: o exercício feito descansado é o que mais progride." },
+      { question: "Rosca martelo dói menos no punho?", answer: "Costuma. A pegada neutra é a posição mais confortável para punho e cotovelo, e é a primeira troca que faço para quem sente a rosca direta na articulação em vez de no músculo." },
+    ],
+    content: `<p>Rosca direta ou rosca martelo — qual faz o braço crescer mais? A pergunta vem toda semana, e ela costuma partir de uma premissa errada: a de que as duas treinam a mesma coisa e uma é "melhor". Não é. As duas flexionam o cotovelo, mas <strong>a posição da mão muda qual músculo lidera</strong> — e é essa diferença que decide o formato do seu braço.</p>
+
+<h2>A diferença fundamental: a mão decide o músculo</h2>
+<p>O braço tem três flexores do cotovelo, e cada rosca distribui o trabalho de um jeito:</p>
+<ul>
+<li><strong>Bíceps braquial</strong> — o músculo que forma o "pico". Ele flexiona o cotovelo, mas também <strong>supina</strong> o antebraço (gira a palma para cima). Ele trabalha mais quando a mão está supinada.</li>
+<li><strong>Braquial</strong> — fica por baixo do bíceps e só flexiona o cotovelo. Não se importa com a posição da mão, mas trabalha mais quando o bíceps está em desvantagem.</li>
+<li><strong>Braquiorradial</strong> — o músculo do antebraço que aparece na pegada neutra. Dá espessura ao braço visto de lado.</li>
+</ul>
+<p>Na <strong>rosca direta</strong>, palma para cima, o bíceps está na posição favorita dele e lidera. Na <strong>rosca martelo</strong>, palma virada para dentro, o bíceps perde vantagem mecânica — e o braquial e o braquiorradial assumem. Mesmo movimento, protagonistas diferentes.</p>
+
+<h2>O que a anatomia diz na prática</h2>
+<p>A literatura de eletromiografia é consistente: a rosca supinada produz maior atividade do bíceps braquial, e a pegada neutra desloca parte do esforço para o braquiorradial e o braquial. Não é que a martelo "não pega bíceps" — ele participa, só que menos. A rosca direta é o exercício de bíceps por excelência; a martelo é o exercício de <strong>espessura de braço</strong>.</p>
+<p>Isso responde a pergunta que quase ninguém faz: por que tem gente com bíceps alto e braço fino de lado, e gente com braço grosso que não tem pico. A primeira treinou só rosca direta. A segunda, só martelo.</p>
+
+<h2>Técnica da rosca direta</h2>
+<ol>
+<li>Barra ou halteres, pegada na largura dos ombros, palmas para cima.</li>
+<li>Cotovelos colados ao tronco, sem avançar. Se o cotovelo vem para a frente, o ombro está roubando.</li>
+<li>Suba até o antebraço passar da linha horizontal e <strong>contraia no topo</strong> — é nesse ponto que a supinação faz o bíceps trabalhar por inteiro.</li>
+<li>Desça controlado até quase estender. A fase de descida é metade do exercício.</li>
+</ol>
+<p>Detalhes e erros em <a href="/blog/como-fazer-rosca-direta">como fazer rosca direta</a>.</p>
+
+<h2>Técnica da rosca martelo</h2>
+<ol>
+<li>Halteres, palmas viradas uma para a outra durante todo o movimento.</li>
+<li>Mesma regra do cotovelo: colado ao tronco.</li>
+<li>Não gire a mão no topo — se girar, virou rosca direta e o braquiorradial saiu da conta.</li>
+<li>Aceita mais carga que a direta. Use isso a seu favor, sem transformar em balanço.</li>
+</ol>
+<p>Tem uma versão cruzada, em que o halter sobe na direção do ombro oposto — enfatiza ainda mais o braquial. Está em <a href="/blog/como-fazer-rosca-martelo">como fazer rosca martelo</a>.</p>
+
+<h2>Análise por objetivo</h2>
+<table>
+<tr><th>Objetivo</th><th>Melhor escolha</th><th>Motivo</th></tr>
+<tr><td>Pico do bíceps</td><td>Rosca direta</td><td>Supinação completa, bíceps braquial no comando</td></tr>
+<tr><td>Braço grosso visto de lado</td><td>Rosca martelo</td><td>Braquial e braquiorradial dão espessura</td></tr>
+<tr><td>Antebraço junto</td><td>Rosca martelo</td><td>O braquiorradial é músculo de antebraço</td></tr>
+<tr><td>Dor no punho ou no cotovelo</td><td>Rosca martelo</td><td>Pegada neutra é a posição mais confortável para a articulação</td></tr>
+<tr><td>Mais carga com segurança</td><td>Rosca martelo</td><td>A alavanca permite peso maior sem forçar o punho</td></tr>
+<tr><td>Iniciante</td><td>Rosca direta com halteres</td><td>Aprende a isolar o bíceps antes de variar</td></tr>
+</table>
+
+<h2>Mitos e verdades</h2>
+<p><strong>Mito: rosca martelo é "rosca de antebraço", não conta como bíceps.</strong><br>
+Conta. O bíceps participa, e o braquial — que fica embaixo dele — empurra o bíceps para cima quando cresce. É o braquial que dá a impressão de bíceps maior de perfil.</p>
+<p><strong>Mito: quanto mais carga na rosca direta, mais bíceps.</strong><br>
+Só até o ponto em que o cotovelo continua colado ao tronco. Depois disso, o ombro e a lombar entram e o bíceps perde tensão. Rosca direta pesada com balanço treina tudo, menos bíceps.</p>
+<p><strong>Mito: barra W substitui as duas.</strong><br>
+A barra W fica no meio do caminho: pegada semi-supinada, mais confortável para o punho, mas sem a supinação total da direta nem a neutralidade da martelo. É uma terceira opção, não um substituto.</p>
+<p><strong>Mito: rosca martelo faz o antebraço "grosso demais" para quem é mulher.</strong><br>
+Não. O braquiorradial responde ao estímulo como qualquer músculo, e volume expressivo de antebraço exige anos de treino específico e pesado. Para a maioria das alunas, é o que dá contorno ao braço sem inchar nada.</p>
+
+<h2>Como usar as duas no mesmo treino</h2>
+<p>Não escolha. Um treino de bíceps decente costuma ter as duas, nesta lógica:</p>
+<ol>
+<li><strong>Rosca direta primeiro</strong>, com o braço descansado, para o bíceps trabalhar na posição em que ele rende mais.</li>
+<li><strong>Rosca martelo em segundo</strong>, aproveitando que aceita carga maior mesmo com o bíceps já cansado — o braquial e o braquiorradial ainda estão frescos.</li>
+<li>Se houver um terceiro, <a href="/blog/como-fazer-rosca-concentrada">rosca concentrada</a> para fechar com isolamento máximo.</li>
+</ol>
+<p>Se a sua prioridade é espessura, inverta por um ciclo: martelo primeiro. É o mesmo princípio que uso em <a href="/blog/treino-de-biceps">treino de bíceps</a> — o exercício que você faz descansado é o que mais progride.</p>
+
+<h2>Conclusão</h2>
+<p>Rosca direta e rosca martelo não competem — dividem o braço. A direta constrói o pico do bíceps; a martelo constrói a espessura que se vê de lado e o antebraço que sustenta todos os outros exercícios de puxar. Quem faz só uma delas por anos acaba com um braço que parece grande de um ângulo e fino do outro.</p>
+<p>Ajusto treino de braço com progressão registrada e correção de técnica para alunos em Alphaville, Barueri e Santana de Parnaíba, e pela <a href="/consultoria-online">consultoria online</a> para o Brasil todo. <a href="/contato">Agende uma avaliação</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/treino-de-biceps">Treino de bíceps: como montar</a></li>
+<li><a href="/blog/como-fazer-rosca-direta">Como fazer rosca direta</a></li>
+<li><a href="/blog/como-fazer-rosca-martelo">Como fazer rosca martelo</a></li>
+<li><a href="/blog/forca-de-pegada-e-antebraco">Força de pegada e antebraço</a></li>
+</ul>
+
+<h2>Referências</h2>
+<ul>
+<li>Kleiber T, Kunz L, Disselhorst-Klug C. Muscular coordination of biceps brachii and brachioradialis in elbow flexion with respect to hand position. Frontiers in Physiology, 2015.</li>
+<li>Marcolin G, Panizzolo FA, Petrone N, et al. Differences in electromyographic activity of biceps brachii and deltoid muscles during different variations of the biceps curl. PeerJ, 2018.</li>
+</ul>
+`,
+  },
+  {
+    slug: "hack-vs-leg-press",
+    title: "Hack vs Leg Press: Qual é Melhor para a Perna?",
+    metaTitle: "Hack ou Leg Press: Qual é Melhor para o Quadríceps?",
+    metaDescription: "Um move o quadril, o outro não. Veja o que muda em quadríceps, glúteo, joelho e lombar entre hack e leg press, e como usar os dois no mesmo treino.",
+    excerpt: "Parecidos por fora, diferentes por dentro: o hack é um agachamento com o tronco apoiado, o leg press é uma extensão de joelho com muito peso. Cada um tem um risco e um lugar no treino.",
+    category: "Treinamento",
+    date: "2026-09-09",
+    updatedAt: "2026-09-09",
+    readTime: "7 min",
+    author: "Montinho",
+    tags: ["hack", "leg press", "quadríceps", "perna", "joelho", "técnica", "musculação"],
+    faq: [
+      { question: "Hack ou leg press: qual é melhor para o quadríceps?", answer: "Os dois treinam quadríceps com muita carga. O leg press isola mais, porque o quadril fica fixo; o hack é um agachamento com o tronco apoiado, então o quadril desce e o glúteo participa. Quem quer o máximo de carga no quadríceps escolhe o leg press; quem quer o padrão de agachar sem depender da lombar escolhe o hack." },
+      { question: "Hack faz mal para o joelho?", answer: "Não por natureza. O joelho avança na descida porque é um agachamento, e isso não é lesão. O que machuca é descer além da amplitude que a patela aguenta hoje ou posicionar os pés muito atrás. Pés um pouco mais à frente na plataforma reduzem a pressão na hora." },
+      { question: "Leg press é seguro para a lombar?", answer: "É, desde que o quadril não saia do encosto no fundo do movimento. Descer além do que o quadril permite arredonda a coluna sob centenas de quilos, que é a lesão mais evitável da sala de musculação. Amplitude curta e controlada é melhor que amplitude vaidosa." },
+      { question: "Posso fazer hack e leg press no mesmo treino?", answer: "Pode, e costuma render: hack primeiro, com o quadríceps descansado e amplitude completa, e leg press depois para acumular volume com carga alta sem exigir mais coordenação." },
+      { question: "Hack substitui o agachamento livre?", answer: "Para quadríceps, sim. O que ele não entrega é a estabilização do tronco e o estímulo ósseo do agachamento com barra nas costas. Quem pode agachar livre sem contraindicação ganha mantendo os dois." },
+    ],
+    content: `<p>Hack ou leg press — qual constrói mais perna? Os dois são máquinas, os dois apoiam o tronco, os dois deixam você carregar muito peso. Por isso muita gente trata como sinônimo e faz um ou outro conforme a fila. Mas a diferença entre eles não é de estrutura: é de <strong>onde a carga entra e como o quadril se move</strong>. E isso muda quais músculos trabalham e quem sente o joelho.</p>
+
+<h2>A diferença fundamental: a carga nas costas ou nos pés</h2>
+<ul>
+<li><strong>Hack (agachamento na máquina):</strong> a carga está nos ombros, como no agachamento livre. Você fica em pé, apoiado numa plataforma inclinada, e desce como num agachamento. O tronco está preso, mas o corpo se move como se estivesse agachando.</li>
+<li><strong>Leg press:</strong> a carga está nos pés. Você fica sentado ou deitado e empurra a plataforma. O tronco não sai do lugar e o quadril fica fixo na cadeira.</li>
+</ul>
+<p>Parece detalhe, mas define o exercício: no hack, o quadril desce junto com o corpo e o glúteo participa mais. No leg press, o quadril não vai a lugar nenhum — sobra para o quadríceps.</p>
+
+<h2>O que cada um treina de verdade</h2>
+<h3>Hack</h3>
+<p>É o mais próximo do agachamento livre que uma máquina consegue ser. Quadríceps como protagonista, com glúteo e adutores entrando na descida. Como o tronco está apoiado, você consegue descer <strong>mais fundo e mais reto</strong> do que no agachamento livre, sem a lombar ser o limite. É por isso que o hack costuma ser o exercício em que a pessoa mais sente o quadríceps queimar.</p>
+<p>O custo: o joelho viaja bastante para a frente na descida, e quem tem sensibilidade patelar sente. Não é perigoso por natureza, mas exige respeito à amplitude que o seu joelho permite hoje.</p>
+<h3>Leg press</h3>
+<p>Isola o quadríceps de forma ainda mais direta, porque o quadril está travado. A posição dos pés muda a distribuição — mais altos na plataforma, mais glúteo e posterior; mais baixos, mais quadríceps — mas o exercício continua sendo uma extensão de joelho com muito peso. Permite as maiores cargas do treino de perna e o menor gasto de coordenação.</p>
+<p>O custo: o erro clássico de descer além do que o quadril aguenta e <strong>arredondar a lombar contra o encosto</strong>, com centenas de quilos em cima. É a lesão mais evitável da sala de musculação, e acontece por vaidade de amplitude.</p>
+
+<h2>Análise por objetivo</h2>
+<table>
+<tr><th>Objetivo</th><th>Melhor escolha</th><th>Motivo</th></tr>
+<tr><td>Quadríceps com a maior carga possível</td><td>Leg press</td><td>Quadril fixo, tronco apoiado, zero coordenação</td></tr>
+<tr><td>Padrão de agachamento sem depender da lombar</td><td>Hack</td><td>Mesmo movimento do agachamento, tronco preso</td></tr>
+<tr><td>Glúteo junto com quadríceps</td><td>Hack</td><td>O quadril desce, o glúteo participa</td></tr>
+<tr><td>Joelho sensível na parte da frente</td><td>Leg press com pés altos</td><td>Menos avanço do joelho, menos pressão patelar</td></tr>
+<tr><td>Lombar sensível</td><td>Leg press com amplitude curta</td><td>Nenhuma carga axial, desde que a lombar não saia do encosto</td></tr>
+<tr><td>Quem não consegue agachar livre ainda</td><td>Hack</td><td>Ensina o padrão de descer e subir com carga nos ombros</td></tr>
+</table>
+
+<h2>Mitos e verdades</h2>
+<p><strong>Mito: hack é ruim para o joelho.</strong><br>
+O hack faz o joelho avançar, e joelho avançando não é lesão — é agachamento. O que machuca é descer além da amplitude que a sua patela aguenta hoje, ou fazer isso com o pé mal posicionado. Ajuste os pés um pouco mais à frente e a pressão cai na hora.</p>
+<p><strong>Mito: leg press é seguro porque a máquina segura tudo.</strong><br>
+A máquina segura o peso, não a sua lombar. Se o quadril sobe do encosto no fundo do movimento, a coluna flexiona sob carga. É exatamente o cenário que a máquina supostamente evitaria.</p>
+<p><strong>Mito: os dois são a mesma coisa, é só preferência.</strong><br>
+Não. Um move o quadril e o outro não. Isso é a diferença entre um exercício que treina o padrão de agachar e um que só estende o joelho. Perna completa precisa dos dois padrões na semana.</p>
+<p><strong>Mito: quem faz hack pesado pode dispensar o agachamento livre.</strong><br>
+Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de estabilização do tronco e o estímulo ósseo do agachamento com barra — está tudo em <a href="/blog/agachamento-vs-leg-press">agachamento vs leg press</a>.</p>
+
+<h2>Como usar os dois no mesmo treino</h2>
+<ol>
+<li><strong>Hack primeiro</strong>, quando o quadríceps ainda está descansado e você consegue amplitude completa com controle. É o mais exigente dos dois em coordenação.</li>
+<li><strong>Leg press depois</strong>, para acumular volume com carga alta sem depender de mais coordenação — pés mais baixos se a prioridade é quadríceps, mais altos se quer envolver glúteo.</li>
+<li>Se a semana tem dois treinos de perna, um pode começar pelo agachamento livre e o outro pelo hack — o leg press cabe nos dois como segundo exercício.</li>
+</ol>
+<p>Técnica de cada um em <a href="/blog/como-fazer-hack-squat">como fazer hack</a> e <a href="/blog/como-fazer-leg-press">como fazer leg press</a>. Se o joelho incomoda em qualquer um dos dois, vale entender a causa em <a href="/blog/dor-no-joelho-no-agachamento">dor no joelho no agachamento</a> antes de trocar de exercício.</p>
+
+<h2>Conclusão</h2>
+<p>Hack e leg press são parecidos por fora e diferentes por dentro. O hack é um agachamento com o tronco apoiado — quadril desce, glúteo entra, joelho avança. O leg press é uma extensão de joelho com muito peso — quadril fixo, quadríceps isolado, lombar em risco se a amplitude passar do ponto. Perna forte costuma ter os dois na semana, na ordem certa, e nenhum deles feito além do que o joelho e o quadril permitem hoje.</p>
+<p>Monto treino de perna com progressão registrada e ajuste de amplitude para alunos em Alphaville, Barueri e Santana de Parnaíba, e pela <a href="/consultoria-online">consultoria online</a> para o Brasil todo. <a href="/contato">Agende uma avaliação</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/agachamento-vs-leg-press">Agachamento vs leg press: qual é melhor?</a></li>
+<li><a href="/blog/como-fazer-hack-squat">Como fazer hack squat</a></li>
+<li><a href="/blog/como-fazer-leg-press">Como fazer leg press</a></li>
+<li><a href="/blog/treino-de-perna-completo">Treino de perna completo</a></li>
+</ul>
+
+<h2>Referências</h2>
+<ul>
+<li>Escamilla RF, Fleisig GS, Zheng N, et al. Effects of technique variations on knee biomechanics during the squat and leg press. Medicine &amp; Science in Sports &amp; Exercise, 2001.</li>
+<li>Escamilla RF. Knee biomechanics of the dynamic squat exercise. Medicine &amp; Science in Sports &amp; Exercise, 2001.</li>
+</ul>
+`,
+  },
 ]) as BlogPost[];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
