@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import BotaoDeEnvio from "./BotaoDeEnvio";
 
 /** Peças de interface do CRM. Informação antes de decoração; tudo funciona sem JS. */
 export const brl = (v: number | null | undefined, casas = 0) => v == null ? "—" : v.toLocaleString("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: casas, minimumFractionDigits: casas });
@@ -70,7 +71,7 @@ export function Btn({ children, tom = "primario", href, tipo = "submit", classNa
   };
   const cls = `${base} ${cores[tom]} ${className}`;
   if (href) return <Link href={href} className={cls} target={target} rel={target ? "noopener noreferrer" : undefined}>{children}</Link>;
-  return <button type={tipo} className={cls} name={name} value={value} formAction={formAction}>{children}</button>;
+  return <BotaoDeEnvio tipo={tipo} cls={cls} name={name} value={value} formAction={formAction}>{children}</BotaoDeEnvio>;
 }
 export function Campo({ rotulo, children, dica }: { rotulo: string; children: ReactNode; dica?: string }) {
   return (
