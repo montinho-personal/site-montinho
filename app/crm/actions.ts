@@ -458,8 +458,27 @@ export async function gerarCodigoIndicacao(fd: FormData) {
 export async function mesclarContatos(fd: FormData) {
   const u = await exigirAdmin();
   const sb = await supabaseServer();
-  const de = s(fd, "de_id")!, para = s(fd, "para_id")!;
+  const de = s(fd, "de_id")!;
+  let para = s(fd, "para_id")!;
   if (de === para) throw new Error("Escolha dois contatos diferentes.");
+  /*
+   * Mesclar para dentro de um contato que já foi mesclado criava um ciclo:
+   * A apontando para B e B para A. Como a listagem só carrega contatos com
+   * merged_into_contact_id nulo, os DOIS sumiam da tela — foi o que
+   * aconteceu com um contato em 05/09/2026, que ficou com quatro registros
+   * e nenhum sobrevivente. Aqui o destino é resolvido até o fim da cadeia,
+   * e a cadeia é curta por construção.
+   */
+  const visitados = new Set<string>([de]);
+  for (let i = 0; i < 10; i++) {
+    const { data } = await sb.from("crm_contacts").select("merged_into_contact_id").eq("id", para).maybeSingle();
+    const seguinte = data?.merged_into_contact_id;
+    if (!seguinte) break;
+    if (visitados.has(seguinte)) throw new Error("Esses contatos já estão mesclados entre si.");
+    visitados.add(seguinte);
+    para = seguinte;
+  }
+  if (de === para) throw new Error("Esses contatos já estão mesclados entre si.");
   for (const t of ["crm_leads", "crm_opportunities", "crm_trials", "crm_activities", "crm_tasks", "crm_attribution_touches", "crm_whatsapp_handoffs"]) await sb.from(t).update({ contact_id: para }).eq("contact_id", de);
   await sb.from("crm_contacts").update({ referred_by_contact_id: para }).eq("referred_by_contact_id", de);
   await sb.from("crm_leads").update({ referred_by_contact_id: para }).eq("referred_by_contact_id", de);
@@ -468,7 +487,10 @@ export async function mesclarContatos(fd: FormData) {
   if (cliDe && !cliPara) await sb.from("crm_clients").update({ contact_id: para }).eq("id", cliDe.id);
   else if (cliDe && cliPara) { for (const t of ["crm_contracts", "crm_revenue_events"]) await sb.from(t).update({ client_id: cliPara.id }).eq("client_id", cliDe.id); await sb.from("crm_clients").delete().eq("id", cliDe.id); }
   await sb.from("crm_contacts").update({ merged_into_contact_id: para, possivel_duplicata_de: null }).eq("id", de);
-  await sb.from("crm_contacts").update({ possivel_duplicata_de: null }).eq("id", para);
+  // Quem já apontava para o contato absorvido passa a apontar para o que ficou.
+  await sb.from("crm_contacts").update({ merged_into_contact_id: para }).eq("merged_into_contact_id", de);
+  await sb.from("crm_contacts").update({ possivel_duplicata_de: para }).eq("possivel_duplicata_de", de);
+  await sb.from("crm_contacts").update({ merged_into_contact_id: null, possivel_duplicata_de: null }).eq("id", para);
   await atividade(sb, u.id, { contact_id: para, tipo: "merge", descricao: "Contatos mesclados", metadata: { de } });
   revalidarTudo(["/crm/qualidade-de-dados"]);
 }
