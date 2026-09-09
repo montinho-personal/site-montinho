@@ -41,6 +41,12 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  "rosca-direta-vs-rosca-martelo":
+    "Comparativo de exercício: a decisão do leitor é qual pegada usar, e a resposta é anatômica, não numérica. Nenhuma ferramenta do site compara exercícios.",
+
+  "hack-vs-leg-press":
+    "Mesma razão do agachamento vs leg press: a pergunta é onde a carga entra e como o quadril se move, e isso não vira conta. A de 1RM aqui seria a disponível, não a certa.",
+
   "puxada-vs-remada":
     "Mesma razão dos outros comparativos de exercício: a decisão do leitor é qual vetor de puxada colocar no treino, e nenhuma ferramenta do site compara exercícios. A de 1RM responde a carga, que é outra pergunta.",
 
