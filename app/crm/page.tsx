@@ -3,6 +3,7 @@ import { exigirUsuario } from "@/lib/crm/auth";
 import { base, catalogo, urlWhatsAppContato } from "@/lib/crm/dados";
 import { itensHoje, todasVisoes, contagemFunil, inicioDoMes, mesAnterior } from "@/lib/crm/visao";
 import { taxasFunil, valorPipeline, mrrNormalizado, cicloDeVendaDias } from "@/lib/crm/metricas";
+import { mensagemPara } from "@/lib/crm/copy";
 import { Badge, Btn, Card, Pagina, Stat, Vazio, brl, num, pct, relativo } from "@/components/crm/ui";
 import { concluirTarefa } from "./actions";
 
@@ -50,7 +51,8 @@ export default async function Hoje() {
         <ul className="mb-8 space-y-2">
           {itens.slice(0, 40).map((i) => {
             const contato = b.contatos.find((c) => c.id === i.contactId);
-            const wa = urlWhatsAppContato(contato?.telefone_e164 ?? null);
+            // A mensagem nasce da situação do card: primeiro contato com a página de origem, follow-up da proposta com os dias, confirmação da experimental com o horário.
+            const wa = urlWhatsAppContato(contato?.telefone_e164 ?? null, mensagemPara(b, cat, { contactId: i.contactId, leadId: i.leadId, clientId: i.clientId }, i.grupo, agora).texto);
             const tom = i.prioridade <= 2 ? "ruim" : i.prioridade <= 4 ? "alerta" : "neutro";
             const href = i.leadId ? `/crm/leads/${i.leadId}` : i.clientId ? `/crm/clientes/${i.clientId}` : "#";
             return (

@@ -2,8 +2,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { exigirUsuario } from "@/lib/crm/auth";
 import { base, catalogo, urlWhatsAppContato } from "@/lib/crm/dados";
-import { visaoLead } from "@/lib/crm/visao";
+import { itensHoje, visaoLead } from "@/lib/crm/visao";
 import { atribuir } from "@/lib/crm/metricas";
+import { mensagemPara } from "@/lib/crm/copy";
 import { Aviso, Badge, Btn, Campo, Card, Detalhes, Input, Pagina, Select, Textarea, brl, dataHoraBr, dataHoraInput, dataInput, relativo } from "@/components/crm/ui";
 import { agendarExperimental, atualizarContato, concluirTarefa, criarTarefa, definirOrigem, definirProximaAcao, enviarProposta, ligarHandoff, marcarExperimental, marcarGanho, marcarPerdido, moverEtapa, reativarLead, registrarAtividade } from "../../actions";
 
@@ -16,7 +17,8 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
   const v = visaoLead(b, cat, lead); if (!v) notFound();
   const { contato, opp, etapa } = v;
   const etapasPipe = opp ? cat.etapas.filter((e) => e.pipeline_id === opp.pipeline_id) : [];
-  const wa = urlWhatsAppContato(contato.telefone_e164);
+  // O mesmo motor da tela Hoje: a situação vem do item de maior prioridade deste lead, e sem item o estado do lead decide.
+  const wa = urlWhatsAppContato(contato.telefone_e164, mensagemPara(b, cat, { contactId: contato.id, leadId: lead.id }, itensHoje(b, cat, [v])[0]?.grupo).texto);
   const toques = b.toques.filter((t) => t.contact_id === contato.id);
   const attr = atribuir(toques.map((t) => ({ occurredAt: t.occurred_at, sourceCode: t.source_code, campaign: t.campaign, content: t.content, confidence: t.confidence })), lead.created_at);
   const handoff = b.handoffs.find((h) => h.id === lead.handoff_id);

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { exigirUsuario } from "@/lib/crm/auth";
 import { base, catalogo, urlWhatsAppContato } from "@/lib/crm/dados";
+import { mensagemPara } from "@/lib/crm/copy";
 import { ltvRealizado, mrrDoContrato, diasEntre } from "@/lib/crm/metricas";
 import { Badge, Btn, Campo, Card, Detalhes, Input, Pagina, Select, Stat, Tabela, Textarea, brl, dataBr, dataHoraBr, dataInput } from "@/components/crm/ui";
 import { cancelarCliente, criarTarefa, gerarCodigoIndicacao, marcarRecebido, registrarAtividade, registrarReceita, renovarContrato } from "../../actions";
@@ -20,7 +21,7 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
   const atividades = b.atividades.filter((a) => a.client_id === c.id || a.contact_id === c.contact_id);
   const leads = b.leads.filter((l) => l.contact_id === c.contact_id);
   const indicados = b.contatos.filter((x) => x.referred_by_contact_id === c.contact_id);
-  const wa = urlWhatsAppContato(contato.telefone_e164);
+  const wa = urlWhatsAppContato(contato.telefone_e164, mensagemPara(b, cat, { contactId: contato.id, clientId: c.id }).texto);
   const plano = cat.planos.find((p) => p.id === c.current_plan_id);
   const meses = diasEntre(c.first_purchase_at, c.cancelled_at ?? new Date().toISOString()) / 30.44;
   const ro = u.role === "readonly";

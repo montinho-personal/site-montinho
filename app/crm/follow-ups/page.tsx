@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { exigirUsuario } from "@/lib/crm/auth";
-import { base, urlWhatsAppContato } from "@/lib/crm/dados";
+import { base, catalogo, urlWhatsAppContato } from "@/lib/crm/dados";
 import { slaFollowUp } from "@/lib/crm/metricas";
+import { mensagemPara } from "@/lib/crm/copy";
 import { Badge, Btn, Pagina, Stat, Vazio, pct, relativo } from "@/components/crm/ui";
 import { concluirTarefa } from "../actions";
 
 export default async function FollowUps() {
   await exigirUsuario();
-  const b = await base();
+  const [b, cat] = await Promise.all([base(), catalogo()]);
   const agora = new Date();
   const abertas = b.tarefas.filter((t) => !t.completed_at);
   const grupos = [
@@ -30,7 +31,7 @@ export default async function FollowUps() {
             <ul className="space-y-2">{g.xs.map((t) => {
               const ct = b.contatos.find((c) => c.id === t.contact_id);
               const href = t.lead_id ? `/crm/leads/${t.lead_id}` : t.client_id ? `/crm/clientes/${t.client_id}` : "#";
-              const wa = urlWhatsAppContato(ct?.telefone_e164 ?? null);
+              const wa = urlWhatsAppContato(ct?.telefone_e164 ?? null, mensagemPara(b, cat, { contactId: t.contact_id ?? "", leadId: t.lead_id, clientId: t.client_id }, new Date(t.due_at) < agora ? "follow_up_atrasado" : "follow_up_hoje", agora).texto);
               return (
                 <li key={t.id} className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-white/10 bg-zinc-900/70 p-3">
                   <div><Link href={href} className="font-medium hover:underline">{ct?.nome ?? "—"}</Link> <Badge tom={t.priority === "alta" ? "ruim" : t.priority === "baixa" ? "neutro" : "alerta"}>{t.priority}</Badge><div className="text-sm text-zinc-400">{t.titulo} · {relativo(t.due_at)} · {t.origem === "automacao" ? "automático" : "manual"}</div></div>
