@@ -676,6 +676,7 @@ insert into public.crm_sources (code, nome, categoria, custo_rastreado, ordem) v
   ('tiktok','TikTok','social',false,80),
   ('personal_por_perto','Personal por Perto','other',false,90),
   ('referral_client','Indicação de aluno','referral',false,100),
+  ('personal_network','Amigo / conhecido','referral',false,105),
   ('referral_partner','Indicação de parceiro','referral',false,110),
   ('whatsapp_direct','WhatsApp direto','direct',false,120),
   ('direct','Direto / digitou o site','direct',false,130),
