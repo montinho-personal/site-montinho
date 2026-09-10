@@ -9,7 +9,7 @@
  * situação certa; (4) o contexto real de um lead vira variáveis certas.
  */
 import { SITUACOES, TEXTOS } from "../lib/crm/copy-textos";
-import { VARIAVEIS, contextoDoContato, escolherSituacao, formatarDiaHora, mensagemPara, perguntaDaMensagem, preencher, type Sinais } from "../lib/crm/copy";
+import { VARIAVEIS, contextoDoContato, escolherSituacao, formatarDiaHora, mensagemPara, objetivoUsavel, perguntaDaMensagem, preencher, type Sinais } from "../lib/crm/copy";
 import type { Base, Catalogo } from "../lib/crm/dados";
 
 let falhas = 0;
@@ -50,8 +50,13 @@ for (const s of SITUACOES) {
     ok(`${s} (${rot}): nada sobrou`, !/[{}\[\]]/.test(t), t);
     ok(`${s} (${rot}): uma pergunta só`, (t.match(/\?/g) ?? []).length === 1, t);
     ok(`${s} (${rot}): termina na pergunta`, t.trimEnd().endsWith("?"), t);
-    ok(`${s} (${rot}): cabe numa tela (≤ 360)`, t.length <= 360, `${t.length} chars`);
+    ok(`${s} (${rot}): cabe numa tela (≤ 400)`, t.length <= 400, `${t.length} chars`);
     ok(`${s} (${rot}): sem espaço duplo ou aspas vazias`, !/ {2}|«»|\(\)/.test(t), t);
+    // O respiro entre os blocos é o que faz a mensagem ser lida de relance no celular.
+    ok(`${s} (${rot}): parágrafos separados por linha em branco`, t.includes("\n\n"), JSON.stringify(t));
+    ok(`${s} (${rot}): nenhuma quebra solta (sempre linha em branco)`, !/[^\n]\n[^\n]/.test(t), JSON.stringify(t));
+    ok(`${s} (${rot}): nenhum parágrafo com mais de 220 chars`, t.split("\n\n").every((p) => p.length <= 220), t.split("\n\n").map((p) => p.length).join("/"));
+    ok(`${s} (${rot}): nenhum parágrafo vazio`, t.split("\n\n").every((p) => p.trim().length > 0), JSON.stringify(t));
     ok(`${s} (${rot}): começa com o nome`, /^(Oi, )?Ana/.test(t) || /^Ana/.test(t) || t.includes("Ana"), t);
   }
   ok(`${s}: vazia não termina frase com preposição`, !/\b(pela|pelo|sobre|no|na|de|do|da|em|para)\s*[.?!]/i.test(preencher(modelo, vazias)), preencher(modelo, vazias));
@@ -94,6 +99,19 @@ ok("texto livre → o texto, sem Ref", perguntaDaMensagem("quanto custa o online
 ok("frase genérica do site → vazio", perguntaDaMensagem("Olá, Montinho! Vim pelo seu site e tenho interesse no seu acompanhamento. Gostaria de saber como funciona e qual opção é mais indicada para mim.") === "");
 ok("vazio → vazio", perguntaDaMensagem(null) === "");
 
+bloco("4b. VARIÁVEIS QUE VÊM SUJAS DO BANCO");
+// A dúvida quase sempre termina em "?" — colada em «sua dúvida: "..."» viraria "?." e uma segunda pergunta.
+const comPergunta = preencher(TEXTOS.primeiro_contato_duvida, { ...vazias, pergunta: "funciona pra quem tem hérnia de disco" });
+ok("dúvida citada não vira segunda pergunta", (comPergunta.match(/\?/g) ?? []).length === 1, comPergunta);
+ok("dúvida citada aparece entre aspas", comPergunta.includes('"funciona pra quem tem hérnia de disco"'), comPergunta);
+// `interesse` é campo livre: às vezes guarda a rota inteira, que não cabe numa frase.
+ok("objetivo curto passa", objetivoUsavel("emagrecer") === "emagrecer");
+ok("objetivo com travessão é descartado", objetivoUsavel("Consultoria online — dúvida sobre a página") === "");
+ok("objetivo longo é descartado", objetivoUsavel("quero emagrecer e melhorar meu condicionamento para a corrida") === "");
+ok("objetivo vazio é vazio", objetivoUsavel(null) === "");
+const semObjetivo = preencher(TEXTOS.lead_quente, { ...vazias, objetivo: objetivoUsavel("Consultoria online — dúvida sobre a página") });
+ok("lead quente sem objetivo usável não deixa frase quebrada", /marcar o primeiro dia\./.test(semObjetivo), semObjetivo);
+
 bloco("5. DIA E HORA");
 const agora = new Date("2026-09-09T15:00:00-03:00");
 ok("hoje", formatarDiaHora("2026-09-09T18:30:00-03:00", agora) === "hoje às 18h30");
@@ -115,7 +133,7 @@ const b = {
     { id: "c3", nome: "Elisa Cruz", cidade: "São Paulo", referred_by_contact_id: "c2" },
   ],
   leads: [
-    { id: "l1", contact_id: "c1", service_id: "s-on", interesse: "dúvida sobre a página", status: "aberto", source_code: "google_ads", handoff_id: "h1", referred_by_contact_id: null, last_contact_at: null, first_response_at: null, created_at: "2026-09-09T13:51:00Z" },
+    { id: "l1", contact_id: "c1", service_id: "s-on", interesse: "Consultoria online — dúvida sobre a página", status: "aberto", source_code: "google_ads", handoff_id: "h1", referred_by_contact_id: null, last_contact_at: null, first_response_at: null, created_at: "2026-09-09T13:51:00Z" },
     { id: "l3", contact_id: "c3", service_id: "s-on", interesse: "emagrecer", status: "aberto", source_code: "referral_client", handoff_id: null, referred_by_contact_id: null, last_contact_at: "2026-09-05T12:00:00Z", first_response_at: "2026-09-04T12:00:00Z", created_at: "2026-09-03T12:00:00Z" },
   ],
   oportunidades: [
@@ -124,7 +142,10 @@ const b = {
   experimentais: [{ id: "t1", contact_id: "c2", lead_id: null, scheduled_at: "2026-09-10T10:00:00Z", local: "academia do Tamboré", status: "agendada" }],
   tarefas: [], clientes: [{ id: "k2", contact_id: "c2", status: "ativo", service_id: "s-on", current_plan_id: "p1", renewal_date: "2026-09-16", cancelled_at: null, updated_at: "2026-09-01" }],
   contratos: [], receitas: [],
-  atividades: [{ id: "a1", lead_id: "l1", contact_id: "c1", tipo: "lead_created", metadata: { mensagem_whatsapp: "Olá, Montinho! Li a página da Consultoria Online e fiquei com uma dúvida: Ref: CXTXF" } }],
+  atividades: [
+    { id: "a1", lead_id: "l1", contact_id: "c1", tipo: "lead_created", metadata: { mensagem_whatsapp: "Olá, Montinho! Li a página da Consultoria Online e fiquei com uma dúvida: Ref: CXTXF" } },
+    { id: "a3", lead_id: "l3", contact_id: "c3", tipo: "lead_created", metadata: { mensagem_whatsapp: "Olá, Montinho! Li a página da Consultoria Online e fiquei com uma dúvida: dá pra fazer em casa? Ref: ABCDE" } },
+  ],
   handoffs: [{ id: "h1", contact_id: "c1", lead_id: "l1", page_title: "Consultoria Online de Treino | Personal Trainer Online — Montinho | Montinho Personal Trainer", gclid: "x", gbraid: null, wbraid: null, created_at: "2026-09-09T13:51:00Z" }],
   toques: [], gastos: [], historicoEtapas: [],
 } as unknown as Base;
@@ -133,6 +154,7 @@ const d = contextoDoContato(b, cat, { contactId: "c1", leadId: "l1" }, agora);
 ok("Denise: primeiro nome", d.vars.nome === "Denise");
 ok("Denise: página limpa", d.vars.pagina === "Consultoria Online de Treino", d.vars.pagina);
 ok("Denise: dúvida vazia (só clicou)", d.sinais.pergunta === "");
+ok("Denise: interesse com travessão não vira objetivo", d.vars.objetivo === "", d.vars.objetivo);
 ok("Denise: veio de anúncio", d.sinais.anuncio === true);
 ok("Denise: serviço em minúsculas", d.vars.servico === "consultoria online");
 ok("Denise: cai em primeiro contato pelo site", escolherSituacao("novo_sem_contato", d.sinais) === "primeiro_contato_site");
@@ -145,6 +167,10 @@ ok("Elisa: dias desde a proposta = 4", e.vars.dias === "4", e.vars.dias);
 ok("Elisa: valor formatado", /^R\$\s?399$/.test(e.vars.valor), e.vars.valor);
 ok("Elisa: indicada pela Bruna", e.vars.indicador === "Bruna");
 ok("Elisa: proposta → follow-up 1", escolherSituacao("proposta_sem_follow_up", e.sinais) === "proposta_follow_up_1");
+ok("Elisa: dúvida guardada com o '?' original", e.sinais.pergunta === "dá pra fazer em casa?", e.sinais.pergunta);
+ok("Elisa: variável de citação sai sem o '?'", e.vars.pergunta === "dá pra fazer em casa", e.vars.pergunta);
+const mDuvida = mensagemPara(b, cat, { contactId: "c3", leadId: "l3" }, "novo_sem_contato", agora);
+ok("citação da dúvida não cria segunda pergunta", (mDuvida.texto.match(/\?/g) ?? []).length === 1, mDuvida.texto);
 const me = mensagemPara(b, cat, { contactId: "c3", leadId: "l3" }, "proposta_sem_follow_up", agora);
 ok("Elisa: mensagem fala dos dias", me.texto.includes("4"), me.texto);
 

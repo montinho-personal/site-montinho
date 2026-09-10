@@ -124,6 +124,17 @@ export function perguntaDaMensagem(texto: string | null | undefined): string {
   return /[a-zA-ZÀ-ú]{2,}/.test(p) ? p : "";
 }
 
+/**
+ * `interesse` é campo livre e nem sempre guarda um objetivo: às vezes guarda a
+ * rota inteira ("Consultoria online — dúvida sobre a página"). Colado numa
+ * frase como "pensando em {objetivo}", isso vira mensagem quebrada. Só passa o
+ * que se encaixa numa frase: curto e sem separador de rótulo.
+ */
+export function objetivoUsavel(interesse: string | null | undefined): string {
+  const t = (interesse ?? "").trim();
+  return t.length > 0 && t.length <= 30 && !/[—–|:;/]/.test(t) ? t : "";
+}
+
 function oportunidadeDoLead(b: Base, leadId: string): Oportunidade | undefined {
   const ops = b.oportunidades.filter((o) => o.lead_id === leadId).sort((a, c) => c.created_at.localeCompare(a.created_at));
   return ops.find((o) => !o.won_at && !o.lost_at) ?? ops[0];
@@ -168,8 +179,9 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
     nome: contato ? primeiroNome(contato.nome) : "",
     servico: (cat.servicos.find((s) => s.id === servicoId)?.nome ?? "").toLowerCase(),
     pagina,
-    objetivo: lead?.interesse ?? "",
-    pergunta: sinais.pergunta,
+    objetivo: objetivoUsavel(lead?.interesse),
+    // A frase que cita a dúvida já abre com dois-pontos e aspas; a pontuação final dela sobraria.
+    pergunta: sinais.pergunta.replace(/[?!.\s]+$/, ""),
     dias: "",
     valor: valorProposta != null ? brl(valorProposta) : "",
     plano: cat.planos.find((p) => p.id === planoId)?.nome ?? "",
