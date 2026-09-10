@@ -63,7 +63,11 @@ for (const s of SITUACOES) {
 }
 
 bloco("3. GRUPO → SITUAÇÃO");
-const base: Sinais = { pergunta: "", indicador: "", pagina: "", anuncio: false, jaContatado: false, propostaEnviada: false, diasProposta: null, etapa: null, experimentalRealizada: false, cliente: undefined, renovaEm: null };
+const base: Sinais = {
+  pergunta: "", indicador: "", pagina: "", anuncio: false, jaContatado: false, propostaEnviada: false, diasProposta: null, etapa: null,
+  exigeExperimental: true, experimentalAgendada: false, experimentalRealizada: false, experimentalNoShow: false,
+  cliente: undefined, renovaEm: null, diasDeCliente: null, jaIndicou: false,
+};
 const S = (x: Partial<Sinais>): Sinais => ({ ...base, ...x });
 ok("novo, só clicou, com página → site", escolherSituacao("novo_sem_contato", S({ pagina: "Consultoria Online" })) === "primeiro_contato_site");
 ok("novo, escreveu dúvida → dúvida vence página", escolherSituacao("novo_sem_contato", S({ pagina: "X", pergunta: "quanto custa?" })) === "primeiro_contato_duvida");
@@ -76,8 +80,15 @@ ok("negociação antiga", escolherSituacao("negociacao_antiga", S({ etapa: "nego
 ok("experimental próxima → confirmar", escolherSituacao("experimental_proxima", S({})) === "experimental_confirmar");
 ok("experimental passou → sem registro", escolherSituacao("experimental_sem_registro", S({})) === "experimental_sem_registro");
 ok("pós-experimental → proposta", escolherSituacao("pos_experimental_sem_proposta", S({ experimentalRealizada: true })) === "pos_experimental_proposta");
-ok("quente sem proposta → lead quente", escolherSituacao("quente", S({ jaContatado: true })) === "lead_quente");
-ok("quente com proposta de 1 dia → ainda lead quente", escolherSituacao("quente", S({ jaContatado: true, propostaEnviada: true, diasProposta: 1 })) === "lead_quente");
+// O ponto da jornada: quem já falou e ainda não comprou não recebe "vamos marcar o primeiro dia".
+// No presencial o degrau é a aula experimental; no online e no flexível, o plano.
+ok("quente, presencial, sem experimental → convite para a experimental", escolherSituacao("quente", S({ jaContatado: true, exigeExperimental: true })) === "convite_experimental");
+ok("quente, online, sem proposta → convite para o plano", escolherSituacao("quente", S({ jaContatado: true, exigeExperimental: false })) === "convite_proposta");
+ok("quente, presencial, experimental já marcada → confirmar, não convidar de novo", escolherSituacao("quente", S({ jaContatado: true, exigeExperimental: true, experimentalAgendada: true })) === "experimental_confirmar");
+ok("quente, experimental realizada → proposta", escolherSituacao("quente", S({ jaContatado: true, exigeExperimental: true, experimentalRealizada: true })) === "pos_experimental_proposta");
+ok("quente, faltou na experimental → remarcar", escolherSituacao("quente", S({ jaContatado: true, exigeExperimental: true, experimentalNoShow: true })) === "experimental_no_show");
+ok("quente com proposta de 1 dia → ainda o próximo passo", escolherSituacao("quente", S({ jaContatado: true, propostaEnviada: true, diasProposta: 1, exigeExperimental: false })) === "convite_proposta");
+ok("serviço indefinido assume presencial (não queima a experimental)", escolherSituacao("quente", S({ jaContatado: true })) === "convite_experimental");
 ok("quente com proposta de 3 dias → follow-up 1", escolherSituacao("quente", S({ jaContatado: true, propostaEnviada: true, diasProposta: 3 })) === "proposta_follow_up_1");
 ok("tarefa de follow-up em lead com proposta → follow-up da proposta", escolherSituacao("follow_up_atrasado", S({ jaContatado: true, propostaEnviada: true, diasProposta: 4 })) === "proposta_follow_up_1");
 ok("tarefa de follow-up em negociação → negociação parada", escolherSituacao("follow_up_hoje", S({ jaContatado: true, propostaEnviada: true, etapa: "negociacao" })) === "negociacao_parada");
@@ -85,12 +96,20 @@ ok("tarefa em lead nunca contatado → primeiro contato", escolherSituacao("foll
 ok("parado sem proposta → segundo toque", escolherSituacao("parado", S({ jaContatado: true })) === "segundo_toque");
 ok("parado depois da experimental → proposta", escolherSituacao("parado", S({ jaContatado: true, experimentalRealizada: true })) === "pos_experimental_proposta");
 ok("sem próxima ação, nunca contatado → primeiro contato", escolherSituacao("sem_proxima_acao", S({})) === "primeiro_contato_generico");
-const cli = (status: string, renovaEm: number | null) => S({ cliente: { status, renewal_date: null } as never, renovaEm });
+const cli = (status: string, renovaEm: number | null, extra: Partial<Sinais> = {}) => S({ cliente: { status, renewal_date: null } as never, renovaEm, diasDeCliente: 200, ...extra });
 ok("renovação próxima", escolherSituacao("renovacao_proxima", cli("ativo", 7)) === "renovacao_proxima");
 ok("renovação vencida", escolherSituacao("renovacao_vencida", cli("ativo", -3)) === "renovacao_vencida");
 ok("tarefa em cliente ativo com renovação vencida → vencida", escolherSituacao("follow_up_atrasado", cli("ativo", -3)) === "renovacao_vencida");
 ok("tarefa em cliente pausado → reativação", escolherSituacao("follow_up_hoje", cli("pausado", null)) === "reativacao_pausado");
 ok("sem grupo, cliente cancelado → reativação", escolherSituacao(null, cli("cancelado", null)) === "reativacao_pausado");
+// Depois da venda: quem acabou de entrar não recebe conversa de renovação.
+ok("aluno de 3 dias → boas-vindas", escolherSituacao(null, cli("ativo", 27, { diasDeCliente: 3 })) === "boas_vindas");
+ok("aluno de 3 dias com renovação vencida → vencida ainda vence", escolherSituacao(null, cli("ativo", -2, { diasDeCliente: 3 })) === "renovacao_vencida");
+ok("aluno no meio do ciclo, renovação longe → não é conversa de renovação", escolherSituacao(null, cli("ativo", 60, { jaIndicou: true })) === "check_in_aluno");
+ok("aluno sem renovação registrada → check-in, não renovação", escolherSituacao(null, cli("ativo", null, { jaIndicou: true })) === "check_in_aluno");
+ok("aluno antigo que nunca indicou → pedido de indicação", escolherSituacao(null, cli("ativo", null, { diasDeCliente: 120 })) === "pedido_indicacao");
+ok("aluno antigo que já indicou → check-in, não pede de novo", escolherSituacao(null, cli("ativo", null, { diasDeCliente: 120, jaIndicou: true })) === "check_in_aluno");
+ok("aluno novo nunca vira pedido de indicação", escolherSituacao(null, cli("ativo", null, { diasDeCliente: 5 })) === "boas_vindas");
 
 bloco("4. PERGUNTA DA MENSAGEM");
 ok("frase fixa sem complemento → vazio", perguntaDaMensagem("Olá, Montinho! Li a página da Consultoria Online e fiquei com uma dúvida: Ref: CXTXF") === "");

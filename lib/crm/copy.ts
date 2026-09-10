@@ -59,22 +59,47 @@ function arrumar(t: string): string {
 export interface Sinais {
   pergunta: string; indicador: string; pagina: string; anuncio: boolean;
   jaContatado: boolean; propostaEnviada: boolean; diasProposta: number | null; etapa: string | null;
-  experimentalRealizada: boolean; cliente: ClienteRow | undefined; renovaEm: number | null;
+  exigeExperimental: boolean; experimentalAgendada: boolean; experimentalRealizada: boolean; experimentalNoShow: boolean;
+  cliente: ClienteRow | undefined; renovaEm: number | null; diasDeCliente: number | null; jaIndicou: boolean;
 }
 
 const primeiroContato = (s: Sinais): Situacao =>
   s.pergunta ? "primeiro_contato_duvida" : s.indicador ? "primeiro_contato_indicacao" : s.pagina ? "primeiro_contato_site" : s.anuncio ? "primeiro_contato_anuncio" : "primeiro_contato_generico";
 const depoisDaProposta = (s: Sinais): Situacao => ((s.diasProposta ?? 0) >= 7 ? "proposta_follow_up_2" : "proposta_follow_up_1");
+
+/**
+ * O passo seguinte de quem já falou e ainda não comprou. Ele depende do
+ * serviço, não da temperatura: presencial passa pela aula experimental antes
+ * da proposta (crm_services.exige_experimental), online e pacote flexível vão
+ * direto ao plano. Convidar para a experimental é o degrau que faltava — sem
+ * ele, um lead quente de presencial recebia "vamos marcar o primeiro dia",
+ * que pula a aula que existe justamente para a pessoa decidir.
+ */
+const proximoPasso = (s: Sinais): Situacao => {
+  if (s.experimentalRealizada) return "pos_experimental_proposta";
+  if (s.experimentalNoShow) return "experimental_no_show";
+  if (s.experimentalAgendada) return "experimental_confirmar";
+  if (s.exigeExperimental) return "convite_experimental";
+  return "convite_proposta";
+};
+
+/** Quem já é aluno: a conversa muda com o momento do ciclo, não com a etapa do funil. */
+const comAluno = (s: Sinais): Situacao => {
+  const c = s.cliente!;
+  if (c.status !== "ativo") return "reativacao_pausado";
+  if (s.renovaEm != null && s.renovaEm < 0) return "renovacao_vencida";
+  if (s.diasDeCliente != null && s.diasDeCliente <= 14) return "boas_vindas";
+  if (s.renovaEm != null && s.renovaEm <= 30) return "renovacao_proxima";
+  if (!s.jaIndicou && s.diasDeCliente != null && s.diasDeCliente >= 90) return "pedido_indicacao";
+  return "check_in_aluno";
+};
+
 const retomar = (s: Sinais): Situacao => {
-  if (s.cliente) {
-    if (s.cliente.status !== "ativo") return "reativacao_pausado";
-    return s.renovaEm != null && s.renovaEm < 0 ? "renovacao_vencida" : "renovacao_proxima";
-  }
+  if (s.cliente) return comAluno(s);
   if (!s.jaContatado) return primeiroContato(s);
   if (s.etapa === "negociacao") return "negociacao_parada";
   if (s.propostaEnviada) return depoisDaProposta(s);
-  if (s.experimentalRealizada) return "pos_experimental_proposta";
-  return "segundo_toque";
+  return s.experimentalRealizada || s.experimentalNoShow || s.experimentalAgendada ? proximoPasso(s) : "segundo_toque";
 };
 
 /** Grupo da tela Hoje (metricas.prioridadesHoje) + estado do lead → situação. Sem grupo, decide só pelo estado. */
@@ -86,7 +111,7 @@ export function escolherSituacao(grupo: string | null | undefined, s: Sinais): S
     case "experimental_proxima": return "experimental_confirmar";
     case "experimental_sem_registro": return "experimental_sem_registro";
     case "pos_experimental_sem_proposta": return "pos_experimental_proposta";
-    case "quente": return s.propostaEnviada && (s.diasProposta ?? 0) >= 2 ? depoisDaProposta(s) : "lead_quente";
+    case "quente": return s.propostaEnviada && (s.diasProposta ?? 0) >= 2 ? depoisDaProposta(s) : proximoPasso(s);
     case "renovacao_proxima": return "renovacao_proxima";
     case "renovacao_vencida": return "renovacao_vencida";
     default: return retomar(s);
@@ -162,6 +187,7 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
   const ultimoContato = lead?.last_contact_at ?? null;
   const pagina = handoff?.page_title ? limparTitulo(handoff.page_title) : "";
 
+  const servico = cat.servicos.find((s) => s.id === servicoId);
   const sinais: Sinais = {
     pergunta: perguntaDaMensagem(mensagemOriginal),
     indicador: indicador ? primeiroNome(indicador.nome) : "",
@@ -171,9 +197,16 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
     propostaEnviada: !!opp?.proposal_sent_at,
     diasProposta,
     etapa: etapa?.code ?? null,
+    // Sem serviço definido ainda, o presencial é o caminho mais comum aqui — e convidar
+    // para a experimental é o convite que não queima etapa se o serviço mudar depois.
+    exigeExperimental: servico?.exige_experimental ?? true,
+    experimentalAgendada: trials.some((t) => t.status === "agendada"),
     experimentalRealizada: trials.some((t) => t.status === "realizada"),
+    experimentalNoShow: trials.some((t) => t.status === "no_show") && !trials.some((t) => t.status === "agendada" || t.status === "realizada"),
     cliente,
     renovaEm,
+    diasDeCliente: cliente ? Math.round(diasEntre(cliente.first_purchase_at, agora)) : null,
+    jaIndicou: b.contatos.some((x) => x.referred_by_contact_id === ref.contactId),
   };
   const vars: Variaveis = {
     nome: contato ? primeiroNome(contato.nome) : "",
