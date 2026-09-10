@@ -69,11 +69,11 @@ const depoisDaProposta = (s: Sinais): Situacao => ((s.diasProposta ?? 0) >= 7 ? 
 
 /**
  * O passo seguinte de quem já falou e ainda não comprou. Ele depende do
- * serviço, não da temperatura: presencial passa pela aula experimental antes
- * da proposta (crm_services.exige_experimental), online e pacote flexível vão
- * direto ao plano. Convidar para a experimental é o degrau que faltava — sem
- * ele, um lead quente de presencial recebia "vamos marcar o primeiro dia",
- * que pula a aula que existe justamente para a pessoa decidir.
+ * serviço, não da temperatura: os formatos presenciais passam pela aula
+ * experimental antes da proposta (crm_services.exige_experimental), a
+ * consultoria online vai direto ao plano. Convidar para a experimental é o
+ * degrau que faltava — sem ele, um lead quente recebia "vamos marcar o
+ * primeiro dia", que pula a aula que existe justamente para a pessoa decidir.
  */
 const proximoPasso = (s: Sinais): Situacao => {
   if (s.experimentalRealizada) return "pos_experimental_proposta";

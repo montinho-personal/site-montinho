@@ -13,7 +13,7 @@ próximo passo é a aula experimental ou o plano:
 | Serviço | Experimental? | Depois de "qualificado" vem |
 |---|---|---|
 | Personal presencial | sim | convite para a aula experimental |
-| Pacote flexível | não | convite para o plano |
+| Pacote flexível | sim | convite para a aula experimental |
 | Consultoria online | não | convite para o plano |
 
 Sem serviço definido, o sistema assume presencial — convidar para a

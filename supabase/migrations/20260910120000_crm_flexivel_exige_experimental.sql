@@ -1,0 +1,12 @@
+-- O Pacote flexível também passa pela aula experimental.
+--
+-- Ele nasceu com exige_experimental = false por suposição minha, não por
+-- decisão dele: as etapas de experimental já estavam no pipeline desde o
+-- início, era só a flag do serviço que destoava. O Renato confirmou em
+-- 10/09/2026 que dá a aula experimental também nesse formato.
+--
+-- A flag não é decorativa: lib/crm/copy.ts a lê para escolher o próximo
+-- passo de quem já conversou e ainda não fechou. Com false, um lead de
+-- pacote flexível era convidado a receber o plano, pulando a aula que
+-- existe justamente para ele decidir antes.
+update public.crm_services set exige_experimental = true where code = 'flexivel';
