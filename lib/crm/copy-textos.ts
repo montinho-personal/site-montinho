@@ -13,6 +13,14 @@
  * é o que separa "cumprimento", "contexto" e "pergunta" em blocos que se
  * leem de relance no celular — texto corrido vira parede e não se lê.
  *
+ * Nenhum texto cita o objetivo da pessoa ("pensando em emagrecer"). O campo
+ * que guardaria isso (`crm_leads.interesse`) está vazio em 67 dos 68 leads, e
+ * é texto livre digitado num momento — a mensagem sai semanas depois. Botar
+ * um objetivo errado na boca de quem treina para outra coisa custa mais caro
+ * do que não citar objetivo nenhum. A variável {objetivo} continua existindo
+ * e chega limpa (ver objetivoUsavel em copy.ts), mas nenhum texto a usa; o
+ * teste cobra isso para a decisão não se perder.
+ *
  * As regras que todo texto segue (e scripts/crm-copy-test.ts cobra):
  * uma pergunta só, no fim; parágrafos curtos e espaçados; cada toque traz
  * algo novo (nunca "só passando"); ancorado num dado concreto da pessoa
@@ -46,7 +54,7 @@ export const TEXTOS: Record<Situacao, string> = {
 
   // Depois da proposta: a dúvida certa é sobre COMO funciona, nunca sobre preço. O último toque devolve a decisão e facilita o "não".
   proposta_follow_up_1:
-    "{nome}, te mandei a proposta[[ de {servico}]][[ há {dias} dias]][[, pensando em {objetivo}]]. Sem pressa nenhuma pra decidir.\n\nFicou alguma dúvida sobre como funciona no dia a dia — frequência, ajustes, contato entre os treinos — que eu possa esclarecer?",
+    "{nome}, te mandei a proposta[[ de {servico}]][[ há {dias} dias]]. Sem pressa nenhuma pra decidir.\n\nFicou alguma dúvida sobre como funciona no dia a dia — frequência, ajustes, contato entre os treinos — que eu possa esclarecer?",
   proposta_follow_up_2:
     "{nome}, imagino que não seja o momento agora, e tá tudo bem mesmo — não vou ficar te cobrando.\n\nDeixo a proposta guardada, sem prazo, pra quando fizer sentido pra você.\n\nSeria má ideia eu te dar um oi daqui a um mês?",
   negociacao_parada:
@@ -58,11 +66,11 @@ export const TEXTOS: Record<Situacao, string> = {
   experimental_sem_registro:
     "Oi, {nome}! Queria saber da aula[[ de {dia_hora}]]. Se rolou, me conta como o corpo ficou depois.\n\nE se não deu pra ir, tudo bem, acontece — a gente remarca sem problema nenhum.\n\nQual dos dois foi?",
   pos_experimental_proposta:
-    "{nome}, gostei demais de treinar com você! A parte mais chata você já fez: apareceu, treinou e me mostrou o que precisa de ajuste[[ pra você {objetivo}]].\n\nVou te mandar agora a proposta montada em cima do que a gente viu, sem compromisso, pra você ler com calma.\n\nPrefere que eu explique cada formato ou quer ler primeiro?",
+    "{nome}, gostei demais de treinar com você! A parte mais chata você já fez: apareceu, treinou e me mostrou o que precisa de ajuste.\n\nVou te mandar agora a proposta montada em cima do que a gente viu, sem compromisso, pra você ler com calma.\n\nPrefere que eu explique cada formato ou quer ler primeiro?",
 
   // Lead quente: quem já engajou recebe próximo passo concreto, com duas opções de horário — sem voltar ao "faz sentido?".
   lead_quente:
-    "Boa, {nome}! O próximo passo é simples: marcar o primeiro dia[[ e começar a trabalhar seu objetivo de {objetivo}]].\n\nSe você quiser, eu vejo um horário ainda essa semana. Fica melhor pra você de manhã cedo ou no fim do dia?",
+    "Boa, {nome}! Pelo que você me contou, dá pra começar. O próximo passo é simples: marcar o primeiro dia.\n\nSe você quiser, eu vejo um horário ainda essa semana. Fica melhor pra você de manhã cedo ou no fim do dia?",
 
   // Renovação e reativação: pergunta sobre o treino, não sobre pagamento. O horário reservado é fato, não escassez inventada.
   renovacao_proxima:

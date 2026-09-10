@@ -109,8 +109,8 @@ ok("objetivo curto passa", objetivoUsavel("emagrecer") === "emagrecer");
 ok("objetivo com travessão é descartado", objetivoUsavel("Consultoria online — dúvida sobre a página") === "");
 ok("objetivo longo é descartado", objetivoUsavel("quero emagrecer e melhorar meu condicionamento para a corrida") === "");
 ok("objetivo vazio é vazio", objetivoUsavel(null) === "");
-const semObjetivo = preencher(TEXTOS.lead_quente, { ...vazias, objetivo: objetivoUsavel("Consultoria online — dúvida sobre a página") });
-ok("lead quente sem objetivo usável não deixa frase quebrada", /marcar o primeiro dia\./.test(semObjetivo), semObjetivo);
+// Ele tem alunos com objetivos diferentes; supor o objetivo errado é pior do que não citar nenhum.
+for (const s of SITUACOES) ok(`${s}: não coloca objetivo na boca da pessoa`, !TEXTOS[s].includes("{objetivo}"), TEXTOS[s]);
 
 bloco("5. DIA E HORA");
 const agora = new Date("2026-09-09T15:00:00-03:00");
