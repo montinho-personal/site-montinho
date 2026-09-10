@@ -68,11 +68,11 @@ export const TEXTOS: Record<Situacao, string> = {
   negociacao_parada:
     "{nome}, parece que ficou alguma coisa travando na hora de decidir[[ sobre {servico}]], e isso é super normal. Não quero ficar te empurrando.\n\nSó pra eu conseguir te ajudar de verdade — e se for só o momento, também vale: o que pesa mais agora, o horário, o formato ou o investimento?",
 
-  // O degrau que separa "conversou" de "comprou". No presencial é a aula experimental — a página
-  // promete "sem compromisso", e é só isso que a mensagem pode prometer: em lugar nenhum do site
-  // ela é anunciada como gratuita, então aqui também não é.
+  // O degrau que separa "conversou" de "comprou". No presencial é a aula experimental: gratuita e
+  // sem compromisso — confirmado pelo Renato em 10/09/2026 e dito também em /lp/personal-alphaville.
+  // "Gratuita" só entrou depois de confirmado; antes a mensagem prometia só "sem compromisso".
   convite_experimental:
-    "{nome}, o jeito mais honesto de você saber se treinar comigo funciona pra você é experimentando.\n\nA gente marca uma aula experimental[[ aí em {cidade}]], eu avalio, monto o treino na hora e você sente como é. Sem compromisso de fechar nada depois.\n\nQual dia dessa semana fica melhor pra você?",
+    "{nome}, o jeito mais honesto de você saber se treinar comigo funciona pra você é experimentando.\n\nA gente marca uma aula experimental[[ aí em {cidade}]]: eu avalio, monto o treino na hora e você sente como é. É gratuita e sem compromisso de fechar nada depois.\n\nQual dia dessa semana fica melhor pra você?",
   convite_proposta:
     "{nome}, pelo que você me contou, já dá pra montar seu plano.\n\nEu monto em cima do seu objetivo e da sua rotina de verdade — não é ficha pronta — e te mando pra você ler com calma, sem compromisso.\n\nQuer que eu monte?",
 

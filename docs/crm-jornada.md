@@ -68,9 +68,10 @@ experimental é o convite que não queima etapa se o serviço mudar depois.
   nunca indicou ninguém. Quem já indicou recebe check-in.
 - **A experimental não se convida duas vezes.** Com aula marcada, a mensagem
   é a de confirmação.
-- **A experimental é "sem compromisso", nunca "gratuita".** É o que a página
-  promete (`/lp/personal-alphaville`), e é o teto do que a mensagem pode
-  dizer.
+- **A experimental é gratuita e sem compromisso.** Confirmado pelo Renato em
+  10/09/2026 e dito na página (`/lp/personal-alphaville`). Antes disso a
+  mensagem só prometia "sem compromisso" — o site é o teto do que ela pode
+  dizer, e "gratuita" só entrou quando passou a estar lá também.
 
 ## O que ainda não tem mensagem, e por quê
 
