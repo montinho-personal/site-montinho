@@ -69,13 +69,13 @@ const RESULTADOS = [
 const PASSOS = [
   { n: "1", t: "Você me chama no WhatsApp", d: "Eu mesmo respondo. Sem robô e sem formulário." },
   { n: "2", t: "Entendo seu objetivo e sua rotina", d: "O que você quer, quanto tempo tem, se há dor ou lesão e onde prefere treinar." },
-  { n: "3", t: "Combinamos a aula experimental", d: "Você sente na prática como é treinar comigo, no seu horário e no seu local." },
+  { n: "3", t: "Combinamos a aula experimental", d: "Gratuita. Você sente na prática como é treinar comigo, no seu horário e no seu local." },
   { n: "4", t: "Monto o seu treino", d: "Individual, do zero, para o seu ponto de partida — não uma ficha genérica." },
   { n: "5", t: "Acompanho e ajusto", d: "Presença em cada série, reavaliação mensal e correção de rota quando precisa." },
 ];
 const FAQ = [
   { q: "Como funciona o primeiro contato?", a: "Você me chama no WhatsApp e me conta o objetivo, a rotina e onde prefere treinar. A partir daí eu explico o formato que faz sentido para o seu caso e vejo os horários disponíveis. É uma conversa, não um cadastro." },
-  { q: "Preciso fechar alguma coisa depois da aula experimental?", a: "Não. A aula experimental existe justamente para você sentir como é treinar comigo antes de decidir qualquer coisa. Se fizer sentido, seguimos; se não fizer, está tudo certo." },
+  { q: "A aula experimental é paga? Preciso fechar alguma coisa depois?", a: "Não e não. A aula experimental é gratuita e existe justamente para você sentir como é treinar comigo antes de decidir qualquer coisa. Se fizer sentido, seguimos; se não fizer, está tudo certo." },
   { q: "Você atende na academia do meu condomínio?", a: "Sim. Boa parte dos meus alunos treina no próprio espaço fitness do condomínio, em Alphaville e no Tamboré. Me diga onde você mora que eu confirmo se atendo aí." },
   { q: "Preciso já estar treinando?", a: "Não. Atendo desde quem nunca pisou numa academia até quem treina há anos e travou. Começar acompanhado é o jeito mais seguro: técnica primeiro, base de força depois, carga de forma gradual." },
   { q: "Tenho dor nas costas, no joelho ou no ombro. Dá para treinar?", a: "Na maior parte dos casos, treinar bem orientado é justamente o que ajuda. Tenho formação específica em treino para pessoas com dores e limitações, e muitos dos meus alunos têm 50, 60 e 70 anos. A conversa inicial define o que entra e o que fica de fora." },
