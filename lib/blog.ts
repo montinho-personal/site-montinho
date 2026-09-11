@@ -2793,7 +2793,8 @@ export const blogPosts = ([
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/quanto-tempo-para-aparecer-resultado-na-academia-infographic.svg" alt="Infográfico sobre Quanto Tempo Leva Para Aparecer Resultado na Academia? A Resposta Honesta — Montinho Personal Trainer" title="Quanto Tempo Leva Para Aparecer Resultado na Academia? A Res" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/quanto-tempo-para-aparecer-resultado-na-academia-capa.webp" alt="Arte de capa ilustrada sobre o tempo até os primeiros resultados visíveis na academia" title="Quanto Tempo Leva Para Aparecer Resultado na Academia — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Quanto tempo até aparecer resultado: a resposta honesta por fase.</figcaption>
 </figure>
 <p>Nenhuma dessas respostas é útil. A primeira é vaga demais. A segunda e a terceira vendem ilusão.</p>
 
@@ -23873,7 +23874,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/bursite-no-ombro-infographic.svg" alt="Infográfico sobre Bursite no Ombro: Como Identificar, Tratar e Voltar a Treinar — Montinho Personal Trainer" title="Bursite no Ombro: Como Identificar, Tratar e Voltar a Treina" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/bursite-no-ombro-capa.webp" alt="Arte de capa ilustrada sobre bursite no ombro, identificação da dor e retorno seguro ao treino" title="Bursite no Ombro — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Bursite no ombro: como identificar, tratar e voltar a treinar.</figcaption>
 </figure>
 <h2>Como reconhecer a bursite de ombro</h2>
 <p>O padrão clássico de bursite subacromial:</p>
@@ -33014,7 +33016,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/fascite-plantar-exercicio-infographic.svg" alt="Infográfico sobre Fascite Plantar e Exercício: Como Treinar Sem Piorar a Dor — Montinho Personal Trainer" title="Fascite Plantar e Exercício: Como Treinar Sem Piorar a Dor" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/fascite-plantar-exercicio-capa.webp" alt="Arte de capa ilustrada sobre fascite plantar e como continuar treinando sem piorar a dor no pé" title="Fascite Plantar e Exercício — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Fascite plantar: como treinar sem agravar a dor.</figcaption>
 </figure>
 <p>A boa notícia: na maioria dos casos, ela é tratável. E com a abordagem certa, você consegue continuar treinando durante a recuperação.</p>
 
@@ -35451,7 +35454,8 @@ TDEE = 1708 × 1,55 = <strong>2.647 kcal/dia</strong></p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/musculacao-para-maiores-de-60-infographic.svg" alt="Infográfico sobre Musculação Para Maiores de 60 Anos: Benefícios, Cuidados e Como Começar — Montinho Personal Trainer" title="Musculação Para Maiores de 60 Anos: Benefícios, Cuidados e C" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/musculacao-para-maiores-de-60-capa.webp" alt="Arte de capa ilustrada sobre musculação para pessoas com mais de 60 anos, com foco em força e autonomia" title="Musculação Para Maiores de 60 Anos — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Musculação após os 60: benefícios, cuidados e por onde começar.</figcaption>
 </figure>
 <p>A partir dos 40 anos, o corpo perde em média 1% de massa muscular por ano. Essa perda acelera após os 60 para 1,5-2% ao ano. O resultado é a sarcopenia — a perda progressiva de força e função muscular que está diretamente associada a quedas, hospitalização, perda de independência e mortalidade precoce.</p>
 
@@ -36847,7 +36851,8 @@ Use com moderação — o deltoide anterior geralmente já está bem estimulado 
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-de-peito-hipertrofia-infographic.svg" alt="Infográfico sobre Treino de Peito para Hipertrofia: Guia Completo Além do Supino — Montinho Personal Trainer" title="Treino de Peito para Hipertrofia: Guia Completo Além do Supi" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-de-peito-hipertrofia-capa.webp" alt="Arte de capa ilustrada sobre treino de peito para hipertrofia, com supino e variações de ângulo" title="Treino de Peito para Hipertrofia — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino de peito: o guia completo que vai além do supino.</figcaption>
 </figure>
 <p>Este guia vai além do supino — sem abandona-lo.</p>
 
@@ -50898,7 +50903,8 @@ Total: 19 repetições próximas à falha vs 10 em uma série convencional</p>
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-tirar-medidas-corporais-infographic.svg" alt="Infográfico sobre Como Tirar Medidas Corporais Para Acompanhar Evolução Real na Musculação — Montinho Personal Trainer" title="Como Tirar Medidas Corporais Para Acompanhar Evolução Real n" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-tirar-medidas-corporais-capa.webp" alt="Arte de capa ilustrada sobre como tirar medidas corporais com fita métrica para acompanhar a evolução" title="Como Tirar Medidas Corporais — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Medidas corporais: o acompanhamento que a balança não mostra.</figcaption>
 </figure>
 <h2>Os 10 Pontos de Medição Essenciais</h2>
 <p>Meça sempre com fita métrica inextensível (não de costura — ela estica) e no mesmo horário (de preferência pela manhã, em jejum, após urinar).</p>
@@ -67633,7 +67639,8 @@ O objetivo final é o mesmo: uma relação com a comida que seja sustentável, p
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/dieta-hipercalorica-ganho-massa-infographic.svg" alt="Infográfico sobre Dieta Hipercalórica para Ganho de Massa — Montinho Personal Trainer" title="Dieta Hipercalórica para Ganho de Massa: Como Montar" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/dieta-hipercalorica-ganho-massa-capa.webp" alt="Arte de capa ilustrada sobre dieta hipercalórica para ganho de massa muscular" title="Dieta Hipercalórica para Ganho de Massa — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Dieta hipercalórica: como montar o superávit sem ganhar só gordura.</figcaption>
 </figure>
 
 ## O Fundamento: Por Que o Superávit Calórico é Necessário
@@ -75869,7 +75876,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>"Montinho, fui viajar e o hotel não tinha academia decente." Já ouvi essa frase dezenas de vezes — e ela esconde o mito mais lucrativo do mercado: a ideia de que treino de verdade exige equipamento. Não exige. <strong>O que falta no hotel não é aparelho. É plano.</strong></p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/exercicios-para-fazer-em-hoteis-infographic.svg" alt="Infográfico sobre Exercícios para Fazer em Hotéis: Treino sem Academia — Montinho Personal Trainer" title="Exercícios para Fazer em Hotéis: Treino sem Academia" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/exercicios-para-fazer-em-hoteis-capa.webp" alt="Arte de capa ilustrada sobre treinar em quarto de hotel, sem academia e sem equipamento" title="Exercícios para Fazer em Hotéis — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino de viagem: manter a rotina mesmo sem academia.</figcaption>
 </figure>
 
 <p>Um treino de peso corporal bem desenhado mantém força e condicionamento durante as férias tão bem quanto uma sessão de academia. Em 30 a 40 minutos, você trabalha todos os grandes grupos musculares e ainda faz cardio — em 2x2 metros de carpete de hotel.</p>
@@ -80924,7 +80932,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você olha o investimento em um <strong>personal trainer</strong> e a dúvida aperta: será que vale a pena, ou é vaidade cara? A mensalidade da academia já pesa — somar um profissional por cima parece exagero.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/vale-a-pena-contratar-personal-trainer-infographic.svg" alt="Infográfico sobre Vale a Pena Contratar um Personal Trainer? — Montinho Personal Trainer" title="Vale a Pena Contratar um Personal Trainer?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/vale-a-pena-contratar-personal-trainer-capa.webp" alt="Arte de capa ilustrada sobre o custo-benefício de contratar um personal trainer" title="Vale a Pena Contratar um Personal Trainer? — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Personal trainer: quando o investimento se paga em resultado.</figcaption>
 </figure>
 
 <p>Enquanto isso, os meses passam. O treino da internet não funciona, o espelho não muda, e cada ano de "vou resolver sozinho" custa exatamente o que você tenta economizar: tempo, saúde e dinheiro em matrículas subutilizadas.</p>
@@ -82378,7 +82387,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Mensalidade acessível, estrutura grande, promessa de resultado. Você já viu esse filme — e talvez já tenha pago por ele sem assistir até o fim. <strong>Matrícula sem uso é o imposto da boa intenção.</strong></p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/skyfit-alphaville-infographic.svg" alt="Infográfico sobre SkyFit Alphaville: Vale a Pena? — Montinho Personal Trainer" title="SkyFit Alphaville: Vale a Pena?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/skyfit-alphaville-capa.webp" alt="Arte de capa ilustrada da academia SkyFit em Alphaville" title="SkyFit Alphaville — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">SkyFit Alphaville: estrutura, proposta e para quem vale a pena.</figcaption>
 </figure>
 
 <p>Em Alphaville, onde as opções vão do estúdio boutique à rede premium, escolher errado custa caro duas vezes: no bolso e na motivação. Três meses parado depois de uma escolha ruim é o roteiro mais comum da região.</p>
@@ -86035,7 +86045,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `<p>Você já se matriculou "para emagrecer" e três meses depois a balança nem se mexeu? A frustração é real — e a culpa, quase nunca, é da academia que você escolheu.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/qual-academia-e-melhor-para-emagrecer-infographic.svg" alt="Infográfico sobre Qual Academia É Melhor para Emagrecer? — Montinho Personal Trainer" title="Qual Academia É Melhor para Emagrecer?" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/qual-academia-e-melhor-para-emagrecer-capa.webp" alt="Arte de capa ilustrada sobre como escolher a academia certa para quem quer emagrecer" title="Qual Academia É Melhor para Emagrecer? — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">O que realmente importa na academia quando o objetivo é emagrecer.</figcaption>
 </figure>
 
 <p>O marketing fitness adora vender a ideia de que existe <strong>a academia que emagrece</strong>: a com mais aulas, a com mais esteiras, a mais moderna de <strong>Alphaville</strong>. Enquanto isso, gente emagrece em garagem com dois halteres e gente engorda em academia premium.</p>
@@ -91387,7 +91398,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Elásticos de resistência são o equipamento mais subestimado do treino em casa. Custam menos que uma mensalidade de academia, cabem numa gaveta ou mala e permitem treinar o corpo inteiro com resistência progressiva de verdade. A questão nunca foi se elástico funciona — é como usar do jeito certo.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/treino-com-elasticos-em-casa-infographic.svg" alt="Infográfico sobre Treino com Elásticos em Casa: Guia Completo Para Resultados Reais — Montinho Personal Trainer" title="Treino com Elásticos em Casa: Guia Completo Para Resultados " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/treino-com-elasticos-em-casa-capa.webp" alt="Arte de capa ilustrada sobre treino com elásticos de resistência em casa" title="Treino com Elásticos em Casa — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Treino com elásticos: resultado real sem equipamento pesado.</figcaption>
 </figure>
 
 
@@ -92213,7 +92225,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Você sobe na plataforma, segura os eletrodos, espera alguns segundos — e recebe um relatório com uma dúzia de números: percentual de gordura, massa magra, água corporal, gordura visceral, taxa metabólica. E aí vem a pergunta que quase ninguém responde direito: <strong>o que fazer com tudo isso?</strong></p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/bioimpedancia-como-interpretar-infographic.svg" alt="Infográfico sobre Bioimpedância: Como Funciona e Como Interpretar os Resultados — Montinho Personal Trainer" title="Bioimpedância: Como Funciona e Como Interpretar os Resultado" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/bioimpedancia-como-interpretar-capa.webp" alt="Arte de capa ilustrada sobre exame de bioimpedância e a leitura dos resultados de composição corporal" title="Bioimpedância: Como Interpretar — Montinho Personal Trainer" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Bioimpedância: como funciona e como ler os resultados de verdade.</figcaption>
 </figure>
 
 
