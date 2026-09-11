@@ -197,6 +197,14 @@ export const ARTIGOS_COM_LINK_FC: string[] = [
   "cardio-antes-ou-depois-da-musculacao",
   "musculacao-ou-corrida-para-emagrecer",
   "caminhada-emagrece",
+  /**
+   * Esporte coletivo e luta de agarre: o gasto depende de quanto tempo a
+   * pessoa passa de fato em intensidade alta, e ela não tem como saber isso
+   * sem uma faixa de referência. A calculadora de déficit seria a ferramenta
+   * natural dos dois, mas o registro dela está no teto de oito.
+   */
+  "jiu-jitsu-emagrece",
+  "futebol-emagrece",
   "corrida-de-rua-iniciante",
   "eliptico-emagrece",
 ];
