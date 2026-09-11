@@ -6,6 +6,7 @@ import { SITE_URL } from "@/lib/blog";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import FAQ from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
+import { ligacoesDoPerfil } from "@/lib/perfil-google";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer em Santana de Parnaíba | Montinho Personal Trainer" },
@@ -100,6 +101,10 @@ const localSchema = {
   ],
   serviceType: "Personal Trainer",
   priceRange: "$$",
+  // Mesma entidade que o LocalBusiness do layout, vista por uma região:
+  // sameAs/hasMap apontam para o Perfil da Empresa quando a URL existe.
+  parentOrganization: { "@id": `${SITE_URL}/#localbusiness` },
+  ...ligacoesDoPerfil(),
 };
 
 const faqSchema = {

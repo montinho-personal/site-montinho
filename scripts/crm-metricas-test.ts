@@ -156,6 +156,8 @@ bloco("7. ATRIBUIÇÃO");
 ok("gclid presente → google_ads, confiança alta", inferirFonte({ gclid: "abc" }).sourceCode === "google_ads" && inferirFonte({ gclid: "abc" }).confidence === "high");
 ok("utm instagram/organic_social → instagram_organic", inferirFonte({ utmSource: "instagram", utmMedium: "organic_social" }).sourceCode === "instagram_organic");
 ok("utm instagram/paid → instagram_ads", inferirFonte({ utmSource: "instagram", utmMedium: "paid_social" }).sourceCode === "instagram_ads");
+ok("link /l/gbp (google/perfil_empresa) → google_business, confiança alta", inferirFonte({ utmSource: "google", utmMedium: "perfil_empresa" }).sourceCode === "google_business" && inferirFonte({ utmSource: "google", utmMedium: "perfil_empresa" }).confidence === "high");
+ok("google/cpc continua google_ads, não google_business", inferirFonte({ utmSource: "google", utmMedium: "cpc" }).sourceCode === "google_ads");
 ok("referrer google sem utm → google_organic, confiança média", inferirFonte({ referrer: "https://www.google.com/" }).sourceCode === "google_organic" && inferirFonte({ referrer: "https://www.google.com/" }).confidence === "medium");
 ok("nada → unknown, confiança baixa", inferirFonte({}).sourceCode === "unknown" && inferirFonte({}).confidence === "low");
 ok("código de indicação → referral_client", inferirFonte({ referralCode: "ABCD" }).sourceCode === "referral_client");

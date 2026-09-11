@@ -392,6 +392,9 @@ export function inferirFonte(p: { utmSource?: string | null; utmMedium?: string 
   if (s.includes("instagram") || s === "ig") return { sourceCode: /paid|cpc|ads/.test(m) ? "instagram_ads" : "instagram_organic", confidence: "high" };
   if (s.includes("facebook") || s === "fb") return { sourceCode: /paid|cpc|ads/.test(m) ? "facebook_ads" : "facebook_organic", confidence: "high" };
   if (s === "google" && /cpc|paid|ppc/.test(m)) return { sourceCode: "google_ads", confidence: "high" };
+  // O botão "Site" do Perfil da Empresa chega com o link controlado /l/gbp
+  // (utm_medium=perfil_empresa). Antes desta linha caía em "desconhecido".
+  if (s === "google" && /perfil|gbp|business|maps|local/.test(m)) return { sourceCode: "google_business", confidence: "high" };
   if (s === "tiktok") return { sourceCode: "tiktok", confidence: "high" };
   if (s === "youtube") return { sourceCode: "youtube", confidence: "high" };
   if (s === "qr" || m === "qr") return { sourceCode: "offline_qr", confidence: "high" };

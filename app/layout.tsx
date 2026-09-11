@@ -10,6 +10,7 @@ import StickyBar from "@/components/sticky/StickyBar";
 import AnalyticsTracker from "@/components/analytics/AnalyticsTracker";
 import HandoffTracker from "@/components/crm/HandoffTracker";
 import SiteChrome, { MainDoSite } from "@/components/layout/SiteChrome";
+import { ligacoesDoPerfil } from "@/lib/perfil-google";
 
 const dmSans = DM_Sans({
   variable: "--font-inter",
@@ -134,7 +135,7 @@ const localBusinessSchema = {
       closes: "13:00",
     },
   ],
-  sameAs: ["https://www.instagram.com/montinhopersonal/"],
+  ...ligacoesDoPerfil(),
   "@id": "https://www.montinhopersonal.com.br/#localbusiness",
 };
 
@@ -161,7 +162,7 @@ const personSchema = {
   name: "Montinho",
   jobTitle: "Personal Trainer",
   url: "https://www.montinhopersonal.com.br/minha-historia",
-  sameAs: ["https://www.instagram.com/montinhopersonal/"],
+  ...ligacoesDoPerfil(),
   worksFor: {
     "@id": "https://www.montinhopersonal.com.br/#localbusiness",
   },
