@@ -97,6 +97,10 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
 
   "por-quanto-tempo-tomar-mounjaro":
     "A pergunta que sobra é 'já posso parar?', e a resposta são três condições — peso estável, treino de força há dois meses, comida que se sustenta — nenhuma delas um número que se calcule. Quem quiser a conta de proteína encontra a calculadora no artigo irmão, sobre parar de tomar; repeti-la aqui responderia uma pergunta que este leitor ainda não fez.",
+  "panturrilha-em-pe-vs-sentada":
+    "Comparação anatômica: a posição do joelho decide se trabalha gastrocnêmio ou sóleo. O leitor sai com uma decisão de montagem de treino, não com um número para calcular.",
+  "barra-fixa-vs-puxada":
+    "Comparação de exercício e de momento do aluno. A escolha depende de conseguir ou não fazer barra fixa hoje, que é observação direta, não cálculo.",
 };
 
 export const SLUGS_SEM_FERRAMENTA = Object.keys(ARTIGOS_SEM_FERRAMENTA);
