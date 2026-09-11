@@ -20,6 +20,10 @@ export const LINKS: Record<string, LinkControlado> = {
   "qr-condominio": { destino: "/onde-atendo", utm_source: "qr", utm_medium: "offline", utm_campaign: "condominio", utm_content: "qr_condominio", tipo: "qr" },
   "qr-academia": { destino: "/academias-alphaville", utm_source: "qr", utm_medium: "offline", utm_campaign: "academia", utm_content: "qr_academia", tipo: "qr" },
   "ppp": { destino: "/personal-trainer-alphaville", utm_source: "personalporperto", utm_medium: "referral", utm_campaign: "diretorio", utm_content: "perfil", tipo: "other" },
+  // O botão "Site" do Perfil da Empresa no Google. Sem isto, quem clica ali
+  // chega à home sem marcação e o CRM registra "desconhecido" — o canal com
+  // 23 avaliações ficava invisível na atribuição.
+  "gbp": { destino: "/", utm_source: "google", utm_medium: "perfil_empresa", utm_campaign: "perfil", utm_content: "botao_site", tipo: "other" },
 };
 
 export function urlDoLink(slug: string, extra: Record<string, string> = {}): string | null {

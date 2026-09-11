@@ -6,6 +6,7 @@ import ComoFunciona from "@/components/home/ComoFunciona";
 import MinhaHistoriaPreview from "@/components/home/MinhaHistoriaPreview";
 import Resultados from "@/components/home/Resultados";
 import Depoimentos from "@/components/home/Depoimentos";
+import OndeAtendo from "@/components/home/OndeAtendo";
 import CTAFinal from "@/components/home/CTAFinal";
 import DiagnosticoCTA from "@/components/home/DiagnosticoCTA";
 import AskEmbed from "@/components/ask/AskEmbed";
@@ -96,6 +97,7 @@ export default function Home() {
       <MinhaHistoriaPreview />
       <Resultados />
       <Depoimentos />
+      <OndeAtendo />
       <DiagnosticoCTA />
       <HomeFAQ />
       <section className="py-20 border-t border-white/10" style={{ background: "#0d0d0d" }}>
