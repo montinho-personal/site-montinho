@@ -117035,6 +117035,169 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 `,
   },
 
+  {
+    slug: "jiu-jitsu-emagrece",
+    title: "Jiu-Jitsu Emagrece? Calorias Reais e o Que Esperar",
+    metaTitle: "Jiu-Jitsu Emagrece? Quantas Calorias Queima por Treino",
+    metaDescription: "Quantas calorias um treino de jiu-jitsu queima de verdade? Veja números honestos, por que o rola gasta mais que a técnica e como combinar com musculação.",
+    excerpt: "O jiu-jitsu queima bem, mas de um jeito diferente das lutas de trocação: o gasto se concentra no rola, e o resto da aula é técnica parada. Veja os números reais e o que decide o resultado.",
+    category: "Emagrecimento",
+    date: "2026-09-11",
+    updatedAt: "2026-09-11",
+    readTime: "9 min",
+    author: "Montinho",
+    tags: ["jiu-jitsu", "emagrecimento", "queima de calorias", "artes marciais", "musculação"],
+    faq: [
+      { question: "Quantas calorias queima um treino de jiu-jitsu?", answer: "Numa aula típica de 60 a 90 minutos, entre 400 e 800 kcal para a maioria das pessoas. A variação é grande porque o gasto se concentra no rola: uma aula com muita técnica e pouco sparring fica na faixa baixa; uma aula com seis ou sete rolas seguidos, em alguém mais pesado, passa disso." },
+      { question: "Jiu-jitsu emagrece mais que muay thai?", answer: "Por aula, o muay thai costuma gastar mais, porque mantém a frequência cardíaca alta do começo ao fim. O jiu-jitsu alterna picos intensos no rola com períodos parados de técnica. Na prática isso importa pouco: quem treina três vezes por semana e come em déficit emagrece nos dois." },
+      { question: "Por que fico tão cansado se quase não me mexo?", answer: "Porque grande parte do esforço no jiu-jitsu é isométrico — você sustenta, empurra e resiste sem sair do lugar. Contração sustentada comprime o vaso e atrapalha a chegada de sangue no músculo, então ele fadiga rápido e a respiração dispara. Cansaço alto com deslocamento baixo é a assinatura da modalidade." },
+      { question: "Preciso fazer musculação junto com o jiu-jitsu?", answer: "Não é obrigatório, mas resolve dois problemas de uma vez: protege a massa muscular durante o déficit calórico e reduz o risco de lesão em ombro, joelho e pescoço, que são as áreas mais exigidas pela pegada e pela guarda." },
+      { question: "Em quanto tempo o jiu-jitsu dá resultado na balança?", answer: "Com três treinos por semana e alimentação em déficit, é razoável esperar alguns quilos no primeiro mês e uma mudança clara de composição em seis meses. Sem organizar a comida, o resultado pode ser nulo: treino puxado abre o apetite, e o jiu-jitsu abre bastante." },
+    ],
+    content: `<p>"Comecei jiu-jitsu, em quanto tempo eu seco?" A pergunta chega bastante, e quase sempre de alguém que passou anos empurrando esteira sem gostar e finalmente achou um treino que dá vontade de voltar na aula seguinte.</p>
+<p>A resposta honesta tem duas partes. A primeira: sim, o jiu-jitsu gasta calorias de verdade e resolve o problema que derruba a maioria das dietas, que é a desistência. A segunda: <strong>nenhuma modalidade emagrece sozinha</strong> — quem decide é o déficit calórico. Vamos aos números e ao que o jiu-jitsu tem de diferente.</p>
+
+<h2>Quantas calorias um treino de jiu-jitsu queima</h2>
+<p>Faixas honestas para uma aula de 60 a 90 minutos, contando aquecimento, técnica e rola:</p>
+<ul>
+<li><strong>Aula com muita técnica e um ou dois rolas, iniciante:</strong> 300 a 450 kcal;</li>
+<li><strong>Aula típica, com três a cinco rolas:</strong> 450 a 700 kcal;</li>
+<li><strong>Aula de competição, rolas seguidos, pessoa mais pesada:</strong> 700 a 1.000 kcal.</li>
+</ul>
+<p>Três coisas explicam essa variação: o seu peso corporal, porque mover 95 kg custa mais que mover 65 kg; <strong>quanto tempo você passa rolando de fato</strong>, que é o que mais pesa; e o seu nível, porque faixa-branca gasta energia à toa em força desnecessária enquanto faixa-preta economiza cada movimento.</p>
+<p>Essa última é curiosa e vale dizer com clareza: <strong>ficar melhor no jiu-jitsu tende a reduzir o gasto calórico por rola.</strong> Você aprende a usar alavanca no lugar de força bruta. O que compensa é que, com o tempo, você rola mais rounds e em ritmo mais alto.</p>
+
+<h2>O que torna o jiu-jitsu diferente das outras lutas</h2>
+<h3>O gasto se concentra no rola</h3>
+<p>Numa aula de muay thai ou boxe, a frequência cardíaca sobe no aquecimento e fica alta quase o tempo todo. No jiu-jitsu, a aula tem duas fases bem distintas: a parte técnica, em que você repete um movimento com o parceiro parado e o gasto é modesto, e o rola, em que tudo dispara.</p>
+<p>Isso significa que <strong>duas aulas de jiu-jitsu com a mesma duração podem ter gastos muito diferentes</strong>, dependendo de quantos rounds a academia coloca no fim. Se emagrecer é prioridade, rolar mais é a alavanca mais direta que você tem.</p>
+<h3>É esforço isométrico, não de deslocamento</h3>
+<p>Aqui está a parte que mais confunde quem começa: você termina destruído sem ter corrido um metro.</p>
+<p>Boa parte do trabalho no jiu-jitsu é <strong>isométrico</strong> — sustentar uma pegada, resistir a uma passagem, manter a guarda fechada. O músculo contrai forte e não muda de comprimento. Contração sustentada comprime os vasos dentro do músculo, atrapalha a chegada de sangue e faz a fadiga chegar rápido, mesmo com pouco movimento visível.</p>
+<p>Some a isso a respiração: com o peso de outra pessoa sobre o seu peito, respirar fundo fica difícil justamente quando você mais precisa. Daí a sensação de cansaço extremo com deslocamento quase nulo.</p>
+<h3>Mãos e antebraço falham antes do resto</h3>
+<p>É queixa universal de faixa-branca. A pegada no kimono exige força de preensão sustentada por minutos, e é o antebraço que entrega os pontos antes de qualquer outra coisa. Isso limita quanto você consegue rolar — e, portanto, quanto consegue gastar.</p>
+
+<h2>O que o jiu-jitsu não faz por você</h2>
+<p>Duas coisas, e vale saber antes de contar com elas.</p>
+<p><strong>Não constrói músculo de forma significativa.</strong> Ele exige muita força, mas em padrões imprevisíveis e sem carga progressiva controlada. Você fica mais forte no jiu-jitsu, e isso não é a mesma coisa que hipertrofia. Em déficit calórico sem treino de força, a chance de perder massa junto com gordura é real.</p>
+<p><strong>Não controla o seu apetite.</strong> Treino puxado abre a fome, e o jiu-jitsu abre bastante. A armadilha clássica é compensar a aula com uma refeição que devolve tudo e mais um pouco. Quem não olha para a comida costuma treinar seis meses, ficar visivelmente mais condicionado e não sair do lugar na balança.</p>
+
+<h2>Como montar a equação completa</h2>
+<ol>
+<li><strong>Déficit calórico organizado.</strong> É a única peça inegociável. Quanto cortar está em <a href="/blog/quantas-calorias-cortar-para-emagrecer">quantas calorias cortar para emagrecer</a>.</li>
+<li><strong>Duas a três aulas por semana</strong>, com atenção a quantos rolas você realmente faz — é onde o gasto mora.</li>
+<li><strong>Duas sessões de musculação.</strong> Protegem a massa muscular no déficit e blindam ombro, joelho e pescoço, que são as articulações que mais sofrem na guarda e na pegada.</li>
+<li><strong>Proteína suficiente.</strong> Em déficit e treinando duro, ela é o que segura o músculo. Base em <a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">quanta proteína por dia</a>.</li>
+<li><strong>Sono.</strong> Jiu-jitsu machuca mais quem está cansado, e a recuperação de esforço isométrico repetido pede descanso de verdade.</li>
+</ol>
+
+<h2>Conclusão</h2>
+<p>Jiu-jitsu emagrece, e emagrece bem — mas por um caminho diferente das lutas de trocação. O gasto não está espalhado pela aula, está concentrado no rola, e o esforço é mais de sustentar do que de se deslocar, o que explica o cansaço sem movimento. Ele não constrói músculo como a musculação nem controla o apetite por você. Três treinos por semana, duas sessões de força, proteína em dia e déficit calórico organizado: essa é a equação que funciona, e o jiu-jitsu é a parte dela que você não vai abandonar.</p>
+<p>Monto treino de força para quem treina jiu-jitsu, respeitando os dias de tatame e protegendo ombro e joelho, para alunos em Alphaville, Barueri e Santana de Parnaíba, e pela <a href="/consultoria-online">consultoria online</a> para o Brasil todo. <a href="/contato">Agende uma avaliação</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/muay-thai-emagrece">Muay thai emagrece? Calorias e o que esperar</a></li>
+<li><a href="/blog/boxe-emagrece">Boxe emagrece? Quantas calorias queima</a></li>
+<li><a href="/blog/quantas-calorias-cortar-para-emagrecer">Quantas calorias cortar para emagrecer</a></li>
+<li><a href="/blog/como-manter-massa-muscular-emagrecendo">Como manter massa muscular emagrecendo</a></li>
+</ul>
+
+<h2>Referências</h2>
+<ul>
+<li>Ainsworth BE, Haskell WL, Herrmann SD, et al. 2011 Compendium of Physical Activities. Medicine &amp; Science in Sports &amp; Exercise, 2011.</li>
+<li>Andreato LV, Lara FJD, Andrade A, Branco BHM. Physical and physiological profiles of Brazilian jiu-jitsu athletes: a systematic review. Sports Medicine - Open, 2017.</li>
+</ul>
+`,
+  },
+
+  {
+    slug: "futebol-emagrece",
+    title: "Futebol Emagrece? Calorias do Society e o Que Esperar",
+    metaTitle: "Futebol Emagrece? Quantas Calorias Queima uma Pelada",
+    metaDescription: "Quantas calorias uma pelada de society queima de verdade? Veja números honestos, por que a cerveja depois zera a conta e como jogar sem se machucar.",
+    excerpt: "Jogar bola gasta muita caloria — e é uma das poucas atividades que adulto nenhum precisa se forçar a fazer. O problema quase nunca é o jogo: é o que vem depois dele, e o preparo que não existe antes.",
+    category: "Emagrecimento",
+    date: "2026-09-11",
+    updatedAt: "2026-09-11",
+    readTime: "9 min",
+    author: "Montinho",
+    tags: ["futebol", "society", "emagrecimento", "queima de calorias", "cardio", "lesão"],
+    faq: [
+      { question: "Quantas calorias queima uma pelada de futebol?", answer: "Numa pelada de society de uma hora, entre 500 e 900 kcal para a maioria dos adultos. Campo grande gasta mais que society, e society gasta mais que futsal, porque a área percorrida é maior. Goleiro fica bem abaixo dessa faixa." },
+      { question: "Jogar bola uma vez por semana emagrece?", answer: "Ajuda, mas dificilmente resolve sozinho. Uma pelada semanal representa um gasto extra pequeno diante do total da semana, e é justamente a frequência que costuma vir acompanhada de cerveja e petisco depois. Quem emagrece jogando bola normalmente joga duas vezes e organiza a alimentação." },
+      { question: "Por que jogo bola há anos e não emagreço?", answer: "Quase sempre por dois motivos somados. O primeiro é a compensação: cerveja e porção depois do jogo devolvem com folga o que foi gasto. O segundo é que o corpo se adapta — quem joga há anos joga de forma mais econômica, andando mais e correndo menos, sem perceber." },
+      { question: "Preciso de musculação para jogar bola?", answer: "Precisa, e menos pelo emagrecimento do que pela integridade. Futebol adulto amador concentra lesão em joelho, tornozelo e posterior de coxa, e força é o que protege essas três. Quem joga sem treinar força está apostando." },
+      { question: "É seguro voltar a jogar depois dos 40?", answer: "É, com preparo. O risco não está na idade, está em entrar no jogo sem aquecimento, sem base de força e depois de anos parado. Duas a quatro semanas construindo posterior de coxa e panturrilha antes da primeira pelada mudam muito o desfecho." },
+    ],
+    content: `<p>Futebol emagrece? A pergunta parece boba para quem termina uma pelada encharcado, mas existe um motivo para ela: muita gente joga bola há anos, semana após semana, e a barriga não sai do lugar.</p>
+<p>As duas partes da resposta: sim, jogar bola gasta bastante caloria, e tem uma vantagem que nenhuma esteira tem — <strong>ninguém precisa se obrigar a ir</strong>. Mas o jogo é só metade da equação, e a outra metade costuma ser decidida na mesa depois dele.</p>
+
+<h2>Quantas calorias uma pelada queima de verdade</h2>
+<p>Faixas honestas para uma hora de jogo, adulto amador:</p>
+<ul>
+<li><strong>Futsal ou quadra pequena:</strong> 400 a 650 kcal;</li>
+<li><strong>Society (o formato mais comum entre adultos):</strong> 500 a 900 kcal;</li>
+<li><strong>Campo grande, jogo corrido:</strong> 700 a 1.100 kcal;</li>
+<li><strong>Goleiro:</strong> 200 a 350 kcal.</li>
+</ul>
+<p>O que explica a diferença é simples: <strong>área percorrida</strong>. Quanto maior o campo, mais você corre. E dentro do mesmo jogo, a posição muda tudo — um meia que marca e apoia cobre muito mais chão que um zagueiro que sai pouco da área.</p>
+<p>O peso corporal também pesa: mover 95 kg pelo campo custa consideravelmente mais que mover 70 kg. Na prática, o jogador mais pesado da pelada é quem mais gasta — e quem mais sente o joelho no dia seguinte.</p>
+
+<h2>Por que tanta gente joga há anos e não emagrece</h2>
+<p>Este é o ponto que interessa, porque o gasto do jogo não é o problema.</p>
+<h3>1. A mesa depois do jogo</h3>
+<p>É o motivo número um, disparado. Uma pelada de 700 kcal seguida de três cervejas e uma porção de mandioca frita fecha o dia em superávit. A conta é ingrata: leva uma hora correndo para gastar o que se repõe em vinte minutos sentado.</p>
+<p>Isso não significa que a resenha precisa acabar — significa que ela precisa entrar na conta da semana como qualquer outra coisa. Quem trata a pelada como licença para comer o que quiser está trocando um gasto grande por um consumo maior.</p>
+<h3>2. O corpo aprende a economizar</h3>
+<p>Quem joga há dez anos joga diferente de quem começou ontem. Posicionamento melhor significa menos corrida desnecessária, e o veterano que "não corre mais" muitas vezes está sendo eficiente, não preguiçoso.</p>
+<p>Isso é ótimo para o jogo e ruim para a balança. <strong>O mesmo jogo que gastava 800 kcal aos 25 anos pode gastar 550 aos 40</strong>, sem que nada pareça ter mudado.</p>
+<h3>3. Uma vez por semana é pouco</h3>
+<p>Uma pelada semanal, mesmo puxada, é um gasto extra modesto diante de sete dias. Ela ajuda no condicionamento e na cabeça, mas dificilmente move a composição corporal sozinha.</p>
+
+<h2>O que o futebol faz muito bem</h2>
+<p>Vale registrar, porque é a parte que costuma ser subestimada:</p>
+<ul>
+<li><strong>Intensidade alternada de graça.</strong> Futebol é intervalado por natureza — tiro, trote, parada, tiro de novo. É o formato que a esteira tenta imitar, e aqui ele acontece sem ninguém programar nada.</li>
+<li><strong>Adesão que nenhum treino tem.</strong> A pessoa que falta na academia três semanas seguidas não falta na pelada de quinta. Isso vale mais do que qualquer diferença de gasto calórico entre modalidades.</li>
+<li><strong>Condicionamento e cabeça.</strong> Coração, coordenação e descarga de estresse vêm juntos, e o componente social segura a frequência a longo prazo.</li>
+</ul>
+
+<h2>O que ele não faz, e o risco que ninguém comenta</h2>
+<p><strong>Não constrói músculo</strong> de forma significativa, e em déficit calórico sem treino de força você perde massa junto com a gordura.</p>
+<p>E tem o assunto sério: <strong>futebol amador adulto concentra lesão</strong>. Joelho, tornozelo e posterior de coxa são as três áreas, e o perfil clássico é reconhecível — homem entre 30 e 50 anos, sedentário durante a semana, que entra no jogo de quinta sem aquecer e dá um tiro de 30 metros aos cinco minutos. O estiramento de posterior de coxa acontece exatamente nesse tiro.</p>
+<p>Força é o que protege. Posterior de coxa forte resiste ao estiramento; panturrilha e tornozelo fortes seguram a mudança de direção; quadril estável tira carga do joelho. Treino de perna não é para jogar melhor, é para <strong>continuar jogando</strong>.</p>
+
+<h2>Como usar o futebol para emagrecer de verdade</h2>
+<ol>
+<li><strong>Duas peladas por semana</strong>, se a agenda deixar. A diferença entre uma e duas é maior do que parece.</li>
+<li><strong>Duas sessões de musculação</strong>, com prioridade em posterior de coxa, panturrilha e quadril. Protegem a massa muscular no déficit e reduzem o risco de lesão.</li>
+<li><strong>A resenha entra na conta.</strong> Não precisa sumir; precisa ser contada. Como fazer isso sem abrir mão da vida social está em <a href="/blog/como-emagrecer-sem-passar-fome-vida-social">emagrecer sem passar fome</a>.</li>
+<li><strong>Aqueça antes de correr.</strong> Cinco a dez minutos subindo o ritmo aos poucos, com o posterior de coxa incluído, antes do primeiro tiro.</li>
+<li><strong>Se voltou depois de anos parado</strong>, construa duas a quatro semanas de base antes da primeira pelada. É o investimento que evita ficar mais três meses de fora.</li>
+</ol>
+
+<h2>Conclusão</h2>
+<p>Futebol emagrece, e gasta mais caloria por hora do que a maioria das atividades que um adulto faz por vontade própria. O que trava o resultado quase nunca é o jogo: é a mesa depois, a frequência de uma vez por semana e a economia que o corpo aprende com os anos. Some duas peladas, duas sessões de força e uma conta honesta do que se come depois — e o futebol deixa de ser só o melhor momento da semana para virar também o que muda o seu corpo.</p>
+<p>Monto treino de força para quem joga bola, com foco em posterior de coxa, tornozelo e quadril, para alunos em Alphaville, Barueri e Santana de Parnaíba, e pela <a href="/consultoria-online">consultoria online</a> para o Brasil todo. <a href="/contato">Agende uma avaliação</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/como-emagrecer-sem-passar-fome-vida-social">Como emagrecer sem passar fome e sem abrir mão da vida social</a></li>
+<li><a href="/blog/quantas-calorias-cortar-para-emagrecer">Quantas calorias cortar para emagrecer</a></li>
+<li><a href="/blog/treino-de-perna-completo">Treino de perna completo</a></li>
+<li><a href="/blog/como-manter-massa-muscular-emagrecendo">Como manter massa muscular emagrecendo</a></li>
+</ul>
+
+<h2>Referências</h2>
+<ul>
+<li>Ainsworth BE, Haskell WL, Herrmann SD, et al. 2011 Compendium of Physical Activities. Medicine &amp; Science in Sports &amp; Exercise, 2011.</li>
+<li>Ekstrand J, Hägglund M, Waldén M. Epidemiology of muscle injuries in professional football. American Journal of Sports Medicine, 2011.</li>
+</ul>
+`,
+  },
+
 ]) as BlogPost[];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
