@@ -30,6 +30,8 @@ export interface Identificacao {
   complemento: string | null;
   /** Detalhes extraídos de frases com variável (local, título do artigo, ferramenta). */
   extra: Record<string, string>;
+  /** Código de origem que a própria frase prova, quando ela vem de fora do site. */
+  fonte: string | null;
 }
 
 interface Regra {
@@ -37,12 +39,21 @@ interface Regra {
   pathPadrao: string | null;
   botoes?: string[];
   servico?: "online" | "presencial";
+  /** Código em crm_sources, para frases que nascem fora do site (não há clique nem Ref). */
+  fonte?: string;
   /** Texto fixo (comparado normalizado) ou regex; `grupos` nomeia os grupos de captura na ordem. */
   frase: string | RegExp;
   grupos?: string[];
 }
 
 const REGRAS: Regra[] = [
+  // Fora do site: o Personal por Perto é um diretório, e quem usa a
+  // calculadora de preço de lá chega no WhatsApp sem passar por página
+  // nossa — não há clique, não há Ref, e o catálogo é a única prova de
+  // origem que sobra. Por isso esta é a primeira regra com `fonte`.
+  { origem: "Personal por Perto · calculadora de preço", pathPadrao: null, fonte: "personal_por_perto",
+    frase: /^(?:Oi|Olá),? Montinho! Usei a calculadora de pre[çc]o do Personal por Perto\.(?:\s*Moro em (.+?)(?:\s+e estou pensando em treinar (.+?))?\.)?\s*(.*)$/,
+    grupos: ["local", "frequencia", "pedido"] },
   { origem: "Consultoria Online · topo / barra fixa", pathPadrao: "^/consultoria-online", botoes: ["Falar no WhatsApp agora"], servico: "online",
     frase: "Olá, Montinho! Vi a página da Consultoria Online e queria entender se ela faz sentido para o meu caso." },
   { origem: "Consultoria Online · resultados dos alunos", pathPadrao: "^/consultoria-online", botoes: ["Quero um plano assim para mim"], servico: "online",
@@ -140,7 +151,7 @@ function normalizar(t: string): string {
 
 export function identificarMensagem(texto: string): Identificacao {
   const ref = extrairRef(texto);
-  const vazio: Identificacao = { ref, origem: null, pathPadrao: null, botoes: [], servico: null, complemento: null, extra: {} };
+  const vazio: Identificacao = { ref, origem: null, pathPadrao: null, botoes: [], servico: null, complemento: null, extra: {}, fonte: null };
   const t = normalizar(texto);
   if (!t) return vazio;
   for (const r of REGRAS) {
@@ -148,14 +159,14 @@ export function identificarMensagem(texto: string): Identificacao {
       const f = normalizar(r.frase);
       if (t === f || t.startsWith(f)) {
         const resto = t.slice(f.length).trim();
-        return { ref, origem: r.origem, pathPadrao: r.pathPadrao, botoes: r.botoes ?? [], servico: r.servico ?? null, complemento: resto || null, extra: {} };
+        return { ref, origem: r.origem, pathPadrao: r.pathPadrao, botoes: r.botoes ?? [], servico: r.servico ?? null, complemento: resto || null, extra: {}, fonte: r.fonte ?? null };
       }
     } else {
       const m = t.match(r.frase);
       if (m) {
         const extra: Record<string, string> = {};
         (r.grupos ?? []).forEach((k, i) => { const v = m[i + 1]; if (v) extra[k] = v; });
-        return { ref, origem: r.origem, pathPadrao: r.pathPadrao, botoes: r.botoes ?? [], servico: r.servico ?? null, complemento: null, extra };
+        return { ref, origem: r.origem, pathPadrao: r.pathPadrao, botoes: r.botoes ?? [], servico: r.servico ?? null, complemento: null, extra, fonte: r.fonte ?? null };
       }
     }
   }
@@ -183,6 +194,7 @@ export function detalheDaIdentificacao(id: Identificacao): string | null {
   if (id.extra.titulo) partes.push(`"${id.extra.titulo}"`);
   if (id.extra.botao) partes.push(id.extra.botao);
   if (id.extra.ferramenta) partes.push(id.extra.ferramenta);
+  if (id.extra.frequencia) partes.push(id.extra.frequencia);
   return partes.join(" · ");
 }
 

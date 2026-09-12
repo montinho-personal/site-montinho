@@ -58,6 +58,21 @@ ok("card da /consultoria: online", identificarMensagem("Olá! Tenho interesse na
 ok("diagnóstico com resultado no corpo", /Diagnóstico/.test(identificarMensagem("Oi, Montinho! Fiz o Diagnóstico Montinho no site.\nMeu perfil: Recomeço").origem ?? ""));
 ok("mobilidade com ou sem vírgula", /Mobilidade/.test(identificarMensagem("Oi Montinho! Fiz o teste de mobilidade no seu site e queria sua ajuda.").origem ?? ""));
 
+/*
+ * Personal por Perto é um diretório externo: quem usa a calculadora de
+ * preço de lá chega no WhatsApp sem clique nosso e sem Ref. Em 11/09/2026
+ * uma mensagem dessas não foi reconhecida e o lead ia entrar como origem
+ * desconhecida.
+ */
+const ppp = identificarMensagem("Oi, Montinho! Usei a calculadora de preço do Personal por Perto. Moro em Londrina/PR e estou pensando em treinar 3× por semana. Queria entender como funciona o seu acompanhamento no meu caso.");
+ok("calculadora do Personal por Perto: origem e fonte", /Personal por Perto/.test(ppp.origem ?? "") && ppp.fonte === "personal_por_perto");
+ok("extrai cidade e frequência", ppp.extra.local === "Londrina/PR" && ppp.extra.frequencia === "3× por semana", `local=${ppp.extra.local} freq=${ppp.extra.frequencia}`);
+ok("guarda o pedido da pessoa", /acompanhamento no meu caso/.test(ppp.extra.pedido ?? ""));
+const pppCurta = identificarMensagem("Olá, Montinho! Usei a calculadora de preço do Personal por Perto. Queria saber seus valores.");
+ok("mesma frase sem cidade ainda é reconhecida", pppCurta.fonte === "personal_por_perto" && !pppCurta.extra.local);
+ok("frase do site não ganha fonte de catálogo", hero.fonte === null);
+ok("detalhe do Personal por Perto traz cidade e frequência", detalheDaIdentificacao(ppp) === "Personal por Perto · calculadora de preço · Londrina/PR · 3× por semana", String(detalheDaIdentificacao(ppp)));
+
 bloco("2B. O QUE O APLICATIVO ACRESCENTA NA COLAGEM");
 
 /*

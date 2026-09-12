@@ -39,8 +39,11 @@ export default function OrigemLead({ fontes, refInicial, servicos }: {
       setFonte(h.source_code && h.source_code !== "unknown" ? h.source_code : "");
       const partes = [h.utm_campaign ? `campanha ${h.utm_campaign}` : null, h.page_path, h.cta_id?.replace(/^(text|aria):/, "")].filter(Boolean);
       setDetalhe(partes.join(" · "));
-    } else if (r.detalhe) {
-      setDetalhe(r.detalhe + (r.identificacao.complemento ? ` · "${r.identificacao.complemento}"` : ""));
+    } else {
+      // Sem clique no banco: a frase ainda pode provar a origem (diretório
+      // externo, por exemplo), e aí ela preenche a fonte como o handoff faria.
+      if (r.identificacao.fonte) setFonte(r.identificacao.fonte);
+      if (r.detalhe) setDetalhe(r.detalhe + (r.identificacao.complemento ? ` · "${r.identificacao.complemento}"` : ""));
     }
   }
 
