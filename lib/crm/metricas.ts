@@ -457,7 +457,7 @@ export interface TarefaParaHoje { id: string; leadId: string | null; clientId: s
 export interface TrialParaHoje { id: string; leadId: string | null; contactId: string; nome: string; scheduledAt: string; status: string }
 export interface ClienteParaHoje { id: string; contactId: string; nome: string; renewalDate: string | null; status: string }
 export interface SlaConfig { novo_lead_sem_contato_horas: number; proposta_sem_follow_up_dias: number; lead_parado_dias: number; negociacao_antiga_dias: number }
-export interface ItemHoje { prioridade: number; grupo: string; motivo: string; acao: string; contactId: string; leadId?: string | null; clientId?: string | null; taskId?: string | null; trialId?: string | null; nome: string; valor?: number | null }
+export interface ItemHoje { prioridade: number; grupo: string; motivo: string; acao: string; contactId: string; leadId?: string | null; clientId?: string | null; taskId?: string | null; trialId?: string | null; opportunityId?: string | null; nome: string; valor?: number | null }
 
 export function prioridadesHoje(
   d: { leads: LeadParaHoje[]; tarefas: TarefaParaHoje[]; trials: TrialParaHoje[]; clientes: ClienteParaHoje[]; sla: SlaConfig; renovacaoDias: number[] },
@@ -477,7 +477,7 @@ export function prioridadesHoje(
   for (const l of abertos) {
     if (!l.firstResponseAt && !l.lastContactAt) {
       const horas = h(agora.getTime() - new Date(l.createdAt).getTime());
-      itens.push({ prioridade: horas >= d.sla.novo_lead_sem_contato_horas ? 1 : 3, grupo: "novo_sem_contato", motivo: `Lead novo sem retorno há ${Math.round(horas)}h`, acao: "Fazer primeiro contato", contactId: l.contactId, leadId: l.id, nome: l.nome, valor: l.expectedValue });
+      itens.push({ prioridade: horas >= d.sla.novo_lead_sem_contato_horas ? 1 : 3, grupo: "novo_sem_contato", motivo: `Lead novo sem retorno há ${Math.round(horas)}h`, acao: "Fazer primeiro contato", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
     }
   }
   // 2. Follow-ups vencidos e de hoje
@@ -487,7 +487,7 @@ export function prioridadesHoje(
     else if (due <= fimHoje) itens.push({ prioridade: 4, grupo: "follow_up_hoje", motivo: `Follow-up hoje: ${t.titulo}`, acao: t.titulo, contactId: t.contactId ?? "", leadId: t.leadId, clientId: t.clientId, taskId: t.id, nome: t.nome });
   }
   // 3. Leads quentes
-  for (const l of abertos) if (l.temperatura === "quente") itens.push({ prioridade: 3, grupo: "quente", motivo: "Lead quente", acao: l.nextAction ?? "Avançar a negociação", contactId: l.contactId, leadId: l.id, nome: l.nome, valor: l.expectedValue });
+  for (const l of abertos) if (l.temperatura === "quente") itens.push({ prioridade: 3, grupo: "quente", motivo: "Lead quente", acao: l.nextAction ?? "Avançar a negociação", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
   // 4. Experimentais próximas (próximas 24h)
   for (const t of d.trials) {
     const s = new Date(t.scheduledAt);
@@ -495,19 +495,19 @@ export function prioridadesHoje(
     if (t.status === "agendada" && s < agora) itens.push({ prioridade: 2, grupo: "experimental_sem_registro", motivo: "Experimental passou sem registro de presença", acao: "Registrar realizada ou no-show", contactId: t.contactId, leadId: t.leadId, trialId: t.id, nome: t.nome });
   }
   // 5. Pós-experimental sem proposta
-  for (const l of abertos) if (l.stageCode === "experimental_realizada" && !l.proposalSentAt) itens.push({ prioridade: 2, grupo: "pos_experimental_sem_proposta", motivo: "Experimental realizada e proposta ainda não enviada", acao: "Enviar proposta", contactId: l.contactId, leadId: l.id, nome: l.nome, valor: l.expectedValue });
+  for (const l of abertos) if (l.stageCode === "experimental_realizada" && !l.proposalSentAt) itens.push({ prioridade: 2, grupo: "pos_experimental_sem_proposta", motivo: "Experimental realizada e proposta ainda não enviada", acao: "Enviar proposta", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
   // 6. Proposta sem follow-up
   for (const l of abertos) if (l.proposalSentAt && l.stageCode === "proposta") {
     const dias = diasEntre(l.lastContactAt ?? l.proposalSentAt, agora);
-    if (dias >= d.sla.proposta_sem_follow_up_dias) itens.push({ prioridade: 2, grupo: "proposta_sem_follow_up", motivo: `Proposta enviada há ${Math.round(diasEntre(l.proposalSentAt, agora))} dias sem follow-up`, acao: "Fazer follow-up", contactId: l.contactId, leadId: l.id, nome: l.nome, valor: l.expectedValue });
+    if (dias >= d.sla.proposta_sem_follow_up_dias) itens.push({ prioridade: 2, grupo: "proposta_sem_follow_up", motivo: `Proposta enviada há ${Math.round(diasEntre(l.proposalSentAt, agora))} dias sem follow-up`, acao: "Fazer follow-up", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
   }
   // 7. Negociações antigas / leads parados
   for (const l of abertos) {
     const ref = l.lastContactAt ?? l.createdAt;
     const dias = diasEntre(ref, agora);
-    if (l.stageCode === "negociacao" && dias >= d.sla.negociacao_antiga_dias) itens.push({ prioridade: 5, grupo: "negociacao_antiga", motivo: `Negociação parada há ${Math.round(dias)} dias`, acao: "Retomar", contactId: l.contactId, leadId: l.id, nome: l.nome, valor: l.expectedValue });
-    else if (dias >= d.sla.lead_parado_dias && l.lastContactAt) itens.push({ prioridade: 5, grupo: "parado", motivo: `Sem contato há ${Math.round(dias)} dias`, acao: "Retomar", contactId: l.contactId, leadId: l.id, nome: l.nome, valor: l.expectedValue });
-    if (!l.nextActionAt) itens.push({ prioridade: 6, grupo: "sem_proxima_acao", motivo: "Lead aberto sem próxima ação", acao: "Definir próxima ação", contactId: l.contactId, leadId: l.id, nome: l.nome, valor: l.expectedValue });
+    if (l.stageCode === "negociacao" && dias >= d.sla.negociacao_antiga_dias) itens.push({ prioridade: 5, grupo: "negociacao_antiga", motivo: `Negociação parada há ${Math.round(dias)} dias`, acao: "Retomar", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
+    else if (dias >= d.sla.lead_parado_dias && l.lastContactAt) itens.push({ prioridade: 5, grupo: "parado", motivo: `Sem contato há ${Math.round(dias)} dias`, acao: "Retomar", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
+    if (!l.nextActionAt) itens.push({ prioridade: 6, grupo: "sem_proxima_acao", motivo: "Lead aberto sem próxima ação", acao: "Definir próxima ação", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
   }
   // 8. Renovações próximas
   for (const c of d.clientes) if (c.status === "ativo" && c.renewalDate) {
