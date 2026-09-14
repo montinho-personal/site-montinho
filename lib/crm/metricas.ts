@@ -466,7 +466,12 @@ export function prioridadesHoje(
   const itens: ItemHoje[] = [];
   const h = (ms: number) => ms / 3_600_000;
   const fimHoje = new Date(agora); fimHoje.setHours(23, 59, 59, 999);
-  const abertos = d.leads.filter((l) => l.status === "aberto");
+  // Aberto é o lead que ainda tem trabalho pela frente. O status manda, mas a
+  // etapa também: um lead parado em "ganho" ou "perdido" está fechado mesmo
+  // que o status não tenha sido atualizado — foi assim que uma aluna que já
+  // havia comprado continuou cobrando primeiro contato na lista de hoje.
+  const fechadas = new Set(["ganho", "perdido"]);
+  const abertos = d.leads.filter((l) => l.status === "aberto" && !fechadas.has(l.stageCode ?? ""));
 
   // 1. Lead novo sem contato além do SLA
   for (const l of abertos) {

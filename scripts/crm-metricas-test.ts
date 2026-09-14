@@ -191,6 +191,11 @@ bloco("9. LEAD SCORING EXPLICÁVEL E TELA HOJE");
       { id: "L2", contactId: "C2", nome: "Mariana", status: "aberto", createdAt: "2026-08-20", lastContactAt: "2026-09-02T10:00:00-03:00", firstResponseAt: "2026-08-20", nextAction: "Follow-up", nextActionAt: "2026-09-05", stageCode: "proposta", proposalSentAt: "2026-09-02T10:00:00-03:00", expectedValue: 1200 },
       { id: "L3", contactId: "C3", nome: "Ricardo", status: "aberto", createdAt: "2026-08-25", lastContactAt: "2026-09-03", firstResponseAt: "2026-08-25", nextAction: null, nextActionAt: "2026-09-06", stageCode: "experimental_realizada", proposalSentAt: null, expectedValue: 1000 },
       { id: "L4", contactId: "C4", nome: "Ganho", status: "ganho", createdAt: "2026-08-01", lastContactAt: null, firstResponseAt: null, nextAction: null, nextActionAt: null, stageCode: "ganho", proposalSentAt: null, expectedValue: null },
+      // Em 14/09/2026 uma aluna que já havia comprado voltou a cobrar "primeiro
+      // contato" na lista de hoje: a oportunidade estava em "ganho" e o status
+      // do lead tinha ficado "aberto". A etapa fechada basta para sair da lista.
+      { id: "L5", contactId: "C5", nome: "JaComprou", status: "aberto", createdAt: "2026-09-01", lastContactAt: null, firstResponseAt: null, nextAction: null, nextActionAt: null, stageCode: "ganho", proposalSentAt: null, expectedValue: 399 },
+      { id: "L6", contactId: "C6", nome: "JaPerdeu", status: "aberto", createdAt: "2026-09-01", lastContactAt: null, firstResponseAt: null, nextAction: null, nextActionAt: null, stageCode: "perdido", proposalSentAt: null, expectedValue: null },
     ],
     tarefas: [{ id: "T1", leadId: "L2", clientId: null, contactId: "C2", nome: "Mariana", titulo: "Ligar", dueAt: "2026-09-03T09:00:00-03:00", priority: "alta" }],
     trials: [{ id: "X1", leadId: "L3", contactId: "C3", nome: "Ricardo", scheduledAt: "2026-09-04T18:00:00-03:00", status: "agendada" }],
@@ -204,6 +209,8 @@ bloco("9. LEAD SCORING EXPLICÁVEL E TELA HOJE");
   ok("Ricardo: pós-experimental sem proposta, ação 'Enviar proposta'", por.Ricardo?.acao === "Enviar proposta", por.Ricardo?.acao);
   ok("Elias: renovação em 6 dias entra", /Renovação em 6 dias/.test(por.Elias?.motivo ?? ""), por.Elias?.motivo);
   ok("lead ganho não aparece", !por.Ganho);
+  ok("lead 'aberto' parado na etapa ganho não aparece", !por.JaComprou);
+  ok("lead 'aberto' parado na etapa perdido não aparece", !por.JaPerdeu);
   ok("ordem: prioridade crescente", hoje.every((x, i) => i === 0 || hoje[i - 1].prioridade <= x.prioridade));
 }
 
