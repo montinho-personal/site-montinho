@@ -106,6 +106,16 @@ export async function criarLead(fd: FormData) {
   if (refCode) {
     const { data } = await sb.from("crm_whatsapp_handoffs").select("*").eq("ref_code", refCode).maybeSingle();
     handoff = data;
+    /*
+     * Um clique, um lead.
+     *
+     * A trava do botão (BotaoDeEnvio) cobre o clique repetido na mesma tela,
+     * mas não o formulário reenviado depois de voltar, nem a aba aberta duas
+     * vezes: em 06/09/2026 a mesma pessoa entrou cinco vezes em doze segundos,
+     * todas com o mesmo Ref. Como o Ref é o clique, e o clique é único, ele é
+     * a chave que o servidor pode conferir.
+     */
+    if (handoff?.lead_id) throw new Error(`Este Ref (${refCode}) já virou lead. Abra /crm/leads/${handoff.lead_id} em vez de criar outro.`);
   }
   let sourceCode = s(fd, "source_code") ?? "unknown";
   let confidence: "high" | "medium" | "low" = s(fd, "source_code") ? "medium" : "low";
