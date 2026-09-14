@@ -566,3 +566,66 @@ export async function sair() {
   await sb.auth.signOut();
   redirect("/crm/login");
 }
+
+/**
+ * Clicou no WhatsApp na lista de hoje: a conversa aconteceu.
+ *
+ * O botão abre o WhatsApp com a mensagem pronta; esta ação registra o que
+ * aquele clique significa, para o card sair da lista em vez de acumular. É
+ * por isso que o tipo é "message" e não "whatsapp_open": o segundo existe
+ * para o clique que não prova contato nenhum (um link do site, por
+ * exemplo), enquanto aqui o Montinho está de fato mandando a mensagem.
+ *
+ * O que sai de cada grupo da lista:
+ *   - novo_sem_contato, parado, negociacao_antiga, proposta_sem_follow_up →
+ *     last_contact_at passa a ser agora;
+ *   - follow_up_atrasado / follow_up_hoje → a tarefa é concluída;
+ *   - sem_proxima_acao → a próxima ação vai para daqui a dois dias.
+ * O que NÃO sai, de propósito: experimental sem registro de presença e
+ * renovação. Mandar mensagem não registra presença nem renova contrato —
+ * esses cards continuam até a ação verdadeira acontecer.
+ */
+export async function contatarPeloWhatsApp(fd: FormData) {
+  const u = await exigirEscrita();
+  const sb = await supabaseServer();
+  const contactId = s(fd, "contact_id"); const leadId = s(fd, "lead_id"); const clientId = s(fd, "client_id");
+  const taskId = s(fd, "task_id"); const grupo = s(fd, "grupo"); const situacao = s(fd, "situacao");
+  const agora = new Date().toISOString();
+
+  const { data: opp } = leadId
+    ? await sb.from("crm_opportunities").select("id, pipeline_id, stage_id").eq("lead_id", leadId).is("won_at", null).is("lost_at", null).order("created_at", { ascending: false }).limit(1).maybeSingle()
+    : { data: null };
+
+  await atividade(sb, u.id, {
+    contact_id: contactId, lead_id: leadId, client_id: clientId, opportunity_id: opp?.id,
+    tipo: "message", ocorreu_em: agora,
+    descricao: "Mensagem enviada pelo WhatsApp a partir da lista de hoje",
+    metadata: { origem: "hoje", grupo, situacao },
+  });
+
+  if (taskId) {
+    await sb.from("crm_tasks").update({ completed_at: agora }).eq("id", taskId);
+  }
+
+  if (leadId) {
+    const { data: l } = await sb.from("crm_leads").select("first_response_at").eq("id", leadId).single();
+    await erroSe(await sb.from("crm_leads").update({
+      last_contact_at: agora,
+      first_response_at: l?.first_response_at ?? agora,
+      next_action: "Aguardando resposta",
+      next_action_at: addDias(new Date(), 2).toISOString(),
+    }).eq("id", leadId), "lead");
+
+    // Primeiro contato tira o lead de "novo" — a mesma regra de registrarAtividade.
+    if (opp) {
+      const novo = await etapaPorCodigo(sb, opp.pipeline_id, "novo");
+      if (opp.stage_id === novo.id) {
+        const contato = await etapaPorCodigo(sb, opp.pipeline_id, "contato");
+        await sb.from("crm_opportunities").update({ stage_id: contato.id }).eq("id", opp.id);
+        await atividade(sb, u.id, { contact_id: contactId, lead_id: leadId, opportunity_id: opp.id, tipo: "stage_change", descricao: `Etapa: ${contato.nome}` });
+      }
+    }
+  }
+
+  revalidarTudo(["/crm", leadId ? `/crm/leads/${leadId}` : "", clientId ? `/crm/clientes/${clientId}` : ""].filter(Boolean));
+}
