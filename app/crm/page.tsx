@@ -6,6 +6,7 @@ import { taxasFunil, valorPipeline, mrrNormalizado, cicloDeVendaDias } from "@/l
 import { mensagemPara } from "@/lib/crm/copy";
 import { Badge, Btn, Card, Pagina, Stat, Vazio, brl, num, pct, relativo } from "@/components/crm/ui";
 import { concluirTarefa } from "./actions";
+import BotaoWhatsApp from "@/components/crm/BotaoWhatsApp";
 
 export default async function Hoje() {
   const u = await exigirUsuario();
@@ -52,17 +53,19 @@ export default async function Hoje() {
           {itens.slice(0, 40).map((i) => {
             const contato = b.contatos.find((c) => c.id === i.contactId);
             // A mensagem nasce da situação do card: primeiro contato com a página de origem, follow-up da proposta com os dias, confirmação da experimental com o horário.
-            const wa = urlWhatsAppContato(contato?.telefone_e164 ?? null, mensagemPara(b, cat, { contactId: i.contactId, leadId: i.leadId, clientId: i.clientId }, i.grupo, agora).texto);
+            const copy = mensagemPara(b, cat, { contactId: i.contactId, leadId: i.leadId, clientId: i.clientId }, i.grupo, agora);
+            const wa = urlWhatsAppContato(contato?.telefone_e164 ?? null, copy.texto);
             const tom = i.prioridade <= 2 ? "ruim" : i.prioridade <= 4 ? "alerta" : "neutro";
             const href = i.leadId ? `/crm/leads/${i.leadId}` : i.clientId ? `/crm/clientes/${i.clientId}` : "#";
             return (
               <li key={`${i.contactId}-${i.grupo}`} className="flex flex-wrap items-center gap-3 rounded-xl border border-white/10 bg-zinc-900/70 p-3">
-                <div className="min-w-0 flex-1">
+                {/* No celular os botões descem para a própria linha: lado a lado, o motivo ficava espremido em uma palavra por linha. */}
+                <div className="min-w-0 flex-1 basis-full sm:basis-0">
                   <div className="flex items-center gap-2"><Badge tom={tom}>{i.prioridade <= 2 ? "PRIORIDADE ALTA" : i.prioridade <= 4 ? "hoje" : "esta semana"}</Badge><Link href={href} className="truncate font-medium hover:underline">{i.nome}</Link>{i.valor ? <span className="text-xs text-zinc-500">{brl(i.valor)}/mês</span> : null}</div>
                   <div className="mt-1 text-sm text-zinc-400">Motivo: {i.motivo}</div>
                 </div>
-                <div className="flex gap-2">
-                  {wa && <Btn href={wa} tom="whatsapp" pequeno target="_blank">WhatsApp</Btn>}
+                <div className="flex w-full shrink-0 gap-2 sm:w-auto">
+                  {wa && <BotaoWhatsApp url={wa} contactId={i.contactId} leadId={i.leadId} clientId={i.clientId} taskId={i.taskId} grupo={i.grupo} situacao={copy.situacao} />}
                   {i.taskId ? (
                     <form action={concluirTarefa}><input type="hidden" name="task_id" value={i.taskId} /><Btn tom="secundario" pequeno>Feito</Btn></form>
                   ) : <Btn href={href} tom="secundario" pequeno>{i.acao}</Btn>}
