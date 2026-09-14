@@ -7,6 +7,7 @@ import { mensagemPara } from "@/lib/crm/copy";
 import { Badge, Btn, Card, Pagina, Stat, Vazio, brl, num, pct, relativo } from "@/components/crm/ui";
 import { concluirTarefa } from "./actions";
 import BotaoWhatsApp from "@/components/crm/BotaoWhatsApp";
+import AtualizarLead from "@/components/crm/AtualizarLead";
 
 export default async function Hoje() {
   const u = await exigirUsuario();
@@ -70,6 +71,7 @@ export default async function Hoje() {
                     <form action={concluirTarefa}><input type="hidden" name="task_id" value={i.taskId} /><Btn tom="secundario" pequeno>Feito</Btn></form>
                   ) : <Btn href={href} tom="secundario" pequeno>{i.acao}</Btn>}
                 </div>
+                {i.leadId && <AtualizarLead leadId={i.leadId} contactId={i.contactId} opportunityId={i.opportunityId} motivos={cat.motivos} />}
               </li>
             );
           })}
