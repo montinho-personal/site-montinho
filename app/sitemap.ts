@@ -1,3 +1,4 @@
+import { CONVERSOR_NO_AR } from "@/lib/concentracao/revisao";
 import { MOBILIDADE_NO_AR } from "@/lib/mobilidade/lancamento";
 import { alimentosIndexaveis } from "@/lib/alimentos/base";
 import type { MetadataRoute } from "next";
@@ -136,6 +137,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    // O conversor mg/mL só entra depois da revisão técnica (lib/concentracao/revisao.ts).
+    ...(CONVERSOR_NO_AR
+      ? [{
+          url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100`,
+          lastModified: new Date(),
+          changeFrequency: "monthly" as const,
+          priority: 0.8,
+        }]
+      : []),
     // O teste de mobilidade só entra quando a chave de lançamento abrir.
     ...(MOBILIDADE_NO_AR
       ? [{

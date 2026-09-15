@@ -169,6 +169,22 @@ export type AnalyticsEvent =
   | "protein_food_search_click"
 
   /**
+   * Conversor mg/mL e Seringa U-100. Aqui a privacidade não é boa prática,
+   * é obrigação: os valores descrevem um injetável que a pessoa tem em casa.
+   * NENHUM número digitado — mg, mL, concentração, marca — entra em evento.
+   * Só o comportamento: viu, calculou, abriu a explicação, moveu a marca,
+   * abriu a conferência, achou divergência, abriu metodologia, abriu fonte.
+   */
+  | "concentration_tool_view"
+  | "concentration_calculated"
+  | "u100_education_open"
+  | "u100_mark_change"
+  | "instruction_check_open"
+  | "instruction_check_mismatch"
+  | "methodology_open"
+  | "source_open"
+
+  /**
    * Calculadora de déficit calórico. Mesma regra de privacidade, e aqui ela
    * pesa mais: peso, altura, idade e sexo juntos são dados corporais
    * sensíveis. NADA disso — nem a TMB, nem o TDEE, nem a meta calculada —
