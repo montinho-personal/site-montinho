@@ -72,7 +72,14 @@ export function itensHoje(b: Base, cat: Catalogo, visoes: LeadVisao[], agora = n
     leads: visoes.map((v) => ({ id: v.lead.id, contactId: v.contato.id, nome: v.contato.nome, status: v.lead.status, createdAt: v.lead.created_at, lastContactAt: v.lead.last_contact_at, firstResponseAt: v.lead.first_response_at, lastReplyAt: v.lead.last_reply_at, followUpsNoCiclo: v.ciclo.followUps, promessaFeita: v.ciclo.promessaFeita, motivoDecidir: motivoDecidir(v.ciclo), emPaz: !!v.lead.em_paz_at, adiadoAte: adiadoAte(v.atividades), nextAction: v.lead.next_action, nextActionAt: v.lead.next_action_at, stageCode: v.etapa?.code ?? null, proposalSentAt: v.opp?.proposal_sent_at ?? null, expectedValue: v.opp?.expected_value ?? null, temperatura: v.temperatura, opportunityId: v.opp?.id })),
     tarefas: b.tarefas.filter((t) => !t.completed_at).map((t) => ({ id: t.id, leadId: t.lead_id, clientId: t.client_id, contactId: t.contact_id, nome: t.contact_id ? nome(t.contact_id) : "—", titulo: t.titulo, dueAt: t.due_at, priority: t.priority, tipo: t.tipo })),
     trials: b.experimentais.map((t) => ({ id: t.id, leadId: t.lead_id, contactId: t.contact_id, nome: nome(t.contact_id), scheduledAt: t.scheduled_at, status: t.status })),
-    clientes: b.clientes.map((c) => ({ id: c.id, contactId: c.contact_id, nome: nome(c.contact_id), renewalDate: c.renewal_date, status: c.status })),
+    clientes: b.clientes.map((c) => {
+      // Tarefa de renovação aberta com data no futuro = já falei, estou esperando.
+      const proxima = b.tarefas.filter((t) => t.client_id === c.id && t.tipo === "renovacao" && !t.completed_at).map((t) => t.due_at).sort().at(-1) ?? null;
+      // Cobranças deste ciclo: mensagens sobre renovação desde a data que venceu.
+      const desde = c.renewal_date ? `${c.renewal_date}T00:00:00.000Z` : c.first_purchase_at;
+      const cobrancas = b.atividades.filter((a) => a.client_id === c.id && a.tipo === "message" && String((a.metadata as { grupo?: string })?.grupo ?? "").startsWith("renovacao") && a.ocorreu_em >= desde).length;
+      return { id: c.id, contactId: c.contact_id, nome: nome(c.contact_id), renewalDate: c.renewal_date, status: c.status, proximaCobrancaEm: proxima, cobrancas };
+    }),
     sla, renovacaoDias,
   }, agora);
 }

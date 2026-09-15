@@ -456,7 +456,7 @@ export function classificarLead(s: SinaisLead, limites = { quenteMin: 5, mornoMi
 export interface LeadParaHoje { id: string; contactId: string; nome: string; status: string; createdAt: string; lastContactAt: string | null; firstResponseAt: string | null; lastReplyAt?: string | null; followUpsNoCiclo?: number; promessaFeita?: boolean; motivoDecidir?: string; emPaz?: boolean; adiadoAte?: string | null; nextAction: string | null; nextActionAt: string | null; stageCode: string | null; proposalSentAt: string | null; expectedValue: number | null; temperatura?: string; opportunityId?: string | null }
 export interface TarefaParaHoje { id: string; leadId: string | null; clientId: string | null; contactId: string | null; nome: string; titulo: string; dueAt: string; priority: string; tipo?: string }
 export interface TrialParaHoje { id: string; leadId: string | null; contactId: string; nome: string; scheduledAt: string; status: string }
-export interface ClienteParaHoje { id: string; contactId: string; nome: string; renewalDate: string | null; status: string }
+export interface ClienteParaHoje { id: string; contactId: string; nome: string; renewalDate: string | null; status: string; proximaCobrancaEm?: string | null; cobrancas?: number }
 export interface SlaConfig { novo_lead_sem_contato_horas: number; proposta_sem_follow_up_dias: number; lead_parado_dias: number; negociacao_antiga_dias: number }
 export interface ItemHoje { prioridade: number; grupo: string; motivo: string; acao: string; contactId: string; leadId?: string | null; clientId?: string | null; taskId?: string | null; trialId?: string | null; opportunityId?: string | null; nome: string; valor?: number | null }
 
@@ -549,11 +549,24 @@ export function prioridadesHoje(
     else if (dias >= d.sla.lead_parado_dias && l.lastContactAt) cobrar(l, 5, "parado", `Sem contato há ${Math.round(dias)} dias`);
     if (!l.nextActionAt) itens.push({ prioridade: 6, grupo: "sem_proxima_acao", motivo: "Lead aberto sem próxima ação", acao: "Definir próxima ação", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
   }
-  // 8. Renovações próximas
+  // 8. Renovações próximas e vencidas.
+  //
+  // Falar sobre renovação é cobrança como qualquer outra: depois de mandar a
+  // mensagem o card espera a resposta (proximaCobrancaEm) em vez de continuar
+  // na lista todo dia, e três tentativas sem renovar viram uma decisão. Só
+  // "Confirmar renovação" (ou o cancelamento) resolve de verdade — o que a
+  // mensagem faz é marcar que a bola está com a pessoa.
   for (const c of d.clientes) if (c.status === "ativo" && c.renewalDate) {
+    if (c.proximaCobrancaEm && new Date(c.proximaCobrancaEm) > agora) continue;
     const dias = Math.ceil(diasEntre(agora, c.renewalDate));
+    const perto = dias < 0 || d.renovacaoDias.some((x) => dias <= x);
+    if (!perto) continue;
+    if ((c.cobrancas ?? 0) >= MAX_FOLLOW_UPS) {
+      itens.push({ prioridade: 4, grupo: "decidir", motivo: `${c.cobrancas} mensagens sobre a renovação sem resposta${dias < 0 ? ` — venceu há ${-dias} dias` : ""}`, acao: "Decidir: renovar, pausar ou encerrar", contactId: c.contactId, clientId: c.id, nome: c.nome });
+      continue;
+    }
     if (dias < 0) itens.push({ prioridade: 5, grupo: "renovacao_vencida", motivo: `Renovação venceu há ${-dias} dias`, acao: "Confirmar renovação", contactId: c.contactId, clientId: c.id, nome: c.nome });
-    else if (d.renovacaoDias.some((x) => dias <= x)) itens.push({ prioridade: 7, grupo: "renovacao_proxima", motivo: `Renovação em ${dias} dias`, acao: "Falar sobre renovação", contactId: c.contactId, clientId: c.id, nome: c.nome });
+    else itens.push({ prioridade: 7, grupo: "renovacao_proxima", motivo: `Renovação em ${dias} dias`, acao: "Falar sobre renovação", contactId: c.contactId, clientId: c.id, nome: c.nome });
   }
   // Uma pessoa, um card: fica o item de maior prioridade por contato (motivos agregados).
   const porContato = new Map<string, ItemHoje & { motivos: string[] }>();
