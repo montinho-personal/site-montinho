@@ -9,7 +9,7 @@
  * situação certa; (4) o contexto real de um lead vira variáveis certas.
  */
 import { SITUACOES, TEXTOS } from "../lib/crm/copy-textos";
-import { VARIAVEIS, contextoDoContato, escolherSituacao, formatarDiaHora, mensagemPara, objetivoUsavel, perguntaDaMensagem, preencher, type Sinais } from "../lib/crm/copy";
+import { VARIAVEIS, contextoDoContato, saudacaoDe, escolherSituacao, formatarDiaHora, mensagemPara, objetivoUsavel, perguntaDaMensagem, preencher, type Sinais } from "../lib/crm/copy";
 import type { Base, Catalogo } from "../lib/crm/dados";
 
 let falhas = 0;
@@ -61,6 +61,23 @@ for (const s of SITUACOES) {
   }
   ok(`${s}: vazia não termina frase com preposição`, !/\b(pela|pelo|sobre|no|na|de|do|da|em|para)\s*[.?!]/i.test(preencher(modelo, vazias)), preencher(modelo, vazias));
 }
+
+bloco("2B. SAUDAÇÃO PELO HORÁRIO DE BRASÍLIA");
+/*
+ * O servidor da Vercel roda em UTC. Sem fixar o fuso, "boa noite" começaria
+ * às 21h de Brasília e o "bom dia" apareceria no meio da madrugada.
+ */
+const emBrasilia = (iso: string) => saudacaoDe(new Date(iso));
+ok("05h59 ainda é bom dia", emBrasilia("2026-09-15T05:59:00-03:00") === "Bom dia");
+ok("11h59 ainda é bom dia", emBrasilia("2026-09-15T11:59:00-03:00") === "Bom dia");
+ok("12h00 vira boa tarde", emBrasilia("2026-09-15T12:00:00-03:00") === "Boa tarde");
+ok("17h59 ainda é boa tarde", emBrasilia("2026-09-15T17:59:00-03:00") === "Boa tarde");
+ok("18h00 vira boa noite", emBrasilia("2026-09-15T18:00:00-03:00") === "Boa noite");
+ok("00h30 é bom dia", emBrasilia("2026-09-15T00:30:00-03:00") === "Bom dia");
+// A prova de que o fuso é lido: 23h UTC é 20h em Brasília.
+ok("23h UTC = 20h aqui = boa noite", saudacaoDe(new Date("2026-09-15T23:00:00Z")) === "Boa noite");
+ok("11h UTC = 8h aqui = bom dia", saudacaoDe(new Date("2026-09-15T11:00:00Z")) === "Bom dia");
+ok("toda mensagem começa com a saudação", Object.values(TEXTOS).every((t) => t.startsWith("[[{saudacao}, ]]{nome}!")), Object.entries(TEXTOS).filter(([, t]) => !t.startsWith("[[{saudacao}, ]]{nome}!")).map(([k]) => k).join(", "));
 
 bloco("3. GRUPO → SITUAÇÃO");
 const base: Sinais = {

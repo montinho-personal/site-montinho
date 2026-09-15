@@ -26,7 +26,7 @@ import type { ClienteRow, Experimental, Lead, Oportunidade } from "./tipos";
 
 export type { Situacao } from "./copy-textos";
 
-export const VARIAVEIS = ["nome", "servico", "pagina", "objetivo", "pergunta", "dias", "valor", "plano", "dia_hora", "local", "renova_em", "indicador", "cidade"] as const;
+export const VARIAVEIS = ["saudacao", "nome", "servico", "pagina", "objetivo", "pergunta", "dias", "valor", "plano", "dia_hora", "local", "renova_em", "indicador", "cidade"] as const;
 export type Variavel = (typeof VARIAVEIS)[number];
 export type Variaveis = Record<Variavel, string>;
 
@@ -42,6 +42,12 @@ export function preencher(modelo: string, vars: Partial<Record<string, string>>)
   t = t.replace(/\{(\w+)\}/g, (_, k: string) => v(k));
   return arrumar(t);
 }
+/** Bom dia até as 11h59, boa tarde até as 17h59, boa noite depois — horário de Brasília. */
+export function saudacaoDe(quando: Date): string {
+  const h = Number(new Intl.DateTimeFormat("pt-BR", { hour: "2-digit", hour12: false, timeZone: "America/Sao_Paulo" }).format(quando));
+  return h < 12 ? "Bom dia" : h < 18 ? "Boa tarde" : "Boa noite";
+}
+
 function arrumar(t: string): string {
   return t
     .replace(/[ \t]+/g, " ")
@@ -226,6 +232,10 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
     jaIndicou: b.contatos.some((x) => x.referred_by_contact_id === ref.contactId),
   };
   const vars: Variaveis = {
+    // Bom dia / boa tarde / boa noite pela hora de Brasília, não a do servidor:
+    // a Vercel roda em UTC, e sem o fuso o "boa noite" chegaria às 21h de lá,
+    // que é 18h aqui.
+    saudacao: saudacaoDe(agora),
     nome: contato ? primeiroNome(contato.nome) : "",
     servico: (cat.servicos.find((s) => s.id === servicoId)?.nome ?? "").toLowerCase(),
     pagina,
