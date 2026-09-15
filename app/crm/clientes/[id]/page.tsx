@@ -5,7 +5,9 @@ import { base, catalogo, urlWhatsAppContato } from "@/lib/crm/dados";
 import { mensagemPara } from "@/lib/crm/copy";
 import { ltvRealizado, mrrDoContrato, diasEntre } from "@/lib/crm/metricas";
 import { Badge, Btn, Campo, Card, Detalhes, Input, Pagina, Select, Stat, Tabela, Textarea, brl, dataBr, dataHoraBr, dataInput } from "@/components/crm/ui";
-import { cancelarCliente, criarTarefa, gerarCodigoIndicacao, marcarRecebido, registrarAtividade, registrarReceita, renovarContrato } from "../../actions";
+import { cancelarCliente, criarTarefa, definirPacote, gerarCodigoIndicacao, marcarRecebido, registrarAtividade, registrarReceita, removerAula, renovarContrato } from "../../actions";
+import { formatarDatas, resumoDoPacote } from "@/lib/crm/aulas";
+import ColarAulas from "@/components/crm/ColarAulas";
 
 export default async function ClientePage({ params }: { params: Promise<{ id: string }> }) {
   const u = await exigirUsuario();
@@ -23,6 +25,9 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
   const indicados = b.contatos.filter((x) => x.referred_by_contact_id === c.contact_id);
   const wa = urlWhatsAppContato(contato.telefone_e164, mensagemPara(b, cat, { contactId: contato.id, clientId: c.id }).texto);
   const plano = cat.planos.find((p) => p.id === c.current_plan_id);
+  // Pacote flexível: as aulas do contrato ativo (as antigas, sem contrato, entram pela data).
+  const aulas = b.aulas.filter((a) => a.client_id === c.id && (!contratoAtivo || a.contract_id === contratoAtivo.id || (!a.contract_id && a.data >= contratoAtivo.inicio))).sort((a, z) => a.data.localeCompare(z.data));
+  const pacote = resumoDoPacote(aulas.length, contratoAtivo?.sessoes_contratadas ?? null);
   const meses = diasEntre(c.first_purchase_at, c.cancelled_at ?? new Date().toISOString()) / 30.44;
   const ro = u.role === "readonly";
   const refUrl = contato.referral_code ? `https://www.montinhopersonal.com.br/r/${contato.referral_code}` : null;
@@ -78,6 +83,48 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
                 </Detalhes>
               </div>
             )}
+          </Card>
+          <Card titulo="Aulas do pacote">
+            {pacote.contratadas == null ? (
+              <p className="text-sm text-zinc-500">Este contrato renova por data, não por aula. Se for pacote flexível, diga quantas aulas foram contratadas abaixo.</p>
+            ) : (
+              <>
+                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                  <strong className="text-2xl">{pacote.usadas}</strong>
+                  <span className="text-sm text-zinc-400">de {pacote.contratadas} aulas dadas</span>
+                  <Badge tom={pacote.terminou ? "alerta" : pacote.restantes! <= 2 ? "info" : "bom"}>
+                    {pacote.terminou ? "pacote terminou" : `faltam ${pacote.restantes}`}
+                  </Badge>
+                </div>
+                <div className="mt-2 h-2 overflow-hidden rounded-full bg-white/10">
+                  <div className="h-full rounded-full bg-emerald-400" style={{ width: `${Math.min(100, (pacote.usadas / pacote.contratadas) * 100)}%` }} />
+                </div>
+              </>
+            )}
+            {aulas.length > 0 && (
+              <ul className="mt-3 flex flex-wrap gap-1.5">
+                {aulas.map((a, i) => (
+                  <li key={a.id} className="flex items-center gap-1 rounded-lg border border-white/10 bg-black/30 px-2 py-1 text-xs text-zinc-300">
+                    <span className="text-zinc-600">{i + 1}.</span>{dataBr(a.data)}
+                    {!ro && <form action={removerAula}><input type="hidden" name="aula_id" value={a.id} /><input type="hidden" name="client_id" value={c.id} /><button type="submit" aria-label={`Remover aula de ${dataBr(a.data)}`} className="px-1 text-zinc-600 hover:text-rose-300">×</button></form>}
+                  </li>
+                ))}
+              </ul>
+            )}
+            {!ro && (
+              <div className="mt-3 grid gap-3 md:grid-cols-2">
+                <ColarAulas clientId={c.id} />
+                <Detalhes titulo="Tamanho do pacote">
+                  <form action={definirPacote} className="flex gap-2">
+                    <input type="hidden" name="client_id" value={c.id} />
+                    <Input name="sessoes_contratadas" inputMode="numeric" placeholder="Ex.: 20" defaultValue={contratoAtivo?.sessoes_contratadas ?? ""} />
+                    <Btn pequeno tom="secundario">Salvar</Btn>
+                  </form>
+                  <p className="mt-2 text-xs text-zinc-500">Vale para o contrato ativo. Em branco, o cliente volta a renovar por data.</p>
+                </Detalhes>
+              </div>
+            )}
+            {aulas.length > 0 && <p className="mt-3 text-xs text-zinc-500">Na mensagem de renovação essas datas vão inteiras, para o aluno conferir: {formatarDatas(aulas.map((a) => a.data))}.</p>}
           </Card>
           <Card titulo="Linha do tempo">
             {atividades.length === 0 ? <p className="text-sm text-zinc-500">Sem registros.</p> : <ol className="space-y-2">{atividades.map((a) => <li key={a.id} className="flex gap-3 text-sm"><span className="w-28 shrink-0 text-xs text-zinc-500">{dataHoraBr(a.ocorreu_em)}</span><span><Badge>{a.tipo}</Badge> {a.descricao}</span></li>)}</ol>}

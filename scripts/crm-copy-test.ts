@@ -32,6 +32,7 @@ ok("variável desconhecida vira vazio", preencher("x {nada} y", {}) === "x y");
 bloco("2. TEXTOS — REGRAS DA CASA");
 const cheias = Object.fromEntries(VARIAVEIS.map((v) => [v, "X"])) as Record<string, string>;
 cheias.nome = "Ana"; cheias.dias = "3"; cheias.renova_em = "7"; cheias.valor = "R$ 399"; cheias.dia_hora = "amanhã às 7h"; cheias.pagina = "Personal Trainer Alphaville";
+cheias.aulas = "20"; cheias.datas = "06/08, 07/08, 10/08, 11/08, 13/08, 14/08, 15/08, 24/08, 25/08, 26/08, 28/08, 12/09, 14/09, 15/09, 17/09, 19/09, 22/09, 24/09, 26/09, 29/09";
 cheias.pergunta = "como funciona o acompanhamento"; cheias.objetivo = "emagrecer"; cheias.plano = "2 aulas por semana"; cheias.servico = "consultoria online"; cheias.indicador = "Bruna"; cheias.local = "academia do condomínio"; cheias.cidade = "Barueri";
 const vazias = Object.fromEntries(VARIAVEIS.map((v) => [v, ""])) as Record<string, string>;
 vazias.nome = "Ana";
@@ -81,7 +82,7 @@ ok("toda mensagem começa com a saudação", Object.values(TEXTOS).every((t) => 
 
 bloco("3. GRUPO → SITUAÇÃO");
 const base: Sinais = {
-  pergunta: "", indicador: "", pagina: "", anuncio: false, jaContatado: false, respondeu: false, followUpsNoCiclo: 0, propostaEnviada: false, diasProposta: null, etapa: null,
+  pergunta: "", indicador: "", pagina: "", anuncio: false, jaContatado: false, respondeu: false, followUpsNoCiclo: 0, pacoteTerminou: false, propostaEnviada: false, diasProposta: null, etapa: null,
   exigeExperimental: true, experimentalAgendada: false, experimentalRealizada: false, experimentalNoShow: false,
   cliente: undefined, renovaEm: null, diasDeCliente: null, diasForaDeTreino: null, jaIndicou: false,
 };

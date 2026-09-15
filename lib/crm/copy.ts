@@ -20,6 +20,7 @@
 import type { Base, Catalogo } from "./dados";
 import { diasEntre } from "./metricas";
 import { cicloDeFollowUps } from "./ciclo";
+import { formatarDatas, resumoDoPacote } from "./aulas";
 import { extrairRef, identificarMensagem, limparColagem } from "./mensagens";
 import { limparTitulo } from "../whatsapp";
 import { TEXTOS, type Situacao } from "./copy-textos";
@@ -27,7 +28,7 @@ import type { ClienteRow, Experimental, Lead, Oportunidade } from "./tipos";
 
 export type { Situacao } from "./copy-textos";
 
-export const VARIAVEIS = ["saudacao", "nome", "servico", "pagina", "objetivo", "pergunta", "dias", "valor", "plano", "dia_hora", "local", "renova_em", "indicador", "cidade"] as const;
+export const VARIAVEIS = ["saudacao", "nome", "servico", "pagina", "objetivo", "pergunta", "dias", "valor", "plano", "dia_hora", "local", "renova_em", "indicador", "cidade", "aulas", "datas"] as const;
 export type Variavel = (typeof VARIAVEIS)[number];
 export type Variaveis = Record<Variavel, string>;
 
@@ -67,7 +68,7 @@ export interface Sinais {
   pergunta: string; indicador: string; pagina: string; anuncio: boolean;
   jaContatado: boolean; respondeu: boolean; followUpsNoCiclo: number; propostaEnviada: boolean; diasProposta: number | null; etapa: string | null;
   exigeExperimental: boolean; experimentalAgendada: boolean; experimentalRealizada: boolean; experimentalNoShow: boolean;
-  cliente: ClienteRow | undefined; renovaEm: number | null; diasDeCliente: number | null; diasForaDeTreino: number | null; jaIndicou: boolean;
+  cliente: ClienteRow | undefined; pacoteTerminou: boolean; renovaEm: number | null; diasDeCliente: number | null; diasForaDeTreino: number | null; jaIndicou: boolean;
 }
 
 const primeiroContato = (s: Sinais): Situacao =>
@@ -110,6 +111,9 @@ const comAluno = (s: Sinais): Situacao => {
     if (d != null && d > 365) return "reativacao_antiga";
     return "reativacao_pausado";
   }
+  // Pacote acabado manda na data: num plano sem rotina fixa a data de
+  // renovação é chute, e a aula dada é fato.
+  if (s.pacoteTerminou) return "renovacao_pacote";
   if (s.renovaEm != null && s.renovaEm < 0) return "renovacao_vencida";
   if (s.diasDeCliente != null && s.diasDeCliente <= 14) return "boas_vindas";
   if (s.renovaEm != null && s.renovaEm <= 30) return "renovacao_proxima";
@@ -142,6 +146,7 @@ export function escolherSituacao(grupo: string | null | undefined, s: Sinais): S
     case "quente": return s.propostaEnviada && (s.diasProposta ?? 0) >= 2 ? depoisDaProposta(s) : proximoPasso(s);
     case "renovacao_proxima": return "renovacao_proxima";
     case "renovacao_vencida": return "renovacao_vencida";
+    case "renovacao_pacote": return "renovacao_pacote";
     default: return retomar(s);
   }
 }
@@ -215,6 +220,13 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
   const ultimoContato = lead?.last_contact_at ?? null;
   const pagina = handoff?.page_title ? limparTitulo(handoff.page_title) : "";
 
+  // Pacote flexível: aulas dadas no contrato ativo (as antigas, sem contrato, contam pela data).
+  const contratoAtivo = cliente ? b.contratos.filter((k) => k.client_id === cliente.id && k.status === "ativo").sort((a, z) => z.inicio.localeCompare(a.inicio))[0] : undefined;
+  const aulasDoPacote = contratoAtivo?.sessoes_contratadas
+    ? b.aulas.filter((a) => a.client_id === cliente!.id && (a.contract_id === contratoAtivo.id || (!a.contract_id && a.data >= contratoAtivo.inicio))).map((a) => a.data).sort()
+    : [];
+  const pacote = resumoDoPacote(aulasDoPacote.length, contratoAtivo?.sessoes_contratadas ?? null);
+
   const servico = cat.servicos.find((s) => s.id === servicoId);
   const sinais: Sinais = {
     pergunta: perguntaDaMensagem(mensagemOriginal),
@@ -237,6 +249,7 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
     experimentalRealizada: trials.some((t) => t.status === "realizada"),
     experimentalNoShow: trials.some((t) => t.status === "no_show") && !trials.some((t) => t.status === "agendada" || t.status === "realizada"),
     cliente,
+    pacoteTerminou: pacote.terminou,
     renovaEm,
     diasDeCliente: cliente ? Math.round(diasEntre(cliente.first_purchase_at, agora)) : null,
     diasForaDeTreino: cliente && cliente.status !== "ativo"
@@ -263,6 +276,8 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
     renova_em: renovaEm != null && renovaEm >= 0 ? String(renovaEm) : "",
     indicador: sinais.indicador,
     cidade: contato?.cidade ?? "",
+    aulas: pacote.terminou ? String(pacote.usadas) : "",
+    datas: pacote.terminou ? formatarDatas(aulasDoPacote) : "",
   };
   // "dias" depende do que a mensagem conta: desde a proposta, desde o último contato, desde a chegada ou desde o vencimento.
   const desde = (iso: string | null | undefined) => (iso ? String(Math.max(0, Math.round(diasEntre(iso, agora)))) : "");

@@ -12,6 +12,7 @@
  */
 import { GRUPOS_FOLLOW_UP } from "@/lib/crm/ciclo";
 import { dataDoCheckIn, tarefasDeOnboarding } from "@/lib/crm/onboarding";
+import { lerDatas } from "@/lib/crm/aulas";
 import { FUSO } from "@/lib/crm/copy";
 import { etapaProtegida, podeDesfazerPerdido, type SnapshotPerda } from "@/lib/crm/perda";
 import { revalidatePath } from "next/cache";
@@ -519,12 +520,13 @@ export async function renovarContrato(fd: FormData) {
   const u = await exigirEscrita();
   const sb = await supabaseServer();
   const clientId = s(fd, "client_id")!; const valor = n(fd, "valor"); const ciclo = n(fd, "ciclo_meses") ?? 1; const inicio = s(fd, "inicio") ?? hoje();
+  const pacote = n(fd, "sessoes_contratadas");
   const planId = s(fd, "plan_id"); if (!valor || !planId) throw new Error("Renovação exige plano e valor.");
   const { data: c } = await sb.from("crm_clients").select("*").eq("id", clientId).single();
   const { data: atual } = await sb.from("crm_contracts").select("*").eq("client_id", clientId).eq("status", "ativo").order("inicio", { ascending: false }).limit(1).maybeSingle();
   if (atual) await sb.from("crm_contracts").update({ status: "renovado", fim: atual.fim ?? addDias(new Date(inicio + "T12:00:00"), -1).toISOString().slice(0, 10) }).eq("id", atual.id);
   const renovacao = addMeses(new Date(inicio + "T12:00:00"), ciclo).toISOString().slice(0, 10);
-  const { data: novo, error } = await sb.from("crm_contracts").insert({ client_id: clientId, service_id: s(fd, "service_id") ?? c.service_id, plan_id: planId, valor, ciclo_meses: ciclo, inicio, renovacao_prevista: renovacao, status: "ativo", contrato_anterior_id: atual?.id ?? null, created_by: u.id }).select("id").single();
+  const { data: novo, error } = await sb.from("crm_contracts").insert({ client_id: clientId, service_id: s(fd, "service_id") ?? c.service_id, plan_id: planId, valor, ciclo_meses: ciclo, inicio, renovacao_prevista: renovacao, status: "ativo", contrato_anterior_id: atual?.id ?? null, sessoes_contratadas: pacote && pacote > 0 ? Math.round(pacote) : (atual?.sessoes_contratadas ?? null), created_by: u.id }).select("id").single();
   if (error) throw new Error(`contrato: ${error.message}`);
   await sb.from("crm_clients").update({ status: "ativo", current_plan_id: planId, renewal_date: renovacao, end_date: null }).eq("id", clientId);
   const recebido = fd.get("recebido") === "on";
@@ -534,6 +536,53 @@ export async function renovarContrato(fd: FormData) {
   await sb.from("crm_tasks").update({ completed_at: new Date().toISOString() }).eq("client_id", clientId).eq("tipo", "renovacao").is("completed_at", null);
   revalidarTudo([`/crm/clientes/${clientId}`]);
 }
+/**
+ * Aulas do pacote: cola a lista, o CRM conta.
+ *
+ * O controle real vive no WhatsApp ("-06/08, -07/08…"), então a ação lê a
+ * lista como ela é: hífen, cabeçalho no meio, com ou sem ano. O índice único
+ * (cliente, dia) é o que impede a mesma lista colada duas vezes de dobrar a
+ * contagem — e contagem errada aqui vira cobrança errada.
+ */
+export async function registrarAulas(fd: FormData) {
+  const u = await exigirEscrita();
+  const sb = await supabaseServer();
+  const clientId = s(fd, "client_id")!;
+  const { datas } = lerDatas(s(fd, "datas") ?? "");
+  if (datas.length === 0) throw new Error("Não encontrei nenhuma data nessa lista.");
+  const { data: c } = await sb.from("crm_clients").select("contact_id").eq("id", clientId).single();
+  const { data: contrato } = await sb.from("crm_contracts").select("id").eq("client_id", clientId).eq("status", "ativo").order("inicio", { ascending: false }).limit(1).maybeSingle();
+  const { data: gravadas, error } = await sb.from("crm_sessions")
+    .upsert(datas.map((d) => ({ client_id: clientId, contract_id: contrato?.id ?? null, data: d, origem_registro: "crm", created_by: u.id })), { onConflict: "client_id,data", ignoreDuplicates: true })
+    .select("data");
+  if (error) throw new Error(`aulas: ${error.message}`);
+  const novas = gravadas?.length ?? 0;
+  if (novas > 0) await atividade(sb, u.id, { contact_id: c?.contact_id, client_id: clientId, tipo: "other", descricao: `${novas} aula${novas > 1 ? "s" : ""} registrada${novas > 1 ? "s" : ""}: ${gravadas!.map((x: { data: string }) => x.data.slice(8, 10) + "/" + x.data.slice(5, 7)).join(", ")}` });
+  revalidarTudo(["/crm", `/crm/clientes/${clientId}`]);
+}
+
+export async function removerAula(fd: FormData) {
+  await exigirEscrita();
+  const sb = await supabaseServer();
+  const id = s(fd, "aula_id")!; const clientId = s(fd, "client_id")!;
+  await erroSe(await sb.from("crm_sessions").delete().eq("id", id), "aula");
+  revalidarTudo(["/crm", `/crm/clientes/${clientId}`]);
+}
+
+/** Tamanho do pacote do contrato ativo. Vazio volta o contrato para renovação por data. */
+export async function definirPacote(fd: FormData) {
+  const u = await exigirEscrita();
+  const sb = await supabaseServer();
+  const clientId = s(fd, "client_id")!;
+  const total = n(fd, "sessoes_contratadas");
+  const { data: contrato } = await sb.from("crm_contracts").select("id").eq("client_id", clientId).eq("status", "ativo").order("inicio", { ascending: false }).limit(1).maybeSingle();
+  if (!contrato) throw new Error("Este cliente não tem contrato ativo. Registre a venda ou a renovação primeiro.");
+  await erroSe(await sb.from("crm_contracts").update({ sessoes_contratadas: total && total > 0 ? Math.round(total) : null }).eq("id", contrato.id), "pacote");
+  const { data: c } = await sb.from("crm_clients").select("contact_id").eq("id", clientId).single();
+  await atividade(sb, u.id, { contact_id: c?.contact_id, client_id: clientId, tipo: "other", descricao: total ? `Pacote definido: ${Math.round(total)} aulas` : "Pacote removido (volta a renovar por data)" });
+  revalidarTudo(["/crm", `/crm/clientes/${clientId}`]);
+}
+
 export async function cancelarCliente(fd: FormData) {
   const u = await exigirEscrita();
   const sb = await supabaseServer();

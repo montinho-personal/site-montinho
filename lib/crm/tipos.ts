@@ -37,7 +37,9 @@ export interface ClienteRow {
   start_date: string | null; end_date: string | null; renewal_date: string | null; source_code: string; source_confidence: Confianca; cancel_reason: string | null;
   cancelled_at: string | null; reactivated_at: string | null; origem_registro: string; created_at: string; updated_at: string;
 }
-export interface Contrato { id: string; client_id: string; opportunity_id: string | null; service_id: string; plan_id: string; valor: number; ciclo_meses: number; inicio: string; fim: string | null; renovacao_prevista: string | null; status: "ativo" | "renovado" | "encerrado" | "cancelado"; contrato_anterior_id: string | null; created_at: string }
+export interface Contrato { id: string; client_id: string; opportunity_id: string | null; service_id: string; plan_id: string; valor: number; ciclo_meses: number; inicio: string; fim: string | null; renovacao_prevista: string | null; status: "ativo" | "renovado" | "encerrado" | "cancelado"; contrato_anterior_id: string | null; sessoes_contratadas: number | null; created_at: string }
+/** Aula dada. Só existe em plano de pacote, onde a renovação é por aula e não por data. */
+export interface Aula { id: string; client_id: string; contract_id: string | null; data: string; observacao: string | null; origem_registro: string; created_at: string; created_by: string | null }
 export interface EventoReceitaRow { id: string; client_id: string; contract_id: string | null; tipo: string; amount: number; occurred_at: string; status: "expected" | "contracted" | "collected"; service_id: string | null; plan_id: string | null; source_code: string | null; payment_method: string | null; external_ref: string | null; fee: number | null; notes: string | null; confidence: string; import_id: string | null; created_at: string }
 export interface Handoff {
   id: string; ref_code: string; created_at: string; anonymous_id: string | null; session_id: string | null; page_url: string | null; page_path: string | null; page_title: string | null; cta_id: string | null;

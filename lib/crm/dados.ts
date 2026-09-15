@@ -7,7 +7,7 @@
 import { cache } from "react";
 import { supabaseServer } from "./supabase/server";
 import type {
-  Atividade, ClienteRow, ConfigSla, Contato, Contrato, Etapa, EventoReceitaRow, Experimental, Fonte, GastoAds, Handoff, HistoricoAquisicao, HistoricoEtapa,
+  Atividade, Aula, ClienteRow, ConfigSla, Contato, Contrato, Etapa, EventoReceitaRow, Experimental, Fonte, GastoAds, Handoff, HistoricoAquisicao, HistoricoEtapa,
   ImportRow, Lead, MotivoPerda, Oportunidade, Pipeline, Plano, Servico, Tarefa, Template, ToqueRow, UsuarioRow,
 } from "./tipos";
 
@@ -40,7 +40,7 @@ export const slaPadrao: ConfigSla = { novo_lead_sem_contato_horas: 24, proposta_
 
 export interface Base {
   contatos: Contato[]; leads: Lead[]; oportunidades: Oportunidade[]; experimentais: Experimental[]; tarefas: Tarefa[]; clientes: ClienteRow[];
-  contratos: Contrato[]; receitas: EventoReceitaRow[]; atividades: Atividade[]; handoffs: Handoff[]; toques: ToqueRow[]; gastos: GastoAds[]; historicoEtapas: HistoricoEtapa[];
+  contratos: Contrato[]; receitas: EventoReceitaRow[]; atividades: Atividade[]; handoffs: Handoff[]; toques: ToqueRow[]; gastos: GastoAds[]; historicoEtapas: HistoricoEtapa[]; aulas: Aula[];
 }
 /**
  * Tudo que as telas operacionais e analíticas precisam. Uma leitura, cálculo
@@ -49,7 +49,7 @@ export interface Base {
  */
 export const base = cache(async function base(): Promise<Base> {
   const sb = await supabaseServer();
-  const [contatos, leads, oportunidades, experimentais, tarefas, clientes, contratos, receitas, atividades, handoffs, toques, gastos, historicoEtapas] = await Promise.all([
+  const [contatos, leads, oportunidades, experimentais, tarefas, clientes, contratos, receitas, atividades, handoffs, toques, gastos, historicoEtapas, aulas] = await Promise.all([
     todos<Contato>(sb, "crm_contacts", (q) => q.is("merged_into_contact_id", null).order("created_at", { ascending: false })),
     todos<Lead>(sb, "crm_leads", (q) => q.order("created_at", { ascending: false })),
     todos<Oportunidade>(sb, "crm_opportunities"),
@@ -63,8 +63,9 @@ export const base = cache(async function base(): Promise<Base> {
     todos<ToqueRow>(sb, "crm_attribution_touches", (q) => q.order("occurred_at")),
     todos<GastoAds>(sb, "crm_ad_spend"),
     todos<HistoricoEtapa>(sb, "crm_stage_history"),
+    todos<Aula>(sb, "crm_sessions", (q) => q.order("data")),
   ]);
-  return { contatos, leads, oportunidades, experimentais, tarefas, clientes, contratos, receitas, atividades, handoffs, toques, gastos, historicoEtapas };
+  return { contatos, leads, oportunidades, experimentais, tarefas, clientes, contratos, receitas, atividades, handoffs, toques, gastos, historicoEtapas, aulas };
 });
 
 export async function historicoAquisicao(fonte?: string): Promise<HistoricoAquisicao[]> {
