@@ -10,6 +10,7 @@
  *  - proposta enviada cria follow-up automático;
  *  - experimental realizada cria tarefa de proposta; no-show cria reativação.
  */
+import { GRUPOS_FOLLOW_UP } from "@/lib/crm/ciclo";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { exigirAdmin, exigirEscrita, exigirUsuario } from "@/lib/crm/auth";
@@ -640,7 +641,8 @@ export async function contatarPeloWhatsApp(fd: FormData) {
     contact_id: contactId, lead_id: leadId, client_id: clientId, opportunity_id: opp?.id,
     tipo: "message", ocorreu_em: agora,
     descricao: "Mensagem enviada pelo WhatsApp a partir da lista de hoje",
-    metadata: { origem: "hoje", grupo, situacao },
+    // follow_up: true é o que o contador de lib/crm/ciclo.ts lê — só cobrança de resposta conta.
+    metadata: { origem: "hoje", grupo, situacao, follow_up: !!grupo && GRUPOS_FOLLOW_UP.has(grupo) },
   });
 
   if (taskId) {

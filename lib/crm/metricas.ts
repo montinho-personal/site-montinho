@@ -20,6 +20,7 @@
  *    non-direct e assistidos. Unknown continua unknown.
  *  - Mediana antes de média onde extremo distorce (ciclo de venda, resposta).
  */
+import { MAX_FOLLOW_UPS } from "./ciclo";
 
 // ---------------------------------------------------------------------------
 // Utilidades numéricas
@@ -452,7 +453,7 @@ export function classificarLead(s: SinaisLead, limites = { quenteMin: 5, mornoMi
 // ---------------------------------------------------------------------------
 // Daily Decision Engine — regras transparentes, sem "AI score"
 // ---------------------------------------------------------------------------
-export interface LeadParaHoje { id: string; contactId: string; nome: string; status: string; createdAt: string; lastContactAt: string | null; firstResponseAt: string | null; lastReplyAt?: string | null; nextAction: string | null; nextActionAt: string | null; stageCode: string | null; proposalSentAt: string | null; expectedValue: number | null; temperatura?: string; opportunityId?: string | null }
+export interface LeadParaHoje { id: string; contactId: string; nome: string; status: string; createdAt: string; lastContactAt: string | null; firstResponseAt: string | null; lastReplyAt?: string | null; followUpsNoCiclo?: number; promessaFeita?: boolean; motivoDecidir?: string; nextAction: string | null; nextActionAt: string | null; stageCode: string | null; proposalSentAt: string | null; expectedValue: number | null; temperatura?: string; opportunityId?: string | null }
 export interface TarefaParaHoje { id: string; leadId: string | null; clientId: string | null; contactId: string | null; nome: string; titulo: string; dueAt: string; priority: string }
 export interface TrialParaHoje { id: string; leadId: string | null; contactId: string; nome: string; scheduledAt: string; status: string }
 export interface ClienteParaHoje { id: string; contactId: string; nome: string; renewalDate: string | null; status: string }
@@ -504,17 +505,25 @@ export function prioridadesHoje(
   }
   // 5. Pós-experimental sem proposta
   for (const l of abertos) if (l.stageCode === "experimental_realizada" && !l.proposalSentAt) itens.push({ prioridade: 2, grupo: "pos_experimental_sem_proposta", motivo: "Experimental realizada e proposta ainda não enviada", acao: "Enviar proposta", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
+  // Follow-up esgotado (3 tentativas no ciclo, ou a mensagem que prometeu
+  // ser a última já foi): em vez de pedir a quarta mensagem, o card pede
+  // uma decisão — adiar, deixar em paz ou perdido — e não traz texto pronto.
+  const esgotou = (l: LeadParaHoje) => (l.followUpsNoCiclo ?? 0) >= MAX_FOLLOW_UPS || !!l.promessaFeita;
+  const cobrar = (l: LeadParaHoje, prioridade: number, grupo: string, motivo: string) => {
+    if (esgotou(l)) itens.push({ prioridade: 4, grupo: "decidir", motivo: l.motivoDecidir ?? `${l.followUpsNoCiclo} tentativas sem resposta`, acao: "Decidir: adiar, deixar em paz ou perdido", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
+    else itens.push({ prioridade, grupo, motivo, acao: grupo === "proposta_sem_follow_up" ? "Fazer follow-up" : "Retomar", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
+  };
   // 6. Proposta sem follow-up
   for (const l of abertos) if (l.proposalSentAt && l.stageCode === "proposta") {
     const dias = diasEntre(l.lastContactAt ?? l.proposalSentAt, agora);
-    if (dias >= d.sla.proposta_sem_follow_up_dias) itens.push({ prioridade: 2, grupo: "proposta_sem_follow_up", motivo: `Proposta enviada há ${Math.round(diasEntre(l.proposalSentAt, agora))} dias sem follow-up`, acao: "Fazer follow-up", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
+    if (dias >= d.sla.proposta_sem_follow_up_dias) cobrar(l, 2, "proposta_sem_follow_up", `Proposta enviada há ${Math.round(diasEntre(l.proposalSentAt, agora))} dias sem follow-up`);
   }
   // 7. Negociações antigas / leads parados
   for (const l of abertos) {
     const ref = l.lastContactAt ?? l.createdAt;
     const dias = diasEntre(ref, agora);
-    if (l.stageCode === "negociacao" && dias >= d.sla.negociacao_antiga_dias) itens.push({ prioridade: 5, grupo: "negociacao_antiga", motivo: `Negociação parada há ${Math.round(dias)} dias`, acao: "Retomar", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
-    else if (dias >= d.sla.lead_parado_dias && l.lastContactAt) itens.push({ prioridade: 5, grupo: "parado", motivo: `Sem contato há ${Math.round(dias)} dias`, acao: "Retomar", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
+    if (l.stageCode === "negociacao" && dias >= d.sla.negociacao_antiga_dias) cobrar(l, 5, "negociacao_antiga", `Negociação parada há ${Math.round(dias)} dias`);
+    else if (dias >= d.sla.lead_parado_dias && l.lastContactAt) cobrar(l, 5, "parado", `Sem contato há ${Math.round(dias)} dias`);
     if (!l.nextActionAt) itens.push({ prioridade: 6, grupo: "sem_proxima_acao", motivo: "Lead aberto sem próxima ação", acao: "Definir próxima ação", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
   }
   // 8. Renovações próximas

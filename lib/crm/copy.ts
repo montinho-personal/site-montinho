@@ -19,6 +19,7 @@
  */
 import type { Base, Catalogo } from "./dados";
 import { diasEntre } from "./metricas";
+import { cicloDeFollowUps } from "./ciclo";
 import { extrairRef, identificarMensagem, limparColagem } from "./mensagens";
 import { limparTitulo } from "../whatsapp";
 import { TEXTOS, type Situacao } from "./copy-textos";
@@ -64,14 +65,16 @@ function arrumar(t: string): string {
 // ---------------------------------------------------------------------------
 export interface Sinais {
   pergunta: string; indicador: string; pagina: string; anuncio: boolean;
-  jaContatado: boolean; respondeu: boolean; propostaEnviada: boolean; diasProposta: number | null; etapa: string | null;
+  jaContatado: boolean; respondeu: boolean; followUpsNoCiclo: number; propostaEnviada: boolean; diasProposta: number | null; etapa: string | null;
   exigeExperimental: boolean; experimentalAgendada: boolean; experimentalRealizada: boolean; experimentalNoShow: boolean;
   cliente: ClienteRow | undefined; renovaEm: number | null; diasDeCliente: number | null; diasForaDeTreino: number | null; jaIndicou: boolean;
 }
 
 const primeiroContato = (s: Sinais): Situacao =>
   s.pergunta ? "primeiro_contato_duvida" : s.indicador ? "primeiro_contato_indicacao" : s.pagina ? "primeiro_contato_site" : s.anuncio ? "primeiro_contato_anuncio" : "primeiro_contato_generico";
-const depoisDaProposta = (s: Sinais): Situacao => ((s.diasProposta ?? 0) >= 7 ? "proposta_follow_up_2" : "proposta_follow_up_1");
+// O segundo follow-up da proposta é o que devolve a decisão: vem por tempo (7 dias)
+// ou por contagem (já houve dois no ciclo) — nunca antes do primeiro.
+const depoisDaProposta = (s: Sinais): Situacao => ((s.diasProposta ?? 0) >= 7 || s.followUpsNoCiclo >= 2 ? "proposta_follow_up_2" : "proposta_follow_up_1");
 
 /**
  * O passo seguinte de quem já falou e ainda não comprou. Ele depende do
@@ -220,6 +223,10 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
     anuncio: lead?.source_code === "google_ads" || !!handoff?.gclid || !!handoff?.gbraid || !!handoff?.wbraid,
     jaContatado: !!(ultimoContato || lead?.first_response_at),
     respondeu: !!lead?.last_reply_at,
+    followUpsNoCiclo: lead ? cicloDeFollowUps(
+      [lead.last_reply_at, opp?.proposal_sent_at, opp ? b.historicoEtapas.filter((h) => h.opportunity_id === opp.id).map((h) => h.changed_at).sort().at(-1) : null, trials.map((t) => t.created_at).sort().at(-1), b.atividades.filter((a) => a.lead_id === lead.id && a.metadata?.adiado === true).map((a) => a.ocorreu_em).sort().at(-1)],
+      b.atividades.filter((a) => a.lead_id === lead.id).map((a) => ({ ocorreuEm: a.ocorreu_em, tipo: a.tipo, metadata: a.metadata })),
+    ).followUps : 0,
     propostaEnviada: !!opp?.proposal_sent_at,
     diasProposta,
     etapa: etapa?.code ?? null,

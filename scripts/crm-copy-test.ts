@@ -81,7 +81,7 @@ ok("toda mensagem começa com a saudação", Object.values(TEXTOS).every((t) => 
 
 bloco("3. GRUPO → SITUAÇÃO");
 const base: Sinais = {
-  pergunta: "", indicador: "", pagina: "", anuncio: false, jaContatado: false, respondeu: false, propostaEnviada: false, diasProposta: null, etapa: null,
+  pergunta: "", indicador: "", pagina: "", anuncio: false, jaContatado: false, respondeu: false, followUpsNoCiclo: 0, propostaEnviada: false, diasProposta: null, etapa: null,
   exigeExperimental: true, experimentalAgendada: false, experimentalRealizada: false, experimentalNoShow: false,
   cliente: undefined, renovaEm: null, diasDeCliente: null, diasForaDeTreino: null, jaIndicou: false,
 };
@@ -116,6 +116,10 @@ ok("parado que já respondeu → próximo passo, não segundo toque", escolherSi
 ok("respondeu e está esperando, sem proposta → próximo passo", escolherSituacao("respondeu_aguardando_voce", S({ jaContatado: true, respondeu: true, exigeExperimental: false })) === "convite_proposta");
 ok("respondeu depois da proposta → conversa da proposta, não cobrança 2", escolherSituacao("respondeu_aguardando_voce", S({ jaContatado: true, respondeu: true, propostaEnviada: true, diasProposta: 9 })) === "proposta_follow_up_1");
 ok("sem grupo, contatado e sem resposta → segundo toque continua", escolherSituacao(null, S({ jaContatado: true })) === "segundo_toque");
+// Fase 1 — T2: o follow-up 2 da proposta vem por tempo OU por contagem, nunca antes do 1.
+ok("proposta há 3 dias, 0 follow-ups → follow-up 1", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 3 })) === "proposta_follow_up_1");
+ok("proposta há 3 dias, 2 follow-ups no ciclo → follow-up 2 (devolve a decisão)", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 3, followUpsNoCiclo: 2 })) === "proposta_follow_up_2");
+ok("proposta há 9 dias, 1 follow-up → follow-up 2 por tempo", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 9, followUpsNoCiclo: 1 })) === "proposta_follow_up_2");
 ok("parado depois da experimental → proposta", escolherSituacao("parado", S({ jaContatado: true, experimentalRealizada: true })) === "pos_experimental_proposta");
 ok("sem próxima ação, nunca contatado → primeiro contato", escolherSituacao("sem_proxima_acao", S({})) === "primeiro_contato_generico");
 const cli = (status: string, renovaEm: number | null, extra: Partial<Sinais> = {}) => S({ cliente: { status, renewal_date: null } as never, renovaEm, diasDeCliente: 200, ...extra });

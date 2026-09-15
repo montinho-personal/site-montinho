@@ -55,7 +55,8 @@ export default async function Hoje() {
             const contato = b.contatos.find((c) => c.id === i.contactId);
             // A mensagem nasce da situação do card: primeiro contato com a página de origem, follow-up da proposta com os dias, confirmação da experimental com o horário.
             const copy = mensagemPara(b, cat, { contactId: i.contactId, leadId: i.leadId, clientId: i.clientId }, i.grupo, agora);
-            const wa = urlWhatsAppContato(contato?.telefone_e164 ?? null, copy.texto);
+            // "Decidir" é o card sem mensagem: três cobranças (ou a que prometeu ser a última) já foram. Mandar a quarta é o que este card existe para impedir.
+            const wa = i.grupo === "decidir" ? null : urlWhatsAppContato(contato?.telefone_e164 ?? null, copy.texto);
             const tom = i.prioridade <= 2 ? "ruim" : i.prioridade <= 4 ? "alerta" : "neutro";
             const href = i.leadId ? `/crm/leads/${i.leadId}` : i.clientId ? `/crm/clientes/${i.clientId}` : "#";
             return (
