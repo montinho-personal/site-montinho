@@ -60,7 +60,7 @@ export interface Sinais {
   pergunta: string; indicador: string; pagina: string; anuncio: boolean;
   jaContatado: boolean; propostaEnviada: boolean; diasProposta: number | null; etapa: string | null;
   exigeExperimental: boolean; experimentalAgendada: boolean; experimentalRealizada: boolean; experimentalNoShow: boolean;
-  cliente: ClienteRow | undefined; renovaEm: number | null; diasDeCliente: number | null; jaIndicou: boolean;
+  cliente: ClienteRow | undefined; renovaEm: number | null; diasDeCliente: number | null; diasForaDeTreino: number | null; jaIndicou: boolean;
 }
 
 const primeiroContato = (s: Sinais): Situacao =>
@@ -86,7 +86,21 @@ const proximoPasso = (s: Sinais): Situacao => {
 /** Quem já é aluno: a conversa muda com o momento do ciclo, não com a etapa do funil. */
 const comAluno = (s: Sinais): Situacao => {
   const c = s.cliente!;
-  if (c.status !== "ativo") return "reativacao_pausado";
+  /*
+   * Quem saiu não é um grupo só.
+   *
+   * Na base real de 15/09/2026, dos 19 alunos que saíram, 16 saíram por
+   * "parou de treinar" e quase todos duraram um ciclo. Mas o tempo fora muda
+   * tudo o que se pode dizer: uma pausa de duas semanas ainda é pausa, três
+   * meses ainda é memória fresca, e mais de um ano é gente que mudou de vida
+   * — dizer "volta a treinar" para os três soa igualmente errado em dois.
+   */
+  if (c.status !== "ativo") {
+    const d = s.diasForaDeTreino;
+    if (d != null && d <= 30) return "reativacao_pausa_recente";
+    if (d != null && d > 365) return "reativacao_antiga";
+    return "reativacao_pausado";
+  }
   if (s.renovaEm != null && s.renovaEm < 0) return "renovacao_vencida";
   if (s.diasDeCliente != null && s.diasDeCliente <= 14) return "boas_vindas";
   if (s.renovaEm != null && s.renovaEm <= 30) return "renovacao_proxima";
@@ -206,6 +220,9 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
     cliente,
     renovaEm,
     diasDeCliente: cliente ? Math.round(diasEntre(cliente.first_purchase_at, agora)) : null,
+    diasForaDeTreino: cliente && cliente.status !== "ativo"
+      ? Math.round(diasEntre(cliente.cancelled_at ?? cliente.end_date ?? cliente.renewal_date ?? cliente.first_purchase_at, agora))
+      : null,
     jaIndicou: b.contatos.some((x) => x.referred_by_contact_id === ref.contactId),
   };
   const vars: Variaveis = {

@@ -39,7 +39,7 @@ export const SITUACOES = [
   "proposta_follow_up_1", "proposta_follow_up_2", "negociacao_parada",
   // Virou aluno
   "boas_vindas", "check_in_aluno", "pedido_indicacao",
-  "renovacao_proxima", "renovacao_vencida", "reativacao_pausado",
+  "renovacao_proxima", "renovacao_vencida", "reativacao_pausa_recente", "reativacao_pausado", "reativacao_antiga",
 ] as const;
 export type Situacao = (typeof SITUACOES)[number];
 
@@ -102,6 +102,16 @@ export const TEXTOS: Record<Situacao, string> = {
     "{nome}, [[seu plano fecha em {renova_em} dias e ]]eu já quero desenhar o próximo ciclo com você, mantendo seu horário na agenda.\n\nTem algo que você queira priorizar nas próximas semanas, ou seguimos no que tá dando certo?",
   renovacao_vencida:
     "{nome}, seu plano venceu[[ há {dias} dias]] e eu não quero fechar seu horário sem te perguntar antes. Nada de cobrança, é só pra eu organizar a agenda.\n\nVocê quer seguir no próximo ciclo ou prefere dar uma pausa agora?",
+  /*
+   * As três reativações. Nenhuma pergunta "quer voltar?" logo de cara, e
+   * nenhuma fala de preço: 16 dos 19 que saíram saíram por "parou de
+   * treinar", não por dinheiro. Oferecer desconto aqui responde a pergunta
+   * que ninguém fez — e queima margem com quem voltaria de graça.
+   */
+  reativacao_pausa_recente:
+    "{nome}, passando pra saber como você tá.\n\nSua pausa já está fazendo[[ uns {dias} dias]] e eu não quis deixar passar. Se foi só a correria do mês, a gente retoma leve; se tem algo no treino pra ajustar, me fala que eu ajusto.\n\nQuer retomar essa semana?",
+  reativacao_antiga:
+    "{nome}, aqui é o Montinho.\n\nFaz um tempão, né. Lembrei de você esses dias e resolvi mandar um oi, sem segundas intenções.\n\nTá treinando ainda?",
   reativacao_pausado:
-    "{nome}, lembrei de você por aqui! A gente pausou faz um tempo[[, uns {dias} dias]], e imagino que a rotina tenha mudado.\n\nSem cobrança nenhuma: se voltar a treinar passar pela sua cabeça, eu monto uma primeira semana curta, só pra retomar o ritmo de onde você parou.\n\nQuer que eu monte?",
+    "{nome}, aqui é o Montinho.\n\nFiquei pensando em você esses dias. A gente treinou junto e depois você sumiu — e eu sei como é, a vida aperta e o treino é sempre o primeiro a cair.\n\nComo você tá com o treino hoje?",
 };
