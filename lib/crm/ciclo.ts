@@ -24,7 +24,7 @@ export const MAX_FOLLOW_UPS = 3;
 export const SITUACOES_PROMESSA = new Set(["segundo_toque", "proposta_follow_up_2", "negociacao_parada"]);
 
 /** Grupos da tela Hoje cujo WhatsApp é uma cobrança de resposta. */
-export const GRUPOS_FOLLOW_UP = new Set(["parado", "proposta_sem_follow_up", "negociacao_antiga", "follow_up_atrasado", "follow_up_hoje"]);
+export const GRUPOS_FOLLOW_UP = new Set(["parado", "proposta_sem_follow_up", "negociacao_antiga", "follow_up_atrasado", "follow_up_hoje", "proxima_acao_vencida"]);
 
 export interface EventoDoCiclo { ocorreuEm: string; tipo: string; metadata?: Record<string, unknown> | null }
 export interface Ciclo { inicio: string | null; followUps: number; promessaFeita: boolean; ultimoFollowUpEm: string | null }

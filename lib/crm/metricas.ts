@@ -474,6 +474,14 @@ export function prioridadesHoje(
   const fechadas = new Set(["ganho", "perdido"]);
   const abertos = d.leads.filter((l) => l.status === "aberto" && !fechadas.has(l.stageCode ?? ""));
 
+  // Follow-up esgotado (3 tentativas no ciclo, ou a mensagem que prometeu
+  // ser a última já foi): em vez de pedir a quarta mensagem, o card pede
+  // uma decisão — adiar, deixar em paz ou perdido — e não traz texto pronto.
+  const esgotou = (l: LeadParaHoje) => (l.followUpsNoCiclo ?? 0) >= MAX_FOLLOW_UPS || !!l.promessaFeita;
+  const cobrar = (l: LeadParaHoje, prioridade: number, grupo: string, motivo: string) => {
+    if (esgotou(l)) itens.push({ prioridade: 4, grupo: "decidir", motivo: l.motivoDecidir ?? `${l.followUpsNoCiclo} tentativas sem resposta`, acao: "Decidir: adiar, deixar em paz ou perdido", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
+    else itens.push({ prioridade, grupo, motivo, acao: grupo === "proposta_sem_follow_up" ? "Fazer follow-up" : grupo === "proxima_acao_vencida" ? (l.nextAction ?? "Retomar") : "Retomar", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
+  };
   // 0. O lead respondeu e a bola está com o Montinho. É a única situação em
   // que quem está esperando é a pessoa do outro lado — vem antes de tudo.
   for (const l of abertos) {
@@ -486,7 +494,20 @@ export function prioridadesHoje(
   for (const l of abertos) {
     if (!l.firstResponseAt && !l.lastContactAt) {
       const horas = h(agora.getTime() - new Date(l.createdAt).getTime());
-      itens.push({ prioridade: horas >= d.sla.novo_lead_sem_contato_horas ? 1 : 3, grupo: "novo_sem_contato", motivo: `Lead novo sem retorno há ${Math.round(horas)}h`, acao: "Fazer primeiro contato", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
+      // Aparece desde o primeiro minuto; em 1h vira urgência operacional; no SLA (24h) vira prioridade máxima.
+      const prioridade = horas >= d.sla.novo_lead_sem_contato_horas ? 1 : horas >= 1 ? 2 : 3;
+      const ha = horas < 1 ? `${Math.max(1, Math.round(horas * 60))} min` : `${Math.round(horas)}h`;
+      itens.push({ prioridade, grupo: "novo_sem_contato", motivo: `Lead novo sem retorno há ${ha}`, acao: "Fazer primeiro contato", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
+    }
+  }
+  // 1b. Próxima ação vencida. O Montinho escreveu o que ia fazer e quando;
+  // passou a data, a lista tem de cobrar — antes disso o lead ficava em limbo
+  // até o grupo "parado" (5 dias) reparar nele.
+  for (const l of abertos) {
+    if (l.nextActionAt && new Date(l.nextActionAt) < agora) {
+      const atraso = agora.getTime() - new Date(l.nextActionAt).getTime();
+      const ha = atraso >= 86_400_000 ? `${Math.floor(atraso / 86_400_000)} dia${atraso >= 2 * 86_400_000 ? "s" : ""}` : `${Math.max(1, Math.floor(h(atraso)))}h`;
+      cobrar(l, 2, "proxima_acao_vencida", `${l.nextAction ?? "Próxima ação"} — atrasado há ${ha}`);
     }
   }
   // 2. Follow-ups vencidos e de hoje
@@ -505,14 +526,6 @@ export function prioridadesHoje(
   }
   // 5. Pós-experimental sem proposta
   for (const l of abertos) if (l.stageCode === "experimental_realizada" && !l.proposalSentAt) itens.push({ prioridade: 2, grupo: "pos_experimental_sem_proposta", motivo: "Experimental realizada e proposta ainda não enviada", acao: "Enviar proposta", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
-  // Follow-up esgotado (3 tentativas no ciclo, ou a mensagem que prometeu
-  // ser a última já foi): em vez de pedir a quarta mensagem, o card pede
-  // uma decisão — adiar, deixar em paz ou perdido — e não traz texto pronto.
-  const esgotou = (l: LeadParaHoje) => (l.followUpsNoCiclo ?? 0) >= MAX_FOLLOW_UPS || !!l.promessaFeita;
-  const cobrar = (l: LeadParaHoje, prioridade: number, grupo: string, motivo: string) => {
-    if (esgotou(l)) itens.push({ prioridade: 4, grupo: "decidir", motivo: l.motivoDecidir ?? `${l.followUpsNoCiclo} tentativas sem resposta`, acao: "Decidir: adiar, deixar em paz ou perdido", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
-    else itens.push({ prioridade, grupo, motivo, acao: grupo === "proposta_sem_follow_up" ? "Fazer follow-up" : "Retomar", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
-  };
   // 6. Proposta sem follow-up
   for (const l of abertos) if (l.proposalSentAt && l.stageCode === "proposta") {
     const dias = diasEntre(l.lastContactAt ?? l.proposalSentAt, agora);

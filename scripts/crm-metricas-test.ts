@@ -202,9 +202,16 @@ bloco("9. LEAD SCORING EXPLICÁVEL E TELA HOJE");
       { id: "L9", contactId: "C9x", nome: "Esgotado", status: "aberto", createdAt: "2026-08-10", lastContactAt: "2026-08-28", firstResponseAt: "2026-08-10", lastReplyAt: null, followUpsNoCiclo: 3, promessaFeita: false, motivoDecidir: "3 tentativas sem resposta", nextAction: "x", nextActionAt: "2026-09-05", stageCode: "contato", proposalSentAt: null, expectedValue: 300 },
       { id: "L10", contactId: "C10", nome: "Prometeu", status: "aberto", createdAt: "2026-08-10", lastContactAt: "2026-09-01T10:00:00-03:00", firstResponseAt: "2026-08-10", lastReplyAt: null, followUpsNoCiclo: 1, promessaFeita: true, motivoDecidir: "Já mandou a mensagem final", nextAction: "x", nextActionAt: "2026-09-05", stageCode: "proposta", proposalSentAt: "2026-08-28", expectedValue: 300 },
       { id: "L11", contactId: "C11", nome: "DoisFollowUps", status: "aberto", createdAt: "2026-08-10", lastContactAt: "2026-08-28", firstResponseAt: "2026-08-10", lastReplyAt: null, followUpsNoCiclo: 2, promessaFeita: false, nextAction: "x", nextActionAt: "2026-09-05", stageCode: "contato", proposalSentAt: null, expectedValue: 300 },
+      // Fase 1 — T4: próxima ação vencida entra; futura não; lead novo ganha urgência em 1h.
+      { id: "L12", contactId: "C12", nome: "Vencida", status: "aberto", createdAt: "2026-08-20", lastContactAt: "2026-09-01", firstResponseAt: "2026-08-20", lastReplyAt: null, nextAction: "Mandar horários", nextActionAt: "2026-09-02T10:00:00-03:00", stageCode: "contato", proposalSentAt: null, expectedValue: 400 },
+      { id: "L13", contactId: "C13", nome: "Futura", status: "aberto", createdAt: "2026-09-03T11:00:00-03:00", lastContactAt: "2026-09-03T11:00:00-03:00", firstResponseAt: "2026-09-03T11:00:00-03:00", lastReplyAt: null, nextAction: "Ligar", nextActionAt: "2026-09-08T10:00:00-03:00", stageCode: "contato", proposalSentAt: null, expectedValue: 400 },
+      { id: "L14", contactId: "C14", nome: "NovoDuasHoras", status: "aberto", createdAt: "2026-09-04T10:00:00-03:00", lastContactAt: null, firstResponseAt: null, nextAction: null, nextActionAt: null, stageCode: "novo", proposalSentAt: null, expectedValue: null },
+      { id: "L15", contactId: "C15", nome: "NovoMeiaHora", status: "aberto", createdAt: "2026-09-04T11:30:00-03:00", lastContactAt: null, firstResponseAt: null, nextAction: null, nextActionAt: null, stageCode: "novo", proposalSentAt: null, expectedValue: null },
+      // Três regras ao mesmo tempo (tarefa atrasada + proposta sem follow-up + próxima ação vencida) → um card.
+      { id: "L16", contactId: "C16", nome: "TresMotivos", status: "aberto", createdAt: "2026-08-20", lastContactAt: "2026-08-30", firstResponseAt: "2026-08-20", lastReplyAt: null, nextAction: "Follow-up", nextActionAt: "2026-09-01", stageCode: "proposta", proposalSentAt: "2026-08-30", expectedValue: 900 },
       { id: "L8", contactId: "C8", nome: "RespondeuAntes", status: "aberto", createdAt: "2026-08-20", lastContactAt: "2026-09-03T10:00:00-03:00", firstResponseAt: "2026-08-20", lastReplyAt: "2026-09-02T09:00:00-03:00", nextAction: "Aguardando resposta", nextActionAt: "2026-09-05", stageCode: "contato", proposalSentAt: null, expectedValue: 500 },
     ],
-    tarefas: [{ id: "T1", leadId: "L2", clientId: null, contactId: "C2", nome: "Mariana", titulo: "Ligar", dueAt: "2026-09-03T09:00:00-03:00", priority: "alta" }],
+    tarefas: [{ id: "T1", leadId: "L2", clientId: null, contactId: "C2", nome: "Mariana", titulo: "Ligar", dueAt: "2026-09-03T09:00:00-03:00", priority: "alta" }, { id: "T2", leadId: "L16", clientId: null, contactId: "C16", nome: "TresMotivos", titulo: "Ligar", dueAt: "2026-09-02", priority: "alta" }],
     trials: [{ id: "X1", leadId: "L3", contactId: "C3", nome: "Ricardo", scheduledAt: "2026-09-04T18:00:00-03:00", status: "agendada" }],
     clientes: [{ id: "K1", contactId: "C9", nome: "Elias", renewalDate: "2026-09-10", status: "ativo" }],
     sla: { novo_lead_sem_contato_horas: 24, proposta_sem_follow_up_dias: 2, lead_parado_dias: 5, negociacao_antiga_dias: 7 },
@@ -220,6 +227,12 @@ bloco("9. LEAD SCORING EXPLICÁVEL E TELA HOJE");
   ok("lead 'aberto' parado na etapa perdido não aparece", !por.JaPerdeu);
   ok("Respondeu: última resposta depois do último contato → prioridade 1, grupo respondeu_aguardando_voce", por.Respondeu?.prioridade === 1 && por.Respondeu.grupo === "respondeu_aguardando_voce" && /esperando você/.test(por.Respondeu.motivo), JSON.stringify(por.Respondeu));
   ok("RespondeuAntes: Montinho já respondeu depois dela → não entra como 'esperando você'", por.RespondeuAntes?.grupo !== "respondeu_aguardando_voce", por.RespondeuAntes?.grupo);
+  ok("Vencida: próxima ação no passado entra, diz o que era e há quanto tempo", por.Vencida?.grupo === "proxima_acao_vencida" && /Mandar horários — atrasado há 2 dias/.test(por.Vencida.motivo), por.Vencida?.motivo);
+  ok("Futura: próxima ação no futuro não aparece como vencida", !por.Futura || !/atrasado/.test(por.Futura.motivo), por.Futura?.motivo);
+  ok("NovoDuasHoras: lead novo há 2h sobe para prioridade 2", por.NovoDuasHoras?.prioridade === 2, String(por.NovoDuasHoras?.prioridade));
+  ok("NovoMeiaHora: aparece desde o primeiro minuto (prioridade 3, motivo em minutos)", por.NovoMeiaHora?.prioridade === 3 && /30 min/.test(por.NovoMeiaHora.motivo), por.NovoMeiaHora?.motivo);
+  ok("Fernanda continua prioridade 1 depois do SLA", por.Fernanda?.prioridade === 1);
+  ok("TresMotivos: três regras → um card só, motivos reunidos", hoje.filter((i) => i.contactId === "C16").length === 1 && /atrasado/.test(por.TresMotivos.motivo) && /Proposta/.test(por.TresMotivos.motivo), por.TresMotivos?.motivo);
   ok("Esgotado: 3 follow-ups → grupo 'decidir', não 'parado'", por.Esgotado?.grupo === "decidir" && /3 tentativas/.test(por.Esgotado.motivo), JSON.stringify(por.Esgotado));
   ok("Prometeu: proposta + mensagem final já enviada → 'decidir' mesmo com 1 follow-up", por.Prometeu?.grupo === "decidir", por.Prometeu?.grupo);
   ok("DoisFollowUps: ainda cobra (parado)", por.DoisFollowUps?.grupo === "parado", por.DoisFollowUps?.grupo);
