@@ -6,7 +6,7 @@ import {
   calcularConcentracao, conferirInstrucao, formatarConcentracao, formatarMg, formatarMl, lerMarca, tabelaU100,
   validarConcentracao, validarMarca, validarMg, validarMl, MARCA_MAX, MARCA_MIN, type Erro,
 } from "@/lib/concentracao/calculo";
-import { FONTES } from "@/lib/concentracao/fontes";
+import { FONTES, linkDaFonte } from "@/lib/concentracao/fontes";
 import SeringaU100 from "./SeringaU100";
 
 /**
@@ -255,7 +255,7 @@ export default function ConversorConcentracao({ placement }: { placement: string
               </p>
               <p className="text-gray-300 text-sm leading-relaxed">
                 Para insulina, as unidades da escala são unidades da própria insulina, e existem produtos em concentrações diferentes (U-100, U-200, U-300, U-500) que não se convertem por regra de três.{" "}
-                {fonteInsulina && <a href={fonteInsulina.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-1 hover:text-white transition-colors" onClick={() => trackEvent("source_open", { placement, fonte: fonteInsulina.id })}>A insulina está na lista de medicamentos de alto risco do ISMP</a>}.
+                {fonteInsulina && <a href={linkDaFonte(fonteInsulina)} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-1 hover:text-white transition-colors" onClick={() => trackEvent("source_open", { placement, fonte: fonteInsulina.id })}>A insulina está na lista de medicamentos de alto risco do ISMP</a>}.
               </p>
             </div>
           )}
