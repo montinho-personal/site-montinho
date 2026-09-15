@@ -6,7 +6,7 @@ import { itensHoje, visaoLead } from "@/lib/crm/visao";
 import { atribuir } from "@/lib/crm/metricas";
 import { mensagemPara } from "@/lib/crm/copy";
 import { Aviso, Badge, Btn, Campo, Card, Detalhes, Input, Pagina, Select, Textarea, brl, dataHoraBr, dataHoraInput, dataInput, relativo } from "@/components/crm/ui";
-import { agendarExperimental, atualizarContato, concluirTarefa, criarTarefa, definirOrigem, definirProximaAcao, enviarProposta, ligarHandoff, marcarExperimental, marcarGanho, marcarPerdido, marcarRespondeu, moverEtapa, reativarLead, registrarAtividade } from "../../actions";
+import { agendarExperimental, atualizarContato, concluirTarefa, criarTarefa, definirOrigem, definirProximaAcao, enviarProposta, ligarHandoff, marcarExperimental, marcarGanho, marcarPerdido, marcarRespondeu, moverEtapa, reativarLead, registrarAtividade, retomarContato } from "../../actions";
 
 export default async function LeadPage({ params }: { params: Promise<{ id: string }> }) {
   const u = await exigirUsuario();
@@ -55,7 +55,14 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
                 <Btn tom="secundario">Salvar</Btn>
               </form>
             )}
-            {lead.status === "aberto" && !lead.next_action_at && <p className="mt-2 text-sm text-amber-300">Este lead está sem próxima ação. Defina uma.</p>}
+            {lead.em_paz_at && (
+              <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
+                <Badge tom="info">em paz desde {new Date(lead.em_paz_at).toLocaleDateString("pt-BR")}</Badge>
+                <span className="text-zinc-400">Sem follow-up comercial. O histórico e a oportunidade continuam aqui.</span>
+                {!somenteLeitura && <form action={retomarContato}><input type="hidden" name="lead_id" value={lead.id} /><input type="hidden" name="contact_id" value={contato.id} /><Btn tom="secundario" pequeno>Retomar contato</Btn></form>}
+              </div>
+            )}
+            {lead.status === "aberto" && !lead.next_action_at && !lead.em_paz_at && <p className="mt-2 text-sm text-amber-300">Este lead está sem próxima ação. Defina uma.</p>}
             {lead.status !== "aberto" && <div className="mt-3 flex items-center gap-3 text-sm"><Badge tom={lead.status === "ganho" ? "bom" : "ruim"}>{lead.status}</Badge>{lead.status === "perdido" && <span className="text-zinc-400">Motivo: {cat.motivos.find((m) => m.code === lead.lost_reason_code)?.nome ?? lead.lost_reason_code} {lead.lost_reason_text}</span>}{lead.status === "perdido" && !somenteLeitura && <form action={reativarLead}><input type="hidden" name="lead_id" value={lead.id} /><Btn tom="secundario" pequeno>Reativar</Btn></form>}</div>}
           </Card>
 

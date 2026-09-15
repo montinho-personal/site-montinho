@@ -453,8 +453,8 @@ export function classificarLead(s: SinaisLead, limites = { quenteMin: 5, mornoMi
 // ---------------------------------------------------------------------------
 // Daily Decision Engine — regras transparentes, sem "AI score"
 // ---------------------------------------------------------------------------
-export interface LeadParaHoje { id: string; contactId: string; nome: string; status: string; createdAt: string; lastContactAt: string | null; firstResponseAt: string | null; lastReplyAt?: string | null; followUpsNoCiclo?: number; promessaFeita?: boolean; motivoDecidir?: string; nextAction: string | null; nextActionAt: string | null; stageCode: string | null; proposalSentAt: string | null; expectedValue: number | null; temperatura?: string; opportunityId?: string | null }
-export interface TarefaParaHoje { id: string; leadId: string | null; clientId: string | null; contactId: string | null; nome: string; titulo: string; dueAt: string; priority: string }
+export interface LeadParaHoje { id: string; contactId: string; nome: string; status: string; createdAt: string; lastContactAt: string | null; firstResponseAt: string | null; lastReplyAt?: string | null; followUpsNoCiclo?: number; promessaFeita?: boolean; motivoDecidir?: string; emPaz?: boolean; adiadoAte?: string | null; nextAction: string | null; nextActionAt: string | null; stageCode: string | null; proposalSentAt: string | null; expectedValue: number | null; temperatura?: string; opportunityId?: string | null }
+export interface TarefaParaHoje { id: string; leadId: string | null; clientId: string | null; contactId: string | null; nome: string; titulo: string; dueAt: string; priority: string; tipo?: string }
 export interface TrialParaHoje { id: string; leadId: string | null; contactId: string; nome: string; scheduledAt: string; status: string }
 export interface ClienteParaHoje { id: string; contactId: string; nome: string; renewalDate: string | null; status: string }
 export interface SlaConfig { novo_lead_sem_contato_horas: number; proposta_sem_follow_up_dias: number; lead_parado_dias: number; negociacao_antiga_dias: number }
@@ -472,7 +472,16 @@ export function prioridadesHoje(
   // que o status não tenha sido atualizado — foi assim que uma aluna que já
   // havia comprado continuou cobrando primeiro contato na lista de hoje.
   const fechadas = new Set(["ganho", "perdido"]);
-  const abertos = d.leads.filter((l) => l.status === "aberto" && !fechadas.has(l.stageCode ?? ""));
+  const todosAbertos = d.leads.filter((l) => l.status === "aberto" && !fechadas.has(l.stageCode ?? ""));
+  // Quem pediu para ser deixado em paz sai de toda cobrança comercial. Quem foi
+  // adiado de propósito (botão Adiar, não qualquer próxima ação futura — senão
+  // "aguardando resposta +2d" esconderia tarefa atrasada) também: "me chama em
+  // outubro" significa não ser lembrado em setembro. Os dois continuam vendo o
+  // que é real — resposta dela, experimental marcada — só não recebem follow-up.
+  const emPaz = new Set(todosAbertos.filter((l) => l.emPaz).map((l) => l.id));
+  const adiados = new Set(todosAbertos.filter((l) => l.adiadoAte && new Date(l.adiadoAte) > agora).map((l) => l.id));
+  const abertos = todosAbertos.filter((l) => !emPaz.has(l.id) && !adiados.has(l.id));
+  const cadencia = new Set(["follow_up", "reativacao", "primeiro_contato"]);
 
   // Follow-up esgotado (3 tentativas no ciclo, ou a mensagem que prometeu
   // ser a última já foi): em vez de pedir a quarta mensagem, o card pede
@@ -484,7 +493,7 @@ export function prioridadesHoje(
   };
   // 0. O lead respondeu e a bola está com o Montinho. É a única situação em
   // que quem está esperando é a pessoa do outro lado — vem antes de tudo.
-  for (const l of abertos) {
+  for (const l of todosAbertos) {
     if (l.lastReplyAt && (!l.lastContactAt || l.lastReplyAt > l.lastContactAt)) {
       const horas = h(agora.getTime() - new Date(l.lastReplyAt).getTime());
       itens.push({ prioridade: 1, grupo: "respondeu_aguardando_voce", motivo: `Respondeu há ${horas < 1 ? "menos de 1h" : `${Math.round(horas)}h`} e está esperando você`, acao: "Responder", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
@@ -512,6 +521,7 @@ export function prioridadesHoje(
   }
   // 2. Follow-ups vencidos e de hoje
   for (const t of d.tarefas) {
+    if (t.leadId && t.tipo && cadencia.has(t.tipo) && (emPaz.has(t.leadId) || adiados.has(t.leadId))) continue;
     const due = new Date(t.dueAt);
     if (due < agora) itens.push({ prioridade: 2, grupo: "follow_up_atrasado", motivo: `Follow-up atrasado desde ${due.toLocaleDateString("pt-BR")}: ${t.titulo}`, acao: t.titulo, contactId: t.contactId ?? "", leadId: t.leadId, clientId: t.clientId, taskId: t.id, nome: t.nome });
     else if (due <= fimHoje) itens.push({ prioridade: 4, grupo: "follow_up_hoje", motivo: `Follow-up hoje: ${t.titulo}`, acao: t.titulo, contactId: t.contactId ?? "", leadId: t.leadId, clientId: t.clientId, taskId: t.id, nome: t.nome });
