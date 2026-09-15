@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { adiarLead, agendarExperimental, deixarEmPaz, enviarProposta, marcarPerdido, marcarRespondeu } from "@/app/crm/actions";
-import { Btn, Input, Select } from "@/components/crm/ui";
+import { adiarLead, agendarExperimental, deixarEmPaz, enviarProposta, marcarRespondeu } from "@/app/crm/actions";
+import ConfirmarPerdido from "@/components/crm/ConfirmarPerdido";
+import { Btn, Input } from "@/components/crm/ui";
 
 /**
  * "O que aconteceu na conversa?" — direto no card da lista de hoje.
@@ -52,16 +53,7 @@ export default function AtualizarLead({ leadId, contactId, opportunityId, motivo
           <Btn tom="secundario" pequeno>Marcou experimental</Btn>
         </form>
 
-        {opportunityId && (
-          <form action={marcarPerdido} className="flex items-center gap-1">
-            <input type="hidden" name="opportunity_id" value={opportunityId} />
-            <Select name="loss_reason_code" required defaultValue="" className="w-auto px-2 py-1 text-sm" aria-label="Por que perdeu">
-              <option value="" disabled>Motivo…</option>
-              {motivos.map((m) => <option key={m.code} value={m.code}>{m.nome}</option>)}
-            </Select>
-            <Btn tom="secundario" pequeno>Sumiu</Btn>
-          </form>
-        )}
+        {opportunityId && <ConfirmarPerdido opportunityId={opportunityId} motivos={motivos} />}
 
         <Link href={`/crm/leads/${leadId}`} className="inline-flex items-center rounded-lg border border-white/20 px-3 py-1.5 text-sm hover:bg-white/10">
           Fechou →

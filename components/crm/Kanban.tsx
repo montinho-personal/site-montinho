@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useTransition } from "react";
 import { moverEtapa } from "@/app/crm/actions";
+import { etapaProtegida } from "@/lib/crm/perda";
 
 export interface CartaoKanban { oppId: string; leadId: string; nome: string; stageCode: string; valor: number | null; temperatura: string; proximaAcao: string | null; proximaAcaoEm: string | null; atrasado: boolean; servico: string }
 export interface ColunaKanban { code: string; nome: string }
@@ -18,6 +19,9 @@ export default function Kanban({ colunas, cartoes }: { colunas: ColunaKanban[]; 
   const [pendente, start] = useTransition();
 
   function mover(oppId: string, code: string) {
+    // Ganho e perdido nunca entram aqui (as colunas são só as abertas e a action recusa),
+    // mas um card solto fora de coluna não pode virar nada: só move para coluna conhecida.
+    if (!colunas.some((c) => c.code === code) || etapaProtegida(code)) return;
     setItens((xs) => xs.map((x) => (x.oppId === oppId ? { ...x, stageCode: code } : x)));
     const fd = new FormData(); fd.set("opportunity_id", oppId); fd.set("stage_code", code);
     start(() => moverEtapa(fd));

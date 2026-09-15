@@ -1,3 +1,5 @@
+import ConfirmarPerdido from "@/components/crm/ConfirmarPerdido";
+import { podeDesfazerPerdido } from "@/lib/crm/perda";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { exigirUsuario } from "@/lib/crm/auth";
@@ -6,7 +8,7 @@ import { itensHoje, visaoLead } from "@/lib/crm/visao";
 import { atribuir } from "@/lib/crm/metricas";
 import { mensagemPara } from "@/lib/crm/copy";
 import { Aviso, Badge, Btn, Campo, Card, Detalhes, Input, Pagina, Select, Textarea, brl, dataHoraBr, dataHoraInput, dataInput, relativo } from "@/components/crm/ui";
-import { agendarExperimental, atualizarContato, concluirTarefa, criarTarefa, definirOrigem, definirProximaAcao, enviarProposta, ligarHandoff, marcarExperimental, marcarGanho, marcarPerdido, marcarRespondeu, moverEtapa, reativarLead, registrarAtividade, retomarContato } from "../../actions";
+import { agendarExperimental, atualizarContato, concluirTarefa, criarTarefa, definirOrigem, definirProximaAcao, enviarProposta, ligarHandoff, marcarExperimental, desfazerPerdido, marcarGanho, marcarRespondeu, moverEtapa, reativarLead, registrarAtividade, retomarContato } from "../../actions";
 
 export default async function LeadPage({ params }: { params: Promise<{ id: string }> }) {
   const u = await exigirUsuario();
@@ -63,7 +65,7 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
               </div>
             )}
             {lead.status === "aberto" && !lead.next_action_at && !lead.em_paz_at && <p className="mt-2 text-sm text-amber-300">Este lead está sem próxima ação. Defina uma.</p>}
-            {lead.status !== "aberto" && <div className="mt-3 flex items-center gap-3 text-sm"><Badge tom={lead.status === "ganho" ? "bom" : "ruim"}>{lead.status}</Badge>{lead.status === "perdido" && <span className="text-zinc-400">Motivo: {cat.motivos.find((m) => m.code === lead.lost_reason_code)?.nome ?? lead.lost_reason_code} {lead.lost_reason_text}</span>}{lead.status === "perdido" && !somenteLeitura && <form action={reativarLead}><input type="hidden" name="lead_id" value={lead.id} /><Btn tom="secundario" pequeno>Reativar</Btn></form>}</div>}
+            {lead.status !== "aberto" && <div className="mt-3 flex items-center gap-3 text-sm"><Badge tom={lead.status === "ganho" ? "bom" : "ruim"}>{lead.status}</Badge>{lead.status === "perdido" && <span className="text-zinc-400">Motivo: {cat.motivos.find((m) => m.code === lead.lost_reason_code)?.nome ?? lead.lost_reason_code} {lead.lost_reason_text}</span>}{lead.status === "perdido" && !somenteLeitura && podeDesfazerPerdido(lead.lost_at) && <form action={desfazerPerdido}><input type="hidden" name="lead_id" value={lead.id} /><Btn tom="secundario" pequeno>Desfazer (foi engano)</Btn></form>}{lead.status === "perdido" && !somenteLeitura && !podeDesfazerPerdido(lead.lost_at) && <form action={reativarLead}><input type="hidden" name="lead_id" value={lead.id} /><Btn tom="secundario" pequeno>Reativar</Btn></form>}</div>}
           </Card>
 
           {/* Quick actions */}
@@ -147,12 +149,7 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
                 )}
                 {opp && (
                   <Detalhes titulo="Marcar PERDIDO">
-                    <form action={marcarPerdido} className="space-y-2">
-                      <input type="hidden" name="opportunity_id" value={opp.id} />
-                      <Select name="loss_reason_code" required defaultValue=""><option value="">Motivo *</option>{cat.motivos.map((m) => <option key={m.code} value={m.code}>{m.nome}</option>)}</Select>
-                      <Input name="loss_reason_text" placeholder="Detalhe (opcional)" />
-                      <Btn pequeno tom="perigo">Marcar perdido</Btn>
-                    </form>
+                    <ConfirmarPerdido opportunityId={opp.id} motivos={cat.motivos} rotulo="Marcar perdido" detalhe />
                   </Detalhes>
                 )}
               </div>

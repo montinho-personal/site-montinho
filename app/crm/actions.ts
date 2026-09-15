@@ -13,6 +13,7 @@
 import { GRUPOS_FOLLOW_UP } from "@/lib/crm/ciclo";
 import { dataDoCheckIn, tarefasDeOnboarding } from "@/lib/crm/onboarding";
 import { FUSO } from "@/lib/crm/copy";
+import { etapaProtegida, podeDesfazerPerdido, type SnapshotPerda } from "@/lib/crm/perda";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { exigirAdmin, exigirEscrita, exigirUsuario } from "@/lib/crm/auth";
@@ -285,7 +286,7 @@ export async function moverEtapa(fd: FormData) {
   const u = await exigirEscrita();
   const sb = await supabaseServer();
   const oppId = s(fd, "opportunity_id")!; const code = s(fd, "stage_code")!;
-  if (code === "ganho" || code === "perdido") throw new Error("Use 'Marcar ganho' ou 'Marcar perdido' — eles exigem os dados obrigatórios.");
+  if (etapaProtegida(code)) throw new Error("Use 'Marcar ganho' ou 'Marcar perdido' — eles exigem os dados obrigatórios.");
   const { data: opp } = await sb.from("crm_opportunities").select("*").eq("id", oppId).single();
   const etapa = await etapaPorCodigo(sb, opp.pipeline_id, code);
   await erroSe(await sb.from("crm_opportunities").update({ stage_id: etapa.id }).eq("id", oppId), "mover");
@@ -402,15 +403,53 @@ export async function marcarPerdido(fd: FormData) {
   if (!motivo) throw new Error("Perdido exige motivo.");
   const { data: opp } = await sb.from("crm_opportunities").select("*").eq("id", oppId).single();
   const etapa = await etapaPorCodigo(sb, opp.pipeline_id, "perdido");
+  if (opp.lost_at) throw new Error("Esta oportunidade já está perdida.");
   const agora = new Date().toISOString();
+  // Fotografia do que vai mudar, para o desfazer restaurar sem inventar nada.
+  const { data: leadAntes } = await sb.from("crm_leads").select("next_action, next_action_at, reactivation_eligible_at").eq("id", opp.lead_id).single();
+  const { data: abertas } = await sb.from("crm_tasks").select("id").eq("lead_id", opp.lead_id).is("completed_at", null);
   await erroSe(await sb.from("crm_opportunities").update({ stage_id: etapa.id, lost_at: agora, loss_reason_code: motivo, loss_reason_text: s(fd, "loss_reason_text") }).eq("id", oppId), "perdido");
   const { data: cfg } = await sb.from("crm_settings").select("value").eq("key", "reativacao").maybeSingle();
   const cad = (cfg?.value?.cadencia_dias as number[] | undefined) ?? [7, 14, 30, 60];
   await sb.from("crm_leads").update({ status: "perdido", lost_at: agora, lost_reason_code: motivo, lost_reason_text: s(fd, "loss_reason_text"), next_action: null, next_action_at: null, reactivation_eligible_at: addDias(new Date(), cad[0] ?? 7).toISOString() }).eq("id", opp.lead_id);
   await sb.from("crm_tasks").update({ completed_at: agora }).eq("lead_id", opp.lead_id).is("completed_at", null);
-  await atividade(sb, u.id, { contact_id: opp.contact_id, lead_id: opp.lead_id, opportunity_id: oppId, tipo: "lost", descricao: `Perdido: ${motivo}${s(fd, "loss_reason_text") ? " — " + s(fd, "loss_reason_text") : ""}` });
-  if (motivo !== "decided_not_to_train") await tarefa(sb, u.id, { contact_id: opp.contact_id, lead_id: opp.lead_id, tipo: "reativacao", titulo: "Reativação (lead perdido)", due_at: addDias(new Date(), cad[0] ?? 7).toISOString(), priority: "baixa" });
-  revalidarTudo([`/crm/leads/${opp.lead_id}`]);
+  let reativacaoId: string | null = null;
+  if (motivo !== "decided_not_to_train") {
+    const { data: t } = await sb.from("crm_tasks").insert({ contact_id: opp.contact_id, lead_id: opp.lead_id, tipo: "reativacao", titulo: "Reativação (lead perdido)", due_at: addDias(new Date(), cad[0] ?? 7).toISOString(), priority: "baixa", origem: "automacao", owner_id: u.id, created_by: u.id }).select("id").single();
+    reativacaoId = t?.id ?? null;
+  }
+  const snapshot: SnapshotPerda = { stage_id_anterior: opp.stage_id, next_action: leadAntes?.next_action ?? null, next_action_at: leadAntes?.next_action_at ?? null, reactivation_eligible_at: leadAntes?.reactivation_eligible_at ?? null, tarefas_encerradas: (abertas ?? []).map((t: { id: string }) => t.id), tarefa_reativacao_id: reativacaoId };
+  await atividade(sb, u.id, { contact_id: opp.contact_id, lead_id: opp.lead_id, opportunity_id: oppId, tipo: "lost", descricao: `Lead marcado como perdido: ${motivo}${s(fd, "loss_reason_text") ? " — " + s(fd, "loss_reason_text") : ""}`, ocorreu_em: agora, metadata: { snapshot } });
+  revalidarTudo(["/crm", "/crm/leads", `/crm/leads/${opp.lead_id}`]);
+}
+
+/**
+ * Desfazer "perdido" em até 24h: restaura a oportunidade na etapa em que
+ * estava, o lead com a próxima ação que tinha, reabre as tarefas que a perda
+ * encerrou e apaga a tarefa de reativação que ela criou. Não cria
+ * oportunidade nova (isso é o reativarLead, para perda antiga de verdade),
+ * não apaga histórico: a perda e o desfazer ficam registrados.
+ */
+export async function desfazerPerdido(fd: FormData) {
+  const u = await exigirEscrita();
+  const sb = await supabaseServer();
+  const leadId = s(fd, "lead_id")!;
+  const { data: lead } = await sb.from("crm_leads").select("*").eq("id", leadId).single();
+  if (!lead || lead.status !== "perdido") throw new Error("Este lead não está marcado como perdido.");
+  if (!podeDesfazerPerdido(lead.lost_at)) throw new Error("Passaram mais de 24h — use Reativar.");
+  const { data: perda } = await sb.from("crm_activities").select("*").eq("lead_id", leadId).eq("tipo", "lost").order("ocorreu_em", { ascending: false }).limit(1).maybeSingle();
+  const snap = (perda?.metadata as { snapshot?: SnapshotPerda } | null)?.snapshot;
+  const { data: opp } = await sb.from("crm_opportunities").select("*").eq("lead_id", leadId).not("lost_at", "is", null).order("lost_at", { ascending: false }).limit(1).maybeSingle();
+  if (opp) {
+    // Sem snapshot (perda anterior a esta versão), volta para "contato" — a etapa mais neutra.
+    const stageId = snap?.stage_id_anterior ?? (await etapaPorCodigo(sb, opp.pipeline_id, "contato")).id;
+    await erroSe(await sb.from("crm_opportunities").update({ stage_id: stageId, lost_at: null, loss_reason_code: null, loss_reason_text: null }).eq("id", opp.id), "oportunidade");
+  }
+  await erroSe(await sb.from("crm_leads").update({ status: "aberto", lost_at: null, lost_reason_code: null, lost_reason_text: null, next_action: snap?.next_action ?? "Retomar conversa", next_action_at: snap?.next_action_at ?? addDias(new Date(), 1).toISOString(), reactivation_eligible_at: snap?.reactivation_eligible_at ?? null }).eq("id", leadId), "lead");
+  if (snap?.tarefas_encerradas?.length) await sb.from("crm_tasks").update({ completed_at: null }).in("id", snap.tarefas_encerradas);
+  if (snap?.tarefa_reativacao_id) await sb.from("crm_tasks").delete().eq("id", snap.tarefa_reativacao_id);
+  await atividade(sb, u.id, { contact_id: lead.contact_id, lead_id: leadId, opportunity_id: opp?.id, tipo: "reactivated", descricao: "Marcação como perdido desfeita", metadata: { desfez_lost_activity_id: perda?.id ?? null } });
+  revalidarTudo(["/crm", "/crm/leads", `/crm/leads/${leadId}`]);
 }
 
 export async function reativarLead(fd: FormData) {
