@@ -5,6 +5,7 @@ import { CONTEUDO_ATUALIZADO_EM, CONVERSOR_NO_AR, REVISAO_AUTOR, REVISAO_TECNICA
 import ConversorConcentracao from "@/components/concentracao/ConversorConcentracao";
 import MetodologiaEFontes from "@/components/concentracao/MetodologiaEFontes";
 import Compartilhar from "@/components/share/Compartilhar";
+import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 
 /**
  * Conversor de mg/mL e Seringa U-100 — a página.
@@ -49,6 +50,50 @@ const breadcrumbSchema = {
 
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const ln = "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
+/*
+ * As perguntas passam pelo acordeão único do site (components/ui/FAQ.tsx):
+ * details/summary, resposta sempre no HTML, medição de abertura. Antes elas
+ * eram H2 com dois parágrafos cada — corretas, mas fora do padrão da casa e
+ * longas demais para quem chegou confuso. Uma resposta, um parágrafo.
+ */
+const faq: ItemFAQ[] = [
+  {
+    question: "Qual a diferença entre mg e mL?",
+    answer:
+      "mg é a substância; mL é o líquido. Um frasco pode ter 60 mg de substância dissolvidos em 2,5 mL de líquido — dois números sobre o mesmo frasco, medindo coisas diferentes. A confusão aparece porque a seringa mede líquido, e o rótulo fala em substância.",
+  },
+  {
+    question: "O que significa mg/mL?",
+    answer:
+      "É quanta substância tem em cada mL de líquido. Você acha esse número dividindo a quantidade total pelo volume do frasco: 60 mg em 2,5 mL dá 24 mg/mL, ou seja, cada mL tem 24 mg. O volume da conta é o do frasco já pronto, não só o líquido que foi acrescentado.",
+  },
+  {
+    question: "O que significa U-100?",
+    answer:
+      "É o nome da escala da seringa de insulina, em que 100 unidades cabem em 1 mL. Na prática, numa seringa dessas a marca 100 é 1 mL cheio e a marca 10 é 0,10 mL. Os números dessa escala só valem como unidades quando o líquido é insulina U-100.",
+  },
+  {
+    question: "Quanto é a marca 10 de uma seringa U-100?",
+    answer:
+      "0,10 mL. A conta é dividir a marca por 100: marca 5 é 0,05 mL, marca 20 é 0,20 mL, marca 50 é 0,50 mL. Quanta substância tem nesse volume depende do frasco — a 24 mg/mL, 0,10 mL tem 2,4 mg; a 10 mg/mL, o mesmo volume tem 1 mg.",
+  },
+  {
+    question: "UI e a marca da seringa são a mesma coisa?",
+    answer:
+      "Nem sempre. A marca mede volume, sempre. Ela só vira “unidade” quando o líquido é insulina U-100, porque foi para isso que a escala nasceu. Com outro composto dentro, a marca 10 continua sendo 0,10 mL e isso não significa que o outro composto possua 10 unidades internacionais — UI não tem conversão fixa para mg, muda de substância para substância.",
+  },
+  {
+    question: "Por que erros de concentração acontecem?",
+    answer:
+      "Porque três números diferentes andam juntos e parecem iguais: os mg do rótulo, os mL da seringa e as “unidades” da escala. Em 2024 a FDA alertou sobre pessoas que usaram de 5 a 20 vezes a quantidade pretendida de injetáveis manipulados por errar essa leitura. Um zero a mais na marca é dez vezes mais volume — por isso vale conferir duas vezes e, na dúvida, falar com quem prescreveu.",
+  },
+  {
+    question: "O que esta ferramenta não faz?",
+    answer:
+      "Ela não diz quanto você deve usar, não monta protocolo, não converte dose de insulina e não ensina a preparar nada. Ela começa depois que você já tem duas informações confiáveis: quanto o rótulo declara e qual o volume do frasco. Se faltar uma delas, a resposta certa é perguntar a quem prescreveu ou preparou.",
+  },
+];
+
 const dataBr = (iso: string) => `${iso.slice(8, 10)}/${iso.slice(5, 7)}/${iso.slice(0, 4)}`;
 
 export default function ConversorMgMlU100Page() {
@@ -95,73 +140,8 @@ export default function ConversorMgMlU100Page() {
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Qual a diferença entre mg e mL?</h2>
-            <p className="text-gray-300 leading-relaxed mb-3">
-              <strong className="text-white">mg</strong> mede massa: quanto da substância existe. <strong className="text-white">mL</strong> mede volume: quanto líquido existe. Um frasco pode ter 60 mg de substância dissolvidos em 2,5 mL de líquido, e os dois números descrevem coisas diferentes do mesmo frasco.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              A confusão nasce porque a seringa mede volume, e o rótulo fala em massa. Sem o número que liga os dois, a concentração, não há como saber quanto de substância há em cada mL.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>O que significa mg/mL?</h2>
-            <p className="text-gray-300 leading-relaxed mb-3">
-              É a concentração: quantos miligramas existem em cada mililitro. Ela sai da divisão da quantidade total pelo volume final. No exemplo educacional da ferramenta, 60 mg em um volume final de 2,5 mL dão 24 mg/mL, ou seja, cada 1 mL contém matematicamente 24 mg.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              O volume que entra na conta é o volume final da solução, não necessariamente o volume de diluente que foi adicionado. Quando isso não está claro no rótulo ou na preparação, a concentração não pode ser determinada com confiança, e a ferramenta não adivinha.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>O que significa U-100?</h2>
-            <p className="text-gray-300 leading-relaxed mb-3">
-              U-100 identifica uma concentração de 100 unidades de insulina por mL para produtos de insulina U-100, e a escala correspondente de seringas destinadas a esse uso. Fisicamente, numa seringa U-100 de 1 mL, a marca 100 corresponde a 1,00 mL, e a marca 10 corresponde a 0,10 mL.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Isso não transforma outro composto em “10 UI”. A escala continua marcando volume; as unidades da graduação são unidades de insulina U-100, e valem como unidades só para insulina U-100.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto representa a marca 10 de uma U-100?</h2>
-            <p className="text-gray-300 leading-relaxed mb-3">
-              0,10 mL, pela regra da escala: marca ÷ 100. A marca 5 é 0,05 mL, a 20 é 0,20 mL, a 50 é 0,50 mL. Quanto de substância há nesse volume depende da concentração: a 24 mg/mL, 0,10 mL contêm 2,4 mg; a 10 mg/mL, o mesmo volume contém 1 mg.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Por isso a mesma marca da seringa pode significar quantidades muito diferentes em frascos diferentes. A marca é uma medida de volume, sempre; a quantidade é a marca vezes a concentração.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>UI e a marca da seringa são a mesma coisa?</h2>
-            <p className="text-gray-300 leading-relaxed mb-3">
-              Nem sempre. Em uma seringa U-100, a escala foi projetada para doses de insulina U-100. Para outro líquido, uma marca continua correspondendo a um volume físico, mas não transforma a quantidade do outro composto em unidades internacionais.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              UI farmacológica não possui conversão universal para mg: essa conversão depende da substância específica. É por isso que esta ferramenta fala em “marca 10 da seringa U-100”, e não em “10 UI” do que está no frasco, e por isso ela não converte UI em mg nem mg em UI.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Por que erros de concentração acontecem?</h2>
-            <p className="text-gray-300 leading-relaxed mb-3">
-              Porque três números diferentes circulam com a mesma cara: a quantidade em mg do rótulo, o volume em mL da seringa e as “unidades” da escala. Em 2024 a FDA alertou sobre pessoas que administraram cerca de 5 a 20 vezes a quantidade pretendida de injetáveis manipulados, por medirem o volume errado ou confundirem unidades com mL e mg.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Um zero a mais na marca é dez vezes mais volume. A prevenção é ler a concentração do frasco, ler a marca da seringa duas vezes e, diante de qualquer divergência entre o que foi orientado e o que a conta mostra, confirmar com o prescritor ou farmacêutico antes de usar.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>O que esta ferramenta não faz</h2>
-            <p className="text-gray-300 leading-relaxed mb-3">
-              Ela não escolhe nem recomenda quantidade, dose, frequência ou protocolo. Não converte doses de insulina entre concentrações ou dispositivos. Não ensina reconstituição, técnica de aplicação nem armazenamento. Não reconhece produtos pelo nome nem oferece valores prontos por substância.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Ela começa depois que você já tem duas informações confiáveis do rótulo ou do profissional que orientou: a quantidade total declarada e o volume final. Se uma das duas falta, a resposta correta é perguntar a quem prescreveu ou preparou, não estimar.
-            </p>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Perguntas sobre mg, mL e a seringa</h2>
+            <FAQ itens={faq} placement="conversor-mg-ml-u100" />
           </div>
 
           <MetodologiaEFontes placement="pagina-ferramenta" />
