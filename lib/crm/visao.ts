@@ -8,6 +8,7 @@ import { etapaAtual, oportunidadeAtiva } from "./dados";
 import { classificarLead, diasEntre, prioridadesHoje, type ContagemFunil, type ItemHoje } from "./metricas";
 import type { Atividade, ClienteRow, Contato, Etapa, Experimental, Lead, Oportunidade, Tarefa } from "./tipos";
 import { cicloDeFollowUps, motivoDecidir, type Ciclo } from "./ciclo";
+import { ritmoDoPacote } from "./aulas";
 
 export interface LeadVisao {
   lead: Lead; contato: Contato; opp: Oportunidade | undefined; etapa: Etapa | undefined; servicoNome: string;
@@ -19,12 +20,13 @@ export interface LeadVisao {
  * Pacote em aberto do cliente: quantas aulas foram contratadas e quantas já
  * foram dadas. Nulo quando o contrato ativo não é pacote (plano mensal).
  */
-export function pacoteDoCliente(b: Base, clientId: string): { usadas: number; contratadas: number } | null {
+export function pacoteDoCliente(b: Base, clientId: string): { usadas: number; contratadas: number; semanas: number | null } | null {
   const contrato = b.contratos.filter((k) => k.client_id === clientId && k.status === "ativo").sort((a, z) => z.inicio.localeCompare(a.inicio))[0];
   if (!contrato?.sessoes_contratadas) return null;
   // Aulas do contrato. As antigas, importadas sem contrato, contam pelo cliente.
   const aulas = b.aulas.filter((a) => a.client_id === clientId && (a.contract_id === contrato.id || (!a.contract_id && a.data >= contrato.inicio)));
-  return { usadas: aulas.length, contratadas: contrato.sessoes_contratadas };
+  const r = ritmoDoPacote(aulas.map((a) => a.data));
+  return { usadas: aulas.length, contratadas: contrato.sessoes_contratadas, semanas: r.semanas };
 }
 
 /** Até quando o lead foi adiado pelo botão Adiar (a última nota com metadata.adiado e ate). */

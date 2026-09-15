@@ -7,7 +7,7 @@
  * vezes não dobra a contagem, e o pacote só cobra renovação quando a última
  * aula foi dada — nunca pela data, que num plano sem rotina fixa é chute.
  */
-import { formatarDatas, lerDatas, resumoDoPacote } from "../lib/crm/aulas";
+import { descreverRitmo, formatarDatas, lerDatas, resumoDoPacote, ritmoDoPacote } from "../lib/crm/aulas";
 import { prioridadesHoje } from "../lib/crm/metricas";
 import { escolherSituacao } from "../lib/crm/copy";
 import type { Sinais } from "../lib/crm/copy";
@@ -119,6 +119,42 @@ bloco("6. A MENSAGEM DO FIM DO PACOTE");
   ok("pacote fechado ganha da data vencida", escolherSituacao(null, { ...base, pacoteTerminou: true, renovaEm: -40 }) === "renovacao_pacote");
   ok("sem pacote, a data vencida continua mandando", escolherSituacao(null, { ...base, renovaEm: -40 }) === "renovacao_vencida");
   ok("aluno mensal com renovação perto segue igual", escolherSituacao(null, { ...base, renovaEm: 5 }) === "renovacao_proxima");
+}
+
+bloco("7. RITMO: HÁ QUANTO TEMPO TREINA E QUANDO O PACOTE FECHA");
+{
+  // Natália, de verdade: 14 aulas entre 06/08 e 15/09.
+  const natalia = lerDatas("06/08, 07/08, 10/08, 11/08, 13/08, 14/08, 15/08, 24/08, 25/08, 26/08, 28/08, 12/09, 14/09, 15/09", hoje).datas;
+  const r = ritmoDoPacote(natalia, 6, hoje);
+  ok("40 dias entre a primeira e a última", r.diasCorridos === 40, String(r.diasCorridos));
+  ok("5,7 semanas de pacote", Math.abs((r.semanas ?? 0) - 5.71) < 0.02, String(r.semanas));
+  ok("uma aula a cada ~3,1 dias", Math.abs((r.intervaloMedio ?? 0) - 3.08) < 0.02, String(r.intervaloMedio));
+  ok("~2,3 aulas por semana", Math.abs((r.porSemana ?? 0) - 2.28) < 0.02, String(r.porSemana));
+  ok("no ritmo dela, as 6 que faltam levam ~18 dias", r.diasParaFim === 18, String(r.diasParaFim));
+  ok("pacote fecha por volta de 03/10", r.fimPrevisto === "2026-10-03", String(r.fimPrevisto));
+  ok("treinou hoje, então zero dia parada", r.diasDesdeUltima === 0);
+  ok("descrição em português", /2,3 aulas por semana, uma a cada 3,1 dias/.test(descreverRitmo(r)), descreverRitmo(r));
+}
+{
+  // Denis, de verdade: 6 aulas em 8 dias — ritmo bem mais intenso.
+  const denis = lerDatas("08/09, 09/09, 11/09, 12/09, 14/09, 15/09", hoje).datas;
+  const r = ritmoDoPacote(denis, 4, hoje);
+  ok("5 aulas por semana", Math.abs((r.porSemana ?? 0) - 5) < 0.01, String(r.porSemana));
+  ok("uma a cada 1,4 dia", Math.abs((r.intervaloMedio ?? 0) - 1.4) < 0.01, String(r.intervaloMedio));
+  ok("as 4 que faltam fecham por volta de 21/09", r.fimPrevisto === "2026-09-21", String(r.fimPrevisto));
+}
+{
+  // Quem sumiu: a projeção parte de hoje, não da aula antiga, senão prevê o passado.
+  const sumido = ritmoDoPacote(["2026-08-01", "2026-08-04", "2026-08-07"], 5, hoje);
+  ok("aluno parado há 39 dias", sumido.diasDesdeUltima === 39, String(sumido.diasDesdeUltima));
+  ok("projeção parte de hoje, não do passado", (sumido.fimPrevisto ?? "") > "2026-09-15", String(sumido.fimPrevisto));
+}
+{
+  ok("uma aula só não inventa ritmo", ritmoDoPacote(["2026-09-15"], 9, hoje).porSemana === null);
+  ok("uma aula só não inventa data de fim", ritmoDoPacote(["2026-09-15"], 9, hoje).fimPrevisto === null);
+  ok("sem aula nenhuma devolve vazio, não NaN", ritmoDoPacote([], 10, hoje).diasCorridos === null);
+  ok("duas aulas no mesmo dia não viram divisão por zero", ritmoDoPacote(["2026-09-15", "2026-09-15"], 5, hoje).porSemana === null);
+  ok("pacote fechado não projeta fim", ritmoDoPacote(["2026-08-01", "2026-08-08"], 0, hoje).fimPrevisto === null);
 }
 
 console.log("\n" + "=".repeat(64) + `\n${falhas === 0 ? "TODOS OS TESTES PASSARAM" : `${falhas} FALHA(S)`}\n` + "=".repeat(64));
