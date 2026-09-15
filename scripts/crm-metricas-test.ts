@@ -198,6 +198,10 @@ bloco("9. LEAD SCORING EXPLICÁVEL E TELA HOJE");
       { id: "L6", contactId: "C6", nome: "JaPerdeu", status: "aberto", createdAt: "2026-09-01", lastContactAt: null, firstResponseAt: null, nextAction: null, nextActionAt: null, stageCode: "perdido", proposalSentAt: null, expectedValue: null },
       // Fase 1 — T1: respondeu depois do último contato → a bola está com o Montinho.
       { id: "L7", contactId: "C7", nome: "Respondeu", status: "aberto", createdAt: "2026-09-01", lastContactAt: "2026-09-03T10:00:00-03:00", firstResponseAt: "2026-09-01", lastReplyAt: "2026-09-04T09:00:00-03:00", nextAction: "Aguardando resposta", nextActionAt: "2026-09-05", stageCode: "contato", proposalSentAt: null, expectedValue: 500 },
+      // Fase 1 — T2: três cobranças no ciclo, ou a mensagem que prometeu ser a última → "decidir", sem texto.
+      { id: "L9", contactId: "C9x", nome: "Esgotado", status: "aberto", createdAt: "2026-08-10", lastContactAt: "2026-08-28", firstResponseAt: "2026-08-10", lastReplyAt: null, followUpsNoCiclo: 3, promessaFeita: false, motivoDecidir: "3 tentativas sem resposta", nextAction: "x", nextActionAt: "2026-09-05", stageCode: "contato", proposalSentAt: null, expectedValue: 300 },
+      { id: "L10", contactId: "C10", nome: "Prometeu", status: "aberto", createdAt: "2026-08-10", lastContactAt: "2026-09-01T10:00:00-03:00", firstResponseAt: "2026-08-10", lastReplyAt: null, followUpsNoCiclo: 1, promessaFeita: true, motivoDecidir: "Já mandou a mensagem final", nextAction: "x", nextActionAt: "2026-09-05", stageCode: "proposta", proposalSentAt: "2026-08-28", expectedValue: 300 },
+      { id: "L11", contactId: "C11", nome: "DoisFollowUps", status: "aberto", createdAt: "2026-08-10", lastContactAt: "2026-08-28", firstResponseAt: "2026-08-10", lastReplyAt: null, followUpsNoCiclo: 2, promessaFeita: false, nextAction: "x", nextActionAt: "2026-09-05", stageCode: "contato", proposalSentAt: null, expectedValue: 300 },
       { id: "L8", contactId: "C8", nome: "RespondeuAntes", status: "aberto", createdAt: "2026-08-20", lastContactAt: "2026-09-03T10:00:00-03:00", firstResponseAt: "2026-08-20", lastReplyAt: "2026-09-02T09:00:00-03:00", nextAction: "Aguardando resposta", nextActionAt: "2026-09-05", stageCode: "contato", proposalSentAt: null, expectedValue: 500 },
     ],
     tarefas: [{ id: "T1", leadId: "L2", clientId: null, contactId: "C2", nome: "Mariana", titulo: "Ligar", dueAt: "2026-09-03T09:00:00-03:00", priority: "alta" }],
@@ -216,6 +220,10 @@ bloco("9. LEAD SCORING EXPLICÁVEL E TELA HOJE");
   ok("lead 'aberto' parado na etapa perdido não aparece", !por.JaPerdeu);
   ok("Respondeu: última resposta depois do último contato → prioridade 1, grupo respondeu_aguardando_voce", por.Respondeu?.prioridade === 1 && por.Respondeu.grupo === "respondeu_aguardando_voce" && /esperando você/.test(por.Respondeu.motivo), JSON.stringify(por.Respondeu));
   ok("RespondeuAntes: Montinho já respondeu depois dela → não entra como 'esperando você'", por.RespondeuAntes?.grupo !== "respondeu_aguardando_voce", por.RespondeuAntes?.grupo);
+  ok("Esgotado: 3 follow-ups → grupo 'decidir', não 'parado'", por.Esgotado?.grupo === "decidir" && /3 tentativas/.test(por.Esgotado.motivo), JSON.stringify(por.Esgotado));
+  ok("Prometeu: proposta + mensagem final já enviada → 'decidir' mesmo com 1 follow-up", por.Prometeu?.grupo === "decidir", por.Prometeu?.grupo);
+  ok("DoisFollowUps: ainda cobra (parado)", por.DoisFollowUps?.grupo === "parado", por.DoisFollowUps?.grupo);
+  ok("'decidir' não traz ação de mensagem", /Decidir/.test(por.Esgotado?.acao ?? ""));
   // Temperatura: só a resposta real conta como resposta.
   const contatadoSemResposta = classificarLead({ diasDesdeUltimoContato: 0, respondeu: false, pediuPreco: false, pediuHorario: false, experimentalAgendada: false, experimentalRealizada: false, propostaEnviada: true, respondeuProposta: false, interacoes: 1, intencaoDeclarada: false });
   ok("contatado sem resposta real: 'nunca respondeu' pesa, sem 'respondeu hoje'", contatadoSemResposta.motivos.includes("nunca respondeu") && !contatadoSemResposta.motivos.includes("respondeu hoje"));
