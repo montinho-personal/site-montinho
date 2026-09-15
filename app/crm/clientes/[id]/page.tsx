@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { exigirUsuario } from "@/lib/crm/auth";
 import { base, catalogo, urlWhatsAppContato } from "@/lib/crm/dados";
 import { mensagemPara } from "@/lib/crm/copy";
-import { ltvRealizado, mrrDoContrato, diasEntre } from "@/lib/crm/metricas";
+import { ehEstimado, ltvPorConfianca, mrrDoContrato, diasEntre } from "@/lib/crm/metricas";
 import { Badge, Btn, Campo, Card, Detalhes, Input, Pagina, Select, Stat, Tabela, Textarea, brl, dataBr, dataHoraBr, dataInput } from "@/components/crm/ui";
 import { cancelarCliente, criarTarefa, definirPacote, gerarCodigoIndicacao, marcarRecebido, registrarAtividade, registrarReceita, removerAula, renovarContrato } from "../../actions";
 import { descreverRitmo, formatarDatas, resumoDoPacote, ritmoDoPacote } from "@/lib/crm/aulas";
@@ -17,8 +17,8 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
   const contato = b.contatos.find((x) => x.id === c.contact_id); if (!contato) notFound();
   const contratos = b.contratos.filter((k) => k.client_id === c.id).sort((a, z) => z.inicio.localeCompare(a.inicio));
   const receitas = b.receitas.filter((r) => r.client_id === c.id).sort((a, z) => z.occurred_at.localeCompare(a.occurred_at));
-  const ev = receitas.map((r) => ({ clientId: r.client_id, amount: r.amount, tipo: r.tipo, occurredAt: r.occurred_at, status: r.status }));
-  const ltv = ltvRealizado(ev, c.id);
+  const ev = receitas.map((r) => ({ clientId: r.client_id, amount: r.amount, tipo: r.tipo, occurredAt: r.occurred_at, status: r.status, confidence: r.confidence }));
+  const ltv = ltvPorConfianca(ev, c.id);
   const contratoAtivo = contratos.find((k) => k.status === "ativo");
   const atividades = b.atividades.filter((a) => a.client_id === c.id || a.contact_id === c.contact_id);
   const leads = b.leads.filter((l) => l.contact_id === c.contact_id);
@@ -36,7 +36,7 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
     <Pagina titulo={contato.nome} sub={<span><Badge tom={c.status === "ativo" ? "bom" : "ruim"}>{c.status}</Badge> · cliente desde {dataBr(c.first_purchase_at)} · origem {cat.fontes.find((f) => f.code === c.source_code)?.nome ?? c.source_code}</span>}
       acoes={<>{wa && <Btn href={wa} tom="whatsapp" target="_blank">WhatsApp</Btn>}{leads[0] && <Btn href={`/crm/leads/${leads[0].id}`} tom="secundario">Ver lead</Btn>}</>}>
       <div className="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Stat rotulo="LTV realizado" valor={brl(ltv)} sub="líquido de reembolsos" />
+        <Stat rotulo="LTV realizado" valor={brl(ltv.confirmado)} sub={ltv.estimado > 0 ? `+ ${brl(ltv.estimado)} estimados (sem extrato)` : "líquido de reembolsos"} />
         <Stat rotulo="MRR deste cliente" valor={contratoAtivo ? brl(mrrDoContrato(contratoAtivo.valor, contratoAtivo.ciclo_meses)) : "—"} sub={plano?.nome} />
         <Stat rotulo="Tempo como cliente" valor={`${meses.toFixed(1)} m`} />
         <Stat rotulo="Renovação" valor={dataBr(c.renewal_date)} tom={c.renewal_date && diasEntre(new Date(), c.renewal_date) <= 14 ? "alerta" : "neutro"} />
@@ -44,7 +44,7 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
       <div className="grid gap-4 lg:grid-cols-[1fr_360px]">
         <div className="space-y-4">
           <Card titulo="Receita">
-            <Tabela cabecalho={["Data", "Tipo", "Valor", "Status", ""]} linhas={receitas.map((r) => [dataBr(r.occurred_at), r.tipo, brl(r.amount), <Badge key="s" tom={r.status === "collected" ? "bom" : r.status === "contracted" ? "alerta" : "neutro"}>{r.status === "collected" ? "recebido" : r.status === "contracted" ? "contratado" : "esperado"}</Badge>, r.status !== "collected" && !ro ? <form key="f" action={marcarRecebido}><input type="hidden" name="revenue_id" value={r.id} /><Btn pequeno tom="ghost">Recebi</Btn></form> : ""])} vazio="Nenhum evento de receita." />
+            <Tabela cabecalho={["Data", "Tipo", "Valor", "Status", ""]} linhas={receitas.map((r) => [dataBr(r.occurred_at), r.tipo, brl(r.amount), ehEstimado(r.confidence) ? <Badge key="s" tom="info">estimado</Badge> : <Badge key="s" tom={r.status === "collected" ? "bom" : r.status === "contracted" ? "alerta" : "neutro"}>{r.status === "collected" ? "recebido" : r.status === "contracted" ? "contratado" : "esperado"}</Badge>, r.status !== "collected" && !ro ? <form key="f" action={marcarRecebido}><input type="hidden" name="revenue_id" value={r.id} /><Btn pequeno tom="ghost">Recebi</Btn></form> : ""])} vazio="Nenhum evento de receita." />
             {!ro && (
               <Detalhes titulo="Registrar receita">
                 <form action={registrarReceita} className="grid gap-2 sm:grid-cols-3">

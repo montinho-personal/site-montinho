@@ -2,7 +2,7 @@ import Link from "next/link";
 import { exigirUsuario } from "@/lib/crm/auth";
 import { base, catalogo, urlWhatsAppContato } from "@/lib/crm/dados";
 import { itensHoje, todasVisoes, contagemFunil, inicioDoMes, mesAnterior } from "@/lib/crm/visao";
-import { taxasFunil, valorPipeline, mrrNormalizado, cicloDeVendaDias } from "@/lib/crm/metricas";
+import { taxasFunil, valorPipeline, mrrNormalizado, cicloDeVendaDias, ehEstimado } from "@/lib/crm/metricas";
 import { mensagemPara } from "@/lib/crm/copy";
 import { Badge, Btn, Card, Pagina, Stat, Vazio, brl, num, pct, relativo } from "@/components/crm/ui";
 import { concluirTarefa } from "./actions";
@@ -28,8 +28,9 @@ export default async function Hoje() {
   const de = inicioDoMes(agora); const ant = mesAnterior(agora);
   const fMes = contagemFunil(b, cat, de, agora); const fAnt = contagemFunil(b, cat, ant.de, ant.ate);
   const tMes = taxasFunil(fMes);
-  const receitaMes = b.receitas.filter((r) => r.status === "collected" && r.occurred_at >= de.toISOString().slice(0, 10)).reduce((s, r) => s + r.amount, 0);
-  const receitaAnt = b.receitas.filter((r) => r.status === "collected" && r.occurred_at >= ant.de.toISOString().slice(0, 10) && r.occurred_at <= ant.ate.toISOString().slice(0, 10)).reduce((s, r) => s + r.amount, 0);
+  // Estimativa não entra no faturamento: ver ehEstimado em lib/crm/metricas.ts.
+  const receitaMes = b.receitas.filter((r) => r.status === "collected" && !ehEstimado(r.confidence) && r.occurred_at >= de.toISOString().slice(0, 10)).reduce((s, r) => s + r.amount, 0);
+  const receitaAnt = b.receitas.filter((r) => r.status === "collected" && !ehEstimado(r.confidence) && r.occurred_at >= ant.de.toISOString().slice(0, 10) && r.occurred_at <= ant.ate.toISOString().slice(0, 10)).reduce((s, r) => s + r.amount, 0);
   const mrr = mrrNormalizado(b.contratos.map((c) => ({ clientId: c.client_id, valor: c.valor, cicloMeses: c.ciclo_meses, inicio: c.inicio, fim: c.fim, status: c.status })), agora);
   const ciclo = cicloDeVendaDias(b.oportunidades.filter((o) => o.won_at && new Date(o.won_at) >= de).map((o) => ({ createdAt: b.leads.find((l) => l.id === o.lead_id)?.created_at ?? o.created_at, wonAt: o.won_at! })));
   const comp = (a: number, b: number) => (b > 0 ? `${a >= b ? "+" : ""}${Math.round(((a - b) / b) * 100)}% vs mês passado (${num(b)})` : `mês passado: ${num(b)}`);
@@ -108,7 +109,7 @@ export default async function Hoje() {
 function FontesResumo({ b, cat }: { b: Awaited<ReturnType<typeof base>>; cat: Awaited<ReturnType<typeof catalogo>> }) {
   const por = new Map<string, { leads: number; vendas: number; receita: number }>();
   for (const l of b.leads) { const r = por.get(l.source_code) ?? { leads: 0, vendas: 0, receita: 0 }; r.leads++; if (l.status === "ganho") r.vendas++; por.set(l.source_code, r); }
-  for (const c of b.clientes) { const r = por.get(c.source_code) ?? { leads: 0, vendas: 0, receita: 0 }; r.receita += b.receitas.filter((x) => x.client_id === c.id && x.status === "collected").reduce((s, x) => s + x.amount, 0); por.set(c.source_code, r); }
+  for (const c of b.clientes) { const r = por.get(c.source_code) ?? { leads: 0, vendas: 0, receita: 0 }; r.receita += b.receitas.filter((x) => x.client_id === c.id && x.status === "collected" && !ehEstimado(x.confidence)).reduce((s, x) => s + x.amount, 0); por.set(c.source_code, r); }
   const linhas = [...por.entries()].sort((a, c) => c[1].receita - a[1].receita || c[1].vendas - a[1].vendas).slice(0, 6);
   if (!linhas.length) return <p className="text-sm text-zinc-500">Ainda sem leads registrados.</p>;
   return <ul className="space-y-1 text-sm">{linhas.map(([k, v]) => <li key={k} className="flex justify-between"><span>{cat.fontes.find((f) => f.code === k)?.nome ?? k}</span><span className="text-zinc-400">{v.leads} leads · {v.vendas} vendas · {brl(v.receita)}</span></li>)}<li><Link href="/crm/analytics/aquisicao" className="text-xs text-zinc-500 underline">ver aquisição completa</Link></li></ul>;
