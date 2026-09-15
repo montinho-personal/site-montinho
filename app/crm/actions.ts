@@ -11,6 +11,7 @@
  *  - experimental realizada cria tarefa de proposta; no-show cria reativação.
  */
 import { GRUPOS_FOLLOW_UP } from "@/lib/crm/ciclo";
+import { tarefasDeOnboarding } from "@/lib/crm/onboarding";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { exigirAdmin, exigirEscrita, exigirUsuario } from "@/lib/crm/auth";
@@ -337,6 +338,14 @@ export async function marcarGanho(fd: FormData) {
   await atividade(sb, u.id, { contact_id: opp.contact_id, client_id: clientId, tipo: existente ? "reactivated" : "client_started", descricao: existente ? "Cliente reativado" : "Cliente iniciado", ocorreu_em: wonAt });
   // Tarefas abertas do lead deixam de fazer sentido.
   await sb.from("crm_tasks").update({ completed_at: new Date().toISOString() }).eq("lead_id", opp.lead_id).is("completed_at", null);
+  // Onboarding: D+3, D+10, D+21. Só se ainda não houver check-in aberto para este cliente
+  // (um ganho registrado duas vezes não pode virar seis tarefas).
+  const { data: abertas } = await sb.from("crm_tasks").select("id").eq("client_id", clientId).eq("tipo", "onboarding").is("completed_at", null).limit(1);
+  if (!abertas?.length) {
+    for (const t of tarefasDeOnboarding(data)) {
+      await tarefa(sb, u.id, { contact_id: opp.contact_id, client_id: clientId, tipo: t.tipo, titulo: t.titulo, due_at: t.due_at, priority: t.priority });
+    }
+  }
   revalidarTudo([`/crm/leads/${opp.lead_id}`, `/crm/clientes/${clientId}`]);
   redirect(`/crm/clientes/${clientId}`);
 }
@@ -452,6 +461,8 @@ export async function cancelarCliente(fd: FormData) {
     await sb.from("crm_revenue_events").insert({ client_id: clientId, tipo: "cancellation", amount: 0, occurred_at: data, status: "collected", service_id: c.service_id, plan_id: c.current_plan_id, source_code: c.source_code, notes: s(fd, "cancel_reason"), created_by: u.id });
   }
   await atividade(sb, u.id, { contact_id: c.contact_id, client_id: clientId, tipo: "cancellation", descricao: `${status === "cancelado" ? "Cancelado" : "Pausado"}: ${s(fd, "cancel_reason") ?? "sem motivo"}` });
+  // Check-in de onboarding em quem cancelou vira constrangimento: encerra.
+  await sb.from("crm_tasks").update({ completed_at: new Date().toISOString() }).eq("client_id", clientId).eq("tipo", "onboarding").is("completed_at", null);
   revalidarTudo([`/crm/clientes/${clientId}`]);
 }
 

@@ -31,7 +31,7 @@ export const VARIAVEIS = ["saudacao", "nome", "servico", "pagina", "objetivo", "
 export type Variavel = (typeof VARIAVEIS)[number];
 export type Variaveis = Record<Variavel, string>;
 
-const FUSO = "America/Sao_Paulo";
+export const FUSO = "America/Sao_Paulo";
 
 /** Preenche {variáveis}; apaga [[fragmentos]] cuja variável está vazia; arruma o que sobrou. */
 export function preencher(modelo: string, vars: Partial<Record<string, string>>): string {
