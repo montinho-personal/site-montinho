@@ -5,7 +5,8 @@
  * Dois tipos de proteção. A primeira é aritmética: 60 mg em 2,5 mL são
  * 24 mg/mL, a marca 10 de uma U-100 é 0,10 mL, e 0,10 mL dessa solução
  * contêm 2,4 mg. A segunda é de produto: o código NÃO pode ter a função que
- * recebe "quero X mg" e devolve uma marca de seringa, e a interface não pode
+ * recebe "quero X mg" e devolve uma marca de seringa (o caminho inverso que
+ * existe parte de quantidade JÁ PRESCRITA), e a interface não pode
  * chamar marca de "UI do produto" nem quantidade contida de "dose".
  */
 import { readFileSync } from "node:fs";
@@ -15,8 +16,10 @@ import { ARTIGOS_COM_LINK_CONCENTRACAO } from "../lib/concentracao/artigos";
 import { blogPosts } from "../lib/blog";
 import {
   calcularConcentracao, conferirInstrucao, formatarConcentracao, formatarMg, formatarMl, lerMarca, lerNumero,
-  marcaU100ParaMl, quantidadeNoVolume, tabelaU100, validarMarca, validarMg, validarMl, MARCAS_TABELA,
+  localizarQuantidadePrescrita, marcaU100ParaMl, quantidadeNoVolume, tabelaU100,
+  validarMarca, validarMg, validarMl, MARCAS_TABELA,
 } from "../lib/concentracao/calculo";
+import { COMPOSTOS, nomeDoComposto } from "../lib/concentracao/compostos";
 
 let falhas = 0;
 const ok = (nome: string, cond: boolean, detalhe = "") => {
@@ -111,6 +114,15 @@ bloco("8. AS BARREIRAS ESTÃO NO CÓDIGO, NÃO SÓ NA INTENÇÃO");
   ok("nenhum solver reverso mg → marca", !/targetMgToInjectionUnits|mgParaMarca|marcaPara(Mg|Dose)|unidadesPara/.test(semComentarios));
   ok("nenhuma função devolve marca a partir de mg desejado", !/function\s+\w*(marca|unidade)\w*\s*\([^)]*mg\w*Desejad/i.test(semComentarios));
 
+  /*
+   * O caminho inverso é permitido, mas só na forma que não vira prescrição:
+   * parte de quantidade JÁ PRESCRITA, devolve onde ela cai, e não corrige
+   * nada. Estas três linhas são a fronteira inteira.
+   */
+  ok("o caminho inverso não recebe quantidade desejada", !/mgDesejad|quantidadeDesejad|mgAlvo|doseAlvo/i.test(semComentarios));
+  ok("o caminho inverso não devolve correção", !/marcaCorreta|marcaSugerida|corrig/i.test(semComentarios));
+  ok("o caminho inverso fala em prescrito", /mgPrescrito/.test(semComentarios));
+
   const comp = ["components/concentracao/ConversorConcentracao.tsx", "components/concentracao/SeringaU100.tsx", "app/ferramentas/conversor-mg-ml-u100/page.tsx"]
     .map((f) => { try { return readFileSync(f, "utf8"); } catch { return ""; } })
     .join("\n");
@@ -120,13 +132,58 @@ bloco("8. AS BARREIRAS ESTÃO NO CÓDIGO, NÃO SÓ NA INTENÇÃO");
     ok("a interface nunca diz 'sua dose'", !/sua dose|dose de \d|dose certa|dose ideal|dose recomendada|dose segura/i.test(semC));
     ok("a interface nunca diz 'aplique' / 'injete' como instrução", !/\b(aplique|injete)\b/i.test(semC));
     ok("nenhum campo 'quero tomar'", !/quero tomar|quantas unidades coloco/i.test(semC));
-    ok("nenhum nome de substância como preset", !/tirzepatid|retatrutid|semaglutid|BPC|TB-500|hormônio do crescimento/i.test(semC));
+    /*
+     * Nome de substância passou a ser permitido — mas só como palavra, nunca
+     * como preset. O que continua proibido é o que traz risco: um nome
+     * acompanhado de número, que é um valor preenchido por alguém; e um nome
+     * perto da palavra dose, que é a página opinando sobre quantidade. O
+     * catálogo em lib/concentracao/compostos.ts é verificado à parte, e não
+     * carrega número nenhum.
+     */
+    const SUBSTANCIAS = /tirzepatid\w*|retatrutid\w*|semaglutid\w*|liraglutid\w*|BPC-157|TB-500|GHK-Cu|CJC-1295|ipamorelina|tesamorelina|AOD-9604/gi;
+    const nomes = semC.match(SUBSTANCIAS) ?? [];
+    const comNumero = nomes.filter((_, i) => {
+      const pos = semC.toLowerCase().indexOf(nomes[i].toLowerCase());
+      return /\d+\s*(mg|ml|ui|mcg)/i.test(semC.slice(pos, pos + 90));
+    });
+    ok("nenhum nome de substância aparece com quantidade ao lado", comNumero.length === 0);
+    ok("nenhum nome de substância aparece perto da palavra dose", !/(tirzepatid|retatrutid|semaglutid|liraglutid|BPC|TB-500)[^.!?]{0,80}\bdose/i.test(semC));
+    ok("hormônio do crescimento continua fora", !/hormônio do crescimento/i.test(semC));
+    ok("o nome do composto não preenche nenhum campo", !/COMPOSTOS[\s\S]{0,300}(setMgTxt|setMlTxt|setConcTxt)/.test(semC));
     ok("nenhuma cor verde significando 'pode aplicar'", !/pode aplicar|seguro aplicar|verde/i.test(semC));
     ok("o aviso de segurança existe", /não determina quanto você deve injetar/i.test(semC));
     ok("a distinção marca × UI está escrita", /não significa que o outro composto/i.test(semC) || /não transforma/i.test(semC));
     ok("a trava de insulina existe", /não calcula doses de insulina/i.test(semC));
     ok("nenhum evento carrega valor: trackEvent sem mg/ml/marca nos params", !/trackEvent\([^)]*\b(mg|ml|marca|concentracao)\s*:/i.test(semC));
   }
+}
+
+bloco("8B. O CAMINHO INVERSO: QUANTIDADE PRESCRITA → ONDE ELA CAI");
+{
+  const c = 24; // 60 mg em 2,5 mL
+  const r = localizarQuantidadePrescrita(c, 2.5);
+  ok("2,5 mg a 24 mg/mL dão 0,104166… mL", r.status === "ok" && perto(r.volumeMl, 2.5 / 24));
+  ok("e caem por volta da marca 10,4", r.status === "ok" && perto(r.marcaAproximada, 10.4));
+  ok("a marca não é arredondada para inteiro", r.status === "ok" && !Number.isInteger(r.marcaAproximada));
+  ok("2,4 mg a 24 mg/mL caem exatamente na marca 10", (() => { const x = localizarQuantidadePrescrita(c, 2.4); return x.status === "ok" && perto(x.marcaAproximada, 10); })());
+  ok("nada acima de 1 mL é apresentado como cabível", localizarQuantidadePrescrita(c, 50).status === "fora_da_seringa");
+  ok("mas o volume verdadeiro continua sendo dito", (() => { const x = localizarQuantidadePrescrita(c, 50); return x.status === "fora_da_seringa" && perto(x.volumeMl, 50 / 24); })());
+  ok("quantidade menor que a menor marca também é dita, não arredondada para 1", localizarQuantidadePrescrita(c, 0.05).status === "fora_da_seringa");
+  ok("entrada inválida não vira número", localizarQuantidadePrescrita(c, 0).status === "invalido" && localizarQuantidadePrescrita(0, 2.5).status === "invalido");
+  ok("o resultado nunca traz sugestão de quantidade", !("sugestao" in r) && !("recomendado" in r) && !("marcaCorreta" in r));
+  ok("o inverso é coerente com o direto", (() => { const x = localizarQuantidadePrescrita(c, 2.4); return x.status === "ok" && perto(lerMarca(c, Math.round(x.marcaAproximada))!.mg, 2.4); })());
+}
+
+bloco("8C. O CATÁLOGO DE COMPOSTOS É SÓ NOME");
+{
+  const bruto = readFileSync("lib/concentracao/compostos.ts", "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/\/\/[^\n]*/g, "");
+  const semNomesProprios = bruto.replace(/GHK-Cu|AOD-9604|CJC-1295|TB-500|BPC-157/g, "");
+  ok("há compostos para escolher", COMPOSTOS.length >= 10);
+  ok("nenhum composto carrega mg, mL, UI ou faixa de uso", !/\b(mg|ml|ui|mcg|dose|faixa|concentração)\b/i.test(semNomesProprios));
+  ok("nenhum valor numérico é atribuído a um composto", !/[:=]\s*\d/.test(semNomesProprios));
+  ok("todo composto tem só id e nome", COMPOSTOS.every((c) => Object.keys(c).sort().join(",") === "id,nome"));
+  ok("'outro' e 'prefiro não informar' não nomeiam resultado", nomeDoComposto("outro") === null && nomeDoComposto("nao-informar") === null && nomeDoComposto(null) === null);
+  ok("um composto real nomeia o resultado", nomeDoComposto("tirzepatida") === "Tirzepatida");
 }
 
 bloco("9. FONTES: NENHUM LINK PROMETE O QUE NÃO FOI CONFERIDO");

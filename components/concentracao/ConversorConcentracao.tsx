@@ -3,9 +3,11 @@
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import {
-  calcularConcentracao, conferirInstrucao, formatarConcentracao, formatarMg, formatarMl, lerMarca, tabelaU100,
+  calcularConcentracao, conferirInstrucao, formatarConcentracao, formatarMarca, formatarMg, formatarMl, formatarMlFino,
+  lerMarca, localizarQuantidadePrescrita, tabelaU100,
   validarConcentracao, validarMarca, validarMg, validarMl, MARCA_MAX, MARCA_MIN, type Erro,
 } from "@/lib/concentracao/calculo";
+import { COMPOSTOS, nomeDoComposto } from "@/lib/concentracao/compostos";
 import { FONTES, linkDaFonte } from "@/lib/concentracao/fontes";
 import SeringaU100 from "./SeringaU100";
 
@@ -23,8 +25,10 @@ import SeringaU100 from "./SeringaU100";
  *
  * O que este componente NÃO faz, e é a razão de existir: não recebe "quero
  * X mg" e devolve uma marca. A pessoa escolhe a marca e a ferramenta explica
- * o que existe ali. A diferença parece sutil e é toda a diferença entre
- * explicar uma medida e prescrever uma dose de injetável.
+ * o que existe ali. O caminho inverso existe num passo separado e parte de
+ * uma quantidade JÁ PRESCRITA, para conferência — o campo pergunta o que o
+ * profissional passou, não o que a pessoa quer. A diferença parece sutil e é
+ * toda a diferença entre explicar uma medida e prescrever uma de injetável.
  *
  * Privacidade: tudo é calculado aqui, no navegador. Nenhum valor digitado —
  * mg, mL, concentração, marca — entra em evento de analytics, em URL, em
@@ -42,7 +46,14 @@ const MENSAGEM_ERRO: Record<Erro, string> = {
 };
 
 type Modo = "calcular" | "concentracao";
-type Insulina = null | "nao" | "sim";
+/**
+ * A primeira pergunta era "o líquido é insulina?". Quem chega buscando
+ * calculadora de peptídeo respondia "não" e ficava sem saber se a página era
+ * para ele — a pergunta separava certo e acolhia errado. Agora ela separa
+ * pela palavra que a pessoa usa. A trava de insulina continua idêntica; o que
+ * mudou foi de que lado ela é enunciada.
+ */
+type Tipo = null | "peptideo" | "insulina";
 
 export default function ConversorConcentracao({ placement }: { placement: string }) {
   const uid = useId();
@@ -52,7 +63,10 @@ export default function ConversorConcentracao({ placement }: { placement: string
   const [mgTxt, setMgTxt] = useState("");
   const [mlTxt, setMlTxt] = useState("");
   const [concTxt, setConcTxt] = useState("");
-  const [insulina, setInsulina] = useState<Insulina>(null);
+  const [tipo, setTipo] = useState<Tipo>(null);
+  const [composto, setComposto] = useState<string>("");
+  const [mgPrescritoTxt, setMgPrescritoTxt] = useState("");
+  const [copiado, setCopiado] = useState(false);
   const [marca, setMarca] = useState<number | null>(null);
   const [marcaTxt, setMarcaTxt] = useState("");
   const [conferirAberto, setConferirAberto] = useState(false);
@@ -77,7 +91,19 @@ export default function ConversorConcentracao({ placement }: { placement: string
 
   const leitura = concentracao != null && marca != null ? lerMarca(concentracao, marca) : null;
   const tabela = concentracao != null ? tabelaU100(concentracao) : [];
-  const podeSeringa = concentracao != null && insulina === "nao";
+  const podeSeringa = concentracao != null && tipo === "peptideo";
+  const nome = nomeDoComposto(composto || null);
+
+  const vMgPrescrito = validarMg(mgPrescritoTxt);
+  const prescrito = concentracao != null && vMgPrescrito.valor != null
+    ? localizarQuantidadePrescrita(concentracao, vMgPrescrito.valor) : null;
+  const jaConverteu = useRef(false);
+  useEffect(() => {
+    if (prescrito && prescrito.status !== "invalido" && !jaConverteu.current) {
+      jaConverteu.current = true;
+      trackEvent("reverse_calculation", { placement });
+    }
+  }, [prescrito, placement]);
 
   /** View: quando o bloco entra na tela. */
   useEffect(() => {
@@ -126,6 +152,39 @@ export default function ConversorConcentracao({ placement }: { placement: string
       <p className="text-gray-300 leading-relaxed mb-6 max-w-2xl">
         Diga quanto o rótulo declara e quanto líquido tem no frasco. A conta aparece na hora — e depois a ferramenta explica o que cada marca da seringa U-100 significa.
       </p>
+
+      {/* Passo 1: de que lado da régua a pessoa está. */}
+      <div className="mb-6">
+        <p id={`${uid}-tipo-rot`} className="text-gray-300 text-sm font-medium mb-2">O que você quer calcular?</p>
+        <div role="radiogroup" aria-labelledby={`${uid}-tipo-rot`} className="flex flex-wrap gap-2">
+          {([
+            ["peptideo", "Peptídeo ou injetável manipulado"],
+            ["insulina", "Insulina"],
+          ] as const).map(([id, rot]) => (
+            <button key={id} type="button" role="radio" aria-checked={tipo === id} onClick={() => setTipo(id)}
+              className={`px-4 py-2.5 text-sm font-medium border transition-colors min-h-[44px] ${tipo === id ? "border-[#BA9E50] text-white bg-[#BA9E50]/10" : "border-white/20 text-gray-300 hover:border-white/40"}`}>
+              {rot}
+            </button>
+          ))}
+        </div>
+        {tipo === null && (
+          <p className="text-gray-400 text-xs leading-relaxed mt-2">
+            A seringa U-100 nasceu para insulina, e insulina tem regra própria. Responda para a ferramenta saber o que pode explicar.
+          </p>
+        )}
+      </div>
+
+      {tipo === "insulina" && (
+        <div role="alert" className="border border-white/30 bg-black/60 p-5 mb-6">
+          <p className="text-white font-semibold leading-relaxed mb-3">
+            Esta ferramenta não calcula doses de insulina. Use exatamente a concentração, dispositivo e quantidade prescritos para o produto específico. Não converta entre concentrações ou seringas por conta própria.
+          </p>
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Para insulina, as unidades da escala são unidades da própria insulina, e existem produtos em concentrações diferentes (U-100, U-200, U-300, U-500) que não se convertem por regra de três.{" "}
+            {fonteInsulina && <a href={linkDaFonte(fonteInsulina)} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-1 hover:text-white transition-colors" onClick={() => trackEvent("source_open", { placement, fonte: fonteInsulina.id })}>A insulina está na lista de medicamentos de alto risco do ISMP</a>}.
+          </p>
+        </div>
+      )}
 
       {/*
         A entrada vem primeiro. Quem abre esta página já tem o frasco na mão e
@@ -198,8 +257,29 @@ export default function ConversorConcentracao({ placement }: { placement: string
               {formatarConcentracao(concentracao)}<span className="text-xl font-normal text-gray-300"> mg/mL</span>
             </p>
             <p className="text-gray-300 leading-relaxed">
-              Quer dizer: cada 1 mL desse frasco tem {formatarConcentracao(concentracao)} mg da substância.
+              Quer dizer: cada 1 mL {nome ? `do seu frasco de ${nome.toLowerCase()}` : "desse frasco"} tem {formatarConcentracao(concentracao)} mg da substância.
             </p>
+            {/*
+              Copiar entrega o texto inteiro, com a conta à vista. Quem copia
+              costuma colar numa conversa com quem prescreveu — e um número
+              solto, sem a concentração que o gerou, é justamente o que vira
+              mal-entendido.
+            */}
+            <button
+              type="button"
+              onClick={() => {
+                const linha = `Frasco: ${formatarConcentracao(concentracao)} mg/mL${nome ? ` (${nome})` : ""}${leitura ? ` · marca ${leitura.marca} da seringa U-100 = ${formatarMl(leitura.volumeMl)} mL = ${formatarMg(leitura.mg)} mg` : ""}`;
+                navigator.clipboard?.writeText(linha).then(() => {
+                  setCopiado(true);
+                  trackEvent("result_copied", { placement });
+                  setTimeout(() => setCopiado(false), 2500);
+                }).catch(() => setCopiado(false));
+              }}
+              className="mt-4 text-sm font-semibold text-white underline underline-offset-4 decoration-1 min-h-[44px] hover:opacity-80 transition-opacity"
+              style={{ textDecorationColor: OURO }}
+            >
+              {copiado ? "Copiado" : "Copiar o resultado"}
+            </button>
             {modo === "calcular" && vMg.valor != null && vMl.valor != null && (
               <details className="mt-4 group">
                 <summary className="cursor-pointer list-none text-white text-sm font-semibold underline underline-offset-4 decoration-1 min-h-[44px] flex items-center" style={{ textDecorationColor: OURO }}>
@@ -214,6 +294,34 @@ export default function ConversorConcentracao({ placement }: { placement: string
           </div>
         )}
       </div>
+
+      {/*
+        Opcional, e cosmético de propósito: escolher um nome muda o rótulo do
+        resultado e nada mais. Nenhum campo é preenchido, nenhuma quantidade é
+        sugerida, e a conta é idêntica para todos os itens da lista — o nome
+        existe para quem chegou pela palavra reconhecer que está no lugar
+        certo, não para a ferramenta fingir que sabe algo sobre o frasco.
+      */}
+      {tipo === "peptideo" && concentracao != null && (
+        <div className="mt-5">
+          <label htmlFor={`${uid}-composto`} className="block text-gray-300 text-sm font-medium mb-2">
+            Qual composto está no frasco? <span className="text-gray-500">(opcional)</span>
+          </label>
+          <select
+            id={`${uid}-composto`}
+            value={composto}
+            onChange={(e) => { setComposto(e.target.value); if (e.target.value) trackEvent("compound_selected", { placement }); }}
+            className="w-full sm:w-80 bg-black border border-white/25 focus:border-[#BA9E50] text-white px-4 py-3 outline-none transition-colors min-h-[44px]"
+            aria-describedby={`${uid}-composto-ajuda`}
+          >
+            <option value="">Não quero escolher</option>
+            {COMPOSTOS.map((c) => <option key={c.id} value={c.id}>{c.nome}</option>)}
+          </select>
+          <p id={`${uid}-composto-ajuda`} className="text-gray-400 text-sm mt-2">
+            Serve só para nomear o resultado. A conta é a mesma para qualquer composto, e nenhum valor é preenchido por você.
+          </p>
+        </div>
+      )}
 
       {/* Agora sim a explicação: com o número na tela, o conceito gruda. */}
       <dl className="grid grid-cols-3 gap-2 sm:gap-3 mt-6 mb-7">
@@ -241,7 +349,7 @@ export default function ConversorConcentracao({ placement }: { placement: string
           {/* Passo 2: a seringa */}
           <h3 className="text-white font-bold text-xl sm:text-2xl leading-tight mb-3" style={h}>Entenda a escala da seringa</h3>
 
-          <div className="grid gap-5 sm:grid-cols-2 mb-6">
+          <div className="mb-6">
             <div>
               <p className="text-gray-300 text-sm font-medium mb-2">Que escala aparece na sua seringa?</p>
               <div className="flex flex-wrap gap-2">
@@ -249,31 +357,7 @@ export default function ConversorConcentracao({ placement }: { placement: string
               </div>
               <p className="text-gray-400 text-xs leading-relaxed mt-2">Nesta versão só a escala U-100 é interpretada. Se a sua seringa tem outra escala (U-40, U-500, mL), ela é outro dispositivo e a conta abaixo não vale.</p>
             </div>
-            <div>
-              <p id={`${uid}-ins-rot`} className="text-gray-300 text-sm font-medium mb-2">O líquido é insulina?</p>
-              <div role="radiogroup" aria-labelledby={`${uid}-ins-rot`} className="flex flex-wrap gap-2">
-                {([["nao", "Não é insulina"], ["sim", "É insulina"]] as const).map(([id, rot]) => (
-                  <button key={id} type="button" role="radio" aria-checked={insulina === id} onClick={() => setInsulina(id)}
-                    className={`px-4 py-2.5 text-sm font-medium border transition-colors min-h-[44px] ${insulina === id ? "border-[#BA9E50] text-white bg-[#BA9E50]/10" : "border-white/20 text-gray-300 hover:border-white/40"}`}>
-                    {rot}
-                  </button>
-                ))}
-              </div>
-              {insulina === null && <p className="text-gray-400 text-xs leading-relaxed mt-2">Responda para continuar. Essa seringa foi feita para insulina, e insulina tem regra própria.</p>}
-            </div>
           </div>
-
-          {insulina === "sim" && (
-            <div role="alert" className="border border-white/30 bg-black/60 p-5 mb-6">
-              <p className="text-white font-semibold leading-relaxed mb-3">
-                Esta ferramenta não calcula doses de insulina. Use exatamente a concentração, dispositivo e quantidade prescritos para o produto específico. Não converta entre concentrações ou seringas por conta própria.
-              </p>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                Para insulina, as unidades da escala são unidades da própria insulina, e existem produtos em concentrações diferentes (U-100, U-200, U-300, U-500) que não se convertem por regra de três.{" "}
-                {fonteInsulina && <a href={linkDaFonte(fonteInsulina)} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-1 hover:text-white transition-colors" onClick={() => trackEvent("source_open", { placement, fonte: fonteInsulina.id })}>A insulina está na lista de medicamentos de alto risco do ISMP</a>}.
-              </p>
-            </div>
-          )}
 
           {podeSeringa && (
             <>
@@ -334,6 +418,60 @@ export default function ConversorConcentracao({ placement }: { placement: string
                     <p className="text-white text-sm leading-relaxed font-semibold">Isso é só a medida do que existe nesse volume. Não é uma recomendação de quanto usar.</p>
                   </div>
                 )}
+              </div>
+
+              {/*
+                O caminho inverso. Ele existe porque metade das pessoas chega
+                com o número já na mão — o prescritor falou em mg, e a seringa
+                fala em marca. O que mantém isto do lado da explicação é o
+                enunciado do campo: ele pergunta o que foi PRESCRITO, não o
+                que a pessoa quer. E a saída não arredonda para a marca
+                "certa": 10,4 aparece como 10,4, porque uma quantidade que não
+                cai numa marca é uma conversa com o prescritor, não um
+                arredondamento que a ferramenta faz sozinha.
+              */}
+              <div className="border border-white/15 p-5 sm:p-6 mb-6">
+                <p className="text-white font-bold text-lg mb-2" style={h}>Onde cai uma quantidade já prescrita</p>
+                <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                  Se um profissional habilitado já passou a quantidade em mg, veja onde ela cai na régua desta seringa. A ferramenta não escolhe a quantidade: ela só mostra o lugar da que você informou.
+                </p>
+                <div className="flex items-center gap-3 max-w-xs mb-3">
+                  <label htmlFor={`${uid}-presc`} className="sr-only">Quantidade prescrita em mg</label>
+                  <input id={`${uid}-presc`} type="text" inputMode="decimal" autoComplete="off" placeholder="2,5" value={mgPrescritoTxt}
+                    onChange={(e) => setMgPrescritoTxt(e.target.value)} className={inputCls} aria-describedby={`${uid}-presc-saida`} />
+                  <span className="text-gray-300 text-lg">mg</span>
+                </div>
+                <div id={`${uid}-presc-saida`} aria-live="polite">
+                  {mgPrescritoTxt && vMgPrescrito.erro && vMgPrescrito.erro !== "vazio" && (
+                    <p className="text-gray-400 text-sm">{MENSAGEM_ERRO[vMgPrescrito.erro]}</p>
+                  )}
+                  {prescrito?.status === "ok" && (
+                    <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.06] p-4 sm:p-5">
+                      <p className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-2" style={h}>
+                        {formatarMlFino(prescrito.volumeMl)} mL <span className="text-base font-normal text-gray-300">— cerca da marca {formatarMarca(prescrito.marcaAproximada)}</span>
+                      </p>
+                      <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                        A conta: {formatarMg(prescrito.mgPrescrito)} mg ÷ {formatarConcentracao(concentracao)} mg/mL = {formatarMlFino(prescrito.volumeMl)} mL, e cada marca vale 0,01 mL.
+                      </p>
+                      {!Number.isInteger(prescrito.marcaAproximada) && (
+                        <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                          Repare que não cai numa marca inteira. Seringa não tem precisão de décimo de marca — se a diferença importa no seu caso, quem resolve isso é quem prescreveu.
+                        </p>
+                      )}
+                      <p className="text-white text-sm leading-relaxed font-semibold">
+                        Confira este número com quem prescreveu antes de usar. A ferramenta conferiu a matemática, não a adequação ao seu caso.
+                      </p>
+                    </div>
+                  )}
+                  {prescrito?.status === "fora_da_seringa" && (
+                    <div role="alert" className="border border-white/40 bg-black/60 p-4">
+                      <p className="text-white font-semibold leading-relaxed mb-2">Essa quantidade não cabe nesta seringa</p>
+                      <p className="text-gray-300 text-sm leading-relaxed">
+                        Nesta concentração, {formatarMg(prescrito.mgPrescrito)} mg ocupariam {formatarMlFino(prescrito.volumeMl)} mL, e uma seringa U-100 de 1 mL vai só até 1,00 mL. Isso costuma significar que a concentração informada ou a quantidade estão trocadas. Confirme as duas com o prescritor ou o farmacêutico.
+                      </p>
+                    </div>
+                  )}
+                </div>
               </div>
 
               {/* As três camadas, com os números da pessoa */}

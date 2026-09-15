@@ -19,17 +19,18 @@ import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
  * até um profissional habilitado revisar e a data ser registrada, a página
  * abre pela URL para revisão, mas com noindex, fora do sitemap e sem card.
  *
- * Só BreadcrumbList no schema. Sem FAQPage: as perguntas abaixo são seções
- * de conteúdo, não um FAQ, e marcar como FAQ seria enfeite que envelhece mal.
+ * Schema: BreadcrumbList, SoftwareApplication e FAQPage — os três descrevem
+ * o que a página realmente é. Nada de aggregateRating, que seria nota
+ * inventada.
  */
 export const metadata: Metadata = {
-  title: "Conversor mg/mL e Seringa U-100: Entenda as Marcações",
+  title: "Calculadora de Peptídeos: mg para UI e mL | Montinho",
   description:
-    "Entenda a diferença entre mg, mL e as marcações de uma seringa U-100. Calcule a concentração em mg/mL e veja quanto volume representa cada marca da escala.",
+    "Calculadora gratuita de peptídeos: informe os mg e o volume do frasco e veja a concentração em mg/mL e quanto representa cada marca da seringa U-100. Educacional, sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` },
   robots: CONVERSOR_NO_AR ? undefined : { index: false, follow: false },
   openGraph: {
-    title: "Conversor mg/mL e Seringa U-100 | Montinho",
+    title: "Calculadora de Peptídeos e UI na Seringa U-100 | Montinho",
     description:
       "mg, mL e U-100 sem confusão: calcule a concentração e entenda quanto volume representa cada marca da seringa. Educacional, sem cadastro.",
     url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100`,
@@ -44,8 +45,26 @@ const breadcrumbSchema = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
     { "@type": "ListItem", position: 2, name: "Ferramentas", item: `${SITE_URL}/ferramentas` },
-    { "@type": "ListItem", position: 3, name: "Conversor de mg/mL e Seringa U-100", item: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` },
+    { "@type": "ListItem", position: 3, name: "Calculadora de Peptídeos e UI na Seringa U-100", item: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` },
   ],
+};
+
+/*
+ * SoftwareApplication descreve o que a página é: uma calculadora que roda no
+ * navegador, de graça. Sem aggregateRating — não há avaliação real, e nota
+ * inventada é justamente o tipo de enfeite que derruba a página inteira.
+ */
+const appSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Calculadora de Peptídeos e UI na Seringa U-100",
+  url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100`,
+  applicationCategory: "HealthApplication",
+  operatingSystem: "Web",
+  description:
+    "Calculadora educacional de concentração: converte os mg e o volume do frasco em mg/mL e mostra quanto volume e quanta substância representa cada marca de uma seringa U-100.",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "BRL" },
+  isAccessibleForFree: true,
 };
 
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
@@ -94,12 +113,31 @@ const faq: ItemFAQ[] = [
   },
 ];
 
+/*
+ * FAQPage agora existe porque as perguntas viraram um FAQ de verdade: sete
+ * perguntas em details/summary, resposta inteira no HTML, uma pergunta por
+ * resposta. Marcar como FAQ o que já é FAQ é descrição, não enfeite — foi o
+ * contrário disso que me fez deixar de fora na primeira versão, quando as
+ * perguntas eram seções corridas de conteúdo.
+ */
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({
+    "@type": "Question",
+    name: f.question,
+    acceptedAnswer: { "@type": "Answer", text: f.answer },
+  })),
+};
+
 const dataBr = (iso: string) => `${iso.slice(8, 10)}/${iso.slice(5, 7)}/${iso.slice(0, 4)}`;
 
 export default function ConversorMgMlU100Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {!CONVERSOR_NO_AR && (
         <div className="bg-[#BA9E50] text-black text-sm font-semibold text-center px-4 py-2">
@@ -113,11 +151,11 @@ export default function ConversorMgMlU100Page() {
             Educacional · gratuito · sem cadastro
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5" style={h}>
-            Conversor de mg/mL e Seringa U-100
+            Calculadora de Peptídeos e UI na Seringa U-100
           </h1>
           <Compartilhar
             contexto="tool"
-            titulo="Conversor de mg/mL e Seringa U-100"
+            titulo="Calculadora de Peptídeos e UI na Seringa U-100"
             caminho="/ferramentas/conversor-mg-ml-u100"
             local="tool_top"
             ferramenta="conversor_mg_ml_u100"
@@ -126,7 +164,7 @@ export default function ConversorMgMlU100Page() {
             className="mb-5"
           />
           <p className="text-gray-300 text-lg leading-relaxed">
-            Entenda concentração, volume e o que representam as marcações de uma seringa U-100. A ferramenta explica a conta; ela não determina quanto usar.
+            Converta os mg do rótulo em mg/mL, em mL e nas marcas da seringa U-100. A calculadora explica a conta; ela não determina quanto usar.
           </p>
         </div>
       </section>
@@ -139,6 +177,52 @@ export default function ConversorMgMlU100Page() {
 
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          {/*
+            O conteúdo existe por uma razão só: a calculadora responde com um
+            número, e quem chegou confuso precisa de uma frase para pendurar o
+            número. Cada H2 é uma pergunta que as pessoas digitam com essas
+            palavras — não é texto para encher página.
+          */}
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Como calcular a concentração do seu frasco</h2>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              Dois números do rótulo respondem tudo: quanta substância vem no frasco, em miligramas, e quanto líquido existe no frasco já pronto, em mililitros. A concentração é a divisão de um pelo outro. Um frasco de 60 mg em 2,5 mL tem 24 mg/mL — quer dizer que cada mL ali dentro carrega 24 mg.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              O erro mais comum nessa conta é usar o volume do diluente em vez do volume final da solução. O que vale é o volume que existe no frasco depois de pronto, porque é esse líquido que a seringa vai puxar. Se o rótulo não traz os dois números, não há concentração a calcular — e a resposta certa é perguntar a quem preparou, não estimar.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto é cada marca da seringa U-100</h2>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              Numa seringa U-100 de 1 mL, a marca 100 é 1,00 mL cheio. Então cada marquinha vale 0,01 mL: a marca 5 é 0,05 mL, a marca 10 é 0,10 mL, a marca 50 é meio mililitro. Essa parte não depende do que está dentro do frasco — é a régua física do dispositivo, e vale igual para qualquer líquido.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              O que muda com o frasco é quanta substância existe naquele volume. A 24 mg/mL, a marca 10 contém 2,4 mg. A 10 mg/mL, a mesma marca 10 contém 1 mg. Mesma marca, mesmo volume, quantidades diferentes — é por isso que copiar a marca que outra pessoa usa não faz sentido: o frasco dela pode não ter a mesma concentração que o seu.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>De mg para UI: por que não existe conversão fixa</h2>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              Essa é a pergunta que mais chega escrita como se tivesse resposta única, e não tem. UI significa unidade internacional, e é uma medida de atividade biológica, não de massa. Quantos miligramas equivalem a uma UI depende da substância: cada uma tem a própria equivalência, definida por padrão de referência, e não existe fator que sirva para todas.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              A confusão nasce porque a escala da seringa de insulina é numerada em unidades. Numa seringa dessas, os números só significam unidades quando o líquido é insulina U-100 — foi para isso que a escala nasceu. Com qualquer outro conteúdo, a marca 10 continua significando 0,10 mL de volume, e nada mais. Por isso esta página diz sempre “marca 10 da seringa”, nunca “10 UI”.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Serve para tirzepatida, semaglutida, retatrutida e outros injetáveis?</h2>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              A aritmética é a mesma para qualquer substância, porque concentração é sempre massa dividida por volume. Você pode escolher o nome do composto na calculadora se quiser ver o resultado nomeado, mas isso é só rótulo: nenhum valor é preenchido por você e a conta não muda de um item para outro da lista.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              O que a calculadora não sabe, e nunca vai saber, é o seu caso. Ela não tem opinião sobre quantidade, frequência ou adequação — essas decisões pertencem a quem prescreveu, e é com essa pessoa que qualquer divergência deve ser conferida antes do uso.
+            </p>
+          </div>
+
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Perguntas sobre mg, mL e a seringa</h2>
             <FAQ itens={faq} placement="conversor-mg-ml-u100" />
