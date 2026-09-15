@@ -456,7 +456,7 @@ export function classificarLead(s: SinaisLead, limites = { quenteMin: 5, mornoMi
 export interface LeadParaHoje { id: string; contactId: string; nome: string; status: string; createdAt: string; lastContactAt: string | null; firstResponseAt: string | null; lastReplyAt?: string | null; followUpsNoCiclo?: number; promessaFeita?: boolean; motivoDecidir?: string; emPaz?: boolean; adiadoAte?: string | null; nextAction: string | null; nextActionAt: string | null; stageCode: string | null; proposalSentAt: string | null; expectedValue: number | null; temperatura?: string; opportunityId?: string | null }
 export interface TarefaParaHoje { id: string; leadId: string | null; clientId: string | null; contactId: string | null; nome: string; titulo: string; dueAt: string; priority: string; tipo?: string }
 export interface TrialParaHoje { id: string; leadId: string | null; contactId: string; nome: string; scheduledAt: string; status: string }
-export interface ClienteParaHoje { id: string; contactId: string; nome: string; renewalDate: string | null; status: string; proximaCobrancaEm?: string | null; cobrancas?: number }
+export interface ClienteParaHoje { id: string; contactId: string; nome: string; renewalDate: string | null; status: string; proximaCobrancaEm?: string | null; cobrancas?: number; pacote?: { usadas: number; contratadas: number } | null }
 export interface SlaConfig { novo_lead_sem_contato_horas: number; proposta_sem_follow_up_dias: number; lead_parado_dias: number; negociacao_antiga_dias: number }
 export interface ItemHoje { prioridade: number; grupo: string; motivo: string; acao: string; contactId: string; leadId?: string | null; clientId?: string | null; taskId?: string | null; trialId?: string | null; opportunityId?: string | null; nome: string; valor?: number | null }
 
@@ -556,9 +556,24 @@ export function prioridadesHoje(
   // na lista todo dia, e três tentativas sem renovar viram uma decisão. Só
   // "Confirmar renovação" (ou o cancelamento) resolve de verdade — o que a
   // mensagem faz é marcar que a bola está com a pessoa.
-  for (const c of d.clientes) if (c.status === "ativo" && c.renewalDate) {
+  for (const c of d.clientes) if (c.status === "ativo" && (c.renewalDate || c.pacote)) {
     if (c.proximaCobrancaEm && new Date(c.proximaCobrancaEm) > agora) continue;
-    const dias = Math.ceil(diasEntre(agora, c.renewalDate));
+    /*
+     * Pacote flexível conta aula, não mês. Enquanto sobra aula o aluno não
+     * entra na lista, por mais que a data de renovação diga o contrário —
+     * ela é um chute num plano sem rotina fixa. Quando a última aula do
+     * pacote é dada, aí sim: o card aparece com a conta fechada.
+     */
+    if (c.pacote) {
+      if (c.pacote.usadas < c.pacote.contratadas) continue;
+      if ((c.cobrancas ?? 0) >= MAX_FOLLOW_UPS) {
+        itens.push({ prioridade: 4, grupo: "decidir", motivo: `${c.cobrancas} mensagens sobre o pacote novo sem resposta`, acao: "Decidir: renovar, pausar ou encerrar", contactId: c.contactId, clientId: c.id, nome: c.nome });
+        continue;
+      }
+      itens.push({ prioridade: 5, grupo: "renovacao_pacote", motivo: `Pacote terminou: ${c.pacote.usadas} de ${c.pacote.contratadas} aulas dadas`, acao: "Renovar pacote", contactId: c.contactId, clientId: c.id, nome: c.nome });
+      continue;
+    }
+    const dias = Math.ceil(diasEntre(agora, c.renewalDate!));
     const perto = dias < 0 || d.renovacaoDias.some((x) => dias <= x);
     if (!perto) continue;
     if ((c.cobrancas ?? 0) >= MAX_FOLLOW_UPS) {

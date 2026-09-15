@@ -15,6 +15,18 @@ export interface LeadVisao {
   cliente: ClienteRow | undefined; ciclo: Ciclo;
 }
 
+/**
+ * Pacote em aberto do cliente: quantas aulas foram contratadas e quantas já
+ * foram dadas. Nulo quando o contrato ativo não é pacote (plano mensal).
+ */
+export function pacoteDoCliente(b: Base, clientId: string): { usadas: number; contratadas: number } | null {
+  const contrato = b.contratos.filter((k) => k.client_id === clientId && k.status === "ativo").sort((a, z) => z.inicio.localeCompare(a.inicio))[0];
+  if (!contrato?.sessoes_contratadas) return null;
+  // Aulas do contrato. As antigas, importadas sem contrato, contam pelo cliente.
+  const aulas = b.aulas.filter((a) => a.client_id === clientId && (a.contract_id === contrato.id || (!a.contract_id && a.data >= contrato.inicio)));
+  return { usadas: aulas.length, contratadas: contrato.sessoes_contratadas };
+}
+
 /** Até quando o lead foi adiado pelo botão Adiar (a última nota com metadata.adiado e ate). */
 export function adiadoAte(atividades: Atividade[]): string | null {
   const a = atividades.filter((x) => x.metadata?.adiado === true && typeof x.metadata?.ate === "string").sort((x, y) => y.ocorreu_em.localeCompare(x.ocorreu_em))[0];
@@ -78,7 +90,7 @@ export function itensHoje(b: Base, cat: Catalogo, visoes: LeadVisao[], agora = n
       // Cobranças deste ciclo: mensagens sobre renovação desde a data que venceu.
       const desde = c.renewal_date ? `${c.renewal_date}T00:00:00.000Z` : c.first_purchase_at;
       const cobrancas = b.atividades.filter((a) => a.client_id === c.id && a.tipo === "message" && String((a.metadata as { grupo?: string })?.grupo ?? "").startsWith("renovacao") && a.ocorreu_em >= desde).length;
-      return { id: c.id, contactId: c.contact_id, nome: nome(c.contact_id), renewalDate: c.renewal_date, status: c.status, proximaCobrancaEm: proxima, cobrancas };
+      return { id: c.id, contactId: c.contact_id, nome: nome(c.contact_id), renewalDate: c.renewal_date, status: c.status, proximaCobrancaEm: proxima, cobrancas, pacote: pacoteDoCliente(b, c.id) };
     }),
     sla, renovacaoDias,
   }, agora);

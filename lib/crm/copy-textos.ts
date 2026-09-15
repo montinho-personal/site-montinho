@@ -39,7 +39,7 @@ export const SITUACOES = [
   "proposta_follow_up_1", "proposta_follow_up_2", "negociacao_parada",
   // Virou aluno
   "boas_vindas", "check_in_aluno", "pedido_indicacao",
-  "renovacao_proxima", "renovacao_vencida", "reativacao_pausa_recente", "reativacao_pausado", "reativacao_antiga",
+  "renovacao_proxima", "renovacao_vencida", "renovacao_pacote", "reativacao_pausa_recente", "reativacao_pausado", "reativacao_antiga",
 ] as const;
 export type Situacao = (typeof SITUACOES)[number];
 
@@ -100,6 +100,14 @@ export const TEXTOS: Record<Situacao, string> = {
   // Renovação e reativação: pergunta sobre o treino, não sobre pagamento. O horário reservado é fato, não escassez inventada.
   renovacao_proxima:
     "[[{saudacao}, ]]{nome}! Eu já quero desenhar o próximo ciclo com você[[ — seu plano fecha em {renova_em} dias]], mantendo seu horário na agenda.\n\nTem algo que você queira priorizar nas próximas semanas, ou seguimos no que tá dando certo?",
+  /*
+   * Fim do pacote flexível. A lista de datas não é enfeite: quem paga por
+   * pacote guarda a própria conta, e mandar a renovação sem mostrar as aulas
+   * dadas é pedir para a conversa virar "mas eu tinha mais aula, não tinha?".
+   * A conferência vem antes da venda, de propósito.
+   */
+  renovacao_pacote:
+    "[[{saudacao}, ]]{nome}! Fechamos o pacote[[ de {aulas} aulas]].\n\n[[Anotei estas datas: {datas}.\n\n]]Confere se bate com o seu controle, e me diz se você quer seguir com o próximo?",
   renovacao_vencida:
     "[[{saudacao}, ]]{nome}! Seu plano venceu[[ há {dias} dias]] e eu não quero fechar seu horário sem te perguntar antes. Nada de cobrança, é só pra eu organizar a agenda.\n\nVocê quer seguir no próximo ciclo ou prefere dar uma pausa agora?",
   /*
