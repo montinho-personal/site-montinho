@@ -1,4 +1,5 @@
 import { MOBILIDADE_NO_AR } from "@/lib/mobilidade/lancamento";
+import { CONVERSOR_NO_AR } from "@/lib/concentracao/revisao";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, blogPosts } from "@/lib/blog";
@@ -53,7 +54,11 @@ const itemListSchema = {
     ...(MOBILIDADE_NO_AR
       ? [{ "@type": "ListItem", position: 13, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
-    { "@type": "ListItem", position: MOBILIDADE_NO_AR ? 14 : 13, name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    // O conversor mg/mL entra depois da revisão técnica.
+    ...(CONVERSOR_NO_AR
+      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 14 : 13, name: "Conversor de mg/mL e Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
+      : []),
+    { "@type": "ListItem", position: (MOBILIDADE_NO_AR ? 14 : 13) + (CONVERSOR_NO_AR ? 1 : 0), name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -171,6 +176,16 @@ const FERRAMENTAS = [
       "Sua meta de calorias, sua rotina e os alimentos que você gosta viram uma sugestão de cardápio com porções caseiras, substituições, plano semanal e lista de compras — priorizando o que você já come.",
     quando: "Use depois de saber suas calorias. É a continuação natural da calculadora de déficit e da de macros.",
   },
+  // Só depois da revisão técnica por profissional habilitado (lib/concentracao/revisao.ts).
+  ...(CONVERSOR_NO_AR ? [{
+    href: "/ferramentas/conversor-mg-ml-u100",
+    nome: "Conversor de Concentração",
+    pergunta: "mg, mL e U-100 sem confusão",
+    tempo: "Educacional · sem cadastro",
+    texto:
+      "Calcule mg/mL e entenda quanto volume representam as marcações de uma seringa U-100. Explica a diferença entre quantidade, volume e concentração — e por que a marca 10 da seringa não é “10 UI” do que está no frasco.",
+    quando: "Use para entender o rótulo e a escala. A ferramenta não determina quanto usar: isso é do prescritor. Nada que você digita sai do navegador.",
+  }] : []),
   {
     href: "/alimentos",
     nome: "Tabela Nutricional de Alimentos",
