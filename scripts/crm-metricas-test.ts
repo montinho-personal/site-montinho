@@ -217,7 +217,13 @@ bloco("9. LEAD SCORING EXPLICÁVEL E TELA HOJE");
     ],
     tarefas: [{ id: "T1", leadId: "L2", clientId: null, contactId: "C2", nome: "Mariana", titulo: "Ligar", dueAt: "2026-09-03T09:00:00-03:00", priority: "alta" }, { id: "T2", leadId: "L16", clientId: null, contactId: "C16", nome: "TresMotivos", titulo: "Ligar", dueAt: "2026-09-02", priority: "alta" }, { id: "T3", leadId: "L17", clientId: null, contactId: "C17", nome: "Adiado", titulo: "Follow-up da proposta", dueAt: "2026-09-01", priority: "alta", tipo: "follow_up" }, { id: "T4", leadId: "L18", clientId: null, contactId: "C18", nome: "EmPaz", titulo: "Reativação", dueAt: "2026-09-01", priority: "baixa", tipo: "reativacao" }],
     trials: [{ id: "X1", leadId: "L3", contactId: "C3", nome: "Ricardo", scheduledAt: "2026-09-04T18:00:00-03:00", status: "agendada" }],
-    clientes: [{ id: "K1", contactId: "C9", nome: "Elias", renewalDate: "2026-09-10", status: "ativo" }],
+    clientes: [
+      { id: "K1", contactId: "C9", nome: "Elias", renewalDate: "2026-09-10", status: "ativo" },
+      // Já mandei a mensagem da renovação hoje: a tarefa de resposta está para o dia 07 → o card espera.
+      { id: "K2", contactId: "C20", nome: "JaCobrei", renewalDate: "2026-08-20", status: "ativo", proximaCobrancaEm: "2026-09-07T13:00:00Z", cobrancas: 1 },
+      // Três mensagens sobre a renovação sem resposta → decisão, não a quarta mensagem.
+      { id: "K3", contactId: "C21", nome: "TresCobrancas", renewalDate: "2026-08-20", status: "ativo", proximaCobrancaEm: null, cobrancas: 3 },
+    ],
     sla: { novo_lead_sem_contato_horas: 24, proposta_sem_follow_up_dias: 2, lead_parado_dias: 5, negociacao_antiga_dias: 7 },
     renovacaoDias: [30, 14, 7],
   }, agora);
@@ -226,6 +232,8 @@ bloco("9. LEAD SCORING EXPLICÁVEL E TELA HOJE");
   ok("Mariana: follow-up atrasado + proposta sem follow-up, um card só", por.Mariana?.prioridade === 2 && /atrasado/.test(por.Mariana.motivo) && /Proposta/.test(por.Mariana.motivo), por.Mariana?.motivo);
   ok("Ricardo: pós-experimental sem proposta, ação 'Enviar proposta'", por.Ricardo?.acao === "Enviar proposta", por.Ricardo?.acao);
   ok("Elias: renovação em 6 dias entra", /Renovação em 6 dias/.test(por.Elias?.motivo ?? ""), por.Elias?.motivo);
+  ok("JaCobrei: mensagem já enviada, esperando resposta até 07/09 → sai da lista", !por.JaCobrei, JSON.stringify(por.JaCobrei));
+  ok("TresCobrancas: 3 mensagens sobre a renovação → 'decidir', sem quarta mensagem", por.TresCobrancas?.grupo === "decidir" && /Decidir/.test(por.TresCobrancas.acao), JSON.stringify(por.TresCobrancas));
   ok("lead ganho não aparece", !por.Ganho);
   ok("lead 'aberto' parado na etapa ganho não aparece", !por.JaComprou);
   ok("lead 'aberto' parado na etapa perdido não aparece", !por.JaPerdeu);

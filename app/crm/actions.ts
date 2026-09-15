@@ -744,6 +744,20 @@ export async function contatarPeloWhatsApp(fd: FormData) {
     await sb.from("crm_tasks").update({ completed_at: agora }).eq("id", taskId);
   }
 
+  /*
+   * Renovação: o card nasce da data de renovação do cliente, que só muda
+   * quando a renovação é confirmada de verdade. Sem isto, mandar a mensagem
+   * não tirava ninguém da lista — foi o que aconteceu com dois alunos em
+   * 15/09/2026, cobrados duas vezes no mesmo dia. Mandar não renova, mas
+   * muda de quem é a vez: a tarefa de renovação sai de hoje e volta em três
+   * dias, e o card some até lá.
+   */
+  if (clientId && grupo?.startsWith("renovacao")) {
+    await sb.from("crm_tasks").update({ completed_at: agora }).eq("client_id", clientId).eq("tipo", "renovacao").is("completed_at", null);
+    const volta = addDias(new Date(), 3); volta.setHours(10, 0, 0, 0);
+    await tarefa(sb, u.id, { contact_id: contactId, client_id: clientId, tipo: "renovacao", titulo: "Resposta sobre a renovação", due_at: volta.toISOString(), priority: "media" });
+  }
+
   if (leadId) {
     const { data: l } = await sb.from("crm_leads").select("first_response_at").eq("id", leadId).single();
     await erroSe(await sb.from("crm_leads").update({
