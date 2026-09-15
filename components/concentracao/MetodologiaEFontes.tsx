@@ -1,7 +1,7 @@
 "use client";
 
 import { trackEvent } from "@/lib/analytics";
-import { FONTES } from "@/lib/concentracao/fontes";
+import { FONTES, linkDaFonte } from "@/lib/concentracao/fontes";
 
 /**
  * "Como fazemos os cálculos" e "Fontes", com medição de abertura.
@@ -41,14 +41,22 @@ export default function MetodologiaEFontes({ placement }: { placement: string })
 
       <div>
         <h3 className="text-white font-bold text-xl mb-3" style={h}>Fontes</h3>
-        <p className="text-gray-400 text-sm leading-relaxed mb-4">Cada fonte sustenta uma afirmação específica da página. Só agência reguladora, ISMP e norma técnica: nada de fórum, rede social ou vendedor.</p>
+        <p className="text-gray-400 text-sm leading-relaxed mb-4">
+          Cada fonte sustenta uma afirmação específica da página. Só agência reguladora, ISMP e norma técnica: nada de fórum, rede social ou vendedor. Quando o endereço exato do documento ainda não foi conferido, o link leva ao site do órgão e o documento fica citado pelo título — link quebrado numa página de saúde é pior do que citação sem link.
+        </p>
         <ol className="space-y-4">
           {FONTES.map((f, i) => (
             <li key={f.id} className="text-sm leading-relaxed">
               <p className="text-gray-200">
                 <span className="text-gray-500 mr-2">{i + 1}.</span>
-                <a href={f.url} target="_blank" rel="noopener noreferrer" className={ln} onClick={() => trackEvent("source_open", { placement, fonte: f.id })}>{f.titulo}</a>
-                <span className="text-gray-400"> — {f.orgao}, {f.ano}.</span>
+                {f.urlConferida ? (
+                  <a href={f.url} target="_blank" rel="noopener noreferrer" className={ln} onClick={() => trackEvent("source_open", { placement, fonte: f.id })}>{f.titulo}</a>
+                ) : (
+                  <span className="text-gray-200">{f.titulo}</span>
+                )}
+                <span className="text-gray-400"> — </span>
+                <a href={linkDaFonte(f)} target="_blank" rel="noopener noreferrer" className={ln} onClick={() => trackEvent("source_open", { placement, fonte: f.id })}>{f.orgao}</a>
+                <span className="text-gray-400">, {f.ano}.</span>
               </p>
               <p className="text-gray-400 mt-1">Sustenta: {f.sustenta}</p>
             </li>

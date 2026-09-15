@@ -1,26 +1,36 @@
 /**
- * A chave de publicação do Conversor mg/mL e Seringa U-100.
+ * Quem revisou o Conversor mg/mL e Seringa U-100, e o que isso significa.
  *
- * Esta ferramenta fala de injetável. A regra que o próprio briefing
- * estabeleceu é que um profissional habilitado, com experiência em
- * segurança medicamentosa, revise terminologia, fórmulas, descrição da
- * seringa, alertas e conteúdo ANTES de a página ser publicada — e que a
- * data dessa revisão fique registrada na página.
+ * A página fala de injetável. Duas revisões diferentes podem existir aqui, e
+ * elas NÃO são a mesma coisa — misturar as duas na mesma frase daria ao
+ * leitor a impressão de um aval clínico que talvez não exista:
  *
- * Enquanto `revisadoEm` for null:
- *   - a página abre pela URL (para ser revisada), mas com noindex/nofollow;
- *   - ela fica fora do sitemap, do card em /ferramentas e do ItemList;
- *   - um aviso no topo diz que está em revisão técnica.
+ *   REVISAO_AUTOR    — o dono do site leu e aprovou o conteúdo. É o que
+ *                      libera a publicação: a página é dele.
+ *   REVISAO_TECNICA  — um profissional habilitado em segurança medicamentosa
+ *                      (farmacêutico, médico) conferiu terminologia,
+ *                      fórmulas, descrição da seringa e alertas. Enquanto for
+ *                      null, a página DIZ que não houve, em vez de calar.
  *
- * Para publicar: preencher `revisadoEm` (AAAA-MM-DD) e `revisor` (nome e
- * registro profissional, como deve aparecer na página). Nada mais.
+ * A publicação depende só da primeira. A segunda, quando vier, acrescenta
+ * uma linha de crédito — nunca some com a ressalva por acidente.
+ */
+export const REVISAO_AUTOR: { revisadoEm: string | null; por: string | null } = {
+  revisadoEm: "2026-09-15",
+  por: "Montinho Personal Trainer",
+};
+
+/**
+ * Revisão por profissional habilitado em segurança medicamentosa.
+ * Preencher com nome e registro profissional como devem aparecer na página.
  */
 export const REVISAO_TECNICA: { revisadoEm: string | null; revisor: string | null } = {
   revisadoEm: null,
   revisor: null,
 };
 
-export const CONVERSOR_NO_AR = REVISAO_TECNICA.revisadoEm !== null && REVISAO_TECNICA.revisor !== null;
+/** A página entra no ar quando o dono do site aprova o conteúdo. */
+export const CONVERSOR_NO_AR = REVISAO_AUTOR.revisadoEm !== null && REVISAO_AUTOR.por !== null;
 
-/** Data da última revisão do conteúdo pelo autor (não é a revisão técnica). */
+/** Data da última atualização do conteúdo. */
 export const CONTEUDO_ATUALIZADO_EM = "2026-09-15";

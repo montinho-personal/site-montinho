@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
-import { CONTEUDO_ATUALIZADO_EM, CONVERSOR_NO_AR, REVISAO_TECNICA } from "@/lib/concentracao/revisao";
+import { CONTEUDO_ATUALIZADO_EM, CONVERSOR_NO_AR, REVISAO_AUTOR, REVISAO_TECNICA } from "@/lib/concentracao/revisao";
 import ConversorConcentracao from "@/components/concentracao/ConversorConcentracao";
 import MetodologiaEFontes from "@/components/concentracao/MetodologiaEFontes";
 import Compartilhar from "@/components/share/Compartilhar";
@@ -169,10 +169,19 @@ export default function ConversorMgMlU100Page() {
           <div className="border border-white/15 p-5 sm:p-6">
             <h2 className="text-xl font-bold text-white mb-3" style={h}>Revisão técnica e limitações</h2>
             <p className="text-gray-300 leading-relaxed mb-3">
-              Conteúdo escrito por Montinho Personal Trainer e atualizado em {dataBr(CONTEUDO_ATUALIZADO_EM)}.{" "}
+              {REVISAO_AUTOR.revisadoEm && REVISAO_AUTOR.por
+                ? `Conteúdo escrito e revisado por ${REVISAO_AUTOR.por} em ${dataBr(REVISAO_AUTOR.revisadoEm)}.`
+                : `Conteúdo escrito por Montinho Personal Trainer, atualizado em ${dataBr(CONTEUDO_ATUALIZADO_EM)}.`}
+            </p>
+            {/*
+              A ressalva fica no HTML enquanto não houver revisão clínica. Personal
+              trainer não é profissional de saúde habilitado a validar terminologia
+              de medicação — dizer isso é o que separa transparência de aval falso.
+            */}
+            <p className="text-gray-300 leading-relaxed mb-3">
               {REVISAO_TECNICA.revisadoEm && REVISAO_TECNICA.revisor
                 ? `Terminologia, fórmulas, descrição da seringa e alertas revisados por ${REVISAO_TECNICA.revisor} em ${dataBr(REVISAO_TECNICA.revisadoEm)}.`
-                : "A revisão por profissional habilitado em segurança medicamentosa ainda não foi registrada; até lá, a página fica fora do índice de busca."}
+                : "Esta página ainda não passou por revisão de farmacêutico ou médico. As três fórmulas são aritmética verificável, e você pode conferir cada uma na seção de metodologia — mas, diante de qualquer dúvida sobre o seu caso, quem responde é o profissional que prescreveu ou preparou o produto."}
             </p>
             <p className="text-gray-300 leading-relaxed">
               A visualização representa a escala nominal de uma seringa U-100 de 1 mL e não substitui a inspeção das marcações impressas no dispositivo real. Seringas de 0,3 mL e 0,5 mL, e seringas com meia marca, têm graduações diferentes. Esta é uma ferramenta educacional de concentração e volume; não é aconselhamento médico nem farmacêutico.

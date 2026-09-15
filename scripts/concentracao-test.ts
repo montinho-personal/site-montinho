@@ -9,6 +9,8 @@
  * chamar marca de "UI do produto" nem quantidade contida de "dose".
  */
 import { readFileSync } from "node:fs";
+import { CONVERSOR_NO_AR, REVISAO_AUTOR, REVISAO_TECNICA } from "../lib/concentracao/revisao";
+import { FONTES, linkDaFonte } from "../lib/concentracao/fontes";
 import {
   calcularConcentracao, conferirInstrucao, formatarConcentracao, formatarMg, formatarMl, lerMarca, lerNumero,
   marcaU100ParaMl, quantidadeNoVolume, tabelaU100, validarMarca, validarMg, validarMl, MARCAS_TABELA,
@@ -123,6 +125,33 @@ bloco("8. AS BARREIRAS ESTÃO NO CÓDIGO, NÃO SÓ NA INTENÇÃO");
     ok("a trava de insulina existe", /não calcula doses de insulina/i.test(semC));
     ok("nenhum evento carrega valor: trackEvent sem mg/ml/marca nos params", !/trackEvent\([^)]*\b(mg|ml|marca|concentracao)\s*:/i.test(semC));
   }
+}
+
+bloco("9. FONTES: NENHUM LINK PROMETE O QUE NÃO FOI CONFERIDO");
+{
+  ok("há fontes para auditar", FONTES.length >= 4);
+  ok("toda fonte diz o que sustenta", FONTES.every((f) => f.sustenta.length > 40));
+  ok("nenhuma fonte é fórum, rede social ou vendedor", FONTES.every((f) => !/reddit|tiktok|instagram|facebook|forum|peptide|research ?chem/i.test(`${f.orgao} ${f.url} ${f.urlOrgao}`)));
+  ok("o link oferecido é o do documento só quando conferido", FONTES.every((f) => linkDaFonte(f) === (f.urlConferida ? f.url : f.urlOrgao)));
+  ok("todo site de órgão é https", FONTES.every((f) => f.urlOrgao.startsWith("https://")));
+
+  const comps = readFileSync("components/concentracao/MetodologiaEFontes.tsx", "utf8");
+  ok("a lista de fontes nunca usa f.url direto (só via urlConferida ou linkDaFonte)",
+    !/href=\{f\.url\}/.test(comps.replace(/f\.urlConferida \? \(\s*<a href=\{f\.url\}/, "")));
+  ok("a página explica por que o link pode ir ao órgão", /link quebrado/i.test(comps));
+}
+
+bloco("10. A PÁGINA NÃO INVENTA REVISÃO QUE NÃO EXISTE");
+{
+  const pagina = readFileSync("app/ferramentas/conversor-mg-ml-u100/page.tsx", "utf8");
+  ok("publicação depende da revisão do autor", CONVERSOR_NO_AR === (REVISAO_AUTOR.revisadoEm !== null && REVISAO_AUTOR.por !== null));
+  ok("a publicação não depende da revisão técnica (são chaves independentes)",
+    !/CONVERSOR_NO_AR[^;]*REVISAO_TECNICA/.test(readFileSync("lib/concentracao/revisao.ts", "utf8")));
+  ok("sem revisão técnica, a página diz isso em texto",
+    REVISAO_TECNICA.revisadoEm !== null || /ainda não passou por revisão de farmacêutico ou médico/i.test(pagina));
+  ok("a ressalva não some quando a página entra no ar (não está dentro do gate de publicação)",
+    !/CONVERSOR_NO_AR[\s\S]{0,400}ainda não passou por revisão/.test(pagina));
+  ok("a página continua dizendo que não é aconselhamento médico", /não é aconselhamento médico nem farmacêutico/i.test(pagina));
 }
 
 console.log("\n" + "=".repeat(64) + `\n${falhas === 0 ? "TODOS OS TESTES PASSARAM" : `${falhas} FALHA(S)`}\n` + "=".repeat(64));
