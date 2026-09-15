@@ -124,95 +124,110 @@ export default function ConversorConcentracao({ placement }: { placement: string
         Entenda sua Concentração e a Escala da Seringa
       </h2>
       <p className="text-gray-300 leading-relaxed mb-6 max-w-2xl">
-        Informe a quantidade total declarada e o volume final para entender a concentração e quanto representa cada marca de uma seringa U-100.
+        Diga quanto o rótulo declara e quanto líquido tem no frasco. A conta aparece na hora — e depois a ferramenta explica o que cada marca da seringa U-100 significa.
       </p>
 
-      {/* As três palavras, antes de qualquer número. */}
-      <dl className="grid grid-cols-3 gap-2 sm:gap-3 mb-7">
-        {[["mg", "Quanto da substância existe."], ["mL", "Quanto volume de líquido existe."], ["mg/mL", "Quanto da substância existe em cada mL."]].map(([t, d]) => (
-          <div key={t} className="border border-white/15 p-3 sm:p-4">
-            <dt className="text-white font-bold text-xl sm:text-2xl leading-none mb-1.5" style={h}>{t}</dt>
-            <dd className="text-gray-400 text-xs sm:text-sm leading-snug">{d}</dd>
-          </div>
-        ))}
-      </dl>
-
-      {/* Modo */}
-      <div role="radiogroup" aria-label="Como você quer começar" className="flex flex-wrap gap-2 mb-5">
-        {([["calcular", "Calcular a partir de mg e mL"], ["concentracao", "Já sei a concentração"]] as const).map(([id, rot]) => (
-          <button key={id} type="button" role="radio" aria-checked={modo === id} onClick={() => setModo(id)}
-            className={`px-4 py-2.5 text-sm font-medium border transition-colors min-h-[44px] ${modo === id ? "border-[#BA9E50] text-white bg-[#BA9E50]/10" : "border-white/20 text-gray-300 hover:border-white/40"}`}>
-            {rot}
-          </button>
-        ))}
-      </div>
-
-      {/* Entradas */}
+      {/*
+        A entrada vem primeiro. Quem abre esta página já tem o frasco na mão e
+        quer a conta: fazer a pessoa ler três definições antes de digitar
+        qualquer coisa é cobrar aula de quem veio buscar resposta. A explicação
+        das três palavras vem logo depois do resultado, quando ela já tem um
+        número concreto para pendurar o conceito.
+      */}
       {modo === "calcular" ? (
-        <div className="grid gap-4 sm:grid-cols-2 mb-6">
+        <div className="grid gap-4 sm:grid-cols-2">
           <div>
-            <label htmlFor={`${uid}-mg`} className="block text-gray-300 text-sm font-medium mb-2">Quantidade total declarada</label>
+            <label htmlFor={`${uid}-mg`} className="block text-gray-300 text-sm font-medium mb-2">Quanto o rótulo declara</label>
             <div className="flex items-center gap-3">
               <input id={`${uid}-mg`} type="text" inputMode="decimal" autoComplete="off" placeholder="60" value={mgTxt} onChange={(e) => setMgTxt(e.target.value)} className={inputCls} aria-describedby={`${uid}-mg-ajuda`} />
               <span className="text-gray-300 text-lg">mg</span>
             </div>
             <p id={`${uid}-mg-ajuda`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
-              {vMg.erro && vMg.erro !== "vazio" ? MENSAGEM_ERRO[vMg.erro] : "O total de substância que o rótulo declara no frasco."}
+              {vMg.erro && vMg.erro !== "vazio" ? MENSAGEM_ERRO[vMg.erro] : "O total de substância que vem no frasco."}
             </p>
           </div>
           <div>
-            <label htmlFor={`${uid}-ml`} className="block text-gray-300 text-sm font-medium mb-2">Volume final da solução</label>
+            <label htmlFor={`${uid}-ml`} className="block text-gray-300 text-sm font-medium mb-2">Quanto líquido tem no frasco</label>
             <div className="flex items-center gap-3">
               <input id={`${uid}-ml`} type="text" inputMode="decimal" autoComplete="off" placeholder="2,5" value={mlTxt} onChange={(e) => setMlTxt(e.target.value)} className={inputCls} aria-describedby={`${uid}-ml-ajuda`} />
               <span className="text-gray-300 text-lg">mL</span>
             </div>
             <p id={`${uid}-ml-ajuda`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
-              {vMl.erro && vMl.erro !== "vazio" ? MENSAGEM_ERRO[vMl.erro] : "Use o volume final declarado ou preparado. Não presuma que ele é igual ao volume de diluente adicionado se isso não estiver confirmado."}
+              {vMl.erro && vMl.erro !== "vazio" ? MENSAGEM_ERRO[vMl.erro] : "O volume final da solução, já pronta."}
             </p>
           </div>
         </div>
       ) : (
-        <div className="mb-6 max-w-sm">
-          <label htmlFor={`${uid}-conc`} className="block text-gray-300 text-sm font-medium mb-2">Concentração declarada</label>
+        <div className="max-w-sm">
+          <label htmlFor={`${uid}-conc`} className="block text-gray-300 text-sm font-medium mb-2">Concentração do frasco</label>
           <div className="flex items-center gap-3">
             <input id={`${uid}-conc`} type="text" inputMode="decimal" autoComplete="off" placeholder="24" value={concTxt} onChange={(e) => setConcTxt(e.target.value)} className={inputCls} aria-describedby={`${uid}-conc-ajuda`} />
             <span className="text-gray-300 text-lg whitespace-nowrap">mg/mL</span>
           </div>
           <p id={`${uid}-conc-ajuda`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
-            {vConc.erro && vConc.erro !== "vazio" ? MENSAGEM_ERRO[vConc.erro] : "Como aparece no rótulo ou na orientação que você recebeu."}
+            {vConc.erro && vConc.erro !== "vazio" ? MENSAGEM_ERRO[vConc.erro] : "Como está escrito no rótulo."}
           </p>
         </div>
       )}
 
-      {/* Resultado 1: concentração */}
-      <div aria-live="polite">
+      {/*
+        O segundo caminho é um link discreto, não uma escolha na porta de
+        entrada. Perguntar "você quer calcular ou já sabe?" antes de mostrar
+        qualquer campo obriga a pessoa a decidir algo que ela ainda não
+        entendeu — e foi exatamente o que confundiu na primeira versão.
+      */}
+      <button
+        type="button"
+        onClick={() => setModo(modo === "calcular" ? "concentracao" : "calcular")}
+        className="mt-1 text-gray-400 text-sm underline underline-offset-4 decoration-1 hover:text-white transition-colors min-h-[44px]"
+        style={{ textDecorationColor: OURO }}
+      >
+        {modo === "calcular" ? "O rótulo já diz a concentração em mg/mL" : "Prefiro calcular pela quantidade e pelo volume"}
+      </button>
+
+      {/* O resultado, na hora. */}
+      <div aria-live="polite" className="mt-5">
         {concentracao == null ? (
-          <p className="text-gray-400 text-sm leading-relaxed border-l-2 pl-3 mb-2" style={{ borderColor: OURO }}>
-            Se o rótulo não deixa clara a quantidade total e o volume final, não é possível determinar a concentração de forma confiável — e a ferramenta não adivinha.
+          <p className="text-gray-400 text-sm leading-relaxed border-l-2 pl-3" style={{ borderColor: OURO }}>
+            Preencha os dois campos para ver a concentração. Se o rótulo não diz a quantidade total e o volume, não dá para saber a concentração — e a ferramenta não chuta.
           </p>
         ) : (
-          <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.06] p-5 sm:p-6 mb-6">
+          <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.06] p-5 sm:p-6">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-2" style={{ color: OURO }}>Concentração</p>
             <p className="text-white font-bold text-4xl sm:text-5xl leading-none mb-3" style={h}>
               {formatarConcentracao(concentracao)}<span className="text-xl font-normal text-gray-300"> mg/mL</span>
             </p>
             <p className="text-gray-300 leading-relaxed">
-              Isso significa que cada 1 mL dessa solução contém matematicamente {formatarConcentracao(concentracao)} mg da substância declarada.
+              Quer dizer: cada 1 mL desse frasco tem {formatarConcentracao(concentracao)} mg da substância.
             </p>
             {modo === "calcular" && vMg.valor != null && vMl.valor != null && (
               <details className="mt-4 group">
                 <summary className="cursor-pointer list-none text-white text-sm font-semibold underline underline-offset-4 decoration-1 min-h-[44px] flex items-center" style={{ textDecorationColor: OURO }}>
-                  Como chegamos nesse resultado?
+                  De onde saiu esse número?
                 </summary>
-                <div className="mt-3 border border-white/10 bg-black/40 p-4 font-mono text-sm text-gray-200 leading-relaxed">
-                  concentração (mg/mL) = quantidade total (mg) ÷ volume final (mL)<br />
-                  {formatarMg(vMg.valor)} mg ÷ {formatarMl(vMl.valor)} mL = <strong className="text-white">{formatarConcentracao(concentracao)} mg/mL</strong>
+                <div className="mt-3 border border-white/10 bg-black/40 p-4 text-sm text-gray-200 leading-relaxed">
+                  Divide a quantidade pelo volume:<br />
+                  <strong className="text-white">{formatarMg(vMg.valor)} mg ÷ {formatarMl(vMl.valor)} mL = {formatarConcentracao(concentracao)} mg/mL</strong>
                 </div>
               </details>
             )}
           </div>
         )}
       </div>
+
+      {/* Agora sim a explicação: com o número na tela, o conceito gruda. */}
+      <dl className="grid grid-cols-3 gap-2 sm:gap-3 mt-6 mb-7">
+        {[
+          ["mg", "É a substância. Quanto dela tem no frasco."],
+          ["mL", "É o líquido. Quanto dele tem no frasco."],
+          ["mg/mL", "Junta os dois: quanta substância tem em cada mL."],
+        ].map(([t, d]) => (
+          <div key={t} className="border border-white/15 p-3 sm:p-4">
+            <dt className="text-white font-bold text-xl sm:text-2xl leading-none mb-1.5" style={h}>{t}</dt>
+            <dd className="text-gray-400 text-xs sm:text-sm leading-snug">{d}</dd>
+          </div>
+        ))}
+      </dl>
 
       {concentracao != null && (
         <>
@@ -244,7 +259,7 @@ export default function ConversorConcentracao({ placement }: { placement: string
                   </button>
                 ))}
               </div>
-              {insulina === null && <p className="text-gray-400 text-xs leading-relaxed mt-2">Responda para continuar. A escala U-100 foi feita para insulina, e insulina é tratada de outro jeito.</p>}
+              {insulina === null && <p className="text-gray-400 text-xs leading-relaxed mt-2">Responda para continuar. Essa seringa foi feita para insulina, e insulina tem regra própria.</p>}
             </div>
           </div>
 
@@ -265,16 +280,16 @@ export default function ConversorConcentracao({ placement }: { placement: string
               {/* U-100 em destaque */}
               <div className="border border-white/15 p-5 sm:p-6 mb-6">
                 <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-2" style={{ color: OURO }}>Em uma seringa U-100</p>
-                <p className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-3" style={h}>100 na escala = 1,00 mL</p>
+                <p className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-3" style={h}>A marca 100 é 1 mL cheio</p>
                 <p className="text-gray-300 leading-relaxed mb-3">
-                  Portanto cada marca é 0,01 mL: a marca 1 é 0,01 mL, a 10 é 0,10 mL, a 50 é 0,50 mL. Para substâncias que não são insulina, esses números devem ser entendidos aqui apenas como marcações da escala U-100 correspondentes a volumes.
+                  Então cada marquinha vale 0,01 mL. A marca 10 é 0,10 mL. A marca 50 é 0,50 mL. Se o líquido não é insulina, esses números são só medida de volume: é quanto líquido cabe ali, nada além disso.
                 </p>
                 <details className="group" onToggle={(e) => { if ((e.currentTarget as HTMLDetailsElement).open) trackEvent("u100_education_open", { placement }); }}>
                   <summary className="cursor-pointer list-none text-white text-sm font-semibold underline underline-offset-4 decoration-1 min-h-[44px] flex items-center" style={{ textDecorationColor: OURO }}>
-                    Então a marca 10 não é “10 UI” do que está no frasco?
+                    A marca 10 não é “10 UI” do que está no meu frasco?
                   </summary>
                   <p className="text-gray-300 leading-relaxed mt-3">
-                    Não. A escala U-100 foi criada para insulina U-100, em que 100 unidades ocupam 1 mL. Quando outro líquido é medido nesse dispositivo, a marca 10 continua correspondendo a 0,10 mL fisicamente, mas isso não significa que o outro composto possua 10 unidades internacionais. UI farmacológica não tem conversão universal para mg: depende da substância. Por isso esta ferramenta fala em “marca 10 da seringa U-100”, nunca em “10 UI”.
+                    Não. Essa seringa foi feita para insulina, onde 100 unidades ocupam 1 mL. Com outro líquido dentro, a marca 10 continua sendo 0,10 mL de volume, mas isso não significa que o outro composto possua 10 unidades internacionais. UI não tem conversão fixa para mg: muda de substância para substância. Por isso aqui a gente diz “marca 10 da seringa”, e nunca “10 UI”.
                   </p>
                 </details>
               </div>
@@ -314,24 +329,24 @@ export default function ConversorConcentracao({ placement }: { placement: string
                       </div>
                     </div>
                     <p className="text-gray-300 text-sm leading-relaxed mt-4 mb-3">
-                      {formatarConcentracao(concentracao)} mg/mL × {formatarMl(leitura.volumeMl)} mL = {formatarMg(leitura.mg)} mg. Isso descreve o conteúdo desse volume.
+                      A conta: {formatarConcentracao(concentracao)} mg em cada mL × {formatarMl(leitura.volumeMl)} mL = {formatarMg(leitura.mg)} mg. É o que tem dentro desse volume.
                     </p>
-                    <p className="text-white text-sm leading-relaxed font-semibold">Este é um cálculo de concentração e volume, não uma recomendação de quanto utilizar.</p>
+                    <p className="text-white text-sm leading-relaxed font-semibold">Isso é só a medida do que existe nesse volume. Não é uma recomendação de quanto usar.</p>
                   </div>
                 )}
               </div>
 
               {/* As três camadas, com os números da pessoa */}
               <div className="border border-white/15 p-5 sm:p-6 mb-6">
-                <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: OURO }}>A lógica inteira, sem matemática</p>
+                <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: OURO }}>O caminho todo, passo a passo</p>
                 <ol className="grid gap-2 sm:grid-cols-2">
                   {[
-                    modo === "calcular" && vMg.valor != null ? [`${formatarMg(vMg.valor)} mg`, "quantidade total"] : null,
-                    modo === "calcular" && vMl.valor != null ? [`${formatarMl(vMl.valor)} mL`, "volume final"] : null,
-                    [`${formatarConcentracao(concentracao)} mg/mL`, "concentração"],
-                    leitura ? [`Marca ${leitura.marca} U-100`, "a marca escolhida"] : ["Marca ?", "escolha acima"],
-                    leitura ? [`${formatarMl(leitura.volumeMl)} mL`, "volume dessa marca"] : null,
-                    leitura ? [`${formatarMg(leitura.mg)} mg`, "contidos nesse volume"] : null,
+                    modo === "calcular" && vMg.valor != null ? [`${formatarMg(vMg.valor)} mg`, "de substância no frasco"] : null,
+                    modo === "calcular" && vMl.valor != null ? [`${formatarMl(vMl.valor)} mL`, "de líquido no frasco"] : null,
+                    [`${formatarConcentracao(concentracao)} mg/mL`, "logo, tem isso em cada mL"],
+                    leitura ? [`Marca ${leitura.marca}`, "a marca que você escolheu"] : ["Marca ?", "escolha uma acima"],
+                    leitura ? [`${formatarMl(leitura.volumeMl)} mL`, "é o volume dessa marca"] : null,
+                    leitura ? [`${formatarMg(leitura.mg)} mg`, "é o que tem nesse volume"] : null,
                   ].filter((x): x is [string, string] => !!x).map(([v, r], i, arr) => (
                     <li key={r} className="flex items-baseline gap-3">
                       <span className="text-gray-500 text-sm font-semibold w-5 shrink-0">{i + 1}.</span>
@@ -343,7 +358,7 @@ export default function ConversorConcentracao({ placement }: { placement: string
 
               {/* Tabela educacional */}
               <div className="mb-6">
-                <p className="text-white font-semibold mb-2">Outras marcas, nessa concentração</p>
+                <p className="text-white font-semibold mb-2">A régua inteira desse frasco</p>
                 <div className="overflow-x-auto">
                   <table className="w-full text-sm">
                     <thead><tr className="text-left text-gray-400 border-b border-white/15"><th className="py-2 pr-3 font-medium">Marca U-100</th><th className="py-2 pr-3 font-medium">Volume</th><th className="py-2 font-medium">Quantidade contida nessa concentração</th></tr></thead>
@@ -354,16 +369,16 @@ export default function ConversorConcentracao({ placement }: { placement: string
                     </tbody>
                   </table>
                 </div>
-                <p className="text-gray-400 text-xs leading-relaxed mt-2">Nenhuma linha é sugestão. É a régua inteira, para você ver como volume e quantidade andam juntos.</p>
+                <p className="text-gray-400 text-xs leading-relaxed mt-2">Nenhuma linha é sugestão. Está tudo aqui só para você ver que, quanto mais volume, mais substância — sempre na mesma proporção.</p>
               </div>
 
               {/* Cuidado com um zero */}
               <div className="border border-white/25 bg-black/50 p-5 mb-6">
                 <p className="text-white font-bold text-lg mb-2" style={h}>Cuidado com um zero</p>
                 <p className="text-gray-300 leading-relaxed mb-3">
-                  A marca 5 é 0,05 mL. A marca 50 é 0,50 mL. Um zero a mais é dez vezes mais volume, e dez vezes mais substância. Nessa concentração: marca 5 contém {formatarMg(lerMarca(concentracao, 5)!.mg)} mg; marca 50 contém {formatarMg(lerMarca(concentracao, 50)!.mg)} mg.
+                  Marca 5 é 0,05 mL. Marca 50 é 0,50 mL. Um zero a mais e o volume fica dez vezes maior. Nesse seu frasco: na marca 5 tem {formatarMg(lerMarca(concentracao, 5)!.mg)} mg; na marca 50 tem {formatarMg(lerMarca(concentracao, 50)!.mg)} mg.
                 </p>
-                <p className="text-gray-400 text-sm leading-relaxed">Confusões desse tipo estão entre os erros de medição documentados pela FDA em injetáveis manipulados. Não é para ter medo: é para ler a marca duas vezes.</p>
+                <p className="text-gray-400 text-sm leading-relaxed">A FDA já registrou erros assim em injetáveis manipulados. Não é para ter medo: é para conferir a marca duas vezes antes de usar.</p>
               </div>
 
               {/* Conferir uma instrução */}
