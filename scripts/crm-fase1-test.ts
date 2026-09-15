@@ -4,6 +4,7 @@
  */
 import { cicloDeFollowUps, ehFollowUp, esgotouFollowUps, motivoDecidir } from "../lib/crm/ciclo";
 import { dataDoCheckIn, tarefasDeOnboarding } from "../lib/crm/onboarding";
+import { etapaProtegida, podeDesfazerPerdido } from "../lib/crm/perda";
 
 let falhas = 0;
 const ok = (nome: string, cond: boolean, detalhe = "") => {
@@ -67,6 +68,17 @@ bloco("T3. ONBOARDING D+3 / D+10 / D+21");
   ok("D+21 de 13/09 cai em 04/10", ts[2].due_at.startsWith("2026-10-04T13:00"), ts[2].due_at);
   ok("títulos distinguem os três momentos", new Set(ts.map((t) => t.titulo)).size === 3 && ts.every((t) => /Check-in D\+\d+/.test(t.titulo)));
   ok("virada de mês: D+21 de 25/09 = 16/10", dataDoCheckIn("2026-09-25", 21).startsWith("2026-10-16"));
+}
+
+bloco("T6. PERDIDO — DESFAZER E KANBAN");
+{
+  const agora = new Date("2026-09-15T12:00:00Z");
+  ok("perdido há 2h → pode desfazer", podeDesfazerPerdido("2026-09-15T10:00:00Z", agora));
+  ok("perdido há 23h59 → pode desfazer", podeDesfazerPerdido("2026-09-14T12:01:00Z", agora));
+  ok("perdido há 25h → não (vai para Reativar)", !podeDesfazerPerdido("2026-09-14T11:00:00Z", agora));
+  ok("sem lost_at → não", !podeDesfazerPerdido(null, agora));
+  ok("Kanban: 'perdido' e 'ganho' são etapas protegidas", etapaProtegida("perdido") && etapaProtegida("ganho"));
+  ok("Kanban: 'contato' não é", !etapaProtegida("contato") && !etapaProtegida(null));
 }
 
 console.log("\n" + "=".repeat(64) + `\n${falhas === 0 ? "TODOS OS TESTES PASSARAM" : `${falhas} FALHA(S)`}\n` + "=".repeat(64));
