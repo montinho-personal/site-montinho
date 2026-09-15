@@ -185,6 +185,9 @@ export type AnalyticsEvent =
   | "source_open"
   /** Clique no convite do conversor, no fim dos artigos de quem já usa. */
   | "concentration_article_click"
+  | "compound_selected"
+  | "reverse_calculation"
+  | "result_copied"
 
   /**
    * Calculadora de déficit calórico. Mesma regra de privacidade, e aqui ela

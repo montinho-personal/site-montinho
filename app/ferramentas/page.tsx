@@ -56,7 +56,7 @@ const itemListSchema = {
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
-      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 14 : 13, name: "Conversor de mg/mL e Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
+      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 14 : 13, name: "Calculadora de Peptídeos e UI na Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
       : []),
     { "@type": "ListItem", position: (MOBILIDADE_NO_AR ? 14 : 13) + (CONVERSOR_NO_AR ? 1 : 0), name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
@@ -179,8 +179,8 @@ const FERRAMENTAS = [
   // Só depois da revisão técnica por profissional habilitado (lib/concentracao/revisao.ts).
   ...(CONVERSOR_NO_AR ? [{
     href: "/ferramentas/conversor-mg-ml-u100",
-    nome: "Conversor de Concentração",
-    pergunta: "mg, mL e U-100 sem confusão",
+    nome: "Calculadora de Peptídeos e UI",
+    pergunta: "mg, mL e UI sem confusão",
     tempo: "Educacional · sem cadastro",
     texto:
       "Calcule mg/mL e entenda quanto volume representam as marcações de uma seringa U-100. Explica a diferença entre quantidade, volume e concentração — e por que a marca 10 da seringa não é “10 UI” do que está no frasco.",

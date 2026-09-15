@@ -18,9 +18,13 @@
  * mL × concentração = mg contidos naquele volume.
  *
  * O que este arquivo NÃO faz, de propósito e para sempre: receber "quero X
- * mg" e devolver "coloque na marca Y". Essa função (o solver reverso) é a
- * que transforma uma explicação num instrumento de dose de injetável, e
- * scripts/concentracao-test.ts reprova o arquivo se ela aparecer.
+ * mg" e devolver "coloque na marca Y". Existe aqui um caminho inverso
+ * (localizarQuantidadePrescrita), mas ele parte de uma quantidade JÁ
+ * PRESCRITA por profissional habilitado e serve para a pessoa conferir onde
+ * essa quantidade cai na régua da seringa — nunca para escolher quanto usar.
+ * A diferença está no enquadramento, e scripts/concentracao-test.ts vigia
+ * as duas metades dela: nenhuma função pode partir de quantidade "desejada",
+ * nenhuma pode devolver correção de dose.
  *
  * Tudo puro: sem DOM, sem rede, sem armazenamento. Os números da pessoa não
  * saem do navegador dela.
@@ -120,6 +124,37 @@ export function tabelaU100(concentracaoMgMl: number) {
   return MARCAS_TABELA.map((m) => lerMarca(concentracaoMgMl, m)!).filter(Boolean);
 }
 
+export type Prescricao =
+  | { status: "ok"; mgPrescrito: number; volumeMl: number; marcaAproximada: number }
+  | { status: "fora_da_seringa"; mgPrescrito: number; volumeMl: number }
+  | { status: "invalido" };
+
+/**
+ * Onde uma quantidade JÁ PRESCRITA cai na régua de uma seringa U-100.
+ *
+ * volume (mL) = quantidade prescrita (mg) ÷ concentração (mg/mL);
+ * marca = volume × 100.
+ *
+ * É a mesma divisão das outras três funções, lida de trás para frente. O que
+ * a mantém do lado da explicação é o que ela NÃO faz: não recebe quanto a
+ * pessoa quer, não sugere quantidade nenhuma e não arredonda para a marca
+ * "certa" — devolve a marca aproximada com uma casa decimal justamente para
+ * deixar visível quando a quantidade não cai numa marca inteira, caso em que
+ * quem resolve é o prescritor, não a ferramenta.
+ *
+ * Acima de 1 mL a conta continua válida mas não cabe na seringa: isso é dito,
+ * não escondido.
+ */
+export function localizarQuantidadePrescrita(concentracaoMgMl: number, mgPrescrito: number): Prescricao {
+  if (!Number.isFinite(concentracaoMgMl) || !Number.isFinite(mgPrescrito) || concentracaoMgMl <= 0 || mgPrescrito <= 0) {
+    return { status: "invalido" };
+  }
+  const volumeMl = mgPrescrito / concentracaoMgMl;
+  const marca = volumeMl * U100_MARCAS_POR_ML;
+  if (marca < MARCA_MIN || marca > MARCA_MAX) return { status: "fora_da_seringa", mgPrescrito, volumeMl };
+  return { status: "ok", mgPrescrito, volumeMl, marcaAproximada: Math.round(marca * 10) / 10 };
+}
+
 export type ResultadoConferencia =
   | { status: "compativel"; mgInformado: number; marca: number; volumeMl: number; mgContido: number }
   | { status: "nao_corresponde"; mgInformado: number; marca: number; volumeMl: number; mgContido: number }
@@ -154,6 +189,10 @@ function fmt(n: number, maxDecimais: number): string {
 
 /** mg: até 3 casas, porque 0,125 mg é uma quantidade real e 0,13 seria mentira. */
 export const formatarMg = (n: number) => fmt(n, 3);
+/** Marca aproximada: até uma casa. "10,4" precisa continuar visível como não-inteiro. */
+export const formatarMarca = (n: number) => fmt(n, 1);
+/** Volume fino, para o caminho inverso: até 3 casas, porque 0,104 mL não é 0,10 mL. */
+export const formatarMlFino = (n: number) => fmt(n, 3);
 /** mL: sempre duas casas — "0,10 mL" se lê melhor que "0,1 mL" ao lado de "0,01". */
 export const formatarMl = (n: number) => (Number.isFinite(n) ? n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : "—");
 /** mg/mL: até 3 casas. */
