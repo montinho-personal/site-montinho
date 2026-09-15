@@ -1,3 +1,6 @@
+import { ARTIGOS_COM_LINK_CONCENTRACAO } from "@/lib/concentracao/artigos";
+import { CONVERSOR_NO_AR } from "@/lib/concentracao/revisao";
+import LinkFerramentaConcentracao from "@/components/concentracao/LinkFerramentaConcentracao";
 import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import Link from "next/link";
@@ -403,6 +406,11 @@ export default async function BlogPost({ params }: Props) {
           {ARTIGOS_COM_LINK_1RM.includes(post.slug) && <LinkFerramenta1RM slug={post.slug} />}
           {ARTIGOS_COM_LINK_VOLUME.includes(post.slug) && <LinkFerramentaVolume slug={post.slug} />}
           {ARTIGOS_COM_LINK_FC.includes(post.slug) && <LinkFerramentaFC slug={post.slug} />}
+          {/* Conversor de mg/mL: convite, nunca embed. Uma seringa desenhada
+              dentro de um artigo sobre um medicamento daria a impressão de que
+              o texto ensina a medir AQUELE medicamento — e a ferramenta é
+              agnóstica à substância de propósito. */}
+          {CONVERSOR_NO_AR && ARTIGOS_COM_LINK_CONCENTRACAO.includes(post.slug) && <LinkFerramentaConcentracao slug={post.slug} />}
 
           {/* O teste de mobilidade entra como CONVITE, não embutido: ele tem
               cinco telas e pede a pessoa de pé, o que não combina com quem

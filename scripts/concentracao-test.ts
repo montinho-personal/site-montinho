@@ -11,6 +11,8 @@
 import { readFileSync } from "node:fs";
 import { CONVERSOR_NO_AR, REVISAO_AUTOR, REVISAO_TECNICA } from "../lib/concentracao/revisao";
 import { FONTES, linkDaFonte } from "../lib/concentracao/fontes";
+import { ARTIGOS_COM_LINK_CONCENTRACAO } from "../lib/concentracao/artigos";
+import { blogPosts } from "../lib/blog";
 import {
   calcularConcentracao, conferirInstrucao, formatarConcentracao, formatarMg, formatarMl, lerMarca, lerNumero,
   marcaU100ParaMl, quantidadeNoVolume, tabelaU100, validarMarca, validarMg, validarMl, MARCAS_TABELA,
@@ -152,6 +154,32 @@ bloco("10. A PÁGINA NÃO INVENTA REVISÃO QUE NÃO EXISTE");
   ok("a ressalva não some quando a página entra no ar (não está dentro do gate de publicação)",
     !/CONVERSOR_NO_AR[\s\S]{0,400}ainda não passou por revisão/.test(pagina));
   ok("a página continua dizendo que não é aconselhamento médico", /não é aconselhamento médico nem farmacêutico/i.test(pagina));
+}
+
+bloco("11. O CONVITE NOS ARTIGOS PROMETE SÓ O QUE A FERRAMENTA ENTREGA");
+{
+  const slugs = new Set(blogPosts.map((p) => p.slug));
+  ok(`o registro tem artigos (${ARTIGOS_COM_LINK_CONCENTRACAO.length})`, ARTIGOS_COM_LINK_CONCENTRACAO.length > 0);
+  for (const s of ARTIGOS_COM_LINK_CONCENTRACAO) ok(`artigo existe: ${s}`, slugs.has(s));
+  ok("o registro é seletivo, não indiscriminado", ARTIGOS_COM_LINK_CONCENTRACAO.length <= 8, String(ARTIGOS_COM_LINK_CONCENTRACAO.length));
+  ok("sem repetição", new Set(ARTIGOS_COM_LINK_CONCENTRACAO).size === ARTIGOS_COM_LINK_CONCENTRACAO.length);
+  /*
+   * Os comparativos ficam de fora: ali o leitor ainda escolhe medicamento,
+   * não mede frasco. Entrar neles seria transformar convite em anúncio.
+   */
+  ok("nenhum artigo comparativo entra", !ARTIGOS_COM_LINK_CONCENTRACAO.some((s) => /(-ou-|emagrece-mais)/.test(s)));
+
+  const convite = readFileSync("components/concentracao/LinkFerramentaConcentracao.tsx", "utf8");
+  const texto = convite.replace(/\{\/\*[\s\S]*?\*\/\}/g, " ").replace(/\/\*[\s\S]*?\*\//g, " ").replace(/\/\/[^\n]*/g, " ");
+  ok("o convite não promete ensinar a preparar o frasco", /não ensina a preparar/i.test(texto));
+  ok("o convite não promete dizer quanto usar", /nem diz\s+quanto usar/i.test(texto.replace(/\s+/g, " ")));
+  ok("o convite não cita nome de substância", !/mounjaro|retatrutid|tirzepatid|semaglutid|ozempic|wegovy|zepbound/i.test(texto));
+  ok("o convite não fala em dose", !/\bdose\b|quanto injetar|quanto aplicar/i.test(texto));
+  ok("o convite não diz “diluir” (a ferramenta não ensina reconstituição)", !/diluir|diluição|reconstitu/i.test(texto));
+  ok("o clique é medido", /concentration_article_click/.test(convite));
+
+  const artigo = readFileSync("app/blog/[slug]/page.tsx", "utf8");
+  ok("o convite só renderiza com a ferramenta publicada", /CONVERSOR_NO_AR && ARTIGOS_COM_LINK_CONCENTRACAO/.test(artigo));
 }
 
 console.log("\n" + "=".repeat(64) + `\n${falhas === 0 ? "TODOS OS TESTES PASSARAM" : `${falhas} FALHA(S)`}\n` + "=".repeat(64));
