@@ -68,8 +68,10 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
                   <form action={renovarContrato} className="space-y-2">
                     <input type="hidden" name="client_id" value={c.id} />
                     <Select name="plan_id" defaultValue={c.current_plan_id ?? ""} required><option value="">Plano *</option>{cat.planos.filter((p) => p.ativo).map((p) => <option key={p.id} value={p.id}>{p.nome} · {brl(p.preco)}</option>)}</Select>
-                    <div className="grid grid-cols-3 gap-2"><Input name="valor" inputMode="decimal" placeholder="Valor do ciclo *" required defaultValue={contratoAtivo?.valor ?? ""} /><Input name="ciclo_meses" inputMode="numeric" defaultValue={contratoAtivo?.ciclo_meses ?? 1} /><Input name="inicio" type="date" defaultValue={c.renewal_date ?? dataInput()} /></div>
+                    <div className="grid grid-cols-3 gap-2"><Input name="valor" inputMode="decimal" placeholder="Valor do ciclo *" required defaultValue={contratoAtivo?.valor ?? ""} /><Input name="ciclo_meses" inputMode="numeric" defaultValue={contratoAtivo?.ciclo_meses ?? 1} /><Campo rotulo="Ciclo começa"><Input name="inicio" type="date" defaultValue={c.renewal_date ?? dataInput()} /></Campo></div>
                     <label className="flex items-center gap-2 text-sm"><input type="checkbox" name="recebido" defaultChecked /> Pagamento recebido</label>
+                    {/* Duas datas diferentes de propósito: renovar hoje um ciclo que começa mês que vem é o normal, e o dinheiro entrou hoje. */}
+                    <Campo rotulo="Recebi em" dica="Quando o dinheiro entrou. Em branco, hoje."><Input name="recebido_em" type="date" defaultValue={dataInput()} max={dataInput()} /></Campo>
                     <Btn pequeno>Renovar</Btn>
                   </form>
                 </Detalhes>
