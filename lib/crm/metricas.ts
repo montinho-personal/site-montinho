@@ -452,7 +452,7 @@ export function classificarLead(s: SinaisLead, limites = { quenteMin: 5, mornoMi
 // ---------------------------------------------------------------------------
 // Daily Decision Engine — regras transparentes, sem "AI score"
 // ---------------------------------------------------------------------------
-export interface LeadParaHoje { id: string; contactId: string; nome: string; status: string; createdAt: string; lastContactAt: string | null; firstResponseAt: string | null; nextAction: string | null; nextActionAt: string | null; stageCode: string | null; proposalSentAt: string | null; expectedValue: number | null; temperatura?: string; opportunityId?: string | null }
+export interface LeadParaHoje { id: string; contactId: string; nome: string; status: string; createdAt: string; lastContactAt: string | null; firstResponseAt: string | null; lastReplyAt?: string | null; nextAction: string | null; nextActionAt: string | null; stageCode: string | null; proposalSentAt: string | null; expectedValue: number | null; temperatura?: string; opportunityId?: string | null }
 export interface TarefaParaHoje { id: string; leadId: string | null; clientId: string | null; contactId: string | null; nome: string; titulo: string; dueAt: string; priority: string }
 export interface TrialParaHoje { id: string; leadId: string | null; contactId: string; nome: string; scheduledAt: string; status: string }
 export interface ClienteParaHoje { id: string; contactId: string; nome: string; renewalDate: string | null; status: string }
@@ -473,6 +473,14 @@ export function prioridadesHoje(
   const fechadas = new Set(["ganho", "perdido"]);
   const abertos = d.leads.filter((l) => l.status === "aberto" && !fechadas.has(l.stageCode ?? ""));
 
+  // 0. O lead respondeu e a bola está com o Montinho. É a única situação em
+  // que quem está esperando é a pessoa do outro lado — vem antes de tudo.
+  for (const l of abertos) {
+    if (l.lastReplyAt && (!l.lastContactAt || l.lastReplyAt > l.lastContactAt)) {
+      const horas = h(agora.getTime() - new Date(l.lastReplyAt).getTime());
+      itens.push({ prioridade: 1, grupo: "respondeu_aguardando_voce", motivo: `Respondeu há ${horas < 1 ? "menos de 1h" : `${Math.round(horas)}h`} e está esperando você`, acao: "Responder", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
+    }
+  }
   // 1. Lead novo sem contato além do SLA
   for (const l of abertos) {
     if (!l.firstResponseAt && !l.lastContactAt) {

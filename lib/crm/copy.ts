@@ -64,7 +64,7 @@ function arrumar(t: string): string {
 // ---------------------------------------------------------------------------
 export interface Sinais {
   pergunta: string; indicador: string; pagina: string; anuncio: boolean;
-  jaContatado: boolean; propostaEnviada: boolean; diasProposta: number | null; etapa: string | null;
+  jaContatado: boolean; respondeu: boolean; propostaEnviada: boolean; diasProposta: number | null; etapa: string | null;
   exigeExperimental: boolean; experimentalAgendada: boolean; experimentalRealizada: boolean; experimentalNoShow: boolean;
   cliente: ClienteRow | undefined; renovaEm: number | null; diasDeCliente: number | null; diasForaDeTreino: number | null; jaIndicou: boolean;
 }
@@ -119,13 +119,18 @@ const retomar = (s: Sinais): Situacao => {
   if (!s.jaContatado) return primeiroContato(s);
   if (s.etapa === "negociacao") return "negociacao_parada";
   if (s.propostaEnviada) return depoisDaProposta(s);
-  return s.experimentalRealizada || s.experimentalNoShow || s.experimentalAgendada ? proximoPasso(s) : "segundo_toque";
+  // "Segundo toque" é a mensagem de quem NÃO respondeu ao primeiro. Quem já
+  // respondeu alguma vez recebe o próximo passo, não uma cobrança de resposta.
+  return s.experimentalRealizada || s.experimentalNoShow || s.experimentalAgendada || s.respondeu ? proximoPasso(s) : "segundo_toque";
 };
 
 /** Grupo da tela Hoje (metricas.prioridadesHoje) + estado do lead → situação. Sem grupo, decide só pelo estado. */
 export function escolherSituacao(grupo: string | null | undefined, s: Sinais): Situacao {
   switch (grupo) {
     case "novo_sem_contato": return primeiroContato(s);
+    // Ela respondeu e a bola está com o Montinho: a resposta é a conversa em si;
+    // o texto pronto só sugere o próximo passo, nunca um follow-up de cobrança.
+    case "respondeu_aguardando_voce": return s.propostaEnviada ? "proposta_follow_up_1" : proximoPasso(s);
     case "proposta_sem_follow_up": return depoisDaProposta(s);
     case "negociacao_antiga": return "negociacao_parada";
     case "experimental_proxima": return "experimental_confirmar";
@@ -214,6 +219,7 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
     pagina,
     anuncio: lead?.source_code === "google_ads" || !!handoff?.gclid || !!handoff?.gbraid || !!handoff?.wbraid,
     jaContatado: !!(ultimoContato || lead?.first_response_at),
+    respondeu: !!lead?.last_reply_at,
     propostaEnviada: !!opp?.proposal_sent_at,
     diasProposta,
     etapa: etapa?.code ?? null,

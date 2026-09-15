@@ -6,7 +6,7 @@ import { itensHoje, visaoLead } from "@/lib/crm/visao";
 import { atribuir } from "@/lib/crm/metricas";
 import { mensagemPara } from "@/lib/crm/copy";
 import { Aviso, Badge, Btn, Campo, Card, Detalhes, Input, Pagina, Select, Textarea, brl, dataHoraBr, dataHoraInput, dataInput, relativo } from "@/components/crm/ui";
-import { agendarExperimental, atualizarContato, concluirTarefa, criarTarefa, definirOrigem, definirProximaAcao, enviarProposta, ligarHandoff, marcarExperimental, marcarGanho, marcarPerdido, moverEtapa, reativarLead, registrarAtividade } from "../../actions";
+import { agendarExperimental, atualizarContato, concluirTarefa, criarTarefa, definirOrigem, definirProximaAcao, enviarProposta, ligarHandoff, marcarExperimental, marcarGanho, marcarPerdido, marcarRespondeu, moverEtapa, reativarLead, registrarAtividade } from "../../actions";
 
 export default async function LeadPage({ params }: { params: Promise<{ id: string }> }) {
   const u = await exigirUsuario();
@@ -42,6 +42,10 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
               <div><div className="text-xs text-zinc-500">Temperatura</div><Badge tom={v.temperatura}>{v.temperatura}</Badge><div className="mt-1 text-xs text-zinc-500">{v.motivos.join(" · ") || "sem sinais ainda"}</div></div>
               <div><div className="text-xs text-zinc-500">Valor potencial</div><div className="font-medium">{opp?.expected_value ? `${brl(opp.expected_value)}/mês` : "—"}</div></div>
               <div><div className="text-xs text-zinc-500">Último contato</div><div className="font-medium">{lead.last_contact_at ? relativo(lead.last_contact_at) : "nunca"}</div></div>
+            </div>
+            <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
+              <span className="text-zinc-400">Última resposta dela: <strong className="text-zinc-200">{lead.last_reply_at ? relativo(lead.last_reply_at) : "nunca respondeu"}</strong></span>
+              {lead.status === "aberto" && !somenteLeitura && <form action={marcarRespondeu}><input type="hidden" name="lead_id" value={lead.id} /><input type="hidden" name="contact_id" value={contato.id} /><Btn tom="secundario" pequeno>Ela respondeu</Btn></form>}
             </div>
             {lead.status === "aberto" && (
               <form action={definirProximaAcao} className="mt-4 grid gap-2 sm:grid-cols-[1fr_auto_auto]">
