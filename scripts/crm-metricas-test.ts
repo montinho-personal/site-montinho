@@ -8,7 +8,7 @@
  * merge em vez de mesclar.
  */
 import {
-  taxasFunil, showRate, winRate, ltvRealizado, mrrDoContrato, mrrNormalizado, movimentoMrr, cacMidia, ltvCac, paybackMeses,
+  taxasFunil, showRate, winRate, ltvRealizado, ltvPorConfianca, ehEstimado, mrrDoContrato, mrrNormalizado, movimentoMrr, cacMidia, ltvCac, paybackMeses,
   churnClientes, retencaoClientes, metricasIndicacao, atribuir, inferirFonte, normalizarTelefoneE164, possiveisDuplicatas,
   coortes, classificarLead, prioridadesHoje, anomalia, mediana, cicloDeVendaDias, primeiraResposta, valorPipeline,
   probabilidadeHistorica, coberturaAtribuicao, ltvProjetado, roasReceita, custoPorLead, slaFollowUp, tenureMeses,
@@ -53,6 +53,23 @@ bloco("2. LTV E RECEITA");
   ok("LTV com refund (líquido, o padrão): 3000 - 500 = 2500", ltvRealizado(ev, "B") === 2500);
   ok("LTV bruto sob demanda: 3000", ltvRealizado(ev, "B", { liquido: false }) === 3000);
   ok("receita apenas esperada NÃO entra no LTV realizado", ltvRealizado(ev, "B") === 2500);
+  /*
+   * Dinheiro estimado não é dinheiro. Quando o extrato não alcança (aluno
+   * antigo, histórico de um ano só), dá para projetar o que provavelmente
+   * entrou — mas isso não pode virar faturamento sem aviso, senão daqui a
+   * seis meses ninguém sabe o que era conta e o que era extrato.
+   */
+  const comEstimativa: EventoReceita[] = [
+    { clientId: "E", amount: 700, tipo: "renewal", occurredAt: "2026-09-09", status: "collected", confidence: "verified" },
+    { clientId: "E", amount: 700, tipo: "renewal", occurredAt: "2025-01-10", status: "collected", confidence: "inferred" },
+    { clientId: "E", amount: 700, tipo: "renewal", occurredAt: "2025-02-07", status: "collected", confidence: "inferred" },
+  ];
+  ok("'inferred' é estimativa; 'verified' e ausente não são", ehEstimado("inferred") && ehEstimado("aggregate") && !ehEstimado("verified") && !ehEstimado(null) && !ehEstimado(undefined));
+  ok("LTV soma só o confirmado por padrão", ltvRealizado(comEstimativa, "E") === 700);
+  ok("LTV com estimativa sob demanda: 2100", ltvRealizado(comEstimativa, "E", { incluirEstimado: true }) === 2100);
+  const sep = ltvPorConfianca(comEstimativa, "E");
+  ok("separação diz o que é extrato e o que é conta", sep.confirmado === 700 && sep.estimado === 1400 && sep.total === 2100, JSON.stringify(sep));
+  ok("cliente sem estimativa nenhuma não ganha número inventado", ltvPorConfianca(ev, "A").estimado === 0);
 }
 
 bloco("3. MRR");

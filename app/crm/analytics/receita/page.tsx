@@ -1,7 +1,7 @@
 import { exigirUsuario } from "@/lib/crm/auth";
 import { base, catalogo } from "@/lib/crm/dados";
 import { serieMensal, eventosReceita, clientesMetricas } from "@/lib/crm/analise";
-import { mrrNormalizado, movimentoMrr, receitaPorStatus, arpuMensal, churnReceita } from "@/lib/crm/metricas";
+import { mrrNormalizado, movimentoMrr, receitaPorStatus, arpuMensal, churnReceita, ehEstimado } from "@/lib/crm/metricas";
 import AnalyticsNav from "@/components/crm/AnalyticsNav";
 import { Card, Pagina, Stat, Tabela, brl, pct } from "@/components/crm/ui";
 
@@ -15,7 +15,7 @@ export default async function Receita() {
   const arpu = arpuMensal(clientesMetricas(b), eventosReceita(b), hoje);
   const serie = serieMensal(b, 12);
   const porPlano = cat.planos.map((p) => ({ p, mrr: mrrNormalizado(contratos.filter((c) => c.planId === p.id), hoje), n: contratos.filter((c) => c.planId === p.id && c.status === "ativo").length })).filter((x) => x.n);
-  const porServico = cat.servicos.map((s) => ({ s, receita: b.receitas.filter((r) => r.status === "collected" && r.service_id === s.id).reduce((a, r) => a + r.amount, 0), vendas: b.oportunidades.filter((o) => o.won_at && o.service_id === s.id).length }));
+  const porServico = cat.servicos.map((s) => ({ s, receita: b.receitas.filter((r) => r.status === "collected" && !ehEstimado(r.confidence) && r.service_id === s.id).reduce((a, r) => a + r.amount, 0), vendas: b.oportunidades.filter((o) => o.won_at && o.service_id === s.id).length }));
   const forecast = [30, 60, 90].map((d) => ({ d, valor: mrr * (d / 30) }));
   return (
     <Pagina titulo="Receita" sub="Venda não é dinheiro recebido. Três estados: esperado, contratado, recebido.">

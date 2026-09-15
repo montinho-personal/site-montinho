@@ -160,16 +160,41 @@ export function pipelineVelocity(oportunidadesQualificadas: number, winRate: num
 // ---------------------------------------------------------------------------
 // Receita, LTV, MRR
 // ---------------------------------------------------------------------------
-export interface EventoReceita { clientId: string; amount: number; tipo: string; occurredAt: string; status: "expected" | "contracted" | "collected" }
+export interface EventoReceita { clientId: string; amount: number; tipo: string; occurredAt: string; status: "expected" | "contracted" | "collected"; confidence?: string | null }
+
+/*
+ * Dinheiro estimado não é dinheiro.
+ *
+ * Quando falta histórico — o extrato só vai até um ano atrás, o aluno é
+ * antigo — dá para projetar o que provavelmente entrou. Isso é útil para
+ * entender um cliente, e é veneno se entrar no faturamento como se fosse
+ * fato: daqui a seis meses ninguém lembra o que era conta e o que era
+ * extrato, e o número inteiro perde valor.
+ *
+ * `crm_revenue_events.confidence` existe para isso. Tudo que não é
+ * "verified" é estimativa e fica fora das somas por padrão; quem quiser o
+ * total com estimativa pede explicitamente, e a tela diz que é estimativa.
+ * Evento sem confidence conta como confirmado, que é o caso de tudo que
+ * veio antes deste campo passar a ser usado.
+ */
+export const ehEstimado = (confidence?: string | null): boolean => confidence != null && confidence !== "verified";
 export interface Cliente { id: string; firstPurchaseAt: string; sourceCode: string; status: string; cancelledAt?: string | null; planId?: string | null; serviceCode?: string | null; referredBy?: string | null }
 export interface Contrato { clientId: string; valor: number; cicloMeses: number; inicio: string; fim: string | null; status: string; planId?: string | null }
 
 /** Receita realizada líquida do cliente: soma dos eventos coletados (reembolso é negativo). */
-export function ltvRealizado(eventos: EventoReceita[], clientId: string, opts: { liquido?: boolean } = {}): number {
+export function ltvRealizado(eventos: EventoReceita[], clientId: string, opts: { liquido?: boolean; incluirEstimado?: boolean } = {}): number {
   const liquido = opts.liquido ?? true;
   return eventos
     .filter((e) => e.clientId === clientId && e.status === "collected" && (liquido || e.tipo !== "refund"))
+    .filter((e) => (opts.incluirEstimado ?? false) || !ehEstimado(e.confidence))
     .reduce((s, e) => s + e.amount, 0);
+}
+
+/** Quanto é extrato e quanto é conta de padeiro, para a tela poder mostrar os dois. */
+export function ltvPorConfianca(eventos: EventoReceita[], clientId: string) {
+  const confirmado = ltvRealizado(eventos, clientId);
+  const total = ltvRealizado(eventos, clientId, { incluirEstimado: true });
+  return { confirmado, estimado: total - confirmado, total };
 }
 export function receitaPorStatus(eventos: EventoReceita[]) {
   const r = { expected: 0, contracted: 0, collected: 0 };

@@ -1,9 +1,9 @@
 /** Agregações para os dashboards. Calculadas em memória a partir de base()+catalogo(), usando metricas.ts. */
 import type { Base, Catalogo } from "./dados";
-import { atribuir, cacMidia, coberturaAtribuicao, ltvCac, ltvMedio, ltvRealizado, razao, roasReceita, type EventoReceita, type Cliente } from "./metricas";
+import { atribuir, cacMidia, coberturaAtribuicao, ehEstimado, ltvCac, ltvMedio, ltvRealizado, razao, roasReceita, type EventoReceita, type Cliente } from "./metricas";
 import { contagemFunil } from "./visao";
 
-export const eventosReceita = (b: Base): EventoReceita[] => b.receitas.map((r) => ({ clientId: r.client_id, amount: r.amount, tipo: r.tipo, occurredAt: r.occurred_at, status: r.status }));
+export const eventosReceita = (b: Base): EventoReceita[] => b.receitas.map((r) => ({ clientId: r.client_id, amount: r.amount, tipo: r.tipo, occurredAt: r.occurred_at, status: r.status, confidence: r.confidence }));
 /**
  * Só clientes com alguma receita coletada entram em média de LTV. Cliente
  * importado sem recibo (planilha, cadastro) tem LTV desconhecido, não zero —
@@ -46,7 +46,7 @@ export function serieMensal(b: Base, meses = 12) {
     const d = new Date(hoje.getFullYear(), hoje.getMonth() - i, 1); const k = d.toISOString().slice(0, 7);
     out.push({
       mes: k, leads: b.leads.filter((l) => l.created_at.startsWith(k)).length, vendas: b.oportunidades.filter((o) => o.won_at?.startsWith(k)).length,
-      receita: b.receitas.filter((r) => r.status === "collected" && r.occurred_at.startsWith(k)).reduce((s, r) => s + r.amount, 0),
+      receita: b.receitas.filter((r) => r.status === "collected" && !ehEstimado(r.confidence) && r.occurred_at.startsWith(k)).reduce((s, r) => s + r.amount, 0),
       novosClientes: b.clientes.filter((c) => c.first_purchase_at.startsWith(k)).length, cancelados: b.clientes.filter((c) => c.cancelled_at?.startsWith(k)).length,
     });
   }
