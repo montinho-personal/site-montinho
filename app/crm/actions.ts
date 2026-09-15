@@ -15,6 +15,7 @@ import { dataDoCheckIn, tarefasDeOnboarding } from "@/lib/crm/onboarding";
 import { lerDatas } from "@/lib/crm/aulas";
 import { FUSO } from "@/lib/crm/copy";
 import { etapaProtegida, podeDesfazerPerdido, type SnapshotPerda } from "@/lib/crm/perda";
+import { dataDaReceita, recebimentoNoFuturo } from "@/lib/crm/metricas";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { exigirAdmin, exigirEscrita, exigirUsuario } from "@/lib/crm/auth";
@@ -503,9 +504,12 @@ export async function registrarReceita(fd: FormData) {
   const clientId = s(fd, "client_id")!; const tipo = s(fd, "tipo") ?? "monthly_payment"; let amount = n(fd, "amount") ?? 0;
   if (tipo === "refund" && amount > 0) amount = -amount;
   if (amount === 0) throw new Error("Valor é obrigatório.");
+  const quando = s(fd, "occurred_at") ?? hoje();
+  // Mesma regra da renovação: dinheiro recebido com data no futuro é erro de digitação.
+  if ((s(fd, "status") ?? "collected") === "collected" && recebimentoNoFuturo(quando, hoje())) throw new Error("Pagamento recebido não pode ter data no futuro. Use 'esperado' ou corrija a data.");
   const { data: c } = await sb.from("crm_clients").select("*").eq("id", clientId).single();
-  await erroSe(await sb.from("crm_revenue_events").insert({ client_id: clientId, contract_id: s(fd, "contract_id"), tipo, amount, occurred_at: s(fd, "occurred_at") ?? hoje(), status: s(fd, "status") ?? "collected", service_id: c.service_id, plan_id: c.current_plan_id, source_code: c.source_code, payment_method: s(fd, "payment_method"), external_ref: s(fd, "external_ref"), fee: n(fd, "fee"), notes: s(fd, "notes"), created_by: u.id }), "receita");
-  await atividade(sb, u.id, { contact_id: c.contact_id, client_id: clientId, tipo: tipo === "refund" ? "other" : "payment", descricao: `${tipo}: R$ ${amount}`, ocorreu_em: new Date((s(fd, "occurred_at") ?? hoje()) + "T12:00:00").toISOString() });
+  await erroSe(await sb.from("crm_revenue_events").insert({ client_id: clientId, contract_id: s(fd, "contract_id"), tipo, amount, occurred_at: quando, status: s(fd, "status") ?? "collected", service_id: c.service_id, plan_id: c.current_plan_id, source_code: c.source_code, payment_method: s(fd, "payment_method"), external_ref: s(fd, "external_ref"), fee: n(fd, "fee"), notes: s(fd, "notes"), created_by: u.id }), "receita");
+  await atividade(sb, u.id, { contact_id: c.contact_id, client_id: clientId, tipo: tipo === "refund" ? "other" : "payment", descricao: `${tipo}: R$ ${amount}`, ocorreu_em: new Date(quando + "T12:00:00").toISOString() });
   revalidarTudo([`/crm/clientes/${clientId}`]);
 }
 export async function marcarRecebido(fd: FormData) {
@@ -530,8 +534,13 @@ export async function renovarContrato(fd: FormData) {
   if (error) throw new Error(`contrato: ${error.message}`);
   await sb.from("crm_clients").update({ status: "ativo", current_plan_id: planId, renewal_date: renovacao, end_date: null }).eq("id", clientId);
   const recebido = fd.get("recebido") === "on";
+  // O contrato guarda quando o ciclo vale; a receita, quando o dinheiro andou.
+  // Ver dataDaReceita em lib/crm/metricas.ts: renovar em setembro um ciclo que
+  // começa em outubro não pode lançar a entrada em outubro.
+  const quandoEntrou = dataDaReceita({ recebido, recebidoEm: s(fd, "recebido_em"), inicioDoCiclo: inicio, hoje: hoje() });
+  if (recebido && recebimentoNoFuturo(quandoEntrou, hoje())) throw new Error("Pagamento recebido não pode ter data no futuro. Corrija a data do recebimento.");
   const tipoEvento = atual && valor > atual.valor / atual.ciclo_meses * ciclo ? "upgrade" : atual && valor < atual.valor / atual.ciclo_meses * ciclo ? "downgrade" : "renewal";
-  await sb.from("crm_revenue_events").insert({ client_id: clientId, contract_id: novo.id, tipo: tipoEvento, amount: valor, occurred_at: inicio, status: recebido ? "collected" : "contracted", service_id: c.service_id, plan_id: planId, source_code: c.source_code, payment_method: s(fd, "payment_method"), created_by: u.id });
+  await sb.from("crm_revenue_events").insert({ client_id: clientId, contract_id: novo.id, tipo: tipoEvento, amount: valor, occurred_at: quandoEntrou, status: recebido ? "collected" : "contracted", service_id: c.service_id, plan_id: planId, source_code: c.source_code, payment_method: s(fd, "payment_method"), created_by: u.id });
   await atividade(sb, u.id, { contact_id: c.contact_id, client_id: clientId, tipo: "renewal", descricao: `Renovação: R$ ${valor} (${ciclo} mês${ciclo > 1 ? "es" : ""})` });
   await sb.from("crm_tasks").update({ completed_at: new Date().toISOString() }).eq("client_id", clientId).eq("tipo", "renovacao").is("completed_at", null);
   revalidarTudo([`/crm/clientes/${clientId}`]);

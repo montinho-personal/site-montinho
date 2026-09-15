@@ -8,7 +8,7 @@
  * merge em vez de mesclar.
  */
 import {
-  taxasFunil, showRate, winRate, ltvRealizado, ltvPorConfianca, ehEstimado, mrrDoContrato, mrrNormalizado, movimentoMrr, cacMidia, ltvCac, paybackMeses,
+  taxasFunil, showRate, winRate, ltvRealizado, ltvPorConfianca, ehEstimado, dataDaReceita, recebimentoNoFuturo, mrrDoContrato, mrrNormalizado, movimentoMrr, cacMidia, ltvCac, paybackMeses,
   churnClientes, retencaoClientes, metricasIndicacao, atribuir, inferirFonte, normalizarTelefoneE164, possiveisDuplicatas,
   coortes, classificarLead, prioridadesHoje, anomalia, mediana, cicloDeVendaDias, primeiraResposta, valorPipeline,
   probabilidadeHistorica, coberturaAtribuicao, ltvProjetado, roasReceita, custoPorLead, slaFollowUp, tenureMeses,
@@ -70,6 +70,22 @@ bloco("2. LTV E RECEITA");
   const sep = ltvPorConfianca(comEstimativa, "E");
   ok("separação diz o que é extrato e o que é conta", sep.confirmado === 700 && sep.estimado === 1400 && sep.total === 2100, JSON.stringify(sep));
   ok("cliente sem estimativa nenhuma não ganha número inventado", ltvPorConfianca(ev, "A").estimado === 0);
+  /*
+   * Data da receita é quando o dinheiro entrou, não quando o ciclo começa.
+   * Em 10/09/2026 uma renovação de ciclo que começava em 09/10 lançou a
+   * entrada em outubro: setembro ficou menor e outubro maior do que foram.
+   */
+  const hj = "2026-09-10";
+  ok("renovação adiantada lança no dia do pagamento, não no início do ciclo",
+    dataDaReceita({ recebido: true, recebidoEm: hj, inicioDoCiclo: "2026-10-09", hoje: hj }) === hj);
+  ok("sem data de recebimento, vale hoje",
+    dataDaReceita({ recebido: true, recebidoEm: null, inicioDoCiclo: "2026-10-09", hoje: hj }) === hj);
+  ok("pagamento de ontem mantém a data de ontem",
+    dataDaReceita({ recebido: true, recebidoEm: "2026-09-09", inicioDoCiclo: "2026-10-09", hoje: hj }) === "2026-09-09");
+  ok("o que ainda não foi pago vence no início do ciclo",
+    dataDaReceita({ recebido: false, recebidoEm: null, inicioDoCiclo: "2026-10-09", hoje: hj }) === "2026-10-09");
+  ok("receita esperada no futuro é normal; recebida no futuro é erro de digitação",
+    recebimentoNoFuturo("2026-10-09", hj) && !recebimentoNoFuturo("2026-09-09", hj) && !recebimentoNoFuturo(hj, hj));
 }
 
 bloco("3. MRR");

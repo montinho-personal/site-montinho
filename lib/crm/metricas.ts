@@ -178,6 +178,31 @@ export interface EventoReceita { clientId: string; amount: number; tipo: string;
  * veio antes deste campo passar a ser usado.
  */
 export const ehEstimado = (confidence?: string | null): boolean => confidence != null && confidence !== "verified";
+
+/*
+ * Data do lançamento de receita: quando o dinheiro entrou, não quando o
+ * ciclo começa.
+ *
+ * A renovação carimbava o evento com o início do ciclo. Renovar antes do
+ * vencimento — o normal, porque o formulário já propõe o fim do ciclo atual
+ * como começo do próximo — jogava o dinheiro para o mês seguinte. Em
+ * 10/09/2026 uma aluna pagou R$ 720 e o faturamento registrou a entrada em
+ * 09/10, deixando setembro menor e outubro maior do que foram.
+ *
+ * A separação é: o contrato guarda quando o ciclo vale, a receita guarda
+ * quando o dinheiro andou. Para o que ainda não foi pago, a data é o
+ * vencimento — uma receita esperada no futuro está certa; uma receita
+ * RECEBIDA no futuro nunca está.
+ */
+export function dataDaReceita(p: { recebido: boolean; recebidoEm?: string | null; inicioDoCiclo: string; hoje: string }): string {
+  if (!p.recebido) return p.inicioDoCiclo;
+  return p.recebidoEm || p.hoje;
+}
+
+/** Dinheiro recebido com data no futuro é sempre erro de digitação. */
+export function recebimentoNoFuturo(occurredAt: string, hoje: string): boolean {
+  return occurredAt > hoje;
+}
 export interface Cliente { id: string; firstPurchaseAt: string; sourceCode: string; status: string; cancelledAt?: string | null; planId?: string | null; serviceCode?: string | null; referredBy?: string | null }
 export interface Contrato { clientId: string; valor: number; cicloMeses: number; inicio: string; fim: string | null; status: string; planId?: string | null }
 
