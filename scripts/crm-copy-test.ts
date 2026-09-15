@@ -81,7 +81,7 @@ ok("toda mensagem começa com a saudação", Object.values(TEXTOS).every((t) => 
 
 bloco("3. GRUPO → SITUAÇÃO");
 const base: Sinais = {
-  pergunta: "", indicador: "", pagina: "", anuncio: false, jaContatado: false, propostaEnviada: false, diasProposta: null, etapa: null,
+  pergunta: "", indicador: "", pagina: "", anuncio: false, jaContatado: false, respondeu: false, propostaEnviada: false, diasProposta: null, etapa: null,
   exigeExperimental: true, experimentalAgendada: false, experimentalRealizada: false, experimentalNoShow: false,
   cliente: undefined, renovaEm: null, diasDeCliente: null, diasForaDeTreino: null, jaIndicou: false,
 };
@@ -111,6 +111,11 @@ ok("tarefa de follow-up em lead com proposta → follow-up da proposta", escolhe
 ok("tarefa de follow-up em negociação → negociação parada", escolherSituacao("follow_up_hoje", S({ jaContatado: true, propostaEnviada: true, etapa: "negociacao" })) === "negociacao_parada");
 ok("tarefa em lead nunca contatado → primeiro contato", escolherSituacao("follow_up_hoje", S({ pagina: "X" })) === "primeiro_contato_site");
 ok("parado sem proposta → segundo toque", escolherSituacao("parado", S({ jaContatado: true })) === "segundo_toque");
+// Fase 1 — T1: quem respondeu nunca recebe "segundo toque" (a cobrança de quem não respondeu).
+ok("parado que já respondeu → próximo passo, não segundo toque", escolherSituacao("parado", S({ jaContatado: true, respondeu: true })) === "convite_experimental");
+ok("respondeu e está esperando, sem proposta → próximo passo", escolherSituacao("respondeu_aguardando_voce", S({ jaContatado: true, respondeu: true, exigeExperimental: false })) === "convite_proposta");
+ok("respondeu depois da proposta → conversa da proposta, não cobrança 2", escolherSituacao("respondeu_aguardando_voce", S({ jaContatado: true, respondeu: true, propostaEnviada: true, diasProposta: 9 })) === "proposta_follow_up_1");
+ok("sem grupo, contatado e sem resposta → segundo toque continua", escolherSituacao(null, S({ jaContatado: true })) === "segundo_toque");
 ok("parado depois da experimental → proposta", escolherSituacao("parado", S({ jaContatado: true, experimentalRealizada: true })) === "pos_experimental_proposta");
 ok("sem próxima ação, nunca contatado → primeiro contato", escolherSituacao("sem_proxima_acao", S({})) === "primeiro_contato_generico");
 const cli = (status: string, renovaEm: number | null, extra: Partial<Sinais> = {}) => S({ cliente: { status, renewal_date: null } as never, renovaEm, diasDeCliente: 200, ...extra });
@@ -177,8 +182,8 @@ const b = {
     { id: "c3", nome: "Elisa Cruz", cidade: "São Paulo", referred_by_contact_id: "c2" },
   ],
   leads: [
-    { id: "l1", contact_id: "c1", service_id: "s-on", interesse: "Consultoria online — dúvida sobre a página", status: "aberto", source_code: "google_ads", handoff_id: "h1", referred_by_contact_id: null, last_contact_at: null, first_response_at: null, created_at: "2026-09-09T13:51:00Z" },
-    { id: "l3", contact_id: "c3", service_id: "s-on", interesse: "emagrecer", status: "aberto", source_code: "referral_client", handoff_id: null, referred_by_contact_id: null, last_contact_at: "2026-09-05T12:00:00Z", first_response_at: "2026-09-04T12:00:00Z", created_at: "2026-09-03T12:00:00Z" },
+    { id: "l1", contact_id: "c1", service_id: "s-on", interesse: "Consultoria online — dúvida sobre a página", status: "aberto", source_code: "google_ads", handoff_id: "h1", referred_by_contact_id: null, last_contact_at: null, first_response_at: null, last_reply_at: null, created_at: "2026-09-09T13:51:00Z" },
+    { id: "l3", contact_id: "c3", service_id: "s-on", interesse: "emagrecer", status: "aberto", source_code: "referral_client", handoff_id: null, referred_by_contact_id: null, last_contact_at: "2026-09-05T12:00:00Z", first_response_at: "2026-09-04T12:00:00Z", last_reply_at: null, created_at: "2026-09-03T12:00:00Z" },
   ],
   oportunidades: [
     { id: "o3", lead_id: "l3", contact_id: "c3", stage_id: "e-prop", service_id: "s-on", plan_id: "p1", expected_value: 399, proposal_value: 399, proposal_sent_at: "2026-09-05T12:00:00Z", won_at: null, lost_at: null, created_at: "2026-09-03T12:00:00Z" },

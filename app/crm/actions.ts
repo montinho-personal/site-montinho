@@ -204,6 +204,36 @@ export async function registrarAtividade(fd: FormData) {
   revalidarTudo([leadId ? `/crm/leads/${leadId}` : "", clientId ? `/crm/clientes/${clientId}` : ""].filter(Boolean));
 }
 
+/**
+ * "Ela respondeu": o lead respondeu de verdade.
+ *
+ * É o único sinal de resposta real que o CRM tem — todo o resto
+ * (first_response_at, last_contact_at) é ação do Montinho. Registra a hora
+ * em last_reply_at, deixa uma atividade de entrada e encerra as tarefas de
+ * follow-up abertas: a cadência existia para arrancar uma resposta, e ela
+ * veio. Não manda mensagem nenhuma e não abre WhatsApp.
+ */
+export async function marcarRespondeu(fd: FormData) {
+  const u = await exigirEscrita();
+  const sb = await supabaseServer();
+  const leadId = s(fd, "lead_id")!; const contactId = s(fd, "contact_id");
+  const agora = new Date().toISOString();
+  const { data: opp } = await sb.from("crm_opportunities").select("id, pipeline_id, stage_id").eq("lead_id", leadId).is("won_at", null).is("lost_at", null).order("created_at", { ascending: false }).limit(1).maybeSingle();
+  await atividade(sb, u.id, { contact_id: contactId, lead_id: leadId, opportunity_id: opp?.id, tipo: "message", descricao: "Lead respondeu", ocorreu_em: agora, metadata: { direcao: "entrada" } });
+  await erroSe(await sb.from("crm_leads").update({ last_reply_at: agora }).eq("id", leadId), "lead");
+  await sb.from("crm_tasks").update({ completed_at: agora }).eq("lead_id", leadId).eq("tipo", "follow_up").is("completed_at", null);
+  // Quem respondeu já passou de "novo".
+  if (opp) {
+    const novo = await etapaPorCodigo(sb, opp.pipeline_id, "novo");
+    if (opp.stage_id === novo.id) {
+      const c = await etapaPorCodigo(sb, opp.pipeline_id, "contato");
+      await sb.from("crm_opportunities").update({ stage_id: c.id }).eq("id", opp.id);
+      await atividade(sb, u.id, { contact_id: contactId, lead_id: leadId, opportunity_id: opp.id, tipo: "stage_change", descricao: `Etapa: ${c.nome}` });
+    }
+  }
+  revalidarTudo(["/crm", "/crm/leads", `/crm/leads/${leadId}`]);
+}
+
 export async function moverEtapa(fd: FormData) {
   const u = await exigirEscrita();
   const sb = await supabaseServer();

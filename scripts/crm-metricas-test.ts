@@ -196,6 +196,9 @@ bloco("9. LEAD SCORING EXPLICÁVEL E TELA HOJE");
       // do lead tinha ficado "aberto". A etapa fechada basta para sair da lista.
       { id: "L5", contactId: "C5", nome: "JaComprou", status: "aberto", createdAt: "2026-09-01", lastContactAt: null, firstResponseAt: null, nextAction: null, nextActionAt: null, stageCode: "ganho", proposalSentAt: null, expectedValue: 399 },
       { id: "L6", contactId: "C6", nome: "JaPerdeu", status: "aberto", createdAt: "2026-09-01", lastContactAt: null, firstResponseAt: null, nextAction: null, nextActionAt: null, stageCode: "perdido", proposalSentAt: null, expectedValue: null },
+      // Fase 1 — T1: respondeu depois do último contato → a bola está com o Montinho.
+      { id: "L7", contactId: "C7", nome: "Respondeu", status: "aberto", createdAt: "2026-09-01", lastContactAt: "2026-09-03T10:00:00-03:00", firstResponseAt: "2026-09-01", lastReplyAt: "2026-09-04T09:00:00-03:00", nextAction: "Aguardando resposta", nextActionAt: "2026-09-05", stageCode: "contato", proposalSentAt: null, expectedValue: 500 },
+      { id: "L8", contactId: "C8", nome: "RespondeuAntes", status: "aberto", createdAt: "2026-08-20", lastContactAt: "2026-09-03T10:00:00-03:00", firstResponseAt: "2026-08-20", lastReplyAt: "2026-09-02T09:00:00-03:00", nextAction: "Aguardando resposta", nextActionAt: "2026-09-05", stageCode: "contato", proposalSentAt: null, expectedValue: 500 },
     ],
     tarefas: [{ id: "T1", leadId: "L2", clientId: null, contactId: "C2", nome: "Mariana", titulo: "Ligar", dueAt: "2026-09-03T09:00:00-03:00", priority: "alta" }],
     trials: [{ id: "X1", leadId: "L3", contactId: "C3", nome: "Ricardo", scheduledAt: "2026-09-04T18:00:00-03:00", status: "agendada" }],
@@ -211,6 +214,13 @@ bloco("9. LEAD SCORING EXPLICÁVEL E TELA HOJE");
   ok("lead ganho não aparece", !por.Ganho);
   ok("lead 'aberto' parado na etapa ganho não aparece", !por.JaComprou);
   ok("lead 'aberto' parado na etapa perdido não aparece", !por.JaPerdeu);
+  ok("Respondeu: última resposta depois do último contato → prioridade 1, grupo respondeu_aguardando_voce", por.Respondeu?.prioridade === 1 && por.Respondeu.grupo === "respondeu_aguardando_voce" && /esperando você/.test(por.Respondeu.motivo), JSON.stringify(por.Respondeu));
+  ok("RespondeuAntes: Montinho já respondeu depois dela → não entra como 'esperando você'", por.RespondeuAntes?.grupo !== "respondeu_aguardando_voce", por.RespondeuAntes?.grupo);
+  // Temperatura: só a resposta real conta como resposta.
+  const contatadoSemResposta = classificarLead({ diasDesdeUltimoContato: 0, respondeu: false, pediuPreco: false, pediuHorario: false, experimentalAgendada: false, experimentalRealizada: false, propostaEnviada: true, respondeuProposta: false, interacoes: 1, intencaoDeclarada: false });
+  ok("contatado sem resposta real: 'nunca respondeu' pesa, sem 'respondeu hoje'", contatadoSemResposta.motivos.includes("nunca respondeu") && !contatadoSemResposta.motivos.includes("respondeu hoje"));
+  const respondeuHoje = classificarLead({ diasDesdeUltimoContato: 0, respondeu: true, pediuPreco: false, pediuHorario: false, experimentalAgendada: false, experimentalRealizada: false, propostaEnviada: true, respondeuProposta: true, interacoes: 2, intencaoDeclarada: false });
+  ok("respondeu à proposta: sobe a temperatura", respondeuHoje.pontos > contatadoSemResposta.pontos && respondeuHoje.motivos.includes("respondeu à proposta"));
   ok("ordem: prioridade crescente", hoje.every((x, i) => i === 0 || hoje[i - 1].prioridade <= x.prioridade));
 }
 

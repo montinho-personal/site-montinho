@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { agendarExperimental, enviarProposta, marcarPerdido, registrarAtividade } from "@/app/crm/actions";
+import { agendarExperimental, enviarProposta, marcarPerdido, marcarRespondeu } from "@/app/crm/actions";
 import { Btn, Input, Select } from "@/components/crm/ui";
 
 /**
@@ -11,7 +11,7 @@ import { Btn, Input, Select } from "@/components/crm/ui";
  *
  * Fica fechado por padrão: o card continua limpo, e quem quiser atualizar
  * toca em "Atualizar". Um toque resolve o que já tem todos os dados
- * (proposta, respondeu); o resto pede o mínimo ali mesmo (a data da
+ * (proposta, ela respondeu); o resto pede o mínimo ali mesmo (a data da
  * experimental, o motivo da perda).
  *
  * "Fechou" não vira botão de um toque de propósito: venda exige plano,
@@ -31,12 +31,11 @@ export default function AtualizarLead({ leadId, contactId, opportunityId, motivo
         Atualizar o que aconteceu
       </summary>
       <div className="flex flex-wrap gap-2 rounded-lg border border-white/10 bg-black/30 p-2">
-        <form action={registrarAtividade}>
+        {/* "Ela respondeu" registra a resposta DO LEAD (last_reply_at), não um contato do Montinho. */}
+        <form action={marcarRespondeu}>
           <input type="hidden" name="lead_id" value={leadId} />
           <input type="hidden" name="contact_id" value={contactId} />
-          <input type="hidden" name="tipo" value="message" />
-          <input type="hidden" name="descricao" value="Respondeu na conversa" />
-          <Btn tom="secundario" pequeno>Respondeu</Btn>
+          <Btn tom="secundario" pequeno>Ela respondeu</Btn>
         </form>
 
         {opportunityId && (

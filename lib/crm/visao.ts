@@ -25,10 +25,13 @@ export function visaoLead(b: Base, cat: Catalogo, lead: Lead, agora = new Date()
   const texto = atividades.map((a) => (a.descricao ?? "").toLowerCase()).join(" ");
   const ultimo = lead.last_contact_at ? diasEntre(lead.last_contact_at, agora) : null;
   const { temperatura, motivos } = classificarLead({
-    diasDesdeUltimoContato: ultimo, respondeu: !!lead.first_response_at,
+    // Resposta é a do lead (last_reply_at), não o primeiro contato do Montinho
+    // (first_response_at): ler o segundo como resposta fazia 100% dos leads
+    // contatados parecerem "responderam".
+    diasDesdeUltimoContato: ultimo, respondeu: !!lead.last_reply_at,
     pediuPreco: /pre[çc]o|valor|quanto custa|mensalidade/.test(texto), pediuHorario: /hor[áa]rio|agenda|que horas|dispon/.test(texto),
     experimentalAgendada: experimentais.some((t) => t.status === "agendada"), experimentalRealizada: experimentais.some((t) => t.status === "realizada"),
-    propostaEnviada: !!opp?.proposal_sent_at, respondeuProposta: !!opp?.proposal_sent_at && !!lead.last_contact_at && lead.last_contact_at > opp.proposal_sent_at,
+    propostaEnviada: !!opp?.proposal_sent_at, respondeuProposta: !!opp?.proposal_sent_at && !!lead.last_reply_at && lead.last_reply_at > opp.proposal_sent_at,
     interacoes: atividades.filter((a) => ["message", "call", "meeting", "follow_up"].includes(a.tipo)).length, intencaoDeclarada: /quero come[çc]ar|fechar|vamos|topo/.test(texto),
   }, { quenteMin: Number(cat.config.lead_scoring?.quente_min ?? 5), mornoMin: Number(cat.config.lead_scoring?.morno_min ?? 2) });
   return {
@@ -47,7 +50,7 @@ export function itensHoje(b: Base, cat: Catalogo, visoes: LeadVisao[], agora = n
   const renovacaoDias = (cat.config.renovacao?.alertas_dias_antes as number[] | undefined) ?? [30, 14, 7];
   const nome = (id: string) => b.contatos.find((c) => c.id === id)?.nome ?? "Contato";
   return prioridadesHoje({
-    leads: visoes.map((v) => ({ id: v.lead.id, contactId: v.contato.id, nome: v.contato.nome, status: v.lead.status, createdAt: v.lead.created_at, lastContactAt: v.lead.last_contact_at, firstResponseAt: v.lead.first_response_at, nextAction: v.lead.next_action, nextActionAt: v.lead.next_action_at, stageCode: v.etapa?.code ?? null, proposalSentAt: v.opp?.proposal_sent_at ?? null, expectedValue: v.opp?.expected_value ?? null, temperatura: v.temperatura, opportunityId: v.opp?.id })),
+    leads: visoes.map((v) => ({ id: v.lead.id, contactId: v.contato.id, nome: v.contato.nome, status: v.lead.status, createdAt: v.lead.created_at, lastContactAt: v.lead.last_contact_at, firstResponseAt: v.lead.first_response_at, lastReplyAt: v.lead.last_reply_at, nextAction: v.lead.next_action, nextActionAt: v.lead.next_action_at, stageCode: v.etapa?.code ?? null, proposalSentAt: v.opp?.proposal_sent_at ?? null, expectedValue: v.opp?.expected_value ?? null, temperatura: v.temperatura, opportunityId: v.opp?.id })),
     tarefas: b.tarefas.filter((t) => !t.completed_at).map((t) => ({ id: t.id, leadId: t.lead_id, clientId: t.client_id, contactId: t.contact_id, nome: t.contact_id ? nome(t.contact_id) : "—", titulo: t.titulo, dueAt: t.due_at, priority: t.priority })),
     trials: b.experimentais.map((t) => ({ id: t.id, leadId: t.lead_id, contactId: t.contact_id, nome: nome(t.contact_id), scheduledAt: t.scheduled_at, status: t.status })),
     clientes: b.clientes.map((c) => ({ id: c.id, contactId: c.contact_id, nome: nome(c.contact_id), renewalDate: c.renewal_date, status: c.status })),
