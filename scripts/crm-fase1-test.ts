@@ -3,6 +3,7 @@
  *   npx tsx scripts/crm-fase1-test.ts
  */
 import { cicloDeFollowUps, ehFollowUp, esgotouFollowUps, motivoDecidir } from "../lib/crm/ciclo";
+import { dataDoCheckIn, tarefasDeOnboarding } from "../lib/crm/onboarding";
 
 let falhas = 0;
 const ok = (nome: string, cond: boolean, detalhe = "") => {
@@ -50,6 +51,17 @@ bloco("T2. CONTADOR POR CICLO");
 {
   const c = cicloDeFollowUps([], [fu("01", "x", "negociacao_antiga"), fu("02", "x", "proposta_sem_follow_up"), fu("03", "x", "follow_up_atrasado"), { ocorreuEm: "2026-09-04T10:00:00Z", tipo: "message", metadata: { grupo: "quente", follow_up: false } }]);
   ok("mensagem de 'quente' (próximo passo) não é cobrança: 3, não 4", c.followUps === 3);
+}
+
+bloco("T3. ONBOARDING D+3 / D+10 / D+21");
+{
+  const ts = tarefasDeOnboarding("2026-09-13");
+  ok("três tarefas", ts.length === 3 && ts.every((t) => t.tipo === "onboarding"));
+  ok("dias 3, 10 e 21", ts.map((t) => t.dia).join(",") === "3,10,21");
+  ok("D+3 de 13/09 cai em 16/09 às 10h de Brasília (13h UTC)", ts[0].due_at === "2026-09-16T13:00:00.000Z", ts[0].due_at);
+  ok("D+21 de 13/09 cai em 04/10", ts[2].due_at.startsWith("2026-10-04T13:00"), ts[2].due_at);
+  ok("títulos distinguem os três momentos", new Set(ts.map((t) => t.titulo)).size === 3 && ts.every((t) => /Check-in D\+\d+/.test(t.titulo)));
+  ok("virada de mês: D+21 de 25/09 = 16/10", dataDoCheckIn("2026-09-25", 21).startsWith("2026-10-16"));
 }
 
 console.log("\n" + "=".repeat(64) + `\n${falhas === 0 ? "TODOS OS TESTES PASSARAM" : `${falhas} FALHA(S)`}\n` + "=".repeat(64));
