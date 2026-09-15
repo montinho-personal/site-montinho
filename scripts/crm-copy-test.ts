@@ -66,7 +66,7 @@ bloco("3. GRUPO → SITUAÇÃO");
 const base: Sinais = {
   pergunta: "", indicador: "", pagina: "", anuncio: false, jaContatado: false, propostaEnviada: false, diasProposta: null, etapa: null,
   exigeExperimental: true, experimentalAgendada: false, experimentalRealizada: false, experimentalNoShow: false,
-  cliente: undefined, renovaEm: null, diasDeCliente: null, jaIndicou: false,
+  cliente: undefined, renovaEm: null, diasDeCliente: null, diasForaDeTreino: null, jaIndicou: false,
 };
 const S = (x: Partial<Sinais>): Sinais => ({ ...base, ...x });
 ok("novo, só clicou, com página → site", escolherSituacao("novo_sem_contato", S({ pagina: "Consultoria Online" })) === "primeiro_contato_site");
@@ -100,8 +100,16 @@ const cli = (status: string, renovaEm: number | null, extra: Partial<Sinais> = {
 ok("renovação próxima", escolherSituacao("renovacao_proxima", cli("ativo", 7)) === "renovacao_proxima");
 ok("renovação vencida", escolherSituacao("renovacao_vencida", cli("ativo", -3)) === "renovacao_vencida");
 ok("tarefa em cliente ativo com renovação vencida → vencida", escolherSituacao("follow_up_atrasado", cli("ativo", -3)) === "renovacao_vencida");
-ok("tarefa em cliente pausado → reativação", escolherSituacao("follow_up_hoje", cli("pausado", null)) === "reativacao_pausado");
-ok("sem grupo, cliente cancelado → reativação", escolherSituacao(null, cli("cancelado", null)) === "reativacao_pausado");
+/*
+ * Reativação: o tempo fora decide o que dá para dizer. Na base de 15/09/2026
+ * as saídas iam de 11 dias (pausa) a 727 (outra vida) — a mesma frase para as
+ * duas pontas erraria em uma delas.
+ */
+ok("pausa de 11 dias → conversa de pausa, não de sumiço", escolherSituacao("follow_up_hoje", cli("pausado", null, { diasForaDeTreino: 11 })) === "reativacao_pausa_recente");
+ok("fora há 79 dias → reativação padrão", escolherSituacao("follow_up_hoje", cli("cancelado", null, { diasForaDeTreino: 79 })) === "reativacao_pausado");
+ok("fora há 727 dias → mensagem de reencontro", escolherSituacao(null, cli("cancelado", null, { diasForaDeTreino: 727 })) === "reativacao_antiga");
+ok("fora há 365 dias ainda é reativação padrão (limite)", escolherSituacao(null, cli("cancelado", null, { diasForaDeTreino: 365 })) === "reativacao_pausado");
+ok("sem data de saída → reativação padrão", escolherSituacao(null, cli("cancelado", null)) === "reativacao_pausado");
 // Depois da venda: quem acabou de entrar não recebe conversa de renovação.
 ok("aluno de 3 dias → boas-vindas", escolherSituacao(null, cli("ativo", 27, { diasDeCliente: 3 })) === "boas_vindas");
 ok("aluno de 3 dias com renovação vencida → vencida ainda vence", escolherSituacao(null, cli("ativo", -2, { diasDeCliente: 3 })) === "renovacao_vencida");
