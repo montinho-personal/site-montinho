@@ -11,7 +11,8 @@
  *  - experimental realizada cria tarefa de proposta; no-show cria reativação.
  */
 import { GRUPOS_FOLLOW_UP } from "@/lib/crm/ciclo";
-import { tarefasDeOnboarding } from "@/lib/crm/onboarding";
+import { dataDoCheckIn, tarefasDeOnboarding } from "@/lib/crm/onboarding";
+import { FUSO } from "@/lib/crm/copy";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { exigirAdmin, exigirEscrita, exigirUsuario } from "@/lib/crm/auth";
@@ -233,6 +234,50 @@ export async function marcarRespondeu(fd: FormData) {
       await atividade(sb, u.id, { contact_id: contactId, lead_id: leadId, opportunity_id: opp.id, tipo: "stage_change", descricao: `Etapa: ${c.nome}` });
     }
   }
+  revalidarTudo(["/crm", "/crm/leads", `/crm/leads/${leadId}`]);
+}
+
+/**
+ * Adiar: "me chama em outubro". A próxima ação vai para a data escolhida
+ * (3 dias, 1 semana ou uma data), o lead some da lista de hoje até lá e
+ * volta como "próxima ação vencida" no dia. Fica no histórico com
+ * metadata.adiado, que também reinicia o ciclo de follow-ups.
+ */
+export async function adiarLead(fd: FormData) {
+  const u = await exigirEscrita();
+  const sb = await supabaseServer();
+  const leadId = s(fd, "lead_id")!; const contactId = s(fd, "contact_id");
+  const dias = n(fd, "dias"); const ate = s(fd, "ate");
+  const quando = ate ? dataDoCheckIn(ate, 0) : dias ? dataDoCheckIn(new Date().toLocaleDateString("en-CA", { timeZone: FUSO }), dias) : null;
+  if (!quando || new Date(quando) <= new Date()) throw new Error("Adiar exige uma data no futuro.");
+  const { data: lead } = await sb.from("crm_leads").select("next_action").eq("id", leadId).single();
+  const acao = lead?.next_action && !/^Aguardando resposta$/.test(lead.next_action) ? lead.next_action : "Retomar conversa";
+  await erroSe(await sb.from("crm_leads").update({ next_action: acao, next_action_at: quando }).eq("id", leadId), "adiar");
+  // A cadência atual deixa de valer: as tarefas de follow-up abertas fecham; o adiamento é a nova data.
+  await sb.from("crm_tasks").update({ completed_at: new Date().toISOString() }).eq("lead_id", leadId).in("tipo", ["follow_up", "reativacao"]).is("completed_at", null);
+  await atividade(sb, u.id, { contact_id: contactId, lead_id: leadId, tipo: "note", descricao: `Adiado até ${new Date(quando).toLocaleDateString("pt-BR", { timeZone: FUSO })}`, metadata: { adiado: true, ate: quando } });
+  revalidarTudo(["/crm", "/crm/leads", `/crm/leads/${leadId}`]);
+}
+
+/** Deixar em paz: sem follow-up comercial até o Montinho retomar. Não mexe em consentimento nem fecha o lead. */
+export async function deixarEmPaz(fd: FormData) {
+  const u = await exigirEscrita();
+  const sb = await supabaseServer();
+  const leadId = s(fd, "lead_id")!; const contactId = s(fd, "contact_id");
+  const agora = new Date().toISOString();
+  await erroSe(await sb.from("crm_leads").update({ em_paz_at: agora, next_action: null, next_action_at: null }).eq("id", leadId), "deixar em paz");
+  await sb.from("crm_tasks").update({ completed_at: agora }).eq("lead_id", leadId).in("tipo", ["follow_up", "reativacao", "primeiro_contato"]).is("completed_at", null);
+  await atividade(sb, u.id, { contact_id: contactId, lead_id: leadId, tipo: "note", descricao: "Deixado em paz — sem follow-up comercial até retomar", ocorreu_em: agora, metadata: { em_paz: true } });
+  revalidarTudo(["/crm", "/crm/leads", `/crm/leads/${leadId}`]);
+}
+
+export async function retomarContato(fd: FormData) {
+  const u = await exigirEscrita();
+  const sb = await supabaseServer();
+  const leadId = s(fd, "lead_id")!; const contactId = s(fd, "contact_id");
+  const amanha = addDias(new Date(), 1);
+  await erroSe(await sb.from("crm_leads").update({ em_paz_at: null, next_action: "Retomar conversa", next_action_at: amanha.toISOString() }).eq("id", leadId), "retomar");
+  await atividade(sb, u.id, { contact_id: contactId, lead_id: leadId, tipo: "note", descricao: "Contato retomado (saiu de 'deixar em paz')", metadata: { adiado: true } });
   revalidarTudo(["/crm", "/crm/leads", `/crm/leads/${leadId}`]);
 }
 

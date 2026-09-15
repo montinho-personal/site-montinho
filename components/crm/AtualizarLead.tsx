@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { agendarExperimental, enviarProposta, marcarPerdido, marcarRespondeu } from "@/app/crm/actions";
+import { adiarLead, agendarExperimental, deixarEmPaz, enviarProposta, marcarPerdido, marcarRespondeu } from "@/app/crm/actions";
 import { Btn, Input, Select } from "@/components/crm/ui";
 
 /**
@@ -66,6 +66,15 @@ export default function AtualizarLead({ leadId, contactId, opportunityId, motivo
         <Link href={`/crm/leads/${leadId}`} className="inline-flex items-center rounded-lg border border-white/20 px-3 py-1.5 text-sm hover:bg-white/10">
           Fechou →
         </Link>
+
+        {/* Segunda linha: parar de cobrar. Adiar volta na data; deixar em paz só volta à mão. */}
+        <div className="flex basis-full flex-wrap items-center gap-2 border-t border-white/10 pt-2 text-xs text-zinc-500">
+          <span>Adiar:</span>
+          <form action={adiarLead}><input type="hidden" name="lead_id" value={leadId} /><input type="hidden" name="contact_id" value={contactId} /><input type="hidden" name="dias" value="3" /><Btn tom="ghost" pequeno>3 dias</Btn></form>
+          <form action={adiarLead}><input type="hidden" name="lead_id" value={leadId} /><input type="hidden" name="contact_id" value={contactId} /><input type="hidden" name="dias" value="7" /><Btn tom="ghost" pequeno>1 semana</Btn></form>
+          <form action={adiarLead} className="flex items-center gap-1"><input type="hidden" name="lead_id" value={leadId} /><input type="hidden" name="contact_id" value={contactId} /><Input type="date" name="ate" required className="w-auto px-2 py-1 text-sm" aria-label="Adiar até" /><Btn tom="ghost" pequeno>Até a data</Btn></form>
+          <form action={deixarEmPaz} className="ml-auto"><input type="hidden" name="lead_id" value={leadId} /><input type="hidden" name="contact_id" value={contactId} /><Btn tom="ghost" pequeno>Deixar em paz</Btn></form>
+        </div>
       </div>
     </details>
   );

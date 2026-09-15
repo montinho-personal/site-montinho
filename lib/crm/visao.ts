@@ -15,6 +15,12 @@ export interface LeadVisao {
   cliente: ClienteRow | undefined; ciclo: Ciclo;
 }
 
+/** Até quando o lead foi adiado pelo botão Adiar (a última nota com metadata.adiado e ate). */
+export function adiadoAte(atividades: Atividade[]): string | null {
+  const a = atividades.filter((x) => x.metadata?.adiado === true && typeof x.metadata?.ate === "string").sort((x, y) => y.ocorreu_em.localeCompare(x.ocorreu_em))[0];
+  return a ? String(a.metadata.ate) : null;
+}
+
 /** Marcos que reiniciam o ciclo de follow-ups de um lead (ver lib/crm/ciclo.ts). */
 export function cicloDoLead(b: Base, lead: Lead, opp: Oportunidade | undefined, atividades: Atividade[], experimentais: Experimental[]): Ciclo {
   const ultimaEtapa = opp ? b.historicoEtapas.filter((h) => h.opportunity_id === opp.id).map((h) => h.changed_at).sort().at(-1) : null;
@@ -63,8 +69,8 @@ export function itensHoje(b: Base, cat: Catalogo, visoes: LeadVisao[], agora = n
   const renovacaoDias = (cat.config.renovacao?.alertas_dias_antes as number[] | undefined) ?? [30, 14, 7];
   const nome = (id: string) => b.contatos.find((c) => c.id === id)?.nome ?? "Contato";
   return prioridadesHoje({
-    leads: visoes.map((v) => ({ id: v.lead.id, contactId: v.contato.id, nome: v.contato.nome, status: v.lead.status, createdAt: v.lead.created_at, lastContactAt: v.lead.last_contact_at, firstResponseAt: v.lead.first_response_at, lastReplyAt: v.lead.last_reply_at, followUpsNoCiclo: v.ciclo.followUps, promessaFeita: v.ciclo.promessaFeita, motivoDecidir: motivoDecidir(v.ciclo), nextAction: v.lead.next_action, nextActionAt: v.lead.next_action_at, stageCode: v.etapa?.code ?? null, proposalSentAt: v.opp?.proposal_sent_at ?? null, expectedValue: v.opp?.expected_value ?? null, temperatura: v.temperatura, opportunityId: v.opp?.id })),
-    tarefas: b.tarefas.filter((t) => !t.completed_at).map((t) => ({ id: t.id, leadId: t.lead_id, clientId: t.client_id, contactId: t.contact_id, nome: t.contact_id ? nome(t.contact_id) : "—", titulo: t.titulo, dueAt: t.due_at, priority: t.priority })),
+    leads: visoes.map((v) => ({ id: v.lead.id, contactId: v.contato.id, nome: v.contato.nome, status: v.lead.status, createdAt: v.lead.created_at, lastContactAt: v.lead.last_contact_at, firstResponseAt: v.lead.first_response_at, lastReplyAt: v.lead.last_reply_at, followUpsNoCiclo: v.ciclo.followUps, promessaFeita: v.ciclo.promessaFeita, motivoDecidir: motivoDecidir(v.ciclo), emPaz: !!v.lead.em_paz_at, adiadoAte: adiadoAte(v.atividades), nextAction: v.lead.next_action, nextActionAt: v.lead.next_action_at, stageCode: v.etapa?.code ?? null, proposalSentAt: v.opp?.proposal_sent_at ?? null, expectedValue: v.opp?.expected_value ?? null, temperatura: v.temperatura, opportunityId: v.opp?.id })),
+    tarefas: b.tarefas.filter((t) => !t.completed_at).map((t) => ({ id: t.id, leadId: t.lead_id, clientId: t.client_id, contactId: t.contact_id, nome: t.contact_id ? nome(t.contact_id) : "—", titulo: t.titulo, dueAt: t.due_at, priority: t.priority, tipo: t.tipo })),
     trials: b.experimentais.map((t) => ({ id: t.id, leadId: t.lead_id, contactId: t.contact_id, nome: nome(t.contact_id), scheduledAt: t.scheduled_at, status: t.status })),
     clientes: b.clientes.map((c) => ({ id: c.id, contactId: c.contact_id, nome: nome(c.contact_id), renewalDate: c.renewal_date, status: c.status })),
     sla, renovacaoDias,

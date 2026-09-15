@@ -19,7 +19,7 @@ export interface Contato {
 export interface Lead {
   id: string; contact_id: string; service_id: string | null; interesse: string | null; status: "aberto" | "ganho" | "perdido" | "inativo";
   source_code: string; source_detail: string | null; attribution_confidence: Confianca; handoff_id: string | null; referred_by_contact_id: string | null;
-  owner_id: string | null; next_action: string | null; next_action_at: string | null; last_contact_at: string | null; first_response_at: string | null; last_reply_at: string | null;
+  owner_id: string | null; next_action: string | null; next_action_at: string | null; last_contact_at: string | null; first_response_at: string | null; last_reply_at: string | null; em_paz_at: string | null;
   lost_at: string | null; lost_reason_code: string | null; lost_reason_text: string | null; reactivation_eligible_at: string | null; created_at: string; updated_at: string;
 }
 export interface Oportunidade {

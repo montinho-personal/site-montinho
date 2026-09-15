@@ -53,6 +53,11 @@ bloco("T2. CONTADOR POR CICLO");
   ok("mensagem de 'quente' (próximo passo) não é cobrança: 3, não 4", c.followUps === 3);
 }
 
+bloco("T5. ADIAR — DATAS");
+ok("3 dias a partir de 15/09 = 18/09 às 10h de Brasília", dataDoCheckIn("2026-09-15", 3) === "2026-09-18T13:00:00.000Z", dataDoCheckIn("2026-09-15", 3));
+ok("1 semana a partir de 15/09 = 22/09", dataDoCheckIn("2026-09-15", 7).startsWith("2026-09-22T13:00"));
+ok("data escolhida (01/10) respeitada", dataDoCheckIn("2026-10-01", 0) === "2026-10-01T13:00:00.000Z", dataDoCheckIn("2026-10-01", 0));
+
 bloco("T3. ONBOARDING D+3 / D+10 / D+21");
 {
   const ts = tarefasDeOnboarding("2026-09-13");
