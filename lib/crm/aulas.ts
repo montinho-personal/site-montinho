@@ -75,6 +75,62 @@ export function resumoDoPacote(usadas: number, contratadas: number | null | unde
   return { usadas, contratadas, restantes, terminou: usadas >= contratadas };
 }
 
+/**
+ * Ritmo do aluno no pacote flexível.
+ *
+ * Sem rotina fixa, a única forma de saber quando o pacote acaba é olhar o
+ * que já aconteceu: quantos dias entre uma aula e a seguinte. Isso responde
+ * as duas perguntas que importam — há quanto tempo essa pessoa treina neste
+ * pacote, e quando ele deve fechar no ritmo atual.
+ *
+ * A conta é do INTERVALO, não do total dividido pelas semanas: com 14 aulas
+ * em 40 dias, o que se repete é "uma aula a cada 3 dias", e é isso que
+ * projeta as próximas. Duas aulas é o mínimo — com uma só não há ritmo,
+ * e inventar um a partir de um ponto seria chute com cara de número.
+ */
+export interface Ritmo {
+  primeira: string | null; ultima: string | null;
+  diasCorridos: number | null; semanas: number | null;
+  intervaloMedio: number | null; porSemana: number | null;
+  diasDesdeUltima: number | null;
+  fimPrevisto: string | null; diasParaFim: number | null;
+}
+
+const DIA = 86_400_000;
+const emDias = (a: string, b: string) => Math.round((Date.parse(`${b}T12:00:00Z`) - Date.parse(`${a}T12:00:00Z`)) / DIA);
+
+export function ritmoDoPacote(datas: string[], restantes: number | null = null, hoje = new Date()): Ritmo {
+  const xs = [...datas].sort();
+  const vazio: Ritmo = { primeira: null, ultima: null, diasCorridos: null, semanas: null, intervaloMedio: null, porSemana: null, diasDesdeUltima: null, fimPrevisto: null, diasParaFim: null };
+  if (xs.length === 0) return vazio;
+  const primeira = xs[0]; const ultima = xs[xs.length - 1];
+  const dia = hoje.toISOString().slice(0, 10);
+  const diasDesdeUltima = Math.max(0, emDias(ultima, dia));
+  if (xs.length < 2) return { ...vazio, primeira, ultima, diasCorridos: 0, semanas: 0, diasDesdeUltima };
+
+  const diasCorridos = emDias(primeira, ultima);
+  // Todas no mesmo dia: existe pacote, mas ainda não existe ritmo.
+  if (diasCorridos <= 0) return { ...vazio, primeira, ultima, diasCorridos: 0, semanas: 0, diasDesdeUltima };
+  const intervaloMedio = diasCorridos / (xs.length - 1);
+  const porSemana = 7 / intervaloMedio;
+
+  let fimPrevisto: string | null = null; let diasParaFim: number | null = null;
+  if (restantes != null && restantes > 0) {
+    // Conta do último marco real: a última aula, ou hoje se o aluno sumiu desde então.
+    const partida = ultima > dia ? ultima : dia;
+    diasParaFim = Math.round(restantes * intervaloMedio);
+    fimPrevisto = new Date(Date.parse(`${partida}T12:00:00Z`) + diasParaFim * DIA).toISOString().slice(0, 10);
+  }
+  return { primeira, ultima, diasCorridos, semanas: diasCorridos / 7, intervaloMedio, porSemana, diasDesdeUltima, fimPrevisto, diasParaFim };
+}
+
+/** "2,3 aulas por semana, uma a cada 3 dias" — o ritmo em português. */
+export function descreverRitmo(r: Ritmo): string {
+  if (r.porSemana == null || r.intervaloMedio == null) return "ritmo ainda não dá para calcular";
+  const n = (x: number) => x.toLocaleString("pt-BR", { maximumFractionDigits: 1 });
+  return `${n(r.porSemana)} aulas por semana, uma a cada ${n(r.intervaloMedio)} dias`;
+}
+
 /** "06/08, 07/08, 10/08" — como o aluno lê, na ordem em que aconteceu. */
 export function formatarDatas(datas: string[]): string {
   return datas.map((d) => `${d.slice(8, 10)}/${d.slice(5, 7)}`).join(", ");

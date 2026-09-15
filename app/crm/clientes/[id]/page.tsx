@@ -6,7 +6,7 @@ import { mensagemPara } from "@/lib/crm/copy";
 import { ltvRealizado, mrrDoContrato, diasEntre } from "@/lib/crm/metricas";
 import { Badge, Btn, Campo, Card, Detalhes, Input, Pagina, Select, Stat, Tabela, Textarea, brl, dataBr, dataHoraBr, dataInput } from "@/components/crm/ui";
 import { cancelarCliente, criarTarefa, definirPacote, gerarCodigoIndicacao, marcarRecebido, registrarAtividade, registrarReceita, removerAula, renovarContrato } from "../../actions";
-import { formatarDatas, resumoDoPacote } from "@/lib/crm/aulas";
+import { descreverRitmo, formatarDatas, resumoDoPacote, ritmoDoPacote } from "@/lib/crm/aulas";
 import ColarAulas from "@/components/crm/ColarAulas";
 
 export default async function ClientePage({ params }: { params: Promise<{ id: string }> }) {
@@ -28,6 +28,7 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
   // Pacote flexível: as aulas do contrato ativo (as antigas, sem contrato, entram pela data).
   const aulas = b.aulas.filter((a) => a.client_id === c.id && (!contratoAtivo || a.contract_id === contratoAtivo.id || (!a.contract_id && a.data >= contratoAtivo.inicio))).sort((a, z) => a.data.localeCompare(z.data));
   const pacote = resumoDoPacote(aulas.length, contratoAtivo?.sessoes_contratadas ?? null);
+  const ritmo = ritmoDoPacote(aulas.map((a) => a.data), pacote.restantes);
   const meses = diasEntre(c.first_purchase_at, c.cancelled_at ?? new Date().toISOString()) / 30.44;
   const ro = u.role === "readonly";
   const refUrl = contato.referral_code ? `https://www.montinhopersonal.com.br/r/${contato.referral_code}` : null;
@@ -99,6 +100,21 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
                 <div className="mt-2 h-2 overflow-hidden rounded-full bg-white/10">
                   <div className="h-full rounded-full bg-emerald-400" style={{ width: `${Math.min(100, (pacote.usadas / pacote.contratadas) * 100)}%` }} />
                 </div>
+                {/* O ritmo é o que diz quando vender o próximo pacote — e quem está sumindo. */}
+                {ritmo.semanas != null && ritmo.semanas > 0 && (
+                  <dl className="mt-3 grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
+                    <div><dt className="text-xs text-zinc-500">Treinando há</dt><dd className="font-medium">{ritmo.semanas.toLocaleString("pt-BR", { maximumFractionDigits: 1 })} semanas</dd></div>
+                    <div><dt className="text-xs text-zinc-500">Ritmo</dt><dd className="font-medium">{ritmo.porSemana?.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}/semana</dd></div>
+                    <div><dt className="text-xs text-zinc-500">Entre aulas</dt><dd className="font-medium">{ritmo.intervaloMedio?.toLocaleString("pt-BR", { maximumFractionDigits: 1 })} dias</dd></div>
+                    <div>
+                      <dt className="text-xs text-zinc-500">{pacote.terminou ? "Última aula" : "Fecha por volta de"}</dt>
+                      <dd className="font-medium">{pacote.terminou ? dataBr(ritmo.ultima) : ritmo.fimPrevisto ? dataBr(ritmo.fimPrevisto) : "—"}</dd>
+                    </div>
+                  </dl>
+                )}
+                {ritmo.diasDesdeUltima != null && ritmo.intervaloMedio != null && ritmo.diasDesdeUltima > Math.max(10, ritmo.intervaloMedio * 3) && !pacote.terminou && (
+                  <p className="mt-2 text-sm text-amber-300">Última aula há {ritmo.diasDesdeUltima} dias, bem acima do ritmo dele ({descreverRitmo(ritmo)}). Vale perguntar o que aconteceu antes de o pacote esfriar.</p>
+                )}
               </>
             )}
             {aulas.length > 0 && (
