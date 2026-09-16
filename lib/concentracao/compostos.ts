@@ -27,6 +27,14 @@ export const COMPOSTOS: readonly Composto[] = [
   { id: "ipamorelina", nome: "Ipamorelina" },
   { id: "tesamorelina", nome: "Tesamorelina" },
   { id: "aod-9604", nome: "AOD-9604" },
+  /*
+   * Insulina está nesta lista para ser BARRADA, não calculada. Antes disso
+   * havia uma pergunta separada ("o líquido é insulina?") antes de qualquer
+   * campo — um passo a mais para todo mundo por causa de um caso. Aqui a
+   * pessoa escolhe o que tem no frasco, e escolher insulina leva ao aviso em
+   * vez do resultado. O componente trata este id como saída, não como nome.
+   */
+  { id: "insulina", nome: "Insulina" },
   { id: "outro", nome: "Outro" },
   { id: "nao-informar", nome: "Prefiro não informar" },
 ] as const;
