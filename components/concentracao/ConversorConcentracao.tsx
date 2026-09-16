@@ -93,6 +93,13 @@ export default function ConversorConcentracao({ placement }: { placement: string
   const [concTxt, setConcTxt] = useState("");
   const [tipo, setTipo] = useState<Tipo>(null);
   const [escalaOk, setEscalaOk] = useState<EscalaOk>(null);
+  /*
+   * Duas entradas desenham a mesma seringa: a dose prescrita e o slider de
+   * marquinha. Quem manda é a última que a pessoa tocou — qualquer outra
+   * regra faz um dos dois campos parecer quebrado, porque o desenho ignoraria
+   * o que acabou de ser digitado.
+   */
+  const [ultimoAjuste, setUltimoAjuste] = useState<"dose" | "marquinha">("dose");
   const [composto, setComposto] = useState<string>("");
   const [mgPrescritoTxt, setMgPrescritoTxt] = useState("");
   const [copiado, setCopiado] = useState(false);
@@ -126,6 +133,9 @@ export default function ConversorConcentracao({ placement }: { placement: string
   const vMgPrescrito = validarMg(mgPrescritoTxt);
   const prescrito = concentracao != null && vMgPrescrito.valor != null
     ? localizarQuantidadePrescrita(concentracao, vMgPrescrito.valor) : null;
+  const marcaDesenhada = ultimoAjuste === "dose" && prescrito?.status === "ok"
+    ? prescrito.marcaAproximada
+    : marca ?? (prescrito?.status === "ok" ? prescrito.marcaAproximada : null);
   const jaConverteu = useRef(false);
   useEffect(() => {
     if (prescrito && prescrito.status !== "invalido" && !jaConverteu.current) {
@@ -151,6 +161,7 @@ export default function ConversorConcentracao({ placement }: { placement: string
 
   function escolherMarca(n: number | null) {
     setMarca(n);
+    setUltimoAjuste("marquinha");
     setMarcaTxt(n == null ? "" : String(n));
     if (n != null && !jaMoveu.current) { jaMoveu.current = true; trackEvent("u100_mark_change", { placement }); }
   }
@@ -440,7 +451,76 @@ export default function ConversorConcentracao({ placement }: { placement: string
                 </details>
               </div>
 
-              {/* A marca */}
+              {/*
+                O caminho inverso. Ele existe porque metade das pessoas chega
+                com o número já na mão — o prescritor falou em mg, e a seringa
+                fala em marca. O que mantém isto do lado da explicação é o
+                enunciado do campo: ele pergunta o que foi PRESCRITO, não o
+                que a pessoa quer. E a saída não arredonda para a marca
+                "certa": 10,4 aparece como 10,4, porque uma quantidade que não
+                cai numa marca é uma conversa com o prescritor, não um
+                arredondamento que a ferramenta faz sozinha.
+              */}
+              <div className="border border-white/15 p-5 sm:p-6 mb-6">
+                <p className="text-white font-bold text-lg mb-2" style={h}>Converter a dose prescrita em mL e na marquinha</p>
+                <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                  Se um profissional habilitado já passou a dose em mg, veja quantos mL ela dá e em que marquinha desta seringa ela cai. A ferramenta não escolhe a dose: ela só converte a que você informou.
+                </p>
+                <div className="flex items-center gap-3 max-w-xs mb-3">
+                  <label htmlFor={`${uid}-presc`} className="sr-only">Dose prescrita em mg</label>
+                  <input id={`${uid}-presc`} type="text" inputMode="decimal" autoComplete="off" placeholder="2,5" value={mgPrescritoTxt}
+                    onChange={(e) => { setMgPrescritoTxt(e.target.value); setUltimoAjuste("dose"); }} className={inputCls} aria-describedby={`${uid}-presc-saida`} />
+                  <span className="text-gray-300 text-lg">mg</span>
+                </div>
+                <div id={`${uid}-presc-saida`} aria-live="polite">
+                  {mgPrescritoTxt && vMgPrescrito.erro && vMgPrescrito.erro !== "vazio" && (
+                    <p className="text-gray-400 text-sm">{MENSAGEM_ERRO[vMgPrescrito.erro]}</p>
+                  )}
+                  {prescrito?.status === "ok" && (
+                    <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.06] p-4 sm:p-5">
+                      <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-1" style={{ color: OURO }}>Puxe até a</p>
+                      <p className="text-white font-bold text-4xl sm:text-5xl leading-none mb-2" style={h}>
+                        marquinha {formatarMarca(prescrito.marcaAproximada)}
+                      </p>
+                      <p className="text-gray-300 leading-relaxed mb-3">
+                        São {formatarMlFino(prescrito.volumeMl)} mL de líquido.
+                      </p>
+                      <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                        A conta: {formatarMg(prescrito.mgPrescrito)} mg ÷ {formatarConcentracao(concentracao)} mg/mL = {formatarMlFino(prescrito.volumeMl)} mL, e cada marquinha vale 0,01 mL.
+                      </p>
+                      {!Number.isInteger(prescrito.marcaAproximada) && (
+                        <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                          Repare que não cai numa marquinha inteira. Seringa não tem precisão de décimo de marquinha — se a diferença importa no seu caso, quem resolve isso é quem prescreveu.
+                        </p>
+                      )}
+                      <p className="text-white text-sm leading-relaxed font-semibold">
+                        Confira este número com quem prescreveu antes de usar. A ferramenta conferiu a matemática, não a adequação ao seu caso.
+                      </p>
+                    </div>
+                  )}
+                  {prescrito?.status === "fora_da_seringa" && (
+                    <div role="alert" className="border border-white/40 bg-black/60 p-4">
+                      <p className="text-white font-semibold leading-relaxed mb-2">Essa dose não cabe nesta seringa</p>
+                      <p className="text-gray-300 text-sm leading-relaxed">
+                        Nesta concentração, {formatarMg(prescrito.mgPrescrito)} mg ocupariam {formatarMlFino(prescrito.volumeMl)} mL, e a maior dessas seringas vai só até 1,00 mL. Isso costuma significar que a concentração informada ou a quantidade estão trocadas. Confirme as duas com o prescritor ou o farmacêutico.
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/*
+                O desenho vem AQUI, colado na resposta. Quem digita a dose
+                quer ver o êmbolo parar num lugar — a régua sozinha, longe do
+                número, é decoração. Ele acompanha a última entrada que a
+                pessoa tocou: a dose enquanto ela digita, o slider quando ela
+                resolve explorar.
+              */}
+              <div className="mb-6">
+                <SeringaU100 marca={marcaDesenhada} id={`${uid}-seringa`} />
+              </div>
+
+              {/* A marquinha, para explorar a régua */}
               <div className="mb-6">
                 <label htmlFor={`${uid}-marca`} className="block text-gray-300 text-sm font-medium mb-2">Qual marquinha você quer conferir?</label>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
@@ -450,10 +530,9 @@ export default function ConversorConcentracao({ placement }: { placement: string
                   <input type="range" min={0} max={MARCA_MAX} step={1} value={marca ?? 0} onChange={(e) => escolherMarca(Number(e.target.value) || null)}
                     aria-label="Deslize para escolher a marquinha" className="w-full accent-[#BA9E50]" />
                 </div>
-                <p id={`${uid}-marca-ajuda`} className="text-gray-400 text-sm min-h-[20px] mb-3">
-                  {marcaTxt && validarMarca(marcaTxt).erro ? `Use um número inteiro de ${MARCA_MIN} a ${MARCA_MAX}.` : "Escolha uma marquinha para ver o volume e a quantidade contida. Nada é escolhido por você."}
+                <p id={`${uid}-marca-ajuda`} className="text-gray-400 text-sm min-h-[20px]">
+                  {marcaTxt && validarMarca(marcaTxt).erro ? `Use um número inteiro de ${MARCA_MIN} a ${MARCA_MAX}.` : "Mexa aqui para explorar a régua. O desenho acima acompanha."}
                 </p>
-                <SeringaU100 marca={marca} id={`${uid}-seringa`} />
               </div>
 
               {/* Resultado 2 */}
@@ -480,60 +559,6 @@ export default function ConversorConcentracao({ placement }: { placement: string
                     <p className="text-white text-sm leading-relaxed font-semibold">Isso é só a medida do que existe nesse volume. Não é uma recomendação de quanto usar.</p>
                   </div>
                 )}
-              </div>
-
-              {/*
-                O caminho inverso. Ele existe porque metade das pessoas chega
-                com o número já na mão — o prescritor falou em mg, e a seringa
-                fala em marca. O que mantém isto do lado da explicação é o
-                enunciado do campo: ele pergunta o que foi PRESCRITO, não o
-                que a pessoa quer. E a saída não arredonda para a marca
-                "certa": 10,4 aparece como 10,4, porque uma quantidade que não
-                cai numa marca é uma conversa com o prescritor, não um
-                arredondamento que a ferramenta faz sozinha.
-              */}
-              <div className="border border-white/15 p-5 sm:p-6 mb-6">
-                <p className="text-white font-bold text-lg mb-2" style={h}>Converter a dose prescrita em mL e na marquinha</p>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                  Se um profissional habilitado já passou a dose em mg, veja quantos mL ela dá e em que marquinha desta seringa ela cai. A ferramenta não escolhe a dose: ela só converte a que você informou.
-                </p>
-                <div className="flex items-center gap-3 max-w-xs mb-3">
-                  <label htmlFor={`${uid}-presc`} className="sr-only">Dose prescrita em mg</label>
-                  <input id={`${uid}-presc`} type="text" inputMode="decimal" autoComplete="off" placeholder="2,5" value={mgPrescritoTxt}
-                    onChange={(e) => setMgPrescritoTxt(e.target.value)} className={inputCls} aria-describedby={`${uid}-presc-saida`} />
-                  <span className="text-gray-300 text-lg">mg</span>
-                </div>
-                <div id={`${uid}-presc-saida`} aria-live="polite">
-                  {mgPrescritoTxt && vMgPrescrito.erro && vMgPrescrito.erro !== "vazio" && (
-                    <p className="text-gray-400 text-sm">{MENSAGEM_ERRO[vMgPrescrito.erro]}</p>
-                  )}
-                  {prescrito?.status === "ok" && (
-                    <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.06] p-4 sm:p-5">
-                      <p className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-2" style={h}>
-                        {formatarMlFino(prescrito.volumeMl)} mL <span className="text-base font-normal text-gray-300">— por volta da marquinha {formatarMarca(prescrito.marcaAproximada)}</span>
-                      </p>
-                      <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                        A conta: {formatarMg(prescrito.mgPrescrito)} mg ÷ {formatarConcentracao(concentracao)} mg/mL = {formatarMlFino(prescrito.volumeMl)} mL, e cada marquinha vale 0,01 mL.
-                      </p>
-                      {!Number.isInteger(prescrito.marcaAproximada) && (
-                        <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                          Repare que não cai numa marquinha inteira. Seringa não tem precisão de décimo de marquinha — se a diferença importa no seu caso, quem resolve isso é quem prescreveu.
-                        </p>
-                      )}
-                      <p className="text-white text-sm leading-relaxed font-semibold">
-                        Confira este número com quem prescreveu antes de usar. A ferramenta conferiu a matemática, não a adequação ao seu caso.
-                      </p>
-                    </div>
-                  )}
-                  {prescrito?.status === "fora_da_seringa" && (
-                    <div role="alert" className="border border-white/40 bg-black/60 p-4">
-                      <p className="text-white font-semibold leading-relaxed mb-2">Essa dose não cabe nesta seringa</p>
-                      <p className="text-gray-300 text-sm leading-relaxed">
-                        Nesta concentração, {formatarMg(prescrito.mgPrescrito)} mg ocupariam {formatarMlFino(prescrito.volumeMl)} mL, e a maior dessas seringas vai só até 1,00 mL. Isso costuma significar que a concentração informada ou a quantidade estão trocadas. Confirme as duas com o prescritor ou o farmacêutico.
-                      </p>
-                    </div>
-                  )}
-                </div>
               </div>
 
               {/* As três camadas, com os números da pessoa */}
