@@ -4,6 +4,7 @@ import LinkFerramentaConcentracao from "@/components/concentracao/LinkFerramenta
 import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import Link from "next/link";
+import { CANONICA } from "@/lib/ferramentas/canonica";
 import { marked } from "marked";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import PreferredSourceCTA from "@/components/google/PreferredSourceCTA";
@@ -356,6 +357,27 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraFC placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
+                )}
+                {/*
+                  O link para a página canônica da ferramenta. Ele existe
+                  porque a ausência dele custava posição: o artigo renderizava
+                  a calculadora inteira, ficava com todo o sinal, e a página
+                  /ferramentas/* não recebia caminho nenhum do blog — o que a
+                  deixava fora do pódio até para o próprio nome. A âncora
+                  carrega o termo de busca de propósito.
+                */}
+                {qualCalc && CANONICA[qualCalc] && (
+                  <p className="mt-4 text-sm leading-relaxed text-gray-400">
+                    Esta é a{" "}
+                    <Link
+                      href={CANONICA[qualCalc].href}
+                      className="underline underline-offset-4 decoration-1 text-white hover:opacity-80 transition-opacity"
+                      style={{ textDecorationColor: "#BA9E50" }}
+                    >
+                      {CANONICA[qualCalc].ancora}
+                    </Link>{" "}
+                    do site — a versão completa fica em página própria, {CANONICA[qualCalc].motivo}.
+                  </p>
                 )}
               </div>
             </>
