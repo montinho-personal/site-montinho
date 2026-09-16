@@ -418,6 +418,56 @@ export default function ConversorConcentracao({ placement }: { placement: string
       </div>
 
       {/*
+        A TABELA DE CONVERSÃO DO FRASCO DA PESSOA.
+        Ela existe porque a pergunta "e se fosse outra quantidade?" vem logo
+        depois da primeira resposta, e mandar a pessoa apagar o campo e
+        digitar de novo é atrito à toa.
+
+        O que ela NÃO é, e a distinção é o motivo de ela poder existir: não é
+        uma lista de quantidades usadas, nem por substância nem por
+        protocolo. As linhas saem das marquinhas redondas da seringa — 5, 10,
+        15… — e a coluna de mg é o que essas marquinhas contêm NESTE frasco.
+        É aritmética do frasco informado, lida de trás para frente.
+
+        Uma tabela de "tirzepatida: 2,5 / 5 / 7,5 mg" seria outra coisa: um
+        banco de doses, que o briefing da ferramenta proibiu e que
+        scripts/concentracao-test.ts reprova. Fora que para parte dos
+        compostos dessa lista não existe esquema aprovado nenhum — publicar
+        um seria inventar autoridade.
+      */}
+      {prescrito?.status === "ok" && escalaOk === "sim" && !ehInsulina && (
+        <div className="mt-6 border border-white/15 p-5 sm:p-6">
+          <p className="text-white font-semibold mb-1" style={h}>Conversão rápida do seu frasco</p>
+          <p className="text-gray-400 text-sm leading-relaxed mb-4">
+            A {formatarConcentracao(concentracao!)} mg/mL, é isto que cada marquinha da sua seringa contém.
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-left text-gray-400 border-b border-white/15">
+                  <th className="py-2 pr-3 font-medium">Quantidade</th>
+                  <th className="py-2 pr-3 font-medium">Volume</th>
+                  <th className="py-2 font-medium">Marquinha</th>
+                </tr>
+              </thead>
+              <tbody>
+                {tabela.map((l) => (
+                  <tr key={l.marca} className={`border-b border-white/10 ${prescrito.marcaAproximada >= l.marca - 0.5 && prescrito.marcaAproximada < l.marca + 0.5 ? "text-white bg-[#BA9E50]/10" : "text-gray-200"}`}>
+                    <td className="py-2 pr-3 font-semibold text-white">{formatarMg(l.mg)} mg</td>
+                    <td className="py-2 pr-3">{formatarMl(l.volumeMl)} mL</td>
+                    <td className="py-2 font-semibold" style={{ color: OURO }}>{l.marca}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-gray-400 text-xs leading-relaxed mt-3">
+            Nenhuma linha é sugestão de quanto usar. A tabela mostra o que existe em cada marquinha deste frasco — quem define a quantidade é quem prescreveu.
+          </p>
+        </div>
+      )}
+
+      {/*
         O CTA entra AQUI, e só quando existe resposta na tela. É o momento de
         maior atenção da página: a pessoa acabou de resolver o que veio
         resolver, e a pergunta seguinte dela — como treinar nessa fase — é
@@ -477,18 +527,6 @@ export default function ConversorConcentracao({ placement }: { placement: string
               <p className="text-gray-300 leading-relaxed mb-4">
                 Se o líquido não é insulina, esses risquinhos são só medida de volume. A marquinha 10 continua sendo 0,10 mL, mas isso não significa que o outro composto possua 10 unidades internacionais. UI não tem conversão fixa para mg: muda de substância para substância. Por isso aqui a gente diz “marquinha 10”, e nunca “10 UI”.
               </p>
-              <p className="text-white font-semibold mb-2">A régua inteira desse frasco</p>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead><tr className="text-left text-gray-400 border-b border-white/15"><th className="py-2 pr-3 font-medium">Marquinha</th><th className="py-2 pr-3 font-medium">Volume</th><th className="py-2 font-medium">Quantidade contida</th></tr></thead>
-                  <tbody>
-                    {tabela.map((l) => (
-                      <tr key={l.marca} className="border-b border-white/10 text-gray-200"><td className="py-2 pr-3 font-semibold text-white">{l.marca}</td><td className="py-2 pr-3">{formatarMl(l.volumeMl)} mL</td><td className="py-2">{formatarMg(l.mg)} mg</td></tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              <p className="text-gray-400 text-xs leading-relaxed mt-2">Nenhuma linha é sugestão. Está aqui só para você ver que, quanto mais volume, mais substância — sempre na mesma proporção.</p>
             </Explica>
 
             <Explica titulo="Ver o que tem em cada marquinha">
