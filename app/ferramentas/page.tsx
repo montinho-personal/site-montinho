@@ -180,7 +180,7 @@ const FERRAMENTAS = [
   ...(CONVERSOR_NO_AR ? [{
     href: "/ferramentas/conversor-mg-ml-u100",
     nome: "Calculadora de Peptídeos e UI",
-    pergunta: "mg, mL e UI sem confusão",
+    pergunta: "A dose prescrita em mL e na seringa",
     tempo: "Educacional · sem cadastro",
     texto:
       "Calcule mg/mL e entenda quanto volume representam as marcações de uma seringa U-100. Explica a diferença entre quantidade, volume e concentração — e por que a marca 10 da seringa não é “10 UI” do que está no frasco.",

@@ -147,10 +147,10 @@ export default function ConversorConcentracao({ placement }: { placement: string
         Educacional · sem cadastro · nada sai do seu navegador
       </p>
       <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-2" style={h}>
-        Entenda sua Concentração e a Escala da Seringa
+        Calcule a Concentração e Converta a Dose Prescrita
       </h2>
       <p className="text-gray-300 leading-relaxed mb-6 max-w-2xl">
-        Diga quanto o rótulo declara e quanto líquido tem no frasco. A conta aparece na hora — e depois a ferramenta explica o que cada marca da seringa U-100 significa.
+        Diga quanto o rótulo declara e quanto líquido tem no frasco. A concentração aparece na hora — e com ela a ferramenta converte, em mL e em marcas da seringa U-100, a dose que já foi prescrita para você.
       </p>
 
       {/* Passo 1: de que lado da régua a pessoa está. */}
@@ -431,12 +431,12 @@ export default function ConversorConcentracao({ placement }: { placement: string
                 arredondamento que a ferramenta faz sozinha.
               */}
               <div className="border border-white/15 p-5 sm:p-6 mb-6">
-                <p className="text-white font-bold text-lg mb-2" style={h}>Onde cai uma quantidade já prescrita</p>
+                <p className="text-white font-bold text-lg mb-2" style={h}>Converter a dose prescrita em mL e na marca</p>
                 <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                  Se um profissional habilitado já passou a quantidade em mg, veja onde ela cai na régua desta seringa. A ferramenta não escolhe a quantidade: ela só mostra o lugar da que você informou.
+                  Se um profissional habilitado já passou a dose em mg, veja quantos mL ela dá e em que marca desta seringa ela cai. A ferramenta não escolhe a dose: ela só converte a que você informou.
                 </p>
                 <div className="flex items-center gap-3 max-w-xs mb-3">
-                  <label htmlFor={`${uid}-presc`} className="sr-only">Quantidade prescrita em mg</label>
+                  <label htmlFor={`${uid}-presc`} className="sr-only">Dose prescrita em mg</label>
                   <input id={`${uid}-presc`} type="text" inputMode="decimal" autoComplete="off" placeholder="2,5" value={mgPrescritoTxt}
                     onChange={(e) => setMgPrescritoTxt(e.target.value)} className={inputCls} aria-describedby={`${uid}-presc-saida`} />
                   <span className="text-gray-300 text-lg">mg</span>
@@ -465,7 +465,7 @@ export default function ConversorConcentracao({ placement }: { placement: string
                   )}
                   {prescrito?.status === "fora_da_seringa" && (
                     <div role="alert" className="border border-white/40 bg-black/60 p-4">
-                      <p className="text-white font-semibold leading-relaxed mb-2">Essa quantidade não cabe nesta seringa</p>
+                      <p className="text-white font-semibold leading-relaxed mb-2">Essa dose não cabe nesta seringa</p>
                       <p className="text-gray-300 text-sm leading-relaxed">
                         Nesta concentração, {formatarMg(prescrito.mgPrescrito)} mg ocupariam {formatarMlFino(prescrito.volumeMl)} mL, e uma seringa U-100 de 1 mL vai só até 1,00 mL. Isso costuma significar que a concentração informada ou a quantidade estão trocadas. Confirme as duas com o prescritor ou o farmacêutico.
                       </p>

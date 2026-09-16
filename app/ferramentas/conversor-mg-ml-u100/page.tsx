@@ -24,9 +24,9 @@ import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
  * inventada.
  */
 export const metadata: Metadata = {
-  title: "Calculadora de Peptídeos: mg para UI e mL | Montinho",
+  title: "Calculadora de Peptídeos: Converta a Dose em mL e UI",
   description:
-    "Calculadora gratuita de peptídeos: informe os mg e o volume do frasco e veja a concentração em mg/mL e quanto representa cada marca da seringa U-100. Educacional, sem cadastro.",
+    "Converta a dose prescrita em mg para mL e para as marcas da seringa U-100. Calcule a concentração do frasco em mg/mL e veja quanto cada marca representa. Gratuita, educacional, sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` },
   robots: CONVERSOR_NO_AR ? undefined : { index: false, follow: false },
   openGraph: {
@@ -107,6 +107,16 @@ const faq: ItemFAQ[] = [
       "Porque três números diferentes andam juntos e parecem iguais: os mg do rótulo, os mL da seringa e as “unidades” da escala. Em 2024 a FDA alertou sobre pessoas que usaram de 5 a 20 vezes a quantidade pretendida de injetáveis manipulados por errar essa leitura. Um zero a mais na marca é dez vezes mais volume — por isso vale conferir duas vezes e, na dúvida, falar com quem prescreveu.",
   },
   {
+    question: "Como sei quantos mL é a dose que me passaram?",
+    answer:
+      "Divide a quantidade prescrita pela concentração do seu frasco. Se a prescrição fala em 2,4 mg e o frasco tem 24 mg/mL, isso dá 0,10 mL — que numa seringa U-100 é a marca 10. Se o resultado não cair numa marca inteira, não arredonde por conta própria: mostre a conta a quem prescreveu.",
+  },
+  {
+    question: "Qual dose devo tomar?",
+    answer:
+      "Esta página não responde isso, e nenhuma página deveria. A quantidade depende do seu diagnóstico, do seu histórico, do que mais você usa e do produto específico do seu frasco — quem define é o profissional que prescreve, com o seu caso na frente. A calculadora entra só depois dessa decisão, para converter miligramas em mililitros e em marcas de seringa.",
+  },
+  {
     question: "O que esta ferramenta não faz?",
     answer:
       "Ela não diz quanto você deve usar, não monta protocolo, não converte dose de insulina e não ensina a preparar nada. Ela começa depois que você já tem duas informações confiáveis: quanto o rótulo declara e qual o volume do frasco. Se faltar uma delas, a resposta certa é perguntar a quem prescreveu ou preparou.",
@@ -151,7 +161,7 @@ export default function ConversorMgMlU100Page() {
             Educacional · gratuito · sem cadastro
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5" style={h}>
-            Calculadora de Peptídeos e UI na Seringa U-100
+            Calculadora de Peptídeos: Converta a Dose em mL e UI
           </h1>
           <Compartilhar
             contexto="tool"
@@ -164,7 +174,7 @@ export default function ConversorMgMlU100Page() {
             className="mb-5"
           />
           <p className="text-gray-300 text-lg leading-relaxed">
-            Converta os mg do rótulo em mg/mL, em mL e nas marcas da seringa U-100. A calculadora explica a conta; ela não determina quanto usar.
+            Já tem a dose que o profissional prescreveu, em mg? Veja quantos mL ela dá e em que marca da seringa U-100 ela cai. A calculadora converte a conta; ela não escolhe a dose.
           </p>
         </div>
       </section>
@@ -200,6 +210,32 @@ export default function ConversorMgMlU100Page() {
             </p>
             <p className="text-gray-300 leading-relaxed">
               O que muda com o frasco é quanta substância existe naquele volume. A 24 mg/mL, a marca 10 contém 2,4 mg. A 10 mg/mL, a mesma marca 10 contém 1 mg. Mesma marca, mesmo volume, quantidades diferentes — é por isso que copiar a marca que outra pessoa usa não faz sentido: o frasco dela pode não ter a mesma concentração que o seu.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Como calcular a dose prescrita em mL e em marcas da seringa</h2>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              Esse é o descompasso que gera a maior parte das dúvidas: o profissional fala em miligramas, e a seringa não tem miligrama nenhum escrito nela. A ponte entre os dois é a concentração do frasco. Divide-se a quantidade prescrita pela concentração e sai o volume; multiplica-se o volume por 100 e sai a marca da seringa U-100.
+            </p>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              Num frasco de 24 mg/mL, 2,4 mg dão 0,10 mL, que é a marca 10. Já 2,5 mg dão 0,104 mL, e isso cai entre a marca 10 e a 11 — não existe marca 10,4 numa seringa. Quando a conta não fecha numa marca, a calculadora mostra isso em vez de arredondar: seringa não tem precisão de décimo de marca, e quem decide o que fazer com essa diferença é quem prescreveu.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              Repare que a conta inteira depende da concentração do seu frasco. A mesma quantidade em mg cai numa marca diferente se o frasco for outro — por isso não existe tabela universal de “X mg é a marca Y”, e por isso copiar a marca que outra pessoa usa é perigoso.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Qual dose devo tomar? Por que esta página não responde</h2>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              Essa é a pergunta que mais chega, e a resposta honesta é que ela não tem resposta genérica. A quantidade depende de diagnóstico, histórico, outros medicamentos em uso, tolerância, resposta ao longo do tempo e do produto específico que está no seu frasco — informações que nenhuma página consegue ter sobre você. Qualquer site que devolva um número para essa pergunta está inventando, e a conta dele é indistinguível da de alguém que erra.
+            </p>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              Esta calculadora não diz qual quantidade usar, não monta protocolo, não ensina a aumentar nada e não sugere ponto de partida. Ela entra depois: quando a decisão já foi tomada por quem podia tomá-la, e o que resta é a aritmética de transformar miligramas em mililitros e em marcas de seringa.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              Se você não tem essa orientação, a ferramenta certa não é uma calculadora — é uma consulta. E se você tem, mas os números não parecem bater, a página tem um conferidor de instrução justamente para isso: ele aponta a inconsistência e manda você conferir com o prescritor, sem corrigir nada por conta própria.
             </p>
           </div>
 
