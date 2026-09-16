@@ -4,6 +4,7 @@ import { SITE_URL } from "@/lib/blog";
 import { CONTEUDO_ATUALIZADO_EM, CONVERSOR_NO_AR, REVISAO_AUTOR, REVISAO_TECNICA } from "@/lib/concentracao/revisao";
 import ConversorConcentracao from "@/components/concentracao/ConversorConcentracao";
 import MetodologiaEFontes from "@/components/concentracao/MetodologiaEFontes";
+import CTAEstrategiaTreino from "@/components/concentracao/CTAEstrategiaTreino";
 import Compartilhar from "@/components/share/Compartilhar";
 import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 
@@ -287,6 +288,15 @@ export default function ConversorMgMlU100Page() {
               A visualização representa a escala nominal de uma seringa U-100 de 1 mL e não substitui a inspeção das marcações impressas no dispositivo real. Seringas de 0,3 mL e 0,5 mL, e seringas com meia marca, têm graduações diferentes. Esta é uma ferramenta educacional de concentração e volume; não é aconselhamento médico nem farmacêutico.
             </p>
           </div>
+
+          {/*
+            O CTA fica AQUI: depois da calculadora, do conteúdo, do FAQ, das
+            fontes e da ressalva de revisão. Entre a calculadora e os avisos
+            de segurança ele pareceria a oferta de quem orienta sobre a
+            substância — que é o contrário do que a página passou nove seções
+            dizendo que não faz.
+          */}
+          <CTAEstrategiaTreino placement="pagina-ferramenta" />
 
           <p className="text-gray-400 text-sm leading-relaxed">
             Outras ferramentas gratuitas estão em{" "}
