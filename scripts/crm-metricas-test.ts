@@ -190,6 +190,19 @@ ok("gclid presente → google_ads, confiança alta", inferirFonte({ gclid: "abc"
 ok("utm instagram/organic_social → instagram_organic", inferirFonte({ utmSource: "instagram", utmMedium: "organic_social" }).sourceCode === "instagram_organic");
 ok("utm instagram/paid → instagram_ads", inferirFonte({ utmSource: "instagram", utmMedium: "paid_social" }).sourceCode === "instagram_ads");
 ok("link /l/gbp (google/perfil_empresa) → google_business, confiança alta", inferirFonte({ utmSource: "google", utmMedium: "perfil_empresa" }).sourceCode === "google_business" && inferirFonte({ utmSource: "google", utmMedium: "perfil_empresa" }).confidence === "high");
+
+/*
+ * Assistente de IA. O caso do gemini é o que faz este bloco existir: o host
+ * é gemini.google.com, então a regra de /google\./ o contaria como busca
+ * orgânica, inflando o Google e escondendo a IA. A ordem das regras é o que
+ * resolve, e ordem é exatamente o tipo de coisa que se quebra sem teste.
+ */
+ok("utm_source=chatgpt.com → ai_assistant, confiança alta", inferirFonte({ utmSource: "chatgpt.com" }).sourceCode === "ai_assistant" && inferirFonte({ utmSource: "chatgpt.com" }).confidence === "high");
+ok("utm_source=perplexity → ai_assistant", inferirFonte({ utmSource: "perplexity" }).sourceCode === "ai_assistant");
+ok("referrer chatgpt.com → ai_assistant, confiança média", inferirFonte({ referrer: "https://chatgpt.com/" }).sourceCode === "ai_assistant" && inferirFonte({ referrer: "https://chatgpt.com/" }).confidence === "medium");
+ok("referrer gemini.google.com NÃO vira google_organic", inferirFonte({ referrer: "https://gemini.google.com/app" }).sourceCode === "ai_assistant", inferirFonte({ referrer: "https://gemini.google.com/app" }).sourceCode);
+ok("busca do Google continua google_organic", inferirFonte({ referrer: "https://www.google.com/" }).sourceCode === "google_organic");
+ok("anúncio ainda ganha da IA: gclid manda", inferirFonte({ utmSource: "chatgpt.com", gclid: "abc" }).sourceCode === "google_ads");
 ok("google/cpc continua google_ads, não google_business", inferirFonte({ utmSource: "google", utmMedium: "cpc" }).sourceCode === "google_ads");
 ok("referrer google sem utm → google_organic, confiança média", inferirFonte({ referrer: "https://www.google.com/" }).sourceCode === "google_organic" && inferirFonte({ referrer: "https://www.google.com/" }).confidence === "medium");
 ok("nada → unknown, confiança baixa", inferirFonte({}).sourceCode === "unknown" && inferirFonte({}).confidence === "low");

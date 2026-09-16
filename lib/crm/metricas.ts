@@ -446,6 +446,14 @@ export function inferirFonte(p: { utmSource?: string | null; utmMedium?: string 
   // O botão "Site" do Perfil da Empresa chega com o link controlado /l/gbp
   // (utm_medium=perfil_empresa). Antes desta linha caía em "desconhecido".
   if (s === "google" && /perfil|gbp|business|maps|local/.test(m)) return { sourceCode: "google_business", confidence: "high" };
+  /*
+   * Assistente de IA. O ChatGPT põe utm_source=chatgpt.com no link que
+   * entrega, e as outras ferramentas fazem parecido — então a evidência é
+   * direta, não inferida. Sem esta linha a pessoa caía em "outro", que é
+   * onde informação vai para desaparecer: duas chegaram assim em dois dias,
+   * as duas viraram lead, e nenhuma aparecia no relatório de aquisição.
+   */
+  if (/chatgpt|openai|perplexity|copilot|gemini|claude/.test(s)) return { sourceCode: "ai_assistant", confidence: "high" };
   if (s === "tiktok") return { sourceCode: "tiktok", confidence: "high" };
   if (s === "youtube") return { sourceCode: "youtube", confidence: "high" };
   if (s === "qr" || m === "qr") return { sourceCode: "offline_qr", confidence: "high" };
@@ -455,6 +463,15 @@ export function inferirFonte(p: { utmSource?: string | null; utmMedium?: string 
   if (r) {
     try {
       const host = new URL(r).hostname;
+      /*
+       * Pelo referrer, quando o assistente não marca o link. Vem antes do
+       * google./ porque gemini.google.com casaria com aquela regra e seria
+       * contado como busca orgânica — o que inflaria o Google e esconderia
+       * a IA, exatamente o erro que esta fonte existe para corrigir.
+       */
+      if (/chatgpt\.com|chat\.openai\.com|openai\.com|perplexity\.ai|copilot\.microsoft\.com|gemini\.google\.com|claude\.ai/.test(host)) {
+        return { sourceCode: "ai_assistant", confidence: "medium" };
+      }
       if (/google\./.test(host)) return { sourceCode: "google_organic", confidence: "medium" };
       if (/instagram\.com|l\.instagram/.test(host)) return { sourceCode: "instagram_organic", confidence: "medium" };
       if (/facebook\.com|l\.facebook|fb\.com/.test(host)) return { sourceCode: "facebook_organic", confidence: "medium" };
