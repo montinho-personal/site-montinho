@@ -1,5 +1,5 @@
 /**
- * A seringa U-100 desenhada — a régua, não o produto.
+ * A seringa desenhada — a régua, não o produto.
  *
  * É um SVG de traço, sem foto, sem marca, sem agulha em destaque: o que
  * interessa aqui é a ESCALA. A marca escolhida enche o corpo até ali e o
@@ -11,7 +11,7 @@
  * 0,01 mL, número a cada 10. Seringas reais variam (0,3 mL, 0,5 mL, meia
  * marca) — por isso o texto ao lado manda conferir a impressa no dispositivo.
  */
-import { formatarMl } from "@/lib/concentracao/calculo";
+import { formatarMarca, formatarMl } from "@/lib/concentracao/calculo";
 
 export default function SeringaU100({ marca, id }: { marca: number | null; id: string }) {
   const m = marca ?? 0;
@@ -20,9 +20,16 @@ export default function SeringaU100({ marca, id }: { marca: number | null; id: s
   const x0 = 40, largura = 300, y0 = 34, altura = 44;
   const xMarca = x0 + (largura * m) / 100;
   const ticks = Array.from({ length: 101 }, (_, i) => i);
+  /*
+   * A marquinha pode vir quebrada, porque o caminho da dose prescrita não
+   * arredonda: 2 mg num frasco de 16,667 mg/mL caem na 12, mas 2,5 mg caem
+   * na 12,4. Mostrar "12,4" é o ponto — é assim que a pessoa vê, no desenho,
+   * que a quantidade não para num risquinho, e que isso é conversa com o
+   * prescritor, não arredondamento nosso.
+   */
   const rotulo = marca
-    ? `Seringa U-100 preenchida até a marca ${marca}, que corresponde a ${formatarMl(ml)} mL.`
-    : "Seringa U-100 vazia. Escolha uma marca para ver o volume correspondente.";
+    ? `Seringa preenchida até a marquinha ${formatarMarca(marca)}, que corresponde a ${formatarMl(ml)} mL.`
+    : "Seringa vazia. Informe a dose ou escolha uma marquinha para ver o volume correspondente.";
 
   return (
     <figure className="w-full" aria-labelledby={`${id}-legenda`}>
@@ -60,12 +67,12 @@ export default function SeringaU100({ marca, id }: { marca: number | null; id: s
         {/* O número da marca escolhida, em cima da linha. */}
         {m > 0 && (
           <text x={Math.min(Math.max(xMarca, x0 + 14), x0 + largura - 14)} y={y0 - 12} textAnchor="middle" fontSize="13" fontWeight="700" fill="#BA9E50" fontFamily="ui-sans-serif, system-ui, sans-serif">
-            {m}
+            {formatarMarca(m)}
           </text>
         )}
       </svg>
       <figcaption id={`${id}-legenda`} className="text-gray-400 text-xs leading-relaxed mt-1">
-        {marca ? `Marca ${marca} da escala U-100 = ${formatarMl(ml)} mL.` : "Escala nominal de uma seringa U-100 de 1 mL: 100 marcas, uma a cada 0,01 mL."}{" "}
+        {marca ? `Marquinha ${formatarMarca(marca)} = ${formatarMl(ml)} mL.` : "Régua nominal de uma seringa de insulina U-100 de 1 mL: 100 marquinhas, uma a cada 0,01 mL."}{" "}
         Confira as marcações impressas na sua seringa — nem toda seringa tem a mesma graduação.
       </figcaption>
     </figure>
