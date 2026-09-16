@@ -20,7 +20,7 @@
 import type { Base, Catalogo } from "./dados";
 import { diasEntre } from "./metricas";
 import { cicloDeFollowUps } from "./ciclo";
-import { formatarDatas, resumoDoPacote } from "./aulas";
+import { formatarDatas, resumoDoPacote, ritmoDoPacote } from "./aulas";
 import { extrairRef, identificarMensagem, limparColagem } from "./mensagens";
 import { limparTitulo } from "../whatsapp";
 import { TEXTOS, type Situacao } from "./copy-textos";
@@ -28,7 +28,7 @@ import type { ClienteRow, Experimental, Lead, Oportunidade } from "./tipos";
 
 export type { Situacao } from "./copy-textos";
 
-export const VARIAVEIS = ["saudacao", "nome", "servico", "pagina", "objetivo", "pergunta", "dias", "valor", "plano", "dia_hora", "local", "renova_em", "indicador", "cidade", "aulas", "datas"] as const;
+export const VARIAVEIS = ["saudacao", "nome", "servico", "pagina", "objetivo", "pergunta", "dias", "valor", "plano", "dia_hora", "local", "renova_em", "indicador", "cidade", "aulas", "datas", "semanas"] as const;
 export type Variavel = (typeof VARIAVEIS)[number];
 export type Variaveis = Record<Variavel, string>;
 
@@ -278,6 +278,20 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
     cidade: contato?.cidade ?? "",
     aulas: pacote.terminou ? String(pacote.usadas) : "",
     datas: pacote.terminou ? formatarDatas(aulasDoPacote) : "",
+    /*
+     * Quantas semanas o pacote levou. Entra na mensagem de fim de pacote
+     * porque reconhecer o esforço de quem treinou é o gancho mais honesto
+     * que existe para falar de renovação — e o número é do próprio aluno,
+     * não é elogio inventado. Fica vazio quando há uma aula só ou quando o
+     * pacote não terminou: aí o fragmento inteiro some, em vez de virar
+     * "foram 0 semanas".
+     */
+    semanas: (() => {
+      if (!pacote.terminou) return "";
+      const n = ritmoDoPacote(aulasDoPacote, 0, agora).semanas;
+      if (n == null || n < 1) return "";
+      return n.toLocaleString("pt-BR", { maximumFractionDigits: 0 });
+    })(),
   };
   // "dias" depende do que a mensagem conta: desde a proposta, desde o último contato, desde a chegada ou desde o vencimento.
   const desde = (iso: string | null | undefined) => (iso ? String(Math.max(0, Math.round(diasEntre(iso, agora)))) : "");
