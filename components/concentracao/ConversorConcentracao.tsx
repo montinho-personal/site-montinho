@@ -10,6 +10,7 @@ import {
 import { COMPOSTOS, nomeDoComposto } from "@/lib/concentracao/compostos";
 import { FONTES, linkDaFonte } from "@/lib/concentracao/fontes";
 import SeringaU100 from "./SeringaU100";
+import CTAEstrategiaTreino from "./CTAEstrategiaTreino";
 
 /**
  * Calculadora de concentração e da régua da seringa.
@@ -236,13 +237,13 @@ export default function ConversorConcentracao({ placement }: { placement: string
               </p>
             </div>
             <div>
-              <label htmlFor={`${uid}-ml`} className="block text-gray-300 text-sm font-medium mb-2">2. Quanto líquido tem no frasco</label>
+              <label htmlFor={`${uid}-ml`} className="block text-gray-300 text-sm font-medium mb-2">2. Quanta água foi usada para diluir</label>
               <div className="flex items-center gap-3">
                 <input id={`${uid}-ml`} type="text" inputMode="decimal" autoComplete="off" placeholder="2,5" value={mlTxt} onChange={(e) => setMlTxt(e.target.value)} className={inputCls} aria-describedby={`${uid}-ml-ajuda`} />
                 <span className="text-gray-300 text-lg">mL</span>
               </div>
               <p id={`${uid}-ml-ajuda`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
-                {vMl.erro && vMl.erro !== "vazio" ? MENSAGEM_ERRO[vMl.erro] : "O volume final, com o frasco já pronto."}
+                {vMl.erro && vMl.erro !== "vazio" ? MENSAGEM_ERRO[vMl.erro] : "Água bacteriostática ou água para injeção. Se o frasco já veio pronto, é o volume do rótulo."}
               </p>
             </div>
           </>
@@ -261,7 +262,7 @@ export default function ConversorConcentracao({ placement }: { placement: string
 
         <div>
           <label htmlFor={`${uid}-presc`} className="block text-gray-300 text-sm font-medium mb-2">
-            {modo === "calcular" ? "3." : "2."} Quanto o profissional indicou
+            {modo === "calcular" ? "3." : "2."} Qual dosagem o profissional indicou
           </label>
           <div className="flex items-center gap-3">
             <input id={`${uid}-presc`} type="text" inputMode="decimal" autoComplete="off" placeholder="2,5" value={mgPrescritoTxt}
@@ -415,6 +416,19 @@ export default function ConversorConcentracao({ placement }: { placement: string
           </p>
         )}
       </div>
+
+      {/*
+        O CTA entra AQUI, e só quando existe resposta na tela. É o momento de
+        maior atenção da página: a pessoa acabou de resolver o que veio
+        resolver, e a pergunta seguinte dela — como treinar nessa fase — é
+        justamente a que cabe a um treinador. Fora do cartão do resultado de
+        propósito: dentro, a oferta se misturaria com a conversão de dose.
+      */}
+      {prescrito?.status === "ok" && escalaOk === "sim" && !ehInsulina && (
+        <div className="mt-6">
+          <CTAEstrategiaTreino placement="apos-resultado" />
+        </div>
+      )}
 
       <div role="note" className="border border-white/25 bg-black/50 p-4 mt-5">
         <p className="text-white text-sm leading-relaxed font-semibold">
