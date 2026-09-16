@@ -129,7 +129,19 @@ bloco("8. AS BARREIRAS ESTÃO NO CÓDIGO, NÃO SÓ NA INTENÇÃO");
   if (comp.trim().length > 0) {
     const semC = comp.replace(/\{\/\*[\s\S]*?\*\/\}/g, "").replace(/\/\*[\s\S]*?\*\//g, "").replace(/\/\/[^\n]*/g, "");
     ok("a interface nunca diz 'UI do produto' nem 'UI do medicamento'", !/UI do (produto|medicamento|composto)/i.test(semC));
-    ok("a interface nunca diz 'sua dose'", !/sua dose|dose de \d|dose certa|dose ideal|dose recomendada|dose segura/i.test(semC));
+    /*
+     * A palavra "dose" deixou de ser proibida e passou a ser vigiada, porque
+     * proibir a palavra proibia junto a coisa certa de dizer: converter uma
+     * dose JÁ PRESCRITA em mL e em marcas é exatamente o que a página faz, e
+     * é assim que as pessoas escrevem a pergunta. O que continua proibido é a
+     * página ter opinião sobre a dose — escolher, sugerir, qualificar como
+     * certa ou segura, ensinar a subir, ou citar uma dose com número.
+     */
+    ok("a página nunca qualifica uma dose", !/dose (certa|ideal|recomendada|segura|indicada|adequada|inicial|usual|habitual|de manutenção|padrão)/i.test(semC));
+    ok("a página nunca ensina a mexer na dose", !/(aumentar|reduzir|diminuir|ajustar|escalonar) a dose|titula(ção|r)\b|subir a dose/i.test(semC));
+    ok("a página nunca afirma qual é a dose de alguém", !/sua dose (é|seria|deve|fica)|a dose que você (deve|precisa|tem que)/i.test(semC));
+    ok("nenhuma dose aparece com número", !/dose de \d|\bdose\b[^.!?]{0,30}\d+\s*(mg|mcg|ui)\b/i.test(semC));
+    ok("a página diz de frente que não escolhe a dose", /não (diz|determina|escolhe|define) (qual|quanto|a dose)/i.test(semC));
     ok("a interface nunca diz 'aplique' / 'injete' como instrução", !/\b(aplique|injete)\b/i.test(semC));
     ok("nenhum campo 'quero tomar'", !/quero tomar|quantas unidades coloco/i.test(semC));
     /*
