@@ -56938,7 +56938,7 @@ French press é insubstituível para quem quer tríceps volumosos — especialme
   {
     slug: "crossover-vs-crucifixo",
     title: "Crossover vs Crucifixo: Qual é Melhor para o Peito?",
-    metaTitle: "Crossover ou Crucifixo: Qual Ativa Mais o Peitoral?",
+    metaTitle: "Crossover ou Crucifixo: O Que a Eletromiografia Mostra",
     metaDescription: "Cabo e halter mudam a tensão em pontos diferentes do movimento. Veja o que a eletromiografia aponta e em que fase do treino cada um rende mais.",
     excerpt: "Crossover e crucifixo trabalham o mesmo movimento, mas de formas diferentes. A escolha certa depende do seu objetivo e fase do treino — veja a análise completa.",
     category: "Treinamento",
@@ -73723,7 +73723,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
   {
     slug: "quantos-quilos-perder-ate-fim-do-ano",
     title: "Quantos Quilos Dá para Perder até o Fim do Ano?",
-    metaTitle: "Quantos Quilos Dá para Perder até o Fim do Ano?",
+    metaTitle: "Quantos Quilos Dá para Perder até o Fim do Ano? A Meta Real",
     metaDescription: "Quanto dá para perder por mês sem sacrificar músculo, a meta realista pelo seu ponto de partida e o plano para as semanas que ainda restam até dezembro.",
     excerpt: "Antes de definir quanto quer perder, você precisa saber quanto é possível perder com saúde — e o que realmente vai aparecer no espelho ao final do processo.",
     category: "Emagrecimento",
@@ -75528,7 +75528,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "da-para-comer-pamonha-e-emagrecer",
     title: "Dá para Comer Pamonha e Emagrecer?",
-    metaTitle: "Pamonha Engorda? 290 kcal por Unidade e Como Encaixar",
+    metaTitle: "Pamonha Engorda? A Comparação que Surpreende Quem Evita",
     metaDescription: "Uma pamonha doce de 150 g tem cerca de 290 kcal — menos que 3 fatias de pão de forma. Veja a comparação completa e como ela cabe num dia de déficit.",
     excerpt: "A pamonha não é o vilão que parece. Entenda a relação entre esse clássico junino, suas calorias e como encaixá-la no seu processo de emagrecimento.",
     category: "Nutrição",
@@ -99543,7 +99543,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "dormir-depois-do-almoco-engorda",
     title: "Dormir Depois do Almoço Engorda? Mito ou Verdade",
-    metaTitle: "Dormir Depois do Almoço Engorda? Não — o Risco é o Refluxo",
+    metaTitle: "Dormir Depois do Almoço Engorda? O Risco Não é o Peso",
     metaDescription:
       "Uma soneca de 20 minutos não muda o balanço calórico do dia. O que muda é o esôfago: veja quanto esperar antes de deitar e a janela ideal do cochilo.",
     excerpt:
@@ -102970,7 +102970,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "zumba-emagrece",
     title: "Zumba Emagrece? O Que Esperar da Dança",
-    metaTitle: "Zumba Emagrece? São 350 a 600 kcal por Aula",
+    metaTitle: "Zumba Emagrece? O Gasto Real e o Que Pesa Mais que Ele",
     metaDescription:
       "A promessa de 1.000 kcal por aula é marketing, não medição. Veja a faixa real, em quantos quilos isso dá e por que a adesão da zumba vale mais que o gasto.",
     excerpt:
@@ -103669,7 +103669,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "boxe-emagrece",
     title: "Boxe Emagrece? Quantas Calorias Queima e Como Usar a Favor",
-    metaTitle: "Boxe Emagrece? Calorias, Benefícios e a Verdade",
+    metaTitle: "Boxe Emagrece? O Que a Aula Queima e o Que Falta Junto",
     metaDescription:
       "Boxe emagrece? Quantas calorias uma aula realmente queima, por que o boxe ajuda tanta gente a perder peso e o que precisa acompanhar o treino para funcionar.",
     excerpt:
@@ -104154,7 +104154,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "eliptico-emagrece",
     title: "Elíptico Emagrece? Calorias Gastas e Como Usar do Jeito Certo",
-    metaTitle: "Elíptico Emagrece? Calorias por Hora e 3 Protocolos",
+    metaTitle: "Elíptico Emagrece? 3 Protocolos Prontos e o Gasto Real",
     metaDescription:
       "Quanto o aparelho gasta de verdade por sessão, treinos contínuos e intervalados prontos, e por que ele costuma ser a saída de quem tem joelho sensível.",
     excerpt:
@@ -104624,7 +104624,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "acai-engorda",
     title: "Açaí Engorda? Calorias da Tigela vs Polpa Pura (a Diferença é Brutal)",
-    metaTitle: "Açaí Engorda? Da Polpa de 58 kcal à Tigela de 1.000",
+    metaTitle: "Açaí Engorda? O Que Transforma 58 kcal em Mais de 1.000",
     metaDescription:
       "O que transforma 58 kcal em mais de 1.000: xarope de guaraná, granola e o tamanho da porção. Veja onde as calorias entram e como montar uma tigela leve.",
     excerpt:
@@ -110784,7 +110784,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "polichinelo-emagrece",
     title: "Polichinelo Emagrece? Quantos Fazer Por Dia (Resposta Honesta)",
-    metaTitle: "Polichinelo Emagrece? Gasto Calórico Real e Quantos Fazer",
+    metaTitle: "Polichinelo Emagrece? Quantos Fazer Por Nível e Onde Ele Falha",
     metaDescription:
       "Quantas calorias o polichinelo queima de verdade, quantos fazer por nível de condicionamento e por que ele rende mais dentro de um circuito do que sozinho.",
     excerpt:
