@@ -107,7 +107,7 @@ export const TEXTOS: Record<Situacao, string> = {
    * A conferência vem antes da venda, de propósito.
    */
   renovacao_pacote:
-    "[[{saudacao}, ]]{nome}! Fechamos o pacote[[ de {aulas} aulas]].\n\n[[Anotei estas datas: {datas}.\n\n]]Confere se bate com o seu controle, e me diz se você quer seguir com o próximo?",
+    "[[{saudacao}, ]]{nome}! Fechou o pacote[[ de {aulas} aulas]] 👏[[ Foram {semanas} semanas de treino.]]\n\n[[Anotei todas as datas: {datas}.\n\n]]Confere se bate com o seu controle. Quer que eu já abra o próximo pra gente não parar?",
   renovacao_vencida:
     "[[{saudacao}, ]]{nome}! Seu plano venceu[[ há {dias} dias]] e eu não quero fechar seu horário sem te perguntar antes. Nada de cobrança, é só pra eu organizar a agenda.\n\nVocê quer seguir no próximo ciclo ou prefere dar uma pausa agora?",
   /*
