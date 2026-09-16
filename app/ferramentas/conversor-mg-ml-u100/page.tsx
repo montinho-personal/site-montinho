@@ -27,7 +27,7 @@ import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 export const metadata: Metadata = {
   title: "Calculadora de Peptídeos: Converta a Dose em mL e UI",
   description:
-    "Converta a dose prescrita em mg para mL e para as marcas da seringa U-100. Calcule a concentração do frasco em mg/mL e veja quanto cada marca representa. Gratuita, educacional, sem cadastro.",
+    "Converta a dose prescrita em mg para mL e para as marquinhas da seringa de insulina U-100. Calcule a concentração do frasco em mg/mL e veja quanto vale cada risquinho. Gratuita, educacional, sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` },
   robots: CONVERSOR_NO_AR ? undefined : { index: false, follow: false },
   openGraph: {
@@ -88,19 +88,24 @@ const faq: ItemFAQ[] = [
       "É quanta substância tem em cada mL de líquido. Você acha esse número dividindo a quantidade total pelo volume do frasco: 60 mg em 2,5 mL dá 24 mg/mL, ou seja, cada mL tem 24 mg. O volume da conta é o do frasco já pronto, não só o líquido que foi acrescentado.",
   },
   {
-    question: "O que significa U-100?",
+    question: "O que significa o U-100 escrito na seringa?",
     answer:
-      "É o nome da escala da seringa de insulina, em que 100 unidades cabem em 1 mL. Na prática, numa seringa dessas a marca 100 é 1 mL cheio e a marca 10 é 0,10 mL. Os números dessa escala só valem como unidades quando o líquido é insulina U-100.",
+      "É o código da régua dela: 100 unidades cabem em 1 mL, então cada risquinho vale 0,01 mL. É o padrão da seringa de insulina de farmácia. Confira antes de usar qualquer conta: existe a U-40, de insulina veterinária, em que cada risquinho vale 0,025 mL — duas vezes e meia mais líquido na mesma marquinha.",
   },
   {
-    question: "Quanto é a marca 10 de uma seringa U-100?",
+    question: "Minha seringa é de 50, não de 100. Muda alguma coisa?",
     answer:
-      "0,10 mL. A conta é dividir a marca por 100: marca 5 é 0,05 mL, marca 20 é 0,20 mL, marca 50 é 0,50 mL. Quanta substância tem nesse volume depende do frasco — a 24 mg/mL, 0,10 mL tem 2,4 mg; a 10 mg/mL, o mesmo volume tem 1 mg.",
+      "Na conta, nada. A seringa de 30, a de 50 e a de 100 unidades têm exatamente a mesma régua — o que muda é só até onde ela vai, como um copo maior e um menor com a mesma marcação. A marquinha 5 é 0,05 mL nas três. Escolha a que couber na quantidade que você precisa, e confira sempre se está escrito U-100 nela.",
+  },
+  {
+    question: "Quanto é a marquinha 10 da seringa?",
+    answer:
+      "0,10 mL. A conta é dividir por 100: a marquinha 5 é 0,05 mL, a 20 é 0,20 mL, a 50 é meio mililitro. Quanta substância tem nesse volume depende do frasco — a 24 mg/mL, 0,10 mL tem 2,4 mg; a 10 mg/mL, o mesmo volume tem 1 mg.",
   },
   {
     question: "UI e a marca da seringa são a mesma coisa?",
     answer:
-      "Nem sempre. A marca mede volume, sempre. Ela só vira “unidade” quando o líquido é insulina U-100, porque foi para isso que a escala nasceu. Com outro composto dentro, a marca 10 continua sendo 0,10 mL e isso não significa que o outro composto possua 10 unidades internacionais — UI não tem conversão fixa para mg, muda de substância para substância.",
+      "Nem sempre. A marquinha mede volume, sempre. Ela só vira “unidade” quando o líquido é insulina, porque foi para isso que a régua nasceu. Com outro composto dentro, a marquinha 10 continua sendo 0,10 mL e isso não significa que o outro composto possua 10 unidades internacionais — UI não tem conversão fixa para mg, muda de substância para substância.",
   },
   {
     question: "Por que erros de concentração acontecem?",
@@ -110,7 +115,7 @@ const faq: ItemFAQ[] = [
   {
     question: "Como sei quantos mL é a dose que me passaram?",
     answer:
-      "Divide a quantidade prescrita pela concentração do seu frasco. Se a prescrição fala em 2,4 mg e o frasco tem 24 mg/mL, isso dá 0,10 mL — que numa seringa U-100 é a marca 10. Se o resultado não cair numa marca inteira, não arredonde por conta própria: mostre a conta a quem prescreveu.",
+      "Divide a quantidade prescrita pela concentração do seu frasco. Se a prescrição fala em 2,4 mg e o frasco tem 24 mg/mL, isso dá 0,10 mL — que na seringa é a marquinha 10. Se o resultado não cair numa marquinha inteira, não arredonde por conta própria: mostre a conta a quem prescreveu.",
   },
   {
     question: "Qual dose devo tomar?",
@@ -170,12 +175,12 @@ export default function ConversorMgMlU100Page() {
             caminho="/ferramentas/conversor-mg-ml-u100"
             local="tool_top"
             ferramenta="conversor_mg_ml_u100"
-            gancho="Confuso com mg, mL e a escala U-100? Essa ferramenta explica a diferença de forma visual."
+            gancho="Confuso com mg, mL e as marquinhas da seringa? Essa ferramenta explica a diferença de forma visual."
             aparencia="discreto"
             className="mb-5"
           />
           <p className="text-gray-300 text-lg leading-relaxed">
-            Já tem a dose que o profissional prescreveu, em mg? Veja quantos mL ela dá e em que marca da seringa U-100 ela cai. A calculadora converte a conta; ela não escolhe a dose.
+            Já tem a dose que o profissional prescreveu, em mg? Veja quantos mL ela dá e em que marquinha da seringa ela cai. A calculadora converte a conta; ela não escolhe a dose.
           </p>
         </div>
       </section>
@@ -205,9 +210,9 @@ export default function ConversorMgMlU100Page() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto é cada marca da seringa U-100</h2>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto vale cada marquinha da seringa</h2>
             <p className="text-gray-300 leading-relaxed mb-3">
-              Numa seringa U-100 de 1 mL, a marca 100 é 1,00 mL cheio. Então cada marquinha vale 0,01 mL: a marca 5 é 0,05 mL, a marca 10 é 0,10 mL, a marca 50 é meio mililitro. Essa parte não depende do que está dentro do frasco — é a régua física do dispositivo, e vale igual para qualquer líquido.
+              Cada risquinho da seringa de insulina vale 0,01 mL. Cinco deles dão 0,05 mL, dez dão 0,10 mL, cinquenta dão meio mililitro, cem enchem 1 mL. Essa parte não depende do que está dentro do frasco — é a régua física do dispositivo, e vale igual para qualquer líquido. Também não muda com o tamanho: a seringa de 30, a de 50 e a de 100 têm a mesma régua, e o que muda é só até onde ela vai.
             </p>
             <p className="text-gray-300 leading-relaxed">
               O que muda com o frasco é quanta substância existe naquele volume. A 24 mg/mL, a marca 10 contém 2,4 mg. A 10 mg/mL, a mesma marca 10 contém 1 mg. Mesma marca, mesmo volume, quantidades diferentes — é por isso que copiar a marca que outra pessoa usa não faz sentido: o frasco dela pode não ter a mesma concentração que o seu.
@@ -217,7 +222,7 @@ export default function ConversorMgMlU100Page() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Como calcular a dose prescrita em mL e em marcas da seringa</h2>
             <p className="text-gray-300 leading-relaxed mb-3">
-              Esse é o descompasso que gera a maior parte das dúvidas: o profissional fala em miligramas, e a seringa não tem miligrama nenhum escrito nela. A ponte entre os dois é a concentração do frasco. Divide-se a quantidade prescrita pela concentração e sai o volume; multiplica-se o volume por 100 e sai a marca da seringa U-100.
+              Esse é o descompasso que gera a maior parte das dúvidas: o profissional fala em miligramas, e a seringa não tem miligrama nenhum escrito nela. A ponte entre os dois é a concentração do frasco. Divide-se a quantidade prescrita pela concentração e sai o volume; multiplica-se o volume por 100 e sai a marquinha da seringa.
             </p>
             <p className="text-gray-300 leading-relaxed mb-3">
               Num frasco de 24 mg/mL, 2,4 mg dão 0,10 mL, que é a marca 10. Já 2,5 mg dão 0,104 mL, e isso cai entre a marca 10 e a 11 — não existe marca 10,4 numa seringa. Quando a conta não fecha numa marca, a calculadora mostra isso em vez de arredondar: seringa não tem precisão de décimo de marca, e quem decide o que fazer com essa diferença é quem prescreveu.
@@ -246,7 +251,7 @@ export default function ConversorMgMlU100Page() {
               Essa é a pergunta que mais chega escrita como se tivesse resposta única, e não tem. UI significa unidade internacional, e é uma medida de atividade biológica, não de massa. Quantos miligramas equivalem a uma UI depende da substância: cada uma tem a própria equivalência, definida por padrão de referência, e não existe fator que sirva para todas.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              A confusão nasce porque a escala da seringa de insulina é numerada em unidades. Numa seringa dessas, os números só significam unidades quando o líquido é insulina U-100 — foi para isso que a escala nasceu. Com qualquer outro conteúdo, a marca 10 continua significando 0,10 mL de volume, e nada mais. Por isso esta página diz sempre “marca 10 da seringa”, nunca “10 UI”.
+              A confusão nasce porque a seringa de insulina é numerada em unidades. Nela, os números só significam unidades quando o líquido é insulina — foi para isso que a régua nasceu. Com qualquer outro conteúdo, a marquinha 10 continua significando 0,10 mL de volume, e nada mais. Por isso esta página diz sempre “marquinha 10”, nunca “10 UI”.
             </p>
           </div>
 
@@ -285,7 +290,7 @@ export default function ConversorMgMlU100Page() {
                 : "Esta página ainda não passou por revisão de farmacêutico ou médico. As três fórmulas são aritmética verificável, e você pode conferir cada uma na seção de metodologia — mas, diante de qualquer dúvida sobre o seu caso, quem responde é o profissional que prescreveu ou preparou o produto."}
             </p>
             <p className="text-gray-300 leading-relaxed">
-              A visualização representa a escala nominal de uma seringa U-100 de 1 mL e não substitui a inspeção das marcações impressas no dispositivo real. Seringas de 0,3 mL e 0,5 mL, e seringas com meia marca, têm graduações diferentes. Esta é uma ferramenta educacional de concentração e volume; não é aconselhamento médico nem farmacêutico.
+              A visualização representa a régua nominal de uma seringa de insulina U-100 de 1 mL e não substitui a inspeção das marcações impressas no dispositivo real. Seringas com meia marquinha, e qualquer seringa que não seja U-100, têm graduações diferentes. Esta é uma ferramenta educacional de concentração e volume; não é aconselhamento médico nem farmacêutico.
             </p>
           </div>
 
