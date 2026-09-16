@@ -52,14 +52,16 @@ const MENSAGEM_ERRO: Record<Erro, string> = {
 };
 
 type Modo = "calcular" | "concentracao";
+
 /**
- * A primeira pergunta era "o líquido é insulina?". Quem chega buscando
- * calculadora de peptídeo respondia "não" e ficava sem saber se a página era
- * para ele — a pergunta separava certo e acolhia errado. Agora ela separa
- * pela palavra que a pessoa usa. A trava de insulina continua idêntica; o que
- * mudou foi de que lado ela é enunciada.
+ * A trava de insulina, e por que ela deixou de ser uma pergunta.
+ *
+ * Havia um passo antes de tudo: "o líquido é insulina?". Todo mundo
+ * respondia, para atender um caso — um obstáculo para cem por causa de um.
+ * Agora insulina é uma opção do seletor de composto, e escolhê-la leva ao
+ * aviso em vez do resultado. A trava é a mesma; o que sumiu foi o pedágio.
  */
-type Tipo = null | "peptideo" | "insulina";
+const ID_INSULINA = "insulina";
 
 /**
  * A conferência da escala, e por que ela substituiu 35 aparições de "U-100".
@@ -83,6 +85,27 @@ type Tipo = null | "peptideo" | "insulina";
  */
 type EscalaOk = null | "sim" | "nao";
 
+/*
+ * Um acordeão de explicação: fechado por padrão, e sempre depois da resposta.
+ * Fica FORA do componente de propósito — declarado dentro do render, ele
+ * seria um tipo novo a cada teclada, e o React desmontaria e remontaria cada
+ * bloco, perdendo o que estivesse aberto e o que estivesse digitado dentro.
+ */
+function Explica({ titulo, children, ao }: { titulo: string; children: React.ReactNode; ao?: () => void }) {
+  return (
+    <details
+      className="border border-white/15 px-5 py-1 sm:px-6"
+      onToggle={(e) => { if ((e.currentTarget as HTMLDetailsElement).open) ao?.(); }}
+    >
+      <summary className="cursor-pointer list-none min-h-[52px] flex items-center justify-between gap-3">
+        <span className="text-white font-semibold" style={h}>{titulo}</span>
+        <span aria-hidden="true" className="text-[#BA9E50] text-2xl leading-none shrink-0">+</span>
+      </summary>
+      <div className="pb-5">{children}</div>
+    </details>
+  );
+}
+
 export default function ConversorConcentracao({ placement }: { placement: string }) {
   const uid = useId();
   const raiz = useRef<HTMLDivElement>(null);
@@ -91,7 +114,6 @@ export default function ConversorConcentracao({ placement }: { placement: string
   const [mgTxt, setMgTxt] = useState("");
   const [mlTxt, setMlTxt] = useState("");
   const [concTxt, setConcTxt] = useState("");
-  const [tipo, setTipo] = useState<Tipo>(null);
   const [escalaOk, setEscalaOk] = useState<EscalaOk>(null);
   /*
    * Duas entradas desenham a mesma seringa: a dose prescrita e o slider de
@@ -105,7 +127,6 @@ export default function ConversorConcentracao({ placement }: { placement: string
   const [copiado, setCopiado] = useState(false);
   const [marca, setMarca] = useState<number | null>(null);
   const [marcaTxt, setMarcaTxt] = useState("");
-  const [conferirAberto, setConferirAberto] = useState(false);
   const [mgInfoTxt, setMgInfoTxt] = useState("");
   const [marcaInfoTxt, setMarcaInfoTxt] = useState("");
 
@@ -127,8 +148,8 @@ export default function ConversorConcentracao({ placement }: { placement: string
 
   const leitura = concentracao != null && marca != null ? lerMarca(concentracao, marca) : null;
   const tabela = concentracao != null ? tabelaU100(concentracao) : [];
-  const podeSeringa = concentracao != null && tipo === "peptideo" && escalaOk === "sim";
-  const nome = nomeDoComposto(composto || null);
+  const ehInsulina = composto === ID_INSULINA;
+  const nome = ehInsulina ? null : nomeDoComposto(composto || null);
 
   const vMgPrescrito = validarMg(mgPrescritoTxt);
   const prescrito = concentracao != null && vMgPrescrito.valor != null
@@ -187,128 +208,191 @@ export default function ConversorConcentracao({ placement }: { placement: string
         Educacional · sem cadastro · nada sai do seu navegador
       </p>
       <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-2" style={h}>
-        Calcule a Concentração e Converta a Dose Prescrita
+        Quanto puxar na seringa
       </h2>
-      <p className="text-gray-300 leading-relaxed mb-6 max-w-2xl">
-        Diga quanto o rótulo declara e quanto líquido tem no frasco. A concentração aparece na hora — e com ela a ferramenta converte, em mL e nas marquinhas da seringa, a dose que já foi prescrita para você.
+      <p className="text-gray-300 leading-relaxed mb-6">
+        Três campos e a resposta aparece. As explicações ficam no fim, para quem quiser.
       </p>
 
-      {/* Passo 1: de que lado da régua a pessoa está. */}
-      <div className="mb-6">
-        <p id={`${uid}-tipo-rot`} className="text-gray-300 text-sm font-medium mb-2">O que você quer calcular?</p>
-        <div role="radiogroup" aria-labelledby={`${uid}-tipo-rot`} className="flex flex-wrap gap-2">
-          {([
-            ["peptideo", "Peptídeo ou injetável manipulado"],
-            ["insulina", "Insulina"],
-          ] as const).map(([id, rot]) => (
-            <button key={id} type="button" role="radio" aria-checked={tipo === id} onClick={() => setTipo(id)}
-              className={`px-4 py-2.5 text-sm font-medium border transition-colors min-h-[44px] ${tipo === id ? "border-[#BA9E50] text-white bg-[#BA9E50]/10" : "border-white/20 text-gray-300 hover:border-white/40"}`}>
-              {rot}
-            </button>
-          ))}
-        </div>
-        {tipo === null && (
-          <p className="text-gray-400 text-xs leading-relaxed mt-2">
-            Essa seringa nasceu para insulina, e insulina tem regra própria. Responda para a ferramenta saber o que pode explicar.
-          </p>
+      {/*
+        OS CAMPOS, TODOS JUNTOS.
+        A versão anterior alternava campo e parágrafo: preenchia, lia três
+        blocos, preenchia de novo, lia mais. Quem chega com o frasco na mão
+        quer a resposta, não uma aula intercalada. Agora o que se preenche
+        fica todo num lugar, a resposta vem logo abaixo, e tudo o que explica
+        virou acordeão fechado no fim.
+      */}
+      <div className="grid gap-4 sm:grid-cols-2">
+        {modo === "calcular" ? (
+          <>
+            <div>
+              <label htmlFor={`${uid}-mg`} className="block text-gray-300 text-sm font-medium mb-2">1. Quanto o rótulo declara</label>
+              <div className="flex items-center gap-3">
+                <input id={`${uid}-mg`} type="text" inputMode="decimal" autoComplete="off" placeholder="60" value={mgTxt} onChange={(e) => setMgTxt(e.target.value)} className={inputCls} aria-describedby={`${uid}-mg-ajuda`} />
+                <span className="text-gray-300 text-lg">mg</span>
+              </div>
+              <p id={`${uid}-mg-ajuda`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
+                {vMg.erro && vMg.erro !== "vazio" ? MENSAGEM_ERRO[vMg.erro] : "O total que vem no frasco."}
+              </p>
+            </div>
+            <div>
+              <label htmlFor={`${uid}-ml`} className="block text-gray-300 text-sm font-medium mb-2">2. Quanto líquido tem no frasco</label>
+              <div className="flex items-center gap-3">
+                <input id={`${uid}-ml`} type="text" inputMode="decimal" autoComplete="off" placeholder="2,5" value={mlTxt} onChange={(e) => setMlTxt(e.target.value)} className={inputCls} aria-describedby={`${uid}-ml-ajuda`} />
+                <span className="text-gray-300 text-lg">mL</span>
+              </div>
+              <p id={`${uid}-ml-ajuda`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
+                {vMl.erro && vMl.erro !== "vazio" ? MENSAGEM_ERRO[vMl.erro] : "O volume final, com o frasco já pronto."}
+              </p>
+            </div>
+          </>
+        ) : (
+          <div>
+            <label htmlFor={`${uid}-conc`} className="block text-gray-300 text-sm font-medium mb-2">1. Concentração do frasco</label>
+            <div className="flex items-center gap-3">
+              <input id={`${uid}-conc`} type="text" inputMode="decimal" autoComplete="off" placeholder="24" value={concTxt} onChange={(e) => setConcTxt(e.target.value)} className={inputCls} aria-describedby={`${uid}-conc-ajuda`} />
+              <span className="text-gray-300 text-lg whitespace-nowrap">mg/mL</span>
+            </div>
+            <p id={`${uid}-conc-ajuda`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
+              {vConc.erro && vConc.erro !== "vazio" ? MENSAGEM_ERRO[vConc.erro] : "Como está escrito no rótulo."}
+            </p>
+          </div>
         )}
+
+        <div>
+          <label htmlFor={`${uid}-presc`} className="block text-gray-300 text-sm font-medium mb-2">
+            {modo === "calcular" ? "3." : "2."} Quanto o profissional indicou
+          </label>
+          <div className="flex items-center gap-3">
+            <input id={`${uid}-presc`} type="text" inputMode="decimal" autoComplete="off" placeholder="2,5" value={mgPrescritoTxt}
+              onChange={(e) => { setMgPrescritoTxt(e.target.value); setUltimoAjuste("dose"); }} className={inputCls} aria-describedby={`${uid}-presc-ajuda`} />
+            <span className="text-gray-300 text-lg">mg</span>
+          </div>
+          <p id={`${uid}-presc-ajuda`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
+            {mgPrescritoTxt && vMgPrescrito.erro && vMgPrescrito.erro !== "vazio" ? MENSAGEM_ERRO[vMgPrescrito.erro] : "A dose que já foi prescrita para você."}
+          </p>
+        </div>
+
+        {/*
+          O composto é opcional e cosmético — muda o rótulo do resultado e
+          nada mais. A exceção é "Insulina", que aqui funciona como saída: ela
+          substituiu a pergunta separada que todo mundo respondia antes de ver
+          qualquer campo.
+        */}
+        <div>
+          <label htmlFor={`${uid}-composto`} className="block text-gray-300 text-sm font-medium mb-2">
+            O que tem no frasco <span className="text-gray-500 font-normal">(opcional)</span>
+          </label>
+          <select
+            id={`${uid}-composto`}
+            value={composto}
+            onChange={(e) => { setComposto(e.target.value); if (e.target.value) trackEvent("compound_selected", { placement }); }}
+            className="w-full bg-black border border-white/25 focus:border-[#BA9E50] text-white px-4 py-[13px] outline-none transition-colors min-h-[52px]"
+            aria-describedby={`${uid}-composto-ajuda`}
+          >
+            <option value="">Prefiro não dizer</option>
+            {COMPOSTOS.map((c) => <option key={c.id} value={c.id}>{c.nome}</option>)}
+          </select>
+          <p id={`${uid}-composto-ajuda`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
+            Só nomeia o resultado. A conta é a mesma para todos.
+          </p>
+        </div>
       </div>
 
-      {tipo === "insulina" && (
-        <div role="alert" className="border border-white/30 bg-black/60 p-5 mb-6">
-          <p className="text-white font-semibold leading-relaxed mb-3">
-            Esta ferramenta não calcula doses de insulina. Use exatamente a concentração, dispositivo e quantidade prescritos para o produto específico. Não converta entre concentrações ou seringas por conta própria.
-          </p>
-          <p className="text-gray-300 text-sm leading-relaxed">
-            Para insulina, as unidades da escala são unidades da própria insulina, e existem produtos em concentrações diferentes (U-100, U-200, U-300, U-500) que não se convertem por regra de três.{" "}
-            {fonteInsulina && <a href={linkDaFonte(fonteInsulina)} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-1 hover:text-white transition-colors" onClick={() => trackEvent("source_open", { placement, fonte: fonteInsulina.id })}>A insulina está na lista de medicamentos de alto risco do ISMP</a>}.
-          </p>
-        </div>
+      {modo === "calcular" && (
+        <button
+          type="button"
+          onClick={() => setModo("concentracao")}
+          className="text-gray-400 text-sm underline underline-offset-4 decoration-1 hover:text-white transition-colors min-h-[44px]"
+          style={{ textDecorationColor: OURO }}
+        >
+          O rótulo já diz a concentração em mg/mL
+        </button>
+      )}
+      {modo === "concentracao" && (
+        <button
+          type="button"
+          onClick={() => setModo("calcular")}
+          className="text-gray-400 text-sm underline underline-offset-4 decoration-1 hover:text-white transition-colors min-h-[44px]"
+          style={{ textDecorationColor: OURO }}
+        >
+          Prefiro calcular pela quantidade e pelo volume
+        </button>
       )}
 
       {/*
-        A entrada vem primeiro. Quem abre esta página já tem o frasco na mão e
-        quer a conta: fazer a pessoa ler três definições antes de digitar
-        qualquer coisa é cobrar aula de quem veio buscar resposta. A explicação
-        das três palavras vem logo depois do resultado, quando ela já tem um
-        número concreto para pendurar o conceito.
+        A conferência da escala só aparece quando já há o que responder. Pedir
+        antes seria mais um obstáculo antes do primeiro número — e ela existe
+        para proteger a RESPOSTA, não a digitação. O motivo dela está no
+        comentário de EscalaOk: a seringa U-40 erra por 2,5×.
       */}
-      {modo === "calcular" ? (
-        <div className="grid gap-4 sm:grid-cols-2">
-          <div>
-            <label htmlFor={`${uid}-mg`} className="block text-gray-300 text-sm font-medium mb-2">Quanto o rótulo declara</label>
-            <div className="flex items-center gap-3">
-              <input id={`${uid}-mg`} type="text" inputMode="decimal" autoComplete="off" placeholder="60" value={mgTxt} onChange={(e) => setMgTxt(e.target.value)} className={inputCls} aria-describedby={`${uid}-mg-ajuda`} />
-              <span className="text-gray-300 text-lg">mg</span>
-            </div>
-            <p id={`${uid}-mg-ajuda`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
-              {vMg.erro && vMg.erro !== "vazio" ? MENSAGEM_ERRO[vMg.erro] : "O total de substância que vem no frasco."}
-            </p>
+      {ehInsulina ? null : concentracao != null && vMgPrescrito.valor != null && (
+        <div className="mt-5 border-l-2 pl-4" style={{ borderColor: OURO }}>
+          <p id={`${uid}-esc-rot`} className="text-white font-semibold mb-2">Antes da resposta: na sua seringa está escrito U-100?</p>
+          <div role="radiogroup" aria-labelledby={`${uid}-esc-rot`} className="flex flex-wrap gap-2">
+            {([["sim", "Sim, está"], ["nao", "Está escrito outra coisa"]] as const).map(([id, rot]) => (
+              <button key={id} type="button" role="radio" aria-checked={escalaOk === id} onClick={() => setEscalaOk(id)}
+                className={`px-4 py-2.5 text-sm font-medium border transition-colors min-h-[44px] ${escalaOk === id ? "border-[#BA9E50] text-white bg-[#BA9E50]/10" : "border-white/20 text-gray-300 hover:border-white/40"}`}>
+                {rot}
+              </button>
+            ))}
           </div>
-          <div>
-            <label htmlFor={`${uid}-ml`} className="block text-gray-300 text-sm font-medium mb-2">Quanto líquido tem no frasco</label>
-            <div className="flex items-center gap-3">
-              <input id={`${uid}-ml`} type="text" inputMode="decimal" autoComplete="off" placeholder="2,5" value={mlTxt} onChange={(e) => setMlTxt(e.target.value)} className={inputCls} aria-describedby={`${uid}-ml-ajuda`} />
-              <span className="text-gray-300 text-lg">mL</span>
-            </div>
-            <p id={`${uid}-ml-ajuda`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
-              {vMl.erro && vMl.erro !== "vazio" ? MENSAGEM_ERRO[vMl.erro] : "O volume final da solução, já pronta."}
-            </p>
-          </div>
-        </div>
-      ) : (
-        <div className="max-w-sm">
-          <label htmlFor={`${uid}-conc`} className="block text-gray-300 text-sm font-medium mb-2">Concentração do frasco</label>
-          <div className="flex items-center gap-3">
-            <input id={`${uid}-conc`} type="text" inputMode="decimal" autoComplete="off" placeholder="24" value={concTxt} onChange={(e) => setConcTxt(e.target.value)} className={inputCls} aria-describedby={`${uid}-conc-ajuda`} />
-            <span className="text-gray-300 text-lg whitespace-nowrap">mg/mL</span>
-          </div>
-          <p id={`${uid}-conc-ajuda`} className="text-gray-400 text-sm mt-2 min-h-[20px]">
-            {vConc.erro && vConc.erro !== "vazio" ? MENSAGEM_ERRO[vConc.erro] : "Como está escrito no rótulo."}
-          </p>
         </div>
       )}
 
-      {/*
-        O segundo caminho é um link discreto, não uma escolha na porta de
-        entrada. Perguntar "você quer calcular ou já sabe?" antes de mostrar
-        qualquer campo obriga a pessoa a decidir algo que ela ainda não
-        entendeu — e foi exatamente o que confundiu na primeira versão.
-      */}
-      <button
-        type="button"
-        onClick={() => setModo(modo === "calcular" ? "concentracao" : "calcular")}
-        className="mt-1 text-gray-400 text-sm underline underline-offset-4 decoration-1 hover:text-white transition-colors min-h-[44px]"
-        style={{ textDecorationColor: OURO }}
-      >
-        {modo === "calcular" ? "O rótulo já diz a concentração em mg/mL" : "Prefiro calcular pela quantidade e pelo volume"}
-      </button>
-
-      {/* O resultado, na hora. */}
-      <div aria-live="polite" className="mt-5">
-        {concentracao == null ? (
-          <p className="text-gray-400 text-sm leading-relaxed border-l-2 pl-3" style={{ borderColor: OURO }}>
-            Preencha os dois campos para ver a concentração. Se o rótulo não diz a quantidade total e o volume, não dá para saber a concentração — e a ferramenta não chuta.
-          </p>
-        ) : (
+      {/* ================= A RESPOSTA ================= */}
+      <div aria-live="polite" className="mt-6">
+        {ehInsulina ? (
+          <div role="alert" className="border border-white/30 bg-black/60 p-5">
+            <p className="text-white font-semibold leading-relaxed mb-3">
+              Esta ferramenta não calcula doses de insulina. Use exatamente a concentração, dispositivo e quantidade prescritos para o produto específico. Não converta entre concentrações ou seringas por conta própria.
+            </p>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Para insulina, as unidades da escala são unidades da própria insulina, e existem produtos em concentrações diferentes (U-100, U-200, U-300, U-500) que não se convertem por regra de três.{" "}
+              {fonteInsulina && <a href={linkDaFonte(fonteInsulina)} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-1 hover:text-white transition-colors" onClick={() => trackEvent("source_open", { placement, fonte: fonteInsulina.id })}>A insulina está na lista de medicamentos de alto risco do ISMP</a>}.
+            </p>
+          </div>
+        ) : escalaOk === "nao" ? (
+          <div role="alert" className="border border-white/40 bg-black/60 p-5">
+            <p className="text-white font-bold text-lg mb-2" style={h}>Então pare por aqui</p>
+            <p className="text-gray-300 text-sm leading-relaxed mb-3">
+              A mais comum das outras é a U-40, de insulina veterinária: nela cada marquinha vale 0,025 mL em vez de 0,01, então a marquinha 5 seria 0,125 mL — duas vezes e meia mais líquido do que numa seringa de farmácia.
+            </p>
+            <p className="text-white text-sm leading-relaxed font-semibold">
+              A conta desta página não serve para essa seringa. Confirme com o farmacêutico qual dispositivo usar.
+            </p>
+          </div>
+        ) : prescrito?.status === "fora_da_seringa" ? (
+          <div role="alert" className="border border-white/40 bg-black/60 p-5">
+            <p className="text-white font-semibold leading-relaxed mb-2">Essa dose não cabe nesta seringa</p>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Nesta concentração, {formatarMg(prescrito.mgPrescrito)} mg ocupariam {formatarMlFino(prescrito.volumeMl)} mL, e a maior dessas seringas vai só até 1,00 mL. Isso costuma significar que a concentração informada ou a quantidade estão trocadas. Confirme as duas com o prescritor ou o farmacêutico.
+            </p>
+          </div>
+        ) : prescrito?.status === "ok" && escalaOk === "sim" ? (
           <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.06] p-5 sm:p-6">
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-2" style={{ color: OURO }}>Concentração</p>
-            <p className="text-white font-bold text-4xl sm:text-5xl leading-none mb-3" style={h}>
-              {formatarConcentracao(concentracao)}<span className="text-xl font-normal text-gray-300"> mg/mL</span>
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-1" style={{ color: OURO }}>Puxe até a</p>
+            <p className="text-white font-bold text-5xl sm:text-6xl leading-none mb-3" style={h}>
+              marquinha {formatarMarca(prescrito.marcaAproximada)}
             </p>
-            <p className="text-gray-300 leading-relaxed">
-              Quer dizer: cada 1 mL {nome ? `do seu frasco de ${nome.toLowerCase()}` : "desse frasco"} tem {formatarConcentracao(concentracao)} mg da substância.
+            <div className="mb-4">
+              <SeringaU100 marca={marcaDesenhada} id={`${uid}-seringa`} />
+            </div>
+            <p className="text-gray-200 leading-relaxed mb-1">
+              São <strong className="text-white">{formatarMlFino(prescrito.volumeMl)} mL</strong>{nome ? ` do seu frasco de ${nome.toLowerCase()}` : ""}, que está a <strong className="text-white">{formatarConcentracao(concentracao!)} mg/mL</strong>.
             </p>
-            {/*
-              Copiar entrega o texto inteiro, com a conta à vista. Quem copia
-              costuma colar numa conversa com quem prescreveu — e um número
-              solto, sem a concentração que o gerou, é justamente o que vira
-              mal-entendido.
-            */}
+            {!Number.isInteger(prescrito.marcaAproximada) && (
+              <p className="text-gray-300 text-sm leading-relaxed mt-3">
+                Repare que não cai numa marquinha inteira. Seringa não tem precisão de décimo de marquinha — se a diferença importa no seu caso, quem resolve isso é quem prescreveu.
+              </p>
+            )}
+            <p className="text-white text-sm leading-relaxed font-semibold mt-3">
+              Confira este número com quem prescreveu antes de usar. A ferramenta conferiu a matemática, não a adequação ao seu caso.
+            </p>
             <button
               type="button"
               onClick={() => {
-                const linha = `Frasco: ${formatarConcentracao(concentracao)} mg/mL${nome ? ` (${nome})` : ""}${leitura ? ` · marquinha ${leitura.marca} da seringa = ${formatarMl(leitura.volumeMl)} mL = ${formatarMg(leitura.mg)} mg` : ""}`;
+                const linha = `Frasco: ${formatarConcentracao(concentracao!)} mg/mL${nome ? ` (${nome})` : ""} · ${formatarMg(prescrito.mgPrescrito)} mg = ${formatarMlFino(prescrito.volumeMl)} mL = marquinha ${formatarMarca(prescrito.marcaAproximada)} da seringa`;
                 navigator.clipboard?.writeText(linha).then(() => {
                   setCopiado(true);
                   trackEvent("result_copied", { placement });
@@ -318,348 +402,159 @@ export default function ConversorConcentracao({ placement }: { placement: string
               className="mt-4 text-sm font-semibold text-white underline underline-offset-4 decoration-1 min-h-[44px] hover:opacity-80 transition-opacity"
               style={{ textDecorationColor: OURO }}
             >
-              {copiado ? "Copiado" : "Copiar o resultado"}
+              {copiado ? "Copiado" : "Copiar para mandar a quem prescreveu"}
             </button>
-            {modo === "calcular" && vMg.valor != null && vMl.valor != null && (
-              <details className="mt-4 group">
-                <summary className="cursor-pointer list-none text-white text-sm font-semibold underline underline-offset-4 decoration-1 min-h-[44px] flex items-center" style={{ textDecorationColor: OURO }}>
-                  De onde saiu esse número?
-                </summary>
-                <div className="mt-3 border border-white/10 bg-black/40 p-4 text-sm text-gray-200 leading-relaxed">
-                  Divide a quantidade pelo volume:<br />
-                  <strong className="text-white">{formatarMg(vMg.valor)} mg ÷ {formatarMl(vMl.valor)} mL = {formatarConcentracao(concentracao)} mg/mL</strong>
-                </div>
-              </details>
-            )}
           </div>
+        ) : (
+          <p className="text-gray-400 text-sm leading-relaxed border-l-2 pl-3" style={{ borderColor: OURO }}>
+            {concentracao == null
+              ? "Preencha o frasco para começar. Se o rótulo não diz a quantidade e o volume, não dá para saber a concentração — e a ferramenta não chuta."
+              : vMgPrescrito.valor == null
+                ? `Seu frasco está a ${formatarConcentracao(concentracao)} mg/mL. Informe a dose prescrita para ver a marquinha.`
+                : "Responda sobre a seringa para ver a resposta."}
+          </p>
         )}
       </div>
 
-      {/*
-        Opcional, e cosmético de propósito: escolher um nome muda o rótulo do
-        resultado e nada mais. Nenhum campo é preenchido, nenhuma quantidade é
-        sugerida, e a conta é idêntica para todos os itens da lista — o nome
-        existe para quem chegou pela palavra reconhecer que está no lugar
-        certo, não para a ferramenta fingir que sabe algo sobre o frasco.
-      */}
-      {tipo === "peptideo" && concentracao != null && (
-        <div className="mt-5">
-          <label htmlFor={`${uid}-composto`} className="block text-gray-300 text-sm font-medium mb-2">
-            Qual composto está no frasco? <span className="text-gray-500">(opcional)</span>
-          </label>
-          <select
-            id={`${uid}-composto`}
-            value={composto}
-            onChange={(e) => { setComposto(e.target.value); if (e.target.value) trackEvent("compound_selected", { placement }); }}
-            className="w-full sm:w-80 bg-black border border-white/25 focus:border-[#BA9E50] text-white px-4 py-3 outline-none transition-colors min-h-[44px]"
-            aria-describedby={`${uid}-composto-ajuda`}
-          >
-            <option value="">Não quero escolher</option>
-            {COMPOSTOS.map((c) => <option key={c.id} value={c.id}>{c.nome}</option>)}
-          </select>
-          <p id={`${uid}-composto-ajuda`} className="text-gray-400 text-sm mt-2">
-            Serve só para nomear o resultado. A conta é a mesma para qualquer composto, e nenhum valor é preenchido por você.
-          </p>
-        </div>
-      )}
+      <div role="note" className="border border-white/25 bg-black/50 p-4 mt-5">
+        <p className="text-white text-sm leading-relaxed font-semibold">
+          Esta ferramenta explica concentração e volume. Ela não determina quanto você deve injetar. Use somente uma quantidade previamente orientada por profissional habilitado e confirme qualquer divergência antes da administração.
+        </p>
+      </div>
 
-      {/* Agora sim a explicação: com o número na tela, o conceito gruda. */}
-      <dl className="grid grid-cols-3 gap-2 sm:gap-3 mt-6 mb-7">
-        {[
-          ["mg", "É a substância. Quanto dela tem no frasco."],
-          ["mL", "É o líquido. Quanto dele tem no frasco."],
-          ["mg/mL", "Junta os dois: quanta substância tem em cada mL."],
-        ].map(([t, d]) => (
-          <div key={t} className="border border-white/15 p-3 sm:p-4">
-            <dt className="text-white font-bold text-xl sm:text-2xl leading-none mb-1.5" style={h}>{t}</dt>
-            <dd className="text-gray-400 text-xs sm:text-sm leading-snug">{d}</dd>
-          </div>
-        ))}
-      </dl>
-
-      {concentracao != null && (
-        <>
-          {/* Aviso de segurança: curto, antes da seringa. */}
-          <div role="note" className="border border-white/25 bg-black/50 p-4 sm:p-5 mb-7">
-            <p className="text-white text-sm sm:text-base leading-relaxed font-semibold">
-              Esta ferramenta explica concentração e volume. Ela não determina quanto você deve injetar. Use somente uma quantidade previamente orientada por profissional habilitado e confirme qualquer divergência antes da administração.
-            </p>
-          </div>
-
-          {/* Passo 2: a seringa */}
-          <h3 className="text-white font-bold text-xl sm:text-2xl leading-tight mb-3" style={h}>Entenda a escala da seringa</h3>
-
-          <div className="mb-6">
-            <div>
-              <p id={`${uid}-esc-rot`} className="text-white font-semibold mb-2">Pegue a sua seringa e confira uma coisa</p>
-              <p className="text-gray-300 leading-relaxed mb-3">
-                Olhe o corpo da seringa. Perto da marca de 1 mL costuma estar escrito <strong className="text-white">U-100</strong> — é a seringa de insulina que se compra em farmácia, e é a que esta calculadora entende. Não importa se a sua é a pequena ou a grande: importa esse código.
-              </p>
-              <div role="radiogroup" aria-labelledby={`${uid}-esc-rot`} className="flex flex-wrap gap-2">
-                {([["sim", "Confere, está escrito U-100"], ["nao", "Está escrito outra coisa"]] as const).map(([id, rot]) => (
-                  <button key={id} type="button" role="radio" aria-checked={escalaOk === id} onClick={() => setEscalaOk(id)}
-                    className={`px-4 py-2.5 text-sm font-medium border transition-colors min-h-[44px] ${escalaOk === id ? "border-[#BA9E50] text-white bg-[#BA9E50]/10" : "border-white/20 text-gray-300 hover:border-white/40"}`}>
-                    {rot}
-                  </button>
+      {/* ================= AS EXPLICAÇÕES, FECHADAS ================= */}
+      {concentracao != null && !ehInsulina && (
+        <div className="mt-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: OURO }}>Se quiser entender melhor</p>
+          <div className="grid gap-2">
+            <Explica titulo="De onde saiu esse número">
+              <dl className="grid grid-cols-3 gap-2 sm:gap-3 mb-4">
+                {[
+                  ["mg", "É a substância. Quanto dela tem no frasco."],
+                  ["mL", "É o líquido. Quanto dele tem no frasco."],
+                  ["mg/mL", "Junta os dois: quanta substância tem em cada mL."],
+                ].map(([t, d]) => (
+                  <div key={t} className="border border-white/15 p-3">
+                    <dt className="text-white font-bold text-xl leading-none mb-1.5" style={h}>{t}</dt>
+                    <dd className="text-gray-400 text-xs sm:text-sm leading-snug">{d}</dd>
+                  </div>
                 ))}
-              </div>
-              {escalaOk === null && (
-                <p className="text-gray-400 text-xs leading-relaxed mt-2">
-                  É a única vez que a gente vai falar nesse código. Depois disso é português.
-                </p>
-              )}
-              {escalaOk === "nao" && (
-                <div role="alert" className="border border-white/40 bg-black/60 p-4 sm:p-5 mt-4">
-                  <p className="text-white font-bold text-lg mb-2" style={h}>Então pare por aqui</p>
-                  <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                    Existem seringas com outra régua. A mais comum é a U-40, de insulina veterinária: nela 1 mL comporta 40 unidades, então cada marquinha vale 0,025 mL em vez de 0,01. Na prática, a marquinha 5 seria 0,125 mL — duas vezes e meia mais líquido do que numa seringa de farmácia.
-                  </p>
-                  <p className="text-white text-sm leading-relaxed font-semibold">
-                    A conta desta página não serve para essa seringa. Confirme com o farmacêutico qual dispositivo usar antes de qualquer coisa.
-                  </p>
-                </div>
-              )}
-              {escalaOk === "sim" && (
-                <details className="mt-3 group">
-                  <summary className="cursor-pointer list-none text-white text-sm font-semibold underline underline-offset-4 decoration-1 min-h-[44px] flex items-center" style={{ textDecorationColor: OURO }}>
-                    A minha é de 50, não de 100. Muda alguma coisa?
-                  </summary>
-                  <p className="text-gray-300 leading-relaxed mt-3">
-                    Não muda nada na conta. A seringa de 30, a de 50 e a de 100 têm a mesma régua — o que muda é só até onde ela vai. A marquinha 5 é 0,05 mL nas três. Use a que couber na quantidade que você precisa.
-                  </p>
-                </details>
-              )}
-            </div>
-          </div>
+              </dl>
+              <ol className="grid gap-2">
+                {[
+                  modo === "calcular" && vMg.valor != null ? [`${formatarMg(vMg.valor)} mg`, "de substância no frasco"] : null,
+                  modo === "calcular" && vMl.valor != null ? [`${formatarMl(vMl.valor)} mL`, "de líquido no frasco"] : null,
+                  [`${formatarConcentracao(concentracao)} mg/mL`, "logo, tem isso em cada mL"],
+                  prescrito?.status === "ok" ? [`${formatarMlFino(prescrito.volumeMl)} mL`, "é o volume da dose prescrita"] : null,
+                  prescrito?.status === "ok" ? [`Marquinha ${formatarMarca(prescrito.marcaAproximada)}`, "é onde esse volume cai na seringa"] : null,
+                ].filter((x): x is [string, string] => !!x).map(([v, r], i, arr) => (
+                  <li key={r} className="flex items-baseline gap-3">
+                    <span className="text-gray-500 text-sm font-semibold w-5 shrink-0">{i + 1}.</span>
+                    <span><strong className="text-white text-lg" style={h}>{v}</strong> <span className="text-gray-400 text-sm">— {r}{i < arr.length - 1 ? " ↓" : ""}</span></span>
+                  </li>
+                ))}
+              </ol>
+            </Explica>
 
-          {podeSeringa && (
-            <>
-              {/* U-100 em destaque */}
-              <div className="border border-white/15 p-5 sm:p-6 mb-6">
-                <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-2" style={{ color: OURO }}>Na sua seringa</p>
-                <p className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-3" style={h}>Cada marquinha vale 0,01 mL</p>
-                <p className="text-gray-300 leading-relaxed mb-3">
-                  Dez marquinhas dão 0,10 mL. Cinquenta dão 0,50 mL. Cem enchem 1 mL. Se o líquido não é insulina, esses risquinhos são só medida de volume: é quanto líquido cabe ali, nada além disso.
-                </p>
-                <details className="group" onToggle={(e) => { if ((e.currentTarget as HTMLDetailsElement).open) trackEvent("u100_education_open", { placement }); }}>
-                  <summary className="cursor-pointer list-none text-white text-sm font-semibold underline underline-offset-4 decoration-1 min-h-[44px] flex items-center" style={{ textDecorationColor: OURO }}>
-                    A marquinha 10 não é “10 UI” do que está no meu frasco?
-                  </summary>
-                  <p className="text-gray-300 leading-relaxed mt-3">
-                    Não. Essa seringa foi feita para insulina, e é com insulina que os risquinhos viram unidades de verdade. Com outro líquido dentro, a marquinha 10 continua sendo 0,10 mL de volume, mas isso não significa que o outro composto possua 10 unidades internacionais. UI não tem conversão fixa para mg: muda de substância para substância. Por isso aqui a gente diz “marquinha 10”, e nunca “10 UI”.
-                  </p>
-                </details>
+            <Explica titulo="O que cada marquinha vale" ao={() => trackEvent("u100_education_open", { placement })}>
+              <p className="text-gray-300 leading-relaxed mb-3">
+                Cada marquinha vale 0,01 mL. Dez dão 0,10 mL, cinquenta dão 0,50 mL, cem enchem 1 mL. A seringa de 30, a de 50 e a de 100 têm a mesma régua — muda só até onde ela vai.
+              </p>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                Se o líquido não é insulina, esses risquinhos são só medida de volume. A marquinha 10 continua sendo 0,10 mL, mas isso não significa que o outro composto possua 10 unidades internacionais. UI não tem conversão fixa para mg: muda de substância para substância. Por isso aqui a gente diz “marquinha 10”, e nunca “10 UI”.
+              </p>
+              <p className="text-white font-semibold mb-2">A régua inteira desse frasco</p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead><tr className="text-left text-gray-400 border-b border-white/15"><th className="py-2 pr-3 font-medium">Marquinha</th><th className="py-2 pr-3 font-medium">Volume</th><th className="py-2 font-medium">Quantidade contida</th></tr></thead>
+                  <tbody>
+                    {tabela.map((l) => (
+                      <tr key={l.marca} className="border-b border-white/10 text-gray-200"><td className="py-2 pr-3 font-semibold text-white">{l.marca}</td><td className="py-2 pr-3">{formatarMl(l.volumeMl)} mL</td><td className="py-2">{formatarMg(l.mg)} mg</td></tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
+              <p className="text-gray-400 text-xs leading-relaxed mt-2">Nenhuma linha é sugestão. Está aqui só para você ver que, quanto mais volume, mais substância — sempre na mesma proporção.</p>
+            </Explica>
 
-              {/*
-                O caminho inverso. Ele existe porque metade das pessoas chega
-                com o número já na mão — o prescritor falou em mg, e a seringa
-                fala em marca. O que mantém isto do lado da explicação é o
-                enunciado do campo: ele pergunta o que foi PRESCRITO, não o
-                que a pessoa quer. E a saída não arredonda para a marca
-                "certa": 10,4 aparece como 10,4, porque uma quantidade que não
-                cai numa marca é uma conversa com o prescritor, não um
-                arredondamento que a ferramenta faz sozinha.
-              */}
-              <div className="border border-white/15 p-5 sm:p-6 mb-6">
-                <p className="text-white font-bold text-lg mb-2" style={h}>Converter a dose prescrita em mL e na marquinha</p>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                  Se um profissional habilitado já passou a dose em mg, veja quantos mL ela dá e em que marquinha desta seringa ela cai. A ferramenta não escolhe a dose: ela só converte a que você informou.
-                </p>
-                <div className="flex items-center gap-3 max-w-xs mb-3">
-                  <label htmlFor={`${uid}-presc`} className="sr-only">Dose prescrita em mg</label>
-                  <input id={`${uid}-presc`} type="text" inputMode="decimal" autoComplete="off" placeholder="2,5" value={mgPrescritoTxt}
-                    onChange={(e) => { setMgPrescritoTxt(e.target.value); setUltimoAjuste("dose"); }} className={inputCls} aria-describedby={`${uid}-presc-saida`} />
-                  <span className="text-gray-300 text-lg">mg</span>
-                </div>
-                <div id={`${uid}-presc-saida`} aria-live="polite">
-                  {mgPrescritoTxt && vMgPrescrito.erro && vMgPrescrito.erro !== "vazio" && (
-                    <p className="text-gray-400 text-sm">{MENSAGEM_ERRO[vMgPrescrito.erro]}</p>
-                  )}
-                  {prescrito?.status === "ok" && (
-                    <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.06] p-4 sm:p-5">
-                      <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-1" style={{ color: OURO }}>Puxe até a</p>
-                      <p className="text-white font-bold text-4xl sm:text-5xl leading-none mb-2" style={h}>
-                        marquinha {formatarMarca(prescrito.marcaAproximada)}
-                      </p>
-                      <p className="text-gray-300 leading-relaxed mb-3">
-                        São {formatarMlFino(prescrito.volumeMl)} mL de líquido.
-                      </p>
-                      <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                        A conta: {formatarMg(prescrito.mgPrescrito)} mg ÷ {formatarConcentracao(concentracao)} mg/mL = {formatarMlFino(prescrito.volumeMl)} mL, e cada marquinha vale 0,01 mL.
-                      </p>
-                      {!Number.isInteger(prescrito.marcaAproximada) && (
-                        <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                          Repare que não cai numa marquinha inteira. Seringa não tem precisão de décimo de marquinha — se a diferença importa no seu caso, quem resolve isso é quem prescreveu.
-                        </p>
-                      )}
-                      <p className="text-white text-sm leading-relaxed font-semibold">
-                        Confira este número com quem prescreveu antes de usar. A ferramenta conferiu a matemática, não a adequação ao seu caso.
-                      </p>
-                    </div>
-                  )}
-                  {prescrito?.status === "fora_da_seringa" && (
-                    <div role="alert" className="border border-white/40 bg-black/60 p-4">
-                      <p className="text-white font-semibold leading-relaxed mb-2">Essa dose não cabe nesta seringa</p>
-                      <p className="text-gray-300 text-sm leading-relaxed">
-                        Nesta concentração, {formatarMg(prescrito.mgPrescrito)} mg ocupariam {formatarMlFino(prescrito.volumeMl)} mL, e a maior dessas seringas vai só até 1,00 mL. Isso costuma significar que a concentração informada ou a quantidade estão trocadas. Confirme as duas com o prescritor ou o farmacêutico.
-                      </p>
-                    </div>
-                  )}
-                </div>
+            <Explica titulo="Ver o que tem em cada marquinha">
+              <label htmlFor={`${uid}-marca`} className="block text-gray-300 text-sm font-medium mb-2">Escolha uma marquinha</label>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
+                <input id={`${uid}-marca`} type="text" inputMode="numeric" autoComplete="off" placeholder="10" value={marcaTxt}
+                  onChange={(e) => { setMarcaTxt(e.target.value); const v = validarMarca(e.target.value); escolherMarca(v.valor); }}
+                  className="w-full sm:w-32 bg-black border border-white/25 focus:border-[#BA9E50] text-white text-2xl font-bold px-4 py-3 outline-none transition-colors" aria-describedby={`${uid}-marca-ajuda`} />
+                <input type="range" min={0} max={MARCA_MAX} step={1} value={marca ?? 0} onChange={(e) => escolherMarca(Number(e.target.value) || null)}
+                  aria-label="Deslize para escolher a marquinha" className="w-full accent-[#BA9E50]" />
               </div>
-
-              {/*
-                O desenho vem AQUI, colado na resposta. Quem digita a dose
-                quer ver o êmbolo parar num lugar — a régua sozinha, longe do
-                número, é decoração. Ele acompanha a última entrada que a
-                pessoa tocou: a dose enquanto ela digita, o slider quando ela
-                resolve explorar.
-              */}
-              <div className="mb-6">
-                <SeringaU100 marca={marcaDesenhada} id={`${uid}-seringa`} />
-              </div>
-
-              {/* A marquinha, para explorar a régua */}
-              <div className="mb-6">
-                <label htmlFor={`${uid}-marca`} className="block text-gray-300 text-sm font-medium mb-2">Qual marquinha você quer conferir?</label>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
-                  <input id={`${uid}-marca`} type="text" inputMode="numeric" autoComplete="off" placeholder="10" value={marcaTxt}
-                    onChange={(e) => { setMarcaTxt(e.target.value); const v = validarMarca(e.target.value); escolherMarca(v.valor); }}
-                    className="w-full sm:w-32 bg-black border border-white/25 focus:border-[#BA9E50] text-white text-2xl font-bold px-4 py-3 outline-none transition-colors" aria-describedby={`${uid}-marca-ajuda`} />
-                  <input type="range" min={0} max={MARCA_MAX} step={1} value={marca ?? 0} onChange={(e) => escolherMarca(Number(e.target.value) || null)}
-                    aria-label="Deslize para escolher a marquinha" className="w-full accent-[#BA9E50]" />
-                </div>
-                <p id={`${uid}-marca-ajuda`} className="text-gray-400 text-sm min-h-[20px]">
-                  {marcaTxt && validarMarca(marcaTxt).erro ? `Use um número inteiro de ${MARCA_MIN} a ${MARCA_MAX}.` : "Mexa aqui para explorar a régua. O desenho acima acompanha."}
-                </p>
-              </div>
-
-              {/* Resultado 2 */}
-              <div aria-live="polite" className="mb-6">
+              <p id={`${uid}-marca-ajuda`} className="text-gray-400 text-sm mb-3 min-h-[20px]">
+                {marcaTxt && validarMarca(marcaTxt).erro ? `Use um número inteiro de ${MARCA_MIN} a ${MARCA_MAX}.` : "O desenho lá em cima acompanha."}
+              </p>
+              <div aria-live="polite">
                 {leitura && (
-                  <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.06] p-5 sm:p-6">
-                    <div className="grid gap-4 sm:grid-cols-3">
-                      <div>
-                        <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-1" style={{ color: OURO }}>Marquinha</p>
-                        <p className="text-white font-bold text-3xl leading-none" style={h}>{leitura.marca}<span className="text-base font-normal text-gray-300"> da seringa</span></p>
-                      </div>
-                      <div>
-                        <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-1" style={{ color: OURO }}>Volume correspondente</p>
-                        <p className="text-white font-bold text-3xl leading-none" style={h}>{formatarMl(leitura.volumeMl)}<span className="text-base font-normal text-gray-300"> mL</span></p>
-                      </div>
-                      <div>
-                        <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-1" style={{ color: OURO }}>Quantidade contida nesse volume</p>
-                        <p className="text-white font-bold text-3xl leading-none" style={h}>{formatarMg(leitura.mg)}<span className="text-base font-normal text-gray-300"> mg</span></p>
-                      </div>
-                    </div>
-                    <p className="text-gray-300 text-sm leading-relaxed mt-4 mb-3">
-                      A conta: {formatarConcentracao(concentracao)} mg em cada mL × {formatarMl(leitura.volumeMl)} mL = {formatarMg(leitura.mg)} mg. É o que tem dentro desse volume.
+                  <div className="border border-white/20 p-4">
+                    <p className="text-gray-200 leading-relaxed">
+                      Marquinha <strong className="text-white">{leitura.marca}</strong> = <strong className="text-white">{formatarMl(leitura.volumeMl)} mL</strong> e contém <strong className="text-white">{formatarMg(leitura.mg)} mg</strong>.
                     </p>
-                    <p className="text-white text-sm leading-relaxed font-semibold">Isso é só a medida do que existe nesse volume. Não é uma recomendação de quanto usar.</p>
+                    <p className="text-gray-400 text-sm leading-relaxed mt-2">
+                      A conta: {formatarConcentracao(concentracao)} mg em cada mL × {formatarMl(leitura.volumeMl)} mL. Isso é só a medida do que existe nesse volume, não uma recomendação de quanto usar.
+                    </p>
                   </div>
                 )}
               </div>
+            </Explica>
 
-              {/* As três camadas, com os números da pessoa */}
-              <div className="border border-white/15 p-5 sm:p-6 mb-6">
-                <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: OURO }}>O caminho todo, passo a passo</p>
-                <ol className="grid gap-2 sm:grid-cols-2">
-                  {[
-                    modo === "calcular" && vMg.valor != null ? [`${formatarMg(vMg.valor)} mg`, "de substância no frasco"] : null,
-                    modo === "calcular" && vMl.valor != null ? [`${formatarMl(vMl.valor)} mL`, "de líquido no frasco"] : null,
-                    [`${formatarConcentracao(concentracao)} mg/mL`, "logo, tem isso em cada mL"],
-                    leitura ? [`Marquinha ${leitura.marca}`, "a que você escolheu"] : ["Marquinha ?", "escolha uma acima"],
-                    leitura ? [`${formatarMl(leitura.volumeMl)} mL`, "é o volume dessa marquinha"] : null,
-                    leitura ? [`${formatarMg(leitura.mg)} mg`, "é o que tem nesse volume"] : null,
-                  ].filter((x): x is [string, string] => !!x).map(([v, r], i, arr) => (
-                    <li key={r} className="flex items-baseline gap-3">
-                      <span className="text-gray-500 text-sm font-semibold w-5 shrink-0">{i + 1}.</span>
-                      <span><strong className="text-white text-lg" style={h}>{v}</strong> <span className="text-gray-400 text-sm">— {r}{i < arr.length - 1 ? " ↓" : ""}</span></span>
-                    </li>
-                  ))}
-                </ol>
-              </div>
+            <Explica titulo="Cuidado com um zero">
+              <p className="text-gray-300 leading-relaxed mb-3">
+                A marquinha 5 é 0,05 mL. A marquinha 50 é 0,50 mL. Um zero a mais e o volume fica dez vezes maior. Nesse seu frasco: na marquinha 5 tem {formatarMg(lerMarca(concentracao, 5)!.mg)} mg; na marquinha 50 tem {formatarMg(lerMarca(concentracao, 50)!.mg)} mg.
+              </p>
+              <p className="text-gray-400 text-sm leading-relaxed">A FDA já registrou erros assim em injetáveis manipulados. Não é para ter medo: é para conferir a marquinha duas vezes antes de usar.</p>
+            </Explica>
 
-              {/* Tabela educacional */}
-              <div className="mb-6">
-                <p className="text-white font-semibold mb-2">A régua inteira desse frasco</p>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
-                    <thead><tr className="text-left text-gray-400 border-b border-white/15"><th className="py-2 pr-3 font-medium">Marquinha</th><th className="py-2 pr-3 font-medium">Volume</th><th className="py-2 font-medium">Quantidade contida nessa concentração</th></tr></thead>
-                    <tbody>
-                      {tabela.map((l) => (
-                        <tr key={l.marca} className="border-b border-white/10 text-gray-200"><td className="py-2 pr-3 font-semibold text-white">{l.marca}</td><td className="py-2 pr-3">{formatarMl(l.volumeMl)} mL</td><td className="py-2">{formatarMg(l.mg)} mg</td></tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-                <p className="text-gray-400 text-xs leading-relaxed mt-2">Nenhuma linha é sugestão. Está tudo aqui só para você ver que, quanto mais volume, mais substância — sempre na mesma proporção.</p>
-              </div>
-
-              {/* Cuidado com um zero */}
-              <div className="border border-white/25 bg-black/50 p-5 mb-6">
-                <p className="text-white font-bold text-lg mb-2" style={h}>Cuidado com um zero</p>
-                <p className="text-gray-300 leading-relaxed mb-3">
-                  A marquinha 5 é 0,05 mL. A marquinha 50 é 0,50 mL. Um zero a mais e o volume fica dez vezes maior. Nesse seu frasco: na marquinha 5 tem {formatarMg(lerMarca(concentracao, 5)!.mg)} mg; na marquinha 50 tem {formatarMg(lerMarca(concentracao, 50)!.mg)} mg.
-                </p>
-                <p className="text-gray-400 text-sm leading-relaxed">A FDA já registrou erros assim em injetáveis manipulados. Não é para ter medo: é para conferir a marquinha duas vezes antes de usar.</p>
-              </div>
-
-              {/* Conferir uma instrução */}
-              <details className="border border-white/15 p-5 sm:p-6" open={conferirAberto} onToggle={(e) => {
-                const aberto = (e.currentTarget as HTMLDetailsElement).open; setConferirAberto(aberto);
-                if (aberto && !jaAbriuConferir.current) { jaAbriuConferir.current = true; trackEvent("instruction_check_open", { placement }); }
-              }}>
-                <summary className="cursor-pointer list-none min-h-[44px] flex items-center justify-between gap-3">
-                  <span className="text-white font-bold text-lg" style={h}>Conferir uma instrução que recebi</span>
-                  <span aria-hidden="true" className="text-[#BA9E50] text-2xl leading-none">+</span>
-                </summary>
-                <p className="text-gray-400 text-sm leading-relaxed mt-3 mb-4">
-                  Use este recurso somente para conferir a consistência matemática de uma orientação já fornecida por profissional habilitado. Ele compara o que você recebeu com a concentração acima.
-                </p>
-                <div className="grid gap-4 sm:grid-cols-2 mb-4">
-                  <div>
-                    <label htmlFor={`${uid}-mginfo`} className="block text-gray-300 text-sm font-medium mb-2">Quantidade informada pelo profissional</label>
-                    <div className="flex items-center gap-3">
-                      <input id={`${uid}-mginfo`} type="text" inputMode="decimal" autoComplete="off" placeholder="2,4" value={mgInfoTxt} onChange={(e) => setMgInfoTxt(e.target.value)} className={inputCls} />
-                      <span className="text-gray-300 text-lg">mg</span>
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor={`${uid}-marcainfo`} className="block text-gray-300 text-sm font-medium mb-2">Marquinha informada pelo profissional</label>
-                    <div className="flex items-center gap-3">
-                      <input id={`${uid}-marcainfo`} type="text" inputMode="numeric" autoComplete="off" placeholder="10" value={marcaInfoTxt} onChange={(e) => setMarcaInfoTxt(e.target.value)} className={inputCls} />
-                      <span className="text-gray-300 text-lg whitespace-nowrap">da seringa</span>
-                    </div>
+            <Explica titulo="Conferir uma instrução que recebi" ao={() => { if (!jaAbriuConferir.current) { jaAbriuConferir.current = true; trackEvent("instruction_check_open", { placement }); } }}>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                Use somente para conferir a consistência matemática de uma orientação já fornecida por profissional habilitado.
+              </p>
+              <div className="grid gap-4 sm:grid-cols-2 mb-4">
+                <div>
+                  <label htmlFor={`${uid}-mginfo`} className="block text-gray-300 text-sm font-medium mb-2">Quantidade informada</label>
+                  <div className="flex items-center gap-3">
+                    <input id={`${uid}-mginfo`} type="text" inputMode="decimal" autoComplete="off" placeholder="2,4" value={mgInfoTxt} onChange={(e) => setMgInfoTxt(e.target.value)} className={inputCls} />
+                    <span className="text-gray-300 text-lg">mg</span>
                   </div>
                 </div>
-                <div aria-live="polite">
-                  {conferencia?.status === "compativel" && (
-                    <div className="border border-white/25 p-4">
-                      <p className="text-white font-semibold mb-2">A matemática informada é compatível com a concentração cadastrada.</p>
-                      <p className="text-gray-300 text-sm leading-relaxed">
-                        {formatarConcentracao(concentracao)} mg/mL · marquinha {conferencia.marca} = {formatarMl(conferencia.volumeMl)} mL · contém {formatarMg(conferencia.mgContido)} mg. Isso confere a conta, não a adequação clínica: quem decide a quantidade é o prescritor.
-                      </p>
-                    </div>
-                  )}
-                  {conferencia?.status === "nao_corresponde" && (
-                    <div role="alert" className="border border-white/40 bg-black/60 p-4">
-                      <p className="text-white font-bold text-lg mb-2" style={h}>Os números não correspondem</p>
-                      <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                        A quantidade em mg, a concentração e a marquinha informadas não são matematicamente compatíveis. Na concentração de {formatarConcentracao(concentracao)} mg/mL, a marquinha {conferencia.marca} ({formatarMl(conferencia.volumeMl)} mL) contém {formatarMg(conferencia.mgContido)} mg, e a instrução fala em {formatarMg(conferencia.mgInformado)} mg.
-                      </p>
-                      <p className="text-white text-sm leading-relaxed font-semibold">Não ajuste por conta própria. Confirme a concentração do frasco e a orientação com o prescritor ou farmacêutico antes de usar.</p>
-                    </div>
-                  )}
-                  {(mgInfoTxt || marcaInfoTxt) && !conferencia && (
-                    <p className="text-gray-400 text-sm">Preencha os dois campos com números válidos (marquinha inteira de {MARCA_MIN} a {MARCA_MAX}).</p>
-                  )}
+                <div>
+                  <label htmlFor={`${uid}-marcainfo`} className="block text-gray-300 text-sm font-medium mb-2">Marquinha informada</label>
+                  <div className="flex items-center gap-3">
+                    <input id={`${uid}-marcainfo`} type="text" inputMode="numeric" autoComplete="off" placeholder="10" value={marcaInfoTxt} onChange={(e) => setMarcaInfoTxt(e.target.value)} className={inputCls} />
+                    <span className="text-gray-300 text-lg whitespace-nowrap">da seringa</span>
+                  </div>
                 </div>
-              </details>
-            </>
-          )}
-        </>
+              </div>
+              <div aria-live="polite">
+                {conferencia?.status === "compativel" && (
+                  <div className="border border-white/25 p-4">
+                    <p className="text-white font-semibold mb-2">A matemática informada é compatível com a concentração cadastrada.</p>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      {formatarConcentracao(concentracao)} mg/mL · marquinha {conferencia.marca} = {formatarMl(conferencia.volumeMl)} mL · contém {formatarMg(conferencia.mgContido)} mg. Isso confere a conta, não a adequação clínica: quem decide a quantidade é o prescritor.
+                    </p>
+                  </div>
+                )}
+                {conferencia?.status === "nao_corresponde" && (
+                  <div role="alert" className="border border-white/40 bg-black/60 p-4">
+                    <p className="text-white font-bold text-lg mb-2" style={h}>Os números não correspondem</p>
+                    <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                      Na concentração de {formatarConcentracao(concentracao)} mg/mL, a marquinha {conferencia.marca} ({formatarMl(conferencia.volumeMl)} mL) contém {formatarMg(conferencia.mgContido)} mg, e a instrução fala em {formatarMg(conferencia.mgInformado)} mg.
+                    </p>
+                    <p className="text-white text-sm leading-relaxed font-semibold">Não ajuste por conta própria. Confirme a concentração do frasco e a orientação com o prescritor ou farmacêutico antes de usar.</p>
+                  </div>
+                )}
+                {(mgInfoTxt || marcaInfoTxt) && !conferencia && (
+                  <p className="text-gray-400 text-sm">Preencha os dois campos com números válidos (marquinha inteira de {MARCA_MIN} a {MARCA_MAX}).</p>
+                )}
+              </div>
+            </Explica>
+          </div>
+        </div>
       )}
     </div>
   );
