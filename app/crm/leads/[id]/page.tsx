@@ -169,6 +169,7 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
             contactId={contato.id}
             primeiroNome={contato.nome.split(/\s+/)[0]}
             envios={(enviosDeConteudo ?? []) as EnvioRegistrado[]}
+            ultimaRespostaDela={lead.last_reply_at}
             emPaz={!!lead.em_paz_at}
             motivoPerda={lead.lost_reason_code}
             somenteLeitura={somenteLeitura}

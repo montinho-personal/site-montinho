@@ -1,6 +1,6 @@
 import { registrarConteudo } from "@/app/crm/actions";
 import { Aviso, Btn, Campo, Card, Input } from "@/components/crm/ui";
-import { INTERVALO_DIAS, MAX_CONTEUDOS, podeEnviarConteudo, urlDoConteudo, type Veredito } from "@/lib/crm/conteudo";
+import { INTERVALO_DIAS, MAX_CONTEUDOS, cliqueAntesDoRetorno, podeEnviarConteudo, textoDoRetorno, urlDoConteudo, type Veredito } from "@/lib/crm/conteudo";
 import { SITE_URL } from "@/lib/blog";
 import { preencher, saudacaoDe } from "@/lib/crm/copy";
 import { TEXTOS } from "@/lib/crm/copy-textos";
@@ -35,11 +35,13 @@ const SUGESTAO = [
  * pede nada — e o link daqui é o que permite responder, daqui a três meses,
  * se isso funcionou, em vez de discutir impressão.
  */
-export default function ConteudoDoLead({ leadId, contactId, primeiroNome, envios, emPaz, motivoPerda, somenteLeitura }: {
+export default function ConteudoDoLead({ leadId, contactId, primeiroNome, envios, ultimaRespostaDela, emPaz, motivoPerda, somenteLeitura }: {
   leadId: string;
   contactId: string;
   primeiroNome: string;
   envios: EnvioRegistrado[];
+  /** Quando ela voltou a falar — o `last_reply_at` do lead. */
+  ultimaRespostaDela: string | null;
   emPaz: boolean;
   motivoPerda: string | null;
   somenteLeitura: boolean;
@@ -73,13 +75,24 @@ export default function ConteudoDoLead({ leadId, contactId, primeiroNome, envios
             <li key={e.token} className="rounded-lg border border-white/10 p-3">
               <div className="flex flex-wrap items-baseline justify-between gap-2 text-sm">
                 <span className="font-medium">{i + 1}. {e.titulo || e.destino}</span>
-                <span className="text-xs text-zinc-500">
+<span className="text-xs text-zinc-500">
                   {new Date(e.enviado_em).toLocaleDateString("pt-BR")} ·{" "}
                   {e.cliques > 0
                     ? <strong className="text-emerald-400">clicou{e.cliques > 1 ? ` ${e.cliques}×` : ""}</strong>
                     : "sem clique"}
                 </span>
               </div>
+              {(() => {
+                /*
+                 * A frase diz o que aconteceu e em que ordem — nunca que o
+                 * conteúdo trouxe a pessoa. Quem lê é quem conclui, do mesmo
+                 * jeito que o CRM já faz quando o Ref some da mensagem: mostra
+                 * o que sabe e deixa uma pessoa ligar, porque atribuição
+                 * inventada é pior que atribuição faltando.
+                 */
+                const r = cliqueAntesDoRetorno(e.primeiro_clique_em, ultimaRespostaDela);
+                return r ? <p className="mt-1 text-xs text-amber-300">↩ {textoDoRetorno(r)}</p> : null;
+              })()}
               <textarea readOnly rows={5} value={mensagemDe(e, i)}
                 className="mt-2 w-full rounded-lg border border-white/10 bg-black/30 p-2 font-mono text-xs text-zinc-300"
                 aria-label={`Mensagem do conteúdo ${i + 1}, pronta para copiar`} />

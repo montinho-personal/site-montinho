@@ -3,8 +3,22 @@ import { supabaseAnon } from "@/lib/crm/supabase/server";
 
 /**
  * Link de indicação: /r/CODIGO. Valida o código sem expor nada do contato,
- * registra o clique, grava cookie de 30 dias e redireciona com UTM de
- * indicação. O tracker do site lê `ref` da URL e guarda no navegador.
+ * registra o clique e redireciona com UTM de indicação. O tracker do site lê
+ * `ref` da URL e guarda no navegador.
+ *
+ * POR QUE NÃO HÁ COOKIE AQUI
+ *
+ * Havia: um `mp_ref` de 30 dias, gravado pelo servidor. Ele tinha dois
+ * problemas. O primeiro é que ninguém o lia — o HandoffTracker sempre leu o
+ * `ref` da URL, não o cookie, então era dado morto. O segundo é que a
+ * política em /lgpd promete consentimento (art. 7º, I) para cookie não
+ * essencial, e o servidor não tem como saber o que a pessoa respondeu no
+ * banner: essa decisão mora no localStorage do navegador. Gravar do servidor
+ * era, na prática, ignorar o banner.
+ *
+ * O caminho certo já existia: o `ref` vai na URL, o tracker o guarda em
+ * localStorage se a pessoa aceitou e em sessionStorage se recusou. Mesma
+ * atribuição, dentro do que a política promete.
  */
 export async function GET(req: Request, ctx: { params: Promise<{ code: string }> }) {
   const { code } = await ctx.params;
@@ -26,7 +40,6 @@ export async function GET(req: Request, ctx: { params: Promise<{ code: string }>
   destino.searchParams.set("utm_content", codigo);
   destino.searchParams.set("ref", codigo);
   const r = NextResponse.redirect(destino, 302);
-  r.cookies.set("mp_ref", codigo, { maxAge: 60 * 60 * 24 * 30, path: "/", sameSite: "lax" });
   r.headers.set("X-Robots-Tag", "noindex, nofollow");
   return r;
 }

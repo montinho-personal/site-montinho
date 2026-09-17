@@ -104,3 +104,36 @@ export function destinoComUtm(destino: string, token: string): string {
   u.set("utm_content", token);
   return `${caminho}?${u.toString()}`;
 }
+
+/**
+ * O clique veio antes de ela voltar a falar?
+ *
+ * Isto é a alternativa ao cookie. O cookie diria "foi este conteúdo que a
+ * trouxe"; esta função diz apenas o que aconteceu e quando, e deixa a
+ * conclusão para quem lê. É a mesma escolha que o CRM já faz quando o código
+ * Ref some da mensagem: não adivinha, mostra o que sabe e deixa uma pessoa
+ * ligar — porque atribuição inventada é pior que atribuição faltando.
+ *
+ * A janela existe para não sugerir ligação onde não há: alguém que clicou em
+ * março e escreveu em setembro não voltou por causa do artigo, e mostrar "há
+ * 180 dias" ao lado do retorno convidaria justamente a essa leitura.
+ */
+export const JANELA_RETORNO_DIAS = 30;
+
+export function cliqueAntesDoRetorno(
+  cliqueEm: string | null | undefined,
+  retornoEm: string | null | undefined,
+  janelaDias = JANELA_RETORNO_DIAS,
+): { dias: number } | null {
+  if (!cliqueEm || !retornoEm) return null;
+  const dt = new Date(retornoEm).getTime() - new Date(cliqueEm).getTime();
+  if (!Number.isFinite(dt) || dt < 0 || dt > janelaDias * DIA_MS) return null;
+  return { dias: Math.floor(dt / DIA_MS) };
+}
+
+/** Como isso aparece escrito, sem afirmar causa. */
+export function textoDoRetorno(r: { dias: number }): string {
+  if (r.dias === 0) return "clicou e te chamou no mesmo dia";
+  if (r.dias === 1) return "clicou 1 dia antes de te chamar";
+  return `clicou ${r.dias} dias antes de te chamar`;
+}

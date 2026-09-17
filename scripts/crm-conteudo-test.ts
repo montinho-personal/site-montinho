@@ -8,8 +8,8 @@
  * para fora é um domínio confiável virando ferramenta de golpe.
  */
 import {
-  INTERVALO_DIAS, MAX_CONTEUDOS, destinoComUtm, destinoValido, gerarToken,
-  podeEnviarConteudo, proximoEnvioEm, urlDoConteudo,
+  INTERVALO_DIAS, JANELA_RETORNO_DIAS, MAX_CONTEUDOS, cliqueAntesDoRetorno, destinoComUtm,
+  destinoValido, gerarToken, podeEnviarConteudo, proximoEnvioEm, textoDoRetorno, urlDoConteudo,
 } from "../lib/crm/conteudo";
 import { SITUACOES_CONTEUDO, TEXTOS } from "../lib/crm/copy-textos";
 
@@ -114,6 +114,29 @@ for (const s of SITUACOES_CONTEUDO) {
   ok(`${s}: não marca prazo`, !/at[ée] (amanh[ãa]|sexta|segunda)|\bhoje ainda\b|\bessa semana\b/i.test(TEXTOS[s]), TEXTOS[s]);
   ok(`${s}: não vende`, !/vaga|plano|proposta|valor|investimento|fechar/i.test(TEXTOS[s]), TEXTOS[s]);
 }
+
+bloco("6. CLIQUE ANTES DO RETORNO");
+/*
+ * Isto substitui o cookie. Não afirma que o conteúdo trouxe ninguém — mostra
+ * o que aconteceu e em que ordem, e deixa a conclusão para quem lê.
+ */
+const clique = "2026-09-10T12:00:00-03:00";
+ok("retorno 2 dias depois conta", cliqueAntesDoRetorno(clique, "2026-09-12T15:00:00-03:00")?.dias === 2);
+ok("retorno no mesmo dia conta como 0", cliqueAntesDoRetorno(clique, "2026-09-10T20:00:00-03:00")?.dias === 0);
+// Ela falar ANTES de clicar não é retorno: foi o contrário, e inverter a
+// ordem é exatamente como se inventa atribuição.
+ok("retorno antes do clique não conta", cliqueAntesDoRetorno(clique, "2026-09-09T12:00:00-03:00") === null);
+ok(`fora da janela de ${JANELA_RETORNO_DIAS} dias não conta`, cliqueAntesDoRetorno(clique, "2026-12-01T12:00:00-03:00") === null);
+ok("no limite da janela ainda conta", cliqueAntesDoRetorno(clique, "2026-10-10T11:00:00-03:00")?.dias === 29);
+ok("sem clique não conta", cliqueAntesDoRetorno(null, "2026-09-12T12:00:00-03:00") === null);
+ok("sem retorno não conta", cliqueAntesDoRetorno(clique, null) === null);
+ok("data inválida não explode", cliqueAntesDoRetorno(clique, "nao e data") === null);
+
+ok("texto de 0 dia", textoDoRetorno({ dias: 0 }) === "clicou e te chamou no mesmo dia");
+ok("texto de 1 dia no singular", textoDoRetorno({ dias: 1 }) === "clicou 1 dia antes de te chamar");
+ok("texto de 5 dias no plural", textoDoRetorno({ dias: 5 }) === "clicou 5 dias antes de te chamar");
+// A frase diz o que houve, não por que houve.
+ok("o texto não afirma causa", ![0, 1, 5].some((d) => /por causa|graças|trouxe|converteu/i.test(textoDoRetorno({ dias: d }))));
 
 console.log("\n" + "=".repeat(64));
 console.log(falhas === 0 ? "TODOS OS TESTES PASSARAM" : `${falhas} TESTE(S) FALHARAM`);
