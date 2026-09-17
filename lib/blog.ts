@@ -37532,7 +37532,7 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/como-fazer-desenvolvimento-ombros-infographic.svg" alt="Infográfico sobre Como Fazer Desenvolvimento de Ombros: Técnica com Halteres e Barra — Montinho Personal Trainer" title="Como Fazer Desenvolvimento de Ombros: Técnica com Halteres e" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/como-fazer-desenvolvimento-ombros.webp" alt="Ilustração de duas execuções do desenvolvimento de ombros lado a lado, uma com halteres e outra com barra, com os deltoides destacados e setas indicando a subida" title="Como fazer desenvolvimento de ombros — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <p>Mas erros na técnica comprometem tanto o resultado quanto a saúde da articulação, que é a mais instável do corpo. Vamos ao detalhe.</p>
 
@@ -60469,7 +60469,7 @@ Trabalho com homens em TRT em Alphaville e online, otimizando treino e nutriçã
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/estrogenio-alto-homens-treino-infographic.svg" alt="Infográfico sobre Estrogênio Alto em Homens e Treino — Montinho Personal Trainer" title="Estrogênio Alto em Homens: Como o Treino e a Dieta Ajudam" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/estrogenio-alto-homens-treino.webp" alt="Ilustração de um homem levantando um haltere com a molécula de estradiol ao lado e um prato de comida saudável, representando treino e dieta como resposta" title="Estrogênio alto em homens: treino e dieta — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 ## Como o Estrogênio Fica Alto em Homens
@@ -64956,7 +64956,7 @@ A melhor opção é buscar orientação profissional — seja presencial (person
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/sindrome-do-intestino-irritavel-exercicio-infographic.svg" alt="Infográfico sobre Síndrome do Intestino Irritável e Exercício — Montinho Personal Trainer" title="Intestino Irritável e Exercício: O Que Ajuda e O Que Piora" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/sindrome-do-intestino-irritavel-exercicio.webp" alt="Ilustração de uma pessoa correndo com o intestino em destaque, dividida entre o que ajuda — caminhada, força leve e meditação — e o que piora, representado por treino intenso" title="Síndrome do intestino irritável e exercício — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 ## O Que É a Síndrome do Intestino Irritável (SII)?
@@ -66847,7 +66847,7 @@ Quer aprender a progressão certa para o seu nível atual e montar um programa d
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/kettlebell-para-musculacao-infographic.svg" alt="Infográfico sobre Kettlebell para Musculação: Como Usar e Benefícios Reais — Montinho Personal Trainer" title="Kettlebell para Musculação: Como Usar e Benefícios Reais" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/kettlebell-para-musculacao.webp" alt="Ilustração de uma pessoa segurando um kettlebell acima da cabeça ao lado de um kettlebell apoiado no chão, com setas indicando o movimento do swing" title="Kettlebell para musculação: como usar e benefícios — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 ## Por Que o Kettlebell É Diferente do Halter
@@ -67334,7 +67334,7 @@ A melatonina é uma ferramenta legítima para atletas que treinam à noite ou t�
 
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/vitamina-c-e-exercicio-infographic.svg" alt="Infográfico sobre Vitamina C e Exercício — Montinho Personal Trainer" title="Vitamina C e Exercício: Benefícios, Riscos e Dosagem" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/vitamina-c-e-exercicio.webp" alt="Ilustração de uma pessoa correndo à frente de uma laranja cortada e de uma cápsula, com três ícones representando benefícios, riscos e dosagem" title="Vitamina C e exercício: benefícios, riscos e dosagem — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 ## O Paradoxo Antioxidante: Por Que Mais Não é Sempre Melhor
@@ -90934,7 +90934,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Você emagreceu — talvez muitos quilos — e, no lugar da gordura, apareceu algo que ninguém te avisou direito: flacidez. Braço que balança, abdômen que sobra, coxa sem firmeza. E aí vem a pergunta inevitável: musculação resolve isso?</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/flacidez-apos-emagrecer-musculacao-infographic.svg" alt="Infográfico sobre Flacidez Depois de Emagrecer: O Papel da Musculação na Pele e no Músculo — Montinho Personal Trainer" title="Flacidez Depois de Emagrecer: O Papel da Musculação na Pele " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/flacidez-apos-emagrecer-musculacao.webp" alt="Ilustração de uma pessoa puxando a camiseta folgada sobre o abdômen enquanto levanta um haltere, com o corpo dividido entre a pele sobrando e o músculo construído" title="Flacidez depois de emagrecer: o papel da musculação — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -92707,7 +92707,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     content: `
 <p>Você treina, come "razoavelmente bem", mas a barriga não sai e o cansaço não passa? A resistência à insulina pode estar envolvida. É um dos distúrbios metabólicos mais comuns e silenciosos da vida moderna — e também um dos que mais respondem ao exercício de força.</p>
 <figure style="margin:2rem 0">
-  <img src="/blog-images/resistencia-insulina-musculacao-infographic.svg" alt="Infográfico sobre Resistência à Insulina: Como a Musculação Age no Problema — Montinho Personal Trainer" title="Resistência à Insulina: Como a Musculação Age no Problema" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/resistencia-insulina-musculacao.webp" alt="Ilustração de uma pessoa fazendo rosca com halter enquanto o pâncreas envia glicose para o músculo em atividade" title="Resistência à insulina e musculação — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 
@@ -113986,6 +113986,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Existe uma cena que se repete em toda academia: a pessoa desce no agachamento, o calcanhar sobe alguns centímetros do chão, e alguém ao lado diz "é falta de técnica". Às vezes é mesmo. Mas com uma frequência que surpreende, a técnica está sendo cobrada de um corpo que não tem a amplitude para executá-la — e nenhuma quantidade de instrução resolve o que é limitação de movimento.</p>
 
 <p>O tornozelo é o primeiro suspeito. Ele é a articulação que permite o joelho avançar sobre o pé quando você desce, e quando essa amplitude falta, o corpo arruma saída: o calcanhar sobe, o tronco inclina mais para a frente, ou a descida simplesmente para antes. Este artigo é sobre medir isso em vez de adivinhar.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/mobilidade-de-tornozelo.webp" alt="Ilustração do esqueleto do tornozelo em destaque ao lado de três quadros numerados: como testar, por que importa e como melhorar a mobilidade" title="Mobilidade de tornozelo: testar, entender e melhorar — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+</figure>
+
 
 <h2>O que é dorsiflexão, sem aula de anatomia</h2>
 
@@ -114496,6 +114500,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>"Quanto tempo tem que durar o treino?" é uma das perguntas mais frequentes que recebo, e uma das mais mal formuladas. Não porque a pessoa esteja errada em perguntar — mas porque a duração é <strong>consequência</strong>, não escolha.</p>
 
 <p>Ninguém decide treinar cinquenta minutos e depois monta o treino para caber. O que acontece é o contrário: você tem um volume de trabalho a fazer, um tempo de descanso que aquele trabalho exige, e o relógio simplesmente informa quanto isso deu.</p>
+<figure style="margin:2rem 0">
+  <img src="/blog-images/duracao-ideal-do-treino.webp" alt="Ilustração de uma pessoa sentada no banco da academia ao lado de um cronômetro gigante, com cenas de agachamento, flexão e corrida ao lado" title="Quanto tempo deve durar o treino — Montinho Personal Trainer" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+</figure>
+
 
 <h2>A conta que define a duração</h2>
 
