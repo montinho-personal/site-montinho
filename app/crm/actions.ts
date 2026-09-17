@@ -21,6 +21,7 @@ import { redirect } from "next/navigation";
 import { exigirAdmin, exigirEscrita, exigirUsuario } from "@/lib/crm/auth";
 import { supabaseServer } from "@/lib/crm/supabase/server";
 import { gerarRefCode } from "@/lib/crm/tracking";
+import { MAX_CONTEUDOS, destinoValido, gerarToken, podeEnviarConteudo } from "@/lib/crm/conteudo";
 import { inferirFonte } from "@/lib/crm/metricas";
 import { identificarMensagem, handoffCompativel, detalheDaIdentificacao, limparColagem, type Identificacao } from "@/lib/crm/mensagens";
 import type { Handoff } from "@/lib/crm/tipos";
@@ -837,4 +838,58 @@ export async function contatarPeloWhatsApp(fd: FormData) {
   }
 
   revalidarTudo(["/crm", leadId ? `/crm/leads/${leadId}` : "", clientId ? `/crm/clientes/${clientId}` : ""].filter(Boolean));
+}
+
+/**
+ * Registra um conteúdo enviado a um lead e devolve o link que sabe quem
+ * recebeu.
+ *
+ * Não envia nada — igual ao resto do CRM, quem manda a mensagem é o
+ * Montinho. O que esta função faz é criar o link rastreado e gastar uma das
+ * três fichas. Sem a ficha, isto viraria o laço infinito que o MAX_FOLLOW_UPS
+ * já teve de matar uma vez, só que com artigo no lugar da cobrança.
+ */
+export async function registrarConteudo(fd: FormData) {
+  const u = await exigirEscrita();
+  const sb = await supabaseServer();
+  const leadId = s(fd, "lead_id")!;
+  const contactId = s(fd, "contact_id")!;
+  const destino = (s(fd, "destino") ?? "").trim();
+  const titulo = s(fd, "titulo");
+  if (!destinoValido(destino.split("?")[0])) {
+    throw new Error("O destino tem de ser um caminho do próprio site, começando com /.");
+  }
+
+  const { data: lead } = await sb.from("crm_leads").select("em_paz_at, lost_reason_code").eq("id", leadId).single();
+  const { data: envios } = await sb.from("crm_nurture_sends").select("enviado_em").eq("lead_id", leadId);
+  const veredito = podeEnviarConteudo(
+    (envios ?? []).map((e: { enviado_em: string }) => ({ enviadoEm: e.enviado_em })),
+    { emPaz: !!lead?.em_paz_at, motivoPerda: lead?.lost_reason_code ?? null },
+  );
+  if (!veredito.pode) throw new Error(veredito.motivo);
+
+  // Colisão de token é improvável (32^10), mas "improvável" num índice único
+  // vira erro na cara do Montinho no meio do atendimento. Três tentativas
+  // custam nada e tiram o assunto da pauta.
+  let erro: unknown = null;
+  for (let i = 0; i < 3; i++) {
+    const token = gerarToken();
+    const r = await sb.from("crm_nurture_sends").insert({
+      token, lead_id: leadId, contact_id: contactId, destino, titulo: titulo || null, created_by: u.id,
+    });
+    if (!r.error) {
+      await atividade(sb, u.id, {
+        contact_id: contactId, lead_id: leadId, tipo: "message",
+        descricao: `Conteúdo ${veredito.numero}/${MAX_CONTEUDOS} enviado: ${titulo || destino}`,
+        // `grupo` fica de fora dos grupos de cobrança de propósito: conteúdo
+        // não pode contar como follow-up, senão gastaria a cota da cadência
+        // e mandaria o lead para "decidir" sem ninguém ter cobrado nada.
+        metadata: { conteudo: true, direcao: "saida", grupo: "conteudo", destino, token },
+      });
+      revalidarTudo(["/crm", "/crm/leads", `/crm/leads/${leadId}`]);
+      return;
+    }
+    erro = r.error;
+  }
+  throw new Error(`Não consegui registrar o conteúdo: ${String((erro as { message?: string })?.message ?? erro)}`);
 }

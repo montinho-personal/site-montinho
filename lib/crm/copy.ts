@@ -28,7 +28,7 @@ import type { ClienteRow, Experimental, Lead, Oportunidade } from "./tipos";
 
 export type { Situacao } from "./copy-textos";
 
-export const VARIAVEIS = ["saudacao", "nome", "servico", "pagina", "objetivo", "pergunta", "dias", "valor", "plano", "dia_hora", "local", "renova_em", "indicador", "cidade", "aulas", "datas", "semanas"] as const;
+export const VARIAVEIS = ["saudacao", "nome", "servico", "pagina", "objetivo", "pergunta", "dias", "valor", "plano", "dia_hora", "local", "renova_em", "indicador", "cidade", "aulas", "datas", "semanas", "assunto", "link"] as const;
 export type Variavel = (typeof VARIAVEIS)[number];
 export type Variaveis = Record<Variavel, string>;
 
@@ -292,6 +292,12 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
       if (n == null || n < 1) return "";
       return n.toLocaleString("pt-BR", { maximumFractionDigits: 0 });
     })(),
+    // As duas só existem na mensagem de conteúdo, e nenhuma dá para deduzir
+    // do banco: o assunto é o que o Montinho escreve ao escolher o artigo, e
+    // o link só nasce quando o envio é registrado. Vazias aqui de propósito
+    // — quem chama preenche.
+    assunto: "",
+    link: "",
   };
   // "dias" depende do que a mensagem conta: desde a proposta, desde o último contato, desde a chegada ou desde o vencimento.
   const desde = (iso: string | null | undefined) => (iso ? String(Math.max(0, Math.round(diasEntre(iso, agora)))) : "");

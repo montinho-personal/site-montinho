@@ -40,8 +40,26 @@ export const SITUACOES = [
   // Virou aluno
   "boas_vindas", "check_in_aluno", "pedido_indicacao",
   "renovacao_proxima", "renovacao_vencida", "renovacao_pacote", "reativacao_pausa_recente", "reativacao_pausado", "reativacao_antiga",
+  // Adiado: presença sem cobrança. Outra espécie de mensagem — ver SITUACOES_CONTEUDO.
+  "conteudo_primeiro", "conteudo_ferramenta", "conteudo_do_que_ela_disse",
 ] as const;
 export type Situacao = (typeof SITUACOES)[number];
+
+/*
+ * As mensagens de conteúdo são o contrário de todas as outras: elas não
+ * perguntam nada.
+ *
+ * Toda mensagem do acervo termina em uma pergunta, porque pergunta é o que
+ * faz a conversa continuar. Aqui isso seria mentira. Estas chegam depois de
+ * uma mensagem que prometeu não cobrar — e um "o que achou?" no fim é a
+ * cobrança de volta, com fantasia. Quem recebe sente, e aí não se perde só o
+ * lead: perde-se a credibilidade da promessa anterior.
+ *
+ * Por isso elas terminam no link e acabam ali. Se a pessoa responder, o
+ * ciclo reinicia por vontade dela. Se não responder, não aconteceu nada de
+ * ruim — que é exatamente o ponto.
+ */
+export const SITUACOES_CONTEUDO = new Set<Situacao>(["conteudo_primeiro", "conteudo_ferramenta", "conteudo_do_que_ela_disse"]);
 
 export const TEXTOS: Record<Situacao, string> = {
   // Primeiro contato: quem é (em primeira pessoa), de onde a pessoa veio, e UMA pergunta de objetivo com opções — respondível em dez segundos.
@@ -122,4 +140,21 @@ export const TEXTOS: Record<Situacao, string> = {
     "[[{saudacao}, ]]{nome}! Aqui é o Montinho.\n\nFaz um tempão, né. Lembrei de você esses dias e resolvi mandar um oi, sem segundas intenções.\n\nTá treinando ainda?",
   reativacao_pausado:
     "[[{saudacao}, ]]{nome}! Aqui é o Montinho.\n\nFiquei pensando em você esses dias. A gente treinou junto e depois você sumiu — e eu sei como é, a vida aperta e o treino é sempre o primeiro a cair.\n\nComo você tá com o treino hoje?",
+
+  // Primeiro conteúdo: desmente a previsão dela. Ela espera cobrança; recebe
+  // um presente que não pede nada. "Ignora sem dó" está lá de propósito —
+  // dar permissão de ignorar é o que faz a frase de abertura ser acreditada.
+  conteudo_primeiro:
+    "[[{saudacao}, ]]{nome}! Sem cobrar nada, prometido — separei uma coisa que pode te servir.\n\n[[É sobre {assunto}. ]]Se não fizer sentido agora, ignora sem dó.\n\n{link}",
+  // Segundo: ferramenta, não artigo. Um número sobre o corpo dela é o
+  // formato mais lembrado que existe, e devolve a ela um motivo de voltar
+  // que não é o Montinho pedindo.
+  conteudo_ferramenta:
+    "[[{saudacao}, ]]{nome}! Passando só pra deixar uma ferramenta que fiz[[, sobre {assunto}]].\n\nLeva um minuto e o resultado é seu, não meu. Não precisa me responder nada.\n\n{link}",
+  // Terceiro: provar que ouviu vale mais que o melhor texto do acervo. O que
+  // ela disse entra por {assunto}, escrito à mão na hora de escolher o
+  // artigo — nunca por {objetivo}, que às vezes é deduzido e não dito, e
+  // supor o objetivo errado é pior do que não citar nenhum.
+  conteudo_do_que_ela_disse:
+    "[[{saudacao}, ]]{nome}! Lembrei de uma conversa nossa quando escrevi isto aqui.\n\n[[É sobre {assunto}. ]]Deixo caso sirva — sem compromisso nenhum, de verdade.\n\n{link}",
 };
