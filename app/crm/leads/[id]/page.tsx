@@ -1,4 +1,6 @@
 import ConfirmarPerdido from "@/components/crm/ConfirmarPerdido";
+import ConteudoDoLead, { type EnvioRegistrado } from "@/components/crm/ConteudoDoLead";
+import { supabaseServer } from "@/lib/crm/supabase/server";
 import { podeDesfazerPerdido } from "@/lib/crm/perda";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -30,6 +32,12 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
   const planosDoServico = (sid: string | null) => cat.planos.filter((p) => p.ativo && (!sid || p.service_id === sid));
   const somenteLeitura = u.role === "readonly";
   const trialsAbertas = v.experimentais.filter((t) => t.status === "agendada");
+  // Fora do base(): conteúdo enviado é de um lead só, e carregar isto para os
+  // 857 de uma vez custaria em toda tela do CRM por causa de uma.
+  const { data: enviosDeConteudo } = await (await supabaseServer())
+    .from("crm_nurture_sends")
+    .select("token, destino, titulo, enviado_em, cliques, primeiro_clique_em")
+    .eq("lead_id", lead.id);
 
   return (
     <Pagina titulo={contato.nome} sub={<span>{v.servicoNome} · {v.fonteNome} <Badge tom={lead.attribution_confidence === "high" ? "bom" : lead.attribution_confidence === "medium" ? "info" : "alerta"}>confiança {lead.attribution_confidence}</Badge> · lead {relativo(lead.created_at)}</span>}
@@ -155,6 +163,16 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
               </div>
             </Card>
           )}
+
+          <ConteudoDoLead
+            leadId={lead.id}
+            contactId={contato.id}
+            primeiroNome={contato.nome.split(/\s+/)[0]}
+            envios={(enviosDeConteudo ?? []) as EnvioRegistrado[]}
+            emPaz={!!lead.em_paz_at}
+            motivoPerda={lead.lost_reason_code}
+            somenteLeitura={somenteLeitura}
+          />
 
           {/* Timeline */}
           <Card titulo="O que já aconteceu">

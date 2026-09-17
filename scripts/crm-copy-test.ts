@@ -8,7 +8,7 @@
  * "[[" sobrando com dados cheios ou vazios); (3) o grupo da tela Hoje leva à
  * situação certa; (4) o contexto real de um lead vira variáveis certas.
  */
-import { SITUACOES, TEXTOS } from "../lib/crm/copy-textos";
+import { SITUACOES, SITUACOES_CONTEUDO, TEXTOS } from "../lib/crm/copy-textos";
 import { VARIAVEIS, contextoDoContato, saudacaoDe, escolherSituacao, formatarDiaHora, mensagemPara, objetivoUsavel, perguntaDaMensagem, preencher, type Sinais } from "../lib/crm/copy";
 import type { Base, Catalogo } from "../lib/crm/dados";
 
@@ -33,9 +33,13 @@ bloco("2. TEXTOS — REGRAS DA CASA");
 const cheias = Object.fromEntries(VARIAVEIS.map((v) => [v, "X"])) as Record<string, string>;
 cheias.nome = "Ana"; cheias.dias = "3"; cheias.renova_em = "7"; cheias.valor = "R$ 399"; cheias.dia_hora = "amanhã às 7h"; cheias.pagina = "Personal Trainer Alphaville";
 cheias.aulas = "20"; cheias.datas = "06/08, 07/08, 10/08, 11/08, 13/08, 14/08, 15/08, 24/08, 25/08, 26/08, 28/08, 12/09, 14/09, 15/09, 17/09, 19/09, 22/09, 24/09, 26/09, 29/09";
+cheias.assunto = "por que a balança não muda"; cheias.link = "https://www.montinhopersonal.com.br/c/K7PQ2M4XRT";
 cheias.pergunta = "como funciona o acompanhamento"; cheias.objetivo = "emagrecer"; cheias.plano = "2 aulas por semana"; cheias.servico = "consultoria online"; cheias.indicador = "Bruna"; cheias.local = "academia do condomínio"; cheias.cidade = "Barueri";
 const vazias = Object.fromEntries(VARIAVEIS.map((v) => [v, ""])) as Record<string, string>;
 vazias.nome = "Ana";
+// O link é estrutural, não opcional: uma mensagem de conteúdo sem link não
+// existe. Ele entra nas duas versões para que "vazia" teste o texto em volta.
+vazias.link = "https://www.montinhopersonal.com.br/c/K7PQ2M4XRT";
 const emojis = (t: string) => (t.match(/\p{Extended_Pictographic}/gu) ?? []).length;
 for (const s of SITUACOES) {
   const modelo = TEXTOS[s];
@@ -49,8 +53,17 @@ for (const s of SITUACOES) {
   const v = preencher(modelo, vazias);
   for (const [rot, t] of [["cheia", c], ["vazia", v]] as const) {
     ok(`${s} (${rot}): nada sobrou`, !/[{}\[\]]/.test(t), t);
-    ok(`${s} (${rot}): uma pergunta só`, (t.match(/\?/g) ?? []).length === 1, t);
-    ok(`${s} (${rot}): termina na pergunta`, t.trimEnd().endsWith("?"), t);
+    // Duas espécies, duas regras opostas. Follow-up existe para puxar
+    // resposta e termina em pergunta. Conteúdo existe para não pedir nada:
+    // uma pergunta ali seria a cobrança que a mensagem anterior prometeu não
+    // fazer, e o teste é quem impede que ela volte por distração.
+    if (SITUACOES_CONTEUDO.has(s)) {
+      ok(`${s} (${rot}): não pergunta nada`, !t.includes("?"), t);
+      ok(`${s} (${rot}): termina no link`, t.trimEnd().endsWith(vazias.link), t);
+    } else {
+      ok(`${s} (${rot}): uma pergunta só`, (t.match(/\?/g) ?? []).length === 1, t);
+      ok(`${s} (${rot}): termina na pergunta`, t.trimEnd().endsWith("?"), t);
+    }
     ok(`${s} (${rot}): cabe numa tela (≤ 400)`, t.length <= 400, `${t.length} chars`);
     ok(`${s} (${rot}): sem espaço duplo ou aspas vazias`, !/ {2}|«»|\(\)/.test(t), t);
     // O respiro entre os blocos é o que faz a mensagem ser lida de relance no celular.
