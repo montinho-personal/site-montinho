@@ -61,6 +61,22 @@ export type Situacao = (typeof SITUACOES)[number];
  */
 export const SITUACOES_CONTEUDO = new Set<Situacao>(["conteudo_primeiro", "conteudo_ferramenta", "conteudo_do_que_ela_disse"]);
 
+/*
+ * As que terminam sem perguntar nada.
+ *
+ * São as de conteúdo mais o último toque da proposta. Este último pedia
+ * permissão para voltar ("seria má ideia eu te dar um oi daqui a um mês?"), e
+ * a pergunta saiu porque ela obrigava a pessoa a decidir sobre o futuro no
+ * pior momento para decidir qualquer coisa — e uma não ali fechava a porta
+ * que a própria mensagem estava tentando deixar encostada.
+ *
+ * Sem a pergunta, a mensagem faz só o que promete: solta, guarda a proposta e
+ * oferece a história. O que vem depois é conteúdo, que não cobra nada — a
+ * promessa de não ficar cobrando continua de pé, e é o teste de
+ * SITUACOES_CONTEUDO que a mantém assim.
+ */
+export const SITUACOES_SEM_PERGUNTA = new Set<Situacao>([...SITUACOES_CONTEUDO, "proposta_follow_up_2"]);
+
 export const TEXTOS: Record<Situacao, string> = {
   // Primeiro contato: quem é (em primeira pessoa), de onde a pessoa veio, e UMA pergunta de objetivo com opções — respondível em dez segundos.
   primeiro_contato_site:
@@ -101,7 +117,7 @@ export const TEXTOS: Record<Situacao, string> = {
    * pessoa — ninguém fica carimbado.
    */
   proposta_follow_up_2:
-    "[[{saudacao}, ]]{nome}! Imagino que não seja o momento agora, e tá tudo bem mesmo — não vou ficar te cobrando.\n\nDeixo a proposta guardada, sem prazo, pra quando fizer sentido pra você.\n\nSe um dia ajudar: eu já fui obeso e comecei do zero, contei tudo aqui — https://www.montinhopersonal.com.br/l/historia-lead\n\nSeria má ideia eu te dar um oi daqui a um mês?",
+    "[[{saudacao}, ]]{nome}! Imagino que não seja o momento agora, e tá tudo bem mesmo — não vou ficar te cobrando.\n\nDeixo a proposta guardada, sem prazo, pra quando fizer sentido pra você.\n\nSe um dia ajudar: eu já fui obeso e comecei do zero, contei tudo aqui — https://www.montinhopersonal.com.br/l/historia-lead",
   negociacao_parada:
     "[[{saudacao}, ]]{nome}! Parece que ficou alguma coisa travando na hora de decidir[[ sobre {servico}]], e isso é super normal. Não quero ficar te empurrando.\n\nSó pra eu conseguir te ajudar de verdade — e se for só o momento, também vale: o que pesa mais agora, o horário, o formato ou o investimento?",
 
