@@ -8,7 +8,7 @@
  * "[[" sobrando com dados cheios ou vazios); (3) o grupo da tela Hoje leva à
  * situação certa; (4) o contexto real de um lead vira variáveis certas.
  */
-import { SITUACOES, SITUACOES_CONTEUDO, TEXTOS } from "../lib/crm/copy-textos";
+import { SITUACOES, SITUACOES_CONTEUDO, SITUACOES_SEM_PERGUNTA, TEXTOS } from "../lib/crm/copy-textos";
 import { LINKS } from "../lib/crm/links";
 import { VARIAVEIS, contextoDoContato, saudacaoDe, escolherSituacao, formatarDiaHora, mensagemPara, objetivoUsavel, perguntaDaMensagem, preencher, type Sinais } from "../lib/crm/copy";
 import type { Base, Catalogo } from "../lib/crm/dados";
@@ -58,9 +58,11 @@ for (const s of SITUACOES) {
     // resposta e termina em pergunta. Conteúdo existe para não pedir nada:
     // uma pergunta ali seria a cobrança que a mensagem anterior prometeu não
     // fazer, e o teste é quem impede que ela volte por distração.
-    if (SITUACOES_CONTEUDO.has(s)) {
+    if (SITUACOES_SEM_PERGUNTA.has(s)) {
       ok(`${s} (${rot}): não pergunta nada`, !t.includes("?"), t);
-      ok(`${s} (${rot}): termina no link`, t.trimEnd().endsWith(vazias.link), t);
+      // Terminar no link é o que faz a mensagem acabar ali de verdade: o que
+      // vier depois do endereço vira um "p.s." que pede alguma coisa.
+      ok(`${s} (${rot}): termina num link`, /https?:\/\/\S+$/.test(t.trimEnd()), t);
     } else {
       ok(`${s} (${rot}): uma pergunta só`, (t.match(/\?/g) ?? []).length === 1, t);
       ok(`${s} (${rot}): termina na pergunta`, t.trimEnd().endsWith("?"), t);
