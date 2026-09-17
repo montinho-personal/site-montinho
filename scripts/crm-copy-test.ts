@@ -9,6 +9,7 @@
  * situação certa; (4) o contexto real de um lead vira variáveis certas.
  */
 import { SITUACOES, SITUACOES_CONTEUDO, TEXTOS } from "../lib/crm/copy-textos";
+import { LINKS } from "../lib/crm/links";
 import { VARIAVEIS, contextoDoContato, saudacaoDe, escolherSituacao, formatarDiaHora, mensagemPara, objetivoUsavel, perguntaDaMensagem, preencher, type Sinais } from "../lib/crm/copy";
 import type { Base, Catalogo } from "../lib/crm/dados";
 
@@ -75,6 +76,24 @@ for (const s of SITUACOES) {
   }
   ok(`${s}: vazia não termina frase com preposição`, !/\b(pela|pelo|sobre|no|na|de|do|da|em|para)\s*[.?!]/i.test(preencher(modelo, vazias)), preencher(modelo, vazias));
 }
+
+bloco("2A. LINKS ESCRITOS DENTRO DO TEXTO");
+/*
+ * URL solta em mensagem é o que quebra sem avisar: o dia em que alguém
+ * renomear a rota, o WhatsApp vai continuar saindo com o link velho e
+ * ninguém vai perceber, porque nada compila errado. Estas asserções são o
+ * aviso.
+ */
+const urls = Object.values(TEXTOS).flatMap((t) => [...t.matchAll(/https?:\/\/[^\s]+/g)].map((m) => m[0]));
+ok("toda URL aponta para o site do Montinho", urls.every((u) => u.startsWith("https://www.montinhopersonal.com.br/")), urls.join(" "));
+// Só o link controlado: a URL direta não deixa rastro, porque a mensagem sai
+// pelo WhatsApp e o referrer não chega do outro lado.
+ok("toda URL é link controlado (/l/...)", urls.every((u) => /montinhopersonal\.com\.br\/l\//.test(u)), urls.join(" "));
+ok("todo link controlado citado existe em LINKS", urls.every((u) => {
+  const slug = u.split("/l/")[1]?.replace(/[.,;!?]+$/, "") ?? "";
+  return slug in LINKS;
+}), urls.join(" "));
+ok("nenhuma URL termina em pontuação colada", urls.every((u) => !/[.,;]$/.test(u)), urls.join(" "));
 
 bloco("2B. SAUDAÇÃO PELO HORÁRIO DE BRASÍLIA");
 /*

@@ -23,6 +23,10 @@ export const LINKS: Record<string, LinkControlado> = {
   // O botão "Site" do Perfil da Empresa no Google. Sem isto, quem clica ali
   // chega à home sem marcação e o CRM registra "desconhecido" — o canal com
   // 23 avaliações ficava invisível na atribuição.
+  // A história do Montinho, mandada no último toque de uma proposta parada.
+  // Link controlado, e não a URL direta, porque é a única forma de saber
+  // quantos abriram: essa mensagem sai pelo WhatsApp e o referrer não chega.
+  "historia-lead": { destino: "/minha-historia", utm_source: "crm", utm_medium: "whatsapp", utm_campaign: "proposta_parada", utm_content: "historia", tipo: "other" },
   "gbp": { destino: "/", utm_source: "google", utm_medium: "perfil_empresa", utm_campaign: "perfil", utm_content: "botao_site", tipo: "other" },
 };
 
