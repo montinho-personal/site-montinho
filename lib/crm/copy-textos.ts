@@ -81,8 +81,27 @@ export const TEXTOS: Record<Situacao, string> = {
   // Depois da proposta: a dúvida certa é sobre COMO funciona, nunca sobre preço. O último toque devolve a decisão e facilita o "não".
   proposta_follow_up_1:
     "[[{saudacao}, ]]{nome}! Te mandei a proposta[[ de {servico}]][[ há {dias} dias]]. Sem pressa nenhuma pra decidir.\n\nFicou alguma dúvida sobre como funciona no dia a dia — frequência, ajustes, contato entre os treinos — que eu possa esclarecer?",
+  /*
+   * O link da história entra AQUI, e não antes, por dois motivos.
+   *
+   * É o momento em que a dúvida deixa de ser sobre o plano e passa a ser
+   * sobre a pessoa: quem some depois da proposta raramente some por preço —
+   * some por achar que não vai dar conta, ou que do outro lado tem alguém
+   * que nunca esteve onde ela está. "Eu já fui obeso" responde isso, e é a
+   * única frase da história que muda a dúvida dela.
+   *
+   * E é escrito assim, e não "conheça minha história", de propósito. Pedir
+   * que ela leia sobre o Montinho seria virar a mensagem para ele bem na
+   * hora em que ele acabou de prometer parar de empurrar. A frase oferece
+   * uma informação e segue; a pergunta no fim continua sendo sobre ela.
+   *
+   * O endereço é o link controlado /l/historia-lead, e não /minha-historia
+   * direto: a mensagem sai pelo WhatsApp, onde o referrer não chega, e sem
+   * isso não há como saber se alguém abriu. É contagem por canal, não por
+   * pessoa — ninguém fica carimbado.
+   */
   proposta_follow_up_2:
-    "[[{saudacao}, ]]{nome}! Imagino que não seja o momento agora, e tá tudo bem mesmo — não vou ficar te cobrando.\n\nDeixo a proposta guardada, sem prazo, pra quando fizer sentido pra você.\n\nSeria má ideia eu te dar um oi daqui a um mês?",
+    "[[{saudacao}, ]]{nome}! Imagino que não seja o momento agora, e tá tudo bem mesmo — não vou ficar te cobrando.\n\nDeixo a proposta guardada, sem prazo, pra quando fizer sentido pra você.\n\nSe um dia ajudar: eu já fui obeso e comecei do zero, contei tudo aqui — https://www.montinhopersonal.com.br/l/historia-lead\n\nSeria má ideia eu te dar um oi daqui a um mês?",
   negociacao_parada:
     "[[{saudacao}, ]]{nome}! Parece que ficou alguma coisa travando na hora de decidir[[ sobre {servico}]], e isso é super normal. Não quero ficar te empurrando.\n\nSó pra eu conseguir te ajudar de verdade — e se for só o momento, também vale: o que pesa mais agora, o horário, o formato ou o investimento?",
 
