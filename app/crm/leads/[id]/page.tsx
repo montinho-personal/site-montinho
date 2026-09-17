@@ -1,5 +1,6 @@
 import ConfirmarPerdido from "@/components/crm/ConfirmarPerdido";
 import ConteudoDoLead, { type EnvioRegistrado } from "@/components/crm/ConteudoDoLead";
+import ElaRespondeu from "@/components/crm/ElaRespondeu";
 import { supabaseServer } from "@/lib/crm/supabase/server";
 import { podeDesfazerPerdido } from "@/lib/crm/perda";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import { itensHoje, visaoLead } from "@/lib/crm/visao";
 import { atribuir } from "@/lib/crm/metricas";
 import { mensagemPara } from "@/lib/crm/copy";
 import { Aviso, Badge, Btn, Campo, Card, Detalhes, Input, Pagina, Select, Textarea, brl, dataHoraBr, dataHoraInput, dataInput, relativo } from "@/components/crm/ui";
-import { agendarExperimental, atualizarContato, concluirTarefa, criarTarefa, definirOrigem, definirProximaAcao, enviarProposta, ligarHandoff, marcarExperimental, desfazerPerdido, marcarGanho, marcarRespondeu, moverEtapa, reativarLead, registrarAtividade, retomarContato } from "../../actions";
+import { agendarExperimental, atualizarContato, concluirTarefa, criarTarefa, definirOrigem, definirProximaAcao, enviarProposta, ligarHandoff, marcarExperimental, desfazerPerdido, marcarGanho, moverEtapa, reativarLead, registrarAtividade, retomarContato } from "../../actions";
 
 export default async function LeadPage({ params }: { params: Promise<{ id: string }> }) {
   const u = await exigirUsuario();
@@ -55,7 +56,7 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
             </div>
             <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
               <span className="text-zinc-400">Última resposta dela: <strong className="text-zinc-200">{lead.last_reply_at ? relativo(lead.last_reply_at) : "nunca respondeu"}</strong></span>
-              {lead.status === "aberto" && !somenteLeitura && <form action={marcarRespondeu}><input type="hidden" name="lead_id" value={lead.id} /><input type="hidden" name="contact_id" value={contato.id} /><Btn tom="secundario" pequeno>Ela respondeu</Btn></form>}
+              {lead.status === "aberto" && !somenteLeitura && <ElaRespondeu leadId={lead.id} contactId={contato.id} />}
             </div>
             {lead.status === "aberto" && (
               <form action={definirProximaAcao} className="mt-4 grid gap-2 sm:grid-cols-[1fr_auto_auto]">

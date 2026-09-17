@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { adiarLead, agendarExperimental, deixarEmPaz, enviarProposta, marcarRespondeu } from "@/app/crm/actions";
+import { adiarLead, agendarExperimental, deixarEmPaz, enviarProposta } from "@/app/crm/actions";
 import ConfirmarPerdido from "@/components/crm/ConfirmarPerdido";
 import { Btn, Input } from "@/components/crm/ui";
 
@@ -32,13 +32,11 @@ export default function AtualizarLead({ leadId, contactId, opportunityId, motivo
         Atualizar o que aconteceu
       </summary>
       <div className="flex flex-wrap gap-2 rounded-lg border border-white/10 bg-black/30 p-2">
-        {/* "Ela respondeu" registra a resposta DO LEAD (last_reply_at), não um contato do Montinho. */}
-        <form action={marcarRespondeu}>
-          <input type="hidden" name="lead_id" value={leadId} />
-          <input type="hidden" name="contact_id" value={contactId} />
-          <Btn tom="secundario" pequeno>Ela respondeu</Btn>
-        </form>
-
+        {/*
+          * "Ela respondeu" não mora mais aqui: subiu para a linha visível do
+          * card (ElaRespondeu). É a coisa mais frequente do dia, e estava
+          * escondida atrás de um acordeão.
+          */}
         {opportunityId && (
           <form action={enviarProposta}>
             <input type="hidden" name="opportunity_id" value={opportunityId} />
