@@ -71,11 +71,13 @@ export default async function Hoje() {
                 <div className="flex w-full shrink-0 gap-2 sm:w-auto">
                   {wa && <BotaoWhatsApp url={wa} contactId={i.contactId} leadId={i.leadId} clientId={i.clientId} taskId={i.taskId} grupo={i.grupo} situacao={copy.situacao} />}
                   {/*
-                    * Não aparece no card "respondeu_aguardando_voce": ali o
-                    * sistema já sabe que ela respondeu, e um botão dizendo o
-                    * que já está escrito na frente só ensina a ignorar botão.
+                    * No card "respondeu_aguardando_voce" sobra só o "Só deu um
+                    * ok": "Respondeu" repetiria o que já está escrito na
+                    * frente, mas o outro é o que tira o card do topo quando a
+                    * resposta era "qualquer coisa te chamo". Sem ele o lead
+                    * ficava preso em PRIORIDADE ALTA sem saída.
                     */}
-                  {i.leadId && i.grupo !== "respondeu_aguardando_voce" && <ElaRespondeu leadId={i.leadId} contactId={i.contactId} />}
+                  {i.leadId && <ElaRespondeu leadId={i.leadId} contactId={i.contactId} jaNoTopo={i.grupo === "respondeu_aguardando_voce"} />}
                   {i.taskId ? (
                     <form action={concluirTarefa}><input type="hidden" name="task_id" value={i.taskId} /><Btn tom="secundario" pequeno>Feito</Btn></form>
                   ) : <Btn href={href} tom="secundario" pequeno>{i.acao}</Btn>}
