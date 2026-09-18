@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
+import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import { EVIDENCE, EVIDENCE_REVIEWED_AT } from "@/lib/rotina/evidence";
 import RotinaQuiz from "@/components/rotina/RotinaQuiz";
 import Trilha from "@/components/ferramentas/Trilha";
@@ -37,6 +38,13 @@ const webPageSchema = {
   },
 };
 
+const appSchema = aplicativoSchema({
+  nome: "Treino Para Minha Rotina",
+  descricao:
+    "Monta a divisão de treino da semana a partir dos dias e do tempo disponível.",
+  caminho: "/treino-para-minha-rotina",
+});
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -54,6 +62,7 @@ export default function TreinoParaMinhaRotinaPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
 
       {/* Hero */}
       <section className="py-14 bg-black border-b border-white/10">

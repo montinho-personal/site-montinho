@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
+import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import AskMontinho from "@/components/ask/AskMontinho";
 
 export const metadata: Metadata = {
@@ -35,6 +36,77 @@ const webPageSchema = {
   },
 };
 
+const appSchema = aplicativoSchema({
+  nome: "Pergunte ao Montinho",
+  descricao:
+    "Responde dúvidas de treino e nutrição buscando nos conteúdos publicados, citando a fonte de cada resposta.",
+  caminho: "/pergunte-ao-montinho",
+});
+
+/*
+ * Perguntas reais, cada uma apontando para o artigo que a responde.
+ *
+ * Existe por um motivo de busca antes de qualquer outro: o robô do Google não
+ * digita no chat. Sem esta lista, a página é uma caixa vazia para quem procura
+ * justamente o que o assistente responde — e cada linha aqui é uma busca de
+ * cauda longa que hoje não chega a lugar nenhum.
+ *
+ * Todos os slugs foram conferidos contra o acervo. Link quebrado em página
+ * nova é o erro que mais barato se evita e mais caro custa.
+ */
+const EXEMPLOS: { pergunta: string; slug: string }[] = [
+  { pergunta: "Quantas vezes por semana devo treinar?", slug: "/blog/frequencia-de-treino" },
+  { pergunta: "Quanto tempo deve durar o treino?", slug: "/blog/duracao-ideal-do-treino" },
+  { pergunta: "Treinar todos os dias faz mal?", slug: "/blog/treinar-todos-os-dias-faz-mal" },
+  { pergunta: "Musculação emagrece?", slug: "/blog/musculacao-emagrece" },
+  { pergunta: "Como calcular meu déficit calórico?", slug: "/blog/deficit-calorico-como-calcular" },
+  { pergunta: "Quanta proteína por dia eu preciso?", slug: "/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular" },
+  { pergunta: "Quais alimentos têm mais proteína?", slug: "/blog/alimentos-ricos-em-proteina" },
+  { pergunta: "Como montar um treino de hipertrofia?", slug: "/blog/como-montar-treino-de-hipertrofia" },
+  { pergunta: "Nunca treinei — por onde começo?", slug: "/blog/primeira-semana-na-academia" },
+  { pergunta: "Descansar atrapalha o resultado?", slug: "/blog/descansar-tambem-faz-crescer" },
+  { pergunta: "Como criar o hábito de treinar?", slug: "/blog/como-criar-habito-de-treinar" },
+  { pergunta: "Quantos dias por semana dá para treinar?", slug: "/blog/quantos-dias-por-semana-treinar" },
+];
+
+/*
+ * As perguntas abaixo estão escritas na página, com a mesma resposta. FAQPage
+ * descrevendo texto invisível é violação da diretriz do Google e derruba o
+ * bloco inteiro — o mesmo array alimenta o schema e o HTML.
+ */
+const PERGUNTAS: { q: string; a: string }[] = [
+  {
+    q: "O Pergunte ao Montinho é gratuito?",
+    a: "É gratuito e não pede cadastro. Você escreve a dúvida, recebe a resposta na tela e vê quais artigos a embasaram.",
+  },
+  {
+    q: "É um robô de inteligência artificial genérico?",
+    a: "Não. Ele não responde do conhecimento geral da internet: procura nos conteúdos publicados neste site e monta a resposta a partir deles, mostrando quais artigos usou. Quando a base não cobre a pergunta, ele diz que não tem como responder com segurança em vez de inventar.",
+  },
+  {
+    q: "Ele pode montar meu treino ou minha dieta?",
+    a: "Não. Ele explica conceito, execução e critério — o que é conteúdo educativo. Montar treino e dieta depende de histórico, exames e acompanhamento, e isso é trabalho de profissional acompanhando a pessoa, não de assistente de site.",
+  },
+  {
+    q: "As respostas substituem médico ou nutricionista?",
+    a: "Não substituem. O assistente não faz diagnóstico e não prescreve nada. Quem tem dor, lesão ou condição de saúde deve procurar o profissional adequado antes de seguir qualquer orientação geral.",
+  },
+  {
+    q: "Por que ele mostra os artigos que usou?",
+    a: "Para você poder conferir. Resposta sem fonte é opinião apresentada como fato, e do outro lado da tela não há como saber a diferença. Com o link, dá para ler o raciocínio inteiro e discordar se for o caso.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: PERGUNTAS.map((p) => ({
+    "@type": "Question",
+    name: p.q,
+    acceptedAnswer: { "@type": "Answer", text: p.a },
+  })),
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -62,6 +134,8 @@ export default function PergunteAoMontinhoPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
       <section className="py-14 bg-black border-b border-white/10">
@@ -113,6 +187,81 @@ export default function PergunteAoMontinhoPage() {
               relevantes dos conteúdos do Montinho para montar a resposta, sempre
               mostrando de onde ela veio.
             </p>
+          </div>
+
+          <div>
+            <h2
+              className="text-2xl font-bold text-white mb-4"
+              style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
+            >
+              Perguntas que as pessoas mais fazem
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Pode copiar qualquer uma delas para o campo acima, ou ir direto ao
+              artigo que a responde por escrito:
+            </p>
+            <ul className="text-gray-300 leading-relaxed grid gap-2 sm:grid-cols-2">
+              {EXEMPLOS.map((e) => (
+                <li key={e.slug}>
+                  <Link
+                    href={e.slug}
+                    className="underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors"
+                  >
+                    {e.pergunta}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h2
+              className="text-2xl font-bold text-white mb-4"
+              style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
+            >
+              Como ele monta a resposta
+            </h2>
+            <ol className="text-gray-300 leading-relaxed space-y-3 list-decimal pl-5">
+              <li>
+                <strong className="text-white">Procura nos conteúdos do site.</strong>{" "}
+                A busca é nos artigos publicados aqui, não no conhecimento geral
+                da internet. É a diferença entre uma resposta que o Montinho
+                assina e uma que ninguém assina.
+              </li>
+              <li>
+                <strong className="text-white">Monta a explicação a partir do que
+                achou</strong>, na mesma linguagem dos artigos — sem promessa de
+                resultado e sem fórmula mágica.
+              </li>
+              <li>
+                <strong className="text-white">Mostra quais artigos usou.</strong>{" "}
+                Você consegue abrir cada um e conferir. Resposta sem fonte é
+                opinião apresentada como fato, e do outro lado da tela não há
+                como saber a diferença.
+              </li>
+              <li>
+                <strong className="text-white">Diz quando não sabe.</strong> Se a
+                base não cobre a pergunta, ele fala isso. Inventar seria pior que
+                não responder — e é o que assistente genérico faz.
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h2
+              className="text-2xl font-bold text-white mb-6"
+              style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
+            >
+              Perguntas frequentes sobre o assistente
+            </h2>
+            <div className="space-y-6">
+              {PERGUNTAS.map((p) => (
+                <div key={p.q}>
+                  <h3 className="text-lg font-semibold text-white mb-2">{p.q}</h3>
+                  <p className="text-gray-300 leading-relaxed">{p.a}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div>

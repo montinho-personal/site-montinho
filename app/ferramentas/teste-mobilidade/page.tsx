@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { MOBILIDADE_NO_AR } from "@/lib/mobilidade/lancamento";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
+import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import TesteMobilidade from "@/components/mobilidade/TesteMobilidade";
 import {
   FONTES,
@@ -48,6 +49,13 @@ export const metadata: Metadata = {
   },
 };
 
+const appSchema = aplicativoSchema({
+  nome: "Teste de Mobilidade",
+  descricao:
+    "Avalia a mobilidade articular por testes simples e aponta onde há restrição.",
+  caminho: "/ferramentas/teste-mobilidade",
+});
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -72,6 +80,7 @@ export default function TesteMobilidadePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
 
       <section className="py-12 sm:py-14 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
