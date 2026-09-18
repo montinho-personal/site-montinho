@@ -520,7 +520,7 @@ export function classificarLead(s: SinaisLead, limites = { quenteMin: 5, mornoMi
 // ---------------------------------------------------------------------------
 // Daily Decision Engine — regras transparentes, sem "AI score"
 // ---------------------------------------------------------------------------
-export interface LeadParaHoje { id: string; contactId: string; nome: string; status: string; createdAt: string; lastContactAt: string | null; firstResponseAt: string | null; lastReplyAt?: string | null; followUpsNoCiclo?: number; promessaFeita?: boolean; motivoDecidir?: string; emPaz?: boolean; adiadoAte?: string | null; nextAction: string | null; nextActionAt: string | null; stageCode: string | null; proposalSentAt: string | null; expectedValue: number | null; temperatura?: string; opportunityId?: string | null }
+export interface LeadParaHoje { id: string; contactId: string; nome: string; status: string; createdAt: string; lastContactAt: string | null; firstResponseAt: string | null; lastReplyAt?: string | null; replyHandledAt?: string | null; followUpsNoCiclo?: number; promessaFeita?: boolean; motivoDecidir?: string; emPaz?: boolean; adiadoAte?: string | null; nextAction: string | null; nextActionAt: string | null; stageCode: string | null; proposalSentAt: string | null; expectedValue: number | null; temperatura?: string; opportunityId?: string | null }
 export interface TarefaParaHoje { id: string; leadId: string | null; clientId: string | null; contactId: string | null; nome: string; titulo: string; dueAt: string; priority: string; tipo?: string }
 export interface TrialParaHoje { id: string; leadId: string | null; contactId: string; nome: string; scheduledAt: string; status: string }
 export interface ClienteParaHoje { id: string; contactId: string; nome: string; renewalDate: string | null; status: string; proximaCobrancaEm?: string | null; cobrancas?: number; pacote?: { usadas: number; contratadas: number; semanas?: number | null } | null }
@@ -560,8 +560,18 @@ export function prioridadesHoje(
   };
   // 0. O lead respondeu e a bola está com o Montinho. É a única situação em
   // que quem está esperando é a pessoa do outro lado — vem antes de tudo.
+  //
+  // Mas nem toda resposta devolve a bola: "ok", "valeu" e "qualquer coisa te
+  // chamo" encerram o turno. Marcadas como resolvidas, elas continuam valendo
+  // para o ciclo de follow-up (ela falou, então a cobrança zera) e somem
+  // daqui. Antes desta distinção a tela pedia para escrever uma hora depois
+  // de alguém dizer que ia chamar — justamente para quem não se deve
+  // escrever.
+  const aguardaResposta = (l: LeadParaHoje) =>
+    !!l.lastReplyAt && (!l.lastContactAt || l.lastReplyAt > l.lastContactAt) &&
+    (!l.replyHandledAt || l.lastReplyAt > l.replyHandledAt);
   for (const l of todosAbertos) {
-    if (l.lastReplyAt && (!l.lastContactAt || l.lastReplyAt > l.lastContactAt)) {
+    if (l.lastReplyAt && aguardaResposta(l)) {
       const horas = h(agora.getTime() - new Date(l.lastReplyAt).getTime());
       itens.push({ prioridade: 1, grupo: "respondeu_aguardando_voce", motivo: `Respondeu há ${horas < 1 ? "menos de 1h" : `${Math.round(horas)}h`} e está esperando você`, acao: "Responder", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
     }

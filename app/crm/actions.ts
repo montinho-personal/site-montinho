@@ -227,7 +227,9 @@ export async function marcarRespondeu(fd: FormData) {
   const agora = new Date().toISOString();
   const { data: opp } = await sb.from("crm_opportunities").select("id, pipeline_id, stage_id").eq("lead_id", leadId).is("won_at", null).is("lost_at", null).order("created_at", { ascending: false }).limit(1).maybeSingle();
   await atividade(sb, u.id, { contact_id: contactId, lead_id: leadId, opportunity_id: opp?.id, tipo: "message", descricao: "Lead respondeu", ocorreu_em: agora, metadata: { direcao: "entrada" } });
-  await erroSe(await sb.from("crm_leads").update({ last_reply_at: agora }).eq("id", leadId), "lead");
+  // reply_handled_at volta a nulo: se antes ela tinha dado um "ok" e agora
+  // escreveu de novo, a bola voltou de verdade e o card tem de subir.
+  await erroSe(await sb.from("crm_leads").update({ last_reply_at: agora, reply_handled_at: null }).eq("id", leadId), "lead");
   await sb.from("crm_tasks").update({ completed_at: agora }).eq("lead_id", leadId).eq("tipo", "follow_up").is("completed_at", null);
   // Quem respondeu já passou de "novo".
   if (opp) {
@@ -849,6 +851,30 @@ export async function contatarPeloWhatsApp(fd: FormData) {
  * três fichas. Sem a ficha, isto viraria o laço infinito que o MAX_FOLLOW_UPS
  * já teve de matar uma vez, só que com artigo no lugar da cobrança.
  */
+/**
+ * "Só deu um ok": ela respondeu, mas não pediu nada.
+ *
+ * "ok", "valeu", "qualquer coisa te chamo" encerram o turno em vez de
+ * devolver a bola. Antes desta distinção os dois casos apertavam o mesmo
+ * botão, e a tela pedia para escrever uma hora depois — justamente para quem
+ * tinha acabado de dizer que ia chamar.
+ *
+ * Vale como resposta para tudo o mais: o ciclo de follow-up zera (ela falou,
+ * então ninguém está sendo ignorado) e o lead segue no CRM pelas portas
+ * normais. O que não acontece é aparecer no topo como quem está esperando.
+ */
+export async function marcarRespostaSemRetorno(fd: FormData) {
+  const u = await exigirEscrita();
+  const sb = await supabaseServer();
+  const leadId = s(fd, "lead_id")!; const contactId = s(fd, "contact_id");
+  const agora = new Date().toISOString();
+  const { data: opp } = await sb.from("crm_opportunities").select("id").eq("lead_id", leadId).is("won_at", null).is("lost_at", null).order("created_at", { ascending: false }).limit(1).maybeSingle();
+  await atividade(sb, u.id, { contact_id: contactId, lead_id: leadId, opportunity_id: opp?.id, tipo: "message", descricao: "Lead respondeu sem pedir retorno", ocorreu_em: agora, metadata: { direcao: "entrada", sem_retorno: true } });
+  await erroSe(await sb.from("crm_leads").update({ last_reply_at: agora, reply_handled_at: agora }).eq("id", leadId), "lead");
+  await sb.from("crm_tasks").update({ completed_at: agora }).eq("lead_id", leadId).eq("tipo", "follow_up").is("completed_at", null);
+  revalidarTudo(["/crm", "/crm/leads", `/crm/leads/${leadId}`]);
+}
+
 export async function registrarConteudo(fd: FormData) {
   const u = await exigirEscrita();
   const sb = await supabaseServer();

@@ -244,6 +244,15 @@ bloco("9. LEAD SCORING EXPLICÁVEL E TELA HOJE");
       { id: "L6", contactId: "C6", nome: "JaPerdeu", status: "aberto", createdAt: "2026-09-01", lastContactAt: null, firstResponseAt: null, nextAction: null, nextActionAt: null, stageCode: "perdido", proposalSentAt: null, expectedValue: null },
       // Fase 1 — T1: respondeu depois do último contato → a bola está com o Montinho.
       { id: "L7", contactId: "C7", nome: "Respondeu", status: "aberto", createdAt: "2026-09-01", lastContactAt: "2026-09-03T10:00:00-03:00", firstResponseAt: "2026-09-01", lastReplyAt: "2026-09-04T09:00:00-03:00", nextAction: "Aguardando resposta", nextActionAt: "2026-09-05", stageCode: "contato", proposalSentAt: null, expectedValue: 500 },
+      // Nem toda resposta devolve a bola: "ok", "valeu", "qualquer coisa te
+      // chamo" encerram o turno. Marcada como resolvida, ela some do topo.
+      { id: "L7b", contactId: "C7b", nome: "SoDeuOk", status: "aberto", createdAt: "2026-09-01", lastContactAt: "2026-09-03T10:00:00-03:00", firstResponseAt: "2026-09-01", lastReplyAt: "2026-09-04T09:00:00-03:00", replyHandledAt: "2026-09-04T09:05:00-03:00", nextAction: "Aguardando resposta", nextActionAt: "2026-09-05", stageCode: "contato", proposalSentAt: null, expectedValue: 500 },
+      // O "ok" tira do topo, não do CRM: com a conversa parada há dias, o
+      // lead volta pela porta normal — a de quem está sem contato.
+      { id: "L7d", contactId: "C7d", nome: "OkEParou", status: "aberto", createdAt: "2026-08-20", lastContactAt: "2026-08-28T10:00:00-03:00", firstResponseAt: "2026-08-20", lastReplyAt: "2026-08-28T11:00:00-03:00", replyHandledAt: "2026-08-28T11:05:00-03:00", nextAction: "Retomar", nextActionAt: "2026-09-10", stageCode: "contato", proposalSentAt: null, expectedValue: 500 },
+      // E se ela escrever DE NOVO depois do ok, a bola volta: a marca antiga
+      // não pode calar uma resposta nova.
+      { id: "L7c", contactId: "C7c", nome: "OkEDepoisFalou", status: "aberto", createdAt: "2026-09-01", lastContactAt: "2026-09-03T10:00:00-03:00", firstResponseAt: "2026-09-01", lastReplyAt: "2026-09-04T18:00:00-03:00", replyHandledAt: "2026-09-04T09:05:00-03:00", nextAction: "Aguardando resposta", nextActionAt: "2026-09-05", stageCode: "contato", proposalSentAt: null, expectedValue: 500 },
       // Fase 1 — T2: três cobranças no ciclo, ou a mensagem que prometeu ser a última → "decidir", sem texto.
       { id: "L9", contactId: "C9x", nome: "Esgotado", status: "aberto", createdAt: "2026-08-10", lastContactAt: "2026-08-28", firstResponseAt: "2026-08-10", lastReplyAt: null, followUpsNoCiclo: 3, promessaFeita: false, motivoDecidir: "3 tentativas sem resposta", nextAction: "x", nextActionAt: "2026-09-05", stageCode: "contato", proposalSentAt: null, expectedValue: 300 },
       { id: "L10", contactId: "C10", nome: "Prometeu", status: "aberto", createdAt: "2026-08-10", lastContactAt: "2026-09-01T10:00:00-03:00", firstResponseAt: "2026-08-10", lastReplyAt: null, followUpsNoCiclo: 1, promessaFeita: true, motivoDecidir: "Já mandou a mensagem final", nextAction: "x", nextActionAt: "2026-09-05", stageCode: "proposta", proposalSentAt: "2026-08-28", expectedValue: 300 },
@@ -285,6 +294,17 @@ bloco("9. LEAD SCORING EXPLICÁVEL E TELA HOJE");
   ok("lead 'aberto' parado na etapa perdido não aparece", !por.JaPerdeu);
   ok("Respondeu: última resposta depois do último contato → prioridade 1, grupo respondeu_aguardando_voce", por.Respondeu?.prioridade === 1 && por.Respondeu.grupo === "respondeu_aguardando_voce" && /esperando você/.test(por.Respondeu.motivo), JSON.stringify(por.Respondeu));
   ok("RespondeuAntes: Montinho já respondeu depois dela → não entra como 'esperando você'", por.RespondeuAntes?.grupo !== "respondeu_aguardando_voce", por.RespondeuAntes?.grupo);
+  /*
+   * "ok", "valeu", "qualquer coisa te chamo": ela falou, mas não pediu nada.
+   * Antes desta distinção a tela pedia para escrever uma hora depois — para
+   * justamente quem tinha dito que ia chamar.
+   */
+  ok("SoDeuOk: resposta dada por resolvida → sai de 'esperando você'", por.SoDeuOk?.grupo !== "respondeu_aguardando_voce", por.SoDeuOk?.grupo);
+  // Com a próxima ação marcada para amanhã e o último contato ontem, não há
+  // nada a fazer hoje: sair da lista é o certo, e é o que se queria.
+  ok("SoDeuOk: sem outra pendência, não aparece hoje", !por.SoDeuOk, JSON.stringify(por.SoDeuOk));
+  ok("OkEParou: o ok tira do topo, não do CRM — volta como lead parado", por.OkEParou?.grupo === "parado" && /Sem contato/.test(por.OkEParou.motivo), JSON.stringify(por.OkEParou));
+  ok("OkEDepoisFalou: resposta nova depois do ok devolve a bola", por.OkEDepoisFalou?.grupo === "respondeu_aguardando_voce" && por.OkEDepoisFalou.prioridade === 1, JSON.stringify(por.OkEDepoisFalou));
   ok("Vencida: próxima ação no passado entra, diz o que era e há quanto tempo", por.Vencida?.grupo === "proxima_acao_vencida" && /Mandar horários — atrasado há 2 dias/.test(por.Vencida.motivo), por.Vencida?.motivo);
   ok("Futura: próxima ação no futuro não aparece como vencida", !por.Futura || !/atrasado/.test(por.Futura.motivo), por.Futura?.motivo);
   ok("NovoDuasHoras: lead novo há 2h sobe para prioridade 2", por.NovoDuasHoras?.prioridade === 2, String(por.NovoDuasHoras?.prioridade));
