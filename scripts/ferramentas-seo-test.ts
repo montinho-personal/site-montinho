@@ -119,6 +119,26 @@ for (const p of paginas) {
   }
 }
 
+bloco("2B. TODA FERRAMENTA SE DECLARA APLICATIVO");
+/*
+ * As treze são aplicativos de navegador: a pessoa preenche, o resultado sai
+ * na hora, nada é cobrado. Sem SoftwareApplication elas se apresentam ao
+ * Google como página comum, disputando com artigo em vez de com ferramenta.
+ *
+ * Exigir o gerador comum, e não o tipo escrito à mão, é de propósito: o
+ * bloco tem oito campos iguais em todas, e colado treze vezes o dia em que o
+ * Google mudar uma exigência vira treze edições — a décima terceira é a que
+ * alguém esquece.
+ */
+for (const p of paginas) {
+  const s = readFileSync(join(raiz, p), "utf8");
+  const rota = p.replace(/^app/, "").replace(/\/page\.tsx$/, "");
+  const declara = /"@type":\s*"SoftwareApplication"/.test(s) || /aplicativoSchema\(/.test(s);
+  ok(`${rota}: declara SoftwareApplication`, declara);
+  ok(`${rota}: o schema chega ao HTML`, /JSON\.stringify\((?:appSchema|aplicativoSchema)\)/.test(s),
+    "declarar a const e esquecer a tag <script> deixa o schema invisível");
+}
+
 bloco("3. A CALCULADORA DE PROTEÍNA NÃO CANIBALIZA O ARTIGO");
 /*
  * As duas páginas disputariam a mesma busca se a ferramenta virasse um

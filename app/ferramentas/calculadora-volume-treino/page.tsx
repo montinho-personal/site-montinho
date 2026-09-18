@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
+import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import { EXERCICIOS } from "@/lib/treino/exercicios";
 import { MUSCULOS } from "@/lib/treino/musculos";
 import { FAIXAS, FONTES, NOTA_FREQUENCIA, NOTA_INDIVIDUALIDADE, NOTA_SERIE_VALIDA, PESO_SECUNDARIO } from "@/lib/treino/volume";
@@ -32,6 +33,13 @@ export const metadata: Metadata = {
   },
 };
 
+const appSchema = aplicativoSchema({
+  nome: "Calculadora de Volume de Treino",
+  descricao:
+    "Soma as séries semanais por grupo muscular e compara com a faixa de volume usada como referência.",
+  caminho: "/ferramentas/calculadora-volume-treino",
+});
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -54,6 +62,7 @@ export default function CalculadoraVolumePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
 
       <section className="py-14 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

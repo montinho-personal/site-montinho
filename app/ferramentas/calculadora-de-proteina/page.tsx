@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
+import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import { ALIMENTOS, FAIXAS, REFERENCIA_CIENTIFICA, gramasPorDia } from "@/lib/proteina";
 import CalculadoraProteina from "@/components/proteina/CalculadoraProteina";
 import Compartilhar from "@/components/share/Compartilhar";
@@ -50,27 +51,12 @@ const breadcrumbSchema = {
   ],
 };
 
-/*
- * SoftwareApplication é verdadeiro aqui: é um aplicativo de navegador,
- * gratuito, que roda sem cadastro. Preço zero é declarado porque é a
- * informação que o Google usa — e porque é verdade. Nada de AggregateRating:
- * não há avaliação de usuário nesta página, e inventar uma é a forma mais
- * rápida de perder o rich result inteiro por dados inválidos.
- */
-const aplicativoSchema = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "Calculadora de Proteína Diária",
-  applicationCategory: "HealthApplication",
-  operatingSystem: "Web",
-  url: URL_PAGINA,
-  description:
+const appSchema = aplicativoSchema({
+  nome: "Calculadora de Proteína Diária",
+  descricao:
     "Calcula a quantidade de proteína por dia a partir do peso corporal, nas referências de 1,6, 2,0 e 2,2 g por quilo.",
-  inLanguage: "pt-BR",
-  isAccessibleForFree: true,
-  offers: { "@type": "Offer", price: "0", priceCurrency: "BRL" },
-  author: { "@type": "Person", name: "Montinho Personal Trainer", url: SITE_URL },
-};
+  caminho: "/ferramentas/calculadora-de-proteina",
+});
 
 /*
  * Cada pergunta abaixo aparece escrita na página, com a mesma resposta. O
@@ -137,7 +123,7 @@ export default function CalculadoraProteinaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aplicativoSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="py-14 bg-black border-b border-white/10">

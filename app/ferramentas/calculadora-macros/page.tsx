@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
+import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import {
   AMDR,
   FAIXAS_PROTEINA,
@@ -42,6 +43,13 @@ export const metadata: Metadata = {
 };
 
 /** Só BreadcrumbList — nada de FAQ ou nota inventada para rich result. */
+const appSchema = aplicativoSchema({
+  nome: "Calculadora de Macros",
+  descricao:
+    "Distribui as calorias do dia em proteína, carboidrato e gordura conforme o objetivo.",
+  caminho: "/ferramentas/calculadora-macros",
+});
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -68,6 +76,7 @@ export default function CalculadoraMacrosPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
 
       <section className="py-14 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

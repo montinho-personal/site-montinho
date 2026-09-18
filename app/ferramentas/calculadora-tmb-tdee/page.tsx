@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
+import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import { NIVEIS, REFERENCIA_TMB } from "@/lib/tdee";
 import CalculadoraTDEE from "@/components/tdee/CalculadoraTDEE";
 import Trilha from "@/components/ferramentas/Trilha";
@@ -30,6 +31,13 @@ export const metadata: Metadata = {
   },
 };
 
+const appSchema = aplicativoSchema({
+  nome: "Calculadora de TMB e TDEE",
+  descricao:
+    "Calcula a taxa metabólica basal e o gasto calórico diário total a partir de peso, altura, idade e nível de atividade.",
+  caminho: "/ferramentas/calculadora-tmb-tdee",
+});
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -47,6 +55,7 @@ export default function CalculadoraTmbTdeePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
 
       <section className="py-14 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

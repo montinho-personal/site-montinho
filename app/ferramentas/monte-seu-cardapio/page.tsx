@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
+import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import { ALIMENTOS_CARDAPIO } from "@/lib/cardapio/alimentos";
 import { PERFIS_REFEICAO, TOLERANCIA_KCAL } from "@/lib/cardapio/motor";
 import MonteSeuCardapio from "@/components/cardapio/MonteSeuCardapio";
@@ -40,6 +41,13 @@ export const metadata: Metadata = {
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
   },
 };
+
+const appSchema = aplicativoSchema({
+  nome: "Montinho FitChef",
+  descricao:
+    "Monta um cardápio a partir dos alimentos escolhidos, com calorias e porções calculadas.",
+  caminho: "/ferramentas/monte-seu-cardapio",
+});
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -91,6 +99,7 @@ export default function MonteSeuCardapioPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
 
       <section className="py-14 bg-black border-b border-white/10 print:hidden">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
