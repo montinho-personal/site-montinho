@@ -10,6 +10,23 @@ import BotaoWhatsApp from "@/components/crm/BotaoWhatsApp";
 import AtualizarLead from "@/components/crm/AtualizarLead";
 import ElaRespondeu from "@/components/crm/ElaRespondeu";
 
+/**
+ * O rótulo do botão não é o lugar da frase inteira.
+ *
+ * A ação de "próxima ação vencida" é texto livre escrito pelo Montinho, e
+ * vinha inteira para dentro do botão: "Responder e entender o caso: objetivo,
+ * rotina e se já treina" virava uma coluna de uma palavra por linha, num card
+ * de duas telas de altura. A frase completa já está na linha "Motivo", logo
+ * acima — aqui basta o começo dela, e o title guarda o resto.
+ */
+function rotuloCurto(acao: string, max = 18): string {
+  const limpo = acao.trim();
+  if (limpo.length <= max) return limpo;
+  const corte = limpo.slice(0, max);
+  const espaco = corte.lastIndexOf(" ");
+  return (espaco > 8 ? corte.slice(0, espaco) : corte).replace(/[\s,;:—-]+$/, "") + "…";
+}
+
 export default async function Hoje() {
   const u = await exigirUsuario();
   const [b, cat] = await Promise.all([base(), catalogo()]);
@@ -68,8 +85,18 @@ export default async function Hoje() {
                   <div className="flex items-center gap-2"><Badge tom={tom}>{i.prioridade <= 2 ? "PRIORIDADE ALTA" : i.prioridade <= 4 ? "hoje" : "esta semana"}</Badge><Link href={href} className="truncate font-medium hover:underline">{i.nome}</Link>{i.valor ? <span className="text-xs text-zinc-500">{brl(i.valor)}/mês</span> : null}</div>
                   <div className="mt-1 text-sm text-zinc-400">Motivo: {i.motivo}</div>
                 </div>
-                <div className="flex w-full shrink-0 gap-2 sm:w-auto">
+                {/*
+                  * flex-wrap, e não shrink-0: com quatro botões na linha o
+                  * antigo não deixava nada encolher nem descer, e o texto
+                  * quebrava dentro do botão — "Só / deu / um / ok", uma
+                  * palavra por linha, num card de duas telas de altura.
+                  */}
+                <div className="flex w-full flex-wrap items-center gap-2 sm:w-auto">
+                  {/* Primeiro o que se FAZ; só depois o que se REGISTRA. */}
                   {wa && <BotaoWhatsApp url={wa} contactId={i.contactId} leadId={i.leadId} clientId={i.clientId} taskId={i.taskId} grupo={i.grupo} situacao={copy.situacao} />}
+                  {i.taskId ? (
+                    <form action={concluirTarefa}><input type="hidden" name="task_id" value={i.taskId} /><Btn tom="secundario" pequeno>Feito</Btn></form>
+                  ) : <Btn href={href} tom="secundario" pequeno title={i.acao}>{rotuloCurto(i.acao)}</Btn>}
                   {/*
                     * No card "respondeu_aguardando_voce" sobra só o "Só deu um
                     * ok": "Respondeu" repetiria o que já está escrito na
@@ -78,9 +105,6 @@ export default async function Hoje() {
                     * ficava preso em PRIORIDADE ALTA sem saída.
                     */}
                   {i.leadId && <ElaRespondeu leadId={i.leadId} contactId={i.contactId} jaNoTopo={i.grupo === "respondeu_aguardando_voce"} />}
-                  {i.taskId ? (
-                    <form action={concluirTarefa}><input type="hidden" name="task_id" value={i.taskId} /><Btn tom="secundario" pequeno>Feito</Btn></form>
-                  ) : <Btn href={href} tom="secundario" pequeno>{i.acao}</Btn>}
                 </div>
                 {i.leadId && <AtualizarLead leadId={i.leadId} contactId={i.contactId} opportunityId={i.opportunityId} motivos={cat.motivos} />}
               </li>
