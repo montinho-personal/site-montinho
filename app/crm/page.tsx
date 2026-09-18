@@ -11,6 +11,22 @@ import AtualizarLead from "@/components/crm/AtualizarLead";
 import ElaRespondeu from "@/components/crm/ElaRespondeu";
 
 /**
+ * O rótulo do botão de ação.
+ *
+ * Quando a ação JÁ ESTÁ ESCRITA no motivo, o botão não a repete: diz para
+ * onde leva. Em "próxima ação vencida" o motivo é a própria frase que o
+ * Montinho escreveu mais "atrasado há X", e o botão vinha com a mesma frase
+ * cortada — o card dizia duas vezes a mesma coisa, e "Responder e…" ficava
+ * colado em "Respondeu", que faz outra coisa completamente diferente.
+ *
+ * A regra é de conteúdo, não de tamanho: vale para qualquer grupo em que o
+ * motivo já contenha a ação, inclusive os que ainda não existem.
+ */
+function rotuloDaAcao(acao: string, motivo: string): string {
+  return motivo.includes(acao.trim()) ? "Abrir lead" : rotuloCurto(acao);
+}
+
+/**
  * O rótulo do botão não é o lugar da frase inteira.
  *
  * A ação de "próxima ação vencida" é texto livre escrito pelo Montinho, e
@@ -96,7 +112,7 @@ export default async function Hoje() {
                   {wa && <BotaoWhatsApp url={wa} contactId={i.contactId} leadId={i.leadId} clientId={i.clientId} taskId={i.taskId} grupo={i.grupo} situacao={copy.situacao} />}
                   {i.taskId ? (
                     <form action={concluirTarefa}><input type="hidden" name="task_id" value={i.taskId} /><Btn tom="secundario" pequeno>Feito</Btn></form>
-                  ) : <Btn href={href} tom="secundario" pequeno title={i.acao}>{rotuloCurto(i.acao)}</Btn>}
+                  ) : <Btn href={href} tom="secundario" pequeno title={i.acao}>{rotuloDaAcao(i.acao, i.motivo)}</Btn>}
                   {/*
                     * No card "respondeu_aguardando_voce" sobra só o "Só deu um
                     * ok": "Respondeu" repetiria o que já está escrito na
