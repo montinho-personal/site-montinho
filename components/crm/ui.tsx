@@ -63,14 +63,14 @@ export function Badge({ children, tom = "neutro" }: { children: ReactNode; tom?:
   };
   return <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium ${cores[tom]}`}>{children}</span>;
 }
-export function Btn({ children, tom = "primario", href, tipo = "submit", className = "", pequeno, name, value, target, formAction }: { children: ReactNode; tom?: "primario" | "secundario" | "whatsapp" | "perigo" | "ghost"; href?: string; tipo?: "submit" | "button"; className?: string; pequeno?: boolean; name?: string; value?: string; target?: string; formAction?: (fd: FormData) => void | Promise<void> }) {
-  const base = `inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 ${pequeno ? "px-3 py-1.5 text-sm" : "px-4 py-2.5 text-sm"}`;
+export function Btn({ children, tom = "primario", href, tipo = "submit", className = "", pequeno, name, value, target, title, formAction }: { children: ReactNode; tom?: "primario" | "secundario" | "whatsapp" | "perigo" | "ghost"; href?: string; tipo?: "submit" | "button"; className?: string; pequeno?: boolean; name?: string; value?: string; target?: string; /** Texto completo quando o rótulo foi encurtado. */ title?: string; formAction?: (fd: FormData) => void | Promise<void> }) {
+  const base = `inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 ${pequeno ? "px-3 py-1.5 text-sm" : "px-4 py-2.5 text-sm"}`;
   const cores = {
     primario: "bg-white text-black hover:bg-zinc-200", secundario: "border border-white/20 text-white hover:bg-white/10",
     whatsapp: "bg-[#25D366] text-black hover:bg-[#1ebe5b]", perigo: "border border-rose-500/50 text-rose-200 hover:bg-rose-500/10", ghost: "text-zinc-300 hover:text-white hover:bg-white/5",
   };
   const cls = `${base} ${cores[tom]} ${className}`;
-  if (href) return <Link href={href} className={cls} target={target} rel={target ? "noopener noreferrer" : undefined}>{children}</Link>;
+  if (href) return <Link href={href} className={cls} target={target} title={title} rel={target ? "noopener noreferrer" : undefined}>{children}</Link>;
   return <BotaoDeEnvio tipo={tipo} cls={cls} name={name} value={value} formAction={formAction}>{children}</BotaoDeEnvio>;
 }
 export function Campo({ rotulo, children, dica }: { rotulo: string; children: ReactNode; dica?: string }) {
