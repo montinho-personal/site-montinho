@@ -28,6 +28,17 @@ export const LINKS: Record<string, LinkControlado> = {
   // quantos abriram: essa mensagem sai pelo WhatsApp e o referrer não chega.
   "historia-lead": { destino: "/minha-historia", utm_source: "crm", utm_medium: "whatsapp", utm_campaign: "proposta_parada", utm_content: "historia", tipo: "other" },
   "gbp": { destino: "/", utm_source: "google", utm_medium: "perfil_empresa", utm_campaign: "perfil", utm_content: "botao_site", tipo: "other" },
+  /**
+   * Story que aponta para um artigo específico.
+   *
+   * O "ig-stories" genérico existe e leva para a home — serve para o story
+   * que só diz "tô no site". Não serve aqui: quando o story é sobre UM
+   * artigo, mandar para a home perde a pessoa no caminho e, pior, some com
+   * a informação de qual story funcionou. Por isso cada story de artigo
+   * ganha seu próprio código, sempre sob a campanha "stories", para que os
+   * stories continuem comparáveis entre si pelo utm_content.
+   */
+  "ig-cerveja": { destino: "/blog/cerveja-engorda", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "stories", utm_content: "cerveja_engorda", tipo: "social" },
 };
 
 export function urlDoLink(slug: string, extra: Record<string, string> = {}): string | null {
