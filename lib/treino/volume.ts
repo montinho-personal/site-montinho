@@ -499,4 +499,8 @@ export const ARTIGOS_COM_LINK_VOLUME: string[] = [
      conta exata por músculo para a calculadora. O link é o encaixe: o
      artigo é de saúde, não de hipertrofia, e o embed diria o contrário. */
   "quanto-treinar-por-semana-para-viver-mais",
+  /* Termina dizendo que volume semanal explica mais resultado que a escolha
+     do exercício. O embed seria contraditório: o artigo é justamente sobre
+     NÃO transformar a dúvida em uma conta — o link serve quem quiser fazê-la. */
+  "melhor-exercicio-para-ganhar-musculo",
 ];
