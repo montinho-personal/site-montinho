@@ -1267,8 +1267,8 @@ export const blogPosts = ([
 </ul>
 
 <div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rapido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="yt-caption">Gravei um vídeo curto respondendo isto em menos de um minuto.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/G9WBAB3KUPM?rel=0" title="Qual o melhor exercício para ganhar músculo — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 `,
@@ -6997,8 +6997,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 </ul>
 
 <div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculacao para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="yt-caption">Gravei um vídeo curto respondendo isto em menos de um minuto.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/G9WBAB3KUPM?rel=0" title="Qual o melhor exercício para ganhar músculo — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 `,
@@ -32960,8 +32960,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>A boa notícia: a grande maioria das pessoas está muito longe de atingir seu potencial genético. Isso significa que há muito terreno a explorar com treino e nutrição adequados.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rapido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="yt-caption">Gravei um vídeo curto respondendo isto em menos de um minuto.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/G9WBAB3KUPM?rel=0" title="Qual o melhor exercício para ganhar músculo — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 <h3>Leia Também</h3>
@@ -117218,6 +117218,103 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 </ul>
 `,
   },
+  {
+    slug: "melhor-exercicio-para-ganhar-musculo",
+    title: "Qual o Melhor Exercício para Ganhar Músculo?",
+    metaTitle: "Qual o Melhor Exercício para Ganhar Músculo?",
+    metaDescription: "A resposta honesta não é um exercício, é um critério. Veja o que faz um movimento construir músculo e como escolher o seu para cada grupo muscular.",
+    excerpt: "Todo mundo quer o nome do exercício. Só que dois alunos com o mesmo objetivo podem precisar de exercícios diferentes — e o que decide isso não é a fama do movimento.",
+    category: "Treinamento",
+    date: "2026-09-19",
+    updatedAt: "2026-09-19",
+    readTime: "8 min",
+    author: "Montinho",
+    tags: ["melhor exercício", "hipertrofia", "ganhar massa muscular", "musculação", "treino", "progressão de carga"],
+    faq: [
+      { question: "Qual o melhor exercício para ganhar músculo?", answer: "Não existe um só. O melhor exercício para você é aquele que coloca carga no músculo que você quer desenvolver, que você consegue executar com técnica estável e, principalmente, no qual você consegue aumentar carga ou repetição ao longo das semanas. Um exercício famoso que você não consegue progredir constrói menos que um exercício simples que progride todo mês." },
+      { question: "Agachamento, supino e levantamento terra são os melhores?", answer: "São excelentes e cobrem muita massa muscular de uma vez, por isso rendem tanto por minuto de treino. Mas eles não são obrigatórios: quem tem dor de ombro no supino ou não consegue posição no terra ganha músculo do mesmo jeito com variações que respeitam a articulação. O exercício que machuca não constrói nada, porque você para de fazer." },
+      { question: "Exercício composto ou isolador: qual constrói mais?", answer: "O composto rende mais por série, porque recruta vários músculos e permite carga alta. O isolador resolve o que sobrou: bíceps, panturrilha, posterior de ombro e qualquer grupo que o composto não cansa o suficiente. Um treino que ganha músculo costuma ter os dois, nessa ordem." },
+      { question: "Posso ganhar músculo fazendo só um exercício por grupo muscular?", answer: "Pode, principalmente no começo. O limite não é a variedade, é o volume: se um exercício só já te dá as séries semanais que aquele músculo precisa e você progride nele, ele basta. A variedade entra quando o volume necessário fica alto demais para um movimento só aguentar com qualidade." },
+      { question: "Com que frequência devo trocar de exercício?", answer: "Enquanto você estiver progredindo carga ou repetição, não troque. Trocar por tédio zera a curva de aprendizado do movimento e esconde se você está realmente evoluindo. A troca faz sentido quando o exercício trava por várias semanas seguidas, quando ele passa a doer ou quando a logística da academia não permite mais fazê-lo direito." },
+    ],
+    content: `<p>Essa é provavelmente a pergunta que mais ouço na academia, e quase sempre vem esperando um nome como resposta: agachamento, supino, levantamento terra. A resposta honesta é menos empolgante e muito mais útil — <strong>não existe o melhor exercício, existe o melhor exercício para você, e há um critério objetivo para descobrir qual é</strong>.</p>
+
+<div class="yt-embed">
+<p class="yt-caption">Gravei um vídeo curto respondendo isto em menos de um minuto.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/G9WBAB3KUPM?rel=0" title="Qual o melhor exercício para ganhar músculo — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
+<h2>O que faz um exercício construir músculo</h2>
+<p>Músculo cresce quando recebe uma tensão maior do que está acostumado a receber, de forma repetida, com comida e sono suficientes para reconstruir. Qualquer exercício que entregue isso funciona. Os que entregam melhor têm três características:</p>
+<ul>
+<li><strong>Colocam carga onde você quer o resultado.</strong> Parece óbvio, mas é onde a maioria erra: fazer voador esperando ombro, ou agachamento esperando panturrilha.</li>
+<li><strong>Permitem progressão mensurável.</strong> Você precisa conseguir aumentar algo — peso, repetição, amplitude — e registrar isso. Exercício que não dá para medir vira ginástica.</li>
+<li><strong>São estáveis o bastante para você chegar perto da falha.</strong> Se o movimento exige tanto equilíbrio que você para por medo de cair, o músculo-alvo nunca chega ao limite.</li>
+</ul>
+
+<h2>O critério que resolve a pergunta</h2>
+<p>Quando um aluno me pergunta qual exercício fazer, eu devolvo três perguntas:</p>
+<ol>
+<li><strong>Você sente o músculo certo trabalhando?</strong> Não precisa ser aquela queimação de propaganda, mas você precisa saber quem está puxando.</li>
+<li><strong>Você consegue repetir a mesma execução na semana que vem?</strong> Se cada série sai de um jeito, não dá para saber se melhorou.</li>
+<li><strong>Você consegue colocar mais carga ou mais repetição daqui a três semanas?</strong> Essa é a decisiva, e está detalhada em <a href="/blog/progressao-de-carga">progressão de carga</a>.</li>
+</ol>
+<p>Passou nas três? É um bom exercício para você. Reprovou em alguma? O problema quase nunca é o exercício em si — é a execução, a carga escolhida ou a posição na ordem do treino.</p>
+
+<h2>Uma escolha sólida para cada grupo muscular</h2>
+<p>Se você quer nomes, aqui vão — com a ressalva de que são pontos de partida, não obrigações.</p>
+<table>
+<thead><tr><th>Grupo muscular</th><th>Escolha de partida</th><th>Quando trocar</th></tr></thead>
+<tbody>
+<tr><td>Peito</td><td>Supino (barra ou halteres)</td><td>Dor no ombro: vá para inclinado com halteres ou máquina</td></tr>
+<tr><td>Costas</td><td>Remada curvada e puxada</td><td>Lombar sensível: remada apoiada no banco</td></tr>
+<tr><td>Quadríceps</td><td>Agachamento</td><td>Mobilidade de tornozelo travada: leg press ou hack</td></tr>
+<tr><td>Posterior e glúteo</td><td>Levantamento terra ou stiff</td><td>Sem posição de coluna neutra: mesa flexora e elevação pélvica</td></tr>
+<tr><td>Ombro</td><td>Desenvolvimento</td><td>Impacto no ombro: elevação lateral com amplitude controlada</td></tr>
+<tr><td>Braço</td><td>Rosca direta e tríceps na polia</td><td>Dor no cotovelo: troque a barra reta pela W ou halteres</td></tr>
+</tbody>
+</table>
+<p>Repare no padrão da terceira coluna: a troca nunca é por modismo. É por articulação, por anatomia ou por equipamento disponível.</p>
+
+<h2>Por que agachamento, supino e terra têm essa fama</h2>
+<p>Eles merecem a reputação, mas não pelo motivo que a internet costuma dar. Não existe nada mágico neles. O que existe é <strong>eficiência</strong>: cada um move muita massa muscular ao mesmo tempo, aguenta carga alta e tem progressão fácil de medir. Em quarenta minutos de treino, isso importa muito.</p>
+<p>O que não é verdade é que sejam insubstituíveis. Quem tem ombro operado, hérnia de disco ou simplesmente não tem barra em casa constrói músculo do mesmo jeito. Se você está começando agora, a ordem de prioridade está em <a href="/blog/hipertrofia-para-iniciantes">hipertrofia para iniciantes</a>.</p>
+
+<h2>Composto e isolador: a divisão certa de trabalho</h2>
+<p>O exercício composto é o que paga as contas — ele recruta vários músculos e permite carga que o isolador nunca vai permitir. O isolador entra depois, para o que sobrou: bíceps, panturrilha, posterior de ombro, grupos que raramente chegam ao limite dentro de um movimento grande.</p>
+<p>A ordem prática é simples: composto primeiro, com você inteiro; isolador no fim, quando errar a execução custa pouco.</p>
+
+<h2>O erro que trava mais gente do que a escolha do exercício</h2>
+<p>Trocar de exercício toda semana. É o hábito mais comum de quem treina há um ano e não mudou de aparência.</p>
+<p>Aprender um movimento leva algumas semanas. Nas primeiras sessões, boa parte do ganho de carga é o sistema nervoso entendendo a tarefa, não o músculo crescendo. Quem troca antes disso vive eternamente na fase de aprendizado — e nunca chega na parte em que o músculo precisa crescer para dar conta. O assunto tem artigo próprio em <a href="/blog/quando-trocar-o-treino">quando trocar o treino</a>.</p>
+
+<h2>O que importa mais do que o exercício</h2>
+<p>Se eu pudesse trocar essa pergunta por outra, seria esta: <em>quantas séries por semana esse músculo está recebendo?</em> Dois alunos fazendo exercícios completamente diferentes, com o mesmo volume semanal bem distribuído, terminam o ano parecidos. Dois alunos fazendo o mesmo exercício, um com seis séries por semana e outro com dezoito, não.</p>
+<p>O tempo até isso aparecer no espelho está em <a href="/blog/quanto-tempo-para-ganhar-massa-muscular">quanto tempo para ganhar massa muscular</a>, e a conta das séries semanais em <a href="/blog/quantas-series-para-hipertrofia">quantas séries para hipertrofia</a>.</p>
+
+<h2>Resumo</h2>
+<ul>
+<li>O melhor exercício é o que você sente, repete com a mesma técnica e consegue progredir.</li>
+<li>Compostos rendem mais por série; isoladores fecham o que sobrou.</li>
+<li>Exercício famoso que machuca você constrói zero, porque você para de fazer.</li>
+<li>Volume semanal e progressão explicam mais resultado do que a escolha do movimento.</li>
+</ul>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/hipertrofia-para-iniciantes">Hipertrofia para iniciantes</a></li>
+<li><a href="/blog/progressao-de-carga">Progressão de carga na musculação</a></li>
+<li><a href="/blog/volume-de-treino-ideal">Volume de treino ideal</a></li>
+</ul>
+
+<h2>Referências</h2>
+<ul>
+<li>Schoenfeld BJ, Grgic J, Ogborn D, Krieger JW. Strength and hypertrophy adaptations between low- versus high-load resistance training. Journal of Strength and Conditioning Research, 2017.</li>
+<li>Schoenfeld BJ, Ogborn D, Krieger JW. Dose-response relationship between weekly resistance training volume and increases in muscle mass. Journal of Sports Sciences, 2017.</li>
+</ul>
+`,
+  },
+
 
 ]) as BlogPost[];
 

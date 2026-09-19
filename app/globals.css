@@ -364,6 +364,27 @@ img {
   border: none;
 }
 
+/*
+ * Vídeo vertical (Shorts e Reels).
+ *
+ * O wrapper padrão é 16:9 fixo. Um vídeo 9:16 dentro dele aparece minúsculo
+ * no meio, com duas tarjas pretas enormes nas laterais — e o Short do
+ * Montinho, que é o formato que ele grava, sofreria exatamente isso.
+ *
+ * A largura máxima existe porque 9:16 sem limite ocupa quase duas telas de
+ * altura no celular: o leitor rola, rola, e o texto some. 380px mantém o
+ * vídeo grande o suficiente para ser assistido e pequeno o suficiente para o
+ * artigo continuar sendo um artigo.
+ */
+.yt-wrapper--vertical {
+  padding-bottom: 0;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Logo do rodapé: contido no contêiner; centralizado no mobile, à esquerda no desktop */
 .footer-logo {
   position: absolute;
