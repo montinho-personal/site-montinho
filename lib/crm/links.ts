@@ -39,6 +39,19 @@ export const LINKS: Record<string, LinkControlado> = {
    * stories continuem comparáveis entre si pelo utm_content.
    */
   "ig-cerveja": { destino: "/blog/cerveja-engorda", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "stories", utm_content: "cerveja_engorda", tipo: "social" },
+  /**
+   * Mesmo artigo, status do WhatsApp.
+   *
+   * Precisa ser um código separado do story do Instagram, e não o mesmo
+   * link nos dois lugares: com um código só, os cliques se somam e a
+   * pergunta que interessa — qual das duas redes traz leitor — fica sem
+   * resposta.
+   *
+   * O utm_medium é "status" de propósito: é ele que faz a fonte cair em
+   * whatsapp_status em vez de whatsapp_direct, que significa quem já tinha
+   * o número e chamou.
+   */
+  "wa-cerveja": { destino: "/blog/cerveja-engorda", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "cerveja_engorda", tipo: "social" },
 };
 
 export function urlDoLink(slug: string, extra: Record<string, string> = {}): string | null {

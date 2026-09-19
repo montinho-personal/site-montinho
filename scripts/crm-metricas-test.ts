@@ -192,6 +192,21 @@ ok("utm instagram/paid → instagram_ads", inferirFonte({ utmSource: "instagram"
 ok("link /l/gbp (google/perfil_empresa) → google_business, confiança alta", inferirFonte({ utmSource: "google", utmMedium: "perfil_empresa" }).sourceCode === "google_business" && inferirFonte({ utmSource: "google", utmMedium: "perfil_empresa" }).confidence === "high");
 
 /*
+ * O status do WhatsApp não pode virar whatsapp_direct. Aquele código está em
+ * DIRETOS e seria pulado pelo last non-direct — o canal que trouxe a pessoa
+ * sumiria do relatório. É o mesmo erro que o Perfil da Empresa sofreu.
+ */
+ok("link /l/wa-* (whatsapp/status) → whatsapp_status", inferirFonte({ utmSource: "whatsapp", utmMedium: "status" }).sourceCode === "whatsapp_status");
+ok("whatsapp sem medium status continua whatsapp_direct", inferirFonte({ utmSource: "whatsapp" }).sourceCode === "whatsapp_direct");
+ok("status do WhatsApp sobrevive ao last non-direct", (() => {
+  const a = atribuir([
+    { occurredAt: "2026-09-19T10:00:00Z", sourceCode: "whatsapp_status" },
+    { occurredAt: "2026-09-19T11:00:00Z", sourceCode: "whatsapp_direct" },
+  ]);
+  return a.lastNonDirect?.sourceCode === "whatsapp_status";
+})());
+
+/*
  * Assistente de IA. O caso do gemini é o que faz este bloco existir: o host
  * é gemini.google.com, então a regra de /google\./ o contaria como busca
  * orgânica, inflando o Google e escondendo a IA. A ordem das regras é o que

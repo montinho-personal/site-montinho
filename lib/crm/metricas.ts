@@ -454,6 +454,15 @@ export function inferirFonte(p: { utmSource?: string | null; utmMedium?: string 
    * as duas viraram lead, e nenhuma aparecia no relatório de aquisição.
    */
   if (/chatgpt|openai|perplexity|copilot|gemini|claude/.test(s)) return { sourceCode: "ai_assistant", confidence: "high" };
+  /*
+   * WhatsApp. O status é divulgação e precisa contar como canal que trouxe
+   * a pessoa; 'whatsapp_direct' significa outra coisa (quem já tinha o
+   * número e chamou) e está em DIRETOS, então seria pulado pelo last
+   * non-direct. Só o utm_medium separa os dois — daí a checagem.
+   */
+  if (s.includes("whatsapp")) {
+    return { sourceCode: m.includes("status") ? "whatsapp_status" : "whatsapp_direct", confidence: "high" };
+  }
   if (s === "tiktok") return { sourceCode: "tiktok", confidence: "high" };
   if (s === "youtube") return { sourceCode: "youtube", confidence: "high" };
   if (s === "qr" || m === "qr") return { sourceCode: "offline_qr", confidence: "high" };
