@@ -131,6 +131,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+
+    {
+      url: `${SITE_URL}/ferramentas/calculadora-polichinelos`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     {
       url: `${SITE_URL}/ferramentas/monte-seu-cardapio`,
       lastModified: new Date(),
