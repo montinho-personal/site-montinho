@@ -20,7 +20,7 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { blogPosts } from "../lib/blog";
-import { ABERTO, FECHADO, INICIO, LEITURA_A_PARTIR_DE } from "./experimento-titulos";
+import { ABERTO, FECHADO, INICIO, LEITURA_A_PARTIR_DE, ENCERRADO_EM } from "./experimento-titulos";
 
 let falhas = 0;
 function ok(nome: string, cond: boolean, detalhe = "") {
@@ -397,6 +397,38 @@ for (const slug of REVISADOS) {
   }
 }
 
+/*
+ * A cauda vaga vale só para o TÍTULO, não para a description. Na
+ * description a frase tem espaço para se explicar; no título ela é a única
+ * coisa que a pessoa lê antes de decidir.
+ */
+/*
+ * A cauda vaga. Estas seis construções estavam nos títulos de maior
+ * impressão e nenhuma dizia o que a pessoa ia encontrar do outro lado:
+ * "Onde Ele Falha", "A Comparação que Surpreende Quem Evita", "com um
+ * Porém", "O Que Pesa Mais que Ele", "O Risco Não é o Peso".
+ *
+ * Elas não eram enchimento genérico — eram boas frases. O problema é a
+ * SERP: quem escaneia dez resultados não para para decifrar uma promessa.
+ * Nos mesmos 19 dias e na mesma posição, título descritivo rendeu de 1,0%
+ * a 1,4% e estes renderam de 0,0% a 0,3%.
+ */
+const CAUDA_VAGA: [string, RegExp][] = [
+  ["cauda vaga: onde ele falha", /onde (ele|ela) falha/i],
+  ["cauda vaga: surpreende quem", /surpreende quem/i],
+  ["cauda vaga: com um porém", /com um por[ée]m/i],
+  ["cauda vaga: o que pesa mais", /o que pesa mais/i],
+  ["cauda vaga: o risco não é", /o risco n[ãa]o [ée]/i],
+  ["cauda vaga: e quem pode mais", /e quem pode mais/i],
+];
+for (const slug of REVISADOS) {
+  const t = porSlug.get(slug)!.metaTitle || porSlug.get(slug)!.title;
+  for (const [nome, re] of CAUDA_VAGA) {
+    const achado = t.match(re);
+    ok(`${slug}: sem ${nome}`, achado === null, achado ? `"${achado[0]}" em "${t}"` : "");
+  }
+}
+
 // ─── 7 ──────────────────────────────────────────────────────────────────────
 bloco("7. PÁGINA NACIONAL NÃO SE ANUNCIA COMO LOCAL");
 
@@ -541,13 +573,23 @@ bloco("10. O EXPERIMENTO DE TÍTULO CONTINUA DE PÉ");
     foraDaRegua.map((a) => a.slug).join(", "));
 
   /*
-   * A marca da ponta solta: um travessão ou uma vírgula que abre a segunda
-   * metade DEPOIS da resposta. Sem isso o grupo ABERTO não é aberto, e os
-   * dois braços viram a mesma coisa.
+   * Enquanto o experimento estava de pé, esta trava exigia a ponta solta no
+   * grupo ABERTO: sem ela os dois braços viravam a mesma coisa. O
+   * experimento foi encerrado em 21/09/2026 e os três títulos do ABERTO
+   * foram reescritos no estilo descritivo, então a exigência se inverte —
+   * nenhum dos seis pode voltar a ter ponta solta sem passar por aqui.
    */
-  const semPonta = ABERTO.filter((a) => !/(—|,)\s+\S/.test(a.titulo.split("?").pop() ?? a.titulo));
-  ok("todo título do grupo aberto tem segunda metade", semPonta.length === 0,
-    semPonta.map((a) => a.titulo).join(" | "));
+  const pontaSolta = (t: string) => /(—|,)\s+\S/.test(t.split("?").pop() ?? t);
+  if (ENCERRADO_EM) {
+    const comPonta = [...ABERTO, ...FECHADO].filter((a) => pontaSolta(a.titulo));
+    ok("com o experimento encerrado, nenhum dos seis tem ponta solta",
+      comPonta.length === 0, comPonta.map((a) => a.titulo).join(" | "));
+    ok("a data de encerramento é posterior ao início", ENCERRADO_EM > INICIO);
+  } else {
+    const semPonta = ABERTO.filter((a) => !pontaSolta(a.titulo));
+    ok("todo título do grupo aberto tem segunda metade", semPonta.length === 0,
+      semPonta.map((a) => a.titulo).join(" | "));
+  }
 
   /* E a base tem que estar registrada, senão não há com o que comparar. */
   const semBase = todos.filter((a) => a.base.impressoes <= 0);

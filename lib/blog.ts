@@ -10780,7 +10780,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "cardio-ou-musculacao-mounjaro",
     title: "Cardio ou Musculação Durante o Uso de Mounjaro?",
-    metaTitle: "Cardio ou Musculação no Mounjaro? O Que Preserva Músculo",
+    metaTitle: "Cardio ou Musculação no Mounjaro? Qual Preserva Músculo",
     metaDescription:
       "Em déficit forte, quem só caminha perde mais massa magra. Veja como dividir a semana, que volume de treino basta e o que fazer nos dias sem energia.",
     excerpt:
@@ -32726,7 +32726,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
   slug: "quantos-kg-perder-por-mes",
   title: "Quantos kg Perder por Mês? A Taxa Ideal de Emagrecimento",
-  metaTitle: "Quantos kg Perder por Mês? 2 a 4 kg — e Quem Pode Mais",
+  metaTitle: "Quantos kg Perder por Mês? O Seguro é 2 a 4 kg",
   metaDescription: "A faixa segura é 0,5 a 1% do peso por semana — um déficit de 300 a 700 kcal por dia. Veja o que o corpo cobra de quem tenta ir mais rápido que isso.",
   excerpt: "Perder peso rápido parece bom — mas pode significar perder músculo, desacelerar o metabolismo e recuperar tudo depois. Saiba qual é a taxa ideal de emagrecimento e por que ela importa.",
   category: "Emagrecimento",
@@ -56938,7 +56938,7 @@ French press é insubstituível para quem quer tríceps volumosos — especialme
   {
     slug: "crossover-vs-crucifixo",
     title: "Crossover vs Crucifixo: Qual é Melhor para o Peito?",
-    metaTitle: "Crossover ou Crucifixo: O Que a Eletromiografia Mostra",
+    metaTitle: "Crossover ou Crucifixo: Qual Ativa Mais o Peitoral?",
     metaDescription: "Cabo e halter mudam a tensão em pontos diferentes do movimento. Veja o que a eletromiografia aponta e em que fase do treino cada um rende mais.",
     excerpt: "Crossover e crucifixo trabalham o mesmo movimento, mas de formas diferentes. A escolha certa depende do seu objetivo e fase do treino — veja a análise completa.",
     category: "Treinamento",
@@ -75528,7 +75528,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "da-para-comer-pamonha-e-emagrecer",
     title: "Dá para Comer Pamonha e Emagrecer?",
-    metaTitle: "Pamonha Engorda? A Comparação que Surpreende Quem Evita",
+    metaTitle: "Pamonha Engorda? Calorias e Como Encaixar na Dieta",
     metaDescription: "Uma pamonha doce de 150 g tem cerca de 290 kcal — menos que 3 fatias de pão de forma. Veja a comparação completa e como ela cabe num dia de déficit.",
     excerpt: "A pamonha não é o vilão que parece. Entenda a relação entre esse clássico junino, suas calorias e como encaixá-la no seu processo de emagrecimento.",
     category: "Nutrição",
@@ -99543,7 +99543,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "dormir-depois-do-almoco-engorda",
     title: "Dormir Depois do Almoço Engorda? Mito ou Verdade",
-    metaTitle: "Dormir Depois do Almoço Engorda? O Risco Não é o Peso",
+    metaTitle: "Dormir Depois do Almoço Engorda? O Que Acontece de Verdade",
     metaDescription:
       "Uma soneca de 20 minutos não muda o balanço calórico do dia. O que muda é o esôfago: veja quanto esperar antes de deitar e a janela ideal do cochilo.",
     excerpt:
@@ -100397,7 +100397,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "quanto-tempo-de-caminhada-por-dia",
     title: "Quanto Tempo de Caminhada Por Dia Para Emagrecer?",
-    metaTitle: "Quanto Tempo de Caminhada por Dia? 30 a 60 Min, com um Porém",
+    metaTitle: "Quanto Tempo de Caminhada por Dia? 30 a 60 Minutos",
     metaDescription:
       "Meia hora queima de 130 a 180 kcal — e um pão de queijo devolve tudo. Veja a faixa por objetivo, quando contar passos e por onde progredir depois.",
     excerpt:
@@ -100525,7 +100525,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "quantas-calorias-tem-1kg-de-gordura",
     title: "Quantas Calorias Tem 1kg de Gordura? A Matemática do Emagrecimento",
-    metaTitle: "1 kg de Gordura São 7.700 kcal — Mas a Balança Não Obedece",
+    metaTitle: "Quantas Calorias Tem 1 kg de Gordura? São 7.700 kcal",
     metaDescription:
       "A régua funciona no papel, mas o corpo não é calculadora. Veja como virar meta semanal, por que os primeiros quilos desmentem a conta e onde ela falha.",
     excerpt:
@@ -102970,7 +102970,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "zumba-emagrece",
     title: "Zumba Emagrece? O Que Esperar da Dança",
-    metaTitle: "Zumba Emagrece? O Gasto Real e o Que Pesa Mais que Ele",
+    metaTitle: "Zumba Emagrece? Calorias por Aula e o Que Esperar",
     metaDescription:
       "A promessa de 1.000 kcal por aula é marketing, não medição. Veja a faixa real, em quantos quilos isso dá e por que a adesão da zumba vale mais que o gasto.",
     excerpt:
@@ -110784,7 +110784,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "polichinelo-emagrece",
     title: "Polichinelo Emagrece? Quantos Fazer Por Dia (Resposta Honesta)",
-    metaTitle: "Polichinelo Emagrece? Quantos Fazer Por Nível e Onde Ele Falha",
+    metaTitle: "Polichinelo Emagrece? Calorias e Quantos Fazer por Dia",
     metaDescription:
       "Quantas calorias o polichinelo queima de verdade, quantos fazer por nível de condicionamento e por que ele rende mais dentro de um circuito do que sozinho.",
     excerpt:
