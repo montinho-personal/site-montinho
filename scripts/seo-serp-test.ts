@@ -107,6 +107,60 @@ for (const slug of REVISADOS) {
   ok(`${slug}: sem marca no título`, !/montinho/i.test(t), t);
 }
 
+// ─── 2b ─────────────────────────────────────────────────────────────────────
+bloco("2b. A MARCA SÓ APARECE NO TÍTULO ONDE ELA COMPRA CLIQUE");
+
+/**
+ * O bloco 2 acima olha só para os revisados. No acervo, 81 metaTitles
+ * terminavam em "| Montinho", "| Montinho PT" ou "| Montinho Personal
+ * Trainer" escritos à mão — herança da época em que o template do layout
+ * ainda anexava a marca e alguém a repetia por garantia.
+ *
+ * Não duplica mais desde que o artigo passou a usar `title: { absolute }`,
+ * mas continua caro: até 28 dos 62 caracteres gastos com um nome que, em
+ * busca informacional, quem pesquisa ainda não conhece.
+ *
+ * A exceção é real e fica aqui declarada: em página com nome de lugar no
+ * título, quem busca está a um passo de contratar e reconhece a marca. Ali
+ * ela fica. O teste é o nome do lugar NO TÍTULO, não no slug — foi o que
+ * separou "Personal Trainer no Boulevard Tamboré" (fica) de "Escolher
+ * Personal Trainer Black Friday" (saiu).
+ */
+{
+  const LUGAR = /alphaville|barueri|tambor[ée]|santana de parna[ií]ba|aldeia da serra|jundia[ií]|g[êe]nesis|boulevard|penthouses|pinheiros|higien[óo]polis/i;
+  const comMarca = blogPosts
+    .map((p) => ({ slug: p.slug, t: p.metaTitle || p.title }))
+    .filter((x) => /montinho/i.test(x.t) && !LUGAR.test(x.t));
+  ok("nenhum título informacional carrega a marca", comMarca.length === 0,
+    comMarca.map((x) => `${x.slug}: ${x.t}`).join(" | "));
+
+  /* E o sufixo que não diz nada: "| Guia", "| Análise", "| 2026" solto no fim. */
+  const sufixoVazio = blogPosts
+    .map((p) => ({ slug: p.slug, t: p.metaTitle || p.title }))
+    .filter((x) => /\s\|\s*(Guia( Completo)?( 2026)?|An[áa]lise|20\d\d)\s*$/i.test(x.t))
+    .filter((x) => x.slug !== "quanto-custa-personal-trainer-alphaville");
+  ok("nenhum título termina em sufixo vazio depois da barra", sufixoVazio.length === 0,
+    sufixoVazio.map((x) => `${x.slug}: ${x.t}`).join(" | "));
+}
+
+// ─── 2c ─────────────────────────────────────────────────────────────────────
+bloco("2c. O TÍTULO DO ACERVO ESTÁ ESCRITO EM PORTUGUÊS CORRETO");
+
+/**
+ * Oito metaTitles estavam sem acento ("Metodo 12-3-30", "Resistencia a
+ * Insulina e Musculacao", "Shake de Proteina Substitui Refeicao?"). O H1
+ * dessas páginas estava certo — o erro só existia no campo que vai para o
+ * Google, que é justamente onde ninguém do site olhava.
+ */
+{
+  const SEM_ACENTO = /\b(musculacao|nutricao|proteina|abdomen|exercicio|exercicios|refeicao|reducao|saude|voce|nao|tecnica|gluteo|ciencia|resistencia|metodo|serie|series|forca|alcool|periodo|agua|acucar|solucao|posicao|duvida)\b/i;
+  const erradas = blogPosts
+    .map((p) => ({ slug: p.slug, t: p.metaTitle || p.title }))
+    .filter((x) => SEM_ACENTO.test(x.t));
+  ok("nenhum título do acervo com palavra sem acento", erradas.length === 0,
+    erradas.map((x) => `${x.slug}: ${x.t}`).join(" | "));
+}
+
 // ─── 3 ──────────────────────────────────────────────────────────────────────
 bloco("3. TÍTULO CABE NA SERP");
 

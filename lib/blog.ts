@@ -5781,7 +5781,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "treinar-ate-a-falha",
     title: "Treinar Até a Falha Muscular: Quando Vale a Pena e Quando Prejudica",
-    metaTitle: "Treinar Até a Falha Muscular | Montinho Personal Trainer",
+    metaTitle: "Treinar Até a Falha Muscular",
     metaDescription:
       "Treinar até a falha é necessário para ganhar músculo? A ciência mostra que não — e que falhar em todo treino pode ser contraproducente.",
     excerpt:
@@ -9792,7 +9792,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "mounjaro-faz-perder-musculos",
     title: "Mounjaro Faz Perder Músculos?",
-    metaTitle: "Mounjaro Faz Perder Músculos? | Montinho Personal Trainer",
+    metaTitle: "Mounjaro Faz Perder Músculos?",
     metaDescription: "O Mounjaro (tirzepatida) pode sim causar perda de músculo — mas não é inevitável. Entenda o que determina quanto você perde e como evitar esse problema.",
     excerpt: "A resposta direta é: sim, sem as medidas certas, o Mounjaro pode fazer você perder músculo. Mas isso não é inevitável. Entenda por quê e o que fazer.",
     category: "Saúde",
@@ -15560,7 +15560,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "escoliose-pode-fazer-musculacao",
     title: "Escoliose Pode Fazer Musculação? O Que a Ciência Realmente Diz",
-    metaTitle: "Escoliose Pode Fazer Musculação? | Montinho Personal Trainer",
+    metaTitle: "Escoliose Pode Fazer Musculação?",
     metaDescription: "Descubra se quem tem escoliose pode fazer musculação, quais exercícios são contraindicados e como adaptar o treino para fortalecer a coluna com segurança.",
     excerpt: "Ter escoliose não significa abandonar a academia. Entenda quais exercícios são seguros, quais devem ser evitados e como o treino adaptado pode até melhorar sua qualidade de vida.",
     category: "Lesões",
@@ -15712,7 +15712,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "lesao-no-manguito-rotador",
     title: "Lesão no Manguito Rotador: Como Treinar Sem Piorar",
-    metaTitle: "Lesão no Manguito Rotador: Como Treinar | Montinho Personal",
+    metaTitle: "Lesão no Manguito Rotador: Como Treinar",
     metaDescription: "Entenda o que é a lesão no manguito rotador, quais exercícios são proibidos e como fortalecer o ombro com segurança para voltar a treinar sem dor.",
     excerpt: "A lesão no manguito rotador é uma das mais comuns entre praticantes de musculação. Saiba como identificar, o que evitar e como treinar de forma segura durante a recuperação.",
     category: "Lesões",
@@ -15858,7 +15858,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "melhor-horario-para-proteina",
     title: "Melhor Horário para Tomar Proteína: Antes ou Depois do Treino?",
-    metaTitle: "Melhor Horário para Proteína: Antes ou Depois? | Montinho",
+    metaTitle: "Melhor Horário para Proteína: Antes ou Depois?",
     metaDescription: "A janela anabólica existe? Descubra o que a ciência diz sobre o timing de proteína e por que o total diário importa mais do que o horário de consumo.",
     excerpt: "A janela anabólica de 30 minutos após o treino ainda assombra as academias. Mas a ciência atual conta uma história diferente sobre o momento ideal para consumir proteína.",
     category: "Saúde",
@@ -16291,7 +16291,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "carboidrato-antes-do-treino",
     title: "Carboidrato Antes do Treino: Você Realmente Precisa?",
-    metaTitle: "Carboidrato Antes do Treino: Precisa ou Não? | Montinho",
+    metaTitle: "Carboidrato Antes do Treino: Precisa ou Não?",
     metaDescription: "Entenda quando o carboidrato pré-treino melhora a performance, qual tipo escolher, quanto comer e quando — com base em evidências científicas sobre...",
     excerpt: "Carboidrato antes do treino melhora a performance ou é desnecessário? A resposta depende do seu objetivo, horário e tipo de treino. Veja o que a ciência recomenda.",
     category: "Treinamento",
@@ -16408,7 +16408,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "carboidrato-a-noite-engorda",
     title: "Carboidrato à Noite Engorda? O Que a Ciência Realmente Diz",
-    metaTitle: "Carboidrato à Noite Engorda? Ciência Responde | Montinho",
+    metaTitle: "Carboidrato à Noite Engorda? Ciência Responde",
     metaDescription: "O carboidrato à noite realmente engorda? Entenda o que os estudos dizem sobre timing de carboidrato, metabolismo noturno e quando o horário de comer...",
     excerpt: "O mito de que comer carboidrato à noite engorda persiste há décadas. A ciência conta uma história diferente — e mais simples. Entenda o que realmente determina o ganho de gordura.",
     category: "Saúde",
@@ -20796,7 +20796,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "cardio-atrapalha-a-hipertrofia",
     title: "Cardio Atrapalha a Hipertrofia? O Que a Ciência Realmente Diz",
-    metaTitle: "Cardio Atrapalha a Hipertrofia? | Montinho Personal Trainer",
+    metaTitle: "Cardio Atrapalha a Hipertrofia?",
     metaDescription:
       "Cardio atrapalha a hipertrofia? Descubra o que a ciência diz sobre treino concorrente, quando o cardio prejudica o ganho de massa e como combinar os...",
     excerpt:
@@ -22335,7 +22335,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "overtraining-sintomas-e-como-evitar",
     title: "Overtraining: Sintomas, Causas e Como Evitar Treinar Demais",
-    metaTitle: "Overtraining: Sintomas e Como Evitar | Guia Completo",
+    metaTitle: "Overtraining: Sintomas e Como Evitar",
     metaDescription: "Você está em overtraining? Descubra os sinais de excesso de treino, por que acontece, como se recuperar e como estruturar o treino para evitar o problema.",
     excerpt: "Mais treino nem sempre é melhor resultado. Overtraining é real e prejudica tanto o desempenho quanto a saúde — aprenda a reconhecer e evitar.",
     category: "Treinamento",
@@ -22633,7 +22633,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "como-montar-treino-abc",
     title: "Como Montar um Treino ABC de Musculação do Zero",
-    metaTitle: "Como Montar um Treino ABC de Musculação | Guia Completo",
+    metaTitle: "Como Montar um Treino ABC de Musculação",
     metaDescription: "Aprenda como montar um treino ABC do zero: quais exercícios colocar em cada dia, quantas séries e repetições, e como progredir corretamente.",
     excerpt: "Guia prático para montar um treino ABC eficiente — com exemplos de exercícios, séries, repetições e a lógica por trás da divisão.",
     category: "Treinamento",
@@ -24363,7 +24363,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "ozempic-e-treino",
     title: "Ozempic e Treino: O Que Você Precisa Saber para Não Perder Músculo",
-    metaTitle: "Ozempic e Treino: O Que Você Precisa Saber | Guia Completo",
+    metaTitle: "Ozempic e Treino: O Que Você Precisa Saber",
     metaDescription: "Usando Ozempic e quer continuar treinando ou começar? Descubra como combinar semaglutida com musculação para emagrecer preservando músculo.",
     excerpt: "Ozempic emagrece — mas parte do peso perdido pode ser músculo. Saiba como o treino de força protege sua massa magra durante o tratamento.",
     category: "Saúde",
@@ -25937,7 +25937,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "sarcopenia-o-que-e-como-prevenir",
     title: "Sarcopenia: o que é, por que acontece e como prevenir a perda muscular com a idade",
-    metaTitle: "Sarcopenia: o que é e como prevenir | Guia Completo 2026",
+    metaTitle: "Sarcopenia: o que é e como prevenir",
     metaDescription: "Entenda o que é sarcopenia, por que a perda muscular acelera após os 40 e como o treinamento de força é a melhor estratégia de prevenção.",
     excerpt: "A sarcopenia é silenciosa, progressiva e subestimada. A partir dos 35–40 anos, perdemos músculo ativamente se não houver estímulo adequado. Entenda o mecanismo e o que fazer para frear esse processo.",
     faqSchema: [
@@ -26205,7 +26205,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "treino-de-forca-mulher-apos-40",
     title: "Treino de força para mulheres após os 40: o guia definitivo para resultados reais",
-    metaTitle: "Treino de Força para Mulheres após os 40 | Guia Completo",
+    metaTitle: "Treino de Força para Mulheres após os 40",
     metaDescription: "Treino de força para mulheres após os 40: como funciona, por que é essencial, erros comuns e como montar um programa que respeita as mudanças hormonais.",
     excerpt: "Após os 40, o treinamento de força deixa de ser opcional para mulheres e passa a ser essencial. Entenda por que as mudanças hormonais exigem uma abordagem diferente — e como o treinamento correto pode transformar composição corporal, saúde óssea e qualidade de vida.",
     faqSchema: [
@@ -27724,7 +27724,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 {
     slug: "ciclo-menstrual-e-treino",
     title: "Ciclo Menstrual e Treino: Como Adaptar a Musculação a Cada Fase do Mês",
-    metaTitle: "Ciclo Menstrual e Treino Musculação | Montinho Personal",
+    metaTitle: "Ciclo Menstrual e Treino Musculação",
     metaDescription: "Aprenda a adaptar sua musculação às 4 fases do ciclo menstrual e maximize resultados com base em ciência. Personal trainer em Alphaville explica.",
     excerpt: "O ciclo menstrual influencia diretamente sua força, recuperação e composição corporal. Saber usar cada fase a seu favor pode ser o diferencial que faltava no seu treino de musculação.",
     category: "Treinamento",
@@ -28030,7 +28030,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "fibromialgia-e-musculacao",
     title: "Fibromialgia e Musculação: Como o Treino de Força Reduz a Dor e Melhora a Qualidade de Vida",
-    metaTitle: "Fibromialgia e Musculação: Treino que Reduz a Dor | Montinho",
+    metaTitle: "Fibromialgia e Musculação: Treino que Reduz a Dor",
     metaDescription: "Entenda como a musculação pode ser o melhor tratamento para fibromialgia — com base em evidências científicas e estratégias práticas para treinar com...",
     excerpt: "Treinar com fibromialgia parece paradoxal — mas a ciência é clara: o exercício de força é um dos tratamentos mais eficazes para reduzir a dor crônica e recuperar qualidade de vida. Saiba como fazer isso de forma segura.",
     category: "Saúde",
@@ -29273,7 +29273,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "omega-3-musculacao",
     title: "Ômega-3 para Quem Treina: Vale a Pena Suplementar? O Que a Ciência Diz",
-    metaTitle: "Ômega-3 na Musculação: vale suplementar? | Montinho",
+    metaTitle: "Ômega-3 na Musculação: vale suplementar?",
     metaDescription: "Ômega-3 melhora a síntese proteica, reduz inflamação e acelera recuperação muscular? Veja o que estudos do PubMed dizem e como suplementar certo.",
     excerpt: "O ômega-3 está entre os suplementos mais vendidos no mundo, mas a maioria das pessoas não sabe exatamente como ele age no músculo, na inflamação e na recuperação. Veja o que a ciência realmente comprova e se você deveria suplementar.",
     faqSchema: [
@@ -29481,7 +29481,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "vitamina-d-musculacao",
     title: "Vitamina D e Musculação: Como a Deficiência Prejudica seus Resultados e Como Corrigir",
-    metaTitle: "Vitamina D na Musculação: impacto e como corrigir | Montinho",
+    metaTitle: "Vitamina D na Musculação: impacto e como corrigir",
     metaDescription: "Vitamina D baixa reduz força, testosterona e dificulta hipertrofia. Veja o que a ciência diz e como corrigir a deficiência para treinar melhor.",
     excerpt: "Vitamina D deficiente é mais comum do que parece — mesmo em São Paulo, mesmo em pessoas que passam tempo ao sol. E o impacto no treino é real: menos força, recuperação mais lenta e queda na testosterona. Veja como identificar e corrigir.",
     faqSchema: [
@@ -29715,7 +29715,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "colageno-musculacao",
     title: "Colágeno para Quem Treina: Funciona para Tendões e Articulações?",
-    metaTitle: "Colágeno na Musculação: tendões e articulações | Montinho",
+    metaTitle: "Colágeno na Musculação: tendões e articulações",
     metaDescription: "Colágeno hidrolisado funciona para tendões e articulações em quem treina? Veja o que os estudos do JISSN e PubMed mostram e como usar certo.",
     excerpt: "O colágeno hidrolisado ganhou espaço enorme entre praticantes de musculação, mas a maioria usa errado — dose inadequada, tipo errado, sem vitamina C. Entenda como o colágeno atua em tendões e articulações e quando ele realmente faz sentido.",
     faqSchema: [
@@ -29939,7 +29939,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "como-usar-smartwatch-musculacao",
     title: "Como Usar o Smartwatch (Apple Watch / Garmin) para Potencializar seus Treinos de Musculação",
-    metaTitle: "Como usar smartwatch na musculação: guia completo | Montinho",
+    metaTitle: "Como usar smartwatch na musculação: guia completo",
     metaDescription: "Apple Watch ou Garmin na musculação: saiba quais dados realmente importam, o que ignorar e como usar o smartwatch para treinar com mais inteligência.",
     excerpt: "Smartwatch no pulso durante o treino de musculação é quase padrão hoje. Mas a maioria usa mal — olha calorias queimadas (dado impreciso), ignora frequência cardíaca de recuperação (dado valioso). Saiba o que monitorar de verdade.",
     faqSchema: [
@@ -30179,7 +30179,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "escala-rpe-musculacao",
     title: "O Que é RPE e Como Usar a Escala de Esforço para Treinar com Mais Inteligência",
-    metaTitle: "Escala RPE na Musculação: o que é e como usar | Montinho",
+    metaTitle: "Escala RPE na Musculação: o que é e como usar",
     metaDescription: "RPE e RIR na musculação: aprenda a regular intensidade pelo esforço percebido, evitar overtraining e progredir sem depender só do peso na barra.",
     excerpt: "Treinar apenas pelo peso na barra é como dirigir olhando só para o velocímetro. A escala RPE — usada por atletas de elite — te ensina a calibrar o esforço real de cada série. Saiba como aplicar na sua rotina.",
     faqSchema: [
@@ -50640,7 +50640,7 @@ Total: 19 repetições próximas à falha vs 10 em uma série convencional</p>
   {
     slug: "ashwagandha-para-atletas",
     title: "Ashwagandha Para Atletas: Reduz Cortisol e Melhora Força? A Ciência Responde",
-    metaTitle: "Ashwagandha Para Atletas: Cortisol, Força e O Que a Ciência Diz",
+    metaTitle: "Ashwagandha Para Atletas: Cortisol, Força e Evidência",
     metaDescription: "Ashwagandha para atletas: o que os estudos mostram sobre cortisol, testosterona, força e recuperação. Dose, forma, timing e para quem realmente vale a pena.",
     excerpt: "Ashwagandha é um adaptógeno com evidências crescentes para redução de cortisol e melhora de força. Mas quem se beneficia e qual protocolo seguir? A análise completa.",
     category: "Suplementação",
@@ -51328,7 +51328,7 @@ O protocolo excêntrico e o HSR têm a maior evidência. Combine com colágeno h
   {
     slug: "microbioma-intestinal-e-performance",
     title: "Microbioma Intestinal e Performance Esportiva: O Que a Ciência Diz",
-    metaTitle: "Microbioma Intestinal e Performance: Guia Baseado em Evidências",
+    metaTitle: "Microbioma Intestinal e Performance: O Que as Evidências Dizem",
     metaDescription: "Como o microbioma intestinal influencia a performance esportiva, recuperação e composição corporal. O que a ciência diz e como otimizar sua saúde intestinal.",
     excerpt: "O intestino é chamado de segundo cérebro — e para atletas, pode ser o diferencial entre performance mediana e excelente. Entenda como o microbioma influencia energia, recuperação e composição corporal.",
     category: "Saúde",
@@ -51548,7 +51548,7 @@ Performance de elite começa no intestino — literalmente.
   {
     slug: "treino-de-abdomen-funcional",
     title: "Treino de Abdômen: 15 Exercícios que Realmente Funcionam (Com Ciência)",
-    metaTitle: "Treino de Abdômen Completo: 15 Exercícios Eficazes e Como Montar",
+    metaTitle: "Treino de Abdômen: 15 Exercícios e Como Montar",
     metaDescription: "Descubra quais exercícios abdominais realmente funcionam, como montar um treino de core eficiente e o que a ciência diz sobre definição abdominal.",
     excerpt: "Treino de abdômen vai muito além de crunches e sit-ups. Entenda como funciona o core, quais exercícios têm maior ativação muscular e como montar um protocolo que realmente define.",
     content: `# Treino de Abdômen: 15 Exercícios que Realmente Funcionam
@@ -51854,7 +51854,7 @@ Escolha 3–5 exercícios desta lista, monte um programa progressivo e seja cons
   {
     slug: "como-aumentar-testosterona-naturalmente",
     title: "Como Aumentar a Testosterona Naturalmente: O Que Realmente Funciona",
-    metaTitle: "Como Aumentar Testosterona Naturalmente: Guia Completo e Científico",
+    metaTitle: "Como Aumentar Testosterona Naturalmente: Guia Científico",
     metaDescription: "Descubra como aumentar a testosterona naturalmente com treino, nutrição, sono e suplementação. O que a ciência realmente comprova — sem pseudociência.",
     excerpt: "Testosterona baixa compromete força, disposição, libido e composição corporal. Saiba quais estratégias naturais têm evidência real para elevar seus níveis hormonais.",
     content: `# Como Aumentar a Testosterona Naturalmente: O Que Realmente Funciona
@@ -52269,7 +52269,7 @@ O agachamento búlgaro é incômodo, exige coordenação e mobilidade — e exat
   {
     slug: "reeducacao-alimentar-passo-a-passo",
     title: "Reeducação Alimentar: Guia Passo a Passo Para Mudar sua Relação com a Comida",
-    metaTitle: "Reeducação Alimentar: Como Começar do Zero e Manter Para Sempre",
+    metaTitle: "Reeducação Alimentar: Como Começar do Zero e Manter",
     metaDescription: "Aprenda como fazer reeducação alimentar de verdade, sem dietas restritivas. Um guia passo a passo baseado em ciência para transformar seus hábitos alimentares.",
     excerpt: "Reeducação alimentar não é dieta — é uma transformação permanente dos seus hábitos. Aprenda como começar, o que priorizar e como manter os resultados para sempre.",
     content: `# Reeducação Alimentar: Guia Passo a Passo Para Mudar sua Relação com a Comida
@@ -52687,7 +52687,7 @@ O corpo escolhe onde vai queimar gordura — e você pode influenciar isso atrav
   {
     slug: "glp1-apetite-suprimido-proteina-musculo",
     title: "GLP-1 e Falta de Apetite: Como Garantir Proteína Suficiente Sem Perder Músculo",
-    metaTitle: "GLP-1 Sem Apetite: Como Comer Proteína Suficiente Para Não Perder Músculo",
+    metaTitle: "GLP-1 Sem Apetite: Como Bater a Proteína do Dia",
     metaDescription: "Usando Mounjaro, Ozempic ou Wegovy e sem apetite para comer? Veja como garantir proteína suficiente para preservar músculo durante o emagrecimento com GLP-1.",
     excerpt: "A supressão de apetite do GLP-1 é poderosa — às vezes poderosa demais. Veja como garantir proteína suficiente para preservar sua massa muscular mesmo sem fome.",
     content: `# GLP-1 e Falta de Apetite: Como Garantir Proteína Suficiente Sem Perder Músculo
@@ -52890,7 +52890,7 @@ Fracionamento, proteínas líquidas, alimentos de alta densidade proteica e o tr
   {
     slug: "exercicios-para-dor-nas-costas-coluna",
     title: "Exercícios Para Dor nas Costas: Protocolo Completo Para Aliviar e Fortalecer a Coluna",
-    metaTitle: "Exercícios Para Dor nas Costas: O Protocolo Que Realmente Alivia",
+    metaTitle: "Exercícios Para Dor nas Costas: O Protocolo Que Alivia",
     metaDescription: "Descubra quais exercícios aliviam a dor nas costas, fortalecem a coluna e previnem recaídas. Um protocolo baseado em ciência para lombar, cervical e dorsal.",
     excerpt: "Dor nas costas afeta 80% dos brasileiros em algum momento da vida. Os exercícios certos não só aliviam a dor — eles constroem a coluna resistente que você sempre quis.",
     content: `# Exercícios Para Dor nas Costas: Protocolo Completo Para Aliviar e Fortalecer a Coluna
@@ -53095,7 +53095,7 @@ Comece pela Fase 1 se estiver em crise aguda. Avance para a Fase 2 quando a dor 
   {
     slug: "dieta-cutting-para-definicao-muscular",
     title: "Dieta de Cutting: Como Perder Gordura Sem Sacrificar o Músculo Que Você Construiu",
-    metaTitle: "Dieta Cutting: Guia Completo Para Definição Muscular Sem Perder Massa",
+    metaTitle: "Dieta Cutting: Como Definir Sem Perder Massa Muscular",
     metaDescription: "Como montar uma dieta de cutting que queima gordura e preserva músculo. Déficit calórico, macros, timing e estratégias práticas para definição muscular real.",
     excerpt: "Cutting é a fase mais delicada do processo de transformação corporal. Um déficit mal calculado destrói meses de ganho muscular. Aprenda a fazer certo.",
     content: `# Dieta de Cutting: Como Perder Gordura Sem Sacrificar o Músculo Que Você Construiu
@@ -53565,7 +53565,7 @@ Incontinência urinária durante o exercício não é normal — é tratável. R
   {
     slug: "reverse-diet-como-sair-do-cutting",
     title: "Reverse Diet: Como Sair do Cutting Sem Recuperar Gordura e Salvar Seu Metabolismo",
-    metaTitle: "Reverse Diet: O Protocolo Pós-Cutting Para Não Recuperar o Peso",
+    metaTitle: "Reverse Diet: Como Sair do Cutting Sem Recuperar o Peso",
     metaDescription: "Aprenda o que é reverse diet, por que é essencial após o cutting e como aumentar as calorias gradualmente sem recuperar gordura corporal.",
     excerpt: "Terminou o cutting e agora? Sem uma estratégia de saída, o metabolismo adaptado vai recuperar a gordura rapidamente. O reverse diet é a solução.",
     content: `# Reverse Diet: Como Sair do Cutting Sem Recuperar Gordura
@@ -53913,7 +53913,7 @@ Eletrólitos não são modismo — são fisiologia básica. Sódio, potássio e 
   {
     slug: "perimenopausa-treino-e-hormonios",
     title: "Perimenopausa e Treino: O Que Muda Antes da Menopausa Chegar",
-    metaTitle: "Perimenopausa e Exercício: Guia Hormonal e de Treino Para Mulheres",
+    metaTitle: "Perimenopausa e Exercício: Guia Hormonal e de Treino",
     metaDescription: "A perimenopausa começa anos antes da menopausa. Entenda as mudanças hormonais, como elas afetam o treino e a composição corporal, e como se adaptar.",
     excerpt: "A perimenopausa pode durar até 10 anos e começa aos 40. As mudanças hormonais afetam o treino, o corpo e o humor antes da menopausa se instalar. Saiba como se preparar.",
     content: `# Perimenopausa e Treino: O Que Muda Antes da Menopausa Chegar
@@ -54105,7 +54105,7 @@ O treino de força não é opcional nessa fase. É o investimento mais important
   {
     slug: "cervicalgia-dor-no-pescoco-treino",
     title: "Dor no Pescoço e Treino: Causas, Exercícios Seguros e Quando Parar",
-    metaTitle: "Cervicalgia e Musculação: Como Treinar com Dor no Pescoço com Segurança",
+    metaTitle: "Cervicalgia e Musculação: Como Treinar com Dor no Pescoço",
     metaDescription: "Dor no pescoço (cervicalgia) durante ou após o treino? Aprenda as causas, quais exercícios evitar, como adaptar e exercícios que realmente aliviam.",
     excerpt: "Cervicalgia é a dor que não avisa hora — aparece no treino, no escritório e até dormindo. Saiba como identificar a causa, adaptar o treino e construir um pescoço resistente.",
     content: `# Dor no Pescoço e Treino: Causas, Exercícios Seguros e Quando Parar
@@ -54272,7 +54272,7 @@ A chave é não ignorar os sinais precoces — uma cervicalgia muscular vira com
   {
     slug: "exercicios-para-fortalecer-joelho",
     title: "Exercícios Para Fortalecer o Joelho: Protocolo Completo Para Estabilidade e Prevenção",
-    metaTitle: "Exercícios Para Fortalecer o Joelho: Guia Científico de Estabilidade",
+    metaTitle: "Exercícios Para Fortalecer o Joelho: Guia de Estabilidade",
     metaDescription: "Descubra os melhores exercícios para fortalecer o joelho, prevenir lesões e aliviar dores. Protocolo progressivo baseado em ciência para joelhos saudáveis.",
     excerpt: "Joelho fraco é sinônimo de joelho vulnerável. Com o protocolo certo de fortalecimento, você constrói estabilidade real que protege articulação, cartilagem e ligamentos.",
     content: `# Exercícios Para Fortalecer o Joelho: Protocolo Completo Para Estabilidade e Prevenção
@@ -55014,7 +55014,7 @@ Um programa que inclui exercícios unilaterais desde o início é a melhor preve
   {
     slug: "como-voltar-a-treinar-apos-pausa-longa",
     title: "Como Voltar a Treinar Depois de Meses Parado: O Guia do Detraining",
-    metaTitle: "Como Voltar ao Treino Após Pausa Longa: Protocolo Seguro e Eficaz",
+    metaTitle: "Como Voltar ao Treino Após Pausa Longa: Protocolo Seguro",
     metaDescription: "Parou de treinar por meses? Saiba o que acontece com o músculo durante o detraining e como retomar o treino de forma segura e progressiva.",
     excerpt: "Meses sem treinar não apagam todo o progresso — mas o retorno descuidado gera lesões. Entenda o detraining e como voltar de forma inteligente.",
     content: `# Como Voltar a Treinar Depois de Meses Parado: O Guia do Detraining
@@ -55348,7 +55348,7 @@ O treino aeróbico leve e o treino de força (com adaptações) não são inimig
   {
     slug: "personal-trainer-ia-vs-personal-real",
     title: "Personal Trainer com IA vs Personal Real: Vale a Pena Usar App?",
-    metaTitle: "Personal Trainer IA vs Personal Real: Diferenças e Quando Vale a Pena",
+    metaTitle: "Personal Trainer IA ou Real: Diferenças e Quando Vale",
     metaDescription: "Apps de personal trainer com IA prometem treinos personalizados por menos. Mas quando um personal real faz diferença? Entenda as limitações e vantagens de cada um.",
     excerpt: "Apps de IA geram treinos em segundos. Personal trainers reais leem seu corpo, corrigem movimento e adaptam em tempo real. Entenda o que cada um entrega e quando a IA é suficiente.",
     content: `# Personal Trainer com IA vs Personal Real: Vale a Pena Usar App?
@@ -62827,7 +62827,7 @@ Considere home gym + consultoria online. Com halteres ajustáveis, barra fixa e 
   {
     slug: "treino-para-maratonistas-e-corredores",
     title: "Treino para Maratonistas e Corredores — Musculação que Não Atrapalha",
-    metaTitle: "Treino para Maratonistas e Corredores — Força sem Perder Aeróbico",
+    metaTitle: "Treino para Corredores: Força sem Perder Aeróbico",
     metaDescription: "Guia de musculação para corredores e maratonistas: como treinar força sem perder capacidade aeróbica, quais exercícios priorizar e como periodizar.",
     excerpt: "Corredores que adicionam musculação ao treino ficam mais rápidos, mais resistentes e se lesionam menos. Mas fazer isso errado atrapalha o rendimento. Veja o método correto.",
     content: `<p>Este artigo é para corredores intermediários e avançados — quem já corre regularmente e quer adicionar musculação para correr mais rápido, com menos lesões e por mais tempo. Se você está começando a correr do zero, este não é o ponto de partida correto.</p>
@@ -73165,7 +73165,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
   {
     slug: "como-definir-corpo-ate-o-verao",
     title: "Como Definir o Corpo até o Verão",
-    metaTitle: "Como Definir o Corpo até o Verão | Montinho",
+    metaTitle: "Como Definir o Corpo até o Verão",
     metaDescription: "Descubra como definir o corpo até o verão com treino de força, cardio estratégico e alimentação inteligente. Guia prático do personal Montinho.",
     excerpt: "Definição corporal não é só perder peso — é revelar o músculo que já existe. Veja como montar a estratégia certa para chegar ao verão com o corpo definido.",
     category: "Emagrecimento",
@@ -73628,7 +73628,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 {
     slug: "como-definir-abdomen-ate-dezembro",
     title: "Como Definir o Abdômen até Dezembro",
-    metaTitle: "Como Definir o Abdômen até Dezembro | Montinho Personal",
+    metaTitle: "Como Definir o Abdômen até Dezembro",
     metaDescription: "Saiba como definir o abdômen até dezembro com treino e alimentação certa. Personal trainer em Alphaville explica o que realmente funciona.",
     excerpt: "Abdômen definido até dezembro é possível — mas exige uma abordagem que vai muito além dos famosos mil abdominais. Entenda o que realmente faz diferença.",
     category: "Emagrecimento",
@@ -73839,7 +73839,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
   {
     slug: "como-ganhar-condicionamento-para-verao",
     title: "Como Ganhar Condicionamento para o Verão",
-    metaTitle: "Como Ganhar Condicionamento para o Verão | Montinho",
+    metaTitle: "Como Ganhar Condicionamento para o Verão",
     metaDescription: "Aprenda como ganhar condicionamento físico para o verão com treinos eficientes. Personal trainer em Alphaville explica o caminho mais rápido.",
     excerpt: "Condicionamento físico é o que faz você aproveitar o verão sem ficar sem fôlego na primeira brincadeira na praia. Veja como desenvolvê-lo em 10 semanas.",
     category: "Emagrecimento",
@@ -73956,7 +73956,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
   {
     slug: "como-secar-antes-das-ferias",
     title: "Como Secar antes das Férias de Verão",
-    metaTitle: "Como Secar antes das Férias de Verão | Montinho",
+    metaTitle: "Como Secar antes das Férias de Verão",
     metaDescription: "Descubra como secar antes das férias de verão com estratégias reais de treino e alimentação. Personal trainer em Alphaville/SP.",
     excerpt: "Faltam semanas para as férias e você quer chegar mais definido? Veja o plano prático que uso com meus alunos em Alphaville para secar com segurança.",
     category: "Emagrecimento",
@@ -74054,7 +74054,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
   {
     slug: "como-chegar-em-forma-para-a-praia",
     title: "Como Chegar em Forma para a Praia",
-    metaTitle: "Como Chegar em Forma para a Praia | Montinho PT",
+    metaTitle: "Como Chegar em Forma para a Praia",
     metaDescription: "Saiba como chegar em forma para a praia com treino e alimentação certos. Dicas práticas do personal trainer Montinho em Alphaville/SP.",
     excerpt: "Chegar em forma para a praia exige mais do que força de vontade — exige estratégia. Veja o plano completo que funciona de verdade.",
     category: "Emagrecimento",
@@ -74389,7 +74389,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 {
     slug: "como-acelerar-resultados-antes-do-verao",
     title: "Como Acelerar os Resultados antes do Verão",
-    metaTitle: "Como Acelerar Resultados antes do Verão | Montinho",
+    metaTitle: "Como Acelerar Resultados antes do Verão",
     metaDescription: "Quer acelerar os resultados antes do verão? Veja as estratégias de treino e alimentação que realmente funcionam, sem atalhos perigosos.",
     excerpt: "Com o verão se aproximando, é tentador buscar atalhos. Mas acelerar resultados de forma inteligente é possível — sem lesão, sem efeito rebote e sem sofrimento desnecessário.",
     category: "Treinamento",
@@ -74505,7 +74505,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
   {
     slug: "como-nao-perder-o-shape-no-natal",
     title: "Como Não Perder o Shape no Natal",
-    metaTitle: "Como Não Perder o Shape no Natal | Montinho",
+    metaTitle: "Como Não Perder o Shape no Natal",
     metaDescription: "Veja estratégias práticas para manter o shape no Natal sem abrir mão da celebração. Dicas de treino e alimentação para dezembro.",
     excerpt: "O Natal não precisa ser o vilão do seu shape. Com planejamento simples, você celebra sem destruir meses de trabalho.",
     category: "Treinamento",
@@ -74888,7 +74888,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "como-voltar-rapidamente-apos-festas",
     title: "Como Voltar Rapidamente após as Festas",
-    metaTitle: "Como Voltar Rapidamente após as Festas | Montinho",
+    metaTitle: "Como Voltar Rapidamente após as Festas",
     metaDescription: "Guia prático para retomar treino e dieta após as festas de fim de ano. Estratégias reais para voltar ao ritmo sem sofrimento.",
     excerpt: "Voltou das festas e sentiu que perdeu o ritmo? Com a abordagem certa, você reconquista seu patamar em menos tempo do que imagina.",
     category: "Treinamento",
@@ -75199,7 +75199,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "como-aproveitar-festa-junina-sem-engordar",
     title: "Como Aproveitar a Festa Junina sem Engordar",
-    metaTitle: "Festa Junina sem Engordar | Dicas do Montinho",
+    metaTitle: "Festa Junina sem Engordar",
     metaDescription: "Aproveite a festa junina sem culpa e sem estragar sua dieta. Dicas práticas de personal trainer para comer com inteligência nas festas.",
     excerpt: "Festa junina é cultura, alegria e comida boa — mas dá para curtir tudo isso sem sabotar sua dieta. Veja estratégias reais que funcionam.",
     category: "Nutrição",
@@ -75635,7 +75635,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "como-manter-dieta-festas-juninas",
     title: "Como Manter a Dieta Durante as Festas Juninas",
-    metaTitle: "Como Manter a Dieta nas Festas Juninas | Montinho",
+    metaTitle: "Como Manter a Dieta nas Festas Juninas",
     metaDescription: "Estratégias práticas para manter sua dieta durante todo o mês de junho sem abrir mão da festa junina. Dicas de personal trainer de Alphaville.",
     excerpt: "Junho é um mês inteiro de tentações juninas. Descubra como atravessar toda a temporada sem perder de vista seus objetivos de saúde e corpo.",
     category: "Nutrição",
@@ -75744,7 +75744,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "como-manter-treinos-durante-ferias",
     title: "Como Manter os Treinos Durante as Férias",
-    metaTitle: "Como Manter os Treinos nas Férias | Montinho",
+    metaTitle: "Como Manter os Treinos nas Férias",
     metaDescription: "Férias não precisam significar abandono do treino. Estratégias práticas de personal trainer para continuar se exercitando onde você estiver.",
     excerpt: "Julho chegou e com ele as férias — mas seus resultados não precisam tirar férias junto. Veja como manter a consistência mesmo longe da sua rotina.",
     category: "Treinamento",
@@ -75855,7 +75855,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "exercicios-para-fazer-em-hoteis",
     title: "Exercícios para Fazer em Hotéis: Treino sem Academia",
-    metaTitle: "Exercícios em Hotéis: Treino sem Academia | Montinho",
+    metaTitle: "Exercícios em Hotéis: Treino sem Academia",
     metaDescription: "Treino completo para fazer no quarto do hotel sem nenhum equipamento. Personal trainer de Alphaville ensina rotina eficiente de 30 minutos.",
     excerpt: "Sem academia, sem desculpa. Descubra um treino completo que você pode fazer no próprio quarto do hotel em 30 a 40 minutos.",
     category: "Treinamento",
@@ -76005,7 +76005,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "como-treinar-sem-academia",
     title: "Como Treinar sem Academia: Guia Completo",
-    metaTitle: "Como Treinar sem Academia: Guia Completo | Montinho",
+    metaTitle: "Como Treinar sem Academia: Guia Completo",
     metaDescription: "Guia completo para treinar sem academia usando apenas o peso do corpo, materiais simples e espaço mínimo. Personal trainer de Alphaville ensina.",
     excerpt: "Não ter academia não é desculpa para parar de treinar. Este guia completo mostra como montar uma rotina eficiente em qualquer lugar.",
     category: "Treinamento",
@@ -76139,7 +76139,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "como-nao-perder-massa-muscular-nas-ferias",
     title: "Como Não Perder Massa Muscular nas Férias",
-    metaTitle: "Como Não Perder Massa Muscular nas Férias | Montinho",
+    metaTitle: "Como Não Perder Massa Muscular nas Férias",
     metaDescription: "Estratégias para preservar massa muscular durante as férias de julho. Personal trainer de Alphaville ensina o mínimo eficiente para manutenção.",
     excerpt: "A perda de massa muscular nas férias é real — mas evitável. Saiba o mínimo que você precisa fazer para preservar o que conquistou ao longo do ano.",
     category: "Treinamento",
@@ -76268,7 +76268,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "treino-com-peso-corporal-completo",
     title: "Treino com Peso Corporal: Guia Completo",
-    metaTitle: "Treino com Peso Corporal: Guia Completo | Montinho",
+    metaTitle: "Treino com Peso Corporal: Guia Completo",
     metaDescription: "Guia completo de treino com peso corporal para todos os níveis. Exercícios, progressões e rotinas para emagrecer e ganhar força sem equipamentos.",
     excerpt: "O peso do seu próprio corpo é uma ferramenta de treinamento poderosa e subestimada. Este guia completo mostra como usá-la ao máximo.",
     category: "Treinamento",
@@ -76441,7 +76441,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "como-voltar-aos-treinos-depois-das-ferias",
     title: "Como Voltar aos Treinos Depois das Férias",
-    metaTitle: "Como Voltar aos Treinos Depois das Férias | Montinho",
+    metaTitle: "Como Voltar aos Treinos Depois das Férias",
     metaDescription: "Voltou das férias e quer retomar os treinos sem lesão e sem perder motivação? Personal trainer de Alphaville ensina o protocolo correto de retorno.",
     excerpt: "A volta das férias é o momento crítico para quem treina. Veja como retomar os treinos de forma inteligente, sem lesões e com motivação renovada.",
     category: "Treinamento",
@@ -76579,7 +76579,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "como-treinar-durante-a-pascoa",
     title: "Como Treinar durante a Páscoa",
-    metaTitle: "Como Treinar durante a Páscoa | Montinho",
+    metaTitle: "Como Treinar durante a Páscoa",
     metaDescription: "Descubra como manter seus treinos em dia durante a Páscoa sem abrir mão da festa. Dicas práticas do personal trainer Montinho, Alphaville/SP.",
     excerpt: "A Páscoa chegou e com ela os chocolates e os feriados prolongados. Veja como manter a consistência nos treinos sem culpa.",
     category: "Treinamento",
@@ -76681,7 +76681,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "como-nao-engordar-na-pascoa",
     title: "Como Não Engordar na Páscoa",
-    metaTitle: "Como Não Engordar na Páscoa | Montinho PT",
+    metaTitle: "Como Não Engordar na Páscoa",
     metaDescription: "Estratégias práticas para curtir a Páscoa sem engordar. Personal trainer Montinho ensina como equilibrar chocolate e saúde em Alphaville/SP.",
     excerpt: "É possível curtir os ovos de Páscoa sem ganhar peso. Com estratégia e consciência, você aproveita a data sem culpa e sem resultados comprometidos.",
     category: "Emagrecimento",
@@ -76773,7 +76773,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "como-manter-dieta-semana-santa",
     title: "Como Manter a Dieta na Semana Santa",
-    metaTitle: "Como Manter a Dieta na Semana Santa | Montinho",
+    metaTitle: "Como Manter a Dieta na Semana Santa",
     metaDescription: "Veja como manter sua dieta na Semana Santa com estratégias práticas do personal trainer Montinho de Alphaville. Equilíbrio entre fé, família e saúde.",
     excerpt: "A Semana Santa reúne família, tradições e muita comida. Aprenda a manter o equilíbrio alimentar sem abrir mão das celebrações.",
     category: "Nutrição",
@@ -76863,7 +76863,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "treino-para-o-dia-das-maes",
     title: "Treino para o Dia das Mães: Presente que Transforma",
-    metaTitle: "Treino para o Dia das Mães | Montinho Personal",
+    metaTitle: "Treino para o Dia das Mães",
     metaDescription: "O melhor presente para o Dia das Mães é saúde e disposição. Veja treinos especiais e dicas do personal trainer Montinho para mães de Alphaville e SP.",
     excerpt: "Que tal presentear a mãe com saúde, disposição e autoestima? Um treino especial para o Dia das Mães pode ser o começo de uma grande transformação.",
     category: "Treinamento",
@@ -76974,7 +76974,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "presente-fitness-dia-das-maes",
     title: "Presente Fitness para o Dia das Mães",
-    metaTitle: "Presente Fitness Dia das Mães | Montinho PT",
+    metaTitle: "Presente Fitness Dia das Mães",
     metaDescription: "Ideias de presentes fitness para o Dia das Mães, incluindo consultoria com personal trainer. Montinho, Alphaville/SP, tem o presente perfeito para sua mãe.",
     excerpt: "Descubra os melhores presentes fitness para o Dia das Mães — do equipamento ideal à consultoria com personal trainer que vai transformar a vida dela.",
     category: "Treinamento",
@@ -77078,7 +77078,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "treino-para-o-dia-dos-pais",
     title: "Treino para o Dia dos Pais: Comece Agora",
-    metaTitle: "Treino para o Dia dos Pais | Montinho Personal",
+    metaTitle: "Treino para o Dia dos Pais",
     metaDescription: "Treinos práticos e motivadores para pais que querem começar agora. Personal trainer Montinho de Alphaville ensina como retomar a saúde no Dia dos Pais.",
     excerpt: "Dia dos Pais é o momento perfeito para (re)começar. Confira treinos práticos e dicas do Montinho para pais de todos os perfis e condicionamentos.",
     category: "Treinamento",
@@ -77189,7 +77189,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "presente-fitness-dia-dos-pais",
     title: "Presente Fitness para o Dia dos Pais",
-    metaTitle: "Presente Fitness Dia dos Pais | Montinho PT",
+    metaTitle: "Presente Fitness Dia dos Pais",
     metaDescription: "Ideias de presentes fitness para o Dia dos Pais. Personal trainer Montinho de Alphaville oferece consultoria personalizada como presente transformador.",
     excerpt: "Surpreenda seu pai com um presente que vai além do comum. Descubra as melhores opções fitness — incluindo a consultoria do personal trainer Montinho.",
     category: "Treinamento",
@@ -77289,7 +77289,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "treino-para-casais-dia-dos-namorados",
     title: "Treino para Casais no Dia dos Namorados",
-    metaTitle: "Treino para Casais Dia dos Namorados | Montinho",
+    metaTitle: "Treino para Casais Dia dos Namorados",
     metaDescription: "Treinos divertidos para casais no Dia dos Namorados. Personal trainer Montinho de Alphaville ensina como transformar o exercício numa experiência a dois.",
     excerpt: "Celebre o Dia dos Namorados de forma diferente: treinando junto! Descubra exercícios para casais que unem saúde, diversão e cumplicidade.",
     category: "Treinamento",
@@ -77392,7 +77392,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "como-emagrecer-para-casamento",
     title: "Como Emagrecer para o Casamento: Guia Completo",
-    metaTitle: "Como Emagrecer para o Casamento | Montinho PT",
+    metaTitle: "Como Emagrecer para o Casamento",
     metaDescription: "Guia completo para emagrecer para o casamento com segurança e resultados. Personal trainer Montinho de Alphaville ajuda noivas e noivos a chegar ao altar.",
     excerpt: "Seu grande dia está chegando e você quer estar no seu melhor. Veja o guia completo do Montinho para emagrecer antes do casamento com saúde e resultados.",
     category: "Emagrecimento",
@@ -77510,7 +77510,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "como-entrar-em-forma-para-formatura",
     title: "Como Entrar em Forma para a Formatura",
-    metaTitle: "Como Entrar em Forma para a Formatura | Montinho",
+    metaTitle: "Como Entrar em Forma para a Formatura",
     metaDescription: "Guia prático para entrar em forma antes da formatura. Personal trainer Montinho de Alphaville ensina como alcançar resultados reais para o grande dia.",
     excerpt: "A formatura está chegando e você quer estar em forma para as fotos e a festa. Veja o guia completo do Montinho para chegasr ao seu melhor no grande dia.",
     category: "Emagrecimento",
@@ -77621,7 +77621,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "como-se-preparar-fisicamente-para-viagem",
     title: "Como se Preparar Fisicamente para uma Viagem",
-    metaTitle: "Preparação Física para Viagem | Montinho PT",
+    metaTitle: "Preparação Física para Viagem",
     metaDescription: "Prepare seu corpo para aproveitar ao máximo cada viagem. Personal trainer Montinho ensina como treinar antes de viajar para ter mais energia e disposição.",
     excerpt: "Uma viagem exige energia, resistência e disposição. Veja como se preparar fisicamente para aproveitar cada destino sem cansaço ou limitações.",
     category: "Treinamento",
@@ -77730,7 +77730,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "como-manter-dieta-durante-viagens",
     title: "Como Manter a Dieta durante Viagens",
-    metaTitle: "Como Manter a Dieta em Viagens | Montinho PT",
+    metaTitle: "Como Manter a Dieta em Viagens",
     metaDescription: "Estratégias práticas para manter a dieta durante viagens sem abrir mão de aproveitar a gastronomia local. Dicas do personal trainer Montinho.",
     excerpt: "Viajar não precisa ser sinônimo de abandonar a dieta. Com estratégias inteligentes, você aproveita a gastronomia local sem comprometer seus resultados.",
     category: "Nutrição",
@@ -77855,7 +77855,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "como-treinar-em-casa-nos-feriados",
     title: "Como Treinar em Casa nos Feriados",
-    metaTitle: "Como Treinar em Casa nos Feriados | Montinho",
+    metaTitle: "Como Treinar em Casa nos Feriados",
     metaDescription: "Guia completo para treinar em casa nos feriados sem equipamentos. Personal trainer Montinho de Alphaville ensina circuitos eficientes para qualquer espaço.",
     excerpt: "A academia fechou no feriado? Sem problema. Veja como treinar em casa com eficiência, sem equipamentos e com orientação do personal trainer Montinho.",
     category: "Treinamento",
@@ -77986,7 +77986,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "como-manter-foco-ferias-escolares",
     title: "Como Manter o Foco durante as Férias Escolares",
-    metaTitle: "Manter o Foco nas Férias Escolares | Montinho",
+    metaTitle: "Manter o Foco nas Férias Escolares",
     metaDescription: "Como pais e filhos podem manter hábitos saudáveis durante as férias escolares. Personal trainer Montinho de Alphaville dá dicas práticas e motivadoras.",
     excerpt: "As férias escolares chegaram! Saiba como manter o foco nos hábitos saudáveis — para pais e filhos — sem transformar o período em caos alimentar e sedentarismo.",
     category: "Treinamento",
@@ -78107,7 +78107,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "black-friday-academia-vale-a-pena",
     title: "Black Friday de Academia Vale a Pena?",
-    metaTitle: "Black Friday Academia Vale a Pena? | Montinho",
+    metaTitle: "Black Friday Academia Vale a Pena?",
     metaDescription: "Descubra se vale a pena aproveitar as promoções de academia na Black Friday. Personal trainer Montinho de Alphaville analisa o que realmente compensa.",
     excerpt: "Promoções de academia na Black Friday são reais ou armadilha? O Montinho analisa o que realmente compensa e como fazer a escolha certa para a sua saúde.",
     category: "Treinamento",
@@ -78227,7 +78227,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "como-escolher-personal-trainer-black-friday",
     title: "Como Escolher um Personal Trainer na Black Friday",
-    metaTitle: "Escolher Personal Trainer Black Friday | Montinho",
+    metaTitle: "Escolher Personal Trainer Black Friday",
     metaDescription: "Saiba como escolher um personal trainer na Black Friday sem cair em armadilhas. Dicas do Montinho para encontrar o profissional certo em Alphaville e online.",
     excerpt: "A Black Friday traz promoções de personal trainer por todo lado. Veja como escolher o profissional certo e não desperdiçar seu investimento em saúde.",
     category: "Treinamento",
@@ -78349,7 +78349,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 {
     slug: "promocoes-fitness-black-friday",
     title: "Como Aproveitar Promoções Fitness na Black Friday",
-    metaTitle: "Promoções Fitness Black Friday | Montinho PT",
+    metaTitle: "Promoções Fitness Black Friday",
     metaDescription: "Guia completo para aproveitar as melhores promoções fitness na Black Friday sem desperdiçar dinheiro. Personal trainer Montinho ensina o que realmente vale.",
     excerpt: "Black Friday é o momento de investir em saúde com desconto. Veja quais promoções fitness realmente valem a pena e como aproveitar ao máximo — incluindo a consultoria do Montinho.",
     category: "Treinamento",
@@ -80830,7 +80830,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "academia-ou-personal-trainer",
     title: "Academia ou Personal Trainer: Qual Escolher?",
-    metaTitle: "Academia ou Personal Trainer: Qual Escolher? | Guia",
+    metaTitle: "Academia ou Personal Trainer: Qual Escolher?",
     metaDescription: "Academia ou personal trainer? Compare custo, resultado e rotina — e descubra o modelo híbrido que une os dois. Agende uma avaliação gratuita!",
     excerpt: "Não é academia OU personal: entenda quando cada um faz sentido e por que o modelo híbrido domina em Alphaville e Barueri.",
     category: "Academias",
@@ -82455,7 +82455,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "studio-mormaii-alphaville",
     title: "Studio Mormaii Alphaville: O Que Esperar",
-    metaTitle: "Studio Mormaii Alphaville: O Que Esperar | Análise",
+    metaTitle: "Studio Mormaii Alphaville: O Que Esperar",
     metaDescription: "Studio Mormaii em Alphaville: como funciona o modelo estúdio, para quem vale a pena e o que avaliar antes de fechar. Confira a análise!",
     excerpt: "O formato estúdio troca volume por proximidade. Veja o que esperar do Studio Mormaii em Alphaville, os trade-offs do modelo boutique e como avaliar na prática.",
     category: "Academias",
@@ -83448,7 +83448,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "xsuperacao-santana-de-parnaiba",
     title: "XSuperAção Santana de Parnaíba: Análise",
-    metaTitle: "XSuperAção Santana de Parnaíba: Vale a Pena? | Análise",
+    metaTitle: "XSuperAção Santana de Parnaíba: Vale a Pena?",
     metaDescription: "Análise honesta da XSuperAção em Santana de Parnaíba: como avaliar academia de bairro, prós, contras e para quem é. Agende uma avaliação.",
     excerpt: "Como avaliar a XSuperAção e qualquer academia de bairro em Santana de Parnaíba: critérios práticos, trade-offs e para quem faz sentido.",
     category: "Academias",
@@ -84943,7 +84943,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "academia-para-fisiculturistas-alphaville",
     title: "Academia para Fisiculturistas em Alphaville",
-    metaTitle: "Academia para Fisiculturistas em Alphaville | Guia",
+    metaTitle: "Academia para Fisiculturistas em Alphaville",
     metaDescription: "Onde fisiculturistas treinam em Alphaville: cultura maromba, estrutura pesada e preparação séria. Treine com quem compete. Agende uma avaliação.",
     excerpt: "Fisiculturismo exige mais que academia equipada: exige ambiente, método e preparação. Veja o cenário em Alphaville — e por que o coach importa mais que o CNPJ.",
     category: "Academias",
@@ -85030,7 +85030,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "academia-com-personal-trainer-alphaville",
     title: "Academia com Personal Trainer em Alphaville",
-    metaTitle: "Academia com Personal Trainer em Alphaville | Guia",
+    metaTitle: "Academia com Personal Trainer em Alphaville",
     metaDescription: "Personal da academia ou personal particular em Alphaville? Entenda a diferença que define seu resultado e agende uma avaliação gratuita.",
     excerpt: "Toda academia diz que tem personal. Mas há uma diferença enorme entre o personal rotativo da academia e um personal particular dedicado a você. Entenda antes de pagar.",
     category: "Academias",
@@ -85215,7 +85215,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "academia-com-natacao-alphaville",
     title: "Academia com Natação em Alphaville e Região",
-    metaTitle: "Academia com Natação em Alphaville e Região | Guia",
+    metaTitle: "Academia com Natação em Alphaville e Região",
     metaDescription: "Onde nadar em Alphaville, Barueri e Santana de Parnaíba: academias com piscina, benefícios da natação e como combinar com musculação. Agende avaliação.",
     excerpt: "Onde encontrar piscina e aulas de natação na região de Alphaville, e como combinar natação com treino de força.",
     category: "Academias",
@@ -85403,7 +85403,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "academia-com-funcional-alphaville",
     title: "Academia com Treino Funcional em Alphaville",
-    metaTitle: "Academia com Treino Funcional em Alphaville | Guia",
+    metaTitle: "Academia com Treino Funcional em Alphaville",
     metaDescription: "Onde fazer treino funcional em Alphaville: academias, estúdios e parques. Benefícios comprovados e como combinar com musculação. Agende avaliação.",
     excerpt: "Onde praticar treino funcional em Alphaville e região, o que a ciência diz e como integrá-lo à musculação.",
     category: "Academias",
@@ -85496,7 +85496,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "academia-com-cross-training-alphaville",
     title: "Academia com Cross Training em Alphaville",
-    metaTitle: "Academia com Cross Training em Alphaville | Guia",
+    metaTitle: "Academia com Cross Training em Alphaville",
     metaDescription: "Onde praticar cross training em Alphaville: boxes, academias e o que avaliar antes de entrar. Benefícios e riscos. Agende uma avaliação com o Montinho.",
     excerpt: "Guia de cross training em Alphaville e região: onde estão os boxes, para quem a modalidade serve e como treinar com segurança.",
     category: "Academias",
@@ -88116,7 +88116,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "quanto-tempo-de-esteira-para-emagrecer",
     title: "Quanto Tempo de Esteira para Emagrecer?",
-    metaTitle: "Quanto Tempo de Esteira para Emagrecer? | Guia",
+    metaTitle: "Quanto Tempo de Esteira para Emagrecer?",
     metaDescription: "30 a 40 minutos é a referência, mas não é tudo. Veja o que realmente faz a esteira emagrecer e monte seu plano. Conheça a consultoria online.",
     excerpt: "30 a 40 minutos em intensidade moderada é a referência prática — mas quem define o resultado é o déficit calórico. Entenda como usar a esteira do jeito certo.",
     category: "Emagrecimento",
@@ -92662,7 +92662,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "resistencia-insulina-musculacao",
     title: "Resistência à Insulina: Como a Musculação Age no Problema",
-    metaTitle: "Resistencia a Insulina e Musculacao: O Que Muda",
+    metaTitle: "Resistência à Insulina e Musculação: O Que Muda",
     metaDescription:
       "Entenda como a musculação atua na resistência à insulina, o que a ciência mostra sobre o músculo como órgão metabólico e por que o médico é peça central.",
     excerpt:
@@ -95590,7 +95590,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "como-acelerar-o-metabolismo",
     title: "Como Acelerar o Metabolismo de Verdade",
-    metaTitle: "Como Acelerar o Metabolismo de Verdade | Montinho",
+    metaTitle: "Como Acelerar o Metabolismo de Verdade",
     metaDescription:
       "Chá termogênico não acelera metabolismo. O que funciona de verdade: massa muscular, NEAT, proteína e sono. Guia prático de quem perdeu mais de 40kg.",
     excerpt:
@@ -95752,7 +95752,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "quanto-tempo-de-treino-por-dia",
     title: "Quanto Tempo de Treino Por Dia é o Ideal?",
-    metaTitle: "Quanto Tempo de Treino Por Dia e o Ideal? | Montinho",
+    metaTitle: "Quanto Tempo de Treino Por Dia e o Ideal?",
     metaDescription:
       "40, 60 ou 90 minutos? O tempo ideal de treino depende do seu objetivo e rotina. Entenda o que a ciência diz sobre duração, volume e resultados reais.",
     excerpt:
@@ -95925,7 +95925,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "cardio-em-jejum-emagrece",
     title: "Cardio em Jejum Emagrece Mais? O Que a Ciência Diz",
-    metaTitle: "Cardio em Jejum Emagrece Mais? O Que Diz a Ciencia",
+    metaTitle: "Cardio em Jejum Emagrece Mais? O Que Diz a Ciência",
     metaDescription:
       "Cardio em jejum queima mais gordura durante a sessão, mas o resultado no fim do dia é o mesmo. Entenda o que a ciência diz e quando faz sentido para você.",
     excerpt:
@@ -96084,7 +96084,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "whey-protein-engorda",
     title: "Whey Protein Engorda? Entenda de Uma Vez",
-    metaTitle: "Whey Protein Engorda? Entenda de Uma Vez | Montinho",
+    metaTitle: "Whey Protein Engorda? Entenda de Uma Vez",
     metaDescription:
       "Whey protein é só proteína em pó: engorda se estourar suas calorias, ajuda se facilitar bater a proteína do dia. Entenda quando usar e quando é desnecessário.",
     excerpt:
@@ -96256,7 +96256,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "comer-de-3-em-3-horas",
     title: "Comer de 3 em 3 Horas Emagrece ou é Mito?",
-    metaTitle: "Comer de 3 em 3 Horas Emagrece ou e Mito? | Montinho",
+    metaTitle: "Comer de 3 em 3 Horas Emagrece ou é Mito?",
     metaDescription:
       "Comer de 3 em 3 horas não acelera o metabolismo — a ciência é clara. Mas pode ajudar no controle da fome para algumas pessoas. Entenda quando faz sentido.",
     excerpt:
@@ -97449,7 +97449,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "proteina-demais-faz-mal",
     title: "Proteína Demais Faz Mal? Limites, Rins e o Que a Ciência Diz",
-    metaTitle: "Proteina Demais Faz Mal? O Que a Ciencia Diz",
+    metaTitle: "Proteína Demais Faz Mal? O Que a Ciência Diz",
     metaDescription:
       "Proteína demais faz mal aos rins? Veja o que a ciência realmente diz sobre limites, segurança e quem precisa ter cuidado com dietas ricas em proteína.",
     excerpt:
@@ -97608,7 +97608,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "shake-de-proteina-substitui-refeicao",
     title: "Shake de Proteína Substitui Refeição? Quando Sim e Quando Não",
-    metaTitle: "Shake de Proteina Substitui Refeicao?",
+    metaTitle: "Shake de Proteína Substitui Refeição?",
     metaDescription:
       "Shake de proteína substitui refeição? Veja quando faz sentido trocar uma refeição por um shake, quando é furada e como montar um shake que sustenta de verdade.",
     excerpt:
@@ -97936,7 +97936,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "musculacao-rejuvenesce",
     title: "Musculação Rejuvenesce? O Efeito do Treino no Envelhecimento",
-    metaTitle: "Musculacao Rejuvenesce? O Efeito no Envelhecimento",
+    metaTitle: "Musculação Rejuvenesce? O Efeito no Envelhecimento",
     metaDescription:
       "Musculação rejuvenesce? Veja o efeito real do treino de força no envelhecimento: massa muscular, ossos, mitocôndrias, postura e autonomia, segundo a ciência.",
     excerpt:
@@ -101781,7 +101781,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "caminhada-na-esteira-inclinada",
     title: "Caminhada Inclinada na Esteira: Por Que Virou Febre (Método 12-3-30)",
-    metaTitle: "Caminhada Inclinada na Esteira: Metodo 12-3-30 Funciona?",
+    metaTitle: "Caminhada Inclinada na Esteira: Método 12-3-30 Funciona?",
     metaDescription:
       "O metodo 12-3-30 de caminhada inclinada na esteira viralizou. Entenda por que funciona, quanto gasta de verdade e como adaptar para iniciantes e obesos.",
     excerpt:
@@ -101959,7 +101959,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "exercicios-para-melhorar-a-postura",
     title: "Exercícios Para Melhorar a Postura: Guia Completo",
-    metaTitle: "Exercicios Para Melhorar a Postura: Guia Completo",
+    metaTitle: "Exercícios Para Melhorar a Postura: Guia Completo",
     metaDescription:
       "Exercicios praticos para melhorar a postura: fortalecimento de costas, core e mobilidade toracica. Sem mito da postura perfeita — corpo forte importa mais.",
     excerpt:
@@ -102126,7 +102126,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "treino-de-peito-em-casa",
     title: "Treino de Peito em Casa: Exercícios e Progressão",
-    metaTitle: "Treino de Peito em Casa: Exercicios e Progressao",
+    metaTitle: "Treino de Peito em Casa: Exercícios e Progressão",
     metaDescription:
       "Treino de peito em casa que funciona: flexoes e variacoes, progressao inteligente, elasticos e a verdade honesta sobre os limites sem carga externa.",
     excerpt:
@@ -113504,7 +113504,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "agachamento-livre-ou-maquina-smith",
     title: "Agachamento Livre ou Máquina Smith: Qual Escolher?",
-    metaTitle: "Agachamento Livre ou Máquina Smith? | Montinho Personal Trainer",
+    metaTitle: "Agachamento Livre ou Máquina Smith?",
     metaDescription:
       "Agachamento livre ou Smith? A diferença biomecânica real, quando cada um faz sentido e por que a resposta depende do seu momento — não de qual é o melhor.",
     excerpt:
@@ -113569,7 +113569,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "treino-para-agenda-imprevisivel",
     title: "Agenda Imprevisível: Como Treinar Quando Nenhuma Semana É Igual",
-    metaTitle: "Agenda Imprevisível: Como Treinar Quando Nenhuma Semana É Igual | Montinho Personal Trainer",
+    metaTitle: "Agenda Imprevisível: Como Treinar Sem Semana Igual",
     metaDescription:
       "Reunião que estoura, viagem de última hora, semana que muda todo dia. Como estruturar um treino que sobrevive à agenda imprevisível — sem depender de rotina fixa.",
     excerpt:
@@ -113622,7 +113622,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "ja-tentei-varias-vezes-e-parei",
     title: "Já Tentou Várias Vezes e Parou: O Que Fazer de Diferente Agora",
-    metaTitle: "Já Tentou Várias Vezes e Parou: O Que Fazer de Diferente Agora | Montinho Personal Trainer",
+    metaTitle: "Já Tentou Várias Vezes e Parou: O Que Fazer de Diferente Agora",
     metaDescription:
       "Começar e parar várias vezes não é fraqueza — é sinal de que algo no método se repetiu. O que muda de verdade na tentativa que finalmente fica.",
     excerpt:
@@ -113674,7 +113674,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "comecar-a-treinar-depois-dos-50",
     title: "Começar a Treinar Depois dos 50: O Que Muda e o Que É Mito",
-    metaTitle: "Começar a Treinar Depois dos 50: O Que Muda e o Que É Mito | Montinho Personal Trainer",
+    metaTitle: "Começar a Treinar Depois dos 50: O Que Muda e o Que É Mito",
     metaDescription:
       "Nunca treinou e passou dos 50? O corpo responde, a ciência é clara e a maioria dos medos não se sustenta. O que muda de verdade — e por onde começar.",
     excerpt:
@@ -113724,7 +113724,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "peso-leve-define-peso-pesado-engrossa",
     title: "Peso Leve Define e Peso Pesado Engrossa? O Mito Que Trava Seu Treino",
-    metaTitle: "Peso Leve Define e Peso Pesado Engrossa? O Mito Que Trava Seu Treino | Montinho Personal Trainer",
+    metaTitle: "Peso Leve Define e Peso Pesado Engrossa? O Que Muda",
     metaDescription:
       "Muita repetição com peso leve define e carga pesada deixa grande? A fisiologia diz outra coisa — e esse mito é o que mais faz gente treinar abaixo do que poderia.",
     excerpt:
@@ -113773,7 +113773,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "eletroestimulacao-e-drenagem-emagrecem",
     title: "Eletroestimulação e Drenagem Linfática Emagrecem? O Que É Real",
-    metaTitle: "Eletroestimulação e Drenagem Linfática Emagrecem? O Que É Real | Montinho Personal Trainer",
+    metaTitle: "Eletroestimulação e Drenagem Linfática Emagrecem? O Que É Real",
     metaDescription:
       "EMS que promete abdômen sem esforço, drenagem que desincha na hora. O que esses procedimentos entregam de verdade, o que é efeito temporário e onde mora o exagero.",
     excerpt:
@@ -113823,7 +113823,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "vacuum-abdominal-funciona",
     title: "Vacuum Abdominal Afina a Cintura? O Que o Exercício Faz de Verdade",
-    metaTitle: "Vacuum Abdominal Afina a Cintura? O Que o Exercício Faz de Verdade | Montinho Personal Trainer",
+    metaTitle: "Vacuum Abdominal Afina a Cintura? O Que o Exercício Faz",
     metaDescription:
       "O vacuum viralizou como segredo da cintura fina. O que o exercício realmente treina, o que pode melhorar e o que a genética e a gordura decidem sem te consultar.",
     excerpt:
@@ -113877,7 +113877,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "musculacao-atrapalha-o-crescimento",
     title: "Musculação Atrapalha o Crescimento do Adolescente? O Que Diz a Ciência",
-    metaTitle: "Musculação Atrapalha o Crescimento do Adolescente? O Que Diz a Ciência | Montinho Personal Trainer",
+    metaTitle: "Musculação Atrapalha o Crescimento do Adolescente?",
     metaDescription:
       "O mito de que musculação fecha a placa de crescimento ainda assusta pais. O que a evidência mostra, de onde veio o medo e como um jovem treina com segurança.",
     excerpt:
@@ -113927,7 +113927,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "pre-exaustao-funciona",
     title: "Pré-Exaustão Funciona? Quando a Técnica Ajuda e Quando Só Cansa",
-    metaTitle: "Pré-Exaustão Funciona? Quando a Técnica Ajuda e Quando Só Cansa | Montinho Personal Trainer",
+    metaTitle: "Pré-Exaustão Funciona? Quando Ajuda e Quando Só Cansa",
     metaDescription:
       "Isolar o músculo antes do exercício composto para senti-lo mais: a lógica da pré-exaustão, o que a evidência mostra e os poucos casos em que ela realmente vale.",
     excerpt:
@@ -113970,7 +113970,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "mobilidade-de-tornozelo",
     title: "Mobilidade de Tornozelo: Como Testar, Por Que Importa e Como Melhorar",
-    metaTitle: "Mobilidade de Tornozelo: Teste, Referências e Como Melhorar | Montinho Personal Trainer",
+    metaTitle: "Mobilidade de Tornozelo: Teste, Referências e Como Melhorar",
     metaDescription:
       "O calcanhar que levanta no agachamento costuma começar no tornozelo. Como medir a sua dorsiflexão em casa, o que os valores significam e a dose de trabalho que a evidência sustenta.",
     excerpt:
@@ -114112,7 +114112,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "flexibilidade-e-musculacao",
     title: "Flexibilidade e Musculação: Você Precisa Mesmo Alongar Tanto?",
-    metaTitle: "Flexibilidade e Musculação: Quanto Alongar de Verdade | Montinho Personal Trainer",
+    metaTitle: "Flexibilidade e Musculação: Quanto Alongar de Verdade",
     metaDescription:
       "Treino de força empatou com alongamento no ganho de amplitude em meta-análise. O que isso muda na sua rotina, quanto alongar de fato e por que não precisa doer.",
     excerpt:
@@ -114233,7 +114233,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "mobilidade-de-quadril",
     title: "Mobilidade de Quadril: Como Testar e o Que Realmente Melhora",
-    metaTitle: "Mobilidade de Quadril: Testes, Exercícios e o Que Muda | Montinho Personal Trainer",
+    metaTitle: "Mobilidade de Quadril: Testes, Exercícios e o Que Muda",
     metaDescription:
       "Quadril rígido limita agachamento, afundo e stiff. Como testar a sua mobilidade em casa, o que a variação anatômica explica e a dose de trabalho que a evidência sustenta.",
     excerpt:
@@ -114368,7 +114368,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "o-que-comer-antes-do-treino",
     title: "O Que Comer Antes do Treino: O Guia Simples e Sem Neura",
-    metaTitle: "O Que Comer Antes do Treino: Guia Prático por Horário | Montinho Personal Trainer",
+    metaTitle: "O Que Comer Antes do Treino: Guia Prático por Horário",
     metaDescription:
       "Quanto tempo antes, o que comer e o que fazer quando não dá tempo. Um guia direto para quem treina de manhã, na hora do almoço ou à noite — sem suplemento obrigatório.",
     excerpt:
@@ -114609,7 +114609,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "treino-de-posterior-de-coxa",
     title: "Treino de Posterior de Coxa: Os 6 Exercícios que Realmente Importam",
-    metaTitle: "Treino de Posterior de Coxa: 6 Exercícios e Como Montar | Montinho Personal Trainer",
+    metaTitle: "Treino de Posterior de Coxa: 6 Exercícios e Como Montar",
     metaDescription:
       "O posterior tem duas funções, e treinar só uma explica por que ele não cresce. Os 6 exercícios que cobrem as duas, quanto volume fazer e como montar a semana.",
     excerpt:
@@ -114728,7 +114728,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "forca-de-pegada-e-antebraco",
     title: "Força de Pegada: Por Que Suas Costas Param Antes do Músculo Cansar",
-    metaTitle: "Força de Pegada e Antebraço: Como Treinar e Quando Usar Strap | Montinho Personal Trainer",
+    metaTitle: "Força de Pegada e Antebraço: Como Treinar e Quando Usar Strap",
     metaDescription:
       "Se a barra escapa antes das costas falharem, a pegada é o gargalo. Como identificar, como treinar antebraço de verdade e quando o strap ajuda em vez de atrapalhar.",
     excerpt:
@@ -114850,7 +114850,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "acessorios-de-treino-valem-a-pena",
     title: "Cinto, Luva, Strap e Joelheira: 6 Acessórios e Quando Cada Um Vale",
-    metaTitle: "Acessórios de Treino Valem a Pena? Cinto, Luva, Strap | Montinho Personal Trainer",
+    metaTitle: "Acessórios de Treino Valem a Pena? Cinto, Luva, Strap",
     metaDescription:
       "Cinto, strap, luva, joelheira, munhequeira e sapatilha: para que cada um serve de verdade, quando ajuda e quando vira muleta. Guia honesto, sem venda.",
     excerpt:
