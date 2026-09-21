@@ -38,6 +38,11 @@ export interface Canonica {
 
 /** A chave é o identificador que app/blog/[slug]/page.tsx já usa para escolher o embed. */
 export const CANONICA: Record<string, Canonica> = {
+  polichinelos: {
+    href: "/ferramentas/calculadora-polichinelos",
+    ancora: "Calculadora de Polichinelos",
+    motivo: "que faz a conta com o seu peso e o seu ritmo, incluindo a equivalência com caminhada",
+  },
   proteina: {
     href: "/ferramentas/calculadora-de-proteina",
     ancora: "Calculadora de Proteína",

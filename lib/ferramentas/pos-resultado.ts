@@ -56,6 +56,7 @@ export const NOME: Record<Ferramenta, string> = {
   volume: "Calculadora de Volume",
   onerm: "Calculadora de 1RM",
   fc: "Calculadora de Zonas de Frequência Cardíaca",
+  polichinelos: "Calculadora de Polichinelos",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -88,6 +89,7 @@ export const ROTA: Record<Ferramenta, string> = {
   volume: "/ferramentas/calculadora-volume-treino",
   onerm: "/ferramentas/calculadora-1rm",
   fc: "/ferramentas/zonas-de-frequencia-cardiaca",
+  polichinelos: "/ferramentas/calculadora-polichinelos",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -111,6 +113,9 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   tdee: { ferramenta: "deficit", label: "Calcular meu déficit" },
   onerm: { ferramenta: "volume", label: "Conferir meu volume" },
   fc: { ferramenta: "tdee", label: "Calcular meu gasto diário" },
+  /* O polichinelo responde o gasto de um exercício; a conta que decide
+     emagrecimento é a do dia inteiro. */
+  polichinelos: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -171,6 +176,19 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Proteína e gordura somadas já passam da meta calórica. A conta não fecha — e isso costuma indicar que a meta está baixa demais, não que os macros estão errados.",
       pergunta: "Quer que eu te ajude a rever essa meta?",
       pedido: "A conta dos macros não fechou com a minha meta e queria ajuda para rever.",
+    },
+  },
+  polichinelos: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto de um exercício, não o do seu dia. O que decide emagrecimento é o balanço da semana inteira — e é por isso que o mesmo número rende em uma pessoa e não rende em outra.",
+      pedido: "Queria entender quanto de cardio eu realmente preciso para o meu objetivo.",
+    },
+    volume_alto: {
+      interpretacao:
+        "Para chegar nesse gasto só com polichinelo seria muito tempo de impacto numa sessão só. Distribuir entre caminhada, musculação e o que você já faz no dia costuma render mais e cobrar menos das articulações.",
+      pergunta: "Quer que eu monte uma distribuição que caiba na sua semana?",
+      pedido: "O número que saiu foi alto e queria ajuda para distribuir isso na semana sem me machucar.",
     },
   },
   deficit: {

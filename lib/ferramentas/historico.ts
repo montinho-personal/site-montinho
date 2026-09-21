@@ -33,6 +33,7 @@ export type Ferramenta =
   | "volume"
   | "onerm"
   | "fc"
+  | "polichinelos"
   | "diagnostico"
   | "rotina"
   | "academia"

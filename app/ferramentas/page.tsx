@@ -157,6 +157,15 @@ const FERRAMENTAS = [
       "Informe sua idade para estimar sua frequência cardíaca máxima e ver as cinco zonas de treino em batimentos por minuto — com o que cada uma serve e a régua da fala para conferir sem relógio. Se souber a de repouso, a conta troca para o método de Karvonen.",
     quando: "Use quando um treino pede \"zona 2\" ou \"70% da máxima\" e você não sabe que número é esse. A idade não sai do navegador.",
   },
+  {
+    href: "/ferramentas/calculadora-polichinelos",
+    nome: "Calculadora de Polichinelos",
+    pergunta: "Quantos polichinelos eu preciso fazer?",
+    tempo: "15 segundos · sem cadastro",
+    texto:
+      "Informe seu peso e seu ritmo para ver quantas calorias os polichinelos gastam, quanto tempo levam e quantos seriam necessários para uma meta — incluindo quantos equivalem, em gasto, a uma caminhada de 30 minutos.",
+    quando: "Use quando quiser saber se aquele desafio de 100 por dia significa alguma coisa. O peso não sai do navegador.",
+  },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{
     href: "/ferramentas/teste-mobilidade",

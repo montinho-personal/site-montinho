@@ -235,6 +235,20 @@ export type AnalyticsEvent =
    * precisamos armazenar o quanto ninguém levanta para saber se a
    * ferramenta é usada.
    */
+  /**
+   * Calculadora de Polichinelos. `mode` diz qual das quatro perguntas a
+   * pessoa escolheu e `intensity` o ritmo — nunca o peso nem o resultado.
+   * O funil que interessa (viu → mexeu → calculou → compartilhou → falou)
+   * sai desses cinco mais os eventos de share e pós-resultado que já
+   * existem; não há evento novo para o que o site já mede.
+   */
+  | "jumping_jack_calculator_view"
+  | "jumping_jack_calculator_use"
+  | "jumping_jack_mode_selected"
+  | "jumping_jack_preset"
+  | "jumping_jack_cadence_open"
+  | "jumping_jack_methodology_open"
+  | "jumping_jack_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"
