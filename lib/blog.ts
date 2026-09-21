@@ -2445,7 +2445,7 @@ export const blogPosts = ([
   {
     slug: "descansar-tambem-faz-crescer",
     title: "Descansar Também Faz Crescer? A Ciência Por Trás da Recuperação Muscular",
-    metaTitle: "Descansar Também Faz Crescer? Recuperação Muscular e…",
+    metaTitle: "Descansar Também Faz Crescer? A Ciência da Recuperação",
     metaDescription:
       "O músculo cresce no descanso, não no treino. Entenda a fisiologia da recuperação muscular, o papel do sono na hipertrofia e por que o descanso é parte...",
     excerpt:
@@ -6158,7 +6158,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "frequencia-de-treino",
     title: "Frequência de Treino: Quantas Vezes por Semana Estimular Cada Músculo?",
-    metaTitle: "Frequência de Treino: Quantas Vezes Por Semana Estimular…",
+    metaTitle: "Frequência de Treino: Quantas Vezes Estimular Cada Músculo",
     metaDescription:
       "Treinar cada músculo 1x ou 2x por semana? A ciência é clara: frequência de 2x por semana supera 1x em hipertrofia. Entenda como distribuir seu volume semanal.",
     excerpt:
@@ -6592,7 +6592,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "deficit-calorico-e-hipertrofia",
     title: "Déficit Calórico e Hipertrofia: É Possível Ganhar Massa Magra Cortando Calorias?",
-    metaTitle: "Déficit Calórico e Hipertrofia: Ganhar Músculo Cortando…",
+    metaTitle: "Déficit Calórico e Hipertrofia: Dá Para Ganhar Massa Magra?",
     metaDescription:
       "É possível ganhar músculo em déficit calórico? Sim — com as condições certas. Saiba quem consegue, qual é a proteína ideal e como estruturar o treino...",
     excerpt:
@@ -24553,7 +24553,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "wegovy-e-musculacao",
     title: "Wegovy e Musculação: Como Combinar para Resultados Melhores",
-    metaTitle: "Wegovy e Musculação: Como Combinar para Resultados…",
+    metaTitle: "Wegovy e Musculação: Como Combinar para Não Perder Músculo",
     metaDescription: "Wegovy (semaglutida 2,4mg) aprovado para obesidade no Brasil: como combinar com musculação para emagrecer com qualidade e preservar a massa muscular.",
     excerpt: "Wegovy é a versão de maior dose da semaglutida, aprovada especificamente para tratamento da obesidade. O treino de força transforma o resultado de bom em excelente.",
     category: "Saúde",
@@ -32847,7 +32847,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
   slug: "hipertrofia-natural-limite",
   title: "Hipertrofia Natural: Qual é o Limite e Quanto Músculo Você Pode Ganhar",
-  metaTitle: "Hipertrofia Natural: Qual é o Limite de Músculo Que Você…",
+  metaTitle: "Hipertrofia Natural: Qual é o Limite de Músculo Que Dá",
   metaDescription: "Qual é o limite de massa muscular para quem treina naturalmente? Entenda os modelos científicos, fatores que influenciam e o que esperar de forma realista.",
   excerpt: "Todo mundo quer saber: até onde dá para chegar naturalmente? A ciência tem modelos que estimam esse limite — e a resposta vai te surpreender, para o bem e para o mal.",
   category: "Hipertrofia",
@@ -32993,7 +32993,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
   slug: "fascite-plantar-exercicio",
   title: "Fascite Plantar e Exercício: Como Treinar Sem Piorar a Dor",
-  metaTitle: "Fascite Plantar e Exercício: Como Treinar Sem Piorar a…",
+  metaTitle: "Fascite Plantar e Exercício: Como Treinar Sem Piorar a Dor",
   metaDescription: "Fascite plantar não precisa parar seu treino. Saiba quais exercícios evitar, o que fazer para recuperar e como treinar com fascite plantar sem agravar a lesão.",
   excerpt: "Dor no calcanhar de manhã ao levantar é o sinal clássico de fascite plantar. Mas isso não significa parar de treinar — significa treinar diferente. Entenda o que fazer.",
   category: "Lesões",
@@ -33136,7 +33136,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
   slug: "personal-trainer-vale-a-pena",
   title: "Personal Trainer Vale a Pena? Quando Contratar e o Que Esperar",
-  metaTitle: "Personal Trainer Vale a Pena? Quando Contratar e o Que…",
+  metaTitle: "Personal Trainer Vale a Pena? Quando Contratar e o Que Esperar",
   metaDescription: "Personal trainer vale a pena? Descubra quando contratar um personal faz diferença real, o que esperar do acompanhamento e como escolher o profissional certo.",
   excerpt: "A maioria das pessoas que desiste da academia desistiria muito antes sem acompanhamento. Mas personal trainer é para todo mundo? E quando ele realmente faz diferença? A resposta honesta está aqui.",
   category: "Treinamento",
@@ -33699,7 +33699,7 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
   {
   slug: "crossfit-vs-musculacao",
   title: "CrossFit ou Musculação: Qual é Melhor para Seu Objetivo?",
-  metaTitle: "CrossFit vs Musculação: Comparação Completa para Decidir…",
+  metaTitle: "CrossFit ou Musculação: Qual é Melhor para Seu Objetivo?",
   metaDescription: "CrossFit ou musculação? Compare ganho muscular, emagrecimento, risco de lesão e resultados de cada modalidade para fazer a escolha certa para seu objetivo.",
   excerpt: "CrossFit e musculação têm tribos devotas dos dois lados. A verdade é que um é claramente superior para certos objetivos — e inferior para outros. Veja a comparação honesta.",
   category: "Treinamento",
@@ -33846,7 +33846,7 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
   {
   slug: "por-que-a-barriga-e-a-ultima-a-ir",
   title: "Por Que a Barriga é a Última a Ir Embora? A Explicação Científica",
-  metaTitle: "Por Que a Barriga é a Última a Emagrecer? Explicação e…",
+  metaTitle: "Por Que a Barriga é a Última a Emagrecer? A Ciência Explica",
   metaDescription: "Por que a barriga é a última a emagrecer? Entenda a ciência por trás da gordura abdominal, por que ela resiste mais e o que fazer para eliminar de forma eficaz.",
   excerpt: "Você emagrece nas pernas, no rosto, nos braços — e a barriga parece não sair. Não é falta de esforço: é fisiologia. Entenda por que isso acontece e o que realmente funciona.",
   category: "Emagrecimento",
@@ -34465,7 +34465,7 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
   {
   slug: "treino-de-costas-hipertrofia",
   title: "Treino de Costas para Hipertrofia: Exercícios, Séries e Técnica",
-  metaTitle: "Treino de Costas para Hipertrofia: Guia Completo com…",
+  metaTitle: "Treino de Costas para Hipertrofia: Exercícios e Técnica",
   metaDescription: "Treino de costas para hipertrofia: os melhores exercícios para latíssimo, trapézio e romboides, volume ideal, técnica correta e estrutura completa de treino.",
   excerpt: "As costas são o grupo muscular mais complexo do corpo — e o mais negligenciado. Um treino bem montado transforma a silhueta. Este guia cobre tudo: exercícios, técnica e volume.",
   category: "Treinamento",
@@ -35037,7 +35037,7 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
   {
   slug: "calorias-para-ganhar-massa-muscular",
   title: "Quantas Calorias Para Ganhar Massa Muscular? Cálculo e Estratégia",
-  metaTitle: "Calorias para Ganhar Massa Muscular: Como Calcular o…",
+  metaTitle: "Quantas Calorias Para Ganhar Massa Muscular? Como Calcular",
   metaDescription: "Quantas calorias você precisa para ganhar massa muscular? Aprenda a calcular seu TDEE, definir o superávit correto e como comer para hipertrofia sem...",
   excerpt: "Sem calorias suficientes, o músculo não cresce — mesmo com o treino perfeito. Mas comer demais só engorda. O equilíbrio correto existe e é calculável. Este guia ensina como.",
   category: "Nutrição",
@@ -36828,7 +36828,7 @@ Use com moderação — o deltoide anterior geralmente já está bem estimulado 
   {
   slug: "treino-de-peito-hipertrofia",
   title: "Treino de Peito para Hipertrofia: Guia Completo Além do Supino",
-  metaTitle: "Treino de Peito Completo: Exercícios e Estratégia para…",
+  metaTitle: "Treino de Peito para Hipertrofia: Exercícios e Estratégia",
   metaDescription: "Treino de peito para hipertrofia além do supino: os melhores exercícios para peitoral superior, médio e inferior, volume ideal e estrutura de treino...",
   excerpt: "O supino é ótimo — mas está longe de ser suficiente para um peitoral completo. Este guia mostra como treinar as diferentes regiões do peitoral com ciência e resultado real.",
   category: "Treinamento",
@@ -37509,7 +37509,7 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
   {
   slug: "como-fazer-desenvolvimento-ombros",
   title: "Como Fazer Desenvolvimento de Ombros: Técnica com Halteres e Barra",
-  metaTitle: "Como Fazer Desenvolvimento de Ombros: Guia Completo de…",
+  metaTitle: "Desenvolvimento de Ombros: Técnica com Halteres e Barra",
   metaDescription: "Aprenda a técnica correta do desenvolvimento de ombros com halteres e barra. Posição, trajetória, amplitude, respiração e erros que causam lesão.",
   excerpt: "O desenvolvimento é o exercício composto mais eficaz para ombros — e um dos mais mal executados. Técnica ruim limita o resultado e sobrecarrega o ombro. Este guia corrige isso.",
   category: "Treinamento",
@@ -39861,7 +39861,7 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
   {
   slug: "treino-de-potencia-e-explosividade",
   title: "Treino de Potência e Explosividade: Protocolos para Força Rápida",
-  metaTitle: "Treino de Potência Muscular: Protocolos Completos para…",
+  metaTitle: "Treino de Potência e Explosividade: Protocolos de Força",
   metaDescription: "Treino de potência e explosividade muscular: o que é, como desenvolver, exercícios mais eficazes e como combinar com musculação para máxima performance.",
   excerpt: "Potência é força aplicada em velocidade. É o que separa o atleta do praticante comum. Mas não é exclusividade de atletas — qualquer pessoa que treine musculação pode e deve desenvolver potência para performance e longevidade.",
   category: "Treinamento",
@@ -40038,7 +40038,7 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
   {
   slug: "macrociclo-mesociclo-microciclo",
   title: "Macrociclo, Mesociclo e Microciclo: Como Planejar o Treino do Ano",
-  metaTitle: "Macrociclo, Mesociclo e Microciclo: Guia Completo de…",
+  metaTitle: "Macrociclo, Mesociclo e Microciclo: Como Planejar o Ano",
   metaDescription: "O que são macrociclo, mesociclo e microciclo na musculação? Como usar esses conceitos para planejar o treino do ano e evitar platôs.",
   excerpt: "Você treina há meses sem progredir? Provavelmente está repetindo o mesmo microciclo sem pensar no macro. Entender esses três conceitos transforma seu planejamento de treino.",
   category: "Treinamento",
@@ -40214,7 +40214,7 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
   {
   slug: "treino-fst-7",
   title: "Treino FST-7: O Protocolo de Hany Rambod para Hipertrofia Extrema",
-  metaTitle: "Treino FST-7: Protocolo Completo de Hany Rambod para…",
+  metaTitle: "Treino FST-7: O Protocolo de Hany Rambod para Hipertrofia",
   metaDescription: "FST-7 (Fascia Stretch Training): o que é, como funciona, para quem é indicado e como montar um treino FST-7 completo baseado no protocolo de Hany Rambod.",
   excerpt: "O FST-7 é o método de treino por trás de físicos como Jay Cutler e Phil Heath. Não é magia — é uma estratégia de pump metabólico com base fisiológica sólida. Veja como funciona e como aplicar.",
   category: "Treinamento",
@@ -40999,7 +40999,7 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
   {
   slug: "calistenia-avancada",
   title: "Calistenia Avançada: Progressões para Planche, Front Lever e Human Flag",
-  metaTitle: "Calistenia Avançada: Guia de Progressões para Skills…",
+  metaTitle: "Calistenia Avançada: Progressões para Planche e Front Lever",
   metaDescription: "Como progredir na calistenia avançada? Progressões passo a passo para planche, front lever, human flag e muscle-up. Requisitos de força e cronograma realista.",
   excerpt: "Planche, front lever, human flag. Esses skills de calistenia avançada exigem força relativa, controle motor e paciência — não halteres. Veja as progressões certas e o que esperar em cada etapa.",
   category: "Treinamento",
