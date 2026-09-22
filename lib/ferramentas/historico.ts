@@ -34,6 +34,7 @@ export type Ferramenta =
   | "onerm"
   | "fc"
   | "polichinelos"
+  | "caminhada"
   | "diagnostico"
   | "rotina"
   | "academia"

@@ -143,18 +143,17 @@ export const ARTIGOS_COM_CALCULADORA_TDEE: string[] = [
   "metabolismo-lento-existe",
   "como-acelerar-o-metabolismo",
   "neat-gasto-calorico-diario",
-  /**
-   * O leitor sai com "500 polichinelos = 90 kcal" e a pergunta seguinte é
-   * "quanto isso pesa no meu dia". Só o gasto diário responde: 90 kcal é 4%
-   * de 2.400. O registro de déficit está no teto de oito; este é o encaixe
-   * certo, não o que sobrou.
+  /*
+   * "polichinelo-queima-quantas-calorias" ficou aqui até 22/09/2026, com o
+   * argumento de que a pergunta seguinte era o gasto do dia. O Search
+   * Console desmentiu: ~95% de quem chega a esse artigo vem com um número
+   * de polichinelos na cabeça e quer a conta com o próprio peso — que é a
+   * Calculadora de Polichinelos, não a de TDEE. Ele migrou para
+   * ARTIGOS_COM_CALCULADORA_POLICHINELO (lib/polichinelo.ts).
    */
-  "polichinelo-queima-quantas-calorias",
   /**
-   * Mesmo caso do polichinelo, com o mesmo destino: o leitor sai com
-   * "30 minutos = 165 kcal" e a pergunta que sobra é quanto isso pesa no
-   * gasto do dia. Oitavo do registro — o teto. O próximo artigo de gasto
-   * calórico vai para a variante de link ou desloca um destes.
+   * O leitor sai com "30 minutos = 165 kcal" e a pergunta que sobra é
+   * quanto isso pesa no gasto do dia. Sétimo do registro.
    */
   "caminhada-japonesa",
 ];

@@ -28,7 +28,8 @@ import { ARTIGOS_COM_CALCULADORA_MACROS } from "../lib/macros";
 import { ARTIGOS_COM_CALCULADORA_VOLUME, ARTIGOS_COM_LINK_VOLUME } from "../lib/treino/volume";
 import { SLUGS_COM_TESTE_MOBILIDADE } from "../lib/mobilidade/artigos";
 import { ARTIGOS_COM_CALCULADORA_FC, ARTIGOS_COM_LINK_FC } from "../lib/fc";
-import { ARTIGOS_COM_LINK_POLICHINELO } from "../lib/polichinelo";
+import { ARTIGOS_COM_CALCULADORA_POLICHINELO, ARTIGOS_COM_LINK_POLICHINELO } from "../lib/polichinelo";
+import { ARTIGOS_COM_CALCULADORA_CAMINHADA, ARTIGOS_COM_LINK_CAMINHADA } from "../lib/caminhada";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -54,6 +55,9 @@ const REGISTROS: [string, string[]][] = [
   ["FC", ARTIGOS_COM_CALCULADORA_FC],
   ["FC (link)", ARTIGOS_COM_LINK_FC],
   ["polichinelo (link)", ARTIGOS_COM_LINK_POLICHINELO],
+  ["polichinelo", ARTIGOS_COM_CALCULADORA_POLICHINELO],
+  ["caminhada", ARTIGOS_COM_CALCULADORA_CAMINHADA],
+  ["caminhada (link)", ARTIGOS_COM_LINK_CAMINHADA],
 ];
 
 const onde = new Map<string, string>();

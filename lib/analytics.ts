@@ -249,6 +249,18 @@ export type AnalyticsEvent =
   | "jumping_jack_cadence_open"
   | "jumping_jack_methodology_open"
   | "jumping_jack_tool_click"
+  /**
+   * Calculadora de Calorias da Caminhada. `mode` diz qual das quatro
+   * perguntas (tempo, distância, passos, meta), `pace` o ritmo e `incline`
+   * se a pessoa abriu a esteira — nunca o peso nem o resultado.
+   */
+  | "walking_calculator_view"
+  | "walking_calculator_use"
+  | "walking_mode_selected"
+  | "walking_preset"
+  | "walking_treadmill_open"
+  | "walking_methodology_open"
+  | "walking_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"

@@ -41,7 +41,11 @@ import CalculadoraMacros from "@/components/macros/CalculadoraMacros";
 import CalculadoraOneRM from "@/components/onerm/CalculadoraOneRM";
 import LinkFerramenta1RM from "@/components/onerm/LinkFerramenta1RM";
 import { ARTIGOS_COM_CALCULADORA_FC, ARTIGOS_COM_LINK_FC } from "@/lib/fc";
-import { ARTIGOS_COM_LINK_POLICHINELO } from "@/lib/polichinelo";
+import { ARTIGOS_COM_CALCULADORA_POLICHINELO, ARTIGOS_COM_LINK_POLICHINELO } from "@/lib/polichinelo";
+import { ARTIGOS_COM_CALCULADORA_CAMINHADA, ARTIGOS_COM_LINK_CAMINHADA } from "@/lib/caminhada";
+import CalculadoraCaminhada from "@/components/caminhada/CalculadoraCaminhada";
+import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
+import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
 import LinkFerramentaFC from "@/components/fc/LinkFerramentaFC";
 import LinkFerramentaPolichinelo from "@/components/polichinelo/LinkFerramentaPolichinelo";
@@ -177,7 +181,11 @@ export default async function BlogPost({ params }: Props) {
             ? "volume"
             : ARTIGOS_COM_CALCULADORA_FC.includes(post.slug)
               ? "fc"
-              : null;
+              : ARTIGOS_COM_CALCULADORA_POLICHINELO.includes(post.slug)
+                ? "polichinelos"
+                : ARTIGOS_COM_CALCULADORA_CAMINHADA.includes(post.slug)
+                  ? "caminhada"
+                  : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -371,6 +379,10 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraMacros placement={post.slug} />
                 ) : qualCalc === "fc" ? (
                   <CalculadoraFC placement={post.slug} />
+                ) : qualCalc === "polichinelos" ? (
+                  <CalculadoraPolichinelos placement={post.slug} />
+                ) : qualCalc === "caminhada" ? (
+                  <CalculadoraCaminhada placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}
@@ -448,6 +460,7 @@ export default async function BlogPost({ params }: Props) {
               pena?" e a calculadora no meio dele trocaria a resposta por um
               formulário — justo na página com 7.319 impressões do cluster. */}
           {ARTIGOS_COM_LINK_POLICHINELO.includes(post.slug) && <LinkFerramentaPolichinelo slug={post.slug} posicao="fim" />}
+          {ARTIGOS_COM_LINK_CAMINHADA.includes(post.slug) && <LinkFerramentaCaminhada slug={post.slug} />}
           {/* Conversor de mg/mL: convite, nunca embed. Uma seringa desenhada
               dentro de um artigo sobre um medicamento daria a impressão de que
               o texto ensina a medir AQUELE medicamento — e a ferramenta é

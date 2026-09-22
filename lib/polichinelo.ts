@@ -421,14 +421,18 @@ export const NOTA_SEGURANCA =
 export const ARTIGOS_COM_LINK_POLICHINELO: string[] = [
   /* 7.319 impressões em 90 dias e a página que o Google escolheu para o assunto. */
   "polichinelo-emagrece",
-  /*
-   * "polichinelo-queima-quantas-calorias" ficou de fora, e não por descuido.
-   * Ele já pertence ao registro do TDEE, com um motivo que continua válido:
-   * quem termina aquele texto sabe que 500 polichinelos são 90 kcal e a
-   * pergunta seguinte é quanto isso pesa no dia — que é o gasto diário, não
-   * outra conta de polichinelo. A regra de uma ferramenta por artigo existe
-   * para impedir exatamente a disputa que eu ia criar aqui, e o teste de
-   * cobertura a pegou. O caminho entre os dois existe pelo outro lado: a
-   * página da ferramenta linka para esse artigo em "Leia também".
-   */
 ];
+
+/**
+ * Artigos que EMBUTEM a calculadora, logo depois da primeira seção.
+ *
+ * O `polichinelo-queima-quantas-calorias` é o caso em que o embed é a
+ * resposta certa: o artigo inteiro é tabela para 70 kg, e quem chega nele
+ * — ~95% das buscas do cluster, pelo Search Console — vem com um número de
+ * polichinelos na cabeça e quer a conta com o próprio peso. Ele ficou no
+ * registro do TDEE até 22/09/2026 (o argumento era "a pergunta seguinte é
+ * o gasto do dia"); a calculadora de TDEE respondia uma pergunta que esse
+ * leitor ainda não tinha feito. O link para a página canônica entra junto,
+ * pelo motivo que lib/ferramentas/canonica.ts documenta.
+ */
+export const ARTIGOS_COM_CALCULADORA_POLICHINELO: string[] = ["polichinelo-queima-quantas-calorias"];
