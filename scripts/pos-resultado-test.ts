@@ -49,6 +49,7 @@ const CATEGORIAS: Record<Ferramenta, string[]> = {
   caminhada: ["padrao", "volume_alto"],
   eliptico: ["padrao", "volume_alto"],
   atividades: ["padrao", "volume_alto"],
+  corrida: ["padrao"],
   volume: ["padrao", "baixo", "alto", "adequado"],
   diagnostico: ["padrao"],
   rotina: ["padrao"],

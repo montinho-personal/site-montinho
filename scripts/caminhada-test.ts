@@ -1,4 +1,6 @@
 import { readFileSync } from "fs";
+import { marked } from "marked";
+import { splitAtPrimeiraSecao } from "../lib/cta/placement";
 /**
  * O motor da Calculadora de Calorias da Caminhada.
  *   npx tsx scripts/caminhada-test.ts
@@ -191,8 +193,8 @@ ok("nenhum artigo daqui está no TDEE ou na FC (uma ferramenta por artigo)",
 /* Os artigos que embutem dão a conta genérica na primeira seção — é ali que a calculadora entra. */
 for (const s of ARTIGOS_COM_CALCULADORA_CAMINHADA) {
   const post = blogPosts.find((p) => p.slug === s)!;
-  const h2 = (post.content.match(/<h2[\s>]/g) ?? []).length;
-  ok(`${s}: tem ao menos duas seções (o corte é depois da primeira)`, h2 >= 2);
+  ok(`${s}: o corte editorial existe (a calculadora tem onde entrar)`,
+    splitAtPrimeiraSecao(marked(post.content) as string) !== null);
 }
 
 // ─── 9 ──────────────────────────────────────────────────────────────────────
