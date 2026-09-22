@@ -25,6 +25,8 @@ import {
 import { NOTA_FOAM_ROLLER } from "@/lib/mobilidade/exercicios";
 import { figuraDoExercicio, figurasDoTeste } from "@/lib/mobilidade/figuras";
 import FiguraTeste from "./Figura";
+import DemonstracaoExercicio from "./DemonstracaoExercicio";
+import { videoDoExercicio } from "@/lib/mobilidade/videos";
 import {
   DIFICULDADES,
   NOME_REGIAO,
@@ -838,9 +840,15 @@ function Bloco({ titulo, freq, itens }: {
                 em três linhas — o card virava uma torre. As instruções ficam
                 em largura cheia logo abaixo. */}
             <div className="flex items-start gap-3 mb-2">
-              {figuraDoExercicio(exercicio.id) && (
+              {(videoDoExercicio(exercicio.id) || figuraDoExercicio(exercicio.id)) && (
                 <div className="w-[78px] flex-none">
-                  <FiguraTeste figura={figuraDoExercicio(exercicio.id)!} compacta />
+                  {/* Vídeo quando o exercício tem, desenho quando não tem —
+                      ver lib/mobilidade/videos.ts. */}
+                  <DemonstracaoExercicio
+                    video={videoDoExercicio(exercicio.id)}
+                    figura={figuraDoExercicio(exercicio.id)}
+                    nome={exercicio.nome}
+                  />
                 </div>
               )}
               <div className="min-w-0">
