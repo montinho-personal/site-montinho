@@ -52,7 +52,7 @@ export const FONTE_COMPENDIO_ELIPTICO: Fonte = {
   rotuloCurto: "Compêndio de Atividades Físicas (2024)",
   url: "https://pacompendium.com/conditioning-exercise/",
   resumo:
-    "lista o elíptico em duas entradas de exercício de condicionamento: esforço moderado e esforço vigoroso. Não há entrada de esforço leve.",
+    "lista o elíptico em duas entradas de exercício de condicionamento: esforço moderado, 6,0 METs, e esforço vigoroso, 9,0 METs. Não há entrada de esforço leve.",
 };
 
 export const FONTES_ELIPTICO: Fonte[] = [FONTE_COMPENDIO_ELIPTICO, FONTE_ACSM, FONTE_HALL];
@@ -72,16 +72,15 @@ export interface Esforco {
 /**
  * Os dois esforços do Compêndio, copiados.
  *
- * ATENÇÃO — conferir na fonte antes de publicar: os dois METs abaixo foram
- * reunidos por fontes secundárias que divergem entre si, porque o
- * Compêndio não estava acessível no momento da escrita. O teste
- * `scripts/eliptico-test.ts` trava estes valores; mudar aqui exige mudar lá.
+ * Conferidos na fonte em 22/09/2026: moderado 6,0 e vigoroso 9,0. O
+ * teste `scripts/eliptico-test.ts` trava estes valores; mudar aqui exige
+ * conferir o Compêndio de novo e mudar lá.
  */
 export const ESFORCOS: Esforco[] = [
   {
     id: "moderado",
     nome: "Moderado",
-    met: 5.0,
+    met: 6.0,
     comoReconhecer: "Dá para falar frases, com pausas para respirar. É o jeito como a maioria usa o aparelho.",
     origem: "elíptico, esforço moderado, no Compêndio de Atividades Físicas",
   },

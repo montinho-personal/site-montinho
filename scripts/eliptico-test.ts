@@ -20,16 +20,17 @@ const perto = (a: number, b: number, t = 0.01) => Math.abs(a - b) <= t;
 bloco("1. OS ESFORÇOS DO COMPÊNDIO");
 /* Trava dos METs: mudar em lib/eliptico.ts exige mudar aqui, conferindo a fonte. */
 ok("dois esforços, sem 'leve' inventado", ESFORCOS.length === 2 && !ESFORCOS.some((e) => /leve/i.test(e.nome)));
-ok("moderado = 5,0 METs", esforco("moderado").met === 5.0);
+ok("moderado = 6,0 METs", esforco("moderado").met === 6.0);
 ok("vigoroso = 9,0 METs", esforco("vigoroso").met === 9.0);
 ok("vigoroso > moderado", esforco("vigoroso").met > esforco("moderado").met);
 ok("todo esforço diz de onde veio", ESFORCOS.every((e) => /Compêndio/.test(e.origem)));
 
 bloco("2. A CONTA E OS MODOS");
-const r20 = deTempo(20, 70, 5);
-ok("20 min, 70 kg, 5 METs = 122,5 kcal", perto(r20.kcal, 122.5));
-ok("ida e volta concordam", perto(deKcal(r20.kcal, 70, 5).minutos, 20));
-ok("proporcional ao peso", perto(deTempo(20, 140, 5).kcal, r20.kcal * 2));
+const r20 = deTempo(20, 70, 6);
+ok("20 min, 70 kg, 6 METs = 147 kcal", perto(r20.kcal, 147));
+ok("ida e volta concordam", perto(deKcal(r20.kcal, 70, 6).minutos, 20));
+ok("proporcional ao peso", perto(deTempo(20, 140, 6).kcal, r20.kcal * 2));
+ok("30 min moderado, 70 kg ≈ 220 kcal (bate com a tabela do artigo)", Math.abs(deTempo(30, 70, esforco("moderado").met).kcal - 220) < 1);
 ok("líquido desconta 1 MET e é positivo", perto(kcalLiquida(r20, 70), r20.kcal - 1.225 * 20) && kcalLiquida(r20, 70) > 0);
 ok("a frase mantém o decimal do peso e não promete quilo",
   /82,5 kg/.test(fraseContexto(82.5, r20, "Moderado")) && !/perde|emagrec/i.test(fraseContexto(70, r20, "Moderado")));
