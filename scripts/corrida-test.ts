@@ -14,7 +14,7 @@ import {
   ARTIGOS_COM_CALCULADORA_CORRIDA, FONTES_CORRIDA, PROVAS, VELOCIDADE_MIN_CORRIDA,
   arredondaKcal, comparaComCaminhada, deDistanciaEPace, deDistanciaETempo, deTempoEPace,
   formataPace, formataRelogio, fraseContexto, kcalLiquida, kcalPorKm, metCorrida, metDoRitmo,
-  paceDeVelocidade, parsePace, simulacaoUmQuilo, tabelaPorPace, tabelaPorPeso, tabelaProvas,
+  kcalLiquidaPorKm, paceDeVelocidade, parsePace, simulacaoUmQuilo, tabelaPorPace, tabelaPorPeso, tabelaProvas,
   velocidadeDePace, paceValido,
 } from "../lib/corrida";
 import { ARTIGOS_COM_CALCULADORA_CAMINHADA, ARTIGOS_COM_LINK_CAMINHADA } from "../lib/caminhada";
@@ -74,8 +74,34 @@ ok("tempo+pace devolve o mesmo", perto(deTempoEPace(30, 360, 70).km, 5, 0.0001))
 ok("o gasto é proporcional ao peso", perto(deDistanciaEPace(5, 360, 140).kcal, r.kcal * 2, 0.01));
 ok("o gasto é proporcional à distância", perto(deDistanciaEPace(10, 360, 70).kcal, r.kcal * 2, 0.01));
 ok("líquido desconta 1 MET e é positivo", kcalLiquida(r, 70) > 0 && kcalLiquida(r, 70) < r.kcal);
-/* A regra de bolso que a página publica: ~1 kcal por quilo por quilômetro. */
-ok("o custo por km fica perto de 1 kcal por quilo", kcalPorKm(r) / 70 > 0.9 && kcalPorKm(r) / 70 < 1.3, String(kcalPorKm(r) / 70));
+/*
+ * A regra clássica é LÍQUIDA, e na equação da ACSM ela é exata: o termo
+ * 0,2 × v é proporcional à velocidade e o tempo por quilômetro é
+ * inversamente proporcional, então os dois se cancelam. Se alguém trocar o
+ * 0,2, esta linha cai — e ela é a mais sensível do arquivo.
+ */
+for (const [peso, pace] of [[50, 420], [70, 360], [70, 270], [120, 300]] as [number, number][]) {
+  const x = deDistanciaEPace(5, pace, peso);
+  ok(`líquido a ${formataPace(pace)} com ${peso} kg = 1,000 kcal por quilo por km`,
+    perto(kcalLiquidaPorKm(x, peso) / peso, 1, 0.0001), String(kcalLiquidaPorKm(x, peso) / peso));
+}
+ok("o bruto fica entre 1,05 e 1,15 por quilo", kcalPorKm(r) / 70 > 1.05 && kcalPorKm(r) / 70 < 1.15, String(kcalPorKm(r) / 70));
+ok("o bruto por km cai conforme o pace acelera (menos repouso somado)",
+  kcalPorKm(deDistanciaEPace(5, 270, 70)) < kcalPorKm(deDistanciaEPace(5, 420, 70)));
+/*
+ * O artigo de pular corda publica uma linha de corrida: 9 a 10 km/h, 300 a
+ * 350 kcal em 30 minutos para 70 kg. É a única menção numérica à corrida em
+ * outro artigo do site, e o líquido da ferramenta tem de caber nela —
+ * senão as duas páginas se contradizem.
+ */
+{
+  const trinta = (kmh: number) => {
+    const x = deDistanciaETempo((kmh * 30) / 60, 30, 70);
+    return kcalLiquida(x, 70);
+  };
+  ok("a 9 km/h o líquido em 30 min cabe em 300-350 kcal", trinta(9) >= 300 && trinta(9) <= 350, String(Math.round(trinta(9))));
+  ok("a 10 km/h o líquido em 30 min cabe em 300-350 kcal", trinta(10) >= 300 && trinta(10) <= 350, String(Math.round(trinta(10))));
+}
 /* O que a página afirma: o pace muda pouco o gasto POR QUILÔMETRO. */
 {
   const lento = kcalPorKm(deDistanciaEPace(5, 420, 70));
@@ -146,6 +172,7 @@ const tool = readFileSync("app/ferramentas/calculadora-corrida/page.tsx", "utf8"
 ok("um H1", (tool.match(/<h1[\s>]/g) ?? []).length === 1);
 ok("três tabelas em HTML", (tool.match(/<table/g) ?? []).length >= 3);
 ok("publica a equação da ACSM", /0,2 × v \+ 0,9/.test(tool));
+ok("a página diz que a regra de 1 kcal/kg/km é acima do repouso", /acima do repouso/.test(tool));
 ok("mostra a conferência contra o Compêndio", /metCorrida\(8\)/.test(tool) && /Compêndio/.test(tool));
 ok("simulação de 1 kg com aviso", /NÃO significa/.test(tool));
 ok("quatro fontes com URL", FONTES_CORRIDA.length === 4 && FONTES_CORRIDA.every((f) => /^https?:\/\//.test(f.url)));
