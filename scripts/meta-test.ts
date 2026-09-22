@@ -6,8 +6,8 @@ import { splitAtPrimeiraSecao } from "../lib/cta/placement";
  *   npx tsx scripts/meta-test.ts
  */
 import {
-  ARTIGOS_COM_CALCULADORA_META, SEMANAS_MAX, SEMANAS_MIN, TAXA_MAX, TAXA_MIN,
-  avalia, calcula, fimDoAno, formataFaixaKg, formataKg, formataSemanas, paraISO, parseData,
+  ARTIGOS_COM_CALCULADORA_META, PERDA_MAX_FRACAO, SEMANAS_MAX, SEMANAS_MIN, TAXA_MAX, TAXA_MIN,
+  abaixoDaRegraFixa, avalia, calcula, fimDoAno, formataFaixaKg, formataKg, formataSemanas, paraISO, parseData,
   pesoValido, semanasAte, semanasPara, semanasValidas, tabelaPorPeso, tabelaPorPrazo,
 } from "../lib/meta";
 import { ARTIGOS_COM_CALCULADORA_DEFICIT } from "../lib/calorias";
@@ -37,6 +37,7 @@ ok("o déficit cresce com a perda", r.deficitDiario.max > r.deficitDiario.min &&
 ok("mais tempo, mais perda", calcula(90, 24).perda.max > calcula(90, 12).perda.max);
 ok("mais peso, mais perda possível", calcula(120, 12).perda.max > calcula(60, 12).perda.max);
 ok("ninguém perde mais que o próprio peso", calcula(90, SEMANAS_MAX).perda.max < 90);
+ok("a tela avisa quando a projeção foi cortada", /noTeto/.test(readFileSync("components/meta/CalculadoraMeta.tsx", "utf8")));
 
 bloco("2. CONCORDÂNCIA COM O ARTIGO");
 /*
@@ -62,8 +63,41 @@ ok("a ponta exata da faixa cabe", avalia(r, r.perda.max) === "cabe");
 ok("um pouco acima fica apertado", avalia(r, r.perda.max * 1.2) === "apertado");
 ok("muito acima não cabe", avalia(r, r.perda.max * 2) === "nao-cabe");
 ok("o limite do apertado é uma vez e meia", avalia(r, r.perda.max * 1.5) === "apertado" && avalia(r, r.perda.max * 1.51) === "nao-cabe");
-ok("semanasPara devolve prazo maior para meta maior", semanasPara(90, 15) > semanasPara(90, 5));
-ok("semanasPara é coerente com a faixa", calcula(90, semanasPara(90, 10)).perda.max >= 10);
+ok("semanasPara devolve prazo maior para meta maior", semanasPara(90, 15)! > semanasPara(90, 5)!);
+ok("semanasPara é coerente com a faixa", calcula(90, semanasPara(90, 10)!).perda.max >= 10);
+/* Meta grande demais não recebe um prazo de três anos com cara de resposta. */
+ok("meta impossível devolve null em vez de prazo absurdo", semanasPara(90, 80) === null);
+
+bloco("3b. O TETO QUE A AUDITORIA EXIGIU");
+/*
+ * O caso que a conta sozinha não recusava: 35 kg em prazo longo projetava
+ * perder 22,7 kg e terminar com 12,3. Taxa percentual composta come
+ * qualquer peso se o prazo for grande o bastante.
+ */
+ok("o horizonte máximo é de um ano", SEMANAS_MAX === 52);
+ok("a projeção nunca passa de 25% do peso", PERDA_MAX_FRACAO === 0.25
+  && [35, 60, 90, 300].every((p) => calcula(p, SEMANAS_MAX).perda.max <= p * PERDA_MAX_FRACAO + 0.001));
+ok("35 kg num ano não projeta corpo impossível", calcula(35, SEMANAS_MAX).pesoFinal.min >= 35 * 0.75);
+ok("300 kg num ano também respeita o teto", calcula(300, SEMANAS_MAX).pesoFinal.min >= 225);
+ok("quando corta, a tela é avisada", calcula(35, SEMANAS_MAX).noTeto === true);
+ok("prazo curto não bate no teto", calcula(90, 12).noTeto === false);
+/* O teto corta a ponta alta primeiro; a baixa só encosta nele em prazo ainda maior. */
+{
+  const x = calcula(35, SEMANAS_MAX);
+  ok("no teto, a ponta alta para exatamente em 25% do peso", perto(x.perda.max, 35 * PERDA_MAX_FRACAO, 0.001), formataKg(x.perda.max));
+  ok("a ponta baixa continua abaixo do teto", x.perda.min <= x.perda.max);
+}
+
+bloco("3c. A REGRA FIXA QUE CIRCULA POR AÍ");
+/* "0,5 a 1 kg por semana" é média para quem pesa mais; em peso baixo a
+   faixa percentual fica abaixo, e a tela precisa explicar. */
+ok("50 kg fica abaixo da regra fixa e é sinalizado", abaixoDaRegraFixa(calcula(50, 12)));
+ok("90 kg não é sinalizado", !abaixoDaRegraFixa(calcula(90, 12)));
+ok("a faixa de 60 a 150 kg se sobrepõe à regra fixa",
+  [60, 70, 80, 90, 100, 120, 150].every((p) => {
+    const x = calcula(p, 12).porSemana;
+    return x.max >= 0.5 && x.min <= 1.0;
+  }));
 
 bloco("4. DATAS E LIMITES");
 {
@@ -76,6 +110,7 @@ bloco("4. DATAS E LIMITES");
 }
 ok("prazo curto demais é recusado", !semanasValidas(SEMANAS_MIN - 1) && semanasValidas(SEMANAS_MIN));
 ok("prazo longo demais é recusado", !semanasValidas(SEMANAS_MAX + 1) && semanasValidas(SEMANAS_MAX));
+ok("dois anos deixou de ser aceito", !semanasValidas(104));
 ok("peso fora da faixa é recusado", !pesoValido(20) && !pesoValido(400) && pesoValido(90));
 
 bloco("5. FORMATAÇÃO E TABELAS");
