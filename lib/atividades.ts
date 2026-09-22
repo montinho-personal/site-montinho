@@ -20,12 +20,17 @@
  * e a ferramenta responde a conta que o texto não responde: com o peso de
  * quem pergunta.
  *
- * CAMINHADA, ELÍPTICO E FUTEBOL NÃO ENTRAM
+ * CAMINHADA, ELÍPTICO, FUTEBOL E BOXE NÃO ENTRAM
  *
- * O futebol entrou aqui e saiu em 22/09/2026. Não porque o argumento
- * acima deixou de valer, mas porque o futebol passou a ter uma conta que
- * as outras não têm: o revezamento de times, que separa o tempo de bola
- * rolando do tempo na lateral. Ver lib/futebol.ts.
+ * Futebol e boxe entraram aqui e saíram em 22/09/2026. Não porque o
+ * argumento acima deixou de valer, mas porque cada um passou a ter uma
+ * conta que as outras não têm: o futebol, o revezamento de times; o boxe,
+ * o ritmo de socos que o Compêndio mediu e os rounds. Ver lib/futebol.ts
+ * e lib/boxe.ts.
+ *
+ * A saída do boxe também corrigiu um erro: esta tabela dava 7,8 METs ao
+ * saco e 9,3 ao sparring. No Compêndio de 2024, 7,8 é o sparring e o saco
+ * é 5,8.
  *
  * Os dois têm calculadora própria, com coisas que esta não faz
  * (inclinação, passos, comparação com o visor). Repeti-los aqui criaria a
@@ -132,19 +137,6 @@ export interface Atividade {
  * mudar aqui exige conferir a fonte e mudar lá.
  */
 export const ATIVIDADES: Atividade[] = [
-  {
-    id: "boxe",
-    nome: "Boxe",
-    artigoFrase: "uma sessão de boxe",
-    sessaoTipica: 60,
-    faixaPrincipal: 0,
-    fracaoAtiva: 0.7,
-    slug: "boxe-emagrece",
-    faixas: [
-      { id: "saco", nome: "Saco e aparelhos", met: 7.8, comoReconhecer: "Aula comum: saco, luva e combinações, com pausa entre as séries.", origem: "boxe no saco de pancadas" },
-      { id: "sparring", nome: "Sparring", met: 9.3, comoReconhecer: "Luta com parceiro, em rounds. É o mais intenso e o menos comum.", origem: "boxe, sparring" },
-    ],
-  },
   {
     id: "zumba",
     nome: "Zumba e dança aeróbica",
@@ -253,7 +245,11 @@ export const ATIVIDADES: Atividade[] = [
   },
 ];
 
-export const ATIVIDADE_PADRAO = "boxe";
+/**
+ * A primeira da lista. Não é um id fixo porque as atividades estão saindo
+ * uma a uma para calculadoras próprias — um id fixo quebraria a cada saída.
+ */
+export const ATIVIDADE_PADRAO = ATIVIDADES[0].id;
 
 export function atividade(id: string): Atividade {
   return ATIVIDADES.find((a) => a.id === id) ?? ATIVIDADES[0];
@@ -309,7 +305,7 @@ export function kcalLiquida(r: Resultado, pesoKg: number): number {
  * O tempo de esforço dentro de um tempo de aula.
  *
  * É a correção que falta em toda tabela de revista: uma aula de 60
- * minutos de boxe tem aquecimento, explicação e água no meio. A fração
+ * minutos tem aquecimento, explicação e água no meio. A fração
  * vem da atividade e é declarada na tela — não é um desconto secreto.
  */
 export function tempoAtivo(minutosDeAula: number, a: Atividade): number {
@@ -395,7 +391,6 @@ export const NOTA_SEM_PERDA_LOCALIZADA =
  * uma ferramenta por artigo.
  */
 export const ARTIGOS_COM_CALCULADORA_ATIVIDADES: string[] = [
-  "boxe-emagrece",
   "zumba-emagrece",
   "spinning-emagrece",
   "danca-emagrece",

@@ -38,6 +38,7 @@ import { ARTIGOS_COM_CALCULADORA_META } from "../lib/meta";
 import { ARTIGOS_COM_CALCULADORA_POTENCIAL } from "../lib/potencial";
 import { ARTIGOS_COM_CALCULADORA_COMPOSICAO } from "../lib/composicao";
 import { ARTIGOS_COM_CALCULADORA_FUTEBOL } from "../lib/futebol";
+import { ARTIGOS_COM_CALCULADORA_BOXE } from "../lib/boxe";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -75,6 +76,7 @@ const REGISTROS: [string, string[]][] = [
   ["potencial natural", ARTIGOS_COM_CALCULADORA_POTENCIAL],
   ["composição corporal", ARTIGOS_COM_CALCULADORA_COMPOSICAO],
   ["futebol", ARTIGOS_COM_CALCULADORA_FUTEBOL],
+  ["boxe", ARTIGOS_COM_CALCULADORA_BOXE],
 ];
 
 const onde = new Map<string, string>();
