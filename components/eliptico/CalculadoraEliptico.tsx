@@ -21,6 +21,8 @@ import {
   PESO_MAX,
   PESO_MIN,
   PRESETS_MINUTOS,
+  VISOR_MAX,
+  VISOR_MIN,
   VISOR_TOLERANCIA_PCT,
   arredondaKcal,
   comparaComEsteira,
@@ -242,6 +244,12 @@ export default function CalculadoraEliptico({ placement }: { placement: string }
           ))}
         </div>
         <p className="text-gray-400 text-sm mt-2 max-w-xl">{esf.comoReconhecer}</p>
+        {/* A ausência de "leve" é deliberada e precisa ser dita: o artigo tem
+            uma faixa leve em tabela, o Compêndio não tem entrada para ela. */}
+        <p className="text-gray-500 text-xs mt-1.5 max-w-xl">
+          São os dois únicos esforços medidos para o elíptico. Se o seu ritmo é mais leve que o moderado, o gasto
+          fica abaixo do que a conta mostra.
+        </p>
       </div>
 
       {modo === "tempo" && (
@@ -259,9 +267,14 @@ export default function CalculadoraEliptico({ placement }: { placement: string }
               </label>
               <div className="flex items-center gap-3">
                 <input id={idc("visor")} type="text" inputMode="numeric" autoComplete="off" placeholder="250" value={visorTexto}
-                  onChange={(e) => setVisorTexto(e.target.value)} className={`w-32 ${campo}`} />
+                  onChange={(e) => setVisorTexto(e.target.value)} className={`w-32 ${campo}`} aria-describedby={idc("visor-ajuda")} />
                 <span className="text-gray-300 text-lg">kcal</span>
               </div>
+              <p id={idc("visor-ajuda")} className="text-gray-400 text-sm mt-2 min-h-[20px]">
+                {visorTexto.trim() !== "" && !visorValido(visor)
+                  ? `Use o número que apareceu no visor, entre ${VISOR_MIN} e ${VISOR_MAX.toLocaleString("pt-BR")} kcal.`
+                  : ""}
+              </p>
             </div>
           )}
         </div>

@@ -107,7 +107,7 @@ const faq: ItemFAQ[] = [
   {
     question: "Elíptico ou esteira: qual gasta mais?",
     answer:
-      "Na mesma sensação de esforço, ficam perto. O elíptico moderado gasta um pouco mais que uma caminhada rápida no plano; a esteira inclinada alcança ou passa o elíptico. A diferença que importa é outra: o elíptico tem impacto baixo e a esteira permite subir a inclinação. Gasta mais o que você repete mais vezes na semana.",
+      `Para ${PESO_PADRAO} kg em 30 minutos: elíptico moderado ≈ ${arredondaKcal(EX(30).kcal)} kcal e vigoroso ≈ ${arredondaKcal(EX(30, VIG.met).kcal)} kcal; caminhada rápida no plano ≈ ${arredondaKcal(CMP.find((l) => /rápida/.test(l.nome))!.kcal)} kcal e esteira a 5 km/h com 10% de inclinação ≈ ${arredondaKcal(CMP.find((l) => /inclinação/.test(l.nome))!.kcal)} kcal. Ou seja: a esteira inclinada passa o elíptico moderado e fica abaixo do vigoroso. A diferença que importa é outra: o elíptico poupa o impacto e a esteira permite inclinar — gasta mais o que você repete mais vezes na semana.`,
   },
   {
     question: "Elíptico emagrece?",
