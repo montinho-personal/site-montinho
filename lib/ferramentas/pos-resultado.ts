@@ -61,6 +61,7 @@ export const NOME: Record<Ferramenta, string> = {
   eliptico: "Calculadora de Calorias do Elíptico",
   atividades: "Calculadora de Calorias por Atividade",
   corrida: "Calculadora de Corrida",
+  glp1: "Calculadora de Massa Magra no GLP-1",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -98,6 +99,7 @@ export const ROTA: Record<Ferramenta, string> = {
   eliptico: "/ferramentas/calculadora-calorias-eliptico",
   atividades: "/ferramentas/calculadora-calorias-atividades",
   corrida: "/ferramentas/calculadora-corrida",
+  glp1: "/ferramentas/massa-magra-glp1",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -131,6 +133,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   atividades: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   /* Quem corre e quer emagrecer esbarra no gasto do dia antes de esbarrar no pace. */
   corrida: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
+  /* A meta de proteína é o próximo passo concreto de quem viu a faixa. */
+  glp1: { ferramenta: "proteina", label: "Calcular minha meta de proteína" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -250,6 +254,31 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
       interpretacao:
         "Esse é o gasto de uma corrida, não o do seu dia. E repare no número por quilômetro: ele quase não muda com o pace — correr mais rápido gasta mais por minuto, não por quilômetro.",
       pedido: "Queria entender como encaixar a corrida na minha semana sem perder músculo.",
+    },
+  },
+  glp1: {
+    padrao: {
+      interpretacao:
+        "Essa faixa é de população, não medição do seu corpo. O que ela mostra de útil é o tamanho da diferença entre proteger e não proteger a massa magra.",
+      pedido: "Estou emagrecendo com medicação e queria ajuda para não perder músculo no caminho.",
+    },
+    nenhuma: {
+      interpretacao:
+        "Sem treino de força e sem proteína suficiente, você está na faixa mais alta de perda de massa magra que a literatura descreve — e é também a situação em que mais dá para melhorar.",
+      pergunta: "Quer que eu monte o treino de força que protege essa massa?",
+      pedido: "Estou emagrecendo com medicação, sem treino de força, e queria proteger minha massa muscular.",
+    },
+    parcial: {
+      interpretacao:
+        "Você já tem metade da proteção no lugar. A outra metade é o que separa a sua faixa atual da mais baixa possível.",
+      pergunta: "Quer que eu te ajude a fechar a outra metade?",
+      pedido: "Estou emagrecendo com medicação e queria ajuda para completar a proteção da massa muscular.",
+    },
+    completa: {
+      interpretacao:
+        "Você está no melhor cenário desta conta. Daqui para frente o que decide é manter a carga da musculação subindo enquanto o peso desce.",
+      pergunta: "Quer que eu revise se o seu treino está progredindo do jeito certo?",
+      pedido: "Estou emagrecendo com medicação, já treino e como proteína, e queria revisar se meu treino está progredindo certo.",
     },
   },
   deficit: {

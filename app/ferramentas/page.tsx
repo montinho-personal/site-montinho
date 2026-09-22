@@ -55,15 +55,16 @@ const itemListSchema = {
     { "@type": "ListItem", position: 15, name: "Calculadora de Calorias do Elíptico", url: `${SITE_URL}/ferramentas/calculadora-calorias-eliptico` },
     { "@type": "ListItem", position: 16, name: "Calculadora de Calorias por Atividade", url: `${SITE_URL}/ferramentas/calculadora-calorias-atividades` },
     { "@type": "ListItem", position: 17, name: "Calculadora de Corrida", url: `${SITE_URL}/ferramentas/calculadora-corrida` },
+    { "@type": "ListItem", position: 18, name: "Calculadora de Massa Magra no GLP-1", url: `${SITE_URL}/ferramentas/massa-magra-glp1` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 18, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 19, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
-      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 19 : 18, name: "Calculadora de Peptídeos e UI na Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
+      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 20 : 19, name: "Calculadora de Peptídeos e UI na Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
       : []),
-    { "@type": "ListItem", position: (MOBILIDADE_NO_AR ? 19 : 18) + (CONVERSOR_NO_AR ? 1 : 0), name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: (MOBILIDADE_NO_AR ? 20 : 19) + (CONVERSOR_NO_AR ? 1 : 0), name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -206,6 +207,15 @@ const FERRAMENTAS = [
     texto:
       "Converte distância, tempo e pace: informe dois e veja o terceiro, com o gasto calórico pelo seu peso. Mostra o tempo estimado de 5 km, 10 km, meia e maratona no seu pace, e compara correr com caminhar a mesma distância.",
     quando: "Use para planejar uma prova ou entender o gasto de um treino. O peso não sai do navegador.",
+  },
+  {
+    href: "/ferramentas/massa-magra-glp1",
+    nome: "Massa Magra no GLP-1",
+    pergunta: "Quanto do meu emagrecimento pode ser músculo?",
+    tempo: "20 segundos · sem cadastro",
+    texto:
+      "Para quem emagrece com Mounjaro, Ozempic, tirzepatida ou retatrutida: estima a faixa de massa magra perdida com os dados dos ensaios clínicos e mostra quanto essa faixa encolhe com treino de força e proteína. Não fala de dose nem de marca.",
+    quando: "Use quando a balança está descendo e a dúvida é se está indo músculo junto. Nada do que você digita sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{

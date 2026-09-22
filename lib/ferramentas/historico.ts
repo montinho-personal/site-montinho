@@ -38,6 +38,7 @@ export type Ferramenta =
   | "eliptico"
   | "atividades"
   | "corrida"
+  | "glp1"
   | "diagnostico"
   | "rotina"
   | "academia"

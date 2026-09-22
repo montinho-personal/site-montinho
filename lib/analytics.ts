@@ -286,6 +286,15 @@ export type AnalyticsEvent =
   | "running_incline_open"
   | "running_methodology_open"
   | "running_tool_click"
+  /**
+   * Calculadora de Massa Magra no GLP-1. `protection` diz em qual dos três
+   * cenários a pessoa caiu — nunca o peso, nunca as gramas de proteína, e
+   * nunca qual medicamento, que a ferramenta sequer pergunta.
+   */
+  | "glp1_calculator_view"
+  | "glp1_calculator_use"
+  | "glp1_methodology_open"
+  | "glp1_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"

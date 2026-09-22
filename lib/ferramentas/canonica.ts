@@ -63,6 +63,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Corrida",
     motivo: "que converte pace, tempo e distância, estima o tempo de 5 km a 42 km e compara correr com caminhar",
   },
+  glp1: {
+    href: "/ferramentas/massa-magra-glp1",
+    ancora: "Calculadora de Massa Magra no GLP-1",
+    motivo: "com as faixas dos ensaios clínicos, o que muda com treino e proteína, e o que a massa magra realmente inclui",
+  },
   proteina: {
     href: "/ferramentas/calculadora-de-proteina",
     ancora: "Calculadora de Proteína",
