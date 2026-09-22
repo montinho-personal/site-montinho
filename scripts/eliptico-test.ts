@@ -41,10 +41,29 @@ ok("visor 20% abaixo é 'abaixo'", leituraVisor(comparaVisor(80, 100)) === "abai
 ok(`dentro de ${VISOR_TOLERANCIA_PCT}% é 'parecido'`, leituraVisor(comparaVisor(110, 100)) === "parecido");
 ok("diferença percentual correta", perto(comparaVisor(150, 100), 50));
 
+bloco("3b. O QUE A PÁGINA E O COMPONENTE PROMETEM POR ESCRITO");
+{
+  const comp = readFileSync("components/eliptico/CalculadoraEliptico.tsx", "utf8");
+  /* A tabela do artigo tem uma faixa "leve"; o Compêndio não. Sem esta frase,
+     quem vem do artigo procura um botão que não existe. */
+  ok("o componente explica por que não há esforço leve", /dois únicos esforços medidos/.test(comp));
+  ok("o campo do visor avisa quando o número é inválido", /visor-ajuda/.test(comp) && /!visorValido\(visor\)/.test(comp));
+  const tool = readFileSync("app/ferramentas/calculadora-calorias-eliptico/page.tsx", "utf8");
+  /* A comparação com a esteira sai do motor, não de adjetivo escrito à mão. */
+  ok("o FAQ da comparação usa os números do motor", /CMP\.find/.test(tool) && !/alcança ou passa/.test(tool));
+}
+
 bloco("4. COMPARAÇÃO E TABELAS");
 const cmp = comparaComEsteira(30, 70);
 ok("compara com caminhada e esteira inclinada", cmp.some((l) => /Caminhada/.test(l.nome)) && cmp.some((l) => /inclinação/.test(l.nome)));
 ok("ordenada do maior para o menor", cmp.every((l, i) => i === 0 || l.kcal <= cmp[i - 1].kcal));
+/* O que o FAQ afirma: a esteira a 10% passa o moderado e fica abaixo do vigoroso. */
+{
+  const incl = cmp.find((l) => /inclinação/.test(l.nome))!.kcal;
+  const mod = cmp.find((l) => l.id === "eliptico-moderado")!.kcal;
+  const vig = cmp.find((l) => l.id === "eliptico-vigoroso")!.kcal;
+  ok("a esteira a 10% passa o elíptico moderado e fica abaixo do vigoroso", incl > mod && incl < vig);
+}
 ok("tabela por peso cresce", tabelaPorPeso(20).every((l, i, a) => i === 0 || l.moderado > a[i - 1].moderado));
 ok("vigoroso > moderado em toda linha", tabelaPorTempo(70).every((l) => l.vigoroso > l.moderado));
 
