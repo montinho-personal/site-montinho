@@ -13,7 +13,7 @@
  * Por isso os testes 4, 5 e 9 valem mais que todos os outros juntos.
  */
 
-import { readFileSync } from "fs";
+import { readFileSync, existsSync, statSync } from "fs";
 import {
   REGIOES,
   adiadas,
@@ -35,6 +35,7 @@ import { ARTIGOS_COM_TESTE_MOBILIDADE, SLUGS_COM_TESTE_MOBILIDADE } from "../lib
 import { AVISO_HISTORICO } from "../lib/mobilidade/historico";
 import { MOBILIDADE_NO_AR } from "../lib/mobilidade/lancamento";
 import { FIGURAS_EXERCICIO, figuraDoExercicio, figurasDoTeste } from "../lib/mobilidade/figuras";
+import { VIDEOS_EXERCICIO } from "../lib/mobilidade/videos";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -443,8 +444,11 @@ check("nada sai do quadro nas figuras de exercício", foraEx.length === 0,
   foraEx.map((p) => p.join(",")).join(" | "));
 
 check("o card do protocolo renderiza a figura", /figuraDoExercicio\(exercicio\.id\)/.test(comp));
+/* Desde que o card aceita vídeo, a figura é desenhada dentro de
+   DemonstracaoExercicio — é lá que o modo compacto tem de estar. */
 check("a figura do card usa o modo compacto (sem legenda repetindo o nome)",
-  /compacta/.test(comp) && /compacta = false/.test(figuraComp));
+  /<FiguraTeste figura=\{figura\} compacta \/>/.test(readFileSync("components/mobilidade/DemonstracaoExercicio.tsx", "utf8"))
+    && /compacta = false/.test(figuraComp));
 
 // ─── 14 ── INTEGRAÇÃO COM O SITE ────────────────────────────────────────────
 bloco("13. A FERRAMENTA ESTÁ LIGADA AO SITE");
@@ -536,6 +540,48 @@ check("o resultado aparece ANTES de qualquer pedido de contato",
   comp.indexOf('fase === "resultado"') < comp.indexOf("Receber no WhatsApp"));
 check("o botão de WhatsApp não bloqueia o protocolo",
   !/bloqueado|desbloque|libera(r)? (o )?resultado/i.test(comp));
+
+// ─── vídeos de demonstração ─────────────────────────────────────────────────
+bloco("VÍDEOS DOS EXERCÍCIOS — SÓ ONDE O MOVIMENTO É A INFORMAÇÃO");
+{
+  /*
+   * O vídeo substitui o desenho só nos exercícios de movimento. Estas travas
+   * existem porque o erro é fácil e invisível: colocar vídeo num alongamento
+   * parado (pessoa imóvel, peso à toa) ou apontar para um arquivo que não
+   * subiu (card com um quadrado vazio no meio do protocolo).
+   */
+  const ids = Object.keys(VIDEOS_EXERCICIO);
+  const porId = new Map(EXERCICIOS.map((e) => [e.id, e]));
+  const inexistentes = ids.filter((id) => !porId.has(id));
+  check("todo vídeo aponta para um exercício que existe", inexistentes.length === 0, inexistentes.join(", "));
+  const parados = ids.filter((id) => porId.get(id)?.tipo === "estatico");
+  check("nenhum alongamento parado ganhou vídeo", parados.length === 0, parados.join(", "));
+
+  const TETO_KB = 600;
+  for (const id of ids) {
+    const v = VIDEOS_EXERCICIO[id];
+    const mp4 = "public" + v.mp4, webm = "public" + v.webm, poster = "public" + v.poster;
+    check(`${id}: o mp4 está no repositório`, existsSync(mp4), mp4);
+    check(`${id}: o webm está no repositório`, existsSync(webm), webm);
+    check(`${id}: o primeiro quadro está no repositório`, existsSync(poster), poster);
+    if (existsSync(mp4)) {
+      const kb = statSync(mp4).size / 1024;
+      check(`${id}: vídeo com ${Math.round(kb)} KB (teto ${TETO_KB})`, kb <= TETO_KB);
+    }
+    check(`${id}: origem registrada`, v.origem.length > 0);
+  }
+
+  const demo = readFileSync("components/mobilidade/DemonstracaoExercicio.tsx", "utf8");
+  check("sem vídeo, o card cai no desenho", /if \(!video\) return figura \? <FiguraTeste/.test(demo));
+  check("vídeo não baixa antes de aparecer", /preload="none"/.test(demo));
+  check("vídeo pausa fora da tela", /IntersectionObserver/.test(demo) && /\.pause\(\)/.test(demo));
+  check("quem pede menos movimento não recebe autoplay", /prefers-reduced-motion: reduce/.test(demo));
+  check("webm antes do mp4 (o navegador fica com o primeiro que sabe tocar)",
+    demo.indexOf('type="video/webm"') > 0 && demo.indexOf('type="video/webm"') < demo.indexOf('type="video/mp4"'));
+  check("vídeo mudo e inline (senão o iPhone abre em tela cheia)", /\bmuted\b/.test(demo) && /playsInline/.test(demo));
+  check("as figuras dos TESTES continuam desenho", /<FiguraTeste key=\{f\.tipo\} figura=\{f\} \/>/.test(comp.replace(/\s+/g, " ")) || /FiguraTeste key=/.test(readFileSync("components/mobilidade/TesteMobilidade.tsx", "utf8")));
+  check(`estado atual: ${ids.length} de ${EXERCICIOS.filter((e) => e.tipo !== "estatico").length} exercícios de movimento com vídeo`, true);
+}
 
 // ─── fim ────────────────────────────────────────────────────────────────────
 console.log("\n" + "=".repeat(64));
