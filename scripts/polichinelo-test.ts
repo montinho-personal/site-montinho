@@ -1,3 +1,4 @@
+import { readFileSync } from "fs";
 /**
  * O motor da Calculadora de Polichinelos.
  *   npx tsx scripts/polichinelo-test.ts
@@ -279,6 +280,41 @@ ok("todo artigo do registro existe",
   ARTIGOS_COM_LINK_POLICHINELO.filter((s) => !slugs.has(s)).join(", "));
 ok("o artigo de maior tráfego do cluster está no registro",
   ARTIGOS_COM_LINK_POLICHINELO.includes("polichinelo-emagrece"));
+
+// ─── 12 ─────────────────────────────────────────────────────────────────────
+bloco("12. O CONVITE DO TOPO FICA ONDE A PESSOA QUER A CONTA");
+{
+  /*
+   * ~95% das buscas de polichinelo chegam com um número na cabeça. O convite
+   * do fim do artigo chegava tarde; o do topo entra logo depois da primeira
+   * seção, onde o artigo dá a conta genérica.
+   */
+  const pagina = readFileSync("app/blog/[slug]/page.tsx", "utf8");
+  const link = readFileSync("components/polichinelo/LinkFerramentaPolichinelo.tsx", "utf8");
+  ok("a página põe o convite do topo depois da primeira seção",
+    /linkPolichineloNoTopo[\s\S]{0,120}splitAtPrimeiraSecao/.test(pagina)
+      && /<LinkFerramentaPolichinelo slug=\{post\.slug\} posicao="topo" \/>/.test(pagina));
+  ok("o convite do fim continua no artigo",
+    /<LinkFerramentaPolichinelo slug=\{post\.slug\} posicao="fim" \/>/.test(pagina));
+  ok("o topo só entra onde não há calculadora embutida (senão seriam duas ferramentas no mesmo ponto)",
+    /linkPolichineloNoTopo = !qualCalc &&/.test(pagina));
+  ok("topo e fim mandam placements diferentes para o GA4",
+    /`topo-\$\{slug\}`/.test(link) && /`link-\$\{slug\}`/.test(link));
+
+  /*
+   * O texto do topo diz "Esses números são para 70 kg". Isso só é verdade
+   * se a primeira seção do artigo fizer a conta para 70 kg — então todo
+   * artigo que entrar no registro tem de fazer. Sem esta trava, o próximo
+   * artigo adicionado herdaria uma frase falsa.
+   */
+  ok("o convite do topo afirma o peso de referência", /Esses números são para 70 kg/.test(link));
+  for (const slug of ARTIGOS_COM_LINK_POLICHINELO) {
+    const html = blogPosts.find((p) => p.slug === slug)?.content ?? "";
+    const h2 = [...html.matchAll(/<h2[\s>]/gi)].map((m) => m.index ?? 0);
+    const primeiraSecao = h2.length >= 2 ? html.slice(0, h2[1]) : "";
+    ok(`${slug}: a primeira seção faz a conta para 70 kg`, /70\s?kg/.test(primeiraSecao));
+  }
+}
 
 console.log("\n" + "=".repeat(64));
 if (falhas > 0) {

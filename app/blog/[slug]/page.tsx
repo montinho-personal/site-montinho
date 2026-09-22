@@ -178,7 +178,19 @@ export default async function BlogPost({ params }: Props) {
             : ARTIGOS_COM_CALCULADORA_FC.includes(post.slug)
               ? "fc"
               : null;
-  const calcSplit = qualCalc ? splitAtPrimeiraSecao(contentHtml) : null;
+  /*
+   * Link para a Calculadora de Polichinelos logo depois da primeira seção.
+   *
+   * No Search Console, ~95% de quem busca polichinelo chega com um número na
+   * cabeça ("100 polichinelos queima quantas calorias?", "quantos para perder
+   * 100 calorias?") — e a primeira seção do artigo dá a conta só para 70 kg.
+   * O convite no fim do texto chegava tarde: quem queria a conta já tinha ido
+   * embora. Aqui ele entra no ponto exato em que a pessoa leu o número
+   * genérico e quer o dela. Link, não a ferramenta embutida: ver
+   * LinkFerramentaPolichinelo.
+   */
+  const linkPolichineloNoTopo = !qualCalc && ARTIGOS_COM_LINK_POLICHINELO.includes(post.slug);
+  const calcSplit = qualCalc || linkPolichineloNoTopo ? splitAtPrimeiraSecao(contentHtml) : null;
   const corpoRestante = calcSplit ? calcSplit.after : contentHtml;
 
   // Só divide o HTML se houver um CTA de meio E um ponto de corte editorial
@@ -333,7 +345,9 @@ export default async function BlogPost({ params }: Props) {
             <>
               <div className="prose-blog" dangerouslySetInnerHTML={{ __html: calcSplit.before }} />
               <div className="my-10">
-                {qualCalc === "proteina" ? (
+                {linkPolichineloNoTopo ? (
+                  <LinkFerramentaPolichinelo slug={post.slug} posicao="topo" />
+                ) : qualCalc === "proteina" ? (
                   <>
                     {/* Ressalva de contexto ANTES da ferramenta: quem lê o
                         número precisa saber como lê-lo, e aviso depois do
@@ -433,7 +447,7 @@ export default async function BlogPost({ params }: Props) {
           {/* Polichinelo: convite, nunca embed. O artigo responde "vale a
               pena?" e a calculadora no meio dele trocaria a resposta por um
               formulário — justo na página com 7.319 impressões do cluster. */}
-          {ARTIGOS_COM_LINK_POLICHINELO.includes(post.slug) && <LinkFerramentaPolichinelo slug={post.slug} />}
+          {ARTIGOS_COM_LINK_POLICHINELO.includes(post.slug) && <LinkFerramentaPolichinelo slug={post.slug} posicao="fim" />}
           {/* Conversor de mg/mL: convite, nunca embed. Uma seringa desenhada
               dentro de um artigo sobre um medicamento daria a impressão de que
               o texto ensina a medir AQUELE medicamento — e a ferramenta é
