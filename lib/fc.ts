@@ -206,5 +206,9 @@ export const ARTIGOS_COM_LINK_FC: string[] = [
   "jiu-jitsu-emagrece",
   "futebol-emagrece",
   "corrida-de-rua-iniciante",
-  "eliptico-emagrece",
+  /*
+   * "eliptico-emagrece" saiu daqui: as buscas que trazem gente a ele são
+   * de caloria ("20 minutos de elíptico queima quantas calorias"), e ele
+   * passou a embutir a Calculadora de Calorias do Elíptico (lib/eliptico.ts).
+   */
 ];

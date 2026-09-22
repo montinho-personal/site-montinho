@@ -58,6 +58,7 @@ export const NOME: Record<Ferramenta, string> = {
   fc: "Calculadora de Zonas de Frequência Cardíaca",
   polichinelos: "Calculadora de Polichinelos",
   caminhada: "Calculadora de Calorias da Caminhada",
+  eliptico: "Calculadora de Calorias do Elíptico",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -92,6 +93,7 @@ export const ROTA: Record<Ferramenta, string> = {
   fc: "/ferramentas/zonas-de-frequencia-cardiaca",
   polichinelos: "/ferramentas/calculadora-polichinelos",
   caminhada: "/ferramentas/calculadora-calorias-caminhada",
+  eliptico: "/ferramentas/calculadora-calorias-eliptico",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -121,6 +123,7 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   /* Mesma lógica: a caminhada é o gasto de uma atividade; a conta que
      decide emagrecimento é a do dia inteiro. */
   caminhada: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
+  eliptico: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -205,6 +208,19 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
     volume_alto: {
       interpretacao:
         "Para chegar nesse gasto só caminhando seria muito tempo por dia. Distribuir entre caminhada, musculação e o movimento do dia costuma render mais e sobreviver mais semanas.",
+      pergunta: "Quer que eu monte uma distribuição que caiba na sua semana?",
+      pedido: "O tempo que saiu foi alto e queria ajuda para distribuir isso na semana.",
+    },
+  },
+  eliptico: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto de uma sessão, não o do seu dia. O elíptico rende quando entra numa semana com musculação e alimentação ajustada — sozinho, é o caminho mais lento.",
+      pedido: "Queria entender quanto de cardio eu realmente preciso para o meu objetivo.",
+    },
+    volume_alto: {
+      interpretacao:
+        "Para chegar nesse gasto só no elíptico seria muito tempo por dia. Distribuir entre cardio, musculação e o movimento do dia costuma render mais e durar mais semanas.",
       pergunta: "Quer que eu monte uma distribuição que caiba na sua semana?",
       pedido: "O tempo que saiu foi alto e queria ajuda para distribuir isso na semana.",
     },

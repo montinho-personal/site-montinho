@@ -44,6 +44,8 @@ import { ARTIGOS_COM_CALCULADORA_FC, ARTIGOS_COM_LINK_FC } from "@/lib/fc";
 import { ARTIGOS_COM_CALCULADORA_POLICHINELO, ARTIGOS_COM_LINK_POLICHINELO } from "@/lib/polichinelo";
 import { ARTIGOS_COM_CALCULADORA_CAMINHADA, ARTIGOS_COM_LINK_CAMINHADA } from "@/lib/caminhada";
 import CalculadoraCaminhada from "@/components/caminhada/CalculadoraCaminhada";
+import { ARTIGOS_COM_CALCULADORA_ELIPTICO } from "@/lib/eliptico";
+import CalculadoraEliptico from "@/components/eliptico/CalculadoraEliptico";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -185,7 +187,9 @@ export default async function BlogPost({ params }: Props) {
                 ? "polichinelos"
                 : ARTIGOS_COM_CALCULADORA_CAMINHADA.includes(post.slug)
                   ? "caminhada"
-                  : null;
+                  : ARTIGOS_COM_CALCULADORA_ELIPTICO.includes(post.slug)
+                    ? "eliptico"
+                    : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -383,6 +387,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraPolichinelos placement={post.slug} />
                 ) : qualCalc === "caminhada" ? (
                   <CalculadoraCaminhada placement={post.slug} />
+                ) : qualCalc === "eliptico" ? (
+                  <CalculadoraEliptico placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}

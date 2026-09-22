@@ -47,6 +47,7 @@ const CATEGORIAS: Record<Ferramenta, string[]> = {
   fc: ["padrao"],
   polichinelos: ["padrao", "volume_alto"],
   caminhada: ["padrao", "volume_alto"],
+  eliptico: ["padrao", "volume_alto"],
   volume: ["padrao", "baixo", "alto", "adequado"],
   diagnostico: ["padrao"],
   rotina: ["padrao"],
