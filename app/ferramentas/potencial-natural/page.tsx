@@ -10,6 +10,7 @@ import {
   FONTE_FFMI_MULHERES,
   FONTE_KOURI,
   NIVEIS,
+  NOTA_GORDURA_ALTA,
   NOTA_GORDURA_ESTIMADA,
   NOTA_NAO_E_PAREDE,
   NOTA_NAO_PRESCREVE,
@@ -270,12 +271,13 @@ export default function PotencialNaturalPage() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>A entrada mais frágil</h2>
             <p className="text-gray-300 leading-relaxed mb-4">{NOTA_GORDURA_ESTIMADA}</p>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed mb-4">
               Um exemplo do tamanho do problema: o mesmo homem de 1,78 m e 75 kg tem FFMI normalizado{" "}
               {formataFFMI(calcula(1.78, 75, 12, "homem", "intermediario").ffmiNormalizado)} se a gordura for 12%
               e {formataFFMI(calcula(1.78, 75, 20, "homem", "intermediario").ffmiNormalizado)} se for 20%. A
               diferença entre esses dois números é maior que a diferença entre dois anos de treino bem feito.
             </p>
+            <p className="text-gray-300 leading-relaxed">{NOTA_GORDURA_ALTA}</p>
           </div>
 
           <div>
