@@ -37,6 +37,15 @@
  * entre pessoas é maior que qualquer precisão que um formulário pudesse
  * fingir.
  *
+ * O QUE ELA NÃO CONSIDERA, E POR QUÊ
+ *
+ * A velocidade da perda também pesa: quanto mais rápido o peso cai, maior
+ * tende a ser a fração de massa magra. A ferramenta não pergunta em quanto
+ * tempo a perda aconteceu porque não existe número publicado bom o
+ * suficiente para transformar isso em faixa sem inventar precisão — e um
+ * campo a mais que não muda a conta é atrito puro. A metodologia diz isso
+ * em voz alta, em vez de fingir que a velocidade não importa.
+ *
  * O QUE ESTA FERRAMENTA NUNCA FAZ
  *
  * Falar de dose, de marca, de começar ou de parar medicação. Isso é do
@@ -120,9 +129,24 @@ export const TREINOS: Treino[] = [
   { id: "regular", nome: "3 vezes ou mais", descricao: "Musculação regular, com carga que evolui." },
 ];
 
-/** Faixas de proteína por quilo de peso CORPORAL ATUAL. */
+/**
+ * Faixas de proteína por quilo de peso CORPORAL ATUAL.
+ *
+ * A auditoria alinhou estes números com os artigos do cluster, que já
+ * publicavam "alvo mínimo 1,6 g/kg, ideal 2,0 a 2,2". A calculadora usava
+ * 1,6 como meta e pedia 144 g para 90 kg, enquanto o artigo ao lado pedia
+ * 180 a 198 — duas metas diferentes na mesma página.
+ *
+ * PROTEINA_SUFICIENTE é o que basta para a proteção contar como completa:
+ * abaixo disso a literatura não sustenta a faixa baixa de perda de massa
+ * magra. PROTEINA_ALVO é a meta que a ferramenta mostra, porque é onde os
+ * artigos e a literatura de preservação colocam o ideal — e quem já passou
+ * de 1,6 não é mandado "melhorar", porque já está protegido.
+ */
 export const PROTEINA_MINIMA = 1.2;
-export const PROTEINA_ALVO = 1.6;
+export const PROTEINA_SUFICIENTE = 1.6;
+export const PROTEINA_ALVO = 2.0;
+export const PROTEINA_ALVO_MAX = 2.2;
 
 export const PESO_MIN = 30;
 export const PESO_MAX = 300;
@@ -163,7 +187,7 @@ export const FRACAO_MASSA_MAGRA: Record<Protecao, Faixa> = {
 
 /** Que proteção a pessoa tem hoje, pelo treino e pela proteína. */
 export function protecaoDe(treino: TreinoId, proteinaPorKg: number): Protecao {
-  const proteinaOk = proteinaPorKg >= PROTEINA_ALVO;
+  const proteinaOk = proteinaPorKg >= PROTEINA_SUFICIENTE;
   const proteinaMinima = proteinaPorKg >= PROTEINA_MINIMA;
   const treinoOk = treino === "regular";
   if (treinoOk && proteinaOk) return "completa";
@@ -186,9 +210,11 @@ export interface Resultado {
   /** Quanto de massa magra a mais tende a ser preservado ao proteger. */
   ganhoAoProteger: Faixa;
   proteinaPorKg: number;
-  /** Meta de proteína em gramas por dia, pelo peso atual. */
+  /** Meta de proteína em gramas por dia (o alvo ideal), pelo peso atual. */
   metaProteinaG: number;
-  /** Quanto falta de proteína por dia para chegar na meta. */
+  /** O piso que já conta como proteção, em gramas por dia. */
+  minimoProteinaG: number;
+  /** Quanto falta por dia para chegar no piso de proteção. Zero se já passou. */
   faltaProteinaG: number;
 }
 
@@ -206,6 +232,7 @@ export function calcula(
   const massaMagra = { min: perda * f.min, max: perda * f.max };
   const massaMagraProtegida = { min: perda * p.min, max: perda * p.max };
   const metaProteinaG = pesoAtual * PROTEINA_ALVO;
+  const minimoProteinaG = pesoAtual * PROTEINA_SUFICIENTE;
   return {
     perda,
     perdaPct: pesoInicial > 0 ? (perda / pesoInicial) * 100 : 0,
@@ -220,7 +247,10 @@ export function calcula(
     },
     proteinaPorKg,
     metaProteinaG,
-    faltaProteinaG: Math.max(0, metaProteinaG - proteinaG),
+    minimoProteinaG,
+    /* Falta até o PISO de proteção, não até o ideal: quem está em 1,7 g/kg
+       já está protegido e não deve ser mandado corrigir nada. */
+    faltaProteinaG: Math.max(0, minimoProteinaG - proteinaG),
   };
 }
 
@@ -274,7 +304,7 @@ export const CENARIOS: LinhaCenario[] = [
   {
     protecao: "completa",
     nome: "Treino de força regular e proteína adequada",
-    comoEstar: "Musculação três vezes por semana com carga que evolui, e pelo menos 1,6 g de proteína por quilo.",
+    comoEstar: "Musculação três vezes por semana com carga que evolui, e pelo menos 1,6 g de proteína por quilo (o alvo ideal é 2,0 a 2,2).",
     faixa: FRACAO_MASSA_MAGRA.completa,
     em10kg: { min: 10 * FRACAO_MASSA_MAGRA.completa.min, max: 10 * FRACAO_MASSA_MAGRA.completa.max },
   },
@@ -287,6 +317,9 @@ export const NOTA_NAO_E_TUDO_MUSCULO =
 
 export const NOTA_ESTIMATIVA =
   "São faixas, não medição. Só um exame de composição corporal — DXA, e com o mesmo aparelho nas duas vezes — diz o que de fato aconteceu com o seu corpo.";
+
+export const NOTA_VELOCIDADE =
+  "A velocidade da perda também pesa: quanto mais rápido o peso cai, maior tende a ser a fração de massa magra. A calculadora não pergunta isso porque não há número publicado bom o bastante para virar faixa — mas, se o seu peso está caindo muito rápido, leia a sua faixa pelo lado alto.";
 
 export const NOTA_MEDICA =
   "Esta ferramenta não fala de dose, de marca nem de começar ou parar qualquer medicação: isso é do seu prescritor. Ela trata do que cabe a um personal trainer — treino de força, proteína e composição corporal.";
