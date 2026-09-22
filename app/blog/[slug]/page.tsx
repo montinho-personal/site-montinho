@@ -53,6 +53,8 @@ import { ARTIGOS_COM_CALCULADORA_CORRIDA } from "@/lib/corrida";
 import CalculadoraCorrida from "@/components/corrida/CalculadoraCorrida";
 import { ARTIGOS_COM_CALCULADORA_GLP1 } from "@/lib/glp1";
 import CalculadoraGLP1 from "@/components/glp1/CalculadoraGLP1";
+import { ARTIGOS_COM_CALCULADORA_META } from "@/lib/meta";
+import CalculadoraMeta from "@/components/meta/CalculadoraMeta";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -202,7 +204,9 @@ export default async function BlogPost({ params }: Props) {
                         ? "corrida"
                         : ARTIGOS_COM_CALCULADORA_GLP1.includes(post.slug)
                           ? "glp1"
-                          : null;
+                          : ARTIGOS_COM_CALCULADORA_META.includes(post.slug)
+                            ? "meta"
+                            : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -410,6 +414,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraCorrida placement={post.slug} />
                 ) : qualCalc === "glp1" ? (
                   <CalculadoraGLP1 placement={post.slug} />
+                ) : qualCalc === "meta" ? (
+                  <CalculadoraMeta placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}
