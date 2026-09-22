@@ -57,6 +57,7 @@ export const NOME: Record<Ferramenta, string> = {
   onerm: "Calculadora de 1RM",
   fc: "Calculadora de Zonas de Frequência Cardíaca",
   polichinelos: "Calculadora de Polichinelos",
+  caminhada: "Calculadora de Calorias da Caminhada",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -90,6 +91,7 @@ export const ROTA: Record<Ferramenta, string> = {
   onerm: "/ferramentas/calculadora-1rm",
   fc: "/ferramentas/zonas-de-frequencia-cardiaca",
   polichinelos: "/ferramentas/calculadora-polichinelos",
+  caminhada: "/ferramentas/calculadora-calorias-caminhada",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -116,6 +118,9 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   /* O polichinelo responde o gasto de um exercício; a conta que decide
      emagrecimento é a do dia inteiro. */
   polichinelos: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
+  /* Mesma lógica: a caminhada é o gasto de uma atividade; a conta que
+     decide emagrecimento é a do dia inteiro. */
+  caminhada: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -189,6 +194,19 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Para chegar nesse gasto só com polichinelo seria muito tempo de impacto numa sessão só. Distribuir entre caminhada, musculação e o que você já faz no dia costuma render mais e cobrar menos das articulações.",
       pergunta: "Quer que eu monte uma distribuição que caiba na sua semana?",
       pedido: "O número que saiu foi alto e queria ajuda para distribuir isso na semana sem me machucar.",
+    },
+  },
+  caminhada: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto de uma caminhada, não o do seu dia. O que decide emagrecimento é o balanço da semana inteira — e a caminhada rende mais quando entra numa estratégia do que quando é a estratégia.",
+      pedido: "Queria entender quanto de caminhada eu realmente preciso para o meu objetivo.",
+    },
+    volume_alto: {
+      interpretacao:
+        "Para chegar nesse gasto só caminhando seria muito tempo por dia. Distribuir entre caminhada, musculação e o movimento do dia costuma render mais e sobreviver mais semanas.",
+      pergunta: "Quer que eu monte uma distribuição que caiba na sua semana?",
+      pedido: "O tempo que saiu foi alto e queria ajuda para distribuir isso na semana.",
     },
   },
   deficit: {

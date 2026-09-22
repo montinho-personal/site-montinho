@@ -166,6 +166,15 @@ const FERRAMENTAS = [
       "Informe seu peso e seu ritmo para ver quantas calorias os polichinelos gastam, quanto tempo levam e quantos seriam necessários para uma meta — incluindo quantos equivalem, em gasto, a uma caminhada de 30 minutos.",
     quando: "Use quando quiser saber se aquele desafio de 100 por dia significa alguma coisa. O peso não sai do navegador.",
   },
+  {
+    href: "/ferramentas/calculadora-calorias-caminhada",
+    nome: "Calculadora de Calorias da Caminhada",
+    pergunta: "Quantas calorias a minha caminhada gasta?",
+    tempo: "15 segundos · sem cadastro",
+    texto:
+      "Informe seu peso e seu ritmo para ver o gasto de uma caminhada por tempo, por distância ou por passos — e quanto tempo levaria para uma meta de calorias. Na esteira, entram a velocidade e a inclinação, incluindo o 12-3-30.",
+    quando: "Use quando quiser saber o que 30 minutos de esteira ou 10 mil passos valem para o seu peso. O peso não sai do navegador.",
+  },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{
     href: "/ferramentas/teste-mobilidade",

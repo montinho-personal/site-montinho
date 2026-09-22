@@ -41,7 +41,8 @@ import {
   simulacaoUmQuilo,
   tabelaPorPeso,
 } from "../lib/polichinelo";
-import { ARTIGOS_COM_LINK_POLICHINELO } from "../lib/polichinelo";
+import { ARTIGOS_COM_CALCULADORA_POLICHINELO, ARTIGOS_COM_LINK_POLICHINELO } from "../lib/polichinelo";
+import { ARTIGOS_COM_CALCULADORA_TDEE } from "../lib/tdee";
 import { blogPosts } from "../lib/blog";
 
 let falhas = 0;
@@ -280,6 +281,23 @@ ok("todo artigo do registro existe",
   ARTIGOS_COM_LINK_POLICHINELO.filter((s) => !slugs.has(s)).join(", "));
 ok("o artigo de maior tráfego do cluster está no registro",
   ARTIGOS_COM_LINK_POLICHINELO.includes("polichinelo-emagrece"));
+/*
+ * O artigo de tabelas embute a calculadora — ele saiu do registro do TDEE em
+ * 22/09/2026, porque quem chega nele quer a conta de polichinelo com o
+ * próprio peso, não o gasto do dia.
+ */
+ok("o artigo de tabelas embute a Calculadora de Polichinelos",
+  ARTIGOS_COM_CALCULADORA_POLICHINELO.includes("polichinelo-queima-quantas-calorias"));
+ok("ele não está mais no registro do TDEE",
+  !ARTIGOS_COM_CALCULADORA_TDEE.includes("polichinelo-queima-quantas-calorias"));
+ok("embed e link são disjuntos",
+  ARTIGOS_COM_CALCULADORA_POLICHINELO.every((s) => !ARTIGOS_COM_LINK_POLICHINELO.includes(s)));
+{
+  const pagina = readFileSync("app/blog/[slug]/page.tsx", "utf8");
+  ok("o blog embute a calculadora pelo registro",
+    /ARTIGOS_COM_CALCULADORA_POLICHINELO\.includes\(post\.slug\)/.test(pagina)
+      && /<CalculadoraPolichinelos placement=\{post\.slug\} \/>/.test(pagina));
+}
 
 // ─── 12 ─────────────────────────────────────────────────────────────────────
 bloco("12. O CONVITE DO TOPO FICA ONDE A PESSOA QUER A CONTA");

@@ -43,6 +43,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Polichinelos",
     motivo: "que faz a conta com o seu peso e o seu ritmo, incluindo a equivalência com caminhada",
   },
+  caminhada: {
+    href: "/ferramentas/calculadora-calorias-caminhada",
+    ancora: "Calculadora de Calorias da Caminhada",
+    motivo: "que faz a conta com o seu peso, o seu ritmo e a inclinação da esteira, por tempo, distância ou passos",
+  },
   proteina: {
     href: "/ferramentas/calculadora-de-proteina",
     ancora: "Calculadora de Proteína",
