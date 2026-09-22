@@ -17,6 +17,35 @@ export interface LeadVisao {
 }
 
 /**
+ * O contrato é pacote de aulas, e não mensalidade?
+ *
+ * A verdade está no `tipo_cobranca` do plano — o cadastro já vinha certo,
+ * era o cálculo do MRR que não olhava para ele. `sessoes_contratadas` entra
+ * como rede: contrato antigo, importado sem plano, é pacote se tem número de
+ * aulas fechado.
+ */
+export function ehContratoPacote(
+  contrato: { plan_id: string | null; sessoes_contratadas: number | null },
+  planos: { id: string; tipo_cobranca: string }[],
+): boolean {
+  const plano = contrato.plan_id ? planos.find((p) => p.id === contrato.plan_id) : undefined;
+  if (plano) return plano.tipo_cobranca === "pacote";
+  return contrato.sessoes_contratadas != null;
+}
+
+/** Contratos no formato que lib/crm/metricas.ts espera, já sabendo quais são pacote. */
+export function contratosParaMetrica(
+  contratos: { client_id: string; valor: number; ciclo_meses: number; inicio: string; fim: string | null; status: string; plan_id: string | null; sessoes_contratadas: number | null }[],
+  planos: { id: string; tipo_cobranca: string }[],
+) {
+  return contratos.map((c) => ({
+    clientId: c.client_id, valor: c.valor, cicloMeses: c.ciclo_meses,
+    inicio: c.inicio, fim: c.fim, status: c.status, planId: c.plan_id,
+    ehPacote: ehContratoPacote(c, planos),
+  }));
+}
+
+/**
  * Pacote em aberto do cliente: quantas aulas foram contratadas e quantas já
  * foram dadas. Nulo quando o contrato ativo não é pacote (plano mensal).
  */

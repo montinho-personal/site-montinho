@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { exigirUsuario } from "@/lib/crm/auth";
 import { base, catalogo, urlWhatsAppContato } from "@/lib/crm/dados";
-import { ltvRealizado, mrrNormalizado, tenureMeses, diasEntre } from "@/lib/crm/metricas";
+import { ltvRealizado, mrrNormalizado, valorEmPacotes, tenureMeses, diasEntre } from "@/lib/crm/metricas";
+import { contratosParaMetrica } from "@/lib/crm/visao";
 import { Badge, Btn, Pagina, Stat, Tabela, brl, dataBr } from "@/components/crm/ui";
 
 export default async function Clientes({ searchParams }: { searchParams: Promise<{ status?: string }> }) {
@@ -12,14 +13,17 @@ export default async function Clientes({ searchParams }: { searchParams: Promise
   const ev = b.receitas.map((r) => ({ clientId: r.client_id, amount: r.amount, tipo: r.tipo, occurredAt: r.occurred_at, status: r.status }));
   const lista = b.clientes.filter((c) => status === "todos" || c.status === status).map((c) => ({ c, contato: b.contatos.find((x) => x.id === c.contact_id), ltv: ltvRealizado(ev, c.id), plano: cat.planos.find((p) => p.id === c.current_plan_id)?.nome ?? "—" })).sort((a, z) => (a.c.renewal_date ?? "9").localeCompare(z.c.renewal_date ?? "9"));
   const ativos = b.clientes.filter((c) => c.status === "ativo");
-  const mrr = mrrNormalizado(b.contratos.map((k) => ({ clientId: k.client_id, valor: k.valor, cicloMeses: k.ciclo_meses, inicio: k.inicio, fim: k.fim, status: k.status })));
+  const contratosM = contratosParaMetrica(b.contratos, cat.planos);
+  const mrr = mrrNormalizado(contratosM);
+  const pacotes = valorEmPacotes(contratosM);
   const ten = tenureMeses(b.clientes.map((c) => ({ id: c.id, firstPurchaseAt: c.first_purchase_at, sourceCode: c.source_code, status: c.status, cancelledAt: c.cancelled_at })));
   const em30 = ativos.filter((c) => c.renewal_date && diasEntre(new Date(), c.renewal_date) <= 30).length;
   return (
     <Pagina titulo="Clientes" sub="Só quem já comprou. A venda não termina no ganho: aqui começa o LTV." acoes={<>{["ativo", "pausado", "cancelado", "todos"].map((s) => <Btn key={s} href={`/crm/clientes?status=${s}`} tom={s === status ? "primario" : "secundario"} pequeno>{s}</Btn>)}</>}>
-      <div className="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div className="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-5">
         <Stat rotulo="Ativos" valor={ativos.length} />
-        <Stat rotulo="MRR normalizado" valor={brl(mrr)} />
+        <Stat rotulo="MRR recorrente" valor={brl(mrr)} sub="sem pacote de aulas" />
+        <Stat rotulo="Em pacotes" valor={brl(pacotes.valor)} sub={`${pacotes.contratos} em aberto`} />
         <Stat rotulo="Renovações em 30 dias" valor={em30} tom={em30 ? "alerta" : "neutro"} />
         <Stat rotulo="Tempo como cliente" valor={ten.mediana != null ? `${ten.mediana.toFixed(1)} m` : "—"} sub="mediana, inclui ativos" />
       </div>

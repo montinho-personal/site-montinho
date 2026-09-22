@@ -204,7 +204,13 @@ export function recebimentoNoFuturo(occurredAt: string, hoje: string): boolean {
   return occurredAt > hoje;
 }
 export interface Cliente { id: string; firstPurchaseAt: string; sourceCode: string; status: string; cancelledAt?: string | null; planId?: string | null; serviceCode?: string | null; referredBy?: string | null }
-export interface Contrato { clientId: string; valor: number; cicloMeses: number; inicio: string; fim: string | null; status: string; planId?: string | null }
+export interface Contrato { clientId: string; valor: number; cicloMeses: number; inicio: string; fim: string | null; status: string; planId?: string | null;
+  /**
+   * Pacote de aulas avulsas (tipo_cobranca "pacote" no plano). Não é receita
+   * recorrente: a pessoa compra um bloco de aulas e some do MRR até comprar
+   * outro. Ver `mrrNormalizado` logo abaixo.
+   */
+  ehPacote?: boolean }
 
 /** Receita realizada líquida do cliente: soma dos eventos coletados (reembolso é negativo). */
 export function ltvRealizado(eventos: EventoReceita[], clientId: string, opts: { liquido?: boolean; incluirEstimado?: boolean } = {}): number {
@@ -266,13 +272,44 @@ export function contratoAtivoEm(c: Contrato, data: Date): boolean {
   if (c.fim) return new Date(c.fim) >= data;
   return c.status !== "cancelado" && c.status !== "encerrado";
 }
-/** MRR normalizado numa data: soma de valor/ciclo dos contratos ativos naquela data. */
+/**
+ * MRR normalizado numa data: soma de valor/ciclo dos contratos RECORRENTES
+ * ativos naquela data.
+ *
+ * PACOTE FICA DE FORA, E ESSE É O PONTO
+ *
+ * Pacote de aulas não é mensalidade. O plano guarda `ciclo_meses = 1` porque
+ * o campo é obrigatório, não porque o dinheiro entra todo mês — e somar o
+ * valor cheio como se fosse mensalidade errava nas duas direções. Em
+ * 22/09/2026 os dois pacotes ativos respondiam por R$ 2.300 de um MRR de
+ * R$ 4.267: 54% de um número que existe para dizer "quanto entra todo mês,
+ * sem eu vender de novo".
+ *
+ * O Denis é o caso que mostra o erro: pacote de 10 aulas consumido em duas
+ * semanas. Como MRR ele valia R$ 700/mês; no ritmo dele, pagou R$ 700 duas
+ * vezes no mesmo mês.
+ *
+ * O dado que separa os dois já existia e estava certo: `tipo_cobranca` na
+ * tabela de planos. Faltava o cálculo olhar para ele. Use
+ * `valorEmPacotes` para ver o outro lado.
+ */
 export function mrrNormalizado(contratos: Contrato[], data = new Date()): number {
   // Contrato cancelado ou encerrado ainda conta até a data de fim: o
   // cancelamento vale a partir do fim, não do momento em que foi registrado.
   return contratos
-    .filter((c) => contratoAtivoEm(c, data))
+    .filter((c) => !c.ehPacote && contratoAtivoEm(c, data))
     .reduce((s, c) => s + c.valor / (c.cicloMeses || 1), 0);
+}
+
+/**
+ * O outro lado do MRR: quanto está comprado em pacote de aulas numa data.
+ *
+ * Receita real, mas que não se repete sozinha — cada renovação é uma venda
+ * nova. Por isso vive numa linha própria em vez de virar mensalidade.
+ */
+export function valorEmPacotes(contratos: Contrato[], data = new Date()): { valor: number; contratos: number } {
+  const abertos = contratos.filter((c) => c.ehPacote && contratoAtivoEm(c, data));
+  return { valor: abertos.reduce((s, c) => s + c.valor, 0), contratos: abertos.length };
 }
 export const mrrDoContrato = (valor: number, cicloMeses: number) => valor / (cicloMeses || 1);
 /** Movimento de MRR entre dois instantes, por cliente. */
@@ -280,7 +317,10 @@ export function movimentoMrr(contratos: Contrato[], de: Date, ate: Date) {
   const porCliente = (data: Date) => {
     const m = new Map<string, number>();
     for (const c of contratos) {
-      if (contratoAtivoEm(c, data)) m.set(c.clientId, (m.get(c.clientId) ?? 0) + mrrDoContrato(c.valor, c.cicloMeses));
+      // Pacote não entra no MRR, então também não entra no movimento dele:
+      // uma renovação de pacote viraria "expansão" e o fim do pacote viraria
+      // "churn", duas vezes por mês, num cliente que nunca saiu.
+      if (!c.ehPacote && contratoAtivoEm(c, data)) m.set(c.clientId, (m.get(c.clientId) ?? 0) + mrrDoContrato(c.valor, c.cicloMeses));
     }
     return m;
   };

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { exigirUsuario } from "@/lib/crm/auth";
 import { base, catalogo, urlWhatsAppContato } from "@/lib/crm/dados";
-import { itensHoje, todasVisoes, contagemFunil, inicioDoMes, mesAnterior } from "@/lib/crm/visao";
-import { taxasFunil, valorPipeline, mrrNormalizado, cicloDeVendaDias, ehEstimado } from "@/lib/crm/metricas";
+import { itensHoje, todasVisoes, contagemFunil, inicioDoMes, mesAnterior, contratosParaMetrica } from "@/lib/crm/visao";
+import { taxasFunil, valorPipeline, mrrNormalizado, valorEmPacotes, cicloDeVendaDias, ehEstimado } from "@/lib/crm/metricas";
 import { mensagemPara } from "@/lib/crm/copy";
 import { Badge, Btn, Card, Pagina, Stat, Vazio, brl, num, pct, relativo } from "@/components/crm/ui";
 import { concluirTarefa } from "./actions";
@@ -65,7 +65,10 @@ export default async function Hoje() {
   // Estimativa não entra no faturamento: ver ehEstimado em lib/crm/metricas.ts.
   const receitaMes = b.receitas.filter((r) => r.status === "collected" && !ehEstimado(r.confidence) && r.occurred_at >= de.toISOString().slice(0, 10)).reduce((s, r) => s + r.amount, 0);
   const receitaAnt = b.receitas.filter((r) => r.status === "collected" && !ehEstimado(r.confidence) && r.occurred_at >= ant.de.toISOString().slice(0, 10) && r.occurred_at <= ant.ate.toISOString().slice(0, 10)).reduce((s, r) => s + r.amount, 0);
-  const mrr = mrrNormalizado(b.contratos.map((c) => ({ clientId: c.client_id, valor: c.valor, cicloMeses: c.ciclo_meses, inicio: c.inicio, fim: c.fim, status: c.status })), agora);
+  /* Pacote de aulas não é mensalidade — ver mrrNormalizado em lib/crm/metricas.ts. */
+  const contratosM = contratosParaMetrica(b.contratos, cat.planos);
+  const mrr = mrrNormalizado(contratosM, agora);
+  const pacotes = valorEmPacotes(contratosM, agora);
   const ciclo = cicloDeVendaDias(b.oportunidades.filter((o) => o.won_at && new Date(o.won_at) >= de).map((o) => ({ createdAt: b.leads.find((l) => l.id === o.lead_id)?.created_at ?? o.created_at, wonAt: o.won_at! })));
   const comp = (a: number, b: number) => (b > 0 ? `${a >= b ? "+" : ""}${Math.round(((a - b) / b) * 100)}% vs mês passado (${num(b)})` : `mês passado: ${num(b)}`);
   const primeiroNome = (u.nome ?? u.email).split(" ")[0].split("@")[0];
@@ -136,7 +139,8 @@ export default async function Hoje() {
         <Stat rotulo="Experimentais" valor={fMes.experimentaisRealizadas} sub={`${fMes.experimentaisAgendadas} agendadas`} />
         <Stat rotulo="Vendas" valor={fMes.vendas} sub={comp(fMes.vendas, fAnt.vendas)} />
         <Stat rotulo="Receita recebida" valor={brl(receitaMes)} sub={comp(receitaMes, receitaAnt)} />
-        <Stat rotulo="MRR normalizado" valor={brl(mrr)} sub={`${b.clientes.filter((c) => c.status === "ativo").length} clientes ativos`} />
+        <Stat rotulo="MRR recorrente" valor={brl(mrr)} sub={`${b.clientes.filter((c) => c.status === "ativo").length} clientes ativos · sem pacote`} />
+        <Stat rotulo="Em pacotes" valor={brl(pacotes.valor)} sub={pacotes.contratos ? `${pacotes.contratos} pacote${pacotes.contratos > 1 ? "s" : ""} em aberto · não se repete sozinho` : "nenhum em aberto"} />
         <Stat rotulo="Pipeline" valor={brl(pipe.bruto)} sub={`${abertas.length} oportunidades`} />
         <Stat rotulo="Win rate" valor={pct(tMes.propostaParaVenda)} sub={`${fMes.vendas} de ${fMes.propostas} propostas`} />
         <Stat rotulo="Ciclo de venda" valor={ciclo.mediana != null ? `${Math.round(ciclo.mediana)} d` : "—"} sub={`mediana · n=${ciclo.n}`} />

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { exigirUsuario } from "@/lib/crm/auth";
 import { base, catalogo, urlWhatsAppContato } from "@/lib/crm/dados";
 import { mensagemPara } from "@/lib/crm/copy";
+import { ehContratoPacote } from "@/lib/crm/visao";
 import { ehEstimado, ltvPorConfianca, mrrDoContrato, diasEntre } from "@/lib/crm/metricas";
 import { Badge, Btn, Campo, Card, Detalhes, Input, Pagina, Select, Stat, Tabela, Textarea, brl, dataBr, dataHoraBr, dataInput } from "@/components/crm/ui";
 import { cancelarCliente, criarTarefa, definirPacote, gerarCodigoIndicacao, marcarRecebido, registrarAtividade, registrarReceita, removerAula, renovarContrato } from "../../actions";
@@ -37,7 +38,11 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
       acoes={<>{wa && <Btn href={wa} tom="whatsapp" target="_blank">WhatsApp</Btn>}{leads[0] && <Btn href={`/crm/leads/${leads[0].id}`} tom="secundario">Ver lead</Btn>}</>}>
       <div className="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
         <Stat rotulo="LTV realizado" valor={brl(ltv.confirmado)} sub={ltv.estimado > 0 ? `+ ${brl(ltv.estimado)} estimados (sem extrato)` : "líquido de reembolsos"} />
-        <Stat rotulo="MRR deste cliente" valor={contratoAtivo ? brl(mrrDoContrato(contratoAtivo.valor, contratoAtivo.ciclo_meses)) : "—"} sub={plano?.nome} />
+        {/* Pacote não é mensalidade: para quem compra bloco de aulas, o número
+            que importa é o valor por aula, não um MRR inventado. */}
+        {contratoAtivo && ehContratoPacote(contratoAtivo, cat.planos)
+          ? <Stat rotulo="Valor do pacote" valor={brl(contratoAtivo.valor)} sub={contratoAtivo.sessoes_contratadas ? `${brl(contratoAtivo.valor / contratoAtivo.sessoes_contratadas)} por aula · ${contratoAtivo.sessoes_contratadas} aulas` : plano?.nome} />
+          : <Stat rotulo="MRR deste cliente" valor={contratoAtivo ? brl(mrrDoContrato(contratoAtivo.valor, contratoAtivo.ciclo_meses)) : "—"} sub={plano?.nome} />}
         <Stat rotulo="Tempo como cliente" valor={`${meses.toFixed(1)} m`} />
         <Stat rotulo="Renovação" valor={dataBr(c.renewal_date)} tom={c.renewal_date && diasEntre(new Date(), c.renewal_date) <= 14 ? "alerta" : "neutro"} />
       </div>
