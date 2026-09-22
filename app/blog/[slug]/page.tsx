@@ -49,6 +49,8 @@ import CalculadoraEliptico from "@/components/eliptico/CalculadoraEliptico";
 import { ARTIGOS_COM_CALCULADORA_ATIVIDADES, ARTIGOS_COM_LINK_ATIVIDADES, atividadeDoArtigo } from "@/lib/atividades";
 import CalculadoraAtividades from "@/components/atividades/CalculadoraAtividades";
 import LinkFerramentaAtividades from "@/components/atividades/LinkFerramentaAtividades";
+import { ARTIGOS_COM_CALCULADORA_CORRIDA } from "@/lib/corrida";
+import CalculadoraCorrida from "@/components/corrida/CalculadoraCorrida";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -194,7 +196,9 @@ export default async function BlogPost({ params }: Props) {
                     ? "eliptico"
                     : ARTIGOS_COM_CALCULADORA_ATIVIDADES.includes(post.slug)
                       ? "atividades"
-                      : null;
+                      : ARTIGOS_COM_CALCULADORA_CORRIDA.includes(post.slug)
+                        ? "corrida"
+                        : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -398,6 +402,8 @@ export default async function BlogPost({ params }: Props) {
                   /* A atividade do artigo já vem escolhida: quem lê sobre boxe
                      não deveria procurar "boxe" numa lista de dez. */
                   <CalculadoraAtividades placement={post.slug} atividadeInicial={atividadeDoArtigo(post.slug)?.id} />
+                ) : qualCalc === "corrida" ? (
+                  <CalculadoraCorrida placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}

@@ -60,6 +60,7 @@ export const NOME: Record<Ferramenta, string> = {
   caminhada: "Calculadora de Calorias da Caminhada",
   eliptico: "Calculadora de Calorias do Elíptico",
   atividades: "Calculadora de Calorias por Atividade",
+  corrida: "Calculadora de Corrida",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -96,6 +97,7 @@ export const ROTA: Record<Ferramenta, string> = {
   caminhada: "/ferramentas/calculadora-calorias-caminhada",
   eliptico: "/ferramentas/calculadora-calorias-eliptico",
   atividades: "/ferramentas/calculadora-calorias-atividades",
+  corrida: "/ferramentas/calculadora-corrida",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -127,6 +129,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   caminhada: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   eliptico: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   atividades: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
+  /* Quem corre e quer emagrecer esbarra no gasto do dia antes de esbarrar no pace. */
+  corrida: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -239,6 +243,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Para chegar nesse gasto numa sessão só seria muito tempo. Distribuir entre a atividade que você gosta, a musculação e o movimento do dia costuma render mais.",
       pergunta: "Quer que eu monte uma distribuição que caiba na sua semana?",
       pedido: "O tempo que saiu foi alto e queria ajuda para distribuir isso na semana.",
+    },
+  },
+  corrida: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto de uma corrida, não o do seu dia. E repare no número por quilômetro: ele quase não muda com o pace — correr mais rápido gasta mais por minuto, não por quilômetro.",
+      pedido: "Queria entender como encaixar a corrida na minha semana sem perder músculo.",
     },
   },
   deficit: {

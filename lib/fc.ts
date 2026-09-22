@@ -202,7 +202,11 @@ export const ARTIGOS_COM_LINK_FC: string[] = [
    * a busca que os traz é de caloria, não de batimento, e os dois passaram
    * a embutir a Calculadora de Calorias por Atividade (lib/atividades.ts).
    */
-  "corrida-de-rua-iniciante",
+  /*
+   * "corrida-de-rua-iniciante" saiu daqui em 22/09/2026: quem se prepara
+   * para a primeira prova quer o pace e o tempo estimado, que é a conta da
+   * Calculadora de Corrida (lib/corrida.ts), não a zona de batimento.
+   */
   /*
    * "eliptico-emagrece" saiu daqui: as buscas que trazem gente a ele são
    * de caloria ("20 minutos de elíptico queima quantas calorias"), e ele

@@ -1,4 +1,6 @@
 import { readFileSync } from "fs";
+import { marked } from "marked";
+import { splitAtPrimeiraSecao } from "../lib/cta/placement";
 /**
  * O motor da Calculadora de Calorias por Atividade.
  *   npx tsx scripts/atividades-test.ts
@@ -177,7 +179,8 @@ ok("todo artigo com embed tem atividade correspondente",
 /* O corte editorial do embed é depois da primeira seção: sem duas, não há corte. */
 for (const s of ARTIGOS_COM_CALCULADORA_ATIVIDADES) {
   const p = blogPosts.find((x) => x.slug === s)!;
-  ok(`${s}: tem ao menos duas seções`, (p.content.match(/<h2[\s>]/g) ?? []).length >= 2);
+  ok(`${s}: o corte editorial existe (a calculadora tem onde entrar)`,
+    splitAtPrimeiraSecao(marked(p.content) as string) !== null);
 }
 /* Caminhada e elíptico têm ferramenta própria e não podem virar opção do seletor. */
 ok("caminhada e elíptico ficam fora do seletor", !ATIVIDADES.some((a) => /caminhada|elíptico|eliptico/i.test(a.nome)));

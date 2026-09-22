@@ -37,6 +37,7 @@ export type Ferramenta =
   | "caminhada"
   | "eliptico"
   | "atividades"
+  | "corrida"
   | "diagnostico"
   | "rotina"
   | "academia"

@@ -54,15 +54,16 @@ const itemListSchema = {
     { "@type": "ListItem", position: 14, name: "Calculadora de Calorias da Caminhada", url: `${SITE_URL}/ferramentas/calculadora-calorias-caminhada` },
     { "@type": "ListItem", position: 15, name: "Calculadora de Calorias do Elíptico", url: `${SITE_URL}/ferramentas/calculadora-calorias-eliptico` },
     { "@type": "ListItem", position: 16, name: "Calculadora de Calorias por Atividade", url: `${SITE_URL}/ferramentas/calculadora-calorias-atividades` },
+    { "@type": "ListItem", position: 17, name: "Calculadora de Corrida", url: `${SITE_URL}/ferramentas/calculadora-corrida` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 17, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 18, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
-      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 18 : 17, name: "Calculadora de Peptídeos e UI na Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
+      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 19 : 18, name: "Calculadora de Peptídeos e UI na Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
       : []),
-    { "@type": "ListItem", position: (MOBILIDADE_NO_AR ? 18 : 17) + (CONVERSOR_NO_AR ? 1 : 0), name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: (MOBILIDADE_NO_AR ? 19 : 18) + (CONVERSOR_NO_AR ? 1 : 0), name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -196,6 +197,15 @@ const FERRAMENTAS = [
     texto:
       "Boxe, futebol, zumba, spinning, dança, natação, jiu-jitsu, escada, corda e bicicleta: informe peso, tempo e ritmo para ver o gasto da sessão — descontando as pausas da aula — e compare as dez atividades no mesmo tempo.",
     quando: "Use quando quiser saber quanto a sua aula realmente gasta, e não o número da tabela de revista. O peso não sai do navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-corrida",
+    nome: "Calculadora de Corrida",
+    pergunta: "Qual é o meu pace, e quanto gasto correndo?",
+    tempo: "15 segundos · sem cadastro",
+    texto:
+      "Converte distância, tempo e pace: informe dois e veja o terceiro, com o gasto calórico pelo seu peso. Mostra o tempo estimado de 5 km, 10 km, meia e maratona no seu pace, e compara correr com caminhar a mesma distância.",
+    quando: "Use para planejar uma prova ou entender o gasto de um treino. O peso não sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{
