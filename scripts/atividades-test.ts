@@ -9,8 +9,9 @@ import { readFileSync } from "fs";
  * ferramenta que não vem do Compêndio e precisa continuar declarada.
  */
 import {
+  faixaPrincipal,
   ARTIGOS_COM_CALCULADORA_ATIVIDADES, ARTIGOS_COM_LINK_ATIVIDADES, ATIVIDADES, FONTES_ATIVIDADES,
-  atividade, atividadeDoArtigo, comparaAtividades, deKcal, deTempo, faixa, fraseContexto, kcalLiquida,
+  arredondaKcal, atividade, atividadeDoArtigo, comparaAtividades, deKcal, deTempo, faixa, fraseContexto, kcalLiquida,
   simulacaoUmQuilo, tabelaPorPeso, tempoAtivo,
 } from "../lib/atividades";
 import { ARTIGOS_COM_CALCULADORA_CAMINHADA, ARTIGOS_COM_LINK_CAMINHADA } from "../lib/caminhada";
@@ -62,29 +63,101 @@ ok("a frase mantém o decimal do peso", /82,5 kg/.test(fraseContexto(82.5, r, at
    faixa é rótulo, não adjetivo. Ele entra entre parênteses. */
 ok("a faixa entra entre parênteses, sem forçar concordância",
   /\(saco e aparelhos\) representa/.test(fraseContexto(70, r, atividade("boxe"), atividade("boxe").faixas[0]))
-    && /\(moderada\) representa/.test(fraseContexto(70, r, atividade("natacao"), atividade("natacao").faixas[0])));
+    && /\(leve \/ recreativo\) representa/.test(fraseContexto(70, r, atividade("natacao"), atividade("natacao").faixas[0])));
 ok("a frase não promete quilo", !/perde|emagrec/i.test(fraseContexto(70, r, atividade("boxe"), atividade("boxe").faixas[0])));
 ok("1 kg de gordura leva mais de 10 h (para ninguém tentar)", simulacaoUmQuilo(70, 7.8).minutos > 600);
 
-bloco("3. O TEMPO ATIVO — a única coisa que não vem do Compêndio");
-ok("boxe desconta pausas", tempoAtivo(60, atividade("boxe")) < 60 && tempoAtivo(60, atividade("boxe")) === 42);
+bloco("2b. A CALCULADORA CONCORDA COM AS FAIXAS DOS ARTIGOS");
+/*
+ * O teste que existe por causa de um bug real: o desconto de pausas era
+ * padrão e fazia a calculadora dizer 400 kcal logo abaixo de um artigo que
+ * dizia 450 a 600 para a mesma aula. Cada linha aqui é a faixa que o artigo
+ * publica, com o peso e a duração dele. O padrão da ferramenta (tempo
+ * cheio) tem de cair dentro.
+ */
+const FAIXAS_DOS_ARTIGOS: [string, string, number, number, number, number][] = [
+  /* atividade, faixa, peso, minutos, mínimo do artigo, máximo do artigo */
+  ["boxe", "saco", 70, 60, 450, 600],
+  ["boxe", "sparring", 70, 60, 600, 800],
+  ["boxe", "saco", 90, 60, 550, 750],
+  ["futebol", "casual", 70, 60, 400, 650],
+  ["futebol", "competitivo", 70, 60, 500, 900],
+  ["zumba", "baixo", 70, 60, 250, 400],
+  ["zumba", "alto", 70, 60, 350, 600],
+  ["spinning", "moderado", 70, 45, 300, 400],
+  ["spinning", "vigoroso", 70, 45, 400, 550],
+  ["natacao", "moderada", 80, 60, 400, 500],
+  ["natacao", "vigorosa", 80, 60, 700, 900],
+  /* O artigo de jiu-jitsu conta explicitamente "aquecimento, técnica e rola"
+     numa aula de 60 a 90 min — é a faixa em que o desconto é a leitura certa. */
+  ["jiu-jitsu", "tecnica", 70, 60, 300, 450],
+  ["jiu-jitsu", "rolamento", 70, 60, 450, 700],
+  ["corda", "lento", 70, 30, 300, 400],
+  /* O artigo de dança lista sete ritmos, de 200 (salão) a 550 (zumba/fitdance). */
+  ["danca", "social", 70, 60, 200, 550],
+  ["danca", "intensa", 70, 60, 300, 550],
+  /* "10 a 12 kcal/min para 80 kg" — o artigo arredonda, daí a tolerância abaixo. */
+  ["escada", "rapido", 80, 15, 150, 180],
+];
+/*
+ * Uma leitura basta. O artigo às vezes fala do tempo cheio (boxe: "uma hora
+ * de treino") e às vezes já conta as pausas (jiu-jitsu: "contando
+ * aquecimento, técnica e rola"). O que o teste proíbe é a contradição: que
+ * NENHUMA das duas leituras da ferramenta caiba na faixa publicada.
+ */
+const TOLERANCIA = 0.05;
+for (const [aid, fid, peso, min, lo, hi] of FAIXAS_DOS_ARTIGOS) {
+  const a = atividade(aid);
+  const met = faixa(a, fid).met;
+  const cheio = arredondaKcal(deTempo(min, peso, met).kcal);
+  const desc = arredondaKcal(deTempo(tempoAtivo(min, a), peso, met).kcal);
+  const cabe = (k: number) => k >= lo * (1 - TOLERANCIA) && k <= hi * (1 + TOLERANCIA);
+  ok(`${aid}/${fid}: ${min} min, ${peso} kg -> ${cheio}${desc !== cheio ? ` ou ${desc}` : ""} kcal (artigo: ${lo}-${hi})`,
+    cabe(cheio) || cabe(desc));
+}
+/* E o padrão da ferramenta (tempo cheio) precisa bater na maioria — senão o
+   número que a pessoa vê primeiro é o que diverge. */
+{
+  const batem = FAIXAS_DOS_ARTIGOS.filter(([aid, fid, peso, min, lo, hi]) => {
+    const k = arredondaKcal(deTempo(min, peso, faixa(atividade(aid), fid).met).kcal);
+    return k >= lo * (1 - TOLERANCIA) && k <= hi * (1 + TOLERANCIA);
+  }).length;
+  ok(`o padrão (tempo cheio) cai na faixa do artigo em ${batem} de ${FAIXAS_DOS_ARTIGOS.length} casos`,
+    batem >= FAIXAS_DOS_ARTIGOS.length - 3);
+}
+
+bloco("3. O TEMPO ATIVO — opção, nunca padrão");
+{
+  const comp = readFileSync("components/atividades/CalculadoraAtividades.tsx", "utf8");
+  /* O padrão tem de ser o tempo cheio: é ele que concorda com os artigos. */
+  ok("o desconto de pausas começa desligado", /useState\(false\);?\s*$/m.test(comp.split("descontarPausas")[1]?.split("\n")[0] ?? "") || /const \[descontarPausas, setDescontarPausas\] = useState\(false\)/.test(comp));
+  ok("a caixa fala do que a pessoa observou, não de uma regra da casa", /Passei boa parte da sessão parado/.test(comp));
+}
+ok("boxe, quando pedido, desconta pausas", tempoAtivo(60, atividade("boxe")) === 42);
 ok("natação é contínua (não desconta)", tempoAtivo(60, atividade("natacao")) === 60 && atividade("natacao").fracaoAtiva === null);
 ok("bicicleta é contínua", atividade("bicicleta").fracaoAtiva === null);
 ok("toda fração declarada fica entre 40% e 95%",
   ATIVIDADES.every((a) => a.fracaoAtiva === null || (a.fracaoAtiva >= 0.4 && a.fracaoAtiva <= 0.95)));
 {
-  /* O motivo de existir da ferramenta: o número honesto é menor que o de revista. */
   const aulaBoxe = deTempo(tempoAtivo(60, atividade("boxe")), 70, atividade("boxe").faixas[0].met);
   const horaInteira = deTempo(60, 70, atividade("boxe").faixas[0].met);
   ok("descontar pausas reduz o gasto da aula", aulaBoxe.kcal < horaInteira.kcal);
-  ok("uma aula de boxe de 60 min para 70 kg fica abaixo das 800 kcal das tabelas de revista", aulaBoxe.kcal < 800);
+  /* Nem com o tempo cheio a ferramenta chega nas "1.000 kcal por aula" que o
+     próprio artigo de zumba desmente. */
+  ok("uma aula de boxe de 60 min para 70 kg fica longe das 1.000 kcal de propaganda", horaInteira.kcal < 800);
+  ok("uma aula de zumba de 60 min para 70 kg fica longe das 1.000 kcal de propaganda",
+    deTempo(60, 70, atividade("zumba").faixas[1].met).kcal < 700);
 }
 
 bloco("4. COMPARAÇÃO E TABELAS");
 const cmp = comparaAtividades(60, 70);
 ok("uma linha por atividade", cmp.length === ATIVIDADES.length);
 ok("ordenada do maior para o menor", cmp.every((l, i) => i === 0 || l.kcal <= cmp[i - 1].kcal));
-ok("usa a primeira faixa de cada uma", cmp.every((l) => l.met === atividade(l.id).faixas[0].met));
+ok("usa a faixa principal de cada uma", cmp.every((l) => l.met === faixaPrincipal(atividade(l.id)).met));
+/* Escada: o artigo trata a escada como exercício (8 a 9 METs). Se a comparação
+   usasse a entrada lenta do Compêndio, ela apareceria como a mais fraca da lista. */
+ok("a escada entra na comparação como exercício, não como subida do dia a dia", faixaPrincipal(atividade("escada")).met === 8.8);
+ok("toda faixa principal existe", ATIVIDADES.every((a) => a.faixas[a.faixaPrincipal] !== undefined));
 const tab = tabelaPorPeso(atividade("boxe"), 42);
 ok("tabela por peso cresce", tab.every((l, i, a) => i === 0 || l.kcal[0] > a[i - 1].kcal[0]));
 ok("uma coluna por faixa", tab.every((l) => l.kcal.length === atividade("boxe").faixas.length));
@@ -120,7 +193,7 @@ const comp = readFileSync("components/atividades/CalculadoraAtividades.tsx", "ut
 ok("sem chamada de rede", !/fetch\(|sendBeacon/.test(comp));
 ok("CTA centralizado", /<PosResultado[\s\S]*ferramenta="atividades"/.test(comp));
 ok("aria-live", /aria-live="polite"/.test(comp));
-ok("o desconto das pausas é visível e desligável", /Descontar as pausas/.test(comp) && /type="checkbox"/.test(comp));
+ok("o desconto das pausas é visível e desligável", /Passei boa parte da sessão parado/.test(comp) && /type="checkbox"/.test(comp));
 const tool = readFileSync("app/ferramentas/calculadora-calorias-atividades/page.tsx", "utf8");
 ok("um H1", (tool.match(/<h1[\s>]/g) ?? []).length === 1);
 ok("quatro tabelas em HTML", (tool.match(/<table/g) ?? []).length >= 4);
