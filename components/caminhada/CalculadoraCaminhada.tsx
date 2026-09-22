@@ -53,6 +53,7 @@ import {
   passosValidos,
   pesoValido,
   ritmo as ritmoDe,
+  cadenciaPara,
   velocidadeMedida,
   velocidadeValida,
   type RitmoId,
@@ -142,15 +143,18 @@ export default function CalculadoraCaminhada({ placement }: { placement: string 
   /* A velocidade exata só entra se a esteira foi aberta, preenchida e válida. */
   const velocidade = mostrarEsteira && velocidadeValida(velocidadeCustom) ? velocidadeCustom : rit.velocidade;
   const incl = mostrarEsteira && inclinacaoValida(inclinacao) ? inclinacao : 0;
+  /* Com velocidade manual, a cadência acompanha a velocidade, não o botão de ritmo. */
+  const cadencia = velocidade === rit.velocidade ? rit.cadencia : cadenciaPara(velocidade);
 
   /* O resultado de cada modo. Null enquanto faltar dado — a view não inventa zero. */
-  const resultado = useMemo(() => {
+  /* Conta barata: sem useMemo, recalcula a cada render. */
+  const resultado = (() => {
     if (!pesoOk) return null;
-    if (modo === "tempo") return minutosOk ? deTempo(minutos, peso, velocidade, incl, rit.cadencia) : null;
-    if (modo === "distancia") return kmOk ? deDistancia(km, peso, velocidade, incl, rit.cadencia) : null;
-    if (modo === "passos") return passosOk ? dePassos(passos, peso, velocidade, incl, rit.cadencia) : null;
-    return kcalOk ? deKcal(alvoKcal, peso, velocidade, incl, rit.cadencia) : null;
-  }, [modo, pesoOk, peso, minutosOk, minutos, kmOk, km, passosOk, passos, kcalOk, alvoKcal, velocidade, incl, rit.cadencia]);
+    if (modo === "tempo") return minutosOk ? deTempo(minutos, peso, velocidade, incl, cadencia) : null;
+    if (modo === "distancia") return kmOk ? deDistancia(km, peso, velocidade, incl, cadencia) : null;
+    if (modo === "passos") return passosOk ? dePassos(passos, peso, velocidade, incl, cadencia) : null;
+    return kcalOk ? deKcal(alvoKcal, peso, velocidade, incl, cadencia) : null;
+  })();
 
   const volumeAlto = resultado !== null && resultado.minutos > MINUTOS_ALERTA;
 
@@ -548,7 +552,7 @@ export default function CalculadoraCaminhada({ placement }: { placement: string 
                 <div className="mt-4 space-y-3 text-gray-300 text-sm leading-relaxed max-w-2xl">
                   <p>
                     O gasto por minuto vem da equação de METs: <span className="text-white">MET × 3,5 × peso em kg ÷ 200</span>.
-                    Para {Math.round(peso)} kg a {formataVelocidade(resultado.velocidade)}
+                    Para {fmt(peso)} kg a {formataVelocidade(resultado.velocidade)}
                     {resultado.inclinacao > 0 ? ` com ${fmt(resultado.inclinacao)}% de inclinação` : ""} ({fmt(resultado.met)} METs), isso dá cerca de{" "}
                     {fmt(resultado.kcal / Math.max(resultado.minutos, 0.0001))} kcal por minuto.
                   </p>

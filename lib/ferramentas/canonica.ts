@@ -48,6 +48,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Calorias da Caminhada",
     motivo: "que faz a conta com o seu peso, o seu ritmo e a inclinação da esteira, por tempo, distância ou passos",
   },
+  eliptico: {
+    href: "/ferramentas/calculadora-calorias-eliptico",
+    ancora: "Calculadora de Calorias do Elíptico",
+    motivo: "que faz a conta com o seu peso e o seu esforço, compara com o visor do aparelho e com a esteira",
+  },
   proteina: {
     href: "/ferramentas/calculadora-de-proteina",
     ancora: "Calculadora de Proteína",

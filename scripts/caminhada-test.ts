@@ -38,6 +38,7 @@ import {
   passosValidos,
   pesoValido,
   ritmo,
+  cadenciaPara,
   simulacaoUmQuilo,
   tabelaPorInclinacao,
   tabelaPorPeso,
@@ -143,6 +144,10 @@ ok("km < 1 vira metros", formataKm(0.5) === "500 m");
 ok("km ≥ 1 tem uma casa", formataKm(2.5) === "2,5 km");
 const frase = fraseContexto(80, deTempo(30, 80, 5, 0, 100));
 ok("a frase cita o peso e o tempo", /80 kg/.test(frase) && /30 minutos/.test(frase));
+ok("a frase mantém o decimal do peso", /82,5 kg/.test(fraseContexto(82.5, deTempo(30, 82.5, 5, 0, 100))));
+ok("a frase concorda no singular (1 h)", /caminhada de 1 h a 5 km\/h[^.]*representa um/.test(fraseContexto(70, deTempo(60, 70, 5, 0, 100))));
+ok("cadência nos pontos medidos é a do ritmo", RITMOS.every((r) => cadenciaPara(r.velocidade) === r.cadencia));
+ok("cadência interpola entre ritmos", cadenciaPara(5.5) > 100 && cadenciaPara(5.5) < 115);
 ok("a frase diz que é estimativa", /aproximadamente|estimad/i.test(frase));
 ok("a frase não promete quilo nenhum", !/perde|perder|emagrec/i.test(frase), frase);
 ok("a frase cita a inclinação quando existe", /12% de inclinação/.test(fraseContexto(70, deTempo(30, 70, 4.8, 12, 100))));

@@ -50,15 +50,18 @@ const itemListSchema = {
     { "@type": "ListItem", position: 10, name: "Calculadora de Volume de Treino", url: `${SITE_URL}/ferramentas/calculadora-volume-treino` },
     { "@type": "ListItem", position: 11, name: "Montinho FitChef", url: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
     { "@type": "ListItem", position: 12, name: "Calculadora de Zonas de Frequência Cardíaca", url: `${SITE_URL}/ferramentas/zonas-de-frequencia-cardiaca` },
+    { "@type": "ListItem", position: 13, name: "Calculadora de Polichinelos", url: `${SITE_URL}/ferramentas/calculadora-polichinelos` },
+    { "@type": "ListItem", position: 14, name: "Calculadora de Calorias da Caminhada", url: `${SITE_URL}/ferramentas/calculadora-calorias-caminhada` },
+    { "@type": "ListItem", position: 15, name: "Calculadora de Calorias do Elíptico", url: `${SITE_URL}/ferramentas/calculadora-calorias-eliptico` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 13, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 16, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
-      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 14 : 13, name: "Calculadora de Peptídeos e UI na Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
+      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 17 : 16, name: "Calculadora de Peptídeos e UI na Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
       : []),
-    { "@type": "ListItem", position: (MOBILIDADE_NO_AR ? 14 : 13) + (CONVERSOR_NO_AR ? 1 : 0), name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: (MOBILIDADE_NO_AR ? 17 : 16) + (CONVERSOR_NO_AR ? 1 : 0), name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -174,6 +177,15 @@ const FERRAMENTAS = [
     texto:
       "Informe seu peso e seu ritmo para ver o gasto de uma caminhada por tempo, por distância ou por passos — e quanto tempo levaria para uma meta de calorias. Na esteira, entram a velocidade e a inclinação, incluindo o 12-3-30.",
     quando: "Use quando quiser saber o que 30 minutos de esteira ou 10 mil passos valem para o seu peso. O peso não sai do navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-calorias-eliptico",
+    nome: "Calculadora de Calorias do Elíptico",
+    pergunta: "Quantas calorias o elíptico gasta?",
+    tempo: "10 segundos · sem cadastro",
+    texto:
+      "Informe seu peso, o tempo e o esforço para ver o gasto de uma sessão de elíptico — ou quanto tempo leva para uma meta. Compara com o número do visor do aparelho e com a esteira.",
+    quando: "Use quando o visor mostrar um número e você quiser saber se pode confiar nele. O peso não sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{

@@ -335,6 +335,24 @@ export function deDistancia(km: number, pesoKg: number, velocidade: number, incl
   return monta(minutos, pesoKg, velocidade, inclinacao, cadencia);
 }
 
+/**
+ * A cadência que corresponde a uma velocidade. Nos ritmos medidos é a do
+ * ritmo; entre eles, interpolada como o MET. Sem isso, quem digita a
+ * velocidade da esteira no modo passos teria tempo por uma cadência e
+ * distância por outra velocidade — dois números que não conversam.
+ */
+export function cadenciaPara(velocidadeKmH: number): number {
+  const pts = RITMOS;
+  if (velocidadeKmH <= pts[0].velocidade) return pts[0].cadencia;
+  const ult = pts[pts.length - 1];
+  if (velocidadeKmH >= ult.velocidade) return ult.cadencia;
+  for (let i = 0; i < pts.length - 1; i++) {
+    const a = pts[i], b = pts[i + 1];
+    if (velocidadeKmH <= b.velocidade) return a.cadencia + ((velocidadeKmH - a.velocidade) / (b.velocidade - a.velocidade)) * (b.cadencia - a.cadencia);
+  }
+  return ult.cadencia;
+}
+
 /** Modo 3: tenho os passos, quero as calorias. O tempo sai da cadência. */
 export function dePassos(passos: number, pesoKg: number, velocidade: number, inclinacao: number, cadencia: number): Resultado {
   const minutos = cadencia > 0 ? passos / cadencia : 0;
@@ -389,9 +407,10 @@ export function formataVelocidade(v: number): string {
  */
 export function fraseContexto(pesoKg: number, r: Resultado): string {
   const onde = r.inclinacao > 0 ? ` com ${r.inclinacao.toLocaleString("pt-BR")}% de inclinação` : "";
+  const peso = pesoKg.toLocaleString("pt-BR", { maximumFractionDigits: 1 });
   return (
-    `Para uma pessoa de ${Math.round(pesoKg)} kg, ${formataTempo(r.minutos)} de caminhada a ` +
-    `${formataVelocidade(r.velocidade)}${onde} representam um gasto estimado de aproximadamente ` +
+    `Para uma pessoa de ${peso} kg, uma caminhada de ${formataTempo(r.minutos)} a ` +
+    `${formataVelocidade(r.velocidade)}${onde} representa um gasto estimado de aproximadamente ` +
     `${arredondaKcal(r.kcal)} kcal — cerca de ${formataKm(r.km)} e ${arredondaPassos(r.passos).toLocaleString("pt-BR")} passos.`
   );
 }

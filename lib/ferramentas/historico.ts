@@ -35,6 +35,7 @@ export type Ferramenta =
   | "fc"
   | "polichinelos"
   | "caminhada"
+  | "eliptico"
   | "diagnostico"
   | "rotina"
   | "academia"
