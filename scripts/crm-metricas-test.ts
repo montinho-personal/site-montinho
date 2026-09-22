@@ -8,12 +8,13 @@
  * merge em vez de mesclar.
  */
 import {
-  taxasFunil, showRate, winRate, ltvRealizado, ltvPorConfianca, ehEstimado, dataDaReceita, recebimentoNoFuturo, mrrDoContrato, mrrNormalizado, movimentoMrr, cacMidia, ltvCac, paybackMeses,
+  taxasFunil, showRate, winRate, ltvRealizado, ltvPorConfianca, ehEstimado, dataDaReceita, recebimentoNoFuturo, mrrDoContrato, mrrNormalizado, valorEmPacotes, movimentoMrr, cacMidia, ltvCac, paybackMeses,
   churnClientes, retencaoClientes, metricasIndicacao, atribuir, inferirFonte, normalizarTelefoneE164, possiveisDuplicatas,
   coortes, classificarLead, prioridadesHoje, anomalia, mediana, cicloDeVendaDias, primeiraResposta, valorPipeline,
   probabilidadeHistorica, coberturaAtribuicao, ltvProjetado, roasReceita, custoPorLead, slaFollowUp, tenureMeses,
   type EventoReceita, type Cliente, type Contrato,
 } from "../lib/crm/metricas";
+import { ehContratoPacote } from "../lib/crm/visao";
 
 let falhas = 0;
 const ok = (nome: string, cond: boolean, detalhe = "") => {
@@ -102,6 +103,53 @@ ok("plano trimestral 1.200 = 400 de MRR normalizado", mrrDoContrato(1200, 3) ===
   ok("MRR em maio: 1200 + 600 = 1800 (trimestral encerrado, D cancelado)", perto(mrrNormalizado(c, new Date("2026-05-15")), 1800));
   const m = movimentoMrr(c, new Date("2026-02-15"), new Date("2026-05-15"));
   ok("movimento: novo 600, perdido 400 (B) + 900 (D)", m.novo === 600 && perto(m.perdido, 1300), JSON.stringify(m));
+}
+
+/*
+ * 3b. PACOTE DE AULAS NÃO É MENSALIDADE
+ *
+ * O plano de pacote guarda ciclo_meses = 1 porque o campo é obrigatório, não
+ * porque o dinheiro entra todo mês. Somar o valor cheio como mensalidade
+ * errava nas duas direções: em 22/09/2026 dois pacotes respondiam por
+ * R$ 2.300 de um MRR de R$ 4.267 — 54% —, e o aluno que consumiu 10 aulas em
+ * duas semanas aparecia como R$ 700/mês quando pagou R$ 700 duas vezes.
+ */
+{
+  const c: Contrato[] = [
+    { clientId: "mensal", valor: 600, cicloMeses: 1, inicio: "2026-01-01", fim: null, status: "ativo" },
+    { clientId: "denis", valor: 700, cicloMeses: 1, inicio: "2026-09-09", fim: null, status: "ativo", ehPacote: true },
+    { clientId: "natalia", valor: 1600, cicloMeses: 1, inicio: "2026-08-06", fim: null, status: "ativo", ehPacote: true },
+  ];
+  const d = new Date("2026-09-22");
+  ok("pacote fica fora do MRR: sobra só a mensalidade", perto(mrrNormalizado(c, d), 600), String(mrrNormalizado(c, d)));
+  const p = valorEmPacotes(c, d);
+  ok("pacotes em aberto somam 2.300 em 2 contratos", perto(p.valor, 2300) && p.contratos === 2, JSON.stringify(p));
+
+  /* Renovar pacote não é expansão, e acabar o pacote não é churn. */
+  const mov = movimentoMrr(c, new Date("2026-08-01"), d);
+  ok("movimento de MRR ignora pacote", mov.novo === 0 && mov.expansao === 0 && mov.perdido === 0, JSON.stringify(mov));
+
+  /* A rede de segurança: sem o sinal, o contrato volta a contar como mensal. */
+  const semSinal: Contrato[] = c.map((k) => ({ ...k, ehPacote: false }));
+  ok("sem a marca de pacote o número infla de volta para 2.900", perto(mrrNormalizado(semSinal, d), 2900));
+}
+
+/* 3c. QUEM É PACOTE: a verdade é o tipo_cobranca do plano. */
+{
+  const planos = [
+    { id: "p-mensal", tipo_cobranca: "mensal" },
+    { id: "p-pacote", tipo_cobranca: "pacote" },
+    { id: "p-tri", tipo_cobranca: "trimestral" },
+  ];
+  ok("plano de pacote é pacote", ehContratoPacote({ plan_id: "p-pacote", sessoes_contratadas: 10 }, planos));
+  ok("plano mensal não é pacote nem com sessões preenchidas",
+    !ehContratoPacote({ plan_id: "p-mensal", sessoes_contratadas: 8 }, planos));
+  ok("plano trimestral não é pacote", !ehContratoPacote({ plan_id: "p-tri", sessoes_contratadas: null }, planos));
+  /* Contrato importado sem plano: o número de aulas é o que sobra para decidir. */
+  ok("sem plano, número de aulas decide", ehContratoPacote({ plan_id: null, sessoes_contratadas: 10 }, planos));
+  ok("sem plano e sem aulas, não é pacote", !ehContratoPacote({ plan_id: null, sessoes_contratadas: null }, planos));
+  /* Plano que não existe mais no catálogo cai na mesma rede. */
+  ok("plano desconhecido cai na regra das aulas", ehContratoPacote({ plan_id: "sumiu", sessoes_contratadas: 20 }, planos));
 }
 
 bloco("4. CAC, LTV:CAC, PAYBACK, ROAS");
