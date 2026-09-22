@@ -26,6 +26,7 @@ import {
   deKcal,
   deTempo,
   faixa as faixaDe,
+  faixaPrincipal,
   formataTempo,
   fraseContexto,
   kcalLiquida,
@@ -90,7 +91,8 @@ export default function CalculadoraAtividades({
   const [minutosTexto, setMinutosTexto] = useState("");
   const [kcalTexto, setKcalTexto] = useState("");
   const [faixaId, setFaixaId] = useState<string | null>(null);
-  const [descontarPausas, setDescontarPausas] = useState(true);
+  /* Sem desconto por padrão: é o que concorda com os artigos (lib/atividades.ts). */
+  const [descontarPausas, setDescontarPausas] = useState(false);
   const [mostrarMetodo, setMostrarMetodo] = useState(false);
 
   const raiz = useRef<HTMLDivElement>(null);
@@ -98,7 +100,7 @@ export default function CalculadoraAtividades({
 
   const ativ = atividadeDe(atividadeId);
   /* A faixa é da atividade: trocar de atividade sem resetar deixaria um id órfão. */
-  const fx = faixaDe(ativ, faixaId ?? ativ.faixas[0].id);
+  const fx = faixaDe(ativ, faixaId ?? faixaPrincipal(ativ).id);
 
   const peso = parseNumero(pesoTexto);
   const pesoOk = pesoValido(peso);
@@ -264,10 +266,11 @@ export default function CalculadoraAtividades({
             <input type="checkbox" checked={descontarPausas} onChange={(e) => { setDescontarPausas(e.target.checked); trackEvent("activity_pauses_toggle", { placement, on: e.target.checked ? "yes" : "no" }); }}
               className="mt-1 h-5 w-5 accent-[#BA9E50]" />
             <span className="text-gray-300 text-sm leading-relaxed">
-              Descontar as pausas da aula
+              Passei boa parte da sessão parado
               <span className="block text-gray-500 text-xs mt-0.5">
-                Aquecimento, explicação e água. Contamos cerca de {Math.round(ativ.fracaoAtiva! * 100)}% do tempo como esforço —
-                é o que separa o gasto real do número das tabelas de revista.
+                Marque se a aula teve muita explicação, fila ou conversa. Passamos a contar cerca de{" "}
+                {Math.round(ativ.fracaoAtiva! * 100)}% do tempo como esforço. Sem marcar, vale o tempo cheio — que é o
+                que as faixas de referência usam.
               </span>
             </span>
           </label>
@@ -286,7 +289,7 @@ export default function CalculadoraAtividades({
                 </p>
               </div>
               <div className={modo === "meta" ? "border border-[#BA9E50]/60 bg-[#BA9E50]/[0.06] p-5" : "border border-white/15 p-5"}>
-                <p className="text-gray-400 text-xs mb-1">{modo === "meta" ? "Tempo de esforço" : "Tempo contado"}</p>
+                <p className="text-gray-400 text-xs mb-1">{aplicaDesconto && modo !== "meta" ? "Tempo contado" : "Tempo"}</p>
                 <p className="text-white font-bold text-3xl sm:text-4xl leading-none" style={h}>{formataTempo(resultado.minutos)}</p>
                 {aplicaDesconto && modo !== "meta" && minutosOk && (
                   <p className="text-gray-400 text-sm mt-1">de {formataTempo(minutos)} de aula</p>
@@ -300,7 +303,7 @@ export default function CalculadoraAtividades({
               <div className="overflow-x-auto mb-5">
                 <table className="w-full text-sm border-collapse">
                   <caption className="text-left text-gray-400 text-xs mb-2">
-                    {formataTempo(resultado.minutos)} de esforço para {fmt(peso)} kg, no ritmo mais comum de cada atividade
+                    {formataTempo(resultado.minutos)} para {fmt(peso)} kg, na faixa que representa cada atividade
                   </caption>
                   <tbody>
                     {comparacao.map((l) => (
@@ -340,8 +343,9 @@ export default function CalculadoraAtividades({
                   </p>
                   {aplicaDesconto && modo !== "meta" && minutosOk && (
                     <p>
-                      Dos {formataTempo(minutos)} de aula, contamos {formataTempo(resultado.minutos)} como esforço
-                      ({Math.round(ativ.fracaoAtiva! * 100)}%). Desmarque a caixa acima para contar o tempo inteiro.
+                      Dos {formataTempo(minutos)} de sessão, contamos {formataTempo(resultado.minutos)} como esforço
+                      ({Math.round(ativ.fracaoAtiva! * 100)}%), porque você marcou que ficou parado boa parte do tempo.
+                      Desmarque para voltar ao tempo cheio.
                     </p>
                   )}
                   <p>

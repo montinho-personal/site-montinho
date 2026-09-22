@@ -78,7 +78,7 @@ const BOXE = atividade("boxe");
 const FUT = atividade("futebol");
 const ZUM = atividade("zumba");
 const CMP = comparaAtividades(60, PESO_PADRAO);
-const TAB_BOXE = tabelaPorPeso(BOXE, tempoAtivo(60, BOXE));
+const TAB_BOXE = tabelaPorPeso(BOXE, 60);
 const UM_QUILO = simulacaoUmQuilo(PESO_PADRAO, BOXE.faixas[0].met);
 const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDigits: d });
 /** O gasto de uma aula: tempo de aula, já descontadas as pausas. */
@@ -90,28 +90,28 @@ const aula = (id: string, min: number, iFaixa = 0) => {
 const faq: ItemFAQ[] = [
   {
     question: "Quantas calorias uma aula de boxe queima?",
-    answer: `Uma aula de 60 minutos para uma pessoa de ${PESO_PADRAO} kg gasta cerca de ${arredondaKcal(aula("boxe", 60).kcal)} kcal — contando aproximadamente ${Math.round(BOXE.fracaoAtiva! * 100)}% do tempo como esforço, porque aula tem aquecimento, explicação e água. Os números de 800 a 1.000 kcal que circulam supõem uma hora inteira de sparring, que quase ninguém faz.`,
+    answer: `Uma aula de 60 minutos para uma pessoa de ${PESO_PADRAO} kg gasta cerca de ${arredondaKcal(deTempo(60, PESO_PADRAO, BOXE.faixas[0].met).kcal)} kcal no saco e nos aparelhos, e ${arredondaKcal(deTempo(60, PESO_PADRAO, BOXE.faixas[1].met).kcal)} kcal em sparring. Se a aula teve muita explicação e pausa, a calculadora recalcula contando cerca de ${Math.round(BOXE.fracaoAtiva! * 100)}% do tempo — o que dá ${arredondaKcal(aula("boxe", 60).kcal)} kcal. Os "1.000 kcal por aula" que circulam supõem uma hora inteira de sparring, que quase ninguém faz.`,
   },
   {
     question: "Quantas calorias uma pelada de futebol queima?",
-    answer: `Cerca de ${arredondaKcal(aula("futebol", 60).kcal)} kcal em 60 minutos de pelada, para ${PESO_PADRAO} kg. Jogo competitivo, em que o ritmo não cai, chega perto de ${arredondaKcal(aula("futebol", 60, 1).kcal)} kcal — a diferença entre os dois é quanto tempo você fica realmente correndo.`,
+    answer: `Cerca de ${arredondaKcal(deTempo(60, PESO_PADRAO, FUT.faixas[0].met).kcal)} kcal em 60 minutos de pelada, para ${PESO_PADRAO} kg. Jogo competitivo, em que o ritmo não cai, chega perto de ${arredondaKcal(deTempo(60, PESO_PADRAO, FUT.faixas[1].met).kcal)} kcal — a diferença entre os dois é quanto tempo você fica realmente correndo. Numa pelada bem parada, marcando a caixa de pausas, o número cai para cerca de ${arredondaKcal(aula("futebol", 60).kcal)} kcal.`,
   },
   {
     question: "Quantas calorias uma aula de zumba queima?",
-    answer: `Uma aula de 50 minutos para ${PESO_PADRAO} kg fica em torno de ${arredondaKcal(aula("zumba", 50).kcal)} kcal em coreografia de baixo impacto e ${arredondaKcal(aula("zumba", 50, 1).kcal)} kcal em aula de alto impacto, com saltos.`,
+    answer: `Uma aula de 50 minutos para ${PESO_PADRAO} kg fica em torno de ${arredondaKcal(deTempo(50, PESO_PADRAO, ZUM.faixas[0].met).kcal)} kcal em coreografia de baixo impacto e ${arredondaKcal(deTempo(50, PESO_PADRAO, ZUM.faixas[1].met).kcal)} kcal em aula de alto impacto, com saltos. Bem longe das "1.000 calorias por aula" que a propaganda promete.`,
   },
   {
     question: "Qual atividade queima mais calorias?",
-    answer: `No mesmo tempo de esforço e para ${PESO_PADRAO} kg, a ordem começa em ${CMP[0].nome.split(" — ")[0].toLowerCase()} (${arredondaKcal(CMP[0].kcal)} kcal em 60 minutos) e termina em ${CMP[CMP.length - 1].nome.split(" — ")[0].toLowerCase()} (${arredondaKcal(CMP[CMP.length - 1].kcal)} kcal). Só que a atividade que emagrece mais é a que você repete — e nisso a que você gosta ganha da que gasta 50 kcal a mais.`,
+    answer: `No mesmo tempo e para ${PESO_PADRAO} kg, a ordem começa em ${CMP[0].nome.split(" — ")[0].toLowerCase()} (${arredondaKcal(CMP[0].kcal)} kcal em 60 minutos) e termina em ${CMP[CMP.length - 1].nome.split(" — ")[0].toLowerCase()} (${arredondaKcal(CMP[CMP.length - 1].kcal)} kcal). Só que a atividade que emagrece mais é a que você repete — e nisso a que você gosta ganha da que gasta 50 kcal a mais.`,
   },
   {
-    question: "Por que o número aqui é menor que o das tabelas que eu vejo por aí?",
+    question: "E se eu passei metade da aula parado?",
     answer:
-      "Porque a maioria das tabelas trata o tempo de aula como tempo de esforço. Uma hora de aula de boxe tem aquecimento, explicação de combinação, troca de parceiro e pausa para água; o gasto vem do tempo em movimento. Esta calculadora desconta isso por padrão, mostra quanto descontou e deixa você desligar o desconto.",
+      "Aí o gasto foi menor, e a calculadora tem uma caixa para isso. Marcada, ela conta só a fração do tempo que costuma ser esforço numa aula daquele tipo e mostra quanto descontou. Desmarcada — que é o padrão — vale o tempo cheio, que é o que as faixas de referência e os artigos do site usam.",
   },
   {
     question: "Esse número inclui o que eu gastaria parado?",
-    answer: `Inclui — é gasto bruto, como em qualquer tabela de METs. Para ${PESO_PADRAO} kg numa aula de boxe de 60 minutos, o bruto é cerca de ${arredondaKcal(aula("boxe", 60).kcal)} kcal e o que a aula acrescenta de fato ao dia fica perto de ${arredondaKcal(kcalLiquida(aula("boxe", 60), PESO_PADRAO))} kcal. A metodologia da calculadora mostra os dois.`,
+    answer: `Inclui — é gasto bruto, como em qualquer tabela de METs. Para ${PESO_PADRAO} kg numa aula de boxe de 60 minutos, o bruto é cerca de ${arredondaKcal(deTempo(60, PESO_PADRAO, BOXE.faixas[0].met).kcal)} kcal e o que a aula acrescenta de fato ao dia fica perto de ${arredondaKcal(kcalLiquida(deTempo(60, PESO_PADRAO, BOXE.faixas[0].met), PESO_PADRAO))} kcal. A metodologia da calculadora mostra os dois.`,
   },
   {
     question: "Fazer essa atividade todo dia perde barriga?",
@@ -166,16 +166,16 @@ export default function CalculadoraAtividadesPage() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Qual atividade queima mais calorias?</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Sessenta minutos de esforço, para uma pessoa de {PESO_PADRAO} kg, no ritmo mais comum de cada uma:
+              Sessenta minutos, para uma pessoa de {PESO_PADRAO} kg, na faixa que representa cada atividade:
             </p>
             <div className="overflow-x-auto mb-3">
               <table className="w-full text-sm border-collapse">
-                <caption className="sr-only">Gasto estimado em 60 minutos de esforço por atividade, para 70 kg</caption>
+                <caption className="sr-only">Gasto estimado em 60 minutos por atividade, para 70 kg</caption>
                 <thead>
                   <tr className="border-b border-white/20">
                     <th scope="col" className={th}>Atividade</th>
                     <th scope="col" className={th}>METs</th>
-                    <th scope="col" className="text-left text-gray-400 font-medium py-2.5">60 min de esforço</th>
+                    <th scope="col" className="text-left text-gray-400 font-medium py-2.5">60 min</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -198,12 +198,13 @@ export default function CalculadoraAtividadesPage() {
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>
-              Uma hora de aula não é uma hora de esforço
+              E se eu passei metade da aula parado?
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              É por isso que os números por aí são maiores que os daqui. Uma aula de boxe de 60 minutos tem
-              aquecimento, explicação de combinação, troca de parceiro e água; uma pelada tem o time esperando a
-              bola voltar do mato. Contar a aula inteira como esforço infla o resultado em um terço ou mais.
+              O padrão da calculadora é contar o tempo cheio da sessão, que é o que as faixas de referência
+              usam. Só que aula de verdade tem aquecimento, explicação de combinação, troca de parceiro e água —
+              e pelada tem o time esperando a bola voltar do mato. Quando a sessão foi assim, a caixa
+              &ldquo;passei boa parte da sessão parado&rdquo; recalcula com a fração abaixo.
             </p>
             <div className="overflow-x-auto mb-3">
               <table className="w-full text-sm border-collapse">
@@ -212,7 +213,7 @@ export default function CalculadoraAtividadesPage() {
                   <tr className="border-b border-white/20">
                     <th scope="col" className={th}>Atividade</th>
                     <th scope="col" className={th}>Sessão típica</th>
-                    <th scope="col" className="text-left text-gray-400 font-medium py-2.5">Tempo de esforço</th>
+                    <th scope="col" className="text-left text-gray-400 font-medium py-2.5">Se marcar a caixa</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -230,14 +231,15 @@ export default function CalculadoraAtividadesPage() {
             </div>
             <p className="text-gray-400 text-sm">
               Natação e bicicleta aparecem como contínuas: nelas, parar é parar de verdade, e quem conta o tempo
-              já conta o tempo nadando ou pedalando. O desconto pode ser desligado na calculadora.
+              já conta o tempo nadando ou pedalando. As frações são as únicas coisas desta página que não vêm do
+              Compêndio — por isso são opcionais, e não o padrão.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quantas calorias uma aula de boxe queima?</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Uma aula de 60 minutos, contando {Math.round(BOXE.fracaoAtiva! * 100)}% do tempo como esforço:
+              Uma aula de 60 minutos, contando o tempo cheio — que é o que as faixas de referência usam:
             </p>
             <div className="overflow-x-auto mb-3">
               <table className="w-full text-sm border-collapse">
@@ -332,8 +334,9 @@ export default function CalculadoraAtividadesPage() {
             </div>
             <p className="text-gray-300 leading-relaxed mb-4">
               O <strong className="text-white">desconto das pausas</strong> é a única coisa aqui que não vem do
-              Compêndio: são frações típicas de aula, declaradas na tabela acima e desligáveis na calculadora. Os
-              números são <strong className="text-white">brutos</strong> — incluem o que você gastaria parado.
+              Compêndio: são frações típicas de aula, declaradas na tabela acima, e por isso ficam como opção em
+              vez de padrão — os METs de esporte já são medidos na atividade como ela é praticada. Os números são{" "}
+              <strong className="text-white">brutos</strong>: incluem o que você gastaria parado.
             </p>
             <p className="text-gray-400 text-sm leading-relaxed">
               Revisado em 22 de setembro de 2026 por <Link href="/minha-historia" className={ln}>Montinho</Link>,

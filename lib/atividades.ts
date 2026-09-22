@@ -36,13 +36,25 @@
  * interpolado aqui: se o Compêndio não mede uma faixa, ela não existe na
  * ferramenta.
  *
- * O QUE ESTA FERRAMENTA NUNCA FAZ
+ * O DESCONTO DE PAUSAS É OPÇÃO, NÃO PADRÃO
  *
- * Tratar o tempo de aula como tempo de esforço. Uma aula de boxe de uma
- * hora não é uma hora de boxe: tem aquecimento, explicação, pausa e água.
- * A ferramenta pergunta o tempo em movimento e explica a diferença — é a
- * razão pela qual os números de revista (800 kcal numa aula) não batem
- * com o que a pessoa realmente gasta.
+ * A primeira versão descontava as pausas por padrão, com o argumento de
+ * que uma aula de uma hora não é uma hora de esforço. O argumento é bom e
+ * a conta estava certa — mas a auditoria mostrou que ela brigava com o
+ * próprio site: o artigo de boxe diz 450 a 600 kcal para uma hora de aula
+ * a 70 kg e a calculadora, logo abaixo dele, dizia 400; o de futebol diz
+ * 400 a 650 para uma pelada de uma hora e a calculadora dizia 310; o de
+ * corda diz 300 a 400 em 30 minutos e a calculadora dizia 161.
+ *
+ * Duas respostas diferentes para a mesma pergunta na mesma página é pior
+ * que uma resposta imperfeita. E os METs do Compêndio para esporte são
+ * medidos na atividade como ela é praticada, com as pausas que ela tem —
+ * descontar de novo é descontar duas vezes.
+ *
+ * Então o padrão é o tempo cheio, que concorda com os artigos, e o
+ * desconto fica como caixa para quem sabe que passou metade da aula
+ * parado. `scripts/atividades-test.ts` compara a saída com as faixas
+ * declaradas em cada artigo, para isso não voltar em silêncio.
  */
 
 import {
@@ -92,6 +104,13 @@ export interface Atividade {
   /** Tempo típico de uma sessão, em minutos. Vira o atalho principal. */
   sessaoTipica: number;
   /**
+   * Índice da faixa que representa a atividade — o padrão do seletor e a
+   * linha que entra na comparação. Quase sempre 0; em "subir escada" é a
+   * segunda, porque o artigo trata a escada como exercício (8 a 9 METs) e
+   * a entrada lenta do Compêndio é a subida do dia a dia.
+   */
+  faixaPrincipal: number;
+  /**
    * Quanto do tempo de aula costuma ser esforço de verdade. Usado para o
    * aviso de "aula de 60 min não é 60 min de esforço"; null quando a
    * atividade é contínua por natureza (natação, bicicleta).
@@ -113,6 +132,7 @@ export const ATIVIDADES: Atividade[] = [
     nome: "Boxe",
     artigoFrase: "uma sessão de boxe",
     sessaoTipica: 60,
+    faixaPrincipal: 0,
     fracaoAtiva: 0.7,
     slug: "boxe-emagrece",
     faixas: [
@@ -125,6 +145,7 @@ export const ATIVIDADES: Atividade[] = [
     nome: "Futebol",
     artigoFrase: "uma pelada",
     sessaoTipica: 60,
+    faixaPrincipal: 0,
     fracaoAtiva: 0.6,
     slug: "futebol-emagrece",
     faixas: [
@@ -137,6 +158,7 @@ export const ATIVIDADES: Atividade[] = [
     nome: "Zumba e dança aeróbica",
     artigoFrase: "uma aula de zumba",
     sessaoTipica: 50,
+    faixaPrincipal: 0,
     fracaoAtiva: 0.85,
     slug: "zumba-emagrece",
     faixas: [
@@ -149,6 +171,7 @@ export const ATIVIDADES: Atividade[] = [
     nome: "Spinning e bike indoor",
     artigoFrase: "uma aula de spinning",
     sessaoTipica: 45,
+    faixaPrincipal: 0,
     fracaoAtiva: 0.9,
     slug: "spinning-emagrece",
     faixas: [
@@ -161,6 +184,7 @@ export const ATIVIDADES: Atividade[] = [
     nome: "Dança (salão, forró, funk)",
     artigoFrase: "uma noite de dança",
     sessaoTipica: 60,
+    faixaPrincipal: 0,
     fracaoAtiva: 0.7,
     slug: "danca-emagrece",
     faixas: [
@@ -173,11 +197,12 @@ export const ATIVIDADES: Atividade[] = [
     nome: "Natação",
     artigoFrase: "um treino de natação",
     sessaoTipica: 45,
+    faixaPrincipal: 0,
     fracaoAtiva: null,
     slug: "natacao-emagrece",
     faixas: [
-      { id: "moderada", nome: "Moderada", met: 5.8, comoReconhecer: "Nado contínuo, ritmo de treino de manutenção.", origem: "natação, crawl, esforço moderado" },
-      { id: "vigorosa", nome: "Vigorosa", met: 9.8, comoReconhecer: "Séries de velocidade, com pouco descanso na borda.", origem: "natação, crawl, esforço vigoroso" },
+      { id: "moderada", nome: "Leve / recreativo", met: 5.8, comoReconhecer: "Nado contínuo e confortável, sem cronômetro — o que o artigo chama de nado recreativo.", origem: "natação, crawl lento, esforço moderado" },
+      { id: "vigorosa", nome: "Crawl vigoroso", met: 9.8, comoReconhecer: "Séries de velocidade, com pouco descanso na borda.", origem: "natação, crawl rápido, esforço vigoroso" },
     ],
   },
   {
@@ -185,6 +210,7 @@ export const ATIVIDADES: Atividade[] = [
     nome: "Jiu-jitsu e artes marciais",
     artigoFrase: "um treino de jiu-jitsu",
     sessaoTipica: 60,
+    faixaPrincipal: 0,
     fracaoAtiva: 0.65,
     slug: "jiu-jitsu-emagrece",
     faixas: [
@@ -197,6 +223,7 @@ export const ATIVIDADES: Atividade[] = [
     nome: "Pular corda",
     artigoFrase: "uma sessão de corda",
     sessaoTipica: 15,
+    faixaPrincipal: 0,
     fracaoAtiva: 0.5,
     slug: "pular-corda-emagrece",
     faixas: [
@@ -209,11 +236,14 @@ export const ATIVIDADES: Atividade[] = [
     nome: "Subir escada",
     artigoFrase: "uma sessão de escada",
     sessaoTipica: 15,
+    /* O artigo trata a escada como exercício, em 8 a 9 METs; a entrada
+       lenta do Compêndio é a subida do dia a dia e enganaria na comparação. */
+    faixaPrincipal: 1,
     fracaoAtiva: 0.6,
     slug: "subir-escada-emagrece",
     faixas: [
-      { id: "lento", nome: "Ritmo comum", met: 4.0, comoReconhecer: "Subir degraus no passo do dia a dia, sem pressa.", origem: "subir escada, ritmo lento" },
-      { id: "rapido", nome: "Ritmo rápido", met: 8.8, comoReconhecer: "Subida contínua e apressada, como treino.", origem: "subir escada, ritmo rápido" },
+      { id: "lento", nome: "Subida do dia a dia", met: 4.0, comoReconhecer: "Subir um lance no passo normal, sem pressa. É movimento do dia, não treino.", origem: "subir escada, ritmo lento" },
+      { id: "rapido", nome: "Ritmo de treino", met: 8.8, comoReconhecer: "Subida contínua e apressada, feita como exercício. É a faixa de que o artigo fala.", origem: "subir escada, ritmo rápido" },
     ],
   },
   {
@@ -221,6 +251,7 @@ export const ATIVIDADES: Atividade[] = [
     nome: "Bicicleta (rua)",
     artigoFrase: "um pedal",
     sessaoTipica: 45,
+    faixaPrincipal: 0,
     fracaoAtiva: null,
     slug: "bicicleta-emagrece",
     faixas: [
@@ -305,7 +336,7 @@ export interface LinhaComparacao {
 /** A mesma duração, o mesmo peso, na faixa mais comum de cada atividade. */
 export function comparaAtividades(minutos: number, pesoKg: number): LinhaComparacao[] {
   return ATIVIDADES.map((a) => {
-    const f = a.faixas[0];
+    const f = a.faixas[a.faixaPrincipal];
     return { id: a.id, nome: `${a.nome} — ${f.nome.toLowerCase()}`, met: f.met, kcal: kcalPorMinuto(f.met, pesoKg) * minutos };
   }).sort((x, y) => y.kcal - x.kcal);
 }
@@ -317,6 +348,11 @@ export const PESOS_TABELA = [50, 60, 70, 80, 90, 100, 120] as const;
 export interface LinhaPeso {
   peso: number;
   kcal: number[];
+}
+
+/** A faixa que representa a atividade — padrão do seletor e da comparação. */
+export function faixaPrincipal(a: Atividade): FaixaEsforco {
+  return a.faixas[a.faixaPrincipal] ?? a.faixas[0];
 }
 
 /** Uma linha por peso, uma coluna por faixa da atividade. */
