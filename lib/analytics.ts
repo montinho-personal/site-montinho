@@ -301,6 +301,11 @@ export type AnalyticsEvent =
   | "goal_date_changed"
   | "goal_methodology_open"
   | "goal_tool_click"
+  /** Calculadora de Potencial Natural. `reading` e `level`; nunca altura, peso ou gordura. */
+  | "potential_calculator_view"
+  | "potential_calculator_use"
+  | "potential_methodology_open"
+  | "potential_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"

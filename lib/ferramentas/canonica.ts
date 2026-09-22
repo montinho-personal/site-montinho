@@ -73,6 +73,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Meta de Peso",
     motivo: "que projeta a faixa possível até a sua data e diz se o número que você tem em mente cabe nela",
   },
+  potencial: {
+    href: "/ferramentas/potencial-natural",
+    ancora: "Calculadora de Potencial Natural",
+    motivo: "com o FFMI normalizado, o que o número 25 realmente significa e o ritmo de ganho esperado no seu nível",
+  },
   proteina: {
     href: "/ferramentas/calculadora-de-proteina",
     ancora: "Calculadora de Proteína",
