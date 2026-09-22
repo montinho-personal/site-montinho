@@ -20,7 +20,12 @@
  * e a ferramenta responde a conta que o texto não responde: com o peso de
  * quem pergunta.
  *
- * CAMINHADA E ELÍPTICO NÃO ENTRAM
+ * CAMINHADA, ELÍPTICO E FUTEBOL NÃO ENTRAM
+ *
+ * O futebol entrou aqui e saiu em 22/09/2026. Não porque o argumento
+ * acima deixou de valer, mas porque o futebol passou a ter uma conta que
+ * as outras não têm: o revezamento de times, que separa o tempo de bola
+ * rolando do tempo na lateral. Ver lib/futebol.ts.
  *
  * Os dois têm calculadora própria, com coisas que esta não faz
  * (inclinação, passos, comparação com o visor). Repeti-los aqui criaria a
@@ -138,19 +143,6 @@ export const ATIVIDADES: Atividade[] = [
     faixas: [
       { id: "saco", nome: "Saco e aparelhos", met: 7.8, comoReconhecer: "Aula comum: saco, luva e combinações, com pausa entre as séries.", origem: "boxe no saco de pancadas" },
       { id: "sparring", nome: "Sparring", met: 9.3, comoReconhecer: "Luta com parceiro, em rounds. É o mais intenso e o menos comum.", origem: "boxe, sparring" },
-    ],
-  },
-  {
-    id: "futebol",
-    nome: "Futebol",
-    artigoFrase: "uma pelada",
-    sessaoTipica: 60,
-    faixaPrincipal: 0,
-    fracaoAtiva: 0.6,
-    slug: "futebol-emagrece",
-    faixas: [
-      { id: "casual", nome: "Pelada", met: 7.0, comoReconhecer: "Jogo entre amigos, com paradas, conversa e troca de time.", origem: "futebol, casual, geral" },
-      { id: "competitivo", nome: "Competitivo", met: 10.0, comoReconhecer: "Jogo federado ou campeonato, com ritmo alto do início ao fim.", origem: "futebol, competitivo" },
     ],
   },
   {
@@ -404,7 +396,6 @@ export const NOTA_SEM_PERDA_LOCALIZADA =
  */
 export const ARTIGOS_COM_CALCULADORA_ATIVIDADES: string[] = [
   "boxe-emagrece",
-  "futebol-emagrece",
   "zumba-emagrece",
   "spinning-emagrece",
   "danca-emagrece",

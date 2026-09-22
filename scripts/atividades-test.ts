@@ -31,7 +31,6 @@ const perto = (a: number, b: number, t = 0.01) => Math.abs(a - b) <= t;
 bloco("1. OS METs, TRAVADOS (mudar exige conferir o Compêndio)");
 const ESPERADO: Record<string, [string, number][]> = {
   boxe: [["saco", 7.8], ["sparring", 9.3]],
-  futebol: [["casual", 7.0], ["competitivo", 10.0]],
   zumba: [["baixo", 5.0], ["alto", 7.3]],
   spinning: [["moderado", 6.8], ["vigoroso", 8.8]],
   danca: [["social", 5.5], ["intensa", 7.8]],
@@ -82,8 +81,6 @@ const FAIXAS_DOS_ARTIGOS: [string, string, number, number, number, number][] = [
   ["boxe", "saco", 70, 60, 450, 600],
   ["boxe", "sparring", 70, 60, 600, 800],
   ["boxe", "saco", 90, 60, 550, 750],
-  ["futebol", "casual", 70, 60, 400, 650],
-  ["futebol", "competitivo", 70, 60, 500, 900],
   ["zumba", "baixo", 70, 60, 250, 400],
   ["zumba", "alto", 70, 60, 350, 600],
   ["spinning", "moderado", 70, 45, 300, 400],

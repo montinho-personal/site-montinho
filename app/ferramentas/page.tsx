@@ -59,9 +59,10 @@ const itemListSchema = {
     { "@type": "ListItem", position: 19, name: "Calculadora de Meta de Peso", url: `${SITE_URL}/ferramentas/meta-de-peso` },
     { "@type": "ListItem", position: 20, name: "Calculadora de Potencial Natural", url: `${SITE_URL}/ferramentas/potencial-natural` },
     { "@type": "ListItem", position: 21, name: "Calculadora de Composição Corporal", url: `${SITE_URL}/ferramentas/composicao-corporal` },
+    { "@type": "ListItem", position: 22, name: "Calculadora de Calorias no Futebol", url: `${SITE_URL}/ferramentas/calculadora-calorias-futebol` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 22, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 23, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
@@ -199,7 +200,7 @@ const FERRAMENTAS = [
     pergunta: "Quantas calorias a minha aula gasta?",
     tempo: "15 segundos · sem cadastro",
     texto:
-      "Boxe, futebol, zumba, spinning, dança, natação, jiu-jitsu, escada, corda e bicicleta: informe peso, tempo e ritmo para ver o gasto da sessão — descontando as pausas da aula — e compare as dez atividades no mesmo tempo.",
+      "Boxe, zumba, spinning, dança, natação, jiu-jitsu, escada, corda e bicicleta: informe peso, tempo e ritmo para ver o gasto da sessão — com as pausas da aula como opção — e compare as nove atividades no mesmo tempo.",
     quando: "Use quando quiser saber quanto a sua aula realmente gasta, e não o número da tabela de revista. O peso não sai do navegador.",
   },
   {
@@ -246,6 +247,15 @@ const FERRAMENTAS = [
     texto:
       "Traduz peso e percentual de gordura em quilos de massa magra e de gordura, diz em que faixa você está e, se você tiver um alvo, mostra quanto perder — comparando o caminho com treino de força e sem ele.",
     quando: "Use depois de uma bioimpedância, quando o relatório tem uma dúzia de números e nenhuma explicação. Nada sai do navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-calorias-futebol",
+    nome: "Calculadora de Calorias no Futebol",
+    pergunta: "Quanto a minha pelada gastou de verdade?",
+    tempo: "15 segundos · sem cadastro",
+    texto:
+      "Calcula o gasto da pelada, do futsal ou do jogo competitivo pelo seu peso, separa o tempo de bola rolando do tempo na lateral quando os times revezam e mostra quantas latas de cerveja o jogo realmente pagou.",
+    quando: "Use depois do jogo, antes da resenha. O peso não sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{
