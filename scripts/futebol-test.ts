@@ -7,7 +7,7 @@ import { marked } from "marked";
 import { splitAtPrimeiraSecao } from "../lib/cta/placement";
 import {
   ARTIGOS_COM_CALCULADORA_FUTEBOL, JOGOS, KCAL_LATA, MET_ESPERANDO, NOTA_GOLEIRO, NOTA_REVEZAMENTO_MEDIA, calcula, formataLatas,
-  fracaoEmCampo, jogo, minutosValidos, pesoValido, semana, tabelaPorPeso, tabelaRevezamento,
+  MINUTOS_EM_CAMPO_ALERTA, fracaoEmCampo, jogo, minutosValidos, pesoValido, semana, tabelaPorPeso, tabelaRevezamento,
 } from "../lib/futebol";
 import { ARTIGOS_COM_CALCULADORA_ATIVIDADES, ATIVIDADES } from "../lib/atividades";
 import { CANONICA } from "../lib/ferramentas/canonica";
@@ -62,6 +62,11 @@ ok("gramas pela conta de 7.700 kcal/kg", perto(s2.gramasGordura, (s2.kcalLiquida
 bloco("6. LIMITES");
 ok("peso fora da faixa recusado", !pesoValido(20) && !pesoValido(400) && pesoValido(80));
 ok("tempo fora da faixa recusado", !minutosValidos(5) && !minutosValidos(600) && minutosValidos(90));
+/* A auditoria: 5 h de jogo competitivo sem revezar dava 13.125 kcal e "79 latas". */
+ok("o teto é quatro horas de quadra", minutosValidos(240) && !minutosValidos(241));
+ok("o pior caso aceito ainda é de corpo humano", calcula(250, 240, jogo("competitivo").met, 2).latas < 70);
+ok("duas horas de bola rolando pedem conferência", /tempoAlto &&/.test(readFileSync("components/futebol/CalculadoraFutebol.tsx", "utf8")) && MINUTOS_EM_CAMPO_ALERTA === 120);
+ok("pelada comum de 2 h com 3 times não dispara o aviso", calcula(80, 120, 7, 3).minutosEmCampo <= MINUTOS_EM_CAMPO_ALERTA);
 
 bloco("7. O ARTIGO DIZ O QUE A CALCULADORA DIZ");
 /*

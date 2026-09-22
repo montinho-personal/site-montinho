@@ -137,7 +137,14 @@ export const PESO_MIN = 30;
 export const PESO_MAX = 250;
 export const PESO_PADRAO = 70;
 export const MINUTOS_MIN = 10;
-export const MINUTOS_MAX = 300;
+/**
+ * Quatro horas de quadra. A auditoria achou a calculadora aceitando cinco
+ * horas de jogo competitivo sem revezar e respondendo "79 latas". Ninguém
+ * fica mais que isso numa quadra alugada.
+ */
+export const MINUTOS_MAX = 240;
+/** Mais que isso de bola rolando é raro o bastante para pedir conferência. */
+export const MINUTOS_EM_CAMPO_ALERTA = 120;
 export const PRESETS_MINUTOS = [60, 90, 120] as const;
 export const PELADAS_MAX = 7;
 
@@ -259,6 +266,9 @@ export const NOTA_LIQUIDA =
 
 export const NOTA_SEMANA =
   "A conta em gramas é linear e serve como teto: o corpo compensa parte do gasto, e o peso cai mais devagar do que ela sugere.";
+
+export const NOTA_TEMPO_ALTO =
+  "Mais de duas horas com a bola rolando para você é raro, até em campeonato. Confira o tempo e o número de times: se houve revezamento, o tempo em campo é bem menor que o tempo na quadra.";
 
 export const NOTA_SEGURANCA =
   "Se você voltou a jogar depois de muito tempo parado ou tem alguma condição cardiovascular, aqueça antes do primeiro pique e converse com quem acompanha você.";

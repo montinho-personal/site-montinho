@@ -10,6 +10,7 @@ import {
   JOGO_PADRAO,
   KCAL_LATA,
   MET_ESPERANDO,
+  MINUTOS_EM_CAMPO_ALERTA,
   MINUTOS_MAX,
   MINUTOS_MIN,
   NOTA_ESTIMATIVA,
@@ -18,6 +19,7 @@ import {
   NOTA_REVEZAMENTO_MEDIA,
   NOTA_SEGURANCA,
   NOTA_SEMANA,
+  NOTA_TEMPO_ALTO,
   PESO_MAX,
   PESO_MIN,
   PRESETS_MINUTOS,
@@ -87,6 +89,7 @@ export default function CalculadoraFutebol({ placement }: { placement: string })
 
   const resultado = pesoOk && minutosOk && !goleiro ? calcula(peso, minutos, jg.met, times) : null;
   const sem = resultado ? semana(resultado, peladas) : null;
+  const tempoAlto = resultado !== null && resultado.minutosEmCampo > MINUTOS_EM_CAMPO_ALERTA;
 
   useEffect(() => {
     const el = raiz.current;
@@ -248,6 +251,12 @@ export default function CalculadoraFutebol({ placement }: { placement: string })
                 <p className="text-gray-400 text-sm mt-2">de cerveja comum, 350 ml</p>
               </div>
             </div>
+
+            {tempoAlto && (
+              <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl border-l-2 pl-4" style={{ borderColor: "#BA9E50" }} data-testid="aviso-tempo-alto">
+                {NOTA_TEMPO_ALTO}
+              </p>
+            )}
 
             <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl">
               Descontando o que você gastaria em casa no mesmo tempo, o jogo acrescentou cerca de{" "}
