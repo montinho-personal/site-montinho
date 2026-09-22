@@ -10,10 +10,12 @@ import {
   NOTA_FAIXA_PERCENTUAL,
   NOTA_MUSCULO,
   NOTA_PRIMEIRAS_SEMANAS,
+  PERDA_MAX_FRACAO,
   PESO_MAX,
   PESO_MIN,
   SEMANAS_MAX,
   SEMANAS_MIN,
+  abaixoDaRegraFixa,
   avalia,
   calcula,
   fimDoAno,
@@ -95,6 +97,8 @@ export default function CalculadoraMeta({ placement }: { placement: string }) {
   const metaOk = meta !== null && meta > 0 && pesoOk && meta < peso * 0.6;
 
   const resultado = pesoOk && prazoOk ? calcula(peso, semanas) : null;
+  /* null quando a meta é grande demais para um horizonte que signifique algo. */
+  const semanasNecessarias = resultado && metaOk ? semanasPara(resultado.pesoAtual, meta) : null;
   const veredito = resultado && metaOk ? avalia(resultado, meta) : null;
 
   useEffect(() => {
@@ -234,8 +238,9 @@ export default function CalculadoraMeta({ placement }: { placement: string }) {
                       acima disso.
                     </p>
                     <p className="text-gray-300 leading-relaxed">
-                      Dá para chegar perto — e com {formataSemanas(semanasPara(resultado.pesoAtual, meta))} o número caberia
-                      com folga. {NOTA_MUSCULO}
+                      Dá para chegar perto
+                      {semanasNecessarias !== null ? ` — e com ${formataSemanas(semanasNecessarias)} o número caberia com folga` : ""}
+                      . {NOTA_MUSCULO}
                     </p>
                   </>
                 ) : (
@@ -246,14 +251,31 @@ export default function CalculadoraMeta({ placement }: { placement: string }) {
                       músculo e quase sempre termina em reganho.
                     </p>
                     <p className="text-gray-300 leading-relaxed">
-                      Esse número caberia em cerca de {formataSemanas(semanasPara(resultado.pesoAtual, meta))}. Se a data não
-                      pode mudar, a meta que cabe nela é {formataKg(resultado.perda.max)} — e ela já é bastante.
+                      {semanasNecessarias !== null
+                        ? `Esse número caberia em cerca de ${formataSemanas(semanasNecessarias)}.`
+                        : "Esse número é grande demais para caber num prazo que uma projeção consiga descrever com honestidade."}{" "}
+                      Se a data não pode mudar, a meta que cabe nela é {formataKg(resultado.perda.max)} — e ela já é bastante.
                     </p>
                   </>
                 )}
               </div>
             )}
 
+            {resultado.noTeto && (
+              <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl border-l-2 pl-4" style={{ borderColor: "#BA9E50" }}>
+                <strong className="text-white">O prazo é longo demais para uma projeção só.</strong> A conta foi cortada em{" "}
+                {Math.round(PERDA_MAX_FRACAO * 100)}% do seu peso porque a partir daí ela deixa de descrever um processo real:
+                nenhum emagrecimento segue o mesmo ritmo por tantos meses, e o que acontece depois desse ponto depende de
+                revisões que nenhuma projeção antecipa. Use um prazo mais curto — três a seis meses — e refaça a conta
+                quando chegar lá.
+              </p>
+            )}
+            {abaixoDaRegraFixa(resultado) && (
+              <p className="text-gray-400 text-sm leading-relaxed mb-4 max-w-2xl">
+                Você deve encontrar por aí a regra de &ldquo;0,5 a 1 kg por semana&rdquo;. Ela é uma média pensada para
+                quem pesa mais: para o seu peso, a faixa percentual fica abaixo disso, e é ela que preserva músculo.
+              </p>
+            )}
             <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl">{NOTA_PRIMEIRAS_SEMANAS}</p>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-2xl">{NOTA_ESTIMATIVA} {NOTA_FAIXA_PERCENTUAL}</p>
 
