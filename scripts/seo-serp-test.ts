@@ -483,6 +483,132 @@ for (const slug of REVISADOS) {
   }
 }
 
+// ─── 6b ─────────────────────────────────────────────────────────────────────
+bloco("6b. O FIM DO TÍTULO DIZ O QUE A PÁGINA ENTREGA, NO ACERVO TODO");
+
+/**
+ * O bloco 6 acima olha a cauda vaga só nos 32 revisados. A varredura de
+ * 21/09/2026 achou o mesmo defeito no acervo, em duas formas.
+ *
+ * A primeira era caso a caso: "Onde Ele Falha", "A Meta Real", "O Que Falta
+ * Junto", "O Exercício Que Você Ignora". Treze títulos com impressão
+ * medida, 6.336 impressões e 0,33% de CTR somados. Foram reescritos em
+ * 22/09/2026.
+ *
+ * A segunda é pior e é a razão da lista abaixo: a mesma fórmula repetida
+ * dezenas de vezes. 24 títulos diziam "Análise Honesta" ou "Resposta
+ * Honesta", 31 diziam "A Verdade", 21 diziam "O Que a Ciência Diz". Cada um
+ * passa sozinho; juntos, viram um carimbo que não distingue página nenhuma
+ * na SERP, porque quem pesquisa dois assuntos parecidos vê o mesmo selo
+ * duas vezes.
+ *
+ * Os 68 abaixo ainda carregam alguma dessas construções. Reescrever em lote
+ * é exatamente o que o AGENTS.md proíbe aqui: cada um exige decidir o que
+ * aquela página entrega, e título mexe em CTR, que só responde semanas
+ * depois no Search Console. A lista SÓ ENCOLHE, e artigo novo já nasce
+ * fora dela.
+ */
+const CAUDA_VAGA_PENDENTE = new Set([
+  "treinar-todos-os-dias-faz-mal",
+  "hiit-funciona",
+  "como-perder-gordura-abdominal",
+  "metabolismo-lento-existe",
+  "exercicio-para-perder-barriga",
+  "hernia-de-disco-pode-treinar",
+  "musculacao-emagrece",
+  "janela-anabolica",
+  "termogenicos-funcionam",
+  "suplementacao-pre-treino-avancada",
+  "sauna-recuperacao-muscular-ciencia",
+  "apneia-do-sono-e-exercicio",
+  "creatina-retencao-de-liquido-mito",
+  "gordura-localizada-mitos-e-fatos",
+  "musculacao-e-colesterol",
+  "zinco-e-testosterone",
+  "dieta-para-comecar-o-ano",
+  "melhor-academia-de-alphaville",
+  "melhores-academias-de-barueri",
+  "vale-a-pena-contratar-personal-trainer",
+  "smart-fit-alphaville",
+  "ironberg-alphaville",
+  "nitrogym-alphaville",
+  "competition-alphaville",
+  "panobianco-alphaville",
+  "skyfit-alphaville",
+  "voi-fit-alphaville",
+  "smart-fit-barueri",
+  "bluefit-barueri",
+  "academia-gavioes-barueri",
+  "redfit-barueri",
+  "primax-barueri",
+  "vale-a-pena-smart-fit",
+  "vale-a-pena-bluefit",
+  "qual-academia-e-melhor-para-emagrecer",
+  "10-mil-passos-por-dia-emagrece",
+  "caminhada-emagrece",
+  "cha-para-emagrecer-funciona",
+  "compulsao-alimentar-como-controlar",
+  "pular-refeicao-emagrece",
+  "qual-e-o-meu-peso-ideal",
+  "suar-emagrece",
+  "musculacao-ou-corrida-para-emagrecer",
+  "adocante-engorda-faz-mal",
+  "cha-verde-emagrece",
+  "suplementos-para-emagrecer-funcionam",
+  "como-acelerar-o-metabolismo",
+  "cardio-em-jejum-emagrece",
+  "oleo-de-coco-emagrece",
+  "proteina-demais-faz-mal",
+  "quantos-ovos-por-dia",
+  "agua-com-limao-em-jejum",
+  "refrigerante-zero-engorda",
+  "dormir-depois-do-almoco-engorda",
+  "dieta-detox-funciona",
+  "dieta-sem-gluten-emagrece",
+  "batata-doce-emagrece",
+  "retencao-de-liquido-como-desinchar",
+  "quantas-refeicoes-por-dia",
+  "quantos-abdominais-por-dia",
+  "gordura-nas-costas",
+  "como-perder-papada",
+  "caibra-por-que-da",
+  "abdomen-inferior-exercicios",
+  "flexibilidade-e-musculacao",
+  "primeira-sessao-com-personal-trainer",
+  "academias-em-aldeia-da-serra",
+  "melhores-academias-aldeia-da-serra",
+]);
+
+{
+  const CAUDA_ACERVO: [string, RegExp][] = [
+    ["a verdade", /\ba verdade\b/i],
+    ["de verdade no fim", /de verdade\s*$/i],
+    ["verdade sobre", /verdade sobre/i],
+    ["verdade e mito", /verdade e mito/i],
+    ["honesta/honesto", /\bhonest[ao]\b/i],
+    ["o que a ciência diz", /o que (a ci[êe]ncia|diz a ci[êe]ncia)/i],
+    ["o que o estudo mostra", /o que (o estudo|a pesquisa) mostra/i],
+    ["que você ignora", /que voc[êe] ignora/i],
+    ["a meta real", /a meta real/i],
+    ["o que falta junto", /o que falta junto/i],
+    ["o que realmente funciona/alivia", /o que realmente (funciona|alivia)/i],
+  ];
+  const comCauda = blogPosts
+    .map((p) => ({ slug: p.slug, t: p.metaTitle || p.title }))
+    .filter((x) => CAUDA_ACERVO.some(([, re]) => re.test(x.t)));
+
+  const inesperados = comCauda.filter((x) => !CAUDA_VAGA_PENDENTE.has(x.slug));
+  ok(`nenhuma cauda vaga fora da lista de pendentes (${comCauda.length} pendentes)`,
+    inesperados.length === 0,
+    inesperados.map((x) => `${x.slug}: ${x.t}`).join(" | "));
+
+  /* A lista só encolhe: slug já reescrito não pode continuar nela. */
+  const aindaTem = new Set(comCauda.map((x) => x.slug));
+  const resolvidos = [...CAUDA_VAGA_PENDENTE].filter((s) => !aindaTem.has(s));
+  ok("a lista de cauda vaga não guarda slug já reescrito",
+    resolvidos.length === 0, resolvidos.join(", "));
+}
+
 // ─── 7 ──────────────────────────────────────────────────────────────────────
 bloco("7. PÁGINA NACIONAL NÃO SE ANUNCIA COMO LOCAL");
 

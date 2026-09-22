@@ -11702,7 +11702,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "retatrutida-faz-perder-musculos",
     title: "Retatrutida Faz Perder Músculos?",
-    metaTitle: "Retatrutida Faz Perder Músculo? O Que o Estudo Mostra",
+    metaTitle: "Retatrutida Faz Perder Músculo? Quanto, e Como Evitar",
     metaDescription:
       "No ensaio de fase 2, a perda foi de 17,5% a 24,2% do peso em 48 semanas. Veja quanto disso tende a ser massa magra e o que reduz essa proporção.",
     excerpt:
@@ -38563,7 +38563,7 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
   {
   slug: "hipercalorico-vale-a-pena",
   title: "Hipercalórico Vale a Pena? O Que a Ciência Diz Sobre Esse Suplemento",
-  metaTitle: "Hipercalórico Vale a Pena? Verdade e Mito do Suplemento",
+  metaTitle: "Hipercalórico Vale a Pena? O Que Tem Dentro e Para Quem",
   metaDescription: "Hipercalórico funciona mesmo? Veja o que o suplemento contém, quando usar, quando evitar e alternativas mais eficazes para ganhar massa muscular.",
   excerpt: "O hipercalórico é um dos suplementos mais vendidos do Brasil — e também um dos mais mal compreendidos. Antes de comprar, entenda o que tem dentro da embalagem e se faz sentido para o seu objetivo.",
   category: "Nutrição",
@@ -73723,7 +73723,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
   {
     slug: "quantos-quilos-perder-ate-fim-do-ano",
     title: "Quantos Quilos Dá para Perder até o Fim do Ano?",
-    metaTitle: "Quantos Quilos Dá para Perder até o Fim do Ano? A Meta Real",
+    metaTitle: "Quantos Quilos Dá para Perder até o Fim do Ano com Saúde",
     metaDescription: "Quanto dá para perder por mês sem sacrificar músculo, a meta realista pelo seu ponto de partida e o plano para as semanas que ainda restam até dezembro.",
     excerpt: "Antes de definir quanto quer perder, você precisa saber quanto é possível perder com saúde — e o que realmente vai aparecer no espelho ao final do processo.",
     category: "Emagrecimento",
@@ -87211,7 +87211,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "abdominal-todo-dia-perde-barriga",
     title: "Fazer Abdominal Todo Dia Perde Barriga?",
-    metaTitle: "Fazer Abdominal Todo Dia Perde Barriga? A Verdade",
+    metaTitle: "Fazer Abdominal Todo Dia Perde Barriga? O Que Muda",
     metaDescription: "Abdominal todo dia não queima gordura da barriga. Entenda o mito da redução localizada e o que realmente seca o abdômen. Leia o guia.",
     excerpt: "Milhares de abdominais depois, a barriga continua lá. Não é falta de esforço: é o mito da redução localizada. Veja o que realmente seca o abdômen.",
     category: "Emagrecimento",
@@ -101004,7 +101004,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "subir-escada-emagrece",
     title: "Subir Escada Emagrece? O Exercício Gratuito Que Você Ignora",
-    metaTitle: "Subir Escada Emagrece? O Exercício Que Você Ignora",
+    metaTitle: "Subir Escada Emagrece? Gasto por Lance e por Minuto",
     metaDescription:
       "Subir escada emagrece? Sim, é um dos melhores aumentos de NEAT: gasto calórico real, gratuito e acessível. Veja quanto queima, como usar e os cuidados.",
     excerpt:
@@ -101152,7 +101152,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "cinta-modeladora-emagrece",
     title: "Cinta Modeladora Emagrece? A Verdade Sobre a Compressão",
-    metaTitle: "Cinta Modeladora Emagrece? A Verdade Sobre a Compressão",
+    metaTitle: "Cinta Modeladora Emagrece? O Que a Compressão Faz",
     metaDescription:
       "Cinta modeladora emagrece? Não: ela comprime e desloca água, sem queimar gordura. Entenda o que a compressão faz, os riscos do uso excessivo e o que funciona.",
     excerpt:
@@ -102645,7 +102645,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "quantas-flexoes-por-dia",
     title: "Quantas Flexões Por Dia? A Verdade Sobre os Desafios",
-    metaTitle: "Quantas Flexões Por Dia? A Verdade Sobre os Desafios",
+    metaTitle: "Quantas Flexões Por Dia? Números por Nível e Frequência",
     metaDescription:
       "100 flexões por dia funcionam? Veja o que os desafios entregam de verdade, por que o corpo estagna sem progressão e como transformar flexões em resultado.",
     excerpt:
@@ -103407,7 +103407,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "quantos-agachamentos-por-dia",
     title: "Quantos Agachamentos Por Dia? A Resposta Honesta",
-    metaTitle: "Quantos Agachamentos Por Dia? A Resposta Honesta",
+    metaTitle: "Quantos Agachamentos Por Dia? Números Realistas por Nível",
     metaDescription:
       "Quantos agachamentos fazer por dia para ter resultado? Números realistas por nível, por que mais nem sempre é melhor e como progredir sem lesão.",
     excerpt:
@@ -103669,7 +103669,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "boxe-emagrece",
     title: "Boxe Emagrece? Quantas Calorias Queima e Como Usar a Favor",
-    metaTitle: "Boxe Emagrece? O Que a Aula Queima e o Que Falta Junto",
+    metaTitle: "Boxe Emagrece? Quantas Calorias Queima uma Aula",
     metaDescription:
       "Boxe emagrece? Quantas calorias uma aula realmente queima, por que o boxe ajuda tanta gente a perder peso e o que precisa acompanhar o treino para funcionar.",
     excerpt:
@@ -103794,7 +103794,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "spinning-emagrece",
     title: "Spinning Emagrece? Calorias, Benefícios e Como Aproveitar",
-    metaTitle: "Spinning Emagrece? Calorias e a Resposta Honesta",
+    metaTitle: "Spinning Emagrece? Quantas Calorias uma Aula Queima",
     metaDescription:
       "Spinning emagrece? Quantas calorias uma aula de bike indoor queima de verdade, para quem funciona melhor e o que precisa acompanhar para o peso cair.",
     excerpt:
@@ -104624,7 +104624,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "acai-engorda",
     title: "Açaí Engorda? Calorias da Tigela vs Polpa Pura (a Diferença é Brutal)",
-    metaTitle: "Açaí Engorda? O Que Transforma 58 kcal em Mais de 1.000",
+    metaTitle: "Açaí Engorda? 58 kcal na Polpa e o Que o Recheio Soma",
     metaDescription:
       "O que transforma 58 kcal em mais de 1.000: xarope de guaraná, granola e o tamanho da porção. Veja onde as calorias entram e como montar uma tigela leve.",
     excerpt:
@@ -112510,7 +112510,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "dormencia-e-formigamento-ao-treinar",
     title: "Dormência e Formigamento ao Treinar: Quando se Preocupar",
-    metaTitle: "Dormência ao Treinar: Quando se Preocupar",
+    metaTitle: "Dormência ao Treinar: Causas e Quando se Preocupar",
     metaDescription:
       "Mão formigando no supino, pé dormente na bike? Veja as causas comuns de dormência no treino, o que é banal, o que é túnel do carpo e quando ir ao médico.",
     excerpt:
@@ -113325,7 +113325,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "cadeira-adutora-parte-interna-coxa",
     title: "Cadeira Adutora: Exercício Para Parte Interna da Coxa",
-    metaTitle: "Cadeira Adutora: Para Que Serve de Verdade",
+    metaTitle: "Cadeira Adutora: Para Que Serve e o Que Ela Não Faz",
     metaDescription:
       "Cadeira adutora serve para quê? Como executar com amplitude segura, por que ela não seca a parte interna da coxa e quais alternativas livres usar.",
     excerpt:
