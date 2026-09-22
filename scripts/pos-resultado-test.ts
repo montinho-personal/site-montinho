@@ -52,6 +52,7 @@ const CATEGORIAS: Record<Ferramenta, string[]> = {
   corrida: ["padrao"],
   glp1: ["padrao", "nenhuma", "parcial", "completa"],
   meta: ["padrao", "cabe", "apertado", "nao-cabe"],
+  potencial: ["padrao", "inicio", "caminho", "perto", "na-referencia"],
   volume: ["padrao", "baixo", "alto", "adequado"],
   diagnostico: ["padrao"],
   rotina: ["padrao"],

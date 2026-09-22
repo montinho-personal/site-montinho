@@ -40,6 +40,7 @@ export type Ferramenta =
   | "corrida"
   | "glp1"
   | "meta"
+  | "potencial"
   | "diagnostico"
   | "rotina"
   | "academia"

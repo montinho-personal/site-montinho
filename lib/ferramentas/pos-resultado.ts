@@ -63,6 +63,7 @@ export const NOME: Record<Ferramenta, string> = {
   corrida: "Calculadora de Corrida",
   glp1: "Calculadora de Massa Magra no GLP-1",
   meta: "Calculadora de Meta de Peso",
+  potencial: "Calculadora de Potencial Natural",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -102,6 +103,7 @@ export const ROTA: Record<Ferramenta, string> = {
   corrida: "/ferramentas/calculadora-corrida",
   glp1: "/ferramentas/massa-magra-glp1",
   meta: "/ferramentas/meta-de-peso",
+  potencial: "/ferramentas/potencial-natural",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -139,6 +141,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   glp1: { ferramenta: "proteina", label: "Calcular minha meta de proteína" },
   /* Sabendo quanto cabe no prazo, a pergunta seguinte é quanto cortar por dia. */
   meta: { ferramenta: "deficit", label: "Calcular meu déficit" },
+  /* Sabendo quanto cabe, a pergunta seguinte é se o treino comporta o ganho. */
+  potencial: { ferramenta: "volume", label: "Conferir meu volume de treino" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -308,6 +312,37 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "A sua meta não cabe nesse prazo, e saber disso agora vale mais que descobrir em dezembro. O que cabe já é bastante — e é o que costuma se sustentar depois.",
       pergunta: "Quer que eu te ajude a montar a meta que cabe?",
       pedido: "Minha meta não cabe no prazo e queria ajuda para montar uma que caiba.",
+    },
+  },
+  potencial: {
+    padrao: {
+      interpretacao:
+        "O número é uma referência de população, não um teto seu. O que ele diz de útil é o ritmo que dá para esperar daqui para frente.",
+      pedido: "Queria entender o que muda no meu treino a partir de onde eu estou.",
+    },
+    inicio: {
+      interpretacao:
+        "Você tem bastante margem pela frente — e nessa fase o que separa quem cresce de quem não cresce não é genética, é ter um treino que progride e comida suficiente.",
+      pergunta: "Quer que eu monte o treino desse começo?",
+      pedido: "Estou no começo, tenho bastante margem para ganhar massa e queria ajuda para montar o treino.",
+    },
+    caminho: {
+      interpretacao:
+        "Você está no meio do caminho, que é onde treino bem feito ainda rende resultado visível — e onde treino mal montado começa a cobrar em platô.",
+      pergunta: "Quer que eu revise se o seu treino está progredindo certo?",
+      pedido: "Estou no meio do caminho do meu potencial e queria revisar se o treino está progredindo certo.",
+    },
+    perto: {
+      interpretacao:
+        "Você está perto da faixa de referência. Daqui para frente o ganho é lento por construção, e o que decide passa a ser a qualidade da execução e a paciência com ciclos longos.",
+      pergunta: "Quer que eu veja o que ainda dá para extrair do seu treino?",
+      pedido: "Estou perto da faixa de referência e queria saber o que ainda dá para extrair do meu treino.",
+    },
+    "na-referencia": {
+      interpretacao:
+        "Você está na faixa de referência ou acima dela. A pergunta deixa de ser quanto ganhar e passa a ser o que fazer com o que já está construído — força, execução e manutenção.",
+      pergunta: "Quer que eu te ajude a montar a próxima fase?",
+      pedido: "Cheguei na faixa de referência de massa magra e queria ajuda para montar a próxima fase do treino.",
     },
   },
   deficit: {
