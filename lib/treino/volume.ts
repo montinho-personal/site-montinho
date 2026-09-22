@@ -503,4 +503,11 @@ export const ARTIGOS_COM_LINK_VOLUME: string[] = [
      do exercício. O embed seria contraditório: o artigo é justamente sobre
      NÃO transformar a dúvida em uma conta — o link serve quem quiser fazê-la. */
   "melhor-exercicio-para-ganhar-musculo",
+  /*
+   * Veio do registro da Calculadora de Potencial Natural em 22/09/2026: o
+   * artigo é sobre programar repetições, séries e cargas por tipo de
+   * fibra, e a conta que sobra dele é a de volume semanal, não a de
+   * quanto músculo ainda cabe no corpo.
+   */
+  "fibras-musculares-tipo-1-tipo-2",
 ];

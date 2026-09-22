@@ -12,6 +12,7 @@ import {
   GORDURA_MIN,
   NIVEIS,
   NIVEL_PADRAO,
+  NOTA_GORDURA_ALTA,
   NOTA_GORDURA_ESTIMADA,
   NOTA_NAO_E_PAREDE,
   NOTA_NAO_PRESCREVE,
@@ -278,6 +279,11 @@ export default function CalculadoraPotencial({ placement }: { placement: string 
               </p>
             )}
 
+            {resultado.gorduraAlta && (
+              <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl border-l-2 pl-4" style={{ borderColor: "#BA9E50" }}>
+                {NOTA_GORDURA_ALTA}
+              </p>
+            )}
             <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl border-l-2 pl-4" style={{ borderColor: "#BA9E50" }}>
               {NOTA_NAO_E_PAREDE}
             </p>

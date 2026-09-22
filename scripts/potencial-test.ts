@@ -12,11 +12,12 @@ import { splitAtPrimeiraSecao } from "../lib/cta/placement";
  */
 import {
   ARTIGOS_COM_CALCULADORA_POTENCIAL, FONTES_POTENCIAL, HORIZONTE_MESES, NIVEIS, REFERENCIA_FFMI,
+  ALTURA_MAX, ALTURA_MIN, GORDURA_ALTA,
   alturaValida, calcula, ffmi, ffmiNormalizado, formataKg, formataMeses, gorduraValida, leitura,
   massaMagra, massaMagraDeFFMI, nivel, parseAltura, pesoValido, tabelaPorAltura,
 } from "../lib/potencial";
 import { ARTIGOS_COM_CALCULADORA as ARTIGOS_PROTEINA } from "../lib/proteina";
-import { ARTIGOS_COM_CALCULADORA_VOLUME } from "../lib/treino/volume";
+import { ARTIGOS_COM_CALCULADORA_VOLUME, ARTIGOS_COM_LINK_VOLUME } from "../lib/treino/volume";
 import { ARTIGOS_COM_CALCULADORA_TDEE } from "../lib/tdee";
 import { ARTIGOS_COM_CALCULADORA_MACROS } from "../lib/macros";
 import { CANONICA } from "../lib/ferramentas/canonica";
@@ -74,10 +75,38 @@ ok("acima de cinco anos a projeção é marcada como longe", HORIZONTE_MESES ===
   && calcula(1.9, 55, 10, "homem", "avancado").longe === true);
 ok("projeção curta não é marcada", calcula(1.8, 88, 12, "homem", "avancado").longe === false);
 
+bloco("3b. OS LIMITES QUE A AUDITORIA EXIGIU");
+/*
+ * A normalização de 6,3 × (1,80 − altura) é linear e foi ajustada a
+ * adultos. Fora de uma faixa razoável ela devolve absurdo: a 1,30 m
+ * produzia FFMI 146, e a 2,30 m chegava a NEGATIVO.
+ */
+ok("a faixa de altura foi estreitada", ALTURA_MIN === 1.45 && ALTURA_MAX === 2.1);
+ok("nas pontas da faixa o FFMI continua plausível",
+  [ALTURA_MIN, 1.8, ALTURA_MAX].every((a) => {
+    const v = calcula(a, 70, 20, "homem", "intermediario").ffmiNormalizado;
+    return v > 5 && v < 40;
+  }));
+ok("nenhuma entrada válida produz FFMI negativo",
+  [[ALTURA_MAX, 35, 60], [ALTURA_MIN, 35, 60], [ALTURA_MAX, 250, 3]].every(
+    ([a, p, g]) => calcula(a, p, g, "mulher", "iniciante").ffmiNormalizado > 0));
+
+/*
+ * O peso na referência supõe manter o percentual de gordura atual — o que
+ * é honesto, mas para quem está com 30% devolve "você chegaria a 108 kg",
+ * número que ninguém deve perseguir mantendo os 30%.
+ */
+ok("gordura alta é sinalizada", GORDURA_ALTA.homem === 25 && GORDURA_ALTA.mulher === 35);
+ok("30% em homem é alta e 15% não", calcula(1.75, 80, 30, "homem", "intermediario").gorduraAlta
+  && !calcula(1.75, 80, 15, "homem", "intermediario").gorduraAlta);
+ok("a régua feminina é mais alta", calcula(1.65, 70, 30, "mulher", "intermediario").gorduraAlta === false
+  && calcula(1.65, 70, 40, "mulher", "intermediario").gorduraAlta === true);
+ok("a tela avisa quando a gordura é alta", /gorduraAlta/.test(readFileSync("components/potencial/CalculadoraPotencial.tsx", "utf8")));
+
 bloco("4. ENTRADAS");
 ok("parseAltura aceita metros e centímetros", parseAltura("1,75") === 1.75 && parseAltura("175") === 1.75);
 ok("parseAltura recusa lixo", parseAltura("abc") === null);
-ok("altura fora da faixa", !alturaValida(1.2) && !alturaValida(2.4) && alturaValida(1.75));
+ok("altura fora da faixa", !alturaValida(1.4) && !alturaValida(2.2) && alturaValida(1.75));
 ok("peso fora da faixa", !pesoValido(20) && !pesoValido(300) && pesoValido(75));
 ok("gordura fora da faixa", !gorduraValida(2) && !gorduraValida(70) && gorduraValida(15));
 
@@ -111,6 +140,13 @@ ok("o teto de oito é respeitado", ARTIGOS_COM_CALCULADORA_POTENCIAL.length <= 8
 const outros = new Set([...ARTIGOS_PROTEINA, ...ARTIGOS_COM_CALCULADORA_VOLUME, ...ARTIGOS_COM_CALCULADORA_TDEE, ...ARTIGOS_COM_CALCULADORA_MACROS]);
 ok("nenhum artigo daqui pertence a outra ferramenta", ARTIGOS_COM_CALCULADORA_POTENCIAL.every((s) => !outros.has(s)), ARTIGOS_COM_CALCULADORA_POTENCIAL.filter((s) => outros.has(s)).join(", "));
 ok("o artigo dono da pergunta está no registro", ARTIGOS_COM_CALCULADORA_POTENCIAL.includes("hipertrofia-natural-limite"));
+/*
+ * O artigo de fibras é sobre programar séries e repetições, não sobre
+ * quanto ainda dá para ganhar. Ele foi para o registro de link do volume,
+ * que é a ferramenta certa — e a regra da casa é a certa, não a disponível.
+ */
+ok("o artigo de fibras não está aqui", !ARTIGOS_COM_CALCULADORA_POTENCIAL.includes("fibras-musculares-tipo-1-tipo-2"));
+ok("e foi para o link do volume", ARTIGOS_COM_LINK_VOLUME.includes("fibras-musculares-tipo-1-tipo-2"));
 for (const s of ARTIGOS_COM_CALCULADORA_POTENCIAL) {
   const p = blogPosts.find((x) => x.slug === s)!;
   ok(`${s}: o corte editorial existe`, splitAtPrimeiraSecao(marked(p.content) as string) !== null);

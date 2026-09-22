@@ -87,12 +87,31 @@ export const FONTES_POTENCIAL: Fonte[] = [FONTE_KOURI, FONTE_FFMI_MULHERES, FONT
 
 export type Sexo = "homem" | "mulher";
 
-export const ALTURA_MIN = 1.3;
-export const ALTURA_MAX = 2.3;
+
+/**
+ * A faixa de altura em que a normalização ainda significa alguma coisa.
+ *
+ * Encolheu de 1,30–2,30 na auditoria. A correção de 6,3 × (1,80 − altura)
+ * é linear e foi ajustada a atletas adultos: aplicada a 1,30 m ela produz
+ * FFMI de 146 em entrada absurda, e a 2,30 m chega a devolver número
+ * NEGATIVO. Fora desta faixa a conta deixa de descrever um corpo.
+ */
+export const ALTURA_MIN = 1.45;
+export const ALTURA_MAX = 2.1;
 export const PESO_MIN = 35;
 export const PESO_MAX = 250;
 export const GORDURA_MIN = 3;
 export const GORDURA_MAX = 60;
+
+/**
+ * Acima deste percentual, o "peso na referência" deixa de ser uma meta.
+ *
+ * A conta projeta o peso mantendo o percentual de gordura atual, e isso é
+ * honesto — mas para quem está com 30% ela devolve "você chegaria a 108
+ * kg", um número que ninguém deveria perseguir mantendo os 30%. Acima
+ * daqui a tela diz que o caminho realista começa por reduzir gordura.
+ */
+export const GORDURA_ALTA: Record<Sexo, number> = { homem: 25, mulher: 35 };
 
 export const alturaValida = (a: number | null): a is number => a !== null && a >= ALTURA_MIN && a <= ALTURA_MAX;
 export const pesoValido = (p: number | null): p is number => p !== null && p >= PESO_MIN && p <= PESO_MAX;
@@ -219,6 +238,12 @@ export interface Resultado {
   longe: boolean;
   /** Peso corporal na referência, mantendo o mesmo percentual de gordura. */
   pesoNaReferencia: number;
+  /**
+   * O percentual de gordura informado é alto o bastante para que o peso
+   * na referência não sirva como meta — o caminho realista começa por
+   * reduzir gordura, e aí todos os números daqui mudam.
+   */
+  gorduraAlta: boolean;
 }
 
 export function calcula(alturaM: number, pesoKg: number, gorduraPct: number, sexo: Sexo, nivelId: NivelId): Resultado {
@@ -246,6 +271,7 @@ export function calcula(alturaM: number, pesoKg: number, gorduraPct: number, sex
       falta > 0 ? { min: falta / ganhoMensal.max, max: falta / ganhoMensal.min } : null,
     longe: falta > 0 && falta / ganhoMensal.max > HORIZONTE_MESES,
     pesoNaReferencia: magraNaRef / (1 - gorduraPct / 100),
+    gorduraAlta: gorduraPct > GORDURA_ALTA[sexo],
   };
 }
 
@@ -313,6 +339,9 @@ export const NOTA_TAXAS_OTIMISTAS =
 export const NOTA_TEMPO_OTIMISTA =
   "O tempo projetado é um piso, não uma previsão: ele supõe que você continua ganhando no ritmo de hoje, e esse ritmo cai conforme você avança. Quem hoje ganha no ritmo de intermediário estará no de avançado antes de chegar lá — e aí o mesmo quilo leva o dobro do tempo.";
 
+export const NOTA_GORDURA_ALTA =
+  "Com esse percentual de gordura, o peso projetado na referência não é uma meta: ele supõe que você mantém a mesma proporção de gordura enquanto ganha massa magra, o que não é o caminho de ninguém. Na prática, reduzir gordura primeiro sobe o seu FFMI sem que você ganhe um grama de músculo — e muda todos os números desta tela.";
+
 export const NOTA_NAO_PRESCREVE =
   "Estar perto da referência não é motivo para parar de treinar nem para procurar atalho. É motivo para mudar a expectativa: de ganhar massa para ganhar força, melhorar a execução e manter o que já foi construído.";
 
@@ -329,5 +358,11 @@ export const NOTA_NAO_PRESCREVE =
 export const ARTIGOS_COM_CALCULADORA_POTENCIAL: string[] = [
   "hipertrofia-natural-limite",
   "quanto-tempo-para-ganhar-massa-muscular",
-  "fibras-musculares-tipo-1-tipo-2",
+  /*
+   * "fibras-musculares-tipo-1-tipo-2" saiu daqui na auditoria. O artigo é
+   * sobre programar repetições, séries e cargas — a pergunta do leitor é
+   * de montagem de treino, não "quanto ainda dá para ganhar". Ele foi para
+   * o registro de link da Calculadora de Volume, que é a ferramenta certa
+   * e não a disponível.
+   */
 ];
