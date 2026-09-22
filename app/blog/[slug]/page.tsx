@@ -51,6 +51,8 @@ import CalculadoraAtividades from "@/components/atividades/CalculadoraAtividades
 import LinkFerramentaAtividades from "@/components/atividades/LinkFerramentaAtividades";
 import { ARTIGOS_COM_CALCULADORA_CORRIDA } from "@/lib/corrida";
 import CalculadoraCorrida from "@/components/corrida/CalculadoraCorrida";
+import { ARTIGOS_COM_CALCULADORA_GLP1 } from "@/lib/glp1";
+import CalculadoraGLP1 from "@/components/glp1/CalculadoraGLP1";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -198,7 +200,9 @@ export default async function BlogPost({ params }: Props) {
                       ? "atividades"
                       : ARTIGOS_COM_CALCULADORA_CORRIDA.includes(post.slug)
                         ? "corrida"
-                        : null;
+                        : ARTIGOS_COM_CALCULADORA_GLP1.includes(post.slug)
+                          ? "glp1"
+                          : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -404,6 +408,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraAtividades placement={post.slug} atividadeInicial={atividadeDoArtigo(post.slug)?.id} />
                 ) : qualCalc === "corrida" ? (
                   <CalculadoraCorrida placement={post.slug} />
+                ) : qualCalc === "glp1" ? (
+                  <CalculadoraGLP1 placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}

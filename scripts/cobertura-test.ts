@@ -33,6 +33,7 @@ import { ARTIGOS_COM_CALCULADORA_CAMINHADA, ARTIGOS_COM_LINK_CAMINHADA } from ".
 import { ARTIGOS_COM_CALCULADORA_ELIPTICO } from "../lib/eliptico";
 import { ARTIGOS_COM_CALCULADORA_ATIVIDADES, ARTIGOS_COM_LINK_ATIVIDADES } from "../lib/atividades";
 import { ARTIGOS_COM_CALCULADORA_CORRIDA } from "../lib/corrida";
+import { ARTIGOS_COM_CALCULADORA_GLP1 } from "../lib/glp1";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -65,6 +66,7 @@ const REGISTROS: [string, string[]][] = [
   ["atividades", ARTIGOS_COM_CALCULADORA_ATIVIDADES],
   ["atividades (link)", ARTIGOS_COM_LINK_ATIVIDADES],
   ["corrida", ARTIGOS_COM_CALCULADORA_CORRIDA],
+  ["GLP-1", ARTIGOS_COM_CALCULADORA_GLP1],
 ];
 
 const onde = new Map<string, string>();
