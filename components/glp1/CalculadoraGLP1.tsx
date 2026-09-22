@@ -12,7 +12,10 @@ import {
   NOTA_PROTEINA_APETITE,
   PESO_MAX,
   PESO_MIN,
+  NOTA_VELOCIDADE,
   PROTEINA_ALVO,
+  PROTEINA_ALVO_MAX,
+  PROTEINA_SUFICIENTE,
   PROTEINA_MAX_G,
   TREINOS,
   calcula,
@@ -256,8 +259,10 @@ export default function CalculadoraGLP1({ placement }: { placement: string }) {
                       <strong className="text-white">
                         Mais {Math.round(resultado.faltaProteinaG)} g de proteína por dia
                       </strong>{" "}
-                      para chegar em {Math.round(resultado.metaProteinaG)} g ({PROTEINA_ALVO.toLocaleString("pt-BR")} g por quilo
-                      do seu peso de hoje).
+                      para chegar nos {Math.round(resultado.minimoProteinaG)} g que já contam como proteção
+                      ({PROTEINA_SUFICIENTE.toLocaleString("pt-BR", { minimumFractionDigits: 1 })} g por quilo do seu peso de hoje). O ideal fica em{" "}
+                      {Math.round(resultado.metaProteinaG)} g ({PROTEINA_ALVO.toLocaleString("pt-BR", { minimumFractionDigits: 1 })} a{" "}
+                      {PROTEINA_ALVO_MAX.toLocaleString("pt-BR", { minimumFractionDigits: 1 })} g por quilo).
                     </li>
                   )}
                 </ul>
@@ -267,7 +272,7 @@ export default function CalculadoraGLP1({ placement }: { placement: string }) {
               </div>
             )}
 
-            <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-2xl">{NOTA_ESTIMATIVA}</p>
+            <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-2xl">{NOTA_ESTIMATIVA} {NOTA_VELOCIDADE}</p>
 
             <div className="border-t border-white/10 pt-5 mb-6">
               <button type="button" aria-expanded={mostrarMetodo}
@@ -295,6 +300,7 @@ export default function CalculadoraGLP1({ placement }: { placement: string }) {
                     E vale repetir: emagrecer sempre reduz massa magra, mesmo sem medicação e mesmo fazendo tudo certo. A regra
                     clássica é de que cerca de um quarto do peso perdido em dieta comum é massa magra.
                   </p>
+                  <p>{NOTA_VELOCIDADE}</p>
                 </div>
               )}
             </div>

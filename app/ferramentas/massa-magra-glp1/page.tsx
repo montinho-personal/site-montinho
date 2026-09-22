@@ -16,8 +16,10 @@ import {
   NOTA_MEDICA,
   NOTA_NAO_E_TUDO_MUSCULO,
   NOTA_PROTEINA_APETITE,
+  NOTA_VELOCIDADE,
   PROTEINA_ALVO,
-  PROTEINA_MINIMA,
+  PROTEINA_ALVO_MAX,
+  PROTEINA_SUFICIENTE,
   calcula,
   formataFaixaKg,
   formataKg,
@@ -88,7 +90,7 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Quanto de proteína eu preciso comer?",
-    answer: `Pelo menos ${PROTEINA_MINIMA.toLocaleString("pt-BR")} g por quilo de peso corporal, com ${PROTEINA_ALVO.toLocaleString("pt-BR")} g como alvo para quem está em déficit e quer proteger músculo. Para 90 kg, isso são cerca de ${Math.round(90 * PROTEINA_ALVO)} g por dia. ${NOTA_PROTEINA_APETITE}`,
+    answer: `O piso que já protege é ${PROTEINA_SUFICIENTE.toLocaleString("pt-BR", { minimumFractionDigits: 1 })} g por quilo de peso corporal, e o alvo ideal fica entre ${PROTEINA_ALVO.toLocaleString("pt-BR", { minimumFractionDigits: 1 })} e ${PROTEINA_ALVO_MAX.toLocaleString("pt-BR", { minimumFractionDigits: 1 })} g por quilo. Para 90 kg: ${Math.round(90 * PROTEINA_SUFICIENTE)} g como piso e ${Math.round(90 * PROTEINA_ALVO)} a ${Math.round(90 * PROTEINA_ALVO_MAX)} g como alvo. ${NOTA_PROTEINA_APETITE}`,
   },
   {
     question: "Cardio ou musculação para quem usa GLP-1?",
@@ -261,8 +263,12 @@ export default function MassaMagraGLP1Page() {
               para dispensar músculo. Cardio não substitui — ele soma saúde e gasto, não sinal de manutenção.
             </p>
             <p className="text-gray-300 leading-relaxed mb-4">
-              <strong className="text-white">2. Proteína: pelo menos {PROTEINA_MINIMA.toLocaleString("pt-BR")} g por quilo, com {PROTEINA_ALVO.toLocaleString("pt-BR")} g como alvo.</strong>{" "}
-              Para 90 kg, cerca de {Math.round(90 * PROTEINA_ALVO)} g por dia, distribuídos pelas refeições.{" "}
+              <strong className="text-white">
+                2. Proteína: {PROTEINA_SUFICIENTE.toLocaleString("pt-BR", { minimumFractionDigits: 1 })} g por quilo como piso, {PROTEINA_ALVO.toLocaleString("pt-BR", { minimumFractionDigits: 1 })} a {PROTEINA_ALVO_MAX.toLocaleString("pt-BR", { minimumFractionDigits: 1 })} g como alvo.
+              </strong>{" "}
+              Para 90 kg: {Math.round(90 * PROTEINA_SUFICIENTE)} g para já contar como proteção e{" "}
+              {Math.round(90 * PROTEINA_ALVO)} a {Math.round(90 * PROTEINA_ALVO_MAX)} g no alvo, distribuídos pelas
+              refeições.{" "}
               <Link href="/ferramentas/calculadora-de-proteina" className={ln}>A Calculadora de Proteína</Link>{" "}
               faz essa conta com o seu peso.
             </p>
@@ -281,7 +287,8 @@ export default function MassaMagraGLP1Page() {
               Ela também não pergunta qual medicamento você usa, e isso é de propósito: as faixas dos ensaios se
               sobrepõem, e escolher uma faixa pela marca daria uma precisão que os dados não sustentam.
             </p>
-            <p className="text-gray-300 leading-relaxed">{NOTA_ESTIMATIVA}</p>
+            <p className="text-gray-300 leading-relaxed mb-4">{NOTA_ESTIMATIVA}</p>
+            <p className="text-gray-300 leading-relaxed">{NOTA_VELOCIDADE}</p>
           </div>
 
           <div>

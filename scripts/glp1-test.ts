@@ -14,6 +14,7 @@ import { splitAtPrimeiraSecao } from "../lib/cta/placement";
  */
 import {
   ARTIGOS_COM_CALCULADORA_GLP1, CENARIOS, FONTES_GLP1, FRACAO_MASSA_MAGRA, PROTEINA_ALVO, PROTEINA_MINIMA,
+  PROTEINA_ALVO_MAX, PROTEINA_SUFICIENTE,
   calcula, formataFaixaKg, formataKg, jaProtegido, perdaValida, pesoValido, protecaoDe, proteinaValida,
 } from "../lib/glp1";
 import { ARTIGOS_COM_LINK_CONCENTRACAO } from "../lib/concentracao/artigos";
@@ -35,15 +36,25 @@ ok("parcial fica entre as duas",
   FRACAO_MASSA_MAGRA.parcial.min > FRACAO_MASSA_MAGRA.completa.min && FRACAO_MASSA_MAGRA.parcial.max < FRACAO_MASSA_MAGRA.nenhuma.max);
 ok("toda faixa tem min < max", Object.values(FRACAO_MASSA_MAGRA).every((f) => f.min < f.max));
 ok("nenhuma faixa promete zero perda de massa magra", Object.values(FRACAO_MASSA_MAGRA).every((f) => f.min > 0));
-ok("as metas de proteína são 1,2 e 1,6 g/kg", PROTEINA_MINIMA === 1.2 && PROTEINA_ALVO === 1.6);
+/*
+ * Os artigos do cluster publicam "alvo mínimo 1,6 g/kg, ideal 2,0 a 2,2".
+ * A calculadora usava 1,6 como meta e pedia 144 g para 90 kg enquanto o
+ * artigo ao lado pedia 180 a 198 — duas metas na mesma página.
+ */
+ok("o piso de proteção é 1,6 g/kg, como nos artigos", PROTEINA_SUFICIENTE === 1.6);
+ok("o alvo é 2,0 a 2,2 g/kg, como nos artigos", PROTEINA_ALVO === 2.0 && PROTEINA_ALVO_MAX === 2.2);
+ok("o mínimo absoluto continua em 1,2", PROTEINA_MINIMA === 1.2);
+ok("o alvo é maior que o piso", PROTEINA_ALVO > PROTEINA_SUFICIENTE);
 
 bloco("2. O CENÁRIO SAI DO TREINO E DA PROTEÍNA");
 ok("nada dos dois -> nenhuma", protecaoDe("nenhum", 0.8) === "nenhuma");
 ok("treino irregular e pouca proteína -> nenhuma", protecaoDe("leve", 1.0) === "nenhuma");
 ok("treino regular, proteína baixa -> parcial", protecaoDe("regular", 1.0) === "parcial");
 ok("sem treino, proteína mínima -> parcial", protecaoDe("nenhum", 1.3) === "parcial");
-ok("treino regular e proteína na meta -> completa", protecaoDe("regular", 1.6) === "completa");
-ok("a meta exata conta como completa", protecaoDe("regular", PROTEINA_ALVO) === "completa");
+ok("treino regular e proteína no piso -> completa", protecaoDe("regular", 1.6) === "completa");
+/* Quem já passou do piso não pode ser rebaixado por não estar no ideal. */
+ok("1,7 g/kg com treino regular continua completa", protecaoDe("regular", 1.7) === "completa");
+ok("o piso exato conta como completa", protecaoDe("regular", PROTEINA_SUFICIENTE) === "completa");
 
 bloco("3. A CONTA");
 const r = calcula(100, 90, "nenhum", 70);
@@ -52,13 +63,17 @@ ok("massa magra de 2,5 a 4,0 kg", perto(r.massaMagra.min, 2.5) && perto(r.massaM
 ok("gordura de 6,0 a 7,5 kg", perto(r.gordura.min, 6) && perto(r.gordura.max, 7.5));
 ok("magra + gordura fecham a perda", perto(r.massaMagra.min + r.gordura.max, r.perda) && perto(r.massaMagra.max + r.gordura.min, r.perda));
 ok("meta de proteína usa o peso ATUAL", perto(r.metaProteinaG, 90 * PROTEINA_ALVO));
-ok("falta de proteína é a diferença até a meta", perto(r.faltaProteinaG, 90 * PROTEINA_ALVO - 70));
+ok("o piso de proteção também usa o peso atual", perto(r.minimoProteinaG, 90 * PROTEINA_SUFICIENTE));
+/* A falta é até o PISO: mandar alguém em 1,7 g/kg "corrigir" seria errado. */
+ok("falta de proteína é a diferença até o piso", perto(r.faltaProteinaG, 90 * PROTEINA_SUFICIENTE - 70));
+ok("quem passou do piso não tem falta", calcula(100, 90, "nenhum", 90 * 1.7).faltaProteinaG === 0);
 ok("o cenário protegido perde menos", r.massaMagraProtegida.max < r.massaMagra.max);
 ok("o ganho ao proteger é positivo e não maior que a perda", r.ganhoAoProteger.max > 0 && r.ganhoAoProteger.max <= r.perda);
 {
   const p = calcula(100, 90, "regular", 144);
   ok("quem já protege não recebe recomendação", jaProtegido(p) && p.protecao === "completa");
   ok("quem já protege não tem falta de proteína", p.faltaProteinaG === 0);
+ok("mas a meta ideal continua visível para ele", p.metaProteinaG > p.minimoProteinaG);
   ok("quem já protege tem ganho zero (não há o que melhorar aqui)", p.ganhoAoProteger.max === 0);
 }
 
@@ -100,6 +115,11 @@ ok("manda para o prescritor", /prescritor/i.test(comp) && /prescritor/i.test(too
 ok("diz que massa magra não é só músculo", /não é só músculo/i.test(todos));
 ok("diz que é faixa de população, não medição", /não medição|de população/i.test(comp) && /faixas, não medição/i.test(lib + comp + tool));
 ok("menciona DXA como o que mede de verdade", /DXA/.test(comp) && /DXA/.test(tool));
+/* A velocidade da perda pesa e a ferramenta não a considera: tem de dizer. */
+{
+  const declara = (s: string) => /velocidade da perda/i.test(s) || /NOTA_VELOCIDADE/.test(s);
+  ok("declara que não considera a velocidade da perda", declara(comp) && declara(tool) && /velocidade da perda/i.test(lib));
+}
 ok("a página não pergunta qual medicamento a pessoa usa", !/qual medicamento você|selecione o medicamento/i.test(comp));
 
 bloco("6. PRIVACIDADE");
@@ -137,6 +157,9 @@ ok("liga para a calculadora de proteína", /calculadora-de-proteina/.test(comp) 
 ok("a faixa formatada sempre mostra os dois números", formataFaixaKg({ min: 2.5, max: 4 }) === "2,5 a 4,0 kg");
 ok("a faixa usa uma casa dos dois lados", formataFaixaKg({ min: 6, max: 7.5 }) === "6,0 a 7,5 kg", formataFaixaKg({ min: 6, max: 7.5 }));
 ok("kg formatado com uma casa", formataKg(2.53) === "2,5 kg");
+/* "2 a 2,2 g" fica torto ao lado de "1,6": as metas de proteína têm uma casa. */
+ok("as metas de proteína aparecem com uma casa decimal",
+  !/PROTEINA_(ALVO|ALVO_MAX|SUFICIENTE)\.toLocaleString\("pt-BR"\)/.test(comp + tool));
 
 console.log(`\n${falhas === 0 ? "TUDO OK" : `${falhas} FALHA(S)`}\n`);
 process.exit(falhas === 0 ? 0 : 1);
