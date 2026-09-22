@@ -64,6 +64,7 @@ export const NOME: Record<Ferramenta, string> = {
   glp1: "Calculadora de Massa Magra no GLP-1",
   meta: "Calculadora de Meta de Peso",
   potencial: "Calculadora de Potencial Natural",
+  composicao: "Calculadora de Composição Corporal",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -104,6 +105,7 @@ export const ROTA: Record<Ferramenta, string> = {
   glp1: "/ferramentas/massa-magra-glp1",
   meta: "/ferramentas/meta-de-peso",
   potencial: "/ferramentas/potencial-natural",
+  composicao: "/ferramentas/composicao-corporal",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -143,6 +145,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   meta: { ferramenta: "deficit", label: "Calcular meu déficit" },
   /* Sabendo quanto cabe, a pergunta seguinte é se o treino comporta o ganho. */
   potencial: { ferramenta: "volume", label: "Conferir meu volume de treino" },
+  /* A massa magra que a conta protege é a que a proteína sustenta. */
+  composicao: { ferramenta: "proteina", label: "Calcular minha meta de proteína" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -343,6 +347,43 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Você está na faixa de referência ou acima dela. A pergunta deixa de ser quanto ganhar e passa a ser o que fazer com o que já está construído — força, execução e manutenção.",
       pergunta: "Quer que eu te ajude a montar a próxima fase?",
       pedido: "Cheguei na faixa de referência de massa magra e queria ajuda para montar a próxima fase do treino.",
+    },
+  },
+  composicao: {
+    padrao: {
+      interpretacao:
+        "Os números vieram de uma estimativa, não de uma medição — e o que eles mostram de mais útil é a diferença entre emagrecer com e sem treino de força.",
+      pedido: "Fiz uma bioimpedância e queria ajuda para entender o que fazer com esses números.",
+    },
+    essencial: {
+      interpretacao:
+        "Você está abaixo da faixa essencial de gordura. É território de atleta em competição, e não é um lugar para se manter — gordura essencial tem função hormonal e estrutural.",
+      pergunta: "Quer que eu te ajude a montar uma fase de recuperação?",
+      pedido: "Estou com percentual de gordura muito baixo e queria ajuda para montar uma fase de recuperação.",
+    },
+    atleta: {
+      interpretacao:
+        "Você está na faixa atlética. Manter isso o ano inteiro cobra controle alimentar contínuo, e a pergunta que costuma valer mais é se vale a pena manter ou se é hora de construir.",
+      pergunta: "Quer que eu te ajude a decidir o próximo ciclo?",
+      pedido: "Estou na faixa atlética de gordura e queria ajuda para decidir o próximo ciclo do meu treino.",
+    },
+    bom: {
+      interpretacao:
+        "Você está numa faixa saudável e sustentável. Daqui, a decisão é de objetivo: manter, definir mais ou usar o momento para ganhar massa.",
+      pergunta: "Quer que eu te ajude a escolher o próximo passo?",
+      pedido: "Estou numa faixa boa de gordura e queria ajuda para escolher o próximo passo.",
+    },
+    aceitavel: {
+      interpretacao:
+        "Você está dentro do que a literatura considera saudável, com espaço para melhorar se esse for o seu objetivo — e o caminho que preserva músculo é bem diferente do que só corta comida.",
+      pergunta: "Quer que eu monte o plano que preserva a sua massa magra?",
+      pedido: "Quero reduzir meu percentual de gordura sem perder massa magra e queria ajuda com o plano.",
+    },
+    alto: {
+      interpretacao:
+        "Reduzir gordura a partir daqui traz ganho de saúde, não só de estética. E é justamente aqui que emagrecer sem treino de força cobra mais caro em músculo.",
+      pergunta: "Quer que eu monte o plano que protege a sua massa magra?",
+      pedido: "Quero reduzir meu percentual de gordura e queria ajuda para fazer isso sem perder músculo.",
     },
   },
   deficit: {

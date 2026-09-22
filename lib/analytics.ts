@@ -306,6 +306,11 @@ export type AnalyticsEvent =
   | "potential_calculator_use"
   | "potential_methodology_open"
   | "potential_tool_click"
+  /** Calculadora de Composição Corporal. `range` é a faixa de leitura; nunca peso nem gordura. */
+  | "composition_calculator_view"
+  | "composition_calculator_use"
+  | "composition_methodology_open"
+  | "composition_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"

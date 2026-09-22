@@ -78,6 +78,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Potencial Natural",
     motivo: "com o FFMI normalizado, o que o número 25 realmente significa e o ritmo de ganho esperado no seu nível",
   },
+  composicao: {
+    href: "/ferramentas/composicao-corporal",
+    ancora: "Calculadora de Composição Corporal",
+    motivo: "que traduz o exame em quilos de gordura e de massa magra e mostra o que muda com e sem treino de força",
+  },
   proteina: {
     href: "/ferramentas/calculadora-de-proteina",
     ancora: "Calculadora de Proteína",
