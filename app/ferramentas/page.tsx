@@ -56,15 +56,16 @@ const itemListSchema = {
     { "@type": "ListItem", position: 16, name: "Calculadora de Calorias por Atividade", url: `${SITE_URL}/ferramentas/calculadora-calorias-atividades` },
     { "@type": "ListItem", position: 17, name: "Calculadora de Corrida", url: `${SITE_URL}/ferramentas/calculadora-corrida` },
     { "@type": "ListItem", position: 18, name: "Calculadora de Massa Magra no GLP-1", url: `${SITE_URL}/ferramentas/massa-magra-glp1` },
+    { "@type": "ListItem", position: 19, name: "Calculadora de Meta de Peso", url: `${SITE_URL}/ferramentas/meta-de-peso` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 19, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 20, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
-      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 20 : 19, name: "Calculadora de Peptídeos e UI na Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
+      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 21 : 20, name: "Calculadora de Peptídeos e UI na Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
       : []),
-    { "@type": "ListItem", position: (MOBILIDADE_NO_AR ? 20 : 19) + (CONVERSOR_NO_AR ? 1 : 0), name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: (MOBILIDADE_NO_AR ? 21 : 20) + (CONVERSOR_NO_AR ? 1 : 0), name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -216,6 +217,15 @@ const FERRAMENTAS = [
     texto:
       "Para quem emagrece com Mounjaro, Ozempic, tirzepatida ou retatrutida: estima a faixa de massa magra perdida com os dados dos ensaios clínicos e mostra quanto essa faixa encolhe com treino de força e proteína. Não fala de dose nem de marca.",
     quando: "Use quando a balança está descendo e a dúvida é se está indo músculo junto. Nada do que você digita sai do navegador.",
+  },
+  {
+    href: "/ferramentas/meta-de-peso",
+    nome: "Calculadora de Meta de Peso",
+    pergunta: "Quantos quilos dá para perder até lá?",
+    tempo: "10 segundos · sem cadastro",
+    texto:
+      "Informe o peso de hoje e a data — o fim do ano já vem preenchido — para ver a faixa que cabe no prazo sem pagar em músculo, o peso previsto e o déficit diário. Se você tem um número em mente, ela diz se cabe e, quando não cabe, em quanto tempo caberia.",
+    quando: "Use quando a data não se move: fim de ano, casamento, viagem. O peso não sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{

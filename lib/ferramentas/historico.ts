@@ -39,6 +39,7 @@ export type Ferramenta =
   | "atividades"
   | "corrida"
   | "glp1"
+  | "meta"
   | "diagnostico"
   | "rotina"
   | "academia"

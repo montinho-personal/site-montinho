@@ -295,6 +295,12 @@ export type AnalyticsEvent =
   | "glp1_calculator_use"
   | "glp1_methodology_open"
   | "glp1_tool_click"
+  /** Calculadora de Meta de Peso. `verdict` diz se a meta cabia; nunca o peso nem a data. */
+  | "goal_calculator_view"
+  | "goal_calculator_use"
+  | "goal_date_changed"
+  | "goal_methodology_open"
+  | "goal_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"

@@ -34,6 +34,7 @@ import { ARTIGOS_COM_CALCULADORA_ELIPTICO } from "../lib/eliptico";
 import { ARTIGOS_COM_CALCULADORA_ATIVIDADES, ARTIGOS_COM_LINK_ATIVIDADES } from "../lib/atividades";
 import { ARTIGOS_COM_CALCULADORA_CORRIDA } from "../lib/corrida";
 import { ARTIGOS_COM_CALCULADORA_GLP1 } from "../lib/glp1";
+import { ARTIGOS_COM_CALCULADORA_META } from "../lib/meta";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -67,6 +68,7 @@ const REGISTROS: [string, string[]][] = [
   ["atividades (link)", ARTIGOS_COM_LINK_ATIVIDADES],
   ["corrida", ARTIGOS_COM_CALCULADORA_CORRIDA],
   ["GLP-1", ARTIGOS_COM_CALCULADORA_GLP1],
+  ["meta de peso", ARTIGOS_COM_CALCULADORA_META],
 ];
 
 const onde = new Map<string, string>();

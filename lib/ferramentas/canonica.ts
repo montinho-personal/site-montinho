@@ -68,6 +68,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Massa Magra no GLP-1",
     motivo: "com as faixas dos ensaios clínicos, o que muda com treino e proteína, e o que a massa magra realmente inclui",
   },
+  meta: {
+    href: "/ferramentas/meta-de-peso",
+    ancora: "Calculadora de Meta de Peso",
+    motivo: "que projeta a faixa possível até a sua data e diz se o número que você tem em mente cabe nela",
+  },
   proteina: {
     href: "/ferramentas/calculadora-de-proteina",
     ancora: "Calculadora de Proteína",

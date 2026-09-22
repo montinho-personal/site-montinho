@@ -62,6 +62,7 @@ export const NOME: Record<Ferramenta, string> = {
   atividades: "Calculadora de Calorias por Atividade",
   corrida: "Calculadora de Corrida",
   glp1: "Calculadora de Massa Magra no GLP-1",
+  meta: "Calculadora de Meta de Peso",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -100,6 +101,7 @@ export const ROTA: Record<Ferramenta, string> = {
   atividades: "/ferramentas/calculadora-calorias-atividades",
   corrida: "/ferramentas/calculadora-corrida",
   glp1: "/ferramentas/massa-magra-glp1",
+  meta: "/ferramentas/meta-de-peso",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -135,6 +137,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   corrida: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   /* A meta de proteína é o próximo passo concreto de quem viu a faixa. */
   glp1: { ferramenta: "proteina", label: "Calcular minha meta de proteína" },
+  /* Sabendo quanto cabe no prazo, a pergunta seguinte é quanto cortar por dia. */
+  meta: { ferramenta: "deficit", label: "Calcular meu déficit" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -279,6 +283,31 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Você está no melhor cenário desta conta. Daqui para frente o que decide é manter a carga da musculação subindo enquanto o peso desce.",
       pergunta: "Quer que eu revise se o seu treino está progredindo do jeito certo?",
       pedido: "Estou emagrecendo com medicação, já treino e como proteína, e queria revisar se meu treino está progredindo certo.",
+    },
+  },
+  meta: {
+    padrao: {
+      interpretacao:
+        "Essa faixa é o que cabe no prazo sem pagar em músculo. O que decide se ela vira resultado não é o número — é quantas das semanas você cumpre.",
+      pedido: "Tenho uma data e queria ajuda para montar o plano que cabe nela.",
+    },
+    cabe: {
+      interpretacao:
+        "A sua meta cabe no prazo com folga. O risco aqui não é ser ambicioso demais — é achar que, por caber, ela acontece sozinha.",
+      pergunta: "Quer que eu monte o plano das semanas que faltam?",
+      pedido: "Minha meta cabe no prazo e queria ajuda para montar o plano das semanas que faltam.",
+    },
+    apertado: {
+      interpretacao:
+        "A sua meta fica um pouco acima da faixa segura. Dá para chegar perto, mas é exatamente o tipo de plano que precisa ser bem montado para não cobrar em músculo.",
+      pergunta: "Quer que eu veja como chegar mais perto sem forçar?",
+      pedido: "Minha meta ficou apertada para o prazo e queria ajuda para chegar perto sem perder músculo.",
+    },
+    "nao-cabe": {
+      interpretacao:
+        "A sua meta não cabe nesse prazo, e saber disso agora vale mais que descobrir em dezembro. O que cabe já é bastante — e é o que costuma se sustentar depois.",
+      pergunta: "Quer que eu te ajude a montar a meta que cabe?",
+      pedido: "Minha meta não cabe no prazo e queria ajuda para montar uma que caiba.",
     },
   },
   deficit: {
