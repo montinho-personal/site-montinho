@@ -29,6 +29,23 @@
  * 12 km/h dá 12,4 aqui e 11,8 a 12,3 lá. A vantagem da equação é ser
  * contínua — ela responde 9,7 km/h sem interpolar tabela.
  *
+ * A REGRA DE 1 kcal POR QUILO POR QUILÔMETRO É LÍQUIDA
+ *
+ * A auditoria achou isto e vale escrever: na equação da ACSM, o custo
+ * LÍQUIDO de correr um quilômetro é exatamente 1 kcal por quilo de corpo,
+ * em qualquer pace. Não é aproximação — sai da álgebra. O termo 0,2 × v é
+ * proporcional à velocidade, o tempo por quilômetro é inversamente
+ * proporcional a ela, e os dois se cancelam; o que sobra do 3,5 é o
+ * repouso, que o líquido desconta.
+ *
+ * O bruto fica em torno de 1,1 kcal por quilo por quilômetro e cai um
+ * pouco conforme o pace acelera, porque menos tempo correndo significa
+ * menos repouso somado. Por isso a página publica os dois números: o
+ * bruto, que é o que toda calculadora e todo relógio mostram, e o
+ * líquido, que é de onde vem a regra clássica — e que é o que bate com a
+ * tabela do artigo de pular corda, onde a corrida aparece com 300 a 350
+ * kcal em 30 minutos.
+ *
  * O PACE É A LÍNGUA DE QUEM CORRE
  *
  * Ninguém diz "corri a 11,5 km/h": diz "fiz 5:13 por quilômetro". A
@@ -232,9 +249,17 @@ export function kcalLiquida(r: Resultado, pesoKg: number): number {
   return r.kcal - kcalPorMinuto(1, pesoKg) * r.minutos;
 }
 
-/** Gasto por quilômetro — o número que quase não muda com o ritmo. */
+/** Gasto bruto por quilômetro — cai um pouco conforme o pace acelera. */
 export function kcalPorKm(r: Resultado): number {
   return r.km > 0 ? r.kcal / r.km : 0;
+}
+
+/**
+ * Gasto LÍQUIDO por quilômetro — exatamente 1 kcal por quilo de corpo em
+ * qualquer pace, pela álgebra da equação da ACSM. É a regra clássica.
+ */
+export function kcalLiquidaPorKm(r: Resultado, pesoKg: number): number {
+  return r.km > 0 ? kcalLiquida(r, pesoKg) / r.km : 0;
 }
 
 /* ───────────────────────── Provas ───────────────────────── */

@@ -18,6 +18,7 @@ import {
   formataPace,
   formataRelogio,
   kcalLiquida,
+  kcalLiquidaPorKm,
   kcalPorKm,
   metCorrida,
   simulacaoUmQuilo,
@@ -163,9 +164,16 @@ export default function CalculadoraCorridaPage() {
               Para uma pessoa de {PESO_PADRAO} kg no pace de {formataPace(PACE_EX)} por quilômetro, os 5 km custam
               cerca de <strong className="text-white">{arredondaKcal(EX_5K.kcal)} kcal</strong> em{" "}
               {formataRelogio(EX_5K.minutos * 60)}, e os 10 km, {arredondaKcal(EX_10K.kcal)} kcal. Isso dá em torno de{" "}
-              {Math.round(kcalPorKm(EX_5K))} kcal por quilômetro — perto de{" "}
-              <strong className="text-white">1 kcal por quilo de corpo a cada quilômetro</strong>, que é a regra de
-              bolso mais útil da corrida.
+              {Math.round(kcalPorKm(EX_5K))} kcal por quilômetro.
+            </p>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Daí sai a regra de bolso mais útil da corrida:{" "}
+              <strong className="text-white">1 kcal por quilo de corpo a cada quilômetro</strong>. Ela vale para o
+              gasto <em>acima do repouso</em> — e não é aproximação: na equação da ACSM esse número é exatamente 1,00
+              em qualquer pace. O bruto, que é o que relógios e calculadoras mostram, fica em torno de{" "}
+              {fmt(kcalPorKm(EX_5K) / PESO_PADRAO, 2)} kcal por quilo por quilômetro, porque soma o repouso do tempo em
+              que você esteve correndo. Nos 5 km do exemplo: {arredondaKcal(EX_5K.kcal)} kcal brutas e{" "}
+              {arredondaKcal(kcalLiquida(EX_5K, PESO_PADRAO))} kcal de acréscimo real.
             </p>
             <div className="overflow-x-auto mb-3">
               <table className="w-full text-sm border-collapse">
@@ -336,9 +344,10 @@ export default function CalculadoraCorridaPage() {
               contra as faixas de 8,3, de 9,8 a 10,5 e de 11,8 a 12,3 do Compêndio.
             </p>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Os números são <strong className="text-white">brutos</strong>: incluem o que você gastaria parado.
-              Nos 5 km do exemplo, o bruto é {arredondaKcal(EX_5K.kcal)} kcal e o acréscimo real ao dia fica perto
-              de {arredondaKcal(kcalLiquida(EX_5K, PESO_PADRAO))} kcal.
+              Os números em destaque são <strong className="text-white">brutos</strong>, como em qualquer tabela de
+              METs: incluem o que você gastaria parado. O líquido aparece ao lado, porque é ele que fecha com a
+              regra de 1 kcal por quilo por quilômetro — {fmt(kcalLiquidaPorKm(EX_5K, PESO_PADRAO) / PESO_PADRAO, 2)} no
+              exemplo — e é ele que conta num déficit.
             </p>
             <p className="text-gray-400 text-sm leading-relaxed">
               Revisado em 22 de setembro de 2026 por <Link href="/minha-historia" className={ln}>Montinho</Link>,

@@ -29,6 +29,7 @@ import {
   fraseContexto,
   inclinacaoValida,
   kcalLiquida,
+  kcalLiquidaPorKm,
   kcalPorKm,
   kmValidos,
   minutosValidos,
@@ -235,7 +236,7 @@ export default function CalculadoraCorrida({ placement }: { placement: string })
         </div>
         <p id={idc("peso-ajuda")} className="text-gray-400 text-sm mt-2 min-h-[20px]">
           {pesoTexto.trim() === ""
-            ? "Na corrida o peso quase define o gasto: cada quilômetro custa cerca de 1 kcal por quilo de corpo."
+            ? "Na corrida o peso quase define o gasto: cada quilômetro custa cerca de 1 kcal por quilo de corpo, acima do repouso."
             : !pesoOk ? `Confira o peso informado (entre ${PESO_MIN} e ${PESO_MAX} kg).` : ""}
         </p>
       </div>
@@ -281,7 +282,9 @@ export default function CalculadoraCorrida({ placement }: { placement: string })
                 <p className="text-white font-bold text-4xl sm:text-5xl leading-none" style={h}>
                   {arredondaKcal(resultado.kcal)}<span className="text-lg font-normal text-gray-300"> kcal</span>
                 </p>
-                <p className="text-gray-400 text-sm mt-1">≈ {Math.round(kcalPorKm(resultado))} kcal por km</p>
+                <p className="text-gray-400 text-sm mt-1">
+                  ≈ {Math.round(kcalPorKm(resultado))} kcal por km · {arredondaKcal(kcalLiquida(resultado, peso))} acima do repouso
+                </p>
               </div>
               <div className="border border-white/15 p-5">
                 <p className="text-gray-400 text-xs mb-1">Tempo</p>
@@ -389,8 +392,12 @@ export default function CalculadoraCorrida({ placement }: { placement: string })
                     {fmt(resultado.kcal / Math.max(resultado.minutos, 0.0001))} kcal por minuto para {fmt(peso)} kg.
                   </p>
                   <p>
-                    Descontando o que você gastaria parado nesse tempo, a corrida acrescenta cerca de{" "}
-                    <span className="text-white">{arredondaKcal(kcalLiquida(resultado, peso))} kcal</span> ao seu dia.
+                    Descontando o que você gastaria parado nesse tempo, a corrida acrescenta{" "}
+                    <span className="text-white">{arredondaKcal(kcalLiquida(resultado, peso))} kcal</span> ao seu dia — cerca
+                    de {fmt(kcalLiquidaPorKm(resultado, peso) / peso, 2)} kcal por quilo a cada quilômetro. Esse número
+                    líquido é exatamente 1 kcal por quilo por quilômetro em qualquer pace, e é de onde vem a regra
+                    clássica; o bruto acima dele fica em torno de {fmt(kcalPorKm(resultado) / peso, 2)} porque soma o
+                    repouso do tempo em que você esteve correndo.
                   </p>
                 </div>
               )}
