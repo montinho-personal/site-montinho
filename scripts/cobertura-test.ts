@@ -31,6 +31,7 @@ import { ARTIGOS_COM_CALCULADORA_FC, ARTIGOS_COM_LINK_FC } from "../lib/fc";
 import { ARTIGOS_COM_CALCULADORA_POLICHINELO, ARTIGOS_COM_LINK_POLICHINELO } from "../lib/polichinelo";
 import { ARTIGOS_COM_CALCULADORA_CAMINHADA, ARTIGOS_COM_LINK_CAMINHADA } from "../lib/caminhada";
 import { ARTIGOS_COM_CALCULADORA_ELIPTICO } from "../lib/eliptico";
+import { ARTIGOS_COM_CALCULADORA_ATIVIDADES, ARTIGOS_COM_LINK_ATIVIDADES } from "../lib/atividades";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -60,6 +61,8 @@ const REGISTROS: [string, string[]][] = [
   ["caminhada", ARTIGOS_COM_CALCULADORA_CAMINHADA],
   ["caminhada (link)", ARTIGOS_COM_LINK_CAMINHADA],
   ["elíptico", ARTIGOS_COM_CALCULADORA_ELIPTICO],
+  ["atividades", ARTIGOS_COM_CALCULADORA_ATIVIDADES],
+  ["atividades (link)", ARTIGOS_COM_LINK_ATIVIDADES],
 ];
 
 const onde = new Map<string, string>();

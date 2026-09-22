@@ -59,6 +59,7 @@ export const NOME: Record<Ferramenta, string> = {
   polichinelos: "Calculadora de Polichinelos",
   caminhada: "Calculadora de Calorias da Caminhada",
   eliptico: "Calculadora de Calorias do Elíptico",
+  atividades: "Calculadora de Calorias por Atividade",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -94,6 +95,7 @@ export const ROTA: Record<Ferramenta, string> = {
   polichinelos: "/ferramentas/calculadora-polichinelos",
   caminhada: "/ferramentas/calculadora-calorias-caminhada",
   eliptico: "/ferramentas/calculadora-calorias-eliptico",
+  atividades: "/ferramentas/calculadora-calorias-atividades",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -124,6 +126,7 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
      decide emagrecimento é a do dia inteiro. */
   caminhada: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   eliptico: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
+  atividades: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -221,6 +224,19 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
     volume_alto: {
       interpretacao:
         "Para chegar nesse gasto só no elíptico seria muito tempo por dia. Distribuir entre cardio, musculação e o movimento do dia costuma render mais e durar mais semanas.",
+      pergunta: "Quer que eu monte uma distribuição que caiba na sua semana?",
+      pedido: "O tempo que saiu foi alto e queria ajuda para distribuir isso na semana.",
+    },
+  },
+  atividades: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto de uma sessão, não o do seu dia — e é menor do que as tabelas de revista dizem, porque o tempo de aula não é todo tempo de esforço. O que decide emagrecimento é o balanço da semana.",
+      pedido: "Queria entender quanto essa atividade pesa no meu objetivo e o que falta no meu treino.",
+    },
+    volume_alto: {
+      interpretacao:
+        "Para chegar nesse gasto numa sessão só seria muito tempo. Distribuir entre a atividade que você gosta, a musculação e o movimento do dia costuma render mais.",
       pergunta: "Quer que eu monte uma distribuição que caiba na sua semana?",
       pedido: "O tempo que saiu foi alto e queria ajuda para distribuir isso na semana.",
     },

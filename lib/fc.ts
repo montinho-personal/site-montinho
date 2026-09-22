@@ -197,14 +197,11 @@ export const ARTIGOS_COM_LINK_FC: string[] = [
   "cardio-antes-ou-depois-da-musculacao",
   "musculacao-ou-corrida-para-emagrecer",
   "caminhada-emagrece",
-  /**
-   * Esporte coletivo e luta de agarre: o gasto depende de quanto tempo a
-   * pessoa passa de fato em intensidade alta, e ela não tem como saber isso
-   * sem uma faixa de referência. A calculadora de déficit seria a ferramenta
-   * natural dos dois, mas o registro dela está no teto de oito.
+  /*
+   * "jiu-jitsu-emagrece" e "futebol-emagrece" saíram daqui em 22/09/2026:
+   * a busca que os traz é de caloria, não de batimento, e os dois passaram
+   * a embutir a Calculadora de Calorias por Atividade (lib/atividades.ts).
    */
-  "jiu-jitsu-emagrece",
-  "futebol-emagrece",
   "corrida-de-rua-iniciante",
   /*
    * "eliptico-emagrece" saiu daqui: as buscas que trazem gente a ele são
