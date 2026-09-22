@@ -41,6 +41,7 @@ export type Ferramenta =
   | "glp1"
   | "meta"
   | "potencial"
+  | "composicao"
   | "diagnostico"
   | "rotina"
   | "academia"

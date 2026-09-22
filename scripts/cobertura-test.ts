@@ -36,6 +36,7 @@ import { ARTIGOS_COM_CALCULADORA_CORRIDA } from "../lib/corrida";
 import { ARTIGOS_COM_CALCULADORA_GLP1 } from "../lib/glp1";
 import { ARTIGOS_COM_CALCULADORA_META } from "../lib/meta";
 import { ARTIGOS_COM_CALCULADORA_POTENCIAL } from "../lib/potencial";
+import { ARTIGOS_COM_CALCULADORA_COMPOSICAO } from "../lib/composicao";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -71,6 +72,7 @@ const REGISTROS: [string, string[]][] = [
   ["GLP-1", ARTIGOS_COM_CALCULADORA_GLP1],
   ["meta de peso", ARTIGOS_COM_CALCULADORA_META],
   ["potencial natural", ARTIGOS_COM_CALCULADORA_POTENCIAL],
+  ["composição corporal", ARTIGOS_COM_CALCULADORA_COMPOSICAO],
 ];
 
 const onde = new Map<string, string>();

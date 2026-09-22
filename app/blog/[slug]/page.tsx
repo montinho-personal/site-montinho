@@ -57,6 +57,8 @@ import { ARTIGOS_COM_CALCULADORA_META } from "@/lib/meta";
 import CalculadoraMeta from "@/components/meta/CalculadoraMeta";
 import { ARTIGOS_COM_CALCULADORA_POTENCIAL } from "@/lib/potencial";
 import CalculadoraPotencial from "@/components/potencial/CalculadoraPotencial";
+import { ARTIGOS_COM_CALCULADORA_COMPOSICAO } from "@/lib/composicao";
+import CalculadoraComposicao from "@/components/composicao/CalculadoraComposicao";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -210,7 +212,9 @@ export default async function BlogPost({ params }: Props) {
                             ? "meta"
                             : ARTIGOS_COM_CALCULADORA_POTENCIAL.includes(post.slug)
                               ? "potencial"
-                              : null;
+                              : ARTIGOS_COM_CALCULADORA_COMPOSICAO.includes(post.slug)
+                                ? "composicao"
+                                : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -422,6 +426,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraMeta placement={post.slug} />
                 ) : qualCalc === "potencial" ? (
                   <CalculadoraPotencial placement={post.slug} />
+                ) : qualCalc === "composicao" ? (
+                  <CalculadoraComposicao placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}

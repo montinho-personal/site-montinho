@@ -53,6 +53,7 @@ const CATEGORIAS: Record<Ferramenta, string[]> = {
   glp1: ["padrao", "nenhuma", "parcial", "completa"],
   meta: ["padrao", "cabe", "apertado", "nao-cabe"],
   potencial: ["padrao", "inicio", "caminho", "perto", "na-referencia"],
+  composicao: ["padrao", "essencial", "atleta", "bom", "aceitavel", "alto"],
   volume: ["padrao", "baixo", "alto", "adequado"],
   diagnostico: ["padrao"],
   rotina: ["padrao"],

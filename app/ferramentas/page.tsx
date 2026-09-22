@@ -58,15 +58,16 @@ const itemListSchema = {
     { "@type": "ListItem", position: 18, name: "Calculadora de Massa Magra no GLP-1", url: `${SITE_URL}/ferramentas/massa-magra-glp1` },
     { "@type": "ListItem", position: 19, name: "Calculadora de Meta de Peso", url: `${SITE_URL}/ferramentas/meta-de-peso` },
     { "@type": "ListItem", position: 20, name: "Calculadora de Potencial Natural", url: `${SITE_URL}/ferramentas/potencial-natural` },
+    { "@type": "ListItem", position: 21, name: "Calculadora de Composição Corporal", url: `${SITE_URL}/ferramentas/composicao-corporal` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 21, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 22, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
-      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 22 : 21, name: "Calculadora de Peptídeos e UI na Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
+      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 23 : 22, name: "Calculadora de Peptídeos e UI na Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
       : []),
-    { "@type": "ListItem", position: (MOBILIDADE_NO_AR ? 22 : 21) + (CONVERSOR_NO_AR ? 1 : 0), name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
+    { "@type": "ListItem", position: (MOBILIDADE_NO_AR ? 23 : 22) + (CONVERSOR_NO_AR ? 1 : 0), name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
   ],
 };
 
@@ -236,6 +237,15 @@ const FERRAMENTAS = [
     texto:
       "Calcula seu FFMI normalizado a partir de altura, peso e gordura corporal, mostra quanto de massa magra ainda cabe até a faixa de referência e em quanto tempo, no ritmo do seu tempo de treino. Explica por que o famoso 25 não é uma parede.",
     quando: "Use quando quiser saber se o platô é do treino ou do potencial. Nada do que você digita sai do navegador.",
+  },
+  {
+    href: "/ferramentas/composicao-corporal",
+    nome: "Calculadora de Composição Corporal",
+    pergunta: "O que os números da bioimpedância querem dizer?",
+    tempo: "15 segundos · sem cadastro",
+    texto:
+      "Traduz peso e percentual de gordura em quilos de massa magra e de gordura, diz em que faixa você está e, se você tiver um alvo, mostra quanto perder — comparando o caminho com treino de força e sem ele.",
+    quando: "Use depois de uma bioimpedância, quando o relatório tem uma dúzia de números e nenhuma explicação. Nada sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{
