@@ -46,6 +46,9 @@ import { ARTIGOS_COM_CALCULADORA_CAMINHADA, ARTIGOS_COM_LINK_CAMINHADA } from "@
 import CalculadoraCaminhada from "@/components/caminhada/CalculadoraCaminhada";
 import { ARTIGOS_COM_CALCULADORA_ELIPTICO } from "@/lib/eliptico";
 import CalculadoraEliptico from "@/components/eliptico/CalculadoraEliptico";
+import { ARTIGOS_COM_CALCULADORA_ATIVIDADES, ARTIGOS_COM_LINK_ATIVIDADES, atividadeDoArtigo } from "@/lib/atividades";
+import CalculadoraAtividades from "@/components/atividades/CalculadoraAtividades";
+import LinkFerramentaAtividades from "@/components/atividades/LinkFerramentaAtividades";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -189,7 +192,9 @@ export default async function BlogPost({ params }: Props) {
                   ? "caminhada"
                   : ARTIGOS_COM_CALCULADORA_ELIPTICO.includes(post.slug)
                     ? "eliptico"
-                    : null;
+                    : ARTIGOS_COM_CALCULADORA_ATIVIDADES.includes(post.slug)
+                      ? "atividades"
+                      : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -389,6 +394,10 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraCaminhada placement={post.slug} />
                 ) : qualCalc === "eliptico" ? (
                   <CalculadoraEliptico placement={post.slug} />
+                ) : qualCalc === "atividades" ? (
+                  /* A atividade do artigo já vem escolhida: quem lê sobre boxe
+                     não deveria procurar "boxe" numa lista de dez. */
+                  <CalculadoraAtividades placement={post.slug} atividadeInicial={atividadeDoArtigo(post.slug)?.id} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}
@@ -467,6 +476,7 @@ export default async function BlogPost({ params }: Props) {
               formulário — justo na página com 7.319 impressões do cluster. */}
           {ARTIGOS_COM_LINK_POLICHINELO.includes(post.slug) && <LinkFerramentaPolichinelo slug={post.slug} posicao="fim" />}
           {ARTIGOS_COM_LINK_CAMINHADA.includes(post.slug) && <LinkFerramentaCaminhada slug={post.slug} />}
+          {ARTIGOS_COM_LINK_ATIVIDADES.includes(post.slug) && <LinkFerramentaAtividades slug={post.slug} />}
           {/* Conversor de mg/mL: convite, nunca embed. Uma seringa desenhada
               dentro de um artigo sobre um medicamento daria a impressão de que
               o texto ensina a medir AQUELE medicamento — e a ferramenta é
