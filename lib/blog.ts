@@ -117141,12 +117141,12 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     excerpt: "Jogar bola gasta muita caloria — e é uma das poucas atividades que adulto nenhum precisa se forçar a fazer. O problema quase nunca é o jogo: é o que vem depois dele, e o preparo que não existe antes.",
     category: "Emagrecimento",
     date: "2026-09-11",
-    updatedAt: "2026-09-11",
+    updatedAt: "2026-09-22",
     readTime: "9 min",
     author: "Montinho",
     tags: ["futebol", "society", "emagrecimento", "queima de calorias", "cardio", "lesão"],
     faq: [
-      { question: "Quantas calorias queima uma pelada de futebol?", answer: "Numa pelada de society de uma hora, entre 500 e 900 kcal para a maioria dos adultos. Campo grande gasta mais que society, e society gasta mais que futsal, porque a área percorrida é maior. Goleiro fica bem abaixo dessa faixa." },
+      { question: "Quantas calorias queima uma pelada de futebol?", answer: "Uma hora de bola rolando numa pelada gasta cerca de 515 kcal para quem pesa 70 kg e 660 kcal para quem pesa 90 kg. Futsal gasta um pouco mais por minuto, e jogo competitivo bem mais. Só que pelada com três ou quatro times não é uma hora de bola rolando: quem espera na lateral gasta pouco, e é esse tempo que mais derruba o número real." },
       { question: "Jogar bola uma vez por semana emagrece?", answer: "Ajuda, mas dificilmente resolve sozinho. Uma pelada semanal representa um gasto extra pequeno diante do total da semana, e é justamente a frequência que costuma vir acompanhada de cerveja e petisco depois. Quem emagrece jogando bola normalmente joga duas vezes e organiza a alimentação." },
       { question: "Por que jogo bola há anos e não emagreço?", answer: "Quase sempre por dois motivos somados. O primeiro é a compensação: cerveja e porção depois do jogo devolvem com folga o que foi gasto. O segundo é que o corpo se adapta — quem joga há anos joga de forma mais econômica, andando mais e correndo menos, sem perceber." },
       { question: "Preciso de musculação para jogar bola?", answer: "Precisa, e menos pelo emagrecimento do que pela integridade. Futebol adulto amador concentra lesão em joelho, tornozelo e posterior de coxa, e força é o que protege essas três. Quem joga sem treinar força está apostando." },
@@ -117156,14 +117156,14 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <p>As duas partes da resposta: sim, jogar bola gasta bastante caloria, e tem uma vantagem que nenhuma esteira tem — <strong>ninguém precisa se obrigar a ir</strong>. Mas o jogo é só metade da equação, e a outra metade costuma ser decidida na mesa depois dele.</p>
 
 <h2>Quantas calorias uma pelada queima de verdade</h2>
-<p>Faixas honestas para uma hora de jogo, adulto amador:</p>
+<p>Uma hora de bola rolando, pelo Compêndio de Atividades Físicas:</p>
 <ul>
-<li><strong>Futsal ou quadra pequena:</strong> 400 a 650 kcal;</li>
-<li><strong>Society (o formato mais comum entre adultos):</strong> 500 a 900 kcal;</li>
-<li><strong>Campo grande, jogo corrido:</strong> 700 a 1.100 kcal;</li>
-<li><strong>Goleiro:</strong> 200 a 350 kcal.</li>
+<li><strong>Pelada de society ou campo:</strong> cerca de 515 kcal para 70 kg e 660 kcal para 90 kg;</li>
+<li><strong>Futsal:</strong> cerca de 575 kcal para 70 kg e 735 kcal para 90 kg — a quadra é menor, mas a bola quase não para;</li>
+<li><strong>Jogo competitivo, valendo:</strong> cerca de 735 kcal para 70 kg e 945 kcal para 90 kg.</li>
 </ul>
-<p>O que explica a diferença é simples: <strong>área percorrida</strong>. Quanto maior o campo, mais você corre. E dentro do mesmo jogo, a posição muda tudo — um meia que marca e apoia cobre muito mais chão que um zagueiro que sai pouco da área.</p>
+<p>Repare no "bola rolando". Pelada de adulto quase nunca é dois times jogando o tempo todo: são três, quatro times, e quem perde sai. <strong>Duas horas de quadra com quatro times são uma hora em campo e uma hora em pé na lateral</strong> — e a lateral gasta pouco mais que ficar em casa. É esse tempo, mais do que o tamanho do campo, que separa o número da tabela do número real.</p>
+<p>Dentro do jogo, a posição também pesa — um meia que marca e apoia cobre muito mais chão que um zagueiro que sai pouco da área. E o goleiro fica bem abaixo de todos: percorre cerca de metade da distância de um jogador de linha, com poucos piques curtos.</p>
 <p>O peso corporal também pesa: mover 95 kg pelo campo custa consideravelmente mais que mover 70 kg. Na prática, o jogador mais pesado da pelada é quem mais gasta — e quem mais sente o joelho no dia seguinte.</p>
 
 <h2>Por que tanta gente joga há anos e não emagrece</h2>
@@ -117213,7 +117213,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 
 <h2>Referências</h2>
 <ul>
-<li>Ainsworth BE, Haskell WL, Herrmann SD, et al. 2011 Compendium of Physical Activities. Medicine &amp; Science in Sports &amp; Exercise, 2011.</li>
+<li>Herrmann SD, Willis EA, Ainsworth BE, et al. 2024 Adult Compendium of Physical Activities. Journal of Sport and Health Science, 2024.</li>
 <li>Ekstrand J, Hägglund M, Waldén M. Epidemiology of muscle injuries in professional football. American Journal of Sports Medicine, 2011.</li>
 </ul>
 `,

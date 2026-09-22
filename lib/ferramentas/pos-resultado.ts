@@ -65,6 +65,7 @@ export const NOME: Record<Ferramenta, string> = {
   meta: "Calculadora de Meta de Peso",
   potencial: "Calculadora de Potencial Natural",
   composicao: "Calculadora de Composição Corporal",
+  futebol: "Calculadora de Calorias no Futebol",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -106,6 +107,7 @@ export const ROTA: Record<Ferramenta, string> = {
   meta: "/ferramentas/meta-de-peso",
   potencial: "/ferramentas/potencial-natural",
   composicao: "/ferramentas/composicao-corporal",
+  futebol: "/ferramentas/calculadora-calorias-futebol",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -147,6 +149,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   potencial: { ferramenta: "volume", label: "Conferir meu volume de treino" },
   /* A massa magra que a conta protege é a que a proteína sustenta. */
   composicao: { ferramenta: "proteina", label: "Calcular minha meta de proteína" },
+  /* Quem joga para emagrecer precisa saber o gasto do dia, não só o do jogo. */
+  futebol: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -347,6 +351,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Você está na faixa de referência ou acima dela. A pergunta deixa de ser quanto ganhar e passa a ser o que fazer com o que já está construído — força, execução e manutenção.",
       pergunta: "Quer que eu te ajude a montar a próxima fase?",
       pedido: "Cheguei na faixa de referência de massa magra e queria ajuda para montar a próxima fase do treino.",
+    },
+  },
+  futebol: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto do jogo, não o do seu dia. Futebol rende muito quando entra numa semana com força de perna e a resenha contada — sozinho, uma vez por semana, raramente move a balança.",
+      pedido: "Jogo bola e queria entender o que falta para o futebol me ajudar a emagrecer.",
     },
   },
   composicao: {

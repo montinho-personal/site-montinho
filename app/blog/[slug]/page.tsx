@@ -59,6 +59,8 @@ import { ARTIGOS_COM_CALCULADORA_POTENCIAL } from "@/lib/potencial";
 import CalculadoraPotencial from "@/components/potencial/CalculadoraPotencial";
 import { ARTIGOS_COM_CALCULADORA_COMPOSICAO } from "@/lib/composicao";
 import CalculadoraComposicao from "@/components/composicao/CalculadoraComposicao";
+import { ARTIGOS_COM_CALCULADORA_FUTEBOL } from "@/lib/futebol";
+import CalculadoraFutebol from "@/components/futebol/CalculadoraFutebol";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -214,7 +216,9 @@ export default async function BlogPost({ params }: Props) {
                               ? "potencial"
                               : ARTIGOS_COM_CALCULADORA_COMPOSICAO.includes(post.slug)
                                 ? "composicao"
-                                : null;
+                                : ARTIGOS_COM_CALCULADORA_FUTEBOL.includes(post.slug)
+                                  ? "futebol"
+                                  : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -428,6 +432,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraPotencial placement={post.slug} />
                 ) : qualCalc === "composicao" ? (
                   <CalculadoraComposicao placement={post.slug} />
+                ) : qualCalc === "futebol" ? (
+                  <CalculadoraFutebol placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}
