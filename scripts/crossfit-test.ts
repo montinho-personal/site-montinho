@@ -81,6 +81,13 @@ ok("hub e sitemap", /calculadora-calorias-crossfit/.test(readFileSync("app/ferra
 ok("sem chamada de rede", !/fetch\(|sendBeacon|localStorage/.test(comp));
 ok("os eventos nunca levam o peso", !/trackEvent\([^)]*peso/.test(comp));
 ok("a pergunta da frequência vem antes da área de resultado", comp.indexOf('id={idc("sem")}') > 0 && comp.indexOf('id={idc("sem")}') < comp.indexOf('aria-live="polite"'));
+/* Auditoria de 23/09: a frase das mil calorias repetia o resultado quando a
+   aula era só WOD, e chamava de exagero quem passa mesmo de 1.000 kcal. */
+ok("a frase das mil calorias só aparece com WOD menor que a aula e gasto abaixo de 1.000",
+  /resultado\.minutosWod < resultado\.minutosAula && arredondaKcal\(resultado\.kcal\) < 1000/.test(comp));
+ok("quem pesa muito passa mesmo de 1.000 kcal numa aula típica (250 kg)", calcula(250, 60, 12, 15, 15, "continuo")!.kcal > 1000);
+ok("aquecimento e força em branco valem 0", /aquecTexto\.trim\(\) === "" \? 0/.test(comp) && /forcaTexto\.trim\(\) === "" \? 0/.test(comp));
+ok("a comparação de formatos usa os segundos de EMOM da pessoa", /f\.id, emomOk && emom !== null \? emom : EMOM_PADRAO/.test(comp));
 ok("partes que não cabem têm mensagem", /naoCabe/.test(comp) && /somam mais que a aula/.test(comp));
 ok("kcal com ponto de milhar", /toLocaleString\("pt-BR"\)/.test(comp) && !/\{arredondaKcal\(/.test(comp));
 ok("um H1", (pag.match(/<h1[\s>]/g) ?? []).length === 1);

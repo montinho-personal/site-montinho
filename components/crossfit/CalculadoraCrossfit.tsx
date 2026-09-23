@@ -87,8 +87,10 @@ export default function CalculadoraCrossfit({ placement }: { placement: string }
   const pesoOk = pesoValido(peso);
   const aula = parseNumero(aulaTexto);
   const aulaOk = aulaValida(aula);
-  const aquec = parseNumero(aquecTexto);
-  const forca = parseNumero(forcaTexto);
+  /* Aquecimento e força em branco valem 0: aula sem força é comum, e o erro
+     que isso dava ("o WOD precisa ter pelo menos 1") apontava o campo errado. */
+  const aquec = aquecTexto.trim() === "" ? 0 : parseNumero(aquecTexto);
+  const forca = forcaTexto.trim() === "" ? 0 : parseNumero(forcaTexto);
   const wod = parseNumero(wodTexto);
   const partesOk = parteValida(aquec) && parteValida(forca) && parteValida(wod) && (wod ?? 0) > 0;
   const emom = parseNumero(emomTexto);
@@ -100,7 +102,7 @@ export default function CalculadoraCrossfit({ placement }: { placement: string }
   const kgMes = resultado ? kgPorMes(resultado, vezes) : null;
   const tudoWod = resultado ? kcalSeFosseTudoWod(peso!, aula!) : 0;
   const outros = resultado
-    ? FORMATOS.filter((f) => f.id !== formato).map((f) => ({ f, kcal: calcula(peso!, aula!, aquec!, forca!, wod!, f.id, EMOM_PADRAO)!.kcal }))
+    ? FORMATOS.filter((f) => f.id !== formato).map((f) => ({ f, kcal: calcula(peso!, aula!, aquec!, forca!, wod!, f.id, emomOk && emom !== null ? emom : EMOM_PADRAO)!.kcal }))
     : [];
 
   useEffect(() => {
@@ -190,12 +192,12 @@ export default function CalculadoraCrossfit({ placement }: { placement: string }
         </div>
         <div>
           <label htmlFor={idc("aquec")} className="block text-gray-300 text-sm font-medium mb-2">Aquecimento</label>
-          <input id={idc("aquec")} type="text" inputMode="numeric" autoComplete="off" placeholder="12" value={aquecTexto}
+          <input id={idc("aquec")} type="text" inputMode="numeric" autoComplete="off" placeholder="0" value={aquecTexto}
             onChange={(e) => setAquecTexto(e.target.value)} className={`w-full ${campo}`} />
         </div>
         <div>
           <label htmlFor={idc("forca")} className="block text-gray-300 text-sm font-medium mb-2">Força</label>
-          <input id={idc("forca")} type="text" inputMode="numeric" autoComplete="off" placeholder="15" value={forcaTexto}
+          <input id={idc("forca")} type="text" inputMode="numeric" autoComplete="off" placeholder="0" value={forcaTexto}
             onChange={(e) => setForcaTexto(e.target.value)} className={`w-full ${campo}`} />
         </div>
         <div>
@@ -211,7 +213,7 @@ export default function CalculadoraCrossfit({ placement }: { placement: string }
             ? `Cada parte vai de 0 a ${PARTE_MAX} minutos, e o WOD precisa ter pelo menos 1.`
             : naoCabe
               ? "As partes somam mais que a aula. Confira os minutos."
-              : "Minutos de cada parte. Sem força no dia, use 0. O que sobra é explicação e montagem de material."}
+              : "Minutos de cada parte. Em branco conta como 0. O que sobra da aula é explicação e montagem de material."}
       </p>
 
       <div className="mb-6">
@@ -278,8 +280,10 @@ export default function CalculadoraCrossfit({ placement }: { placement: string }
             </p>
             <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl border-l-2 pl-4" style={{ borderColor: "#BA9E50" }} data-testid="nota-wod">
               O WOD foi {Math.round(resultado.minutosWod)} dos {Math.round(resultado.minutosAula)} minutos de aula e fez{" "}
-              <strong className="text-white">{pct(resultado.kcalWod / resultado.kcal)} do gasto</strong>. Se a aula inteira fosse WOD sem
-              pausa, daria {kc(tudoWod)} kcal — é dessa conta que saem os números de mil calorias.
+              <strong className="text-white">{pct(resultado.kcalWod / resultado.kcal)} do gasto</strong>.
+              {resultado.minutosWod < resultado.minutosAula && arredondaKcal(resultado.kcal) < 1000 && (
+                <> Se a aula inteira fosse WOD sem pausa, daria {kc(tudoWod)} kcal — é dessa conta que saem os números de mil calorias.</>
+              )}
             </p>
             {outros.length > 0 && (
               <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl" data-testid="nota-formatos">
