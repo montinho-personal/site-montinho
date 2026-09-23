@@ -306,11 +306,14 @@ export const ARTIGOS_COM_CALCULADORA_CREATINA: string[] = [
  * Artigos que recebem LINK, não embed. Os dois de GLP-1 ficam no link de
  * propósito: uma calculadora de dose dentro de um artigo sobre remédio
  * pareceria recomendação combinada. Os guias de suplementos falam de
- * creatina entre vários outros assuntos.
+ * creatina entre vários outros assuntos, e os de preservar massa muscular
+ * citam a creatina como aliada.
  */
 export const ARTIGOS_COM_LINK_CREATINA: string[] = [
   "creatina-para-quem-usa-mounjaro",
   "creatina-para-quem-usa-retatrutida",
   "suplementacao-basica-para-iniciantes",
   "suplementos-femininos-guia",
+  "como-evitar-perder-massa-muscular-retatrutida",
+  "como-preservar-massa-muscular-durante-emagrecimento",
 ];

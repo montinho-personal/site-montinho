@@ -91,7 +91,7 @@ ok("a faixa de peso não expõe o peso", faixaPeso(83.4) === "80-99" && faixaPes
 
 bloco("7. OS ARTIGOS DIZEM O QUE A CALCULADORA DIZ");
 const todos = [...ARTIGOS_COM_CALCULADORA_CREATINA, ...ARTIGOS_COM_LINK_CREATINA];
-ok("os 9 artigos de creatina existem", todos.length === 9 && todos.every((s) => blogPosts.some((p) => p.slug === s)));
+ok("os 11 artigos de creatina existem", todos.length === 11 && todos.every((s) => blogPosts.some((p) => p.slug === s)));
 ok("embed e link não se repetem", ARTIGOS_COM_CALCULADORA_CREATINA.every((s) => !ARTIGOS_COM_LINK_CREATINA.includes(s)));
 ok("os de GLP-1 recebem link, não calculadora", ["creatina-para-quem-usa-mounjaro", "creatina-para-quem-usa-retatrutida"].every((s) => ARTIGOS_COM_LINK_CREATINA.includes(s)));
 for (const s of todos) {
