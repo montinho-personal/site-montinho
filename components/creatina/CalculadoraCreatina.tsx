@@ -166,6 +166,22 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
     card.scrollIntoView({ block: "start", behavior: reduzir ? "auto" : "smooth" });
   }, [calculos]);
 
+  /*
+   * Enter no percentual de gordura não recalcula a dose: desce até a tabela
+   * de doses por massa magra, que é a resposta desse campo. O blur fecha o
+   * teclado do celular, que senão cobre a tabela.
+   */
+  const praticaRef = useRef<HTMLDivElement>(null);
+  function enterGordura(e: React.KeyboardEvent<HTMLInputElement>) {
+    if (e.key !== "Enter") return;
+    e.preventDefault();
+    e.currentTarget.blur();
+    const alvo = praticaRef.current;
+    if (!alvo) return;
+    const reduzir = typeof window.matchMedia === "function" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    alvo.scrollIntoView({ block: "start", behavior: reduzir ? "auto" : "smooth" });
+  }
+
   const idc = (s: string) => `${s}-creatina-${placement}`;
   const linhasShare = ref
     ? [
@@ -275,7 +291,7 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
                   <div className="flex flex-wrap items-center gap-2 mb-2">
                     <div className="flex items-center gap-2">
                       <input id={idc("gordura")} type="text" inputMode="decimal" autoComplete="off" placeholder="18" value={gorduraTexto}
-                        onChange={(e) => setGorduraTexto(e.target.value)} className={`w-24 ${campoP}`} />
+                        onChange={(e) => setGorduraTexto(e.target.value)} onKeyDown={enterGordura} enterKeyHint="done" className={`w-24 ${campoP}`} />
                       <span className="text-gray-300">%</span>
                     </div>
                     <span className="text-gray-500 text-sm">Não sabe?</span>
@@ -288,7 +304,7 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
                       : "Os atalhos são estimativas médias de quem treina; o valor da sua bioimpedância ou avaliação é melhor."}
                   </p>
                   {prat && (
-                    <div className="overflow-x-auto" data-testid="tabela-pratica">
+                    <div ref={praticaRef} className="overflow-x-auto scroll-mt-24" data-testid="tabela-pratica">
                       <table className="w-full text-sm border-collapse">
                         <caption className="sr-only">Doses de creatina por abordagem, para o seu peso e percentual de gordura</caption>
                         <tbody>
