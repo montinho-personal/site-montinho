@@ -7,7 +7,7 @@ import { marked } from "marked";
 import { splitAtPrimeiraSecao } from "../lib/cta/placement";
 import {
   ARTIGOS_COM_CALCULADORA_JIU, MET_DESCANSO, MET_ROLA, MET_TECNICA, aulaValida, calcula, descansoValido, kcalPorRolaExtra, kgPorMes,
-  pesoValido, rolaValido, rolasValidos, tabelaCenarios,
+  ROLA_EXTRA_MINIMO, pesoValido, rolaValido, rolasValidos, tabelaCenarios,
 } from "../lib/jiujitsu";
 import { ARTIGOS_COM_CALCULADORA_ATIVIDADES, ATIVIDADES } from "../lib/atividades";
 import { CANONICA } from "../lib/ferramentas/canonica";
@@ -40,6 +40,10 @@ ok("rolas que não cabem na aula dão null", calcula(70, 45, 10, 6, 1) === null)
   ok(`um rola a mais soma ${Math.round(kcalPorRolaExtra(70, 6, 1))} kcal`, perto(b.kcal - a.kcal, kcalPorRolaExtra(70, 6, 1)));
   ok("e é pouco: menos de 50 kcal para 70 kg", kcalPorRolaExtra(70, 6, 1) < 50);
 }
+/* A auditoria: rola curto com descanso longo deixava a frase em "−12 kcal". */
+ok("rola de 2 min com 5 de descanso reduz o total, e a calculadora não chama isso de soma",
+  kcalPorRolaExtra(70, 2, 5) < 0 && /extra >= ROLA_EXTRA_MINIMO/.test(readFileSync("components/jiujitsu/CalculadoraJiuJitsu.tsx", "utf8")));
+ok("o caso comum ainda mostra a soma", kcalPorRolaExtra(70, 6, 1) >= ROLA_EXTRA_MINIMO);
 ok("mais rolas, mais gasto, na mesma aula", calcula(70, 75, 5, 6, 1)!.kcal > t.kcal);
 ok("kg/mês = líquido × vezes ÷ 7700 × 52/12", perto(kgPorMes(t, 3), (t.kcalLiquida * 3 / 7700) * 52 / 12));
 ok("limites", !pesoValido(20) && pesoValido(70) && !aulaValida(10) && aulaValida(75) && rolasValidos(0) && !rolasValidos(2.5) && !rolasValidos(20) && rolaValido(6) && !rolaValido(1) && descansoValido(0) && !descansoValido(6));
