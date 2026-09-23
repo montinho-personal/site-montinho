@@ -761,6 +761,9 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
           <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-2 print:hidden" style={{ color: "#BA9E50" }}>
             Pronto. Seu cardápio ganhou um chalalá.
           </p>
+          <p className="hidden print:block text-xs tracking-[0.18em] uppercase mb-2">
+            Montinho FitChef · montinhopersonal.com.br/ferramentas/monte-seu-cardapio
+          </p>
           <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-5" style={h}>
             Seu cardápio sugerido
           </h2>
@@ -894,7 +897,26 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
             <p className="text-gray-300 text-sm leading-relaxed">{porQueAssim(pedido)}</p>
           </div>
 
-          {/* Semana */}
+          {/* Semana — na impressão sai a versão lida, abaixo; aqui só a interativa */}
+          {semana && (
+            <div className="hidden print:block border-t border-white/10 mt-7 pt-6" data-testid="semana-impressa">
+              <h3 className="font-bold text-lg mb-3" style={h}>Sua semana</h3>
+              {DIAS_SEMANA.map((dia, i) => {
+                const igualAnterior = i > 0 && semana[i] === semana[i - 1];
+                return (
+                  <div key={dia} className="mb-3">
+                    <p className="text-sm font-semibold">{dia}{igualAnterior ? " — igual ao dia anterior" : ` · ≈ ${Math.round(totalDia(semana[i]).kcal)} kcal`}</p>
+                    {!igualAnterior && semana[i].refeicoes.map((r) => (
+                      <p key={r.momento} className="text-sm">
+                        {r.nome}:{" "}
+                        {r.itens.map((it) => { const a = ALIMENTO_CARDAPIO_POR_ID.get(it.alimentoId)!; return `${rotuloPorcao(a, it.porcoes)} de ${a.nome.toLowerCase()}`; }).join(", ")}
+                      </p>
+                    ))}
+                  </div>
+                );
+              })}
+            </div>
+          )}
           <div className="border-t border-white/10 mt-7 pt-6 print:hidden">
             <h3 className="text-white font-bold text-lg mb-1" style={h}>
               Quer montar sua semana?
@@ -1017,10 +1039,26 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
             <button type="button" onClick={() => outraVersao(pedido)} className={chip(false)}>
               Gerar outra versão
             </button>
-            <button type="button" onClick={recomeca} className={chip(false)}>
-              Recomeçar do zero
+            {/* Volta às perguntas sem apagar nada: quem só quer mudar um hábito não deveria recomeçar. */}
+            <button
+              type="button"
+              onClick={() => {
+                setCardapio(null);
+                setVariedade(null);
+                setE((a) => ({ ...a, etapa: "habituais", momentoIdx: 0 }));
+              }}
+              className={chip(false)}
+            >
+              Ajustar respostas
             </button>
           </div>
+          <button
+            type="button"
+            onClick={recomeca}
+            className="text-gray-500 hover:text-gray-300 text-sm underline underline-offset-4 decoration-1 mt-3 min-h-[44px] print:hidden transition-colors"
+          >
+            Recomeçar do zero (apaga suas respostas)
+          </button>
           {semVariacao && (
             <p className="text-gray-400 text-sm mt-3 print:hidden" role="status">
               {SEM_VARIACAO}

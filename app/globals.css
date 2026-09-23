@@ -424,3 +424,21 @@ body.sticky-whats a[aria-label="Fale conosco pelo WhatsApp"] {
 summary::-webkit-details-marker {
   display: none;
 }
+
+/*
+ * Impressão / salvar PDF.
+ *
+ * O site é escuro, e o Chrome não imprime fundo por padrão: sem estas regras
+ * o PDF do cardápio saía com texto branco em papel branco, com o cabeçalho
+ * fixo cobrindo o meio da página e o rodapé inteiro atrás. Aqui tudo vira
+ * papel: fundo branco, texto escuro, bordas cinza, e a moldura do site some.
+ */
+@media print {
+  html, body { background: #fff !important; color: #111 !important; }
+  header, footer, .fixed { display: none !important; }
+  main { padding-top: 0 !important; }
+  [class*="bg-"], [class*="from-"], [class*="to-"] { background: transparent !important; background-image: none !important; }
+  .text-white, [class*="text-gray-"], [class*="text-zinc-"] { color: #111 !important; }
+  [class*="border-white"], [class*="border-\[#BA9E50\]"] { border-color: #bbb !important; }
+  a { text-decoration: none; color: inherit; }
+}
