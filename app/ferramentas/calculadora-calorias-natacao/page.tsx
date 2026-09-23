@@ -230,7 +230,7 @@ export default function CalculadoraNatacaoPage() {
             <ul className="space-y-2 text-gray-300">
               <li><Link href="/blog/natacao-emagrece" className={ln}>Natação emagrece? Calorias, prós e contras</Link></li>
               <li><Link href="/ferramentas/calculadora-corrida" className={ln}>Calculadora de Corrida — pace, tempo e calorias</Link></li>
-              <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — jiu-jitsu, corda, escada e bicicleta</Link></li>
+              <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — escada e bicicleta</Link></li>
               <li><Link href="/ferramentas/calculadora-tmb-tdee" className={ln}>Calculadora de TMB e TDEE — o gasto do seu dia inteiro</Link></li>
             </ul>
           </div>

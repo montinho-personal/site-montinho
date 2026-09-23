@@ -225,7 +225,7 @@ export default function CalculadoraJiuJitsuPage() {
             <ul className="space-y-2 text-gray-300">
               <li><Link href="/blog/jiu-jitsu-emagrece" className={ln}>Jiu-jitsu emagrece? Calorias reais e o que esperar</Link></li>
               <li><Link href="/ferramentas/calculadora-calorias-boxe" className={ln}>Calculadora de Calorias no Boxe — aula e rounds</Link></li>
-              <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — corda, escada e bicicleta</Link></li>
+              <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — escada e bicicleta</Link></li>
               <li><Link href="/ferramentas/calculadora-tmb-tdee" className={ln}>Calculadora de TMB e TDEE — o gasto do seu dia inteiro</Link></li>
             </ul>
           </div>

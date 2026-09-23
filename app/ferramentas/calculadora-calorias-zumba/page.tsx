@@ -267,7 +267,7 @@ export default function CalculadoraZumbaPage() {
               <li><Link href="/blog/zumba-emagrece" className={ln}>Zumba emagrece? O que esperar da dança</Link></li>
               <li><Link href="/blog/danca-emagrece" className={ln}>Dança emagrece? Calorias por estilo</Link></li>
               <li><Link href="/ferramentas/calculadora-deficit-calorico" className={ln}>Calculadora de Déficit Calórico — onde está o resto do resultado</Link></li>
-              <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — spinning, natação, dança e mais</Link></li>
+              <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — escada e bicicleta</Link></li>
             </ul>
           </div>
         </div>

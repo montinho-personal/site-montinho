@@ -295,7 +295,7 @@ export default function CalculadoraFutebolPage() {
             <ul className="space-y-2 text-gray-300">
               <li><Link href="/blog/futebol-emagrece" className={ln}>Futebol emagrece? A conta da pelada e o que vem depois</Link></li>
               <li><Link href="/blog/treino-de-perna-completo" className={ln}>Treino de perna completo</Link></li>
-              <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — boxe, natação, spinning e mais</Link></li>
+              <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — escada e bicicleta</Link></li>
               <li><Link href="/ferramentas/calculadora-tmb-tdee" className={ln}>Calculadora de TMB e TDEE — o gasto do seu dia inteiro</Link></li>
             </ul>
           </div>

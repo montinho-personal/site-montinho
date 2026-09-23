@@ -20,17 +20,17 @@
  * e a ferramenta responde a conta que o texto não responde: com o peso de
  * quem pergunta.
  *
- * SÓ CORDA, ESCADA E BICICLETA FICAM AQUI
+ * SÓ ESCADA E BICICLETA FICAM AQUI
  *
- * Futebol, boxe, zumba, spinning, dança, natação e jiu-jitsu entraram aqui
- * e saíram em setembro de 2026. Não porque o argumento acima deixou de valer, mas porque cada um
+ * Futebol, boxe, zumba, spinning, dança, natação, jiu-jitsu e corda entraram
+ * aqui e saíram em setembro de 2026. Não porque o argumento acima deixou de valer, mas porque cada um
  * passou a ter uma conta que as outras não têm: o futebol, o revezamento
  * de times; o boxe, o ritmo de socos que o Compêndio mediu e os rounds; a
  * zumba, a aula dividida entre músicas com e sem salto; o spinning, a
  * potência em watts que a bike mostra; a dança, o estilo; a natação, o nado
- * e o tempo na borda; o jiu-jitsu, os rolas. Ver lib/futebol.ts,
- * lib/boxe.ts, lib/zumba.ts, lib/spinning.ts, lib/danca.ts, lib/natacao.ts
- * e lib/jiujitsu.ts. A saída do jiu-jitsu corrigiu outro valor: a técnica
+ * e o tempo na borda; o jiu-jitsu, os rolas; a corda, os blocos de pulo e
+ * descanso. Ver lib/futebol.ts, lib/boxe.ts, lib/zumba.ts, lib/spinning.ts,
+ * lib/danca.ts, lib/natacao.ts, lib/jiujitsu.ts e lib/corda.ts. A saída do jiu-jitsu corrigiu outro valor: a técnica
  * estava com 7,8 METs, que não é nenhuma entrada de artes marciais do
  * Compêndio (5,3 e 10,3).
  *
@@ -143,19 +143,6 @@ export interface Atividade {
  * mudar aqui exige conferir a fonte e mudar lá.
  */
 export const ATIVIDADES: Atividade[] = [
-  {
-    id: "corda",
-    nome: "Pular corda",
-    artigoFrase: "uma sessão de corda",
-    sessaoTipica: 15,
-    faixaPrincipal: 0,
-    fracaoAtiva: 0.5,
-    slug: "pular-corda-emagrece",
-    faixas: [
-      { id: "lento", nome: "Ritmo lento", met: 8.8, comoReconhecer: "Até cerca de 100 saltos por minuto, com pausas.", origem: "pular corda, ritmo lento" },
-      { id: "rapido", nome: "Ritmo rápido", met: 12.3, comoReconhecer: "Acima de 120 saltos por minuto — não se sustenta por muito tempo.", origem: "pular corda, ritmo rápido" },
-    ],
-  },
   {
     id: "escada",
     nome: "Subir escada",
@@ -338,8 +325,9 @@ export const ARTIGOS_COM_CALCULADORA_ATIVIDADES: string[] = [
 /**
  * Artigos que recebem link, não embed.
  *
- * Os dois têm impressão perto de zero hoje; o embed fica reservado para
+ * O `pular-corda-emagrece` saiu em setembro de 2026 para a calculadora
+ * própria da corda. O que ficou tem impressão perto de zero hoje; o embed fica reservado para
  * onde há gente chegando. Quando subirem, viram embed — se houver vaga no
  * teto de oito.
  */
-export const ARTIGOS_COM_LINK_ATIVIDADES: string[] = ["pular-corda-emagrece", "bicicleta-emagrece"];
+export const ARTIGOS_COM_LINK_ATIVIDADES: string[] = ["bicicleta-emagrece"];

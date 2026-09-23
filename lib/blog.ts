@@ -88280,13 +88280,13 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Pular corda tem um dos maiores gastos calóricos por minuto entre os exercícios acessíveis — mas é alto impacto e exige progressão. Veja como começar do zero.",
     category: "Emagrecimento",
     date: "2026-07-11",
-    updatedAt: "2026-07-11",
+    updatedAt: "2026-09-23",
     readTime: "9 min",
     author: "Montinho",
     tags: ["pular corda","emagrecimento","cardio","hiit","treino em casa"],
     faqSchema: [
-      { question: "Pular corda emagrece mesmo?", answer: "Sim: é um dos exercícios com maior gasto calórico por minuto, podendo queimar de 10 a 15 kcal/min em ritmo moderado a intenso. Mas o emagrecimento só acontece com déficit calórico — a corda acelera, não substitui a estratégia." },
-      { question: "Quantas calorias pular corda queima em 10 minutos?", answer: "Entre 100 e 150 kcal, dependendo do peso e do ritmo. É um gasto por minuto comparável ou superior ao da corrida, em um equipamento que custa pouco e cabe na mochila." },
+      { question: "Pular corda emagrece mesmo?", answer: "Sim: é um dos exercícios com maior gasto calórico por minuto — cerca de 11 a 15 kcal/min para quem pesa 70 kg, do ritmo lento ao rápido. Mas o emagrecimento só acontece com déficit calórico — a corda acelera, não substitui a estratégia." },
+      { question: "Quantas calorias pular corda queima em 10 minutos?", answer: "Pulando sem parar, cerca de 110 a 150 kcal para quem pesa 70 kg, do ritmo lento ao rápido. Em blocos, conte só o tempo pulando. É um gasto por minuto comparável ou superior ao da corrida, em um equipamento que custa pouco e cabe na mochila." },
       { question: "Quanto tempo pular corda por dia para emagrecer?", answer: "Iniciantes: 10 a 15 minutos totais em intervalos curtos (30-60 segundos pulando, 30-60 descansando). Com condicionamento, 15 a 25 minutos, 3 a 5 vezes por semana, geram excelente estímulo." },
       { question: "Pular corda é melhor que correr?", answer: "Por minuto, o gasto é semelhante ou levemente superior. A corda vence em praticidade e custo; a corrida em duração sustentável. As duas são de alto impacto — a escolha depende das suas articulações e preferência." },
       { question: "Quem não deve pular corda?", answer: "Pessoas com obesidade acentuada, lesões ativas em joelho, tornozelo ou coluna, e sedentários totais devem começar por opções de baixo impacto, como caminhada ou bicicleta, e progredir depois." },
@@ -88303,17 +88303,17 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Aí vem a frustração: "não é para mim". A maioria desiste na primeira semana, com dor na panturrilha e a sensação de que o exercício é impossível.</p>
 <p>Não é. Falta só o que ninguém te contou: <strong>progressão</strong>. Vamos aos números, aos benefícios e ao passo a passo para começar do zero sem se machucar.</p>
 <h2>Resposta direta: pular corda emagrece?</h2>
-<p><strong>Sim — pular corda tem um dos maiores gastos calóricos por minuto entre os exercícios acessíveis: de 10 a 15 kcal/min em ritmo moderado a intenso.</strong> Mas há duas ressalvas: é exercício de <strong>alto impacto</strong> e exige técnica e condicionamento. E, como todo cardio, só emagrece dentro de um <strong>déficit calórico</strong>.</p>
+<p><strong>Sim — pular corda tem um dos maiores gastos calóricos por minuto entre os exercícios acessíveis: cerca de 11 a 15 kcal/min para quem pesa 70 kg, do ritmo lento ao rápido.</strong> Mas há duas ressalvas: é exercício de <strong>alto impacto</strong> e exige técnica e condicionamento. E, como todo cardio, só emagrece dentro de um <strong>déficit calórico</strong>.</p>
 <p>Soundbite para levar: <strong>a corda é o cardio mais barato e mais denso que existe — mas é para quem constrói a base, não para quem pula etapas.</strong></p>
 <h2>Calorias: corda vs corrida vs caminhada</h2>
 <p>Os valores abaixo são estimativas para uma pessoa de 70 kg — variam com peso, ritmo e técnica.</p>
 <table>
 <tr><th>Exercício</th><th>Gasto estimado (30 min)</th><th>Impacto</th><th>Indicado para</th></tr>
-<tr><td>Pular corda (moderado)</td><td>300-400 kcal</td><td>Alto</td><td>Quem já tem base e pouco tempo</td></tr>
+<tr><td>Pular corda (lento a moderado, sem parar)</td><td>325-435 kcal</td><td>Alto</td><td>Quem já tem base e pouco tempo</td></tr>
 <tr><td>Corrida (9-10 km/h)</td><td>300-350 kcal</td><td>Alto</td><td>Quem gosta e tolera impacto</td></tr>
 <tr><td>Caminhada rápida</td><td>130-180 kcal</td><td>Baixo</td><td>Iniciantes e sobrepeso</td></tr>
 </table>
-<p>O detalhe honesto: quase ninguém pula corda 30 minutos direto. Na prática, a corda funciona em <strong>intervalos</strong> — o que a torna prima do HIIT. Entenda essa lógica em <a href="/blog/hiit-funciona">HIIT funciona?</a>.</p>
+<p>O detalhe honesto: quase ninguém pula corda 30 minutos direto. Na prática, a corda funciona em <strong>intervalos</strong> — e o descanso entre eles gasta pouco. Por isso o treino em blocos gasta bem menos que a tabela sugere: é a conta que a calculadora acima faz. A corda funciona como prima do HIIT. Entenda essa lógica em <a href="/blog/hiit-funciona">HIIT funciona?</a>.</p>
 <h2>Benefícios além da balança</h2>
 <ul>
 <li><strong>Condicionamento cardiovascular</strong> em sessões curtas;</li>
@@ -88335,6 +88335,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li>Chegue a 12-15 blocos, 3 a 4 vezes por semana;</li>
 <li>Meta final: 15 a 20 minutos totais de pulos por sessão.</li>
 </ol>
+<p>Em ritmo moderado, esses treinos gastam cerca de <strong>87 kcal</strong> nas semanas 1 e 2 (10 blocos de 30 segundos), <strong>145 kcal</strong> nas semanas 3 e 4 (12 blocos de 45 segundos) e <strong>235 kcal</strong> na meta (15 blocos de 1 minuto com 45 segundos de descanso) para quem pesa 70 kg — ou 110, 185 e 300 kcal para 90 kg. Para a sua conta, use a <a href="/ferramentas/calculadora-calorias-pular-corda">calculadora de calorias pulando corda</a>.</p>
 <p><strong>Técnica que protege:</strong> pule baixo (2-4 cm do chão), aterrisse na ponta dos pés com joelhos levemente flexionados, cotovelos junto ao corpo e giro vindo dos punhos. Pulos altos e aterrissagem de calcanhar são o caminho mais curto para a canelite.</p>
 <h2>Quem deve evitar (ou adiar) a corda</h2>
 <ul>
@@ -88361,7 +88362,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><a href="/blog/treino-em-casa-sem-equipamento">Treino em casa sem equipamento: guia completo</a></li>
 </ul>`,
     faq: [
-      { question: "Pular corda emagrece mesmo?", answer: "Sim: queima de 10 a 15 kcal por minuto, um dos maiores gastos entre exercícios acessíveis. Mas o resultado depende de déficit calórico e constância." },
+      { question: "Pular corda emagrece mesmo?", answer: "Sim: queima cerca de 11 a 15 kcal por minuto para quem pesa 70 kg, um dos maiores gastos entre exercícios acessíveis. Mas o resultado depende de déficit calórico e constância." },
       { question: "Quanto tempo devo pular corda por dia?", answer: "Iniciantes: 10 a 15 minutos em intervalos de 30-60 segundos com descanso igual. Com o tempo, evolua para 15 a 25 minutos, 3 a 5 vezes por semana." },
       { question: "Pular corda é melhor que correr para emagrecer?", answer: "O gasto por minuto é semelhante ou levemente maior na corda, com a vantagem do custo e da praticidade. Ambos são de alto impacto — escolha pelo que suas articulações toleram." },
       { question: "Quem não deve pular corda?", answer: "Pessoas com obesidade acentuada, lesões ativas em joelho, tornozelo ou coluna, e sedentários totais. Nesses casos, comece por caminhada ou bicicleta e progrida depois." },
