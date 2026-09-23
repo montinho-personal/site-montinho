@@ -75,6 +75,8 @@ import { ARTIGOS_COM_CALCULADORA_JIU } from "@/lib/jiujitsu";
 import CalculadoraJiuJitsu from "@/components/jiujitsu/CalculadoraJiuJitsu";
 import { ARTIGOS_COM_CALCULADORA_CORDA } from "@/lib/corda";
 import CalculadoraCorda from "@/components/corda/CalculadoraCorda";
+import { ARTIGOS_COM_CALCULADORA_ESCADA } from "@/lib/escada";
+import CalculadoraEscada from "@/components/escada/CalculadoraEscada";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -246,7 +248,9 @@ export default async function BlogPost({ params }: Props) {
                                               ? "jiujitsu"
                                               : ARTIGOS_COM_CALCULADORA_CORDA.includes(post.slug)
                                                 ? "corda"
-                                                : null;
+                                                : ARTIGOS_COM_CALCULADORA_ESCADA.includes(post.slug)
+                                                  ? "escada"
+                                                  : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -476,6 +480,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraJiuJitsu placement={post.slug} />
                 ) : qualCalc === "corda" ? (
                   <CalculadoraCorda placement={post.slug} />
+                ) : qualCalc === "escada" ? (
+                  <CalculadoraEscada placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}

@@ -372,6 +372,13 @@ export type AnalyticsEvent =
   | "jump_rope_frequency"
   | "jump_rope_methodology_open"
   | "jump_rope_tool_click"
+  /** Calculadora de Calorias Subindo Escada. `pace`, `floors` e `per_week`; nunca o peso. */
+  | "stairs_calculator_view"
+  | "stairs_calculator_use"
+  | "stairs_preset"
+  | "stairs_frequency"
+  | "stairs_methodology_open"
+  | "stairs_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"

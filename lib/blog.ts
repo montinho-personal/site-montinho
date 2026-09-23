@@ -101013,7 +101013,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Subir escada é um dos exercícios mais subestimados que existem: gratuito, acessível e com gasto calórico real por minuto. Sozinho não emagrece ninguém — quem decide é o déficit —, mas como aumento de NEAT foi uma das ferramentas que usei para perder mais de 40kg.",
     category: "Emagrecimento",
     date: "2026-07-30",
-    updatedAt: "2026-08-12",
+    updatedAt: "2026-09-23",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["subir escada", "NEAT", "gasto calórico", "emagrecimento", "atividade física"],
@@ -101022,7 +101022,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
         question:
           "Quantas calorias se gasta subindo escada?",
         answer:
-          "Em ritmo constante, uma pessoa de 80kg gasta em torno de 10 a 12 calorias por minuto subindo escadas — cerca do dobro de uma caminhada moderada. O valor varia com peso corporal, velocidade e altura dos degraus.",
+          "Em ritmo de treino, uma pessoa de 80kg gasta cerca de 12 calorias por minuto subindo escadas — mais que o dobro de uma caminhada moderada. Por andar, são cerca de 2 calorias. O valor varia com peso corporal, velocidade e altura dos degraus.",
       },
       {
         question:
@@ -101062,7 +101062,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Subir escada é surpreendentemente caro em energia. Em termos de intensidade, fica na faixa de 8 a 9 METs — mais que corrida leve e muito acima da caminhada no plano, que fica em torno de 3 a 4 METs.</p>
 
-<p>Na prática, para uma pessoa de 80kg, subir escadas em ritmo constante gasta algo em torno de 10 a 12 calorias por minuto. Uma caminhada moderada, a metade disso. Por quê? Porque a cada degrau você eleva o próprio peso contra a gravidade usando os maiores músculos do corpo: glúteos, quadríceps e panturrilhas.</p>
+<p>Na prática, para uma pessoa de 80kg, subir escadas em ritmo de treino gasta cerca de 12 calorias por minuto. Uma caminhada moderada, a metade disso. Por quê? Porque a cada degrau você eleva o próprio peso contra a gravidade usando os maiores músculos do corpo: glúteos, quadríceps e panturrilhas.</p>
 
 <p>Claro, quase ninguém sobe escada por 30 minutos seguidos. E é aí que entra o conceito que muda o jogo.</p>
 
@@ -101072,7 +101072,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>A ciência por trás disso é sólida. As pesquisas de James Levine na Mayo Clinic mostraram que o NEAT é um dos fatores que mais explicam por que algumas pessoas resistem ao ganho de peso e outras não (<a href="https://pubmed.ncbi.nlm.nih.gov/12468415/" target="_blank" rel="noopener">Levine, 2002</a>).</p>
 
-<p>A escada é NEAT concentrado: pequenas doses de alta intensidade espalhadas pelo dia, sem roupa de treino, sem agendamento, sem custo. Três ou quatro subidas de dois andares por dia, todos os dias, somam um gasto que a maioria das pessoas joga fora apertando o botão do elevador.</p>
+<p>A escada é NEAT concentrado: pequenas doses de alta intensidade espalhadas pelo dia, sem roupa de treino, sem agendamento, sem custo. Três ou quatro subidas de dois andares por dia, todos os dias, somam um gasto que a maioria das pessoas joga fora apertando o botão do elevador. Na conta, quatro subidas de dois andares, descendo a pé, dão cerca de <strong>19 kcal por dia</strong> para quem pesa 70 kg e 24 para 90 kg — pouco no dia, mas é um hábito que soma todo dia. Para a sua conta, com os seus andares, use a <a href="/ferramentas/calculadora-calorias-escada">calculadora de calorias subindo escada</a>.</p>
 
 <h2>Além das calorias: o que a escada faz pelo seu corpo</h2>
 
