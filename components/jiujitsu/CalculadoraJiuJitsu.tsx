@@ -21,6 +21,7 @@ import {
   PESO_MAX,
   PESO_MIN,
   PRESETS_AULA,
+  ROLA_EXTRA_MINIMO,
   ROLAS_MAX,
   ROLA_MIN_MAX,
   ROLA_MIN_MIN,
@@ -96,6 +97,7 @@ export default function CalculadoraJiuJitsu({ placement }: { placement: string }
   const naoCabe = camposOk && resultado === null;
   const kgMes = resultado ? kgPorMes(resultado, vezes) : null;
   const semRola = resultado && resultado.rolas > 0 ? calcula(peso!, aula!, 0, rola!, descanso!) : null;
+  const extra = resultado ? kcalPorRolaExtra(peso!, rola!, descanso!) : 0;
 
   useEffect(() => {
     const el = raiz.current;
@@ -244,8 +246,10 @@ export default function CalculadoraJiuJitsu({ placement }: { placement: string }
             </p>
             {semRola && (
               <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl border-l-2 pl-4" style={{ borderColor: "#BA9E50" }} data-testid="nota-rola">
-                A mesma aula só com técnica gastaria cerca de {kc(semRola.kcal)} kcal. Cada rola a mais, na mesma duração, soma
-                só cerca de {kc(kcalPorRolaExtra(peso!, rola!, descanso!))} kcal — o rola gasta o dobro por minuto, mas é curto.
+                A mesma aula só com técnica gastaria cerca de {kc(semRola.kcal)} kcal.{" "}
+                {extra >= ROLA_EXTRA_MINIMO
+                  ? <>Cada rola a mais, na mesma duração, soma só cerca de {kc(extra)} kcal — o rola gasta o dobro por minuto, mas é curto.</>
+                  : <>Com rolas de {formataTempo(rola!)} e {formataTempo(descanso!)} de descanso, um rola a mais quase não muda o gasto — o descanso entre eles gasta menos que a técnica que ele substitui.</>}{" "}
                 Quem quer gastar mais precisa de mais aulas, não de emendar rolas.
               </p>
             )}

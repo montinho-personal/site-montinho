@@ -142,6 +142,14 @@ export function kcalPorRolaExtra(pesoKg: number, minutosPorRola: number, minutos
   );
 }
 
+/**
+ * Abaixo disso, dizer "um rola a mais soma X kcal" engana: com rolas curtos
+ * e descanso longo, o descanso gasta menos que a técnica que ele substitui,
+ * e um rola a mais pode até reduzir o total. A auditoria achou a frase
+ * dizendo "soma só cerca de −12 kcal".
+ */
+export const ROLA_EXTRA_MINIMO = 5;
+
 export function kgPorMes(r: Resultado, vezes: number): number {
   return ((r.kcalLiquida * vezes) / KCAL_POR_KG_GORDURA) * (52 / 12);
 }
