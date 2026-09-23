@@ -117411,6 +117411,98 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 </ul>
 `,
   },
+  {
+    slug: "hyrox-o-que-e",
+    title: "Hyrox: O Que É, Quantas Calorias Gasta e Como Treinar",
+    metaTitle: "Hyrox: O Que É, Quantas Calorias Gasta e Como Treinar",
+    metaDescription: "O que é Hyrox, quais são as 8 estações, quantas calorias uma prova gasta e como treinar corrida e força para a primeira prova sem se machucar.",
+    excerpt: "Hyrox é uma prova de 8 km de corrida intercalados com 8 estações de força e condicionamento. Veja como funciona, quanto uma prova gasta de verdade e como treinar para a primeira.",
+    category: "Treino",
+    date: "2026-09-23",
+    updatedAt: "2026-09-23",
+    readTime: "10 min",
+    author: "Montinho",
+    tags: ["hyrox", "treino híbrido", "corrida", "condicionamento", "queima de calorias"],
+    faq: [
+      { question: "O que é Hyrox?", answer: "É uma prova de fitness padronizada: oito corridas de 1 km, cada uma seguida de uma estação — SkiErg, empurrar e puxar trenó, burpee broad jump, remo, carregamento, avanço com saco de areia e wall balls. A prova é igual em qualquer lugar do mundo, então o tempo final pode ser comparado." },
+      { question: "Quantas calorias gasta uma prova de Hyrox?", answer: "Uma prova em 1h30, com pace de 6:00 por km, gasta cerca de 1025 kcal para quem pesa 70 kg e 1320 para quem pesa 90 kg. Uma prova forte, em 1h10, gasta cerca de 900 kcal para 70 kg; uma primeira prova, em 1h55, cerca de 1200 — quem demora mais gasta mais no total." },
+      { question: "O que gasta mais no Hyrox: a corrida ou as estações?", answer: "A corrida. Numa prova de 1h30, os 8 km levam cerca de 53% do tempo e fazem cerca de 60% do gasto. As estações cansam mais a musculatura, mas a corrida é mais longa e gasta mais por minuto." },
+      { question: "Preciso saber correr para fazer Hyrox?", answer: "Precisa conseguir correr 8 km no total, em blocos de 1 km, com cansaço acumulado. Quem só faz musculação costuma sofrer mais na corrida do que nas estações. Para a primeira prova, a categoria em dupla divide as estações e deixa a estreia mais tranquila." },
+      { question: "Hyrox emagrece?", answer: "A prova é um dia só. O que emagrece é o treino das semanas antes dela — corrida, força e condicionamento — somado a um déficit calórico. O Hyrox ajuda porque dá um objetivo com data, e isso mantém a pessoa treinando." },
+    ],
+    content: `<p>Oito quilômetros de corrida, oito estações, e todo mundo fazendo exatamente a mesma prova — em São Paulo, em Londres ou em Nova York. É isso que fez o Hyrox crescer tão rápido: dá para comparar o seu tempo com o de qualquer pessoa.</p>
+<p>Se você está pensando na primeira prova, ou só quer saber quanto ela gasta, vamos ao que importa: como funciona, quanto custa em calorias e como treinar.</p>
+
+<h2>Resposta direta: o que é Hyrox?</h2>
+<p><strong>Hyrox é uma prova de fitness com 8 km de corrida divididos em oito blocos de 1 km, cada um seguido de uma estação de força ou condicionamento.</strong> A ordem, as distâncias e os movimentos são sempre os mesmos, e o que muda é a carga de cada categoria. Uma prova média leva perto de 1h30 e gasta cerca de 1.025 kcal para quem pesa 70 kg.</p>
+<p>O resumo: <strong>o Hyrox parece uma prova de estações, mas é, antes de tudo, uma prova de corrida.</strong> A corrida ocupa mais da metade do tempo e faz a maior parte do gasto.</p>
+
+<h2>As 8 estações do Hyrox</h2>
+<p>Depois de cada 1 km de corrida, uma estação, nesta ordem:</p>
+<ol>
+<li><strong>SkiErg — 1.000 m:</strong> o aparelho de esqui, puxando os cabos de cima para baixo;</li>
+<li><strong>Sled push — 50 m:</strong> empurrar o trenó com carga;</li>
+<li><strong>Sled pull — 50 m:</strong> puxar o trenó com uma corda;</li>
+<li><strong>Burpee broad jump — 80 m:</strong> burpee seguido de salto à frente;</li>
+<li><strong>Remo — 1.000 m:</strong> no remo ergométrico;</li>
+<li><strong>Farmers carry — 200 m:</strong> carregar dois kettlebells;</li>
+<li><strong>Sandbag lunges — 100 m:</strong> avanço com saco de areia nos ombros;</li>
+<li><strong>Wall balls — 100 repetições:</strong> agachar e arremessar a bola no alvo da parede.</li>
+</ol>
+<p>Entre a corrida e a estação fica a Roxzone, a área de transição — e o tempo gasto ali conta no relógio. As categorias mudam a carga: Open e Pro para a prova individual, além de dupla e revezamento em quatro, em que as estações são divididas.</p>
+
+<h2>Quantas calorias uma prova de Hyrox gasta</h2>
+<p>Pela equação de corrida da ACSM para os 8 km e pelo Compêndio de Atividades Físicas para as estações:</p>
+<ul>
+<li><strong>Prova forte, em 1h10, pace de 5:00 por km:</strong> cerca de 900 kcal para 70 kg e 1155 para 90 kg;</li>
+<li><strong>Prova média, em 1h30, pace de 6:00 por km:</strong> cerca de 1025 kcal para 70 kg e 1320 para 90 kg;</li>
+<li><strong>Primeira prova, em 1h55, pace de 7:00 por km:</strong> cerca de 1200 kcal para 70 kg e 1545 para 90 kg.</li>
+</ul>
+<p>Repare que a prova mais lenta gasta mais no total: o gasto por minuto é menor, mas são 45 minutos a mais de esforço. Aqui as mil calorias são reais — ao contrário de uma aula de CrossFit, o Hyrox é uma hora e meia de esforço quase contínuo.</p>
+
+<h2>A corrida é a maior parte da prova</h2>
+<p>Numa prova de 1h30, os 8 km de corrida levam cerca de 48 minutos — 53% do tempo — e fazem cerca de 60% do gasto. Cada estação, sozinha, gasta perto de 50 kcal para quem pesa 70 kg.</p>
+<p>Isso muda a forma de treinar. Quem vem da musculação costuma se preocupar com o trenó e o wall ball, e é na corrida que perde mais tempo: chega em cada estação já cansado, e o cansaço acumula. <strong>Melhorar o pace é o jeito mais rápido de melhorar o tempo final.</strong></p>
+
+<h2>Como treinar para o primeiro Hyrox</h2>
+<ul>
+<li><strong>Base de corrida:</strong> três corridas por semana, uma delas com blocos de 1 km em ritmo de prova e pausas curtas;</li>
+<li><strong>Força duas vezes por semana:</strong> agachamento, levantamento terra, avanço e empurrar — é o que sustenta o trenó e os lunges com a perna cansada;</li>
+<li><strong>Corrida cansada:</strong> uma vez por semana, alterne 1 km de corrida com uma estação. É o treino que mais se parece com a prova — veja como organizar em <a href="/blog/treino-hibrido-forca-corrida-2025">treino híbrido de força e corrida</a>;</li>
+<li><strong>Técnica das estações:</strong> wall ball e burpee broad jump gastam menos energia com boa técnica. Treine o movimento antes de treinar o volume.</li>
+</ul>
+<p>Para a estreia, a categoria em dupla é um bom caminho: você corre os 8 km, mas divide as estações, e conhece a prova sem o risco de quebrar no meio.</p>
+
+<h2>Hyrox emagrece?</h2>
+<p>A prova é um dia só — mil calorias em um sábado não mudam a balança do mês. O que emagrece é o treino das semanas antes dela, somado a um <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a>. O Hyrox ajuda porque dá um objetivo com data: quem tem prova marcada treina com mais constância, e constância é o que decide o resultado.</p>
+<p>O cuidado é o mesmo de qualquer esporte de resistência: <strong>não coma como se tivesse feito uma prova todo dia</strong>. O treino de uma terça-feira gasta bem menos que a prova.</p>
+
+<h2>Cuidados antes da primeira prova</h2>
+<ul>
+<li>Se você não corre hoje, comece pela corrida meses antes, não semanas — tendão e canela se adaptam mais devagar que o fôlego;</li>
+<li>Faça pelo menos um simulado completo antes da prova, para conhecer o seu ritmo;</li>
+<li>Com alguma condição cardiovascular ou dor articular, converse com quem acompanha você antes de começar.</li>
+</ul>
+
+<h2>Resumo</h2>
+<p>Hyrox é uma prova de 8 km de corrida com oito estações no meio. Uma prova média gasta cerca de 1.025 kcal para 70 kg, e a corrida responde por mais da metade do tempo e do gasto. Para a primeira prova: base de corrida, força duas vezes por semana, treinos de corrida cansada e, se quiser estrear com calma, a categoria em dupla.</p>
+<p>Monto a preparação para o Hyrox — corrida, força e estações na semana certa — para alunos em Alphaville, Barueri e Santana de Parnaíba, e pela <a href="/consultoria-online">consultoria online</a> para o Brasil todo. <a href="/contato">Agende uma avaliação</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/treino-hibrido-forca-corrida-2025">Treino híbrido: como combinar força e corrida</a></li>
+<li><a href="/blog/crossfit-emagrece">CrossFit emagrece? Quantas calorias uma aula queima</a></li>
+<li><a href="/blog/corrida-para-iniciantes">Corrida para iniciantes</a></li>
+<li><a href="/blog/corrida-e-musculacao">Corrida e musculação</a></li>
+</ul>
+
+<h2>Referências</h2>
+<ul>
+<li>Ainsworth BE, Haskell WL, Herrmann SD, et al. 2011 Compendium of Physical Activities. Medicine &amp; Science in Sports &amp; Exercise, 2011.</li>
+<li>American College of Sports Medicine. ACSM's Guidelines for Exercise Testing and Prescription. Equações metabólicas de corrida.</li>
+</ul>
+`,
+  },
 ]) as BlogPost[];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

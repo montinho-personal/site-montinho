@@ -75,6 +75,7 @@ export const NOME: Record<Ferramenta, string> = {
   corda: "Calculadora de Calorias Pulando Corda",
   escada: "Calculadora de Calorias Subindo Escada",
   crossfit: "Calculadora de Calorias no CrossFit",
+  hyrox: "Calculadora de Calorias no Hyrox",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -126,6 +127,7 @@ export const ROTA: Record<Ferramenta, string> = {
   corda: "/ferramentas/calculadora-calorias-pular-corda",
   escada: "/ferramentas/calculadora-calorias-escada",
   crossfit: "/ferramentas/calculadora-calorias-crossfit",
+  hyrox: "/ferramentas/calculadora-calorias-hyrox",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -187,6 +189,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   escada: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   /* A fome depois do WOD é o que trava; o déficit da semana é a conta que resolve. */
   crossfit: { ferramenta: "deficit", label: "Calcular meu déficit" },
+  /* Quem acabou de ver que a corrida é mais da metade da prova quer o pace. */
+  hyrox: { ferramenta: "corrida", label: "Calcular meu pace" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -387,6 +391,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Você está na faixa de referência ou acima dela. A pergunta deixa de ser quanto ganhar e passa a ser o que fazer com o que já está construído — força, execução e manutenção.",
       pergunta: "Quer que eu te ajude a montar a próxima fase?",
       pedido: "Cheguei na faixa de referência de massa magra e queria ajuda para montar a próxima fase do treino.",
+    },
+  },
+  hyrox: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto de uma prova, não o da sua semana. O que decide o próximo tempo é a preparação: base de corrida, força para as estações e treinos de corrida cansada.",
+      pedido: "Quero me preparar para o Hyrox e entender como organizar corrida e força na semana.",
     },
   },
   crossfit: {
