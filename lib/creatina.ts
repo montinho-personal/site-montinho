@@ -80,13 +80,7 @@ export const FONTE_CRIBB: Fonte = {
   resumo: "homens treinados, 0,1 g/kg por dia de creatina num suplemento com proteína e carboidrato.",
 };
 
-export const FONTE_TWIN: Fonte = {
-  rotulo: "Leandro Twin. Como tomar creatina para hipertrofia (leandrotwin.com.br)",
-  url: "https://leandrotwin.com.br/site/blog/suplementacao/como-tomar-creatina-para-hipertrofia/",
-  resumo: "manutenção de 3 a 5 g por dia, uma vez ao dia, sem passar de 5 g no uso contínuo; saturação só para atletas que precisam de efeito rápido.",
-};
-
-export const FONTES_CREATINA: Fonte[] = [FONTE_ISSN, FONTE_ANTONIO, FONTE_HULTMAN, FONTE_GANN, FONTE_CANDOW, FONTE_CRIBB, FONTE_TWIN];
+export const FONTES_CREATINA: Fonte[] = [FONTE_ISSN, FONTE_ANTONIO, FONTE_HULTMAN, FONTE_GANN, FONTE_CANDOW, FONTE_CRIBB];
 
 /* ───────────────────────── A conta ───────────────────────── */
 
@@ -182,8 +176,8 @@ export function saturacao(pesoKg: number): Saturacao {
  * Cribb 2007) e é a que parte das academias usa. Nenhum estudo mostrou que
  * ela renda mais que 5 g no uso contínuo; a página diz isso.
  *
- * O Leandro Twin, no próprio site, recomenda 3 a 5 g e não passar de 5 g
- * — o mesmo consenso. Nenhum outro coach entra aqui sem fonte publicada.
+ * Coach nenhum entra aqui: dose atribuída a uma pessoa precisa de fonte
+ * publicada, e o dono do site preferiu deixar só os protocolos de estudo.
  */
 
 /** Manutenção por massa magra (Gann et al., 2015), g/kg de massa magra. */

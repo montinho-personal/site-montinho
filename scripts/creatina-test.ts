@@ -53,8 +53,8 @@ ok("dose alta = 0,1 g/kg (Candow 2015, Cribb 2007)", G_POR_KG_DOSE_ALTA === 0.1)
 }
 ok("atalhos de quem não sabe o percentual: homem 18%, mulher 28%", GORDURA_TIPICA.homem === 18 && GORDURA_TIPICA.mulher === 28);
 ok("percentual de gordura tem faixa", gorduraValida(3) && gorduraValida(60) && !gorduraValida(2) && !gorduraValida(61) && !gorduraValida(null));
-ok("toda dose citada de coach tem fonte publicada (só Leandro Twin, com link do site dele)",
-  FONTES_CREATINA.filter((f) => /Twin/.test(f.rotulo)).length === 1 && FONTES_CREATINA.some((f) => /leandrotwin\.com\.br/.test(f.url)) && !FONTES_CREATINA.some((f) => /Pacholok/i.test(f.rotulo)));
+ok("nenhum coach é citado como fonte de dose (pedido do dono do site)",
+  !FONTES_CREATINA.some((f) => /Twin|Pacholok/i.test(f.rotulo)) && !/Leandro Twin/.test(readFileSync("components/creatina/CalculadoraCreatina.tsx", "utf8") + readFileSync("app/ferramentas/calculadora-creatina/page.tsx", "utf8")));
 
 bloco("4. O POTE (150, 300, 500 e 1000 g)");
 for (const pote of [150, 300, 500, 1000]) {
@@ -120,7 +120,8 @@ ok("sem chamada de rede", !/fetch\(|sendBeacon|localStorage/.test(comp));
 ok("os eventos nunca levam peso nem preço (só a faixa)", !/trackEvent\([^)]*\b(peso|pesoKg|preco|price|weight)\s*:/.test(comp) && /weight_range: faixaPeso/.test(comp));
 ok("saturação começa desligada", /useState\(false\);\s*\n\s*const \[poteAberto/.test(comp) && /const \[comSaturacao, setComSaturacao\] = useState\(false\)/.test(comp));
 ok("o dosador avisa que a colher não garante gramas", /tamanho da colher não garante a quantidade em gramas/.test(comp));
-ok("o módulo de academia começa fechado e o resultado principal continua o consenso", /const \[praticaAberta, setPraticaAberta\] = useState\(false\)/.test(comp) && /Sua referência/.test(comp));
+ok("o módulo de academia é sempre visível, logo depois do resultado, e o resultado principal continua o consenso",
+  !/praticaAberta/.test(comp) && comp.indexOf('data-testid="bloco-pratica"') > comp.indexOf('data-testid="resultado-creatina"') && comp.indexOf('data-testid="bloco-pratica"') < comp.indexOf('data-testid="bloco-saturacao"') && /Sua referência/.test(comp));
 ok("o fator da massa magra aparece como 0,075, não arredondado para 0,08", /g3\(G_POR_KG_MASSA_MAGRA\)/.test(comp) && !/g2\(G_POR_KG_MASSA_MAGRA\)/.test(comp + pag) && (0.075).toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 3 }) === "0,075");
 ok("o módulo diz que a dose alta não rende mais que 5 g", /nenhum estudo mostrou que|não mostrou render mais que 5 g/.test(comp));
 ok("o comparador separa preço de qualidade", /Preço não diz nada sobre qualidade/.test(comp));

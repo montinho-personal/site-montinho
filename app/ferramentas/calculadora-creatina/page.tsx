@@ -225,9 +225,8 @@ export default function CalculadoraCreatinaPage() {
               renda mais que 5 g no uso contínuo: o estoque do músculo tem um teto, e o que passa dele sai na urina.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              Entre os coaches mais conhecidos do Brasil, o <strong className="text-white">Leandro Twin</strong> recomenda, no próprio site, 3 a 5 g por
-              dia, sem passar de 5 g no uso contínuo — o mesmo consenso científico. Na calculadora acima, abra &ldquo;Como quem treina musculação
-              costuma usar&rdquo; e informe o seu percentual de gordura para ver as três contas lado a lado.
+              Na calculadora acima, logo abaixo do resultado, informe o seu percentual de gordura para ver as três contas lado a lado com o seu
+              peso.
             </p>
           </div>
 

@@ -87,7 +87,6 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
   const [dosadorAberto, setDosadorAberto] = useState(false);
   const [medidaTexto, setMedidaTexto] = useState("3");
   const [metodoAberto, setMetodoAberto] = useState(false);
-  const [praticaAberta, setPraticaAberta] = useState(false);
   const [gorduraTexto, setGorduraTexto] = useState("");
 
   const raiz = useRef<HTMLDivElement>(null);
@@ -241,15 +240,13 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
               </p>
             </div>
 
-            {/* ── Como quem treina usa ── */}
-            <div className={secao}>
-              <button type="button" aria-expanded={praticaAberta}
-                onClick={() => { if (!praticaAberta) trackEvent("creatine_internal_link_click", { placement, calculator_section: "practice" }); setPraticaAberta(!praticaAberta); }}
-                className="text-white font-semibold underline underline-offset-4 decoration-1 min-h-[44px] text-left" style={{ textDecorationColor: "#BA9E50" }}>
-                {praticaAberta ? "−" : "+"} Como quem treina musculação costuma usar
-              </button>
-              {praticaAberta && (
-                <div className="mt-4" data-testid="bloco-pratica">
+            {/* ── Como quem treina usa: sempre visível, porque é a maioria de quem chega aqui ── */}
+            <div className="border border-white/20 p-5 sm:p-6 mt-6 relative" data-testid="bloco-pratica">
+              <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: "#BA9E50" }} aria-hidden="true" />
+              <p className="text-[11px] font-semibold tracking-[0.18em] uppercase mb-2" style={{ color: "#BA9E50" }}>Treina musculação?</p>
+              <h3 className="text-white font-bold text-xl mb-3" style={h}>Como quem treina musculação costuma usar</h3>
+              {(
+                <div>
                   <p className="text-gray-300 text-sm leading-relaxed mb-4 max-w-2xl">
                     Na academia, muita gente ajusta a creatina pela <strong className="text-white">massa magra</strong> — é no músculo que ela fica
                     guardada. É isso que faz homem e mulher, e quem tem menos gordura, chegarem a doses diferentes: não é o sexo em si, é
@@ -287,19 +284,12 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
                             </th>
                             <td className="text-white font-semibold py-2.5 tabular-nums whitespace-nowrap">{g(prat.porMassaMagra)} g/dia</td>
                           </tr>
-                          <tr className="border-b border-white/10">
+                          <tr>
                             <th scope="row" className="text-left text-gray-300 font-normal py-2.5 pr-3">
                               Dose alta: {g2(G_POR_KG_DOSE_ALTA)} g × peso
                               <span className="block text-gray-500 text-xs">usada em estudos de hipertrofia (Candow, 2015; Cribb, 2007)</span>
                             </th>
                             <td className="text-white font-semibold py-2.5 tabular-nums whitespace-nowrap">{g(prat.doseAlta)} g/dia</td>
-                          </tr>
-                          <tr>
-                            <th scope="row" className="text-left text-gray-300 font-normal py-2.5 pr-3">
-                              Leandro Twin
-                              <span className="block text-gray-500 text-xs">no site dele: sem passar de 5 g no uso contínuo</span>
-                            </th>
-                            <td className="text-white font-semibold py-2.5 tabular-nums whitespace-nowrap">3 a 5 g/dia</td>
                           </tr>
                         </tbody>
                       </table>
