@@ -40,6 +40,7 @@ import { ARTIGOS_COM_CALCULADORA_COMPOSICAO } from "../lib/composicao";
 import { ARTIGOS_COM_CALCULADORA_FUTEBOL } from "../lib/futebol";
 import { ARTIGOS_COM_CALCULADORA_BOXE } from "../lib/boxe";
 import { ARTIGOS_COM_CALCULADORA_ZUMBA } from "../lib/zumba";
+import { ARTIGOS_COM_CALCULADORA_SPINNING } from "../lib/spinning";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -79,6 +80,7 @@ const REGISTROS: [string, string[]][] = [
   ["futebol", ARTIGOS_COM_CALCULADORA_FUTEBOL],
   ["boxe", ARTIGOS_COM_CALCULADORA_BOXE],
   ["zumba", ARTIGOS_COM_CALCULADORA_ZUMBA],
+  ["spinning", ARTIGOS_COM_CALCULADORA_SPINNING],
 ];
 
 const onde = new Map<string, string>();

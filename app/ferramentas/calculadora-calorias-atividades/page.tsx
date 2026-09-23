@@ -28,8 +28,8 @@ import {
  *
  * Uma página, várias atividades — lib/atividades.ts explica por que não
  * são uma página cada (seriam doorway, com a mesma conta e só o MET
- * trocado). Futebol, boxe e zumba saíram em setembro de 2026 para
- * calculadoras próprias, cada uma com uma conta que esta não tem.
+ * trocado). Futebol, boxe, zumba e spinning saíram em setembro de 2026
+ * para calculadoras próprias, cada uma com uma conta que esta não tem.
  *
  * O exemplo da página é a primeira atividade da lista, não um id fixo: as
  * atividades estão saindo uma a uma, e o exemplo acompanha sem reescrita.
@@ -48,12 +48,12 @@ const CAMINHO = "/ferramentas/calculadora-calorias-atividades";
 export const metadata: Metadata = {
   title: "Calculadora de Calorias por Atividade e Esporte",
   description:
-    "Quantas calorias sua aula gasta: spinning, dança, natação, jiu-jitsu, pular corda, escada e bicicleta, pelo seu peso, com as pausas da aula como opção.",
+    "Quantas calorias sua atividade gasta: dança, natação, jiu-jitsu, pular corda, subir escada e bicicleta, pelo seu peso, com as pausas da aula como opção.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
     title: "Calculadora de Calorias por Atividade | Montinho Personal Trainer",
     description:
-      "Spinning, natação, dança e mais: quantas calorias a sua aula gasta, com o seu peso e sem o exagero das tabelas de revista.",
+      "Natação, dança, jiu-jitsu e mais: quantas calorias a sua atividade gasta, com o seu peso e sem o exagero das tabelas de revista.",
     url: `${SITE_URL}${CAMINHO}`,
     type: "website",
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
 const appSchema = aplicativoSchema({
   nome: "Calculadora de Calorias por Atividade",
   descricao:
-    "Estima o gasto calórico de sete atividades — spinning, dança, natação, jiu-jitsu, pular corda, subir escada e bicicleta — a partir do peso corporal, do tempo e do ritmo, com desconto opcional das pausas da aula.",
+    "Estima o gasto calórico de seis atividades — dança, natação, jiu-jitsu, pular corda, subir escada e bicicleta — a partir do peso corporal, do tempo e do ritmo, com desconto opcional das pausas da aula.",
   caminho: CAMINHO,
   categoria: "HealthApplication",
 });
@@ -87,9 +87,9 @@ const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDig
 
 const faq: ItemFAQ[] = [
   {
-    question: "E o futebol, o boxe e a zumba?",
+    question: "E o futebol, o boxe, a zumba e o spinning?",
     answer:
-      "Têm calculadoras próprias, porque cada um tem uma conta que as outras atividades não têm. A do futebol separa o tempo de bola rolando do tempo na lateral quando os times revezam. A do boxe conta a aula ou os rounds, mede o ritmo pelos socos de dez segundos e compara com o número do relógio. A da zumba divide a aula entre músicas com e sem salto e mostra quantos quilos as aulas da semana rendem.",
+      "Têm calculadoras próprias, porque cada um tem uma conta que as outras atividades não têm. A do futebol separa o tempo de bola rolando do tempo na lateral quando os times revezam. A do boxe conta a aula ou os rounds, mede o ritmo pelos socos de dez segundos e compara com o número do relógio. A da zumba divide a aula entre músicas com e sem salto e mostra quantos quilos as aulas da semana rendem. A do spinning usa a potência média em watts que a bike mostra.",
   },
   {
     question: "Qual atividade queima mais calorias?",
@@ -140,7 +140,7 @@ export default function CalculadoraAtividadesPage() {
           </h1>
           <Compartilhar contexto="tool" titulo="Calculadora de Calorias por Atividade" caminho={CAMINHO} local="tool_top" ferramenta="atividades" aparencia="discreto" className="mb-5" />
           <p className="text-gray-300 text-lg leading-relaxed">
-            Spinning, dança, natação, jiu-jitsu, corda, escada e bicicleta: quanto a sua sessão
+            Dança, natação, jiu-jitsu, corda, escada e bicicleta: quanto a sua sessão
             gasta, com o seu peso — e, se você passou parte da aula parado, sem contar esse tempo como esforço.
           </p>
         </div>
@@ -258,11 +258,12 @@ export default function CalculadoraAtividadesPage() {
             <p className="text-gray-300 leading-relaxed">
               Para as outras, use o seletor da calculadora — o{" "}
               <Link href={`/blog/${EX.slug}`} className={ln}>artigo de cada uma</Link> traz o que a conta não
-              responde: o que ela faz bem e onde ela falha. Futebol, boxe e zumba têm calculadoras próprias:{" "}
+              responde: o que ela faz bem e onde ela falha. Futebol, boxe, zumba e spinning têm calculadoras próprias:{" "}
               <Link href="/ferramentas/calculadora-calorias-futebol" className={ln}>a do futebol</Link>, com o
               revezamento de times, <Link href="/ferramentas/calculadora-calorias-boxe" className={ln}>a do boxe</Link>,
-              com os rounds e o ritmo de socos, e <Link href="/ferramentas/calculadora-calorias-zumba" className={ln}>a da zumba</Link>,
-              com as músicas com e sem salto.
+              com os rounds e o ritmo de socos, <Link href="/ferramentas/calculadora-calorias-zumba" className={ln}>a da zumba</Link>,
+              com as músicas com e sem salto, e <Link href="/ferramentas/calculadora-calorias-spinning" className={ln}>a do spinning</Link>,
+              com os watts da bike.
             </p>
           </div>
 

@@ -11,6 +11,7 @@ import {
   roundsValidos, tabelaPorPeso, tabelaPorRitmo,
 } from "../lib/boxe";
 import { ARTIGOS_COM_CALCULADORA_ATIVIDADES, ATIVIDADES } from "../lib/atividades";
+import { MET_AULA as MET_AULA_SPINNING } from "../lib/spinning";
 import { CANONICA } from "../lib/ferramentas/canonica";
 import { NOME, ROTA } from "../lib/ferramentas/pos-resultado";
 import { blogPosts } from "../lib/blog";
@@ -89,10 +90,8 @@ ok("o artigo cita o Compêndio de 2024", /2024 Adult Compendium/.test(art.conten
  * que mais gastam.
  */
 ok("o artigo não chama o boxe de um dos que mais queimam", !/(um dos treinos|uma das atividades) que mais queimam/i.test(art.content + art.excerpt));
-{
-  const spin = ATIVIDADES.find((a) => a.id === "spinning")!;
-  ok("e a comparação que ele faz se sustenta: aula de saco abaixo do spinning moderado", aula("saco").met < spin.faixas[0].met);
-}
+/* O spinning saiu da coletiva para lib/spinning.ts; a comparação usa a aula de lá. */
+ok("e a comparação que ele faz se sustenta: aula de saco abaixo da aula de spinning", aula("saco").met < MET_AULA_SPINNING);
 ok("a tabela por ritmo cresce", tabelaPorRitmo(70).every((l, i, a) => i === 0 || l.kcal > a[i - 1].kcal));
 
 bloco("7. UMA FERRAMENTA POR ARTIGO");

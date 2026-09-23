@@ -103801,7 +103801,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Aula de spinning queima muita caloria, protege os joelhos e vicia muita gente — mas emagrecer depende do conjunto. Aqui trago os números reais de gasto calórico, os erros que travam o resultado e como montar uma semana que funciona.",
     category: "Emagrecimento",
     date: "2026-08-01",
-    updatedAt: "2026-08-24",
+    updatedAt: "2026-09-23",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["spinning", "bike indoor", "emagrecimento", "cardio", "queima de calorias"],
@@ -103810,7 +103810,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
         question:
           "Spinning emagrece mesmo?",
         answer:
-          "O spinning queima bastante caloria (400 a 700 kcal por aula em intensidade honesta) e ajuda muito no emagrecimento — desde que exista déficit calórico. Sem ajuste na alimentação, a aula melhora seu condicionamento, mas o peso tende a ficar onde está.",
+          "O spinning queima bastante caloria (cerca de 450 a 600 kcal numa aula de 45 minutos, conforme o peso) e ajuda muito no emagrecimento — desde que exista déficit calórico. Sem ajuste na alimentação, a aula melhora seu condicionamento, mas o peso tende a ficar onde está.",
       },
       {
         question:
@@ -103849,15 +103849,17 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   <img src="/blog-images/spinning-emagrece.webp" alt="Spinning emagrece: gasto calórico da aula de bike indoor e como usar para perder gordura" title="Spinning emagrece? — Montinho Personal Trainer Alphaville" width="1672" height="941" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Quantas calorias uma aula de spinning queima?</h2>
-<p>O gasto varia com o seu peso, o seu condicionamento e — principalmente — a carga que você coloca na bike. É aí que mora o segredo (e o autoengano, como veremos):</p>
+<p>O gasto varia com o seu peso e — principalmente — com a carga que você coloca na bike. E a carga tem número: a potência média em watts, que a maioria das bikes de spinning mostra no visor. Uma aula de 45 minutos, pelo Compêndio de Atividades Físicas:</p>
 <table>
-<thead><tr><th>Intensidade da aula (45–50 min)</th><th>Pessoa de 70 kg</th><th>Pessoa de 90 kg</th></tr></thead>
+<thead><tr><th>Potência média da aula (45 min)</th><th>Pessoa de 70 kg</th><th>Pessoa de 90 kg</th></tr></thead>
 <tbody>
-<tr><td>Leve (carga baixa, giro confortável)</td><td>300–400 kcal</td><td>400–500 kcal</td></tr>
-<tr><td>Moderada (subidas e tiros intercalados)</td><td>400–550 kcal</td><td>500–700 kcal</td></tr>
-<tr><td>Forte (carga alta, sprints, pouca pausa)</td><td>550–700 kcal</td><td>700–900 kcal</td></tr>
+<tr><td>Leve, 51 a 89 W (carga baixa, giro confortável)</td><td>cerca de 265 kcal</td><td>cerca de 340 kcal</td></tr>
+<tr><td>Moderada, 101 a 160 W (subidas e tiros intercalados)</td><td>cerca de 485 kcal</td><td>cerca de 625 kcal</td></tr>
+<tr><td>Forte, 161 a 200 W (carga alta, pouca pausa)</td><td>cerca de 605 kcal</td><td>cerca de 780 kcal</td></tr>
+<tr><td>Aula de spinning, sem saber os watts</td><td>cerca de 470 kcal</td><td>cerca de 600 kcal</td></tr>
 </tbody>
 </table>
+<p>Manter 161 a 200 W de média por 45 minutos é exigente: é o ritmo de quem pedala bem, não o da maioria das aulas. Se a sua bike mostra watts, use a média do fim da aula, não o pico de um tiro.</p>
 <p>Ou seja: uma aula bem aproveitada gasta o equivalente a uma refeição média. É muito — e ao mesmo tempo é facilmente anulável por um lanche "merecido" pós-treino. Painéis de bike e relógios costumam superestimar; trate os números como referência de progresso, não como verdade absoluta.</p>
 
 <h2>Os pontos fortes do spinning para quem quer emagrecer</h2>
@@ -103881,7 +103883,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Vou ser direto porque vejo isso toda semana: tem muita gente girando a perna solta com carga quase zero, acompanhando a música, suando pelo calor da sala — e queimando metade do que imagina. Suor não é medida de gasto calórico; é o corpo controlando a temperatura (falo mais sobre esse mito em <a href="/blog/suar-emagrece">suar emagrece?</a>). Se a subida não pesa e o sprint não arde, a aula está sendo mais dança que treino. Regra prática: nas "subidas", você deveria sentir resistência real ao pedalar em pé; nos giros de recuperação, conseguir conversar com dificuldade moderada.</p>
 
 <h2>Spinning emagrece quanto por mês?</h2>
-<p>Fazendo a conta realista: 3 aulas moderadas-fortes por semana ≈ 1.400 a 1.800 kcal extras semanais. Mantida a alimentação, isso equivale a algo entre 0,7 e 1 kg de gordura por mês vindos do treino — e o dobro ou mais quando combinado com ajuste alimentar. Resultados como "10 kg em dois meses só de spinning" geralmente envolvem mudança de dieta junto (ótimo!) ou perda de água e músculo (nada ótimo). Desconfie sempre do marketing; confie na matemática e na constância.</p>
+<p>Fazendo a conta realista: 3 aulas de 45 minutos por semana acrescentam algo como 1.200 a 1.600 kcal à semana, conforme o seu peso — já descontado o que você gastaria parado. Mantida a alimentação, isso equivale a algo entre 0,7 e 0,9 kg de gordura por mês vindos do treino — e o dobro ou mais quando combinado com ajuste alimentar. Resultados como "10 kg em dois meses só de spinning" geralmente envolvem mudança de dieta junto (ótimo!) ou perda de água e músculo (nada ótimo). Desconfie sempre do marketing; confie na matemática e na constância.</p>
 
 <h2>Como montar a semana com spinning</h2>
 <ul>

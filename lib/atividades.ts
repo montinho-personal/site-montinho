@@ -20,14 +20,15 @@
  * e a ferramenta responde a conta que o texto não responde: com o peso de
  * quem pergunta.
  *
- * CAMINHADA, ELÍPTICO, FUTEBOL, BOXE E ZUMBA NÃO ENTRAM
+ * CAMINHADA, ELÍPTICO, FUTEBOL, BOXE, ZUMBA E SPINNING NÃO ENTRAM
  *
- * Futebol, boxe e zumba entraram aqui e saíram em setembro de 2026. Não
- * porque o argumento acima deixou de valer, mas porque cada um passou a
- * ter uma conta que as outras não têm: o futebol, o revezamento de times;
- * o boxe, o ritmo de socos que o Compêndio mediu e os rounds; a zumba, a
- * aula dividida entre músicas com e sem salto. Ver lib/futebol.ts,
- * lib/boxe.ts e lib/zumba.ts.
+ * Futebol, boxe, zumba e spinning entraram aqui e saíram em setembro de
+ * 2026. Não porque o argumento acima deixou de valer, mas porque cada um
+ * passou a ter uma conta que as outras não têm: o futebol, o revezamento
+ * de times; o boxe, o ritmo de socos que o Compêndio mediu e os rounds; a
+ * zumba, a aula dividida entre músicas com e sem salto; o spinning, a
+ * potência em watts que a bike mostra. Ver lib/futebol.ts, lib/boxe.ts,
+ * lib/zumba.ts e lib/spinning.ts.
  *
  * A saída do boxe também corrigiu um erro: esta tabela dava 7,8 METs ao
  * saco e 9,3 ao sparring. No Compêndio de 2024, 7,8 é o sparring e o saco
@@ -138,19 +139,6 @@ export interface Atividade {
  * mudar aqui exige conferir a fonte e mudar lá.
  */
 export const ATIVIDADES: Atividade[] = [
-  {
-    id: "spinning",
-    nome: "Spinning e bike indoor",
-    artigoFrase: "uma aula de spinning",
-    sessaoTipica: 45,
-    faixaPrincipal: 0,
-    fracaoAtiva: 0.9,
-    slug: "spinning-emagrece",
-    faixas: [
-      { id: "moderado", nome: "Moderado", met: 6.8, comoReconhecer: "Pedal constante, carga média, dá para falar frases curtas.", origem: "bicicleta estacionária, esforço moderado" },
-      { id: "vigoroso", nome: "Vigoroso", met: 8.8, comoReconhecer: "Aula com subidas e tiros, carga alta, só palavras soltas.", origem: "bicicleta estacionária, esforço vigoroso" },
-    ],
-  },
   {
     id: "danca",
     nome: "Dança (salão, forró, funk)",
@@ -379,7 +367,6 @@ export const NOTA_SEM_PERDA_LOCALIZADA =
  * uma ferramenta por artigo.
  */
 export const ARTIGOS_COM_CALCULADORA_ATIVIDADES: string[] = [
-  "spinning-emagrece",
   "danca-emagrece",
   "natacao-emagrece",
   "jiu-jitsu-emagrece",

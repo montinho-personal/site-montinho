@@ -57,6 +57,7 @@ const CATEGORIAS: Record<Ferramenta, string[]> = {
   futebol: ["padrao"],
   boxe: ["padrao"],
   zumba: ["padrao"],
+  spinning: ["padrao"],
   volume: ["padrao", "baixo", "alto", "adequado"],
   diagnostico: ["padrao"],
   rotina: ["padrao"],
