@@ -26,7 +26,7 @@ import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 export const metadata: Metadata = {
   title: "Calculadora de Peptídeos: Converta a Dose em mL e UI",
   description:
-    "Converta a dose prescrita em mg para mL e para as marquinhas da seringa de insulina U-100. Calcule a concentração do frasco em mg/mL e veja quanto vale cada risquinho. Gratuita, educacional, sem cadastro.",
+    "Converta a dose prescrita em mg para mL e para as marcas da seringa de insulina U-100, com a concentração do frasco. Educacional, sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` },
   robots: CONVERSOR_NO_AR ? undefined : { index: false, follow: false },
   openGraph: {

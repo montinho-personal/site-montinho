@@ -33,9 +33,9 @@ import Compartilhar from "@/components/share/Compartilhar";
  * Google — e para quem chega sem vontade de preencher formulário.
  */
 export const metadata: Metadata = {
-  title: "Calculadora de Déficit Calórico",
+  title: "Calculadora de Déficit Calórico para Emagrecer",
   description:
-    "Calcule seu gasto calórico diário (TDEE) e veja quantas calorias comer para emagrecer. Estime TMB, gasto diário e faixas de déficit de 10%, 15–20% e 25%. Gratuita, sem cadastro.",
+    "Calcule seu gasto calórico diário e veja quantas calorias comer para emagrecer, com faixas de déficit de 10%, 15–20% e 25%. Gratuita, sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/calculadora-deficit-calorico` },
   openGraph: {
     title: "Calculadora de Déficit Calórico | Montinho",

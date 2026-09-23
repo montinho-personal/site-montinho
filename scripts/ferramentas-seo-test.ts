@@ -43,17 +43,12 @@ const paginas = [
  * for reescrita, com o estado anterior registrado.
  *
  * A lista só encolhe. Página nova entra já dentro da regra.
+ *
+ * Em 23/09/2026 as nove ferramentas saíram de uma vez. Cada página mudou uma
+ * única vez, na mesma data, então o Search Console separa o efeito de cada
+ * uma. O texto anterior de cada uma está no PR que as reescreveu.
  */
 const DESCRIPTION_LONGA_PENDENTE = new Set([
-  "/ferramentas/calculadora-1rm",
-  "/ferramentas/calculadora-deficit-calorico",
-  "/ferramentas/calculadora-macros",
-  "/ferramentas/calculadora-tmb-tdee",
-  "/ferramentas/calculadora-volume-treino",
-  "/ferramentas/conversor-mg-ml-u100",
-  "/ferramentas/monte-seu-cardapio",
-  "/ferramentas/teste-mobilidade",
-  "/ferramentas/zonas-de-frequencia-cardiaca",
   "/diagnostico",
   "/treino-para-minha-rotina",
   "/pergunte-ao-montinho",

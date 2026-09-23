@@ -21,7 +21,7 @@ import Compartilhar from "@/components/share/Compartilhar";
 export const metadata: Metadata = {
   title: "Calculadora de Volume de Treino: Séries por Músculo",
   description:
-    "Calcule quantas séries semanais você faz para peito, costas, pernas, braços e ombros. Monte seu treino e veja o volume, a frequência e a distribuição de cada grupo muscular.",
+    "Calcule quantas séries semanais você faz por músculo — peito, costas, pernas, braços e ombros — e veja o volume, a frequência e a distribuição do treino.",
   alternates: { canonical: `${SITE_URL}/ferramentas/calculadora-volume-treino` },
   openGraph: {
     title: "Calculadora de Volume de Treino | Montinho",

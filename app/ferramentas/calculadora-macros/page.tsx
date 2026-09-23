@@ -30,7 +30,7 @@ import Compartilhar from "@/components/share/Compartilhar";
 export const metadata: Metadata = {
   title: "Calculadora de Macros: Proteína, Carbo e Gordura",
   description:
-    "Calcule proteínas, carboidratos e gorduras a partir do seu peso e da sua meta calórica. Ajuste os macros e veja a conta mudar em segundos. Gratuita, sem cadastro.",
+    "Calcule seus macronutrientes — proteína, carboidrato e gordura — pelo seu peso e pela sua meta de calorias, e ajuste a divisão em segundos. Sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/calculadora-macros` },
   openGraph: {
     title: "Calculadora de Macros | Montinho",
