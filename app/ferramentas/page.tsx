@@ -70,9 +70,10 @@ const itemListSchema = {
     { "@type": "ListItem", position: 30, name: "Calculadora de Calorias Subindo Escada", url: `${SITE_URL}/ferramentas/calculadora-calorias-escada` },
     { "@type": "ListItem", position: 31, name: "Calculadora de Calorias no CrossFit", url: `${SITE_URL}/ferramentas/calculadora-calorias-crossfit` },
     { "@type": "ListItem", position: 32, name: "Calculadora de Calorias no Hyrox", url: `${SITE_URL}/ferramentas/calculadora-calorias-hyrox` },
+    { "@type": "ListItem", position: 33, name: "Calculadora de Creatina", url: `${SITE_URL}/ferramentas/calculadora-creatina` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 33, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 34, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
@@ -356,6 +357,15 @@ const FERRAMENTAS = [
     texto:
       "Informe o tempo final e o pace da corrida: a calculadora separa os 8 km das oito estações, mostra o gasto de cada parte e quanto a corrida pesa na prova.",
     quando: "Use depois da prova ou do simulado. O peso não sai do navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-creatina",
+    nome: "Calculadora de Creatina",
+    pergunta: "Quanto de creatina eu tomo por dia?",
+    tempo: "10 segundos · sem cadastro",
+    texto:
+      "Informe seu peso e veja a referência do consenso científico, 3 g ou 5 g, com ou sem saturação — e quanto tempo o seu pote dura e quanto custa por dia.",
+    quando: "Use quando comprar ou for comprar creatina. O peso não sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{

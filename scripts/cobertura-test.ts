@@ -48,6 +48,7 @@ import { ARTIGOS_COM_CALCULADORA_CORDA } from "../lib/corda";
 import { ARTIGOS_COM_CALCULADORA_ESCADA } from "../lib/escada";
 import { ARTIGOS_COM_CALCULADORA_CROSSFIT } from "../lib/crossfit";
 import { ARTIGOS_COM_CALCULADORA_HYROX } from "../lib/hyrox";
+import { ARTIGOS_COM_CALCULADORA_CREATINA, ARTIGOS_COM_LINK_CREATINA } from "../lib/creatina";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -95,6 +96,8 @@ const REGISTROS: [string, string[]][] = [
   ["escada", ARTIGOS_COM_CALCULADORA_ESCADA],
   ["crossfit", ARTIGOS_COM_CALCULADORA_CROSSFIT],
   ["hyrox", ARTIGOS_COM_CALCULADORA_HYROX],
+  ["creatina", ARTIGOS_COM_CALCULADORA_CREATINA],
+  ["creatina (link)", ARTIGOS_COM_LINK_CREATINA],
 ];
 
 const onde = new Map<string, string>();

@@ -81,6 +81,9 @@ import { ARTIGOS_COM_CALCULADORA_CROSSFIT } from "@/lib/crossfit";
 import CalculadoraCrossfit from "@/components/crossfit/CalculadoraCrossfit";
 import { ARTIGOS_COM_CALCULADORA_HYROX } from "@/lib/hyrox";
 import CalculadoraHyrox from "@/components/hyrox/CalculadoraHyrox";
+import { ARTIGOS_COM_CALCULADORA_CREATINA, ARTIGOS_COM_LINK_CREATINA } from "@/lib/creatina";
+import CalculadoraCreatina from "@/components/creatina/CalculadoraCreatina";
+import LinkFerramentaCreatina from "@/components/creatina/LinkFerramentaCreatina";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -258,7 +261,9 @@ export default async function BlogPost({ params }: Props) {
                                                     ? "crossfit"
                                                     : ARTIGOS_COM_CALCULADORA_HYROX.includes(post.slug)
                                                       ? "hyrox"
-                                                      : null;
+                                                      : ARTIGOS_COM_CALCULADORA_CREATINA.includes(post.slug)
+                                                        ? "creatina"
+                                                        : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -494,6 +499,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraCrossfit placement={post.slug} />
                 ) : qualCalc === "hyrox" ? (
                   <CalculadoraHyrox placement={post.slug} />
+                ) : qualCalc === "creatina" ? (
+                  <CalculadoraCreatina placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}
@@ -572,6 +579,7 @@ export default async function BlogPost({ params }: Props) {
               formulário — justo na página com 7.319 impressões do cluster. */}
           {ARTIGOS_COM_LINK_POLICHINELO.includes(post.slug) && <LinkFerramentaPolichinelo slug={post.slug} posicao="fim" />}
           {ARTIGOS_COM_LINK_CAMINHADA.includes(post.slug) && <LinkFerramentaCaminhada slug={post.slug} />}
+          {ARTIGOS_COM_LINK_CREATINA.includes(post.slug) && <LinkFerramentaCreatina slug={post.slug} />}
           {ARTIGOS_COM_LINK_ATIVIDADES.includes(post.slug) && <LinkFerramentaAtividades slug={post.slug} />}
           {/* Conversor de mg/mL: convite, nunca embed. Uma seringa desenhada
               dentro de um artigo sobre um medicamento daria a impressão de que
