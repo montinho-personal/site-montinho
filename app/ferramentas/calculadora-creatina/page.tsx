@@ -9,13 +9,17 @@ import {
   AVISO_SEGURANCA,
   DIAS_ATE_SATURAR_SEM,
   FONTES_CREATINA,
+  G_POR_KG_DOSE_ALTA,
   G_POR_KG_MANUTENCAO,
+  G_POR_KG_MASSA_MAGRA,
   G_POR_KG_SATURACAO,
   MANUTENCAO_MAX,
   MANUTENCAO_MIN,
+  PERFIS_PRATICA,
   PESOS_TABELA,
   POTES_TABELA,
   diasPorDose,
+  pratica,
   referencia,
   saturacao,
 } from "@/lib/creatina";
@@ -66,6 +70,7 @@ const breadcrumbSchema = {
 
 const g = (n: number) => n.toLocaleString("pt-BR", { maximumFractionDigits: 1 });
 const g2 = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 2 });
+const g3 = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 3 });
 const R80 = referencia(80);
 const R100 = referencia(100);
 const S70 = saturacao(70);
@@ -77,6 +82,7 @@ const faq: ItemFAQ[] = [
   { question: "Creatina é 3 g ou 5 g?", answer: `As duas funcionam. ${MANUTENCAO_MIN} g já enchem os estoques em cerca de 4 semanas; ${MANUTENCAO_MAX} g, a dose mais usada nos estudos, chegam lá um pouco antes. A diferença é de semanas, não de resultado final.` },
   { question: "Uma pessoa de 80 kg deve tomar quanto de creatina?", answer: `A referência é de ${g(R80.diaria)} g por dia (${g2(G_POR_KG_MANUTENCAO)} × 80 = ${g2(R80.calculada)} g, arredondado para a menor dose estudada). ${MANUTENCAO_MAX} g também servem. Com saturação, seriam cerca de ${g(S80.diaria)} g por dia por 5 a 7 dias.` },
   { question: "Uma pessoa de 100 kg deve tomar quanto de creatina?", answer: `A referência é de ${g(R100.diaria)} g por dia (${g2(G_POR_KG_MANUTENCAO)} × 100). Até ${MANUTENCAO_MAX} g continua dentro da faixa estudada.` },
+  { question: "Mulher precisa de menos creatina que homem?", answer: `Pelo consenso, a faixa é a mesma: ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g. Quem ajusta pela massa magra (${g3(G_POR_KG_MASSA_MAGRA)} g por kg de massa magra) chega a menos, porque a mulher costuma ter menos músculo para o mesmo peso — uma mulher de 60 kg com 28% de gordura fica perto de ${g(pratica(60, 28).porMassaMagra)} g. Não é o sexo que muda a dose, é quanto do peso é músculo.` },
   { question: "Precisa tomar creatina todos os dias?", answer: "Sim. A creatina funciona por acúmulo no músculo, não por efeito do dia — o que mantém os estoques cheios é a constância." },
   { question: "Precisa tomar creatina no dia que não treina?", answer: "Sim, na mesma dose. O estoque do músculo não depende do treino daquele dia, e parar nos dias de descanso faz ele baixar." },
   { question: "Creatina antes ou depois do treino?", answer: "Tanto faz na prática. Alguns estudos sugerem uma pequena vantagem perto do treino, mas o que decide é tomar todo dia. Escolha o horário que você não esquece." },
@@ -184,6 +190,44 @@ export default function CalculadoraCreatinaPage() {
             <p className="text-gray-300 leading-relaxed">
               Se você é grande ou prefere a dose dos estudos, {MANUTENCAO_MAX} g. Se quer o pote rendendo mais, {MANUTENCAO_MIN} g. Não existe
               motivo para passar disso no dia a dia.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto de creatina o pessoal que treina toma?</h2>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              Na academia, a creatina costuma ser ajustada pela <strong className="text-white">massa magra</strong>, porque é no músculo que ela
+              fica guardada. O protocolo com fonte para isso vem de um estudo com homens treinados (Gann et al., 2015):{" "}
+              <strong className="text-white">{g3(G_POR_KG_MASSA_MAGRA)} g por kg de massa magra</strong>. É o que faz homem e mulher — e quem tem
+              menos gordura — chegarem a doses diferentes.
+            </p>
+            <div className="overflow-x-auto mb-3">
+              <table className="w-full text-sm border-collapse">
+                <caption className="sr-only">Dose de creatina por massa magra e dose alta, para perfis comuns de quem treina</caption>
+                <thead><tr className="border-b border-white/20"><th scope="col" className={th}>Perfil</th><th scope="col" className={th}>Pela massa magra</th><th scope="col" className="text-left text-gray-400 font-medium py-2.5">Dose alta ({g2(G_POR_KG_DOSE_ALTA)} g/kg)</th></tr></thead>
+                <tbody>
+                  {PERFIS_PRATICA.map((pf) => {
+                    const r = pratica(pf.peso, pf.gordura);
+                    return (
+                      <tr key={pf.id} className="border-b border-white/10">
+                        <td className={td}>{pf.nome}</td>
+                        <td className="text-white py-2.5 pr-4 font-medium tabular-nums">{g(r.porMassaMagra)} g/dia</td>
+                        <td className="text-gray-300 py-2.5 tabular-nums">{g(r.doseAlta)} g/dia</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              A <strong className="text-white">dose alta</strong>, de {g2(G_POR_KG_DOSE_ALTA)} g por kg de peso, aparece em estudos de hipertrofia
+              (Candow, 2015; Cribb, 2007) e é a que parte das academias usa. Ela é segura para adultos saudáveis, mas nenhum estudo mostrou que
+              renda mais que 5 g no uso contínuo: o estoque do músculo tem um teto, e o que passa dele sai na urina.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              Entre os coaches mais conhecidos do Brasil, o <strong className="text-white">Leandro Twin</strong> recomenda, no próprio site, 3 a 5 g por
+              dia, sem passar de 5 g no uso contínuo — o mesmo consenso científico. Na calculadora acima, abra &ldquo;Como quem treina musculação
+              costuma usar&rdquo; e informe o seu percentual de gordura para ver as três contas lado a lado.
             </p>
           </div>
 
