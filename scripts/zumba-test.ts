@@ -77,6 +77,8 @@ ok("os eventos nunca levam o peso", !/trackEvent\([^)]*peso/.test(comp));
 ok("a versão do Compêndio é declarada na página", /NOTA_VERSAO/.test(pag));
 ok("os quilos vêm com o aviso de que são só das aulas", /NOTA_SO_AULAS/.test(comp));
 ok("kcal com ponto de milhar", /toLocaleString\("pt-BR"\)/.test(comp) && !/\{arredondaKcal\(/.test(comp));
+/* O pedido do responsável: a frequência é pergunta, vem antes do resultado. */
+ok("a pergunta da frequência vem antes da área de resultado", comp.indexOf('id={idc("sem")}') > 0 && comp.indexOf('id={idc("sem")}') < comp.indexOf('aria-live="polite"'));
 ok("aria-live", /aria-live="polite"/.test(comp));
 ok("um H1", (pag.match(/<h1[\s>]/g) ?? []).length === 1);
 const titulo = pag.match(/title: "([^"]+)"/)![1];

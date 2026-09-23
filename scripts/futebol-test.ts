@@ -103,6 +103,8 @@ ok("hub e sitemap", /calculadora-calorias-futebol/.test(readFileSync("app/ferram
 ok("sem chamada de rede", !/fetch\(|sendBeacon|localStorage/.test(comp));
 ok("os eventos nunca levam o peso", !/trackEvent\([^)]*peso/.test(comp));
 ok("goleiro não recebe número de linha", /!goleiro \? calcula/.test(comp));
+/* O pedido do responsável: a frequência é pergunta, vem antes do resultado. */
+ok("a pergunta da frequência vem antes da área de resultado", comp.indexOf('id={idc("sem")}') > 0 && comp.indexOf('id={idc("sem")}') < comp.indexOf('aria-live="polite"'));
 ok("aria-live", /aria-live="polite"/.test(comp));
 ok("um H1", (pag.match(/<h1[\s>]/g) ?? []).length === 1);
 /* A auditoria no navegador: concordância, ponto de milhar e texto que segue a escolha. */
