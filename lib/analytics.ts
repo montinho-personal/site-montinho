@@ -344,6 +344,13 @@ export type AnalyticsEvent =
   | "spinning_frequency"
   | "spinning_methodology_open"
   | "spinning_tool_click"
+  /** Calculadora de Calorias na Dança. `style` e `per_week`; nunca o peso. */
+  | "dance_calculator_view"
+  | "dance_calculator_use"
+  | "dance_preset"
+  | "dance_frequency"
+  | "dance_methodology_open"
+  | "dance_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"

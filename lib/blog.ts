@@ -111311,7 +111311,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Dança emagrece, sim — mas não pelos motivos milagrosos que vendem por aí. Mostro o gasto calórico honesto de cada ritmo, explico por que a diversão é o maior trunfo da dança para quem quer perder peso e como combiná-la com treino de força.",
     category: "Emagrecimento",
     date: "2026-08-12",
-    updatedAt: "2026-08-21",
+    updatedAt: "2026-09-23",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["dança", "emagrecimento", "zumba", "cardio", "gasto calórico"],
@@ -111320,13 +111320,13 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
         question:
           "Dança emagrece mesmo?",
         answer:
-          "Sim, desde que exista déficit calórico. Uma aula intensa de zumba ou funk queima 350 a 550 calorias por hora, gasto comparável ao de muitos treinos tradicionais. Sem ajuste na alimentação, porém, nenhuma dança compensa.",
+          "Sim, desde que exista déficit calórico. Uma aula intensa de zumba ou funk queima cerca de 450 a 575 calorias por hora para quem pesa 70 kg, gasto comparável ao de muitos treinos tradicionais. Sem ajuste na alimentação, porém, nenhuma dança compensa.",
       },
       {
         question:
           "Qual dança emagrece mais rápido?",
         answer:
-          "Em geral, os ritmos mais intensos e contínuos: zumba, funk, samba no pé e hip hop, na faixa de 350 a 550 calorias por hora. Mas o melhor ritmo é o que você pratica com constância — adesão vale mais que intensidade.",
+          "Em geral, os ritmos mais intensos e contínuos: zumba, funk, samba no pé e hip hop, na faixa de 450 a 575 calorias por hora para quem pesa 70 kg. Mas o melhor ritmo é o que você pratica com constância — adesão vale mais que intensidade.",
       },
       {
         question:
@@ -111362,20 +111362,21 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Nenhuma atividade emagrece por mágica. O peso cai quando o corpo gasta mais energia do que recebe — o famoso <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a>. A dança entra nessa equação como uma forma de aumentar o gasto: uma aula movimentada queima algumas centenas de calorias. Se a alimentação está no lugar, isso acelera o processo. Se você compensa a aula com um lanche "merecido" de 600 calorias, o efeito evapora.</p>
 <p>Dito isso, a dança tem características que a tornam uma das melhores portas de entrada para o emagrecimento — e vou defender isso com números e com a minha experiência de quem já esteve 40 kg acima do peso.</p>
 <h2>Quantas calorias cada ritmo queima?</h2>
-<p>Os valores abaixo são estimativas honestas para uma pessoa de cerca de 70 kg, em uma hora de prática contínua. Quem pesa mais gasta mais; quem dança "marcando o passo" gasta menos. Trate como faixas, não como promessas:</p>
+<p>Os valores abaixo são para uma pessoa de 70 kg, em uma hora dançando de verdade — numa noite de baile, conte o tempo na pista, não o tempo no salão. Vêm do Compêndio de Atividades Físicas. Forró, funk e samba no pé não têm medida própria e entram na mais próxima, marcada com asterisco:</p>
 <table>
-<thead><tr><th>Ritmo / modalidade</th><th>Calorias por hora (~70 kg)</th><th>Intensidade típica</th></tr></thead>
+<thead><tr><th>Ritmo / modalidade</th><th>Calorias por hora (70 kg)</th><th>Intensidade típica</th></tr></thead>
 <tbody>
-<tr><td>Zumba / fitdance</td><td>350 a 550</td><td>Moderada a alta, com picos</td></tr>
-<tr><td>Funk / ritmos brasileiros de academia</td><td>350 a 500</td><td>Moderada a alta</td></tr>
-<tr><td>Forró</td><td>250 a 400</td><td>Moderada, contínua</td></tr>
-<tr><td>Samba (no pé)</td><td>350 a 500</td><td>Alta nos picos</td></tr>
-<tr><td>Ballet fitness</td><td>300 a 450</td><td>Moderada, com força local</td></tr>
-<tr><td>Danças de salão (bolero, sertanejo)</td><td>200 a 350</td><td>Leve a moderada</td></tr>
-<tr><td>Hip hop / street dance</td><td>350 a 500</td><td>Moderada a alta</td></tr>
+<tr><td>Funk, hip hop, fitdance*</td><td>cerca de 575</td><td>Alta, contínua</td></tr>
+<tr><td>Samba no pé*</td><td>cerca de 575</td><td>Alta nos picos</td></tr>
+<tr><td>Zumba</td><td>cerca de 370 a 535</td><td>Depende de quantas músicas têm salto</td></tr>
+<tr><td>Ballet fitness</td><td>cerca de 465</td><td>Moderada, com força local</td></tr>
+<tr><td>Forró e sertanejo*</td><td>cerca de 405</td><td>Moderada, contínua</td></tr>
+<tr><td>Ballet ou jazz, aula de técnica</td><td>cerca de 370</td><td>Moderada, com pausas</td></tr>
+<tr><td>Salão lento (valsa, bolero, tango, samba de gafieira)</td><td>cerca de 220</td><td>Leve</td></tr>
 </tbody>
 </table>
-<p>Para dar contexto: uma caminhada rápida de uma hora queima em torno de 250 a 300 calorias, e uma corrida leve, 500 a 600. Ou seja, uma aula intensa de zumba ou funk compete de igual para igual com muita "atividade séria" — dançando. Escrevi uma análise específica em <a href="/blog/zumba-emagrece">zumba emagrece?</a>, que aprofunda a modalidade mais popular das academias.</p>
+<p>* O Compêndio não mede esses ritmos. Funk, hip hop e samba no pé entram como dança vigorosa; forró e sertanejo, como dança social. O samba que ele mede é o de salão, junto com valsa e tango — o samba no pé de carnaval é outra dança, bem mais intensa.</p>
+<p>Para dar contexto, também para 70 kg: uma hora de caminhada rápida, a 6 km/h, queima cerca de 355 calorias, e uma corrida leve, a 8 km/h, cerca de 635. Ou seja, uma aula intensa de zumba ou funk compete de igual para igual com muita "atividade séria" — dançando. Escrevi uma análise específica em <a href="/blog/zumba-emagrece">zumba emagrece?</a>, que aprofunda a modalidade mais popular das academias.</p>
 <h2>O maior trunfo da dança não é a caloria — é a adesão</h2>
 <p>Aqui está o ponto que a maioria dos artigos ignora. As pesquisas sobre emagrecimento são unânimes num achado meio óbvio: <strong>o melhor exercício é o que a pessoa continua fazendo</strong>. Aderência prevê resultado melhor do que a modalidade escolhida. E a dança é imbatível nisso para muita gente:</p>
 <ul>

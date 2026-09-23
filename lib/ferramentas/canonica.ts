@@ -56,7 +56,7 @@ export const CANONICA: Record<string, Canonica> = {
   atividades: {
     href: "/ferramentas/calculadora-calorias-atividades",
     ancora: "Calculadora de Calorias por Atividade",
-    motivo: "que faz a conta com o seu peso e o seu ritmo, desconta as pausas da aula se você quiser e compara seis atividades",
+    motivo: "que faz a conta com o seu peso e o seu ritmo, desconta as pausas da aula se você quiser e compara cinco atividades",
   },
   corrida: {
     href: "/ferramentas/calculadora-corrida",
@@ -77,6 +77,11 @@ export const CANONICA: Record<string, Canonica> = {
     href: "/ferramentas/potencial-natural",
     ancora: "Calculadora de Potencial Natural",
     motivo: "com o FFMI normalizado, o que o número 25 realmente significa e o ritmo de ganho esperado no seu nível",
+  },
+  danca: {
+    href: "/ferramentas/calculadora-calorias-danca",
+    ancora: "Calculadora de Calorias na Dança",
+    motivo: "que calcula pelo seu ritmo — forró, salão, funk, ballet, samba no pé — e compara todos no mesmo tempo",
   },
   spinning: {
     href: "/ferramentas/calculadora-calorias-spinning",

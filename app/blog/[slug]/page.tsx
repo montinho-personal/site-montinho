@@ -67,6 +67,8 @@ import { ARTIGOS_COM_CALCULADORA_ZUMBA } from "@/lib/zumba";
 import CalculadoraZumba from "@/components/zumba/CalculadoraZumba";
 import { ARTIGOS_COM_CALCULADORA_SPINNING } from "@/lib/spinning";
 import CalculadoraSpinning from "@/components/spinning/CalculadoraSpinning";
+import { ARTIGOS_COM_CALCULADORA_DANCA } from "@/lib/danca";
+import CalculadoraDanca from "@/components/danca/CalculadoraDanca";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -230,7 +232,9 @@ export default async function BlogPost({ params }: Props) {
                                       ? "zumba"
                                       : ARTIGOS_COM_CALCULADORA_SPINNING.includes(post.slug)
                                         ? "spinning"
-                                        : null;
+                                        : ARTIGOS_COM_CALCULADORA_DANCA.includes(post.slug)
+                                          ? "danca"
+                                          : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -452,6 +456,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraZumba placement={post.slug} />
                 ) : qualCalc === "spinning" ? (
                   <CalculadoraSpinning placement={post.slug} />
+                ) : qualCalc === "danca" ? (
+                  <CalculadoraDanca placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}
