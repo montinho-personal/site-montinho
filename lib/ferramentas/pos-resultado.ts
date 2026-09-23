@@ -74,6 +74,7 @@ export const NOME: Record<Ferramenta, string> = {
   jiujitsu: "Calculadora de Calorias no Jiu-Jitsu",
   corda: "Calculadora de Calorias Pulando Corda",
   escada: "Calculadora de Calorias Subindo Escada",
+  crossfit: "Calculadora de Calorias no CrossFit",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -124,6 +125,7 @@ export const ROTA: Record<Ferramenta, string> = {
   jiujitsu: "/ferramentas/calculadora-calorias-jiu-jitsu",
   corda: "/ferramentas/calculadora-calorias-pular-corda",
   escada: "/ferramentas/calculadora-calorias-escada",
+  crossfit: "/ferramentas/calculadora-calorias-crossfit",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -183,6 +185,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   corda: { ferramenta: "deficit", label: "Calcular meu déficit" },
   /* A escada é gasto do dia a dia: o próximo passo é ver o gasto do dia inteiro. */
   escada: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
+  /* A fome depois do WOD é o que trava; o déficit da semana é a conta que resolve. */
+  crossfit: { ferramenta: "deficit", label: "Calcular meu déficit" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -383,6 +387,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Você está na faixa de referência ou acima dela. A pergunta deixa de ser quanto ganhar e passa a ser o que fazer com o que já está construído — força, execução e manutenção.",
       pergunta: "Quer que eu te ajude a montar a próxima fase?",
       pedido: "Cheguei na faixa de referência de massa magra e queria ajuda para montar a próxima fase do treino.",
+    },
+  },
+  crossfit: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto da aula, não o do seu dia. O CrossFit gasta bem no WOD, mas o WOD é curto — o que move o resultado é a frequência, a alimentação depois do treino e a força que protege ombro e lombar.",
+      pedido: "Faço CrossFit e queria entender o que falta para ele me ajudar a emagrecer.",
     },
   },
   escada: {
