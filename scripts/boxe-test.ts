@@ -83,6 +83,16 @@ ok("o artigo cita o Compêndio de 2024", /2024 Adult Compendium/.test(art.conten
   const kgMes = (k: number) => (k * 52 / 12) / 7700;
   ok(`o mês do artigo cabe na conta (${kgMes(min).toFixed(2)} a ${kgMes(max).toFixed(2)} kg)`, kgMes(min) >= 0.5 && kgMes(max) <= 1.1 && /0,5 a 1 kg de gordura por mês/.test(art.content));
 }
+/*
+ * A auditoria: com o saco em 5,8 METs, o boxe ficou abaixo de corrida,
+ * corda, spinning e futebol. O artigo não pode mais vendê-lo como um dos
+ * que mais gastam.
+ */
+ok("o artigo não chama o boxe de um dos que mais queimam", !/(um dos treinos|uma das atividades) que mais queimam/i.test(art.content + art.excerpt));
+{
+  const spin = ATIVIDADES.find((a) => a.id === "spinning")!;
+  ok("e a comparação que ele faz se sustenta: aula de saco abaixo do spinning moderado", aula("saco").met < spin.faixas[0].met);
+}
 ok("a tabela por ritmo cresce", tabelaPorRitmo(70).every((l, i, a) => i === 0 || l.kcal > a[i - 1].kcal));
 
 bloco("7. UMA FERRAMENTA POR ARTIGO");
@@ -100,6 +110,8 @@ ok("o blog embute pelo registro", /ARTIGOS_COM_CALCULADORA_BOXE\.includes\(post\
 ok("hub e sitemap", /calculadora-calorias-boxe/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /calculadora-calorias-boxe/.test(readFileSync("app/sitemap.ts", "utf8")));
 ok("sem chamada de rede", !/fetch\(|sendBeacon|localStorage/.test(comp));
 ok("os eventos nunca levam peso nem relógio", !/trackEvent\([^)]*(peso|relogio)/.test(comp));
+ok("quem passa das 1.000 kcal não recebe 'quanto falta'", /resultado\.kcal < KCAL_PROPAGANDA \?/.test(comp) && /passou-propaganda/.test(comp));
+ok("o caso da auditoria passa mesmo das 1.000", deAula(120, 120, 7.8).kcal > KCAL_PROPAGANDA);
 ok("kcal com ponto de milhar", /toLocaleString\("pt-BR"\)/.test(comp) && !/\{arredondaKcal\(/.test(comp));
 ok("aria-live", /aria-live="polite"/.test(comp));
 ok("um H1", (pag.match(/<h1[\s>]/g) ?? []).length === 1);

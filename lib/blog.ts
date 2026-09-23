@@ -103673,7 +103673,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     metaDescription:
       "Boxe emagrece? Quantas calorias uma aula realmente queima, por que o boxe ajuda tanta gente a perder peso e o que precisa acompanhar o treino para funcionar.",
     excerpt:
-      "O boxe é um dos treinos que mais queimam calorias por hora — mas nenhuma luta vence uma alimentação desregulada. Aqui explico quanto uma aula realmente gasta, por que o boxe funciona tão bem para tanta gente e como encaixá-lo num plano de emagrecimento de verdade.",
+      "O boxe gasta uma quantidade respeitável de calorias por hora — menos do que a fama e o relógio sugerem — mas nenhuma luta vence uma alimentação desregulada. Aqui explico quanto uma aula realmente gasta, por que o boxe funciona tão bem para tanta gente e como encaixá-lo num plano de emagrecimento de verdade.",
     category: "Emagrecimento",
     date: "2026-08-01",
     updatedAt: "2026-09-22",
@@ -103719,7 +103719,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       },
     ],
     content: `
-<p>Boxe emagrece? A resposta curta e honesta: o boxe é uma das atividades que mais queimam calorias por hora e um dos treinos com maior taxa de adesão que eu conheço — gente que odeia esteira treina boxe sorrindo. Mas nenhuma modalidade, por mais intensa que seja, emagrece alguém que come acima do que gasta. Neste artigo eu coloco os números na mesa, explico por que o boxe funciona tão bem para tantas pessoas e mostro como usá-lo dentro de um plano de emagrecimento que se sustenta.</p>
+<p>Boxe emagrece? A resposta curta e honesta: o boxe gasta uma quantidade respeitável de calorias por hora — menos do que a fama sugere, e menos que corrida ou spinning — e é um dos treinos com maior taxa de adesão que eu conheço — gente que odeia esteira treina boxe sorrindo. Mas nenhuma modalidade, por mais intensa que seja, emagrece alguém que come acima do que gasta. Neste artigo eu coloco os números na mesa, explico por que o boxe funciona tão bem para tantas pessoas e mostro como usá-lo dentro de um plano de emagrecimento que se sustenta.</p>
 <figure style="margin:2rem 0">
   <img src="/blog-images/boxe-emagrece.webp" alt="Boxe emagrece: gasto calórico do treino de boxe e como usar a luta para perder gordura" title="Boxe emagrece? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
