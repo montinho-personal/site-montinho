@@ -28,8 +28,8 @@ import {
  *
  * Uma página, várias atividades — lib/atividades.ts explica por que não
  * são uma página cada (seriam doorway, com a mesma conta e só o MET
- * trocado). Futebol, boxe, zumba, spinning, dança, natação, jiu-jitsu e
- * corda saíram em setembro de 2026 para calculadoras próprias, cada uma com
+ * trocado). Futebol, boxe, zumba, spinning, dança, natação, jiu-jitsu,
+ * corda e escada saíram em setembro de 2026 para calculadoras próprias, cada uma com
  * uma conta que esta não tem.
  *
  * O exemplo da página é a primeira atividade da lista, não um id fixo: as
@@ -49,12 +49,12 @@ const CAMINHO = "/ferramentas/calculadora-calorias-atividades";
 export const metadata: Metadata = {
   title: "Calculadora de Calorias por Atividade e Esporte",
   description:
-    "Quantas calorias gasta subir escada ou pedalar na rua, pelo seu peso e ritmo — e os links para as calculadoras próprias de cada esporte do site.",
+    "Quantas calorias gasta pedalar na rua, pelo seu peso e ritmo — e os links para as calculadoras próprias de cada esporte e atividade do site.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
     title: "Calculadora de Calorias por Atividade | Montinho Personal Trainer",
     description:
-      "Escada e bicicleta: quantas calorias a sua atividade gasta, com o seu peso e sem o exagero das tabelas de revista.",
+      "Bicicleta de rua: quantas calorias a sua atividade gasta, com o seu peso e sem o exagero das tabelas de revista.",
     url: `${SITE_URL}${CAMINHO}`,
     type: "website",
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
 const appSchema = aplicativoSchema({
   nome: "Calculadora de Calorias por Atividade",
   descricao:
-    "Estima o gasto calórico de duas atividades — subir escada e bicicleta — a partir do peso corporal, do tempo e do ritmo, com desconto opcional das pausas da aula.",
+    "Estima o gasto calórico da bicicleta de rua a partir do peso corporal, do tempo e do ritmo, com desconto opcional das pausas da aula.",
   caminho: CAMINHO,
   categoria: "HealthApplication",
 });
@@ -86,15 +86,18 @@ const TAB_EX = tabelaPorPeso(EX, EX.sessaoTipica);
 const UM_QUILO = simulacaoUmQuilo(PESO_PADRAO, EX.faixas[0].met);
 const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDigits: d });
 
-const faq: ItemFAQ[] = [
-  {
-    question: "E o futebol, o boxe, a zumba, o spinning, a dança, a natação, o jiu-jitsu e a corda?",
-    answer:
-      "Têm calculadoras próprias, porque cada um tem uma conta que as outras atividades não têm. A do futebol separa o tempo de bola rolando do tempo na lateral quando os times revezam. A do boxe conta a aula ou os rounds, mede o ritmo pelos socos de dez segundos e compara com o número do relógio. A da zumba divide a aula entre músicas com e sem salto e mostra quantos quilos as aulas da semana rendem. A do spinning usa a potência média em watts que a bike mostra. A da dança calcula por estilo e compara todos os ritmos. A da natação calcula por nado e desconta o tempo parado na borda. A do jiu-jitsu separa a técnica dos rolas. A da corda conta só o tempo pulando dos blocos e quantos saltos foram.",
-  },
-  {
+const FAQ_COMPARACAO: ItemFAQ[] = CMP.length > 1 ? [
+{
     question: "Qual atividade queima mais calorias?",
     answer: `No mesmo tempo e para ${PESO_PADRAO} kg, a ordem começa em ${CMP[0].nome.split(" — ")[0].toLowerCase()} (${arredondaKcal(CMP[0].kcal)} kcal em 60 minutos) e termina em ${CMP[CMP.length - 1].nome.split(" — ")[0].toLowerCase()} (${arredondaKcal(CMP[CMP.length - 1].kcal)} kcal). Só que a atividade que emagrece mais é a que você repete — e nisso a que você gosta ganha da que gasta 50 kcal a mais.`,
+  }
+] : [];
+
+const faq: ItemFAQ[] = [
+  {
+    question: "E o futebol, o boxe, a zumba, o spinning, a dança, a natação, o jiu-jitsu, a corda e a escada?",
+    answer:
+      "Têm calculadoras próprias, porque cada um tem uma conta que as outras atividades não têm. A do futebol separa o tempo de bola rolando do tempo na lateral quando os times revezam. A do boxe conta a aula ou os rounds, mede o ritmo pelos socos de dez segundos e compara com o número do relógio. A da zumba divide a aula entre músicas com e sem salto e mostra quantos quilos as aulas da semana rendem. A do spinning usa a potência média em watts que a bike mostra. A da dança calcula por estilo e compara todos os ritmos. A da natação calcula por nado e desconta o tempo parado na borda. A do jiu-jitsu separa a técnica dos rolas. A da corda conta só o tempo pulando dos blocos e quantos saltos foram. A da escada conta pelos andares e soma a descida.",
   },
   {
     question: "E se eu passei metade da aula parado?",
@@ -116,10 +119,12 @@ const faq: ItemFAQ[] = [
   },
 ];
 
+const faqCompleto: ItemFAQ[] = [...faq.slice(0, 1), ...FAQ_COMPARACAO, ...faq.slice(1)];
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: faq.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+  mainEntity: faqCompleto.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
 };
 
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
@@ -141,7 +146,7 @@ export default function CalculadoraAtividadesPage() {
           </h1>
           <Compartilhar contexto="tool" titulo="Calculadora de Calorias por Atividade" caminho={CAMINHO} local="tool_top" ferramenta="atividades" aparencia="discreto" className="mb-5" />
           <p className="text-gray-300 text-lg leading-relaxed">
-            Escada e bicicleta: quanto a sua sessão
+            Bicicleta de rua: quanto o seu pedal
             gasta, com o seu peso — e, se você passou parte da aula parado, sem contar esse tempo como esforço.
           </p>
         </div>
@@ -155,6 +160,8 @@ export default function CalculadoraAtividadesPage() {
 
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          {/* Com uma atividade só, "qual queima mais" seria uma tabela de uma linha. */}
+          {CMP.length > 1 && (
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Qual atividade queima mais calorias?</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
@@ -187,6 +194,7 @@ export default function CalculadoraAtividadesPage() {
               a atividade de que você gosta ganha da que gasta 50 kcal a mais e você abandona em três semanas.
             </p>
           </div>
+          )}
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>
@@ -259,15 +267,16 @@ export default function CalculadoraAtividadesPage() {
             <p className="text-gray-300 leading-relaxed">
               Para as outras, use o seletor da calculadora — o{" "}
               <Link href={`/blog/${EX.slug}`} className={ln}>artigo de cada uma</Link> traz o que a conta não
-              responde: o que ela faz bem e onde ela falha. Futebol, boxe, zumba, spinning, dança, natação, jiu-jitsu e corda têm calculadoras próprias:{" "}
+              responde: o que ela faz bem e onde ela falha. Futebol, boxe, zumba, spinning, dança, natação, jiu-jitsu, corda e escada têm calculadoras próprias:{" "}
               <Link href="/ferramentas/calculadora-calorias-futebol" className={ln}>a do futebol</Link>, com o
               revezamento de times, <Link href="/ferramentas/calculadora-calorias-boxe" className={ln}>a do boxe</Link>,
               com os rounds e o ritmo de socos, <Link href="/ferramentas/calculadora-calorias-zumba" className={ln}>a da zumba</Link>,
               com as músicas com e sem salto, <Link href="/ferramentas/calculadora-calorias-spinning" className={ln}>a do spinning</Link>,
               com os watts da bike, <Link href="/ferramentas/calculadora-calorias-danca" className={ln}>a da dança</Link>, por estilo,{" "}
               <Link href="/ferramentas/calculadora-calorias-natacao" className={ln}>a da natação</Link>, por nado,{" "}
-              <Link href="/ferramentas/calculadora-calorias-jiu-jitsu" className={ln}>a do jiu-jitsu</Link>, pelos rolas, e{" "}
-              <Link href="/ferramentas/calculadora-calorias-pular-corda" className={ln}>a da corda</Link>, pelos blocos.
+              <Link href="/ferramentas/calculadora-calorias-jiu-jitsu" className={ln}>a do jiu-jitsu</Link>, pelos rolas,{" "}
+              <Link href="/ferramentas/calculadora-calorias-pular-corda" className={ln}>a da corda</Link>, pelos blocos, e{" "}
+              <Link href="/ferramentas/calculadora-calorias-escada" className={ln}>a da escada</Link>, pelos andares.
             </p>
           </div>
 
@@ -344,7 +353,7 @@ export default function CalculadoraAtividadesPage() {
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-5" style={h}>Perguntas frequentes</h2>
-            <FAQ itens={faq} placement="ferramenta-atividades" />
+            <FAQ itens={faqCompleto} placement="ferramenta-atividades" />
           </div>
 
           <div>

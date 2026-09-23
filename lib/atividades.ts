@@ -20,17 +20,18 @@
  * e a ferramenta responde a conta que o texto não responde: com o peso de
  * quem pergunta.
  *
- * SÓ ESCADA E BICICLETA FICAM AQUI
+ * SÓ A BICICLETA FICA AQUI
  *
- * Futebol, boxe, zumba, spinning, dança, natação, jiu-jitsu e corda entraram
- * aqui e saíram em setembro de 2026. Não porque o argumento acima deixou de valer, mas porque cada um
+ * Futebol, boxe, zumba, spinning, dança, natação, jiu-jitsu, corda e escada
+ * entraram aqui e saíram em setembro de 2026. Não porque o argumento acima deixou de valer, mas porque cada um
  * passou a ter uma conta que as outras não têm: o futebol, o revezamento
  * de times; o boxe, o ritmo de socos que o Compêndio mediu e os rounds; a
  * zumba, a aula dividida entre músicas com e sem salto; o spinning, a
  * potência em watts que a bike mostra; a dança, o estilo; a natação, o nado
  * e o tempo na borda; o jiu-jitsu, os rolas; a corda, os blocos de pulo e
- * descanso. Ver lib/futebol.ts, lib/boxe.ts, lib/zumba.ts, lib/spinning.ts,
- * lib/danca.ts, lib/natacao.ts, lib/jiujitsu.ts e lib/corda.ts. A saída do jiu-jitsu corrigiu outro valor: a técnica
+ * descanso; a escada, os andares. Ver lib/futebol.ts, lib/boxe.ts,
+ * lib/zumba.ts, lib/spinning.ts, lib/danca.ts, lib/natacao.ts,
+ * lib/jiujitsu.ts, lib/corda.ts e lib/escada.ts. A saída do jiu-jitsu corrigiu outro valor: a técnica
  * estava com 7,8 METs, que não é nenhuma entrada de artes marciais do
  * Compêndio (5,3 e 10,3).
  *
@@ -143,21 +144,6 @@ export interface Atividade {
  * mudar aqui exige conferir a fonte e mudar lá.
  */
 export const ATIVIDADES: Atividade[] = [
-  {
-    id: "escada",
-    nome: "Subir escada",
-    artigoFrase: "uma sessão de escada",
-    sessaoTipica: 15,
-    /* O artigo trata a escada como exercício, em 8 a 9 METs; a entrada
-       lenta do Compêndio é a subida do dia a dia e enganaria na comparação. */
-    faixaPrincipal: 1,
-    fracaoAtiva: 0.6,
-    slug: "subir-escada-emagrece",
-    faixas: [
-      { id: "lento", nome: "Subida do dia a dia", met: 4.0, comoReconhecer: "Subir um lance no passo normal, sem pressa. É movimento do dia, não treino.", origem: "subir escada, ritmo lento" },
-      { id: "rapido", nome: "Ritmo de treino", met: 8.8, comoReconhecer: "Subida contínua e apressada, feita como exercício. É a faixa de que o artigo fala.", origem: "subir escada, ritmo rápido" },
-    ],
-  },
   {
     id: "bicicleta",
     nome: "Bicicleta (rua)",
@@ -318,9 +304,7 @@ export const NOTA_SEM_PERDA_LOCALIZADA =
  * a busca que os traz é de caloria, não de batimento, e a regra da casa é
  * uma ferramenta por artigo.
  */
-export const ARTIGOS_COM_CALCULADORA_ATIVIDADES: string[] = [
-  "subir-escada-emagrece",
-];
+export const ARTIGOS_COM_CALCULADORA_ATIVIDADES: string[] = [];
 
 /**
  * Artigos que recebem link, não embed.

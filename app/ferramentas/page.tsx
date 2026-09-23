@@ -67,9 +67,10 @@ const itemListSchema = {
     { "@type": "ListItem", position: 27, name: "Calculadora de Calorias na Natação", url: `${SITE_URL}/ferramentas/calculadora-calorias-natacao` },
     { "@type": "ListItem", position: 28, name: "Calculadora de Calorias no Jiu-Jitsu", url: `${SITE_URL}/ferramentas/calculadora-calorias-jiu-jitsu` },
     { "@type": "ListItem", position: 29, name: "Calculadora de Calorias Pulando Corda", url: `${SITE_URL}/ferramentas/calculadora-calorias-pular-corda` },
+    { "@type": "ListItem", position: 30, name: "Calculadora de Calorias Subindo Escada", url: `${SITE_URL}/ferramentas/calculadora-calorias-escada` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 30, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 31, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
@@ -326,6 +327,15 @@ const FERRAMENTAS = [
     texto:
       "Informe o ritmo e os blocos — quanto tempo pulando, quanto parado: a calculadora conta só o tempo pulando, mostra o gasto com o seu peso e quantos saltos foram.",
     quando: "Use depois da corda, com os blocos ainda na cabeça. O peso não sai do navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-calorias-escada",
+    nome: "Calculadora de Calorias Subindo Escada",
+    pergunta: "Quanto a escada do meu dia gasta?",
+    tempo: "15 segundos · sem cadastro",
+    texto:
+      "Informe quantos andares você sobe, quantas vezes e em que ritmo: a calculadora soma a descida, mostra quanto custa cada andar e o que trocar o elevador rende no mês.",
+    quando: "Use para decidir se vale trocar o elevador. O peso não sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{

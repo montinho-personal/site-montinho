@@ -73,6 +73,7 @@ export const NOME: Record<Ferramenta, string> = {
   natacao: "Calculadora de Calorias na Natação",
   jiujitsu: "Calculadora de Calorias no Jiu-Jitsu",
   corda: "Calculadora de Calorias Pulando Corda",
+  escada: "Calculadora de Calorias Subindo Escada",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -122,6 +123,7 @@ export const ROTA: Record<Ferramenta, string> = {
   natacao: "/ferramentas/calculadora-calorias-natacao",
   jiujitsu: "/ferramentas/calculadora-calorias-jiu-jitsu",
   corda: "/ferramentas/calculadora-calorias-pular-corda",
+  escada: "/ferramentas/calculadora-calorias-escada",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -179,6 +181,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   jiujitsu: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   /* A corda gasta pouco em minutos; o déficit da semana é o que decide. */
   corda: { ferramenta: "deficit", label: "Calcular meu déficit" },
+  /* A escada é gasto do dia a dia: o próximo passo é ver o gasto do dia inteiro. */
+  escada: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -379,6 +383,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Você está na faixa de referência ou acima dela. A pergunta deixa de ser quanto ganhar e passa a ser o que fazer com o que já está construído — força, execução e manutenção.",
       pergunta: "Quer que eu te ajude a montar a próxima fase?",
       pedido: "Cheguei na faixa de referência de massa magra e queria ajuda para montar a próxima fase do treino.",
+    },
+  },
+  escada: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto da escada, não o do seu dia. Ela soma pelo hábito, andar por andar — o que move o resultado é a alimentação, a constância e a força nas pernas que deixa cada andar mais leve.",
+      pedido: "Quero usar mais a escada no dia a dia e entender o que falta para emagrecer.",
     },
   },
   corda: {
