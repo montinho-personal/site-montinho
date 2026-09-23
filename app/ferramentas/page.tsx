@@ -66,9 +66,10 @@ const itemListSchema = {
     { "@type": "ListItem", position: 26, name: "Calculadora de Calorias na Dança", url: `${SITE_URL}/ferramentas/calculadora-calorias-danca` },
     { "@type": "ListItem", position: 27, name: "Calculadora de Calorias na Natação", url: `${SITE_URL}/ferramentas/calculadora-calorias-natacao` },
     { "@type": "ListItem", position: 28, name: "Calculadora de Calorias no Jiu-Jitsu", url: `${SITE_URL}/ferramentas/calculadora-calorias-jiu-jitsu` },
+    { "@type": "ListItem", position: 29, name: "Calculadora de Calorias Pulando Corda", url: `${SITE_URL}/ferramentas/calculadora-calorias-pular-corda` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 29, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 30, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
@@ -206,7 +207,7 @@ const FERRAMENTAS = [
     pergunta: "Quantas calorias a minha aula gasta?",
     tempo: "15 segundos · sem cadastro",
     texto:
-      "Pular corda, subir escada e bicicleta de rua: informe peso, tempo e ritmo para ver o gasto da sessão — com as pausas como opção — e compare as três no mesmo tempo.",
+      "Subir escada e bicicleta de rua: informe peso, tempo e ritmo para ver o gasto da sessão — com as pausas como opção — e compare as duas no mesmo tempo.",
     quando: "Use quando quiser saber quanto a sua aula realmente gasta, e não o número da tabela de revista. O peso não sai do navegador.",
   },
   {
@@ -316,6 +317,15 @@ const FERRAMENTAS = [
     texto:
       "Informe a duração da aula e quantos rolas você fez: a calculadora separa técnica de rola, mostra o gasto com o seu peso e quanto cada rola a mais soma de verdade.",
     quando: "Use depois do treino, com a contagem de rolas ainda na cabeça. O peso não sai do navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-calorias-pular-corda",
+    nome: "Calculadora de Calorias Pulando Corda",
+    pergunta: "Quanto a minha corda gastou de verdade?",
+    tempo: "15 segundos · sem cadastro",
+    texto:
+      "Informe o ritmo e os blocos — quanto tempo pulando, quanto parado: a calculadora conta só o tempo pulando, mostra o gasto com o seu peso e quantos saltos foram.",
+    quando: "Use depois da corda, com os blocos ainda na cabeça. O peso não sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{

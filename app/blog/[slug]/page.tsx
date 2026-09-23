@@ -73,6 +73,8 @@ import { ARTIGOS_COM_CALCULADORA_NATACAO } from "@/lib/natacao";
 import CalculadoraNatacao from "@/components/natacao/CalculadoraNatacao";
 import { ARTIGOS_COM_CALCULADORA_JIU } from "@/lib/jiujitsu";
 import CalculadoraJiuJitsu from "@/components/jiujitsu/CalculadoraJiuJitsu";
+import { ARTIGOS_COM_CALCULADORA_CORDA } from "@/lib/corda";
+import CalculadoraCorda from "@/components/corda/CalculadoraCorda";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -242,7 +244,9 @@ export default async function BlogPost({ params }: Props) {
                                             ? "natacao"
                                             : ARTIGOS_COM_CALCULADORA_JIU.includes(post.slug)
                                               ? "jiujitsu"
-                                              : null;
+                                              : ARTIGOS_COM_CALCULADORA_CORDA.includes(post.slug)
+                                                ? "corda"
+                                                : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -470,6 +474,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraNatacao placement={post.slug} />
                 ) : qualCalc === "jiujitsu" ? (
                   <CalculadoraJiuJitsu placement={post.slug} />
+                ) : qualCalc === "corda" ? (
+                  <CalculadoraCorda placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}

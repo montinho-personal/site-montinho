@@ -230,7 +230,7 @@ export default function CalculadoraDancaPage() {
             <ul className="space-y-2 text-gray-300">
               <li><Link href="/blog/danca-emagrece" className={ln}>Dança emagrece? Qualquer ritmo vale? Calorias por estilo</Link></li>
               <li><Link href="/ferramentas/calculadora-calorias-zumba" className={ln}>Calculadora de Calorias na Zumba — com as músicas com e sem salto</Link></li>
-              <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — natação, jiu-jitsu, corda e mais</Link></li>
+              <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — escada e bicicleta</Link></li>
               <li><Link href="/ferramentas/calculadora-tmb-tdee" className={ln}>Calculadora de TMB e TDEE — o gasto do seu dia inteiro</Link></li>
             </ul>
           </div>

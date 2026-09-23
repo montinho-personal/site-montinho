@@ -299,7 +299,7 @@ export default function CalculadoraBoxePage() {
             <ul className="space-y-2 text-gray-300">
               <li><Link href="/blog/boxe-emagrece" className={ln}>Boxe emagrece? Quantas calorias queima e como usar a favor</Link></li>
               <li><Link href="/ferramentas/calculadora-calorias-futebol" className={ln}>Calculadora de Calorias no Futebol — com o revezamento de times</Link></li>
-              <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — zumba, natação, spinning e mais</Link></li>
+              <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — escada e bicicleta</Link></li>
               <li><Link href="/ferramentas/calculadora-tmb-tdee" className={ln}>Calculadora de TMB e TDEE — o gasto do seu dia inteiro</Link></li>
             </ul>
           </div>

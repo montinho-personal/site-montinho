@@ -365,6 +365,13 @@ export type AnalyticsEvent =
   | "jiujitsu_frequency"
   | "jiujitsu_methodology_open"
   | "jiujitsu_tool_click"
+  /** Calculadora de Calorias Pulando Corda. `pace`, `rounds` e `per_week`; nunca o peso. */
+  | "jump_rope_calculator_view"
+  | "jump_rope_calculator_use"
+  | "jump_rope_preset"
+  | "jump_rope_frequency"
+  | "jump_rope_methodology_open"
+  | "jump_rope_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"
