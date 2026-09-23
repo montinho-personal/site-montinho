@@ -91,6 +91,9 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
 
   const raiz = useRef<HTMLDivElement>(null);
   const resultadoRef = useRef<HTMLDivElement>(null);
+  const doseRef = useRef<HTMLDivElement>(null);
+  /** Muda a cada cálculo; o efeito abaixo leva a tela até a dose depois que ela existe. */
+  const [calculos, setCalculos] = useState(0);
   const comecou = useRef(false);
   const custoMedido = useRef(false);
 
@@ -144,8 +147,24 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
     if (!pesoOk) return;
     trackEvent(calculado ? "creatine_recalculate" : "creatine_calculator_calculate", { placement, weight_range: faixaPeso(peso!) });
     setCalculado(true);
-    requestAnimationFrame(() => resultadoRef.current?.focus());
+    setCalculos((n) => n + 1);
   }
+
+  /*
+   * Depois de calcular, a tela vai até a DOSE — o card "Sua referência" —
+   * e não até o meio do resultado. Antes, o foco ia para o bloco inteiro, que
+   * é mais alto que a tela, e o navegador parava no percentual de gordura.
+   * O foco vai sem rolar; a rolagem é explícita, com o card no topo, e o
+   * scroll-margin do card desconta o cabeçalho fixo do site.
+   */
+  useEffect(() => {
+    if (calculos === 0) return;
+    const card = doseRef.current;
+    if (!card) return;
+    resultadoRef.current?.focus({ preventScroll: true });
+    const reduzir = typeof window.matchMedia === "function" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    card.scrollIntoView({ block: "start", behavior: reduzir ? "auto" : "smooth" });
+  }, [calculos]);
 
   const idc = (s: string) => `${s}-creatina-${placement}`;
   const linhasShare = ref
@@ -204,7 +223,7 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
         {ref && sat && (
           <div ref={resultadoRef} tabIndex={-1} className="outline-none">
             {/* ── Resultado principal ── */}
-            <div className="border border-[#BA9E50]/60 bg-[#BA9E50]/[0.06] p-5 sm:p-6 mt-6" data-testid="resultado-creatina">
+            <div ref={doseRef} className="border border-[#BA9E50]/60 bg-[#BA9E50]/[0.06] p-5 sm:p-6 mt-6 scroll-mt-24" data-testid="resultado-creatina">
               <p className="text-[11px] font-semibold tracking-[0.18em] uppercase mb-2" style={{ color: "#BA9E50" }}>Sua referência</p>
               <p className="text-white font-bold text-5xl leading-none mb-2" style={h}>
                 {g(ref.diaria)} g<span className="text-lg font-normal text-gray-300"> de creatina por dia</span>
