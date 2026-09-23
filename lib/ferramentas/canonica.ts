@@ -78,6 +78,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Potencial Natural",
     motivo: "com o FFMI normalizado, o que o número 25 realmente significa e o ritmo de ganho esperado no seu nível",
   },
+  crossfit: {
+    href: "/ferramentas/calculadora-calorias-crossfit",
+    ancora: "Calculadora de Calorias no CrossFit",
+    motivo: "que soma aquecimento, força e WOD pelo seu peso, considera o formato do WOD e mostra de onde vêm as 1.000 kcal",
+  },
   escada: {
     href: "/ferramentas/calculadora-calorias-escada",
     ancora: "Calculadora de Calorias Subindo Escada",

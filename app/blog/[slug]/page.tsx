@@ -77,6 +77,8 @@ import { ARTIGOS_COM_CALCULADORA_CORDA } from "@/lib/corda";
 import CalculadoraCorda from "@/components/corda/CalculadoraCorda";
 import { ARTIGOS_COM_CALCULADORA_ESCADA } from "@/lib/escada";
 import CalculadoraEscada from "@/components/escada/CalculadoraEscada";
+import { ARTIGOS_COM_CALCULADORA_CROSSFIT } from "@/lib/crossfit";
+import CalculadoraCrossfit from "@/components/crossfit/CalculadoraCrossfit";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -250,7 +252,9 @@ export default async function BlogPost({ params }: Props) {
                                                 ? "corda"
                                                 : ARTIGOS_COM_CALCULADORA_ESCADA.includes(post.slug)
                                                   ? "escada"
-                                                  : null;
+                                                  : ARTIGOS_COM_CALCULADORA_CROSSFIT.includes(post.slug)
+                                                    ? "crossfit"
+                                                    : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -482,6 +486,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraCorda placement={post.slug} />
                 ) : qualCalc === "escada" ? (
                   <CalculadoraEscada placement={post.slug} />
+                ) : qualCalc === "crossfit" ? (
+                  <CalculadoraCrossfit placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}

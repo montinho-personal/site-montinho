@@ -117319,8 +117319,98 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 </ul>
 `,
   },
+  {
+    slug: "crossfit-emagrece",
+    title: "CrossFit Emagrece? Quantas Calorias uma Aula Queima de Verdade",
+    metaTitle: "CrossFit Emagrece? Quantas Calorias uma Aula Queima",
+    metaDescription: "Quantas calorias uma aula de CrossFit queima? Veja o gasto real de cada parte da aula, de onde vem o mito das 1.000 kcal e o que decide o emagrecimento.",
+    excerpt: "Uma aula de CrossFit não é uma hora de WOD: tem aquecimento, força e explicação, e o WOD costuma durar 15 minutos. Veja quanto a aula gasta de verdade, de onde vem o mito das 1.000 kcal e o que faz o CrossFit emagrecer.",
+    category: "Emagrecimento",
+    date: "2026-09-23",
+    updatedAt: "2026-09-23",
+    readTime: "9 min",
+    author: "Montinho",
+    tags: ["crossfit", "emagrecimento", "queima de calorias", "wod", "treino funcional"],
+    faq: [
+      { question: "Quantas calorias queima uma aula de CrossFit?", answer: "Uma aula típica de 60 minutos — aquecimento, parte de força e um WOD de 15 minutos — gasta cerca de 320 kcal para quem pesa 70 kg e 410 para quem pesa 90 kg. Uma aula sem força e com WOD longo, de 30 minutos, chega a cerca de 375 e 480." },
+      { question: "É verdade que o CrossFit queima 1.000 calorias por aula?", answer: "Não para a maioria das pessoas. Para chegar a 1.000 kcal em uma hora, seria preciso fazer 60 minutos de WOD sem pausa pesando cerca de 120 kg. A aula real tem aquecimento, força e explicação, e o WOD costuma durar de 10 a 20 minutos." },
+      { question: "O que gasta mais: AMRAP, EMOM ou Tabata?", answer: "No mesmo tempo de relógio, o AMRAP e o For time gastam mais, porque não têm pausa programada. No EMOM, o que sobra de cada minuto é descanso; no Tabata, um terço do tempo é pausa. Num WOD de 15 minutos, a diferença fica perto de 40 kcal para quem pesa 70 kg." },
+      { question: "CrossFit emagrece mais que musculação?", answer: "Por hora, a aula de CrossFit costuma gastar um pouco mais que uma sessão comum de musculação, mas quem decide o emagrecimento é o déficit calórico da semana. O CrossFit ajuda porque junta força e condicionamento; a musculação ajuda porque constrói músculo com menos risco de lesão. Os dois funcionam com a alimentação em ordem." },
+      { question: "Quantas vezes por semana fazer CrossFit para emagrecer?", answer: "Três aulas por semana já mudam o gasto da semana sem sobrecarregar ombro, lombar e joelho. Só do box, três aulas típicas somam no máximo cerca de 0,4 kg de gordura por mês para quem pesa 70 kg — o resto vem da alimentação." },
+    ],
+    content: `<p>Você sai do box encharcado, com as pernas tremendo, e o relógio diz que queimou mil calorias. A pergunta que fica é se isso é verdade — e se o CrossFit emagrece mesmo.</p>
+<p>Emagrece, desde que faça parte de um déficit calórico. Mas o número do relógio quase nunca bate com a aula real, porque uma aula de CrossFit não é uma hora de WOD. Vamos aos números.</p>
 
+<h2>Resposta direta: CrossFit emagrece?</h2>
+<p><strong>Sim — uma aula típica de CrossFit gasta cerca de 320 kcal para quem pesa 70 kg e 410 para quem pesa 90 kg.</strong> É um bom gasto para uma hora de treino, mas bem abaixo das 1.000 kcal que circulam por aí. E, como todo treino, o CrossFit só emagrece dentro de um <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a>: quem come o que gastou no box não perde peso, por mais pesado que tenha sido o WOD.</p>
+<p>O que faz o CrossFit funcionar para emagrecer não é o gasto de uma aula, é a combinação: força para preservar músculo, condicionamento para o coração e um ambiente que faz você voltar três vezes por semana.</p>
 
+<h2>Uma aula de CrossFit não é uma hora de WOD</h2>
+<p>A aula de 60 minutos tem quatro partes, e cada uma gasta de um jeito:</p>
+<ul>
+<li><strong>Aquecimento e mobilidade (10 a 15 minutos):</strong> movimento leve, cerca de 3,5 METs no Compêndio de Atividades Físicas;</li>
+<li><strong>Força ou técnica (10 a 20 minutos):</strong> levantamento com carga e descanso entre as séries, cerca de 5 METs;</li>
+<li><strong>WOD (10 a 20 minutos):</strong> circuito intenso com pouca pausa, cerca de 8 METs — é a parte que você lembra;</li>
+<li><strong>Explicação, montar e guardar material:</strong> tempo em pé, que gasta pouco mais que ficar parado.</li>
+</ul>
+<p>Na aula típica, o WOD ocupa 15 dos 60 minutos e responde por quase metade do gasto. É a parte mais intensa e também a mais curta.</p>
+
+<h2>Quantas calorias uma aula de CrossFit queima</h2>
+<p>Pelo Compêndio de Atividades Físicas, somando cada parte da aula de 60 minutos:</p>
+<ul>
+<li><strong>Aula típica, com força e AMRAP de 15 minutos:</strong> cerca de 320 kcal para 70 kg e 410 para 90 kg;</li>
+<li><strong>Aula com força e EMOM de 16 minutos:</strong> cerca de 285 kcal para 70 kg e 365 para 90 kg;</li>
+<li><strong>Aula sem força, com WOD longo de 30 minutos:</strong> cerca de 375 kcal para 70 kg e 480 para 90 kg.</li>
+</ul>
+<p>Três coisas explicam a variação: o seu peso, porque mover mais massa custa mais; <strong>quanto tempo de WOD a aula teve</strong>; e o formato do WOD, que decide quanto do tempo é trabalho e quanto é pausa.</p>
+
+<h2>AMRAP, EMOM ou Tabata: o formato muda o gasto</h2>
+<p>O relógio do WOD mostra o mesmo tempo nos três formatos, mas o trabalho dentro dele não é igual:</p>
+<ul>
+<li><strong>AMRAP e For time:</strong> trabalho do começo ao fim, sem pausa programada. Gastam mais por minuto de relógio;</li>
+<li><strong>EMOM:</strong> um bloco a cada minuto, e o que sobra do minuto é descanso. Se o bloco leva 40 segundos, um terço do WOD é pausa;</li>
+<li><strong>Tabata:</strong> 20 segundos de esforço e 10 de pausa — também um terço de pausa.</li>
+</ul>
+<p>Num WOD de 15 minutos, trocar AMRAP por EMOM ou Tabata tira cerca de 40 kcal da aula para quem pesa 70 kg. Não é pouco, mas também não é o que decide o resultado da semana.</p>
+
+<h2>De onde vêm as 1.000 calorias por aula</h2>
+<p>O número aparece de duas contas erradas. A primeira é multiplicar a intensidade do WOD pela aula inteira, como se os 60 minutos fossem de circuito sem pausa. Mesmo assim, para chegar a 1.000 kcal seria preciso pesar cerca de 120 kg. A segunda é o relógio de pulso, que estima o gasto pela frequência cardíaca — e a frequência dispara no CrossFit também por causa da carga, do calor e da adrenalina, não só do gasto de energia.</p>
+<p>Isso não é motivo para desanimar. É motivo para não comer como se tivesse gastado mil. <strong>A compensação na alimentação é o que mais trava quem treina CrossFit para emagrecer</strong>: a fome depois do WOD é real, e um lanche "merecido" de 600 kcal apaga duas aulas.</p>
+
+<h2>O que o CrossFit faz além das calorias</h2>
+<ul>
+<li><strong>Preserva músculo no déficit:</strong> a parte de força dá ao corpo um motivo para manter massa magra enquanto você emagrece — veja <a href="/blog/como-manter-massa-muscular-emagrecendo">como manter massa muscular emagrecendo</a>;</li>
+<li><strong>Condicionamento:</strong> o WOD treina o coração em intervalos curtos e intensos, parecido com o <a href="/blog/hiit-funciona">HIIT</a>;</li>
+<li><strong>Constância:</strong> horário marcado, turma e treino pronto fazem muita gente voltar — e constância vale mais que qualquer número de uma aula.</li>
+</ul>
+
+<h2>Cuidados para emagrecer sem se machucar</h2>
+<ul>
+<li><strong>Escale as cargas:</strong> o WOD escrito na lousa é para o atleta do box. Fazer com menos peso e boa técnica gasta quase o mesmo e protege ombro e lombar;</li>
+<li><strong>Não emende aulas todo dia no começo:</strong> três por semana, com dias de descanso, é o que o corpo consegue recuperar;</li>
+<li><strong>Durma e coma proteína:</strong> sem recuperação, o rendimento cai e a fome sobe.</li>
+</ul>
+<p>Se você está em dúvida entre as duas modalidades, a comparação completa está em <a href="/blog/crossfit-vs-musculacao">CrossFit ou musculação: qual é melhor para o seu objetivo</a>.</p>
+
+<h2>Resumo</h2>
+<p>O CrossFit emagrece, mas não pelas 1.000 kcal do relógio: uma aula típica gasta cerca de 320 kcal para 70 kg, e o WOD, que dura uns 15 minutos, responde por quase metade disso. O que faz o resultado é a soma da semana — três aulas, força preservando músculo e uma alimentação que não devolve o que o box gastou.</p>
+<p>Monto treino de força para quem faz CrossFit, respeitando os dias de box, para alunos em Alphaville, Barueri e Santana de Parnaíba, e pela <a href="/consultoria-online">consultoria online</a> para o Brasil todo. Procura box na região? Veja <a href="/blog/crossfit-barueri">CrossFit em Barueri</a>. <a href="/contato">Agende uma avaliação</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/crossfit-vs-musculacao">CrossFit ou musculação: qual é melhor para o seu objetivo</a></li>
+<li><a href="/blog/hiit-funciona">HIIT funciona? O que a ciência diz</a></li>
+<li><a href="/blog/quantas-calorias-cortar-para-emagrecer">Quantas calorias cortar para emagrecer</a></li>
+<li><a href="/blog/como-manter-massa-muscular-emagrecendo">Como manter massa muscular emagrecendo</a></li>
+</ul>
+
+<h2>Referências</h2>
+<ul>
+<li>Ainsworth BE, Haskell WL, Herrmann SD, et al. 2011 Compendium of Physical Activities. Medicine &amp; Science in Sports &amp; Exercise, 2011.</li>
+<li>Hall KD, Sacks G, Chandramohan D, et al. Quantification of the effect of energy imbalance on bodyweight. The Lancet, 2011.</li>
+</ul>
+`,
+  },
 ]) as BlogPost[];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

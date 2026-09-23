@@ -379,6 +379,13 @@ export type AnalyticsEvent =
   | "stairs_frequency"
   | "stairs_methodology_open"
   | "stairs_tool_click"
+  /** Calculadora de Calorias no CrossFit. `format` e `per_week`; nunca o peso. */
+  | "crossfit_calculator_view"
+  | "crossfit_calculator_use"
+  | "crossfit_preset"
+  | "crossfit_frequency"
+  | "crossfit_methodology_open"
+  | "crossfit_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"

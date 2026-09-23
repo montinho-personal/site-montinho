@@ -51,6 +51,7 @@ export type Ferramenta =
   | "jiujitsu"
   | "corda"
   | "escada"
+  | "crossfit"
   | "diagnostico"
   | "rotina"
   | "academia"
