@@ -22,6 +22,7 @@ import {
   NOTA_SEM_PERDA_LOCALIZADA,
   PESO_MAX,
   PESO_MIN,
+  PESO_PADRAO,
   PRESETS_MINUTOS,
   RELOGIO_MAX,
   RELOGIO_MIN,
@@ -349,13 +350,26 @@ export default function CalculadoraBoxe({ placement }: { placement: string }) {
                     : `${formataTempo(resultado.minutosAtivos)} socando e ${formataTempo(resultado.minutosDescanso)} de descanso`}
                 </p>
               </div>
-              <div className="border border-white/15 p-5">
-                <p className="text-gray-400 text-xs mb-1">Para chegar às {KCAL_PROPAGANDA.toLocaleString("pt-BR")} kcal da propaganda</p>
-                <p className="text-white font-bold text-3xl sm:text-4xl leading-none" style={h}>
-                  {formataTempo(minutosAtePropaganda(peso, metAtivo))}
-                </p>
-                <p className="text-gray-400 text-sm mt-2">sem parar, nesse mesmo esforço</p>
-              </div>
+              {resultado.kcal < KCAL_PROPAGANDA ? (
+                <div className="border border-white/15 p-5">
+                  <p className="text-gray-400 text-xs mb-1">Para chegar às {KCAL_PROPAGANDA.toLocaleString("pt-BR")} kcal da propaganda</p>
+                  <p className="text-white font-bold text-3xl sm:text-4xl leading-none" style={h}>
+                    {formataTempo(minutosAtePropaganda(peso, metAtivo))}
+                  </p>
+                  <p className="text-gray-400 text-sm mt-2">sem parar, nesse mesmo esforço</p>
+                </div>
+              ) : (
+                /* A auditoria: 120 kg em 2 h de sparring passam das 1.000, e o
+                   cartão ainda dizia quanto faltava para chegar lá. */
+                <div className="border border-white/15 p-5" data-testid="passou-propaganda">
+                  <p className="text-gray-400 text-xs mb-1">As {KCAL_PROPAGANDA.toLocaleString("pt-BR")} kcal da propaganda</p>
+                  <p className="text-white font-bold text-3xl sm:text-4xl leading-none" style={h}>Você passou</p>
+                  <p className="text-gray-400 text-sm mt-2">
+                    com o seu peso e {formataTempo(resultado.minutosTotais)} de treino. Numa aula de uma hora, para {PESO_PADRAO} kg, o
+                    número não chega.
+                  </p>
+                </div>
+              )}
             </div>
 
             <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl">
