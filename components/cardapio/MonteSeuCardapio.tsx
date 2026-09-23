@@ -817,6 +817,8 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                         trocando === chaveTroca
                           ? alternativas(it, r.momento, pedido, r.itens.map((x) => x.alimentoId))
                           : [];
+                      /* O PDF não tem botão: as trocas vão impressas embaixo de cada item. */
+                      const altsImpressas = alternativas(it, r.momento, pedido, r.itens.map((x) => x.alimentoId)).slice(0, 3);
                       return (
                         <li key={it.alimentoId}>
                           <div className="flex items-center justify-between gap-3">
@@ -835,6 +837,11 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                               trocar
                             </button>
                           </div>
+                          {altsImpressas.length > 0 && (
+                            <p className="hidden print:block text-xs mt-0.5 pl-3" data-testid="troca-impressa">
+                              Pode trocar por: {altsImpressas.map(({ alimento, porcoes }) => `${rotuloPorcao(alimento, porcoes)} de ${alimento.nome.toLowerCase()}`).join(" · ")}
+                            </p>
+                          )}
                           {trocando === chaveTroca && (
                             <div className="mt-2 pl-3 border-l-2 print:hidden" style={{ borderColor: "#BA9E50" }}>
                               {alts.length === 0 ? (
