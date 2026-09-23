@@ -63,6 +63,8 @@ import { ARTIGOS_COM_CALCULADORA_FUTEBOL } from "@/lib/futebol";
 import CalculadoraFutebol from "@/components/futebol/CalculadoraFutebol";
 import { ARTIGOS_COM_CALCULADORA_BOXE } from "@/lib/boxe";
 import CalculadoraBoxe from "@/components/boxe/CalculadoraBoxe";
+import { ARTIGOS_COM_CALCULADORA_ZUMBA } from "@/lib/zumba";
+import CalculadoraZumba from "@/components/zumba/CalculadoraZumba";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -222,7 +224,9 @@ export default async function BlogPost({ params }: Props) {
                                   ? "futebol"
                                   : ARTIGOS_COM_CALCULADORA_BOXE.includes(post.slug)
                                     ? "boxe"
-                                    : null;
+                                    : ARTIGOS_COM_CALCULADORA_ZUMBA.includes(post.slug)
+                                      ? "zumba"
+                                      : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -440,6 +444,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraFutebol placement={post.slug} />
                 ) : qualCalc === "boxe" ? (
                   <CalculadoraBoxe placement={post.slug} />
+                ) : qualCalc === "zumba" ? (
+                  <CalculadoraZumba placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}
