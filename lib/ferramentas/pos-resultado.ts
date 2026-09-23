@@ -71,6 +71,7 @@ export const NOME: Record<Ferramenta, string> = {
   spinning: "Calculadora de Calorias no Spinning",
   danca: "Calculadora de Calorias na Dança",
   natacao: "Calculadora de Calorias na Natação",
+  jiujitsu: "Calculadora de Calorias no Jiu-Jitsu",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -118,6 +119,7 @@ export const ROTA: Record<Ferramenta, string> = {
   spinning: "/ferramentas/calculadora-calorias-spinning",
   danca: "/ferramentas/calculadora-calorias-danca",
   natacao: "/ferramentas/calculadora-calorias-natacao",
+  jiujitsu: "/ferramentas/calculadora-calorias-jiu-jitsu",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -171,6 +173,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   danca: { ferramenta: "deficit", label: "Calcular meu déficit" },
   /* A fome depois da piscina é o que trava; o déficit da semana é a conta que resolve. */
   natacao: { ferramenta: "deficit", label: "Calcular meu déficit" },
+  /* Quem viu o gasto da aula precisa do gasto do dia para saber o déficit. */
+  jiujitsu: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -371,6 +375,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Você está na faixa de referência ou acima dela. A pergunta deixa de ser quanto ganhar e passa a ser o que fazer com o que já está construído — força, execução e manutenção.",
       pergunta: "Quer que eu te ajude a montar a próxima fase?",
       pedido: "Cheguei na faixa de referência de massa magra e queria ajuda para montar a próxima fase do treino.",
+    },
+  },
+  jiujitsu: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto da aula, não o do seu dia. O jiu-jitsu gasta bem no rola, mas o rola é curto — o que move o resultado é a frequência de aulas, a alimentação e a força que protege as articulações no tatame.",
+      pedido: "Treino jiu-jitsu e queria entender o que falta para ele me ajudar a emagrecer.",
     },
   },
   natacao: {

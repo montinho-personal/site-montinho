@@ -20,16 +20,19 @@
  * e a ferramenta responde a conta que o texto não responde: com o peso de
  * quem pergunta.
  *
- * CAMINHADA, ELÍPTICO, FUTEBOL, BOXE, ZUMBA, SPINNING, DANÇA E NATAÇÃO NÃO ENTRAM
+ * SÓ CORDA, ESCADA E BICICLETA FICAM AQUI
  *
- * Futebol, boxe, zumba, spinning, dança e natação entraram aqui e saíram
- * em setembro de 2026. Não porque o argumento acima deixou de valer, mas porque cada um
+ * Futebol, boxe, zumba, spinning, dança, natação e jiu-jitsu entraram aqui
+ * e saíram em setembro de 2026. Não porque o argumento acima deixou de valer, mas porque cada um
  * passou a ter uma conta que as outras não têm: o futebol, o revezamento
  * de times; o boxe, o ritmo de socos que o Compêndio mediu e os rounds; a
  * zumba, a aula dividida entre músicas com e sem salto; o spinning, a
  * potência em watts que a bike mostra; a dança, o estilo; a natação, o nado
- * e o tempo na borda. Ver lib/futebol.ts, lib/boxe.ts, lib/zumba.ts,
- * lib/spinning.ts, lib/danca.ts e lib/natacao.ts.
+ * e o tempo na borda; o jiu-jitsu, os rolas. Ver lib/futebol.ts,
+ * lib/boxe.ts, lib/zumba.ts, lib/spinning.ts, lib/danca.ts, lib/natacao.ts
+ * e lib/jiujitsu.ts. A saída do jiu-jitsu corrigiu outro valor: a técnica
+ * estava com 7,8 METs, que não é nenhuma entrada de artes marciais do
+ * Compêndio (5,3 e 10,3).
  *
  * A saída do boxe também corrigiu um erro: esta tabela dava 7,8 METs ao
  * saco e 9,3 ao sparring. No Compêndio de 2024, 7,8 é o sparring e o saco
@@ -140,19 +143,6 @@ export interface Atividade {
  * mudar aqui exige conferir a fonte e mudar lá.
  */
 export const ATIVIDADES: Atividade[] = [
-  {
-    id: "jiu-jitsu",
-    nome: "Jiu-jitsu e artes marciais",
-    artigoFrase: "um treino de jiu-jitsu",
-    sessaoTipica: 60,
-    faixaPrincipal: 0,
-    fracaoAtiva: 0.65,
-    slug: "jiu-jitsu-emagrece",
-    faixas: [
-      { id: "tecnica", nome: "Técnica e drills", met: 7.8, comoReconhecer: "Aula com repetição de movimento e pausa para explicação.", origem: "artes marciais, ritmo moderado" },
-      { id: "rolamento", nome: "Rolamento / luta", met: 10.3, comoReconhecer: "Sparring de verdade, em rounds. É onde o gasto dispara.", origem: "artes marciais, ritmo vigoroso" },
-    ],
-  },
   {
     id: "corda",
     nome: "Pular corda",
@@ -342,7 +332,6 @@ export const NOTA_SEM_PERDA_LOCALIZADA =
  * uma ferramenta por artigo.
  */
 export const ARTIGOS_COM_CALCULADORA_ATIVIDADES: string[] = [
-  "jiu-jitsu-emagrece",
   "subir-escada-emagrece",
 ];
 

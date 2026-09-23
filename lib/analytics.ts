@@ -358,6 +358,13 @@ export type AnalyticsEvent =
   | "swimming_frequency"
   | "swimming_methodology_open"
   | "swimming_tool_click"
+  /** Calculadora de Calorias no Jiu-Jitsu. `rounds` e `per_week`; nunca o peso. */
+  | "jiujitsu_calculator_view"
+  | "jiujitsu_calculator_use"
+  | "jiujitsu_preset"
+  | "jiujitsu_frequency"
+  | "jiujitsu_methodology_open"
+  | "jiujitsu_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"
