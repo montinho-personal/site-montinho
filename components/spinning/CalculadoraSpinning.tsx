@@ -223,6 +223,19 @@ export default function CalculadoraSpinning({ placement }: { placement: string }
         </p>
       )}
 
+      {/* A frequência entra antes do resultado: é pergunta, não detalhe do resultado. */}
+      <div className="mb-7">
+        <span className="block text-gray-300 text-sm font-medium mb-2" id={idc("sem")}>Quantas aulas por semana?</span>
+        <div role="group" aria-labelledby={idc("sem")} className="flex flex-wrap gap-2">
+          {[1, 2, 3, 4, 5].map((n) => (
+            <button key={n} type="button" onClick={() => { setAulas(n); trackEvent("spinning_frequency", { placement, per_week: n }); }}
+              aria-pressed={aulas === n} className={chip(aulas === n)}>
+              {n}×
+            </button>
+          ))}
+        </div>
+      </div>
+
       <div className="mb-7">
         {!mostrarVisor ? (
           <button type="button" onClick={() => { trackEvent("spinning_display_open", { placement }); setMostrarVisor(true); }}
@@ -294,15 +307,6 @@ export default function CalculadoraSpinning({ placement }: { placement: string }
             )}
 
             <div className="mb-5 max-w-2xl">
-              <span className="block text-gray-300 text-sm font-medium mb-2" id={idc("sem")}>Quantas aulas por semana?</span>
-              <div role="group" aria-labelledby={idc("sem")} className="flex flex-wrap gap-2 mb-3">
-                {[1, 2, 3, 4, 5].map((n) => (
-                  <button key={n} type="button" onClick={() => { setAulas(n); trackEvent("spinning_frequency", { placement, per_week: n }); }}
-                    aria-pressed={aulas === n} className={chip(aulas === n)}>
-                    {n}×
-                  </button>
-                ))}
-              </div>
               <p className="text-gray-300 leading-relaxed">
                 {aulas === 1 ? "Uma aula por semana soma" : `${aulas} aulas por semana somam`} cerca de{" "}
                 <strong className="text-white">{kc(sem.kcalLiquida)} kcal</strong> a mais — no máximo {kg(sem.kgMes)} kg de gordura por

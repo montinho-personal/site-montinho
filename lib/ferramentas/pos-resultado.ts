@@ -267,7 +267,7 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
   atividades: {
     padrao: {
       interpretacao:
-        "Esse é o gasto de uma sessão, não o do seu dia — e é menor do que as tabelas de revista dizem, porque o tempo de aula não é todo tempo de esforço. O que decide emagrecimento é o balanço da semana.",
+        "Esse é o gasto de uma sessão, não o do seu dia — e é menor do que as tabelas de revista dizem, porque elas costumam supor uma hora inteira no esforço máximo. O que decide emagrecimento é o balanço da semana.",
       pedido: "Queria entender quanto essa atividade pesa no meu objetivo e o que falta no meu treino.",
     },
     volume_alto: {

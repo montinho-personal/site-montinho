@@ -146,6 +146,8 @@ ok("toda faixa principal existe", ATIVIDADES.every((a) => a.faixas[a.faixaPrinci
 const tab = tabelaPorPeso(atividade("danca"), 42);
 ok("tabela por peso cresce", tab.every((l, i, a) => i === 0 || l.kcal[0] > a[i - 1].kcal[0]));
 ok("uma coluna por faixa", tab.every((l) => l.kcal.length === atividade("danca").faixas.length));
+ok("o pós-resultado não promete o desconto de pausas, que é opcional",
+  !/tempo de aula não é todo tempo de esforço/.test(readFileSync("lib/ferramentas/pos-resultado.ts", "utf8")));
 ok("futebol, boxe, zumba e spinning saíram do seletor", !ATIVIDADES.some((a) => ["futebol", "boxe", "zumba", "spinning"].includes(a.id)));
 
 bloco("5. UMA FERRAMENTA POR ARTIGO");

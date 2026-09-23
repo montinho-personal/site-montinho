@@ -221,6 +221,19 @@ export default function CalculadoraFutebol({ placement }: { placement: string })
         </div>
       </div>
 
+      {/* A frequência entra antes do resultado: é pergunta, não detalhe do resultado. */}
+      <div className="mb-7">
+        <span className="block text-gray-300 text-sm font-medium mb-2" id={idc("sem")}>Quantas vezes por semana você joga?</span>
+        <div role="group" aria-labelledby={idc("sem")} className="flex flex-wrap gap-2">
+          {[1, 2, 3].map((n) => (
+            <button key={n} type="button" onClick={() => { setPeladas(n); trackEvent("soccer_frequency", { placement, per_week: n }); }}
+              aria-pressed={peladas === n} className={chip(peladas === n)}>
+              {n}× por semana
+            </button>
+          ))}
+        </div>
+      </div>
+
       <div aria-live="polite">
         {goleiro && (
           <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl border border-white/15 p-4" data-testid="nota-goleiro">
@@ -265,15 +278,6 @@ export default function CalculadoraFutebol({ placement }: { placement: string })
             </p>
 
             <div className="mb-5 max-w-2xl">
-              <span className="block text-gray-300 text-sm font-medium mb-2" id={idc("sem")}>Quantas vezes por semana você joga?</span>
-              <div role="group" aria-labelledby={idc("sem")} className="flex flex-wrap gap-2 mb-3">
-                {[1, 2, 3].map((n) => (
-                  <button key={n} type="button" onClick={() => { setPeladas(n); trackEvent("soccer_frequency", { placement, per_week: n }); }}
-                    aria-pressed={peladas === n} className={chip(peladas === n)}>
-                    {n}× por semana
-                  </button>
-                ))}
-              </div>
               <p className="text-gray-300 leading-relaxed">
                 {peladas === 1 ? "Um jogo por semana soma" : `${peladas} jogos por semana somam`} cerca de{" "}
                 <strong className="text-white">{kc(sem.kcalLiquida)} kcal</strong> a mais na semana — no máximo{" "}

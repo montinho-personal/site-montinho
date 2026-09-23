@@ -97,6 +97,8 @@ ok("sem chamada de rede", !/fetch\(|sendBeacon|localStorage/.test(comp));
 ok("os eventos levam a faixa, nunca peso, watts nem visor", /band: rotuloFaixa/.test(comp) && !/trackEvent\([^)]*(peso|watts|visor)[,}\s]/.test(comp));
 ok("fora do Compêndio não há resultado", /faixa\?\.met \?\? null/.test(comp));
 ok("kcal com ponto de milhar", /toLocaleString\("pt-BR"\)/.test(comp) && !/\{arredondaKcal\(/.test(comp));
+/* O pedido do responsável: a frequência é pergunta, vem antes do resultado. */
+ok("a pergunta da frequência vem antes da área de resultado", comp.indexOf('id={idc("sem")}') > 0 && comp.indexOf('id={idc("sem")}') < comp.indexOf('aria-live="polite"'));
 ok("aria-live", /aria-live="polite"/.test(comp));
 ok("um H1", (pag.match(/<h1[\s>]/g) ?? []).length === 1);
 const titulo = pag.match(/title: "([^"]+)"/)![1];

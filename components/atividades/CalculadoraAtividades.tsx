@@ -44,14 +44,14 @@ import {
  *
  * É o único campo que muda a natureza da resposta — os outros só mudam o
  * número. Nos artigos ela já vem escolhida, porque quem está lendo sobre
- * boxe não deveria precisar procurar "boxe" numa lista de dez.
+ * natação não deveria precisar procurar "natação" numa lista.
  *
- * TEMPO DE AULA NÃO É TEMPO DE ESFORÇO
+ * TEMPO DE AULA NÃO É TEMPO DE ESFORÇO — MAS O DESCONTO É OPÇÃO
  *
- * Esta é a correção que dá sentido à ferramenta. Uma aula de boxe de uma
- * hora tem aquecimento, explicação, água e conversa; o gasto real vem do
- * tempo em movimento. A ferramenta calcula com o tempo ativo, mostra a
- * conta e deixa desligar — mas não esconde o desconto.
+ * Uma aula de uma hora tem aquecimento, explicação, água e conversa. A
+ * primeira versão descontava isso por padrão; a auditoria mostrou que o
+ * número brigava com os artigos, e o desconto virou caixa opcional (ver
+ * lib/atividades.ts). O padrão é o tempo cheio.
  *
  * PRIVACIDADE
  *
