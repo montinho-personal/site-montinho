@@ -75260,7 +75260,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 
 <h2>A Pista de Dança É Seu Cardio Secreto</h2>
-<p>Aqui está o bônus que quase todo mundo ignora: <strong>o forró é treino</strong>. Uma hora de dança intensa queima entre 300 e 500 calorias, dependendo do seu peso e do ritmo.</p>
+<p>Aqui está o bônus que quase todo mundo ignora: <strong>o forró é treino</strong>. Uma hora de forró queima cerca de 345 a 520 calorias para quem pesa de 60 a 90 kg — faça a conta com o seu peso na <a href="/ferramentas/calculadora-calorias-danca">calculadora de calorias na dança</a>.</p>
 <p>Então saia da beira da pista. Em vez de comer parado, gaste dançando. Você se diverte, socializa e ainda transforma a festa em gasto energético. Mesma noite, resultado oposto.</p>
 
 <h2>O Dia Seguinte Decide Tudo</h2>

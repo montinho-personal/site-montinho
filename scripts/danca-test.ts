@@ -11,7 +11,7 @@ import {
 import { tabelaPorPeso as tabelaZumba } from "../lib/zumba";
 import { ritmo as ritmoCaminhada, metCaminhada } from "../lib/caminhada";
 import { metCorrida } from "../lib/corrida";
-import { kcalPorMinuto } from "../lib/polichinelo";
+import { arredondaKcal, kcalPorMinuto } from "../lib/polichinelo";
 import { ARTIGOS_COM_CALCULADORA_ATIVIDADES, ATIVIDADES } from "../lib/atividades";
 import { CANONICA } from "../lib/ferramentas/canonica";
 import { NOME, ROTA } from "../lib/ferramentas/pos-resultado";
@@ -61,6 +61,13 @@ for (const id of ["academia", "samba", "ballet-fitness", "forro", "ballet", "sal
 }
 ok("o artigo não publica mais as faixas antigas", !/350 a 550|250 a 300 calorias|500 a 600\./.test(art.content + JSON.stringify(art.faq)));
 ok("o artigo declara os encaixes", /O Compêndio não mede esses ritmos/.test(art.content));
+
+/* A auditoria: o artigo de festa junina também publica o forró. */
+{
+  const fj = blogPosts.find((p) => p.slug === "como-aproveitar-festa-junina-sem-engordar")!;
+  const f60 = arredondaKcal(calcula(60, 60, estilo("forro").met).kcal), f90 = arredondaKcal(calcula(90, 60, estilo("forro").met).kcal);
+  ok(`a festa junina publica o forró da calculadora (${f60} a ${f90})`, fj.content.includes(`cerca de ${f60} a ${f90} calorias`) && fj.content.includes("/ferramentas/calculadora-calorias-danca"));
+}
 
 bloco("4. UMA FERRAMENTA POR ARTIGO");
 ok("o artigo embute a calculadora de dança", ARTIGOS_COM_CALCULADORA_DANCA.includes("danca-emagrece"));
