@@ -328,6 +328,13 @@ export type AnalyticsEvent =
   | "boxing_watch_open"
   | "boxing_methodology_open"
   | "boxing_tool_click"
+  /** Calculadora de Calorias na Zumba. `jumps` e `per_week`; nunca o peso. */
+  | "zumba_calculator_view"
+  | "zumba_calculator_use"
+  | "zumba_preset"
+  | "zumba_frequency"
+  | "zumba_methodology_open"
+  | "zumba_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"

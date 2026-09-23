@@ -61,9 +61,10 @@ const itemListSchema = {
     { "@type": "ListItem", position: 21, name: "Calculadora de Composição Corporal", url: `${SITE_URL}/ferramentas/composicao-corporal` },
     { "@type": "ListItem", position: 22, name: "Calculadora de Calorias no Futebol", url: `${SITE_URL}/ferramentas/calculadora-calorias-futebol` },
     { "@type": "ListItem", position: 23, name: "Calculadora de Calorias no Boxe", url: `${SITE_URL}/ferramentas/calculadora-calorias-boxe` },
+    { "@type": "ListItem", position: 24, name: "Calculadora de Calorias na Zumba", url: `${SITE_URL}/ferramentas/calculadora-calorias-zumba` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 24, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 25, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
@@ -201,7 +202,7 @@ const FERRAMENTAS = [
     pergunta: "Quantas calorias a minha aula gasta?",
     tempo: "15 segundos · sem cadastro",
     texto:
-      "Zumba, spinning, dança, natação, jiu-jitsu, escada, corda e bicicleta: informe peso, tempo e ritmo para ver o gasto da sessão — com as pausas da aula como opção — e compare as oito atividades no mesmo tempo.",
+      "Spinning, dança, natação, jiu-jitsu, escada, corda e bicicleta: informe peso, tempo e ritmo para ver o gasto da sessão — com as pausas da aula como opção — e compare as sete atividades no mesmo tempo.",
     quando: "Use quando quiser saber quanto a sua aula realmente gasta, e não o número da tabela de revista. O peso não sai do navegador.",
   },
   {
@@ -266,6 +267,15 @@ const FERRAMENTAS = [
     texto:
       "Calcula o gasto da aula de sombra, saco ou sparring, ou dos seus rounds no ritmo medido pelos socos de dez segundos, e compara com o número do relógio — e com as 1.000 kcal da propaganda.",
     quando: "Use depois da aula, quando o relógio mostrar um número bom demais. O peso não sai do navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-calorias-zumba",
+    nome: "Calculadora de Calorias na Zumba",
+    pergunta: "Zumba emagrece quantos quilos por semana?",
+    tempo: "15 segundos · sem cadastro",
+    texto:
+      "Calcula o gasto da sua aula pelas músicas com e sem salto e mostra quantos quilos as aulas da semana rendem por mês — separando o que vem da dança do que vem da alimentação.",
+    quando: "Use quando quiser saber o que esperar das aulas antes de esperar demais delas. O peso não sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{

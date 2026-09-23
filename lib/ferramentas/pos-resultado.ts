@@ -67,6 +67,7 @@ export const NOME: Record<Ferramenta, string> = {
   composicao: "Calculadora de Composição Corporal",
   futebol: "Calculadora de Calorias no Futebol",
   boxe: "Calculadora de Calorias no Boxe",
+  zumba: "Calculadora de Calorias na Zumba",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -110,6 +111,7 @@ export const ROTA: Record<Ferramenta, string> = {
   composicao: "/ferramentas/composicao-corporal",
   futebol: "/ferramentas/calculadora-calorias-futebol",
   boxe: "/ferramentas/calculadora-calorias-boxe",
+  zumba: "/ferramentas/calculadora-calorias-zumba",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -155,6 +157,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   futebol: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   /* Quem treina boxe para emagrecer precisa saber o gasto do dia, não só o da aula. */
   boxe: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
+  /* Quem viu que as aulas rendem pouco em quilos precisa do déficit, que é onde está o resto. */
+  zumba: { ferramenta: "deficit", label: "Calcular meu déficit" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -355,6 +359,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Você está na faixa de referência ou acima dela. A pergunta deixa de ser quanto ganhar e passa a ser o que fazer com o que já está construído — força, execução e manutenção.",
       pergunta: "Quer que eu te ajude a montar a próxima fase?",
       pedido: "Cheguei na faixa de referência de massa magra e queria ajuda para montar a próxima fase do treino.",
+    },
+  },
+  zumba: {
+    padrao: {
+      interpretacao:
+        "Esses quilos vêm só das aulas — e são poucos, porque a maior parte do resultado de quem emagrece dançando vem da alimentação. A zumba rende quando a semana tem déficit e treino de força junto.",
+      pedido: "Faço zumba e queria entender o que falta para ela me ajudar a emagrecer.",
     },
   },
   boxe: {

@@ -20,13 +20,14 @@
  * e a ferramenta responde a conta que o texto não responde: com o peso de
  * quem pergunta.
  *
- * CAMINHADA, ELÍPTICO, FUTEBOL E BOXE NÃO ENTRAM
+ * CAMINHADA, ELÍPTICO, FUTEBOL, BOXE E ZUMBA NÃO ENTRAM
  *
- * Futebol e boxe entraram aqui e saíram em 22/09/2026. Não porque o
- * argumento acima deixou de valer, mas porque cada um passou a ter uma
- * conta que as outras não têm: o futebol, o revezamento de times; o boxe,
- * o ritmo de socos que o Compêndio mediu e os rounds. Ver lib/futebol.ts
- * e lib/boxe.ts.
+ * Futebol, boxe e zumba entraram aqui e saíram em setembro de 2026. Não
+ * porque o argumento acima deixou de valer, mas porque cada um passou a
+ * ter uma conta que as outras não têm: o futebol, o revezamento de times;
+ * o boxe, o ritmo de socos que o Compêndio mediu e os rounds; a zumba, a
+ * aula dividida entre músicas com e sem salto. Ver lib/futebol.ts,
+ * lib/boxe.ts e lib/zumba.ts.
  *
  * A saída do boxe também corrigiu um erro: esta tabela dava 7,8 METs ao
  * saco e 9,3 ao sparring. No Compêndio de 2024, 7,8 é o sparring e o saco
@@ -137,19 +138,6 @@ export interface Atividade {
  * mudar aqui exige conferir a fonte e mudar lá.
  */
 export const ATIVIDADES: Atividade[] = [
-  {
-    id: "zumba",
-    nome: "Zumba e dança aeróbica",
-    artigoFrase: "uma aula de zumba",
-    sessaoTipica: 50,
-    faixaPrincipal: 0,
-    fracaoAtiva: 0.85,
-    slug: "zumba-emagrece",
-    faixas: [
-      { id: "baixo", nome: "Baixo impacto", met: 5.0, comoReconhecer: "Coreografia sem saltos, dá para conversar em frases curtas.", origem: "dança aeróbica, baixo impacto" },
-      { id: "alto", nome: "Alto impacto", met: 7.3, comoReconhecer: "Com saltos e ritmo acelerado — a aula que deixa sem fôlego.", origem: "dança aeróbica, alto impacto" },
-    ],
-  },
   {
     id: "spinning",
     nome: "Spinning e bike indoor",
@@ -391,7 +379,6 @@ export const NOTA_SEM_PERDA_LOCALIZADA =
  * uma ferramenta por artigo.
  */
 export const ARTIGOS_COM_CALCULADORA_ATIVIDADES: string[] = [
-  "zumba-emagrece",
   "spinning-emagrece",
   "danca-emagrece",
   "natacao-emagrece",
