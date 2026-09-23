@@ -849,7 +849,15 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                           </div>
                           {altsImpressas.length > 0 && (
                             <p className="hidden print:block text-xs mt-0.5 pl-3" data-testid="troca-impressa">
-                              Pode trocar por: {altsImpressas.map(({ alimento, porcoes }) => `${rotuloPorcao(alimento, porcoes)} de ${alimento.nome.toLowerCase()}`).join(" · ")}
+                              {/* Cada alternativa SUBSTITUI o item inteiro, sozinha. O "ou" entre elas
+                                  é explícito porque um ponto separador foi lido como "some tudo". */}
+                              <strong>Ou troque por uma destas (escolha só uma):</strong>{" "}
+                              {altsImpressas.map(({ alimento, porcoes }, i) => (
+                                <span key={alimento.id}>
+                                  {i > 0 && <strong> ou </strong>}
+                                  {`${rotuloPorcao(alimento, porcoes)} de ${alimento.nome.toLowerCase()}`}
+                                </span>
+                              ))}
                             </p>
                           )}
                           {trocando === chaveTroca && (
@@ -857,6 +865,8 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                               {alts.length === 0 ? (
                                 <p className="text-gray-400 text-sm py-2">{SEM_ALTERNATIVA}</p>
                               ) : (
+                                <>
+                                <p className="text-gray-400 text-xs pt-2">Escolha uma para substituir este item:</p>
                                 <ul className="space-y-1 py-1">
                                   {alts.map(({ alimento, porcoes }) => (
                                     <li key={alimento.id}>
@@ -884,6 +894,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                                     </li>
                                   ))}
                                 </ul>
+                                </>
                               )}
                             </div>
                           )}
