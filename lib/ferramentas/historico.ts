@@ -47,6 +47,7 @@ export type Ferramenta =
   | "zumba"
   | "spinning"
   | "danca"
+  | "natacao"
   | "diagnostico"
   | "rotina"
   | "academia"

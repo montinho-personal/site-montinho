@@ -30,7 +30,6 @@ const perto = (a: number, b: number, t = 0.01) => Math.abs(a - b) <= t;
 
 bloco("1. OS METs, TRAVADOS (mudar exige conferir o Compêndio)");
 const ESPERADO: Record<string, [string, number][]> = {
-  natacao: [["moderada", 5.8], ["vigorosa", 9.8]],
   "jiu-jitsu": [["tecnica", 7.8], ["rolamento", 10.3]],
   corda: [["lento", 8.8], ["rapido", 12.3]],
   escada: [["lento", 4.0], ["rapido", 8.8]],
@@ -60,7 +59,7 @@ ok("a frase mantém o decimal do peso", /82,5 kg/.test(fraseContexto(82.5, r, at
    faixa é rótulo, não adjetivo. Ele entra entre parênteses. */
 ok("a faixa entra entre parênteses, sem forçar concordância",
   /\(técnica e drills\) representa/.test(fraseContexto(70, r, atividade("jiu-jitsu"), atividade("jiu-jitsu").faixas[0]))
-    && /\(leve \/ recreativo\) representa/.test(fraseContexto(70, r, atividade("natacao"), atividade("natacao").faixas[0])));
+    && /\(ritmo lento\) representa/.test(fraseContexto(70, r, atividade("corda"), atividade("corda").faixas[0])));
 ok("a frase não promete quilo", !/perde|emagrec/i.test(fraseContexto(70, r, atividade("jiu-jitsu"), atividade("jiu-jitsu").faixas[0])));
 ok("1 kg de gordura leva mais de 10 h (para ninguém tentar)", simulacaoUmQuilo(70, 7.8).minutos > 600);
 
@@ -74,8 +73,6 @@ bloco("2b. A CALCULADORA CONCORDA COM AS FAIXAS DOS ARTIGOS");
  */
 const FAIXAS_DOS_ARTIGOS: [string, string, number, number, number, number][] = [
   /* atividade, faixa, peso, minutos, mínimo do artigo, máximo do artigo */
-  ["natacao", "moderada", 80, 60, 400, 500],
-  ["natacao", "vigorosa", 80, 60, 700, 900],
   /* O artigo de jiu-jitsu conta explicitamente "aquecimento, técnica e rola"
      numa aula de 60 a 90 min — é a faixa em que o desconto é a leitura certa. */
   ["jiu-jitsu", "tecnica", 70, 60, 300, 450],
@@ -119,7 +116,7 @@ bloco("3. O TEMPO ATIVO — opção, nunca padrão");
   ok("a caixa fala do que a pessoa observou, não de uma regra da casa", /Passei boa parte da sessão parado/.test(comp));
 }
 ok("jiu-jitsu, quando pedido, desconta pausas", tempoAtivo(60, atividade("jiu-jitsu")) === 39);
-ok("natação é contínua (não desconta)", tempoAtivo(60, atividade("natacao")) === 60 && atividade("natacao").fracaoAtiva === null);
+ok("bicicleta é contínua (não desconta)", tempoAtivo(60, atividade("bicicleta")) === 60);
 ok("bicicleta é contínua", atividade("bicicleta").fracaoAtiva === null);
 ok("toda fração declarada fica entre 40% e 95%",
   ATIVIDADES.every((a) => a.fracaoAtiva === null || (a.fracaoAtiva >= 0.4 && a.fracaoAtiva <= 0.95)));
@@ -144,7 +141,7 @@ ok("tabela por peso cresce", tab.every((l, i, a) => i === 0 || l.kcal[0] > a[i -
 ok("uma coluna por faixa", tab.every((l) => l.kcal.length === atividade("jiu-jitsu").faixas.length));
 ok("o pós-resultado não promete o desconto de pausas, que é opcional",
   !/tempo de aula não é todo tempo de esforço/.test(readFileSync("lib/ferramentas/pos-resultado.ts", "utf8")));
-ok("futebol, boxe, zumba, spinning e dança saíram do seletor", !ATIVIDADES.some((a) => ["futebol", "boxe", "zumba", "spinning", "danca"].includes(a.id)));
+ok("futebol, boxe, zumba, spinning, dança e natação saíram do seletor", !ATIVIDADES.some((a) => ["futebol", "boxe", "zumba", "spinning", "danca", "natacao"].includes(a.id)));
 
 bloco("5. UMA FERRAMENTA POR ARTIGO");
 const slugs = new Set(blogPosts.map((p) => p.slug));

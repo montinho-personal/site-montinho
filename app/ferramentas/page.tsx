@@ -64,9 +64,10 @@ const itemListSchema = {
     { "@type": "ListItem", position: 24, name: "Calculadora de Calorias na Zumba", url: `${SITE_URL}/ferramentas/calculadora-calorias-zumba` },
     { "@type": "ListItem", position: 25, name: "Calculadora de Calorias no Spinning", url: `${SITE_URL}/ferramentas/calculadora-calorias-spinning` },
     { "@type": "ListItem", position: 26, name: "Calculadora de Calorias na Dança", url: `${SITE_URL}/ferramentas/calculadora-calorias-danca` },
+    { "@type": "ListItem", position: 27, name: "Calculadora de Calorias na Natação", url: `${SITE_URL}/ferramentas/calculadora-calorias-natacao` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 27, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 28, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
@@ -204,7 +205,7 @@ const FERRAMENTAS = [
     pergunta: "Quantas calorias a minha aula gasta?",
     tempo: "15 segundos · sem cadastro",
     texto:
-      "Natação, jiu-jitsu, escada, corda e bicicleta: informe peso, tempo e ritmo para ver o gasto da sessão — com as pausas da aula como opção — e compare as cinco atividades no mesmo tempo.",
+      "Jiu-jitsu, escada, corda e bicicleta: informe peso, tempo e ritmo para ver o gasto da sessão — com as pausas da aula como opção — e compare as quatro atividades no mesmo tempo.",
     quando: "Use quando quiser saber quanto a sua aula realmente gasta, e não o número da tabela de revista. O peso não sai do navegador.",
   },
   {
@@ -296,6 +297,15 @@ const FERRAMENTAS = [
     texto:
       "Escolha o que você dança — salão, forró, ballet, funk, samba no pé — e veja o gasto com o seu peso, comparado com todos os outros ritmos no mesmo tempo, e quantos quilos por mês isso rende.",
     quando: "Use quando quiser saber se o seu ritmo conta como treino. O peso não sai do navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-calorias-natacao",
+    nome: "Calculadora de Calorias na Natação",
+    pergunta: "Quanto o meu treino na piscina gastou de verdade?",
+    tempo: "15 segundos · sem cadastro",
+    texto:
+      "Escolha o nado — crawl, costas, peito, borboleta ou nado de lazer — e veja o gasto com o seu peso, descontando o tempo parado na borda, comparado com os outros nados no mesmo tempo.",
+    quando: "Use depois da piscina, antes da fome. O peso não sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{
