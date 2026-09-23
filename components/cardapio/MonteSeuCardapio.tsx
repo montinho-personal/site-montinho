@@ -761,9 +761,16 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
           <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-2 print:hidden" style={{ color: "#BA9E50" }}>
             Pronto. Seu cardápio ganhou um chalalá.
           </p>
-          <p className="hidden print:block text-xs tracking-[0.18em] uppercase mb-2">
-            Montinho FitChef · montinhopersonal.com.br/ferramentas/monte-seu-cardapio
-          </p>
+          {/* Cabeçalho do PDF: o logo é aço e grafite, então lê bem no papel branco. */}
+          <div className="hidden print:flex items-center gap-4 mb-4 pb-3 border-b border-white/10" data-testid="marca-impressa">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.svg" alt="Montinho Personal Trainer" style={{ height: 56, width: "auto" }} />
+            <p className="text-xs tracking-[0.18em] uppercase leading-relaxed break-words">
+              Montinho FitChef
+              <br />
+              montinhopersonal.com.br/ferramentas/monte-seu-cardapio
+            </p>
+          </div>
           <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-5" style={h}>
             Seu cardápio sugerido
           </h2>
