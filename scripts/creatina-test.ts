@@ -126,6 +126,7 @@ ok("o fator da massa magra aparece como 0,075, não arredondado para 0,08", /g3\
 ok("o módulo diz que a dose alta não rende mais que 5 g", /nenhum estudo mostrou que|não mostrou render mais que 5 g/.test(comp));
 ok("depois de calcular, a tela vai até a dose (card no topo), não até o meio do resultado",
   /card\.scrollIntoView\(\{ block: "start"/.test(comp) && /ref=\{doseRef\}[^>]*scroll-mt-24[^>]*data-testid="resultado-creatina"/.test(comp) && /focus\(\{ preventScroll: true \}\)/.test(comp));
+ok("Enter no % de gordura rola até a tabela prática", /onKeyDown=\{enterGordura\}/.test(comp) && /ref=\{praticaRef\}[^>]*scroll-mt-24/.test(comp));
 ok("o comparador separa preço de qualidade", /Preço não diz nada sobre qualidade/.test(comp));
 ok("a mensagem do WhatsApp é a pedida e não leva o peso", /Usei sua Calculadora de Creatina e queria entender como organizar meu treino para meu objetivo/.test(comp));
 ok("sem página por peso", !readdirSync("app/ferramentas").some((d) => /creatina-.*\d+kg/.test(d)) && !/creatina-para-\d+kg/.test(readFileSync("app/sitemap.ts", "utf8")));
