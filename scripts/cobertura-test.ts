@@ -43,6 +43,7 @@ import { ARTIGOS_COM_CALCULADORA_ZUMBA } from "../lib/zumba";
 import { ARTIGOS_COM_CALCULADORA_SPINNING } from "../lib/spinning";
 import { ARTIGOS_COM_CALCULADORA_DANCA } from "../lib/danca";
 import { ARTIGOS_COM_CALCULADORA_NATACAO } from "../lib/natacao";
+import { ARTIGOS_COM_CALCULADORA_JIU } from "../lib/jiujitsu";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -85,6 +86,7 @@ const REGISTROS: [string, string[]][] = [
   ["spinning", ARTIGOS_COM_CALCULADORA_SPINNING],
   ["dança", ARTIGOS_COM_CALCULADORA_DANCA],
   ["natação", ARTIGOS_COM_CALCULADORA_NATACAO],
+  ["jiu-jitsu", ARTIGOS_COM_CALCULADORA_JIU],
 ];
 
 const onde = new Map<string, string>();

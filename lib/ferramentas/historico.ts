@@ -48,6 +48,7 @@ export type Ferramenta =
   | "spinning"
   | "danca"
   | "natacao"
+  | "jiujitsu"
   | "diagnostico"
   | "rotina"
   | "academia"

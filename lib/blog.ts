@@ -117068,12 +117068,12 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     excerpt: "O jiu-jitsu queima bem, mas de um jeito diferente das lutas de trocação: o gasto se concentra no rola, e o resto da aula é técnica parada. Veja os números reais e o que decide o resultado.",
     category: "Emagrecimento",
     date: "2026-09-11",
-    updatedAt: "2026-09-11",
+    updatedAt: "2026-09-23",
     readTime: "9 min",
     author: "Montinho",
     tags: ["jiu-jitsu", "emagrecimento", "queima de calorias", "artes marciais", "musculação"],
     faq: [
-      { question: "Quantas calorias queima um treino de jiu-jitsu?", answer: "Numa aula típica de 60 a 90 minutos, entre 400 e 800 kcal para a maioria das pessoas. A variação é grande porque o gasto se concentra no rola: uma aula com muita técnica e pouco sparring fica na faixa baixa; uma aula com seis ou sete rolas seguidos, em alguém mais pesado, passa disso." },
+      { question: "Quantas calorias queima um treino de jiu-jitsu?", answer: "Numa aula de 60 a 90 minutos, cerca de 425 a 845 kcal para quem pesa 70 kg — de uma aula de técnica com um rola a uma aula de competição com oito. A variação é grande porque o gasto se concentra no rola; para quem pesa 90 kg, a aula de competição passa de 1.000 kcal." },
       { question: "Jiu-jitsu emagrece mais que muay thai?", answer: "Por aula, o muay thai costuma gastar mais, porque mantém a frequência cardíaca alta do começo ao fim. O jiu-jitsu alterna picos intensos no rola com períodos parados de técnica. Na prática isso importa pouco: quem treina três vezes por semana e come em déficit emagrece nos dois." },
       { question: "Por que fico tão cansado se quase não me mexo?", answer: "Porque grande parte do esforço no jiu-jitsu é isométrico — você sustenta, empurra e resiste sem sair do lugar. Contração sustentada comprime o vaso e atrapalha a chegada de sangue no músculo, então ele fadiga rápido e a respiração dispara. Cansaço alto com deslocamento baixo é a assinatura da modalidade." },
       { question: "Preciso fazer musculação junto com o jiu-jitsu?", answer: "Não é obrigatório, mas resolve dois problemas de uma vez: protege a massa muscular durante o déficit calórico e reduz o risco de lesão em ombro, joelho e pescoço, que são as áreas mais exigidas pela pegada e pela guarda." },
@@ -117083,11 +117083,11 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <p>A resposta honesta tem duas partes. A primeira: sim, o jiu-jitsu gasta calorias de verdade e resolve o problema que derruba a maioria das dietas, que é a desistência. A segunda: <strong>nenhuma modalidade emagrece sozinha</strong> — quem decide é o déficit calórico. Vamos aos números e ao que o jiu-jitsu tem de diferente.</p>
 
 <h2>Quantas calorias um treino de jiu-jitsu queima</h2>
-<p>Faixas honestas para uma aula de 60 a 90 minutos, contando aquecimento, técnica e rola:</p>
+<p>Pelo Compêndio de Atividades Físicas, contando aquecimento, técnica e rola — rolas de 6 minutos, com 1 de descanso entre eles:</p>
 <ul>
-<li><strong>Aula com muita técnica e um ou dois rolas, iniciante:</strong> 300 a 450 kcal;</li>
-<li><strong>Aula típica, com três a cinco rolas:</strong> 450 a 700 kcal;</li>
-<li><strong>Aula de competição, rolas seguidos, pessoa mais pesada:</strong> 700 a 1.000 kcal.</li>
+<li><strong>Aula de 60 minutos com muita técnica e um rola:</strong> cerca de 425 kcal para 70 kg e 550 para 90 kg;</li>
+<li><strong>Aula típica de 75 minutos, com quatro rolas:</strong> cerca de 620 kcal para 70 kg e 795 para 90 kg;</li>
+<li><strong>Aula de competição de 90 minutos, com oito rolas:</strong> cerca de 845 kcal para 70 kg e 1.085 para 90 kg.</li>
 </ul>
 <p>Três coisas explicam essa variação: o seu peso corporal, porque mover 95 kg custa mais que mover 65 kg; <strong>quanto tempo você passa rolando de fato</strong>, que é o que mais pesa; e o seu nível, porque faixa-branca gasta energia à toa em força desnecessária enquanto faixa-preta economiza cada movimento.</p>
 <p>Essa última é curiosa e vale dizer com clareza: <strong>ficar melhor no jiu-jitsu tende a reduzir o gasto calórico por rola.</strong> Você aprende a usar alavanca no lugar de força bruta. O que compensa é que, com o tempo, você rola mais rounds e em ritmo mais alto.</p>

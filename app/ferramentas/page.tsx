@@ -65,9 +65,10 @@ const itemListSchema = {
     { "@type": "ListItem", position: 25, name: "Calculadora de Calorias no Spinning", url: `${SITE_URL}/ferramentas/calculadora-calorias-spinning` },
     { "@type": "ListItem", position: 26, name: "Calculadora de Calorias na Dança", url: `${SITE_URL}/ferramentas/calculadora-calorias-danca` },
     { "@type": "ListItem", position: 27, name: "Calculadora de Calorias na Natação", url: `${SITE_URL}/ferramentas/calculadora-calorias-natacao` },
+    { "@type": "ListItem", position: 28, name: "Calculadora de Calorias no Jiu-Jitsu", url: `${SITE_URL}/ferramentas/calculadora-calorias-jiu-jitsu` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 28, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 29, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
@@ -205,7 +206,7 @@ const FERRAMENTAS = [
     pergunta: "Quantas calorias a minha aula gasta?",
     tempo: "15 segundos · sem cadastro",
     texto:
-      "Jiu-jitsu, escada, corda e bicicleta: informe peso, tempo e ritmo para ver o gasto da sessão — com as pausas da aula como opção — e compare as quatro atividades no mesmo tempo.",
+      "Pular corda, subir escada e bicicleta de rua: informe peso, tempo e ritmo para ver o gasto da sessão — com as pausas como opção — e compare as três no mesmo tempo.",
     quando: "Use quando quiser saber quanto a sua aula realmente gasta, e não o número da tabela de revista. O peso não sai do navegador.",
   },
   {
@@ -306,6 +307,15 @@ const FERRAMENTAS = [
     texto:
       "Escolha o nado — crawl, costas, peito, borboleta ou nado de lazer — e veja o gasto com o seu peso, descontando o tempo parado na borda, comparado com os outros nados no mesmo tempo.",
     quando: "Use depois da piscina, antes da fome. O peso não sai do navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-calorias-jiu-jitsu",
+    nome: "Calculadora de Calorias no Jiu-Jitsu",
+    pergunta: "Quanto a minha aula de jiu-jitsu gastou?",
+    tempo: "15 segundos · sem cadastro",
+    texto:
+      "Informe a duração da aula e quantos rolas você fez: a calculadora separa técnica de rola, mostra o gasto com o seu peso e quanto cada rola a mais soma de verdade.",
+    quando: "Use depois do treino, com a contagem de rolas ainda na cabeça. O peso não sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{
