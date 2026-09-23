@@ -69,6 +69,8 @@ import { ARTIGOS_COM_CALCULADORA_SPINNING } from "@/lib/spinning";
 import CalculadoraSpinning from "@/components/spinning/CalculadoraSpinning";
 import { ARTIGOS_COM_CALCULADORA_DANCA } from "@/lib/danca";
 import CalculadoraDanca from "@/components/danca/CalculadoraDanca";
+import { ARTIGOS_COM_CALCULADORA_NATACAO } from "@/lib/natacao";
+import CalculadoraNatacao from "@/components/natacao/CalculadoraNatacao";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -234,7 +236,9 @@ export default async function BlogPost({ params }: Props) {
                                         ? "spinning"
                                         : ARTIGOS_COM_CALCULADORA_DANCA.includes(post.slug)
                                           ? "danca"
-                                          : null;
+                                          : ARTIGOS_COM_CALCULADORA_NATACAO.includes(post.slug)
+                                            ? "natacao"
+                                            : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -458,6 +462,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraSpinning placement={post.slug} />
                 ) : qualCalc === "danca" ? (
                   <CalculadoraDanca placement={post.slug} />
+                ) : qualCalc === "natacao" ? (
+                  <CalculadoraNatacao placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}

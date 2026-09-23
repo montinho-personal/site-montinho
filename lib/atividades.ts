@@ -20,15 +20,16 @@
  * e a ferramenta responde a conta que o texto não responde: com o peso de
  * quem pergunta.
  *
- * CAMINHADA, ELÍPTICO, FUTEBOL, BOXE, ZUMBA, SPINNING E DANÇA NÃO ENTRAM
+ * CAMINHADA, ELÍPTICO, FUTEBOL, BOXE, ZUMBA, SPINNING, DANÇA E NATAÇÃO NÃO ENTRAM
  *
- * Futebol, boxe, zumba, spinning e dança entraram aqui e saíram em
- * setembro de 2026. Não porque o argumento acima deixou de valer, mas porque cada um
+ * Futebol, boxe, zumba, spinning, dança e natação entraram aqui e saíram
+ * em setembro de 2026. Não porque o argumento acima deixou de valer, mas porque cada um
  * passou a ter uma conta que as outras não têm: o futebol, o revezamento
  * de times; o boxe, o ritmo de socos que o Compêndio mediu e os rounds; a
  * zumba, a aula dividida entre músicas com e sem salto; o spinning, a
- * potência em watts que a bike mostra; a dança, o estilo. Ver
- * lib/futebol.ts, lib/boxe.ts, lib/zumba.ts, lib/spinning.ts e lib/danca.ts.
+ * potência em watts que a bike mostra; a dança, o estilo; a natação, o nado
+ * e o tempo na borda. Ver lib/futebol.ts, lib/boxe.ts, lib/zumba.ts,
+ * lib/spinning.ts, lib/danca.ts e lib/natacao.ts.
  *
  * A saída do boxe também corrigiu um erro: esta tabela dava 7,8 METs ao
  * saco e 9,3 ao sparring. No Compêndio de 2024, 7,8 é o sparring e o saco
@@ -139,19 +140,6 @@ export interface Atividade {
  * mudar aqui exige conferir a fonte e mudar lá.
  */
 export const ATIVIDADES: Atividade[] = [
-  {
-    id: "natacao",
-    nome: "Natação",
-    artigoFrase: "um treino de natação",
-    sessaoTipica: 45,
-    faixaPrincipal: 0,
-    fracaoAtiva: null,
-    slug: "natacao-emagrece",
-    faixas: [
-      { id: "moderada", nome: "Leve / recreativo", met: 5.8, comoReconhecer: "Nado contínuo e confortável, sem cronômetro — o que o artigo chama de nado recreativo.", origem: "natação, crawl lento, esforço moderado" },
-      { id: "vigorosa", nome: "Crawl vigoroso", met: 9.8, comoReconhecer: "Séries de velocidade, com pouco descanso na borda.", origem: "natação, crawl rápido, esforço vigoroso" },
-    ],
-  },
   {
     id: "jiu-jitsu",
     nome: "Jiu-jitsu e artes marciais",
@@ -354,7 +342,6 @@ export const NOTA_SEM_PERDA_LOCALIZADA =
  * uma ferramenta por artigo.
  */
 export const ARTIGOS_COM_CALCULADORA_ATIVIDADES: string[] = [
-  "natacao-emagrece",
   "jiu-jitsu-emagrece",
   "subir-escada-emagrece",
 ];

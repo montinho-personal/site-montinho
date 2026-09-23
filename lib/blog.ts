@@ -75780,7 +75780,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h3>Praia: O Ginásio Que a Natureza Montou</h3>
 <ul>
   <li><strong>Corrida na areia:</strong> muito mais intensa que na calçada. 20 minutos valem 35 em piso firme.</li>
-  <li><strong>Natação:</strong> cardio e força no mesmo movimento. 30 minutos moderados queimam 250 a 400 calorias.</li>
+  <li><strong>Natação:</strong> cardio sem impacto. 30 minutos de crawl leve queimam cerca de 185 a 275 calorias para quem pesa de 60 a 90 kg, e de 310 a 465 em ritmo forte — faça a conta com o seu peso na <a href="/ferramentas/calculadora-calorias-natacao">calculadora de calorias na natação</a>.</li>
   <li><strong>Vôlei de praia e futevôlei:</strong> aeróbico, força e vida social num jogo só.</li>
   <li><strong>Peso corporal na areia úmida:</strong> agachamento, flexão e burpee ganham dificuldade extra de graça.</li>
 </ul>
@@ -99391,12 +99391,12 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     title: "Natação Emagrece? Calorias, Prós e Contras",
     metaTitle: "Natação Emagrece? 400 a 900 kcal por Hora de Nado",
     metaDescription:
-      "O crawl moderado gasta de 550 a 700 kcal por hora, perto da corrida e sem impacto. Veja a fome que vem depois e por que a piscina pede força junto.",
+      "O crawl gasta de 485 a 825 kcal por hora para 80 kg, do leve ao forte — perto da corrida, sem impacto. Veja a fome depois e por que a piscina pede força.",
     excerpt:
       "A natação é um dos melhores aeróbicos de baixo impacto que existem, com gasto calórico alto. Mas a fome pós-piscina e a ausência de sobrecarga óssea são nuances que você precisa conhecer antes de apostar tudo nela.",
     category: "Treino",
     date: "2026-07-28",
-    updatedAt: "2026-08-02",
+    updatedAt: "2026-09-23",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["natação", "emagrecimento", "cardio", "baixo impacto", "treino de força"],
@@ -99405,7 +99405,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
         question:
           "Quantas calorias a natação queima por hora?",
         answer:
-          "De 400 a 900 kcal por hora, dependendo do nado e da intensidade. Um crawl moderado gasta 550 a 700 kcal/h, comparável à corrida, mas sem o impacto nas articulações. Nados intensos como borboleta ficam no topo da faixa.",
+          "No crawl, de 400 a 900 kcal por hora em números redondos — cerca de 425 a 925 kcal para quem pesa de 70 a 90 kg, do ritmo leve ao forte. É comparável à corrida, mas sem o impacto nas articulações. A borboleta passa disso: cerca de 1.160 kcal por hora para 80 kg.",
       },
       {
         question:
@@ -99446,11 +99446,12 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>O gasto depende do nado, da intensidade e da sua técnica (nadador ruim gasta mais se debatendo, mas dura menos tempo). Estimativas para uma pessoa de 80kg:</p>
 
 <ul>
-<li>Nado leve/recreativo: 400 a 500 kcal por hora</li>
-<li>Crawl em ritmo moderado: 550 a 700 kcal por hora</li>
-<li>Crawl intenso ou borboleta: 700 a 900 kcal por hora</li>
+<li>Crawl leve ou nado de lazer: cerca de 485 a 505 kcal por hora</li>
+<li>Costas ou peito em ritmo de treino: cerca de 800 a 865 kcal por hora</li>
+<li>Crawl forte: cerca de 825 kcal por hora</li>
+<li>Borboleta: cerca de 1.160 kcal por hora — o nado mais caro que existe, e poucos o sustentam por muito tempo</li>
 <li>Hidroginástica: 300 a 400 kcal por hora</li>
-<li>Comparação: caminhada rápida: ~300 kcal/h; corrida: 550 a 700 kcal/h</li>
+<li>Comparação: caminhada rápida (6 km/h): cerca de 405 kcal/h; corrida leve (8 km/h): cerca de 725 kcal/h</li>
 </ul>
 
 <p>Ou seja: em gasto por hora, a natação briga de igual para igual com a corrida — com a vantagem de não castigar joelhos e coluna. Para comparar com outras opções de cardio, veja <a href="/blog/bicicleta-emagrece">bicicleta emagrece?</a> e <a href="/blog/pular-corda-emagrece">pular corda emagrece?</a>.</p>

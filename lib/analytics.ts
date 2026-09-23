@@ -351,6 +351,13 @@ export type AnalyticsEvent =
   | "dance_frequency"
   | "dance_methodology_open"
   | "dance_tool_click"
+  /** Calculadora de Calorias na Natação. `stroke` e `per_week`; nunca o peso. */
+  | "swimming_calculator_view"
+  | "swimming_calculator_use"
+  | "swimming_preset"
+  | "swimming_frequency"
+  | "swimming_methodology_open"
+  | "swimming_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"

@@ -70,6 +70,7 @@ export const NOME: Record<Ferramenta, string> = {
   zumba: "Calculadora de Calorias na Zumba",
   spinning: "Calculadora de Calorias no Spinning",
   danca: "Calculadora de Calorias na Dança",
+  natacao: "Calculadora de Calorias na Natação",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -116,6 +117,7 @@ export const ROTA: Record<Ferramenta, string> = {
   zumba: "/ferramentas/calculadora-calorias-zumba",
   spinning: "/ferramentas/calculadora-calorias-spinning",
   danca: "/ferramentas/calculadora-calorias-danca",
+  natacao: "/ferramentas/calculadora-calorias-natacao",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -167,6 +169,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   spinning: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   /* Quem viu que dançar rende pouco em quilos precisa do déficit, que é onde está o resto. */
   danca: { ferramenta: "deficit", label: "Calcular meu déficit" },
+  /* A fome depois da piscina é o que trava; o déficit da semana é a conta que resolve. */
+  natacao: { ferramenta: "deficit", label: "Calcular meu déficit" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -367,6 +371,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Você está na faixa de referência ou acima dela. A pergunta deixa de ser quanto ganhar e passa a ser o que fazer com o que já está construído — força, execução e manutenção.",
       pergunta: "Quer que eu te ajude a montar a próxima fase?",
       pedido: "Cheguei na faixa de referência de massa magra e queria ajuda para montar a próxima fase do treino.",
+    },
+  },
+  natacao: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto do treino, não o do seu dia. A natação gasta bem, mas a fome depois da piscina é famosa — e sem treino de força junto, ela não protege osso nem músculo como a musculação.",
+      pedido: "Nado e queria entender o que falta para a natação me ajudar a emagrecer.",
     },
   },
   danca: {
