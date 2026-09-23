@@ -146,7 +146,7 @@ for (const s of ARTIGOS_COM_CALCULADORA_GLP1) {
 ok("canônica e pós-resultado", CANONICA.glp1?.href === ROTA.glp1 && NOME.glp1 === "Calculadora de Massa Magra no GLP-1");
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute pelo registro", /ARTIGOS_COM_CALCULADORA_GLP1\.includes\(post\.slug\)/.test(blog) && /<CalculadoraGLP1 placement=\{post\.slug\} \/>/.test(blog));
-ok("hub e sitemap", /massa-magra-glp1/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /massa-magra-glp1/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /massa-magra-glp1/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /massa-magra-glp1/.test(readFileSync("app/sitemap.ts", "utf8")));
 ok("um H1", (tool.match(/<h1[\s>]/g) ?? []).length === 1);
 ok("duas tabelas em HTML", (tool.match(/<table/g) ?? []).length >= 2);
 ok("CTA centralizado", /<PosResultado[\s\S]*ferramenta="glp1"/.test(comp));

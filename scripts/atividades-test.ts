@@ -153,7 +153,7 @@ const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute com a atividade do artigo já escolhida",
   /ARTIGOS_COM_CALCULADORA_ATIVIDADES\.includes\(post\.slug\)/.test(blog) && /atividadeInicial=\{atividadeDoArtigo\(post\.slug\)\?\.id\}/.test(blog));
 ok("o blog põe o convite pelo registro de link", /ARTIGOS_COM_LINK_ATIVIDADES\.includes\(post\.slug\) && <LinkFerramentaAtividades/.test(blog));
-ok("hub e sitemap", /calculadora-calorias-atividades/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /calculadora-calorias-atividades/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /calculadora-calorias-atividades/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /calculadora-calorias-atividades/.test(readFileSync("app/sitemap.ts", "utf8")));
 const comp = readFileSync("components/atividades/CalculadoraAtividades.tsx", "utf8");
 ok("sem chamada de rede", !/fetch\(|sendBeacon/.test(comp));
 ok("CTA centralizado", /<PosResultado[\s\S]*ferramenta="atividades"/.test(comp));

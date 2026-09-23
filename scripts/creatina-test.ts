@@ -115,7 +115,7 @@ const pag = readFileSync("app/ferramentas/calculadora-creatina/page.tsx", "utf8"
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("canônica", CANONICA.creatina?.href === "/ferramentas/calculadora-creatina");
 ok("o blog embute e linka pelos registros", /ARTIGOS_COM_CALCULADORA_CREATINA\.includes\(post\.slug\)/.test(blog) && /ARTIGOS_COM_LINK_CREATINA\.includes\(post\.slug\) && <LinkFerramentaCreatina/.test(blog));
-ok("hub e sitemap", /calculadora-creatina/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /calculadora-creatina/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /calculadora-creatina/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /calculadora-creatina/.test(readFileSync("app/sitemap.ts", "utf8")));
 ok("sem chamada de rede", !/fetch\(|sendBeacon|localStorage/.test(comp));
 ok("os eventos nunca levam peso nem preço (só a faixa)", !/trackEvent\([^)]*\b(peso|pesoKg|preco|price|weight)\s*:/.test(comp) && /weight_range: faixaPeso/.test(comp));
 ok("saturação começa desligada", /useState\(false\);\s*\n\s*const \[poteAberto/.test(comp) && /const \[comSaturacao, setComSaturacao\] = useState\(false\)/.test(comp));

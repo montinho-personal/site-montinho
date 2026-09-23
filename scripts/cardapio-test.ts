@@ -580,14 +580,14 @@ ok("está no sitemap", fs.readFileSync("app/sitemap.ts", "utf8").includes("/ferr
   ok("existe o botão de pular a etapa de habituais", /Pular e gerar agora/.test(comp));
   ok("pular gera o cardápio de fato", /Pular e gerar agora/.test(comp) && /avanca\(\{ etapa: "habituais" \}\); gerar\(pedido\)/.test(corrido));
   ok("o texto diz que a etapa é opcional e ajustável depois", /única opcional/.test(corrido) && /botão de trocar/.test(corrido));
-  const hub = fs.readFileSync("app/ferramentas/page.tsx", "utf8");
+  const hub = fs.readFileSync("lib/ferramentas/catalogo.ts", "utf8");
   ok(
     "o card não promete 2 minutos para um wizard de 7 telas",
     !/tempo: "2 minutos · sem cadastro"/.test(hub) && /3 a 5 minutos/.test(hub),
     "prometer menos do que se entrega gera abandono no meio"
   );
 }
-ok("está na central /ferramentas", fs.readFileSync("app/ferramentas/page.tsx", "utf8").includes("/ferramentas/monte-seu-cardapio"));
+ok("está na central /ferramentas", fs.readFileSync("lib/ferramentas/catalogo.ts", "utf8").includes("/ferramentas/monte-seu-cardapio"));
 {
   const paginaNome = fs.readFileSync("app/ferramentas/monte-seu-cardapio/page.tsx", "utf8");
   const compNome = fs.readFileSync("components/cardapio/MonteSeuCardapio.tsx", "utf8");

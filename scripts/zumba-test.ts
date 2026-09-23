@@ -71,7 +71,7 @@ const comp = readFileSync("components/zumba/CalculadoraZumba.tsx", "utf8");
 const pag = readFileSync("app/ferramentas/calculadora-calorias-zumba/page.tsx", "utf8");
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute pelo registro", /ARTIGOS_COM_CALCULADORA_ZUMBA\.includes\(post\.slug\)/.test(blog) && /<CalculadoraZumba placement=\{post\.slug\} \/>/.test(blog));
-ok("hub e sitemap", /calculadora-calorias-zumba/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /calculadora-calorias-zumba/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /calculadora-calorias-zumba/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /calculadora-calorias-zumba/.test(readFileSync("app/sitemap.ts", "utf8")));
 ok("sem chamada de rede", !/fetch\(|sendBeacon|localStorage/.test(comp));
 ok("os eventos nunca levam o peso", !/trackEvent\([^)]*peso/.test(comp));
 ok("a versão do Compêndio é declarada na página", /NOTA_VERSAO/.test(pag));

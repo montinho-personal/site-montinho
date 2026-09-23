@@ -81,7 +81,7 @@ const comp = readFileSync("components/danca/CalculadoraDanca.tsx", "utf8");
 const pag = readFileSync("app/ferramentas/calculadora-calorias-danca/page.tsx", "utf8");
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute pelo registro", /ARTIGOS_COM_CALCULADORA_DANCA\.includes\(post\.slug\)/.test(blog) && /<CalculadoraDanca placement=\{post\.slug\} \/>/.test(blog));
-ok("hub e sitemap", /calculadora-calorias-danca/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /calculadora-calorias-danca/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /calculadora-calorias-danca/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /calculadora-calorias-danca/.test(readFileSync("app/sitemap.ts", "utf8")));
 ok("sem chamada de rede", !/fetch\(|sendBeacon|localStorage/.test(comp));
 ok("os eventos nunca levam o peso", !/trackEvent\([^)]*peso/.test(comp));
 ok("a pergunta da frequência vem antes da área de resultado", comp.indexOf('id={idc("sem")}') > 0 && comp.indexOf('id={idc("sem")}') < comp.indexOf('aria-live="polite"'));

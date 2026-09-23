@@ -456,7 +456,7 @@ bloco("13. A FERRAMENTA ESTÁ LIGADA AO SITE");
 const artigos = readFileSync("lib/mobilidade/artigos.ts", "utf8");
 const pagina = readFileSync("app/ferramentas/teste-mobilidade/page.tsx", "utf8");
 const sitemap = readFileSync("app/sitemap.ts", "utf8");
-const hub = readFileSync("app/ferramentas/page.tsx", "utf8");
+const hub = readFileSync("lib/ferramentas/catalogo.ts", "utf8");
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 const convite = readFileSync("components/mobilidade/ConviteMobilidade.tsx", "utf8");
 

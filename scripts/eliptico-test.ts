@@ -75,7 +75,7 @@ ok("eliptico-emagrece saiu da FC (uma ferramenta por artigo)",
 ok("canônica e pós-resultado", CANONICA.eliptico?.href === ROTA.eliptico && NOME.eliptico === "Calculadora de Calorias do Elíptico");
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute pelo registro", /ARTIGOS_COM_CALCULADORA_ELIPTICO\.includes\(post\.slug\)/.test(blog) && /<CalculadoraEliptico placement=\{post\.slug\} \/>/.test(blog));
-ok("hub e sitemap", /calculadora-calorias-eliptico/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /calculadora-calorias-eliptico/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /calculadora-calorias-eliptico/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /calculadora-calorias-eliptico/.test(readFileSync("app/sitemap.ts", "utf8")));
 const comp = readFileSync("components/eliptico/CalculadoraEliptico.tsx", "utf8");
 ok("sem chamada de rede", !/fetch\(|sendBeacon/.test(comp));
 ok("CTA centralizado", /<PosResultado[\s\S]*ferramenta="eliptico"/.test(comp));

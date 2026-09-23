@@ -92,7 +92,7 @@ const comp = readFileSync("components/spinning/CalculadoraSpinning.tsx", "utf8")
 const pag = readFileSync("app/ferramentas/calculadora-calorias-spinning/page.tsx", "utf8");
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute pelo registro", /ARTIGOS_COM_CALCULADORA_SPINNING\.includes\(post\.slug\)/.test(blog) && /<CalculadoraSpinning placement=\{post\.slug\} \/>/.test(blog));
-ok("hub e sitemap", /calculadora-calorias-spinning/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /calculadora-calorias-spinning/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /calculadora-calorias-spinning/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /calculadora-calorias-spinning/.test(readFileSync("app/sitemap.ts", "utf8")));
 ok("sem chamada de rede", !/fetch\(|sendBeacon|localStorage/.test(comp));
 ok("os eventos levam a faixa, nunca peso, watts nem visor", /band: rotuloFaixa/.test(comp) && !/trackEvent\([^)]*(peso|watts|visor)[,}\s]/.test(comp));
 ok("fora do Compêndio não há resultado", /faixa\?\.met \?\? null/.test(comp));

@@ -389,7 +389,7 @@ ok("tem H1", /<h1/.test(pagina));
 ok("tem conteúdo indexável", (pagina.match(/<h2/g) ?? []).length >= 5 && pagina.length > 6000);
 ok("BreadcrumbList, sem schema inventado", /BreadcrumbList/.test(paginaSemComentarios) && !/AggregateRating|"Review"|FAQPage/.test(paginaSemComentarios));
 ok("está no sitemap", fs.readFileSync("app/sitemap.ts", "utf8").includes("/ferramentas/calculadora-volume-treino"));
-ok("está na central", fs.readFileSync("app/ferramentas/page.tsx", "utf8").includes("/ferramentas/calculadora-volume-treino"));
+ok("está na central", fs.readFileSync("lib/ferramentas/catalogo.ts", "utf8").includes("/ferramentas/calculadora-volume-treino"));
 ok("o slug não colide com o artigo volume-de-treino-ideal", slugs.has("volume-de-treino-ideal"));
 ok("liga com a calculadora de 1RM", componente.includes("/ferramentas/calculadora-1rm") && pagina.includes("/ferramentas/calculadora-1rm"));
 

@@ -374,7 +374,7 @@ ok(
 /** A ferramenta entrou no sitemap e na central. */
 const sitemap = fs.readFileSync("app/sitemap.ts", "utf8");
 ok("a página está no sitemap", sitemap.includes("/ferramentas/calculadora-deficit-calorico"));
-const central = fs.readFileSync("app/ferramentas/page.tsx", "utf8");
+const central = fs.readFileSync("lib/ferramentas/catalogo.ts", "utf8");
 ok("a ferramenta está na central /ferramentas", central.includes("/ferramentas/calculadora-deficit-calorico"));
 
 console.log(falhas === 0 ? "\nTODOS OS TESTES PASSARAM\n" : `\n${falhas} TESTE(S) FALHARAM\n`);
