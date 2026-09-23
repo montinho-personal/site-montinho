@@ -7,7 +7,7 @@ import { marked } from "marked";
 import { splitAtPrimeiraSecao } from "../lib/cta/placement";
 import {
   ARTIGOS_COM_CALCULADORA_CREATINA, ARTIGOS_COM_LINK_CREATINA, DIAS_SATURACAO, G_POR_KG_MANUTENCAO, G_POR_KG_SATURACAO,
-  MANUTENCAO_MAX, MANUTENCAO_MIN, comparaPotes, custo, diasPorDose, duracaoPote, faixaPeso, medidaValida, medidas,
+  MANUTENCAO_MAX, MANUTENCAO_MIN, G_POR_KG_MASSA_MAGRA, G_POR_KG_DOSE_ALTA, GORDURA_TIPICA, FONTES_CREATINA, gorduraValida, pratica, comparaPotes, custo, diasPorDose, duracaoPote, faixaPeso, medidaValida, medidas,
   parseNumero, pesoValido, poteValido, precoValido, referencia, saturacao,
 } from "../lib/creatina";
 import { CANONICA } from "../lib/ferramentas/canonica";
@@ -41,6 +41,20 @@ for (const [p, d] of [[60, 18], [70, 21], [80, 24], [100, 30]] as const) {
 }
 ok("70 kg dá os '20 g por dia' dos artigos (21)", Math.abs(saturacao(70).diaria - 20) <= 1);
 ok("a porção é a dose dividida por 4, a 0,5 g", saturacao(80).porDose === 6 && saturacao(70).porDose === 5.5);
+
+bloco("3b. COMO QUEM TREINA USA (massa magra e dose alta, com fonte)");
+ok("massa magra = 0,075 g/kg (Gann 2015)", G_POR_KG_MASSA_MAGRA === 0.075);
+ok("dose alta = 0,1 g/kg (Candow 2015, Cribb 2007)", G_POR_KG_DOSE_ALTA === 0.1);
+{
+  const h = pratica(80, 12), m = pratica(60, 28);
+  ok("homem 80 kg, 12%: 70,4 kg de massa magra → 5,5 g; dose alta 8 g", Math.abs(h.massaMagra - 70.4) < 0.01 && h.porMassaMagra === 5.5 && h.doseAlta === 8);
+  ok("mulher 60 kg, 28%: 43,2 kg de massa magra → 3 g; dose alta 6 g", Math.abs(m.massaMagra - 43.2) < 0.01 && m.porMassaMagra === 3 && m.doseAlta === 6);
+  ok("menos gordura, mais dose pela massa magra", pratica(80, 12).porMassaMagra > pratica(80, 25).porMassaMagra);
+}
+ok("atalhos de quem não sabe o percentual: homem 18%, mulher 28%", GORDURA_TIPICA.homem === 18 && GORDURA_TIPICA.mulher === 28);
+ok("percentual de gordura tem faixa", gorduraValida(3) && gorduraValida(60) && !gorduraValida(2) && !gorduraValida(61) && !gorduraValida(null));
+ok("toda dose citada de coach tem fonte publicada (só Leandro Twin, com link do site dele)",
+  FONTES_CREATINA.filter((f) => /Twin/.test(f.rotulo)).length === 1 && FONTES_CREATINA.some((f) => /leandrotwin\.com\.br/.test(f.url)) && !FONTES_CREATINA.some((f) => /Pacholok/i.test(f.rotulo)));
 
 bloco("4. O POTE (150, 300, 500 e 1000 g)");
 for (const pote of [150, 300, 500, 1000]) {
@@ -106,6 +120,9 @@ ok("sem chamada de rede", !/fetch\(|sendBeacon|localStorage/.test(comp));
 ok("os eventos nunca levam peso nem preço (só a faixa)", !/trackEvent\([^)]*\b(peso|pesoKg|preco|price|weight)\s*:/.test(comp) && /weight_range: faixaPeso/.test(comp));
 ok("saturação começa desligada", /useState\(false\);\s*\n\s*const \[poteAberto/.test(comp) && /const \[comSaturacao, setComSaturacao\] = useState\(false\)/.test(comp));
 ok("o dosador avisa que a colher não garante gramas", /tamanho da colher não garante a quantidade em gramas/.test(comp));
+ok("o módulo de academia começa fechado e o resultado principal continua o consenso", /const \[praticaAberta, setPraticaAberta\] = useState\(false\)/.test(comp) && /Sua referência/.test(comp));
+ok("o fator da massa magra aparece como 0,075, não arredondado para 0,08", /g3\(G_POR_KG_MASSA_MAGRA\)/.test(comp) && !/g2\(G_POR_KG_MASSA_MAGRA\)/.test(comp + pag) && (0.075).toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 3 }) === "0,075");
+ok("o módulo diz que a dose alta não rende mais que 5 g", /nenhum estudo mostrou que|não mostrou render mais que 5 g/.test(comp));
 ok("o comparador separa preço de qualidade", /Preço não diz nada sobre qualidade/.test(comp));
 ok("a mensagem do WhatsApp é a pedida e não leva o peso", /Usei sua Calculadora de Creatina e queria entender como organizar meu treino para meu objetivo/.test(comp));
 ok("sem página por peso", !readdirSync("app/ferramentas").some((d) => /creatina-.*\d+kg/.test(d)) && !/creatina-para-\d+kg/.test(readFileSync("app/sitemap.ts", "utf8")));
@@ -114,7 +131,7 @@ const titulo = pag.match(/title: "([^"]+)"/)![1];
 const desc = pag.match(/description:\s*\n?\s*"([^"]+)"/)![1];
 ok(`título entre 45 e 58 (${titulo.length})`, titulo.length >= 45 && titulo.length <= 58);
 ok(`descrição entre 130 e 155 (${desc.length})`, desc.length >= 130 && desc.length <= 155);
-ok("FAQ com 21 perguntas no schema", (pag.match(/question: "/g) ?? []).length === 21 && /"@type": "FAQPage"/.test(pag));
+ok("FAQ com 22 perguntas no schema", (pag.match(/question: "/g) ?? []).length === 22 && /"@type": "FAQPage"/.test(pag));
 ok("todo link interno da página existe", [...pag.matchAll(/href="\/blog\/([^"]+)"/g)].every((m) => blogPosts.some((p) => p.slug === m[1])));
 
 console.log(`\n${falhas === 0 ? "TUDO OK" : `${falhas} FALHA(S)`}\n`);

@@ -9,8 +9,13 @@ import {
   AVISO_SEGURANCA,
   DIAS_ATE_SATURAR_SEM,
   DIAS_SATURACAO_MAX,
+  G_POR_KG_DOSE_ALTA,
   G_POR_KG_MANUTENCAO,
+  G_POR_KG_MASSA_MAGRA,
   G_POR_KG_SATURACAO,
+  GORDURA_MAX,
+  GORDURA_MIN,
+  GORDURA_TIPICA,
   MANUTENCAO_MAX,
   MANUTENCAO_MIN,
   NOTA_REFERENCIA,
@@ -21,11 +26,13 @@ import {
   custo,
   duracaoPote,
   faixaPeso,
+  gorduraValida,
   medidaValida,
   medidas,
   parseNumero,
   pesoValido,
   poteValido,
+  pratica,
   precoValido,
   referencia,
   saturacao,
@@ -59,6 +66,7 @@ const chip = (ativo: boolean) =>
 const secao = "border-t border-white/10 pt-6 mt-6";
 const g = (n: number) => n.toLocaleString("pt-BR", { maximumFractionDigits: 1 });
 const g2 = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 2 });
+const g3 = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 3 });
 const reais = (n: number) => n.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 const reaisG = (n: number) => `R$ ${n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 3 })}/g`;
 const meses = (dias: number) => (dias / 30).toLocaleString("pt-BR", { maximumFractionDigits: 1 });
@@ -79,6 +87,8 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
   const [dosadorAberto, setDosadorAberto] = useState(false);
   const [medidaTexto, setMedidaTexto] = useState("3");
   const [metodoAberto, setMetodoAberto] = useState(false);
+  const [praticaAberta, setPraticaAberta] = useState(false);
+  const [gorduraTexto, setGorduraTexto] = useState("");
 
   const raiz = useRef<HTMLDivElement>(null);
   const resultadoRef = useRef<HTMLDivElement>(null);
@@ -95,6 +105,9 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
   const preco = numero(precoTexto);
   const precoOk = precoValido(preco);
   const c = ref && poteAberto && poteOk && precoOk ? custo(preco, pote, ref.diaria) : null;
+  const gordura = numero(gorduraTexto.replace("%", ""));
+  const gorduraOk = gorduraValida(gordura);
+  const prat = ref && gorduraOk ? pratica(peso!, gordura) : null;
   const med = numero(medidaTexto);
   const medOk = medidaValida(med);
   const cmpA = { g: numero(aG), preco: numero(aP) };
@@ -226,6 +239,81 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
                   </>
                 )}
               </p>
+            </div>
+
+            {/* ── Como quem treina usa ── */}
+            <div className={secao}>
+              <button type="button" aria-expanded={praticaAberta}
+                onClick={() => { if (!praticaAberta) trackEvent("creatine_internal_link_click", { placement, calculator_section: "practice" }); setPraticaAberta(!praticaAberta); }}
+                className="text-white font-semibold underline underline-offset-4 decoration-1 min-h-[44px] text-left" style={{ textDecorationColor: "#BA9E50" }}>
+                {praticaAberta ? "−" : "+"} Como quem treina musculação costuma usar
+              </button>
+              {praticaAberta && (
+                <div className="mt-4" data-testid="bloco-pratica">
+                  <p className="text-gray-300 text-sm leading-relaxed mb-4 max-w-2xl">
+                    Na academia, muita gente ajusta a creatina pela <strong className="text-white">massa magra</strong> — é no músculo que ela fica
+                    guardada. É isso que faz homem e mulher, e quem tem menos gordura, chegarem a doses diferentes: não é o sexo em si, é
+                    quanto do seu peso é músculo.
+                  </p>
+                  <label htmlFor={idc("gordura")} className="block text-gray-300 text-sm mb-1.5">Seu percentual de gordura</label>
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <div className="flex items-center gap-2">
+                      <input id={idc("gordura")} type="text" inputMode="decimal" autoComplete="off" placeholder="18" value={gorduraTexto}
+                        onChange={(e) => setGorduraTexto(e.target.value)} className={`w-24 ${campoP}`} />
+                      <span className="text-gray-300">%</span>
+                    </div>
+                    <span className="text-gray-500 text-sm">Não sabe?</span>
+                    <button type="button" className={chip(gordura === GORDURA_TIPICA.homem)} onClick={() => setGorduraTexto(String(GORDURA_TIPICA.homem))}>Homem · cerca de {GORDURA_TIPICA.homem}%</button>
+                    <button type="button" className={chip(gordura === GORDURA_TIPICA.mulher)} onClick={() => setGorduraTexto(String(GORDURA_TIPICA.mulher))}>Mulher · cerca de {GORDURA_TIPICA.mulher}%</button>
+                  </div>
+                  <p className="text-gray-500 text-xs mb-4 min-h-[16px]">
+                    {gorduraTexto.trim() !== "" && !gorduraOk
+                      ? `Use um valor entre ${GORDURA_MIN} e ${GORDURA_MAX}%.`
+                      : "Os atalhos são estimativas médias de quem treina; o valor da sua bioimpedância ou avaliação é melhor."}
+                  </p>
+                  {prat && (
+                    <div className="overflow-x-auto" data-testid="tabela-pratica">
+                      <table className="w-full text-sm border-collapse">
+                        <caption className="sr-only">Doses de creatina por abordagem, para o seu peso e percentual de gordura</caption>
+                        <tbody>
+                          <tr className="border-b border-white/10">
+                            <th scope="row" className="text-left text-gray-300 font-normal py-2.5 pr-3">Consenso científico (ISSN)</th>
+                            <td className="text-white font-semibold py-2.5 tabular-nums whitespace-nowrap">{g(ref.diaria)} g/dia</td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <th scope="row" className="text-left text-gray-300 font-normal py-2.5 pr-3">
+                              Pela massa magra: {g3(G_POR_KG_MASSA_MAGRA)} g × {g(prat.massaMagra)} kg de massa magra
+                              <span className="block text-gray-500 text-xs">protocolo de homens treinados (Gann et al., 2015)</span>
+                            </th>
+                            <td className="text-white font-semibold py-2.5 tabular-nums whitespace-nowrap">{g(prat.porMassaMagra)} g/dia</td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <th scope="row" className="text-left text-gray-300 font-normal py-2.5 pr-3">
+                              Dose alta: {g2(G_POR_KG_DOSE_ALTA)} g × peso
+                              <span className="block text-gray-500 text-xs">usada em estudos de hipertrofia (Candow, 2015; Cribb, 2007)</span>
+                            </th>
+                            <td className="text-white font-semibold py-2.5 tabular-nums whitespace-nowrap">{g(prat.doseAlta)} g/dia</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" className="text-left text-gray-300 font-normal py-2.5 pr-3">
+                              Leandro Twin
+                              <span className="block text-gray-500 text-xs">no site dele: sem passar de 5 g no uso contínuo</span>
+                            </th>
+                            <td className="text-white font-semibold py-2.5 tabular-nums whitespace-nowrap">3 a 5 g/dia</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p className="text-gray-400 text-sm leading-relaxed mt-3 max-w-2xl">
+                        {prat.porMassaMagra > ref.diaria
+                          ? <>Pela sua massa magra, a conta dá {g(prat.porMassaMagra)} g — mais que a referência, porque você tem bastante músculo para o seu peso.</>
+                          : <>Pela sua massa magra, a conta fica perto da referência.</>}{" "}
+                        A dose alta não mostrou render mais que 5 g no uso contínuo: o estoque do músculo tem um teto, e o que passa dele
+                        sai na urina. Qualquer valor desta tabela é seguro para adultos saudáveis.
+                      </p>
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* ── Saturação ── */}

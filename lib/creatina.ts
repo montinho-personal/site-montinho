@@ -61,7 +61,32 @@ export const FONTE_HULTMAN: Fonte = {
   resumo: "3 g/dia elevam a creatina muscular ao mesmo nível da saturação em cerca de 28 dias; 20 g/dia, em cerca de 6.",
 };
 
-export const FONTES_CREATINA: Fonte[] = [FONTE_ISSN, FONTE_ANTONIO, FONTE_HULTMAN];
+export const FONTE_GANN: Fonte = {
+  rotulo:
+    "Gann JJ, McKinley-Barnard SK, Andre TL, Schoch RD, Willoughby DS. Effects of a traditionally-dosed creatine supplementation protocol and resistance training on the skeletal muscle uptake and whole-body metabolism and retention of creatine in males. Journal of the International Society of Sports Nutrition, 2015",
+  url: "https://www.tandfonline.com/doi/full/10.1186/1550-2783-12-S1-P2",
+  resumo: "homens treinados em musculação: saturação de 0,3 g/kg de massa magra por 5 dias e manutenção de 0,075 g/kg de massa magra (cerca de 5 a 7 g/dia).",
+};
+
+export const FONTE_CANDOW: Fonte = {
+  rotulo: "Candow DG, Vogt E, Johannsmeyer S, Forbes SC, Farthing JP. Strategic creatine supplementation and resistance training in healthy older adults. Applied Physiology, Nutrition, and Metabolism, 2015",
+  url: "https://pubmed.ncbi.nlm.nih.gov/25993883/",
+  resumo: "0,1 g/kg por dia, junto com musculação, por 32 semanas.",
+};
+
+export const FONTE_CRIBB: Fonte = {
+  rotulo: "Cribb PJ, Williams AD, Hayes A. A creatine-protein-carbohydrate supplement enhances responses to resistance training. Medicine & Science in Sports & Exercise, 2007",
+  url: "https://pubmed.ncbi.nlm.nih.gov/18043130/",
+  resumo: "homens treinados, 0,1 g/kg por dia de creatina num suplemento com proteína e carboidrato.",
+};
+
+export const FONTE_TWIN: Fonte = {
+  rotulo: "Leandro Twin. Como tomar creatina para hipertrofia (leandrotwin.com.br)",
+  url: "https://leandrotwin.com.br/site/blog/suplementacao/como-tomar-creatina-para-hipertrofia/",
+  resumo: "manutenção de 3 a 5 g por dia, uma vez ao dia, sem passar de 5 g no uso contínuo; saturação só para atletas que precisam de efeito rápido.",
+};
+
+export const FONTES_CREATINA: Fonte[] = [FONTE_ISSN, FONTE_ANTONIO, FONTE_HULTMAN, FONTE_GANN, FONTE_CANDOW, FONTE_CRIBB, FONTE_TWIN];
 
 /* ───────────────────────── A conta ───────────────────────── */
 
@@ -141,6 +166,59 @@ export function saturacao(pesoKg: number): Saturacao {
     manutencao: referencia(pesoKg).diaria,
   };
 }
+
+/* ───────────────────────── Como quem treina usa ───────────────────────── */
+
+/**
+ * A PRÁTICA DE ACADEMIA, COM FONTE
+ *
+ * Quem treina musculação costuma ajustar a creatina pela massa magra — é
+ * no músculo que ela fica guardada. Isso é o que faz homem e mulher, e
+ * quem tem menos gordura, chegarem a doses diferentes: não é o sexo em si,
+ * é quanto do peso é músculo. O protocolo com fonte para isso é o de Gann
+ * et al. (2015), com homens treinados: 0,075 g por kg de massa magra.
+ *
+ * A dose alta de 0,1 g/kg aparece em estudos de hipertrofia (Candow 2015,
+ * Cribb 2007) e é a que parte das academias usa. Nenhum estudo mostrou que
+ * ela renda mais que 5 g no uso contínuo; a página diz isso.
+ *
+ * O Leandro Twin, no próprio site, recomenda 3 a 5 g e não passar de 5 g
+ * — o mesmo consenso. Nenhum outro coach entra aqui sem fonte publicada.
+ */
+
+/** Manutenção por massa magra (Gann et al., 2015), g/kg de massa magra. */
+export const G_POR_KG_MASSA_MAGRA = 0.075;
+/** Dose alta de estudos de hipertrofia (Candow 2015, Cribb 2007), g/kg de peso. */
+export const G_POR_KG_DOSE_ALTA = 0.1;
+export const GORDURA_MIN = 3;
+export const GORDURA_MAX = 60;
+/** Estimativas para quem não sabe o percentual: não substituem uma avaliação. */
+export const GORDURA_TIPICA = { homem: 18, mulher: 28 } as const;
+
+export const gorduraValida = (pct: number | null): pct is number => pct !== null && Number.isFinite(pct) && pct >= GORDURA_MIN && pct <= GORDURA_MAX;
+
+export interface Pratica {
+  massaMagra: number;
+  /** 0,075 g/kg de massa magra, a 0,5 g. */
+  porMassaMagra: number;
+  /** 0,1 g/kg de peso, a 0,5 g. */
+  doseAlta: number;
+}
+
+export function pratica(pesoKg: number, gorduraPct: number): Pratica {
+  const massaMagra = pesoKg * (1 - gorduraPct / 100);
+  return { massaMagra, porMassaMagra: meioGrama(G_POR_KG_MASSA_MAGRA * massaMagra), doseAlta: meioGrama(G_POR_KG_DOSE_ALTA * pesoKg) };
+}
+
+/** Exemplos para a tabela da página: perfis comuns de quem treina. */
+export const PERFIS_PRATICA = [
+  { id: "homem-magro", nome: "Homem, 80 kg, 12% de gordura", peso: 80, gordura: 12 },
+  { id: "homem", nome: "Homem, 80 kg, 20% de gordura", peso: 80, gordura: 20 },
+  { id: "homem-grande", nome: "Homem, 100 kg, 15% de gordura", peso: 100, gordura: 15 },
+  { id: "mulher-magra", nome: "Mulher, 60 kg, 20% de gordura", peso: 60, gordura: 20 },
+  { id: "mulher", nome: "Mulher, 60 kg, 28% de gordura", peso: 60, gordura: 28 },
+  { id: "mulher-leve", nome: "Mulher, 55 kg, 25% de gordura", peso: 55, gordura: 25 },
+] as const;
 
 /* ───────────────────────── O pote ───────────────────────── */
 
