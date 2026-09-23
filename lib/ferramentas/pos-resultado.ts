@@ -68,6 +68,7 @@ export const NOME: Record<Ferramenta, string> = {
   futebol: "Calculadora de Calorias no Futebol",
   boxe: "Calculadora de Calorias no Boxe",
   zumba: "Calculadora de Calorias na Zumba",
+  spinning: "Calculadora de Calorias no Spinning",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -112,6 +113,7 @@ export const ROTA: Record<Ferramenta, string> = {
   futebol: "/ferramentas/calculadora-calorias-futebol",
   boxe: "/ferramentas/calculadora-calorias-boxe",
   zumba: "/ferramentas/calculadora-calorias-zumba",
+  spinning: "/ferramentas/calculadora-calorias-spinning",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -159,6 +161,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   boxe: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   /* Quem viu que as aulas rendem pouco em quilos precisa do déficit, que é onde está o resto. */
   zumba: { ferramenta: "deficit", label: "Calcular meu déficit" },
+  /* Quem viu o gasto de uma aula precisa do gasto do dia para saber o déficit. */
+  spinning: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -359,6 +363,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Você está na faixa de referência ou acima dela. A pergunta deixa de ser quanto ganhar e passa a ser o que fazer com o que já está construído — força, execução e manutenção.",
       pergunta: "Quer que eu te ajude a montar a próxima fase?",
       pedido: "Cheguei na faixa de referência de massa magra e queria ajuda para montar a próxima fase do treino.",
+    },
+  },
+  spinning: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto da aula, não o do seu dia. O spinning rende quando entra numa semana com musculação e alimentação ajustada — e o número do visor serve para comparar uma aula com a outra, não para decidir quanto comer.",
+      pedido: "Faço spinning e queria entender o que falta para ele me ajudar a emagrecer.",
     },
   },
   zumba: {

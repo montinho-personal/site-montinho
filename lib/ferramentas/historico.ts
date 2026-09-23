@@ -45,6 +45,7 @@ export type Ferramenta =
   | "futebol"
   | "boxe"
   | "zumba"
+  | "spinning"
   | "diagnostico"
   | "rotina"
   | "academia"
