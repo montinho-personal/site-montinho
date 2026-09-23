@@ -66,6 +66,7 @@ export const NOME: Record<Ferramenta, string> = {
   potencial: "Calculadora de Potencial Natural",
   composicao: "Calculadora de Composição Corporal",
   futebol: "Calculadora de Calorias no Futebol",
+  boxe: "Calculadora de Calorias no Boxe",
   diagnostico: "Diagnóstico de Treino",
   rotina: "Treino para Minha Rotina",
   academia: "Comparador de Academias",
@@ -108,6 +109,7 @@ export const ROTA: Record<Ferramenta, string> = {
   potencial: "/ferramentas/potencial-natural",
   composicao: "/ferramentas/composicao-corporal",
   futebol: "/ferramentas/calculadora-calorias-futebol",
+  boxe: "/ferramentas/calculadora-calorias-boxe",
   diagnostico: "/diagnostico",
   rotina: "/treino-para-minha-rotina",
   academia: "/academia-ideal-alphaville",
@@ -151,6 +153,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   composicao: { ferramenta: "proteina", label: "Calcular minha meta de proteína" },
   /* Quem joga para emagrecer precisa saber o gasto do dia, não só o do jogo. */
   futebol: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
+  /* Quem treina boxe para emagrecer precisa saber o gasto do dia, não só o da aula. */
+  boxe: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   volume: { ferramenta: "diagnostico", label: "Fazer o diagnóstico" },
   academia: { ferramenta: "rotina", label: "Montar meu treino" },
   diagnostico: { ferramenta: "rotina", label: "Montar minha rotina" },
@@ -351,6 +355,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Você está na faixa de referência ou acima dela. A pergunta deixa de ser quanto ganhar e passa a ser o que fazer com o que já está construído — força, execução e manutenção.",
       pergunta: "Quer que eu te ajude a montar a próxima fase?",
       pedido: "Cheguei na faixa de referência de massa magra e queria ajuda para montar a próxima fase do treino.",
+    },
+  },
+  boxe: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto do treino, não o do seu dia — e é bem menor que as 1.000 kcal da propaganda. O boxe rende quando entra numa semana com musculação e alimentação ajustada; sozinho, deixa você mais condicionado com o mesmo peso.",
+      pedido: "Treino boxe e queria entender o que falta para ele me ajudar a emagrecer.",
     },
   },
   futebol: {

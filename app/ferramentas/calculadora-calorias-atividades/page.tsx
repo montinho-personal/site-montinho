@@ -29,8 +29,11 @@ import {
  *
  * Uma página, várias atividades — lib/atividades.ts explica por que não
  * são uma página cada (seriam doorway, com a mesma conta e só o MET
- * trocado). O futebol saiu em 22/09/2026 para a calculadora própria, que
- * tem uma conta que esta não tem: o revezamento de times.
+ * trocado). Futebol e boxe saíram em 22/09/2026 para calculadoras
+ * próprias, cada uma com uma conta que esta não tem.
+ *
+ * O exemplo da página é a primeira atividade da lista, não um id fixo: as
+ * atividades estão saindo uma a uma, e o exemplo acompanha sem reescrita.
  *
  * Os artigos de cada atividade continuam com canonical próprio e já
  * ranqueiam entre a posição 5 e a 10; eles embutem a calculadora com a
@@ -46,12 +49,12 @@ const CAMINHO = "/ferramentas/calculadora-calorias-atividades";
 export const metadata: Metadata = {
   title: "Calculadora de Calorias por Atividade e Esporte",
   description:
-    "Quantas calorias sua aula gasta: boxe, zumba, spinning, dança, natação, jiu-jitsu, corda e mais, pelo seu peso, com as pausas da aula como opção.",
+    "Quantas calorias sua aula gasta: zumba, spinning, dança, natação, jiu-jitsu, pular corda, escada e bicicleta, pelo seu peso, com as pausas como opção.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
     title: "Calculadora de Calorias por Atividade | Montinho Personal Trainer",
     description:
-      "Boxe, zumba, spinning, natação e mais: quantas calorias a sua aula gasta, com o seu peso e sem o exagero das tabelas de revista.",
+      "Zumba, spinning, natação e mais: quantas calorias a sua aula gasta, com o seu peso e sem o exagero das tabelas de revista.",
     url: `${SITE_URL}${CAMINHO}`,
     type: "website",
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
@@ -61,7 +64,7 @@ export const metadata: Metadata = {
 const appSchema = aplicativoSchema({
   nome: "Calculadora de Calorias por Atividade",
   descricao:
-    "Estima o gasto calórico de nove atividades — boxe, zumba, spinning, dança, natação, jiu-jitsu, pular corda, subir escada e bicicleta — a partir do peso corporal, do tempo e do ritmo, com desconto opcional das pausas da aula.",
+    "Estima o gasto calórico de oito atividades — zumba, spinning, dança, natação, jiu-jitsu, pular corda, subir escada e bicicleta — a partir do peso corporal, do tempo e do ritmo, com desconto opcional das pausas da aula.",
   caminho: CAMINHO,
   categoria: "HealthApplication",
 });
@@ -76,27 +79,19 @@ const breadcrumbSchema = {
   ],
 };
 
-const BOXE = atividade("boxe");
+/** O exemplo da página: a primeira atividade da lista. */
+const EX = ATIVIDADES[0];
 const ZUM = atividade("zumba");
 const CMP = comparaAtividades(60, PESO_PADRAO);
-const TAB_BOXE = tabelaPorPeso(BOXE, 60);
-const UM_QUILO = simulacaoUmQuilo(PESO_PADRAO, BOXE.faixas[0].met);
+const TAB_EX = tabelaPorPeso(EX, EX.sessaoTipica);
+const UM_QUILO = simulacaoUmQuilo(PESO_PADRAO, EX.faixas[0].met);
 const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDigits: d });
-/** O gasto de uma aula: tempo de aula, já descontadas as pausas. */
-const aula = (id: string, min: number, iFaixa = 0) => {
-  const a = atividade(id);
-  return deTempo(tempoAtivo(min, a), PESO_PADRAO, a.faixas[iFaixa].met);
-};
 
 const faq: ItemFAQ[] = [
   {
-    question: "Quantas calorias uma aula de boxe queima?",
-    answer: `Uma aula de 60 minutos para uma pessoa de ${PESO_PADRAO} kg gasta cerca de ${arredondaKcal(deTempo(60, PESO_PADRAO, BOXE.faixas[0].met).kcal)} kcal no saco e nos aparelhos, e ${arredondaKcal(deTempo(60, PESO_PADRAO, BOXE.faixas[1].met).kcal)} kcal em sparring. Se a aula teve muita explicação e pausa, a calculadora recalcula contando cerca de ${Math.round(BOXE.fracaoAtiva! * 100)}% do tempo — o que dá ${arredondaKcal(aula("boxe", 60).kcal)} kcal. Os "1.000 kcal por aula" que circulam supõem uma hora inteira de sparring, que quase ninguém faz.`,
-  },
-  {
-    question: "E o futebol?",
+    question: "E o futebol e o boxe?",
     answer:
-      "O futebol tem calculadora própria, porque pelada de adulto tem uma conta que as outras atividades não têm: o revezamento de times. Duas horas de quadra com quatro times são uma hora de bola rolando. A Calculadora de Calorias no Futebol separa uma coisa da outra e mostra quantas latas de cerveja o jogo realmente pagou.",
+      "Têm calculadoras próprias, porque cada um tem uma conta que as outras atividades não têm. A do futebol separa o tempo de bola rolando do tempo na lateral quando os times revezam. A do boxe conta a aula ou os rounds, mede o ritmo pelos socos de dez segundos e compara com o número do relógio.",
   },
   {
     question: "Quantas calorias uma aula de zumba queima?",
@@ -113,7 +108,7 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Esse número inclui o que eu gastaria parado?",
-    answer: `Inclui — é gasto bruto, como em qualquer tabela de METs. Para ${PESO_PADRAO} kg numa aula de boxe de 60 minutos, o bruto é cerca de ${arredondaKcal(deTempo(60, PESO_PADRAO, BOXE.faixas[0].met).kcal)} kcal e o que a aula acrescenta de fato ao dia fica perto de ${arredondaKcal(kcalLiquida(deTempo(60, PESO_PADRAO, BOXE.faixas[0].met), PESO_PADRAO))} kcal. A metodologia da calculadora mostra os dois.`,
+    answer: `Inclui — é gasto bruto, como em qualquer tabela de METs. Para ${PESO_PADRAO} kg em ${EX.artigoFrase} de ${EX.sessaoTipica} minutos, o bruto é cerca de ${arredondaKcal(deTempo(EX.sessaoTipica, PESO_PADRAO, EX.faixas[0].met).kcal)} kcal e o que a aula acrescenta de fato ao dia fica perto de ${arredondaKcal(kcalLiquida(deTempo(EX.sessaoTipica, PESO_PADRAO, EX.faixas[0].met), PESO_PADRAO))} kcal. A metodologia da calculadora mostra os dois.`,
   },
   {
     question: "Fazer essa atividade todo dia perde barriga?",
@@ -151,7 +146,7 @@ export default function CalculadoraAtividadesPage() {
           </h1>
           <Compartilhar contexto="tool" titulo="Calculadora de Calorias por Atividade" caminho={CAMINHO} local="tool_top" ferramenta="atividades" aparencia="discreto" className="mb-5" />
           <p className="text-gray-300 text-lg leading-relaxed">
-            Boxe, zumba, spinning, dança, natação, jiu-jitsu, corda, escada e bicicleta: quanto a sua sessão
+            Zumba, spinning, dança, natação, jiu-jitsu, corda, escada e bicicleta: quanto a sua sessão
             gasta, com o seu peso — e, se você passou parte da aula parado, sem contar esse tempo como esforço.
           </p>
         </div>
@@ -239,23 +234,23 @@ export default function CalculadoraAtividadesPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quantas calorias uma aula de boxe queima?</h2>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto gasta {EX.artigoFrase}?</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Uma aula de 60 minutos, contando o tempo cheio — que é o que as faixas de referência usam:
+              Uma sessão de {EX.sessaoTipica} minutos, contando o tempo cheio — que é o que as faixas de referência usam:
             </p>
             <div className="overflow-x-auto mb-3">
               <table className="w-full text-sm border-collapse">
-                <caption className="sr-only">Gasto estimado numa aula de boxe de 60 minutos, por peso corporal</caption>
+                <caption className="sr-only">Gasto estimado em {EX.artigoFrase} de {EX.sessaoTipica} minutos, por peso corporal</caption>
                 <thead>
                   <tr className="border-b border-white/20">
                     <th scope="col" className={th}>Peso</th>
-                    {BOXE.faixas.map((f) => (
+                    {EX.faixas.map((f) => (
                       <th key={f.id} scope="col" className={th}>{f.nome}</th>
                     ))}
                   </tr>
                 </thead>
                 <tbody>
-                  {TAB_BOXE.map((l) => (
+                  {TAB_EX.map((l) => (
                     <tr key={l.peso} className="border-b border-white/10">
                       <td className="text-gray-300 py-2.5 pr-4 tabular-nums">{l.peso} kg</td>
                       {l.kcal.map((k, i) => (
@@ -267,20 +262,20 @@ export default function CalculadoraAtividadesPage() {
               </table>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Para zumba e as outras sete, use o seletor da calculadora — o{" "}
-              <Link href="/blog/boxe-emagrece" className={ln}>artigo do boxe</Link> e o{" "}
-              <Link href="/blog/zumba-emagrece" className={ln}>da zumba</Link> trazem o que a conta não
-              responde: o que cada uma faz bem e onde ela falha. Futebol tem{" "}
-              <Link href="/ferramentas/calculadora-calorias-futebol" className={ln}>calculadora própria</Link>, com o
-              revezamento de times.
+              Para as outras, use o seletor da calculadora — o{" "}
+              <Link href={`/blog/${EX.slug}`} className={ln}>artigo de cada uma</Link> traz o que a conta não
+              responde: o que ela faz bem e onde ela falha. Futebol e boxe têm calculadoras próprias:{" "}
+              <Link href="/ferramentas/calculadora-calorias-futebol" className={ln}>a do futebol</Link>, com o
+              revezamento de times, e <Link href="/ferramentas/calculadora-calorias-boxe" className={ln}>a do boxe</Link>,
+              com os rounds e o ritmo de socos.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto tempo para perder 1 kg?</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Um quilo de gordura guarda cerca de {KCAL_POR_KG_GORDURA.toLocaleString("pt-BR")} kcal. Em aula de
-              boxe, para {PESO_PADRAO} kg, isso daria algo como{" "}
+              Um quilo de gordura guarda cerca de {KCAL_POR_KG_GORDURA.toLocaleString("pt-BR")} kcal. Em{" "}
+              {EX.nome.toLowerCase()}, ritmo {EX.faixas[0].nome.toLowerCase()}, para {PESO_PADRAO} kg, isso daria algo como{" "}
               <strong className="text-white">{formataTempo(UM_QUILO.minutos)}</strong> de esforço.
             </p>
             <div className="border-l-2 pl-4 mb-4" style={{ borderColor: "#BA9E50" }}>
@@ -301,8 +296,8 @@ export default function CalculadoraAtividadesPage() {
             <div className="border border-white/15 p-4 font-mono text-sm text-gray-300 mb-4 overflow-x-auto">
               <p>kcal/min = MET × 3,5 × peso (kg) ÷ 200</p>
               <p className="mt-2">
-                {fmt(BOXE.faixas[0].met)} × 3,5 × {PESO_PADRAO} ÷ 200 ={" "}
-                <span className="text-white">≈ {fmt(deTempo(1, PESO_PADRAO, BOXE.faixas[0].met).kcal)} kcal/min</span>
+                {fmt(EX.faixas[0].met)} × 3,5 × {PESO_PADRAO} ÷ 200 ={" "}
+                <span className="text-white">≈ {fmt(deTempo(1, PESO_PADRAO, EX.faixas[0].met).kcal)} kcal/min</span>
               </p>
             </div>
             <p className="text-gray-300 leading-relaxed mb-4">
@@ -366,7 +361,7 @@ export default function CalculadoraAtividadesPage() {
           <div>
             <h3 className="text-xl font-bold text-white mb-3" style={h}>Leia também</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><Link href={`/blog/${BOXE.slug}`} className={ln}>Boxe emagrece? O que uma aula realmente gasta</Link></li>
+              <li><Link href="/ferramentas/calculadora-calorias-boxe" className={ln}>Calculadora de Calorias no Boxe — com os rounds e o ritmo de socos</Link></li>
               <li><Link href="/ferramentas/calculadora-calorias-futebol" className={ln}>Calculadora de Calorias no Futebol — com o revezamento de times</Link></li>
               <li><Link href={`/blog/${ZUM.slug}`} className={ln}>Zumba emagrece? O que a aula entrega</Link></li>
               <li><Link href="/ferramentas/calculadora-calorias-caminhada" className={ln}>Calculadora de Calorias da Caminhada — com distância, passos e inclinação</Link></li>

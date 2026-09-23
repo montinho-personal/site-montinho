@@ -30,7 +30,6 @@ const perto = (a: number, b: number, t = 0.01) => Math.abs(a - b) <= t;
 
 bloco("1. OS METs, TRAVADOS (mudar exige conferir o Compêndio)");
 const ESPERADO: Record<string, [string, number][]> = {
-  boxe: [["saco", 7.8], ["sparring", 9.3]],
   zumba: [["baixo", 5.0], ["alto", 7.3]],
   spinning: [["moderado", 6.8], ["vigoroso", 8.8]],
   danca: [["social", 5.5], ["intensa", 7.8]],
@@ -59,13 +58,13 @@ ok("60 min, 70 kg, 7,8 METs = 573,3 kcal", perto(r.kcal, 573.3));
 ok("ida e volta concordam", perto(deKcal(r.kcal, 70, 7.8).minutos, 60));
 ok("proporcional ao peso", perto(deTempo(60, 140, 7.8).kcal, r.kcal * 2));
 ok("líquido desconta 1 MET e é positivo", perto(kcalLiquida(r, 70), r.kcal - 1.225 * 60) && kcalLiquida(r, 70) > 0);
-ok("a frase mantém o decimal do peso", /82,5 kg/.test(fraseContexto(82.5, r, atividade("boxe"), atividade("boxe").faixas[0])));
+ok("a frase mantém o decimal do peso", /82,5 kg/.test(fraseContexto(82.5, r, atividade("jiu-jitsu"), atividade("jiu-jitsu").faixas[0])));
 /* "em ritmo saco e aparelhos" e "em ritmo moderada" não concordam: o nome da
    faixa é rótulo, não adjetivo. Ele entra entre parênteses. */
 ok("a faixa entra entre parênteses, sem forçar concordância",
-  /\(saco e aparelhos\) representa/.test(fraseContexto(70, r, atividade("boxe"), atividade("boxe").faixas[0]))
+  /\(técnica e drills\) representa/.test(fraseContexto(70, r, atividade("jiu-jitsu"), atividade("jiu-jitsu").faixas[0]))
     && /\(leve \/ recreativo\) representa/.test(fraseContexto(70, r, atividade("natacao"), atividade("natacao").faixas[0])));
-ok("a frase não promete quilo", !/perde|emagrec/i.test(fraseContexto(70, r, atividade("boxe"), atividade("boxe").faixas[0])));
+ok("a frase não promete quilo", !/perde|emagrec/i.test(fraseContexto(70, r, atividade("jiu-jitsu"), atividade("jiu-jitsu").faixas[0])));
 ok("1 kg de gordura leva mais de 10 h (para ninguém tentar)", simulacaoUmQuilo(70, 7.8).minutos > 600);
 
 bloco("2b. A CALCULADORA CONCORDA COM AS FAIXAS DOS ARTIGOS");
@@ -78,9 +77,6 @@ bloco("2b. A CALCULADORA CONCORDA COM AS FAIXAS DOS ARTIGOS");
  */
 const FAIXAS_DOS_ARTIGOS: [string, string, number, number, number, number][] = [
   /* atividade, faixa, peso, minutos, mínimo do artigo, máximo do artigo */
-  ["boxe", "saco", 70, 60, 450, 600],
-  ["boxe", "sparring", 70, 60, 600, 800],
-  ["boxe", "saco", 90, 60, 550, 750],
   ["zumba", "baixo", 70, 60, 250, 400],
   ["zumba", "alto", 70, 60, 350, 600],
   ["spinning", "moderado", 70, 45, 300, 400],
@@ -132,18 +128,17 @@ bloco("3. O TEMPO ATIVO — opção, nunca padrão");
   ok("o desconto de pausas começa desligado", /useState\(false\);?\s*$/m.test(comp.split("descontarPausas")[1]?.split("\n")[0] ?? "") || /const \[descontarPausas, setDescontarPausas\] = useState\(false\)/.test(comp));
   ok("a caixa fala do que a pessoa observou, não de uma regra da casa", /Passei boa parte da sessão parado/.test(comp));
 }
-ok("boxe, quando pedido, desconta pausas", tempoAtivo(60, atividade("boxe")) === 42);
+ok("zumba, quando pedido, desconta pausas", tempoAtivo(60, atividade("zumba")) === 51);
 ok("natação é contínua (não desconta)", tempoAtivo(60, atividade("natacao")) === 60 && atividade("natacao").fracaoAtiva === null);
 ok("bicicleta é contínua", atividade("bicicleta").fracaoAtiva === null);
 ok("toda fração declarada fica entre 40% e 95%",
   ATIVIDADES.every((a) => a.fracaoAtiva === null || (a.fracaoAtiva >= 0.4 && a.fracaoAtiva <= 0.95)));
 {
-  const aulaBoxe = deTempo(tempoAtivo(60, atividade("boxe")), 70, atividade("boxe").faixas[0].met);
-  const horaInteira = deTempo(60, 70, atividade("boxe").faixas[0].met);
-  ok("descontar pausas reduz o gasto da aula", aulaBoxe.kcal < horaInteira.kcal);
+  const aulaZumba = deTempo(tempoAtivo(60, atividade("zumba")), 70, atividade("zumba").faixas[0].met);
+  const horaInteira = deTempo(60, 70, atividade("zumba").faixas[0].met);
+  ok("descontar pausas reduz o gasto da aula", aulaZumba.kcal < horaInteira.kcal);
   /* Nem com o tempo cheio a ferramenta chega nas "1.000 kcal por aula" que o
-     próprio artigo de zumba desmente. */
-  ok("uma aula de boxe de 60 min para 70 kg fica longe das 1.000 kcal de propaganda", horaInteira.kcal < 800);
+     próprio artigo de zumba desmente. O boxe tem a mesma trava no teste dele. */
   ok("uma aula de zumba de 60 min para 70 kg fica longe das 1.000 kcal de propaganda",
     deTempo(60, 70, atividade("zumba").faixas[1].met).kcal < 700);
 }
@@ -157,9 +152,10 @@ ok("usa a faixa principal de cada uma", cmp.every((l) => l.met === faixaPrincipa
    usasse a entrada lenta do Compêndio, ela apareceria como a mais fraca da lista. */
 ok("a escada entra na comparação como exercício, não como subida do dia a dia", faixaPrincipal(atividade("escada")).met === 8.8);
 ok("toda faixa principal existe", ATIVIDADES.every((a) => a.faixas[a.faixaPrincipal] !== undefined));
-const tab = tabelaPorPeso(atividade("boxe"), 42);
+const tab = tabelaPorPeso(atividade("zumba"), 42);
 ok("tabela por peso cresce", tab.every((l, i, a) => i === 0 || l.kcal[0] > a[i - 1].kcal[0]));
-ok("uma coluna por faixa", tab.every((l) => l.kcal.length === atividade("boxe").faixas.length));
+ok("uma coluna por faixa", tab.every((l) => l.kcal.length === atividade("zumba").faixas.length));
+ok("futebol e boxe saíram do seletor", !ATIVIDADES.some((a) => a.id === "futebol" || a.id === "boxe"));
 
 bloco("5. UMA FERRAMENTA POR ARTIGO");
 const slugs = new Set(blogPosts.map((p) => p.slug));

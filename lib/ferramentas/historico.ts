@@ -43,6 +43,7 @@ export type Ferramenta =
   | "potencial"
   | "composicao"
   | "futebol"
+  | "boxe"
   | "diagnostico"
   | "rotina"
   | "academia"

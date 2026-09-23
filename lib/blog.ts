@@ -103676,7 +103676,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O boxe é um dos treinos que mais queimam calorias por hora — mas nenhuma luta vence uma alimentação desregulada. Aqui explico quanto uma aula realmente gasta, por que o boxe funciona tão bem para tanta gente e como encaixá-lo num plano de emagrecimento de verdade.",
     category: "Emagrecimento",
     date: "2026-08-01",
-    updatedAt: "2026-08-24",
+    updatedAt: "2026-09-22",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["boxe", "emagrecimento", "cardio", "queima de calorias", "lutas"],
@@ -103685,7 +103685,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
         question:
           "Boxe emagrece mesmo?",
         answer:
-          "O boxe queima muitas calorias (450 a 800 kcal por hora, conforme intensidade e peso) e tem altíssima adesão, o que ajuda muito no emagrecimento. Mas ele só emagrece dentro de um déficit calórico: se a alimentação não acompanhar, você fica condicionado sem perder peso.",
+          "O boxe queima bastante caloria (cerca de 400 a 750 kcal por hora, conforme o formato da aula e o peso) e tem altíssima adesão, o que ajuda muito no emagrecimento. Mas ele só emagrece dentro de um déficit calórico: se a alimentação não acompanhar, você fica condicionado sem perder peso.",
       },
       {
         question:
@@ -103697,7 +103697,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
         question:
           "Boxe emagrece quanto em um mês?",
         answer:
-          "Com três aulas semanais e alimentação estável, o gasto extra do treino representa em torno de 0,8 a 1 kg de gordura por mês — mais se houver déficit alimentar junto. Promessas de 5 a 8 kg por mês só com boxe não são realistas.",
+          "Com três aulas semanais e alimentação estável, o gasto extra do treino representa em torno de 0,5 a 1 kg de gordura por mês — mais se houver déficit alimentar junto. Promessas de 5 a 8 kg por mês só com boxe não são realistas.",
       },
       {
         question:
@@ -103724,16 +103724,16 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   <img src="/blog-images/boxe-emagrece.webp" alt="Boxe emagrece: gasto calórico do treino de boxe e como usar a luta para perder gordura" title="Boxe emagrece? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Quantas calorias uma aula de boxe queima?</h2>
-<p>Depende do formato da aula, da intensidade e do seu peso corporal. Faixas realistas para uma hora de treino:</p>
+<p>Depende do formato da aula e do seu peso corporal. Uma hora de treino, pelo Compêndio de Atividades Físicas:</p>
 <table>
 <thead><tr><th>Tipo de treino</th><th>Pessoa de 70 kg</th><th>Pessoa de 90 kg</th></tr></thead>
 <tbody>
-<tr><td>Aula técnica leve (fundamentos, sombra)</td><td>350–450 kcal</td><td>450–550 kcal</td></tr>
-<tr><td>Aula fitness com saco de pancada</td><td>450–600 kcal</td><td>550–750 kcal</td></tr>
-<tr><td>Treino intenso com sparring/rounds fortes</td><td>600–800 kcal</td><td>750–1.000 kcal</td></tr>
+<tr><td>Sombra e técnica (fundamentos, golpes no ar)</td><td>cerca de 405 kcal</td><td>cerca de 520 kcal</td></tr>
+<tr><td>Aula com saco de pancada</td><td>cerca de 425 kcal</td><td>cerca de 550 kcal</td></tr>
+<tr><td>Sparring</td><td>cerca de 575 kcal</td><td>cerca de 735 kcal</td></tr>
 </tbody>
 </table>
-<p>Números respeitáveis — na faixa alta, comparáveis ou superiores à corrida. Dois avisos, porém. Primeiro: relógios e propagandas de academia costumam inflar esses valores; desconfie de "1.200 kcal por aula" para qualquer pessoa. Segundo: o que importa não é a queima de uma aula isolada, e sim quanto você acumula na semana e como isso se combina com a alimentação.</p>
+<p>A aula de saco gasta menos do que parece porque tem explicação, troca de combinação e água no meio — o Compêndio mediu a aula como ela é. No saco em ritmo contínuo o número sobe: a 120 socos por minuto, um round puxado, o gasto por minuto passa o do sparring. Números respeitáveis — o sparring fica perto de uma corrida leve. Dois avisos, porém. Primeiro: relógios e propagandas de academia costumam inflar esses valores; desconfie de "1.200 kcal por aula" para qualquer pessoa. Segundo: o que importa não é a queima de uma aula isolada, e sim quanto você acumula na semana e como isso se combina com a alimentação.</p>
 
 <h2>Por que o boxe funciona tão bem para emagrecer</h2>
 <h3>1. Intensidade intervalada natural</h3>
@@ -103747,14 +103747,14 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <h2>O que o boxe NÃO faz</h2>
 <ul>
-<li><strong>Não compensa a alimentação:</strong> uma aula forte queima 600 kcal; um combo de hambúrguer repõe isso em dez minutos. Sem controle do que entra, o boxe apenas deixa você mais condicionado — e com o mesmo peso.</li>
+<li><strong>Não compensa a alimentação:</strong> uma aula forte queima perto de 550 kcal; um combo de hambúrguer repõe isso em dez minutos. Sem controle do que entra, o boxe apenas deixa você mais condicionado — e com o mesmo peso.</li>
 <li><strong>Não queima gordura localizada:</strong> socar não afina braço, e esquiva não seca cintura. A gordura sai do corpo todo, no ritmo que a genética determina.</li>
 <li><strong>Não substitui o treino de força:</strong> o boxe preserva pouco a massa muscular em comparação com a musculação. Em emagrecimentos grandes, essa combinação faz muita diferença — falo por experiência.</li>
 </ul>
 <p>Sobre esse último ponto: quando perdi mais de 40 kg, aprendi da forma difícil que emagrecer sem treino de força significa perder músculo junto com a gordura — e músculo perdido é metabolismo mais lento e corpo com menos forma no final do processo. Se o boxe for seu cardio favorito, ótimo; apenas combine-o com pelo menos duas sessões semanais de força, nem que seja um <a href="/blog/treino-em-casa-sem-equipamento">treino em casa sem equipamento</a>.</p>
 
 <h2>Boxe emagrece quanto por mês?</h2>
-<p>Vamos fazer a conta honesta. Três aulas fortes por semana ≈ 1.500 a 2.000 kcal de gasto adicional semanal. Se a alimentação se mantiver estável, isso representa algo como 0,8 a 1 kg de gordura por mês só do treino — e mais do que isso se houver ajuste alimentar junto. É pouco? Não: é sustentável, que é diferente. Quem promete 8 kg por mês com boxe está vendendo fantasia ou desidratação. Para entender o tamanho de déficit que faz sentido para você, veja <a href="/blog/deficit-calorico-como-calcular">como calcular seu déficit calórico</a>.</p>
+<p>Vamos fazer a conta honesta. Três aulas por semana acrescentam algo como 1.000 a 2.000 kcal à semana, conforme o formato e o seu peso — já descontado o que você gastaria parado. Se a alimentação se mantiver estável, isso representa algo como 0,5 a 1 kg de gordura por mês só do treino — e mais do que isso se houver ajuste alimentar junto. É pouco? Não: é sustentável, que é diferente. Quem promete 8 kg por mês com boxe está vendendo fantasia ou desidratação. Para entender o tamanho de déficit que faz sentido para você, veja <a href="/blog/deficit-calorico-como-calcular">como calcular seu déficit calórico</a>.</p>
 
 <h2>Como montar a semana com boxe no centro</h2>
 <ul>
@@ -103787,7 +103787,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Referências</h2>
 <ul>
 <li>Chaabène, H., Tabben, M., Mkaouer, B., et al. (2015). Amateur boxing: physical and physiological attributes. Sports Medicine, 45(3), 337–352.</li>
-<li>Ainsworth, B. E., Haskell, W. L., Herrmann, S. D., et al. (2011). 2011 Compendium of Physical Activities: a second update of codes and MET values. Medicine &amp; Science in Sports &amp; Exercise, 43(8), 1575–1581.</li>
+<li>Herrmann, S. D., Willis, E. A., Ainsworth, B. E., et al. (2024). 2024 Adult Compendium of Physical Activities: a third update of the energy costs of human activities. <em>Journal of Sport and Health Science</em>, 13(1), 6–12.</li>
 <li>Swift, D. L., Johannsen, N. M., Lavie, C. J., Earnest, C. P., &amp; Church, T. S. (2014). The role of exercise and physical activity in weight loss and maintenance. Progress in Cardiovascular Diseases, 56(4), 441–447.</li>
 </ul>`,
   },

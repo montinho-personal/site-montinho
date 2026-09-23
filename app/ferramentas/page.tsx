@@ -60,9 +60,10 @@ const itemListSchema = {
     { "@type": "ListItem", position: 20, name: "Calculadora de Potencial Natural", url: `${SITE_URL}/ferramentas/potencial-natural` },
     { "@type": "ListItem", position: 21, name: "Calculadora de Composição Corporal", url: `${SITE_URL}/ferramentas/composicao-corporal` },
     { "@type": "ListItem", position: 22, name: "Calculadora de Calorias no Futebol", url: `${SITE_URL}/ferramentas/calculadora-calorias-futebol` },
+    { "@type": "ListItem", position: 23, name: "Calculadora de Calorias no Boxe", url: `${SITE_URL}/ferramentas/calculadora-calorias-boxe` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 23, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 24, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
@@ -200,7 +201,7 @@ const FERRAMENTAS = [
     pergunta: "Quantas calorias a minha aula gasta?",
     tempo: "15 segundos · sem cadastro",
     texto:
-      "Boxe, zumba, spinning, dança, natação, jiu-jitsu, escada, corda e bicicleta: informe peso, tempo e ritmo para ver o gasto da sessão — com as pausas da aula como opção — e compare as nove atividades no mesmo tempo.",
+      "Zumba, spinning, dança, natação, jiu-jitsu, escada, corda e bicicleta: informe peso, tempo e ritmo para ver o gasto da sessão — com as pausas da aula como opção — e compare as oito atividades no mesmo tempo.",
     quando: "Use quando quiser saber quanto a sua aula realmente gasta, e não o número da tabela de revista. O peso não sai do navegador.",
   },
   {
@@ -256,6 +257,15 @@ const FERRAMENTAS = [
     texto:
       "Calcula o gasto da pelada, do futsal ou do jogo competitivo pelo seu peso, separa o tempo de bola rolando do tempo na lateral quando os times revezam e mostra quantas latas de cerveja o jogo realmente pagou.",
     quando: "Use depois do jogo, antes da resenha. O peso não sai do navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-calorias-boxe",
+    nome: "Calculadora de Calorias no Boxe",
+    pergunta: "Uma aula de boxe queima mesmo 1.000 kcal?",
+    tempo: "15 segundos · sem cadastro",
+    texto:
+      "Calcula o gasto da aula de sombra, saco ou sparring, ou dos seus rounds no ritmo medido pelos socos de dez segundos, e compara com o número do relógio — e com as 1.000 kcal da propaganda.",
+    quando: "Use depois da aula, quando o relógio mostrar um número bom demais. O peso não sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{
