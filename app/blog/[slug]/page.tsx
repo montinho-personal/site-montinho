@@ -84,6 +84,9 @@ import CalculadoraHyrox from "@/components/hyrox/CalculadoraHyrox";
 import { ARTIGOS_COM_CALCULADORA_CREATINA, ARTIGOS_COM_LINK_CREATINA } from "@/lib/creatina";
 import CalculadoraCreatina from "@/components/creatina/CalculadoraCreatina";
 import LinkFerramentaCreatina from "@/components/creatina/LinkFerramentaCreatina";
+import { ARTIGOS_COM_CALCULADORA_WHEY, ARTIGOS_COM_LINK_WHEY } from "@/lib/whey";
+import CalculadoraWhey from "@/components/whey/CalculadoraWhey";
+import LinkFerramentaWhey from "@/components/whey/LinkFerramentaWhey";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -263,7 +266,9 @@ export default async function BlogPost({ params }: Props) {
                                                       ? "hyrox"
                                                       : ARTIGOS_COM_CALCULADORA_CREATINA.includes(post.slug)
                                                         ? "creatina"
-                                                        : null;
+                                                        : ARTIGOS_COM_CALCULADORA_WHEY.includes(post.slug)
+                                                          ? "whey"
+                                                          : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -501,6 +506,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraHyrox placement={post.slug} />
                 ) : qualCalc === "creatina" ? (
                   <CalculadoraCreatina placement={post.slug} />
+                ) : qualCalc === "whey" ? (
+                  <CalculadoraWhey placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}
@@ -580,6 +587,7 @@ export default async function BlogPost({ params }: Props) {
           {ARTIGOS_COM_LINK_POLICHINELO.includes(post.slug) && <LinkFerramentaPolichinelo slug={post.slug} posicao="fim" />}
           {ARTIGOS_COM_LINK_CAMINHADA.includes(post.slug) && <LinkFerramentaCaminhada slug={post.slug} />}
           {ARTIGOS_COM_LINK_CREATINA.includes(post.slug) && <LinkFerramentaCreatina slug={post.slug} />}
+          {ARTIGOS_COM_LINK_WHEY.includes(post.slug) && <LinkFerramentaWhey slug={post.slug} />}
           {ARTIGOS_COM_LINK_ATIVIDADES.includes(post.slug) && <LinkFerramentaAtividades slug={post.slug} />}
           {/* Conversor de mg/mL: convite, nunca embed. Uma seringa desenhada
               dentro de um artigo sobre um medicamento daria a impressão de que

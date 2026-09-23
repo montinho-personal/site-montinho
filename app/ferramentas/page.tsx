@@ -71,9 +71,10 @@ const itemListSchema = {
     { "@type": "ListItem", position: 31, name: "Calculadora de Calorias no CrossFit", url: `${SITE_URL}/ferramentas/calculadora-calorias-crossfit` },
     { "@type": "ListItem", position: 32, name: "Calculadora de Calorias no Hyrox", url: `${SITE_URL}/ferramentas/calculadora-calorias-hyrox` },
     { "@type": "ListItem", position: 33, name: "Calculadora de Creatina", url: `${SITE_URL}/ferramentas/calculadora-creatina` },
+    { "@type": "ListItem", position: 34, name: "Calculadora de Whey", url: `${SITE_URL}/ferramentas/calculadora-whey` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 34, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 35, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
@@ -366,6 +367,15 @@ const FERRAMENTAS = [
     texto:
       "Informe seu peso e veja a referência do consenso científico, 3 g ou 5 g, com ou sem saturação — e quanto tempo o seu pote dura e quanto custa por dia.",
     quando: "Use quando comprar ou for comprar creatina. O peso não sai do navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-whey",
+    nome: "Calculadora de Whey",
+    pergunta: "Quanto whey eu preciso tomar?",
+    tempo: "30 segundos · sem cadastro",
+    texto:
+      "Calcula sua meta de proteína, desconta o que você já come e usa o rótulo do seu whey para dizer quantos gramas completam o resto — com duração do pacote e custo por proteína.",
+    quando: "Use antes de comprar ou quando não souber se precisa de whey. Nada sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{

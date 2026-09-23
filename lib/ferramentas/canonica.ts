@@ -83,6 +83,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Creatina",
     motivo: "que calcula a dose diária pelo seu peso segundo o consenso da ISSN, com ou sem saturação, e quanto tempo o pote dura",
   },
+  whey: {
+    href: "/ferramentas/calculadora-whey",
+    ancora: "Calculadora de Whey",
+    motivo: "que parte da sua meta de proteína, desconta o que você já come e usa o rótulo do seu whey para dizer quantos gramas completam o resto",
+  },
   hyrox: {
     href: "/ferramentas/calculadora-calorias-hyrox",
     ancora: "Calculadora de Calorias no Hyrox",
