@@ -69,9 +69,10 @@ const itemListSchema = {
     { "@type": "ListItem", position: 29, name: "Calculadora de Calorias Pulando Corda", url: `${SITE_URL}/ferramentas/calculadora-calorias-pular-corda` },
     { "@type": "ListItem", position: 30, name: "Calculadora de Calorias Subindo Escada", url: `${SITE_URL}/ferramentas/calculadora-calorias-escada` },
     { "@type": "ListItem", position: 31, name: "Calculadora de Calorias no CrossFit", url: `${SITE_URL}/ferramentas/calculadora-calorias-crossfit` },
+    { "@type": "ListItem", position: 32, name: "Calculadora de Calorias no Hyrox", url: `${SITE_URL}/ferramentas/calculadora-calorias-hyrox` },
     // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
     ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 32, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
+      ? [{ "@type": "ListItem", position: 33, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
       : []),
     // O conversor mg/mL entra depois da revisão técnica.
     ...(CONVERSOR_NO_AR
@@ -346,6 +347,15 @@ const FERRAMENTAS = [
     texto:
       "Informe os minutos de aquecimento, força e WOD e o formato do WOD: a calculadora soma cada parte com o seu peso e mostra de onde saem as 1.000 kcal do relógio.",
     quando: "Use depois do box, com o WOD ainda na cabeça. O peso não sai do navegador.",
+  },
+  {
+    href: "/ferramentas/calculadora-calorias-hyrox",
+    nome: "Calculadora de Calorias no Hyrox",
+    pergunta: "Quanto a minha prova de Hyrox gastou?",
+    tempo: "15 segundos · sem cadastro",
+    texto:
+      "Informe o tempo final e o pace da corrida: a calculadora separa os 8 km das oito estações, mostra o gasto de cada parte e quanto a corrida pesa na prova.",
+    quando: "Use depois da prova ou do simulado. O peso não sai do navegador.",
   },
   // O card do teste de mobilidade some junto com a chave de lançamento.
   ...(MOBILIDADE_NO_AR ? [{

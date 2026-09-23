@@ -78,6 +78,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Potencial Natural",
     motivo: "com o FFMI normalizado, o que o número 25 realmente significa e o ritmo de ganho esperado no seu nível",
   },
+  hyrox: {
+    href: "/ferramentas/calculadora-calorias-hyrox",
+    ancora: "Calculadora de Calorias no Hyrox",
+    motivo: "que parte do seu tempo final e do seu pace, separa os 8 km de corrida das estações e mostra o gasto de cada uma",
+  },
   crossfit: {
     href: "/ferramentas/calculadora-calorias-crossfit",
     ancora: "Calculadora de Calorias no CrossFit",

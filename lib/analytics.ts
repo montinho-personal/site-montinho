@@ -386,6 +386,12 @@ export type AnalyticsEvent =
   | "crossfit_frequency"
   | "crossfit_methodology_open"
   | "crossfit_tool_click"
+  /** Calculadora de Calorias no Hyrox. Só o uso; nunca o peso nem o tempo da prova. */
+  | "hyrox_calculator_view"
+  | "hyrox_calculator_use"
+  | "hyrox_preset"
+  | "hyrox_methodology_open"
+  | "hyrox_tool_click"
   | "one_rm_calculator_view"
   | "one_rm_calculator_use"
   | "one_rm_percentage_select"

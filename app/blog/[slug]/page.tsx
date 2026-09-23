@@ -79,6 +79,8 @@ import { ARTIGOS_COM_CALCULADORA_ESCADA } from "@/lib/escada";
 import CalculadoraEscada from "@/components/escada/CalculadoraEscada";
 import { ARTIGOS_COM_CALCULADORA_CROSSFIT } from "@/lib/crossfit";
 import CalculadoraCrossfit from "@/components/crossfit/CalculadoraCrossfit";
+import { ARTIGOS_COM_CALCULADORA_HYROX } from "@/lib/hyrox";
+import CalculadoraHyrox from "@/components/hyrox/CalculadoraHyrox";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -254,7 +256,9 @@ export default async function BlogPost({ params }: Props) {
                                                   ? "escada"
                                                   : ARTIGOS_COM_CALCULADORA_CROSSFIT.includes(post.slug)
                                                     ? "crossfit"
-                                                    : null;
+                                                    : ARTIGOS_COM_CALCULADORA_HYROX.includes(post.slug)
+                                                      ? "hyrox"
+                                                      : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -488,6 +492,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraEscada placement={post.slug} />
                 ) : qualCalc === "crossfit" ? (
                   <CalculadoraCrossfit placement={post.slug} />
+                ) : qualCalc === "hyrox" ? (
+                  <CalculadoraHyrox placement={post.slug} />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}

@@ -52,6 +52,7 @@ export type Ferramenta =
   | "corda"
   | "escada"
   | "crossfit"
+  | "hyrox"
   | "diagnostico"
   | "rotina"
   | "academia"
