@@ -19,7 +19,7 @@ import Compartilhar from "@/components/share/Compartilhar";
 export const metadata: Metadata = {
   title: "Calculadora de TMB e TDEE: Gasto Calórico Diário",
   description:
-    "Estime sua taxa metabólica basal e seu gasto calórico diário com base em peso, altura, idade e nível de atividade. Equação de Mifflin-St Jeor, conta aberta, sem cadastro.",
+    "Estime sua taxa metabólica basal e seu gasto calórico diário pelo peso, altura, idade e nível de atividade, com a equação de Mifflin-St Jeor. Sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/calculadora-tmb-tdee` },
   openGraph: {
     title: "Calculadora de TMB e TDEE — quantas calorias você gasta por dia?",

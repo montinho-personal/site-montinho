@@ -37,7 +37,7 @@ import Compartilhar from "@/components/share/Compartilhar";
 export const metadata: Metadata = {
   title: "Teste de Mobilidade: Descubra Onde Você Pode Melhorar",
   description:
-    "Cinco testes simples para descobrir quais amplitudes podem estar dificultando seus exercícios de musculação — e um protocolo de 6 minutos com 2 a 3 exercícios. Gratuito, sem cadastro.",
+    "Cinco testes simples mostram quais amplitudes limitam seus exercícios de musculação, com um protocolo de 6 minutos para melhorar. Grátis, sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/teste-mobilidade` },
   openGraph: {
     title: "Destrave Seu Corpo — Teste de Mobilidade do Montinho",

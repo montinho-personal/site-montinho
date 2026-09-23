@@ -30,7 +30,7 @@ import Compartilhar from "@/components/share/Compartilhar";
 export const metadata: Metadata = {
   title: "Montinho FitChef: Monte seu Cardápio, Calorias e Porções",
   description:
-    "Informe sua meta, sua rotina e os alimentos que você gosta. A ferramenta monta uma sugestão de cardápio com calorias, proteínas, porções caseiras e substituições. Gratuito, sem cadastro.",
+    "Informe sua meta, sua rotina e os alimentos de que você gosta e receba um cardápio com calorias, proteínas, porções caseiras e substituições. Grátis.",
   alternates: { canonical: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
   openGraph: {
     title: "Montinho FitChef — monte seu cardápio com o Montinho",

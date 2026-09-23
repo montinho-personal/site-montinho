@@ -32,7 +32,7 @@ import Compartilhar from "@/components/share/Compartilhar";
 export const metadata: Metadata = {
   title: "Calculadora de 1RM: Descubra sua Carga Máxima",
   description:
-    "Calcule seu 1RM a partir da carga e repetições e descubra quanto usar em 60%, 70%, 80% e 90% do treino — incluindo quais anilhas colocar na barra. Gratuita, sem cadastro.",
+    "Calcule seu 1RM pela carga e pelas repetições e veja quanto usar em 60%, 70%, 80% e 90% do treino, com as anilhas de cada lado da barra. Sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/calculadora-1rm` },
   openGraph: {
     title: "Calculadora de 1RM e Carga de Treino | Montinho",

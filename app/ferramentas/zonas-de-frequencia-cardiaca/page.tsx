@@ -29,9 +29,9 @@ import Compartilhar from "@/components/share/Compartilhar";
  * para quem chega sem vontade de preencher nada.
  */
 export const metadata: Metadata = {
-  title: "Calculadora de Zonas de Frequência Cardíaca",
+  title: "Calculadora de Zonas de Frequência Cardíaca por Idade",
   description:
-    "Informe sua idade e descubra sua frequência cardíaca máxima e as cinco zonas de treino em batimentos por minuto, com o método de Karvonen se souber a de repouso. Gratuita, sem cadastro.",
+    "Informe sua idade e veja sua frequência cardíaca máxima e as cinco zonas de treino em bpm, com o método de Karvonen se souber a de repouso.",
   alternates: { canonical: `${SITE_URL}/ferramentas/zonas-de-frequencia-cardiaca` },
   openGraph: {
     title: "Calculadora de Zonas de Frequência Cardíaca | Montinho",

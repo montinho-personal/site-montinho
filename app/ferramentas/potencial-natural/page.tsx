@@ -37,7 +37,7 @@ import {
 const CAMINHO = "/ferramentas/potencial-natural";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Potencial Natural e FFMI",
+  title: "Calculadora de Potencial Natural e FFMI Normalizado",
   description:
     "Descubra seu FFMI normalizado e quanto de massa magra ainda cabe até a faixa de referência natural — com o tempo estimado no ritmo do seu nível de treino.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
