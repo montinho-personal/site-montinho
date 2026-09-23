@@ -30,7 +30,6 @@ const perto = (a: number, b: number, t = 0.01) => Math.abs(a - b) <= t;
 
 bloco("1. OS METs, TRAVADOS (mudar exige conferir o Compêndio)");
 const ESPERADO: Record<string, [string, number][]> = {
-  danca: [["social", 5.5], ["intensa", 7.8]],
   natacao: [["moderada", 5.8], ["vigorosa", 9.8]],
   "jiu-jitsu": [["tecnica", 7.8], ["rolamento", 10.3]],
   corda: [["lento", 8.8], ["rapido", 12.3]],
@@ -82,9 +81,6 @@ const FAIXAS_DOS_ARTIGOS: [string, string, number, number, number, number][] = [
   ["jiu-jitsu", "tecnica", 70, 60, 300, 450],
   ["jiu-jitsu", "rolamento", 70, 60, 450, 700],
   ["corda", "lento", 70, 30, 300, 400],
-  /* O artigo de dança lista sete ritmos, de 200 (salão) a 550 (zumba/fitdance). */
-  ["danca", "social", 70, 60, 200, 550],
-  ["danca", "intensa", 70, 60, 300, 550],
   /* "10 a 12 kcal/min para 80 kg" — o artigo arredonda, daí a tolerância abaixo. */
   ["escada", "rapido", 80, 15, 150, 180],
 ];
@@ -122,15 +118,15 @@ bloco("3. O TEMPO ATIVO — opção, nunca padrão");
   ok("o desconto de pausas começa desligado", /useState\(false\);?\s*$/m.test(comp.split("descontarPausas")[1]?.split("\n")[0] ?? "") || /const \[descontarPausas, setDescontarPausas\] = useState\(false\)/.test(comp));
   ok("a caixa fala do que a pessoa observou, não de uma regra da casa", /Passei boa parte da sessão parado/.test(comp));
 }
-ok("dança, quando pedido, desconta pausas", tempoAtivo(60, atividade("danca")) === 42);
+ok("jiu-jitsu, quando pedido, desconta pausas", tempoAtivo(60, atividade("jiu-jitsu")) === 39);
 ok("natação é contínua (não desconta)", tempoAtivo(60, atividade("natacao")) === 60 && atividade("natacao").fracaoAtiva === null);
 ok("bicicleta é contínua", atividade("bicicleta").fracaoAtiva === null);
 ok("toda fração declarada fica entre 40% e 95%",
   ATIVIDADES.every((a) => a.fracaoAtiva === null || (a.fracaoAtiva >= 0.4 && a.fracaoAtiva <= 0.95)));
 {
-  const aulaDanca = deTempo(tempoAtivo(60, atividade("danca")), 70, atividade("danca").faixas[0].met);
-  const horaInteira = deTempo(60, 70, atividade("danca").faixas[0].met);
-  ok("descontar pausas reduz o gasto da aula", aulaDanca.kcal < horaInteira.kcal);
+  const aulaJJ = deTempo(tempoAtivo(60, atividade("jiu-jitsu")), 70, atividade("jiu-jitsu").faixas[0].met);
+  const horaInteira = deTempo(60, 70, atividade("jiu-jitsu").faixas[0].met);
+  ok("descontar pausas reduz o gasto da aula", aulaJJ.kcal < horaInteira.kcal);
   /* A trava das "1.000 kcal por aula" mora agora nos testes de boxe e zumba. */
 }
 
@@ -143,12 +139,12 @@ ok("usa a faixa principal de cada uma", cmp.every((l) => l.met === faixaPrincipa
    usasse a entrada lenta do Compêndio, ela apareceria como a mais fraca da lista. */
 ok("a escada entra na comparação como exercício, não como subida do dia a dia", faixaPrincipal(atividade("escada")).met === 8.8);
 ok("toda faixa principal existe", ATIVIDADES.every((a) => a.faixas[a.faixaPrincipal] !== undefined));
-const tab = tabelaPorPeso(atividade("danca"), 42);
+const tab = tabelaPorPeso(atividade("jiu-jitsu"), 42);
 ok("tabela por peso cresce", tab.every((l, i, a) => i === 0 || l.kcal[0] > a[i - 1].kcal[0]));
-ok("uma coluna por faixa", tab.every((l) => l.kcal.length === atividade("danca").faixas.length));
+ok("uma coluna por faixa", tab.every((l) => l.kcal.length === atividade("jiu-jitsu").faixas.length));
 ok("o pós-resultado não promete o desconto de pausas, que é opcional",
   !/tempo de aula não é todo tempo de esforço/.test(readFileSync("lib/ferramentas/pos-resultado.ts", "utf8")));
-ok("futebol, boxe, zumba e spinning saíram do seletor", !ATIVIDADES.some((a) => ["futebol", "boxe", "zumba", "spinning"].includes(a.id)));
+ok("futebol, boxe, zumba, spinning e dança saíram do seletor", !ATIVIDADES.some((a) => ["futebol", "boxe", "zumba", "spinning", "danca"].includes(a.id)));
 
 bloco("5. UMA FERRAMENTA POR ARTIGO");
 const slugs = new Set(blogPosts.map((p) => p.slug));

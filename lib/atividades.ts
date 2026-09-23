@@ -20,15 +20,15 @@
  * e a ferramenta responde a conta que o texto não responde: com o peso de
  * quem pergunta.
  *
- * CAMINHADA, ELÍPTICO, FUTEBOL, BOXE, ZUMBA E SPINNING NÃO ENTRAM
+ * CAMINHADA, ELÍPTICO, FUTEBOL, BOXE, ZUMBA, SPINNING E DANÇA NÃO ENTRAM
  *
- * Futebol, boxe, zumba e spinning entraram aqui e saíram em setembro de
- * 2026. Não porque o argumento acima deixou de valer, mas porque cada um
+ * Futebol, boxe, zumba, spinning e dança entraram aqui e saíram em
+ * setembro de 2026. Não porque o argumento acima deixou de valer, mas porque cada um
  * passou a ter uma conta que as outras não têm: o futebol, o revezamento
  * de times; o boxe, o ritmo de socos que o Compêndio mediu e os rounds; a
  * zumba, a aula dividida entre músicas com e sem salto; o spinning, a
- * potência em watts que a bike mostra. Ver lib/futebol.ts, lib/boxe.ts,
- * lib/zumba.ts e lib/spinning.ts.
+ * potência em watts que a bike mostra; a dança, o estilo. Ver
+ * lib/futebol.ts, lib/boxe.ts, lib/zumba.ts, lib/spinning.ts e lib/danca.ts.
  *
  * A saída do boxe também corrigiu um erro: esta tabela dava 7,8 METs ao
  * saco e 9,3 ao sparring. No Compêndio de 2024, 7,8 é o sparring e o saco
@@ -139,19 +139,6 @@ export interface Atividade {
  * mudar aqui exige conferir a fonte e mudar lá.
  */
 export const ATIVIDADES: Atividade[] = [
-  {
-    id: "danca",
-    nome: "Dança (salão, forró, funk)",
-    artigoFrase: "uma noite de dança",
-    sessaoTipica: 60,
-    faixaPrincipal: 0,
-    fracaoAtiva: 0.7,
-    slug: "danca-emagrece",
-    faixas: [
-      { id: "social", nome: "Dança social", met: 5.5, comoReconhecer: "Forró, samba, salão: movimento constante, sem exaustão.", origem: "dança geral, esforço moderado" },
-      { id: "intensa", nome: "Dança intensa", met: 7.8, comoReconhecer: "Ritmo rápido e contínuo, do tipo que deixa suado de verdade.", origem: "dança geral, esforço vigoroso" },
-    ],
-  },
   {
     id: "natacao",
     nome: "Natação",
@@ -367,7 +354,6 @@ export const NOTA_SEM_PERDA_LOCALIZADA =
  * uma ferramenta por artigo.
  */
 export const ARTIGOS_COM_CALCULADORA_ATIVIDADES: string[] = [
-  "danca-emagrece",
   "natacao-emagrece",
   "jiu-jitsu-emagrece",
   "subir-escada-emagrece",
