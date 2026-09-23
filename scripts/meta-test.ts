@@ -134,7 +134,7 @@ for (const s of ARTIGOS_COM_CALCULADORA_META) {
 ok("canônica e pós-resultado", CANONICA.meta?.href === ROTA.meta && NOME.meta === "Calculadora de Meta de Peso");
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute pelo registro", /ARTIGOS_COM_CALCULADORA_META\.includes\(post\.slug\)/.test(blog) && /<CalculadoraMeta placement=\{post\.slug\} \/>/.test(blog));
-ok("hub e sitemap", /meta-de-peso/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /meta-de-peso/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /meta-de-peso/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /meta-de-peso/.test(readFileSync("app/sitemap.ts", "utf8")));
 const comp = readFileSync("components/meta/CalculadoraMeta.tsx", "utf8");
 ok("sem chamada de rede", !/fetch\(|sendBeacon/.test(comp));
 ok("CTA centralizado", /<PosResultado[\s\S]*ferramenta="meta"/.test(comp));

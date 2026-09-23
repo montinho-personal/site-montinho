@@ -106,7 +106,7 @@ const comp = readFileSync("components/boxe/CalculadoraBoxe.tsx", "utf8");
 const pag = readFileSync("app/ferramentas/calculadora-calorias-boxe/page.tsx", "utf8");
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute pelo registro", /ARTIGOS_COM_CALCULADORA_BOXE\.includes\(post\.slug\)/.test(blog) && /<CalculadoraBoxe placement=\{post\.slug\} \/>/.test(blog));
-ok("hub e sitemap", /calculadora-calorias-boxe/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /calculadora-calorias-boxe/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /calculadora-calorias-boxe/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /calculadora-calorias-boxe/.test(readFileSync("app/sitemap.ts", "utf8")));
 ok("sem chamada de rede", !/fetch\(|sendBeacon|localStorage/.test(comp));
 ok("os eventos nunca levam peso nem relógio", !/trackEvent\([^)]*(peso|relogio)/.test(comp));
 ok("quem passa das 1.000 kcal não recebe 'quanto falta'", /resultado\.kcal < KCAL_PROPAGANDA \?/.test(comp) && /passou-propaganda/.test(comp));

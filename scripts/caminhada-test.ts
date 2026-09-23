@@ -208,7 +208,7 @@ const pagina = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute a calculadora pelo registro", /ARTIGOS_COM_CALCULADORA_CAMINHADA\.includes\(post\.slug\)/.test(pagina) && /<CalculadoraCaminhada placement=\{post\.slug\} \/>/.test(pagina));
 ok("o blog põe o convite pelo registro de link", /ARTIGOS_COM_LINK_CAMINHADA\.includes\(post\.slug\) && <LinkFerramentaCaminhada/.test(pagina));
 
-const hub = readFileSync("app/ferramentas/page.tsx", "utf8");
+const hub = readFileSync("lib/ferramentas/catalogo.ts", "utf8");
 ok("o hub lista a ferramenta", /\/ferramentas\/calculadora-calorias-caminhada/.test(hub));
 const sitemap = readFileSync("app/sitemap.ts", "utf8");
 ok("o sitemap lista a ferramenta", /calculadora-calorias-caminhada/.test(sitemap));

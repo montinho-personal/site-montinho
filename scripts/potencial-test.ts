@@ -154,7 +154,7 @@ for (const s of ARTIGOS_COM_CALCULADORA_POTENCIAL) {
 ok("canônica e pós-resultado", CANONICA.potencial?.href === ROTA.potencial && NOME.potencial === "Calculadora de Potencial Natural");
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute pelo registro", /ARTIGOS_COM_CALCULADORA_POTENCIAL\.includes\(post\.slug\)/.test(blog) && /<CalculadoraPotencial placement=\{post\.slug\} \/>/.test(blog));
-ok("hub e sitemap", /potencial-natural/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /potencial-natural/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /potencial-natural/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /potencial-natural/.test(readFileSync("app/sitemap.ts", "utf8")));
 ok("sem chamada de rede", !/fetch\(|sendBeacon/.test(comp));
 ok("o evento leva a leitura, nunca os dados do corpo",
   /reading: lei, level: nivelId/.test(comp) && !/trackEvent\([^)]*(peso|altura|gordura)/.test(comp));

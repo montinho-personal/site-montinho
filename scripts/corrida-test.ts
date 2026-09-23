@@ -162,7 +162,7 @@ for (const s of ARTIGOS_COM_CALCULADORA_CORRIDA) {
 ok("canônica e pós-resultado", CANONICA.corrida?.href === ROTA.corrida && NOME.corrida === "Calculadora de Corrida");
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute pelo registro", /ARTIGOS_COM_CALCULADORA_CORRIDA\.includes\(post\.slug\)/.test(blog) && /<CalculadoraCorrida placement=\{post\.slug\} \/>/.test(blog));
-ok("hub e sitemap", /calculadora-corrida/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /calculadora-corrida/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /calculadora-corrida/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /calculadora-corrida/.test(readFileSync("app/sitemap.ts", "utf8")));
 const comp = readFileSync("components/corrida/CalculadoraCorrida.tsx", "utf8");
 ok("sem chamada de rede", !/fetch\(|sendBeacon/.test(comp));
 ok("CTA centralizado", /<PosResultado[\s\S]*ferramenta="corrida"/.test(comp));

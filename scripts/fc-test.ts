@@ -123,7 +123,7 @@ ok("a nota de betabloqueador aparece", /NOTA_BETABLOQUEADOR/.test(comp));
 bloco("A FERRAMENTA EXISTE EM TODO LUGAR ONDE AS OUTRAS EXISTEM");
 
 const pagina = readFileSync("app/ferramentas/zonas-de-frequencia-cardiaca/page.tsx", "utf8");
-const indice = readFileSync("app/ferramentas/page.tsx", "utf8");
+const indice = readFileSync("lib/ferramentas/catalogo.ts", "utf8");
 const sitemap = readFileSync("app/sitemap.ts", "utf8");
 const blogPage = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 const analytics = readFileSync("lib/analytics.ts", "utf8");
@@ -137,7 +137,7 @@ ok("a página explica por que não usa 220 − idade", /220 − idade/.test(pagi
 ok("a página tem a régua da fala", /régua da fala/i.test(pagina));
 ok("só BreadcrumbList no schema (nada inventado)", /BreadcrumbList/.test(pagina) && !/FAQPage|AggregateRating|Review/.test(pagina));
 ok("está no índice de ferramentas (card)", /href: "\/ferramentas\/zonas-de-frequencia-cardiaca"/.test(indice));
-ok("está no ItemList do índice", /name: "Calculadora de Zonas de Frequência Cardíaca", url: `\$\{SITE_URL\}\/ferramentas\/zonas-de-frequencia-cardiaca`/.test(indice));
+ok("está no ItemList do índice (gerado do catálogo)", /nome: "Calculadora de Zonas de Frequência Cardíaca"/.test(indice) && /FERRAMENTAS_NO_AR\.map\(/.test(readFileSync("app/ferramentas/page.tsx", "utf8")));
 ok("está no sitemap", /\/ferramentas\/zonas-de-frequencia-cardiaca`/.test(sitemap));
 ok("o blog embute a calculadora nos artigos do registro", /ARTIGOS_COM_CALCULADORA_FC/.test(blogPage) && /<CalculadoraFC placement=\{post\.slug\}/.test(blogPage));
 ok("o blog põe o link nos artigos do registro de link", /ARTIGOS_COM_LINK_FC\.includes\(post\.slug\) && <LinkFerramentaFC/.test(blogPage));

@@ -280,7 +280,7 @@ ok("tem H1", /<h1/.test(pagina));
 ok("tem conteúdo indexável em volta", (pagina.match(/<h2/g) ?? []).length >= 5 && pagina.length > 5000);
 ok("BreadcrumbList, sem schema inventado", /BreadcrumbList/.test(paginaSemComentarios) && !/AggregateRating|"Review"|FAQPage/.test(paginaSemComentarios));
 ok("está no sitemap", fs.readFileSync("app/sitemap.ts", "utf8").includes("/ferramentas/calculadora-macros"));
-ok("está na central /ferramentas", fs.readFileSync("app/ferramentas/page.tsx", "utf8").includes("/ferramentas/calculadora-macros"));
+ok("está na central /ferramentas", fs.readFileSync("lib/ferramentas/catalogo.ts", "utf8").includes("/ferramentas/calculadora-macros"));
 
 /** O ecossistema tem que estar ligado nos dois sentidos. */
 const deficitComp = fs.readFileSync("components/calorias/CalculadoraDeficit.tsx", "utf8");

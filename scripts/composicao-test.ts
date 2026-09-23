@@ -149,7 +149,7 @@ for (const s of ARTIGOS_COM_CALCULADORA_COMPOSICAO) {
 ok("canônica e pós-resultado", CANONICA.composicao?.href === ROTA.composicao && NOME.composicao === "Calculadora de Composição Corporal");
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute pelo registro", /ARTIGOS_COM_CALCULADORA_COMPOSICAO\.includes\(post\.slug\)/.test(blog) && /<CalculadoraComposicao placement=\{post\.slug\} \/>/.test(blog));
-ok("hub e sitemap", /composicao-corporal/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /composicao-corporal/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /composicao-corporal/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /composicao-corporal/.test(readFileSync("app/sitemap.ts", "utf8")));
 ok("sem chamada de rede", !/fetch\(|sendBeacon/.test(comp));
 ok("o evento leva a faixa, nunca os números", /range: faixaId/.test(comp) && !/trackEvent\([^)]*(peso|gordura)/.test(comp));
 ok("CTA centralizado e por faixa", /<PosResultado[\s\S]*ferramenta="composicao"/.test(comp) && /categoria=\{resultado\.faixa\.id\}/.test(comp));

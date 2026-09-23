@@ -99,7 +99,7 @@ const comp = readFileSync("components/futebol/CalculadoraFutebol.tsx", "utf8");
 const pag = readFileSync("app/ferramentas/calculadora-calorias-futebol/page.tsx", "utf8");
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute pelo registro", /ARTIGOS_COM_CALCULADORA_FUTEBOL\.includes\(post\.slug\)/.test(blog) && /<CalculadoraFutebol placement=\{post\.slug\} \/>/.test(blog));
-ok("hub e sitemap", /calculadora-calorias-futebol/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /calculadora-calorias-futebol/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /calculadora-calorias-futebol/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /calculadora-calorias-futebol/.test(readFileSync("app/sitemap.ts", "utf8")));
 ok("sem chamada de rede", !/fetch\(|sendBeacon|localStorage/.test(comp));
 ok("os eventos nunca levam o peso", !/trackEvent\([^)]*peso/.test(comp));
 ok("goleiro não recebe número de linha", /!goleiro \? calcula/.test(comp));

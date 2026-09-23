@@ -252,7 +252,7 @@ console.log("\n" + "=".repeat(64) + "\nSEO E ECOSSISTEMA\n" + "=".repeat(64));
   ok("BreadcrumbList, sem FAQPage nem rating inventado", /BreadcrumbList/.test(pagina) && !/FAQPage|AggregateRating/.test(pagina));
   ok("tem conteúdo editorial de verdade (4+ h2)", (pagina.match(/<h2/g) ?? []).length >= 4);
   ok("está no sitemap", ler("app/sitemap.ts").includes("/ferramentas/calculadora-tmb-tdee"));
-  ok("está na central /ferramentas (card + ItemList)", (ler("app/ferramentas/page.tsx").match(/calculadora-tmb-tdee/g) ?? []).length >= 2);
+  ok("está na central /ferramentas (catálogo + ItemList gerado)", /href: "\/ferramentas\/calculadora-tmb-tdee"/.test(ler("lib/ferramentas/catalogo.ts")) && /FERRAMENTAS_NO_AR\.map\(/.test(ler("app/ferramentas/page.tsx")));
 }
 
 /** Os artigos migrados: uma ferramenta por artigo, sem sobreposição. */

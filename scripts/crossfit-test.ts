@@ -77,7 +77,7 @@ const comp = readFileSync("components/crossfit/CalculadoraCrossfit.tsx", "utf8")
 const pag = readFileSync("app/ferramentas/calculadora-calorias-crossfit/page.tsx", "utf8");
 const blog = readFileSync("app/blog/[slug]/page.tsx", "utf8");
 ok("o blog embute pelo registro", /ARTIGOS_COM_CALCULADORA_CROSSFIT\.includes\(post\.slug\)/.test(blog) && /<CalculadoraCrossfit placement=\{post\.slug\} \/>/.test(blog));
-ok("hub e sitemap", /calculadora-calorias-crossfit/.test(readFileSync("app/ferramentas/page.tsx", "utf8")) && /calculadora-calorias-crossfit/.test(readFileSync("app/sitemap.ts", "utf8")));
+ok("hub e sitemap", /calculadora-calorias-crossfit/.test(readFileSync("lib/ferramentas/catalogo.ts", "utf8")) && /calculadora-calorias-crossfit/.test(readFileSync("app/sitemap.ts", "utf8")));
 ok("sem chamada de rede", !/fetch\(|sendBeacon|localStorage/.test(comp));
 ok("os eventos nunca levam o peso", !/trackEvent\([^)]*peso/.test(comp));
 ok("a pergunta da frequência vem antes da área de resultado", comp.indexOf('id={idc("sem")}') > 0 && comp.indexOf('id={idc("sem")}') < comp.indexOf('aria-live="polite"'));

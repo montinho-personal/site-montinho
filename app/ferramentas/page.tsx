@@ -1,20 +1,47 @@
-import { MOBILIDADE_NO_AR } from "@/lib/mobilidade/lancamento";
-import { CONVERSOR_NO_AR } from "@/lib/concentracao/revisao";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, blogPosts } from "@/lib/blog";
 import { TRILHAS } from "@/lib/ferramentas/trilha";
+import { CATEGORIAS, FERRAMENTAS_NO_AR } from "@/lib/ferramentas/catalogo";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
+import CentralFerramentas from "@/components/ferramentas/central/CentralFerramentas";
+import LinkRastreado from "@/components/ferramentas/central/LinkRastreado";
+
+/**
+ * A Central de Ferramentas.
+ *
+ * O QUE ESTA PÁGINA É, E O QUE NÃO É
+ *
+ * É o catálogo: a pessoa chega com uma dúvida ou um objetivo e sai com a
+ * ferramenta certa em poucos segundos. Não é o /comece — aquele é o caminho
+ * guiado, para quem pensa "me conduza". Daqui se aponta para lá uma vez,
+ * num bloco compacto, e não se repete a jornada inteira.
+ *
+ * O que muda em relação à versão anterior: os trinta e cinco cards grandes,
+ * empilhados numa coluna, viraram uma busca, seis filtros por problema, as
+ * mais usadas e o catálogo por categoria. Tudo sai de
+ * lib/ferramentas/catalogo.ts, inclusive o ItemList do schema — ferramenta
+ * nova é uma entrada lá, não um card colado aqui.
+ *
+ * SEO DO HUB
+ *
+ * Esta página trabalha os termos amplos ("calculadoras fitness",
+ * "ferramentas fitness gratuitas"). Cada ferramenta compete pela própria
+ * busca na própria página; aqui não se repete o conteúdo delas.
+ */
+
+const CAMINHO = "/ferramentas";
+const TOTAL = FERRAMENTAS_NO_AR.length;
 
 export const metadata: Metadata = {
-  title: "Ferramentas Gratuitas de Treino",
+  title: "Calculadoras Fitness Grátis: Dieta, Treino e Suplementos",
   description:
-    "Ferramentas gratuitas do Montinho: descubra seu perfil de treino, monte a estrutura que cabe na sua semana, mande um vídeo da sua execução, tire dúvidas de musculação e compare as academias de Alphaville. Sem cadastro.",
-  alternates: { canonical: `${SITE_URL}/ferramentas` },
+    "Calcule calorias, proteína, macros, creatina, whey, 1RM e o gasto de corrida, caminhada e outras atividades. Ferramentas fitness gratuitas, sem cadastro.",
+  alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
-    title: "Ferramentas Gratuitas de Treino | Montinho",
-    description:
-      "Descubra seu perfil, monte a estrutura da sua semana, mande um vídeo da sua execução e tire dúvidas de treino. Gratuito e sem cadastro.",
-    url: `${SITE_URL}/ferramentas`,
+    title: "Calculadoras Fitness e Ferramentas Gratuitas | Montinho",
+    description: `${TOTAL} ferramentas gratuitas para dieta, treino, emagrecimento, suplementação e cardio. Encontre a certa para a sua dúvida, sem cadastro.`,
+    url: `${SITE_URL}${CAMINHO}`,
     type: "website",
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
   },
@@ -24,637 +51,199 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-    { "@type": "ListItem", position: 2, name: "Ferramentas", item: `${SITE_URL}/ferramentas` },
+    { "@type": "ListItem", position: 1, name: "Início", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Ferramentas", item: `${SITE_URL}${CAMINHO}` },
   ],
 };
 
 /**
- * ItemList é o tipo correto aqui: a página existe para listar as
- * ferramentas. Nada de Review, Rating ou FAQ inventado.
+ * CollectionPage com ItemList: a página é uma coleção, e a lista é o que
+ * está no ar, na ordem do catálogo. Nada de Review, Rating ou FAQ — não há
+ * avaliação de usuário nem perguntas respondidas aqui.
  */
-const itemListSchema = {
+const collectionSchema = {
   "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Ferramentas gratuitas do Montinho Personal Trainer",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Diagnóstico Montinho", url: `${SITE_URL}/diagnostico` },
-    { "@type": "ListItem", position: 2, name: "Treino Para Minha Rotina", url: `${SITE_URL}/treino-para-minha-rotina` },
-    { "@type": "ListItem", position: 3, name: "Pergunte ao Montinho", url: `${SITE_URL}/pergunte-ao-montinho` },
-    { "@type": "ListItem", position: 4, name: "Revisão Gratuita de Execução", url: `${SITE_URL}/revisao-de-execucao` },
-    { "@type": "ListItem", position: 5, name: "Calculadora de Proteína", url: `${SITE_URL}/ferramentas/calculadora-de-proteina` },
-    { "@type": "ListItem", position: 6, name: "Calculadora de TMB e TDEE", url: `${SITE_URL}/ferramentas/calculadora-tmb-tdee` },
-    { "@type": "ListItem", position: 7, name: "Calculadora de Déficit Calórico", url: `${SITE_URL}/ferramentas/calculadora-deficit-calorico` },
-    { "@type": "ListItem", position: 8, name: "Calculadora de 1RM", url: `${SITE_URL}/ferramentas/calculadora-1rm` },
-    { "@type": "ListItem", position: 9, name: "Calculadora de Macros", url: `${SITE_URL}/ferramentas/calculadora-macros` },
-    { "@type": "ListItem", position: 10, name: "Calculadora de Volume de Treino", url: `${SITE_URL}/ferramentas/calculadora-volume-treino` },
-    { "@type": "ListItem", position: 11, name: "Montinho FitChef", url: `${SITE_URL}/ferramentas/monte-seu-cardapio` },
-    { "@type": "ListItem", position: 12, name: "Calculadora de Zonas de Frequência Cardíaca", url: `${SITE_URL}/ferramentas/zonas-de-frequencia-cardiaca` },
-    { "@type": "ListItem", position: 13, name: "Calculadora de Polichinelos", url: `${SITE_URL}/ferramentas/calculadora-polichinelos` },
-    { "@type": "ListItem", position: 14, name: "Calculadora de Calorias da Caminhada", url: `${SITE_URL}/ferramentas/calculadora-calorias-caminhada` },
-    { "@type": "ListItem", position: 15, name: "Calculadora de Calorias do Elíptico", url: `${SITE_URL}/ferramentas/calculadora-calorias-eliptico` },
-    { "@type": "ListItem", position: 16, name: "Calculadora de Calorias por Atividade", url: `${SITE_URL}/ferramentas/calculadora-calorias-atividades` },
-    { "@type": "ListItem", position: 17, name: "Calculadora de Corrida", url: `${SITE_URL}/ferramentas/calculadora-corrida` },
-    { "@type": "ListItem", position: 18, name: "Calculadora de Massa Magra no GLP-1", url: `${SITE_URL}/ferramentas/massa-magra-glp1` },
-    { "@type": "ListItem", position: 19, name: "Calculadora de Meta de Peso", url: `${SITE_URL}/ferramentas/meta-de-peso` },
-    { "@type": "ListItem", position: 20, name: "Calculadora de Potencial Natural", url: `${SITE_URL}/ferramentas/potencial-natural` },
-    { "@type": "ListItem", position: 21, name: "Calculadora de Composição Corporal", url: `${SITE_URL}/ferramentas/composicao-corporal` },
-    { "@type": "ListItem", position: 22, name: "Calculadora de Calorias no Futebol", url: `${SITE_URL}/ferramentas/calculadora-calorias-futebol` },
-    { "@type": "ListItem", position: 23, name: "Calculadora de Calorias no Boxe", url: `${SITE_URL}/ferramentas/calculadora-calorias-boxe` },
-    { "@type": "ListItem", position: 24, name: "Calculadora de Calorias na Zumba", url: `${SITE_URL}/ferramentas/calculadora-calorias-zumba` },
-    { "@type": "ListItem", position: 25, name: "Calculadora de Calorias no Spinning", url: `${SITE_URL}/ferramentas/calculadora-calorias-spinning` },
-    { "@type": "ListItem", position: 26, name: "Calculadora de Calorias na Dança", url: `${SITE_URL}/ferramentas/calculadora-calorias-danca` },
-    { "@type": "ListItem", position: 27, name: "Calculadora de Calorias na Natação", url: `${SITE_URL}/ferramentas/calculadora-calorias-natacao` },
-    { "@type": "ListItem", position: 28, name: "Calculadora de Calorias no Jiu-Jitsu", url: `${SITE_URL}/ferramentas/calculadora-calorias-jiu-jitsu` },
-    { "@type": "ListItem", position: 29, name: "Calculadora de Calorias Pulando Corda", url: `${SITE_URL}/ferramentas/calculadora-calorias-pular-corda` },
-    { "@type": "ListItem", position: 30, name: "Calculadora de Calorias Subindo Escada", url: `${SITE_URL}/ferramentas/calculadora-calorias-escada` },
-    { "@type": "ListItem", position: 31, name: "Calculadora de Calorias no CrossFit", url: `${SITE_URL}/ferramentas/calculadora-calorias-crossfit` },
-    { "@type": "ListItem", position: 32, name: "Calculadora de Calorias no Hyrox", url: `${SITE_URL}/ferramentas/calculadora-calorias-hyrox` },
-    { "@type": "ListItem", position: 33, name: "Calculadora de Creatina", url: `${SITE_URL}/ferramentas/calculadora-creatina` },
-    { "@type": "ListItem", position: 34, name: "Calculadora de Whey", url: `${SITE_URL}/ferramentas/calculadora-whey` },
-    // Fora do ar, o teste de mobilidade não entra — e a posição fecha sem buraco.
-    ...(MOBILIDADE_NO_AR
-      ? [{ "@type": "ListItem", position: 35, name: "Destrave Seu Corpo — Teste de Mobilidade", url: `${SITE_URL}/ferramentas/teste-mobilidade` }]
-      : []),
-    // O conversor mg/mL entra depois da revisão técnica.
-    ...(CONVERSOR_NO_AR
-      ? [{ "@type": "ListItem", position: MOBILIDADE_NO_AR ? 23 : 22, name: "Calculadora de Peptídeos e UI na Seringa U-100", url: `${SITE_URL}/ferramentas/conversor-mg-ml-u100` }]
-      : []),
-    { "@type": "ListItem", position: (MOBILIDADE_NO_AR ? 23 : 22) + (CONVERSOR_NO_AR ? 1 : 0), name: "Qual Academia de Alphaville Combina com Você", url: `${SITE_URL}/academia-ideal-alphaville` },
-  ],
+  "@type": "CollectionPage",
+  name: "Calculadoras Fitness e Ferramentas Gratuitas",
+  url: `${SITE_URL}${CAMINHO}`,
+  inLanguage: "pt-BR",
+  isAccessibleForFree: true,
+  mainEntity: {
+    "@type": "ItemList",
+    name: "Ferramentas gratuitas do Montinho Personal Trainer",
+    numberOfItems: TOTAL,
+    itemListElement: FERRAMENTAS_NO_AR.map((f, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: f.nome,
+      url: `${SITE_URL}${f.href}`,
+    })),
+  },
 };
 
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
-const ln =
-  "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
-
-const FERRAMENTAS = [
-  {
-    href: "/diagnostico",
-    nome: "Diagnóstico Montinho",
-    pergunta: "Por onde eu começo?",
-    tempo: "9 perguntas · 1–2 minutos",
-    texto:
-      "Olha o quadro todo: objetivo, disponibilidade, experiência e o que mais te trava hoje. No fim, mostra qual perfil de treino combina com o seu momento, qual é o seu principal gargalo e quais conteúdos fazem sentido para você agora.",
-    quando: "Use quando você não sabe por onde começar ou sente que está travado sem entender o motivo.",
-  },
-  {
-    href: "/treino-para-minha-rotina",
-    nome: "Treino Para Minha Rotina",
-    pergunta: "Qual divisão eu sigo?",
-    tempo: "8 perguntas · cerca de 1 minuto",
-    texto:
-      "Cruza os dias que você realmente tem, o tempo por sessão, sua experiência e onde você treina para sugerir uma estrutura semanal — full body, upper/lower, ABC ou PPL — com a semana desenhada e um plano B para quando a agenda apertar.",
-    quando: "Use quando você já vai treinar e a dúvida é como distribuir os treinos na semana.",
-  },
-  {
-    href: "/revisao-de-execucao",
-    nome: "Revisão Gratuita de Execução",
-    pergunta: "Estou fazendo certo?",
-    tempo: "grave uma série · envie pelo WhatsApp",
-    texto:
-      "Você grava uma série completa do exercício e me manda pelo WhatsApp. Eu mesmo assisto e te passo os principais pontos que vale observar na execução — amplitude, ritmo, controle, o que muda quando a fadiga aparece.",
-    quando: "Use quando a dúvida é sobre o seu movimento, não sobre o conceito. Sem cadastro e sem custo.",
-  },
-  {
-    href: "/ferramentas/calculadora-de-proteina",
-    nome: "Calculadora de Proteína",
-    pergunta: "Quanto de proteína eu preciso?",
-    tempo: "10 segundos · sem cadastro",
-    texto:
-      "Informe seu peso e veja referências de 1,6, 2,0 e 2,2 g de proteína por kg por dia, com divisão por refeições e exemplos de alimentos com a fonte de cada valor.",
-    quando: "Use quando quiser sair do achismo sobre a meta de proteína — o peso não sai do seu navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-tmb-tdee",
-    nome: "Calculadora de TMB e TDEE",
-    pergunta: "Quanto meu corpo gasta por dia?",
-    tempo: "30 segundos · sem cadastro",
-    texto:
-      "Informe peso, altura, idade e nível de atividade para estimar seu metabolismo em repouso e seu gasto energético diário total — com a conta aberta, sem caixa-preta.",
-    quando: "Use quando a dúvida é quanto você gasta. É o primeiro número da cadeia: gasto → meta → macros → cardápio.",
-  },
-  {
-    href: "/ferramentas/calculadora-deficit-calorico",
-    nome: "Calculadora de Déficit Calórico",
-    pergunta: "Quanto devo comer para emagrecer?",
-    tempo: "1 minuto · sem cadastro",
-    texto:
-      "Estime sua taxa metabólica, seu gasto diário e veja faixas de déficit de 10%, 15–20% e 25% a partir do seu peso, altura, idade e rotina — com a conta aberta, mostrando de onde vem cada número.",
-    quando: "Use quando a dúvida é quantas calorias comer por dia. Seus dados não saem do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-1rm",
-    nome: "Calculadora de 1RM",
-    pergunta: "Quanto colocar na barra?",
-    tempo: "10 segundos · sem cadastro",
-    texto:
-      "Informe uma carga e suas repetições para estimar seu 1RM, ver as cargas de 50% a 100% e descobrir exatamente quais anilhas colocar de cada lado da barra — considerando as que a sua academia tem.",
-    quando: "Use no meio do treino, entre uma série e outra. Não é preciso testar carga máxima.",
-  },
-  {
-    href: "/ferramentas/calculadora-macros",
-    nome: "Calculadora de Macros",
-    pergunta: "Como distribuo minhas calorias?",
-    tempo: "30 segundos · sem cadastro",
-    texto:
-      "Informe suas calorias e seu peso para calcular proteínas, carboidratos e gorduras. Ao trocar a referência de proteína ou o percentual de gordura, o carboidrato se ajusta na hora — mostrando que os três dividem o mesmo orçamento.",
-    quando: "Use depois de já ter uma meta calórica. Se ainda não tem, comece pela calculadora de déficit.",
-  },
-  {
-    href: "/ferramentas/calculadora-volume-treino",
-    nome: "Calculadora de Volume de Treino",
-    pergunta: "Meu treino está bem distribuído?",
-    tempo: "1 minuto no modo rápido · sem cadastro",
-    texto:
-      "Adicione os dias e os exercícios que você faz e a ferramenta identifica os músculos, soma as séries semanais de cada grupo, mostra em quantas sessões ele é treinado e onde o volume está concentrado.",
-    quando: "Use quando quiser saber quantas séries por músculo você realmente faz — sem precisar contar na mão.",
-  },
-  {
-    href: "/ferramentas/zonas-de-frequencia-cardiaca",
-    nome: "Calculadora de Zonas de Frequência Cardíaca",
-    pergunta: "Em que batimento eu treino?",
-    tempo: "10 segundos · sem cadastro",
-    texto:
-      "Informe sua idade para estimar sua frequência cardíaca máxima e ver as cinco zonas de treino em batimentos por minuto — com o que cada uma serve e a régua da fala para conferir sem relógio. Se souber a de repouso, a conta troca para o método de Karvonen.",
-    quando: "Use quando um treino pede \"zona 2\" ou \"70% da máxima\" e você não sabe que número é esse. A idade não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-polichinelos",
-    nome: "Calculadora de Polichinelos",
-    pergunta: "Quantos polichinelos eu preciso fazer?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Informe seu peso e seu ritmo para ver quantas calorias os polichinelos gastam, quanto tempo levam e quantos seriam necessários para uma meta — incluindo quantos equivalem, em gasto, a uma caminhada de 30 minutos.",
-    quando: "Use quando quiser saber se aquele desafio de 100 por dia significa alguma coisa. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-caminhada",
-    nome: "Calculadora de Calorias da Caminhada",
-    pergunta: "Quantas calorias a minha caminhada gasta?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Informe seu peso e seu ritmo para ver o gasto de uma caminhada por tempo, por distância ou por passos — e quanto tempo levaria para uma meta de calorias. Na esteira, entram a velocidade e a inclinação, incluindo o 12-3-30.",
-    quando: "Use quando quiser saber o que 30 minutos de esteira ou 10 mil passos valem para o seu peso. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-eliptico",
-    nome: "Calculadora de Calorias do Elíptico",
-    pergunta: "Quantas calorias o elíptico gasta?",
-    tempo: "10 segundos · sem cadastro",
-    texto:
-      "Informe seu peso, o tempo e o esforço para ver o gasto de uma sessão de elíptico — ou quanto tempo leva para uma meta. Compara com o número do visor do aparelho e com a esteira.",
-    quando: "Use quando o visor mostrar um número e você quiser saber se pode confiar nele. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-atividades",
-    nome: "Calculadora de Calorias por Atividade",
-    pergunta: "Quantas calorias a minha aula gasta?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Subir escada e bicicleta de rua: informe peso, tempo e ritmo para ver o gasto da sessão — com as pausas como opção — e compare as duas no mesmo tempo.",
-    quando: "Use quando quiser saber quanto a sua aula realmente gasta, e não o número da tabela de revista. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-corrida",
-    nome: "Calculadora de Corrida",
-    pergunta: "Qual é o meu pace, e quanto gasto correndo?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Converte distância, tempo e pace: informe dois e veja o terceiro, com o gasto calórico pelo seu peso. Mostra o tempo estimado de 5 km, 10 km, meia e maratona no seu pace, e compara correr com caminhar a mesma distância.",
-    quando: "Use para planejar uma prova ou entender o gasto de um treino. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/massa-magra-glp1",
-    nome: "Massa Magra no GLP-1",
-    pergunta: "Quanto do meu emagrecimento pode ser músculo?",
-    tempo: "20 segundos · sem cadastro",
-    texto:
-      "Para quem emagrece com Mounjaro, Ozempic, tirzepatida ou retatrutida: estima a faixa de massa magra perdida com os dados dos ensaios clínicos e mostra quanto essa faixa encolhe com treino de força e proteína. Não fala de dose nem de marca.",
-    quando: "Use quando a balança está descendo e a dúvida é se está indo músculo junto. Nada do que você digita sai do navegador.",
-  },
-  {
-    href: "/ferramentas/meta-de-peso",
-    nome: "Calculadora de Meta de Peso",
-    pergunta: "Quantos quilos dá para perder até lá?",
-    tempo: "10 segundos · sem cadastro",
-    texto:
-      "Informe o peso de hoje e a data — o fim do ano já vem preenchido — para ver a faixa que cabe no prazo sem pagar em músculo, o peso previsto e o déficit diário. Se você tem um número em mente, ela diz se cabe e, quando não cabe, em quanto tempo caberia.",
-    quando: "Use quando a data não se move: fim de ano, casamento, viagem. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/potencial-natural",
-    nome: "Calculadora de Potencial Natural",
-    pergunta: "Quanto músculo ainda dá para ganhar?",
-    tempo: "20 segundos · sem cadastro",
-    texto:
-      "Calcula seu FFMI normalizado a partir de altura, peso e gordura corporal, mostra quanto de massa magra ainda cabe até a faixa de referência e em quanto tempo, no ritmo do seu tempo de treino. Explica por que o famoso 25 não é uma parede.",
-    quando: "Use quando quiser saber se o platô é do treino ou do potencial. Nada do que você digita sai do navegador.",
-  },
-  {
-    href: "/ferramentas/composicao-corporal",
-    nome: "Calculadora de Composição Corporal",
-    pergunta: "O que os números da bioimpedância querem dizer?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Traduz peso e percentual de gordura em quilos de massa magra e de gordura, diz em que faixa você está e, se você tiver um alvo, mostra quanto perder — comparando o caminho com treino de força e sem ele.",
-    quando: "Use depois de uma bioimpedância, quando o relatório tem uma dúzia de números e nenhuma explicação. Nada sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-futebol",
-    nome: "Calculadora de Calorias no Futebol",
-    pergunta: "Quanto a minha pelada gastou de verdade?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Calcula o gasto da pelada, do futsal ou do jogo competitivo pelo seu peso, separa o tempo de bola rolando do tempo na lateral quando os times revezam e mostra quantas latas de cerveja o jogo realmente pagou.",
-    quando: "Use depois do jogo, antes da resenha. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-boxe",
-    nome: "Calculadora de Calorias no Boxe",
-    pergunta: "Uma aula de boxe queima mesmo 1.000 kcal?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Calcula o gasto da aula de sombra, saco ou sparring, ou dos seus rounds no ritmo medido pelos socos de dez segundos, e compara com o número do relógio — e com as 1.000 kcal da propaganda.",
-    quando: "Use depois da aula, quando o relógio mostrar um número bom demais. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-zumba",
-    nome: "Calculadora de Calorias na Zumba",
-    pergunta: "Zumba emagrece quantos quilos por semana?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Calcula o gasto da sua aula pelas músicas com e sem salto e mostra quantos quilos as aulas da semana rendem por mês — separando o que vem da dança do que vem da alimentação.",
-    quando: "Use quando quiser saber o que esperar das aulas antes de esperar demais delas. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-spinning",
-    nome: "Calculadora de Calorias no Spinning",
-    pergunta: "Quanto a minha aula de spinning gastou de verdade?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Digite a potência média em watts que a bike mostra e veja o gasto pela faixa medida no Compêndio — ou use a aula de spinning, se a bike não mostra watts. Compara com o visor e explica a diferença.",
-    quando: "Use depois da aula, com o visor da bike ainda na cabeça. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-danca",
-    nome: "Calculadora de Calorias na Dança",
-    pergunta: "Qualquer ritmo de dança emagrece igual?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Escolha o que você dança — salão, forró, ballet, funk, samba no pé — e veja o gasto com o seu peso, comparado com todos os outros ritmos no mesmo tempo, e quantos quilos por mês isso rende.",
-    quando: "Use quando quiser saber se o seu ritmo conta como treino. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-natacao",
-    nome: "Calculadora de Calorias na Natação",
-    pergunta: "Quanto o meu treino na piscina gastou de verdade?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Escolha o nado — crawl, costas, peito, borboleta ou nado de lazer — e veja o gasto com o seu peso, descontando o tempo parado na borda, comparado com os outros nados no mesmo tempo.",
-    quando: "Use depois da piscina, antes da fome. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-jiu-jitsu",
-    nome: "Calculadora de Calorias no Jiu-Jitsu",
-    pergunta: "Quanto a minha aula de jiu-jitsu gastou?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Informe a duração da aula e quantos rolas você fez: a calculadora separa técnica de rola, mostra o gasto com o seu peso e quanto cada rola a mais soma de verdade.",
-    quando: "Use depois do treino, com a contagem de rolas ainda na cabeça. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-pular-corda",
-    nome: "Calculadora de Calorias Pulando Corda",
-    pergunta: "Quanto a minha corda gastou de verdade?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Informe o ritmo e os blocos — quanto tempo pulando, quanto parado: a calculadora conta só o tempo pulando, mostra o gasto com o seu peso e quantos saltos foram.",
-    quando: "Use depois da corda, com os blocos ainda na cabeça. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-escada",
-    nome: "Calculadora de Calorias Subindo Escada",
-    pergunta: "Quanto a escada do meu dia gasta?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Informe quantos andares você sobe, quantas vezes e em que ritmo: a calculadora soma a descida, mostra quanto custa cada andar e o que trocar o elevador rende no mês.",
-    quando: "Use para decidir se vale trocar o elevador. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-crossfit",
-    nome: "Calculadora de Calorias no CrossFit",
-    pergunta: "Quanto a minha aula de CrossFit gastou?",
-    tempo: "20 segundos · sem cadastro",
-    texto:
-      "Informe os minutos de aquecimento, força e WOD e o formato do WOD: a calculadora soma cada parte com o seu peso e mostra de onde saem as 1.000 kcal do relógio.",
-    quando: "Use depois do box, com o WOD ainda na cabeça. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-calorias-hyrox",
-    nome: "Calculadora de Calorias no Hyrox",
-    pergunta: "Quanto a minha prova de Hyrox gastou?",
-    tempo: "15 segundos · sem cadastro",
-    texto:
-      "Informe o tempo final e o pace da corrida: a calculadora separa os 8 km das oito estações, mostra o gasto de cada parte e quanto a corrida pesa na prova.",
-    quando: "Use depois da prova ou do simulado. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-creatina",
-    nome: "Calculadora de Creatina",
-    pergunta: "Quanto de creatina eu tomo por dia?",
-    tempo: "10 segundos · sem cadastro",
-    texto:
-      "Informe seu peso e veja a referência do consenso científico, 3 g ou 5 g, com ou sem saturação — e quanto tempo o seu pote dura e quanto custa por dia.",
-    quando: "Use quando comprar ou for comprar creatina. O peso não sai do navegador.",
-  },
-  {
-    href: "/ferramentas/calculadora-whey",
-    nome: "Calculadora de Whey",
-    pergunta: "Quanto whey eu preciso tomar?",
-    tempo: "30 segundos · sem cadastro",
-    texto:
-      "Calcula sua meta de proteína, desconta o que você já come e usa o rótulo do seu whey para dizer quantos gramas completam o resto — com duração do pacote e custo por proteína.",
-    quando: "Use antes de comprar ou quando não souber se precisa de whey. Nada sai do navegador.",
-  },
-  // O card do teste de mobilidade some junto com a chave de lançamento.
-  ...(MOBILIDADE_NO_AR ? [{
-    href: "/ferramentas/teste-mobilidade",
-    nome: "Destrave Seu Corpo",
-    pergunta: "Alguma amplitude está atrapalhando meus exercícios?",
-    tempo: "5 minutos · sem cadastro",
-    texto:
-      "Cinco testes simples, feitos com uma parede e uma cadeira, mostram um mapa das suas regiões. No fim você recebe um protocolo de dois ou três exercícios — e o motivo de cada um estar ali.",
-    quando: "Use quando o calcanhar levanta no agachamento, o braço não sobe confortável ou você sente o corpo rígido.",
-  }] : []),
-  {
-    href: "/ferramentas/monte-seu-cardapio",
-    nome: "Montinho FitChef",
-    pergunta: "Como transformo a meta em comida?",
-    tempo: "3 a 5 minutos · sem cadastro",
-    texto:
-      "Sua meta de calorias, sua rotina e os alimentos que você gosta viram uma sugestão de cardápio com porções caseiras, substituições, plano semanal e lista de compras — priorizando o que você já come.",
-    quando: "Use depois de saber suas calorias. É a continuação natural da calculadora de déficit e da de macros.",
-  },
-  // Só depois da revisão técnica por profissional habilitado (lib/concentracao/revisao.ts).
-  ...(CONVERSOR_NO_AR ? [{
-    href: "/ferramentas/conversor-mg-ml-u100",
-    nome: "Calculadora de Peptídeos e UI",
-    pergunta: "A dose prescrita em mL e na seringa",
-    tempo: "Educacional · sem cadastro",
-    texto:
-      "Calcule mg/mL e entenda quanto volume representam as marcações de uma seringa U-100. Explica a diferença entre quantidade, volume e concentração — e por que a marca 10 da seringa não é “10 UI” do que está no frasco.",
-    quando: "Use para entender o rótulo e a escala. A ferramenta não determina quanto usar: isso é do prescritor. Nada que você digita sai do navegador.",
-  }] : []),
-  {
-    href: "/alimentos",
-    nome: "Tabela Nutricional de Alimentos",
-    pergunta: "Quanto tem nesse alimento?",
-    tempo: "resposta em segundos · sem cadastro",
-    texto:
-      "Pesquise um alimento e veja calorias, proteína, carboidratos, gorduras e fibras — por 100 g ou na quantidade que você come de verdade. São 597 alimentos da tabela da UNICAMP, com o preparo declarado: arroz cru e arroz cozido são comidas diferentes, e aqui elas não se misturam.",
-    quando: "Use quando a dúvida é sobre a comida, não sobre a meta: quanta proteína tem o feijão, quantas calorias tem a banana. Tem também comparador de dois alimentos lado a lado.",
-  },
-  {
-    href: "/pergunte-ao-montinho",
-    nome: "Pergunte ao Montinho",
-    pergunta: "Tenho uma dúvida específica",
-    tempo: "resposta na hora",
-    texto: `Responde perguntas de treino, exercício, emagrecimento e alimentação buscando nos ${blogPosts.length} conteúdos publicados no site — e mostra quais artigos embasaram cada resposta, para você conferir a fonte.`,
-    quando: "Use quando a dúvida é pontual: como executar um exercício, se um alimento atrapalha, quanto descansar.",
-  },
-];
+const ln = "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
+const foco = "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#BA9E50] focus-visible:ring-offset-2 focus-visible:ring-offset-black";
+const botao = `inline-flex items-center justify-center gap-2 bg-white text-black px-6 py-3.5 text-sm font-semibold min-h-[52px] hover:bg-gray-100 transition-colors ${foco}`;
+const botaoSec = `inline-flex items-center justify-center gap-2 border border-white/25 text-white px-6 py-3.5 text-sm font-semibold min-h-[52px] hover:border-white/50 transition-colors ${foco}`;
 
 /**
- * Ferramenta de alcance local, separada das outras de propósito. As quatro
- * acima respondem perguntas de treino e servem qualquer pessoa; esta responde
- * uma pergunta de localização e só faz sentido para quem está em Alphaville.
- * Misturar as duas coisas na mesma lista faria a maioria dos leitores abrir
- * uma ferramenta que não pode usar.
+ * O atalho para o caminho guiado. É HTML de servidor, passado para dentro
+ * da central, que o esconde durante uma busca. Compacto de propósito: os
+ * passos de cada caminho vivem no /comece, e repeti-los aqui faria esta
+ * página competir com aquela.
  */
-const FERRAMENTA_LOCAL = {
-  href: "/academia-ideal-alphaville",
-  nome: "Qual Academia Combina com Você",
-  pergunta: "Onde eu treino em Alphaville?",
-  tempo: "8 perguntas · cerca de 1 minuto",
-  texto:
-    "Cruza o que você marcou como prioridade — região, horário, estacionamento, estilo de treino — com informações verificadas sobre cada academia de Alphaville, e mostra as que mais se encaixam, listando critério por critério o que bate e o que não bate.",
-  quando: "Use se você mora ou trabalha em Alphaville e ainda não decidiu onde treinar. Não elege a melhor academia — mostra qual combina com a sua rotina.",
-};
+function CaminhoGuiado() {
+  return (
+    <aside className="border border-[#BA9E50]/50 bg-[#BA9E50]/[0.05] p-5 sm:p-6" aria-labelledby="caminho-guiado" data-testid="caminho-guiado">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div className="max-w-xl">
+          <h2 id="caminho-guiado" className="text-white font-bold text-lg sm:text-xl mb-1" style={h}>
+            Não sabe por onde começar?
+          </h2>
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Em vez de escolher por conta própria, siga um caminho passo a passo. As ferramentas conversam entre si e os seus dados
+            atravessam sozinhos, sem redigitar nada.
+          </p>
+          <p className="text-gray-400 text-sm mt-2 flex flex-wrap gap-x-4 gap-y-1">
+            {(Object.keys(TRILHAS) as (keyof typeof TRILHAS)[]).map((id) => (
+              <LinkRastreado
+                key={id}
+                href={`/comece/${id}`}
+                evento="guided_path_click"
+                params={{ path: id, placement: "ferramentas_hub" }}
+                className={`underline underline-offset-4 decoration-1 hover:text-white transition-colors min-h-[32px] inline-flex items-center ${foco}`}
+              >
+                {TRILHAS[id].titulo} · {TRILHAS[id].passos.length} passos
+              </LinkRastreado>
+            ))}
+          </p>
+        </div>
+        <LinkRastreado href="/comece" evento="guided_path_click" params={{ path: "comece", placement: "ferramentas_hub" }} className={`${botao} shrink-0`}>
+          Começar pelo Comece Aqui <span aria-hidden="true">→</span>
+        </LinkRastreado>
+      </div>
+    </aside>
+  );
+}
 
 export default function FerramentasPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
 
-      {/* Hero */}
-      <section className="py-14 bg-black border-b border-white/10">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-5" style={{ color: "#BA9E50" }}>
-            Gratuitas · sem cadastro
-          </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5" style={h}>
-            Ferramentas para sair do &ldquo;não sei o que fazer&rdquo;
-          </h1>
-          <p className="text-gray-300 text-lg leading-relaxed">
-            Cada uma responde a uma pergunta diferente. Você não precisa usar
-            todas — comece pela que descreve melhor a sua dúvida de agora.
-          </p>
-        </div>
-      </section>
-
-      {/**
-       * As trilhas: o caminho explícito para quem não sabe por onde começar.
-       * As ferramentas sempre se conectaram por baixo (as pontes de dados);
-       * aqui o caminho ganha nome e número, porque a pessoa leiga precisa de
-       * direção antes de precisar de ferramenta.
-       */}
-      <section className="py-12 bg-black border-b border-white/10">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2" style={h}>
-            Não sabe por onde começar? Siga o caminho
-          </h2>
-          <p className="text-gray-300 leading-relaxed mb-8">
-            As ferramentas conversam entre si: cada passo calcula o número que
-            o próximo usa, e seus dados atravessam sozinhos — sem redigitar
-            nada. Comece pelo passo 1 e vá seguindo.
-          </p>
-          <div className="grid gap-6 sm:grid-cols-2">
-            {(Object.keys(TRILHAS) as (keyof typeof TRILHAS)[]).map((id) => (
-              <div key={id} className="border border-white/15 p-6">
-                <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
-                  {TRILHAS[id].titulo}
-                </p>
-                <ol className="space-y-3">
-                  {TRILHAS[id].passos.map((p, i) => (
-                    <li key={p.href}>
-                      <Link href={p.href} className="group flex items-baseline gap-3">
-                        <span className="text-gray-500 text-sm font-semibold whitespace-nowrap">{i + 1}.</span>
-                        <span>
-                          <span className="text-white font-semibold group-hover:underline underline-offset-4 decoration-1">
-                            {p.nome}
-                          </span>{" "}
-                          <span className="text-gray-400 text-sm">— {p.pergunta}</span>
-                        </span>
-                      </Link>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* As ferramentas */}
-      <section className="py-14 bg-black">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-6">
-          {FERRAMENTAS.map((f) => (
-            <div
-              key={f.href}
-              className="relative border border-white/15 bg-gradient-to-b from-white/[0.05] to-transparent p-7 sm:p-9"
-            >
-              <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: "#BA9E50" }} aria-hidden="true" />
-              <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#BA9E50" }}>
-                {f.pergunta}
-              </p>
-              <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-2" style={h}>
-                {f.nome}
-              </h2>
-              <p className="text-gray-400 text-sm mb-4">{f.tempo}</p>
-              <p className="text-gray-300 leading-relaxed mb-3">{f.texto}</p>
-              <p className="text-gray-400 text-sm leading-relaxed mb-6">{f.quando}</p>
-              <Link
-                href={f.href}
-                className="inline-flex items-center justify-center bg-white text-black px-6 py-3.5 text-sm font-semibold tracking-wide hover:bg-gray-100 transition-colors min-h-[52px]"
-              >
-                Abrir {f.nome} <span aria-hidden="true">&nbsp;→</span>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Ferramenta local */}
-      <section className="pb-14 bg-black">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="border-t border-white/10 pt-12">
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-6" style={{ color: "#BA9E50" }}>
-              Só para quem é de Alphaville
+      {/* ── Breadcrumb + Hero ── */}
+      <section className="pt-6 pb-10 bg-black border-b border-white/10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav aria-label="Você está em" className="text-sm text-gray-500 mb-8">
+            <ol className="flex items-center gap-2">
+              <li>
+                <Link href="/" className={`hover:text-white transition-colors ${foco}`}>
+                  Início
+                </Link>
+              </li>
+              <li aria-hidden="true">›</li>
+              <li>
+                <span className="text-gray-300" aria-current="page">
+                  Ferramentas
+                </span>
+              </li>
+            </ol>
+          </nav>
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-5" style={{ color: "#BA9E50" }}>
+              Central de ferramentas · gratuitas · sem cadastro
             </p>
-            <div className="relative border border-white/15 bg-gradient-to-b from-white/[0.05] to-transparent p-7 sm:p-9">
-              <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: "#BA9E50" }} aria-hidden="true" />
-              <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#BA9E50" }}>
-                {FERRAMENTA_LOCAL.pergunta}
-              </p>
-              <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-2" style={h}>
-                {FERRAMENTA_LOCAL.nome}
-              </h2>
-              <p className="text-gray-400 text-sm mb-4">{FERRAMENTA_LOCAL.tempo}</p>
-              <p className="text-gray-300 leading-relaxed mb-3">{FERRAMENTA_LOCAL.texto}</p>
-              <p className="text-gray-400 text-sm leading-relaxed mb-6">{FERRAMENTA_LOCAL.quando}</p>
-              <Link
-                href={FERRAMENTA_LOCAL.href}
-                className="inline-flex items-center justify-center bg-white text-black px-6 py-3.5 text-sm font-semibold tracking-wide hover:bg-gray-100 transition-colors min-h-[52px]"
-              >
-                Comparar academias <span aria-hidden="true">&nbsp;→</span>
-              </Link>
-            </div>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4" style={h}>
+              Calculadoras Fitness e Ferramentas Gratuitas
+            </h1>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              Encontre a ferramenta certa para a sua dúvida sobre treino, alimentação, emagrecimento ou suplementação.
+            </p>
+            <p className="text-gray-500 text-sm mt-3">
+              {TOTAL} ferramentas em {CATEGORIAS.length} categorias. O resultado aparece na hora, e o que você digita não sai do seu navegador.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Conteúdo indexável */}
-      <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      {/* ── Busca, filtros, mais usadas e catálogo ── */}
+      <section className="py-10 bg-black">
+        <CentralFerramentas caminhoGuiado={<CaminhoGuiado />} />
+      </section>
+
+      {/* ── Confiança: de onde vem, e o que não faz ── */}
+      <section className="py-14 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-2">
           <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>
-              Qual delas eu uso?
-            </h2>
-            <p className="text-gray-300 leading-relaxed mb-3">
-              A diferença é o tamanho da pergunta. Se a dúvida é{" "}
-              <strong className="text-white">&ldquo;por onde eu começo?&rdquo;</strong>, o
-              Diagnóstico olha o contexto inteiro. Se você já vai treinar e a dúvida
-              é <strong className="text-white">&ldquo;como organizo minha semana?&rdquo;</strong>,
-              o Treino Para Minha Rotina resolve. Se a dúvida é sobre o{" "}
-              <strong className="text-white">seu próprio movimento</strong>, a
-              Revisão de Execução é a única que olha para você de verdade — você
-              grava uma série e eu assisto. Se é algo pontual —{" "}
-              <strong className="text-white">&ldquo;posso treinar com dor?&rdquo;</strong>,{" "}
-              <strong className="text-white">&ldquo;whey antes ou depois?&rdquo;</strong> —, o
-              Pergunte ao Montinho responde na hora.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Elas conversam entre si: o resultado de uma sugere a outra quando faz
-              sentido. E nenhuma pede cadastro, e-mail ou telefone — o resultado
-              aparece na tela, e você decide se quer conversar depois.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>
+            <h2 className="text-xl font-bold text-white mb-3" style={h}>
               De onde vêm as respostas
             </h2>
-            <p className="text-gray-300 leading-relaxed mb-3">
-              De três lugares: a prática de acompanhar alunos todos os dias; a
-              evidência científica — os estudos estão citados nas referências dos
-              próprios artigos, para você conferir; e o trabalho de grandes
-              treinadores do Brasil e do mundo que eu estudo e acompanho, entre eles
-              Fabrício Pacholok, Leandro Twin, Júlio Balestrin, Coach Rubens e Hany
-              Rambod.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Nenhuma dessas fontes entrega fórmula secreta. Elas dão direção. A
-              melhor estratégia continua sendo a que se encaixa nas suas
-              individualidades e na sua rotina de agora — a que você consegue seguir
-              por mais tempo, com mais consistência e melhor progressão.
+            <p className="text-gray-300 text-sm leading-relaxed">
+              De três lugares: a prática de acompanhar alunos todos os dias; a evidência científica, com os estudos citados em cada
+              ferramenta e artigo, para você conferir; e o trabalho de treinadores que eu estudo e acompanho. Toda calculadora mostra a
+              conta e a fonte, em “como calculamos”. Nenhuma fonte entrega fórmula secreta: elas dão direção.
             </p>
           </div>
-
           <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>
+            <h2 className="text-xl font-bold text-white mb-3" style={h}>
               O que elas não fazem
             </h2>
-            <p className="text-gray-300 leading-relaxed mb-3">
-              Nenhuma delas conhece sua técnica, sua força atual, seu histórico de
-              lesão ou como você recupera. São ferramentas educativas: sugerem
-              estrutura e direção, não prescrição. Não substituem médico,
-              fisioterapeuta ou nutricionista, e não fazem diagnóstico.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Quando o próximo passo precisa considerar o seu caso de verdade —
-              exercícios, cargas, progressão, correção de execução e ajustes ao longo
-              do caminho — o caminho é o{" "}
-              <Link href="/consultoria" className={ln}>
-                acompanhamento personalizado
-              </Link>
-              , presencial em Alphaville e região ou online. Feito por quem perdeu
-              mais de 40 kg antes de treinar qualquer pessoa — e que faz isso porque
-              gosta de ver alguém descobrir que também consegue. As ferramentas dão
-              a direção; o <strong className="text-white">chalalá</strong> vem de
-              alguém olhando o seu caso.
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Nenhuma conhece sua técnica, sua força atual, seu histórico de lesão ou como você recupera. São ferramentas educativas:
+              entregam estimativa e orientação, não prescrição individual. Não substituem médico, fisioterapeuta ou nutricionista, e
+              não fazem diagnóstico. Nenhuma pede cadastro, e-mail ou telefone.
             </p>
           </div>
+        </div>
+      </section>
 
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>
-              Prefere ler antes?
+      {/* ── CTA comercial: depois de resolver, e não antes ── */}
+      <section className="py-14 bg-black border-t border-white/10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-6 sm:p-8 relative" data-testid="cta-comercial">
+            <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: "#BA9E50" }} aria-hidden="true" />
+            <h2 className="text-white font-bold text-2xl sm:text-3xl leading-tight mb-2" style={h}>
+              As ferramentas fazem a conta. Eu te ajudo a transformar os números em estratégia.
             </h2>
-            <p className="text-gray-300 leading-relaxed">
-              O{" "}
-              <Link href="/blog" className={ln}>
-                blog
-              </Link>{" "}
-              tem {blogPosts.length} conteúdos sobre treino, emagrecimento,
-              exercícios e nutrição — e é a mesma base que alimenta as ferramentas
-              acima. Você também pode conhecer{" "}
-              <Link href="/minha-historia" className={ln}>
-                a história por trás disso tudo
-              </Link>
-              .
+            <p className="text-gray-300 leading-relaxed mb-6 max-w-2xl">
+              Quando o próximo passo precisa considerar o seu caso de verdade — exercícios, cargas, progressão, correção de execução e
+              ajustes ao longo do caminho —, o caminho é o acompanhamento, presencial em Alphaville e região ou online.
             </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <LinkRastreado href="/consultoria" evento="tools_hub_cta_click" params={{ destination: "consultoria" }} className={botao}>
+                Conhecer meu acompanhamento <span aria-hidden="true">→</span>
+              </LinkRastreado>
+              <LinkRastreado
+                href={getWhatsAppUrl("Oi, Montinho! Estava na sua central de ferramentas e queria entender como funciona o acompanhamento.")}
+                externo
+                evento="whatsapp_click"
+                params={{ cta_location: "ferramentas_hub", page_type: "ferramentas", lead_channel: "whatsapp" }}
+                className={botaoSec}
+              >
+                Falar com o Montinho
+              </LinkRastreado>
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── Institucional, mínimo ── */}
+      <section className="pb-14 bg-black">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">
+            Prefere ler antes? O{" "}
+            <Link href="/blog" className={ln}>
+              blog
+            </Link>{" "}
+            tem {blogPosts.length} conteúdos sobre treino, emagrecimento, exercícios e nutrição, a mesma base que alimenta estas
+            ferramentas. Você também pode conhecer{" "}
+            <Link href="/minha-historia" className={ln}>
+              a história por trás disso tudo
+            </Link>
+            .
+          </p>
         </div>
       </section>
     </>

@@ -318,7 +318,7 @@ ok(
   /BreadcrumbList/.test(semComentarios) && !/AggregateRating|"Review"|FAQPage/.test(semComentarios)
 );
 ok("está no sitemap", fs.readFileSync("app/sitemap.ts", "utf8").includes("/ferramentas/calculadora-1rm"));
-ok("está na central /ferramentas", fs.readFileSync("app/ferramentas/page.tsx", "utf8").includes("/ferramentas/calculadora-1rm"));
+ok("está na central /ferramentas", fs.readFileSync("lib/ferramentas/catalogo.ts", "utf8").includes("/ferramentas/calculadora-1rm"));
 
 /** Todo link interno da página precisa apontar para slug que existe. */
 const internos = [...pagina.matchAll(/href="\/blog\/([a-z0-9-]+)"/g)].map((m) => m[1]);

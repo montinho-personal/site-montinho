@@ -402,6 +402,19 @@ export type AnalyticsEvent =
   | "creatine_cost_calculate"
   | "creatine_whatsapp_click"
   | "creatine_internal_link_click"
+  /**
+   * Central de ferramentas. A consulta da busca vai como texto curto (até
+   * 80 caracteres, sem acento) para descobrir o que as pessoas procuram e
+   * não encontram; nenhum dado pessoal entra nela.
+   */
+  | "tools_hub_search"
+  | "tools_no_results"
+  | "tools_hub_filter"
+  | "tools_hub_expand"
+  | "tool_card_click"
+  | "guided_path_click"
+  | "ask_montinho_click"
+  | "tools_hub_cta_click"
   | "protein_whey_click"
   /** Calculadora de Whey. Faixas de peso e de proteína faltante; nunca o peso, o consumo nem o preço. */
   | "whey_calculator_view"
