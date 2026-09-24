@@ -90,6 +90,7 @@ import LinkFerramentaSimulador from "@/components/simulador/LinkFerramentaSimula
 import { ARTIGOS_COM_LINK_SIMULADOR } from "@/lib/simulador/emagrecimento";
 import { ARTIGOS_COM_LINK_SIMULADOR_MASSA } from "@/lib/simulador/massa";
 import { ARTIGOS_COM_LINK_SHAPE12 } from "@/lib/simulador/shape12";
+import { ARTIGOS_COM_LINK_FIM_DE_SEMANA } from "@/lib/simulador/fim-de-semana";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -592,6 +593,7 @@ export default async function BlogPost({ params }: Props) {
           {ARTIGOS_COM_LINK_SIMULADOR.includes(post.slug) && <LinkFerramentaSimulador slug={post.slug} />}
           {ARTIGOS_COM_LINK_SIMULADOR_MASSA.includes(post.slug) && <LinkFerramentaSimulador slug={post.slug} qual="massa" />}
           {ARTIGOS_COM_LINK_SHAPE12.includes(post.slug) && <LinkFerramentaSimulador slug={post.slug} qual="shape12" />}
+          {ARTIGOS_COM_LINK_FIM_DE_SEMANA.includes(post.slug) && <LinkFerramentaSimulador slug={post.slug} qual="fimDeSemana" />}
           {/* Conversor de mg/mL: convite, nunca embed. Uma seringa desenhada
               dentro de um artigo sobre um medicamento daria a impressão de que
               o texto ensina a medir AQUELE medicamento — e a ferramenta é
