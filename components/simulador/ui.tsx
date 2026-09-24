@@ -39,18 +39,45 @@ export function QuestionStep({ titulo, ajuda, children, tituloRef }: { titulo: s
 
 export interface Opcao<T extends string | number> { valor: T; rotulo: string; detalhe?: string }
 
+/**
+ * `colunas` vale a partir de 640px; no celular, 3 e 4 colunas viram 2 — é
+ * onde "Musculação" e "Combinação" estouravam o cartão. Palavras nunca
+ * quebram no meio (break-words), e o cartão pode encolher (min-w-0).
+ */
+const GRID: Record<1 | 2 | 3 | 4, string> = { 1: "grid-cols-1", 2: "grid-cols-2", 3: "grid-cols-2 sm:grid-cols-3", 4: "grid-cols-4" };
+const cartao = (sel: boolean) =>
+  `text-left border px-3 sm:px-4 py-3 min-h-[52px] min-w-0 break-words transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#BA9E50] ${sel ? "border-[#BA9E50] bg-[#BA9E50]/10 text-white" : "border-white/20 text-gray-200 hover:border-white/50"}`;
+
 export function OptionCards<T extends string | number>({ nome, opcoes, valor, onChange, colunas = 1 }: {
   nome: string; opcoes: Opcao<T>[]; valor: T | null; onChange: (v: T) => void; colunas?: 1 | 2 | 3 | 4;
 }) {
-  const grid = { 1: "grid-cols-1", 2: "grid-cols-2", 3: "grid-cols-3", 4: "grid-cols-4" }[colunas];
   return (
-    <div role="radiogroup" aria-label={nome} className={`grid ${grid} gap-2`}>
+    <div role="radiogroup" aria-label={nome} className={`grid ${GRID[colunas]} gap-2`}>
       {opcoes.map((o) => {
         const sel = valor === o.valor;
         return (
-          <button key={String(o.valor)} type="button" role="radio" aria-checked={sel} onClick={() => onChange(o.valor)}
-            className={`text-left border px-4 py-3 min-h-[52px] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#BA9E50] ${sel ? "border-[#BA9E50] bg-[#BA9E50]/10 text-white" : "border-white/20 text-gray-200 hover:border-white/50"}`}>
+          <button key={String(o.valor)} type="button" role="radio" aria-checked={sel} onClick={() => onChange(o.valor)} className={cartao(sel)}>
             <span className="font-semibold block">{o.rotulo}</span>
+            {o.detalhe && <span className="text-gray-400 text-xs block mt-0.5">{o.detalhe}</span>}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+/** Mesma aparência, várias respostas: cada cartão é uma checkbox. */
+export function MultiOptionCards<T extends string>({ nome, opcoes, valores, onChange, colunas = 1 }: {
+  nome: string; opcoes: Opcao<T>[]; valores: T[]; onChange: (v: T[]) => void; colunas?: 1 | 2 | 3 | 4;
+}) {
+  return (
+    <div role="group" aria-label={nome} className={`grid ${GRID[colunas]} gap-2`}>
+      {opcoes.map((o) => {
+        const sel = valores.includes(o.valor);
+        return (
+          <button key={o.valor} type="button" role="checkbox" aria-checked={sel}
+            onClick={() => onChange(sel ? valores.filter((v) => v !== o.valor) : [...valores, o.valor])} className={cartao(sel)}>
+            <span className="font-semibold block">{sel && <span aria-hidden="true" className="mr-1.5" style={{ color: DOURADO }}>✓</span>}{o.rotulo}</span>
             {o.detalhe && <span className="text-gray-400 text-xs block mt-0.5">{o.detalhe}</span>}
           </button>
         );

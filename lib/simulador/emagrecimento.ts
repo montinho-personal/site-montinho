@@ -76,7 +76,7 @@ export type Rotina = "sentado" | "em-pe" | "ativo" | "fisico";
 export type TipoTreino = "musculacao" | "corrida" | "caminhada" | "esportes" | "funcional" | "combinacao" | "outro";
 export type FaixaPassos = "lt3" | "3a5" | "5a75" | "75a10" | "gt10" | "nao-sei";
 export type NivelComida = "hoje" | "leve" | "moderado" | "firme";
-export type Medicacao = "nao" | "tirzepatida" | "semaglutida" | "liraglutida" | "outra" | "nao-informar";
+export type Medicacao = "nao" | "tirzepatida" | "semaglutida" | "retatrutida" | "liraglutida" | "outra" | "nao-informar";
 export type Hormonio = "nao" | "reposicao" | "desempenho" | "outro" | "nao-informar";
 
 export interface Perfil {
@@ -88,7 +88,8 @@ export interface Perfil {
   metaKg: number | null;
   rotina: Rotina;
   treinos: number;
-  tipoTreino: TipoTreino;
+  /** Pode ser mais de um; vazio = musculação (o padrão conservador). */
+  tiposTreino: TipoTreino[];
   passos: FaixaPassos;
   /** null = não sabe. */
   kcalDia: number | null;
@@ -132,6 +133,15 @@ export const TREINO: Record<TipoTreino, { met: number; minutos: number; rotulo: 
   combinacao: { met: 3.5, minutos: 60, rotulo: "treino" },
   outro: { met: 3.5, minutos: 50, rotulo: "treino" },
 };
+
+/** O treino "médio" da pessoa: média de MET e de minutos dos tipos que ela marcou. */
+export function perfilTreino(tipos: TipoTreino[]): { met: number; minutos: number; rotulo: string } {
+  const lista = tipos.length ? tipos : ["musculacao" as TipoTreino];
+  const met = lista.reduce((a, t) => a + TREINO[t].met, 0) / lista.length;
+  const minutos = lista.reduce((a, t) => a + TREINO[t].minutos, 0) / lista.length;
+  const rotulo = lista.length === 1 ? TREINO[lista[0]].rotulo : lista.map((t) => TREINO[t].rotulo).join(" + ");
+  return { met, minutos, rotulo };
+}
 
 const MET_PASSO = RITMOS_CAMINHADA.find((r) => r.id === "moderado")!.met;
 const PASSOS_POR_MIN = 100;
@@ -216,15 +226,17 @@ export function gorduraInicialKg(p: Pick<Perfil, "sexo" | "idade" | "alturaCm" |
   return (p.pesoKg * Math.min(60, Math.max(8, pct))) / 100;
 }
 
-export const kcalTreinoDia = (tipo: TipoTreino, sessoesSemana: number, pesoKg: number) =>
-  (sessoesSemana * kcalPorMinuto(TREINO[tipo].met - 1, pesoKg) * TREINO[tipo].minutos) / 7;
+export const kcalTreinoDia = (tipos: TipoTreino[], sessoesSemana: number, pesoKg: number) => {
+  const t = perfilTreino(tipos);
+  return (sessoesSemana * kcalPorMinuto(t.met - 1, pesoKg) * t.minutos) / 7;
+};
 
 export const kcalPassosExtra = (passosExtra: number, pesoKg: number) =>
   (kcalPorMinuto(MET_PASSO - 1, pesoKg) * passosExtra) / PASSOS_POR_MIN;
 
 /** O gasto de hoje, com a rotina e o treino que a pessoa tem hoje. */
 export function manutencaoInicial(p: Perfil): number {
-  return repouso(p, p.pesoKg) * FATOR_ROTINA[p.rotina] + kcalTreinoDia(p.tipoTreino, p.treinos, p.pesoKg);
+  return repouso(p, p.pesoKg) * FATOR_ROTINA[p.rotina] + kcalTreinoDia(p.tiposTreino, p.treinos, p.pesoKg);
 }
 
 /** O que a pessoa come nos dias em que o plano acontece. */
@@ -269,8 +281,8 @@ function roda(p: Perfil, c: Cenario, fatorGasto: number): { semanal: number[]; c
   const adaptacao = BETA_ADAPTACAO * (ingestao - manut0);
   for (let dia = 1; dia <= SEMANAS_MAX * 7; dia++) {
     const base = repouso(p, peso) * FATOR_ROTINA[p.rotina];
-    const extrasPlano = kcalTreinoDia(p.tipoTreino, c.treinos, peso) + kcalPassosExtra(passosExtra, peso) - kcalPassosExtra(menosPassos, peso);
-    const extrasHoje = kcalTreinoDia(p.tipoTreino, p.treinos, peso);
+    const extrasPlano = kcalTreinoDia(p.tiposTreino, c.treinos, peso) + kcalPassosExtra(passosExtra, peso) - kcalPassosExtra(menosPassos, peso);
+    const extrasHoje = kcalTreinoDia(p.tiposTreino, p.treinos, peso);
     const gasto = (base + c.consistencia * extrasPlano + (1 - c.consistencia) * extrasHoje) * fatorGasto + adaptacao;
     const saldo = ingestao - gasto;
     const fracMagra = FORBES_C / (FORBES_C + Math.max(gordura, 1));
@@ -390,7 +402,7 @@ export function fmtFaixaSemanas(f: { min: number; max: number }): string {
  * média de ensaio com previsão individual.
  */
 export interface Estudo {
-  id: "tirzepatida" | "semaglutida" | "liraglutida";
+  id: "tirzepatida" | "semaglutida" | "retatrutida" | "liraglutida";
   substancia: string;
   marcas: string;
   estudo: string;
@@ -429,6 +441,19 @@ export const ESTUDOS: Estudo[] = [
     comparacao: "2,4% no grupo placebo",
     url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2032183",
     referencia: "Wilding JPH et al. Once-Weekly Semaglutide in Adults with Overweight or Obesity. N Engl J Med, 2021;384:989-1002",
+  },
+  {
+    id: "retatrutida",
+    substancia: "Retatrutida",
+    marcas: "ainda sem marca comercial: em estudo de fase 3 na data desta revisão",
+    estudo: "fase 2 (NEJM 2023)",
+    populacao: "338 adultos com IMC ≥ 30, ou ≥ 27 com comorbidade, sem diabetes",
+    duracao: "48 semanas",
+    dose: "1 a 12 mg por semana, com orientação de estilo de vida",
+    resultado: "perda média de 24,2% do peso na dose de 12 mg (17,3% com 4 mg)",
+    comparacao: "2,1% no grupo placebo",
+    url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2301972",
+    referencia: "Jastreboff AM et al. Triple-Hormone-Receptor Agonist Retatrutide for Obesity — A Phase 2 Trial. N Engl J Med, 2023;389:514-526",
   },
   {
     id: "liraglutida",
