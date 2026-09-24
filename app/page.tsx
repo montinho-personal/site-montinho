@@ -11,6 +11,7 @@ import CTAFinal from "@/components/home/CTAFinal";
 import DiagnosticoCTA from "@/components/home/DiagnosticoCTA";
 import AskEmbed from "@/components/ask/AskEmbed";
 import HomeFAQ from "@/components/home/HomeFAQ";
+import DoisCaminhos from "@/components/comece/DoisCaminhos";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -94,6 +95,7 @@ export default function Home() {
       <Hero />
       <Diferenciais />
       <ComoFunciona />
+      <DoisCaminhos variante="home" placement="home" />
       <MinhaHistoriaPreview />
       <Resultados />
       <Depoimentos />

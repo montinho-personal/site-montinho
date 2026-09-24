@@ -213,6 +213,17 @@ export default function Header() {
           </div>
 
           <nav className="flex flex-col py-2 px-4 gap-1">
+            {/* Os caminhos guiados em destaque, antes de tudo: é o item que
+                mais ajuda quem ainda não sabe o que procura. */}
+            <Link
+              href="/comece"
+              onClick={() => setIsMenuOpen(false)}
+              className="block border border-[#BA9E50]/60 bg-[#BA9E50]/10 px-3 py-3 mb-2"
+              data-testid="menu-comece"
+            >
+              <span className="block text-white font-semibold">Comece Aqui →</span>
+              <span className="block text-gray-300 text-xs mt-0.5">Dois caminhos grátis, do zero ao seu plano</span>
+            </Link>
             {navLinks.map((link) => (
               <Link
                 key={link.href}

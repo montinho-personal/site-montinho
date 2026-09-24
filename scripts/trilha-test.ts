@@ -89,8 +89,10 @@ console.log("\n" + "=".repeat(64) + "\nA CENTRAL ENSINA O CAMINHO\n" + "=".repea
 
 {
   const hub = ler("app/ferramentas/page.tsx");
-  ok("a central tem a seção 'não sabe por onde começar'", /Não sabe por onde começar/.test(hub) && /TRILHAS/.test(hub));
-  ok("a seção explica que os dados atravessam sozinhos", /sem redigitar/.test(hub));
+  const dc = ler("components/comece/DoisCaminhos.tsx");
+  ok("a central mostra os dois caminhos, com os passos saindo do registro", /<DoisCaminhos variante="hub"/.test(hub) && /TRILHAS/.test(dc) && /passos\.map\(/.test(dc));
+  ok("a seção explica que os dados atravessam sozinhos", /sem redigitar/.test(dc));
+  ok("home e simuladores também mostram os caminhos", /<DoisCaminhos variante="home"/.test(ler("app/page.tsx")) && ["SimuladorEmagrecimento", "SimuladorMassa", "SimuladorShape12", "SimuladorFimDeSemana"].every((f) => /<DoisCaminhos variante="resultado"/.test(ler(`components/simulador/${f}.tsx`))));
 }
 
 console.log("\n" + "=".repeat(64) + "\nO PRÓXIMO PASSO EM DESTAQUE NOS MACROS\n" + "=".repeat(64));

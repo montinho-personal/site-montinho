@@ -5,6 +5,7 @@ import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { FECHAMENTO_COMPARACAO } from "@/lib/filosofia";
+import DoisCaminhos from "@/components/comece/DoisCaminhos";
 import ProjectionChart, { type Marco } from "./ProjectionChart";
 import TwelveWeekTimeline from "./TwelveWeekTimeline";
 import { DOURADO, Dobra, InsightCard, MethodologyDrawer, MultiOptionCards, NumericInput, OptionCards, ProgressBar, QuestionStep, ScenarioSelector, h, type Opcao } from "./ui";
@@ -508,6 +509,8 @@ export default function SimuladorShape12({ placement }: { placement: string }) {
       </div>
 
       {/* R11 — palavra do Montinho + CTA */}
+      <DoisCaminhos variante="resultado" placement="shape12-resultado" />
+
       <div className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-6 relative" data-testid="cta-simulador">
         <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: DOURADO }} aria-hidden="true" />
         <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-2" style={{ color: DOURADO }}>{FECHAMENTO_COMPARACAO.titulo}</p>
