@@ -76,3 +76,25 @@ custo e adia o benefício.
 
 Quando o lote for grande mas a revisão humana for difícil, divida em PRs
 menores — isso é limite de revisão, não de SEO, e deve ser dito assim.
+
+# A identidade do Montinho entra onde houver contexto
+
+Uma ideia faz parte do que o Montinho prega, e cabe em qualquer lugar do
+site com contexto para ela — home, artigo, ferramenta, página de serviço:
+
+> Nunca se compare com os outros: cada um tem a própria genética, rotina e
+> história, com altos e baixos. O mais importante é encontrar um estilo de
+> treino e um protocolo que dê para seguir pelo resto da vida, com aderência
+> e progressão. Quem faz isso não tem como dar errado — ele é a prova viva e
+> vive isso com os alunos todo santo dia.
+
+Não reescreva isso do zero. Use o que já existe em `lib/filosofia.ts`:
+
+- `NotaMetodo` (com `pickFilosofia`) ao pé de conteúdo, na rotação de
+  variantes — a variante `comparacao` carrega essa ideia com o link do
+  acompanhamento;
+- `FECHAMENTO_COMPARACAO` no fim de uma ferramenta, logo antes do CTA,
+  quando a pessoa acabou de receber um número que pode virar expectativa
+  ou comparação. O Simulador de Emagrecimento é o modelo.
+
+É a isca natural do CTA para o WhatsApp: primeiro a ideia, depois o botão.
