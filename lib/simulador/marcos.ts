@@ -59,11 +59,11 @@ export const MARCOS: Marco[] = [
     titulo: "5% do peso: a saúde responde primeiro",
     estudos: [
       {
-        texto: "Perder 5% do peso já melhorou a sensibilidade à insulina no fígado, no músculo e no tecido adiposo, além de pressão e triglicerídeos, em adultos com obesidade.",
+        texto: "Perder 5% do peso já melhorou a sensibilidade à insulina no fígado, no músculo e no tecido adiposo, a função das células beta e reduziu a gordura no fígado e no abdome, em adultos com obesidade.",
         ref: { rotulo: "Magkos F et al. Cell Metabolism, 2016;23:591-601", url: "https://pubmed.ncbi.nlm.nih.gov/26916363/" },
       },
       {
-        texto: "No Look AHEAD, perdas de 5% a 10% em um ano vieram com melhora de glicemia, pressão, HDL e triglicerídeos — e quanto maior a perda, maior a melhora.",
+        texto: "No Look AHEAD (5.145 adultos com diabetes tipo 2), perdas de 5% a 10% em um ano vieram com melhora de glicemia, pressão, HDL e triglicerídeos — e quanto maior a perda, maior a melhora.",
         ref: { rotulo: "Wing RR et al. Diabetes Care, 2011;34:1481-1486", url: "https://pubmed.ncbi.nlm.nih.gov/21593294/" },
       },
     ],
@@ -81,7 +81,7 @@ export const MARCOS: Marco[] = [
     estudos: [
       {
         texto: "Ao olhar fotos de rosto, as pessoas percebem a mudança a partir de cerca de 1,3 ponto de IMC — e passam a achar o rosto mais atraente por volta de 2,4 pontos.",
-        ref: { rotulo: "Re DE, Rule NO. Social Psychological and Personality Science, 2016;7:1-8", url: "https://doi.org/10.1177/1948550615607592" },
+        ref: { rotulo: "Re DE, Rule NO. Heavy Matters. Social Psychological and Personality Science, 2016;7:69-76", url: "https://journals.sagepub.com/doi/abs/10.1177/1948550615599829" },
       },
     ],
     costuma: [
@@ -118,7 +118,7 @@ export const MARCOS: Marco[] = [
     titulo: "15% ou mais: outro corpo, outra rotina",
     estudos: [
       {
-        texto: "Perdas de 15% ou mais são as que os ensaios com medicamentos e cirurgia associam a remissão de diabetes tipo 2 e melhora ampla de risco cardiovascular.",
+        texto: "No Look AHEAD, quem perdeu 15% ou mais em um ano teve as maiores melhoras em glicemia, pressão e lipídios — a relação entre perda e benefício continuou subindo nessa faixa.",
         ref: { rotulo: "Wing RR et al. Diabetes Care, 2011;34:1481-1486", url: "https://pubmed.ncbi.nlm.nih.gov/21593294/" },
       },
     ],
