@@ -316,7 +316,7 @@ export default function CalculadoraGLP1({ placement }: { placement: string }) {
               )}
             </div>
 
-            <PosResultado ferramenta="glp1" categoria={resultado.protecao} resumo={resumoWhats} placement={placement} />
+            <PosResultado fechamento ferramenta="glp1" categoria={resultado.protecao} resumo={resumoWhats} placement={placement} />
           </div>
         )}
       </div>

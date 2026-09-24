@@ -68,8 +68,10 @@ const ROTINAS: Opcao<Rotina>[] = [
 ];
 const TREINOS: Opcao<number>[] = [0, 1, 2, 3, 4, 5, 6].map((n) => ({ valor: n, rotulo: n === 6 ? "6+" : String(n) }));
 const TIPOS: Opcao<TipoTreino>[] = [
-  { valor: "musculacao", rotulo: "Musculação" }, { valor: "corrida", rotulo: "Corrida" }, { valor: "caminhada", rotulo: "Caminhada" },
-  { valor: "esportes", rotulo: "Esportes" }, { valor: "funcional", rotulo: "Funcional" },
+  { valor: "musculacao", rotulo: "Musculação" }, { valor: "caminhada", rotulo: "Caminhada" }, { valor: "corrida", rotulo: "Corrida" },
+  { valor: "bike", rotulo: "Bike / spinning" }, { valor: "natacao", rotulo: "Natação" }, { valor: "crossfit", rotulo: "CrossFit" },
+  { valor: "funcional", rotulo: "Funcional" }, { valor: "lutas", rotulo: "Lutas" }, { valor: "danca", rotulo: "Dança" },
+  { valor: "pilates", rotulo: "Pilates" }, { valor: "yoga", rotulo: "Yoga" }, { valor: "esportes", rotulo: "Esportes" },
 ];
 const PASSOS: Opcao<FaixaPassos>[] = [
   { valor: "lt3", rotulo: "Menos de 3.000" }, { valor: "3a5", rotulo: "3.000 a 5.000" }, { valor: "5a75", rotulo: "5.000 a 7.500" },
@@ -481,6 +483,9 @@ export default function SimuladorEmagrecimento({ placement }: { placement: strin
         <button type="button" onClick={() => { setCen(atual); trackEvent("scenario_changed", { placement, control: "reset" }); }} className="text-gray-400 text-sm underline underline-offset-4 mt-4 min-h-[44px]">Voltar ao cenário de partida</button>
       </div>
 
+      {/* CAMADA 3b — a resposta dos ajustes, logo abaixo dos controles: gráfico, marcos e barras */}
+      <Jornada perfil={perfil} cen={cen} pr={projCen} prAtual={projAtual} igual={igual} horizonte={horizonte} marcos={marcos} corta={corta} />
+
       {/* CAMADA 4 — insight */}
       <InsightCard titulo="O que mais mudaria seu resultado">
         {ins ? (
@@ -529,9 +534,6 @@ export default function SimuladorEmagrecimento({ placement }: { placement: strin
 
       {usaCaneta && <Estudos />}
 
-      {/* CAMADA 5b — a jornada, de novo, com os ajustes que a pessoa fez */}
-      <Jornada perfil={perfil} cen={cen} pr={projCen} prAtual={projAtual} igual={igual} horizonte={horizonte} />
-
       {/* CAMADA 6 — a palavra do Montinho, que é a isca do CTA */}
       <div className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-6 relative" data-testid="cta-simulador">
         <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: DOURADO }} aria-hidden="true" />
@@ -577,7 +579,7 @@ export default function SimuladorEmagrecimento({ placement }: { placement: strin
         <p><strong className="text-white">Gasto de partida estimado:</strong> {fmtN(projCen.manutencao)} kcal/dia. <strong className="text-white">Alimentação do cenário:</strong> {fmtN(projCen.ingestaoPlano)} kcal nos dias de plano{perfil.kcalDia === null ? " (déficit sobre o gasto estimado)" : " (a partir do que você informou)"}; nos outros dias, o que você comia antes.</p>
         <p><strong className="text-white">O que é perdido:</strong> parte gordura, parte massa magra, pela relação de Forbes — quem tem mais gordura perde proporcionalmente mais gordura. Cada quilo de gordura vale ~9.440 kcal; de massa magra, ~1.816. <strong className="text-white">Adaptação:</strong> o gasto cai um pouco além do que o peso explica (parâmetro do modelo de Hall, 2011).</p>
         <p><strong className="text-white">Faixa provável:</strong> o mesmo cenário com gasto 5% menor e 5% maior. <strong className="text-white">O modelo não considera</strong> medicamentos, hormônios, água e glicogênio das primeiras semanas, nem compensação de apetite. Projeções param em 12 meses.</p>
-        <p><a href="#metodologia" className={ln}>Ver metodologia completa e referências</a></p>
+        <p><a href="#metodologia" onClick={() => { const d = document.getElementById("metodologia"); if (d instanceof HTMLDetailsElement) d.open = true; }} className={ln}>Ver metodologia completa e referências</a></p>
       </MethodologyDrawer>
 
       <div className="flex flex-wrap gap-4 text-sm text-gray-400">
@@ -616,27 +618,20 @@ function PorQue({ id }: { id: "treino" | "passos" | "consistencia" }) {
     <div className="border border-white/15 p-5 sm:p-6" data-testid="por-que">
       <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-1" style={{ color: DOURADO }}>Por que {e.titulo.toLowerCase()} pesa tanto?</p>
       <p className="text-white font-semibold mb-4" style={h}>{e.resumo}</p>
-      <div className="space-y-4 text-sm leading-relaxed">
-        <div>
-          <p className="text-gray-400 text-xs uppercase tracking-wide mb-1">O que os estudos mediram</p>
+      <div className="border-l-2 pl-3 mb-4 text-sm leading-relaxed" style={{ borderColor: DOURADO }}>
+        <p className="text-gray-400 text-xs uppercase tracking-wide mb-1">O que fazer amanhã</p>
+        <p className="text-white">{e.acao}</p>
+      </div>
+      <div className="space-y-2 text-sm leading-relaxed">
+        <Dobra titulo="O que os estudos mediram">
           <ul className="text-gray-300 space-y-2">
             {e.estudos.map((x) => (
               <li key={x.ref.url}>{x.texto} <a href={x.ref.url} target="_blank" rel="noopener noreferrer" className="text-gray-500 underline underline-offset-2">{x.ref.rotulo}</a></li>
             ))}
           </ul>
-        </div>
-        <div>
-          <p className="text-gray-400 text-xs uppercase tracking-wide mb-1">O que a prática mostra</p>
-          <p className="text-gray-300">{e.pratica}</p>
-        </div>
-        <div>
-          <p className="text-gray-400 text-xs uppercase tracking-wide mb-1">O que as pessoas relatam</p>
-          <p className="text-gray-300">{e.relatos} <span className="text-gray-500">Relato não é evidência — é o sintoma que os estudos explicam.</span></p>
-        </div>
-        <div className="border-l-2 pl-3" style={{ borderColor: DOURADO }}>
-          <p className="text-gray-400 text-xs uppercase tracking-wide mb-1">O que fazer amanhã</p>
-          <p className="text-white">{e.acao}</p>
-        </div>
+        </Dobra>
+        <Dobra titulo="O que a prática mostra"><p className="text-gray-300">{e.pratica}</p></Dobra>
+        <Dobra titulo="O que as pessoas relatam"><p className="text-gray-300">{e.relatos} <span className="text-gray-500">Relato não é evidência — é o sintoma que os estudos explicam.</span></p></Dobra>
       </div>
     </div>
   );
@@ -647,7 +642,11 @@ function PorQue({ id }: { id: "treino" | "passos" | "consistencia" }) {
  * É o gráfico de novo, em outra forma: uma linha de "hoje → meta" com o
  * peso em cada marco, e uma barra comparando o que sai em cada cenário.
  */
-function Jornada({ perfil, cen, pr, prAtual, igual, horizonte }: { perfil: Perfil; cen: Cenario; pr: ReturnType<typeof projeta>; prAtual: ReturnType<typeof projeta>; igual: boolean; horizonte: number }) {
+type Proj = ReturnType<typeof projeta>;
+function Jornada({ perfil, cen, pr, prAtual, igual, horizonte, marcos: marcosGrafico, corta }: {
+  perfil: Perfil; cen: Cenario; pr: Proj; prAtual: Proj; igual: boolean; horizonte: number; marcos: Marco[];
+  corta: (p: Proj) => { x: number; y: number; min: number; max: number }[];
+}) {
   const temMeta = perfil.metaKg !== null;
   const marcos = [0, 4, 8, 12, 26, 52].filter((s) => s <= horizonte);
   if (temMeta && pr.semanaMeta !== null && pr.semanaMeta <= horizonte) marcos.push(-1);
@@ -658,13 +657,24 @@ function Jornada({ perfil, cen, pr, prAtual, igual, horizonte }: { perfil: Perfi
   const maxBarra = Math.max(perdaCen, perdaAtual, 0.1);
   return (
     <div className="border border-white/15 p-5 sm:p-6" data-testid="jornada">
-      <h3 className="text-xl font-bold text-white mb-1" style={h}>Sua jornada neste cenário</h3>
-      <p className="text-gray-400 text-sm mb-5">{cen.treinos}x treino · {fmtN(cen.passos)} passos · {Math.round(cen.consistencia * 100)}% de consistência. Pesos aproximados, de 0,5 em 0,5 kg.</p>
-      <ol className="flex overflow-x-auto gap-2 pb-2 -mx-1 px-1 snap-x" aria-label="Marcos da jornada">
+      <h3 className="text-xl font-bold text-white mb-1" style={h}>{igual ? "Sua jornada neste cenário" : "Resultado com seus ajustes"}</h3>
+      <p className="text-gray-400 text-sm mb-4">{cen.treinos}x treino · {fmtN(cen.passos)} passos · {Math.round(cen.consistencia * 100)}% de consistência. Pesos aproximados, de 0,5 em 0,5 kg.</p>
+      {!igual && (
+        <div className="mb-5">
+          <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-gray-400 mb-2">
+            <span className="inline-flex items-center gap-2"><span className="w-5 h-[3px]" style={{ background: DOURADO }} aria-hidden="true" />Com os ajustes</span>
+            <span className="inline-flex items-center gap-2"><span className="w-5 border-t-2 border-dashed border-gray-400" aria-hidden="true" />Como estava</span>
+          </div>
+          <ProjectionChart serie={corta(pr)} comparacao={corta(prAtual)} meta={perfil.metaKg} marcos={marcosGrafico}
+            formataY={fmtKgProj} formataX={(x) => (x === 0 ? "Hoje" : `Semana ${Math.round(x)}`)} rotuloSerie="com ajustes" rotuloComparacao="como estava"
+            descricao={`Projeção com os ajustes comparada ao cenário de partida, em ${horizonte} semanas.`} />
+        </div>
+      )}
+      <ol className="grid grid-cols-3 sm:grid-cols-6 gap-2" aria-label="Marcos da jornada">
         {marcos.map((s, i) => (
-          <li key={s} className={`snap-start shrink-0 min-w-[92px] border p-3 text-center ${s === -1 ? "border-[#BA9E50]" : i === 0 ? "border-white/40" : "border-white/15"}`}>
+          <li key={s} className={`min-w-0 border p-2.5 sm:p-3 text-center ${s === -1 ? "border-[#BA9E50]" : i === 0 ? "border-white/40" : "border-white/15"}`}>
             <p className={`text-[11px] uppercase tracking-wide mb-1 ${s === -1 ? "text-[#BA9E50]" : "text-gray-400"}`}>{rot(s)}</p>
-            <p className="text-white font-bold tabular-nums">{fmtKgProj(pesoEm(pr, s))}</p>
+            <p className="text-white font-bold tabular-nums text-[15px] sm:text-base">{fmtKgProj(pesoEm(pr, s))}</p>
             {s === -1 && pr.semanaMeta !== null && <p className="text-gray-400 text-[11px] mt-1">~{fmtSemanas(pr.semanaMeta)}</p>}
           </li>
         ))}
@@ -687,6 +697,18 @@ function Barra({ rotulo, valor, max, cor }: { rotulo: string; valor: number; max
       <div className="flex justify-between text-sm mb-1"><span className="text-gray-300">{rotulo}</span><span className="text-white font-semibold tabular-nums">−{fmtKg(Math.max(0, valor))}</span></div>
       <div className="h-2 bg-white/10"><div className="h-2 transition-all duration-300" style={{ width: `${Math.max(2, (Math.max(0, valor) / max) * 100)}%`, background: cor }} /></div>
     </div>
+  );
+}
+
+/** Um item recolhível, com o mesmo + dourado do FAQ do site. */
+function Dobra({ titulo, children }: { titulo: string; children: React.ReactNode }) {
+  return (
+    <details className="group border border-white/12 open:border-[#BA9E50]/40">
+      <summary className="cursor-pointer list-none flex items-center justify-between gap-3 px-4 py-3 min-h-[48px] text-white font-semibold">
+        {titulo}<span aria-hidden="true" className="text-[#BA9E50] text-xl leading-none transition-transform group-open:rotate-45">+</span>
+      </summary>
+      <div className="px-4 pb-4">{children}</div>
+    </details>
   );
 }
 

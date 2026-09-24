@@ -67,13 +67,20 @@
 import { RITMOS as RITMOS_CAMINHADA } from "../caminhada";
 import { metCorrida } from "../corrida";
 import { kcalPorMinuto } from "../polichinelo";
+import { MET_AULA as MET_SPINNING } from "../spinning";
+import { MET_WOD } from "../crossfit";
+import { NADOS } from "../natacao";
+import { AULAS as AULAS_BOXE } from "../boxe";
+import { ESTILOS as ESTILOS_DANCA } from "../danca";
 
 /* ───────────────────────── Tipos ───────────────────────── */
 
 export type Sexo = "m" | "f";
 export type Objetivo = "peso" | "gordura" | "composicao" | "nao-sei";
 export type Rotina = "sentado" | "em-pe" | "ativo" | "fisico";
-export type TipoTreino = "musculacao" | "corrida" | "caminhada" | "esportes" | "funcional" | "combinacao" | "outro";
+export type TipoTreino =
+  | "musculacao" | "corrida" | "caminhada" | "bike" | "natacao" | "crossfit" | "lutas" | "danca"
+  | "pilates" | "yoga" | "esportes" | "funcional" | "combinacao" | "outro";
 export type FaixaPassos = "lt3" | "3a5" | "5a75" | "75a10" | "gt10" | "nao-sei";
 export type NivelComida = "hoje" | "leve" | "moderado" | "firme";
 export type Medicacao = "nao" | "tirzepatida" | "semaglutida" | "retatrutida" | "liraglutida" | "outra" | "nao-informar";
@@ -127,6 +134,16 @@ export const TREINO: Record<TipoTreino, { met: number; minutos: number; rotulo: 
   musculacao: { met: 3.5, minutos: 60, rotulo: "musculação" },
   corrida: { met: metCorrida(9), minutos: 40, rotulo: "corrida" },
   caminhada: { met: RITMOS_CAMINHADA.find((r) => r.id === "moderado")!.met, minutos: 50, rotulo: "caminhada" },
+  /* Os METs abaixo vêm das calculadoras próprias do site, para não discordarem delas. */
+  bike: { met: MET_SPINNING, minutos: 45, rotulo: "bike/spinning" },
+  natacao: { met: NADOS.find((n) => n.id === "crawl-leve")!.met, minutos: 45, rotulo: "natação" },
+  /* A aula de CrossFit não é WOD o tempo todo: ~20 min de WOD e o resto em técnica/força (3,5). */
+  crossfit: { met: (MET_WOD * 20 + 3.5 * 40) / 60, minutos: 60, rotulo: "CrossFit" },
+  lutas: { met: AULAS_BOXE.find((a) => a.id === "saco")!.met, minutos: 60, rotulo: "luta" },
+  danca: { met: ESTILOS_DANCA.find((e) => e.id === "forro")!.met, minutos: 60, rotulo: "dança" },
+  /* Compêndio 2024: 02105, pilates de solo, 3,0 MET; 02150, yoga hatha, 2,5 MET. */
+  pilates: { met: 3.0, minutos: 55, rotulo: "pilates" },
+  yoga: { met: 2.5, minutos: 60, rotulo: "yoga" },
   /* Esportes e funcional variam muito; usa o valor conservador da musculação. */
   esportes: { met: 3.5, minutos: 60, rotulo: "esporte" },
   funcional: { met: 3.5, minutos: 50, rotulo: "treino funcional" },

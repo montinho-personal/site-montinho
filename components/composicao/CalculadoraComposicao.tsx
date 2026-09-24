@@ -321,7 +321,7 @@ export default function CalculadoraComposicao({ placement }: { placement: string
               )}
             </div>
 
-            <PosResultado ferramenta="composicao" categoria={resultado.faixa.id} resumo={resumoWhats} placement={placement} />
+            <PosResultado fechamento ferramenta="composicao" categoria={resultado.faixa.id} resumo={resumoWhats} placement={placement} />
           </div>
         )}
       </div>

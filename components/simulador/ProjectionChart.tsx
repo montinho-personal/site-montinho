@@ -55,6 +55,24 @@ export default function ProjectionChart({ serie, comparacao, meta, marcos, forma
     return a.y + ((x - a.x) / (b.x - a.x)) * (b.y - a.y);
   };
   const m = marcos[Math.min(ativo, marcos.length - 1)];
+  /*
+   * Rótulos do eixo que cabem. Com 12 meses no eixo, "Hoje", "4 sem", "8 sem"
+   * e "12 sem" ficam a poucos pixels e se sobrepunham. Um rótulo só aparece
+   * se tem ~7px por letra de distância do último desenhado; o último marco
+   * sempre aparece. Os botões embaixo continuam dando acesso a todos.
+   */
+  const rotulosVisiveis = new Set<number>();
+  {
+    let ultimoFim = -Infinity;
+    const larg = (i: number) => marcos[i].rotulo.length * 7;
+    const inicio = (i: number) => (i === 0 ? sx(marcos[i].x) : i === marcos.length - 1 ? sx(marcos[i].x) - larg(i) : sx(marcos[i].x) - larg(i) / 2);
+    const ultimo = marcos.length - 1;
+    for (let i = 0; i < marcos.length; i++) {
+      const cabeAntesDoUltimo = i === ultimo || inicio(i) + larg(i) + 8 <= inicio(ultimo);
+      if (inicio(i) >= ultimoFim + 8 && cabeAntesDoUltimo) { rotulosVisiveis.add(i); ultimoFim = inicio(i) + larg(i); }
+    }
+    rotulosVisiveis.add(ultimo);
+  }
 
   return (
     <figure className="m-0">
@@ -77,7 +95,7 @@ export default function ProjectionChart({ serie, comparacao, meta, marcos, forma
         <path d={linha(serie)} fill="none" stroke={DOURADO} strokeWidth="3" strokeLinejoin="round" />
         {marcos.map((mc, i) => (
           <g key={mc.x}>
-            <text x={sx(mc.x)} y={H - 12} textAnchor={i === 0 ? "start" : i === marcos.length - 1 ? "end" : "middle"} fontSize="12" fill={i === ativo ? "#fff" : "#9ca3af"}>{mc.rotulo}</text>
+            {rotulosVisiveis.has(i) && <text x={sx(mc.x)} y={H - 12} textAnchor={i === 0 ? "start" : i === marcos.length - 1 ? "end" : "middle"} fontSize="12" fill={i === ativo ? "#fff" : "#9ca3af"}>{mc.rotulo}</text>}
             <circle cx={sx(mc.x)} cy={sy(yEm(mc.x, serie))} r={i === ativo ? 7 : 5} fill={i === ativo ? "#fff" : DOURADO} stroke="#000" strokeWidth="2" />
             {/* Área de toque generosa, invisível. */}
             <rect x={sx(mc.x) - 22} y={M.t} width="44" height={H - M.t} fill="transparent" style={{ cursor: "pointer" }}
