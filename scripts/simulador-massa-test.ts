@@ -78,6 +78,11 @@ const ctas = new Set([diag(A), diag(B), diag(H)].map((g) => M.diagnostico({ ...A
 ok("CTA muda com o gargalo", ctas.size >= 2);
 ok("nenhum texto de gargalo promete quilos de músculo", (["A", "B", "H"] as const).every((_, i) => !/kg de músculo garantido|você ganhará \d/i.test(M.diagnostico([A, B, H][i], M.projetaMassa([A, B, H][i], cen([A, B, H][i]))).texto)));
 
+ok("AUDITORIA: o gargalo vem da situação de hoje (não do ritmo testado)", /diagnostico\(perfil, projAtual\)/.test(readFileSync("components/simulador/SimuladorMassa.tsx", "utf8")));
+ok("AUDITORIA: passos mudam o gasto", M.manutencao({ ...A, passos: "gt10" }).kcal > M.manutencao({ ...A, passos: "lt3" }).kcal + 150);
+ok("AUDITORIA: 'não sei' passos = neutro", M.manutencao({ ...A, passos: "nao-sei" }).kcal === M.manutencao({ ...A, passos: "5a75" }).kcal - M.manutencao({ ...A, passos: "5a75" }).kcal + M.gastoBase({ ...A, passos: "nao-sei" }, A.pesoKg, A.treinos));
+ok("AUDITORIA: peso caindo não é chamado de 'parado'", /tende a <strong>cair<\/strong>/.test(readFileSync("components/simulador/SimuladorMassa.tsx", "utf8")));
+
 bloco("6. PROTEÍNA, GUARDRAILS, ENTRADAS");
 ok("proteína: 1,6–2,2 g/kg é a faixa", M.avaliaProteina(90, 60).estado === "abaixo" && M.avaliaProteina(110, 60).estado === "na-faixa" && M.avaliaProteina(150, 60).estado === "acima");
 ok("menor de 18 bloqueia", M.bloqueioMassa(16)?.tipo === "menor" && M.bloqueioMassa(18) === null);

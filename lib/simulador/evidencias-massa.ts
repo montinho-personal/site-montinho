@@ -95,7 +95,7 @@ export const EVIDENCIAS_MASSA: EvidenciaMassa[] = [
     titulo: "Saúde: perda de peso sem querer merece olhar antes",
     resumo: "Não é diagnóstico — é ordem certa das coisas.",
     estudos: [
-      { texto: "Perda de peso involuntária relevante é um sinal que a medicina investiga antes de qualquer intervenção nutricional — as causas vão de tireoide a absorção, e comer mais não resolve nenhuma delas.", ref: { rotulo: "Iraki J et al. Sports, 2019 — recomendações pressupõem indivíduos saudáveis", url: "https://pubmed.ncbi.nlm.nih.gov/31247944/" } },
+      { texto: "As recomendações de superávit e ritmo de ganho foram escritas para adultos saudáveis que treinam. Nenhuma delas se aplica a quem perde peso sem explicação — ali, a pergunta vem antes da conta.", ref: { rotulo: "Iraki J et al. Sports, 2019 — escopo: fisiculturistas saudáveis", url: "https://pubmed.ncbi.nlm.nih.gov/31247944/" } },
     ],
     pratica: "Personal trainer não diagnostica, e é justamente por isso que manda para quem diagnostica. O treino pode começar leve enquanto isso; a estratégia de comida espera a resposta.",
     relatos: "Não é raro alguém descobrir hipertireoidismo, intolerância ou ansiedade depois de meses “tentando engordar” sem sucesso.",

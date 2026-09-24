@@ -48,6 +48,9 @@ ok("níveis viram cortes sobre as kcal informadas", Math.round(S.ingestaoPlano({
 ok("piso: nunca abaixo do repouso nem de 1.500 (homem)", S.ingestaoPlano({ ...F, kcalDia: 900 }, "firme").noPiso && S.ingestaoPlano({ ...F, kcalDia: 900 }, "firme").kcal >= 1500);
 ok("piso feminino é 1.200 ou o repouso", S.ingestaoPlano({ ...B, kcalDia: 800 }, "hoje").kcal >= Math.max(1200, S.repouso(B, B.pesoKg)) - 1e-6);
 
+const Fs = S.projeta({ ...F, kcalDia: 3500 }, { ...S.cenarioAtual({ ...F, kcalDia: 3500 }), comida: "hoje" });
+ok("AUDITORIA: comer acima do gasto → curva sobe e o texto diz 'subir'", Fs.ritmo12 < -0.05 && /tende a <strong>subir<\/strong>/.test(readFileSync("components/simulador/SimuladorEmagrecimento.tsx", "utf8")));
+
 bloco("3. MEDICAÇÃO E HORMÔNIO NÃO MUDAM A CURVA");
 ok("o Perfil não tem campo de medicação nem hormônio", !/medicacao|hormonio/i.test(readFileSync("lib/simulador/emagrecimento.ts", "utf8").match(/export interface Perfil \{[\s\S]*?\}/)![0]));
 ok("estudos: 4 ensaios com população, duração, dose, média e referência", S.ESTUDOS.length === 4 && S.ESTUDOS.every((e) => e.populacao && e.duracao && e.dose && e.resultado && e.comparacao && /^https:\/\//.test(e.url)));

@@ -45,6 +45,10 @@
  * O simulador mostra três ritmos — conservador, intermediário, mais
  * rápido — e diz em qual a pessoa está, sem chamar nenhum de "certo".
  *
+ * AS TAXAS DE ARAGON FORAM PENSADAS PARA HOMENS. Em percentual do peso
+ * elas servem de teto razoável para mulheres, mas a literatura é mais fina
+ * — e a página diz isso na metodologia, em vez de inventar um fator.
+ *
  * INCERTEZA: gasto ±5%, como no de emagrecimento. A meta chega numa faixa
  * de semanas, nunca num dia. Projeções param em 52 semanas.
  */
@@ -52,7 +56,7 @@
 import { NIVEIS, type NivelId } from "../potencial";
 import {
   BETA_ADAPTACAO, ENERGIA_GORDURA, ENERGIA_MAGRA, FATOR_ROTINA, FORBES_C, INCERTEZA, SEMANAS_MAX,
-  gorduraInicialKg, imc, kcalPorMinutoTreino, repouso,
+  PASSOS_FAIXA, gorduraInicialKg, imc, kcalPassosExtra, kcalPorMinutoTreino, repouso,
   type FaixaPassos, type Hormonio, type Rotina, type Sexo,
 } from "./emagrecimento";
 
@@ -109,9 +113,8 @@ export interface CenarioMassa {
 
 /* ───────────────────────── Constantes ───────────────────────── */
 
-export const SUPERAVITS = [0, 150, 250, 350, 500] as const;
 /** Rótulo curto do estado do ritmo, sem julgamento. */
-export const ESTADO_RITMO: Record<ProjecaoMassa["estadoRitmo"], string> = { abaixo: "Peso praticamente parado", conservador: "Ritmo mais conservador", "na-faixa": "Ritmo dentro da faixa planejada", acima: "Peso subindo mais rápido que o planejado" };
+export const ESTADO_RITMO: Record<ProjecaoMassa["estadoRitmo"], string> = { abaixo: "Peso parado ou caindo", conservador: "Ritmo mais conservador", "na-faixa": "Ritmo dentro da faixa planejada", acima: "Peso subindo mais rápido que o planejado" };
 export const META_MAX_FRACAO = 0.35;
 
 /** Gasto do cardio/esporte além da musculação: ~6 MET líquido, 40 min. */
@@ -181,7 +184,14 @@ const gorduraKg = (p: PerfilMassa) => (p.gorduraPct !== null ? (p.pesoKg * p.gor
 export function gastoBase(p: PerfilMassa, pesoKg: number, treinos: number): number {
   const musc = (treinos * kcalPorMinutoTreino(3.5 - 1, pesoKg) * 60) / 7;
   const cardio = (CARDIO_SESSOES[p.cardio] * kcalPorMinutoTreino(6 - 1, pesoKg) * 40) / 7;
-  return repouso(p, pesoKg) * FATOR_ROTINA[p.rotina] + musc + cardio;
+  /*
+   * Passos: o fator de rotina já supõe ~5.000 por dia. Quando a pessoa
+   * informa uma faixa, a diferença para 5.000 entra à parte — é assim que
+   * o magro que anda 12 mil passos aparece com o gasto que ele tem.
+   */
+  const passos = p.passos === "nao-sei" ? 0 : PASSOS_FAIXA[p.passos] - 5000;
+  const extraPassos = passos >= 0 ? kcalPassosExtra(passos, pesoKg) : -kcalPassosExtra(-passos, pesoKg);
+  return repouso(p, pesoKg) * FATOR_ROTINA[p.rotina] + musc + cardio + extraPassos;
 }
 
 /**
