@@ -7,6 +7,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import ProjectionChart, { type Marco } from "./ProjectionChart";
 import { DOURADO, InsightCard, MethodologyDrawer, MultiOptionCards, NumericInput, OptionCards, ProgressBar, QuestionStep, ScenarioSelector, h, type Opcao } from "./ui";
 import { evidencia } from "@/lib/simulador/evidencias";
+import { MARCOS, semanaDoMarco } from "@/lib/simulador/marcos";
 import { FECHAMENTO_COMPARACAO } from "@/lib/filosofia";
 import {
   ESTUDOS, NOTA_ESTIMATIVA, NOTA_PRIMEIRAS_SEMANAS, SEMANAS_MAX, perfilTreino,
@@ -486,6 +487,9 @@ export default function SimuladorEmagrecimento({ placement }: { placement: strin
       {/* CAMADA 3b — a resposta dos ajustes, logo abaixo dos controles: gráfico, marcos e barras */}
       <Jornada perfil={perfil} cen={cen} pr={projCen} prAtual={projAtual} igual={igual} horizonte={horizonte} marcos={marcos} corta={corta} />
 
+      {/* CAMADA 3c — o que esperar pelo caminho, marco a marco, na semana em que a curva passa por ele */}
+      <OQueEsperar perfil={perfil} pr={projCen} horizonte={horizonte} />
+
       {/* CAMADA 4 — insight */}
       <InsightCard titulo="O que mais mudaria seu resultado">
         {ins ? (
@@ -696,6 +700,44 @@ function Barra({ rotulo, valor, max, cor }: { rotulo: string; valor: number; max
     <div>
       <div className="flex justify-between text-sm mb-1"><span className="text-gray-300">{rotulo}</span><span className="text-white font-semibold tabular-nums">−{fmtKg(Math.max(0, valor))}</span></div>
       <div className="h-2 bg-white/10"><div className="h-2 transition-all duration-300" style={{ width: `${Math.max(2, (Math.max(0, valor) / max) * 100)}%`, background: cor }} /></div>
+    </div>
+  );
+}
+
+/**
+ * "O que esperar" pelo caminho. Cada marco é um percentual do peso inicial,
+ * traduzido nos quilos da pessoa e na semana em que a trajetória central
+ * passa por ele. Só mostra os marcos que a projeção alcança no horizonte
+ * (mais o primeiro que não alcança, como "o que vem depois").
+ */
+function OQueEsperar({ perfil, pr, horizonte }: { perfil: Perfil; pr: Proj; horizonte: number }) {
+  const lista = MARCOS.map((m) => ({ m, semana: semanaDoMarco(pr.pontos.slice(0, horizonte + 1), perfil.pesoKg, m.fracao), kg: perfil.pesoKg * m.fracao }));
+  const alcancados = lista.filter((x) => x.semana !== null);
+  const proximo = lista.find((x) => x.semana === null) ?? null;
+  if (alcancados.length === 0) return null;
+  return (
+    <div className="border border-white/15 p-5 sm:p-6" data-testid="o-que-esperar">
+      <h3 className="text-xl font-bold text-white mb-1" style={h}>O que esperar pelo caminho</h3>
+      <p className="text-gray-400 text-sm mb-5">Neste cenário, a curva passa por estes marcos. Roupa, rosto e disposição são o que <em>costuma</em> acontecer — cada corpo escolhe de onde a gordura sai primeiro.</p>
+      <ol className="space-y-2">
+        {alcancados.map(({ m, semana, kg }) => (
+          <li key={m.fracao}>
+            <Dobra titulo={`−${fmtKg(kg)} (${(m.fracao * 100).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%) · por volta de ${fmtSemanas(semana!)} — ${m.titulo}`}>
+              <div className="space-y-3 text-sm leading-relaxed">
+                <ul className="text-gray-200 space-y-1.5 list-disc pl-5">{m.costuma.map((c) => <li key={c}>{c}</li>)}</ul>
+                {m.aindaNao && <p className="text-gray-400"><span className="text-gray-500 uppercase text-xs tracking-wide">Ainda não:</span> {m.aindaNao}</p>}
+                <ul className="text-gray-400 space-y-1.5 border-t border-white/10 pt-3">
+                  {m.estudos.map((e) => <li key={e.ref.url}>{e.texto} <a href={e.ref.url} target="_blank" rel="noopener noreferrer" className="text-gray-500 underline underline-offset-2">{e.ref.rotulo}</a></li>)}
+                </ul>
+              </div>
+            </Dobra>
+          </li>
+        ))}
+        {proximo && (
+          <li className="text-gray-500 text-sm pt-2">Depois disso: <span className="text-gray-300">−{fmtKg(proximo.kg)} ({(proximo.m.fracao * 100).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%) — {proximo.m.titulo.toLowerCase()}</span>, fora do horizonte deste cenário.</li>
+        )}
+      </ol>
+      <p className="text-gray-500 text-xs mt-4">Marcos em percentual do seu peso de partida, porque é assim que os estudos mediram. As semanas seguem a curva central e mudam com os ajustes acima.</p>
     </div>
   );
 }

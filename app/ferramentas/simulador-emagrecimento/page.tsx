@@ -7,6 +7,7 @@ import Compartilhar from "@/components/share/Compartilhar";
 import SimuladorEmagrecimento from "@/components/simulador/SimuladorEmagrecimento";
 import { ESTUDOS, FONTES, cenarioAtual, fmtSemanas, projeta, type Perfil } from "@/lib/simulador/emagrecimento";
 import { EVIDENCIAS, REFERENCIAS_EVIDENCIAS } from "@/lib/simulador/evidencias";
+import { MARCOS, REFERENCIAS_MARCOS, semanaDoMarco } from "@/lib/simulador/marcos";
 
 /**
  * A página do Simulador de Emagrecimento.
@@ -84,6 +85,8 @@ const faq: ItemFAQ[] = [
   { question: "Mounjaro, Wegovy, Ozempic ou retatrutida mudam a previsão do simulador?", answer: "Não. O simulador não soma quilos por causa de medicamento, porque a resposta a tirzepatida, semaglutida e retatrutida varia muito de pessoa para pessoa. Quem informa que usa vê, à parte, o que os ensaios clínicos observaram em média — separado da sua simulação — e um lembrete sobre preservar massa muscular." },
   { question: "Quem usa caneta emagrecedora pode usar o simulador?", answer: "Pode. A simulação mostra o efeito de treino, passos e consistência, que continuam importando durante o tratamento. O ritmo real com o medicamento costuma ser diferente, e uso, dose e ajustes são decisões do médico que acompanha você." },
   { question: "Por que estou perdendo medidas mas não peso?", answer: "Porque a balança soma gordura, músculo, água, glicogênio e o que está no intestino. Quem começa a treinar pode ganhar um pouco de músculo e reter água enquanto perde gordura — a cintura desce e o peso para. Medidas, fotos padronizadas e desempenho mostram o que o peso esconde." },
+  { question: "Com 5 kg a menos, o que muda?", answer: "Depende do seu peso de partida: 5 kg são 5% para quem pesa 100 kg, e é nessa faixa que os estudos veem a saúde responder primeiro — sensibilidade à insulina, pressão e triglicerídeos melhoram. No dia a dia, a roupa começa a sobrar, o rosto afina um pouco e escada e treino ficam mais leves. A numeração da roupa costuma demorar mais. O simulador mostra em que semana o seu cenário passa por cada marco." },
+  { question: "Quando as pessoas começam a notar que emagreci?", answer: "Você percebe nas primeiras semanas; quem convive com você, por volta de 5% do peso; quem não vê você toda semana, entre 7% e 10%. Um estudo com fotos de rosto encontrou que a mudança fica perceptível a partir de cerca de 1,3 ponto de IMC. Fotos de lado e de perfil mostram antes que a de frente." },
   { question: "O que pesa mais: treinar mais, andar mais ou ser mais consistente?", answer: "Depende do ponto de partida, e é isso que o simulador testa no seu caso. Para quem já treina 3 vezes e anda pouco, passos e consistência costumam mexer mais que um quarto treino. Para quem não treina, sair de 0 para 2 treinos é a mudança de maior retorno, mesmo que a balança demore. Os estudos apontam a aderência como o maior preditor de resultado, acima do tipo de dieta." },
   { question: "Quem usa testosterona deve olhar só o peso?", answer: "Não. Mudanças de massa magra e de água corporal podem fazer o peso subir ou parar enquanto a gordura cai. Nesse caso, cintura, medidas, fotos e composição corporal contam mais que a balança. O simulador não altera a curva por uso de hormônio." },
 ];
@@ -206,6 +209,35 @@ export default function SimuladorEmagrecimentoPage() {
               </table>
             </div>
             <p className="text-gray-500 text-xs mt-3">Exemplo: homem, 35 anos, 1,75 m, {REF.pesoKg} kg, trabalho sentado, 3 treinos de musculação por semana, déficit de 20% nos dias de plano. Projeções param em 12 meses.</p>
+          </Secao>
+
+          <Secao titulo="O que esperar a cada etapa do emagrecimento?">
+            <p className="text-gray-300 leading-relaxed mb-4">
+              <strong className="text-white">A saúde responde antes do espelho, e o espelho antes da etiqueta da roupa.</strong> Os marcos abaixo são
+              percentuais do peso de partida, porque é assim que os estudos mediram — 5 kg em alguém de 60 kg e em alguém de 140 kg são etapas diferentes.
+              No exemplo de referência ({REF.pesoKg} kg), a semana estimada de cada marco aparece ao lado; o simulador calcula com o seu peso e o seu cenário.
+            </p>
+            <div className="space-y-3">
+              {MARCOS.map((m) => {
+                const sem = semanaDoMarco(P.pontos, REF.pesoKg, m.fracao);
+                return (
+                  <details key={m.fracao} className="group border border-white/15 open:border-[#BA9E50]/40">
+                    <summary className="cursor-pointer list-none flex items-start justify-between gap-4 p-4 min-h-[56px]">
+                      <span><span className="block font-bold text-white" style={h}>−{k(REF.pesoKg * m.fracao)} kg ({(m.fracao * 100).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%) — {m.titulo}</span><span className="block text-gray-400 text-sm mt-1">{sem === null ? "além de 12 meses no exemplo" : `por volta de ${fmtSemanas(sem)} no exemplo`}</span></span>
+                      <span aria-hidden="true" className="shrink-0 text-[#BA9E50] text-2xl leading-none transition-transform group-open:rotate-45">+</span>
+                    </summary>
+                    <div className="px-4 pb-4 space-y-3 text-sm leading-relaxed">
+                      <ul className="text-gray-200 space-y-1.5 list-disc pl-5">{m.costuma.map((c) => <li key={c}>{c}</li>)}</ul>
+                      {m.aindaNao && <p className="text-gray-400"><span className="text-gray-500 uppercase text-xs tracking-wide">Ainda não:</span> {m.aindaNao}</p>}
+                      <ul className="text-gray-400 space-y-1.5 border-t border-white/10 pt-3">
+                        {m.estudos.map((e) => <li key={e.ref.url}>{e.texto} <a href={e.ref.url} target="_blank" rel="noopener noreferrer" className="text-gray-500 underline underline-offset-2">{e.ref.rotulo}</a></li>)}
+                      </ul>
+                    </div>
+                  </details>
+                );
+              })}
+            </div>
+            <p className="text-gray-500 text-xs mt-3">Roupa, rosto e disposição são o que costuma acontecer, pela prática e pelos relatos — não uma garantia. Onde a gordura sai primeiro é genética.</p>
           </Secao>
 
           <Secao titulo="Por que a perda de peso não é linear?">
@@ -371,6 +403,9 @@ export default function SimuladorEmagrecimentoPage() {
             <ol className="text-gray-400 text-sm leading-relaxed space-y-2 list-decimal pl-5">
               {FONTES.map((f) => (
                 <li key={f.url}><a href={f.url} target="_blank" rel="noopener noreferrer" className={ln}>{f.rotulo}</a>. <span className="text-gray-500">{f.resumo}</span></li>
+              ))}
+              {REFERENCIAS_MARCOS.filter((r) => !FONTES.some((f) => f.url === r.url) && !REFERENCIAS_EVIDENCIAS.some((e) => e.url === r.url)).map((r) => (
+                <li key={r.url}><a href={r.url} target="_blank" rel="noopener noreferrer" className={ln}>{r.rotulo}</a>. <span className="text-gray-500">Base da seção “o que esperar a cada etapa”.</span></li>
               ))}
               {REFERENCIAS_EVIDENCIAS.filter((r) => !FONTES.some((f) => f.url === r.url)).map((r) => (
                 <li key={r.url}><a href={r.url} target="_blank" rel="noopener noreferrer" className={ln}>{r.rotulo}</a>. <span className="text-gray-500">Base da seção sobre estudos, prática e relatos.</span></li>

@@ -6,6 +6,7 @@ import { readFileSync, existsSync } from "fs";
 import * as S from "../lib/simulador/emagrecimento";
 import { blogPosts } from "../lib/blog";
 import { EVIDENCIAS, REFERENCIAS_EVIDENCIAS } from "../lib/simulador/evidencias";
+import { MARCOS, REFERENCIAS_MARCOS, semanaDoMarco } from "../lib/simulador/marcos";
 
 let falhas = 0;
 const ok = (n: string, c: boolean, d = "") => { if (!c) { falhas++; console.log(`  FALHOU  ${n} ${d}`); } else console.log(`  ok      ${n}`); };
@@ -76,6 +77,16 @@ ok("nenhuma camada de prática/relato finge ser estudo", EVIDENCIAS.every((e) =>
 ok("referências das evidências sem duplicata", new Set(REFERENCIAS_EVIDENCIAS.map((r) => r.url)).size === REFERENCIAS_EVIDENCIAS.length && REFERENCIAS_EVIDENCIAS.length >= 5);
 ok("o componente mostra o porquê da alavanca vencedora e a jornada final", /<PorQue id=\{\(ins \? ins\.vencedor : imp\[0\]\)\.alavanca\}/.test(readFileSync("components/simulador/SimuladorEmagrecimento.tsx", "utf8")) && /data-testid="jornada"/.test(readFileSync("components/simulador/SimuladorEmagrecimento.tsx", "utf8")));
 ok("a página publica as evidências em HTML (SEO) e as referências", /EVIDENCIAS\.map/.test(readFileSync("app/ferramentas/simulador-emagrecimento/page.tsx", "utf8")) && /REFERENCIAS_EVIDENCIAS/.test(readFileSync("app/ferramentas/simulador-emagrecimento/page.tsx", "utf8")));
+
+bloco("4c. O QUE ESPERAR PELO CAMINHO");
+ok("marcos em percentual crescente, com estudo referenciado e o que costuma acontecer", MARCOS.every((m, i) => (i === 0 || m.fracao > MARCOS[i - 1].fracao) && m.estudos.length > 0 && m.estudos.every((e) => /^https:\/\//.test(e.ref.url)) && m.costuma.length >= 3));
+ok("5% e 10% existem (as faixas dos estudos)", MARCOS.some((m) => m.fracao === 0.05) && MARCOS.some((m) => m.fracao === 0.1));
+const prA = S.projeta(A, S.cenarioAtual(A));
+const s5 = semanaDoMarco(prA.pontos, A.pesoKg, 0.05), s10 = semanaDoMarco(prA.pontos, A.pesoKg, 0.1);
+ok("a semana do marco é interpolada e cresce com a fração", s5 !== null && s10 !== null && s10 > s5 && s5 > 0);
+ok("marco fora do alcance devolve null", semanaDoMarco(prA.pontos.slice(0, 5), A.pesoKg, 0.15) === null);
+ok("o resultado e a página mostram os marcos", /<OQueEsperar /.test(readFileSync("components/simulador/SimuladorEmagrecimento.tsx", "utf8")) && /MARCOS\.map/.test(readFileSync("app/ferramentas/simulador-emagrecimento/page.tsx", "utf8")));
+ok("referências dos marcos sem duplicata", new Set(REFERENCIAS_MARCOS.map((r) => r.url)).size === REFERENCIAS_MARCOS.length);
 
 bloco("5. ENTRADAS E GUARDRAILS");
 ok("vírgula brasileira", S.parseNumero("82,5") === 82.5);
