@@ -281,6 +281,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     selo: "novo",
   },
   {
+    id: "shape12",
+    href: "/ferramentas/meu-shape-12-semanas",
+    nome: "Meu Shape em 12 Semanas",
+    resultado: "Veja o que dá para construir em 3 meses: checkpoints, treinos acumulados e o que mais muda.",
+    acao: "Simular minhas 12 semanas",
+    tempo: "2 minutos",
+    categoria: "treino",
+    icone: "corpo",
+    tags: ["12 semanas", "3 meses", "90 dias", "shape", "transformacao", "resultado academia", "antes e depois", "recomposicao", "definir", "secar"],
+    selo: "novo",
+  },
+  {
     id: "volume",
     href: "/ferramentas/calculadora-volume-treino",
     nome: "Calculadora de Volume de Treino",
