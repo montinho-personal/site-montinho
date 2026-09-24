@@ -6,6 +6,7 @@ import { CATEGORIAS, FERRAMENTAS_NO_AR } from "@/lib/ferramentas/catalogo";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import CentralFerramentas from "@/components/ferramentas/central/CentralFerramentas";
 import LinkRastreado from "@/components/ferramentas/central/LinkRastreado";
+import FaixaSimuladores from "@/components/simulador/FaixaSimuladores";
 
 /**
  * A Central de Ferramentas.
@@ -167,6 +168,9 @@ export default function FerramentasPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Simuladores: antes do catálogo, para quem chega com "quanto tempo até..." ── */}
+      <div className="pt-10 bg-black"><FaixaSimuladores /></div>
 
       {/* ── Busca, filtros, mais usadas e catálogo ── */}
       <section className="py-10 bg-black">

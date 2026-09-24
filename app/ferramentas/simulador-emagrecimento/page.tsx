@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
 import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
+import OutrosSimuladores from "@/components/simulador/OutrosSimuladores";
 import Compartilhar from "@/components/share/Compartilhar";
 import SimuladorEmagrecimento from "@/components/simulador/SimuladorEmagrecimento";
 import { ESTUDOS, FONTES, cenarioAtual, fmtSemanas, projeta, type Perfil } from "@/lib/simulador/emagrecimento";
@@ -56,7 +57,8 @@ const breadcrumbSchema = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
     { "@type": "ListItem", position: 2, name: "Ferramentas", item: `${SITE_URL}/ferramentas` },
-    { "@type": "ListItem", position: 3, name: "Simulador de Emagrecimento", item: `${SITE_URL}${CAMINHO}` },
+    { "@type": "ListItem", position: 3, name: "Simuladores", item: `${SITE_URL}/simuladores` },
+    { "@type": "ListItem", position: 4, name: "Simulador de Emagrecimento", item: `${SITE_URL}${CAMINHO}` },
   ],
 };
 
@@ -131,7 +133,7 @@ export default function SimuladorEmagrecimentoPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <nav aria-label="Trilha" className="text-xs text-gray-500 mb-5">
             <Link href="/" className="hover:text-white">Home</Link> <span aria-hidden="true">/</span>{" "}
-            <Link href="/ferramentas" className="hover:text-white">Ferramentas</Link> <span aria-hidden="true">/</span>{" "}
+            <Link href="/ferramentas" className="hover:text-white">Ferramentas</Link> <span aria-hidden="true">/</span> <Link href="/simuladores" className="hover:text-white">Simuladores</Link> <span aria-hidden="true">/</span>{" "}
             <span className="text-gray-400">Simulador de Emagrecimento</span>
           </nav>
           <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-5" style={{ color: "#BA9E50" }}>Simuladores Montinho · grátis · sem cadastro</p>
@@ -384,6 +386,8 @@ export default function SimuladorEmagrecimentoPage() {
               <Link href="/consultoria-online" className={cta} style={{ textDecorationColor: "#BA9E50" }}>Conhecer a consultoria →</Link>
             </div>
           </div>
+
+          <OutrosSimuladores atual="emagrecimento" />
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-5" style={h}>Perguntas frequentes</h2>
