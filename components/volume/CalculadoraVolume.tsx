@@ -8,6 +8,7 @@ import { registraConclusao } from "@/lib/ferramentas/historico";
 import { PONTE, guarda } from "@/lib/ferramentas/ponte";
 import { DIAS, MUSCULOS, nomeMusculo, type Dia, type MusculoId } from "@/lib/treino/musculos";
 import { EXERCICIO_POR_ID, buscaExercicios } from "@/lib/treino/exercicios";
+import { MODELOS, modeloDoArtigo, type Modelo } from "@/lib/treino/modelos";
 import {
   FONTES,
   NOTA_EQUIVALENTES,
@@ -68,6 +69,8 @@ export default function CalculadoraVolume({ placement }: { placement: string }) 
   const [copiado, setCopiado] = useState(false);
   const [confirmandoLimpar, setConfirmandoLimpar] = useState(false);
   const [carregado, setCarregado] = useState(false);
+  /** O treino do artigo pede confirmação antes de substituir uma ficha já montada. */
+  const [confirmandoModelo, setConfirmandoModelo] = useState<string | null>(null);
 
   const raiz = useRef<HTMLDivElement>(null);
   const jaComecou = useRef(false);
@@ -194,6 +197,35 @@ export default function CalculadoraVolume({ placement }: { placement: string }) 
   function removeItem(diaUid: string, itemUid: string) {
     setDias((d) => d.map((x) => (x.uid === diaUid ? { ...x, itens: x.itens.filter((i) => i.uid !== itemUid) } : x)));
   }
+  /*
+   * Carrega o treino que o artigo publica. Quem lê sobre upper/lower quer
+   * conferir o PRÓPRIO upper/lower: com a ficha do artigo pronta, a pessoa
+   * só troca o que é diferente no dela (lib/treino/modelos.ts).
+   */
+  function carregaModelo(m: Modelo) {
+    marcaInicio();
+    const novos: DiaTreino[] = m.dias.map((d) => ({
+      uid: uid(),
+      dia: d.dia,
+      nome: d.nome,
+      itens: d.itens
+        .map((x) => EXERCICIO_POR_ID.get(x.id))
+        .filter((e): e is NonNullable<typeof e> => e !== undefined)
+        .map((e, i) => itemDeExercicio(e, uid(), d.itens[i].series)),
+    }));
+    setModo("completo");
+    setDias(novos);
+    setConfirmandoModelo(null);
+    trackEvent("training_volume_template_loaded", { placement, template: m.id });
+  }
+  const pedeModelo = (m: Modelo) => {
+    if (dias.length === 0 || confirmandoModelo === m.id) carregaModelo(m);
+    else setConfirmandoModelo(m.id);
+  };
+  /** No artigo, o modelo dele em destaque; na página da ferramenta, os três. */
+  const modeloArtigo = modeloDoArtigo(placement);
+  const modelosOferecidos = modeloArtigo ? [modeloArtigo] : placement === "pagina-ferramenta" ? MODELOS : [];
+
   function limpaTudo() {
     setDias([]);
     setRapido({});
@@ -258,6 +290,31 @@ export default function CalculadoraVolume({ placement }: { placement: string }) 
         Monte ou informe seu treino e descubra quantas séries semanais cada
         grupo muscular está recebendo.
       </p>
+
+      {modelosOferecidos.length > 0 && (
+        <div className="border border-[#BA9E50]/50 bg-[#BA9E50]/[0.06] p-4 sm:p-5 mb-6" data-testid="volume-modelos">
+          <p className="text-white font-semibold mb-1">
+            {modeloArtigo ? "Comece pelo treino deste artigo" : "Comece por um treino pronto"}
+          </p>
+          <p className="text-gray-300 text-sm leading-relaxed mb-3 max-w-xl">
+            Carregue a ficha e troque só o que for diferente no seu treino — o volume de cada músculo aparece na hora.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {modelosOferecidos.map((m) => (
+              <button key={m.id} type="button" onClick={() => pedeModelo(m)}
+                className="inline-flex items-center justify-center bg-white text-black px-5 py-3 text-sm font-semibold min-h-[48px] hover:bg-gray-100 transition-colors">
+                {confirmandoModelo === m.id ? `Sim, substituir pelo ${m.nome}` : modeloArtigo ? `Carregar ${m.rotulo}` : `Carregar ${m.nome}`}
+              </button>
+            ))}
+          </div>
+          {confirmandoModelo && (
+            <p className="text-gray-400 text-xs mt-2">
+              Isso substitui o treino que você já montou aqui.{" "}
+              <button type="button" onClick={() => setConfirmandoModelo(null)} className="underline underline-offset-2 hover:text-white">Cancelar</button>
+            </p>
+          )}
+        </div>
+      )}
 
       {/* Modo */}
       <div className="flex flex-wrap gap-2 mb-7" role="group" aria-label="Modo de uso">

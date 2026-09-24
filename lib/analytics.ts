@@ -488,6 +488,7 @@ export type AnalyticsEvent =
    */
   | "training_volume_view"
   | "training_volume_start"
+  | "training_volume_template_loaded"
   | "training_volume_exercise_add"
   | "training_volume_complete"
   | "training_volume_secondary_toggle"
