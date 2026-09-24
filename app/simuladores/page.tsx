@@ -19,7 +19,7 @@ import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 const CAMINHO = "/simuladores";
 
 export const metadata: Metadata = {
-  title: "Simuladores Montinho: Emagrecimento e Ganho de Massa",
+  title: "Simuladores Montinho: Emagrecimento, Massa e 12 Semanas",
   description:
     "Veja como seu peso pode evoluir nos próximos meses, compare cenários de treino e alimentação e descubra o que mais mudaria o seu resultado. Grátis.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -99,7 +99,7 @@ export default function SimuladoresPage() {
       <section className="py-10 bg-black">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="sr-only">Escolha o seu simulador</h2>
-          <div className="grid gap-4 md:grid-cols-2" data-testid="escolha">
+          <div className="grid gap-4 md:grid-cols-3" data-testid="escolha">
             {SIMULADORES.map((s) => (
               <article key={s.id} className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-6 relative flex flex-col">
                 <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: "#BA9E50" }} aria-hidden="true" />

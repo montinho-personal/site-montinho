@@ -6,6 +6,7 @@ import { trackEvent } from "@/lib/analytics";
 const SIMULADORES = {
   emagrecimento: { href: "/ferramentas/simulador-emagrecimento", titulo: "Quanto tempo até a sua meta — e o que mais mudaria isso?", texto: "O Simulador de Emagrecimento desenha sua trajetória estimada semana a semana e deixa você comparar treino, passos e consistência. Leva cerca de 1 minuto.", botao: "Abrir o Simulador de Emagrecimento →" },
   massa: { href: "/ferramentas/simulador-ganho-massa-muscular", titulo: "Quanto tempo para chegar ao peso que você quer — e o que está limitando?", texto: "O Simulador de Ganho de Massa mostra como seu peso pode evoluir, compara três ritmos de ganho e aponta o gargalo pelas suas respostas. Leva cerca de 1 minuto.", botao: "Abrir o Simulador de Ganho de Massa →" },
+  shape12: { href: "/ferramentas/meu-shape-12-semanas", titulo: "Quanto o seu corpo pode mudar em 12 semanas?", texto: "O Meu Shape em 12 Semanas projeta os seus checkpoints das semanas 4, 8 e 12, mostra os treinos que você acumularia e o que mais muda o resultado. Sem antes e depois inventado.", botao: "Simular minhas 12 semanas →" },
 } as const;
 
 /** Convite para um Simulador Montinho nos artigos que perguntam "quanto tempo, no meu caso?". */

@@ -604,7 +604,22 @@ export type AnalyticsEvent =
   | "simulator_methodology_opened"
   | "simulator_internal_tool_click"
   | "simulator_share_click"
-  | "simulator_whatsapp_click";
+  | "simulator_whatsapp_click"
+  /**
+   * Meu Shape em 12 Semanas. Mesma regra dos outros simuladores: nenhum
+   * parâmetro leva dado do corpo, medicação ou hormônio — só a etapa, o
+   * controle mexido ou o destino interno.
+   */
+  | "shape12_view"
+  | "shape12_start"
+  | "shape12_step_complete"
+  | "shape12_complete"
+  | "shape12_scenario_change"
+  | "shape12_checkpoint_view"
+  | "shape12_methodology_open"
+  | "shape12_share"
+  | "shape12_internal_tool_click"
+  | "shape12_whatsapp_click";
 
 export interface EventParams {
   [key: string]: string | number | boolean | undefined;

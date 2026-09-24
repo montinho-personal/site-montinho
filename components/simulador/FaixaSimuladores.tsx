@@ -27,7 +27,7 @@ export default function FaixaSimuladores() {
               O que é um simulador →
             </Link>
           </div>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid gap-3 sm:grid-cols-3">
             {SIMULADORES.map((s) => (
               <Link key={s.id} href={s.href} className={`group border border-white/15 hover:border-[#BA9E50] p-4 min-h-[88px] flex items-center justify-between gap-3 transition-colors ${foco}`}>
                 <span>

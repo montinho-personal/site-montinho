@@ -15,7 +15,7 @@
  */
 
 export interface Simulador {
-  id: "emagrecimento" | "massa";
+  id: "emagrecimento" | "massa" | "shape12";
   href: string;
   nome: string;
   /** A pergunta de quem chega — é o que a pessoa escolhe. */
@@ -58,6 +58,21 @@ export const SIMULADORES: Simulador[] = [
     ],
     tempo: "1 minuto",
     acao: "Simular meu ganho",
+  },
+  {
+    id: "shape12",
+    href: "/ferramentas/meu-shape-12-semanas",
+    nome: "Meu Shape em 12 Semanas",
+    pergunta: "Tenho 12 semanas",
+    paraQuem: "Para quem quer saber o que dá para construir em 3 meses — emagrecendo, ganhando massa ou mudando o shape.",
+    entrega: [
+      "Seu ponto de partida e os checkpoints das semanas 4, 8 e 12, com datas",
+      "Os treinos que você acumularia — e quantos a mais com consistência",
+      "O que mais muda as suas 12 semanas, pelo modelo",
+      "O que medir em cada checkpoint, além da balança",
+    ],
+    tempo: "2 minutos",
+    acao: "Simular minhas 12 semanas",
   },
 ];
 
