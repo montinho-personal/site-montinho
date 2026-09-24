@@ -64,6 +64,14 @@ export default function Footer() {
               </Link>
             </h3>
             <nav className="flex flex-col gap-4">
+              <Link href="/simuladores" className="group block">
+                <span className="text-gray-300 group-hover:text-white text-sm transition-colors duration-200">
+                  Simuladores Montinho
+                </span>
+                <span className="block text-gray-400 text-xs mt-0.5 leading-relaxed">
+                  Emagrecimento e ganho de massa, mês a mês
+                </span>
+              </Link>
               <Link href="/alimentos" className="group block">
                 <span className="text-gray-300 group-hover:text-white text-sm transition-colors duration-200">
                   Tabela Nutricional de Alimentos
