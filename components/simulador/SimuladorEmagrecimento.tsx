@@ -5,7 +5,7 @@ import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import ProjectionChart, { type Marco } from "./ProjectionChart";
-import { DOURADO, InsightCard, MethodologyDrawer, MultiOptionCards, NumericInput, OptionCards, ProgressBar, QuestionStep, ScenarioSelector, h, type Opcao } from "./ui";
+import { DOURADO, Dobra, InsightCard, MethodologyDrawer, MultiOptionCards, NumericInput, OptionCards, ProgressBar, QuestionStep, ScenarioSelector, h, type Opcao } from "./ui";
 import { evidencia } from "@/lib/simulador/evidencias";
 import { MARCOS, semanaDoMarco } from "@/lib/simulador/marcos";
 import { FECHAMENTO_COMPARACAO } from "@/lib/filosofia";
@@ -739,18 +739,6 @@ function OQueEsperar({ perfil, pr, horizonte }: { perfil: Perfil; pr: Proj; hori
       </ol>
       <p className="text-gray-500 text-xs mt-4">Marcos em percentual do seu peso de partida, porque é assim que os estudos mediram. As semanas seguem a curva central e mudam com os ajustes acima.</p>
     </div>
-  );
-}
-
-/** Um item recolhível, com o mesmo + dourado do FAQ do site. */
-function Dobra({ titulo, children }: { titulo: string; children: React.ReactNode }) {
-  return (
-    <details className="group border border-white/12 open:border-[#BA9E50]/40">
-      <summary className="cursor-pointer list-none flex items-center justify-between gap-3 px-4 py-3 min-h-[48px] text-white font-semibold">
-        {titulo}<span aria-hidden="true" className="text-[#BA9E50] text-xl leading-none transition-transform group-open:rotate-45">+</span>
-      </summary>
-      <div className="px-4 pb-4">{children}</div>
-    </details>
   );
 }
 
