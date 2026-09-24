@@ -588,7 +588,23 @@ export type AnalyticsEvent =
   | "gym_finder_view"
   | "gym_finder_start"
   | "gym_finder_complete"
-  | "gym_result_click";
+  | "gym_result_click"
+  /**
+   * Simulador de Emagrecimento. Funil: view → start → step_complete (step =
+   * número da etapa) → complete → scenario_changed (control = nome do
+   * controle) → whatsapp_click. NENHUM parâmetro leva peso, altura, idade,
+   * sexo, medicação, hormônio ou a resposta de qualquer campo — nem uma
+   * variante de CTA que revele uso de caneta.
+   */
+  | "simulator_view"
+  | "simulator_start"
+  | "simulator_step_complete"
+  | "simulator_complete"
+  | "scenario_changed"
+  | "simulator_methodology_opened"
+  | "simulator_internal_tool_click"
+  | "simulator_share_click"
+  | "simulator_whatsapp_click";
 
 export interface EventParams {
   [key: string]: string | number | boolean | undefined;

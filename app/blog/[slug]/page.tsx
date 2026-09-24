@@ -86,6 +86,8 @@ import LinkFerramentaCreatina from "@/components/creatina/LinkFerramentaCreatina
 import { ARTIGOS_COM_CALCULADORA_WHEY, ARTIGOS_COM_LINK_WHEY } from "@/lib/whey";
 import CalculadoraWhey from "@/components/whey/CalculadoraWhey";
 import LinkFerramentaWhey from "@/components/whey/LinkFerramentaWhey";
+import LinkFerramentaSimulador from "@/components/simulador/LinkFerramentaSimulador";
+import { ARTIGOS_COM_LINK_SIMULADOR } from "@/lib/simulador/emagrecimento";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -585,6 +587,7 @@ export default async function BlogPost({ params }: Props) {
           {ARTIGOS_COM_LINK_CAMINHADA.includes(post.slug) && <LinkFerramentaCaminhada slug={post.slug} />}
           {ARTIGOS_COM_LINK_CREATINA.includes(post.slug) && <LinkFerramentaCreatina slug={post.slug} />}
           {ARTIGOS_COM_LINK_WHEY.includes(post.slug) && <LinkFerramentaWhey slug={post.slug} />}
+          {ARTIGOS_COM_LINK_SIMULADOR.includes(post.slug) && <LinkFerramentaSimulador slug={post.slug} />}
           {/* Conversor de mg/mL: convite, nunca embed. Uma seringa desenhada
               dentro de um artigo sobre um medicamento daria a impressão de que
               o texto ensina a medir AQUELE medicamento — e a ferramenta é
