@@ -107827,7 +107827,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "fim-de-semana-estraga-a-dieta",
     title: "Fim de Semana Estraga a Dieta? A Matemática do Sábado e Domingo",
-    metaTitle: "Fim de Semana Estraga a Dieta? A Matemática Real",
+    metaTitle: "Por Que o Fim de Semana Atrapalha a Dieta: A Matemática",
     metaDescription:
       "O fim de semana estraga a dieta? Veja a matemática real de como sábado e domingo anulam o déficit de segunda a sexta — e o que fazer sem culpa nem privação.",
     excerpt:
@@ -107925,6 +107925,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>É por isso que a pessoa não emagrece e conclui que "o metabolismo travou". Não travou. A média semanal está em manutenção. Se você quiser entender melhor de onde saem esses números de gasto e consumo, eu expliquei em <a href="/blog/deficit-calorico-como-calcular">como calcular o déficit calórico</a>.</p>
 
+<p><strong>Quer saber se isso está acontecendo com você?</strong> <a href="/ferramentas/simulador-fim-de-semana">Faça a simulação do seu fim de semana</a>: em cerca de 1 minuto ela mostra quanto do seu déficit sobra depois de sábado e domingo — sem precisar saber calorias.</p>
 <h2>O que muda quando você reduz o estrago pela metade</h2>
 
 <p>Aqui está a boa notícia, e ela é bem melhor do que parece. Você não precisa de um fim de semana perfeito. Precisa de um fim de semana <em>menos extremo</em>. Olha o que acontece se, em vez de +1.300 e +1.200, o sábado e o domingo ficarem em +400 cada:</p>

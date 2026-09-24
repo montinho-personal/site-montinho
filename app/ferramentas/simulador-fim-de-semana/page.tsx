@@ -25,9 +25,9 @@ import { FONTES_FDS, comparaRefeicaoFds, fmtKcal, recomecar, semana, type Entrad
 const CAMINHO = "/ferramentas/simulador-fim-de-semana";
 
 export const metadata: Metadata = {
-  title: "Simulador do Fim de Semana: Seu Sábado Anula a Dieta?",
+  title: "Fim de Semana Estraga a Dieta? Simule o Saldo da Semana",
   description:
-    "Veja quanto do déficit da semana sábado e domingo consomem. Teste refeições, bebidas e passos e descubra a menor mudança com maior impacto. Grátis.",
+    "Faz dieta de segunda a sexta e o peso não cai? Veja quanto do déficit sábado e domingo consomem e teste refeições, bebidas e passos. Grátis.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
     title: "Meu fim de semana realmente estraga a dieta? | Montinho Personal Trainer",
@@ -68,14 +68,15 @@ const RR = recomecar(REF);
 const pct = (n: number | null) => `${Math.round((n ?? 0) * 100)}%`;
 
 const faq: ItemFAQ[] = [
-  { question: "Uma pizza estraga a dieta?", answer: "Não sozinha. Uma refeição diferente reduz parte do déficit da semana; raramente o apaga. O que muda o saldo de verdade é a duração: quando a pizza de sábado vira sábado inteiro, domingo e “recomeço na segunda”. No simulador, compare “uma refeição livre” com “o fim de semana inteiro” — é a mesma pizza nos dois." },
+  { question: "Uma pizza estraga a dieta?", answer: "Não sozinha. Uma refeição diferente reduz parte do déficit da semana; raramente o apaga. Pizza pode fazer parte da alimentação — o impacto depende de porção, frequência e do saldo total. O que muda o resultado de verdade é a duração: quando a pizza de sábado vira sábado inteiro, domingo e “recomeço na segunda”." },
+  { question: "Um dia fora da dieta engorda?", answer: "Um dia acima da manutenção reduz o déficit da semana; se ele deixa a semana inteira acima da manutenção depende do tamanho do exagero e dos outros seis dias. A balança do dia seguinte sobe por água e comida no intestino, não pela gordura toda. Teste no simulador com o seu dia." },
+  { question: "Dois dias fora da dieta podem zerar o déficit da semana?", answer: `Podem. No exemplo de referência do simulador (quem cria cerca de 2.500 kcal de déficit de segunda a sexta), sexta à noite, sábado e domingo fora da rotina deixam a semana em ${fmtKcal(CMP.b.saldo.mid)} — contra ${fmtKcal(CMP.a.saldo.mid)} com só uma refeição mais livre. O que pesa é a soma dos dias, não um alimento.` },
+  { question: "É possível ganhar 2 kg de gordura em um fim de semana?", answer: "Na prática, não. Seria preciso algo como 18 mil kcal acima do gasto em dois ou três dias. A maior parte de um salto rápido na balança é água, glicogênio, sódio e conteúdo intestinal. Isso não quer dizer que não possa ter havido saldo positivo — o simulador mostra o teto de tecido que a energia extra permitiria." },
+  { question: "Quanto tempo demora para desinchar depois do fim de semana?", answer: "Com a rotina normal de volta, a maior parte da oscilação costuma baixar em dois a cinco dias. Sem cortar comida nem água: desidratar só troca um número enganoso por outro. Compare a média da semana com a da semana anterior." },
+  { question: "Preciso fazer jejum depois de exagerar?", answer: "Não. Jejum para “pagar” o sábado não faz parte de uma estratégia e tende a puxar o próximo exagero. O caminho é voltar à rotina normal na próxima refeição. Se comer e compensar virou um ciclo difícil de controlar, converse com um profissional de saúde." },
+  { question: "Preciso fazer mais cardio para compensar o fim de semana?", answer: "Não. Cardio como punição transforma treino em dívida e costuma durar pouco. Se você quer se mexer mais no fim de semana porque gosta — uma caminhada, uma trilha —, ótimo: o simulador mostra o que passos a mais mudam. Mas o treino não é crédito para comer, nem multa." },
+  { question: "Cerveja pode zerar meu déficit?", answer: "Pode reduzir bastante. Uma lata tem 140 a 160 kcal; oito latas no sábado passam de 1.100 — quase metade de um déficit de 500 kcal por dia útil. No simulador, compare o seu fim de semana com metade das bebidas." },
   { question: "Quanto posso comer no fim de semana?", answer: "O simulador não dá um número para você comer — é uma simulação de cenário, não uma prescrição. Ele mostra o que o seu fim de semana atual faz com a sua semana e deixa você testar mudanças. Quem precisa de um plano alimentar individual deve procurar um nutricionista." },
-  { question: "Se eu exagerar no sábado, devo jejuar ou fazer mais cardio no domingo?", answer: "Não. Jejum punitivo, cardio para “pagar” a comida e cortes drásticos tendem a puxar o próximo exagero e não fazem parte de uma estratégia. O caminho é voltar à rotina normal na próxima refeição. Se comer e compensar virou um ciclo difícil de controlar, converse com um profissional de saúde." },
-  { question: "Por que meu peso sobe na segunda-feira?", answer: "Porque a balança mede massa corporal, e ela muda em horas com água, glicogênio, sódio e o que ainda está no intestino. Pessoas que se pesam todo dia mostram pico no domingo e na segunda e queda ao longo da semana — e esse padrão foi maior justamente em quem estava emagrecendo (Orsama, 2014). Compare médias semanais, não a segunda com a sexta." },
-  { question: "Engordei 2 kg no fim de semana. Foram 2 kg de gordura?", answer: "Quase certamente não. Para 2 kg de gordura seria preciso algo como 18 mil kcal acima do gasto em dois dias. A maior parte de um salto rápido é água, glicogênio e conteúdo intestinal, e costuma baixar em alguns dias de rotina. Isso não quer dizer que o saldo não possa ter sido positivo — o simulador mostra o teto de tecido que a energia extra permitiria." },
-  { question: "Posso beber e emagrecer?", answer: "A matemática permite: bebida é energia, e cabe no saldo da semana como qualquer outra. O que pesa é a soma — oito latas de cerveja passam de mil calorias — e o que costuma vir junto (petisco, noite curta, domingo parado). O simulador calcula as bebidas por volume e teor alcoólico, em faixa, e mostra quanto elas representam do seu fim de semana." },
-  { question: "Déficit calórico deve ser contado por dia ou por semana?", answer: "O corpo não reinicia à meia-noite nem na segunda-feira: o que decide a tendência é o saldo ao longo dos dias. Contar por semana ajuda a enxergar isso — e é o que o simulador faz. Mas “compensar” a semana com dias muito baixos não é estratégia; o saldo semanal é para entender, não para punir." },
-  { question: "Mounjaro ou Wegovy permitem comer mais no fim de semana?", answer: "A matemática do saldo é a mesma com ou sem caneta. Esses medicamentos costumam reduzir apetite e ingestão, mas a resposta varia muito entre pessoas, e por isso o simulador não desconta nada por eles. Dose, dia de aplicação e álcool durante o tratamento são conversa com quem prescreve." },
 ];
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })) };
 
@@ -108,16 +109,17 @@ export default function SimuladorFimDeSemanaPage() {
             <Link href="/" className="hover:text-white">Home</Link> <span aria-hidden="true">/</span> <Link href="/ferramentas" className="hover:text-white">Ferramentas</Link> <span aria-hidden="true">/</span> <Link href="/simuladores" className="hover:text-white">Simuladores</Link> <span aria-hidden="true">/</span> <span className="text-gray-400">Simulador do Fim de Semana</span>
           </nav>
           <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-5" style={{ color: "#BA9E50" }}>Simuladores Montinho · grátis · sem cadastro</p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4" style={h}>Simulador do Fim de Semana: veja o que sábado e domingo fazem com a sua semana</h1>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4" style={h}>Fim de Semana Estraga a Dieta? Faça a Simulação</h1>
           <Compartilhar contexto="tool" titulo="Simulador do Fim de Semana" caminho={CAMINHO} local="tool_top" ferramenta="simulador-fim-de-semana" aparencia="discreto" className="mb-4" />
-          <p className="text-gray-300 text-lg leading-relaxed">Seu fim de semana está anulando sua dieta? Monte o seu sábado e domingo e veja, em segundos, quanto do déficit da semana sobrou — e o que mudaria com uma coisa só.</p>
+          <p className="text-gray-300 text-lg leading-relaxed mb-3">Veja quanto do déficit criado durante a semana sobra depois de sábado e domingo — e teste como refeições, bebidas e atividade física mudam o resultado.</p>
+          <p className="text-gray-400 leading-relaxed">Você faz dieta de segunda a sexta, mas o peso não cai? Será que o sábado e o domingo estão anulando o déficit? Ou você acha que estragou tudo quando, na verdade, ainda terminou a semana em déficit? O simulador testa o seu caso.</p>
         </div>
       </section>
 
       <section className="py-8 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <SimuladorFimDeSemana placement="simulador-fim-de-semana" />
-          <noscript><p className="text-gray-300 mt-4">O simulador precisa de JavaScript. O exemplo abaixo, em “Como o fim de semana mexe na semana”, funciona sem ele.</p></noscript>
+          <noscript><p className="text-gray-300 mt-4">O simulador precisa de JavaScript. O exemplo abaixo, em “Como o fim de semana muda o saldo da semana”, funciona sem ele.</p></noscript>
         </div>
       </section>
 
@@ -128,21 +130,49 @@ export default function SimuladorFimDeSemanaPage() {
             <p className="text-gray-300 leading-relaxed mt-1">O resultado depende do conjunto dos sete dias. Flexibilidade pode existir dentro de uma estratégia — a ferramenta mostra o impacto em números, sem moralizar comida.</p>
           </div>
 
-          <Secao titulo="Como o fim de semana mexe na semana?" aberto>
-            <p className="text-gray-300 leading-relaxed mb-3"><strong className="text-white">Pela soma, não pelo alimento.</strong> Exemplo de referência: mulher de 35 anos que gasta cerca de 2.200 kcal por dia e come 1.700 de segunda a sexta. A semana constrói {fmtKcal(EX.construido.mid)}. Se o sábado chega a 3.100 e o domingo a 2.800, o fim de semana consome {fmtKcal(EX.consumido.mid).replace("+", "")} — sobra {fmtKcal(EX.saldo.mid)}, ou {pct(EX.preservado)} do déficit construído.</p>
-            <p className="text-gray-300 leading-relaxed">Se o mesmo sábado vier com um domingo igual à semana, sobram {pct(EX2.preservado)}. E uma refeição mais livre no sábado, no lugar do fim de semana inteiro, deixa a semana em {fmtKcal(CMP.a.saldo.mid)}, contra {fmtKcal(CMP.b.saldo.mid)} com sexta, sábado e domingo fora da rotina. A matemática completa, com o contexto do dia a dia, está no artigo <Link href="/blog/fim-de-semana-estraga-a-dieta" className={ln}>Fim de semana estraga a dieta?</Link>.</p>
+          <Secao titulo="Faço tudo certo durante a semana e não emagreço. É o fim de semana?" aberto>
+            <p className="text-gray-300 leading-relaxed mb-3"><strong className="text-white">Pode ser — ou não.</strong> Quando o peso não cai, há várias hipóteses: a manutenção ser menor do que se imagina, porções maiores que as anotadas, menos movimento no dia a dia, água mascarando a balança, pouco tempo de observação. O fim de semana é uma delas, e é a que este simulador testa: ele mostra se sábado e domingo estão consumindo uma parte grande do déficit ou se a sua semana termina em déficit mesmo com eles.</p>
+            <p className="text-gray-300 leading-relaxed">Se o resultado disser que o fim de semana não é o problema, ele diz isso. Para as outras hipóteses: <Link href="/blog/por-que-voce-nao-consegue-emagrecer" className={ln}>por que você não consegue emagrecer</Link> e <Link href="/blog/habitos-que-sabotam-seu-emagrecimento" className={ln}>hábitos que sabotam o emagrecimento</Link>.</p>
           </Secao>
 
-          <Secao titulo="Refeição livre, dia livre e o “dia do lixo”">
+          <Secao titulo="Como o fim de semana muda o saldo da semana?">
+            <p className="text-gray-300 leading-relaxed mb-3"><strong className="text-white">Pela soma, não pelo alimento.</strong> Exemplo de referência: mulher de 35 anos que gasta cerca de 2.200 kcal por dia e come 1.700 de segunda a sexta. A semana constrói {fmtKcal(EX.construido.mid)}. Se o sábado chega a 3.100 e o domingo a 2.800, o fim de semana consome {fmtKcal(EX.consumido.mid).replace("+", "")} — sobra {fmtKcal(EX.saldo.mid)}, ou {pct(EX.preservado)} do déficit construído.</p>
+            <p className="text-gray-300 leading-relaxed">Se o mesmo sábado vier com um domingo igual à semana, sobram {pct(EX2.preservado)}. E uma refeição mais livre no sábado, no lugar do fim de semana inteiro, deixa a semana em {fmtKcal(CMP.a.saldo.mid)}, contra {fmtKcal(CMP.b.saldo.mid)} com sexta, sábado e domingo fora da rotina. Por que isso acontece — e o que fazer na prática — está no artigo <Link href="/blog/fim-de-semana-estraga-a-dieta" className={ln}>por que o fim de semana atrapalha a dieta</Link>.</p>
+          </Secao>
+
+          <Secao titulo="Déficit calórico conta por dia ou por semana?">
+            <p className="text-gray-300 leading-relaxed mb-3"><strong className="text-white">O que decide a tendência é o saldo ao longo dos dias — por isso olhar a semana ajuda.</strong> O corpo não reinicia à meia-noite nem na segunda-feira: um dia acima da manutenção e cinco abaixo formam um saldo só. Calcular o déficit semanal é somar (o que se comeu − o que se gastou) nos sete dias. É exatamente o que o simulador faz, com faixa, porque o gasto é estimado.</p>
+            <p className="text-gray-300 leading-relaxed">Dá para comer mais no sábado e um pouco menos nos outros dias? Matematicamente, sim — há quem se organize assim. O limite é comportamental: dias muito baixos para “guardar” calorias costumam aumentar a fome e puxar o exagero, e o saldo semanal serve para entender, não para punir. Para calcular um déficit diário razoável: <Link href="/ferramentas/calculadora-deficit-calorico" className={ln}>Calculadora de Déficit Calórico</Link>.</p>
+          </Secao>
+
+          <Secao titulo="Uma refeição livre estraga a dieta? E o “dia do lixo”?">
+            <p className="text-gray-300 leading-relaxed mb-3"><strong className="text-white">Uma refeição, sozinha, raramente apaga a semana.</strong> Pizza, hambúrguer, churrasco ou sobremesa podem fazer parte da alimentação: o impacto depende de porção, frequência e do saldo total.</p>
             <p className="text-gray-300 leading-relaxed">Uma refeição diferente e um dia inteiro sem estrutura produzem saldos muito diferentes — no exemplo acima, a diferença passa de {fmtKcal(CMP.b.saldo.mid - CMP.a.saldo.mid).replace("+", "")} na semana. O chamado “dia do lixo” costuma ser o segundo caso com outro nome. Não existe alimento proibido; existe a soma. Leia <Link href="/blog/dia-do-lixo-funciona" className={ln}>o dia do lixo funciona?</Link> e <Link href="/blog/churrasco-sem-sair-da-dieta" className={ln}>churrasco sem sair da dieta</Link>.</p>
           </Secao>
 
-          <Secao titulo="Saiu da rotina? Volte na próxima refeição">
-            <p className="text-gray-300 leading-relaxed">O efeito “já que eu saí da dieta…” é o que transforma uma refeição em fim de semana. No exemplo, voltar na refeição seguinte custa cerca de {fmtKcal(RR.b).replace("+", "")}; adiar a volta para segunda custa {fmtKcal(RR.a).replace("+", "")} — {RR.diasDeDeficit !== null ? `o equivalente a uns ${Math.round(RR.diasDeDeficit)} dias do déficit da semana` : "várias vezes mais"}. A diferença não vem do alimento; vem da decisão de adiar. E não precisa compensar: nada de jejum punitivo nem de cardio para “pagar” — só voltar à rotina.</p>
+          <Secao titulo="Por que meu peso aumenta na segunda-feira?">
+            <p className="text-gray-300 leading-relaxed mb-3"><strong className="text-white">Porque a balança mede massa corporal, não gordura.</strong> Em 24 a 72 horas ela muda com água, glicogênio (cada grama guardado leva água junto), sódio, a quantidade de comida ainda no intestino, o horário da pesagem e a variação normal de um dia para o outro. Quem se pesa todo dia costuma ver o pico no domingo e na segunda (Orsama, 2014).</p>
+            <p className="text-gray-300 leading-relaxed mb-3"><strong className="text-white">Ganhei 2 kg no fim de semana: é gordura?</strong> Quase certamente não toda. Dois quilos de gordura exigiriam algo como 18 mil kcal acima do gasto em dois ou três dias. Isso não quer dizer que “é só retenção”: se o fim de semana ficou acima da manutenção, uma parte pequena pode ser tecido. Depois de simular, abra “A balança subiu muito na segunda?” e informe quanto subiu — a ferramenta mostra o teto que a energia extra permitiria.</p>
+            <p className="text-gray-300 leading-relaxed">Quanto tempo para voltar? Com a rotina normal, a maior parte costuma baixar em dois a cinco dias. A comparação que responde é a média da semana contra a da semana anterior. Veja <Link href="/blog/balanca-nao-muda-mas-o-corpo-muda" className={ln}>por que a balança engana</Link> e <Link href="/blog/retencao-de-liquido-como-desinchar" className={ln}>retenção de líquido</Link>.</p>
           </Secao>
 
-          <Secao titulo="Cerveja e álcool no fim de semana">
-            <p className="text-gray-300 leading-relaxed">O simulador calcula as bebidas por volume × teor alcoólico × 7 kcal por grama de álcool, mais o carboidrato da bebida ou do misturador: uma lata de cerveja fica em 140 a 160 kcal; uma taça de vinho, 115 a 135; uma caipirinha, 180 a 350, conforme o açúcar. O que ele não faz é inventar mecanismo do tipo “o álcool desliga a queima de gordura por X horas”. Energia, efeitos agudos e comportamento que vem junto são coisas diferentes. Leia <Link href="/blog/alcool-e-emagrecimento" className={ln}>álcool e emagrecimento</Link>, <Link href="/blog/cerveja-engorda" className={ln}>cerveja engorda?</Link> e <Link href="/blog/vinho-engorda" className={ln}>vinho engorda?</Link>.</p>
+          <Secao titulo="Álcool e cerveja atrapalham o emagrecimento?">
+            <p className="text-gray-300 leading-relaxed">O simulador calcula as bebidas por volume × teor alcoólico × 7 kcal por grama de álcool, mais o carboidrato da bebida ou do misturador: uma lata de cerveja fica em 140 a 160 kcal; uma taça de vinho, 115 a 135; uma caipirinha, 180 a 350, conforme o açúcar. O que ele não faz é inventar mecanismo do tipo “o álcool desliga a queima de gordura por X horas”. Energia, efeitos agudos e comportamento são coisas diferentes: a bebida soma calorias sem ocupar espaço no prato, costuma vir com petisco, piora o sono e deixa o domingo mais parado. Dá para beber e emagrecer — a pergunta é quanto isso ocupa do seu saldo, e o simulador mostra. Leia <Link href="/blog/alcool-e-emagrecimento" className={ln}>álcool e emagrecimento</Link>, <Link href="/blog/cerveja-engorda" className={ln}>cerveja engorda?</Link> e <Link href="/blog/vinho-engorda" className={ln}>vinho engorda?</Link>.</p>
+          </Secao>
+
+          <Secao titulo="Exagerei no fim de semana: o que faço agora?">
+            <p className="text-gray-300 leading-relaxed mb-3"><strong className="text-white">Volte para a rotina normal na próxima refeição.</strong> Não é preciso esperar segunda-feira, e não é preciso compensar. Jejum punitivo, cardio para “pagar” a comida, cortar comida drasticamente, desidratar ou qualquer forma de purgação não fazem parte de uma estratégia — tendem a puxar o próximo exagero.</p>
+            <p className="text-gray-300 leading-relaxed mb-3">O efeito “já que eu saí da dieta…” é o que transforma uma refeição em fim de semana. No exemplo, voltar na refeição seguinte custa cerca de {fmtKcal(RR.b).replace("+", "")}; adiar a volta para segunda custa {fmtKcal(RR.a).replace("+", "")} — {RR.diasDeDeficit !== null ? `o equivalente a uns ${Math.round(RR.diasDeDeficit)} dias do déficit da semana` : "várias vezes mais"}. A diferença não vem do alimento; vem da decisão de adiar. E não precisa compensar: nada de jejum punitivo nem de cardio para “pagar” — só voltar à rotina.</p>
+            <p className="text-gray-300 leading-relaxed">Se comer e compensar virou um ciclo difícil de controlar, vale conversar com um profissional de saúde — veja também <Link href="/blog/compulsao-alimentar-como-controlar" className={ln}>compulsão alimentar</Link>.</p>
+          </Secao>
+
+          <Secao titulo="Por que eu saio da dieta no fim de semana?">
+            <p className="text-gray-300 leading-relaxed mb-3"><strong className="text-white">Quase nunca é falta de força de vontade.</strong> O fim de semana muda a rotina inteira: horários, sono, eventos sociais, bebida, comida mais disponível. E existe o pensamento tudo-ou-nada — “já que eu saí, agora só segunda” —, que transforma uma refeição em três dias. O recomeço fica marcado para a segunda porque datas redondas parecem um bom começo, mas cada refeição é uma oportunidade.</p>
+            <p className="text-gray-300 leading-relaxed">O que costuma ajudar é decidir antes: qual será a refeição social, o que acontece na seguinte, quanto beber. Um plano que inclui o sábado aguenta mais que um plano que finge que ele não existe. Leia <Link href="/blog/como-emagrecer-sem-passar-fome-vida-social" className={ln}>como emagrecer sem abrir mão da vida social</Link> e <Link href="/blog/dieta-flexivel-iifym" className={ln}>dieta flexível</Link>.</p>
+          </Secao>
+
+          <Secao titulo="E se eu uso Mounjaro, Wegovy ou outra medicação?">
+            <p className="text-gray-300 leading-relaxed">A matemática do saldo é a mesma: sábado e domingo continuam fazendo parte da ingestão da semana. Tirzepatida e semaglutida costumam reduzir apetite e ingestão, mas a resposta varia muito entre pessoas — por isso o simulador não desconta nada por causa delas, e a pergunta sobre medicação só muda o texto do resultado. Dose, dia de aplicação e álcool durante o tratamento são conversa com quem prescreve; não mude a aplicação para “cobrir” o fim de semana. Sobre treino durante o tratamento: <Link href="/blog/musculacao-durante-uso-de-mounjaro" className={ln}>musculação durante o uso de Mounjaro</Link>.</p>
           </Secao>
 
           <Secao titulo="O que a ciência mediu sobre o fim de semana">
