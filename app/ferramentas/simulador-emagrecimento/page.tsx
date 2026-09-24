@@ -6,6 +6,7 @@ import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import SimuladorEmagrecimento from "@/components/simulador/SimuladorEmagrecimento";
 import { ESTUDOS, FONTES, cenarioAtual, fmtSemanas, projeta, type Perfil } from "@/lib/simulador/emagrecimento";
+import { EVIDENCIAS, REFERENCIAS_EVIDENCIAS } from "@/lib/simulador/evidencias";
 
 /**
  * A página do Simulador de Emagrecimento.
@@ -59,7 +60,7 @@ const breadcrumbSchema = {
 };
 
 /* ── Exemplos calculados pelo motor, no build ── */
-const REF: Perfil = { idade: 35, sexo: "m", alturaCm: 175, pesoKg: 95, metaKg: null, rotina: "sentado", treinos: 3, tipoTreino: "musculacao", passos: "5a75", kcalDia: null };
+const REF: Perfil = { idade: 35, sexo: "m", alturaCm: 175, pesoKg: 95, metaKg: null, rotina: "sentado", treinos: 3, tiposTreino: ["musculacao"], passos: "5a75", kcalDia: null };
 const semanasPara = (kg: number, consistencia: number) => {
   const p = { ...REF, metaKg: REF.pesoKg - kg };
   return projeta(p, { ...cenarioAtual(p), consistencia }).semanaMeta;
@@ -80,9 +81,10 @@ const faq: ItemFAQ[] = [
   { question: "Por que o emagrecimento fica mais lento com o tempo?", answer: "Porque um corpo mais leve gasta menos para existir e se mover, e o organismo ainda reduz um pouco o gasto além do que o peso explica. O mesmo prato que gerava déficit no começo gera um déficit menor meses depois. A curva do simulador desacelera por esse motivo." },
   { question: "Treinar mais acelera o emagrecimento?", answer: "Acelera um pouco, se a alimentação não subir junto. O efeito maior da musculação durante o emagrecimento é outro: ajudar a preservar massa muscular, para que o peso perdido seja mais gordura. No simulador, compare 2, 3 e 4 treinos e veja o tamanho real da diferença no seu caso." },
   { question: "Quantos passos por dia ajudam no emagrecimento?", answer: `Não existe um número mágico: o que conta é quanto você anda a mais do que anda hoje. No exemplo de referência, subir de cerca de 6.250 para 8.750 passos por dia muda a projeção de 12 semanas para ${k(passosGanho)} kg. Para quem está parado, sair de 3.000 para 7.000 passos costuma pesar mais que um treino extra.` },
-  { question: "Mounjaro, Wegovy ou Ozempic mudam a previsão do simulador?", answer: "Não. O simulador não soma quilos por causa de medicamento, porque a resposta a tirzepatida e semaglutida varia muito de pessoa para pessoa. Quem informa que usa vê, à parte, o que os ensaios clínicos observaram em média — separado da sua simulação — e um lembrete sobre preservar massa muscular." },
+  { question: "Mounjaro, Wegovy, Ozempic ou retatrutida mudam a previsão do simulador?", answer: "Não. O simulador não soma quilos por causa de medicamento, porque a resposta a tirzepatida, semaglutida e retatrutida varia muito de pessoa para pessoa. Quem informa que usa vê, à parte, o que os ensaios clínicos observaram em média — separado da sua simulação — e um lembrete sobre preservar massa muscular." },
   { question: "Quem usa caneta emagrecedora pode usar o simulador?", answer: "Pode. A simulação mostra o efeito de treino, passos e consistência, que continuam importando durante o tratamento. O ritmo real com o medicamento costuma ser diferente, e uso, dose e ajustes são decisões do médico que acompanha você." },
   { question: "Por que estou perdendo medidas mas não peso?", answer: "Porque a balança soma gordura, músculo, água, glicogênio e o que está no intestino. Quem começa a treinar pode ganhar um pouco de músculo e reter água enquanto perde gordura — a cintura desce e o peso para. Medidas, fotos padronizadas e desempenho mostram o que o peso esconde." },
+  { question: "O que pesa mais: treinar mais, andar mais ou ser mais consistente?", answer: "Depende do ponto de partida, e é isso que o simulador testa no seu caso. Para quem já treina 3 vezes e anda pouco, passos e consistência costumam mexer mais que um quarto treino. Para quem não treina, sair de 0 para 2 treinos é a mudança de maior retorno, mesmo que a balança demore. Os estudos apontam a aderência como o maior preditor de resultado, acima do tipo de dieta." },
   { question: "Quem usa testosterona deve olhar só o peso?", answer: "Não. Mudanças de massa magra e de água corporal podem fazer o peso subir ou parar enquanto a gordura cai. Nesse caso, cintura, medidas, fotos e composição corporal contam mais que a balança. O simulador não altera a curva por uso de hormônio." },
 ];
 
@@ -230,6 +232,34 @@ export default function SimuladorEmagrecimentoPage() {
           </div>
 
           <div>
+            <h2 className="text-2xl font-bold text-white mb-2" style={h}>O que decide o resultado: estudos, prática e relatos</h2>
+            <p className="text-gray-300 leading-relaxed mb-6">
+              O simulador aponta qual alavanca mexe mais na sua curva. Aqui está o que sustenta cada uma — em três camadas separadas de propósito:
+              o que os <strong className="text-white">estudos</strong> mediram, o que a <strong className="text-white">prática</strong> de quem acompanha alunos
+              observa, e o que as pessoas <strong className="text-white">relatam</strong> na internet. Relato não é evidência; é o sintoma que os estudos explicam.
+            </p>
+            <div className="space-y-8">
+              {EVIDENCIAS.map((e) => (
+                <article key={e.id} className="border border-white/15 p-5">
+                  <h3 className="text-xl font-bold text-white mb-1" style={h}>{e.titulo}</h3>
+                  <p className="text-gray-300 mb-4">{e.resumo}</p>
+                  <div className="space-y-3 text-sm leading-relaxed">
+                    <div>
+                      <p className="text-gray-400 text-xs uppercase tracking-wide mb-1">Estudos</p>
+                      <ul className="text-gray-300 space-y-2">
+                        {e.estudos.map((x) => <li key={x.ref.url}>{x.texto} <a href={x.ref.url} target="_blank" rel="noopener noreferrer" className="text-gray-500 underline underline-offset-2">{x.ref.rotulo}</a></li>)}
+                      </ul>
+                    </div>
+                    <div><p className="text-gray-400 text-xs uppercase tracking-wide mb-1">Prática</p><p className="text-gray-300">{e.pratica}</p></div>
+                    <div><p className="text-gray-400 text-xs uppercase tracking-wide mb-1">Relatos</p><p className="text-gray-300">{e.relatos}</p></div>
+                    <div className="border-l-2 pl-3" style={{ borderColor: "#BA9E50" }}><p className="text-gray-400 text-xs uppercase tracking-wide mb-1">O que fazer amanhã</p><p className="text-white">{e.acao}</p></div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Emagrecimento com Mounjaro, Wegovy ou outras canetas é diferente?</h2>
             <p className="text-gray-300 leading-relaxed mb-3">
               <strong className="text-white">O mecanismo muda; os princípios, não.</strong> Tirzepatida (um agonista duplo GIP/GLP-1, ex.: Mounjaro) e semaglutida (um
@@ -333,6 +363,9 @@ export default function SimuladorEmagrecimentoPage() {
             <ol className="text-gray-400 text-sm leading-relaxed space-y-2 list-decimal pl-5">
               {FONTES.map((f) => (
                 <li key={f.url}><a href={f.url} target="_blank" rel="noopener noreferrer" className={ln}>{f.rotulo}</a>. <span className="text-gray-500">{f.resumo}</span></li>
+              ))}
+              {REFERENCIAS_EVIDENCIAS.filter((r) => !FONTES.some((f) => f.url === r.url)).map((r) => (
+                <li key={r.url}><a href={r.url} target="_blank" rel="noopener noreferrer" className={ln}>{r.rotulo}</a>. <span className="text-gray-500">Base da seção sobre estudos, prática e relatos.</span></li>
               ))}
               {ESTUDOS.map((e) => (
                 <li key={e.url}><a href={e.url} target="_blank" rel="noopener noreferrer" className={ln}>{e.referencia}</a>. <span className="text-gray-500">Estudo {e.estudo}, citado apenas como resultado observado — não entra na simulação.</span></li>

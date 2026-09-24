@@ -5,9 +5,10 @@ import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import ProjectionChart, { type Marco } from "./ProjectionChart";
-import { DOURADO, InsightCard, MethodologyDrawer, NumericInput, OptionCards, ProgressBar, QuestionStep, ScenarioSelector, h, type Opcao } from "./ui";
+import { DOURADO, InsightCard, MethodologyDrawer, MultiOptionCards, NumericInput, OptionCards, ProgressBar, QuestionStep, ScenarioSelector, h, type Opcao } from "./ui";
+import { evidencia } from "@/lib/simulador/evidencias";
 import {
-  ESTUDOS, NOTA_ESTIMATIVA, NOTA_PRIMEIRAS_SEMANAS, SEMANAS_MAX, TREINO,
+  ESTUDOS, NOTA_ESTIMATIVA, NOTA_PRIMEIRAS_SEMANAS, SEMANAS_MAX, perfilTreino,
   bloqueio, cenarioAtual, fmtFaixaSemanas, fmtKg, fmtKgProj, fmtSemanas, impactos, insight, parseAltura, parseNumero, projeta,
   validaBasicos, validaMeta, KCAL_MAX, KCAL_MIN,
   type Bloqueio, type Cenario, type FaixaPassos, type Hormonio, type Medicacao, type NivelComida, type Objetivo, type Perfil, type Rotina, type Sexo, type TipoTreino,
@@ -40,7 +41,7 @@ interface Respostas {
   objetivo: Objetivo | null;
   idade: string; sexo: Sexo | null; altura: string; peso: string; gestante: boolean | null;
   semMeta: boolean; meta: string;
-  rotina: Rotina | null; treinos: number | null; tipoTreino: TipoTreino | null;
+  rotina: Rotina | null; treinos: number | null; tiposTreino: TipoTreino[];
   passos: FaixaPassos | null;
   sabeKcal: boolean | null; kcal: string;
   medicacao: Medicacao | null; tempoMed: string | null; medico: string | null; hormonio: Hormonio | null;
@@ -48,7 +49,7 @@ interface Respostas {
 
 const VAZIO: Respostas = {
   objetivo: null, idade: "", sexo: null, altura: "", peso: "", gestante: null, semMeta: false, meta: "",
-  rotina: null, treinos: null, tipoTreino: null, passos: null, sabeKcal: null, kcal: "",
+  rotina: null, treinos: null, tiposTreino: [], passos: null, sabeKcal: null, kcal: "",
   medicacao: null, tempoMed: null, medico: null, hormonio: null,
 };
 
@@ -67,7 +68,7 @@ const ROTINAS: Opcao<Rotina>[] = [
 const TREINOS: Opcao<number>[] = [0, 1, 2, 3, 4, 5, 6].map((n) => ({ valor: n, rotulo: n === 6 ? "6+" : String(n) }));
 const TIPOS: Opcao<TipoTreino>[] = [
   { valor: "musculacao", rotulo: "Musculação" }, { valor: "corrida", rotulo: "Corrida" }, { valor: "caminhada", rotulo: "Caminhada" },
-  { valor: "esportes", rotulo: "Esportes" }, { valor: "funcional", rotulo: "Funcional" }, { valor: "combinacao", rotulo: "Combinação" },
+  { valor: "esportes", rotulo: "Esportes" }, { valor: "funcional", rotulo: "Funcional" },
 ];
 const PASSOS: Opcao<FaixaPassos>[] = [
   { valor: "lt3", rotulo: "Menos de 3.000" }, { valor: "3a5", rotulo: "3.000 a 5.000" }, { valor: "5a75", rotulo: "5.000 a 7.500" },
@@ -77,6 +78,7 @@ const MEDICACOES: Opcao<Medicacao>[] = [
   { valor: "nao", rotulo: "Não" },
   { valor: "tirzepatida", rotulo: "Tirzepatida", detalhe: "ex.: Mounjaro" },
   { valor: "semaglutida", rotulo: "Semaglutida", detalhe: "ex.: Ozempic, Wegovy" },
+  { valor: "retatrutida", rotulo: "Retatrutida", detalhe: "ainda em estudo, sem marca" },
   { valor: "liraglutida", rotulo: "Liraglutida", detalhe: "ex.: Saxenda" },
   { valor: "outra", rotulo: "Outra" },
   { valor: "nao-informar", rotulo: "Prefiro não informar" },
@@ -161,9 +163,9 @@ export default function SimuladorEmagrecimento({ placement }: { placement: strin
     if (idade === null || altura === null || peso === null || !r.sexo || !r.rotina || r.treinos === null || !r.passos) return null;
     return {
       idade, sexo: r.sexo, alturaCm: altura, pesoKg: peso, metaKg: meta, rotina: r.rotina, treinos: r.treinos,
-      tipoTreino: r.treinos > 0 && r.tipoTreino ? r.tipoTreino : "musculacao", passos: r.passos, kcalDia: kcal,
+      tiposTreino: r.treinos > 0 ? r.tiposTreino : [], passos: r.passos, kcalDia: kcal,
     };
-  }, [idade, altura, peso, meta, kcal, r.sexo, r.rotina, r.treinos, r.tipoTreino, r.passos]);
+  }, [idade, altura, peso, meta, kcal, r.sexo, r.rotina, r.treinos, r.tiposTreino, r.passos]);
 
   /* ── Avançar com validação ── */
   function avancar() {
@@ -222,7 +224,7 @@ export default function SimuladorEmagrecimento({ placement }: { placement: strin
     trackEvent("scenario_changed", { placement, control: controle });
   }
 
-  const usaCaneta = r.medicacao === "tirzepatida" || r.medicacao === "semaglutida" || r.medicacao === "liraglutida" || r.medicacao === "outra";
+  const usaCaneta = r.medicacao === "tirzepatida" || r.medicacao === "semaglutida" || r.medicacao === "retatrutida" || r.medicacao === "liraglutida" || r.medicacao === "outra";
   const usaHormonio = r.hormonio === "reposicao" || r.hormonio === "desempenho" || r.hormonio === "outro";
   const clique = () => trackEvent("simulator_internal_tool_click", { placement });
 
@@ -296,8 +298,8 @@ export default function SimuladorEmagrecimento({ placement }: { placement: strin
               <Erro m={erros.treinos} />
               {r.treinos !== null && r.treinos > 0 && (
                 <>
-                  <p className="text-white text-sm font-semibold mt-6 mb-1.5">Que tipo de treino? <span className="text-gray-500 font-normal">(opcional)</span></p>
-                  <OptionCards nome="Tipo de treino" colunas={3} opcoes={TIPOS} valor={r.tipoTreino} onChange={(v) => set("tipoTreino", v)} />
+                  <p className="text-white text-sm font-semibold mt-6 mb-1.5">Que tipo de treino? <span className="text-gray-500 font-normal">(opcional — marque todos que fizer)</span></p>
+                  <MultiOptionCards nome="Tipo de treino" colunas={3} opcoes={TIPOS} valores={r.tiposTreino} onChange={(v) => set("tiposTreino", v)} />
                 </>
               )}
             </QuestionStep>
@@ -494,6 +496,9 @@ export default function SimuladorEmagrecimento({ placement }: { placement: strin
         <p className="text-gray-400 text-xs mt-2">Comparação feita pelo modelo com mudanças pequenas; não é recomendação médica.</p>
       </InsightCard>
 
+      {/* CAMADA 4b — por que essa alavanca pesa: estudos, prática e relatos, separados */}
+      {(ins ? ins.vencedor : imp[0]?.ganho > 0 ? imp[0] : null) && <PorQue id={(ins ? ins.vencedor : imp[0]).alavanca} />}
+
       {/* CAMADA 5 — explicação */}
       <div className="space-y-4 text-gray-300 leading-relaxed">
         <p><strong className="text-white">Emagrecimento não depende de perfeição.</strong> Com {Math.round(cen.consistencia * 100)}% de consistência, {Math.round((1 - cen.consistencia) * 7 * 10) / 10} dias por semana fogem do plano — e a curva continua descendo. O que trava o processo não é um dia ruim; é um dia ruim virar semanas fora da rotina.</p>
@@ -522,6 +527,9 @@ export default function SimuladorEmagrecimento({ placement }: { placement: strin
       </div>
 
       {usaCaneta && <Estudos />}
+
+      {/* CAMADA 5b — a jornada, de novo, com os ajustes que a pessoa fez */}
+      <Jornada perfil={perfil} cen={cen} pr={projCen} prAtual={projAtual} igual={igual} horizonte={horizonte} />
 
       {/* CAMADA 6 — CTA */}
       <div className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-6 relative" data-testid="cta-simulador">
@@ -559,7 +567,7 @@ export default function SimuladorEmagrecimento({ placement }: { placement: strin
       <MethodologyDrawer titulo="Como calculamos esta estimativa?" aberto={metodo}
         onToggle={() => { if (!metodo) trackEvent("simulator_methodology_opened", { placement }); setMetodo(!metodo); }}>
         <p>A cada dia simulado, o que você come menos o que seu corpo gasta vira variação de peso. O gasto é recalculado com o peso novo — é por isso que a curva desacelera.</p>
-        <p><strong className="text-white">Gasto de repouso:</strong> equação de Mifflin-St Jeor. <strong className="text-white">Rotina:</strong> um fator sobre o repouso ({perfil.rotina === "sentado" ? "1,25" : perfil.rotina === "em-pe" ? "1,4" : perfil.rotina === "ativo" ? "1,55" : "1,7"} no seu caso). <strong className="text-white">Treino:</strong> {TREINO[perfil.tipoTreino].rotulo}, {String(TREINO[perfil.tipoTreino].met).replace(".", ",")} MET por {TREINO[perfil.tipoTreino].minutos} minutos (Compêndio de Atividades Físicas 2024). <strong className="text-white">Passos a mais:</strong> custo da caminhada em ritmo moderado.</p>
+        <p><strong className="text-white">Gasto de repouso:</strong> equação de Mifflin-St Jeor. <strong className="text-white">Rotina:</strong> um fator sobre o repouso ({perfil.rotina === "sentado" ? "1,25" : perfil.rotina === "em-pe" ? "1,4" : perfil.rotina === "ativo" ? "1,55" : "1,7"} no seu caso). <strong className="text-white">Treino:</strong> {perfilTreino(perfil.tiposTreino).rotulo}, {perfilTreino(perfil.tiposTreino).met.toLocaleString("pt-BR", { maximumFractionDigits: 1 })} MET por {Math.round(perfilTreino(perfil.tiposTreino).minutos)} minutos (Compêndio de Atividades Físicas 2024; com mais de um tipo, a média deles). <strong className="text-white">Passos a mais:</strong> custo da caminhada em ritmo moderado.</p>
         <p><strong className="text-white">Gasto de partida estimado:</strong> {fmtN(projCen.manutencao)} kcal/dia. <strong className="text-white">Alimentação do cenário:</strong> {fmtN(projCen.ingestaoPlano)} kcal nos dias de plano{perfil.kcalDia === null ? " (déficit sobre o gasto estimado)" : " (a partir do que você informou)"}; nos outros dias, o que você comia antes.</p>
         <p><strong className="text-white">O que é perdido:</strong> parte gordura, parte massa magra, pela relação de Forbes — quem tem mais gordura perde proporcionalmente mais gordura. Cada quilo de gordura vale ~9.440 kcal; de massa magra, ~1.816. <strong className="text-white">Adaptação:</strong> o gasto cai um pouco além do que o peso explica (parâmetro do modelo de Hall, 2011).</p>
         <p><strong className="text-white">Faixa provável:</strong> o mesmo cenário com gasto 5% menor e 5% maior. <strong className="text-white">O modelo não considera</strong> medicamentos, hormônios, água e glicogênio das primeiras semanas, nem compensação de apetite. Projeções param em 12 meses.</p>
@@ -592,6 +600,86 @@ function Resumo({ titulo, c, pr, temMeta, destaque }: { titulo: string; c: Cenar
       <p className="text-white font-semibold mt-2 tabular-nums">
         {temMeta ? (pr.semanaMeta !== null ? `Meta em ~${fmtSemanas(pr.semanaMeta)}` : "Meta além de 12 meses") : `12 sem: ${fmtKgProj(pr.pontos[12].peso)}`}
       </p>
+    </div>
+  );
+}
+
+function PorQue({ id }: { id: "treino" | "passos" | "consistencia" }) {
+  const e = evidencia(id);
+  return (
+    <div className="border border-white/15 p-5 sm:p-6" data-testid="por-que">
+      <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-1" style={{ color: DOURADO }}>Por que {e.titulo.toLowerCase()} pesa tanto?</p>
+      <p className="text-white font-semibold mb-4" style={h}>{e.resumo}</p>
+      <div className="space-y-4 text-sm leading-relaxed">
+        <div>
+          <p className="text-gray-400 text-xs uppercase tracking-wide mb-1">O que os estudos mediram</p>
+          <ul className="text-gray-300 space-y-2">
+            {e.estudos.map((x) => (
+              <li key={x.ref.url}>{x.texto} <a href={x.ref.url} target="_blank" rel="noopener noreferrer" className="text-gray-500 underline underline-offset-2">{x.ref.rotulo}</a></li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <p className="text-gray-400 text-xs uppercase tracking-wide mb-1">O que a prática mostra</p>
+          <p className="text-gray-300">{e.pratica}</p>
+        </div>
+        <div>
+          <p className="text-gray-400 text-xs uppercase tracking-wide mb-1">O que as pessoas relatam</p>
+          <p className="text-gray-300">{e.relatos} <span className="text-gray-500">Relato não é evidência — é o sintoma que os estudos explicam.</span></p>
+        </div>
+        <div className="border-l-2 pl-3" style={{ borderColor: DOURADO }}>
+          <p className="text-gray-400 text-xs uppercase tracking-wide mb-1">O que fazer amanhã</p>
+          <p className="text-white">{e.acao}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * A jornada em marcos, com o cenário que a pessoa deixou nos controles.
+ * É o gráfico de novo, em outra forma: uma linha de "hoje → meta" com o
+ * peso em cada marco, e uma barra comparando o que sai em cada cenário.
+ */
+function Jornada({ perfil, cen, pr, prAtual, igual, horizonte }: { perfil: Perfil; cen: Cenario; pr: ReturnType<typeof projeta>; prAtual: ReturnType<typeof projeta>; igual: boolean; horizonte: number }) {
+  const temMeta = perfil.metaKg !== null;
+  const marcos = [0, 4, 8, 12, 26, 52].filter((s) => s <= horizonte);
+  if (temMeta && pr.semanaMeta !== null && pr.semanaMeta <= horizonte) marcos.push(-1);
+  const pesoEm = (p: ReturnType<typeof projeta>, s: number) => (s === -1 ? perfil.metaKg! : p.pontos[s].peso);
+  const rot = (s: number) => (s === -1 ? "Meta" : rotuloSemana(s));
+  const fim = horizonte >= 26 ? 26 : 12;
+  const perdaCen = perfil.pesoKg - pr.pontos[fim].peso, perdaAtual = perfil.pesoKg - prAtual.pontos[fim].peso;
+  const maxBarra = Math.max(perdaCen, perdaAtual, 0.1);
+  return (
+    <div className="border border-white/15 p-5 sm:p-6" data-testid="jornada">
+      <h3 className="text-xl font-bold text-white mb-1" style={h}>Sua jornada neste cenário</h3>
+      <p className="text-gray-400 text-sm mb-5">{cen.treinos}x treino · {fmtN(cen.passos)} passos · {Math.round(cen.consistencia * 100)}% de consistência. Pesos aproximados, de 0,5 em 0,5 kg.</p>
+      <ol className="flex overflow-x-auto gap-2 pb-2 -mx-1 px-1 snap-x" aria-label="Marcos da jornada">
+        {marcos.map((s, i) => (
+          <li key={s} className={`snap-start shrink-0 min-w-[92px] border p-3 text-center ${s === -1 ? "border-[#BA9E50]" : i === 0 ? "border-white/40" : "border-white/15"}`}>
+            <p className={`text-[11px] uppercase tracking-wide mb-1 ${s === -1 ? "text-[#BA9E50]" : "text-gray-400"}`}>{rot(s)}</p>
+            <p className="text-white font-bold tabular-nums">{fmtKgProj(pesoEm(pr, s))}</p>
+            {s === -1 && pr.semanaMeta !== null && <p className="text-gray-400 text-[11px] mt-1">~{fmtSemanas(pr.semanaMeta)}</p>}
+          </li>
+        ))}
+      </ol>
+      <div className="mt-5 space-y-2" aria-label={`Perda estimada em ${fim} semanas`}>
+        <p className="text-gray-400 text-xs uppercase tracking-wide">Perda estimada em {fim === 26 ? "6 meses" : `${fim} semanas`}</p>
+        {!igual && <Barra rotulo="Cenário de partida" valor={perdaAtual} max={maxBarra} cor="#6b7280" />}
+        <Barra rotulo={igual ? "Sua trajetória" : "Cenário ajustado"} valor={perdaCen} max={maxBarra} cor={DOURADO} />
+        {!igual && Math.abs(perdaCen - perdaAtual) >= 0.5 && (
+          <p className="text-gray-300 text-sm pt-1">Os ajustes {perdaCen > perdaAtual ? "somam" : "tiram"} cerca de <strong className="text-white">{fmtKg(Math.abs(perdaCen - perdaAtual))}</strong> nesse período.</p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function Barra({ rotulo, valor, max, cor }: { rotulo: string; valor: number; max: number; cor: string }) {
+  return (
+    <div>
+      <div className="flex justify-between text-sm mb-1"><span className="text-gray-300">{rotulo}</span><span className="text-white font-semibold tabular-nums">−{fmtKg(Math.max(0, valor))}</span></div>
+      <div className="h-2 bg-white/10"><div className="h-2 transition-all duration-300" style={{ width: `${Math.max(2, (Math.max(0, valor) / max) * 100)}%`, background: cor }} /></div>
     </div>
   );
 }

@@ -5,14 +5,15 @@ import { readFileSync, existsSync } from "fs";
  */
 import * as S from "../lib/simulador/emagrecimento";
 import { blogPosts } from "../lib/blog";
+import { EVIDENCIAS, REFERENCIAS_EVIDENCIAS } from "../lib/simulador/evidencias";
 
 let falhas = 0;
 const ok = (n: string, c: boolean, d = "") => { if (!c) { falhas++; console.log(`  FALHOU  ${n} ${d}`); } else console.log(`  ok      ${n}`); };
 const bloco = (t: string) => console.log("\n" + "=".repeat(64) + "\n" + t + "\n" + "=".repeat(64));
 const finito = (pr: S.Projecao) => pr.pontos.every((p) => [p.peso, p.min, p.max].every(Number.isFinite));
 
-const A: S.Perfil = { idade: 35, sexo: "m", alturaCm: 175, pesoKg: 90, metaKg: 80, rotina: "sentado", treinos: 3, tipoTreino: "musculacao", passos: "5a75", kcalDia: null };
-const B: S.Perfil = { idade: 40, sexo: "f", alturaCm: 162, pesoKg: 75, metaKg: 65, rotina: "sentado", treinos: 2, tipoTreino: "musculacao", passos: "3a5", kcalDia: null };
+const A: S.Perfil = { idade: 35, sexo: "m", alturaCm: 175, pesoKg: 90, metaKg: 80, rotina: "sentado", treinos: 3, tiposTreino: ["musculacao"], passos: "5a75", kcalDia: null };
+const B: S.Perfil = { idade: 40, sexo: "f", alturaCm: 162, pesoKg: 75, metaKg: 65, rotina: "sentado", treinos: 2, tiposTreino: ["musculacao"], passos: "3a5", kcalDia: null };
 const C: S.Perfil = { ...A, rotina: "fisico", passos: "gt10", treinos: 5 };
 const F: S.Perfil = { ...A, kcalDia: 2000 };
 
@@ -48,8 +49,12 @@ ok("piso feminino é 1.200 ou o repouso", S.ingestaoPlano({ ...B, kcalDia: 800 }
 
 bloco("3. MEDICAÇÃO E HORMÔNIO NÃO MUDAM A CURVA");
 ok("o Perfil não tem campo de medicação nem hormônio", !/medicacao|hormonio/i.test(readFileSync("lib/simulador/emagrecimento.ts", "utf8").match(/export interface Perfil \{[\s\S]*?\}/)![0]));
-ok("estudos: 3 ensaios com população, duração, dose, média e referência", S.ESTUDOS.length === 3 && S.ESTUDOS.every((e) => e.populacao && e.duracao && e.dose && e.resultado && e.comparacao && /^https:\/\//.test(e.url)));
+ok("estudos: 4 ensaios com população, duração, dose, média e referência", S.ESTUDOS.length === 4 && S.ESTUDOS.every((e) => e.populacao && e.duracao && e.dose && e.resultado && e.comparacao && /^https:\/\//.test(e.url)));
 ok("SURMOUNT-1 e STEP 1 com os números publicados", /20,9%/.test(S.ESTUDOS[0].resultado) && /14,9%/.test(S.ESTUDOS[1].resultado));
+const ret = S.ESTUDOS.find((e) => e.id === "retatrutida")!;
+ok("retatrutida: fase 2, 24,2%, e avisa que está em estudo", /24,2%/.test(ret.resultado) && /48 semanas/.test(ret.duracao) && /em estudo/.test(ret.marcas));
+ok("mais de um tipo de treino: média de MET e minutos", Math.abs(S.perfilTreino(["musculacao", "corrida"]).met - (3.5 + S.TREINO.corrida.met) / 2) < 1e-9 && S.perfilTreino([]).rotulo === "musculação" && /\+/.test(S.perfilTreino(["musculacao", "caminhada"]).rotulo));
+ok("combinar corrida com musculação gasta mais que só musculação", S.kcalTreinoDia(["musculacao", "corrida"], 3, 90) > S.kcalTreinoDia(["musculacao"], 3, 90));
 
 bloco("4. INSIGHT SÓ QUANDO A CONTA SUSTENTA");
 const imp = S.impactos(A, c0);
@@ -59,6 +64,14 @@ ok("vencedor claro gera insight", S.insight([{ alavanca: "passos", descricao: ""
 ok("ganho irrelevante não gera insight", S.insight([{ alavanca: "passos", descricao: "", ganho: 0.4, unidade: "semanas" }]) === null);
 const max = S.impactos(A, { treinos: 6, passos: 12500, consistencia: 1, comida: "moderado" });
 ok("cenário no teto: nada a testar", max.length === 0);
+
+bloco("4b. EVIDÊNCIAS: TRÊS CAMADAS, TODA AFIRMAÇÃO DE ESTUDO COM FONTE");
+ok("uma evidência por alavanca do insight", ["treino", "passos", "consistencia"].every((a) => EVIDENCIAS.some((e) => e.id === a)));
+ok("toda evidência tem estudo com URL, prática, relato e ação", EVIDENCIAS.every((e) => e.estudos.length > 0 && e.estudos.every((x) => /^https:\/\//.test(x.ref.url) && x.ref.rotulo.length > 20) && e.pratica.length > 120 && e.relatos.length > 80 && e.acao.length > 40));
+ok("nenhuma camada de prática/relato finge ser estudo", EVIDENCIAS.every((e) => !/\d{4};\d+/.test(e.pratica) && !/\d{4};\d+/.test(e.relatos)));
+ok("referências das evidências sem duplicata", new Set(REFERENCIAS_EVIDENCIAS.map((r) => r.url)).size === REFERENCIAS_EVIDENCIAS.length && REFERENCIAS_EVIDENCIAS.length >= 5);
+ok("o componente mostra o porquê da alavanca vencedora e a jornada final", /<PorQue id=\{\(ins \? ins\.vencedor : imp\[0\]\)\.alavanca\}/.test(readFileSync("components/simulador/SimuladorEmagrecimento.tsx", "utf8")) && /data-testid="jornada"/.test(readFileSync("components/simulador/SimuladorEmagrecimento.tsx", "utf8")));
+ok("a página publica as evidências em HTML (SEO) e as referências", /EVIDENCIAS\.map/.test(readFileSync("app/ferramentas/simulador-emagrecimento/page.tsx", "utf8")) && /REFERENCIAS_EVIDENCIAS/.test(readFileSync("app/ferramentas/simulador-emagrecimento/page.tsx", "utf8")));
 
 bloco("5. ENTRADAS E GUARDRAILS");
 ok("vírgula brasileira", S.parseNumero("82,5") === 82.5);
