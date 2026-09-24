@@ -285,7 +285,14 @@ export default async function BlogPost({ params }: Props) {
    * LinkFerramentaPolichinelo.
    */
   const linkPolichineloNoTopo = !qualCalc && ARTIGOS_COM_LINK_POLICHINELO.includes(post.slug);
-  const calcSplit = qualCalc || linkPolichineloNoTopo ? splitAtPrimeiraSecao(contentHtml) : null;
+  /**
+   * Simulador do Fim de Semana: nos artigos do registro, o convite entra
+   * logo depois da primeira seção — quem chega com "faço dieta a semana
+   * toda e não emagreço" quer testar o próprio caso, e no fim do texto o
+   * convite chegava tarde. O cartão do fim continua.
+   */
+  const linkFimDeSemanaNoTopo = !qualCalc && !linkPolichineloNoTopo && ARTIGOS_COM_LINK_FIM_DE_SEMANA.includes(post.slug);
+  const calcSplit = qualCalc || linkPolichineloNoTopo || linkFimDeSemanaNoTopo ? splitAtPrimeiraSecao(contentHtml) : null;
   const corpoRestante = calcSplit ? calcSplit.after : contentHtml;
 
   // Só divide o HTML se houver um CTA de meio E um ponto de corte editorial
@@ -442,6 +449,8 @@ export default async function BlogPost({ params }: Props) {
               <div className="my-10">
                 {linkPolichineloNoTopo ? (
                   <LinkFerramentaPolichinelo slug={post.slug} posicao="topo" />
+                ) : linkFimDeSemanaNoTopo ? (
+                  <LinkFerramentaSimulador slug={post.slug} qual="fimDeSemana" posicao="topo" />
                 ) : qualCalc === "proteina" ? (
                   <>
                     {/* Ressalva de contexto ANTES da ferramenta: quem lê o
