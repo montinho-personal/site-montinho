@@ -15,7 +15,7 @@
  */
 
 export interface Simulador {
-  id: "emagrecimento" | "massa" | "shape12";
+  id: "emagrecimento" | "massa" | "shape12" | "fim-de-semana";
   href: string;
   nome: string;
   /** A pergunta de quem chega — é o que a pessoa escolhe. */
@@ -74,11 +74,25 @@ export const SIMULADORES: Simulador[] = [
     tempo: "2 minutos",
     acao: "Simular minhas 12 semanas",
   },
+  {
+    id: "fim-de-semana",
+    href: "/ferramentas/simulador-fim-de-semana",
+    nome: "Simulador do Fim de Semana",
+    pergunta: "Meu fim de semana anula minha dieta",
+    paraQuem: "Para quem faz tudo certo de segunda a sexta e quer saber o que sábado e domingo fazem com a semana.",
+    entrega: [
+      "O saldo dos seus sete dias: quanto a semana construiu e quanto sobrou",
+      "Onde o fim de semana pesou: sexta, sábado, domingo, bebidas ou movimento",
+      "A menor mudança com o maior impacto no seu cenário",
+      "Por que a balança de segunda engana",
+    ],
+    tempo: "1 minuto",
+    acao: "Simular meu fim de semana",
+  },
 ];
 
 /** O que vem depois. Sem link: intenção declarada, não página vazia. */
 export const PROXIMOS_SIMULADORES = [
-  { nome: "Simulador do Fim de Semana", pergunta: "Quanto o sábado e o domingo desfazem da minha semana?" },
   { nome: "Simulador de Frequência", pergunta: "Treinar 2, 3 ou 4 vezes — o que muda no meu caso?" },
   { nome: "Simulador de Consistência", pergunta: "Quanto um mês fora da rotina custa de verdade?" },
 ];

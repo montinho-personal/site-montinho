@@ -54,6 +54,7 @@ import { ARTIGOS_COM_CALCULADORA_WHEY, ARTIGOS_COM_LINK_WHEY } from "../lib/whey
 import { ARTIGOS_COM_LINK_SIMULADOR } from "../lib/simulador/emagrecimento";
 import { ARTIGOS_COM_LINK_SIMULADOR_MASSA } from "../lib/simulador/massa";
 import { ARTIGOS_COM_LINK_SHAPE12 } from "../lib/simulador/shape12";
+import { ARTIGOS_COM_LINK_FIM_DE_SEMANA } from "../lib/simulador/fim-de-semana";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -109,6 +110,7 @@ const REGISTROS: [string, string[]][] = [
   ["simulador (link)", ARTIGOS_COM_LINK_SIMULADOR],
   ["simulador massa (link)", ARTIGOS_COM_LINK_SIMULADOR_MASSA],
   ["shape 12 semanas (link)", ARTIGOS_COM_LINK_SHAPE12],
+  ["simulador fim de semana (link)", ARTIGOS_COM_LINK_FIM_DE_SEMANA],
 ];
 
 const onde = new Map<string, string>();

@@ -293,6 +293,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     selo: "novo",
   },
   {
+    id: "fim-de-semana",
+    href: "/ferramentas/simulador-fim-de-semana",
+    nome: "Simulador do Fim de Semana",
+    resultado: "Veja quanto do déficit da semana sábado e domingo consomem — e o que mudaria com uma coisa só.",
+    acao: "Simular meu fim de semana",
+    tempo: "1 minuto",
+    categoria: "emagrecimento",
+    icone: "corpo",
+    tags: ["simulador", "fim de semana", "estraga a dieta", "sabado e domingo", "refeicao livre", "dia do lixo", "cheat meal", "cerveja", "alcool", "deficit semanal", "engordei no fim de semana"],
+    selo: "novo",
+  },
+  {
     id: "volume",
     href: "/ferramentas/calculadora-volume-treino",
     nome: "Calculadora de Volume de Treino",

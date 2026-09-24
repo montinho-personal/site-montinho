@@ -619,7 +619,24 @@ export type AnalyticsEvent =
   | "shape12_methodology_open"
   | "shape12_share"
   | "shape12_internal_tool_click"
-  | "shape12_whatsapp_click";
+  | "shape12_whatsapp_click"
+  /**
+   * Simulador do Fim de Semana. Só interação: etapa, controle mexido,
+   * grupo do item adicionado (refeição/extra/bebida). Nunca calorias,
+   * peso, bebidas contadas, medicação, idade ou sexo.
+   */
+  | "weekend_simulator_view"
+  | "weekend_simulator_start"
+  | "weekend_step_complete"
+  | "weekend_simulation_complete"
+  | "weekend_scenario_changed"
+  | "weekend_food_added"
+  | "weekend_alcohol_module_used"
+  | "weekend_comparison_viewed"
+  | "weekend_methodology_open"
+  | "weekend_internal_tool_click"
+  | "weekend_share_clicked"
+  | "weekend_whatsapp_click";
 
 export interface EventParams {
   [key: string]: string | number | boolean | undefined;
