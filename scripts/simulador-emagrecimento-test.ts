@@ -65,6 +65,10 @@ ok("ganho irrelevante não gera insight", S.insight([{ alavanca: "passos", descr
 const max = S.impactos(A, { treinos: 6, passos: 12500, consistencia: 1, comida: "moderado" });
 ok("cenário no teto: nada a testar", max.length === 0);
 
+ok("tipos novos com MET das calculadoras do site", S.TREINO.natacao.met === 5.8 && S.TREINO.pilates.met === 3.0 && S.TREINO.yoga.met === 2.5 && S.TREINO.bike.met === 8.5 && S.TREINO.crossfit.met > 3.5 && S.TREINO.crossfit.met < 8);
+const compTipos = readFileSync("components/simulador/SimuladorEmagrecimento.tsx", "utf8");
+ok("todo tipo oferecido existe no motor", [...compTipos.matchAll(/valor: "(\w+)", rotulo: "[^"]+" \}/g)].map((m) => m[1]).filter((v) => ["musculacao","caminhada","corrida","bike","natacao","crossfit","funcional","lutas","danca","pilates","yoga","esportes"].includes(v)).length === 12);
+
 bloco("4b. EVIDÊNCIAS: TRÊS CAMADAS, TODA AFIRMAÇÃO DE ESTUDO COM FONTE");
 ok("uma evidência por alavanca do insight", ["treino", "passos", "consistencia"].every((a) => EVIDENCIAS.some((e) => e.id === a)));
 ok("toda evidência tem estudo com URL, prática, relato e ação", EVIDENCIAS.every((e) => e.estudos.length > 0 && e.estudos.every((x) => /^https:\/\//.test(x.ref.url) && x.ref.rotulo.length > 20) && e.pratica.length > 120 && e.relatos.length > 80 && e.acao.length > 40));
@@ -113,6 +117,16 @@ const chart = readFileSync("components/simulador/ProjectionChart.tsx", "utf8");
 ok("gráfico com alternativa textual (tabela)", /role="img"/.test(chart) && /<div className="sr-only"><table>/.test(chart));
 ok("marcos acessíveis por botão (sem depender de hover)", /aria-pressed/.test(chart) && !/onMouseEnter|onMouseOver/.test(chart));
 ok("erros com role=alert", /role="alert"/.test(readFileSync("components/simulador/ui.tsx", "utf8")));
+
+bloco("7b. LEITURA NO CELULAR");
+const pg = readFileSync("app/ferramentas/simulador-emagrecimento/page.tsx", "utf8");
+ok("seções editoriais recolhíveis, com o H2 no summary", (pg.match(/<Secao titulo=/g) ?? []).length >= 10 && /<summary[^>]*>\s*<h2/.test(pg));
+ok("evidências recolhíveis na página e no resultado", /<details key=\{e\.id\}/.test(pg) && /<Dobra titulo="O que os estudos mediram">/.test(compTipos));
+ok("resultado dos ajustes logo abaixo dos controles", compTipos.indexOf("<Jornada ") > compTipos.indexOf('data-testid="cenarios"') && compTipos.indexOf("<Jornada ") < compTipos.indexOf("CAMADA 4 — insight"));
+ok("eixo do gráfico não sobrepõe rótulos", /rotulosVisiveis/.test(chart));
+const pos = readFileSync("components/ferramentas/PosResultado.tsx", "utf8");
+ok("fechamento no pós-resultado, só com WhatsApp", /fechamento && \(whats \|\| bloco\.secundaria\?\.destino === "whatsapp"\)/.test(pos));
+ok("fechamento nas 5 ferramentas de emagrecimento", ["calorias/CalculadoraDeficit","meta/CalculadoraMeta","glp1/CalculadoraGLP1","composicao/CalculadoraComposicao","tdee/CalculadoraTDEE"].every((c) => /<PosResultado[^>]*?\bfechamento\b/.test(readFileSync(`components/${c}.tsx`, "utf8"))));
 
 bloco("8. PÁGINA E REGISTROS");
 const page = readFileSync("app/ferramentas/simulador-emagrecimento/page.tsx", "utf8");

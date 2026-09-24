@@ -12,6 +12,7 @@ import {
   type Ferramenta,
 } from "@/lib/ferramentas/historico";
 import { blocoPosResultado, type Bloco, type Variante } from "@/lib/ferramentas/pos-resultado";
+import { FECHAMENTO_COMPARACAO } from "@/lib/filosofia";
 
 /**
  * O bloco que vem depois do resultado de uma ferramenta.
@@ -52,6 +53,13 @@ interface Props {
    * exposição — mas a conclusão entra no histórico do mesmo jeito.
    */
   ocultaNoEstagio?: Estagio;
+  /**
+   * Abre o bloco com a palavra do Montinho (nunca se comparar, achar a
+   * estratégia que dá para seguir) — a isca do WhatsApp. Só aparece quando
+   * o bloco tem WhatsApp; empurrar a frase antes de um link para outra
+   * ferramenta tiraria dela o sentido de convite.
+   */
+  fechamento?: boolean;
 }
 
 const CH_VARIANTE = "montinho:ab:pos-ferramenta";
@@ -79,7 +87,7 @@ interface Montado {
 
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 
-export default function PosResultado({ ferramenta, categoria = "padrao", resumo = null, placement, aoContinuar, ocultaNoEstagio }: Props) {
+export default function PosResultado({ ferramenta, categoria = "padrao", resumo = null, placement, aoContinuar, ocultaNoEstagio, fechamento = false }: Props) {
   const [m, setM] = useState<Montado | null>(null);
 
   /*
@@ -157,6 +165,15 @@ export default function PosResultado({ ferramenta, categoria = "padrao", resumo 
       className="relative border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-6 sm:p-8 mt-8"
     >
       <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: "#BA9E50" }} aria-hidden="true" />
+      {fechamento && (whats || bloco.secundaria?.destino === "whatsapp") && (
+        <div className="mb-6 pb-6 border-b border-white/10" data-testid="fechamento">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#BA9E50" }}>{FECHAMENTO_COMPARACAO.titulo}</p>
+          <div className="space-y-3">
+            {FECHAMENTO_COMPARACAO.paragrafos.map((t) => <p key={t} className="text-white leading-relaxed">{t}</p>)}
+            <p className="text-gray-400 text-sm">— Montinho</p>
+          </div>
+        </div>
+      )}
       <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#BA9E50" }}>
         O que fazer com isso
       </p>

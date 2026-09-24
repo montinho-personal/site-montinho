@@ -100,6 +100,23 @@ const th = "text-left text-gray-400 font-medium py-2.5 pr-4";
 const td = "text-gray-300 py-2.5 pr-4 tabular-nums";
 const cta = "text-gray-300 text-sm underline underline-offset-4 decoration-1 hover:text-white min-h-[44px] inline-flex items-center";
 
+/**
+ * Seção editorial recolhível. O H2 fica dentro do summary, e o corpo fica no
+ * HTML desde o primeiro byte — o Google indexa conteúdo recolhido, e o
+ * leitor no celular vê o índice da página em vez de um paredão de texto.
+ */
+function Secao({ titulo, id, aberto, children }: { titulo: string; id?: string; aberto?: boolean; children: React.ReactNode }) {
+  return (
+    <details id={id} open={aberto} className="group border-b border-white/10 pb-2 scroll-mt-24">
+      <summary className="cursor-pointer list-none flex items-start justify-between gap-4 py-3 min-h-[56px]">
+        <h2 className="text-xl sm:text-2xl font-bold text-white" style={h}>{titulo}</h2>
+        <span aria-hidden="true" className="shrink-0 mt-1 text-[#BA9E50] text-2xl leading-none transition-transform group-open:rotate-45">+</span>
+      </summary>
+      <div className="pt-2 pb-4">{children}</div>
+    </details>
+  );
+}
+
 export default function SimuladorEmagrecimentoPage() {
   return (
     <>
@@ -135,14 +152,13 @@ export default function SimuladorEmagrecimentoPage() {
       </section>
 
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div className="border-l-2 pl-4" style={{ borderColor: "#BA9E50" }}>
             <p className="text-white text-lg font-semibold" style={h}>Emagrecimento não depende de perfeição.</p>
             <p className="text-gray-300 leading-relaxed mt-1">Depende de acumular boas decisões durante tempo suficiente. Um dia ruim não destrói o processo — o problema é transformar um erro pequeno em semanas fora da rotina.</p>
           </div>
 
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Como funciona o Simulador de Emagrecimento?</h2>
+          <Secao titulo="Como funciona o Simulador de Emagrecimento?" aberto>
             <p className="text-gray-300 leading-relaxed mb-3">
               Uma calculadora responde “quanto?”. O simulador responde <strong className="text-white">“se eu continuar assim, o que tende a acontecer?”</strong> — e,
               principalmente, <strong className="text-white">qual mudança teria mais impacto</strong>. Você responde sete perguntas curtas (objetivo, dados básicos, meta,
@@ -152,10 +168,9 @@ export default function SimuladorEmagrecimentoPage() {
               Depois, você mexe em treinos por semana, passos, consistência e alimentação, e a curva muda na hora ao lado do cenário de partida. No fim, o
               simulador testa sozinho três ajustes pequenos e diz qual deles mexeria mais na sua projeção.
             </p>
-          </div>
+          </Secao>
 
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto tempo leva para emagrecer?</h2>
+          <Secao titulo="Quanto tempo leva para emagrecer?">
             <p className="text-gray-300 leading-relaxed mb-3">
               <strong className="text-white">Semanas para os primeiros quilos, meses para metas maiores.</strong> No exemplo de referência do simulador — homem de 35 anos,
               1,75 m, {REF.pesoKg} kg, trabalho sentado, três treinos por semana, alimentação com déficit moderado e 75% de consistência —, a projeção é de
@@ -167,10 +182,9 @@ export default function SimuladorEmagrecimentoPage() {
               <Link href="/ferramentas/meta-de-peso" className={ln}>Calculadora de Meta de Peso</Link>; para saber quanto comer, a{" "}
               <Link href="/ferramentas/calculadora-deficit-calorico" className={ln}>Calculadora de Déficit Calórico</Link>.
             </p>
-          </div>
+          </Secao>
 
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto tempo pode levar para perder 5 kg ou 10 kg?</h2>
+          <Secao titulo="Quanto tempo pode levar para perder 5 kg ou 10 kg?">
             <p className="text-gray-300 leading-relaxed mb-4">
               <strong className="text-white">No exemplo de referência, 5 kg levam {txt(T5.c75)} com 75% de consistência e {txt(T5.c90)} com 90%; 10 kg levam {txt(T10.c75)} e {txt(T10.c90)}.</strong>{" "}
               A tabela mostra como a consistência muda o prazo mais do que parece. Seus números são diferentes — o simulador faz a conta com os seus.
@@ -192,10 +206,9 @@ export default function SimuladorEmagrecimentoPage() {
               </table>
             </div>
             <p className="text-gray-500 text-xs mt-3">Exemplo: homem, 35 anos, 1,75 m, {REF.pesoKg} kg, trabalho sentado, 3 treinos de musculação por semana, déficit de 20% nos dias de plano. Projeções param em 12 meses.</p>
-          </div>
+          </Secao>
 
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Por que a perda de peso não é linear?</h2>
+          <Secao titulo="Por que a perda de peso não é linear?">
             <p className="text-gray-300 leading-relaxed mb-3">
               <strong className="text-white">Porque o gasto do corpo cai junto com o peso.</strong> A regra de “7.700 kcal por quilo”, multiplicada para sempre, supõe
               que você gasta o mesmo no mês 1 e no mês 6. Não gasta: um corpo mais leve precisa de menos energia, e o organismo ainda reduz um pouco o gasto além
@@ -207,10 +220,9 @@ export default function SimuladorEmagrecimentoPage() {
               o número de uma manhã. Quando a curva parece parar de vez, leia sobre o{" "}
               <Link href="/blog/plato-do-emagrecimento-como-quebrar" className={ln}>platô do emagrecimento</Link>.
             </p>
-          </div>
+          </Secao>
 
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>O que muda quando você aumenta sua atividade física?</h2>
+          <Secao titulo="O que muda quando você aumenta sua atividade física?">
             <p className="text-gray-300 leading-relaxed mb-3">
               <strong className="text-white">Mais do que a maioria espera nos passos, menos do que se imagina no treino.</strong> Uma sessão de musculação gasta
               relativamente pouco além do repouso; andar 2.500 passos a mais todo dia soma quase o mesmo por semana — e acontece sete dias, não três. No simulador,
@@ -218,10 +230,9 @@ export default function SimuladorEmagrecimentoPage() {
               <Link href="/ferramentas/calculadora-calorias-caminhada" className={ln}>calculadora de calorias da caminhada</Link>, e leia se{" "}
               <Link href="/blog/10-mil-passos-por-dia-emagrece" className={ln}>10 mil passos por dia emagrecem</Link>.
             </p>
-          </div>
+          </Secao>
 
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Musculação ajuda durante o emagrecimento?</h2>
+          <Secao titulo="Musculação ajuda durante o emagrecimento?">
             <p className="text-gray-300 leading-relaxed">
               <strong className="text-white">Ajuda, e o motivo principal não é gastar calorias.</strong> No déficit, o corpo perde gordura e também um pouco de massa
               magra. O treino de força dá ao músculo um motivo para ficar, e a proteína adequada dá o material. O resultado é que o peso perdido tende a ser mais
@@ -229,21 +240,22 @@ export default function SimuladorEmagrecimentoPage() {
               <Link href="/blog/como-perder-gordura-sem-perder-massa-muscular" className={ln}>como perder gordura sem perder massa muscular</Link> e calcule sua meta
               na <Link href="/ferramentas/calculadora-de-proteina" className={ln}>Calculadora de Proteína</Link>.
             </p>
-          </div>
+          </Secao>
 
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-2" style={h}>O que decide o resultado: estudos, prática e relatos</h2>
+          <Secao titulo="O que decide o resultado: estudos, prática e relatos">
             <p className="text-gray-300 leading-relaxed mb-6">
               O simulador aponta qual alavanca mexe mais na sua curva. Aqui está o que sustenta cada uma — em três camadas separadas de propósito:
               o que os <strong className="text-white">estudos</strong> mediram, o que a <strong className="text-white">prática</strong> de quem acompanha alunos
               observa, e o que as pessoas <strong className="text-white">relatam</strong> na internet. Relato não é evidência; é o sintoma que os estudos explicam.
             </p>
-            <div className="space-y-8">
+            <div className="space-y-3">
               {EVIDENCIAS.map((e) => (
-                <article key={e.id} className="border border-white/15 p-5">
-                  <h3 className="text-xl font-bold text-white mb-1" style={h}>{e.titulo}</h3>
-                  <p className="text-gray-300 mb-4">{e.resumo}</p>
-                  <div className="space-y-3 text-sm leading-relaxed">
+                <details key={e.id} className="group border border-white/15 open:border-[#BA9E50]/40">
+                  <summary className="cursor-pointer list-none flex items-start justify-between gap-4 p-5 min-h-[56px]">
+                    <span><span className="block text-lg font-bold text-white" style={h}>{e.titulo}</span><span className="block text-gray-400 text-sm mt-1">{e.resumo}</span></span>
+                    <span aria-hidden="true" className="shrink-0 text-[#BA9E50] text-2xl leading-none transition-transform group-open:rotate-45">+</span>
+                  </summary>
+                  <div className="space-y-3 text-sm leading-relaxed px-5 pb-5">
                     <div>
                       <p className="text-gray-400 text-xs uppercase tracking-wide mb-1">Estudos</p>
                       <ul className="text-gray-300 space-y-2">
@@ -254,13 +266,12 @@ export default function SimuladorEmagrecimentoPage() {
                     <div><p className="text-gray-400 text-xs uppercase tracking-wide mb-1">Relatos</p><p className="text-gray-300">{e.relatos}</p></div>
                     <div className="border-l-2 pl-3" style={{ borderColor: "#BA9E50" }}><p className="text-gray-400 text-xs uppercase tracking-wide mb-1">O que fazer amanhã</p><p className="text-white">{e.acao}</p></div>
                   </div>
-                </article>
+                </details>
               ))}
             </div>
-          </div>
+          </Secao>
 
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Emagrecimento com Mounjaro, Wegovy ou outras canetas é diferente?</h2>
+          <Secao titulo="Emagrecimento com Mounjaro, Wegovy ou outras canetas é diferente?">
             <p className="text-gray-300 leading-relaxed mb-3">
               <strong className="text-white">O mecanismo muda; os princípios, não.</strong> Tirzepatida (um agonista duplo GIP/GLP-1, ex.: Mounjaro) e semaglutida (um
               agonista de GLP-1, ex.: Ozempic e Wegovy) reduzem apetite e ingestão, e por isso a perda costuma ser maior do que só com mudança de estilo de vida.
@@ -277,20 +288,18 @@ export default function SimuladorEmagrecimentoPage() {
               <Link href="/ferramentas/massa-magra-glp1" className={ln}>Massa Magra no GLP-1</Link> e veja{" "}
               <Link href="/blog/musculacao-durante-uso-de-mounjaro" className={ln}>musculação durante o uso de Mounjaro</Link>.
             </p>
-          </div>
+          </Secao>
 
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>O peso pode parar mesmo quando o corpo está mudando?</h2>
+          <Secao titulo="O peso pode parar mesmo quando o corpo está mudando?">
             <p className="text-gray-300 leading-relaxed">
               <strong className="text-white">Pode, principalmente em quem começou a treinar.</strong> Músculo novo, glicogênio reposto e água retida pelo treino
               podem compensar na balança a gordura que saiu. É a{" "}
               <Link href="/blog/recomposicao-corporal" className={ln}>recomposição corporal</Link> — e é por isso que o simulador não termina na balança. Leia{" "}
               <Link href="/blog/balanca-nao-muda-mas-o-corpo-muda" className={ln}>a balança não muda, mas o corpo muda</Link>.
             </p>
-          </div>
+          </Secao>
 
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Como acompanhar o emagrecimento além da balança?</h2>
+          <Secao titulo="Como acompanhar o emagrecimento além da balança?">
             <ul className="text-gray-300 leading-relaxed space-y-2 list-disc pl-5">
               <li><strong className="text-white">Peso em tendência:</strong> pese-se nas mesmas condições e compare médias semanais, não dias.</li>
               <li><strong className="text-white">Cintura:</strong> fita na altura do umbigo, a cada duas semanas.</li>
@@ -299,10 +308,9 @@ export default function SimuladorEmagrecimentoPage() {
               <li><strong className="text-white">Composição corporal:</strong> quando houver avaliação, traduza o percentual na{" "}
                 <Link href="/ferramentas/composicao-corporal" className={ln}>Calculadora de Composição Corporal</Link>.</li>
             </ul>
-          </div>
+          </Secao>
 
-          <div id="metodologia" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Como calculamos sua projeção?</h2>
+          <Secao titulo="Como calculamos sua projeção?" id="metodologia">
             <p className="text-gray-300 leading-relaxed mb-3">
               O simulador usa um <strong className="text-white">modelo de balanço energético dinâmico simplificado</strong>, inspirado no modelo de Hall e colegas
               (The Lancet, 2011) que sustenta o Body Weight Planner do NIH/NIDDK. Ele não é o modelo completo do NIH: é uma versão transparente, que roda no seu
@@ -324,7 +332,7 @@ export default function SimuladorEmagrecimentoPage() {
               compensação de apetite quando o treino aumenta. Vale para adultos; não roda para menores de 18 anos, gestantes, lactantes ou metas abaixo de IMC 18,5.
               Projeções param em 12 meses.
             </p>
-          </div>
+          </Secao>
 
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="border border-white/15 p-5">

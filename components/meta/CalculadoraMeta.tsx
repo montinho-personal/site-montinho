@@ -314,7 +314,7 @@ export default function CalculadoraMeta({ placement }: { placement: string }) {
               )}
             </div>
 
-            <PosResultado ferramenta="meta" categoria={veredito ?? "padrao"} resumo={resumoWhats} placement={placement} />
+            <PosResultado fechamento ferramenta="meta" categoria={veredito ?? "padrao"} resumo={resumoWhats} placement={placement} />
           </div>
         )}
       </div>

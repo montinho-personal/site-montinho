@@ -691,6 +691,7 @@ export default function CalculadoraDeficit({
               {/* Próximo passo — só depois de todo o resultado entregue */}
               <PosResultado
                 ferramenta="deficit"
+                fechamento
                 ocultaNoEstagio="proxima"
                 categoria={faixaSel}
                 resumo={(() => {
