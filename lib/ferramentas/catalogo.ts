@@ -269,6 +269,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["divisao de treino", "como dividir meu treino", "abc", "abcd", "push pull legs", "ppl", "upper lower", "full body", "quantos dias treinar", "montar treino", "ficha de treino", "treino semanal"],
   },
   {
+    id: "simulador-massa",
+    href: "/ferramentas/simulador-ganho-massa-muscular",
+    nome: "Simulador de Ganho de Massa Muscular",
+    resultado: "Veja quanto tempo pode levar para ganhar peso, compare ritmos e descubra o que está limitando.",
+    acao: "Simular meu ganho",
+    tempo: "1 minuto",
+    categoria: "treino",
+    icone: "corpo",
+    tags: ["simulador", "ganhar massa", "ganhar peso", "sou magro", "nao consigo engordar", "quanto tempo para ganhar massa", "bulking", "superavit", "hipertrofia", "hardgainer", "ectomorfo"],
+    selo: "novo",
+  },
+  {
     id: "volume",
     href: "/ferramentas/calculadora-volume-treino",
     nome: "Calculadora de Volume de Treino",

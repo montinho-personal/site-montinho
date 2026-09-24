@@ -277,6 +277,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/ferramentas/simulador-ganho-massa-muscular`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/ferramentas/monte-seu-cardapio`,
       lastModified: new Date(),
       changeFrequency: "monthly",

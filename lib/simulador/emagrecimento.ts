@@ -248,6 +248,9 @@ export const kcalTreinoDia = (tipos: TipoTreino[], sessoesSemana: number, pesoKg
   return (sessoesSemana * kcalPorMinuto(t.met - 1, pesoKg) * t.minutos) / 7;
 };
 
+/** kcal/min de um treino a um MET líquido dado — a mesma conta das calculadoras do site. */
+export const kcalPorMinutoTreino = (metLiquido: number, pesoKg: number) => kcalPorMinuto(metLiquido, pesoKg);
+
 export const kcalPassosExtra = (passosExtra: number, pesoKg: number) =>
   (kcalPorMinuto(MET_PASSO - 1, pesoKg) * passosExtra) / PASSOS_POR_MIN;
 

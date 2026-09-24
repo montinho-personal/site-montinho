@@ -52,6 +52,7 @@ import { ARTIGOS_COM_CALCULADORA_HYROX } from "../lib/hyrox";
 import { ARTIGOS_COM_CALCULADORA_CREATINA, ARTIGOS_COM_LINK_CREATINA } from "../lib/creatina";
 import { ARTIGOS_COM_CALCULADORA_WHEY, ARTIGOS_COM_LINK_WHEY } from "../lib/whey";
 import { ARTIGOS_COM_LINK_SIMULADOR } from "../lib/simulador/emagrecimento";
+import { ARTIGOS_COM_LINK_SIMULADOR_MASSA } from "../lib/simulador/massa";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -105,6 +106,7 @@ const REGISTROS: [string, string[]][] = [
   ["whey", ARTIGOS_COM_CALCULADORA_WHEY],
   ["whey (link)", ARTIGOS_COM_LINK_WHEY],
   ["simulador (link)", ARTIGOS_COM_LINK_SIMULADOR],
+  ["simulador massa (link)", ARTIGOS_COM_LINK_SIMULADOR_MASSA],
 ];
 
 const onde = new Map<string, string>();

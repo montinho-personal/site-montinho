@@ -150,3 +150,15 @@ export function MethodologyDrawer({ aberto, onToggle, titulo, children }: { aber
     </div>
   );
 }
+
+/** Um item recolhível, com o mesmo + dourado do FAQ do site. */
+export function Dobra({ titulo, children }: { titulo: string; children: ReactNode }) {
+  return (
+    <details className="group border border-white/12 open:border-[#BA9E50]/40">
+      <summary className="cursor-pointer list-none flex items-center justify-between gap-3 px-4 py-3 min-h-[48px] text-white font-semibold">
+        {titulo}<span aria-hidden="true" className="text-[#BA9E50] text-xl leading-none transition-transform group-open:rotate-45">+</span>
+      </summary>
+      <div className="px-4 pb-4">{children}</div>
+    </details>
+  );
+}
