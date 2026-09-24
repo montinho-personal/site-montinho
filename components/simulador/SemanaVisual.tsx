@@ -141,12 +141,21 @@ export function WeekendBuilder({ dia, eventos, onChange, grupos = ["refeicao", "
         <div key={g} className="mb-3">
           <p className="text-gray-400 text-xs uppercase tracking-wide mb-1.5">{ROTULO_GRUPO[g]}</p>
           <div className="flex flex-wrap gap-2">
-            {ITENS.filter((i) => i.grupo === g).map((i) => (
-              <button key={i.id} type="button" onClick={() => add(i.id)} className="border border-white/20 text-gray-200 px-3 py-2 min-h-[44px] text-sm hover:border-white/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#BA9E50]">+ {i.rotulo}</button>
-            ))}
+              {ITENS.filter((i) => i.grupo === g).map((i) => {
+                // Selecionado = já está no dia: borda e fundo dourados, ✓ e a quantidade no próprio botão.
+                const qtd = doDia.filter((e) => e.itemId === i.id).reduce((a, e) => a + e.qtd, 0);
+                const sel = qtd > 0;
+                return (
+                  <button key={i.id} type="button" onClick={() => add(i.id)} aria-label={sel ? `${i.rotulo}: ${qtd} adicionado${qtd > 1 ? "s" : ""}. Tocar adiciona mais um` : `Adicionar ${i.rotulo}`}
+                    className={`border px-3 py-2 min-h-[44px] text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#BA9E50] ${sel ? "border-[#BA9E50] bg-[#BA9E50]/15 text-white font-semibold" : "border-white/20 text-gray-200 hover:border-white/50"}`}>
+                    {sel ? <><span aria-hidden="true" style={{ color: DOURADO }}>✓</span> {i.rotulo} <span className="ml-1 inline-flex items-center justify-center min-w-[22px] h-[22px] px-1 text-xs text-black tabular-nums" style={{ background: DOURADO }}>×{qtd}</span></> : <>+ {i.rotulo}</>}
+                  </button>
+                );
+              })}
           </div>
         </div>
       ))}
+      <p className="sr-only" aria-live="polite">{doDia.map((e) => `${item(e.itemId).rotulo} ×${e.qtd}`).join(", ")}</p>
       {doDia.length > 0 && (
         <div className="space-y-2 mt-4">
           <p className="text-white text-sm font-semibold">No seu {ROTULO_DIAFDS[dia]}:</p>
