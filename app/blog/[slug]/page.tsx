@@ -46,9 +46,8 @@ import { ARTIGOS_COM_CALCULADORA_CAMINHADA, ARTIGOS_COM_LINK_CAMINHADA } from "@
 import CalculadoraCaminhada from "@/components/caminhada/CalculadoraCaminhada";
 import { ARTIGOS_COM_CALCULADORA_ELIPTICO } from "@/lib/eliptico";
 import CalculadoraEliptico from "@/components/eliptico/CalculadoraEliptico";
-import { ARTIGOS_COM_CALCULADORA_ATIVIDADES, ARTIGOS_COM_LINK_ATIVIDADES, atividadeDoArtigo } from "@/lib/atividades";
-import CalculadoraAtividades from "@/components/atividades/CalculadoraAtividades";
-import LinkFerramentaAtividades from "@/components/atividades/LinkFerramentaAtividades";
+import { ARTIGOS_COM_CALCULADORA_BICICLETA } from "@/lib/bicicleta";
+import CalculadoraBicicleta from "@/components/bicicleta/CalculadoraBicicleta";
 import { ARTIGOS_COM_CALCULADORA_CORRIDA } from "@/lib/corrida";
 import CalculadoraCorrida from "@/components/corrida/CalculadoraCorrida";
 import { ARTIGOS_COM_CALCULADORA_GLP1 } from "@/lib/glp1";
@@ -230,8 +229,8 @@ export default async function BlogPost({ params }: Props) {
                   ? "caminhada"
                   : ARTIGOS_COM_CALCULADORA_ELIPTICO.includes(post.slug)
                     ? "eliptico"
-                    : ARTIGOS_COM_CALCULADORA_ATIVIDADES.includes(post.slug)
-                      ? "atividades"
+                    : ARTIGOS_COM_CALCULADORA_BICICLETA.includes(post.slug)
+                      ? "bicicleta"
                       : ARTIGOS_COM_CALCULADORA_CORRIDA.includes(post.slug)
                         ? "corrida"
                         : ARTIGOS_COM_CALCULADORA_GLP1.includes(post.slug)
@@ -468,10 +467,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraCaminhada placement={post.slug} />
                 ) : qualCalc === "eliptico" ? (
                   <CalculadoraEliptico placement={post.slug} />
-                ) : qualCalc === "atividades" ? (
-                  /* A atividade do artigo já vem escolhida: quem lê sobre boxe
-                     não deveria procurar "boxe" numa lista de dez. */
-                  <CalculadoraAtividades placement={post.slug} atividadeInicial={atividadeDoArtigo(post.slug)?.id} />
+                ) : qualCalc === "bicicleta" ? (
+                  <CalculadoraBicicleta placement={post.slug} />
                 ) : qualCalc === "corrida" ? (
                   <CalculadoraCorrida placement={post.slug} />
                 ) : qualCalc === "glp1" ? (
@@ -588,7 +585,6 @@ export default async function BlogPost({ params }: Props) {
           {ARTIGOS_COM_LINK_CAMINHADA.includes(post.slug) && <LinkFerramentaCaminhada slug={post.slug} />}
           {ARTIGOS_COM_LINK_CREATINA.includes(post.slug) && <LinkFerramentaCreatina slug={post.slug} />}
           {ARTIGOS_COM_LINK_WHEY.includes(post.slug) && <LinkFerramentaWhey slug={post.slug} />}
-          {ARTIGOS_COM_LINK_ATIVIDADES.includes(post.slug) && <LinkFerramentaAtividades slug={post.slug} />}
           {/* Conversor de mg/mL: convite, nunca embed. Uma seringa desenhada
               dentro de um artigo sobre um medicamento daria a impressão de que
               o texto ensina a medir AQUELE medicamento — e a ferramenta é

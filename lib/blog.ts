@@ -88227,7 +88227,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>A dúvida paralisa: ergométrica no quarto, aula de spinning ou pedal na rua? Escolher errado significa mais um equipamento juntando poeira — e mais uma tentativa frustrada na conta.</p>
 <p>Vamos direto ao ponto, com comparativo honesto entre as três opções e o que realmente faz o pedal queimar gordura.</p>
 <h2>Resposta direta: bicicleta emagrece?</h2>
-<p><strong>Sim, bicicleta emagrece — desde que exista déficit calórico.</strong> Pedalar de 30 a 45 minutos em intensidade moderada queima de 200 a 500 kcal, dependendo do peso e do esforço. Mas nenhum pedal compensa uma alimentação que repõe tudo: <strong>a bicicleta acelera; o déficit direciona.</strong> Aprenda a calcular o seu em <a href="/blog/deficit-calorico-como-calcular">déficit calórico: como calcular</a>.</p>
+<p><strong>Sim, bicicleta emagrece — desde que exista déficit calórico.</strong> Pedalar de 30 a 45 minutos em intensidade moderada queima de 200 a 500 kcal, dependendo do peso e do esforço. Veja o seu número, com as paradas descontadas, na <a href="/ferramentas/calculadora-calorias-bicicleta">Calculadora de Calorias na Bicicleta</a>. Mas nenhum pedal compensa uma alimentação que repõe tudo: <strong>a bicicleta acelera; o déficit direciona.</strong> Aprenda a calcular o seu em <a href="/blog/deficit-calorico-como-calcular">déficit calórico: como calcular</a>.</p>
 <p>E há um bônus que quase ninguém valoriza: o pedal é <strong>baixo impacto</strong>. O peso do corpo fica no banco, não nos joelhos — o que faz da bicicleta uma das melhores portas de entrada para quem está com sobrepeso.</p>
 <h2>Ergométrica, spinning ou rua: qual queima mais?</h2>
 <h3>Bicicleta ergométrica: a prática</h3>

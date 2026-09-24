@@ -73,6 +73,7 @@ export const NOME: Record<Ferramenta, string> = {
   natacao: "Calculadora de Calorias na Natação",
   jiujitsu: "Calculadora de Calorias no Jiu-Jitsu",
   corda: "Calculadora de Calorias Pulando Corda",
+  bicicleta: "Calculadora de Calorias na Bicicleta",
   escada: "Calculadora de Calorias Subindo Escada",
   crossfit: "Calculadora de Calorias no CrossFit",
   hyrox: "Calculadora de Calorias no Hyrox",
@@ -125,6 +126,7 @@ export const ROTA: Record<Ferramenta, string> = {
   natacao: "/ferramentas/calculadora-calorias-natacao",
   jiujitsu: "/ferramentas/calculadora-calorias-jiu-jitsu",
   corda: "/ferramentas/calculadora-calorias-pular-corda",
+  bicicleta: "/ferramentas/calculadora-calorias-bicicleta",
   escada: "/ferramentas/calculadora-calorias-escada",
   crossfit: "/ferramentas/calculadora-calorias-crossfit",
   hyrox: "/ferramentas/calculadora-calorias-hyrox",
@@ -185,6 +187,8 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   jiujitsu: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   /* A corda gasta pouco em minutos; o déficit da semana é o que decide. */
   corda: { ferramenta: "deficit", label: "Calcular meu déficit" },
+  /* Quem viu o gasto do pedal precisa do gasto do dia para saber o déficit. */
+  bicicleta: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   /* A escada é gasto do dia a dia: o próximo passo é ver o gasto do dia inteiro. */
   escada: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   /* A fome depois do WOD é o que trava; o déficit da semana é a conta que resolve. */
@@ -419,6 +423,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
       interpretacao:
         "Esse é o gasto do treino, não o do seu dia. A corda gasta muito por minuto, mas os minutos são poucos — o que move o resultado é a alimentação, a frequência e a força que protege tornozelo e joelho do impacto.",
       pedido: "Pulo corda e queria entender o que falta para ela me ajudar a emagrecer.",
+    },
+  },
+  bicicleta: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto do pedal, não o do seu dia. A bicicleta gasta bem e é baixo impacto, mas o semáforo e o passeio lento derrubam a média — o que move o resultado é a frequência, a alimentação e a força que segura o joelho e o músculo enquanto o peso cai.",
+      pedido: "Pedalo e queria entender o que falta para a bike me ajudar a emagrecer.",
     },
   },
   jiujitsu: {
