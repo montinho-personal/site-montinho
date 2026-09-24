@@ -109,7 +109,12 @@ bloco("3. A PÁGINA É UM HUB HONESTO");
   ok("a busca é medida ao parar de digitar, não a cada tecla", /setTimeout\(\(\) => \{[\s\S]*tools_hub_search/.test(central) && /700/.test(central));
   ok("o card tem um link só, e é o nome", (card.match(/<Link/g) ?? []).length === 1 && /after:absolute after:inset-0/.test(card));
   ok("o card registra o clique com nome, categoria e posição", /tool_card_click/.test(card) && /position: posicao/.test(card));
-  ok("o caminho guiado é compacto e manda para o /comece", /Não sabe por onde começar/.test(pag) && /href="\/comece"/.test(pag) && /sem redigitar/.test(pag));
+  {
+    // Decisão de 2026-09: os caminhos ganharam destaque — dois cartões que levam direto a /comece/dieta e /comece/treino, logo depois da busca.
+    const dc = readFileSync("components/comece/DoisCaminhos.tsx", "utf8");
+    ok("o caminho guiado usa os dois cartões e manda para o /comece", /<DoisCaminhos variante="hub"/.test(pag) && /href=\{`\/comece\/\$\{id\}`\}/.test(dc) && /href="\/comece"/.test(dc) && /sem redigitar/.test(dc));
+    ok("o caminho guiado vem logo depois da busca, antes dos filtros", central.indexOf("{caminhoGuiado}") < central.indexOf("Filtrar por categoria"));
+  }
   ok("o caminho guiado não repete os nove passos", !/passos\.map\(/.test(pag));
   ok("o CTA comercial vem depois do catálogo e rastreia o WhatsApp", pag.indexOf("cta-comercial") > pag.indexOf("<CentralFerramentas") && /cta_location: "ferramentas_hub"/.test(pag));
   ok("sem urgência falsa nem contagem regressiva", !/últimas vagas|só hoje|countdown|restam apenas/i.test(pag + central));

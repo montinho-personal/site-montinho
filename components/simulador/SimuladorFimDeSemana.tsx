@@ -5,6 +5,7 @@ import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { FECHAMENTO_COMPARACAO } from "@/lib/filosofia";
+import DoisCaminhos from "@/components/comece/DoisCaminhos";
 import { DOURADO, Dobra, InsightCard, MethodologyDrawer, NumericInput, OptionCards, ProgressBar, QuestionStep, ScenarioSelector, h, type Opcao } from "./ui";
 import { Comparacao, RestartFastComparison, ScaleVsFatExplanation, WeekendBuilder, WeeklyBalanceBar, WeeklyBalanceTimeline } from "./SemanaVisual";
 import {
@@ -537,6 +538,8 @@ export default function SimuladorFimDeSemana({ placement }: { placement: string 
       )}
 
       {/* 9 — palavra do Montinho + CTA honesto */}
+      <DoisCaminhos variante="resultado" placement="simulador-fim-de-semana-resultado" />
+
       <div className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-6 relative" data-testid="cta-simulador">
         <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: DOURADO }} aria-hidden="true" />
         <p className="text-white text-lg leading-relaxed mb-3" style={h}>Não é uma refeição que define sua semana. É o que acontece no conjunto dos sete dias.</p>

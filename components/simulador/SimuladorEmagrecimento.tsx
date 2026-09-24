@@ -9,6 +9,7 @@ import { DOURADO, Dobra, InsightCard, MethodologyDrawer, MultiOptionCards, Numer
 import { evidencia } from "@/lib/simulador/evidencias";
 import { MARCOS, semanaDoMarco } from "@/lib/simulador/marcos";
 import { FECHAMENTO_COMPARACAO } from "@/lib/filosofia";
+import DoisCaminhos from "@/components/comece/DoisCaminhos";
 import {
   ESTUDOS, NOTA_ESTIMATIVA, NOTA_PRIMEIRAS_SEMANAS, SEMANAS_MAX, perfilTreino,
   bloqueio, cenarioAtual, fmtFaixaSemanas, fmtKg, fmtKgProj, fmtSemanas, impactos, insight, parseAltura, parseNumero, projeta,
@@ -543,6 +544,8 @@ export default function SimuladorEmagrecimento({ placement }: { placement: strin
       {usaCaneta && <Estudos />}
 
       {/* CAMADA 6 — a palavra do Montinho, que é a isca do CTA */}
+      <DoisCaminhos variante="resultado" placement="simulador-emagrecimento-resultado" />
+
       <div className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-6 relative" data-testid="cta-simulador">
         <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: DOURADO }} aria-hidden="true" />
         <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-2" style={{ color: DOURADO }}>{FECHAMENTO_COMPARACAO.titulo}</p>

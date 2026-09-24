@@ -157,6 +157,11 @@ export default function CentralFerramentas({ caminhoGuiado }: { caminhoGuiado: R
         </p>
       </form>
 
+      {/* ── Caminho guiado: logo depois da busca, para quem não sabe o que buscar ── */}
+      <div hidden={buscando} className="mt-8">
+        {caminhoGuiado}
+      </div>
+
       {/* ── Filtros ── */}
       <div className="mt-6" role="group" aria-label="Filtrar por categoria">
         <div className="flex gap-2 overflow-x-auto snap-x -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap pb-1 [scrollbar-width:thin]">
@@ -182,10 +187,6 @@ export default function CentralFerramentas({ caminhoGuiado }: { caminhoGuiado: R
             : `Mostrando só ${CATEGORIAS.find((c) => c.id === filtro)?.nome}.`}
       </p>
 
-      {/* ── Caminho guiado: para quem não sabe o que buscar ── */}
-      <div hidden={buscando} className="mt-8">
-        {caminhoGuiado}
-      </div>
 
       {/* ── Resultados da busca ── */}
       {buscando && (

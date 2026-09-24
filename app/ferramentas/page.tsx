@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, blogPosts } from "@/lib/blog";
-import { TRILHAS } from "@/lib/ferramentas/trilha";
 import { CATEGORIAS, FERRAMENTAS_NO_AR } from "@/lib/ferramentas/catalogo";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import CentralFerramentas from "@/components/ferramentas/central/CentralFerramentas";
 import LinkRastreado from "@/components/ferramentas/central/LinkRastreado";
+import DoisCaminhos from "@/components/comece/DoisCaminhos";
 import FaixaSimuladores from "@/components/simulador/FaixaSimuladores";
 
 /**
@@ -89,43 +89,12 @@ const botao = `inline-flex items-center justify-center gap-2 bg-white text-black
 const botaoSec = `inline-flex items-center justify-center gap-2 border border-white/25 text-white px-6 py-3.5 text-sm font-semibold min-h-[52px] hover:border-white/50 transition-colors ${foco}`;
 
 /**
- * O atalho para o caminho guiado. É HTML de servidor, passado para dentro
- * da central, que o esconde durante uma busca. Compacto de propósito: os
- * passos de cada caminho vivem no /comece, e repeti-los aqui faria esta
- * página competir com aquela.
+ * O atalho para os caminhos guiados, passado para dentro da central, que o
+ * esconde durante uma busca. Os dois cartões levam direto a /comece/dieta e
+ * /comece/treino; o componente é o mesmo da home e dos simuladores.
  */
 function CaminhoGuiado() {
-  return (
-    <aside className="border border-[#BA9E50]/50 bg-[#BA9E50]/[0.05] p-5 sm:p-6" aria-labelledby="caminho-guiado" data-testid="caminho-guiado">
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-        <div className="max-w-xl">
-          <h2 id="caminho-guiado" className="text-white font-bold text-lg sm:text-xl mb-1" style={h}>
-            Não sabe por onde começar?
-          </h2>
-          <p className="text-gray-300 text-sm leading-relaxed">
-            Em vez de escolher por conta própria, siga um caminho passo a passo. As ferramentas conversam entre si e os seus dados
-            atravessam sozinhos, sem redigitar nada.
-          </p>
-          <p className="text-gray-400 text-sm mt-2 flex flex-wrap gap-x-4 gap-y-1">
-            {(Object.keys(TRILHAS) as (keyof typeof TRILHAS)[]).map((id) => (
-              <LinkRastreado
-                key={id}
-                href={`/comece/${id}`}
-                evento="guided_path_click"
-                params={{ path: id, placement: "ferramentas_hub" }}
-                className={`underline underline-offset-4 decoration-1 hover:text-white transition-colors min-h-[32px] inline-flex items-center ${foco}`}
-              >
-                {TRILHAS[id].titulo} · {TRILHAS[id].passos.length} passos
-              </LinkRastreado>
-            ))}
-          </p>
-        </div>
-        <LinkRastreado href="/comece" evento="guided_path_click" params={{ path: "comece", placement: "ferramentas_hub" }} className={`${botao} shrink-0`}>
-          Começar pelo Comece Aqui <span aria-hidden="true">→</span>
-        </LinkRastreado>
-      </div>
-    </aside>
-  );
+  return <DoisCaminhos variante="hub" placement="ferramentas_hub" />;
 }
 
 export default function FerramentasPage() {
