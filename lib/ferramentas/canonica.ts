@@ -103,6 +103,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Calorias Subindo Escada",
     motivo: "que conta pelos andares que você sobe, soma a descida e mostra o que trocar o elevador rende no mês",
   },
+  bicicleta: {
+    href: "/ferramentas/calculadora-calorias-bicicleta",
+    ancora: "Calculadora de Calorias na Bicicleta",
+    motivo: "que conta pela velocidade e pelas paradas na rua, pelos watts na ergométrica, e mostra quanto ir de bike para o trabalho rende no mês",
+  },
   corda: {
     href: "/ferramentas/calculadora-calorias-pular-corda",
     ancora: "Calculadora de Calorias Pulando Corda",

@@ -45,6 +45,7 @@ import { ARTIGOS_COM_CALCULADORA_DANCA } from "../lib/danca";
 import { ARTIGOS_COM_CALCULADORA_NATACAO } from "../lib/natacao";
 import { ARTIGOS_COM_CALCULADORA_JIU } from "../lib/jiujitsu";
 import { ARTIGOS_COM_CALCULADORA_CORDA } from "../lib/corda";
+import { ARTIGOS_COM_CALCULADORA_BICICLETA } from "../lib/bicicleta";
 import { ARTIGOS_COM_CALCULADORA_ESCADA } from "../lib/escada";
 import { ARTIGOS_COM_CALCULADORA_CROSSFIT } from "../lib/crossfit";
 import { ARTIGOS_COM_CALCULADORA_HYROX } from "../lib/hyrox";
@@ -94,6 +95,7 @@ const REGISTROS: [string, string[]][] = [
   ["natação", ARTIGOS_COM_CALCULADORA_NATACAO],
   ["jiu-jitsu", ARTIGOS_COM_CALCULADORA_JIU],
   ["corda", ARTIGOS_COM_CALCULADORA_CORDA],
+  ["bicicleta", ARTIGOS_COM_CALCULADORA_BICICLETA],
   ["escada", ARTIGOS_COM_CALCULADORA_ESCADA],
   ["crossfit", ARTIGOS_COM_CALCULADORA_CROSSFIT],
   ["hyrox", ARTIGOS_COM_CALCULADORA_HYROX],

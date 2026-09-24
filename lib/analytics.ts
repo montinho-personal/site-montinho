@@ -272,11 +272,7 @@ export type AnalyticsEvent =
   /** Calculadora de Calorias por Atividade. `activity` e `mode`; nunca peso nem resultado. */
   | "activity_calculator_view"
   | "activity_calculator_use"
-  | "activity_selected"
-  | "activity_mode_selected"
   | "activity_preset"
-  | "activity_pauses_toggle"
-  | "activity_methodology_open"
   | "activity_tool_click"
   /** Calculadora de Corrida. `mode`, `race` e `incline`; nunca peso nem resultado. */
   | "running_calculator_view"
@@ -366,6 +362,14 @@ export type AnalyticsEvent =
   | "jiujitsu_methodology_open"
   | "jiujitsu_tool_click"
   /** Calculadora de Calorias Pulando Corda. `pace`, `rounds` e `per_week`; nunca o peso. */
+  /** Calculadora de Calorias na Bicicleta. Modo, faixa e frequência; nunca o peso nem a distância. */
+  | "bike_calculator_view"
+  | "bike_calculator_use"
+  | "bike_mode_selected"
+  | "bike_preset"
+  | "bike_frequency"
+  | "bike_methodology_open"
+  | "bike_tool_click"
   | "jump_rope_calculator_view"
   | "jump_rope_calculator_use"
   | "jump_rope_preset"
