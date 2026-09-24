@@ -7,6 +7,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import ProjectionChart, { type Marco } from "./ProjectionChart";
 import { DOURADO, InsightCard, MethodologyDrawer, MultiOptionCards, NumericInput, OptionCards, ProgressBar, QuestionStep, ScenarioSelector, h, type Opcao } from "./ui";
 import { evidencia } from "@/lib/simulador/evidencias";
+import { FECHAMENTO_COMPARACAO } from "@/lib/filosofia";
 import {
   ESTUDOS, NOTA_ESTIMATIVA, NOTA_PRIMEIRAS_SEMANAS, SEMANAS_MAX, perfilTreino,
   bloqueio, cenarioAtual, fmtFaixaSemanas, fmtKg, fmtKgProj, fmtSemanas, impactos, insight, parseAltura, parseNumero, projeta,
@@ -531,9 +532,14 @@ export default function SimuladorEmagrecimento({ placement }: { placement: strin
       {/* CAMADA 5b — a jornada, de novo, com os ajustes que a pessoa fez */}
       <Jornada perfil={perfil} cen={cen} pr={projCen} prAtual={projAtual} igual={igual} horizonte={horizonte} />
 
-      {/* CAMADA 6 — CTA */}
+      {/* CAMADA 6 — a palavra do Montinho, que é a isca do CTA */}
       <div className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-6 relative" data-testid="cta-simulador">
         <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: DOURADO }} aria-hidden="true" />
+        <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-2" style={{ color: DOURADO }}>{FECHAMENTO_COMPARACAO.titulo}</p>
+        <div className="space-y-3 mb-6" data-testid="fechamento">
+          {FECHAMENTO_COMPARACAO.paragrafos.map((t) => <p key={t} className="text-white leading-relaxed">{t}</p>)}
+          <p className="text-gray-400 text-sm">— Montinho</p>
+        </div>
         {usaCaneta ? (
           <>
             <p className="text-white font-bold text-xl mb-2" style={h}>Está emagrecendo com caneta?</p>

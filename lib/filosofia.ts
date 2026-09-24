@@ -100,6 +100,12 @@ export const FILOSOFIAS: Filosofia[] = [
       "Escrevo isso porque gosto genuinamente desse estilo de vida e de ver alguém descobrir que também consegue. Cada artigo é uma tentativa de encurtar o caminho de quem está começando ou travado. E quando o conteúdo não basta — porque cada corpo e cada rotina são diferentes — o próximo passo é o {link}, feito para o seu caso e não para a média.",
   },
   {
+    id: "comparacao",
+    titulo: "Nunca se compare com ninguém",
+    texto:
+      "Cada pessoa tem a própria genética, a própria rotina, a própria história — e altos e baixos que ninguém vê de fora. Comparar o seu processo com o de outra pessoa é comparar duas contas com números diferentes. O que decide não é isso: é encontrar uma estratégia de treino e um protocolo que você consiga seguir pelo resto da vida, com aderência e progressão. Quem faz isso não tem como dar errado — eu sou a prova viva, e vivo isso com meus alunos todo santo dia. Encontrar o seu jeito de treinar é o que acontece no {link}.",
+  },
+  {
     id: "pratica",
     titulo: "Do papel para a sua semana",
     texto:
@@ -134,6 +140,21 @@ const CLUSTERS_COM_NOTA = new Set([
   "exercise", "hypertrophy", "weight_loss", "beginner", "routine",
   "glp1", "pain", "health", "nutrition", "general",
 ]);
+
+/**
+ * A frase de fechamento, sem link, para o fim de uma ferramenta ou de uma
+ * página em que a pessoa acabou de receber um número — e o número pode
+ * virar expectativa ou comparação. É a mesma ideia da variante
+ * "comparacao", na primeira pessoa, e serve de isca para o CTA que vem
+ * logo depois.
+ */
+export const FECHAMENTO_COMPARACAO = {
+  titulo: "Uma palavra antes de você fechar esta página",
+  paragrafos: [
+    "Nunca crie expectativa em cima dessa previsão — e jamais se compare com os outros. Cada pessoa tem a própria genética, a própria rotina, a própria vida, com altos e baixos que ninguém vê de fora.",
+    "O mais importante é encontrar um estilo de treino e um protocolo que você consiga seguir pelo resto da vida: com aderência e com progressão. Se você fizer isso, eu tenho certeza de que vai dar certo. É impossível dar errado — eu sou a prova viva, e vivo isso com meus alunos todo santo dia.",
+  ],
+} as const;
 
 export function clusterRecebeNota(cluster: string): boolean {
   return CLUSTERS_COM_NOTA.has(cluster);
