@@ -116,6 +116,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["emagrecer", "perder peso", "quanto comer para emagrecer", "calorias para emagrecer", "dieta", "secar", "cutting", "definir", "meta calorica", "quantas calorias comer"],
   },
   {
+    id: "simulador-emagrecimento",
+    href: "/ferramentas/simulador-emagrecimento",
+    nome: "Simulador de Emagrecimento",
+    resultado: "Veja como seu peso pode evoluir e compare cenários de treino, passos e consistência.",
+    acao: "Simular meu emagrecimento",
+    tempo: "1 minuto",
+    categoria: "emagrecimento",
+    icone: "balanca",
+    tags: ["simulador", "quanto tempo para emagrecer", "perder 10 kg", "perder 5 kg", "projecao de peso", "quando vou chegar no meu peso", "emagrecer", "perder peso", "consistencia", "passos", "mounjaro"],
+    selo: "novo",
+  },
+  {
     id: "meta",
     href: "/ferramentas/meta-de-peso",
     nome: "Calculadora de Meta de Peso",
