@@ -168,7 +168,8 @@ export default function SimuladorMassa({ placement }: { placement: string }) {
   const atual = perfil ? cenarioAtualMassa(perfil) : null;
   const projAtual = useMemo(() => (perfil && atual ? projetaMassa(perfil, atual) : null), [perfil, atual?.superavit, atual?.treinos, atual?.progressao]); // eslint-disable-line react-hooks/exhaustive-deps
   const projCen = useMemo(() => (perfil && cen ? projetaMassa(perfil, cen) : null), [perfil, cen]);
-  const diag = useMemo(() => (perfil && projCen ? diagnostico(perfil, projCen) : null), [perfil, projCen]);
+  /* O gargalo descreve a situação de HOJE, não o ritmo que a pessoa está testando: senão ele troca a cada toque. */
+  const diag = useMemo(() => (perfil && projAtual ? diagnostico(perfil, projAtual) : null), [perfil, projAtual]);
   function mexe(controle: string, novo: Partial<CenarioMassa>) { setCen((c) => (c ? { ...c, ...novo } : c)); trackEvent("scenario_changed", { placement, control: controle }); }
   const clique = () => trackEvent("simulator_internal_tool_click", { placement });
   const usaHormonio = r.hormonio === "reposicao" || r.hormonio === "desempenho" || r.hormonio === "outro";
@@ -343,7 +344,7 @@ export default function SimuladorMassa({ placement }: { placement: string }) {
           <div><dt className="text-gray-400 text-xs uppercase tracking-wide">Diferença</dt><dd className="text-white text-xl sm:text-2xl font-bold tabular-nums">{dif !== null ? `+${fmtKg(dif)}` : "—"}</dd></div>
         </dl>
         {semProgresso ? (
-          <p className="text-lg text-white leading-relaxed" data-testid="resposta">Neste cenário, seu peso tende a ficar <strong>praticamente parado</strong>: a ingestão está perto do que seu corpo gasta. Escolha um ritmo abaixo para ver a curva subir.</p>
+          <p className="text-lg text-white leading-relaxed" data-testid="resposta">{projCen.ritmo12.kg < -0.03 ? <>Neste cenário, seu peso tende a <strong>cair</strong>: a ingestão fica abaixo do que seu corpo gasta.</> : <>Neste cenário, seu peso tende a ficar <strong>praticamente parado</strong>: a ingestão está perto do que seu corpo gasta.</>} Escolha um ritmo abaixo para ver a curva subir.</p>
         ) : temMeta && projCen.semanaMeta !== null ? (
           <p className="text-lg text-white leading-relaxed" data-testid="resposta">Num ritmo controlado, você chegaria perto de {fmtKg(perfil.metaKg!)} em <strong style={{ color: DOURADO }}>{fmtFaixaSemanas(projCen.faixaMeta!)}</strong> — por volta de {fmtSemanas(projCen.semanaMeta)}.</p>
         ) : temMeta ? (

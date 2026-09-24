@@ -425,7 +425,11 @@ export default function SimuladorEmagrecimento({ placement }: { placement: strin
           <div><dt className="text-gray-400 text-xs uppercase tracking-wide">Meta</dt><dd className="text-white text-xl sm:text-2xl font-bold tabular-nums">{temMeta ? fmtKg(perfil.metaKg!) : "—"}</dd></div>
           <div><dt className="text-gray-400 text-xs uppercase tracking-wide">Diferença</dt><dd className="text-white text-xl sm:text-2xl font-bold tabular-nums">{perdaTotal !== null ? fmtKg(perdaTotal) : "—"}</dd></div>
         </dl>
-        {semProgresso ? (
+        {projCen.ritmo12 < -0.05 ? (
+          <p className="text-lg text-white leading-relaxed" data-testid="resposta">
+            Neste cenário, seu peso tende a <strong>subir</strong>: as calorias informadas ficam acima do que seu corpo gasta. Ajuste a alimentação ou a atividade abaixo para ver a curva mudar de direção.
+          </p>
+        ) : semProgresso ? (
           <p className="text-lg text-white leading-relaxed" data-testid="resposta">
             Neste cenário, seu peso tende a ficar <strong>praticamente estável</strong>. As calorias informadas estão perto do que seu corpo gasta — mude a alimentação ou a atividade abaixo para ver a curva descer.
           </p>
