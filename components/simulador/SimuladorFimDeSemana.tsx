@@ -144,7 +144,7 @@ export default function SimuladorFimDeSemana({ placement }: { placement: string 
       // O construtor só vale nos dias em que a pessoa abriu o detalhe; bebidas valem sempre que ela bebe.
       eventos: sei ? [] : r.eventos.filter((e) => {
         const g = item(e.itemId).grupo;
-        if (g === "bebida") return r.bebe === "sim" || r.bebe === "as-vezes";
+        if (g === "bebida") return r.bebe !== "nao";
         return (e.dia === "sexta" && r.sexta !== "nao") || (e.dia === "sabado" && r.detalharSabado) || (e.dia === "domingo" && r.detalharDomingo);
       }),
       movimento: r.movimento,
@@ -277,7 +277,7 @@ export default function SimuladorFimDeSemana({ placement }: { placement: string 
               {sei && r.sexta && r.sexta !== "nao" && <div className="mt-4"><NumericInput rotulo="Quanto a sexta à noite soma a mais" sufixo="kcal" valor={r.kcalSexta} onChange={(v) => set("kcalSexta", v)} erro={erros.kcalSexta} placeholder="600" ajuda={r.sexta === "as-vezes" ? "Uma média: se é uma sexta a cada duas, metade do extra." : "Além do que você já comeria num dia útil."} /></div>}
               {!sei && r.sexta && r.sexta !== "nao" && (
                 <Dobra titulo="Detalhar a sexta à noite (opcional)">
-                  <WeekendBuilder dia="sexta" eventos={r.eventos} onChange={setEventos} grupos={["refeicao", "extra"]} onAdd={aoAdicionar} />
+                  <WeekendBuilder dia="sexta" eventos={r.eventos} onChange={setEventos} grupos={["refeicao", "extra", "bebida"]} onAdd={aoAdicionar} />
                 </Dobra>
               )}
             </QuestionStep>
@@ -300,8 +300,8 @@ export default function SimuladorFimDeSemana({ placement }: { placement: string 
                   <input type="checkbox" checked={detalhar} onChange={(ev) => set(kDetalhe, ev.target.checked)} className="w-5 h-5 mt-0.5 accent-[#BA9E50]" />
                   <span>Prefiro montar o meu {nome} item por item <span className="text-gray-500">(pizza, churrasco, sobremesa…)</span></span>
                 </label>
-                {detalhar && <div className="mt-4"><WeekendBuilder dia={dia} eventos={r.eventos} onChange={setEventos} grupos={["refeicao", "extra"]} onAdd={aoAdicionar} /></div>}
-                {detalhar && <p className="text-gray-500 text-xs mt-3">Bebidas vêm na próxima etapa.</p>}
+                {detalhar && <div className="mt-4"><WeekendBuilder dia={dia} eventos={r.eventos} onChange={setEventos} grupos={["refeicao", "extra", "bebida"]} onAdd={aoAdicionar} /></div>}
+                {detalhar && <p className="text-gray-500 text-xs mt-3">Cerveja, vinho, destilado e drinks estão em “Bebidas”. O que você adicionar aqui aparece de novo na etapa de bebidas.</p>}
               </QuestionStep>
             );
           })()}
