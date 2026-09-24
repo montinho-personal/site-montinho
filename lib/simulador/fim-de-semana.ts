@@ -468,7 +468,15 @@ export const FONTES_FDS = [
 /* ───────────────────────── Registros ───────────────────────── */
 
 /** Artigos que perguntam "e o meu fim de semana?" — recebem o link do simulador. */
-export const ARTIGOS_COM_LINK_FIM_DE_SEMANA: string[] = ["fim-de-semana-estraga-a-dieta", "dia-do-lixo-funciona"];
+export const ARTIGOS_COM_LINK_FIM_DE_SEMANA: string[] = [
+  "fim-de-semana-estraga-a-dieta",
+  "dia-do-lixo-funciona",
+  "habitos-que-sabotam-seu-emagrecimento",
+  "como-emagrecer-sem-passar-fome-vida-social",
+  "alcool-e-emagrecimento",
+  "balanca-nao-muda-mas-o-corpo-muda",
+  "o-que-fazer-depois-de-exagerar-no-carnaval",
+];
 
 /* ───────────────────────── Uma refeição × o fim de semana inteiro ───────────────────────── */
 

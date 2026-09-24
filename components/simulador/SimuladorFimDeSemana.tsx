@@ -428,6 +428,12 @@ export default function SimuladorFimDeSemana({ placement }: { placement: string 
         </div>
       )}
       {!seguranca && <InsightCard titulo="O que mais está pesando no seu fim de semana"><p className="font-semibold" style={h}>{ins.titulo}</p><p className="text-gray-300 mt-1">{ins.texto}</p><p className="text-gray-500 text-xs mt-2">Pelas suas respostas — regras fixas, não diagnóstico.</p></InsightCard>}
+      {!seguranca && s.estado === "deficit" && (
+        <div className="border border-white/15 p-4 text-sm leading-relaxed" data-testid="nao-e-o-fds">
+          <p className="text-white font-semibold mb-1">Seu fim de semana provavelmente não é o principal problema neste cenário.</p>
+          <p className="text-gray-300">Se mesmo assim o peso não está caindo, as hipóteses são outras: gasto menor que o estimado, porções maiores que as anotadas, água mascarando a balança ou pouco tempo de observação. Veja <Link href="/blog/por-que-voce-nao-consegue-emagrecer" onClick={clique} className={ln}>por que você não consegue emagrecer</Link> — e acompanhe a média semanal do peso por algumas semanas antes de mudar qualquer coisa.</p>
+        </div>
+      )}
 
       {/* 3 — e se? */}
       <div className="border border-white/15 p-5 sm:p-6 space-y-5" data-testid="e-se">
