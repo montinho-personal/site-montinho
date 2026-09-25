@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useAgora } from "./useAgora";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import { trackEvent } from "@/lib/analytics";
 import { ATLETAS_BRASIL, CATEGORIAS, DIA_TEXTO, STATUS_FASE, categoria, fase, type Dia } from "@/lib/olympia-brasil";
@@ -27,12 +28,7 @@ export default function PainelBrasil() {
   const [busca, setBusca] = useState("");
   // Status ao vivo depende do relógio: só depois de montar (o HTML do
   // servidor mostra "Programado"). Status não precisa de segundo.
-  const [agora, setAgora] = useState<number | null>(null);
-  useEffect(() => {
-    setAgora(Date.now());
-    const id = window.setInterval(() => setAgora(Date.now()), 60_000);
-    return () => window.clearInterval(id);
-  }, []);
+  const agora = useAgora(60000);
 
   const lista = useMemo(() => {
     const q = busca.trim().toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "");

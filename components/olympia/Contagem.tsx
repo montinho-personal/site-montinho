@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useAgora } from "./useAgora";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { trackEvent } from "@/lib/analytics";
 import {
@@ -21,15 +22,6 @@ import {
  * - O timer só roda enquanto há contagem; por segundo, só no último dia.
  */
 
-function useAgora(): number | null {
-  const [agora, setAgora] = useState<number | null>(null);
-  useEffect(() => {
-    setAgora(Date.now());
-    const id = window.setInterval(() => setAgora(Date.now()), 1000);
-    return () => window.clearInterval(id);
-  }, []);
-  return agora;
-}
 
 function falta(ms: number): string {
   const s = Math.max(0, Math.floor(ms / 1000));
@@ -60,7 +52,7 @@ function useView(escopo: string, estado: string | null) {
 }
 
 function ContagemCategoria({ c }: { c: CategoriaOlympia }) {
-  const agora = useAgora();
+  const agora = useAgora(1000);
   const f = agora === null ? null : fase(c, agora);
   const al = agora === null ? null : alvo(c, agora);
   useView(c.id, f);
@@ -117,7 +109,7 @@ function ContagemCategoria({ c }: { c: CategoriaOlympia }) {
 const nomes = (cs: CategoriaOlympia[]) => cs.map((c) => c.nome.replace(" (Mr. Olympia)", "")).join(" / ");
 
 function ContagemBrasil() {
-  const agora = useAgora();
+  const agora = useAgora(1000);
   const r = agora === null ? null : resumoBrasil(agora);
   useView("brasil", r ? (r.proximo?.bloco ?? "fim") : null);
   const prox: IdBloco | null = r ? (r.proximo?.bloco ?? null) : "sextaPrevias";

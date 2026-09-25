@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useAgora } from "./useAgora";
 import Link from "next/link";
 import { trackEvent } from "@/lib/analytics";
 import { BLOCOS, CATEGORIAS, fase, type Fase } from "@/lib/olympia-brasil";
@@ -29,12 +29,7 @@ const TEXTO: Record<Fase, string> = {
 const quando = (id: keyof typeof BLOCOS) => BLOCOS[id].texto.split(",")[0].replace("-feira", "") + ", " + BLOCOS[id].texto.split(", ")[2].split(" de Brasília")[0];
 
 export default function StatusCategorias() {
-  const [agora, setAgora] = useState<number | null>(null);
-  useEffect(() => {
-    setAgora(Date.now());
-    const id = window.setInterval(() => setAgora(Date.now()), 60_000);
-    return () => window.clearInterval(id);
-  }, []);
+  const agora = useAgora(60000);
 
   return (
     <ul className="not-prose divide-y divide-white/10 border border-white/15 text-sm">
