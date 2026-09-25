@@ -1,60 +1,173 @@
 /**
- * Brasileiros no Mr. Olympia 2026 — FONTE ÚNICA do painel e da tabela do
- * hub /blog/brasileiros-mr-olympia-2026 (e de quem mais quiser a lista).
+ * Mr. Olympia 2026 — FONTE ÚNICA de agenda, estado das categorias e
+ * brasileiros. Leem daqui: a contagem regressiva (components/olympia/
+ * Contagem.tsx), o painel Brasil, o status do hub geral e a tabela do hub.
  *
- * DUAS COISAS DIFERENTES, DUAS COLUNAS
- *   representacao = país que o roster oficial da IFBB Pro League mostra;
- *   brasileiro    = nacionalidade/origem, pela imprensa brasileira.
+ * HORÁRIOS
+ * Guardados UMA vez, em ISO com fuso de Brasília (-03:00), que em setembro
+ * é Las Vegas + 4h. O relógio do navegador só serve para medir "agora"
+ * (Date.now() é UTC em qualquer fuso), nunca para interpretar a agenda.
+ * São inícios de BLOCO: a ordem das categorias dentro do bloco não é
+ * publicada com antecedência, então nada aqui afirma o minuto de ninguém.
+ *
+ * O QUE O RELÓGIO DECIDE E O QUE ELE NÃO DECIDE
+ *   relógio → um bloco COMEÇOU (horário oficial de início).
+ *   flag    → as prévias da categoria TERMINARAM (`previasConcluidas`) e o
+ *             resultado é OFICIAL (`resultadoOficial`). O relógio não sabe
+ *             disso; marcar à mão, com fonte, e subir o dateModified.
+ *
+ * BRASILEIRO x ROSTER
+ *   representacao = país que o roster oficial da IFBB Pro League mostra.
  * Natália Coelho é brasileira e aparece como EUA. Não "corrigir" isso.
  *
- * QUEM ENTRA
+ * QUEM ENTRA NO PAINEL
  * Atleta no roster atual e não reportado como fora do evento. Classificado
- * que não viajou (visto negado, desistência) vai em FORA_DO_EVENTO, nunca
- * no painel. A Wellness tem mais de 20 brasileiras; aqui entram as de
- * destaque, e a lista inteira fica no artigo da categoria.
- *
- * ATUALIZAR DURANTE O EVENTO
- * status: "aguardando" → "previas" (passou pelas prévias) → "final"
- * (resultado oficial). `resultado` só com fonte oficial, ex.: "3º lugar".
- * Depois de mexer aqui, subir o dateModified do hub.
+ * que não viajou vai em FORA_DO_EVENTO. Na Wellness entram as brasileiras de
+ * destaque; a lista inteira fica no artigo da categoria.
  */
 
 export type Dia = "sexta" | "sabado";
-export type Status = "aguardando" | "previas" | "final";
+
+/** Blocos oficiais (início), horário de Brasília. */
+export const BLOCOS = {
+  sextaPrevias: { inicio: "2026-09-25T13:30:00-03:00", texto: "sexta-feira, 25 de setembro, 13h30 de Brasília (9h30 em Las Vegas)" },
+  sextaFinais: { inicio: "2026-09-25T22:00:00-03:00", texto: "sexta-feira, 25 de setembro, 22h de Brasília (18h em Las Vegas)" },
+  sabadoPrevias: { inicio: "2026-09-26T13:30:00-03:00", texto: "sábado, 26 de setembro, 13h30 de Brasília (9h30 em Las Vegas)" },
+  sabadoFinais: { inicio: "2026-09-26T23:00:00-03:00", texto: "sábado, 26 de setembro, 23h de Brasília (19h em Las Vegas)" },
+} as const;
+export type IdBloco = keyof typeof BLOCOS;
 
 export interface CategoriaOlympia {
   id: string;
   nome: string;
   dia: Dia;
+  previas: IdBloco;
+  final: IdBloco;
   /** Artigo de resultado da categoria, se existir. */
   artigo?: string;
+  /** Marcar só com fonte: prévias da categoria encerradas. */
+  previasConcluidas?: boolean;
+  /** Marcar só com fonte: resultado oficial divulgado. */
+  resultadoOficial?: boolean;
+  /** Tem brasileiro no painel? (a contagem do hub Brasil só olha estas) */
+  temBrasileiro?: boolean;
 }
 
 export const CATEGORIAS: CategoriaOlympia[] = [
-  { id: "classic", nome: "Classic Physique", dia: "sexta", artigo: "resultado-classic-physique-mr-olympia-2026" },
-  { id: "212", nome: "212", dia: "sexta", artigo: "resultado-212-mr-olympia-2026" },
-  { id: "wellness", nome: "Wellness", dia: "sexta", artigo: "resultado-wellness-mr-olympia-2026" },
-  { id: "womens-physique", nome: "Women's Physique", dia: "sexta", artigo: "resultado-womens-physique-olympia-2026" },
-  { id: "ms-olympia", nome: "Ms. Olympia (Women's Bodybuilding)", dia: "sexta" },
-  { id: "open", nome: "Open (Mr. Olympia)", dia: "sabado", artigo: "resultado-mr-olympia-open-2026" },
-  { id: "mens-physique", nome: "Men's Physique", dia: "sabado" },
-  { id: "bikini", nome: "Bikini", dia: "sabado" },
-  { id: "fit-model", nome: "Fit Model", dia: "sabado" },
+  { id: "classic", nome: "Classic Physique", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-classic-physique-mr-olympia-2026", temBrasileiro: true },
+  { id: "212", nome: "212", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-212-mr-olympia-2026", temBrasileiro: true },
+  { id: "wellness", nome: "Wellness", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-wellness-mr-olympia-2026", temBrasileiro: true },
+  { id: "womens-physique", nome: "Women's Physique", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-womens-physique-olympia-2026", temBrasileiro: true },
+  { id: "ms-olympia", nome: "Ms. Olympia", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", temBrasileiro: true },
+  { id: "figure", nome: "Figure", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais" },
+  // O Open tem as prévias na sessão de sexta à noite e a final no sábado.
+  { id: "open", nome: "Open (Mr. Olympia)", dia: "sabado", previas: "sextaFinais", final: "sabadoFinais", artigo: "resultado-mr-olympia-open-2026", temBrasileiro: true },
+  { id: "mens-physique", nome: "Men's Physique", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", artigo: "resultado-mens-physique-olympia-2026", temBrasileiro: true },
+  { id: "bikini", nome: "Bikini", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", artigo: "resultado-bikini-olympia-2026", temBrasileiro: true },
+  { id: "fitness", nome: "Fitness", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais" },
+  { id: "fit-model", nome: "Fit Model", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", temBrasileiro: true },
 ];
+
+export const categoria = (id: string) => {
+  const c = CATEGORIAS.find((x) => x.id === id);
+  if (!c) throw new Error(`categoria desconhecida: ${id}`);
+  return c;
+};
+
+/* ───────────── Estado da categoria no tempo ───────────── */
+
+export type Fase =
+  | "antes-previas" // 1: contagem para o bloco das prévias
+  | "previas" // 2: bloco das prévias iniciado (sem confirmação de fim)
+  | "aguardando-final" // 3: prévias confirmadas; contagem para as finais
+  | "final" // 4: bloco das finais iniciado, resultado ainda não oficial
+  | "encerrada"; // 5: resultado oficial
+
+const t = (b: IdBloco) => Date.parse(BLOCOS[b].inicio);
+
+/**
+ * Fase de uma categoria no instante `agora` (ms UTC).
+ * Sem `previasConcluidas`, a fase 2 dura até o bloco das finais começar:
+ * não afirmamos que as prévias acabaram só porque o tempo passou.
+ */
+export function fase(c: CategoriaOlympia, agora: number): Fase {
+  if (c.resultadoOficial) return "encerrada";
+  if (agora >= t(c.final)) return "final";
+  if (c.previasConcluidas) return "aguardando-final";
+  if (agora >= t(c.previas)) return "previas";
+  return "antes-previas";
+}
+
+/** Próximo instante que interessa (para a contagem), ou null. */
+export function alvo(c: CategoriaOlympia, agora: number): { bloco: IdBloco; tipo: "previas" | "final" } | null {
+  const f = fase(c, agora);
+  if (f === "antes-previas") return { bloco: c.previas, tipo: "previas" };
+  if (f === "previas" || f === "aguardando-final") return { bloco: c.final, tipo: "final" };
+  return null;
+}
+
+/** Status curto para o painel Brasil e o hub geral. */
+export const STATUS_FASE: Record<Fase, string> = {
+  "antes-previas": "Próximo",
+  previas: "Em andamento (bloco das prévias)",
+  "aguardando-final": "Aguardando final",
+  final: "Em andamento (bloco das finais)",
+  encerrada: "Finalizado",
+};
+
+/** Texto estático (SSR/leitor de tela) da agenda da categoria. */
+export function agendaTexto(c: CategoriaOlympia): string {
+  return `Prévias: bloco a partir de ${BLOCOS[c.previas].texto}. Final: sessão a partir de ${BLOCOS[c.final].texto}.`;
+}
+
+/* ───────────── Hub Brasil: agora / próximo / finalizado ───────────── */
+
+export interface ResumoBrasil {
+  agora: { bloco: IdBloco; categorias: CategoriaOlympia[] } | null;
+  proximo: { bloco: IdBloco; categorias: CategoriaOlympia[] } | null;
+  finalizadas: CategoriaOlympia[];
+}
+
+const ORDEM: IdBloco[] = ["sextaPrevias", "sextaFinais", "sabadoPrevias", "sabadoFinais"];
+
+/** Categorias com brasileiro que usam o bloco (prévias ou final) e ainda não encerraram. */
+function doBloco(b: IdBloco): CategoriaOlympia[] {
+  return CATEGORIAS.filter((c) => c.temBrasileiro && !c.resultadoOficial && (c.previas === b || c.final === b));
+}
+
+export function resumoBrasil(agora: number): ResumoBrasil {
+  const iniciados = ORDEM.filter((b) => agora >= t(b) && doBloco(b).length);
+  const futuros = ORDEM.filter((b) => agora < t(b) && doBloco(b).length);
+  const ult = iniciados[iniciados.length - 1];
+  return {
+    agora: ult ? { bloco: ult, categorias: doBloco(ult) } : null,
+    proximo: futuros[0] ? { bloco: futuros[0], categorias: doBloco(futuros[0]) } : null,
+    finalizadas: CATEGORIAS.filter((c) => c.temBrasileiro && c.resultadoOficial),
+  };
+}
+
+export const NOME_BLOCO: Record<IdBloco, string> = {
+  sextaPrevias: "Prévias de sexta",
+  sextaFinais: "Finais de sexta",
+  sabadoPrevias: "Prévias de sábado",
+  sabadoFinais: "Finais de sábado",
+};
+export const inicioBloco = t;
+
+/* ───────────── Brasileiros ───────────── */
 
 export interface AtletaBrasil {
   nome: string;
   categoria: string;
   /** País exibido no roster oficial. */
   representacao: "Brasil" | "EUA" | "Espanha";
-  status: Status;
-  /** Só com resultado oficial. */
+  /** Só com resultado oficial, ex.: "3º lugar". */
   resultado?: string;
   destaque?: string;
 }
 
-const a = (nome: string, categoria: string, representacao: AtletaBrasil["representacao"] = "Brasil", destaque?: string): AtletaBrasil => ({
-  nome, categoria, representacao, status: "aguardando", destaque,
+const a = (nome: string, cat: string, representacao: AtletaBrasil["representacao"] = "Brasil", destaque?: string): AtletaBrasil => ({
+  nome, categoria: cat, representacao, destaque,
 });
 
 export const ATLETAS_BRASIL: AtletaBrasil[] = [
@@ -78,9 +191,9 @@ export const ATLETAS_BRASIL: AtletaBrasil[] = [
   a("Amanda de Carvalho Machado", "womens-physique", "EUA"),
   a("Leyvina Barros", "ms-olympia", "Brasil", "Top 3 em 2025"),
   a("Barbara Moojen", "ms-olympia"),
-  // Sábado
+  // Sábado (Open: prévias na sexta à noite)
   a("Leandro Peres", "open", "Brasil", "Único brasileiro no Open"),
-  a("Edvan Palmeira", "mens-physique"),
+  a("Edvan Palmeira", "mens-physique", "Brasil", "5º em 2025"),
   a("Diogo Basaglia", "mens-physique"),
   a("Vitor Chaves", "mens-physique"),
   a("Emerson Costa", "mens-physique"),
@@ -107,10 +220,4 @@ export const FORA_DO_EVENTO: { nome: string; categoria: string; motivo: string }
   { nome: "Alcione Barreto", categoria: "Ms. Olympia", motivo: "situação migratória" },
 ];
 
-export const categoria = (id: string) => CATEGORIAS.find((c) => c.id === id)!;
 export const DIA_TEXTO: Record<Dia, string> = { sexta: "Sexta, 25/09", sabado: "Sábado, 26/09" };
-export const STATUS_TEXTO: Record<Status, string> = {
-  aguardando: "Aguardando prévias",
-  previas: "Prévias concluídas",
-  final: "Resultado oficial",
-};

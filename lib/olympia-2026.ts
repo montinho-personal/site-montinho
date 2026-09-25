@@ -1,5 +1,5 @@
 import type { BlogPost } from "./blog";
-import { ATLETAS_BRASIL, DIA_TEXTO, FORA_DO_EVENTO, STATUS_TEXTO, categoria } from "./olympia-brasil";
+import { ATLETAS_BRASIL, DIA_TEXTO, FORA_DO_EVENTO, categoria } from "./olympia-brasil";
 
 /**
  * Cluster Mr. Olympia 2026 — conteúdo de notícia, num arquivo próprio.
@@ -64,7 +64,7 @@ const CTA_MASSA = `<h2>Do palco para o seu treino</h2>
 <p>Ninguém chega a quase 96 kg de palco em uma temporada: são anos de fases de ganho de massa bem conduzidas. Para quem treina sem competir, a lógica é a mesma, em escala real. Quer ver quanto músculo dá para ganhar em alguns meses? Use o <a href="/ferramentas/simulador-ganho-massa-muscular">simulador de ganho de massa muscular</a>. Se quiser um plano feito para o seu corpo e a sua rotina, sem se comparar com ninguém, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>`;
 
 /** Tabela do hub Brasil, gerada de lib/olympia-brasil.ts (HTML estático, indexável). */
-const TABELA_BRASIL = `<table><thead><tr><th>Atleta</th><th>Categoria</th><th>Representação oficial</th><th>Dia</th><th>Status</th><th>Resultado</th></tr></thead><tbody>${ATLETAS_BRASIL.map((x) => `<tr><td>${x.nome}</td><td>${categoria(x.categoria).nome}</td><td>${x.representacao}</td><td>${DIA_TEXTO[categoria(x.categoria).dia]}</td><td>${STATUS_TEXTO[x.status]}</td><td>${x.resultado ?? "A definir"}</td></tr>`).join("")}</tbody></table>`;
+const TABELA_BRASIL = `<table><thead><tr><th>Atleta</th><th>Categoria</th><th>Representação oficial</th><th>Dia</th><th>Status</th><th>Resultado</th></tr></thead><tbody>${ATLETAS_BRASIL.map((x) => `<tr><td>${x.nome}</td><td>${categoria(x.categoria).nome}</td><td>${x.representacao}</td><td>${DIA_TEXTO[categoria(x.categoria).dia]}</td><td>${categoria(x.categoria).resultadoOficial ? "Finalizado" : categoria(x.categoria).previasConcluidas ? "Aguardando final" : "Programado"}</td><td>${x.resultado ?? "A definir"}</td></tr>`).join("")}</tbody></table>`;
 
 const CTA_MASSA_PHYSIQUE = `<h2>Do palco para o seu treino</h2>
 <p>Ombros largos e cintura fina não são sorte: são anos de treino bem distribuído, ganho de massa em fases e definição. Quer ter uma noção de quanto músculo dá para ganhar em alguns meses, no seu caso? Use o <a href="/ferramentas/simulador-ganho-massa-muscular">simulador de ganho de massa muscular</a>. Se preferir um plano feito para o seu corpo e a sua rotina, sem se comparar com ninguém, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>`;
@@ -238,6 +238,10 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — 
 <tr><td>Mr. Olympia (Open)</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Derek Lunsford (EUA)</td><td><a href="/blog/resultado-mr-olympia-open-2026">Ver resultado</a></td></tr>
 </tbody></table>
 <p><em>Wheelchair e Fit Model também são decididas no sábado e entram aqui com o resultado oficial. Horários são o início de cada sessão de finais.</em></p>
+
+<h2>Status das categorias agora</h2>
+<p>Cada linha leva à página da categoria. O status muda sozinho quando um bloco começa; "resultado definido" só aparece com o anúncio oficial.</p>
+<!--OLYMPIA_STATUS:geral-->
 
 <h2>Programação completa (horário de Brasília)</h2>
 <h3>Sexta-feira, 25 de setembro</h3>
@@ -473,9 +477,10 @@ ${FONTES}`,
     tags: ["Mr. Olympia 2026", "212", "Lucas Garcia", "resultado", "fisiculturismo"],
     content: `${AVISO_ONDA2("O resultado da 212 do Mr. Olympia 2026 ainda não foi definido.")}
 <p><strong>A 212 ainda não aconteceu.</strong> As prévias começam às <strong>13h30 de sexta-feira, 25 de setembro</strong> (Brasília), e a final a partir das <strong>22h</strong> do mesmo dia, em Las Vegas. Keone Pearson (EUA) defende o tricampeonato. O Brasil tem quatro atletas na categoria: <strong>Lucas Garcia</strong>, terceiro colocado em 2025, <strong>Vitor Porto</strong>, <strong>Felipe Moraes</strong> e <strong>Andrey Pereira</strong>.</p>
+<!--OLYMPIA_CONTAGEM:212-->
 ${CAPA("resultado-212-mr-olympia-2026", "Capa: resultado da 212 do Mr. Olympia 2026 — Keone Pearson defende o título e Lucas Garcia lidera os quatro brasileiros; final na sexta às 22h de Brasília")}
 
-<h2>Resultado 212 Olympia 2026</h2>
+<h2 id="resultado">Resultado 212 Olympia 2026</h2>
 ${TABELA_PENDENTE(10)}
 <p><em>Tabela preenchida com o resultado oficial da IFBB Pro League, depois da final. Se só o top 5 for divulgado na noite, só o top 5 entra.</em></p>
 
@@ -499,10 +504,10 @@ ${TABELA_PENDENTE(10)}
 <li><strong>Breon Ansley (EUA)</strong> — bicampeão da Classic Physique (2017 e 2018), estreia na 212 no Olympia. Se vencer, será o primeiro atleta com títulos do Olympia nas duas categorias.</li>
 </ul>
 
-<h2>Como foram as prévias?</h2>
+<h2 id="como-foram-as-previas">Como foram as prévias?</h2>
 <p>As prévias ainda não aconteceram. Depois delas, esta seção vai registrar quem foi chamado para as primeiras comparações. Chamado não é resultado: a IFBB Pro League não divulga notas das prévias, e a colocação só existe depois da final.</p>
 
-<h2>Que horas acontece a final da 212?</h2>
+<h2 id="horario">Que horas acontece a final da 212?</h2>
 <ul>
 <li><strong>Prévias:</strong> sexta, 25/09, bloco a partir das 13h30 de Brasília (9h30 em Las Vegas), com 212, Classic Physique, Figure, Women's Physique, Ms. Olympia e Wellness.</li>
 <li><strong>Final:</strong> sexta, 25/09, sessão a partir das 22h de Brasília (18h em Las Vegas).</li>
@@ -546,9 +551,10 @@ ${FONTES}`,
     tags: ["Mr. Olympia 2026", "Women's Physique", "Natália Coelho", "resultado", "fisiculturismo"],
     content: `${AVISO_ONDA2("O resultado da Women's Physique do Olympia 2026 ainda não foi definido.")}
 <p><strong>A Women's Physique ainda não aconteceu.</strong> As prévias começam às <strong>13h30 de sexta-feira, 25 de setembro</strong> (Brasília), e a final a partir das <strong>22h</strong>, em Las Vegas. <strong>Natália Coelho</strong> defende o título conquistado em 2025, o segundo dela na categoria. <strong>Zama Benta</strong>, terceira colocada no ano passado, é a principal representante do Brasil no roster.</p>
+<!--OLYMPIA_CONTAGEM:womens-physique-->
 ${CAPA("resultado-womens-physique-olympia-2026", "Capa: resultado da Women's Physique do Olympia 2026 — Natália Coelho defende o título e cinco brasileiras disputam a categoria; final na sexta às 22h de Brasília")}
 
-<h2>Resultado Women's Physique Olympia 2026</h2>
+<h2 id="resultado">Resultado Women's Physique Olympia 2026</h2>
 ${TABELA_PENDENTE(10)}
 <p><em>Tabela preenchida com o resultado oficial da IFBB Pro League, depois da final. Se só o top 5 for divulgado na noite, só o top 5 entra.</em></p>
 
@@ -568,10 +574,10 @@ ${TABELA_PENDENTE(10)}
 <h2>Top 5 Women's Physique</h2>
 <p>Ainda não definido. As mais citadas pela imprensa especializada para o primeiro chamado: Natália Coelho, Sarah Villegas (quatro vezes campeã e vice em 2025), Zama Benta, Brittany Herrera (quarta em 2025) e Lenka Ferencukova (Eslováquia), vencedora de dois shows profissionais nesta temporada.</p>
 
-<h2>Como foram as prévias?</h2>
+<h2 id="como-foram-as-previas">Como foram as prévias?</h2>
 <p>As prévias ainda não aconteceram. Depois delas, esta seção vai registrar quem foi chamado para as primeiras comparações. Chamado não é resultado: a colocação só existe depois da final.</p>
 
-<h2>Horário da final</h2>
+<h2 id="horario">Horário da final</h2>
 <ul>
 <li><strong>Prévias:</strong> sexta, 25/09, bloco a partir das 13h30 de Brasília (9h30 em Las Vegas), com Women's Physique, 212, Classic Physique, Figure, Ms. Olympia e Wellness.</li>
 <li><strong>Final:</strong> sexta, 25/09, sessão a partir das 22h de Brasília (18h em Las Vegas).</li>
@@ -615,13 +621,16 @@ ${FONTES}`,
     tags: ["Mr. Olympia 2026", "brasileiros", "Ramon Dino", "resultados", "fisiculturismo"],
     content: `${AVISO_ONDA2("Nenhum brasileiro competiu ainda no Mr. Olympia 2026.")}
 <p><strong>Os brasileiros começam a competir nesta sexta-feira, 25 de setembro</strong>, com as prévias a partir das 13h30 (Brasília): Ramon Dino na Classic Physique, Lucas Garcia na 212, Natália Coelho na Women's Physique e mais de vinte brasileiras na Wellness. No <strong>sábado, 26</strong>, é a vez de Men's Physique, Bikini e do Open, com Leandro Peres. Os resultados de cada um entram aqui assim que forem oficiais.</p>
+<h2>Acompanhe os brasileiros no Mr. Olympia 2026</h2>
+<p>Prévias às 13h30 e finais a partir das 22h na sexta (25) e das 23h no sábado (26), horário de Brasília. "Agora" indica o bloco que já começou; uma categoria só aparece como finalizada com resultado oficial.</p>
+<!--OLYMPIA_CONTAGEM:brasil-->
 ${CAPA("brasileiros-mr-olympia-2026", "Capa: brasileiros no Mr. Olympia 2026 — painel com atletas, categorias, horários de Brasília e resultados de sexta e sábado")}
 
 <h2>Painel Brasil no Mr. Olympia 2026</h2>
 <p>Filtre por dia, categoria ou nome. "Roster" é o país que a IFBB Pro League mostra ao lado do atleta.</p>
 <!--PAINEL_BRASIL:olympia-->
 
-<h2>Resultados dos brasileiros no Mr. Olympia 2026</h2>
+<h2 id="resultados-brasileiros">Resultados dos brasileiros no Mr. Olympia 2026</h2>
 ${TABELA_BRASIL}
 <p><em>A coluna "Resultado" só é preenchida com a classificação oficial. Wellness: estão aqui as brasileiras de destaque; a lista completa da categoria fica em <a href="/blog/resultado-wellness-mr-olympia-2026">resultado da Wellness 2026</a>.</em></p>
 
@@ -688,9 +697,10 @@ ${FONTES}`,
     tags: ["Mr. Olympia 2026", "Men's Physique", "Edvan Palmeira", "resultado", "fisiculturismo"],
     content: `${AVISO_ONDA2("O resultado da Men's Physique do Olympia 2026 ainda não foi definido.")}
 <p><strong>A Men's Physique ainda não aconteceu.</strong> As prévias começam às <strong>13h30 de sábado, 26 de setembro</strong> (Brasília), e a final a partir das <strong>23h</strong>, em Las Vegas. Ryan Terry (Reino Unido) defende o tricampeonato. <strong>Edvan Palmeira</strong>, quinto colocado em 2025, é o brasileiro mais bem colocado no ano passado, num grupo de nove atletas listados pelo Brasil.</p>
+<!--OLYMPIA_CONTAGEM:mens-physique-->
 ${CAPA("resultado-mens-physique-olympia-2026", "Capa: resultado da Men's Physique do Olympia 2026 — Ryan Terry defende o título e Edvan Palmeira lidera os brasileiros; final no sábado às 23h de Brasília")}
 
-<h2>Resultado Men's Physique Olympia 2026</h2>
+<h2 id="resultado">Resultado Men's Physique Olympia 2026</h2>
 ${TABELA_PENDENTE(10)}
 <p><em>Tabela preenchida com o resultado oficial da IFBB Pro League, depois da final. Se só o top 5 for divulgado na noite, só o top 5 entra.</em></p>
 
@@ -715,10 +725,10 @@ ${ATLETAS_BRASIL.filter((x) => x.categoria === "mens-physique").map((x) => `<tr>
 <h2>Top 10</h2>
 <p>Ainda não definido. A tabela no topo recebe o top 10 oficial assim que a IFBB Pro League publicar.</p>
 
-<h2>Como foram as prévias?</h2>
+<h2 id="como-foram-as-previas">Como foram as prévias?</h2>
 <p>As prévias ainda não aconteceram. Depois delas, esta seção vai registrar quem foi chamado para as primeiras comparações, sem transformar chamado em colocação.</p>
 
-<h2>Horário da final</h2>
+<h2 id="horario">Horário da final</h2>
 <ul>
 <li><strong>Prévias:</strong> sábado, 26/09, bloco a partir das 13h30 de Brasília (9h30 em Las Vegas), com Men's Physique, Fitness, Bikini, Wheelchair e Fit Model.</li>
 <li><strong>Final:</strong> sábado, 26/09, sessão a partir das 23h de Brasília (19h em Las Vegas), a mesma noite do Open.</li>
@@ -762,9 +772,10 @@ ${FONTES}`,
     tags: ["Mr. Olympia 2026", "Bikini", "Elisa Pecini", "resultado", "fisiculturismo"],
     content: `${AVISO_ONDA2("O resultado da Bikini Olympia 2026 ainda não foi definido.")}
 <p><strong>A Bikini ainda não aconteceu.</strong> As prévias começam às <strong>13h30 de sábado, 26 de setembro</strong> (Brasília), e a final a partir das <strong>23h</strong>, em Las Vegas. Maureen Blanquisco (Filipinas) defende o título. O Brasil tem três atletas: <strong>Elisa Pecini</strong>, a Isa Pecini, campeã em 2019, <strong>Nivea Campos</strong> e <strong>Bruna Toigo</strong>.</p>
+<!--OLYMPIA_CONTAGEM:bikini-->
 ${CAPA("resultado-bikini-olympia-2026", "Capa: resultado da Bikini Olympia 2026 — Maureen Blanquisco defende o título e Elisa Pecini lidera as três brasileiras; final no sábado às 23h de Brasília")}
 
-<h2>Resultado Bikini Olympia 2026</h2>
+<h2 id="resultado">Resultado Bikini Olympia 2026</h2>
 ${TABELA_PENDENTE(10)}
 <p><em>Tabela preenchida com o resultado oficial da IFBB Pro League, depois da final. Se só o top 5 for divulgado na noite, só o top 5 entra.</em></p>
 
@@ -783,10 +794,10 @@ ${ATLETAS_BRASIL.filter((x) => x.categoria === "bikini").map((x) => `<tr><td>${x
 <h2>Top 10</h2>
 <p>Ainda não definido. A tabela no topo recebe o top 10 oficial assim que a IFBB Pro League publicar.</p>
 
-<h2>Como foram as prévias?</h2>
+<h2 id="como-foram-as-previas">Como foram as prévias?</h2>
 <p>As prévias ainda não aconteceram. Depois delas, esta seção vai registrar quem foi chamada para as primeiras comparações, sem transformar chamado em colocação.</p>
 
-<h2>Horário da final</h2>
+<h2 id="horario">Horário da final</h2>
 <ul>
 <li><strong>Prévias:</strong> sábado, 26/09, bloco a partir das 13h30 de Brasília (9h30 em Las Vegas), com Bikini, Men's Physique, Fitness, Wheelchair e Fit Model.</li>
 <li><strong>Final:</strong> sábado, 26/09, sessão a partir das 23h de Brasília (19h em Las Vegas).</li>

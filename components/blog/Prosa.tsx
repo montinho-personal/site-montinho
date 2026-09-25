@@ -1,32 +1,36 @@
 import CalculadoraClassic from "@/components/classic/CalculadoraClassic";
 import PainelBrasil from "@/components/olympia/PainelBrasil";
+import Contagem from "@/components/olympia/Contagem";
+import StatusCategorias from "@/components/olympia/StatusCategorias";
 
 /**
  * O corpo do artigo, com ferramentas embutidas no ponto exato do texto.
  *
  * O conteúdo continua HTML; onde houver um marcador
  * <!--CALCULADORA_CLASSIC:completa|compacta--> o componente real entra no
- * lugar dele. <!--PAINEL_BRASIL:olympia--> faz o mesmo com o painel dos
- * brasileiros no Mr. Olympia. Sem marcador, é só a mesma div de sempre — nada muda nos
+ * lugar dele. O mesmo vale para o Mr. Olympia 2026:
+ * <!--PAINEL_BRASIL:olympia-->, <!--OLYMPIA_STATUS:geral--> e
+ * <!--OLYMPIA_CONTAGEM:<id da categoria>|brasil-->. Sem marcador, é só a mesma div de sempre — nada muda nos
  * outros mil artigos.
  */
-const MARCADOR = /<!--(?:CALCULADORA_CLASSIC|PAINEL_BRASIL):(completa|compacta|olympia)-->/;
+const MARCADOR = /<!--(CALCULADORA_CLASSIC|PAINEL_BRASIL|OLYMPIA_STATUS|OLYMPIA_CONTAGEM):([a-z0-9-]+)-->/;
 
 export default function Prosa({ html, slug }: { html: string; slug: string }) {
   if (!MARCADOR.test(html)) return <div className="prose-blog" dangerouslySetInnerHTML={{ __html: html }} />;
   const partes = html.split(new RegExp(MARCADOR.source, "g"));
-  // split com grupo: [texto, variante, texto, variante, texto...]
-  return (
-    <>
-      {partes.map((p, i) =>
-        i % 2 === 0 ? (
-          p.trim() ? <div key={i} className="prose-blog" dangerouslySetInnerHTML={{ __html: p }} /> : null
-        ) : (
-          <div key={i} className="my-8">
-            {p === "olympia" ? <PainelBrasil /> : <CalculadoraClassic variante={p as "completa" | "compacta"} placement={`artigo-${slug}`} />}
-          </div>
-        ),
-      )}
-    </>
-  );
+  // split com dois grupos: [texto, tipo, arg, texto, tipo, arg, texto...]
+  const out = [];
+  for (let i = 0; i < partes.length; i += 3) {
+    const p = partes[i];
+    if (p.trim()) out.push(<div key={i} className="prose-blog" dangerouslySetInnerHTML={{ __html: p }} />);
+    const tipo = partes[i + 1];
+    const arg = partes[i + 2];
+    if (!tipo) continue;
+    out.push(
+      <div key={`e${i}`} className="my-8">
+        {tipo === "PAINEL_BRASIL" ? <PainelBrasil /> : tipo === "OLYMPIA_STATUS" ? <StatusCategorias /> : tipo === "OLYMPIA_CONTAGEM" ? <Contagem cat={arg} /> : <CalculadoraClassic variante={arg as "completa" | "compacta"} placement={`artigo-${slug}`} />}
+      </div>,
+    );
+  }
+  return <>{out}</>;
 }
