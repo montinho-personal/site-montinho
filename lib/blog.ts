@@ -50467,7 +50467,7 @@ Total: 19 repetições próximas à falha vs 10 em uma série convencional</p>
 </ul>
 
 <h2>A Versão Moderna do Heavy Duty: Dorian Yates e o Refinamento</h2>
-<p>Dorian Yates, 6x Mr. Olympia nos anos 90, adaptou o Heavy Duty para uma versão mais estruturada: "Blood and Guts Training". Yates usava 2-3 séries de aquecimento + 1 série de trabalho à falha absoluta, com frequência de 4 treinos semanais (mas cada grupo 1x/semana). Essa versão tem mais adesão entre praticantes naturais porque equilibra intensidade máxima com volume ligeiramente maior.</p>
+<p>Dorian Yates, 6x Mr. Olympia nos anos 90 (a lista de campeões continua: veja <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>), adaptou o Heavy Duty para uma versão mais estruturada: "Blood and Guts Training". Yates usava 2-3 séries de aquecimento + 1 série de trabalho à falha absoluta, com frequência de 4 treinos semanais (mas cada grupo 1x/semana). Essa versão tem mais adesão entre praticantes naturais porque equilibra intensidade máxima com volume ligeiramente maior.</p>
 
 <h2>Para Quem o Heavy Duty Faz Sentido Hoje</h2>
 <table>
@@ -113866,7 +113866,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <ul>
 <li><strong>A postura da barriga em repouso.</strong> Um transverso com melhor tônus e controle sustenta a parede abdominal — a diferença entre o abdômen que "despenca" relaxado e o que se mantém. Em quem tem esse relaxamento como principal queixa, o efeito estético existe e aparece em pé, de lado, nas fotos.</li>
 <li><strong>Consciência de core.</strong> Aprender a ativar o transverso melhora a qualidade da contração abdominal em outros exercícios — prancha, agachamento, remada.</li>
-<li><strong>Controle respiratório</strong> — herança dos fisiculturistas clássicos, que usavam o vacuum como pose e como treino.</li>
+<li><strong>Controle respiratório</strong> — herança dos fisiculturistas clássicos, que usavam o vacuum como pose e como treino. Hoje ele é pose obrigatória da Classic Physique, a categoria de Ramon Dino — veja o <a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic Physique do Mr. Olympia 2026</a>.</li>
 </ul>
 
 <h2>O que ele não faz — e é aqui que a promessa quebra</h2>

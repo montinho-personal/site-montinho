@@ -59,6 +59,22 @@ const CTA_MONTINHO = `<h2>E o seu shape?</h2>
 const CAPA = (slug: string, alt: string) =>
   `<img src="/blog-images/${slug}-capa.webp" alt="${alt}" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:1.5rem 0;" />`;
 
+/**
+ * "Acompanhe o Mr. Olympia 2026": navegação discreta do cluster, antes do CTA.
+ * Lista as outras cinco páginas (a atual fica de fora) com anchor descritivo.
+ */
+const LINKS_CLUSTER: [string, string][] = [
+  ["quem-ganhou-mr-olympia-2026", "Quem ganhou o Mr. Olympia 2026: todos os campeões"],
+  ["resultado-classic-physique-mr-olympia-2026", "Resultado da Classic Physique, com Ramon Dino"],
+  ["ramon-dino-mr-olympia-2026-horario", "Que horas Ramon Dino compete e onde assistir"],
+  ["resultado-wellness-mr-olympia-2026", "Resultado da Wellness e as brasileiras"],
+  ["resultado-mr-olympia-open-2026", "Resultado do Open: campeão e top 10"],
+  ["ramon-dino-peso-altura", "Quanto pesa Ramon Dino e o limite da Classic"],
+];
+const ACOMPANHE = (atual: string) =>
+  `<h3>Acompanhe o Mr. Olympia 2026</h3>
+<ul>${LINKS_CLUSTER.filter(([s]) => s !== atual).map(([s, t]) => `<li><a href="/blog/${s}">${t}</a></li>`).join("")}</ul>`;
+
 const TABELA_PENDENTE = (n: number) =>
   `<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody>${Array.from({ length: n }, (_, i) => `<tr><td>${i + 1}º</td><td>A definir</td><td>—</td></tr>`).join("")}</tbody></table>`;
 
@@ -104,6 +120,8 @@ ${TABELA_PENDENTE(5)}
 
 <h2>As outras categorias</h2>
 <p>Na mesma noite são decididas Wellness (<a href="/blog/resultado-wellness-mr-olympia-2026">resultado da Wellness 2026</a>), 212, Figure, Women's Physique e Ms. Olympia. O Open, título máximo do evento, é decidido no sábado (<a href="/blog/resultado-mr-olympia-open-2026">resultado do Mr. Olympia Open 2026</a>). Todos os campeões ficam reunidos em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+
+${ACOMPANHE("resultado-classic-physique-mr-olympia-2026")}
 
 ${CTA_FASES}
 ${FONTES}`,
@@ -152,6 +170,8 @@ ${CAPA("ramon-dino-mr-olympia-2026-horario", "Capa: que horas Ramon Dino compete
 
 <h2>Depois da final</h2>
 <p>A classificação completa e a colocação de Ramon entram em <a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic Physique do Mr. Olympia 2026</a> assim que forem anunciadas. A programação do fim de semana inteiro, com as outras categorias, está em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+
+${ACOMPANHE("ramon-dino-mr-olympia-2026-horario")}
 
 ${FONTES}`,
     faq: [
@@ -219,6 +239,8 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — 
 <h2>Quem chega como favorito no Open</h2>
 <p>Derek Lunsford (EUA) defende o título de 2025, ano em que não perdeu nenhuma competição. Samson Dauda (campeão de 2024), Andrew Jacked (terceiro em 2025 e invicto desde então), Nick Walker e Martin Fitzwater são os mais citados para o primeiro chamado. Hadi Choopan, vice três vezes seguidas, desistiu em agosto. A análise completa está em <a href="/blog/resultado-mr-olympia-open-2026">resultado do Mr. Olympia Open 2026</a>.</p>
 
+${ACOMPANHE("quem-ganhou-mr-olympia-2026")}
+
 ${CTA_MONTINHO}
 ${FONTES}`,
     faq: [
@@ -277,6 +299,8 @@ ${TABELA_PENDENTE(5)}
 <h2>As outras decisões da noite</h2>
 <p>Na mesma sessão de sexta são decididas Classic Physique (<a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic com Ramon Dino</a>), 212, Figure, Women's Physique e Ms. Olympia. Todos os campeões em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
+${ACOMPANHE("resultado-wellness-mr-olympia-2026")}
+
 ${CTA_WELLNESS}
 ${FONTES}`,
     faq: [
@@ -327,6 +351,8 @@ ${TABELA_PENDENTE(10)}
 
 <h2>Todas as categorias</h2>
 <p>Os campeões de sexta e sábado ficam reunidos em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>, incluindo a <a href="/blog/resultado-wellness-mr-olympia-2026">Wellness, com as brasileiras</a>.</p>
+
+${ACOMPANHE("resultado-mr-olympia-open-2026")}
 
 ${CTA_MONTINHO}
 ${FONTES}`,
@@ -389,6 +415,8 @@ ${CAPA("ramon-dino-peso-altura", "Capa: quanto pesa Ramon Dino — 102,5 kg na p
 
 <h2>O que isso ensina para quem treina sem palco</h2>
 <p>Ramon compete com um limite de peso e mesmo assim precisa parecer maior a cada ano. A resposta não é "mais peso": é mais músculo no mesmo peso, com menos gordura e melhor distribuição. Para quem treina em academia comum, a lição é a mesma: a balança sozinha diz pouco; o que muda o corpo é a composição. Se você quer saber quanto músculo o seu corpo comporta sem hormônios, a <a href="/ferramentas/potencial-natural">Calculadora de Potencial Natural</a> estima isso pela altura e pela estrutura, e o artigo sobre <a href="/blog/quanto-tempo-para-ganhar-massa-muscular">quanto tempo leva para ganhar massa muscular</a> mostra o ritmo realista.</p>
+
+${ACOMPANHE("ramon-dino-peso-altura")}
 
 ${CTA_FASES}
 ${FONTES}`,
