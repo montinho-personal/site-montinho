@@ -45,12 +45,10 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   // chega com "quem ganhou / que horas / quanto pesa" e sai com um fato, não com
   // uma conta. O único link de ferramenta que cabe (Potencial Natural, no
   // artigo de peso e altura) já está no texto, como contexto, não como decisão.
-  "resultado-classic-physique-mr-olympia-2026": "Notícia de resultado do Olympia: a pessoa chega perguntando quem ganhou e em que posição Ramon Dino ficou; sai com um fato, e nenhuma ferramenta do site calcula isso.",
   "ramon-dino-mr-olympia-2026-horario": "Notícia de horário e transmissão: a pessoa quer saber que horas Ramon Dino compete e onde assistir; não há conta na cabeça nem ferramenta que responda isso.",
   "quem-ganhou-mr-olympia-2026": "Hub de resultados do Mr. Olympia 2026, categoria por categoria: a leitura termina com nomes e colocações, nunca com um número para calcular.",
   "resultado-wellness-mr-olympia-2026": "Notícia de resultado da Wellness: a pessoa quer a campeã e a colocação das brasileiras; sai com um fato, sem conta pendente para uma ferramenta.",
   "resultado-mr-olympia-open-2026": "Notícia de resultado do Open: a pessoa quer o campeão e o top 10; sai com um fato, e nenhuma ferramenta do site tem papel nessa pergunta.",
-  "ramon-dino-peso-altura": "Ficha do atleta e regra de peso da categoria; o link para Potencial Natural está no texto como contexto.",
   "rosca-direta-vs-rosca-martelo":
     "Comparativo de exercício: a decisão do leitor é qual pegada usar, e a resposta é anatômica, não numérica. Nenhuma ferramenta do site compara exercícios.",
 

@@ -636,7 +636,19 @@ export type AnalyticsEvent =
   | "weekend_methodology_open"
   | "weekend_internal_tool_click"
   | "weekend_share_clicked"
-  | "weekend_whatsapp_click";
+  | "weekend_whatsapp_click"
+  /**
+   * Calculadora de Peso da Classic Physique. Só interação: nunca altura nem
+   * peso. `variant` = "completa" | "compacta"; `placement` = página/artigo.
+   */
+  | "classic_calc_view"
+  | "classic_calc_started"
+  | "classic_calc_completed"
+  | "classic_calc_weight_used"
+  | "classic_calc_table_open"
+  | "classic_calc_share"
+  | "classic_calc_mass_simulator_click"
+  | "classic_calc_whatsapp_click";
 
 export interface EventParams {
   [key: string]: string | number | boolean | undefined;

@@ -30,7 +30,7 @@ export interface FerramentaSchema {
    * que é o caso de todas por enquanto. O campo existe para o dia em que
    * não for.
    */
-  categoria?: "HealthApplication" | "UtilitiesApplication";
+  categoria?: "HealthApplication" | "UtilitiesApplication" | "SportsApplication";
 }
 
 export function aplicativoSchema({ nome, descricao, caminho, categoria = "HealthApplication" }: FerramentaSchema) {

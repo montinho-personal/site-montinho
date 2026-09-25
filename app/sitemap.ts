@@ -295,6 +295,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/ferramentas/calculadora-peso-classic-physique`,
+      lastModified: new Date("2026-09-25"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${SITE_URL}/ferramentas/simulador-fim-de-semana`,
       lastModified: new Date(),
       changeFrequency: "monthly",
