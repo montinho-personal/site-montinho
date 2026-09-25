@@ -132,6 +132,14 @@ const CAPAS = [
 <div class="main"><h1>Quem vence<br>a <em>212</em> em 2026</h1>
 <div class="sub">Campeão, <b>top 10</b> e os <b>4 brasileiros</b>, com Lucas Garcia.<br>Final na <b>sexta, 25/09, a partir das 22h</b> (Brasília).</div></div>`, "212"),
   },
+  {
+    slug: "resultado-womens-physique-olympia-2026",
+    alt: "Capa: resultado da Women's Physique do Olympia 2026 — Natália Coelho defende o título e cinco brasileiras disputam a categoria; final na sexta às 22h de Brasília",
+    html: base(`
+<div class="top"><div class="kicker">Olympia 2026 · Women's Physique</div><div class="chip"><i></i>Resultado</div></div>
+<div class="main"><h1>Natália Coelho<br>defende o <em>título</em></h1>
+<div class="sub">Campeã, <b>top 10</b> e as <b>5 brasileiras</b> da categoria.<br>Final na <b>sexta, 25/09, a partir das 22h</b> (Brasília).</div></div>`, "PHYSIQUE"),
+  },
 ];
 // Só algumas capas: node scripts/olympia-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);
