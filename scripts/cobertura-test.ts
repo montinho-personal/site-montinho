@@ -55,6 +55,7 @@ import { ARTIGOS_COM_LINK_SIMULADOR } from "../lib/simulador/emagrecimento";
 import { ARTIGOS_COM_LINK_SIMULADOR_MASSA } from "../lib/simulador/massa";
 import { ARTIGOS_COM_LINK_SHAPE12 } from "../lib/simulador/shape12";
 import { ARTIGOS_COM_LINK_FIM_DE_SEMANA } from "../lib/simulador/fim-de-semana";
+import { ARTIGOS_COM_CALCULADORA_CLASSIC } from "../lib/classic-physique";
 
 let falhas = 0;
 function check(nome: string, cond: boolean, detalhe = "") {
@@ -111,6 +112,7 @@ const REGISTROS: [string, string[]][] = [
   ["simulador massa (link)", ARTIGOS_COM_LINK_SIMULADOR_MASSA],
   ["shape 12 semanas (link)", ARTIGOS_COM_LINK_SHAPE12],
   ["simulador fim de semana (link)", ARTIGOS_COM_LINK_FIM_DE_SEMANA],
+  ["classic physique (embutida)", ARTIGOS_COM_CALCULADORA_CLASSIC],
 ];
 
 const onde = new Map<string, string>();

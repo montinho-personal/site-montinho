@@ -115,6 +115,10 @@ ${TABELA_PENDENTE(5)}
 </ul>
 <p>Outros atletas aparecem nas prévias da imprensa especializada como candidatos ao top 5. A lista final de quem sobe ao palco é da IFBB Pro League, e o primeiro chamado das prévias costuma indicar quem disputa o título — sem definir nada até a final.</p>
 
+<h2>E se você competisse na Classic?</h2>
+<p>Ramon compete na faixa até 182,9 cm. Veja em qual faixa a sua altura cairia — e qual seria o seu teto na tabela profissional (ou <a href="/ferramentas/calculadora-peso-classic-physique">calcule o limite de peso da Classic Physique pela sua altura</a> na versão completa):</p>
+<!--CALCULADORA_CLASSIC:compacta-->
+
 <h2>Como funciona a decisão: prévias e final</h2>
 <p>Na <strong>prévia (prejudging)</strong>, os juízes comparam os atletas em grupos, nas poses obrigatórias, e é ali que a maior parte da nota se forma. Na <strong>final</strong>, cada um faz a rotina de posing e há novas comparações; o resultado é anunciado no palco. Por isso o "quem ganhou" só existe depois da final, na noite de sexta no horário de Brasília. Detalhes do formato e da regra de peso: <a href="/blog/ramon-dino-peso-altura">limite de peso da Classic Physique</a>.</p>
 
@@ -397,6 +401,10 @@ ${CAPA("ramon-dino-peso-altura", "Capa: quanto pesa Ramon Dino — 102,5 kg na p
 <h2>O que é o limite de peso da Classic Physique</h2>
 <p>A Classic Physique é a categoria criada pela IFBB Pro League em 2016 para premiar o físico "clássico": cintura fina, ombros largos, linhas e proporção, em vez da massa máxima do Open. Para impedir que ela virasse um Open menor, existe um <strong>teto de peso por faixa de altura</strong>: quanto mais alto o atleta, mais peso pode levar ao palco. Quem passa do limite na pesagem não compete.</p>
 <p>A tabela oficial é da IFBB Pro League e foi revisada em 2025, com limites maiores em várias faixas. Para a altura de Ramon Dino, 1,81 m, o teto é 103 kg (227 lb). A tabela completa, faixa por faixa, está nas <a href="https://www.ifbbpro.com/rules/" target="_blank" rel="noopener noreferrer">regras oficiais da IFBB Pro League</a>; não reproduzimos os outros valores aqui porque eles mudam entre temporadas e o número certo é sempre o do documento vigente.</p>
+
+<h2>Qual seria seu limite na Classic Physique?</h2>
+<p>Digite sua altura para descobrir em qual faixa da tabela profissional você entraria. A <a href="/ferramentas/calculadora-peso-classic-physique">calculadora de peso da Classic Physique</a> também tem a tabela oficial completa e aceita pés e polegadas.</p>
+<!--CALCULADORA_CLASSIC:completa-->
 
 <h2>Por que altura e peso andam juntos</h2>
 <p>Dois atletas com a mesma massa muscular e alturas diferentes têm visuais diferentes: no mais alto, o mesmo músculo se distribui por mais osso e parece menor. O limite por altura tenta manter a comparação justa e, principalmente, manter a proposta estética da categoria. É o mesmo raciocínio que faz a Classic ser julgada com poses clássicas (como a vacuum pose) que o Open não exige.</p>

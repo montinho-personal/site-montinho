@@ -305,6 +305,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     selo: "novo",
   },
   {
+    id: "classic-physique",
+    href: "/ferramentas/calculadora-peso-classic-physique",
+    nome: "Calculadora de Peso da Classic Physique",
+    resultado: "Digite sua altura e veja o peso máximo permitido na Classic Physique profissional da IFBB Pro League.",
+    acao: "Calcular meu limite",
+    tempo: "10 segundos",
+    categoria: "treino",
+    icone: "corpo",
+    tags: ["classic physique", "peso maximo", "limite de peso", "tabela peso altura", "ifbb pro", "mr olympia", "ramon dino", "fisiculturismo", "bodybuilding"],
+    selo: "novo",
+  },
+  {
     id: "volume",
     href: "/ferramentas/calculadora-volume-treino",
     nome: "Calculadora de Volume de Treino",

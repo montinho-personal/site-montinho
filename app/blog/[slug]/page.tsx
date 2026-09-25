@@ -31,6 +31,7 @@ import CalculadoraDeficit from "@/components/calorias/CalculadoraDeficit";
 import CalculadoraTDEE from "@/components/tdee/CalculadoraTDEE";
 import MonteSeuCardapio from "@/components/cardapio/MonteSeuCardapio";
 import BlocoCaminho from "@/components/comece/BlocoCaminho";
+import Prosa from "@/components/blog/Prosa";
 import ConviteMobilidade from "@/components/mobilidade/ConviteMobilidade";
 import { ARTIGOS_COM_CALCULADORA_1RM, ARTIGOS_COM_LINK_1RM } from "@/lib/onerm";
 import { ARTIGOS_COM_CALCULADORA_MACROS } from "@/lib/macros";
@@ -449,7 +450,7 @@ export default async function BlogPost({ params }: Props) {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           {calcSplit && (
             <>
-              <div className="prose-blog" dangerouslySetInnerHTML={{ __html: calcSplit.before }} />
+              <Prosa html={calcSplit.before} slug={post.slug} />
               <div className="my-10">
                 {linkPolichineloNoTopo ? (
                   <LinkFerramentaPolichinelo slug={post.slug} posicao="topo" />
@@ -552,7 +553,7 @@ export default async function BlogPost({ params }: Props) {
           )}
           {split && cta.mid ? (
             <>
-              <div className="prose-blog" dangerouslySetInnerHTML={{ __html: split.before }} />
+              <Prosa html={split.before} slug={post.slug} />
               <ContextualCTA
                 cta={cta.mid}
                 position="mid_article"
@@ -561,11 +562,11 @@ export default async function BlogPost({ params }: Props) {
                 cluster={cta.cluster}
                 stage={cta.stage}
               />
-              <div className="prose-blog" dangerouslySetInnerHTML={{ __html: split.after }} />
+              <Prosa html={split.after} slug={post.slug} />
             </>
           ) : splitShare ? (
             <>
-              <div className="prose-blog" dangerouslySetInnerHTML={{ __html: splitShare.before }} />
+              <Prosa html={splitShare.before} slug={post.slug} />
               <div className="my-10">
                 <BlocoCompartilhar
                   contexto="article"
@@ -574,10 +575,10 @@ export default async function BlogPost({ params }: Props) {
                   local="article_quick_answer"
                 />
               </div>
-              <div className="prose-blog" dangerouslySetInnerHTML={{ __html: splitShare.after }} />
+              <Prosa html={splitShare.after} slug={post.slug} />
             </>
           ) : (
-            <div className="prose-blog" dangerouslySetInnerHTML={{ __html: corpoRestante }} />
+            <Prosa html={corpoRestante} slug={post.slug} />
           )}
           <ArticleLightbox />
           <VideoMedido slug={post.slug} />
