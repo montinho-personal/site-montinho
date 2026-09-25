@@ -51,6 +51,15 @@ export interface CategoriaOlympia {
   resultadoOficial?: boolean;
   /** Tem brasileiro no painel? (a contagem do hub Brasil só olha estas) */
   temBrasileiro?: boolean;
+  /**
+   * Prévias e final na MESMA sessão (Fit Model). O início do bloco não diz
+   * que a categoria subiu ao palco: isso só com `noPalco` (confirmado).
+   */
+  sessaoUnica?: boolean;
+  /** Marcar só com confirmação: a categoria está no palco agora. */
+  noPalco?: boolean;
+  /** Campeã(o) oficial, para a caixa de encerramento. */
+  campeao?: string;
 }
 
 export const CATEGORIAS: CategoriaOlympia[] = [
@@ -65,7 +74,8 @@ export const CATEGORIAS: CategoriaOlympia[] = [
   { id: "mens-physique", nome: "Men's Physique", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", artigo: "resultado-mens-physique-olympia-2026", temBrasileiro: true },
   { id: "bikini", nome: "Bikini", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", artigo: "resultado-bikini-olympia-2026", temBrasileiro: true },
   { id: "fitness", nome: "Fitness", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais" },
-  { id: "fit-model", nome: "Fit Model", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", temBrasileiro: true },
+  // Estreia no Olympia: prévias E final na sessão de sábado de manhã.
+  { id: "fit-model", nome: "Fit Model", dia: "sabado", previas: "sabadoPrevias", final: "sabadoPrevias", artigo: "resultado-fit-model-olympia-2026", temBrasileiro: true, sessaoUnica: true },
 ];
 
 export const categoria = (id: string) => {
@@ -81,7 +91,9 @@ export type Fase =
   | "previas" // 2: bloco das prévias iniciado (sem confirmação de fim)
   | "aguardando-final" // 3: prévias confirmadas; contagem para as finais
   | "final" // 4: bloco das finais iniciado, resultado ainda não oficial
-  | "encerrada"; // 5: resultado oficial
+  | "encerrada" // 5: resultado oficial
+  | "bloco" // sessão única: bloco iniciado, categoria sem confirmação no palco
+  | "no-palco"; // sessão única: categoria confirmada no palco
 
 const t = (b: IdBloco) => Date.parse(BLOCOS[b].inicio);
 
@@ -92,6 +104,7 @@ const t = (b: IdBloco) => Date.parse(BLOCOS[b].inicio);
  */
 export function fase(c: CategoriaOlympia, agora: number): Fase {
   if (c.resultadoOficial) return "encerrada";
+  if (c.sessaoUnica) return c.noPalco ? "no-palco" : agora >= t(c.previas) ? "bloco" : "antes-previas";
   if (agora >= t(c.final)) return "final";
   if (c.previasConcluidas) return "aguardando-final";
   if (agora >= t(c.previas)) return "previas";
@@ -113,10 +126,13 @@ export const STATUS_FASE: Record<Fase, string> = {
   "aguardando-final": "Aguardando final",
   final: "Em andamento (bloco das finais)",
   encerrada: "Finalizado",
+  bloco: "Bloco em andamento (categoria programada)",
+  "no-palco": "Em andamento",
 };
 
 /** Texto estático (SSR/leitor de tela) da agenda da categoria. */
 export function agendaTexto(c: CategoriaOlympia): string {
+  if (c.sessaoUnica) return `Prévias e final na mesma sessão, a partir de ${BLOCOS[c.previas].texto}.`;
   return `Prévias: bloco a partir de ${BLOCOS[c.previas].texto}. Final: sessão a partir de ${BLOCOS[c.final].texto}.`;
 }
 
@@ -206,7 +222,7 @@ export const ATLETAS_BRASIL: AtletaBrasil[] = [
   a("Elisa Pecini", "bikini", "Brasil", "Campeã em 2019"),
   a("Nivea Campos", "bikini"),
   a("Bruna Toigo", "bikini"),
-  a("Gabriela Queiroz", "fit-model", "EUA"),
+  a("Gabriela Queiroz", "fit-model", "EUA", "Campeã do Wasatch Warrior 2026"),
 ];
 
 /** Classificados que não competem, com o motivo publicado. */

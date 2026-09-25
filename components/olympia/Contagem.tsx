@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { trackEvent } from "@/lib/analytics";
 import {
-  BLOCOS, NOME_BLOCO, agendaTexto, alvo, categoria, fase, inicioBloco, resumoBrasil,
+  ATLETAS_BRASIL, BLOCOS, NOME_BLOCO, agendaTexto, alvo, categoria, fase, inicioBloco, resumoBrasil,
   type CategoriaOlympia, type IdBloco,
 } from "@/lib/olympia-brasil";
 
@@ -58,6 +58,8 @@ function ContagemCategoria({ c }: { c: CategoriaOlympia }) {
   useView(c.id, f);
   const hojeFinal = BLOCOS[c.final].texto.split(",")[0];
   const clicaResultado = () => trackEvent("olympia_live_result_click", { category: c.id, state: f ?? "ssr" });
+
+  if (c.sessaoUnica) return <ContagemSessaoUnica c={c} f={f} agora={agora} clicaResultado={clicaResultado} />;
 
   return (
     <div className={caixa}>
@@ -141,6 +143,49 @@ function ContagemBrasil() {
           <p className={rotulo}>✅ Competição encerrada</p>
           <p className="text-white mt-1">Todos os blocos com brasileiros já aconteceram.</p>
           <a href="#resultados-brasileiros" className={btn}>Ver resultados dos brasileiros</a>
+          <Link href="/blog/quem-ganhou-mr-olympia-2026" className={lnk}>Ver todos os campeões do Olympia</Link>
+        </>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Categoria com prévias e final na mesma sessão (Fit Model). O início do
+ * bloco vira "bloco em andamento", nunca "categoria no palco": isso só com
+ * `noPalco` confirmado. Encerrada mostra campeã e brasileira, se marcadas.
+ */
+function ContagemSessaoUnica({ c, f, agora, clicaResultado }: { c: CategoriaOlympia; f: ReturnType<typeof fase> | null; agora: number | null; clicaResultado: () => void }) {
+  return (
+    <div className={caixa}>
+      <p className="sr-only">{c.nome}: {agendaTexto(c)}</p>
+      {f === null || f === "antes-previas" ? (
+        <>
+          <p className={rotulo} aria-hidden="true">⏱️ {c.nome} Olympia</p>
+          <p className="text-white font-semibold mt-1" aria-hidden="true">Prévias e final começam dentro de</p>
+          <p className="text-3xl sm:text-4xl font-bold text-white tabular-nums mt-1" aria-hidden="true">{agora !== null ? falta(inicioBloco(c.previas) - agora) : "—"}</p>
+          <p className="text-sm text-gray-400 mt-1" aria-hidden="true">Bloco a partir de {BLOCOS[c.previas].texto}. O horário é o início do bloco oficial; o momento exato em que a {c.nome} sobe ao palco pode variar.</p>
+          <a href="#horario" className={lnk}>Ver programação</a>
+        </>
+      ) : f === "bloco" ? (
+        <>
+          <p className={rotulo}>🔴 Bloco do Olympia em andamento</p>
+          <p className="text-white mt-1">A {c.nome} está programada para esta sessão. Esta página será atualizada quando houver informações confirmadas.</p>
+          <Link href="/blog/brasileiros-mr-olympia-2026" className={lnk}>Ver todos os brasileiros</Link>
+        </>
+      ) : f === "no-palco" ? (
+        <>
+          <p className={rotulo}>🔴 {c.nome} em andamento</p>
+          <p className="text-white mt-1">A categoria está no palco. O resultado oficial entra nesta página assim que for anunciado.</p>
+        </>
+      ) : (
+        <>
+          <p className={rotulo}>✅ {c.nome} Olympia 2026 encerrada</p>
+          {c.campeao && <p className="text-white mt-1">Campeã: <strong>{c.campeao}</strong></p>}
+          {ATLETAS_BRASIL.filter((x) => x.categoria === c.id && x.resultado).map((x) => (
+            <p key={x.nome} className="text-white">{x.nome}: <strong>{x.resultado}</strong></p>
+          ))}
+          <a href="#resultado" className={btn} onClick={clicaResultado}>Ver resultado completo</a>
           <Link href="/blog/quem-ganhou-mr-olympia-2026" className={lnk}>Ver todos os campeões do Olympia</Link>
         </>
       )}

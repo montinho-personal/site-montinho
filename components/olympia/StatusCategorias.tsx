@@ -18,6 +18,8 @@ const ICONE: Record<Fase, string> = {
   "aguardando-final": "⏱️",
   final: "🔴",
   encerrada: "✅",
+  bloco: "🔴",
+  "no-palco": "🔴",
 };
 const TEXTO: Record<Fase, string> = {
   "antes-previas": "Programada",
@@ -25,6 +27,8 @@ const TEXTO: Record<Fase, string> = {
   "aguardando-final": "Aguardando a final",
   final: "Bloco das finais em andamento",
   encerrada: "Resultado definido",
+  bloco: "Bloco em andamento",
+  "no-palco": "Em andamento",
 };
 const quando = (id: keyof typeof BLOCOS) => BLOCOS[id].texto.split(",")[0].replace("-feira", "") + ", " + BLOCOS[id].texto.split(", ")[2].split(" de Brasília")[0];
 
@@ -39,7 +43,7 @@ export default function StatusCategorias() {
           <>
             <span className="text-white font-medium">{c.nome}</span>
             <span className="text-gray-300 text-right">
-              {f ? `${ICONE[f]} ${TEXTO[f]}` : `Final: ${quando(c.final)}`}
+              {f ? `${ICONE[f]} ${f === "encerrada" && c.campeao ? c.campeao : TEXTO[f]}` : `${c.sessaoUnica ? "Prévias e final" : "Final"}: ${quando(c.final)}`}
             </span>
           </>
         );

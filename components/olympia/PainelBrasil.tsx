@@ -79,7 +79,7 @@ export default function PainelBrasil() {
                 <dl className="mt-2 grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 text-xs text-gray-400">
                   <dt>Roster</dt><dd className="text-gray-200">{x.representacao}</dd>
                   <dt>Dia</dt><dd className="text-gray-200">{DIA_TEXTO[c.dia]}</dd>
-                  <dt>Status</dt><dd className="text-gray-200">{agora === null ? "Programado" : `${fase(c, agora) === "previas" || fase(c, agora) === "final" ? "🔴 " : fase(c, agora) === "encerrada" ? "✅ " : ""}${STATUS_FASE[fase(c, agora)]}`}</dd>
+                  <dt>Status</dt><dd className="text-gray-200">{agora === null ? "Programado" : `${["previas", "final", "bloco", "no-palco"].includes(fase(c, agora)) ? "🔴 " : fase(c, agora) === "encerrada" ? "✅ " : ""}${STATUS_FASE[fase(c, agora)]}`}</dd>
                   <dt>Resultado</dt><dd className="text-gray-200">{x.resultado ?? "—"}</dd>
                 </dl>
                 {x.destaque && <p className="mt-2 text-xs text-gray-500">{x.destaque}</p>}

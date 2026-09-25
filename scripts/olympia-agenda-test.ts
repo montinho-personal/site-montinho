@@ -27,6 +27,16 @@ ok(fase({ ...c212, resultadoOficial: true }, at("2026-09-25T10:00:00-03:00")) ==
 const open = categoria("open");
 ok(fase(open, at("2026-09-25T22:30:00-03:00")) === "previas", "Open: prévias na sessão de sexta à noite");
 
+// Fit Model: sessão única — o bloco começar não põe a categoria no palco
+const fm = categoria("fit-model");
+ok(fase(fm, at("2026-09-26T13:29:00-03:00")) === "antes-previas", "Fit Model antes do bloco");
+ok(alvo(fm, at("2026-09-26T10:00:00-03:00"))?.bloco === "sabadoPrevias", "Fit Model: contagem para o bloco de sábado 13h30");
+ok(fase(fm, at("2026-09-26T13:30:00-03:00")) === "bloco", "Fit Model: bloco iniciado ≠ no palco");
+ok(alvo(fm, at("2026-09-26T14:00:00-03:00")) === null, "Fit Model: sem contagem depois do início do bloco");
+ok(fase(fm, at("2026-09-26T23:30:00-03:00")) === "bloco", "Fit Model: não encerra sozinha à noite");
+ok(fase({ ...fm, noPalco: true }, at("2026-09-26T14:00:00-03:00")) === "no-palco", "Fit Model: no palco só com confirmação");
+ok(fase({ ...fm, resultadoOficial: true }, at("2026-09-26T14:00:00-03:00")) === "encerrada", "Fit Model: resultado oficial encerra");
+
 // Hub Brasil
 const r0 = resumoBrasil(at("2026-09-25T02:00:00-03:00"));
 ok(r0.agora === null && r0.proximo?.bloco === "sextaPrevias", "madrugada de sexta: próximo = prévias de sexta");

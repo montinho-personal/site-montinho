@@ -53,6 +53,7 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   "brasileiros-mr-olympia-2026": "Hub dos brasileiros no Mr. Olympia 2026, com painel filtrável: a pessoa quer saber quem compete, quando e como terminou; sai com nomes e colocações.",
   "resultado-mens-physique-olympia-2026": "Notícia de resultado da Men's Physique: a pessoa quer o campeão e a posição de Edvan Palmeira e dos brasileiros; sai com um fato. O simulador de massa é só continuação.",
   "resultado-bikini-olympia-2026": "Notícia de resultado da Bikini: a pessoa quer a campeã e a posição de Elisa (Isa) Pecini e das brasileiras; sai com um fato, sem conta pendente.",
+  "resultado-fit-model-olympia-2026": "Notícia de resultado da Fit Model: a pessoa quer a campeã e a posição de Gabriela Queiroz, e às vezes o que é a categoria; sai com fatos, sem conta pendente.",
   "resultado-mr-olympia-open-2026": "Notícia de resultado do Open: a pessoa quer o campeão e o top 10; sai com um fato, e nenhuma ferramenta do site tem papel nessa pergunta.",
   "rosca-direta-vs-rosca-martelo":
     "Comparativo de exercício: a decisão do leitor é qual pegada usar, e a resposta é anatômica, não numérica. Nenhuma ferramenta do site compara exercícios.",

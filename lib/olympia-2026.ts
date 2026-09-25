@@ -69,6 +69,9 @@ const TABELA_BRASIL = `<table><thead><tr><th>Atleta</th><th>Categoria</th><th>Re
 const CTA_MASSA_PHYSIQUE = `<h2>Do palco para o seu treino</h2>
 <p>Ombros largos e cintura fina não são sorte: são anos de treino bem distribuído, ganho de massa em fases e definição. Quer ter uma noção de quanto músculo dá para ganhar em alguns meses, no seu caso? Use o <a href="/ferramentas/simulador-ganho-massa-muscular">simulador de ganho de massa muscular</a>. Se preferir um plano feito para o seu corpo e a sua rotina, sem se comparar com ninguém, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>`;
 
+const CTA_ROTINA = `<h2>E o seu shape?</h2>
+<p>Quer trabalhar o seu próprio shape sem se comparar a uma atleta profissional? Cada corpo tem a própria genética, rotina e história. O que funciona é um treino que caiba na sua semana e que você consiga manter por anos. Monte o seu em <a href="/treino-para-minha-rotina">treino para a minha rotina</a>. Se preferir acompanhamento, fale comigo pelo WhatsApp no fim da página.</p>`;
+
 /** Capa 1800×1013 (16:9) depois do primeiro parágrafo: a resposta vem antes da imagem no celular, e o Discover pega a primeira imagem raster do conteúdo. */
 const CAPA = (slug: string, alt: string) =>
   `<img src="/blog-images/${slug}-capa.webp" alt="${alt}" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:1.5rem 0;" />`;
@@ -89,6 +92,7 @@ const LINKS_CLUSTER: [string, string][] = [
   ["brasileiros-mr-olympia-2026", "Brasileiros no Mr. Olympia 2026: painel e resultados"],
   ["resultado-mens-physique-olympia-2026", "Resultado da Men's Physique, com Edvan Palmeira"],
   ["resultado-bikini-olympia-2026", "Resultado da Bikini, com Elisa Pecini"],
+  ["resultado-fit-model-olympia-2026", "Resultado da Fit Model, com Gabriela Queiroz"],
 ];
 const ACOMPANHE = (atual: string) =>
   `<h3>Acompanhe o Mr. Olympia 2026</h3>
@@ -235,9 +239,10 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — 
 <tr><td>Fitness</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Michelle Fredua-Mensah (GBR)</td><td>Nesta página</td></tr>
 <tr><td>Men's Physique</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Ryan Terry (GBR)</td><td><a href="/blog/resultado-mens-physique-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Bikini</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Maureen Blanquisco (PHI)</td><td><a href="/blog/resultado-bikini-olympia-2026">Ver resultado</a></td></tr>
+<tr><td>Fit Model (estreia)</td><td>Sáb 26/09, 13h30*</td><td>A definir</td><td>—</td><td><a href="/blog/resultado-fit-model-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Mr. Olympia (Open)</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Derek Lunsford (EUA)</td><td><a href="/blog/resultado-mr-olympia-open-2026">Ver resultado</a></td></tr>
 </tbody></table>
-<p><em>Wheelchair e Fit Model também são decididas no sábado e entram aqui com o resultado oficial. Horários são o início de cada sessão de finais.</em></p>
+<p><em>Wheelchair também é decidida no sábado e entra aqui com o resultado oficial. Horários são o início de cada sessão de finais. *A Fit Model tem prévias e final na sessão da manhã de sábado.</em></p>
 
 <h2>Status das categorias agora</h2>
 <p>Cada linha leva à página da categoria. O status muda sozinho quando um bloco começa; "resultado definido" só aparece com o anúncio oficial.</p>
@@ -664,7 +669,7 @@ ${TABELA_BRASIL}
 <h3>Bikini</h3>
 <p>Elisa Pecini (Isa Pecini), campeã em 2019, com Nivea Campos e Bruna Toigo. <a href="/blog/resultado-bikini-olympia-2026">Como ficou Isa Pecini na Bikini</a>.</p>
 <h3>Fit Model</h3>
-<p>Gabriela Queiroz, que aparece no roster pelos EUA.</p>
+<p>Gabriela Queiroz, brasileira, aparece no roster pelos EUA, na estreia da categoria no Olympia. Prévias e final na sessão das 13h30. <a href="/blog/resultado-fit-model-olympia-2026">Em que posição Gabriela Queiroz ficou</a>.</p>
 
 <h2>Onde assistir</h2>
 <p>Pela OlympiaTV, transmissão oficial, gratuita com cadastro no site do evento. Horários e detalhes em <a href="/blog/ramon-dino-mr-olympia-2026-horario">que horas Ramon Dino compete</a>.</p>
@@ -808,7 +813,7 @@ ${ATLETAS_BRASIL.filter((x) => x.categoria === "bikini").map((x) => `<tr><td>${x
 <p>Pela OlympiaTV, transmissão oficial, gratuita com cadastro no site do evento.</p>
 
 <h2>O que é Bikini no fisiculturismo?</h2>
-<p>É a categoria feminina com menos massa muscular e mais ênfase em forma geral, equilíbrio entre parte superior e inferior, condicionamento leve e apresentação: postura, caminhada e confiança no palco contam. Não há poses de contração muscular como no fisiculturismo.</p>
+<p>É a categoria feminina com ênfase em forma geral, equilíbrio entre parte superior e inferior, condicionamento leve e apresentação: postura, caminhada e confiança no palco contam. Não há poses de contração muscular como no fisiculturismo. A Fit Model, que estreia no Olympia neste ano, pede ainda menos massa e definição: veja a <a href="/blog/resultado-fit-model-olympia-2026">diferença entre Fit Model e Bikini</a>.</p>
 
 <h2>As outras categorias</h2>
 <p>Na mesma noite saem a <a href="/blog/resultado-mens-physique-olympia-2026">Men's Physique</a> e o <a href="/blog/resultado-mr-olympia-open-2026">Open</a>. As campeãs e os campeões de todas as categorias estão em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
@@ -821,6 +826,79 @@ ${FONTES}`,
       { question: "Quem ganhou a Bikini Olympia 2026?", answer: "Ainda não foi decidido. A final é no sábado, 26 de setembro, a partir das 23h (Brasília). Maureen Blanquisco defende o título, e esta página é atualizada com o resultado oficial." },
       { question: "Isa Pecini ganhou a Bikini Olympia?", answer: "Em 2026, ainda não há resultado. Elisa (Isa) Pecini foi campeã da Bikini Olympia em 2019." },
       { question: "Quais brasileiras competem na Bikini Olympia 2026?", answer: "Elisa Pecini, Nivea Campos e Bruna Toigo, todas listadas pelo Brasil no roster oficial." },
+    ],
+  },
+  /* ───────────────── 12. RESULTADO FIT MODEL ───────────────── */
+  {
+    slug: "resultado-fit-model-olympia-2026",
+    title: "Resultado Fit Model Olympia 2026: campeã, Top 10 e Gabriela Queiroz",
+    metaTitle: "Resultado Fit Model Olympia 2026: Gabriela Queiroz e Top 10",
+    metaDescription:
+      "Quem ganhou a Fit Model Olympia 2026, a estreia da categoria, e como ficou a brasileira Gabriela Queiroz. Prévias e final no sábado, 26/09, desde 13h30.",
+    excerpt:
+      "A Fit Model estreia no Olympia neste sábado, 26 de setembro, com prévias e final na mesma sessão. Campeã, top 10 e a posição de Gabriela Queiroz entram aqui.",
+    category: "Fisiculturismo",
+    tipo: "noticia",
+    date: DATA,
+    readTime: "4 min",
+    author: AUTOR,
+    tags: ["Mr. Olympia 2026", "Fit Model", "Gabriela Queiroz", "resultado", "fisiculturismo"],
+    content: `${AVISO_ONDA2("O resultado da Fit Model Olympia 2026 ainda não foi definido.")}
+<p><strong>⏳ Aguardando competição.</strong> A Fit Model Olympia 2026 acontece <strong>neste sábado, 26 de setembro</strong>, e é a estreia da categoria no Olympia. As prévias e a final estão programadas para a mesma sessão, iniciada às <strong>13h30 de Brasília</strong> (9h30 em Las Vegas). A brasileira <strong>Gabriela Queiroz</strong> está entre as classificadas. O resultado entra nesta página assim que for confirmado.</p>
+<!--OLYMPIA_CONTAGEM:fit-model-->
+${CAPA("resultado-fit-model-olympia-2026", "Capa: resultado da Fit Model Olympia 2026 — estreia da categoria no Olympia, com a brasileira Gabriela Queiroz; prévias e final no sábado a partir das 13h30 de Brasília")}
+
+<h2 id="resultado">Resultado Fit Model Olympia 2026</h2>
+${TABELA_PENDENTE(5)}
+<p><em>Tabela preenchida com o resultado oficial da IFBB Pro League. Se a classificação completa for divulgada, a tabela cresce até o top 10; se não, fica no que foi oficializado.</em></p>
+
+<h2 id="gabriela">Em que posição Gabriela Queiroz ficou no Olympia 2026?</h2>
+<p><strong>A posição de Gabriela Queiroz ainda não foi definida.</strong> A brasileira aparece no roster oficial da competição <strong>representando os Estados Unidos</strong>, por isso a classificação oficial vai mostrar "EUA" ao lado do nome dela. Gabriela se classificou para o Olympia com o título do Wasatch Warrior Pro 2026 e chega à estreia da categoria entre as vencedoras de shows profissionais da temporada.</p>
+<p>Ela é a única brasileira na Fit Model. Os outros brasileiros do fim de semana estão no <a href="/blog/brasileiros-mr-olympia-2026">painel dos brasileiros no Mr. Olympia 2026</a>.</p>
+
+<h2>Quem ganhou a Fit Model Olympia 2026?</h2>
+<p><strong>Ainda não foi decidido.</strong> Como é a primeira Fit Model do Olympia, não há campeã anterior para defender o título: a primeira vencedora da história da categoria no evento sai neste sábado. Entram as atletas que venceram shows profissionais da Fit Model na temporada (a categoria não usa sistema de pontos).</p>
+
+<h2>Top 5 / Top 10</h2>
+<p>Ainda não definidos. Só entram aqui colocações oficiais. Nada de top 10 montado por palpite ou por ordem de chamada.</p>
+
+<h2 id="como-foram-as-previas">Como foi a competição?</h2>
+<p>A competição ainda não aconteceu. Durante a sessão, esta seção vai registrar só fatos verificados, como as chamadas para comparação. Chamado não é colocação.</p>
+
+<h2 id="horario">Que horas acontece a Fit Model?</h2>
+<ul>
+<li><strong>Sábado, 26 de setembro</strong>, na sessão de prévias do Olympia, que começa às <strong>13h30 de Brasília</strong> (9h30 em Las Vegas).</li>
+<li>A Fit Model tem <strong>prévias e final na mesma sessão</strong>, junto com as prévias de Men's Physique, Bikini, Fitness e Wheelchair.</li>
+</ul>
+<p>O bloco começa às 13h30 de Brasília, e a Fit Model terá prévias e finais durante essa sessão. A ordem das categorias não é publicada com antecedência: o horário exato em que a categoria sobe ao palco pode variar.</p>
+
+<h2>Onde assistir?</h2>
+<p>Pela OlympiaTV, transmissão oficial, gratuita com cadastro no site do evento.</p>
+
+<h2>O que é a categoria Fit Model?</h2>
+<p>É a categoria feminina mais nova da IFBB Pro League: estreou no amador (NPC) em 2025 e chega ao profissional e ao Olympia em 2026. A proposta é premiar um físico atlético, equilibrado e proporcional, com o visual de uma modelo de fitness: tonificado, mas sem o volume muscular nem o nível de definição das outras categorias. Apresentação, postura e harmonia do conjunto pesam tanto quanto o músculo.</p>
+
+<h2>Fit Model x Bikini: qual a diferença?</h2>
+<table><thead><tr><th>Critério</th><th>Fit Model</th><th>Bikini</th></tr></thead><tbody>
+<tr><td>Massa muscular (pernas, glúteos, braços, ombros)</td><td>Menor</td><td>Maior</td></tr>
+<tr><td>Condicionamento (definição)</td><td>Menor, "de capa de revista"</td><td>Maior</td></tr>
+<tr><td>Proposta</td><td>Físico equilibrado e atlético de modelo fitness</td><td>Forma, curvas e apresentação com mais desenvolvimento</td></tr>
+<tr><td>No Olympia</td><td>Estreia em 2026</td><td>Categoria tradicional (<a href="/blog/resultado-bikini-olympia-2026">resultado da Bikini 2026</a>)</td></tr>
+</tbody></table>
+<p><em>Com base nas regras da divisão publicadas pela NPC (NPC News Online), que servem de referência para a IFBB Pro League.</em></p>
+
+<h2>As outras categorias</h2>
+<p>Na noite de sábado saem a <a href="/blog/resultado-bikini-olympia-2026">Bikini</a>, a Men's Physique e o Open. Todas as campeãs e campeões ficam em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+
+${ACOMPANHE("resultado-fit-model-olympia-2026")}
+
+${CTA_ROTINA}
+${FONTES}`,
+    faq: [
+      { question: "Quem ganhou a Fit Model Olympia 2026?", answer: "Ainda não foi decidido. Prévias e final acontecem no sábado, 26 de setembro, na sessão que começa às 13h30 de Brasília. É a primeira Fit Model da história do Olympia." },
+      { question: "Em que posição Gabriela Queiroz ficou?", answer: "A posição ainda não foi definida. Gabriela Queiroz, brasileira, aparece no roster oficial representando os Estados Unidos, e se classificou com o título do Wasatch Warrior Pro 2026." },
+      { question: "Que horas é a Fit Model no Olympia?", answer: "No sábado, 26 de setembro, na sessão de prévias que começa às 13h30 de Brasília (9h30 em Las Vegas). A categoria tem prévias e final nessa mesma sessão; o horário exato depende da ordem do bloco." },
+      { question: "Qual a diferença entre Fit Model e Bikini?", answer: "A Fit Model pede menos massa muscular e menos definição que a Bikini, com foco num físico equilibrado e atlético de modelo fitness." },
     ],
   },
 ];

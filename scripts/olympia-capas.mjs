@@ -164,6 +164,14 @@ const CAPAS = [
 <div class="main"><h1>Quem vence a<br><em>Bikini</em> Olympia</h1>
 <div class="sub">Campeã, <b>top 10</b> e as <b>3 brasileiras</b>, com Isa Pecini.<br>Final no <b>sábado, 26/09, a partir das 23h</b> (Brasília).</div></div>`, "BIKINI"),
   },
+  {
+    slug: "resultado-fit-model-olympia-2026",
+    alt: "Capa: resultado da Fit Model Olympia 2026 — estreia da categoria no Olympia, com a brasileira Gabriela Queiroz; prévias e final no sábado a partir das 13h30 de Brasília",
+    html: base(`
+<div class="top"><div class="kicker">Olympia 2026 · Fit Model</div><div class="chip"><i></i>Estreia</div></div>
+<div class="main"><h1>A primeira<br><em>Fit Model</em> Olympia</h1>
+<div class="sub">Campeã, classificação e <b>Gabriela Queiroz</b>.<br>Prévias e final no <b>sábado, 26/09, a partir das 13h30</b> (Brasília).</div></div>`, "FIT MODEL"),
+  },
 ];
 // Só algumas capas: node scripts/olympia-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);
