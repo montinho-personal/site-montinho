@@ -55,6 +55,13 @@ const CTA_FASES = `<h2>Do palco para a sua rotina</h2>
 const CTA_MONTINHO = `<h2>E o seu shape?</h2>
 <p>Ninguém precisa de palco para querer um corpo melhor. O que os atletas do Olympia mostram, em escala extrema, é o que funciona para qualquer pessoa: treino individualizado, progressão de carga, alimentação que cabe na rotina e constância por anos. Se você quer aplicar isso à sua vida, sem comparação com ninguém, eu monto o seu plano: <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo no WhatsApp pelo botão ao fim desta página.</p>`;
 
+/** Segunda onda (212, Women's Physique, Brasil, Men's Physique, Bikini): verificada depois das outras seis. */
+const AVISO_ONDA2 = (o: string) =>
+  `<blockquote><p><strong>${o}</strong> Esta página será atualizada assim que houver resultado oficial. Última verificação: 24 de setembro de 2026, 23h (Brasília).</p></blockquote>`;
+
+const CTA_MASSA = `<h2>Do palco para o seu treino</h2>
+<p>Ninguém chega a quase 96 kg de palco em uma temporada: são anos de fases de ganho de massa bem conduzidas. Para quem treina sem competir, a lógica é a mesma, em escala real. Quer ver quanto músculo dá para ganhar em alguns meses? Use o <a href="/ferramentas/simulador-ganho-massa-muscular">simulador de ganho de massa muscular</a>. Se quiser um plano feito para o seu corpo e a sua rotina, sem se comparar com ninguém, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>`;
+
 /** Capa 1800×1013 (16:9) depois do primeiro parágrafo: a resposta vem antes da imagem no celular, e o Discover pega a primeira imagem raster do conteúdo. */
 const CAPA = (slug: string, alt: string) =>
   `<img src="/blog-images/${slug}-capa.webp" alt="${alt}" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:1.5rem 0;" />`;
@@ -70,6 +77,7 @@ const LINKS_CLUSTER: [string, string][] = [
   ["resultado-wellness-mr-olympia-2026", "Resultado da Wellness e as brasileiras"],
   ["resultado-mr-olympia-open-2026", "Resultado do Open: campeão e top 10"],
   ["ramon-dino-peso-altura", "Quanto pesa Ramon Dino e o limite da Classic"],
+  ["resultado-212-mr-olympia-2026", "Resultado da 212, com Lucas Garcia"],
 ];
 const ACOMPANHE = (atual: string) =>
   `<h3>Acompanhe o Mr. Olympia 2026</h3>
@@ -123,7 +131,7 @@ ${TABELA_PENDENTE(5)}
 <p>Na <strong>prévia (prejudging)</strong>, os juízes comparam os atletas em grupos, nas poses obrigatórias, e é ali que a maior parte da nota se forma. Na <strong>final</strong>, cada um faz a rotina de posing e há novas comparações; o resultado é anunciado no palco. Por isso o "quem ganhou" só existe depois da final, na noite de sexta no horário de Brasília. Detalhes do formato e da regra de peso: <a href="/blog/ramon-dino-peso-altura">limite de peso da Classic Physique</a>.</p>
 
 <h2>As outras categorias</h2>
-<p>Na mesma noite são decididas Wellness (<a href="/blog/resultado-wellness-mr-olympia-2026">resultado da Wellness 2026</a>), 212, Figure, Women's Physique e Ms. Olympia. O Open, título máximo do evento, é decidido no sábado (<a href="/blog/resultado-mr-olympia-open-2026">resultado do Mr. Olympia Open 2026</a>). Todos os campeões ficam reunidos em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+<p>Na mesma noite são decididas Wellness (<a href="/blog/resultado-wellness-mr-olympia-2026">resultado da Wellness 2026</a>), 212 (<a href="/blog/resultado-212-mr-olympia-2026">resultado da 212</a>), Figure, Women's Physique e Ms. Olympia. O Open, título máximo do evento, é decidido no sábado (<a href="/blog/resultado-mr-olympia-open-2026">resultado do Mr. Olympia Open 2026</a>). Todos os campeões ficam reunidos em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
 ${ACOMPANHE("resultado-classic-physique-mr-olympia-2026")}
 
@@ -209,7 +217,7 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — 
 <table><thead><tr><th>Categoria</th><th>Final</th><th>Campeão(ã) 2026</th><th>Campeão(ã) 2025</th><th>Resultado</th></tr></thead><tbody>
 <tr><td>Classic Physique</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Ramon Dino (BRA)</td><td><a href="/blog/resultado-classic-physique-mr-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Wellness</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Eduarda Bezerra (BRA)</td><td><a href="/blog/resultado-wellness-mr-olympia-2026">Ver resultado</a></td></tr>
-<tr><td>212</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Keone Pearson (EUA)</td><td>Nesta página</td></tr>
+<tr><td>212</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Keone Pearson (EUA)</td><td><a href="/blog/resultado-212-mr-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Figure</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Rhea Gayle (GBR)</td><td>Nesta página</td></tr>
 <tr><td>Women's Physique</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Natalia Abraham Coelho (EUA)</td><td>Nesta página</td></tr>
 <tr><td>Ms. Olympia</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Andrea Shaw (EUA)</td><td>Nesta página</td></tr>
@@ -434,6 +442,79 @@ ${FONTES}`,
       { question: "Qual é o limite de peso da Classic Physique?", answer: "Depende da altura: a IFBB Pro League define um peso máximo para cada faixa, revisado em 2025. Para 1,81 m, o teto é 103 kg. A tabela completa está nas regras oficiais da liga." },
       { question: "Por que existe limite de peso na Classic Physique?", answer: "Para preservar a proposta da categoria — proporção, cintura fina e linhas clássicas — e manter a comparação justa entre alturas diferentes. Sem o limite, ela viraria um Open menor." },
       { question: "Ramon Dino já foi campeão do Mr. Olympia?", answer: "Sim, em 2025, na Classic Physique, o primeiro brasileiro a vencer o Olympia. Antes foi vice em 2022 e 2023, quarto em 2024 e quinto em 2021." },
+    ],
+  },
+  /* ───────────────── 7. RESULTADO 212 ───────────────── */
+  {
+    slug: "resultado-212-mr-olympia-2026",
+    title: "Resultado 212 Mr. Olympia 2026: campeão, Top 10 e brasileiros",
+    metaTitle: "Resultado 212 Olympia 2026: Campeão, Top 10 e Lucas Garcia",
+    metaDescription:
+      "Quem ganhou a 212 do Mr. Olympia 2026 e como ficaram Lucas Garcia e os outros três brasileiros. Final nesta sexta, 25/09, a partir das 22h de Brasília.",
+    excerpt:
+      "A 212 do Mr. Olympia 2026 é decidida nesta sexta-feira, 25 de setembro. Campeão, top 10 e a colocação dos quatro brasileiros entram aqui assim que saem.",
+    category: "Fisiculturismo",
+    tipo: "noticia",
+    date: DATA,
+    readTime: "3 min",
+    author: AUTOR,
+    tags: ["Mr. Olympia 2026", "212", "Lucas Garcia", "resultado", "fisiculturismo"],
+    content: `${AVISO_ONDA2("O resultado da 212 do Mr. Olympia 2026 ainda não foi definido.")}
+<p><strong>A 212 ainda não aconteceu.</strong> As prévias começam às <strong>13h30 de sexta-feira, 25 de setembro</strong> (Brasília), e a final a partir das <strong>22h</strong> do mesmo dia, em Las Vegas. Keone Pearson (EUA) defende o tricampeonato. O Brasil tem quatro atletas na categoria: <strong>Lucas Garcia</strong>, terceiro colocado em 2025, <strong>Vitor Porto</strong>, <strong>Felipe Moraes</strong> e <strong>Andrey Pereira</strong>.</p>
+${CAPA("resultado-212-mr-olympia-2026", "Capa: resultado da 212 do Mr. Olympia 2026 — Keone Pearson defende o título e Lucas Garcia lidera os quatro brasileiros; final na sexta às 22h de Brasília")}
+
+<h2>Resultado 212 Olympia 2026</h2>
+${TABELA_PENDENTE(10)}
+<p><em>Tabela preenchida com o resultado oficial da IFBB Pro League, depois da final. Se só o top 5 for divulgado na noite, só o top 5 entra.</em></p>
+
+<h2>Como ficaram os brasileiros na 212?</h2>
+<table><thead><tr><th>Atleta</th><th>Resultado</th><th>Status</th></tr></thead><tbody>
+<tr><td>Lucas Garcia</td><td>A definir</td><td>Aguardando prévias (sexta, 13h30)</td></tr>
+<tr><td>Vitor Porto</td><td>A definir</td><td>Aguardando prévias (sexta, 13h30)</td></tr>
+<tr><td>Felipe Moraes</td><td>A definir</td><td>Aguardando prévias (sexta, 13h30)</td></tr>
+<tr><td>Andrey Pereira</td><td>A definir</td><td>Aguardando prévias (sexta, 13h30)</td></tr>
+</tbody></table>
+<p>Os quatro aparecem no roster oficial da IFBB Pro League representando o Brasil (Vitor Porto está inscrito como Vitor Alves Porto de Oliveira).</p>
+
+<h2>Em que posição Lucas Garcia ficou?</h2>
+<p><strong>Ainda não há resultado.</strong> Lucas Garcia, paulista, chega como o brasileiro mais bem colocado da categoria: em 2025, na estreia no Olympia, terminou em <strong>terceiro</strong>, atrás de Keone Pearson e Shaun Clarida, com Nihat Kaya (Turquia) em quarto e Courage Opara (EUA) em quinto. A colocação de 2026 entra aqui logo após a final.</p>
+
+<h2>Quem ganhou a 212 Olympia 2026?</h2>
+<p><strong>Ainda não foi decidido.</strong> Os nomes mais citados pela imprensa especializada:</p>
+<ul>
+<li><strong>Keone Pearson (EUA)</strong> — campeão em 2023, 2024 e 2025, busca o quarto título seguido.</li>
+<li><strong>Shaun Clarida (EUA)</strong> — ex-campeão da categoria e vice em 2025.</li>
+<li><strong>Breon Ansley (EUA)</strong> — bicampeão da Classic Physique (2017 e 2018), estreia na 212 no Olympia. Se vencer, será o primeiro atleta com títulos do Olympia nas duas categorias.</li>
+</ul>
+
+<h2>Como foram as prévias?</h2>
+<p>As prévias ainda não aconteceram. Depois delas, esta seção vai registrar quem foi chamado para as primeiras comparações. Chamado não é resultado: a IFBB Pro League não divulga notas das prévias, e a colocação só existe depois da final.</p>
+
+<h2>Que horas acontece a final da 212?</h2>
+<ul>
+<li><strong>Prévias:</strong> sexta, 25/09, bloco a partir das 13h30 de Brasília (9h30 em Las Vegas), com 212, Classic Physique, Figure, Women's Physique, Ms. Olympia e Wellness.</li>
+<li><strong>Final:</strong> sexta, 25/09, sessão a partir das 22h de Brasília (18h em Las Vegas).</li>
+</ul>
+<p>Esses são os horários de início de cada bloco, não o minuto exato em que a 212 sobe ao palco.</p>
+
+<h2>Onde assistir?</h2>
+<p>Pela OlympiaTV, transmissão oficial, gratuita com cadastro no site do evento. No Brasil, canais no YouTube fazem cobertura com comentários em português.</p>
+
+<h2>O que significa 212 no fisiculturismo?</h2>
+<p>É o fisiculturismo tradicional com teto de peso: 212 libras, cerca de 96,2 kg, na pesagem oficial. Os critérios são os do Open (massa, densidade, condicionamento, simetria), mas só compete quem está dentro do limite, o que favorece atletas mais baixos. Diferente da Classic Physique, o peso máximo não depende da altura: é o mesmo para todos.</p>
+
+<h2>As outras categorias</h2>
+<p>Na mesma noite saem os resultados da <a href="/blog/resultado-classic-physique-mr-olympia-2026">Classic Physique, com Ramon Dino</a>, e da <a href="/blog/resultado-wellness-mr-olympia-2026">Wellness</a>. O Open é decidido no sábado (<a href="/blog/resultado-mr-olympia-open-2026">resultado do Open</a>), e todos os campeões ficam em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+
+${ACOMPANHE("resultado-212-mr-olympia-2026")}
+
+${CTA_MASSA}
+${FONTES}`,
+    faq: [
+      { question: "Quem ganhou a 212 do Mr. Olympia 2026?", answer: "Ainda não foi decidido. A final é na sexta-feira, 25 de setembro, a partir das 22h (Brasília). Keone Pearson defende o título, e esta página é atualizada com o resultado oficial." },
+      { question: "Em que posição Lucas Garcia ficou na 212?", answer: "Ainda não há resultado de 2026. Em 2025, na estreia no Olympia, Lucas Garcia ficou em terceiro, atrás de Keone Pearson e Shaun Clarida." },
+      { question: "Quantos brasileiros competem na 212 do Olympia 2026?", answer: "Quatro, pelo roster oficial da IFBB Pro League: Lucas Garcia, Vitor Porto, Felipe Moraes e Andrey Pereira." },
+      { question: "Qual é o limite de peso da 212?", answer: "212 libras, cerca de 96,2 kg, na pesagem oficial, para qualquer altura." },
     ],
   },
 ];
