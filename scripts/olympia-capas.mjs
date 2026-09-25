@@ -124,11 +124,21 @@ const CAPAS = [
 <div class="main"><h1>Quanto <em>pesa</em><br>Ramon Dino</h1>
 <div class="stats"><div class="stat"><div class="n">102,5<small>kg</small></div><div class="l">Na pesagem</div></div><div class="stat"><div class="n">103<small>kg</small></div><div class="l">Limite</div></div><div class="stat"><div class="n">1,81<small>m</small></div><div class="l">Altura</div></div></div></div>`, "103"),
   },
+  {
+    slug: "resultado-212-mr-olympia-2026",
+    alt: "Capa: resultado da 212 do Mr. Olympia 2026 — Keone Pearson defende o título e Lucas Garcia lidera os quatro brasileiros; final na sexta às 22h de Brasília",
+    html: base(`
+<div class="top"><div class="kicker">Mr. Olympia 2026 · 212</div><div class="chip"><i></i>Resultado</div></div>
+<div class="main"><h1>Quem vence<br>a <em>212</em> em 2026</h1>
+<div class="sub">Campeão, <b>top 10</b> e os <b>4 brasileiros</b>, com Lucas Garcia.<br>Final na <b>sexta, 25/09, a partir das 22h</b> (Brasília).</div></div>`, "212"),
+  },
 ];
+// Só algumas capas: node scripts/olympia-capas.mjs <slug> [<slug>...]
+const SO = process.argv.slice(2);
 
 const b = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium" });
 const p = await b.newPage({ viewport: { width: 1200, height: 675 }, deviceScaleFactor: 1.5 });
-for (const c of CAPAS) {
+for (const c of CAPAS.filter((c) => !SO.length || SO.includes(c.slug))) {
   await p.setContent(c.html, { waitUntil: "networkidle" });
   await p.evaluate(() => document.fonts.ready);
   const png = await p.screenshot({ type: "png" });
