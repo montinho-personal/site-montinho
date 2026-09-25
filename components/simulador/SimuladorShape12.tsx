@@ -440,6 +440,44 @@ export default function SimuladorShape12({ placement }: { placement: string }) {
         <button type="button" onClick={() => { setCen(a0); trackEvent("shape12_scenario_change", { placement, control: "reset" }); }} className="text-gray-400 text-sm underline underline-offset-4 mt-4 min-h-[44px]">Voltar a como está hoje</button>
       </div>
 
+      {/* R6b — choque de realidade: o que ele preencheu × tudo em 100% */}
+      {(() => {
+        const max: Cenario12 = { ...a0, treinos: 5, passos: 12500, consistencia: 1 };
+        if (a0.treinos >= 5 && a0.passos >= 12500 && a0.consistencia >= 1) return null;
+        const hoje = prAtual ?? projeta12(perfil, a0);
+        const top = projeta12(perfil, max);
+        const dPeso = top.variacao12.centro - hoje.variacao12.centro;
+        const dTreinos = top.realizados - hoje.realizados;
+        const pesoConta = Math.abs(dPeso) >= 0.5;
+        return (
+          <div className="border-2 p-5 sm:p-6" style={{ borderColor: DOURADO, background: "rgba(186,158,80,0.07)" }} data-testid="choque">
+            <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-2" style={{ color: DOURADO }}>Choque de realidade</p>
+            <h3 className="text-2xl font-bold text-white leading-tight" style={h}>E se você fizesse tudo em 100%?</h3>
+            <p className="text-gray-300 text-sm mt-2">5 treinos por semana, 12.500 passos por dia e nenhum treino perdido, contra o que você preencheu.</p>
+            <div className="grid grid-cols-2 gap-3 mt-5">
+              <div className="border border-white/15 p-3">
+                <p className="text-gray-400 text-xs uppercase tracking-wide">Como você está</p>
+                <p className="text-white text-2xl font-bold tabular-nums">{hoje.realizados} <span className="text-base font-semibold">treinos</span></p>
+                <p className="text-gray-400 text-sm">peso na semana 12: {sinal(hoje.variacao12.centro)}</p>
+                <p className="text-gray-500 text-xs mt-1">{a0.treinos}x/semana · {fmtN(a0.passos)} passos · {Math.round(a0.consistencia * 100)}%</p>
+              </div>
+              <div className="border-2 p-3" style={{ borderColor: DOURADO }}>
+                <p className="text-xs uppercase tracking-wide" style={{ color: DOURADO }}>Tudo em 100%</p>
+                <p className="text-white text-2xl font-bold tabular-nums">{top.realizados} <span className="text-base font-semibold">treinos</span></p>
+                <p className="text-gray-300 text-sm">peso na semana 12: {sinal(top.variacao12.centro)}</p>
+                <p className="text-gray-500 text-xs mt-1">5x/semana · 12.500 passos · 100%</p>
+              </div>
+            </div>
+            <p className="text-white text-lg leading-snug mt-5">
+              A diferença: <strong style={{ color: DOURADO }}>+{dTreinos} treinos</strong>{pesoConta && <> e <strong style={{ color: DOURADO }}>{sinal(dPeso)}</strong> na balança</>} nas mesmas 12 semanas.
+            </p>
+            <p className="text-gray-300 mt-3">São os mesmos 3 meses. O que muda não é genética nem sorte — é quantas vezes você aparece. Cada treino que você pula é um estímulo que não volta. Você não precisa virar outra pessoa amanhã: aumente um degrau por vez até chegar aos 100%.</p>
+            <button type="button" onClick={() => { setCen(max); trackEvent("shape12_scenario_change", { placement, control: "max" }); }} className="mt-4 px-5 py-3 font-semibold text-black min-h-[44px]" style={{ background: DOURADO }}>Ver meu gráfico com tudo em 100%</button>
+            <p className="text-gray-500 text-xs mt-3">Estimativa do mesmo modelo, com a mesma margem de erro. Não é promessa: é o tamanho da diferença que a constância faz.</p>
+          </div>
+        );
+      })()}
+
       <InsightCard titulo="O que mais pode mudar suas 12 semanas">
         {ins ? <p>Dentro deste modelo, a variável de maior impacto foi <strong>{ins.descricao}</strong> — {ins.unidade === "kg" ? <>cerca de {fmtKg(ins.ganho)} a mais na semana 12.</> : <>+{Math.round(ins.ganho)} treinos feitos.</>}{ins.alavanca === "consistencia" && imp.some((i) => i.alavanca === "treino") && <span className="text-gray-300"> Treinar um dia a mais teve menos impacto do que realizar melhor os treinos que você já planeja.</span>}{ins.alavanca === "passos" && <span className="text-gray-300"> Seu principal limitador não parece ser falta de treino.</span>}</p>
           : imp.length ? <p>Os ajustes testados — {imp.map((i) => i.descricao).join(", ")} — produzem efeitos parecidos. Escolha o que for mais fácil de sustentar.</p> : <p>Seu cenário já está no máximo dos ajustes testados. Agora é sustentar.</p>}
