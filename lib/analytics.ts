@@ -641,6 +641,9 @@ export type AnalyticsEvent =
    * Calculadora de Peso da Classic Physique. Só interação: nunca altura nem
    * peso. `variant` = "completa" | "compacta"; `placement` = página/artigo.
    */
+  /** Painel Brasil no Mr. Olympia 2026: só filtros e cliques, sem dado pessoal. */
+  | "olympia_brasil_filter"
+  | "olympia_brasil_card_click"
   | "classic_calc_view"
   | "classic_calc_started"
   | "classic_calc_completed"

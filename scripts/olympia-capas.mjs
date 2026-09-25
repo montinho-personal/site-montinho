@@ -140,6 +140,14 @@ const CAPAS = [
 <div class="main"><h1>Natália Coelho<br>defende o <em>título</em></h1>
 <div class="sub">Campeã, <b>top 10</b> e as <b>5 brasileiras</b> da categoria.<br>Final na <b>sexta, 25/09, a partir das 22h</b> (Brasília).</div></div>`, "PHYSIQUE"),
   },
+  {
+    slug: "brasileiros-mr-olympia-2026",
+    alt: "Capa: brasileiros no Mr. Olympia 2026 — painel com atletas, categorias, horários de Brasília e resultados de sexta e sábado",
+    html: base(`
+<div class="top"><div class="kicker">Las Vegas · 25 e 26/09</div><div class="chip"><i></i>Painel Brasil</div></div>
+<div class="main"><h1>Brasileiros no<br>Mr. Olympia <em>2026</em></h1>
+<div class="tags"><span class="g">Ramon Dino</span><span class="g">Lucas Garcia</span><span class="g">Natália Coelho</span><span class="g">Eduarda Bezerra</span><span>Edvan Palmeira</span><span>Elisa Pecini</span><span>Leandro Peres</span><span>Zama Benta</span></div></div>`, "BRASIL"),
+  },
 ];
 // Só algumas capas: node scripts/olympia-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);

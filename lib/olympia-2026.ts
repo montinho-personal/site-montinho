@@ -1,4 +1,5 @@
 import type { BlogPost } from "./blog";
+import { ATLETAS_BRASIL, DIA_TEXTO, FORA_DO_EVENTO, STATUS_TEXTO, categoria } from "./olympia-brasil";
 
 /**
  * Cluster Mr. Olympia 2026 — conteúdo de notícia, num arquivo próprio.
@@ -62,6 +63,9 @@ const AVISO_ONDA2 = (o: string) =>
 const CTA_MASSA = `<h2>Do palco para o seu treino</h2>
 <p>Ninguém chega a quase 96 kg de palco em uma temporada: são anos de fases de ganho de massa bem conduzidas. Para quem treina sem competir, a lógica é a mesma, em escala real. Quer ver quanto músculo dá para ganhar em alguns meses? Use o <a href="/ferramentas/simulador-ganho-massa-muscular">simulador de ganho de massa muscular</a>. Se quiser um plano feito para o seu corpo e a sua rotina, sem se comparar com ninguém, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>`;
 
+/** Tabela do hub Brasil, gerada de lib/olympia-brasil.ts (HTML estático, indexável). */
+const TABELA_BRASIL = `<table><thead><tr><th>Atleta</th><th>Categoria</th><th>Representação oficial</th><th>Dia</th><th>Status</th><th>Resultado</th></tr></thead><tbody>${ATLETAS_BRASIL.map((x) => `<tr><td>${x.nome}</td><td>${categoria(x.categoria).nome}</td><td>${x.representacao}</td><td>${DIA_TEXTO[categoria(x.categoria).dia]}</td><td>${STATUS_TEXTO[x.status]}</td><td>${x.resultado ?? "A definir"}</td></tr>`).join("")}</tbody></table>`;
+
 /** Capa 1800×1013 (16:9) depois do primeiro parágrafo: a resposta vem antes da imagem no celular, e o Discover pega a primeira imagem raster do conteúdo. */
 const CAPA = (slug: string, alt: string) =>
   `<img src="/blog-images/${slug}-capa.webp" alt="${alt}" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:1.5rem 0;" />`;
@@ -79,6 +83,7 @@ const LINKS_CLUSTER: [string, string][] = [
   ["ramon-dino-peso-altura", "Quanto pesa Ramon Dino e o limite da Classic"],
   ["resultado-212-mr-olympia-2026", "Resultado da 212, com Lucas Garcia"],
   ["resultado-womens-physique-olympia-2026", "Resultado da Women's Physique, com Natália Coelho"],
+  ["brasileiros-mr-olympia-2026", "Brasileiros no Mr. Olympia 2026: painel e resultados"],
 ];
 const ACOMPANHE = (atual: string) =>
   `<h3>Acompanhe o Mr. Olympia 2026</h3>
@@ -243,6 +248,7 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — 
 <p>Transmissão gratuita pela OlympiaTV, com cadastro no site oficial. Detalhes em <a href="/blog/ramon-dino-mr-olympia-2026-horario">que horas Ramon Dino compete e onde assistir</a>.</p>
 
 <h2>Os brasileiros em destaque</h2>
+<p>Todos os brasileiros, por dia e categoria, com o resultado de cada um, estão no <a href="/blog/brasileiros-mr-olympia-2026">painel dos brasileiros no Mr. Olympia 2026</a>.</p>
 <ul>
 <li><strong>Ramon Dino</strong> — atual campeão da Classic Physique, primeiro brasileiro a vencer o Mr. Olympia. Pesou 102,5 kg na pesagem oficial (<a href="/blog/ramon-dino-peso-altura">peso, altura e limite</a>).</li>
 <li><strong>Eduarda Bezerra</strong> — atual campeã da Wellness, categoria em que o Brasil venceu todas as cinco edições desde 2021 e tem 19 das 40 inscritas em 2026.</li>
@@ -475,7 +481,7 @@ ${TABELA_PENDENTE(10)}
 <tr><td>Felipe Moraes</td><td>A definir</td><td>Aguardando prévias (sexta, 13h30)</td></tr>
 <tr><td>Andrey Pereira</td><td>A definir</td><td>Aguardando prévias (sexta, 13h30)</td></tr>
 </tbody></table>
-<p>Os quatro aparecem no roster oficial da IFBB Pro League representando o Brasil (Vitor Porto está inscrito como Vitor Alves Porto de Oliveira).</p>
+<p>Os quatro aparecem no roster oficial da IFBB Pro League representando o Brasil (Vitor Porto está inscrito como Vitor Alves Porto de Oliveira). Como foram os brasileiros das outras categorias: <a href="/blog/brasileiros-mr-olympia-2026">brasileiros no Mr. Olympia 2026</a>.</p>
 
 <h2>Em que posição Lucas Garcia ficou?</h2>
 <p><strong>Ainda não há resultado.</strong> Lucas Garcia, paulista, chega como o brasileiro mais bem colocado da categoria: em 2025, na estreia no Olympia, terminou em <strong>terceiro</strong>, atrás de Keone Pearson e Shaun Clarida, com Nihat Kaya (Turquia) em quarto e Courage Opara (EUA) em quinto. A colocação de 2026 entra aqui logo após a final.</p>
@@ -552,7 +558,7 @@ ${TABELA_PENDENTE(10)}
 <tr><td>Naiana Nana</td><td>Brasil</td><td>A definir</td><td>Aguardando prévias</td></tr>
 <tr><td>Amanda de Carvalho Machado</td><td>EUA</td><td>A definir</td><td>Aguardando prévias</td></tr>
 </tbody></table>
-<p>A imprensa brasileira conta cinco brasileiras na categoria. No roster oficial, três estão listadas pelo Brasil e duas pelos EUA. A coluna "representação" mostra o país que a IFBB Pro League exibe, não a nacionalidade. <strong>Zama Benta</strong> foi terceira em 2025, atrás de Natália e de Sarah Villegas.</p>
+<p>A imprensa brasileira conta cinco brasileiras na categoria. No roster oficial, três estão listadas pelo Brasil e duas pelos EUA. A coluna "representação" mostra o país que a IFBB Pro League exibe, não a nacionalidade. <strong>Zama Benta</strong> foi terceira em 2025, atrás de Natália e de Sarah Villegas. Os brasileiros de todas as categorias estão no <a href="/blog/brasileiros-mr-olympia-2026">painel Brasil do Olympia</a>.</p>
 
 <h2>Top 5 Women's Physique</h2>
 <p>Ainda não definido. As mais citadas pela imprensa especializada para o primeiro chamado: Natália Coelho, Sarah Villegas (quatro vezes campeã e vice em 2025), Zama Benta, Brittany Herrera (quarta em 2025) e Lenka Ferencukova (Eslováquia), vencedora de dois shows profissionais nesta temporada.</p>
@@ -585,6 +591,79 @@ ${FONTES}`,
       { question: "Em que posição Natália Coelho ficou?", answer: "Ainda não há resultado de 2026. Natália é a atual campeã: venceu em 2025 e em 2022." },
       { question: "Natália Coelho compete pelo Brasil?", answer: "Natália é brasileira, mas aparece no roster oficial da IFBB Pro League representando os Estados Unidos, onde vive e compete." },
       { question: "Quantas brasileiras competem na Women's Physique 2026?", answer: "Cinco pela contagem da imprensa brasileira: Natália Coelho, Zama Benta, Jessica Macedo, Naiana Nana e Amanda de Carvalho Machado. No roster oficial, três aparecem pelo Brasil e duas pelos EUA." },
+    ],
+  },
+  /* ───────────────── 9. HUB BRASIL ───────────────── */
+  {
+    slug: "brasileiros-mr-olympia-2026",
+    title: "Brasileiros no Mr. Olympia 2026: atletas, horários e resultados",
+    metaTitle: "Brasileiros no Mr. Olympia 2026: Atletas e Resultados",
+    metaDescription:
+      "Todos os brasileiros no Mr. Olympia 2026 por categoria e dia, com horário de Brasília e resultado de cada um, atualizado durante as finais de 25 e 26/09.",
+    excerpt:
+      "Painel dos brasileiros no Mr. Olympia 2026: quem compete na sexta e no sábado, em que categoria, por qual país no roster e como terminou cada um.",
+    category: "Fisiculturismo",
+    tipo: "noticia",
+    date: DATA,
+    readTime: "5 min",
+    author: AUTOR,
+    tags: ["Mr. Olympia 2026", "brasileiros", "Ramon Dino", "resultados", "fisiculturismo"],
+    content: `${AVISO_ONDA2("Nenhum brasileiro competiu ainda no Mr. Olympia 2026.")}
+<p><strong>Os brasileiros começam a competir nesta sexta-feira, 25 de setembro</strong>, com as prévias a partir das 13h30 (Brasília): Ramon Dino na Classic Physique, Lucas Garcia na 212, Natália Coelho na Women's Physique e mais de vinte brasileiras na Wellness. No <strong>sábado, 26</strong>, é a vez de Men's Physique, Bikini e do Open, com Leandro Peres. Os resultados de cada um entram aqui assim que forem oficiais.</p>
+${CAPA("brasileiros-mr-olympia-2026", "Capa: brasileiros no Mr. Olympia 2026 — painel com atletas, categorias, horários de Brasília e resultados de sexta e sábado")}
+
+<h2>Painel Brasil no Mr. Olympia 2026</h2>
+<p>Filtre por dia, categoria ou nome. "Roster" é o país que a IFBB Pro League mostra ao lado do atleta.</p>
+<!--PAINEL_BRASIL:olympia-->
+
+<h2>Resultados dos brasileiros no Mr. Olympia 2026</h2>
+${TABELA_BRASIL}
+<p><em>A coluna "Resultado" só é preenchida com a classificação oficial. Wellness: estão aqui as brasileiras de destaque; a lista completa da categoria fica em <a href="/blog/resultado-wellness-mr-olympia-2026">resultado da Wellness 2026</a>.</em></p>
+
+<h2>Quantos brasileiros competem?</h2>
+<p>Depende de quem conta. As listas publicadas variam, e por isso não usamos um número fechado: a CNN Brasil falou em 58 classificados, o NSC Total em 57, e a Folha chegou a contar 60 no início de setembro. A diferença vem do critério: há quem conte todos os classificados, quem conte só os confirmados e quem inclua brasileiros que competem por outra bandeira.</p>
+<p><strong>O nosso critério:</strong> entra no painel quem está no roster atual da IFBB Pro League e não foi reportado fora do evento. Brasileiros que aparecem por outro país, como Natália Coelho (EUA) e Mauro Fialho (Espanha), entram com a representação oficial indicada. Classificados que não viajaram ficam na lista abaixo.</p>
+
+<h2>Brasileiros que ficaram fora</h2>
+<p>Pelo menos sete brasileiros classificados não competem, segundo CNN Brasil e O Povo, a maioria por visto americano negado:</p>
+<ul>${FORA_DO_EVENTO.map((f) => `<li><strong>${f.nome}</strong> (${f.categoria}) — ${f.motivo}</li>`).join("")}</ul>
+
+<h2>Brasileiros que competem na sexta-feira</h2>
+<p>Prévias a partir das <strong>13h30</strong> e finais a partir das <strong>22h</strong> (Brasília). São horários de início de bloco: a hora exata de cada categoria depende do andamento do evento.</p>
+<h3>Classic Physique</h3>
+<p>Ramon Dino defende o título ao lado de César Falcão, Fábio Júnio, Gabriel Zancanelli e Matheus Menegate. <a href="/blog/resultado-classic-physique-mr-olympia-2026">Resultado da Classic Physique e a colocação de Ramon</a>.</p>
+<h3>212</h3>
+<p>Lucas Garcia, terceiro em 2025, com Vitor Porto, Felipe Moraes e Andrey Pereira. <a href="/blog/resultado-212-mr-olympia-2026">Como ficou Lucas Garcia na 212</a>.</p>
+<h3>Wellness</h3>
+<p>A categoria em que o Brasil venceu todas as edições tem a maior delegação brasileira. Eduarda Bezerra defende o título, e Isa Pereira Nunes e Rayane Fogal estão entre as candidatas. <a href="/blog/resultado-wellness-mr-olympia-2026">Resultado da Wellness e a lista das brasileiras</a>.</p>
+<h3>Women's Physique</h3>
+<p>Natália Coelho, atual campeã, aparece no roster pelos EUA. Zama Benta, terceira em 2025, lidera as que competem pelo Brasil. <a href="/blog/resultado-womens-physique-olympia-2026">Posição de Natália Coelho e das brasileiras</a>.</p>
+<h3>Ms. Olympia (Women's Bodybuilding)</h3>
+<p>Leyvina Barros, top 3 em 2025, e Barbara Moojen. Sem página própria: o resultado entra neste painel e em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+
+<h2>Brasileiros que competem no sábado</h2>
+<p>Prévias a partir das <strong>13h30</strong> e finais a partir das <strong>23h</strong> (Brasília).</p>
+<h3>Open</h3>
+<p>Leandro Peres é o único brasileiro na categoria principal. <a href="/blog/resultado-mr-olympia-open-2026">Resultado do Open e o campeão</a>.</p>
+<h3>Men's Physique</h3>
+<p>Nove brasileiros no roster pelo Brasil, entre eles Edvan Palmeira e Vitor Chaves, além de Mauro Fialho, listado pela Espanha.</p>
+<h3>Bikini</h3>
+<p>Elisa Pecini (Isa Pecini), campeã em 2019, com Nivea Campos e Bruna Toigo.</p>
+<h3>Fit Model</h3>
+<p>Gabriela Queiroz, que aparece no roster pelos EUA.</p>
+
+<h2>Onde assistir</h2>
+<p>Pela OlympiaTV, transmissão oficial, gratuita com cadastro no site do evento. Horários e detalhes em <a href="/blog/ramon-dino-mr-olympia-2026-horario">que horas Ramon Dino compete</a>.</p>
+
+${ACOMPANHE("brasileiros-mr-olympia-2026")}
+
+${CTA_MONTINHO}
+${FONTES}`,
+    faq: [
+      { question: "Quantos brasileiros competem no Mr. Olympia 2026?", answer: "As contagens variam entre 57 e 60 conforme o critério: classificados, confirmados ou brasileiros por outra bandeira. Pelo menos sete classificados ficaram fora, a maioria por visto negado. O painel desta página lista quem está no roster atual." },
+      { question: "Quais brasileiros competem na sexta-feira?", answer: "Classic Physique (Ramon Dino e outros quatro), 212 (Lucas Garcia e outros três), Wellness, Women's Physique (Natália Coelho, Zama Benta e outras) e Ms. Olympia (Leyvina Barros e Barbara Moojen). Prévias às 13h30 e finais a partir das 22h, horário de Brasília." },
+      { question: "Quais brasileiros competem no sábado?", answer: "Open (Leandro Peres), Men's Physique (Edvan Palmeira, Vitor Chaves e outros), Bikini (Elisa Pecini, Nivea Campos e Bruna Toigo) e Fit Model (Gabriela Queiroz). Finais a partir das 23h de Brasília." },
+      { question: "Natália Coelho compete pelo Brasil?", answer: "Ela é brasileira, mas aparece no roster oficial da IFBB Pro League representando os Estados Unidos." },
     ],
   },
 ];
