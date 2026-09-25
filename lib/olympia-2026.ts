@@ -66,6 +66,9 @@ const CTA_MASSA = `<h2>Do palco para o seu treino</h2>
 /** Tabela do hub Brasil, gerada de lib/olympia-brasil.ts (HTML estático, indexável). */
 const TABELA_BRASIL = `<table><thead><tr><th>Atleta</th><th>Categoria</th><th>Representação oficial</th><th>Dia</th><th>Status</th><th>Resultado</th></tr></thead><tbody>${ATLETAS_BRASIL.map((x) => `<tr><td>${x.nome}</td><td>${categoria(x.categoria).nome}</td><td>${x.representacao}</td><td>${DIA_TEXTO[categoria(x.categoria).dia]}</td><td>${STATUS_TEXTO[x.status]}</td><td>${x.resultado ?? "A definir"}</td></tr>`).join("")}</tbody></table>`;
 
+const CTA_MASSA_PHYSIQUE = `<h2>Do palco para o seu treino</h2>
+<p>Ombros largos e cintura fina não são sorte: são anos de treino bem distribuído, ganho de massa em fases e definição. Quer ter uma noção de quanto músculo dá para ganhar em alguns meses, no seu caso? Use o <a href="/ferramentas/simulador-ganho-massa-muscular">simulador de ganho de massa muscular</a>. Se preferir um plano feito para o seu corpo e a sua rotina, sem se comparar com ninguém, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>`;
+
 /** Capa 1800×1013 (16:9) depois do primeiro parágrafo: a resposta vem antes da imagem no celular, e o Discover pega a primeira imagem raster do conteúdo. */
 const CAPA = (slug: string, alt: string) =>
   `<img src="/blog-images/${slug}-capa.webp" alt="${alt}" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:1.5rem 0;" />`;
@@ -84,6 +87,8 @@ const LINKS_CLUSTER: [string, string][] = [
   ["resultado-212-mr-olympia-2026", "Resultado da 212, com Lucas Garcia"],
   ["resultado-womens-physique-olympia-2026", "Resultado da Women's Physique, com Natália Coelho"],
   ["brasileiros-mr-olympia-2026", "Brasileiros no Mr. Olympia 2026: painel e resultados"],
+  ["resultado-mens-physique-olympia-2026", "Resultado da Men's Physique, com Edvan Palmeira"],
+  ["resultado-bikini-olympia-2026", "Resultado da Bikini, com Elisa Pecini"],
 ];
 const ACOMPANHE = (atual: string) =>
   `<h3>Acompanhe o Mr. Olympia 2026</h3>
@@ -228,8 +233,8 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — 
 <tr><td>Women's Physique</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Natalia Abraham Coelho (EUA)</td><td><a href="/blog/resultado-womens-physique-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Ms. Olympia</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Andrea Shaw (EUA)</td><td>Nesta página</td></tr>
 <tr><td>Fitness</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Michelle Fredua-Mensah (GBR)</td><td>Nesta página</td></tr>
-<tr><td>Men's Physique</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Ryan Terry (GBR)</td><td>Nesta página</td></tr>
-<tr><td>Bikini</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Maureen Blanquisco (PHI)</td><td>Nesta página</td></tr>
+<tr><td>Men's Physique</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Ryan Terry (GBR)</td><td><a href="/blog/resultado-mens-physique-olympia-2026">Ver resultado</a></td></tr>
+<tr><td>Bikini</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Maureen Blanquisco (PHI)</td><td><a href="/blog/resultado-bikini-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Mr. Olympia (Open)</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Derek Lunsford (EUA)</td><td><a href="/blog/resultado-mr-olympia-open-2026">Ver resultado</a></td></tr>
 </tbody></table>
 <p><em>Wheelchair e Fit Model também são decididas no sábado e entram aqui com o resultado oficial. Horários são o início de cada sessão de finais.</em></p>
@@ -646,9 +651,9 @@ ${TABELA_BRASIL}
 <h3>Open</h3>
 <p>Leandro Peres é o único brasileiro na categoria principal. <a href="/blog/resultado-mr-olympia-open-2026">Resultado do Open e o campeão</a>.</p>
 <h3>Men's Physique</h3>
-<p>Nove brasileiros no roster pelo Brasil, entre eles Edvan Palmeira e Vitor Chaves, além de Mauro Fialho, listado pela Espanha.</p>
+<p>Nove brasileiros no roster pelo Brasil, entre eles Edvan Palmeira e Vitor Chaves, além de Mauro Fialho, listado pela Espanha. <a href="/blog/resultado-mens-physique-olympia-2026">Posição de Edvan Palmeira e dos brasileiros</a>.</p>
 <h3>Bikini</h3>
-<p>Elisa Pecini (Isa Pecini), campeã em 2019, com Nivea Campos e Bruna Toigo.</p>
+<p>Elisa Pecini (Isa Pecini), campeã em 2019, com Nivea Campos e Bruna Toigo. <a href="/blog/resultado-bikini-olympia-2026">Como ficou Isa Pecini na Bikini</a>.</p>
 <h3>Fit Model</h3>
 <p>Gabriela Queiroz, que aparece no roster pelos EUA.</p>
 
@@ -664,6 +669,147 @@ ${FONTES}`,
       { question: "Quais brasileiros competem na sexta-feira?", answer: "Classic Physique (Ramon Dino e outros quatro), 212 (Lucas Garcia e outros três), Wellness, Women's Physique (Natália Coelho, Zama Benta e outras) e Ms. Olympia (Leyvina Barros e Barbara Moojen). Prévias às 13h30 e finais a partir das 22h, horário de Brasília." },
       { question: "Quais brasileiros competem no sábado?", answer: "Open (Leandro Peres), Men's Physique (Edvan Palmeira, Vitor Chaves e outros), Bikini (Elisa Pecini, Nivea Campos e Bruna Toigo) e Fit Model (Gabriela Queiroz). Finais a partir das 23h de Brasília." },
       { question: "Natália Coelho compete pelo Brasil?", answer: "Ela é brasileira, mas aparece no roster oficial da IFBB Pro League representando os Estados Unidos." },
+    ],
+  },
+  /* ───────────────── 10. RESULTADO MEN'S PHYSIQUE ───────────────── */
+  {
+    slug: "resultado-mens-physique-olympia-2026",
+    title: "Resultado Men's Physique Olympia 2026: campeão, Top 10 e brasileiros",
+    metaTitle: "Resultado Men's Physique Olympia 2026: Edvan Palmeira",
+    metaDescription:
+      "Quem ganhou a Men's Physique do Olympia 2026 e como ficaram Edvan Palmeira e os brasileiros. Final no sábado, 26/09, a partir das 23h de Brasília.",
+    excerpt:
+      "A Men's Physique do Olympia 2026 é decidida no sábado, 26 de setembro. Ryan Terry defende o título; campeão, top 10 e brasileiros entram aqui.",
+    category: "Fisiculturismo",
+    tipo: "noticia",
+    date: DATA,
+    readTime: "3 min",
+    author: AUTOR,
+    tags: ["Mr. Olympia 2026", "Men's Physique", "Edvan Palmeira", "resultado", "fisiculturismo"],
+    content: `${AVISO_ONDA2("O resultado da Men's Physique do Olympia 2026 ainda não foi definido.")}
+<p><strong>A Men's Physique ainda não aconteceu.</strong> As prévias começam às <strong>13h30 de sábado, 26 de setembro</strong> (Brasília), e a final a partir das <strong>23h</strong>, em Las Vegas. Ryan Terry (Reino Unido) defende o tricampeonato. <strong>Edvan Palmeira</strong>, quinto colocado em 2025, é o brasileiro mais bem colocado no ano passado, num grupo de nove atletas listados pelo Brasil.</p>
+${CAPA("resultado-mens-physique-olympia-2026", "Capa: resultado da Men's Physique do Olympia 2026 — Ryan Terry defende o título e Edvan Palmeira lidera os brasileiros; final no sábado às 23h de Brasília")}
+
+<h2>Resultado Men's Physique Olympia 2026</h2>
+${TABELA_PENDENTE(10)}
+<p><em>Tabela preenchida com o resultado oficial da IFBB Pro League, depois da final. Se só o top 5 for divulgado na noite, só o top 5 entra.</em></p>
+
+<h2>Como ficaram os brasileiros?</h2>
+<table><thead><tr><th>Atleta</th><th>Representação no roster</th><th>Resultado</th></tr></thead><tbody>
+${ATLETAS_BRASIL.filter((x) => x.categoria === "mens-physique").map((x) => `<tr><td>${x.nome}</td><td>${x.representacao}</td><td>${x.resultado ?? "A definir"}</td></tr>`).join("")}
+</tbody></table>
+<p>Nove atletas aparecem no roster oficial representando o Brasil. <strong>Mauro Fialho</strong> é citado entre os brasileiros pela imprensa, mas está listado pela Espanha, e é assim que aparece na classificação oficial. Todos os brasileiros do fim de semana estão no <a href="/blog/brasileiros-mr-olympia-2026">painel dos brasileiros no Mr. Olympia 2026</a>.</p>
+
+<h2>Em que posição Edvan Palmeira ficou?</h2>
+<p><strong>Ainda não há resultado.</strong> O baiano Edvan Palmeira terminou em <strong>quinto</strong> em 2025, atrás de Ryan Terry, Ali Bilal, Brandon Hendrickson e Erin Banks. A colocação de 2026 entra aqui logo após a final de sábado.</p>
+
+<h2>Quem ganhou a Men's Physique?</h2>
+<p><strong>Ainda não foi decidido.</strong> Os nomes mais citados pela imprensa especializada:</p>
+<ul>
+<li><strong>Ryan Terry (Reino Unido)</strong> — campeão em 2023, 2024 e 2025. Um quarto título igualaria o recorde de Jeremy Buendia.</li>
+<li><strong>Ali Bilal (EUA)</strong> — vice em 2025.</li>
+<li><strong>Brandon Hendrickson (EUA)</strong> — terceiro em 2025 e ex-campeão da categoria.</li>
+<li><strong>Erin Banks (EUA)</strong> — campeão em 2022 e quarto em 2025.</li>
+</ul>
+
+<h2>Top 10</h2>
+<p>Ainda não definido. A tabela no topo recebe o top 10 oficial assim que a IFBB Pro League publicar.</p>
+
+<h2>Como foram as prévias?</h2>
+<p>As prévias ainda não aconteceram. Depois delas, esta seção vai registrar quem foi chamado para as primeiras comparações, sem transformar chamado em colocação.</p>
+
+<h2>Horário da final</h2>
+<ul>
+<li><strong>Prévias:</strong> sábado, 26/09, bloco a partir das 13h30 de Brasília (9h30 em Las Vegas), com Men's Physique, Fitness, Bikini, Wheelchair e Fit Model.</li>
+<li><strong>Final:</strong> sábado, 26/09, sessão a partir das 23h de Brasília (19h em Las Vegas), a mesma noite do Open.</li>
+</ul>
+<p>São os horários de início de cada bloco, não o minuto em que a categoria sobe ao palco.</p>
+
+<h2>Onde assistir</h2>
+<p>Pela OlympiaTV, transmissão oficial, gratuita com cadastro no site do evento.</p>
+
+<h2>O que é Men's Physique?</h2>
+<p>É a categoria masculina com bermuda de praia e sem poses de fisiculturismo: os juízes avaliam o físico de frente e de costas, com foco em ombros largos, cintura fina, abdômen definido e proporção. As pernas não entram no julgamento. É a categoria de entrada mais popular entre os homens.</p>
+
+<h2>As outras categorias</h2>
+<p>Na mesma noite é decidido o <a href="/blog/resultado-mr-olympia-open-2026">Open, o título de Mr. Olympia</a>. Os campeões de todas as categorias estão em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+
+${ACOMPANHE("resultado-mens-physique-olympia-2026")}
+
+${CTA_MASSA_PHYSIQUE}
+${FONTES}`,
+    faq: [
+      { question: "Quem ganhou a Men's Physique do Olympia 2026?", answer: "Ainda não foi decidido. A final é no sábado, 26 de setembro, a partir das 23h (Brasília). Ryan Terry defende o título, e esta página é atualizada com o resultado oficial." },
+      { question: "Em que posição Edvan Palmeira ficou?", answer: "Ainda não há resultado de 2026. Em 2025, Edvan Palmeira ficou em quinto na Men's Physique." },
+      { question: "Quantos brasileiros competem na Men's Physique 2026?", answer: "Nove atletas estão no roster oficial pelo Brasil. Mauro Fialho, citado entre os brasileiros, aparece pela Espanha." },
+    ],
+  },
+
+  /* ───────────────── 11. RESULTADO BIKINI ───────────────── */
+  {
+    slug: "resultado-bikini-olympia-2026",
+    title: "Resultado Bikini Olympia 2026: campeã, Top 10 e Elisa Pecini",
+    metaTitle: "Resultado Bikini Olympia 2026: Campeã, Top 10 e Isa Pecini",
+    metaDescription:
+      "Quem ganhou a Bikini Olympia 2026 e como ficaram Elisa (Isa) Pecini, Nivea Campos e Bruna Toigo. Final no sábado, 26/09, a partir das 23h de Brasília.",
+    excerpt:
+      "A Bikini Olympia 2026 é decidida no sábado, 26 de setembro. Maureen Blanquisco defende o título; campeã, top 10 e as três brasileiras entram aqui.",
+    category: "Fisiculturismo",
+    tipo: "noticia",
+    date: DATA,
+    readTime: "3 min",
+    author: AUTOR,
+    tags: ["Mr. Olympia 2026", "Bikini", "Elisa Pecini", "resultado", "fisiculturismo"],
+    content: `${AVISO_ONDA2("O resultado da Bikini Olympia 2026 ainda não foi definido.")}
+<p><strong>A Bikini ainda não aconteceu.</strong> As prévias começam às <strong>13h30 de sábado, 26 de setembro</strong> (Brasília), e a final a partir das <strong>23h</strong>, em Las Vegas. Maureen Blanquisco (Filipinas) defende o título. O Brasil tem três atletas: <strong>Elisa Pecini</strong>, a Isa Pecini, campeã em 2019, <strong>Nivea Campos</strong> e <strong>Bruna Toigo</strong>.</p>
+${CAPA("resultado-bikini-olympia-2026", "Capa: resultado da Bikini Olympia 2026 — Maureen Blanquisco defende o título e Elisa Pecini lidera as três brasileiras; final no sábado às 23h de Brasília")}
+
+<h2>Resultado Bikini Olympia 2026</h2>
+${TABELA_PENDENTE(10)}
+<p><em>Tabela preenchida com o resultado oficial da IFBB Pro League, depois da final. Se só o top 5 for divulgado na noite, só o top 5 entra.</em></p>
+
+<h2>Em que posição Elisa Pecini ficou?</h2>
+<p><strong>Ainda não há resultado.</strong> Elisa Pecini, conhecida como Isa Pecini, venceu a Bikini Olympia em 2019 e tem vaga garantida por esse título. A colocação de 2026 entra aqui logo após a final de sábado.</p>
+
+<h2>Como ficaram as brasileiras?</h2>
+<table><thead><tr><th>Atleta</th><th>Representação no roster</th><th>Resultado</th></tr></thead><tbody>
+${ATLETAS_BRASIL.filter((x) => x.categoria === "bikini").map((x) => `<tr><td>${x.nome}</td><td>${x.representacao}</td><td>${x.resultado ?? "A definir"}</td></tr>`).join("")}
+</tbody></table>
+<p>As três aparecem no roster oficial representando o Brasil. Os brasileiros de todas as categorias estão no <a href="/blog/brasileiros-mr-olympia-2026">painel Brasil do Mr. Olympia 2026</a>.</p>
+
+<h2>Quem ganhou a Bikini Olympia 2026?</h2>
+<p><strong>Ainda não foi decidido.</strong> Em 2025, o pódio foi Maureen Blanquisco, Ashlyn Little (EUA) e Jasmine Gonzalez (EUA). As três voltam como referências da categoria.</p>
+
+<h2>Top 10</h2>
+<p>Ainda não definido. A tabela no topo recebe o top 10 oficial assim que a IFBB Pro League publicar.</p>
+
+<h2>Como foram as prévias?</h2>
+<p>As prévias ainda não aconteceram. Depois delas, esta seção vai registrar quem foi chamada para as primeiras comparações, sem transformar chamado em colocação.</p>
+
+<h2>Horário da final</h2>
+<ul>
+<li><strong>Prévias:</strong> sábado, 26/09, bloco a partir das 13h30 de Brasília (9h30 em Las Vegas), com Bikini, Men's Physique, Fitness, Wheelchair e Fit Model.</li>
+<li><strong>Final:</strong> sábado, 26/09, sessão a partir das 23h de Brasília (19h em Las Vegas).</li>
+</ul>
+<p>São os horários de início de cada bloco, não o minuto em que a categoria sobe ao palco.</p>
+
+<h2>Onde assistir</h2>
+<p>Pela OlympiaTV, transmissão oficial, gratuita com cadastro no site do evento.</p>
+
+<h2>O que é Bikini no fisiculturismo?</h2>
+<p>É a categoria feminina com menos massa muscular e mais ênfase em forma geral, equilíbrio entre parte superior e inferior, condicionamento leve e apresentação: postura, caminhada e confiança no palco contam. Não há poses de contração muscular como no fisiculturismo.</p>
+
+<h2>As outras categorias</h2>
+<p>Na mesma noite saem a <a href="/blog/resultado-mens-physique-olympia-2026">Men's Physique</a> e o <a href="/blog/resultado-mr-olympia-open-2026">Open</a>. As campeãs e os campeões de todas as categorias estão em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+
+${ACOMPANHE("resultado-bikini-olympia-2026")}
+
+${CTA_MONTINHO}
+${FONTES}`,
+    faq: [
+      { question: "Quem ganhou a Bikini Olympia 2026?", answer: "Ainda não foi decidido. A final é no sábado, 26 de setembro, a partir das 23h (Brasília). Maureen Blanquisco defende o título, e esta página é atualizada com o resultado oficial." },
+      { question: "Isa Pecini ganhou a Bikini Olympia?", answer: "Em 2026, ainda não há resultado. Elisa (Isa) Pecini foi campeã da Bikini Olympia em 2019." },
+      { question: "Quais brasileiras competem na Bikini Olympia 2026?", answer: "Elisa Pecini, Nivea Campos e Bruna Toigo, todas listadas pelo Brasil no roster oficial." },
     ],
   },
 ];

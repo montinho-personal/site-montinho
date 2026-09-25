@@ -148,6 +148,22 @@ const CAPAS = [
 <div class="main"><h1>Brasileiros no<br>Mr. Olympia <em>2026</em></h1>
 <div class="tags"><span class="g">Ramon Dino</span><span class="g">Lucas Garcia</span><span class="g">Natália Coelho</span><span class="g">Eduarda Bezerra</span><span>Edvan Palmeira</span><span>Elisa Pecini</span><span>Leandro Peres</span><span>Zama Benta</span></div></div>`, "BRASIL"),
   },
+  {
+    slug: "resultado-mens-physique-olympia-2026",
+    alt: "Capa: resultado da Men's Physique do Olympia 2026 — Ryan Terry defende o título e Edvan Palmeira lidera os brasileiros; final no sábado às 23h de Brasília",
+    html: base(`
+<div class="top"><div class="kicker">Olympia 2026 · Men's Physique</div><div class="chip"><i></i>Resultado</div></div>
+<div class="main"><h1>Quem vence a<br>Men's <em>Physique</em></h1>
+<div class="sub">Campeão, <b>top 10</b> e os brasileiros, com Edvan Palmeira.<br>Final no <b>sábado, 26/09, a partir das 23h</b> (Brasília).</div></div>`, "PHYSIQUE"),
+  },
+  {
+    slug: "resultado-bikini-olympia-2026",
+    alt: "Capa: resultado da Bikini Olympia 2026 — Maureen Blanquisco defende o título e Elisa Pecini lidera as três brasileiras; final no sábado às 23h de Brasília",
+    html: base(`
+<div class="top"><div class="kicker">Olympia 2026 · Bikini</div><div class="chip"><i></i>Resultado</div></div>
+<div class="main"><h1>Quem vence a<br><em>Bikini</em> Olympia</h1>
+<div class="sub">Campeã, <b>top 10</b> e as <b>3 brasileiras</b>, com Isa Pecini.<br>Final no <b>sábado, 26/09, a partir das 23h</b> (Brasília).</div></div>`, "BIKINI"),
+  },
 ];
 // Só algumas capas: node scripts/olympia-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);
