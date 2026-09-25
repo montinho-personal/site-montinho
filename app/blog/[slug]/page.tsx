@@ -147,6 +147,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${SITE_URL}/blog/${slug}`,
     },
+    // Cobertura de evento: libera a imagem grande no Discover (sem isso o Google usa miniatura).
+    ...(post.tipo === "noticia" || post.category === "Fisiculturismo"
+      ? { robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" as const } } }
+      : {}),
     openGraph: {
       title,
       description,
