@@ -37,7 +37,7 @@ const AUTOR = "Montinho Personal Trainer";
 const DATA = "2026-09-25";
 
 const AVISO_ANTES = (o: string) =>
-  `<blockquote><p><strong>${o}</strong> Esta página será atualizada assim que houver resultado oficial. Última verificação: 25 de setembro de 2026.</p></blockquote>`;
+  `<blockquote><p><strong>${o}</strong> Esta página será atualizada assim que houver resultado oficial. Última verificação: 25 de setembro de 2026, 17h (Brasília).</p></blockquote>`;
 
 const FONTES = `<h2>Fontes</h2>
 <ul>
@@ -45,6 +45,12 @@ const FONTES = `<h2>Fontes</h2>
 <li><a href="https://www.ifbbpro.com/" target="_blank" rel="noopener noreferrer">IFBB Professional League</a></li>
 <li>Veículos consultados para pesagem, escalações e horários no Brasil: CNN Brasil, O Povo, NSC Total, Gazeta Esportiva, Lance!</li>
 </ul>`;
+
+const CTA_WELLNESS = `<h2>E o seu treino?</h2>
+<p>O desenvolvimento de glúteos e coxas que a Wellness premia não é exclusividade de quem compete: vem de volume bem distribuído por semana, carga que progride e paciência. Se você quer um treino montado para o seu objetivo e a sua rotina, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>`;
+
+const CTA_FASES = `<h2>Do palco para a sua rotina</h2>
+<p>Ramon não chega ao limite de peso por acaso: são anos de fases planejadas, ganho de massa e definição em blocos. O mesmo raciocínio serve para quem nunca vai competir. Se você quer organizar a sua próxima fase com método, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>`;
 
 const CTA_MONTINHO = `<h2>E o seu shape?</h2>
 <p>Ninguém precisa de palco para querer um corpo melhor. O que os atletas do Olympia mostram, em escala extrema, é o que funciona para qualquer pessoa: treino individualizado, progressão de carga, alimentação que cabe na rotina e constância por anos. Se você quer aplicar isso à sua vida, sem comparação com ninguém, eu monto o seu plano: <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo no WhatsApp pelo botão ao fim desta página.</p>`;
@@ -76,14 +82,15 @@ ${TABELA_PENDENTE(5)}
 <p><em>Tabela preenchida após a final oficial. Enquanto isso, veja <a href="/blog/ramon-dino-mr-olympia-2026-horario">que horas Ramon Dino compete e onde assistir</a>.</em></p>
 
 <h2>Ramon Dino: em que posição ficou?</h2>
-<p><strong>Ainda não há resultado.</strong> Ramon Dino (Brasil) passou pela pesagem oficial na quarta-feira, 23 de setembro, com <strong>102,5 kg</strong>, 500 gramas abaixo do limite de 103 kg para os seus 1,81 m. Ele chega como atual campeão: em 2025 venceu a categoria à frente de Mike Sommerfeld (Alemanha) e Terrence Ruffin (EUA), na primeira edição sem Chris Bumstead, que se aposentou após o sexto título em 2024. Os números do atleta estão em <a href="/blog/ramon-dino-peso-altura">quanto pesa Ramon Dino: peso, altura e limite da Classic</a>.</p>
+<p><strong>Ainda não há resultado.</strong> Ramon Dino (Brasil) passou na pesagem oficial da IFBB Pro League na quarta-feira, 23 de setembro, abaixo do limite de peso da altura dele, e chega como atual campeão: em 2025 venceu a categoria à frente de Mike Sommerfeld (Alemanha) e Terrence Ruffin (EUA), na primeira edição sem Chris Bumstead, que se aposentou após o sexto título em 2024. Os números do atleta estão em <a href="/blog/ramon-dino-peso-altura">quanto pesa Ramon Dino: peso, altura e limite da Classic</a>.</p>
 
 <h2>Quem disputa o título com Ramon Dino</h2>
 <p>Pelas escalações divulgadas e pelos resultados da temporada, os nomes mais citados para o primeiro chamado são:</p>
 <ul>
 <li><strong>Mike Sommerfeld (Alemanha)</strong> — vice em 2025 e campeão do Arnold Classic UK 2026, apontado pela imprensa especializada como a principal ameaça ao brasileiro.</li>
 <li><strong>Terrence Ruffin (EUA)</strong> — terceiro em 2025, duas vezes campeão do Arnold Classic e referência em posing na categoria.</li>
-<li><strong>Wesley Vissers (Holanda)</strong> — segundo no Arnold Classic UK 2026, atrás de Sommerfeld.</li>
+<li><strong>Wesley Vissers (Holanda)</strong> — segundo no Arnold Classic UK 2026, atrás de Sommerfeld, e campeão do Arnold Classic Ohio de 2024, quando superou Ramon.</li>
+<li><strong>Niall Darwen (Reino Unido)</strong> — citado por Vissers entre os cinco do primeiro chamado, ao lado de Ramon, Sommerfeld, Ruffin e dele mesmo.</li>
 </ul>
 <p>Outros atletas aparecem nas prévias da imprensa especializada como candidatos ao top 5. A lista final de quem sobe ao palco é da IFBB Pro League, e o primeiro chamado das prévias costuma indicar quem disputa o título — sem definir nada até a final.</p>
 
@@ -93,7 +100,7 @@ ${TABELA_PENDENTE(5)}
 <h2>As outras categorias</h2>
 <p>Na mesma noite são decididas Wellness (<a href="/blog/resultado-wellness-mr-olympia-2026">resultado da Wellness 2026</a>), 212, Figure, Women's Physique e Ms. Olympia. O Open, título máximo do evento, é decidido no sábado (<a href="/blog/resultado-mr-olympia-open-2026">resultado do Mr. Olympia Open 2026</a>). Todos os campeões ficam reunidos em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
-${CTA_MONTINHO}
+${CTA_FASES}
 ${FONTES}`,
     faq: [
       { question: "Quem ganhou a Classic Physique do Mr. Olympia 2026?", answer: "O resultado ainda não foi definido. A final acontece na sexta-feira, 25 de setembro, a partir das 22h (horário de Brasília), e esta página é atualizada assim que a IFBB Pro League anuncia o campeão." },
@@ -107,7 +114,7 @@ ${FONTES}`,
   {
     slug: "ramon-dino-mr-olympia-2026-horario",
     title: "Que horas Ramon Dino compete no Mr. Olympia 2026? Veja o horário",
-    metaTitle: "Ramon Dino: Que Horas Compete no Olympia 2026 e Onde Ver",
+    metaTitle: "Que Horas Ramon Dino Compete no Olympia 2026? Horário",
     metaDescription:
       "Ramon Dino compete nesta sexta, 25/09: prévias às 13h30 e final a partir das 22h (Brasília). Veja onde assistir de graça e como funciona a decisão.",
     excerpt:
@@ -137,15 +144,15 @@ ${FONTES}`,
 <h2>Por que a Classic mudou para sexta</h2>
 <p>Em 2025 a categoria foi decidida no sábado. Em 2026 a organização moveu a Classic Physique para a sexta-feira, junto com a Wellness. O sábado fica com Men's Physique, Bikini, Fitness e a final do Mr. Olympia Open, a partir das 23h de Brasília.</p>
 
-<h2>Ramon Dino em 2026</h2>
-<p>Atual campeão (2025), Ramon passou na pesagem de quarta-feira com 102,5 kg para 1,81 m — meio quilo abaixo do limite. Ele busca o bicampeonato contra Mike Sommerfeld, Terrence Ruffin e Wesley Vissers, entre outros. Os números completos estão em <a href="/blog/ramon-dino-peso-altura">quanto pesa Ramon Dino</a>; a programação inteira do fim de semana, em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+<h2>Depois da final</h2>
+<p>A classificação completa e a colocação de Ramon entram em <a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic Physique do Mr. Olympia 2026</a> assim que forem anunciadas. A programação do fim de semana inteiro, com as outras categorias, está em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
 ${FONTES}`,
     faq: [
       { question: "Que horas Ramon Dino compete hoje?", answer: "Nesta sexta-feira, 25 de setembro, as prévias da Classic Physique começam às 13h30 e a final a partir das 22h, no horário de Brasília (9h30 e 18h em Las Vegas). A hora exata em que ele sobe ao palco depende da ordem das categorias na sessão." },
       { question: "Em qual categoria Ramon Dino compete?", answer: "Classic Physique, categoria com limite de peso por altura. Ramon é o atual campeão, título de 2025." },
       { question: "Onde assistir Ramon Dino no Mr. Olympia 2026?", answer: "Na OlympiaTV, transmissão oficial gratuita com cadastro no site do evento, e em coberturas em português como a do canal de Renato Cariani no YouTube." },
-      { question: "Quanto pesa Ramon Dino?", answer: "Na pesagem oficial de 23 de setembro de 2026, 102,5 kg, com 1,81 m de altura. O limite para a altura dele na Classic Physique é 103 kg." },
+      { question: "O horário de Las Vegas é diferente do de Brasília?", answer: "Sim: Las Vegas está 4 horas atrás de Brasília em setembro. As prévias de 9h30 em Las Vegas são 13h30 em Brasília, e a final de 18h é 22h." },
     ],
   },
 
@@ -155,7 +162,7 @@ ${FONTES}`,
     title: "Quem ganhou o Mr. Olympia 2026? Veja campeões e resultados",
     metaTitle: "Quem Ganhou o Mr. Olympia 2026? Todos os Campeões",
     metaDescription:
-      "Campeões e resultados do Mr. Olympia 2026, categoria por categoria: Open, Classic Physique, Wellness, 212 e mais. Atualizado durante as finais de 25 e 26/09.",
+      "Campeões e resultados do Mr. Olympia 2026, categoria por categoria: Open, Classic Physique, Wellness e 212. Atualizado durante as finais de 25 e 26/09.",
     excerpt:
       "Todos os campeões do Mr. Olympia 2026 reunidos numa página, atualizada durante as finais de sexta (25) e sábado (26), em Las Vegas.",
     category: "Fisiculturismo",
@@ -221,7 +228,7 @@ ${FONTES}`,
     title: "Resultado Wellness Mr. Olympia 2026: campeã, Top 5 e brasileiras",
     metaTitle: "Resultado Wellness Olympia 2026: Campeã e Brasileiras",
     metaDescription:
-      "Quem ganhou a Wellness do Mr. Olympia 2026: campeã, top 5 e colocação das brasileiras. Final nesta sexta, 25/09, a partir das 22h (Brasília). Atualizado.",
+      "Campeã e top 5 da Wellness do Mr. Olympia 2026, com a colocação de Eduarda Bezerra e das brasileiras. Final nesta sexta, 25/09, às 22h (Brasília).",
     excerpt:
       "A final da Wellness do Mr. Olympia 2026 é nesta sexta, 25 de setembro. Eduarda Bezerra defende o título numa categoria que o Brasil venceu em todas as edições.",
     category: "Fisiculturismo",
@@ -244,7 +251,7 @@ ${TABELA_PENDENTE(5)}
 <li><strong>Isa Pereira Nunes</strong> — campeã de 2024 e vice em 2025.</li>
 <li><strong>Rayane Fogal</strong> — campeã do Arnold Classic Ohio e do Arnold Classic UK em 2026.</li>
 </ul>
-<p>Também estão inscritas, entre outras, Camile Luz, Maria Rita Penteado, Josy Alves Macedo, Bruna Seredich, Daniele Mendonça, Valéria Bodanese, Juliana Mota, Narla Vilar, Camila Rodrigues, Giselle Machado, Valquiria Lopes, Raeli Dias, Tatiana Farkas e Viviane Marcucci. <strong>Francielle Mattos</strong>, tricampeã (2021–2023), tem vaga garantida mas optou por não competir em 2026.</p>
+<p>As outras brasileiras inscritas aparecem com variações entre as listas publicadas pela imprensa; a relação oficial é a da IFBB Pro League, e os nomes delas entram aqui com a classificação. <strong>Francielle Mattos</strong>, tricampeã (2021–2023), tem vaga garantida mas optou por não competir em 2026.</p>
 
 <h2>O histórico: Brasil em todas as edições</h2>
 <table><thead><tr><th>Ano</th><th>Campeã</th></tr></thead><tbody>
@@ -257,12 +264,12 @@ ${TABELA_PENDENTE(5)}
 </tbody></table>
 
 <h2>O que os juízes avaliam na Wellness</h2>
-<p>A Wellness premia o desenvolvimento da parte inferior do corpo — glúteos, coxas e quadril — em proporção maior que a superior, com condicionamento moderado: definição visível sem a secura das categorias de bodybuilding. Não é a categoria "mais fácil", como às vezes se diz; é outra proporção. Para entender como esse tipo de desenvolvimento se constrói no treino comum, sem palco, veja <a href="/blog/como-ganhar-massa-sem-ganhar-gordura">como ganhar massa sem ganhar gordura</a>.</p>
+<p>A Wellness premia o desenvolvimento da parte inferior do corpo — glúteos, coxas e quadril — em proporção maior que a superior, com condicionamento moderado: definição visível sem a secura das categorias de bodybuilding. Para entender como esse tipo de desenvolvimento se constrói no treino comum, sem palco, veja <a href="/blog/como-ganhar-massa-sem-ganhar-gordura">como ganhar massa sem ganhar gordura</a>.</p>
 
 <h2>As outras decisões da noite</h2>
 <p>Na mesma sessão de sexta são decididas Classic Physique (<a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic com Ramon Dino</a>), 212, Figure, Women's Physique e Ms. Olympia. Todos os campeões em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
-${CTA_MONTINHO}
+${CTA_WELLNESS}
 ${FONTES}`,
     faq: [
       { question: "Quem ganhou a Wellness do Mr. Olympia 2026?", answer: "Ainda não foi definido. A final é nesta sexta-feira, 25 de setembro, a partir das 22h (Brasília). Esta página é atualizada com a campeã e o top 5 assim que o resultado oficial sair." },
@@ -276,9 +283,9 @@ ${FONTES}`,
   {
     slug: "resultado-mr-olympia-open-2026",
     title: "Resultado Mr. Olympia Open 2026: campeão, Top 10 e classificação",
-    metaTitle: "Resultado Mr. Olympia 2026 Open: Campeão e Top 10",
+    metaTitle: "Resultado Open Mr. Olympia 2026: Campeão e Top 10",
     metaDescription:
-      "Quem ganhou o Mr. Olympia 2026 na categoria Open: campeão, top 10 e classificação. Final no sábado, 26/09, a partir das 23h (Brasília). Atualizado.",
+      "Classificação do Open do Mr. Olympia 2026: campeão do Sandow, top 10 e colocações. Final no sábado, 26/09, a partir das 23h (Brasília). Atualizado.",
     excerpt:
       "A final do Mr. Olympia Open 2026 é no sábado, 26 de setembro. Derek Lunsford defende o título contra Samson Dauda, Andrew Jacked, Nick Walker e Martin Fitzwater.",
     category: "Fisiculturismo",
@@ -288,7 +295,7 @@ ${FONTES}`,
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "Open", "Derek Lunsford", "Samson Dauda", "resultado"],
     content: `${AVISO_ANTES("O resultado do Mr. Olympia Open 2026 ainda não foi definido.")}
-<p>O título máximo do Mr. Olympia 2026 é decidido <strong>no sábado, 26 de setembro</strong>, com a final a partir das <strong>23h (horário de Brasília)</strong>, na Orleans Arena, em Las Vegas. As prévias do Open acontecem antes, na sessão de sexta à noite. <strong>Derek Lunsford</strong> (EUA) defende o título de 2025 contra 21 atletas. A classificação completa entra aqui assim que for anunciada.</p>
+<p>O título máximo do Mr. Olympia 2026 é decidido <strong>no sábado, 26 de setembro</strong>, com a final a partir das <strong>23h (horário de Brasília)</strong>, na Orleans Arena, em Las Vegas. As prévias do Open acontecem antes, na sessão de sexta à noite. <strong>Derek Lunsford</strong> (EUA) defende o título de 2025 contra 21 atletas na principal categoria da IFBB Pro League, a única sem limite de peso. A classificação completa entra aqui assim que for anunciada.</p>
 
 <h2>Classificação do Mr. Olympia Open 2026</h2>
 ${TABELA_PENDENTE(10)}
@@ -315,7 +322,7 @@ ${TABELA_PENDENTE(10)}
 ${CTA_MONTINHO}
 ${FONTES}`,
     faq: [
-      { question: "Quem ganhou o Mr. Olympia 2026?", answer: "Ainda não foi definido. A final do Open é no sábado, 26 de setembro, a partir das 23h no horário de Brasília. O campeão e o top 10 entram nesta página assim que forem anunciados." },
+      { question: "Quem ganhou o Open do Mr. Olympia 2026?", answer: "Ainda não foi definido. A final do Open é no sábado, 26 de setembro, a partir das 23h no horário de Brasília. O campeão e o top 10 entram nesta página assim que forem anunciados; os campeões das outras categorias ficam na página de todos os resultados do Olympia 2026." },
       { question: "Quem ficou no Top 5 do Mr. Olympia 2026?", answer: "A classificação sai após a final de sábado. Os mais cotados para o grupo da frente são Derek Lunsford, Samson Dauda, Andrew Jacked, Nick Walker e Martin Fitzwater." },
       { question: "Quando acontece a final do Mr. Olympia 2026?", answer: "Sábado, 26 de setembro de 2026, a partir das 23h (Brasília), 19h em Las Vegas, na Orleans Arena. As prévias do Open são na sexta à noite." },
       { question: "Hadi Choopan compete no Olympia 2026?", answer: "Não. Vice em 2023, 2024 e 2025, ele anunciou a desistência em 26 de agosto de 2026 por problemas de visto." },
@@ -326,7 +333,7 @@ ${FONTES}`,
   {
     slug: "ramon-dino-peso-altura",
     title: "Quanto pesa Ramon Dino? Peso, altura e limite na Classic Physique",
-    metaTitle: "Quanto Pesa Ramon Dino? Peso, Altura e Limite Classic",
+    metaTitle: "Quanto Pesa Ramon Dino? Peso, Altura e Limite na Classic",
     metaDescription:
       "Ramon Dino tem 1,81 m e pesou 102,5 kg na pesagem do Olympia 2026, para um limite de 103 kg. Entenda como funciona o limite de peso por altura na Classic.",
     excerpt:
@@ -345,7 +352,7 @@ ${FONTES}`,
 <tr><td>Peso na pesagem do Olympia 2026</td><td>102,5 kg</td><td>23/09/2026</td></tr>
 <tr><td>Limite para 1,81 m na Classic Physique</td><td>103 kg (227 lb)</td><td>IFBB Pro League</td></tr>
 <tr><td>Categoria</td><td>Classic Physique</td><td>—</td></tr>
-<tr><td>Principais títulos</td><td>Mr. Olympia Classic Physique 2025; Arnold Classic Ohio 2023</td><td>—</td></tr>
+<tr><td>Principais resultados</td><td>Mr. Olympia Classic Physique 2025 (campeão); Arnold Classic Ohio 2023 (campeão) e 2024 (vice, atrás de Wesley Vissers)</td><td>—</td></tr>
 </tbody></table>
 
 <h2>Peso de palco não é peso do ano inteiro</h2>
@@ -373,7 +380,7 @@ ${FONTES}`,
 <h2>O que isso ensina para quem treina sem palco</h2>
 <p>Ramon compete com um limite de peso e mesmo assim precisa parecer maior a cada ano. A resposta não é "mais peso": é mais músculo no mesmo peso, com menos gordura e melhor distribuição. Para quem treina em academia comum, a lição é a mesma: a balança sozinha diz pouco; o que muda o corpo é a composição. Se você quer saber quanto músculo o seu corpo comporta sem hormônios, a <a href="/ferramentas/potencial-natural">Calculadora de Potencial Natural</a> estima isso pela altura e pela estrutura, e o artigo sobre <a href="/blog/quanto-tempo-para-ganhar-massa-muscular">quanto tempo leva para ganhar massa muscular</a> mostra o ritmo realista.</p>
 
-${CTA_MONTINHO}
+${CTA_FASES}
 ${FONTES}`,
     faq: [
       { question: "Quanto pesa Ramon Dino?", answer: "Na pesagem oficial do Mr. Olympia 2026, em 23 de setembro, 102,5 kg. Fora de temporada o peso é maior, por isso todo número vem com a data." },

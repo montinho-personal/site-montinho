@@ -196,7 +196,12 @@ export default function PotencialNaturalPage() {
             <p className="text-gray-400 text-sm">
               Olhando assim fica claro por que quase ninguém encosta nesses números: um homem de 1,80 m na
               referência pesaria {formataKg(TAB_H[4].peso)} com 12% de gordura — o físico de um fisiculturista
-              natural de nível competitivo, não o de quem treina bem há alguns anos.
+              natural de nível competitivo, não o de quem treina bem há alguns anos. Na Classic Physique, o
+              limite é oficial: veja{" "}
+              <Link href="/blog/ramon-dino-peso-altura" className="underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white">
+                quanto pesa Ramon Dino e o limite de peso da categoria
+              </Link>
+              .
             </p>
           </div>
 

@@ -32930,6 +32930,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 </ul>
 
 <p>Isso leva em média 4-8 anos de treino consistente, progressivo e bem estruturado.</p>
+<p>No palco, a Classic Physique limita justamente isso: o peso máximo depende da altura. Ramon Dino, com 1,81 m, pode pesar no máximo 103 kg; veja <a href="/blog/ramon-dino-peso-altura">quanto pesa Ramon Dino e como funciona o limite da Classic Physique</a>.</p>
 
 <h2>Para mulheres</h2>
 
@@ -39467,6 +39468,7 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 <h3>O ponto de virada</h3>
 
 <p>1 ano de musculação consistente é o ponto onde a maioria das pessoas sente que "virou outra pessoa". As transformações vão além do físico:</p>
+<p>Para ter escala: um fisiculturista de elite leva uma década para chegar ao palco. Ramon Dino estreou em 2016 e só venceu o Mr. Olympia em 2025 — a história, com peso e altura dele, está em <a href="/blog/ramon-dino-peso-altura">quanto pesa Ramon Dino</a>.</p>
 
 <ul>
 <li><strong>Físico</strong>: transformação visual clara, muito diferente do ponto de partida</li>
@@ -85006,6 +85008,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Recuperação como prioridade:</strong> sono, gestão de estresse e deloads programados.</li>
 <li><strong>Um coach que enxerga o que você não vê.</strong></li>
 </ol>
+<p>É o mesmo modelo que se vê no topo do esporte: Ramon Dino chega ao Mr. Olympia 2026 como atual campeão da Classic Physique depois de anos de fases planejadas — o <a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic Physique do Mr. Olympia 2026</a> mostra o que isso rende no palco.</p>
 <p>Quer estruturar sua próxima fase com método? <a href="/contato">Agende uma avaliação</a>.</p>
 <h2>Acelerando a hipertrofia: os fundamentos</h2>
 <p>Antes da parte final, vale revisitar os fundamentos que sustentam qualquer preparação — do primeiro off-season ao palco:</p>
@@ -98159,7 +98162,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Tabela de percentual de gordura para homens</h2>
 <p>As faixas abaixo seguem as classificações mais usadas em avaliação física (como as do American Council on Exercise), com valores aproximados:</p>
 <ul>
-<li><strong>Gordura essencial:</strong> 2% a 5% — nível de fisiculturista em dia de competição, insustentável no dia a dia</li>
+<li><strong>Gordura essencial:</strong> 2% a 5% — nível de fisiculturista em dia de competição, insustentável no dia a dia (é o que se vê no palco do Olympia; os <a href="/blog/quem-ganhou-mr-olympia-2026">campeões do Mr. Olympia 2026</a> chegam assim só por alguns dias)</li>
 <li><strong>Atleta:</strong> 6% a 13% — definição visível, abdômen aparente</li>
 <li><strong>Fitness:</strong> 14% a 17% — corpo atlético, boa definição</li>
 <li><strong>Saudável/aceitável:</strong> 18% a 24% — dentro da normalidade para a maioria</li>
