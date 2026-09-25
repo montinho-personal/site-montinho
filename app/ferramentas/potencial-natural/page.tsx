@@ -241,6 +241,7 @@ export default function PotencialNaturalPage() {
             <p className="text-gray-400 text-sm">{NOTA_TAXAS_OTIMISTAS}</p>
           </div>
 
+          <p className="text-gray-300 leading-relaxed">Quer ver essa curva ano a ano, com o seu estágio e três cenários? Use o <Link href="/ferramentas/quanto-tempo-para-ter-shape" className="underline underline-offset-4 hover:text-white">simulador de quanto tempo para ter shape</Link>.</p>
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Um exemplo inteiro</h2>
             <p className="text-gray-300 leading-relaxed mb-4">

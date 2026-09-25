@@ -48,13 +48,11 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   "ramon-dino-mr-olympia-2026-horario": "Notícia de horário e transmissão: a pessoa quer saber que horas Ramon Dino compete e onde assistir; não há conta na cabeça nem ferramenta que responda isso.",
   "quem-ganhou-mr-olympia-2026": "Hub de resultados do Mr. Olympia 2026, categoria por categoria: a leitura termina com nomes e colocações, nunca com um número para calcular.",
   "resultado-wellness-mr-olympia-2026": "Notícia de resultado da Wellness: a pessoa quer a campeã e a colocação das brasileiras; sai com um fato, sem conta pendente para uma ferramenta.",
-  "resultado-212-mr-olympia-2026": "Notícia de resultado da 212: a pessoa quer o campeão e a colocação de Lucas Garcia e dos brasileiros; sai com um fato. O simulador de massa aparece só como continuação no fim.",
   "resultado-womens-physique-olympia-2026": "Notícia de resultado da Women's Physique: a pessoa quer a campeã e a posição de Natália Coelho e das brasileiras; sai com um fato, sem conta pendente.",
   "brasileiros-mr-olympia-2026": "Hub dos brasileiros no Mr. Olympia 2026, com painel filtrável: a pessoa quer saber quem compete, quando e como terminou; sai com nomes e colocações.",
   "resultado-mens-physique-olympia-2026": "Notícia de resultado da Men's Physique: a pessoa quer o campeão e a posição de Edvan Palmeira e dos brasileiros; sai com um fato. O simulador de massa é só continuação.",
   "resultado-bikini-olympia-2026": "Notícia de resultado da Bikini: a pessoa quer a campeã e a posição de Elisa (Isa) Pecini e das brasileiras; sai com um fato, sem conta pendente.",
   "resultado-fit-model-olympia-2026": "Notícia de resultado da Fit Model: a pessoa quer a campeã e a posição de Gabriela Queiroz, e às vezes o que é a categoria; sai com fatos, sem conta pendente.",
-  "resultado-mr-olympia-open-2026": "Notícia de resultado do Open: a pessoa quer o campeão e o top 10; sai com um fato, e nenhuma ferramenta do site tem papel nessa pergunta.",
   "rosca-direta-vs-rosca-martelo":
     "Comparativo de exercício: a decisão do leitor é qual pegada usar, e a resposta é anatômica, não numérica. Nenhuma ferramenta do site compara exercícios.",
 

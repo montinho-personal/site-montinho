@@ -1250,6 +1250,8 @@ export const blogPosts = ([
 
 <p>O processo de ganho muscular é lento, previsível e cumulativo. Cada semana contribui para a próxima. Cada mês se soma ao anterior. Um ano consistente transforma o corpo de uma forma que nenhum atalho de 30 dias entrega.</p>
 
+ <p><strong>Quer ver isso aplicado ao seu caso?</strong> O <a href="/ferramentas/quanto-tempo-para-ter-shape">simulador de quanto tempo para ter shape</a> usa sua altura, peso e tempo de treino para mostrar seu estágio atual e a curva provável dos próximos anos, em três cenários.</p>
+
 <h2>Conclusão</h2>
 
 <p>Não existe uma resposta única para "quanto tempo vai levar" — mas existe uma resposta honesta: depende da qualidade do seu protocolo, não da intensidade do desejo.</p>

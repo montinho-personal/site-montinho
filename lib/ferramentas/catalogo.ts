@@ -350,6 +350,17 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["execucao", "estou fazendo certo", "tecnica", "video", "corrigir exercicio", "postura", "forma", "amplitude"],
   },
   {
+    id: "quanto-tempo-shape",
+    href: "/ferramentas/quanto-tempo-para-ter-shape",
+    nome: "Quanto Tempo para Ter Shape?",
+    resultado: "Veja seu estágio hoje e a curva provável dos próximos anos, em três cenários.",
+    acao: "Simular minha jornada",
+    tempo: "1 minuto",
+    categoria: "treino",
+    icone: "calendario",
+    tags: ["quanto tempo", "shape", "ficar musculoso", "anos de treino", "evolucao", "ffmi", "olympia", "ganhar massa", "hipertrofia"],
+  },
+  {
     id: "potencial",
     href: "/ferramentas/potencial-natural",
     nome: "Calculadora de Potencial Natural",

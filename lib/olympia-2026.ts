@@ -142,6 +142,8 @@ ${TABELA_PENDENTE(5)}
 <p>Ramon compete na faixa até 182,9 cm. Veja em qual faixa a sua altura cairia — e qual seria o seu teto na tabela profissional (ou <a href="/ferramentas/calculadora-peso-classic-physique">calcule o limite de peso da Classic Physique pela sua altura</a> na versão completa):</p>
 <!--CALCULADORA_CLASSIC:compacta-->
 
+<p><em>Quanto tempo levaria para chegar a um shape desse nível? O <a href="/ferramentas/quanto-tempo-para-ter-shape?ref=classic">simulador de evolução muscular</a> mostra seu estágio e o caminho provável, sem prometer prazo para o nível profissional.</em></p>
+
 <h2>Como funciona a decisão: prévias e final</h2>
 <p>Na <strong>prévia (prejudging)</strong>, os juízes comparam os atletas em grupos, nas poses obrigatórias, e é ali que a maior parte da nota se forma. Na <strong>final</strong>, cada um faz a rotina de posing e há novas comparações; o resultado é anunciado no palco. Por isso o "quem ganhou" só existe depois da final, na noite de sexta no horário de Brasília. Detalhes do formato e da regra de peso: <a href="/blog/ramon-dino-peso-altura">limite de peso da Classic Physique</a>.</p>
 
@@ -382,6 +384,10 @@ ${TABELA_PENDENTE(10)}
 <h2>Open e Classic: a diferença</h2>
 <p>O Open não tem limite de peso: vence quem combina mais massa muscular com condicionamento e proporção. A Classic Physique, de Ramon Dino, limita o peso pela altura e valoriza linhas e estética. Um atleta de 1,81 m compete na Classic com no máximo 103 kg; no Open, os primeiros colocados passam com folga dos 120 kg. Os números da Classic estão em <a href="/blog/ramon-dino-peso-altura">peso, altura e limite da Classic Physique</a>.</p>
 
+<h2>Quanto tempo para construir um shape grande?</h2>
+<p>O Open é o nível máximo de massa muscular do fisiculturismo. Se você quer saber em que estágio está e como tende a ser a sua curva nos próximos anos, compare com essa referência:</p>
+<!--SHAPE:open-->
+
 <h2>Todas as categorias</h2>
 <p>Os campeões de sexta e sábado ficam reunidos em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>, incluindo a <a href="/blog/resultado-wellness-mr-olympia-2026">Wellness, com as brasileiras</a>.</p>
 
@@ -451,6 +457,7 @@ ${CAPA("ramon-dino-peso-altura", "Capa: quanto pesa Ramon Dino — 102,5 kg na p
 <p>Os vices de 2022 e 2023 foram atrás de Chris Bumstead, que venceu seis vezes seguidas (2019–2024) e se aposentou no palco em 2024. Horários e transmissão de 2026: <a href="/blog/ramon-dino-mr-olympia-2026-horario">que horas Ramon Dino compete</a>.</p>
 
 <h2>O que isso ensina para quem treina sem palco</h2>
+<p>Se a pergunta que ficou é "quanto tempo eu levaria para chegar perto disso?", o <a href="/ferramentas/quanto-tempo-para-ter-shape?ref=classic">simulador de quanto tempo para ter shape</a> mostra o seu estágio hoje e o caminho provável dos próximos anos, com a Classic Physique como referência de escala.</p>
 <p>Ramon compete com um limite de peso e mesmo assim precisa parecer maior a cada ano. A resposta não é "mais peso": é mais músculo no mesmo peso, com menos gordura e melhor distribuição. Para quem treina em academia comum, a lição é a mesma: a balança sozinha diz pouco; o que muda o corpo é a composição. Se você quer saber quanto músculo o seu corpo comporta sem hormônios, a <a href="/ferramentas/potencial-natural">Calculadora de Potencial Natural</a> estima isso pela altura e pela estrutura, e o artigo sobre <a href="/blog/quanto-tempo-para-ganhar-massa-muscular">quanto tempo leva para ganhar massa muscular</a> mostra o ritmo realista.</p>
 
 ${ACOMPANHE("ramon-dino-peso-altura")}
@@ -524,6 +531,10 @@ ${TABELA_PENDENTE(10)}
 
 <h2>O que significa 212 no fisiculturismo?</h2>
 <p>É o fisiculturismo tradicional com teto de peso: 212 libras, cerca de 96,2 kg, na pesagem oficial. Os critérios são os do Open (massa, densidade, condicionamento, simetria), mas só compete quem está dentro do limite, o que favorece atletas mais baixos. Diferente da Classic Physique, o peso máximo não depende da altura: é o mesmo para todos.</p>
+
+<h2>Quanto tempo para construir um shape grande?</h2>
+<p>Use seus dados para comparar o seu nível atual com uma referência de muscularidade da 212 e ver o caminho provável dos próximos anos. O simulador mostra estágios e faixas — e diz com honestidade quando uma referência profissional não cabe num prazo.</p>
+<!--SHAPE:212-->
 
 <h2>As outras categorias</h2>
 <p>Na mesma noite saem os resultados da <a href="/blog/resultado-classic-physique-mr-olympia-2026">Classic Physique, com Ramon Dino</a>, e da <a href="/blog/resultado-wellness-mr-olympia-2026">Wellness</a>. O Open é decidido no sábado (<a href="/blog/resultado-mr-olympia-open-2026">resultado do Open</a>), e todos os campeões ficam em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>

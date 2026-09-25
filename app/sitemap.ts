@@ -289,6 +289,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/ferramentas/quanto-tempo-para-ter-shape`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/ferramentas/meu-shape-12-semanas`,
       lastModified: new Date(),
       changeFrequency: "monthly",

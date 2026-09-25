@@ -2,6 +2,8 @@ import CalculadoraClassic from "@/components/classic/CalculadoraClassic";
 import PainelBrasil from "@/components/olympia/PainelBrasil";
 import Contagem from "@/components/olympia/Contagem";
 import StatusCategorias from "@/components/olympia/StatusCategorias";
+import ShapeCompacto from "@/components/shape/ShapeCompacto";
+import type { ReferenciaId } from "@/lib/shape";
 
 /**
  * O corpo do artigo, com ferramentas embutidas no ponto exato do texto.
@@ -10,10 +12,11 @@ import StatusCategorias from "@/components/olympia/StatusCategorias";
  * <!--CALCULADORA_CLASSIC:completa|compacta--> o componente real entra no
  * lugar dele. O mesmo vale para o Mr. Olympia 2026:
  * <!--PAINEL_BRASIL:olympia-->, <!--OLYMPIA_STATUS:geral--> e
- * <!--OLYMPIA_CONTAGEM:<id da categoria>|brasil-->. Sem marcador, é só a mesma div de sempre — nada muda nos
+ * <!--OLYMPIA_CONTAGEM:<id da categoria>|brasil--> e a entrada compacta do
+ * simulador de shape: <!--SHAPE:<referência>-->. Sem marcador, é só a mesma div de sempre — nada muda nos
  * outros mil artigos.
  */
-const MARCADOR = /<!--(CALCULADORA_CLASSIC|PAINEL_BRASIL|OLYMPIA_STATUS|OLYMPIA_CONTAGEM):([a-z0-9-]+)-->/;
+const MARCADOR = /<!--(CALCULADORA_CLASSIC|PAINEL_BRASIL|OLYMPIA_STATUS|OLYMPIA_CONTAGEM|SHAPE):([a-z0-9-]+)-->/;
 
 export default function Prosa({ html, slug }: { html: string; slug: string }) {
   if (!MARCADOR.test(html)) return <div className="prose-blog" dangerouslySetInnerHTML={{ __html: html }} />;
@@ -28,7 +31,7 @@ export default function Prosa({ html, slug }: { html: string; slug: string }) {
     if (!tipo) continue;
     out.push(
       <div key={`e${i}`} className="my-8">
-        {tipo === "PAINEL_BRASIL" ? <PainelBrasil /> : tipo === "OLYMPIA_STATUS" ? <StatusCategorias /> : tipo === "OLYMPIA_CONTAGEM" ? <Contagem cat={arg} /> : <CalculadoraClassic variante={arg as "completa" | "compacta"} placement={`artigo-${slug}`} />}
+        {tipo === "PAINEL_BRASIL" ? <PainelBrasil /> : tipo === "OLYMPIA_STATUS" ? <StatusCategorias /> : tipo === "OLYMPIA_CONTAGEM" ? <Contagem cat={arg} /> : tipo === "SHAPE" ? <ShapeCompacto referenciaId={arg as ReferenciaId} placement={`artigo-${slug}`} /> : <CalculadoraClassic variante={arg as "completa" | "compacta"} placement={`artigo-${slug}`} />}
       </div>,
     );
   }
