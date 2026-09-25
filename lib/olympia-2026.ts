@@ -78,6 +78,7 @@ const LINKS_CLUSTER: [string, string][] = [
   ["resultado-mr-olympia-open-2026", "Resultado do Open: campeão e top 10"],
   ["ramon-dino-peso-altura", "Quanto pesa Ramon Dino e o limite da Classic"],
   ["resultado-212-mr-olympia-2026", "Resultado da 212, com Lucas Garcia"],
+  ["resultado-womens-physique-olympia-2026", "Resultado da Women's Physique, com Natália Coelho"],
 ];
 const ACOMPANHE = (atual: string) =>
   `<h3>Acompanhe o Mr. Olympia 2026</h3>
@@ -219,7 +220,7 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — 
 <tr><td>Wellness</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Eduarda Bezerra (BRA)</td><td><a href="/blog/resultado-wellness-mr-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>212</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Keone Pearson (EUA)</td><td><a href="/blog/resultado-212-mr-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Figure</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Rhea Gayle (GBR)</td><td>Nesta página</td></tr>
-<tr><td>Women's Physique</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Natalia Abraham Coelho (EUA)</td><td>Nesta página</td></tr>
+<tr><td>Women's Physique</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Natalia Abraham Coelho (EUA)</td><td><a href="/blog/resultado-womens-physique-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Ms. Olympia</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Andrea Shaw (EUA)</td><td>Nesta página</td></tr>
 <tr><td>Fitness</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Michelle Fredua-Mensah (GBR)</td><td>Nesta página</td></tr>
 <tr><td>Men's Physique</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Ryan Terry (GBR)</td><td>Nesta página</td></tr>
@@ -515,6 +516,75 @@ ${FONTES}`,
       { question: "Em que posição Lucas Garcia ficou na 212?", answer: "Ainda não há resultado de 2026. Em 2025, na estreia no Olympia, Lucas Garcia ficou em terceiro, atrás de Keone Pearson e Shaun Clarida." },
       { question: "Quantos brasileiros competem na 212 do Olympia 2026?", answer: "Quatro, pelo roster oficial da IFBB Pro League: Lucas Garcia, Vitor Porto, Felipe Moraes e Andrey Pereira." },
       { question: "Qual é o limite de peso da 212?", answer: "212 libras, cerca de 96,2 kg, na pesagem oficial, para qualquer altura." },
+    ],
+  },
+  /* ───────────────── 8. RESULTADO WOMEN'S PHYSIQUE ───────────────── */
+  {
+    slug: "resultado-womens-physique-olympia-2026",
+    title: "Resultado Women's Physique Olympia 2026: Natália Coelho e classificação",
+    metaTitle: "Resultado Women's Physique Olympia 2026: Natália Coelho",
+    metaDescription:
+      "Quem ganhou a Women's Physique do Olympia 2026, a posição de Natália Coelho e das brasileiras. Final nesta sexta, 25/09, a partir das 22h de Brasília.",
+    excerpt:
+      "A Women's Physique do Olympia 2026 é decidida nesta sexta-feira, 25 de setembro. Natália Coelho defende o título; campeã, top 10 e brasileiras entram aqui.",
+    category: "Fisiculturismo",
+    tipo: "noticia",
+    date: DATA,
+    readTime: "3 min",
+    author: AUTOR,
+    tags: ["Mr. Olympia 2026", "Women's Physique", "Natália Coelho", "resultado", "fisiculturismo"],
+    content: `${AVISO_ONDA2("O resultado da Women's Physique do Olympia 2026 ainda não foi definido.")}
+<p><strong>A Women's Physique ainda não aconteceu.</strong> As prévias começam às <strong>13h30 de sexta-feira, 25 de setembro</strong> (Brasília), e a final a partir das <strong>22h</strong>, em Las Vegas. <strong>Natália Coelho</strong> defende o título conquistado em 2025, o segundo dela na categoria. <strong>Zama Benta</strong>, terceira colocada no ano passado, é a principal representante do Brasil no roster.</p>
+${CAPA("resultado-womens-physique-olympia-2026", "Capa: resultado da Women's Physique do Olympia 2026 — Natália Coelho defende o título e cinco brasileiras disputam a categoria; final na sexta às 22h de Brasília")}
+
+<h2>Resultado Women's Physique Olympia 2026</h2>
+${TABELA_PENDENTE(10)}
+<p><em>Tabela preenchida com o resultado oficial da IFBB Pro League, depois da final. Se só o top 5 for divulgado na noite, só o top 5 entra.</em></p>
+
+<h2>Em que posição Natália Coelho ficou?</h2>
+<p><strong>Ainda não há resultado.</strong> Natália Coelho chega como atual campeã: venceu em 2025 à frente de Sarah Villegas (EUA), repetindo o título de 2022. Brasileira, ela aparece no roster oficial da IFBB Pro League <strong>representando os Estados Unidos</strong>, onde vive e compete. Por isso a tabela oficial mostra "EUA" ao lado do nome dela. A colocação de 2026 entra aqui logo após a final.</p>
+
+<h2>Como ficaram Zama Benta e as brasileiras?</h2>
+<table><thead><tr><th>Atleta</th><th>Representação no roster</th><th>Resultado</th><th>Status</th></tr></thead><tbody>
+<tr><td>Natália Coelho</td><td>EUA</td><td>A definir</td><td>Aguardando prévias</td></tr>
+<tr><td>Zama Benta</td><td>Brasil</td><td>A definir</td><td>Aguardando prévias</td></tr>
+<tr><td>Jessica Macedo</td><td>Brasil</td><td>A definir</td><td>Aguardando prévias</td></tr>
+<tr><td>Naiana Nana</td><td>Brasil</td><td>A definir</td><td>Aguardando prévias</td></tr>
+<tr><td>Amanda de Carvalho Machado</td><td>EUA</td><td>A definir</td><td>Aguardando prévias</td></tr>
+</tbody></table>
+<p>A imprensa brasileira conta cinco brasileiras na categoria. No roster oficial, três estão listadas pelo Brasil e duas pelos EUA. A coluna "representação" mostra o país que a IFBB Pro League exibe, não a nacionalidade. <strong>Zama Benta</strong> foi terceira em 2025, atrás de Natália e de Sarah Villegas.</p>
+
+<h2>Top 5 Women's Physique</h2>
+<p>Ainda não definido. As mais citadas pela imprensa especializada para o primeiro chamado: Natália Coelho, Sarah Villegas (quatro vezes campeã e vice em 2025), Zama Benta, Brittany Herrera (quarta em 2025) e Lenka Ferencukova (Eslováquia), vencedora de dois shows profissionais nesta temporada.</p>
+
+<h2>Como foram as prévias?</h2>
+<p>As prévias ainda não aconteceram. Depois delas, esta seção vai registrar quem foi chamado para as primeiras comparações. Chamado não é resultado: a colocação só existe depois da final.</p>
+
+<h2>Horário da final</h2>
+<ul>
+<li><strong>Prévias:</strong> sexta, 25/09, bloco a partir das 13h30 de Brasília (9h30 em Las Vegas), com Women's Physique, 212, Classic Physique, Figure, Ms. Olympia e Wellness.</li>
+<li><strong>Final:</strong> sexta, 25/09, sessão a partir das 22h de Brasília (18h em Las Vegas).</li>
+</ul>
+<p>São os horários de início de cada bloco, não o minuto em que a categoria sobe ao palco.</p>
+
+<h2>Onde assistir</h2>
+<p>Pela OlympiaTV, transmissão oficial, gratuita com cadastro no site do evento.</p>
+
+<h2>O que é Women's Physique?</h2>
+<p>É a categoria feminina entre a Figure e o fisiculturismo (Ms. Olympia): pede mais massa muscular e separação que a Figure, mas com ênfase em proporção, linhas e apresentação, sem o volume extremo do bodybuilding. As atletas fazem poses obrigatórias e uma rotina livre de posing.</p>
+
+<h2>As outras categorias</h2>
+<p>Na mesma noite saem a <a href="/blog/resultado-wellness-mr-olympia-2026">Wellness, com as brasileiras</a>, a <a href="/blog/resultado-212-mr-olympia-2026">212</a> e a <a href="/blog/resultado-classic-physique-mr-olympia-2026">Classic Physique</a>. Todas as campeãs e campeões ficam em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+
+${ACOMPANHE("resultado-womens-physique-olympia-2026")}
+
+${CTA_MONTINHO}
+${FONTES}`,
+    faq: [
+      { question: "Quem ganhou a Women's Physique do Olympia 2026?", answer: "Ainda não foi decidido. A final é na sexta-feira, 25 de setembro, a partir das 22h (Brasília). Natália Coelho defende o título, e esta página é atualizada com o resultado oficial." },
+      { question: "Em que posição Natália Coelho ficou?", answer: "Ainda não há resultado de 2026. Natália é a atual campeã: venceu em 2025 e em 2022." },
+      { question: "Natália Coelho compete pelo Brasil?", answer: "Natália é brasileira, mas aparece no roster oficial da IFBB Pro League representando os Estados Unidos, onde vive e compete." },
+      { question: "Quantas brasileiras competem na Women's Physique 2026?", answer: "Cinco pela contagem da imprensa brasileira: Natália Coelho, Zama Benta, Jessica Macedo, Naiana Nana e Amanda de Carvalho Machado. No roster oficial, três aparecem pelo Brasil e duas pelos EUA." },
     ],
   },
 ];

@@ -49,6 +49,7 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   "quem-ganhou-mr-olympia-2026": "Hub de resultados do Mr. Olympia 2026, categoria por categoria: a leitura termina com nomes e colocações, nunca com um número para calcular.",
   "resultado-wellness-mr-olympia-2026": "Notícia de resultado da Wellness: a pessoa quer a campeã e a colocação das brasileiras; sai com um fato, sem conta pendente para uma ferramenta.",
   "resultado-212-mr-olympia-2026": "Notícia de resultado da 212: a pessoa quer o campeão e a colocação de Lucas Garcia e dos brasileiros; sai com um fato. O simulador de massa aparece só como continuação no fim.",
+  "resultado-womens-physique-olympia-2026": "Notícia de resultado da Women's Physique: a pessoa quer a campeã e a posição de Natália Coelho e das brasileiras; sai com um fato, sem conta pendente.",
   "resultado-mr-olympia-open-2026": "Notícia de resultado do Open: a pessoa quer o campeão e o top 10; sai com um fato, e nenhuma ferramenta do site tem papel nessa pergunta.",
   "rosca-direta-vs-rosca-martelo":
     "Comparativo de exercício: a decisão do leitor é qual pegada usar, e a resposta é anatômica, não numérica. Nenhuma ferramenta do site compara exercícios.",
