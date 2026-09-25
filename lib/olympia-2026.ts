@@ -34,10 +34,10 @@ import type { BlogPost } from "./blog";
  */
 
 const AUTOR = "Montinho Personal Trainer";
-const DATA = "2026-09-25";
+const DATA = "2026-09-24";
 
 const AVISO_ANTES = (o: string) =>
-  `<blockquote><p><strong>${o}</strong> Esta página será atualizada assim que houver resultado oficial. Última verificação: 25 de setembro de 2026, 17h (Brasília).</p></blockquote>`;
+  `<blockquote><p><strong>${o}</strong> Esta página será atualizada assim que houver resultado oficial. Última verificação: 24 de setembro de 2026, 22h (Brasília).</p></blockquote>`;
 
 const FONTES = `<h2>Fontes</h2>
 <ul>
