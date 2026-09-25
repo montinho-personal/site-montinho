@@ -14,6 +14,8 @@ export interface BlogPost {
   author: string;
   tags?: string[];
   faq?: Array<{ question: string; answer: string }>;
+  /** "noticia" liga o schema NewsArticle (cobertura de evento, sensível ao tempo). */
+  tipo?: "noticia";
 }
 
 /**
@@ -99,7 +101,10 @@ export const BLOG_CATEGORIES = [
   "Academias",
 ];
 
+import { OLYMPIA_2026_POSTS } from "./olympia-2026";
+
 export const blogPosts = ([
+  ...OLYMPIA_2026_POSTS,
   {
     slug: "parar-de-tomar-mounjaro",
     title: "Parar de Tomar Mounjaro: O Que Acontece com o Peso",

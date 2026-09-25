@@ -310,7 +310,7 @@ export default async function BlogPost({ params }: Props) {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": post.tipo === "noticia" ? "NewsArticle" : "Article",
     headline: post.metaTitle || post.title,
     description: post.metaDescription || post.excerpt,
     image: [cover.url],
