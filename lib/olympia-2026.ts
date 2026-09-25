@@ -55,6 +55,10 @@ const CTA_FASES = `<h2>Do palco para a sua rotina</h2>
 const CTA_MONTINHO = `<h2>E o seu shape?</h2>
 <p>Ninguém precisa de palco para querer um corpo melhor. O que os atletas do Olympia mostram, em escala extrema, é o que funciona para qualquer pessoa: treino individualizado, progressão de carga, alimentação que cabe na rotina e constância por anos. Se você quer aplicar isso à sua vida, sem comparação com ninguém, eu monto o seu plano: <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo no WhatsApp pelo botão ao fim desta página.</p>`;
 
+/** Capa 1800×1013 (16:9) depois do primeiro parágrafo: a resposta vem antes da imagem no celular, e o Discover pega a primeira imagem raster do conteúdo. */
+const CAPA = (slug: string, alt: string) =>
+  `<img src="/blog-images/${slug}-capa.webp" alt="${alt}" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:1.5rem 0;" />`;
+
 const TABELA_PENDENTE = (n: number) =>
   `<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody>${Array.from({ length: n }, (_, i) => `<tr><td>${i + 1}º</td><td>A definir</td><td>—</td></tr>`).join("")}</tbody></table>`;
 
@@ -76,6 +80,7 @@ export const OLYMPIA_2026_POSTS: BlogPost[] = [
     tags: ["Mr. Olympia 2026", "Classic Physique", "Ramon Dino", "resultado", "fisiculturismo"],
     content: `${AVISO_ANTES("O resultado da Classic Physique do Mr. Olympia 2026 ainda não foi definido.")}
 <p>A Classic Physique do Mr. Olympia 2026 acontece <strong>nesta sexta-feira, 25 de setembro</strong>, em Las Vegas: prévias a partir das <strong>13h30 (horário de Brasília)</strong> e final a partir das <strong>22h</strong>. Ramon Dino defende o título conquistado em 2025, quando se tornou o primeiro brasileiro campeão do Mr. Olympia. A classificação completa entra aqui assim que a IFBB Pro League divulgar o resultado oficial.</p>
+${CAPA("resultado-classic-physique-mr-olympia-2026", "Capa: Mr. Olympia 2026, Classic Physique — Ramon Dino defende o título; classificação completa e top 5, final na sexta às 22h de Brasília")}
 
 <h2>Classificação da Classic Physique 2026</h2>
 ${TABELA_PENDENTE(5)}
@@ -126,6 +131,7 @@ ${FONTES}`,
     author: AUTOR,
     tags: ["Ramon Dino", "Mr. Olympia 2026", "horário", "onde assistir", "Classic Physique"],
     content: `<p><strong>Ramon Dino compete nesta sexta-feira, 25 de setembro de 2026</strong>, na Classic Physique do Mr. Olympia, em Las Vegas. No horário de Brasília:</p>
+${CAPA("ramon-dino-mr-olympia-2026-horario", "Capa: que horas Ramon Dino compete no Mr. Olympia 2026 — sexta, 25 de setembro: prévias às 13h30 e final a partir das 22h, horário de Brasília")}
 <table><thead><tr><th>Etapa</th><th>Brasília</th><th>Las Vegas</th><th>Local</th></tr></thead><tbody>
 <tr><td>Prévias (prejudging) da Classic Physique</td><td><strong>a partir das 13h30</strong></td><td>9h30</td><td>Las Vegas Convention Center (South Hall)</td></tr>
 <tr><td>Final da Classic Physique</td><td><strong>a partir das 22h</strong></td><td>18h</td><td>Orleans Arena</td></tr>
@@ -173,6 +179,7 @@ ${FONTES}`,
     tags: ["Mr. Olympia 2026", "campeões", "resultados", "fisiculturismo", "Las Vegas"],
     content: `${AVISO_ANTES("Nenhuma categoria do Mr. Olympia 2026 foi decidida ainda.")}
 <p>O Mr. Olympia 2026 acontece de 24 a 27 de setembro em Las Vegas, com 322 atletas em 12 categorias — 58 deles brasileiros. As finais são <strong>nesta sexta (25) a partir das 22h</strong> e <strong>no sábado (26) a partir das 23h</strong>, no horário de Brasília. Esta página reúne todos os campeões e é atualizada categoria por categoria, à medida que os resultados oficiais saem.</p>
+${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — todos os campeões, categoria por categoria: Open, Classic Physique, Wellness, 212, Men's Physique, Bikini e mais")}
 
 <h2>Campeões do Mr. Olympia 2026</h2>
 <table><thead><tr><th>Categoria</th><th>Final</th><th>Campeão(ã) 2026</th><th>Campeão(ã) 2025</th><th>Resultado</th></tr></thead><tbody>
@@ -239,6 +246,7 @@ ${FONTES}`,
     tags: ["Wellness", "Mr. Olympia 2026", "Eduarda Bezerra", "Isa Pereira Nunes", "resultado"],
     content: `${AVISO_ANTES("O resultado da Wellness do Mr. Olympia 2026 ainda não foi definido.")}
 <p>A Wellness do Mr. Olympia 2026 é decidida <strong>nesta sexta-feira, 25 de setembro</strong>: prévias a partir das <strong>13h30</strong> e final a partir das <strong>22h</strong>, horário de Brasília. <strong>Eduarda Bezerra</strong> defende o título de 2025 numa categoria que o Brasil venceu em todas as cinco edições desde a estreia, em 2021. A classificação entra aqui assim que a IFBB Pro League divulgar o resultado.</p>
+${CAPA("resultado-wellness-mr-olympia-2026", "Capa: Wellness do Mr. Olympia 2026 — o Brasil venceu todas as cinco edições e 19 das 40 atletas são brasileiras; resultado, campeã e top 5")}
 
 <h2>Classificação da Wellness 2026</h2>
 ${TABELA_PENDENTE(5)}
@@ -296,6 +304,7 @@ ${FONTES}`,
     tags: ["Mr. Olympia 2026", "Open", "Derek Lunsford", "Samson Dauda", "resultado"],
     content: `${AVISO_ANTES("O resultado do Mr. Olympia Open 2026 ainda não foi definido.")}
 <p>O título máximo do Mr. Olympia 2026 é decidido <strong>no sábado, 26 de setembro</strong>, com a final a partir das <strong>23h (horário de Brasília)</strong>, na Orleans Arena, em Las Vegas. As prévias do Open acontecem antes, na sessão de sexta à noite. <strong>Derek Lunsford</strong> (EUA) defende o título de 2025 contra 21 atletas na principal categoria da IFBB Pro League, a única sem limite de peso. A classificação completa entra aqui assim que for anunciada.</p>
+${CAPA("resultado-mr-olympia-open-2026", "Capa: resultado do Open do Mr. Olympia 2026 — quem leva o troféu Sandow; Derek Lunsford defende o título na final de sábado, 23h de Brasília")}
 
 <h2>Classificação do Mr. Olympia Open 2026</h2>
 ${TABELA_PENDENTE(10)}
@@ -344,6 +353,7 @@ ${FONTES}`,
     author: AUTOR,
     tags: ["Ramon Dino", "peso", "altura", "Classic Physique", "limite de peso"],
     content: `<p><strong>Ramon Dino tem 1,81 m de altura e pesou 102,5 kg na pesagem oficial do Mr. Olympia 2026</strong>, realizada em 23 de setembro de 2026 em Las Vegas — 500 gramas abaixo do limite de <strong>103 kg</strong> que a IFBB Pro League permite para a altura dele na Classic Physique. Esse é o peso que vale: o de palco, medido na véspera da competição.</p>
+${CAPA("ramon-dino-peso-altura", "Capa: quanto pesa Ramon Dino — 102,5 kg na pesagem do Mr. Olympia 2026, limite de 103 kg na Classic Physique para 1,81 m de altura")}
 
 <table><thead><tr><th>Dado</th><th>Valor</th><th>Referência</th></tr></thead><tbody>
 <tr><td>Nome completo</td><td>Ramon Rocha Queiroz</td><td>—</td></tr>
