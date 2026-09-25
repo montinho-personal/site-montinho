@@ -114,10 +114,11 @@ export const OLYMPIA_2026_POSTS: BlogPost[] = [
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
+    updatedAt: "2026-09-25",
     readTime: "4 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "Classic Physique", "Ramon Dino", "resultado", "fisiculturismo"],
-    content: `${AVISO_ANTES("O resultado da Classic Physique do Mr. Olympia 2026 ainda não foi definido.")}
+    content: `<blockquote><p><strong>As prévias da Classic Physique já aconteceram; o resultado ainda não foi definido.</strong> A final é hoje, a partir das 22h (Brasília). Esta página será atualizada assim que houver resultado oficial. Última verificação: 25 de setembro de 2026, 17h30 (Brasília).</p></blockquote>
 <p>A Classic Physique do Mr. Olympia 2026 acontece <strong>nesta sexta-feira, 25 de setembro</strong>, em Las Vegas: prévias a partir das <strong>13h30 (horário de Brasília)</strong> e final a partir das <strong>22h</strong>. Ramon Dino defende o título conquistado em 2025, quando se tornou o primeiro brasileiro campeão do Mr. Olympia. A classificação completa entra aqui assim que a IFBB Pro League divulgar o resultado oficial.</p>
 ${CAPA("resultado-classic-physique-mr-olympia-2026", "Capa: Mr. Olympia 2026, Classic Physique — Ramon Dino defende o título; classificação completa e top 5, final na sexta às 22h de Brasília")}
 
@@ -143,6 +144,10 @@ ${TABELA_PENDENTE(5)}
 <!--CALCULADORA_CLASSIC:compacta-->
 
 <p><em>Quanto tempo levaria para chegar a um shape desse nível? O <a href="/ferramentas/quanto-tempo-para-ter-shape?ref=classic">simulador de evolução muscular</a> mostra seu estágio e o caminho provável, sem prometer prazo para o nível profissional.</em></p>
+
+<h2>Como foram as prévias</h2>
+<p>As prévias da Classic Physique aconteceram na tarde desta sexta-feira, 25 de setembro. No primeiro chamado, <strong>Ramon Dino e Mike Sommerfeld dividiram o centro do palco</strong>, as posições que costumam ficar com os candidatos ao título, e chegaram a trocar de lugar durante as comparações, segundo a Generation Iron e a RepOne.</p>
+<p><strong>Chamado não é resultado:</strong> a IFBB Pro League não divulga notas das prévias, e a colocação só existe depois da final, a partir das 22h de Brasília.</p>
 
 <h2>Como funciona a decisão: prévias e final</h2>
 <p>Na <strong>prévia (prejudging)</strong>, os juízes comparam os atletas em grupos, nas poses obrigatórias, e é ali que a maior parte da nota se forma. Na <strong>final</strong>, cada um faz a rotina de posing e há novas comparações; o resultado é anunciado no palco. Por isso o "quem ganhou" só existe depois da final, na noite de sexta no horário de Brasília. Detalhes do formato e da regra de peso: <a href="/blog/ramon-dino-peso-altura">limite de peso da Classic Physique</a>.</p>
