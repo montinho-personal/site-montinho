@@ -12,7 +12,9 @@ const at = (iso: string) => Date.parse(iso);
 ok(Date.parse(BLOCOS.sextaPrevias.inicio) === Date.UTC(2026, 8, 25, 16, 30), "prévias de sexta = 16h30 UTC");
 ok(Date.parse(BLOCOS.sabadoFinais.inicio) === Date.UTC(2026, 8, 27, 2, 0), "finais de sábado = 02h UTC de domingo");
 
-const c212 = categoria("212");
+// Motor testado com a categoria "limpa": os flags de resultado real mudam
+// durante o evento e não podem quebrar o teste da lógica de tempo.
+const c212 = { ...categoria("212"), previasConcluidas: undefined, resultadoOficial: undefined, campeao: undefined };
 ok(fase(c212, at("2026-09-25T13:29:59-03:00")) === "antes-previas", "212 antes das prévias");
 ok(alvo(c212, at("2026-09-25T10:00:00-03:00"))?.tipo === "previas", "alvo inicial = prévias");
 ok(fase(c212, at("2026-09-25T13:30:00-03:00")) === "previas", "212 no início do bloco → prévias");

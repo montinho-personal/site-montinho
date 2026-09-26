@@ -134,11 +134,11 @@ const CAPAS = [
   },
   {
     slug: "resultado-womens-physique-olympia-2026",
-    alt: "Capa: resultado da Women's Physique do Olympia 2026 — Natália Coelho defende o título e cinco brasileiras disputam a categoria; final na sexta às 22h de Brasília",
+    alt: "Capa: Natália Coelho é tricampeã da Women's Physique no Mr. Olympia 2026; Zama Benta é vice e Sarah Villegas fica em terceiro",
     html: base(`
-<div class="top"><div class="kicker">Olympia 2026 · Women's Physique</div><div class="chip"><i></i>Resultado</div></div>
-<div class="main"><h1>Natália Coelho<br>defende o <em>título</em></h1>
-<div class="sub">Campeã, <b>top 10</b> e as <b>5 brasileiras</b> da categoria.<br>Final na <b>sexta, 25/09, a partir das 22h</b> (Brasília).</div></div>`, "PHYSIQUE"),
+<div class="top"><div class="kicker">Olympia 2026 · Women's Physique</div><div class="chip"><i></i>Resultado oficial</div></div>
+<div class="main"><h1>Natália Coelho<br>é <em>tricampeã</em></h1>
+<div class="sub">1º <b>Natália Coelho</b> · 2º <b>Zama Benta</b> · 3º <b>Sarah Villegas</b><br>Dobradinha brasileira no pódio da Women's Physique.</div></div>`, "PHYSIQUE"),
   },
   {
     slug: "brasileiros-mr-olympia-2026",

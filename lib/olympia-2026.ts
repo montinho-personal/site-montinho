@@ -228,10 +228,11 @@ ${FONTES}`,
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
+    updatedAt: "2026-09-26",
     readTime: "5 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "campeões", "resultados", "fisiculturismo", "Las Vegas"],
-    content: `${AVISO_ANTES("Nenhuma categoria do Mr. Olympia 2026 foi decidida ainda.")}
+    content: `<blockquote><p><strong>Já decididas: Women's Physique, 212 e Figure.</strong> As outras entram assim que o resultado oficial for confirmado. Última verificação: 26 de setembro de 2026, 0h (Brasília).</p></blockquote>
 <p>O Mr. Olympia 2026 acontece de 24 a 27 de setembro em Las Vegas, com 322 atletas em 12 categorias — 58 deles brasileiros. As finais são <strong>nesta sexta (25) a partir das 22h</strong> e <strong>no sábado (26) a partir das 23h</strong>, no horário de Brasília. Esta página reúne todos os campeões e é atualizada categoria por categoria, à medida que os resultados oficiais saem.</p>
 ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — todos os campeões, categoria por categoria: Open, Classic Physique, Wellness, 212, Men's Physique, Bikini e mais")}
 
@@ -239,9 +240,9 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — 
 <table><thead><tr><th>Categoria</th><th>Final</th><th>Campeão(ã) 2026</th><th>Campeão(ã) 2025</th><th>Resultado</th></tr></thead><tbody>
 <tr><td>Classic Physique</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Ramon Dino (BRA)</td><td><a href="/blog/resultado-classic-physique-mr-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Wellness</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Eduarda Bezerra (BRA)</td><td><a href="/blog/resultado-wellness-mr-olympia-2026">Ver resultado</a></td></tr>
-<tr><td>212</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Keone Pearson (EUA)</td><td><a href="/blog/resultado-212-mr-olympia-2026">Ver resultado</a></td></tr>
-<tr><td>Figure</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Rhea Gayle (GBR)</td><td>Nesta página</td></tr>
-<tr><td>Women's Physique</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Natalia Abraham Coelho (EUA)</td><td><a href="/blog/resultado-womens-physique-olympia-2026">Ver resultado</a></td></tr>
+<tr><td>212</td><td>Sex 25/09, 22h</td><td><strong>Keone Pearson (EUA)</strong></td><td>Keone Pearson (EUA)</td><td><a href="/blog/resultado-212-mr-olympia-2026">Ver resultado</a></td></tr>
+<tr><td>Figure</td><td>Sex 25/09, 22h</td><td><strong>Lola Montez</strong></td><td>Rhea Gayle (GBR)</td><td>Nesta página</td></tr>
+<tr><td>Women's Physique</td><td>Sex 25/09, 22h</td><td><strong>Natalia Abraham Coelho (EUA)</strong></td><td>Natalia Abraham Coelho (EUA)</td><td><a href="/blog/resultado-womens-physique-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Ms. Olympia</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Andrea Shaw (EUA)</td><td>Nesta página</td></tr>
 <tr><td>Fitness</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Michelle Fredua-Mensah (GBR)</td><td>Nesta página</td></tr>
 <tr><td>Men's Physique</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Ryan Terry (GBR)</td><td><a href="/blog/resultado-mens-physique-olympia-2026">Ver resultado</a></td></tr>
@@ -480,41 +481,41 @@ ${FONTES}`,
   /* ───────────────── 7. RESULTADO 212 ───────────────── */
   {
     slug: "resultado-212-mr-olympia-2026",
-    title: "Resultado 212 Mr. Olympia 2026: campeão, Top 10 e brasileiros",
-    metaTitle: "Resultado 212 Olympia 2026: Campeão, Top 10 e Lucas Garcia",
+    title: "Keone Pearson é tetracampeão da 212 no Mr. Olympia 2026; veja os brasileiros",
+    metaTitle: "Resultado 212 Olympia 2026: Keone Pearson Tetra e Lucas Garcia",
     metaDescription:
-      "Quem ganhou a 212 do Mr. Olympia 2026 e como ficaram Lucas Garcia e os outros três brasileiros. Final nesta sexta, 25/09, a partir das 22h de Brasília.",
+      "Keone Pearson venceu a 212 do Mr. Olympia 2026, o quarto título seguido. Lucas Garcia e Vitor Porto estiveram entre os finalistas; colocações a confirmar.",
     excerpt:
-      "A 212 do Mr. Olympia 2026 é decidida nesta sexta-feira, 25 de setembro. Campeão, top 10 e a colocação dos quatro brasileiros entram aqui assim que saem.",
+      "Keone Pearson venceu a 212 do Mr. Olympia 2026 e chegou ao quarto título seguido. Lucas Garcia e Vitor Porto estiveram entre os finalistas.",
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
+    updatedAt: "2026-09-26",
     readTime: "3 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "212", "Lucas Garcia", "resultado", "fisiculturismo"],
-    content: `${AVISO_ONDA2("O resultado da 212 do Mr. Olympia 2026 ainda não foi definido.")}
-<p><strong>A 212 ainda não aconteceu.</strong> As prévias começam às <strong>13h30 de sexta-feira, 25 de setembro</strong> (Brasília), e a final a partir das <strong>22h</strong> do mesmo dia, em Las Vegas. Keone Pearson (EUA) defende o tricampeonato. O Brasil tem quatro atletas na categoria: <strong>Lucas Garcia</strong>, terceiro colocado em 2025, <strong>Vitor Porto</strong>, <strong>Felipe Moraes</strong> e <strong>Andrey Pereira</strong>.</p>
-<!--OLYMPIA_CONTAGEM:212-->
+    content: `<blockquote><p><strong>Campeão oficial definido; a colocação exata dos brasileiros ainda está sendo confirmada.</strong> Última verificação: 26 de setembro de 2026, 0h (Brasília).</p></blockquote>
+<p><strong>Keone Pearson (EUA) venceu a 212 do Mr. Olympia 2026</strong>, na noite de sexta-feira, 25 de setembro, em Las Vegas, e chegou ao quarto título seguido. Os brasileiros <strong>Lucas Garcia</strong> e <strong>Vitor Porto</strong> estiveram entre os finalistas, ao lado de Shaun Clarida e Nihat Kaya. A colocação exata de cada um entra aqui assim que a classificação oficial for confirmada.</p>
 ${CAPA("resultado-212-mr-olympia-2026", "Capa: resultado da 212 do Mr. Olympia 2026 — Keone Pearson defende o título e Lucas Garcia lidera os quatro brasileiros; final na sexta às 22h de Brasília")}
 
 <h2 id="resultado">Resultado 212 Olympia 2026</h2>
-${TABELA_PENDENTE(10)}
-<p><em>Tabela preenchida com o resultado oficial da IFBB Pro League, depois da final. Se só o top 5 for divulgado na noite, só o top 5 entra.</em></p>
+<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td>Keone Pearson</td><td>EUA</td></tr><tr><td>2º</td><td>A confirmar</td><td>—</td></tr><tr><td>3º</td><td>A confirmar</td><td>—</td></tr><tr><td>4º</td><td>A confirmar</td><td>—</td></tr><tr><td>5º</td><td>A confirmar</td><td>—</td></tr></tbody></table>
+<p><em>Campeão confirmado por CNN Brasil e Fitness Volt. As fontes publicadas até agora divergem sobre a ordem do 2º ao 5º lugar, por isso essas posições ficam em branco até a confirmação.</em></p>
 
 <h2>Como ficaram os brasileiros na 212?</h2>
 <table><thead><tr><th>Atleta</th><th>Resultado</th><th>Status</th></tr></thead><tbody>
-<tr><td>Lucas Garcia</td><td>A definir</td><td>Aguardando prévias (sexta, 13h30)</td></tr>
-<tr><td>Vitor Porto</td><td>A definir</td><td>Aguardando prévias (sexta, 13h30)</td></tr>
-<tr><td>Felipe Moraes</td><td>A definir</td><td>Aguardando prévias (sexta, 13h30)</td></tr>
-<tr><td>Andrey Pereira</td><td>A definir</td><td>Aguardando prévias (sexta, 13h30)</td></tr>
+<tr><td>Lucas Garcia</td><td>Finalista (posição a confirmar)</td><td>Competiu</td></tr>
+<tr><td>Vitor Porto</td><td>Finalista (posição a confirmar)</td><td>Competiu</td></tr>
+<tr><td>Felipe Moraes</td><td>A confirmar</td><td>Competiu</td></tr>
+<tr><td>Andrey Pereira</td><td>A confirmar</td><td>Competiu</td></tr>
 </tbody></table>
 <p>Os quatro aparecem no roster oficial da IFBB Pro League representando o Brasil (Vitor Porto está inscrito como Vitor Alves Porto de Oliveira). Como foram os brasileiros das outras categorias: <a href="/blog/brasileiros-mr-olympia-2026">brasileiros no Mr. Olympia 2026</a>.</p>
 
 <h2>Em que posição Lucas Garcia ficou?</h2>
-<p><strong>Ainda não há resultado.</strong> Lucas Garcia, paulista, chega como o brasileiro mais bem colocado da categoria: em 2025, na estreia no Olympia, terminou em <strong>terceiro</strong>, atrás de Keone Pearson e Shaun Clarida, com Nihat Kaya (Turquia) em quarto e Courage Opara (EUA) em quinto. A colocação de 2026 entra aqui logo após a final.</p>
+<p><strong>Lucas Garcia esteve entre os finalistas; a posição exata ainda está sendo confirmada</strong> (as primeiras fontes divergem). Paulista, ele chegou como o brasileiro mais bem colocado da categoria: em 2025, na estreia no Olympia, terminou em <strong>terceiro</strong>, atrás de Keone Pearson e Shaun Clarida, com Nihat Kaya (Turquia) em quarto e Courage Opara (EUA) em quinto. A colocação de 2026 entra aqui assim que for confirmada.</p>
 
 <h2>Quem ganhou a 212 Olympia 2026?</h2>
-<p><strong>Ainda não foi decidido.</strong> Os nomes mais citados pela imprensa especializada:</p>
+<p><strong>Keone Pearson</strong>, que venceu o pose down final e chegou ao quarto título seguido (2023, 2024, 2025 e 2026). Os favoritos antes da final eram:</p>
 <ul>
 <li><strong>Keone Pearson (EUA)</strong> — campeão em 2023, 2024 e 2025, busca o quarto título seguido.</li>
 <li><strong>Shaun Clarida (EUA)</strong> — ex-campeão da categoria e vice em 2025.</li>
@@ -549,8 +550,8 @@ ${ACOMPANHE("resultado-212-mr-olympia-2026")}
 ${CTA_MASSA}
 ${FONTES}`,
     faq: [
-      { question: "Quem ganhou a 212 do Mr. Olympia 2026?", answer: "Ainda não foi decidido. A final é na sexta-feira, 25 de setembro, a partir das 22h (Brasília). Keone Pearson defende o título, e esta página é atualizada com o resultado oficial." },
-      { question: "Em que posição Lucas Garcia ficou na 212?", answer: "Ainda não há resultado de 2026. Em 2025, na estreia no Olympia, Lucas Garcia ficou em terceiro, atrás de Keone Pearson e Shaun Clarida." },
+      { question: "Quem ganhou a 212 do Mr. Olympia 2026?", answer: "Keone Pearson (EUA), que chegou ao quarto título seguido na categoria." },
+      { question: "Em que posição Lucas Garcia ficou na 212?", answer: "Lucas Garcia esteve entre os finalistas de 2026; a posição exata ainda está sendo confirmada. Em 2025, na estreia no Olympia, ele ficou em terceiro." },
       { question: "Quantos brasileiros competem na 212 do Olympia 2026?", answer: "Quatro, pelo roster oficial da IFBB Pro League: Lucas Garcia, Vitor Porto, Felipe Moraes e Andrey Pereira." },
       { question: "Qual é o limite de peso da 212?", answer: "212 libras, cerca de 96,2 kg, na pesagem oficial, para qualquer altura." },
     ],
@@ -558,45 +559,45 @@ ${FONTES}`,
   /* ───────────────── 8. RESULTADO WOMEN'S PHYSIQUE ───────────────── */
   {
     slug: "resultado-womens-physique-olympia-2026",
-    title: "Resultado Women's Physique Olympia 2026: Natália Coelho e classificação",
-    metaTitle: "Resultado Women's Physique Olympia 2026: Natália Coelho",
+    title: "Natália Coelho é tricampeã da Women's Physique no Olympia 2026; Zama Benta é vice",
+    metaTitle: "Natália Coelho é Tricampeã da Women's Physique no Olympia 2026",
     metaDescription:
-      "Quem ganhou a Women's Physique do Olympia 2026, a posição de Natália Coelho e das brasileiras. Final nesta sexta, 25/09, a partir das 22h de Brasília.",
+      "Natália Coelho venceu a Women's Physique do Mr. Olympia 2026, o terceiro título dela. A brasileira Zama Benta foi vice e Sarah Villegas ficou em 3º.",
     excerpt:
-      "A Women's Physique do Olympia 2026 é decidida nesta sexta-feira, 25 de setembro. Natália Coelho defende o título; campeã, top 10 e brasileiras entram aqui.",
+      "Natália Coelho venceu a Women's Physique do Mr. Olympia 2026 e chegou ao terceiro título. Zama Benta, brasileira, foi vice; Sarah Villegas terminou em 3º.",
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
+    updatedAt: "2026-09-26",
     readTime: "3 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "Women's Physique", "Natália Coelho", "resultado", "fisiculturismo"],
-    content: `${AVISO_ONDA2("O resultado da Women's Physique do Olympia 2026 ainda não foi definido.")}
-<p><strong>A Women's Physique ainda não aconteceu.</strong> As prévias começam às <strong>13h30 de sexta-feira, 25 de setembro</strong> (Brasília), e a final a partir das <strong>22h</strong>, em Las Vegas. <strong>Natália Coelho</strong> defende o título conquistado em 2025, o segundo dela na categoria. <strong>Zama Benta</strong>, terceira colocada no ano passado, é a principal representante do Brasil no roster.</p>
-<!--OLYMPIA_CONTAGEM:womens-physique-->
-${CAPA("resultado-womens-physique-olympia-2026", "Capa: resultado da Women's Physique do Olympia 2026 — Natália Coelho defende o título e cinco brasileiras disputam a categoria; final na sexta às 22h de Brasília")}
+    content: `<blockquote><p><strong>Resultado oficial.</strong> Última verificação: 26 de setembro de 2026, 0h (Brasília).</p></blockquote>
+<p><strong>Natália Coelho venceu a Women's Physique do Mr. Olympia 2026</strong>, na noite de sexta-feira, 25 de setembro, em Las Vegas, e chegou ao terceiro título na categoria (2022, 2025 e 2026). A brasileira <strong>Zama Benta foi vice-campeã</strong>, e Sarah Villegas terminou em terceiro.</p>
+${CAPA("resultado-womens-physique-olympia-2026", "Capa: Natália Coelho é tricampeã da Women's Physique no Mr. Olympia 2026; Zama Benta é vice e Sarah Villegas fica em terceiro")}
 
 <h2 id="resultado">Resultado Women's Physique Olympia 2026</h2>
-${TABELA_PENDENTE(10)}
-<p><em>Tabela preenchida com o resultado oficial da IFBB Pro League, depois da final. Se só o top 5 for divulgado na noite, só o top 5 entra.</em></p>
+<table><thead><tr><th>Posição</th><th>Atleta</th><th>País (roster)</th></tr></thead><tbody><tr><td>1º</td><td>Natalia Abraham Coelho</td><td>EUA</td></tr><tr><td>2º</td><td>Zama Benta</td><td>Brasil</td></tr><tr><td>3º</td><td>Sarah Villegas</td><td>EUA</td></tr><tr><td>4º</td><td>A confirmar</td><td>—</td></tr><tr><td>5º</td><td>A confirmar</td><td>—</td></tr></tbody></table>
+<p><em>Top 3 confirmado por CNN Brasil, NSC Total, Fitness Volt e Generation Iron. As demais posições entram quando a classificação completa for publicada.</em></p>
 
 <h2>Em que posição Natália Coelho ficou?</h2>
-<p><strong>Ainda não há resultado.</strong> Natália Coelho chega como atual campeã: venceu em 2025 à frente de Sarah Villegas (EUA), repetindo o título de 2022. Brasileira, ela aparece no roster oficial da IFBB Pro League <strong>representando os Estados Unidos</strong>, onde vive e compete. Por isso a tabela oficial mostra "EUA" ao lado do nome dela. A colocação de 2026 entra aqui logo após a final.</p>
+<p><strong>Natália Coelho foi campeã.</strong> É o terceiro título dela na Women's Physique, depois de 2022 e 2025. Levou o prêmio de US$ 50 mil. Brasileira, ela aparece no roster oficial da IFBB Pro League <strong>representando os Estados Unidos</strong>, onde vive e compete. Por isso a tabela oficial mostra "EUA" ao lado do nome dela. A colocação de 2026 entra aqui logo após a final.</p>
 
 <h2>Como ficaram Zama Benta e as brasileiras?</h2>
 <table><thead><tr><th>Atleta</th><th>Representação no roster</th><th>Resultado</th><th>Status</th></tr></thead><tbody>
-<tr><td>Natália Coelho</td><td>EUA</td><td>A definir</td><td>Aguardando prévias</td></tr>
-<tr><td>Zama Benta</td><td>Brasil</td><td>A definir</td><td>Aguardando prévias</td></tr>
-<tr><td>Jessica Macedo</td><td>Brasil</td><td>A definir</td><td>Aguardando prévias</td></tr>
-<tr><td>Naiana Nana</td><td>Brasil</td><td>A definir</td><td>Aguardando prévias</td></tr>
-<tr><td>Amanda de Carvalho Machado</td><td>EUA</td><td>A definir</td><td>Aguardando prévias</td></tr>
+<tr><td>Natália Coelho</td><td>EUA</td><td>1º lugar</td><td>Resultado oficial</td></tr>
+<tr><td>Zama Benta</td><td>Brasil</td><td>2º lugar</td><td>Resultado oficial</td></tr>
+<tr><td>Jessica Macedo</td><td>Brasil</td><td>A confirmar</td><td>Competiu</td></tr>
+<tr><td>Naiana Nana</td><td>Brasil</td><td>A confirmar</td><td>Competiu</td></tr>
+<tr><td>Amanda de Carvalho Machado</td><td>EUA</td><td>A confirmar</td><td>Competiu</td></tr>
 </tbody></table>
-<p>A imprensa brasileira conta cinco brasileiras na categoria. No roster oficial, três estão listadas pelo Brasil e duas pelos EUA. A coluna "representação" mostra o país que a IFBB Pro League exibe, não a nacionalidade. <strong>Zama Benta</strong> foi terceira em 2025, atrás de Natália e de Sarah Villegas. Os brasileiros de todas as categorias estão no <a href="/blog/brasileiros-mr-olympia-2026">painel Brasil do Olympia</a>.</p>
+<p>A imprensa brasileira conta cinco brasileiras na categoria. No roster oficial, três estão listadas pelo Brasil e duas pelos EUA. A coluna "representação" mostra o país que a IFBB Pro League exibe, não a nacionalidade. <strong>Zama Benta</strong>, terceira em 2025, subiu para <strong>vice-campeã</strong> em 2026: dobradinha brasileira no pódio. Os brasileiros de todas as categorias estão no <a href="/blog/brasileiros-mr-olympia-2026">painel Brasil do Olympia</a>.</p>
 
 <h2>Top 5 Women's Physique</h2>
-<p>Ainda não definido. As mais citadas pela imprensa especializada para o primeiro chamado: Natália Coelho, Sarah Villegas (quatro vezes campeã e vice em 2025), Zama Benta, Brittany Herrera (quarta em 2025) e Lenka Ferencukova (Eslováquia), vencedora de dois shows profissionais nesta temporada.</p>
+<p>Pódio oficial: 1º Natália Coelho, 2º Zama Benta, 3º Sarah Villegas. O 4º e o 5º lugares entram quando a classificação completa for publicada.</p>
 
 <h2 id="como-foram-as-previas">Como foram as prévias?</h2>
-<p>As prévias ainda não aconteceram. Depois delas, esta seção vai registrar quem foi chamado para as primeiras comparações. Chamado não é resultado: a colocação só existe depois da final.</p>
+<p>As prévias foram na tarde de sexta-feira e a final à noite, na Orleans Arena. A disputa chegou cercada de tensão entre Natália e Sarah Villegas, que tinha feito acusações públicas contra a rival antes do evento; o resultado foi decidido pelos árbitros, no palco.</p>
 
 <h2 id="horario">Horário da final</h2>
 <ul>
@@ -619,8 +620,8 @@ ${ACOMPANHE("resultado-womens-physique-olympia-2026")}
 ${CTA_MONTINHO}
 ${FONTES}`,
     faq: [
-      { question: "Quem ganhou a Women's Physique do Olympia 2026?", answer: "Ainda não foi decidido. A final é na sexta-feira, 25 de setembro, a partir das 22h (Brasília). Natália Coelho defende o título, e esta página é atualizada com o resultado oficial." },
-      { question: "Em que posição Natália Coelho ficou?", answer: "Ainda não há resultado de 2026. Natália é a atual campeã: venceu em 2025 e em 2022." },
+      { question: "Quem ganhou a Women's Physique do Olympia 2026?", answer: "Natália Coelho, que chegou ao terceiro título na categoria (2022, 2025 e 2026). A brasileira Zama Benta foi vice e Sarah Villegas terminou em terceiro." },
+      { question: "Em que posição Natália Coelho ficou?", answer: "Em primeiro. Natália Coelho venceu a Women's Physique do Mr. Olympia 2026, o terceiro título dela." },
       { question: "Natália Coelho compete pelo Brasil?", answer: "Natália é brasileira, mas aparece no roster oficial da IFBB Pro League representando os Estados Unidos, onde vive e compete." },
       { question: "Quantas brasileiras competem na Women's Physique 2026?", answer: "Cinco pela contagem da imprensa brasileira: Natália Coelho, Zama Benta, Jessica Macedo, Naiana Nana e Amanda de Carvalho Machado. No roster oficial, três aparecem pelo Brasil e duas pelos EUA." },
     ],

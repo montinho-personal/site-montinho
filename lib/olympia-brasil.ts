@@ -64,11 +64,11 @@ export interface CategoriaOlympia {
 
 export const CATEGORIAS: CategoriaOlympia[] = [
   { id: "classic", nome: "Classic Physique", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-classic-physique-mr-olympia-2026", temBrasileiro: true },
-  { id: "212", nome: "212", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-212-mr-olympia-2026", temBrasileiro: true },
+  { id: "212", nome: "212", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-212-mr-olympia-2026", temBrasileiro: true, previasConcluidas: true, resultadoOficial: true, campeao: "Keone Pearson" },
   { id: "wellness", nome: "Wellness", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-wellness-mr-olympia-2026", temBrasileiro: true },
-  { id: "womens-physique", nome: "Women's Physique", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-womens-physique-olympia-2026", temBrasileiro: true },
+  { id: "womens-physique", nome: "Women's Physique", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-womens-physique-olympia-2026", temBrasileiro: true, previasConcluidas: true, resultadoOficial: true, campeao: "Natalia Abraham Coelho" },
   { id: "ms-olympia", nome: "Ms. Olympia", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", temBrasileiro: true },
-  { id: "figure", nome: "Figure", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais" },
+  { id: "figure", nome: "Figure", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", previasConcluidas: true, resultadoOficial: true, campeao: "Lola Montez" },
   // O Open tem as prévias na sessão de sexta à noite e a final no sábado.
   { id: "open", nome: "Open (Mr. Olympia)", dia: "sabado", previas: "sextaFinais", final: "sabadoFinais", artigo: "resultado-mr-olympia-open-2026", temBrasileiro: true },
   { id: "mens-physique", nome: "Men's Physique", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", artigo: "resultado-mens-physique-olympia-2026", temBrasileiro: true },
@@ -200,8 +200,8 @@ export const ATLETAS_BRASIL: AtletaBrasil[] = [
   a("Eduarda Bezerra", "wellness", "Brasil", "Atual campeã"),
   a("Isa Pereira Nunes", "wellness", "Brasil", "Campeã em 2024"),
   a("Rayane Fogal", "wellness"),
-  a("Natália Coelho", "womens-physique", "EUA", "Atual campeã"),
-  a("Zama Benta", "womens-physique", "Brasil", "3ª em 2025"),
+  { ...a("Natália Coelho", "womens-physique", "EUA", "Tricampeã"), resultado: "1º lugar" },
+  { ...a("Zama Benta", "womens-physique", "Brasil", "3ª em 2025"), resultado: "2º lugar" },
   a("Jessica Macedo", "womens-physique"),
   a("Naiana Nana", "womens-physique"),
   a("Amanda de Carvalho Machado", "womens-physique", "EUA"),
