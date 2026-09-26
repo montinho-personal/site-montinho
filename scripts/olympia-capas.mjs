@@ -126,11 +126,11 @@ const CAPAS = [
   },
   {
     slug: "resultado-212-mr-olympia-2026",
-    alt: "Capa: resultado da 212 do Mr. Olympia 2026 — Keone Pearson defende o título e Lucas Garcia lidera os quatro brasileiros; final na sexta às 22h de Brasília",
+    alt: "Capa: Keone Pearson é tetracampeão da 212 no Mr. Olympia 2026; o brasileiro Lucas Garcia é vice, Shaun Clarida é 3º e Vitor Porto 4º",
     html: base(`
-<div class="top"><div class="kicker">Mr. Olympia 2026 · 212</div><div class="chip"><i></i>Resultado</div></div>
-<div class="main"><h1>Quem vence<br>a <em>212</em> em 2026</h1>
-<div class="sub">Campeão, <b>top 10</b> e os <b>4 brasileiros</b>, com Lucas Garcia.<br>Final na <b>sexta, 25/09, a partir das 22h</b> (Brasília).</div></div>`, "212"),
+<div class="top"><div class="kicker">Mr. Olympia 2026 · 212</div><div class="chip"><i></i>Resultado oficial</div></div>
+<div class="main"><h1>Keone Pearson<br>é <em>tetra</em>; Lucas Garcia, vice</h1>
+<div class="sub">1º <b>Keone Pearson</b> · 2º <b>Lucas Garcia</b> · 3º <b>Shaun Clarida</b><br>Vitor Porto termina em 4º.</div></div>`, "212"),
   },
   {
     slug: "resultado-womens-physique-olympia-2026",

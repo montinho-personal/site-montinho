@@ -232,7 +232,7 @@ ${FONTES}`,
     readTime: "5 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "campeões", "resultados", "fisiculturismo", "Las Vegas"],
-    content: `<blockquote><p><strong>Já decididas: Women's Physique, 212 e Figure.</strong> As outras entram assim que o resultado oficial for confirmado. Última verificação: 26 de setembro de 2026, 0h (Brasília).</p></blockquote>
+    content: `<blockquote><p><strong>Já decididas: Women's Physique, 212, Figure e Ms. Olympia.</strong> As outras entram assim que o resultado oficial for confirmado. Última verificação: 26 de setembro de 2026, 2h (Brasília).</p></blockquote>
 <p>O Mr. Olympia 2026 acontece de 24 a 27 de setembro em Las Vegas, com 322 atletas em 12 categorias — 58 deles brasileiros. As finais são <strong>nesta sexta (25) a partir das 22h</strong> e <strong>no sábado (26) a partir das 23h</strong>, no horário de Brasília. Esta página reúne todos os campeões e é atualizada categoria por categoria, à medida que os resultados oficiais saem.</p>
 ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — todos os campeões, categoria por categoria: Open, Classic Physique, Wellness, 212, Men's Physique, Bikini e mais")}
 
@@ -243,7 +243,7 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — 
 <tr><td>212</td><td>Sex 25/09, 22h</td><td><strong>Keone Pearson (EUA)</strong></td><td>Keone Pearson (EUA)</td><td><a href="/blog/resultado-212-mr-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Figure</td><td>Sex 25/09, 22h</td><td><strong>Lola Montez</strong></td><td>Rhea Gayle (GBR)</td><td>Nesta página</td></tr>
 <tr><td>Women's Physique</td><td>Sex 25/09, 22h</td><td><strong>Natalia Abraham Coelho (EUA)</strong></td><td>Natalia Abraham Coelho (EUA)</td><td><a href="/blog/resultado-womens-physique-olympia-2026">Ver resultado</a></td></tr>
-<tr><td>Ms. Olympia</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Andrea Shaw (EUA)</td><td>Nesta página</td></tr>
+<tr><td>Ms. Olympia</td><td>Sex 25/09, 22h</td><td><strong>Andrea Shaw (EUA)</strong></td><td>Andrea Shaw (EUA)</td><td>Nesta página</td></tr>
 <tr><td>Fitness</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Michelle Fredua-Mensah (GBR)</td><td>Nesta página</td></tr>
 <tr><td>Men's Physique</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Ryan Terry (GBR)</td><td><a href="/blog/resultado-mens-physique-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Bikini</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Maureen Blanquisco (PHI)</td><td><a href="/blog/resultado-bikini-olympia-2026">Ver resultado</a></td></tr>
@@ -481,12 +481,12 @@ ${FONTES}`,
   /* ───────────────── 7. RESULTADO 212 ───────────────── */
   {
     slug: "resultado-212-mr-olympia-2026",
-    title: "Keone Pearson é tetracampeão da 212 no Mr. Olympia 2026; veja os brasileiros",
-    metaTitle: "Resultado 212 Olympia 2026: Keone Pearson Tetra e Lucas Garcia",
+    title: "Keone Pearson é tetracampeão da 212 no Mr. Olympia 2026; Lucas Garcia é vice",
+    metaTitle: "Resultado 212 Olympia 2026: Keone Pearson Tetra; Lucas Garcia Vice",
     metaDescription:
-      "Keone Pearson venceu a 212 do Mr. Olympia 2026, o quarto título seguido. Lucas Garcia e Vitor Porto estiveram entre os finalistas; colocações a confirmar.",
+      "Keone Pearson venceu a 212 do Mr. Olympia 2026, o 4º título seguido. O brasileiro Lucas Garcia foi vice e Vitor Porto ficou em 4º. Veja o top 5.",
     excerpt:
-      "Keone Pearson venceu a 212 do Mr. Olympia 2026 e chegou ao quarto título seguido. Lucas Garcia e Vitor Porto estiveram entre os finalistas.",
+      "Keone Pearson venceu a 212 do Mr. Olympia 2026 e chegou ao quarto título seguido. Lucas Garcia foi vice-campeão e Vitor Porto terminou em 4º.",
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
@@ -494,25 +494,25 @@ ${FONTES}`,
     readTime: "3 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "212", "Lucas Garcia", "resultado", "fisiculturismo"],
-    content: `<blockquote><p><strong>Campeão oficial definido; a colocação exata dos brasileiros ainda está sendo confirmada.</strong> Última verificação: 26 de setembro de 2026, 0h (Brasília).</p></blockquote>
-<p><strong>Keone Pearson (EUA) venceu a 212 do Mr. Olympia 2026</strong>, na noite de sexta-feira, 25 de setembro, em Las Vegas, e chegou ao quarto título seguido. Os brasileiros <strong>Lucas Garcia</strong> e <strong>Vitor Porto</strong> estiveram entre os finalistas, ao lado de Shaun Clarida e Nihat Kaya. A colocação exata de cada um entra aqui assim que a classificação oficial for confirmada.</p>
-${CAPA("resultado-212-mr-olympia-2026", "Capa: resultado da 212 do Mr. Olympia 2026 — Keone Pearson defende o título e Lucas Garcia lidera os quatro brasileiros; final na sexta às 22h de Brasília")}
+    content: `<blockquote><p><strong>Resultado oficial.</strong> Última verificação: 26 de setembro de 2026, 2h (Brasília).</p></blockquote>
+<p><strong>Keone Pearson (EUA) venceu a 212 do Mr. Olympia 2026</strong>, na noite de sexta-feira, 25 de setembro, em Las Vegas, e chegou ao quarto título seguido. O brasileiro <strong>Lucas Garcia foi vice-campeão</strong>, subindo um degrau em relação a 2025, e <strong>Vitor Porto terminou em 4º</strong>. Shaun Clarida ficou em 3º e Nihat Kaya em 5º.</p>
+${CAPA("resultado-212-mr-olympia-2026", "Capa: Keone Pearson é tetracampeão da 212 no Mr. Olympia 2026; o brasileiro Lucas Garcia é vice, Shaun Clarida é 3º e Vitor Porto 4º")}
 
 <h2 id="resultado">Resultado 212 Olympia 2026</h2>
-<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td>Keone Pearson</td><td>EUA</td></tr><tr><td>2º</td><td>A confirmar</td><td>—</td></tr><tr><td>3º</td><td>A confirmar</td><td>—</td></tr><tr><td>4º</td><td>A confirmar</td><td>—</td></tr><tr><td>5º</td><td>A confirmar</td><td>—</td></tr></tbody></table>
-<p><em>Campeão confirmado por CNN Brasil e Fitness Volt. As fontes publicadas até agora divergem sobre a ordem do 2º ao 5º lugar, por isso essas posições ficam em branco até a confirmação.</em></p>
+<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td>Keone Pearson</td><td>EUA</td></tr><tr><td>2º</td><td>Lucas Garcia</td><td>Brasil</td></tr><tr><td>3º</td><td>Shaun Clarida</td><td>EUA</td></tr><tr><td>4º</td><td>Vitor Porto</td><td>Brasil</td></tr><tr><td>5º</td><td>Nihat Kaya</td><td>Turquia</td></tr></tbody></table>
+<p><em>Top 5 confirmado por Fitness Volt e NSC Total; campeão também pela CNN Brasil. Do 6º lugar em diante, a classificação entra quando for publicada.</em></p>
 
 <h2>Como ficaram os brasileiros na 212?</h2>
 <table><thead><tr><th>Atleta</th><th>Resultado</th><th>Status</th></tr></thead><tbody>
-<tr><td>Lucas Garcia</td><td>Finalista (posição a confirmar)</td><td>Competiu</td></tr>
-<tr><td>Vitor Porto</td><td>Finalista (posição a confirmar)</td><td>Competiu</td></tr>
+<tr><td>Lucas Garcia</td><td>2º lugar</td><td>Resultado oficial</td></tr>
+<tr><td>Vitor Porto</td><td>4º lugar</td><td>Resultado oficial</td></tr>
 <tr><td>Felipe Moraes</td><td>A confirmar</td><td>Competiu</td></tr>
 <tr><td>Andrey Pereira</td><td>A confirmar</td><td>Competiu</td></tr>
 </tbody></table>
 <p>Os quatro aparecem no roster oficial da IFBB Pro League representando o Brasil (Vitor Porto está inscrito como Vitor Alves Porto de Oliveira). Como foram os brasileiros das outras categorias: <a href="/blog/brasileiros-mr-olympia-2026">brasileiros no Mr. Olympia 2026</a>.</p>
 
 <h2>Em que posição Lucas Garcia ficou?</h2>
-<p><strong>Lucas Garcia esteve entre os finalistas; a posição exata ainda está sendo confirmada</strong> (as primeiras fontes divergem). Paulista, ele chegou como o brasileiro mais bem colocado da categoria: em 2025, na estreia no Olympia, terminou em <strong>terceiro</strong>, atrás de Keone Pearson e Shaun Clarida, com Nihat Kaya (Turquia) em quarto e Courage Opara (EUA) em quinto. A colocação de 2026 entra aqui assim que for confirmada.</p>
+<p><strong>Lucas Garcia foi vice-campeão</strong>, o melhor resultado de um brasileiro na história da 212, igualando o 2º lugar de Eduardo Corrêa em 2014. Levou US$ 20 mil. Paulista, ele chegou como o brasileiro mais bem colocado da categoria: em 2025, na estreia no Olympia, terminou em <strong>terceiro</strong>, atrás de Keone Pearson e Shaun Clarida, com Nihat Kaya (Turquia) em quarto e Courage Opara (EUA) em quinto. Em 2026, subiu para o 2º lugar.</p>
 
 <h2>Quem ganhou a 212 Olympia 2026?</h2>
 <p><strong>Keone Pearson</strong>, que venceu o pose down final e chegou ao quarto título seguido (2023, 2024, 2025 e 2026). Os favoritos antes da final eram:</p>
@@ -551,7 +551,7 @@ ${CTA_MASSA}
 ${FONTES}`,
     faq: [
       { question: "Quem ganhou a 212 do Mr. Olympia 2026?", answer: "Keone Pearson (EUA), que chegou ao quarto título seguido na categoria." },
-      { question: "Em que posição Lucas Garcia ficou na 212?", answer: "Lucas Garcia esteve entre os finalistas de 2026; a posição exata ainda está sendo confirmada. Em 2025, na estreia no Olympia, ele ficou em terceiro." },
+      { question: "Em que posição Lucas Garcia ficou na 212?", answer: "Em segundo: Lucas Garcia foi vice-campeão da 212 no Mr. Olympia 2026, atrás de Keone Pearson. Em 2025, na estreia, tinha ficado em terceiro." },
       { question: "Quantos brasileiros competem na 212 do Olympia 2026?", answer: "Quatro, pelo roster oficial da IFBB Pro League: Lucas Garcia, Vitor Porto, Felipe Moraes e Andrey Pereira." },
       { question: "Qual é o limite de peso da 212?", answer: "212 libras, cerca de 96,2 kg, na pesagem oficial, para qualquer altura." },
     ],
