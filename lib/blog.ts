@@ -102,8 +102,10 @@ export const BLOG_CATEGORIES = [
 ];
 
 import { OLYMPIA_2026_POSTS } from "./olympia-2026";
+import { SAO_SILVESTRE_2026_POSTS } from "./sao-silvestre-2026";
 
 export const blogPosts = ([
+  ...SAO_SILVESTRE_2026_POSTS,
   ...OLYMPIA_2026_POSTS,
   {
     slug: "parar-de-tomar-mounjaro",

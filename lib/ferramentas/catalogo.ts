@@ -453,6 +453,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     selo: "novo",
   },
   {
+    id: "sao-silvestre",
+    href: "/ferramentas/previsor-sao-silvestre",
+    nome: "Previsor da São Silvestre",
+    resultado: "Veja o seu tempo provável nos 15 km da São Silvestre a partir do seu 5 km, 10 km ou meia.",
+    acao: "Prever meu tempo",
+    tempo: "15 segundos",
+    categoria: "cardio",
+    icone: "corrida",
+    tags: ["sao silvestre", "são silvestre", "15 km", "corrida de rua", "tempo de prova", "pace", "previsao", "riegel", "31 de dezembro"],
+    selo: "novo",
+  },
+  {
     id: "atividades",
     href: "/ferramentas/calculadora-calorias-atividades",
     nome: "Calculadora de Calorias por Atividade",

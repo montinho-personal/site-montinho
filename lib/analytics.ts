@@ -370,6 +370,12 @@ export type AnalyticsEvent =
   | "bike_frequency"
   | "bike_methodology_open"
   | "bike_tool_click"
+  /** Previsor da São Silvestre. Referência, nível e cenário; nunca o tempo digitado. */
+  | "ss_predictor_view"
+  | "ss_predictor_use"
+  | "ss_predictor_error"
+  | "ss_whatsapp_click"
+  | "ss_tool_click"
   | "jump_rope_calculator_view"
   | "jump_rope_calculator_use"
   | "jump_rope_preset"
