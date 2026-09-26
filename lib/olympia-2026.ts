@@ -105,32 +105,32 @@ export const OLYMPIA_2026_POSTS: BlogPost[] = [
   /* ───────────────── 1. RESULTADO CLASSIC PHYSIQUE ───────────────── */
   {
     slug: "resultado-classic-physique-mr-olympia-2026",
-    title: "Resultado Classic Physique Mr. Olympia 2026: classificação completa e Ramon Dino",
-    metaTitle: "Resultado Classic Physique Olympia 2026: Ramon Dino e Top 5",
+    title: "Resultado Classic Physique Mr. Olympia 2026: Niall Darwen campeão, Ramon Dino em 3º",
+    metaTitle: "Classic Physique Olympia 2026: Niall Darwen Campeão, Ramon 3º",
     metaDescription:
-      "Classificação completa da Classic Physique do Mr. Olympia 2026 e a colocação de Ramon Dino. Página atualizada com prévias e final desta sexta, 25/09.",
+      "Niall Darwen (Reino Unido) é o campeão da Classic Physique do Mr. Olympia 2026. Mike Sommerfeld ficou em 2º e Ramon Dino, que defendia o título, em 3º.",
     excerpt:
-      "A Classic Physique do Mr. Olympia 2026 acontece nesta sexta-feira, 25 de setembro, em Las Vegas. O resultado e a colocação de Ramon Dino são atualizados aqui assim que saem.",
+      "Niall Darwen venceu a Classic Physique do Mr. Olympia 2026, na sexta, 25 de setembro, em Las Vegas. Ramon Dino perdeu o título e terminou em 3º.",
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
-    updatedAt: "2026-09-25",
+    updatedAt: "2026-09-26",
     readTime: "4 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "Classic Physique", "Ramon Dino", "resultado", "fisiculturismo"],
-    content: `<blockquote><p><strong>As prévias da Classic Physique já aconteceram; o resultado ainda não foi definido.</strong> A final é hoje, a partir das 22h (Brasília). Esta página será atualizada assim que houver resultado oficial. Última verificação: 25 de setembro de 2026, 17h30 (Brasília).</p></blockquote>
-<p>A Classic Physique do Mr. Olympia 2026 acontece <strong>nesta sexta-feira, 25 de setembro</strong>, em Las Vegas: prévias a partir das <strong>13h30 (horário de Brasília)</strong> e final a partir das <strong>22h</strong>. Ramon Dino defende o título conquistado em 2025, quando se tornou o primeiro brasileiro campeão do Mr. Olympia. A classificação completa entra aqui assim que a IFBB Pro League divulgar o resultado oficial.</p>
-${CAPA("resultado-classic-physique-mr-olympia-2026", "Capa: Mr. Olympia 2026, Classic Physique — Ramon Dino defende o título; classificação completa e top 5, final na sexta às 22h de Brasília")}
+    content: `<blockquote><p><strong>Resultado definido: Niall Darwen (Reino Unido) é o campeão da Classic Physique 2026.</strong> Ramon Dino, campeão de 2025, ficou em 3º. Última verificação: 26 de setembro de 2026, 10h (Brasília).</p></blockquote>
+<p>A Classic Physique do Mr. Olympia 2026 foi decidida na <strong>noite de sexta-feira, 25 de setembro</strong>, em Las Vegas. <strong>Niall Darwen (Reino Unido)</strong> conquistou o primeiro título dele no Olympia, à frente de <strong>Mike Sommerfeld (Alemanha)</strong>, vice pelo segundo ano seguido, e de <strong>Ramon Dino (Brasil)</strong>, que defendia o título conquistado em 2025 e terminou em 3º. Foi a grande surpresa da noite: Darwen tinha sido 11º e depois 5º nas duas edições anteriores em que competiu no Olympia.</p>
+${CAPA("resultado-classic-physique-mr-olympia-2026", "Capa: Mr. Olympia 2026, Classic Physique — classificação completa e colocação de Ramon Dino")}
 
 <h2>Classificação da Classic Physique 2026</h2>
-${TABELA_PENDENTE(5)}
-<p><em>Tabela preenchida após a final oficial. Enquanto isso, veja <a href="/blog/ramon-dino-mr-olympia-2026-horario">que horas Ramon Dino compete e onde assistir</a>.</em></p>
+<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Niall Darwen</strong></td><td>Reino Unido</td></tr><tr><td>2º</td><td>Mike Sommerfeld</td><td>Alemanha</td></tr><tr><td>3º</td><td>Ramon Dino</td><td>Brasil</td></tr><tr><td>4º</td><td>A confirmar</td><td>—</td></tr><tr><td>5º</td><td>A confirmar</td><td>—</td></tr></tbody></table>
+<p><em>O pódio foi confirmado por duas fontes independentes. O 4º e o 5º lugares entram quando também estiverem confirmados.</em></p>
 
 <h2>Ramon Dino: em que posição ficou?</h2>
-<p><strong>Ainda não há resultado.</strong> Ramon Dino (Brasil) passou na pesagem oficial da IFBB Pro League na quarta-feira, 23 de setembro, abaixo do limite de peso da altura dele, e chega como atual campeão: em 2025 venceu a categoria à frente de Mike Sommerfeld (Alemanha) e Terrence Ruffin (EUA), na primeira edição sem Chris Bumstead, que se aposentou após o sexto título em 2024. Os números do atleta estão em <a href="/blog/ramon-dino-peso-altura">quanto pesa Ramon Dino: peso, altura e limite da Classic</a>.</p>
+<p><strong>Ramon Dino ficou em 3º lugar</strong> e perdeu o título que tinha conquistado em 2025. Ele passou na pesagem oficial da IFBB Pro League na quarta-feira, 23 de setembro, abaixo do limite de peso da altura dele, e chegou como atual campeão: em 2025 venceu a categoria à frente de Mike Sommerfeld (Alemanha) e Terrence Ruffin (EUA), na primeira edição sem Chris Bumstead, que se aposentou após o sexto título em 2024. Os números do atleta estão em <a href="/blog/ramon-dino-peso-altura">quanto pesa Ramon Dino: peso, altura e limite da Classic</a>.</p>
 
-<h2>Quem disputa o título com Ramon Dino</h2>
-<p>Pelas escalações divulgadas e pelos resultados da temporada, os nomes mais citados para o primeiro chamado são:</p>
+<h2>Quem eram os favoritos antes da final</h2>
+<p>Antes do campeonato, pelas escalações e pelos resultados da temporada, os nomes mais citados para o primeiro chamado eram:</p>
 <ul>
 <li><strong>Mike Sommerfeld (Alemanha)</strong> — vice em 2025 e campeão do Arnold Classic UK 2026, apontado pela imprensa especializada como a principal ameaça ao brasileiro.</li>
 <li><strong>Terrence Ruffin (EUA)</strong> — terceiro em 2025, duas vezes campeão do Arnold Classic e referência em posing na categoria.</li>
@@ -147,23 +147,23 @@ ${TABELA_PENDENTE(5)}
 
 <h2>Como foram as prévias</h2>
 <p>As prévias da Classic Physique aconteceram na tarde desta sexta-feira, 25 de setembro. No primeiro chamado, <strong>Ramon Dino e Mike Sommerfeld dividiram o centro do palco</strong>, as posições que costumam ficar com os candidatos ao título, e chegaram a trocar de lugar durante as comparações, segundo a Generation Iron e a RepOne.</p>
-<p><strong>Chamado não é resultado:</strong> a IFBB Pro League não divulga notas das prévias, e a colocação só existe depois da final, a partir das 22h de Brasília.</p>
+<p>Na final, à noite, Niall Darwen passou os dois e levou o título.</p>
 
 <h2>Como funciona a decisão: prévias e final</h2>
-<p>Na <strong>prévia (prejudging)</strong>, os juízes comparam os atletas em grupos, nas poses obrigatórias, e é ali que a maior parte da nota se forma. Na <strong>final</strong>, cada um faz a rotina de posing e há novas comparações; o resultado é anunciado no palco. Por isso o "quem ganhou" só existe depois da final, na noite de sexta no horário de Brasília. Detalhes do formato e da regra de peso: <a href="/blog/ramon-dino-peso-altura">limite de peso da Classic Physique</a>.</p>
+<p>Na <strong>prévia (prejudging)</strong>, os juízes comparam os atletas em grupos, nas poses obrigatórias, e é ali que a maior parte da nota se forma. Na <strong>final</strong>, cada um faz a rotina de posing e há novas comparações; o resultado é anunciado no palco. Por isso o "quem ganhou" só existe depois da final — e em 2026 a final mudou o que as prévias sugeriam. Detalhes do formato e da regra de peso: <a href="/blog/ramon-dino-peso-altura">limite de peso da Classic Physique</a>.</p>
 
 <h2>As outras categorias</h2>
-<p>Na mesma noite são decididas Wellness (<a href="/blog/resultado-wellness-mr-olympia-2026">resultado da Wellness 2026</a>), 212 (<a href="/blog/resultado-212-mr-olympia-2026">resultado da 212</a>), Figure, Women's Physique e Ms. Olympia. O Open, título máximo do evento, é decidido no sábado (<a href="/blog/resultado-mr-olympia-open-2026">resultado do Mr. Olympia Open 2026</a>). Todos os campeões ficam reunidos em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+<p>Na mesma noite foram decididas Wellness (<a href="/blog/resultado-wellness-mr-olympia-2026">resultado da Wellness 2026</a>), 212 (<a href="/blog/resultado-212-mr-olympia-2026">resultado da 212</a>), Figure, Women's Physique e Ms. Olympia. O Open, título máximo do evento, é decidido no sábado, 26/09, a partir das 23h de Brasília (<a href="/blog/resultado-mr-olympia-open-2026">resultado do Mr. Olympia Open 2026</a>). Todos os campeões ficam reunidos em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
 ${ACOMPANHE("resultado-classic-physique-mr-olympia-2026")}
 
 ${CTA_FASES}
 ${FONTES}`,
     faq: [
-      { question: "Quem ganhou a Classic Physique do Mr. Olympia 2026?", answer: "O resultado ainda não foi definido. A final acontece na sexta-feira, 25 de setembro, a partir das 22h (horário de Brasília), e esta página é atualizada assim que a IFBB Pro League anuncia o campeão." },
-      { question: "Em que posição Ramon Dino ficou?", answer: "Ainda não há resultado. Ramon Dino compete como atual campeão, após passar na pesagem com 102,5 kg. A colocação dele entra nesta página logo após a final." },
-      { question: "Quando é a final da Classic Physique 2026?", answer: "Nesta sexta-feira, 25 de setembro de 2026. As prévias começam às 13h30 e a final a partir das 22h, no horário de Brasília (9h30 e 18h em Las Vegas)." },
-      { question: "Onde assistir à Classic Physique do Mr. Olympia?", answer: "Pela OlympiaTV, transmissão oficial gratuita mediante cadastro no site do evento. No Brasil, canais como o de Renato Cariani no YouTube fazem cobertura com comentários em português." },
+      { question: "Quem ganhou a Classic Physique do Mr. Olympia 2026?", answer: "Niall Darwen, do Reino Unido, na final de sexta-feira, 25 de setembro, em Las Vegas. É o primeiro título dele no Olympia." },
+      { question: "Em que posição Ramon Dino ficou?", answer: "Em 3º lugar. Ramon era o atual campeão, título de 2025, e ficou atrás de Niall Darwen e Mike Sommerfeld." },
+      { question: "Quem ficou em segundo na Classic Physique 2026?", answer: "Mike Sommerfeld, da Alemanha, vice pelo segundo ano seguido." },
+      { question: "Ramon Dino perdeu o título?", answer: "Sim. Ele venceu a Classic Physique em 2025, primeiro brasileiro campeão do Mr. Olympia, e em 2026 terminou em 3º." },
     ],
   },
 
@@ -210,7 +210,7 @@ ${ACOMPANHE("ramon-dino-mr-olympia-2026-horario")}
 ${FONTES}`,
     faq: [
       { question: "Que horas Ramon Dino compete hoje?", answer: "Nesta sexta-feira, 25 de setembro, as prévias da Classic Physique começam às 13h30 e a final a partir das 22h, no horário de Brasília (9h30 e 18h em Las Vegas). A hora exata em que ele sobe ao palco depende da ordem das categorias na sessão." },
-      { question: "Em qual categoria Ramon Dino compete?", answer: "Classic Physique, categoria com limite de peso por altura. Ramon é o atual campeão, título de 2025." },
+      { question: "Em qual categoria Ramon Dino compete?", answer: "Classic Physique, categoria com limite de peso por altura. Ramon foi campeão em 2025 e, em 2026, terminou em 3º, atrás de Niall Darwen e Mike Sommerfeld." },
       { question: "Onde assistir Ramon Dino no Mr. Olympia 2026?", answer: "Na OlympiaTV, transmissão oficial gratuita com cadastro no site do evento, e em coberturas em português como a do canal de Renato Cariani no YouTube." },
       { question: "O horário de Las Vegas é diferente do de Brasília?", answer: "Sim: Las Vegas está 4 horas atrás de Brasília em setembro. As prévias de 9h30 em Las Vegas são 13h30 em Brasília, e a final de 18h é 22h." },
     ],
@@ -232,14 +232,14 @@ ${FONTES}`,
     readTime: "5 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "campeões", "resultados", "fisiculturismo", "Las Vegas"],
-    content: `<blockquote><p><strong>Já decididas: Women's Physique, 212, Figure e Ms. Olympia.</strong> As outras entram assim que o resultado oficial for confirmado. Última verificação: 26 de setembro de 2026, 2h (Brasília).</p></blockquote>
+    content: `<blockquote><p><strong>As seis categorias de sexta estão decididas: Classic Physique, 212, Wellness, Women's Physique, Figure e Ms. Olympia.</strong> O Open, título máximo, é hoje, sábado (26), com a final a partir das 23h (Brasília). Última verificação: 26 de setembro de 2026, 10h (Brasília).</p></blockquote>
 <p>O Mr. Olympia 2026 acontece de 24 a 27 de setembro em Las Vegas, com 322 atletas em 12 categorias — 58 deles brasileiros. As finais são <strong>nesta sexta (25) a partir das 22h</strong> e <strong>no sábado (26) a partir das 23h</strong>, no horário de Brasília. Esta página reúne todos os campeões e é atualizada categoria por categoria, à medida que os resultados oficiais saem.</p>
 ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — todos os campeões, categoria por categoria: Open, Classic Physique, Wellness, 212, Men's Physique, Bikini e mais")}
 
 <h2>Campeões do Mr. Olympia 2026</h2>
 <table><thead><tr><th>Categoria</th><th>Final</th><th>Campeão(ã) 2026</th><th>Campeão(ã) 2025</th><th>Resultado</th></tr></thead><tbody>
-<tr><td>Classic Physique</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Ramon Dino (BRA)</td><td><a href="/blog/resultado-classic-physique-mr-olympia-2026">Ver resultado</a></td></tr>
-<tr><td>Wellness</td><td>Sex 25/09, 22h</td><td>A definir</td><td>Eduarda Bezerra (BRA)</td><td><a href="/blog/resultado-wellness-mr-olympia-2026">Ver resultado</a></td></tr>
+<tr><td>Classic Physique</td><td>Sex 25/09, 22h</td><td><strong>Niall Darwen (GBR)</strong></td><td>Ramon Dino (BRA)</td><td><a href="/blog/resultado-classic-physique-mr-olympia-2026">Ver resultado</a></td></tr>
+<tr><td>Wellness</td><td>Sex 25/09, 22h</td><td><strong>Eduarda Bezerra (BRA)</strong></td><td>Eduarda Bezerra (BRA)</td><td><a href="/blog/resultado-wellness-mr-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>212</td><td>Sex 25/09, 22h</td><td><strong>Keone Pearson (EUA)</strong></td><td>Keone Pearson (EUA)</td><td><a href="/blog/resultado-212-mr-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Figure</td><td>Sex 25/09, 22h</td><td><strong>Lola Montez</strong></td><td>Rhea Gayle (GBR)</td><td>Nesta página</td></tr>
 <tr><td>Women's Physique</td><td>Sex 25/09, 22h</td><td><strong>Natalia Abraham Coelho (EUA)</strong></td><td>Natalia Abraham Coelho (EUA)</td><td><a href="/blog/resultado-womens-physique-olympia-2026">Ver resultado</a></td></tr>
@@ -272,7 +272,7 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — 
 <h2>Os brasileiros em destaque</h2>
 <p>Todos os brasileiros, por dia e categoria, com o resultado de cada um, estão no <a href="/blog/brasileiros-mr-olympia-2026">painel dos brasileiros no Mr. Olympia 2026</a>.</p>
 <ul>
-<li><strong>Ramon Dino</strong> — atual campeão da Classic Physique, primeiro brasileiro a vencer o Mr. Olympia. Pesou 102,5 kg na pesagem oficial (<a href="/blog/ramon-dino-peso-altura">peso, altura e limite</a>).</li>
+<li><strong>Ramon Dino</strong> — 3º lugar na Classic Physique 2026; campeão em 2025, primeiro brasileiro a vencer o Mr. Olympia. Pesou 102,5 kg na pesagem oficial (<a href="/blog/ramon-dino-peso-altura">peso, altura e limite</a>).</li>
 <li><strong>Eduarda Bezerra</strong> — atual campeã da Wellness, categoria em que o Brasil venceu todas as cinco edições desde 2021 e tem 19 das 40 inscritas em 2026.</li>
 <li><strong>Isa Pereira Nunes</strong> (campeã Wellness 2024) e <strong>Rayane Fogal</strong> (campeã do Arnold Ohio e do Arnold UK 2026) completam as principais candidatas brasileiras.</li>
 </ul>
@@ -295,34 +295,35 @@ ${FONTES}`,
   /* ───────────────── 4. WELLNESS ───────────────── */
   {
     slug: "resultado-wellness-mr-olympia-2026",
-    title: "Resultado Wellness Mr. Olympia 2026: campeã, Top 5 e brasileiras",
-    metaTitle: "Resultado Wellness Olympia 2026: Campeã e Brasileiras",
+    title: "Resultado Wellness Mr. Olympia 2026: Eduarda Bezerra é bicampeã",
+    metaTitle: "Wellness Olympia 2026: Eduarda Bezerra Bicampeã, Isa Nunes 2ª",
     metaDescription:
-      "Campeã e top 5 da Wellness do Mr. Olympia 2026, com a colocação de Eduarda Bezerra e das brasileiras. Final nesta sexta, 25/09, às 22h (Brasília).",
+      "Eduarda Bezerra é bicampeã da Wellness do Mr. Olympia 2026, com Isa Pereira Nunes em 2º: dobradinha brasileira. O Brasil segue invicto na categoria.",
     excerpt:
-      "A final da Wellness do Mr. Olympia 2026 é nesta sexta, 25 de setembro. Eduarda Bezerra defende o título numa categoria que o Brasil venceu em todas as edições.",
+      "Eduarda Bezerra venceu a Wellness do Mr. Olympia 2026 e é bicampeã. Isa Pereira Nunes ficou em 2º, e o Brasil segue invicto na categoria.",
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
+    updatedAt: "2026-09-26",
     readTime: "4 min",
     author: AUTOR,
     tags: ["Wellness", "Mr. Olympia 2026", "Eduarda Bezerra", "Isa Pereira Nunes", "resultado"],
-    content: `${AVISO_ANTES("O resultado da Wellness do Mr. Olympia 2026 ainda não foi definido.")}
-<p>A Wellness do Mr. Olympia 2026 é decidida <strong>nesta sexta-feira, 25 de setembro</strong>: prévias a partir das <strong>13h30</strong> e final a partir das <strong>22h</strong>, horário de Brasília. <strong>Eduarda Bezerra</strong> defende o título de 2025 numa categoria que o Brasil venceu em todas as cinco edições desde a estreia, em 2021. A classificação entra aqui assim que a IFBB Pro League divulgar o resultado.</p>
+    content: `<blockquote><p><strong>Resultado definido: Eduarda Bezerra é bicampeã da Wellness.</strong> Isa Pereira Nunes ficou em 2º. Última verificação: 26 de setembro de 2026, 10h (Brasília).</p></blockquote>
+<p><strong>Eduarda Bezerra</strong> venceu a Wellness do Mr. Olympia 2026 na noite de <strong>sexta-feira, 25 de setembro</strong>, em Las Vegas, e conquistou o segundo título seguido. <strong>Isa Pereira Nunes</strong>, campeã de 2024, ficou em 2º, numa dobradinha brasileira, e <strong>Elisa Alcantara</strong> (República Dominicana) completou o pódio — o mesmo top 3 de 2025. Com isso, o Brasil venceu as seis edições da categoria desde a estreia, em 2021.</p>
 ${CAPA("resultado-wellness-mr-olympia-2026", "Capa: Wellness do Mr. Olympia 2026 — o Brasil venceu todas as cinco edições e 19 das 40 atletas são brasileiras; resultado, campeã e top 5")}
 
 <h2>Classificação da Wellness 2026</h2>
-${TABELA_PENDENTE(5)}
-<p><em>Tabela preenchida após a final oficial.</em></p>
+<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Eduarda Bezerra</strong></td><td>Brasil</td></tr><tr><td>2º</td><td>Isa Pereira Nunes</td><td>Brasil</td></tr><tr><td>3º</td><td>Elisa Alcantara</td><td>República Dominicana</td></tr><tr><td>4º</td><td>A confirmar</td><td>—</td></tr><tr><td>5º</td><td>A confirmar</td><td>—</td></tr></tbody></table>
+<p><em>O pódio foi confirmado por duas fontes independentes. O 4º e o 5º lugares, e as colocações das outras brasileiras, entram quando também estiverem confirmados.</em></p>
 
-<h2>As brasileiras na disputa</h2>
-<p>São <strong>19 brasileiras entre as 40 inscritas</strong>. As mais cotadas:</p>
+<h2>As brasileiras</h2>
+<p>Eram <strong>19 brasileiras entre as 40 inscritas</strong>. As mais cotadas antes da final:</p>
 <ul>
-<li><strong>Eduarda Bezerra</strong> (Caruaru, PE) — atual campeã. Em 2025 venceu o Arnold Classic Ohio e o Olympia, superando Isa Pereira Nunes nos dois.</li>
-<li><strong>Isa Pereira Nunes</strong> — campeã de 2024 e vice em 2025.</li>
-<li><strong>Rayane Fogal</strong> — campeã do Arnold Classic Ohio e do Arnold Classic UK em 2026.</li>
+<li><strong>Eduarda Bezerra</strong> (Caruaru, PE) — <strong>campeã (1º lugar)</strong>. Em 2025 venceu o Arnold Classic Ohio e o Olympia, superando Isa Pereira Nunes nos dois.</li>
+<li><strong>Isa Pereira Nunes</strong> — <strong>2º lugar</strong>, repetindo o vice de 2025. Foi campeã em 2024.</li>
+<li><strong>Rayane Fogal</strong> — campeã do Arnold Classic Ohio e do Arnold Classic UK em 2026. Colocação a confirmar.</li>
 </ul>
-<p>As outras brasileiras inscritas aparecem com variações entre as listas publicadas pela imprensa; a relação oficial é a da IFBB Pro League, e os nomes delas entram aqui com a classificação. <strong>Francielle Mattos</strong>, tricampeã (2021–2023), tem vaga garantida mas optou por não competir em 2026.</p>
+<p>As outras brasileiras inscritas aparecem com variações entre as listas publicadas pela imprensa; a relação oficial é a da IFBB Pro League, e as colocações delas entram aqui quando confirmadas. <strong>Francielle Mattos</strong>, tricampeã (2021–2023), tem vaga garantida mas optou por não competir em 2026.</p>
 
 <h2>O histórico: Brasil em todas as edições</h2>
 <table><thead><tr><th>Ano</th><th>Campeã</th></tr></thead><tbody>
@@ -331,24 +332,24 @@ ${TABELA_PENDENTE(5)}
 <tr><td>2023</td><td>Francielle Mattos (BRA)</td></tr>
 <tr><td>2024</td><td>Isa Pereira Nunes (BRA)</td></tr>
 <tr><td>2025</td><td>Eduarda Bezerra (BRA)</td></tr>
-<tr><td>2026</td><td>A definir</td></tr>
+<tr><td>2026</td><td>Eduarda Bezerra (BRA)</td></tr>
 </tbody></table>
 
 <h2>O que os juízes avaliam na Wellness</h2>
 <p>A Wellness premia o desenvolvimento da parte inferior do corpo — glúteos, coxas e quadril — em proporção maior que a superior, com condicionamento moderado: definição visível sem a secura das categorias de bodybuilding. Para entender como esse tipo de desenvolvimento se constrói no treino comum, sem palco, veja <a href="/blog/como-ganhar-massa-sem-ganhar-gordura">como ganhar massa sem ganhar gordura</a>.</p>
 
 <h2>As outras decisões da noite</h2>
-<p>Na mesma sessão de sexta são decididas Classic Physique (<a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic com Ramon Dino</a>), 212, Figure, Women's Physique e Ms. Olympia. Todos os campeões em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+<p>Na mesma sessão de sexta foram decididas Classic Physique (<a href="/blog/resultado-classic-physique-mr-olympia-2026">Niall Darwen campeão, Ramon Dino em 3º</a>), 212, Figure, Women's Physique e Ms. Olympia. Todos os campeões em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
 ${ACOMPANHE("resultado-wellness-mr-olympia-2026")}
 
 ${CTA_WELLNESS}
 ${FONTES}`,
     faq: [
-      { question: "Quem ganhou a Wellness do Mr. Olympia 2026?", answer: "Ainda não foi definido. A final é nesta sexta-feira, 25 de setembro, a partir das 22h (Brasília). Esta página é atualizada com a campeã e o top 5 assim que o resultado oficial sair." },
-      { question: "Quais brasileiras competem na Wellness Olympia 2026?", answer: "19 das 40 inscritas são brasileiras. As mais cotadas: Eduarda Bezerra (atual campeã), Isa Pereira Nunes (campeã de 2024) e Rayane Fogal (campeã do Arnold Ohio e UK 2026)." },
-      { question: "Francielle Mattos compete em 2026?", answer: "Não. A tricampeã (2021, 2022 e 2023) tem vaga garantida, mas optou por ficar fora desta edição." },
-      { question: "Que horas é a final da Wellness?", answer: "Sexta-feira, 25/09, a partir das 22h no horário de Brasília (18h em Las Vegas), na Orleans Arena. As prévias começam às 13h30." },
+      { question: "Quem ganhou a Wellness do Mr. Olympia 2026?", answer: "Eduarda Bezerra, do Brasil, na final de sexta-feira, 25 de setembro. É o segundo título seguido dela." },
+      { question: "Quem ficou em segundo e terceiro na Wellness 2026?", answer: "Isa Pereira Nunes (Brasil) ficou em 2º e Elisa Alcantara (República Dominicana) em 3º, o mesmo pódio de 2025." },
+      { question: "O Brasil já perdeu a Wellness no Olympia?", answer: "Não. Desde a estreia da categoria, em 2021, todas as seis edições foram vencidas por brasileiras: Francielle Mattos (3), Isa Pereira Nunes (1) e Eduarda Bezerra (2)." },
+      { question: "Francielle Mattos competiu em 2026?", answer: "Não. A tricampeã (2021, 2022 e 2023) tinha vaga garantida, mas optou por ficar fora desta edição." },
     ],
   },
 
@@ -367,8 +368,8 @@ ${FONTES}`,
     readTime: "4 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "Open", "Derek Lunsford", "Samson Dauda", "resultado"],
-    content: `${AVISO_ANTES("O resultado do Mr. Olympia Open 2026 ainda não foi definido.")}
-<p>O título máximo do Mr. Olympia 2026 é decidido <strong>no sábado, 26 de setembro</strong>, com a final a partir das <strong>23h (horário de Brasília)</strong>, na Orleans Arena, em Las Vegas. As prévias do Open acontecem antes, na sessão de sexta à noite. <strong>Derek Lunsford</strong> (EUA) defende o título de 2025 contra 21 atletas na principal categoria da IFBB Pro League, a única sem limite de peso. A classificação completa entra aqui assim que for anunciada.</p>
+    content: `<blockquote><p><strong>O resultado do Mr. Olympia Open 2026 ainda não foi definido.</strong> As prévias aconteceram na sexta à noite; a final é hoje, sábado (26), a partir das 23h (Brasília). Nas prévias, as comparações principais reuniram <strong>Derek Lunsford, Samson Dauda, Andrew Jacked e Nick Walker</strong>, segundo a Fitness Volt e a RepOne — chamado não é resultado, e o campeão só sai na final. Última verificação: 26 de setembro de 2026, 10h (Brasília).</p></blockquote>
+<p>O título máximo do Mr. Olympia 2026 é decidido <strong>no sábado, 26 de setembro</strong>, com a final a partir das <strong>23h (horário de Brasília)</strong>, na Orleans Arena, em Las Vegas. As prévias do Open aconteceram na sessão de sexta à noite. <strong>Derek Lunsford</strong> (EUA) defende o título de 2025 contra 21 atletas na principal categoria da IFBB Pro League, a única sem limite de peso. A classificação completa entra aqui assim que for anunciada.</p>
 ${CAPA("resultado-mr-olympia-open-2026", "Capa: resultado do Open do Mr. Olympia 2026 — quem leva o troféu Sandow; Derek Lunsford defende o título na final de sábado, 23h de Brasília")}
 
 <h2>Classificação do Mr. Olympia Open 2026</h2>
@@ -458,7 +459,7 @@ ${CAPA("ramon-dino-peso-altura", "Capa: quanto pesa Ramon Dino — 102,5 kg na p
 <tr><td>2023</td><td>2º</td></tr>
 <tr><td>2024</td><td>4º</td></tr>
 <tr><td>2025</td><td><strong>1º</strong> — primeiro brasileiro campeão do Mr. Olympia</td></tr>
-<tr><td>2026</td><td>A definir — final em 25 de setembro</td></tr>
+<tr><td>2026</td><td>3º — título para Niall Darwen (Reino Unido)</td></tr>
 </tbody></table>
 <p>Os vices de 2022 e 2023 foram atrás de Chris Bumstead, que venceu seis vezes seguidas (2019–2024) e se aposentou no palco em 2024. Horários e transmissão de 2026: <a href="/blog/ramon-dino-mr-olympia-2026-horario">que horas Ramon Dino compete</a>.</p>
 
@@ -667,11 +668,11 @@ ${TABELA_BRASIL}
 <h2>Brasileiros que competem na sexta-feira</h2>
 <p>Prévias a partir das <strong>13h30</strong> e finais a partir das <strong>22h</strong> (Brasília). São horários de início de bloco: a hora exata de cada categoria depende do andamento do evento.</p>
 <h3>Classic Physique</h3>
-<p>Ramon Dino defende o título ao lado de César Falcão, Fábio Júnio, Gabriel Zancanelli e Matheus Menegate. <a href="/blog/resultado-classic-physique-mr-olympia-2026">Resultado da Classic Physique e a colocação de Ramon</a>.</p>
+<p>Ramon Dino, campeão de 2025, ficou em 3º; o título foi para Niall Darwen (Reino Unido). Também competiram César Falcão, Fábio Júnio, Gabriel Zancanelli e Matheus Menegate. <a href="/blog/resultado-classic-physique-mr-olympia-2026">Resultado da Classic Physique e a colocação de Ramon</a>.</p>
 <h3>212</h3>
 <p>Lucas Garcia, terceiro em 2025, com Vitor Porto, Felipe Moraes e Andrey Pereira. <a href="/blog/resultado-212-mr-olympia-2026">Como ficou Lucas Garcia na 212</a>.</p>
 <h3>Wellness</h3>
-<p>A categoria em que o Brasil venceu todas as edições tem a maior delegação brasileira. Eduarda Bezerra defende o título, e Isa Pereira Nunes e Rayane Fogal estão entre as candidatas. <a href="/blog/resultado-wellness-mr-olympia-2026">Resultado da Wellness e a lista das brasileiras</a>.</p>
+<p>A categoria em que o Brasil venceu todas as edições tem a maior delegação brasileira. Eduarda Bezerra é bicampeã e Isa Pereira Nunes ficou em 2º: dobradinha brasileira. <a href="/blog/resultado-wellness-mr-olympia-2026">Resultado da Wellness e a lista das brasileiras</a>.</p>
 <h3>Women's Physique</h3>
 <p>Natália Coelho, atual campeã, aparece no roster pelos EUA. Zama Benta, terceira em 2025, lidera as que competem pelo Brasil. <a href="/blog/resultado-womens-physique-olympia-2026">Posição de Natália Coelho e das brasileiras</a>.</p>
 <h3>Ms. Olympia (Women's Bodybuilding)</h3>

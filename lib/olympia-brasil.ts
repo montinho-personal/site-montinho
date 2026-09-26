@@ -63,9 +63,9 @@ export interface CategoriaOlympia {
 }
 
 export const CATEGORIAS: CategoriaOlympia[] = [
-  { id: "classic", nome: "Classic Physique", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-classic-physique-mr-olympia-2026", temBrasileiro: true },
+  { id: "classic", nome: "Classic Physique", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-classic-physique-mr-olympia-2026", temBrasileiro: true, previasConcluidas: true, resultadoOficial: true, campeao: "Niall Darwen" },
   { id: "212", nome: "212", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-212-mr-olympia-2026", temBrasileiro: true, previasConcluidas: true, resultadoOficial: true, campeao: "Keone Pearson" },
-  { id: "wellness", nome: "Wellness", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-wellness-mr-olympia-2026", temBrasileiro: true },
+  { id: "wellness", nome: "Wellness", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-wellness-mr-olympia-2026", temBrasileiro: true, previasConcluidas: true, resultadoOficial: true, campeao: "Eduarda Bezerra" },
   { id: "womens-physique", nome: "Women's Physique", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", artigo: "resultado-womens-physique-olympia-2026", temBrasileiro: true, previasConcluidas: true, resultadoOficial: true, campeao: "Natalia Abraham Coelho" },
   { id: "ms-olympia", nome: "Ms. Olympia", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", temBrasileiro: true, previasConcluidas: true, resultadoOficial: true, campeao: "Andrea Shaw" },
   { id: "figure", nome: "Figure", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", previasConcluidas: true, resultadoOficial: true, campeao: "Lola Montez" },
@@ -147,18 +147,19 @@ export interface ResumoBrasil {
 const ORDEM: IdBloco[] = ["sextaPrevias", "sextaFinais", "sabadoPrevias", "sabadoFinais"];
 
 /** Categorias com brasileiro que usam o bloco (prévias ou final) e ainda não encerraram. */
-function doBloco(b: IdBloco): CategoriaOlympia[] {
-  return CATEGORIAS.filter((c) => c.temBrasileiro && !c.resultadoOficial && (c.previas === b || c.final === b));
+function doBloco(b: IdBloco, cats: CategoriaOlympia[]): CategoriaOlympia[] {
+  return cats.filter((c) => c.temBrasileiro && !c.resultadoOficial && (c.previas === b || c.final === b));
 }
 
-export function resumoBrasil(agora: number): ResumoBrasil {
-  const iniciados = ORDEM.filter((b) => agora >= t(b) && doBloco(b).length);
-  const futuros = ORDEM.filter((b) => agora < t(b) && doBloco(b).length);
+/** `cats` existe para o teste passar categorias sem os flags do evento real. */
+export function resumoBrasil(agora: number, cats: CategoriaOlympia[] = CATEGORIAS): ResumoBrasil {
+  const iniciados = ORDEM.filter((b) => agora >= t(b) && doBloco(b, cats).length);
+  const futuros = ORDEM.filter((b) => agora < t(b) && doBloco(b, cats).length);
   const ult = iniciados[iniciados.length - 1];
   return {
-    agora: ult ? { bloco: ult, categorias: doBloco(ult) } : null,
-    proximo: futuros[0] ? { bloco: futuros[0], categorias: doBloco(futuros[0]) } : null,
-    finalizadas: CATEGORIAS.filter((c) => c.temBrasileiro && c.resultadoOficial),
+    agora: ult ? { bloco: ult, categorias: doBloco(ult, cats) } : null,
+    proximo: futuros[0] ? { bloco: futuros[0], categorias: doBloco(futuros[0], cats) } : null,
+    finalizadas: cats.filter((c) => c.temBrasileiro && c.resultadoOficial),
   };
 }
 
@@ -188,7 +189,7 @@ const a = (nome: string, cat: string, representacao: AtletaBrasil["representacao
 
 export const ATLETAS_BRASIL: AtletaBrasil[] = [
   // Sexta
-  a("Ramon Dino", "classic", "Brasil", "Atual campeão"),
+  { ...a("Ramon Dino", "classic", "Brasil", "Campeão em 2025"), resultado: "3º lugar" },
   a("César Falcão", "classic"),
   a("Fábio Júnio", "classic"),
   a("Gabriel Zancanelli", "classic"),
@@ -197,8 +198,8 @@ export const ATLETAS_BRASIL: AtletaBrasil[] = [
   { ...a("Vitor Porto", "212"), resultado: "4º lugar" },
   a("Felipe Moraes", "212"),
   a("Andrey Pereira", "212"),
-  a("Eduarda Bezerra", "wellness", "Brasil", "Atual campeã"),
-  a("Isa Pereira Nunes", "wellness", "Brasil", "Campeã em 2024"),
+  { ...a("Eduarda Bezerra", "wellness", "Brasil", "Bicampeã"), resultado: "1º lugar" },
+  { ...a("Isa Pereira Nunes", "wellness", "Brasil", "Campeã em 2024"), resultado: "2º lugar" },
   a("Rayane Fogal", "wellness"),
   { ...a("Natália Coelho", "womens-physique", "EUA", "Tricampeã"), resultado: "1º lugar" },
   { ...a("Zama Benta", "womens-physique", "Brasil", "3ª em 2025"), resultado: "2º lugar" },

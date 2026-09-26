@@ -39,12 +39,13 @@ ok(fase(fm, at("2026-09-26T23:30:00-03:00")) === "bloco", "Fit Model: não encer
 ok(fase({ ...fm, noPalco: true }, at("2026-09-26T14:00:00-03:00")) === "no-palco", "Fit Model: no palco só com confirmação");
 ok(fase({ ...fm, resultadoOficial: true }, at("2026-09-26T14:00:00-03:00")) === "encerrada", "Fit Model: resultado oficial encerra");
 
-// Hub Brasil
-const r0 = resumoBrasil(at("2026-09-25T02:00:00-03:00"));
+// Hub Brasil (com as categorias "limpas", pelo mesmo motivo do c212)
+const limpas = CATEGORIAS.map((c) => ({ ...c, previasConcluidas: undefined, resultadoOficial: undefined, campeao: undefined }));
+const r0 = resumoBrasil(at("2026-09-25T02:00:00-03:00"), limpas);
 ok(r0.agora === null && r0.proximo?.bloco === "sextaPrevias", "madrugada de sexta: próximo = prévias de sexta");
-const r1 = resumoBrasil(at("2026-09-25T15:00:00-03:00"));
+const r1 = resumoBrasil(at("2026-09-25T15:00:00-03:00"), limpas);
 ok(r1.agora?.bloco === "sextaPrevias" && r1.proximo?.bloco === "sextaFinais", "sexta 15h: agora prévias, próximo finais");
-const r2 = resumoBrasil(at("2026-09-27T01:00:00-03:00"));
+const r2 = resumoBrasil(at("2026-09-27T01:00:00-03:00"), limpas);
 ok(r2.proximo === null, "depois das finais de sábado não há próximo");
 
 // Integridade dos dados
