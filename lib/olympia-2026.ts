@@ -120,7 +120,7 @@ export const OLYMPIA_2026_POSTS: BlogPost[] = [
     tags: ["Mr. Olympia 2026", "Classic Physique", "Ramon Dino", "resultado", "fisiculturismo"],
     content: `<blockquote><p><strong>Resultado definido: Niall Darwen (Reino Unido) é o campeão da Classic Physique 2026.</strong> Ramon Dino, campeão de 2025, ficou em 3º. Última verificação: 26 de setembro de 2026, 10h (Brasília).</p></blockquote>
 <p>A Classic Physique do Mr. Olympia 2026 foi decidida na <strong>noite de sexta-feira, 25 de setembro</strong>, em Las Vegas. <strong>Niall Darwen (Reino Unido)</strong> conquistou o primeiro título dele no Olympia, à frente de <strong>Mike Sommerfeld (Alemanha)</strong>, vice pelo segundo ano seguido, e de <strong>Ramon Dino (Brasil)</strong>, que defendia o título conquistado em 2025 e terminou em 3º. Foi a grande surpresa da noite: Darwen tinha sido 11º e depois 5º nas duas edições anteriores em que competiu no Olympia.</p>
-${CAPA("resultado-classic-physique-mr-olympia-2026", "Capa: Mr. Olympia 2026, Classic Physique — classificação completa e colocação de Ramon Dino")}
+${CAPA("resultado-classic-physique-mr-olympia-2026", "Capa: Niall Darwen campeão da Classic Physique do Mr. Olympia 2026, com Mike Sommerfeld em 2º e Ramon Dino em 3º")}
 
 <h2>Classificação da Classic Physique 2026</h2>
 <table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Niall Darwen</strong></td><td>Reino Unido</td></tr><tr><td>2º</td><td>Mike Sommerfeld</td><td>Alemanha</td></tr><tr><td>3º</td><td>Ramon Dino</td><td>Brasil</td></tr><tr><td>4º</td><td>A confirmar</td><td>—</td></tr><tr><td>5º</td><td>A confirmar</td><td>—</td></tr></tbody></table>
@@ -153,7 +153,7 @@ ${CAPA("resultado-classic-physique-mr-olympia-2026", "Capa: Mr. Olympia 2026, Cl
 <p>Na <strong>prévia (prejudging)</strong>, os juízes comparam os atletas em grupos, nas poses obrigatórias, e é ali que a maior parte da nota se forma. Na <strong>final</strong>, cada um faz a rotina de posing e há novas comparações; o resultado é anunciado no palco. Por isso o "quem ganhou" só existe depois da final — e em 2026 a final mudou o que as prévias sugeriam. Detalhes do formato e da regra de peso: <a href="/blog/ramon-dino-peso-altura">limite de peso da Classic Physique</a>.</p>
 
 <h2>As outras categorias</h2>
-<p>Na mesma noite foram decididas Wellness (<a href="/blog/resultado-wellness-mr-olympia-2026">resultado da Wellness 2026</a>), 212 (<a href="/blog/resultado-212-mr-olympia-2026">resultado da 212</a>), Figure, Women's Physique e Ms. Olympia. O Open, título máximo do evento, é decidido no sábado, 26/09, a partir das 23h de Brasília (<a href="/blog/resultado-mr-olympia-open-2026">resultado do Mr. Olympia Open 2026</a>). Todos os campeões ficam reunidos em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+<p>Na mesma noite foram decididas Wellness (<a href="/blog/resultado-wellness-mr-olympia-2026">resultado da Wellness 2026</a>), 212 (<a href="/blog/resultado-212-mr-olympia-2026">resultado da 212</a>), Figure, Women's Physique e Ms. Olympia. O Open, título máximo do evento, foi decidido no sábado, 26/09, e ficou com Nick Walker (<a href="/blog/resultado-mr-olympia-open-2026">resultado do Mr. Olympia Open 2026</a>). Todos os campeões ficam reunidos em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
 ${ACOMPANHE("resultado-classic-physique-mr-olympia-2026")}
 
@@ -173,22 +173,24 @@ ${FONTES}`,
     title: "Que horas Ramon Dino compete no Mr. Olympia 2026? Veja o horário",
     metaTitle: "Que Horas Ramon Dino Compete no Olympia 2026? Horário",
     metaDescription:
-      "Ramon Dino compete nesta sexta, 25/09: prévias às 13h30 e final a partir das 22h (Brasília). Veja onde assistir de graça e como funciona a decisão.",
+      "Ramon Dino competiu na sexta, 25/09, com prévias às 13h30 e final às 22h (Brasília), e terminou em 3º na Classic Physique do Mr. Olympia 2026.",
     excerpt:
-      "Ramon Dino compete nesta sexta-feira, 25 de setembro: prévias às 13h30 e final a partir das 22h, no horário de Brasília. Onde assistir e o que acontece em cada etapa.",
+      "Ramon Dino competiu na sexta-feira, 25 de setembro: prévias às 13h30 e final a partir das 22h (Brasília). Ele terminou em 3º; o título ficou com Niall Darwen.",
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
+    updatedAt: "2026-09-27",
     readTime: "3 min",
     author: AUTOR,
     tags: ["Ramon Dino", "Mr. Olympia 2026", "horário", "onde assistir", "Classic Physique"],
-    content: `<p><strong>Ramon Dino compete nesta sexta-feira, 25 de setembro de 2026</strong>, na Classic Physique do Mr. Olympia, em Las Vegas. No horário de Brasília:</p>
-${CAPA("ramon-dino-mr-olympia-2026-horario", "Capa: que horas Ramon Dino compete no Mr. Olympia 2026 — sexta, 25 de setembro: prévias às 13h30 e final a partir das 22h, horário de Brasília")}
+    content: `<blockquote><p><strong>A Classic Physique já foi decidida: Niall Darwen (Reino Unido) é o campeão e Ramon Dino ficou em 3º.</strong> Veja a <a href="/blog/resultado-classic-physique-mr-olympia-2026">classificação completa</a>. Última verificação: 27 de setembro de 2026.</p></blockquote>
+<p><strong>Ramon Dino competiu na sexta-feira, 25 de setembro de 2026</strong>, na Classic Physique do Mr. Olympia, em Las Vegas. Os horários, em Brasília, foram:</p>
+${CAPA("ramon-dino-mr-olympia-2026-horario", "Capa: que horas Ramon Dino competiu no Mr. Olympia 2026 — sexta, 25 de setembro: prévias às 13h30 e final a partir das 22h, horário de Brasília")}
 <table><thead><tr><th>Etapa</th><th>Brasília</th><th>Las Vegas</th><th>Local</th></tr></thead><tbody>
 <tr><td>Prévias (prejudging) da Classic Physique</td><td><strong>a partir das 13h30</strong></td><td>9h30</td><td>Las Vegas Convention Center (South Hall)</td></tr>
 <tr><td>Final da Classic Physique</td><td><strong>a partir das 22h</strong></td><td>18h</td><td>Orleans Arena</td></tr>
 </tbody></table>
-<p>Os horários são de início da sessão. A Classic Physique divide a sessão com outras categorias (212, Figure, Women's Physique, Ms. Olympia e Wellness), então o momento exato em que Ramon sobe ao palco depende da ordem do dia. A final da Classic costuma ficar entre as últimas da noite. O resultado entra em <a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic Physique do Mr. Olympia 2026</a>.</p>
+<p>Os horários eram de início da sessão. A Classic Physique dividiu a sessão com outras categorias (212, Figure, Women's Physique, Ms. Olympia e Wellness), então o momento exato em que Ramon sobe ao palco depende da ordem do dia. A final da Classic costuma ficar entre as últimas da noite. O resultado entra em <a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic Physique do Mr. Olympia 2026</a>.</p>
 
 <h2>Onde assistir Ramon Dino</h2>
 <ul>
@@ -200,16 +202,16 @@ ${CAPA("ramon-dino-mr-olympia-2026-horario", "Capa: que horas Ramon Dino compete
 <p>Na <strong>prévia</strong>, à tarde, os juízes fazem as comparações nas poses obrigatórias e o primeiro chamado (os atletas comparados juntos primeiro) indica quem disputa o título. Na <strong>final</strong>, à noite, vêm as rotinas de posing, novas comparações e o anúncio das colocações. Ou seja: às 13h30 dá para ver a briga; o campeão só sai depois das 22h.</p>
 
 <h2>Por que a Classic mudou para sexta</h2>
-<p>Em 2025 a categoria foi decidida no sábado. Em 2026 a organização moveu a Classic Physique para a sexta-feira, junto com a Wellness. O sábado fica com Men's Physique, Bikini, Fitness e a final do Mr. Olympia Open, a partir das 23h de Brasília.</p>
+<p>Em 2025 a categoria foi decidida no sábado. Em 2026 a organização moveu a Classic Physique para a sexta-feira, junto com a Wellness. O sábado ficou com Men's Physique, Bikini, Fitness e a final do Mr. Olympia Open, vencida por Nick Walker.</p>
 
 <h2>Depois da final</h2>
-<p>A classificação completa e a colocação de Ramon entram em <a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic Physique do Mr. Olympia 2026</a> assim que forem anunciadas. A programação do fim de semana inteiro, com as outras categorias, está em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+<p>A classificação completa, com Ramon em 3º, está em <a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic Physique do Mr. Olympia 2026</a>. A programação do fim de semana inteiro, com as outras categorias, está em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
 ${ACOMPANHE("ramon-dino-mr-olympia-2026-horario")}
 
 ${FONTES}`,
     faq: [
-      { question: "Que horas Ramon Dino compete hoje?", answer: "Nesta sexta-feira, 25 de setembro, as prévias da Classic Physique começam às 13h30 e a final a partir das 22h, no horário de Brasília (9h30 e 18h em Las Vegas). A hora exata em que ele sobe ao palco depende da ordem das categorias na sessão." },
+      { question: "Que horas Ramon Dino competiu no Olympia 2026?", answer: "Na sexta-feira, 25 de setembro, as prévias da Classic Physique começaram às 13h30 e a final a partir das 22h, no horário de Brasília (9h30 e 18h em Las Vegas). A hora exata em que ele sobe ao palco depende da ordem das categorias na sessão." },
       { question: "Em qual categoria Ramon Dino compete?", answer: "Classic Physique, categoria com limite de peso por altura. Ramon foi campeão em 2025 e, em 2026, terminou em 3º, atrás de Niall Darwen e Mike Sommerfeld." },
       { question: "Onde assistir Ramon Dino no Mr. Olympia 2026?", answer: "Na OlympiaTV, transmissão oficial gratuita com cadastro no site do evento, e em coberturas em português como a do canal de Renato Cariani no YouTube." },
       { question: "O horário de Las Vegas é diferente do de Brasília?", answer: "Sim: Las Vegas está 4 horas atrás de Brasília em setembro. As prévias de 9h30 em Las Vegas são 13h30 em Brasília, e a final de 18h é 22h." },
@@ -234,7 +236,7 @@ ${FONTES}`,
     tags: ["Mr. Olympia 2026", "campeões", "resultados", "fisiculturismo", "Las Vegas"],
     content: `<blockquote><p><strong>Resultado definido: Nick Walker é o Mr. Olympia 2026.</strong> Última verificação: 27 de setembro de 2026, 3h30 (Brasília).</p></blockquote>
 <p><strong>Nick Walker (EUA) é o campeão do Mr. Olympia 2026.</strong> Ele venceu o Open na noite de sábado, 26 de setembro, em Las Vegas, à frente de Samson Dauda e do atual campeão, Derek Lunsford, que ficou em 3º. É o primeiro Sandow da carreira de Walker, que tinha sido 6º em 2025.</p>
-<p>Os outros campeões do fim de semana: <strong>Niall Darwen</strong> (Classic Physique), <strong>Eduarda Bezerra</strong> (Wellness, bicampeã), <strong>Keone Pearson</strong> (212), <strong>Ryan Terry</strong> (Men's Physique, quarto título seguido), <strong>Jasmine Gonzalez</strong> (Bikini), <strong>Michelle Fredua-Mensah</strong> (Fitness), <strong>Natalia Abraham Coelho</strong> (Women's Physique), <strong>Andrea Shaw</strong> (Ms. Olympia) e <strong>Lola Montez</strong> (Figure). A tabela abaixo reúne todos.</p>
+<p>Os outros campeões do fim de semana: <strong>Niall Darwen</strong> (Classic Physique), <strong>Eduarda Bezerra</strong> (Wellness, bicampeã), <strong>Keone Pearson</strong> (212), <strong>Ryan Terry</strong> (Men's Physique, quarto título seguido), <strong>Jasmine Gonzalez</strong> (Bikini), <strong>Michelle Fredua-Mensah</strong> (Fitness), <strong>Natalia Abraham Coelho</strong> (Women's Physique), <strong>Andrea Shaw</strong> (Ms. Olympia), <strong>Lola Montez</strong> (Figure) e <strong>Shealynn Burnett</strong> (Fit Model, na estreia da categoria, com a brasileira Gabriela Queiroz em 2º). A tabela abaixo reúne todos.</p>
 ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: Nick Walker é o Mr. Olympia 2026 — todos os campeões, categoria por categoria: Open, Classic Physique, Wellness, 212, Men's Physique, Bikini e mais")}
 
 <h2>Campeões do Mr. Olympia 2026</h2>
@@ -248,10 +250,10 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: Nick Walker é o Mr. Olympia 2026 �
 <tr><td>Fitness</td><td>Sáb 26/09, 23h</td><td><strong>Michelle Fredua-Mensah (GBR)</strong></td><td>Michelle Fredua-Mensah (GBR)</td><td>Nesta página</td></tr>
 <tr><td>Men's Physique</td><td>Sáb 26/09, 23h</td><td><strong>Ryan Terry (GBR)</strong></td><td>Ryan Terry (GBR)</td><td><a href="/blog/resultado-mens-physique-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Bikini</td><td>Sáb 26/09, 23h</td><td><strong>Jasmine Gonzalez</strong></td><td>Maureen Blanquisco (PHI)</td><td><a href="/blog/resultado-bikini-olympia-2026">Ver resultado</a></td></tr>
-<tr><td>Fit Model (estreia)</td><td>Sáb 26/09, 13h30*</td><td>A definir</td><td>—</td><td><a href="/blog/resultado-fit-model-olympia-2026">Ver resultado</a></td></tr>
+<tr><td>Fit Model (estreia)</td><td>Sáb 26/09, 13h30*</td><td><strong>Shealynn Burnett</strong></td><td>—</td><td><a href="/blog/resultado-fit-model-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Mr. Olympia (Open)</td><td>Sáb 26/09, 23h</td><td><strong>Nick Walker (EUA)</strong></td><td>Derek Lunsford (EUA)</td><td><a href="/blog/resultado-mr-olympia-open-2026">Ver resultado</a></td></tr>
 </tbody></table>
-<p><em>Wheelchair também é decidida no sábado e entra aqui com o resultado oficial. Horários são o início de cada sessão de finais. *A Fit Model tem prévias e final na sessão da manhã de sábado.</em></p>
+<p><em>O resultado da Wheelchair entra aqui quando confirmado por duas fontes. Horários são o início de cada sessão de finais. *A Fit Model teve prévias e final na sessão da manhã de sábado.</em></p>
 
 <h2>Status das categorias agora</h2>
 <p>Cada linha leva à página da categoria. O status muda sozinho quando um bloco começa; "resultado definido" só aparece com o anúncio oficial.</p>
@@ -287,7 +289,7 @@ ${CTA_MONTINHO}
 ${FONTES}`,
     faq: [
       { question: "Quem ganhou o Mr. Olympia 2026?", answer: "Nick Walker, dos Estados Unidos, venceu o Open na noite de sábado, 26 de setembro, em Las Vegas. Samson Dauda ficou em 2º e Derek Lunsford, o campeão de 2025, em 3º." },
-      { question: "Quem são os campeões de todas as categorias?", answer: "Open: Nick Walker. Classic Physique: Niall Darwen. Wellness: Eduarda Bezerra. 212: Keone Pearson. Men's Physique: Ryan Terry. Bikini: Jasmine Gonzalez. Fitness: Michelle Fredua-Mensah. Women's Physique: Natalia Abraham Coelho. Ms. Olympia: Andrea Shaw. Figure: Lola Montez." },
+      { question: "Quem são os campeões de todas as categorias?", answer: "Open: Nick Walker. Classic Physique: Niall Darwen. Wellness: Eduarda Bezerra. 212: Keone Pearson. Men's Physique: Ryan Terry. Bikini: Jasmine Gonzalez. Fitness: Michelle Fredua-Mensah. Women's Physique: Natalia Abraham Coelho. Ms. Olympia: Andrea Shaw. Figure: Lola Montez. Fit Model: Shealynn Burnett." },
       { question: "Quando foram as finais do Mr. Olympia 2026?", answer: "Sexta-feira, 25/09, a partir das 22h (Classic Physique, Wellness, 212, Figure, Women's Physique e Ms. Olympia) e sábado, 26/09, a partir das 23h (Open, Men's Physique, Bikini e Fitness), no horário de Brasília." },
       { question: "Quantos brasileiros competem no Mr. Olympia 2026?", answer: "58, entre 322 atletas de 12 categorias. Os mais conhecidos são Ramon Dino, na Classic Physique, e Eduarda Bezerra, Isa Pereira Nunes e Rayane Fogal, na Wellness." },
       { question: "Onde ver os resultados do Mr. Olympia 2026?", answer: "Nesta página, atualizada categoria por categoria com base nos anúncios oficiais do Olympia e da IFBB Pro League, e nos artigos específicos de Classic Physique, Wellness e Open." },
@@ -312,7 +314,7 @@ ${FONTES}`,
     tags: ["Wellness", "Mr. Olympia 2026", "Eduarda Bezerra", "Isa Pereira Nunes", "resultado"],
     content: `<blockquote><p><strong>Resultado definido: Eduarda Bezerra é bicampeã da Wellness.</strong> Isa Pereira Nunes ficou em 2º. Última verificação: 26 de setembro de 2026, 10h (Brasília).</p></blockquote>
 <p><strong>Eduarda Bezerra</strong> venceu a Wellness do Mr. Olympia 2026 na noite de <strong>sexta-feira, 25 de setembro</strong>, em Las Vegas, e conquistou o segundo título seguido. <strong>Isa Pereira Nunes</strong>, campeã de 2024, ficou em 2º, numa dobradinha brasileira, e <strong>Elisa Alcantara</strong> (República Dominicana) completou o pódio — o mesmo top 3 de 2025. Com isso, o Brasil venceu as seis edições da categoria desde a estreia, em 2021.</p>
-${CAPA("resultado-wellness-mr-olympia-2026", "Capa: Wellness do Mr. Olympia 2026 — o Brasil venceu todas as cinco edições e 19 das 40 atletas são brasileiras; resultado, campeã e top 5")}
+${CAPA("resultado-wellness-mr-olympia-2026", "Capa: Eduarda Bezerra bicampeã da Wellness no Mr. Olympia 2026, com Isa Pereira Nunes em 2º; o Brasil venceu as seis edições")}
 
 <h2>Classificação da Wellness 2026</h2>
 <table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Eduarda Bezerra</strong></td><td>Brasil</td></tr><tr><td>2º</td><td>Isa Pereira Nunes</td><td>Brasil</td></tr><tr><td>3º</td><td>Elisa Alcantara</td><td>República Dominicana</td></tr><tr><td>4º</td><td>A confirmar</td><td>—</td></tr><tr><td>5º</td><td>A confirmar</td><td>—</td></tr></tbody></table>
@@ -376,8 +378,8 @@ ${FONTES}`,
 ${CAPA("resultado-mr-olympia-open-2026", "Capa: Nick Walker é o Mr. Olympia 2026 — resultado oficial do Open, com Samson Dauda em 2º e Derek Lunsford em 3º")}
 
 <h2>Classificação do Mr. Olympia Open 2026</h2>
-<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Nick Walker</strong></td><td>EUA</td></tr><tr><td>2º</td><td>Samson Dauda</td><td>Nigéria/Reino Unido</td></tr><tr><td>3º</td><td>Derek Lunsford</td><td>EUA</td></tr><tr><td>4º</td><td>A definir</td><td>—</td></tr><tr><td>5º</td><td>A definir</td><td>—</td></tr><tr><td>6º</td><td>A definir</td><td>—</td></tr><tr><td>7º</td><td>A definir</td><td>—</td></tr><tr><td>8º</td><td>A definir</td><td>—</td></tr><tr><td>9º</td><td>A definir</td><td>—</td></tr><tr><td>10º</td><td>A definir</td><td>—</td></tr></tbody></table>
-<p><em>O pódio foi confirmado por duas fontes independentes. Do 4º ao 10º lugar, as posições entram quando também estiverem confirmadas, incluindo a de Leandro Peres, único brasileiro no Open.</em></p>
+<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Nick Walker</strong></td><td>EUA</td></tr><tr><td>2º</td><td>Samson Dauda</td><td>Nigéria/Reino Unido</td></tr><tr><td>3º</td><td>Derek Lunsford</td><td>EUA</td></tr><tr><td>4º</td><td>Andrew Jacked</td><td>Nigéria</td></tr><tr><td>5º</td><td>Tonio Burton</td><td>EUA</td></tr><tr><td>6º</td><td>A definir</td><td>—</td></tr><tr><td>7º</td><td>A definir</td><td>—</td></tr><tr><td>8º</td><td>A definir</td><td>—</td></tr><tr><td>9º</td><td>A definir</td><td>—</td></tr><tr><td>10º</td><td>A definir</td><td>—</td></tr></tbody></table>
+<p><em>Do 1º ao 5º lugar, confirmado por duas fontes independentes. Do 6º ao 10º, as posições entram quando também estiverem confirmadas, assim como a de Leandro Peres, único brasileiro no Open.</em></p>
 
 <h2>Quem eram os favoritos</h2>
 <ul>
@@ -408,7 +410,7 @@ ${CTA_MONTINHO}
 ${FONTES}`,
     faq: [
       { question: "Quem ganhou o Open do Mr. Olympia 2026?", answer: "Nick Walker, dos Estados Unidos, na final de sábado, 26 de setembro, em Las Vegas. É o primeiro título dele no Mr. Olympia." },
-      { question: "Quem ficou no pódio do Mr. Olympia 2026?", answer: "Nick Walker (1º), Samson Dauda (2º) e Derek Lunsford (3º). As demais posições do top 10 entram nesta página quando confirmadas." },
+      { question: "Quem ficou no top 5 do Mr. Olympia 2026?", answer: "Nick Walker (1º), Samson Dauda (2º), Derek Lunsford (3º), Andrew Jacked (4º) e Tonio Burton (5º)." },
       { question: "Derek Lunsford perdeu o título?", answer: "Sim. Campeão em 2023 e 2025, Lunsford terminou em 3º em 2026." },
       { question: "Hadi Choopan competiu no Olympia 2026?", answer: "Não. Vice em 2023, 2024 e 2025, ele anunciou a desistência em 26 de agosto de 2026 por problemas de visto." },
     ],
@@ -548,7 +550,7 @@ ${CAPA("resultado-212-mr-olympia-2026", "Capa: Keone Pearson é tetracampeão da
 <!--SHAPE:212-->
 
 <h2>As outras categorias</h2>
-<p>Na mesma noite saem os resultados da <a href="/blog/resultado-classic-physique-mr-olympia-2026">Classic Physique, com Ramon Dino</a>, e da <a href="/blog/resultado-wellness-mr-olympia-2026">Wellness</a>. O Open é decidido no sábado (<a href="/blog/resultado-mr-olympia-open-2026">resultado do Open</a>), e todos os campeões ficam em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+<p>Na mesma noite saíram os resultados da <a href="/blog/resultado-classic-physique-mr-olympia-2026">Classic Physique, com Ramon Dino em 3º</a>, e da <a href="/blog/resultado-wellness-mr-olympia-2026">Wellness</a>. O Open foi decidido no sábado (<a href="/blog/resultado-mr-olympia-open-2026">Nick Walker campeão</a>), e todos os campeões estão em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
 ${ACOMPANHE("resultado-212-mr-olympia-2026")}
 
@@ -637,19 +639,20 @@ ${FONTES}`,
     title: "Brasileiros no Mr. Olympia 2026: atletas, horários e resultados",
     metaTitle: "Brasileiros no Mr. Olympia 2026: Atletas e Resultados",
     metaDescription:
-      "Todos os brasileiros no Mr. Olympia 2026 por categoria e dia, com horário de Brasília e resultado de cada um, atualizado durante as finais de 25 e 26/09.",
+      "Como terminaram os brasileiros no Mr. Olympia 2026: Eduarda Bezerra bicampeã, Lucas Garcia, Zama Benta, Isa Nunes e Gabriela Queiroz vices, Ramon Dino 3º.",
     excerpt:
-      "Painel dos brasileiros no Mr. Olympia 2026: quem compete na sexta e no sábado, em que categoria, por qual país no roster e como terminou cada um.",
+      "Painel dos brasileiros no Mr. Olympia 2026: quem competiu, em que categoria, por qual país no roster e como terminou cada um.",
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
+    updatedAt: "2026-09-27",
     readTime: "5 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "brasileiros", "Ramon Dino", "resultados", "fisiculturismo"],
-    content: `${AVISO_ONDA2("Nenhum brasileiro competiu ainda no Mr. Olympia 2026.")}
-<p><strong>Os brasileiros começam a competir nesta sexta-feira, 25 de setembro</strong>, com as prévias a partir das 13h30 (Brasília): Ramon Dino na Classic Physique, Lucas Garcia na 212, Natália Coelho na Women's Physique e mais de vinte brasileiras na Wellness. No <strong>sábado, 26</strong>, é a vez de Men's Physique, Bikini e do Open, com Leandro Peres. Os resultados de cada um entram aqui assim que forem oficiais.</p>
-<h2>Acompanhe os brasileiros no Mr. Olympia 2026</h2>
-<p>Prévias às 13h30 e finais a partir das 22h na sexta (25) e das 23h no sábado (26), horário de Brasília. "Agora" indica o bloco que já começou; uma categoria só aparece como finalizada com resultado oficial.</p>
+    content: `<blockquote><p><strong>O Mr. Olympia 2026 terminou.</strong> Os resultados abaixo são os oficiais confirmados por duas fontes; as posições ainda sem confirmação estão marcadas. Última verificação: 27 de setembro de 2026, 11h (Brasília).</p></blockquote>
+<p><strong>O Brasil saiu do Mr. Olympia 2026 com um título e quatro vice-campeonatos.</strong> <strong>Eduarda Bezerra</strong> foi bicampeã da Wellness, com <strong>Isa Pereira Nunes</strong> em 2º. <strong>Lucas Garcia</strong> foi vice na 212, <strong>Zama Benta</strong> na Women's Physique e <strong>Gabriela Queiroz</strong> (pelos EUA) na estreia da Fit Model. <strong>Ramon Dino</strong> perdeu o título da Classic Physique e ficou em 3º, mesma posição de <strong>Leyvina Barros</strong> na Ms. Olympia. Natália Coelho, brasileira que compete pelos EUA, foi tricampeã da Women's Physique.</p>
+<h2>Os brasileiros no Mr. Olympia 2026</h2>
+<p>As provas foram na sexta (25) e no sábado (26), com prévias às 13h30 e finais a partir das 22h e das 23h, horário de Brasília. Uma categoria só aparece como finalizada com resultado oficial.</p>
 <!--OLYMPIA_CONTAGEM:brasil-->
 ${CAPA("brasileiros-mr-olympia-2026", "Capa: brasileiros no Mr. Olympia 2026 — painel com atletas, categorias, horários de Brasília e resultados de sexta e sábado")}
 
@@ -661,40 +664,40 @@ ${CAPA("brasileiros-mr-olympia-2026", "Capa: brasileiros no Mr. Olympia 2026 —
 ${TABELA_BRASIL}
 <p><em>A coluna "Resultado" só é preenchida com a classificação oficial. Wellness: estão aqui as brasileiras de destaque; a lista completa da categoria fica em <a href="/blog/resultado-wellness-mr-olympia-2026">resultado da Wellness 2026</a>.</em></p>
 
-<h2>Quantos brasileiros competem?</h2>
+<h2>Quantos brasileiros competiram?</h2>
 <p>Depende de quem conta. As listas publicadas variam, e por isso não usamos um número fechado: a CNN Brasil falou em 58 classificados, o NSC Total em 57, e a Folha chegou a contar 60 no início de setembro. A diferença vem do critério: há quem conte todos os classificados, quem conte só os confirmados e quem inclua brasileiros que competem por outra bandeira.</p>
 <p><strong>O nosso critério:</strong> entra no painel quem está no roster atual da IFBB Pro League e não foi reportado fora do evento. Brasileiros que aparecem por outro país, como Natália Coelho (EUA) e Mauro Fialho (Espanha), entram com a representação oficial indicada. Classificados que não viajaram ficam na lista abaixo.</p>
 
 <h2>Brasileiros que ficaram fora</h2>
-<p>Pelo menos sete brasileiros classificados não competem, segundo CNN Brasil e O Povo, a maioria por visto americano negado:</p>
+<p>Pelo menos sete brasileiros classificados não competiram, segundo CNN Brasil e O Povo, a maioria por visto americano negado:</p>
 <ul>${FORA_DO_EVENTO.map((f) => `<li><strong>${f.nome}</strong> (${f.categoria}) — ${f.motivo}</li>`).join("")}</ul>
 
-<h2>Brasileiros que competem na sexta-feira</h2>
-<p>Prévias a partir das <strong>13h30</strong> e finais a partir das <strong>22h</strong> (Brasília). São horários de início de bloco: a hora exata de cada categoria depende do andamento do evento.</p>
+<h2>Os brasileiros de sexta-feira</h2>
+<p>Prévias a partir das 13h30 e finais a partir das 22h (Brasília).</p>
 <h3>Classic Physique</h3>
 <p>Ramon Dino, campeão de 2025, ficou em 3º; o título foi para Niall Darwen (Reino Unido). Também competiram César Falcão, Fábio Júnio, Gabriel Zancanelli e Matheus Menegate. <a href="/blog/resultado-classic-physique-mr-olympia-2026">Resultado da Classic Physique e a colocação de Ramon</a>.</p>
 <h3>212</h3>
-<p>Lucas Garcia, terceiro em 2025, com Vitor Porto, Felipe Moraes e Andrey Pereira. <a href="/blog/resultado-212-mr-olympia-2026">Como ficou Lucas Garcia na 212</a>.</p>
+<p>Lucas Garcia foi vice, atrás de Keone Pearson, e Vitor Porto ficou em 4º. Também competiram Felipe Moraes e Andrey Pereira. <a href="/blog/resultado-212-mr-olympia-2026">Como ficou Lucas Garcia na 212</a>.</p>
 <h3>Wellness</h3>
 <p>A categoria em que o Brasil venceu todas as edições tem a maior delegação brasileira. Eduarda Bezerra é bicampeã e Isa Pereira Nunes ficou em 2º: dobradinha brasileira. <a href="/blog/resultado-wellness-mr-olympia-2026">Resultado da Wellness e a lista das brasileiras</a>.</p>
 <h3>Women's Physique</h3>
-<p>Natália Coelho, atual campeã, aparece no roster pelos EUA. Zama Benta, terceira em 2025, lidera as que competem pelo Brasil. <a href="/blog/resultado-womens-physique-olympia-2026">Posição de Natália Coelho e das brasileiras</a>.</p>
+<p>Natália Coelho, brasileira que compete pelos EUA, foi tricampeã, e Zama Benta, pelo Brasil, ficou em 2º. <a href="/blog/resultado-womens-physique-olympia-2026">Posição de Natália Coelho e das brasileiras</a>.</p>
 <h3>Ms. Olympia (Women's Bodybuilding)</h3>
-<p>Leyvina Barros, top 3 em 2025, e Barbara Moojen. Sem página própria: o resultado entra neste painel e em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+<p>Leyvina Barros ficou em 3º; Andrea Shaw venceu. Barbara Moojen também competiu. Sem página própria: o resultado está neste painel e em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
-<h2>Brasileiros que competem no sábado</h2>
-<p>Prévias a partir das <strong>13h30</strong> e finais a partir das <strong>23h</strong> (Brasília).</p>
+<h2>Os brasileiros de sábado</h2>
+<p>Prévias a partir das 13h30 e finais a partir das 23h (Brasília).</p>
 <h3>Open</h3>
-<p>Leandro Peres é o único brasileiro na categoria principal. <a href="/blog/resultado-mr-olympia-open-2026">Resultado do Open e o campeão</a>.</p>
+<p>Leandro Peres foi o único brasileiro na categoria principal, vencida por Nick Walker; a colocação dele entra quando confirmada. <a href="/blog/resultado-mr-olympia-open-2026">Resultado do Open e o campeão</a>.</p>
 <h3>Men's Physique</h3>
-<p>Nove brasileiros no roster pelo Brasil, entre eles Edvan Palmeira e Vitor Chaves, além de Mauro Fialho, listado pela Espanha. <a href="/blog/resultado-mens-physique-olympia-2026">Posição de Edvan Palmeira e dos brasileiros</a>.</p>
+<p>Ryan Terry foi tetracampeão. Nove brasileiros estavam no roster pelo Brasil, entre eles Edvan Palmeira e Vitor Chaves, além de Mauro Fialho, listado pela Espanha; as colocações entram quando confirmadas. <a href="/blog/resultado-mens-physique-olympia-2026">Posição de Edvan Palmeira e dos brasileiros</a>.</p>
 <h3>Bikini</h3>
-<p>Elisa Pecini (Isa Pecini), campeã em 2019, com Nivea Campos e Bruna Toigo. <a href="/blog/resultado-bikini-olympia-2026">Como ficou Isa Pecini na Bikini</a>.</p>
+<p>Jasmine Gonzalez venceu. Elisa Pecini (Isa Pecini), campeã em 2019, Nivea Campos e Bruna Toigo competiram; as colocações entram quando confirmadas. <a href="/blog/resultado-bikini-olympia-2026">Como ficou Isa Pecini na Bikini</a>.</p>
 <h3>Fit Model</h3>
-<p>Gabriela Queiroz, brasileira, aparece no roster pelos EUA, na estreia da categoria no Olympia. Prévias e final na sessão das 13h30. <a href="/blog/resultado-fit-model-olympia-2026">Em que posição Gabriela Queiroz ficou</a>.</p>
+<p>Gabriela Queiroz, brasileira que compete pelos EUA, foi vice na estreia da categoria, atrás de Shealynn Burnett. <a href="/blog/resultado-fit-model-olympia-2026">Em que posição Gabriela Queiroz ficou</a>.</p>
 
-<h2>Onde assistir</h2>
-<p>Pela OlympiaTV, transmissão oficial, gratuita com cadastro no site do evento. Horários e detalhes em <a href="/blog/ramon-dino-mr-olympia-2026-horario">que horas Ramon Dino compete</a>.</p>
+<h2>Horários</h2>
+<p>Os horários da Classic, com Ramon Dino, estão em <a href="/blog/ramon-dino-mr-olympia-2026-horario">que horas Ramon Dino competiu</a>.</p>
 
 ${ACOMPANHE("brasileiros-mr-olympia-2026")}
 
@@ -726,7 +729,7 @@ ${FONTES}`,
     content: `<blockquote><p><strong>Resultado definido: Ryan Terry é tetracampeão da Men's Physique.</strong> As demais colocações, incluindo a de Edvan Palmeira, entram quando confirmadas por duas fontes. Última verificação: 27 de setembro de 2026, 3h30 (Brasília).</p></blockquote>
 <p><strong>Ryan Terry (Reino Unido) venceu a Men's Physique do Olympia 2026</strong> na noite de sábado, 26 de setembro, em Las Vegas. É o quarto título seguido dele, o que iguala o recorde de Jeremy Buendia na categoria. <strong>Edvan Palmeira</strong>, quinto em 2025, era o brasileiro mais bem colocado no ano passado.</p>
 <!--OLYMPIA_CONTAGEM:mens-physique-->
-${CAPA("resultado-mens-physique-olympia-2026", "Capa: resultado da Men's Physique do Olympia 2026 — Ryan Terry tetracampeão; colocação de Edvan Palmeira e dos brasileiros")}
+${CAPA("resultado-mens-physique-olympia-2026", "Capa: Ryan Terry tetracampeão da Men's Physique no Olympia 2026; colocação de Edvan Palmeira e dos brasileiros")}
 
 <h2 id="resultado">Resultado Men's Physique Olympia 2026</h2>
 <table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Ryan Terry</strong></td><td>Reino Unido</td></tr><tr><td>2º</td><td>A definir</td><td>—</td></tr><tr><td>3º</td><td>A definir</td><td>—</td></tr><tr><td>4º</td><td>A definir</td><td>—</td></tr><tr><td>5º</td><td>A definir</td><td>—</td></tr><tr><td>6º</td><td>A definir</td><td>—</td></tr><tr><td>7º</td><td>A definir</td><td>—</td></tr><tr><td>8º</td><td>A definir</td><td>—</td></tr><tr><td>9º</td><td>A definir</td><td>—</td></tr><tr><td>10º</td><td>A definir</td><td>—</td></tr></tbody></table>
@@ -796,7 +799,7 @@ ${FONTES}`,
     content: `<blockquote><p><strong>Resultado definido: Jasmine Gonzalez é a campeã da Bikini Olympia 2026.</strong> As demais colocações, incluindo as das três brasileiras, entram quando confirmadas por duas fontes. Última verificação: 27 de setembro de 2026, 3h30 (Brasília).</p></blockquote>
 <p><strong>Jasmine Gonzalez (EUA) venceu a Bikini Olympia 2026</strong> na noite de sábado, 26 de setembro, em Las Vegas, e conquistou o primeiro título dela. A campeã de 2025, Maureen Blanquisco (Filipinas), perdeu a coroa. O Brasil teve três atletas: <strong>Elisa Pecini</strong>, a Isa Pecini, campeã em 2019, <strong>Nivea Campos</strong> e <strong>Bruna Toigo</strong>.</p>
 <!--OLYMPIA_CONTAGEM:bikini-->
-${CAPA("resultado-bikini-olympia-2026", "Capa: resultado da Bikini Olympia 2026 — Jasmine Gonzalez campeã; colocação de Elisa Pecini e das brasileiras")}
+${CAPA("resultado-bikini-olympia-2026", "Capa: Jasmine Gonzalez campeã da Bikini Olympia 2026; colocação de Elisa Pecini e das brasileiras")}
 
 <h2 id="resultado">Resultado Bikini Olympia 2026</h2>
 <table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Jasmine Gonzalez</strong></td><td>EUA</td></tr><tr><td>2º</td><td>A definir</td><td>—</td></tr><tr><td>3º</td><td>A definir</td><td>—</td></tr><tr><td>4º</td><td>A definir</td><td>—</td></tr><tr><td>5º</td><td>A definir</td><td>—</td></tr><tr><td>6º</td><td>A definir</td><td>—</td></tr><tr><td>7º</td><td>A definir</td><td>—</td></tr><tr><td>8º</td><td>A definir</td><td>—</td></tr><tr><td>9º</td><td>A definir</td><td>—</td></tr><tr><td>10º</td><td>A definir</td><td>—</td></tr></tbody></table>
@@ -843,49 +846,41 @@ ${FONTES}`,
   /* ───────────────── 12. RESULTADO FIT MODEL ───────────────── */
   {
     slug: "resultado-fit-model-olympia-2026",
-    title: "Resultado Fit Model Olympia 2026: campeã, Top 10 e Gabriela Queiroz",
-    metaTitle: "Resultado Fit Model Olympia 2026: Gabriela Queiroz e Top 10",
+    title: "Resultado Fit Model Olympia 2026: Shealynn Burnett campeã, Gabriela Queiroz 2ª",
+    metaTitle: "Fit Model Olympia 2026: Burnett Campeã, Gabriela Queiroz 2ª",
     metaDescription:
-      "Quem ganhou a Fit Model Olympia 2026, a estreia da categoria, e como ficou a brasileira Gabriela Queiroz. Prévias e final no sábado, 26/09, desde 13h30.",
+      "Shealynn Burnett é a primeira campeã da Fit Model Olympia. A brasileira Gabriela Queiroz ficou em 2º lugar na estreia da categoria, em 2026.",
     excerpt:
-      "A Fit Model estreia no Olympia neste sábado, 26 de setembro, com prévias e final na mesma sessão. Campeã, top 10 e a posição de Gabriela Queiroz entram aqui.",
+      "Shealynn Burnett venceu a primeira Fit Model da história do Olympia. A brasileira Gabriela Queiroz foi vice, e Jane Jones ficou em 3º.",
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
+    updatedAt: "2026-09-27",
     readTime: "4 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "Fit Model", "Gabriela Queiroz", "resultado", "fisiculturismo"],
-    content: `${AVISO_ONDA2("O resultado da Fit Model Olympia 2026 ainda não foi definido.")}
-<p><strong>⏳ Aguardando competição.</strong> A Fit Model Olympia 2026 acontece <strong>neste sábado, 26 de setembro</strong>, e é a estreia da categoria no Olympia. As prévias e a final estão programadas para a mesma sessão, iniciada às <strong>13h30 de Brasília</strong> (9h30 em Las Vegas). A brasileira <strong>Gabriela Queiroz</strong> está entre as classificadas. O resultado entra nesta página assim que for confirmado.</p>
+    content: `<blockquote><p><strong>Resultado definido: Shealynn Burnett é a primeira campeã da Fit Model Olympia; Gabriela Queiroz ficou em 2º.</strong> Última verificação: 27 de setembro de 2026, 11h (Brasília).</p></blockquote>
+<p><strong>Shealynn Burnett venceu a Fit Model Olympia 2026</strong> no sábado, 26 de setembro, em Las Vegas, e se tornou a primeira campeã da história da categoria no Olympia. A brasileira <strong>Gabriela Queiroz</strong>, que compete representando os Estados Unidos, ficou em <strong>2º lugar</strong>, e <strong>Jane Jones</strong> completou o pódio.</p>
 <!--OLYMPIA_CONTAGEM:fit-model-->
-${CAPA("resultado-fit-model-olympia-2026", "Capa: resultado da Fit Model Olympia 2026 — estreia da categoria no Olympia, com a brasileira Gabriela Queiroz; prévias e final no sábado a partir das 13h30 de Brasília")}
+${CAPA("resultado-fit-model-olympia-2026", "Capa: Shealynn Burnett é a primeira campeã da Fit Model Olympia; a brasileira Gabriela Queiroz é vice")}
 
 <h2 id="resultado">Resultado Fit Model Olympia 2026</h2>
-${TABELA_PENDENTE(5)}
-<p><em>Tabela preenchida com o resultado oficial da IFBB Pro League. Se a classificação completa for divulgada, a tabela cresce até o top 10; se não, fica no que foi oficializado.</em></p>
+<table><thead><tr><th>Posição</th><th>Atleta</th><th>Representação</th></tr></thead><tbody><tr><td>1º</td><td><strong>Shealynn Burnett</strong></td><td>—</td></tr><tr><td>2º</td><td>Gabriela Queiroz</td><td>EUA (brasileira)</td></tr><tr><td>3º</td><td>Jane Jones</td><td>—</td></tr><tr><td>4º</td><td>A confirmar</td><td>—</td></tr><tr><td>5º</td><td>A confirmar</td><td>—</td></tr></tbody></table>
+<p><em>O pódio foi confirmado por duas fontes independentes. O 4º e o 5º lugares entram quando também estiverem.</em></p>
 
 <h2 id="gabriela">Em que posição Gabriela Queiroz ficou no Olympia 2026?</h2>
-<p><strong>A posição de Gabriela Queiroz ainda não foi definida.</strong> A brasileira aparece no roster oficial da competição <strong>representando os Estados Unidos</strong>, por isso a classificação oficial vai mostrar "EUA" ao lado do nome dela. Gabriela se classificou para o Olympia com o título do Wasatch Warrior Pro 2026 e chega à estreia da categoria entre as vencedoras de shows profissionais da temporada.</p>
+<p><strong>Gabriela Queiroz ficou em 2º lugar</strong>, atrás apenas de Shealynn Burnett. A brasileira compete <strong>representando os Estados Unidos</strong>, por isso a classificação oficial mostra "EUA" ao lado do nome dela. Gabriela se classificou para o Olympia com o título do Wasatch Warrior Pro 2026 e chegou à estreia da categoria entre as vencedoras de shows profissionais da temporada.</p>
 <p>Ela é a única brasileira na Fit Model. Os outros brasileiros do fim de semana estão no <a href="/blog/brasileiros-mr-olympia-2026">painel dos brasileiros no Mr. Olympia 2026</a>.</p>
 
 <h2>Quem ganhou a Fit Model Olympia 2026?</h2>
-<p><strong>Ainda não foi decidido.</strong> Como é a primeira Fit Model do Olympia, não há campeã anterior para defender o título: a primeira vencedora da história da categoria no evento sai neste sábado. Entram as atletas que venceram shows profissionais da Fit Model na temporada (a categoria não usa sistema de pontos).</p>
+<p><strong>Shealynn Burnett</strong>, a primeira campeã da história da categoria no Olympia. Como era a estreia, não havia campeã anterior para defender o título. Entraram as atletas que venceram shows profissionais da Fit Model na temporada (a categoria não usa sistema de pontos).</p>
 
-<h2>Top 5 / Top 10</h2>
-<p>Ainda não definidos. Só entram aqui colocações oficiais. Nada de top 10 montado por palpite ou por ordem de chamada.</p>
-
-<h2 id="como-foram-as-previas">Como foi a competição?</h2>
-<p>A competição ainda não aconteceu. Durante a sessão, esta seção vai registrar só fatos verificados, como as chamadas para comparação. Chamado não é colocação.</p>
-
-<h2 id="horario">Que horas acontece a Fit Model?</h2>
+<h2 id="horario">Quando foi a Fit Model?</h2>
 <ul>
 <li><strong>Sábado, 26 de setembro</strong>, na sessão de prévias do Olympia, que começa às <strong>13h30 de Brasília</strong> (9h30 em Las Vegas).</li>
 <li>A Fit Model tem <strong>prévias e final na mesma sessão</strong>, junto com as prévias de Men's Physique, Bikini, Fitness e Wheelchair.</li>
 </ul>
-<p>O bloco começa às 13h30 de Brasília, e a Fit Model terá prévias e finais durante essa sessão. A ordem das categorias não é publicada com antecedência: o horário exato em que a categoria sobe ao palco pode variar.</p>
-
-<h2>Onde assistir?</h2>
-<p>Pela OlympiaTV, transmissão oficial, gratuita com cadastro no site do evento.</p>
+<p>O bloco começou às 13h30 de Brasília, e a Fit Model teve prévias e final durante essa sessão.</p>
 
 <h2>O que é a categoria Fit Model?</h2>
 <p>É a categoria feminina mais nova da IFBB Pro League: estreou no amador (NPC) em 2025 e chega ao profissional e ao Olympia em 2026. A proposta é premiar um físico atlético, equilibrado e proporcional, com o visual de uma modelo de fitness: tonificado, mas sem o volume muscular nem o nível de definição das outras categorias. Apresentação, postura e harmonia do conjunto pesam tanto quanto o músculo.</p>
@@ -900,16 +895,16 @@ ${TABELA_PENDENTE(5)}
 <p><em>Com base nas regras da divisão publicadas pela NPC (NPC News Online), que servem de referência para a IFBB Pro League.</em></p>
 
 <h2>As outras categorias</h2>
-<p>Na noite de sábado saem a <a href="/blog/resultado-bikini-olympia-2026">Bikini</a>, a Men's Physique e o Open. Todas as campeãs e campeões ficam em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+<p>Na noite de sábado saíram a <a href="/blog/resultado-bikini-olympia-2026">Bikini</a>, a Men's Physique e o Open. Todas as campeãs e campeões estão em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
 ${ACOMPANHE("resultado-fit-model-olympia-2026")}
 
 ${CTA_ROTINA}
 ${FONTES}`,
     faq: [
-      { question: "Quem ganhou a Fit Model Olympia 2026?", answer: "Ainda não foi decidido. Prévias e final acontecem no sábado, 26 de setembro, na sessão que começa às 13h30 de Brasília. É a primeira Fit Model da história do Olympia." },
-      { question: "Em que posição Gabriela Queiroz ficou?", answer: "A posição ainda não foi definida. Gabriela Queiroz, brasileira, aparece no roster oficial representando os Estados Unidos, e se classificou com o título do Wasatch Warrior Pro 2026." },
-      { question: "Que horas é a Fit Model no Olympia?", answer: "No sábado, 26 de setembro, na sessão de prévias que começa às 13h30 de Brasília (9h30 em Las Vegas). A categoria tem prévias e final nessa mesma sessão; o horário exato depende da ordem do bloco." },
+      { question: "Quem ganhou a Fit Model Olympia 2026?", answer: "Shealynn Burnett, a primeira campeã da história da Fit Model no Olympia, no sábado, 26 de setembro, em Las Vegas." },
+      { question: "Em que posição Gabriela Queiroz ficou?", answer: "Em 2º lugar. A brasileira compete representando os Estados Unidos e chegou ao Olympia como campeã do Wasatch Warrior Pro 2026." },
+      { question: "Quem completou o pódio da Fit Model?", answer: "Shealynn Burnett (1º), Gabriela Queiroz (2º) e Jane Jones (3º)." },
       { question: "Qual a diferença entre Fit Model e Bikini?", answer: "A Fit Model pede menos massa muscular e menos definição que a Bikini, com foco num físico equilibrado e atlético de modelo fitness." },
     ],
   },

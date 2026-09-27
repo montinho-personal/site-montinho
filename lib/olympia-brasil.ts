@@ -75,7 +75,7 @@ export const CATEGORIAS: CategoriaOlympia[] = [
   { id: "bikini", nome: "Bikini", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", artigo: "resultado-bikini-olympia-2026", temBrasileiro: true, previasConcluidas: true, resultadoOficial: true, campeao: "Jasmine Gonzalez" },
   { id: "fitness", nome: "Fitness", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", previasConcluidas: true, resultadoOficial: true, campeao: "Michelle Fredua-Mensah" },
   // Estreia no Olympia: prévias E final na sessão de sábado de manhã.
-  { id: "fit-model", nome: "Fit Model", dia: "sabado", previas: "sabadoPrevias", final: "sabadoPrevias", artigo: "resultado-fit-model-olympia-2026", temBrasileiro: true, sessaoUnica: true },
+  { id: "fit-model", nome: "Fit Model", dia: "sabado", previas: "sabadoPrevias", final: "sabadoPrevias", artigo: "resultado-fit-model-olympia-2026", temBrasileiro: true, sessaoUnica: true, previasConcluidas: true, resultadoOficial: true, campeao: "Shealynn Burnett" },
 ];
 
 export const categoria = (id: string) => {
@@ -223,7 +223,7 @@ export const ATLETAS_BRASIL: AtletaBrasil[] = [
   a("Elisa Pecini", "bikini", "Brasil", "Campeã em 2019"),
   a("Nivea Campos", "bikini"),
   a("Bruna Toigo", "bikini"),
-  a("Gabriela Queiroz", "fit-model", "EUA", "Campeã do Wasatch Warrior 2026"),
+  { ...a("Gabriela Queiroz", "fit-model", "EUA", "Campeã do Wasatch Warrior 2026"), resultado: "2º lugar" },
 ];
 
 /** Classificados que não competem, com o motivo publicado. */

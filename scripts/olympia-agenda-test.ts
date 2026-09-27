@@ -30,7 +30,7 @@ const open = { ...categoria("open"), previasConcluidas: undefined, resultadoOfic
 ok(fase(open, at("2026-09-25T22:30:00-03:00")) === "previas", "Open: prévias na sessão de sexta à noite");
 
 // Fit Model: sessão única — o bloco começar não põe a categoria no palco
-const fm = categoria("fit-model");
+const fm = { ...categoria("fit-model"), previasConcluidas: undefined, resultadoOficial: undefined, campeao: undefined };
 ok(fase(fm, at("2026-09-26T13:29:00-03:00")) === "antes-previas", "Fit Model antes do bloco");
 ok(alvo(fm, at("2026-09-26T10:00:00-03:00"))?.bloco === "sabadoPrevias", "Fit Model: contagem para o bloco de sábado 13h30");
 ok(fase(fm, at("2026-09-26T13:30:00-03:00")) === "bloco", "Fit Model: bloco iniciado ≠ no palco");
