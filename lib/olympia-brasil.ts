@@ -70,10 +70,10 @@ export const CATEGORIAS: CategoriaOlympia[] = [
   { id: "ms-olympia", nome: "Ms. Olympia", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", temBrasileiro: true, previasConcluidas: true, resultadoOficial: true, campeao: "Andrea Shaw" },
   { id: "figure", nome: "Figure", dia: "sexta", previas: "sextaPrevias", final: "sextaFinais", previasConcluidas: true, resultadoOficial: true, campeao: "Lola Montez" },
   // O Open tem as prévias na sessão de sexta à noite e a final no sábado.
-  { id: "open", nome: "Open (Mr. Olympia)", dia: "sabado", previas: "sextaFinais", final: "sabadoFinais", artigo: "resultado-mr-olympia-open-2026", temBrasileiro: true },
-  { id: "mens-physique", nome: "Men's Physique", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", artigo: "resultado-mens-physique-olympia-2026", temBrasileiro: true },
-  { id: "bikini", nome: "Bikini", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", artigo: "resultado-bikini-olympia-2026", temBrasileiro: true },
-  { id: "fitness", nome: "Fitness", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais" },
+  { id: "open", nome: "Open (Mr. Olympia)", dia: "sabado", previas: "sextaFinais", final: "sabadoFinais", artigo: "resultado-mr-olympia-open-2026", temBrasileiro: true, previasConcluidas: true, resultadoOficial: true, campeao: "Nick Walker" },
+  { id: "mens-physique", nome: "Men's Physique", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", artigo: "resultado-mens-physique-olympia-2026", temBrasileiro: true, previasConcluidas: true, resultadoOficial: true, campeao: "Ryan Terry" },
+  { id: "bikini", nome: "Bikini", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", artigo: "resultado-bikini-olympia-2026", temBrasileiro: true, previasConcluidas: true, resultadoOficial: true, campeao: "Jasmine Gonzalez" },
+  { id: "fitness", nome: "Fitness", dia: "sabado", previas: "sabadoPrevias", final: "sabadoFinais", previasConcluidas: true, resultadoOficial: true, campeao: "Michelle Fredua-Mensah" },
   // Estreia no Olympia: prévias E final na sessão de sábado de manhã.
   { id: "fit-model", nome: "Fit Model", dia: "sabado", previas: "sabadoPrevias", final: "sabadoPrevias", artigo: "resultado-fit-model-olympia-2026", temBrasileiro: true, sessaoUnica: true },
 ];

@@ -219,22 +219,23 @@ ${FONTES}`,
   /* ───────────────── 3. HUB — QUEM GANHOU ───────────────── */
   {
     slug: "quem-ganhou-mr-olympia-2026",
-    title: "Quem ganhou o Mr. Olympia 2026? Veja campeões e resultados",
-    metaTitle: "Quem Ganhou o Mr. Olympia 2026? Todos os Campeões",
+    title: "Quem ganhou o Mr. Olympia 2026? Nick Walker e todos os campeões",
+    metaTitle: "Quem Ganhou o Mr. Olympia 2026? Nick Walker é o Campeão",
     metaDescription:
-      "Campeões e resultados do Mr. Olympia 2026, categoria por categoria: Open, Classic Physique, Wellness e 212. Atualizado durante as finais de 25 e 26/09.",
+      "Nick Walker é o Mr. Olympia 2026. Veja todos os campeões, categoria por categoria: Classic Physique, Wellness, 212, Men's Physique, Bikini e mais.",
     excerpt:
-      "Todos os campeões do Mr. Olympia 2026 reunidos numa página, atualizada durante as finais de sexta (25) e sábado (26), em Las Vegas.",
+      "Nick Walker venceu o Open e é o Mr. Olympia 2026. Todos os campeões do fim de semana em Las Vegas, categoria por categoria.",
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
-    updatedAt: "2026-09-26",
+    updatedAt: "2026-09-27",
     readTime: "5 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "campeões", "resultados", "fisiculturismo", "Las Vegas"],
-    content: `<blockquote><p><strong>As seis categorias de sexta estão decididas: Classic Physique, 212, Wellness, Women's Physique, Figure e Ms. Olympia.</strong> O Open, título máximo, é hoje, sábado (26), com a final a partir das 23h (Brasília). Última verificação: 26 de setembro de 2026, 10h (Brasília).</p></blockquote>
-<p>O Mr. Olympia 2026 acontece de 24 a 27 de setembro em Las Vegas, com 322 atletas em 12 categorias — 58 deles brasileiros. As finais são <strong>nesta sexta (25) a partir das 22h</strong> e <strong>no sábado (26) a partir das 23h</strong>, no horário de Brasília. Esta página reúne todos os campeões e é atualizada categoria por categoria, à medida que os resultados oficiais saem.</p>
-${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — todos os campeões, categoria por categoria: Open, Classic Physique, Wellness, 212, Men's Physique, Bikini e mais")}
+    content: `<blockquote><p><strong>Resultado definido: Nick Walker é o Mr. Olympia 2026.</strong> Última verificação: 27 de setembro de 2026, 3h30 (Brasília).</p></blockquote>
+<p><strong>Nick Walker (EUA) é o campeão do Mr. Olympia 2026.</strong> Ele venceu o Open na noite de sábado, 26 de setembro, em Las Vegas, à frente de Samson Dauda e do atual campeão, Derek Lunsford, que ficou em 3º. É o primeiro Sandow da carreira de Walker, que tinha sido 6º em 2025.</p>
+<p>Os outros campeões do fim de semana: <strong>Niall Darwen</strong> (Classic Physique), <strong>Eduarda Bezerra</strong> (Wellness, bicampeã), <strong>Keone Pearson</strong> (212), <strong>Ryan Terry</strong> (Men's Physique, quarto título seguido), <strong>Jasmine Gonzalez</strong> (Bikini), <strong>Michelle Fredua-Mensah</strong> (Fitness), <strong>Natalia Abraham Coelho</strong> (Women's Physique), <strong>Andrea Shaw</strong> (Ms. Olympia) e <strong>Lola Montez</strong> (Figure). A tabela abaixo reúne todos.</p>
+${CAPA("quem-ganhou-mr-olympia-2026", "Capa: Nick Walker é o Mr. Olympia 2026 — todos os campeões, categoria por categoria: Open, Classic Physique, Wellness, 212, Men's Physique, Bikini e mais")}
 
 <h2>Campeões do Mr. Olympia 2026</h2>
 <table><thead><tr><th>Categoria</th><th>Final</th><th>Campeão(ã) 2026</th><th>Campeão(ã) 2025</th><th>Resultado</th></tr></thead><tbody>
@@ -244,11 +245,11 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — 
 <tr><td>Figure</td><td>Sex 25/09, 22h</td><td><strong>Lola Montez</strong></td><td>Rhea Gayle (GBR)</td><td>Nesta página</td></tr>
 <tr><td>Women's Physique</td><td>Sex 25/09, 22h</td><td><strong>Natalia Abraham Coelho (EUA)</strong></td><td>Natalia Abraham Coelho (EUA)</td><td><a href="/blog/resultado-womens-physique-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Ms. Olympia</td><td>Sex 25/09, 22h</td><td><strong>Andrea Shaw (EUA)</strong></td><td>Andrea Shaw (EUA)</td><td>Nesta página</td></tr>
-<tr><td>Fitness</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Michelle Fredua-Mensah (GBR)</td><td>Nesta página</td></tr>
-<tr><td>Men's Physique</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Ryan Terry (GBR)</td><td><a href="/blog/resultado-mens-physique-olympia-2026">Ver resultado</a></td></tr>
-<tr><td>Bikini</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Maureen Blanquisco (PHI)</td><td><a href="/blog/resultado-bikini-olympia-2026">Ver resultado</a></td></tr>
+<tr><td>Fitness</td><td>Sáb 26/09, 23h</td><td><strong>Michelle Fredua-Mensah (GBR)</strong></td><td>Michelle Fredua-Mensah (GBR)</td><td>Nesta página</td></tr>
+<tr><td>Men's Physique</td><td>Sáb 26/09, 23h</td><td><strong>Ryan Terry (GBR)</strong></td><td>Ryan Terry (GBR)</td><td><a href="/blog/resultado-mens-physique-olympia-2026">Ver resultado</a></td></tr>
+<tr><td>Bikini</td><td>Sáb 26/09, 23h</td><td><strong>Jasmine Gonzalez</strong></td><td>Maureen Blanquisco (PHI)</td><td><a href="/blog/resultado-bikini-olympia-2026">Ver resultado</a></td></tr>
 <tr><td>Fit Model (estreia)</td><td>Sáb 26/09, 13h30*</td><td>A definir</td><td>—</td><td><a href="/blog/resultado-fit-model-olympia-2026">Ver resultado</a></td></tr>
-<tr><td>Mr. Olympia (Open)</td><td>Sáb 26/09, 23h</td><td>A definir</td><td>Derek Lunsford (EUA)</td><td><a href="/blog/resultado-mr-olympia-open-2026">Ver resultado</a></td></tr>
+<tr><td>Mr. Olympia (Open)</td><td>Sáb 26/09, 23h</td><td><strong>Nick Walker (EUA)</strong></td><td>Derek Lunsford (EUA)</td><td><a href="/blog/resultado-mr-olympia-open-2026">Ver resultado</a></td></tr>
 </tbody></table>
 <p><em>Wheelchair também é decidida no sábado e entra aqui com o resultado oficial. Horários são o início de cada sessão de finais. *A Fit Model tem prévias e final na sessão da manhã de sábado.</em></p>
 
@@ -273,20 +274,21 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: quem ganhou o Mr. Olympia 2026 — 
 <p>Todos os brasileiros, por dia e categoria, com o resultado de cada um, estão no <a href="/blog/brasileiros-mr-olympia-2026">painel dos brasileiros no Mr. Olympia 2026</a>.</p>
 <ul>
 <li><strong>Ramon Dino</strong> — 3º lugar na Classic Physique 2026; campeão em 2025, primeiro brasileiro a vencer o Mr. Olympia. Pesou 102,5 kg na pesagem oficial (<a href="/blog/ramon-dino-peso-altura">peso, altura e limite</a>).</li>
-<li><strong>Eduarda Bezerra</strong> — atual campeã da Wellness, categoria em que o Brasil venceu todas as cinco edições desde 2021 e tem 19 das 40 inscritas em 2026.</li>
-<li><strong>Isa Pereira Nunes</strong> (campeã Wellness 2024) e <strong>Rayane Fogal</strong> (campeã do Arnold Ohio e do Arnold UK 2026) completam as principais candidatas brasileiras.</li>
+<li><strong>Eduarda Bezerra</strong> — bicampeã da Wellness em 2026; o Brasil venceu as seis edições da categoria desde 2021.</li>
+<li><strong>Isa Pereira Nunes</strong> — 2º lugar na Wellness 2026, na dobradinha brasileira.</li>
 </ul>
 
-<h2>Quem chega como favorito no Open</h2>
-<p>Derek Lunsford (EUA) defende o título de 2025, ano em que não perdeu nenhuma competição. Samson Dauda (campeão de 2024), Andrew Jacked (terceiro em 2025 e invicto desde então), Nick Walker e Martin Fitzwater são os mais citados para o primeiro chamado. Hadi Choopan, vice três vezes seguidas, desistiu em agosto. A análise completa está em <a href="/blog/resultado-mr-olympia-open-2026">resultado do Mr. Olympia Open 2026</a>.</p>
+<h2>Como foi o Open</h2>
+<p>Nick Walker (EUA) venceu, Samson Dauda ficou em 2º e Derek Lunsford, que defendia o título de 2025, em 3º. Hadi Choopan, vice três vezes seguidas, não competiu: desistiu em agosto por problemas de visto. A análise completa está em <a href="/blog/resultado-mr-olympia-open-2026">resultado do Mr. Olympia Open 2026</a>.</p>
 
 ${ACOMPANHE("quem-ganhou-mr-olympia-2026")}
 
 ${CTA_MONTINHO}
 ${FONTES}`,
     faq: [
-      { question: "Quem ganhou o Mr. Olympia 2026?", answer: "Ainda não foi decidido. A final do Mr. Olympia Open é no sábado, 26 de setembro, a partir das 23h (Brasília). O campeão entra nesta página assim que for anunciado." },
-      { question: "Quando são as finais do Mr. Olympia 2026?", answer: "Sexta-feira, 25/09, a partir das 22h (Classic Physique, Wellness, 212, Figure, Women's Physique e Ms. Olympia) e sábado, 26/09, a partir das 23h (Open, Men's Physique, Bikini e Fitness), no horário de Brasília." },
+      { question: "Quem ganhou o Mr. Olympia 2026?", answer: "Nick Walker, dos Estados Unidos, venceu o Open na noite de sábado, 26 de setembro, em Las Vegas. Samson Dauda ficou em 2º e Derek Lunsford, o campeão de 2025, em 3º." },
+      { question: "Quem são os campeões de todas as categorias?", answer: "Open: Nick Walker. Classic Physique: Niall Darwen. Wellness: Eduarda Bezerra. 212: Keone Pearson. Men's Physique: Ryan Terry. Bikini: Jasmine Gonzalez. Fitness: Michelle Fredua-Mensah. Women's Physique: Natalia Abraham Coelho. Ms. Olympia: Andrea Shaw. Figure: Lola Montez." },
+      { question: "Quando foram as finais do Mr. Olympia 2026?", answer: "Sexta-feira, 25/09, a partir das 22h (Classic Physique, Wellness, 212, Figure, Women's Physique e Ms. Olympia) e sábado, 26/09, a partir das 23h (Open, Men's Physique, Bikini e Fitness), no horário de Brasília." },
       { question: "Quantos brasileiros competem no Mr. Olympia 2026?", answer: "58, entre 322 atletas de 12 categorias. Os mais conhecidos são Ramon Dino, na Classic Physique, e Eduarda Bezerra, Isa Pereira Nunes e Rayane Fogal, na Wellness." },
       { question: "Onde ver os resultados do Mr. Olympia 2026?", answer: "Nesta página, atualizada categoria por categoria com base nos anúncios oficiais do Olympia e da IFBB Pro League, e nos artigos específicos de Classic Physique, Wellness e Open." },
     ],
@@ -356,37 +358,39 @@ ${FONTES}`,
   /* ───────────────── 5. OPEN ───────────────── */
   {
     slug: "resultado-mr-olympia-open-2026",
-    title: "Resultado Mr. Olympia Open 2026: campeão, Top 10 e classificação",
-    metaTitle: "Resultado Open Mr. Olympia 2026: Campeão e Top 10",
+    title: "Nick Walker é o Mr. Olympia 2026: resultado do Open e classificação",
+    metaTitle: "Nick Walker Vence o Mr. Olympia 2026: Resultado do Open",
     metaDescription:
-      "Classificação do Open do Mr. Olympia 2026: campeão do Sandow, top 10 e colocações. Final no sábado, 26/09, a partir das 23h (Brasília). Atualizado.",
+      "Nick Walker venceu o Mr. Olympia 2026, com Samson Dauda em 2º e Derek Lunsford em 3º. Veja a classificação do Open e como foi a final.",
     excerpt:
-      "A final do Mr. Olympia Open 2026 é no sábado, 26 de setembro. Derek Lunsford defende o título contra Samson Dauda, Andrew Jacked, Nick Walker e Martin Fitzwater.",
+      "Nick Walker venceu o Mr. Olympia 2026 em Las Vegas. Samson Dauda ficou em 2º e o campeão de 2025, Derek Lunsford, em 3º.",
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
+    updatedAt: "2026-09-27",
     readTime: "4 min",
     author: AUTOR,
-    tags: ["Mr. Olympia 2026", "Open", "Derek Lunsford", "Samson Dauda", "resultado"],
-    content: `<blockquote><p><strong>O resultado do Mr. Olympia Open 2026 ainda não foi definido.</strong> As prévias aconteceram na sexta à noite; a final é hoje, sábado (26), a partir das 23h (Brasília). Nas prévias, as comparações principais reuniram <strong>Derek Lunsford, Samson Dauda, Andrew Jacked e Nick Walker</strong>, segundo a Fitness Volt e a RepOne — chamado não é resultado, e o campeão só sai na final. Última verificação: 26 de setembro de 2026, 10h (Brasília).</p></blockquote>
-<p>O título máximo do Mr. Olympia 2026 é decidido <strong>no sábado, 26 de setembro</strong>, com a final a partir das <strong>23h (horário de Brasília)</strong>, na Orleans Arena, em Las Vegas. As prévias do Open aconteceram na sessão de sexta à noite. <strong>Derek Lunsford</strong> (EUA) defende o título de 2025 contra 21 atletas na principal categoria da IFBB Pro League, a única sem limite de peso. A classificação completa entra aqui assim que for anunciada.</p>
-${CAPA("resultado-mr-olympia-open-2026", "Capa: resultado do Open do Mr. Olympia 2026 — quem leva o troféu Sandow; Derek Lunsford defende o título na final de sábado, 23h de Brasília")}
+    tags: ["Mr. Olympia 2026", "Open", "Nick Walker", "Samson Dauda", "Derek Lunsford", "resultado"],
+    content: `<blockquote><p><strong>Resultado definido: Nick Walker é o Mr. Olympia 2026.</strong> Última verificação: 27 de setembro de 2026, 3h30 (Brasília).</p></blockquote>
+<p><strong>Nick Walker venceu o Mr. Olympia 2026</strong> na noite de sábado, 26 de setembro, na Orleans Arena, em Las Vegas. O norte-americano, 6º colocado em 2025, conquistou o primeiro Sandow da carreira à frente de <strong>Samson Dauda</strong> (2º), campeão de 2024, e de <strong>Derek Lunsford</strong> (3º), que defendia o título. O Open é a principal categoria da IFBB Pro League e a única sem limite de peso.</p>
+${CAPA("resultado-mr-olympia-open-2026", "Capa: Nick Walker é o Mr. Olympia 2026 — resultado oficial do Open, com Samson Dauda em 2º e Derek Lunsford em 3º")}
 
 <h2>Classificação do Mr. Olympia Open 2026</h2>
-${TABELA_PENDENTE(10)}
-<p><em>Tabela preenchida após a final oficial. Enquanto isso, acompanhe a Classic Physique com Ramon Dino em <a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic Physique 2026</a>.</em></p>
+<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Nick Walker</strong></td><td>EUA</td></tr><tr><td>2º</td><td>Samson Dauda</td><td>Nigéria/Reino Unido</td></tr><tr><td>3º</td><td>Derek Lunsford</td><td>EUA</td></tr><tr><td>4º</td><td>A definir</td><td>—</td></tr><tr><td>5º</td><td>A definir</td><td>—</td></tr><tr><td>6º</td><td>A definir</td><td>—</td></tr><tr><td>7º</td><td>A definir</td><td>—</td></tr><tr><td>8º</td><td>A definir</td><td>—</td></tr><tr><td>9º</td><td>A definir</td><td>—</td></tr><tr><td>10º</td><td>A definir</td><td>—</td></tr></tbody></table>
+<p><em>O pódio foi confirmado por duas fontes independentes. Do 4º ao 10º lugar, as posições entram quando também estiverem confirmadas, incluindo a de Leandro Peres, único brasileiro no Open.</em></p>
 
-<h2>Os principais nomes</h2>
+<h2>Quem eram os favoritos</h2>
 <ul>
 <li><strong>Derek Lunsford (EUA)</strong> — campeão em 2023 e 2025. Em 2025 venceu Arnold Classic, Pittsburgh Pro e Olympia, e tornou-se o segundo atleta da história a recuperar o título depois de perdê-lo, ao lado de Jay Cutler.</li>
 <li><strong>Samson Dauda (Nigéria/Reino Unido)</strong> — campeão de 2024, caiu para quarto em 2025. Venceu o Europa Pro em 13 de setembro, onze dias antes de Las Vegas.</li>
 <li><strong>Andrew Jacked (Nigéria)</strong> — terceiro em 2025 e invicto desde então: Romania Pro 2025, Arnold Classic Ohio e Arnold Classic UK 2026.</li>
-<li><strong>Nick Walker (EUA)</strong> e <strong>Martin Fitzwater (EUA)</strong> — citados para o primeiro chamado pela imprensa especializada.</li>
+<li><strong>Nick Walker (EUA)</strong> — 6º em 2025, era citado para o primeiro chamado; saiu campeão.</li>
+<li><strong>Martin Fitzwater (EUA)</strong> — também citado para o grupo da frente pela imprensa especializada.</li>
 </ul>
-<p><strong>Hadi Choopan</strong> (Irã), vice por três anos seguidos, desistiu em 26 de agosto por problemas de visto — o que abre uma vaga no grupo da frente.</p>
+<p><strong>Hadi Choopan</strong> (Irã), vice por três anos seguidos, desistiu em 26 de agosto por problemas de visto — o que abriu uma vaga no grupo da frente.</p>
 
-<h2>Prévias na sexta, final no sábado</h2>
-<p>Diferente das outras categorias, o Open tem as prévias na <strong>sexta-feira à noite</strong> (na sessão que começa às 22h de Brasília) e a final no <strong>sábado</strong>. O primeiro chamado da sexta costuma antecipar quem briga pelo Sandow, o troféu do campeão; o resultado, só depois das poses e comparações finais de sábado.</p>
+<h2>Das prévias à final</h2>
+<p>O Open teve as prévias na <strong>sexta-feira à noite</strong> e a final no <strong>sábado</strong>. Nas prévias, as comparações principais reuniram Lunsford, Dauda, Andrew Jacked e Walker, segundo a Fitness Volt e a RepOne. Na final, Walker levou o Sandow, o troféu do campeão.</p>
 
 <h2>Open e Classic: a diferença</h2>
 <p>O Open não tem limite de peso: vence quem combina mais massa muscular com condicionamento e proporção. A Classic Physique, de Ramon Dino, limita o peso pela altura e valoriza linhas e estética. Um atleta de 1,81 m compete na Classic com no máximo 103 kg; no Open, os primeiros colocados passam com folga dos 120 kg. Os números da Classic estão em <a href="/blog/ramon-dino-peso-altura">peso, altura e limite da Classic Physique</a>.</p>
@@ -396,17 +400,17 @@ ${TABELA_PENDENTE(10)}
 <!--SHAPE:open-->
 
 <h2>Todas as categorias</h2>
-<p>Os campeões de sexta e sábado ficam reunidos em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>, incluindo a <a href="/blog/resultado-wellness-mr-olympia-2026">Wellness, com as brasileiras</a>.</p>
+<p>Os campeões de sexta e sábado estão reunidos em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>, incluindo a <a href="/blog/resultado-wellness-mr-olympia-2026">Wellness, com as brasileiras</a>.</p>
 
 ${ACOMPANHE("resultado-mr-olympia-open-2026")}
 
 ${CTA_MONTINHO}
 ${FONTES}`,
     faq: [
-      { question: "Quem ganhou o Open do Mr. Olympia 2026?", answer: "Ainda não foi definido. A final do Open é no sábado, 26 de setembro, a partir das 23h no horário de Brasília. O campeão e o top 10 entram nesta página assim que forem anunciados; os campeões das outras categorias ficam na página de todos os resultados do Olympia 2026." },
-      { question: "Quem ficou no Top 5 do Mr. Olympia 2026?", answer: "A classificação sai após a final de sábado. Os mais cotados para o grupo da frente são Derek Lunsford, Samson Dauda, Andrew Jacked, Nick Walker e Martin Fitzwater." },
-      { question: "Quando acontece a final do Mr. Olympia 2026?", answer: "Sábado, 26 de setembro de 2026, a partir das 23h (Brasília), 19h em Las Vegas, na Orleans Arena. As prévias do Open são na sexta à noite." },
-      { question: "Hadi Choopan compete no Olympia 2026?", answer: "Não. Vice em 2023, 2024 e 2025, ele anunciou a desistência em 26 de agosto de 2026 por problemas de visto." },
+      { question: "Quem ganhou o Open do Mr. Olympia 2026?", answer: "Nick Walker, dos Estados Unidos, na final de sábado, 26 de setembro, em Las Vegas. É o primeiro título dele no Mr. Olympia." },
+      { question: "Quem ficou no pódio do Mr. Olympia 2026?", answer: "Nick Walker (1º), Samson Dauda (2º) e Derek Lunsford (3º). As demais posições do top 10 entram nesta página quando confirmadas." },
+      { question: "Derek Lunsford perdeu o título?", answer: "Sim. Campeão em 2023 e 2025, Lunsford terminou em 3º em 2026." },
+      { question: "Hadi Choopan competiu no Olympia 2026?", answer: "Não. Vice em 2023, 2024 e 2025, ele anunciou a desistência em 26 de agosto de 2026 por problemas de visto." },
     ],
   },
 
@@ -706,26 +710,27 @@ ${FONTES}`,
   /* ───────────────── 10. RESULTADO MEN'S PHYSIQUE ───────────────── */
   {
     slug: "resultado-mens-physique-olympia-2026",
-    title: "Resultado Men's Physique Olympia 2026: campeão, Top 10 e brasileiros",
-    metaTitle: "Resultado Men's Physique Olympia 2026: Edvan Palmeira",
+    title: "Resultado Men's Physique Olympia 2026: Ryan Terry tetracampeão",
+    metaTitle: "Men's Physique Olympia 2026: Ryan Terry Tetracampeão",
     metaDescription:
-      "Quem ganhou a Men's Physique do Olympia 2026 e como ficaram Edvan Palmeira e os brasileiros. Final no sábado, 26/09, a partir das 23h de Brasília.",
+      "Ryan Terry venceu a Men's Physique do Olympia 2026 e igualou o recorde de quatro títulos. A colocação de Edvan Palmeira e dos brasileiros entra quando confirmada.",
     excerpt:
-      "A Men's Physique do Olympia 2026 é decidida no sábado, 26 de setembro. Ryan Terry defende o título; campeão, top 10 e brasileiros entram aqui.",
+      "Ryan Terry venceu a Men's Physique do Olympia 2026, o quarto título seguido, e igualou o recorde de Jeremy Buendia.",
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
+    updatedAt: "2026-09-27",
     readTime: "3 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "Men's Physique", "Edvan Palmeira", "resultado", "fisiculturismo"],
-    content: `${AVISO_ONDA2("O resultado da Men's Physique do Olympia 2026 ainda não foi definido.")}
-<p><strong>A Men's Physique ainda não aconteceu.</strong> As prévias começam às <strong>13h30 de sábado, 26 de setembro</strong> (Brasília), e a final a partir das <strong>23h</strong>, em Las Vegas. Ryan Terry (Reino Unido) defende o tricampeonato. <strong>Edvan Palmeira</strong>, quinto colocado em 2025, é o brasileiro mais bem colocado no ano passado, num grupo de nove atletas listados pelo Brasil.</p>
+    content: `<blockquote><p><strong>Resultado definido: Ryan Terry é tetracampeão da Men's Physique.</strong> As demais colocações, incluindo a de Edvan Palmeira, entram quando confirmadas por duas fontes. Última verificação: 27 de setembro de 2026, 3h30 (Brasília).</p></blockquote>
+<p><strong>Ryan Terry (Reino Unido) venceu a Men's Physique do Olympia 2026</strong> na noite de sábado, 26 de setembro, em Las Vegas. É o quarto título seguido dele, o que iguala o recorde de Jeremy Buendia na categoria. <strong>Edvan Palmeira</strong>, quinto em 2025, era o brasileiro mais bem colocado no ano passado.</p>
 <!--OLYMPIA_CONTAGEM:mens-physique-->
-${CAPA("resultado-mens-physique-olympia-2026", "Capa: resultado da Men's Physique do Olympia 2026 — Ryan Terry defende o título e Edvan Palmeira lidera os brasileiros; final no sábado às 23h de Brasília")}
+${CAPA("resultado-mens-physique-olympia-2026", "Capa: resultado da Men's Physique do Olympia 2026 — Ryan Terry tetracampeão; colocação de Edvan Palmeira e dos brasileiros")}
 
 <h2 id="resultado">Resultado Men's Physique Olympia 2026</h2>
-${TABELA_PENDENTE(10)}
-<p><em>Tabela preenchida com o resultado oficial da IFBB Pro League, depois da final. Se só o top 5 for divulgado na noite, só o top 5 entra.</em></p>
+<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Ryan Terry</strong></td><td>Reino Unido</td></tr><tr><td>2º</td><td>A definir</td><td>—</td></tr><tr><td>3º</td><td>A definir</td><td>—</td></tr><tr><td>4º</td><td>A definir</td><td>—</td></tr><tr><td>5º</td><td>A definir</td><td>—</td></tr><tr><td>6º</td><td>A definir</td><td>—</td></tr><tr><td>7º</td><td>A definir</td><td>—</td></tr><tr><td>8º</td><td>A definir</td><td>—</td></tr><tr><td>9º</td><td>A definir</td><td>—</td></tr><tr><td>10º</td><td>A definir</td><td>—</td></tr></tbody></table>
+<p><em>O campeão foi confirmado por duas fontes independentes; as outras posições entram quando também estiverem.</em></p>
 
 <h2>Como ficaram os brasileiros?</h2>
 <table><thead><tr><th>Atleta</th><th>Representação no roster</th><th>Resultado</th></tr></thead><tbody>
@@ -734,22 +739,16 @@ ${ATLETAS_BRASIL.filter((x) => x.categoria === "mens-physique").map((x) => `<tr>
 <p>Nove atletas aparecem no roster oficial representando o Brasil. <strong>Mauro Fialho</strong> é citado entre os brasileiros pela imprensa, mas está listado pela Espanha, e é assim que aparece na classificação oficial. Todos os brasileiros do fim de semana estão no <a href="/blog/brasileiros-mr-olympia-2026">painel dos brasileiros no Mr. Olympia 2026</a>.</p>
 
 <h2>Em que posição Edvan Palmeira ficou?</h2>
-<p><strong>Ainda não há resultado.</strong> O baiano Edvan Palmeira terminou em <strong>quinto</strong> em 2025, atrás de Ryan Terry, Ali Bilal, Brandon Hendrickson e Erin Banks. A colocação de 2026 entra aqui logo após a final de sábado.</p>
+<p><strong>A colocação de 2026 ainda não foi confirmada.</strong> O baiano Edvan Palmeira terminou em <strong>quinto</strong> em 2025, atrás de Ryan Terry, Ali Bilal, Brandon Hendrickson e Erin Banks. A posição dele entra aqui assim que houver duas fontes.</p>
 
 <h2>Quem ganhou a Men's Physique?</h2>
-<p><strong>Ainda não foi decidido.</strong> Os nomes mais citados pela imprensa especializada:</p>
+<p><strong>Ryan Terry (Reino Unido)</strong>, pela quarta vez seguida, igualando o recorde de Jeremy Buendia. Antes da final, os nomes mais citados eram:</p>
 <ul>
 <li><strong>Ryan Terry (Reino Unido)</strong> — campeão em 2023, 2024 e 2025. Um quarto título igualaria o recorde de Jeremy Buendia.</li>
 <li><strong>Ali Bilal (EUA)</strong> — vice em 2025.</li>
 <li><strong>Brandon Hendrickson (EUA)</strong> — terceiro em 2025 e ex-campeão da categoria.</li>
 <li><strong>Erin Banks (EUA)</strong> — campeão em 2022 e quarto em 2025.</li>
 </ul>
-
-<h2>Top 10</h2>
-<p>Ainda não definido. A tabela no topo recebe o top 10 oficial assim que a IFBB Pro League publicar.</p>
-
-<h2 id="como-foram-as-previas">Como foram as prévias?</h2>
-<p>As prévias ainda não aconteceram. Depois delas, esta seção vai registrar quem foi chamado para as primeiras comparações, sem transformar chamado em colocação.</p>
 
 <h2 id="horario">Horário da final</h2>
 <ul>
@@ -765,15 +764,15 @@ ${ATLETAS_BRASIL.filter((x) => x.categoria === "mens-physique").map((x) => `<tr>
 <p>É a categoria masculina com bermuda de praia e sem poses de fisiculturismo: os juízes avaliam o físico de frente e de costas, com foco em ombros largos, cintura fina, abdômen definido e proporção. As pernas não entram no julgamento. É a categoria de entrada mais popular entre os homens.</p>
 
 <h2>As outras categorias</h2>
-<p>Na mesma noite é decidido o <a href="/blog/resultado-mr-olympia-open-2026">Open, o título de Mr. Olympia</a>. Os campeões de todas as categorias estão em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+<p>Na mesma noite foi decidido o <a href="/blog/resultado-mr-olympia-open-2026">Open: Nick Walker é o Mr. Olympia 2026</a>. Os campeões de todas as categorias estão em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
 ${ACOMPANHE("resultado-mens-physique-olympia-2026")}
 
 ${CTA_MASSA_PHYSIQUE}
 ${FONTES}`,
     faq: [
-      { question: "Quem ganhou a Men's Physique do Olympia 2026?", answer: "Ainda não foi decidido. A final é no sábado, 26 de setembro, a partir das 23h (Brasília). Ryan Terry defende o título, e esta página é atualizada com o resultado oficial." },
-      { question: "Em que posição Edvan Palmeira ficou?", answer: "Ainda não há resultado de 2026. Em 2025, Edvan Palmeira ficou em quinto na Men's Physique." },
+      { question: "Quem ganhou a Men's Physique do Olympia 2026?", answer: "Ryan Terry, do Reino Unido, na final de sábado, 26 de setembro. É o quarto título seguido dele, igualando o recorde de Jeremy Buendia." },
+      { question: "Em que posição Edvan Palmeira ficou?", answer: "A colocação de 2026 ainda não foi confirmada por duas fontes. Em 2025, Edvan Palmeira ficou em quinto na Men's Physique." },
       { question: "Quantos brasileiros competem na Men's Physique 2026?", answer: "Nove atletas estão no roster oficial pelo Brasil. Mauro Fialho, citado entre os brasileiros, aparece pela Espanha." },
     ],
   },
@@ -781,29 +780,30 @@ ${FONTES}`,
   /* ───────────────── 11. RESULTADO BIKINI ───────────────── */
   {
     slug: "resultado-bikini-olympia-2026",
-    title: "Resultado Bikini Olympia 2026: campeã, Top 10 e Elisa Pecini",
-    metaTitle: "Resultado Bikini Olympia 2026: Campeã, Top 10 e Isa Pecini",
+    title: "Resultado Bikini Olympia 2026: Jasmine Gonzalez é a campeã",
+    metaTitle: "Bikini Olympia 2026: Jasmine Gonzalez Campeã",
     metaDescription:
-      "Quem ganhou a Bikini Olympia 2026 e como ficaram Elisa (Isa) Pecini, Nivea Campos e Bruna Toigo. Final no sábado, 26/09, a partir das 23h de Brasília.",
+      "Jasmine Gonzalez venceu a Bikini Olympia 2026, o primeiro título dela. As colocações de Isa Pecini, Nivea Campos e Bruna Toigo entram quando confirmadas.",
     excerpt:
-      "A Bikini Olympia 2026 é decidida no sábado, 26 de setembro. Maureen Blanquisco defende o título; campeã, top 10 e as três brasileiras entram aqui.",
+      "Jasmine Gonzalez venceu a Bikini Olympia 2026 e conquistou o primeiro título. A campeã de 2025, Maureen Blanquisco, perdeu a coroa.",
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
+    updatedAt: "2026-09-27",
     readTime: "3 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "Bikini", "Elisa Pecini", "resultado", "fisiculturismo"],
-    content: `${AVISO_ONDA2("O resultado da Bikini Olympia 2026 ainda não foi definido.")}
-<p><strong>A Bikini ainda não aconteceu.</strong> As prévias começam às <strong>13h30 de sábado, 26 de setembro</strong> (Brasília), e a final a partir das <strong>23h</strong>, em Las Vegas. Maureen Blanquisco (Filipinas) defende o título. O Brasil tem três atletas: <strong>Elisa Pecini</strong>, a Isa Pecini, campeã em 2019, <strong>Nivea Campos</strong> e <strong>Bruna Toigo</strong>.</p>
+    content: `<blockquote><p><strong>Resultado definido: Jasmine Gonzalez é a campeã da Bikini Olympia 2026.</strong> As demais colocações, incluindo as das três brasileiras, entram quando confirmadas por duas fontes. Última verificação: 27 de setembro de 2026, 3h30 (Brasília).</p></blockquote>
+<p><strong>Jasmine Gonzalez (EUA) venceu a Bikini Olympia 2026</strong> na noite de sábado, 26 de setembro, em Las Vegas, e conquistou o primeiro título dela. A campeã de 2025, Maureen Blanquisco (Filipinas), perdeu a coroa. O Brasil teve três atletas: <strong>Elisa Pecini</strong>, a Isa Pecini, campeã em 2019, <strong>Nivea Campos</strong> e <strong>Bruna Toigo</strong>.</p>
 <!--OLYMPIA_CONTAGEM:bikini-->
-${CAPA("resultado-bikini-olympia-2026", "Capa: resultado da Bikini Olympia 2026 — Maureen Blanquisco defende o título e Elisa Pecini lidera as três brasileiras; final no sábado às 23h de Brasília")}
+${CAPA("resultado-bikini-olympia-2026", "Capa: resultado da Bikini Olympia 2026 — Jasmine Gonzalez campeã; colocação de Elisa Pecini e das brasileiras")}
 
 <h2 id="resultado">Resultado Bikini Olympia 2026</h2>
-${TABELA_PENDENTE(10)}
-<p><em>Tabela preenchida com o resultado oficial da IFBB Pro League, depois da final. Se só o top 5 for divulgado na noite, só o top 5 entra.</em></p>
+<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Jasmine Gonzalez</strong></td><td>EUA</td></tr><tr><td>2º</td><td>A definir</td><td>—</td></tr><tr><td>3º</td><td>A definir</td><td>—</td></tr><tr><td>4º</td><td>A definir</td><td>—</td></tr><tr><td>5º</td><td>A definir</td><td>—</td></tr><tr><td>6º</td><td>A definir</td><td>—</td></tr><tr><td>7º</td><td>A definir</td><td>—</td></tr><tr><td>8º</td><td>A definir</td><td>—</td></tr><tr><td>9º</td><td>A definir</td><td>—</td></tr><tr><td>10º</td><td>A definir</td><td>—</td></tr></tbody></table>
+<p><em>A campeã foi confirmada por duas fontes independentes; as outras posições entram quando também estiverem.</em></p>
 
 <h2>Em que posição Elisa Pecini ficou?</h2>
-<p><strong>Ainda não há resultado.</strong> Elisa Pecini, conhecida como Isa Pecini, venceu a Bikini Olympia em 2019 e tem vaga garantida por esse título. A colocação de 2026 entra aqui logo após a final de sábado.</p>
+<p><strong>A colocação de 2026 ainda não foi confirmada.</strong> Elisa Pecini, conhecida como Isa Pecini, venceu a Bikini Olympia em 2019 e tem vaga garantida por esse título. A posição dela entra aqui assim que houver duas fontes.</p>
 
 <h2>Como ficaram as brasileiras?</h2>
 <table><thead><tr><th>Atleta</th><th>Representação no roster</th><th>Resultado</th></tr></thead><tbody>
@@ -812,13 +812,7 @@ ${ATLETAS_BRASIL.filter((x) => x.categoria === "bikini").map((x) => `<tr><td>${x
 <p>As três aparecem no roster oficial representando o Brasil. Os brasileiros de todas as categorias estão no <a href="/blog/brasileiros-mr-olympia-2026">painel Brasil do Mr. Olympia 2026</a>.</p>
 
 <h2>Quem ganhou a Bikini Olympia 2026?</h2>
-<p><strong>Ainda não foi decidido.</strong> Em 2025, o pódio foi Maureen Blanquisco, Ashlyn Little (EUA) e Jasmine Gonzalez (EUA). As três voltam como referências da categoria.</p>
-
-<h2>Top 10</h2>
-<p>Ainda não definido. A tabela no topo recebe o top 10 oficial assim que a IFBB Pro League publicar.</p>
-
-<h2 id="como-foram-as-previas">Como foram as prévias?</h2>
-<p>As prévias ainda não aconteceram. Depois delas, esta seção vai registrar quem foi chamada para as primeiras comparações, sem transformar chamado em colocação.</p>
+<p><strong>Jasmine Gonzalez (EUA)</strong>, terceira colocada em 2025, conquistou o primeiro título dela. Em 2025, o pódio tinha sido Maureen Blanquisco, Ashlyn Little e Jasmine Gonzalez.</p>
 
 <h2 id="horario">Horário da final</h2>
 <ul>
@@ -834,15 +828,15 @@ ${ATLETAS_BRASIL.filter((x) => x.categoria === "bikini").map((x) => `<tr><td>${x
 <p>É a categoria feminina com ênfase em forma geral, equilíbrio entre parte superior e inferior, condicionamento leve e apresentação: postura, caminhada e confiança no palco contam. Não há poses de contração muscular como no fisiculturismo. A Fit Model, que estreia no Olympia neste ano, pede ainda menos massa e definição: veja a <a href="/blog/resultado-fit-model-olympia-2026">diferença entre Fit Model e Bikini</a>.</p>
 
 <h2>As outras categorias</h2>
-<p>Na mesma noite saem a <a href="/blog/resultado-mens-physique-olympia-2026">Men's Physique</a> e o <a href="/blog/resultado-mr-olympia-open-2026">Open</a>. As campeãs e os campeões de todas as categorias estão em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+<p>Na mesma noite saíram a <a href="/blog/resultado-mens-physique-olympia-2026">Men's Physique</a> e o <a href="/blog/resultado-mr-olympia-open-2026">Open</a>. As campeãs e os campeões de todas as categorias estão em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
 
 ${ACOMPANHE("resultado-bikini-olympia-2026")}
 
 ${CTA_MONTINHO}
 ${FONTES}`,
     faq: [
-      { question: "Quem ganhou a Bikini Olympia 2026?", answer: "Ainda não foi decidido. A final é no sábado, 26 de setembro, a partir das 23h (Brasília). Maureen Blanquisco defende o título, e esta página é atualizada com o resultado oficial." },
-      { question: "Isa Pecini ganhou a Bikini Olympia?", answer: "Em 2026, ainda não há resultado. Elisa (Isa) Pecini foi campeã da Bikini Olympia em 2019." },
+      { question: "Quem ganhou a Bikini Olympia 2026?", answer: "Jasmine Gonzalez, dos Estados Unidos, na final de sábado, 26 de setembro. É o primeiro título dela na Bikini Olympia." },
+      { question: "Isa Pecini ganhou a Bikini Olympia?", answer: "Em 2026, não: a campeã foi Jasmine Gonzalez, e a colocação de Isa Pecini entra aqui quando confirmada. Ela foi campeã da Bikini Olympia em 2019." },
       { question: "Quais brasileiras competem na Bikini Olympia 2026?", answer: "Elisa Pecini, Nivea Campos e Bruna Toigo, todas listadas pelo Brasil no roster oficial." },
     ],
   },

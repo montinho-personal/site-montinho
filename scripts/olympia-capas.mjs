@@ -94,10 +94,10 @@ const CAPAS = [
   },
   {
     slug: "quem-ganhou-mr-olympia-2026",
-    alt: "Capa: quem ganhou o Mr. Olympia 2026 — todos os campeões, categoria por categoria: Open, Classic Physique, Wellness, 212, Men's Physique, Bikini e mais",
+    alt: "Capa: Nick Walker é o Mr. Olympia 2026 — todos os campeões, categoria por categoria: Open, Classic Physique, Wellness, 212, Men's Physique, Bikini e mais",
     html: base(`
 <div class="top"><div class="kicker">Las Vegas · 25 e 26/09</div><div class="chip"><i></i>Todos os campeões</div></div>
-<div class="main"><h1>Quem ganhou o<br>Mr. Olympia <em>2026</em></h1>
+<div class="main"><h1><em>Nick Walker</em> é o<br>Mr. Olympia 2026</h1>
 <div class="tags"><span class="g">Open</span><span class="g">Classic Physique</span><span class="g">Wellness</span><span>212</span><span>Men's Physique</span><span>Bikini</span><span>Figure</span><span>Women's Physique</span><span>Ms. Olympia</span><span>Fitness</span></div></div>`, "2026"),
   },
   {
@@ -110,11 +110,11 @@ const CAPAS = [
   },
   {
     slug: "resultado-mr-olympia-open-2026",
-    alt: "Capa: resultado do Open do Mr. Olympia 2026 — quem leva o troféu Sandow; Derek Lunsford defende o título na final de sábado, 23h de Brasília",
+    alt: "Capa: Nick Walker é o Mr. Olympia 2026 — resultado oficial do Open, com Samson Dauda em 2º e Derek Lunsford em 3º",
     html: base(`
-<div class="top"><div class="kicker">Mr. Olympia 2026 · Open</div><div class="chip"><i></i>Resultado</div></div>
-<div class="main"><h1>Quem leva o<br><em>Sandow</em> em 2026</h1>
-<div class="sub">Campeão e <b>top 10</b> do Open. Derek Lunsford defende o título.<br>Final no <b>sábado, 26/09, a partir das 23h</b> (Brasília).</div></div>`, "OPEN"),
+<div class="top"><div class="kicker">Mr. Olympia 2026 · Open</div><div class="chip"><i></i>Resultado oficial</div></div>
+<div class="main"><h1><em>Nick Walker</em> vence<br>o Mr. Olympia 2026</h1>
+<div class="sub">1º <b>Nick Walker</b> · 2º <b>Samson Dauda</b> · 3º <b>Derek Lunsford</b><br>Final de sábado, 26/09, em Las Vegas.</div></div>`, "OPEN"),
   },
   {
     slug: "ramon-dino-peso-altura",

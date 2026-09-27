@@ -26,7 +26,7 @@ ok(alvo(c212, at("2026-09-25T23:00:00-03:00")) === null, "nas finais não há co
 ok(fase(c212, at("2026-09-26T02:00:00-03:00")) === "final", "sem resultado oficial, não encerra sozinha");
 ok(fase({ ...c212, resultadoOficial: true }, at("2026-09-25T10:00:00-03:00")) === "encerrada", "resultado oficial encerra");
 
-const open = categoria("open");
+const open = { ...categoria("open"), previasConcluidas: undefined, resultadoOficial: undefined, campeao: undefined };
 ok(fase(open, at("2026-09-25T22:30:00-03:00")) === "previas", "Open: prévias na sessão de sexta à noite");
 
 // Fit Model: sessão única — o bloco começar não põe a categoria no palco
