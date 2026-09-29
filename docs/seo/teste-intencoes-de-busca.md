@@ -30,7 +30,7 @@ Hipótese: cobrir as intenções reais tira o artigo da 2ª página. Antes de ca
 | quanto-tempo-para-aparecer-resultado-na-academia | 111 | 10,2 | 0 | 29/09 | quanto-tempo-para-ganhar-massa-muscular (306 imp, pos 9,8) |
 | exercicios-para-gluteo-medio | 104 | 18,7 | 0 | 29/09 | como-fazer-abducao-quadril-maquina (84 imp, pos 7,5) |
 | cafeina-no-treino-dose-timing | 81 | 15,2 | 0 | 29/09 | cafe-antes-do-treino (9 imp, pos 6,2) |
-| treino-para-mulher-iniciante | 74 | 11,5 | 3 | — | treino-de-gluteos-feminino, hipertrofia-para-iniciantes |
+| treino-para-mulher-iniciante | 74 | 11,5 | 3 | 29/09 | treino-de-gluteos-feminino, hipertrofia-para-iniciantes |
 
 Observação: com menos de 250 impressões, a medição do braço B é mais ruidosa; olhar posição e tendência, não só cliques.
 
@@ -98,3 +98,8 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 - metaTitle: "Cafeína como Pré-Treino: Dose, Timing e Efeitos Colaterais" → "Cafeína no Treino: Para Que Serve, Quanto Tomar e Quando"
 - H2 novos: para que serve; 200 mg ou 400 mg; 200 mg tira o sono; quem deve ter cuidado (gestante, gastrite, TDAH → médico); cápsula ou pré-treino pronto.
 - Fora: marcas (Growth). cafe-antes-do-treino segue com a intenção "café".
+
+### treino-para-mulher-iniciante (29/09) — braço B
+- metaTitle: "Treino para Mulher Iniciante: Guia Completo de Musculação" → "Treino para Mulher Iniciante na Academia: Full Body, ABC e Em Casa"
+- H2 novos: ABC; 5 vezes na semana; em casa (link p/ treino-em-casa-sem-equipamento); para emagrecer.
+- Pendente: "PDF" (ficha feminina) como isca futura, no molde da planilha da São Silvestre.

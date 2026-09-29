@@ -34802,7 +34802,7 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
   {
   slug: "treino-para-mulher-iniciante",
   title: "Treino para Mulher Iniciante na Musculação: Guia Completo",
-  metaTitle: "Treino para Mulher Iniciante: Guia Completo de Musculação",
+  metaTitle: "Treino para Mulher Iniciante na Academia: Full Body, ABC e Em Casa",
   metaDescription: "Treino de musculação para mulher iniciante: exercícios, séries, frequência e como começar da forma certa para emagrecer, ganhar forma e criar o hábito.",
   excerpt: "Começar na musculação pode parecer intimidador — mas o início certo determina os próximos anos de resultado. Este guia foi feito para mulheres que estão dando o primeiro passo.",
   category: "Treinamento",
@@ -34877,6 +34877,18 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 <p><strong>Core:</strong><br>Prancha — 3 séries de 20-30 segundos</p>
 
 <p><strong>Glúteo isolado:</strong><br>Elevação pélvica (hip thrust com peso corporal ou barra leve) — 3x12-15</p>
+
+<h2>Treino ABC para mulher iniciante</h2>
+<p>Depois de 2 a 3 meses de full body, quem pode treinar 4 a 5 vezes por semana pode passar para uma divisão ABC — por exemplo, A: pernas e glúteos; B: costas e bíceps; C: peito, ombros e tríceps. Para quem só tem 3 dias, o full body continua sendo a melhor escolha, porque treina cada músculo mais vezes na semana.</p>
+
+<h2>Treino feminino 5 vezes na semana</h2>
+<p>Dá para treinar 5 vezes, mas não é obrigatório para iniciantes. Uma opção é ABC mais dois dias extras de glúteos e pernas, ou full body 3x com 2 dias de cardio leve. Mais importante que o número de dias é conseguir manter a rotina.</p>
+
+<h2>Treino para mulher iniciante em casa</h2>
+<p>Sem academia, o mesmo full body funciona com o peso do corpo e elásticos: agachamento, afundo, elevação de quadril, flexão (no joelho, se precisar), remada com elástico e prancha. Veja um programa completo em <a href="/blog/treino-em-casa-sem-equipamento">treino em casa sem equipamento</a>.</p>
+
+<h2>Treino para mulher iniciante que quer emagrecer</h2>
+<p>A base é a mesma musculação: ela preserva músculo enquanto a gordura diminui. Some caminhada ou outro cardio leve e um pequeno déficit calórico. O que emagrece é a soma, ao longo das semanas — não um treino específico.</p>
 
 <h2>Como progredir como iniciante</h2>
 
