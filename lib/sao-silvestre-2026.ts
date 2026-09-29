@@ -460,6 +460,7 @@ ${FONTES_SS}`,
 
 <h2>Tênis de corrida para iniciantes</h2>
 <p>Quem está começando não precisa de tênis de placa de carbono nem do modelo mais caro. Precisa de um tênis de corrida de treino diário, confortável e com bom amortecimento — as marcas nacionais e as linhas de entrada das grandes marcas têm boas opções com preço acessível. Mais importante que o modelo é usar o tênis para correr, não para o dia a dia, para ele durar e manter o amortecimento.</p>
+<p><strong>Dá para começar com tênis barato?</strong> Dá, desde que seja um tênis de corrida de verdade, confortável e do tamanho certo. <strong>Feminino ou masculino?</strong> Os critérios são os mesmos; o que muda é a forma do calçado, então prove as duas versões se o seu pé for mais largo ou mais estreito.</p>
 
 <h2>Tênis de placa de carbono vale a pena?</h2>
 <p>Os tênis de placa, feitos para velocidade, ajudam atletas rápidos a ganhar segundos. Para quem vai completar a São Silvestre ou está no primeiro ano de corrida, raramente compensam: são caros, duram menos e podem ser menos estáveis. Se quiser um, use como segundo tênis, depois de construir a base.</p>
