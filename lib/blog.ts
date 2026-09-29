@@ -1032,7 +1032,7 @@ export const blogPosts = ([
     ],
     faq: [
       {
-        question: "Quanto tempo leva para ver resultado na musculação?",
+        question: "Quanto tempo leva para ver ganho de massa muscular?",
         answer:
           "Mudanças na composição corporal começam a ser percebidas entre 6 e 8 semanas de treino consistente, mas transformações visuais significativas aparecem entre 3 e 6 meses. O prazo varia conforme nível de experiência, alimentação, sono e qualidade do treino. Iniciantes respondem mais rápido; pessoas com mais tempo de treino progridem mais devagar — o que é fisiologicamente normal.",
       },
@@ -2742,14 +2742,14 @@ export const blogPosts = ([
   {
     slug: "quanto-tempo-para-aparecer-resultado-na-academia",
     title: "Quanto Tempo Leva Para Aparecer Resultado na Academia? A Resposta Honesta",
-    metaTitle: "Quanto Tempo Para Aparecer Resultado na Academia?",
+    metaTitle: "Quanto Tempo Para Ver Resultado na Academia? 1 Semana a 6 Meses",
     metaDescription:
       "Quanto tempo leva para ver resultado na academia? Descubra o que muda semana a semana, mês a mês e em 1 ano — com prazos reais, fatores que aceleram e...",
     excerpt:
       "Todo mundo quer saber quando vai começar a ver resultado. A resposta honesta não cabe em uma frase — mas é muito mais útil do que qualquer prazo genérico que você já leu por aí.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-09-29",
     readTime: "13 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -2839,6 +2839,28 @@ export const blogPosts = ([
 <p>Com um ano de treino sério, o corpo é significativamente diferente do ponto de partida. Não da forma espetacular que os anúncios prometem — da forma real, que é permanente e funcional.</p>
 <p>Um iniciante que treinou bem por 1 ano pode ter acumulado entre 8 e 15 kg de massa muscular. Um intermediário, entre 4 e 6 kg. Para quem tinha sobrepeso e focou em recomposição corporal, a transformação visual pode ser ainda mais marcante — porque a combinação de perda de gordura e ganho muscular produz mudanças proporcionalmente maiores.</p>
 <p>E o mais importante: quem chegou a 1 ano não parou. Esse é o ponto em que o treino deixa de ser esforço e vira estilo de vida.</p>
+
+<h2>O que muda com 1 semana de academia?</h2>
+<p>No espelho, quase nada — e isso é normal. O que muda primeiro é por dentro: disposição, sono e um ganho de força que vem do sistema nervoso aprendendo o movimento, antes de o músculo crescer.</p>
+
+<h2>É possível ver resultado com 1 mês de academia?</h2>
+<p>Sim, mas sutil: roupas um pouco diferentes, músculos mais firmes, mais força e fôlego. Quem convive com você geralmente ainda não nota. É a fase em que mais gente desiste — justamente antes de os resultados ficarem visíveis.</p>
+
+<h2>O que acontece com 3 meses de academia?</h2>
+<p>É quando as mudanças costumam aparecer para os outros: mais contorno, menos medida na cintura se houver déficit calórico, e ganhos de força claros. Para ganho de massa muscular visível, o guia de <a href="/blog/quanto-tempo-para-ganhar-massa-muscular">quanto tempo para ganhar massa muscular</a> detalha o ritmo mês a mês.</p>
+
+<h2>Quanto tempo demora para o corpo definir?</h2>
+<p>Definição depende de duas coisas ao mesmo tempo: ter músculo e ter pouca gordura por cima dele. Por isso não há prazo único — para quem precisa perder mais gordura, a definição vem depois de meses de déficit calórico com musculação.</p>
+
+<h2>Resultado por região: pernas, barriga, glúteos e braços</h2>
+<ul>
+<li><strong>Pernas e glúteos:</strong> músculos grandes, costumam mostrar firmeza e força cedo; volume visível leva meses.</li>
+<li><strong>Braços:</strong> o contorno aparece quando o músculo cresce e a gordura do braço diminui — os dois caminham juntos.</li>
+<li><strong>Barriga:</strong> não existe perda de gordura localizada; a barriga diminui com o emagrecimento do corpo todo, e costuma ser uma das últimas regiões a mudar.</li>
+</ul>
+
+<h2>E para mulheres?</h2>
+<p>O caminho é o mesmo. Mulheres tendem a ganhar massa muscular em ritmo menor que homens, então vale ter paciência e comparar o seu corpo com ele mesmo — fotos a cada mês, no mesmo ângulo, dizem mais que a balança. Seis meses de treino consistente costumam trazer uma mudança bem visível.</p>
 
 <h2>A linha do tempo em resumo</h2>
 
