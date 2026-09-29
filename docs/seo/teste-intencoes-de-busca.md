@@ -16,7 +16,7 @@ Hipótese: título, descrição e FAQ pelas buscas reais sobem o CTR e a posiç�
 |---|---|---|---|---|---|
 | crossover-vs-crucifixo | 5.081 | 8,3 | 14 | 29/09 | ver git log |
 | treino-upper-lower-superior-inferior | 3.280 | 8,6 | 56 | 29/09 | ver git log |
-| cardio-ou-musculacao-mounjaro | 1.898 | 8,4 | 3 | — | — |
+| cardio-ou-musculacao-mounjaro | 1.898 | 8,4 | 3 | 29/09 | ver git log |
 | calorias-para-ganhar-massa-muscular | 643 | 10,1 | 2 | — | — |
 | frutas-antes-do-treino | 622 | 8,2 | 1 | — | — |
 
@@ -67,3 +67,9 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 - metaDescription reescrita (depressão trocantérica, dá para acabar, exercícios, antes e depois, preenchimento).
 - H2 novos: é possível acabar; melhora com academia (com links para abdução na máquina e glúteo médio, separando os temas); antes e depois; preenchimento e cirurgia (sem valores, encaminha ao médico).
 - FAQ +4: o que é ter; dá para acabar; melhora com academia; quanto custa corrigir.
+
+### cardio-ou-musculacao-mounjaro (29/09) — braço A
+- metaTitle: "Cardio ou Musculação no Mounjaro? Qual Preserva Músculo" → "Cardio ou Musculação com Mounjaro? O Que Fazer (e Quanto)"
+- metaDescription reescrita (tem que malhar, quanto de cada, cardio todo dia).
+- H2 novos: quem toma Mounjaro tem que malhar (link p/ mounjaro-faz-perder-musculos); pode fazer cardio todo dia; parágrafo "pode aplicar e ir treinar" (sem regra de dose, encaminha ao médico).
+- Observação de canibalização: há 12 artigos sobre Mounjaro. As buscas "treino para quem toma", "faz perder massa" e "cardápio" pertencem a outros artigos do cluster; aqui só apontamos para eles. "Preço" e "5mg emagrece quantos quilos" ficam de fora (fora do escopo de um personal).

@@ -10791,14 +10791,14 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "cardio-ou-musculacao-mounjaro",
     title: "Cardio ou Musculação Durante o Uso de Mounjaro?",
-    metaTitle: "Cardio ou Musculação no Mounjaro? Qual Preserva Músculo",
+    metaTitle: "Cardio ou Musculação com Mounjaro? O Que Fazer (e Quanto)",
     metaDescription:
-      "Em déficit forte, quem só caminha perde mais massa magra. Veja como dividir a semana, que volume de treino basta e o que fazer nos dias sem energia.",
+      "Quem toma Mounjaro precisa fazer musculação ou cardio? A musculação vem primeiro para não perder músculo; o cardio entra junto. Veja quanto de cada, se pode fazer cardio todo dia e como treinar.",
     excerpt:
       "A maioria dos usuários de Mounjaro prefere só caminhar. Mas se o objetivo é emagrecer sem perder músculo, a musculação deve ser prioridade. Veja por que — e como combinar os dois da forma certa.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-07-28",
+    updatedAt: "2026-09-29",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -10812,7 +10812,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     ],
     faq: [
       {
-        question: "Preciso fazer musculação usando Mounjaro ou só cardio basta?",
+        question: "Quem toma Mounjaro tem que malhar? Só cardio basta?",
         answer:
           "Para a maioria das pessoas cujo objetivo é emagrecer com qualidade — perdendo gordura e preservando músculo —, a musculação é superior ao cardio isolado. O cardio auxilia na saúde cardiovascular e queima calórica adicional, mas não preserva músculo de forma eficaz. O ideal é combinar musculação com algum cardio moderado.",
       },
@@ -10889,6 +10889,12 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>A questão não é "cardio ou musculação?" — é "musculação <em>e depois</em> cardio moderado". O cardio complementa; não substitui.</p>
 
+<h2>Quem toma Mounjaro tem que malhar?</h2>
+<p>Não é obrigatório para o remédio funcionar, mas é o que protege o seu resultado. Quando o peso cai rápido, parte do que se perde é músculo — e é a musculação que sinaliza ao corpo para mantê-lo. Sem ela, o risco é emagrecer e ficar mais flácido e mais fraco. O guia de <a href="/blog/mounjaro-faz-perder-musculos">Mounjaro faz perder músculo?</a> explica esse mecanismo em detalhe.</p>
+
+<h2>Quem toma Mounjaro pode fazer cardio todo dia?</h2>
+<p>Cardio leve a moderado, como caminhada, pode ser feito na maioria dos dias. O cuidado é com o excesso: com o apetite baixo, comendo pouco, cardio intenso e longo todo dia aumenta o cansaço e pode acelerar a perda de massa magra. Se precisar escolher, priorize a musculação e use o cardio como complemento.</p>
+
 <h2>A combinação ideal para usuários de Mounjaro</h2>
 
 <h3>Musculação: 3-4 dias por semana</h3>
@@ -10905,6 +10911,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>O treinamento intervalado de alta intensidade é eficaz para queima de gordura, mas exige muito da recuperação. Com as calorias reduzidas pelo Mounjaro, a capacidade de recuperação já está comprometida. Reserve o HIIT para no máximo 1 vez por semana quando já estiver adaptado ao medicamento e ao treino.</p>
 
 <h2>Gerenciando a energia baixa durante o treino</h2>
+<p><strong>Pode aplicar e ir treinar?</strong> Não há uma regra única de horário. Nos primeiros dias depois da aplicação ou de um aumento de dose, é comum sentir náusea e menos energia — nesses dias, prefira treinos mais leves e hidrate-se. Siga sempre a orientação do médico que prescreveu o remédio.</p>
 
 <p>Um dos principais desafios de treinar usando Mounjaro é a energia reduzida que vem do déficit calórico. Algumas estratégias práticas:</p>
 
