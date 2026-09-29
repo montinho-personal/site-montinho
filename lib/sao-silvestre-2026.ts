@@ -342,4 +342,85 @@ ${FONTES_SS}`,
       { question: "Quando um brasileiro venceu a São Silvestre pela última vez?", answer: "No masculino, Marílson Gomes dos Santos, em 2010. No feminino, Lucélia Peres, em 2006." },
     ],
   },
+  {
+    slug: "primeira-sao-silvestre-dicas",
+    title: "Primeira São Silvestre: dicas para estrear nos 15 km",
+    metaTitle: "Primeira São Silvestre: Dicas para Iniciantes (Guia 2026)",
+    metaDescription:
+      "Vai correr a São Silvestre pela primeira vez? O que fazer na véspera, o que levar, como largar no pelotão, segurar a descida e encarar a Brigadeiro. Guia para iniciantes.",
+    excerpt:
+      "Guia para quem vai estrear na São Silvestre: preparação, véspera, o que levar, largada no pelotão, descida, Brigadeiro e o pós-prova.",
+    category: "Treinamento",
+    date: "2026-09-29",
+    readTime: "7 min",
+    author: AUTOR,
+    tags: ["São Silvestre", "São Silvestre 2026", "primeira corrida", "iniciante", "dicas de corrida", "15 km"],
+    content: `<img src="/blog-images/primeira-sao-silvestre-dicas-capa.webp" alt="Capa: primeira São Silvestre — dicas para estrear nos 15 km, da véspera à chegada na Paulista" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<p>A primeira <strong>São Silvestre</strong> tem um clima que nenhuma outra prova tem: dezenas de milhares de pessoas na Paulista, fantasia, música e o último dia do ano. Também tem armadilhas que pegam quase todo estreante — a descida forte logo depois da largada, o pelotão apertado e a subida da Brigadeiro no fim. Este guia é para você chegar à chegada inteiro e com vontade de voltar.</p>
+
+<h2>Quanto tempo antes começar a treinar?</h2>
+<p>Quanto antes, melhor. Para quem já corre 5 km, de 10 a 13 semanas bastam para chegar aos 15 km com segurança. Para quem está começando do zero, o mesmo prazo permite completar a prova alternando corrida e caminhada — e três a seis meses deixam tudo mais tranquilo. O <a href="/blog/treino-sao-silvestre-13-semanas">plano de treino de 13 semanas</a> traz uma planilha só para iniciantes, também em PDF para imprimir.</p>
+
+<h2>Como se preparar: o básico que resolve</h2>
+<ul>
+<li><strong>Aumente o volume aos poucos.</strong> Suba a distância semana a semana, com uma semana mais leve a cada três ou quatro.</li>
+<li><strong>Corra quase sempre leve.</strong> Uma regra usada por treinadores é a do <strong>80/20</strong>: cerca de 80% do treino em ritmo fácil, em que dá para conversar, e só 20% em ritmo forte. Para quem está começando, é o que evita lesão e cansaço acumulado.</li>
+<li><strong>Faça musculação duas vezes por semana.</strong> Pernas e tronco fortes protegem as articulações e seguram a Brigadeiro.</li>
+<li><strong>Treine subidas.</strong> A partir da metade da preparação, inclua subidas curtas em um treino por semana.</li>
+</ul>
+
+<h2>O que fazer um dia antes da prova</h2>
+<ul>
+<li>Descanse ou faça só uma caminhada ou um trote bem leve.</li>
+<li>Coma o que você está acostumado; nada de testar comida nova.</li>
+<li>Beba água ao longo do dia.</li>
+<li>Separe tudo à noite: número de peito com chip, roupa, tênis, documento.</li>
+<li>Durma cedo. A largada do pelotão geral é de manhã cedo — em 2025, foi às 8h10.</li>
+</ul>
+
+<h2>O que levar e o que vestir</h2>
+<ul>
+<li><strong>Tênis já amaciado</strong>, usado em treinos longos. Tênis novo na prova é a receita de bolha.</li>
+<li><strong>Roupa leve</strong>, que você já testou. Dezembro em São Paulo costuma ser quente; boné e protetor solar ajudam.</li>
+<li><strong>Número de peito preso na frente</strong>, com o chip, sem dobrar.</li>
+<li>Pouca coisa nos bolsos: <strong>documento de identificação</strong> e cartão ou celular bastam.</li>
+<li><strong>Hidratação:</strong> use os postos de água do percurso. Gel ou isotônico só se você já testou no treino — prova não é lugar de novidade.</li>
+<li>Se for fantasiado, teste a fantasia num treino antes — 15 km é bastante tempo para algo apertar ou esquentar.</li>
+</ul>
+
+<h2>Chegue cedo</h2>
+<p>A região da Paulista fica fechada e cheia. Planeje chegar com folga, de preferência de transporte público, e deixe tempo para banheiro e para entrar no seu pelotão com calma. Chegar em cima da hora é o jeito mais fácil de começar a prova ansioso.</p>
+
+<h2>Na largada: paciência com o pelotão</h2>
+<p>No pelotão geral, os primeiros minutos são de gente parada, andando e se esbarrando. Não gaste energia costurando entre as pessoas: o ritmo abre sozinho depois dos primeiros quilômetros. O seu tempo é marcado pelo chip a partir do momento em que você cruza o tapete da largada, não do tiro.</p>
+
+<h2>A descida: o erro número um do estreante</h2>
+<p>Logo depois da largada o percurso desce forte em direção ao Pacaembu. Com a empolgação e a ladeira a favor, dá vontade de voar — e é aí que muita gente queima a perna que vai faltar no fim. Desça solto, com passos curtos, num ritmo que pareça fácil demais. Veja o <a href="/blog/percurso-sao-silvestre">percurso trecho a trecho</a>.</p>
+
+<h2>A Brigadeiro: esforço, não velocidade</h2>
+<p>A subida da Avenida Brigadeiro Luís Antônio vem no fim. Diminua o ritmo, encurte a passada, incline levemente o corpo para a frente e use os braços. Caminhar em algum momento é normal e pode ser a melhor estratégia. O que não pode é chegar ali sem energia porque você correu rápido demais na descida.</p>
+
+<h2>Dor: quando parar</h2>
+<p>Cansaço e desconforto muscular fazem parte. Dor forte, dor que piora a cada passo, dor em um ponto do osso, tontura ou mal-estar não fazem: pare, caminhe e procure o atendimento médico da prova. Nenhuma medalha vale uma lesão.</p>
+
+<h2>Depois da chegada</h2>
+<p>Continue andando alguns minutos, beba água e coma algo. Nos dias seguintes, é normal ter dor muscular; caminhadas leves ajudam. Volte a correr quando as pernas estiverem sem dor.</p>
+
+<h2>Quanto tempo você vai levar?</h2>
+<p>Na primeira São Silvestre, a meta é terminar bem — mas é natural querer ter uma ideia. O <a href="/ferramentas/previsor-sao-silvestre">Previsor da São Silvestre</a> parte do seu tempo em 5 km, 10 km ou meia e mostra a faixa provável nos 15 km, já com a subida na conta.</p>
+
+<h2>Corra a sua prova</h2>
+<p>Na primeira São Silvestre você vai ver gente mais rápida, mais lenta, fantasiada, caminhando e correndo. Não se compare com ninguém: cada um tem a própria genética, rotina e história, com altos e baixos. A sua prova é contra o seu relógio — e o objetivo é voltar no ano que vem. Se quiser se preparar comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+${FONTES_SS}`,
+    faq: [
+      { question: "Iniciante pode correr a São Silvestre?", answer: "Pode. A prova é aberta a quem corre e a quem alterna corrida e caminhada. Com algumas semanas de preparação gradual, é possível completar os 15 km com segurança." },
+      { question: "Quanto tempo antes devo começar a treinar para a primeira São Silvestre?", answer: "Para quem já corre 5 km, 10 a 13 semanas bastam. Para quem está começando do zero, o ideal é ter de três a seis meses, ou fazer a prova alternando corrida e caminhada." },
+      { question: "O que é a regra 80/20 na corrida?", answer: "É a orientação de fazer cerca de 80% do treino em ritmo fácil, em que dá para conversar, e só 20% em ritmo forte. Ajuda a evoluir sem acumular cansaço nem se lesionar." },
+      { question: "O que fazer um dia antes de correr a São Silvestre?", answer: "Descansar ou fazer só um trote leve, comer o que já está acostumado, beber água, separar número, chip, roupa e tênis e dormir cedo." },
+      { question: "O que levar no dia da São Silvestre?", answer: "Número de peito com chip preso na frente da camiseta, documento de identificação, tênis já amaciado, roupa leve testada, boné e protetor solar. Gel ou isotônico só se já testou no treino." },
+      { question: "O que tomar para ter mais fôlego na São Silvestre?", answer: "Fôlego vem do treino, não de um produto. No dia, beba água nos postos do percurso e use gel ou isotônico apenas se já tiver testado em treinos longos." },
+      { question: "Qual o maior erro de quem corre a São Silvestre pela primeira vez?", answer: "Correr rápido demais na descida logo depois da largada. A energia gasta ali faz falta na subida da Brigadeiro, no fim da prova." },
+    ],
+  },
 ];

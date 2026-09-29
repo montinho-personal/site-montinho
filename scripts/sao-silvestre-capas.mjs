@@ -108,6 +108,14 @@ const CAPAS = [
 <div class="main"><h1>Vencedores da<br><em>São Silvestre</em></h1>
 <div class="sub">Recorde de <b>42min59s</b> · Rosa Mota, <b>6 títulos</b><br>Marílson, o único brasileiro tricampeão.</div></div>`, "1925"),
   },
+  {
+    slug: "primeira-sao-silvestre-dicas",
+    alt: "Capa: primeira São Silvestre — dicas para estrear nos 15 km, da véspera à chegada na Paulista",
+    html: base(`
+<div class="top"><div class="kicker">São Silvestre 2026 · Iniciantes</div><div class="chip"><i></i>Guia de estreia</div></div>
+<div class="main"><h1>Sua primeira<br><em>São Silvestre</em></h1>
+<div class="sub">Da véspera à chegada: largada, descida<br>e como encarar a <b>Brigadeiro</b>.</div></div>`, "1ª VEZ"),
+  },
 ];
 // Só algumas capas: node scripts/sao-silvestre-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);
