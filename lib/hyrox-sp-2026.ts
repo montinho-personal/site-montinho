@@ -51,6 +51,7 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
 <li><strong>Força de pernas e tronco:</strong> trenó, avanço e wall ball são pernas; agachamento, afundo e remada seguram a prova.</li>
 <li><strong>Última semana:</strong> reduza o volume, mantenha um pouco de intensidade e não teste nada novo — nem tênis, nem suplemento.</li>
 </ul>
+<p><strong>Quer imprimir?</strong> <a href="/downloads/planilha-treino-hyrox.pdf" download>Baixe a planilha de treino HYROX em PDF</a> — 8 semanas de força, corrida e simulado, mais a reta final até 17/10.</p>
 <p>Para correr melhor os trechos de 1 km, veja <a href="/blog/como-melhorar-o-pace-na-corrida">como melhorar o pace na corrida</a>.</p>
 
 <h2>Resultados do HYROX São Paulo</h2>
@@ -69,6 +70,7 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
       { question: "Onde vai ser o HYROX em São Paulo?", answer: "No Distrito Anhembi (Expo 1 e 2), na Av. Olavo Fontoura, 1209, em Santana, zona norte de São Paulo." },
       { question: "Quanto custa o HYROX?", answer: "Depende da categoria (individual, dupla ou revezamento) e do lote. O valor atualizado está na plataforma oficial de inscrição do HYROX Brasil." },
       { question: "O que faz no HYROX?", answer: "8 trechos de 1 km de corrida, cada um seguido de uma estação: SkiErg, empurrar trenó, puxar trenó, burpee com salto, remo, carregamento, avanço com saco de areia e wall ball." },
+      { question: "Tem planilha de treino para o HYROX?", answer: "Tem. A planilha gratuita em PDF traz 8 semanas de força, corrida e simulado e a reta final de 3 semanas até o HYROX São Paulo." },
       { question: "Quando é o próximo HYROX São Paulo?", answer: "A organização já anunciou a edição seguinte para 8 e 9 de maio de 2027." },
     ],
   },
