@@ -67,7 +67,9 @@ export const OLYMPIA_BRASIL_EXPO_2026_POSTS: BlogPost[] = [
 <p>Os campeões de cada categoria e quem ganhou o Pro Card entram nesta página durante o fim de semana do evento.</p>
 
 <h2>Do palco para o seu treino</h2>
-<p>Quer entender o peso de palco de um atleta de Classic Physique? Use a <a href="/ferramentas/calculadora-peso-classic-physique">calculadora de peso da Classic Physique</a>.</p>
+<p>Viu os atletas no palco e ficou com a pergunta "quanto tempo eu levaria para chegar perto disso?" Compare o seu estágio hoje com a referência da Classic Physique:</p>
+<!--SHAPE:classic-->
+<p>O limite de peso por altura da categoria está na <a href="/ferramentas/calculadora-peso-classic-physique">calculadora de peso da Classic Physique</a>.</p>
 <p>E um lembrete: não se compare com quem sobe no palco. Cada um tem a própria genética, rotina e história, com altos e baixos. O que dá resultado é um treino que você consiga seguir por anos, com aderência e progressão. Se quiser montar o seu, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
 
 <h2>Fontes</h2>

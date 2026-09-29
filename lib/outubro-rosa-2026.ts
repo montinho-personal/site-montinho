@@ -28,6 +28,7 @@ export const OUTUBRO_ROSA_POSTS: BlogPost[] = [
 <li><strong>150 minutos</strong> de atividade moderada (caminhada rápida, bike leve, dança) <strong>ou 75 minutos</strong> de atividade vigorosa (corrida, aula intensa), ou uma combinação das duas;</li>
 <li>e, segundo o próprio INCA, <strong>qualquer tempo de movimento</strong>, em qualquer intensidade, já traz benefício para quem hoje está parada.</li>
 </ul>
+<p>Moderada ou vigorosa? Moderada é quando dá para conversar mas não para cantar; vigorosa, quando só sai uma frase curta. Para saber a faixa de batimentos de cada uma no seu caso, use a <a href="/ferramentas/zonas-de-frequencia-cardiaca">calculadora de zonas de frequência cardíaca</a>.</p>
 
 <h2>A musculação pode prevenir o câncer?</h2>
 <p>A musculação entra na conta da atividade física semanal e ajuda a manter massa muscular e controlar a gordura corporal, que é um dos caminhos da prevenção. O ideal é combinar: <strong>musculação duas vezes por semana</strong> e atividade aeróbica (caminhada, corrida, bike) nos outros dias.</p>
