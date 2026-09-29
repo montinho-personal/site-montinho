@@ -20061,6 +20061,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "condomínio", "Alphaville", "academia condomínio"],
     faq: [
+      { question: "Qual o valor de 1 hora de personal trainer no condomínio em Alphaville?", answer: "Depende da frequência semanal e do tipo de plano: pacote por frequência, pacote flexível ou consultoria online. Treinar no espaço fitness do condomínio evita deslocamento. Os planos são apresentados numa conversa rápida pelo WhatsApp." },
+      { question: "Quanto custa um personal trainer 3 vezes por semana?", answer: "Três treinos por semana é a frequência mais procurada, e no pacote o valor por sessão fica menor que na aula avulsa. A proposta exata depende do horário — chame no WhatsApp para conhecer os planos." },
+      { question: "É melhor treinar 3 ou 5 vezes na semana?", answer: "Para a maioria, 3 treinos bem estruturados dão resultado e cabem na rotina. Cinco só compensa com sono, recuperação e tempo para manter — o que mais pesa é sustentar a frequência por meses." },
+      { question: "É vantajoso pagar um personal trainer?", answer: "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado ao equipamento do condomínio e às suas limitações." },
       {
         question: "Personal trainer pode entrar no condomínio em Alphaville para treinar comigo?",
         answer:
@@ -20112,6 +20116,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Como funciona o atendimento em condomínios de Alphaville</h2>
 <p>Conheço pessoalmente a maioria dos condomínios de Alphaville — Alphaville 1, 2, os residenciais da região de Santana de Parnaíba — e sei o que cada academia tem disponível. Quando começo com um novo aluno, visito o espaço antes de montar o protocolo. O treino é construído para o equipamento real que existe ali, não para uma academia imaginária. Cada sessão tem atenção exclusiva, correção técnica em tempo real e progressão monitorada semana a semana.</p>
+
+<h2>Quanto custa personal no condomínio e os tipos de plano</h2>
+<p>O valor depende da frequência semanal e do tipo de plano: <strong>pacote por frequência semanal</strong> (de 2 a 5 treinos, com valor por sessão menor quanto mais treinos), <strong>pacote flexível</strong> (aulas para usar no ritmo possível) e <strong>consultoria online</strong>, para quem quer treinar sozinho no espaço fitness com treino individual. Antes de começar, verificamos juntos o regulamento do condomínio para a entrada de personal. Para ver qual plano cabe na sua rotina, <a href="/contato">fale comigo pelo WhatsApp</a>.</p>
 
 <h2>Para quem é esse atendimento</h2>
 <ul>

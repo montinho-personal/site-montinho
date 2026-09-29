@@ -22,6 +22,26 @@ export const metadata: Metadata = {
 
 const faq = [
   {
+    question: "Qual o valor de 1 hora de personal trainer no condomínio no Tamboré?",
+    answer:
+      "Depende da frequência semanal e do tipo de plano: pacote por frequência, pacote flexível ou consultoria online. Treinar no espaço fitness do condomínio evita deslocamento. Os planos são apresentados numa conversa rápida pelo WhatsApp.",
+  },
+  {
+    question: "Quanto custa um personal trainer 3 vezes por semana?",
+    answer:
+      "Três treinos por semana é a frequência mais procurada, e no pacote o valor por sessão fica menor que na aula avulsa. A proposta exata depende do horário — chame no WhatsApp para conhecer os planos.",
+  },
+  {
+    question: "É melhor treinar 3 ou 5 vezes na semana?",
+    answer:
+      "Para a maioria, 3 treinos bem estruturados dão resultado e cabem na rotina. Cinco só compensa com sono, recuperação e tempo para manter — o que mais pesa é sustentar a frequência por meses.",
+  },
+  {
+    question: "É vantajoso pagar um personal trainer?",
+    answer:
+      "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado ao equipamento do condomínio e às suas limitações.",
+  },
+  {
     question: "Personal trainer pode treinar na academia do meu condomínio no Tamboré?",
     answer:
       "Sim. A maioria dos condomínios de Tamboré permite acesso de personal trainers cadastrados. O processo de cadastro varia por condomínio — em alguns basta apresentar documentação profissional, em outros há aprovação pelo síndico. Facilito esse processo para novos alunos.",
