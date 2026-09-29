@@ -31,7 +31,8 @@ export const SAO_SILVESTRE_2026_POSTS: BlogPost[] = [
     readTime: "5 min",
     author: AUTOR,
     tags: ["São Silvestre", "São Silvestre 2026", "inscrição", "corrida de rua", "15 km"],
-    content: `<blockquote><p><strong>As inscrições abrem na quarta-feira, 30 de setembro de 2026, às 10h (Brasília).</strong> São 55 mil vagas, e o kit mais barato custa R$ 335,90. Última verificação: 29 de setembro de 2026.</p></blockquote>
+    content: `<img src="/blog-images/inscricao-sao-silvestre-2026-capa.webp" alt="Capa: inscrição da São Silvestre 2026 — 55 mil vagas, sem sorteio, kits de R$ 335,90 a R$ 1.039,90; prova em 31/12" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p><strong>As inscrições abrem na quarta-feira, 30 de setembro de 2026, às 10h (Brasília).</strong> São 55 mil vagas, e o kit mais barato custa R$ 335,90. Última verificação: 29 de setembro de 2026.</p></blockquote>
 <p>A <strong>101ª Corrida Internacional de São Silvestre</strong> acontece na <strong>quinta-feira, 31 de dezembro de 2026</strong>, na região central de São Paulo, com os tradicionais <strong>15 km</strong>. É a primeira edição depois do centenário, comemorado em 2025. As inscrições abrem em <strong>30 de setembro, às 10h</strong>, por venda direta — <strong>sem sorteio</strong> — na plataforma oficial, a Ticket Sports by Ingresse.</p>
 
 <h2>Resumo da São Silvestre 2026</h2>
@@ -107,7 +108,8 @@ ${FONTES_SS}`,
     readTime: "9 min",
     author: AUTOR,
     tags: ["São Silvestre", "São Silvestre 2026", "treino de corrida", "15 km", "corrida de rua", "plano de treino"],
-    content: `<p>A São Silvestre tem <strong>15 km</strong>, com largada e chegada na Avenida Paulista. Da abertura das inscrições até a largada, em <strong>31 de dezembro</strong>, são cerca de <strong>13 semanas</strong>. É tempo suficiente para chegar bem aos <strong>15 km da São Silvestre</strong> — desde que o plano respeite o ponto de onde você parte. Quem hoje não corre 20 minutos seguidos e quem já faz 10 km precisam de treinos diferentes, e é por isso que este guia traz três planilhas, uma para cada ponto de partida — incluindo uma para iniciantes.</p>
+    content: `<img src="/blog-images/treino-sao-silvestre-13-semanas-capa.webp" alt="Capa: planilha de treino para a São Silvestre — 13 semanas em três níveis, do iniciante a quem quer baixar o tempo" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<p>A São Silvestre tem <strong>15 km</strong>, com largada e chegada na Avenida Paulista. Da abertura das inscrições até a largada, em <strong>31 de dezembro</strong>, são cerca de <strong>13 semanas</strong>. É tempo suficiente para chegar bem aos <strong>15 km da São Silvestre</strong> — desde que o plano respeite o ponto de onde você parte. Quem hoje não corre 20 minutos seguidos e quem já faz 10 km precisam de treinos diferentes, e é por isso que este guia traz três planilhas, uma para cada ponto de partida — incluindo uma para iniciantes.</p>
 <p>Antes de escolher, vale saber quanto tempo você levaria hoje: o <a href="/ferramentas/previsor-sao-silvestre">Previsor da São Silvestre</a> parte do seu tempo em 5 km, 10 km ou meia e mostra a faixa provável nos 15 km, com a subida na conta.</p>
 
 <h2>Qual planilha é a sua?</h2>
@@ -216,7 +218,8 @@ ${FONTES_SS}`,
     readTime: "6 min",
     author: AUTOR,
     tags: ["São Silvestre", "São Silvestre 2026", "percurso", "15 km", "Brigadeiro Luís Antônio", "corrida de rua"],
-    content: `<blockquote><p>O percurso oficial de 2026 é publicado no regulamento da prova. Esta página descreve o trajeto de 2025, usado como referência, e é atualizada se houver mudança. Última verificação: 29 de setembro de 2026.</p></blockquote>
+    content: `<img src="/blog-images/percurso-sao-silvestre-capa.webp" alt="Capa: percurso da São Silvestre trecho a trecho — Paulista, Pacaembu, centro e a subida da Brigadeiro" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p>O percurso oficial de 2026 é publicado no regulamento da prova. Esta página descreve o trajeto de 2025, usado como referência, e é atualizada se houver mudança. Última verificação: 29 de setembro de 2026.</p></blockquote>
 <p>A São Silvestre tem <strong>15 km</strong> — não 42, como às vezes se pensa: 42 km é a distância da maratona. A largada e a chegada ficam na <strong>Avenida Paulista</strong>, em pontos diferentes, e no meio o trajeto desce até o Pacaembu, atravessa o centro histórico de São Paulo e volta subindo a <strong>Avenida Brigadeiro Luís Antônio</strong>.</p>
 
 <h2>O percurso em resumo</h2>
@@ -287,7 +290,8 @@ ${FONTES_SS}`,
     readTime: "5 min",
     author: AUTOR,
     tags: ["São Silvestre", "vencedores São Silvestre", "recorde São Silvestre", "corrida de rua", "atletismo"],
-    content: `<p>A <strong>São Silvestre</strong> é disputada desde 1925 e, desde que virou internacional, é dominada por corredores do leste da África. Aqui estão os <strong>vencedores de 2025</strong>, os <strong>recordes</strong> dos 15 km, os <strong>maiores campeões</strong> da história e os <strong>brasileiros</strong> que já venceram. A 101ª edição, em 31 de dezembro de 2026, entra nesta página com o resultado oficial.</p>
+    content: `<img src="/blog-images/vencedores-sao-silvestre-capa.webp" alt="Capa: vencedores da São Silvestre — recorde de 42min59s, Rosa Mota com seis títulos e Marílson, único brasileiro tricampeão" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<p>A <strong>São Silvestre</strong> é disputada desde 1925 e, desde que virou internacional, é dominada por corredores do leste da África. Aqui estão os <strong>vencedores de 2025</strong>, os <strong>recordes</strong> dos 15 km, os <strong>maiores campeões</strong> da história e os <strong>brasileiros</strong> que já venceram. A 101ª edição, em 31 de dezembro de 2026, entra nesta página com o resultado oficial.</p>
 
 <h2>Vencedores da São Silvestre 2025</h2>
 <p>Na 100ª edição, em 31 de dezembro de 2025:</p>
