@@ -148,6 +148,14 @@ const CAPAS = [
 <div class="main"><h1>Black Friday de<br><em>suplementos</em></h1>
 <div class="sub">Whey e creatina pelo <b>preço por dose</b>,<br>não pelo pote — e sem desconto falso.</div></div>`, "27/11"),
   },
+  {
+    slug: "ufc-332-natalia-silva",
+    alt: "Capa: UFC 332 — Natália Silva x Wang Cong pelo cinturão peso-mosca, sábado 3/10",
+    html: base(`
+<div class="top"><div class="kicker">UFC 332 · Sáb 3/10</div><div class="chip"><i></i>Cinturão</div></div>
+<div class="main"><h1><em>Natália Silva</em><br>x Wang Cong</h1>
+<div class="sub">Cinturão <b>peso-mosca</b> · Salt Lake City<br>Card principal às <b>21h</b> (Brasília).</div></div>`, "UFC 332"),
+  },
 ];
 // Só algumas capas: node scripts/sao-silvestre-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);
