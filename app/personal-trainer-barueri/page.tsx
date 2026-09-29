@@ -9,9 +9,9 @@ import Compartilhar from "@/components/share/Compartilhar";
 import { ligacoesDoPerfil } from "@/lib/perfil-google";
 
 export const metadata: Metadata = {
-  title: { absolute: "Personal Trainer em Barueri | Montinho Personal Trainer" },
+  title: { absolute: "Personal Trainer em Barueri: Planos e Atendimento | Montinho" },
   description:
-    "Personal Trainer em Barueri com atendimento presencial na região de Alphaville. Treino individualizado para emagrecimento, hipertrofia e performance — com método e ciência.",
+    "Personal trainer em Barueri e Alphaville: treino na sua academia, no condomínio ou em casa. Veja os tipos de plano, quanto custa treinar 3x por semana e fale no WhatsApp.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-barueri`,
   },
@@ -33,6 +33,26 @@ const faq = [
     question: "Personal trainer em Barueri atende em domicílio?",
     answer:
       "Dependendo da disponibilidade de espaço e equipamento, sim. Avaliamos caso a caso. O importante é que o ambiente permita executar o protocolo de forma segura e progressiva — seja em casa, em academia de condomínio ou em espaço parceiro.",
+  },
+  {
+    question: "Quanto custa 1 mês de personal trainer em Barueri?",
+    answer:
+      "Depende do local do treino, da frequência semanal e do tipo de plano: pacote mensal por frequência, pacote flexível ou consultoria online. Me chame no WhatsApp e eu apresento os planos para a sua rotina.",
+  },
+  {
+    question: "Quanto custa um personal trainer 3 vezes por semana?",
+    answer:
+      "Três treinos por semana é a frequência mais procurada, e no pacote mensal o valor por sessão fica menor que na aula avulsa. A proposta exata depende do local e do horário — é só chamar no WhatsApp.",
+  },
+  {
+    question: "É melhor treinar 3 ou 5 vezes na semana?",
+    answer:
+      "Para a maioria, 3 treinos bem estruturados dão resultado e cabem na rotina. Cinco só compensa com sono, recuperação e tempo para manter — o que mais pesa é sustentar a frequência por meses.",
+  },
+  {
+    question: "É vantajoso pagar um personal trainer?",
+    answer:
+      "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. Costuma sair mais barato que meses sem resultado ou uma lesão.",
   },
   {
     question: "Quanto custa um personal trainer em Barueri?",
@@ -492,6 +512,52 @@ export default function PersonalTrainerBarueri() {
             Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
           </p>
           <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
+        </div>
+      </section>
+
+      {/* PLANOS E VALOR */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Planos e valor
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-6"
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
+          >
+            Quanto custa um personal trainer em Barueri?
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
+            <p>
+              O valor de um mês de personal trainer em Barueri depende de três coisas: <strong className="text-white">onde</strong> o treino acontece (na sua academia, no condomínio ou em casa), <strong className="text-white">quantas vezes por semana</strong> você treina e se precisa de flexibilidade de agenda. Por isso não trabalho com tabela única — cada plano é montado para a rotina de quem vai treinar.
+            </p>
+            <h3 className="text-white font-semibold text-lg pt-2">Os tipos de plano</h3>
+            <ul className="list-disc pl-5 space-y-2">
+              <li><strong className="text-white">Pacote mensal por frequência</strong> (de 2 a 5 treinos por semana): quanto mais treinos, menor o valor por sessão.</li>
+              <li><strong className="text-white">Pacote flexível</strong>: um número de aulas para usar no ritmo possível, para quem viaja ou tem agenda irregular.</li>
+              <li><strong className="text-white">Consultoria online</strong>: o formato mais acessível, com treino montado e acompanhado à distância. <Link href="/consultoria-online" className="text-white underline underline-offset-4 hover:text-gray-300">Veja como funciona</Link>.</li>
+            </ul>
+            <h3 className="text-white font-semibold text-lg pt-2">É melhor treinar 3 ou 5 vezes por semana?</h3>
+            <p>
+              Para a maioria das pessoas, 3 treinos bem estruturados por semana dão resultado consistente e cabem na rotina. Cinco vezes só compensa se houver recuperação, sono e tempo para sustentar — senão vira abandono em poucas semanas. O que mais pesa no resultado é manter a frequência por meses, e é ela que define o plano.
+            </p>
+            <h3 className="text-white font-semibold text-lg pt-2">É vantajoso pagar um personal trainer?</h3>
+            <p>
+              Vale quando você quer resultado com segurança: técnica corrigida desde o primeiro treino, progressão de carga no ritmo certo e treino adaptado a dores e limitações. É mais caro que treinar sozinho — e costuma sair mais barato que meses sem resultado ou uma lesão. Mais detalhes em <Link href="/blog/quanto-custa-personal-trainer-barueri" className="text-white underline underline-offset-4 hover:text-gray-300">quanto custa personal trainer em Barueri</Link>.
+            </p>
+            <p>
+              Mora ou trabalha perto? Veja também <Link href="/personal-trainer-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">personal trainer em Alphaville</Link> e <Link href="/blog/personal-trainer-osasco" className="text-white underline underline-offset-4 hover:text-gray-300">em Osasco</Link>.
+            </p>
+          </div>
+          <a
+            href={getWhatsAppUrl("Olá, Montinho! Vi a página de personal trainer em Barueri e queria conhecer os tipos de plano.")}
+            data-wa-origem="planos" data-cta-id="personal-trainer-barueri:planos"
+            target="_blank" rel="noopener noreferrer"
+            className="inline-block mt-8 px-6 py-3 rounded-lg font-semibold text-black"
+            style={{ background: "#BA9E50" }}
+          >
+            Conhecer os planos pelo WhatsApp
+          </a>
         </div>
       </section>
 

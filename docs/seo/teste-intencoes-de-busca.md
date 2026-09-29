@@ -111,3 +111,7 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 - Nova seção "Quanto custa um personal trainer em Alphaville?" (tipos de plano, 3x/semana, é vantajoso, personal na sua academia) sem publicar valor, CTA WhatsApp `personal-trainer-alphaville:planos`.
 - FAQ: +3 perguntas do PAA (valor de 1 hora, 3x por semana, é vantajoso).
 - Medir em 27/10 junto com o teste A/B, comparando com a base acima.
+
+`/personal-trainer-barueri` — base (GSC até 15/09): 331 impressões, 6 cliques, posição 14,4.
+- Título antes: "Personal Trainer em Barueri | Montinho Personal Trainer" → depois: "Personal Trainer em Barueri: Planos e Atendimento | Montinho".
+- Seção "Quanto custa um personal trainer em Barueri?" (planos, 3 ou 5 vezes, é vantajoso) sem valor; CTA `personal-trainer-barueri:planos`; +4 FAQs do PAA; links Alphaville e Osasco (buscas relacionadas).
