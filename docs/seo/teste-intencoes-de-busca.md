@@ -103,3 +103,11 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 - metaTitle: "Treino para Mulher Iniciante: Guia Completo de Musculação" → "Treino para Mulher Iniciante na Academia: Full Body, ABC e Em Casa"
 - H2 novos: ABC; 5 vezes na semana; em casa (link p/ treino-em-casa-sem-equipamento); para emagrecer.
 - Pendente: "PDF" (ficha feminina) como isca futura, no molde da planilha da São Silvestre.
+
+## SEO local — rodada 1 (29/09/2026)
+
+`/personal-trainer-alphaville` — base (GSC até 15/09): 162 impressões, 1 clique, posição 33,1.
+- Título antes: "Personal Trainer em Alphaville | Montinho Personal Trainer" → depois: "Personal Trainer em Alphaville: Planos e Atendimento | Montinho".
+- Nova seção "Quanto custa um personal trainer em Alphaville?" (tipos de plano, 3x/semana, é vantajoso, personal na sua academia) sem publicar valor, CTA WhatsApp `personal-trainer-alphaville:planos`.
+- FAQ: +3 perguntas do PAA (valor de 1 hora, 3x por semana, é vantajoso).
+- Medir em 27/10 junto com o teste A/B, comparando com a base acima.

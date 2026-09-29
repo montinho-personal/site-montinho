@@ -9,9 +9,9 @@ import Compartilhar from "@/components/share/Compartilhar";
 import { ligacoesDoPerfil } from "@/lib/perfil-google";
 
 export const metadata: Metadata = {
-  title: { absolute: "Personal Trainer em Alphaville | Montinho Personal Trainer" },
+  title: { absolute: "Personal Trainer em Alphaville: Planos e Atendimento | Montinho" },
   description:
-    "Personal Trainer em Alphaville com mais de 20 anos de experiência. Treino presencial individualizado para moradores de Alphaville, Barueri e região. Resultados reais, sem fórmulas mágicas.",
+    "Personal trainer em Alphaville com mais de 20 anos de experiência: treino na sua academia, no condomínio ou em casa. Veja os tipos de plano, quanto custa treinar 3x por semana e fale no WhatsApp.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-alphaville`,
   },
@@ -33,6 +33,21 @@ const faq = [
     question: "Quanto custa um personal trainer em Alphaville?",
     answer:
       "O investimento varia conforme o formato de atendimento (domicílio, condomínio ou academia), a frequência semanal e os objetivos de cada aluno. Por isso não trabalho com tabela fechada: na primeira conversa entendo o seu cenário e apresento uma proposta sob medida, sem compromisso.",
+  },
+  {
+    question: "Qual o valor de 1 hora de personal trainer em Alphaville?",
+    answer:
+      "Depende do local do treino, da frequência semanal e do tipo de plano: pacote por frequência, pacote flexível ou consultoria online. Sessão avulsa custa mais por hora do que pacote. Me chame no WhatsApp e eu apresento os planos para o seu caso.",
+  },
+  {
+    question: "Quanto custa um personal trainer 3 vezes por semana?",
+    answer:
+      "Três treinos por semana é a frequência mais procurada, e no pacote semanal o valor por sessão fica menor do que na aula avulsa. A proposta exata depende do local e do horário — é só chamar no WhatsApp.",
+  },
+  {
+    question: "É vantajoso pagar um personal trainer?",
+    answer:
+      "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. É mais caro que treinar sozinho e costuma sair mais barato que meses sem resultado ou uma lesão.",
   },
   {
     question: "Você atende em condomínios residenciais de Alphaville e no Tamboré?",
@@ -533,6 +548,57 @@ export default function PersonalTrainerAlphaville() {
             Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
           </p>
           <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
+        </div>
+      </section>
+
+      {/* PLANOS E VALOR */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Planos e valor
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-6"
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
+          >
+            Quanto custa um personal trainer em Alphaville?
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
+            <p>
+              Não existe um preço único, e desconfie de quem responde sem perguntar nada. O valor de uma hora de personal trainer em Alphaville muda com três coisas: <strong className="text-white">onde</strong> o treino acontece (na sua academia, no condomínio ou em casa), <strong className="text-white">quantas vezes por semana</strong> você treina e se você precisa de flexibilidade de agenda.
+            </p>
+            <h3 className="text-white font-semibold text-lg pt-2">Os tipos de plano</h3>
+            <ul className="list-disc pl-5 space-y-2">
+              <li><strong className="text-white">Pacote por frequência semanal</strong> (de 2 a 5 treinos): quanto mais treinos na semana, menor o valor por sessão. É o formato de quem quer treinar 3 vezes por semana com horário fixo.</li>
+              <li><strong className="text-white">Pacote flexível</strong>: um número de aulas para usar no ritmo possível, para quem viaja ou tem agenda irregular.</li>
+              <li><strong className="text-white">Consultoria online</strong>: o formato mais acessível, com treino montado e acompanhado à distância, para quem já treina sozinho ou mora fora da região. <Link href="/consultoria-online" className="text-white underline underline-offset-4 hover:text-gray-300">Veja como funciona</Link>.</li>
+            </ul>
+            <h3 className="text-white font-semibold text-lg pt-2">Quanto custa treinar 3 vezes por semana?</h3>
+            <p>
+              É a frequência mais procurada e, na maioria dos casos, a que dá resultado sem pesar na rotina. O valor depende do local e do horário; a proposta exata para o seu caso sai numa conversa rápida pelo WhatsApp, sem compromisso.
+            </p>
+            <h3 className="text-white font-semibold text-lg pt-2">É vantajoso pagar um personal trainer?</h3>
+            <p>
+              Vale quando você quer resultado com segurança: técnica corrigida desde o primeiro treino, carga que progride no ritmo certo, treino adaptado a dores e limitações e alguém que ajusta o plano quando a vida muda. É mais caro que treinar sozinho — e costuma sair mais barato que meses sem resultado ou uma lesão.
+            </p>
+            <h3 className="text-white font-semibold text-lg pt-2">Personal na academia que você já frequenta</h3>
+            <p>
+              O acompanhamento pode ser na sua própria academia em Alphaville, como a{" "}
+              <Link href="/blog/ironberg-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">Ironberg</Link>{" "}
+              e outras da região — veja quais <Link href="/blog/academia-com-personal-trainer-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">academias de Alphaville aceitam personal externo</Link> e as{" "}
+              <Link href="/blog/academias-premium-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">academias premium</Link>. Prefere ser atendida por uma abordagem pensada para mulheres? Veja o{" "}
+              <Link href="/blog/personal-trainer-feminino-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">personal trainer feminino em Alphaville</Link>.
+            </p>
+          </div>
+          <a
+            href={getWhatsAppUrl("Olá, Montinho! Vi a página de personal trainer em Alphaville e queria conhecer os tipos de plano.")}
+            data-wa-origem="planos" data-cta-id="personal-trainer-alphaville:planos"
+            target="_blank" rel="noopener noreferrer"
+            className="inline-block mt-8 px-6 py-3 rounded-lg font-semibold text-black"
+            style={{ background: "#BA9E50" }}
+          >
+            Conhecer os planos pelo WhatsApp
+          </a>
         </div>
       </section>
 
