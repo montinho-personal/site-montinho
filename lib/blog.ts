@@ -35078,12 +35078,12 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
   {
   slug: "calorias-para-ganhar-massa-muscular",
   title: "Quantas Calorias Para Ganhar Massa Muscular? Cálculo e Estratégia",
-  metaTitle: "Quantas Calorias Para Ganhar Massa Muscular? Como Calcular",
+  metaTitle: "Calorias Para Ganhar Massa Muscular: Quantas, Como Calcular e O Que Comer",
   metaDescription: "Quantas calorias você precisa para ganhar massa muscular? Aprenda a calcular seu TDEE, definir o superávit correto e como comer para hipertrofia sem...",
   excerpt: "Sem calorias suficientes, o músculo não cresce — mesmo com o treino perfeito. Mas comer demais só engorda. O equilíbrio correto existe e é calculável. Este guia ensina como.",
   category: "Nutrição",
   date: "2026-06-27",
-    updatedAt: "2026-08-27",
+    updatedAt: "2026-09-29",
   readTime: "9 min",
   author: "Montinho",
   tags: ["calorias para ganhar massa", "superávit calórico", "bulk", "hipertrofia", "nutrição musculação"],
@@ -35169,6 +35169,15 @@ TDEE = 1708 × 1,55 = <strong>2.647 kcal/dia</strong></p>
 <li>Carboidrato: 2.947 − 600 − 675 = 1.672 kcal ÷ 4 = 418g</li>
 </ul>
 
+<h2>Calorias boas para ganhar massa: o que comer</h2>
+<p>Bater a meta de calorias com comida de verdade é o que separa ganho de massa de ganho de gordura. As "calorias boas" são as que trazem também proteína, fibras e micronutrientes:</p>
+<ul>
+<li><strong>Proteína em todas as refeições:</strong> ovos, frango, carne, peixe, iogurte, queijos, leguminosas.</li>
+<li><strong>Carboidratos que sustentam o treino:</strong> arroz, feijão, batata, mandioca, aveia, pão, frutas.</li>
+<li><strong>Gorduras que somam calorias sem volume:</strong> azeite, castanhas, pasta de amendoim, abacate.</li>
+</ul>
+<p><strong>Lanches práticos para aumentar as calorias:</strong> iogurte com aveia e fruta; pão com ovos; banana com pasta de amendoim; vitamina de leite, fruta e aveia; castanhas entre as refeições. Quem tem pouco apetite ganha mais facilmente com líquidos e gorduras boas do que com pratos maiores.</p>
+
 <h2>Refeições ao redor do treino</h2>
 
 <p>O timing das refeições importa menos do que a quantidade total — mas ao redor do treino, carboidratos e proteína têm efeito positivo na performance e recuperação:</p>
@@ -35183,6 +35192,12 @@ TDEE = 1708 × 1,55 = <strong>2.647 kcal/dia</strong></p>
 <p>"Bulk sujo" (comer qualquer coisa em excesso para ganhar massa) é uma estratégia ultrapassada. Além de gordura desnecessária, o excesso de carboidratos refinados piora a sensibilidade à insulina e pode dificultar a composição corporal no ciclo de cutting subsequente.</p>
 
 <p>O "bulk limpo" com fontes alimentares de qualidade e superávit controlado produz melhor resultado a longo prazo.</p>
+
+<h2>Calorias ou kcal: qual a diferença?</h2>
+<p>No dia a dia e nos rótulos, "calorias" e "kcal" são a mesma coisa: quando se fala em 300 calorias num alimento, são 300 kcal.</p>
+
+<h2>Calculadora: descubra as suas calorias</h2>
+<p>Em vez de fazer a conta à mão, use a <a href="/ferramentas/calculadora-tmb-tdee">calculadora de TMB e gasto calórico (TDEE)</a> e depois a <a href="/ferramentas/calculadora-macros">calculadora de macros</a> para dividir as calorias entre proteína, carboidrato e gordura. Quem tem diabetes ou outra condição de saúde deve definir a dieta com médico e nutricionista.</p>
 
 <h2>Conclusão</h2>
 
