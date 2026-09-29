@@ -68,7 +68,7 @@ export const SAO_SILVESTRE_2026_POSTS: BlogPost[] = [
 <p>São <strong>55 mil vagas</strong>, vendidas por ordem de chegada, sem sorteio. Em anos de grande procura as vagas acabam no mesmo dia — por isso vale deixar o pré-cadastro pronto e entrar no horário de abertura.</p>
 
 <h2>Percurso: quantos km e por onde passa</h2>
-<p>A São Silvestre tem <strong>15 km</strong>, com largada e chegada na <strong>Avenida Paulista</strong>, em pontos diferentes, passando pela região central de São Paulo. O trecho mais conhecido — e mais temido — é a <strong>subida da Avenida Brigadeiro Luís Antônio</strong>, perto do fim, quando a perna já está cansada. É por causa dela que o treino de força faz tanta diferença nessa prova.</p>
+<p>A São Silvestre tem <strong>15 km</strong>, com largada e chegada na <strong>Avenida Paulista</strong>, em pontos diferentes, passando pela região central de São Paulo. O trecho mais conhecido — e mais temido — é a <strong>subida da Avenida Brigadeiro Luís Antônio</strong>, perto do fim, quando a perna já está cansada. É por causa dela que o treino de força faz tanta diferença nessa prova. Veja o <a href="/blog/percurso-sao-silvestre">percurso da São Silvestre trecho a trecho</a>.</p>
 
 <h2>Horários da largada</h2>
 <p>Os horários de 2026 ainda serão confirmados no regulamento. Em 2025, foram: cadeirantes às 7h25, elite feminina às 7h40, elite masculina às 8h05, pelotão Premium às 8h08 e pelotão geral às 8h10.</p>
@@ -201,6 +201,77 @@ ${FONTES_SS}`,
       { question: "Preciso correr 15 km antes da prova?", answer: "Não. Chegar a 13 ou 14 km no treino longo e reduzir o volume nas duas últimas semanas costuma render mais do que correr a distância total perto da largada. Quem busca tempo pode ir a 16 km no longo." },
       { question: "Como treinar para a subida da Brigadeiro?", answer: "Com treino de força duas vezes por semana (agachamento, afundo, subida no banco e panturrilha) e, a partir da semana 9, subidas curtas de 30 segundos a 1 minuto em um dos treinos de corrida." },
       { question: "Posso caminhar na São Silvestre?", answer: "Pode. Muitos participantes alternam corrida e caminhada, principalmente na subida da Brigadeiro. Caminhar com estratégia costuma dar um resultado melhor do que insistir em correr e quebrar." },
+    ],
+  },
+  {
+    slug: "percurso-sao-silvestre",
+    title: "Percurso da São Silvestre: os 15 km trecho a trecho",
+    metaTitle: "Percurso da São Silvestre 2026: Mapa dos 15 km e Ruas",
+    metaDescription:
+      "Percurso da São Silvestre: 15 km da Paulista ao centro e de volta, com descida da Dr. Arnaldo, Pacaembu e a subida da Brigadeiro. Ruas em ordem e como correr cada trecho.",
+    excerpt:
+      "Os 15 km da São Silvestre trecho a trecho: largada na Paulista, descida para o Pacaembu, centro histórico e a subida da Brigadeiro até a chegada. E como correr cada parte.",
+    category: "Treinamento",
+    date: "2026-09-29",
+    readTime: "6 min",
+    author: AUTOR,
+    tags: ["São Silvestre", "São Silvestre 2026", "percurso", "15 km", "Brigadeiro Luís Antônio", "corrida de rua"],
+    content: `<blockquote><p>O percurso oficial de 2026 é publicado no regulamento da prova. Esta página descreve o trajeto de 2025, usado como referência, e é atualizada se houver mudança. Última verificação: 29 de setembro de 2026.</p></blockquote>
+<p>A São Silvestre tem <strong>15 km</strong> — não 42, como às vezes se pensa: 42 km é a distância da maratona. A largada e a chegada ficam na <strong>Avenida Paulista</strong>, em pontos diferentes, e no meio o trajeto desce até o Pacaembu, atravessa o centro histórico de São Paulo e volta subindo a <strong>Avenida Brigadeiro Luís Antônio</strong>.</p>
+
+<h2>O percurso em resumo</h2>
+<table><thead><tr><th>Item</th><th>Referência (edição de 2025)</th></tr></thead><tbody>
+<tr><td>Distância</td><td>15 km</td></tr>
+<tr><td>Largada</td><td>Avenida Paulista, entre a Rua Frei Caneca e a Rua Augusta</td></tr>
+<tr><td>Chegada</td><td>Avenida Paulista, 900, em frente à Fundação Cásper Líbero</td></tr>
+<tr><td>Pontos conhecidos</td><td>Estádio do Pacaembu, Praça da República, Theatro Municipal, Elevado Presidente João Goulart</td></tr>
+<tr><td>Trecho mais difícil</td><td>Subida da Avenida Brigadeiro Luís Antônio, perto do fim</td></tr>
+</tbody></table>
+
+<h2>As ruas do percurso, em ordem</h2>
+<ol>
+<li><strong>Avenida Paulista</strong> — largada, sentido Consolação.</li>
+<li><strong>Avenida Doutor Arnaldo</strong> — começa a descida.</li>
+<li><strong>Avenida Pacaembu</strong> — trecho mais baixo, junto ao estádio.</li>
+<li><strong>Avenida Marquês de São Vicente</strong> e <strong>Avenida Rudge</strong> — a parte plana do meio da prova.</li>
+<li><strong>Avenida Rio Branco</strong>, <strong>Avenida Ipiranga</strong> e <strong>Avenida São João</strong> — o centro histórico, passando pela Praça da República e perto do Theatro Municipal.</li>
+<li><strong>Avenida Duque de Caxias</strong> — a caminho da subida.</li>
+<li><strong>Avenida Brigadeiro Luís Antônio</strong> — a subida famosa, de volta à Paulista.</li>
+<li><strong>Avenida Paulista</strong> — os metros finais até a chegada, no número 900.</li>
+</ol>
+
+<h2>Como correr cada trecho</h2>
+<h3>Largada e descida: segure o ritmo</h3>
+<p>A largada é cheia, e logo depois vem a descida pela Doutor Arnaldo. É o lugar onde mais gente estraga a prova: o empurrão da multidão e a ladeira a favor fazem você correr mais rápido do que aguenta por 15 km. Desça solto, com passos curtos, e deixe passar quem quiser passar.</p>
+<h3>Pacaembu e meio da prova: encontre o seu ritmo</h3>
+<p>Na parte plana, perto do Pacaembu e nas avenidas até o centro, é hora de achar o ritmo que você consegue sustentar. Se o seu plano é correr e caminhar, mantenha os blocos que treinou.</p>
+<h3>Centro histórico: economize</h3>
+<p>O centro é bonito e barulhento, com público e pontos conhecidos. Aproveite, mas guarde energia: a parte que decide a prova ainda vem.</p>
+<h3>Brigadeiro: a subida que decide a prova</h3>
+<p>A Brigadeiro Luís Antônio sobe até a Paulista quando a perna já tem mais de 12 km. Encurte a passada, use os braços e mantenha o esforço, não a velocidade. Caminhar em algum momento da subida é normal e, para muita gente, é a estratégia certa. Quem treinou força e subidas sente a diferença exatamente aqui — é por isso que o <a href="/blog/treino-sao-silvestre-13-semanas">plano de treino de 13 semanas</a> tem subidas e step-up.</p>
+<h3>Paulista: os metros finais</h3>
+<p>Depois da subida, a chegada está perto. Se sobrou energia, é aqui que você acelera.</p>
+
+<h2>Quanto tempo você levaria nesse percurso?</h2>
+<p>O percurso não é plano, então a conta simples de ritmo engana. O <a href="/ferramentas/previsor-sao-silvestre">Previsor da São Silvestre</a> parte do seu tempo em 5 km, 10 km ou meia e soma uma margem para a descida cheia da largada e para a subida da Brigadeiro.</p>
+
+<h2>Serviços no percurso</h2>
+<p>A organização monta pontos de hidratação, banheiros e atendimento médico ao longo dos 15 km. O mapa com a posição de cada serviço é publicado no site oficial da prova antes da largada; confira na semana da corrida.</p>
+
+<h2>Corra a sua prova</h2>
+<p>Ninguém corre a São Silvestre do mesmo jeito: tem quem desça voando e quem caminhe a Brigadeiro inteira. Não se compare com quem está do seu lado — cada um tem a própria genética, rotina e história. O que importa é conhecer o seu percurso e o seu ritmo. Se quiser se preparar comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.saosilvestre.com.br/" target="_blank" rel="noopener noreferrer">São Silvestre — site oficial</a></li>
+<li>Veículos consultados para o trajeto de 2025 (largada, chegada, ruas e pontos de passagem): CNN Brasil, Olympics.com, InfoMoney, Veja São Paulo.</li>
+</ul>`,
+    faq: [
+      { question: "Quantos km tem a São Silvestre?", answer: "15 km, com largada e chegada na Avenida Paulista, em pontos diferentes." },
+      { question: "A São Silvestre tem 42 km?", answer: "Não. A São Silvestre tem 15 km. 42 km (42,195 km) é a distância da maratona." },
+      { question: "Qual é o percurso da São Silvestre?", answer: "Pela referência de 2025: largada na Paulista, descida pela Doutor Arnaldo até o Pacaembu, avenidas Marquês de São Vicente e Rudge, centro histórico pelas avenidas Rio Branco, Ipiranga e São João, Duque de Caxias, subida da Brigadeiro Luís Antônio e chegada na Paulista, 900." },
+      { question: "Onde é a largada e a chegada da São Silvestre?", answer: "A largada é na Avenida Paulista, entre as ruas Frei Caneca e Augusta; a chegada é na Paulista, 900, em frente à Fundação Cásper Líbero." },
+      { question: "Qual a parte mais difícil do percurso?", answer: "A subida da Avenida Brigadeiro Luís Antônio, perto do fim, quando o corredor já passou dos 12 km." },
     ],
   },
 ];
