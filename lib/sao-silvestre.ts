@@ -117,4 +117,5 @@ export { formataPace, formataRelogio };
 export const ARTIGOS_COM_LINK_PREVISOR_SS: string[] = [
   "inscricao-sao-silvestre-2026",
   "treino-sao-silvestre-13-semanas",
+  "percurso-sao-silvestre",
 ];
