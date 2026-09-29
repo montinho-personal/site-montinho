@@ -410,4 +410,5 @@ export const ARTIGOS_COM_CALCULADORA_CORRIDA: string[] = [
   "corrida-de-rua-iniciante",
   "esteira-ou-rua-para-correr",
   "como-melhorar-o-pace-na-corrida",
+  "maratona-de-curitiba-2026",
 ];
