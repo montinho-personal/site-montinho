@@ -109,6 +109,7 @@ import { BLACK_FRIDAY_2026_POSTS } from "./black-friday-2026";
 import { UFC_2026_POSTS } from "./ufc-2026";
 import { OUTUBRO_ROSA_POSTS } from "./outubro-rosa-2026";
 import { OLYMPIA_BRASIL_EXPO_2026_POSTS } from "./olympia-brasil-expo-2026";
+import { CATEGORIAS_FISICULTURISMO_POSTS } from "./categorias-fisiculturismo";
 
 export const blogPosts = ([
   ...SAO_SILVESTRE_2026_POSTS,
@@ -118,6 +119,7 @@ export const blogPosts = ([
   ...UFC_2026_POSTS,
   ...OUTUBRO_ROSA_POSTS,
   ...OLYMPIA_BRASIL_EXPO_2026_POSTS,
+  ...CATEGORIAS_FISICULTURISMO_POSTS,
   ...OLYMPIA_2026_POSTS,
   {
     slug: "parar-de-tomar-mounjaro",

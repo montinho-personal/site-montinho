@@ -47,7 +47,7 @@ export const OLYMPIA_BRASIL_EXPO_2026_POSTS: BlogPost[] = [
 <li><strong>Feira</strong> de suplementos, equipamentos e marcas fitness;</li>
 <li><strong>Competições de força</strong>, como <strong>power bíceps</strong> e <strong>luta de braço</strong>.</li>
 </ul>
-<p>O que é um Pro Card? É a licença de atleta profissional: quem conquista pode disputar os campeonatos da IFBB Pro League — e, com resultados, se classificar para o Olympia de Las Vegas.</p>
+<p>Para entender cada categoria, veja <a href="/blog/categorias-do-fisiculturismo">as categorias do fisiculturismo</a>. O que é um Pro Card? É a licença de atleta profissional: quem conquista pode disputar os campeonatos da IFBB Pro League — e, com resultados, se classificar para o Olympia de Las Vegas.</p>
 
 <h2>Onde assistir ao Mr. Olympia Brasil 2026</h2>
 <p>Até a data desta atualização, a organização não havia divulgado transmissão oficial do campeonato. Se sair, entra aqui.</p>
