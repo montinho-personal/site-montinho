@@ -21,6 +21,26 @@ export const metadata: Metadata = {
 
 const faq = [
   {
+    question: "Qual o valor de 1 hora de personal trainer no Tamboré?",
+    answer:
+      "Depende do formato (academia, condomínio ou casa), da frequência semanal e do tipo de plano. Sessão avulsa custa mais por hora que pacote. Para a proposta do seu caso, é só chamar no WhatsApp.",
+  },
+  {
+    question: "Quanto custa um personal trainer 3 vezes por semana?",
+    answer:
+      "Três treinos por semana é a frequência mais procurada, e no pacote o valor por sessão fica menor que na aula avulsa. A proposta exata depende do local e do horário — chame no WhatsApp para conhecer os planos.",
+  },
+  {
+    question: "É melhor treinar 3 ou 5 vezes na semana?",
+    answer:
+      "Para a maioria, 3 treinos bem estruturados dão resultado e cabem na rotina. Cinco só compensa com sono, recuperação e tempo para manter — o que mais pesa é sustentar a frequência por meses.",
+  },
+  {
+    question: "Vale a pena pagar um personal trainer?",
+    answer:
+      "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. Costuma sair mais barato que meses sem resultado ou uma lesão.",
+  },
+  {
     question: "Quanto custa personal trainer no Tamboré por mês?",
     answer:
       "O valor mensal varia conforme a modalidade (presencial em academia, domiciliar ou online), a frequência semanal (duas, três ou quatro sessões) e o profissional. Em Tamboré e Alphaville, o valor de mercado para personal trainer qualificado e experiente fica entre R$ 800 e R$ 2.500 por mês. O valor exato depende do pacote — e é apresentado com total transparência na primeira conversa.",
