@@ -115,3 +115,7 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 `/personal-trainer-barueri` — base (GSC até 15/09): 331 impressões, 6 cliques, posição 14,4.
 - Título antes: "Personal Trainer em Barueri | Montinho Personal Trainer" → depois: "Personal Trainer em Barueri: Planos e Atendimento | Montinho".
 - Seção "Quanto custa um personal trainer em Barueri?" (planos, 3 ou 5 vezes, é vantajoso) sem valor; CTA `personal-trainer-barueri:planos`; +4 FAQs do PAA; links Alphaville e Osasco (buscas relacionadas).
+
+`/personal-trainer-tambore` — base (GSC até 15/09): 266 impressões, 8 cliques, posição 19.
+- Título antes: "Personal Trainer Tamboré | Montinho Personal Trainer" → depois: "Personal Trainer no Tamboré (Barueri): Planos e Atendimento | Montinho".
+- Seção de planos sem valor (inclui "taxa de personal externo"); CTA `personal-trainer-tambore:planos`; +4 FAQs do PAA; links Barueri/Alphaville.
