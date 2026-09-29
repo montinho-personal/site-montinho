@@ -7,7 +7,10 @@ Método: aplicar ao artigo o que os prints do Google mostram (autocompletar,
 visão geral por IA, "As pessoas também perguntam", "Outras pessoas
 pesquisaram") — título, meta, H2 e FAQ. O grupo controle não é tocado.
 
-## Grupo teste
+## Braço A — perto do topo (posição 8–10, muita impressão)
+
+Hipótese: título, descrição e FAQ pelas buscas reais sobem o CTR e a posição de quem já está na 1ª página.
+
 
 | Artigo | Impr. | Pos. | Cliques | Alterado em | Commit |
 |---|---|---|---|---|---|
@@ -16,6 +19,20 @@ pesquisaram") — título, meta, H2 e FAQ. O grupo controle não é tocado.
 | cardio-ou-musculacao-mounjaro | 1.898 | 8,4 | 3 | — | — |
 | calorias-para-ganhar-massa-muscular | 643 | 10,1 | 2 | — | — |
 | frutas-antes-do-treino | 622 | 8,2 | 1 | — | — |
+
+## Braço B — 2ª página (posição 10–19)
+
+Hipótese: cobrir as intenções reais tira o artigo da 2ª página. Antes de cada um, checagem de canibalização (causa comum de artigo empacado).
+
+| Artigo | Impr. | Pos. | Cliques | Alterado em | Suspeita de canibalização |
+|---|---|---|---|---|---|
+| hip-dips-musculacao | 242 | 13,1 | 0 | — | nenhuma forte |
+| quanto-tempo-para-aparecer-resultado-na-academia | 111 | 10,2 | 0 | — | quanto-tempo-para-ganhar-massa-muscular (306 imp, pos 9,8) |
+| exercicios-para-gluteo-medio | 104 | 18,7 | 0 | — | como-fazer-abducao-quadril-maquina (84 imp, pos 7,5) |
+| cafeina-no-treino-dose-timing | 81 | 15,2 | 0 | — | cafe-antes-do-treino (9 imp, pos 6,2) |
+| treino-para-mulher-iniciante | 74 | 11,5 | 3 | — | treino-de-gluteos-feminino, hipertrofia-para-iniciantes |
+
+Observação: com menos de 250 impressões, a medição do braço B é mais ruidosa; olhar posição e tendência, não só cliques.
 
 ## Grupo controle (não mexer até 27/10)
 
