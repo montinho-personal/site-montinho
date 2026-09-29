@@ -128,3 +128,6 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 Faixas de preço existentes (Alphaville, Tamboré) mantidas por decisão do Montinho; nenhum número novo.
 Adicionado nas 5 páginas: FAQs do PAA (valor de 1 hora, 3x/semana, 3 ou 5 vezes, vale a pena) e seção "Os tipos de plano" com CTA (4 artigos do blog). Títulos NÃO alterados.
 Base (GSC até 15/09): quanto-custa-personal-trainer-alphaville 88 impr / 4 cliques / pos 6,7.
+
+## SEO local — grupo 3: personal a domicílio (29/09/2026)
+5 páginas (Alphaville, Barueri, Santana de Parnaíba, Aldeia da Serra, Tamboré): +4 FAQs do PAA (valor em casa, 3x/semana, grupo de WhatsApp → consultoria online, é vantajoso) e seção de tipos de plano sem valores. Títulos intactos. Condomínio fica para a próxima rodada.

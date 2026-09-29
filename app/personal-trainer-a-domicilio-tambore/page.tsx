@@ -22,6 +22,26 @@ export const metadata: Metadata = {
 
 const faq = [
   {
+    question: "Qual o valor de um personal trainer em casa no Tamboré?",
+    answer:
+      "Depende da frequência semanal, do tipo de plano e do deslocamento até a sua casa. No pacote semanal, o valor por sessão é menor que na aula avulsa. Os planos são apresentados numa conversa rápida pelo WhatsApp.",
+  },
+  {
+    question: "Quanto custa um personal trainer 3 vezes por semana?",
+    answer:
+      "Três treinos por semana é a frequência mais procurada, e no pacote o valor por sessão fica menor que na aula avulsa. A proposta exata depende do horário e do local — chame no WhatsApp para conhecer os planos.",
+  },
+  {
+    question: "Existe grupo de WhatsApp para treinar em casa?",
+    answer:
+      "Grupo com treino genérico raramente se ajusta à sua casa, ao seu equipamento e às suas limitações. Se a ideia é treinar em casa com orientação e pagando menos que o presencial, a consultoria online entrega um treino individual acompanhado pelo WhatsApp.",
+  },
+  {
+    question: "É vantajoso pagar um personal trainer?",
+    answer:
+      "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. Em casa, some a economia de tempo de deslocamento.",
+  },
+  {
     question: "Personal trainer a domicílio no Tamboré precisa de academia em casa?",
     answer:
       "Não necessariamente. Com halteres ajustáveis, faixas elásticas, TRX e o peso do próprio corpo, é possível montar protocolos completos e progressivos sem academia. O equipamento ideal é avaliado na visita inicial — e adaptamos o treino ao que você já tem disponível.",
