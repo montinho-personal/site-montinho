@@ -156,6 +156,14 @@ const CAPAS = [
 <div class="main"><h1><em>Natália Silva</em><br>x Wang Cong</h1>
 <div class="sub">Cinturão <b>peso-mosca</b> · Salt Lake City<br>Card principal às <b>21h</b> (Brasília).</div></div>`, "UFC 332"),
   },
+  {
+    slug: "outubro-rosa-exercicio-fisico",
+    alt: "Capa: Outubro Rosa — exercício físico e musculação na prevenção do câncer de mama; 150 minutos por semana",
+    html: base(`
+<div class="top"><div class="kicker">Outubro Rosa</div><div class="chip"><i></i>Prevenção</div></div>
+<div class="main"><h1><em>Exercício</em><br>e câncer de mama</h1>
+<div class="sub"><b>150 minutos</b> por semana, segundo o INCA<br>E o exame continua indispensável.</div></div>`, "Outubro Rosa"),
+  },
 ];
 // Só algumas capas: node scripts/sao-silvestre-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);
