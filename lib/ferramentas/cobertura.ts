@@ -41,6 +41,7 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  "corte-de-peso-ufc": "Explicativo sobre corte de peso e categorias do UFC: o leitor sai entendendo o processo e os riscos, não com uma conta; o link para déficit calórico cobre quem quer emagrecer.",
   // Cluster Mr. Olympia 2026 (lib/olympia-2026.ts): cobertura de evento. A pessoa
   // chega com "quem ganhou / que horas / quanto pesa" e sai com um fato, não com
   // uma conta. O único link de ferramenta que cabe (Potencial Natural, no
