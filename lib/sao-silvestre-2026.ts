@@ -421,4 +421,69 @@ ${FONTES_SS}`,
       { question: "Qual o maior erro de quem corre a São Silvestre pela primeira vez?", answer: "Correr rápido demais na descida logo depois da largada. A energia gasta ali faz falta na subida da Brigadeiro, no fim da prova." },
     ],
   },
+  {
+    slug: "tenis-para-sao-silvestre",
+    title: "Tênis para a São Silvestre: os oficiais e como escolher o seu",
+    metaTitle: "Tênis para São Silvestre: Oficiais e Como Escolher (15 km)",
+    metaDescription:
+      "Tênis para a São Silvestre: o que são os ASICS oficiais da prova, como escolher o melhor tênis para 15 km de asfalto, opções para iniciantes e o erro que estraga a corrida.",
+    excerpt:
+      "Os tênis oficiais da São Silvestre, o que importa num tênis para 15 km, o que serve para iniciante e por que o melhor tênis para 31/12 é o que você já usa.",
+    category: "Treinamento",
+    date: "2026-09-29",
+    readTime: "6 min",
+    author: AUTOR,
+    tags: ["São Silvestre", "tênis de corrida", "tênis para iniciantes", "15 km", "corrida de rua"],
+    content: `<img src="/blog-images/tenis-para-sao-silvestre-capa.webp" alt="Capa: tênis para a São Silvestre — os modelos oficiais e como escolher o tênis certo para os 15 km de asfalto" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<p>Todo ano, quem se inscreve na <strong>São Silvestre</strong> faz a mesma pergunta: qual tênis usar? A resposta curta, que vale para iniciante e para quem já corre: <strong>o melhor tênis para 31 de dezembro é um tênis de corrida confortável que você já usou nos treinos longos</strong>. O resto deste guia explica como chegar nele — e o que são os tênis oficiais da prova.</p>
+
+<h2>Os tênis oficiais da São Silvestre</h2>
+<p>Na 100ª edição, em 2025, a prova ganhou pela primeira vez tênis oficiais: a ASICS lançou dois modelos com as cores da São Silvestre, dentro de uma coleção com roupas e acessórios.</p>
+<table><thead><tr><th>Modelo</th><th>Proposta</th><th>Preço de lançamento (2025)</th></tr></thead><tbody>
+<tr><td><strong>Novablast 5 São Silvestre</strong></td><td>O mais amortecido da coleção, na cor escura que lembra as antigas provas noturnas</td><td>R$ 1.099,99</td></tr>
+<tr><td><strong>Versablast 4 São Silvestre</strong></td><td>Mais simples e versátil, na cor clara das edições diurnas</td><td>R$ 549,99</td></tr>
+</tbody></table>
+<p>Preços e disponibilidade mudam; confira na loja. Se a organização anunciar uma coleção para 2026, esta página é atualizada.</p>
+<p><strong>Precisa do tênis oficial para correr?</strong> Não. Ele é uma edição comemorativa: bom para quem gosta de ter a lembrança da prova, mas qualquer tênis de corrida confortável faz o mesmo trabalho nos 15 km. Se for comprar o oficial, compre agora e treine com ele — não estreie no dia.</p>
+
+<h2>O erro que estraga a prova: tênis novo em 31/12</h2>
+<p>Tênis novo no dia da prova é a causa mais comum de bolha, unha roxa e dor que ninguém treinou. O calçado precisa de algumas semanas de uso — incluindo pelo menos um ou dois treinos longos — para você saber se ele aperta, esquenta ou machuca em algum ponto. Regra prática: o tênis da prova deve estar com você <strong>pelo menos um mês antes</strong>.</p>
+
+<h2>Como escolher o melhor tênis para 15 km</h2>
+<ul>
+<li><strong>Conforto acima de tudo.</strong> Na loja, corra alguns metros com ele. Se incomodou em cinco minutos, vai incomodar em uma hora e meia.</li>
+<li><strong>Amortecimento.</strong> Para 15 km de asfalto, um tênis de corrida com amortecimento moderado a alto costuma ser o mais confortável para a maioria das pessoas, principalmente para quem é mais pesado ou está começando.</li>
+<li><strong>Tamanho.</strong> Deixe cerca de um dedo de espaço à frente do dedão: o pé incha durante a corrida, e na descida da largada ele vai para a frente.</li>
+<li><strong>Aderência.</strong> A prova é no asfalto, com trechos de paralelepípedo e pintura no chão; solado de borracha que não escorrega faz diferença se chover.</li>
+<li><strong>Nada de "tênis de academia".</strong> Tênis de musculação ou casual não foram feitos para impacto repetido por 15 km. O guia de <a href="/blog/como-escolher-tenis-para-treinar">como escolher o tênis para treinar</a> explica por que o mesmo tênis não serve para tudo.</li>
+</ul>
+
+<h2>Tênis de corrida para iniciantes</h2>
+<p>Quem está começando não precisa de tênis de placa de carbono nem do modelo mais caro. Precisa de um tênis de corrida de treino diário, confortável e com bom amortecimento — as marcas nacionais e as linhas de entrada das grandes marcas têm boas opções com preço acessível. Mais importante que o modelo é usar o tênis para correr, não para o dia a dia, para ele durar e manter o amortecimento.</p>
+
+<h2>Tênis de placa de carbono vale a pena?</h2>
+<p>Os tênis de placa, feitos para velocidade, ajudam atletas rápidos a ganhar segundos. Para quem vai completar a São Silvestre ou está no primeiro ano de corrida, raramente compensam: são caros, duram menos e podem ser menos estáveis. Se quiser um, use como segundo tênis, depois de construir a base.</p>
+
+<h2>Existe tênis proibido em corrida?</h2>
+<p>Nas competições de elite, sim: as regras da World Athletics limitam a espessura do solado dos tênis de rua a 40 mm e permitem no máximo uma placa rígida, entre outras exigências. Essas regras valem para quem disputa resultado oficial na elite. Para o corredor amador do pelotão geral, o que importa é o tênis ser seguro e confortável.</p>
+
+<h2>Quanto tempo você vai fazer?</h2>
+<p>Nenhum tênis substitui o treino — mas é natural querer saber quanto tempo você levaria. O <a href="/ferramentas/previsor-sao-silvestre">Previsor da São Silvestre</a> faz a conta a partir do seu tempo em 5 km, 10 km ou meia. E o <a href="/blog/treino-sao-silvestre-13-semanas">plano de treino de 13 semanas</a> mostra como chegar lá.</p>
+
+<h2>Corra a sua prova</h2>
+<p>Na largada você vai ver de tudo: tênis de mil reais, tênis gasto e tênis oficial. Não se compare com ninguém — nem com o tênis do lado. O que faz a sua prova é o treino que você conseguiu manter. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li>Coleção oficial ASICS da São Silvestre (modelos e preços de lançamento em 2025): Seu Dinheiro, Gazeta Esportiva, Máquina do Esporte, Sua Corrida.</li>
+<li>Regras de calçados da World Athletics para provas de rua (limite de 40 mm de solado).</li>
+</ul>`,
+    faq: [
+      { question: "Qual o melhor tênis para correr a São Silvestre?", answer: "Um tênis de corrida confortável, com bom amortecimento, que você já usou em treinos longos. Não existe um modelo único ideal; o erro é estrear tênis novo no dia da prova." },
+      { question: "Qual é o tênis oficial da São Silvestre?", answer: "Em 2025, na 100ª edição, a ASICS lançou os modelos Novablast 5 São Silvestre (R$ 1.099,99 no lançamento) e Versablast 4 São Silvestre (R$ 549,99). Não é obrigatório usá-los." },
+      { question: "Qual tênis de corrida é bom para iniciante?", answer: "Um tênis de treino diário, confortável e com bom amortecimento. Iniciante não precisa de tênis de placa de carbono nem do modelo mais caro." },
+      { question: "Posso correr a São Silvestre com tênis novo?", answer: "Não é recomendado. O ideal é ter o tênis da prova pelo menos um mês antes e usá-lo em treinos longos, para evitar bolhas e dores." },
+      { question: "Quais tênis são proibidos nas corridas?", answer: "Nas competições de elite, a World Athletics limita o solado de tênis de rua a 40 mm e permite no máximo uma placa rígida. Para corredores amadores, o importante é o tênis ser seguro e confortável." },
+    ],
+  },
 ];

@@ -116,6 +116,14 @@ const CAPAS = [
 <div class="main"><h1>Sua primeira<br><em>São Silvestre</em></h1>
 <div class="sub">Da véspera à chegada: largada, descida<br>e como encarar a <b>Brigadeiro</b>.</div></div>`, "1ª VEZ"),
   },
+  {
+    slug: "tenis-para-sao-silvestre",
+    alt: "Capa: tênis para a São Silvestre — os modelos oficiais e como escolher o tênis certo para os 15 km de asfalto",
+    html: base(`
+<div class="top"><div class="kicker">São Silvestre 2026 · Equipamento</div><div class="chip"><i></i>Guia de escolha</div></div>
+<div class="main"><h1>Tênis para a<br><em>São Silvestre</em></h1>
+<div class="sub">Os modelos oficiais, o que importa em 15 km<br>e o erro de <b>estrear tênis na prova</b>.</div></div>`, "15 KM"),
+  },
 ];
 // Só algumas capas: node scripts/sao-silvestre-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);
