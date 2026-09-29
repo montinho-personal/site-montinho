@@ -98,3 +98,29 @@ Não reescreva isso do zero. Use o que já existe em `lib/filosofia.ts`:
   ou comparação. O Simulador de Emagrecimento é o modelo.
 
 É a isca natural do CTA para o WhatsApp: primeiro a ideia, depois o botão.
+
+# Toda página nova começa pelas intenções de busca do Google
+
+Antes de escrever qualquer artigo, página de serviço ou ferramenta, peça ao
+Montinho os prints da pesquisa no Google para o termo principal. Não comece
+a escrever sem eles, a não ser que ele diga para seguir sem.
+
+Peça, de preferência numa aba anônima:
+
+1. o **autocompletar** da caixa de busca (as sugestões enquanto digita);
+2. a **primeira página** de resultados, incluindo a visão geral por IA;
+3. o bloco **"As pessoas também perguntam"**;
+4. o bloco **"Outras pessoas pesquisaram"**, no fim da página.
+
+Como usar:
+
+- As sugestões e buscas relacionadas decidem **título, H2 e FAQ**. Cada
+  pergunta real que couber no tema vira seção ou pergunta do FAQ.
+- Os resultados mostram o que já ranqueia: cubra o que eles cobrem e
+  acrescente o que falta (dado verificado, ferramenta, experiência de quem
+  atende).
+- Intenção que não cabe na página vira sugestão de pauta, não um parágrafo
+  enfiado.
+- Print não é fonte. A visão geral por IA e o snippet mostram o que as
+  pessoas querem saber, mas fato só entra com fonte oficial ou dois veículos
+  independentes, como em qualquer outro conteúdo.
