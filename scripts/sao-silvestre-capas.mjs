@@ -172,6 +172,14 @@ const CAPAS = [
 <div class="main"><h1><em>Mr. Olympia</em><br>Brasil 2026</h1>
 <div class="sub"><b>Distrito Anhembi</b> · feira e campeonato<br>valendo <b>Pro Card</b> da IFBB Pro League.</div></div>`, "Olympia Brasil"),
   },
+  {
+    slug: "categorias-do-fisiculturismo",
+    alt: "Capa: categorias do fisiculturismo — Open, Classic, 212, Men's Physique, Wellness, Bikini e o que é Pro Card",
+    html: base(`
+<div class="top"><div class="kicker">Fisiculturismo · Guia</div><div class="chip"><i></i>12 categorias</div></div>
+<div class="main"><h1><em>Categorias</em><br>do fisiculturismo</h1>
+<div class="sub">Open, Classic, 212, Men's Physique, <b>Wellness</b>, Bikini<br>e o que é <b>Pro Card</b>.</div></div>`, "Categorias"),
+  },
 ];
 // Só algumas capas: node scripts/sao-silvestre-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);

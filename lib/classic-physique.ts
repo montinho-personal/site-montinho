@@ -183,4 +183,4 @@ export const RAMON = { alturaCm: 181, pesagemKg: 102.5, data: "23 de setembro de
  * Só onde há contexto: o artigo de peso de Ramon (completa) e o resultado
  * da Classic (compacta, depois do resultado).
  */
-export const ARTIGOS_COM_CALCULADORA_CLASSIC: string[] = ["ramon-dino-peso-altura", "resultado-classic-physique-mr-olympia-2026"];
+export const ARTIGOS_COM_CALCULADORA_CLASSIC: string[] = ["ramon-dino-peso-altura", "resultado-classic-physique-mr-olympia-2026", "categorias-do-fisiculturismo"];
