@@ -50,9 +50,12 @@ export const OLYMPIA_BRASIL_EXPO_2026_POSTS: BlogPost[] = [
 <ul>
 <li><strong>Campeonato de fisiculturismo</strong> amador, em várias categorias, valendo Pro Card da IFBB Pro League;</li>
 <li><strong>Feira</strong> de suplementos, equipamentos e marcas fitness;</li>
-<li><strong>Competições de força</strong>, como <strong>power bíceps</strong> e um campeonato de <strong>luta de braço</strong>.</li>
+<li><strong>Competições de força</strong>, como <strong>power bíceps</strong> e um campeonato de <strong>luta de braço</strong>, o Top Arm Brasil.</li>
 </ul>
 <p>Para entender cada categoria, veja <a href="/blog/categorias-do-fisiculturismo">as categorias do fisiculturismo</a>. O que é um Pro Card? É a licença de atleta profissional: quem conquista pode disputar os campeonatos da IFBB Pro League — e, com resultados, se classificar para o Olympia de Las Vegas.</p>
+
+<h2>Top Arm Brasil 2026: o campeonato de luta de braço</h2>
+<p>Dentro do evento acontece o <strong>Top Arm Brasil 2026</strong>, campeonato de luta de braço disputado de 16 a 18 de outubro na Arena Luta de Braço do Anhembi. Segundo a Gazeta de São Paulo e a Terra, reúne cerca de 90 atletas e define os representantes brasileiros no mundial <strong>Top Arm World</strong>; a disputa principal, da categoria sênior masculina, está prevista para o domingo, 18 de outubro. O resultado entra nesta página.</p>
 
 <h2>Onde assistir ao Mr. Olympia Brasil 2026</h2>
 <p>Até a data desta atualização, a organização não havia divulgado transmissão oficial do campeonato. Se sair, entra aqui.</p>
@@ -72,6 +75,7 @@ export const OLYMPIA_BRASIL_EXPO_2026_POSTS: BlogPost[] = [
 <li><a href="https://distritoanhembi.com.br/en/events/mr-olympia-2026-2/" target="_blank" rel="noopener noreferrer">Distrito Anhembi — Mr. Olympia 2026</a> (data, local, endereço)</li>
 <li><a href="https://mrolympiabrasil.com/programacao/" target="_blank" rel="noopener noreferrer">Mr. Olympia Brasil — programação</a> (acesso de profissionais, ingresso Olympia + Bodybuilding)</li>
 <li><a href="https://www.blueticket.com.br/evento/41016/mr-olympia-brasil-expo-2026" target="_blank" rel="noopener noreferrer">Blueticket — Mr. Olympia Brasil Expo 2026</a> (venda de ingressos)</li>
+<li><a href="https://www.gazetasp.com.br/esportes/mr-olympia-brasil-2026-tera-mais-de-mil-atletas-e-competicoes-de-forca-em-sao-paulo/" target="_blank" rel="noopener noreferrer">Gazeta de São Paulo</a> e <a href="https://portalradar.com.br/mr-olympia-brasil-expo-2026-sera-palco-de-torneio-de-luta-de-braco/" target="_blank" rel="noopener noreferrer">Portal Radar</a> (Top Arm Brasil)</li>
 <li><a href="https://portalradar.com.br/mr-olympia-brasil-expo-confirma-nova-edicao-para-outubro-de-2026/" target="_blank" rel="noopener noreferrer">Portal Radar</a> (confirmação da edição 2026)</li>
 </ul>`,
     faq: [
@@ -82,6 +86,7 @@ export const OLYMPIA_BRASIL_EXPO_2026_POSTS: BlogPost[] = [
       { question: "O HYROX São Paulo é no mesmo lugar?", answer: "Sim. O HYROX São Paulo 2026 acontece em 17 e 18 de outubro também no Distrito Anhembi." },
       { question: "Onde e quando será a exposição do Mr. Olympia Brasil em 2026?", answer: "A Mr. Olympia Brasil Expo acontece de 16 a 18 de outubro de 2026 no Distrito Anhembi, em São Paulo, junto com o campeonato." },
       { question: "Tem algum brasileiro Mr. Olympia?", answer: "Sim. Ramon Dino venceu a Classic Physique do Mr. Olympia em 2025, o primeiro brasileiro campeão do Olympia. Na Wellness, todas as edições desde 2021 foram vencidas por brasileiras." },
+      { question: "Quando é o Top Arm Brasil 2026?", answer: "De 16 a 18 de outubro de 2026, na Arena Luta de Braço do Mr. Olympia Brasil Expo, no Distrito Anhembi. A disputa principal, sênior masculina, está prevista para domingo, 18/10." },
     ],
   },
 ];
