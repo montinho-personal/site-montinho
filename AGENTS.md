@@ -124,3 +124,18 @@ Como usar:
 - Print não é fonte. A visão geral por IA e o snippet mostram o que as
   pessoas querem saber, mas fato só entra com fonte oficial ou dois veículos
   independentes, como em qualquer outro conteúdo.
+
+# Data de atualização: só quando o conteúdo muda de verdade
+
+Todo artigo do blog editado de forma substancial (seção nova, FAQ nova,
+dado corrigido, resultado lançado) recebe `updatedAt` com a data do dia no
+mesmo commit. É o que alimenta o `dateModified` do schema, o `lastModified`
+do sitemap e o "Atualizado em" visível na página.
+
+Não atualize a data por mudança que não altera o que o leitor aprende: título
+e descrição, componente ou cartão de ferramenta renderizado em lote, correção
+de link, formatação. O Google trata data trocada sem mudança real como sinal
+enganoso e passa a ignorar o campo no site inteiro.
+
+Páginas em `app/` usam `lastModified: new Date()` no sitemap (muda a cada
+build), então esse sinal nelas é fraco; o que conta é o conteúdo novo.
