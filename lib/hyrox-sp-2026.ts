@@ -33,6 +33,8 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
 <tr><td>Próxima edição anunciada</td><td>8 e 9 de maio de 2027</td></tr>
 </tbody></table>
 
+<p><strong>Mesmo fim de semana:</strong> de 16 a 18 de outubro o Anhembi também recebe o <a href="/blog/mr-olympia-brasil-2026">Mr. Olympia Brasil 2026</a>. Conte com mais movimento no entorno.</p>
+
 <h2>O que faz no HYROX?</h2>
 <p>A prova é igual em todas as cidades do mundo: você corre 1 km, faz uma estação, corre mais 1 km, e assim por diante até completar oito voltas. As estações são SkiErg, empurrar trenó, puxar trenó, burpee com salto à frente, remo, carregamento de kettlebell, avanço com saco de areia e wall ball. O guia <a href="/blog/hyrox-o-que-e">HYROX: o que é e como treinar</a> explica cada estação e o que ela exige.</p>
 

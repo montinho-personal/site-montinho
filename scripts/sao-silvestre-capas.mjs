@@ -164,6 +164,14 @@ const CAPAS = [
 <div class="main"><h1><em>Exercício</em><br>e câncer de mama</h1>
 <div class="sub"><b>150 minutos</b> por semana, segundo o INCA<br>E o exame continua indispensável.</div></div>`, "Outubro Rosa"),
   },
+  {
+    slug: "mr-olympia-brasil-2026",
+    alt: "Capa: Mr. Olympia Brasil 2026 — 16 a 18 de outubro no Distrito Anhembi, São Paulo",
+    html: base(`
+<div class="top"><div class="kicker">Mr. Olympia Brasil · 16 a 18/10</div><div class="chip"><i></i>São Paulo</div></div>
+<div class="main"><h1><em>Mr. Olympia</em><br>Brasil 2026</h1>
+<div class="sub"><b>Distrito Anhembi</b> · feira e campeonato<br>valendo <b>Pro Card</b> da IFBB Pro League.</div></div>`, "Olympia Brasil"),
+  },
 ];
 // Só algumas capas: node scripts/sao-silvestre-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);
