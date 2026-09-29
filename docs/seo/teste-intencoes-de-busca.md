@@ -145,3 +145,7 @@ Hipótese: parte do CTR baixo é busca de navegação (endereço/horário) que a
 ## SEO local — condomínio (29/09/2026)
 personal-trainer-em-condominio-alphaville (21 impr, pos 8,4) e /personal-trainer-condominio-tambore: +4 FAQs do PAA e seção de planos sem valores (só no blog). Títulos intactos.
 Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré + página do Tamboré) dividem ~35 impressões.
+
+`blog/personal-trainer-aldeia-da-serra` — base (GSC até 15/09): 107 impressões, 6 cliques, posição 17,6. Visão geral por IA já cita o Montinho (29/09).
+- Título antes: "Personal Trainer Aldeia da Serra | Montinho Personal Trainer" → depois: "Personal Trainer na Aldeia da Serra (Barueri): Planos | Montinho".
+- Seção de planos sem valor, +5 FAQs (PAA + "Barueri ou Santana de Parnaíba?").
