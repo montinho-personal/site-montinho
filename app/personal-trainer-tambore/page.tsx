@@ -9,9 +9,9 @@ import Compartilhar from "@/components/share/Compartilhar";
 import { ligacoesDoPerfil } from "@/lib/perfil-google";
 
 export const metadata: Metadata = {
-  title: { absolute: "Personal Trainer Tamboré | Montinho Personal Trainer" },
+  title: { absolute: "Personal Trainer no Tamboré (Barueri): Planos e Atendimento | Montinho" },
   description:
-    "Personal Trainer no Tamboré com atendimento individualizado e presencial. Treino de força, emagrecimento e qualidade de vida para moradores da região de Tamboré e Alphaville.",
+    "Personal trainer no Tamboré, em Barueri: treino no condomínio, em casa ou na sua academia. Veja os tipos de plano, quanto custa treinar 3x por semana e fale no WhatsApp.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-tambore`,
   },
@@ -28,6 +28,26 @@ const faq = [
     question: "Personal trainer atende dentro dos condomínios de Tamboré?",
     answer:
       "Sim. Boa parte dos residenciais de Tamboré — do Tamboré 1 ao 11 e condomínios vizinhos — conta com espaço fitness próprio ou áreas comuns adequadas ao treino. Também atendo na própria residência do aluno ou em academias próximas ao condomínio. Avaliamos a estrutura disponível antes de definir o local mais adequado para as sessões.",
+  },
+  {
+    question: "Qual o valor de 1 hora de personal trainer no Tamboré?",
+    answer:
+      "Depende do local do treino, da frequência semanal e do tipo de plano: pacote por frequência, pacote flexível ou consultoria online. Sessão avulsa custa mais por hora que pacote. Me chame no WhatsApp e eu apresento os planos.",
+  },
+  {
+    question: "Quanto custa um personal trainer 3 vezes por semana?",
+    answer:
+      "Três treinos por semana é a frequência mais procurada, e no pacote semanal o valor por sessão fica menor que na aula avulsa. A proposta exata depende do local e do horário — é só chamar no WhatsApp.",
+  },
+  {
+    question: "É permitido cobrar taxa de personal trainer?",
+    answer:
+      "Cada academia define a própria regra, e algumas cobram taxa do personal externo. Em condomínio, vale o regulamento interno do espaço fitness. Antes de começar, verificamos juntos as regras do local onde você vai treinar.",
+  },
+  {
+    question: "É vantajoso pagar um personal trainer?",
+    answer:
+      "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. Costuma sair mais barato que meses sem resultado ou uma lesão.",
   },
   {
     question: "Quanto custa um personal trainer no Tamboré?",
@@ -568,6 +588,52 @@ export default function PersonalTrainerTambore() {
             Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
           </p>
           <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
+        </div>
+      </section>
+
+      {/* PLANOS E VALOR */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Planos e valor
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-6"
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
+          >
+            Quanto custa um personal trainer no Tamboré?
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
+            <p>
+              O valor de uma hora de personal trainer no Tamboré depende de <strong className="text-white">onde</strong> o treino acontece (no espaço fitness do condomínio, em casa ou na sua academia), de <strong className="text-white">quantas vezes por semana</strong> você treina e de quanta flexibilidade de agenda você precisa. Por isso cada plano é montado para a rotina de quem vai treinar.
+            </p>
+            <h3 className="text-white font-semibold text-lg pt-2">Os tipos de plano</h3>
+            <ul className="list-disc pl-5 space-y-2">
+              <li><strong className="text-white">Pacote por frequência semanal</strong> (de 2 a 5 treinos): quanto mais treinos na semana, menor o valor por sessão.</li>
+              <li><strong className="text-white">Pacote flexível</strong>: um número de aulas para usar no ritmo possível, para quem viaja ou tem agenda irregular.</li>
+              <li><strong className="text-white">Consultoria online</strong>: o formato mais acessível, com treino montado e acompanhado à distância. <Link href="/consultoria-online" className="text-white underline underline-offset-4 hover:text-gray-300">Veja como funciona</Link>.</li>
+            </ul>
+            <h3 className="text-white font-semibold text-lg pt-2">A academia pode cobrar taxa de personal externo?</h3>
+            <p>
+              Algumas academias cobram uma taxa para o personal que não é da casa, e cada uma tem a própria regra. Nos condomínios do Tamboré, o treino costuma acontecer no espaço fitness do próprio residencial, conforme o regulamento interno. Antes de fechar o plano, verificamos juntos as regras do local onde você vai treinar — veja também quais <Link href="/academia-com-personal-trainer-tambore" className="text-white underline underline-offset-4 hover:text-gray-300">academias do Tamboré aceitam personal</Link>.
+            </p>
+            <h3 className="text-white font-semibold text-lg pt-2">É vantajoso pagar um personal trainer?</h3>
+            <p>
+              Vale quando você quer resultado com segurança: técnica corrigida desde o primeiro treino, progressão de carga no ritmo certo e treino adaptado a dores e limitações. É mais caro que treinar sozinho — e costuma sair mais barato que meses sem resultado ou uma lesão. Mais detalhes em <Link href="/quanto-custa-personal-trainer-tambore" className="text-white underline underline-offset-4 hover:text-gray-300">quanto custa personal trainer no Tamboré</Link>.
+            </p>
+            <p>
+              O Tamboré fica entre Barueri e Santana de Parnaíba: veja também <Link href="/personal-trainer-barueri" className="text-white underline underline-offset-4 hover:text-gray-300">personal trainer em Barueri</Link> e <Link href="/personal-trainer-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">em Alphaville</Link>.
+            </p>
+          </div>
+          <a
+            href={getWhatsAppUrl("Olá, Montinho! Vi a página de personal trainer no Tamboré e queria conhecer os tipos de plano.")}
+            data-wa-origem="planos" data-cta-id="personal-trainer-tambore:planos"
+            target="_blank" rel="noopener noreferrer"
+            className="inline-block mt-8 px-6 py-3 rounded-lg font-semibold text-black"
+            style={{ background: "#BA9E50" }}
+          >
+            Conhecer os planos pelo WhatsApp
+          </a>
         </div>
       </section>
 
