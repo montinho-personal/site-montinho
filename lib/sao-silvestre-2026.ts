@@ -67,6 +67,7 @@ export const SAO_SILVESTRE_2026_POSTS: BlogPost[] = [
 
 <h2>Dá tempo de treinar até 31 de dezembro?</h2>
 <p>Da abertura das inscrições até a prova são cerca de <strong>13 semanas</strong>. Para quem já corre 5 km sem parar, é tempo suficiente para chegar aos 15 km com segurança, aumentando o volume aos poucos e incluindo treino de força para as pernas — é ele que segura a subida da Brigadeiro Luís Antônio, na reta final. Para quem ainda não corre, dá para completar a prova alternando corrida e caminhada; o guia de <a href="/blog/corrida-para-iniciantes">corrida para iniciantes</a> mostra como começar sem se machucar.</p>
+<p>O <a href="/blog/treino-sao-silvestre-13-semanas">plano de treino de 13 semanas para a São Silvestre</a> traz três versões — para completar, para correr os 15 km e para baixar o tempo.</p>
 <p>Quer saber quanto tempo você levaria? O <a href="/ferramentas/previsor-sao-silvestre">Previsor da São Silvestre</a> parte do seu tempo em 5 km, 10 km ou meia e mostra o tempo provável nos 15 km, com a subida na conta.</p>
 
 <h2>Quem ganhou em 2025</h2>
@@ -82,6 +83,104 @@ ${FONTES_SS}`,
       { question: "Quando é a São Silvestre 2026?", answer: "Na quinta-feira, 31 de dezembro de 2026, pela manhã, em São Paulo, com largada e chegada na Avenida Paulista." },
       { question: "Quantos quilômetros tem a São Silvestre?", answer: "15 km, com largada e chegada na Avenida Paulista. O trecho mais difícil é a subida da Avenida Brigadeiro Luís Antônio, na parte final." },
       { question: "Tem sorteio para a São Silvestre?", answer: "Não. Em 2026 a inscrição é por venda direta, enquanto houver vagas." },
+    ],
+  },
+  {
+    slug: "treino-sao-silvestre-13-semanas",
+    title: "Treino para a São Silvestre: plano de 13 semanas para os 15 km",
+    metaTitle: "Treino para São Silvestre: Plano de 13 Semanas (15 km)",
+    metaDescription:
+      "Plano de 13 semanas para a São Silvestre 2026 em três níveis: completar correndo e caminhando, sair dos 5 km e baixar o tempo. Com força para a subida da Brigadeiro.",
+    excerpt:
+      "Três planos de 13 semanas até 31 de dezembro — para completar, para sair dos 5 km e para baixar o tempo — com o treino de força que segura a subida da Brigadeiro.",
+    category: "Treinamento",
+    date: "2026-09-29",
+    readTime: "9 min",
+    author: AUTOR,
+    tags: ["São Silvestre", "São Silvestre 2026", "treino de corrida", "15 km", "corrida de rua", "plano de treino"],
+    content: `<p>Da abertura das inscrições até a largada, em <strong>31 de dezembro</strong>, são cerca de <strong>13 semanas</strong>. É tempo suficiente para chegar bem aos <strong>15 km da São Silvestre</strong> — desde que o plano respeite o ponto de onde você parte. Quem hoje não corre 20 minutos seguidos e quem já faz 10 km precisam de treinos diferentes, e é por isso que este guia traz três.</p>
+<p>Antes de escolher, vale saber quanto tempo você levaria hoje: o <a href="/ferramentas/previsor-sao-silvestre">Previsor da São Silvestre</a> parte do seu tempo em 5 km, 10 km ou meia e mostra a faixa provável nos 15 km, com a subida na conta.</p>
+
+<h2>Qual plano é o seu?</h2>
+<table><thead><tr><th>Você hoje</th><th>Plano</th><th>Objetivo em 31/12</th></tr></thead><tbody>
+<tr><td>Não corre 20 minutos sem parar</td><td><strong>Plano 1 — Completar</strong></td><td>Terminar os 15 km inteiro, alternando corrida e caminhada</td></tr>
+<tr><td>Corre 5 km sem parar</td><td><strong>Plano 2 — Correr os 15 km</strong></td><td>Correr a prova toda, em ritmo confortável</td></tr>
+<tr><td>Já corre 10 km</td><td><strong>Plano 3 — Baixar o tempo</strong></td><td>Chegar mais rápido, com força para a Brigadeiro</td></tr>
+</tbody></table>
+<p>Na dúvida entre dois, escolha o mais leve. Começar abaixo do seu nível custa pouco; começar acima é o caminho mais comum para a lesão de novembro que tira a pessoa da prova.</p>
+
+<h2>As regras que valem para os três planos</h2>
+<ul>
+<li><strong>Quase tudo em ritmo leve.</strong> A maior parte dos treinos deve ser num ritmo em que você consegue conversar. Ritmo forte entra pouco e com propósito.</li>
+<li><strong>O volume sobe devagar.</strong> Aumente a distância aos poucos, semana a semana, e a cada três ou quatro semanas faça uma semana mais leve para o corpo assimilar.</li>
+<li><strong>Força duas vezes por semana.</strong> Musculação para pernas e tronco reduz o risco de lesão e é o que segura a subida da Brigadeiro Luís Antônio, na reta final.</li>
+<li><strong>Descanso é parte do plano.</strong> Pelo menos um dia sem treino por semana. Dormir mal e treinar forte é a combinação que mais quebra corredor iniciante.</li>
+<li><strong>As duas últimas semanas são de redução.</strong> Perto da prova você diminui o volume e mantém um pouco de intensidade, para chegar descansado em 31/12.</li>
+</ul>
+
+<h2>Plano 1 — Completar a prova (corre e caminha)</h2>
+<p>Três sessões de corrida e caminhada por semana, mais duas de força. O objetivo não é o relógio: é cruzar a linha na Paulista inteiro e com vontade de voltar no ano que vem.</p>
+<table><thead><tr><th>Semanas</th><th>Sessões de corrida (3x/semana)</th><th>Treino longo (1x/semana)</th></tr></thead><tbody>
+<tr><td>1 a 4 — Base</td><td>30 min alternando 1 min correndo e 2 min caminhando; aos poucos, 2 min correndo e 1 min caminhando</td><td>40 a 50 min no mesmo formato</td></tr>
+<tr><td>5 a 8 — Construção</td><td>30 a 40 min com blocos de 5 min correndo e 1 min caminhando</td><td>6 a 9 km alternando corrida e caminhada</td></tr>
+<tr><td>9 a 11 — Específico</td><td>35 a 45 min; em uma das sessões, inclua subidas curtas caminhando rápido</td><td>10 a 12 km alternando</td></tr>
+<tr><td>12 a 13 — Redução</td><td>25 a 30 min leves</td><td>Semana 12: 7 km; semana 13: só a prova</td></tr>
+</tbody></table>
+<p>Na prova, use a mesma estratégia do treino: correr e caminhar em blocos. Caminhar na subida da Brigadeiro não é derrota — muita gente que caminha ali termina melhor do que quem insiste em correr e quebra.</p>
+
+<h2>Plano 2 — Correr os 15 km (para quem já faz 5 km)</h2>
+<p>Três corridas por semana e duas sessões de força. O longo é o treino que mais importa: é ele que ensina o corpo a ficar em movimento por mais de uma hora.</p>
+<table><thead><tr><th>Semanas</th><th>Corridas curtas (2x/semana)</th><th>Treino longo (1x/semana)</th></tr></thead><tbody>
+<tr><td>1 a 4 — Base</td><td>5 a 6 km leves</td><td>6 → 7 → 8 km, com a semana 4 mais leve (6 km)</td></tr>
+<tr><td>5 a 8 — Construção</td><td>6 a 7 km; em uma delas, 4 a 6 tiros de 1 min um pouco mais forte</td><td>9 → 10 → 11 km, com a semana 8 mais leve (8 km)</td></tr>
+<tr><td>9 a 11 — Específico</td><td>6 a 8 km; em uma delas, 6 a 8 subidas curtas de 30 a 45 s</td><td>12 → 13 → 14 km, em ritmo de conversa</td></tr>
+<tr><td>12 a 13 — Redução</td><td>5 km leves com 3 acelerações curtas no fim</td><td>Semana 12: 9 km; semana 13: só a prova</td></tr>
+</tbody></table>
+<p>Não é preciso correr os 15 km inteiros antes da prova. Chegar a 13 ou 14 km no treino longo e descansar nas duas últimas semanas costuma render mais do que forçar a distância total a poucos dias da largada.</p>
+
+<h2>Plano 3 — Baixar o tempo (para quem já corre 10 km)</h2>
+<p>Quatro corridas por semana e duas sessões de força. Aqui entram treinos de qualidade — mas só um ou dois por semana; o resto continua leve.</p>
+<table><thead><tr><th>Semanas</th><th>Treino de qualidade</th><th>Treino longo</th><th>Demais corridas</th></tr></thead><tbody>
+<tr><td>1 a 4 — Base</td><td>6 a 8 tiros de 1 min forte com 1 min leve</td><td>10 → 12 km</td><td>2 corridas leves de 6 a 8 km</td></tr>
+<tr><td>5 a 8 — Construção</td><td>20 a 30 min em ritmo firme, um pouco abaixo do ritmo de prova</td><td>12 → 14 km</td><td>2 leves de 7 a 8 km</td></tr>
+<tr><td>9 a 11 — Específico</td><td>8 a 10 subidas de 45 s a 1 min; e, na outra semana, 3 blocos de 2 km no ritmo de prova</td><td>14 → 16 km, com os últimos 3 km no ritmo de prova</td><td>2 leves de 8 km</td></tr>
+<tr><td>12 a 13 — Redução</td><td>Metade do volume de tiros, mesma intensidade</td><td>Semana 12: 10 km; semana 13: só a prova</td><td>Leves e curtas</td></tr>
+</tbody></table>
+<p>Para saber qual é o seu ritmo de prova, use o <a href="/ferramentas/previsor-sao-silvestre">previsor</a> com um tempo recente de 5 ou 10 km: ele mostra o pace médio provável nos 15 km.</p>
+
+<h2>O treino de força que segura a Brigadeiro</h2>
+<p>A subida da Avenida Brigadeiro Luís Antônio vem perto do fim, quando a perna já está cansada. Quem chega ali com força sobe; quem não chega, arrasta. Duas sessões por semana, em dias sem treino forte de corrida:</p>
+<ul>
+<li><strong>Agachamento</strong> — 3 séries de 8 a 12 repetições;</li>
+<li><strong>Afundo ou passada</strong> — 3 séries de 8 a 10 por perna;</li>
+<li><strong>Subida no banco (step-up)</strong> — 3 séries de 8 a 10 por perna, o exercício mais parecido com a subida;</li>
+<li><strong>Elevação de panturrilha</strong> — 3 séries de 12 a 15;</li>
+<li><strong>Prancha</strong> — 3 séries de 30 a 45 s, para o tronco não desmontar no fim da prova.</li>
+</ul>
+<p>Nas duas últimas semanas, reduza a carga e as séries pela metade. O guia de <a href="/blog/corrida-e-musculacao">corrida e musculação</a> mostra como encaixar os dois na mesma semana sem um atrapalhar o outro.</p>
+
+<h2>Sinais para parar e procurar ajuda</h2>
+<p>Desconforto muscular leve depois do treino é normal. Não é normal: dor que piora durante a corrida, dor em um ponto específico do osso, dor que faz você mancar ou que continua no dia seguinte sem melhorar. Nesses casos, pare e procure um médico ou fisioterapeuta. Quem tem alguma condição de saúde, ou está parado há muito tempo, deve fazer uma avaliação médica antes de começar.</p>
+
+<h2>A semana da prova</h2>
+<ul>
+<li>Não teste nada novo: nem tênis, nem roupa, nem comida.</li>
+<li>Faça um ou dois treinos curtos e leves; o condicionamento já está construído.</li>
+<li>Na véspera, jante o que você já está acostumado e durma cedo — a largada do pelotão geral foi às 8h10 em 2025.</li>
+<li>Na largada, comece mais devagar do que dá vontade. São 15 km, e a parte difícil é no fim.</li>
+</ul>
+<p>Datas de retirada do kit e horários de 2026 saem no regulamento; o <a href="/blog/inscricao-sao-silvestre-2026">guia da inscrição</a> é atualizado quando forem divulgados.</p>
+
+<h2>Corra a sua prova</h2>
+<p>Na São Silvestre tem gente de todo tipo: quem vai buscar recorde e quem vai para completar a primeira prova da vida. Não se compare com quem está do seu lado — cada um tem a própria genética, rotina e história, com altos e baixos. O que faz diferença é um plano que você consiga seguir até dezembro e continuar depois dele. Se quiser montar esse plano comigo, ajustado ao seu nível e à sua agenda, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+${FONTES_SS}`,
+    faq: [
+      { question: "Dá para treinar para a São Silvestre em 13 semanas?", answer: "Sim. Para quem já corre 5 km, 13 semanas bastam para chegar aos 15 km aumentando o volume aos poucos. Para quem ainda não corre, dá para completar a prova alternando corrida e caminhada." },
+      { question: "Quantas vezes por semana devo treinar para a São Silvestre?", answer: "Três corridas por semana para quem quer completar ou correr a prova toda, quatro para quem quer baixar o tempo, e duas sessões de musculação para pernas e tronco em todos os casos." },
+      { question: "Preciso correr 15 km antes da prova?", answer: "Não. Chegar a 13 ou 14 km no treino longo e reduzir o volume nas duas últimas semanas costuma render mais do que correr a distância total perto da largada. Quem busca tempo pode ir a 16 km no longo." },
+      { question: "Como treinar para a subida da Brigadeiro?", answer: "Com treino de força duas vezes por semana (agachamento, afundo, subida no banco e panturrilha) e, a partir da semana 9, subidas curtas de 30 segundos a 1 minuto em um dos treinos de corrida." },
+      { question: "Posso caminhar na São Silvestre?", answer: "Pode. Muitos participantes alternam corrida e caminhada, principalmente na subida da Brigadeiro. Caminhar com estratégia costuma dar um resultado melhor do que insistir em correr e quebrar." },
     ],
   },
 ];
