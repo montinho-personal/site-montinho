@@ -274,4 +274,68 @@ ${FONTES_SS}`,
       { question: "Qual a parte mais difícil do percurso?", answer: "A subida da Avenida Brigadeiro Luís Antônio, perto do fim, quando o corredor já passou dos 12 km." },
     ],
   },
+  {
+    slug: "vencedores-sao-silvestre",
+    title: "Vencedores da São Silvestre: campeões, recordes e brasileiros",
+    metaTitle: "Vencedores da São Silvestre: Campeões, Recordes e Brasileiros",
+    metaDescription:
+      "Quem venceu a São Silvestre 2025, o recorde masculino e feminino dos 15 km, os maiores campeões da história e os brasileiros que já ganharam a prova.",
+    excerpt:
+      "Os campeões de 2025, os recordes do percurso, Paul Tergat e Rosa Mota, e o último brasileiro a vencer a São Silvestre — tudo o que se pergunta sobre os vencedores.",
+    category: "Treinamento",
+    date: "2026-09-29",
+    readTime: "5 min",
+    author: AUTOR,
+    tags: ["São Silvestre", "vencedores São Silvestre", "recorde São Silvestre", "corrida de rua", "atletismo"],
+    content: `<p>A <strong>São Silvestre</strong> é disputada desde 1925 e, desde que virou internacional, é dominada por corredores do leste da África. Aqui estão os <strong>vencedores de 2025</strong>, os <strong>recordes</strong> dos 15 km, os <strong>maiores campeões</strong> da história e os <strong>brasileiros</strong> que já venceram. A 101ª edição, em 31 de dezembro de 2026, entra nesta página com o resultado oficial.</p>
+
+<h2>Vencedores da São Silvestre 2025</h2>
+<p>Na 100ª edição, em 31 de dezembro de 2025:</p>
+<table><thead><tr><th>Categoria</th><th>Campeão(ã)</th><th>Tempo</th><th>Melhor brasileiro(a)</th></tr></thead><tbody>
+<tr><td>Masculino</td><td><strong>Muse Gizachew</strong> (Etiópia)</td><td>44min28s</td><td>Fábio Jesus, 3º</td></tr>
+<tr><td>Feminino</td><td><strong>Sisilia Panga</strong> (Tanzânia)</td><td>51min08s</td><td>Núbia Oliveira, 3ª</td></tr>
+</tbody></table>
+
+<h2>Recorde da São Silvestre</h2>
+<table><thead><tr><th>Categoria</th><th>Recorde</th><th>Atleta</th><th>Ano</th></tr></thead><tbody>
+<tr><td>Masculino</td><td><strong>42min59s</strong></td><td>Kibiwott Kandie (Quênia)</td><td>2019</td></tr>
+<tr><td>Feminino</td><td><strong>48min35s</strong></td><td>Jemima Sumgong (Quênia)</td><td>2016</td></tr>
+</tbody></table>
+<p>Kandie foi o primeiro a correr os 15 km abaixo de 43 minutos, numa chegada decidida no último passo, e quebrou a marca que era de Paul Tergat desde 1995. A marca feminina de Sumgong, campeã olímpica da maratona naquele ano, superou os 48min48s de Priscah Jeptoo, de 2011. Em 2017, Sumgong foi suspensa por doping.</p>
+<p>Para ter ideia do ritmo: 42min59s em 15 km é menos de 2min52s por quilômetro, sustentado por uma prova com a subida da Brigadeiro no fim.</p>
+
+<h2>Quem é o maior vencedor da São Silvestre?</h2>
+<ul>
+<li><strong>Masculino:</strong> o queniano <strong>Paul Tergat</strong>, com cinco vitórias (1995, 1996, 1998, 1999 e 2000).</li>
+<li><strong>Feminino e geral:</strong> a portuguesa <strong>Rosa Mota</strong>, com seis vitórias seguidas, de 1981 a 1986 — a maior vencedora da história da prova.</li>
+</ul>
+
+<h2>Qual brasileiro já ganhou a São Silvestre?</h2>
+<p>O Brasil tem campeões nas duas categorias. Os mais lembrados:</p>
+<ul>
+<li><strong>Marílson Gomes dos Santos</strong> — único brasileiro tricampeão (2003, 2005 e 2010) e o último homem do país a vencer, em 2010.</li>
+<li><strong>Franck Caldeira</strong> — campeão em 2006.</li>
+<li><strong>Lucélia Peres</strong> — campeã em 2006, a última brasileira a vencer a prova feminina.</li>
+</ul>
+<p>Desde então, quenianos, etíopes, ugandenses e tanzanianos dividem as vitórias. Em 2025, Fábio Jesus e Núbia Oliveira colocaram o Brasil no pódio, os dois em 3º lugar.</p>
+
+<h2>E o seu tempo?</h2>
+<p>O recorde é de 42min59s; a maior parte dos participantes leva bem mais de uma hora — e isso não diz nada sobre quem é melhor. Cada um corre contra o próprio relógio. Para saber o seu tempo provável, use o <a href="/ferramentas/previsor-sao-silvestre">Previsor da São Silvestre</a>; para se preparar, o <a href="/blog/treino-sao-silvestre-13-semanas">plano de treino de 13 semanas</a>; e, para conhecer o trajeto, o <a href="/blog/percurso-sao-silvestre">percurso trecho a trecho</a>.</p>
+
+<h2>Corra a sua prova</h2>
+<p>Os campeões treinam a vida inteira para disputar segundos. Você não precisa disso para viver a São Silvestre: não se compare com ninguém — cada um tem a própria genética, rotina e história. O que importa é um plano que você consiga seguir. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.saosilvestre.com.br/" target="_blank" rel="noopener noreferrer">São Silvestre — site oficial</a></li>
+<li>Veículos consultados: Gazeta Esportiva, Band, Jornal Cruzeiro, CBAt, Olympics.com, Metrópoles, Lance!, CNN Brasil.</li>
+</ul>`,
+    faq: [
+      { question: "Quem venceu a São Silvestre 2025?", answer: "Muse Gizachew, da Etiópia, no masculino (44min28s), e Sisilia Panga, da Tanzânia, no feminino (51min08s). Fábio Jesus e Núbia Oliveira foram 3º e 3ª." },
+      { question: "Qual o recorde da São Silvestre?", answer: "No masculino, 42min59s, do queniano Kibiwott Kandie, em 2019. No feminino, 48min35s, da queniana Jemima Sumgong, em 2016." },
+      { question: "Quem é o maior vencedor da São Silvestre?", answer: "Rosa Mota, de Portugal, com seis vitórias seguidas (1981 a 1986). No masculino, o queniano Paul Tergat, com cinco." },
+      { question: "Qual brasileiro já ganhou a São Silvestre?", answer: "Vários. Marílson Gomes dos Santos é o único tricampeão (2003, 2005 e 2010) e o último homem brasileiro a vencer. Lucélia Peres, em 2006, foi a última brasileira campeã." },
+      { question: "Quando um brasileiro venceu a São Silvestre pela última vez?", answer: "No masculino, Marílson Gomes dos Santos, em 2010. No feminino, Lucélia Peres, em 2006." },
+    ],
+  },
 ];
