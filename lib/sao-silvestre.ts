@@ -116,4 +116,5 @@ export { formataPace, formataRelogio };
 /** Artigos que apontam para o previsor (variante de LINK, teto de oito). */
 export const ARTIGOS_COM_LINK_PREVISOR_SS: string[] = [
   "inscricao-sao-silvestre-2026",
+  "treino-sao-silvestre-13-semanas",
 ];
