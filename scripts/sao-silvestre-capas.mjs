@@ -124,6 +124,14 @@ const CAPAS = [
 <div class="main"><h1>Tênis para a<br><em>São Silvestre</em></h1>
 <div class="sub">Os modelos oficiais, o que importa em 15 km<br>e o erro de <b>estrear tênis na prova</b>.</div></div>`, "15 KM"),
   },
+  {
+    slug: "como-melhorar-o-pace-na-corrida",
+    alt: "Capa: como melhorar o pace na corrida — o que é, como calcular, tabela de pace e os treinos para baixar",
+    html: base(`
+<div class="top"><div class="kicker">Corrida · Pace</div><div class="chip"><i></i>Com tabela</div></div>
+<div class="main"><h1>Como melhorar<br>o seu <em>pace</em></h1>
+<div class="sub">O que é, como calcular e os treinos<br>para correr mais rápido e <b>cansar menos</b>.</div></div>`, "MIN/KM"),
+  },
 ];
 // Só algumas capas: node scripts/sao-silvestre-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);
