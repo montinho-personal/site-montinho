@@ -59325,12 +59325,12 @@ Trabalho com hardgainers há mais de 20 anos em Alphaville. Se você quer um pro
   {
     slug: "frutas-antes-do-treino",
     title: "Frutas Antes do Treino: Quais Comer e em Que Quantidade",
-    metaTitle: "Frutas Antes do Treino: Quais Comer e Quanto Tempo Antes",
+    metaTitle: "Frutas Antes do Treino: As Melhores, Quanto Tempo Antes e É Bom?",
     metaDescription: "Banana, uva e melancia caem bem 30 a 45 minutos antes; maçã e pera pedem de 60 a 90. Veja a porção certa e o que combinar para o treino render mais.",
     excerpt: "Banana, maçã, tâmara, manga — as frutas têm açúcares naturais ideais para o pré-treino. Mas não é qualquer fruta, qualquer hora ou qualquer quantidade.",
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
+    updatedAt: "2026-09-29",
     readTime: "8 min",
     author: "Montinho Personal Trainer",
     tags: ["frutas antes do treino", "pré-treino alimentar", "carboidrato pré-treino", "nutrição esportiva", "musculação e alimentação", "personal trainer alphaville"],
@@ -59437,6 +59437,35 @@ Frutas com refeição mais completa:
 | Emagrecimento | 15-25g | 1/2 banana ou 1 maçã |
 | Manutenção | 25-40g | 1 banana ou 1 manga |
 | Ganho de massa | 40-60g | 1 banana + aveia ou 2 mangas |
+
+## Comer Fruta Antes do Treino É Bom?
+
+É. Fruta é uma fonte prática de carboidrato de fácil digestão, que dá energia sem pesar. Para a maioria das pessoas, uma fruta de 30 a 60 minutos antes funciona bem; se o treino for logo em seguida, prefira as mais leves (banana, maçã sem casca, uva).
+
+## O Que Comer 30 Minutos Antes de Treinar?
+
+Pouca coisa e fácil de digerir: **uma banana**, uma porção de uva, uma maçã ou um iogurte com fruta. Refeições maiores, com gordura e fibra, ficam melhor 1h30 a 3h antes.
+
+## Quantas Bananas Comer Antes do Treino?
+
+Para a maioria, **uma banana** basta. Em treinos longos ou intensos (mais de 1 hora, corrida longa), uma e meia a duas pode fazer sentido — teste no treino, nunca no dia de prova.
+
+## Vitamina, Salada de Frutas ou Iogurte com Frutas?
+
+- **Vitamina (fruta + leite ou iogurte + aveia):** boa quando falta tempo; líquida, digere rápido.
+- **Salada de frutas:** funciona, mas em porção pequena se o treino for em menos de 1 hora.
+- **Iogurte com frutas:** junta carboidrato e proteína — ótimo 45 a 60 minutos antes.
+
+## Frutas Antes ou Depois do Treino?
+
+Os dois funcionam. Antes, a fruta dá energia; depois, ajuda a repor glicogênio — idealmente junto com uma fonte de proteína.
+
+## Frutas Pré-Treino para Hipertrofia ou Emagrecimento
+
+- **Hipertrofia:** fruta + proteína (iogurte, ovos, whey) garante energia e aminoácidos.
+- **Emagrecimento:** a fruta cabe no plano; o que importa é o total de calorias do dia. Uma porção basta.
+
+Quem tem **diabetes** deve definir quais frutas, quanto e quando com o médico e o nutricionista, e monitorar a glicemia ao redor do treino.
 
 ## Frutas que Podem Atrapalhar o Treino
 

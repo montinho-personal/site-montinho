@@ -18,7 +18,7 @@ Hipótese: título, descrição e FAQ pelas buscas reais sobem o CTR e a posiç�
 | treino-upper-lower-superior-inferior | 3.280 | 8,6 | 56 | 29/09 | ver git log |
 | cardio-ou-musculacao-mounjaro | 1.898 | 8,4 | 3 | 29/09 | ver git log |
 | calorias-para-ganhar-massa-muscular | 643 | 10,1 | 2 | 29/09 | ver git log |
-| frutas-antes-do-treino | 622 | 8,2 | 1 | — | — |
+| frutas-antes-do-treino | 622 | 8,2 | 1 | 29/09 | ver git log |
 
 ## Braço B — 2ª página (posição 10–19)
 
@@ -88,3 +88,8 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 - metaTitle: "Exercícios para Glúteo Médio — Os 6 Mais Eficazes" → "Glúteo Médio: Onde Fica, Função e os 6 Melhores Exercícios"
 - H2 novos: onde fica e para que serve (origem/inserção); máximo, médio e mínimo (tensor da fáscia lata); sintomas de glúteo médio fraco; como ativar; na polia e na máquina; antes e depois.
 - Canibalização: técnica da cadeira abdutora fica em como-fazer-abducao-quadril-maquina (link); hip dips linkado.
+
+### frutas-antes-do-treino (29/09) — braço A
+- metaTitle: "Frutas Antes do Treino: Quais Comer e Quanto Tempo Antes" → "Frutas Antes do Treino: As Melhores, Quanto Tempo Antes e É Bom?"
+- H2 novos: é bom; o que comer 30 min antes; quantas bananas; vitamina/salada/iogurte; antes ou depois; hipertrofia ou emagrecimento (diabetes → médico/nutricionista).
+- Fora: arritmia (tema médico).
