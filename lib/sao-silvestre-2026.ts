@@ -96,10 +96,10 @@ ${FONTES_SS}`,
   },
   {
     slug: "treino-sao-silvestre-13-semanas",
-    title: "Treino para a São Silvestre: plano de 13 semanas para os 15 km",
-    metaTitle: "Treino para São Silvestre: Plano de 13 Semanas (15 km)",
+    title: "Treino para a São Silvestre: planilha de 13 semanas para os 15 km",
+    metaTitle: "Planilha de Treino para a São Silvestre: 13 Semanas (15 km)",
     metaDescription:
-      "Plano de 13 semanas para a São Silvestre 2026 em três níveis: completar correndo e caminhando, sair dos 5 km e baixar o tempo. Com força para a subida da Brigadeiro.",
+      "Planilha de treino para a São Silvestre 2026 em três níveis, do iniciante a quem quer baixar o tempo nos 15 km. Quanto tempo treinar, se pode caminhar e como encarar a Brigadeiro.",
     excerpt:
       "Três planos de 13 semanas até 31 de dezembro — para completar, para sair dos 5 km e para baixar o tempo — com o treino de força que segura a subida da Brigadeiro.",
     category: "Treinamento",
@@ -107,10 +107,10 @@ ${FONTES_SS}`,
     readTime: "9 min",
     author: AUTOR,
     tags: ["São Silvestre", "São Silvestre 2026", "treino de corrida", "15 km", "corrida de rua", "plano de treino"],
-    content: `<p>Da abertura das inscrições até a largada, em <strong>31 de dezembro</strong>, são cerca de <strong>13 semanas</strong>. É tempo suficiente para chegar bem aos <strong>15 km da São Silvestre</strong> — desde que o plano respeite o ponto de onde você parte. Quem hoje não corre 20 minutos seguidos e quem já faz 10 km precisam de treinos diferentes, e é por isso que este guia traz três.</p>
+    content: `<p>A São Silvestre tem <strong>15 km</strong>, com largada e chegada na Avenida Paulista. Da abertura das inscrições até a largada, em <strong>31 de dezembro</strong>, são cerca de <strong>13 semanas</strong>. É tempo suficiente para chegar bem aos <strong>15 km da São Silvestre</strong> — desde que o plano respeite o ponto de onde você parte. Quem hoje não corre 20 minutos seguidos e quem já faz 10 km precisam de treinos diferentes, e é por isso que este guia traz três planilhas, uma para cada ponto de partida — incluindo uma para iniciantes.</p>
 <p>Antes de escolher, vale saber quanto tempo você levaria hoje: o <a href="/ferramentas/previsor-sao-silvestre">Previsor da São Silvestre</a> parte do seu tempo em 5 km, 10 km ou meia e mostra a faixa provável nos 15 km, com a subida na conta.</p>
 
-<h2>Qual plano é o seu?</h2>
+<h2>Qual planilha é a sua?</h2>
 <table><thead><tr><th>Você hoje</th><th>Plano</th><th>Objetivo em 31/12</th></tr></thead><tbody>
 <tr><td>Não corre 20 minutos sem parar</td><td><strong>Plano 1 — Completar</strong></td><td>Terminar os 15 km inteiro, alternando corrida e caminhada</td></tr>
 <tr><td>Corre 5 km sem parar</td><td><strong>Plano 2 — Correr os 15 km</strong></td><td>Correr a prova toda, em ritmo confortável</td></tr>
@@ -127,7 +127,7 @@ ${FONTES_SS}`,
 <li><strong>As duas últimas semanas são de redução.</strong> Perto da prova você diminui o volume e mantém um pouco de intensidade, para chegar descansado em 31/12.</li>
 </ul>
 
-<h2>Plano 1 — Completar a prova (corre e caminha)</h2>
+<h2>Planilha 1 — Iniciante: completar a prova correndo e caminhando</h2>
 <p>Três sessões de corrida e caminhada por semana, mais duas de força. O objetivo não é o relógio: é cruzar a linha na Paulista inteiro e com vontade de voltar no ano que vem.</p>
 <table><thead><tr><th>Semanas</th><th>Sessões de corrida (3x/semana)</th><th>Treino longo (1x/semana)</th></tr></thead><tbody>
 <tr><td>1 a 4 — Base</td><td>30 min alternando 1 min correndo e 2 min caminhando; aos poucos, 2 min correndo e 1 min caminhando</td><td>40 a 50 min no mesmo formato</td></tr>
@@ -137,7 +137,7 @@ ${FONTES_SS}`,
 </tbody></table>
 <p>Na prova, use a mesma estratégia do treino: correr e caminhar em blocos. Caminhar na subida da Brigadeiro não é derrota — muita gente que caminha ali termina melhor do que quem insiste em correr e quebra.</p>
 
-<h2>Plano 2 — Correr os 15 km (para quem já faz 5 km)</h2>
+<h2>Planilha 2 — Correr os 15 km (para quem já faz 5 km)</h2>
 <p>Três corridas por semana e duas sessões de força. O longo é o treino que mais importa: é ele que ensina o corpo a ficar em movimento por mais de uma hora.</p>
 <table><thead><tr><th>Semanas</th><th>Corridas curtas (2x/semana)</th><th>Treino longo (1x/semana)</th></tr></thead><tbody>
 <tr><td>1 a 4 — Base</td><td>5 a 6 km leves</td><td>6 → 7 → 8 km, com a semana 4 mais leve (6 km)</td></tr>
@@ -147,7 +147,7 @@ ${FONTES_SS}`,
 </tbody></table>
 <p>Não é preciso correr os 15 km inteiros antes da prova. Chegar a 13 ou 14 km no treino longo e descansar nas duas últimas semanas costuma render mais do que forçar a distância total a poucos dias da largada.</p>
 
-<h2>Plano 3 — Baixar o tempo (para quem já corre 10 km)</h2>
+<h2>Planilha 3 — Baixar o tempo (para quem já corre 10 km)</h2>
 <p>Quatro corridas por semana e duas sessões de força. Aqui entram treinos de qualidade — mas só um ou dois por semana; o resto continua leve.</p>
 <table><thead><tr><th>Semanas</th><th>Treino de qualidade</th><th>Treino longo</th><th>Demais corridas</th></tr></thead><tbody>
 <tr><td>1 a 4 — Base</td><td>6 a 8 tiros de 1 min forte com 1 min leve</td><td>10 → 12 km</td><td>2 corridas leves de 6 a 8 km</td></tr>
@@ -156,6 +156,12 @@ ${FONTES_SS}`,
 <tr><td>12 a 13 — Redução</td><td>Metade do volume de tiros, mesma intensidade</td><td>Semana 12: 10 km; semana 13: só a prova</td><td>Leves e curtas</td></tr>
 </tbody></table>
 <p>Para saber qual é o seu ritmo de prova, use o <a href="/ferramentas/previsor-sao-silvestre">previsor</a> com um tempo recente de 5 ou 10 km: ele mostra o pace médio provável nos 15 km.</p>
+
+<h2>Quanto tempo de treino é preciso para correr a São Silvestre?</h2>
+<p>Depende de onde você parte. Para quem já corre 5 km, de 10 a 13 semanas é um prazo confortável. Para quem está começando do zero, o mesmo período permite completar a prova alternando corrida e caminhada. Um mês só costuma bastar para quem já corre 10 km com regularidade e quer ajustar a preparação; para quem não corre, um mês é pouco para correr os 15 km sem aumentar muito o risco de lesão — nesse caso, a meta segura é completar caminhando e correndo.</p>
+
+<h2>Pode caminhar na São Silvestre?</h2>
+<p>Pode. A prova é aberta a quem corre e a quem alterna corrida e caminhada, e muita gente caminha em algum trecho, principalmente na subida da Brigadeiro. Para quem está começando, caminhar de forma planejada — e não só quando o fôlego acaba — é a estratégia da Planilha 1.</p>
 
 <h2>O treino de força que segura a Brigadeiro</h2>
 <p>A subida da Avenida Brigadeiro Luís Antônio vem perto do fim, quando a perna já está cansada. Quem chega ali com força sobe; quem não chega, arrasta. Duas sessões por semana, em dias sem treino forte de corrida:</p>
@@ -186,6 +192,9 @@ ${FONTES_SS}`,
 ${FONTES_SS}`,
     faq: [
       { question: "Dá para treinar para a São Silvestre em 13 semanas?", answer: "Sim. Para quem já corre 5 km, 13 semanas bastam para chegar aos 15 km aumentando o volume aos poucos. Para quem ainda não corre, dá para completar a prova alternando corrida e caminhada." },
+      { question: "Existe planilha de treino para São Silvestre para iniciantes?", answer: "Sim. A Planilha 1 deste guia é para quem não corre 20 minutos sem parar: três sessões por semana alternando corrida e caminhada, mais duas de força, até completar os 15 km." },
+      { question: "Dá para se preparar para a São Silvestre em um mês?", answer: "Para quem já corre 10 km com regularidade, sim, ajustando o volume e descansando na última semana. Para quem não corre, um mês é pouco para correr os 15 km com segurança; a meta realista é completar alternando corrida e caminhada." },
+      { question: "Quantos km tem a São Silvestre?", answer: "15 km, com largada e chegada na Avenida Paulista e a subida da Avenida Brigadeiro Luís Antônio perto do fim." },
       { question: "Quantas vezes por semana devo treinar para a São Silvestre?", answer: "Três corridas por semana para quem quer completar ou correr a prova toda, quatro para quem quer baixar o tempo, e duas sessões de musculação para pernas e tronco em todos os casos." },
       { question: "Preciso correr 15 km antes da prova?", answer: "Não. Chegar a 13 ou 14 km no treino longo e reduzir o volume nas duas últimas semanas costuma render mais do que correr a distância total perto da largada. Quem busca tempo pode ir a 16 km no longo." },
       { question: "Como treinar para a subida da Brigadeiro?", answer: "Com treino de força duas vezes por semana (agachamento, afundo, subida no banco e panturrilha) e, a partir da semana 9, subidas curtas de 30 segundos a 1 minuto em um dos treinos de corrida." },
