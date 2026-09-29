@@ -120,4 +120,5 @@ export const ARTIGOS_COM_LINK_PREVISOR_SS: string[] = [
   "percurso-sao-silvestre",
   "vencedores-sao-silvestre",
   "primeira-sao-silvestre-dicas",
+  "tenis-para-sao-silvestre",
 ];
