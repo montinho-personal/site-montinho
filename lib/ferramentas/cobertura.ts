@@ -41,6 +41,7 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  "brasileiros-ufc-332": "Hub dos brasileiros no UFC 332: a pessoa quer saber quem luta, contra quem e a que horas; sai com nomes e horários, sem conta pendente.",
   "corte-de-peso-ufc": "Explicativo sobre corte de peso e categorias do UFC: o leitor sai entendendo o processo e os riscos, não com uma conta; o link para déficit calórico cobre quem quer emagrecer.",
   // Cluster Mr. Olympia 2026 (lib/olympia-2026.ts): cobertura de evento. A pessoa
   // chega com "quem ganhou / que horas / quanto pesa" e sai com um fato, não com
