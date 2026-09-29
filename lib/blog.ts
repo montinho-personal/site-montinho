@@ -104,10 +104,12 @@ export const BLOG_CATEGORIES = [
 import { OLYMPIA_2026_POSTS } from "./olympia-2026";
 import { SAO_SILVESTRE_2026_POSTS } from "./sao-silvestre-2026";
 import { CORRIDA_PACE_POSTS } from "./corrida-pace";
+import { HYROX_SP_2026_POSTS } from "./hyrox-sp-2026";
 
 export const blogPosts = ([
   ...SAO_SILVESTRE_2026_POSTS,
   ...CORRIDA_PACE_POSTS,
+  ...HYROX_SP_2026_POSTS,
   ...OLYMPIA_2026_POSTS,
   {
     slug: "parar-de-tomar-mounjaro",

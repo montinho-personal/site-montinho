@@ -132,6 +132,14 @@ const CAPAS = [
 <div class="main"><h1>Como melhorar<br>o seu <em>pace</em></h1>
 <div class="sub">O que é, como calcular e os treinos<br>para correr mais rápido e <b>cansar menos</b>.</div></div>`, "MIN/KM"),
   },
+  {
+    slug: "hyrox-sao-paulo-2026",
+    alt: "Capa: HYROX São Paulo 2026 — 17 e 18 de outubro no Distrito Anhembi",
+    html: base(`
+<div class="top"><div class="kicker">HYROX · São Paulo 2026</div><div class="chip"><i></i>17 e 18/10</div></div>
+<div class="main"><h1><em>HYROX</em><br>São Paulo 2026</h1>
+<div class="sub">Distrito Anhembi · Individual, Duplas e Revezamento<br><b>8 km de corrida</b> + <b>8 estações</b>.</div></div>`, "8 × 1 KM"),
+  },
 ];
 // Só algumas capas: node scripts/sao-silvestre-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);

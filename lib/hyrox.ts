@@ -208,4 +208,4 @@ export const NOTA_SEGURANCA =
 /* ───────────────────────── Artigos ───────────────────────── */
 
 /** Artigos que EMBUTEM a calculadora, logo depois da primeira seção. */
-export const ARTIGOS_COM_CALCULADORA_HYROX: string[] = ["hyrox-o-que-e"];
+export const ARTIGOS_COM_CALCULADORA_HYROX: string[] = ["hyrox-o-que-e", "hyrox-sao-paulo-2026"];
