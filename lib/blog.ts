@@ -46337,19 +46337,23 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   {
     slug: "treino-upper-lower-superior-inferior",
     title: "Treino Upper/Lower: A Divisão que Maximiza Hipertrofia em 4 Dias",
-    metaTitle: "Treino Upper Lower: Fichas Prontas de 4 Dias e Como Montar",
-    metaDescription: "A divisão superior/inferior treina cada grupo 2x por semana — a frequência que a literatura associa a mais hipertrofia. Fichas, semana montada e erros comuns.",
+    metaTitle: "Treino Upper Lower: Fichas de 2, 3, 4 e 5 Dias (Masc. e Fem.)",
+    metaDescription: "Treino upper lower: o que é, como dividir em 2, 3, 4 ou 5 dias, fichas prontas, versão masculina e feminina, se é bom para hipertrofia e como se compara ao push pull legs.",
     excerpt: "O treino upper/lower é a divisão favorita de pesquisadores como Brad Schoenfeld e Eric Helms — e por razões sólidas. Frequência 2x por semana por grupo muscular com estrutura prática.",
     category: "Treino",
     readTime: "13 min",
     author: "Montinho",
     date: "2026-06-28",
-    updatedAt: "2026-08-27",
+    updatedAt: "2026-09-29",
     faq: [
       { question: "O que é treino upper lower?", answer: "O treino upper/lower (superior/inferior) é uma divisão em que você separa o corpo em membros superiores e inferiores, treinando cada parte 2 vezes por semana em 4 sessões semanais." },
       { question: "Upper lower é bom para iniciantes?", answer: "O upper/lower funciona bem para iniciantes a intermediários. Para iniciantes absolutos, um full body 3x/semana pode ser mais eficiente nos primeiros 3–6 meses. A partir daí, o upper/lower é uma progressão natural excelente." },
       { question: "Posso adicionar cardio no treino upper lower?", answer: "Sim. O ideal é fazer cardio nos dias de descanso ou após as sessões de lower, que já trabalham os membros inferiores. Evite cardio intenso de corrida antes de sessões lower pesadas." },
       { question: "Upper lower funciona para mulheres?", answer: "Perfeitamente. Para mulheres com objetivo de treinar glúteos e posterior com mais frequência, o Lower B pode ter mais volume de hip thrust e agachamento búlgaro, maximizando o estímulo nessas regiões 2x/semana." },
+      { question: "Treino upper lower 3 dias funciona?", answer: "Funciona. Alterne Upper, Lower, Upper numa semana e Lower, Upper, Lower na outra. Cada grupo é treinado 1,5x por semana em média." },
+      { question: "Treino upper lower 5 dias: como montar?", answer: "Faça os 4 dias clássicos (Upper A, Lower A, Upper B, Lower B) e acrescente um quinto dia para o seu ponto fraco, como membros superiores ou glúteos e posterior." },
+      { question: "O treino upper lower é bom para hipertrofia?", answer: "Sim. Ele permite treinar cada grupo cerca de 2x por semana com bom volume, o que favorece a hipertrofia, desde que haja progressão de carga." },
+      { question: "Existe treino upper lower feminino?", answer: "A estrutura é a mesma; para priorizar glúteos e posterior, coloque mais volume nos dias de Lower, especialmente no Lower B." },
       { question: "Qual a diferença entre upper lower e push pull legs?", answer: "O push/pull/legs treina cada músculo 2x/semana mas exige 6 dias. O upper/lower atinge a mesma frequência com apenas 4 dias, sendo mais sustentável para quem tem agenda limitada." }
     ],
     tags: ["treino upper lower", "divisão superior inferior", "treino 4 dias semana", "hipertrofia intermediário", "upper lower split"],
@@ -46442,6 +46446,22 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <tr><td>Panturrilha sentado</td><td>4</td><td>12–15</td><td>60 seg</td></tr>
 </tbody>
 </table>
+
+<h2>Upper Lower 2, 3, 4 ou 5 Dias: Como Dividir</h2>
+<p>A divisão se adapta a quantos dias você tem. O que muda é quantas vezes cada grupo é treinado na semana:</p>
+<table><thead><tr><th>Dias</th><th>Como fica a semana</th><th>Frequência por grupo</th><th>Para quem</th></tr></thead><tbody>
+<tr><td><strong>2 dias</strong></td><td>Upper · Lower</td><td>1x</td><td>Agenda apertada; manutenção</td></tr>
+<tr><td><strong>3 dias</strong></td><td>Alterna: Upper · Lower · Upper numa semana, Lower · Upper · Lower na outra</td><td>1,5x (média)</td><td>Quem treina em dias alternados</td></tr>
+<tr><td><strong>4 dias</strong></td><td>Upper A · Lower A · descanso · Upper B · Lower B</td><td>2x</td><td>O formato clássico, mais usado</td></tr>
+<tr><td><strong>5 dias</strong></td><td>Os 4 dias + um dia extra do ponto fraco (ex.: Upper ou glúteo/posterior)</td><td>2x a 3x no grupo priorizado</td><td>Intermediários com tempo e boa recuperação</td></tr>
+</tbody></table>
+<p>Se você tem só 3 dias e quer frequência 2x para todos os grupos, um <a href="/blog/full-body-vs-divisao-abc">full body</a> 3x por semana também é uma boa alternativa.</p>
+
+<h2>Upper Lower Masculino e Feminino</h2>
+<p>A estrutura é a mesma para homens e mulheres; o que muda é onde colocar mais volume, conforme o objetivo de cada pessoa. Quem quer priorizar glúteos e posterior costuma dar mais séries ao Lower B (elevação de quadril, stiff, cadeira abdutora); quem quer priorizar peito, costas e ombros põe mais volume nos dias de Upper. As fichas abaixo servem para os dois — ajuste o volume do grupo que você quer destacar.</p>
+
+<h2>O Treino Upper Lower É Bom para Hipertrofia?</h2>
+<p>Sim. Treinar cada grupo muscular cerca de duas vezes por semana, com volume semanal suficiente, é uma das estratégias mais consistentes para ganhar massa — e o upper/lower entrega isso com apenas quatro dias. Mais importante que a divisão, porém, é a progressão de carga ao longo das semanas e a constância para seguir o plano.</p>
 
 <h2>Planejamento Semanal</h2>
 <table>
