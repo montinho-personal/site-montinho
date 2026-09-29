@@ -18,6 +18,7 @@ export const OLYMPIA_BRASIL_EXPO_2026_POSTS: BlogPost[] = [
       "De 16 a 18 de outubro no Distrito Anhembi: data, ingressos, programação, modalidades, como chegar e o que muda em relação ao Olympia de Las Vegas.",
     category: "Fisiculturismo",
     date: "2026-09-29",
+    updatedAt: "2026-09-29",
     readTime: "6 min",
     author: "Montinho Personal Trainer",
     tags: ["Mr. Olympia Brasil", "Mr. Olympia Brasil 2026", "fisiculturismo", "Distrito Anhembi", "IFBB Pro League"],
@@ -41,11 +42,15 @@ export const OLYMPIA_BRASIL_EXPO_2026_POSTS: BlogPost[] = [
 <h2>Ingressos do Mr. Olympia Brasil 2026</h2>
 <p>A venda é pelo site oficial e pela Blueticket, em lotes. Há ingresso só para a feira (Expo) e o ingresso <strong>"Olympia + Bodybuilding"</strong>, que dá lugar para assistir ao campeonato. Segundo a organização, quem não tem esse ingresso pode assistir em cadeiras livres, por ordem de chegada, ou em pé na área indicada. Preços, meia-entrada e ingresso solidário variam por lote: confira direto na página de venda.</p>
 
+<h2>Mr. Olympia Brasil Expo: a feira fitness</h2>
+<p>O nome oficial é <strong>Mr. Olympia Brasil Expo</strong> porque o evento é, ao mesmo tempo, campeonato e <strong>feira</strong>: estandes de marcas de suplementos, nutrição esportiva e equipamentos, abertos ao público, no mesmo pavilhão do palco. Em 2026 a feira fica no <strong>Distrito Anhembi</strong>, não no Expo Center Norte.</p>
+<p><strong>Vai comprar suplemento na feira?</strong> Compare pelo preço por dose, não pelo preço do pote — é o mesmo critério do nosso guia de <a href="/blog/black-friday-suplementos">Black Friday de suplementos</a>.</p>
+
 <h2>O que tem no evento</h2>
 <ul>
 <li><strong>Campeonato de fisiculturismo</strong> amador, em várias categorias, valendo Pro Card da IFBB Pro League;</li>
 <li><strong>Feira</strong> de suplementos, equipamentos e marcas fitness;</li>
-<li><strong>Competições de força</strong>, como <strong>power bíceps</strong> e <strong>luta de braço</strong>.</li>
+<li><strong>Competições de força</strong>, como <strong>power bíceps</strong> e um campeonato de <strong>luta de braço</strong>.</li>
 </ul>
 <p>Para entender cada categoria, veja <a href="/blog/categorias-do-fisiculturismo">as categorias do fisiculturismo</a>. O que é um Pro Card? É a licença de atleta profissional: quem conquista pode disputar os campeonatos da IFBB Pro League — e, com resultados, se classificar para o Olympia de Las Vegas.</p>
 
@@ -75,6 +80,8 @@ export const OLYMPIA_BRASIL_EXPO_2026_POSTS: BlogPost[] = [
       { question: "O Mr. Olympia Brasil é o mesmo Mr. Olympia de Las Vegas?", answer: "Não. O Mr. Olympia principal, profissional, foi em Las Vegas de 24 a 26 de setembro. O Mr. Olympia Brasil é a edição brasileira da marca, com feira e campeonato amador que distribui Pro Cards." },
       { question: "Preciso de ingresso especial para ver o campeonato?", answer: "O ingresso Olympia + Bodybuilding garante lugar no campeonato. Sem ele, segundo a organização, dá para assistir em cadeiras livres por ordem de chegada ou em pé na área indicada." },
       { question: "O HYROX São Paulo é no mesmo lugar?", answer: "Sim. O HYROX São Paulo 2026 acontece em 17 e 18 de outubro também no Distrito Anhembi." },
+      { question: "Onde e quando será a exposição do Mr. Olympia Brasil em 2026?", answer: "A Mr. Olympia Brasil Expo acontece de 16 a 18 de outubro de 2026 no Distrito Anhembi, em São Paulo, junto com o campeonato." },
+      { question: "Tem algum brasileiro Mr. Olympia?", answer: "Sim. Ramon Dino venceu a Classic Physique do Mr. Olympia em 2025, o primeiro brasileiro campeão do Olympia. Na Wellness, todas as edições desde 2021 foram vencidas por brasileiras." },
     ],
   },
 ];
