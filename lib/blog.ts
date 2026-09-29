@@ -104,10 +104,12 @@ export const BLOG_CATEGORIES = [
 import { OLYMPIA_2026_POSTS } from "./olympia-2026";
 import { SAO_SILVESTRE_2026_POSTS } from "./sao-silvestre-2026";
 import { CORRIDA_PACE_POSTS } from "./corrida-pace";
+import { HYROX_SP_2026_POSTS } from "./hyrox-sp-2026";
 
 export const blogPosts = ([
   ...SAO_SILVESTRE_2026_POSTS,
   ...CORRIDA_PACE_POSTS,
+  ...HYROX_SP_2026_POSTS,
   ...OLYMPIA_2026_POSTS,
   {
     slug: "parar-de-tomar-mounjaro",
@@ -117704,6 +117706,23 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <li><strong>Técnica das estações:</strong> wall ball e burpee broad jump gastam menos energia com boa técnica. Treine o movimento antes de treinar o volume.</li>
 </ul>
 <p>Para a estreia, a categoria em dupla é um bom caminho: você corre os 8 km, mas divide as estações, e conhece a prova sem o risco de quebrar no meio.</p>
+
+<h2>Qual a diferença entre HYROX e CrossFit?</h2>
+<p>O HYROX tem <strong>sempre a mesma prova</strong>, igual no mundo todo — 8 km de corrida e as mesmas 8 estações —, e cerca de metade do tempo é corrida. No CrossFit, o treino muda todo dia e inclui movimentos técnicos, como levantamento olímpico e ginástica. Por isso o HYROX costuma ser mais acessível para quem vem da musculação e da corrida.</p>
+
+<h2>Como montar a semana de treino para o HYROX</h2>
+<ul>
+<li><strong>2 dias de força:</strong> pernas e tronco (agachamento, terra, afundo, remada, desenvolvimento).</li>
+<li><strong>2 dias de corrida:</strong> um leve e mais longo; outro com tiros ou trechos de 1 km em ritmo de prova.</li>
+<li><strong>1 a 2 dias de simulado:</strong> 1 km de corrida alternado com uma estação — ensina o corpo a correr cansado.</li>
+<li><strong>1 dia de descanso</strong> ou caminhada leve.</li>
+</ul>
+
+<h2>Treino de HYROX para iniciantes</h2>
+<p>Comece com 3 a 4 treinos por semana, cargas leves nas estações e foco em completar os 8 km. Na primeira prova, dupla ou revezamento dividem o esforço.</p>
+
+<h2>Treino de HYROX em casa ou na academia</h2>
+<p><strong>Em casa:</strong> burpee, afundo com mochila, agachamento com salto no lugar do wall ball e corrida na rua. <strong>Na academia:</strong> remo, trenó (se houver) e wall ball; sem trenó, empurre um banco com anilhas ou use leg press pesado. Data, local e dicas da próxima prova em <a href="/blog/hyrox-sao-paulo-2026">HYROX São Paulo 2026</a>.</p>
 
 <h2>Hyrox emagrece?</h2>
 <p>A prova é um dia só — mil calorias em um sábado não mudam a balança do mês. O que emagrece é o treino das semanas antes dela, somado a um <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a>. O Hyrox ajuda porque dá um objetivo com data: quem tem prova marcada treina com mais constância, e constância é o que decide o resultado.</p>
