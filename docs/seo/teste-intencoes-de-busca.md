@@ -141,3 +141,7 @@ Antes → depois:
 - skyfit-alphaville: "SkyFit Alphaville: Vale a Pena? Análise Honesta" → "SkyFit Alphaville: Vale a Pena? Prós, Contras e Teste de 30 Minutos"
 - quanto-custa-academia-em-barueri: "Quanto Custa Academia em Barueri? Faixas e Dicas" → "Quanto Custa Academia em Barueri? Preços do Low-Cost ao Premium"
 Hipótese: parte do CTR baixo é busca de navegação (endereço/horário) que a página não responde; título sozinho tem efeito limitado.
+
+## SEO local — condomínio (29/09/2026)
+personal-trainer-em-condominio-alphaville (21 impr, pos 8,4) e /personal-trainer-condominio-tambore: +4 FAQs do PAA e seção de planos sem valores (só no blog). Títulos intactos.
+Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré + página do Tamboré) dividem ~35 impressões.
