@@ -27,7 +27,7 @@ Hipótese: cobrir as intenções reais tira o artigo da 2ª página. Antes de ca
 | Artigo | Impr. | Pos. | Cliques | Alterado em | Suspeita de canibalização |
 |---|---|---|---|---|---|
 | hip-dips-musculacao | 242 | 13,1 | 0 | 29/09 | nenhuma forte |
-| quanto-tempo-para-aparecer-resultado-na-academia | 111 | 10,2 | 0 | — | quanto-tempo-para-ganhar-massa-muscular (306 imp, pos 9,8) |
+| quanto-tempo-para-aparecer-resultado-na-academia | 111 | 10,2 | 0 | 29/09 | quanto-tempo-para-ganhar-massa-muscular (306 imp, pos 9,8) |
 | exercicios-para-gluteo-medio | 104 | 18,7 | 0 | — | como-fazer-abducao-quadril-maquina (84 imp, pos 7,5) |
 | cafeina-no-treino-dose-timing | 81 | 15,2 | 0 | — | cafe-antes-do-treino (9 imp, pos 6,2) |
 | treino-para-mulher-iniciante | 74 | 11,5 | 3 | — | treino-de-gluteos-feminino, hipertrofia-para-iniciantes |
@@ -73,3 +73,8 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 - metaDescription reescrita (tem que malhar, quanto de cada, cardio todo dia).
 - H2 novos: quem toma Mounjaro tem que malhar (link p/ mounjaro-faz-perder-musculos); pode fazer cardio todo dia; parágrafo "pode aplicar e ir treinar" (sem regra de dose, encaminha ao médico).
 - Observação de canibalização: há 12 artigos sobre Mounjaro. As buscas "treino para quem toma", "faz perder massa" e "cardápio" pertencem a outros artigos do cluster; aqui só apontamos para eles. "Preço" e "5mg emagrece quantos quilos" ficam de fora (fora do escopo de um personal).
+
+### quanto-tempo-para-aparecer-resultado-na-academia (29/09) — braço B
+- metaTitle: "Quanto Tempo Para Aparecer Resultado na Academia?" → "Quanto Tempo Para Ver Resultado na Academia? 1 Semana a 6 Meses"
+- H2 novos: 1 semana; 1 mês; 3 meses (link p/ quanto-tempo-para-ganhar-massa-muscular); quanto tempo para definir; por região (pernas, barriga, glúteos, braços); mulheres.
+- Canibalização tratada: no artigo concorrente (quanto-tempo-para-ganhar-massa-muscular), a pergunta "Quanto tempo leva para ver resultado na musculação?" virou "Quanto tempo leva para ver ganho de massa muscular?". Cada artigo fica com a sua busca: "resultado na academia" aqui, "ganhar massa" lá. ATENÇÃO na medição: o artigo de massa também foi tocado (só essa pergunta).
