@@ -12,7 +12,7 @@ pesquisaram") — título, meta, H2 e FAQ. O grupo controle não é tocado.
 | Artigo | Impr. | Pos. | Cliques | Alterado em | Commit |
 |---|---|---|---|---|---|
 | crossover-vs-crucifixo | 5.081 | 8,3 | 14 | 29/09 | ver git log |
-| treino-upper-lower-superior-inferior | 3.280 | 8,6 | 56 | — | — |
+| treino-upper-lower-superior-inferior | 3.280 | 8,6 | 56 | 29/09 | ver git log |
 | cardio-ou-musculacao-mounjaro | 1.898 | 8,4 | 3 | — | — |
 | calorias-para-ganhar-massa-muscular | 643 | 10,1 | 2 | — | — |
 | frutas-antes-do-treino | 622 | 8,2 | 1 | — | — |
@@ -36,3 +36,10 @@ pesquisaram") — título, meta, H2 e FAQ. O grupo controle não é tocado.
 - H2 novos: polia alta/média/baixa (tabela); crucifixo com halteres ou na máquina; qual músculo o crossover trabalha; qual exercício substitui o crossover; qual o melhor, afinal.
 - FAQ +4: qual o melhor; qual músculo trabalha; qual substitui; máquina ou halteres.
 - Observação: o artigo já era citado na visão geral por IA e aparecia como "Preferencial" no Google.
+
+### treino-upper-lower-superior-inferior (29/09)
+- metaTitle: "Treino Upper Lower: Fichas Prontas de 4 Dias e Como Montar" → "Treino Upper Lower: Fichas de 2, 3, 4 e 5 Dias (Masc. e Fem.)"
+- metaDescription reescrita (2/3/4/5 dias, masculino/feminino, hipertrofia, push pull legs).
+- H2 novos: upper lower 2, 3, 4 ou 5 dias (tabela); masculino e feminino; é bom para hipertrofia.
+- FAQ +4: 3 dias; 5 dias; hipertrofia; feminino.
+- Fora: "pacholok" (nome de influenciador) e "pdf" (possível isca futura, como a planilha da São Silvestre).
