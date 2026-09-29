@@ -360,7 +360,7 @@ ${FONTES}`,
   /* ───────────────── 5. OPEN ───────────────── */
   {
     slug: "resultado-mr-olympia-open-2026",
-    title: "Nick Walker é o Mr. Olympia 2026: resultado do Open e classificação",
+    title: "Nick Walker é o Mr. Olympia 2026: quem é ele, resultado do Open e classificação",
     metaTitle: "Nick Walker Vence o Mr. Olympia 2026: Resultado do Open",
     metaDescription:
       "Nick Walker venceu o Mr. Olympia 2026, com Samson Dauda em 2º e Derek Lunsford em 3º. Veja a classificação do Open e como foi a final.",
@@ -369,7 +369,7 @@ ${FONTES}`,
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
-    updatedAt: "2026-09-27",
+    updatedAt: "2026-09-29",
     readTime: "4 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "Open", "Nick Walker", "Samson Dauda", "Derek Lunsford", "resultado"],
@@ -378,8 +378,11 @@ ${FONTES}`,
 ${CAPA("resultado-mr-olympia-open-2026", "Capa: Nick Walker é o Mr. Olympia 2026 — resultado oficial do Open, com Samson Dauda em 2º e Derek Lunsford em 3º")}
 
 <h2>Classificação do Mr. Olympia Open 2026</h2>
-<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Nick Walker</strong></td><td>EUA</td></tr><tr><td>2º</td><td>Samson Dauda</td><td>Nigéria/Reino Unido</td></tr><tr><td>3º</td><td>Derek Lunsford</td><td>EUA</td></tr><tr><td>4º</td><td>Andrew Jacked</td><td>Nigéria</td></tr><tr><td>5º</td><td>Tonio Burton</td><td>EUA</td></tr><tr><td>6º</td><td>A definir</td><td>—</td></tr><tr><td>7º</td><td>A definir</td><td>—</td></tr><tr><td>8º</td><td>A definir</td><td>—</td></tr><tr><td>9º</td><td>A definir</td><td>—</td></tr><tr><td>10º</td><td>A definir</td><td>—</td></tr></tbody></table>
-<p><em>Do 1º ao 5º lugar, confirmado por duas fontes independentes. Do 6º ao 10º, as posições entram quando também estiverem confirmadas, assim como a de Leandro Peres, único brasileiro no Open.</em></p>
+<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Nick Walker</strong></td><td>EUA</td></tr><tr><td>2º</td><td>Samson Dauda</td><td>Nigéria/Reino Unido</td></tr><tr><td>3º</td><td>Derek Lunsford</td><td>EUA</td></tr><tr><td>4º</td><td>Andrew Jacked</td><td>Nigéria</td></tr><tr><td>5º</td><td>Tonio Burton</td><td>EUA</td></tr></tbody></table>
+<p><em>Top 5 confirmado por duas fontes independentes. As posições do 6º em diante e a de Leandro Peres, único brasileiro no Open, entram aqui quando também tiverem duas fontes.</em></p>
+
+<h2>Quem é Nick Walker, o novo Mr. Olympia</h2>
+<p>Nick Walker é norte-americano, conhecido no fisiculturismo como <strong>"The Mutant"</strong> pelo volume muscular. Profissional desde 2020, subiu rápido: venceu o <strong>Arnold Classic de 2021</strong>, um dos torneios mais importantes do calendário, e foi <strong>3º no Mr. Olympia de 2022</strong>. Depois de oscilar nas edições seguintes e terminar em 6º em 2025, chegou a Las Vegas em 2026 como aposta de parte da imprensa para o grupo da frente — e saiu com o primeiro Sandow da carreira.</p>
 
 <h2>Quem eram os favoritos</h2>
 <ul>
@@ -395,11 +398,14 @@ ${CAPA("resultado-mr-olympia-open-2026", "Capa: Nick Walker é o Mr. Olympia 202
 <p>O Open teve as prévias na <strong>sexta-feira à noite</strong> e a final no <strong>sábado</strong>. Nas prévias, as comparações principais reuniram Lunsford, Dauda, Andrew Jacked e Walker, segundo a Fitness Volt e a RepOne. Na final, Walker levou o Sandow, o troféu do campeão.</p>
 
 <h2>Open e Classic: a diferença</h2>
-<p>O Open não tem limite de peso: vence quem combina mais massa muscular com condicionamento e proporção. A Classic Physique, de Ramon Dino, limita o peso pela altura e valoriza linhas e estética. Um atleta de 1,81 m compete na Classic com no máximo 103 kg; no Open, os primeiros colocados passam com folga dos 120 kg. Os números da Classic estão em <a href="/blog/ramon-dino-peso-altura">peso, altura e limite da Classic Physique</a>.</p>
+<p>O Open não tem limite de peso: vence quem combina mais massa muscular com condicionamento e proporção. A Classic Physique, de Ramon Dino, limita o peso pela altura e valoriza linhas e estética. Um atleta de 1,81 m compete na Classic com no máximo 103 kg; no Open, os primeiros colocados passam com folga dos 120 kg. Os números da Classic estão em <a href="/blog/ramon-dino-peso-altura">peso, altura e limite da Classic Physique</a>, e todas as divisões estão explicadas em <a href="/blog/categorias-do-fisiculturismo">categorias do fisiculturismo</a>.</p>
 
 <h2>Quanto tempo para construir um shape grande?</h2>
 <p>O Open é o nível máximo de massa muscular do fisiculturismo. Se você quer saber em que estágio está e como tende a ser a sua curva nos próximos anos, compare com essa referência:</p>
 <!--SHAPE:open-->
+
+<h2>Próximo evento: Mr. Olympia Brasil 2026</h2>
+<p>A marca Olympia vem ao Brasil de 16 a 18 de outubro, no Distrito Anhembi, em São Paulo, com campeonato amador valendo Pro Card e feira fitness. Datas, ingressos e programação em <a href="/blog/mr-olympia-brasil-2026">Mr. Olympia Brasil 2026</a>.</p>
 
 <h2>Todas as categorias</h2>
 <p>Os campeões de sexta e sábado estão reunidos em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>, incluindo a <a href="/blog/resultado-wellness-mr-olympia-2026">Wellness, com as brasileiras</a>.</p>
@@ -410,6 +416,7 @@ ${CTA_MONTINHO}
 ${FONTES}`,
     faq: [
       { question: "Quem ganhou o Open do Mr. Olympia 2026?", answer: "Nick Walker, dos Estados Unidos, na final de sábado, 26 de setembro, em Las Vegas. É o primeiro título dele no Mr. Olympia." },
+      { question: "Quem é Nick Walker?", answer: "Fisiculturista norte-americano apelidado de The Mutant. Venceu o Arnold Classic de 2021, foi 3º no Mr. Olympia de 2022 e 6º em 2025, e conquistou o título do Mr. Olympia em 2026." },
       { question: "Quem ficou no top 5 do Mr. Olympia 2026?", answer: "Nick Walker (1º), Samson Dauda (2º), Derek Lunsford (3º), Andrew Jacked (4º) e Tonio Burton (5º)." },
       { question: "Derek Lunsford perdeu o título?", answer: "Sim. Campeão em 2023 e 2025, Lunsford terminou em 3º em 2026." },
       { question: "Hadi Choopan competiu no Olympia 2026?", answer: "Não. Vice em 2023, 2024 e 2025, ele anunciou a desistência em 26 de agosto de 2026 por problemas de visto." },
