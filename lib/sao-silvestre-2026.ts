@@ -116,6 +116,7 @@ ${FONTES_SS}`,
 <tr><td>Corre 5 km sem parar</td><td><strong>Plano 2 — Correr os 15 km</strong></td><td>Correr a prova toda, em ritmo confortável</td></tr>
 <tr><td>Já corre 10 km</td><td><strong>Plano 3 — Baixar o tempo</strong></td><td>Chegar mais rápido, com força para a Brigadeiro</td></tr>
 </tbody></table>
+<p><strong>Quer imprimir?</strong> <a href="/downloads/planilha-treino-sao-silvestre-2026.pdf" download>Baixe a planilha de treino da São Silvestre em PDF</a> — as três planilhas semana a semana, com as datas de 2026, o treino de força e um espaço para marcar cada semana cumprida.</p>
 <p>Na dúvida entre dois, escolha o mais leve. Começar abaixo do seu nível custa pouco; começar acima é o caminho mais comum para a lesão de novembro que tira a pessoa da prova.</p>
 
 <h2>As regras que valem para os três planos</h2>
@@ -193,6 +194,7 @@ ${FONTES_SS}`,
     faq: [
       { question: "Dá para treinar para a São Silvestre em 13 semanas?", answer: "Sim. Para quem já corre 5 km, 13 semanas bastam para chegar aos 15 km aumentando o volume aos poucos. Para quem ainda não corre, dá para completar a prova alternando corrida e caminhada." },
       { question: "Existe planilha de treino para São Silvestre para iniciantes?", answer: "Sim. A Planilha 1 deste guia é para quem não corre 20 minutos sem parar: três sessões por semana alternando corrida e caminhada, mais duas de força, até completar os 15 km." },
+      { question: "Tem planilha de treino da São Silvestre em PDF?", answer: "Tem. As três planilhas deste guia estão num PDF gratuito para imprimir, semana a semana com as datas de 2026, em /downloads/planilha-treino-sao-silvestre-2026.pdf." },
       { question: "Dá para se preparar para a São Silvestre em um mês?", answer: "Para quem já corre 10 km com regularidade, sim, ajustando o volume e descansando na última semana. Para quem não corre, um mês é pouco para correr os 15 km com segurança; a meta realista é completar alternando corrida e caminhada." },
       { question: "Quantos km tem a São Silvestre?", answer: "15 km, com largada e chegada na Avenida Paulista e a subida da Avenida Brigadeiro Luís Antônio perto do fim." },
       { question: "Quantas vezes por semana devo treinar para a São Silvestre?", answer: "Três corridas por semana para quem quer completar ou correr a prova toda, quatro para quem quer baixar o tempo, e duas sessões de musculação para pernas e tronco em todos os casos." },
