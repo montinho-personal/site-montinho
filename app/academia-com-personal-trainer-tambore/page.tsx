@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
 import FAQ from "@/components/ui/FAQ";
+import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 
 export const metadata: Metadata = {
   title: { absolute: "Academia com Personal Trainer Tamboré | Montinho Personal Trainer" },
@@ -182,6 +183,10 @@ export default function AcademiaPersonalTrainerTambore() {
           </p>
         </div>
       </section>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+        <LinkFerramentaRotina slug="academia-com-personal-trainer-tambore" tipo="academia" />
+      </div>
+
 
       {/* FAQ */}
       <section className="py-16 border-t border-white/10 bg-black">
