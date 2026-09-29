@@ -91,7 +91,6 @@ ${FONTES_SS}`,
       { question: "Qual o valor da inscrição da São Silvestre 2026?", answer: "O kit Básico custa R$ 335,90, o Intermediário R$ 459,90 e o Premium R$ 1.039,90, mais a taxa de serviço da plataforma." },
       { question: "Quantas vagas tem a São Silvestre 2026?", answer: "55 mil vagas, vendidas por ordem de chegada, sem sorteio, a partir de 30 de setembro às 10h." },
       { question: "Quando é a São Silvestre 2026?", answer: "Na quinta-feira, 31 de dezembro de 2026, pela manhã, em São Paulo, com largada e chegada na Avenida Paulista." },
-      { question: "Quantos quilômetros tem a São Silvestre?", answer: "15 km, com largada e chegada na Avenida Paulista. O trecho mais difícil é a subida da Avenida Brigadeiro Luís Antônio, na parte final." },
       { question: "Tem sorteio para a São Silvestre?", answer: "Não. Em 2026 a inscrição é por venda direta, enquanto houver vagas." },
     ],
   },
@@ -198,7 +197,6 @@ ${FONTES_SS}`,
       { question: "Existe planilha de treino para São Silvestre para iniciantes?", answer: "Sim. A Planilha 1 deste guia é para quem não corre 20 minutos sem parar: três sessões por semana alternando corrida e caminhada, mais duas de força, até completar os 15 km." },
       { question: "Tem planilha de treino da São Silvestre em PDF?", answer: "Tem. As três planilhas deste guia estão num PDF gratuito para imprimir, semana a semana com as datas de 2026, em /downloads/planilha-treino-sao-silvestre-2026.pdf." },
       { question: "Dá para se preparar para a São Silvestre em um mês?", answer: "Para quem já corre 10 km com regularidade, sim, ajustando o volume e descansando na última semana. Para quem não corre, um mês é pouco para correr os 15 km com segurança; a meta realista é completar alternando corrida e caminhada." },
-      { question: "Quantos km tem a São Silvestre?", answer: "15 km, com largada e chegada na Avenida Paulista e a subida da Avenida Brigadeiro Luís Antônio perto do fim." },
       { question: "Quantas vezes por semana devo treinar para a São Silvestre?", answer: "Três corridas por semana para quem quer completar ou correr a prova toda, quatro para quem quer baixar o tempo, e duas sessões de musculação para pernas e tronco em todos os casos." },
       { question: "Preciso correr 15 km antes da prova?", answer: "Não. Chegar a 13 ou 14 km no treino longo e reduzir o volume nas duas últimas semanas costuma render mais do que correr a distância total perto da largada. Quem busca tempo pode ir a 16 km no longo." },
       { question: "Como treinar para a subida da Brigadeiro?", answer: "Com treino de força duas vezes por semana (agachamento, afundo, subida no banco e panturrilha) e, a partir da semana 9, subidas curtas de 30 segundos a 1 minuto em um dos treinos de corrida." },
@@ -359,7 +357,7 @@ ${FONTES_SS}`,
 <p>A primeira <strong>São Silvestre</strong> tem um clima que nenhuma outra prova tem: dezenas de milhares de pessoas na Paulista, fantasia, música e o último dia do ano. Também tem armadilhas que pegam quase todo estreante — a descida forte logo depois da largada, o pelotão apertado e a subida da Brigadeiro no fim. Este guia é para você chegar à chegada inteiro e com vontade de voltar.</p>
 
 <h2>Quanto tempo antes começar a treinar?</h2>
-<p>Quanto antes, melhor. Para quem já corre 5 km, de 10 a 13 semanas bastam para chegar aos 15 km com segurança. Para quem está começando do zero, o mesmo prazo permite completar a prova alternando corrida e caminhada — e três a seis meses deixam tudo mais tranquilo. O <a href="/blog/treino-sao-silvestre-13-semanas">plano de treino de 13 semanas</a> traz uma planilha só para iniciantes, também em PDF para imprimir.</p>
+<p>Quanto antes, melhor. Para quem já corre 5 km, de 10 a 13 semanas bastam para chegar aos 15 km com segurança. Para quem está começando do zero, o mesmo prazo permite completar a prova alternando corrida e caminhada — e três a seis meses deixam tudo mais tranquilo. O <a href="/blog/treino-sao-silvestre-13-semanas">plano de treino de 13 semanas</a> traz uma planilha só para iniciantes, também em PDF para imprimir. Se você ainda não corre nem 5 km, comece pelo guia de <a href="/blog/corrida-para-iniciantes">corrida para iniciantes</a>.</p>
 
 <h2>Como se preparar: o básico que resolve</h2>
 <ul>
