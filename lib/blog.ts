@@ -50580,7 +50580,7 @@ Total: 19 repetições próximas à falha vs 10 em uma série convencional</p>
   {
     slug: "cafeina-no-treino-dose-timing",
     title: "Cafeína como Pré-Treino: Dose Certa, Timing e Efeitos Colaterais Explicados",
-    metaTitle: "Cafeína como Pré-Treino: Dose, Timing e Efeitos Colaterais",
+    metaTitle: "Cafeína no Treino: Para Que Serve, Quanto Tomar e Quando",
     metaDescription: "Cafeína no treino: dose eficaz, timing ideal, como maximizar o efeito ergogênico, tolerância, janela de cafeína e quando evitar. Guia completo baseado em ciência.",
     excerpt: "A cafeína é o suplemento mais estudado e eficaz disponível. Mas dose errada, timing errado ou tolerância elevada anulam os benefícios. Veja como usar corretamente.",
     category: "Suplementação",
@@ -50694,9 +50694,24 @@ Total: 19 repetições próximas à falha vs 10 em uma série convencional</p>
 <li>Gravidez (limite de 200mg/dia recomendado pela OMS)</li>
 </ul>
 
+<h2>Cafeína no Treino: Para Que Serve?</h2>
+<p>Em resumo: mais disposição e foco, menor sensação de cansaço e um pequeno ganho de desempenho em força e resistência. Ela não substitui treino, sono e alimentação — ajuda a render um pouco mais no treino que você já faz.</p>
+
+<h2>Cafeína 200 mg ou 400 mg: Qual Escolher?</h2>
+<p>A dose usada nos estudos fica em torno de 3 a 6 mg por quilo de peso. Para quem nunca usou, <strong>começar com cerca de 100 a 200 mg</strong> (algo como uma a duas xícaras de café coado) é o mais seguro. <strong>400 mg por dia</strong> é o limite total citado para adultos saudáveis, somando todas as fontes — não é a dose de "partida".</p>
+
+<h2>A Cafeína de 200 mg Tira o Sono?</h2>
+<p>Pode tirar, dependendo do horário e da sensibilidade. A cafeína age por muitas horas; quem treina à noite deve preferir doses menores ou evitar, porque dormir mal atrapalha mais a recuperação do que a cafeína ajuda o treino.</p>
+
+<h2>Quem Deve Ter Cuidado com Cafeína</h2>
+<p>Gestantes, pessoas com gastrite, TDAH em tratamento, ansiedade, arritmia, pressão alta ou que usam medicamentos devem conversar com o médico antes de usar cafeína como suplemento — a dose segura muda de pessoa para pessoa.</p>
+
 <h2>Cafeína Anidra vs Café: Qual é Melhor Para o Treino</h2>
 <p>A cafeína anidra (pó ou cápsula) tem vantagem para uso pré-treino: dose calibrada com precisão, sem variação de lote para lote, e sem os ácidos do café que podem causar desconforto gastrointestinal. O café tem vantagens em compostos bioativos (ácido clorogênico, diterpenos) que têm efeitos de saúde independentes da cafeína.</p>
 <p>Para máxima performance pré-treino: <strong>cafeína anidra 200-300mg, 45-60 min antes.</strong> Para saúde e praticidade: café filtrado é excelente.</p>
+
+<h2>Cafeína em Cápsula ou Pré-Treino Pronto?</h2>
+<p>A cápsula de cafeína anidra tem dose exata e é simples. Pré-treinos prontos costumam misturar cafeína com outros ingredientes — confira no rótulo quanto de cafeína vem por dose, para não somar demais com o café do dia. Se for escolher um produto, prefira marcas com laudo de pureza.</p>
 
 <h2>Resumo Final</h2>
 <p>A cafeína é o suplemento mais eficaz e acessível para performance no treino — com a condição de ser usada corretamente. Dose de 3-6mg/kg, 45-60 minutos antes do treino, com gestão de tolerância (washout periódico). Para executivos que bebem café o dia inteiro, o efeito pré-treino provavelmente está atenuado pela tolerância — considere dias de baixo consumo ou washout periódico.</p>
