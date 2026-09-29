@@ -123,3 +123,8 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 `/personal-trainer-santana-de-parnaiba` — base (GSC até 15/09): 142 impressões, 4 cliques, posição 9,3.
 - Título antes: "Personal Trainer em Santana de Parnaíba | Montinho Personal Trainer" → depois: "Personal Trainer em Santana de Parnaíba: Planos e Atendimento | Montinho".
 - Seção de planos sem valor (+ emagrecer, desambiguação com o bairro de Santana, Instagram); CTA `personal-trainer-santana-de-parnaiba:planos`; +4 FAQs do PAA.
+
+## SEO local — grupo 2: páginas "quanto custa personal" (29/09/2026)
+Faixas de preço existentes (Alphaville, Tamboré) mantidas por decisão do Montinho; nenhum número novo.
+Adicionado nas 5 páginas: FAQs do PAA (valor de 1 hora, 3x/semana, 3 ou 5 vezes, vale a pena) e seção "Os tipos de plano" com CTA (4 artigos do blog). Títulos NÃO alterados.
+Base (GSC até 15/09): quanto-custa-personal-trainer-alphaville 88 impr / 4 cliques / pos 6,7.

@@ -25319,6 +25319,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Quanto maior o volume de sessões, menor tende a ser o custo unitário. Pacotes com 3 sessões semanais (12 por mês) normalmente têm um valor por sessão mais acessível do que pacotes com apenas 4 sessões mensais.</p>
 
+<h2>Os tipos de plano</h2>
+<p>Além do preço por aula, o que muda a conta é o formato do plano: <strong>pacote por frequência semanal</strong> (de 2 a 5 treinos, com valor por sessão menor quanto mais treinos), <strong>pacote flexível</strong> (aulas para usar no ritmo possível, para quem viaja) e <strong>consultoria online</strong> (o formato mais acessível). Para ver qual cabe na sua rotina, <a href="/contato">fale comigo pelo WhatsApp</a> e conheça os planos.</p>
+
 <h2>Mitos e Verdades sobre o preço do personal trainer</h2>
 
 <table>
@@ -25442,6 +25445,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
     author: "Montinho",
     tags: ["personal trainer alphaville", "preço personal trainer", "quanto custa personal trainer", "personal trainer executivos", "alphaville tamboré"],
     faq: [
+      { question: "Qual o valor de 1 hora de personal trainer em Alphaville?", answer: "Depende do formato (academia, condomínio ou casa), da frequência semanal e do tipo de plano. Sessão avulsa custa mais por hora que pacote. Para a proposta do seu caso, é só chamar no WhatsApp." },
+      { question: "É melhor treinar 3 ou 5 vezes na semana?", answer: "Para a maioria, 3 treinos bem estruturados dão resultado e cabem na rotina. Cinco só compensa com sono, recuperação e tempo para manter — o que mais pesa é sustentar a frequência por meses." },
+      { question: "Vale a pena pagar um personal trainer?", answer: "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. Costuma sair mais barato que meses sem resultado ou uma lesão." },
       {
         question: "Quanto custa um personal trainer em Alphaville em 2026?",
         answer: "Em Alphaville, os valores variam de R$ 120 a mais de R$ 600 por sessão, dependendo da experiência do profissional, modalidade de atendimento e o que está incluso no pacote. Profissionais sênior com mais de 10 anos de experiência costumam cobrar entre R$ 280 e R$ 420 por sessão.",
@@ -86898,6 +86904,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
+<h2>Os tipos de plano</h2>
+<p>Além do preço por aula, o que muda a conta é o formato do plano: <strong>pacote por frequência semanal</strong> (de 2 a 5 treinos, com valor por sessão menor quanto mais treinos), <strong>pacote flexível</strong> (aulas para usar no ritmo possível, para quem viaja) e <strong>consultoria online</strong> (o formato mais acessível). Para ver qual cabe na sua rotina, <a href="/contato">fale comigo pelo WhatsApp</a> e conheça os planos.</p>
+
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/quanto-custa-personal-trainer-alphaville">Quanto custa personal trainer em Alphaville</a></li>
@@ -86905,6 +86914,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><a href="/blog/quanto-custa-consultoria-online-de-treino">Quanto custa uma consultoria online de treino?</a></li>
 </ul>`,
     faq: [
+      { question: "Qual o valor de 1 hora de personal trainer em Barueri?", answer: "Depende do formato (academia, condomínio ou casa), da frequência semanal e do tipo de plano. Sessão avulsa custa mais por hora que pacote. Para a proposta do seu caso, é só chamar no WhatsApp." },
+      { question: "É melhor treinar 3 ou 5 vezes na semana?", answer: "Para a maioria, 3 treinos bem estruturados dão resultado e cabem na rotina. Cinco só compensa com sono, recuperação e tempo para manter — o que mais pesa é sustentar a frequência por meses." },
+      { question: "Vale a pena pagar um personal trainer?", answer: "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. Costuma sair mais barato que meses sem resultado ou uma lesão." },
       { question: "Quanto custa personal trainer em Barueri?", answer: "Os valores variam conforme experiência, local e formato: avulso custa mais por hora, pacote mensal dilui o valor por sessão e domicílio inclui deslocamento. Peça uma proposta atualizada pelo WhatsApp." },
       { question: "Pacote mensal vale mais a pena que aula avulsa?", answer: "Na maioria dos casos, sim: o custo por sessão cai e a frequência fixa gera a consistência que traz resultado. Use a avulsa para conhecer o trabalho do profissional." },
       { question: "Tem opção mais em conta que o personal presencial?", answer: "Sim, a consultoria online: treino individualizado e acompanhamento a distância por mensalidade menor, já que não há deslocamento nem horário exclusivo." },
@@ -86997,6 +87009,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
+<h2>Os tipos de plano</h2>
+<p>Além do preço por aula, o que muda a conta é o formato do plano: <strong>pacote por frequência semanal</strong> (de 2 a 5 treinos, com valor por sessão menor quanto mais treinos), <strong>pacote flexível</strong> (aulas para usar no ritmo possível, para quem viaja) e <strong>consultoria online</strong> (o formato mais acessível). Para ver qual cabe na sua rotina, <a href="/contato">fale comigo pelo WhatsApp</a> e conheça os planos.</p>
+
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/quanto-custa-personal-trainer-alphaville">Quanto custa personal trainer em Alphaville</a></li>
@@ -87004,6 +87019,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><a href="/blog/quanto-custa-consultoria-online-de-treino">Quanto custa uma consultoria online de treino?</a></li>
 </ul>`,
     faq: [
+      { question: "Qual o valor de 1 hora de personal trainer em Santana de Parnaíba?", answer: "Depende do formato (academia, condomínio ou casa), da frequência semanal e do tipo de plano. Sessão avulsa custa mais por hora que pacote. Para a proposta do seu caso, é só chamar no WhatsApp." },
+      { question: "É melhor treinar 3 ou 5 vezes na semana?", answer: "Para a maioria, 3 treinos bem estruturados dão resultado e cabem na rotina. Cinco só compensa com sono, recuperação e tempo para manter — o que mais pesa é sustentar a frequência por meses." },
+      { question: "Vale a pena pagar um personal trainer?", answer: "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. Costuma sair mais barato que meses sem resultado ou uma lesão." },
       { question: "Quanto custa personal trainer em Santana de Parnaíba?", answer: "Varia conforme experiência, formato e local: avulso custa mais por hora, pacote mensal dilui o valor e domicílio inclui deslocamento. Solicite uma proposta atualizada pelo WhatsApp." },
       { question: "Atendimento em condomínio na Aldeia da Serra é mais caro?", answer: "Costuma ser, por incluir o deslocamento do profissional. Para famílias e executivos da região, a comodidade de treinar no próprio condomínio geralmente compensa." },
       { question: "Qual a opção mais econômica com orientação profissional?", answer: "A consultoria online: mensalidade menor que o presencial, com treino individualizado, ajustes periódicos e suporte a distância — cabe em qualquer orçamento." },
@@ -116168,6 +116186,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     author: "Montinho",
     tags: ["quanto custa personal trainer","aldeia da serra","preço","personal trainer a domicílio","consultoria online"],
     faq: [
+      { question: "Qual o valor de 1 hora de personal trainer na Aldeia da Serra?", answer: "Depende do formato (academia, condomínio ou casa), da frequência semanal e do tipo de plano. Sessão avulsa custa mais por hora que pacote. Para a proposta do seu caso, é só chamar no WhatsApp." },
+      { question: "É melhor treinar 3 ou 5 vezes na semana?", answer: "Para a maioria, 3 treinos bem estruturados dão resultado e cabem na rotina. Cinco só compensa com sono, recuperação e tempo para manter — o que mais pesa é sustentar a frequência por meses." },
+      { question: "Vale a pena pagar um personal trainer?", answer: "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. Costuma sair mais barato que meses sem resultado ou uma lesão." },
       { question: "Quanto custa um personal trainer na Aldeia da Serra?", answer: "Depende do local da sessão (casa, condomínio, academia de Alphaville ou online), da frequência semanal e do deslocamento do profissional na serra. Sessão avulsa custa mais por hora que pacote; atendimento em casa custa mais que em academia; consultoria online é o formato mais acessível. Peça uma proposta pelo WhatsApp." },
       { question: "Personal em casa na Aldeia da Serra custa mais que em Alphaville?", answer: "Sim, em geral. O profissional assume o deslocamento de subir e descer a serra, e isso entra no valor. Quem já tem rota montada na Aldeia consegue oferecer valor e horários melhores." },
       { question: "Pacote de mais aulas por semana sai mais barato?", answer: "Por sessão, sim. Pacotes de duas a cinco aulas semanais têm custo por aula menor quanto maior a frequência. Para agenda irregular existe o pacote flexível, com um número de aulas para usar no ritmo possível." },
@@ -116216,6 +116237,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <h2>O formato certo para o seu orçamento existe</h2>
 <p>Eu sou o Montinho. Atendo a Aldeia da Serra em casa, no espaço fitness do condomínio e em academias de Alphaville, e mantenho a <a href="/consultoria-online">consultoria online</a> para quem quer orientação com o menor custo. Na primeira conversa pelo WhatsApp eu entendo o seu objetivo, a sua semana e onde faz sentido treinar, e passo uma proposta clara. <a href="/contato">Agende uma avaliação</a> ou conheça o atendimento como <a href="/blog/personal-trainer-aldeia-da-serra">personal trainer na Aldeia da Serra</a>.</p>
+
+<h2>Os tipos de plano</h2>
+<p>Além do preço por aula, o que muda a conta é o formato do plano: <strong>pacote por frequência semanal</strong> (de 2 a 5 treinos, com valor por sessão menor quanto mais treinos), <strong>pacote flexível</strong> (aulas para usar no ritmo possível, para quem viaja) e <strong>consultoria online</strong> (o formato mais acessível). Para ver qual cabe na sua rotina, <a href="/contato">fale comigo pelo WhatsApp</a> e conheça os planos.</p>
 
 <h2>Leia também</h2>
 <ul>
