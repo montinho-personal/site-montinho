@@ -25,12 +25,12 @@ import { DATA_CONFERENCIA_TEXTO, FONTE_CLASSIC, RAMON, faixaPorCm, fmt1 } from "
 const CAMINHO = "/ferramentas/calculadora-peso-classic-physique";
 
 export const metadata: Metadata = {
-  title: { absolute: "Calculadora Classic Physique: Peso Máximo por Altura" },
+  title: { absolute: "Calculadora Classic Physique: Peso por Altura | Montinho" },
   description:
     "Digite sua altura e veja o peso máximo permitido na Classic Physique profissional, pela tabela oficial da IFBB Pro League. Em kg, libras, cm ou pés.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
-    title: "Calculadora de Peso da Classic Physique | Montinho Personal Trainer",
+    title: "Calculadora de Peso da Classic Physique | Montinho",
     description: "Qual seria o seu limite na Classic Physique profissional? Digite a altura e veja a faixa oficial da IFBB Pro League.",
     url: `${SITE_URL}${CAMINHO}`,
     type: "website",

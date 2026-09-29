@@ -78,11 +78,11 @@ const base = (inner, bg) => `<!doctype html><html><head><meta charset="utf-8"><s
 const CAPAS = [
   {
     slug: "resultado-classic-physique-mr-olympia-2026",
-    alt: "Capa: Mr. Olympia 2026, Classic Physique — Ramon Dino defende o título; classificação completa e top 5, final na sexta às 22h de Brasília",
+    alt: "Capa: Niall Darwen campeão da Classic Physique do Mr. Olympia 2026, com Mike Sommerfeld em 2º e Ramon Dino em 3º",
     html: base(`
-<div class="top"><div class="kicker">Mr. Olympia 2026 · Classic Physique</div><div class="chip"><i></i>Resultado</div></div>
-<div class="main"><h1>Ramon Dino<br>defende o <em>título</em></h1>
-<div class="sub">Classificação completa e <b>top 5</b> da Classic Physique.<br>Final na <b>sexta, 25/09, a partir das 22h</b> (Brasília).</div></div>`, "CLASSIC"),
+<div class="top"><div class="kicker">Mr. Olympia 2026 · Classic Physique</div><div class="chip"><i></i>Resultado oficial</div></div>
+<div class="main"><h1><em>Niall Darwen</em><br>vence a Classic</h1>
+<div class="sub">1º <b>Niall Darwen</b> · 2º <b>Mike Sommerfeld</b> · 3º <b>Ramon Dino</b><br>Final de sexta, 25/09, em Las Vegas.</div></div>`, "CLASSIC"),
   },
   {
     slug: "ramon-dino-mr-olympia-2026-horario",
@@ -94,27 +94,27 @@ const CAPAS = [
   },
   {
     slug: "quem-ganhou-mr-olympia-2026",
-    alt: "Capa: quem ganhou o Mr. Olympia 2026 — todos os campeões, categoria por categoria: Open, Classic Physique, Wellness, 212, Men's Physique, Bikini e mais",
+    alt: "Capa: Nick Walker é o Mr. Olympia 2026 — todos os campeões, categoria por categoria: Open, Classic Physique, Wellness, 212, Men's Physique, Bikini e mais",
     html: base(`
 <div class="top"><div class="kicker">Las Vegas · 25 e 26/09</div><div class="chip"><i></i>Todos os campeões</div></div>
-<div class="main"><h1>Quem ganhou o<br>Mr. Olympia <em>2026</em></h1>
+<div class="main"><h1><em>Nick Walker</em> é o<br>Mr. Olympia 2026</h1>
 <div class="tags"><span class="g">Open</span><span class="g">Classic Physique</span><span class="g">Wellness</span><span>212</span><span>Men's Physique</span><span>Bikini</span><span>Figure</span><span>Women's Physique</span><span>Ms. Olympia</span><span>Fitness</span></div></div>`, "2026"),
   },
   {
     slug: "resultado-wellness-mr-olympia-2026",
-    alt: "Capa: Wellness do Mr. Olympia 2026 — o Brasil venceu todas as cinco edições e 19 das 40 atletas são brasileiras; resultado, campeã e top 5",
+    alt: "Capa: Eduarda Bezerra bicampeã da Wellness no Mr. Olympia 2026, com Isa Pereira Nunes em 2º; o Brasil venceu as seis edições",
     html: base(`
-<div class="top"><div class="kicker">Mr. Olympia 2026 · Wellness</div><div class="chip"><i></i>Resultado</div></div>
-<div class="main"><h1>O Brasil defende<br>a <em>coroa</em> da Wellness</h1>
-<div class="stats"><div class="stat"><div class="n">5<small>/5</small></div><div class="l">Títulos do Brasil</div></div><div class="stat"><div class="n">19<small>/40</small></div><div class="l">Brasileiras em 2026</div></div></div></div>`, "WELLNESS"),
+<div class="top"><div class="kicker">Mr. Olympia 2026 · Wellness</div><div class="chip"><i></i>Resultado oficial</div></div>
+<div class="main"><h1><em>Eduarda Bezerra</em><br>é bicampeã</h1>
+<div class="sub">1º <b>Eduarda Bezerra</b> · 2º <b>Isa Pereira Nunes</b> · 3º <b>Elisa Alcantara</b><br>O Brasil venceu as <b>seis</b> edições da Wellness.</div></div>`, "WELLNESS"),
   },
   {
     slug: "resultado-mr-olympia-open-2026",
-    alt: "Capa: resultado do Open do Mr. Olympia 2026 — quem leva o troféu Sandow; Derek Lunsford defende o título na final de sábado, 23h de Brasília",
+    alt: "Capa: Nick Walker é o Mr. Olympia 2026 — resultado oficial do Open, com Samson Dauda em 2º e Derek Lunsford em 3º",
     html: base(`
-<div class="top"><div class="kicker">Mr. Olympia 2026 · Open</div><div class="chip"><i></i>Resultado</div></div>
-<div class="main"><h1>Quem leva o<br><em>Sandow</em> em 2026</h1>
-<div class="sub">Campeão e <b>top 10</b> do Open. Derek Lunsford defende o título.<br>Final no <b>sábado, 26/09, a partir das 23h</b> (Brasília).</div></div>`, "OPEN"),
+<div class="top"><div class="kicker">Mr. Olympia 2026 · Open</div><div class="chip"><i></i>Resultado oficial</div></div>
+<div class="main"><h1><em>Nick Walker</em> vence<br>o Mr. Olympia 2026</h1>
+<div class="sub">1º <b>Nick Walker</b> · 2º <b>Samson Dauda</b> · 3º <b>Derek Lunsford</b><br>Final de sábado, 26/09, em Las Vegas.</div></div>`, "OPEN"),
   },
   {
     slug: "ramon-dino-peso-altura",
@@ -126,19 +126,51 @@ const CAPAS = [
   },
   {
     slug: "resultado-212-mr-olympia-2026",
-    alt: "Capa: resultado da 212 do Mr. Olympia 2026 — Keone Pearson defende o título e Lucas Garcia lidera os quatro brasileiros; final na sexta às 22h de Brasília",
+    alt: "Capa: Keone Pearson é tetracampeão da 212 no Mr. Olympia 2026; o brasileiro Lucas Garcia é vice, Shaun Clarida é 3º e Vitor Porto 4º",
     html: base(`
-<div class="top"><div class="kicker">Mr. Olympia 2026 · 212</div><div class="chip"><i></i>Resultado</div></div>
-<div class="main"><h1>Quem vence<br>a <em>212</em> em 2026</h1>
-<div class="sub">Campeão, <b>top 10</b> e os <b>4 brasileiros</b>, com Lucas Garcia.<br>Final na <b>sexta, 25/09, a partir das 22h</b> (Brasília).</div></div>`, "212"),
+<div class="top"><div class="kicker">Mr. Olympia 2026 · 212</div><div class="chip"><i></i>Resultado oficial</div></div>
+<div class="main"><h1>Keone Pearson<br>é <em>tetra</em>; Lucas Garcia, vice</h1>
+<div class="sub">1º <b>Keone Pearson</b> · 2º <b>Lucas Garcia</b> · 3º <b>Shaun Clarida</b><br>Vitor Porto termina em 4º.</div></div>`, "212"),
   },
   {
     slug: "resultado-womens-physique-olympia-2026",
-    alt: "Capa: resultado da Women's Physique do Olympia 2026 — Natália Coelho defende o título e cinco brasileiras disputam a categoria; final na sexta às 22h de Brasília",
+    alt: "Capa: Natália Coelho é tricampeã da Women's Physique no Mr. Olympia 2026; Zama Benta é vice e Sarah Villegas fica em terceiro",
     html: base(`
-<div class="top"><div class="kicker">Olympia 2026 · Women's Physique</div><div class="chip"><i></i>Resultado</div></div>
-<div class="main"><h1>Natália Coelho<br>defende o <em>título</em></h1>
-<div class="sub">Campeã, <b>top 10</b> e as <b>5 brasileiras</b> da categoria.<br>Final na <b>sexta, 25/09, a partir das 22h</b> (Brasília).</div></div>`, "PHYSIQUE"),
+<div class="top"><div class="kicker">Olympia 2026 · Women's Physique</div><div class="chip"><i></i>Resultado oficial</div></div>
+<div class="main"><h1>Natália Coelho<br>é <em>tricampeã</em></h1>
+<div class="sub">1º <b>Natália Coelho</b> · 2º <b>Zama Benta</b> · 3º <b>Sarah Villegas</b><br>Dobradinha brasileira no pódio da Women's Physique.</div></div>`, "PHYSIQUE"),
+  },
+  {
+    slug: "brasileiros-mr-olympia-2026",
+    alt: "Capa: brasileiros no Mr. Olympia 2026 — painel com atletas, categorias, horários de Brasília e resultados de sexta e sábado",
+    html: base(`
+<div class="top"><div class="kicker">Las Vegas · 25 e 26/09</div><div class="chip"><i></i>Painel Brasil</div></div>
+<div class="main"><h1>Brasileiros no<br>Mr. Olympia <em>2026</em></h1>
+<div class="tags"><span class="g">Ramon Dino</span><span class="g">Lucas Garcia</span><span class="g">Natália Coelho</span><span class="g">Eduarda Bezerra</span><span>Edvan Palmeira</span><span>Elisa Pecini</span><span>Leandro Peres</span><span>Zama Benta</span></div></div>`, "BRASIL"),
+  },
+  {
+    slug: "resultado-mens-physique-olympia-2026",
+    alt: "Capa: Ryan Terry tetracampeão da Men's Physique no Olympia 2026; colocação de Edvan Palmeira e dos brasileiros",
+    html: base(`
+<div class="top"><div class="kicker">Olympia 2026 · Men's Physique</div><div class="chip"><i></i>Resultado oficial</div></div>
+<div class="main"><h1><em>Ryan Terry</em><br>tetracampeão</h1>
+<div class="sub">Quarto título seguido, igualando o recorde de Jeremy Buendia.<br>Final de sábado, 26/09, em Las Vegas.</div></div>`, "PHYSIQUE"),
+  },
+  {
+    slug: "resultado-bikini-olympia-2026",
+    alt: "Capa: Jasmine Gonzalez campeã da Bikini Olympia 2026; colocação de Elisa Pecini e das brasileiras",
+    html: base(`
+<div class="top"><div class="kicker">Olympia 2026 · Bikini</div><div class="chip"><i></i>Resultado oficial</div></div>
+<div class="main"><h1><em>Jasmine Gonzalez</em><br>vence a Bikini</h1>
+<div class="sub">Primeiro título dela no Olympia.<br>Final de sábado, 26/09, em Las Vegas.</div></div>`, "BIKINI"),
+  },
+  {
+    slug: "resultado-fit-model-olympia-2026",
+    alt: "Capa: Shealynn Burnett é a primeira campeã da Fit Model Olympia; a brasileira Gabriela Queiroz é vice",
+    html: base(`
+<div class="top"><div class="kicker">Olympia 2026 · Fit Model</div><div class="chip"><i></i>Resultado oficial</div></div>
+<div class="main"><h1><em>Shealynn Burnett</em><br>abre a história</h1>
+<div class="sub">1º <b>Shealynn Burnett</b> · 2º <b>Gabriela Queiroz</b> · 3º <b>Jane Jones</b><br>Estreia da Fit Model no Olympia.</div></div>`, "FIT MODEL"),
   },
 ];
 // Só algumas capas: node scripts/olympia-capas.mjs <slug> [<slug>...]

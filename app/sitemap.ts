@@ -157,6 +157,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/ferramentas/previsor-sao-silvestre`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/ferramentas/calculadora-calorias-bicicleta`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -284,6 +290,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${SITE_URL}/ferramentas/simulador-ganho-massa-muscular`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/ferramentas/quanto-tempo-para-ter-shape`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

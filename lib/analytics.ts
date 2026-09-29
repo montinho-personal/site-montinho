@@ -370,6 +370,12 @@ export type AnalyticsEvent =
   | "bike_frequency"
   | "bike_methodology_open"
   | "bike_tool_click"
+  /** Previsor da São Silvestre. Referência, nível e cenário; nunca o tempo digitado. */
+  | "ss_predictor_view"
+  | "ss_predictor_use"
+  | "ss_predictor_error"
+  | "ss_whatsapp_click"
+  | "ss_tool_click"
   | "jump_rope_calculator_view"
   | "jump_rope_calculator_use"
   | "jump_rope_preset"
@@ -641,6 +647,27 @@ export type AnalyticsEvent =
    * Calculadora de Peso da Classic Physique. Só interação: nunca altura nem
    * peso. `variant` = "completa" | "compacta"; `placement` = página/artigo.
    */
+  /**
+   * Mr. Olympia 2026 (contagem, hub geral, painel Brasil): só interação,
+   * nunca um evento por segundo do relógio. countdown_view: 1x por montagem.
+   */
+  | "olympia_countdown_view"
+  | "olympia_live_result_click"
+  | "olympia_hub_category_click"
+  | "olympia_brazil_filter_use"
+  | "olympia_brazil_athlete_click"
+  /** Simulador "Quanto tempo para ter shape?": só interação, nunca dado corporal. */
+  | "shape_timeline_view"
+  | "shape_timeline_start"
+  | "shape_timeline_complete"
+  | "shape_reference_selected"
+  | "shape_timeline_slider_use"
+  | "shape_bottleneck_complete"
+  | "shape_share"
+  | "shape_mass_simulator_click"
+  | "shape_training_tool_click"
+  | "shape_whatsapp_click"
+  | "shape_compact_start"
   | "classic_calc_view"
   | "classic_calc_started"
   | "classic_calc_completed"
