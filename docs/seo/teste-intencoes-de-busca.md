@@ -26,7 +26,7 @@ Hipótese: cobrir as intenções reais tira o artigo da 2ª página. Antes de ca
 
 | Artigo | Impr. | Pos. | Cliques | Alterado em | Suspeita de canibalização |
 |---|---|---|---|---|---|
-| hip-dips-musculacao | 242 | 13,1 | 0 | — | nenhuma forte |
+| hip-dips-musculacao | 242 | 13,1 | 0 | 29/09 | nenhuma forte |
 | quanto-tempo-para-aparecer-resultado-na-academia | 111 | 10,2 | 0 | — | quanto-tempo-para-ganhar-massa-muscular (306 imp, pos 9,8) |
 | exercicios-para-gluteo-medio | 104 | 18,7 | 0 | — | como-fazer-abducao-quadril-maquina (84 imp, pos 7,5) |
 | cafeina-no-treino-dose-timing | 81 | 15,2 | 0 | — | cafe-antes-do-treino (9 imp, pos 6,2) |
@@ -60,3 +60,10 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 - H2 novos: upper lower 2, 3, 4 ou 5 dias (tabela); masculino e feminino; é bom para hipertrofia.
 - FAQ +4: 3 dias; 5 dias; hipertrofia; feminino.
 - Fora: "pacholok" (nome de influenciador) e "pdf" (possível isca futura, como a planilha da São Silvestre).
+
+### hip-dips-musculacao (29/09) — braço B
+- Título: "Hip Dips: O Que São e Como Minimizar com Musculação" → "Hip Dips: O Que São, Dá para Corrigir e Quais Exercícios Ajudam"
+- metaTitle: "Hip Dips: O Que São e Como Minimizar" → "Hip Dips: O Que É, Como Corrigir e Exercícios (Antes e Depois)"
+- metaDescription reescrita (depressão trocantérica, dá para acabar, exercícios, antes e depois, preenchimento).
+- H2 novos: é possível acabar; melhora com academia (com links para abdução na máquina e glúteo médio, separando os temas); antes e depois; preenchimento e cirurgia (sem valores, encaminha ao médico).
+- FAQ +4: o que é ter; dá para acabar; melhora com academia; quanto custa corrigir.
