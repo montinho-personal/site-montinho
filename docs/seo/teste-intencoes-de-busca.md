@@ -29,7 +29,7 @@ Hipótese: cobrir as intenções reais tira o artigo da 2ª página. Antes de ca
 | hip-dips-musculacao | 242 | 13,1 | 0 | 29/09 | nenhuma forte |
 | quanto-tempo-para-aparecer-resultado-na-academia | 111 | 10,2 | 0 | 29/09 | quanto-tempo-para-ganhar-massa-muscular (306 imp, pos 9,8) |
 | exercicios-para-gluteo-medio | 104 | 18,7 | 0 | 29/09 | como-fazer-abducao-quadril-maquina (84 imp, pos 7,5) |
-| cafeina-no-treino-dose-timing | 81 | 15,2 | 0 | — | cafe-antes-do-treino (9 imp, pos 6,2) |
+| cafeina-no-treino-dose-timing | 81 | 15,2 | 0 | 29/09 | cafe-antes-do-treino (9 imp, pos 6,2) |
 | treino-para-mulher-iniciante | 74 | 11,5 | 3 | — | treino-de-gluteos-feminino, hipertrofia-para-iniciantes |
 
 Observação: com menos de 250 impressões, a medição do braço B é mais ruidosa; olhar posição e tendência, não só cliques.
@@ -93,3 +93,8 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 - metaTitle: "Frutas Antes do Treino: Quais Comer e Quanto Tempo Antes" → "Frutas Antes do Treino: As Melhores, Quanto Tempo Antes e É Bom?"
 - H2 novos: é bom; o que comer 30 min antes; quantas bananas; vitamina/salada/iogurte; antes ou depois; hipertrofia ou emagrecimento (diabetes → médico/nutricionista).
 - Fora: arritmia (tema médico).
+
+### cafeina-no-treino-dose-timing (29/09) — braço B
+- metaTitle: "Cafeína como Pré-Treino: Dose, Timing e Efeitos Colaterais" → "Cafeína no Treino: Para Que Serve, Quanto Tomar e Quando"
+- H2 novos: para que serve; 200 mg ou 400 mg; 200 mg tira o sono; quem deve ter cuidado (gestante, gastrite, TDAH → médico); cápsula ou pré-treino pronto.
+- Fora: marcas (Growth). cafe-antes-do-treino segue com a intenção "café".
