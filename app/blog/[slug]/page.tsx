@@ -298,7 +298,14 @@ export default async function BlogPost({ params }: Props) {
    * convite chegava tarde. O cartão do fim continua.
    */
   const linkFimDeSemanaNoTopo = !qualCalc && !linkPolichineloNoTopo && ARTIGOS_COM_LINK_FIM_DE_SEMANA.includes(post.slug);
-  const calcSplit = qualCalc || linkPolichineloNoTopo || linkFimDeSemanaNoTopo ? splitAtPrimeiraSecao(contentHtml) : null;
+  /**
+   * Previsor da São Silvestre: nos artigos da prova, o convite entra em
+   * destaque logo depois da primeira seção — "qual seria o meu tempo?" é a
+   * pergunta que acompanha quem lê sobre inscrição e treino. O cartão do
+   * fim continua.
+   */
+  const linkSaoSilvestreNoTopo = !qualCalc && !linkPolichineloNoTopo && !linkFimDeSemanaNoTopo && ARTIGOS_COM_LINK_PREVISOR_SS.includes(post.slug);
+  const calcSplit = qualCalc || linkPolichineloNoTopo || linkFimDeSemanaNoTopo || linkSaoSilvestreNoTopo ? splitAtPrimeiraSecao(contentHtml) : null;
   const corpoRestante = calcSplit ? calcSplit.after : contentHtml;
 
   // Só divide o HTML se houver um CTA de meio E um ponto de corte editorial
@@ -457,6 +464,8 @@ export default async function BlogPost({ params }: Props) {
                   <LinkFerramentaPolichinelo slug={post.slug} posicao="topo" />
                 ) : linkFimDeSemanaNoTopo ? (
                   <LinkFerramentaSimulador slug={post.slug} qual="fimDeSemana" posicao="topo" />
+                ) : linkSaoSilvestreNoTopo ? (
+                  <LinkFerramentaSimulador slug={post.slug} qual="saoSilvestre" posicao="destaque" />
                 ) : qualCalc === "proteina" ? (
                   <>
                     {/* Ressalva de contexto ANTES da ferramenta: quem lê o

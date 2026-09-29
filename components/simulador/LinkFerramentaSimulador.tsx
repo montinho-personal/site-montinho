@@ -12,8 +12,21 @@ const SIMULADORES = {
 } as const;
 
 /** Convite para um Simulador Montinho nos artigos que perguntam "quanto tempo, no meu caso?". */
-export default function LinkFerramentaSimulador({ slug, qual = "emagrecimento", posicao = "fim" }: { slug: string; qual?: keyof typeof SIMULADORES; posicao?: "topo" | "fim" }) {
+export default function LinkFerramentaSimulador({ slug, qual = "emagrecimento", posicao = "fim" }: { slug: string; qual?: keyof typeof SIMULADORES; posicao?: "topo" | "destaque" | "fim" }) {
   const s = SIMULADORES[qual];
+  if (posicao === "destaque") {
+    return (
+      <div className="border border-[#BA9E50]/60 bg-[#BA9E50]/[0.06] p-5 sm:p-6" data-testid={`link-simulador-${qual}-destaque`}>
+        <p className="text-[11px] font-bold tracking-[0.18em] uppercase mb-2" style={{ color: "#BA9E50" }}>Ferramenta gratuita</p>
+        <p className="text-white text-lg font-semibold mb-1.5">{s.titulo}</p>
+        <p className="text-gray-300 text-sm leading-relaxed mb-4">{s.texto}</p>
+        <Link href={s.href} onClick={() => trackEvent("simulator_internal_tool_click", { placement: `destaque-${slug}` })}
+          className="inline-flex items-center justify-center px-5 py-3 font-semibold bg-[#BA9E50] text-black hover:bg-white transition-colors min-h-[44px]">
+          {s.botao}
+        </Link>
+      </div>
+    );
+  }
   if (posicao === "topo") {
     return (
       <div className="border-l-2 border-[#BA9E50] bg-white/[0.03] px-4 py-3 sm:px-5" data-testid={`link-simulador-${qual}-topo`}>
