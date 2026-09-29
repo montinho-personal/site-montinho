@@ -117723,6 +117723,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 
 <h2>Treino de HYROX em casa ou na academia</h2>
 <p><strong>Em casa:</strong> burpee, afundo com mochila, agachamento com salto no lugar do wall ball e corrida na rua. <strong>Na academia:</strong> remo, trenó (se houver) e wall ball; sem trenó, empurre um banco com anilhas ou use leg press pesado. Data, local e dicas da próxima prova em <a href="/blog/hyrox-sao-paulo-2026">HYROX São Paulo 2026</a>.</p>
+<p><strong>Planilha pronta:</strong> <a href="/downloads/planilha-treino-hyrox.pdf" download>baixe a planilha de treino HYROX em PDF</a>, com 8 semanas de treino para imprimir.</p>
 
 <h2>Hyrox emagrece?</h2>
 <p>A prova é um dia só — mil calorias em um sábado não mudam a balança do mês. O que emagrece é o treino das semanas antes dela, somado a um <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a>. O Hyrox ajuda porque dá um objetivo com data: quem tem prova marcada treina com mais constância, e constância é o que decide o resultado.</p>
