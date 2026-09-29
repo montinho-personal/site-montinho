@@ -9,9 +9,9 @@ import Compartilhar from "@/components/share/Compartilhar";
 import { ligacoesDoPerfil } from "@/lib/perfil-google";
 
 export const metadata: Metadata = {
-  title: { absolute: "Personal Trainer em Santana de Parnaíba | Montinho Personal Trainer" },
+  title: { absolute: "Personal Trainer em Santana de Parnaíba: Planos e Atendimento | Montinho" },
   description:
-    "Personal Trainer em Santana de Parnaíba com atendimento presencial individualizado. Especialista em emagrecimento, hipertrofia e qualidade de vida para moradores da região.",
+    "Personal trainer em Santana de Parnaíba: treino no condomínio, em casa ou na sua academia, para emagrecer e ganhar força. Veja os tipos de plano e fale no WhatsApp.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-santana-de-parnaiba`,
   },
@@ -48,6 +48,26 @@ const faq = [
     question: "Quanto tempo leva para ver resultado com personal trainer em Santana de Parnaíba?",
     answer:
       "Com protocolo bem estruturado e alimentação adequada, mudanças perceptíveis na composição corporal aparecem entre 6 e 8 semanas. Transformações visíveis e consistentes ocorrem entre 3 e 6 meses. O prazo depende do ponto de partida e do grau de comprometimento fora das sessões.",
+  },
+  {
+    question: "Qual o valor de 1 hora de personal trainer em Santana de Parnaíba?",
+    answer:
+      "Depende do local do treino, da frequência semanal e do tipo de plano: pacote por frequência, pacote flexível ou consultoria online. Sessão avulsa custa mais por hora que pacote. Me chame no WhatsApp e eu apresento os planos.",
+  },
+  {
+    question: "Quanto custa um personal trainer 3 vezes por semana?",
+    answer:
+      "Três treinos por semana é a frequência mais procurada, e no pacote semanal o valor por sessão fica menor que na aula avulsa. A proposta exata depende do local e do horário — é só chamar no WhatsApp.",
+  },
+  {
+    question: "Vale a pena pagar um personal trainer?",
+    answer:
+      "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. Costuma sair mais barato que meses sem resultado ou uma lesão.",
+  },
+  {
+    question: "Um personal trainer pode me ajudar a emagrecer?",
+    answer:
+      "Sim. O personal organiza o treino de força que preserva músculo durante o déficit, ajusta o cardio e mantém a constância, que é onde a maioria desiste sozinha.",
   },
   {
     question: "Quanto custa um personal trainer em Santana de Parnaíba?",
@@ -523,6 +543,53 @@ export default function PersonalTrainerSantanaDeParnaiba() {
             Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
           </p>
           <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
+        </div>
+      </section>
+
+      {/* PLANOS E VALOR */}
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>
+            Planos e valor
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-6"
+            style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
+          >
+            Quanto custa um personal trainer em Santana de Parnaíba?
+          </h2>
+          <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
+            <p>
+              O valor de uma hora de personal trainer em Santana de Parnaíba depende de <strong className="text-white">onde</strong> o treino acontece (no condomínio, em casa ou na sua academia), de <strong className="text-white">quantas vezes por semana</strong> você treina e de quanta flexibilidade de agenda você precisa. Por isso cada plano é montado para a rotina de quem vai treinar.
+            </p>
+            <h3 className="text-white font-semibold text-lg pt-2">Os tipos de plano</h3>
+            <ul className="list-disc pl-5 space-y-2">
+              <li><strong className="text-white">Pacote por frequência semanal</strong> (de 2 a 5 treinos): quanto mais treinos na semana, menor o valor por sessão.</li>
+              <li><strong className="text-white">Pacote flexível</strong>: um número de aulas para usar no ritmo possível, para quem viaja ou tem agenda irregular.</li>
+              <li><strong className="text-white">Consultoria online</strong>: o formato mais acessível, com treino montado e acompanhado à distância. <Link href="/consultoria-online" className="text-white underline underline-offset-4 hover:text-gray-300">Veja como funciona</Link>.</li>
+            </ul>
+            <h3 className="text-white font-semibold text-lg pt-2">Vale a pena pagar um personal trainer?</h3>
+            <p>
+              Vale quando você quer resultado com segurança: técnica corrigida desde o primeiro treino, progressão de carga no ritmo certo e treino adaptado a dores e limitações. É mais caro que treinar sozinho — e costuma sair mais barato que meses sem resultado ou uma lesão. Mais detalhes em <Link href="/blog/quanto-custa-personal-trainer-santana-de-parnaiba" className="text-white underline underline-offset-4 hover:text-gray-300">quanto custa personal trainer em Santana de Parnaíba</Link>.
+            </p>
+            <h3 className="text-white font-semibold text-lg pt-2">Um personal trainer pode ajudar a emagrecer?</h3>
+            <p>
+              Pode, e é o objetivo mais comum de quem me procura. O personal organiza o treino de força que preserva músculo durante o déficit, ajusta o volume de cardio e, principalmente, mantém a constância — que é onde a maioria desiste sozinha. Veja como funciona o <Link href="/blog/personal-trainer-para-emagrecer-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">personal trainer para emagrecer</Link>.
+            </p>
+            <h3 className="text-white font-semibold text-lg pt-2">Santana de Parnaíba, não o bairro de Santana</h3>
+            <p>
+              O atendimento é em Santana de Parnaíba, cidade vizinha de Barueri e Alphaville — não no bairro de Santana, na zona norte de São Paulo. Os treinos e resultados dos alunos estão no Instagram <a href="https://www.instagram.com/montinhopersonal" target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-4 hover:text-gray-300">@montinhopersonal</a>.
+            </p>
+          </div>
+          <a
+            href={getWhatsAppUrl("Olá, Montinho! Vi a página de personal trainer em Santana de Parnaíba e queria conhecer os tipos de plano.")}
+            data-wa-origem="planos" data-cta-id="personal-trainer-santana-de-parnaiba:planos"
+            target="_blank" rel="noopener noreferrer"
+            className="inline-block mt-8 px-6 py-3 rounded-lg font-semibold text-black"
+            style={{ background: "#BA9E50" }}
+          >
+            Conhecer os planos pelo WhatsApp
+          </a>
         </div>
       </section>
 

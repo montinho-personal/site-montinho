@@ -119,3 +119,7 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 `/personal-trainer-tambore` — base (GSC até 15/09): 266 impressões, 8 cliques, posição 19.
 - Título antes: "Personal Trainer Tamboré | Montinho Personal Trainer" → depois: "Personal Trainer no Tamboré (Barueri): Planos e Atendimento | Montinho".
 - Seção de planos sem valor (inclui "taxa de personal externo"); CTA `personal-trainer-tambore:planos`; +4 FAQs do PAA; links Barueri/Alphaville.
+
+`/personal-trainer-santana-de-parnaiba` — base (GSC até 15/09): 142 impressões, 4 cliques, posição 9,3.
+- Título antes: "Personal Trainer em Santana de Parnaíba | Montinho Personal Trainer" → depois: "Personal Trainer em Santana de Parnaíba: Planos e Atendimento | Montinho".
+- Seção de planos sem valor (+ emagrecer, desambiguação com o bairro de Santana, Instagram); CTA `personal-trainer-santana-de-parnaiba:planos`; +4 FAQs do PAA.
