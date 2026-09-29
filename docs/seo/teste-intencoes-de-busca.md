@@ -17,7 +17,7 @@ Hipótese: título, descrição e FAQ pelas buscas reais sobem o CTR e a posiç�
 | crossover-vs-crucifixo | 5.081 | 8,3 | 14 | 29/09 | ver git log |
 | treino-upper-lower-superior-inferior | 3.280 | 8,6 | 56 | 29/09 | ver git log |
 | cardio-ou-musculacao-mounjaro | 1.898 | 8,4 | 3 | 29/09 | ver git log |
-| calorias-para-ganhar-massa-muscular | 643 | 10,1 | 2 | — | — |
+| calorias-para-ganhar-massa-muscular | 643 | 10,1 | 2 | 29/09 | ver git log |
 | frutas-antes-do-treino | 622 | 8,2 | 1 | — | — |
 
 ## Braço B — 2ª página (posição 10–19)
@@ -78,3 +78,8 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 - metaTitle: "Quanto Tempo Para Aparecer Resultado na Academia?" → "Quanto Tempo Para Ver Resultado na Academia? 1 Semana a 6 Meses"
 - H2 novos: 1 semana; 1 mês; 3 meses (link p/ quanto-tempo-para-ganhar-massa-muscular); quanto tempo para definir; por região (pernas, barriga, glúteos, braços); mulheres.
 - Canibalização tratada: no artigo concorrente (quanto-tempo-para-ganhar-massa-muscular), a pergunta "Quanto tempo leva para ver resultado na musculação?" virou "Quanto tempo leva para ver ganho de massa muscular?". Cada artigo fica com a sua busca: "resultado na academia" aqui, "ganhar massa" lá. ATENÇÃO na medição: o artigo de massa também foi tocado (só essa pergunta).
+
+### calorias-para-ganhar-massa-muscular (29/09) — braço A
+- metaTitle: "Quantas Calorias Para Ganhar Massa Muscular? Como Calcular" → "Calorias Para Ganhar Massa Muscular: Quantas, Como Calcular e O Que Comer"
+- H2 novos: calorias boas / o que comer (com lanches); calorias ou kcal; calculadora (links TMB/TDEE e macros; diabetes → médico).
+- Fora: "1.200/1.500 calorias é saudável" (intenção de emagrecer, outro artigo).
