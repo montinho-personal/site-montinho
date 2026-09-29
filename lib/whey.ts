@@ -444,4 +444,5 @@ export const ARTIGOS_COM_LINK_WHEY: string[] = [
   "whey-protein-engorda",
   "whey-protein-para-quem-usa-mounjaro",
   "proteina-vegana-whey-ganho-muscular-estudo-2025",
+  "black-friday-suplementos",
 ];

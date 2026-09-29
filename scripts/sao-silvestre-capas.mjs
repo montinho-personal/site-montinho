@@ -140,6 +140,14 @@ const CAPAS = [
 <div class="main"><h1><em>HYROX</em><br>São Paulo 2026</h1>
 <div class="sub">Distrito Anhembi · Individual, Duplas e Revezamento<br><b>8 km de corrida</b> + <b>8 estações</b>.</div></div>`, "8 × 1 KM"),
   },
+  {
+    slug: "black-friday-suplementos",
+    alt: "Capa: Black Friday de suplementos 2026 — como comparar pelo preço por dose e fugir de desconto falso",
+    html: base(`
+<div class="top"><div class="kicker">Black Friday 2026 · 27/11</div><div class="chip"><i></i>Guia de compra</div></div>
+<div class="main"><h1>Black Friday de<br><em>suplementos</em></h1>
+<div class="sub">Whey e creatina pelo <b>preço por dose</b>,<br>não pelo pote — e sem desconto falso.</div></div>`, "27/11"),
+  },
 ];
 // Só algumas capas: node scripts/sao-silvestre-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);
