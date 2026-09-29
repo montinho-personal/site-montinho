@@ -188,6 +188,14 @@ const CAPAS = [
 <div class="main"><h1><em>Maratona</em><br>de Curitiba 2026</h1>
 <div class="sub"><b>5, 10, 21 e 42 km</b> · largada no Centro Cívico<br>Percurso, horário e o <b>pace</b> para cada meta.</div></div>`, "Curitiba"),
   },
+  {
+    slug: "maratona-de-brasilia-2026",
+    alt: "Capa: Maratona Monumental de Brasília 2026 — 21 e 22 de novembro na Esplanada dos Ministérios",
+    html: base(`
+<div class="top"><div class="kicker">Maratona de Brasília · 21 e 22/11</div><div class="chip"><i></i>Mega Finisher</div></div>
+<div class="main"><h1><em>Maratona</em><br>de Brasília 2026</h1>
+<div class="sub">Largada na <b>Esplanada</b> · maratona às <b>5h</b>, meia às <b>6h</b><br>Percurso, inscrição e o pace para cada meta.</div></div>`, "Brasília"),
+  },
 ];
 // Só algumas capas: node scripts/sao-silvestre-capas.mjs <slug> [<slug>...]
 const SO = process.argv.slice(2);

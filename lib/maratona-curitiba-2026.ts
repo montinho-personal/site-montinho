@@ -57,6 +57,8 @@ export const MARATONA_CURITIBA_2026_POSTS: BlogPost[] = [
 </table>
 <p>Pace calculado sobre a distância oficial (42,195 km e 21,0975 km). Numa prova com subidas, sair mais devagar na primeira metade costuma render mais do que o contrário. Para outros tempos, use a calculadora abaixo, e veja <a href="/blog/como-melhorar-o-pace-na-corrida">como melhorar o pace</a>.</p>
 
+<p>Vai correr também a <a href="/blog/maratona-de-brasilia-2026">Maratona de Brasília</a>, uma semana depois? Escolha uma das duas para buscar tempo.</p>
+
 <h2>Premiação</h2>
 <p>A premiação por colocação e as categorias por faixa etária ficam no regulamento oficial; entram aqui quando divulgadas.</p>
 

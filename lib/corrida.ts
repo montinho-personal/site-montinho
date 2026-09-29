@@ -411,4 +411,5 @@ export const ARTIGOS_COM_CALCULADORA_CORRIDA: string[] = [
   "esteira-ou-rua-para-correr",
   "como-melhorar-o-pace-na-corrida",
   "maratona-de-curitiba-2026",
+  "maratona-de-brasilia-2026",
 ];
