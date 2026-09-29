@@ -7,6 +7,7 @@ import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import FAQ from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import { ligacoesDoPerfil } from "@/lib/perfil-google";
+import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer em Barueri: Planos e Atendimento | Montinho" },
@@ -560,6 +561,10 @@ export default function PersonalTrainerBarueri() {
           </a>
         </div>
       </section>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+        <LinkFerramentaRotina slug="personal-trainer-barueri" tipo="personal" />
+      </div>
+
 
       {/* FAQ */}
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>

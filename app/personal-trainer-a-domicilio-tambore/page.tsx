@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
 import FAQ from "@/components/ui/FAQ";
+import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer a Domicílio Tamboré | Montinho Personal Trainer" },
@@ -255,6 +256,10 @@ export default function PersonalTrainerDomicilioTambore() {
           </p>
         </div>
       </section>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+        <LinkFerramentaRotina slug="personal-trainer-a-domicilio-tambore" tipo="personal" />
+      </div>
+
 
       {/* FAQ */}
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
