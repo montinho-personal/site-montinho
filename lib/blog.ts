@@ -107,6 +107,7 @@ import { CORRIDA_PACE_POSTS } from "./corrida-pace";
 import { HYROX_SP_2026_POSTS } from "./hyrox-sp-2026";
 import { BLACK_FRIDAY_2026_POSTS } from "./black-friday-2026";
 import { UFC_2026_POSTS } from "./ufc-2026";
+import { OUTUBRO_ROSA_POSTS } from "./outubro-rosa-2026";
 
 export const blogPosts = ([
   ...SAO_SILVESTRE_2026_POSTS,
@@ -114,6 +115,7 @@ export const blogPosts = ([
   ...HYROX_SP_2026_POSTS,
   ...BLACK_FRIDAY_2026_POSTS,
   ...UFC_2026_POSTS,
+  ...OUTUBRO_ROSA_POSTS,
   ...OLYMPIA_2026_POSTS,
   {
     slug: "parar-de-tomar-mounjaro",
