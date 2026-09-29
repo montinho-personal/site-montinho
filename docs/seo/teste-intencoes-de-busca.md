@@ -28,7 +28,7 @@ Hipótese: cobrir as intenções reais tira o artigo da 2ª página. Antes de ca
 |---|---|---|---|---|---|
 | hip-dips-musculacao | 242 | 13,1 | 0 | 29/09 | nenhuma forte |
 | quanto-tempo-para-aparecer-resultado-na-academia | 111 | 10,2 | 0 | 29/09 | quanto-tempo-para-ganhar-massa-muscular (306 imp, pos 9,8) |
-| exercicios-para-gluteo-medio | 104 | 18,7 | 0 | — | como-fazer-abducao-quadril-maquina (84 imp, pos 7,5) |
+| exercicios-para-gluteo-medio | 104 | 18,7 | 0 | 29/09 | como-fazer-abducao-quadril-maquina (84 imp, pos 7,5) |
 | cafeina-no-treino-dose-timing | 81 | 15,2 | 0 | — | cafe-antes-do-treino (9 imp, pos 6,2) |
 | treino-para-mulher-iniciante | 74 | 11,5 | 3 | — | treino-de-gluteos-feminino, hipertrofia-para-iniciantes |
 
@@ -83,3 +83,8 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 - metaTitle: "Quantas Calorias Para Ganhar Massa Muscular? Como Calcular" → "Calorias Para Ganhar Massa Muscular: Quantas, Como Calcular e O Que Comer"
 - H2 novos: calorias boas / o que comer (com lanches); calorias ou kcal; calculadora (links TMB/TDEE e macros; diabetes → médico).
 - Fora: "1.200/1.500 calorias é saudável" (intenção de emagrecer, outro artigo).
+
+### exercicios-para-gluteo-medio (29/09) — braço B
+- metaTitle: "Exercícios para Glúteo Médio — Os 6 Mais Eficazes" → "Glúteo Médio: Onde Fica, Função e os 6 Melhores Exercícios"
+- H2 novos: onde fica e para que serve (origem/inserção); máximo, médio e mínimo (tensor da fáscia lata); sintomas de glúteo médio fraco; como ativar; na polia e na máquina; antes e depois.
+- Canibalização: técnica da cadeira abdutora fica em como-fazer-abducao-quadril-maquina (link); hip dips linkado.
