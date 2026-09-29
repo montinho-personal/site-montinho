@@ -131,3 +131,13 @@ Base (GSC até 15/09): quanto-custa-personal-trainer-alphaville 88 impr / 4 cliq
 
 ## SEO local — grupo 3: personal a domicílio (29/09/2026)
 5 páginas (Alphaville, Barueri, Santana de Parnaíba, Aldeia da Serra, Tamboré): +4 FAQs do PAA (valor em casa, 3x/semana, grupo de WhatsApp → consultoria online, é vantajoso) e seção de tipos de plano sem valores. Títulos intactos. Condomínio fica para a próxima rodada.
+
+## Títulos de academias com CTR baixo (29/09/2026) — mudança SÓ de metaTitle e metaDescription
+Base (GSC até 15/09): bluefit-alphaville 153 impr / 0 cliques / pos 9 · academia-24-horas-barueri 122 / 1 / 7,6 · smart-fit-barueri 107 / 1 / 9,4 · quanto-custa-academia-em-barueri 77 / 0 / 7,1 · skyfit-alphaville 71 / 0 / 8,9.
+Antes → depois:
+- bluefit-alphaville: "Bluefit Alphaville Vale a Pena? Prós e Contras por Perfil" → "Bluefit Alphaville: Vale a Pena? Estrutura, Lotação e Para Quem É"
+- smart-fit-barueri: "Smart Fit Barueri Vale a Pena? Análise Honesta" → "Smart Fit Barueri: Vale a Pena? Prós, Contras e Qual Plano"
+- academia-24-horas-barueri: "Academia 24 Horas em Barueri: Onde Treinar" → "Academia 24 Horas em Barueri: Quais Redes Abrem de Madrugada"
+- skyfit-alphaville: "SkyFit Alphaville: Vale a Pena? Análise Honesta" → "SkyFit Alphaville: Vale a Pena? Prós, Contras e Teste de 30 Minutos"
+- quanto-custa-academia-em-barueri: "Quanto Custa Academia em Barueri? Faixas e Dicas" → "Quanto Custa Academia em Barueri? Preços do Low-Cost ao Premium"
+Hipótese: parte do CTR baixo é busca de navegação (endereço/horário) que a página não responde; título sozinho tem efeito limitado.
