@@ -19,7 +19,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
     tags: ["UFC", "UFC 332", "Natália Silva", "MMA", "luta"],
     content: `<img src="/blog-images/ufc-332-natalia-silva-capa.webp" alt="Capa: UFC 332 — Natália Silva x Wang Cong pelo cinturão peso-mosca, sábado 3/10" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
 <blockquote><p>Informações verificadas em 29 de setembro de 2026 no site oficial do UFC e em veículos de imprensa. O resultado entra aqui na noite da luta.</p></blockquote>
-<p>O <strong>UFC 332</strong> acontece no <strong>sábado, 3 de outubro de 2026</strong>, no Delta Center, em Salt Lake City (EUA). A luta principal é da brasileira <strong>Natália Silva</strong> contra a chinesa <strong>Wang Cong</strong>, valendo o <strong>cinturão peso-mosca feminino</strong> — a chance de a primeira brasileira conquistar esse título.</p>
+<p>O <strong>UFC 332</strong> acontece no <strong>sábado, 3 de outubro de 2026</strong>, no Delta Center, em Salt Lake City (EUA). A luta principal é da brasileira <strong>Natália Silva</strong> contra a chinesa <strong>Wang Cong</strong>, valendo o <strong>cinturão vago do peso-mosca feminino</strong> — a chance de a primeira brasileira conquistar esse título.</p>
 
 <h2>UFC 332: data, horário e onde assistir</h2>
 <table><thead><tr><th>Item</th><th>O que se sabe</th></tr></thead><tbody>
@@ -30,6 +30,15 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <tr><td>Onde assistir</td><td>Paramount+ e UFC Fight Pass</td></tr>
 </tbody></table>
 <p>A luta principal costuma começar perto do fim do card principal, algumas horas depois do início.</p>
+
+<h2>Brasileiros no card do UFC 332</h2>
+<table><thead><tr><th>Luta</th><th>Categoria</th><th>Card</th></tr></thead><tbody>
+<tr><td><strong>Natália Silva</strong> x Wang Cong</td><td>Peso-mosca (cinturão)</td><td>Principal — luta principal</td></tr>
+<tr><td><strong>Deiveson Figueiredo</strong> x Payton Talbott</td><td>Peso-galo</td><td>Principal — co-principal</td></tr>
+<tr><td><strong>Johnny Walker</strong> x Mick Parkin</td><td>Peso-pesado</td><td>Preliminar</td></tr>
+<tr><td><strong>Rafael dos Anjos</strong> x Alexander Hernandez</td><td>—</td><td>Preliminar</td></tr>
+</tbody></table>
+<p>Perfil de cada um em <a href="/blog/brasileiros-ufc-332">brasileiros no UFC 332</a>.</p>
 
 <h2>A luta principal: Natália Silva x Wang Cong</h2>
 <p>Natália Silva enfrentaria a campeã Valentina Shevchenko, que se lesionou e saiu do evento. Com isso, a brasileira passou a disputar o cinturão contra Wang Cong. Qualquer uma das duas que vencer será a primeira campeã do peso-mosca do seu país. O peso-mosca feminino tem limite de 56,7 kg.</p>
@@ -54,7 +63,8 @@ export const UFC_2026_POSTS: BlogPost[] = [
     faq: [
       { question: "Quando é o UFC 332?", answer: "No sábado, 3 de outubro de 2026, no Delta Center, em Salt Lake City (EUA)." },
       { question: "Que horas começa o UFC 332?", answer: "O card preliminar começa por volta das 17h e o card principal às 21h, horário de Brasília." },
-      { question: "Qual é a luta principal do UFC 332?", answer: "Natália Silva x Wang Cong, pelo cinturão peso-mosca feminino." },
+      { question: "Qual é a luta principal do UFC 332?", answer: "Natália Silva x Wang Cong, pelo cinturão vago do peso-mosca feminino." },
+      { question: "Quais brasileiros lutam no UFC 332?", answer: "Natália Silva, Deiveson Figueiredo, Johnny Walker e Rafael dos Anjos." },
       { question: "Onde assistir ao UFC 332?", answer: "Pelo Paramount+ e pelo UFC Fight Pass." },
     ],
   },
@@ -173,6 +183,56 @@ export const UFC_2026_POSTS: BlogPost[] = [
       { question: "Como é o treino de um lutador de MMA?", answer: "Combina preparação física (força, potência e condicionamento), treino técnico de várias lutas e sparring, com recuperação planejada." },
       { question: "Lutador faz musculação?", answer: "Faz. Agachamento, terra, barra, remada, supino e exercícios de potência ajudam a golpear, derrubar e resistir." },
       { question: "Quais os melhores exercícios para lutadores?", answer: "Agachamento, levantamento terra, barra fixa, remada, supino, arremesso de medicine ball e exercícios de tronco." },
+    ],
+  },
+  {
+    slug: "brasileiros-ufc-332",
+    title: "Brasileiros no UFC 332: quem luta, contra quem e que horas",
+    metaTitle: "Brasileiros no UFC 332: Natália Silva, Deiveson, Johnny Walker",
+    metaDescription:
+      "Os brasileiros do UFC 332 (3/10): Natália Silva pelo cinturão, Deiveson Figueiredo no co-principal, Johnny Walker e Rafael dos Anjos. Adversários, card e horários de Brasília.",
+    excerpt:
+      "Natália Silva, Deiveson Figueiredo, Johnny Walker e Rafael dos Anjos no UFC 332: quem enfrentam, em que parte do card e a que horas.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-09-29",
+    readTime: "4 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC 332", "brasileiros no UFC", "Natália Silva", "Deiveson Figueiredo", "Johnny Walker"],
+    content: `<p>Quatro brasileiros lutam no <strong>UFC 332</strong>, no <strong>sábado, 3 de outubro</strong>, em Salt Lake City (EUA). O card preliminar começa às <strong>17h</strong> e o principal às <strong>21h</strong> (Brasília), com transmissão pelo <strong>Paramount+</strong> e pelo UFC Fight Pass. O resultado de cada um entra aqui na noite da luta.</p>
+
+<h2>Natália Silva x Wang Cong — luta principal</h2>
+<p>A mineira de Timóteo disputa o cinturão vago do peso-mosca feminino (até 56,7 kg). Ela enfrentaria a campeã Valentina Shevchenko, que se lesionou. Se vencer, será a primeira brasileira campeã da categoria. Detalhes em <a href="/blog/ufc-332-natalia-silva">UFC 332: Natália Silva x Wang Cong</a>.</p>
+
+<h2>Deiveson Figueiredo x Payton Talbott — co-principal</h2>
+<p>Ex-campeão do peso-mosca, Deiveson hoje luta no peso-galo (até 61,2 kg) e enfrenta o norte-americano Payton Talbott, um dos nomes em ascensão da divisão.</p>
+
+<h2>Johnny Walker x Mick Parkin — card preliminar</h2>
+<p>Johnny Walker faz a estreia no peso-pesado contra o inglês Mick Parkin.</p>
+
+<h2>Rafael dos Anjos x Alexander Hernandez — card preliminar</h2>
+<p>O veterano ex-campeão do peso-leve encara o norte-americano Alexander Hernandez.</p>
+
+<h2>Resultados dos brasileiros</h2>
+<p>Esta seção é atualizada ao fim de cada luta, na noite de sábado.</p>
+
+<h2>Como os lutadores chegam à balança</h2>
+<p>Todos passam pela pesagem na véspera — e muitos fazem corte de peso. Entenda o processo e as categorias em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>, e como eles treinam em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/news/conheca-lutadores-brasileiros-ufc-332" target="_blank" rel="noopener noreferrer">UFC — Conheça os lutadores brasileiros do UFC 332</a></li>
+<li><a href="https://www.ufc.com.br/event/ufc-332" target="_blank" rel="noopener noreferrer">UFC — UFC 332 (card oficial)</a></li>
+<li>Veículos consultados: Cageside Press, Lance!, Gazeta Esportiva, Metrópoles.</li>
+</ul>`,
+    faq: [
+      { question: "Quais brasileiros lutam no UFC 332?", answer: "Natália Silva (luta principal), Deiveson Figueiredo (co-principal), Johnny Walker e Rafael dos Anjos (card preliminar)." },
+      { question: "Contra quem luta Deiveson Figueiredo no UFC 332?", answer: "Contra o norte-americano Payton Talbott, no peso-galo." },
+      { question: "Contra quem luta Johnny Walker no UFC 332?", answer: "Contra o inglês Mick Parkin, na estreia de Walker no peso-pesado." },
+      { question: "Que horas lutam os brasileiros no UFC 332?", answer: "O card preliminar começa às 17h e o principal às 21h, horário de Brasília." },
     ],
   },
 ];
