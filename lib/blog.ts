@@ -19970,6 +19970,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "domicílio", "Alphaville", "treino em casa"],
     faq: [
+      { question: "Qual o valor de um personal trainer em casa em Alphaville?", answer: "Depende da frequência semanal, do tipo de plano e do deslocamento até a sua casa. No pacote semanal, o valor por sessão é menor que na aula avulsa. Os planos são apresentados numa conversa rápida pelo WhatsApp." },
+      { question: "Quanto custa um personal trainer 3 vezes por semana?", answer: "Três treinos por semana é a frequência mais procurada, e no pacote o valor por sessão fica menor que na aula avulsa. A proposta exata depende do horário e do local — chame no WhatsApp para conhecer os planos." },
+      { question: "Existe grupo de WhatsApp para treinar em casa?", answer: "Grupo com treino genérico raramente se ajusta à sua casa, ao seu equipamento e às suas limitações. Se a ideia é treinar em casa com orientação e pagando menos que o presencial, a consultoria online entrega um treino individual acompanhado pelo WhatsApp." },
+      { question: "É vantajoso pagar um personal trainer?", answer: "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. Em casa, some a economia de tempo de deslocamento." },
       {
         question: "Personal trainer a domicílio em Alphaville é tão eficaz quanto em academia?",
         answer:
@@ -20022,6 +20026,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li>Quem está voltando ao treino após lesão e precisa de ambiente controlado</li>
   <li>Quem prefere privacidade durante o treino</li>
 </ul>
+
+<h2>Quanto custa personal trainer em casa e os tipos de plano</h2>
+<p>O valor do personal a domicílio depende da frequência semanal, do tipo de plano e do deslocamento. Os formatos são: <strong>pacote por frequência semanal</strong> (de 2 a 5 treinos, com valor por sessão menor quanto mais treinos), <strong>pacote flexível</strong> (aulas para usar no ritmo possível) e <strong>consultoria online</strong> — o formato mais acessível para quem quer treinar em casa com treino individual e acompanhamento pelo WhatsApp. Para ver qual cabe na sua rotina, <a href="/contato">fale comigo pelo WhatsApp</a> e conheça os planos.</p>
 
 <h2>Como funciona o atendimento</h2>
 <p>Antes da primeira sessão, fazemos uma conversa inicial para entender objetivo, histórico e limitações. Visito o espaço disponível, avalio o equipamento e montamos juntos o protocolo. As sessões acontecem com presença exclusiva — sem outros alunos no mesmo horário, atenção total durante toda a sessão. Entre as sessões, suporte pelo WhatsApp para dúvidas e ajustes. Revisão mensal do protocolo com base na resposta real do corpo.</p>
@@ -87109,6 +87116,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>No vídeo abaixo, do meu canal, mostro um ponto-chave de técnica para treinar com mais segurança e proteger a lombar.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/MrfzaQWFqPs?rel=0" title="Treinar com segurança: um ponto-chave de técnica — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
+<h2>Quanto custa personal trainer em casa e os tipos de plano</h2>
+<p>O valor do personal a domicílio depende da frequência semanal, do tipo de plano e do deslocamento. Os formatos são: <strong>pacote por frequência semanal</strong> (de 2 a 5 treinos, com valor por sessão menor quanto mais treinos), <strong>pacote flexível</strong> (aulas para usar no ritmo possível) e <strong>consultoria online</strong> — o formato mais acessível para quem quer treinar em casa com treino individual e acompanhamento pelo WhatsApp. Para ver qual cabe na sua rotina, <a href="/contato">fale comigo pelo WhatsApp</a> e conheça os planos.</p>
+
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/personal-trainer-a-domicilio-alphaville">Personal Trainer a Domicílio em Alphaville</a></li>
@@ -87116,6 +87126,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><a href="/blog/academia-ou-personal-trainer">Academia ou personal trainer: o que vale mais a pena?</a></li>
 </ul>`,
     faq: [
+      { question: "Qual o valor de um personal trainer em casa em Barueri?", answer: "Depende da frequência semanal, do tipo de plano e do deslocamento até a sua casa. No pacote semanal, o valor por sessão é menor que na aula avulsa. Os planos são apresentados numa conversa rápida pelo WhatsApp." },
+      { question: "Quanto custa um personal trainer 3 vezes por semana?", answer: "Três treinos por semana é a frequência mais procurada, e no pacote o valor por sessão fica menor que na aula avulsa. A proposta exata depende do horário e do local — chame no WhatsApp para conhecer os planos." },
+      { question: "Existe grupo de WhatsApp para treinar em casa?", answer: "Grupo com treino genérico raramente se ajusta à sua casa, ao seu equipamento e às suas limitações. Se a ideia é treinar em casa com orientação e pagando menos que o presencial, a consultoria online entrega um treino individual acompanhado pelo WhatsApp." },
+      { question: "É vantajoso pagar um personal trainer?", answer: "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. Em casa, some a economia de tempo de deslocamento." },
       { question: "Quais regiões de Barueri são atendidas?", answer: "Residências e condomínios do Centro de Barueri, região do Tamboré e bairros próximos, além de Alphaville e Santana de Parnaíba. Confirme a disponibilidade para o seu endereço na página de contato." },
       { question: "Posso treinar na academia do condomínio?", answer: "Sim, desde que o condomínio permita profissionais externos — a maioria permite mediante cadastro simples na portaria." },
       { question: "Sou totalmente iniciante. O formato serve para mim?", answer: "É o cenário ideal: você aprende a técnica correta desde a primeira sessão, em ambiente privado, sem risco de criar vícios de execução treinando sozinho." },
@@ -116263,6 +116277,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     author: "Montinho",
     tags: ["personal trainer a domicílio","aldeia da serra","treino em condomínio","treino em casa","personal trainer"],
     faq: [
+      { question: "Qual o valor de um personal trainer em casa na Aldeia da Serra?", answer: "Depende da frequência semanal, do tipo de plano e do deslocamento até a sua casa. No pacote semanal, o valor por sessão é menor que na aula avulsa. Os planos são apresentados numa conversa rápida pelo WhatsApp." },
+      { question: "Quanto custa um personal trainer 3 vezes por semana?", answer: "Três treinos por semana é a frequência mais procurada, e no pacote o valor por sessão fica menor que na aula avulsa. A proposta exata depende do horário e do local — chame no WhatsApp para conhecer os planos." },
+      { question: "Existe grupo de WhatsApp para treinar em casa?", answer: "Grupo com treino genérico raramente se ajusta à sua casa, ao seu equipamento e às suas limitações. Se a ideia é treinar em casa com orientação e pagando menos que o presencial, a consultoria online entrega um treino individual acompanhado pelo WhatsApp." },
+      { question: "É vantajoso pagar um personal trainer?", answer: "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. Em casa, some a economia de tempo de deslocamento." },
       { question: "Existe personal trainer a domicílio na Aldeia da Serra?", answer: "Sim. O Montinho atende em casa e no espaço fitness dos condomínios da Aldeia da Serra, nos lados de Barueri e de Santana de Parnaíba, além de acompanhar alunos em academias de Alphaville." },
       { question: "Posso treinar na academia do meu condomínio com o personal?", answer: "Na maioria dos residenciais da Aldeia, sim, mediante cadastro do profissional na portaria. Confirme com a administração antes da primeira sessão." },
       { question: "Preciso ter equipamento em casa?", answer: "Não. O treino começa com peso do corpo, elásticos e halteres ajustáveis, ou usa a sala do condomínio. Resultado vem de progressão, técnica e constância, não de máquina." },
@@ -116308,7 +116326,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Como é uma sessão na prática</h2>
 <p>Sessões de 50 a 60 minutos: aquecimento direcionado ao que vai ser treinado, bloco principal com correção de execução em tempo real e registro de tudo, para que a semana seguinte sempre evolua. Nos dias sem acompanhamento, você recebe o que fazer sozinho na sala do condomínio, com orientação por mensagem. Quem quer o formato inteiro por conta própria, com plano que se ajusta toda semana, tem a <a href="/consultoria-online">consultoria online</a>.</p>
 
-<h2>Quanto custa</h2>
+<h2>Quanto custa personal trainer em casa e os tipos de plano</h2>
+<p>O valor do personal a domicílio depende da frequência semanal, do tipo de plano e do deslocamento. Os formatos são: <strong>pacote por frequência semanal</strong> (de 2 a 5 treinos, com valor por sessão menor quanto mais treinos), <strong>pacote flexível</strong> (aulas para usar no ritmo possível) e <strong>consultoria online</strong> — o formato mais acessível para quem quer treinar em casa com treino individual e acompanhamento pelo WhatsApp. Para ver qual cabe na sua rotina, <a href="/contato">fale comigo pelo WhatsApp</a> e conheça os planos.</p>
+
+<h3>Na prática</h3>
 <p>O valor depende do local, da frequência semanal e do deslocamento, e na Aldeia o deslocamento pesa mais que em qualquer outra região que atendo. Explico o que muda o preço e como comparar propostas em <a href="/blog/quanto-custa-personal-trainer-aldeia-da-serra">quanto custa personal trainer na Aldeia da Serra</a>. A proposta fechada vem numa conversa de cinco minutos pelo <a href="/contato">WhatsApp</a>.</p>
 
 <h2>O que realmente gera resultado (spoiler: não é o CEP)</h2>
@@ -116468,6 +116489,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     author: "Montinho",
     tags: ["personal trainer a domicílio","santana de parnaíba","fazendinha","treino em condomínio","treino em casa","personal trainer"],
     faq: [
+      { question: "Qual o valor de um personal trainer em casa em Santana de Parnaíba?", answer: "Depende da frequência semanal, do tipo de plano e do deslocamento até a sua casa. No pacote semanal, o valor por sessão é menor que na aula avulsa. Os planos são apresentados numa conversa rápida pelo WhatsApp." },
+      { question: "Quanto custa um personal trainer 3 vezes por semana?", answer: "Três treinos por semana é a frequência mais procurada, e no pacote o valor por sessão fica menor que na aula avulsa. A proposta exata depende do horário e do local — chame no WhatsApp para conhecer os planos." },
+      { question: "Existe grupo de WhatsApp para treinar em casa?", answer: "Grupo com treino genérico raramente se ajusta à sua casa, ao seu equipamento e às suas limitações. Se a ideia é treinar em casa com orientação e pagando menos que o presencial, a consultoria online entrega um treino individual acompanhado pelo WhatsApp." },
+      { question: "É vantajoso pagar um personal trainer?", answer: "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. Em casa, some a economia de tempo de deslocamento." },
       { question: "Existe personal trainer a domicílio em Santana de Parnaíba?", answer: "Sim. O Montinho atende em casa e no espaço fitness de condomínios da Fazendinha, da Aldeia da Serra, do Colinas e da região do Centro, além de acompanhar alunos em academias da cidade e de Alphaville." },
       { question: "Posso treinar na academia do meu condomínio com o personal?", answer: "Na maioria dos residenciais da cidade, sim, mediante cadastro do profissional na portaria. Confirme com a administração antes da primeira sessão." },
       { question: "Preciso ter equipamento em casa?", answer: "Não. O treino começa com peso do corpo, elásticos e halteres ajustáveis, ou usa a sala do condomínio. Resultado vem de progressão, técnica e constância, não de máquina." },
@@ -116523,7 +116548,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Como é uma sessão na prática</h2>
 <p>Sessões de 50 a 60 minutos: aquecimento direcionado, bloco principal com correção de execução em tempo real e registro de tudo, para que a semana seguinte sempre evolua. Nos dias sem acompanhamento, você recebe o que fazer sozinho, com orientação por mensagem. Quem quer o formato inteiro por conta própria tem a <a href="/consultoria-online">consultoria online</a>.</p>
 
-<h2>Quanto custa</h2>
+<h2>Quanto custa personal trainer em casa e os tipos de plano</h2>
+<p>O valor do personal a domicílio depende da frequência semanal, do tipo de plano e do deslocamento. Os formatos são: <strong>pacote por frequência semanal</strong> (de 2 a 5 treinos, com valor por sessão menor quanto mais treinos), <strong>pacote flexível</strong> (aulas para usar no ritmo possível) e <strong>consultoria online</strong> — o formato mais acessível para quem quer treinar em casa com treino individual e acompanhamento pelo WhatsApp. Para ver qual cabe na sua rotina, <a href="/contato">fale comigo pelo WhatsApp</a> e conheça os planos.</p>
+
+<h3>Na prática</h3>
 <p>O valor depende do local, da frequência semanal e do deslocamento. Explico o que compõe o preço e como comparar propostas em <a href="/blog/quanto-custa-personal-trainer-santana-de-parnaiba">quanto custa personal trainer em Santana de Parnaíba</a>. A proposta fechada vem numa conversa de cinco minutos pelo <a href="/contato">WhatsApp</a>.</p>
 
 <h2>O que realmente gera resultado (spoiler: não é o CEP)</h2>
