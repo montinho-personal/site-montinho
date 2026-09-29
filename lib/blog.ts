@@ -60141,7 +60141,7 @@ Veja também: [musculação e diabetes tipo 2](/blog/musculacao-e-diabetes-tipo-
     excerpt: "O exercício é uma das intervenções mais estudadas na reabilitação oncológica. Não é sobre voltar ao que era antes — é sobre recuperar força, qualidade de vida e reduzir o risco de recorrência.",
     category: "Saúde",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
+    updatedAt: "2026-09-29",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["musculação pós-câncer", "exercício oncológico", "reabilitação câncer", "qualidade de vida câncer", "treino após quimioterapia", "personal trainer alphaville"],
@@ -60150,6 +60150,11 @@ Veja também: [musculação e diabetes tipo 2](/blog/musculacao-e-diabetes-tipo-
       { question: "Quando posso começar a treinar após quimioterapia?", answer: "Depende do protocolo e da resposta individual. Exercício leve (caminhada) pode ser iniciado durante o tratamento em muitos casos. Musculação geralmente começa 4-6 semanas após o fim da quimioterapia, com liberação médica. Em casos de cirurgia, aguarde cicatrização completa e clearance do cirurgião." },
       { question: "O exercício reduz o risco de recorrência do câncer?", answer: "Há evidências crescentes de que o exercício regular reduz o risco de recorrência, especialmente em câncer de mama, cólon e próstata. O mecanismo envolve redução de insulina, inflamação, estrogênio (no câncer hormônio-dependente) e fortalecimento da função imune. Estudo publicado no Journal of Clinical Oncology (2016) mostrou redução de 40-50% no risco de mortalidade específica por câncer de mama em mulheres ativas." },
       { question: "Musculação causa dor nas áreas afetadas pelo câncer?", answer: "Não necessariamente. O treino deve ser adaptado para evitar sobrecarga nas áreas de cirurgia, radioterapia ou comprometimento ósseo. Em câncer com metástase óssea, alguns exercícios precisam ser modificados ou contraindicados — avaliação médica é essencial antes de iniciar." },
+      { question: "Quem faz quimioterapia pode fazer musculação?", answer: "Em geral sim, com liberação do oncologista e carga ajustada ao dia: nos dias de mais fadiga, treino mais leve ou só caminhada. O INCA tem recomendações de atividade física durante e após o tratamento." },
+      { question: "Como ganhar massa muscular durante a quimioterapia?", answer: "Durante o tratamento, a meta costuma ser preservar músculo, não ganhar. Treino de força regular e alimentação acompanhada por nutricionista são os pilares; o ganho vem com mais força depois." },
+      { question: "Quem faz tratamento de câncer pode tomar creatina?", answer: "Não tome por conta própria. Qualquer suplemento durante o tratamento precisa ser liberado pelo oncologista, porque pode interagir com medicamentos e com a função dos rins." },
+      { question: "O que não pode fazer quando está com câncer de mama?", answer: "Não treinar sem liberação, não forçar a área operada ou irradiada e não insistir em dias de febre, plaquetas baixas ou fadiga extrema. Os limites de cada fase são definidos pela equipe médica." },
+      { question: "Quais os cuidados com exercício durante a radioterapia de mama?", answer: "Proteger a pele irradiada de atrito e suor excessivo, evitar piscina com cloro se a pele estiver sensível e manter o braço do lado tratado em movimento com orientação, para preservar a mobilidade do ombro." },
     ],
     content: `
 <p>O diagnóstico de câncer muda tudo. O tratamento — quimioterapia, radioterapia, cirurgia — é muitas vezes devastador para o corpo. E após tudo isso, a pergunta que muitas pessoas me fazem é: "Posso voltar a treinar?" A resposta, na maioria dos casos, é não só "pode" — é "deveria".</p>
@@ -60159,6 +60164,10 @@ Veja também: [musculação e diabetes tipo 2](/blog/musculacao-e-diabetes-tipo-
 <figure style="margin:2rem 0">
   <img src="/blog-images/musculacao-pos-cancer-infographic.svg" alt="Infográfico sobre Musculação Pós-Câncer — Montinho Personal Trainer" title="Exercício e Musculação para Quem Fez Tratamento de Câncer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
+
+<h2>Musculação durante o tratamento de câncer de mama</h2>
+<p>O exercício não precisa esperar o fim do tratamento. Com liberação do oncologista, treinar durante a quimioterapia e a radioterapia ajuda a combater a fadiga, preservar a massa muscular e manter a disposição. O ajuste é diário: em dia bom, treino de força leve a moderado; em dia ruim, caminhada ou descanso. Para a prevenção e o Outubro Rosa, veja <a href="/blog/outubro-rosa-exercicio-fisico">exercício físico e câncer de mama</a>.</p>
+<p>Fonte: <a href="https://www.gov.br/inca/pt-br" target="_blank" rel="noopener noreferrer">INCA — recomendações de atividade física durante e após o tratamento</a>.</p>
 
 ## O Que o Tratamento de Câncer Faz ao Corpo
 

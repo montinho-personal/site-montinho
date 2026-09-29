@@ -16,7 +16,8 @@ export const OUTUBRO_ROSA_POSTS: BlogPost[] = [
     readTime: "5 min",
     author: "Montinho Personal Trainer",
     tags: ["Outubro Rosa", "câncer de mama", "exercício físico", "musculação", "prevenção"],
-    content: `<p>O <strong>Outubro Rosa</strong> é o mês de conscientização sobre o <strong>câncer de mama</strong>. Além do exame e do diagnóstico precoce, um dos fatores que mais se repetem nas recomendações oficiais é o <strong>movimento</strong>: segundo o Instituto Nacional de Câncer (INCA), a atividade física está associada à redução do risco de câncer de mama. Este guia explica o que se sabe — sem exagero e sem promessa.</p>
+    content: `<img src="/blog-images/outubro-rosa-exercicio-fisico-capa.webp" alt="Capa: Outubro Rosa — exercício físico e musculação na prevenção do câncer de mama; 150 minutos por semana" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<p>O <strong>Outubro Rosa</strong> é o mês de conscientização sobre o <strong>câncer de mama</strong>. Além do exame e do diagnóstico precoce, um dos fatores que mais se repetem nas recomendações oficiais é o <strong>movimento</strong>: segundo o Instituto Nacional de Câncer (INCA), a atividade física está associada à redução do risco de câncer de mama. Este guia explica o que se sabe — sem exagero e sem promessa.</p>
 
 <h2>Exercício físico previne câncer de mama?</h2>
 <p>O INCA, com base na Agência Internacional para Pesquisa em Câncer, associa a prática regular de atividade física à menor chance de câncer de mama, de intestino (cólon) e de endométrio. Parte do efeito vem do controle do peso e da gordura corporal — o excesso de gordura aumenta o risco de vários tipos de câncer — e parte de mudanças no sistema imunológico e nos hormônios.</p>
