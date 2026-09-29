@@ -41,6 +41,7 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  "mr-olympia-brasil-2026": "Guia de evento: o leitor sai com data, local e onde comprar ingresso, não com uma conta. Aponta para a calculadora da Classic no texto.",
   "outubro-rosa-exercicio-fisico": "Conscientização em saúde: a leitora sai com a recomendação de 150 minutos e a orientação de fazer o exame; uma calculadora aqui desviaria do ponto principal.",
   "brasileiros-ufc-332": "Hub dos brasileiros no UFC 332: a pessoa quer saber quem luta, contra quem e a que horas; sai com nomes e horários, sem conta pendente.",
   "corte-de-peso-ufc": "Explicativo sobre corte de peso e categorias do UFC: o leitor sai entendendo o processo e os riscos, não com uma conta; o link para déficit calórico cobre quem quer emagrecer.",
