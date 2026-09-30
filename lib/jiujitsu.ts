@@ -209,4 +209,4 @@ export const NOTA_SEGURANCA =
  * O `jiu-jitsu-emagrece` saiu do registro da calculadora de atividades: a
  * regra da casa é uma ferramenta por artigo.
  */
-export const ARTIGOS_COM_CALCULADORA_JIU: string[] = ["jiu-jitsu-emagrece", "treino-de-lutador-mma"];
+export const ARTIGOS_COM_CALCULADORA_JIU: string[] = ["jiu-jitsu-emagrece", "treino-de-lutador-mma", "academias-de-jiu-jitsu-em-barueri"];
