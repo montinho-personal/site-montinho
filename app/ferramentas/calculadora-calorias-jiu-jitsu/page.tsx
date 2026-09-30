@@ -21,6 +21,7 @@ import {
   kgPorMes,
   tabelaCenarios,
 } from "@/lib/jiujitsu";
+import { aula as aulaBoxe } from "@/lib/boxe";
 
 /**
  * A página da Calculadora de Calorias no Jiu-Jitsu.
@@ -36,9 +37,9 @@ import {
 const CAMINHO = "/ferramentas/calculadora-calorias-jiu-jitsu";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Calorias no Jiu-Jitsu: Aula e Rolas",
+  title: "Jiu-Jitsu Queima Quantas Calorias? Por Hora, Aula e Rola",
   description:
-    "Quantas calorias a sua aula de jiu-jitsu gasta, separando a técnica dos rolas, com o seu peso — e quanto cada rola a mais soma de verdade no treino.",
+    "Quantas calorias o jiu-jitsu queima por hora e por aula, com o seu peso: técnica, rolas e tabela de MET. E qual arte marcial gasta mais.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
     title: "Calculadora de Calorias no Jiu-Jitsu | Montinho Personal Trainer",
@@ -73,6 +74,12 @@ const TIPICA = calcula(PESO_PADRAO, 75, 4, ROLA_PADRAO, DESCANSO_PADRAO)!;
 const SO_TECNICA = calcula(PESO_PADRAO, 75, 0, ROLA_PADRAO, DESCANSO_PADRAO)!;
 const EXTRA = kcalPorRolaExtra(PESO_PADRAO, ROLA_PADRAO, DESCANSO_PADRAO);
 const TRES = kgPorMes(TIPICA, 3);
+const PESOS_HORA = [60, 70, 80, 90, 100] as const;
+const HORA_TECNICA = (p: number) => arredondaKcal(calcula(p, 60, 0, ROLA_PADRAO, DESCANSO_PADRAO)!.kcal);
+const HORA_TIPICA = (p: number) => arredondaKcal(calcula(p, 60, 3, ROLA_PADRAO, DESCANSO_PADRAO)!.kcal);
+const HORA_ROLA = (p: number) => arredondaKcal((MET_ROLA * 3.5 * p) / 200 * 60);
+const SACO_BOXE = aulaBoxe("saco");
+const SPAR_BOXE = aulaBoxe("sparring");
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kg = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -82,6 +89,22 @@ const faq: ItemFAQ[] = [
   {
     question: "Quantas calorias queima uma aula de jiu-jitsu?",
     answer: `Depende de quantos rolas. Para ${PESO_PADRAO} kg, uma aula de 60 minutos com muita técnica e um rola gasta cerca de ${mil(TAB[0].kcal70)} kcal; uma aula típica de 75 minutos com quatro rolas, cerca de ${mil(TAB[1].kcal70)}; uma aula de competição de 90 minutos com oito rolas, cerca de ${mil(TAB[2].kcal70)}.`,
+  },
+  {
+    question: "Quantas calorias o jiu-jitsu queima por hora?",
+    answer: `Para ${PESO_PADRAO} kg, uma hora de aula com três rolas gasta cerca de ${mil(HORA_TIPICA(PESO_PADRAO))} kcal; só técnica, cerca de ${mil(HORA_TECNICA(PESO_PADRAO))} kcal. Uma hora inteira rolando sem parar chegaria a ${mil(HORA_ROLA(PESO_PADRAO))} kcal, mas nenhuma aula real é assim. Os 1.000 kcal por hora que aparecem por aí exigem peso alto e rola o tempo todo.`,
+  },
+  {
+    question: "Jiu-jitsu queima muitas calorias?",
+    answer: `O rola, sim: com ${metF(MET_ROLA)} METs no Compêndio de Atividades Físicas, é uma das atividades mais intensas que existem. A aula inteira gasta menos, porque boa parte dela é técnica (${metF(MET_TECNICA)} METs) e pausa. O que mais aumenta o gasto é treinar mais vezes por semana.`,
+  },
+  {
+    question: "Qual é a arte marcial que mais queima calorias?",
+    answer: `Minuto a minuto, o rola do jiu-jitsu (${metF(MET_ROLA)} METs) fica acima do sparring de boxe (${metF(SPAR_BOXE.met)}) e do saco de pancada (${metF(SACO_BOXE.met)}), pelo Compêndio de Atividades Físicas. Numa aula real, com técnica e pausas, a diferença entre as lutas diminui: pesa mais quanto tempo você passa lutando e quantas vezes treina na semana.`,
+  },
+  {
+    question: "Qual é a tabela de MET do jiu-jitsu?",
+    answer: `No Compêndio de Atividades Físicas: técnica e drills ${metF(MET_TECNICA)} METs, rola (luta) ${metF(MET_ROLA)} METs e descanso ${metF(MET_DESCANSO)} METs. Gasto por minuto = MET × 3,5 × peso ÷ 200.`,
   },
   {
     question: "Quantas calorias gasta um rola de jiu-jitsu?",
@@ -166,6 +189,41 @@ export default function CalculadoraJiuJitsuPage() {
                 </tbody>
               </table>
             </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Jiu-jitsu: calorias por hora</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Uma hora de tatame, por peso. A coluna do rola sem parar é o teto teórico, não uma aula real:
+            </p>
+            <div className="overflow-x-auto mb-3">
+              <table className="w-full text-sm border-collapse">
+                <caption className="sr-only">Gasto estimado de jiu-jitsu em uma hora, por peso</caption>
+                <thead>
+                  <tr className="border-b border-white/20">
+                    <th scope="col" className={th}>Peso</th>
+                    <th scope="col" className={th}>Só técnica</th>
+                    <th scope="col" className={th}>Aula com 3 rolas</th>
+                    <th scope="col" className="text-left text-gray-400 font-medium py-2.5">Rola sem parar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {PESOS_HORA.map((p) => (
+                    <tr key={p} className="border-b border-white/10">
+                      <td className="text-gray-300 py-2.5 pr-4 tabular-nums">{p} kg</td>
+                      <td className="text-gray-300 py-2.5 pr-4 tabular-nums">≈ {mil(HORA_TECNICA(p))} kcal</td>
+                      <td className="text-white py-2.5 pr-4 font-medium tabular-nums">≈ {mil(HORA_TIPICA(p))} kcal</td>
+                      <td className="text-gray-300 py-2.5 tabular-nums">≈ {mil(HORA_ROLA(p))} kcal</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-gray-400 text-sm">
+              Tabela de MET (Compêndio de Atividades Físicas): técnica {metF(MET_TECNICA)}, rola {metF(MET_ROLA)}, descanso {metF(MET_DESCANSO)}.
+              Para comparar com outra luta, veja a{" "}
+              <Link href="/ferramentas/calculadora-calorias-boxe" className={ln}>Calculadora de Calorias do Boxe</Link>.
+            </p>
           </div>
 
           <div>
