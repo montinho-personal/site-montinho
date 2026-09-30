@@ -83,6 +83,7 @@ const CAPA = (slug: string, alt: string) =>
 const LINKS_CLUSTER: [string, string][] = [
   ["quem-ganhou-mr-olympia-2026", "Quem ganhou o Mr. Olympia 2026: todos os campeões"],
   ["resultado-classic-physique-mr-olympia-2026", "Resultado da Classic Physique, com Ramon Dino"],
+  ["por-que-ramon-dino-perdeu-mr-olympia-2026", "Por que Ramon Dino perdeu e qual a polêmica"],
   ["ramon-dino-mr-olympia-2026-horario", "Que horas Ramon Dino compete e onde assistir"],
   ["resultado-wellness-mr-olympia-2026", "Resultado da Wellness e as brasileiras"],
   ["resultado-mr-olympia-open-2026", "Resultado do Open: campeão e top 10"],
@@ -114,20 +115,23 @@ export const OLYMPIA_2026_POSTS: BlogPost[] = [
     category: "Fisiculturismo",
     tipo: "noticia",
     date: DATA,
-    updatedAt: "2026-09-26",
+    updatedAt: "2026-09-30",
     readTime: "4 min",
     author: AUTOR,
     tags: ["Mr. Olympia 2026", "Classic Physique", "Ramon Dino", "resultado", "fisiculturismo"],
-    content: `<blockquote><p><strong>Resultado definido: Niall Darwen (Reino Unido) é o campeão da Classic Physique 2026.</strong> Ramon Dino, campeão de 2025, ficou em 3º. Última verificação: 26 de setembro de 2026, 10h (Brasília).</p></blockquote>
+    content: `<blockquote><p><strong>Resultado definido: Niall Darwen (Reino Unido) é o campeão da Classic Physique 2026.</strong> Ramon Dino, campeão de 2025, ficou em 3º. Top 5 completo e declaração de Ramon adicionados em 30 de setembro de 2026.</p></blockquote>
 <p>A Classic Physique do Mr. Olympia 2026 foi decidida na <strong>noite de sexta-feira, 25 de setembro</strong>, em Las Vegas. <strong>Niall Darwen (Reino Unido)</strong> conquistou o primeiro título dele no Olympia, à frente de <strong>Mike Sommerfeld (Alemanha)</strong>, vice pelo segundo ano seguido, e de <strong>Ramon Dino (Brasil)</strong>, que defendia o título conquistado em 2025 e terminou em 3º. Foi a grande surpresa da noite: Darwen tinha sido 11º e depois 5º nas duas edições anteriores em que competiu no Olympia.</p>
 ${CAPA("resultado-classic-physique-mr-olympia-2026", "Capa: Niall Darwen campeão da Classic Physique do Mr. Olympia 2026, com Mike Sommerfeld em 2º e Ramon Dino em 3º")}
 
 <h2>Classificação da Classic Physique 2026</h2>
-<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Niall Darwen</strong></td><td>Reino Unido</td></tr><tr><td>2º</td><td>Mike Sommerfeld</td><td>Alemanha</td></tr><tr><td>3º</td><td>Ramon Dino</td><td>Brasil</td></tr><tr><td>4º</td><td>A confirmar</td><td>—</td></tr><tr><td>5º</td><td>A confirmar</td><td>—</td></tr></tbody></table>
-<p><em>O pódio foi confirmado por duas fontes independentes. O 4º e o 5º lugares entram quando também estiverem confirmados.</em></p>
+<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Niall Darwen</strong></td><td>Reino Unido</td></tr><tr><td>2º</td><td>Mike Sommerfeld</td><td>Alemanha</td></tr><tr><td>3º</td><td>Ramon Dino</td><td>Brasil</td></tr><tr><td>4º</td><td>Wesley Vissers</td><td>Holanda</td></tr><tr><td>5º</td><td>Terrence Ruffin</td><td>EUA</td></tr></tbody></table>
+<p><em>Classificação confirmada por duas fontes independentes (Fitness Volt e MiddleEasy). Pelo 3º lugar, Ramon recebeu US$ 20 mil de premiação; Darwen levou US$ 100 mil e Sommerfeld, US$ 40 mil (Lance! e Gazeta de Varginha).</em></p>
 
 <h2>Ramon Dino: em que posição ficou?</h2>
 <p><strong>Ramon Dino ficou em 3º lugar</strong> e perdeu o título que tinha conquistado em 2025. Ele passou na pesagem oficial da IFBB Pro League na quarta-feira, 23 de setembro, abaixo do limite de peso da altura dele, e chegou como atual campeão: em 2025 venceu a categoria à frente de Mike Sommerfeld (Alemanha) e Terrence Ruffin (EUA), na primeira edição sem Chris Bumstead, que se aposentou após o sexto título em 2024. Os números do atleta estão em <a href="/blog/ramon-dino-peso-altura">quanto pesa Ramon Dino: peso, altura e limite da Classic</a>.</p>
+
+<h2>O que Ramon disse depois do resultado</h2>
+<p>Ainda no sábado, 26/09, Ramon publicou nas redes: <em>"Hoje foi Top 3. Não foi o que buscávamos, mas assumimos a responsabilidade"</em>, e prometeu voltar em 2027 para corrigir o que precisa ser corrigido (CNN Brasil e Terra). O motivo da derrota, a hipótese de lesão levantada por analistas e a polêmica nas redes estão em <a href="/blog/por-que-ramon-dino-perdeu-mr-olympia-2026">por que Ramon Dino perdeu o Mr. Olympia 2026</a>.</p>
 
 <h2>Quem eram os favoritos antes da final</h2>
 <p>Antes do campeonato, pelas escalações e pelos resultados da temporada, os nomes mais citados para o primeiro chamado eram:</p>
@@ -164,6 +168,71 @@ ${FONTES}`,
       { question: "Em que posição Ramon Dino ficou?", answer: "Em 3º lugar. Ramon era o atual campeão, título de 2025, e ficou atrás de Niall Darwen e Mike Sommerfeld." },
       { question: "Quem ficou em segundo na Classic Physique 2026?", answer: "Mike Sommerfeld, da Alemanha, vice pelo segundo ano seguido." },
       { question: "Ramon Dino perdeu o título?", answer: "Sim. Ele venceu a Classic Physique em 2025, primeiro brasileiro campeão do Mr. Olympia, e em 2026 terminou em 3º." },
+      { question: "Quem ficou em 4º e 5º na Classic Physique 2026?", answer: "Wesley Vissers, da Holanda, em 4º, e Terrence Ruffin, dos EUA, em 5º." },
+      { question: "Quanto Ramon Dino ganhou pelo 3º lugar?", answer: "US$ 20 mil de premiação. O campeão Niall Darwen recebeu US$ 100 mil e Mike Sommerfeld, US$ 40 mil." },
+    ],
+  },
+
+  /* ───────────────── 1b. POR QUE RAMON DINO PERDEU ───────────────── */
+  {
+    slug: "por-que-ramon-dino-perdeu-mr-olympia-2026",
+    title: "Por que Ramon Dino perdeu o Mr. Olympia 2026? O que aconteceu e qual a polêmica",
+    metaTitle: "Por Que Ramon Dino Perdeu o Olympia 2026? O Que Aconteceu",
+    metaDescription:
+      "Ramon Dino perdeu para Niall Darwen e ficou em 3º no Mr. Olympia 2026. Os erros de pose, a hipótese de lesão, a polêmica nas redes e o que ele disse depois.",
+    excerpt:
+      "Ramon Dino perdeu o título da Classic Physique para o britânico Niall Darwen e terminou em 3º. O que explica a derrota, o que é fato e o que é hipótese, e a polêmica que veio depois.",
+    category: "Fisiculturismo",
+    tipo: "noticia",
+    date: "2026-09-30",
+    readTime: "5 min",
+    author: AUTOR,
+    tags: ["Ramon Dino", "Mr. Olympia 2026", "Classic Physique", "polêmica", "fisiculturismo"],
+    content: `<p><strong>Ramon Dino perdeu o título da Classic Physique para o britânico Niall Darwen</strong> e terminou em 3º no Mr. Olympia 2026, decidido na noite de 25 de setembro em Las Vegas. O alemão Mike Sommerfeld ficou em 2º. A explicação que aparece em quase toda a cobertura é a mesma: <strong>falhas na execução de poses</strong> nas comparações decisivas, diante de adversários que chegaram melhores.</p>
+
+<h2>Para quem Ramon Dino perdeu?</h2>
+<p>Para <strong>Niall Darwen (Reino Unido)</strong>, campeão, e <strong>Mike Sommerfeld (Alemanha)</strong>, vice pelo segundo ano seguido. Darwen foi a surpresa: tinha sido 11º no Olympia 2024 e 5º em 2025. Top 5 completo e premiação em <a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic Physique 2026</a>.</p>
+<table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td>Niall Darwen</td><td>Reino Unido</td></tr><tr><td>2º</td><td>Mike Sommerfeld</td><td>Alemanha</td></tr><tr><td>3º</td><td>Ramon Dino</td><td>Brasil</td></tr><tr><td>4º</td><td>Wesley Vissers</td><td>Holanda</td></tr><tr><td>5º</td><td>Terrence Ruffin</td><td>EUA</td></tr></tbody></table>
+
+<h2>O que aconteceu com Ramon Dino no Olympia?</h2>
+<p>Nas prévias da tarde de sexta, Ramon dividiu o centro do palco com Sommerfeld no primeiro chamado, a posição de quem disputa o título. A partir daí a apresentação caiu. Os veículos que cobriram o evento, como CNN Brasil, Terra e ge, registram <strong>erros visíveis na execução de poses</strong> e perda de terreno nas comparações diretas. Na final, Darwen passou os dois.</p>
+<p>Na Classic Physique, pose não é detalhe. Os juízes comparam os atletas lado a lado, e quem não consegue mostrar a contração de um músculo naquela pose perde o ponto, por melhor que seja o físico. Como a categoria tem teto de peso por altura (<a href="/blog/ramon-dino-peso-altura">Ramon pesou 102,5 kg para um limite de 103 kg</a>), ninguém ganha só por estar maior: ganha quem apresenta melhor o que tem.</p>
+
+<h2>Ramon Dino estava lesionado?</h2>
+<p><strong>Não há confirmação.</strong> A hipótese foi levantada por Renato Cariani, em análise publicada pela CNN Brasil: ele disse ter ficado incomodado com a perna esquerda de Ramon, que dava a sensação de não buscar contração, e que parecia haver alguma lesão atrapalhando. Julio Balestrin, na mesma análise, apontou outra causa possível: um atleta cansado, com muita dieta e muito treino, cujo físico estressado não respondeu à recarga final de carboidratos.</p>
+<p>São leituras de quem assistiu, não diagnóstico. Até 30 de setembro, Ramon não confirmou nem negou lesão. Se houver declaração dele ou da equipe, esta página é atualizada.</p>
+
+<h2>Qual a polêmica com Ramon Dino?</h2>
+<p>A polêmica não é de arbitragem. Não houve acusação séria de resultado roubado. O que houve foi uma onda de críticas nas redes depois do 3º lugar, e ela tem duas partes:</p>
+<ul>
+<li><strong>Antes do campeonato:</strong> uma semana antes do Olympia, Ramon respondeu a quem criticava o conteúdo repetitivo que ele postava na preparação. Disse que prefere uma rotina reservada, focada em treino, refeições, descanso e família, e que isso é uma escolha dele (Terra, Estado de Minas e Diário do Litoral).</li>
+<li><strong>Depois do resultado:</strong> a esposa dele, a atleta Vit Viana, saiu em defesa do marido. <em>"Muito fácil falar de fora"</em>, escreveu, e <em>"ninguém apaga o que você já fez"</em> (CNN Brasil, Terra e Correio).</li>
+</ul>
+
+<h2>O que Ramon disse depois</h2>
+<p>No sábado, 26/09, Ramon publicou: <em>"A gente se dedica, abre mão de muita coisa e sobe naquele palco buscando o melhor resultado. Hoje foi Top 3. Não foi o que buscávamos, mas assumimos a responsabilidade."</em> Ele disse que agora é hora de corrigir o que precisa ser corrigido e prometeu voltar em 2027 (CNN Brasil e Terra).</p>
+
+<h2>O que acontece com Ramon Dino agora?</h2>
+<p>Ele segue na Classic Physique e mira o Olympia 2027. Mesmo com a derrota, Ramon está no top 5 da categoria desde 2021: 5º, 2º, 2º, 4º, campeão em 2025 e 3º em 2026. A trajetória ano a ano está em <a href="/blog/ramon-dino-peso-altura">quanto pesa Ramon Dino</a>.</p>
+
+<h2>O que isso ensina para quem treina</h2>
+<p>O atual campeão do mundo oscilou de um ano para o outro, com a mesma genética e a mesma equipe. Evolução nunca é linha reta, nem no topo. Por isso comparar o seu shape com o de outra pessoa não faz sentido: cada um tem a própria genética, rotina e história, com altos e baixos. O que funciona é um treino que dê para seguir por anos, com aderência e progressão, corrigindo a rota quando algo não sai como o planejado. Se você quer montar o seu com acompanhamento, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+${ACOMPANHE("por-que-ramon-dino-perdeu-mr-olympia-2026")}
+
+<h2>Fontes</h2>
+<ul>
+<li>CNN Brasil: "Ramon Dino lamenta terceira colocação no Mr. Olympia e manda recado"; "Esposa de Ramon Dino sai em defesa do atleta"; "Cariani e Balestrin explicam 3º lugar de Ramon Dino no Mr. Olympia"</li>
+<li>Terra: "Ramon Dino lamenta 3º lugar no Mr. Olympia e promete voltar em 2027"; "Ramon Dino rebate críticas sobre sua rotina antes de defender título"</li>
+<li>ge: "Ramon Dino perde título do Mr. Olympia 2026 e termina em 3º"</li>
+<li>Fitness Volt e MiddleEasy: classificação completa da Classic Physique 2026</li>
+</ul>`,
+    faq: [
+      { question: "Por que Ramon Dino perdeu o Mr. Olympia 2026?", answer: "A cobertura aponta falhas na execução de poses nas comparações decisivas, diante de Niall Darwen e Mike Sommerfeld, que chegaram melhores. Analistas levantaram ainda fadiga da preparação e uma possível lesão na perna esquerda, que não foi confirmada." },
+      { question: "Para quem Ramon Dino perdeu?", answer: "Para o britânico Niall Darwen, campeão, e o alemão Mike Sommerfeld, vice. Ramon terminou em 3º." },
+      { question: "Ramon Dino estava lesionado no Olympia?", answer: "Não há confirmação. A hipótese é de Renato Cariani, que viu a perna esquerda sem contração. Ramon não confirmou nem negou até 30 de setembro de 2026." },
+      { question: "Qual a polêmica com Ramon Dino?", answer: "Críticas nas redes: antes do Olympia, ao conteúdo repetitivo da preparação; depois, ao 3º lugar. A esposa, Vit Viana, respondeu dizendo que é muito fácil falar de fora. Não houve acusação séria de erro de arbitragem." },
+      { question: "Ramon Dino vai competir em 2027?", answer: "Sim. Ele disse que vai corrigir o que precisa e voltar ao Olympia em 2027, na Classic Physique." },
     ],
   },
 
