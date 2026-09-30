@@ -153,3 +153,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `blog/academias-em-alphaville` (30/09) — base (GSC até 15/09): 107 impressões, 3 cliques, posição 11,1.
 - Título antes: "Academias em Alphaville: Guia Completo 2026" → depois: "Academias em Alphaville (Barueri): 24h, Wellhub e Premium 2026".
 - Seção nova com os dados verificados pelo Montinho em lib/academias/base.ts (24h, Wellhub, TotalPass, faixa de preço), desambiguação de outros Alphavilles, +5 FAQs do PAA.
+
+`blog/academias-em-barueri` (30/09) — base: 14 impressões, 0 cliques, posição 9,4 (o cluster é puxado por melhores-academias-de-barueri: 84 impr, pos 5,8).
+- Título antes: "Academias em Barueri: Guia Completo 2026" → depois: "Academias em Barueri: Centro, 24h, TotalPass e Preços 2026".
+- Seção-hub com links para as 14 páginas de academia de Barueri, +3 FAQs (TotalPass/Gympass, 24h, Centro). Sem dados de convênio de Barueri (não verificados).
