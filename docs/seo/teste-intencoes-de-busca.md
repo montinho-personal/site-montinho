@@ -269,3 +269,10 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 - Depois: "Calorias no Elíptico: 10, 20, 30 Minutos e 1 Hora (Calculadora)"
 - Prints "elíptico calorias": por minuto, 10/15/20/30/40 min, 1 hora, gastas, calculadora; PAA 30 min, perder barriga, elíptico x esteira, 20 min emagrece; relacionadas elíptico x bicicleta, benefícios abdômen, para que serve.
 - Tabela por tempo passa a ter 15 e 40 min; kcal por minuto no texto; FAQ: por minuto, 15, 40, 1 hora, 20 min emagrece, elíptico x bicicleta; "perder barriga" reescrito como pergunta real. Calculadora intocada.
+
+## 2026-09-30 — /ferramentas/calculadora-calorias-boxe
+- Antes: "Calculadora de Calorias no Boxe: Aula e Rounds"
+- Depois: "Boxe Queima Quantas Calorias? 30 Minutos, 1 Hora e Aula"
+- Prints "boxe calorias": treino/aula, 20 min, 30 min, 1 hora, por hora, sombra, queima/perde; PAA 1h de boxe, boxe x academia, qual luta queima mais, 500 kcal em 30 min; relacionadas musculação 1h, muay thai, luva/treino de boxe.
+- Seção nova "Boxe por tempo: 20, 30 minutos e 1 hora" (sombra/saco/sparring, 70 kg) com link para jiu-jitsu; FAQ: 1h, 30 min, 20 min, sombra, qual luta queima mais (rola x sparring), 500 kcal em 30 min. Calculadora intocada.
+- Pauta: muay thai (sem ferramenta), luva de boxe (fora do tema).
