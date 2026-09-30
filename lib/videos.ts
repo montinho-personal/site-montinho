@@ -57,7 +57,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
       { href: "/blog/como-tirar-medidas-corporais", nome: "Como tirar medidas corporais" },
     ],
     ferramenta: { href: "/ferramentas/simulador-emagrecimento", nome: "Simulador de emagrecimento" },
-    publicadoEm: "2026-10-01",
+    publicadoEm: "2026-09-30",
   },
   {
     id: "nrT-Fan_Nbg",
@@ -157,6 +157,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
       { href: "/blog/como-nao-desistir-da-dieta", nome: "Como não desistir da dieta" },
     ],
     ferramenta: { href: "/ferramentas/simulador-emagrecimento", nome: "Simulador de emagrecimento" },
+    publicadoEm: "2026-09-25",
   },
   {
     id: "xb1sP6z01-s",
