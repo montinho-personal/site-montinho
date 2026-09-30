@@ -25,12 +25,12 @@ import Compartilhar from "@/components/share/Compartilhar";
  * link, não com um parágrafo.
  */
 export const metadata: Metadata = {
-  title: "Calculadora de Proteína: Quantos Gramas por Dia",
+  title: "Calculadora de Proteína por Dia e por Peso (g/kg)",
   description:
-    "Digite seu peso e veja quantos gramas de proteína por dia, de 1,6 a 2,2 g/kg, com tabela pronta por peso e exemplos de alimentos. Grátis, sem cadastro.",
+    "Calcule quanto de proteína por dia pelo seu peso: 0,8 g/kg para quem não treina, 1,6 a 2,2 g/kg para hipertrofia. Tabela por peso, exemplo de 100 g no dia e gestantes. Grátis.",
   alternates: { canonical: `${SITE_URL}/ferramentas/calculadora-de-proteina` },
   openGraph: {
-    title: "Calculadora de Proteína: Quantos Gramas por Dia | Montinho",
+    title: "Calculadora de Proteína por Dia e por Peso (g/kg) | Montinho",
     description:
       "Quanto de proteína por dia? Digite seu peso e veja as referências de 1,6 a 2,2 g/kg, baseadas em evidência. Gratuito, sem cadastro.",
     url: `${SITE_URL}/ferramentas/calculadora-de-proteina`,
@@ -67,6 +67,22 @@ const PERGUNTAS: { q: string; a: string }[] = [
   {
     q: "Quantos gramas de proteína por dia eu preciso?",
     a: "Para quem treina musculação, a faixa usada como referência vai de 1,6 a 2,2 g por quilo de peso corporal por dia. Uma pessoa de 70 kg fica entre 112 g e 154 g por dia. A calculadora mostra os três valores porque a evidência aponta uma faixa, não um número único.",
+  },
+  {
+    q: "Como fazer o cálculo de proteína por kg?",
+    a: "Multiplique o seu peso em quilos pela quantidade de gramas por quilo. Com 70 kg e 1,6 g/kg, a conta é 70 × 1,6 = 112 g de proteína por dia. A calculadora faz isso nas três referências de uma vez.",
+  },
+  {
+    q: "Quanto de proteína por dia para quem não treina?",
+    a: "A recomendação oficial para adultos saudáveis é de 0,8 g por quilo de peso por dia (Dietary Reference Intakes, National Academies). Ela cobre a necessidade mínima de quem é sedentário. A faixa de 1,6 a 2,2 g/kg desta calculadora é para quem treina musculação.",
+  },
+  {
+    q: "Qual a recomendação de proteína para gestantes?",
+    a: "As Dietary Reference Intakes das National Academies indicam cerca de 1,1 g por quilo por dia na gestação, a partir do segundo trimestre. Gestante não deve usar a faixa de hipertrofia desta calculadora: a meta é definida com o obstetra ou o nutricionista que acompanha a gravidez.",
+  },
+  {
+    q: "Como conseguir 100 g de proteína por dia?",
+    a: "Com comida comum: 2 ovos e um iogurte no café, frango com feijão no almoço, queijo minas no lanche e carne com lentilha no jantar somam mais de 100 g, sem suplemento. O exemplo completo está na tabela desta página.",
   },
   {
     q: "A calculadora serve para quem quer emagrecer?",
@@ -322,6 +338,31 @@ export default function CalculadoraProteinaPage() {
               adicional claro para ganho de massa magra, com intervalo de
               confiança até cerca de 2,2 g/kg. Por isso as três referências são
               uma faixa, e não três degraus de resultado.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>
+              Quem não treina, gestantes e proteína por alimento
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              A faixa de 1,6 a 2,2 g/kg é para quem treina. Para adultos
+              saudáveis sedentários, a referência oficial é{" "}
+              <strong className="text-white">0,8 g/kg por dia</strong>; na
+              gestação, cerca de <strong className="text-white">1,1 g/kg por dia</strong>{" "}
+              a partir do segundo trimestre, segundo as{" "}
+              <a href="https://nap.nationalacademies.org/catalog/10490" target="_blank" rel="noopener noreferrer" className={ln}>
+                Dietary Reference Intakes das National Academies
+              </a>
+              . Gestante define a meta com o obstetra ou nutricionista, não com
+              uma calculadora de hipertrofia.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              Para saber quanto de proteína tem cada alimento, use a{" "}
+              <Link href="/alimentos" className={ln}>tabela de alimentos</Link>
+              ; e se a comida não fechar a conta, a{" "}
+              <Link href="/ferramentas/calculadora-whey" className={ln}>calculadora de whey</Link>{" "}
+              mostra quanto do suplemento completa o dia.
             </p>
           </div>
 
