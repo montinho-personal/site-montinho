@@ -81087,16 +81087,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "academia-perto-do-centro-comercial-alphaville",
     title: "Academia Perto do Centro Comercial Alphaville",
-    metaTitle: "Academia Perto do Centro Comercial Alphaville",
-    metaDescription: "Trabalha no Centro Comercial Alphaville? Veja as academias na região, como treinar no expediente e evoluir com método. Agende uma avaliação!",
+    metaTitle: "Academia Perto do Centro Comercial Alphaville: Endereços e 24h",
+    metaDescription: "Academias perto do Centro Comercial e Empresarial de Alphaville: Ironberg 24h, Gaviões, SkyFit, Bluefit, Smart Fit e Bodytech, com endereços. Treino no almoço que funciona.",
     excerpt: "Guia de academias na região do Centro Comercial Alphaville: opções para executivos e moradores, treino no horário de almoço e o caminho para resultado real.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-09-30",
     readTime: "8 min",
     author: "Montinho",
     tags: ["academia perto do centro comercial alphaville","academia em alphaville","musculação alphaville","treino no almoço","academia alameda rio negro"],
     faqSchema: [
+      { question: "Quais academias ficam no Centro Industrial de Alphaville?", answer: "Entre outras: Ironberg (Estrada Aldeinha, 181), Gaviões (Rua Juruá, 253), SkyFit (Av. Juruá), Bluefit (Al. Amazonas, 388), Smart Fit Sodimac (Al. Araguaia, 1801) e Bodytech Iguatemi (Al. Rio Negro, 111)." },
+      { question: "Tem academia 24 horas perto do Centro Comercial Alphaville?", answer: "Sim, a Ironberg, na Estrada Aldeinha, 181, funciona 24 horas." },
       { question: "Tem academia perto do Centro Comercial Alphaville?", answer: "Sim. O centro comercial e o entorno da Alameda Rio Negro formam o polo com maior densidade de academias da região, de redes econômicas a premium. Confirme unidades e horários nos sites oficiais." },
       { question: "Dá para treinar no horário de almoço em Alphaville?", answer: "Sim, é um hábito consolidado entre quem trabalha na região. Um treino de 45 a 60 minutos bem planejado cabe no intervalo, com tempo para banho." },
       { question: "Qual perfil de academia predomina no centro comercial de Alphaville?", answer: "Há de tudo: redes econômicas, intermediárias, opções premium e estúdios boutique, refletindo o público de executivos e moradores de condomínios." },
@@ -81116,6 +81118,16 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Este guia mostra como virar o jogo: <strong>quais perfis de academia existem na região do centro comercial</strong>, como encaixar o treino no expediente e o ingrediente que transforma frequência em resultado.</p>
 <h2>Resposta direta</h2>
 <p>O <strong>Centro Comercial Alphaville</strong> e o entorno — <strong>Alameda Rio Negro</strong>, <strong>Centro Industrial e Empresarial de Alphaville</strong> e a região do <strong>Iguatemi Alphaville</strong> — formam o polo com maior densidade de academias da região: redes econômicas (como a Smart Fit), intermediárias (a Panobianco tem perfil mais completo), opções premium e estúdios boutique. Consulte o site oficial de cada rede para unidades, planos e horários atualizados.</p>
+<h2>Academias no Centro Industrial e Empresarial de Alphaville: endereços</h2>
+<ul>
+<li><strong>Ironberg</strong> — Estrada Aldeinha, 181, com acesso pela Av. Dr. Dib Sauaia Neto. Funciona 24 horas. <a href="/blog/ironberg-alphaville">Ver análise</a>.</li>
+<li><strong>Gaviões</strong> — Rua Juruá, 253, segundo o site oficial: musculação, artes marciais, danças e sala de bike. <a href="/blog/academia-gavioes-alphaville">Ver análise</a>.</li>
+<li><strong>SkyFit</strong> — Avenida Juruá (307 no site oficial; 343 no Google Maps). Aceita Wellhub e TotalPass. <a href="/blog/skyfit-alphaville">Ver análise</a>.</li>
+<li><strong>Bluefit</strong> — Alameda Amazonas, 388. Aberta das 5h à meia-noite nos dias úteis. <a href="/blog/bluefit-alphaville">Ver análise</a>.</li>
+<li><strong>Smart Fit Sodimac</strong> — Alameda Araguaia, 1801, no estacionamento do Sodimac. <a href="/blog/smart-fit-alphaville">Ver todas as unidades da Smart Fit</a>.</li>
+<li><strong>Bodytech Iguatemi</strong> — Alameda Rio Negro, 111, no Shopping Iguatemi Alphaville. <a href="/blog/bodytech-alphaville">Ver análise</a>.</li>
+</ul>
+<p>Precisa de academia 24 horas perto do trabalho? Veja <a href="/blog/academia-24-horas-alphaville">academia 24 horas em Alphaville</a>. Horários e planos mudam: confirme com a unidade antes de ir.</p>
 <h2>O mapa mental de quem trabalha na região</h2>
 <p>Quem está no centro comercial tem três janelas reais de treino:</p>
 <ul>
