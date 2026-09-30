@@ -24875,15 +24875,20 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "personal-trainer-granja-viana",
     title: "Personal Trainer Granja Viana: Treinamento Personalizado Perto de Você",
-    metaTitle: "Personal Trainer Granja Viana | Treinamento Personalizado",
-    metaDescription: "Personal trainer em Granja Viana com atendimento presencial e online. Musculação, emagrecimento, hipertrofia e saúde com acompanhamento especializado.",
+    metaTitle: "Personal Trainer na Granja Viana (Cotia): Planos e Valores | Montinho",
+    metaDescription: "Personal trainer na Granja Viana, em Cotia e Carapicuíba: atendimento presencial em casa, condomínio ou academia, e online. Veja os tipos de plano e fale no WhatsApp.",
     excerpt: "Procurando personal trainer em Granja Viana? Acompanhamento especializado presencial e online para emagrecimento, hipertrofia e saúde.",
     category: "Treinamento",
     date: "2026-06-27",
+    updatedAt: "2026-09-30",
     readTime: "5 min",
     author: "Montinho",
     tags: ["personal trainer Granja Viana", "personal trainer Cotia", "treinamento personalizado", "Granja Viana"],
     faqSchema: [
+      { question: "Qual o valor de 1 hora de personal trainer na Granja Viana?", answer: "Depende da frequência semanal, do local do treino e do tipo de plano: pacote por frequência, pacote flexível ou consultoria online. Fale pelo WhatsApp para conhecer os planos." },
+      { question: "Quanto custa um personal trainer 3 vezes por semana?", answer: "No pacote por frequência semanal, 3 treinos por semana têm valor por sessão menor que 2. O valor final depende do local do treino; peça os planos pelo WhatsApp." },
+      { question: "Vale a pena pagar um personal trainer?", answer: "Vale quando você precisa de um plano que caiba na sua rotina, técnica corrigida e alguém cobrando a progressão. Para quem já treina sozinho com constância, a consultoria online costuma bastar." },
+      { question: "Tem personal trainer em Cotia na Granja Viana?", answer: "Sim. O atendimento presencial cobre a Granja Viana dos lados de Cotia e de Carapicuíba, com opção de consultoria online." },
       { question: "O que faz um personal trainer?", answer: "Um personal trainer avalia o condicionamento físico, define objetivos realistas, prescreve e supervisiona treinos individualizados e acompanha a evolução ao longo do tempo. O acompanhamento profissional aumenta significativamente a adesão e os resultados." },
       { question: "Quantas sessões por semana com personal trainer são ideais?", answer: "Para iniciantes, 3 sessões semanais com personal trainer são ideais para aprender a técnica correta e criar consistência. Alunos mais avançados podem treinar com frequência maior, usando o personal para sessões-chave e monitoramento da periodização." },
       { question: "Personal trainer presencial ou online: qual escolher?", answer: "O personal presencial oferece correção de execução em tempo real, ideal para iniciantes e quem tem histórico de lesões. O online é mais flexível e acessível. A escolha depende do objetivo, experiência prévia e disponibilidade de horário." },
@@ -24923,6 +24928,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><strong>Reabilitação e retorno ao treino:</strong> pós-cirurgia ou pós-afastamento prolongado</li>
 </ul>
 
+<h2>Quanto custa um personal trainer na Granja Viana?</h2>
+<p>O valor da mensalidade depende da frequência semanal, do local do treino (casa, condomínio ou academia) e do tipo de plano: <strong>pacote por frequência semanal</strong> (de 2 a 5 treinos, com valor por sessão menor quanto mais treinos), <strong>pacote flexível</strong> (aulas para usar no ritmo possível) e <strong>consultoria online</strong>, o formato mais acessível. Por isso não existe um "valor de 1 hora" que sirva para todo mundo: o plano é montado para a sua rotina. <a href="/contato">Fale comigo pelo WhatsApp</a> para conhecer os planos.</p>
+<h2>Granja Viana, Cotia e Carapicuíba</h2>
+<p>A Granja Viana se divide entre Cotia e Carapicuíba, e o atendimento presencial cobre os dois lados, além da consultoria online para quem viaja ou tem horário apertado. Quem circula também por Alphaville e Tamboré pode ver a <a href="/personal-trainer-alphaville">página de personal trainer em Alphaville</a>.</p>
 <h2>Quem é o Montinho</h2>
 <p>Personal trainer com atuação na região de Alphaville, Tamboré, Barueri, Santana de Parnaíba e Grande São Paulo Oeste. Especialização em composição corporal, protocolos para usuários de GLP-1 e emagrecimento sustentável. Atendimento presencial e online para moradores de Granja Viana e Cotia.</p>
 
