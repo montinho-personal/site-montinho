@@ -157,3 +157,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `blog/academias-em-barueri` (30/09) — base: 14 impressões, 0 cliques, posição 9,4 (o cluster é puxado por melhores-academias-de-barueri: 84 impr, pos 5,8).
 - Título antes: "Academias em Barueri: Guia Completo 2026" → depois: "Academias em Barueri: Centro, 24h, TotalPass e Preços 2026".
 - Seção-hub com links para as 14 páginas de academia de Barueri, +3 FAQs (TotalPass/Gympass, 24h, Centro). Sem dados de convênio de Barueri (não verificados).
+
+`blog/academias-em-santana-de-parnaiba` (30/09) — base: 87 impressões, 2 cliques, posição 8,5.
+- Título: "Academias em Santana de Parnaíba: Guia 2026" → "Academias em Santana de Parnaíba: Centro, Fazendinha e Preços 2026".
+- Hub com links para as páginas de academia da cidade + Fábrica Premium, crianças/adolescentes, "de graça", desambiguação com o bairro de Santana; +3 FAQs.
