@@ -81686,16 +81686,21 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "bluefit-alphaville",
     title: "Bluefit Alphaville: Análise Completa",
-    metaTitle: "Bluefit Alphaville: Vale a Pena? Estrutura, Lotação e Para Quem É",
-    metaDescription: "Bluefit em Alphaville: estrutura, horário de pico, o que o plano não inclui e para quem compensa. O checklist para visitar a unidade antes de assinar.",
+    metaTitle: "Bluefit Alphaville: Endereço, Horário, Gympass e Vale a Pena?",
+    metaDescription: "Bluefit Alphaville: Alameda Amazonas, 388, horário (5h à meia-noite), telefone, aceita Gympass/Wellhub, TotalPass não. Prós, contras e para quem vale.",
     excerpt: "A Bluefit aposta no modelo econômico com estrutura ampla. Veja para quem ela é indicada em Alphaville e como tirar resultado de verdade da mensalidade.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-27",
+    updatedAt: "2026-09-30",
     readTime: "8 min",
     author: "Montinho",
     tags: ["bluefit","academia em alphaville","musculação","low cost","tamboré"],
     faqSchema: [
+      { question: "Onde fica a Bluefit Alphaville?", answer: "Na Alameda Amazonas, 388, Alphaville Centro Industrial, Barueri (CEP 06454-070)." },
+      { question: "Qual o horário da Bluefit Alphaville?", answer: "Segunda a sexta das 5h à meia-noite; sábado e domingo das 7h às 19h." },
+      { question: "A Bluefit Alphaville aceita Gympass ou TotalPass?", answer: "Aceita Wellhub (antigo Gympass). TotalPass não é aceito." },
+      { question: "Qual o telefone da Bluefit Alphaville?", answer: "O telefone/WhatsApp do perfil da unidade no Google é (11) 94041-1693." },
+      { question: "Onde fica a Bluefit em Barueri?", answer: "Na Av. Trindade, 344, loja 2023, Bethaville I, Barueri, segundo o site oficial da Bluefit." },
       { question: "A Bluefit de Alphaville vale a pena?", answer: "Vale para quem busca mensalidade econômica e estrutura de musculação e cardio, com autonomia para treinar. Quem precisa de acompanhamento individual deve prever orientação à parte, pois o modelo low cost não a inclui." },
       { question: "Quanto custa a Bluefit em Alphaville?", answer: "A Bluefit tem posicionamento econômico, mas valores e condições variam por unidade e por plano, e mudam com frequência. Consulte o site oficial ou a unidade para valores atualizados." },
       { question: "Qual a diferença entre Bluefit e Smart Fit?", answer: "Ambas operam no modelo low cost nacional, com propostas parecidas: estrutura essencial e preço acessível. As diferenças práticas estão em detalhes de plano, unidades e serviços de cada localidade — compare visitando as duas." },
@@ -81720,6 +81725,16 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>A Bluefit cresceu pelo Brasil com a mesma lógica das grandes redes econômicas: <strong>espaços amplos, equipamentos para o essencial e preço que cabe no orçamento</strong>. Serviços adicionais existem conforme o plano e a unidade — e é por isso que a regra de ouro se aplica: consulte a unidade ou o site oficial antes de assinar.</p>
 <p>Para o público da região — quem trabalha no <strong>Centro Industrial e Empresarial de Alphaville</strong>, mora no <strong>Tamboré</strong> ou circula pelo eixo <strong>Shopping Tamboré–Iguatemi Alphaville</strong> — o apelo é claro: treinar bem sem transformar a academia em item de luxo do orçamento familiar.</p>
 <p><strong>Soundbite: mensalidade econômica só é economia se você aparecer.</strong> O plano mais barato do mundo sai caro quando vira débito automático de culpa.</p>
+<h2>Bluefit Alphaville: endereço, horário, telefone, Wellhub e TotalPass</h2>
+<ul>
+<li><strong>Endereço:</strong> Alameda Amazonas, 388, Alphaville Centro Industrial, Barueri (CEP 06454-070).</li>
+<li><strong>Horário:</strong> segunda a sexta das 5h à meia-noite; sábado e domingo das 7h às 19h. Não é 24 horas.</li>
+<li><strong>Telefone/WhatsApp:</strong> (11) 94041-1693.</li>
+<li><strong>Wellhub (antigo Gympass):</strong> aceita. <strong>TotalPass:</strong> não aceita.</li>
+<li><strong>Estacionamento:</strong> tem. <strong>Personal externo:</strong> permitido, com as regras da unidade.</li>
+</ul>
+<p>Endereço, horário e telefone são os do perfil da unidade no Google Maps (consulta de 30/09/2026); Wellhub, TotalPass, estacionamento e personal externo foram verificados pelo Montinho, que atende alunos na região. A mensalidade muda por plano e campanha: confirme no site oficial ou na unidade.</p>
+<p><strong>Bluefit em Barueri:</strong> a outra unidade da região fica na Av. Trindade, 344, loja 2023, Bethaville I, segundo o site oficial da rede. Veja a análise da <a href="/blog/bluefit-barueri">Bluefit Barueri</a>.</p>
 <h2>Prós e contras por perfil de aluno</h2>
 <h3>Aluno experiente</h3>
 <ul>
