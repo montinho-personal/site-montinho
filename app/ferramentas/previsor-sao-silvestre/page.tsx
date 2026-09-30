@@ -15,9 +15,9 @@ import { EXPOENTE_RIEGEL, MARGEM_PERCURSO, URL_PREVISOR, fmtFaixa, prever } from
 const CAMINHO = URL_PREVISOR;
 
 export const metadata: Metadata = {
-  title: "Previsor São Silvestre 2026: Qual Seu Tempo nos 15 km?",
+  title: "Previsor São Silvestre 2026: Tempo Médio e Seu Tempo nos 15 km",
   description:
-    "Informe seu tempo nos 5 km, 10 km ou meia e veja o tempo provável nos 15 km da São Silvestre 2026, com a subida da Brigadeiro e o que muda até 31/12.",
+    "Seu tempo provável nos 15 km da São Silvestre 2026 pelo seu 5 km, 10 km ou meia. Tempo médio, pace, recorde, tempo limite e tempo dos vencedores.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
     title: "Previsor da São Silvestre | Montinho Personal Trainer",
@@ -48,12 +48,40 @@ const breadcrumbSchema = {
 
 const EX = [25, 30, 35].map((m) => ({ m, p: prever(m * 60, "5k") }));
 const EX10 = prever(60 * 60, "10k");
+/** Tempo total nos 15 km → pace por km. */
+const TEMPOS_PACE = [70, 80, 90, 105, 120, 150] as const;
+const hmin = (m: number) => `${Math.floor(m / 60)}h${String(m % 60).padStart(2, "0")}`;
+const pace15 = (m: number) => { const s = Math.round((m * 60) / 15); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}/km`; };
 const pct = (x: number) => `${Math.round(x * 100)}%`;
 
 const faq: ItemFAQ[] = [
   {
     question: "Qual o tempo médio para correr a São Silvestre?",
     answer: `Depende do seu ritmo hoje. Quem corre 5 km em 30 minutos tende a fechar os 15 km entre ${fmtFaixa(EX[1].p.faixa)}; quem faz 10 km em 1 hora, entre ${fmtFaixa(EX10.faixa)}. O previsor faz a conta com o seu tempo.`,
+  },
+  {
+    question: "Qual foi o tempo recorde da São Silvestre?",
+    answer: "O recorde masculino nos 15 km é de 42min59s, do queniano Kibiwott Kandie, em 2019. O recorde feminino aparece com valores diferentes em fontes diferentes, por isso não publicamos um número até confirmar na fonte oficial.",
+  },
+  {
+    question: "Qual o tempo do vencedor da São Silvestre?",
+    answer: "Na 100ª edição, em 2025, o etíope Muse Gizachew venceu em 44min28s, e a tanzaniana Sisilia Panga, em 51min08s. Para o pelotão geral, o tempo típico fica entre 1h10 e 2h.",
+  },
+  {
+    question: "Qual o tempo limite da São Silvestre?",
+    answer: "No regulamento de 2025, o tempo máximo de prova é de 2h30, contado a partir da largada da última onda. Confira o regulamento de 2026 quando for publicado.",
+  },
+  {
+    question: "Quantos km tem a São Silvestre?",
+    answer: "15 km, com largada e chegada na Avenida Paulista, em pontos diferentes, e a subida da Brigadeiro Luís Antônio no fim.",
+  },
+  {
+    question: "A São Silvestre tem 42 km?",
+    answer: "Não. A São Silvestre tem 15 km. Os 42 km são a distância da maratona, como a Maratona Internacional de São Paulo, que é outra prova.",
+  },
+  {
+    question: "Qual pace para fazer a São Silvestre em 1h30?",
+    answer: `Cerca de ${pace15(90)} de média. Para 1h10, ${pace15(70)}; para 2h, ${pace15(120)}. Como a subida da Brigadeiro vem no fim, vale sair um pouco mais devagar do que essa média.`,
   },
   {
     question: "Como o previsor calcula o tempo nos 15 km?",
@@ -122,6 +150,31 @@ export default function PrevisorSaoSilvestrePage() {
                 ))}
               </tbody>
             </table>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Tempo médio e pace na São Silvestre</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              A maior parte do pelotão geral termina os 15 km entre 1h10 e 2h. O pace médio que cada tempo exige:
+            </p>
+            <table className="w-full text-sm mb-4">
+              <caption className="sr-only">Tempo final na São Silvestre e pace médio por quilômetro</caption>
+              <thead><tr className="border-b border-white/15"><th className={th}>Tempo final</th><th className={th}>Pace médio</th></tr></thead>
+              <tbody>
+                {TEMPOS_PACE.map((m) => (
+                  <tr key={m} className="border-b border-white/10"><td className="py-2.5 pr-4 text-gray-300">{hmin(m)}</td><td className="py-2.5 pr-4 text-white">{pace15(m)}</td></tr>
+                ))}
+              </tbody>
+            </table>
+            <ul className="space-y-2 text-gray-300 leading-relaxed">
+              <li><strong className="text-white">Recorde:</strong> 42min59s, de Kibiwott Kandie (Quênia), em 2019.</li>
+              <li><strong className="text-white">Vencedores de 2025:</strong> Muse Gizachew (Etiópia), 44min28s, e Sisilia Panga (Tanzânia), 51min08s.</li>
+              <li><strong className="text-white">Tempo limite:</strong> 2h30 a partir da largada da última onda, pelo regulamento de 2025.</li>
+            </ul>
+            <p className="text-gray-400 text-sm mt-3">
+              Fontes: regulamento oficial da 100ª São Silvestre; Gazeta Esportiva e Wikipédia (recorde); CNN Brasil e Olympics.com (2025).
+              Ruas e trechos no <Link href="/blog/percurso-sao-silvestre" className={ln}>percurso da São Silvestre</Link>.
+            </p>
           </div>
 
           <div>
