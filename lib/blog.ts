@@ -83025,6 +83025,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
+<p><strong>Fábrica Premium:</strong> a rede Fábrica de Monstros, de Léo Stronda, também tem em Alphaville a Fábrica Premium, com valet, rooftop e crioterapia — veja <a href="/blog/fabrica-premium-alphaville">horário, endereço e estrutura da Fábrica Premium Alphaville</a>.</p>
+
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/melhor-academia-de-alphaville">Qual é a melhor academia de Alphaville?</a></li>

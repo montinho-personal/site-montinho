@@ -5,7 +5,9 @@ import type { BlogPost } from "./blog";
  * horário, endereço, telefone, serviços), do perfil no Google e do Instagram
  * oficial; café fit e loja de suplementos confirmados pelo Montinho, que
  * atende na região. Preço e convênios: não publicados pela academia.
- * Relação com a Fábrica de Monstros NÃO confirmada.
+ * Dono/rede: Instagram oficial (máquinas "Monster Machine", exclusivas da rede
+ * Fábrica de Monstros, criada por Léo Stronda) + Wikipedia (Léo Stronda /
+ * Fábrica de Monstros) + confirmação do Montinho.
  */
 export const FABRICA_PREMIUM_POSTS: BlogPost[] = [
   {
@@ -21,7 +23,7 @@ export const FABRICA_PREMIUM_POSTS: BlogPost[] = [
     updatedAt: "2026-09-30",
     readTime: "5 min",
     author: "Montinho Personal Trainer",
-    tags: ["Fábrica Premium", "academia Alphaville", "academia premium", "Santana de Parnaíba"],
+    tags: ["Fábrica Premium", "Léo Stronda", "Fábrica de Monstros", "academia Alphaville", "academia premium", "Santana de Parnaíba"],
     content: `<blockquote><p>Informações conferidas em 30 de setembro de 2026 no <a href="https://fabricapremiumalphaville.com.br/" target="_blank" rel="noopener noreferrer">site oficial</a>, no perfil da academia no Google e no Instagram <a href="https://www.instagram.com/fabricapremiumalphavillesp/" target="_blank" rel="noopener noreferrer">@fabricapremiumalphavillesp</a>. Horário e serviços podem mudar: confirme antes de ir.</p></blockquote>
 
 <h2>Resumo da Fábrica Premium Alphaville</h2>
@@ -40,6 +42,9 @@ export const FABRICA_PREMIUM_POSTS: BlogPost[] = [
 <li><strong>Saúde:</strong> acompanhamento com nutricionista e nutrólogo;</li>
 <li><strong>Extras:</strong> salão de beleza, café fit no rooftop e loja de suplementos.</li>
 </ul>
+
+<h2>Quem é o dono da Fábrica Premium?</h2>
+<p>A Fábrica Premium faz parte da rede <strong>Fábrica de Monstros</strong>, criada pelo fisiculturista e influenciador <strong>Léo Stronda</strong> — ex-vocalista do Bonde da Stronda e dono do canal "Fábrica de Monstros" no YouTube. A unidade de Alphaville usa as máquinas <strong>Monster Machine</strong>, exclusivas da rede, além dos equipamentos Real Leader. Veja também a nossa análise da <a href="/blog/fabrica-de-monstros-alphaville">Fábrica de Monstros Alphaville</a>.</p>
 
 <h2>Fábrica Premium abre domingo? Qual o horário?</h2>
 <p>Abre. De segunda a sexta funciona das 6h às 23h; aos sábados, das 8h às 16h; e aos domingos e feriados, das 8h às 14h. Não é 24 horas — para isso, veja <a href="/blog/academia-24-horas-alphaville">academia 24 horas em Alphaville</a>.</p>
@@ -67,6 +72,7 @@ export const FABRICA_PREMIUM_POSTS: BlogPost[] = [
       { question: "Onde fica a Fábrica Premium Alphaville?", answer: "Na Estrada da Bela Vista, 1332, em Alphaville, Santana de Parnaíba (SP)." },
       { question: "Qual é a mensalidade da Fábrica Premium Alphaville?", answer: "A academia não publica tabela de preço nos canais oficiais conferidos. Mensalidade, planos e diária são informados pelo site oficial ou pela recepção. Ela está na faixa premium de Alphaville." },
       { question: "O que é a Fábrica Premium?", answer: "Uma academia premium em Alphaville, Santana de Parnaíba, com musculação Real Leader, bike indoor, rooftop com pista de corrida, crioterapia, massagem, nutricionista e nutrólogo, salão de beleza, café fit, loja de suplementos, valet e concierge." },
+      { question: "Quem é o dono da Fábrica Premium?", answer: "A Fábrica Premium é da rede Fábrica de Monstros, criada pelo fisiculturista e influenciador Léo Stronda. A unidade de Alphaville usa as máquinas Monster Machine, exclusivas da rede." },
       { question: "A Fábrica Premium tem diária?", answer: "Consulte a recepção ou o site oficial: a academia não divulga valor de diária nos canais públicos conferidos." },
     ],
   },
