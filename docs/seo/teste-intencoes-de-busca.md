@@ -165,3 +165,10 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `blog/academias-perto-de-alphaville` (30/09) — base: 86 impressões, 1 clique, posição 21,8.
 - Título: "Academias Perto de Alphaville: Melhores Opções" → "Academia Perto de Mim em Alphaville: Opções por Região".
 - Seção "por região" (Industrial, Iguatemi, Centro Comercial, Santana de Parnaíba, Tamboré, Aldeia, Castelo/estação) com links para 12 páginas; +3 FAQs. Feito sem print novo (intenção "perto de mim" veio dos prints de Barueri e Santana de Parnaíba).
+
+## Ferramentas — rodada 1 (30/09/2026)
+
+`/ferramentas/calculadora-de-proteina` — sem base do GSC (conector expirado; snapshot local só cobre SEO local).
+- Título antes: "Calculadora de Proteína: Quantos Gramas por Dia" → depois: "Calculadora de Proteína por Dia e por Peso (g/kg)".
+- Seção nova: quem não treina (0,8 g/kg), gestantes (~1,1 g/kg, DRI/National Academies), links para /alimentos (por alimento) e calculadora de whey. +4 FAQs do PAA (cálculo por kg, sedentário, gestantes, 100 g/dia).
+- Fora: marcas (Herbalife, Growth, Nestlé, Piracanjuba). "App" não se aplica.
