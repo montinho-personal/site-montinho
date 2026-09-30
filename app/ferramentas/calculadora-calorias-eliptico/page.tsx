@@ -24,6 +24,7 @@ import {
   tabelaPorPeso,
   tabelaPorTempo,
 } from "@/lib/eliptico";
+import { compara as comparaBicicleta } from "@/lib/bicicleta";
 
 /**
  * A página da Calculadora de Calorias do Elíptico.
@@ -39,9 +40,9 @@ import {
 const CAMINHO = "/ferramentas/calculadora-calorias-eliptico";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Calorias do Elíptico: Por Tempo e Peso",
+  title: "Calorias no Elíptico: 10, 20, 30 Minutos e 1 Hora (Calculadora)",
   description:
-    "Calcule quantas calorias o elíptico gasta em 10, 20, 30 ou 60 minutos com o seu peso e o seu esforço — e compare com o visor do aparelho e a esteira.",
+    "Quantas calorias o elíptico queima por minuto, em 10, 20, 30, 40 minutos e 1 hora, com o seu peso. Compare com esteira e bicicleta e veja se perde barriga.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
     title: "Calculadora de Calorias do Elíptico | Montinho Personal Trainer",
@@ -80,6 +81,8 @@ const CMP = comparaComEsteira(30, PESO_PADRAO);
 const META_300 = deKcal(300, PESO_PADRAO, MOD.met);
 const UM_QUILO = simulacaoUmQuilo(PESO_PADRAO, MOD.met);
 const POR_MIN = EX(1).kcal;
+const BIKE = comparaBicicleta(PESO_PADRAO, 30);
+const BIKE_ERGO = BIKE.find((l) => l.id === "ergometrica")!;
 const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDigits: d });
 
 const faq: ItemFAQ[] = [
@@ -94,6 +97,30 @@ const faq: ItemFAQ[] = [
   {
     question: "30 minutos de elíptico queima quantas calorias?",
     answer: `Cerca de ${arredondaKcal(EX(30).kcal)} kcal em esforço moderado e ${arredondaKcal(EX(30, VIG.met).kcal)} kcal em vigoroso, para quem pesa ${PESO_PADRAO} kg.`,
+  },
+  {
+    question: "Quantas calorias o elíptico queima por minuto?",
+    answer: `Para ${PESO_PADRAO} kg, cerca de ${fmt(POR_MIN)} kcal por minuto em esforço moderado e ${fmt(EX(1, VIG.met).kcal)} kcal em vigoroso. O número sobe com o peso: quem pesa mais gasta mais no mesmo ritmo.`,
+  },
+  {
+    question: "15 minutos de elíptico queima quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg, cerca de ${arredondaKcal(EX(15).kcal)} kcal em esforço moderado e ${arredondaKcal(EX(15, VIG.met).kcal)} kcal em vigoroso.`,
+  },
+  {
+    question: "40 minutos de elíptico queima quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg, cerca de ${arredondaKcal(EX(40).kcal)} kcal em esforço moderado e ${arredondaKcal(EX(40, VIG.met).kcal)} kcal em vigoroso.`,
+  },
+  {
+    question: "1 hora de elíptico queima quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg, cerca de ${arredondaKcal(EX(60).kcal)} kcal em esforço moderado e ${arredondaKcal(EX(60, VIG.met).kcal)} kcal em vigoroso. Com 90 kg, o moderado passa de ${arredondaKcal(deTempo(60, 90, MOD.met).kcal)} kcal.`,
+  },
+  {
+    question: "20 minutos de elíptico emagrece?",
+    answer: `Vinte minutos somam cerca de ${arredondaKcal(EX(20).kcal)} kcal para ${PESO_PADRAO} kg em ritmo moderado. Ajudam, principalmente se repetidos várias vezes por semana, mas quem decide o emagrecimento é o balanço da semana: alimentação, musculação e constância. Vinte minutos que você faz sempre valem mais que uma hora que você faz uma vez.`,
+  },
+  {
+    question: "Elíptico ou bicicleta: qual queima mais calorias?",
+    answer: `Em 30 minutos, para ${PESO_PADRAO} kg: elíptico moderado ≈ ${arredondaKcal(EX(30).kcal)} kcal e bicicleta ergométrica moderada ≈ ${arredondaKcal(BIKE_ERGO.kcal)} kcal. A diferença é pequena. Os dois poupam as articulações do impacto; escolha o que você consegue manter.`,
   },
   {
     question: "As calorias do visor do elíptico são confiáveis?",
@@ -115,7 +142,7 @@ const faq: ItemFAQ[] = [
       "Ajuda como qualquer cardio: soma gasto ao dia com pouco impacto nas articulações. Sozinho, é o caminho mais lento — o resultado depende do balanço da semana, com musculação e alimentação ajustada.",
   },
   {
-    question: "Fazer elíptico todo dia perde barriga?",
+    question: "Como usar o elíptico para perder barriga?",
     answer: NOTA_SEM_PERDA_LOCALIZADA + " O elíptico entra como uma das fontes de gasto, não como uma forma de escolher onde emagrecer.",
   },
 ];
@@ -195,13 +222,14 @@ export default function CalculadoraElipticoPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Por tempo: 10, 20, 30, 45 e 60 minutos</h2>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Por tempo: 10, 15, 20, 30, 40 minutos e 1 hora</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              O gasto é proporcional ao tempo. Para {PESO_PADRAO} kg:
+              O gasto é proporcional ao tempo: cerca de <strong className="text-white">{fmt(POR_MIN)} kcal por minuto</strong> em
+              ritmo moderado e {fmt(EX(1, VIG.met).kcal)} kcal em ritmo vigoroso. Para {PESO_PADRAO} kg:
             </p>
             <div className="overflow-x-auto mb-3">
               <table className="w-full text-sm border-collapse">
-                <caption className="sr-only">Gasto estimado de elíptico por tempo, para 70 kg</caption>
+                <caption className="sr-only">Gasto estimado de elíptico por tempo, de 10 minutos a 1 hora, para 70 kg</caption>
                 <thead>
                   <tr className="border-b border-white/20">
                     <th scope="col" className={th}>Tempo</th>
@@ -237,7 +265,7 @@ export default function CalculadoraElipticoPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Elíptico ou esteira: qual gasta mais calorias?</h2>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Elíptico, esteira ou bicicleta: qual queima mais?</h2>
             <p className="text-gray-300 leading-relaxed mb-4">Trinta minutos, {PESO_PADRAO} kg, do que gasta mais para o que gasta menos:</p>
             <div className="overflow-x-auto mb-3">
               <table className="w-full text-sm border-collapse">
@@ -261,6 +289,8 @@ export default function CalculadoraElipticoPage() {
               </table>
             </div>
             <p className="text-gray-300 leading-relaxed">
+              Na bicicleta ergométrica em ritmo moderado, o mesmo tempo dá cerca de {arredondaKcal(BIKE_ERGO.kcal)} kcal (
+              <Link href="/ferramentas/calculadora-calorias-bicicleta" className={ln}>Calculadora de Calorias da Bicicleta</Link>).
               A caminhada vem do mesmo motor da{" "}
               <Link href="/ferramentas/calculadora-calorias-caminhada" className={ln}>Calculadora de Calorias da Caminhada</Link>.
               A escolha prática raramente é por caloria: o elíptico poupa o joelho do impacto; a esteira permite inclinar.
