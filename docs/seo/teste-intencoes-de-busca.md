@@ -245,3 +245,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-calorias-danca` (30/09) — sem base do GSC. Já na 1ª página para "dança gasta quantas calorias".
 - Título antes: "Calculadora de Calorias na Dança: Forró, Funk e Salão" → depois: "Dança Gasta Quantas Calorias? Calculadora por Ritmo e Tempo".
 - +4 FAQs (20/30/60/120 min, 1 h por dia e quilos, dança do ventre/K-pop/em casa, hérnia de disco → médico). Calculadora não alterada.
+
+`/ferramentas/calculadora-calorias-futebol` (30/09) — sem base do GSC.
+- Título antes: "Calculadora de Calorias no Futebol: Pelada e Futsal" → depois: "Futebol Gasta Quantas Calorias? Calculadora de Pelada e Futsal".
+- +4 FAQs (30/40/60 min, jogador por jogo, qual esporte gasta mais/1.000 kcal, 2 mil kcal por dia). Números de lib/futebol.ts. Calculadora não alterada.

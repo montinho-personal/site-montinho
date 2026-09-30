@@ -38,7 +38,7 @@ import {
 const CAMINHO = "/ferramentas/calculadora-calorias-futebol";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Calorias no Futebol: Pelada e Futsal",
+  title: "Futebol Gasta Quantas Calorias? Calculadora de Pelada e Futsal",
   description:
     "Quantas calorias a sua pelada gasta: futsal, society ou jogo valendo, pelo seu peso, com o revezamento de times e as latas que o jogo realmente pagou.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -76,6 +76,8 @@ const COMP = jogo("competitivo");
 /** Uma hora de bola rolando, sem revezamento. */
 const HORA = (met: number, peso = PESO_PADRAO) => calcula(peso, 60, met, 2);
 const TAB_PESO = tabelaPorPeso(60);
+const MIN_PEL = [30, 40, 60].map((m) => ({ m, kcal: calcula(PESO_PADRAO, m, PEL.met, 2).kcal }));
+const JOGO_COMP = calcula(PESO_PADRAO, 90, COMP.met, 2);
 const TAB_REV = tabelaRevezamento(80, 120);
 const EX_REV = calcula(80, 120, PEL.met, 4);
 const EX_SEM_1 = semana(HORA(PEL.met, 80), 1);
@@ -93,6 +95,22 @@ const faq: ItemFAQ[] = [
   {
     question: "Jogar futebol 2 horas queima quantas calorias?",
     answer: `Depende de quantos times revezam. Para 80 kg, duas horas de pelada sem revezamento dão cerca de ${mil(TAB_REV[0].kcal)} kcal; com quatro times, em que você fica uma hora em campo e uma na lateral, o número cai para cerca de ${mil(TAB_REV[2].kcal)} kcal.`,
+  },
+  {
+    question: "30, 40 minutos ou 1 hora de futebol queimam quantas calorias?",
+    answer: `Numa pelada, para ${PESO_PADRAO} kg jogando o tempo todo: ${MIN_PEL.map((x) => `${x.m} min ≈ ${kc(x.kcal)} kcal`).join("; ")}. Com revezamento de times, o gasto real cai, porque parte do tempo é no banco; a calculadora desconta isso.`,
+  },
+  {
+    question: "Quantas calorias um jogador de futebol gasta por jogo?",
+    answer: `Em jogo competitivo de 90 minutos, a conta pela intensidade média dá cerca de ${kc(JOGO_COMP.kcal)} kcal para ${PESO_PADRAO} kg. Profissionais correm distâncias grandes com muitos sprints, e o gasto varia com a posição; os números de "1.500 kcal por partida" que circulam são estimativas, não medições padronizadas.`,
+  },
+  {
+    question: "Qual esporte gasta mais calorias? Dá para queimar 1.000 calorias em 1 hora?",
+    answer: "Esportes contínuos e intensos, como corrida rápida, natação forte, ciclismo intenso, remo e lutas, ficam no topo. Mil calorias em uma hora só acontecem para pessoas pesadas em esforço muito alto e sustentado; para a maioria, uma hora de esporte fica entre 400 e 800 kcal.",
+  },
+  {
+    question: "2 mil calorias por dia é muito?",
+    answer: "Depende do gasto de cada um. Para muita gente sedentária, 2.000 kcal ficam perto da manutenção; para quem é maior ou mais ativo, podem ser déficit. A calculadora de TMB e TDEE mostra quantas calorias o seu corpo gasta por dia.",
   },
   {
     question: "Futsal queima mais calorias que futebol de campo?",
