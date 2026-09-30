@@ -17,7 +17,7 @@ import Compartilhar from "@/components/share/Compartilhar";
  * inventado. O slug segue o padrão dos irmãos (calculadora-*).
  */
 export const metadata: Metadata = {
-  title: "Calculadora de TMB e TDEE: Gasto Calórico Diário",
+  title: "Calculadora TMB e TDEE: Gasto Calórico Diário (Grátis)",
   description:
     "Estime sua taxa metabólica basal e seu gasto calórico diário pelo peso, altura, idade e nível de atividade, com a equação de Mifflin-St Jeor. Sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/calculadora-tmb-tdee` },
@@ -48,6 +48,39 @@ const breadcrumbSchema = {
   ],
 };
 
+const PERGUNTAS: { q: string; a: string }[] = [
+  {
+    q: "Qual a diferença entre TMB e TDEE?",
+    a: "TMB é o que o corpo gasta em repouso, só para manter as funções vitais. TDEE é o gasto do dia inteiro: a TMB multiplicada pelo nível de atividade, incluindo trabalho, deslocamento e treino.",
+  },
+  {
+    q: "A calculadora de TMB é diferente para mulher?",
+    a: "A equação de Mifflin-St Jeor muda uma constante: +5 para homens e −161 para mulheres. Por isso a calculadora pede o sexo. O resto da conta (peso, altura e idade) é igual.",
+  },
+  {
+    q: "Dá para calcular a TMB com percentual de gordura?",
+    a: "Dá, pela equação de Katch-McArdle: TMB = 370 + 21,6 × massa magra em kg. Ela usa a massa magra em vez de peso, altura e sexo, e só vale a pena se o percentual de gordura for medido com confiança. Esta calculadora usa Mifflin-St Jeor, que não exige esse dado.",
+  },
+  {
+    q: "Quem faz musculação deve escolher qual nível de atividade?",
+    a: "O nível depende do dia inteiro, não só do treino. Quem treina uma hora e trabalha sentado costuma ficar em moderadamente ativo. Na dúvida entre dois níveis, comece pelo menor e ajuste pelo que acontece com o peso nas semanas seguintes.",
+  },
+  {
+    q: "Como usar o TDEE para o déficit calórico?",
+    a: "O TDEE é o ponto de partida: comer abaixo dele gera déficit. A Calculadora de Déficit Calórico transforma o gasto numa meta diária com o tamanho de corte que você escolher.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: PERGUNTAS.map((p) => ({
+    "@type": "Question",
+    name: p.q,
+    acceptedAnswer: { "@type": "Answer", text: p.a },
+  })),
+};
+
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const ln = "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
 
@@ -56,6 +89,7 @@ export default function CalculadoraTmbTdeePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="py-14 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -187,6 +221,38 @@ export default function CalculadoraTmbTdeePage() {
               </Link>
               .
             </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>
+              TMB com percentual de gordura (Katch-McArdle)
+            </h2>
+            <p className="text-gray-300 leading-relaxed">
+              Quem sabe o próprio percentual de gordura pode estimar a TMB pela
+              massa magra, com a equação de Katch-McArdle: TMB = 370 + 21,6 ×
+              massa magra em kg. Ela ignora altura e sexo e tende a ajudar em
+              quem tem muita massa muscular. O problema é o dado de entrada:
+              percentual de gordura medido por balança de bioimpedância pode
+              errar vários pontos, e o erro passa direto para a TMB. Para
+              estimar a composição, use a{" "}
+              <Link href="/ferramentas/composicao-corporal" className={ln}>
+                calculadora de composição corporal
+              </Link>
+              .
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-6" style={h}>
+              Perguntas frequentes sobre TMB e TDEE
+            </h2>
+            <div className="space-y-6">
+              {PERGUNTAS.map((p) => (
+                <div key={p.q}>
+                  <h3 className="text-lg font-semibold text-white mb-2">{p.q}</h3>
+                  <p className="text-gray-300 leading-relaxed">{p.a}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

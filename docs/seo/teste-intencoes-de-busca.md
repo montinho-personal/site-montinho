@@ -172,3 +172,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 - Título antes: "Calculadora de Proteína: Quantos Gramas por Dia" → depois: "Calculadora de Proteína por Dia e por Peso (g/kg)".
 - Seção nova: quem não treina (0,8 g/kg), gestantes (~1,1 g/kg, DRI/National Academies), links para /alimentos (por alimento) e calculadora de whey. +4 FAQs do PAA (cálculo por kg, sedentário, gestantes, 100 g/dia).
 - Fora: marcas (Herbalife, Growth, Nestlé, Piracanjuba). "App" não se aplica.
+
+`/ferramentas/calculadora-tmb-tdee` (30/09) — sem base do GSC.
+- Título antes: "Calculadora de TMB e TDEE: Gasto Calórico Diário" → depois: "Calculadora TMB e TDEE: Gasto Calórico Diário (Grátis)".
+- Seção Katch-McArdle (TMB com percentual de gordura) com link para composição corporal; FAQ visível + FAQPage (5 perguntas: diferença, feminino, % gordura, musculação, déficit). Calculadora não alterada.
