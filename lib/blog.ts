@@ -113,6 +113,7 @@ import { CATEGORIAS_FISICULTURISMO_POSTS } from "./categorias-fisiculturismo";
 import { MARATONA_CURITIBA_2026_POSTS } from "./maratona-curitiba-2026";
 import { MARATONA_BRASILIA_2026_POSTS } from "./maratona-brasilia-2026";
 import { FABRICA_PREMIUM_POSTS } from "./fabrica-premium";
+import { LUTAS_BARUERI_POSTS } from "./lutas-barueri";
 
 export const blogPosts = ([
   ...SAO_SILVESTRE_2026_POSTS,
@@ -126,6 +127,7 @@ export const blogPosts = ([
   ...MARATONA_CURITIBA_2026_POSTS,
   ...MARATONA_BRASILIA_2026_POSTS,
   ...FABRICA_PREMIUM_POSTS,
+  ...LUTAS_BARUERI_POSTS,
   ...OLYMPIA_2026_POSTS,
   {
     slug: "parar-de-tomar-mounjaro",
@@ -78906,6 +78908,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Guia rápido: cada academia de Barueri e as dúvidas mais buscadas</h2>
 <ul>
 <li><strong>No Centro de Barueri:</strong> <a href="/blog/bluefit-barueri">Bluefit</a>, <a href="/blog/panobianco-barueri">Panobianco</a>, <a href="/blog/primax-barueri">Primax</a> e <a href="/blog/redfit-barueri">Redfit</a>; a <a href="/blog/smart-fit-barueri">Smart Fit</a> também tem unidade em Barueri. Cada link traz a análise da academia.</li>
+<li><strong>Luta (jiu-jitsu, muay thai, boxe):</strong> <a href="/blog/academias-de-jiu-jitsu-em-barueri">academias de jiu-jitsu em Barueri</a>.</li>
 <li><strong>Outras opções:</strong> <a href="/blog/sesi-barueri">SESI Barueri</a>, <a href="/blog/academia-gavioes-barueri">Academia Gaviões</a> e <a href="/blog/crossfit-barueri">CrossFit em Barueri</a>.</li>
 <li><strong>Perto da estação da CPTM:</strong> <a href="/blog/academia-perto-da-estacao-barueri">academias perto da Estação Barueri</a>.</li>
 <li><strong>Academia 24 horas em Barueri:</strong> veja <a href="/blog/academia-24-horas-barueri">quais modelos abrem de madrugada</a>; aos domingos, <a href="/blog/academias-abertas-aos-domingos-alphaville-barueri">as que abrem no fim de semana</a>.</li>
