@@ -149,3 +149,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `blog/personal-trainer-aldeia-da-serra` — base (GSC até 15/09): 107 impressões, 6 cliques, posição 17,6. Visão geral por IA já cita o Montinho (29/09).
 - Título antes: "Personal Trainer Aldeia da Serra | Montinho Personal Trainer" → depois: "Personal Trainer na Aldeia da Serra (Barueri): Planos | Montinho".
 - Seção de planos sem valor, +5 FAQs (PAA + "Barueri ou Santana de Parnaíba?").
+
+`blog/academias-em-alphaville` (30/09) — base (GSC até 15/09): 107 impressões, 3 cliques, posição 11,1.
+- Título antes: "Academias em Alphaville: Guia Completo 2026" → depois: "Academias em Alphaville (Barueri): 24h, Wellhub e Premium 2026".
+- Seção nova com os dados verificados pelo Montinho em lib/academias/base.ts (24h, Wellhub, TotalPass, faixa de preço), desambiguação de outros Alphavilles, +5 FAQs do PAA.
