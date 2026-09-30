@@ -16,6 +16,7 @@ import {
   RITMOS,
   arredondaKcal,
   arredondaPassos,
+  deDistancia,
   deKcal,
   dePassos,
   deTempo,
@@ -59,7 +60,7 @@ import {
 const CAMINHO = "/ferramentas/calculadora-calorias-caminhada";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Calorias da Caminhada: Tempo, Km e Passos",
+  title: "Calorias da Caminhada: Calculadora por Tempo, Km e Passos",
   description:
     "Calcule quantas calorias a sua caminhada gasta por tempo, distância ou passos, com o seu peso e o seu ritmo — na rua ou na esteira, com inclinação.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -96,6 +97,8 @@ const breadcrumbSchema = {
 const MOD = ritmo("moderado");
 const EX_30 = deTempo(30, PESO_PADRAO, MOD.velocidade, 0, MOD.cadencia);
 const EX_60 = deTempo(60, PESO_PADRAO, MOD.velocidade, 0, MOD.cadencia);
+const EX_120 = deTempo(120, PESO_PADRAO, MOD.velocidade, 0, MOD.cadencia);
+const TABELA_KM = [1, 3, 5, 7, 10].map((km) => ({ km, r: deDistancia(km, PESO_PADRAO, MOD.velocidade, 0, MOD.cadencia) }));
 const EX_30_LIQ = kcalLiquida(EX_30, PESO_PADRAO);
 const TABELA_PESO = tabelaPorPeso(30, MOD.velocidade, 0);
 const TABELA_TEMPO = tabelaPorTempo(PESO_PADRAO, MOD.velocidade, 0);
@@ -104,6 +107,7 @@ const TABELA_INCL = tabelaPorInclinacao(PESO_PADRAO, 30, 4.8);
 const EX_12_3_30 = deTempo(30, PESO_PADRAO, 4.8, 12, MOD.cadencia);
 const EX_10MIL = dePassos(10000, PESO_PADRAO, MOD.velocidade, 0, MOD.cadencia);
 const EX_300 = deKcal(300, PESO_PADRAO, MOD.velocidade, 0, MOD.cadencia);
+const EX_500 = deKcal(500, PESO_PADRAO, MOD.velocidade, 0, MOD.cadencia);
 const UM_QUILO = simulacaoUmQuilo(PESO_PADRAO, MOD.velocidade, 0, MOD.cadencia);
 const POR_MIN = EX_30.kcal / 30;
 const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDigits: d });
@@ -128,6 +132,22 @@ const faq: ItemFAQ[] = [
   {
     question: "Caminhada inclinada gasta mais calorias?",
     answer: `Gasta, e muito. A inclinação acrescenta o custo de subir ao custo de andar: a 4,8 km/h, 12% de inclinação somam cerca de ${fmt(metDaInclinacao(4.8, 12))} METs ao ritmo, o que mais que dobra o gasto em relação ao plano. É por isso que o método 12-3-30 rende — não por mágica, por física.`,
+  },
+  {
+    question: "Caminhar 1 km, 5 km ou 10 km gasta quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg em ritmo moderado: 1 km, cerca de ${arredondaKcal(TABELA_KM[0].r.kcal)} kcal; 5 km, cerca de ${arredondaKcal(TABELA_KM[2].r.kcal)} kcal; 10 km, cerca de ${arredondaKcal(TABELA_KM[4].r.kcal)} kcal. A tabela por distância desta página mostra também 3 e 7 km.`,
+  },
+  {
+    question: "2 horas de caminhada queimam quantas calorias?",
+    answer: `Em ritmo moderado, cerca de ${arredondaKcal(EX_120.kcal)} kcal para quem pesa ${PESO_PADRAO} kg. Acima de 2 horas, o ritmo costuma cair, e o gasto real tende a ficar abaixo da conta.`,
+  },
+  {
+    question: "Quanto tempo tenho que caminhar para perder 500 calorias?",
+    answer: `Para ${PESO_PADRAO} kg em ritmo moderado, cerca de ${formataTempo(EX_500.minutos)} (em torno de ${formataKm(EX_500.km)}). Com inclinação ou peso maior, leva menos tempo.`,
+  },
+  {
+    question: "Quanto tempo de caminhada para quem tem diabetes?",
+    answer: "A recomendação geral da Organização Mundial da Saúde para adultos, inclusive com doenças crônicas como diabetes, é de 150 a 300 minutos por semana de atividade moderada, como caminhada rápida. Quem tem diabetes deve combinar a meta com o médico, principalmente se usa insulina ou remédio que pode baixar a glicose durante o exercício.",
   },
   {
     question: "Caminhar emagrece?",
@@ -278,6 +298,35 @@ export default function CalculadoraCaminhadaPage() {
                       <td className="text-gray-300 py-2.5 pr-4 tabular-nums">{formataTempo(l.minutos)}</td>
                       <td className="text-white py-2.5 pr-4 font-medium tabular-nums">≈ {l.kcal} kcal</td>
                       <td className="text-gray-400 py-2.5 tabular-nums">{formataKm(l.km)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>
+              Quantas calorias por km: 1, 3, 5, 7 e 10 km
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Para uma pessoa de {PESO_PADRAO} kg em ritmo moderado ({fmt(MOD.velocidade)} km/h), no plano:
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="border-b border-white/20">
+                    <th className="text-left text-gray-400 font-medium py-2.5 pr-4">Distância</th>
+                    <th className="text-left text-gray-400 font-medium py-2.5 pr-4">Tempo</th>
+                    <th className="text-left text-gray-400 font-medium py-2.5">Calorias</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {TABELA_KM.map(({ km, r }) => (
+                    <tr key={km} className="border-b border-white/10">
+                      <td className="text-gray-300 py-2.5 pr-4 tabular-nums">{km} km</td>
+                      <td className="text-gray-300 py-2.5 pr-4 tabular-nums">{formataTempo(r.minutos)}</td>
+                      <td className="text-white py-2.5 font-medium tabular-nums">{arredondaKcal(r.kcal)} kcal</td>
                     </tr>
                   ))}
                 </tbody>

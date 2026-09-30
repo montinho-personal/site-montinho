@@ -192,3 +192,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/zonas-de-frequencia-cardiaca` (30/09) — sem base do GSC.
 - Título antes: "Calculadora de Zonas de Frequência Cardíaca por Idade" → depois: "Zonas de Frequência Cardíaca: Calculadora por Idade (Z1 a Z5)".
 - FAQ visível + FAQPage (5: as 5 zonas, Z1–Z5 corrida/ciclismo, aeróbica × anaeróbica, queima de gordura, Garmin/Apple Watch/Strava). Calculadora não alterada.
+
+`/ferramentas/calculadora-calorias-caminhada` (30/09) — sem base do GSC.
+- Título antes: "Calculadora de Calorias da Caminhada: Tempo, Km e Passos" → depois: "Calorias da Caminhada: Calculadora por Tempo, Km e Passos".
+- Tabela nova por distância (1, 3, 5, 7, 10 km), +4 FAQs (km, 2 horas, 500 kcal, diabetes/OMS 150–300 min). Números saem de lib/caminhada.ts. Calculadora não alterada.
