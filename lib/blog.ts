@@ -81761,12 +81761,12 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "ironberg-alphaville",
     title: "Ironberg Alphaville: A Academia dos Marombas",
-    metaTitle: "Ironberg Alphaville: Vale a Pena? Análise Honesta",
-    metaDescription: "Ironberg em Alphaville: para quem é a academia dos marombas, prós, contras e como aproveitar. Análise de quem atende na região. Leia antes de assinar.",
+    metaTitle: "Ironberg Alphaville: Endereço, 24h, Wellhub e Vale a Pena?",
+    metaDescription: "Ironberg Alphaville: endereço (Estrada Aldeinha, 181), funciona 24h, aceita Wellhub, tem estacionamento. Prós, contras e para quem vale a pena.",
     excerpt: "A Ironberg nasceu da cultura do fisiculturismo. Veja para quem ela é indicada em Alphaville — e para quem o clima maromba pode não ser o ideal.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-22",
+    updatedAt: "2026-09-30",
     readTime: "8 min",
     author: "Montinho",
     tags: ["ironberg","academia em alphaville","hipertrofia","fisiculturismo","musculação"],
@@ -81795,6 +81795,15 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Enquanto redes low cost cortam serviços para baixar preço e redes premium somam serviços para justificar preço, a Ironberg faz um terceiro movimento: <strong>profundidade em vez de amplitude</strong>. O produto é a cultura do ferro.</p>
 <p>Isso atrai um público específico de Alphaville: gente do <strong>Tamboré</strong> e dos condomínios da região que já treina há anos, executivos do <strong>Centro Industrial e Empresarial</strong> que querem treino sério antes ou depois do expediente, e entusiastas que acompanham o universo do fisiculturismo.</p>
 <p><strong>Soundbite: na Ironberg, o diferencial não é o que está no contrato — é quem está no salão.</strong> Ambiente que treina pesado contagia.</p>
+<h2>Ironberg Alphaville: endereço, horário, Wellhub e estacionamento</h2>
+<ul>
+<li><strong>Endereço:</strong> Estrada Aldeinha, 181, Centro Industrial e Empresarial Alphaville, Barueri. O acesso é pela Av. Dr. Dib Sauaia Neto.</li>
+<li><strong>Horário:</strong> funciona 24 horas, inclusive sábado e domingo.</li>
+<li><strong>Wellhub:</strong> aceita. <strong>TotalPass:</strong> não aceita.</li>
+<li><strong>Estacionamento:</strong> tem estacionamento próprio.</li>
+<li><strong>Personal externo:</strong> é permitido. Combine as regras com a recepção antes da primeira aula.</li>
+</ul>
+<p>Esses pontos foram verificados pelo Montinho, que atende alunos na região. Preço de mensalidade e condições de plano mudam com frequência. Consulte direto na unidade ou no Instagram oficial (@ironberg_alphaville). Para comparar faixas de preço da região, veja <a href="/blog/quanto-custa-academia-em-alphaville">quanto custa academia em Alphaville</a>.</p>
 <h2>Prós e contras honestos, por perfil de aluno</h2>
 <h3>Maromba intermediário/avançado</h3>
 <ul>
@@ -81850,6 +81859,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><a href="/blog/academia-ou-personal-trainer">Academia ou personal trainer: o que vem primeiro?</a></li>
 </ul>`,
     faq: [
+      { question: "Onde fica a Ironberg Alphaville?", answer: "Na Estrada Aldeinha, 181, no Centro Industrial e Empresarial Alphaville, em Barueri, com acesso pela Av. Dr. Dib Sauaia Neto." },
+      { question: "A Ironberg Alphaville aceita Wellhub?", answer: "Sim, aceita Wellhub. TotalPass não é aceito." },
+      { question: "A Ironberg Alphaville é 24 horas?", answer: "Sim, funciona 24 horas, inclusive aos sábados e domingos, e tem estacionamento." },
+      { question: "Qual o valor da mensalidade da Ironberg em Alphaville?", answer: "O valor muda conforme plano e campanha, por isso não publicamos um número fixo. Consulte na unidade ou no Instagram @ironberg_alphaville." },
       { question: "A Ironberg de Alphaville vale a pena?", answer: "Para quem leva musculação e hipertrofia a sério e quer ambiente com cultura do ferro, sim. Para quem busca variedade de aulas ou clima de clube família, outros modelos atendem melhor." },
       { question: "Quanto custa a Ironberg?", answer: "Valores variam por unidade e plano e mudam com o tempo. Consulte o site oficial ou a unidade de Alphaville para condições atualizadas." },
       { question: "Iniciante pode treinar na Ironberg?", answer: "Pode, e o ambiente acelera o aprendizado. Mas o ideal é entrar com programa próprio e orientação de execução, em vez de imitar treinos de alunos avançados." },
