@@ -27,6 +27,7 @@ import {
   tabelaPorPeso,
   tabelaPorRitmo,
 } from "@/lib/boxe";
+import { MET_ROLA } from "@/lib/jiujitsu";
 
 /**
  * A página da Calculadora de Calorias no Boxe.
@@ -43,9 +44,9 @@ import {
 const CAMINHO = "/ferramentas/calculadora-calorias-boxe";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Calorias no Boxe: Aula e Rounds",
+  title: "Boxe Queima Quantas Calorias? 30 Minutos, 1 Hora e Aula",
   description:
-    "Quantas calorias o seu treino de boxe gasta: aula de sombra, saco ou sparring, ou rounds no ritmo medido pelos socos, comparado com o relógio.",
+    "Quantas calorias o boxe queima em 20 e 30 minutos, em 1 hora e por aula, com o seu peso: sombra, saco ou sparring. E qual luta gasta mais.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
     title: "Calculadora de Calorias no Boxe | Montinho Personal Trainer",
@@ -86,11 +87,40 @@ const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDig
 const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const L90 = TAB_PESO.find((l) => l.peso === 90)!;
+const SOMBRA = aula("sombra");
+const MIN = (m: number, met: number) => deAula(PESO_PADRAO, m, met).kcal;
+const TEMPOS = [20, 30, 60] as const;
+const KCAL_MIN_SPAR = MIN(1, SPAR.met);
+const MIN_500_SPAR = Math.ceil(500 / KCAL_MIN_SPAR);
 
 const faq: ItemFAQ[] = [
   {
     question: "Quantas calorias uma aula de boxe queima?",
     answer: `Uma hora de aula com saco de pancada gasta cerca de ${kc(HORA(SACO.met).kcal)} kcal para quem pesa ${PESO_PADRAO} kg e ${mil(L90.saco)} kcal para quem pesa 90 kg. Sparring gasta mais: cerca de ${kc(HORA(SPAR.met).kcal)} kcal para ${PESO_PADRAO} kg. Aula de sombra e técnica, um pouco menos que a de saco.`,
+  },
+  {
+    question: "Quantas calorias queima 1h de boxe?",
+    answer: `Para ${PESO_PADRAO} kg: cerca de ${kc(MIN(60, SOMBRA.met))} kcal em treino de sombra, ${kc(MIN(60, SACO.met))} kcal no saco e ${kc(MIN(60, SPAR.met))} kcal em sparring. Quem pesa mais gasta mais na mesma hora.`,
+  },
+  {
+    question: "30 minutos de boxe queima quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg, cerca de ${kc(MIN(30, SACO.met))} kcal no saco e ${kc(MIN(30, SPAR.met))} kcal em sparring.`,
+  },
+  {
+    question: "20 minutos de boxe queima quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg, cerca de ${kc(MIN(20, SACO.met))} kcal no saco e ${kc(MIN(20, SPAR.met))} kcal em sparring.`,
+  },
+  {
+    question: "Treino de sombra no boxe queima quantas calorias?",
+    answer: `Cerca de ${kc(MIN(30, SOMBRA.met))} kcal em 30 minutos e ${kc(MIN(60, SOMBRA.met))} kcal em 1 hora para ${PESO_PADRAO} kg. É um pouco menos que o saco, e dá para fazer em casa.`,
+  },
+  {
+    question: "Qual luta queima mais calorias?",
+    answer: `Pelo Compêndio de Atividades Físicas, o rola do jiu-jitsu (${fmt(MET_ROLA)} METs) e o sparring de boxe (${fmt(SPAR.met)} METs) estão entre os mais intensos. Em 30 minutos, para ${PESO_PADRAO} kg: rola ≈ ${kc(MIN(30, MET_ROLA))} kcal e sparring ≈ ${kc(MIN(30, SPAR.met))} kcal. Numa aula de verdade, com técnica e pausas, a diferença entre as lutas fica pequena: o que mais pesa é quanto tempo você passa lutando.`,
+  },
+  {
+    question: "Dá para queimar 500 calorias em 30 minutos de boxe?",
+    answer: `Para ${PESO_PADRAO} kg, não: mesmo em sparring sem parar, 500 kcal levam cerca de ${MIN_500_SPAR} minutos. Chegar a isso em meia hora exige peso corporal bem maior e esforço máximo o tempo todo. Números assim costumam ser propaganda.`,
   },
   {
     question: "Uma aula de boxe queima 1.000 calorias?",
@@ -192,6 +222,38 @@ export default function CalculadoraBoxePage() {
             </div>
             <p className="text-gray-400 text-sm">
               Uma hora de aula, com as pausas que a aula tem. O Compêndio mediu assim, então nada é descontado de novo.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Boxe por tempo: 20, 30 minutos e 1 hora</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">Para {PESO_PADRAO} kg, pelo formato do treino:</p>
+            <div className="overflow-x-auto mb-3">
+              <table className="w-full text-sm border-collapse">
+                <caption className="sr-only">Gasto estimado de boxe em 20, 30 e 60 minutos, para 70 kg</caption>
+                <thead>
+                  <tr className="border-b border-white/20">
+                    <th scope="col" className={th}>Tempo</th>
+                    <th scope="col" className={th}>Sombra</th>
+                    <th scope="col" className={th}>Saco</th>
+                    <th scope="col" className="text-left text-gray-400 font-medium py-2.5">Sparring</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {TEMPOS.map((m) => (
+                    <tr key={m} className="border-b border-white/10">
+                      <td className="text-gray-300 py-2.5 pr-4 tabular-nums">{formataTempo(m)}</td>
+                      <td className="text-gray-300 py-2.5 pr-4 tabular-nums">≈ {kc(MIN(m, SOMBRA.met))} kcal</td>
+                      <td className="text-white py-2.5 pr-4 font-medium tabular-nums">≈ {kc(MIN(m, SACO.met))} kcal</td>
+                      <td className="text-gray-300 py-2.5 tabular-nums">≈ {kc(MIN(m, SPAR.met))} kcal</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-gray-400 text-sm">
+              Qual luta queima mais? O rola do jiu-jitsu fica um pouco acima do sparring: veja a{" "}
+              <Link href="/ferramentas/calculadora-calorias-jiu-jitsu" className={ln}>Calculadora de Calorias do Jiu-Jitsu</Link>.
             </p>
           </div>
 
