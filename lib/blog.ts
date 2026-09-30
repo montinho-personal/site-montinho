@@ -81560,12 +81560,12 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "smart-fit-alphaville",
     title: "Smart Fit Alphaville: Vale a Pena? Análise Completa",
-    metaTitle: "Smart Fit Alphaville: Vale a Pena? Análise Honesta",
-    metaDescription: "Smart Fit em Alphaville vale a pena? Prós, contras e para quem é indicada, na visão de quem treina na região. Leia antes de assinar o plano.",
+    metaTitle: "Smart Fit Alphaville: Unidades, Endereços e Horários",
+    metaDescription: "Smart Fit em Alphaville e Barueri: endereços e horários das unidades (Sodimac, Flamingo, Carrefour, Parque Shopping) e se vale a pena assinar.",
     excerpt: "Análise honesta da Smart Fit em Alphaville: para quem o modelo low cost funciona, para quem não funciona e como extrair o máximo da estrutura.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-22",
+    updatedAt: "2026-09-30",
     readTime: "8 min",
     author: "Montinho",
     tags: ["smart fit","academia em alphaville","musculação","low cost","barueri"],
@@ -81595,6 +81595,17 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>A Smart Fit construiu seu império sobre uma ideia simples: <strong>tirar do plano tudo o que encarece e manter o essencial</strong> — musculação, cardio e autonomia. É o modelo low cost levado a sério, replicado em centenas de cidades.</p>
 <p>Em Alphaville, isso conversa direto com o perfil local: executivos do <strong>Centro Industrial e Empresarial</strong>, moradores de condomínios do <strong>Tamboré</strong> e quem circula entre o <strong>Iguatemi Alphaville</strong> e a <strong>Rodovia Castelo Branco</strong> querendo praticidade sem mensalidade de clube.</p>
 <p><strong>Soundbite para guardar: low cost não é academia pior — é academia com menos serviços inclusos.</strong> Entender isso muda completamente a forma de avaliar se ela serve para você.</p>
+<h2>Unidades da Smart Fit em Alphaville e Barueri: endereços e horários</h2>
+<p>A região tem várias unidades da Smart Fit, e a busca mais comum é justamente "qual fica mais perto". Estas são as que aparecem no Google Maps para Alphaville e Barueri (consulta de 30/09/2026):</p>
+<ul>
+<li><strong>Smart Fit Sodimac Alphaville</strong> — Alameda Araguaia, 1801, 2º pavimento (estacionamento do Sodimac Homecenter), Alphaville Industrial, Barueri. Horário: segunda a sexta 6h–23h, sábado 8h–17h, domingo 8h–14h.</li>
+<li><strong>Smart Fit Shopping Flamingo Alphaville</strong> — dentro do Shopping Flamingo, em Alphaville.</li>
+<li><strong>Smart Fit Carrefour Hipermercado</strong> — no Carrefour de Barueri; fecha às 23h nos dias úteis.</li>
+<li><strong>Smart Fit Parque Shopping Barueri</strong> — no Parque Shopping Barueri; fecha à meia-noite nos dias úteis.</li>
+<li><strong>Smart Fit Barueri Centro</strong> — Centro de Barueri; fecha à meia-noite nos dias úteis.</li>
+<li><strong>Smart Fit Barueri Av. Zélia</strong> — fecha às 23h nos dias úteis.</li>
+</ul>
+<p>Horários de fim de semana e feriado mudam por unidade. Antes de ir, confirme no localizador de unidades do site da Smart Fit ou no Google Maps. Se a dúvida é qual academia combina com a sua rotina, a <a href="/academia-ideal-alphaville">ferramenta de academia ideal em Alphaville</a> compara as opções da região.</p>
 <h2>Prós e contras honestos, por perfil de aluno</h2>
 <h3>Se você já treina há anos (intermediário/avançado)</h3>
 <ul>
@@ -81642,6 +81653,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><a href="/blog/academia-ou-personal-trainer">Academia ou personal trainer: o que vem primeiro?</a></li>
 </ul>`,
     faq: [
+      { question: "Onde fica a Smart Fit do Sodimac Alphaville?", answer: "Na Alameda Araguaia, 1801, no 2º pavimento do estacionamento do Sodimac Homecenter, em Alphaville Industrial, Barueri." },
+      { question: "Tem Smart Fit no Carrefour de Barueri?", answer: "Sim, a unidade Smart Fit Carrefour Hipermercado fica em Barueri e fecha às 23h nos dias úteis. Confirme o horário de fim de semana no localizador da Smart Fit." },
+      { question: "A Smart Fit de Alphaville abre domingo?", answer: "A unidade do Sodimac Alphaville abre aos domingos das 8h às 14h, e aos sábados das 8h às 17h. Nas outras unidades o horário de fim de semana varia." },
+      { question: "Quantas unidades da Smart Fit tem em Alphaville e Barueri?", answer: "No Google Maps aparecem pelo menos seis: Sodimac Alphaville, Shopping Flamingo, Carrefour Hipermercado, Parque Shopping Barueri, Barueri Centro e Barueri Av. Zélia." },
       { question: "A Smart Fit de Alphaville vale a pena?", answer: "Sim, para quem treina com autonomia e busca mensalidade econômica com boa estrutura de musculação. Quem precisa de acompanhamento próximo deve complementar com orientação externa." },
       { question: "Quanto custa o plano da Smart Fit?", answer: "O posicionamento é econômico, mas valores mudam com frequência e variam por unidade e plano. Consulte o site oficial ou a unidade para preços atualizados." },
       { question: "A Smart Fit é boa para iniciantes?", answer: "A estrutura atende, mas o modelo low cost não inclui acompanhamento individualizado. Iniciantes evoluem muito mais rápido com uma orientação inicial de treino e execução." },
