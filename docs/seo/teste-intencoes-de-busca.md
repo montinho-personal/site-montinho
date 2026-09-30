@@ -237,3 +237,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-calorias-spinning` (30/09) — sem base do GSC. Já aparece na 1ª página para "spinning gasta quantas calorias" (print de 30/09).
 - Título antes: "Calculadora de Calorias no Spinning: Watts e Aula" → depois: "Spinning Gasta Quantas Calorias? Calculadora por Aula e Watts".
 - +4 FAQs (30/40/45/50 min, × musculação, × esteira, frequência/todo dia). Números de lib/spinning.ts. Calculadora não alterada. Fora: "antes e depois", "como fica o corpo" (fotos, sem fonte).
+
+`/ferramentas/calculadora-calorias-escada` (30/09) — sem base do GSC. Já aparece na 1ª página para "subir escada gasta quantas calorias" (print de 30/09).
+- Título antes: "Calculadora de Calorias Subindo Escada: por Andar" → depois: "Subir Escada Gasta Quantas Calorias? Calculadora por Andar e Tempo".
+- +5 FAQs (5 a 60 min, 5/8/10/12/14/18 andares, 100 degraus, 20 min emagrece, gravidez/insuficiência cardíaca → médico). Números de lib/escada.ts. Calculadora não alterada.
