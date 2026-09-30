@@ -30,6 +30,8 @@ export interface VideoCanal {
   /** Título da aba e do Google (até ~60 caracteres). */
   metaTitle: string;
   descricao: string;
+  /** Chamada curta do cartão na lista /videos: o motivo para dar o play. */
+  chamada: string;
   /** Texto da página, em parágrafos, a partir da descrição do Montinho. */
   texto: string[];
   artigos: { href: string; nome: string }[];
@@ -46,6 +48,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     metaTitle: "A Balança Mente? Por Que o Peso Sobe Mesmo Emagrecendo",
     descricao:
       "O peso muda todo dia: sal, sono ruim e treino pesado fazem o corpo segurar água. Com musculação você perde gordura e ganha músculo ao mesmo tempo. O que medir de verdade: cintura toda semana, foto a cada 15 dias e a roupa.",
+    chamada: "Fez tudo certo e o peso subiu? Em 41 segundos você entende por que isso não é gordura e o que medir no lugar da balança.",
     texto: [
       "Você pode estar emagrecendo e a balança não mostrar. O peso muda todo dia: sal, sono ruim e treino pesado fazem o corpo segurar água e o número subir. Não é gordura, é água.",
       "E com musculação você perde gordura e ganha músculo ao mesmo tempo. A balança para, mas o corpo continua mudando.",
@@ -66,6 +69,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     metaTitle: "Engordei 2 kg no Feriado? Por Que Não É Gordura",
     descricao:
       "Voltou do feriado com 2 kg a mais na balança? Boa parte é água, glicogênio e comida no intestino, não gordura. Volte à rotina e dê alguns dias para o peso estabilizar.",
+    chamada: "Voltou do feriado com 2 kg a mais? Antes de cortar comida ou se matar no cardio, assista isto.",
     texto: [
       "Você voltou do feriado, subiu na balança e apareceu 2 kg a mais? Calma: isso não significa necessariamente que você engordou 2 kg de gordura.",
       "Depois de alguns dias com mais comida, carboidrato, sal, bebida alcoólica e uma rotina diferente, o peso pode aumentar por retenção de líquido, maior armazenamento de glicogênio e até pelo próprio volume de comida no sistema digestivo. Para ganhar 2 kg de gordura em poucos dias, seria necessário um excedente calórico muito maior do que muita gente imagina.",
@@ -86,6 +90,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     metaTitle: "Efeito Sanfona: Por Que Você Volta a Engordar",
     descricao:
       "Você não voltou a engordar por falta de força de vontade. Muitas vezes ensinaram você a perder peso, mas ninguém ensinou a manter o resultado.",
+    chamada: "Emagreceu e engordou tudo de novo? O problema não é força de vontade. Veja o que ninguém te ensinou sobre manter.",
     texto: [
       "Você não voltou a engordar porque é fraco ou porque não tem força de vontade. Muitas vezes, o efeito sanfona acontece porque ensinaram você a perder peso, mas ninguém ensinou como manter o resultado depois do emagrecimento.",
       "Dietas extremamente restritivas, fome, abandono completo dos alimentos que você gosta e uma rotina de treinos impossível de sustentar podem até gerar resultados rápidos. O problema é que, quando essa fase termina, os hábitos antigos costumam voltar.",
@@ -103,6 +108,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     metaTitle: "Proteja o Seu Objetivo: a Brecha Que Te Faz Recomeçar",
     descricao:
       "Quem chegou lá protege o objetivo. Uma exceção vira duas, duas viram hábito, e você volta ao ponto de onde queria sair.",
+    chamada: "\"É só hoje\", \"segunda eu volto\"... Descubra a brecha que faz você recomeçar do zero toda vez.",
     texto: [
       "Quando o assunto é melhorar o shape, existe uma verdade que muita gente não quer aceitar: quem faz o trabalho não tem como dar errado.",
       "Por experiência própria, e observando centenas de pessoas que chegaram lá, todas têm uma coisa em comum: elas protegem o objetivo delas. Não significa nunca sair, nunca comer algo diferente ou viver preso. Significa não abrir brechas o tempo todo.",
@@ -121,6 +127,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     metaTitle: "O Poder da Disciplina: a Sensação de Dever Feito",
     descricao:
       "Esse é o poder da disciplina: a sensação de dever feito e a confiança de ter feito tudo o que só você poderia fazer.",
+    chamada: "22 segundos sobre a sensação que nenhum atalho te dá: a de ter feito a sua parte.",
     texto: [
       "Esse é o poder da disciplina: aquela sensação de dever feito.",
       "É uma sensação de confiança, porque você fez tudo aquilo que só você poderia ter feito. Ninguém treina por você, ninguém come por você.",
@@ -137,6 +144,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     metaTitle: "Toda Transformação Começa Com Uma Decisão",
     descricao:
       "Quem conseguiu emagrecer ou ganhar massa aprendeu a dizer não para o que afastava do objetivo. Não existe fórmula mágica: existe disciplina e constância.",
+    chamada: "Não teve pílula mágica. Veja a decisão que toda pessoa que mudou o corpo precisou tomar.",
     texto: [
       "Toda transformação começa com uma decisão.",
       "Quem conseguiu emagrecer, ganhar massa muscular ou mudar de vida aprendeu a dizer não para aquilo que afastava do objetivo.",
@@ -151,6 +159,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     metaTitle: "Melhor Exercício Para Ganhar Músculo? A Pergunta Está Errada",
     descricao:
       "O melhor exercício no estudo não é necessariamente o melhor para você. Execução, objetivo, volume e segurança importam, mas aderência é o que mais importa.",
+    chamada: "Procurando o melhor exercício para ganhar músculo? A resposta vai mudar a forma como você monta o seu treino.",
     texto: [
       "Qual o melhor exercício para ganhar músculo? Talvez essa seja uma das perguntas mais erradas da musculação. O melhor exercício no estudo não necessariamente é o melhor exercício para você.",
       "Estudo importa. Execução, objetivo, volume, segurança e intensidade também. Mas tem uma coisa que muita gente esquece: aderência é o que mais importa. Não adianta um treino teoricamente perfeito se você odeia fazer aquele treino.",
@@ -166,6 +175,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     metaTitle: "O Maior Conselho Para Emagrecer: Recomece Rápido",
     descricao:
       "Perdeu um treino? Volta no próximo. O que mais atrapalha o emagrecimento não é errar uma vez, é transformar um erro pequeno em semanas longe do objetivo.",
+    chamada: "Errou na dieta ou faltou no treino? Este é o conselho que mais separa quem emagrece de quem desiste.",
     texto: [
       "O maior conselho para quem quer emagrecer é simples: aprenda a recomeçar rápido.",
       "Perdeu um treino? Volta no próximo. Saiu da dieta em uma refeição? Volta na próxima. Comeu demais no fim de semana? Continua. Ficou alguns dias sem treinar? Recomeça.",
@@ -186,6 +196,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     metaTitle: "Não Sentiu o Músculo? Pump Não É Hipertrofia",
     descricao:
       "Não sentir o músculo não significa que você treinou errado. Execução, esforço, proximidade da falha e progressão importam mais do que sentir queimar.",
+    chamada: "Terminou o treino sem sentir o músculo e achou que foi perdido? Assista antes de mudar tudo.",
     texto: [
       "Não sentiu o músculo durante o exercício? Isso não significa automaticamente que você treinou errado.",
       "Pump não é sinônimo de hipertrofia. Sentir queimar não significa crescer mais. Conexão mente-músculo pode ajudar, mas não é a única medida de um bom treino.",
@@ -201,6 +212,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     metaTitle: "Caneta Emagrecedora: Como Não Perder Músculo Junto",
     descricao:
       "Sem treino de força, parte relevante do peso perdido com as canetas vem de massa magra. Não é para parar o remédio: é para não entregar o músculo junto.",
+    chamada: "Está usando caneta para emagrecer? Veja por que um a cada três quilos perdidos pode ser músculo, e como evitar.",
     texto: [
       "Um a cada três quilos que você perde na caneta pode não ser gordura. Nos estudos dessa classe de medicamento, sem treino de força, 30 a 40% do peso perdido vem de massa magra. Na semaglutida, perto de 39%.",
       "Músculo é o motor que gasta energia 24 horas por dia. Perder músculo é o que facilita o peso voltar depois.",
@@ -221,6 +233,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     metaTitle: "Pare de Copiar o Treino do Influencer",
     descricao:
       "Não existe segredo nem um único caminho. O treino perfeito é aquele que você consegue seguir por mais tempo e que cabe na sua rotina.",
+    chamada: "Copiando o treino do influencer e não vendo resultado? Em menos de um minuto você entende o porquê.",
     texto: [
       "Parem de tentar copiar o treino da blogueirinha ou do influencer que você gosta. Não existe segredo, não existe apenas um caminho.",
       "O treino perfeito é aquele que você consegue seguir por mais tempo. É aquele que se encaixa na sua rotina e nas suas individualidades.",
@@ -237,6 +250,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     metaTitle: "O Que Todo Mundo Que Evoluiu no Shape Tem em Comum",
     descricao:
       "Um dia você vai errar. Sem raiva e sangue no olho para continuar, você desiste como sempre fez. Quem faz o trabalho não tem como dar errado.",
+    chamada: "Você vai errar, isso é certo. O que decide se você chega lá é o que faz no dia seguinte.",
     texto: [
       "Existe uma característica em comum em todas as pessoas que conseguiram evoluir no shape, emagrecer e ganhar massa muscular.",
       "Um dia, com certeza, você vai errar. Se você não tiver raiva e sangue no olho para continuar, vai desistir como sempre fez.",
