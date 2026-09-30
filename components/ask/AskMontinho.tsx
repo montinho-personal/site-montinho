@@ -38,11 +38,6 @@ function loadJSON<T>(key: string): T | null {
     return null;
   }
 }
-function saveJSON(key: string, value: unknown) {
-  try {
-    sessionStorage.setItem(key, JSON.stringify(value));
-  } catch { /* sem persistência, segue */ }
-}
 
 export default function AskMontinho({
   context,
@@ -62,17 +57,28 @@ export default function AskMontinho({
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const startedRef = useRef(false);
   const lastQuestionRef = useRef("");
+  /**
+   * Só depois de a pessoa interagir é que a rolagem da janela pode ser
+   * "devolvida". Antes disso ela não é nossa: quem chega de outra página
+   * ainda está no meio da rolagem suave até o topo (o site usa
+   * scroll-behavior: smooth), e o efeito abaixo lia esse scrollY no meio do
+   * caminho e o restaurava — a pessoa clicava em "Fazer minha pergunta" no
+   * pé da central de ferramentas e aterrissava no rodapé desta página.
+   */
+  const interagiuRef = useRef(false);
 
   // ask muda a cada render (depende de messages); o efeito de restauração
   // roda uma vez e chama a versão mais recente via ref.
   const askRef = useRef<(q: string, ctx?: PageContext) => void>(() => {});
 
-  // Restaura conversa + pergunta pendente (vinda de embeds em outras páginas)
+  // Toda visita começa do zero. A conversa só existe enquanto a pessoa
+  // continua perguntando nesta página: quem sai e volta encontrava uma
+  // conversa antiga rolada até o fim, sem saber onde a nova pergunta ia
+  // parar. A única coisa restaurada é a pergunta pendente, que vem dos
+  // embeds em outras páginas — ela é o motivo da visita.
   useEffect(() => {
     trackOncePerSession("ask_montinho_view");
     const id = window.setTimeout(() => {
-      const saved = loadJSON<Msg[]>(STORAGE_KEY);
-      if (saved?.length) setMessages(saved);
       const pending = loadJSON<{ q: string; context?: PageContext }>(PENDING_KEY);
       if (pending?.q) {
         sessionStorage.removeItem(PENDING_KEY);
@@ -100,17 +106,31 @@ export default function AskMontinho({
    *    página; guardar e devolver o scrollY neutraliza esse empurrão.
    */
   useEffect(() => {
-    if (messages.length) saveJSON(STORAGE_KEY, messages.slice(-12));
-
     const lista = listRef.current;
     if (!lista) return;
 
     const distanciaDoFim = lista.scrollHeight - lista.scrollTop - lista.clientHeight;
     const estavaNoFim = distanciaDoFim < 120;
     const scrollDaJanela = window.scrollY;
+    const ultima = messages[messages.length - 1];
 
-    if (estavaNoFim) lista.scrollTop = lista.scrollHeight;
+    if (ultima?.role === "user") {
+      // A pergunta recém-enviada vai para o TOPO da conversa, não para o
+      // fim. No fim, ela ficava colada na caixa de texto e a resposta nascia
+      // fora da tela; a pessoa não via nem que tinha perguntado. No topo, a
+      // pergunta fica à vista e a resposta cresce para baixo dela, na ordem
+      // de leitura — e, como a lista deixa de estar "no fim", a chegada da
+      // resposta não puxa a rolagem e não tira a pergunta da vista.
+      const bolhas = lista.querySelectorAll<HTMLElement>('[data-role="user"]');
+      const bolha = bolhas[bolhas.length - 1];
+      if (bolha) {
+        lista.scrollTop = bolha.getBoundingClientRect().top - lista.getBoundingClientRect().top + lista.scrollTop - 12;
+      }
+    } else if (estavaNoFim) {
+      lista.scrollTop = lista.scrollHeight;
+    }
 
+    if (!interagiuRef.current) return;
     const id = window.requestAnimationFrame(() => {
       if (window.scrollY !== scrollDaJanela) window.scrollTo({ top: scrollDaJanela });
     });
@@ -121,6 +141,7 @@ export default function AskMontinho({
     async (question: string, ctxOverride?: PageContext) => {
       const q = question.trim();
       if (!q || loading) return;
+      interagiuRef.current = true;
       setError(null);
       lastQuestionRef.current = q;
       if (!startedRef.current) {
@@ -329,7 +350,7 @@ export default function AskMontinho({
 
         {messages.map((m, i) =>
           m.role === "user" ? (
-            <div key={i} className="flex justify-end">
+            <div key={i} data-role="user" className="flex justify-end">
               <p className="bg-white/10 text-white text-sm leading-relaxed px-4 py-3 max-w-[85%] whitespace-pre-wrap">
                 {m.content}
               </p>
