@@ -290,3 +290,10 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 - Motor lib/muaythai.ts: Compêndio 2011, 15425 (5,3 METs, técnica) e 15430 (10,3, ritmo de luta, cita muay thai), descanso 1,3. Rounds fortes = manopla, saco em ritmo de luta, sparring. METs importados do jiu-jitsu.
 - Embutida em /blog/muay-thai-emagrece (ARTIGOS_COM_CALCULADORA_MUAY). Tag "muay thai" saiu do cartão do boxe no catálogo.
 - Pauta: benefícios do muay thai (mente, corpo feminino/masculino, adolescentes), desvantagens, define o corpo em quanto tempo.
+
+## 2026-09-30 — /ferramentas/calculadora-calorias-crossfit
+- Antes: "Calculadora de Calorias no CrossFit: Aula e WOD"
+- Depois: "CrossFit Queima Quantas Calorias? Por Hora, Aula e WOD"
+- Prints "crossfit calorias": por hora, por treino/aula, iniciante, 1 hora, 30 e 50 minutos, remo, air bike, gasta mais que musculação, conversor; PAA 1 hora, academia x crossfit, elimina barriga, artrite reumatoide; relacionadas resultados 1 mês, emagrece quantos quilos/em quanto tempo, define o corpo, dá músculo.
+- Seção "CrossFit: calorias por hora e por minuto" (60–100 kg) com link para HYROX; FAQ: 1 hora, por minuto, 30 min, 50 min, iniciante, CrossFit x musculação (resposta honesta: aula inteira ≈ 1 h de musculação vigorosa), remo (8,5 METs, mesmo valor da calculadora de HYROX). Calculadora intocada.
+- Pauta: air bike (sem MET verificado), artrite reumatoide (saúde, fonte médica), resultados em 1 mês, CrossFit dá músculo.
