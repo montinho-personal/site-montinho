@@ -5,6 +5,7 @@
  * ferramenta por página. Página local nova entra aqui ou em outro registro.
  */
 export const ARTIGOS_COM_LINK_ROTINA_LOCAL: string[] = [
+  "fabrica-premium-alphaville",
   "personal-trainer-alphaville-residencial-zero",
   "personal-trainer-alphaville-residencial-1",
   "personal-trainer-alphaville-residencial-2",
