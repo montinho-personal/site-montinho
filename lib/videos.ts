@@ -74,6 +74,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     ],
     artigos: [{ href: "/blog/como-evitar-efeito-sanfona", nome: "Como evitar o efeito sanfona" }],
     ferramenta: { href: "/ferramentas/calculadora-de-proteina", nome: "Calculadora de proteína" },
+    publicadoEm: "2026-08-02",
   },
   {
     id: "DiH1OzIR6Yk",
@@ -107,6 +108,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     artigos: [
       { href: "/blog/como-continuar-emagrecendo-sem-perder-motivacao", nome: "Como continuar emagrecendo sem perder a motivação" },
     ],
+    publicadoEm: "2026-07-17",
   },
   {
     id: "yndKE1GrnUQ",
@@ -220,6 +222,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     artigos: [
       { href: "/blog/como-continuar-emagrecendo-sem-perder-motivacao", nome: "Como continuar emagrecendo sem perder a motivação" },
     ],
+    publicadoEm: "2026-08-13",
   },
 ];
 
