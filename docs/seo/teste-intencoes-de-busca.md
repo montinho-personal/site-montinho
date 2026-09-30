@@ -276,3 +276,10 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 - Prints "boxe calorias": treino/aula, 20 min, 30 min, 1 hora, por hora, sombra, queima/perde; PAA 1h de boxe, boxe x academia, qual luta queima mais, 500 kcal em 30 min; relacionadas musculação 1h, muay thai, luva/treino de boxe.
 - Seção nova "Boxe por tempo: 20, 30 minutos e 1 hora" (sombra/saco/sparring, 70 kg) com link para jiu-jitsu; FAQ: 1h, 30 min, 20 min, sombra, qual luta queima mais (rola x sparring), 500 kcal em 30 min. Calculadora intocada.
 - Pauta: muay thai (sem ferramenta), luva de boxe (fora do tema).
+
+## 2026-09-30 — /ferramentas/calculadora-calorias-jiu-jitsu
+- Antes: "Calculadora de Calorias no Jiu-Jitsu: Aula e Rolas"
+- Depois: "Jiu-Jitsu Queima Quantas Calorias? Por Hora, Aula e Rola"
+- Prints "jiu jitsu calorias": por hora, queima (muitas) calorias, treino/aula, perde, gastas, kcal; PAA arte marcial que mais queima, emagrece antes e depois, hérnia de disco; relacionadas musculação 1h, muay thai, tabela de MET, kimono.
+- Seção "Jiu-jitsu: calorias por hora" (60–100 kg: só técnica, aula com 3 rolas, rola sem parar) + tabela de MET e link para o boxe; FAQ: por hora, queima muitas calorias?, arte marcial que mais queima, tabela de MET. Calculadora intocada.
+- Pauta: hérnia de disco e jiu-jitsu (saúde, precisa fonte), muay thai; kimono fora do tema.
