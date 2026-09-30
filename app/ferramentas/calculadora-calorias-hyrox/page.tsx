@@ -17,6 +17,7 @@ import {
   formataPace,
   tabelaProvas,
 } from "@/lib/hyrox";
+import { AULAS as AULAS_CF, MET_AQUECIMENTO, MET_PARADO, calcula as calculaCrossfit, kcalPorMinuto } from "@/lib/crossfit";
 
 /**
  * A página da Calculadora de Calorias no Hyrox.
@@ -32,9 +33,9 @@ const CAMINHO = "/ferramentas/calculadora-calorias-hyrox";
 const PESO = 70;
 
 export const metadata: Metadata = {
-  title: "Calculadora de Calorias no Hyrox: Prova e Estações",
+  title: "HYROX Queima Quantas Calorias? Prova, Treino e Estações",
   description:
-    "Quantas calorias uma prova de Hyrox gasta, pelo seu tempo final, pace e peso — separando os 8 km de corrida das oito estações, uma por uma.",
+    "Quantas calorias o HYROX queima na prova e no treino, pelo seu tempo, pace e peso: corrida, oito estações, por hora e HYROX x CrossFit.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
     title: "Calculadora de Calorias no Hyrox | Montinho Personal Trainer",
@@ -67,6 +68,12 @@ const breadcrumbSchema = {
 const TAB = tabelaProvas();
 const M = PROVAS[1];
 const MEDIA = calcula(PESO, M.minutos, M.paceSeg)!;
+const PESOS_TREINO = [60, 70, 80, 90, 100] as const;
+/** Treino de 60 min: 10 de aquecimento, 40 de circuito no ritmo das estações, 10 de explicação e pausa. Estimativa declarada. */
+const TREINO = (p: number) => kcalPorMinuto(MET_AQUECIMENTO, p) * 10 + kcalPorMinuto(MET_ESTACOES, p) * 40 + kcalPorMinuto(MET_PARADO, p) * 10;
+const CF = AULAS_CF[0];
+const CF_AULA = calculaCrossfit(PESO, CF.aula, CF.aquecimento, CF.forca, CF.wod, CF.formato)!;
+const POR_HORA = (MEDIA.kcal / MEDIA.minutosTotais) * 60;
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
@@ -77,6 +84,23 @@ const faq: ItemFAQ[] = [
   {
     question: "Quantas calorias gasta uma prova de Hyrox?",
     answer: `Uma prova em ${hm(M.minutos)}, com pace de ${formataPace(M.paceSeg)} por km, gasta cerca de ${mil(TAB[1].kcal70)} kcal para ${PESO} kg e ${mil(TAB[1].kcal90)} para 90 kg. Uma prova forte, em ${hm(PROVAS[0].minutos)}, gasta cerca de ${mil(TAB[0].kcal70)} para ${PESO} kg; uma primeira prova, em ${hm(PROVAS[2].minutos)}, cerca de ${mil(TAB[2].kcal70)}.`,
+  },
+  {
+    question: "HYROX queima quantas calorias por hora?",
+    answer: `Na prova em ${hm(M.minutos)}, para ${PESO} kg, o ritmo médio dá cerca de ${kc(POR_HORA)} kcal por hora. Quem pesa mais ou corre mais rápido gasta mais por hora; quem leva mais tempo gasta mais no total, mas menos por minuto.`,
+  },
+  {
+    question: "Quantas calorias gasta um treino de HYROX?",
+    answer: `Um treino de uma hora, com 10 minutos de aquecimento, 40 de circuito no ritmo das estações e 10 de explicação e pausa, gasta cerca de ${kc(TREINO(PESO))} kcal para ${PESO} kg e ${kc(TREINO(90))} para 90 kg. É uma estimativa: treino com mais corrida ou menos pausa gasta mais.`,
+  },
+  {
+    question: "HYROX ou CrossFit: qual gasta mais calorias?",
+    answer: `Na prova, o HYROX: ${mil(TAB[1].kcal70)} kcal numa prova em ${hm(M.minutos)} para ${PESO} kg, contra cerca de ${kc(CF_AULA.kcal)} kcal numa aula típica de CrossFit de uma hora. No treino, a aula de HYROX também tende a gastar mais (≈ ${kc(TREINO(PESO))} kcal por hora, estimado), porque tem mais tempo de circuito e menos de força e técnica parada. Mas o que decide o resultado é quantas vezes você treina na semana, não qual das duas escolhe.`,
+  },
+  {
+    question: "Quem faz HYROX precisa fazer musculação?",
+    answer:
+      "Precisa. Sled push, sled pull, farmers carry, sandbag lunges e wall balls são força sob fadiga, com o coração já alto da corrida. A musculação dá a força para essas estações e protege joelho, lombar e ombro nas semanas de treino. Quem só corre costuma perder a prova nos trenós.",
   },
   {
     question: "O que gasta mais no Hyrox: a corrida ou as estações?",
@@ -154,6 +178,37 @@ export default function CalculadoraHyroxPage() {
                 </tbody>
               </table>
             </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Treino de HYROX: quantas calorias?</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Uma aula de uma hora não é uma prova: tem 10 minutos de aquecimento, cerca de 40 de circuito e o resto em explicação e
+              pausa. Por peso, estimado:
+            </p>
+            <div className="overflow-x-auto mb-3">
+              <table className="w-full text-sm border-collapse">
+                <caption className="sr-only">Gasto estimado de um treino de HYROX de uma hora, por peso</caption>
+                <thead>
+                  <tr className="border-b border-white/20">
+                    <th scope="col" className={th}>Peso</th>
+                    <th scope="col" className="text-left text-gray-400 font-medium py-2.5">Treino de 1 hora</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {PESOS_TREINO.map((p) => (
+                    <tr key={p} className="border-b border-white/10">
+                      <td className="text-gray-300 py-2.5 pr-4 tabular-nums">{p} kg</td>
+                      <td className="text-white py-2.5 font-medium tabular-nums">≈ {kc(TREINO(p))} kcal</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-gray-400 text-sm">
+              Para comparar com uma aula de box, veja a{" "}
+              <Link href="/ferramentas/calculadora-calorias-crossfit" className={ln}>Calculadora de Calorias no CrossFit</Link>.
+            </p>
           </div>
 
           <div>
