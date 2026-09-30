@@ -79178,6 +79178,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Aldeia da Serra:</strong> <a href="/blog/scelta-aldeia-da-serra">Scelta Aldeia da Serra</a> e o <a href="/blog/academias-em-aldeia-da-serra">guia da Aldeia</a>.</li>
 <li><strong>Quem vem pela Castelo Branco ou de trem:</strong> <a href="/blog/academia-perto-da-castelo-branco">academia perto da Castelo Branco</a> e <a href="/blog/academia-perto-da-estacao-antonio-joao">perto da estação Antônio João</a>.</li>
 </ul>
+<p><strong>Smart Fit perto de você:</strong> a rede tem mais de uma unidade na região — uma delas no Shopping Flamingo Alphaville, em Barueri. As pessoas buscam as unidades pelo ponto de referência (Flamingo, Carrefour, Sodimac); confira a mais próxima no localizador do site da Smart Fit e leia a <a href="/blog/smart-fit-alphaville">análise da Smart Fit Alphaville</a>. <strong>Gaviões:</strong> a <a href="/blog/academia-gavioes-alphaville">Academia Gaviões Alphaville</a> fica na Rua Juruá, 253, com musculação, artes marciais, dança, sala de bike e rooftop, segundo o site oficial.</p>
 <p>Ainda em dúvida? O <a href="/academia-ideal-alphaville">quiz da academia ideal</a> cruza região, horário, preço e convênio.</p>
 
 <h2>Comparativo qualitativo da região</h2>
@@ -79212,6 +79213,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><a href="/blog/melhor-academia-de-alphaville">Qual é a melhor academia de Alphaville?</a></li>
 </ul>`,
     faq: [
+      { question: "Onde fica a Smart Fit em Alphaville?", answer: "A rede tem mais de uma unidade na região, incluindo a do Shopping Flamingo Alphaville, em Barueri. Confira a mais próxima no localizador do site da Smart Fit." },
+      { question: "Onde fica a Academia Gaviões Alphaville?", answer: "Na Rua Juruá, 253, em Alphaville, Barueri, segundo o site oficial da academia." },
       { question: "Qual academia fica perto do Iguatemi Alphaville?", answer: "A Bodytech fica perto do Iguatemi Alphaville. O guia de academias perto do Iguatemi traz as opções da região." },
       { question: "Qual academia fica perto da Alameda Rio Negro?", answer: "No Alphaville Industrial e Empresarial ficam Ironberg, Smart Fit, Bluefit, Panobianco, Bio Ritmo, Arena 18, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit." },
       { question: "Tem academia em Alphaville do lado de Santana de Parnaíba?", answer: "Sim: a Fábrica Premium fica na Estrada da Bela Vista, em Santana de Parnaíba, e o guia de academias da cidade traz as outras opções." },
