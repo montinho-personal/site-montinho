@@ -200,3 +200,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-calorias-bicicleta` (30/09) — sem base do GSC.
 - Título antes: "Calculadora de Calorias na Bicicleta: Rua e Ergométrica" → depois: "Calorias na Bicicleta: Calculadora para Rua e Ergométrica".
 - +5 FAQs do print (500 kcal, 20 min ergométrica leve/horizontal, 1 km, 40 min/dia, hérnia de disco), números calculados por lib/bicicleta.ts. Calculadora não alterada.
+
+`/ferramentas/calculadora-whey` (30/09) — sem base do GSC.
+- Título antes: "Calculadora de Whey Protein: Quanto Tomar por Dia?" → depois: "Quanto Whey Tomar por Dia? Calculadora por Peso e Objetivo" (termo exato do autocompletar primeiro).
+- +5 FAQs do print (70 kg, mais de 30 g, 2x/dia e 4 scoops, Mounjaro/GLP-1, cálculo renal e gastrite → médico). Calculadora não alterada. Fora: Growth, Integralmédica.

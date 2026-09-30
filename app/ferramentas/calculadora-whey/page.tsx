@@ -31,7 +31,7 @@ import {
 const CAMINHO = "/ferramentas/calculadora-whey";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Whey Protein: Quanto Tomar por Dia?",
+  title: "Quanto Whey Tomar por Dia? Calculadora por Peso e Objetivo",
   description:
     "Quanto whey tomar por dia a partir da sua meta de proteína e do que você já come, com o rótulo do seu whey. Veja também a duração do pacote e o custo.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -67,6 +67,7 @@ const g2 = (n: number) => n.toLocaleString("pt-BR", { maximumFractionDigits: 2 }
 const { porcaoG: P, proteinaG: Q } = ROTULO_PADRAO;
 const ROTULO_TXT = `um whey com ${Q} g de proteína em ${P} g`;
 const M80 = meta(80, "ganhar", true);
+const M70 = meta(70, "ganhar", true);
 const F80 = falta(M80.refG, 125);
 const D80 = dose(F80.faltaG, P, Q);
 /** Quanto de pó para 30 g de proteína. */
@@ -89,6 +90,11 @@ const faq: ItemFAQ[] = [
   { question: "Quantos scoops para 30 g de proteína?", answer: `Com ${ROTULO_TXT}, são ${PARA30.produtoG} g de pó, ou ${g2(PARA30.porcoes)} porções do rótulo. Quantas medidas isso dá depende da gramatura do seu dosador.` },
   { question: "Quanto tempo dura um whey de 900 g?", answer: `Com 30 g por dia, ${dur(900, 30)} dias; com 40 g, ${dur(900, 40)} dias. Tomando só nos dias de treino, dura mais em dias corridos — a calculadora faz essa conta.` },
   { question: "Quanto tempo dura 1 kg de whey?", answer: `Com 30 g por dia, ${dur(1000, 30)} dias; com 40 g, ${dur(1000, 40)} dias; com 50 g, ${dur(1000, 50)} dias.` },
+  { question: "Quantas gramas de whey para 70 kg?", answer: `Depende do que você já come. Para 70 kg, treinando para ganhar massa, a meta estimada de proteína fica entre ${M70.minG} e ${M70.maxG} g por dia (referência ${M70.refG} g). O whey entra só na diferença entre essa meta e a comida; se a alimentação já chega lá, ele é dispensável.` },
+  { question: "Pode tomar mais de 30 g de whey por dia?", answer: "Pode, em adultos saudáveis, desde que a proteína total do dia continue dentro da meta. Não há um teto de whey em gramas: o limite prático é que ele não substitua comida e que as calorias caibam no dia." },
+  { question: "Tomar whey duas vezes ao dia engorda?", answer: "Só se as calorias do dia passarem do gasto. Duas porções somam por volta de 200 a 260 kcal; se isso couber na meta calórica, não engorda, e pode até ajudar a controlar a fome no emagrecimento. Posso tomar 4 scoops? Pela mesma lógica: se a proteína total e as calorias fecham, sim, mas raramente é necessário." },
+  { question: "Quanto whey tomar usando Mounjaro ou outro GLP-1?", answer: "Com remédios como Mounjaro e Ozempic o apetite cai, e fica mais difícil bater a proteína com comida, o que aumenta o risco de perder músculo junto com gordura. O whey pode ajudar a completar a meta, mas a quantidade deve ser combinada com o médico que acompanha o tratamento. A ferramenta de massa magra com GLP-1 explica o cuidado com o músculo." },
+  { question: "Quem tem cálculo renal ou gastrite pode tomar whey?", answer: "São casos para decidir com o médico. Quem tem cálculo renal ou doença renal precisa de orientação sobre a proteína total do dia, venha ela da comida ou do whey. Na gastrite, alguns toleram melhor o isolado, com menos lactose e gordura, mas a resposta é individual." },
   { question: "Whey antes ou depois do treino?", answer: "Tanto faz na prática. A janela depois do treino é de horas, não de 30 minutos. O que pesa é a proteína total do dia e distribuí-la em algumas refeições; tomar depois do treino é só um horário cômodo." },
   { question: "Qual o melhor horário para tomar whey?", answer: "O horário em que ele completa uma refeição com pouca proteína. Café da manhã fraco em proteína, lanche da tarde ou depois do treino são escolhas comuns." },
   { question: "Pode tomar whey todos os dias?", answer: "Pode, em adultos saudáveis. Mas não precisa: a frequência depende de faltar proteína naquele dia. Nos dias em que a comida chega na meta, o whey é dispensável." },
