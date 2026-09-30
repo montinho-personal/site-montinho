@@ -217,3 +217,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 - Título antes: "Calculadora de Composição Corporal e Bioimpedância" → depois: "Percentual de Gordura: Composição Corporal e Bioimpedância".
 - +4 FAQs (como se calcula: fita/Marinha, dobras Jackson-Pollock 3/7, bioimpedância, DXA; 20%; 23%; 70 kg é gordo?). Calculadora não alterada.
 - Descompasso de intenção: a busca quer CALCULAR o % (fita ou dobras); a ferramenta parte do % pronto. Proposta ao Montinho: modo "estimar pela fita (Marinha)" — decisão dele.
+
+`/ferramentas/simulador-emagrecimento` (30/09) — sem base do GSC.
+- Título antes: "Simulador de Emagrecimento: Quanto Tempo até a Meta?" → depois: "Quanto Tempo para Emagrecer 10 kg? Simulador de Emagrecimento".
+- +5 FAQs (10 kg em 1 mês/20 dias, 2 ou 3 meses, caminhando, na academia, sem comer), faixa 0,5–1%/semana de lib/meta.ts. Simulador não alterado. Fora: "cardápio para perder 10 kg pdf" (pauta de isca), livro Dieta do Metabolismo Rápido.
