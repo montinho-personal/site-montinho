@@ -17,6 +17,7 @@ import {
   deDistanciaEPace,
   formataPace,
   formataRelogio,
+  velocidadeDePace,
   kcalLiquida,
   kcalLiquidaPorKm,
   kcalPorKm,
@@ -41,7 +42,7 @@ import {
 const CAMINHO = "/ferramentas/calculadora-corrida";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Corrida: Pace, Tempo e Calorias",
+  title: "Calculadora de Pace: Corrida, Esteira (km/h), Tempo e Calorias",
   description:
     "Converta pace, tempo e distância da sua corrida e veja o gasto calórico pelo seu peso — com o tempo estimado de 5 km, 10 km, meia e maratona.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -79,6 +80,9 @@ const EX_10K = deDistanciaEPace(10, PACE_EX, PESO_PADRAO);
 const PROVAS_EX = tabelaProvas(PACE_EX, PESO_PADRAO);
 const TAB_PESO = tabelaPorPeso(PACE_EX);
 const TAB_PACE = tabelaPorPace(PESO_PADRAO);
+/** Pace × velocidade × tempo de prova, para quem converte pace em km/h na esteira. */
+const PACES_KMH = [240, 270, 300, 330, 360, 390, 420, 450, 480];
+const PROVAS_KM = [5, 10, 21.0975, 42.195];
 const CMP = comparaComCaminhada(EX_5K, PESO_PADRAO);
 const UM_QUILO = simulacaoUmQuilo(PESO_PADRAO, PACE_EX);
 const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDigits: d });
@@ -108,6 +112,18 @@ const faq: ItemFAQ[] = [
     question: "O que é pace na corrida?",
     answer:
       "É o tempo que você leva para correr um quilômetro, escrito em minutos e segundos: 6:00 quer dizer seis minutos por quilômetro, o equivalente a 10 km/h. É a medida que os corredores usam porque ela responde direto a pergunta que importa numa prova — quanto tempo vou levar.",
+  },
+  {
+    question: "Como calcular o pace manualmente?",
+    answer: "Divida o tempo total em minutos pela distância em km. 5 km em 30 minutos: 30 ÷ 5 = 6:00 por km. Se sobrar decimal, multiplique a parte decimal por 60 para ter os segundos: 5,5 minutos por km é 5:30.",
+  },
+  {
+    question: "Como converter pace em km/h para a esteira?",
+    answer: "Divida 60 pelo pace em minutos. Pace 6:00 é 60 ÷ 6 = 10 km/h; pace 5:30 é 60 ÷ 5,5 ≈ 10,9 km/h. A tabela de pace × km/h desta página traz a conversão pronta com o tempo de 5 km, 10 km, meia e maratona.",
+  },
+  {
+    question: "Qual o tempo de meia maratona no meu pace?",
+    answer: "Multiplique o pace por 21,1 km. No pace 6:00, a meia sai em cerca de 2h06; no 5:00, em cerca de 1h45. A calculadora faz a conta para qualquer pace, e a tabela mostra os mais comuns.",
   },
   {
     question: "Quantos quilômetros para perder 1 kg?",
@@ -353,6 +369,40 @@ export default function CalculadoraCorridaPage() {
               Revisado em 22 de setembro de 2026 por <Link href="/minha-historia" className={ln}>Montinho</Link>,
               personal trainer em Alphaville. Estimativas de gasto energético, não orientação médica.
             </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>
+              Tabela de pace × km/h e tempo de prova
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Para usar na esteira, que mostra velocidade em km/h, e para saber quanto tempo cada pace dá nas distâncias de prova:
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="border-b border-white/20">
+                    <th className="text-left text-gray-400 font-medium py-2.5 pr-3">Pace</th>
+                    <th className="text-left text-gray-400 font-medium py-2.5 pr-3">km/h</th>
+                    <th className="text-left text-gray-400 font-medium py-2.5 pr-3">5 km</th>
+                    <th className="text-left text-gray-400 font-medium py-2.5 pr-3">10 km</th>
+                    <th className="text-left text-gray-400 font-medium py-2.5 pr-3">Meia</th>
+                    <th className="text-left text-gray-400 font-medium py-2.5">Maratona</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {PACES_KMH.map((p) => (
+                    <tr key={p} className="border-b border-white/10">
+                      <td className="text-white py-2.5 pr-3 font-medium tabular-nums">{formataPace(p)}</td>
+                      <td className="text-gray-300 py-2.5 pr-3 tabular-nums">{fmt(velocidadeDePace(p))}</td>
+                      {PROVAS_KM.map((km) => (
+                        <td key={km} className="text-gray-300 py-2.5 pr-3 tabular-nums">{formataRelogio(Math.round(p * km))}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
 
           <div>
