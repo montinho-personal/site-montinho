@@ -229,3 +229,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-calorias-natacao` (30/09) — sem base do GSC.
 - Título antes: "Calculadora de Calorias na Natação: Por Nado e Tempo" → depois: "Natação Gasta Quantas Calorias? Calculadora por Nado e Tempo".
 - +5 FAQs (1 km/500 m/2 km com premissa de 30 min/km, 45/50 min, aula de iniciante, × corrida/academia, diabetes/insuficiência cardíaca → médico). Números de lib/natacao.ts. Calculadora não alterada.
+
+`/ferramentas/calculadora-calorias-pular-corda` (30/09) — sem base do GSC.
+- Título antes: "Calculadora de Calorias Pulando Corda: Blocos e Saltos" → depois: "Pular Corda Gasta Quantas Calorias? Calculadora por Tempo e Saltos".
+- +4 FAQs (por minuto e 5/15/20/30 min, 100/200/500 pulos, equivalente a 1 h de caminhada e × corrida, diabetes/gravidez → médico). Números de lib/corda.ts e lib/caminhada.ts. Calculadora não alterada.
