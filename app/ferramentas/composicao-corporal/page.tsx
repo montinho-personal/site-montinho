@@ -31,7 +31,7 @@ import {
 const CAMINHO = "/ferramentas/composicao-corporal";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Composição Corporal e Bioimpedância",
+  title: "Percentual de Gordura: Composição Corporal e Bioimpedância",
   description:
     "Traduza o percentual de gordura em quilos de massa magra e gorda, veja em que faixa você está e quanto perder para chegar ao seu alvo.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -70,6 +70,22 @@ const faq: ItemFAQ[] = [
   {
     question: "Qual o percentual de gordura ideal?",
     answer: `Como referência, homens entre 10% e 20% e mulheres entre 18% e 28% estão em faixas saudáveis. ${NOTA_FAIXA_NAO_E_META}`,
+  },
+  {
+    question: "Como se calcula o percentual de gordura?",
+    answer: "Ele não se calcula só com peso e altura: precisa de uma medida do corpo. Os métodos mais usados são a fita métrica (método da Marinha dos EUA, com pescoço, cintura e, nas mulheres, quadril), as dobras cutâneas com adipômetro (protocolos de Jackson e Pollock de 3 ou 7 dobras, feitos por um profissional), a bioimpedância e o DXA, que é o mais preciso. Com o percentual em mãos, esta calculadora traduz o número em quilos e faixas.",
+  },
+  {
+    question: "Quanto é 20% de gordura corporal?",
+    answer: "É um quinto do peso em gordura. Para 80 kg, são 16 kg de massa gorda e 64 kg de massa magra. Para homens, 20% fica no limite de cima da faixa saudável; para mulheres, dentro dela.",
+  },
+  {
+    question: "23% de gordura corporal é muito?",
+    answer: "Depende do sexo. Para mulheres, 23% está dentro da faixa saudável de referência (18% a 28%). Para homens, está um pouco acima dela (10% a 20%). Faixa é referência para situar, não meta.",
+  },
+  {
+    question: "70 kg é considerado gordo?",
+    answer: "O peso sozinho não responde. Duas pessoas com 70 kg podem ter composições muito diferentes, conforme a altura e quanto do peso é músculo. Por isso o percentual de gordura, e não o peso, diz se há gordura em excesso.",
   },
   {
     question: "Por que meu resultado mudou tanto de um dia para o outro?",
