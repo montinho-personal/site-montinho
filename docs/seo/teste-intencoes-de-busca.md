@@ -233,3 +233,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-calorias-pular-corda` (30/09) — sem base do GSC.
 - Título antes: "Calculadora de Calorias Pulando Corda: Blocos e Saltos" → depois: "Pular Corda Gasta Quantas Calorias? Calculadora por Tempo e Saltos".
 - +4 FAQs (por minuto e 5/15/20/30 min, 100/200/500 pulos, equivalente a 1 h de caminhada e × corrida, diabetes/gravidez → médico). Números de lib/corda.ts e lib/caminhada.ts. Calculadora não alterada.
+
+`/ferramentas/calculadora-calorias-spinning` (30/09) — sem base do GSC. Já aparece na 1ª página para "spinning gasta quantas calorias" (print de 30/09).
+- Título antes: "Calculadora de Calorias no Spinning: Watts e Aula" → depois: "Spinning Gasta Quantas Calorias? Calculadora por Aula e Watts".
+- +4 FAQs (30/40/45/50 min, × musculação, × esteira, frequência/todo dia). Números de lib/spinning.ts. Calculadora não alterada. Fora: "antes e depois", "como fica o corpo" (fotos, sem fonte).

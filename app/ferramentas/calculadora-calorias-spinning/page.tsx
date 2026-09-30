@@ -37,7 +37,7 @@ import {
 const CAMINHO = "/ferramentas/calculadora-calorias-spinning";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Calorias no Spinning: Watts e Aula",
+  title: "Spinning Gasta Quantas Calorias? Calculadora por Aula e Watts",
   description:
     "Quantas calorias a sua aula de spinning gasta, pela potência em watts que a bike mostra ou pela aula, com o seu peso — e por que o visor dá outro número.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -77,6 +77,7 @@ const EX_FAIXA = faixaDe(EX_W)!;
 const EX_MET = calcula(PESO_PADRAO, 45, EX_FAIXA.met);
 const EX_KJ = kjDoTrabalho(EX_W, 45);
 const TRES = semana(AULA, 3);
+const MIN_AULA = [30, 40, 45, 50].map((m) => ({ m, kcal: calcula(PESO_PADRAO, m, MET_AULA).kcal }));
 const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -91,6 +92,22 @@ const faq: ItemFAQ[] = [
   {
     question: "Quantas calorias gasta 1 hora de spinning?",
     answer: `Para ${PESO_PADRAO} kg, cerca de ${kc(calcula(PESO_PADRAO, 60, MET_AULA).kcal)} kcal numa aula comum. Com a bike marcando de 101 a 160 W de média, cerca de ${kc(calcula(PESO_PADRAO, 60, 8.8).kcal)} kcal.`,
+  },
+  {
+    question: "30, 40, 45 ou 50 minutos de spinning queimam quantas calorias?",
+    answer: `Numa aula comum, para ${PESO_PADRAO} kg: ${MIN_AULA.map((x) => `${x.m} min ≈ ${arredondaKcal(x.kcal)} kcal`).join("; ")}. Se a bike mostra watts, a calculadora usa a potência e fica mais precisa que a média da aula.`,
+  },
+  {
+    question: "O que emagrece mais, spinning ou musculação?",
+    answer: "Por minuto, o spinning gasta mais calorias. Mas quem emagrece é o déficit da semana, e a musculação é o que garante que o peso perdido seja gordura e não músculo. O melhor resultado vem da combinação das duas, com a alimentação ajustada.",
+  },
+  {
+    question: "O que gasta mais calorias, spinning ou esteira?",
+    answer: "Depende da intensidade. Uma aula de spinning comum gasta mais que caminhar na esteira no plano e fica parecida com corrida em ritmo moderado. Com esteira inclinada ou corrida rápida, a esteira pode passar o spinning.",
+  },
+  {
+    question: "Pode fazer spinning todos os dias? Quantas vezes por semana?",
+    answer: "Dá para pedalar todos os dias em intensidade leve, mas aulas intensas todo dia atrapalham a recuperação e a musculação. Para a maioria das pessoas, 2 a 4 aulas por semana, junto com o treino de força, é um bom equilíbrio. Spinning emagrece quantos quilos por semana depende do déficit total, não da aula.",
   },
   {
     question: "As calorias do visor da bike são confiáveis?",
