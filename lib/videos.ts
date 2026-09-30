@@ -1,41 +1,233 @@
 /**
- * Vídeos do canal do Montinho e o dado estruturado deles (VideoObject).
+ * Vídeos do canal do Montinho: o registro que alimenta as páginas
+ * /videos/<slug> e o dado estruturado (VideoObject).
  *
- * POR QUE UM REGISTRO, E NÃO LER DO HTML DO ARTIGO
+ * SÓ VÍDEO DO PRÓPRIO MONTINHO
  *
- * O Google exige três campos no VideoObject: nome, miniatura e DATA DE
- * PUBLICAÇÃO. Nome e miniatura dá para tirar do embed; a data, não — ela só
- * existe no YouTube, e inventá-la (usando a data do artigo, por exemplo)
- * seria dado estruturado falso, que o Google penaliza no site inteiro.
- * Então só entra aqui vídeo com data conferida, e só vídeo do próprio
- * Montinho: marcar como "nosso" o vídeo de outro canal seria mentir sobre a
- * autoria.
+ * Marcar como "nosso" o vídeo de outro canal seria mentir sobre a autoria.
+ * Vídeo de terceiros pode continuar embutido num artigo, mas não entra aqui.
  *
- * Vídeo que está no artigo mas não está aqui continua aparecendo
- * normalmente; ele só não ganha a marcação. Para incluir, basta a data de
- * publicação que o YouTube Studio mostra.
+ * UMA PÁGINA POR TEMA
+ *
+ * Quando dois vídeos falam da mesma coisa (dois sobre a balança, dois sobre
+ * "melhor exercício"), só um ganha página. Duas páginas para a mesma busca
+ * competem entre si e nenhuma ranqueia.
+ *
+ * A DATA DE PUBLICAÇÃO
+ *
+ * O Google exige nome, miniatura e data no VideoObject. A data só existe no
+ * YouTube, e inventá-la seria dado estruturado falso. Então `publicadoEm`
+ * fica vazio até ser conferido no YouTube Studio: a página existe e o vídeo
+ * aparece normalmente, só sem a marcação.
  */
 
 export interface VideoCanal {
   /** O id de 11 caracteres da URL do YouTube. */
   id: string;
+  /** Endereço da página em /videos/<slug>. */
+  slug: string;
   titulo: string;
+  /** Título da aba e do Google (até ~60 caracteres). */
+  metaTitle: string;
   descricao: string;
+  /** Texto da página, em parágrafos, a partir da descrição do Montinho. */
+  texto: string[];
+  artigos: { href: string; nome: string }[];
+  ferramenta?: { href: string; nome: string };
   /** Data de publicação no YouTube, AAAA-MM-DD. Conferida, nunca estimada. */
-  publicadoEm: string;
+  publicadoEm?: string;
 }
 
 export const VIDEOS_CANAL: VideoCanal[] = [
   {
     id: "9X968Kqa2-Y",
+    slug: "a-balanca-mente",
     titulo: "A balança mente? Por que o peso sobe mesmo emagrecendo",
+    metaTitle: "A Balança Mente? Por Que o Peso Sobe Mesmo Emagrecendo",
     descricao:
       "O peso muda todo dia: sal, sono ruim e treino pesado fazem o corpo segurar água. Com musculação você perde gordura e ganha músculo ao mesmo tempo. O que medir de verdade: cintura toda semana, foto a cada 15 dias e a roupa.",
+    texto: [
+      "Você pode estar emagrecendo e a balança não mostrar. O peso muda todo dia: sal, sono ruim e treino pesado fazem o corpo segurar água e o número subir. Não é gordura, é água.",
+      "E com musculação você perde gordura e ganha músculo ao mesmo tempo. A balança para, mas o corpo continua mudando.",
+      "O que medir de verdade: a cintura, toda semana; uma foto, a cada 15 dias; e a roupa, que folga antes do número cair. A balança é só um dado. O seu placar é a constância.",
+    ],
+    artigos: [
+      { href: "/blog/balanca-nao-muda-mas-o-corpo-muda", nome: "A balança não muda, mas o corpo muda" },
+      { href: "/blog/retencao-de-liquido-como-desinchar", nome: "Retenção de líquido: como desinchar" },
+      { href: "/blog/como-tirar-medidas-corporais", nome: "Como tirar medidas corporais" },
+    ],
+    ferramenta: { href: "/ferramentas/simulador-emagrecimento", nome: "Simulador de emagrecimento" },
     publicadoEm: "2026-10-01",
+  },
+  {
+    id: "nrT-Fan_Nbg",
+    slug: "efeito-sanfona",
+    titulo: "Efeito sanfona: por que você volta a engordar",
+    metaTitle: "Efeito Sanfona: Por Que Você Volta a Engordar",
+    descricao:
+      "Você não voltou a engordar por falta de força de vontade. Muitas vezes ensinaram você a perder peso, mas ninguém ensinou a manter o resultado.",
+    texto: [
+      "Você não voltou a engordar porque é fraco ou porque não tem força de vontade. Muitas vezes, o efeito sanfona acontece porque ensinaram você a perder peso, mas ninguém ensinou como manter o resultado depois do emagrecimento.",
+      "Dietas extremamente restritivas, fome, abandono completo dos alimentos que você gosta e uma rotina de treinos impossível de sustentar podem até gerar resultados rápidos. O problema é que, quando essa fase termina, os hábitos antigos costumam voltar.",
+      "Neste vídeo, o Montinho explica por que preservar a massa muscular, construir hábitos que cabem na sua vida e planejar a fase de manutenção reduzem as chances de recuperar o peso perdido. Ele também já viveu o efeito sanfona.",
+      "O objetivo não deve ser só encontrar uma maneira rápida de emagrecer. Deve ser construir uma maneira possível de viver.",
+    ],
+    artigos: [{ href: "/blog/como-evitar-efeito-sanfona", nome: "Como evitar o efeito sanfona" }],
+    ferramenta: { href: "/ferramentas/calculadora-de-proteina", nome: "Calculadora de proteína" },
+  },
+  {
+    id: "DiH1OzIR6Yk",
+    slug: "proteja-seu-objetivo",
+    titulo: "Proteja o seu objetivo: a brecha que te faz recomeçar",
+    metaTitle: "Proteja o Seu Objetivo: a Brecha Que Te Faz Recomeçar",
+    descricao:
+      "Quem chegou lá protege o objetivo. Uma exceção vira duas, duas viram hábito, e você volta ao ponto de onde queria sair.",
+    texto: [
+      "Quando o assunto é melhorar o shape, existe uma verdade que muita gente não quer aceitar: quem faz o trabalho não tem como dar errado.",
+      "Por experiência própria, e observando centenas de pessoas que chegaram lá, todas têm uma coisa em comum: elas protegem o objetivo delas. Não significa nunca sair, nunca comer algo diferente ou viver preso. Significa não abrir brechas o tempo todo.",
+      "Porque uma exceção vira duas. Duas viram um hábito. E, quando você percebe, está de volta ao ponto de onde tanto queria sair. Foi o que aconteceu com o Montinho por muito tempo: \"é só hoje\", \"segunda eu volto\", \"essa semana foi puxada\".",
+      "O shape não é construído pelos dias em que você está animado. É construído principalmente nos dias em que seria muito mais fácil desistir.",
+    ],
+    artigos: [
+      { href: "/blog/fim-de-semana-estraga-a-dieta", nome: "O fim de semana estraga a dieta?" },
+      { href: "/blog/como-nao-desistir-da-dieta", nome: "Como não desistir da dieta" },
+    ],
+  },
+  {
+    id: "GPuqJs_DRoY",
+    slug: "sensacao-de-dever-feito",
+    titulo: "O poder da disciplina: a sensação de dever feito",
+    metaTitle: "O Poder da Disciplina: a Sensação de Dever Feito",
+    descricao:
+      "Esse é o poder da disciplina: a sensação de dever feito e a confiança de ter feito tudo o que só você poderia fazer.",
+    texto: [
+      "Esse é o poder da disciplina: aquela sensação de dever feito.",
+      "É uma sensação de confiança, porque você fez tudo aquilo que só você poderia ter feito. Ninguém treina por você, ninguém come por você.",
+    ],
+    artigos: [
+      { href: "/blog/como-continuar-emagrecendo-sem-perder-motivacao", nome: "Como continuar emagrecendo sem perder a motivação" },
+    ],
+  },
+  {
+    id: "yndKE1GrnUQ",
+    slug: "toda-transformacao-comeca-com-uma-decisao",
+    titulo: "Toda transformação começa com uma decisão",
+    metaTitle: "Toda Transformação Começa Com Uma Decisão",
+    descricao:
+      "Quem conseguiu emagrecer ou ganhar massa aprendeu a dizer não para o que afastava do objetivo. Não existe fórmula mágica: existe disciplina e constância.",
+    texto: [
+      "Toda transformação começa com uma decisão.",
+      "Quem conseguiu emagrecer, ganhar massa muscular ou mudar de vida aprendeu a dizer não para aquilo que afastava do objetivo.",
+      "Não existe fórmula mágica. Existe disciplina, constância e a capacidade de escolher o que realmente importa todos os dias. E você: quantos \"nãos\" já disse hoje para ficar mais perto do seu objetivo?",
+    ],
+    artigos: [{ href: "/blog/como-nao-desistir-da-dieta", nome: "Como não desistir da dieta" }],
+  },
+  {
+    id: "RvapDDClRXY",
+    slug: "melhor-exercicio-e-o-que-voce-mantem",
+    titulo: "Qual o melhor exercício para ganhar músculo? A pergunta está errada",
+    metaTitle: "Melhor Exercício Para Ganhar Músculo? A Pergunta Está Errada",
+    descricao:
+      "O melhor exercício no estudo não é necessariamente o melhor para você. Execução, objetivo, volume e segurança importam, mas aderência é o que mais importa.",
+    texto: [
+      "Qual o melhor exercício para ganhar músculo? Talvez essa seja uma das perguntas mais erradas da musculação. O melhor exercício no estudo não necessariamente é o melhor exercício para você.",
+      "Estudo importa. Execução, objetivo, volume, segurança e intensidade também. Mas tem uma coisa que muita gente esquece: aderência é o que mais importa. Não adianta um treino teoricamente perfeito se você odeia fazer aquele treino.",
+      "Treino não é feito para um estudo científico. É feito para uma pessoa com rotina, preferências, limitações e tempo disponível. A pergunta certa é: qual o melhor exercício para essa pessoa, nesse momento, para esse objetivo? Prescrever treino é tomar decisões.",
+    ],
+    artigos: [{ href: "/blog/melhor-exercicio-para-ganhar-musculo", nome: "Melhor exercício para ganhar músculo" }],
+    ferramenta: { href: "/ferramentas/calculadora-volume-treino", nome: "Calculadora de volume de treino" },
+  },
+  {
+    id: "Dg8Sbv6_V8w",
+    slug: "aprenda-a-recomecar-rapido",
+    titulo: "O maior conselho para emagrecer: aprenda a recomeçar rápido",
+    metaTitle: "O Maior Conselho Para Emagrecer: Recomece Rápido",
+    descricao:
+      "Perdeu um treino? Volta no próximo. O que mais atrapalha o emagrecimento não é errar uma vez, é transformar um erro pequeno em semanas longe do objetivo.",
+    texto: [
+      "O maior conselho para quem quer emagrecer é simples: aprenda a recomeçar rápido.",
+      "Perdeu um treino? Volta no próximo. Saiu da dieta em uma refeição? Volta na próxima. Comeu demais no fim de semana? Continua. Ficou alguns dias sem treinar? Recomeça.",
+      "O que mais atrapalha o emagrecimento não é errar uma vez. É transformar um erro pequeno em vários dias ou semanas longe do objetivo. Você não precisa fazer tudo perfeito para mudar o seu corpo: precisa aprender a voltar para o caminho cada vez mais rápido.",
+      "Consistência não é nunca errar. É não desistir quando errar.",
+    ],
+    artigos: [
+      { href: "/blog/fim-de-semana-estraga-a-dieta", nome: "O fim de semana estraga a dieta?" },
+      { href: "/blog/como-nao-desistir-da-dieta", nome: "Como não desistir da dieta" },
+    ],
+    ferramenta: { href: "/ferramentas/simulador-emagrecimento", nome: "Simulador de emagrecimento" },
+  },
+  {
+    id: "xb1sP6z01-s",
+    slug: "nao-sentiu-o-musculo",
+    titulo: "Não sentiu o músculo? Pump não é sinônimo de hipertrofia",
+    metaTitle: "Não Sentiu o Músculo? Pump Não É Hipertrofia",
+    descricao:
+      "Não sentir o músculo não significa que você treinou errado. Execução, esforço, proximidade da falha e progressão importam mais do que sentir queimar.",
+    texto: [
+      "Não sentiu o músculo durante o exercício? Isso não significa automaticamente que você treinou errado.",
+      "Pump não é sinônimo de hipertrofia. Sentir queimar não significa crescer mais. Conexão mente-músculo pode ajudar, mas não é a única medida de um bom treino.",
+      "Execução, esforço, proximidade da falha e progressão ao longo do tempo importam muito mais. Músculo não cresce porque você sentiu. Músculo cresce porque você deu estímulo.",
+    ],
+    artigos: [{ href: "/blog/conexao-mente-musculo", nome: "Conexão mente-músculo" }],
+    ferramenta: { href: "/ferramentas/calculadora-volume-treino", nome: "Calculadora de volume de treino" },
+  },
+  {
+    id: "0uzpCxIJkBg",
+    slug: "caneta-emagrecedora-perda-de-musculo",
+    titulo: "Caneta emagrecedora: um a cada três quilos pode não ser gordura",
+    metaTitle: "Caneta Emagrecedora: Como Não Perder Músculo Junto",
+    descricao:
+      "Sem treino de força, parte relevante do peso perdido com as canetas vem de massa magra. Não é para parar o remédio: é para não entregar o músculo junto.",
+    texto: [
+      "Um a cada três quilos que você perde na caneta pode não ser gordura. Nos estudos dessa classe de medicamento, sem treino de força, 30 a 40% do peso perdido vem de massa magra. Na semaglutida, perto de 39%.",
+      "Músculo é o motor que gasta energia 24 horas por dia. Perder músculo é o que facilita o peso voltar depois.",
+      "Não é para parar o remédio: isso é com o seu médico. É para não entregar o músculo junto: musculação 3 a 4 vezes por semana e 1,6 a 2 g de proteína por quilo. Perda muscular na caneta não é inevitável. É evitável.",
+    ],
+    artigos: [
+      { href: "/blog/mounjaro-faz-perder-musculos", nome: "Mounjaro faz perder músculos?" },
+      { href: "/blog/ozempic-faz-perder-musculo", nome: "Ozempic faz perder músculo?" },
+      { href: "/blog/ozempic-e-treino", nome: "Ozempic e treino" },
+    ],
+    ferramenta: { href: "/ferramentas/calculadora-de-proteina", nome: "Calculadora de proteína" },
+  },
+  {
+    id: "yqPAYRVTe0E",
+    slug: "pare-de-copiar-treino-de-influencer",
+    titulo: "Pare de copiar o treino do influencer",
+    metaTitle: "Pare de Copiar o Treino do Influencer",
+    descricao:
+      "Não existe segredo nem um único caminho. O treino perfeito é aquele que você consegue seguir por mais tempo e que cabe na sua rotina.",
+    texto: [
+      "Parem de tentar copiar o treino da blogueirinha ou do influencer que você gosta. Não existe segredo, não existe apenas um caminho.",
+      "O treino perfeito é aquele que você consegue seguir por mais tempo. É aquele que se encaixa na sua rotina e nas suas individualidades.",
+      "Seguindo o plano com consistência, é impossível dar errado.",
+    ],
+    artigos: [{ href: "/blog/melhor-exercicio-para-ganhar-musculo", nome: "Melhor exercício para ganhar músculo" }],
+    ferramenta: { href: "/treino-para-minha-rotina", nome: "Treino para a minha rotina" },
+  },
+  {
+    id: "izMrrSoJGBw",
+    slug: "raiva-e-sangue-no-olho",
+    titulo: "O que todo mundo que evoluiu no shape tem em comum",
+    metaTitle: "O Que Todo Mundo Que Evoluiu no Shape Tem em Comum",
+    descricao:
+      "Um dia você vai errar. Sem raiva e sangue no olho para continuar, você desiste como sempre fez. Quem faz o trabalho não tem como dar errado.",
+    texto: [
+      "Existe uma característica em comum em todas as pessoas que conseguiram evoluir no shape, emagrecer e ganhar massa muscular.",
+      "Um dia, com certeza, você vai errar. Se você não tiver raiva e sangue no olho para continuar, vai desistir como sempre fez.",
+      "E uma coisa é certa: quem fez o trabalho não tem como dar errado. É só fazer.",
+    ],
+    artigos: [
+      { href: "/blog/como-continuar-emagrecendo-sem-perder-motivacao", nome: "Como continuar emagrecendo sem perder a motivação" },
+    ],
   },
 ];
 
 const porId = new Map(VIDEOS_CANAL.map((v) => [v.id, v]));
+
+export function videoPorSlug(slug: string): VideoCanal | undefined {
+  return VIDEOS_CANAL.find((v) => v.slug === slug);
+}
 
 /** Ids de YouTube embutidos num HTML, na ordem em que aparecem, sem repetir. */
 export function videosEmbutidos(html: string): string[] {
@@ -43,23 +235,30 @@ export function videosEmbutidos(html: string): string[] {
   return [...new Set(ids)];
 }
 
+/** VideoObject de um vídeo, ou null se a data ainda não foi conferida. */
+export function videoSchema(v: VideoCanal, siteUrl: string) {
+  if (!v.publicadoEm) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: v.titulo,
+    description: v.descricao,
+    thumbnailUrl: [`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`],
+    uploadDate: v.publicadoEm,
+    embedUrl: `https://www.youtube.com/embed/${v.id}`,
+    contentUrl: `https://www.youtube.com/shorts/${v.id}`,
+    author: { "@type": "Person", name: "Montinho", url: `${siteUrl}/minha-historia` },
+  };
+}
+
 /**
- * VideoObject para cada vídeo registrado que aparece no HTML. Vídeo de
- * terceiros ou sem data conferida fica de fora.
+ * VideoObject para cada vídeo registrado, com data, que aparece no HTML.
+ * Vídeo de terceiros ou sem data conferida fica de fora.
  */
 export function videoSchemas(html: string, siteUrl: string) {
   return videosEmbutidos(html)
     .map((id) => porId.get(id))
     .filter((v): v is VideoCanal => Boolean(v))
-    .map((v) => ({
-      "@context": "https://schema.org",
-      "@type": "VideoObject",
-      name: v.titulo,
-      description: v.descricao,
-      thumbnailUrl: [`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`],
-      uploadDate: v.publicadoEm,
-      embedUrl: `https://www.youtube.com/embed/${v.id}`,
-      contentUrl: `https://www.youtube.com/shorts/${v.id}`,
-      author: { "@type": "Person", name: "Montinho", url: `${siteUrl}/minha-historia` },
-    }));
+    .map((v) => videoSchema(v, siteUrl))
+    .filter((s): s is NonNullable<typeof s> => s !== null);
 }

@@ -3,6 +3,7 @@ import { MOBILIDADE_NO_AR } from "@/lib/mobilidade/lancamento";
 import { alimentosIndexaveis } from "@/lib/alimentos/base";
 import type { MetadataRoute } from "next";
 import { blogPosts, SITE_URL } from "@/lib/blog";
+import { VIDEOS_CANAL } from "@/lib/videos";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -18,6 +19,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${SITE_URL}/videos`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.6,
+    },
+    ...VIDEOS_CANAL.map((v) => ({
+      url: `${SITE_URL}/videos/${v.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
     {
       url: `${SITE_URL}/consultoria-online`,
       lastModified: new Date(),
