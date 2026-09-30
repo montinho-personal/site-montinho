@@ -75,6 +75,8 @@ import { ARTIGOS_COM_CALCULADORA_NATACAO } from "@/lib/natacao";
 import CalculadoraNatacao from "@/components/natacao/CalculadoraNatacao";
 import { ARTIGOS_COM_CALCULADORA_JIU } from "@/lib/jiujitsu";
 import CalculadoraJiuJitsu from "@/components/jiujitsu/CalculadoraJiuJitsu";
+import { ARTIGOS_COM_CALCULADORA_MUAY } from "@/lib/muaythai";
+import CalculadoraMuayThai from "@/components/muaythai/CalculadoraMuayThai";
 import { ARTIGOS_COM_CALCULADORA_CORDA } from "@/lib/corda";
 import CalculadoraCorda from "@/components/corda/CalculadoraCorda";
 import { ARTIGOS_COM_CALCULADORA_ESCADA } from "@/lib/escada";
@@ -269,6 +271,8 @@ export default async function BlogPost({ params }: Props) {
                                             ? "natacao"
                                             : ARTIGOS_COM_CALCULADORA_JIU.includes(post.slug)
                                               ? "jiujitsu"
+                                              : ARTIGOS_COM_CALCULADORA_MUAY.includes(post.slug)
+                                              ? "muaythai"
                                               : ARTIGOS_COM_CALCULADORA_CORDA.includes(post.slug)
                                                 ? "corda"
                                                 : ARTIGOS_COM_CALCULADORA_ESCADA.includes(post.slug)
@@ -532,6 +536,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraNatacao placement={post.slug} />
                 ) : qualCalc === "jiujitsu" ? (
                   <CalculadoraJiuJitsu placement={post.slug} />
+                ) : qualCalc === "muaythai" ? (
+                  <CalculadoraMuayThai placement={post.slug} />
                 ) : qualCalc === "corda" ? (
                   <CalculadoraCorda placement={post.slug} />
                 ) : qualCalc === "escada" ? (
