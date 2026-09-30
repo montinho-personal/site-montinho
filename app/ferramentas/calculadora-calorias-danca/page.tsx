@@ -32,7 +32,7 @@ import {
 const CAMINHO = "/ferramentas/calculadora-calorias-danca";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Calorias na Dança: Forró, Funk e Salão",
+  title: "Dança Gasta Quantas Calorias? Calculadora por Ritmo e Tempo",
   description:
     "Quantas calorias o seu ritmo gasta — forró, salão, ballet, funk ou samba no pé — com o seu peso, comparado com todos os outros ritmos no mesmo tempo.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -68,6 +68,9 @@ const TAB = tabelaEstilos(60);
 const L = (id: string) => TAB.find((l) => l.estilo.id === id)!;
 const FORRO = calcula(PESO_PADRAO, 60, estilo("forro").met);
 const FORRO_3X = kgPorMes(FORRO, 3);
+const ACAD = estilo("academia");
+const ACAD_MIN = [20, 30, 60, 120].map((m) => ({ m, kcal: calcula(PESO_PADRAO, m, ACAD.met).kcal }));
+const FORRO_7X = kgPorMes(FORRO, 7);
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kg = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -77,6 +80,22 @@ const faq: ItemFAQ[] = [
   {
     question: "Qual dança queima mais calorias?",
     answer: `As mais intensas e contínuas: funk, hip hop e samba no pé, cerca de ${mil(L("academia").kcal70)} kcal por hora para ${PESO_PADRAO} kg. Forró fica perto de ${mil(L("forro").kcal70)} kcal, e a dança de salão lenta, como valsa e bolero, perto de ${mil(L("salao").kcal70)} kcal. Mas o ritmo que emagrece mais é o que você repete toda semana.`,
+  },
+  {
+    question: "20, 30 minutos, 1 ou 2 horas de dança queimam quantas calorias?",
+    answer: `Numa aula de dança de academia (ritmos, FitDance), para ${PESO_PADRAO} kg: ${ACAD_MIN.map((x) => `${x.m} min ≈ ${kc(x.kcal)} kcal`).join("; ")}. Em ritmos mais leves, como dança de salão, o gasto é menor; a tabela por estilo mostra a diferença.`,
+  },
+  {
+    question: "Dançar 1 hora por dia ajuda a emagrecer? Quantos quilos?",
+    answer: `Ajuda: uma hora de forró todo dia soma até cerca de ${kg(FORRO_7X)} kg de gordura por mês para ${PESO_PADRAO} kg, pela conta linear, se a alimentação não subir junto. Na prática o ritmo é menor, porque o corpo compensa em parte. Dança emagrece mais que academia? Não necessariamente: o que decide é o déficit, e a musculação ajuda a manter músculo.`,
+  },
+  {
+    question: "Dança do ventre, K-pop e dança em casa gastam quantas calorias?",
+    answer: "Dependem da intensidade, não do nome do estilo. Coreografias animadas de K-pop, TikTok ou dança em casa se aproximam de uma aula de ritmos; dança do ventre em ritmo moderado fica mais perto de dança de salão. Escolha na calculadora o estilo de intensidade parecida.",
+  },
+  {
+    question: "Quem tem hérnia de disco pode fazer dança do ventre?",
+    answer: "Muita gente com hérnia de disco dança bem, mas os movimentos de quadril e coluna precisam ser liberados pelo médico ou fisioterapeuta que acompanha você. Pare se a dor irradiar para a perna.",
   },
   {
     question: "Forró emagrece?",
