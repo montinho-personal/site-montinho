@@ -253,3 +253,8 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-calorias-zumba` (01/10) — sem base do GSC.
 - Título antes: "Calculadora de Calorias na Zumba: Aula e Quilos" → depois: "Calculadora de Zumba: Calorias por Aula, 30, 45 Minutos e 1 Hora".
 - +3 FAQs (45 min, 2x por semana, 7.000 kcal/4 kg em 15 dias). Calculadora não alterada. Fora: "zumba online grátis/para iniciantes" (aula, não calculadora), "pão com 2 ovos".
+
+`blog/caminhada-na-esteira-inclinada` (01/10) — sem base do GSC.
+- Ferramenta trocada: calculadora de FC → calculadora de caminhada (conta do leitor: calorias do 12-3-30). Decisão do Montinho.
+- Título antes: "Caminhada Inclinada na Esteira: Método 12-3-30 Funciona?" → depois: "Método 12-3-30 na Esteira: Funciona? Calorias e Como Fazer".
+- Seção nova: calorias por peso (lib/caminhada.ts), quanto é 12% de inclinação, 12-5-30. +3 FAQs (funciona, minutos para 1 kg, 30 min todo dia). updatedAt 01/10.
