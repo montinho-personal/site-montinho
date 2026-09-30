@@ -184,3 +184,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-macros` (30/09) — sem base do GSC.
 - Título antes: "Calculadora de Macros: Proteína, Carbo e Gordura" → depois: "Calculadora de Macros e Calorias: Emagrecer e Hipertrofia".
 - FAQ visível + FAQPage (5: emagrecer, hipertrofia, TDEE, alimentos, grátis) + links TMB/alimentos/FitChef. Calculadora não alterada. Fora: Growth, Gorgonoid, "blog".
+
+`/ferramentas/calculadora-1rm` (30/09) — sem base do GSC.
+- Título antes: "Calculadora de 1RM: Descubra sua Carga Máxima" → depois: "Calculadora de 1RM: Carga Máxima e Tabela de Porcentagem".
+- FAQ visível + FAQPage (4: o que é, cálculo com Epley e Brzycki, tabela de %, protocolo do teste). Calculadora não alterada.
