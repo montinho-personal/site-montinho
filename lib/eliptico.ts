@@ -193,7 +193,7 @@ export function comparaComEsteira(minutos: number, pesoKg: number): LinhaCompara
 /* ───────────────────────── Tabelas estáticas ───────────────────────── */
 
 export const PESOS_TABELA = [50, 60, 70, 80, 90, 100, 120] as const;
-export const TEMPOS_TABELA = [10, 20, 30, 45, 60] as const;
+export const TEMPOS_TABELA = [10, 15, 20, 30, 40, 45, 60] as const;
 
 export interface LinhaPeso {
   peso: number;

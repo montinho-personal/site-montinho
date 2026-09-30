@@ -263,3 +263,9 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 - Prints: "por que ramon dino perdeu" e "ramon dino lesão". PAA: para quem perdeu, o que aconteceu no Olympia, qual a polêmica, o que aconteceu hoje, lesão.
 - Novo artigo com H2/FAQ dessas perguntas. Resultado: top 5 completo, premiação, declaração de Ramon (updatedAt 30/09).
 - Fora de escopo (pauta): "por que Ramon saiu da Max / da Growth", "quantos cm de braço" — sem fonte verificada ainda.
+
+## 2026-09-30 — /ferramentas/calculadora-calorias-eliptico
+- Antes: "Calculadora de Calorias do Elíptico: Por Tempo e Peso"
+- Depois: "Calorias no Elíptico: 10, 20, 30 Minutos e 1 Hora (Calculadora)"
+- Prints "elíptico calorias": por minuto, 10/15/20/30/40 min, 1 hora, gastas, calculadora; PAA 30 min, perder barriga, elíptico x esteira, 20 min emagrece; relacionadas elíptico x bicicleta, benefícios abdômen, para que serve.
+- Tabela por tempo passa a ter 15 e 40 min; kcal por minuto no texto; FAQ: por minuto, 15, 40, 1 hora, 20 min emagrece, elíptico x bicicleta; "perder barriga" reescrito como pergunta real. Calculadora intocada.
