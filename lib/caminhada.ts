@@ -517,13 +517,15 @@ export const ARTIGOS_COM_CALCULADORA_CAMINHADA: string[] = [
   "quanto-tempo-de-esteira-para-emagrecer",
   /* 734 impressões; tem a seção "Quantas calorias a caminhada gasta de verdade?". */
   "quanto-tempo-de-caminhada-por-dia",
+  /* Método 12-3-30: a conta do leitor é quanto a esteira inclinada gasta (troca da FC em 01/10). */
+  "caminhada-na-esteira-inclinada",
 ];
 
 /**
  * Artigos que recebem um convite (link) para a ferramenta, no fim do texto.
  *
- * `caminhada-emagrece` e `caminhada-na-esteira-inclinada` já pertencem aos
- * registros da calculadora de FC, e `caminhada-japonesa` ao do TDEE — a
+ * `caminhada-emagrece` já pertence ao
+ * registro da calculadora de FC, e `caminhada-japonesa` ao do TDEE — a
  * regra de uma ferramenta por artigo os deixa de fora daqui.
  */
 export const ARTIGOS_COM_LINK_CAMINHADA: string[] = [

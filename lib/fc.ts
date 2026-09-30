@@ -180,7 +180,6 @@ export const DISCLAIMER =
 export const ARTIGOS_COM_CALCULADORA_FC: string[] = [
   "zonas-de-frequencia-cardiaca",
   "treino-zona-2",
-  "caminhada-na-esteira-inclinada",
 ];
 
 /**
