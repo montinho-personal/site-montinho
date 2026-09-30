@@ -297,3 +297,10 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 - Prints "crossfit calorias": por hora, por treino/aula, iniciante, 1 hora, 30 e 50 minutos, remo, air bike, gasta mais que musculação, conversor; PAA 1 hora, academia x crossfit, elimina barriga, artrite reumatoide; relacionadas resultados 1 mês, emagrece quantos quilos/em quanto tempo, define o corpo, dá músculo.
 - Seção "CrossFit: calorias por hora e por minuto" (60–100 kg) com link para HYROX; FAQ: 1 hora, por minuto, 30 min, 50 min, iniciante, CrossFit x musculação (resposta honesta: aula inteira ≈ 1 h de musculação vigorosa), remo (8,5 METs, mesmo valor da calculadora de HYROX). Calculadora intocada.
 - Pauta: air bike (sem MET verificado), artrite reumatoide (saúde, fonte médica), resultados em 1 mês, CrossFit dá músculo.
+
+## 2026-09-30 — /ferramentas/calculadora-calorias-hyrox
+- Antes: "Calculadora de Calorias no Hyrox: Prova e Estações"
+- Depois: "HYROX Queima Quantas Calorias? Prova, Treino e Estações"
+- Prints "hyrox calorias": treino calorias, queima/gasta quantas, ou crossfit, nutrition, campeonato; PAA quantas calorias, peso oficial, 10 esportes que mais queimam, precisa musculação. A visão por IA cita "www.mo..." com o ícone M (provável fonte: este site).
+- Seção "Treino de HYROX: quantas calorias?" (60–100 kg; 10 aquecimento + 40 circuito no MET médio das estações + 10 pausa, estimativa declarada) com link para CrossFit; FAQ: por hora, treino, HYROX x CrossFit, precisa musculação. Calculadora intocada.
+- Pauta: peso oficial das estações (precisa fonte oficial HYROX), nutrição para HYROX, esportes que mais queimam calorias.
