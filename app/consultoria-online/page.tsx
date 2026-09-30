@@ -41,9 +41,9 @@ const MSG = {
 const LP_MESSAGE = MSG.hero;
 
 export const metadata: Metadata = {
-  title: "Consultoria Online de Treino | Personal Trainer Online — Montinho",
+  title: "Consultoria Online de Treino Personalizado | Montinho Personal",
   description:
-    "Consultoria online com treino personalizado, vídeos de execução, ajustes mensais e suporte pelo WhatsApp. Criada por um personal trainer ex-obeso que perdeu mais de 40kg. Atendimento em todo o Brasil.",
+    "Personal trainer online: como funciona a consultoria de treino personalizado, com vídeos de execução, ajustes mensais e suporte no WhatsApp. Para todo o Brasil.",
   alternates: { canonical: "https://www.montinhopersonal.com.br/consultoria-online" },
   openGraph: {
     title: "Consultoria Online de Treino | Montinho Personal",
@@ -58,6 +58,34 @@ const faqLp = [
   {
     q: "Consultoria online funciona de verdade?",
     a: "Funciona quando existe acompanhamento real — e é exatamente isso que diferencia a consultoria de um treino de aplicativo. Você recebe um plano criado para o seu corpo, sua rotina e seu objetivo, envia vídeos da sua execução, recebe correções e o planejamento é ajustado conforme a sua evolução. O método é o mesmo que aplico presencialmente em Alphaville há mais de 20 anos de musculação.",
+  },
+  {
+    q: "Como funciona a consultoria online de treino?",
+    a: "Começa com uma conversa pelo WhatsApp sobre o seu objetivo, a sua rotina, o seu histórico e onde você vai treinar. A partir disso eu monto o seu plano, com vídeo de execução de cada exercício. Você treina, me manda vídeos da sua execução e recebe correções. O treino é revisado todo mês e ajustado sempre que a sua evolução pedir, com suporte direto comigo pelo WhatsApp a semana inteira.",
+  },
+  {
+    q: "Vale a pena fazer consultoria de treino online?",
+    a: "Vale quando existe acompanhamento de verdade: alguém que corrige a sua execução, ajusta o plano e cobra constância. É o que diferencia a consultoria de uma planilha pronta ou de um treino de aplicativo. Para quem já treina sozinho e estagnou, ou para quem começa e não quer aprender errado, costuma ser o melhor custo-benefício.",
+  },
+  {
+    q: "Consultoria online ou personal presencial: qual escolher?",
+    a: "O presencial dá correção na hora, em cada série. A consultoria online dá liberdade de horário e de lugar, com acompanhamento a semana inteira, e costuma custar uma fração do presencial. Se você precisa de alguém do seu lado para treinar, o presencial resolve. Se você consegue treinar sozinho com um plano bem feito e correções por vídeo, a consultoria online entrega o mesmo método.",
+  },
+  {
+    q: "A consultoria online inclui dieta?",
+    a: "Não. A consultoria é de treino, e o plano alimentar é trabalho de nutricionista. Se você já tem acompanhamento nutricional, o treino é montado para caminhar junto com ele, e no dia a dia a gente conversa sobre rotina, sono e constância, que fazem diferença em qualquer objetivo.",
+  },
+  {
+    q: "Como escolher uma boa consultoria de treino online?",
+    a: "Veja se existe acompanhamento de verdade: correção da sua execução por vídeo, ajuste do plano ao longo do tempo e um canal direto com o profissional. Desconfie de promessa de resultado em prazo fixo e de treino igual para todo mundo. E confira quem está por trás: formação, experiência e se o profissional vive o que ensina.",
+  },
+  {
+    q: "Existe versão grátis da consultoria online?",
+    a: "Não. A consultoria é um acompanhamento individual, com plano feito para você, correção da execução e ajustes, e isso não existe de graça. O que é gratuito no site são as ferramentas, como as calculadoras de proteína, gasto calórico e volume de treino, que você pode usar à vontade.",
+  },
+  {
+    q: "A consultoria online serve para mulheres?",
+    a: "Serve para mulheres e homens. O plano parte do seu objetivo, seja emagrecer, ganhar massa, definir ou ganhar força, e da sua rotina, não de um treino padrão por gênero.",
   },
   {
     q: "Você acompanha mesmo ou só manda a planilha?",
@@ -92,7 +120,7 @@ const faqLp = [
     a: "Sim. Tenho cursos voltados para treinamento de pessoas com dores e limitações, e o plano é adaptado à sua condição. Treinar com segurança é a base do método — e, muitas vezes, o treino bem orientado ajuda a reduzir as próprias limitações.",
   },
   {
-    q: "Quanto custa a consultoria online?",
+    q: "Qual o valor de uma consultoria online de personal trainer?",
     a: "O valor depende do plano de acompanhamento ideal para o seu objetivo e da duração do compromisso. Na primeira conversa pelo WhatsApp eu entendo o que você busca e te passo uma proposta clara, sem compromisso. Em geral, a consultoria online custa uma fração do valor de um personal presencial — com acompanhamento contínuo a semana inteira, não só na hora da aula.",
   },
   {
