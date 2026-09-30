@@ -79851,7 +79851,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <ul>
 <li><strong>Academia 24 horas em Alphaville:</strong> Ironberg e Arena 18.</li>
 <li><strong>Academia em Alphaville que aceita Gympass (Wellhub):</strong> Ironberg, Bodytech, Arena 18, Scelta, Bluefit, 24 Wellness, 4Perform, SkyFit, Panobianco, Studio Mormaii e Voi Fit. TotalPass: Smart Fit, Scelta, 24 Wellness, 4Perform, SkyFit, Studio Mormaii e Voi Fit.</li>
-<li><strong>Alphaville Industrial (Centro Industrial e Empresarial):</strong> Smart Fit, Bluefit, Panobianco, Bio Ritmo, Arena 18, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit ficam nessa região; Bodytech fica perto do Iguatemi e Scelta, no Centro Comercial.</li>
+<li><strong>Alphaville Industrial (Centro Industrial e Empresarial):</strong> Ironberg (Estrada Aldeinha, 181, com acesso também pela Av. Dr. Dib Sauaia Neto), Smart Fit, Bluefit, Panobianco, Bio Ritmo, Arena 18, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit ficam nessa região; Bodytech fica perto do Iguatemi e Scelta, no Centro Comercial.</li>
 </ul>
 <p>Os dados de 24 horas e convênio foram conferidos por mim nas unidades — o detalhe de cada uma está no <a href="/blog/academias-em-alphaville">guia de academias em Alphaville</a>. Este ranking é de Alphaville em Barueri, não de Alphaville Nova Lima.</p>
 
@@ -79888,7 +79888,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     faq: [
       { question: "Qual academia de Alphaville aceita Gympass?", answer: "Pelo Wellhub (antigo Gympass): Ironberg, Bodytech, Arena 18, Scelta, Bluefit, 24 Wellness, 4Perform, SkyFit, Panobianco, Studio Mormaii e Voi Fit." },
       { question: "Tem academia 24 horas em Alphaville?", answer: "Sim: Ironberg e Arena 18 funcionam 24 horas." },
-      { question: "Quais academias ficam no Alphaville Industrial?", answer: "Smart Fit, Bluefit, Panobianco, Bio Ritmo, Arena 18, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit ficam no Centro Industrial e Empresarial de Alphaville." },
+      { question: "Quais academias ficam no Alphaville Industrial?", answer: "Ironberg, Smart Fit, Bluefit, Panobianco, Bio Ritmo, Arena 18, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit ficam no Centro Industrial e Empresarial de Alphaville." },
       { question: "A Fábrica Premium está entre as melhores de Alphaville?", answer: "É uma das academias mais completas da região, com valet, rooftop, crioterapia e nutricionista, na Estrada da Bela Vista, em Santana de Parnaíba. Veja a página da Fábrica Premium Alphaville." },
       { question: "Qual é a melhor academia de Alphaville?", answer: "Depende do objetivo: Smart Fit e Bluefit para economia, Bodytech e Bio Ritmo para experiência premium, Ironberg para musculação séria. Visite e faça aula experimental antes de fechar." },
       { question: "Quanto custa academia em Alphaville?", answer: "Varia da faixa econômica à premium conforme rede e plano. Consulte o site oficial ou a unidade para valores atualizados." },
