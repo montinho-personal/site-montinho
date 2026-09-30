@@ -311,3 +311,11 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 - Prints "são silvestre tempo" e "são silvestre 15km": tempo médio, recorde, de prova, limite, máximo, do vencedor, real, 2025; PAA recorde, tempo médio 21 km, quantos km 2026, tempo máximo; relacionadas 42 km, quantos km, percurso, inscrição, valor, premiação, vencedores, pódio 2025.
 - Seção "Tempo médio e pace na São Silvestre" (1h10 a 2h30 → pace) + recorde masculino 42min59s (Kandie, 2019: Gazeta Esportiva, Tupi, Wikipédia), vencedores 2025 44min28s / 51min08s (CNN, Olympics.com, SBT), tempo limite 2h30 da última onda (regulamento oficial 2025). FAQ: recorde, vencedor, tempo limite, quantos km, pace para 1h30, 42 km?
 - Fora: recorde feminino (fontes divergem: 48min35s x 48min48s), "sempre foi 15 km" (precisa 2 fontes), inscrição/valor (já no artigo de inscrição), 21 km (outra prova).
+
+## 2026-09-30 — /consultoria-online (landing page do Google Ads)
+- Antes: "Consultoria Online de Treino | Personal Trainer Online — Montinho"
+- Depois: "Consultoria Online de Treino Personalizado com Personal Trainer" (+ " | Montinho Personal Trainer" do template; o título antigo repetia a marca); descrição com "personal trainer online" e "como funciona".
+- Prints "consultoria online de treino" e "personal trainer online": como funciona, e dieta, academia, personalizado, valor, grátis, vale a pena, melhor, mulher, ao vivo, barato; PAA valor, vale a pena, melhores consultorias, melhor aplicativo, 3x por semana.
+- Só FAQ (topo, CTAs e ordem intocados; sem preço): como funciona, vale a pena, online x presencial, inclui dieta (não), como escolher, versão grátis (não, confirmado pelo Montinho), serve para mulheres; "Quanto custa" virou "Qual o valor de uma consultoria online de personal trainer?".
+- Medir: taxa de conversão da campanha antes x depois de 30/09 (mudança única, para atribuição).
+- Fora: "ao vivo" e "melhor aplicativo" (não confirmado se há aula ao vivo ou app).
