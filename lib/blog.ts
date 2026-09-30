@@ -81872,12 +81872,12 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "bodytech-alphaville",
     title: "Bodytech Alphaville: Experiência Premium",
-    metaTitle: "Bodytech Alphaville: Vale a Pena o Premium? Análise",
-    metaDescription: "Bodytech em Alphaville: o que o modelo premium entrega, prós e contras por perfil e como aproveitar cada real investido. Análise honesta — confira.",
+    metaTitle: "Bodytech Alphaville Iguatemi: Horário, Wellhub e Vale a Pena?",
+    metaDescription: "Bodytech Iguatemi Alphaville: endereço (Al. Rio Negro, 111), horário, telefone, aceita Wellhub, TotalPass não. Prós, contras e para quem vale o premium.",
     excerpt: "A Bodytech representa o padrão premium nacional. Veja o que esse modelo entrega em Alphaville, para quem faz sentido e quando o investimento se paga.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-27",
+    updatedAt: "2026-09-30",
     readTime: "8 min",
     author: "Montinho",
     tags: ["bodytech","academia premium","academia em alphaville","musculação","tamboré"],
@@ -81906,6 +81906,15 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>O modelo premium funciona por adição: <strong>mais modalidades, mais serviços, mais conforto, mais atendimento</strong>. A Bodytech construiu sua marca nacional exatamente nesse território — a academia como experiência completa, não apenas sala de pesos.</p>
 <p>Em Alphaville, o encaixe com o público é natural: executivos da região do <strong>Centro Industrial e Empresarial</strong>, famílias de condomínios do <strong>Tamboré</strong> e de <strong>Aldeia da Serra</strong>, gente que frequenta o <strong>Iguatemi Alphaville</strong> e valoriza ambiente à altura.</p>
 <p><strong>Soundbite: premium não é pagar mais pela mesma academia — é pagar por uma academia que faz mais coisas. A questão é se VOCÊ faz mais coisas.</strong></p>
+<h2>Bodytech Iguatemi Alphaville: endereço, horário, telefone e Wellhub</h2>
+<ul>
+<li><strong>Endereço:</strong> Alameda Rio Negro, 111, Alphaville Industrial, Barueri (CEP 06454-000), dentro do Shopping Iguatemi Alphaville.</li>
+<li><strong>Horário:</strong> segunda a sexta 6h–22h, sábado 9h–15h. Fecha aos domingos.</li>
+<li><strong>Telefone/WhatsApp:</strong> (11) 99496-7580.</li>
+<li><strong>Wellhub (antigo Gympass):</strong> a unidade aparece como parceira na plataforma; o plano mínimo exigido muda, confira no app. <strong>TotalPass:</strong> não aceita.</li>
+<li><strong>Estacionamento:</strong> o do shopping. <strong>Personal externo:</strong> permitido, com as regras da unidade.</li>
+</ul>
+<p>Endereço, horário e telefone são os do perfil da unidade no Google Maps (consulta de 30/09/2026); Wellhub, na página da própria plataforma. A mensalidade muda por plano e campanha, então confirme direto com a unidade.</p>
 <h2>Prós e contras honestos, por perfil de aluno</h2>
 <h3>Executivo com agenda apertada</h3>
 <ul>
@@ -81957,6 +81966,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><a href="/blog/como-escolher-uma-academia">Como escolher uma academia sem errar</a></li>
 </ul>`,
     faq: [
+      { question: "Tem Bodytech em Alphaville?", answer: "Sim. A Bodytech Iguatemi Alphaville fica no Shopping Iguatemi Alphaville, na Alameda Rio Negro, 111, Alphaville Industrial, Barueri." },
+      { question: "Qual o horário da Bodytech Alphaville?", answer: "Segunda a sexta das 6h às 22h e sábado das 9h às 15h. Aos domingos fica fechada." },
+      { question: "A Bodytech Alphaville aceita Wellhub ou TotalPass?", answer: "Aceita Wellhub (antigo Gympass); o plano mínimo muda, confira no app. TotalPass não é aceito." },
+      { question: "Qual o telefone da Bodytech Alphaville?", answer: "O telefone/WhatsApp do perfil da unidade no Google é (11) 99496-7580." },
       { question: "A Bodytech de Alphaville vale a pena?", answer: "Vale para quem usa a amplitude do premium: modalidades variadas, estrutura completa e experiência de clube. Quem só faz musculação deve comparar com opções especializadas ou econômicas." },
       { question: "Quanto custa a Bodytech?", answer: "O posicionamento é premium, acima da média do mercado. Valores e planos variam por unidade e mudam com frequência — consulte o site oficial ou a unidade." },
       { question: "Academia premium dá mais resultado?", answer: "Não automaticamente. Estrutura facilita, mas o resultado vem de programa bem feito, execução correta e constância — com ou sem premium." },
