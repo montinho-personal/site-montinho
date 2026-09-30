@@ -5,6 +5,7 @@ import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import CalculadoraCorda from "@/components/corda/CalculadoraCorda";
+import { deTempo as caminhadaDeTempo, ritmo as ritmoCaminhada } from "@/lib/caminhada";
 import {
   FONTES_CORDA,
   FONTE_COMPENDIO_CORDA,
@@ -36,7 +37,7 @@ const CAMINHO = "/ferramentas/calculadora-calorias-pular-corda";
 const PESO = 70;
 
 export const metadata: Metadata = {
-  title: "Calculadora de Calorias Pulando Corda: Blocos e Saltos",
+  title: "Pular Corda Gasta Quantas Calorias? Calculadora por Tempo e Saltos",
   description:
     "Quantas calorias você gasta pulando corda, pelo seu peso, ritmo e blocos de treino — só o tempo pulando conta — e quantos saltos a sessão teve.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -76,6 +77,11 @@ const DEZ = RITMOS.map((r) => ({ r, kcal: calcula(PESO, r.id, 1, 600, 0).kcal })
 const POR100 = kcalPor100Saltos(PESO, "moderado");
 const META = calcula(PESO, "moderado", TREINOS[2].blocos, TREINOS[2].segundosPulando, TREINOS[2].segundosDescanso);
 const TRES = kgPorMes(META, 3);
+const POR_MIN = kcalSeFosseContinuo(PESO, "moderado", 1);
+const MINUTOS_CONT = [5, 15, 20, 30].map((m) => ({ m, kcal: kcalSeFosseContinuo(PESO, "moderado", m) }));
+const MOD_CAM = ritmoCaminhada("moderado");
+const CAMINHADA_1H = caminhadaDeTempo(60, PESO, MOD_CAM.velocidade, 0, MOD_CAM.cadencia).kcal;
+const CORDA_EQUIV_MIN = Math.round(CAMINHADA_1H / POR_MIN);
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kg = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -90,6 +96,22 @@ const faq: ItemFAQ[] = [
   {
     question: "Quantas calorias gastam mil saltos de corda?",
     answer: `Cerca de ${kc(POR100 * (META_SALTOS / 100))} kcal para ${PESO} kg, em ritmo moderado — uns nove minutos pulando. Cada 100 saltos custam perto de ${kg(POR100)} kcal.`,
+  },
+  {
+    question: "Pular corda gasta quantas calorias por minuto?",
+    answer: `Para ${PESO} kg em ritmo moderado, cerca de ${kc(POR_MIN)} kcal por minuto pulando. Em minutos contínuos: ${MINUTOS_CONT.map((x) => `${x.m} min ≈ ${kc(x.kcal)} kcal`).join("; ")}. Na prática quase ninguém pula 30 minutos sem parar, e é por isso que a calculadora conta os blocos e o descanso.`,
+  },
+  {
+    question: "100, 200 ou 500 pulos de corda queimam quantas calorias?",
+    answer: `Cerca de ${kg(POR100)} kcal a cada 100 saltos para ${PESO} kg em ritmo moderado: 200 saltos ≈ ${kc(POR100 * 2)} kcal e 500 saltos ≈ ${kc(POR100 * 5)} kcal. Dar 500 pulos todos os dias é um bom hábito para condicionamento, desde que sem dor nas panturrilhas, tornozelos ou joelhos.`,
+  },
+  {
+    question: "Quanto tempo pulando corda equivale a 1 hora de caminhada?",
+    answer: `Uma hora de caminhada moderada gasta cerca de ${kc(CAMINHADA_1H)} kcal para ${PESO} kg; pulando corda em ritmo moderado, isso dá uns ${CORDA_EQUIV_MIN} minutos pulando de fato, sem contar o descanso. Corda gasta mais por minuto, e também gasta mais que correr devagar; comparada a corrida em ritmo forte, fica parecida.`,
+  },
+  {
+    question: "Pular corda é bom para diabéticos? E na gravidez?",
+    answer: "Para quem tem diabetes, exercício regular ajuda o controle da glicose, e a corda pode entrar se os pés e as articulações estiverem bem; combine com o médico, principalmente quem usa insulina. Na gravidez, por ser impacto e salto repetido, a decisão é do obstetra; muitas vezes ele indica atividades de menor impacto.",
   },
   {
     question: "Por que a calculadora dá menos que a tabela?",
