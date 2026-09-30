@@ -196,3 +196,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-calorias-caminhada` (30/09) — sem base do GSC.
 - Título antes: "Calculadora de Calorias da Caminhada: Tempo, Km e Passos" → depois: "Calorias da Caminhada: Calculadora por Tempo, Km e Passos".
 - Tabela nova por distância (1, 3, 5, 7, 10 km), +4 FAQs (km, 2 horas, 500 kcal, diabetes/OMS 150–300 min). Números saem de lib/caminhada.ts. Calculadora não alterada.
+
+`/ferramentas/calculadora-calorias-bicicleta` (30/09) — sem base do GSC.
+- Título antes: "Calculadora de Calorias na Bicicleta: Rua e Ergométrica" → depois: "Calorias na Bicicleta: Calculadora para Rua e Ergométrica".
+- +5 FAQs do print (500 kcal, 20 min ergométrica leve/horizontal, 1 km, 40 min/dia, hérnia de disco), números calculados por lib/bicicleta.ts. Calculadora não alterada.
