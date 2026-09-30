@@ -159,5 +159,24 @@ check(
   retrieve("como fazer rosca direta?").sources.every((s) => !s.slug.includes("utm_"))
 );
 
+// Ferramentas entram como fonte quando a pergunta é uma conta com dados da
+// pessoa — e nunca para pergunta fora do domínio.
+const FERRAMENTA_ESPERADA: Array<[string, string]> = [
+  ["quanto whey devo tomar por dia?", "/ferramentas/calculadora-whey"],
+  ["quanto de creatina para 80kg?", "/ferramentas/calculadora-creatina"],
+  ["quantas calorias gasta 30 minutos de caminhada?", "/ferramentas/calculadora-calorias-caminhada"],
+  ["qual meu 1rm no supino?", "/ferramentas/calculadora-1rm"],
+  ["quantas séries por semana para hipertrofia?", "/ferramentas/calculadora-volume-treino"],
+];
+for (const [q, href] of FERRAMENTA_ESPERADA) {
+  check(`ferramenta como fonte: ${q}`, retrieve(q).sources.some((s) => s.slug === href));
+}
+check(
+  "pergunta fora do domínio não puxa ferramenta",
+  ["receita de bolo de cenoura", "qual o melhor investimento em criptomoedas"].every(
+    (q) => !retrieve(q).sources.some((s) => s.slug.startsWith("/ferramentas/"))
+  )
+);
+
 console.log("\n" + (falhas === 0 ? "TODOS OS TESTES PASSARAM" : `${falhas} FALHARAM`));
 process.exit(falhas === 0 ? 0 : 1);

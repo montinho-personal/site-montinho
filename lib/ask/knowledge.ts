@@ -20,6 +20,7 @@ import { getBlogPost, SITE_URL } from "@/lib/blog";
 import { search, termRarity, canonicalizeQuery } from "@/lib/search";
 import { classify } from "@/lib/cta/classify";
 import { BORDOES } from "@/lib/bordoes";
+import { FERRAMENTAS_NO_AR } from "@/lib/ferramentas/catalogo";
 
 export interface KnowledgeChunk {
   articleId: string; // slug ou id do doc de negócio
@@ -240,6 +241,47 @@ function clip(text: string): string {
   return cut.slice(0, cut.lastIndexOf(". ") + 1) || cut;
 }
 
+// ── Ferramentas do site ─────────────────────────────────────────────────────
+//
+// O acervo indexado pela busca é só o blog. Quem perguntava "quanto whey devo
+// tomar" recebia os artigos de whey e nunca ficava sabendo que existe uma
+// calculadora que faz a conta com o peso dela. As ferramentas entram como
+// docs derivados do catálogo (lib/ferramentas/catalogo.ts), que já é a fonte
+// única de nome, resultado e das tags de como as pessoas procuram cada uma —
+// escrever isso de novo aqui criaria duas versões para divergir.
+//
+// Tags de uma palavra só ("emagrecer", "dieta") são compartilhadas por várias
+// ferramentas e não provam qual delas a pessoa quer; por isso cada tag vale o
+// número de palavras que tem, e uma pergunta de conta ("quanto de proteina
+// por dia") puxa a ferramenta certa à frente das genéricas.
+const TOOL_DOCS: BusinessDoc[] = FERRAMENTAS_NO_AR
+  .filter((f) => f.href !== "/pergunte-ao-montinho" && !BUSINESS_DOCS.some((d) => d.path === f.href))
+  .map((f) => ({
+    id: `ferramenta-${f.id}`,
+    title: f.nome,
+    path: f.href,
+    heading: "Ferramenta gratuita do site",
+    // As tags do catálogo, o nome sem o prefixo do tipo ("Calorias da
+    // Caminhada") e cada palavra longa do nome sozinha: "30 minutos de
+    // caminhada" não contém tag nenhuma da ferramenta de caminhada, mas
+    // contém "caminhada" e "calorias" — duas palavras do nome, que juntas
+    // passam do limiar; "calorias" sozinha, comum a todo o cardio, não passa.
+    keywords: [
+      ...f.tags,
+      f.nome.replace(/^(calculadora|simulador|previsor|teste|conversor)( de| da| do)?\s+/i, ""),
+      ...norm(f.nome).split(/[^a-z0-9]+/).filter((w) => w.length >= 5 && !["calculadora", "simulador", "previsor", "conversor"].includes(w)),
+    ],
+    text: `${f.nome} é uma ferramenta gratuita do site, em ${f.href}: ${f.resultado} Leva ${f.tempo}, sem cadastro. Quando a dúvida é uma conta com os dados da própria pessoa (peso, tempo, objetivo), a resposta certa é fazer a conta na ferramenta, e não um número genérico.`,
+  }));
+
+function pontuaFerramenta(d: BusinessDoc, nq: string): number {
+  return d.keywords.reduce((acc, k) => {
+    const kn = norm(k).trim();
+    if (kn.length < 3 || !nq.includes(kn)) return acc;
+    return acc + kn.split(/\s+/).length;
+  }, 0);
+}
+
 // ── Recuperação principal ────────────────────────────────────────────────────
 
 export interface PageContext {
@@ -304,6 +346,28 @@ export function retrieve(question: string, context?: PageContext): RetrievalResu
     // ("quem é o Montinho", "quanto custa") — e desde que páginas locais
     // deixaram de entrar como fonte, ele precisa se sustentar sozinho.
     evidence += score * 35;
+  }
+
+  // 1b) Ferramentas: a conta que o artigo não faz. No máximo duas, e só
+  // quando a pergunta casa com o jeito de procurar registrado no catálogo.
+  const toolHits = TOOL_DOCS.map((d) => ({ d, score: pontuaFerramenta(d, nq) }))
+    .filter((x) => x.score >= 2)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 2);
+  for (const { d, score } of toolHits) {
+    chunks.push({
+      articleId: d.id,
+      title: d.title,
+      slug: d.path,
+      url: `${SITE_URL}${d.path}`,
+      heading: d.heading,
+      category: "Ferramenta",
+      text: d.text,
+    });
+    sources.push({ title: d.title, slug: d.path, url: `${SITE_URL}${d.path}` });
+    // Menos que o institucional: a ferramenta complementa a resposta do
+    // artigo, e sozinha só sustenta a pergunta quando o casamento é forte.
+    evidence += Math.min(score, 4) * 15;
   }
 
   // 2) Artigos via a mesma camada de busca do site
