@@ -19,6 +19,8 @@ import {
   compara,
   kcalSeFosseContinuo,
   kgPorMes,
+  esforco,
+  metDoEsforco,
   tabelaRua,
   tabelaTrabalho,
   trabalho,
@@ -40,7 +42,7 @@ const CAMINHO = "/ferramentas/calculadora-calorias-bicicleta";
 const PESO = 70;
 
 export const metadata: Metadata = {
-  title: "Calculadora de Calorias na Bicicleta: Rua e Ergométrica",
+  title: "Calorias na Bicicleta: Calculadora para Rua e Ergométrica",
   description:
     "Quantas calorias você gasta pedalando, pelo seu peso, pela velocidade e pelas paradas — na rua, na ergométrica pelos watts, e indo de bike para o trabalho.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -78,6 +80,13 @@ const TAB_TRAB = tabelaTrabalho();
 const CMP = compara(PESO, 60);
 const R30 = calcula(PESO, MODERADO.met, 30);
 const R45 = calcula(PESO, MODERADO.met, 45);
+const R40 = calcula(PESO, MODERADO.met, 40);
+const KCAL_MIN_MOD = R30.kcal / 30;
+const MIN_500 = Math.round(500 / KCAL_MIN_MOD);
+const ERGO_LEVE_20 = calcula(PESO, metDoEsforco("leve"), 20);
+const ERGO_LEVE_60 = calcula(PESO, metDoEsforco("leve"), 60);
+const KM_MOD = 20; // meio da faixa de 19 a 22 km/h
+const KCAL_1KM = KCAL_MIN_MOD * (60 / KM_MOD);
 const R60_CIDADE = calcula(PESO, MODERADO.met, 60, 10);
 const TABELA_60 = kcalSeFosseContinuo(PESO, MODERADO.met, 60);
 const TRAB_8 = trabalho(PESO, 8, 30, 5);
@@ -110,6 +119,26 @@ const faq: ItemFAQ[] = [
   {
     question: "Pedalar emagrece quantos quilos por mês?",
     answer: `Só da bike, pouco: três pedais de 45 minutos em ritmo moderado somam no máximo ${kg(TRES_45)} kg de gordura por mês para ${PESO} kg, pela conta linear. O que decide é o déficit da semana, e a bicicleta entra como uma das fontes de gasto — a que tem mais chance de virar hábito, porque é baixo impacto.`,
+  },
+  {
+    question: "Quanto tempo de bike para queimar 500 calorias?",
+    answer: `Para ${PESO} kg em ritmo moderado, de 19 a 22 km/h, cerca de ${MIN_500} minutos pedalando sem parar. Mais pesado ou mais rápido, leva menos; em passeio, bem mais.`,
+  },
+  {
+    question: "Quantas calorias gasta 20 minutos de bicicleta ergométrica leve?",
+    answer: `No esforço leve (cerca de ${esforco("leve").watts} W), cerca de ${kc(ERGO_LEVE_20.kcal)} kcal para ${PESO} kg; uma hora nesse ritmo, cerca de ${kc(ERGO_LEVE_60.kcal)} kcal. Na bicicleta horizontal a conta é a mesma: o que decide é a potência, não o formato do banco.`,
+  },
+  {
+    question: "Quantas calorias gasta andar 1 km de bicicleta?",
+    answer: `A cerca de ${KM_MOD} km/h, 1 km leva uns 3 minutos e gasta perto de ${kc(KCAL_1KM)} kcal para ${PESO} kg. Por distância a bike gasta menos que a caminhada, porque cobre o mesmo quilômetro muito mais rápido.`,
+  },
+  {
+    question: "Pedalar 40 minutos por dia ajuda a emagrecer?",
+    answer: `Ajuda: são cerca de ${kc(R40.kcal)} kcal por dia em ritmo moderado para ${PESO} kg, repetíveis todo dia por ser baixo impacto. Emagrecer depende do déficit da semana inteira, e a bike entra como uma fonte de gasto que vira hábito com facilidade.`,
+  },
+  {
+    question: "Quem tem hérnia de disco pode pedalar?",
+    answer: "Muitas pessoas com hérnia de disco pedalam bem, e a bicicleta horizontal costuma ser mais confortável por apoiar as costas. Mas a indicação é individual: combine com o médico ou fisioterapeuta, e pare se a dor irradiar para a perna.",
   },
   {
     question: "Pedalar perde barriga?",
