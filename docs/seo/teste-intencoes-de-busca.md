@@ -241,3 +241,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-calorias-escada` (30/09) — sem base do GSC. Já aparece na 1ª página para "subir escada gasta quantas calorias" (print de 30/09).
 - Título antes: "Calculadora de Calorias Subindo Escada: por Andar" → depois: "Subir Escada Gasta Quantas Calorias? Calculadora por Andar e Tempo".
 - +5 FAQs (5 a 60 min, 5/8/10/12/14/18 andares, 100 degraus, 20 min emagrece, gravidez/insuficiência cardíaca → médico). Números de lib/escada.ts. Calculadora não alterada.
+
+`/ferramentas/calculadora-calorias-danca` (30/09) — sem base do GSC. Já na 1ª página para "dança gasta quantas calorias".
+- Título antes: "Calculadora de Calorias na Dança: Forró, Funk e Salão" → depois: "Dança Gasta Quantas Calorias? Calculadora por Ritmo e Tempo".
+- +4 FAQs (20/30/60/120 min, 1 h por dia e quilos, dança do ventre/K-pop/em casa, hérnia de disco → médico). Calculadora não alterada.
