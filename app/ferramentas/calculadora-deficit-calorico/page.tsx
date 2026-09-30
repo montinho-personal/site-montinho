@@ -33,7 +33,7 @@ import Compartilhar from "@/components/share/Compartilhar";
  * Google — e para quem chega sem vontade de preencher formulário.
  */
 export const metadata: Metadata = {
-  title: "Calculadora de Déficit Calórico para Emagrecer",
+  title: "Calculadora de Déficit Calórico Grátis para Emagrecer (TDEE)",
   description:
     "Calcule seu gasto calórico diário e veja quantas calorias comer para emagrecer, com faixas de déficit de 10%, 15–20% e 25%. Gratuita, sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/calculadora-deficit-calorico` },
@@ -48,10 +48,43 @@ export const metadata: Metadata = {
 };
 
 /**
- * Só BreadcrumbList. Nada de FAQPage, AggregateRating ou MedicalWebPage
- * inventados para tentar rich result — os tipos precisam ser semanticamente
- * verdadeiros.
+ * Nada de AggregateRating ou MedicalWebPage inventados para tentar rich
+ * result — os tipos precisam ser semanticamente verdadeiros. O FAQPage só
+ * existe porque cada pergunta aparece escrita na página, com a mesma resposta.
  */
+const PERGUNTAS: { q: string; a: string }[] = [
+  {
+    q: "Quantas calorias devo ingerir por dia para emagrecer?",
+    a: "Parta do seu gasto diário (TDEE) e tire um percentual dele: a calculadora mostra as faixas de 10%, 15–20% e 25%. O número certo é o que você consegue sustentar por semanas, ajustado pelo que a balança e as medidas mostram.",
+  },
+  {
+    q: "Qual o déficit calórico diário ideal?",
+    a: "Não existe um número único para todo mundo. Um percentual do gasto se adapta ao tamanho de cada pessoa melhor que um corte fixo de 500 kcal: a faixa de 15–20% costuma ser o meio-termo entre ritmo e sustentabilidade.",
+  },
+  {
+    q: "Como calcular o déficit calórico pelo TDEE?",
+    a: "Calcule o TDEE (TMB × fator de atividade) e multiplique pelo percentual de corte. Com TDEE de 2.400 kcal e déficit de 20%, a meta fica em 1.920 kcal por dia. A calculadora faz as duas etapas de uma vez.",
+  },
+  {
+    q: "Como saber as calorias dos alimentos para bater a meta?",
+    a: "Use uma tabela de composição de alimentos: a tabela de alimentos do site traz as calorias por porção. Para montar o dia inteiro dentro da meta, o Montinho FitChef transforma o número em cardápio.",
+  },
+  {
+    q: "A calculadora de déficit calórico é gratuita?",
+    a: "Sim. É gratuita, funciona online e não pede cadastro; os dados que você digita não saem do navegador.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: PERGUNTAS.map((p) => ({
+    "@type": "Question",
+    name: p.q,
+    acceptedAnswer: { "@type": "Answer", text: p.a },
+  })),
+};
+
 const appSchema = aplicativoSchema({
   nome: "Calculadora de Déficit Calórico",
   descricao:
@@ -87,6 +120,7 @@ export default function CalculadoraDeficitPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="py-14 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -278,6 +312,24 @@ export default function CalculadoraDeficitPage() {
                 calculadora de proteína
               </Link>{" "}
               resolve — preservar músculo em déficit depende dela.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-6" style={h}>
+              Perguntas frequentes sobre déficit calórico
+            </h2>
+            <div className="space-y-6">
+              {PERGUNTAS.map((p) => (
+                <div key={p.q}>
+                  <h3 className="text-lg font-semibold text-white mb-2">{p.q}</h3>
+                  <p className="text-gray-300 leading-relaxed">{p.a}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-gray-300 leading-relaxed mt-6">
+              Links úteis: <Link href="/alimentos" className={ln}>tabela de alimentos</Link>,{" "}
+              <Link href="/ferramentas/monte-seu-cardapio" className={ln}>Montinho FitChef</Link> e{" "}
+              <Link href="/ferramentas/calculadora-tmb-tdee" className={ln}>calculadora de TMB e TDEE</Link>.
             </p>
           </div>
         </div>
