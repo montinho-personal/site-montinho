@@ -30,7 +30,7 @@ import Compartilhar from "@/components/share/Compartilhar";
  * Google e para quem chega sem vontade de preencher nada.
  */
 export const metadata: Metadata = {
-  title: "Calculadora de 1RM: Descubra sua Carga Máxima",
+  title: "Calculadora de 1RM: Carga Máxima e Tabela de Porcentagem",
   description:
     "Calcule seu 1RM pela carga e pelas repetições e veja quanto usar em 60%, 70%, 80% e 90% do treino, com as anilhas de cada lado da barra. Sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/calculadora-1rm` },
@@ -67,6 +67,35 @@ const breadcrumbSchema = {
   ],
 };
 
+const PERGUNTAS: { q: string; a: string }[] = [
+  {
+    q: "O que é 1RM em musculação?",
+    a: "1RM (uma repetição máxima) é a maior carga que você consegue levantar uma única vez, com técnica correta, num exercício. Serve de referência para planejar o treino em percentuais dessa carga.",
+  },
+  {
+    q: "Como fazer o cálculo de 1RM?",
+    a: "Pela equação de Epley: 1RM = carga × (1 + repetições ÷ 30). Quem faz 80 kg por 8 repetições tem 1RM estimado de cerca de 101 kg. Outra equação comum é a de Brzycki, 1RM = carga × 36 ÷ (37 − repetições); as duas dão valores próximos em séries de até 10 repetições.",
+  },
+  {
+    q: "Qual é a tabela de porcentagem de RM?",
+    a: "É a carga correspondente a cada percentual do seu 1RM, como 60%, 70%, 80% e 90%. A tabela desta página mostra o exemplo pronto, e a calculadora gera a sua a partir da série que você informar.",
+  },
+  {
+    q: "Como é o protocolo do teste de 1RM?",
+    a: "O teste direto começa com aquecimento em cargas crescentes e segue com poucas tentativas de uma repetição, com descanso longo entre elas, até achar a maior carga levantada com boa técnica. Pede experiência e alguém fazendo a segurança. Para iniciantes, estimar pela calculadora é mais seguro que testar.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: PERGUNTAS.map((p) => ({
+    "@type": "Question",
+    name: p.q,
+    acceptedAnswer: { "@type": "Answer", text: p.a },
+  })),
+};
+
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const ln = "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
 
@@ -78,6 +107,7 @@ export default function CalculadoraOneRMPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
 
       <section className="py-14 bg-black border-b border-white/10">
@@ -254,6 +284,19 @@ export default function CalculadoraOneRMPage() {
               </Link>{" "}
               é o caminho complementar.
             </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-6" style={h}>
+              Perguntas frequentes sobre 1RM
+            </h2>
+            <div className="space-y-6">
+              {PERGUNTAS.map((p) => (
+                <div key={p.q}>
+                  <h3 className="text-lg font-semibold text-white mb-2">{p.q}</h3>
+                  <p className="text-gray-300 leading-relaxed">{p.a}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

@@ -28,7 +28,7 @@ import Compartilhar from "@/components/share/Compartilhar";
  * o crawler não preenche formulário.
  */
 export const metadata: Metadata = {
-  title: "Calculadora de Macros: Proteína, Carbo e Gordura",
+  title: "Calculadora de Macros e Calorias: Emagrecer e Hipertrofia",
   description:
     "Calcule seus macronutrientes — proteína, carboidrato e gordura — pelo seu peso e pela sua meta de calorias, e ajuste a divisão em segundos. Sem cadastro.",
   alternates: { canonical: `${SITE_URL}/ferramentas/calculadora-macros` },
@@ -65,6 +65,39 @@ const breadcrumbSchema = {
   ],
 };
 
+const PERGUNTAS: { q: string; a: string }[] = [
+  {
+    q: "Como usar a calculadora de macros para emagrecer?",
+    a: "Primeiro defina a meta de calorias com déficit (a calculadora de déficit calórico faz isso a partir do TDEE). Depois traga essa meta para cá: a proteína fica em g/kg, a gordura em percentual e o carboidrato completa o resto. Quem emagrece pelo déficit é a caloria; os macros ajudam a preservar músculo e a manter a dieta.",
+  },
+  {
+    q: "Qual a calculadora de macros para hipertrofia?",
+    a: "É a mesma conta, com a meta de calorias em manutenção ou leve superávit e a proteína na faixa de 1,6 a 2,2 g/kg. Não existe percentual mágico de macros para hipertrofia: o que importa é proteína suficiente, calorias adequadas e treino com progressão.",
+  },
+  {
+    q: "Preciso saber meu TDEE antes de calcular os macros?",
+    a: "Sim, porque os macros dividem uma meta de calorias que já existe. Se você ainda não tem esse número, calcule o TDEE na calculadora de TMB e TDEE e ajuste para o seu objetivo antes de distribuir.",
+  },
+  {
+    q: "Como transformar os macros em alimentos?",
+    a: "Use a tabela de alimentos para ver proteína, carboidrato e gordura por porção, ou o Montinho FitChef para montar o cardápio do dia dentro da meta.",
+  },
+  {
+    q: "A calculadora de macros é gratuita?",
+    a: "Sim. É gratuita, online e sem cadastro, e os dados que você digita não saem do navegador.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: PERGUNTAS.map((p) => ({
+    "@type": "Question",
+    name: p.q,
+    acceptedAnswer: { "@type": "Answer", text: p.a },
+  })),
+};
+
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const ln = "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
 
@@ -77,6 +110,7 @@ export default function CalculadoraMacrosPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="py-14 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -268,6 +302,24 @@ export default function CalculadoraMacrosPage() {
                 quantas calorias para ganhar massa muscular
               </Link>{" "}
               cobre o outro lado da conta.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-6" style={h}>
+              Perguntas frequentes sobre a calculadora de macros
+            </h2>
+            <div className="space-y-6">
+              {PERGUNTAS.map((p) => (
+                <div key={p.q}>
+                  <h3 className="text-lg font-semibold text-white mb-2">{p.q}</h3>
+                  <p className="text-gray-300 leading-relaxed">{p.a}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-gray-300 leading-relaxed mt-6">
+              Links úteis: <Link href="/ferramentas/calculadora-tmb-tdee" className={ln}>calculadora de TMB e TDEE</Link>,{" "}
+              <Link href="/alimentos" className={ln}>tabela de alimentos</Link> e{" "}
+              <Link href="/ferramentas/monte-seu-cardapio" className={ln}>Montinho FitChef</Link>.
             </p>
           </div>
         </div>
