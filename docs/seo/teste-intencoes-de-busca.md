@@ -188,3 +188,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-1rm` (30/09) — sem base do GSC.
 - Título antes: "Calculadora de 1RM: Descubra sua Carga Máxima" → depois: "Calculadora de 1RM: Carga Máxima e Tabela de Porcentagem".
 - FAQ visível + FAQPage (4: o que é, cálculo com Epley e Brzycki, tabela de %, protocolo do teste). Calculadora não alterada.
+
+`/ferramentas/zonas-de-frequencia-cardiaca` (30/09) — sem base do GSC.
+- Título antes: "Calculadora de Zonas de Frequência Cardíaca por Idade" → depois: "Zonas de Frequência Cardíaca: Calculadora por Idade (Z1 a Z5)".
+- FAQ visível + FAQPage (5: as 5 zonas, Z1–Z5 corrida/ciclismo, aeróbica × anaeróbica, queima de gordura, Garmin/Apple Watch/Strava). Calculadora não alterada.
