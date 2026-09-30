@@ -41,7 +41,7 @@ const MSG = {
 const LP_MESSAGE = MSG.hero;
 
 export const metadata: Metadata = {
-  title: "Consultoria Online de Treino Personalizado | Montinho Personal",
+  title: "Consultoria Online de Treino Personalizado com Personal Trainer",
   description:
     "Personal trainer online: como funciona a consultoria de treino personalizado, com vídeos de execução, ajustes mensais e suporte no WhatsApp. Para todo o Brasil.",
   alternates: { canonical: "https://www.montinhopersonal.com.br/consultoria-online" },
