@@ -33,7 +33,7 @@ import {
 const CAMINHO = "/ferramentas/calculadora-calorias-natacao";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Calorias na Natação: Por Nado e Tempo",
+  title: "Natação Gasta Quantas Calorias? Calculadora por Nado e Tempo",
   description:
     "Quantas calorias o seu treino na piscina gasta — crawl, costas, peito ou borboleta — com o seu peso, descontando o tempo parado na borda.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -71,6 +71,12 @@ const CRAWL = nado("crawl-leve");
 const SEM_BORDA = calcula(PESO_PADRAO, 40, CRAWL.met);
 const COM_BORDA = calcula(PESO_PADRAO, 25, CRAWL.met, 15);
 const TRES = kgPorMes(calcula(PESO_PADRAO, 45, CRAWL.met), 3);
+/** Nadador recreativo em crawl leve: cerca de 3 min por 100 m, ou 30 min por km (premissa declarada na resposta). */
+const MIN_POR_KM = 30;
+const KM1 = calcula(PESO_PADRAO, MIN_POR_KM, CRAWL.met);
+const M45 = calcula(PESO_PADRAO, 45, CRAWL.met);
+const M50 = calcula(PESO_PADRAO, 50, CRAWL.met);
+const AULA = calcula(PESO_PADRAO, 30, CRAWL.met, 20);
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kg = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -88,6 +94,26 @@ const faq: ItemFAQ[] = [
   {
     question: "Nadar 30 minutos queima quantas calorias?",
     answer: `Para ${PESO_PADRAO} kg, cerca de ${kc(calcula(PESO_PADRAO, 30, CRAWL.met).kcal)} kcal em crawl leve e ${kc(calcula(PESO_PADRAO, 30, nado("crawl-forte").met).kcal)} kcal em crawl forte, contando só o tempo nadando.`,
+  },
+  {
+    question: "Nadar 1 km (1.000 metros) queima quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg em crawl leve, num ritmo recreativo de cerca de 3 minutos a cada 100 m (30 minutos por km), perto de ${kc(KM1.kcal)} kcal. Então 500 m ficam perto de ${kc(KM1.kcal / 2)} kcal e 2 km, perto de ${kc(KM1.kcal * 2)} kcal. Quem nada mais rápido gasta mais por minuto, mas termina o quilômetro antes.`,
+  },
+  {
+    question: "45 ou 50 minutos de natação queimam quantas calorias?",
+    answer: `Em crawl leve, sem contar o tempo parado na borda, cerca de ${kc(M45.kcal)} kcal em 45 minutos e ${kc(M50.kcal)} kcal em 50 minutos para ${PESO_PADRAO} kg. Em nados de treino, como peito ou borboleta, o gasto sobe bastante; a tabela por nado mostra quanto.`,
+  },
+  {
+    question: "Quantas calorias gasta uma aula de natação para iniciante?",
+    answer: `Menos do que as tabelas prometem, porque a aula tem explicação, pausa e borda. Uma aula de 50 minutos com cerca de 30 minutos nadando de fato gasta perto de ${kc(AULA.kcal)} kcal para ${PESO_PADRAO} kg. O número de "600 kcal por aula" supõe nadar a aula inteira sem parar.`,
+  },
+  {
+    question: "Natação gasta mais calorias que corrida ou que academia?",
+    answer: "Depende da intensidade, não da modalidade. Crawl leve gasta menos que corrida moderada no mesmo tempo; crawl forte ou borboleta ficam no nível de corrida rápida. Musculação gasta menos por minuto que natação contínua, mas constrói músculo, e as duas se completam.",
+  },
+  {
+    question: "Quem tem diabetes ou insuficiência cardíaca pode fazer natação?",
+    answer: "Muitas vezes pode, e a natação costuma ser bem tolerada por ter baixo impacto. Mas nessas condições a liberação e a intensidade são decisão do médico que acompanha você. Com diabetes, vale atenção à glicose antes e depois da piscina.",
   },
   {
     question: "Parar na borda muda muito o gasto?",

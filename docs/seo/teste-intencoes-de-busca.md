@@ -225,3 +225,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-volume-treino` (30/09) — sem base do GSC.
 - Título antes: "Calculadora de Volume de Treino: Séries por Músculo" → depois: "Quantas Séries por Semana para Hipertrofia? Calculadora de Volume".
 - FAQ visível + FAQPage (6: séries por grupo/músculo, 3 ou 4 séries, repetições/7 reps, 3×15 vs 4×12, exercícios por treino, 4x/semana). Calculadora não alterada.
+
+`/ferramentas/calculadora-calorias-natacao` (30/09) — sem base do GSC.
+- Título antes: "Calculadora de Calorias na Natação: Por Nado e Tempo" → depois: "Natação Gasta Quantas Calorias? Calculadora por Nado e Tempo".
+- +5 FAQs (1 km/500 m/2 km com premissa de 30 min/km, 45/50 min, aula de iniciante, × corrida/academia, diabetes/insuficiência cardíaca → médico). Números de lib/natacao.ts. Calculadora não alterada.
