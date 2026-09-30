@@ -84665,12 +84665,12 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "academia-com-piscina-alphaville-barueri",
     title: "Academia com Piscina em Alphaville e Barueri",
-    metaTitle: "Academia com Piscina em Alphaville e Barueri",
-    metaDescription: "Procura academia com piscina em Alphaville ou Barueri? Veja quais redes costumam oferecer, como avaliar a estrutura e escolher bem. Confira o guia!",
+    metaTitle: "Academia com Piscina em Alphaville e Barueri: Onde Nadar",
+    metaDescription: "Academia com piscina em Alphaville e Barueri: Acqua Ville, escola de natação Cubo d'Água, ACM e natação gratuita da Prefeitura. Como escolher.",
     excerpt: "Guia para encontrar academia com piscina na região de Alphaville e Barueri: tipos de rede, o que avaliar na estrutura aquática e para quem vale a pena.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-09-30",
     readTime: "8 min",
     author: "Montinho",
     tags: ["academia com piscina","alphaville","barueri","natação","hidroginástica"],
@@ -84709,6 +84709,13 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Para quem quer <strong>aprender a nadar ou colocar os filhos na natação</strong>, escolas especializadas costumam entregar metodologia melhor que a piscina "genérica" de academia.</p>
 <h3>Redes low-cost</h3>
 <p>Aqui a regra é simples: <strong>mensalidade econômica e piscina raramente moram juntas</strong>. Redes como a Smart Fit focam em musculação e cardio justamente para manter o preço baixo.</p>
+<h2>Nomes que aparecem na busca por piscina em Alphaville</h2>
+<ul>
+<li><strong>Acqua Ville</strong> — no site oficial (acquaville.com.br), a academia informa salas de musculação e cárdio e piscina aquecida tratada com ozônio. É a opção para quem quer musculação e piscina no mesmo lugar.</li>
+<li><strong>Cubo d'Água</strong> — escola de natação com matrículas em Alphaville para todas as idades, segundo o Instagram oficial (@cubodaguanatacao). Telefones divulgados lá: (11) 3090-6752, (11) 3090-7699 e WhatsApp (11) 91997-2273.</li>
+<li><strong>ACM</strong> — muita gente busca a ACM em Alphaville/Barueri. Mensalidade, se aceita Gympass/Wellhub e horários de piscina, confirme direto com a unidade antes de ir.</li>
+</ul>
+<p><strong>Natação gratuita em Barueri:</strong> quando existe, a oferta é da Prefeitura, pela Secretaria de Esportes, com vagas e inscrição em períodos definidos. Consulte o site oficial da Prefeitura de Barueri antes de contar com ela. Se o foco é aula de natação, e não piscina livre, veja também <a href="/blog/academia-com-natacao-alphaville">academia com natação em Alphaville</a>.</p>
 <h2>Como avaliar a piscina antes de matricular</h2>
 <ul>
 <li><strong>Temperatura e aquecimento</strong>: água aquecida faz diferença enorme no inverno da região.</li>
@@ -84743,6 +84750,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><a href="/blog/como-escolher-uma-academia">Como escolher uma academia sem errar</a></li>
 </ul>`,
     faq: [
+      { question: "Qual academia de Alphaville tem musculação e piscina?", answer: "A Acqua Ville informa no site oficial salas de musculação e cárdio e piscina aquecida tratada com ozônio. Confirme horários e planos direto com a academia." },
+      { question: "Tem natação gratuita em Barueri?", answer: "Quando há vagas gratuitas, elas são da Prefeitura de Barueri, pela Secretaria de Esportes, com inscrição em períodos definidos. Consulte o site oficial da Prefeitura." },
+      { question: "Qual o valor da mensalidade da ACM Alphaville?", answer: "O valor depende do plano e das atividades. Consulte direto com a unidade; não publicamos preço de terceiros sem fonte oficial atualizada." },
       { question: "Onde encontrar academia com piscina em Alphaville e Barueri?", answer: "Principalmente em redes premium e full-service, clubes e escolas de natação. Redes low-cost geralmente não têm piscina. Confirme a estrutura na unidade antes de assinar." },
       { question: "O que checar na piscina de uma academia?", answer: "Aquecimento da água, raias e horários de nado livre, lotação, higiene e tratamento, grade de aulas e qualidade dos vestiários." },
       { question: "Natação dispensa musculação?", answer: "Não. São estímulos complementares: natação para condicionamento com baixo impacto, musculação para força e massa muscular. A combinação dos dois é o cenário ideal." },
