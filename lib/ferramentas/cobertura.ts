@@ -47,6 +47,7 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   // chega com "quem ganhou / que horas / quanto pesa" e sai com um fato, não com
   // uma conta. O único link de ferramenta que cabe (Potencial Natural, no
   // artigo de peso e altura) já está no texto, como contexto, não como decisão.
+  "por-que-ramon-dino-perdeu-mr-olympia-2026": "Notícia explicativa da derrota de Ramon Dino no Olympia 2026: a pessoa quer entender o que aconteceu e a polêmica; sai com fatos, sem conta pendente.",
   "ramon-dino-mr-olympia-2026-horario": "Notícia de horário e transmissão: a pessoa quer saber que horas Ramon Dino compete e onde assistir; não há conta na cabeça nem ferramenta que responda isso.",
   "quem-ganhou-mr-olympia-2026": "Hub de resultados do Mr. Olympia 2026, categoria por categoria: a leitura termina com nomes e colocações, nunca com um número para calcular.",
   "resultado-wellness-mr-olympia-2026": "Notícia de resultado da Wellness: a pessoa quer a campeã e a colocação das brasileiras; sai com um fato, sem conta pendente para uma ferramenta.",

@@ -258,3 +258,8 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 - Ferramenta trocada: calculadora de FC → calculadora de caminhada (conta do leitor: calorias do 12-3-30). Decisão do Montinho.
 - Título antes: "Caminhada Inclinada na Esteira: Método 12-3-30 Funciona?" → depois: "Método 12-3-30 na Esteira: Funciona? Calorias e Como Fazer".
 - Seção nova: calorias por peso (lib/caminhada.ts), quanto é 12% de inclinação, 12-5-30. +3 FAQs (funciona, minutos para 1 kg, 30 min todo dia). updatedAt 01/10.
+
+## 2026-09-30 — por-que-ramon-dino-perdeu-mr-olympia-2026 (novo) e resultado-classic-physique-mr-olympia-2026
+- Prints: "por que ramon dino perdeu" e "ramon dino lesão". PAA: para quem perdeu, o que aconteceu no Olympia, qual a polêmica, o que aconteceu hoje, lesão.
+- Novo artigo com H2/FAQ dessas perguntas. Resultado: top 5 completo, premiação, declaração de Ramon (updatedAt 30/09).
+- Fora de escopo (pauta): "por que Ramon saiu da Max / da Growth", "quantos cm de braço" — sem fonte verificada ainda.
