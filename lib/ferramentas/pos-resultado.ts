@@ -72,6 +72,7 @@ export const NOME: Record<Ferramenta, string> = {
   danca: "Calculadora de Calorias na Dança",
   natacao: "Calculadora de Calorias na Natação",
   jiujitsu: "Calculadora de Calorias no Jiu-Jitsu",
+  muaythai: "Calculadora de Calorias no Muay Thai",
   corda: "Calculadora de Calorias Pulando Corda",
   bicicleta: "Calculadora de Calorias na Bicicleta",
   escada: "Calculadora de Calorias Subindo Escada",
@@ -125,6 +126,7 @@ export const ROTA: Record<Ferramenta, string> = {
   danca: "/ferramentas/calculadora-calorias-danca",
   natacao: "/ferramentas/calculadora-calorias-natacao",
   jiujitsu: "/ferramentas/calculadora-calorias-jiu-jitsu",
+  muaythai: "/ferramentas/calculadora-calorias-muay-thai",
   corda: "/ferramentas/calculadora-calorias-pular-corda",
   bicicleta: "/ferramentas/calculadora-calorias-bicicleta",
   escada: "/ferramentas/calculadora-calorias-escada",
@@ -185,6 +187,7 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   natacao: { ferramenta: "deficit", label: "Calcular meu déficit" },
   /* Quem viu o gasto da aula precisa do gasto do dia para saber o déficit. */
   jiujitsu: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
+  muaythai: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   /* A corda gasta pouco em minutos; o déficit da semana é o que decide. */
   corda: { ferramenta: "deficit", label: "Calcular meu déficit" },
   /* Quem viu o gasto do pedal precisa do gasto do dia para saber o déficit. */
@@ -430,6 +433,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
       interpretacao:
         "Esse é o gasto do pedal, não o do seu dia. A bicicleta gasta bem e é baixo impacto, mas o semáforo e o passeio lento derrubam a média — o que move o resultado é a frequência, a alimentação e a força que segura o joelho e o músculo enquanto o peso cai.",
       pedido: "Pedalo e queria entender o que falta para a bike me ajudar a emagrecer.",
+    },
+  },
+  muaythai: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto da aula, não o do seu dia. O muay thai gasta bem nos rounds fortes, mas eles são curtos: o que move o resultado é a frequência de aulas, a alimentação e a força que protege joelho, quadril e ombro nos chutes.",
+      pedido: "Treino muay thai e queria entender o que falta para ele me ajudar a emagrecer.",
     },
   },
   jiujitsu: {

@@ -361,6 +361,12 @@ export type AnalyticsEvent =
   | "jiujitsu_frequency"
   | "jiujitsu_methodology_open"
   | "jiujitsu_tool_click"
+  | "muaythai_calculator_view"
+  | "muaythai_calculator_use"
+  | "muaythai_preset"
+  | "muaythai_frequency"
+  | "muaythai_methodology_open"
+  | "muaythai_tool_click"
   /** Calculadora de Calorias Pulando Corda. `pace`, `rounds` e `per_week`; nunca o peso. */
   /** Calculadora de Calorias na Bicicleta. Modo, faixa e frequência; nunca o peso nem a distância. */
   | "bike_calculator_view"

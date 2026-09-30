@@ -44,6 +44,7 @@ import { ARTIGOS_COM_CALCULADORA_SPINNING } from "../lib/spinning";
 import { ARTIGOS_COM_CALCULADORA_DANCA } from "../lib/danca";
 import { ARTIGOS_COM_CALCULADORA_NATACAO } from "../lib/natacao";
 import { ARTIGOS_COM_CALCULADORA_JIU } from "../lib/jiujitsu";
+import { ARTIGOS_COM_CALCULADORA_MUAY } from "../lib/muaythai";
 import { ARTIGOS_COM_CALCULADORA_CORDA } from "../lib/corda";
 import { ARTIGOS_COM_CALCULADORA_BICICLETA } from "../lib/bicicleta";
 import { ARTIGOS_COM_CALCULADORA_ESCADA } from "../lib/escada";
@@ -102,6 +103,7 @@ const REGISTROS: [string, string[]][] = [
   ["dança", ARTIGOS_COM_CALCULADORA_DANCA],
   ["natação", ARTIGOS_COM_CALCULADORA_NATACAO],
   ["jiu-jitsu", ARTIGOS_COM_CALCULADORA_JIU],
+  ["muay thai", ARTIGOS_COM_CALCULADORA_MUAY],
   ["corda", ARTIGOS_COM_CALCULADORA_CORDA],
   ["bicicleta", ARTIGOS_COM_CALCULADORA_BICICLETA],
   ["escada", ARTIGOS_COM_CALCULADORA_ESCADA],

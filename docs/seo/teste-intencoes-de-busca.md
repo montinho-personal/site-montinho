@@ -283,3 +283,10 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 - Prints "jiu jitsu calorias": por hora, queima (muitas) calorias, treino/aula, perde, gastas, kcal; PAA arte marcial que mais queima, emagrece antes e depois, hérnia de disco; relacionadas musculação 1h, muay thai, tabela de MET, kimono.
 - Seção "Jiu-jitsu: calorias por hora" (60–100 kg: só técnica, aula com 3 rolas, rola sem parar) + tabela de MET e link para o boxe; FAQ: por hora, queima muitas calorias?, arte marcial que mais queima, tabela de MET. Calculadora intocada.
 - Pauta: hérnia de disco e jiu-jitsu (saúde, precisa fonte), muay thai; kimono fora do tema.
+
+## 2026-09-30 — /ferramentas/calculadora-calorias-muay-thai (NOVA)
+- Título: "Muay Thai Queima Quantas Calorias? Por Hora e Por Aula"
+- Prints "muay thai calorias": por hora, gastas, queima (muitas), treino, quantas perde em 1 hora; PAA arte marcial que mais queima, academia x muay thai, ajuda a emagrecer, define o corpo; relacionadas emagrece quantos quilos por semana, 1 hora queima quantas, define o corpo feminino, benefícios/malefícios.
+- Motor lib/muaythai.ts: Compêndio 2011, 15425 (5,3 METs, técnica) e 15430 (10,3, ritmo de luta, cita muay thai), descanso 1,3. Rounds fortes = manopla, saco em ritmo de luta, sparring. METs importados do jiu-jitsu.
+- Embutida em /blog/muay-thai-emagrece (ARTIGOS_COM_CALCULADORA_MUAY). Tag "muay thai" saiu do cartão do boxe no catálogo.
+- Pauta: benefícios do muay thai (mente, corpo feminino/masculino, adolescentes), desvantagens, define o corpo em quanto tempo.

@@ -495,7 +495,7 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tempo: "15 segundos",
     categoria: "cardio",
     icone: "luva",
-    tags: ["boxe", "muay thai", "luta", "saco de pancada", "sparring", "rounds", "arte marcial"],
+    tags: ["boxe", "luta", "saco de pancada", "sparring", "rounds", "arte marcial"],
   },
   {
     id: "zumba",
@@ -551,6 +551,17 @@ export const CATALOGO: FerramentaCatalogo[] = [
     categoria: "cardio",
     icone: "faixa",
     tags: ["jiu jitsu", "jiujitsu", "bjj", "rola", "tatame", "luta", "arte marcial", "kimono"],
+  },
+  {
+    id: "muaythai",
+    href: "/ferramentas/calculadora-calorias-muay-thai",
+    nome: "Calculadora de Calorias no Muay Thai",
+    resultado: "Descubra o gasto da aula separando técnica de rounds fortes.",
+    acao: "Calcular no muay thai",
+    tempo: "15 segundos",
+    categoria: "cardio",
+    icone: "faixa",
+    tags: ["muay thai", "muaythai", "boxe tailandes", "kickboxing", "manopla", "rounds", "luta", "arte marcial"],
   },
   {
     id: "corda",

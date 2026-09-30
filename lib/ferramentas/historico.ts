@@ -49,6 +49,7 @@ export type Ferramenta =
   | "danca"
   | "natacao"
   | "jiujitsu"
+  | "muaythai"
   | "corda"
   | "bicicleta"
   | "escada"

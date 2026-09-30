@@ -61,6 +61,7 @@ const CATEGORIAS: Record<Ferramenta, string[]> = {
   danca: ["padrao"],
   natacao: ["padrao"],
   jiujitsu: ["padrao"],
+  muaythai: ["padrao"],
   corda: ["padrao"],
   bicicleta: ["padrao"],
   escada: ["padrao"],
