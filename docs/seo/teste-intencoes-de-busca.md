@@ -161,3 +161,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `blog/academias-em-santana-de-parnaiba` (30/09) — base: 87 impressões, 2 cliques, posição 8,5.
 - Título: "Academias em Santana de Parnaíba: Guia 2026" → "Academias em Santana de Parnaíba: Centro, Fazendinha e Preços 2026".
 - Hub com links para as páginas de academia da cidade + Fábrica Premium, crianças/adolescentes, "de graça", desambiguação com o bairro de Santana; +3 FAQs.
+
+`blog/academias-perto-de-alphaville` (30/09) — base: 86 impressões, 1 clique, posição 21,8.
+- Título: "Academias Perto de Alphaville: Melhores Opções" → "Academia Perto de Mim em Alphaville: Opções por Região".
+- Seção "por região" (Industrial, Iguatemi, Centro Comercial, Santana de Parnaíba, Tamboré, Aldeia, Castelo/estação) com links para 12 páginas; +3 FAQs. Feito sem print novo (intenção "perto de mim" veio dos prints de Barueri e Santana de Parnaíba).
