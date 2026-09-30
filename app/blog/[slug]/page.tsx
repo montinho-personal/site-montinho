@@ -103,6 +103,7 @@ import LinkFerramentaPolichinelo from "@/components/polichinelo/LinkFerramentaPo
 import NotaMetodo from "@/components/filosofia/NotaMetodo";
 import { clusterRecebeNota } from "@/lib/filosofia";
 import FAQ from "@/components/ui/FAQ";
+import { videoSchemas } from "@/lib/videos";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -392,6 +393,13 @@ export default async function BlogPost({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
+      {videoSchemas(post.content ?? "", SITE_URL).map((v) => (
+        <script
+          key={v.embedUrl}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(v) }}
+        />
+      ))}
 
       {/* Breadcrumb + Hero */}
       <section className="pt-16 pb-12 bg-black border-b border-white/10">
