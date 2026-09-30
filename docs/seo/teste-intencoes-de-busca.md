@@ -212,3 +212,8 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-corrida` (30/09) — sem base do GSC.
 - Título antes: "Calculadora de Corrida: Pace, Tempo e Calorias" → depois: "Calculadora de Pace: Corrida, Esteira (km/h), Tempo e Calorias".
 - Tabela nova pace × km/h × tempo (5k, 10k, meia, maratona), +3 FAQs (cálculo manual, converter para esteira, meia maratona). Calculadora não alterada. Fora: Tempo Run, Corrida Perfeita, Strava; "pace natação" (outra conta, por 100 m).
+
+`/ferramentas/composicao-corporal` (30/09) — sem base do GSC.
+- Título antes: "Calculadora de Composição Corporal e Bioimpedância" → depois: "Percentual de Gordura: Composição Corporal e Bioimpedância".
+- +4 FAQs (como se calcula: fita/Marinha, dobras Jackson-Pollock 3/7, bioimpedância, DXA; 20%; 23%; 70 kg é gordo?). Calculadora não alterada.
+- Descompasso de intenção: a busca quer CALCULAR o % (fita ou dobras); a ferramenta parte do % pronto. Proposta ao Montinho: modo "estimar pela fita (Marinha)" — decisão dele.
