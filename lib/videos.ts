@@ -57,7 +57,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
       { href: "/blog/como-tirar-medidas-corporais", nome: "Como tirar medidas corporais" },
     ],
     ferramenta: { href: "/ferramentas/simulador-emagrecimento", nome: "Simulador de emagrecimento" },
-    publicadoEm: "2026-10-01",
+    publicadoEm: "2026-09-30",
   },
   {
     id: "nrT-Fan_Nbg",
@@ -74,6 +74,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     ],
     artigos: [{ href: "/blog/como-evitar-efeito-sanfona", nome: "Como evitar o efeito sanfona" }],
     ferramenta: { href: "/ferramentas/calculadora-de-proteina", nome: "Calculadora de proteína" },
+    publicadoEm: "2026-08-02",
   },
   {
     id: "DiH1OzIR6Yk",
@@ -107,6 +108,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     artigos: [
       { href: "/blog/como-continuar-emagrecendo-sem-perder-motivacao", nome: "Como continuar emagrecendo sem perder a motivação" },
     ],
+    publicadoEm: "2026-07-17",
   },
   {
     id: "yndKE1GrnUQ",
@@ -155,6 +157,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
       { href: "/blog/como-nao-desistir-da-dieta", nome: "Como não desistir da dieta" },
     ],
     ferramenta: { href: "/ferramentas/simulador-emagrecimento", nome: "Simulador de emagrecimento" },
+    publicadoEm: "2026-09-25",
   },
   {
     id: "xb1sP6z01-s",
@@ -189,6 +192,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
       { href: "/blog/ozempic-e-treino", nome: "Ozempic e treino" },
     ],
     ferramenta: { href: "/ferramentas/calculadora-de-proteina", nome: "Calculadora de proteína" },
+    publicadoEm: "2026-09-08",
   },
   {
     id: "yqPAYRVTe0E",
@@ -204,6 +208,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     ],
     artigos: [{ href: "/blog/melhor-exercicio-para-ganhar-musculo", nome: "Melhor exercício para ganhar músculo" }],
     ferramenta: { href: "/treino-para-minha-rotina", nome: "Treino para a minha rotina" },
+    publicadoEm: "2026-08-19",
   },
   {
     id: "izMrrSoJGBw",
@@ -220,6 +225,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     artigos: [
       { href: "/blog/como-continuar-emagrecendo-sem-perder-motivacao", nome: "Como continuar emagrecendo sem perder a motivação" },
     ],
+    publicadoEm: "2026-08-13",
   },
 ];
 
