@@ -208,3 +208,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-creatina` (30/09) — sem base do GSC.
 - Título antes: "Calculadora de Creatina: Quanto Tomar por Dia?" → depois: "Quanto de Creatina Tomar por Dia? Calculadora e Tabela por Peso".
 - +5 FAQs (70 kg, 10 g, 20 g/saturação, colher/scoops, hipertrofia). Calculadora não alterada. Fora: Dark Lab, Growth.
+
+`/ferramentas/calculadora-corrida` (30/09) — sem base do GSC.
+- Título antes: "Calculadora de Corrida: Pace, Tempo e Calorias" → depois: "Calculadora de Pace: Corrida, Esteira (km/h), Tempo e Calorias".
+- Tabela nova pace × km/h × tempo (5k, 10k, meia, maratona), +3 FAQs (cálculo manual, converter para esteira, meia maratona). Calculadora não alterada. Fora: Tempo Run, Corrida Perfeita, Strava; "pace natação" (outra conta, por 100 m).
