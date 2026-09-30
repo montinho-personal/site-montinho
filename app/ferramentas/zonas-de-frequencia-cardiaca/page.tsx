@@ -29,7 +29,7 @@ import Compartilhar from "@/components/share/Compartilhar";
  * para quem chega sem vontade de preencher nada.
  */
 export const metadata: Metadata = {
-  title: "Calculadora de Zonas de Frequência Cardíaca por Idade",
+  title: "Zonas de Frequência Cardíaca: Calculadora por Idade (Z1 a Z5)",
   description:
     "Informe sua idade e veja sua frequência cardíaca máxima e as cinco zonas de treino em bpm, com o método de Karvonen se souber a de repouso.",
   alternates: { canonical: `${SITE_URL}/ferramentas/zonas-de-frequencia-cardiaca` },
@@ -66,6 +66,39 @@ const breadcrumbSchema = {
   ],
 };
 
+const PERGUNTAS: { q: string; a: string }[] = [
+  {
+    q: "Quais são as 5 zonas de frequência cardíaca?",
+    a: "Zona 1, muito leve (50–60% da FC máxima); zona 2, leve (60–70%); zona 3, moderada (70–80%); zona 4, intensa (80–90%); e zona 5, máxima (90–100%). A calculadora converte cada faixa em batimentos por minuto para a sua idade.",
+  },
+  {
+    q: "O que é Z1, Z2, Z3, Z4 e Z5 na corrida e no ciclismo?",
+    a: "São as mesmas cinco zonas, numeradas da mais leve para a mais intensa. Na corrida e no ciclismo a lógica é igual: a maior parte do volume em Z2, e Z4 e Z5 em intervalados curtos. No ciclismo muita gente treina por potência, mas as zonas por frequência cardíaca continuam válidas.",
+  },
+  {
+    q: "Qual a diferença entre zona aeróbica e anaeróbica?",
+    a: "Nas zonas mais baixas (1 a 3) o esforço é sustentado principalmente pelo metabolismo aeróbico, e dá para manter por muito tempo. Nas zonas 4 e 5 você passa perto ou acima do limiar, a contribuição anaeróbica cresce e o esforço só dura minutos.",
+  },
+  {
+    q: "Qual a zona de frequência cardíaca para queima de gordura?",
+    a: "Na zona 2 a gordura responde por uma parte maior da energia gasta, e por isso ela ficou conhecida como zona de queima. Mas o que emagrece é o gasto total somado a um déficit calórico, não a proporção de gordura usada durante o treino.",
+  },
+  {
+    q: "Posso usar essas zonas no Garmin, Apple Watch ou Strava?",
+    a: "Pode. Esses aplicativos calculam as zonas por percentual da FC máxima ou da reserva, e permitem editar os valores. Use a sua FC máxima e, se souber, a de repouso, e copie as faixas em bpm que a calculadora mostra.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: PERGUNTAS.map((p) => ({
+    "@type": "Question",
+    name: p.q,
+    acceptedAnswer: { "@type": "Answer", text: p.a },
+  })),
+};
+
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const ln = "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
 
@@ -79,6 +112,7 @@ export default function CalculadoraFCPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
 
       <section className="py-14 bg-black border-b border-white/10">
@@ -276,6 +310,19 @@ export default function CalculadoraFCPage() {
               </Link>{" "}
               é o texto mais direto.
             </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-6" style={h}>
+              Perguntas frequentes sobre zonas de frequência cardíaca
+            </h2>
+            <div className="space-y-6">
+              {PERGUNTAS.map((p) => (
+                <div key={p.q}>
+                  <h3 className="text-lg font-semibold text-white mb-2">{p.q}</h3>
+                  <p className="text-gray-300 leading-relaxed">{p.a}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
