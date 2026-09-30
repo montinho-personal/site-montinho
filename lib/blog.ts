@@ -112,6 +112,7 @@ import { OLYMPIA_BRASIL_EXPO_2026_POSTS } from "./olympia-brasil-expo-2026";
 import { CATEGORIAS_FISICULTURISMO_POSTS } from "./categorias-fisiculturismo";
 import { MARATONA_CURITIBA_2026_POSTS } from "./maratona-curitiba-2026";
 import { MARATONA_BRASILIA_2026_POSTS } from "./maratona-brasilia-2026";
+import { FABRICA_PREMIUM_POSTS } from "./fabrica-premium";
 
 export const blogPosts = ([
   ...SAO_SILVESTRE_2026_POSTS,
@@ -124,6 +125,7 @@ export const blogPosts = ([
   ...CATEGORIAS_FISICULTURISMO_POSTS,
   ...MARATONA_CURITIBA_2026_POSTS,
   ...MARATONA_BRASILIA_2026_POSTS,
+  ...FABRICA_PREMIUM_POSTS,
   ...OLYMPIA_2026_POSTS,
   {
     slug: "parar-de-tomar-mounjaro",
@@ -78794,7 +78796,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Academia 24 horas em Alphaville:</strong> <a href="/blog/ironberg-alphaville">Ironberg</a> e <a href="/blog/arena-18-alphaville">Arena 18</a>. Mais opções em <a href="/blog/academia-24-horas-alphaville">academia 24 horas em Alphaville</a>.</li>
 <li><strong>Aceitam Wellhub (antigo Gympass):</strong> <a href="/blog/bluefit-alphaville">Bluefit</a>, <a href="/blog/bodytech-alphaville">Bodytech</a>, <a href="/blog/panobianco-alphaville">Panobianco</a>, <a href="/blog/ironberg-alphaville">Ironberg</a>, <a href="/blog/arena-18-alphaville">Arena 18</a>, <a href="/blog/scelta-alphaville">Scelta</a>, <a href="/blog/4perform-alphaville">4Perform</a>, <a href="/blog/24-wellness-alphaville">24 Wellness</a>, <a href="/blog/skyfit-alphaville">SkyFit</a>, <a href="/blog/studio-mormaii-alphaville">Studio Mormaii</a> e <a href="/blog/voi-fit-alphaville">Voi Fit</a>.</li>
 <li><strong>Aceitam TotalPass:</strong> <a href="/blog/smart-fit-alphaville">Smart Fit</a>, <a href="/blog/scelta-alphaville">Scelta</a>, <a href="/blog/4perform-alphaville">4Perform</a>, <a href="/blog/24-wellness-alphaville">24 Wellness</a>, <a href="/blog/skyfit-alphaville">SkyFit</a>, <a href="/blog/studio-mormaii-alphaville">Studio Mormaii</a> e <a href="/blog/voi-fit-alphaville">Voi Fit</a>.</li>
-<li><strong>Faixa premium (as mais caras):</strong> <a href="/blog/bodytech-alphaville">Bodytech</a>, <a href="/blog/ironberg-alphaville">Ironberg</a>, <a href="/blog/scelta-alphaville">Scelta</a> e <a href="/blog/4perform-alphaville">4Perform</a>. Veja <a href="/blog/academias-premium-alphaville">academias premium em Alphaville</a>.</li>
+<li><strong>Faixa premium (as mais caras):</strong> <a href="/blog/bodytech-alphaville">Bodytech</a>, <a href="/blog/ironberg-alphaville">Ironberg</a>, <a href="/blog/scelta-alphaville">Scelta</a> e <a href="/blog/4perform-alphaville">4Perform</a>; em Santana de Parnaíba, a <a href="/blog/fabrica-premium-alphaville">Fábrica Premium</a>. Veja <a href="/blog/academias-premium-alphaville">academias premium em Alphaville</a>.</li>
 <li><strong>Mais econômicas:</strong> <a href="/blog/smart-fit-alphaville">Smart Fit</a>, <a href="/blog/bluefit-alphaville">Bluefit</a>, <a href="/blog/panobianco-alphaville">Panobianco</a>, <a href="/blog/skyfit-alphaville">SkyFit</a> e <a href="/blog/voi-fit-alphaville">Voi Fit</a>. Faixas de preço em <a href="/blog/quanto-custa-academia-em-alphaville">quanto custa academia em Alphaville</a>.</li>
 </ul>
 <p><strong>Tem Smart Fit em Alphaville?</strong> Tem: a unidade fica no Centro Industrial e Empresarial, em Barueri. Análise completa em <a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a>.</p>
