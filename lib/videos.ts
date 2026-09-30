@@ -191,6 +191,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
       { href: "/blog/ozempic-e-treino", nome: "Ozempic e treino" },
     ],
     ferramenta: { href: "/ferramentas/calculadora-de-proteina", nome: "Calculadora de proteína" },
+    publicadoEm: "2026-09-08",
   },
   {
     id: "yqPAYRVTe0E",
@@ -206,6 +207,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     ],
     artigos: [{ href: "/blog/melhor-exercicio-para-ganhar-musculo", nome: "Melhor exercício para ganhar músculo" }],
     ferramenta: { href: "/treino-para-minha-rotina", nome: "Treino para a minha rotina" },
+    publicadoEm: "2026-08-19",
   },
   {
     id: "izMrrSoJGBw",
