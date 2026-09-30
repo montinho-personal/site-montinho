@@ -19,7 +19,7 @@ import Compartilhar from "@/components/share/Compartilhar";
  * responde outra intenção e continua canônico para si.
  */
 export const metadata: Metadata = {
-  title: "Calculadora de Volume de Treino: Séries por Músculo",
+  title: "Quantas Séries por Semana para Hipertrofia? Calculadora de Volume",
   description:
     "Calcule quantas séries semanais você faz por músculo — peito, costas, pernas, braços e ombros — e veja o volume, a frequência e a distribuição do treino.",
   alternates: { canonical: `${SITE_URL}/ferramentas/calculadora-volume-treino` },
@@ -55,6 +55,43 @@ const breadcrumbSchema = {
   ],
 };
 
+const PERGUNTAS: { q: string; a: string }[] = [
+  {
+    q: "Quantas séries por grupo muscular por semana para hipertrofia?",
+    a: "A literatura aponta uma relação dose-resposta: mais séries semanais tendem a dar mais hipertrofia, até um ponto em que o ganho extra diminui. Por isso a página mostra faixas por nível, e não um número único. Vale igual para costas, quadríceps, ombro, posterior e qualquer outro músculo: a calculadora soma as séries de cada um a partir do seu treino.",
+  },
+  {
+    q: "É melhor fazer 3 ou 4 séries para hipertrofia?",
+    a: "O que pesa é o total de séries do músculo na semana, não o número por exercício. Três séries em dois exercícios somam o mesmo que duas em três. Escolha o que cabe no tempo e na recuperação, e confira o total semanal na calculadora.",
+  },
+  {
+    q: "Quantas repetições para hipertrofia? 7 repetições servem?",
+    a: "Servem. A hipertrofia acontece numa faixa ampla de repetições, de cargas pesadas a leves, desde que a série termine perto da falha. Faixas de 6 a 12 repetições são práticas porque equilibram carga e cansaço, mas 7, 10 ou 15 funcionam.",
+  },
+  {
+    q: "É melhor fazer 3 séries de 15 ou 4 séries de 12?",
+    a: "Se as séries terminam perto da falha, 4 × 12 soma uma série a mais para o músculo, e isso tende a pesar mais que a diferença de repetições. Mas a escolha depende do exercício e da sua recuperação: o que decide no longo prazo é progredir carga ou repetições ao longo das semanas.",
+  },
+  {
+    q: "Quantos exercícios por treino para hipertrofia?",
+    a: "Não há número fixo. Pense em séries por músculo na semana e distribua em exercícios que você executa bem. Para a maioria das pessoas, 1 a 3 exercícios por músculo na sessão resolvem, com as séries divididas em 2 ou mais dias.",
+  },
+  {
+    q: "Treinar 4 vezes por semana é suficiente para hipertrofia?",
+    a: "É, e com folga. Quatro treinos permitem trabalhar cada músculo duas vezes por semana, o que facilita distribuir o volume. Para quem é natural, a consistência e a progressão pesam mais do que treinar mais dias.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: PERGUNTAS.map((p) => ({
+    "@type": "Question",
+    name: p.q,
+    acceptedAnswer: { "@type": "Answer", text: p.a },
+  })),
+};
+
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const ln = "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
 
@@ -62,6 +99,7 @@ export default function CalculadoraVolumePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
 
       <section className="py-14 bg-black border-b border-white/10">
@@ -291,6 +329,19 @@ export default function CalculadoraVolumePage() {
               </Link>{" "}
               resolve o outro lado.
             </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-6" style={h}>
+              Perguntas frequentes sobre séries para hipertrofia
+            </h2>
+            <div className="space-y-6">
+              {PERGUNTAS.map((p) => (
+                <div key={p.q}>
+                  <h3 className="text-lg font-semibold text-white mb-2">{p.q}</h3>
+                  <p className="text-gray-300 leading-relaxed">{p.a}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
