@@ -84797,7 +84797,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <ul>
 <li><strong>Acqua Ville</strong> — no site oficial (acquaville.com.br), a academia informa salas de musculação e cárdio e piscina aquecida tratada com ozônio. É a opção para quem quer musculação e piscina no mesmo lugar.</li>
 <li><strong>Cubo d'Água</strong> — escola de natação com matrículas em Alphaville para todas as idades, segundo o Instagram oficial (@cubodaguanatacao). Telefones divulgados lá: (11) 3090-6752, (11) 3090-7699 e WhatsApp (11) 91997-2273.</li>
-<li><strong>ACM</strong> — muita gente busca a ACM em Alphaville/Barueri. Mensalidade, se aceita Gympass/Wellhub e horários de piscina, confirme direto com a unidade antes de ir.</li>
+<li><strong>ACM Alphaville</strong> — Alameda Araguaia, 63, segundo a página oficial da ACM. Mensalidade, se aceita Gympass/Wellhub e horários de piscina, confirme direto com a unidade antes de ir.</li>
 </ul>
 <p><strong>Natação gratuita em Barueri:</strong> quando existe, a oferta é da Prefeitura, pela Secretaria de Esportes, com vagas e inscrição em períodos definidos. Consulte o site oficial da Prefeitura de Barueri antes de contar com ela. Se o foco é aula de natação, e não piscina livre, veja também <a href="/blog/academia-com-natacao-alphaville">academia com natação em Alphaville</a>.</p>
 <h2>Como avaliar a piscina antes de matricular</h2>
@@ -85744,16 +85744,20 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "academia-com-natacao-alphaville",
     title: "Academia com Natação em Alphaville e Região",
-    metaTitle: "Academia com Natação em Alphaville e Região",
-    metaDescription: "Onde nadar em Alphaville, Barueri e Santana de Parnaíba: academias com piscina, benefícios da natação e como combinar com musculação. Agende avaliação.",
+    metaTitle: "Academia com Natação em Alphaville e Barueri: Escolas e Valores",
+    metaDescription: "Natação em Alphaville e Barueri: Cubo d’Água, ACM Alphaville (Al. Araguaia, 63), Acqua Ville, natação infantil e gratuita da Prefeitura. Como escolher.",
     excerpt: "Onde encontrar piscina e aulas de natação na região de Alphaville, e como combinar natação com treino de força.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-09-30",
     readTime: "8 min",
     author: "Montinho",
     tags: ["natação","piscina","academia alphaville","treino","cardio"],
     faqSchema: [
+      { question: "Onde tem escola de natação em Alphaville?", answer: "Entre as que aparecem na busca: Cubo d'Água (matrículas em Alphaville, (11) 3090-6752) e ACM Alphaville (Alameda Araguaia, 63). Confirme turmas e valores com cada uma." },
+      { question: "Tem natação gratuita em Barueri?", answer: "Quando há vagas gratuitas, elas são da Prefeitura de Barueri, pela Secretaria de Esportes, com inscrição em períodos definidos. Consulte o site oficial da Prefeitura." },
+      { question: "Onde fica a ACM Alphaville?", answer: "Na Alameda Araguaia, 63, em Alphaville, Barueri, segundo a página oficial da ACM." },
+      { question: "A Mori Natação tem unidade em Alphaville?", answer: "As unidades da Mori que aparecem na busca ficam em São Paulo (Vila Andrade, Moema). Em Alphaville, as opções citadas são Cubo d'Água, ACM e Acqua Ville." },
       { question: "Quais academias em Alphaville têm piscina?", answer: "Piscina é estrutura típica de academias premium, que concentram esse tipo de instalação na região de Alphaville e Tamboré. Redes econômicas quase nunca têm. Confirme a estrutura e a grade de natação diretamente na unidade." },
       { question: "Academia barata tem natação?", answer: "Muito raramente. Piscina exige espaço, manutenção e equipe, custos incompatíveis com o modelo low-cost. Quem busca natação geralmente precisa de academia premium, clube ou escola de natação dedicada." },
       { question: "Natação emagrece?", answer: "A natação tem alto gasto calórico e é excelente exercício cardiovascular. Para emagrecimento, o fator decisivo é o balanço energético ao longo das semanas, idealmente combinando natação, treino de força e alimentação ajustada." },
@@ -85779,6 +85783,13 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia com Natação em Alphaville e Região: avaliação de quem treina e atende na região.</figcaption>
 </figure>
 
+<h2>Onde fazer natação em Alphaville e Barueri: nomes que aparecem na busca</h2>
+<ul>
+<li><strong>Cubo d'Água</strong> — escola de natação com matrículas em Alphaville para todas as idades, segundo o Instagram oficial (@cubodaguanatacao). Telefones: (11) 3090-6752, (11) 3090-7699 e WhatsApp (11) 91997-2273.</li>
+<li><strong>ACM Alphaville</strong> — Alameda Araguaia, 63, segundo a página oficial da ACM. Confirme turmas, valores e horários de piscina com a unidade.</li>
+<li><strong>Acqua Ville</strong> — musculação, cárdio e piscina aquecida tratada com ozônio, segundo o site oficial.</li>
+</ul>
+<p><strong>Natação infantil e natação gratuita em Barueri:</strong> escolas de natação costumam ter turmas por idade — pergunte pela turma infantil na matrícula. Vagas gratuitas, quando existem, são da Prefeitura de Barueri, pela Secretaria de Esportes, com inscrição em períodos definidos; consulte o site oficial da Prefeitura. A Mori Natação, que também aparece na busca, fica em São Paulo, não em Alphaville. Para musculação com piscina, veja <a href="/blog/academia-com-piscina-alphaville-barueri">academia com piscina em Alphaville e Barueri</a>.</p>
 <h2>Que tipo de academia tem natação?</h2>
 <h3>Academias premium: piscina dentro do pacote completo</h3>
 <p>Redes premium — como a Bodytech, conhecida nacionalmente por estruturas com piscina — são o formato clássico de quem quer <strong>nadar e treinar musculação no mesmo lugar</strong>. A mensalidade é mais alta, mas concentra tudo: piscina, sauna, aulas e área de peso.</p>
