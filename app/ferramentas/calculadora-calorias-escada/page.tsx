@@ -34,7 +34,7 @@ const CAMINHO = "/ferramentas/calculadora-calorias-escada";
 const PESO = 70;
 
 export const metadata: Metadata = {
-  title: "Calculadora de Calorias Subindo Escada: por Andar",
+  title: "Subir Escada Gasta Quantas Calorias? Calculadora por Andar e Tempo",
   description:
     "Quantas calorias você gasta subindo escada, pelos andares, pelo ritmo e pelo seu peso — com a descida, o custo de cada andar e o que o hábito soma no mês.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -73,6 +73,9 @@ const MES_ELEV = kcalPorMes(R_ELEV, 5);
 const ANDAR_DIA = kcalPorAndar(PESO, "dia");
 const ANDAR_TREINO = kcalPorAndar(PESO, "treino");
 const MIN_TREINO_80 = kcalPorMinuto(ritmo("treino").met, 80);
+const MIN_TREINO_70 = kcalPorMinuto(ritmo("treino").met, PESO);
+const TEMPOS = [5, 10, 15, 20, 30, 60].map((m) => ({ m, kcal: MIN_TREINO_70 * m }));
+const ANDARES_TAB = [5, 8, 10, 12, 14, 18].map((a) => ({ a, dia: ANDAR_DIA * a, treino: ANDAR_TREINO * a }));
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
@@ -86,6 +89,26 @@ const faq: ItemFAQ[] = [
   {
     question: "Quantas calorias se gasta subindo escada por minuto?",
     answer: `Em ritmo de treino, cerca de ${kc(MIN_TREINO_80)} kcal por minuto para quem pesa 80 kg — o Compêndio mede ${metF(ritmo("treino").met)} METs. No passo do dia a dia, menos da metade disso.`,
+  },
+  {
+    question: "30 minutos ou 1 hora de escada queimam quantas calorias?",
+    answer: `Subindo sem parar em ritmo de treino, para ${PESO} kg: ${TEMPOS.map((x) => `${x.m} min ≈ ${kc(x.kcal)} kcal`).join("; ")}. Na vida real quase ninguém sobe 30 minutos direto: o simulador de escada da academia ou um prédio alto com descidas no meio gastam menos que isso.`,
+  },
+  {
+    question: "Quantas calorias gasta subir 5, 8, 10, 12 ou 18 andares?",
+    answer: `Para ${PESO} kg, no passo do dia a dia e em ritmo de treino: ${ANDARES_TAB.map((x) => `${x.a} andares ≈ ${kc(x.dia)} a ${kc(x.treino)} kcal`).join("; ")}. Descer de escada soma um pouco; a calculadora conta a descida se você marcar.`,
+  },
+  {
+    question: "Subir 100 degraus gasta quantas calorias?",
+    answer: `Um andar costuma ter entre 15 e 20 degraus, então 100 degraus dão perto de 5 a 6 andares: cerca de ${kc(ANDAR_DIA * 5.5)} a ${kc(ANDAR_TREINO * 5.5)} kcal para ${PESO} kg, conforme o ritmo. Conte os degraus do seu prédio para acertar a conta.`,
+  },
+  {
+    question: "20 minutos de escada ajudam a emagrecer?",
+    answer: `Ajudam: em ritmo de treino são cerca de ${kc(MIN_TREINO_70 * 20)} kcal para ${PESO} kg. Mas o que emagrece é o déficit da semana; a escada entra como um gasto que dá para repetir no dia a dia, trocando o elevador.`,
+  },
+  {
+    question: "Grávida ou quem tem insuficiência cardíaca pode subir escada?",
+    answer: "Subir escada no próprio passo costuma fazer parte da rotina, mas usar a escada como treino intenso é outra coisa. Na gravidez e na insuficiência cardíaca, a intensidade segura é definida pelo obstetra ou pelo cardiologista; falta de ar forte, dor no peito ou tontura são sinais para parar.",
   },
   {
     question: "Trocar o elevador pela escada emagrece?",
