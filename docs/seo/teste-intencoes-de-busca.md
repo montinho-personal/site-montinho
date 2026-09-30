@@ -204,3 +204,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-whey` (30/09) — sem base do GSC.
 - Título antes: "Calculadora de Whey Protein: Quanto Tomar por Dia?" → depois: "Quanto Whey Tomar por Dia? Calculadora por Peso e Objetivo" (termo exato do autocompletar primeiro).
 - +5 FAQs do print (70 kg, mais de 30 g, 2x/dia e 4 scoops, Mounjaro/GLP-1, cálculo renal e gastrite → médico). Calculadora não alterada. Fora: Growth, Integralmédica.
+
+`/ferramentas/calculadora-creatina` (30/09) — sem base do GSC.
+- Título antes: "Calculadora de Creatina: Quanto Tomar por Dia?" → depois: "Quanto de Creatina Tomar por Dia? Calculadora e Tabela por Peso".
+- +5 FAQs (70 kg, 10 g, 20 g/saturação, colher/scoops, hipertrofia). Calculadora não alterada. Fora: Dark Lab, Growth.

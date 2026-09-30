@@ -37,7 +37,7 @@ import {
 const CAMINHO = "/ferramentas/calculadora-creatina";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Creatina: Quanto Tomar por Dia?",
+  title: "Quanto de Creatina Tomar por Dia? Calculadora e Tabela por Peso",
   description:
     "Quanto de creatina tomar por dia pelo seu peso, com ou sem saturação — e quanto tempo o pote dura e quanto custa por dia. Baseada no consenso da ISSN.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -73,6 +73,7 @@ const g2 = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, 
 const g3 = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 3 });
 const R80 = referencia(80);
 const R100 = referencia(100);
+const R70 = referencia(70);
 const S70 = saturacao(70);
 const S80 = saturacao(80);
 
@@ -82,6 +83,11 @@ const faq: ItemFAQ[] = [
   { question: "Creatina é 3 g ou 5 g?", answer: `As duas funcionam. ${MANUTENCAO_MIN} g já enchem os estoques em cerca de 4 semanas; ${MANUTENCAO_MAX} g, a dose mais usada nos estudos, chegam lá um pouco antes. A diferença é de semanas, não de resultado final.` },
   { question: "Uma pessoa de 80 kg deve tomar quanto de creatina?", answer: `A referência é de ${g(R80.diaria)} g por dia (${g2(G_POR_KG_MANUTENCAO)} × 80 = ${g2(R80.calculada)} g, arredondado para a menor dose estudada). ${MANUTENCAO_MAX} g também servem. Com saturação, seriam cerca de ${g(S80.diaria)} g por dia por 5 a 7 dias.` },
   { question: "Uma pessoa de 100 kg deve tomar quanto de creatina?", answer: `A referência é de ${g(R100.diaria)} g por dia (${g2(G_POR_KG_MANUTENCAO)} × 100). Até ${MANUTENCAO_MAX} g continua dentro da faixa estudada.` },
+  { question: "Uma pessoa de 70 kg deve tomar quanto de creatina?", answer: `A referência é de ${g(R70.diaria)} g por dia (${g2(G_POR_KG_MANUTENCAO)} × 70 = ${g2(R70.calculada)} g, arredondado para a menor dose estudada). A tabela por peso desta página mostra também 50, 60, 90, 120 e 150 kg.` },
+  { question: "Posso tomar 10 g de creatina por dia?", answer: `Não há vantagem para uso diário: ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g já mantêm o estoque cheio, e o excesso é eliminado. Doses maiores só fazem sentido na saturação, por poucos dias, divididas em porções.` },
+  { question: "Posso tomar 20 g de creatina por dia?", answer: `Só na saturação: cerca de ${g2(G_POR_KG_SATURACAO)} g por kg por dia (uns 20 g para 70 kg), divididos em ${4} porções, por 5 a 7 dias. Depois disso, volta para ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g. Não é uma dose para tomar sempre.` },
+  { question: "Quantas colheres ou scoops de creatina devo tomar?", answer: "Colher e scoop não têm peso padrão: cada marca usa um dosador, e colher cheia ou rasa muda a quantidade. Veja no rótulo quantos gramas tem a medida do seu produto; dois scoops só fazem sentido se a medida for pequena e a soma ficar na dose diária. A balança de cozinha resolve a dúvida." },
+  { question: "Quanto de creatina tomar para hipertrofia?", answer: `A mesma dose: ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g por dia. A creatina ajuda a hipertrofia porque permite treinar com um pouco mais de carga e volume; dose maior não aumenta esse efeito.` },
   { question: "Mulher precisa de menos creatina que homem?", answer: `Pelo consenso, a faixa é a mesma: ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g. Quem ajusta pela massa magra (${g3(G_POR_KG_MASSA_MAGRA)} g por kg de massa magra) chega a menos, porque a mulher costuma ter menos músculo para o mesmo peso — uma mulher de 60 kg com 28% de gordura fica perto de ${g(pratica(60, 28).porMassaMagra)} g. Não é o sexo que muda a dose, é quanto do peso é músculo.` },
   { question: "Precisa tomar creatina todos os dias?", answer: "Sim. A creatina funciona por acúmulo no músculo, não por efeito do dia — o que mantém os estoques cheios é a constância." },
   { question: "Precisa tomar creatina no dia que não treina?", answer: "Sim, na mesma dose. O estoque do músculo não depende do treino daquele dia, e parar nos dias de descanso faz ele baixar." },
