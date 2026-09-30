@@ -60,6 +60,26 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     publicadoEm: "2026-09-30",
   },
   {
+    id: "nEhysMtPPVw",
+    slug: "engordei-2-kg-no-feriado",
+    titulo: "Você não engordou 2 kg no feriado",
+    metaTitle: "Engordei 2 kg no Feriado? Por Que Não É Gordura",
+    descricao:
+      "Voltou do feriado com 2 kg a mais na balança? Boa parte é água, glicogênio e comida no intestino, não gordura. Volte à rotina e dê alguns dias para o peso estabilizar.",
+    texto: [
+      "Você voltou do feriado, subiu na balança e apareceu 2 kg a mais? Calma: isso não significa necessariamente que você engordou 2 kg de gordura.",
+      "Depois de alguns dias com mais comida, carboidrato, sal, bebida alcoólica e uma rotina diferente, o peso pode aumentar por retenção de líquido, maior armazenamento de glicogênio e até pelo próprio volume de comida no sistema digestivo. Para ganhar 2 kg de gordura em poucos dias, seria necessário um excedente calórico muito maior do que muita gente imagina.",
+      "O maior erro depois do feriado é entrar em pânico, cortar comida demais ou tentar compensar tudo com horas de cardio. Volte para a sua alimentação normal, retome os treinos, mantenha a hidratação e dê alguns dias para o peso estabilizar.",
+      "A balança mostra o seu peso. Ela não mostra, sozinha, quanto você ganhou de gordura. Acompanhe o processo por semanas, não pelo peso de uma única manhã.",
+    ],
+    artigos: [
+      { href: "/blog/fim-de-semana-estraga-a-dieta", nome: "O fim de semana estraga a dieta?" },
+      { href: "/blog/retencao-de-liquido-como-desinchar", nome: "Retenção de líquido: como desinchar" },
+      { href: "/blog/balanca-nao-muda-mas-o-corpo-muda", nome: "A balança não muda, mas o corpo muda" },
+    ],
+    publicadoEm: "2026-09-07",
+  },
+  {
     id: "nrT-Fan_Nbg",
     slug: "efeito-sanfona",
     titulo: "Efeito sanfona: por que você volta a engordar",
