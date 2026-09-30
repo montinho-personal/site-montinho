@@ -24157,7 +24157,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/OWs3uxSXLRI?rel=0" title="Como perder gordura e ganhar musculos — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/9X968Kqa2-Y?rel=0" title="A balança mente? Por que o peso sobe mesmo emagrecendo — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 </div>
 
 `,
@@ -51185,7 +51185,7 @@ Total: 19 repetições próximas à falha vs 10 em uma série convencional</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/OWs3uxSXLRI?rel=0" title="Como perder gordura e ganhar musculos — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/9X968Kqa2-Y?rel=0" title="A balança mente? Por que o peso sobe mesmo emagrecendo — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 </div>
 
 <h3>Leia Também</h3>
@@ -95733,7 +95733,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Se você está travado e não sabe qual alavanca puxar primeiro, é exatamente aí que um acompanhamento próximo faz diferença. Na minha <a href="/consultoria">consultoria</a>, eu ajusto o protocolo conforme seu corpo responde, justamente para que os platôs não virem paredes. Já passei por eles — e sei o caminho de volta.</p>
 
 <p>Para retomar a perda de gordura de forma estratégica, veja o tutorial completo:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/9X968Kqa2-Y?rel=0" title="A balança mente? Por que o peso sobe mesmo emagrecendo — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -106597,7 +106597,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>O Leandro Twin resume bem as medidas práticas que costumam funcionar — vale como complemento ao que escrevi aqui, sem substituir avaliação médica.</p>
 
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/WAzlPOv_pAk?rel=0" title="9 dicas rápidas para acabar com a retenção de líquidos" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/9X968Kqa2-Y?rel=0" title="A balança mente? Por que o peso sobe mesmo emagrecendo — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Referências</h2>
 <ul>
