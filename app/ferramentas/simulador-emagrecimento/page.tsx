@@ -30,7 +30,7 @@ import { MARCOS, REFERENCIAS_MARCOS, semanaDoMarco } from "@/lib/simulador/marco
 const CAMINHO = "/ferramentas/simulador-emagrecimento";
 
 export const metadata: Metadata = {
-  title: "Simulador de Emagrecimento: Quanto Tempo até a Meta?",
+  title: "Quanto Tempo para Emagrecer 10 kg? Simulador de Emagrecimento",
   description:
     "Veja como seu peso pode evoluir nas próximas semanas e compare cenários de treino, passos e consistência. Projeção em faixa, grátis e sem cadastro.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -79,6 +79,11 @@ const passosGanho = PASSOS_MAIS.pontos[12].peso;
 
 const faq: ItemFAQ[] = [
   { question: "Quanto tempo demora para perder 10 kg?", answer: `Para a maioria dos adultos, de quatro meses a um ano — depende do tamanho do déficit, do peso de partida e, principalmente, de quantos dias o plano acontece de fato. No exemplo de referência do simulador (homem de ${REF.pesoKg} kg, sedentário, três treinos por semana e déficit moderado), 10 kg levariam ${txt(T10.c75)} com 75% de consistência e ${txt(T10.c90)} com 90%.` },
+  { question: "É possível perder 10 kg em 1 mês ou em 20 dias?", answer: "De gordura, não de forma segura. A faixa sustentável é de 0,5% a 1% do peso por semana: para 80 kg, 0,4 a 0,8 kg por semana, ou seja, de 1,6 a 3,2 kg num mês. Dietas que prometem 10 kg em 30 dias tiram muita água e glicogênio, e parte do que sai é músculo; o peso tende a voltar." },
+  { question: "É possível perder 10 kg em 2 ou 3 meses?", answer: "Em 3 meses (13 semanas), dá para quem pesa perto de 100 kg ou mais, no limite de cima da faixa (1% do peso por semana). Para 80 kg, 3 meses exigem ritmo acima do recomendado; o realista fica entre 3 e 6 meses. Em 2 meses, 10 kg só cabem para quem começa com peso bem alto e com acompanhamento." },
+  { question: "Quanto tempo caminhando para emagrecer 10 kg?", answer: "Só caminhando, sem mexer na alimentação, leva muito tempo: 30 minutos por dia gastam por volta de 130 kcal para 70 kg, e 10 kg de gordura guardam perto de 77 mil kcal. A caminhada ajuda como parte do déficit; quem decide o ritmo é a soma com a alimentação. A calculadora de calorias da caminhada faz a conta para o seu peso." },
+  { question: "Quanto tempo demora para emagrecer 10 kg na academia?", answer: "O treino sozinho muda pouco o prazo; o que acelera é o déficit na alimentação. A musculação faz outra coisa, igualmente importante: ajuda a garantir que os 10 kg perdidos sejam gordura, e não músculo. No simulador, compare 2, 3 e 4 treinos por semana para ver a diferença no seu caso." },
+  { question: "Ficar sem comer emagrece 10 kg mais rápido?", answer: "Não é um caminho seguro. Jejum prolongado derruba água e glicogênio primeiro, aumenta a perda de massa muscular e costuma terminar em compensação. Jejum intermitente pode funcionar para algumas pessoas como forma de organizar o déficit, mas não emagrece mais que o mesmo déficit distribuído em refeições." },
   { question: "Quantos kg posso emagrecer em um mês?", answer: `Em geral, de 1 a 4 kg — e o primeiro mês costuma parecer maior porque sai água e glicogênio. Uma faixa sustentável fica entre 0,5% e 1% do peso por semana. No exemplo de referência, o primeiro mês daria cerca de ${k(mes1)} kg na curva do modelo, sem contar a água.` },
   { question: "É possível saber exatamente quando vou chegar ao meu peso?", answer: "Não. Dá para estimar uma faixa provável, e é isso que o simulador mostra. O gasto real varia de pessoa para pessoa, a aderência muda ao longo das semanas e a balança oscila com água. Por isso a resposta vem em semanas aproximadas, nunca numa data exata." },
   { question: "Por que o emagrecimento fica mais lento com o tempo?", answer: "Porque um corpo mais leve gasta menos para existir e se mover, e o organismo ainda reduz um pouco o gasto além do que o peso explica. O mesmo prato que gerava déficit no começo gera um déficit menor meses depois. A curva do simulador desacelera por esse motivo." },
