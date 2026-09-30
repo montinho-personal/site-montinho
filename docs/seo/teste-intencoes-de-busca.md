@@ -176,3 +176,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-tmb-tdee` (30/09) — sem base do GSC.
 - Título antes: "Calculadora de TMB e TDEE: Gasto Calórico Diário" → depois: "Calculadora TMB e TDEE: Gasto Calórico Diário (Grátis)".
 - Seção Katch-McArdle (TMB com percentual de gordura) com link para composição corporal; FAQ visível + FAQPage (5 perguntas: diferença, feminino, % gordura, musculação, déficit). Calculadora não alterada.
+
+`/ferramentas/calculadora-deficit-calorico` (30/09) — sem base do GSC.
+- Título antes: "Calculadora de Déficit Calórico para Emagrecer" → depois: "Calculadora de Déficit Calórico Grátis para Emagrecer (TDEE)".
+- FAQ visível + FAQPage (5: calorias por dia, déficit diário, pelo TDEE, calorias dos alimentos, grátis) e links para /alimentos, FitChef, TMB. Calculadora não alterada. Fora: Unimed, micron-app.
