@@ -249,3 +249,7 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 `/ferramentas/calculadora-calorias-futebol` (30/09) — sem base do GSC.
 - Título antes: "Calculadora de Calorias no Futebol: Pelada e Futsal" → depois: "Futebol Gasta Quantas Calorias? Calculadora de Pelada e Futsal".
 - +4 FAQs (30/40/60 min, jogador por jogo, qual esporte gasta mais/1.000 kcal, 2 mil kcal por dia). Números de lib/futebol.ts. Calculadora não alterada.
+
+`/ferramentas/calculadora-calorias-zumba` (01/10) — sem base do GSC.
+- Título antes: "Calculadora de Calorias na Zumba: Aula e Quilos" → depois: "Calculadora de Zumba: Calorias por Aula, 30, 45 Minutos e 1 Hora".
+- +3 FAQs (45 min, 2x por semana, 7.000 kcal/4 kg em 15 dias). Calculadora não alterada. Fora: "zumba online grátis/para iniciantes" (aula, não calculadora), "pão com 2 ovos".

@@ -37,7 +37,7 @@ import {
 const CAMINHO = "/ferramentas/calculadora-calorias-zumba";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Calorias na Zumba: Aula e Quilos",
+  title: "Calculadora de Zumba: Calorias por Aula, 30, 45 Minutos e 1 Hora",
   description:
     "Quantas calorias a sua aula de zumba gasta, contando as músicas com e sem salto, e quantos quilos por mês as aulas da semana rendem com o seu peso.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
@@ -74,6 +74,8 @@ const TRES = semana(HORA, 3);
 const TAB_PESO = tabelaPorPeso(60);
 const TAB_FREQ = tabelaPorFrequencia(PESO_PADRAO);
 const MEIA_HORA = calcula(PESO_PADRAO, 30, 0.5);
+const M45 = calcula(PESO_PADRAO, 45, 0.5);
+const DUAS_SEMANA = semana(HORA, 2);
 const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDigits: d });
 const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
 const mil = (n: number) => n.toLocaleString("pt-BR");
@@ -93,6 +95,18 @@ const faq: ItemFAQ[] = [
   {
     question: "30 minutos de zumba queima quantas calorias?",
     answer: `Cerca de ${kc(MEIA_HORA.kcal)} kcal para ${PESO_PADRAO} kg, com metade das músicas com salto. O gasto é proporcional ao tempo.`,
+  },
+  {
+    question: "45 minutos de zumba queimam quantas calorias?",
+    answer: `Numa aula de 45 minutos, com metade das músicas com saltos, cerca de ${kc(M45.kcal)} kcal para ${PESO_PADRAO} kg. Para iniciantes, que fazem a versão sem salto, o número fica um pouco abaixo.`,
+  },
+  {
+    question: "Fazer zumba 2 vezes por semana ajuda a emagrecer?",
+    answer: `Ajuda: duas aulas de uma hora somam até ${kg(DUAS_SEMANA.kgMes)} kg de gordura por mês para ${PESO_PADRAO} kg. Sozinhas, emagrecem devagar; junto com ajuste na alimentação, entram como um gasto fácil de manter por ser divertido.`,
+  },
+  {
+    question: "7.000 calorias equivalem a quantos quilos? Dá para perder 4 kg em 15 dias?",
+    answer: "Um quilo de gordura guarda cerca de 7.700 kcal, então 7.000 kcal equivalem a um pouco menos de 1 kg de gordura. Perder 4 kg em 15 dias exigiria um déficit de mais de 2.000 kcal por dia; o que sai tão rápido é em boa parte água e glicogênio, não gordura.",
   },
   {
     question: "Uma aula de zumba queima 1.000 calorias?",
