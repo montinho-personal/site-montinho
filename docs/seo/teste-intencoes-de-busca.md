@@ -319,3 +319,15 @@ Canibalização a decidir: 5 URLs de condomínio (em/para × Alphaville/Tamboré
 - Só FAQ (topo, CTAs e ordem intocados; sem preço): como funciona, vale a pena, online x presencial, inclui dieta (não), como escolher, versão grátis (não, confirmado pelo Montinho), serve para mulheres; "Quanto custa" virou "Qual o valor de uma consultoria online de personal trainer?".
 - Medir: taxa de conversão da campanha antes x depois de 30/09 (mudança única, para atribuição).
 - Fora: "ao vivo" e "melhor aplicativo" (não confirmado se há aula ao vivo ou app).
+
+## 2026-10-01 — /consultoria-online e /consultoria (reposicionamento de copy)
+
+Marco para comparar conversão do Google Ads antes/depois (landing page
+/consultoria-online). Mudou SÓ texto visível: subtítulo do hero, frase da
+prova no topo, seção "O que acontece depois que o treino chega" (antes
+"Tudo o que está incluso"), passos 4–5, um item do comparativo, fechamento,
+rótulos "Falar com o Montinho" (botão final e barra fixa). Saiu a frase de
+escassez ("número limitado de alunos"). Preservados: URL, H1, title, meta
+description, schema, mensagens do WhatsApp, data-cta/eventos. Comparar
+taxa de clique no WhatsApp/sessão e leads com Ref da LP: 14 dias antes ×
+14 dias depois.

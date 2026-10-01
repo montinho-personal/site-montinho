@@ -124,7 +124,7 @@ const resultados: ResultadoItem[] = [
     result: "−18kg e reversão de quadro pré-diabético",
     modality: "Consultoria Online",
     description:
-      "Patricia tinha indicação médica para perder peso. Com orientação nutricional integrada ao treino, reverteu um quadro pré-diabético e recuperou a energia.",
+      "Patricia tinha indicação médica para perder peso. Com treino e acompanhamento, reverteu um quadro pré-diabético e recuperou a energia.",
     quote:
       "Meu médico ficou impressionado nos exames. Mas quem eu tenho que agradecer é o Montinho.",
   },
