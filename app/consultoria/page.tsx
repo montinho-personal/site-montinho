@@ -117,12 +117,11 @@ const services = [
     description:
       "Eu do seu lado em cada série: corrijo a execução na hora, decido a carga com você e percebo quando o dia pede mais ou menos.",
     includes: [
-      "Avaliação física completa e anamnese",
-      "Treinos personalizados 100% para você",
-      "Correção de técnica em tempo real",
-      "Suporte via WhatsApp entre as sessões",
-      "Reavaliações e ajustes conforme a evolução",
-      "Prevenção e correção de desvios posturais",
+      "Começamos pela avaliação e por uma conversa sobre o seu histórico",
+      "A execução saiu do lugar? Eu corrijo ali mesmo, na série",
+      "O dia está pesado ou rendendo mais? A carga se ajusta na hora",
+      "Entre as sessões, você fala comigo direto pelo WhatsApp",
+      "Reavaliações para decidir o próximo ciclo com você",
     ],
     cta: "Conversar sobre o presencial",
     message:
@@ -136,11 +135,11 @@ const services = [
     description:
       "Você treina onde estiver, me manda a execução e eu ajusto o plano conforme a sua resposta. A distância muda o formato, não o cuidado.",
     includes: [
-      "Anamnese completa e avaliação de histórico",
-      "Treino personalizado com vídeos demonstrativos",
-      "Suporte direto pelo WhatsApp",
-      "Check-ins periódicos de evolução",
-      "Reavaliações e ajustes conforme a evolução",
+      "Começamos pela anamnese e pela sua rotina real",
+      "Você treina com vídeo de cada exercício no app",
+      "A execução não encaixou? Você grava, eu mostro o que ajustar",
+      "A progressão travou ou a rotina mudou? A gente ajusta o plano",
+      "Check-ins periódicos para decidir o próximo ciclo",
     ],
     cta: "Conversar sobre o online",
     message:
@@ -154,11 +153,11 @@ const services = [
     description:
       "Sessões presenciais para afinar a técnica e eu acompanhando o resto da semana à distância.",
     includes: [
-      "Sessões presenciais semanais em Alphaville",
-      "Treinos complementares online",
-      "Acompanhamento pelo WhatsApp",
-      "Avaliações e ajustes de protocolo",
-      "Flexibilidade para períodos de viagem",
+      "Sessões presenciais semanais em Alphaville para afinar a técnica",
+      "Nos outros dias, você treina com o plano no app",
+      "Viajou ou a semana apertou? O plano se adapta",
+      "Entre uma sessão e outra, você fala comigo pelo WhatsApp",
+      "Reavaliações e ajustes conforme a evolução",
     ],
     cta: "Conversar sobre o híbrido",
     message:
@@ -341,7 +340,7 @@ export default function Consultoria() {
                 {/* Includes */}
                 <div className="flex-1 mb-8">
                   <p className="text-white text-xs font-semibold tracking-[0.1em] uppercase mb-4">
-                    O que inclui:
+                    Na prática:
                   </p>
                   <ul className="space-y-3">
                     {service.includes.map((item, i) => (
