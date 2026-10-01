@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Personal Trainer em Alphaville | Montinho Personal Trainer",
     description:
-      "Acompanhamento presencial e personalizado em Alphaville. Método baseado em ciência, experiência real e compromisso com resultados duradouros.",
+      "Personal trainer presencial em Alphaville: eu do seu lado em cada série, ajustando carga e execução na hora. No condomínio, em casa, na Arena 18 ou na sua academia.",
     url: `${SITE_URL}/personal-trainer-alphaville`,
   },
 };
@@ -28,7 +28,7 @@ const faq = [
   {
     question: "Onde são realizados os treinos presenciais em Alphaville?",
     answer:
-      "Os atendimentos presenciais acontecem na própria academia do aluno em Alphaville, no espaço fitness do condomínio, em casa ou em espaços parceiros na região. Na primeira conversa, alinhamos o local mais conveniente para a sua rotina.",
+      "No espaço fitness do seu condomínio, em casa, na Arena 18 ou em outras academias da região que permitam personal externo. Na primeira conversa, alinhamos o local mais conveniente para a sua rotina.",
   },
   {
     question: "Quanto custa um personal trainer em Alphaville?",
@@ -48,17 +48,17 @@ const faq = [
   {
     question: "É vantajoso pagar um personal trainer?",
     answer:
-      "Vale quando você quer resultado com segurança: técnica corrigida, progressão de carga no ritmo certo e treino adaptado a dores e limitações. É mais caro que treinar sozinho e costuma sair mais barato que meses sem resultado ou uma lesão.",
+      "Vale quando você quer alguém olhando a sua execução, ajustando a carga no ritmo certo e mudando o plano quando a vida muda. É mais caro que treinar sozinho, e para muita gente é o que finalmente faz o treino sair do papel.",
   },
   {
     question: "Você atende em condomínios residenciais de Alphaville e no Tamboré?",
     answer:
-      "Sim. Grande parte dos meus alunos treina no espaço fitness do próprio condomínio ou em casa, com equipamentos adaptados à estrutura disponível. Atendo residenciais de Alphaville, Tamboré e também condomínios da região de Aldeia da Serra, em Santana de Parnaíba.",
+      "Sim. Muitos alunos preferem treinar no espaço fitness do próprio condomínio ou em casa, com o treino adaptado à estrutura disponível. Atendo moradores dos residenciais de Alphaville e Tamboré e também de condomínios da região de Aldeia da Serra, em Santana de Parnaíba.",
   },
   {
     question: "Quantas vezes por semana preciso treinar para ter resultado?",
     answer:
-      "Depende do objetivo e do ponto de partida. Para a maioria dos alunos, entre duas e quatro sessões semanais bem estruturadas geram evolução consistente de força, condicionamento físico e composição corporal. Mais importante que a quantidade é a regularidade e a qualidade da execução — e é exatamente isso que o acompanhamento garante.",
+      "Depende do objetivo e do ponto de partida. Para a maioria dos alunos, entre duas e quatro sessões semanais bem estruturadas geram evolução consistente de força, condicionamento físico e composição corporal. Mais importante que a quantidade é a regularidade e a qualidade da execução — e é nisso que o presencial mais ajuda.",
   },
   {
     question: "Nunca treinei na vida. Consigo acompanhar?",
@@ -68,32 +68,32 @@ const faq = [
   {
     question: "Você trabalha com idosos e com pessoas com dores ou limitações?",
     answer:
-      "Sim. Tenho cursos voltados especificamente para o treinamento de pessoas com dores e limitações musculoesqueléticas, e boa parte dos meus alunos em Alphaville está na faixa dos 50, 60 e 70 anos. O treino de força bem orientado é uma das melhores ferramentas para autonomia, equilíbrio, prevenção de quedas e qualidade de vida nessa fase.",
+      "Sim. Tenho cursos voltados especificamente para o treinamento de pessoas com dores e limitações musculoesqueléticas, e atendo alunos de diferentes idades, inclusive acima dos 50, 60 e 70 anos. O treino de força bem orientado ajuda na autonomia, no equilíbrio e na qualidade de vida nessa fase, sempre respeitando o histórico de cada um e, quando necessário, junto com a orientação do profissional de saúde.",
   },
   {
     question: "E se eu viajar muito ou não estiver em Alphaville toda semana?",
     answer:
-      "Isso é comum entre executivos da região — e tem solução. Além do presencial, ofereço consultoria online com protocolo individualizado, ajustes contínuos e suporte à distância. Muitos alunos combinam os dois formatos: presencial quando estão em Alphaville, online quando estão viajando.",
+      "Isso é comum na região — e tem solução. Além do presencial, ofereço consultoria online com protocolo individualizado, ajustes contínuos e suporte à distância. Muitos alunos combinam os dois formatos: presencial quando estão em Alphaville, online quando estão viajando.",
   },
   {
     question: "Você atende alunos que já treinam há anos sem resultado?",
     answer:
-      "Sim. Esse é exatamente o perfil de muitos dos meus alunos em Alphaville: pessoas que frequentam academia há meses ou anos mas que nunca tiveram um protocolo verdadeiramente individualizado. A diferença que um método estruturado faz nesse cenário é significativa.",
+      "Sim. Esse é exatamente o perfil de muitos dos meus alunos em Alphaville: pessoas que frequentam academia há meses ou anos mas que nunca tiveram alguém olhando a execução e ajustando a progressão de perto. Nesse cenário, essa atenção costuma fazer muita diferença.",
   },
   {
     question: "É possível contratar personal trainer em Alphaville para treinos na minha própria academia?",
     answer:
-      "Sim. Atendo alunos em diferentes academias de Alphaville e da região. O treino vai até onde você já treina — não é necessário mudar de lugar.",
+      "Em muitos casos, sim. Além da Arena 18 e dos atendimentos em condomínios, também posso acompanhar alunos em outras academias que permitam personal externo. Me diga onde você treina e verificamos as regras do local.",
   },
   {
     question: "Qual é o diferencial do seu trabalho comparado a outros personal trainers em Alphaville?",
     answer:
-      "Conheço Alphaville há mais de duas décadas — a rotina, o ritmo e as demandas reais de quem vive aqui. Meu acompanhamento combina método científico com sensibilidade para a realidade do aluno: agenda cheia, viagens, família, limitações físicas. Não existe ficha genérica — cada protocolo é construído do zero para aquela pessoa.",
+      "Conheço Alphaville há mais de duas décadas — a rotina, o ritmo e as demandas reais de quem vive aqui. Meu acompanhamento combina método científico com sensibilidade para a realidade do aluno: agenda cheia, viagens, família, limitações físicas. E eu estou ali durante o treino, ajustando o que nenhum papel consegue prever.",
   },
   {
     question: "O treino personalizado em Alphaville é indicado para qual perfil de aluno?",
     answer:
-      "Para qualquer pessoa que queira sair do lugar: seja quem nunca treinou, quem voltou após anos afastado, quem tem histórico de lesões ou quem já treina mas não vê resultado. Adapto o protocolo ao ponto de partida de cada aluno.",
+      "Para qualquer pessoa que queira sair do lugar: seja quem nunca treinou, quem voltou após anos afastado, quem tem histórico de lesões ou quem já treina mas não vê resultado. Adapto o ponto de partida a cada aluno.",
   },
 ];
 
@@ -149,7 +149,7 @@ export default function PersonalTrainerAlphaville() {
             Personal Trainer em Alphaville que conhece a sua rotina de dentro.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Moradores de Alphaville têm agenda cheia, compromissos que não podem ser adiados e paciência zero para método que não funciona. Aqui o treino é construído para a sua realidade — não para uma pessoa genérica.
+            Atendimento presencial no espaço fitness do seu condomínio, em casa, na Arena 18 ou, dependendo das regras do local, em outras academias da região. Eu fico do seu lado em cada série, olhando a execução, ajustando a carga e decidindo com você o próximo passo, num treino que cabe na agenda que você realmente tem.
           </p>
           <a
             href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="personal-trainer-alphaville:topo"
@@ -157,7 +157,7 @@ export default function PersonalTrainerAlphaville() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
           >
-            Quero conhecer o método
+            Quero treinar com o Montinho
           </a>
         </div>
       </section>
@@ -177,13 +177,13 @@ export default function PersonalTrainerAlphaville() {
           <div className="grid sm:grid-cols-[1fr_auto] gap-10 items-start">
             <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
               <p>
-                Alphaville tem um ritmo que quem não vive aqui não entende. A saída para São Paulo às 6h30, o trânsito de volta que ninguém controla, a academia que fecha às 22h, o jantar que acontece só depois das 21h. Quando você mora no mesmo lugar há mais de duas décadas, você para de tentar encaixar o treino num modelo padrão — e começa a construir um método que cabe nessa realidade.
+                Alphaville tem um ritmo que quem não vive aqui não entende. A saída para São Paulo às 6h30, o trânsito de volta que ninguém controla, a academia que fecha às 22h, o jantar que acontece só depois das 21h. Quando você mora no mesmo lugar há mais de duas décadas, você entende que conhecer o treino é só metade. A outra metade é conhecer a realidade onde esse treino precisa acontecer.
               </p>
               <p>
-                Minha paixão pela musculação não nasceu de um livro. Nasceu de necessidade. Cresci convivendo com o excesso de peso, passei anos tentando dietas e protocolos que prometiam resultado rápido e entregavam frustração. Foi só quando decidi estudar de verdade — entender como o corpo funciona, o que a ciência diz sobre treino e composição corporal — que as coisas mudaram. Para mim primeiro. Depois para os meus alunos.
+                Minha paixão pela musculação não nasceu de um livro. Nasceu de necessidade. Cresci convivendo com o excesso de peso, passei anos tentando dietas e protocolos que prometiam resultado rápido e entregavam frustração. Foi só quando decidi estudar de verdade — entender como o corpo funciona, o que a ciência diz sobre treino e composição corporal — que as coisas mudaram. Foi aí que entendi algo que uso até hoje com cada aluno: uma coisa é saber o que precisa ser feito. Outra é conseguir colocar isso na rotina, semana após semana.
               </p>
               <p>
-                Hoje trabalho com pessoas que têm a mesma rotina que eu tinha: agenda lotada, pouca margem para erro e zero paciência para perder tempo. O que ofereço não é uma ficha de treino — é um protocolo construído especificamente para você, com ajustes contínuos conforme seu corpo responde.
+                Hoje trabalho com pessoas de agenda cheia e pouca margem para perder tempo. Meu trabalho não é contar repetições. É entender o que cada série está mostrando e decidir o próximo passo com você.
               </p>
             </div>
             <div className="flex-shrink-0 mx-auto sm:mx-0">
@@ -217,30 +217,30 @@ export default function PersonalTrainerAlphaville() {
             Treino presencial em Alphaville: como é trabalhar comigo
           </h2>
           <p className="text-gray-300 leading-relaxed font-light mb-10">
-            Do primeiro contato até os resultados, o processo é estruturado para eliminar tentativa e erro e garantir progresso consistente desde a primeira semana.
+            Um treino pode estar perfeito no papel. Mas alguém precisa ver o que acontece quando você executa. É isso que o presencial muda.
           </p>
 
           <div className="space-y-8">
             {[
               {
                 num: "01",
-                title: "Avaliação inicial e anamnese",
-                text: "Antes de propor qualquer exercício, preciso entender com quem estou trabalhando: histórico de treino, lesões anteriores, objetivos, rotina, disponibilidade de tempo, restrições alimentares e expectativas. Essa conversa inicial dura entre 30 e 60 minutos e é onde o protocolo começa a ser desenhado.",
+                title: "Conversa e avaliação",
+                text: "Antes do primeiro exercício, preciso entender com quem estou trabalhando: histórico de treino, objetivo, rotina, disponibilidade, onde você vai treinar e qualquer limitação relevante para o treino. Junto vem a avaliação física, com composição corporal. Essa conversa dura entre 30 e 60 minutos — é uma conversa, não um formulário.",
               },
               {
                 num: "02",
-                title: "Protocolo construído do zero",
-                text: "Não existe ficha padrão que uso como base e adapto. Cada aluno tem um protocolo criado especificamente para seus objetivos, seu nível atual e suas limitações. Dois alunos com o mesmo objetivo podem ter programações completamente diferentes — porque são pessoas diferentes.",
+                title: "Um ponto de partida, não uma sentença",
+                text: "Com base nessa conversa, definimos o ponto de partida: exercícios, cargas e frequência pensados para você. Mas o primeiro treino é uma hipótese bem construída. É a sua execução que mostra o que deve continuar e o que precisa mudar.",
               },
               {
                 num: "03",
-                title: "Sessões presenciais com acompanhamento real",
-                text: "Durante o treino estou ao lado, não na academia fazendo outra coisa. Observo a execução, corrijo antes que o erro vire hábito, ajusto a carga em tempo real e garanto que cada série está cumprindo sua função. Esse nível de atenção é o que diferencia acompanhamento profissional de simplesmente treinar com alguém por perto.",
+                title: "A sessão, com alguém olhando para você",
+                text: "Durante a sessão eu estou ali, olhando para você — não para o celular. Observo execução, carga, ritmo, intervalo e como você está respondendo naquele dia. A série ainda tinha margem? Avançamos. A execução começou a mudar no fim? Corrijo antes da próxima repetição. Chegou cansado depois de um dia pesado? O treino daquele dia muda. São decisões pequenas, tomadas na hora, que nenhum treino no papel consegue prever.",
               },
               {
                 num: "04",
-                title: "Ajustes frequentes e reavaliações mensais",
-                text: "O corpo se adapta. O protocolo precisa acompanhar essa adaptação. Faço reavaliações mensais para medir progresso, identificar o que está funcionando e ajustar o que pode ser melhorado. O objetivo é garantir que você continue evoluindo — não que faça o mesmo treino por meses a fio.",
+                title: "Registrar, comparar, ajustar",
+                text: "Cargas, execução e como você respondeu ficam registrados. Nas reavaliações periódicas a gente compara, vê o que funcionou e decide o próximo ciclo. Ninguém faz o mesmo treino por meses só porque ele estava no papel.",
               },
             ].map((step) => (
               <div key={step.num} className="flex gap-6 items-start">
@@ -281,16 +281,16 @@ export default function PersonalTrainerAlphaville() {
             Para quem é esse trabalho
           </h2>
           <p className="text-gray-300 font-light mb-10 leading-relaxed">
-            Alphaville concentra um perfil de pessoa muito específico. Executivos, empreendedores, profissionais liberais, mães que conciliam filhos e carreira — todos com uma coisa em comum: tempo escasso e exigência alta. Trabalho com:
+            Tem uma coisa que o presencial muda e pouca gente fala: quando existe um horário marcado e alguém esperando por você, o treino deixa de depender só da vontade daquele dia. O ponto em comum de quem me procura aqui quase nunca é a profissão — é a agenda apertada e a vontade de que o tempo de treino valha a pena. Trabalho com:
           </p>
           <ul className="space-y-4 mb-10">
             {[
               "Quem quer emagrecer com método — sem dietas radicais que não sustentam",
               "Quem busca hipertrofia real, não apenas volume aparente de treino",
               "Quem voltou ao treino após anos parado e precisa reconstruir a base com segurança",
-              "Quem tem histórico de lesão e precisa de um protocolo que respeite essas limitações",
+              "Quem tem histórico de lesão ou alguma limitação e quer treinar com execução orientada e exercícios adaptados",
               "Quem já treina mas chegou num platô onde parece que nada mais evolui",
-              "Quem nunca teve acompanhamento e quer fazer isso da forma certa desde o início",
+              "Quem quer treinar com alguém olhando de perto, desde o primeiro dia",
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-gray-300 font-light">
                 <span className="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-white/40" />
@@ -331,24 +331,25 @@ export default function PersonalTrainerAlphaville() {
               Alphaville não é um bairro comum — é um polo empresarial e residencial que se estende por Barueri e Santana de Parnaíba. Quem trabalha nas torres do Centro Industrial e Empresarial ou nos escritórios da Alameda Rio Negro e mora nos residenciais sabe: o dia é curto e o deslocamento precisa fazer sentido. Por isso o treino vai até você, não o contrário.
             </p>
             <p>
-              Atendo em toda a malha de Alphaville e arredores — dos residenciais próximos ao Iguatemi Alphaville à região do Shopping Tamboré, passando pelos condomínios do Tamboré e pela Aldeia da Serra. Para quem chega pela Castelo Branco no fim do dia, encaixamos o horário de forma realista, sem depender de janelas que o trânsito engole.
+              Atendo em toda a malha de Alphaville e arredores — dos residenciais próximos ao Iguatemi Alphaville à região do Shopping Tamboré, passando pelos condomínios do Tamboré e pela Aldeia da Serra. Você pode treinar comigo na Arena 18, no espaço fitness do seu condomínio, em casa ou, dependendo das regras do local, em outras academias da região. Se você já treina em uma academia, me conta qual é e eu verifico com você a possibilidade de atendimento.
             </p>
           </div>
           <h3 className="text-white font-semibold text-lg mb-4">Área de atendimento e vias de acesso</h3>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base mb-10">
             <p>
-              A base do atendimento é o eixo formado pela Alameda Rio Negro e pela Alameda Araguaia, de onde se chega com facilidade a qualquer residencial de Alphaville. A Rodovia Castelo Branco corta a região e conecta rapidamente o Tamboré, o centro de Barueri e Santana de Parnaíba — o que me permite montar uma agenda realista, sem horários que dependem de sorte no trânsito.
+              Atendo Alphaville, Tamboré, Barueri e Santana de Parnaíba — regiões vizinhas, ligadas pela Rodovia Castelo Branco e pelas alamedas centrais, como a Rio Negro e a Araguaia.
             </p>
             <p>
-              Em tempos práticos: do centro de Alphaville até o Tamboré são cerca de 5 a 10 minutos de carro; até o centro de Barueri, em torno de 10 a 15 minutos; e até Santana de Parnaíba, algo entre 10 e 15 minutos, dependendo do trânsito e do horário. São regiões contíguas — por isso consigo atender alunos em qualquer uma delas sem comprometer a pontualidade das sessões.
+              O horário de cada aluno é combinado levando em conta a rotina e o trânsito real da região, que muda bastante conforme a hora do dia.
             </p>
           </div>
           <h3 className="text-white font-semibold text-lg mb-4">Formatos de atendimento na região</h3>
           <ul className="space-y-4 mb-10">
             {[
               "Atendimento em domicílio — treino em casa, com estrutura adaptada ao espaço e aos equipamentos disponíveis",
-              "Espaço fitness do condomínio — aproveitando a academia do próprio residencial, sem deslocamento nenhum",
-              "Academias de Alphaville e região — acompanho você na academia onde já treina, em Barueri ou Santana de Parnaíba",
+              "Condomínio — atendimento no espaço fitness do seu condomínio, usando a estrutura que você já tem a poucos metros de casa",
+              "Arena 18 — atendimento presencial na Arena 18, em Alphaville",
+              "Outras academias — já treina em outra academia? Dependendo das regras para personal externo, também podemos fazer o atendimento lá. Me diga onde você treina e verificamos a possibilidade",
               "Consultoria online — protocolo individualizado à distância, ideal para quem viaja com frequência",
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-gray-300 font-light">
@@ -360,7 +361,7 @@ export default function PersonalTrainerAlphaville() {
           <h3 className="text-white font-semibold text-lg mb-4">Condomínios atendidos em Alphaville</h3>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base mb-10">
             <p>
-              Atendo moradores em todos os residenciais de Alphaville — do{" "}
+              Atendo moradores dos residenciais de Alphaville — do{" "}
               <Link href="/blog/personal-trainer-alphaville-residencial-zero" className="text-white underline underline-offset-4 hover:text-gray-300">Residencial Zero</Link>, um dos mais tradicionais, aos residenciais{" "}
               <Link href="/blog/personal-trainer-alphaville-residencial-1" className="text-white underline underline-offset-4 hover:text-gray-300">1</Link>,{" "}
               <Link href="/blog/personal-trainer-alphaville-residencial-2" className="text-white underline underline-offset-4 hover:text-gray-300">2</Link>,{" "}
@@ -375,16 +376,17 @@ export default function PersonalTrainerAlphaville() {
               <Link href="/blog/personal-trainer-alphaville-residencial-12" className="text-white underline underline-offset-4 hover:text-gray-300">12</Link>, já na porção de Santana de Parnaíba.
             </p>
             <p>
-              Na vizinhança imediata, também acompanho alunos nos condomínios do Tamboré — como o{" "}
+              Na vizinhança imediata, também atendo moradores dos condomínios do Tamboré — como o{" "}
               <Link href="/blog/personal-trainer-quintas-de-tambore" className="text-white underline underline-offset-4 hover:text-gray-300">Quintas de Tamboré</Link>, o{" "}
               <Link href="/blog/personal-trainer-boulevard-tambore" className="text-white underline underline-offset-4 hover:text-gray-300">Boulevard Tamboré</Link> e o{" "}
-              <Link href="/blog/personal-trainer-resort-tambore" className="text-white underline underline-offset-4 hover:text-gray-300">Tamboré Resort</Link> — em geral no espaço fitness do próprio condomínio ou na residência do aluno.
+              <Link href="/blog/personal-trainer-resort-tambore" className="text-white underline underline-offset-4 hover:text-gray-300">Tamboré Resort</Link> — em geral no espaço fitness do próprio condomínio ou na residência do aluno. A academia já está a poucos metros de casa; meu trabalho é fazer aquele espaço realmente funcionar para você.
             </p>
           </div>
-          <h3 className="text-white font-semibold text-lg mb-4">Academias de Alphaville onde acompanho alunos</h3>
+          <h3 className="text-white font-semibold text-lg mb-4">Guia das academias de Alphaville</h3>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base mb-10">
             <p>
-              Se você prefere treinar em academia, não precisa mudar de lugar: acompanho alunos nas principais unidades da região, como a{" "}
+              Hoje meu atendimento presencial em academia é confirmado na{" "}
+              <Link href="/blog/arena-18-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">Arena 18</Link>; em outras academias, depende das regras do local para personal externo. Se você está escolhendo onde treinar, preparei guias informativos das academias da região, como a{" "}
               <Link href="/blog/ironberg-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">Ironberg Alphaville</Link>, a{" "}
               <Link href="/blog/bodytech-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">Bodytech</Link>, a{" "}
               <Link href="/blog/bio-ritmo-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">Bio Ritmo</Link>, a{" "}
@@ -394,7 +396,7 @@ export default function PersonalTrainerAlphaville() {
               <Link href="/blog/nitrogym-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">NitroGym</Link>.
             </p>
             <p>
-              Cada uma tem estrutura e perfil de público diferentes — e parte do meu trabalho é adaptar o protocolo aos equipamentos disponíveis onde você já treina, sem exigir troca de plano ou de academia.
+              Cada uma tem estrutura e perfil de público diferentes. Os guias são informativos e não indicam que eu atendo nesses locais: se você já treina em alguma delas, me conta e verificamos juntos a possibilidade.
             </p>
           </div>
           <p className="text-gray-300 leading-relaxed font-light">
@@ -430,11 +432,11 @@ export default function PersonalTrainerAlphaville() {
           <h3 className="text-white font-semibold text-lg mb-4">O perfil de quem me procura aqui</h3>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base mb-10">
             <p>
-              Alphaville reúne três perfis que dominam a minha agenda. O primeiro é o executivo entre 35 e 55 anos que passa o dia em reuniões e horas sentado — e chega com queixas de{" "}
-              <Link href="/blog/postura-trabalho-sentado-exercicios" className="text-white underline underline-offset-4 hover:text-gray-300">postura comprometida pelo trabalho sentado</Link>, ganho de peso gradual e disposição em queda. O objetivo típico: emagrecimento e condicionamento físico que caibam numa agenda imprevisível.
+              Muita gente que me procura aqui passa o dia sentada, em reunião ou no carro — e chega com{" "}
+              <Link href="/blog/postura-trabalho-sentado-exercicios" className="text-white underline underline-offset-4 hover:text-gray-300">desconforto de quem trabalha sentado</Link>, ganho de peso gradual e disposição em queda.
             </p>
             <p>
-              O segundo são as famílias dos residenciais: casais que treinam juntos no espaço fitness do condomínio, mães e pais que querem hipertrofia e força sem abrir mão do tempo com os filhos. E o terceiro, cada vez maior, é o público 50+ e 60+ — moradores antigos da região que entenderam que o treino de força é o melhor investimento em autonomia e qualidade de vida a longo prazo.
+              Outros querem treinar junto com a família no condomínio, ou voltar a treinar depois de anos parados. E muita gente acima dos 50 procura o treino de força para manter a autonomia. Os objetivos mudam — emagrecer, ganhar massa, ganhar força ou simplesmente conseguir manter a rotina — e o treino parte de cada um deles.
             </p>
           </div>
           <h3 className="text-white font-semibold text-lg mb-4">Dicas práticas para treinar na região</h3>
@@ -443,7 +445,7 @@ export default function PersonalTrainerAlphaville() {
               "As academias de Alphaville lotam entre 6h e 8h e depois das 18h — quem tem flexibilidade encontra equipamentos livres entre 10h e 16h, e é aí que muitos dos meus alunos treinam com mais qualidade",
               "Se o seu residencial tem espaço fitness, use-o a favor: eliminar o deslocamento é o fator que mais aumenta a constância — e adapto o protocolo aos equipamentos disponíveis",
               "Para caminhadas e trabalho aeróbico ao ar livre, as alamedas arborizadas dos residenciais e o calçadão da região central funcionam muito bem no início da manhã",
-              "Chegou de viagem ou passou a semana fora? Uma sessão de mobilidade articular antes de retomar a carga evita o erro clássico de voltar no ritmo em que parou",
+              "Chegou de viagem ou passou a semana fora? Uma sessão de mobilidade articular antes de retomar a carga ajuda a voltar de forma progressiva",
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-gray-300 font-light">
                 <span className="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-white/40" />
@@ -475,10 +477,10 @@ export default function PersonalTrainerAlphaville() {
           </h2>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
             <p>
-              Musculação e treinamento personalizado não são sinônimos de estética apenas. O trabalho envolve emagrecimento, hipertrofia, ganho de força e resistência, mobilidade, flexibilidade, correção de postura e condicionamento físico — sempre partindo de uma avaliação física completa, com análise de composição corporal e percentual de gordura.
+              Musculação e treinamento personalizado não são sinônimos de estética apenas. O trabalho envolve emagrecimento, hipertrofia, ganho de força e resistência, mobilidade, flexibilidade e condicionamento físico — sempre partindo de uma avaliação física completa, com análise de composição corporal e percentual de gordura.
             </p>
             <p>
-              A partir daí entra a periodização: o planejamento que organiza fases de treino, progressão de carga e recuperação muscular para que o corpo evolua sem estagnar e sem se machucar. É um método refinado e validado na prática ao longo do atendimento de alunos — não uma fórmula copiada de aplicativo.
+              A partir daí entra a periodização: o planejamento que organiza fases de treino, progressão de carga e recuperação muscular para o corpo continuar evoluindo com segurança. É um método refinado e validado na prática, ao longo do atendimento de alunos.
             </p>
             <p>
               Sobre prazos, prefiro ser honesto: nas primeiras semanas a evolução aparece em disposição, sono e técnica de execução. Mudanças visíveis de composição corporal costumam surgir entre oito e doze semanas de treino consistente, e transformações profundas se consolidam ao longo de meses — junto com hábitos saudáveis que se sustentam depois. Se você já tentou de tudo e não saiu do lugar, vale ler{" "}
@@ -516,13 +518,13 @@ export default function PersonalTrainerAlphaville() {
           </h2>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
             <p>
-              Dor lombar depois de horas sentado no escritório, ombro que reclama, joelho que trava na escada — são queixas frequentes entre executivos e moradores de Alphaville. E a resposta certa raramente é ficar parado: é treinar com orientação adequada.
+              Dor lombar depois de horas sentado no escritório, ombro que reclama, joelho que trava na escada — são queixas frequentes de quem passa o dia sentado. E a resposta certa raramente é ficar parado: é treinar com orientação adequada.
             </p>
             <p>
               Tenho cursos voltados especificamente para o treinamento de pessoas com dores e limitações musculoesqueléticas. E, mais do que isso, já vivenciei na pele muitas dessas dores ao longo da minha própria trajetória de treinos — o que aumenta a minha compreensão real das dificuldades que os alunos enfrentam.
             </p>
             <p>
-              Minha metodologia une conhecimento técnico, experiência prática e acompanhamento individualizado para você treinar com segurança e eficiência: fortalecimento progressivo, trabalho de mobilidade e postura, prevenção de lesões e respeito absoluto aos limites de cada fase. Para se aprofundar, leia sobre{" "}
+              Na prática, isso significa considerar o seu histórico, adaptar exercícios, orientar a execução de perto e respeitar os limites de cada fase. Quando a dor pede avaliação de um profissional de saúde, eu encaminho — e o treino caminha junto com essa orientação. Para se aprofundar, leia sobre{" "}
               <Link href="/blog/dor-lombar-na-musculacao" className="text-white underline underline-offset-4 hover:text-gray-300">
                 dor lombar na musculação
               </Link>{" "}
@@ -543,12 +545,12 @@ export default function PersonalTrainerAlphaville() {
             className="text-3xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            5 Dicas para acabar com dores no lombar
+            Dor lombar e musculação: 5 cuidados que eu passo para os meus alunos
           </h2>
           <p className="text-gray-300 leading-relaxed mb-8">
             Além de acompanhar meus alunos presencialmente e online, também compartilho dicas práticas de treino, emagrecimento e hipertrofia. Assista ao vídeo abaixo para conhecer um pouco mais do meu trabalho.
           </p>
-          <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="5 Dicas para acabar com dores no lombar — Montinho Personal Trainer" />
+          <YoutubeShortEmbed videoId="MrfzaQWFqPs" title="Dor lombar e musculação: 5 cuidados — Montinho Personal Trainer" />
         </div>
       </section>
 
@@ -580,13 +582,11 @@ export default function PersonalTrainerAlphaville() {
             </p>
             <h3 className="text-white font-semibold text-lg pt-2">É vantajoso pagar um personal trainer?</h3>
             <p>
-              Vale quando você quer resultado com segurança: técnica corrigida desde o primeiro treino, carga que progride no ritmo certo, treino adaptado a dores e limitações e alguém que ajusta o plano quando a vida muda. É mais caro que treinar sozinho — e costuma sair mais barato que meses sem resultado ou uma lesão.
+              Vale quando você quer alguém olhando a sua execução, ajustando a carga no ritmo certo e mudando o plano quando a vida muda. É mais caro que treinar sozinho — e, para muita gente, é o que finalmente faz o treino sair do papel.
             </p>
-            <h3 className="text-white font-semibold text-lg pt-2">Personal na academia que você já frequenta</h3>
+            <h3 className="text-white font-semibold text-lg pt-2">Onde o treino acontece</h3>
             <p>
-              O acompanhamento pode ser na sua própria academia em Alphaville, como a{" "}
-              <Link href="/blog/ironberg-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">Ironberg</Link>{" "}
-              e outras da região — veja quais <Link href="/blog/academia-com-personal-trainer-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">academias de Alphaville aceitam personal externo</Link> e as{" "}
+              No seu condomínio, em casa, na Arena 18 ou em outra academia que permita personal externo. Quer conhecer as academias da região? Veja quais <Link href="/blog/academia-com-personal-trainer-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">academias de Alphaville aceitam personal externo</Link> e as{" "}
               <Link href="/blog/academias-premium-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">academias premium</Link>. Prefere ser atendida por uma abordagem pensada para mulheres? Veja o{" "}
               <Link href="/blog/personal-trainer-feminino-alphaville" className="text-white underline underline-offset-4 hover:text-gray-300">personal trainer feminino em Alphaville</Link>.
             </p>
@@ -598,7 +598,7 @@ export default function PersonalTrainerAlphaville() {
             className="inline-block mt-8 px-6 py-3 rounded-lg font-semibold text-black"
             style={{ background: "#BA9E50" }}
           >
-            Conhecer os planos pelo WhatsApp
+            Conversar sobre o presencial
           </a>
         </div>
       </section>
@@ -633,7 +633,7 @@ export default function PersonalTrainerAlphaville() {
             Pronto para começar em Alphaville?
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            A primeira conversa é sem compromisso. Me conta o que você quer alcançar — e eu te mostro como podemos chegar lá juntos. Se preferir, envie sua mensagem pela{" "}
+            A primeira conversa é sem compromisso. Me conta o que você quer, onde treinaria e como é a sua agenda — e a gente vê se o presencial faz sentido para você. Se preferir, envie sua mensagem pela{" "}
             <Link href="/contato" className="text-white underline underline-offset-4 hover:text-gray-300">
               página de contato
             </Link>
@@ -646,7 +646,7 @@ export default function PersonalTrainerAlphaville() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-100 transition-all duration-200"
             >
-              Falar pelo WhatsApp
+              Falar com o Montinho
             </a>
             <Link
               href="/consultoria"
