@@ -162,6 +162,7 @@ ok("proposta há 9 dias, 1 follow-up → follow-up 2 por tempo", escolherSituaca
 ok("online: 1 follow-up → Starter", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 3, followUpsNoCiclo: 1, online: true })) === "proposta_starter");
 ok("online: 0 follow-up, 3 dias → follow-up 1", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 3, followUpsNoCiclo: 0, online: true })) === "proposta_follow_up_1");
 ok("online: Starter já enviado → follow-up 2", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 4, followUpsNoCiclo: 2, online: true, starterEnviado: true })) === "proposta_follow_up_2");
+ok("online respondeu à proposta → Starter", escolherSituacao("respondeu_aguardando_voce", S({ jaContatado: true, propostaEnviada: true, respondeu: true, online: true })) === "proposta_starter");
 ok("presencial não recebe Starter", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 3, followUpsNoCiclo: 1 })) === "proposta_follow_up_1");
 ok("parado depois da experimental → proposta", escolherSituacao("parado", S({ jaContatado: true, experimentalRealizada: true })) === "pos_experimental_proposta");
 ok("sem próxima ação, nunca contatado → primeiro contato", escolherSituacao("sem_proxima_acao", S({})) === "primeiro_contato_generico");
