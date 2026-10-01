@@ -164,3 +164,12 @@ acompanhar o que acontece depois é o trabalho. Regras para toda copy:
 - **SEO primeiro, narrativa ao redor.** Não mexer em URL, slug, H1
   estratégico, title/description sem mostrar ATUAL / PROPOSTA / MOTIVO.
 - **Página por página**, com aprovação do Montinho entre uma e outra.
+
+## Locais de atendimento: guia de academia ≠ local confirmado
+
+Atendimento presencial confirmado: **Arena 18**, condomínios e em casa.
+Outras academias só "dependendo das regras do local para personal
+externo e de combinação prévia". Nunca afirmar que o Montinho atende em
+Ironberg, Bodytech, Bio Ritmo, Smart Fit, Bluefit, Gaviões, NitroGym ou
+qualquer outra academia só porque existe um guia dela no site — os guias
+são informativos e de SEO.
