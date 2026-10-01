@@ -42,6 +42,25 @@ export interface VideoCanal {
 
 export const VIDEOS_CANAL: VideoCanal[] = [
   {
+    id: "ul6Xi60zPeY",
+    slug: "melhor-treino-para-quem-usa-mounjaro",
+    titulo: "Usa Mounjaro e o peso está caindo? O melhor treino para não perder músculo",
+    metaTitle: "Melhor Treino Para Quem Usa Mounjaro (Vídeo)",
+    descricao:
+      "O Mounjaro tira o apetite e cria um déficit forte. Sem o estímulo certo, o corpo perde gordura e músculo junto. Treino de força três vezes por semana, 10 a 16 séries por músculo e caminhada no lugar do HIIT pesado.",
+    chamada: "Está usando Mounjaro e o peso está caindo? Em menos de 1 minuto: o treino para o músculo não ir embora junto com a gordura.",
+    texto: [
+      "Você está usando Mounjaro e o peso está caindo. Mas o que você está perdendo? O remédio tira o apetite e cria um déficit forte, e sem o estímulo certo o corpo queima gordura e músculo junto. Caminhada sozinha não segura músculo.",
+      "O melhor treino para quem usa Mounjaro é o treino de força: três vezes por semana já faz o músculo entender que ele tem que ficar. Com menos comida você recupera menos, então nada de treino gigante: 10 a 16 séries por músculo na semana já resolve. Treine pesado de verdade, chegando na falha ou perto dela.",
+      "Cardio? Caminhada de 30 a 45 minutos; HIIT pesado, não. Se bater enjoo, treine 2 a 3 horas depois de comer e pegue mais leve naquele dia. E não se compare com ninguém: o que funciona é um treino que você consegue manter. Uso de medicamento, sempre com acompanhamento médico.",
+    ],
+    artigos: [
+      { href: "/blog/melhor-treino-para-quem-usa-mounjaro", nome: "Melhor treino para quem usa Mounjaro" },
+      { href: "/blog/mounjaro-faz-perder-musculos", nome: "Mounjaro faz perder músculos?" },
+      { href: "/blog/musculacao-durante-uso-de-mounjaro", nome: "Musculação durante o uso de Mounjaro" },
+    ],
+  },
+  {
     id: "9X968Kqa2-Y",
     slug: "a-balanca-mente",
     titulo: "A balança mente? Por que o peso sobe mesmo emagrecendo",
