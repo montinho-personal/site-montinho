@@ -101,11 +101,12 @@ export const TEXTOS: Record<Situacao, string> = {
    * Starter: só consultoria online, no lugar do segundo toque depois da
    * proposta (decisão do Montinho em 01/10/2026). Quem não fechou o plano
    * cheio recebe uma porta de entrada menor. Não é promessa de parar: se não
-   * fechar, o caminho segue e o próximo toque é o follow-up 2 de sempre. Sem
-   * preço no texto — o valor vai junto, na conversa.
+   * fechar, o caminho segue e o próximo toque é o follow-up 2 de sempre. Texto do
+   * Montinho, palavra por palavra: é a única mensagem com preço e emoji, por
+   * escolha dele (o valor é a oferta).
    */
   proposta_starter:
-    "[[{saudacao}, ]]{nome}! Pensei numa forma mais leve de você começar: montei uma opção Starter da consultoria online, pra você experimentar o acompanhamento sem assumir o plano completo agora.\n\nSe fizer sentido, te mando os detalhes por aqui. Quer ver?",
+    "Olá!!! Tudo bem?\n\nLembrei de você porque criei uma forma nova de começar comigo que talvez faça mais sentido pro seu momento.\n\nEu percebi que muita gente queria começar a treinar comigo, mas ainda ficava com receio de já assumir 3 meses logo de cara.\n\nPor isso criei o Plano Starter.\n\nSão 30 dias comigo por R$149.\n\nNesse período eu faço sua avaliação, monto seu treino personalizado e você recebe tudo pelo app: exercícios, séries, repetições, explicações e vídeos mostrando exatamente como executar.\n\nAlém disso, você tem meu acompanhamento pelo WhatsApp e eu consigo fazer ajustes durante esse primeiro mês.\n\nA ideia é bem simples:\n\nvocê começa, conhece meu trabalho de verdade e vê como funciona o acompanhamento na prática.\n\nSe gostar e quiser continuar depois, aí sim a gente parte para a consultoria completa.\n\nVou te mandar a imagem aqui pra você dar uma olhada 👇\n\nSe fizer sentido pra você, me chama que eu já te explico como começamos.",
   /*
    * O link da história entra AQUI, e não antes, por dois motivos.
    *
