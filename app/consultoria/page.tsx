@@ -9,14 +9,14 @@ import Compartilhar from "@/components/share/Compartilhar";
 export const metadata: Metadata = {
   title: "Consultoria Online e Personal Trainer em Alphaville",
   description:
-    "Consultoria online de treino para todo o Brasil e personal trainer presencial em Alphaville. Treino personalizado, suporte diário no WhatsApp e acompanhamento de quem já perdeu 40 kg.",
+    "Consultoria online de treino para todo o Brasil e personal trainer presencial em Alphaville. Treino personalizado, suporte direto no WhatsApp e acompanhamento de quem já perdeu 40 kg.",
   alternates: {
     canonical: `${SITE_URL}/consultoria`,
   },
   openGraph: {
     title: "Consultoria Online e Personal Trainer | Montinho PT",
     description:
-      "Consultoria online de treino para todo o Brasil e personal trainer presencial em Alphaville. Treino personalizado e suporte diário no WhatsApp.",
+      "Consultoria online de treino para todo o Brasil e personal trainer presencial em Alphaville. Treino personalizado e suporte direto no WhatsApp.",
     url: `${SITE_URL}/consultoria`,
     type: "website",
     // O merge de metadata do Next é raso: definir openGraph aqui descarta o
@@ -55,7 +55,7 @@ const serviceSchema = {
         itemOffered: {
           "@type": "Service",
           name: "Consultoria Online",
-          description: "Consultoria online para todo o Brasil com protocolo de treino personalizado, orientação nutricional e suporte via WhatsApp.",
+          description: "Consultoria online para todo o Brasil com treino personalizado, correção de execução, ajustes conforme a evolução e suporte via WhatsApp.",
         },
       },
     ],
@@ -75,7 +75,7 @@ const faq = [
   {
     question: "Como funciona a consultoria online?",
     answer:
-      "Depois de uma conversa inicial gratuita e de uma anamnese completa, você recebe um treino personalizado com vídeos demonstrativos, orientação prática e suporte diário via WhatsApp. Fazemos check-ins semanais e reavaliações mensais para ajustar o plano conforme a sua evolução.",
+      "Depois de uma conversa inicial gratuita e de uma anamnese completa, você recebe um treino personalizado com vídeos demonstrativos, orientação prática e suporte direto pelo WhatsApp. Fazemos check-ins periódicos, com reavaliações e ajustes conforme a sua evolução.",
   },
   {
     question: "Quanto custa a consultoria online e o personal presencial?",
@@ -111,20 +111,20 @@ const faqSchema = {
 
 const services = [
   {
-    tag: "Mais Popular",
+    tag: "Presencial",
     title: "Personal Presencial",
     subtitle: "Alphaville · Barueri · Santana de Parnaíba",
     description:
-      "Acompanhamento 100% presencial com sessões de treino guiadas, correção de técnica em tempo real e total atenção às suas necessidades.",
+      "Eu do seu lado em cada série: corrijo a execução na hora, decido a carga com você e percebo quando o dia pede mais ou menos.",
     includes: [
       "Avaliação física completa e anamnese",
       "Treinos personalizados 100% para você",
       "Correção de técnica em tempo real",
       "Suporte via WhatsApp entre as sessões",
-      "Reavaliações mensais e ajustes de protocolo",
+      "Reavaliações e ajustes conforme a evolução",
       "Prevenção e correção de desvios posturais",
     ],
-    cta: "Quero Personal Presencial",
+    cta: "Conversar sobre o presencial",
     message:
       "Olá! Tenho interesse no Personal Presencial em Alphaville. Pode me contar mais?",
     featured: false,
@@ -134,16 +134,15 @@ const services = [
     title: "Consultoria Online",
     subtitle: "Em qualquer lugar do Brasil",
     description:
-      "Todo o método Montinho, sem limitação geográfica. Para quem não está em Alphaville mas quer os mesmos resultados com o mesmo nível de acompanhamento.",
+      "Você treina onde estiver, me manda a execução e eu ajusto o plano conforme a sua resposta. A distância muda o formato, não o cuidado.",
     includes: [
       "Anamnese completa e avaliação de histórico",
       "Treino personalizado com vídeos demonstrativos",
-      "Suporte diário via WhatsApp",
-      "Check-ins semanais de evolução",
+      "Suporte direto pelo WhatsApp",
+      "Check-ins periódicos de evolução",
       "Reavaliações e ajustes mensais",
-      "Acesso a materiais exclusivos",
     ],
-    cta: "Quero Consultoria Online",
+    cta: "Conversar sobre o online",
     message:
       "Olá! Tenho interesse na Consultoria Online. Pode me contar mais sobre como funciona?",
     featured: true,
@@ -153,16 +152,15 @@ const services = [
     title: "Modelo Híbrido",
     subtitle: "Presencial + Online",
     description:
-      "O melhor dos dois mundos. Sessões presenciais para refinamento de técnica combinadas com o suporte digital para o resto da semana.",
+      "Sessões presenciais para afinar a técnica e eu acompanhando o resto da semana à distância.",
     includes: [
       "Sessões presenciais semanais em Alphaville",
       "Treinos complementares online",
-      "Suporte via WhatsApp todos os dias",
+      "Acompanhamento pelo WhatsApp",
       "Avaliações e ajustes de protocolo",
       "Flexibilidade para períodos de viagem",
-      "Acesso a materiais e conteúdos exclusivos",
     ],
-    cta: "Quero o Modelo Híbrido",
+    cta: "Conversar sobre o híbrido",
     message:
       "Olá! Tenho interesse no Modelo Híbrido (presencial + online). Pode me contar mais?",
     featured: false,
@@ -180,26 +178,26 @@ const steps = [
     number: "02",
     title: "Planejamento Personalizado",
     description:
-      "Com base em tudo que ouvi, crio um protocolo completo: treino periodizado, orientação nutricional e estratégias práticas para a sua realidade.",
+      "Com base no que ouvi, monto o treino e o ponto de partida para a sua rotina real.",
   },
   {
     number: "03",
     title: "Acompanhamento Ativo",
     description:
-      "Não sou o tipo que desaparece. Estou presente, acompanho a evolução, respondo dúvidas e faço ajustes sempre que necessário.",
+      "Você faltou, a carga travou, a rotina mudou: eu percebo e a gente ajusta junto. Não desapareço depois que o treino chega.",
   },
   {
     number: "04",
     title: "Evolução Contínua",
     description:
-      "Reavaliações regulares para medir progresso, ajustar protocolos e garantir que você continua evoluindo em direção ao seu objetivo.",
+      "Reavaliações periódicas para decidir o próximo ciclo com dados, e não com achismo.",
   },
 ];
 
 const trustItems = [
   { value: "-40 kg", label: "na minha própria transformação" },
-  { value: "100%", label: "dos treinos personalizados — nada de PDF genérico" },
-  { value: "7 dias", label: "por semana de suporte no WhatsApp" },
+  { value: "100%", label: "dos treinos individuais, ajustados conforme a sua resposta" },
+  { value: "Direto", label: "comigo no WhatsApp, sem intermediário" },
   { value: "Grátis", label: "a conversa inicial, sem compromisso" },
 ];
 
@@ -240,8 +238,9 @@ export default function Consultoria() {
             Treino personalizado com acompanhamento de verdade
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed mb-3">
-            Presencial em Alphaville ou online em qualquer lugar do Brasil — com
-            suporte diário no WhatsApp e um plano montado para a sua rotina.
+            Presencial em Alphaville ou online em qualquer lugar do Brasil. O treino
+            é o ponto de partida: depois eu acompanho a execução, vejo como você
+            responde e ajusto o caminho com você.
           </p>
           <p className="text-gray-300 text-base leading-relaxed mb-8">
             Eu já perdi <strong className="text-white">40 kg</strong> na minha

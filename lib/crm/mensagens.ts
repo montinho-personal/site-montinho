@@ -54,7 +54,7 @@ const REGRAS: Regra[] = [
   { origem: "Personal por Perto · calculadora de preço", pathPadrao: null, fonte: "personal_por_perto",
     frase: /^(?:Oi|Olá),? Montinho! Usei a calculadora de pre[çc]o do Personal por Perto\.(?:\s*Moro em (.+?)(?:\s+e estou pensando em treinar (.+?))?\.)?\s*(.*)$/,
     grupos: ["local", "frequencia", "pedido"] },
-  { origem: "Consultoria Online · topo / barra fixa", pathPadrao: "^/consultoria-online", botoes: ["Falar no WhatsApp agora"], servico: "online",
+  { origem: "Consultoria Online · topo / barra fixa", pathPadrao: "^/consultoria-online", botoes: ["Falar com o Montinho agora", "Falar no WhatsApp agora"], servico: "online",
     frase: "Olá, Montinho! Vi a página da Consultoria Online e queria entender se ela faz sentido para o meu caso." },
   { origem: "Consultoria Online · resultados dos alunos", pathPadrao: "^/consultoria-online", botoes: ["Quero um plano assim para mim"], servico: "online",
     frase: "Olá, Montinho! Vi os resultados dos seus alunos e queria entender como funcionaria comigo." },

@@ -44,7 +44,7 @@ const faqs = [
   {
     question: "O que está incluído na consultoria?",
     answer:
-      "Dependendo da modalidade, inclui: avaliação física e anamnese completa, protocolo de treino personalizado, orientação nutricional, suporte via WhatsApp, check-ins regulares e reavaliações mensais. Nas modalidades presenciais, inclui ainda as sessões de treino guiadas em Alphaville (Barueri ou Santana de Parnaíba).",
+      "Dependendo da modalidade, inclui: avaliação física e anamnese completa, protocolo de treino personalizado, suporte via WhatsApp, check-ins periódicos e reavaliações conforme a evolução. Nas modalidades presenciais, inclui ainda as sessões de treino guiadas em Alphaville (Barueri ou Santana de Parnaíba).",
   },
   {
     question: "Quanto custa? Vale o investimento?",

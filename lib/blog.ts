@@ -9475,7 +9475,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><a href="/blog/creatina-para-hipertrofia">Creatina para hipertrofia</a></li>
 </ul>
 
-<p>Quer um protocolo personalizado para emagrecer sem perder músculo, com plano de treino e orientação nutricional? <a href="/consultoria">Conheça a consultoria do Montinho</a> e receba um plano feito para o seu perfil.</p>
+<p>Quer um protocolo personalizado para emagrecer sem perder músculo, com plano de treino e acompanhamento? <a href="/consultoria">Conheça a consultoria do Montinho</a> e receba um plano feito para o seu perfil.</p>
     `,
     category: "Emagrecimento",
     date: "2026-06-26",
@@ -10469,7 +10469,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Quer ajuda para montar seu plano durante o Mounjaro?</h2>
 
-<p>Se você está usando Mounjaro e quer garantir que está preservando o máximo de massa muscular possível durante o emagrecimento, posso te ajudar a montar um protocolo personalizado de treino e orientação nutricional. Acesse a página de <a href="/consultoria">consultoria online</a> e saiba como funciona.</p>
+<p>Se você está usando Mounjaro e quer garantir que está preservando o máximo de massa muscular possível durante o emagrecimento, posso te ajudar a montar um protocolo personalizado de treino. Acesse a página de <a href="/consultoria">consultoria online</a> e saiba como funciona.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
@@ -13491,7 +13491,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Quer uma estratégia personalizada para o seu caso?</h2>
 
-<p>Se a fraqueza está comprometendo seus treinos e você não sabe por onde começar, posso ajudar. Na minha <a href="/consultoria">consultoria online</a>, monto um programa de treino e orientação nutricional adaptado ao seu contexto — incluindo o uso de Retatrutida — para que você consiga treinar com qualidade mesmo em déficit calórico.</p>
+<p>Se a fraqueza está comprometendo seus treinos e você não sabe por onde começar, posso ajudar. Na minha <a href="/consultoria">consultoria online</a>, monto um programa de treino adaptado ao seu contexto — incluindo o uso de Retatrutida — para que você consiga treinar com qualidade mesmo em déficit calórico.</p>
 
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
@@ -13886,7 +13886,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Quer estruturar seu treino durante o tratamento?</h2>
 
-<p>Se você está usando Mounjaro, Retatrutida ou qualquer outro GLP-1 e quer garantir que o emagrecimento aconteça com preservação máxima de massa muscular, posso ajudar na minha <a href="/consultoria">consultoria online</a>. O programa de treino e a orientação nutricional são adaptados ao seu contexto — incluindo o medicamento que você usa.</p>
+<p>Se você está usando Mounjaro, Retatrutida ou qualquer outro GLP-1 e quer garantir que o emagrecimento aconteça com preservação máxima de massa muscular, posso ajudar na minha <a href="/consultoria">consultoria online</a>. O programa de treino é adaptado ao seu contexto — incluindo o medicamento que você usa.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
@@ -66244,7 +66244,7 @@ Veja mais detalhes sobre essa modalidade no artigo [como funciona o personal tra
 ## Principais objetivos dos alunos de Jandira
 
 ### Emagrecimento
-O objetivo mais procurado. O método combina treino de força — principal motor da mudança de composição corporal — com orientação nutricional prática. Sem dietas radicais ou cardio excessivo: a abordagem é sustentável e gera resultados que permanecem.
+O objetivo mais procurado. O método combina treino de força — principal motor da mudança de composição corporal — com hábitos alimentares sustentáveis, alinhados ao acompanhamento do seu nutricionista. Sem dietas radicais ou cardio excessivo: a abordagem é sustentável e gera resultados que permanecem.
 
 ### Hipertrofia e ganho de massa muscular
 Para quem quer aumentar a massa muscular, o programa inclui periodização adequada, progressão sistemática de carga e volume, e as orientações nutricionais necessárias para suportar o crescimento.

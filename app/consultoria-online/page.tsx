@@ -93,7 +93,7 @@ const faqLp = [
   },
   {
     q: "Meu treino será ajustado ao longo do tempo?",
-    a: "Sim. Seu corpo muda, sua rotina muda — e o treino precisa mudar junto. Os ajustes fazem parte do acompanhamento e acontecem sempre que a sua evolução pedir, além das revisões mensais programadas.",
+    a: "Sim. Seu corpo muda, sua rotina muda — e o treino precisa mudar junto. Os ajustes fazem parte do acompanhamento e acontecem sempre que a sua evolução pedir, além das reavaliações periódicas.",
   },
   {
     q: "E se eu tiver dúvidas durante o treino?",
@@ -204,10 +204,10 @@ export default function ConsultoriaOnlineLP() {
                 <span className="text-[#BA9E50]">perdeu 40kg</span>.
               </h1>
               <p className="text-gray-300 text-lg leading-relaxed mb-4 max-w-lg">
-                A consultoria online não é uma planilha genérica. É um{" "}
-                <strong className="text-white">acompanhamento completo</strong>: treino
-                montado para a sua realidade, vídeos de execução, correções e ajustes
-                conforme a sua evolução — com suporte direto pelo WhatsApp.
+                Eu monto o seu treino, vejo como você executa e ajusto o plano quando o
+                seu corpo ou a sua rotina pedem.{" "}
+                <strong className="text-white">Você treina onde estiver, e eu acompanho daqui</strong>,
+                com suporte direto comigo pelo WhatsApp.
               </p>
               <p className="text-gray-300 text-sm mb-8">
                 Para quem quer <strong className="text-gray-200">emagrecer ou ganhar massa muscular</strong>{" "}
@@ -251,7 +251,7 @@ export default function ConsultoriaOnlineLP() {
                     A mesma pessoa. <span className="text-[#BA9E50]">40kg de diferença.</span>
                   </p>
                   <p className="text-gray-300 text-sm mt-1">
-                    O método que me tirou dali é o que vou aplicar em você.
+                    O que mudou meu corpo não foi encontrar um treino milagroso. Foi construir um processo que eu consegui continuar. É isso que eu quero te ajudar a construir também.
                   </p>
                 </figcaption>
               </figure>
@@ -403,7 +403,7 @@ export default function ConsultoriaOnlineLP() {
               {[
                 ["🎥", "Você vê como executar", "Cada exercício do seu plano vem com vídeo demonstrativo. Nada de adivinhar movimento."],
                 ["📲", "Eu vejo como você executa", "Você grava sua execução, eu analiso e corrijo. É assim que o treino online fica seguro e eficiente."],
-                ["🔄", "O plano evolui com você", "Check-ins de evolução e ajustes mensais — ou antes, sempre que a sua evolução pedir."],
+                ["🔄", "O plano evolui com você", "Check-ins periódicos, com reavaliações e ajustes conforme a sua evolução."],
               ].map(([icon, t, d]) => (
                 <div key={t} className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 text-center">
                   <span className="text-3xl">{icon}</span>
@@ -424,22 +424,22 @@ export default function ConsultoriaOnlineLP() {
         <section id="o-que-inclui" className="scroll-mt-24 lg:scroll-mt-28 py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-5xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
-              Tudo o que está incluso na sua consultoria
+              O que acontece depois que o treino chega
             </h2>
             <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
-              Não é um treino avulso. É uma estratégia completa de transformação,
-              acompanhada de perto do início ao fim.
+              Montar o plano é o começo. O que faz diferença é o que vem depois,
+              e você e eu trabalhando nisso juntos.
             </p>
             <ul className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
               {[
-                ["Treino 100% personalizado", "Montado para o seu objetivo, seu nível, sua estrutura e o tempo que você realmente tem."],
-                ["Vídeos de execução", "Cada exercício com demonstração em vídeo para você treinar com confiança."],
-                ["Correções da sua execução", "Você envia seus vídeos, eu analiso e corrijo — como se estivesse ao seu lado."],
-                ["Suporte direto no WhatsApp", "Dúvida no meio do treino? Me chama. Quem responde sou eu."],
-                ["Check-ins de evolução", "Acompanhamento periódico do seu progresso para manter o plano no rumo certo."],
-                ["Reavaliações e ajustes mensais", "Seu corpo evolui — seu treino evolui junto. Sem plano parado no tempo."],
-                ["Estratégia completa", "Treino, progressão de carga, recuperação e construção de hábito — tudo conectado ao seu objetivo."],
-                ["Plano individualizado de verdade", "Nada de template: duas pessoas nunca recebem o mesmo plano."],
+                ["Você treina com o plano no app", "Cada exercício com vídeo de execução, montado para o seu objetivo, o seu nível e o tempo que você realmente tem."],
+                ["A execução não encaixou?", "Você grava a série, me envia e eu mostro o que ajustar."],
+                ["Travou no meio do treino?", "Me chama no WhatsApp. Quem responde sou eu."],
+                ["A progressão travou", "A gente olha o que está acontecendo e ajusta carga, volume ou estratégia quando fizer sentido."],
+                ["Sua rotina mudou", "Viagem, semana corrida, academia diferente: o plano se adapta em vez de ser abandonado."],
+                ["Um exercício não encaixou ou o equipamento não está disponível?", "A gente adapta sem perder o objetivo daquele movimento."],
+                ["Você está respondendo melhor que o esperado", "Então o plano acompanha: a gente sobe o desafio no ritmo que o seu corpo mostrou que aguenta."],
+                ["Reavaliação periódica", "Medidas, fotos e cargas para decidir o próximo ciclo com dados, não com achismo."],
               ].map(([t, d]) => (
                 <li key={t} className="bg-black/40 border border-white/10 rounded-xl px-5 py-4">
                   <p className="text-white font-semibold text-sm mb-1">
@@ -467,8 +467,8 @@ export default function ConsultoriaOnlineLP() {
                 ["1", "Conversa inicial", "Você me chama no WhatsApp e eu entendo sua rotina, objetivos e histórico."],
                 ["2", "Anamnese e avaliação", "Levanto seu ponto de partida: experiência, estrutura disponível, limitações e preferências."],
                 ["3", "Seu plano chega", "Treino personalizado com vídeos de execução, pronto para começar onde você estiver."],
-                ["4", "Acompanhamento", "Correções, check-ins e suporte pelo WhatsApp durante toda a jornada."],
-                ["5", "Ajustes e evolução", "Reavaliações mensais e ajustes conforme seu progresso — até o resultado que você busca."],
+                ["4", "Acompanhamento", "Correções de execução, check-ins periódicos e suporte direto pelo WhatsApp."],
+                ["5", "Ajustes e evolução", "Reavaliações e ajustes conforme a sua evolução. O plano não para no tempo, e você também não."],
               ].map(([n, t, d]) => (
                 <li key={n} className="bg-white/[0.03] border border-white/10 rounded-2xl p-5">
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#BA9E50] text-black font-bold mb-3">{n}</span>
@@ -556,7 +556,7 @@ export default function ConsultoriaOnlineLP() {
                   <li>✅ Correções da sua execução por vídeo</li>
                   <li>✅ Suporte direto comigo no WhatsApp</li>
                   <li>✅ Ajustes conforme a sua evolução</li>
-                  <li>✅ Estratégia guiada por quem já viveu a transformação</li>
+                  <li>✅ Alguém que percebe quando você travou e decide com você o próximo passo</li>
                 </ul>
               </div>
             </div>
@@ -605,9 +605,9 @@ export default function ConsultoriaOnlineLP() {
                   ))}
                 </ul>
                 <p className="text-gray-300 text-sm mt-6 leading-relaxed">
-                  Prefiro ser honesto agora do que te decepcionar depois: transformação
-                  real exige método <em>e</em> participação. Eu cuido do método — e caminho
-                  com você no resto.
+                  Prefiro ser honesto agora do que te decepcionar depois: mudar o corpo
+                  exige método <em>e</em> participação. Eu cuido do método e dos ajustes; você
+                  cuida de aparecer e treinar. É assim que funciona: os dois trabalhando juntos.
                 </p>
               </div>
             </div>
@@ -666,18 +666,13 @@ export default function ConsultoriaOnlineLP() {
               está agora.
             </p>
             <p className="text-gray-300 mb-6 max-w-xl mx-auto">
-              Me mande uma mensagem. Vamos entender seus objetivos e descobrir a
-              melhor estratégia para a transformação que você deseja — onde quer que
-              você esteja.
-            </p>
-            <p className="text-gray-400 text-sm mb-10">
-              Atendo um número limitado de alunos em acompanhamento por vez — é o
-              que mantém as correções e o suporte realmente próximos.
+              Me conta onde você está e aonde quer chegar. Eu te mostro como seria
+              fazer esse caminho comigo, de onde você estiver.
             </p>
             <Cta
               em="final"
-              label="Quero começar minha consultoria"
-              sub="Respondo pessoalmente — geralmente em poucos minutos"
+              label="Falar com o Montinho"
+              sub="Quem responde sou eu, pessoalmente"
             />
             {/* Compartilhar fica DEPOIS do CTA e visualmente mais fraco: a
                 ação primária desta página é falar comigo. Quem quer mostrar
@@ -710,7 +705,7 @@ export default function ConsultoriaOnlineLP() {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden>
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
             </svg>
-            Falar no WhatsApp agora
+            Falar com o Montinho agora
           </a>
         </div>
         {/* Espaço para a barra fixa não cobrir o rodapé da página no mobile */}
