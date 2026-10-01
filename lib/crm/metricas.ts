@@ -569,7 +569,7 @@ export function classificarLead(s: SinaisLead, limites = { quenteMin: 5, mornoMi
 // ---------------------------------------------------------------------------
 // Daily Decision Engine — regras transparentes, sem "AI score"
 // ---------------------------------------------------------------------------
-export interface LeadParaHoje { id: string; contactId: string; nome: string; status: string; createdAt: string; lastContactAt: string | null; firstResponseAt: string | null; lastReplyAt?: string | null; replyHandledAt?: string | null; followUpsNoCiclo?: number; promessaFeita?: boolean; motivoDecidir?: string; emPaz?: boolean; adiadoAte?: string | null; nextAction: string | null; nextActionAt: string | null; stageCode: string | null; proposalSentAt: string | null; expectedValue: number | null; temperatura?: string; opportunityId?: string | null }
+export interface LeadParaHoje { id: string; contactId: string; nome: string; status: string; createdAt: string; lastContactAt: string | null; firstResponseAt: string | null; lastReplyAt?: string | null; replyHandledAt?: string | null; followUpsNoCiclo?: number; promessaFeita?: boolean; starterPendente?: boolean; motivoDecidir?: string; emPaz?: boolean; adiadoAte?: string | null; nextAction: string | null; nextActionAt: string | null; stageCode: string | null; proposalSentAt: string | null; expectedValue: number | null; temperatura?: string; opportunityId?: string | null }
 export interface TarefaParaHoje { id: string; leadId: string | null; clientId: string | null; contactId: string | null; nome: string; titulo: string; dueAt: string; priority: string; tipo?: string }
 export interface TrialParaHoje { id: string; leadId: string | null; contactId: string; nome: string; scheduledAt: string; status: string }
 export interface ClienteParaHoje { id: string; contactId: string; nome: string; renewalDate: string | null; status: string; proximaCobrancaEm?: string | null; cobrancas?: number; pacote?: { usadas: number; contratadas: number; semanas?: number | null } | null }
@@ -602,7 +602,9 @@ export function prioridadesHoje(
   // Follow-up esgotado (3 tentativas no ciclo, ou a mensagem que prometeu
   // ser a última já foi): em vez de pedir a quarta mensagem, o card pede
   // uma decisão — adiar, deixar em paz ou perdido — e não traz texto pronto.
-  const esgotou = (l: LeadParaHoje) => (l.followUpsNoCiclo ?? 0) >= MAX_FOLLOW_UPS || !!l.promessaFeita;
+  // Exceção: lead da consultoria online com proposta e sem o Starter ainda
+  // recebe o Starter antes de decidir, mesmo depois do follow-up 2 (01/10/2026).
+  const esgotou = (l: LeadParaHoje) => !l.starterPendente && ((l.followUpsNoCiclo ?? 0) >= MAX_FOLLOW_UPS || !!l.promessaFeita);
   const cobrar = (l: LeadParaHoje, prioridade: number, grupo: string, motivo: string) => {
     if (esgotou(l)) itens.push({ prioridade: 4, grupo: "decidir", motivo: l.motivoDecidir ?? `${l.followUpsNoCiclo} tentativas sem resposta`, acao: "Decidir: adiar, deixar em paz ou perdido", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
     else itens.push({ prioridade, grupo, motivo, acao: grupo === "proposta_sem_follow_up" ? "Fazer follow-up" : grupo === "proxima_acao_vencida" ? (l.nextAction ?? "Retomar") : "Retomar", contactId: l.contactId, leadId: l.id, opportunityId: l.opportunityId, nome: l.nome, valor: l.expectedValue });
