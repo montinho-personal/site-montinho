@@ -4,6 +4,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import testimonials from "@/data/testimonials.json";
 import FAQ from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
+import VideoRecomecar from "@/components/video/VideoRecomecar";
 
 /**
  * Landing Page de alta conversão para Google Ads.
@@ -435,6 +436,7 @@ export default function LandingPage() {
         </section>
 
         {/* ───────────────────── 9. FAQ ───────────────────── */}
+        <VideoRecomecar />
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-3xl mx-auto px-5 sm:px-8">
             <h2 className="text-center text-3xl sm:text-4xl font-bold mb-12" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>

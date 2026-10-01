@@ -5,6 +5,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
 import FAQ from "@/components/ui/FAQ";
 import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
+import VideoRecomecar from "@/components/video/VideoRecomecar";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer a Domicílio Tamboré | Montinho Personal Trainer" },
@@ -262,6 +263,7 @@ export default function PersonalTrainerDomicilioTambore() {
 
 
       {/* FAQ */}
+      <VideoRecomecar />
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>

@@ -7,6 +7,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import testimonials from "@/data/testimonials.json";
 import FAQ from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
+import VideoRecomecar from "@/components/video/VideoRecomecar";
 
 /**
  * Landing Page de alta conversão para Google Ads — Consultoria Online.
@@ -635,6 +636,7 @@ export default function ConsultoriaOnlineLP() {
         </section>
 
         {/* ───────────────────── 10. FAQ ───────────────────── */}
+        <VideoRecomecar semSaida />
         <Etapa evento="consultoria_etapa_objecoes">
         <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
           <div className="max-w-3xl mx-auto px-5 sm:px-8">

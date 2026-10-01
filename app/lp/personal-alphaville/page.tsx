@@ -3,6 +3,7 @@ import Image from "next/image";
 import testimonials from "@/data/testimonials.json";
 import { BORDOES } from "@/lib/bordoes";
 import LpCta, { LpCtaFixa } from "@/components/lp/LpCta";
+import VideoRecomecar from "@/components/video/VideoRecomecar";
 
 /**
  * Landing page de anúncio (Google Ads) — personal presencial em Alphaville
@@ -294,6 +295,7 @@ export default function LpPersonalAlphaville() {
       </section>
 
       {/* CONTATO — sitelink #contato */}
+      <VideoRecomecar semSaida />
       <section id="contato" className={`border-t border-white/10 ${ancora}`}>
         <div className="mx-auto max-w-3xl px-5 py-16 text-center sm:py-24">
           <Titulo>Daqui a três meses você vai ter treinado ou vai ter adiado de novo.</Titulo>

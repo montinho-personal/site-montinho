@@ -5,6 +5,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import { SITE_URL } from "@/lib/blog";
 import FAQ from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
+import VideoRecomecar from "@/components/video/VideoRecomecar";
 
 export const metadata: Metadata = {
   title: "Consultoria Online e Personal Trainer em Alphaville",
@@ -452,6 +453,7 @@ export default function Consultoria() {
       </section>
 
       {/* FAQ */}
+      <VideoRecomecar />
       <section className="py-16 bg-black border-t border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
