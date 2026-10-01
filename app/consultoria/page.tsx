@@ -140,7 +140,7 @@ const services = [
       "Treino personalizado com vídeos demonstrativos",
       "Suporte direto pelo WhatsApp",
       "Check-ins periódicos de evolução",
-      "Reavaliações e ajustes mensais",
+      "Reavaliações e ajustes conforme a evolução",
     ],
     cta: "Conversar sobre o online",
     message:
