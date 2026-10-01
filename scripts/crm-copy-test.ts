@@ -155,6 +155,10 @@ ok("sem grupo, contatado e sem resposta → segundo toque continua", escolherSit
 ok("proposta há 3 dias, 0 follow-ups → follow-up 1", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 3 })) === "proposta_follow_up_1");
 ok("proposta há 3 dias, 2 follow-ups no ciclo → follow-up 2 (devolve a decisão)", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 3, followUpsNoCiclo: 2 })) === "proposta_follow_up_2");
 ok("proposta há 9 dias, 1 follow-up → follow-up 2 por tempo", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 9, followUpsNoCiclo: 1 })) === "proposta_follow_up_2");
+ok("online: 1 follow-up → Starter", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 3, followUpsNoCiclo: 1, online: true })) === "proposta_starter");
+ok("online: 0 follow-up, 3 dias → follow-up 1", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 3, followUpsNoCiclo: 0, online: true })) === "proposta_follow_up_1");
+ok("online: Starter já enviado → follow-up 2", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 4, followUpsNoCiclo: 2, online: true, starterEnviado: true })) === "proposta_follow_up_2");
+ok("presencial não recebe Starter", escolherSituacao("proposta_sem_follow_up", S({ jaContatado: true, propostaEnviada: true, diasProposta: 3, followUpsNoCiclo: 1 })) === "proposta_follow_up_1");
 ok("parado depois da experimental → proposta", escolherSituacao("parado", S({ jaContatado: true, experimentalRealizada: true })) === "pos_experimental_proposta");
 ok("sem próxima ação, nunca contatado → primeiro contato", escolherSituacao("sem_proxima_acao", S({})) === "primeiro_contato_generico");
 const cli = (status: string, renovaEm: number | null, extra: Partial<Sinais> = {}) => S({ cliente: { status, renewal_date: null } as never, renovaEm, diasDeCliente: 200, ...extra });

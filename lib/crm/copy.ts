@@ -67,7 +67,7 @@ function arrumar(t: string): string {
 export interface Sinais {
   pergunta: string; indicador: string; pagina: string; anuncio: boolean;
   jaContatado: boolean; respondeu: boolean; followUpsNoCiclo: number; propostaEnviada: boolean; diasProposta: number | null; etapa: string | null;
-  exigeExperimental: boolean; experimentalAgendada: boolean; experimentalRealizada: boolean; experimentalNoShow: boolean;
+  exigeExperimental: boolean; online?: boolean; starterEnviado?: boolean; experimentalAgendada: boolean; experimentalRealizada: boolean; experimentalNoShow: boolean;
   cliente: ClienteRow | undefined; pacoteTerminou: boolean; renovaEm: number | null; diasDeCliente: number | null; diasForaDeTreino: number | null; jaIndicou: boolean;
 }
 
@@ -75,7 +75,13 @@ const primeiroContato = (s: Sinais): Situacao =>
   s.pergunta ? "primeiro_contato_duvida" : s.indicador ? "primeiro_contato_indicacao" : s.pagina ? "primeiro_contato_site" : s.anuncio ? "primeiro_contato_anuncio" : "primeiro_contato_generico";
 // O segundo follow-up da proposta é o que devolve a decisão: vem por tempo (7 dias)
 // ou por contagem (já houve dois no ciclo) — nunca antes do primeiro.
-const depoisDaProposta = (s: Sinais): Situacao => ((s.diasProposta ?? 0) >= 7 || s.followUpsNoCiclo >= 2 ? "proposta_follow_up_2" : "proposta_follow_up_1");
+// Na consultoria online, o segundo toque oferece o Starter antes (uma vez por proposta);
+// sem fechar, o próximo volta a ser o follow-up 2 — dentro do mesmo teto de 3 por ciclo.
+const depoisDaProposta = (s: Sinais): Situacao => {
+  const dias = s.diasProposta ?? 0;
+  if (s.online && !s.starterEnviado) return dias >= 7 || s.followUpsNoCiclo >= 1 ? "proposta_starter" : "proposta_follow_up_1";
+  return dias >= 7 || s.followUpsNoCiclo >= 2 ? "proposta_follow_up_2" : "proposta_follow_up_1";
+};
 
 /**
  * O passo seguinte de quem já falou e ainda não comprou. Ele depende do
@@ -245,6 +251,8 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
     // Sem serviço definido ainda, o presencial é o caminho mais comum aqui — e convidar
     // para a experimental é o convite que não queima etapa se o serviço mudar depois.
     exigeExperimental: servico?.exige_experimental ?? true,
+    online: servico?.code === "online",
+    starterEnviado: !!lead && !!opp?.proposal_sent_at && b.atividades.some((a) => a.lead_id === lead.id && a.metadata?.situacao === "proposta_starter" && a.ocorreu_em >= opp.proposal_sent_at!),
     experimentalAgendada: trials.some((t) => t.status === "agendada"),
     experimentalRealizada: trials.some((t) => t.status === "realizada"),
     experimentalNoShow: trials.some((t) => t.status === "no_show") && !trials.some((t) => t.status === "agendada" || t.status === "realizada"),
