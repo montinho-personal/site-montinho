@@ -143,7 +143,9 @@ export function escolherSituacao(grupo: string | null | undefined, s: Sinais): S
     case "novo_sem_contato": return primeiroContato(s);
     // Ela respondeu e a bola está com o Montinho: a resposta é a conversa em si;
     // o texto pronto só sugere o próximo passo, nunca um follow-up de cobrança.
-    case "respondeu_aguardando_voce": return s.propostaEnviada ? "proposta_follow_up_1" : proximoPasso(s);
+    // Online com proposta e sem o Starter: a resposta costuma ser objeção (preço,
+    // momento), e o Starter é a porta menor que responde a ela.
+    case "respondeu_aguardando_voce": return s.propostaEnviada ? (s.online && !s.starterEnviado ? "proposta_starter" : "proposta_follow_up_1") : proximoPasso(s);
     case "proposta_sem_follow_up": return depoisDaProposta(s);
     case "negociacao_antiga": return "negociacao_parada";
     case "experimental_proxima": return "experimental_confirmar";
