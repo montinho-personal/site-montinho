@@ -284,6 +284,19 @@ export default function MinhaHistoria() {
                   intenção.
                 </p>
                 <p>
+                  <strong className="text-white">
+                    O que mudou não foi nunca mais engordar.
+                  </strong>{" "}
+                  Os 40 kg vieram depois de várias tentativas e de muitos efeitos
+                  sanfona. E, mesmo depois, eu cheguei a engordar um pouco de
+                  novo. Nunca voltei ao meu pior momento.
+                </p>
+                <p>
+                  A diferença é que agora eu percebia cedo. Eu sabia o que tinha
+                  saído do lugar e conseguia voltar rápido. Antes, cada
+                  escorregada virava desistência. Depois, virava um ajuste.
+                </p>
+                <p>
                   Foi olhando para trás que comecei a perceber quantas pessoas
                   também sabem que precisam mudar, tentam de verdade, mas têm
                   dificuldade de transformar isso em algo que consigam sustentar.
