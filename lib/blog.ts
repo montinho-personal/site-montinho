@@ -220,6 +220,9 @@ export const blogPosts = ([
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Leia também</h2>
 <ul>
   <li><a href="/blog/como-evitar-perder-massa-muscular-mounjaro">Como Evitar Perder Massa Muscular no Mounjaro</a></li>
@@ -302,6 +305,9 @@ export const blogPosts = ([
 
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
@@ -9681,6 +9687,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 `
   },
 
@@ -9836,6 +9845,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Prefere ver em 1 minuto? O resumo deste artigo em vídeo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 `
   },
 
@@ -9980,6 +9992,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `
   },
@@ -10146,6 +10161,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `
   },
@@ -10474,6 +10492,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/2YZNFdapE_s?rel=0" title="Quanto ingerir de proteina por dia — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 </div>
 
 <h2>Leia também:</h2>
@@ -10642,6 +10663,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/-GM20fw5_0w?rel=0" title="Tudo que voce precisa saber sobre creatina — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 </div>
 
 <h2>Leia também:</h2>
@@ -10816,6 +10840,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/OZ_OLBMW3R4?rel=0" title="Whey concentrado, isolado e hidrolisado — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 </div>
 
 <h2>Leia também:</h2>
@@ -10994,6 +11021,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -11203,6 +11233,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também:</h2>
 <ul>
@@ -13891,6 +13924,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 </div>
 
 <h2>Leia também:</h2>
