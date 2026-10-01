@@ -29,7 +29,7 @@ const faq = [
   {
     question: "Você atende em qual parte de Barueri?",
     answer:
-      "Atendo em diversas regiões do município: Centro de Barueri, bairros residenciais próximos e, com forte presença, a região de Alphaville e Tamboré, que pertencem a Barueri. Os atendimentos acontecem em academias da cidade, em condomínios ou em domicílio, conforme a localização e a preferência do aluno.",
+      "Atendo em diversas regiões do município: Centro de Barueri, bairros residenciais próximos e, com forte presença, a região de Alphaville e Tamboré, que pertencem a Barueri. O atendimento presencial acontece na Arena 18, no espaço fitness do seu condomínio ou em casa. Em outras academias, depende das regras do local para personal externo e de combinação prévia.",
   },
   {
     question: "Personal trainer em Barueri atende em domicílio?",
@@ -69,7 +69,7 @@ const faq = [
   {
     question: "Você trabalha com emagrecimento em Barueri?",
     answer:
-      "Emagrecimento é um dos principais objetivos dos meus alunos. O protocolo combina treino de força — que preserva músculo e mantém o metabolismo elevado — com orientações nutricionais básicas alinhadas ao objetivo. O déficit calórico controlado, associado ao treino adequado, é o que produz resultado duradouro na composição corporal.",
+      "Emagrecimento é um dos principais objetivos dos meus alunos. O protocolo combina treino de força — que preserva músculo e mantém o metabolismo elevado — e com acompanhamento de perto: quando a balança trava ou a semana sai do plano, a gente ajusta o treino junto. A parte da alimentação fica com um nutricionista.",
   },
   {
     question: "Sou iniciante e nunca treinei. Consigo acompanhar?",
@@ -112,7 +112,6 @@ const localSchema = {
     { "@type": "Neighborhood", name: "Vila Porto" },
   ],
   serviceType: "Personal Trainer",
-  priceRange: "$$",
   // Mesma entidade que o LocalBusiness do layout, vista por uma região:
   // sameAs/hasMap apontam para o Perfil da Empresa quando a URL existe.
   parentOrganization: { "@id": `${SITE_URL}/#localbusiness` },
@@ -145,10 +144,10 @@ export default function PersonalTrainerBarueri() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal Trainer em Barueri que entrega resultado — não apenas presença.
+            Personal trainer em Barueri: o treino começa na primeira aula. O trabalho é acompanhar o que vem depois.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Barueri concentra alguns dos profissionais e famílias mais exigentes da Grande São Paulo. Pessoas que pesquisam antes de decidir, que não abrem mão de qualidade e que querem entender o que estão fazendo — não apenas seguir ordens. Se esse é você, provavelmente vamos nos entender bem.
+            Montar um treino é rápido. Difícil é o que vem depois: a semana em que você faltou, a carga que parou de subir, o exercício que incomoda o joelho, a rotina que mudou. É aí que eu entro: acompanho a execução, vejo como seu corpo responde e ajusto junto com você, na academia, no condomínio ou em casa.
           </p>
           <a
             href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="personal-trainer-barueri:topo"
@@ -238,12 +237,12 @@ export default function PersonalTrainerBarueri() {
                 text: "Durante a sessão, minha atenção é inteiramente sua. Observo execução, monitoro carga, ajusto posicionamento e corrijo padrões antes que erros virem hábito. Esse nível de atenção é o que a maioria das pessoas nunca teve — e é exatamente o que faz a diferença.",
               },
               {
-                title: "Evolução documentada",
-                text: "Registro a progressão em cada sessão: cargas, repetições, medidas, percepção de esforço. Isso permite decisões baseadas em dados, não em suposição — e ajustes no momento certo, antes que o progresso desacelere.",
+                title: "Registrar para decidir",
+                text: "Cargas, repetições e como você respondeu ficam registrados. Quando a carga trava por duas semanas, isso aparece — e a estratégia muda antes de você desanimar.",
               },
               {
-                title: "Reavaliações mensais",
-                text: "Todo mês, revejo o protocolo com base nos dados coletados. O que funcionou é mantido e aprofundado. O que pode ser melhorado é ajustado. O objetivo é garantir progressão contínua — não manutenção indefinida do mesmo nível.",
+                title: "Revisões periódicas",
+                text: "De tempos em tempos, a gente olha o que foi registrado: o que funcionou continua, o que não encaixou sai. Se sua rotina mudou, o treino muda junto.",
               },
             ].map((item, i) => (
               <div key={i} className="border-l-2 border-white/20 pl-6">
@@ -339,7 +338,7 @@ export default function PersonalTrainerBarueri() {
             {[
               { obj: "Em domicílio", desc: "Levo o treino até você. Com o espaço e o equipamento certos — muitas vezes menos do que se imagina — dá para construir força, mobilidade e condicionamento em casa, sem deslocamento." },
               { obj: "No seu condomínio", desc: "Muitos condomínios de Barueri têm espaço fitness bem equipado. Treinar ali elimina a principal barreira da constância: o trajeto até a academia." },
-              { obj: "Em academias da cidade", desc: "Acompanhamento presencial em academias de Barueri, do Centro à região de Alphaville e Tamboré, conforme a estrutura que seu objetivo exige." },
+              { obj: "Na Arena 18 ou em outra academia", desc: "Atendimento presencial na Arena 18. Em outras academias da região, depende das regras do local para personal externo e de combinação prévia." },
               { obj: "Consultoria online", desc: "Para quem viaja ou tem horários imprevisíveis: protocolo individualizado, vídeos de execução e ajustes periódicos, com a mesma lógica do presencial." },
             ].map((item, i) => (
               <div key={i} className="border border-white/10 p-5">
@@ -414,7 +413,7 @@ export default function PersonalTrainerBarueri() {
           <h3 className="text-white font-semibold text-xl mt-10 mb-4">Academias de Barueri onde posso te acompanhar</h3>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light">
             <p>
-              Se você prefere treinar em academia, acompanho alunos nas principais unidades da cidade. Já analisei em detalhe a{" "}
+              Se você prefere treinar em academia, o atendimento presencial confirmado é na Arena 18; em outras academias, depende das regras do local para personal externo. Para quem está escolhendo onde treinar, preparei guias informativos da{" "}
               <Link href="/blog/smart-fit-barueri" className="underline hover:text-white transition-colors">
                 Smart Fit Barueri
               </Link>
@@ -430,7 +429,7 @@ export default function PersonalTrainerBarueri() {
               <Link href="/blog/redfit-barueri" className="underline hover:text-white transition-colors">
                 RedFit Barueri
               </Link>{" "}
-              — estrutura, equipamentos e para qual perfil de treino cada uma funciona melhor. Se você já é aluno de alguma delas, o protocolo é montado em cima do equipamento que a unidade oferece; se ainda vai escolher, ajudo a decidir com base no seu objetivo e na sua rotina.
+              — estrutura, equipamentos e para qual perfil de treino cada uma funciona melhor. Se você já treina em alguma delas, me conta qual é e verificamos juntos a possibilidade de atendimento.
             </p>
           </div>
         </div>
@@ -481,7 +480,7 @@ export default function PersonalTrainerBarueri() {
           </h2>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light">
             <p>
-              Boa parte das pessoas que me procuram em Barueri chega com alguma queixa: dor lombar, incômodo no joelho, ombro que trava, postura desgastada por anos de escritório e trânsito. Muitas já ouviram que deveriam "parar de treinar" — quando, na maioria dos casos, o caminho é o oposto: treinar certo.
+              Boa parte das pessoas que me procuram em Barueri chega com alguma queixa: dor lombar, incômodo no joelho, ombro que trava, postura desgastada por anos de escritório e trânsito. Muitas já ouviram que deveriam &ldquo;parar de treinar&rdquo; — quando, na maioria dos casos, o caminho é o oposto: treinar certo.
             </p>
             <p>
               Fiz cursos voltados especificamente para o treinamento de pessoas com dores e limitações musculoesqueléticas. E, mais do que isso, vivi na pele dores comuns ao longo da minha própria trajetória de treinos — o que aumenta minha compreensão real das dificuldades de quem chega nessa condição.
@@ -594,7 +593,7 @@ export default function PersonalTrainerBarueri() {
             Vamos conversar sobre o que você quer alcançar?
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            A primeira conversa não gera nenhum compromisso. Me conta seu objetivo, sua rotina e onde está agora — e eu te digo honestamente se posso ajudar e como.
+            Antes, uma coisa: não se compare com ninguém. Cada pessoa tem a própria genética, a própria rotina e a própria história, com altos e baixos. O que importa é encontrar um jeito de treinar que você consiga seguir pelo resto da vida, com aderência e progressão. A primeira conversa não gera compromisso: me conta seu objetivo, sua rotina e onde está agora, e eu te digo honestamente se posso ajudar e como.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
