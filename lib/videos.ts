@@ -59,6 +59,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
       { href: "/blog/mounjaro-faz-perder-musculos", nome: "Mounjaro faz perder músculos?" },
       { href: "/blog/musculacao-durante-uso-de-mounjaro", nome: "Musculação durante o uso de Mounjaro" },
     ],
+    publicadoEm: "2026-10-01",
   },
   {
     id: "9X968Kqa2-Y",
