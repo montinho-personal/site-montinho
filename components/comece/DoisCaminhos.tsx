@@ -74,11 +74,11 @@ export default function DoisCaminhos({ variante, placement }: { variante: "home"
       <div className={variante === "home" ? "max-w-5xl mx-auto px-4 sm:px-6 lg:px-8" : ""}>
         {variante === "home" && <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#BA9E50] mb-3">Comece aqui · grátis</p>}
         <h2 id={`caminhos-${placement}`} className={`text-white font-bold leading-tight ${variante === "home" ? "text-3xl sm:text-4xl mb-3" : "text-xl sm:text-2xl mb-1"}`} style={h}>
-          {variante === "home" ? "Ainda não é hora de contratar? Siga um caminho pronto." : "Siga um caminho pronto em vez de escolher sozinho"}
+          {variante === "home" ? "Ainda não é hora de começar comigo? Siga um caminho pronto." : "Siga um caminho pronto em vez de escolher sozinho"}
         </h2>
         <p className={`text-gray-300 leading-relaxed ${variante === "home" ? "text-lg max-w-2xl mb-8" : "text-sm mb-4"}`}>
           {variante === "home"
-            ? "Dois caminhos gratuitos, do zero ao seu plano: cada ferramenta responde uma pergunta e passa seus números para a próxima. É o mesmo raciocínio que uso com meus alunos."
+            ? "Dois caminhos gratuitos, do zero ao seu plano: cada ferramenta responde uma pergunta e passa seus números para a próxima. As ferramentas te dão os números. Quando quiser transformar isso em um plano para a sua rotina, eu te ajudo."
             : "Do zero ao seu plano, passo a passo. Seus números passam de uma ferramenta para a outra — sem redigitar nada."}
         </p>
         <div className="grid gap-3 sm:gap-4 md:grid-cols-2">

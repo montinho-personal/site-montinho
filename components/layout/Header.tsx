@@ -275,7 +275,7 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
               className="mt-4 inline-flex items-center justify-center gap-2 bg-white text-black px-5 py-3 text-sm font-semibold tracking-wide hover:bg-gray-100 transition-colors duration-200"
             >
-              Falar no WhatsApp
+              Falar com o Montinho
             </a>
           </nav>
         </div>

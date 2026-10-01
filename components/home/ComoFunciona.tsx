@@ -9,21 +9,21 @@ const steps = [
   },
   {
     number: "02",
-    title: "Planejamento Personalizado",
+    title: "Estratégia Individual",
     description:
-      "Com base na sua realidade, crio um plano completo: treino, orientação nutricional e estratégias práticas que cabem na sua vida.",
+      "Com base na sua rotina, no seu histórico e no seu objetivo, monto o treino e o ponto de partida. Tudo organizado no aplicativo, com vídeos de execução de cada exercício.",
   },
   {
     number: "03",
-    title: "Acompanhamento Contínuo",
+    title: "Ajustes na Prática",
     description:
-      "Não desapareço depois que monto o plano. Estou presente, ajusto o que for necessário e te apoio em cada desafio do processo.",
+      "Não desapareço depois que monto o treino. Sua rotina mudou, seu desempenho caiu ou você está evoluindo mais rápido que o previsto: eu vejo isso e ajusto o treino com você.",
   },
   {
     number: "04",
-    title: "Evolução Real",
+    title: "Evolução que Continua",
     description:
-      "Resultados concretos e duradouros. Uma nova relação com seu corpo, mais energia, autoestima e saúde para anos à frente.",
+      "O treino evolui junto com você: mais força, mais disposição e um corpo que muda porque a rotina se manteve, e não porque durou 30 dias.",
   },
 ];
 
@@ -36,8 +36,8 @@ export default function ComoFunciona() {
           <div>
             <SectionTitle
               eyebrow="Como funciona"
-              title="Do primeiro contato à transformação real"
-              subtitle="Um processo estruturado, personalizado e com acompanhamento humano em cada etapa."
+              title="Do primeiro contato a uma rotina que você consegue manter"
+              subtitle="Cada etapa tem alguém olhando para o seu caso, e não só a primeira."
               align="left"
             />
           </div>

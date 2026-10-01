@@ -58,7 +58,7 @@ export default function MinhaHistoriaPreview() {
                 className="text-white text-lg italic leading-relaxed"
                 style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
-                "Resultados reais. Sem fórmulas mágicas."
+                &ldquo;Eu sei que entre querer mudar e conseguir existe um caminho. Hoje eu faço esse caminho junto com os meus alunos.&rdquo;
               </p>
             </blockquote>
 

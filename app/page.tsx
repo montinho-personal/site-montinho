@@ -22,7 +22,7 @@ const faqSchema = {
       name: "O que é um personal trainer online?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Um personal trainer online cria seu programa de treino personalizado, acompanha sua evolução e ajusta o plano periodicamente — tudo à distância. Você treina na academia, em casa ou onde preferir, com o mesmo nível de personalização do presencial.",
+        text: "Um personal trainer online cria seu programa de treino personalizado e acompanha sua evolução à distância. Se a carga parou de subir, se um exercício não encaixou ou se a sua rotina mudou, ele ajusta o plano. Você treina na academia, em casa ou onde preferir, com o mesmo nível de personalização do presencial.",
       },
     },
     {

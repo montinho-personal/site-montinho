@@ -36,8 +36,8 @@ export default function Resultados() {
         <div className="text-center mb-12">
           <SectionTitle
             eyebrow="Resultados"
-            title="Transformações reais de pessoas reais"
-            subtitle="Não são casos isolados. São histórias de pessoas que decidiram mudar e foram acompanhadas de perto nesse processo."
+            title="Pessoas reais, processos reais"
+            subtitle="Cada resultado aqui tem por trás treino, constância, ajustes e acompanhamento. Não atalhos."
             accent
           />
         </div>
