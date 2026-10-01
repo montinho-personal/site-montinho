@@ -43,12 +43,12 @@ const LP_MESSAGE = MSG.hero;
 export const metadata: Metadata = {
   title: "Consultoria Online de Treino Personalizado com Personal Trainer",
   description:
-    "Personal trainer online: como funciona a consultoria de treino personalizado, com vídeos de execução, ajustes mensais e suporte no WhatsApp. Para todo o Brasil.",
+    "Personal trainer online: como funciona a consultoria de treino personalizado, com vídeos de execução, ajustes conforme a evolução e suporte no WhatsApp. Para todo o Brasil.",
   alternates: { canonical: "https://www.montinhopersonal.com.br/consultoria-online" },
   openGraph: {
     title: "Consultoria Online de Treino | Montinho Personal",
     description:
-      "Treino online personalizado com acompanhamento real: vídeos, correções, ajustes mensais e suporte no WhatsApp. Para todo o Brasil.",
+      "Treino online personalizado com acompanhamento real: vídeos, correções, ajustes conforme a evolução e suporte no WhatsApp. Para todo o Brasil.",
     url: "https://www.montinhopersonal.com.br/consultoria-online",
     images: ["https://www.montinhopersonal.com.br/og-image.jpg"],
   },
@@ -145,7 +145,7 @@ const serviceSchema = {
   name: "Consultoria Online de Treino Personalizado",
   serviceType: "Consultoria online de musculação e emagrecimento",
   description:
-    "Consultoria online com treino personalizado, vídeos de execução, correções, ajustes mensais e suporte via WhatsApp, para emagrecimento, hipertrofia e condicionamento físico.",
+    "Consultoria online com treino personalizado, vídeos de execução, correções, ajustes conforme a evolução e suporte via WhatsApp, para emagrecimento, hipertrofia e condicionamento físico.",
   provider: { "@id": "https://www.montinhopersonal.com.br/#localbusiness" },
   areaServed: { "@type": "Country", name: "Brasil" },
   url: "https://www.montinhopersonal.com.br/consultoria-online",
@@ -378,7 +378,7 @@ export default function ConsultoriaOnlineLP() {
               Fica DEPOIS do CTA, não antes — quem já se convenceu clica no
               verde e nunca vê o link.
             */}
-            <Cta em="prova" label="Quero um plano assim para mim" />
+            <Cta em="prova" label="Quero entender como seria comigo" />
             <PonteInterna
               href="/resultados"
               evento="consultoria_resultados_click"
@@ -519,8 +519,8 @@ export default function ConsultoriaOnlineLP() {
                 limitações — e um método refinado e validado na prática, aluno a aluno.
               </p>
               <p className="text-[#BA9E50] font-semibold italic mb-8">
-                &ldquo;Quem só estudou o caminho te explica o mapa. Quem percorreu, te
-                guia pelos atalhos.&rdquo;
+                Eu sei como é recomeçar várias vezes. Por isso o meu trabalho é te
+                ajudar a não precisar recomeçar de novo.
               </p>
               <Cta em="historia" label="Quero esse acompanhamento comigo" />
               <PonteInterna
@@ -561,7 +561,7 @@ export default function ConsultoriaOnlineLP() {
               </div>
             </div>
             <div className="mt-10">
-              <Cta em="garantia" label="Quero a Consultoria Montinho" />
+              <Cta em="garantia" label="Conversar com o Montinho" />
             </div>
           </div>
         </section>
