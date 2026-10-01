@@ -64,7 +64,7 @@ export default function MinhaHistoria() {
             Eu já estive do outro lado.
           </h1>
           <p className="text-lg text-gray-300 leading-relaxed">
-            E sei exatamente o que você está sentindo agora.
+            Passei anos tentando mudar meu corpo. Foi esse caminho que me ensinou a trabalhar do jeito que eu trabalho hoje.
           </p>
         </div>
       </section>
@@ -143,8 +143,9 @@ export default function MinhaHistoria() {
                 className="text-white text-xl italic leading-relaxed"
                 style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
-                "Cresci acreditando que o problema era eu. Levei anos para
-                entender que o problema era a abordagem."
+                &ldquo;Durante muito tempo achei que me faltava força de vontade.
+                Levei anos para entender que mudar o corpo pedia mais do que
+                tentar mais uma vez.&rdquo;
               </p>
             </div>
 
@@ -153,11 +154,11 @@ export default function MinhaHistoria() {
                 className="text-2xl sm:text-3xl font-bold text-white mb-5"
                 style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
-                O efeito sanfona que me destruía
+                O efeito sanfona
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  A adolescência foi marcada pelo ciclo mais cruel que existe: a
+                  A adolescência foi marcada por um ciclo que se repetiu por anos: a
                   dieta da moda. Eu embarcava em cada promessa de resultado
                   rápido que aparecia. Passava semanas sofrendo, restringindo,
                   vendo o número na balança cair — e em seguida, recuperava tudo
@@ -165,13 +166,15 @@ export default function MinhaHistoria() {
                 </p>
                 <p>
                   E sempre achava que era culpa minha. Que havia falhado. Que
-                  não tinha força de vontade suficiente. Essa narrativa me
-                  acompanhou por anos, destruindo minha autoestima e minha
-                  relação com a alimentação e com o meu próprio corpo.
+                  não tinha força de vontade suficiente. Essa ideia me
+                  acompanhou por anos e pesou na minha autoestima e na minha
+                  relação com a comida e com o meu corpo.
                 </p>
                 <p>
-                  O efeito sanfona não era um sinal de fraqueza. Era biologia.
-                  Mas eu não sabia disso ainda.
+                  Na época eu interpretava cada reganho como falta de força de
+                  vontade. Só depois fui entender que havia muito mais
+                  acontecendo: a estratégia, a rotina, o treino, a alimentação e
+                  a própria resposta do corpo.
                 </p>
               </div>
             </section>
@@ -209,17 +212,17 @@ export default function MinhaHistoria() {
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Chegou um momento — eu tinha uns 29 anos — que algo quebrou
-                  em mim. Não de forma dramática, mas de forma definitiva. Eu
-                  estava cansado de tentar e falhar. Cansado de me odiar. Cansado
-                  de ser o meu próprio inimigo.
+                  Chegou um momento, por volta dos 29 anos, em que decidi parar
+                  de repetir o mesmo ciclo. Eu estava cansado de tentar, falhar e
+                  começar tudo de novo do zero.
                 </p>
                 <p>
                   Decidi que, desta vez, eu ia entender de verdade. Fui estudar.
                   Li tudo que encontrei sobre fisiologia do exercício, nutrição
                   esportiva, metabolismo. Fiz cursos. Conversei com profissionais.
-                  E fui aplicando tudo isso em mim mesmo — não como cobaio, mas
-                  como alguém que finalmente estava recebendo as informações certas.
+                  Estudar me deu direção. Mas o que mudou o jogo foi aplicar
+                  aquilo na minha rotina real, observar como meu corpo respondia
+                  e continuar ajustando ao longo do caminho.
                 </p>
                 <p>
                   E as peças começaram a se encaixar.
@@ -254,7 +257,7 @@ export default function MinhaHistoria() {
                   >
                     100+
                   </p>
-                  <p className="text-gray-300 text-sm">alunos transformados</p>
+                  <p className="text-gray-300 text-sm">alunos acompanhados</p>
                 </div>
               </div>
             </div>
@@ -268,20 +271,21 @@ export default function MinhaHistoria() {
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Nos 12 meses seguintes, eu transformei meu corpo de uma forma
-                  que nunca tinha conseguido antes. Não foi rápido. Não foi fácil.
+                  A partir daí, transformei meu corpo de uma forma que nunca
+                  tinha conseguido antes. Não foi rápido. Não foi fácil.
                   Mas foi sustentável — e isso fez toda a diferença.
                 </p>
                 <p>
-                  Perdi mais de 40kg de gordura. Ganhei músculo. Mas mais do que
-                  a mudança física, o que aconteceu dentro de mim foi mais
-                  profundo: aprendi a respeitar meu corpo, a entender seus sinais,
-                  a me alimentar sem culpa e a treinar com inteligência.
+                  Perdi mais de 40 kg e ganhei músculo. Uma das coisas mais
+                  importantes que aprendi foi que um plano só tem valor quando
+                  consegue funcionar também fora do papel. Aprendi a ouvir os
+                  sinais do meu corpo, a me alimentar sem culpa e a treinar com
+                  intenção.
                 </p>
                 <p>
-                  Olhei para trás e pensei: quantas outras pessoas estão passando
-                  pelo que eu passei? Quantas estão se culpando por algo que não
-                  é culpa delas, mas de uma abordagem errada?
+                  Foi olhando para trás que comecei a perceber quantas pessoas
+                  também sabem que precisam mudar, tentam de verdade, mas têm
+                  dificuldade de transformar isso em algo que consigam sustentar.
                 </p>
               </div>
             </section>
@@ -329,10 +333,12 @@ export default function MinhaHistoria() {
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Comecei a ajudar amigos e familiares. E vi o mesmo padrão se
-                  repetir: pessoas inteligentes, esforçadas, cheias de boa
-                  vontade — mas sem as informações corretas e sem alguém
-                  acompanhando de perto.
+                  Comecei a ajudar amigos e familiares e vi o mesmo padrão se
+                  repetir: pessoas inteligentes e esforçadas, que já sabiam boa
+                  parte do que deveriam fazer. Foi aí que percebi que, muitas
+                  vezes, informação não era o único problema. Faltava conseguir
+                  transformar aquilo em rotina — e ter alguém olhando o que
+                  acontecia depois.
                 </p>
                 <p>
                   Estudei, me formei e aprofundei meus conhecimentos em tudo o
@@ -341,10 +347,13 @@ export default function MinhaHistoria() {
                   comprova daquilo que é apenas mito, modismo ou promessa vazia.
                 </p>
                 <p>
-                  Hoje meu trabalho vai muito além de passar exercícios. Estou do
-                  lado das pessoas que querem mudar. Entendo o peso emocional que
-                  isso carrega. Sei o que é se olhar no espelho e não se
-                  reconhecer. E sei o que é finalmente chegar do outro lado.
+                  Hoje meu trabalho vai muito além de passar exercícios. Montar o
+                  treino é o começo; o que vem depois é que faz diferença. Quando
+                  a sua rotina muda, a gente reorganiza. Quando a carga para de
+                  subir, a gente investiga por quê. Quando um exercício não
+                  encaixa, a gente adapta. E quando você perde uma semana, o plano
+                  não acabou: a gente retoma. Foi vivendo esse caminho que eu
+                  entendi por que acompanhar o que acontece depois é tão importante.
                 </p>
               </div>
             </section>
@@ -354,8 +363,8 @@ export default function MinhaHistoria() {
                 className="text-white text-xl italic leading-relaxed"
                 style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
-                "Não é sobre ter o corpo perfeito. É sobre ter um corpo que
-                respeita, que tem energia, que te permite viver plenamente."
+                &ldquo;Minha história não é o motivo para você acreditar que vai
+                conseguir. É o motivo de eu trabalhar do jeito que trabalho hoje.&rdquo;
               </p>
             </div>
 
@@ -368,19 +377,23 @@ export default function MinhaHistoria() {
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Não sou apenas alguém com formação acadêmica. Sou alguém que
-                  viveu o problema. Que sabe como é acordar de manhã sem querer
-                  se olhar no espelho. Que entende o ciclo de culpa, vergonha e
-                  frustração.
+                  Ter emagrecido não me faz, sozinho, um bom treinador. O que
+                  sustenta o meu trabalho é a soma da minha formação acadêmica,
+                  de mais de 20 anos de musculação, de cursos em treinamento e
+                  de anos acompanhando alunos com objetivos, rotinas e corpos
+                  diferentes.
                 </p>
                 <p>
-                  E justamente por isso, posso te ajudar de um lugar que vai além
-                  do técnico. Porque entendo o humano por trás do processo.
+                  A minha história entra em outro lugar: ela me deixou atento ao
+                  que acontece entre saber o que fazer e conseguir fazer. Eu sei
+                  como é acordar sem querer se olhar no espelho, e conheço o ciclo
+                  de culpa e frustração.
                 </p>
                 <p>
-                  Se você está cansado de tentar e não conseguir, não é porque
-                  você é fraco. É porque ninguém te mostrou o caminho certo ainda.
-                  E é exatamente para isso que estou aqui.
+                  Por isso, quando um aluno some uma semana, eu não tiro uma
+                  conclusão automática. Primeiro quero entender o que aconteceu.
+                  Às vezes o treino precisa mudar. Às vezes a rotina mudou. E às
+                  vezes a pessoa só precisa retomar.
                 </p>
                 <p>
                   Quem treina comigo já ouviu a palavra:{" "}
@@ -389,15 +402,14 @@ export default function MinhaHistoria() {
                   fim da série, a repetição que você jurava não ter. Não é segredo,
                   e faço questão de dizer isso: segredo é o que alguém esconde,
                   chalalá é o que você acrescenta de propósito. O básico bem feito
-                  já leva você longe. O chalalá é o que faz o caminho ser seu.
+                  já leva você longe. O chalalá é o detalhe que faz o treino render de verdade.
                 </p>
               </div>
             </section>
 
-            {/* Fecho da história. A frase só aparece aqui depois de o leitor
-                ter visto os 40 kg, a recaída e o recomeço — antes disso ela
-                seria slogan; depois, é a conclusão de quem viveu o processo.
-                A condição vem sempre colada: sem ela, vira promessa. */}
+            {/* Fecho da história. O bordão "é impossível dar errado" aparece
+                UMA vez, enquadrado como bordão e com a condição colada — nunca
+                como garantia de prazo, peso ou resultado. */}
             <section>
               <h2
                 className="text-2xl sm:text-3xl font-bold text-white mb-5"
@@ -407,35 +419,32 @@ export default function MinhaHistoria() {
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Que resultado não é sorte. Quando existe uma estratégia feita
-                  para a pessoa que você é hoje — e não para uma rotina imaginária
-                  que você não sustenta — e você executa essa estratégia por tempo
-                  suficiente, o resultado deixa de ser aposta.
+                  Que um bom plano precisa caber na vida real, não numa semana
+                  imaginária que você não consegue sustentar. Plano bonito no
+                  papel e impossível na rotina não serve para ninguém.
                 </p>
                 <p>
-                  Seguir o plano não é viver perfeito. Se tem refeição livre
-                  planejada, ela faz parte. Se tem descanso, ele faz parte. Se num
-                  dia o treino precisa ser mais curto, isso também pode fazer
-                  parte. Treino, comida, cardio, sono e rotina precisam conversar
-                  entre si — e o plano vai mudando junto com você.
+                  Que seguir o plano não é viver perfeito. Se num dia o treino
+                  precisa ser mais curto, ele pode ser mais curto. Se você saiu do
+                  caminho, isso não significa abandonar tudo. O que mais pesa não é
+                  errar: é quanto tempo você fica fora antes de voltar. Por isso eu
+                  falo tanto em recomeçar rápido.
                 </p>
                 <p>
-                  Às vezes o corpo responde diferente do que a gente imaginava.
-                  Quando isso acontece, não se abandona o processo: usa-se a
-                  resposta para ajustar. Mexe no cardio, revê as calorias, muda o
-                  volume do treino, cuida melhor da recuperação. É por isso que eu
-                  falo, e falo sério:{" "}
+                  Que o corpo às vezes responde diferente do que a gente imaginava,
+                  e tudo bem. A resposta é informação: muda o volume, a carga, a
+                  frequência, o cardio ou a recuperação entre os treinos. O treino
+                  evolui junto com você.
+                </p>
+                <p>
+                  É daí que vem um bordão meu:{" "}
                   <strong className="text-white">
-                    é impossível dar errado quando você faz, por tempo suficiente,
-                    aquilo que precisa ser feito
-                  </strong>{" "}
-                  — dentro de uma estratégia que realmente cabe na sua vida.
-                </p>
-                <p>
-                  Repare no que essa frase não diz. Ela não promete um número na
-                  balança nem uma data. Ela diz que não vamos depender de
-                  esperança: a gente monta, executa, mede, aprende, ajusta e
-                  continua. O resultado a gente constrói.
+                    &ldquo;fazendo o que precisa ser feito, por tempo suficiente, é
+                    impossível dar errado&rdquo;
+                  </strong>
+                  . Não é uma garantia de prazo, peso ou resultado específico. É o
+                  meu jeito de lembrar que o caminho não precisa ser perfeito: ele
+                  precisa continuar sendo ajustado e executado.
                 </p>
               </div>
             </section>
@@ -447,12 +456,11 @@ export default function MinhaHistoria() {
               className="text-white text-xl sm:text-2xl italic leading-relaxed mb-8 max-w-2xl mx-auto"
               style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
             >
-              &ldquo;Seu shape merece um chalalá. E fazendo o que precisa ser
-              feito, é impossível dar errado.&rdquo;
+              &ldquo;Seu shape merece um chalalá.&rdquo;
             </p>
             <p className="text-gray-300 text-lg mb-6">
-              Se você se identificou com alguma parte dessa história, quero
-              conversar com você.
+              Se alguma parte dessa história parece familiar, me conta onde você
+              está hoje. A gente conversa e vê como eu posso te acompanhar.
             </p>
             <a
               href={getWhatsAppUrl()}
@@ -463,7 +471,7 @@ export default function MinhaHistoria() {
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
               </svg>
-              Quero Conversar
+              Falar com o Montinho
             </a>
           </div>
         </div>
