@@ -90,7 +90,7 @@ export default function Depoimentos() {
           <SectionTitle
             eyebrow="Depoimentos"
             title="O que dizem meus alunos"
-            subtitle="Histórias reais de pessoas que decidiram investir em si mesmas."
+            subtitle="Avaliações reais no Google, de quem viveu o dia a dia do treino comigo."
           />
           {fromGoogle && dados.placeRating && (
             <p className="mt-4 text-gray-300 text-sm">

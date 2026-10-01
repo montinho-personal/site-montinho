@@ -25,7 +25,7 @@ export default function DiagnosticoCTA() {
           href="/diagnostico"
           className="inline-flex items-center justify-center border border-white text-white px-8 py-3.5 text-sm font-semibold tracking-wide hover:bg-white hover:text-black transition-all duration-200"
         >
-          Fazer meu Diagnóstico Montinho
+          Fazer meu diagnóstico grátis
         </Link>
       </div>
     </section>

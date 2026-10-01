@@ -33,8 +33,8 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed max-w-xs">
-              Transformação real do corpo através de ciência, experiência prática
-              e acompanhamento humano próximo.
+              Personal trainer em Alphaville e online. Treino individualizado,
+              acompanhamento próximo e ajustes ao longo da sua evolução.
             </p>
           </div>
 

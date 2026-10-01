@@ -30,7 +30,7 @@ export default function OndeAtendo() {
         <SectionTitle
           eyebrow="Onde atendo"
           title="Presencial em Alphaville e região. Online em todo o Brasil."
-          subtitle="Treino no seu condomínio, na sua academia ou na minha. A primeira aula é experimental e gratuita."
+          subtitle="No presencial eu estou do seu lado em cada série, corrigindo a execução e decidindo a carga: no seu condomínio, na sua academia ou na minha. A primeira aula é experimental e gratuita."
         />
         <ul className="mt-12 grid gap-px bg-white/10 border border-white/10 sm:grid-cols-2 lg:grid-cols-5 list-none p-0 m-0">
           {REGIOES.map((r) => (

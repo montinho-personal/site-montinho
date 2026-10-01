@@ -139,3 +139,28 @@ enganoso e passa a ignorar o campo no site inteiro.
 
 Páginas em `app/` usam `lastModified: new Date()` no sitemap (muda a cada
 build), então esse sinal nelas é fraco; o que conta é o conteúdo novo.
+
+# Posicionamento: personal trainer que conduz, não que entrega ficha
+
+Desde 01/10/2026 a marca comunica: montar o treino é o começo;
+acompanhar o que acontece depois é o trabalho. Regras para toda copy:
+
+- **Ferramentas e simuladores:** a ferramenta entrega a informação
+  primeiro; depois, e só depois, vem a ponte humana ("esse número é um
+  ponto de partida… quer ajuda para transformar isso em um plano para
+  você?"). Nunca CTA agressivo antes do resultado.
+- **Continua sendo personal trainer.** Sem discurso de coach
+  motivacional ("melhor versão", "desbloqueie seu potencial"), sem
+  linguagem clínica, sem promessa de resultado. O diferencial é
+  acompanhar a execução, observar a resposta, ajustar e ajudar a
+  construir constância. O aluno também tem responsabilidade: é Montinho
+  + aluno trabalhando juntos, nunca "a culpa não é sua".
+- **Mostrar, não repetir.** Não espalhar "transformação",
+  "acompanhamento", "processo" e "estratégia" em todo bloco. Preferir
+  situações concretas — "você faltou", "a carga parou de subir", "um
+  exercício não encaixou", "sua rotina mudou", "seu desempenho caiu",
+  "você está evoluindo mais rápido" — e mostrar alguém percebendo e
+  decidindo.
+- **SEO primeiro, narrativa ao redor.** Não mexer em URL, slug, H1
+  estratégico, title/description sem mostrar ATUAL / PROPOSTA / MOTIVO.
+- **Página por página**, com aprovação do Montinho entre uma e outra.
