@@ -36,7 +36,7 @@ export const SITUACOES = [
   // Experimental
   "experimental_confirmar", "experimental_sem_registro", "experimental_no_show", "pos_experimental_proposta",
   // Proposta na mesa
-  "proposta_follow_up_1", "proposta_follow_up_2", "negociacao_parada",
+  "proposta_follow_up_1", "proposta_starter", "proposta_follow_up_2", "negociacao_parada",
   // Virou aluno
   "boas_vindas", "check_in_aluno", "pedido_indicacao",
   "renovacao_proxima", "renovacao_vencida", "renovacao_pacote", "reativacao_pausa_recente", "reativacao_pausado", "reativacao_antiga",
@@ -97,6 +97,15 @@ export const TEXTOS: Record<Situacao, string> = {
   // Depois da proposta: a dúvida certa é sobre COMO funciona, nunca sobre preço. O último toque devolve a decisão e facilita o "não".
   proposta_follow_up_1:
     "[[{saudacao}, ]]{nome}! Te mandei a proposta[[ de {servico}]][[ há {dias} dias]]. Sem pressa nenhuma pra decidir.\n\nFicou alguma dúvida sobre como funciona no dia a dia — frequência, ajustes, contato entre os treinos — que eu possa esclarecer?",
+  /*
+   * Starter: só consultoria online, no lugar do segundo toque depois da
+   * proposta (decisão do Montinho em 01/10/2026). Quem não fechou o plano
+   * cheio recebe uma porta de entrada menor. Não é promessa de parar: se não
+   * fechar, o caminho segue e o próximo toque é o follow-up 2 de sempre. Sem
+   * preço no texto — o valor vai junto, na conversa.
+   */
+  proposta_starter:
+    "[[{saudacao}, ]]{nome}! Pensei numa forma mais leve de você começar: montei uma opção Starter da consultoria online, pra você experimentar o acompanhamento sem assumir o plano completo agora.\n\nSe fizer sentido, te mando os detalhes por aqui. Quer ver?",
   /*
    * O link da história entra AQUI, e não antes, por dois motivos.
    *
