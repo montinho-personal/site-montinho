@@ -154,7 +154,7 @@ export default function MinhaHistoria() {
                 className="text-2xl sm:text-3xl font-bold text-white mb-5"
                 style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
-                O efeito sanfona
+                O efeito sanfona que me destruía
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
@@ -166,9 +166,9 @@ export default function MinhaHistoria() {
                 </p>
                 <p>
                   E sempre achava que era culpa minha. Que havia falhado. Que
-                  não tinha força de vontade suficiente. Essa ideia me
-                  acompanhou por anos e pesou na minha autoestima e na minha
-                  relação com a comida e com o meu corpo.
+                  não tinha força de vontade suficiente. Essa narrativa me
+                  acompanhou por anos, destruindo minha autoestima e minha
+                  relação com a alimentação e com o meu próprio corpo.
                 </p>
                 <p>
                   Na época eu interpretava cada reganho como falta de força de
@@ -212,9 +212,10 @@ export default function MinhaHistoria() {
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Chegou um momento, por volta dos 29 anos, em que decidi parar
-                  de repetir o mesmo ciclo. Eu estava cansado de tentar, falhar e
-                  começar tudo de novo do zero.
+                  Chegou um momento, por volta dos 29 anos, em que algo quebrou
+                  em mim. Não de forma dramática, mas de forma definitiva. Eu
+                  estava cansado de tentar e falhar. Cansado de me odiar. Cansado
+                  de ser o meu próprio inimigo.
                 </p>
                 <p>
                   Decidi que, desta vez, eu ia entender de verdade. Fui estudar.
@@ -271,8 +272,8 @@ export default function MinhaHistoria() {
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  A partir daí, transformei meu corpo de uma forma que nunca
-                  tinha conseguido antes. Não foi rápido. Não foi fácil.
+                  Nos 12 meses seguintes, eu transformei meu corpo de uma forma
+                  que nunca tinha conseguido antes. Não foi rápido. Não foi fácil.
                   Mas foi sustentável — e isso fez toda a diferença.
                 </p>
                 <p>
