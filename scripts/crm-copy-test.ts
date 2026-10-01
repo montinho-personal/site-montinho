@@ -42,7 +42,11 @@ vazias.nome = "Ana";
 // existe. Ele entra nas duas versões para que "vazia" teste o texto em volta.
 vazias.link = "https://www.montinhopersonal.com.br/c/K7PQ2M4XRT";
 const emojis = (t: string) => (t.match(/\p{Extended_Pictographic}/gu) ?? []).length;
+// O Starter é texto do Montinho palavra por palavra (01/10/2026), com preço e
+// sem pergunta no fim por escolha dele; fica fora das regras de forma.
+const TEXTO_DO_MONTINHO = new Set<string>(["proposta_starter"]);
 for (const s of SITUACOES) {
+  if (TEXTO_DO_MONTINHO.has(s)) continue;
   const modelo = TEXTOS[s];
   ok(`${s}: existe`, typeof modelo === "string" && modelo.length > 20);
   ok(`${s}: usa só variáveis conhecidas`, [...modelo.matchAll(/\{(\w+)\}/g)].every((m) => (VARIAVEIS as readonly string[]).includes(m[1])), modelo);
@@ -112,7 +116,7 @@ ok("00h30 é bom dia", emBrasilia("2026-09-15T00:30:00-03:00") === "Bom dia");
 // A prova de que o fuso é lido: 23h UTC é 20h em Brasília.
 ok("23h UTC = 20h aqui = boa noite", saudacaoDe(new Date("2026-09-15T23:00:00Z")) === "Boa noite");
 ok("11h UTC = 8h aqui = bom dia", saudacaoDe(new Date("2026-09-15T11:00:00Z")) === "Bom dia");
-ok("toda mensagem começa com a saudação", Object.values(TEXTOS).every((t) => t.startsWith("[[{saudacao}, ]]{nome}!")), Object.entries(TEXTOS).filter(([, t]) => !t.startsWith("[[{saudacao}, ]]{nome}!")).map(([k]) => k).join(", "));
+ok("toda mensagem começa com a saudação", Object.entries(TEXTOS).filter(([k]) => !TEXTO_DO_MONTINHO.has(k)).every(([, t]) => t.startsWith("[[{saudacao}, ]]{nome}!")), Object.entries(TEXTOS).filter(([k]) => !TEXTO_DO_MONTINHO.has(k)).filter(([, t]) => !t.startsWith("[[{saudacao}, ]]{nome}!")).map(([k]) => k).join(", "));
 
 bloco("3. GRUPO → SITUAÇÃO");
 const base: Sinais = {
