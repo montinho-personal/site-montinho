@@ -8,6 +8,7 @@ import FAQ from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import { ligacoesDoPerfil } from "@/lib/perfil-google";
 import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
+import VideoRecomecar from "@/components/video/VideoRecomecar";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer em Alphaville: Planos e Atendimento | Montinho" },
@@ -608,6 +609,7 @@ export default function PersonalTrainerAlphaville() {
 
 
       {/* FAQ */}
+      <VideoRecomecar />
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#BA9E50" }}>

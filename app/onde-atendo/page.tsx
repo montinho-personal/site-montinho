@@ -4,6 +4,7 @@ import { SITE_URL } from "@/lib/blog";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import IndiceRegiao from "@/components/regiao/IndiceRegiao";
 import { ONDE_ATENDO } from "@/lib/regiao";
+import VideoRecomecar from "@/components/video/VideoRecomecar";
 
 /**
  * Onde o Montinho atende.
@@ -100,6 +101,7 @@ export default function OndeAtendoPage() {
         </div>
       </section>
 
+      <VideoRecomecar />
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white mb-4" style={h}>
