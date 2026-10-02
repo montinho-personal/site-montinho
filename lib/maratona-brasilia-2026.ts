@@ -3,8 +3,8 @@ import type { BlogPost } from "./blog";
 /**
  * Maratona Monumental de Brasília 2026 (21 e 22/11). Só fato de fonte
  * oficial (maratonamonumentalbsb.com.br, Instagram oficial, Ticket Sports) ou
- * dois veículos. Horário do 5/10 km diverge entre fontes (17h x 18h): fica
- * sem hora até o regulamento. Preço de pacote de agência não é inscrição.
+ * dois veículos. Horário do 5/10 km (18h) e retirada do kit confirmados no
+ * regulamento oficial (Ticket Sports) em 02/10/2026. Preço de pacote de agência não é inscrição.
  */
 export const MARATONA_BRASILIA_2026_POSTS: BlogPost[] = [
   {
@@ -17,11 +17,12 @@ export const MARATONA_BRASILIA_2026_POSTS: BlogPost[] = [
       "21 e 22 de novembro na Esplanada dos Ministérios: horários de largada, distâncias, percurso, inscrição e o pace para cada meta.",
     category: "Corrida",
     date: "2026-09-29",
+    updatedAt: "2026-10-02",
     readTime: "6 min",
     author: "Montinho Personal Trainer",
     tags: ["Maratona de Brasília", "Maratona Monumental de Brasília", "corrida de rua", "maratona", "Mega Finisher"],
     content: `<img src="/blog-images/maratona-de-brasilia-2026-capa.webp" alt="Capa: Maratona Monumental de Brasília 2026 — 21 e 22 de novembro na Esplanada dos Ministérios" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p>Informações verificadas em 29 de setembro de 2026 nos canais oficiais da prova e na imprensa. Regulamento, kit e premiação completos ficam no site oficial; esta página é atualizada até a prova e recebe o resultado no dia 22.</p></blockquote>
+<blockquote><p>Informações verificadas em 2 de outubro de 2026 nos canais oficiais da prova e na imprensa. Regulamento, kit e premiação completos ficam no site oficial; esta página é atualizada até a prova e recebe o resultado no dia 22.</p></blockquote>
 
 <h2>Resumo da Maratona de Brasília 2026</h2>
 <ul>
@@ -39,10 +40,18 @@ export const MARATONA_BRASILIA_2026_POSTS: BlogPost[] = [
 <tbody>
 <tr><td>Domingo, 22/11</td><td>Maratona (42,195 km)</td><td><strong>5h</strong>, em pelotões</td></tr>
 <tr><td>Domingo, 22/11</td><td>Meia maratona (21,097 km)</td><td><strong>6h</strong>, em pelotões</td></tr>
-<tr><td>Sábado, 21/11</td><td>5 km e 10 km</td><td>fim de tarde — horário exato no regulamento</td></tr>
+<tr><td>Sábado, 21/11</td><td>5 km e 10 km</td><td><strong>18h</strong></td></tr>
 </tbody>
 </table>
 <p>A largada da maratona e da meia sai em pelotões escalonados nos primeiros minutos; o seu aparece no kit. Chegue cedo: com a largada às 5h, o deslocamento é de madrugada.</p>
+
+<h2>Retirada do kit</h2>
+<p>A retirada é na <strong>Expo Monumental, no Pátio Brasil Shopping</strong>:</p>
+<ul>
+<li><strong>19 e 20/11:</strong> das 9h às 19h;</li>
+<li><strong>21/11:</strong> das 9h às 14h.</li>
+</ul>
+<p>Não há entrega de kit depois desses horários nem no domingo, 22/11. Quem precisar retirar até as 17h do dia 21 deve preencher o formulário da organização até as 23h59 de 17/11.</p>
 
 <h2>Percurso da Maratona de Brasília 2026</h2>
 <p>A prova sai da Esplanada dos Ministérios e passa pelos cartões-postais da capital. O mapa de cada distância fica no site oficial. Com largada de madrugada, a maratona aproveita as horas mais frescas — mas quem corre mais de 4 horas termina com o sol já alto, e a hidratação conta.</p>
@@ -79,7 +88,8 @@ export const MARATONA_BRASILIA_2026_POSTS: BlogPost[] = [
 </ul>`,
     faq: [
       { question: "Quando é a Maratona de Brasília 2026?", answer: "A Maratona Monumental de Brasília 2026 é em 21 e 22 de novembro: 5 e 10 km no sábado, meia e maratona no domingo, com largada na Esplanada dos Ministérios." },
-      { question: "Qual o horário da largada da Maratona de Brasília?", answer: "No domingo, 22/11, a maratona larga às 5h e a meia às 6h, em pelotões escalonados. O horário exato do 5 e 10 km, no sábado, está no regulamento oficial." },
+      { question: "Onde retirar o kit da Maratona Monumental de Brasília?", answer: "Na Expo Monumental, no Pátio Brasil Shopping: 19 e 20/11 das 9h às 19h e 21/11 das 9h às 14h. Não há entrega de kit no domingo." },
+      { question: "Qual o horário da largada da Maratona de Brasília?", answer: "No domingo, 22/11, a maratona larga às 5h e a meia às 6h, em pelotões escalonados. O 5 e o 10 km largam no sábado, 21/11, às 18h." },
       { question: "Qual será o percurso da Maratona Monumental de Brasília em 2026?", answer: "A prova sai da Esplanada dos Ministérios e passa pelos cartões-postais da capital. O mapa de cada distância está no site oficial." },
       { question: "A Maratona de Brasília faz parte do Mega Finisher?", answer: "Sim. Segundo a organização, é a única prova do Brasil no circuito Mega Finisher." },
       { question: "Qual pace preciso para fazer a maratona em 4 horas?", answer: "5:41 por quilômetro em média, sobre os 42,195 km oficiais." },
