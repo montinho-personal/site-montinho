@@ -92618,11 +92618,36 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Você abre a geladeira sem estar com fome. Come rápido, escondido, e depois vem a culpa. Isso é fome emocional — e ela sabota mais dietas do que qualquer carboidrato. Aprenda a identificar os gatilhos e as estratégias práticas para retomar o controle.",
     category: "Emagrecimento",
     date: "2026-07-18",
-    updatedAt: "2026-07-19",
+    updatedAt: "2026-10-02",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["fome emocional", "comer emocional", "emagrecimento", "ansiedade e comida", "comportamento alimentar"],
     faq: [
+      {
+        question: "O que tira a ansiedade de comer toda hora?",
+        answer:
+          "Nenhum alimento ou chá tira a ansiedade sozinho. Ajudam: refeições com proteína e fibra, uma pausa antes de pegar a comida (água, 10 minutos, sair do ambiente), comer sem tela e cuidar do sono e do estresse. Se a ansiedade é intensa ou constante, procure um psicólogo ou médico.",
+      },
+      {
+        question: "Por que a ansiedade faz comer muito?",
+        answer:
+          "Comer alivia o desconforto por alguns minutos — o cérebro aprende esse atalho e passa a repeti-lo sempre que a ansiedade aparece. Alimentos doces e gordurosos reforçam ainda mais o hábito. Por isso a estratégia é trocar a resposta, não só o alimento.",
+      },
+      {
+        question: "Vontade de comer toda hora mesmo sem fome: o que pode ser?",
+        answer:
+          "Na maioria das vezes é hábito, tédio, estresse, sono ruim ou refeições que não saciam. Mais raramente pode ter causa de saúde (alterações hormonais, efeito de medicamento, gestação). Se vier com outros sintomas ou mudar de repente, vale consultar um médico.",
+      },
+      {
+        question: "Existe remédio para tirar a vontade de comer?",
+        answer:
+          "Existem medicamentos que reduzem o apetite, mas só com prescrição e acompanhamento médico, porque têm indicações e efeitos colaterais. Chás e suplementos vendidos como “inibidores de apetite” não têm efeito comprovado equivalente.",
+      },
+      {
+        question: "Como vencer a compulsão alimentar sozinha?",
+        answer:
+          "Estratégias de rotina ajudam, mas compulsão alimentar é um transtorno e o tratamento com psicólogo, nutricionista e às vezes médico faz muita diferença. Tentar sozinho com dietas restritivas costuma piorar o ciclo. Escrevi sobre isso no artigo de compulsão alimentar.",
+      },
       {
         question:
           "Como saber se minha fome é emocional ou física?",
@@ -92731,6 +92756,23 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h3>6. Planeje o prazer, não o proíba</h3>
 
 <p>Dieta que trata todo alimento gostoso como inimigo cria o cenário perfeito para o descontrole: quanto mais proibido, mais desejado — e quando a barreira cai, cai de uma vez. Funciona melhor incluir, de forma planejada, os alimentos que você gosta: uma sobremesa combinada no fim de semana, um lanche favorito dentro das calorias do dia. Comida prevista e comida em paz não alimenta o circuito da fome emocional; comida proibida e devorada com culpa, sim.</p>
+
+<h2>O que tira a ansiedade de comer toda hora?</h2>
+
+<p>É a pergunta mais buscada sobre o tema, e a resposta honesta é: <strong>nenhum alimento, chá ou atalho tira a ansiedade sozinho</strong>. O que funciona é uma combinação de três frentes:</p>
+
+<ul>
+<li><strong>Saciedade de verdade nas refeições.</strong> Proteína, fibra e volume no prato deixam menos espaço para a fome física se misturar com a emocional. Veja os <a href="/blog/alimentos-que-dao-saciedade">alimentos que dão saciedade</a>.</li>
+<li><strong>Uma pausa entre a vontade e a comida.</strong> Beber um copo de água, esperar 10 minutos, sair do ambiente. Sede e tédio costumam se passar por fome; a pausa separa uma coisa da outra.</li>
+<li><strong>Comer com atenção.</strong> Sem tela, sentado, devagar. Quem come prestando atenção percebe quando já foi o suficiente — e registra o que comeu.</li>
+<li><strong>Cuidar do que alimenta a ansiedade.</strong> Sono, estresse e rotina. Dormir mal aumenta a fome no dia seguinte; o exercício ajuda a regular o humor.</li>
+</ul>
+
+<p>E vale enxergar o tamanho real do comer “toda hora”: o <a href="/ferramentas/beliscometro">Beliscômetro</a> soma em 2 minutos os pequenos episódios do dia e mostra em que momentos eles se concentram.</p>
+
+<p><strong>Sobre remédio para tirar a vontade de comer:</strong> existem medicamentos que reduzem o apetite, mas eles têm indicação, contraindicação e efeitos colaterais — só com prescrição e acompanhamento médico. Chás e suplementos “que tiram a fome” não têm efeito comprovado que substitua isso.</p>
+
+<p><strong>Vontade de comer toda hora pode ser gravidez?</strong> Mudanças de apetite podem acontecer na gestação, mas não dá para concluir isso por esse sinal sozinho. Se houver chance, o caminho é o teste e o médico.</p>
 
 <h2>Quando é mais do que fome emocional</h2>
 
