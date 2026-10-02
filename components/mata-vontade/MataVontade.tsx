@@ -8,6 +8,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { ATALHOS, EIXOS, FAMILIAS, type Familia, type Temperatura } from "@/lib/mata-vontade/familias";
 import { INGREDIENTES, type Equip, type Objetivo } from "@/lib/mata-vontade/receitas";
 import { macrosDe } from "@/lib/mata-vontade/nutricao";
+import { FONTES } from "@/lib/mata-vontade/fontes";
 import { alergenosDe, alvoDe, interpretar, recomendar, type Resultado } from "@/lib/mata-vontade/motor";
 
 /**
@@ -414,6 +415,12 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
             <p className="text-white text-sm font-semibold mb-2">Como fazer</p>
             <ol className="list-decimal pl-5 space-y-1.5 text-sm text-gray-300">{rc.passos.map((p) => <li key={p}>{p}</li>)}</ol>
             {rc.dica && <p className="text-sm mt-3" style={{ color: OURO }}>Dica: <span className="text-gray-300">{rc.dica}</span></p>}
+            {FONTES[rc.id] && (
+              <a href={FONTES[rc.id].url} target="_blank" rel="noopener" className="inline-flex items-center min-h-[44px] mt-2 text-sm underline underline-offset-4 hover:text-white" style={{ color: OURO }}
+                onClick={() => trackEvent("mata_vontade_fonte", { receita: rc.id, portal: FONTES[rc.id].portal })}>
+                Veja uma versão parecida no {FONTES[rc.id].portal} →
+              </a>
+            )}
           </div>
           {alerg.length > 0 && <p className="text-xs text-gray-400">Contém: {alerg.join(", ").replace("gluten", "glúten")}. Não garantimos ausência de traços.</p>}
           <p className="text-xs text-gray-400">Receita em teste: proporções de partida, ainda em ajuste. Calorias e macros são estimativas por porção, sem os opcionais, calculadas com a Tabela TACO e rótulos; como referência de whey, uso a tabela de um concentrado com cerca de 80% de proteína (Growth). Variam com a marca e a quantidade.</p>
