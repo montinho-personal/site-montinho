@@ -463,7 +463,7 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
                 <span aria-hidden className="w-10 h-10 shrink-0 rounded-full flex items-center justify-center text-white text-lg" style={{ background: "#e62117" }}>▶</span>
                 <span className="text-sm leading-snug">
                   <span className="block text-white font-semibold">Veja alguém fazendo uma versão parecida</span>
-                  <span className="block text-gray-400">{FONTES[rc.id].portal} · YouTube</span>
+                  <span className="block text-gray-400">{FONTES[rc.id].portal === "YouTube" ? FONTES[rc.id].titulo : `${FONTES[rc.id].portal} · YouTube`}</span>
                 </span>
               </a>
             )}
