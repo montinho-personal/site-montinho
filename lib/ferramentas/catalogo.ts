@@ -163,6 +163,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
 
   /* ── Alimentação e nutrientes ─────────────────────────────────────── */
   {
+    id: "beliscometro",
+    href: "/ferramentas/beliscometro",
+    nome: "Beliscômetro",
+    resultado: "Descubra quanto seus beliscos somam no dia e o que a balança não conta depois do fim de semana.",
+    acao: "Descobrir meus beliscos",
+    tempo: "2 minutos",
+    categoria: "alimentacao",
+    icone: "pizza",
+    tags: ["beliscar", "beliscar engorda", "calorias dos beliscos", "calorias escondidas", "como parar de beliscar", "engordei no fim de semana", "balança subiu", "petiscos calorias", "comer toda hora"],
+    selo: "novo",
+  },
+  {
     id: "mata-a-vontade",
     href: "/ferramentas/mata-a-vontade",
     nome: "Montinho Mata a Vontade",
