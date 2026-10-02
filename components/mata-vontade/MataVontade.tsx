@@ -458,9 +458,13 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
             <ol className="list-decimal pl-5 space-y-1.5 text-sm text-gray-300">{rc.passos.map((p) => <li key={p}>{p}</li>)}</ol>
             {rc.dica && <p className="text-sm mt-3" style={{ color: OURO }}>Dica: <span className="text-gray-300">{rc.dica}</span></p>}
             {FONTES[rc.id] && (
-              <a href={FONTES[rc.id].url} target="_blank" rel="noopener" className="inline-flex items-center min-h-[44px] mt-2 text-sm underline underline-offset-4 hover:text-white" style={{ color: OURO }}
+              <a href={FONTES[rc.id].url} target="_blank" rel="noopener" className="mt-3 flex items-center gap-3 border border-white/15 p-3 hover:border-white/40 min-h-[56px]"
                 onClick={() => trackEvent("mata_vontade_fonte", { receita: rc.id, portal: FONTES[rc.id].portal })}>
-                Veja uma versão parecida no {FONTES[rc.id].portal} →
+                <span aria-hidden className="w-10 h-10 shrink-0 rounded-full flex items-center justify-center text-white text-lg" style={{ background: "#e62117" }}>▶</span>
+                <span className="text-sm leading-snug">
+                  <span className="block text-white font-semibold">Veja alguém fazendo uma versão parecida</span>
+                  <span className="block text-gray-400">{FONTES[rc.id].portal === "YouTube" ? FONTES[rc.id].titulo : `${FONTES[rc.id].portal} · YouTube`}</span>
+                </span>
               </a>
             )}
           </div>

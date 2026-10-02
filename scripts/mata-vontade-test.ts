@@ -88,7 +88,7 @@ ok(baixa.length === 0, "porção única tem 10 g+ de proteína", baixa.map((r) =
 
 // Fontes: só receitas que existem, só https de portal conhecido
 ok(Object.keys(FONTES).every((id) => RECEITAS.some((r) => r.id === id)), "fonte aponta para receita existente");
-ok(Object.values(FONTES).every((f) => /^https:\/\/(www\.)?(tudogostoso|receiteria|receitasnestle|panelinha|cybercook)\.com\.br\//.test(f.url)), "fonte é https de portal conhecido");
+ok(Object.values(FONTES).every((f) => /^https:\/\/(www\.)?(youtube\.com\/(watch\?v=|shorts\/)|youtu\.be\/)[\w-]{6,}/.test(f.url)), "fonte é vídeo do YouTube");
 
 // Com link de portal primeiro
 const comFonte = (r: { id: string }) => !!FONTES[r.id];
