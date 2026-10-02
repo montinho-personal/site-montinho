@@ -221,6 +221,11 @@ export type AnalyticsEvent =
    */
   | "tdee_calculator_view"
   | "tdee_calculator_complete"
+  /** Modo voz (teste na TMB/TDEE): só uso, nunca o que foi dito. */
+  | "voz_inicio"
+  | "voz_passo"
+  | "voz_fim"
+  | "voz_erro"
   | "tdee_activity_change"
   | "tdee_methodology_open"
   | "tdee_gain_open"
