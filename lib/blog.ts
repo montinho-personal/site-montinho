@@ -16485,7 +16485,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "O mito de que comer carboidrato à noite engorda persiste há décadas. A ciência conta uma história diferente — e mais simples. Entenda o que realmente determina o ganho de gordura.",
     category: "Saúde",
     date: "2026-06-26",
-    updatedAt: "2026-07-30",
+    updatedAt: "2026-10-02",
     readTime: "8 min",
     author: "Montinho Personal Trainer",
     tags: ["carboidrato à noite", "mito nutricional", "emagrecimento", "balanço calórico", "metabolismo", "timing de nutrientes", "personal trainer alphaville", "nutrição e saúde"],
@@ -16501,6 +16501,26 @@ RIR 3 = parou com 3 reps sobrando.</p>
       {
         question: "Qual o melhor horário para comer carboidrato?",
         answer: "Para a maioria das pessoas, o timing de carboidrato tem impacto secundário comparado ao total calórico diário. Uma estratégia com bom suporte científico é concentrar carboidratos ao redor do treino (pré e pós), independentemente do horário.",
+      },
+      {
+        question: "O que comer à noite que sacia e não engorda?",
+        answer: "Um prato com proteína (frango, peixe, ovos, carne magra), legumes e uma porção de carboidrato que você goste. Para lanche antes de dormir: iogurte natural, ovos, queijo branco ou uma fruta. O que define se engorda é o total do dia, não o horário.",
+      },
+      {
+        question: "Comer arroz e feijão à noite engorda?",
+        answer: "Não por ser à noite. Arroz e feijão são uma combinação saciante e nutritiva; o que importa é a quantidade dentro do total do dia.",
+      },
+      {
+        question: "Comer ovo antes de dormir engorda? E mamão ou abacate à noite?",
+        answer: "Nenhum deles engorda por ser à noite. Ovo é proteína e sacia bem; mamão é leve; abacate é nutritivo, mas calórico — vale cuidar da porção. Todos cabem no jantar ou na ceia dentro do seu total do dia.",
+      },
+      {
+        question: "Quais são os piores alimentos para comer à noite?",
+        answer: "Não existe alimento proibido à noite, mas frituras, pizza, doces e álcool em excesso juntam muita caloria com pouca saciedade e, para algumas pessoas, atrapalham o sono. O problema costuma ser a quantidade e os beliscos depois do jantar.",
+      },
+      {
+        question: "Comer de noite faz mal?",
+        answer: "Para a maioria das pessoas, não. Refeições muito grandes ou gordurosas perto da hora de dormir podem causar desconforto ou refluxo e prejudicar o sono; nesses casos, jantar um pouco mais cedo ajuda.",
       },
       {
         question: "Comer tarde da noite engorda?",
@@ -16570,6 +16590,16 @@ RIR 3 = parou com 3 reps sobrando.</p>
     </tr>
   </tbody>
 </table>
+
+<h2>Comer à noite engorda? E o que comer à noite para não engordar</h2>
+
+<p>O horário, sozinho, não decide se você engorda — o total do dia decide. O que acontece à noite é outra coisa: cansaço, tela e comida disponível se juntam, e o jantar vira jantar + beliscos. É por isso que muita gente sente que “comer à noite engorda”. Se quiser ver quanto esses beliscos noturnos somam, o <a href="/ferramentas/beliscometro">Beliscômetro</a> mostra em 2 minutos.</p>
+
+<p><strong>O que comer à noite que sacia e não pesa no total:</strong> um prato com proteína (frango, peixe, ovos, carne magra), legumes à vontade e uma porção de carboidrato que você goste — arroz e feijão inclusive. Para um lanche antes de dormir: iogurte natural, ovos, queijo branco ou uma fruta.</p>
+
+<p><strong>O que costuma atrapalhar à noite</strong> não é um alimento proibido, é a combinação de muita caloria com pouca saciedade: frituras, pizza, doces e bebida alcoólica em quantidade — e, para algumas pessoas, refeições muito grandes perto da hora de dormir, que podem atrapalhar o sono.</p>
+
+<p><strong>“O que comer à noite para perder barriga?”</strong> Nenhum alimento queima gordura de uma região específica. A barriga diminui com déficit calórico mantido, treino e sono — o jantar entra nessa conta como qualquer outra refeição.</p>
 
 <h2>Resumo Prático</h2>
 
@@ -92618,11 +92648,36 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Você abre a geladeira sem estar com fome. Come rápido, escondido, e depois vem a culpa. Isso é fome emocional — e ela sabota mais dietas do que qualquer carboidrato. Aprenda a identificar os gatilhos e as estratégias práticas para retomar o controle.",
     category: "Emagrecimento",
     date: "2026-07-18",
-    updatedAt: "2026-07-19",
+    updatedAt: "2026-10-02",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["fome emocional", "comer emocional", "emagrecimento", "ansiedade e comida", "comportamento alimentar"],
     faq: [
+      {
+        question: "O que tira a ansiedade de comer toda hora?",
+        answer:
+          "Nenhum alimento ou chá tira a ansiedade sozinho. Ajudam: refeições com proteína e fibra, uma pausa antes de pegar a comida (água, 10 minutos, sair do ambiente), comer sem tela e cuidar do sono e do estresse. Se a ansiedade é intensa ou constante, procure um psicólogo ou médico.",
+      },
+      {
+        question: "Por que a ansiedade faz comer muito?",
+        answer:
+          "Comer alivia o desconforto por alguns minutos — o cérebro aprende esse atalho e passa a repeti-lo sempre que a ansiedade aparece. Alimentos doces e gordurosos reforçam ainda mais o hábito. Por isso a estratégia é trocar a resposta, não só o alimento.",
+      },
+      {
+        question: "Vontade de comer toda hora mesmo sem fome: o que pode ser?",
+        answer:
+          "Na maioria das vezes é hábito, tédio, estresse, sono ruim ou refeições que não saciam. Mais raramente pode ter causa de saúde (alterações hormonais, efeito de medicamento, gestação). Se vier com outros sintomas ou mudar de repente, vale consultar um médico.",
+      },
+      {
+        question: "Existe remédio para tirar a vontade de comer?",
+        answer:
+          "Existem medicamentos que reduzem o apetite, mas só com prescrição e acompanhamento médico, porque têm indicações e efeitos colaterais. Chás e suplementos vendidos como “inibidores de apetite” não têm efeito comprovado equivalente.",
+      },
+      {
+        question: "Como vencer a compulsão alimentar sozinha?",
+        answer:
+          "Estratégias de rotina ajudam, mas compulsão alimentar é um transtorno e o tratamento com psicólogo, nutricionista e às vezes médico faz muita diferença. Tentar sozinho com dietas restritivas costuma piorar o ciclo. Escrevi sobre isso no artigo de compulsão alimentar.",
+      },
       {
         question:
           "Como saber se minha fome é emocional ou física?",
@@ -92731,6 +92786,23 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h3>6. Planeje o prazer, não o proíba</h3>
 
 <p>Dieta que trata todo alimento gostoso como inimigo cria o cenário perfeito para o descontrole: quanto mais proibido, mais desejado — e quando a barreira cai, cai de uma vez. Funciona melhor incluir, de forma planejada, os alimentos que você gosta: uma sobremesa combinada no fim de semana, um lanche favorito dentro das calorias do dia. Comida prevista e comida em paz não alimenta o circuito da fome emocional; comida proibida e devorada com culpa, sim.</p>
+
+<h2>O que tira a ansiedade de comer toda hora?</h2>
+
+<p>É a pergunta mais buscada sobre o tema, e a resposta honesta é: <strong>nenhum alimento, chá ou atalho tira a ansiedade sozinho</strong>. O que funciona é uma combinação de três frentes:</p>
+
+<ul>
+<li><strong>Saciedade de verdade nas refeições.</strong> Proteína, fibra e volume no prato deixam menos espaço para a fome física se misturar com a emocional. Veja os <a href="/blog/alimentos-que-dao-saciedade">alimentos que dão saciedade</a>.</li>
+<li><strong>Uma pausa entre a vontade e a comida.</strong> Beber um copo de água, esperar 10 minutos, sair do ambiente. Sede e tédio costumam se passar por fome; a pausa separa uma coisa da outra.</li>
+<li><strong>Comer com atenção.</strong> Sem tela, sentado, devagar. Quem come prestando atenção percebe quando já foi o suficiente — e registra o que comeu.</li>
+<li><strong>Cuidar do que alimenta a ansiedade.</strong> Sono, estresse e rotina. Dormir mal aumenta a fome no dia seguinte; o exercício ajuda a regular o humor.</li>
+</ul>
+
+<p>E vale enxergar o tamanho real do comer “toda hora”: o <a href="/ferramentas/beliscometro">Beliscômetro</a> soma em 2 minutos os pequenos episódios do dia e mostra em que momentos eles se concentram.</p>
+
+<p><strong>Sobre remédio para tirar a vontade de comer:</strong> existem medicamentos que reduzem o apetite, mas eles têm indicação, contraindicação e efeitos colaterais — só com prescrição e acompanhamento médico. Chás e suplementos “que tiram a fome” não têm efeito comprovado que substitua isso.</p>
+
+<p><strong>Vontade de comer toda hora pode ser gravidez?</strong> Mudanças de apetite podem acontecer na gestação, mas não dá para concluir isso por esse sinal sozinho. Se houver chance, o caminho é o teste e o médico.</p>
 
 <h2>Quando é mais do que fome emocional</h2>
 
