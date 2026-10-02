@@ -117,7 +117,7 @@ export default function PersonalTrainerDomicilioTambore() {
             Personal trainer a domicílio no Tamboré: o treino vai até você.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Para quem mora no Tamboré e prefere treinar sem sair de casa — sem trânsito, sem espera por equipamento, sem hora marcada em outro lugar. O protocolo chega até você, e os resultados ficam.
+            Para quem mora no Tamboré e prefere treinar sem sair de casa — sem trânsito, sem espera por equipamento, sem hora marcada em outro lugar. O protocolo chega até você, e os resultados ficam. Começar é a parte fácil — o meu trabalho é estar perto para você conseguir continuar quando a rotina muda.
           </p>
           <a
             href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="personal-trainer-a-domicilio-tambore:topo"
@@ -286,10 +286,10 @@ export default function PersonalTrainerDomicilioTambore() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            O treino vem até você no Tamboré.
+            O treino vem até você. E continua, mesmo quando a semana aperta.
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            Sem precisar sair de casa, sem esperar equipamento, sem compromisso de academia. Me conta o que você quer mudar — e a gente começa.
+            Não se compare com ninguém: cada pessoa tem a própria genética, a própria rotina e a própria história, com altos e baixos. O que importa é encontrar um jeito de treinar que você consiga seguir pelo resto da vida. Sem precisar sair de casa, sem esperar equipamento, sem compromisso de academia. Me conta o que você quer mudar — e a gente começa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

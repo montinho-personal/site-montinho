@@ -96,7 +96,7 @@ export default function AcademiaPersonalTrainerTambore() {
             Academia com personal trainer no Tamboré: atenção exclusiva, resultado diferente.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            A academia fornece o equipamento. O personal trainer garante que cada equipamento seja usado corretamente, com carga certa, na ordem certa e com a técnica que gera resultado — sem lesão.
+            A academia fornece o equipamento. O personal trainer garante que cada equipamento seja usado corretamente, com carga certa, na ordem certa e com a técnica que gera resultado — sem lesão. Começar é a parte fácil — o meu trabalho é estar perto para você conseguir continuar quando a rotina muda.
           </p>
           <a
             href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="academia-com-personal-trainer-tambore:topo"
@@ -211,10 +211,10 @@ export default function AcademiaPersonalTrainerTambore() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            A academia está pronta. Falta o método.
+            A academia está pronta. O que falta é conseguir continuar.
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            Me conta em qual academia você treina ou prefere treinar no Tamboré — e organizamos o atendimento no melhor local para você.
+            Não se compare com ninguém: cada pessoa tem a própria genética, a própria rotina e a própria história, com altos e baixos. O que importa é encontrar um jeito de treinar que você consiga seguir pelo resto da vida. Me conta em qual academia você treina ou prefere treinar no Tamboré — e organizamos o atendimento no melhor local para você.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
