@@ -118,8 +118,8 @@ export default function LandingPage() {
                 className="text-4xl sm:text-5xl lg:text-[3.4rem] font-bold leading-[1.08] mb-6"
                 style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
               >
-                Transforme seu corpo em Alphaville com quem já{" "}
-                <span className="text-[#BA9E50]">esteve do outro lado</span>.
+                Não é só sobre começar.{" "}
+                <span className="text-[#BA9E50]">É sobre conseguir continuar</span>.
               </h1>
               <p className="text-gray-300 text-lg leading-relaxed mb-4 max-w-lg">
                 Você não precisa de mais um treino genérico ou de tentar descobrir
@@ -232,7 +232,7 @@ export default function LandingPage() {
                 </figure>
               ))}
             </div>
-            <WhatsButton label="Quero ser o próximo resultado" />
+            <WhatsButton label="Falar com o Montinho" />
           </div>
         </section>
 
@@ -308,7 +308,7 @@ export default function LandingPage() {
               ))}
             </ul>
             <div className="mt-10">
-              <WhatsButton label="Quero essa transformação" />
+              <WhatsButton label="Quero conseguir continuar" />
             </div>
           </div>
         </section>
@@ -368,7 +368,7 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="mt-10">
-              <WhatsButton label="Quero o Método Montinho" />
+              <WhatsButton label="Falar com o Montinho" />
             </div>
           </div>
         </section>
@@ -456,7 +456,7 @@ export default function LandingPage() {
               <Image src="/montinho-personal-trainer-shape.jpg" alt="Montinho Personal Trainer" fill loading="lazy" sizes="128px" className="object-cover" />
             </div>
             <h2 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight" style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}>
-              Sua transformação pode<br className="hidden sm:block" /> começar hoje.
+              Começar você já sabe.<br className="hidden sm:block" /> Vamos fazer você continuar.
             </h2>
             <p className="text-gray-300 text-lg mb-4 max-w-xl mx-auto">
               Eu sei que dar o primeiro passo nem sempre é fácil. Também já estive
@@ -465,13 +465,14 @@ export default function LandingPage() {
               forma próxima.
             </p>
             <p className="text-gray-300 mb-10 max-w-xl mx-auto">
-              Se você procura um Personal Trainer em Alphaville que realmente se
-              importe com seus resultados, será um prazer conversar com você. Vamos
-              entender seus objetivos e descobrir qual é a melhor estratégia para
-              alcançar a transformação que você deseja.
+              E não se compare com ninguém: cada pessoa tem a própria genética, a
+              própria rotina e a própria história, com altos e baixos. O que importa
+              é encontrar um jeito de treinar que você consiga seguir pelo resto da
+              vida — e ter alguém perto quando a semana aperta, a carga trava ou a
+              rotina muda.
             </p>
             <WhatsButton
-              label="Quero começar minha transformação"
+              label="Falar com o Montinho"
               sub="Respondo pessoalmente — geralmente em poucos minutos"
             />
             <p className="text-gray-400 text-xs mt-12">
