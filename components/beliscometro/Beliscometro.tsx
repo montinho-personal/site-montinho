@@ -59,8 +59,6 @@ export default function Beliscometro({ preset }: { preset?: { momentos?: string[
   const [momentos, setMomentos] = useState<string[]>(preset?.momentos ?? []);
   const [itens, setItens] = useState<Item[]>([]);
   const [qIdx, setQIdx] = useState(0);
-  const [freqGeral, setFreqGeral] = useState<FrequenciaId | null>(null);
-  const [freqIndividual, setFreqIndividual] = useState(false);
   const [fazendo, setFazendo] = useState<Respostas["fazendo"]>();
   const [conta, setConta] = useState<Respostas["conta"]>();
   const [busca, setBusca] = useState("");
@@ -96,7 +94,7 @@ export default function Beliscometro({ preset }: { preset?: { momentos?: string[
   function comecar() { trackEvent("beliscometro_start", {}); setEtapa("momentos"); }
   function recomecar() {
     trackEvent("beliscometro_restart", {});
-    setEtapa("momentos"); setHist([]); setMomentos([]); setItens([]); setQIdx(0); setFreqGeral(null); setFreqIndividual(false);
+    setEtapa("momentos"); setHist([]); setMomentos([]); setItens([]); setQIdx(0);
     setFazendo(undefined); setConta(undefined); setMudanca(null); setSemCortar(false); setCapitulo2(false);
   }
 
@@ -106,7 +104,7 @@ export default function Beliscometro({ preset }: { preset?: { momentos?: string[
       if (xs.some((x) => x.alimentoId === a.id)) return xs.filter((x) => x.alimentoId !== a.id);
       trackEvent("beliscometro_food_selected", { alimento: a.id, categoria: a.categoria });
       setPulso(a.id); setTimeout(() => setPulso(null), 600);
-      return [...xs, { alimentoId: a.id, medidaId: a.padrao, frequencia: freqGeral ?? "1" }];
+      return [...xs, { alimentoId: a.id, medidaId: a.padrao, frequencia: "1" }];
     });
   }
   const setItem = (id: string, p: Partial<Item>) => setItens((xs) => xs.map((x) => (x.alimentoId === id ? { ...x, ...p } : x)));
@@ -250,33 +248,24 @@ export default function Beliscometro({ preset }: { preset?: { momentos?: string[
 
       {etapa === "frequencia" && (
         <div className={card}>
-          {titulo("Quantas vezes isso normalmente acontece?", "Na média. Se cada um é diferente, ajuste item por item.")}
-          <div className="grid gap-2">
-            {FREQUENCIAS.map((f) => (
-              <Opcao grande key={f.id} ativo={freqGeral === f.id && !freqIndividual}
-                onClick={() => { setFreqGeral(f.id); setFreqIndividual(false); setItens((xs) => xs.map((x) => ({ ...x, frequencia: f.id }))); }}>{f.rotulo}</Opcao>
-            ))}
-          </div>
-          <button type="button" onClick={() => { setFreqIndividual(!freqIndividual); if (!freqGeral) setFreqGeral("1"); }} className="mt-4 min-h-[44px] text-sm underline underline-offset-4" style={{ color: OURO }}>
-            {freqIndividual ? "usar a mesma para todos" : "cada um é diferente"}
-          </button>
-          {freqIndividual && (
-            <div className="mt-3 space-y-3">
-              {itens.map((it) => {
-                const a = POR_ID[it.alimentoId];
-                return (
-                  <label key={it.alimentoId} className="flex items-center justify-between gap-3 text-sm text-gray-200">
-                    <span><span aria-hidden>{a.emoji}</span> {a.nome}</span>
-                    <select value={it.frequencia} onChange={(e) => setItem(a.id, { frequencia: e.target.value as FrequenciaId })}
-                      className="min-h-[44px] bg-black border border-white/20 text-white px-2 max-w-[60%]">
-                      {FREQUENCIAS.map((f) => <option key={f.id} value={f.id}>{f.rotulo}</option>)}
-                    </select>
+          {titulo("Com que frequência cada um acontece?", "Num dia comum. O que é de vez em quando vira média por dia.")}
+          <div className="space-y-4">
+            {itens.map((it) => {
+              const a = POR_ID[it.alimentoId];
+              return (
+                <div key={it.alimentoId} className="border border-white/10 p-3" style={{ background: `${a.cor}1f` }}>
+                  <label htmlFor={`bm-freq-${a.id}`} className="flex items-center gap-2 text-white font-semibold mb-2">
+                    <span aria-hidden className="text-2xl">{a.emoji}</span>{a.nome}
                   </label>
-                );
-              })}
-            </div>
-          )}
-          <button type="button" disabled={!freqGeral} className={`${btn} mt-6 w-full`} style={{ background: OURO }} onClick={() => ir("fazendo")}>Continuar</button>
+                  <select id={`bm-freq-${a.id}`} value={it.frequencia} onChange={(e) => setItem(a.id, { frequencia: e.target.value as FrequenciaId })}
+                    className="w-full min-h-[48px] bg-black border border-white/25 text-white px-3 text-base">
+                    {FREQUENCIAS.map((f) => <option key={f.id} value={f.id}>{f.rotulo}</option>)}
+                  </select>
+                </div>
+              );
+            })}
+          </div>
+          <button type="button" className={`${btn} mt-6 w-full`} style={{ background: OURO }} onClick={() => ir("fazendo")}>Continuar</button>
         </div>
       )}
 
