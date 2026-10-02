@@ -130,25 +130,25 @@ export default function CalculadoraTDEE({
   /** Modo voz (teste nesta ferramenta): as mesmas validações dos campos. */
   const fmt = (n: number) => String(n).replace(".", ",");
   const passosVoz: PassoVoz[] = [
-    { id: "peso", tipo: "numero", pergunta: "Bora descobrir quanto o seu corpo gasta por dia! Primeiro: qual é o seu peso, em quilos?",
+    { id: "peso", tipo: "numero", pergunta: "E aí! Bora descobrir quanto o seu corpo gasta por dia? Primeiro: qual é o seu peso, em quilos?",
       aplicar: (n) => (n >= PESO_MIN && n <= PESO_MAX ? (setPesoTexto(fmt(n)), `${fmt(n)} quilos. Anotado!`) : null) },
-    { id: "altura", tipo: "numero", pergunta: "Agora a sua altura.",
-      aplicar: (n) => { const cm = n < 3 ? Math.round(n * 100) : Math.round(n); return cm >= ALTURA_MIN && cm <= ALTURA_MAX ? (setAlturaTexto(String(cm)), `${cm} centímetros. Show!`) : null; } },
-    { id: "idade", tipo: "numero", pergunta: "Quantos anos você tem?",
+    { id: "altura", tipo: "numero", pergunta: "Fechou! Agora me fala a sua altura.",
+      aplicar: (n) => { const cm = n < 3 ? Math.round(n * 100) : Math.round(n); return cm >= ALTURA_MIN && cm <= ALTURA_MAX ? (setAlturaTexto(String(cm)), `${cm} centímetros. Tá na mão!`) : null; } },
+    { id: "idade", tipo: "numero", pergunta: "Boa! E quantos anos você tem?",
       aplicar: (n) => (Number.isInteger(n) && n >= IDADE_MIN && n <= IDADE_MAX ? (setIdadeTexto(String(n)), `${n} anos. Perfeito.`) : null) },
-    { id: "sexo", tipo: "opcao", pergunta: "A conta muda um pouco entre homens e mulheres. Masculino ou feminino? Se preferir, diga: prefiro não informar.",
+    { id: "sexo", tipo: "opcao", pergunta: "Show. A conta muda um pouquinho entre homem e mulher. Masculino ou feminino? Se preferir, é só dizer: prefiro não informar.",
       opcoes: [{ id: "nao_informado", chaves: ["prefiro", "nao informar", "não informar"] }, { id: "feminino", chaves: ["feminino", "mulher"] }, { id: "masculino", chaves: ["masculino", "homem"] }],
-      aplicar: (id) => { setSexo(id as Sexo); return "Fechado."; } },
+      aplicar: (id) => { setSexo(id as Sexo); return "Beleza!"; } },
     { id: "nivel", tipo: "opcao",
-      pergunta: "Última! Como é a sua rotina? Pouco ativo, levemente ativo, moderadamente ativo, muito ativo ou extremamente ativo? Na dúvida, escolha o menor.",
+      pergunta: "Última, tá acabando! Como é a sua rotina? Pouco ativo, levemente ativo, moderadamente ativo, muito ativo ou extremamente ativo? Na dúvida, fica com o menor.",
       opcoes: [{ id: "extremo", chaves: ["extremamente", "extremo"] }, { id: "muito", chaves: ["muito ativo", "muito"] }, { id: "moderado", chaves: ["moderad"] }, { id: "leve", chaves: ["levemente", "leve"] }, { id: "pouco", chaves: ["pouco", "sedentari"] }],
-      aplicar: (id) => { setNivelId(id); return "Boa! Calculando…"; } },
+      aplicar: (id) => { setNivelId(id); return "Boa! Deixa eu calcular aqui."; } },
   ];
   const kcalFala = (f: { min: number; max: number }) => (f.min === f.max ? `cerca de ${arredondaKcal(f.min)}` : `entre ${arredondaKcal(f.min)} e ${arredondaKcal(f.max)}`);
   const resultadoVoz = menorDeIdade
     ? "Para menores de 18 anos, o melhor caminho é conversar com um profissional. Dá uma olhada na orientação na tela."
     : tdee
-      ? `Pronto! Pela estimativa, seu corpo gasta ${kcalFala(tdee)} calorias por dia. Esse número é um ponto de partida, não uma regra. O detalhe está na tela.`
+      ? `Pronto! Pela estimativa, seu corpo gasta ${kcalFala(tdee)} calorias por dia. Lembra: esse número é um ponto de partida, não uma regra. O que faz a diferença é conseguir manter no dia a dia.`
       : null;
 
   const campo =

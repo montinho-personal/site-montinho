@@ -35,20 +35,35 @@ function escolheVoz(): SpeechSynthesisVoice | null {
   return [...vs].sort((a, b) => pontua(b) - pontua(a))[0];
 }
 
+// Referências vivas: o Chrome descarta utterances sem referência e corta a fala no meio.
+const naFila: SpeechSynthesisUtterance[] = [];
+
+/**
+ * Fala frase por frase. O Chrome (sobretudo no Android) interrompe falas
+ * longas depois de ~15 s; frases curtas, em fila, chegam até o fim.
+ */
 function falar(texto: string, voz: SpeechSynthesisVoice | null): Promise<void> {
   return new Promise((ok) => {
     const s = window.speechSynthesis;
     if (!s) return ok();
     s.cancel();
-    const u = new SpeechSynthesisUtterance(texto);
-    u.lang = "pt-BR";
-    if (voz) u.voice = voz;
-    // Voz masculina: um pouco mais grave; ritmo firme, sem pressa.
-    u.pitch = voz && VOZ_MASCULINA.test(voz.name) ? 1 : 0.85;
-    u.rate = 1.02;
-    u.onend = () => ok();
-    u.onerror = () => ok();
-    s.speak(u);
+    naFila.length = 0;
+    const frases = texto.match(/[^.!?…]+[.!?…]*/g)?.map((f) => f.trim()).filter(Boolean) ?? [texto];
+    let restantes = frases.length;
+    const vigia = setInterval(() => { if (s.paused) s.resume(); }, 5000);
+    const acabou = () => { if (--restantes <= 0) { clearInterval(vigia); naFila.length = 0; ok(); } };
+    for (const f of frases) {
+      const u = new SpeechSynthesisUtterance(f);
+      u.lang = "pt-BR";
+      if (voz) u.voice = voz;
+      // Sem voz masculina no aparelho: um pouco mais grave.
+      u.pitch = voz && VOZ_MASCULINA.test(voz.name) ? 1 : 0.85;
+      u.rate = 1.02;
+      u.onend = acabou;
+      u.onerror = acabou;
+      naFila.push(u);
+      s.speak(u);
+    }
   });
 }
 
@@ -115,11 +130,12 @@ export default function ModoVoz({ ferramenta, intro, passos, resultado }: {
     const p = passos[i];
     setIdx(i); setOuviu(""); setAviso("");
     setEstado("falando");
-    await falar(tentativa ? "Não peguei. Pode repetir?" : p.pergunta, voz.current);
+    await falar(tentativa ? "Opa, não peguei. Fala de novo pra mim?" : p.pergunta, voz.current);
     if (!ativo.current) return false;
     setEstado("ouvindo");
     const alts = await ouvir();
     if (!ativo.current) return false;
+    await new Promise((r) => setTimeout(r, 350)); // Android: soltar o microfone antes de voltar a falar
     if (alts === null) { setEstado("erro"); setAviso("Seu navegador não liberou o microfone."); return false; }
     setOuviu(alts[0] ?? "");
     let confirma: string | null = null;
