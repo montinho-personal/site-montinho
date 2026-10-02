@@ -70,7 +70,7 @@ export const GRAMAS: Record<string, { porcoes: number; g: Record<string, number>
   "morango-chocolate-derretido": { porcoes: 1, g: { choc70: 25, morango: 120, "iogurte-grego": 120 } },
   "chocolate-quente-cremoso": { porcoes: 1, g: { leite: 200, cacau: 6, "leite-po": 10, whey: 20 } },
   "colher-nutella-fruta": { porcoes: 1, g: { "creme-avela": 15, "iogurte-grego": 120, morango: 100 } },
-  "creme-cacau-amendoim": { porcoes: 1, g: { "pasta-amendoim": 15, cacau: 2, whey: 15 } },
+  "creme-cacau-amendoim": { porcoes: 1, g: { "pasta-amendoim": 15, cacau: 2, whey: 15, agua: 30 } },
   "torrada-nutella-banana": { porcoes: 1, g: { pao: 25, "creme-avela": 15, cottage: 60, banana: 37 } },
   "cookie-air-fryer": { porcoes: 1, g: { aveia: 30, whey: 15, "pasta-amendoim": 15, clara: 33, choc70: 10, fermento: 1 } },
   "cookie-aveia-banana": { porcoes: 10, g: { banana: 150, aveia: 80, whey: 30, canela: 2 } },
@@ -99,18 +99,30 @@ export const GRAMAS: Record<string, { porcoes: number; g: Record<string, number>
   "bolo-caneca-banana-canela": { porcoes: 1, g: { ovo: 45, banana: 37, aveia: 28, canela: 1, fermento: 2, whey: 15 } },
 };
 
-export type Macros = { kcal: number; p: number; c: number; g: number; porcoes: number };
+export type Macros = { kcal: number; p: number; c: number; g: number; porcoes: number; porcao: string };
+
+/** Receitas de beber: porção em ml (sem contar o gelo). */
+const BEBIDAS = new Set(["chocolate-quente-cremoso", "milkshake-proteico", "milkshake-morango", "frappe-cafe"]);
+
+/** Tamanho da porção: peso aproximado e, quando rende mais de uma, a fração. */
+function porcaoDe(id: string, totalG: number, porcoes: number): string {
+  const q = Math.round(totalG / porcoes / 10) * 10;
+  const medida = BEBIDAS.has(id) ? `${q} ml` : `${q} g`;
+  return porcoes > 1 ? `1 de ${porcoes} (≈ ${medida})` : `≈ ${medida}`;
+}
 
 /** Por porção, arredondado. null se a receita não tem gramatura cadastrada. */
 export function macrosDe(r: Receita): Macros | null {
   const m = GRAMAS[r.id];
   if (!m) return null;
   const t = { kcal: 0, p: 0, c: 0, g: 0 };
+  let peso = 0;
   for (const [id, gramas] of Object.entries(m.g)) {
+    if (id !== "gelo") peso += gramas;
     const n = NUTRI[id];
     if (!n) return null;
     t.kcal += (n.kcal * gramas) / 100; t.p += (n.p * gramas) / 100; t.c += (n.c * gramas) / 100; t.g += (n.g * gramas) / 100;
   }
   const d = m.porcoes;
-  return { kcal: Math.round(t.kcal / d / 5) * 5, p: Math.round(t.p / d), c: Math.round(t.c / d), g: Math.round(t.g / d), porcoes: d };
+  return { kcal: Math.round(t.kcal / d / 5) * 5, p: Math.round(t.p / d), c: Math.round(t.c / d), g: Math.round(t.g / d), porcoes: d, porcao: porcaoDe(r.id, peso, d) };
 }

@@ -421,7 +421,7 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
               <p className="text-[11px] text-gray-400 mt-1">{rot}</p>
             </div>
           ))}
-          <p className="col-span-4 text-[11px] text-gray-400 text-left">Por porção{mac.porcoes > 1 ? ` · rende ${mac.porcoes}` : ""} · estimativa</p>
+          <p className="col-span-4 text-[11px] text-gray-400 text-left"><span className="text-gray-200">Porção: {mac.porcao}</span>{mac.porcoes > 1 ? ` · a receita rende ${mac.porcoes}` : ""} · estimativa</p>
         </div>
       )}
       <button type="button" onClick={onAbrir} className="mt-4 min-h-[44px] text-sm font-semibold underline underline-offset-4" style={{ color: OURO }} aria-expanded={aberta}>
