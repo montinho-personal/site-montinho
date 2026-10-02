@@ -177,7 +177,7 @@ export default function PersonalTrainerBarueri() {
               O município de Barueri é sede de um dos maiores polos empresariais da América Latina. A região de Alphaville, dentro de Barueri, reúne empresas, famílias e profissionais que têm acesso a praticamente qualquer serviço — e que já aprenderam, com o tempo, que preço baixo e qualidade raramente andam juntos.
             </p>
             <p>
-              Vivo o esporte há mais de 20 anos — treinando, estudando e dando aula. O que me mantém atuando em Barueri não é localização: é acompanhar de perto e ajustar o treino conforme a vida de cada aluno muda.
+              Moro em Barueri há mais de 20 anos e vivo o esporte há mais de 20 anos — treinando, estudando e dando aula. Viver a cidade me aproxima de quem treina comigo: vi Barueri evoluir em infraestrutura, em oferta de serviços, no perfil de quem escolhe morar aqui. E o que me mantém atuando aqui não é localização: é acompanhar de perto e ajustar o treino conforme a vida de cada aluno muda.
             </p>
             <p>
               Minha trajetória na musculação nasceu de experiência própria: anos convivendo com o excesso de peso, tentativas frustradas com protocolos genéricos e, por fim, a decisão de estudar de verdade o que a ciência diz sobre composição corporal. Perdi mais de 40kg nesse processo —{" "}

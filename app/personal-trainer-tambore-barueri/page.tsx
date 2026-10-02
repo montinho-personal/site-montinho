@@ -10,7 +10,7 @@ import VideoRecomecar from "@/components/video/VideoRecomecar";
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer Tamboré e Barueri | Montinho Personal Trainer" },
   description:
-    "Personal trainer no Tamboré e Barueri, com mais de 20 anos vivendo o esporte. Treino no condomínio, em casa ou na Arena 18, presencial e online.",
+    "Personal trainer no Tamboré e Barueri: mais de 20 anos no esporte e morando na cidade. Treino no condomínio, em casa ou na Arena 18, presencial e online.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-tambore-barueri`,
   },
@@ -56,7 +56,7 @@ const localSchema = {
   "@id": `${SITE_URL}/personal-trainer-tambore-barueri`,
   name: "Montinho Personal Trainer – Tamboré e Barueri",
   description:
-    "Personal trainer atendendo Tamboré e Barueri, com mais de 20 anos vivendo o esporte. Protocolo individual para emagrecimento, hipertrofia e qualidade de vida.",
+    "Personal trainer atendendo Tamboré e Barueri, onde mora há mais de 20 anos e vive o esporte. Protocolo individual para emagrecimento, hipertrofia e qualidade de vida.",
   url: `${SITE_URL}/personal-trainer-tambore-barueri`,
   telephone: "+5511981063409",
   areaServed: [
@@ -127,7 +127,7 @@ export default function PersonalTrainerTamboreBarueri() {
                 Tamboré e Barueri têm perfis distintos, mas compartilham a mesma demanda: profissionais e famílias com agenda exigente que precisam de um treino que caiba no tempo disponível e mude quando a rotina muda. Não há espaço para protocolo que exige mais do que a rotina permite.
               </p>
               <p>
-                Vivo o esporte há mais de 20 anos — treinando, estudando e dando aula. Conheço os condomínios do Tamboré e as academias de Barueri, sei quais espaços têm equipamento adequado e quais têm limitações, e monto o treino em cima do que existe de verdade no seu local.
+                Moro em Barueri há mais de 20 anos e vivo o esporte há mais de 20 anos — treinando, estudando e dando aula. Conheço os condomínios do Tamboré e as academias de Barueri, sei quais espaços têm equipamento adequado e quais têm limitações, e monto o treino em cima do que existe de verdade no seu local.
               </p>
               <p>
                 Já acompanhei mais de 100 alunos com perfis e objetivos distintos — emagrecimento, hipertrofia, reabilitação, condicionamento físico, qualidade de vida. Cada um com um ponto de partida diferente, e um treino ajustado a ele.

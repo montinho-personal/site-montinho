@@ -184,7 +184,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
           </h2>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light text-base">
             <p>
-              Vivo o esporte há mais de 20 anos — treinando, estudando e dando aula. Santana de Parnaíba atrai quem escolheu trocar o agito de São Paulo por qualidade de vida, e o treino acompanha essa escolha: cabe na rotina e muda quando ela muda.
+              Moro em Barueri, aqui do lado, há mais de 20 anos e vivo o esporte há mais de 20 anos — treinando, estudando e dando aula. Santana de Parnaíba atrai quem escolheu trocar o agito de São Paulo por qualidade de vida, e o treino acompanha essa escolha: cabe na rotina e muda quando ela muda.
             </p>
             <p>
               Quem mora em Santana de Parnaíba tem uma relação diferente com o tempo. Não é a pressa de Alphaville Empresarial ou o ritmo frenético do centro de Barueri. É uma rotina que, quando bem organizada, tem espaço genuíno para cuidar do corpo — desde que haja um método que valha a pena seguir.
