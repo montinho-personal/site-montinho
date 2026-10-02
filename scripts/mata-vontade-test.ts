@@ -1,6 +1,7 @@
 import { alergenosDe, interpretar, recomendar, pontuar, type Pedido } from "../lib/mata-vontade/motor";
 import { FAMILIAS } from "../lib/mata-vontade/familias";
 import { RECEITAS, INGREDIENTES } from "../lib/mata-vontade/receitas";
+import { GRAMAS, macrosDe } from "../lib/mata-vontade/nutricao";
 import { existsSync, readFileSync } from "node:fs";
 
 let falhas = 0;
@@ -74,6 +75,15 @@ const agora = FAMILIAS.flatMap((f) => recomendar(base({ familia: f, tempoMax: 5 
 ok(agora.length === 0, "pouco tempo: nada de horas no congelador", agora.map((r) => r.receita.id).join(","));
 const prot = recomendar(base({ familia: fam("pudim"), objetivo: "proteina" }));
 ok(!prot.estrategia || prot.estrategia.receita.familia === "pudim" || !prot.todos.some((x) => x.receita.familia === "pudim" && x.receita.id !== prot.melhor?.receita.id && x.receita.id !== prot.rapido?.receita.id), "objetivo prefere a mesma família", prot.estrategia?.receita.id);
+
+// Macros: toda receita tem estimativa, e toda obrigatória pesada
+const semMac = RECEITAS.filter((r) => !macrosDe(r));
+ok(semMac.length === 0, "toda receita tem calorias e macros", semMac.map((r) => r.id).join(","));
+const SEM_PESO = ["adocante", "agua", "gelo", "sal"];
+const naoPesado = RECEITAS.flatMap((r) => r.ingredientes.filter((i) => !i.opcional && !SEM_PESO.includes(i.id) && GRAMAS[r.id]?.g[i.id] === undefined && !(i.id === "ovo" && GRAMAS[r.id]?.g.clara)).map((i) => `${r.id}:${i.id}`));
+ok(naoPesado.length === 0, "todo ingrediente obrigatório tem gramatura", naoPesado.join(","));
+const baixa = RECEITAS.filter((r) => { const m = macrosDe(r)!; return m.porcoes === 1 && m.p < 10; });
+ok(baixa.length === 0, "porção única tem 10 g+ de proteína", baixa.map((r) => r.id).join(","));
 
 // Tempo e equipamento
 const rapido = recomendar(base({ familia: fam("brownie"), tempoMax: 5 }));
