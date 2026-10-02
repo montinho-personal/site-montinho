@@ -150,7 +150,7 @@ export default function PaginaFAQ() {
             Ainda tem dúvidas?
           </h2>
           <p className="text-gray-300 mb-8">
-            Me mande uma mensagem pelo WhatsApp. Respondo pessoalmente e sem enrolação.
+            Me mande uma mensagem pelo WhatsApp. Respondo pessoalmente e sem enrolação — e a conversa não é só sobre como começar, é sobre como você vai conseguir continuar.
           </p>
           <a
             href={getWhatsAppUrl()}

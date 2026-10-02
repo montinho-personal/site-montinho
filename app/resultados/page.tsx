@@ -161,7 +161,7 @@ export default function Resultados() {
           <SectionTitle
             eyebrow="Resultados"
             title="Transformações que falam por si"
-            subtitle="Histórias reais de pessoas que confiaram no processo e transformaram suas vidas. Não são exceções — são a regra quando a abordagem é certa."
+            subtitle="Histórias reais de pessoas que já tinham começado outras vezes — e desta vez conseguiram continuar. Cada uma com o seu ponto de partida, a sua rotina e os seus altos e baixos."
             accent
           />
         </div>
@@ -246,7 +246,7 @@ export default function Resultados() {
             A próxima história pode ser a sua.
           </h2>
           <p className="text-gray-400 mb-8 text-lg">
-            Estas pessoas tinham dúvidas, medos e já tinham tentado de tudo antes. O que mudou foi o método e o acompanhamento.
+            Estas pessoas tinham dúvidas, medos e já tinham tentado de tudo antes. O que mudou foi conseguir continuar, com alguém perto para ajustar quando a rotina mudava. E não se compare com nenhuma delas: cada um tem a própria genética, a própria rotina e a própria história.
           </p>
           <a
             href={getWhatsAppUrl()}
@@ -254,7 +254,7 @@ export default function Resultados() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-black text-white px-8 py-4 text-base font-semibold tracking-wide hover:bg-gray-900 transition-all duration-200"
           >
-            Quero Ser o Próximo
+            Falar com o Montinho
           </a>
         </div>
       </section>

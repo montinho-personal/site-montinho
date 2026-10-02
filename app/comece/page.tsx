@@ -68,6 +68,8 @@ export default function ComecePage() {
             você continua perdido. Aqui o processo inteiro está em ordem:
             ferramentas conectadas que te levam do zero ao plano, passo a
             passo, com seus dados atravessando sozinhos de uma para a outra.
+            E começar é só o primeiro passo: o que muda o resultado é
+            conseguir continuar.
           </p>
 
           {/* No hub o CTA do herói não é "começar" — é ESCOLHER, porque a
