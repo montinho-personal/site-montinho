@@ -45,7 +45,7 @@ export const INGREDIENTES: Record<string, { nome: string; despensa?: boolean; al
   "iogurte-grego": { nome: "iogurte grego/proteico", alergenos: ["lactose"] },
   cottage: { nome: "cottage", alergenos: ["lactose"] },
   "cream-cheese": { nome: "cream cheese", alergenos: ["lactose"] },
-  whey: { nome: "whey (Growth concentrado)", alergenos: ["lactose"] },
+  whey: { nome: "whey protein (qualquer marca)", alergenos: ["lactose"] },
   aveia: { nome: "aveia em flocos", despensa: true, alergenos: ["gluten"] },
   "farinha-trigo": { nome: "farinha de trigo", alergenos: ["gluten"] },
   tapioca: { nome: "goma de tapioca" },
