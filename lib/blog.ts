@@ -93998,6 +93998,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Emagrecer com fome o dia inteiro é insustentável. A boa notícia: alimentos diferentes saciam de formas muito diferentes, mesmo com as mesmas calorias. Veja quais priorizar para comer menos sem sofrer.",
     category: "Nutrição",
     date: "2026-07-19",
+    updatedAt: "2026-10-02",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["saciedade", "emagrecimento", "nutrição", "proteína", "fibras"],
@@ -94031,6 +94032,31 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
           "Comer devagar realmente ajuda a comer menos?",
         answer:
           "Sim. Os sinais de saciedade levam em torno de 15 a 20 minutos para chegar ao cérebro. Quem come muito rápido consegue ingerir calorias demais antes de se sentir satisfeito, enquanto comer devagar dá tempo de o corpo registrar a refeição.",
+      },
+      {
+        question: "O que mata a fome sem engordar?",
+        answer:
+          "Nenhum alimento sozinho engorda ou emagrece: o que conta é o total do dia. Mas alguns matam a fome com poucas calorias porque juntam proteína, fibra, água e volume — ovos, iogurte natural, frango, peixe, feijão, batata cozida, frutas inteiras, legumes e verduras. Trocar um lanche pequeno e calórico por um desses costuma segurar a fome por mais tempo.",
+      },
+      {
+        question: "O que mata a fome rapidamente?",
+        answer:
+          "Para a fome de verdade, algo com proteína e volume funciona rápido: um ovo cozido, um iogurte natural, uma fruta inteira com um punhado pequeno de castanhas. Se a fome apareceu do nada pouco depois de comer, beba água e espere alguns minutos — às vezes é vontade, sede ou hábito, não fome.",
+      },
+      {
+        question: "Quais alimentos saciam a fome à noite?",
+        answer:
+          "Os mesmos que saciam durante o dia: proteína (iogurte, ovos, queijo branco, frango), legumes e frutas inteiras. À noite, o mais útil costuma ser planejar o que vai comer em vez de decidir na hora — é quando o cansaço transforma um belisco em vários.",
+      },
+      {
+        question: "Banana sacia a fome?",
+        answer:
+          "Sacia mais do que um biscoito ou um suco com as mesmas calorias, porque é inteira, tem fibra e exige mastigação. Combinada com uma fonte de proteína — iogurte, por exemplo — segura a fome por mais tempo do que sozinha.",
+      },
+      {
+        question: "Dá para emagrecer 10 kg em 7 dias?",
+        answer:
+          "Não de gordura. Perder gordura nesse ritmo exigiria um déficit energético que o corpo não sustenta em uma semana. O que cai rápido nas primeiras dietas muito restritas é sobretudo água e glicogênio, e volta quando a rotina volta. Um ritmo realista e mantido funciona melhor do que uma semana extrema.",
       },
     ],
     content: `
@@ -94107,6 +94133,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Do outro lado da moeda estão os alimentos com muita caloria e pouca capacidade de saciar: ultraprocessados macios e hiperpalatáveis, bebidas calóricas (refrigerante, suco, bebidas alcoólicas), doces e salgadinhos. Croissants e bolos ficaram nas últimas posições do índice de Holt — metade da saciedade do pão branco, que já é baixa.</p>
 
 <p>O padrão desses alimentos: quase nenhuma proteína ou fibra, textura que dispensa mastigação, e um projeto de sabor que estimula a comer mais, não menos. Não precisam ser proibidos, mas não podem ser a base de quem quer sentir menos fome.</p>
+
+<h2>O que mata a fome sem engordar (e o que mata rápido)</h2>
+
+<p>“Não engordar” não é propriedade de um alimento — é do total do dia. O que muda de um alimento para outro é quanta fome ele resolve por caloria. Os que mais rendem juntam quatro coisas: <strong>proteína, fibra, água e volume</strong>. Na prática:</p>
+
+<ul>
+<li><strong>Para matar a fome rápido:</strong> ovo cozido, iogurte natural, fruta inteira, queijo branco. Prontos em segundos e com proteína ou fibra.</li>
+<li><strong>Para segurar por mais tempo:</strong> refeições com proteína generosa + feijão ou batata + legumes. É o prato que mais rende por caloria.</li>
+<li><strong>À noite:</strong> os mesmos alimentos, com uma diferença — planeje antes. Decidir na hora, cansado, é como um lanche vira vários.</li>
+</ul>
+
+<p>E quando a fome parece aparecer toda hora, vale olhar o outro lado: os pequenos consumos que nem entram na conta. O <a href="/ferramentas/beliscometro">Beliscômetro</a> soma esses beliscos em 2 minutos e mostra o prato que você nunca montou, mas comeu aos poucos.</p>
 
 <h2>Fome física versus vontade de comer</h2>
 
