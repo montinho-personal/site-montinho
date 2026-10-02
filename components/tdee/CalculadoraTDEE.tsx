@@ -5,6 +5,7 @@ import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import PosResultado from "@/components/ferramentas/PosResultado";
 import Compartilhar from "@/components/share/Compartilhar";
+import ModoVoz, { type PassoVoz } from "@/components/voz/ModoVoz";
 import { PONTE, guarda } from "@/lib/ferramentas/ponte";
 import { guardaKcalParaMacros, guardaPesoParaProteina } from "@/lib/macros";
 import {
@@ -126,6 +127,30 @@ export default function CalculadoraTDEE({
     }
   }, [completo, placement]);
 
+  /** Modo voz (teste nesta ferramenta): as mesmas validações dos campos. */
+  const fmt = (n: number) => String(n).replace(".", ",");
+  const passosVoz: PassoVoz[] = [
+    { id: "peso", tipo: "numero", pergunta: "Bora descobrir quanto o seu corpo gasta por dia! Primeiro: qual é o seu peso, em quilos?",
+      aplicar: (n) => (n >= PESO_MIN && n <= PESO_MAX ? (setPesoTexto(fmt(n)), `${fmt(n)} quilos. Anotado!`) : null) },
+    { id: "altura", tipo: "numero", pergunta: "Agora a sua altura.",
+      aplicar: (n) => { const cm = n < 3 ? Math.round(n * 100) : Math.round(n); return cm >= ALTURA_MIN && cm <= ALTURA_MAX ? (setAlturaTexto(String(cm)), `${cm} centímetros. Show!`) : null; } },
+    { id: "idade", tipo: "numero", pergunta: "Quantos anos você tem?",
+      aplicar: (n) => (Number.isInteger(n) && n >= IDADE_MIN && n <= IDADE_MAX ? (setIdadeTexto(String(n)), `${n} anos. Perfeito.`) : null) },
+    { id: "sexo", tipo: "opcao", pergunta: "A conta muda um pouco entre homens e mulheres. Masculino ou feminino? Se preferir, diga: prefiro não informar.",
+      opcoes: [{ id: "nao_informado", chaves: ["prefiro", "nao informar", "não informar"] }, { id: "feminino", chaves: ["feminino", "mulher"] }, { id: "masculino", chaves: ["masculino", "homem"] }],
+      aplicar: (id) => { setSexo(id as Sexo); return "Fechado."; } },
+    { id: "nivel", tipo: "opcao",
+      pergunta: "Última! Como é a sua rotina? Pouco ativo, levemente ativo, moderadamente ativo, muito ativo ou extremamente ativo? Na dúvida, escolha o menor.",
+      opcoes: [{ id: "extremo", chaves: ["extremamente", "extremo"] }, { id: "muito", chaves: ["muito ativo", "muito"] }, { id: "moderado", chaves: ["moderad"] }, { id: "leve", chaves: ["levemente", "leve"] }, { id: "pouco", chaves: ["pouco", "sedentari"] }],
+      aplicar: (id) => { setNivelId(id); return "Boa! Calculando…"; } },
+  ];
+  const kcalFala = (f: { min: number; max: number }) => (f.min === f.max ? `cerca de ${arredondaKcal(f.min)}` : `entre ${arredondaKcal(f.min)} e ${arredondaKcal(f.max)}`);
+  const resultadoVoz = menorDeIdade
+    ? "Para menores de 18 anos, o melhor caminho é conversar com um profissional. Dá uma olhada na orientação na tela."
+    : tdee
+      ? `Pronto! Pela estimativa, seu corpo gasta ${kcalFala(tdee)} calorias por dia. Esse número é um ponto de partida, não uma regra. O detalhe está na tela.`
+      : null;
+
   const campo =
     "w-full bg-black border border-white/25 focus:border-[#BA9E50] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#BA9E50] text-white text-xl font-bold px-4 py-3 transition-colors min-h-[48px]";
   const rotulo = "block text-gray-300 text-sm font-medium mb-2";
@@ -150,6 +175,8 @@ export default function CalculadoraTDEE({
         Estime quantas calorias seu corpo utiliza em repouso e aproximadamente
         quanto você gasta ao longo do dia.
       </p>
+
+      <ModoVoz ferramenta="tdee" intro="" passos={passosVoz} resultado={resultadoVoz} />
 
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
         {/* ── Formulário ─────────────────────────────────────────────── */}
