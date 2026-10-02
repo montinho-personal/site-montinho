@@ -139,5 +139,5 @@ export const FAMILIAS: Familia[] = [
 export const ATALHOS = ["chocolate", "bolo", "brigadeiro", "sorvete", "cookie", "pudim", "paçoca", "só quero besteira"];
 
 /** Respostas vagas: abrem a pergunta "doce, cremoso, crocante ou fruta?". */
-export const VAGAS = ["besteira", "doce", "alguma coisa", "algo doce", "qualquer coisa", "nem sei", "sobremesa", "porcaria", "guloseima", "algo"];
+export const VAGAS = ["besteira", "doce", "alguma coisa", "algo doce", "qualquer coisa", "nem sei", "não sei", "nao sei", "sei la", "sei lá", "tanto faz", "qualquer", "sobremesa", "porcaria", "guloseima", "algo"];
 export const SALGADOS = ["pizza", "hamburguer", "lanche", "coxinha", "salgadinho", "batata frita", "pastel", "esfiha", "salgado", "sushi", "cachorro quente", "x tudo", "pao de queijo"];

@@ -94,6 +94,8 @@ export default function MataVontade() {
   useEffect(() => {
     if (!montou.current) { montou.current = true; return; }
     topo.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const alvo = topo.current?.querySelector<HTMLElement>(etapa === "vontade" ? "#mv-vontade" : "[data-foco]");
+    alvo?.focus({ preventScroll: true });
   }, [etapa]);
   const toggle = (lista: string[], set: (v: string[]) => void, id: string) => set(lista.includes(id) ? lista.filter((x) => x !== id) : [...lista, id]);
 
@@ -163,7 +165,7 @@ export default function MataVontade() {
   const btn = "min-h-[48px] px-6 font-semibold text-black transition-transform hover:scale-[1.02]";
 
   return (
-    <div ref={topo} className="text-left scroll-mt-28">
+    <div ref={topo} className="text-left scroll-mt-28 [&_button:focus-visible]:outline [&_button:focus-visible]:outline-2 [&_button:focus-visible]:outline-offset-2 [&_button:focus-visible]:outline-white [&_a:focus-visible]:outline [&_a:focus-visible]:outline-2 [&_a:focus-visible]:outline-white">
       {etapa !== "vontade" && etapa !== "resultado" && (
         <div className="flex items-center gap-3 mb-5">
           <button type="button" onClick={voltar} className="text-sm text-gray-300 hover:text-white min-h-[44px] pr-1 shrink-0">← voltar</button>
@@ -179,7 +181,7 @@ export default function MataVontade() {
           <label htmlFor="mv-vontade" className="block text-white text-lg mb-3">O que você está com vontade de comer agora?</label>
           <form onSubmit={(e) => { e.preventDefault(); if (texto.trim() || sel.length) comecar(texto); }} className="flex flex-col sm:flex-row gap-3">
             <input id="mv-vontade" value={texto} onChange={(e) => setTexto(e.target.value)} placeholder="ex.: bolo de chocolate, brigadeiro, sorvete…"
-              className="flex-1 min-h-[52px] bg-black border border-white/20 px-4 text-white text-lg placeholder:text-gray-500 focus:outline-none focus:border-white/60" autoComplete="off" />
+              className="flex-1 min-h-[52px] bg-black border border-white/20 px-4 text-white text-lg placeholder:text-gray-400 focus:outline-none focus:border-white focus-visible:ring-2 focus-visible:ring-[#BA9E50]" autoComplete="off" />
             <button type="submit" className={btn} style={{ background: OURO }}>{sel.length > 1 ? `Matar as ${sel.length} vontades` : "Matar a vontade"}</button>
           </form>
           {aviso && <p className="text-gray-200 mt-4" role="status">{aviso}</p>}
@@ -204,7 +206,7 @@ export default function MataVontade() {
 
       {etapa === "vago" && (
         <div className={card}>
-          <p className="text-white text-lg mb-4">Tudo bem não saber. Qual dessas chega mais perto?</p>
+          <h2 tabIndex={-1} data-foco className="text-white text-lg mb-4 outline-none">Tudo bem não saber. Qual dessas chega mais perto?</h2>
           <div className="grid grid-cols-2 gap-3">
             {VAGO_OPCOES.map((o) => (
               <button key={o.f} type="button" className="min-h-[72px] border border-white/15 text-white text-base hover:border-white/50"
@@ -216,7 +218,7 @@ export default function MataVontade() {
 
       {etapa === "como" && familias.length > 0 && (
         <div className={card}>
-          <p className="text-white text-lg mb-4">{familias.length > 1 ? "Como você quer cada uma?" : "Como você quer isso?"}</p>
+          <h2 tabIndex={-1} data-foco className="text-white text-lg mb-4 outline-none">{familias.length > 1 ? "Como você quer cada uma?" : "Como você quer isso?"}</h2>
           {familias.map((f) => (
             <div key={f.id} className="mb-5 last:mb-0">
               <p className="text-xs uppercase tracking-[0.2em] mb-2" style={{ color: OURO }}>{f.emoji} {f.nome}</p>
@@ -237,7 +239,7 @@ export default function MataVontade() {
 
       {etapa === "tempo" && (
         <div className={card}>
-          <p className="text-white text-lg mb-4">Quanto tempo você tem?</p>
+          <h2 tabIndex={-1} data-foco className="text-white text-lg mb-4 outline-none">Quanto tempo você tem?</h2>
           <div className="flex flex-wrap gap-2">
             {TEMPOS.map((t) => <Chip key={t.v} ativo={tempo === t.v} onClick={() => { setTempo(t.v); ir("casa"); }}>{t.r}</Chip>)}
           </div>
@@ -246,7 +248,7 @@ export default function MataVontade() {
 
       {etapa === "casa" && (
         <div className={card}>
-          <p className="text-white text-lg mb-1">O que tem aí?</p>
+          <h2 tabIndex={-1} data-foco className="text-white text-lg mb-1 outline-none">O que tem aí?</h2>
           <p className="text-gray-400 text-sm mb-4">Já marquei o que quase todo mundo tem. Desmarque o que faltar.</p>
           <p className="text-gray-300 text-sm mb-2">Na cozinha</p>
           <div className="flex flex-wrap gap-2 mb-5">
@@ -264,7 +266,7 @@ export default function MataVontade() {
             <input type="checkbox" checked={comprar} onChange={(e) => setComprar(e.target.checked)} className="w-5 h-5 accent-[#BA9E50]" />
             Se faltar algo, posso comprar
           </label>
-          <p className="text-gray-300 text-sm mt-4 mb-2">Alguma restrição? <span className="text-gray-500">(fica só no seu navegador)</span></p>
+          <p className="text-gray-300 text-sm mt-4 mb-2">Alguma restrição? <span className="text-gray-400">(fica só no seu navegador)</span></p>
           <div className="flex flex-wrap gap-2">
             {RESTRICOES.map((r) => <Chip key={r.id} ativo={restricoes.includes(r.id)} onClick={() => toggle(restricoes, setRestricoes, r.id)}>{r.r}</Chip>)}
           </div>
@@ -274,7 +276,7 @@ export default function MataVontade() {
 
       {etapa === "objetivo" && (
         <div className={card}>
-          <p className="text-white text-lg mb-4">O que você quer melhorar nessa escolha?</p>
+          <h2 tabIndex={-1} data-foco className="text-white text-lg mb-4 outline-none">O que você quer melhorar nessa escolha?</h2>
           <div className="flex flex-col gap-2">
             {OBJETIVOS.map((o) => (
               <button key={o.id} type="button" onClick={() => setObjetivo(o.id)} aria-pressed={objetivo === o.id}
@@ -292,7 +294,7 @@ export default function MataVontade() {
             <button type="button" onClick={voltar} className="text-sm text-gray-300 hover:text-white min-h-[44px]">← voltar</button>
             <button type="button" onClick={recomecar} className="text-sm text-gray-400 hover:text-white min-h-[44px] shrink-0">outra vontade</button>
           </div>
-          <p className="text-white text-xl mb-4" style={h}>Vontade de {familias.map((f) => f.nome.toLowerCase()).join(familias.length > 2 ? ", " : " e ").replace(/, ([^,]*)$/, " e $1")}: achei isso para você</p>
+          <h2 tabIndex={-1} data-foco className="text-white text-xl mb-4 outline-none" style={h}>Vontade de {familias.map((f) => f.nome.toLowerCase()).join(familias.length > 2 ? ", " : " e ").replace(/, ([^,]*)$/, " e $1")}: achei isso para você</h2>
           {!itens.length ? (
             <div className={card}>
               <p className="text-white">Com o que você tem e o tempo que escolheu, ainda não tenho uma versão boa disso.</p>
@@ -370,7 +372,7 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
                 </li>
               ))}
             </ul>
-            <p className="text-[11px] text-gray-500 mt-1">1ª barra: o que você pediu{pediu.length ? "" : ` (padrão de ${familia.nome.toLowerCase()})`} · 2ª: a receita</p>
+            <p className="text-[11px] text-gray-400 mt-1">1ª barra: o que você pediu{pediu.length ? "" : ` (padrão de ${familia.nome.toLowerCase()})`} · 2ª: a receita</p>
           </div>
           <div>
             <p className="text-white text-sm font-semibold mb-2">Ingredientes</p>
@@ -378,7 +380,7 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
               {rc.ingredientes.map((i) => (
                 <li key={i.id} className={r.faltam.includes(i.id) ? "text-amber-200" : "text-gray-300"}>
                   {r.faltam.includes(i.id) ? "○" : "●"} {INGREDIENTES[i.id].nome}: {i.qtd}{i.opcional ? " (opcional)" : ""}
-                  {i.troca && <span className="text-gray-500"> · troca: {i.troca}</span>}
+                  {i.troca && <span className="text-gray-400"> · troca: {i.troca}</span>}
                 </li>
               ))}
             </ul>
@@ -389,7 +391,7 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
             {rc.dica && <p className="text-sm mt-3" style={{ color: OURO }}>Dica: <span className="text-gray-300">{rc.dica}</span></p>}
           </div>
           {alerg.length > 0 && <p className="text-xs text-gray-400">Contém: {alerg.join(", ").replace("gluten", "glúten")}. Não garantimos ausência de traços.</p>}
-          <p className="text-xs text-gray-500">Receita em teste: proporções de partida, ainda em ajuste. Os valores nutricionais entram quando a receita for testada; quando entrarem, serão estimativas que variam com marca e quantidade.</p>
+          <p className="text-xs text-gray-400">Receita em teste: proporções de partida, ainda em ajuste. Os valores nutricionais entram quando a receita for testada; quando entrarem, serão estimativas que variam com marca e quantidade.</p>
           <div>
             <p className="text-white text-sm font-semibold mb-2">Fez? Matou a vontade?</p>
             <div className="flex flex-wrap gap-2">
@@ -397,7 +399,7 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
                 <Chip key={v} ativo={nota === v} onClick={() => onNota(v)}>{t}</Chip>
               ))}
             </div>
-            {nota && <p className="text-gray-400 text-xs mt-2">Valeu! Isso ajuda a ajustar a receita para todo mundo.</p>}
+            {nota && <p role="status" className="text-gray-400 text-xs mt-2">Valeu! Isso ajuda a ajustar a receita para todo mundo.</p>}
           </div>
           <Compartilhar contexto="tool-result" titulo="Montinho Mata a Vontade" caminho="/ferramentas/mata-a-vontade" local="tool_result" ferramenta="mata-a-vontade"
             resultado={[`Eu estava com vontade de ${familia.nome.toLowerCase()}`, `Achei: ${rc.nome}`, `Match: ${r.match}%`]} gancho="Montinho Mata a Vontade:" aparencia="discreto" />
