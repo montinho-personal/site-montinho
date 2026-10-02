@@ -97,7 +97,7 @@ export default function PersonalEmTambore() {
             Personal no Tamboré que mora aqui, conhece aqui e entrega resultado aqui.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Tamboré não precisa de mais uma ficha genérica. Precisa de um profissional que entenda a rotina de quem vive aqui e monte um protocolo que funcione de verdade — dentro da agenda real, não da agenda ideal.
+            Tamboré não precisa de mais uma ficha genérica. Precisa de um profissional que entenda a rotina de quem vive aqui e monte um protocolo que funcione de verdade — dentro da agenda real, não da agenda ideal. Começar é a parte fácil — o meu trabalho é estar perto para você conseguir continuar quando a rotina muda.
           </p>
           <a
             href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="personal-em-tambore:topo"
@@ -235,10 +235,10 @@ export default function PersonalEmTambore() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Vamos começar?
+            Começar é fácil. Vamos fazer você continuar?
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            A primeira conversa é sem compromisso. Me conta sua rotina e seu objetivo — e eu te mostro o que é possível fazer.
+            Não se compare com ninguém: cada pessoa tem a própria genética, a própria rotina e a própria história, com altos e baixos. O que importa é encontrar um jeito de treinar que você consiga seguir pelo resto da vida. A primeira conversa é sem compromisso. Me conta sua rotina e seu objetivo — e eu te mostro o que é possível fazer.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

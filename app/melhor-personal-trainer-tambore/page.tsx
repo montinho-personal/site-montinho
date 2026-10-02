@@ -97,7 +97,7 @@ export default function MelhorPersonalTrainerTambore() {
             Melhor personal trainer no Tamboré: o critério certo para escolher.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            "Melhor" não é opinião — é resultado verificável. Mais de 20 anos no Tamboré e Alphaville, centenas de alunos atendidos e um método que entrega progressão real. Esse é o critério que importa na hora de escolher.
+            "Melhor" não é opinião — é resultado verificável. Mais de 20 anos no Tamboré e Alphaville, centenas de alunos atendidos e um método que entrega progressão real. Esse é o critério que importa na hora de escolher. Começar é a parte fácil — o meu trabalho é estar perto para você conseguir continuar quando a rotina muda.
           </p>
           <a
             href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="melhor-personal-trainer-tambore:topo"
@@ -212,10 +212,10 @@ export default function MelhorPersonalTrainerTambore() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Julgue pelo processo. E pelos resultados.
+            Não é só sobre começar. É sobre conseguir continuar.
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            A primeira conversa é sem compromisso. Te apresento meu método, minha experiência e os resultados de quem já passou por aqui. Daí você decide.
+            Não se compare com ninguém: cada pessoa tem a própria genética, a própria rotina e a própria história, com altos e baixos. O que importa é encontrar um jeito de treinar que você consiga seguir pelo resto da vida. A primeira conversa é sem compromisso. Te apresento meu método, minha experiência e os resultados de quem já passou por aqui. Daí você decide.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

@@ -97,7 +97,7 @@ export default function PersonalTrainerHipertrofiaTambore() {
             Personal trainer para hipertrofia no Tamboré: ganho muscular com método real.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Quem busca hipertrofia no Tamboré sem acompanhamento costuma treinar muito e evoluir pouco. Com protocolo individualizado e sobrecarga progressiva, o estímulo certo chega no músculo certo — e o resultado aparece.
+            Quem busca hipertrofia no Tamboré sem acompanhamento costuma treinar muito e evoluir pouco. Com protocolo individualizado e sobrecarga progressiva, o estímulo certo chega no músculo certo — e o resultado aparece. Começar é a parte fácil — o meu trabalho é estar perto para você conseguir continuar quando a rotina muda.
           </p>
           <a
             href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="personal-trainer-para-hipertrofia-tambore:topo"
@@ -221,10 +221,10 @@ export default function PersonalTrainerHipertrofiaTambore() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Pronto para ganhar músculo de verdade no Tamboré?
+            Músculo vem de continuar. Não de começar de novo.
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            Com protocolo certo, progressão estruturada e acompanhamento real, o ganho muscular deixa de ser promessa e vira realidade mensurável.
+            Não se compare com ninguém: cada pessoa tem a própria genética, a própria rotina e a própria história, com altos e baixos. O que importa é encontrar um jeito de treinar que você consiga seguir pelo resto da vida. Com protocolo certo, progressão estruturada e acompanhamento real, o ganho muscular deixa de ser promessa e vira realidade mensurável.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

@@ -97,7 +97,7 @@ export default function PersonalTrainerReabilitacaoTambore() {
             Personal trainer para reabilitação no Tamboré: voltar a treinar com segurança.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Lesão não é o fim do treino — é um ponto de reconstrução. Com protocolo adaptado e progressão controlada no Tamboré, o retorno ao treino é feito com segurança e sem comprometer a recuperação.
+            Lesão não é o fim do treino — é um ponto de reconstrução. Com protocolo adaptado e progressão controlada no Tamboré, o retorno ao treino é feito com segurança e sem comprometer a recuperação. Começar é a parte fácil — o meu trabalho é estar perto para você conseguir continuar quando a rotina muda.
           </p>
           <a
             href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="personal-trainer-para-reabilitacao-tambore:topo"
@@ -225,10 +225,10 @@ export default function PersonalTrainerReabilitacaoTambore() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            A lesão passou. Agora é hora de reconstruir.
+            A lesão passou. Agora é voltar e conseguir continuar.
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            Me conta o histórico e a situação atual. Juntos planejamos o retorno ao treino de forma segura e eficiente.
+            Não se compare com ninguém: cada pessoa tem a própria genética, a própria rotina e a própria história, com altos e baixos. O que importa é encontrar um jeito de treinar que você consiga seguir pelo resto da vida. Me conta o histórico e a situação atual. Juntos planejamos o retorno ao treino de forma segura e eficiente.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

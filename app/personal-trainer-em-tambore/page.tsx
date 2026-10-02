@@ -97,7 +97,7 @@ export default function PersonalTrainerEmTambore() {
             Personal trainer no Tamboré: protocolo seu, atenção exclusiva, resultado real.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Em Tamboré, o tempo é escasso e a exigência é alta. Personal trainer que vive na região há mais de 20 anos sabe como montar um protocolo que funciona dentro da sua rotina — não apesar dela.
+            Em Tamboré, o tempo é escasso e a exigência é alta. Personal trainer que vive na região há mais de 20 anos sabe como montar um protocolo que funciona dentro da sua rotina — não apesar dela. Começar é a parte fácil — o meu trabalho é estar perto para você conseguir continuar quando a rotina muda.
           </p>
           <a
             href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="personal-trainer-em-tambore:topo"
@@ -227,10 +227,10 @@ export default function PersonalTrainerEmTambore() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Pronto para treinar com quem conhece Tamboré de verdade?
+            Não é só sobre começar. É sobre conseguir continuar.
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            A primeira conversa é sem compromisso. Me conta seu objetivo e sua rotina — e te mostro como chegar lá.
+            Não se compare com ninguém: cada pessoa tem a própria genética, a própria rotina e a própria história, com altos e baixos. O que importa é encontrar um jeito de treinar que você consiga seguir pelo resto da vida. A primeira conversa é sem compromisso. Me conta seu objetivo e sua rotina — e te mostro como chegar lá.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
