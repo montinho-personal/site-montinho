@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Personal Trainer Tamboré e Barueri | Montinho Personal Trainer",
     description:
-      "Personal trainer no Tamboré e Barueri com método científico e experiência local de mais de 20 anos. Protocolo individual, resultado duradouro.",
+      "Personal trainer no Tamboré e Barueri: treino no condomínio, em casa ou na Arena 18, com ajustes conforme a sua rotina e a sua evolução.",
     url: `${SITE_URL}/personal-trainer-tambore-barueri`,
   },
 };
@@ -26,12 +26,12 @@ const faq = [
   {
     question: "Personal trainer atende tanto no Tamboré quanto em Barueri?",
     answer:
-      "Sim. Atendo em toda a região — Tamboré, Alphaville, Barueri centro, Jardim Belval, Jardim Silveira e demais bairros próximos. A localização exata do atendimento é definida com base na conveniência do aluno, seja em academia parceira, condomínio ou domicílio.",
+      "Sim. Atendo em toda a região — Tamboré, Alphaville, Barueri centro, Jardim Belval, Jardim Silveira e demais bairros próximos. A localização exata do atendimento é definida com base na conveniência do aluno, seja no condomínio, em casa ou na Arena 18. Em outras academias, depende das regras do local para personal externo e de combinação prévia.",
   },
   {
     question: "Qual a diferença entre personal trainer no Tamboré e em Barueri?",
     answer:
-      "O serviço é o mesmo — protocolo individualizado, acompanhamento exclusivo e progressão estruturada. A diferença é geográfica: no Tamboré o perfil de atendimento costuma ser mais voltado a condomínios e academias de bairro residencial, enquanto em Barueri há mais academias comerciais e espaços corporativos. O protocolo é adaptado ao contexto de cada local.",
+      "O serviço é o mesmo — protocolo individualizado, acompanhamento exclusivo e progressão estruturada. A diferença é geográfica: no Tamboré o atendimento costuma acontecer mais em condomínios e em casa. O protocolo é adaptado ao equipamento de cada local.",
   },
   {
     question: "Personal trainer em Barueri precisa de avaliação antes de começar?",
@@ -41,7 +41,7 @@ const faq = [
   {
     question: "Tem personal trainer que atende perto de Tamboré aos finais de semana?",
     answer:
-      "Dependendo da disponibilidade de agenda, atendo aos sábados. Para alunos com semana muito carregada, o treino de final de semana pode ser incorporado ao protocolo. Conversamos sobre isso no primeiro contato.",
+      "Dependendo da disponibilidade de agenda, atendo aos sábados, apenas pela manhã. Para alunos com semana muito carregada, o treino de final de semana pode ser incorporado ao protocolo. Conversamos sobre isso no primeiro contato.",
   },
   {
     question: "Personal trainer em Barueri e Tamboré também faz treino online?",
@@ -56,7 +56,7 @@ const localSchema = {
   "@id": `${SITE_URL}/personal-trainer-tambore-barueri`,
   name: "Montinho Personal Trainer – Tamboré e Barueri",
   description:
-    "Personal trainer atendendo Tamboré e Barueri com mais de 20 anos de experiência. Protocolo individual para emagrecimento, hipertrofia e qualidade de vida.",
+    "Personal trainer atendendo Tamboré e Barueri, região onde vive há mais de 20 anos. Protocolo individual para emagrecimento, hipertrofia e qualidade de vida.",
   url: `${SITE_URL}/personal-trainer-tambore-barueri`,
   telephone: "+5511981063409",
   areaServed: [
@@ -65,7 +65,6 @@ const localSchema = {
     { "@type": "City", name: "Santana de Parnaíba" },
   ],
   serviceType: "Personal Trainer",
-  priceRange: "$$",
 };
 
 const faqSchema = {
@@ -94,10 +93,10 @@ export default function PersonalTrainerTamboreBarueri() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal trainer no Tamboré e Barueri: 20 anos na região, um método que funciona.
+            Personal trainer no Tamboré e Barueri: perto de você para ajustar o treino quando a rotina muda.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Seja no Tamboré, Alphaville ou Barueri, o protocolo de treino precisa respeitar a realidade de quem vive aqui. Profissional com duas décadas na região conhece essa realidade melhor do que ninguém.
+            A semana em que você faltou, a carga que parou de subir, o condomínio que fechou a academia para reforma: quem está perto vê isso cedo e ajusta o treino com você. No Tamboré, em Alphaville ou em Barueri, no condomínio, em casa ou na Arena 18.
           </p>
           <a
             href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="personal-trainer-tambore-barueri:topo"
@@ -125,13 +124,13 @@ export default function PersonalTrainerTamboreBarueri() {
           <div className="grid sm:grid-cols-[1fr_auto] gap-10 items-start">
             <div className="space-y-5 text-gray-300 leading-relaxed font-light">
               <p>
-                Tamboré e Barueri têm perfis distintos, mas compartilham a mesma demanda: profissionais e famílias com agenda exigente que precisam de resultado eficiente dentro do tempo disponível. Não há espaço para treino que não funciona ou protocolo que exige mais do que a rotina permite.
+                Tamboré e Barueri têm perfis distintos, mas compartilham a mesma demanda: profissionais e famílias com agenda exigente que precisam de um treino que caiba no tempo disponível e mude quando a rotina muda. Não há espaço para protocolo que exige mais do que a rotina permite.
               </p>
               <p>
-                Atendo nessa região há mais de 20 anos. Conheço as academias de Barueri e os condomínios de Tamboré. Sei quais locais têm equipamento adequado, quais têm limitações e como montar o melhor protocolo para cada contexto. Isso é informação que nenhum personal recém-chegado tem.
+                Vivo essa região há mais de 20 anos. Conheço os condomínios do Tamboré e as academias de Barueri, sei quais espaços têm equipamento adequado e quais têm limitações, e monto o treino em cima do que existe de verdade no seu local.
               </p>
               <p>
-                Ao longo dessas duas décadas, atendi centenas de alunos com perfis e objetivos distintos — emagrecimento, hipertrofia, reabilitação, condicionamento físico, qualidade de vida. O que todos têm em comum é que chegaram com uma demanda e saíram com um resultado concreto.
+                Já acompanhei mais de 100 alunos com perfis e objetivos distintos — emagrecimento, hipertrofia, reabilitação, condicionamento físico, qualidade de vida. Cada um com um ponto de partida diferente, e um treino ajustado a ele.
               </p>
             </div>
             <div className="flex-shrink-0 mx-auto sm:mx-0">
@@ -168,17 +167,17 @@ export default function PersonalTrainerTamboreBarueri() {
               {
                 num: "01",
                 title: "Tamboré e Alphaville",
-                text: "Academias de condomínio, academias parceiras e atendimento a domicílio em toda a extensão de Tamboré e Alphaville.",
+                text: "Academias de condomínio, atendimento em casa e na Arena 18, em toda a extensão de Tamboré e Alphaville.",
               },
               {
                 num: "02",
                 title: "Barueri",
-                text: "Academias comerciais e parceiros em Barueri centro, Jardim Silveira, Jardim Belval e demais bairros da cidade.",
+                text: "Condomínios e atendimento em casa em Barueri centro, Jardim Silveira, Jardim Belval e demais bairros. Em academias, depende das regras do local para personal externo.",
               },
               {
                 num: "03",
                 title: "Santana de Parnaíba",
-                text: "Atendimento em Santana de Parnaíba, incluindo condomínios e academias da cidade.",
+                text: "Atendimento em Santana de Parnaíba, em condomínios e em casa.",
               },
               {
                 num: "04",
@@ -231,7 +230,7 @@ export default function PersonalTrainerTamboreBarueri() {
             Tamboré ou Barueri — estou perto de você.
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            Me conta onde você mora e qual é o seu objetivo. Organizamos o atendimento na localização mais conveniente para a sua rotina.
+            Antes, uma coisa: não se compare com ninguém. Cada pessoa tem a própria genética, a própria rotina e a própria história, com altos e baixos. O que importa é encontrar um jeito de treinar que você consiga seguir pelo resto da vida, com aderência e progressão. Me conta onde você mora e qual é o seu objetivo, e organizamos o atendimento no local mais conveniente para a sua rotina.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
