@@ -94072,8 +94072,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   },
   {
     slug: "alimentos-que-dao-saciedade",
-    title: "Alimentos Que Dão Saciedade: O Que Comer Para Sentir Menos Fome",
-    metaTitle: "Alimentos Que Dão Saciedade: Sinta Menos Fome",
+    title: "O Que Mata a Fome Sem Engordar? Alimentos Que Dão Saciedade",
+    metaTitle: "O Que Mata a Fome Sem Engordar? Alimentos Que Saciam",
     metaDescription:
       "Lista de alimentos que dão mais saciedade por caloria: proteínas, fibras, batata, ovos e mais. Aprenda a montar refeições que seguram a fome no emagrecimento.",
     excerpt:
@@ -109760,8 +109760,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   },
   {
     slug: "beliscar-engorda",
-    title: "Beliscar Engorda? O Vilão Invisível da Dieta",
-    metaTitle: "Beliscar Engorda? O Vilão Invisível da Dieta",
+    title: "Beliscar Engorda? Como Parar de Beliscar Sem Culpa",
+    metaTitle: "Beliscar Engorda? Como Parar de Beliscar Sem Culpa",
     metaDescription:
       "Beliscar engorda sim quando ninguém conta. Veja a matemática das calorias invisíveis, tabela de beliscos comuns, gatilhos e estratégias práticas sem culpa.",
     excerpt:
