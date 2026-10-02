@@ -45,6 +45,7 @@ const breadcrumbSchema = {
 };
 
 const faq: ItemFAQ[] = [
+  { question: "O que são calorias fantasmas?", answer: "É o nome que uso para as calorias que existem mas não entram na conta de quem come: o pedaço provado na panela, a batata do prato do outro, o “só um quadradinho”, a bebida adoçada. Elas não aparecem quando a pessoa lembra o que comeu no dia, mas o corpo soma do mesmo jeito. O Beliscômetro existe para encontrá-las." },
   { question: "Beliscar engorda?", answer: "Beliscar não é um problema por si só. O que pesa é o total do dia: pequenos consumos que não entram na conta mental de quem está comendo podem somar bastante ao longo do dia e da semana. Por isso o Beliscômetro soma os episódios — para você ver o conjunto, não para proibir nenhum alimento." },
   { question: "O que fazer para não ficar beliscando toda hora?", answer: "Algumas estratégias costumam ajudar sem exigir cortar nada: servir uma porção no prato em vez de comer do pacote, tirar a comida da vista, dar um horário para o lanche e comer sem tela quando der. Refeições com proteína e fibras também costumam deixar menos espaço para o belisco por fome." },
   { question: "Por que o corpo da gente fica beliscando?", answer: "Muitas vezes não é fome: é hábito, comida à vista, tédio, cansaço ou a atenção presa em outra coisa (tela, trabalho, volante). O perfil de belisco do resultado ajuda a enxergar qual desses padrões aparece mais na sua rotina." },
@@ -83,7 +84,7 @@ export default function BeliscometroPage() {
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <p className="text-[11px] font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: "#BA9E50" }}>Você esquece. O corpo soma.</p>
           <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-3" style={h}>Beliscômetro: descubra quanto você come sem perceber</h1>
-          <p className="text-gray-300 text-lg leading-relaxed mb-8">Pequenos episódios, isoladamente, parecem irrelevantes. Juntos, revelam um padrão.</p>
+          <p className="text-gray-300 text-lg leading-relaxed mb-8">Pequenos episódios, isoladamente, parecem irrelevantes. São as calorias fantasmas: ninguém vê, ninguém conta — mas, juntas, revelam um padrão.</p>
           <Beliscometro />
         </div>
       </section>

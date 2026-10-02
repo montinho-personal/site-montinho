@@ -149,7 +149,7 @@ export default function Beliscometro({ preset }: { preset?: { momentos?: string[
           <p className="text-gray-200 text-lg leading-relaxed" style={h}>
             Um chocolate aqui.<br />Uma batata dali.<br />Um punhado de amendoim enquanto trabalha.
           </p>
-          <p className="text-gray-400 mt-3">Separadamente, quase nada parece importante. Mas quanto isso representa no seu dia?</p>
+          <p className="text-gray-400 mt-3">Separadamente, quase nada parece importante. São as <strong className="text-white">calorias fantasmas</strong> 👻: ninguém vê, ninguém conta. Mas quanto elas representam no seu dia?</p>
           <div className="mt-5 border-l-2 pl-4 py-1" style={{ borderColor: OURO }}>
             <p className="text-white text-sm font-semibold">Pense num dia comum seu — ontem, por exemplo.</p>
             <p className="text-gray-400 text-sm mt-1">Marque só o que você costuma beliscar de verdade, não tudo que já beliscou na vida. O que é de vez em quando entra como “algumas vezes por semana” ou “só no fim de semana”, e a conta vira média por dia.</p>
@@ -352,7 +352,7 @@ function Resultado({ respostas, res, mudanca, setMudanca, semCortar, setSemCorta
         { tipo: "rotulo", texto: "Meu maior belisco" }, { tipo: "valor", texto: top?.alimento.nome ?? "—", emoji: top?.alimento.emoji },
         ...(res.momentoCampeao ? [{ tipo: "rotulo" as const, texto: "Momento crítico" }, { tipo: "valor" as const, texto: res.momentoCampeao.rotulo, emoji: res.momentoCampeao.emoji }] : []),
         { tipo: "rotulo", texto: "Meu perfil" }, { tipo: "valor", texto: perfil.nome, emoji: perfil.emoji },
-        { tipo: "rotulo", texto: "Beliscos estimados" }, { tipo: "grande", texto: `≈ ${fmt(res.kcalDia)} kcal/dia` },
+        { tipo: "rotulo", texto: "Minhas calorias fantasmas 👻" }, { tipo: "grande", texto: `≈ ${fmt(res.kcalDia)} kcal/dia` },
         { tipo: "frase", texto: "“Você esquece. O corpo soma.”" },
       ], "montinhopersonal.com.br/ferramentas/beliscometro");
       const via = await compartilharImagem(blob, `beliscometro-${formato}.png`, "Fiz o Beliscômetro do Montinho: https://www.montinhopersonal.com.br/ferramentas/beliscometro?utm_source=share&utm_medium=card&utm_campaign=beliscometro");
@@ -376,7 +376,8 @@ function Resultado({ respostas, res, mudanca, setMudanca, semCortar, setSemCorta
         <p className="text-white text-xl mt-8 leading-snug" style={h}>Esses alimentos nunca estiveram juntos no seu prato.<br /><span style={{ color: OURO }}>Mas estiveram juntos no seu dia.</span></p>
       </section>
 
-      <section className={`${sec} grid grid-cols-2 gap-3`} aria-label="Total estimado">
+      <section className={`${sec} grid grid-cols-2 gap-3`} aria-label="Calorias fantasmas estimadas">
+        <p className="col-span-2 text-center text-white text-lg" style={h}><span aria-hidden>👻</span> Suas calorias fantasmas</p>
         <div className="border border-white/15 p-4 text-center" style={{ background: "rgba(186,158,80,.08)" }}>
           <p className="text-xs uppercase tracking-[0.15em] text-gray-400">Por dia</p>
           <p className="text-4xl font-bold mt-1" style={{ ...h, color: OURO }}>≈ <Contador valor={res.kcalDia} /></p>
@@ -402,7 +403,7 @@ function Resultado({ respostas, res, mudanca, setMudanca, semCortar, setSemCorta
             </li>
           ))}
         </ol>
-        <p className="text-gray-300 border-t border-white/10 pt-3 flex justify-between"><strong className="text-white">Beliscos estimados</strong><strong className="tabular-nums" style={{ color: OURO }}>≈ {fmt(res.kcalDia)} kcal/dia</strong></p>
+        <p className="text-gray-300 border-t border-white/10 pt-3 flex justify-between"><strong className="text-white">👻 Calorias fantasmas</strong><strong className="tabular-nums" style={{ color: OURO }}>≈ {fmt(res.kcalDia)} kcal/dia</strong></p>
         <p className="text-white mt-4" style={h}>Separadamente, talvez nenhum deles parecesse importante. Juntos, contam outra história.</p>
       </section>
 
@@ -491,7 +492,8 @@ function Resultado({ respostas, res, mudanca, setMudanca, semCortar, setSemCorta
           <p className="text-3xl mt-2" aria-hidden>{res.linhas.slice(0, 6).map((l) => l.alimento.emoji).join(" ")}</p>
           <p className="text-gray-300 mt-3 text-sm">Meu maior belisco: <strong className="text-white">{res.podio[0]?.alimento.nome}</strong></p>
           {res.momentoCampeao && <p className="text-gray-300 text-sm">Momento crítico: <strong className="text-white">{res.momentoCampeao.emoji} {res.momentoCampeao.rotulo}</strong></p>}
-          <p className="text-3xl font-bold mt-2" style={{ ...h, color: OURO }}>≈ {fmt(res.kcalDia)} kcal/dia</p>
+          <p className="text-gray-400 text-xs mt-3 uppercase tracking-[0.15em]">Calorias fantasmas 👻</p>
+          <p className="text-3xl font-bold" style={{ ...h, color: OURO }}>≈ {fmt(res.kcalDia)} kcal/dia</p>
           <p className="text-white italic mt-2" style={h}>“Você esquece. O corpo soma.”</p>
         </div>
         <div className="flex flex-wrap gap-2 mt-3">

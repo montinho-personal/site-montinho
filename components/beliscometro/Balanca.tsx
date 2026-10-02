@@ -64,7 +64,7 @@ export default function Balanca({ kcalBeliscos }: { kcalBeliscos?: number }) {
       { tipo: "rotulo", texto: "Você achou que" }, { tipo: "valor", texto: `+${kg(subiu)} kg na balança = +${kg(subiu)} kg de gordura` },
       { tipo: "rotulo", texto: `Mas ${kg(subiu)} kg de gordura representariam` }, { tipo: "grande", texto: `≈ ${kc(subiu * KCAL_POR_KG)} kcal` },
       { tipo: "rotulo", texto: "de SUPERÁVIT energético" },
-      ...(temBeliscos ? [{ tipo: "espaco" as const }, { tipo: "rotulo" as const, texto: "Meu Beliscômetro estimou" }, { tipo: "valor" as const, texto: `≈ ${kc(kcalBeliscos!)} kcal/dia` }] : []),
+      ...(temBeliscos ? [{ tipo: "espaco" as const }, { tipo: "rotulo" as const, texto: "Minhas calorias fantasmas" }, { tipo: "valor" as const, texto: `≈ ${kc(kcalBeliscos!)} kcal/dia` }] : []),
       { tipo: "espaco" }, { tipo: "frase", texto: "A balança conta peso.\nNão conta a história." },
     ], "montinhopersonal.com.br/ferramentas/beliscometro");
     const via = await compartilharImagem(blob, `balanca-${formato}.png`, "A balança conta peso. Não conta a história. https://www.montinhopersonal.com.br/ferramentas/beliscometro?utm_source=share&utm_medium=card&utm_campaign=balanca#balanca");
@@ -201,7 +201,7 @@ export default function Balanca({ kcalBeliscos }: { kcalBeliscos?: number }) {
               <H2>Percebe a diferença?</H2>
               <div className="grid grid-cols-3 gap-2 mt-4 text-center">
                 <div><p className="text-xs text-gray-400 uppercase">A balança mostrou</p><p className="text-white text-2xl font-bold" style={h}>+{kg(subiu)} kg</p></div>
-                <div><p className="text-xs text-gray-400 uppercase">Seus beliscos</p><p className="text-white text-2xl font-bold" style={h}>≈ {kc(kcalBeliscos!)}</p><p className="text-xs text-gray-400">kcal/dia</p></div>
+                <div><p className="text-xs text-gray-400 uppercase">Calorias fantasmas</p><p className="text-white text-2xl font-bold" style={h}>≈ {kc(kcalBeliscos!)}</p><p className="text-xs text-gray-400">kcal/dia</p></div>
                 <div><p className="text-xs text-gray-400 uppercase">Equivalente teórico</p><p className="text-2xl font-bold" style={{ ...h, color: OURO }}>{eq.kg.max === 0 ? "≈ 0" : eq.kg.min === eq.kg.max ? `≈ ${kg(eq.kg.max)}` : `${kg(eq.kg.min)}–${kg(eq.kg.max)}`}</p><p className="text-xs text-gray-400">kg no período</p></div>
               </div>
               <p className="text-gray-300 text-sm mt-4">{alem === "substituiram"
@@ -229,7 +229,7 @@ export default function Balanca({ kcalBeliscos }: { kcalBeliscos?: number }) {
             <p className="text-white text-2xl font-bold" style={h}>+{kg(subiu)} kg na balança = +{kg(subiu)} kg de gordura</p>
             <p className="text-xs uppercase tracking-[0.2em] text-gray-400 mt-4">Mas {kg(subiu)} kg de gordura representariam</p>
             <p className="text-3xl font-bold" style={{ ...h, color: OURO }}>≈ {kc(subiu * KCAL_POR_KG)} kcal de SUPERÁVIT</p>
-            {temBeliscos && <p className="text-gray-300 mt-3">Seu Beliscômetro estimou: <strong className="text-white">≈ {kc(kcalBeliscos!)} kcal/dia</strong></p>}
+            {temBeliscos && <p className="text-gray-300 mt-3">Suas calorias fantasmas: <strong className="text-white">≈ {kc(kcalBeliscos!)} kcal/dia</strong></p>}
             <p className="text-white text-xl italic mt-4" style={h}>A balança conta peso.<br />Não conta a história.</p>
           </div>
           <div className="flex flex-wrap gap-2">
