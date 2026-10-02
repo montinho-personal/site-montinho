@@ -1,4 +1,4 @@
-import { interpretar, recomendar, pontuar, type Pedido } from "../lib/mata-vontade/motor";
+import { alergenosDe, interpretar, recomendar, pontuar, type Pedido } from "../lib/mata-vontade/motor";
 import { FAMILIAS } from "../lib/mata-vontade/familias";
 import { RECEITAS, INGREDIENTES } from "../lib/mata-vontade/receitas";
 import { existsSync, readFileSync } from "node:fs";
@@ -22,15 +22,15 @@ ok(!RECEITAS.some((r) => /massa crua|ovo cru/i.test(r.passos.join(" "))), "nada 
 ok(!RECEITAS.some((r) => r.equip === "fogao" && r.ingredientes.some((i) => i.id === "whey")), "whey não vai ao fogão");
 
 // Interpretação
-const fi = (t: string) => { const r = interpretar(t); return r.tipo === "familia" ? r.familia.id : r.tipo; };
-ok(fi("Bolo-de-Chocolate!!") === "bolo-chocolate", "normaliza hífen e pontuação");
-ok(fi("bolo de caneca") === "bolo-caneca", "o sinônimo mais longo vence");
-ok(fi("bronie") === "brownie", "erro de digitação: bronie");
-ok(fi("cheescake") === "cheesecake", "erro de digitação: cheescake");
-ok(fi("nutela") === "nutella", "nutela → nutella");
-ok(fi("só quero besteira") === "vago", "vago");
-ok(fi("pizza") === "salgado", "salgado");
-ok(fi("xyzabc") === "desconhecido", "desconhecido");
+const fa = (t: string) => { const r = interpretar(t); return r.tipo === "familia" ? r.familia.id : r.tipo; };
+ok(fa("Bolo-de-Chocolate!!") === "bolo-chocolate", "normaliza hífen e pontuação");
+ok(fa("bolo de caneca") === "bolo-caneca", "o sinônimo mais longo vence");
+ok(fa("bronie") === "brownie", "erro de digitação: bronie");
+ok(fa("cheescake") === "cheesecake", "erro de digitação: cheescake");
+ok(fa("nutela") === "nutella", "nutela → nutella");
+ok(fa("só quero besteira") === "vago", "vago");
+ok(fa("pizza") === "salgado", "salgado");
+ok(fa("xyzabc") === "desconhecido", "desconhecido");
 const s = interpretar("sorvete de morango gelado");
 ok(s.tipo === "familia" && s.chips.includes("morango") && s.temperatura === "gelado", "modificadores no texto");
 const bc = interpretar("bolo de chocolate");
@@ -54,6 +54,24 @@ const semLac = recomendar(base({ familia: fam("brigadeiro"), restricoes: ["lacto
 ok(semLac.todos.length > 0 && semLac.todos.every((x) => x.receita.id === "brigadeiro-banana-cacau" || !x.receita.ingredientes.some((i) => !i.opcional && !i.troca && ["whey", "leite", "leite-po", "leite-condensado"].includes(i.id))), "sem lactose filtra lácteos");
 const vegano = recomendar(base({ familia: fam("brownie"), restricoes: ["vegana"] }));
 ok(vegano.todos.every((x) => x.receita.marcas.includes("vegana")), "vegana só traz receita vegana");
+
+// Auditoria: restrição nunca devolve receita com o alérgeno (nem por "troca")
+for (const x of ["lactose", "gluten", "ovo", "amendoim"]) {
+  const vaza = FAMILIAS.flatMap((f) => recomendar(base({ familia: f, restricoes: [x], tenho: Object.keys(INGREDIENTES) })).todos)
+    .filter((r) => r.receita.ingredientes.some((i) => !i.opcional && (INGREDIENTES[i.id]?.alergenos ?? []).includes(x)));
+  ok(vaza.length === 0, `restrição ${x} nunca vaza`, vaza.map((r) => r.receita.id).join(","));
+}
+const rotuloErrado = RECEITAS.filter((r) => (r.marcas.includes("sem-gluten") && alergenosDe(r).includes("gluten")) || (r.marcas.includes("sem-lactose") && alergenosDe(r).includes("lactose")));
+ok(rotuloErrado.length === 0, "rótulo sem-X não contradiz ingredientes", rotuloErrado.map((r) => r.id).join(","));
+ok(fa("mousse de chocolate") === "mousse", "mousse de chocolate → mousse", fa("mousse de chocolate"));
+ok(fa("pudim de chocolate") === "pudim", "pudim de chocolate → pudim", fa("pudim de chocolate"));
+ok(fa("bolos") !== "desconhecido", "plural: bolos", fa("bolos"));
+ok(fa("não sei") === "vago", "não sei → vago", fa("não sei"));
+const gel = interpretar("sorvete bem gelada"); ok(gel.tipo === "familia" && gel.temperatura === "gelado", "gelada → gelado");
+const agora = FAMILIAS.flatMap((f) => recomendar(base({ familia: f, tempoMax: 5 })).todos).filter((r) => (r.receita.esperaMin ?? 0) > 15);
+ok(agora.length === 0, "pouco tempo: nada de horas no congelador", agora.map((r) => r.receita.id).join(","));
+const prot = recomendar(base({ familia: fam("pudim"), objetivo: "proteina" }));
+ok(!prot.estrategia || prot.estrategia.receita.familia === "pudim" || !prot.todos.some((x) => x.receita.familia === "pudim" && x.receita.id !== prot.melhor?.receita.id && x.receita.id !== prot.rapido?.receita.id), "objetivo prefere a mesma família", prot.estrategia?.receita.id);
 
 // Tempo e equipamento
 const rapido = recomendar(base({ familia: fam("brownie"), tempoMax: 5 }));
