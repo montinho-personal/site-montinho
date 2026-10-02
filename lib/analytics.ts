@@ -5,6 +5,9 @@
 
 export type AnalyticsEvent =
   | "click_whatsapp"
+  /** Palpite "quem vence?" nos artigos de evento (sem dado pessoal). */
+  | "palpite_voto"
+  | "palpite_compartilhar"
   /**
    * Clique no WhatsApp a partir de uma landing page de anúncio (/lp/*).
    *
