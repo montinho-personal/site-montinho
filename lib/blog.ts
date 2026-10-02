@@ -94072,8 +94072,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   },
   {
     slug: "alimentos-que-dao-saciedade",
-    title: "Alimentos Que Dão Saciedade: O Que Comer Para Sentir Menos Fome",
-    metaTitle: "Alimentos Que Dão Saciedade: Sinta Menos Fome",
+    title: "O Que Mata a Fome Sem Engordar? Alimentos Que Dão Saciedade",
+    metaTitle: "O Que Mata a Fome Sem Engordar? Alimentos Que Saciam",
     metaDescription:
       "Lista de alimentos que dão mais saciedade por caloria: proteínas, fibras, batata, ovos e mais. Aprenda a montar refeições que seguram a fome no emagrecimento.",
     excerpt:
@@ -109760,8 +109760,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   },
   {
     slug: "beliscar-engorda",
-    title: "Beliscar Engorda? O Vilão Invisível da Dieta",
-    metaTitle: "Beliscar Engorda? O Vilão Invisível da Dieta",
+    title: "Beliscar Engorda? Como Parar de Beliscar Sem Culpa",
+    metaTitle: "Beliscar Engorda? Como Parar de Beliscar Sem Culpa",
     metaDescription:
       "Beliscar engorda sim quando ninguém conta. Veja a matemática das calorias invisíveis, tabela de beliscos comuns, gatilhos e estratégias práticas sem culpa.",
     excerpt:
@@ -109839,7 +109839,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Tem um tipo de aluno que me deixa intrigado nas primeiras semanas. Ele treina certinho, descreve refeições impecáveis, come arroz, feijão, frango, salada — e a balança não sai do lugar. Aí eu peço uma coisa simples: anote absolutamente tudo o que entrar na sua boca por três dias, incluindo o que você acha que não conta. Em quase todos os casos, o mistério se resolve na primeira anotação.</p>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/beliscar-engorda.webp" alt="Beliscar engorda? As calorias invisíveis dos beliscos que sabotam a dieta sem você perceber" title="Beliscar engorda? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+  <img src="/blog-images/beliscar-engorda.webp" alt="Beliscar engorda? As calorias fantasmas dos beliscos que somam sem você perceber" title="Beliscar engorda? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 
 <p>Beliscar engorda? A resposta honesta é: <strong>beliscar não é bom nem ruim por natureza — beliscar engorda quando ele adiciona calorias que ninguém está contabilizando</strong>. E o problema do belisco é exatamente esse: ele é invisível. Não vira refeição, não vira lembrança, não vira consciência. Mas vira caloria.</p>
