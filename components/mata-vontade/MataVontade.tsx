@@ -254,7 +254,7 @@ export default function MataVontade() {
       {etapa === "casa" && (
         <div className={card}>
           <h2 tabIndex={-1} data-foco className="text-white text-lg mb-1 outline-none">O que tem aí?</h2>
-          <p className="text-gray-400 text-sm mb-4">Já marquei o que quase todo mundo tem. Desmarque o que faltar. Whey: vale qualquer marca.</p>
+          <p className="text-gray-400 text-sm mb-4">Já marquei o que quase todo mundo tem. Desmarque o que faltar. Whey: vale o que você tiver.</p>
           <p className="text-gray-300 text-sm mb-2">Na cozinha</p>
           <div className="flex flex-wrap gap-2 mb-5">
             {EQUIPS.map((e) => <Chip key={e.id} ativo={equip.includes(e.id)} onClick={() => toggle(equip, setEquip as (v: string[]) => void, e.id)}>{e.r}</Chip>)}
@@ -396,7 +396,7 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
             {rc.dica && <p className="text-sm mt-3" style={{ color: OURO }}>Dica: <span className="text-gray-300">{rc.dica}</span></p>}
           </div>
           {alerg.length > 0 && <p className="text-xs text-gray-400">Contém: {alerg.join(", ").replace("gluten", "glúten")}. Não garantimos ausência de traços.</p>}
-          <p className="text-xs text-gray-400">Receita em teste: proporções de partida, ainda em ajuste. Pode usar o whey que você tiver; como referência, uso a tabela nutricional de um whey concentrado com cerca de 80% de proteína (Growth). Os valores nutricionais entram quando a receita for testada e serão estimativas que variam com marca e quantidade.</p>
+          <p className="text-xs text-gray-400">Receita em teste: proporções de partida, ainda em ajuste. Pode usar o whey que você tiver; como referência, uso a tabela nutricional de um whey concentrado com cerca de 80% de proteína. Os valores nutricionais entram quando a receita for testada e serão estimativas que variam com marca e quantidade.</p>
           <div>
             <p className="text-white text-sm font-semibold mb-2">Fez? Matou a vontade?</p>
             <div className="flex flex-wrap gap-2">
