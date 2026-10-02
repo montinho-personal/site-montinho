@@ -40,6 +40,13 @@ export default function Balanca({ kcalBeliscos }: { kcalBeliscos?: number }) {
   const [periodo, setPeriodo] = useState<PeriodoId>("fds");
   const [simKg, setSimKg] = useState(2);
   const mexeu = useRef(false);
+  const raiz = useRef<HTMLDivElement>(null);
+  const montou = useRef(false);
+  // A cada etapa, volta ao topo do capítulo (senão a tela fica lá embaixo, no CTA).
+  useEffect(() => {
+    if (!montou.current) { montou.current = true; return; }
+    raiz.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [p]);
   const temBeliscos = typeof kcalBeliscos === "number" && kcalBeliscos > 0;
 
   useEffect(() => { trackEvent("balanca_start", { com_beliscometro: temBeliscos }); }, [temBeliscos]);
@@ -72,7 +79,7 @@ export default function Balanca({ kcalBeliscos }: { kcalBeliscos?: number }) {
   }
 
   return (
-    <div id="balanca" className="scroll-mt-24 space-y-6 text-left">
+    <div ref={raiz} id="balanca" className="scroll-mt-24 space-y-6 text-left">
       <div className="text-center">
         <p className="text-xs uppercase tracking-[0.25em]" style={{ color: OURO }}>Capítulo 2</p>
         <p className="text-white text-3xl font-bold mt-1" style={h}>O que a balança não conta</p>
