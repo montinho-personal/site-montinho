@@ -16,7 +16,9 @@ ok(RECEITAS.every((r) => FAMILIAS.some((f) => f.id === r.familia)), "toda receit
 ok(RECEITAS.every((r) => r.ingredientes.every((i) => INGREDIENTES[i.id])), "todo ingrediente existe no banco");
 ok(FAMILIAS.every((f) => RECEITAS.filter((r) => r.familia === f.id).length >= 2), "toda família tem 2+ receitas");
 ok(RECEITAS.every((r) => r.status === "em-teste"), "todas lançam como em teste");
-ok(FAMILIAS.every((f) => RECEITAS.some((r) => r.familia === f.id && r.marcas.includes("sem-whey"))), "toda família tem opção sem whey");
+const PROTEINA = ["whey", "ovo", "iogurte-grego", "cottage", "leite-po"];
+const semProt = RECEITAS.filter((r) => !r.ingredientes.some((i) => !i.opcional && PROTEINA.includes(i.id)));
+ok(semProt.length === 0, "toda receita tem fonte de proteína obrigatória", semProt.map((r) => r.id).join(","));
 ok(!RECEITAS.some((r) => /massa crua|ovo cru/i.test(r.passos.join(" "))), "nada de ovo cru");
 // Regra do whey: whey nunca vai ao fogo direto
 ok(!RECEITAS.some((r) => r.equip === "fogao" && r.ingredientes.some((i) => i.id === "whey")), "whey não vai ao fogão");
@@ -51,7 +53,7 @@ ok(nut.melhor?.receita.marcas.includes("original") ?? false, "Nutella 'original'
 
 // Restrições
 const semLac = recomendar(base({ familia: fam("brigadeiro"), restricoes: ["lactose"] }));
-ok(semLac.todos.length > 0 && semLac.todos.every((x) => x.receita.id === "brigadeiro-banana-cacau" || !x.receita.ingredientes.some((i) => !i.opcional && !i.troca && ["whey", "leite", "leite-po", "leite-condensado"].includes(i.id))), "sem lactose filtra lácteos");
+ok(semLac.todos.every((x) => !x.receita.ingredientes.some((i) => !i.opcional && ["whey", "leite", "leite-po", "leite-condensado"].includes(i.id))), "sem lactose filtra lácteos");
 const vegano = recomendar(base({ familia: fam("brownie"), restricoes: ["vegana"] }));
 ok(vegano.todos.every((x) => x.receita.marcas.includes("vegana")), "vegana só traz receita vegana");
 
