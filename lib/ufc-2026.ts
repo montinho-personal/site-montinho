@@ -4,6 +4,69 @@ import type { BlogPost } from "./blog";
  *  fonte oficial (ufc.com.br) ou de dois veículos independentes. */
 export const UFC_2026_POSTS: BlogPost[] = [
   {
+    slug: "pesagem-ufc-332",
+    title: "Pesagem do UFC 332 hoje: horário, onde assistir e os pesos",
+    metaTitle: "Pesagem UFC 332 Hoje: Horário, Onde Assistir e Pesos",
+    metaDescription:
+      "Pesagem do UFC 332 é hoje, sexta (2/10): oficial das 11h às 14h e cerimonial às 19h (Brasília). Onde assistir, limite de cada categoria e os pesos de Natália Silva e dos brasileiros.",
+    excerpt:
+      "A pesagem do UFC 332 é nesta sexta, 2 de outubro. Horários de Brasília, onde assistir, limite de cada categoria e os pesos assim que forem confirmados.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-10-02",
+    readTime: "4 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC 332", "pesagem", "Natália Silva", "corte de peso"],
+    content: `<img src="/blog-images/ufc-332-natalia-silva-capa.webp" alt="Pesagem do UFC 332 — Natália Silva x Wang Cong, sexta 2/10" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p>Informações verificadas em 2 de outubro de 2026. Os pesos entram aqui assim que forem confirmados por duas fontes independentes.</p></blockquote>
+<p>A <strong>pesagem do UFC 332</strong> é <strong>hoje, sexta-feira, 2 de outubro de 2026</strong>, em Salt Lake City (EUA), véspera do evento em que a brasileira <strong>Natália Silva</strong> enfrenta a chinesa <strong>Wang Cong</strong> pelo cinturão vago do peso-mosca. São duas pesagens: a oficial, que vale para a luta, e a cerimonial, o encontro com o público.</p>
+
+<h2>A que horas começa a pesagem do UFC hoje?</h2>
+<table><thead><tr><th>Pesagem</th><th>Horário local (MDT)</th><th>Horário de Brasília</th></tr></thead><tbody>
+<tr><td>Oficial (fechada ao público)</td><td>8h às 11h</td><td>11h às 14h</td></tr>
+<tr><td>Cerimonial (com público)</td><td>16h</td><td>19h</td></tr>
+</tbody></table>
+<p>A oficial é a que conta: é nela que cada lutador precisa bater o limite da categoria. A cerimonial, no Salt Palace Convention Center, é o momento de encarada para as câmeras.</p>
+
+<h2>Onde assistir à pesagem do UFC 332</h2>
+<p>A pesagem oficial é transmitida pelo canal do UFC no YouTube, pelo UFC.com, pelo Facebook e pelo UFC Fight Pass. A cerimonial passa ao vivo no YouTube do UFC e nas contas da organização no Kick, TikTok, Facebook e Instagram.</p>
+
+<h2>Qual a pesagem do UFC? O limite de cada luta dos brasileiros</h2>
+<table><thead><tr><th>Luta</th><th>Categoria</th><th>Limite</th><th>Peso na balança</th></tr></thead><tbody>
+<tr><td><strong>Natália Silva</strong> x Wang Cong</td><td>Peso-mosca (cinturão)</td><td>56,7 kg (125 lb)</td><td>A confirmar</td></tr>
+<tr><td><strong>Deiveson Figueiredo</strong> x Payton Talbott</td><td>Peso-galo</td><td>61,2 kg (135 lb) + 1 lb</td><td>A confirmar</td></tr>
+<tr><td><strong>Johnny Walker</strong> x Mick Parkin</td><td>Peso-pesado</td><td>120,2 kg (265 lb) + 1 lb</td><td>A confirmar</td></tr>
+<tr><td><strong>Rafael dos Anjos</strong> x Alexander Hernandez</td><td>—</td><td>—</td><td>A confirmar</td></tr>
+</tbody></table>
+<p>Em luta que vale cinturão, o limite é exato. Nas outras, a regra permite 1 libra (cerca de 0,45 kg) a mais. Quem passa disso, a luta pode acontecer em peso combinado, normalmente com parte da bolsa do lutador indo para o adversário.</p>
+
+<h2>Qual é a tabela de peso do UFC?</h2>
+<p>Masculino: mosca (56,7 kg), galo (61,2), pena (65,8), leve (70,3), meio-médio (77,1), médio (83,9), meio-pesado (93) e pesado (120,2). Feminino: palha (52,2), mosca (56,7) e galo (61,2). A explicação completa está em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>.</p>
+
+<h2>Quando é o UFC 332?</h2>
+<p>A luta é amanhã, <strong>sábado, 3 de outubro</strong>, no Delta Center, em Salt Lake City. O card preliminar começa às 17h e o principal às 21h (Brasília). Card completo e onde assistir em <a href="/blog/ufc-332-natalia-silva">UFC 332: Natália Silva x Wang Cong</a> e <a href="/blog/brasileiros-ufc-332">brasileiros no UFC 332</a>.</p>
+
+<h2>Por que o lutador pesa menos na balança do que na luta</h2>
+<p>Entre a pesagem e a luta passam mais de 24 horas. Nesse intervalo o atleta se reidrata e come, e chega ao octógono vários quilos acima do número da balança. Quase tudo que sai no corte é água — não é emagrecimento, e não é algo para copiar.</p>
+<p>Se o seu objetivo é perder gordura de verdade, o caminho é o oposto: um déficit que dá para sustentar por meses, treino de força e constância. Não é só sobre começar. É sobre conseguir continuar.</p>
+
+<h2>Não se compare</h2>
+<p>Lutador de elite vive de bater um número num dia específico, com equipe e estrutura para isso. Cada pessoa tem a própria genética, a própria rotina e a própria história, com altos e baixos. O que importa é encontrar um jeito de treinar que você consiga seguir pelo resto da vida.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li>UFC — UFC 332 Fight Week Guide (ufc.com)</li>
+<li>Deseret News — UFC 332: what to know leading up to Silva vs. Wang (01/10/2026)</li>
+<li>DraftKings Network — UFC 332 ceremonial weigh-in date, start time and how to watch (01/10/2026)</li>
+</ul>`,
+    faq: [
+      { question: "A que horas começa a pesagem do UFC 332 hoje?", answer: "A pesagem oficial é das 11h às 14h (Brasília) desta sexta, 2/10. A cerimonial, com público, é às 19h." },
+      { question: "Onde assistir à pesagem do UFC 332?", answer: "No YouTube do UFC, no UFC.com, no Facebook e no UFC Fight Pass (oficial). A cerimonial também passa no Kick, TikTok e Instagram do UFC." },
+      { question: "Qual o limite de peso da luta da Natália Silva?", answer: "56,7 kg (125 lb), o limite do peso-mosca. Por ser luta de cinturão, não há tolerância de 1 libra." },
+      { question: "Quando é o UFC 332?", answer: "Sábado, 3 de outubro de 2026, no Delta Center, em Salt Lake City. Preliminares às 17h e card principal às 21h (Brasília)." },
+    ],
+  },
+  {
     slug: "ufc-332-natalia-silva",
     title: "UFC 332: Natália Silva x Wang Cong — data, horário, card e onde assistir",
     metaTitle: "UFC 332: Natália Silva x Wang — Horário, Card e Onde Assistir",
