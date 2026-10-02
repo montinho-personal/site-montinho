@@ -147,7 +147,7 @@ export default function PersonalTrainerDomicilioTambore() {
               Muitos condomínios de Tamboré têm academia própria — às vezes subutilizada, às vezes com equipamento que ninguém sabe usar direito. Outros moradores preferem o espaço da própria casa: a sala, o jardim, a varanda. Qualquer um desses ambientes pode ser um espaço de treino eficiente quando há protocolo e orientação profissional.
             </p>
             <p>
-              Vivo o esporte há mais de 20 anos — treinando, estudando e dando aula — e já atendi alunos nos mais variados contextos domiciliares de Tamboré e Alphaville. Sei o que é possível fazer com o que cada espaço oferece — e sei o que compensar quando o equipamento é limitado. O treino não precisa de academia cara para ser eficiente. Precisa de método.
+              Moro em Barueri há mais de 20 anos, vivo o esporte há mais de 20 anos — treinando, estudando e dando aula — e já atendi alunos nos mais variados contextos domiciliares de Tamboré e Alphaville. Sei o que é possível fazer com o que cada espaço oferece — e sei o que compensar quando o equipamento é limitado. O treino não precisa de academia cara para ser eficiente. Precisa de método.
             </p>
             <p>
               Minha trajetória começa com a mesma insatisfação que muitos dos meus alunos trazem: anos tentando emagrecer sem resultado sustentável. Quando passei a entender como o corpo realmente funciona — metabolismo, estímulo de força, progressão de carga — tudo mudou. É essa compreensão que levo para cada atendimento a domicílio, independente do espaço disponível.
