@@ -215,8 +215,13 @@ export default function Beliscometro({ preset }: { preset?: { momentos?: string[
 
       {etapa === "quantidade" && qItem && qAlim && (
         <div className={card}>
-          <p className="text-xs uppercase tracking-[0.2em] mb-2" style={{ color: OURO }}>{qIdx + 1} de {itens.length} · <span aria-hidden>{qAlim.emoji}</span> {qAlim.nome}</p>
-          {titulo(qAlim.categoria === "disfarcados" ? "Quanto, normalmente?" : `Quanto de ${qAlim.nome.toLowerCase()}, normalmente?`, "Do jeito que você lembraria. É uma estimativa.")}
+          <p className="text-xs uppercase tracking-[0.2em] text-gray-400 mb-3">Belisco {qIdx + 1} de {itens.length}</p>
+          <div className="flex items-center gap-4 mb-4 p-4 -mx-1" style={{ background: `${qAlim.cor}33`, borderLeft: `4px solid ${OURO}` }}>
+            <span aria-hidden className="text-5xl leading-none">{qAlim.emoji}</span>
+            <h2 tabIndex={-1} data-foco className="text-white text-2xl sm:text-3xl font-bold leading-tight outline-none" style={h}>{qAlim.nome}</h2>
+          </div>
+          <p className="text-white text-lg">Quanto, normalmente?</p>
+          <p className="text-gray-400 text-sm mt-1 mb-5">Do jeito que você lembraria. É uma estimativa.</p>
           <div className="grid gap-2">
             {qAlim.medidas.map((m) => (
               <Opcao grande key={m.id} ativo={qItem.medidaId === m.id} onClick={() => setItem(qAlim.id, { medidaId: m.id })}>
