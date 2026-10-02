@@ -6,7 +6,7 @@
  * Regras de cozinha respeitadas (Bloco 2): whey nunca substitui farinha 1:1,
  * cada 30 g de whey pede umidade (banana, iogurte, leite, ovo), whey não vai
  * ao fogo direto em creme, micro-ondas com whey 60–90 s, nada de ovo cru.
- * Macros: só quando houver rótulo do whey de referência (Growth concentrado).
+ * Macros: só quando houver rótulo do whey de referência (concentrado ~80% de proteína).
  */
 import type { Perfil, Temperatura } from "./familias";
 
@@ -45,7 +45,7 @@ export const INGREDIENTES: Record<string, { nome: string; despensa?: boolean; al
   "iogurte-grego": { nome: "iogurte grego/proteico", alergenos: ["lactose"] },
   cottage: { nome: "cottage", alergenos: ["lactose"] },
   "cream-cheese": { nome: "cream cheese", alergenos: ["lactose"] },
-  whey: { nome: "whey protein (qualquer marca)", alergenos: ["lactose"] },
+  whey: { nome: "whey protein", alergenos: ["lactose"] },
   aveia: { nome: "aveia em flocos", despensa: true, alergenos: ["gluten"] },
   "farinha-trigo": { nome: "farinha de trigo", alergenos: ["gluten"] },
   tapioca: { nome: "goma de tapioca" },
