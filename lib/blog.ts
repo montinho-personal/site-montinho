@@ -16485,7 +16485,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "O mito de que comer carboidrato à noite engorda persiste há décadas. A ciência conta uma história diferente — e mais simples. Entenda o que realmente determina o ganho de gordura.",
     category: "Saúde",
     date: "2026-06-26",
-    updatedAt: "2026-07-30",
+    updatedAt: "2026-10-02",
     readTime: "8 min",
     author: "Montinho Personal Trainer",
     tags: ["carboidrato à noite", "mito nutricional", "emagrecimento", "balanço calórico", "metabolismo", "timing de nutrientes", "personal trainer alphaville", "nutrição e saúde"],
@@ -16501,6 +16501,26 @@ RIR 3 = parou com 3 reps sobrando.</p>
       {
         question: "Qual o melhor horário para comer carboidrato?",
         answer: "Para a maioria das pessoas, o timing de carboidrato tem impacto secundário comparado ao total calórico diário. Uma estratégia com bom suporte científico é concentrar carboidratos ao redor do treino (pré e pós), independentemente do horário.",
+      },
+      {
+        question: "O que comer à noite que sacia e não engorda?",
+        answer: "Um prato com proteína (frango, peixe, ovos, carne magra), legumes e uma porção de carboidrato que você goste. Para lanche antes de dormir: iogurte natural, ovos, queijo branco ou uma fruta. O que define se engorda é o total do dia, não o horário.",
+      },
+      {
+        question: "Comer arroz e feijão à noite engorda?",
+        answer: "Não por ser à noite. Arroz e feijão são uma combinação saciante e nutritiva; o que importa é a quantidade dentro do total do dia.",
+      },
+      {
+        question: "Comer ovo antes de dormir engorda? E mamão ou abacate à noite?",
+        answer: "Nenhum deles engorda por ser à noite. Ovo é proteína e sacia bem; mamão é leve; abacate é nutritivo, mas calórico — vale cuidar da porção. Todos cabem no jantar ou na ceia dentro do seu total do dia.",
+      },
+      {
+        question: "Quais são os piores alimentos para comer à noite?",
+        answer: "Não existe alimento proibido à noite, mas frituras, pizza, doces e álcool em excesso juntam muita caloria com pouca saciedade e, para algumas pessoas, atrapalham o sono. O problema costuma ser a quantidade e os beliscos depois do jantar.",
+      },
+      {
+        question: "Comer de noite faz mal?",
+        answer: "Para a maioria das pessoas, não. Refeições muito grandes ou gordurosas perto da hora de dormir podem causar desconforto ou refluxo e prejudicar o sono; nesses casos, jantar um pouco mais cedo ajuda.",
       },
       {
         question: "Comer tarde da noite engorda?",
@@ -16570,6 +16590,16 @@ RIR 3 = parou com 3 reps sobrando.</p>
     </tr>
   </tbody>
 </table>
+
+<h2>Comer à noite engorda? E o que comer à noite para não engordar</h2>
+
+<p>O horário, sozinho, não decide se você engorda — o total do dia decide. O que acontece à noite é outra coisa: cansaço, tela e comida disponível se juntam, e o jantar vira jantar + beliscos. É por isso que muita gente sente que “comer à noite engorda”. Se quiser ver quanto esses beliscos noturnos somam, o <a href="/ferramentas/beliscometro">Beliscômetro</a> mostra em 2 minutos.</p>
+
+<p><strong>O que comer à noite que sacia e não pesa no total:</strong> um prato com proteína (frango, peixe, ovos, carne magra), legumes à vontade e uma porção de carboidrato que você goste — arroz e feijão inclusive. Para um lanche antes de dormir: iogurte natural, ovos, queijo branco ou uma fruta.</p>
+
+<p><strong>O que costuma atrapalhar à noite</strong> não é um alimento proibido, é a combinação de muita caloria com pouca saciedade: frituras, pizza, doces e bebida alcoólica em quantidade — e, para algumas pessoas, refeições muito grandes perto da hora de dormir, que podem atrapalhar o sono.</p>
+
+<p><strong>“O que comer à noite para perder barriga?”</strong> Nenhum alimento queima gordura de uma região específica. A barriga diminui com déficit calórico mantido, treino e sono — o jantar entra nessa conta como qualquer outra refeição.</p>
 
 <h2>Resumo Prático</h2>
 
