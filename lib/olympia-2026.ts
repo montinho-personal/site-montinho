@@ -194,6 +194,7 @@ ${FONTES}`,
 <p>Para <strong>Niall Darwen (Reino Unido)</strong>, campeão, e <strong>Mike Sommerfeld (Alemanha)</strong>, vice pelo segundo ano seguido. Darwen foi a surpresa: tinha sido 11º no Olympia 2024 e 5º em 2025. Top 5 completo e premiação em <a href="/blog/resultado-classic-physique-mr-olympia-2026">resultado da Classic Physique 2026</a>.</p>
 <table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td>Niall Darwen</td><td>Reino Unido</td></tr><tr><td>2º</td><td>Mike Sommerfeld</td><td>Alemanha</td></tr><tr><td>3º</td><td>Ramon Dino</td><td>Brasil</td></tr><tr><td>4º</td><td>Wesley Vissers</td><td>Holanda</td></tr><tr><td>5º</td><td>Terrence Ruffin</td><td>EUA</td></tr></tbody></table>
 
+<!--SHAPE:classic-->
 <h2>O que aconteceu com Ramon Dino no Olympia?</h2>
 <p>Nas prévias da tarde de sexta, Ramon dividiu o centro do palco com Sommerfeld no primeiro chamado, a posição de quem disputa o título. A partir daí a apresentação caiu. Os veículos que cobriram o evento, como CNN Brasil, Terra e ge, registram <strong>erros visíveis na execução de poses</strong> e perda de terreno nas comparações diretas. Na final, Darwen passou os dois.</p>
 <p>Na Classic Physique, pose não é detalhe. Os juízes comparam os atletas lado a lado, e quem não consegue mostrar a contração de um músculo naquela pose perde o ponto, por melhor que seja o físico. Como a categoria tem teto de peso por altura (<a href="/blog/ramon-dino-peso-altura">Ramon pesou 102,5 kg para um limite de 103 kg</a>), ninguém ganha só por estar maior: ganha quem apresenta melhor o que tem.</p>
@@ -267,6 +268,7 @@ ${CAPA("ramon-dino-mr-olympia-2026-horario", "Capa: que horas Ramon Dino competi
 <li><strong>Cobertura em português:</strong> o canal de Renato Cariani no YouTube anunciou transmissão com comentários e análises para o público brasileiro.</li>
 </ul>
 
+<!--SHAPE:classic-->
 <h2>Prévias e final: o que muda</h2>
 <p>Na <strong>prévia</strong>, à tarde, os juízes fazem as comparações nas poses obrigatórias e o primeiro chamado (os atletas comparados juntos primeiro) indica quem disputa o título. Na <strong>final</strong>, à noite, vêm as rotinas de posing, novas comparações e o anúncio das colocações. Ou seja: às 13h30 dá para ver a briga; o campeão só sai depois das 22h.</p>
 
@@ -324,6 +326,7 @@ ${CAPA("quem-ganhou-mr-olympia-2026", "Capa: Nick Walker é o Mr. Olympia 2026 �
 </tbody></table>
 <p><em>O resultado da Wheelchair entra aqui quando confirmado por duas fontes. Horários são o início de cada sessão de finais. *A Fit Model teve prévias e final na sessão da manhã de sábado.</em></p>
 
+<!--SHAPE:open-->
 <h2>Status das categorias agora</h2>
 <p>Cada linha leva à página da categoria. O status muda sozinho quando um bloco começa; "resultado definido" só aparece com o anúncio oficial.</p>
 <!--OLYMPIA_STATUS:geral-->
@@ -389,6 +392,7 @@ ${CAPA("resultado-wellness-mr-olympia-2026", "Capa: Eduarda Bezerra bicampeã da
 <table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Eduarda Bezerra</strong></td><td>Brasil</td></tr><tr><td>2º</td><td>Isa Pereira Nunes</td><td>Brasil</td></tr><tr><td>3º</td><td>Elisa Alcantara</td><td>República Dominicana</td></tr><tr><td>4º</td><td>A confirmar</td><td>—</td></tr><tr><td>5º</td><td>A confirmar</td><td>—</td></tr></tbody></table>
 <p><em>O pódio foi confirmado por duas fontes independentes. O 4º e o 5º lugares, e as colocações das outras brasileiras, entram quando também estiverem confirmados.</em></p>
 
+<!--SHAPE:avancado-->
 <h2>As brasileiras</h2>
 <p>Eram <strong>19 brasileiras entre as 40 inscritas</strong>. As mais cotadas antes da final:</p>
 <ul>
@@ -663,6 +667,7 @@ ${CAPA("resultado-womens-physique-olympia-2026", "Capa: Natália Coelho é trica
 <table><thead><tr><th>Posição</th><th>Atleta</th><th>País (roster)</th></tr></thead><tbody><tr><td>1º</td><td>Natalia Abraham Coelho</td><td>EUA</td></tr><tr><td>2º</td><td>Zama Benta</td><td>Brasil</td></tr><tr><td>3º</td><td>Sarah Villegas</td><td>EUA</td></tr><tr><td>4º</td><td>A confirmar</td><td>—</td></tr><tr><td>5º</td><td>A confirmar</td><td>—</td></tr></tbody></table>
 <p><em>Top 3 confirmado por CNN Brasil, NSC Total, Fitness Volt e Generation Iron. As demais posições entram quando a classificação completa for publicada.</em></p>
 
+<!--SHAPE:avancado-->
 <h2>Em que posição Natália Coelho ficou?</h2>
 <p><strong>Natália Coelho foi campeã.</strong> É o terceiro título dela na Women's Physique, depois de 2022 e 2025. Levou o prêmio de US$ 50 mil. Brasileira, ela aparece no roster oficial da IFBB Pro League <strong>representando os Estados Unidos</strong>, onde vive e compete. Por isso a tabela oficial mostra "EUA" ao lado do nome dela. A colocação de 2026 entra aqui logo após a final.</p>
 
@@ -732,6 +737,7 @@ ${FONTES}`,
 <!--OLYMPIA_CONTAGEM:brasil-->
 ${CAPA("brasileiros-mr-olympia-2026", "Capa: brasileiros no Mr. Olympia 2026 — painel com atletas, categorias, horários de Brasília e resultados de sexta e sábado")}
 
+<!--SHAPE:musculoso-->
 <h2>Painel Brasil no Mr. Olympia 2026</h2>
 <p>Filtre por dia, categoria ou nome. "Roster" é o país que a IFBB Pro League mostra ao lado do atleta.</p>
 <!--PAINEL_BRASIL:olympia-->
@@ -811,6 +817,7 @@ ${CAPA("resultado-mens-physique-olympia-2026", "Capa: Ryan Terry tetracampeão d
 <table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Ryan Terry</strong></td><td>Reino Unido</td></tr><tr><td>2º</td><td>A definir</td><td>—</td></tr><tr><td>3º</td><td>A definir</td><td>—</td></tr><tr><td>4º</td><td>A definir</td><td>—</td></tr><tr><td>5º</td><td>A definir</td><td>—</td></tr><tr><td>6º</td><td>A definir</td><td>—</td></tr><tr><td>7º</td><td>A definir</td><td>—</td></tr><tr><td>8º</td><td>A definir</td><td>—</td></tr><tr><td>9º</td><td>A definir</td><td>—</td></tr><tr><td>10º</td><td>A definir</td><td>—</td></tr></tbody></table>
 <p><em>O campeão foi confirmado por duas fontes independentes; as outras posições entram quando também estiverem.</em></p>
 
+<!--SHAPE:atletico-->
 <h2>Como ficaram os brasileiros?</h2>
 <table><thead><tr><th>Atleta</th><th>Representação no roster</th><th>Resultado</th></tr></thead><tbody>
 ${ATLETAS_BRASIL.filter((x) => x.categoria === "mens-physique").map((x) => `<tr><td>${x.nome}</td><td>${x.representacao}</td><td>${x.resultado ?? "A definir"}</td></tr>`).join("")}
@@ -881,6 +888,7 @@ ${CAPA("resultado-bikini-olympia-2026", "Capa: Jasmine Gonzalez campeã da Bikin
 <table><thead><tr><th>Posição</th><th>Atleta</th><th>País</th></tr></thead><tbody><tr><td>1º</td><td><strong>Jasmine Gonzalez</strong></td><td>EUA</td></tr><tr><td>2º</td><td>A definir</td><td>—</td></tr><tr><td>3º</td><td>A definir</td><td>—</td></tr><tr><td>4º</td><td>A definir</td><td>—</td></tr><tr><td>5º</td><td>A definir</td><td>—</td></tr><tr><td>6º</td><td>A definir</td><td>—</td></tr><tr><td>7º</td><td>A definir</td><td>—</td></tr><tr><td>8º</td><td>A definir</td><td>—</td></tr><tr><td>9º</td><td>A definir</td><td>—</td></tr><tr><td>10º</td><td>A definir</td><td>—</td></tr></tbody></table>
 <p><em>A campeã foi confirmada por duas fontes independentes; as outras posições entram quando também estiverem.</em></p>
 
+<!--SHAPE:atletico-->
 <h2>Em que posição Elisa Pecini ficou?</h2>
 <p><strong>A colocação de 2026 ainda não foi confirmada.</strong> Elisa Pecini, conhecida como Isa Pecini, venceu a Bikini Olympia em 2019 e tem vaga garantida por esse título. A posição dela entra aqui assim que houver duas fontes.</p>
 
@@ -944,6 +952,7 @@ ${CAPA("resultado-fit-model-olympia-2026", "Capa: Shealynn Burnett é a primeira
 <table><thead><tr><th>Posição</th><th>Atleta</th><th>Representação</th></tr></thead><tbody><tr><td>1º</td><td><strong>Shealynn Burnett</strong></td><td>—</td></tr><tr><td>2º</td><td>Gabriela Queiroz</td><td>EUA (brasileira)</td></tr><tr><td>3º</td><td>Jane Jones</td><td>—</td></tr><tr><td>4º</td><td>A confirmar</td><td>—</td></tr><tr><td>5º</td><td>A confirmar</td><td>—</td></tr></tbody></table>
 <p><em>O pódio foi confirmado por duas fontes independentes. O 4º e o 5º lugares entram quando também estiverem.</em></p>
 
+<!--SHAPE:atletico-->
 <h2 id="gabriela">Em que posição Gabriela Queiroz ficou no Olympia 2026?</h2>
 <p><strong>Gabriela Queiroz ficou em 2º lugar</strong>, atrás apenas de Shealynn Burnett. A brasileira compete <strong>representando os Estados Unidos</strong>, por isso a classificação oficial mostra "EUA" ao lado do nome dela. Gabriela se classificou para o Olympia com o título do Wasatch Warrior Pro 2026 e chegou à estreia da categoria entre as vencedoras de shows profissionais da temporada.</p>
 <p>Ela é a única brasileira na Fit Model. Os outros brasileiros do fim de semana estão no <a href="/blog/brasileiros-mr-olympia-2026">painel dos brasileiros no Mr. Olympia 2026</a>.</p>

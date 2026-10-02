@@ -428,7 +428,7 @@ export const AVISO_SEGURANCA =
  * Artigos que EMBUTEM a calculadora: o leitor chega com "quanto eu tomo?".
  * "Como tomar" traz a seção "Qual a dose certa?" — a pergunta da ferramenta.
  */
-export const ARTIGOS_COM_CALCULADORA_WHEY: string[] = ["whey-protein-como-tomar"];
+export const ARTIGOS_COM_CALCULADORA_WHEY: string[] = ["black-friday-suplementos", "whey-protein-como-tomar"];
 
 /**
  * Artigos que recebem LINK, não embed:
@@ -444,5 +444,4 @@ export const ARTIGOS_COM_LINK_WHEY: string[] = [
   "whey-protein-engorda",
   "whey-protein-para-quem-usa-mounjaro",
   "proteina-vegana-whey-ganho-muscular-estudo-2025",
-  "black-friday-suplementos",
 ];

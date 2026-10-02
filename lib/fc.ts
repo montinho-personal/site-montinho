@@ -178,6 +178,7 @@ export const DISCLAIMER =
  * treinar numa faixa de FC sem dizer como achá-la; este é o encaixe.
  */
 export const ARTIGOS_COM_CALCULADORA_FC: string[] = [
+  "outubro-rosa-exercicio-fisico",
   "zonas-de-frequencia-cardiaca",
   "treino-zona-2",
 ];
@@ -197,7 +198,6 @@ export const ARTIGOS_COM_LINK_FC: string[] = [
   "musculacao-ou-corrida-para-emagrecer",
   "caminhada-emagrece",
   /* Outubro Rosa: a recomendação é 150 min MODERADOS ou 75 VIGOROSOS; a conta que sobra é qual batimento é moderado para ela. */
-  "outubro-rosa-exercicio-fisico",
   /*
    * "jiu-jitsu-emagrece" e "futebol-emagrece" saíram daqui em 22/09/2026:
    * a busca que os traz é de caloria, não de batimento, e os dois passaram

@@ -330,4 +330,14 @@ export function fmtFaixaAnos([a, b]: [number, number]): string {
  * outra ferramenta: Classic e peso do Ramon já têm a calculadora da Classic
  * e recebem apenas um link em texto (uma continuação por página).
  */
-export const ARTIGOS_COM_SHAPE: string[] = ["resultado-212-mr-olympia-2026", "resultado-mr-olympia-open-2026", "mr-olympia-brasil-2026"];
+export const ARTIGOS_COM_SHAPE: string[] = ["resultado-212-mr-olympia-2026", "resultado-mr-olympia-open-2026", "mr-olympia-brasil-2026",
+  "por-que-ramon-dino-perdeu-mr-olympia-2026",
+  "ramon-dino-mr-olympia-2026-horario",
+  "quem-ganhou-mr-olympia-2026",
+  "brasileiros-mr-olympia-2026",
+  "resultado-mens-physique-olympia-2026",
+  "resultado-wellness-mr-olympia-2026",
+  "resultado-womens-physique-olympia-2026",
+  "resultado-bikini-olympia-2026",
+  "resultado-fit-model-olympia-2026",
+];
