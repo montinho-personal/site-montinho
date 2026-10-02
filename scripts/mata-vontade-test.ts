@@ -90,6 +90,11 @@ ok(baixa.length === 0, "porção única tem 10 g+ de proteína", baixa.map((r) =
 ok(Object.keys(FONTES).every((id) => RECEITAS.some((r) => r.id === id)), "fonte aponta para receita existente");
 ok(Object.values(FONTES).every((f) => /^https:\/\/(www\.)?(tudogostoso|receiteria|receitasnestle|panelinha|cybercook)\.com\.br\//.test(f.url)), "fonte é https de portal conhecido");
 
+// Com link de portal primeiro
+const comFonte = (r: { id: string }) => !!FONTES[r.id];
+const furou = FAMILIAS.filter((f) => { const c = recomendar(base({ familia: f }), undefined, comFonte); return c.todos.some((x) => comFonte(x.receita)) && !comFonte(c.melhor!.receita); });
+ok(furou.length === 0, "receita com link de portal vem primeiro", furou.map((f) => f.id).join(","));
+
 // Tempo e equipamento
 const rapido = recomendar(base({ familia: fam("brownie"), tempoMax: 5 }));
 ok(rapido.todos.every((x) => x.receita.tempoMin <= 5), "respeita o tempo");

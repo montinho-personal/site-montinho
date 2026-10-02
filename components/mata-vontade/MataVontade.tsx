@@ -160,11 +160,11 @@ export default function MataVontade() {
   /** Uma vontade: melhor / mais rápido / objetivo. Várias: o melhor de cada uma, até três cartões. */
   function montar(): Item[] {
     if (familias.length === 1) {
-      const f = familias[0]; const c = recomendar(pedidoDe(f));
+      const f = familias[0]; const c = recomendar(pedidoDe(f), undefined, (r) => !!FONTES[r.id]);
       return ([["Melhor match", c.melhor], ["Mais rápido", c.rapido], [titObj, c.estrategia]] as [string, Resultado | undefined][])
         .filter(([, r]) => r).map(([titulo, r]) => ({ titulo, r: r!, f }));
     }
-    const por = familias.map((f) => ({ f, c: recomendar(pedidoDe(f)) })).filter((x) => x.c.melhor)
+    const por = familias.map((f) => ({ f, c: recomendar(pedidoDe(f), undefined, (r) => !!FONTES[r.id]) })).filter((x) => x.c.melhor)
       .sort((a, b) => b.c.melhor!.match - a.c.melhor!.match);
     const usados = new Set<string>(); const itens: Item[] = [];
     for (const { f, c } of por) {
@@ -177,7 +177,9 @@ export default function MataVontade() {
       if (usados.has(x.r.receita.id)) continue;
       usados.add(x.r.receita.id); itens.push({ titulo: "Outra opção", ...x });
     }
-    return itens;
+    // Com link de receita completa primeiro (o sort é estável: o resto mantém a ordem).
+    return itens.sort((a, b) => Number(!!FONTES[b.r.receita.id]) - Number(!!FONTES[a.r.receita.id]))
+      .map((x, i) => (i === 0 ? { ...x, titulo: "Melhor match" } : x.titulo === "Melhor match" ? { ...x, titulo: `Pra vontade de ${x.f.nome.toLowerCase()}` } : x));
   }
   const itens = familias.length && etapa === "resultado" ? montar() : null;
 
