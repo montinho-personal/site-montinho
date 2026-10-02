@@ -43,7 +43,8 @@ export default function Contato() {
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed">
             Me conta seu objetivo, seu histórico e onde você está agora. A partir
-            daí, a gente descobre se faz sentido trabalhar juntos.
+            daí, a gente descobre se faz sentido trabalhar juntos. Não é só sobre
+            começar: é sobre montar algo que você consiga continuar.
           </p>
         </div>
       </section>
