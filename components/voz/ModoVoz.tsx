@@ -58,7 +58,7 @@ function falar(texto: string, voz: SpeechSynthesisVoice | null): Promise<void> {
       if (voz) u.voice = voz;
       // Sem voz masculina no aparelho: um pouco mais grave.
       u.pitch = voz && VOZ_MASCULINA.test(voz.name) ? 1 : 0.85;
-      u.rate = 1.02;
+      u.rate = 1.25;
       u.onend = acabou;
       u.onerror = acabou;
       naFila.push(u);
@@ -135,7 +135,7 @@ export default function ModoVoz({ ferramenta, intro, passos, resultado }: {
     setEstado("ouvindo");
     const alts = await ouvir();
     if (!ativo.current) return false;
-    await new Promise((r) => setTimeout(r, 350)); // Android: soltar o microfone antes de voltar a falar
+    await new Promise((r) => setTimeout(r, 200)); // Android: soltar o microfone antes de voltar a falar
     if (alts === null) { setEstado("erro"); setAviso("Seu navegador não liberou o microfone."); return false; }
     setOuviu(alts[0] ?? "");
     let confirma: string | null = null;
