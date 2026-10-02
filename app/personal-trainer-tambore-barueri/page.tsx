@@ -10,7 +10,7 @@ import VideoRecomecar from "@/components/video/VideoRecomecar";
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer Tamboré e Barueri | Montinho Personal Trainer" },
   description:
-    "Personal trainer atendendo Tamboré e Barueri há mais de 20 anos. Protocolo individualizado, atendimento presencial e online. Emagrecimento, hipertrofia e qualidade de vida.",
+    "Personal trainer no Tamboré e Barueri, com mais de 20 anos vivendo o esporte. Treino no condomínio, em casa ou na Arena 18, presencial e online.",
   alternates: {
     canonical: `${SITE_URL}/personal-trainer-tambore-barueri`,
   },

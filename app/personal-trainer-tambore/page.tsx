@@ -169,7 +169,7 @@ export default function PersonalTrainerTambore() {
               Quem mora no Tamboré não escolheu esse bairro por acaso. Escolheu pelo ambiente familiar, pela escala humana do lugar, pela sensação de comunidade que pouco outros bairros da Grande São Paulo oferecem. É um ritmo que tem valor — e que merece ser preservado numa rotina de treino que não vira um fardo.
             </p>
             <p>
-              Sou da região há mais de 20 anos. Conheço os condomínios, as academias, as ruas, os horários de pico. Quando monto um protocolo para um morador de Tamboré, não estou imaginando um ambiente genérico — estou pensando na realidade local: academia de condomínio com equipamento limitado, horário de treino espremido entre a saída dos filhos para a escola e o início do expediente, o almoço em casa que é uma oportunidade de comer bem.
+              Vivo o esporte há mais de 20 anos — treinando, estudando e dando aula. Conheço os condomínios, as academias, as ruas, os horários de pico. Quando monto um protocolo para um morador de Tamboré, não estou imaginando um ambiente genérico — estou pensando na realidade local: academia de condomínio com equipamento limitado, horário de treino espremido entre a saída dos filhos para a escola e o início do expediente, o almoço em casa que é uma oportunidade de comer bem.
             </p>
             <p>
               A região dos Residenciais Tamboré 1 a 11 se estende entre Barueri e Santana de Parnaíba, colada em Alphaville, com o Shopping Tamboré como referência de todo mundo que circula por aqui. É um dos endereços de mais alto padrão da Grande São Paulo — e um dos que mais concentram alunos meus. O deslocamento curto entre os residenciais me permite atender em horários que realmente cabem na sua agenda.
