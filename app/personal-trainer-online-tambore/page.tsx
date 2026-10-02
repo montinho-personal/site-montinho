@@ -96,7 +96,7 @@ export default function PersonalTrainerOnlineTambore() {
             Personal trainer online para Tamboré: protocolo real, acompanhamento de verdade.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Para quem mora no Tamboré e viaja com frequência, tem agenda imprevisível ou prefere a praticidade do treino remoto, o personal trainer online entrega protocolo individualizado e resultado concreto — sem precisar de horário fixo.
+            Para quem mora no Tamboré e viaja com frequência, tem agenda imprevisível ou prefere a praticidade do treino remoto, o personal trainer online entrega protocolo individualizado e resultado concreto — sem precisar de horário fixo. Começar é a parte fácil — o meu trabalho é estar perto para você conseguir continuar quando a rotina muda.
           </p>
           <a
             href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="personal-trainer-online-tambore:topo"
@@ -208,10 +208,10 @@ export default function PersonalTrainerOnlineTambore() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Treino sério não precisa de horário fixo.
+            Treino que continua, mesmo quando a agenda muda.
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            Me conta sua rotina e o que você precisa. Juntos encontramos o modelo que funciona para você — presencial, online ou híbrido.
+            Não se compare com ninguém: cada pessoa tem a própria genética, a própria rotina e a própria história, com altos e baixos. O que importa é encontrar um jeito de treinar que você consiga seguir pelo resto da vida. Me conta sua rotina e o que você precisa. Juntos encontramos o modelo que funciona para você — presencial, online ou híbrido.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
