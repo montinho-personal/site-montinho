@@ -41,21 +41,10 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
-  "brasileiros-ufc-332": "Hub dos brasileiros no UFC 332: a pessoa quer saber quem luta, contra quem e a que horas; sai com nomes e horários, sem conta pendente.",
-  "corte-de-peso-ufc": "Explicativo sobre corte de peso e categorias do UFC: o leitor sai entendendo o processo e os riscos, não com uma conta; o link para déficit calórico cobre quem quer emagrecer.",
   // Cluster Mr. Olympia 2026 (lib/olympia-2026.ts): cobertura de evento. A pessoa
   // chega com "quem ganhou / que horas / quanto pesa" e sai com um fato, não com
   // uma conta. O único link de ferramenta que cabe (Potencial Natural, no
   // artigo de peso e altura) já está no texto, como contexto, não como decisão.
-  "por-que-ramon-dino-perdeu-mr-olympia-2026": "Notícia explicativa da derrota de Ramon Dino no Olympia 2026: a pessoa quer entender o que aconteceu e a polêmica; sai com fatos, sem conta pendente.",
-  "ramon-dino-mr-olympia-2026-horario": "Notícia de horário e transmissão: a pessoa quer saber que horas Ramon Dino compete e onde assistir; não há conta na cabeça nem ferramenta que responda isso.",
-  "quem-ganhou-mr-olympia-2026": "Hub de resultados do Mr. Olympia 2026, categoria por categoria: a leitura termina com nomes e colocações, nunca com um número para calcular.",
-  "resultado-wellness-mr-olympia-2026": "Notícia de resultado da Wellness: a pessoa quer a campeã e a colocação das brasileiras; sai com um fato, sem conta pendente para uma ferramenta.",
-  "resultado-womens-physique-olympia-2026": "Notícia de resultado da Women's Physique: a pessoa quer a campeã e a posição de Natália Coelho e das brasileiras; sai com um fato, sem conta pendente.",
-  "brasileiros-mr-olympia-2026": "Hub dos brasileiros no Mr. Olympia 2026, com painel filtrável: a pessoa quer saber quem compete, quando e como terminou; sai com nomes e colocações.",
-  "resultado-mens-physique-olympia-2026": "Notícia de resultado da Men's Physique: a pessoa quer o campeão e a posição de Edvan Palmeira e dos brasileiros; sai com um fato. O simulador de massa é só continuação.",
-  "resultado-bikini-olympia-2026": "Notícia de resultado da Bikini: a pessoa quer a campeã e a posição de Elisa (Isa) Pecini e das brasileiras; sai com um fato, sem conta pendente.",
-  "resultado-fit-model-olympia-2026": "Notícia de resultado da Fit Model: a pessoa quer a campeã e a posição de Gabriela Queiroz, e às vezes o que é a categoria; sai com fatos, sem conta pendente.",
   "rosca-direta-vs-rosca-martelo":
     "Comparativo de exercício: a decisão do leitor é qual pegada usar, e a resposta é anatômica, não numérica. Nenhuma ferramenta do site compara exercícios.",
 

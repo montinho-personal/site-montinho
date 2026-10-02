@@ -3,7 +3,7 @@
  *   npx tsx scripts/sao-silvestre-test.ts
  */
 import {
-  ARTIGOS_COM_LINK_PREVISOR_SS, DISTANCIA_PROVA_KM, lerTempo, nivel, prever, riegel, semanasAteAProva, validaReferencia,
+  ARTIGOS_COM_LINK_PREVISOR_SS, ARTIGOS_COM_PREVISOR_SS, DISTANCIA_PROVA_KM, lerTempo, nivel, prever, riegel, semanasAteAProva, validaReferencia,
 } from "../lib/sao-silvestre";
 
 let falhas = 0;
@@ -40,6 +40,7 @@ ok(semanasAteAProva(Date.parse("2027-01-02T00:00:00-03:00")) === 0, "depois da p
 
 // Registro
 ok(ARTIGOS_COM_LINK_PREVISOR_SS.length <= 8, "registro de link com teto de oito");
+ok(ARTIGOS_COM_PREVISOR_SS.length <= 8, "registro do embed com teto de oito");
 
 console.log(falhas ? `\n${falhas} FALHA(S)` : "\nTODOS OS TESTES PASSARAM");
 process.exit(falhas ? 1 : 0);

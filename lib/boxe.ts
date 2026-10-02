@@ -316,4 +316,4 @@ export const NOTA_SEM_PERDA_LOCALIZADA =
  * O `boxe-emagrece` saiu do registro da calculadora de atividades: a
  * regra da casa é uma ferramenta por artigo.
  */
-export const ARTIGOS_COM_CALCULADORA_BOXE: string[] = ["boxe-emagrece", "ufc-332-natalia-silva"];
+export const ARTIGOS_COM_CALCULADORA_BOXE: string[] = ["boxe-emagrece", "ufc-332-natalia-silva", "brasileiros-ufc-332", "corte-de-peso-ufc"];

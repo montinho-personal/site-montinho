@@ -113,8 +113,8 @@ export const fmtFaixa = (f: Faixa) => `${formataRelogio(f.min)} a ${formataRelog
 export const fmtPaceFaixa = (f: Faixa) => `${formataPace(f.min)} a ${formataPace(f.max)}/km`;
 export { formataPace, formataRelogio };
 
-/** Artigos que apontam para o previsor (variante de LINK, teto de oito). */
-export const ARTIGOS_COM_LINK_PREVISOR_SS: string[] = [
+/** Artigos com o previsor embutido no texto (teto de oito). */
+export const ARTIGOS_COM_PREVISOR_SS: string[] = [
   "inscricao-sao-silvestre-2026",
   "treino-sao-silvestre-13-semanas",
   "percurso-sao-silvestre",
@@ -122,3 +122,6 @@ export const ARTIGOS_COM_LINK_PREVISOR_SS: string[] = [
   "primeira-sao-silvestre-dicas",
   "tenis-para-sao-silvestre",
 ];
+
+/** Variante de LINK: vazia desde que o previsor passou a ir embutido nos artigos da prova. */
+export const ARTIGOS_COM_LINK_PREVISOR_SS: string[] = [];

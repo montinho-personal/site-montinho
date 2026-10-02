@@ -96,7 +96,8 @@ import { ARTIGOS_COM_LINK_SIMULADOR } from "@/lib/simulador/emagrecimento";
 import { ARTIGOS_COM_LINK_SIMULADOR_MASSA } from "@/lib/simulador/massa";
 import { ARTIGOS_COM_LINK_SHAPE12 } from "@/lib/simulador/shape12";
 import { ARTIGOS_COM_LINK_FIM_DE_SEMANA } from "@/lib/simulador/fim-de-semana";
-import { ARTIGOS_COM_LINK_PREVISOR_SS } from "@/lib/sao-silvestre";
+import { ARTIGOS_COM_LINK_PREVISOR_SS, ARTIGOS_COM_PREVISOR_SS } from "@/lib/sao-silvestre";
+import PrevisorSaoSilvestre from "@/components/sao-silvestre/PrevisorSaoSilvestre";
 import LinkFerramentaCaminhada from "@/components/caminhada/LinkFerramentaCaminhada";
 import CalculadoraPolichinelos from "@/components/polichinelo/CalculadoraPolichinelos";
 import CalculadoraFC from "@/components/fc/CalculadoraFC";
@@ -285,7 +286,9 @@ export default async function BlogPost({ params }: Props) {
                                                         ? "creatina"
                                                         : ARTIGOS_COM_CALCULADORA_WHEY.includes(post.slug)
                                                           ? "whey"
-                                                          : null;
+                                                          : ARTIGOS_COM_PREVISOR_SS.includes(post.slug)
+                                                            ? "saoSilvestre"
+                                                            : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -550,6 +553,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraCreatina placement={post.slug} />
                 ) : qualCalc === "whey" ? (
                   <CalculadoraWhey placement={post.slug} />
+                ) : qualCalc === "saoSilvestre" ? (
+                  <PrevisorSaoSilvestre />
                 ) : (
                   <CalculadoraVolume placement={post.slug} />
                 )}
