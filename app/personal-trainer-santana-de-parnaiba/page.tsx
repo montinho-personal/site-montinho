@@ -49,7 +49,7 @@ const faq = [
   {
     question: "Quanto tempo leva para ver resultado com personal trainer em Santana de Parnaíba?",
     answer:
-      "Com protocolo bem estruturado e alimentação adequada, mudanças perceptíveis na composição corporal aparecem entre 6 e 8 semanas. Transformações visíveis e consistentes ocorrem entre 3 e 6 meses. O prazo depende do ponto de partida e do grau de comprometimento fora das sessões.",
+      "Não existe prazo que sirva para todo mundo. Disposição e força costumam ser as primeiras coisas que você percebe; o resto depende do ponto de partida, da constância e do que acontece fora das sessões. O que eu faço é acompanhar de perto e ajustar quando a evolução desacelera.",
   },
   {
     question: "Qual o valor de 1 hora de personal trainer em Santana de Parnaíba?",
@@ -79,7 +79,7 @@ const faq = [
   {
     question: "Você atende em academias de condomínio em Santana de Parnaíba?",
     answer:
-      "Sim. Grande parte dos condomínios residenciais de Santana de Parnaíba — em Alphaville, Aldeia da Serra, Fazendinha e Cidade São Pedro — possui espaço fitness próprio. Atendo diretamente na academia do seu condomínio, na sua casa ou em academias da região, conforme a estrutura disponível e a sua preferência.",
+      "Sim. Grande parte dos condomínios residenciais de Santana de Parnaíba — em Alphaville, Aldeia da Serra, Fazendinha e Cidade São Pedro — possui espaço fitness próprio. Atendo diretamente na academia do seu condomínio, na sua casa ou na Arena 18. Em outras academias, depende das regras do local para personal externo e de combinação prévia.",
   },
   {
     question: "Quantas vezes por semana devo treinar com personal em Santana de Parnaíba?",
@@ -122,7 +122,6 @@ const localSchema = {
     { "@type": "Neighborhood", name: "Cidade São Pedro" },
   ],
   serviceType: "Personal Trainer",
-  priceRange: "$$",
   // Mesma entidade que o LocalBusiness do layout, vista por uma região:
   // sameAs/hasMap apontam para o Perfil da Empresa quando a URL existe.
   parentOrganization: { "@id": `${SITE_URL}/#localbusiness` },
@@ -155,10 +154,10 @@ export default function PersonalTrainerSantanaDeParnaiba() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Personal Trainer em Santana de Parnaíba para quem quer resultado — não apenas movimento.
+            Personal trainer em Santana de Parnaíba: o treino muda quando a sua vida muda.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Santana de Parnaíba tem um jeito próprio de viver: espaço, tranquilidade e qualidade de vida. Meu trabalho é ajudar quem vive aqui a transformar essa escolha de estilo de vida em saúde e corpo real — com método, sem atalhos.
+            Aqui a rotina tem espaço para treinar, mas ela muda: filho doente, viagem, semana corrida, carga que parou de subir. Meu trabalho é acompanhar isso de perto e ajustar o treino com você, no seu condomínio, em casa ou na academia.
           </p>
           <a
             href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="personal-trainer-santana-de-parnaiba:topo"
@@ -195,7 +194,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
               <Link href="/minha-historia" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">minha história</Link> — e é o aprendizado que transmito hoje para os meus alunos de Santana de Parnaíba e da região.
             </p>
             <p>
-              São mais de 20 anos de musculação somados a cursos e especializações em treinamento, com um método refinado e validado na prática ao longo do atendimento de alunos. Cada protocolo une avaliação física, periodização, progressão de carga e atenção à postura e à prevenção de lesões — porque resultado que não se sustenta não é resultado.
+              São mais de 20 anos de musculação somados a cursos em treinamento, com um método refinado e validado na prática ao longo do atendimento de alunos. Cada protocolo une avaliação física, periodização, progressão de carga e atenção à postura e à prevenção de lesões — porque resultado que não se sustenta não é resultado.
             </p>
           </div>
           <div className="mt-10" style={{ maxWidth: "260px" }}>
@@ -245,8 +244,8 @@ export default function PersonalTrainerSantanaDeParnaiba() {
                 desc: "Para quem prefere treinar dentro de casa, levo o material necessário e estruturo treinos de força, mobilidade e resistência adaptados ao espaço. Qualidade e progressão de carga não dependem de sala cheia de máquinas.",
               },
               {
-                perfil: "Em academias da região",
-                desc: "Quem já frequenta uma academia em Santana de Parnaíba ou nas proximidades pode ser acompanhado lá mesmo. A estrutura completa amplia as possibilidades de periodização, especialmente para hipertrofia.",
+                perfil: "Na Arena 18 ou em outra academia",
+                desc: "Atendimento presencial na Arena 18. Em outras academias da região, depende das regras do local para personal externo e de combinação prévia.",
               },
               {
                 perfil: "Consultoria online",
@@ -306,14 +305,14 @@ export default function PersonalTrainerSantanaDeParnaiba() {
             </p>
             <h3 className="text-white font-semibold text-lg pt-2">Academias da região onde acompanho alunos</h3>
             <p>
-              Quem prefere estrutura completa de máquinas e pesos livres pode ser acompanhado na própria academia que já frequenta. Em Santana de Parnaíba, atendo alunos em espaços como a{" "}
+              Para quem prefere estrutura completa de máquinas e pesos livres, o atendimento presencial confirmado é na Arena 18; em outras academias, depende das regras do local para personal externo. Se você está escolhendo onde treinar, preparei guias informativos de academias da cidade, como a{" "}
               <Link href="/blog/xsuperacao-santana-de-parnaiba" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">XSuperação</Link>, a{" "}
               <Link href="/blog/coliseu-fitness-santana-de-parnaiba" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">Coliseu Fitness</Link> e a{" "}
               <Link href="/blog/forma-fisica-santana-de-parnaiba" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">Forma Física</Link>. Para quem mora em Aldeia da Serra, a{" "}
               <Link href="/blog/scelta-aldeia-da-serra" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">Scelta Aldeia da Serra</Link> é a opção mais próxima de casa.
             </p>
             <p>
-              Conhecer os equipamentos e a dinâmica de cada academia faz diferença na periodização: sei o que cada espaço oferece e monto o protocolo em cima do que realmente está disponível — sem improvisar substituições na hora do treino.
+              Se você já treina em alguma delas, me conta qual é e verificamos juntos a possibilidade de atendimento.
             </p>
           </div>
         </div>
@@ -339,7 +338,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
               A partir dela, monto a periodização do seu ciclo de treino. Cada fase tem objetivo definido — construir base, ganhar força, acelerar o emagrecimento ou consolidar a hipertrofia — e a progressão de carga é registrada sessão a sessão. Quando o corpo se adapta, o estímulo muda antes de o resultado estagnar.
             </p>
             <p>
-              Os prazos são honestos: melhora de disposição e sono nas primeiras semanas, mudanças perceptíveis na composição corporal entre 6 e 8 semanas, transformações consistentes entre 3 e 6 meses. Quem quer entender melhor os bastidores pode ler no blog{" "}
+              Prazo honesto é o que depende de você e de mim: do ponto de partida, da constância e de quanto a gente ajusta quando algo não encaixa. Não prometo número de semanas. Quem quer entender melhor os bastidores pode ler no blog{" "}
               <Link href="/blog/por-que-voce-nao-consegue-emagrecer" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">por que você não consegue emagrecer</Link> e{" "}
               <Link href="/blog/como-ganhar-massa-muscular" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">como ganhar massa muscular</Link>.
             </p>
@@ -410,8 +409,8 @@ export default function PersonalTrainerSantanaDeParnaiba() {
                 text: "Execução errada em movimento com carga gera lesão — é só uma questão de tempo. Corrijo padrões desde o primeiro treino, não quando a dor já apareceu. Segurança não é secundária ao resultado: ela é a condição para ele existir.",
               },
               {
-                title: "Suporte entre as sessões",
-                text: "O treino não termina quando você sai da academia. Estou disponível pelo WhatsApp para dúvidas, ajustes de horário, orientações sobre alimentação e qualquer coisa que afete o processo.",
+                title: "Suporte direto pelo WhatsApp",
+                text: "O treino não termina quando você sai da academia. Dúvida de execução, horário que mudou, semana que saiu do plano: você me chama e a gente ajusta.",
               },
               {
                 title: "Comunicação direta e sem jargão",
@@ -460,7 +459,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
               },
               {
                 perfil: "Profissionais com rotina exigente",
-                desc: "Quem trabalha em São Paulo ou em empresas da região de Alphaville chega em casa sem energia sobrando. O treino precisa ser eficiente: pouco tempo, muito resultado, sem risco de lesão que tira semanas do protocolo.",
+                desc: "Quem trabalha em São Paulo ou em empresas da região de Alphaville chega em casa sem energia sobrando. O treino precisa caber no tempo que existe, e mudar quando a semana aperta, sem risco de lesão que tira semanas do protocolo.",
               },
               {
                 perfil: "Pessoas com mais de 40 anos",
@@ -623,10 +622,10 @@ export default function PersonalTrainerSantanaDeParnaiba() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            A qualidade de vida de Santana de Parnaíba começa no treino.
+            Vamos conversar sobre o que você quer alcançar?
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            Você escolheu morar num lugar que favorece saúde e bem-estar. Faz sentido que o treino reflita essa escolha. Me conte o que você busca pelo WhatsApp ou pela{" "}
+            Antes, uma coisa: não se compare com ninguém. Cada pessoa tem a própria genética, a própria rotina e a própria história, com altos e baixos. O que importa é encontrar um jeito de treinar que você consiga seguir pelo resto da vida, com aderência e progressão. Me conte o que você busca pelo WhatsApp ou pela{" "}
             <Link href="/contato" className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors">página de contato</Link> — e vejo como posso ajudar.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
