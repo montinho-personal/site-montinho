@@ -109699,6 +109699,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Beliscar engorda? A resposta honesta é: <strong>beliscar não é bom nem ruim por natureza — beliscar engorda quando ele adiciona calorias que ninguém está contabilizando</strong>. E o problema do belisco é exatamente esse: ele é invisível. Não vira refeição, não vira lembrança, não vira consciência. Mas vira caloria.</p>
 
+<p><strong>Quer ver isso no seu dia?</strong> O <a href="/ferramentas/beliscometro">Beliscômetro</a> soma os seus beliscos em medidas do dia a dia — punhado, quadradinho, “só um” — e mostra o prato que você nunca montou, mas comeu aos poucos.</p>
+
 <h2>A matemática que ninguém faz</h2>
 
 <p>Vamos aos números, porque aqui eles são muito mais convincentes que qualquer sermão. Um excedente de aproximadamente 250 kcal por dia, sustentado por um ano, representa uma quantidade considerável de energia acumulada — na ordem de 90.000 kcal. Isso não se traduz linearmente em ganho de peso, porque o corpo se ajusta, mas dá para entender por que a pessoa "engorda sem saber como".</p>
