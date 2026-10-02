@@ -89068,7 +89068,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Pular refeição parece atalho para emagrecer, mas costuma falhar pelo efeito compensação: a fome acumulada cobra juros. Entenda quando reduzir refeições funciona — e quando sabota.",
     category: "Hábitos",
     date: "2026-07-11",
-    updatedAt: "2026-07-11",
+    updatedAt: "2026-10-02",
     readTime: "8 min",
     author: "Montinho",
     tags: ["pular refeição","emagrecimento","jejum intermitente","hábitos alimentares","compulsão alimentar"],
@@ -89131,6 +89131,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Perceba o padrão: quem monta a dieta primeiro decide quantas refeições fazem sentido depois. Quem pula refeição primeiro deixa a fome decidir o resto.</p>
 
+<h2>Só almoçar ou fazer uma refeição por dia emagrece?</h2>
+<p>É a versão extrema da mesma pergunta. Comer uma vez por dia (o chamado <strong>OMAD</strong>, de “one meal a day”) emagrece pelo mesmo motivo que qualquer estratégia emagrece: se o total do dia ficar abaixo do que você gasta. Não existe efeito extra por concentrar tudo num prato só.</p>
+<p>O que muda é a dificuldade. Num único prato é difícil colocar proteína, fibra e micronutrientes suficientes, a fome das outras horas costuma virar belisco, e a primeira semana engana: a balança cai rápido por água e glicogênio, não só gordura. Na minha experiência com alunos, quem tenta “só almoçar” quase sempre acaba beliscando à tarde e à noite — e o belisco não entra na conta. Se quiser ver quanto isso soma, o <a href="/ferramentas/beliscometro">Beliscômetro</a> faz a conta em 2 minutos.</p>
+<p>Duas refeições bem montadas podem funcionar muito bem para quem não tem fome de manhã. O critério é o mesmo da seção anterior: decisão planejada, proteína suficiente e algo que você consiga manter.</p>
+
 <h2>One more thing: o problema nunca foi a refeição</h2>
 <p>Pular ou não pular é detalhe. O que define seu resultado é ter um <strong>sistema</strong>: calorias certas para o seu corpo, refeições que cabem na sua rotina e ajustes quando a vida muda.</p>
 <p>É isso que o Montinho constrói com cada aluno na <a href="/consultoria">consultoria online</a>: um plano alimentar e de treino desenhado para a sua fome, seus horários e seu histórico — inclusive se a sua relação com a comida anda difícil. Quer começar entendendo seu ponto de partida? <a href="/contato">Agende uma avaliação</a>.</p>
@@ -89147,6 +89152,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>`,
     faq: [
       { question: "Pular refeição emagrece?", answer: "Só se reduzir as calorias totais do dia, o que raramente acontece: a fome acumulada gera compensação e você acaba comendo igual ou mais depois. Sem planejamento, a estratégia costuma falhar." },
+      { question: "Fazer apenas 1 refeição por dia emagrece?", answer: "Pode emagrecer se o total do dia ficar abaixo do que você gasta — e não por ser uma refeição só. Esse formato (chamado de OMAD, “one meal a day”) é uma forma extrema de jejum intermitente: concentra tudo numa única refeição. A dificuldade é colocar proteína, fibras e micronutrientes suficientes num prato só, e a fome acumulada leva muita gente a exagerar ou a beliscar. Para a maioria, 2 ou 3 refeições bem montadas são mais fáceis de manter." },
+      { question: "É verdade que só almoçar e não jantar emagrece?", answer: "Não existe efeito especial em cortar o jantar. Se tirar o jantar reduzir o total do dia, você emagrece; se a fome da noite virar beliscos ou um café da manhã enorme no dia seguinte, não. O horário importa menos do que o total e do que conseguir manter." },
+      { question: "Uma refeição por dia emagrece quantos quilos?", answer: "Não há um número: depende do déficit que essa refeição cria em relação ao seu gasto, e isso varia de pessoa para pessoa. Nas primeiras semanas de qualquer restrição forte a balança cai mais rápido por água e glicogênio, o que dá uma falsa ideia de ritmo. Para estimar seu gasto e um déficit realista, use a calculadora de déficit calórico do site." },
+      { question: "Quantos quilos perde se ficar sem comer por 3 dias?", answer: "A balança pode cair bastante, mas grande parte é água, glicogênio e conteúdo intestinal — volta quando você volta a comer. Ficar dias sem comer não é estratégia de emagrecimento: aumenta a perda de massa muscular, o mal-estar e o risco de compensar depois. Pessoas com diabetes, que usam medicamentos ou têm qualquer condição de saúde não devem fazer jejum prolongado sem acompanhamento médico." },
+      { question: "Comer uma vez por dia faz mal?", answer: "Para algumas pessoas saudáveis pode ser só desconfortável; para outras, causa fraqueza, tontura, dor de cabeça e dificuldade de bater proteína e nutrientes do dia. Não é indicado para gestantes, quem tem histórico de compulsão ou transtorno alimentar, diabetes ou usa medicamentos que mexem com a glicemia — nesses casos, a conversa é com médico ou nutricionista." },
       { question: "Pular refeição é o mesmo que jejum intermitente?", answer: "Não. O jejum intermitente tem janelas fixas e refeições planejadas dentro delas. Pular refeição sem plano é improviso, que termina em fome descontrolada e escolhas ruins." },
       { question: "Pular refeição pode piorar a compulsão alimentar?", answer: "Sim. Restrição desorganizada é gatilho clássico do ciclo restringir-exagerar-culpar. Quem tem sinais de compulsão deve evitar pular refeições sem acompanhamento profissional." },
       { question: "Comer menos vezes por dia funciona para emagrecer?", answer: "Funciona quando é planejado: refeições restantes maiores, com proteína suficiente, e janela compatível com a rotina. O que decide é o total calórico do dia, não o número de refeições." }
