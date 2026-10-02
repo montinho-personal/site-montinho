@@ -152,6 +152,10 @@ export default function Beliscometro({ preset }: { preset?: { momentos?: string[
             Um chocolate aqui.<br />Uma batata dali.<br />Um punhado de amendoim enquanto trabalha.
           </p>
           <p className="text-gray-400 mt-3">Separadamente, quase nada parece importante. Mas quanto isso representa no seu dia?</p>
+          <div className="mt-5 border-l-2 pl-4 py-1" style={{ borderColor: OURO }}>
+            <p className="text-white text-sm font-semibold">Pense num dia comum seu — ontem, por exemplo.</p>
+            <p className="text-gray-400 text-sm mt-1">Marque só o que você costuma beliscar de verdade, não tudo que já beliscou na vida. O que é de vez em quando entra como “algumas vezes por semana” ou “só no fim de semana”, e a conta vira média por dia.</p>
+          </div>
           <button type="button" onClick={comecar} className={`${btn} mt-6 w-full sm:w-auto tracking-wide`} style={{ background: OURO }}>DESCOBRIR MEUS BELISCOS</button>
           <p className="text-gray-500 text-xs mt-3">Leva menos de 2 minutos · sem cadastro · suas respostas ficam no seu celular</p>
         </div>
@@ -159,7 +163,7 @@ export default function Beliscometro({ preset }: { preset?: { momentos?: string[
 
       {etapa === "momentos" && (
         <div className={card}>
-          {titulo("Em quais momentos você mais costuma beliscar?", "Marque quantos quiser.")}
+          {titulo("Em quais momentos você mais costuma beliscar?", "Num dia comum. Marque quantos quiser.")}
           <div className="grid grid-cols-2 gap-2">
             {MOMENTOS.map((m) => (
               <Opcao key={m.id} ativo={momentos.includes(m.id)} onClick={() => toggleMomento(m.id)}>
@@ -174,7 +178,7 @@ export default function Beliscometro({ preset }: { preset?: { momentos?: string[
 
       {etapa === "alimentos" && (
         <div className={card}>
-          {titulo("O que costuma aparecer nesses momentos?", "Toque em tudo que costuma aparecer.")}
+          {titulo("O que costuma aparecer nesses momentos?", "Só o que acontece com frequência. Quer testar um belisco específico? Marque só ele.")}
           <label className="sr-only" htmlFor="bm-busca">Procure um alimento</label>
           <input id="bm-busca" value={busca} onChange={(e) => setBusca(e.target.value)} placeholder="🔎 Procure um alimento…" autoComplete="off"
             className="w-full min-h-[48px] bg-black border border-white/20 px-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-white mb-3" />
@@ -378,7 +382,7 @@ function Resultado({ respostas, res, mudanca, setMudanca, semCortar, setSemCorta
       {/* Clímax */}
       <section className="text-center">
         <h2 tabIndex={-1} data-foco className="text-white text-3xl sm:text-4xl font-bold leading-tight outline-none" style={h}>O PRATO QUE VOCÊ NUNCA MONTOU.</h2>
-        <p className="text-gray-300 mt-2 mb-8">Mas que pode estar aparecendo aos poucos durante o seu dia.</p>
+        <p className="text-gray-300 mt-2 mb-8">Mas que pode estar aparecendo aos poucos durante o seu dia — num dia comum, pelo que você marcou.</p>
         <Prato linhas={res.linhas} />
         <p className="text-white text-xl mt-8 leading-snug" style={h}>Esses alimentos nunca estiveram juntos no seu prato.<br /><span style={{ color: OURO }}>Mas estiveram juntos no seu dia.</span></p>
       </section>
