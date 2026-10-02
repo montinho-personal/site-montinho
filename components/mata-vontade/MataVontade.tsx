@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Compartilhar from "@/components/share/Compartilhar";
 import { trackEvent } from "@/lib/analytics";
@@ -18,6 +18,9 @@ import { alergenosDe, alvoDe, interpretar, recomendar, type Resultado } from "@/
 const OURO = "#BA9E50";
 const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 
+type Item = { titulo: string; r: Resultado; f: Familia };
+type Sel = { a: string; f: Familia; chips: string[] };
+const MAX_VONTADES = 3;
 type Etapa = "vontade" | "vago" | "como" | "tempo" | "casa" | "objetivo" | "resultado";
 
 const TEMPOS = [{ v: 2, r: "2 minutos" }, { v: 5, r: "5 minutos" }, { v: 10, r: "10 minutos" }, { v: 15, r: "15 minutos" }, { v: 0, r: "posso cozinhar com calma" }];
@@ -67,7 +70,12 @@ export default function MataVontade() {
   const [etapa, setEtapa] = useState<Etapa>("vontade");
   const [texto, setTexto] = useState("");
   const [aviso, setAviso] = useState<string | null>(null);
-  const [familia, setFamilia] = useState<Familia | null>(null);
+  const [familias, setFamilias] = useState<Familia[]>([]);
+  const [sel, setSel] = useState<Sel[]>([]);
+  const [hist, setHist] = useState<Etapa[]>([]);
+  const topo = useRef<HTMLDivElement>(null);
+  const montou = useRef(false);
+  const familia = familias[0] ?? null;
   const [chips, setChips] = useState<string[]>([]);
   const [temperatura, setTemperatura] = useState<Temperatura | undefined>();
   const [aromas, setAromas] = useState<string[]>([]);
@@ -80,37 +88,76 @@ export default function MataVontade() {
   const [aberta, setAberta] = useState<string | null>(null);
   const [nota, setNota] = useState<Record<string, string>>({});
 
-  const ir = (e: Etapa) => { setEtapa(e); trackEvent("mata_vontade_etapa", { etapa: e, familia: familia?.id ?? "" }); };
+  const ir = (e: Etapa) => { setHist((h) => [...h, etapa]); setEtapa(e); trackEvent("mata_vontade_etapa", { etapa: e, familia: familias.map((f) => f.id).join(",") }); };
+  const voltar = () => { const ant = hist[hist.length - 1]; if (!ant) return; setHist(hist.slice(0, -1)); setEtapa(ant); setAberta(null); };
+  // A cada etapa, volta a tela para o topo da ferramenta (senão o resultado abre no meio do FAQ).
+  useEffect(() => {
+    if (!montou.current) { montou.current = true; return; }
+    topo.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const alvo = topo.current?.querySelector<HTMLElement>(etapa === "vontade" ? "#mv-vontade" : "[data-foco]");
+    alvo?.focus({ preventScroll: true });
+  }, [etapa]);
   const toggle = (lista: string[], set: (v: string[]) => void, id: string) => set(lista.includes(id) ? lista.filter((x) => x !== id) : [...lista, id]);
 
   function comecar(t: string) {
-    const r = interpretar(t);
-    trackEvent("mata_vontade_inicio", { tipo: r.tipo, familia: r.tipo === "familia" ? r.familia.id : "" });
-    if (r.tipo === "familia") {
-      setFamilia(r.familia); setChips(r.chips); setTemperatura(r.temperatura); setAromas(r.aromas); setAviso(null);
+    const r = t.trim() ? interpretar(t) : null;
+    const escolhidas = sel.map((s) => s.f);
+    if (r?.tipo === "familia" && !escolhidas.some((f) => f.id === r.familia.id)) escolhidas.unshift(r.familia);
+    if (escolhidas.length) {
+      const extra = [...sel.flatMap((s) => s.chips), ...(r?.tipo === "familia" ? r.chips : [])];
+      trackEvent("mata_vontade_inicio", { tipo: escolhidas.length > 1 ? "varias" : "familia", familia: escolhidas.map((f) => f.id).join(",") });
+      setFamilias(escolhidas); setChips([...new Set(extra)]); setTemperatura(r?.tipo === "familia" ? r.temperatura : undefined);
+      setAromas(r?.tipo === "familia" ? r.aromas : []); setAviso(null);
       ir("como");
-    } else if (r.tipo === "vago") { setAviso(null); ir("vago"); }
+      return;
+    }
+    if (!r) return;
+    trackEvent("mata_vontade_inicio", { tipo: r.tipo, familia: "" });
+    if (r.tipo === "vago") { setAviso(null); ir("vago"); }
     else if (r.tipo === "salgado") setAviso("Salgados chegam em breve 🙂 Por enquanto eu só sei matar vontade de doce. Quer tentar um doce?");
     else setAviso("Ainda não conheço essa. Toque numa das vontades abaixo que eu sei resolver:");
   }
   function escolherFamilia(f: Familia, extra?: { chip?: string; aroma?: string }) {
-    setFamilia(f); setChips(extra?.chip ? [extra.chip] : []); setAromas(extra?.aroma ? [extra.aroma] : []); setTemperatura(undefined); setAviso(null);
+    setFamilias([f]); setChips(extra?.chip ? [extra.chip] : []); setAromas(extra?.aroma ? [extra.aroma] : []); setTemperatura(undefined); setAviso(null);
     trackEvent("mata_vontade_inicio", { tipo: "atalho", familia: f.id });
     ir("como");
   }
 
-  const pedido = familia ? { familia, chips, temperatura, aromas, tempoMax: tempo || undefined, equip, tenho, podeComprar: comprar, objetivo, restricoes } : null;
-  const cartoes = pedido && etapa === "resultado" ? recomendar(pedido) : null;
+  const pedidoDe = (f: Familia) => ({ familia: f, chips: chips.filter((c) => f.chips.some((x) => x.id === c)), temperatura, aromas, tempoMax: tempo || undefined, equip, tenho, podeComprar: comprar, objetivo, restricoes });
+  const titObj = objetivo === "gostoso" ? "Outra opção" : OBJETIVOS.find((o) => o.id === objetivo)!.r;
+
+  /** Uma vontade: melhor / mais rápido / objetivo. Várias: o melhor de cada uma, até três cartões. */
+  function montar(): Item[] {
+    if (familias.length === 1) {
+      const f = familias[0]; const c = recomendar(pedidoDe(f));
+      return ([["Melhor match", c.melhor], ["Mais rápido", c.rapido], [titObj, c.estrategia]] as [string, Resultado | undefined][])
+        .filter(([, r]) => r).map(([titulo, r]) => ({ titulo, r: r!, f }));
+    }
+    const por = familias.map((f) => ({ f, c: recomendar(pedidoDe(f)) })).filter((x) => x.c.melhor)
+      .sort((a, b) => b.c.melhor!.match - a.c.melhor!.match);
+    const usados = new Set<string>(); const itens: Item[] = [];
+    for (const { f, c } of por) {
+      const r = c.todos.find((x) => !usados.has(x.receita.id));
+      if (r && itens.length < 3) { usados.add(r.receita.id); itens.push({ titulo: itens.length === 0 ? "Melhor match" : `Pra vontade de ${f.nome.toLowerCase()}`, r, f }); }
+    }
+    const resto = por.flatMap(({ f, c }) => c.todos.map((r) => ({ f, r }))).sort((a, b) => b.r.match - a.r.match);
+    for (const x of resto) {
+      if (itens.length >= 3) break;
+      if (usados.has(x.r.receita.id)) continue;
+      usados.add(x.r.receita.id); itens.push({ titulo: "Outra opção", ...x });
+    }
+    return itens;
+  }
+  const itens = familias.length && etapa === "resultado" ? montar() : null;
 
   function verResultado() {
     ir("resultado");
-    if (pedido) {
-      const c = recomendar(pedido);
-      trackEvent("mata_vontade_resultado", { familia: pedido.familia.id, objetivo, melhor: c.melhor?.receita.id ?? "nenhum", match: c.melhor?.match ?? 0, tem_restricao: restricoes.length > 0 });
-    }
+    const c = montar();
+    trackEvent("mata_vontade_resultado", { familia: familias.map((f) => f.id).join(","), objetivo, melhor: c[0]?.r.receita.id ?? "nenhum", match: c[0]?.r.match ?? 0, tem_restricao: restricoes.length > 0 });
   }
   function recomecar() {
-    setEtapa("vontade"); setTexto(""); setFamilia(null); setChips([]); setTemperatura(undefined); setAromas([]); setTempo(undefined); setAberta(null); setAviso(null);
+    setHist([]); setSel([]);
+    setEtapa("vontade"); setTexto(""); setFamilias([]); setChips([]); setTemperatura(undefined); setAromas([]); setTempo(undefined); setAberta(null); setAviso(null);
   }
 
   const passo = ({ como: 1, tempo: 2, casa: 3, objetivo: 4, resultado: 5 } as Record<string, number>)[etapa] ?? 0;
@@ -118,35 +165,48 @@ export default function MataVontade() {
   const btn = "min-h-[48px] px-6 font-semibold text-black transition-transform hover:scale-[1.02]";
 
   return (
-    <div className="text-left">
-      {passo > 0 && etapa !== "resultado" && (
-        <div className="flex items-center gap-3 mb-5" aria-label={`Etapa ${passo} de 4`}>
-          {[1, 2, 3, 4].map((i) => <span key={i} className="h-1 flex-1 transition-colors" style={{ background: i <= passo ? OURO : "rgba(255,255,255,.12)" }} />)}
-          <button type="button" onClick={recomecar} className="text-xs text-gray-400 hover:text-white min-h-[44px]">recomeçar</button>
+    <div ref={topo} className="text-left scroll-mt-28 [&_button:focus-visible]:outline [&_button:focus-visible]:outline-2 [&_button:focus-visible]:outline-offset-2 [&_button:focus-visible]:outline-white [&_a:focus-visible]:outline [&_a:focus-visible]:outline-2 [&_a:focus-visible]:outline-white">
+      {etapa !== "vontade" && etapa !== "resultado" && (
+        <div className="flex items-center gap-3 mb-5">
+          <button type="button" onClick={voltar} className="text-sm text-gray-300 hover:text-white min-h-[44px] pr-1 shrink-0">← voltar</button>
+          <div className="flex items-center gap-2 flex-1" role="progressbar" aria-label="Progresso" aria-valuemin={0} aria-valuemax={4} aria-valuenow={passo}>
+            {[1, 2, 3, 4].map((i) => <span key={i} className="h-1 flex-1 transition-colors" style={{ background: i <= passo ? OURO : "rgba(255,255,255,.12)" }} />)}
+          </div>
+          <button type="button" onClick={recomecar} className="text-xs text-gray-400 hover:text-white min-h-[44px] shrink-0">recomeçar</button>
         </div>
       )}
 
       {etapa === "vontade" && (
         <div className={card}>
           <label htmlFor="mv-vontade" className="block text-white text-lg mb-3">O que você está com vontade de comer agora?</label>
-          <form onSubmit={(e) => { e.preventDefault(); if (texto.trim()) comecar(texto); }} className="flex flex-col sm:flex-row gap-3">
+          <form onSubmit={(e) => { e.preventDefault(); if (texto.trim() || sel.length) comecar(texto); }} className="flex flex-col sm:flex-row gap-3">
             <input id="mv-vontade" value={texto} onChange={(e) => setTexto(e.target.value)} placeholder="ex.: bolo de chocolate, brigadeiro, sorvete…"
-              className="flex-1 min-h-[52px] bg-black border border-white/20 px-4 text-white text-lg placeholder:text-gray-500 focus:outline-none focus:border-white/60" autoComplete="off" />
-            <button type="submit" className={btn} style={{ background: OURO }}>Matar a vontade</button>
+              className="flex-1 min-h-[52px] bg-black border border-white/20 px-4 text-white text-lg placeholder:text-gray-400 focus:outline-none focus:border-white focus-visible:ring-2 focus-visible:ring-[#BA9E50]" autoComplete="off" />
+            <button type="submit" className={btn} style={{ background: OURO }}>{sel.length > 1 ? `Matar as ${sel.length} vontades` : "Matar a vontade"}</button>
           </form>
           {aviso && <p className="text-gray-200 mt-4" role="status">{aviso}</p>}
-          <div className="flex flex-wrap gap-2 mt-5">
-            {(aviso ? FAMILIAS.map((f) => `${f.emoji} ${f.nome}`) : ATALHOS).map((a) => (
-              <button key={a} type="button" className="min-h-[44px] px-4 border border-white/15 text-gray-300 text-sm hover:border-white/50 hover:text-white"
-                onClick={() => { const f = FAMILIAS.find((x) => `${x.emoji} ${x.nome}` === a); if (f) escolherFamilia(f); else { setTexto(a); comecar(a); } }}>{a}</button>
-            ))}
+          <p className="text-gray-400 text-sm mt-5 mb-2">Ou toque em uma ou mais (até {MAX_VONTADES}):</p>
+          <div className="flex flex-wrap gap-2">
+            {(aviso ? FAMILIAS.map((f) => `${f.emoji} ${f.nome}`) : ATALHOS).map((a) => {
+              const ativo = sel.some((s) => s.a === a);
+              return (
+                <Chip key={a} ativo={ativo} onClick={() => {
+                  if (ativo) { setSel(sel.filter((s) => s.a !== a)); return; }
+                  const f = FAMILIAS.find((x) => `${x.emoji} ${x.nome}` === a);
+                  if (f) { if (sel.length < MAX_VONTADES) setSel([...sel, { a, f, chips: [] }]); return; }
+                  const r = interpretar(a);
+                  if (r.tipo === "familia") { if (sel.length < MAX_VONTADES && !sel.some((s) => s.f.id === r.familia.id)) setSel([...sel, { a, f: r.familia, chips: r.chips }]); }
+                  else { setTexto(a); comecar(a); }
+                }}>{a}</Chip>
+              );
+            })}
           </div>
         </div>
       )}
 
       {etapa === "vago" && (
         <div className={card}>
-          <p className="text-white text-lg mb-4">Tudo bem não saber. Qual dessas chega mais perto?</p>
+          <h2 tabIndex={-1} data-foco className="text-white text-lg mb-4 outline-none">Tudo bem não saber. Qual dessas chega mais perto?</h2>
           <div className="grid grid-cols-2 gap-3">
             {VAGO_OPCOES.map((o) => (
               <button key={o.f} type="button" className="min-h-[72px] border border-white/15 text-white text-base hover:border-white/50"
@@ -156,16 +216,20 @@ export default function MataVontade() {
         </div>
       )}
 
-      {etapa === "como" && familia && (
+      {etapa === "como" && familias.length > 0 && (
         <div className={card}>
-          <p className="text-xs uppercase tracking-[0.2em] mb-2" style={{ color: OURO }}>{familia.emoji} {familia.nome}</p>
-          <p className="text-white text-lg mb-4">Como você quer isso?</p>
-          <div className="flex flex-wrap gap-2">
-            {familia.chips.map((c) => (
-              <Chip key={c.id} ativo={chips.includes(c.id) || (!!c.temperatura && temperatura === c.temperatura)}
-                onClick={() => { if (c.temperatura) setTemperatura(temperatura === c.temperatura ? undefined : c.temperatura); else toggle(chips, setChips, c.id); if (c.aroma) toggle(aromas, setAromas, c.aroma); }}>{c.rotulo}</Chip>
-            ))}
-          </div>
+          <h2 tabIndex={-1} data-foco className="text-white text-lg mb-4 outline-none">{familias.length > 1 ? "Como você quer cada uma?" : "Como você quer isso?"}</h2>
+          {familias.map((f) => (
+            <div key={f.id} className="mb-5 last:mb-0">
+              <p className="text-xs uppercase tracking-[0.2em] mb-2" style={{ color: OURO }}>{f.emoji} {f.nome}</p>
+              <div className="flex flex-wrap gap-2">
+                {f.chips.map((c) => (
+                  <Chip key={c.id} ativo={chips.includes(c.id) || (!!c.temperatura && temperatura === c.temperatura)}
+                    onClick={() => { if (c.temperatura) setTemperatura(temperatura === c.temperatura ? undefined : c.temperatura); else toggle(chips, setChips, c.id); if (c.aroma) toggle(aromas, setAromas, c.aroma); }}>{c.rotulo}</Chip>
+                ))}
+              </div>
+            </div>
+          ))}
           <div className="flex gap-3 mt-6">
             <button type="button" className={btn} style={{ background: OURO }} onClick={() => ir("tempo")}>Continuar</button>
             <button type="button" className="min-h-[48px] px-4 text-gray-300 hover:text-white" onClick={() => { setChips([]); ir("tempo"); }}>tanto faz</button>
@@ -175,7 +239,7 @@ export default function MataVontade() {
 
       {etapa === "tempo" && (
         <div className={card}>
-          <p className="text-white text-lg mb-4">Quanto tempo você tem?</p>
+          <h2 tabIndex={-1} data-foco className="text-white text-lg mb-4 outline-none">Quanto tempo você tem?</h2>
           <div className="flex flex-wrap gap-2">
             {TEMPOS.map((t) => <Chip key={t.v} ativo={tempo === t.v} onClick={() => { setTempo(t.v); ir("casa"); }}>{t.r}</Chip>)}
           </div>
@@ -184,7 +248,7 @@ export default function MataVontade() {
 
       {etapa === "casa" && (
         <div className={card}>
-          <p className="text-white text-lg mb-1">O que tem aí?</p>
+          <h2 tabIndex={-1} data-foco className="text-white text-lg mb-1 outline-none">O que tem aí?</h2>
           <p className="text-gray-400 text-sm mb-4">Já marquei o que quase todo mundo tem. Desmarque o que faltar.</p>
           <p className="text-gray-300 text-sm mb-2">Na cozinha</p>
           <div className="flex flex-wrap gap-2 mb-5">
@@ -202,7 +266,7 @@ export default function MataVontade() {
             <input type="checkbox" checked={comprar} onChange={(e) => setComprar(e.target.checked)} className="w-5 h-5 accent-[#BA9E50]" />
             Se faltar algo, posso comprar
           </label>
-          <p className="text-gray-300 text-sm mt-4 mb-2">Alguma restrição? <span className="text-gray-500">(fica só no seu navegador)</span></p>
+          <p className="text-gray-300 text-sm mt-4 mb-2">Alguma restrição? <span className="text-gray-400">(fica só no seu navegador)</span></p>
           <div className="flex flex-wrap gap-2">
             {RESTRICOES.map((r) => <Chip key={r.id} ativo={restricoes.includes(r.id)} onClick={() => toggle(restricoes, setRestricoes, r.id)}>{r.r}</Chip>)}
           </div>
@@ -212,7 +276,7 @@ export default function MataVontade() {
 
       {etapa === "objetivo" && (
         <div className={card}>
-          <p className="text-white text-lg mb-4">O que você quer melhorar nessa escolha?</p>
+          <h2 tabIndex={-1} data-foco className="text-white text-lg mb-4 outline-none">O que você quer melhorar nessa escolha?</h2>
           <div className="flex flex-col gap-2">
             {OBJETIVOS.map((o) => (
               <button key={o.id} type="button" onClick={() => setObjetivo(o.id)} aria-pressed={objetivo === o.id}
@@ -224,13 +288,14 @@ export default function MataVontade() {
         </div>
       )}
 
-      {etapa === "resultado" && familia && cartoes && (
+      {etapa === "resultado" && familia && itens && (
         <div>
-          <div className="flex items-baseline justify-between gap-3 mb-4">
-            <p className="text-white text-xl" style={h}>Vontade de {familia.nome.toLowerCase()}: achei isso para você</p>
+          <div className="flex items-center justify-between gap-3 mb-2">
+            <button type="button" onClick={voltar} className="text-sm text-gray-300 hover:text-white min-h-[44px]">← voltar</button>
             <button type="button" onClick={recomecar} className="text-sm text-gray-400 hover:text-white min-h-[44px] shrink-0">outra vontade</button>
           </div>
-          {!cartoes.melhor ? (
+          <h2 tabIndex={-1} data-foco className="text-white text-xl mb-4 outline-none" style={h}>Vontade de {familias.map((f) => f.nome.toLowerCase()).join(familias.length > 2 ? ", " : " e ").replace(/, ([^,]*)$/, " e $1")}: achei isso para você</h2>
+          {!itens.length ? (
             <div className={card}>
               <p className="text-white">Com o que você tem e o tempo que escolheu, ainda não tenho uma versão boa disso.</p>
               <p className="text-gray-300 mt-2">Tente marcar &ldquo;posso comprar&rdquo;, aumentar o tempo ou tirar uma restrição. E às vezes o melhor é o original, numa porção que cabe.</p>
@@ -238,13 +303,15 @@ export default function MataVontade() {
             </div>
           ) : (
             <div className="grid gap-4">
-              {([["Melhor match", cartoes.melhor], ["Mais rápido", cartoes.rapido], [OBJETIVOS.find((o) => o.id === objetivo)?.id === "gostoso" ? "Outra opção" : OBJETIVOS.find((o) => o.id === objetivo)!.r, cartoes.estrategia]] as [string, Resultado | undefined][])
-                .filter(([, r]) => r).map(([titulo, r], i) => (
-                  <Cartao key={r!.receita.id} titulo={titulo} r={r!} destaque={i === 0} aberta={aberta === r!.receita.id}
-                    alvo={alvoDe({ familia, chips }).alvo} pediu={chips} familia={familia}
-                    onAbrir={() => { const novo = aberta === r!.receita.id ? null : r!.receita.id; setAberta(novo); if (novo) trackEvent("mata_vontade_receita_aberta", { receita: novo, posicao: i + 1, match: r!.match }); }}
-                    nota={nota[r!.receita.id]} onNota={(v) => { setNota({ ...nota, [r!.receita.id]: v }); trackEvent("mata_vontade_feedback", { receita: r!.receita.id, familia: familia.id, nota: v }); }} />
-                ))}
+              {itens.map(({ titulo, r, f }, i) => {
+                const pc = pedidoDe(f).chips;
+                return (
+                  <Cartao key={r.receita.id} titulo={titulo} r={r} destaque={i === 0} aberta={aberta === r.receita.id}
+                    alvo={alvoDe({ familia: f, chips: pc }).alvo} pediu={pc} familia={f}
+                    onAbrir={() => { const novo = aberta === r.receita.id ? null : r.receita.id; setAberta(novo); if (novo) trackEvent("mata_vontade_receita_aberta", { receita: novo, posicao: i + 1, match: r.match }); }}
+                    nota={nota[r.receita.id]} onNota={(v) => { setNota({ ...nota, [r.receita.id]: v }); trackEvent("mata_vontade_feedback", { receita: r.receita.id, familia: f.id, nota: v }); }} />
+                );
+              })}
             </div>
           )}
 
@@ -305,7 +372,7 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
                 </li>
               ))}
             </ul>
-            <p className="text-[11px] text-gray-500 mt-1">1ª barra: o que você pediu{pediu.length ? "" : ` (padrão de ${familia.nome.toLowerCase()})`} · 2ª: a receita</p>
+            <p className="text-[11px] text-gray-400 mt-1">1ª barra: o que você pediu{pediu.length ? "" : ` (padrão de ${familia.nome.toLowerCase()})`} · 2ª: a receita</p>
           </div>
           <div>
             <p className="text-white text-sm font-semibold mb-2">Ingredientes</p>
@@ -313,7 +380,7 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
               {rc.ingredientes.map((i) => (
                 <li key={i.id} className={r.faltam.includes(i.id) ? "text-amber-200" : "text-gray-300"}>
                   {r.faltam.includes(i.id) ? "○" : "●"} {INGREDIENTES[i.id].nome}: {i.qtd}{i.opcional ? " (opcional)" : ""}
-                  {i.troca && <span className="text-gray-500"> · troca: {i.troca}</span>}
+                  {i.troca && <span className="text-gray-400"> · troca: {i.troca}</span>}
                 </li>
               ))}
             </ul>
@@ -324,7 +391,7 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
             {rc.dica && <p className="text-sm mt-3" style={{ color: OURO }}>Dica: <span className="text-gray-300">{rc.dica}</span></p>}
           </div>
           {alerg.length > 0 && <p className="text-xs text-gray-400">Contém: {alerg.join(", ").replace("gluten", "glúten")}. Não garantimos ausência de traços.</p>}
-          <p className="text-xs text-gray-500">Receita em teste: proporções de partida, ainda em ajuste. Os valores nutricionais entram quando a receita for testada; quando entrarem, serão estimativas que variam com marca e quantidade.</p>
+          <p className="text-xs text-gray-400">Receita em teste: proporções de partida, ainda em ajuste. Os valores nutricionais entram quando a receita for testada; quando entrarem, serão estimativas que variam com marca e quantidade.</p>
           <div>
             <p className="text-white text-sm font-semibold mb-2">Fez? Matou a vontade?</p>
             <div className="flex flex-wrap gap-2">
@@ -332,7 +399,7 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
                 <Chip key={v} ativo={nota === v} onClick={() => onNota(v)}>{t}</Chip>
               ))}
             </div>
-            {nota && <p className="text-gray-400 text-xs mt-2">Valeu! Isso ajuda a ajustar a receita para todo mundo.</p>}
+            {nota && <p role="status" className="text-gray-400 text-xs mt-2">Valeu! Isso ajuda a ajustar a receita para todo mundo.</p>}
           </div>
           <Compartilhar contexto="tool-result" titulo="Montinho Mata a Vontade" caminho="/ferramentas/mata-a-vontade" local="tool_result" ferramenta="mata-a-vontade"
             resultado={[`Eu estava com vontade de ${familia.nome.toLowerCase()}`, `Achei: ${rc.nome}`, `Match: ${r.match}%`]} gancho="Montinho Mata a Vontade:" aparencia="discreto" />

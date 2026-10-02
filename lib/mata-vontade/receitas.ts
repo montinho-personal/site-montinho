@@ -51,10 +51,12 @@ export const INGREDIENTES: Record<string, { nome: string; despensa?: boolean; al
   tapioca: { nome: "goma de tapioca" },
   pao: { nome: "pão de forma", alergenos: ["gluten"] },
   cacau: { nome: "cacau em pó 100%", despensa: true },
-  choc70: { nome: "chocolate 70%" },
+  choc70: { nome: "chocolate 70%", alergenos: ["lactose"] }, // pode conter leite
   "choc-leite": { nome: "chocolate ao leite", alergenos: ["lactose"] },
   cafe: { nome: "café solúvel" },
   canela: { nome: "canela", despensa: true },
+  agua: { nome: "água", despensa: true },
+  sal: { nome: "sal", despensa: true },
   baunilha: { nome: "essência de baunilha" },
   coco: { nome: "coco ralado" },
   "pasta-amendoim": { nome: "pasta de amendoim", alergenos: ["amendoim"] },
@@ -75,7 +77,22 @@ export const INGREDIENTES: Record<string, { nome: string; despensa?: boolean; al
   gelo: { nome: "gelo", despensa: true },
 };
 
-const R = (r: Omit<Receita, "status">): Receita => ({ ...r, status: "em-teste" });
+/**
+ * Rótulo "sem-X"/"vegana" nunca pode contradizer os ingredientes (inclusive
+ * opcionais): se algum ingrediente carrega o alérgeno, o rótulo cai.
+ */
+const R = (r: Omit<Receita, "status">): Receita => {
+  const alerg = new Set(r.ingredientes.flatMap((i) => INGREDIENTES[i.id]?.alergenos ?? []));
+  const marcas = r.marcas.filter((m) => {
+    if (m === "vegana") return !alerg.has("lactose") && !alerg.has("ovo") && !alerg.has("mel");
+    if (m === "sem-gluten") return !alerg.has("gluten");
+    if (m === "sem-lactose") return !alerg.has("lactose");
+    if (m === "sem-ovo") return !alerg.has("ovo");
+    if (m === "sem-whey") return !r.ingredientes.some((i) => i.id === "whey");
+    return true;
+  });
+  return { ...r, marcas, status: "em-teste" };
+};
 
 export const RECEITAS: Receita[] = [
   // ── Bolo de chocolate
@@ -143,8 +160,8 @@ export const RECEITAS: Receita[] = [
   R({ id: "chocolate-quente-cremoso", familia: "chocolate", nome: "Chocolate quente cremoso", tempoMin: 4, equip: "micro-ondas",
     perfil: { chocolate: 5, docura: 4, cremosidade: 4, densidade: 2 }, temperatura: "quente",
     marcas: ["sem-ovo", "sem-gluten"], forte: { proteina: 2, gostoso: 3 },
-    ingredientes: [{ id: "leite", qtd: "200 ml" }, { id: "cacau", qtd: "1 col. sopa" }, { id: "whey", qtd: "15 g (chocolate)", opcional: true }, { id: "leite-po", qtd: "1 col. sopa", troca: "sem, fica menos cremoso" }, { id: "adocante", qtd: "a gosto" }],
-    passos: ["Aqueça o leite com cacau e leite em pó.", "Só depois de quente, fora do fogo, misture o whey com um mini batedor.", "Canela por cima, se tiver."] }),
+    ingredientes: [{ id: "leite", qtd: "200 ml" }, { id: "cacau", qtd: "1 col. sopa" }, { id: "whey", qtd: "15 g (chocolate)", opcional: true }, { id: "leite-po", qtd: "1 col. sopa", troca: "sem, fica menos cremoso" }, { id: "adocante", qtd: "a gosto" }, { id: "canela", qtd: "por cima", opcional: true }],
+    passos: ["Misture leite, cacau e leite em pó na caneca e aqueça no micro-ondas 1 min 30 s a 2 min.", "Só depois de quente, misture o whey com um mini batedor (whey direto no calor empelota).", "Canela por cima, se tiver."] }),
   // ── Nutella
   R({ id: "colher-nutella-fruta", familia: "nutella", nome: "Uma colher de Nutella com fruta", tempoMin: 1, equip: "nenhum",
     perfil: { chocolate: 4, docura: 5, cremosidade: 5, densidade: 3 }, temperatura: "ambiente", aromas: ["frutado"],
@@ -155,7 +172,7 @@ export const RECEITAS: Receita[] = [
   R({ id: "creme-cacau-amendoim", familia: "nutella", nome: "Creme de cacau com amendoim (não é Nutella, mas é cremoso)", tempoMin: 2, equip: "nenhum",
     perfil: { chocolate: 4, docura: 3, cremosidade: 5, densidade: 3 }, temperatura: "ambiente", aromas: ["amendoim"],
     marcas: ["vegana", "sem-whey", "sem-ovo", "sem-lactose", "sem-gluten"], forte: { saciedade: 2, "menos-acucar": 2 },
-    ingredientes: [{ id: "pasta-amendoim", qtd: "1 col. sopa" }, { id: "cacau", qtd: "1 col. chá" }, { id: "adocante", qtd: "a gosto" }, { id: "leite", qtd: "1 fio, se precisar soltar", opcional: true }],
+    ingredientes: [{ id: "pasta-amendoim", qtd: "1 col. sopa" }, { id: "cacau", qtd: "1 col. chá" }, { id: "adocante", qtd: "a gosto" }, { id: "agua", qtd: "1 fio, se precisar soltar", opcional: true }],
     passos: ["Misture tudo até ficar liso.", "Passe na fruta ou coma de colher."] }),
   R({ id: "torrada-nutella-banana", familia: "nutella", nome: "Torrada com uma colher de Nutella e banana", tempoMin: 4, equip: "nenhum",
     perfil: { chocolate: 4, docura: 5, cremosidade: 4, crocancia: 3, densidade: 3 }, temperatura: "quente",
@@ -199,7 +216,7 @@ export const RECEITAS: Receita[] = [
   R({ id: "mousse-iogurte-grego", familia: "mousse", nome: "Mousse de chocolate de iogurte grego", tempoMin: 3, equip: "nenhum",
     perfil: { cremosidade: 5, docura: 3, chocolate: 4, maciez: 5, densidade: 2, umidade: 5 }, temperatura: "gelado",
     marcas: ["sem-ovo", "sem-gluten"], forte: { proteina: 3, leve: 2, saciedade: 2 },
-    ingredientes: [{ id: "iogurte-grego", qtd: "150 g" }, { id: "whey", qtd: "15 g (chocolate)" }, { id: "cacau", qtd: "5 g" }],
+    ingredientes: [{ id: "iogurte-grego", qtd: "150 g" }, { id: "whey", qtd: "15 g (chocolate)" }, { id: "cacau", qtd: "5 g" }, { id: "choc70", qtd: "raspas por cima", opcional: true }],
     passos: ["Misture bem até ficar liso e aerado.", "Pronto já; 30 min de geladeira deixa mais firme.", "Raspas de chocolate por cima, se tiver."] }),
   R({ id: "mousse-cottage-cacau", familia: "mousse", nome: "Mousse de cottage e cacau", tempoMin: 3, equip: "liquidificador",
     perfil: { cremosidade: 5, docura: 3, chocolate: 4, maciez: 5, densidade: 3 }, temperatura: "gelado",
@@ -215,8 +232,8 @@ export const RECEITAS: Receita[] = [
   R({ id: "pudim-caneca", familia: "pudim", nome: "Pudim de caneca", tempoMin: 5, esperaMin: 60, equip: "micro-ondas",
     perfil: { cremosidade: 5, docura: 4, maciez: 5, chocolate: 0, cobertura: 4, densidade: 3 }, temperatura: "gelado", aromas: ["caramelo", "baunilha"],
     marcas: ["sem-whey", "sem-gluten"], forte: { gostoso: 3, original: 2 },
-    ingredientes: [{ id: "ovo", qtd: "1" }, { id: "leite", qtd: "150 ml" }, { id: "leite-po", qtd: "15 g" }, { id: "adocante", qtd: "a gosto" }, { id: "baunilha", qtd: "gotas", opcional: true }, { id: "acucar", qtd: "1 col. chá (só a calda)" }],
-    passos: ["Calda: açúcar com 1 col. de água na caneca, micro-ondas 1 min até dourar (adoçante não carameliza).", "Bata ovo, leite, leite em pó e adoçante e despeje por cima.", "Micro-ondas em potência média, 2 a 3 min, até firmar nas bordas.", "Geladeira 1 hora e desenforme."] }),
+    ingredientes: [{ id: "ovo", qtd: "1" }, { id: "leite", qtd: "150 ml" }, { id: "leite-po", qtd: "15 g" }, { id: "adocante", qtd: "a gosto" }, { id: "baunilha", qtd: "gotas", opcional: true }, { id: "acucar", qtd: "1 col. chá (só a calda)" }, { id: "agua", qtd: "1 col. sopa (calda)" }],
+    passos: ["Calda: açúcar com 1 col. de água na caneca, micro-ondas de 30 em 30 s, olhando, até dourar (1 a 3 min; adoçante não carameliza). Cuidado: a caneca esquenta muito.", "Bata ovo, leite, leite em pó e adoçante e despeje por cima.", "Micro-ondas em potência média, 2 a 3 min, até firmar nas bordas.", "Geladeira 1 hora e desenforme."] }),
   R({ id: "pudim-chia-baunilha", familia: "pudim", nome: "Pudim de chia com baunilha", tempoMin: 3, esperaMin: 120, equip: "nenhum",
     perfil: { cremosidade: 4, docura: 3, maciez: 4, chocolate: 0, densidade: 3 }, temperatura: "gelado", aromas: ["baunilha"],
     marcas: ["sem-whey", "sem-ovo", "sem-gluten"], forte: { saciedade: 2, "menos-acucar": 2, simples: 2 },
@@ -226,7 +243,7 @@ export const RECEITAS: Receita[] = [
   R({ id: "creme-doce-de-leite", familia: "doce-de-leite", nome: "Creme de doce de leite", tempoMin: 2, equip: "nenhum",
     perfil: { cremosidade: 5, docura: 4, chocolate: 0, densidade: 3 }, temperatura: "gelado", aromas: ["caramelo"],
     marcas: ["sem-ovo", "sem-gluten"], forte: { proteina: 3, leve: 2 },
-    ingredientes: [{ id: "iogurte-grego", qtd: "150 g" }, { id: "whey", qtd: "15 g (doce de leite)", troca: "1 col. de leite em pó + canela" }, { id: "canela", qtd: "pitada", opcional: true }],
+    ingredientes: [{ id: "iogurte-grego", qtd: "150 g" }, { id: "whey", qtd: "15 g (doce de leite)", troca: "1 col. de leite em pó + canela" }, { id: "canela", qtd: "pitada", opcional: true }, { id: "sal", qtd: "1 pitada", opcional: true }],
     passos: ["Misture até ficar liso.", "Uma pitada de sal realça o sabor de doce de leite.", "Coma gelado de colher."] }),
   R({ id: "doce-de-leite-fruta", familia: "doce-de-leite", nome: "Uma colher de doce de leite com maçã", tempoMin: 1, equip: "nenhum",
     perfil: { cremosidade: 5, docura: 5, chocolate: 0, densidade: 4, crocancia: 2 }, temperatura: "ambiente", aromas: ["caramelo", "frutado"],
@@ -237,14 +254,14 @@ export const RECEITAS: Receita[] = [
   R({ id: "pacoca-colher", familia: "pacoca", nome: "Paçoca de colher", tempoMin: 2, equip: "nenhum",
     perfil: { docura: 4, densidade: 4, crocancia: 1, cremosidade: 4, chocolate: 0 }, temperatura: "ambiente", aromas: ["amendoim"],
     marcas: ["sem-ovo", "sem-gluten"], forte: { proteina: 2, saciedade: 3, simples: 3 },
-    ingredientes: [{ id: "pasta-amendoim", qtd: "15 g" }, { id: "leite-po", qtd: "15 g" }, { id: "whey", qtd: "10 g (baunilha)", opcional: true }, { id: "adocante", qtd: "a gosto" }],
+    ingredientes: [{ id: "pasta-amendoim", qtd: "15 g" }, { id: "leite-po", qtd: "15 g" }, { id: "whey", qtd: "10 g (baunilha)", opcional: true }, { id: "adocante", qtd: "a gosto" }, { id: "sal", qtd: "1 pitada", opcional: true }],
     passos: ["Misture até virar uma farofa úmida.", "Uma pitada de sal: é o segredo do gosto de paçoca.", "Coma de colher."] }),
   R({ id: "pacoca-original-iogurte", familia: "pacoca", nome: "Uma paçoca com iogurte", tempoMin: 1, equip: "nenhum",
     perfil: { docura: 4, densidade: 4, crocancia: 2, cremosidade: 3, chocolate: 0 }, temperatura: "ambiente", aromas: ["amendoim"],
     marcas: ["original", "sem-whey", "sem-ovo"], forte: { original: 3, simples: 3 },
     ingredientes: [{ id: "pacoca", qtd: "1 unidade" }, { id: "iogurte", qtd: "1 pote", troca: "banana" }],
     passos: ["Esfarele a paçoca por cima do iogurte.", "É paçoca de verdade, num pote que dura mais na colher."] }),
-  R({ id: "bombom-pacoca", familia: "pacoca", nome: "Bombom de paçoca com casquinha de chocolate", tempoMin: 10, equip: "micro-ondas",
+  R({ id: "bombom-pacoca", familia: "pacoca", nome: "Bombom de paçoca com casquinha de chocolate", tempoMin: 10, esperaMin: 10, equip: "micro-ondas",
     perfil: { docura: 4, densidade: 5, crocancia: 2, cremosidade: 2, chocolate: 4 }, temperatura: "ambiente", aromas: ["amendoim"],
     marcas: ["sem-ovo", "sem-gluten"], forte: { gostoso: 3, saciedade: 2 },
     ingredientes: [{ id: "amendoim", qtd: "30 g moído", troca: "pasta de amendoim" }, { id: "leite-po", qtd: "20 g" }, { id: "whey", qtd: "10 g (baunilha)", opcional: true }, { id: "choc70", qtd: "30 g para a casquinha" }],
@@ -265,7 +282,7 @@ export const RECEITAS: Receita[] = [
     perfil: { cremosidade: 5, docura: 3, crocancia: 3, cobertura: 4, chocolate: 0 }, temperatura: "gelado", aromas: ["frutado", "baunilha"],
     marcas: ["sem-whey", "sem-ovo"], forte: { proteina: 2, gostoso: 3 },
     ingredientes: [{ id: "iogurte-grego", qtd: "120 g", troca: "cottage batido" }, { id: "cream-cheese", qtd: "20 g" }, { id: "baunilha", qtd: "gotas" }, { id: "aveia", qtd: "2 col. sopa tostada (base)", troca: "granola" }, { id: "frutas-vermelhas", qtd: "por cima" }, { id: "adocante", qtd: "a gosto" }],
-    passos: ["Toste a aveia na frigideira seca 2 min: é a base.", "Misture iogurte, cream cheese, baunilha e adoçante.", "Monte: base, creme, frutas.", "Geladeira 15 min, se der."] }),
+    passos: ["Base: aveia crua ou granola. Se der, toste a aveia 2 min na frigideira seca, fica mais crocante.", "Misture iogurte, cream cheese, baunilha e adoçante.", "Monte: base, creme, frutas.", "Geladeira 15 min, se der."] }),
   R({ id: "cheesecake-caneca", familia: "cheesecake", nome: "Cheesecake de caneca assado", tempoMin: 4, esperaMin: 60, equip: "micro-ondas",
     perfil: { cremosidade: 4, docura: 3, crocancia: 0, cobertura: 3, chocolate: 0, maciez: 4 }, temperatura: "gelado", aromas: ["baunilha"],
     marcas: ["sem-whey", "sem-gluten"], forte: { gostoso: 3, original: 2 },
@@ -285,7 +302,7 @@ export const RECEITAS: Receita[] = [
   R({ id: "frappe-cafe", familia: "milkshake", nome: "Frappé de café gelado", tempoMin: 2, equip: "liquidificador",
     perfil: { cremosidade: 4, docura: 3, chocolate: 1 }, temperatura: "gelado", aromas: ["cafe"],
     marcas: ["sem-ovo", "sem-gluten"], forte: { proteina: 2, simples: 3 },
-    ingredientes: [{ id: "leite", qtd: "150 ml" }, { id: "cafe", qtd: "1 col. chá" }, { id: "whey", qtd: "15 g (baunilha)", opcional: true }, { id: "gelo", qtd: "1 copo" }, { id: "adocante", qtd: "a gosto" }],
+    ingredientes: [{ id: "leite", qtd: "150 ml" }, { id: "cafe", qtd: "1 col. chá" }, { id: "whey", qtd: "15 g (baunilha)", opcional: true }, { id: "gelo", qtd: "1 copo" }, { id: "adocante", qtd: "a gosto" }, { id: "cacau", qtd: "1 pitada (mocha)", opcional: true }],
     passos: ["Bata tudo com bastante gelo.", "Cacau por cima, se quiser um mocha."] }),
   // ── Bolo de caneca
   R({ id: "bolo-caneca-baunilha", familia: "bolo-caneca", nome: "Bolo de caneca de baunilha", tempoMin: 3, equip: "micro-ondas",
@@ -296,6 +313,6 @@ export const RECEITAS: Receita[] = [
   R({ id: "bolo-caneca-banana-canela", familia: "bolo-caneca", nome: "Bolo de caneca de banana e canela", tempoMin: 3, equip: "micro-ondas",
     perfil: { maciez: 5, docura: 4, chocolate: 0, umidade: 5, densidade: 2 }, temperatura: "quente", aromas: ["canela"],
     marcas: ["sem-whey", "sem-gluten"], forte: { simples: 3, "menos-acucar": 2 },
-    ingredientes: [{ id: "ovo", qtd: "1" }, { id: "banana", qtd: "1/2 bem madura" }, { id: "aveia", qtd: "2 col. sopa" }, { id: "canela", qtd: "a gosto" }, { id: "fermento", qtd: "1/2 col. chá" }],
+    ingredientes: [{ id: "ovo", qtd: "1" }, { id: "banana", qtd: "1/2 bem madura" }, { id: "aveia", qtd: "3 col. sopa (25–30 g)" }, { id: "canela", qtd: "a gosto" }, { id: "fermento", qtd: "1/2 col. chá" }],
     passos: ["Amasse a banana, misture ovo, aveia e canela.", "Fermento por último.", "Micro-ondas 70–90 s. Cheiro de bolo de vó."] }),
 ];
