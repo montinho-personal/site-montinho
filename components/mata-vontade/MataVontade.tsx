@@ -7,6 +7,7 @@ import { trackEvent } from "@/lib/analytics";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { ATALHOS, EIXOS, FAMILIAS, type Familia, type Temperatura } from "@/lib/mata-vontade/familias";
 import { INGREDIENTES, type Equip, type Objetivo } from "@/lib/mata-vontade/receitas";
+import { macrosDe } from "@/lib/mata-vontade/nutricao";
 import { alergenosDe, alvoDe, interpretar, recomendar, type Resultado } from "@/lib/mata-vontade/motor";
 
 /**
@@ -346,8 +347,16 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
   const alerg = alergenosDe(rc);
   const eixosMostra = EIXOS.filter((e) => (alvo[e.id] ?? 0) > 0 || (rc.perfil[e.id] ?? 0) >= 3).slice(0, 5);
   const temTudo = rc.ingredientes.filter((i) => !i.opcional).length - r.faltam.length;
+  const mac = macrosDe(rc);
+  const ref = useRef<HTMLElement>(null);
+  // Ao abrir, outro cartão acima pode fechar e empurrar a página: ancora no topo deste cartão.
+  useEffect(() => {
+    if (!aberta || !ref.current) return;
+    const t = ref.current.getBoundingClientRect().top;
+    if (t < 80 || t > window.innerHeight * 0.6) ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [aberta]);
   return (
-    <article className="border p-5 sm:p-6 transition-colors" style={{ borderColor: destaque ? OURO : "rgba(255,255,255,.12)", background: destaque ? "rgba(186,158,80,.06)" : "transparent" }}>
+    <article ref={ref} className="scroll-mt-24 [overflow-anchor:none] border p-5 sm:p-6 transition-colors" style={{ borderColor: destaque ? OURO : "rgba(255,255,255,.12)", background: destaque ? "rgba(186,158,80,.06)" : "transparent" }}>
       <div className="flex items-start justify-between gap-3">
         <div>
           <p className="text-[11px] uppercase tracking-[0.2em]" style={{ color: OURO }}>{titulo}</p>
@@ -363,6 +372,17 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
       </div>
       <p className="inline-block mt-3 text-[11px] uppercase tracking-wider px-2 py-1 border border-amber-300/40 text-amber-200">Receita em teste</p>
       <p className="text-gray-300 text-sm mt-3 leading-relaxed"><strong className="text-white">Por que essa:</strong> {r.porque}</p>
+      {mac && (
+        <div className="mt-4 grid grid-cols-4 gap-2 text-center" aria-label="Estimativa por porção">
+          {([["kcal", mac.kcal, ""], ["proteína", mac.p, "g"], ["carbo", mac.c, "g"], ["gordura", mac.g, "g"]] as [string, number, string][]).map(([rot, v, u]) => (
+            <div key={rot} className="border border-white/10 py-2">
+              <p className="text-white font-semibold text-base leading-none">{v}{u}</p>
+              <p className="text-[11px] text-gray-400 mt-1">{rot}</p>
+            </div>
+          ))}
+          <p className="col-span-4 text-[11px] text-gray-400 text-left">Por porção{mac.porcoes > 1 ? ` · rende ${mac.porcoes}` : ""} · estimativa</p>
+        </div>
+      )}
       <button type="button" onClick={onAbrir} className="mt-4 min-h-[44px] text-sm font-semibold underline underline-offset-4" style={{ color: OURO }} aria-expanded={aberta}>
         {aberta ? "Fechar receita" : "Ver receita"}
       </button>
@@ -396,7 +416,7 @@ function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, no
             {rc.dica && <p className="text-sm mt-3" style={{ color: OURO }}>Dica: <span className="text-gray-300">{rc.dica}</span></p>}
           </div>
           {alerg.length > 0 && <p className="text-xs text-gray-400">Contém: {alerg.join(", ").replace("gluten", "glúten")}. Não garantimos ausência de traços.</p>}
-          <p className="text-xs text-gray-400">Receita em teste: proporções de partida, ainda em ajuste. Pode usar o whey que você tiver; como referência, uso a tabela nutricional de um whey concentrado com cerca de 80% de proteína (Growth). Os valores nutricionais entram quando a receita for testada e serão estimativas que variam com marca e quantidade.</p>
+          <p className="text-xs text-gray-400">Receita em teste: proporções de partida, ainda em ajuste. Calorias e macros são estimativas por porção, sem os opcionais, calculadas com a Tabela TACO e rótulos; como referência de whey, uso a tabela de um concentrado com cerca de 80% de proteína (Growth). Variam com a marca e a quantidade.</p>
           <div>
             <p className="text-white text-sm font-semibold mb-2">Fez? Matou a vontade?</p>
             <div className="flex flex-wrap gap-2">

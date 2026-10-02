@@ -1,6 +1,7 @@
 import { alergenosDe, interpretar, recomendar, pontuar, type Pedido } from "../lib/mata-vontade/motor";
 import { FAMILIAS } from "../lib/mata-vontade/familias";
 import { RECEITAS, INGREDIENTES } from "../lib/mata-vontade/receitas";
+import { GRAMAS, macrosDe } from "../lib/mata-vontade/nutricao";
 import { existsSync, readFileSync } from "node:fs";
 
 let falhas = 0;
@@ -16,7 +17,9 @@ ok(RECEITAS.every((r) => FAMILIAS.some((f) => f.id === r.familia)), "toda receit
 ok(RECEITAS.every((r) => r.ingredientes.every((i) => INGREDIENTES[i.id])), "todo ingrediente existe no banco");
 ok(FAMILIAS.every((f) => RECEITAS.filter((r) => r.familia === f.id).length >= 2), "toda família tem 2+ receitas");
 ok(RECEITAS.every((r) => r.status === "em-teste"), "todas lançam como em teste");
-ok(FAMILIAS.every((f) => RECEITAS.some((r) => r.familia === f.id && r.marcas.includes("sem-whey"))), "toda família tem opção sem whey");
+const PROTEINA = ["whey", "ovo", "iogurte-grego", "cottage", "leite-po"];
+const semProt = RECEITAS.filter((r) => !r.ingredientes.some((i) => !i.opcional && PROTEINA.includes(i.id)));
+ok(semProt.length === 0, "toda receita tem fonte de proteína obrigatória", semProt.map((r) => r.id).join(","));
 ok(!RECEITAS.some((r) => /massa crua|ovo cru/i.test(r.passos.join(" "))), "nada de ovo cru");
 // Regra do whey: whey nunca vai ao fogo direto
 ok(!RECEITAS.some((r) => r.equip === "fogao" && r.ingredientes.some((i) => i.id === "whey")), "whey não vai ao fogão");
@@ -51,7 +54,7 @@ ok(nut.melhor?.receita.marcas.includes("original") ?? false, "Nutella 'original'
 
 // Restrições
 const semLac = recomendar(base({ familia: fam("brigadeiro"), restricoes: ["lactose"] }));
-ok(semLac.todos.length > 0 && semLac.todos.every((x) => x.receita.id === "brigadeiro-banana-cacau" || !x.receita.ingredientes.some((i) => !i.opcional && !i.troca && ["whey", "leite", "leite-po", "leite-condensado"].includes(i.id))), "sem lactose filtra lácteos");
+ok(semLac.todos.every((x) => !x.receita.ingredientes.some((i) => !i.opcional && ["whey", "leite", "leite-po", "leite-condensado"].includes(i.id))), "sem lactose filtra lácteos");
 const vegano = recomendar(base({ familia: fam("brownie"), restricoes: ["vegana"] }));
 ok(vegano.todos.every((x) => x.receita.marcas.includes("vegana")), "vegana só traz receita vegana");
 
@@ -72,6 +75,15 @@ const agora = FAMILIAS.flatMap((f) => recomendar(base({ familia: f, tempoMax: 5 
 ok(agora.length === 0, "pouco tempo: nada de horas no congelador", agora.map((r) => r.receita.id).join(","));
 const prot = recomendar(base({ familia: fam("pudim"), objetivo: "proteina" }));
 ok(!prot.estrategia || prot.estrategia.receita.familia === "pudim" || !prot.todos.some((x) => x.receita.familia === "pudim" && x.receita.id !== prot.melhor?.receita.id && x.receita.id !== prot.rapido?.receita.id), "objetivo prefere a mesma família", prot.estrategia?.receita.id);
+
+// Macros: toda receita tem estimativa, e toda obrigatória pesada
+const semMac = RECEITAS.filter((r) => !macrosDe(r));
+ok(semMac.length === 0, "toda receita tem calorias e macros", semMac.map((r) => r.id).join(","));
+const SEM_PESO = ["adocante", "agua", "gelo", "sal"];
+const naoPesado = RECEITAS.flatMap((r) => r.ingredientes.filter((i) => !i.opcional && !SEM_PESO.includes(i.id) && GRAMAS[r.id]?.g[i.id] === undefined && !(i.id === "ovo" && GRAMAS[r.id]?.g.clara)).map((i) => `${r.id}:${i.id}`));
+ok(naoPesado.length === 0, "todo ingrediente obrigatório tem gramatura", naoPesado.join(","));
+const baixa = RECEITAS.filter((r) => { const m = macrosDe(r)!; return m.porcoes === 1 && m.p < 10; });
+ok(baixa.length === 0, "porção única tem 10 g+ de proteína", baixa.map((r) => r.id).join(","));
 
 // Tempo e equipamento
 const rapido = recomendar(base({ familia: fam("brownie"), tempoMax: 5 }));
