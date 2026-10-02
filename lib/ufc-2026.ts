@@ -28,7 +28,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 </tbody></table>
 <p>A oficial é a que conta: é nela que cada lutador precisa bater o limite da categoria. A cerimonial, no Salt Palace Convention Center, é o momento de encarada para as câmeras.</p>
 
-<!--PALPITE:ufc332-silva-wang-->
+<!--PALPITE:ufc332-->
 <h2>Onde assistir à pesagem do UFC 332</h2>
 <p>A pesagem oficial é transmitida pelo canal do UFC no YouTube, pelo UFC.com, pelo Facebook e pelo UFC Fight Pass. A cerimonial passa ao vivo no YouTube do UFC e nas contas da organização no Kick, TikTok, Facebook e Instagram.</p>
 
@@ -156,7 +156,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <li><strong>Depois da pesagem:</strong> hidratação e comida para recuperar peso e energia antes da luta.</li>
 </ol>
 
-<!--PALPITE:ufc332-silva-wang-->
+<!--PALPITE:ufc332-->
 <h2>Os riscos</h2>
 <p>Desidratação forte afeta rins, coração, pressão e cérebro, e já causou problemas graves no esporte. Por isso os atletas fazem com equipe médica e nutricionistas, e organizações vêm mudando regras para reduzir cortes extremos. <strong>Não é método de emagrecimento</strong>: a água volta assim que você bebe e come, e fazer isso sem acompanhamento é perigoso.</p>
 
@@ -221,7 +221,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <li><strong>Recuperação:</strong> sono, alimentação e dias leves; sem ela, o volume alto vira lesão.</li>
 </ul>
 
-<!--PALPITE:ufc332-silva-wang-->
+<!--PALPITE:ufc332-->
 <h2>Musculação para lutadores: os exercícios principais</h2>
 <table><thead><tr><th>Exercício</th><th>Para quê</th></tr></thead><tbody>
 <tr><td>Agachamento</td><td>Base de perna, quedas e defesa de quedas</td></tr>
