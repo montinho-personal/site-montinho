@@ -11,6 +11,7 @@ import AnalyticsTracker from "@/components/analytics/AnalyticsTracker";
 import HandoffTracker from "@/components/crm/HandoffTracker";
 import SiteChrome, { MainDoSite } from "@/components/layout/SiteChrome";
 import { ligacoesDoPerfil } from "@/lib/perfil-google";
+import { Analytics } from "@vercel/analytics/next";
 
 const dmSans = DM_Sans({
   variable: "--font-inter",
@@ -224,6 +225,7 @@ export default function RootLayout({
         <Script id="ga4-init" strategy="afterInteractive">
           {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J1ZSPMDJZE');`}
         </Script>
+        <Analytics />
       </body>
     </html>
   );
