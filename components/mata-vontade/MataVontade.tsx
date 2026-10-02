@@ -201,6 +201,11 @@ export default function MataVontade() {
               );
             })}
           </div>
+          {sel.length > 0 && (
+            <button type="button" className={`${btn} mt-5 w-full sm:w-auto`} style={{ background: OURO }} onClick={() => comecar(texto)}>
+              {sel.length > 1 ? `Continuar com ${sel.length} vontades →` : `Continuar com ${sel[0].a} →`}
+            </button>
+          )}
         </div>
       )}
 
