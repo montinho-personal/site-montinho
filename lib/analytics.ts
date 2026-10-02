@@ -12,6 +12,7 @@ export type AnalyticsEvent =
   | "mata_vontade_receita_aberta"
   | "mata_vontade_feedback"
   | "mata_vontade_cta"
+  | "mata_vontade_fonte"
   /** Palpite "quem vence?" nos artigos de evento (sem dado pessoal). */
   | "palpite_voto"
   | "palpite_compartilhar"

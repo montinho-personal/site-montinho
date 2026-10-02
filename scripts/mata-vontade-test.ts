@@ -2,6 +2,7 @@ import { alergenosDe, interpretar, recomendar, pontuar, type Pedido } from "../l
 import { FAMILIAS } from "../lib/mata-vontade/familias";
 import { RECEITAS, INGREDIENTES } from "../lib/mata-vontade/receitas";
 import { GRAMAS, macrosDe } from "../lib/mata-vontade/nutricao";
+import { FONTES } from "../lib/mata-vontade/fontes";
 import { existsSync, readFileSync } from "node:fs";
 
 let falhas = 0;
@@ -84,6 +85,10 @@ const naoPesado = RECEITAS.flatMap((r) => r.ingredientes.filter((i) => !i.opcion
 ok(naoPesado.length === 0, "todo ingrediente obrigatório tem gramatura", naoPesado.join(","));
 const baixa = RECEITAS.filter((r) => { const m = macrosDe(r)!; return m.porcoes === 1 && m.p < 10; });
 ok(baixa.length === 0, "porção única tem 10 g+ de proteína", baixa.map((r) => r.id).join(","));
+
+// Fontes: só receitas que existem, só https de portal conhecido
+ok(Object.keys(FONTES).every((id) => RECEITAS.some((r) => r.id === id)), "fonte aponta para receita existente");
+ok(Object.values(FONTES).every((f) => /^https:\/\/(www\.)?(tudogostoso|receiteria|receitasnestle|panelinha|cybercook)\.com\.br\//.test(f.url)), "fonte é https de portal conhecido");
 
 // Tempo e equipamento
 const rapido = recomendar(base({ familia: fam("brownie"), tempoMax: 5 }));
