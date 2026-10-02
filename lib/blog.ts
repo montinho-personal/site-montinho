@@ -109203,6 +109203,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Neste artigo eu vou destrinchar as causas mais comuns da vontade de doce e o que fazer com cada uma. Aviso desde já: <strong>não existe truque que mata a vontade de doce para sempre</strong>. Quem promete isso está te vendendo alguma coisa. O que existe é reduzir a frequência e a intensidade da vontade, e ganhar capacidade de escolher o que fazer quando ela aparece.</p>
 
+<p><strong>Bateu a vontade agora?</strong> Use o <a href="/ferramentas/mata-a-vontade">Montinho Mata a Vontade</a>: você diz o doce que quer, o que tem em casa e o que quer priorizar, e recebe a receita que mais combina com essa vontade.</p>
+
 <h2>Causa 1: sua glicemia está numa montanha-russa</h2>
 
 <p>Refeições muito grandes em carboidrato de rápida absorção e pobres em proteína, gordura e fibra fazem a glicose subir rápido e cair rápido. Nessa queda, o corpo pede energia de forma urgente — e o pedido vem com um endereço específico: doce.</p>

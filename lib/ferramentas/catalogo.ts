@@ -163,6 +163,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
 
   /* ── Alimentação e nutrientes ─────────────────────────────────────── */
   {
+    id: "mata-a-vontade",
+    href: "/ferramentas/mata-a-vontade",
+    nome: "Montinho Mata a Vontade",
+    resultado: "Diga o doce que você quer e receba a receita que mais combina com a sua vontade.",
+    acao: "Matar a vontade",
+    tempo: "20 segundos",
+    categoria: "alimentacao",
+    icone: "talheres",
+    tags: ["vontade de doce", "doce fit", "sobremesa proteica", "bolo de caneca", "brownie proteico", "brigadeiro fit", "sorvete proteico", "receita com whey", "dieta"],
+    selo: "novo",
+  },
+  {
     id: "proteina",
     href: "/ferramentas/calculadora-de-proteina",
     nome: "Calculadora de Proteína",

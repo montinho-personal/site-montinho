@@ -1,0 +1,343 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import Compartilhar from "@/components/share/Compartilhar";
+import { trackEvent } from "@/lib/analytics";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
+import { ATALHOS, EIXOS, FAMILIAS, type Familia, type Temperatura } from "@/lib/mata-vontade/familias";
+import { INGREDIENTES, type Equip, type Objetivo } from "@/lib/mata-vontade/receitas";
+import { alergenosDe, alvoDe, interpretar, recomendar, type Resultado } from "@/lib/mata-vontade/motor";
+
+/**
+ * Montinho Mata a Vontade. Entende a vontade antes de tentar trocá-la:
+ * vontade → como você quer → tempo → o que tem aí → o que priorizar →
+ * três cartões. Nada de foto na primeira tela, nada de CTA antes do
+ * resultado, nada de diagnóstico. Restrições e alergias não vão para o GA4.
+ */
+const OURO = "#BA9E50";
+const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
+
+type Etapa = "vontade" | "vago" | "como" | "tempo" | "casa" | "objetivo" | "resultado";
+
+const TEMPOS = [{ v: 2, r: "2 minutos" }, { v: 5, r: "5 minutos" }, { v: 10, r: "10 minutos" }, { v: 15, r: "15 minutos" }, { v: 0, r: "posso cozinhar com calma" }];
+const EQUIPS: { id: Equip; r: string }[] = [
+  { id: "micro-ondas", r: "Micro-ondas" }, { id: "air-fryer", r: "Air fryer" }, { id: "forno", r: "Forno" },
+  { id: "fogao", r: "Fogão" }, { id: "liquidificador", r: "Liquidificador/mixer" },
+];
+const GRUPOS_ING: { t: string; ids: string[] }[] = [
+  { t: "Frutas", ids: ["banana", "banana-congelada", "morango", "frutas-vermelhas", "maca"] },
+  { t: "Lácteos", ids: ["leite", "leite-po", "iogurte", "iogurte-grego", "cottage", "cream-cheese"] },
+  { t: "Proteínas", ids: ["whey", "ovo"] },
+  { t: "Base", ids: ["aveia", "tapioca", "pao", "farinha-trigo"] },
+  { t: "Sabor", ids: ["cacau", "choc70", "choc-leite", "canela", "cafe", "baunilha", "coco", "pasta-amendoim", "amendoim"] },
+  { t: "Extras", ids: ["adocante", "acucar", "mel", "chia", "fermento", "leite-condensado", "doce-de-leite", "creme-avela", "pacoca", "gelo"] },
+];
+const OBJETIVOS: { id: Objetivo; r: string }[] = [
+  { id: "gostoso", r: "Só algo gostoso que caiba na rotina" },
+  { id: "original", r: "O mais parecido possível com o original" },
+  { id: "proteina", r: "Mais proteína" },
+  { id: "leve", r: "Menos calorias" },
+  { id: "saciedade", r: "Mais saciedade" },
+  { id: "menos-acucar", r: "Menos açúcar adicionado" },
+  { id: "simples", r: "Ingredientes mais simples" },
+];
+const RESTRICOES = [{ id: "lactose", r: "Lactose" }, { id: "gluten", r: "Glúten" }, { id: "ovo", r: "Ovo" }, { id: "amendoim", r: "Amendoim" }, { id: "castanhas", r: "Castanhas" }, { id: "vegana", r: "Vegano" }];
+const VAGO_OPCOES = [{ f: "chocolate", r: "🍫 Chocolate" }, { f: "sorvete", r: "🍨 Cremoso e gelado" }, { f: "cookie", r: "🍪 Crocante" }, { f: "mousse", r: "🍓 Fruta / leve", aroma: "frutado", chip: "morango" }];
+const EQUIP_TXT: Record<Equip, string> = { "micro-ondas": "micro-ondas", "air-fryer": "air fryer", forno: "forno", fogao: "fogão", liquidificador: "liquidificador", nenhum: "sem equipamento" };
+const despensa = () => Object.entries(INGREDIENTES).filter(([, i]) => i.despensa).map(([id]) => id);
+
+function Chip({ ativo, onClick, children }: { ativo: boolean; onClick: () => void; children: React.ReactNode }) {
+  return (
+    <button type="button" onClick={onClick} aria-pressed={ativo}
+      className={`min-h-[44px] px-4 py-2 border text-sm transition-colors ${ativo ? "text-black font-semibold" : "text-gray-200 border-white/20 hover:border-white/50"}`}
+      style={ativo ? { background: OURO, borderColor: OURO } : undefined}>{children}</button>
+  );
+}
+
+function Barra({ v, max = 5 }: { v: number; max?: number }) {
+  return (
+    <span className="inline-flex gap-[3px]" aria-hidden>
+      {Array.from({ length: max }, (_, i) => <span key={i} className="w-3 h-2" style={{ background: i < v ? OURO : "rgba(255,255,255,.12)" }} />)}
+    </span>
+  );
+}
+
+export default function MataVontade() {
+  const [etapa, setEtapa] = useState<Etapa>("vontade");
+  const [texto, setTexto] = useState("");
+  const [aviso, setAviso] = useState<string | null>(null);
+  const [familia, setFamilia] = useState<Familia | null>(null);
+  const [chips, setChips] = useState<string[]>([]);
+  const [temperatura, setTemperatura] = useState<Temperatura | undefined>();
+  const [aromas, setAromas] = useState<string[]>([]);
+  const [tempo, setTempo] = useState<number | undefined>();
+  const [equip, setEquip] = useState<Equip[]>(["micro-ondas", "fogao", "liquidificador"]);
+  const [tenho, setTenho] = useState<string[]>(despensa);
+  const [comprar, setComprar] = useState(true);
+  const [restricoes, setRestricoes] = useState<string[]>([]);
+  const [objetivo, setObjetivo] = useState<Objetivo>("gostoso");
+  const [aberta, setAberta] = useState<string | null>(null);
+  const [nota, setNota] = useState<Record<string, string>>({});
+
+  const ir = (e: Etapa) => { setEtapa(e); trackEvent("mata_vontade_etapa", { etapa: e, familia: familia?.id ?? "" }); };
+  const toggle = (lista: string[], set: (v: string[]) => void, id: string) => set(lista.includes(id) ? lista.filter((x) => x !== id) : [...lista, id]);
+
+  function comecar(t: string) {
+    const r = interpretar(t);
+    trackEvent("mata_vontade_inicio", { tipo: r.tipo, familia: r.tipo === "familia" ? r.familia.id : "" });
+    if (r.tipo === "familia") {
+      setFamilia(r.familia); setChips(r.chips); setTemperatura(r.temperatura); setAromas(r.aromas); setAviso(null);
+      ir("como");
+    } else if (r.tipo === "vago") { setAviso(null); ir("vago"); }
+    else if (r.tipo === "salgado") setAviso("Salgados chegam em breve 🙂 Por enquanto eu só sei matar vontade de doce. Quer tentar um doce?");
+    else setAviso("Ainda não conheço essa. Toque numa das vontades abaixo que eu sei resolver:");
+  }
+  function escolherFamilia(f: Familia, extra?: { chip?: string; aroma?: string }) {
+    setFamilia(f); setChips(extra?.chip ? [extra.chip] : []); setAromas(extra?.aroma ? [extra.aroma] : []); setTemperatura(undefined); setAviso(null);
+    trackEvent("mata_vontade_inicio", { tipo: "atalho", familia: f.id });
+    ir("como");
+  }
+
+  const pedido = familia ? { familia, chips, temperatura, aromas, tempoMax: tempo || undefined, equip, tenho, podeComprar: comprar, objetivo, restricoes } : null;
+  const cartoes = pedido && etapa === "resultado" ? recomendar(pedido) : null;
+
+  function verResultado() {
+    ir("resultado");
+    if (pedido) {
+      const c = recomendar(pedido);
+      trackEvent("mata_vontade_resultado", { familia: pedido.familia.id, objetivo, melhor: c.melhor?.receita.id ?? "nenhum", match: c.melhor?.match ?? 0, tem_restricao: restricoes.length > 0 });
+    }
+  }
+  function recomecar() {
+    setEtapa("vontade"); setTexto(""); setFamilia(null); setChips([]); setTemperatura(undefined); setAromas([]); setTempo(undefined); setAberta(null); setAviso(null);
+  }
+
+  const passo = ({ como: 1, tempo: 2, casa: 3, objetivo: 4, resultado: 5 } as Record<string, number>)[etapa] ?? 0;
+  const card = "border border-white/10 bg-gradient-to-b from-white/[0.05] to-transparent p-5 sm:p-7";
+  const btn = "min-h-[48px] px-6 font-semibold text-black transition-transform hover:scale-[1.02]";
+
+  return (
+    <div className="text-left">
+      {passo > 0 && etapa !== "resultado" && (
+        <div className="flex items-center gap-3 mb-5" aria-label={`Etapa ${passo} de 4`}>
+          {[1, 2, 3, 4].map((i) => <span key={i} className="h-1 flex-1 transition-colors" style={{ background: i <= passo ? OURO : "rgba(255,255,255,.12)" }} />)}
+          <button type="button" onClick={recomecar} className="text-xs text-gray-400 hover:text-white min-h-[44px]">recomeçar</button>
+        </div>
+      )}
+
+      {etapa === "vontade" && (
+        <div className={card}>
+          <label htmlFor="mv-vontade" className="block text-white text-lg mb-3">O que você está com vontade de comer agora?</label>
+          <form onSubmit={(e) => { e.preventDefault(); if (texto.trim()) comecar(texto); }} className="flex flex-col sm:flex-row gap-3">
+            <input id="mv-vontade" value={texto} onChange={(e) => setTexto(e.target.value)} placeholder="ex.: bolo de chocolate, brigadeiro, sorvete…"
+              className="flex-1 min-h-[52px] bg-black border border-white/20 px-4 text-white text-lg placeholder:text-gray-500 focus:outline-none focus:border-white/60" autoComplete="off" />
+            <button type="submit" className={btn} style={{ background: OURO }}>Matar a vontade</button>
+          </form>
+          {aviso && <p className="text-gray-200 mt-4" role="status">{aviso}</p>}
+          <div className="flex flex-wrap gap-2 mt-5">
+            {(aviso ? FAMILIAS.map((f) => `${f.emoji} ${f.nome}`) : ATALHOS).map((a) => (
+              <button key={a} type="button" className="min-h-[44px] px-4 border border-white/15 text-gray-300 text-sm hover:border-white/50 hover:text-white"
+                onClick={() => { const f = FAMILIAS.find((x) => `${x.emoji} ${x.nome}` === a); if (f) escolherFamilia(f); else { setTexto(a); comecar(a); } }}>{a}</button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {etapa === "vago" && (
+        <div className={card}>
+          <p className="text-white text-lg mb-4">Tudo bem não saber. Qual dessas chega mais perto?</p>
+          <div className="grid grid-cols-2 gap-3">
+            {VAGO_OPCOES.map((o) => (
+              <button key={o.f} type="button" className="min-h-[72px] border border-white/15 text-white text-base hover:border-white/50"
+                onClick={() => escolherFamilia(FAMILIAS.find((f) => f.id === o.f)!, { chip: o.chip, aroma: o.aroma })}>{o.r}</button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {etapa === "como" && familia && (
+        <div className={card}>
+          <p className="text-xs uppercase tracking-[0.2em] mb-2" style={{ color: OURO }}>{familia.emoji} {familia.nome}</p>
+          <p className="text-white text-lg mb-4">Como você quer isso?</p>
+          <div className="flex flex-wrap gap-2">
+            {familia.chips.map((c) => (
+              <Chip key={c.id} ativo={chips.includes(c.id) || (!!c.temperatura && temperatura === c.temperatura)}
+                onClick={() => { if (c.temperatura) setTemperatura(temperatura === c.temperatura ? undefined : c.temperatura); else toggle(chips, setChips, c.id); if (c.aroma) toggle(aromas, setAromas, c.aroma); }}>{c.rotulo}</Chip>
+            ))}
+          </div>
+          <div className="flex gap-3 mt-6">
+            <button type="button" className={btn} style={{ background: OURO }} onClick={() => ir("tempo")}>Continuar</button>
+            <button type="button" className="min-h-[48px] px-4 text-gray-300 hover:text-white" onClick={() => { setChips([]); ir("tempo"); }}>tanto faz</button>
+          </div>
+        </div>
+      )}
+
+      {etapa === "tempo" && (
+        <div className={card}>
+          <p className="text-white text-lg mb-4">Quanto tempo você tem?</p>
+          <div className="flex flex-wrap gap-2">
+            {TEMPOS.map((t) => <Chip key={t.v} ativo={tempo === t.v} onClick={() => { setTempo(t.v); ir("casa"); }}>{t.r}</Chip>)}
+          </div>
+        </div>
+      )}
+
+      {etapa === "casa" && (
+        <div className={card}>
+          <p className="text-white text-lg mb-1">O que tem aí?</p>
+          <p className="text-gray-400 text-sm mb-4">Já marquei o que quase todo mundo tem. Desmarque o que faltar.</p>
+          <p className="text-gray-300 text-sm mb-2">Na cozinha</p>
+          <div className="flex flex-wrap gap-2 mb-5">
+            {EQUIPS.map((e) => <Chip key={e.id} ativo={equip.includes(e.id)} onClick={() => toggle(equip, setEquip as (v: string[]) => void, e.id)}>{e.r}</Chip>)}
+          </div>
+          {GRUPOS_ING.map((g) => (
+            <div key={g.t} className="mb-4">
+              <p className="text-gray-300 text-sm mb-2">{g.t}</p>
+              <div className="flex flex-wrap gap-2">
+                {g.ids.map((id) => <Chip key={id} ativo={tenho.includes(id)} onClick={() => toggle(tenho, setTenho, id)}>{INGREDIENTES[id].nome}</Chip>)}
+              </div>
+            </div>
+          ))}
+          <label className="flex items-center gap-3 text-gray-200 min-h-[44px] mt-2">
+            <input type="checkbox" checked={comprar} onChange={(e) => setComprar(e.target.checked)} className="w-5 h-5 accent-[#BA9E50]" />
+            Se faltar algo, posso comprar
+          </label>
+          <p className="text-gray-300 text-sm mt-4 mb-2">Alguma restrição? <span className="text-gray-500">(fica só no seu navegador)</span></p>
+          <div className="flex flex-wrap gap-2">
+            {RESTRICOES.map((r) => <Chip key={r.id} ativo={restricoes.includes(r.id)} onClick={() => toggle(restricoes, setRestricoes, r.id)}>{r.r}</Chip>)}
+          </div>
+          <button type="button" className={`${btn} mt-6`} style={{ background: OURO }} onClick={() => ir("objetivo")}>Continuar</button>
+        </div>
+      )}
+
+      {etapa === "objetivo" && (
+        <div className={card}>
+          <p className="text-white text-lg mb-4">O que você quer melhorar nessa escolha?</p>
+          <div className="flex flex-col gap-2">
+            {OBJETIVOS.map((o) => (
+              <button key={o.id} type="button" onClick={() => setObjetivo(o.id)} aria-pressed={objetivo === o.id}
+                className={`min-h-[48px] px-4 text-left border ${objetivo === o.id ? "text-black font-semibold" : "text-gray-200 border-white/15"}`}
+                style={objetivo === o.id ? { background: OURO, borderColor: OURO } : undefined}>{o.r}</button>
+            ))}
+          </div>
+          <button type="button" className={`${btn} mt-6 w-full sm:w-auto`} style={{ background: OURO }} onClick={verResultado}>Ver minha receita</button>
+        </div>
+      )}
+
+      {etapa === "resultado" && familia && cartoes && (
+        <div>
+          <div className="flex items-baseline justify-between gap-3 mb-4">
+            <p className="text-white text-xl" style={h}>Vontade de {familia.nome.toLowerCase()}: achei isso para você</p>
+            <button type="button" onClick={recomecar} className="text-sm text-gray-400 hover:text-white min-h-[44px] shrink-0">outra vontade</button>
+          </div>
+          {!cartoes.melhor ? (
+            <div className={card}>
+              <p className="text-white">Com o que você tem e o tempo que escolheu, ainda não tenho uma versão boa disso.</p>
+              <p className="text-gray-300 mt-2">Tente marcar &ldquo;posso comprar&rdquo;, aumentar o tempo ou tirar uma restrição. E às vezes o melhor é o original, numa porção que cabe.</p>
+              <button type="button" className={`${btn} mt-4`} style={{ background: OURO }} onClick={() => ir("casa")}>Ajustar</button>
+            </div>
+          ) : (
+            <div className="grid gap-4">
+              {([["Melhor match", cartoes.melhor], ["Mais rápido", cartoes.rapido], [OBJETIVOS.find((o) => o.id === objetivo)?.id === "gostoso" ? "Outra opção" : OBJETIVOS.find((o) => o.id === objetivo)!.r, cartoes.estrategia]] as [string, Resultado | undefined][])
+                .filter(([, r]) => r).map(([titulo, r], i) => (
+                  <Cartao key={r!.receita.id} titulo={titulo} r={r!} destaque={i === 0} aberta={aberta === r!.receita.id}
+                    alvo={alvoDe({ familia, chips }).alvo} pediu={chips} familia={familia}
+                    onAbrir={() => { const novo = aberta === r!.receita.id ? null : r!.receita.id; setAberta(novo); if (novo) trackEvent("mata_vontade_receita_aberta", { receita: novo, posicao: i + 1, match: r!.match }); }}
+                    nota={nota[r!.receita.id]} onNota={(v) => { setNota({ ...nota, [r!.receita.id]: v }); trackEvent("mata_vontade_feedback", { receita: r!.receita.id, familia: familia.id, nota: v }); }} />
+                ))}
+            </div>
+          )}
+
+          <div className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-6 mt-8 relative">
+            <div className="absolute top-0 left-0 h-[2px] w-16" style={{ background: OURO }} aria-hidden />
+            <p className="text-white font-bold text-xl mb-2" style={h}>Gostou da troca?</p>
+            <p className="text-gray-300 leading-relaxed mb-2">Não se compare com ninguém: cada pessoa tem a própria rotina, o próprio corpo e os próprios altos e baixos. Uma estratégia funciona melhor quando cabe na sua vida.</p>
+            <p className="text-gray-300 leading-relaxed mb-5">É exatamente isso que eu busco nos meus treinos: construir algo que você consiga manter de verdade. Não é só sobre começar. É sobre conseguir continuar.</p>
+            <div className="flex flex-wrap gap-4 items-center">
+              <a href={getWhatsAppUrl("Olá, Montinho! Usei o Mata a Vontade e queria conversar sobre o meu treino.")} target="_blank" rel="noopener noreferrer"
+                data-wa-origem="ferramenta" data-cta-id="mata-a-vontade:resultado" onClick={() => trackEvent("mata_vontade_cta", { destino: "whatsapp" })}
+                className={`${btn} inline-flex items-center`} style={{ background: OURO }}>Falar com o Montinho</a>
+              <Link href="/consultoria" onClick={() => trackEvent("mata_vontade_cta", { destino: "consultoria" })} className="text-gray-300 text-sm underline underline-offset-4 hover:text-white min-h-[44px] inline-flex items-center">Conhecer a consultoria</Link>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function Cartao({ titulo, r, destaque, aberta, onAbrir, alvo, pediu, familia, nota, onNota }: {
+  titulo: string; r: Resultado; destaque: boolean; aberta: boolean; onAbrir: () => void;
+  alvo: Partial<Record<string, number>>; pediu: string[]; familia: Familia; nota?: string; onNota: (v: string) => void;
+}) {
+  const rc = r.receita;
+  const alerg = alergenosDe(rc);
+  const eixosMostra = EIXOS.filter((e) => (alvo[e.id] ?? 0) > 0 || (rc.perfil[e.id] ?? 0) >= 3).slice(0, 5);
+  const temTudo = rc.ingredientes.filter((i) => !i.opcional).length - r.faltam.length;
+  return (
+    <article className="border p-5 sm:p-6 transition-colors" style={{ borderColor: destaque ? OURO : "rgba(255,255,255,.12)", background: destaque ? "rgba(186,158,80,.06)" : "transparent" }}>
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <p className="text-[11px] uppercase tracking-[0.2em]" style={{ color: OURO }}>{titulo}</p>
+          <h3 className="text-white text-xl font-bold mt-1" style={h}>{rc.nome}</h3>
+          <p className="text-gray-400 text-sm mt-1">
+            {rc.tempoMin} min{rc.esperaMin ? ` + ${rc.esperaMin >= 60 ? `${rc.esperaMin / 60} h` : `${rc.esperaMin} min`} de espera` : ""} · {EQUIP_TXT[rc.equip]} · {r.faltam.length ? `faltam ${r.faltam.length}` : `você tem ${temTudo} de ${temTudo}`}
+          </p>
+        </div>
+        <div className="text-right shrink-0">
+          <p className="text-3xl font-black tabular-nums" style={{ color: OURO, ...h }}>{r.match}%</p>
+          <p className="text-[10px] uppercase tracking-wider text-gray-400">match</p>
+        </div>
+      </div>
+      <p className="inline-block mt-3 text-[11px] uppercase tracking-wider px-2 py-1 border border-amber-300/40 text-amber-200">Receita em teste</p>
+      <p className="text-gray-300 text-sm mt-3 leading-relaxed"><strong className="text-white">Por que essa:</strong> {r.porque}</p>
+      <button type="button" onClick={onAbrir} className="mt-4 min-h-[44px] text-sm font-semibold underline underline-offset-4" style={{ color: OURO }} aria-expanded={aberta}>
+        {aberta ? "Fechar receita" : "Ver receita"}
+      </button>
+      {aberta && (
+        <div className="mt-4 border-t border-white/10 pt-4 space-y-5">
+          <div>
+            <p className="text-white text-sm font-semibold mb-2">Você pediu × essa receita</p>
+            <ul className="space-y-1.5">
+              {eixosMostra.map((e) => (
+                <li key={e.id} className="grid grid-cols-[110px_1fr_1fr] items-center gap-2 text-xs text-gray-300">
+                  <span>{e.rotulo}</span><Barra v={alvo[e.id] ?? 0} /><Barra v={rc.perfil[e.id] ?? 0} />
+                </li>
+              ))}
+            </ul>
+            <p className="text-[11px] text-gray-500 mt-1">1ª barra: o que você pediu{pediu.length ? "" : ` (padrão de ${familia.nome.toLowerCase()})`} · 2ª: a receita</p>
+          </div>
+          <div>
+            <p className="text-white text-sm font-semibold mb-2">Ingredientes</p>
+            <ul className="space-y-1 text-sm">
+              {rc.ingredientes.map((i) => (
+                <li key={i.id} className={r.faltam.includes(i.id) ? "text-amber-200" : "text-gray-300"}>
+                  {r.faltam.includes(i.id) ? "○" : "●"} {INGREDIENTES[i.id].nome}: {i.qtd}{i.opcional ? " (opcional)" : ""}
+                  {i.troca && <span className="text-gray-500"> · troca: {i.troca}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="text-white text-sm font-semibold mb-2">Como fazer</p>
+            <ol className="list-decimal pl-5 space-y-1.5 text-sm text-gray-300">{rc.passos.map((p) => <li key={p}>{p}</li>)}</ol>
+            {rc.dica && <p className="text-sm mt-3" style={{ color: OURO }}>Dica: <span className="text-gray-300">{rc.dica}</span></p>}
+          </div>
+          {alerg.length > 0 && <p className="text-xs text-gray-400">Contém: {alerg.join(", ").replace("gluten", "glúten")}. Não garantimos ausência de traços.</p>}
+          <p className="text-xs text-gray-500">Receita em teste: proporções de partida, ainda em ajuste. Os valores nutricionais entram quando a receita for testada; quando entrarem, serão estimativas que variam com marca e quantidade.</p>
+          <div>
+            <p className="text-white text-sm font-semibold mb-2">Fez? Matou a vontade?</p>
+            <div className="flex flex-wrap gap-2">
+              {[["totalmente", "😍 Totalmente"], ["quase", "🙂 Quase"], ["mais-ou-menos", "😐 Mais ou menos"], ["nao", "😕 Não"]].map(([v, t]) => (
+                <Chip key={v} ativo={nota === v} onClick={() => onNota(v)}>{t}</Chip>
+              ))}
+            </div>
+            {nota && <p className="text-gray-400 text-xs mt-2">Valeu! Isso ajuda a ajustar a receita para todo mundo.</p>}
+          </div>
+          <Compartilhar contexto="tool-result" titulo="Montinho Mata a Vontade" caminho="/ferramentas/mata-a-vontade" local="tool_result" ferramenta="mata-a-vontade"
+            resultado={[`Eu estava com vontade de ${familia.nome.toLowerCase()}`, `Achei: ${rc.nome}`, `Match: ${r.match}%`]} gancho="Montinho Mata a Vontade:" aparencia="discreto" />
+        </div>
+      )}
+    </article>
+  );
+}
