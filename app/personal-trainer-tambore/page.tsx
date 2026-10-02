@@ -139,7 +139,7 @@ export default function PersonalTrainerTambore() {
             Personal Trainer no Tamboré: treino que cabe na rotina de quem mora aqui.
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Tamboré é uma região de condomínios de alto padrão entre Barueri e Santana de Parnaíba, vizinha imediata de Alphaville — com ritmo próprio, mais tranquilo e familiar. Meu trabalho respeita esse contexto: treino na sua residência, no espaço fitness do condomínio ou em academia próxima, com acompanhamento próximo e a atenção que quem vive aqui valoriza.
+            Tamboré é uma região de condomínios de alto padrão entre Barueri e Santana de Parnaíba, vizinha imediata de Alphaville — com ritmo próprio, mais tranquilo e familiar. Começar a treinar é a parte fácil. O difícil é continuar quando a semana aperta, a carga para de subir ou a rotina muda. Meu trabalho é estar perto nessas horas e ajustar o treino com você — na sua residência, no espaço fitness do condomínio ou em academia próxima.
           </p>
           <a
             href={getWhatsAppUrl()} data-wa-origem="topo" data-cta-id="personal-trainer-tambore:topo"
@@ -226,7 +226,7 @@ export default function PersonalTrainerTambore() {
             Acompanhamento presencial no Tamboré: tudo que está incluso
           </h2>
           <p className="text-gray-300 font-light mb-10 leading-relaxed">
-            Não vendo sessões avulsas sem contexto. Ofereço acompanhamento — que é diferente de apenas treinar junto:
+            Montar o treino é o começo. O que faz você continuar é o que acontece depois — e é isso que está incluso:
           </p>
 
           <div className="grid sm:grid-cols-2 gap-px border border-white/10">
@@ -667,10 +667,10 @@ export default function PersonalTrainerTambore() {
             className="text-3xl sm:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
           >
-            Seu próximo passo começa com uma conversa.
+            Não é só sobre começar. É sobre conseguir continuar.
           </h2>
           <p className="text-gray-300 font-light leading-relaxed mb-8 text-lg">
-            Sem formulários longos, sem avaliações pagas antes de decidir. Me conta o que você quer mudar — e te mostro se faz sentido trabalharmos juntos.
+            E não se compare com ninguém: cada pessoa tem a própria genética, a própria rotina e a própria história, com altos e baixos. O que importa é encontrar um jeito de treinar que você consiga seguir pelo resto da vida. Sem formulários longos, sem avaliações pagas antes de decidir. Me conta o que você quer mudar — e te mostro se faz sentido trabalharmos juntos.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
