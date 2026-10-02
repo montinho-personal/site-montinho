@@ -163,9 +163,11 @@ function porque(p: Pedido, r: Receita, difs: { e: Eixo; d: number }[]): string {
 
 export type Cartoes = { melhor?: Resultado; rapido?: Resultado; estrategia?: Resultado; todos: Resultado[] };
 
-export function recomendar(p: Pedido, banco: Receita[] = RECEITAS): Cartoes {
+export function recomendar(p: Pedido, banco: Receita[] = RECEITAS, prioriza: (r: Receita) => boolean = () => false): Cartoes {
+  // Receitas com "veja como fazer" num portal vêm antes; dentro de cada grupo, o match decide.
+  const pri = (x: Resultado) => (prioriza(x.receita) ? 1 : 0);
   const todos = banco.map((r) => pontuar(p, r)).filter((x): x is Resultado => !!x && x.match >= 60)
-    .sort((a, b) => b.match - a.match || (b.receita.forte[p.objetivo] ?? 0) - (a.receita.forte[p.objetivo] ?? 0) || a.receita.tempoMin - b.receita.tempoMin);
+    .sort((a, b) => pri(b) - pri(a) || b.match - a.match || (b.receita.forte[p.objetivo] ?? 0) - (a.receita.forte[p.objetivo] ?? 0) || a.receita.tempoMin - b.receita.tempoMin);
   const usados = new Set<string>();
   const pega = (x?: Resultado) => { if (x) usados.add(x.receita.id); return x; };
   // Vontade de produto + "o original": o original na medida vem primeiro.
@@ -173,10 +175,10 @@ export function recomendar(p: Pedido, banco: Receita[] = RECEITAS): Cartoes {
   const original = todos.find((x) => x.receita.marcas.includes("original") && x.receita.familia === p.familia.id);
   const melhor = pega(querOriginal && original ? original : todos[0]);
   const rapido = pega([...todos].filter((x) => !usados.has(x.receita.id) && x.match >= 75)
-    .sort((a, b) => a.receita.tempoMin - b.receita.tempoMin || b.match - a.match)[0]);
+    .sort((a, b) => pri(b) - pri(a) || a.receita.tempoMin - b.receita.tempoMin || b.match - a.match)[0]);
   const alvoObj: Objetivo = p.objetivo === "original" && !querOriginal ? "original" : p.objetivo;
   const estrategia = pega(todos.filter((x) => !usados.has(x.receita.id) && x.match >= 65)
-    .sort((a, b) => Number(b.receita.familia === p.familia.id) - Number(a.receita.familia === p.familia.id) || (b.receita.forte[alvoObj] ?? 0) - (a.receita.forte[alvoObj] ?? 0) || b.match - a.match)[0]);
+    .sort((a, b) => pri(b) - pri(a) || Number(b.receita.familia === p.familia.id) - Number(a.receita.familia === p.familia.id) || (b.receita.forte[alvoObj] ?? 0) - (a.receita.forte[alvoObj] ?? 0) || b.match - a.match)[0]);
   return { melhor, rapido, estrategia, todos };
 }
 
