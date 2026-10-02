@@ -9,6 +9,7 @@ import { ATALHOS, EIXOS, FAMILIAS, type Familia, type Temperatura } from "@/lib/
 import { INGREDIENTES, type Equip, type Objetivo } from "@/lib/mata-vontade/receitas";
 import { macrosDe } from "@/lib/mata-vontade/nutricao";
 import { FONTES } from "@/lib/mata-vontade/fontes";
+import { ouvir } from "@/components/voz/ModoVoz";
 import { alergenosDe, alvoDe, interpretar, recomendar, type Resultado } from "@/lib/mata-vontade/motor";
 
 /**
@@ -74,6 +75,34 @@ export default function MataVontade() {
   const [aviso, setAviso] = useState<string | null>(null);
   const [familias, setFamilias] = useState<Familia[]>([]);
   const [sel, setSel] = useState<Sel[]>([]);
+  const [temMic, setTemMic] = useState(false);
+  const [ouvindo, setOuvindo] = useState(false);
+  useEffect(() => {
+    const w = window as unknown as { SpeechRecognition?: unknown; webkitSpeechRecognition?: unknown };
+    // Só no cliente: o servidor não sabe se o navegador reconhece voz.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setTemMic(!!(w.SpeechRecognition || w.webkitSpeechRecognition));
+  }, []);
+  /** Microfone: a pessoa fala a vontade do jeito que falaria com alguém. O que foi dito não vai para o GA4. */
+  async function falarVontade() {
+    if (ouvindo) return;
+    setOuvindo(true); setAviso(null);
+    const alts = await ouvir();
+    setOuvindo(false);
+    if (!alts?.length) { setAviso("Não consegui ouvir. Tenta de novo ou digita aí."); return; }
+    const melhor = alts.find((a) => interpretar(a).tipo === "familia") ?? alts[0];
+    // Fala natural pode ter mais de uma vontade: "brigadeiro e um sorvete".
+    const partes = melhor.split(/,| e | ou | com /i).map((p) => interpretar(p)).filter((r) => r.tipo === "familia");
+    const varias = [...new Map(partes.map((r) => [r.familia.id, r])).values()].slice(0, MAX_VONTADES);
+    trackEvent("mata_vontade_voz", { entendeu: interpretar(melhor).tipo, vontades: varias.length });
+    setTexto(melhor);
+    if (varias.length > 1) {
+      setFamilias(varias.map((r) => r.familia)); setChips([...new Set(varias.flatMap((r) => r.chips))]);
+      setTemperatura(varias.find((r) => r.temperatura)?.temperatura); setAromas([...new Set(varias.flatMap((r) => r.aromas))]);
+      trackEvent("mata_vontade_inicio", { tipo: "voz-varias", familia: varias.map((r) => r.familia.id).join(",") });
+      ir("como");
+    } else comecar(melhor);
+  }
   const [hist, setHist] = useState<Etapa[]>([]);
   const topo = useRef<HTMLDivElement>(null);
   const montou = useRef(false);
@@ -182,8 +211,19 @@ export default function MataVontade() {
         <div className={card}>
           <label htmlFor="mv-vontade" className="block text-white text-lg mb-3">O que você está com vontade de comer agora?</label>
           <form onSubmit={(e) => { e.preventDefault(); if (texto.trim() || sel.length) comecar(texto); }} className="flex flex-col sm:flex-row gap-3">
-            <input id="mv-vontade" value={texto} onChange={(e) => setTexto(e.target.value)} placeholder="ex.: bolo de chocolate, brigadeiro, sorvete…"
-              className="flex-1 min-h-[52px] bg-black border border-white/20 px-4 text-white text-lg placeholder:text-gray-400 focus:outline-none focus:border-white focus-visible:ring-2 focus-visible:ring-[#BA9E50]" autoComplete="off" />
+            <div className="relative flex-1">
+              <input id="mv-vontade" value={texto} onChange={(e) => setTexto(e.target.value)} placeholder={ouvindo ? "Pode falar…" : "ex.: bolo de chocolate, brigadeiro, sorvete…"}
+                className={`w-full min-h-[52px] bg-black border border-white/20 px-4 text-white text-lg placeholder:text-gray-400 focus:outline-none focus:border-white focus-visible:ring-2 focus-visible:ring-[#BA9E50] ${temMic ? "pr-14" : ""}`} autoComplete="off" />
+              {temMic && (
+                <button type="button" onClick={falarVontade} aria-label={ouvindo ? "Ouvindo" : "Falar a vontade"} aria-pressed={ouvindo}
+                  className="absolute right-1 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center rounded-full transition-colors"
+                  style={{ background: ouvindo ? OURO : "transparent", color: ouvindo ? "#000" : OURO }}>
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden className={ouvindo ? "animate-pulse" : ""}>
+                    <rect x="9" y="2" width="6" height="12" rx="3" /><path d="M5 10a7 7 0 0 0 14 0" /><path d="M12 17v4" /><path d="M8 21h8" />
+                  </svg>
+                </button>
+              )}
+            </div>
             <button type="submit" className={btn} style={{ background: OURO }}>{sel.length > 1 ? `Matar as ${sel.length} vontades` : "Matar a vontade"}</button>
           </form>
           {aviso && <p className="text-gray-200 mt-4" role="status">{aviso}</p>}
