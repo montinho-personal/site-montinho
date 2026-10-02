@@ -67,7 +67,7 @@ function falar(texto: string, voz: SpeechSynthesisVoice | null): Promise<void> {
   });
 }
 
-function ouvir(): Promise<string[] | null> {
+export function ouvir(): Promise<string[] | null> {
   return new Promise((ok) => {
     const w = window as unknown as { SpeechRecognition?: new () => Reconhecedor; webkitSpeechRecognition?: new () => Reconhecedor };
     const R = w.SpeechRecognition ?? w.webkitSpeechRecognition;
