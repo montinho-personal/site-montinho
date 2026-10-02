@@ -5,6 +5,13 @@
 
 export type AnalyticsEvent =
   | "click_whatsapp"
+  /** Montinho Mata a Vontade (sem restrições/alergias: só se teve ou não). */
+  | "mata_vontade_inicio"
+  | "mata_vontade_etapa"
+  | "mata_vontade_resultado"
+  | "mata_vontade_receita_aberta"
+  | "mata_vontade_feedback"
+  | "mata_vontade_cta"
   /** Palpite "quem vence?" nos artigos de evento (sem dado pessoal). */
   | "palpite_voto"
   | "palpite_compartilhar"
