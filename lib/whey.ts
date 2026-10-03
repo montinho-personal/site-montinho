@@ -428,7 +428,7 @@ export const AVISO_SEGURANCA =
  * Artigos que EMBUTEM a calculadora: o leitor chega com "quanto eu tomo?".
  * "Como tomar" traz a seção "Qual a dose certa?" — a pergunta da ferramenta.
  */
-export const ARTIGOS_COM_CALCULADORA_WHEY: string[] = ["black-friday-suplementos", "whey-protein-como-tomar"];
+export const ARTIGOS_COM_CALCULADORA_WHEY: string[] = ["black-friday-suplementos", "whey-protein-como-tomar", "mega-oferta-prime-2026"];
 
 /**
  * Artigos que recebem LINK, não embed:
