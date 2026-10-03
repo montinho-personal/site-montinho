@@ -8575,6 +8575,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 </figure>
 <p>Mas saber que o déficit existe é diferente de saber como calculá-lo corretamente — e principalmente como aplicá-lo de forma inteligente. Neste artigo, você vai aprender tudo sobre o conceito, a fórmula e os erros mais comuns.</p>
 
+<p><strong>Quer o número pronto, grátis e online?</strong> A <a href="/ferramentas/calculadora-deficit-calorico">calculadora de déficit calórico</a> faz a conta abaixo com o seu peso, altura, idade e rotina. O resto do artigo mostra o passo a passo, para você entender de onde o número vem.</p>
+
 <h2>O que é déficit calórico?</h2>
 
 <p>Déficit calórico é a diferença negativa entre as calorias que você ingere e as calorias que você gasta em um determinado período.</p>
@@ -8684,6 +8686,23 @@ RIR 3 = parou com 3 reps sobrando.</p>
   </tbody>
 </table>
 
+<h3>Como calcular o déficit calórico para mulher</h3>
+
+<p>A conta é a mesma; muda só a constante da fórmula (−161 em vez de +5). Exemplo: mulher de 70 kg, 1,65 m e 35 anos.</p>
+
+<ul>
+  <li><strong>TMB:</strong> (10×70) + (6,25×165) − (5×35) − 161 ≈ 1.395 kcal</li>
+  <li><strong>Sedentária (× 1,2):</strong> gasto ≈ 1.674 kcal/dia → com déficit de 400 kcal, ≈ 1.274 kcal/dia</li>
+  <li><strong>Treina 1 a 3 vezes por semana (× 1,375):</strong> gasto ≈ 1.918 kcal/dia → ≈ 1.518 kcal/dia</li>
+  <li><strong>Treina 3 a 5 vezes por semana (× 1,55):</strong> gasto ≈ 2.162 kcal/dia → ≈ 1.762 kcal/dia</li>
+</ul>
+
+<p>Ou seja: "quantas calorias uma mulher de 70 kg deve consumir" depende da altura, da idade e, principalmente, de quanto ela se mexe. A mesma mulher pode ter quase 500 kcal de diferença só pelo nível de atividade.</p>
+
+<h3>Por que não se calcula o déficit em cima do basal</h3>
+
+<p>Um erro comum é subtrair o déficit direto da TMB (o "basal"). A TMB é o que o corpo gasta parado, em repouso; ninguém vive o dia inteiro deitado. Tirar 500 kcal do basal gera um déficit muito maior do que o planejado. O déficit se calcula sobre o <strong>gasto total</strong> (TDEE).</p>
+
 
 <h2>Qual deve ser o tamanho do déficit?</h2>
 
@@ -8692,6 +8711,28 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Um <strong>déficit de 300 a 500 kcal/dia</strong> é o range considerado ideal para a maioria das pessoas que quer perder gordura sem comprometer a massa muscular. Isso gera uma perda aproximada de 0,3 a 0,5 kg por semana, que é considerada saudável e sustentável.</p>
 
 <p>Déficits maiores, de 800 a 1.000 kcal ou mais, até aceleram o número na balança — mas trazem consequências importantes.</p>
+
+<h2>Quantos dias de déficit calórico para perder 1 kg?</h2>
+
+<p>A conta mais usada considera que 1 kg de gordura corporal equivale a cerca de 7.700 kcal. Na teoria:</p>
+
+<ul>
+  <li><strong>Déficit de 300 kcal/dia:</strong> cerca de 26 dias por quilo</li>
+  <li><strong>Déficit de 500 kcal/dia:</strong> cerca de 15 dias por quilo</li>
+  <li><strong>Déficit de 750 kcal/dia:</strong> cerca de 10 dias por quilo</li>
+</ul>
+
+<p>Na prática, a balança não anda em linha reta. Nas primeiras semanas ela costuma cair mais rápido (água e glicogênio); depois desacelera, porque o gasto diminui conforme o peso cai. Use esses números como ordem de grandeza, não como prazo.</p>
+
+<h2>O que seria 1.200 calorias por dia?</h2>
+
+<p>1.200 kcal é um número que aparece muito em dietas prontas. Para ter ideia: é menos do que a TMB de boa parte dos adultos — a mulher do exemplo acima gasta cerca de 1.395 kcal só em repouso. A <a href="https://www.health.harvard.edu/staying-healthy/calorie-counting-made-easy" target="_blank" rel="noopener noreferrer">Harvard Health</a> orienta que a ingestão não fique abaixo de 1.200 kcal/dia para mulheres e 1.500 kcal/dia para homens sem acompanhamento de um profissional de saúde.</p>
+
+<p>Para comparar: um pão francês com 2 ovos cozidos tem cerca de 280 kcal (pão de 50 g ≈ 150 kcal e 2 ovos de 45 g ≈ 130 kcal, pela tabela TACO e medidas do IBGE). Com manteiga ou ovo frito, sobe.</p>
+
+<h2>Déficit calórico para perder barriga</h2>
+
+<p>Não existe déficit "localizado". O corpo decide de onde tira a gordura, e a barriga costuma ser uma das últimas regiões a responder. O déficit, somado à musculação, reduz a gordura do corpo todo, e a barriga vai junto com o tempo. Veja mais em <a href="/blog/por-que-a-barriga-e-a-ultima-a-ir">por que a barriga é a última a ir</a>.</p>
 
 <h2>Por que déficit muito grande é um problema</h2>
 
@@ -8728,6 +8769,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Uma dieta com proteína suficiente — pelo menos <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">1,6 g/kg de peso corporal por dia, conforme revisão de Morton et al. (2018)</a> — protege a massa muscular durante o déficit. Proteína também tem maior efeito sacietogênico, o que ajuda a cumprir a dieta com mais facilidade.</p>
 
 <p>Carboidratos e gorduras devem ser distribuídos de acordo com suas preferências, respeitando o total calórico. Não existe um macronutriente "proibido" para emagrecer.</p>
+
+<p>Procurando um cardápio de déficit calórico simples (ou em PDF)? Cardápio pronto ignora sua rotina e seu gosto, e quem prescreve dieta é nutricionista. Para montar uma referência com as suas próprias escolhas, use o <a href="/ferramentas/monte-seu-cardapio">Monte seu Cardápio</a>.</p>
 
 <h2>Como monitorar o déficit na prática</h2>
 
@@ -8777,11 +8820,31 @@ RIR 3 = parou com 3 reps sobrando.</p>
     `,
     category: "Emagrecimento",
     date: "2026-06-26",
-    updatedAt: "2026-08-27",
+    updatedAt: "2026-10-03",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["déficit calórico", "emagrecimento", "TDEE", "cálculo calórico", "metabolismo", "dieta"],
     faq: [
+      {
+        question: "Como calcular déficit calórico grátis e online?",
+        answer: "Use uma calculadora que estime seu gasto total (TMB pela fórmula de Mifflin-St Jeor multiplicada pelo fator de atividade) e subtraia 300 a 500 kcal. A calculadora de déficit calórico do Montinho faz essa conta de graça com seu peso, altura, idade e rotina."
+      },
+      {
+        question: "Quantos dias de déficit calórico para perder 1 kg?",
+        answer: "Considerando cerca de 7.700 kcal por quilo de gordura, um déficit de 500 kcal por dia leva em torno de 15 dias por quilo, e um de 300 kcal, cerca de 26 dias. Na prática o ritmo varia: cai mais rápido no começo e desacelera depois."
+      },
+      {
+        question: "Quantas calorias uma mulher de 70 kg deve consumir por dia?",
+        answer: "Depende da altura, idade e atividade. Uma mulher de 70 kg, 1,65 m e 35 anos gasta cerca de 1.670 kcal se for sedentária e cerca de 2.160 kcal se treinar de 3 a 5 vezes por semana. Para emagrecer, a meta fica 300 a 500 kcal abaixo do gasto."
+      },
+      {
+        question: "O que seria 1.200 calorias por dia?",
+        answer: "É uma ingestão baixa, abaixo do metabolismo basal de muitos adultos. A Harvard Health orienta não ficar abaixo de 1.200 kcal/dia para mulheres e 1.500 kcal/dia para homens sem acompanhamento de um profissional de saúde."
+      },
+      {
+        question: "Quantas calorias tem 1 pão com 2 ovos?",
+        answer: "Um pão francês (50 g) com 2 ovos cozidos (45 g cada) tem cerca de 280 kcal, segundo a tabela TACO e as medidas do IBGE. Manteiga, requeijão ou ovo frito aumentam esse valor."
+      },
       {
         question: "Qual o déficit calórico ideal para emagrecer?",
         answer: "Um déficit de 300 a 500 kcal por dia é considerado ideal para a maioria das pessoas. Isso representa uma perda de aproximadamente 0,3 a 0,5 kg por semana, preservando a massa muscular e sendo sustentável a longo prazo."
@@ -62259,6 +62322,8 @@ Este artigo foca exclusivamente no glúteo médio. Para treino completo de glút
 
 Se houver dor persistente, procure um médico ou fisioterapeuta antes de insistir no treino.
 
+**Glúteo médio na fisioterapia:** clamshell, abdução deitada e ponte com elástico são exercícios comuns em reabilitação de joelho, quadril e lombar. Quando existe dor ou lesão, a escolha, a carga e a progressão são do fisioterapeuta. O que está neste artigo é para treino de quem não tem dor.
+
 ## Como Ativar o Glúteo Médio
 
 Antes do treino de pernas, faça 1 ou 2 séries leves de **clamshell**, **abdução deitada** ou **monster walk com elástico**, até sentir a lateral do quadril trabalhar. Isso ajuda a "acordar" o músculo e a sentir melhor os exercícios principais.
@@ -62315,10 +62380,42 @@ Antes do treino de pernas, faça 1 ou 2 séries leves de **clamshell**, **abduç
 
 ## Glúteo Médio na Polia e na Máquina
 
+**Qual máquina trabalha o glúteo médio?** A principal é a **cadeira abdutora**. A **polia baixa** com tornozeleira (abdução em pé) é a segunda opção. O **glúteo 4 apoios na máquina**, quando feito abrindo a perna para o lado, também entra.
+
 - **Abdução na polia baixa:** tornozeleira presa ao cabo, em pé de lado, leve a perna para fora com o tronco firme.
 - **Cadeira abdutora:** a opção mais simples para colocar carga; veja a técnica em [abdução de quadril na máquina](/blog/como-fazer-abducao-quadril-maquina).
 
 ## Glúteo Médio Antes e Depois: O Que Esperar
+
+## Exercícios para Glúteo Médio em Casa (Elástico, Mini Band ou Caneleira)
+
+Dá para treinar bem o glúteo médio em casa. O que muda é a forma de colocar resistência:
+
+- **Com elástico ou mini band:** clamshell, monster walk, abdução deitada e ponte com abertura de joelhos. Coloque a faixa acima dos joelhos para começar e nos tornozelos para dificultar.
+- **Com caneleira:** abdução deitada de lado, fire hydrant e abdução em pé apoiado na parede. A caneleira permite subir de peso aos poucos, como na academia.
+- **Sem nada:** agachamento unilateral apoiado (numa cadeira), avanço lateral e prancha lateral com elevação da perna de cima.
+
+**Treino em casa de 15 minutos (2 a 3 vezes por semana):**
+
+| Exercício | Séries | Repetições |
+|-----------|--------|------------|
+| Clamshell com mini band | 3 | 15-20 por lado |
+| Abdução deitada com caneleira | 3 | 12-15 por lado |
+| Monster walk com elástico | 3 | 10-15 passos para cada lado |
+| Agachamento unilateral apoiado | 3 | 8-10 por perna |
+
+Quando 20 repetições ficarem fáceis, troque para um elástico mais forte ou uma caneleira mais pesada.
+
+## Exercícios para Glúteo Médio, Máximo e Mínimo Juntos
+
+Alguns exercícios trabalham os três ao mesmo tempo, porque a bacia precisa ficar estável enquanto o quadril estende:
+
+- **Agachamento búlgaro e afundo:** o máximo empurra, o médio segura a bacia.
+- **Subida no banco (step-up):** um apoio só, muito pedido de estabilidade lateral.
+- **Hip thrust unilateral:** extensão de quadril com a bacia tentando não girar.
+- **Abdução de quadril com o quadril estendido** (deitada de lado, perna levemente para trás): pega médio e mínimo com menos ajuda do tensor da fáscia lata.
+
+**Quais os 3 melhores exercícios para glúteos?** Para o bumbum como um todo: **hip thrust**, **agachamento** (livre ou búlgaro) e **levantamento terra romeno**. Para a lateral, some uma abdução (máquina, polia ou elástico).
 
 Com treino 2 a 3 vezes por semana, o ganho de força aparece em poucas semanas; a mudança visual na lateral do quadril leva meses e ajuda a suavizar os [hip dips](/blog/hip-dips-musculacao) — dentro do limite da sua anatomia.
 
@@ -62369,11 +62466,15 @@ Minimamente. O hip thrust é excelente para o máximo. Para o médio, use os exe
 `,
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-09-29",
+    updatedAt: "2026-10-03",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["glúteo médio", "exercícios glúteo médio", "abdução quadril", "treino glúteo", "musculação feminina"],
     faq: [
+      { question: "Como posso ativar o glúteo médio?", answer: "Antes do treino, faça 1 a 2 séries leves de clamshell, abdução deitada ou monster walk com elástico, até sentir a lateral do quadril trabalhar. Isso ajuda a perceber o músculo nos exercícios principais." },
+      { question: "Qual máquina trabalha o glúteo médio?", answer: "A cadeira abdutora é a principal. A abdução em pé na polia baixa, com tornozeleira, é a segunda opção mais usada na academia." },
+      { question: "O que o glúteo médio faz?", answer: "Ele abre a perna para o lado (abdução) e, principalmente, mantém a bacia nivelada quando você apoia o peso numa perna só, ao caminhar, correr ou subir escada." },
+      { question: "Como treinar glúteo médio em casa?", answer: "Com elástico, mini band ou caneleira: clamshell, abdução deitada de lado, monster walk e fire hydrant, 3 séries de 12 a 20 repetições, 2 a 3 vezes por semana, aumentando a resistência quando ficar fácil." },
       { question: "O glúteo médio deixa o quadril mais largo?", answer: "Desenvolve a musculatura lateral, criando mais curva na lateral do quadril. O efeito de 'largura' depende da estrutura óssea de cada pessoa." },
       { question: "Posso fazer esses exercícios sem academia?", answer: "Sim. Clamshell, fire hydrant, monster walk e abdução deitada podem ser feitos em casa com um elástico de resistência." },
       { question: "Glúteo médio fraco causa dor no joelho?", answer: "Sim. Glúteo médio fraco contribui para o valgismo de joelho (joelho caindo para dentro), que aumenta o estresse na articulação do joelho, especialmente durante corrida e agachamento." },
@@ -64573,7 +64674,7 @@ A resposta é individual. Alguns apresentam aumento de LDL, outros não. A quali
   metaDescription: "Entenda a diferença entre carboidratos simples e complexos, qual usar antes e depois do treino, o índice glicêmico na prática e como distribuir ao longo do dia.",
   author: "Montinho Personal Trainer",
   date: "2026-06-28",
-  updatedAt: "2026-06-28",
+  updatedAt: "2026-10-03",
   category: "Nutrição",
   readTime: "8 min",
   content: `<p>Aveia ou banana? Arroz integral ou dextrose? A escolha do carboidrato certo no momento certo pode fazer diferença real no desempenho do treino e na recuperação muscular. Mas antes de escolher, é preciso entender o que separa um carboidrato simples de um complexo — e por que o índice glicêmico, sozinho, não conta toda a história.</p>
@@ -64592,6 +64693,31 @@ A classificação se baseia na estrutura química das moléculas de açúcar:
 - **Carboidratos complexos:** cadeias longas de múltiplos açúcares (polissacarídeos). Digestão mais lenta, absorção gradual, elevação mais estável da glicemia. Exemplos: amido (arroz, batata, aveia), fibras.
 
 Essa distinção é real, mas simplificada. O que realmente importa para a prática é a velocidade com que o carboidrato eleva a glicose no sangue — e aí entram o índice glicêmico e a carga glicêmica.
+
+### Quais são os 3 tipos de carboidratos?
+
+Pela estrutura química, os carboidratos se dividem em três grupos:
+
+1. **Monossacarídeos:** uma unidade de açúcar (glicose, frutose, galactose).
+2. **Dissacarídeos:** duas unidades (sacarose, lactose, maltose).
+3. **Polissacarídeos:** muitas unidades em cadeia (amido, glicogênio e fibras).
+
+Os dois primeiros são os "simples"; o terceiro, os "complexos".
+
+### Quais alimentos são carboidratos complexos?
+
+- **Grãos e cereais:** arroz (principalmente integral), aveia, milho, quinoa, trigo.
+- **Massas e pães**, de preferência integrais.
+- **Tubérculos e raízes:** batata, batata-doce, mandioca, inhame.
+- **Leguminosas:** feijão, lentilha, grão-de-bico, ervilha (que trazem também proteína e fibra).
+
+### É simples ou complexo? Os casos que mais confundem
+
+- **Pão:** o amido da farinha é complexo, mas o pão branco é refinado, tem pouca fibra e é digerido rápido (IG alto). Na prática, ele se comporta mais como um carboidrato rápido. O pão integral de verdade fica no meio do caminho.
+- **Batata inglesa:** é amido, portanto complexo, mas cozida tem IG alto. Mais um exemplo de que "complexo" não é sinônimo de "lento".
+- **Banana:** mistura os dois. Verde, tem mais amido; madura, mais açúcares simples. Por isso é um bom pré-treino.
+- **Tapioca:** é praticamente só amido de mandioca, ou seja, complexo, mas sem fibra e de digestão rápida. Funciona como carboidrato rápido.
+- **Frutas:** o açúcar delas é simples (frutose e glicose), mas vem com fibra, água e vitaminas. Não existe "fruta com carboidrato complexo" no sentido técnico, embora algumas, como banana verde, tenham amido.
 
 ## Índice Glicêmico vs Carga Glicêmica
 
@@ -64670,6 +64796,12 @@ Em dias sem treino, o gasto energético é menor e a demanda por reposição de 
 - **Ignorar o contexto da refeição completa:** o IG de um alimento muda quando consumido com proteína, gordura e fibras.
 - **Achar que integral é sempre melhor:** no pós-treino, a digestão rápida tem vantagem. O contexto importa.
 
+## Quais Carboidratos Devemos Evitar?
+
+Não existe carboidrato proibido. O que vale **limitar** são os que trazem muita caloria e pouca coisa a mais: refrigerante, suco adoçado, doces, balas, biscoitos recheados e açúcar adicionado em geral. A OMS recomenda que os açúcares livres fiquem abaixo de 10% das calorias do dia.
+
+Sobre "lista de carboidratos que engordam": nenhum alimento engorda sozinho. O que faz ganhar peso é o excesso de calorias no total. Os ultraprocessados e açucarados só tornam esse excesso mais fácil, porque saciam pouco.
+
 ## Perguntas Frequentes
 
 **Carboidrato simples engorda mais que o complexo?**
@@ -64691,6 +64823,26 @@ Se você treina em jejum, o foco no pós-treino é maior. Após o treino, priori
 
 `,
   faq: [
+    {
+      question: "Quais alimentos são carboidratos complexos?",
+      answer: "Arroz, aveia, milho, quinoa, massas e pães (de preferência integrais), batata, batata-doce, mandioca, inhame e leguminosas como feijão, lentilha e grão-de-bico.",
+    },
+    {
+      question: "O pão é um carboidrato simples ou complexo?",
+      answer: "O amido da farinha é um carboidrato complexo, mas o pão branco é refinado, tem pouca fibra e é digerido rápido, então na prática se comporta como carboidrato rápido. O pão integral tem digestão um pouco mais lenta.",
+    },
+    {
+      question: "Banana é carboidrato simples ou complexo?",
+      answer: "Os dois. A banana verde tem mais amido (complexo); a madura, mais açúcares simples. Por isso a banana madura é uma boa opção de 30 a 60 minutos antes do treino.",
+    },
+    {
+      question: "Quais são os 3 tipos de carboidratos?",
+      answer: "Monossacarídeos (glicose, frutose), dissacarídeos (sacarose, lactose) e polissacarídeos (amido, glicogênio e fibras). Os dois primeiros são chamados de simples; os polissacarídeos, de complexos.",
+    },
+    {
+      question: "Quais os carboidratos que devemos evitar?",
+      answer: "Nenhum é proibido, mas vale limitar açúcar adicionado, refrigerantes, sucos adoçados, doces e biscoitos recheados. A OMS recomenda que os açúcares livres fiquem abaixo de 10% das calorias diárias.",
+    },
     {
       question: "Carboidrato simples engorda mais que o complexo?",
       answer: "Não diretamente. O que engorda é o excesso calórico, independentemente da fonte. No entanto, carboidratos simples têm menor saciedade, o que pode facilitar o consumo excessivo. O tipo importa principalmente para timing e controle de fome, não como regra absoluta de emagrecimento.",
@@ -67984,7 +68136,7 @@ O objetivo final é o mesmo: uma relação com a comida que seja sustentável, p
     metaDescription: "Como montar uma dieta hipercalórica para ganho de massa? Superávit ideal, lean vs dirty bulk, macros para hipertrofia, alimentos e taxa realista de ganho muscular.",
     author: "Montinho Personal Trainer",
     date: "2026-06-30",
-    updatedAt: "2026-06-30",
+    updatedAt: "2026-10-03",
     category: "Nutrição",
     readTime: "11 min",
     tags: ["dieta hipercalórica", "ganho de massa", "hipertrofia", "bulking", "nutrição esportiva"],
@@ -67999,6 +68151,8 @@ O objetivo final é o mesmo: uma relação com a comida que seja sustentável, p
 </figure>
 
 ## O Fundamento: Por Que o Superávit Calórico é Necessário
+
+**O que é dieta hipercalórica?** É uma alimentação com mais calorias do que o corpo gasta por dia, gerando um superávit calórico. Combinada com musculação, é a base do ganho de massa muscular (o famoso "bulking"). Para saber seu gasto, use a [calculadora de TMB e TDEE](/ferramentas/calculadora-tmb-tdee); para ver quanto músculo é realista ganhar, o [simulador de ganho de massa muscular](/ferramentas/simulador-ganho-massa-muscular).
 
 A síntese proteica muscular (MPS) — o processo de construção de nova proteína muscular — requer energia. Quando o balanço energético é negativo (déficit calórico), o corpo prioriza a sobrevivência sobre o crescimento. Em déficit severo, a taxa de quebra proteica muscular (MPB) supera a MPS, resultando em perda de massa magra.
 
@@ -68109,6 +68263,8 @@ Priorize gorduras insaturadas (azeite, abacate, nozes, castanhas, azeite de oliv
 
 ## Exemplo de Distribuição Calórica (3.000 kcal)
 
+**Qual é a dieta de 3.000 calorias para ganhar massa?** Não existe uma única: 3.000 kcal é só o total. A tabela abaixo mostra como esse total se divide entre os macronutrientes no exemplo do homem de 80 kg. O cardápio em si, com alimentos, horários e quantidades, depende da sua rotina e é feito por nutricionista.
+
 | Macro | Quantidade | Calorias |
 |---|---|---|
 | Proteína | 160 g | 640 kcal (21%) |
@@ -68133,6 +68289,12 @@ O timing nutricional é relevante, mas secundário às metas diárias totais. As
 
 ## Alimentos Densos em Calorias e Nutrientes
 
+**O que comer na dieta hipercalórica?** A base é a mesma de qualquer alimentação equilibrada, só que em maior quantidade:
+
+- **Proteínas:** carnes, frango, peixe, ovos, leite, iogurte e queijos.
+- **Carboidratos:** arroz, feijão, macarrão, batata, mandioca, aveia, pão e frutas.
+- **Gorduras boas:** azeite, abacate, pasta de amendoim, castanhas e nozes. Concentram muitas calorias em pouco volume, por isso ajudam quem tem pouca fome.
+
 Para atingir 3.000+ kcal/dia sem sofrimento, inclua alimentos de alta densidade calórica:
 
 | Alimento | Porção | Calorias | Nutrientes Extras |
@@ -68147,6 +68309,8 @@ Para atingir 3.000+ kcal/dia sem sofrimento, inclua alimentos de alta densidade 
 | Ovos inteiros | 3 unidades | 210 kcal | Proteína, colina |
 
 ## Taxa Realista de Ganho de Massa Muscular
+
+**Como ganhar 5 kg em um mês?** Pela tabela abaixo, nem um iniciante ganha 5 kg de músculo em um mês. Dá para a balança subir 5 kg comendo muito acima do gasto, mas a maior parte vai ser gordura, água e conteúdo intestinal. Para ganhar massa de verdade, a meta mais útil é de 0,5 a 1 kg por mês na balança (um pouco mais para iniciantes), com força subindo no treino.
 
 Esse é provavelmente o dado mais subestimado na academia. Expectativas irrealistas levam ao dirty bulk, frustração e gordura desnecessária. A taxa máxima de ganho de músculo por mês para um natural treinado é:
 
@@ -68179,6 +68343,27 @@ O metabolismo se adapta. Um superávit de 300 kcal hoje pode ser equilíbrio daq
 - **Ajuste a cada 2–3 semanas** — não diariamente (flutuações diárias são normais)
 
 ## Mitos e Verdades sobre Dieta Hipercalórica
+
+## Dieta Hipercalórica e Hiperproteica
+
+"Hiperproteica" quer dizer com mais proteína do que a recomendação para a população em geral (0,8 g/kg por dia). Em quem treina para ganhar massa, a faixa da ISSN de **1,6 a 2,2 g/kg/dia** já é, por definição, hiperproteica. Uma dieta "hipercalórica e hiperproteica 1,5" costuma se referir a 1,5 g de proteína por kg de peso, um pouco abaixo dessa faixa. Para calcular a sua, use a [calculadora de proteína](/ferramentas/calculadora-de-proteina).
+
+## Dieta Hipercalórica para Ectomorfo (Quem Tem Dificuldade de Engordar)
+
+Quem "come muito e não engorda" geralmente come menos do que imagina, ou gasta mais do que imagina (trabalho em pé, muito movimento ao longo do dia). Na prática, o que costuma funcionar:
+
+- **Calcular o gasto real** e começar no topo da faixa de superávit (400–500 kcal).
+- **Usar alimentos densos** (azeite, pasta de amendoim, castanhas, aveia, leite) para comer mais sem estufar.
+- **Acrescentar uma refeição** em vez de aumentar muito cada prato.
+- **Pesar-se toda semana** e subir 100–200 kcal se o peso não mexer em 2 semanas.
+
+## Dieta Hipercalórica Pronta, em PDF, Hospitalar ou Infantil
+
+Este artigo trata de dieta hipercalórica para **adultos saudáveis que treinam**. Dieta pronta ou em PDF não considera sua rotina, seu gosto nem seu gasto, e quem prescreve cardápio é nutricionista. Dieta hipercalórica **hospitalar** (para pacientes desnutridos ou em recuperação) e **infantil** são condutas clínicas, decididas por médico e nutricionista.
+
+## Quais São os Melhores Hipercalóricos (Suplementos)?
+
+Suplemento hipercalórico é basicamente carboidrato com um pouco de proteína em pó. Ele ajuda quem não consegue bater as calorias com comida, mas não é necessário, e muitos têm bastante açúcar. Antes de escolher um, compare no rótulo as calorias e a proteína por dose. Com frequência, um shake caseiro de leite, banana, aveia e pasta de amendoim entrega o mesmo por menos.
 
 **Mito: "Você precisa comer muito acima do limite para crescer."**
 Verdade: acima de 500 kcal de superávit, o excedente vai para gordura. O músculo tem uma taxa máxima de síntese — mais comida não acelera isso.
@@ -68218,6 +68403,11 @@ Com essa estrutura, você maximiza o ganho de músculo, minimiza o acúmulo de g
 
 `,
     faq: [
+      { question: "O que é dieta hipercalórica?", answer: "É uma alimentação com mais calorias do que o corpo gasta por dia, gerando superávit calórico. Junto com a musculação, é a base do ganho de massa muscular." },
+      { question: "O que comer na dieta hipercalórica?", answer: "Proteínas (carnes, frango, peixe, ovos, laticínios), carboidratos (arroz, feijão, massas, batata, aveia, frutas) e gorduras boas (azeite, abacate, pasta de amendoim, castanhas), em quantidade suficiente para ficar acima do gasto diário." },
+      { question: "Como ganhar 5 kg em um mês?", answer: "Ganhar 5 kg de músculo em um mês não é realista nem para iniciantes, que ganham em torno de 0,8 a 1,5 kg de músculo por mês. A balança pode subir 5 kg com muito excesso de comida, mas a maior parte será gordura e água." },
+      { question: "O que é dieta hipercalórica e hiperproteica?", answer: "É uma dieta com superávit de calorias e proteína acima da recomendação geral de 0,8 g/kg. Para ganho de massa, a ISSN recomenda 1,6 a 2,2 g de proteína por kg de peso por dia." },
+      { question: "Preciso de suplemento hipercalórico para ganhar massa?", answer: "Não. Ele é uma conveniência para quem não consegue bater as calorias com comida. Arroz, aveia, leite, banana, azeite e pasta de amendoim cumprem o mesmo papel." },
       { question: "Quantas calorias acima do necessário para ganhar massa muscular?", answer: "O superávit ideal varia com o nível de treino: iniciantes podem usar 300–500 kcal acima do TDEE; intermediários, 200–300 kcal; avançados, 100–200 kcal. Acima de 500 kcal, o excedente tende a se acumular como gordura, pois a taxa de síntese muscular tem um teto diário que não aumenta com mais calorias." },
       { question: "Qual a diferença entre lean bulk e dirty bulk?", answer: "Lean bulk é um superávit controlado (200–300 kcal/dia) com alimentos de qualidade, resultando em ganho predominantemente muscular com mínimo de gordura. Dirty bulk não controla o superávit nem a qualidade alimentar — o peso sobe rápido, mas grande parte é gordura, exigindo um cutting mais longo e arriscado depois." },
       { question: "Quanto músculo é possível ganhar por mês naturalmente?", answer: "Iniciantes: 0,8 a 1,5 kg/mês; intermediários: 0,4 a 0,8 kg/mês; avançados: 0,1 a 0,4 kg/mês. Esses são valores de músculo real — o ganho de peso total inclui glicogênio e água. Se estiver ganhando muito mais que isso, provavelmente há acúmulo significativo de gordura." },
@@ -115117,11 +115307,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Você não precisa de um plano complicado para comer antes de treinar. Precisa de uma regra por horário e de saber o que fazer quando o dia sai do script — que é quase sempre.",
     category: "Nutrição",
     date: "2026-08-29",
-    updatedAt: "2026-08-29",
+    updatedAt: "2026-10-03",
     readTime: "8 min",
     author: "Montinho Personal Trainer",
     tags: ["o que comer antes do treino", "refeição pré-treino", "nutrição esportiva", "carboidrato", "treino em jejum", "personal trainer alphaville"],
-    faq: [{"question": "Quanto tempo antes do treino devo comer?", "answer": "Depende do tamanho da refeição. Refeição completa: 2 a 3 horas antes. Lanche médio: 1 a 2 horas. Algo leve e de digestão rápida, como uma fruta: 30 a 60 minutos. A regra prática é que quanto mais perto do treino, menor e mais simples a refeição — porque comida no estômago compete com o treino."}, {"question": "Posso treinar em jejum?", "answer": "Pode, e para treinos curtos e moderados a diferença costuma ser pequena. O que pesa é o total de calorias e proteína do dia, não o horário exato. Mas para treino pesado de força, muita gente rende menos em jejum — e se você percebe queda de desempenho, tontura ou treino encurtado, comer antes resolve um problema real."}, {"question": "O que comer antes do treino para ganhar massa muscular?", "answer": "Uma combinação de carboidrato para energia e proteína para o aporte do dia. Exemplos: pão com ovo, iogurte com fruta e aveia, tapioca com frango. Mas o fator que mais importa para hipertrofia é o total de proteína e calorias no dia inteiro, não a refeição específica antes do treino."}, {"question": "Preciso tomar pré-treino ou suplemento antes de treinar?", "answer": "Não. Suplemento pré-treino não é necessário e não substitui comida. O ingrediente com evidência mais consistente nesses produtos é a cafeína — que você também encontra num café. Comida de verdade resolve a maior parte dos casos."}, {"question": "O que fazer se não deu tempo de comer antes do treino?", "answer": "Treine assim mesmo, com expectativa ajustada, e coma algo leve e rápido se tiver 20 ou 30 minutos: uma fruta, um punhado de tâmaras, um copo de suco. Perder o treino porque não deu tempo de comer é trocar um problema pequeno por um grande — a consistência vale mais que a refeição perfeita."}],
+    faq: [{"question": "O que devo comer 30 minutos antes do treino?", "answer": "Algo leve e de digestão rápida: uma banana, uma fruta com um pouco de mel, um copo de suco ou um iogurte pequeno. Evite fritura, muita fibra e pratos grandes tão perto do treino."}, {"question": "O que dá mais energia para treinar?", "answer": "Carboidrato no tempo certo (refeição completa 2 a 3 horas antes, lanche 1 a 2 horas antes, fruta 30 a 60 minutos antes) e uma noite de sono razoável. Um café pode dar um empurrão a mais."}, {"question": "O que não devo comer antes de treinar?", "answer": "Frituras, refeições muito gordurosas, grandes porções de fibra e pratos grandes a menos de uma hora do treino. Também evite testar alimento novo em dia de treino importante ou prova."}, {"question": "Qual é o melhor pré-treino natural?", "answer": "Uma fruta ou um pão cerca de uma hora antes, e um café se você tolera bem cafeína. O suplemento pré-treino não é necessário; o ingrediente com evidência mais consistente nele é a própria cafeína."}, {"question": "Quanto tempo antes do treino devo comer?", "answer": "Depende do tamanho da refeição. Refeição completa: 2 a 3 horas antes. Lanche médio: 1 a 2 horas. Algo leve e de digestão rápida, como uma fruta: 30 a 60 minutos. A regra prática é que quanto mais perto do treino, menor e mais simples a refeição — porque comida no estômago compete com o treino."}, {"question": "Posso treinar em jejum?", "answer": "Pode, e para treinos curtos e moderados a diferença costuma ser pequena. O que pesa é o total de calorias e proteína do dia, não o horário exato. Mas para treino pesado de força, muita gente rende menos em jejum — e se você percebe queda de desempenho, tontura ou treino encurtado, comer antes resolve um problema real."}, {"question": "O que comer antes do treino para ganhar massa muscular?", "answer": "Uma combinação de carboidrato para energia e proteína para o aporte do dia. Exemplos: pão com ovo, iogurte com fruta e aveia, tapioca com frango. Mas o fator que mais importa para hipertrofia é o total de proteína e calorias no dia inteiro, não a refeição específica antes do treino."}, {"question": "Preciso tomar pré-treino ou suplemento antes de treinar?", "answer": "Não. Suplemento pré-treino não é necessário e não substitui comida. O ingrediente com evidência mais consistente nesses produtos é a cafeína — que você também encontra num café. Comida de verdade resolve a maior parte dos casos."}, {"question": "O que fazer se não deu tempo de comer antes do treino?", "answer": "Treine assim mesmo, com expectativa ajustada, e coma algo leve e rápido se tiver 20 ou 30 minutos: uma fruta, um punhado de tâmaras, um copo de suco. Perder o treino porque não deu tempo de comer é trocar um problema pequeno por um grande — a consistência vale mais que a refeição perfeita."}],
     content: `
 <p>Poucas perguntas geram tanta ansiedade desnecessária quanto essa. A pessoa lê que precisa comer duas horas antes, que precisa de carboidrato de alto índice glicêmico, que a janela anabólica fecha, que sem pré-treino não rende — e o resultado prático de tanta informação é alguém que perde o treino porque "não deu tempo de comer direito".</p>
 
@@ -115145,6 +115335,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>É isso. Se você seguir só essa tabela, já está fazendo melhor que a maioria.</p>
 
+<h3>O que comer 30 minutos antes do treino</h3>
+<p>Algo líquido, pastoso ou de digestão muito rápida: uma banana (com um fio de mel, se quiser), uma fruta, um copo de suco ou um iogurte pequeno. Fica de fora o que pesa: fritura, muita fibra, prato cheio.</p>
+
 <h2>O que a refeição deve ter</h2>
 
 <p><strong>Carboidrato é o protagonista.</strong> É a fonte que o corpo usa com mais facilidade no esforço intenso, e é o que faz diferença perceptível na energia do treino. Arroz, pão, batata, tapioca, aveia, fruta — qualquer um serve.</p>
@@ -115152,6 +115345,16 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p><strong>Proteína é bem-vinda, mas não urgente.</strong> Ela ajuda a compor o total do dia, que é o que realmente importa para quem quer construir músculo. Não existe uma janela mágica em torno do treino — o assunto está detalhado em <a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">quanta proteína por dia</a>.</p>
 
 <p><strong>Gordura e fibra em excesso atrapalham perto do treino.</strong> Não porque façam mal, mas porque atrasam o esvaziamento do estômago. Aquela refeição pesada com muita gordura uma hora antes de agachar é a receita do desconforto.</p>
+
+<h3>O que dá mais energia para treinar?</h3>
+<p>Carboidrato, comido no tempo certo pela tabela acima, e uma noite de sono razoável. Nenhum alimento isolado faz milagre. O "melhor pré-treino natural" é simplesmente uma fruta ou um pão uma hora antes; se quiser um empurrão a mais, um café.</p>
+<h3>O que não devo comer antes de treinar?</h3>
+<ul>
+  <li><strong>Frituras e refeições gordurosas</strong> perto do treino: digestão lenta e desconforto.</li>
+  <li><strong>Muita fibra de uma vez</strong> (grande porção de feijão, verduras cruas, farelos): gases e estufamento.</li>
+  <li><strong>Algo que você nunca comeu antes de treinar</strong>, principalmente em dia de prova.</li>
+  <li><strong>Pratos grandes a menos de 1 hora</strong> do treino.</li>
+</ul>
 
 <h2>Por horário de treino</h2>
 
@@ -115175,6 +115378,14 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>O cenário mais confortável: você provavelmente almoçou e pode fazer um lanche entre uma e duas horas antes. É onde a tabela funciona sem esforço.</p>
 
 <p>O cuidado aqui é outro: quem sai do trabalho direto para a academia costuma chegar com muitas horas sem comer. Nesse caso o lanche não é otimização — é o que impede o treino de ser ruim.</p>
+
+<h2>Por tipo de treino</h2>
+<ul>
+  <li><strong>Musculação:</strong> a tabela acima vale como está. Para quem quer ganhar massa, o que pesa é bater calorias e proteína no dia; um lanche com carboidrato e alguma proteína (pão com ovo, iogurte com aveia) cumpre bem.</li>
+  <li><strong>Corrida:</strong> o estômago chacoalha mais, então a margem de tempo precisa ser maior e a refeição mais leve. Corrida curta de manhã cedo costuma ir bem com uma banana ou até em jejum; treino longo pede carboidrato antes.</li>
+  <li><strong>Jiu-jitsu, funcional e natação:</strong> muita compressão do abdômen ou posição deitada. Coma mais cedo (1h30 a 2h) e mais leve.</li>
+  <li><strong>Para emagrecer:</strong> o pré-treino não precisa ser "especial". Ele entra na conta de calorias do dia como qualquer refeição. Se o treino rende melhor comendo algo, coma.</li>
+</ul>
 
 <h2>E o suplemento pré-treino?</h2>
 
@@ -115220,6 +115431,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   <li><a href="/blog/o-que-comer-no-cafe-da-manha-para-treinar">O Que Comer no Café da Manhã Antes de Treinar: Guia Completo</a></li>
   <li><a href="/blog/quantas-refeicoes-por-dia">Quantas Refeições Por Dia? 3, 5 ou 6</a></li>
   <li><a href="/blog/pre-treino-vale-a-pena">Pré-Treino: Vale a Pena Tomar? O Que a Ciência Diz</a></li>
+  <li><a href="/blog/nutrient-timing-pos-treino-2025">O que comer depois do treino: o que importa no pós-treino</a></li>
 </ul>
 `,
   },
