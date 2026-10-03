@@ -4,6 +4,154 @@ import type { BlogPost } from "./blog";
  *  ofertas mudam de hora em hora; o artigo ensina a conta, não a vitrine. */
 export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
   {
+    slug: "pasta-de-amendoim-como-escolher",
+    title: "Pasta de amendoim: como escolher, calorias e qual vale a pena",
+    metaTitle: "Pasta de Amendoim: Como Escolher, Calorias e Qual Vale a Pena",
+    metaDescription:
+      "Como escolher pasta de amendoim: integral ou com açúcar, quantas calorias tem uma colher, como ler o rótulo e o que olhar na promoção da Mega Oferta Prime e da Black Friday.",
+    excerpt:
+      "A diferença entre pasta integral e adoçada, as calorias de uma colher e como ler o rótulo antes de comprar.",
+    category: "Nutrição",
+    date: "2026-10-03",
+    readTime: "4 min",
+    author: "Montinho Personal Trainer",
+    tags: ["pasta de amendoim", "calorias", "rótulo", "promoção"],
+    content: `<p>Pasta de amendoim é uma das buscas mais comuns de quem treina nas promoções da <a href="/blog/mega-oferta-prime-2026">Mega Oferta Prime</a> e da Black Friday. É um alimento bom e prático, desde que você saiba o que está comprando e quanto está comendo.</p>
+
+<h2>Integral ou com açúcar: como ler o rótulo</h2>
+<p>A pasta <strong>integral</strong> tem um ingrediente só: amendoim (às vezes com sal). Se a lista tem açúcar, xarope, óleo vegetal, gordura ou "creme", a pasta é adoçada ou misturada. Lembre: a lista de ingredientes vem em ordem do que tem mais para o que tem menos.</p>
+
+<h2>Quantas calorias tem pasta de amendoim?</h2>
+<p>A pasta integral tem cerca de <strong>588 kcal a cada 100 g</strong>, com 25 g de proteína e 50 g de gordura (USDA). Na prática:</p>
+<ul>
+<li><strong>1 colher de chá (5 g):</strong> cerca de 29 kcal</li>
+<li><strong>1 colher de sopa (15 g):</strong> cerca de 88 kcal</li>
+<li><strong>2 colheres de sopa (30 g):</strong> cerca de 176 kcal</li>
+</ul>
+<p>O problema raramente é a pasta: é a colher "cheia" que vira três. Pesar algumas vezes ajuda a calibrar o olho.</p>
+
+<h2>Pasta de amendoim é boa fonte de proteína?</h2>
+<p>É mais fonte de gordura boa do que de proteína: para ter 25 g de proteína você come quase 600 kcal. Funciona bem para completar o dia e para quem precisa de calorias, como na <a href="/blog/dieta-hipercalorica-ganho-massa">dieta hipercalórica</a>. Para proteína com poucas calorias, outras fontes rendem mais.</p>
+
+<h2>Pasta de amendoim "com whey" vale a pena?</h2>
+<p>Confira no rótulo quanto de proteína a mais ela tem por porção e compare o preço por grama de proteína com o de um whey. Muitas vezes sai mais barato comer a pasta integral e tomar o whey separado.</p>
+
+<h2>Na promoção: o que olhar</h2>
+<ul>
+<li>Lista de ingredientes curta (amendoim, no máximo sal).</li>
+<li>Preço por quilo, não por pote.</li>
+<li>Validade: pote grande só vale se você termina antes.</li>
+</ul>
+<p>Receitas com pasta de amendoim para matar a vontade de doce: <a href="/ferramentas/mata-a-vontade">Mata a Vontade</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada um tem a própria genética, rotina e história. O que funciona é um jeito de comer e treinar que você consiga seguir pelo resto da vida. Se quiser ajuda para montar o seu, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+`,
+    faq: [
+      { question: "Quantas calorias tem uma colher de pasta de amendoim?", answer: "Uma colher de sopa (15 g) de pasta integral tem cerca de 88 kcal; uma colher de chá (5 g), cerca de 29 kcal (USDA)." },
+      { question: "Qual a melhor pasta de amendoim?", answer: "A integral, com um ingrediente só: amendoim (às vezes com sal). Açúcar, xarope e óleo na lista indicam pasta adoçada ou misturada." },
+      { question: "Pasta de amendoim engorda?", answer: "Ela é calórica: cerca de 588 kcal a cada 100 g. Engorda se o total do dia passar do gasto. Pesar a porção ajuda a controlar." },
+      { question: "Pasta de amendoim tem muita proteína?", answer: "Tem cerca de 25 g a cada 100 g, mas junto com 50 g de gordura. É mais fonte de gordura boa e calorias do que de proteína." },
+    ],
+  },
+  {
+    slug: "multivitaminico-vale-a-pena",
+    title: "Multivitamínico vale a pena? Quem precisa e o que diz a evidência",
+    metaTitle: "Multivitamínico Vale a Pena? Quem Precisa e Quando Evitar",
+    metaDescription:
+      "Multivitamínico vale a pena para quem treina? O que dizem as recomendações oficiais, quem pode precisar, os riscos do excesso e o que olhar antes de comprar na promoção.",
+    excerpt:
+      "O que a evidência diz sobre multivitamínico, quem pode precisar de suplementação e por que o exame vem antes da compra.",
+    category: "Suplementação",
+    date: "2026-10-03",
+    readTime: "4 min",
+    author: "Montinho Personal Trainer",
+    tags: ["multivitamínico", "vitaminas", "suplementos", "promoção"],
+    content: `<p>Multivitamínico aparece em quase toda lista de promoção de suplementos, como na <a href="/blog/mega-oferta-prime-2026">Mega Oferta Prime</a> e na Black Friday. Antes de comprar, vale saber o que ele faz e o que não faz.</p>
+
+<h2>O que diz a evidência</h2>
+<p>A força-tarefa de prevenção dos Estados Unidos (USPSTF) revisou os estudos em 2022 e concluiu que <strong>não há evidência suficiente</strong> de que multivitamínicos previnam doença cardiovascular ou câncer em adultos saudáveis. O Instituto Nacional de Saúde americano (NIH) também aponta que, para a maioria das pessoas que já come de forma variada, o multivitamínico acrescenta pouco.</p>
+
+<h2>Quem pode precisar</h2>
+<p>Há situações em que suplementar faz sentido, sempre com orientação: gestantes e quem planeja engravidar (ácido fólico), idosos, quem segue dieta vegana (vitamina B12), quem tem deficiência confirmada em exame e quem passou por cirurgia bariátrica ou usa remédios que reduzem o apetite. Nesses casos, o mais comum é suplementar o nutriente que falta, não um multi genérico.</p>
+
+<h2>Excesso também faz mal</h2>
+<p>Vitaminas como A, D, E e K se acumulam no corpo, e somar multivitamínico com outros suplementos pode passar do limite seguro. Por isso a ordem certa é: <strong>exame e conversa com o médico primeiro</strong>, compra depois.</p>
+
+<h2>Multivitamínico melhora o treino?</h2>
+<p>Para quem não tem deficiência, não há boa evidência de que melhore força, hipertrofia ou energia no treino. O que move o resultado é treino, proteína suficiente, calorias certas e sono. Veja <a href="/blog/suplementacao-basica-para-iniciantes">suplementação básica para iniciantes</a>.</p>
+
+<h2>Se for comprar na promoção</h2>
+<ul>
+<li>Confira as quantidades no rótulo e evite doses muito acima de 100% da recomendação diária.</li>
+<li>Prefira vendedor oficial e produto com registro ou notificação na Anvisa.</li>
+<li>Compre só depois de saber, por exame, que faz sentido para você.</li>
+</ul>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/vitamin-supplementation-to-prevent-cvd-and-cancer-preventive-medication" target="_blank" rel="noopener noreferrer">USPSTF — Vitamin, Mineral, and Multivitamin Supplementation to Prevent Cardiovascular Disease and Cancer (2022)</a></li>
+<li><a href="https://ods.od.nih.gov/factsheets/MVMS-Consumer/" target="_blank" rel="noopener noreferrer">NIH Office of Dietary Supplements — Multivitamin/mineral Supplements</a></li>
+</ul>
+
+<h2>Não se compare</h2>
+<p>Cada um tem a própria genética, rotina e história. O que funciona é um jeito de comer e treinar que você consiga seguir pelo resto da vida. Se quiser ajuda para montar o seu, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+`,
+    faq: [
+      { question: "Multivitamínico vale a pena?", answer: "Para adultos saudáveis que comem de forma variada, a evidência mostra pouco benefício. Pode fazer sentido em casos específicos, como deficiência confirmada, gestação ou dieta vegana, sempre com orientação médica." },
+      { question: "Multivitamínico ajuda no treino?", answer: "Para quem não tem deficiência, não há boa evidência de que melhore força, hipertrofia ou energia. Treino, proteína, calorias e sono pesam muito mais." },
+      { question: "Multivitamínico faz mal?", answer: "Em excesso, sim: vitaminas A, D, E e K se acumulam no corpo. Somar vários suplementos pode passar do limite seguro." },
+      { question: "Preciso de exame para tomar vitamina?", answer: "É o caminho certo: o exame mostra o que falta, e o médico indica o quê e quanto suplementar." },
+    ],
+  },
+  {
+    slug: "garrafa-para-treinar-como-escolher",
+    title: "Garrafa para treinar: squeeze, térmica ou coqueteleira, qual escolher",
+    metaTitle: "Garrafa para Academia: Squeeze, Térmica ou Coqueteleira?",
+    metaDescription:
+      "Qual garrafa usar para treinar: squeeze, garrafa térmica, copo térmico ou coqueteleira. Tamanho, material, o que olhar e quanto beber no treino.",
+    excerpt:
+      "Como escolher a garrafa certa para academia e corrida, o tamanho ideal e o que olhar antes de comprar na promoção.",
+    category: "Treinamento",
+    date: "2026-10-03",
+    readTime: "4 min",
+    author: "Montinho Personal Trainer",
+    tags: ["garrafa academia", "squeeze", "garrafa térmica", "coqueteleira", "hidratação"],
+    content: `<p>Garrafa térmica, squeeze e coqueteleira estão sempre entre as buscas da <a href="/blog/mega-oferta-prime-2026">Mega Oferta Prime</a> e da Black Friday. Cada uma resolve uma coisa diferente.</p>
+
+<h2>Squeeze</h2>
+<p>Leve, abre com uma mão e é fácil de beber entre as séries. Bom para academia e corrida curta. Olhe se o bico tem tampa (higiene) e se dá para lavar por dentro.</p>
+
+<h2>Garrafa térmica ou copo térmico</h2>
+<p>Mantém a água gelada por horas, o que ajuda quem treina no calor ou passa o dia fora. É mais pesada. Olhe tampa que não vaza, se cabe no porta-copo do carro e da mochila e se a boca é larga para pôr gelo e lavar.</p>
+
+<h2>Coqueteleira</h2>
+<p>É para misturar whey ou outro pó. Tampa com rosca e trava evita vazamento na mochila; a bolinha ou a grade de mistura desfaz os grumos. Lave logo depois de usar para não ficar com cheiro.</p>
+
+<h2>Qual tamanho?</h2>
+<p>Para a academia, uma garrafa de 500 ml a 1 litro costuma bastar, com reabastecimento no bebedouro. Para passar o dia fora, uma maior evita ficar sem água.</p>
+
+<h2>Quanto beber no treino?</h2>
+<p>Depende do suor, do calor e da duração. Beber ao longo do treino, sem esperar muita sede, resolve para a maioria. A explicação completa está em <a href="/blog/hidratacao-para-performance">hidratação para performance</a>.</p>
+
+<h2>Na promoção: o que olhar</h2>
+<ul>
+<li>Material livre de BPA, informado no produto.</li>
+<li>Tampa que não vaza e peças que dá para lavar.</li>
+<li>Vendedor oficial.</li>
+</ul>
+
+<h2>Não se compare</h2>
+<p>Cada um tem a própria genética, rotina e história. O que funciona é um jeito de comer e treinar que você consiga seguir pelo resto da vida. Se quiser ajuda para montar o seu, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+`,
+    faq: [
+      { question: "Qual a melhor garrafa para academia?", answer: "Um squeeze de 500 ml a 1 litro, leve e fácil de abrir com uma mão. Se você treina no calor ou passa o dia fora, a térmica mantém a água gelada por horas." },
+      { question: "Garrafa térmica vale a pena para treinar?", answer: "Vale para quem treina no calor ou fica muitas horas fora. É mais pesada que o squeeze." },
+      { question: "Qual o tamanho ideal da garrafa para academia?", answer: "De 500 ml a 1 litro costuma bastar, reabastecendo no bebedouro." },
+      { question: "Como escolher coqueteleira?", answer: "Com tampa de rosca e trava, para não vazar, e com bolinha ou grade para desfazer os grumos." },
+    ],
+  },
+  {
     slug: "fone-para-treinar",
     title: "Fone para treinar: bluetooth, open ear ou condução óssea?",
     metaTitle: "Fone para Treinar: Bluetooth, Open Ear ou Condução Óssea?",
@@ -333,9 +481,9 @@ export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
 <ul>
 <li><strong>Pré-treino:</strong> o ingrediente com melhor evidência é a cafeína, que um café já entrega. Se for comprar, compare a cafeína por dose. Veja <a href="/blog/pre-treino-vale-a-pena">pré-treino vale a pena?</a></li>
 <li><strong>Barra de proteína:</strong> compare proteína por barra e preço por grama de proteína; muitas têm mais açúcar e gordura que proteína. Veja <a href="/blog/barrinha-de-proteina-vale-a-pena">barrinha de proteína vale a pena?</a></li>
-<li><strong>Pasta de amendoim:</strong> a integral tem um ingrediente só, amendoim. Açúcar e óleo adicionados aparecem na lista de ingredientes.</li>
-<li><strong>Multivitamínico:</strong> não substitui comida variada. Quem suspeita de deficiência deve fazer exame e conversar com o médico antes.</li>
-<li><strong>Coqueteleira:</strong> tampa com rosca e trava evita vazamento na mochila; é o que vale olhar.</li>
+<li><strong>Pasta de amendoim:</strong> a integral tem um ingrediente só, amendoim. Veja <a href="/blog/pasta-de-amendoim-como-escolher">como escolher pasta de amendoim</a>.</li>
+<li><strong>Multivitamínico:</strong> não substitui comida variada; exame e médico vêm antes. Veja <a href="/blog/multivitaminico-vale-a-pena">multivitamínico vale a pena?</a></li>
+<li><strong>Coqueteleira e garrafa:</strong> tampa com rosca e trava evita vazamento. Veja <a href="/blog/garrafa-para-treinar-como-escolher">garrafa para treinar: qual escolher</a>.</li>
 </ul>
 
 <h2>Equipamento para treinar em casa</h2>

@@ -121,6 +121,12 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
     "Guia de compra de utensílios: a decisão é o que comprar primeiro. O Monte seu Cardápio entra como link para quem quer planejar a semana.",
   "acessorios-de-academia-strap-cinturao-luva":
     "Guia de uso de acessórios: a decisão é quando usar cada um, observação de treino, não cálculo.",
+  "pasta-de-amendoim-como-escolher":
+    "Guia de compra e de rótulo: as calorias por colher já vêm calculadas no texto; o Mata a Vontade entra como link.",
+  "multivitaminico-vale-a-pena":
+    "Decisão de saúde, não de conta: o caminho é exame e médico. Nenhuma ferramenta do site responde se a pessoa tem deficiência.",
+  "garrafa-para-treinar-como-escolher":
+    "Guia de compra de acessório: a decisão é o tipo e o tamanho da garrafa, sem número a calcular.",
 };
 
 export const SLUGS_SEM_FERRAMENTA = Object.keys(ARTIGOS_SEM_FERRAMENTA);
