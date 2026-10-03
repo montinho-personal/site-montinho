@@ -297,4 +297,5 @@ export const ARTIGOS_COM_CALCULADORA_COMPOSICAO: string[] = [
   "percentual-de-gordura-ideal",
   "como-saber-se-estou-perdendo-gordura-ou-musculo",
   "imc-limitacoes-e-composicao-corporal",
+  "balanca-de-bioimpedancia-vale-a-pena",
 ];
