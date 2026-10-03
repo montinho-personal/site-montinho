@@ -4,6 +4,66 @@ import type { BlogPost } from "./blog";
  *  ofertas mudam de hora em hora; o artigo ensina a conta, não a vitrine. */
 export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
   {
+    slug: "mega-oferta-prime-2026",
+    title: "Mega Oferta Prime 2026: data, até quando vai e o que vale comprar para treinar",
+    metaTitle: "Mega Oferta Prime 2026: Data, Até Quando Vai e o Que Comprar",
+    metaDescription:
+      "Mega Oferta Amazon Prime 2026 vai de 5 a 11 de outubro. O que é, quem pode comprar, até quando vai, a próxima promoção e como saber se whey e creatina estão baratos.",
+    excerpt:
+      "Datas da Mega Oferta Prime 2026, como funciona, a próxima promoção da Amazon e a conta para saber se o suplemento está barato de verdade.",
+    category: "Suplementação",
+    date: "2026-10-03",
+    readTime: "5 min",
+    author: "Montinho Personal Trainer",
+    tags: ["mega oferta prime", "amazon prime", "promoção", "whey protein", "creatina"],
+    content: `<blockquote><p>Informações verificadas em 3 de outubro de 2026 na Amazon e na imprensa. Este guia não lista ofertas, que mudam de hora em hora: ensina a conferir se o preço é bom.</p></blockquote>
+
+<h2>Mega Oferta Prime 2026: qual a data?</h2>
+<p>A <strong>Mega Oferta Amazon Prime 2026</strong> vai de <strong>segunda, 5 de outubro, a domingo, 11 de outubro</strong>. São sete dias seguidos, e esta é a quarta edição no Brasil. O período inclui o 10.10 (sábado, 10/10) e termina na véspera do Dia das Crianças.</p>
+
+<h2>O que é a Mega Oferta Amazon Prime?</h2>
+<p>É o evento de descontos da Amazon <strong>exclusivo para assinantes Prime</strong>, com descontos anunciados de até 80% e cupons exclusivos em milhares de produtos. Quem não assina não acessa as ofertas do evento; a Amazon costuma oferecer período de teste do Prime para novos assinantes, então confira na sua conta antes.</p>
+
+<h2>Mega Oferta Prime vai até quando?</h2>
+<p>Até <strong>domingo, 11 de outubro de 2026</strong>. Algumas ofertas são relâmpago e acabam antes, quando o estoque esgota.</p>
+
+<h2>É o mesmo que o Prime Day?</h2>
+<p>É o equivalente brasileiro: um evento de ofertas só para assinantes Prime. O nome no Brasil é Mega Oferta Amazon Prime.</p>
+
+<h2>Quando vai ter a próxima promoção na Amazon em 2026?</h2>
+<p>A próxima grande data é a <strong>Black Friday, sexta-feira, 27 de novembro</strong>, seguida da Cyber Monday, em 30 de novembro. Se você não precisa do produto agora, anote o preço desta semana para comparar em novembro. Veja o guia de <a href="/blog/black-friday-suplementos">Black Friday de suplementos</a>.</p>
+
+<h2>Suplementos na Mega Oferta Prime: como saber se está barato</h2>
+<ul>
+<li><strong>Whey:</strong> divida o preço pelo total de gramas de proteína do pote, não pelo peso do pote. A <a href="/ferramentas/calculadora-whey">calculadora de whey</a> mostra quanto você precisa por dia, quanto o pote dura e o custo de cada 25 g de proteína.</li>
+<li><strong>Creatina:</strong> com 3 a 5 g por dia, 300 g duram de 60 a 100 dias e 1 kg, de 200 a 333 dias. Divida o preço pelos dias. Pura é a que tem um único ingrediente: creatina monoidratada. Sua dose está na <a href="/ferramentas/calculadora-creatina">calculadora de creatina</a>.</li>
+<li><strong>Quem vende:</strong> na Amazon, o mesmo produto aparece por vários vendedores. Prefira a própria Amazon ou a loja oficial da marca.</li>
+</ul>
+
+<h2>Equipamento para treinar em casa</h2>
+<p>Elástico, halteres, tornozeleira, tapete e corda são as compras que mais rendem para quem treina em casa. Antes de comprar, pense no treino que você vai fazer com eles: halter que fica parado no canto não vale nem com 80% de desconto. Ideias de treino em <a href="/blog/treino-para-quem-odeia-academia">treino para quem odeia academia</a>.</p>
+
+<h2>Cupom Amazon: como funciona</h2>
+<p>Durante o evento, alguns produtos têm cupom para ativar na própria página do produto, antes de colocar no carrinho. O desconto aparece no fechamento do pedido. Confira o valor final com o frete antes de pagar.</p>
+
+<h2>Promoção não faz o treino por você</h2>
+<p>O melhor suplemento é o que cabe no seu plano e no seu bolso. Nenhum substitui treino, comida e sono, e o resultado de quem aparece nos anúncios não é régua para o seu. Se quiser montar um plano que dá para seguir o ano todo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.aboutamazon.com.br/" target="_blank" rel="noopener noreferrer">About Amazon Brasil — Mega Oferta Amazon Prime chega à 4ª edição</a></li>
+<li><a href="https://www.amazon.com.br/megaofertaprime/" target="_blank" rel="noopener noreferrer">Amazon — Mega Oferta Prime 2026</a></li>
+<li><a href="https://www.ecommercebrasil.com.br/noticias/mega-oferta-amazon-prime-outubro-2026" target="_blank" rel="noopener noreferrer">E-Commerce Brasil — Mega Oferta Prime outubro 2026</a></li>
+</ul>`,
+    faq: [
+      { question: "Quando é a Mega Oferta Prime 2026?", answer: "De segunda, 5 de outubro, a domingo, 11 de outubro de 2026." },
+      { question: "Mega Oferta Prime vai até quando?", answer: "Até domingo, 11 de outubro de 2026. Ofertas relâmpago podem acabar antes, quando o estoque esgota." },
+      { question: "O que é a Mega Oferta Amazon Prime?", answer: "Evento de descontos da Amazon exclusivo para assinantes Prime, com descontos anunciados de até 80% e cupons exclusivos. Esta é a quarta edição no Brasil." },
+      { question: "Quando será a próxima promoção da Amazon em 2026?", answer: "A próxima grande data é a Black Friday, em 27 de novembro de 2026, seguida da Cyber Monday, em 30 de novembro." },
+      { question: "Vale a pena comprar whey e creatina na Mega Oferta Prime?", answer: "Vale se o preço por dose ficar abaixo do que você paga normalmente. No whey, divida o preço pelo total de proteína do pote; na creatina, pelos dias que o pote dura." },
+    ],
+  },
+  {
     slug: "black-friday-suplementos",
     title: "Black Friday de suplementos: como saber se a promoção vale a pena",
     metaTitle: "Black Friday Suplementos 2026: Como Achar Promoção de Verdade",
