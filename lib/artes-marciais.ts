@@ -194,4 +194,6 @@ export const ARTIGOS_COM_CALCULADORA_ARTES_MARCIAIS: string[] = [
   "corte-de-peso-ufc",
   "pesagem-ufc-332",
   "resultado-ufc-332",
+  "ufc-vegas-124-gabriel-bonfim-sean-brady",
+  "resultado-ufc-vegas-124-bonfim-brady",
 ];
