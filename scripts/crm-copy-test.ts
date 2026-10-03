@@ -78,7 +78,7 @@ for (const s of SITUACOES) {
     ok(`${s} (${rot}): nenhuma quebra solta (sempre linha em branco)`, !/[^\n]\n[^\n]/.test(t), JSON.stringify(t));
     ok(`${s} (${rot}): nenhum parágrafo com mais de 220 chars`, t.split("\n\n").every((p) => p.length <= 220), t.split("\n\n").map((p) => p.length).join("/"));
     ok(`${s} (${rot}): nenhum parágrafo vazio`, t.split("\n\n").every((p) => p.trim().length > 0), JSON.stringify(t));
-    ok(`${s} (${rot}): começa com o nome`, /^(Oi, )?Ana/.test(t) || /^Ana/.test(t) || t.includes("Ana"), t);
+    ok(`${s} (${rot}): não usa o nome da pessoa`, !t.includes("Ana"), t);
   }
   ok(`${s}: vazia não termina frase com preposição`, !/\b(pela|pelo|sobre|no|na|de|do|da|em|para)\s*[.?!]/i.test(preencher(modelo, vazias)), preencher(modelo, vazias));
 }
@@ -116,7 +116,8 @@ ok("00h30 é bom dia", emBrasilia("2026-09-15T00:30:00-03:00") === "Bom dia");
 // A prova de que o fuso é lido: 23h UTC é 20h em Brasília.
 ok("23h UTC = 20h aqui = boa noite", saudacaoDe(new Date("2026-09-15T23:00:00Z")) === "Boa noite");
 ok("11h UTC = 8h aqui = bom dia", saudacaoDe(new Date("2026-09-15T11:00:00Z")) === "Bom dia");
-ok("toda mensagem começa com a saudação", Object.entries(TEXTOS).filter(([k]) => !TEXTO_DO_MONTINHO.has(k)).every(([, t]) => t.startsWith("[[{saudacao}, ]]{nome}!")), Object.entries(TEXTOS).filter(([k]) => !TEXTO_DO_MONTINHO.has(k)).filter(([, t]) => !t.startsWith("[[{saudacao}, ]]{nome}!")).map(([k]) => k).join(", "));
+ok("toda mensagem começa com a saudação, sem nome", Object.entries(TEXTOS).filter(([k]) => !TEXTO_DO_MONTINHO.has(k)).every(([, t]) => t.startsWith("[[{saudacao}! ]]")), Object.entries(TEXTOS).filter(([k]) => !TEXTO_DO_MONTINHO.has(k)).filter(([, t]) => !t.startsWith("[[{saudacao}! ]]")).map(([k]) => k).join(", "));
+ok("nenhum texto usa {nome}: muito contato vem salvo com nome de empresa ou apelido", Object.values(TEXTOS).every((t) => !t.includes("{nome}")), Object.entries(TEXTOS).filter(([, t]) => t.includes("{nome}")).map(([k]) => k).join(", "));
 
 bloco("3. GRUPO → SITUAÇÃO");
 const base: Sinais = {
