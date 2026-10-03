@@ -89,6 +89,9 @@ const faq: ItemFAQ[] = [
   { question: "50 g de whey têm quanta proteína?", answer: `Com ${ROTULO_TXT}, 50 g têm ${g(proteinaEm(50, P, Q))} g de proteína. A conta é: gramas de pó × proteína da porção ÷ porção.` },
   { question: "Quantos scoops para 30 g de proteína?", answer: `Com ${ROTULO_TXT}, são ${PARA30.produtoG} g de pó, ou ${g2(PARA30.porcoes)} porções do rótulo. Quantas medidas isso dá depende da gramatura do seu dosador.` },
   { question: "Quanto tempo dura um whey de 900 g?", answer: `Com 30 g por dia, ${dur(900, 30)} dias; com 40 g, ${dur(900, 40)} dias. Tomando só nos dias de treino, dura mais em dias corridos — a calculadora faz essa conta.` },
+  { question: "450 gramas de whey dura quanto tempo?", answer: `Com 30 g por dia, ${dur(450, 30)} dias; com 40 g, ${dur(450, 40)} dias. Tomando 30 g só nos 5 dias de treino da semana, ${duracao(450, 30, 5).diasCorridos} dias corridos.` },
+  { question: "40 gramas de whey tem quantas calorias?", answer: "Depende do produto: a conta é calorias da porção do rótulo × 40 ÷ gramas da porção. Num whey concentrado com cerca de 410 kcal por 100 g, 40 g dão por volta de 164 kcal. Isolados e blends têm valores diferentes, e misturar com leite em vez de água soma as calorias do leite." },
+  { question: "1 scoop de whey para quantos ml de água?", answer: "Não existe medida única: o modo de preparo vem no rótulo de cada produto e muda conforme a gramatura do scoop. Na prática, menos água deixa o shake mais grosso e mais doce; mais água, mais ralo. A quantidade de líquido não muda a proteína nem, se for água, as calorias." },
   { question: "Quanto tempo dura 1 kg de whey?", answer: `Com 30 g por dia, ${dur(1000, 30)} dias; com 40 g, ${dur(1000, 40)} dias; com 50 g, ${dur(1000, 50)} dias.` },
   { question: "Quantas gramas de whey para 70 kg?", answer: `Depende do que você já come. Para 70 kg, treinando para ganhar massa, a meta estimada de proteína fica entre ${M70.minG} e ${M70.maxG} g por dia (referência ${M70.refG} g). O whey entra só na diferença entre essa meta e a comida; se a alimentação já chega lá, ele é dispensável.` },
   { question: "Pode tomar mais de 30 g de whey por dia?", answer: "Pode, em adultos saudáveis, desde que a proteína total do dia continue dentro da meta. Não há um teto de whey em gramas: o limite prático é que ele não substitua comida e que as calorias caibam no dia." },
@@ -282,9 +285,10 @@ export default function CalculadoraWheyPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto tempo dura um whey de 900 g?</h2>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto tempo dura um whey de 450 g e de 900 g?</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              <strong className="text-white">{dur(900, 30)} dias com 30 g por dia, {dur(900, 40)} dias com 40 g.</strong> Calcule com o seu consumo na
+              <strong className="text-white">O pote de 450 g dura {dur(450, 30)} dias com 30 g por dia</strong> ({duracao(450, 30, 5).diasCorridos} dias
+              corridos se você toma só nos 5 dias de treino). <strong className="text-white">O de 900 g, {dur(900, 30)} dias com 30 g por dia, {dur(900, 40)} dias com 40 g.</strong> Calcule com o seu consumo na
               calculadora acima — ela também conta os dias em que você não usa.
             </p>
             <div className="overflow-x-auto">
