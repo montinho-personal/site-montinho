@@ -4,6 +4,54 @@ import type { BlogPost } from "./blog";
  *  fonte oficial (ufc.com.br) ou de dois veículos independentes. */
 export const UFC_2026_POSTS: BlogPost[] = [
   {
+    slug: "resultado-ufc-332",
+    title: "Resultado do UFC 332: quem ganhou Natália Silva x Wang Cong",
+    metaTitle: "Resultado UFC 332: Quem Ganhou Natália Silva x Wang Cong",
+    metaDescription:
+      "Resultado do UFC 332 (3/10): quem ganhou Natália Silva x Wang Cong pelo cinturão do peso-mosca e o resultado de Deiveson Figueiredo, Johnny Walker e Rafael dos Anjos. Atualizado ao vivo.",
+    excerpt:
+      "Quem ganhou o UFC 332: resultado da luta de Natália Silva pelo cinturão e dos brasileiros do card, atualizado ao fim de cada luta.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-10-03",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC 332", "resultado UFC", "Natália Silva", "Deiveson Figueiredo", "Johnny Walker"],
+    content: `<img src="/blog-images/ufc-332-natalia-silva-capa.webp" alt="Resultado do UFC 332 — Natália Silva x Wang Cong" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p><strong>As lutas ainda não aconteceram.</strong> O UFC 332 é hoje, sábado, 3 de outubro: card preliminar às 17h e principal às 21h (Brasília). Esta página é atualizada com o resultado de cada luta assim que ele for confirmado.</p></blockquote>
+
+<h2>Quem ganhou Natália Silva x Wang Cong?</h2>
+<p><strong>Resultado: aguardando a luta.</strong> A disputa pelo cinturão vago do peso-mosca feminino é a luta principal da noite, a última do card. Se vencer, Natália Silva se torna a primeira brasileira campeã da categoria.</p>
+
+<!--PALPITE:ufc332-->
+<h2>Resultados dos brasileiros no UFC 332</h2>
+<table><thead><tr><th>Luta</th><th>Parte do card</th><th>Resultado</th></tr></thead><tbody>
+<tr><td><strong>Natália Silva</strong> x Wang Cong</td><td>Principal (cinturão)</td><td>Aguardando</td></tr>
+<tr><td><strong>Deiveson Figueiredo</strong> x Payton Talbott</td><td>Co-principal</td><td>Aguardando</td></tr>
+<tr><td><strong>Johnny Walker</strong> x Mick Parkin</td><td>Preliminar</td><td>Aguardando</td></tr>
+<tr><td><strong>Rafael dos Anjos</strong> x Alexander Hernandez</td><td>Preliminar</td><td>Aguardando</td></tr>
+</tbody></table>
+
+<h2>Que horas é a luta da Natália Silva?</h2>
+<p>O card principal começa às 21h (Brasília), e a luta principal é a última da noite. Por isso ela costuma começar depois da meia-noite, a depender da duração das lutas anteriores. Onde assistir e o card completo estão em <a href="/blog/ufc-332-natalia-silva">UFC 332: Natália Silva x Wang Cong</a>; adversários e horários de cada brasileiro, em <a href="/blog/brasileiros-ufc-332">brasileiros no UFC 332</a>.</p>
+
+<h2>Como os lutadores chegaram à luta</h2>
+<p>Todos passaram pela pesagem na sexta. Veja como foi em <a href="/blog/pesagem-ufc-332">pesagem do UFC 332</a> e como funciona o processo em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/event/ufc-332" target="_blank" rel="noopener noreferrer">UFC — UFC 332 (card oficial)</a></li>
+</ul>`,
+    faq: [
+      { question: "Quem ganhou o UFC 332?", answer: "As lutas acontecem na noite deste sábado, 3/10. O resultado entra nesta página assim que cada luta terminar." },
+      { question: "Quem ganhou Natália Silva x Wang Cong?", answer: "A luta é a principal do UFC 332, na noite de sábado, 3/10. O resultado entra aqui assim que for confirmado." },
+      { question: "Que horas luta a Natália Silva no UFC 332?", answer: "O card principal começa às 21h (Brasília) e a luta dela é a última da noite, por isso costuma começar depois da meia-noite." },
+    ],
+  },
+  {
     slug: "pesagem-ufc-332",
     title: "Pesagem do UFC 332 hoje: horário, onde assistir e os pesos",
     metaTitle: "Pesagem UFC 332 Hoje: Horário, Onde Assistir e Pesos",
