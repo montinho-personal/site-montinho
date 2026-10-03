@@ -8,6 +8,45 @@ import type { BlogPost } from "./blog";
  */
 export const MARATONA_CURITIBA_2026_POSTS: BlogPost[] = [
   {
+    slug: "resultado-maratona-de-curitiba-2026",
+    title: "Resultado da Maratona de Curitiba 2026: vencedores e tempos",
+    metaTitle: "Resultado Maratona de Curitiba 2026: Vencedores e Tempos",
+    metaDescription:
+      "Resultado da Maratona de Curitiba 2026 (15/11): quem ganhou a maratona e a meia, tempos dos vencedores e onde consultar o seu resultado oficial.",
+    excerpt:
+      "Vencedores e tempos da Maratona de Curitiba 2026, e onde consultar o seu resultado. Atualizado no dia da prova.",
+    category: "Corrida",
+    tipo: "noticia",
+    date: "2026-10-03",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["Maratona de Curitiba", "resultado maratona", "corrida de rua", "Curitiba"],
+    content: `<img src="/blog-images/maratona-de-curitiba-2026-capa.webp" alt="Resultado da Maratona de Curitiba 2026 — domingo, 15 de novembro" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p><strong>A prova ainda não aconteceu. A Maratona de Curitiba 2026 é no domingo, 15 de novembro.</strong> Esta página é atualizada com os vencedores assim que o resultado oficial for divulgado.</p></blockquote>
+
+<h2>Quem ganhou a Maratona de Curitiba 2026?</h2>
+<p><strong>Resultado: aguardando a prova.</strong> Os vencedores da maratona e da meia, no masculino e no feminino, entram aqui no domingo, 15 de novembro, com o resultado oficial.</p>
+
+<h2>Como consultar o seu resultado</h2>
+<p>O resultado individual, com o tempo líquido pelo chip, sai no site oficial da prova e na cronometragem depois da chegada. Quer saber que pace sustentar na próxima? Veja a tabela de pace em <a href="/blog/maratona-de-curitiba-2026">Maratona de Curitiba 2026</a>.</p>
+
+<h2>Quando é a Maratona de Curitiba 2026?</h2>
+<p><strong>Domingo, 15 de novembro de 2026</strong>, com provas de 5, 10, 21 e 42 km e largada no Centro Cívico. Na edição anterior, a prova reuniu 16,2 mil corredores.</p>
+
+<h2>Não se compare</h2>
+<p>Quem sobe ao pódio tem a própria genética, rotina e história, com altos e baixos. O que importa para você é encontrar um treino que dê para seguir pelo resto da vida, com aderência e progressão. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://maratonadecuritiba.com.br/" target="_blank" rel="noopener noreferrer">Santander Maratona de Curitiba — site oficial</a></li>
+<li><a href="https://www.curitiba.pr.gov.br/noticias/maratona-de-curitiba-esta-com-inscricoes-abertas-e-espera-publico-internacional/84225" target="_blank" rel="noopener noreferrer">Prefeitura de Curitiba</a></li>
+</ul>`,
+    faq: [
+      { question: "Quem ganhou a Maratona de Curitiba 2026?", answer: "A prova acontece no domingo, 15 de novembro de 2026. Os vencedores entram nesta página assim que o resultado oficial for divulgado." },
+      { question: "Onde vejo meu resultado da Maratona de Curitiba?", answer: "No site oficial da prova e na cronometragem, depois da chegada, com o tempo líquido pelo chip." },
+    ],
+  },
+  {
     slug: "maratona-de-curitiba-2026",
     title: "Maratona de Curitiba 2026: data, inscrições, percurso e horário da largada",
     metaTitle: "Maratona de Curitiba 2026: Data, Inscrições, Percurso e Horário",
@@ -67,7 +106,7 @@ export const MARATONA_CURITIBA_2026_POSTS: BlogPost[] = [
 <p>A premiação por colocação e as categorias por faixa etária ficam no regulamento oficial; entram aqui quando divulgadas.</p>
 
 <h2>Resultado da Maratona de Curitiba 2026</h2>
-<p>Os vencedores de cada distância entram nesta página no domingo, 15 de novembro. Na edição anterior, a prova reuniu 16,2 mil corredores, a maior da história da cidade.</p>
+<p>Os vencedores de cada distância saem em <a href="/blog/resultado-maratona-de-curitiba-2026">resultado da Maratona de Curitiba 2026</a>, no domingo, 15 de novembro. Na edição anterior, a prova reuniu 16,2 mil corredores, a maior da história da cidade.</p>
 
 <h2>Primeira maratona ou meia?</h2>
 <p>Se é a sua primeira prova longa, veja o guia de <a href="/blog/corrida-de-rua-iniciante">corrida de rua para iniciantes</a> e por que <a href="/blog/corrida-e-musculacao">musculação ajuda quem corre</a>. E não se compare com o pace de ninguém: cada um tem a própria genética, rotina e história. O que leva à linha de chegada — nesta e nas próximas — é um treino que você consiga manter, com aderência e progressão. Se quiser montar o seu, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>

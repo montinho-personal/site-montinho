@@ -9,6 +9,46 @@ import type { BlogPost } from "./blog";
  */
 export const OLYMPIA_BRASIL_EXPO_2026_POSTS: BlogPost[] = [
   {
+    slug: "resultado-mr-olympia-brasil-2026",
+    title: "Resultado do Mr. Olympia Brasil 2026: quem ganhou cada categoria",
+    metaTitle: "Resultado Mr. Olympia Brasil 2026: Quem Ganhou e Pro Cards",
+    metaDescription:
+      "Resultado do Mr. Olympia Brasil 2026 (16 a 18/10, Anhembi): quem ganhou cada categoria e os Pro Cards. Página atualizada com os campeões assim que saírem.",
+    excerpt:
+      "Quem ganhou o Mr. Olympia Brasil 2026: campeões de cada categoria e Pro Cards, atualizados durante o fim de semana do evento.",
+    category: "Fisiculturismo",
+    tipo: "noticia",
+    date: "2026-10-03",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["Mr. Olympia Brasil", "Mr. Olympia Brasil 2026", "resultado", "fisiculturismo", "Pro Card"],
+    content: `<img src="/blog-images/mr-olympia-brasil-2026-capa.webp" alt="Resultado do Mr. Olympia Brasil 2026 — Distrito Anhembi, 16 a 18 de outubro" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p><strong>O campeonato ainda não aconteceu. O Mr. Olympia Brasil 2026 é de 16 a 18 de outubro, no Distrito Anhembi, em São Paulo.</strong> Esta página é atualizada com os vencedores assim que o resultado oficial for divulgado.</p></blockquote>
+
+<h2>Quem ganhou o Mr. Olympia Brasil 2026?</h2>
+<p><strong>Resultado: aguardando o campeonato.</strong> Os campeões de cada categoria e quem conquistou o Pro Card entram aqui durante o fim de semana do evento, conforme a organização divulgar.</p>
+
+<h2>Campeões por categoria</h2>
+<p>A lista de categorias e os vencedores de cada uma entram nesta seção com o resultado oficial.</p>
+
+<h2>Quando é o Mr. Olympia Brasil 2026?</h2>
+<p>De <strong>sexta, 16, a domingo, 18 de outubro de 2026</strong>, no Distrito Anhembi, em São Paulo. Ingressos, programação e como chegar estão em <a href="/blog/mr-olympia-brasil-2026">Mr. Olympia Brasil 2026</a>. Não confunda com o Mr. Olympia de Las Vegas: o resultado de lá está em <a href="/blog/quem-ganhou-mr-olympia-2026">quem ganhou o Mr. Olympia 2026</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Quem sobe ao pódio tem a própria genética, rotina e história, com altos e baixos. O que importa para você é encontrar um treino que dê para seguir pelo resto da vida, com aderência e progressão. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://mrolympiabrasil.com/programacao/" target="_blank" rel="noopener noreferrer">Mr. Olympia Brasil — programação</a></li>
+<li><a href="https://distritoanhembi.com.br/en/events/mr-olympia-2026-2/" target="_blank" rel="noopener noreferrer">Distrito Anhembi — Mr. Olympia 2026</a></li>
+</ul>`,
+    faq: [
+      { question: "Quem ganhou o Mr. Olympia Brasil 2026?", answer: "O campeonato acontece de 16 a 18 de outubro de 2026, no Distrito Anhembi. Os campeões de cada categoria entram nesta página assim que o resultado oficial for divulgado." },
+      { question: "Quando é o Mr. Olympia Brasil 2026?", answer: "De sexta, 16, a domingo, 18 de outubro de 2026, no Distrito Anhembi, em São Paulo." },
+      { question: "O Mr. Olympia Brasil é o mesmo de Las Vegas?", answer: "Não. O Mr. Olympia Brasil é a edição brasileira, que distribui vagas (Pro Cards) e títulos nacionais. O Mr. Olympia principal acontece em Las Vegas." },
+    ],
+  },
+  {
     slug: "mr-olympia-brasil-2026",
     title: "Mr. Olympia Brasil 2026: data, ingressos, programação e como chegar ao Anhembi",
     metaTitle: "Mr. Olympia Brasil 2026: Data, Ingressos e Programação",
@@ -64,7 +104,7 @@ export const OLYMPIA_BRASIL_EXPO_2026_POSTS: BlogPost[] = [
 <p>O Anhembi fica em Santana, zona norte de São Paulo. A estação de metrô mais próxima é a <strong>Portuguesa-Tietê</strong> (Linha 1-Azul). <strong>Atenção:</strong> no mesmo fim de semana, 17 e 18 de outubro, o Anhembi também recebe o <a href="/blog/hyrox-sao-paulo-2026">HYROX São Paulo 2026</a>. Conte com mais movimento no entorno e chegue cedo.</p>
 
 <h2>Vencedores do Mr. Olympia Brasil 2026</h2>
-<p>Os campeões de cada categoria e quem ganhou o Pro Card entram nesta página durante o fim de semana do evento.</p>
+<p>Os campeões de cada categoria e quem ganhou o Pro Card saem em <a href="/blog/resultado-mr-olympia-brasil-2026">resultado do Mr. Olympia Brasil 2026</a>, atualizado durante o fim de semana do evento.</p>
 
 <h2>Do palco para o seu treino</h2>
 <p>Viu os atletas no palco e ficou com a pergunta "quanto tempo eu levaria para chegar perto disso?" Compare o seu estágio hoje com a referência da Classic Physique:</p>

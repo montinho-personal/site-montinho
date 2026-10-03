@@ -8,6 +8,44 @@ import type { BlogPost } from "./blog";
  */
 export const MARATONA_BRASILIA_2026_POSTS: BlogPost[] = [
   {
+    slug: "resultado-maratona-de-brasilia-2026",
+    title: "Resultado da Maratona de Brasília 2026: vencedores e tempos",
+    metaTitle: "Resultado Maratona de Brasília 2026: Vencedores e Tempos",
+    metaDescription:
+      "Resultado da Maratona Monumental de Brasília 2026 (22/11): quem ganhou a maratona e a meia, tempos dos vencedores e onde consultar o seu resultado.",
+    excerpt:
+      "Vencedores e tempos da Maratona de Brasília 2026, e onde consultar o seu resultado. Atualizado no dia da prova.",
+    category: "Corrida",
+    tipo: "noticia",
+    date: "2026-10-03",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["Maratona de Brasília", "Maratona Monumental", "resultado maratona", "corrida de rua"],
+    content: `<img src="/blog-images/maratona-de-brasilia-2026-capa.webp" alt="Resultado da Maratona de Brasília 2026 — domingo, 22 de novembro" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p><strong>A prova ainda não aconteceu. A maratona e a meia são no domingo, 22 de novembro; os 5 e 10 km, no sábado, 21.</strong> Esta página é atualizada com os vencedores assim que o resultado oficial for divulgado.</p></blockquote>
+
+<h2>Quem ganhou a Maratona de Brasília 2026?</h2>
+<p><strong>Resultado: aguardando a prova.</strong> Os vencedores da maratona e da meia, no masculino e no feminino, entram aqui no domingo, 22 de novembro, com o resultado oficial.</p>
+
+<h2>Como consultar o seu resultado</h2>
+<p>O resultado individual, com o tempo líquido pelo chip, sai no site oficial e na cronometragem depois da chegada. Horários, percurso e tabela de pace estão em <a href="/blog/maratona-de-brasilia-2026">Maratona de Brasília 2026</a>.</p>
+
+<h2>Quando é a Maratona de Brasília 2026?</h2>
+<p>A <strong>maratona larga às 5h e a meia às 6h do domingo, 22 de novembro de 2026</strong>, na Esplanada dos Ministérios. As provas de 5 e 10 km são no sábado, 21, às 18h.</p>
+
+<h2>Não se compare</h2>
+<p>Quem sobe ao pódio tem a própria genética, rotina e história, com altos e baixos. O que importa para você é encontrar um treino que dê para seguir pelo resto da vida, com aderência e progressão. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://maratonamonumentalbsb.com.br/" target="_blank" rel="noopener noreferrer">Maratona Monumental de Brasília — site oficial</a></li>
+</ul>`,
+    faq: [
+      { question: "Quem ganhou a Maratona de Brasília 2026?", answer: "A maratona e a meia acontecem no domingo, 22 de novembro de 2026. Os vencedores entram nesta página assim que o resultado oficial for divulgado." },
+      { question: "Que horas larga a Maratona de Brasília 2026?", answer: "A maratona às 5h e a meia às 6h do domingo, 22/11. Os 5 e 10 km largam no sábado, 21/11, às 18h." },
+    ],
+  },
+  {
     slug: "maratona-de-brasilia-2026",
     title: "Maratona de Brasília 2026: data, horário da largada, percurso e inscrição",
     metaTitle: "Maratona de Brasília 2026: Data, Horário, Percurso e Inscrição",
@@ -75,7 +113,7 @@ export const MARATONA_BRASILIA_2026_POSTS: BlogPost[] = [
 <p>Pace calculado sobre a distância oficial. Para outros tempos, use a calculadora abaixo. Correndo também a <a href="/blog/maratona-de-curitiba-2026">Maratona de Curitiba</a>, uma semana antes? Uma maratona a cada sete dias é pouco tempo de recuperação — escolha uma para buscar tempo.</p>
 
 <h2>Resultado da Maratona de Brasília 2026</h2>
-<p>Os vencedores da maratona e da meia entram nesta página no domingo, 22 de novembro.</p>
+<p>Os vencedores da maratona e da meia saem em <a href="/blog/resultado-maratona-de-brasilia-2026">resultado da Maratona de Brasília 2026</a>, no domingo, 22 de novembro.</p>
 
 <h2>Primeira prova longa?</h2>
 <p>Veja o guia de <a href="/blog/corrida-de-rua-iniciante">corrida de rua para iniciantes</a> e <a href="/blog/como-melhorar-o-pace-na-corrida">como melhorar o pace</a>. E não se compare com o tempo de ninguém: cada um tem a própria genética, rotina e história. O que leva à linha de chegada é um treino que você consiga manter, com aderência e progressão. Se quiser montar o seu, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>

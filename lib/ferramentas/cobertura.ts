@@ -105,6 +105,14 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
     "Comparação anatômica: a posição do joelho decide se trabalha gastrocnêmio ou sóleo. O leitor sai com uma decisão de montagem de treino, não com um número para calcular.",
   "barra-fixa-vs-puxada":
     "Comparação de exercício e de momento do aluno. A escolha depende de conseguir ou não fazer barra fixa hoje, que é observação direta, não cálculo.",
+  "resultado-mr-olympia-brasil-2026":
+    "Página de resultado de evento: a pessoa chega com 'quem ganhou' e sai com um fato. Mesma decisão do cluster Mr. Olympia 2026.",
+  "resultado-hyrox-sao-paulo-2026":
+    "Página de resultado de evento: a busca é 'quem ganhou' e o tempo individual sai no site oficial. A calculadora de HYROX fica no guia do evento, que é onde a pessoa ainda está se preparando.",
+  "resultado-maratona-de-curitiba-2026":
+    "Página de resultado de evento: a busca é 'quem ganhou' e o tempo individual sai na cronometragem. A tabela de pace fica no guia da prova.",
+  "resultado-maratona-de-brasilia-2026":
+    "Página de resultado de evento: a busca é 'quem ganhou' e o tempo individual sai na cronometragem. A tabela de pace fica no guia da prova.",
 };
 
 export const SLUGS_SEM_FERRAMENTA = Object.keys(ARTIGOS_SEM_FERRAMENTA);
