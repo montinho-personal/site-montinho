@@ -49,6 +49,18 @@ export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
 <h2>Whey isolado ou concentrado na Black Friday?</h2>
 <p>O isolado tem mais proteína por dose e menos lactose, e costuma custar mais. Para comparar, use o preço por grama de proteína, não por pote. Diferenças em <a href="/blog/whey-concentrado-vs-isolado-vs-hidrolisado">whey concentrado, isolado e hidrolisado</a>.</p>
 
+<h3>Qual é o melhor whey e mais barato?</h3>
+<p>O que entrega <strong>mais proteína por real</strong>. Pegue o preço, divida pelo total de gramas de proteína do pote (proteína por dose × número de doses) e compare. Um pote mais barato com pouca proteína por dose pode sair mais caro que um "premium". A <a href="/ferramentas/calculadora-whey">calculadora de whey</a> faz essa conta e mostra o custo de cada 25 g de proteína.</p>
+
+<h3>Onde comprar whey mais barato?</h3>
+<p>Não existe uma loja sempre mais barata: compare o mesmo produto no site oficial da marca, em marketplaces e em lojas de suplemento, sempre no Pix e com o frete somado. Em marketplace, prefira o vendedor oficial.</p>
+
+<h3>Whey de mercado vale a pena?</h3>
+<p>Pode valer, se a conta fechar. Confira na tabela nutricional quanta proteína vem por dose: alguns produtos vendidos como "whey" têm bem menos proteína por porção, e aí o preço por grama de proteína sobe.</p>
+
+<h3>Qual o melhor dia para comprar na Black Friday?</h3>
+<p>Não existe um dia certo para todo produto. Muitas lojas antecipam ofertas para a semana anterior e repetem na Cyber Monday (30/11). O que protege você é ter anotado o preço antes: quando ele cair abaixo do que você paga normalmente, compre.</p>
+
 <h2>Como saber se o desconto é real</h2>
 <ul>
 <li><strong>Acompanhe o preço desde agora.</strong> Anote hoje o preço do produto que você usa. Se em novembro o "de" subir antes do "por", o desconto é maquiagem.</li>
@@ -72,6 +84,9 @@ export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
 <h2>Suplemento não faz o treino por você</h2>
 <p>O melhor suplemento é o que cabe no seu bolso e no seu plano — e nenhum substitui treino, comida e sono. Não se compare com o shape de quem aparece nos anúncios: cada um tem a própria genética, rotina e história. Se quiser montar um plano que dê para seguir o ano todo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>`,
     faq: [
+      { question: "Qual é o melhor whey e mais barato?", answer: "O que entrega mais proteína por real: divida o preço pelo total de gramas de proteína do pote. Um pote barato com pouca proteína por dose pode sair mais caro." },
+      { question: "Onde comprar whey mais barato?", answer: "Não há uma loja sempre mais barata. Compare o mesmo produto no site oficial, em marketplaces e em lojas de suplemento, no Pix e com frete." },
+      { question: "Qual é o melhor dia para comprar na Black Friday?", answer: "Não há um dia certo para todos os produtos; muitas lojas antecipam ofertas e repetem na Cyber Monday (30/11). Compre quando o preço cair abaixo do que você paga normalmente." },
       { question: "Qual é a melhor creatina e a mais barata?", answer: "A que for creatina monoidratada pura, de marca que divulgue laudo, com o menor preço por dose. Divida o preço pelos dias que o pote dura: 300 g rendem de 60 a 100 dias com 3 a 5 g por dia." },
       { question: "Qual creatina é 100% pura?", answer: "A que tem um único ingrediente na lista: creatina monoidratada. Se houver carboidrato, aromatizante ou blend, não é pura." },
       { question: "Vale a pena comprar creatina de 1 kg?", answer: "Costuma sair mais barata por dose. Com 3 a 5 g por dia, 1 kg dura de 200 a 333 dias; vale se você usa todo dia e termina antes da validade." },
