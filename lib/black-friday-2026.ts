@@ -13,11 +13,15 @@ export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
       "Whey, creatina e pré-treino na Black Friday: a conta do preço por dose, os sinais de desconto falso e quanto estocar sem desperdiçar.",
     category: "Suplementação",
     date: "2026-09-29",
-    readTime: "6 min",
+    updatedAt: "2026-10-03",
+    readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["black friday", "suplementos", "whey protein", "creatina", "promoção de suplementos"],
     content: `<img src="/blog-images/black-friday-suplementos-capa.webp" alt="Capa: Black Friday de suplementos 2026 — como comparar pelo preço por dose e fugir de desconto falso" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
 <p>A <strong>Black Friday de 2026</strong> cai na <strong>sexta-feira, 27 de novembro</strong>, e é a época em que mais gente compra <strong>whey, creatina e pré-treino</strong>. As lojas prometem "até 50% off" — mas o desconto que aparece no anúncio nem sempre é o que chega no bolso. Este guia não lista ofertas (elas mudam de hora em hora): ensina a conta que separa promoção de verdade de propaganda.</p>
+
+<h2>Mega Oferta Prime (5 a 11 de outubro): vale para suplemento?</h2>
+<p>Antes da Black Friday vem a <strong>Mega Oferta Prime da Amazon</strong>, de <strong>5 a 11 de outubro de 2026</strong>, só para assinantes Prime. A regra é a mesma deste guia: compare pelo preço por dose, confira se quem vende é a loja oficial da marca ou a própria Amazon e anote o preço para ver se ele cai de novo em novembro.</p>
 
 <h2>A regra de ouro: compare o preço por dose, não o do pote</h2>
 <p>Potes têm tamanhos e doses diferentes. O que importa é quanto você paga por cada dose que vai tomar.</p>
@@ -29,6 +33,18 @@ export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
 
 <h2>Qual creatina é confiável e barata?</h2>
 <p>Procure <strong>creatina monohidratada</strong> pura, sem mistura, de marca que divulgue laudo de pureza; o selo <strong>Creapure</strong> indica uma matéria-prima de origem controlada, mas costuma custar mais. Pela dose diária, creatina costuma ser o suplemento mais barato por mês — a conta é o preço dividido pelos dias que o pote dura. Quem tem diabetes, doença renal ou outra condição deve falar com o médico antes de usar.</p>
+
+<h3>Como saber se a creatina é 100% pura</h3>
+<p>Leia a lista de ingredientes: na creatina pura ela tem um item só, <strong>creatina monoidratada</strong>, e a porção informa 3 g (ou a dose do rótulo) de creatina. Se aparecem carboidrato, aromatizante ou "blend", não é pura. Laudo de pureza publicado pela marca é um bom sinal.</p>
+
+<h3>Creatina 1 kg ou 300 g?</h3>
+<p>Com 3 a 5 g por dia, <strong>300 g duram de 60 a 100 dias</strong> e <strong>1 kg dura de 200 a 333 dias</strong>. O pote grande quase sempre sai mais barato por dose; vale a pena se você usa todo dia e consegue terminar antes da validade, com o pote bem fechado, longe de umidade.</p>
+
+<h3>Creatina em gummy vale a pena?</h3>
+<p>Confira quantos gramas de creatina cada unidade tem e quantas você precisa para chegar à dose do dia. Faça a conta do preço por grama de creatina: costuma sair bem mais cara que o pó. É uma opção de praticidade, não de economia.</p>
+
+<h3>Creatina na Amazon e no Mercado Livre</h3>
+<p>Em marketplace, o mesmo produto aparece vendido por várias lojas. Prefira o vendedor oficial da marca ou o próprio marketplace, confira a avaliação do vendedor e desconfie de preço muito abaixo dos outros.</p>
 
 <h2>Whey isolado ou concentrado na Black Friday?</h2>
 <p>O isolado tem mais proteína por dose e menos lactose, e costuma custar mais. Para comparar, use o preço por grama de proteína, não por pote. Diferenças em <a href="/blog/whey-concentrado-vs-isolado-vs-hidrolisado">whey concentrado, isolado e hidrolisado</a>.</p>
@@ -56,6 +72,10 @@ export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
 <h2>Suplemento não faz o treino por você</h2>
 <p>O melhor suplemento é o que cabe no seu bolso e no seu plano — e nenhum substitui treino, comida e sono. Não se compare com o shape de quem aparece nos anúncios: cada um tem a própria genética, rotina e história. Se quiser montar um plano que dê para seguir o ano todo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>`,
     faq: [
+      { question: "Qual é a melhor creatina e a mais barata?", answer: "A que for creatina monoidratada pura, de marca que divulgue laudo, com o menor preço por dose. Divida o preço pelos dias que o pote dura: 300 g rendem de 60 a 100 dias com 3 a 5 g por dia." },
+      { question: "Qual creatina é 100% pura?", answer: "A que tem um único ingrediente na lista: creatina monoidratada. Se houver carboidrato, aromatizante ou blend, não é pura." },
+      { question: "Vale a pena comprar creatina de 1 kg?", answer: "Costuma sair mais barata por dose. Com 3 a 5 g por dia, 1 kg dura de 200 a 333 dias; vale se você usa todo dia e termina antes da validade." },
+      { question: "Quando é a Mega Oferta Prime 2026?", answer: "De 5 a 11 de outubro de 2026, na Amazon, só para assinantes Prime." },
       { question: "Quando é a Black Friday 2026?", answer: "Na sexta-feira, 27 de novembro de 2026. Muitas lojas começam as ofertas dias antes." },
       { question: "Como saber se a promoção de suplemento é real?", answer: "Anote o preço antes, use comparadores com histórico, compare no Pix com frete e calcule o preço por dose, não pelo pote." },
       { question: "Vale a pena comprar whey na Black Friday?", answer: "Vale se o preço por grama de proteína ficar abaixo do que você paga normalmente e você usar o produto dentro da validade." },
