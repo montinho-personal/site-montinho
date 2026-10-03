@@ -4,6 +4,125 @@ import type { BlogPost } from "./blog";
  *  fonte oficial (ufc.com.br) ou de dois veículos independentes. */
 export const UFC_2026_POSTS: BlogPost[] = [
   {
+    slug: "ufc-vegas-124-gabriel-bonfim-sean-brady",
+    title: "Gabriel Bonfim x Sean Brady: UFC Vegas 124, horário, card e onde assistir",
+    metaTitle: "Gabriel Bonfim x Sean Brady: Horário e Onde Assistir o UFC",
+    metaDescription:
+      "Gabriel Bonfim enfrenta Sean Brady no UFC Vegas 124, sábado 7/11: horário, onde assistir, card, ranking, cartel e a última luta do Marretinha.",
+    excerpt:
+      "Data, horário, onde assistir, card e quem é Gabriel 'Marretinha' Bonfim, o brasileiro na luta principal do UFC Vegas 124.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-10-03",
+    readTime: "5 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC Vegas 124", "Gabriel Bonfim", "Marretinha", "Sean Brady"],
+    content: `<blockquote><p>Informações verificadas em 3 de outubro de 2026. O card ainda pode mudar; esta página é atualizada até a luta.</p></blockquote>
+<p>A próxima luta de <strong>Gabriel Bonfim</strong>, o "Marretinha", é a principal do <strong>UFC Vegas 124</strong>, no <strong>sábado, 7 de novembro de 2026</strong>, no Meta Apex, em Las Vegas. Ele enfrenta o norte-americano <strong>Sean Brady</strong>, no peso meio-médio (até 77,1 kg).</p>
+
+<h2>Que horas é a luta do Gabriel Bonfim?</h2>
+<p>O UFC ainda vai divulgar a grade oficial em horário de Brasília; ela entra aqui assim que sair. A luta principal é sempre a última da noite, então a do Bonfim deve começar bem depois do início do card principal.</p>
+
+<h2>Onde assistir ao UFC Vegas 124 ao vivo</h2>
+<p>O evento é transmitido pelo <strong>Paramount+</strong>, que exibe o UFC no Brasil, e pelo UFC Fight Pass.</p>
+
+<h2>Card do UFC Vegas 124</h2>
+<table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
+<tr><td><strong>Gabriel Bonfim</strong> x Sean Brady</td><td>Meio-médio (luta principal)</td></tr>
+<tr><td>Tatiana Suarez x <strong>Virna Jandiroba</strong></td><td>Peso-palha feminino</td></tr>
+<tr><td>Mantas Kondratavičius x Wesley Schultz</td><td>Peso-médio</td></tr>
+</tbody></table>
+<p>A brasileira <strong>Priscila Cachoeira</strong> também está escalada. O card completo é fechado nas semanas antes do evento e entra aqui.</p>
+
+<h2>Tem UFC neste sábado? O calendário de novembro</h2>
+<ul>
+<li><strong>7 de novembro:</strong> UFC Vegas 124, Bonfim x Brady, em Las Vegas.</li>
+<li><strong>14 de novembro:</strong> UFC 334, no Madison Square Garden, em Nova York.</li>
+</ul>
+
+<h2>Quem é Gabriel Bonfim?</h2>
+<p>Gabriel de Souza Bonfim, o <strong>Marretinha</strong>, nasceu em <strong>Brasília, em 20 de agosto de 1997</strong>, e luta no peso meio-médio do UFC. É irmão mais novo de <strong>Ismael Bonfim</strong>, que também luta no UFC, no peso-leve.</p>
+
+<h2>Qual é o ranking de Gabriel Bonfim no UFC?</h2>
+<p>Ele é o <strong>5º do ranking do peso meio-médio</strong>. Entrou no top 5 depois da vitória sobre Belal Muhammad, ex-campeão da divisão, subindo seis posições.</p>
+
+<h2>Cartel e última luta</h2>
+<p>O cartel profissional é de <strong>20 vitórias e 1 derrota</strong>. A última luta foi em <strong>6 de junho de 2026</strong>, na principal do UFC Vegas 118: ele venceu <strong>Belal Muhammad</strong> por decisão unânime, nos cinco rounds. Foi a quinta vitória seguida.</p>
+
+<h2>Quem ganhou?</h2>
+<p>O resultado de Bonfim x Brady sai em <a href="/blog/resultado-ufc-vegas-124-bonfim-brady">resultado do UFC Vegas 124</a>, atualizado na noite da luta.</p>
+
+<h2>Quanto se gasta numa aula de luta</h2>
+<p>Quem treina artes marciais costuma perguntar quanto gasta por aula. A conta depende do peso e de quanto da aula é luta de verdade: faça a sua na calculadora abaixo. Para entender como os lutadores chegam ao peso, veja <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/athlete/gabriel-bonfim" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim (perfil oficial)</a></li>
+<li><a href="https://www.ufc.com.br/news/card-completo-resultados-ufc-vegas-118" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim vence Belal Muhammad no UFC Vegas 118</a></li>
+<li><a href="https://www.ufc.com.br/news/gabriel-bonfim-entra-top-5-ranking-peso-meio-medio" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim entra no Top 5 do peso meio-médio</a></li>
+<li><a href="https://agfight.com/ufc/gabriel-marretinha-enfrenta-sean-brady-na-luta-principal-do-ufc-vegas-124/" target="_blank" rel="noopener noreferrer">Ag. Fight — Marretinha enfrenta Sean Brady na luta principal do UFC Vegas 124</a></li>
+<li>Veículos consultados: MMA Sucka, Yahoo Sports, Mais Goiás, Wikipédia.</li>
+</ul>`,
+    faq: [
+      { question: "Quando é a próxima luta de Gabriel Bonfim?", answer: "Sábado, 7 de novembro de 2026, contra Sean Brady, na luta principal do UFC Vegas 124, em Las Vegas." },
+      { question: "Que horas luta o Gabriel Bonfim?", answer: "A grade oficial em horário de Brasília ainda não foi divulgada e entra nesta página assim que sair. A luta dele é a principal, a última da noite." },
+      { question: "Qual é o próximo UFC?", answer: "Depois do UFC Vegas 124, em 7 de novembro, vem o UFC 334, em 14 de novembro, no Madison Square Garden." },
+      { question: "Onde assistir à luta do Gabriel Bonfim?", answer: "No Paramount+ e no UFC Fight Pass." },
+      { question: "Qual é o ranking de Gabriel Bonfim no UFC?", answer: "5º do peso meio-médio, depois da vitória sobre Belal Muhammad em junho de 2026." },
+      { question: "Qual é o cartel de Gabriel Bonfim?", answer: "20 vitórias e 1 derrota no MMA profissional." },
+      { question: "Gabriel Bonfim é irmão de quem?", answer: "De Ismael Bonfim, irmão mais velho, que também luta no UFC, no peso-leve." },
+      { question: "Qual foi a última luta de Gabriel Bonfim?", answer: "Vitória por decisão unânime sobre Belal Muhammad, em 6 de junho de 2026, no UFC Vegas 118." },
+    ],
+  },
+  {
+    slug: "resultado-ufc-vegas-124-bonfim-brady",
+    title: "Resultado UFC Vegas 124: quem ganhou Gabriel Bonfim x Sean Brady",
+    metaTitle: "Resultado UFC Vegas 124: Quem Ganhou Bonfim x Brady",
+    metaDescription:
+      "Resultado do UFC Vegas 124 (7/11): quem ganhou Gabriel Bonfim x Sean Brady e o resultado de Virna Jandiroba e dos brasileiros do card. Atualizado na noite da luta.",
+    excerpt:
+      "Quem ganhou Bonfim x Brady e o resultado dos brasileiros do UFC Vegas 124, atualizado ao fim de cada luta.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-10-03",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC Vegas 124", "resultado UFC", "Gabriel Bonfim", "Sean Brady"],
+    content: `<blockquote><p><strong>As lutas ainda não aconteceram.</strong> O UFC Vegas 124 é no sábado, 7 de novembro, em Las Vegas. Esta página é atualizada com o resultado de cada luta assim que ele for confirmado.</p></blockquote>
+
+<h2>Quem ganhou Gabriel Bonfim x Sean Brady?</h2>
+<p><strong>Resultado: aguardando a luta.</strong> É a luta principal da noite, no peso meio-médio. Bonfim chega como 5º do ranking e com cinco vitórias seguidas.</p>
+
+<h2>Resultados dos brasileiros no UFC Vegas 124</h2>
+<table><thead><tr><th>Luta</th><th>Resultado</th></tr></thead><tbody>
+<tr><td><strong>Gabriel Bonfim</strong> x Sean Brady</td><td>Aguardando</td></tr>
+<tr><td><strong>Virna Jandiroba</strong> x Tatiana Suarez</td><td>Aguardando</td></tr>
+<tr><td><strong>Priscila Cachoeira</strong></td><td>Aguardando</td></tr>
+</tbody></table>
+
+<h2>Horário e onde assistir</h2>
+<p>Transmissão no Paramount+. Horários, ranking e cartel do Bonfim em <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">Gabriel Bonfim x Sean Brady</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/athlete/gabriel-bonfim" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim (perfil oficial)</a></li>
+<li><a href="https://www.ufc.com.br/news/card-completo-resultados-ufc-vegas-118" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim vence Belal Muhammad no UFC Vegas 118</a></li>
+<li><a href="https://www.ufc.com.br/news/gabriel-bonfim-entra-top-5-ranking-peso-meio-medio" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim entra no Top 5 do peso meio-médio</a></li>
+<li><a href="https://agfight.com/ufc/gabriel-marretinha-enfrenta-sean-brady-na-luta-principal-do-ufc-vegas-124/" target="_blank" rel="noopener noreferrer">Ag. Fight — Marretinha enfrenta Sean Brady na luta principal do UFC Vegas 124</a></li>
+<li>Veículos consultados: MMA Sucka, Yahoo Sports, Mais Goiás, Wikipédia.</li>
+</ul>`,
+    faq: [
+      { question: "Quem ganhou Gabriel Bonfim x Sean Brady?", answer: "A luta é no sábado, 7 de novembro de 2026. O resultado entra nesta página assim que for confirmado." },
+      { question: "Quem ganhou o UFC Vegas 124?", answer: "O evento acontece na noite de 7/11. Os resultados entram aqui ao fim de cada luta." },
+    ],
+  },
+  {
     slug: "resultado-ufc-332",
     title: "Resultado do UFC 332: quem ganhou Natália Silva x Wang Cong",
     metaTitle: "Resultado UFC 332: Quem Ganhou Natália Silva x Wang Cong",
