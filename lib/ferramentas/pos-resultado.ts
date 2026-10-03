@@ -73,6 +73,7 @@ export const NOME: Record<Ferramenta, string> = {
   natacao: "Calculadora de Calorias na Natação",
   jiujitsu: "Calculadora de Calorias no Jiu-Jitsu",
   muaythai: "Calculadora de Calorias no Muay Thai",
+  artesmarciais: "Calculadora de Calorias nas Artes Marciais",
   corda: "Calculadora de Calorias Pulando Corda",
   bicicleta: "Calculadora de Calorias na Bicicleta",
   escada: "Calculadora de Calorias Subindo Escada",
@@ -127,6 +128,7 @@ export const ROTA: Record<Ferramenta, string> = {
   natacao: "/ferramentas/calculadora-calorias-natacao",
   jiujitsu: "/ferramentas/calculadora-calorias-jiu-jitsu",
   muaythai: "/ferramentas/calculadora-calorias-muay-thai",
+  artesmarciais: "/ferramentas/calculadora-calorias-artes-marciais",
   corda: "/ferramentas/calculadora-calorias-pular-corda",
   bicicleta: "/ferramentas/calculadora-calorias-bicicleta",
   escada: "/ferramentas/calculadora-calorias-escada",
@@ -188,6 +190,7 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   /* Quem viu o gasto da aula precisa do gasto do dia para saber o déficit. */
   jiujitsu: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   muaythai: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
+  artesmarciais: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   /* A corda gasta pouco em minutos; o déficit da semana é o que decide. */
   corda: { ferramenta: "deficit", label: "Calcular meu déficit" },
   /* Quem viu o gasto do pedal precisa do gasto do dia para saber o déficit. */
@@ -433,6 +436,13 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
       interpretacao:
         "Esse é o gasto do pedal, não o do seu dia. A bicicleta gasta bem e é baixo impacto, mas o semáforo e o passeio lento derrubam a média — o que move o resultado é a frequência, a alimentação e a força que segura o joelho e o músculo enquanto o peso cai.",
       pedido: "Pedalo e queria entender o que falta para a bike me ajudar a emagrecer.",
+    },
+  },
+  artesmarciais: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto da aula, não o do seu dia. O que muda o número é quanto da aula foi luta de verdade; o que muda o resultado é quantas aulas cabem na sua semana, a alimentação e a força que segura as articulações no treino.",
+      pedido: "Treino arte marcial e queria entender o que falta para ela me ajudar a emagrecer.",
     },
   },
   muaythai: {

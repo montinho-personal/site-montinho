@@ -281,6 +281,7 @@ export default function CalculadoraJiuJitsuPage() {
           <div>
             <h3 className="text-xl font-bold text-white mb-3" style={h}>Leia também</h3>
             <ul className="space-y-2 text-gray-300">
+              <li>Pratica outra arte marcial? A <Link href="/ferramentas/calculadora-calorias-artes-marciais" className={ln}>Calculadora de Calorias nas Artes Marciais</Link> compara judô, caratê, taekwondo, kickboxing e MMA.</li>
               <li><Link href="/blog/jiu-jitsu-emagrece" className={ln}>Jiu-jitsu emagrece? Calorias reais e o que esperar</Link></li>
               <li><Link href="/ferramentas/calculadora-calorias-boxe" className={ln}>Calculadora de Calorias no Boxe — aula e rounds</Link></li>
               <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — escada e bicicleta</Link></li>

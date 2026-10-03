@@ -359,6 +359,7 @@ export default function CalculadoraBoxePage() {
           <div>
             <h3 className="text-xl font-bold text-white mb-3" style={h}>Leia também</h3>
             <ul className="space-y-2 text-gray-300">
+              <li>Pratica outra arte marcial? A <Link href="/ferramentas/calculadora-calorias-artes-marciais" className={ln}>Calculadora de Calorias nas Artes Marciais</Link> compara judô, caratê, taekwondo, kickboxing e MMA.</li>
               <li><Link href="/blog/boxe-emagrece" className={ln}>Boxe emagrece? Quantas calorias queima e como usar a favor</Link></li>
               <li><Link href="/ferramentas/calculadora-calorias-futebol" className={ln}>Calculadora de Calorias no Futebol — com o revezamento de times</Link></li>
               <li><Link href="/ferramentas/calculadora-calorias-atividades" className={ln}>Calculadora de Calorias por Atividade — escada e bicicleta</Link></li>
