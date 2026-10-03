@@ -21448,6 +21448,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Cafeína, beta-alanina, citrulina... o que realmente funciona no pré-treino e o que é só efeito formigamento pago caro.",
     category: "Saúde",
     date: "2026-06-27",
+    updatedAt: "2026-10-03",
     readTime: "7 min",
     author: "Montinho",
     tags: ["pré-treino", "suplementação", "cafeína", "energia", "performance"],
@@ -21497,6 +21498,14 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><strong>Hipertensão:</strong> pessoas com pressão alta devem evitar estimulantes sem aval médico</li>
   <li><strong>Tolerância:</strong> o efeito diminui com uso contínuo. "Ciclar" o pré-treino (tirar 2 semanas a cada mês) preserva a sensibilidade</li>
 </ul>
+
+<h2>Pré-treino em promoção: como comparar</h2>
+<ul>
+<li>Compare a <strong>cafeína por dose</strong>: é o ingrediente com melhor evidência, e o rótulo precisa informar quanto tem.</li>
+<li>Desconfie de "blend proprietário" que não informa a quantidade de cada ingrediente.</li>
+<li>Faça a conta do <strong>preço por dose</strong> e compare com o preço de um café.</li>
+</ul>
+<p>Guia dos eventos: <a href="/blog/mega-oferta-prime-2026">Mega Oferta Prime 2026</a> e <a href="/blog/black-friday-suplementos">Black Friday</a>.</p>
 
 <h2>Vale a pena?</h2>
 <p>Se você treina bem, dorme bem, e está nutrido — o pré-treino vai agregar marginalmente. Se você chega no treino sem dormir e sem comer, o pré-treino vai mascarar o problema sem resolvê-lo. O melhor "pré-treino" continua sendo: sono de 7–8h, refeição com carboidrato 1–2h antes, e hidratação adequada.</p>
@@ -54893,6 +54902,13 @@ Para os clientes que atendo em Alphaville, Tamboré e Barueri — com agendas ex
 
 Esse protocolo combina praticidade diária com profundidade profissional semanal.
 
+## Pistola, Rolo e Bola em Promoção: O Que Olhar
+
+- **Pistola massageadora:** ponteiras intercambiáveis, níveis de intensidade e bateria. Mais potência não é melhor: em músculo dolorido, intensidade baixa costuma ser mais confortável.
+- **Foam roller:** densidade média para começar; o rolo muito duro dói demais para quem está iniciando.
+- **Bola de liberação:** barata e boa para pontos específicos, como planta do pé e glúteo.
+- Compre de **vendedor oficial**. Guia dos eventos: [Mega Oferta Prime 2026](/blog/mega-oferta-prime-2026).
+
 ## Conclusão
 
 As três ferramentas têm lugar na recuperação — em contextos diferentes. A massagem manual é a mais eficaz per se, mas a menos prática. O foam roller e a pistola têm efeitos similares e menores que a massagem, mas são praticamente acessíveis no dia a dia.
@@ -54912,6 +54928,7 @@ A melhor ferramenta é a que você vai usar consistentemente.
 `,
     category: "Recuperação",
     date: "2026-06-28",
+    updatedAt: "2026-10-03",
     readTime: "12 min",
     author: "Montinho Personal Trainer",
     tags: ["pistola de massagem", "foam roller", "massagem", "recuperação muscular", "DOMS", "recuperação pós-treino"],
@@ -111233,7 +111250,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Muita gente treina pesado com tênis feito para correr e não entende por que perde estabilidade no agachamento. Explico as diferenças reais entre os tipos de calçado, o que amortecimento e drop significam e como escolher sem gastar à toa.",
     category: "Treino",
     date: "2026-08-12",
-    updatedAt: "2026-08-21",
+    updatedAt: "2026-10-03",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["tênis para treinar", "calçado esportivo", "musculação", "corrida", "prevenção de lesões"],
@@ -111375,6 +111392,15 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Este Short não é sobre calçado: é sobre outro ajuste prático que muda a qualidade do treino — quanto tempo ele deve durar:</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/TSnJNBfHRb8?rel=0" title="Quanto tempo deve durar o seu treino na academia" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
+<h2>Tênis em promoção: o que olhar antes de comprar</h2>
+<ul>
+<li><strong>Escolha pelo uso primeiro</strong> (corrida ou academia), depois pelo desconto. Tênis de corrida muito macio atrapalha no agachamento.</li>
+<li><strong>Já conhece o modelo?</strong> Comprar online é seguro quando você sabe o número e a forma. Se não, prove antes numa loja.</li>
+<li><strong>Versão anterior do mesmo modelo</strong> costuma ter o maior desconto e quase a mesma construção.</li>
+<li><strong>Compre de vendedor oficial</strong> e confira a política de troca de tamanho.</li>
+</ul>
+<p>Guia dos eventos: <a href="/blog/mega-oferta-prime-2026">Mega Oferta Prime 2026</a> e <a href="/blog/black-friday-suplementos">Black Friday</a>.</p>
+
 <h2>Referências</h2>
 <ul>
 <li>Nigg BM, Baltich J, Hoerzer S, Enders H. Running shoes and running injuries: mythbusting and a proposal for two new paradigms. British Journal of Sports Medicine, 2015;49(20):1290-1294.</li>
@@ -111392,7 +111418,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Barrinha de proteína pode ser um lanche prático e útil ou um chocolate caro com apelo fitness. A diferença está no rótulo. Mostro exatamente o que olhar e como comparar com comida de verdade.",
     category: "Nutrição",
     date: "2026-08-12",
-    updatedAt: "2026-08-21",
+    updatedAt: "2026-10-03",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["barrinha de proteína", "rótulo de alimentos", "lanche saudável", "suplementos", "emagrecimento"],
@@ -111526,6 +111552,14 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Faça uma vez o cálculo de quanto você paga por grama de proteína. Uma barrinha de 20 g de proteína custando R$ 12 sai a R$ 0,60 por grama. Um pote de whey de 900 g com 24 g por dose costuma sair bem abaixo disso. Ovo, frango e leite normalmente saem em outro patamar de barateza. Nada disso significa que barrinha é errada — significa que você está pagando por conveniência, e é bom saber quanto.</p>
 
 <p>Um exercício que costumo propor: se você come uma barrinha por dia útil, são cerca de 22 por mês. Multiplique pelo preço. Muita gente descobre que está gastando o valor de um mês inteiro de acompanhamento profissional em barrinha. Aí a decisão fica mais fácil.</p>
+
+<h2>Barrinha de proteína em promoção: a conta certa</h2>
+<ul>
+<li>Compare o <strong>preço por grama de proteína</strong>, não o preço da caixa.</li>
+<li>Confira se a barra tem mais <strong>proteína que carboidrato e gordura somados</strong>; muitas são doce com um pouco de proteína.</li>
+<li>Caixa grande só vale se você vai comer antes da validade.</li>
+</ul>
+<p>Guia dos eventos: <a href="/blog/mega-oferta-prime-2026">Mega Oferta Prime 2026</a> e <a href="/blog/black-friday-suplementos">Black Friday</a>.</p>
 
 <h2>Fechando</h2>
 

@@ -4,6 +4,163 @@ import type { BlogPost } from "./blog";
  *  ofertas mudam de hora em hora; o artigo ensina a conta, não a vitrine. */
 export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
   {
+    slug: "fone-para-treinar",
+    title: "Fone para treinar: bluetooth, open ear ou condução óssea?",
+    metaTitle: "Fone para Treinar: Bluetooth, Open Ear ou Condução Óssea?",
+    metaDescription:
+      "Qual fone usar para academia e corrida: intra-auricular, open ear ou condução óssea. O que olhar (resistência a suor, encaixe, bateria) e como aproveitar a promoção.",
+    excerpt:
+      "Qual tipo de fone combina com academia e com corrida de rua, o que olhar na compra e como proteger a audição.",
+    category: "Treinamento",
+    date: "2026-10-03",
+    readTime: "5 min",
+    author: "Montinho Personal Trainer",
+    tags: ["fone para academia", "fone para corrida", "condução óssea", "open ear", "promoção"],
+    content: `<p>Fone é uma das compras mais buscadas na <a href="/blog/mega-oferta-prime-2026">Mega Oferta Prime</a> e na Black Friday. Para treinar, o tipo certo depende de onde você treina.</p>
+
+<h2>Os três tipos de fone para treinar</h2>
+<ul>
+<li><strong>Intra-auricular (dentro do ouvido):</strong> isola bem o som, bom para academia barulhenta. Na rua, isola demais: você deixa de ouvir carro e bicicleta.</li>
+<li><strong>Open ear (aberto):</strong> fica apoiado na entrada da orelha, sem tampar. Você ouve a música e o ambiente.</li>
+<li><strong>Condução óssea:</strong> encosta na frente da orelha e transmite o som pelo osso, com o ouvido livre. É o preferido de quem corre na rua.</li>
+</ul>
+
+<h2>Fone para academia: o que olhar</h2>
+<ul>
+<li><strong>Encaixe firme</strong>, que não cai no agachamento nem no abdominal.</li>
+<li><strong>Resistência a suor</strong>, informada pela classificação IPX (quanto maior o número, mais resistente à água).</li>
+<li><strong>Bateria</strong> que aguente alguns treinos sem carregar.</li>
+<li>Cancelamento de ruído ajuda em academia barulhenta, mas não é essencial.</li>
+</ul>
+
+<h2>Fone para corrida: o que olhar</h2>
+<ul>
+<li><strong>Ouvido livre</strong> (open ear ou condução óssea) para correr na rua com segurança.</li>
+<li><strong>Peso leve e encaixe que não balança</strong> com a passada.</li>
+<li><strong>Resistência a suor e chuva.</strong></li>
+</ul>
+<p>Treinando para uma prova? Veja o ritmo de cada meta na <a href="/ferramentas/calculadora-corrida">calculadora de corrida</a>.</p>
+
+<h2>Cuide da audição</h2>
+<p>A Organização Mundial da Saúde recomenda manter o volume moderado e limitar o tempo de exposição a som alto. No treino, um bom teste é conseguir ouvir alguém falando perto de você.</p>
+
+<h2>Fone em promoção: como saber se vale</h2>
+<ul>
+<li>Escolha primeiro o <strong>tipo</strong>, depois o modelo.</li>
+<li>Confira a <strong>classificação IPX</strong> e a <strong>garantia no Brasil</strong>.</li>
+<li>Compre de <strong>vendedor oficial</strong>; fone é um dos produtos mais falsificados.</li>
+<li>Anote o preço e compare de novo na Black Friday (27/11).</li>
+</ul>
+
+<h2>O equipamento não treina por você</h2>
+<p>Nenhuma compra substitui o treino feito com constância. Não compare o seu com o de ninguém: cada um tem a própria genética, rotina e história. Se quiser ajuda para montar um plano que dá para seguir, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+`,
+    faq: [
+      { question: "Qual o melhor fone para academia?", answer: "Um com encaixe firme, resistência a suor (classificação IPX) e bateria para alguns treinos. Intra-auricular isola bem o barulho da academia." },
+      { question: "Qual o melhor fone para corrida?", answer: "Um que deixe o ouvido livre, como open ear ou condução óssea, para ouvir o trânsito. Leve, firme e resistente a suor e chuva." },
+      { question: "Fone de condução óssea vale a pena?", answer: "Vale para quem corre na rua e quer ouvir o ambiente. Em academia barulhenta, o som fica menos nítido que no intra-auricular." },
+      { question: "O que é IPX no fone?", answer: "É a classificação de resistência à água e ao suor. Quanto maior o número, mais resistente." },
+    ],
+  },
+  {
+    slug: "cozinha-para-dieta-o-que-comprar",
+    title: "Cozinha de quem faz dieta: o que comprar (air fryer, balança, potes)",
+    metaTitle: "Cozinha para Dieta: Air Fryer, Balança e Potes Valem a Pena?",
+    metaDescription:
+      "O que comprar para facilitar a dieta: balança de cozinha, air fryer, liquidificador, potes para marmita e bolsa térmica. O que olhar em cada um e o que vale na promoção.",
+    excerpt:
+      "Os utensílios que mais ajudam quem cozinha para a semana, o que olhar em cada um e o que deixar para depois.",
+    category: "Nutrição",
+    date: "2026-10-03",
+    readTime: "5 min",
+    author: "Montinho Personal Trainer",
+    tags: ["air fryer", "balança de cozinha", "marmita", "potes", "liquidificador", "promoção"],
+    content: `<p>Na <a href="/blog/mega-oferta-prime-2026">Mega Oferta Prime</a> e na Black Friday, air fryer, liquidificador e potes estão entre os itens mais procurados. Para quem quer comer melhor, a cozinha certa ajuda mais que qualquer suplemento, porque é o que deixa a comida pronta quando a fome chega.</p>
+
+<h2>1. Balança de cozinha digital</h2>
+<p>É a compra mais barata e a que mais ensina. Pesar a comida por algumas semanas mostra quanto você come de verdade, e o olho aprende a porção. Olhe precisão de 1 g, botão de tara (zerar com o prato em cima) e superfície fácil de limpar.</p>
+
+<h2>2. Air fryer</h2>
+<p>Ajuda a fazer frango, peixe, legumes e batata com pouco ou nenhum óleo, rápido e sem sujar o fogão. O que olhar:</p>
+<ul>
+<li><strong>Capacidade:</strong> para uma pessoa, uma cesta menor resolve; para família ou para cozinhar a semana, prefira cesta maior ou modelo forno.</li>
+<li><strong>Cesta fácil de lavar</strong> e de tirar.</li>
+<li><strong>Voltagem</strong> da sua casa.</li>
+</ul>
+<p>Air fryer não emagrece sozinha: o que muda é o que você coloca nela.</p>
+
+<h2>3. Liquidificador ou blender portátil</h2>
+<p>Para vitaminas, shakes de whey com fruta e sopas. O portátil é prático para levar ao trabalho; o de mesa aguenta gelo e volumes maiores. Confira potência para gelo e se o copo vai à lava-louças.</p>
+
+<h2>4. Potes para marmita</h2>
+<ul>
+<li><strong>Herméticos</strong> (tampa com trava), para não vazar.</li>
+<li><strong>Vidro</strong> vai ao micro-ondas e ao forno sem manchar; plástico é mais leve para levar.</li>
+<li><strong>Divisórias</strong> ajudam a montar porções. Veja <a href="/blog/marmita-fitness-como-montar">como montar marmita fitness</a>.</li>
+</ul>
+
+<h2>5. Bolsa térmica</h2>
+<p>Mantém a marmita fresca até a hora de comer. Olhe o tamanho para os seus potes e se cabe gelo reutilizável.</p>
+
+<h2>Por onde começar</h2>
+<p>Se o orçamento é curto: <strong>balança de cozinha e potes</strong> primeiro. Depois, air fryer. Para montar o cardápio da semana com as suas escolhas, use o <a href="/ferramentas/monte-seu-cardapio">Monte seu Cardápio</a>.</p>
+
+<h2>O equipamento não treina por você</h2>
+<p>Nenhuma compra substitui o treino feito com constância. Não compare o seu com o de ninguém: cada um tem a própria genética, rotina e história. Se quiser ajuda para montar um plano que dá para seguir, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+`,
+    faq: [
+      { question: "Air fryer ajuda a emagrecer?", answer: "Ajuda a cozinhar com pouco óleo, o que reduz calorias de frituras. Mas não emagrece sozinha: o que importa é o total do que você come no dia." },
+      { question: "Balança de cozinha vale a pena para dieta?", answer: "Vale. É barata e, usada por algumas semanas, mostra quanto você come de verdade e ensina a reconhecer as porções." },
+      { question: "Pote de vidro ou plástico para marmita?", answer: "Vidro vai ao micro-ondas e ao forno sem manchar; plástico é mais leve para transportar. Os dois precisam de tampa hermética." },
+      { question: "O que comprar primeiro para cozinhar para a semana?", answer: "Balança de cozinha e potes herméticos. Depois, air fryer e liquidificador, se fizerem parte da sua rotina." },
+    ],
+  },
+  {
+    slug: "acessorios-de-academia-strap-cinturao-luva",
+    title: "Acessórios de academia: strap, cinturão, luva e munhequeira, quando usar",
+    metaTitle: "Strap, Cinturão, Luva e Munhequeira: Quando Usar na Academia",
+    metaDescription:
+      "Strap, cinturão de musculação, luva e munhequeira: para que serve cada um, quando usar, quando dispensar e o que olhar na compra em promoção.",
+    excerpt:
+      "Para que serve cada acessório de musculação, quando ajuda de verdade e quando só atrapalha.",
+    category: "Treinamento",
+    date: "2026-10-03",
+    readTime: "5 min",
+    author: "Montinho Personal Trainer",
+    tags: ["strap", "cinturão de musculação", "luva de academia", "munhequeira", "acessórios de academia"],
+    content: `<p>Strap, cinturão, luva e munhequeira aparecem muito nas promoções da <a href="/blog/mega-oferta-prime-2026">Mega Oferta Prime</a> e da Black Friday. Cada um resolve um problema específico; usado sem necessidade, pode até atrapalhar.</p>
+
+<h2>Strap (fita de pegada)</h2>
+<p><strong>Para que serve:</strong> prender a mão na barra quando a pegada cansa antes das costas ou dos posteriores, em puxadas, remadas e levantamento terra pesados.</p>
+<p><strong>Quando dispensar:</strong> em cargas leves e no começo do treino. Se você usa strap em tudo, a pegada não evolui.</p>
+
+<h2>Cinturão de musculação</h2>
+<p><strong>Para que serve:</strong> dar um apoio para você empurrar o abdômen e travar o tronco em agachamento e levantamento terra pesados.</p>
+<p><strong>Quando dispensar:</strong> em cargas leves e médias, e para quem ainda está aprendendo a técnica. Ele não substitui aprender a respirar e travar o tronco.</p>
+<p><strong>O que olhar:</strong> largura uniforme, fecho firme e tamanho certo para a cintura.</p>
+
+<h2>Luva de academia</h2>
+<p><strong>Para que serve:</strong> proteger a mão de calos e melhorar o conforto na barra.</p>
+<p><strong>Quando dispensar:</strong> se ela deixa a pegada mais grossa e escorregadia. Muita gente prefere magnésio (giz) ou nada.</p>
+
+<h2>Munhequeira</h2>
+<p><strong>Para que serve:</strong> dar estabilidade ao punho em supino e desenvolvimento pesados.</p>
+<p><strong>Quando dispensar:</strong> em cargas leves. Dor no punho que não passa é caso de avaliação, não de munhequeira.</p>
+
+<h2>Por onde começar</h2>
+<p>Para a maioria, nenhum é obrigatório. Se for comprar um, o <strong>strap</strong> costuma ser o mais útil para quem já treina costas e posteriores com carga. O cinturão faz sentido quando agachamento e terra já são pesados para você.</p>
+
+<h2>O equipamento não treina por você</h2>
+<p>Nenhuma compra substitui o treino feito com constância. Não compare o seu com o de ninguém: cada um tem a própria genética, rotina e história. Se quiser ajuda para montar um plano que dá para seguir, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+`,
+    faq: [
+      { question: "Strap faz mal?", answer: "Não, mas usado em tudo impede a pegada de evoluir. Use nas séries pesadas de puxadas, remadas e terra." },
+      { question: "Quando usar cinturão de musculação?", answer: "Em agachamento e levantamento terra pesados, depois de aprender a técnica e a travar o tronco. Em cargas leves, não é necessário." },
+      { question: "Luva de academia vale a pena?", answer: "Vale se você quer proteger a mão de calos. Se a luva deixa a pegada escorregadia, magnésio (giz) costuma funcionar melhor." },
+      { question: "Para que serve munhequeira?", answer: "Para estabilizar o punho em supino e desenvolvimento pesados. Dor no punho persistente pede avaliação." },
+    ],
+  },
+  {
     slug: "smartwatch-para-treino",
     title: "Smartwatch para treino: qual escolher para academia e corrida",
     metaTitle: "Smartwatch para Treino: Qual Escolher para Academia e Corrida",
@@ -167,6 +324,9 @@ export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
 <li><strong>Equipamento para treinar em casa:</strong> elásticos, halteres, kettlebell, corda. Lista por orçamento em <a href="/blog/como-montar-academia-em-casa">como montar academia em casa</a>.</li>
 <li><strong>Tênis:</strong> <a href="/blog/como-escolher-tenis-para-treinar">como escolher tênis para treinar</a>.</li>
 <li><strong>Pistola massageadora e rolo:</strong> <a href="/blog/massagem-pistola-foam-roller-qual-melhor">pistola ou foam roller, qual vale mais</a>.</li>
+<li><strong>Fone:</strong> <a href="/blog/fone-para-treinar">fone para treinar: bluetooth, open ear ou condução óssea</a>.</li>
+<li><strong>Cozinha:</strong> air fryer, balança de cozinha, potes e liquidificador em <a href="/blog/cozinha-para-dieta-o-que-comprar">cozinha de quem faz dieta</a>.</li>
+<li><strong>Strap, cinturão, luva e munhequeira:</strong> <a href="/blog/acessorios-de-academia-strap-cinturao-luva">quando usar cada um</a>.</li>
 </ul>
 
 <h2>Pré-treino, barrinha, pasta de amendoim e multivitamínico</h2>

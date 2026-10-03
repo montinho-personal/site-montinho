@@ -115,6 +115,12 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
     "Página de resultado de evento: a busca é 'quem ganhou' e o tempo individual sai na cronometragem. A tabela de pace fica no guia da prova.",
   "smartwatch-para-treino":
     "Guia de compra: o leitor sai decidindo quais recursos precisa, não com uma conta. A calculadora de corrida entra como link para quem corre.",
+  "fone-para-treinar":
+    "Guia de compra: o leitor sai decidindo o tipo de fone, não com uma conta. A calculadora de corrida entra como link para quem corre.",
+  "cozinha-para-dieta-o-que-comprar":
+    "Guia de compra de utensílios: a decisão é o que comprar primeiro. O Monte seu Cardápio entra como link para quem quer planejar a semana.",
+  "acessorios-de-academia-strap-cinturao-luva":
+    "Guia de uso de acessórios: a decisão é quando usar cada um, observação de treino, não cálculo.",
 };
 
 export const SLUGS_SEM_FERRAMENTA = Object.keys(ARTIGOS_SEM_FERRAMENTA);
