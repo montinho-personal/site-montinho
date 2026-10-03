@@ -400,6 +400,13 @@ export type AnalyticsEvent =
   | "muaythai_frequency"
   | "muaythai_methodology_open"
   | "muaythai_tool_click"
+  /** Calculadora de Calorias nas Artes Marciais. `modality` e `preset`; nunca o peso nem as calorias. */
+  | "artesmarciais_calculator_view"
+  | "artesmarciais_calculator_use"
+  | "artesmarciais_modality"
+  | "artesmarciais_preset"
+  | "artesmarciais_methodology_open"
+  | "artesmarciais_tool_click"
   /** Calculadora de Calorias Pulando Corda. `pace`, `rounds` e `per_week`; nunca o peso. */
   /** Calculadora de Calorias na Bicicleta. Modo, faixa e frequência; nunca o peso nem a distância. */
   | "bike_calculator_view"

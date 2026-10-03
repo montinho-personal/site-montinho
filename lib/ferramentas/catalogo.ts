@@ -588,6 +588,17 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["muay thai", "muaythai", "boxe tailandes", "kickboxing", "manopla", "rounds", "luta", "arte marcial"],
   },
   {
+    id: "artesmarciais",
+    href: "/ferramentas/calculadora-calorias-artes-marciais",
+    nome: "Calculadora de Calorias nas Artes Marciais",
+    resultado: "Compare a mesma aula em judô, caratê, taekwondo, MMA e outras lutas.",
+    acao: "Calcular na minha luta",
+    tempo: "15 segundos",
+    categoria: "cardio",
+    icone: "faixa",
+    tags: ["artes marciais", "arte marcial", "luta", "judo", "karate", "carate", "taekwondo", "kickboxing", "mma", "jiu jitsu", "muay thai", "boxe", "randori", "kumite", "sparring"],
+  },
+  {
     id: "corda",
     href: "/ferramentas/calculadora-calorias-pular-corda",
     nome: "Calculadora de Calorias Pulando Corda",

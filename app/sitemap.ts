@@ -248,6 +248,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/ferramentas/calculadora-calorias-artes-marciais`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/ferramentas/calculadora-calorias-muay-thai`,
       lastModified: new Date(),
       changeFrequency: "monthly",

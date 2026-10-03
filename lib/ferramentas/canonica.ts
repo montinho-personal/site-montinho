@@ -113,6 +113,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Calorias Pulando Corda",
     motivo: "que conta só o tempo pulando dos seus blocos, pelo ritmo, e mostra quantos saltos a sessão teve",
   },
+  artesmarciais: {
+    href: "/ferramentas/calculadora-calorias-artes-marciais",
+    ancora: "Calculadora de Calorias nas Artes Marciais",
+    motivo: "que compara a mesma aula no jiu-jitsu, muay thai, judô, caratê, taekwondo, kickboxing, MMA e boxe, separando técnica de luta",
+  },
   muaythai: {
     href: "/ferramentas/calculadora-calorias-muay-thai",
     ancora: "Calculadora de Calorias no Muay Thai",

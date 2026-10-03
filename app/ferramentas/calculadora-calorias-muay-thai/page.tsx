@@ -291,6 +291,7 @@ export default function CalculadoraMuayThaiPage() {
           <div>
             <h3 className="text-xl font-bold text-white mb-3" style={h}>Leia também</h3>
             <ul className="space-y-2 text-gray-300">
+              <li>Pratica outra arte marcial? A <Link href="/ferramentas/calculadora-calorias-artes-marciais" className={ln}>Calculadora de Calorias nas Artes Marciais</Link> compara judô, caratê, taekwondo, kickboxing e MMA.</li>
               <li><Link href="/blog/muay-thai-emagrece" className={ln}>Muay thai emagrece? Calorias reais e o que esperar</Link></li>
               <li><Link href="/ferramentas/calculadora-calorias-boxe" className={ln}>Calculadora de Calorias no Boxe</Link></li>
               <li><Link href="/ferramentas/calculadora-calorias-jiu-jitsu" className={ln}>Calculadora de Calorias no Jiu-Jitsu</Link></li>
