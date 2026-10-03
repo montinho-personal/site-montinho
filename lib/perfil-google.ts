@@ -1,7 +1,7 @@
 /**
  * O Perfil da Empresa no Google, visto pelo site.
  *
- * O perfil existe e é forte (5,0 com 23 avaliações em 11/09/2026), mas o
+ * O perfil existe e é forte (5,0 com 28 avaliações em 03/10/2026), mas o
  * site não o citava em lugar nenhum: nenhum sameAs, nenhum hasMap, e o
  * profileUrl de data/testimonials.json vazio. O Google liga entidade a site
  * por esses sinais; sem eles, perfil e site ranqueiam separados.
