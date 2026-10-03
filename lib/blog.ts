@@ -64674,7 +64674,7 @@ A resposta é individual. Alguns apresentam aumento de LDL, outros não. A quali
   metaDescription: "Entenda a diferença entre carboidratos simples e complexos, qual usar antes e depois do treino, o índice glicêmico na prática e como distribuir ao longo do dia.",
   author: "Montinho Personal Trainer",
   date: "2026-06-28",
-  updatedAt: "2026-06-28",
+  updatedAt: "2026-10-03",
   category: "Nutrição",
   readTime: "8 min",
   content: `<p>Aveia ou banana? Arroz integral ou dextrose? A escolha do carboidrato certo no momento certo pode fazer diferença real no desempenho do treino e na recuperação muscular. Mas antes de escolher, é preciso entender o que separa um carboidrato simples de um complexo — e por que o índice glicêmico, sozinho, não conta toda a história.</p>
@@ -64693,6 +64693,31 @@ A classificação se baseia na estrutura química das moléculas de açúcar:
 - **Carboidratos complexos:** cadeias longas de múltiplos açúcares (polissacarídeos). Digestão mais lenta, absorção gradual, elevação mais estável da glicemia. Exemplos: amido (arroz, batata, aveia), fibras.
 
 Essa distinção é real, mas simplificada. O que realmente importa para a prática é a velocidade com que o carboidrato eleva a glicose no sangue — e aí entram o índice glicêmico e a carga glicêmica.
+
+### Quais são os 3 tipos de carboidratos?
+
+Pela estrutura química, os carboidratos se dividem em três grupos:
+
+1. **Monossacarídeos:** uma unidade de açúcar (glicose, frutose, galactose).
+2. **Dissacarídeos:** duas unidades (sacarose, lactose, maltose).
+3. **Polissacarídeos:** muitas unidades em cadeia (amido, glicogênio e fibras).
+
+Os dois primeiros são os "simples"; o terceiro, os "complexos".
+
+### Quais alimentos são carboidratos complexos?
+
+- **Grãos e cereais:** arroz (principalmente integral), aveia, milho, quinoa, trigo.
+- **Massas e pães**, de preferência integrais.
+- **Tubérculos e raízes:** batata, batata-doce, mandioca, inhame.
+- **Leguminosas:** feijão, lentilha, grão-de-bico, ervilha (que trazem também proteína e fibra).
+
+### É simples ou complexo? Os casos que mais confundem
+
+- **Pão:** o amido da farinha é complexo, mas o pão branco é refinado, tem pouca fibra e é digerido rápido (IG alto). Na prática, ele se comporta mais como um carboidrato rápido. O pão integral de verdade fica no meio do caminho.
+- **Batata inglesa:** é amido, portanto complexo, mas cozida tem IG alto. Mais um exemplo de que "complexo" não é sinônimo de "lento".
+- **Banana:** mistura os dois. Verde, tem mais amido; madura, mais açúcares simples. Por isso é um bom pré-treino.
+- **Tapioca:** é praticamente só amido de mandioca, ou seja, complexo, mas sem fibra e de digestão rápida. Funciona como carboidrato rápido.
+- **Frutas:** o açúcar delas é simples (frutose e glicose), mas vem com fibra, água e vitaminas. Não existe "fruta com carboidrato complexo" no sentido técnico, embora algumas, como banana verde, tenham amido.
 
 ## Índice Glicêmico vs Carga Glicêmica
 
@@ -64771,6 +64796,12 @@ Em dias sem treino, o gasto energético é menor e a demanda por reposição de 
 - **Ignorar o contexto da refeição completa:** o IG de um alimento muda quando consumido com proteína, gordura e fibras.
 - **Achar que integral é sempre melhor:** no pós-treino, a digestão rápida tem vantagem. O contexto importa.
 
+## Quais Carboidratos Devemos Evitar?
+
+Não existe carboidrato proibido. O que vale **limitar** são os que trazem muita caloria e pouca coisa a mais: refrigerante, suco adoçado, doces, balas, biscoitos recheados e açúcar adicionado em geral. A OMS recomenda que os açúcares livres fiquem abaixo de 10% das calorias do dia.
+
+Sobre "lista de carboidratos que engordam": nenhum alimento engorda sozinho. O que faz ganhar peso é o excesso de calorias no total. Os ultraprocessados e açucarados só tornam esse excesso mais fácil, porque saciam pouco.
+
 ## Perguntas Frequentes
 
 **Carboidrato simples engorda mais que o complexo?**
@@ -64792,6 +64823,26 @@ Se você treina em jejum, o foco no pós-treino é maior. Após o treino, priori
 
 `,
   faq: [
+    {
+      question: "Quais alimentos são carboidratos complexos?",
+      answer: "Arroz, aveia, milho, quinoa, massas e pães (de preferência integrais), batata, batata-doce, mandioca, inhame e leguminosas como feijão, lentilha e grão-de-bico.",
+    },
+    {
+      question: "O pão é um carboidrato simples ou complexo?",
+      answer: "O amido da farinha é um carboidrato complexo, mas o pão branco é refinado, tem pouca fibra e é digerido rápido, então na prática se comporta como carboidrato rápido. O pão integral tem digestão um pouco mais lenta.",
+    },
+    {
+      question: "Banana é carboidrato simples ou complexo?",
+      answer: "Os dois. A banana verde tem mais amido (complexo); a madura, mais açúcares simples. Por isso a banana madura é uma boa opção de 30 a 60 minutos antes do treino.",
+    },
+    {
+      question: "Quais são os 3 tipos de carboidratos?",
+      answer: "Monossacarídeos (glicose, frutose), dissacarídeos (sacarose, lactose) e polissacarídeos (amido, glicogênio e fibras). Os dois primeiros são chamados de simples; os polissacarídeos, de complexos.",
+    },
+    {
+      question: "Quais os carboidratos que devemos evitar?",
+      answer: "Nenhum é proibido, mas vale limitar açúcar adicionado, refrigerantes, sucos adoçados, doces e biscoitos recheados. A OMS recomenda que os açúcares livres fiquem abaixo de 10% das calorias diárias.",
+    },
     {
       question: "Carboidrato simples engorda mais que o complexo?",
       answer: "Não diretamente. O que engorda é o excesso calórico, independentemente da fonte. No entanto, carboidratos simples têm menor saciedade, o que pode facilitar o consumo excessivo. O tipo importa principalmente para timing e controle de fome, não como regra absoluta de emagrecimento.",
