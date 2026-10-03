@@ -8554,7 +8554,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   {
     slug: "deficit-calorico-como-calcular",
     title: "Déficit calórico: o que é e como calcular",
-    metaTitle: "Déficit Calórico: O Que É e Como Calcular",
+    metaTitle: "Déficit Calórico: Como Calcular Grátis (Passo a Passo)",
     metaDescription: "Entenda o que é déficit calórico, como calcular usando TDEE e Mifflin-St Jeor, e por que déficit moderado de 300-500 kcal/dia é mais eficaz para...",
     excerpt: "O déficit calórico é o princípio fundamental do emagrecimento. Aprenda a calcular o seu de forma correta e entenda por que ir além do moderado pode atrapalhar seus resultados.",
     faqSchema: [
