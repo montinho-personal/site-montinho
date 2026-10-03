@@ -7,6 +7,44 @@ import type { BlogPost } from "./blog";
  */
 export const HYROX_SP_2026_POSTS: BlogPost[] = [
   {
+    slug: "resultado-hyrox-sao-paulo-2026",
+    title: "Resultado do HYROX São Paulo 2026: vencedores e tempos",
+    metaTitle: "Resultado HYROX São Paulo 2026: Vencedores e Tempos",
+    metaDescription:
+      "Resultado do HYROX São Paulo 2026 (17 e 18/10, Anhembi): quem ganhou na Elite e nas principais categorias, tempos e onde ver o seu resultado oficial.",
+    excerpt:
+      "Vencedores e tempos do HYROX São Paulo 2026, e onde consultar o seu resultado oficial. Atualizado depois do evento.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-10-03",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["HYROX", "HYROX São Paulo", "resultado HYROX", "fitness racing"],
+    content: `<img src="/blog-images/hyrox-sao-paulo-2026-capa.webp" alt="Resultado do HYROX São Paulo 2026 — Distrito Anhembi, 17 e 18 de outubro" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p><strong>A prova ainda não aconteceu. O HYROX São Paulo 2026 é nos dias 17 e 18 de outubro, no Distrito Anhembi.</strong> Esta página é atualizada com os vencedores assim que o resultado oficial for divulgado.</p></blockquote>
+
+<h2>Quem ganhou o HYROX São Paulo 2026?</h2>
+<p><strong>Resultado: aguardando a prova.</strong> Os vencedores e os melhores tempos entram aqui depois do evento, conforme o resultado oficial.</p>
+
+<h2>Como ver o seu resultado do HYROX</h2>
+<p>Os tempos oficiais são publicados pelo HYROX logo após cada bateria, com o tempo total, cada trecho de corrida e cada estação. Para comparar o seu desempenho com uma meta realista, use a explicação de formato e tempos em <a href="/blog/hyrox-sao-paulo-2026">HYROX São Paulo 2026</a>.</p>
+
+<h2>Quando é o HYROX São Paulo 2026?</h2>
+<p><strong>Sábado e domingo, 17 e 18 de outubro de 2026</strong>, no Distrito Anhembi, em São Paulo. São 8 km de corrida divididos em 8 trechos de 1 km, cada um seguido de uma estação de exercício.</p>
+
+<h2>Não se compare</h2>
+<p>Quem sobe ao pódio tem a própria genética, rotina e história, com altos e baixos. O que importa para você é encontrar um treino que dê para seguir pelo resto da vida, com aderência e progressão. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://hyrox.com/event/hyrox-sao-paulo-2/" target="_blank" rel="noopener noreferrer">HYROX — HYROX São Paulo (oficial)</a></li>
+</ul>`,
+    faq: [
+      { question: "Quem ganhou o HYROX São Paulo 2026?", answer: "A prova acontece nos dias 17 e 18 de outubro de 2026, no Distrito Anhembi. Os vencedores entram nesta página assim que o resultado oficial for divulgado." },
+      { question: "Onde vejo meu resultado do HYROX?", answer: "Os tempos oficiais são publicados pelo HYROX logo após cada bateria, com o tempo total, os trechos de corrida e cada estação." },
+    ],
+  },
+  {
     slug: "hyrox-sao-paulo-2026",
     title: "HYROX São Paulo 2026: data, local, inscrição e como se preparar",
     metaTitle: "HYROX São Paulo 2026: Data, Local, Inscrição e Categorias",
@@ -57,7 +95,7 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
 <p>Para correr melhor os trechos de 1 km, veja <a href="/blog/como-melhorar-o-pace-na-corrida">como melhorar o pace na corrida</a>.</p>
 
 <h2>Resultados do HYROX São Paulo</h2>
-<p>Os tempos oficiais são publicados pelo HYROX logo após cada bateria. Esta página traz um resumo depois do evento.</p>
+<p>Os tempos oficiais são publicados pelo HYROX logo após cada bateria. Os vencedores e os melhores tempos saem em <a href="/blog/resultado-hyrox-sao-paulo-2026">resultado do HYROX São Paulo 2026</a>.</p>
 
 <h2>Não se compare</h2>
 <p>No HYROX você larga ao lado de atleta de elite e de quem está estreando. Não se compare com ninguém: cada um tem a própria genética, rotina e história. O que importa é terminar a sua prova e continuar treinando depois dela. Se quiser se preparar comigo, com força e corrida no mesmo plano, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
