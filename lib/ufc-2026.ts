@@ -23,7 +23,6 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <h2>Quem ganhou Natália Silva x Wang Cong?</h2>
 <p><strong>Resultado: aguardando a luta.</strong> A disputa pelo cinturão vago do peso-mosca feminino é a luta principal da noite, a última do card. Se vencer, Natália Silva se torna a primeira brasileira campeã da categoria.</p>
 
-<!--PALPITE:ufc332-->
 <h2>Resultados dos brasileiros no UFC 332</h2>
 <table><thead><tr><th>Luta</th><th>Parte do card</th><th>Resultado</th></tr></thead><tbody>
 <tr><td><strong>Natália Silva</strong> x Wang Cong</td><td>Principal (cinturão)</td><td>Aguardando</td></tr>
