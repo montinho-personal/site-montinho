@@ -4,6 +4,125 @@ import type { BlogPost } from "./blog";
  *  ofertas mudam de hora em hora; o artigo ensina a conta, não a vitrine. */
 export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
   {
+    slug: "smartwatch-para-treino",
+    title: "Smartwatch para treino: qual escolher para academia e corrida",
+    metaTitle: "Smartwatch para Treino: Qual Escolher para Academia e Corrida",
+    metaDescription:
+      "Como escolher smartwatch para academia e corrida: o que olhar (GPS, frequência cardíaca, bateria), o que ele mede mal, custo-benefício e como aproveitar promoção.",
+    excerpt:
+      "O que um smartwatch mede bem, o que mede mal e quais recursos valem o preço para quem faz musculação ou corrida.",
+    category: "Treinamento",
+    date: "2026-10-03",
+    readTime: "6 min",
+    author: "Montinho Personal Trainer",
+    tags: ["smartwatch", "relógio esportivo", "corrida", "academia", "promoção"],
+    content: `<p>Smartwatch é uma das compras mais procuradas na <a href="/blog/mega-oferta-prime-2026">Mega Oferta Prime</a> e na Black Friday. Antes de olhar o desconto, vale saber o que ele faz bem, o que faz mal e quais recursos você vai usar de verdade no treino.</p>
+
+<h2>O que um smartwatch mede bem (e o que mede mal)</h2>
+<ul>
+<li><strong>Frequência cardíaca:</strong> os relógios de pulso costumam acertar bem em repouso e em ritmo constante, como caminhada e corrida leve. Em musculação e em tiros, com o punho se mexendo e contraindo, a leitura piora.</li>
+<li><strong>Distância e pace:</strong> dependem do GPS. Com GPS no próprio relógio, a medida na rua é boa; sem ele, o relógio estima pela passada.</li>
+<li><strong>Calorias:</strong> é o ponto fraco. Um estudo da Universidade de Stanford com sete relógios encontrou bons resultados de frequência cardíaca, mas nenhum estimou o gasto de energia com erro aceitável. Use o número de calorias como tendência, não como conta para a dieta.</li>
+</ul>
+
+<h2>Smartwatch para academia: o que olhar</h2>
+<p>Na musculação, o relógio ajuda pouco a medir o treino em si. O que mais serve:</p>
+<ul>
+<li><strong>Cronômetro de descanso</strong> fácil de acionar.</li>
+<li><strong>Contagem de passos e de atividade do dia</strong>, que mostra o quanto você se mexe fora da academia.</li>
+<li><strong>Sono</strong>, para enxergar padrões (não como diagnóstico).</li>
+</ul>
+<p>Para a carga e as repetições, o que funciona é anotar o treino. Veja <a href="/blog/como-usar-smartwatch-musculacao">como usar o smartwatch na musculação</a>.</p>
+
+<h2>Smartwatch para corrida: o que olhar</h2>
+<ul>
+<li><strong>GPS integrado</strong>, para correr sem levar o celular.</li>
+<li><strong>Bateria com GPS ligado</strong> maior que o seu treino mais longo, com folga.</li>
+<li><strong>Tela legível no sol</strong> e botões físicos, que funcionam com a mão suada.</li>
+<li><strong>Compatibilidade com cinta de peito</strong>, se você quer frequência cardíaca precisa em tiros.</li>
+</ul>
+<p>Para o ritmo de cada meta de tempo, use a <a href="/ferramentas/calculadora-corrida">calculadora de corrida</a>.</p>
+
+<h2>Qual o melhor smartwatch custo-benefício?</h2>
+<p>O que tem os recursos que você vai usar, e nada a mais. Para academia e dia a dia, um modelo básico com frequência cardíaca, passos e sono resolve. Para corrida, GPS integrado é o recurso que justifica pagar mais. Recursos avançados, como métricas de treino e mapas, só valem para quem vai usá-los toda semana.</p>
+
+<h2>Smartwatch em promoção: como saber se vale</h2>
+<ul>
+<li><strong>Compare o modelo, não a marca:</strong> versões antigas aparecem com desconto grande; confira se têm os recursos da lista acima.</li>
+<li><strong>Confira a compatibilidade com o seu celular</strong> antes de comprar.</li>
+<li><strong>Anote o preço antes do evento</strong> e compare na Black Friday (27/11).</li>
+<li><strong>Prefira vendedor oficial</strong> e confira a garantia no Brasil.</li>
+</ul>
+
+<h2>O equipamento não treina por você</h2>
+<p>Nenhum aparelho substitui o treino feito com constância. Não compare o seu número com o de ninguém: cada um tem a própria genética, rotina e história. Se quiser ajuda para transformar os dados em um plano que dá para seguir, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.mdpi.com/2075-4426/7/2/3" target="_blank" rel="noopener noreferrer">Shcherbina A, et al. Accuracy in Wrist-Worn, Sensor-Based Measurements of Heart Rate and Energy Expenditure in a Diverse Cohort. Journal of Personalized Medicine, 2017</a></li>
+</ul>`,
+    faq: [
+      { question: "Qual o melhor smartwatch para academia?", answer: "Um modelo com frequência cardíaca, contagem de passos, sono e cronômetro fácil de usar resolve. Na musculação, o relógio mede pouco o treino em si; carga e repetições se acompanham anotando." },
+      { question: "Qual o melhor smartwatch para corrida?", answer: "Um com GPS integrado, bateria com GPS ligado maior que o seu treino mais longo e tela legível no sol." },
+      { question: "O smartwatch mede as calorias certo?", answer: "Não com precisão. Um estudo de Stanford com sete relógios encontrou boa medida de frequência cardíaca, mas nenhum estimou o gasto de energia com erro aceitável. Use como tendência." },
+      { question: "Vale a pena comprar smartwatch na Mega Oferta Prime ou na Black Friday?", answer: "Vale se o modelo tiver os recursos que você vai usar e o preço ficar abaixo do normal. Confira a compatibilidade com o celular e a garantia no Brasil." },
+    ],
+  },
+  {
+    slug: "balanca-de-bioimpedancia-vale-a-pena",
+    title: "Balança de bioimpedância vale a pena? Como escolher e como usar",
+    metaTitle: "Balança de Bioimpedância Vale a Pena? Como Escolher e Usar",
+    metaDescription:
+      "Balança de bioimpedância e balança inteligente valem a pena? O que ela mede, por que o percentual de gordura oscila, como usar do jeito certo e o que olhar na promoção.",
+    excerpt:
+      "O que a balança de bioimpedância mede, por que os números oscilam de um dia para o outro e como usar para acompanhar tendência.",
+    category: "Emagrecimento",
+    date: "2026-10-03",
+    readTime: "5 min",
+    author: "Montinho Personal Trainer",
+    tags: ["balança de bioimpedância", "balança inteligente", "composição corporal", "percentual de gordura", "promoção"],
+    content: `<p>A balança de bioimpedância, vendida como "balança inteligente" ou "balança corporal", é uma das buscas que mais crescem em época de promoção, como a <a href="/blog/mega-oferta-prime-2026">Mega Oferta Prime</a> e a Black Friday. Ela pode ser útil, desde que você saiba o que o número significa.</p>
+
+<h2>O que a balança de bioimpedância mede</h2>
+<p>Ela passa uma corrente elétrica fraca pelo corpo e estima, por fórmulas, a gordura, a massa magra e a água. <strong>O peso é medido; o resto é estimado.</strong> Como a corrente passa mais fácil pela água, qualquer mudança de hidratação mexe no resultado.</p>
+
+<h2>Por que o percentual de gordura muda de um dia para o outro</h2>
+<p>Água bebida, refeição, treino, suor, ciclo menstrual e até a pele do pé seca ou úmida mudam a leitura. É por isso que o percentual pode "subir" de um dia para o outro sem você ter ganhado gordura. A explicação completa está em <a href="/blog/bioimpedancia-como-interpretar">como interpretar a bioimpedância</a>.</p>
+
+<h2>Balança de bioimpedância vale a pena?</h2>
+<p>Vale para quem vai usar do jeito certo: <strong>olhar a tendência de semanas, não o número do dia</strong>. Como ferramenta de acompanhamento em casa, ajuda a ver se o peso que cai é mais gordura ou mais água. Não vale como exame preciso nem para se comparar com o resultado de outra balança ou de outra pessoa.</p>
+
+<h2>Como usar para o número fazer sentido</h2>
+<ul>
+<li>Pese-se <strong>sempre na mesma condição</strong>: de manhã, em jejum, depois de ir ao banheiro, antes de treinar.</li>
+<li>Use a <strong>média da semana</strong>, não a medida isolada.</li>
+<li>Compare <strong>sempre a mesma balança</strong>: balanças diferentes usam fórmulas diferentes.</li>
+<li>Junte com fita métrica e fotos, que mostram mudança que a balança não pega.</li>
+</ul>
+
+<h2>Balança de bioimpedância custo-benefício: o que olhar</h2>
+<ul>
+<li><strong>Eletrodos nos pés e nas mãos</strong> (com alça) leem o corpo inteiro; só nos pés, a corrente passa mais pelas pernas.</li>
+<li><strong>Aplicativo que guarda o histórico</strong> e mostra gráfico de tendência.</li>
+<li><strong>Perfis de usuário</strong>, se mais gente em casa vai usar.</li>
+<li><strong>Compatibilidade com o seu celular</strong> e garantia no Brasil.</li>
+</ul>
+<p>Quem usa marcapasso ou outro dispositivo eletrônico implantado, ou está grávida, deve conferir as orientações do fabricante e falar com o médico antes de usar.</p>
+
+<h2>Já tem o resultado? Traduza em quilos</h2>
+<p>Coloque o seu peso e o percentual na calculadora abaixo para ver quanto disso é gordura e quanto é massa magra.</p>
+
+<h2>O equipamento não treina por você</h2>
+<p>Nenhum aparelho substitui o treino feito com constância. Não compare o seu número com o de ninguém: cada um tem a própria genética, rotina e história. Se quiser ajuda para transformar os dados em um plano que dá para seguir, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+`,
+    faq: [
+      { question: "Balança de bioimpedância é confiável?", answer: "O peso é confiável; gordura, massa magra e água são estimativas que oscilam com a hidratação. Serve para acompanhar a tendência de semanas, sempre na mesma condição e na mesma balança." },
+      { question: "Qual a melhor balança de bioimpedância?", answer: "A que tem eletrodos nos pés e nas mãos, aplicativo com histórico e gráfico de tendência e garantia no Brasil. Mais importante que o modelo é usar sempre do mesmo jeito." },
+      { question: "Por que meu percentual de gordura mudou de um dia para o outro?", answer: "Porque a bioimpedância depende da água do corpo. Refeição, treino, suor e hidratação mudam a leitura sem mudar a gordura." },
+      { question: "Vale a pena comprar balança inteligente em promoção?", answer: "Vale se você vai usar para acompanhar tendência, com medidas sempre na mesma condição. Não vale como exame preciso." },
+    ],
+  },
+  {
     slug: "mega-oferta-prime-2026",
     title: "Mega Oferta Prime 2026: data, até quando vai e o que vale comprar para treinar",
     metaTitle: "Mega Oferta Prime 2026: Data, Até Quando Vai e o Que Comprar",
@@ -40,6 +159,25 @@ export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
 <li><strong>Quem vende:</strong> na Amazon, o mesmo produto aparece por vários vendedores. Prefira a própria Amazon ou a loja oficial da marca.</li>
 </ul>
 
+<h2>O que comprar no Prime Day para academia</h2>
+<p>As compras que mais fazem diferença para quem treina, com o que olhar antes de cada uma:</p>
+<ul>
+<li><strong>Smartwatch:</strong> GPS para quem corre; frequência cardíaca, passos e sono para quem faz academia. Guia: <a href="/blog/smartwatch-para-treino">smartwatch para treino</a>.</li>
+<li><strong>Balança de bioimpedância:</strong> útil para acompanhar tendência, não como exame. Guia: <a href="/blog/balanca-de-bioimpedancia-vale-a-pena">balança de bioimpedância vale a pena?</a></li>
+<li><strong>Equipamento para treinar em casa:</strong> elásticos, halteres, kettlebell, corda. Lista por orçamento em <a href="/blog/como-montar-academia-em-casa">como montar academia em casa</a>.</li>
+<li><strong>Tênis:</strong> <a href="/blog/como-escolher-tenis-para-treinar">como escolher tênis para treinar</a>.</li>
+<li><strong>Pistola massageadora e rolo:</strong> <a href="/blog/massagem-pistola-foam-roller-qual-melhor">pistola ou foam roller, qual vale mais</a>.</li>
+</ul>
+
+<h2>Pré-treino, barrinha, pasta de amendoim e multivitamínico</h2>
+<ul>
+<li><strong>Pré-treino:</strong> o ingrediente com melhor evidência é a cafeína, que um café já entrega. Se for comprar, compare a cafeína por dose. Veja <a href="/blog/pre-treino-vale-a-pena">pré-treino vale a pena?</a></li>
+<li><strong>Barra de proteína:</strong> compare proteína por barra e preço por grama de proteína; muitas têm mais açúcar e gordura que proteína. Veja <a href="/blog/barrinha-de-proteina-vale-a-pena">barrinha de proteína vale a pena?</a></li>
+<li><strong>Pasta de amendoim:</strong> a integral tem um ingrediente só, amendoim. Açúcar e óleo adicionados aparecem na lista de ingredientes.</li>
+<li><strong>Multivitamínico:</strong> não substitui comida variada. Quem suspeita de deficiência deve fazer exame e conversar com o médico antes.</li>
+<li><strong>Coqueteleira:</strong> tampa com rosca e trava evita vazamento na mochila; é o que vale olhar.</li>
+</ul>
+
 <h2>Equipamento para treinar em casa</h2>
 <p>Elástico, halteres, tornozeleira, tapete e corda são as compras que mais rendem para quem treina em casa. Antes de comprar, pense no treino que você vai fazer com eles: halter que fica parado no canto não vale nem com 80% de desconto. Ideias de treino em <a href="/blog/treino-para-quem-odeia-academia">treino para quem odeia academia</a>.</p>
 
@@ -60,6 +198,7 @@ export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
       { question: "Mega Oferta Prime vai até quando?", answer: "Até domingo, 11 de outubro de 2026. Ofertas relâmpago podem acabar antes, quando o estoque esgota." },
       { question: "O que é a Mega Oferta Amazon Prime?", answer: "Evento de descontos da Amazon exclusivo para assinantes Prime, com descontos anunciados de até 80% e cupons exclusivos. Esta é a quarta edição no Brasil." },
       { question: "Quando será a próxima promoção da Amazon em 2026?", answer: "A próxima grande data é a Black Friday, em 27 de novembro de 2026, seguida da Cyber Monday, em 30 de novembro." },
+      { question: "O que comprar no Prime Day para academia?", answer: "As compras que mais fazem diferença são as que você vai usar toda semana: suplemento que já usa (pelo preço por dose), equipamento para treinar em casa, tênis, smartwatch com os recursos certos e balança para acompanhar tendência." },
       { question: "Vale a pena comprar whey e creatina na Mega Oferta Prime?", answer: "Vale se o preço por dose ficar abaixo do que você paga normalmente. No whey, divida o preço pelo total de proteína do pote; na creatina, pelos dias que o pote dura." },
     ],
   },

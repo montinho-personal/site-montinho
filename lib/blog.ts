@@ -112494,7 +112494,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Dá para treinar bem em casa gastando pouco — se você comprar as coisas certas na ordem certa. Monto aqui três faixas de orçamento realistas em reais e falo com honestidade sobre quando a academia comum ainda é a melhor escolha.",
     category: "Treino",
     date: "2026-08-13",
-    updatedAt: "2026-08-21",
+    updatedAt: "2026-10-03",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["academia em casa", "home gym", "treino em casa", "equipamentos de treino", "orçamento fitness"],
@@ -112574,6 +112574,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Banco reforçado, piso de borracha, e com o tempo: polia, barra fixa de parede.</strong></li>
 </ul>
 <p><strong>Dica de ouro: mercado de usados.</strong> Equipamento de musculação é feito de ferro — não estraga. Racks, barras e anilhas usados no OLX e Marketplace saem por 40-60% do preço de novo, e boa parte foi comprada por gente que desistiu em dois meses. Aproveite a desistência dos outros a seu favor.</p>
+<h2>Comprando na Mega Oferta Prime ou na Black Friday: o que olhar em cada item</h2>
+<ul>
+<li><strong>Mini band e kit de elásticos:</strong> prefira kits com várias resistências, identificadas por cor; elástico de tecido escorrega menos na coxa que o de látex.</li>
+<li><strong>Halteres:</strong> os ajustáveis economizam espaço e dinheiro quando você vai precisar de várias cargas; confira se a trava é firme e a carga máxima.</li>
+<li><strong>Kettlebell:</strong> uma carga que você consiga balançar com técnica vale mais que um kit. Veja <a href="/blog/kettlebell-para-musculacao">kettlebell para musculação</a>.</li>
+<li><strong>Corda de pular:</strong> cabo de aço com rolamento gira melhor; ajuste o comprimento à sua altura.</li>
+<li><strong>Barra de porta:</strong> confira a largura do batente e a carga máxima antes de comprar.</li>
+<li><strong>Banco:</strong> estável, com encosto regulável; banco que balança é risco.</li>
+<li><strong>Colchonete ou tapete:</strong> mais grosso para abdominal e alongamento, mais fino e firme para exercícios em pé.</li>
+</ul>
+<p>Guia dos eventos: <a href="/blog/mega-oferta-prime-2026">Mega Oferta Prime 2026</a>.</p>
+
 <h2>O que NÃO comprar no início</h2>
 <ul>
 <li><strong>Esteira ou bicicleta cara:</strong> R$2.000 – R$8.000 para algo que a rua faz de graça. É a compra mais abandonada do Brasil — o cabideiro mais caro da casa.</li>

@@ -113,6 +113,8 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
     "Página de resultado de evento: a busca é 'quem ganhou' e o tempo individual sai na cronometragem. A tabela de pace fica no guia da prova.",
   "resultado-maratona-de-brasilia-2026":
     "Página de resultado de evento: a busca é 'quem ganhou' e o tempo individual sai na cronometragem. A tabela de pace fica no guia da prova.",
+  "smartwatch-para-treino":
+    "Guia de compra: o leitor sai decidindo quais recursos precisa, não com uma conta. A calculadora de corrida entra como link para quem corre.",
 };
 
 export const SLUGS_SEM_FERRAMENTA = Object.keys(ARTIGOS_SEM_FERRAMENTA);
