@@ -133,25 +133,26 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-03",
+    updatedAt: "2026-10-04",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC 332", "resultado UFC", "Natália Silva", "Deiveson Figueiredo", "Johnny Walker"],
     content: `<img src="/blog-images/ufc-332-natalia-silva-capa.webp" alt="Resultado do UFC 332 — Natália Silva x Wang Cong" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p><strong>UFC 332 em andamento.</strong> O evento é hoje, sábado, 3 de outubro, em Salt Lake City. Os resultados dos brasileiros do card preliminar já saíram; a luta principal e o co-principal entram aqui assim que forem confirmados.</p></blockquote>
+<blockquote><p><strong>UFC 332 terminou.</strong> O evento foi no sábado, 3 de outubro, no Delta Center, em Salt Lake City. Resultado confirmado pelo UFC e por mais de um veículo de imprensa.</p></blockquote>
 
 <h2>Quem ganhou Natália Silva x Wang Cong?</h2>
-<p><strong>Resultado: aguardando a luta.</strong> A disputa pelo cinturão vago do peso-mosca feminino é a luta principal da noite, a última do card. Se vencer, Natália Silva se torna a primeira brasileira campeã da categoria.</p>
+<p><strong>Natália Silva venceu Wang Cong por decisão unânime</strong> (48-47, 48-47 e 49-46) e conquistou o cinturão vago do peso-mosca feminino do UFC. Ela é a <strong>primeira brasileira campeã da categoria</strong>, e o Brasil passa a ter dois títulos do UFC: o peso-mosca com Natália e o peso-palha com Mackenzie Dern.</p>
 
 <h2>Resultados dos brasileiros no UFC 332</h2>
 <table><thead><tr><th>Luta</th><th>Parte do card</th><th>Resultado</th></tr></thead><tbody>
-<tr><td><strong>Natália Silva</strong> x Wang Cong</td><td>Principal (cinturão)</td><td>Aguardando</td></tr>
-<tr><td><strong>Deiveson Figueiredo</strong> x Payton Talbott</td><td>Co-principal</td><td>Aguardando</td></tr>
+<tr><td><strong>Natália Silva</strong> x Wang Cong</td><td>Principal (cinturão)</td><td><strong>Natália venceu</strong> por decisão unânime e é a campeã do peso-mosca</td></tr>
+<tr><td><strong>Deiveson Figueiredo</strong> x Payton Talbott</td><td>Co-principal</td><td>Talbott venceu por TKO (socos), no 1º round, aos 2min09</td></tr>
 <tr><td><strong>Johnny Walker</strong> x Mick Parkin</td><td>Preliminar</td><td><strong>Walker venceu</strong> por nocaute (joelhada), no 1º round, aos 3min35</td></tr>
 <tr><td><strong>Rafael dos Anjos</strong> x Alexander Hernandez</td><td>Preliminar</td><td>Hernandez venceu por TKO (socos), no 2º round, aos 3min12</td></tr>
 </tbody></table>
 
-<h2>Que horas é a luta da Natália Silva?</h2>
-<p>O card principal começa às 21h (Brasília), e a luta principal é a última da noite. Por isso ela costuma começar depois da meia-noite, a depender da duração das lutas anteriores. Onde assistir e o card completo estão em <a href="/blog/ufc-332-natalia-silva">UFC 332: Natália Silva x Wang Cong</a>; adversários e horários de cada brasileiro, em <a href="/blog/brasileiros-ufc-332">brasileiros no UFC 332</a>.</p>
+<h2>Como foi a luta da Natália Silva</h2>
+<p>A luta foi nos cinco rounds. Natália abriu vantagem e derrubou Wang com um chute na cabeça no 2º round; a chinesa reagiu e a decisão saiu dividida em placares apertados, todos a favor da brasileira. Veja também o card completo e onde assistir em <a href="/blog/ufc-332-natalia-silva">UFC 332: Natália Silva x Wang Cong</a>; adversários e horários de cada brasileiro, em <a href="/blog/brasileiros-ufc-332">brasileiros no UFC 332</a>.</p>
 
 <h2>Como os lutadores chegaram à luta</h2>
 <p>Todos passaram pela pesagem na sexta. Veja como foi em <a href="/blog/pesagem-ufc-332">pesagem do UFC 332</a> e como funciona o processo em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>.</p>
@@ -162,13 +163,17 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <h2>Fontes</h2>
 <ul>
 <li><a href="https://www.ufc.com.br/event/ufc-332" target="_blank" rel="noopener noreferrer">UFC — UFC 332 (card oficial)</a></li>
+<li><a href="https://www.metropoles.com/esportes/ufc-332-natalia-silva-vence-wang-cong-e-conquista-cinturao-peso-mosca" target="_blank" rel="noopener noreferrer">Metrópoles — Natália Silva vence Wang Cong e conquista cinturão peso-mosca</a></li>
+<li><a href="https://www.espn.com/mma/story/_/id/50068663/ufc-332-live-results-analysis-natalia-silva-vs-wang-cong" target="_blank" rel="noopener noreferrer">ESPN — UFC 332 results: Natalia Silva wins women's flyweight title</a></li>
+<li>Veículos consultados: Ag. Fight, Yahoo Sports, Cageside Press, MMA News.</li>
 </ul>`,
     faq: [
-      { question: "Quem ganhou o UFC 332?", answer: "No card preliminar, Johnny Walker venceu Mick Parkin por nocaute no 1º round e Alexander Hernandez venceu Rafael dos Anjos por TKO no 2º round. A luta principal e o co-principal entram nesta página assim que terminarem." },
+      { question: "Quem ganhou o UFC 332?", answer: "Na luta principal, Natália Silva venceu Wang Cong por decisão unânime e conquistou o cinturão do peso-mosca. No co-principal, Payton Talbott venceu Deiveson Figueiredo por TKO no 1º round. No card preliminar, Johnny Walker venceu Mick Parkin por nocaute e Alexander Hernandez venceu Rafael dos Anjos por TKO." },
+      { question: "Quem ganhou Deiveson Figueiredo x Payton Talbott?", answer: "Payton Talbott, por TKO (socos), aos 2min09 do 1º round, no co-principal." },
       { question: "Quem ganhou Johnny Walker x Mick Parkin?", answer: "Johnny Walker, por nocaute (joelhada), aos 3min35 do 1º round, na estreia no peso-pesado." },
       { question: "Quem ganhou Rafael dos Anjos x Alexander Hernandez?", answer: "Alexander Hernandez, por TKO, aos 3min12 do 2º round." },
-      { question: "Quem ganhou Natália Silva x Wang Cong?", answer: "A luta é a principal do UFC 332, na noite de sábado, 3/10. O resultado entra aqui assim que for confirmado." },
-      { question: "Que horas luta a Natália Silva no UFC 332?", answer: "O card principal começa às 21h (Brasília) e a luta dela é a última da noite, por isso costuma começar depois da meia-noite." },
+      { question: "Quem ganhou Natália Silva x Wang Cong?", answer: "Natália Silva, por decisão unânime (48-47, 48-47 e 49-46), conquistando o cinturão vago do peso-mosca feminino. É a primeira brasileira campeã da categoria." },
+      { question: "Natália Silva é campeã do UFC?", answer: "Sim. Ao vencer Wang Cong no UFC 332, ela conquistou o cinturão do peso-mosca feminino e se tornou a primeira brasileira campeã da categoria." },
     ],
   },
   {
@@ -431,10 +436,11 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-09-29",
+    updatedAt: "2026-10-04",
     readTime: "4 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC 332", "brasileiros no UFC", "Natália Silva", "Deiveson Figueiredo", "Johnny Walker"],
-    content: `<p>Quatro brasileiros lutam no <strong>UFC 332</strong>, no <strong>sábado, 3 de outubro</strong>, em Salt Lake City (EUA). O card preliminar começa às <strong>17h</strong> e o principal às <strong>21h</strong> (Brasília), com transmissão pelo <strong>Paramount+</strong> e pelo UFC Fight Pass. O resultado de cada um entra aqui na noite da luta.</p>
+    content: `<p>Quatro brasileiros lutaram no <strong>UFC 332</strong>, no <strong>sábado, 3 de outubro</strong>, em Salt Lake City (EUA). <strong>Natália Silva foi campeã do peso-mosca.</strong> Os resultados completos estão em <a href="/blog/resultado-ufc-332">resultado do UFC 332</a>.</p>
 
 <h2>Natália Silva x Wang Cong — luta principal</h2>
 <p>A mineira de Timóteo disputa o cinturão vago do peso-mosca feminino (até 56,7 kg). Ela enfrentaria a campeã Valentina Shevchenko, que se lesionou. Se vencer, será a primeira brasileira campeã da categoria. Detalhes em <a href="/blog/ufc-332-natalia-silva">UFC 332: Natália Silva x Wang Cong</a>.</p>
@@ -450,7 +456,12 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <p>O ex-campeão do peso-leve perdeu para o norte-americano Alexander Hernandez por <strong>TKO</strong>, aos 3min12 do 2º round, em seu retorno ao octógono.</p>
 
 <h2>Resultados dos brasileiros</h2>
-<p>Walker venceu Parkin por nocaute; dos Anjos perdeu para Hernandez por TKO. Os resultados de Natália Silva e Deiveson Figueiredo entram aqui assim que saírem.</p>
+<ul>
+<li><strong>Natália Silva:</strong> venceu Wang Cong por decisão unânime e é a campeã do peso-mosca.</li>
+<li><strong>Deiveson Figueiredo:</strong> perdeu para Payton Talbott por TKO no 1º round.</li>
+<li><strong>Johnny Walker:</strong> venceu Mick Parkin por nocaute (joelhada) no 1º round.</li>
+<li><strong>Rafael dos Anjos:</strong> perdeu para Alexander Hernandez por TKO no 2º round.</li>
+</ul>
 
 <h2>Como os lutadores chegam à balança</h2>
 <p>Todos passam pela pesagem na véspera — e muitos fazem corte de peso. Entenda o processo e as categorias em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>, e como eles treinam em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
