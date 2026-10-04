@@ -137,7 +137,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC 332", "resultado UFC", "Natália Silva", "Deiveson Figueiredo", "Johnny Walker"],
     content: `<img src="/blog-images/ufc-332-natalia-silva-capa.webp" alt="Resultado do UFC 332 — Natália Silva x Wang Cong" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p><strong>As lutas ainda não aconteceram.</strong> O UFC 332 é hoje, sábado, 3 de outubro: card preliminar às 17h e principal às 21h (Brasília). Esta página é atualizada com o resultado de cada luta assim que ele for confirmado.</p></blockquote>
+<blockquote><p><strong>UFC 332 em andamento.</strong> O evento é hoje, sábado, 3 de outubro, em Salt Lake City. Os resultados dos brasileiros do card preliminar já saíram; a luta principal e o co-principal entram aqui assim que forem confirmados.</p></blockquote>
 
 <h2>Quem ganhou Natália Silva x Wang Cong?</h2>
 <p><strong>Resultado: aguardando a luta.</strong> A disputa pelo cinturão vago do peso-mosca feminino é a luta principal da noite, a última do card. Se vencer, Natália Silva se torna a primeira brasileira campeã da categoria.</p>
@@ -146,8 +146,8 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <table><thead><tr><th>Luta</th><th>Parte do card</th><th>Resultado</th></tr></thead><tbody>
 <tr><td><strong>Natália Silva</strong> x Wang Cong</td><td>Principal (cinturão)</td><td>Aguardando</td></tr>
 <tr><td><strong>Deiveson Figueiredo</strong> x Payton Talbott</td><td>Co-principal</td><td>Aguardando</td></tr>
-<tr><td><strong>Johnny Walker</strong> x Mick Parkin</td><td>Preliminar</td><td>Aguardando</td></tr>
-<tr><td><strong>Rafael dos Anjos</strong> x Alexander Hernandez</td><td>Preliminar</td><td>Aguardando</td></tr>
+<tr><td><strong>Johnny Walker</strong> x Mick Parkin</td><td>Preliminar</td><td><strong>Walker venceu</strong> por nocaute (joelhada), no 1º round, aos 3min35</td></tr>
+<tr><td><strong>Rafael dos Anjos</strong> x Alexander Hernandez</td><td>Preliminar</td><td>Hernandez venceu por TKO (socos), no 2º round, aos 3min12</td></tr>
 </tbody></table>
 
 <h2>Que horas é a luta da Natália Silva?</h2>
@@ -164,7 +164,9 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <li><a href="https://www.ufc.com.br/event/ufc-332" target="_blank" rel="noopener noreferrer">UFC — UFC 332 (card oficial)</a></li>
 </ul>`,
     faq: [
-      { question: "Quem ganhou o UFC 332?", answer: "As lutas acontecem na noite deste sábado, 3/10. O resultado entra nesta página assim que cada luta terminar." },
+      { question: "Quem ganhou o UFC 332?", answer: "No card preliminar, Johnny Walker venceu Mick Parkin por nocaute no 1º round e Alexander Hernandez venceu Rafael dos Anjos por TKO no 2º round. A luta principal e o co-principal entram nesta página assim que terminarem." },
+      { question: "Quem ganhou Johnny Walker x Mick Parkin?", answer: "Johnny Walker, por nocaute (joelhada), aos 3min35 do 1º round, na estreia no peso-pesado." },
+      { question: "Quem ganhou Rafael dos Anjos x Alexander Hernandez?", answer: "Alexander Hernandez, por TKO, aos 3min12 do 2º round." },
       { question: "Quem ganhou Natália Silva x Wang Cong?", answer: "A luta é a principal do UFC 332, na noite de sábado, 3/10. O resultado entra aqui assim que for confirmado." },
       { question: "Que horas luta a Natália Silva no UFC 332?", answer: "O card principal começa às 21h (Brasília) e a luta dela é a última da noite, por isso costuma começar depois da meia-noite." },
     ],
@@ -442,13 +444,13 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <p>Ex-campeão do peso-mosca, Deiveson hoje luta no peso-galo (até 61,2 kg) e enfrenta o norte-americano Payton Talbott, um dos nomes em ascensão da divisão.</p>
 
 <h2>Johnny Walker x Mick Parkin — card preliminar</h2>
-<p>Johnny Walker faz a estreia no peso-pesado contra o inglês Mick Parkin.</p>
+<p>Johnny Walker fez a estreia no peso-pesado contra o inglês Mick Parkin e <strong>venceu por nocaute</strong>: uma joelhada na trocação de clinch, aos 3min35 do 1º round.</p>
 
 <h2>Rafael dos Anjos x Alexander Hernandez — card preliminar</h2>
-<p>O veterano ex-campeão do peso-leve encara o norte-americano Alexander Hernandez.</p>
+<p>O ex-campeão do peso-leve perdeu para o norte-americano Alexander Hernandez por <strong>TKO</strong>, aos 3min12 do 2º round, em seu retorno ao octógono.</p>
 
 <h2>Resultados dos brasileiros</h2>
-<p>Esta seção é atualizada ao fim de cada luta, na noite de sábado.</p>
+<p>Walker venceu Parkin por nocaute; dos Anjos perdeu para Hernandez por TKO. Os resultados de Natália Silva e Deiveson Figueiredo entram aqui assim que saírem.</p>
 
 <h2>Como os lutadores chegam à balança</h2>
 <p>Todos passam pela pesagem na véspera — e muitos fazem corte de peso. Entenda o processo e as categorias em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>, e como eles treinam em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
