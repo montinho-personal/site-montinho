@@ -331,3 +331,16 @@ escassez ("número limitado de alunos"). Preservados: URL, H1, title, meta
 description, schema, mensagens do WhatsApp, data-cta/eventos. Comparar
 taxa de clique no WhatsApp/sessão e leads com Ref da LP: 14 dias antes ×
 14 dias depois.
+
+## 2026-10-05 — Mapa Muscular: páginas de grupo (/exercicios/*)
+
+Seções `extras` a partir dos prints: peito, glúteos, posterior de ombro,
+costas (description nova aprovada), bíceps, tríceps, abdômen, quadríceps.
+
+- **Pauta: "treino de abdômen rápido"** (Outras pessoas pesquisaram, em
+  exercícios para abdômen). Canibalização: já existem
+  `treino-de-abdomen-em-casa`, `quantos-abdominais-por-dia`,
+  `treino-de-30-minutos-funciona` e `abdomen-inferior-exercicios`. Antes
+  de artigo novo, avaliar virar seção "treino rápido (10–15 min)" em
+  `treino-de-abdomen-em-casa`. Pedir prints de "treino de abdômen rápido".
+- Pauta: "treino de costas completo pdf" (isca, fora da página de grupo).
