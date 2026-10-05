@@ -83,6 +83,12 @@ export const EDITORIAL: Record<GrupoSlug, EditorialGrupo> = {
     resposta: "A elevação lateral, em suas variações, é o exercício que mais trabalha a parte do ombro responsável pela largura. Desenvolvimentos ajudam como secundário.",
     comoEscolher: "Halteres, polia, máquina e elástico mudam onde o exercício fica mais pesado no movimento. Vale escolher a variação que você consegue fazer com controle e ir aumentando repetições e carga.",
     emCasa: "Elevação lateral com halteres, garrafas ou elástico preso sob os pés.",
+    extras: [
+      { h2: "Qual o melhor exercício para deltoide lateral?", p: "A elevação lateral, que é a função dele: afastar o braço do corpo. O deltoide lateral é o que dá largura aos ombros. Também chamado de deltoide médio ou medial; é o mesmo músculo." },
+      { h2: "Elevação lateral com halteres, na polia ou na máquina?", p: "Com halteres é a mais prática e fácil de progredir, mas a tensão cai na parte de baixo do movimento. Na polia baixa (um braço de cada vez), a tensão fica constante. Na máquina com apoio no cotovelo, é mais fácil isolar e o trapézio ajuda menos. Vale usar mais de uma." },
+      { h2: "Deltoide lateral com elástico ou mini band", p: "Elástico preso sob os pés ou mini band nos punhos funcionam para elevação lateral em casa. A resistência aumenta conforme o braço sobe, o que deixa a parte de cima mais pesada." },
+      { h2: "Lateral e posterior no mesmo treino", p: "Combina bem: os dois são músculos pequenos, recuperam rápido e o desenvolvimento quase não os cobre. Uma elevação lateral e um crucifixo inverso ou face pull fecham o ombro junto com o desenvolvimento." },
+    ],
     artigos: [{ slug: "como-fazer-elevacao-lateral", texto: "como fazer elevação lateral" }, { slug: "treino-de-ombros-hipertrofia", texto: "treino de ombros" }],
     searchDemand: "media", isIndexable: true,
   }),
