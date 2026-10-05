@@ -181,12 +181,12 @@ export function explica(e: Entrada, nomeExercicio?: string): string {
   const perto = e.rir <= 1;
   const longe = e.rir >= 3;
   if (e.demanda === "isolador" && perto)
-    return `Apesar de ${nomeExercicio ? nomeExercicio.toLowerCase() : "ser"} um isolador, a série terminou muito perto da falha. Um pouco mais de descanso ajuda a preservar as próximas séries.`;
+    return `Apesar de ${nomeExercicio ? nomeExercicio.toLowerCase() + " ser" : "ser"} um isolador, a série terminou muito perto da falha. Um pouco mais de descanso ajuda a preservar as próximas séries.`;
   if (e.demanda === "isolador")
     return `Como ${nomeExercicio ? nomeExercicio.toLowerCase() + " é" : "é"} um isolador e a série ${longe ? "terminou longe da falha" : "não foi até a falha"}, um descanso mais curto tende a ser suficiente.`;
   if (e.objetivo === "forca" || e.objetivo === "potencia")
     return `${ex} ${NOME_DEMANDA[e.demanda]}, e no treino de ${e.objetivo === "forca" ? "força" : "potência"} o que importa é repetir a carga e a qualidade. Descansos mais longos ajudam a chegar inteiro na próxima série.`;
-  return `${ex} ${NOME_DEMANDA[e.demanda]}${perto ? " e a sua série terminou muito perto da falha" : ""}. ${perto || e.demanda === "muito_exigente" ? "Mais descanso pode ajudar a preservar o desempenho na próxima série." : "Esse intervalo tende a permitir recuperação suficiente sem alongar o treino à toa."}`;
+  return `${ex} ${NOME_DEMANDA[e.demanda]}${perto ? ", e a sua série terminou muito perto da falha" : ""}. ${perto || e.demanda === "muito_exigente" ? "Mais descanso pode ajudar a preservar o desempenho na próxima série." : "Esse intervalo tende a permitir recuperação suficiente sem alongar o treino à toa."}`;
 }
 
 export const fmtTempo = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, "0")}`;

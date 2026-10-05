@@ -58,7 +58,14 @@ function Cronometro({ inicial, onEvento }: { inicial: number; onEvento: (nome: "
   const [som, setSom] = useState(false);
   const avisou = useRef(false);
 
-  useEffect(() => { if (!fimEm) { setDuracao(inicial); setRestante(inicial); setAcabou(false); } }, [inicial, fimEm]);
+  // Só um resultado NOVO reinicia o cronômetro; o fim do descanso não pode
+  // apagar o "Pronto para a próxima série?" nem os ajustes de ±30s.
+  const inicialAnterior = useRef(inicial);
+  useEffect(() => {
+    if (inicialAnterior.current === inicial) return;
+    inicialAnterior.current = inicial;
+    setFimEm(null); setDuracao(inicial); setRestante(inicial); setAcabou(false);
+  }, [inicial]);
 
   const tocar = useCallback(() => {
     try { navigator.vibrate?.([200, 100, 200]); } catch { /* sem vibração */ }
@@ -92,6 +99,7 @@ function Cronometro({ inicial, onEvento }: { inicial: number; onEvento: (nome: "
     else { const s = Math.max(15, Math.min(600, duracao + d)); setDuracao(s); setRestante(s); }
   };
   const encerrar = () => { setFimEm(null); setRestante(duracao); setAcabou(false); };
+  const recomecar = () => iniciar(duracao);
 
   const rodando = fimEm !== null;
   const prog = duracao > 0 ? 1 - restante / duracao : 0;
@@ -119,7 +127,7 @@ function Cronometro({ inicial, onEvento }: { inicial: number; onEvento: (nome: "
         {rodando ? (
           <button type="button" onClick={encerrar} className={`border border-white/25 text-white min-h-[52px] text-base font-semibold ${foco}`}>Encerrar</button>
         ) : (
-          <button type="button" onClick={() => iniciar()} className={`bg-[#BA9E50] text-black min-h-[52px] text-base font-bold ${foco}`}>{acabou ? "↻ Recomeçar" : `▶ ${fmtTempo(duracao)}`}</button>
+          <button type="button" onClick={acabou ? recomecar : () => iniciar()} className={`bg-[#BA9E50] text-black min-h-[52px] text-base font-bold ${foco}`}>{acabou ? "↻ Recomeçar" : `▶ ${fmtTempo(duracao)}`}</button>
         )}
         <button type="button" onClick={() => ajustar(30)} className={`border border-white/25 text-white min-h-[52px] text-base font-semibold ${foco}`} aria-label="Mais 30 segundos">+30s</button>
       </div>
@@ -161,7 +169,7 @@ export default function CalculadoraDescanso({ placement = "ferramenta" }: { plac
   const rirFinal: Rir | null = rir === "nao_sei" ? (esforco ? ESFORCO_PARA_RIR[esforco] : null) : rir;
 
   let resultado: Resultado | null = null;
-  if (metodo !== "drop") {
+  if (modo === "rapido" || metodo !== "drop") {
     if (modo === "rapido" && tipoR && esfR) resultado = calculaRapido(tipoR, esfR);
     if (modo === "completo" && demandaFinal && nReps > 0 && nReps <= 50 && rirFinal !== null)
       resultado = calcula({ objetivo, demanda: demandaFinal, reps: faixaDeReps(nReps), rir: rirFinal, experiencia: exp ?? undefined });
@@ -190,9 +198,9 @@ export default function CalculadoraDescanso({ placement = "ferramenta" }: { plac
 
   return (
     <div className="border border-white/15 bg-[#0d0d0d] p-5 sm:p-6" data-testid="calculadora-descanso">
-      <div role="tablist" aria-label="Modo" className="grid grid-cols-2 gap-2 mb-5">
+      <div role="group" aria-label="Modo da calculadora" className="grid grid-cols-2 gap-2 mb-5">
         {(["completo", "rapido"] as Modo[]).map((m) => (
-          <button key={m} role="tab" aria-selected={modo === m} type="button" onClick={() => setModo(m)} className={chip(modo === m) + " text-center"}>
+          <button key={m} aria-pressed={modo === m} type="button" onClick={() => setModo(m)} className={chip(modo === m) + " text-center"}>
             {m === "completo" ? "Modo completo" : "Modo rápido"}
           </button>
         ))}
@@ -295,7 +303,7 @@ export default function CalculadoraDescanso({ placement = "ferramenta" }: { plac
         </div>
       )}
 
-      {metodo === "drop" && (
+      {modo === "completo" && metodo === "drop" && (
         <p className="mt-6 border-l-2 border-[#BA9E50] pl-4 text-sm text-gray-300" role="status">Técnicas como drop-set e rest-pause usam intervalos próprios dentro do método. Esta calculadora foi feita para séries tradicionais: use-a para o descanso <em>depois</em> do bloco inteiro.</p>
       )}
 
