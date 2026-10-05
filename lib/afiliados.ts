@@ -58,16 +58,25 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     enviadoPelaAmazon: true,
     destaque: "Whey 1 kg, sabor leite",
   },
+  "whey-soldiers-elite-1kg": {
+    id: "whey-soldiers-elite-1kg",
+    marca: "Soldiers Nutrition",
+    nome: "Whey protein concentrado 80% 1 kg, sabor cookies",
+    url: "https://link.amazon/B035wwBjS",
+    vendedor: "loja oficial da marca",
+    enviadoPelaAmazon: true,
+    destaque: "Whey 1 kg, sabor cookies",
+  },
 };
 
 /** Artigo → produtos (até 3 por artigo, 6 em páginas de compra). */
 export const AFILIADOS_POR_ARTIGO: Record<string, string[]> = {
   "black-friday-suplementos": ["creatina-ftw-500g", "creatina-soldiers-250g", "creatina-atlhetica-300g", "whey-soldiers-1kg", "whey-ftw-1kg"],
-  "mega-oferta-prime-2026": ["creatina-ftw-500g", "creatina-soldiers-250g", "creatina-atlhetica-300g", "whey-soldiers-1kg", "whey-ftw-1kg"],
+  "mega-oferta-prime-2026": ["creatina-ftw-500g", "creatina-soldiers-250g", "creatina-atlhetica-300g", "whey-soldiers-1kg", "whey-ftw-1kg", "whey-soldiers-elite-1kg"],
   "creatina-para-hipertrofia": ["creatina-ftw-500g", "creatina-soldiers-250g", "creatina-atlhetica-300g"],
   // whey-protein-engorda fica de fora: é controle do teste de intenção.
-  "whey-protein-como-tomar": ["whey-soldiers-1kg", "whey-ftw-1kg"],
-  "whey-concentrado-vs-isolado-vs-hidrolisado": ["whey-soldiers-1kg", "whey-ftw-1kg"],
+  "whey-protein-como-tomar": ["whey-soldiers-1kg", "whey-ftw-1kg", "whey-soldiers-elite-1kg"],
+  "whey-concentrado-vs-isolado-vs-hidrolisado": ["whey-soldiers-1kg", "whey-ftw-1kg", "whey-soldiers-elite-1kg"],
 };
 
 export const AVISO_AFILIADO =
