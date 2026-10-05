@@ -151,6 +151,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["perder peso ate", "quantos quilos", "prazo", "fim do ano", "casamento", "viagem", "quanto tempo para emagrecer", "meta de peso", "quilos por semana", "emagrecer rapido"],
   },
   {
+    id: "passos",
+    href: "/ferramentas/calculadora-passos",
+    nome: "Calculadora de Passos",
+    resultado: "Veja quantos passos por dia são a meta para a sua idade e quanto os seus dão em calorias, km e minutos.",
+    acao: "Calcular meus passos",
+    tempo: "30 segundos",
+    categoria: "emagrecimento",
+    icone: "corpo",
+    tags: ["passos", "10 mil passos", "quantos passos por dia", "passos calorias", "pedometro", "caminhar", "sedentarismo", "passos em km"],
+    selo: "novo",
+  },
+  {
     id: "cintura-altura",
     href: "/ferramentas/relacao-cintura-altura",
     nome: "Calculadora de Relação Cintura-Altura",
