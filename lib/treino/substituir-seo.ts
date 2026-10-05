@@ -137,6 +137,12 @@ export const PAGINAS_SUBSTITUIR: PaginaSubstituir[] = [
     quandoNaoTrocar: "Se o stiff está confortável e progredindo, mantenha. Ele treina posteriores e glúteos alongados sob carga, algo que poucos exercícios fazem.",
     faq: [
       { question: "Mesa flexora substitui o stiff?", answer: "Não. As duas treinam posteriores, mas o stiff é dobradiça de quadril (com glúteos) e a mesa flexora é flexão de joelho. O ideal é ter uma de cada no treino, não trocar uma pela outra." },
+      { question: "Qual aparelho substitui o stiff?", answer: "Na polia, o pull-through mantém a dobradiça de quadril. O banco romano (hiperextensão) também trabalha o quadril, com o corpo apoiado. Mesa e cadeira flexora treinam posteriores, mas com outra função." },
+      { question: "Como fazer stiff sem barra?", answer: "Com halteres, um em cada mão, ou com um elástico preso sob os pés. O movimento é o mesmo: quadril para trás, coluna neutra, joelhos levemente dobrados." },
+      { question: "Stiff e levantamento terra romeno são a mesma coisa?", answer: "São muito parecidos e muita gente usa os nomes como sinônimos. O terra romeno costuma ter um pouco mais de flexão de joelho e começar de cima. Os dois são dobradiça de quadril." },
+      { question: "Elevação pélvica substitui o stiff?", answer: "Não exatamente. A elevação pélvica é extensão de quadril com foco no glúteo contraído; o stiff trabalha posteriores e glúteos alongados. Complementam, não se substituem." },
+      { question: "O que substitui o stiff unilateral?", answer: "Terra unilateral com halter, ou o stiff com as duas pernas se o problema for equilíbrio." },
+      { question: "Qual músculo o stiff trabalha?", answer: "Principalmente posteriores de coxa e glúteos, com a lombar estabilizando o tronco." },
       { question: "Stiff com halteres é igual ao com barra?", answer: "Muito parecido: mesmo movimento e mesmos músculos, com um pouco mais de liberdade e carga total geralmente menor." },
     ],
     searchDemand: "media",
