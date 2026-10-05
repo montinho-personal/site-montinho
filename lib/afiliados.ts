@@ -195,6 +195,15 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     enviadoPelaAmazon: true,
     destaque: "Leves, para começar",
   },
+  "colchonete-muvin-d80": {
+    id: "colchonete-muvin-d80",
+    marca: "Muvin",
+    nome: "Colchonete de espuma D80, 95 x 55 x 3 cm, impermeável",
+    url: "https://link.amazon/B0euQL9Xk",
+    vendedor: "Amazon",
+    enviadoPelaAmazon: true,
+    destaque: "Espuma de alta densidade",
+  },
 };
 
 /** Artigo → produtos (até 3 por artigo, 6 em páginas de compra). */
@@ -212,8 +221,10 @@ export const AFILIADOS_POR_ARTIGO: Record<string, string[]> = {
   "treino-com-elasticos-em-casa": ["mini-band-everlast", "kit-elasticos-17-pecas", "faixas-elasticas-5-aqws"],
   "treino-de-braco-em-casa": ["halteres-songmics-2x10kg", "halteres-hexagonais-suporte"],
   "treino-de-peito-em-casa": ["halteres-songmics-2x10kg", "halteres-hexagonais-suporte"],
-  "treino-hiit-em-casa": ["halteres-hexagonais-suporte"],
-  "treino-para-emagrecer-em-casa": ["halteres-hexagonais-suporte"],
+  "treino-hiit-em-casa": ["halteres-hexagonais-suporte", "colchonete-muvin-d80"],
+  "treino-para-emagrecer-em-casa": ["halteres-hexagonais-suporte", "colchonete-muvin-d80"],
+  "treino-de-abdomen-em-casa": ["colchonete-muvin-d80"],
+  "treino-em-casa-sem-equipamento": ["colchonete-muvin-d80"],
   "como-escolher-tenis-para-treinar": ["tenis-mizuno-sunrise", "tenis-puma-flyer-lite-3-fem", "tenis-mormaii-urban-smash"],
   "tenis-para-sao-silvestre": ["tenis-mizuno-sunrise", "tenis-puma-flyer-lite-3-fem"],
 };
