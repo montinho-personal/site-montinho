@@ -151,6 +151,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["perder peso ate", "quantos quilos", "prazo", "fim do ano", "casamento", "viagem", "quanto tempo para emagrecer", "meta de peso", "quilos por semana", "emagrecer rapido"],
   },
   {
+    id: "cintura-altura",
+    href: "/ferramentas/relacao-cintura-altura",
+    nome: "Calculadora de Relação Cintura-Altura",
+    resultado: "Veja se a sua cintura mede menos da metade da sua altura e em que faixa você está.",
+    acao: "Calcular minha relação",
+    tempo: "15 segundos",
+    categoria: "emagrecimento",
+    icone: "corpo",
+    tags: ["cintura", "relacao cintura altura", "rce", "rca", "cintura estatura", "gordura abdominal", "barriga", "medida da cintura"],
+    selo: "novo",
+  },
+  {
     id: "composicao",
     href: "/ferramentas/composicao-corporal",
     nome: "Calculadora de Composição Corporal",
