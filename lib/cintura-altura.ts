@@ -47,10 +47,15 @@ export const parseNumero = (s: string): number | null => {
   return s.trim() && Number.isFinite(n) ? n : null;
 };
 
-export const rca = (cinturaCm: number, alturaCm: number) => cinturaCm / alturaCm;
+/**
+ * Truncada em duas casas, nunca arredondada: 87,4 cm em 1,75 m dá 0,4994,
+ * que arredondado viraria "0,50 — aumentada" com a cintura ainda abaixo da
+ * metade da altura. Truncar mantém número, faixa e tabela concordando.
+ */
+export const rca = (cinturaCm: number, alturaCm: number) => Math.floor((cinturaCm / alturaCm) * 100 + 1e-9) / 100;
 
 export function faixa(r: number): Faixa {
-  const v = Math.round(r * 100) / 100;
+  const v = r;
   if (v < 0.4) return FAIXAS[0];
   if (v < 0.5) return FAIXAS[1];
   if (v < 0.6) return FAIXAS[2];
@@ -66,7 +71,7 @@ export const fmt1 = (n: number) => n.toLocaleString("pt-BR", { maximumFractionDi
 export const ALTURAS_TABELA = [150, 155, 160, 165, 170, 175, 180, 185, 190] as const;
 
 export const tabela = () =>
-  ALTURAS_TABELA.map((a) => ({ altura: a, saudavelAte: Math.ceil(a * 0.5) - 1, aumentadaAte: Math.ceil(a * 0.6) - 1, alta: Math.ceil(a * 0.6) }));
+  ALTURAS_TABELA.map((a) => ({ altura: a, saudavelDe: Math.ceil(a * 0.4), saudavelAte: Math.ceil(a * 0.5) - 1, aumentadaAte: Math.ceil(a * 0.6) - 1, alta: Math.ceil(a * 0.6) }));
 
 export const NOTA_LIMITES =
   "A RCA é triagem, não diagnóstico. Não vale para gestantes, e a NICE indica as faixas para adultos com IMC abaixo de 35. Para crianças e adolescentes, o uso é outro e precisa de avaliação profissional.";

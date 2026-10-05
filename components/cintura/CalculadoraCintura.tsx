@@ -49,11 +49,11 @@ export default function CalculadoraCintura() {
       <form onSubmit={calcular} noValidate className="grid sm:grid-cols-2 gap-4">
         <label className="block">
           <span className="block text-sm text-gray-300 mb-1">Cintura (cm)</span>
-          <input inputMode="decimal" className={campo} value={cintura} onChange={(e) => { comecou(); setCintura(e.target.value); }} placeholder="Ex.: 82" />
+          <input inputMode="decimal" className={campo} value={cintura} onChange={(e) => { comecou(); setCintura(e.target.value); setRes(null); }} placeholder="Ex.: 82" aria-invalid={!!erro && erro.includes("cintura")} />
         </label>
         <label className="block">
           <span className="block text-sm text-gray-300 mb-1">Altura (cm)</span>
-          <input inputMode="decimal" className={campo} value={altura} onChange={(e) => { comecou(); setAltura(e.target.value); }} placeholder="Ex.: 170" />
+          <input inputMode="decimal" className={campo} value={altura} onChange={(e) => { comecou(); setAltura(e.target.value); setRes(null); }} placeholder="Ex.: 170" aria-invalid={!!erro && erro.includes("altura")} />
         </label>
         <p className="sm:col-span-2 text-xs text-gray-500">Meça a cintura no meio do caminho entre a última costela e o topo do osso do quadril, depois de soltar o ar, sem encolher a barriga.</p>
         {erro && <p role="alert" className="sm:col-span-2 text-sm text-red-400">{erro}</p>}
@@ -75,7 +75,7 @@ export default function CalculadoraCintura() {
           <div className="flex justify-between text-[11px] text-gray-500 mt-1" aria-hidden="true"><span>0,30</span><span>0,40</span><span>0,50</span><span>0,60</span><span>0,70</span></div>
           <p className="text-gray-200 mt-4 leading-relaxed">{f.texto}</p>
           <p className="text-gray-300 mt-3 leading-relaxed">Para {fmt1(res.a)} cm de altura, a metade é <strong className="text-white">{fmt1(meta)} cm</strong> de cintura.{" "}
-            {res.c > meta ? <>Você está {fmt1(res.c - meta)} cm acima dela.</> : <>Você está {fmt1(meta - res.c)} cm abaixo dela.</>}
+            {res.c === meta ? <>Você está exatamente nela.</> : res.c > meta ? <>Você está {fmt1(res.c - meta)} cm acima dela.</> : <>Você está {fmt1(meta - res.c)} cm abaixo dela.</>}
           </p>
           <p className="text-gray-500 text-xs mt-4">{NOTA_LIMITES}</p>
           <div className="mt-6 border border-white/15 p-4">

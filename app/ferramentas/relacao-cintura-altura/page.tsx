@@ -126,7 +126,7 @@ export default function RelacaoCinturaAlturaPage() {
                 <thead><tr className="text-left text-white bg-white/5"><th className="p-3">Altura</th><th className="p-3">Saudável</th><th className="p-3">Aumentada</th><th className="p-3">Alta</th></tr></thead>
                 <tbody>
                   {tabela().map((l) => (
-                    <tr key={l.altura} className="border-t border-white/10"><td className="p-3 whitespace-nowrap">{(l.altura / 100).toFixed(2).replace(".", ",")} m</td><td className="p-3">até {l.saudavelAte} cm</td><td className="p-3">{l.saudavelAte + 1} a {l.aumentadaAte} cm</td><td className="p-3">{l.alta} cm ou mais</td></tr>
+                    <tr key={l.altura} className="border-t border-white/10"><td className="p-3 whitespace-nowrap">{(l.altura / 100).toFixed(2).replace(".", ",")} m</td><td className="p-3">{l.saudavelDe} a {l.saudavelAte} cm</td><td className="p-3">{l.saudavelAte + 1} a {l.aumentadaAte} cm</td><td className="p-3">{l.alta} cm ou mais</td></tr>
                   ))}
                 </tbody>
               </table>
