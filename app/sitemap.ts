@@ -1,4 +1,5 @@
 import { CONVERSOR_NO_AR } from "@/lib/concentracao/revisao";
+import { PAGINAS_SUBSTITUIR } from "@/lib/treino/substituir-seo";
 import { MOBILIDADE_NO_AR } from "@/lib/mobilidade/lancamento";
 import { alimentosIndexaveis } from "@/lib/alimentos/base";
 import type { MetadataRoute } from "next";
@@ -114,6 +115,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${SITE_URL}/ferramentas/substituidor-de-exercicios`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    ...PAGINAS_SUBSTITUIR.filter((p) => p.isIndexable).map((p) => ({
+      url: `${SITE_URL}/substituir/${p.slug}`,
+      lastModified: new Date("2026-10-05"),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
     {
       url: `${SITE_URL}/ferramentas/calculadora-descanso-entre-series`,
       lastModified: new Date(),

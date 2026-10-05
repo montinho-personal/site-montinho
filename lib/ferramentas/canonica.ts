@@ -163,6 +163,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Calorias no Futebol",
     motivo: "que separa o tempo de bola rolando do tempo na lateral e mostra quantas latas o jogo realmente pagou",
   },
+  substituidor: {
+    href: "/ferramentas/substituidor-de-exercicios",
+    ancora: "Substituidor de Exercícios",
+    motivo: "que mostra o que cada alternativa preserva e o que muda",
+  },
   descanso: {
     href: "/ferramentas/calculadora-descanso-entre-series",
     ancora: "Calculadora de Descanso Entre Séries",

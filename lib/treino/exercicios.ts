@@ -42,7 +42,7 @@ export const EXERCICIOS: Exercicio[] = [
   { id: "supino-inclinado-barra", nome: "Supino inclinado com barra", aliases: ["supino inclinado"], categoria: "composto", equipamento: "barra", primarios: ["peitoral"], secundarios: ["triceps", "deltoide-anterior"] },
   { id: "supino-inclinado-halter", nome: "Supino inclinado com halteres", categoria: "composto", equipamento: "halter", primarios: ["peitoral"], secundarios: ["triceps", "deltoide-anterior"] },
   { id: "supino-declinado", nome: "Supino declinado", categoria: "composto", equipamento: "barra", primarios: ["peitoral"], secundarios: ["triceps"] },
-  { id: "supino-maquina", nome: "Supino na máquina", aliases: ["supino máquina", "chest press"], categoria: "composto", equipamento: "maquina", primarios: ["peitoral"], secundarios: ["triceps", "deltoide-anterior"] },
+  { id: "supino-maquina", nome: "Supino na máquina", aliases: ["supino máquina", "chest press", "supino maquina"], categoria: "composto", equipamento: "maquina", primarios: ["peitoral"], secundarios: ["triceps", "deltoide-anterior"] },
   { id: "crucifixo-halter", nome: "Crucifixo com halteres", aliases: ["crucifixo"], categoria: "isolado", equipamento: "halter", primarios: ["peitoral"] },
   { id: "crucifixo-maquina", nome: "Crucifixo na máquina (peck deck)", aliases: ["peck deck", "voador"], categoria: "isolado", equipamento: "maquina", primarios: ["peitoral"] },
   { id: "cross-over", nome: "Cross over", aliases: ["crossover", "cruzamento de cabos"], categoria: "isolado", equipamento: "cabo", primarios: ["peitoral"] },
@@ -52,7 +52,7 @@ export const EXERCICIOS: Exercicio[] = [
 
   // ── Costas ─────────────────────────────────────────────────────────────
   { id: "barra-fixa", nome: "Barra fixa", aliases: ["pull up", "chin up"], categoria: "composto", equipamento: "peso-corporal", primarios: ["costas"], secundarios: ["biceps", "deltoide-posterior", "antebraco"] },
-  { id: "puxada-frente", nome: "Puxada frontal (pulley)", aliases: ["puxada", "pulldown", "puxada frente"], categoria: "composto", equipamento: "maquina", primarios: ["costas"], secundarios: ["biceps", "deltoide-posterior"] },
+  { id: "puxada-frente", nome: "Puxada frontal (pulley)", aliases: ["puxada", "pulldown", "puxada frente", "puxada alta", "puxador", "pulley costas"], categoria: "composto", equipamento: "maquina", primarios: ["costas"], secundarios: ["biceps", "deltoide-posterior"] },
   { id: "puxada-supinada", nome: "Puxada supinada", categoria: "composto", equipamento: "maquina", primarios: ["costas"], secundarios: ["biceps"] },
   { id: "remada-curvada", nome: "Remada curvada com barra", aliases: ["remada curvada", "remada"], categoria: "composto", equipamento: "barra", primarios: ["costas"], secundarios: ["biceps", "deltoide-posterior", "trapezio"] },
   { id: "remada-baixa", nome: "Remada baixa", aliases: ["remada sentada", "remada máquina"], categoria: "composto", equipamento: "cabo", primarios: ["costas"], secundarios: ["biceps", "deltoide-posterior"] },
@@ -89,7 +89,7 @@ export const EXERCICIOS: Exercicio[] = [
   { id: "rosca-inversa", nome: "Rosca inversa", categoria: "isolado", equipamento: "barra", primarios: ["antebraco"], secundarios: ["biceps"] },
 
   // ── Tríceps ────────────────────────────────────────────────────────────
-  { id: "triceps-pulley", nome: "Tríceps pulley", aliases: ["tríceps corda", "tríceps polia", "pushdown"], categoria: "isolado", equipamento: "cabo", primarios: ["triceps"] },
+  { id: "triceps-pulley", nome: "Tríceps pulley", aliases: ["tríceps corda", "tríceps polia", "pushdown", "pulley"], categoria: "isolado", equipamento: "cabo", primarios: ["triceps"] },
   { id: "triceps-testa", nome: "Tríceps testa", aliases: ["skull crusher"], categoria: "isolado", equipamento: "barra", primarios: ["triceps"] },
   { id: "triceps-frances", nome: "Tríceps francês", categoria: "isolado", equipamento: "halter", primarios: ["triceps"] },
   { id: "triceps-coice", nome: "Tríceps coice", aliases: ["kickback"], categoria: "isolado", equipamento: "halter", primarios: ["triceps"], unilateral: true },
@@ -101,7 +101,7 @@ export const EXERCICIOS: Exercicio[] = [
   { id: "agachamento-livre", nome: "Agachamento livre", aliases: ["agachamento", "squat"], categoria: "composto", equipamento: "barra", primarios: ["quadriceps", "gluteos"], secundarios: ["posteriores", "adutores", "core"] },
   { id: "agachamento-smith", nome: "Agachamento no Smith", categoria: "composto", equipamento: "maquina", primarios: ["quadriceps", "gluteos"], secundarios: ["posteriores"] },
   { id: "agachamento-frontal", nome: "Agachamento frontal", categoria: "composto", equipamento: "barra", primarios: ["quadriceps"], secundarios: ["gluteos", "core"] },
-  { id: "agachamento-hack", nome: "Agachamento hack", aliases: ["hack machine"], categoria: "composto", equipamento: "maquina", primarios: ["quadriceps"], secundarios: ["gluteos"] },
+  { id: "agachamento-hack", nome: "Agachamento hack", aliases: ["hack machine", "hack", "hack squat"], categoria: "composto", equipamento: "maquina", primarios: ["quadriceps"], secundarios: ["gluteos"] },
   { id: "agachamento-goblet", nome: "Agachamento goblet", categoria: "composto", equipamento: "halter", primarios: ["quadriceps", "gluteos"], secundarios: ["core"] },
   { id: "agachamento-sumo", nome: "Agachamento sumô", categoria: "composto", equipamento: "barra", primarios: ["quadriceps", "gluteos", "adutores"] },
   { id: "leg-press", nome: "Leg press", categoria: "composto", equipamento: "maquina", primarios: ["quadriceps", "gluteos"], secundarios: ["posteriores"] },
@@ -177,6 +177,22 @@ export const EXERCICIOS: Exercicio[] = [
   { id: "panturrilha-unilateral", nome: "Panturrilha unilateral", categoria: "isolado", equipamento: "peso-corporal", primarios: ["panturrilhas"], unilateral: true },
   { id: "prancha-lateral", nome: "Prancha lateral", categoria: "isolado", equipamento: "peso-corporal", primarios: ["core"], unilateral: true },
   { id: "abdominal-bicicleta", nome: "Abdominal bicicleta", categoria: "isolado", equipamento: "peso-corporal", primarios: ["core"] },
+  // ── Alternativas comuns em casa ou sem máquina (usadas pelo Substituidor) ─
+  { id: "spanish-squat", nome: "Spanish squat", aliases: ["agachamento espanhol", "spanish squat com elástico"], categoria: "composto", equipamento: "peso-corporal", primarios: ["quadriceps"], secundarios: ["gluteos"] },
+  { id: "sissy-squat-assistido", nome: "Sissy squat assistido", aliases: ["sissy assistido"], categoria: "isolado", equipamento: "peso-corporal", primarios: ["quadriceps"] },
+  { id: "agachamento-calcanhar-elevado", nome: "Agachamento com calcanhar elevado", aliases: ["agachamento calcanhar elevado", "heel elevated squat", "agachamento com anilha no calcanhar"], categoria: "composto", equipamento: "halter", primarios: ["quadriceps"], secundarios: ["gluteos"] },
+  { id: "agachamento-peso-corporal", nome: "Agachamento livre sem peso", aliases: ["agachamento peso corporal", "agachamento em casa", "air squat"], categoria: "composto", equipamento: "peso-corporal", primarios: ["quadriceps", "gluteos"] },
+  { id: "pull-through", nome: "Pull-through no cabo", aliases: ["pull through", "puxada entre as pernas"], categoria: "composto", equipamento: "cabo", primarios: ["gluteos", "posteriores"] },
+  { id: "stiff-elastico", nome: "Stiff com elástico", aliases: ["rdl elástico"], categoria: "composto", equipamento: "peso-corporal", primarios: ["posteriores", "gluteos"] },
+  { id: "flexora-deslizamento", nome: "Flexão de joelho com deslizamento", aliases: ["slider leg curl", "flexora no chão", "flexora com toalha"], categoria: "isolado", equipamento: "peso-corporal", primarios: ["posteriores"], secundarios: ["gluteos"] },
+  { id: "flexora-elastico", nome: "Flexora com elástico", categoria: "isolado", equipamento: "peso-corporal", primarios: ["posteriores"] },
+  { id: "barra-fixa-assistida", nome: "Barra fixa assistida", aliases: ["barra com elástico", "graviton", "barra assistida"], categoria: "composto", equipamento: "peso-corporal", primarios: ["costas"], secundarios: ["biceps", "deltoide-posterior"] },
+  { id: "barra-fixa-negativa", nome: "Barra fixa negativa", aliases: ["negativa na barra", "excêntrica na barra"], categoria: "composto", equipamento: "peso-corporal", primarios: ["costas"], secundarios: ["biceps", "deltoide-posterior"] },
+  { id: "puxada-elastico", nome: "Puxada com elástico", aliases: ["pulldown elástico", "puxada alta elástico"], categoria: "composto", equipamento: "peso-corporal", primarios: ["costas"], secundarios: ["biceps"] },
+  { id: "remada-elastico", nome: "Remada com elástico", categoria: "composto", equipamento: "peso-corporal", primarios: ["costas"], secundarios: ["biceps", "deltoide-posterior"] },
+  { id: "flexao-joelhos", nome: "Flexão de braço com joelhos apoiados", aliases: ["flexão ajoelhada", "flexão de joelhos"], categoria: "composto", equipamento: "peso-corporal", primarios: ["peitoral"], secundarios: ["triceps", "deltoide-anterior"] },
+  { id: "triceps-elastico", nome: "Tríceps com elástico", categoria: "isolado", equipamento: "peso-corporal", primarios: ["triceps"] },
+  { id: "elevacao-lateral-elastico", nome: "Elevação lateral com elástico", categoria: "isolado", equipamento: "peso-corporal", primarios: ["deltoide-lateral"] },
   { id: "elevacao-pernas-barra", nome: "Elevação de pernas na barra", categoria: "isolado", equipamento: "peso-corporal", primarios: ["core"], secundarios: ["antebraco"] },
 ];
 

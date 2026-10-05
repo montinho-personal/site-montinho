@@ -151,6 +151,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["perder peso ate", "quantos quilos", "prazo", "fim do ano", "casamento", "viagem", "quanto tempo para emagrecer", "meta de peso", "quilos por semana", "emagrecer rapido"],
   },
   {
+    id: "substituidor",
+    href: "/ferramentas/substituidor-de-exercicios",
+    nome: "Substituidor de Exercícios",
+    resultado: "Escolha um exercício e veja alternativas por músculo, movimento e equipamento disponível.",
+    acao: "Encontrar alternativa",
+    tempo: "20 segundos",
+    categoria: "treino",
+    icone: "halter",
+    tags: ["substituir exercicio", "alternativa de exercicio", "exercicio parecido", "sem maquina", "treino em casa", "no lugar", "trocar exercicio"],
+    selo: "novo",
+  },
+  {
     id: "descanso",
     href: "/ferramentas/calculadora-descanso-entre-series",
     nome: "Calculadora de Descanso Entre Séries",

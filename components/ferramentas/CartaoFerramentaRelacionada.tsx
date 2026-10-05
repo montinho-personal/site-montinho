@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { trackEvent } from "@/lib/analytics";
-import { ARTIGOS_COM_CARTAO, CARTOES } from "@/lib/ferramentas/relacionadas";
+import { ARTIGOS_COM_CARTAO, CARTOES, HREF_POR_ARTIGO } from "@/lib/ferramentas/relacionadas";
 
 /** Ver lib/ferramentas/relacionadas.ts. A âncora carrega o nome da ferramenta de propósito. */
 export default function CartaoFerramentaRelacionada({ slug }: { slug: string }) {
   const id = ARTIGOS_COM_CARTAO[slug];
   if (!id) return null;
-  const c = CARTOES[id];
+  const c = { ...CARTOES[id], ...HREF_POR_ARTIGO[slug] };
   return (
     <div className="mt-12 border border-white/15 p-5 sm:p-6">
       <p className="text-white font-semibold mb-1.5">{c.pergunta}</p>
