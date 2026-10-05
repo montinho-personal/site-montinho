@@ -7,6 +7,7 @@ import Compartilhar from "@/components/share/Compartilhar";
 import CalculadoraBicicleta from "@/components/bicicleta/CalculadoraBicicleta";
 import {
   FAIXAS_RUA,
+  KCAL_POR_KG_GORDURA,
   FAIXAS_WATTS,
   FONTES_BICICLETA,
   FONTE_COMPENDIO_BICICLETA,
@@ -91,6 +92,9 @@ const R60_CIDADE = calcula(PESO, MODERADO.met, 60, 10);
 const TABELA_60 = kcalSeFosseContinuo(PESO, MODERADO.met, 60);
 const TRAB_8 = trabalho(PESO, 8, 30, 5);
 const TRES_45 = kgPorMes(R45.kcalLiquida, 3);
+const MINUTOS_TAB = [10, 15, 20, 30, 40, 50, 60];
+const H_1KG = KCAL_POR_KG_GORDURA / KCAL_MIN_MOD / 60;
+const R30_KG_MES_DIARIO = kgPorMes(R30.kcalLiquida, 7);
 const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
 const kg = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -135,6 +139,22 @@ const faq: ItemFAQ[] = [
   {
     question: "Pedalar 40 minutos por dia ajuda a emagrecer?",
     answer: `Ajuda: são cerca de ${kc(R40.kcal)} kcal por dia em ritmo moderado para ${PESO} kg, repetíveis todo dia por ser baixo impacto. Emagrecer depende do déficit da semana inteira, e a bike entra como uma fonte de gasto que vira hábito com facilidade.`,
+  },
+  {
+    question: "10 km de bicicleta queima quantas calorias?",
+    answer: `A cerca de ${KM_MOD} km/h, 10 km levam uns 30 minutos e gastam perto de ${kc(R30.kcal)} kcal para ${PESO} kg; 20 km, cerca de uma hora, perto de ${kc(calcula(PESO, MODERADO.met, 60).kcal)} kcal. Mais devagar, o mesmo trajeto leva mais tempo e o total muda pouco; o que pesa mais é o seu peso.`,
+  },
+  {
+    question: "Quanto pedalar para perder 1 kg?",
+    answer: `Um quilo de gordura guarda cerca de ${KCAL_POR_KG_GORDURA.toLocaleString("pt-BR")} kcal. Em ritmo moderado, para ${PESO} kg, isso daria perto de ${Math.round(H_1KG)} horas de pedal. É conta teórica: ninguém perde peso só pedalando, e o corpo não responde de forma linear. A bike soma ao déficit da semana; quem decide é o conjunto com a alimentação.`,
+  },
+  {
+    question: "O que acontece se fizer 30 minutos de bike todo dia?",
+    answer: `Em ritmo moderado, para ${PESO} kg, são cerca de ${kc(R30.kcal)} kcal por dia, ou até ${kg(R30_KG_MES_DIARIO)} kg de gordura por mês pela conta linear, se a alimentação não compensar. Além do gasto, o hábito diário melhora o condicionamento, e por ser baixo impacto dá para manter todo dia com menos risco de lesão do que a corrida.`,
+  },
+  {
+    question: "O que emagrece mais, esteira ou bicicleta?",
+    answer: "No mesmo tempo, correr na esteira costuma gastar mais que pedalar, porque você carrega o peso do corpo. Caminhar na esteira e pedalar em ritmo moderado ficam parecidos. Mas emagrece mais o que você consegue fazer com frequência: a bike tem menos impacto no joelho, e por isso muita gente mantém por mais tempo. Compare com a calculadora de corrida.",
   },
   {
     question: "Quem tem hérnia de disco pode pedalar?",
@@ -222,6 +242,37 @@ export default function CalculadoraBicicletaPage() {
               Em kcal. Na trilha, o Compêndio mede o mountain bike como um todo, em {metF(TERRENOS[1].met!)} METs; a subida forte e contínua, em{" "}
               {metF(TERRENOS[2].met!)}, o maior valor da bicicleta.
             </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quantas calorias por tempo de pedal?</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              De 10 minutos a 1 hora, para {PESO} kg, sem paradas, por faixa de velocidade:
+            </p>
+            <div className="overflow-x-auto mb-3">
+              <table className="w-full text-sm border-collapse">
+                <caption className="sr-only">Gasto estimado de bicicleta por tempo, para 70 kg</caption>
+                <thead>
+                  <tr className="border-b border-white/20">
+                    <th scope="col" className={th}>Tempo</th>
+                    {FAIXAS_RUA.map((f) => (
+                      <th key={f.codigo} scope="col" className={th}>{f.nome}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {MINUTOS_TAB.map((m) => (
+                    <tr key={m} className="border-b border-white/10">
+                      <td className="text-gray-300 py-2.5 pr-4 tabular-nums">{m === 60 ? "1 hora" : `${m} min`}</td>
+                      {FAIXAS_RUA.map((f) => (
+                        <td key={f.codigo} className={`py-2.5 pr-4 tabular-nums ${f.codigo === "01030" ? "text-white font-medium" : "text-gray-300"}`}>≈ {kc(calcula(PESO, f.met, m).kcal)}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-gray-400 text-sm">Em kcal. Na ergométrica, a conta segue o esforço ou os watts do visor: use a calculadora acima.</p>
           </div>
 
           <div>
