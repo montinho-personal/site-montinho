@@ -150,6 +150,18 @@ const faq: ItemFAQ[] = [
     answer: "A recomendação geral da Organização Mundial da Saúde para adultos, inclusive com doenças crônicas como diabetes, é de 150 a 300 minutos por semana de atividade moderada, como caminhada rápida. Quem tem diabetes deve combinar a meta com o médico, principalmente se usa insulina ou remédio que pode baixar a glicose durante o exercício.",
   },
   {
+    question: "Caminhada queima quantas calorias por minuto?",
+    answer: `Para ${PESO_PADRAO} kg em ritmo moderado, cerca de ${fmt(POR_MIN)} kcal por minuto: uns ${arredondaKcal(POR_MIN * 15)} kcal em 15 minutos, ${arredondaKcal(POR_MIN * 20)} em 20 e ${arredondaKcal(POR_MIN * 40)} em 40. Caminhada leve gasta menos; rápida ou com subida, mais.`,
+  },
+  {
+    question: "Quanto tenho que caminhar para perder 1 quilo?",
+    answer: `Um quilo de gordura guarda cerca de 7.700 kcal: para ${PESO_PADRAO} kg em ritmo moderado, seriam perto de ${formataTempo(UM_QUILO.minutos)} de caminhada, ou ${formataKm(UM_QUILO.km)}. É conta teórica: a caminhada soma ao déficit da semana, e quem decide o resultado é o conjunto com a alimentação.`,
+  },
+  {
+    question: "Qual emagrece mais, academia ou caminhada?",
+    answer: "Por hora, a caminhada gasta parecido com uma sessão de musculação. Mas a musculação preserva o músculo enquanto você emagrece, e a caminhada é fácil de fazer todo dia. O melhor é combinar os dois; se for escolher um, fique com o que você consegue manter.",
+  },
+  {
     question: "Caminhar emagrece?",
     answer:
       "Ajuda como qualquer atividade que aumenta o gasto, e tem a vantagem rara de ser fácil de repetir todo dia. O que ela não faz é resolver sozinha: o resultado depende do balanço energético ao longo de semanas, não de uma caminhada isolada. Trinta minutos por dia somam algo real no mês — desde que o que acontece nas outras 23 horas e meia não desfaça a conta.",
