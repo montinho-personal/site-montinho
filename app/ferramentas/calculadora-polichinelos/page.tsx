@@ -17,6 +17,7 @@ import {
   arredondaKcal,
   arredondaQuantidade,
   deQuantidade,
+  kcalPorMinuto,
   equivalenteACaminhada,
   formataTempo,
   intensidade,
@@ -91,6 +92,8 @@ const PESO_EX = 70;
 const EX_100 = deQuantidade(100, PESO_EX, MOD.met, MOD.cadencia);
 const EX_500 = deQuantidade(500, PESO_EX, MOD.met, MOD.cadencia);
 const EX_1000 = deQuantidade(1000, PESO_EX, MOD.met, MOD.cadencia);
+const EX_300 = deQuantidade(300, PESO_EX, MOD.met, MOD.cadencia);
+const KMIN = kcalPorMinuto(MOD.met, PESO_EX);
 const TABELA_100 = tabelaPorPeso(100, MOD.met, MOD.cadencia);
 const CAM_30 = equivalenteACaminhada(30, PESO_EX, RITMOS_CAMINHADA[1].met, MOD.met, MOD.cadencia);
 const UM_QUILO = simulacaoUmQuilo(PESO_EX, MOD.met, MOD.cadencia);
@@ -99,6 +102,18 @@ const faq: ItemFAQ[] = [
   {
     question: "Quantas calorias 100 polichinelos queimam?",
     answer: `Para uma pessoa de ${PESO_EX} kg em ritmo moderado, cerca de ${arredondaKcal(EX_100.kcal)} kcal — o equivalente a pouco mais de ${formataTempo(EX_100.minutos)} de exercício. O número muda bastante com o peso: alguém de 50 kg gasta perto de ${TABELA_100[0].kcal} kcal nos mesmos 100, e alguém de 100 kg, cerca de ${TABELA_100[5].kcal} kcal.`,
+  },
+  {
+    question: "Polichinelo queima quantas calorias por minuto?",
+    answer: `Para ${PESO_EX} kg em ritmo moderado, cerca de ${KMIN.toFixed(1).replace(".", ",")} kcal por minuto: uns ${arredondaKcal(KMIN * 5)} kcal em 5 minutos, ${arredondaKcal(KMIN * 15)} em 15 e ${arredondaKcal(KMIN * 30)} em 30. Mais pesado ou mais rápido, mais; e quase ninguém aguenta 30 minutos seguidos.`,
+  },
+  {
+    question: "300 polichinelos queimam quantas calorias?",
+    answer: `Cerca de ${arredondaKcal(EX_300.kcal)} kcal para ${PESO_EX} kg, em uns ${formataTempo(EX_300.minutos)} de salto. Para 200, perto de dois terços disso; para 1.000, cerca de ${arredondaKcal(EX_1000.kcal)} kcal.`,
+  },
+  {
+    question: "É possível emagrecer só com polichinelo?",
+    answer: "Só com ele, é difícil: o gasto é pequeno perto do que a alimentação muda num dia, e o impacto repetido cansa joelho e tornozelo. O polichinelo funciona como aquecimento ou parte de um circuito. Emagrecer vem do déficit da semana, com musculação para preservar o músculo.",
   },
   {
     question: "100 polichinelos por dia emagrecem?",
