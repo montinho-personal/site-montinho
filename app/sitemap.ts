@@ -1,4 +1,5 @@
 import { CONVERSOR_NO_AR } from "@/lib/concentracao/revisao";
+import { GRUPOS_INDEXAVEIS } from "@/lib/treino/mapa-editorial";
 import { PAGINAS_SUBSTITUIR } from "@/lib/treino/substituir-seo";
 import { MOBILIDADE_NO_AR } from "@/lib/mobilidade/lancamento";
 import { alimentosIndexaveis } from "@/lib/alimentos/base";
@@ -115,6 +116,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    { url: `${SITE_URL}/exercicios`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.8 },
+    ...GRUPOS_INDEXAVEIS.map((g) => ({ url: `${SITE_URL}/exercicios/${g}`, lastModified: new Date("2026-10-05"), changeFrequency: "monthly" as const, priority: 0.7 })),
     {
       url: `${SITE_URL}/ferramentas/substituidor-de-exercicios`,
       lastModified: new Date(),

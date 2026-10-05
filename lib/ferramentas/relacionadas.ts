@@ -11,7 +11,7 @@
  * artigos de uma vez, sem mexer no updatedAt de nenhum.
  */
 
-export type FerramentaId = "substituidor" | "descanso" | "imc" | "musculacao" | "superavit" | "cintura" | "passos" | "gordura" | "cooper" | "cafeina";
+export type FerramentaId = "mapa" | "substituidor" | "descanso" | "imc" | "musculacao" | "superavit" | "cintura" | "passos" | "gordura" | "cooper" | "cafeina";
 
 export interface CartaoFerramenta {
   href: string;
@@ -21,6 +21,12 @@ export interface CartaoFerramenta {
 }
 
 export const CARTOES: Record<FerramentaId, CartaoFerramenta> = {
+  mapa: {
+    href: "/exercicios",
+    pergunta: "Qual exercício trabalha esse músculo?",
+    texto: "Toque no músculo no mapa e veja os exercícios que você consegue fazer com o equipamento que tem, na academia ou em casa.",
+    cta: "Ver os exercícios →",
+  },
   substituidor: {
     href: "/ferramentas/substituidor-de-exercicios",
     pergunta: "Sua academia não tem esse aparelho?",
@@ -98,6 +104,17 @@ export const ARTIGOS_COM_CARTAO: Record<string, FerramentaId> = {
   "treino-de-gluteos-em-casa": "substituidor",
   "treino-de-posterior-de-coxa": "substituidor",
   "treino-de-perna-completo": "substituidor",
+  "treino-de-peito-hipertrofia": "mapa",
+  "treino-de-peito-em-casa": "mapa",
+  "treino-de-ombros-hipertrofia": "mapa",
+  "treino-de-biceps": "mapa",
+  "treino-de-triceps": "mapa",
+  "treino-de-panturrilha": "mapa",
+  "treino-de-costas-hipertrofia": "mapa",
+  "treino-de-gluteos-feminino": "mapa",
+  "exercicios-para-gluteo-medio": "mapa",
+  "treino-de-braco-em-casa": "mapa",
+  "treino-de-abdomen-em-casa": "mapa",
   "agachamento-vs-leg-press": "substituidor",
   "hack-vs-leg-press": "substituidor",
   "puxada-vs-remada": "substituidor",
@@ -162,6 +179,17 @@ export const ARTIGOS_COM_CARTAO: Record<string, FerramentaId> = {
  * exercício já escolhido (ou a página editorial, quando existe).
  */
 export const HREF_POR_ARTIGO: Record<string, { href: string; pergunta?: string }> = {
+  "treino-de-peito-hipertrofia": { href: "/exercicios/peito", pergunta: "Quais exercícios treinam o peito?" },
+  "treino-de-peito-em-casa": { href: "/exercicios/peito?equipamento=casa", pergunta: "Quais exercícios de peito dá para fazer em casa?" },
+  "treino-de-ombros-hipertrofia": { href: "/exercicios/ombros", pergunta: "Quais exercícios para cada parte do ombro?" },
+  "treino-de-biceps": { href: "/exercicios/biceps", pergunta: "Quais exercícios para bíceps você tem à mão?" },
+  "treino-de-triceps": { href: "/exercicios/triceps", pergunta: "Quais exercícios para tríceps você tem à mão?" },
+  "treino-de-panturrilha": { href: "/exercicios/panturrilha", pergunta: "Quais exercícios para panturrilha?" },
+  "treino-de-costas-hipertrofia": { href: "/exercicios/costas", pergunta: "Quais exercícios para cada região das costas?" },
+  "treino-de-gluteos-feminino": { href: "/exercicios/gluteos", pergunta: "Quais exercícios treinam os glúteos?" },
+  "exercicios-para-gluteo-medio": { href: "/exercicios/gluteos", pergunta: "Ver todos os exercícios para glúteos" },
+  "treino-de-braco-em-casa": { href: "/exercicios/biceps?equipamento=casa", pergunta: "Quais exercícios de braço dá para fazer em casa?" },
+  "treino-de-abdomen-em-casa": { href: "/exercicios/abdomen?equipamento=casa", pergunta: "Quais exercícios treinam o abdômen?" },
   "como-fazer-cadeira-extensora": { href: "/substituir/cadeira-extensora", pergunta: "Sua academia não tem cadeira extensora?" },
   "como-fazer-cadeira-flexora": { href: "/substituir/mesa-flexora", pergunta: "Não tem cadeira ou mesa flexora?" },
   "como-fazer-hip-thrust": { href: "/substituir/elevacao-pelvica", pergunta: "Não consegue montar a elevação pélvica?" },

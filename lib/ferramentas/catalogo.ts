@@ -151,6 +151,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["perder peso ate", "quantos quilos", "prazo", "fim do ano", "casamento", "viagem", "quanto tempo para emagrecer", "meta de peso", "quilos por semana", "emagrecer rapido"],
   },
   {
+    id: "mapa-muscular",
+    href: "/exercicios",
+    nome: "Mapa Muscular",
+    resultado: "Toque no músculo que quer treinar e veja exercícios compatíveis com seus equipamentos.",
+    acao: "Ver exercícios por músculo",
+    tempo: "5 segundos",
+    categoria: "treino",
+    icone: "corpo",
+    tags: ["exercicios por musculo", "mapa muscular", "qual exercicio trabalha", "exercicios para peito", "exercicios para gluteo", "exercicios em casa", "biblioteca de exercicios"],
+    selo: "novo",
+  },
+  {
     id: "substituidor",
     href: "/ferramentas/substituidor-de-exercicios",
     nome: "Substituidor de Exercícios",
