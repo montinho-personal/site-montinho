@@ -80,6 +80,8 @@ const TIPICA = calcula(PESO_PADRAO, 60, ROUNDS_PADRAO, ROUND_PADRAO, DESCANSO_PA
 const EXTRA = kcalPorRoundExtra(PESO_PADRAO, ROUND_PADRAO, DESCANSO_PADRAO);
 const TRES = kgPorMes(TIPICA, 3);
 const SEMANA3 = (TRES * 12) / 52;
+const MEIA_HORA = calcula(PESO_PADRAO, 30, 3, ROUND_PADRAO, DESCANSO_PADRAO)!;
+const DUAS_HORAS = calcula(PESO_PADRAO, 120, ROUNDS_PADRAO * 2, ROUND_PADRAO, DESCANSO_PADRAO)!;
 const SPAR_BOXE = aulaBoxe("sparring");
 const SACO_BOXE = aulaBoxe("saco");
 const mil = (n: number) => n.toLocaleString("pt-BR");
@@ -118,6 +120,22 @@ const faq: ItemFAQ[] = [
     question: "O muay thai define o corpo?",
     answer:
       "Ajuda a perder gordura, e perder gordura é o que deixa o músculo aparecer. Para ter músculo para mostrar, a musculação faz o trabalho que o muay thai não faz sozinho. Em quanto tempo depende do ponto de partida e da alimentação, não da luta.",
+  },
+  {
+    question: "30 minutos de muay thai queimam quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg, um treino de 30 minutos com 3 rounds fortes gasta cerca de ${kc(MEIA_HORA.kcal)} kcal. Duas horas de treino, com o dobro de rounds, chegam a cerca de ${kc(DUAS_HORAS.kcal)} kcal. Mude o tempo e os rounds na calculadora para ver o seu caso.`,
+  },
+  {
+    question: "Em quanto tempo o muay thai emagrece e define o corpo?",
+    answer: `Com três aulas por semana e alimentação ajustada, a roupa costuma mudar em 2 a 3 meses; só do treino, o teto é perto de ${kg(TRES)} kg de gordura por mês para ${PESO_PADRAO} kg. A definição aparece quando a gordura baixa o bastante para o músculo ficar visível, e por isso o prazo depende mais do ponto de partida e da alimentação do que da luta.`,
+  },
+  {
+    question: "Quais os benefícios do muay thai?",
+    answer: "Condicionamento cardiovascular, coordenação, força de tronco e pernas, e muita gente relata alívio de estresse por descarregar a energia no saco. Para mulheres, os benefícios são os mesmos, com o bônus de aprender defesa pessoal. Para crianças, disciplina e coordenação, desde que a academia tenha turma infantil e controle de contato.",
+  },
+  {
+    question: "Quais as desvantagens do muay thai?",
+    answer: "Risco de lesão em canela, joelho, quadril e punho, principalmente no começo e no sparring; e o impacto dos golpes, que pede proteção e um professor que controle o contato. Também não constrói tanto músculo quanto a musculação. Combinar os dois e aumentar a intensidade aos poucos resolve a maior parte disso.",
   },
   {
     question: "Muay thai perde barriga?",
