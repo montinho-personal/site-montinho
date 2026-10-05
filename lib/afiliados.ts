@@ -67,16 +67,26 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     enviadoPelaAmazon: true,
     destaque: "Whey 1 kg, sabor cookies",
   },
+  "pre-treino-3vs-360g": {
+    id: "pre-treino-3vs-360g",
+    marca: "3VS Nutrition",
+    nome: "Pré-treino 360 g, sabor citrus (200 mg de cafeína por dose)",
+    url: "https://link.amazon/B09fqwvEP",
+    vendedor: "Amazon",
+    enviadoPelaAmazon: true,
+    destaque: "Pré-treino com cafeína",
+  },
 };
 
 /** Artigo → produtos (até 3 por artigo, 6 em páginas de compra). */
 export const AFILIADOS_POR_ARTIGO: Record<string, string[]> = {
-  "black-friday-suplementos": ["creatina-ftw-500g", "creatina-soldiers-250g", "creatina-atlhetica-300g", "whey-soldiers-1kg", "whey-ftw-1kg"],
+  "black-friday-suplementos": ["creatina-ftw-500g", "creatina-soldiers-250g", "creatina-atlhetica-300g", "whey-soldiers-1kg", "whey-ftw-1kg", "pre-treino-3vs-360g"],
   "mega-oferta-prime-2026": ["creatina-ftw-500g", "creatina-soldiers-250g", "creatina-atlhetica-300g", "whey-soldiers-1kg", "whey-ftw-1kg", "whey-soldiers-elite-1kg"],
   "creatina-para-hipertrofia": ["creatina-ftw-500g", "creatina-soldiers-250g", "creatina-atlhetica-300g"],
   // whey-protein-engorda fica de fora: é controle do teste de intenção.
   "whey-protein-como-tomar": ["whey-soldiers-1kg", "whey-ftw-1kg", "whey-soldiers-elite-1kg"],
   "whey-concentrado-vs-isolado-vs-hidrolisado": ["whey-soldiers-1kg", "whey-ftw-1kg", "whey-soldiers-elite-1kg"],
+  "pre-treino-vale-a-pena": ["pre-treino-3vs-360g"],
 };
 
 export const AVISO_AFILIADO =
