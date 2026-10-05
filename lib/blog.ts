@@ -114,12 +114,14 @@ import { MARATONA_CURITIBA_2026_POSTS } from "./maratona-curitiba-2026";
 import { MARATONA_BRASILIA_2026_POSTS } from "./maratona-brasilia-2026";
 import { FABRICA_PREMIUM_POSTS } from "./fabrica-premium";
 import { LUTAS_BARUERI_POSTS } from "./lutas-barueri";
+import { MIOSTATINA_POSTS } from "./miostatina";
 
 export const blogPosts = ([
   ...SAO_SILVESTRE_2026_POSTS,
   ...CORRIDA_PACE_POSTS,
   ...HYROX_SP_2026_POSTS,
   ...BLACK_FRIDAY_2026_POSTS,
+  ...MIOSTATINA_POSTS,
   ...UFC_2026_POSTS,
   ...OUTUBRO_ROSA_POSTS,
   ...OLYMPIA_BRASIL_EXPO_2026_POSTS,
