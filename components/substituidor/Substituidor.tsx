@@ -8,6 +8,7 @@ import Compartilhar from "@/components/share/Compartilhar";
 import { EXERCICIO_POR_ID } from "@/lib/treino/exercicios";
 import { MUSCULOS } from "@/lib/treino/musculos";
 import { ACADEMIA_COMPLETA, EQUIPAMENTOS, NOME_PADRAO, type Equip } from "@/lib/treino/biomecanica";
+import { PAGINAS_SUBSTITUIR } from "@/lib/treino/substituir-seo";
 import { AVISO_CARGA, MOTIVOS, NOME_TIER, buscaSubstituivel, substitui, type Alternativa, type Motivo, type Nivel } from "@/lib/treino/substituicoes";
 
 /**
@@ -62,7 +63,7 @@ export default function Substituidor({ inicialId, inicialMotivo, inicialEquip, p
   const [texto, setTexto] = useState(inicialId ? EXERCICIO_POR_ID.get(inicialId)?.nome ?? "" : "");
   const [exId, setExId] = useState<string | null>(inicialId ?? null);
   const [aberto, setAberto] = useState(false);
-  const [ativo, setAtivo] = useState(0);
+  const [ativo, setAtivo] = useState(-1);
   const [motivo, setMotivo] = useState<Motivo | null>(inicialMotivo ?? null);
   const [equip, setEquip] = useState<Equip[]>(inicialEquip ?? ACADEMIA_COMPLETA);
   const [nivel, setNivel] = useState<Nivel | null>(null);
@@ -115,8 +116,8 @@ export default function Substituidor({ inicialId, inicialMotivo, inicialEquip, p
   const onKey = (e: React.KeyboardEvent) => {
     if (!sugestoes.length) return;
     if (e.key === "ArrowDown") { e.preventDefault(); setAberto(true); setAtivo((i) => (i + 1) % sugestoes.length); }
-    else if (e.key === "ArrowUp") { e.preventDefault(); setAtivo((i) => (i - 1 + sugestoes.length) % sugestoes.length); }
-    else if (e.key === "Enter" && aberto) { e.preventDefault(); escolhe(sugestoes[ativo].id); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); setAtivo((i) => (i <= 0 ? sugestoes.length - 1 : i - 1)); }
+    else if (e.key === "Enter" && aberto) { e.preventDefault(); escolhe(sugestoes[Math.max(0, ativo)].id); }
     else if (e.key === "Escape") setAberto(false);
   };
 
@@ -131,9 +132,9 @@ export default function Substituidor({ inicialId, inicialMotivo, inicialEquip, p
           <div className="relative">
             <input
               id={`${listId}-in`} role="combobox" aria-expanded={aberto && sugestoes.length > 0} aria-controls={`${listId}-lb`} aria-autocomplete="list"
-              aria-activedescendant={aberto && sugestoes[ativo] ? `${listId}-o${ativo}` : undefined}
+              aria-activedescendant={aberto && ativo >= 0 && sugestoes[ativo] ? `${listId}-o${ativo}` : undefined}
               value={texto} autoComplete="off" placeholder="Ex.: cadeira extensora, leg press, puxador…"
-              onChange={(e) => { setTexto(e.target.value); setExId(null); setAberto(true); setAtivo(0); }}
+              onChange={(e) => { setTexto(e.target.value); setExId(null); setAberto(true); setAtivo(-1); }}
               onFocus={() => setAberto(true)} onBlur={() => window.setTimeout(() => setAberto(false), 150)} onKeyDown={onKey}
               className={`w-full min-w-0 bg-black border border-white/25 focus:border-[#BA9E50] text-white text-lg font-bold px-4 py-3 outline-none ${foco}`}
             />
@@ -225,7 +226,7 @@ export default function Substituidor({ inicialId, inicialMotivo, inicialEquip, p
 
           <div onClickCapture={() => trackEvent("substitution_share", { exercicio: exId ?? "" })}>
             <Compartilhar
-              contexto="tool-result" titulo="Qual exercício posso fazer no lugar?" caminho={`${CAMINHO}?exercicio=${exId}`} local="tool_result" ferramenta="substituidor_exercicios"
+              contexto="tool-result" titulo="Qual exercício posso fazer no lugar?" caminho={(() => { const pg = PAGINAS_SUBSTITUIR.find((x) => x.exercicioId === exId && x.isIndexable); return pg ? `/substituir/${pg.slug}` : CAMINHO; })()} local="tool_result" ferramenta="substituidor_exercicios"
               resultado={[`Não tem ${orig.nome.toLowerCase()}? Algumas alternativas para o mesmo objetivo: ${res.proximas.slice(0, 3).map((a) => a.ex.nome).join(", ")}`]}
               gancho="Achei isto:" aparencia="solido"
             />

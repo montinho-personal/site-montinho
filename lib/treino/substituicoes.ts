@@ -20,6 +20,7 @@
  *   1º músculo principal   10   (o que o exercício mais trabalha)
  *   estabilidade          −3 por nível de diferença
  *   técnica               −2 por nível de diferença
+ *   uni x bilateral       −6 (e nunca "muito próxima")
  *   curadoria editorial   +25 (relações revisadas à mão abaixo)
  *   motivo / nível        ajustes descritos em `ajusteMotivo`
  *
@@ -197,8 +198,11 @@ function diferencas(o: Exercicio & Perfil, c: Exercicio & Perfil): string[] {
   if (c.tecnica > o.tecnica) out.push("Mais técnico de executar");
   if (c.tecnica < o.tecnica) out.push("Mais simples de executar");
   if (c.unilateral && !o.unilateral) out.push("Um lado por vez: carga menor por série");
+  if (!c.unilateral && o.unilateral) out.push("Os dois lados juntos: menos trabalho de equilíbrio");
+  if (o.precisa.length > 0 && c.precisa.length === 0 && o.categoria === "composto") out.push("Só o peso do corpo: para progredir, use mais repetições, pausas ou a versão unilateral");
   if (c.categoria !== o.categoria) out.push(c.categoria === "composto" ? "Vira exercício composto: outros músculos ajudam" : "Mais isolado que o original");
   if (c.equipamento !== o.equipamento || c.precisa.join() !== o.precisa.join()) out.push("Equipamento diferente: a carga não se compara");
+  if (out.length === 0) out.push("Variação do mesmo exercício: muda ângulo, pegada ou posição, e a ênfase dentro do músculo");
   return out.slice(0, 3);
 }
 
@@ -240,6 +244,7 @@ export function substitui(p: Pedido): Resultado | null {
     const comuns = o.primarios.filter((m) => c.primarios.includes(m));
     if (comuns.length === 0) continue; // sem músculo principal em comum não é substituição
     const mesmoPadrao = cp.padrao === op.padrao;
+    const semCargaExterna = op.precisa.length > 0 && cp.precisa.length === 0 && o.categoria === "composto";
     const vizinho = !mesmoPadrao && padroesVizinhos(op.padrao, cp.padrao);
     const secOverlap = (o.secundarios ?? []).filter((m) => (c.secundarios ?? []).includes(m) || c.primarios.includes(m)).length;
     let score = 40 * (comuns.length / o.primarios.length)
@@ -248,6 +253,8 @@ export function substitui(p: Pedido): Resultado | null {
       + Math.min(5, secOverlap * 2)
       - 3 * Math.abs(cp.estabilidade - op.estabilidade)
       - 2 * Math.abs(cp.tecnica - op.tecnica)
+      - (!!c.unilateral !== !!o.unilateral ? 6 : 0) // um lado por vez muda carga, equilíbrio e volume da série
+      - (semCargaExterna ? 8 : 0) // peso corporal no lugar de exercício com carga: o estímulo cai muito
       + (c.primarios.includes(o.primarios[0]) ? 10 : 0) // o músculo principal pesa mais que o secundário
       + ajusteMotivo(op, cp, p.motivo, p.nivel);
     const cur = curadas.get(c.id);
@@ -256,9 +263,11 @@ export function substitui(p: Pedido): Resultado | null {
     let tier: Tier;
     if (cur) tier = cur.tier;
     else if (!mesmoPadrao && !vizinho) tier = "mesmo-musculo";
-    else if (mesmoPadrao && comuns.length === o.primarios.length && c.categoria === o.categoria && Math.abs(cp.estabilidade - op.estabilidade) <= 1 && Math.abs(cp.tecnica - op.tecnica) <= 1 && score >= 70) tier = "muito-proxima";
+    else if (mesmoPadrao && comuns.length === o.primarios.length && c.categoria === o.categoria && !!c.unilateral === !!o.unilateral && !semCargaExterna && Math.abs(cp.estabilidade - op.estabilidade) <= 1 && Math.abs(cp.tecnica - op.tecnica) <= 1 && score >= 70) tier = "muito-proxima";
     else if (score >= 55) tier = "boa";
     else tier = "parcial";
+    // Onde há curadoria, "muito próxima" é decisão editorial: o algoritmo não passa à frente dela.
+    if (!cur && curadas.size > 0 && tier === "muito-proxima") tier = "boa";
 
     const preserva = cur?.preserva ?? preservados(original, cand, comuns);
     const muda = cur?.muda ?? diferencas(original, cand);
