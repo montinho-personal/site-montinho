@@ -42,6 +42,7 @@ const CATEGORIAS: Record<Ferramenta, string[]> = {
   proteina: ["padrao", "alta", "baixa"],
   macros: ["padrao", "fora_amdr", "impossivel"],
   deficit: ["padrao", "leve", "moderado", "maior"],
+  superavit: ["padrao", "leve", "moderado", "maior"],
   tdee: ["padrao"],
   onerm: ["padrao"],
   fc: ["padrao"],

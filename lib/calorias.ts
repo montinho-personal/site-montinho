@@ -351,3 +351,61 @@ export const ARTIGOS_COM_CALCULADORA_DEFICIT: string[] = [
   "como-emagrecer-10-kg",
   "quantas-calorias-tem-1kg-de-gordura",
 ];
+
+// ─── Superávit (ganho de massa) ──────────────────────────────────────────────
+
+/**
+ * Faixas de superávit, em percentual do gasto.
+ *
+ * A referência é Iraki et al. (2019), revisão sobre nutrição no fisiculturismo
+ * fora da competição: manutenção mais cerca de 10% a 20% para iniciantes e
+ * intermediários, menos para avançados. É a mesma referência que o Simulador
+ * de Ganho de Massa usa. A faixa "maior" existe para mostrar o custo, nunca
+ * é sugerida: acima de 20% a fração de gordura no ganho sobe.
+ */
+export const FAIXAS_SUPERAVIT: FaixaDeficit[] = [
+  {
+    id: "leve",
+    percentualMin: 5,
+    percentualMax: 10,
+    titulo: "Superávit leve",
+    descricao:
+      "Ganho mais lento e com menos gordura. Costuma interessar a quem já treina há anos e ganha músculo devagar, ou a quem quer manter a barriga sob controle.",
+  },
+  {
+    id: "moderado",
+    percentualMin: 10,
+    percentualMax: 15,
+    titulo: "Superávit moderado",
+    descricao:
+      "Uma referência prática para iniciantes e intermediários: dá energia para o músculo crescer sem que a balança suba rápido demais.",
+    destaque: true,
+  },
+  {
+    id: "maior",
+    percentualMin: 20,
+    percentualMax: 20,
+    titulo: "Superávit maior",
+    descricao:
+      "Ganho de peso mais rápido, com uma parte maior vindo de gordura. Pode servir a quem tem muita dificuldade de ganhar peso, com a cintura monitorada de perto.",
+  },
+];
+
+/** Ingestão estimada para um percentual de superávit sobre o gasto. */
+export function aplicaSuperavit(tdee: Faixa, percentual: number): Faixa {
+  const k = 1 + percentual / 100;
+  return { min: tdee.min * k, max: tdee.max * k };
+}
+
+export const REFERENCIA_SUPERAVIT = {
+  rotulo:
+    "Iraki J, Fitschen P, Espinar S, Helms E. Nutrition Recommendations for Bodybuilders in the Off-Season: A Narrative Review. Sports, 2019",
+  rotuloCurto: "Iraki et al. (2019)",
+  url: "https://www.mdpi.com/2075-4663/7/7/154",
+};
+
+export const NOTA_SEM_PROMESSA_GANHO =
+  "Comer acima do gasto, junto com musculação e proteína suficiente, tende a levar ao ganho de massa, mas o ritmo varia entre pessoas e não é linear. Nem todo peso ganho é músculo: parte é água, glicogênio e alguma gordura.";
+
+export const NOTA_AJUSTE_GANHO =
+  "Confira pela média semanal do peso: para iniciantes e intermediários, algo perto de 0,25% a 0,5% do peso por semana. Parado por duas ou três semanas, suba 100 a 150 kcal; subindo rápido com a cintura junto, reduza um pouco.";

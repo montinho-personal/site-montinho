@@ -116,6 +116,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["emagrecer", "perder peso", "quanto comer para emagrecer", "calorias para emagrecer", "dieta", "secar", "cutting", "definir", "meta calorica", "quantas calorias comer"],
   },
   {
+    id: "superavit",
+    href: "/ferramentas/calculadora-superavit-calorico",
+    nome: "Calculadora de Superávit Calórico",
+    resultado: "Veja quantas calorias comer por dia para ganhar massa muscular sem exagerar na gordura.",
+    acao: "Calcular meu superávit",
+    tempo: "1 minuto",
+    categoria: "alimentacao",
+    icone: "balanca",
+    tags: ["ganhar massa", "bulking", "lean bulk", "superavit", "quanto comer para ganhar massa", "calorias para ganhar peso", "hipertrofia", "engordar", "ganhar peso"],
+    selo: "novo",
+  },
+  {
     id: "simulador-emagrecimento",
     href: "/ferramentas/simulador-emagrecimento",
     nome: "Simulador de Emagrecimento",
