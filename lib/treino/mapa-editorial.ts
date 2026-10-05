@@ -309,6 +309,13 @@ export const EDITORIAL: Record<GrupoSlug, EditorialGrupo> = {
     resposta: "Todo exercício de panturrilha é uma variação de subir na ponta dos pés. Com o joelho esticado (em pé, leg press, smith) o gastrocnêmio trabalha mais; com o joelho dobrado (sentado), o sóleo.",
     comoEscolher: "Ter uma versão com joelho esticado e outra sentada cobre os dois músculos. Amplitude completa, com pausa embaixo, costuma render mais que carga alta com meio movimento.",
     emCasa: "Panturrilha unilateral num degrau, segurando um halter ou mochila.",
+    extras: [
+      { h2: "Quais os melhores exercícios para panturrilha?", p: "Elevação de panturrilha em pé, no degrau (para descer o calcanhar abaixo da ponta do pé e ganhar amplitude) e sentada. Na academia, também dá para fazer no leg press e na máquina de panturrilha. Suba até o máximo, desça devagar e segure um instante embaixo." },
+      { h2: "Panturrilha em pé ou sentado?", p: "Os dois. Em pé, com o joelho estendido, trabalha mais o gastrocnêmio, a parte de fora e mais visível. Sentado, com o joelho dobrado, o gastrocnêmio participa pouco e o sóleo, que fica por baixo, faz mais o trabalho. Um de cada cobre a panturrilha toda." },
+      { h2: "Panturrilha em casa, sem equipamento", p: "Elevação num degrau ou na escada, uma perna de cada vez, já é pesada para a maioria. Para progredir, segure um halter, uma mochila ou um galão e aumente as repetições ou a pausa embaixo." },
+      { h2: "Para que serve e quais os benefícios de treinar panturrilha?", p: "A panturrilha empurra o corpo para a frente em toda caminhada, corrida e salto, e ajuda no equilíbrio. Ela também ajuda o sangue das pernas a voltar para o coração. Quem tem problema de circulação deve conversar com o médico antes de usar exercício como tratamento." },
+      { h2: "Exercício afina panturrilha gorda?", p: "Não dá para perder gordura só na panturrilha com exercício local. A gordura diminui no corpo todo, com o gasto total e a alimentação ao longo do tempo; o formato também depende muito da genética." },
+    ],
     artigos: [{ slug: "treino-de-panturrilha", texto: "treino de panturrilha" }],
     searchDemand: "media", isIndexable: true,
   }),
