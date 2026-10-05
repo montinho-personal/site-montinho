@@ -186,6 +186,15 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     enviadoPelaAmazon: true,
     destaque: "Halter e barra em um",
   },
+  "halteres-hexagonais-suporte": {
+    id: "halteres-hexagonais-suporte",
+    marca: "Songmics",
+    nome: "Kit de halteres hexagonais com suporte (pares de 1, 1,5 e 2 kg)",
+    url: "https://link.amazon/B04puePgi",
+    vendedor: "loja parceira",
+    enviadoPelaAmazon: true,
+    destaque: "Leves, para começar",
+  },
 };
 
 /** Artigo → produtos (até 3 por artigo, 6 em páginas de compra). */
@@ -201,8 +210,10 @@ export const AFILIADOS_POR_ARTIGO: Record<string, string[]> = {
   // exercicios-para-gluteo-medio fica de fora: está no grupo de teste de intenção.
   "como-montar-academia-em-casa": ["halteres-songmics-2x10kg", "mini-band-everlast", "kit-elasticos-17-pecas"],
   "treino-com-elasticos-em-casa": ["mini-band-everlast", "kit-elasticos-17-pecas", "faixas-elasticas-5-aqws"],
-  "treino-de-braco-em-casa": ["halteres-songmics-2x10kg"],
-  "treino-de-peito-em-casa": ["halteres-songmics-2x10kg"],
+  "treino-de-braco-em-casa": ["halteres-songmics-2x10kg", "halteres-hexagonais-suporte"],
+  "treino-de-peito-em-casa": ["halteres-songmics-2x10kg", "halteres-hexagonais-suporte"],
+  "treino-hiit-em-casa": ["halteres-hexagonais-suporte"],
+  "treino-para-emagrecer-em-casa": ["halteres-hexagonais-suporte"],
   "como-escolher-tenis-para-treinar": ["tenis-mizuno-sunrise", "tenis-puma-flyer-lite-3-fem", "tenis-mormaii-urban-smash"],
   "tenis-para-sao-silvestre": ["tenis-mizuno-sunrise", "tenis-puma-flyer-lite-3-fem"],
 };
