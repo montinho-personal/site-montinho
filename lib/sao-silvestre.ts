@@ -121,6 +121,7 @@ export const ARTIGOS_COM_PREVISOR_SS: string[] = [
   "vencedores-sao-silvestre",
   "primeira-sao-silvestre-dicas",
   "tenis-para-sao-silvestre",
+  "retirada-kit-sao-silvestre-2026",
 ];
 
 /** Variante de LINK: vazia desde que o previsor passou a ir embutido nos artigos da prova. */
