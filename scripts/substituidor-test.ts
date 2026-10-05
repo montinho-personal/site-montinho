@@ -74,6 +74,15 @@ t("nenhum texto diz que substitui perfeitamente nem cita EMG", () => {
 t("toda alternativa diz o que muda ou é de outro grupo", () => {
   for (const e of EXERCICIOS) for (const a of substitui({ exercicioId: e.id, motivo: "variar", equipamentos: ACADEMIA_COMPLETA })!.proximas) assert.ok(a.muda.length > 0 || a.tier === "muito-proxima", `${e.id} → ${a.ex.id}`);
 });
+t("unilateral nunca é 'muito próxima' de bilateral (e vice-versa)", () => {
+  for (const e of EXERCICIOS) for (const a of substitui({ exercicioId: e.id, motivo: "variar", equipamentos: ACADEMIA_COMPLETA })!.proximas)
+    if (a.tier === "muito-proxima" && !a.curada) assert.equal(!!a.ex.unilateral, !!e.unilateral, `${e.id} → ${a.ex.id}`);
+});
+t("composto com carga: peso corporal nunca é 'muito próxima' (fora da curadoria)", () => {
+  for (const e of EXERCICIOS) for (const a of substitui({ exercicioId: e.id, motivo: "variar", equipamentos: ACADEMIA_COMPLETA })!.proximas)
+    if (a.tier === "muito-proxima" && !a.curada && e.categoria === "composto" && PERFIL[e.id].precisa.length) assert.ok(PERFIL[a.ex.id].precisa.length > 0, `${e.id} → ${a.ex.id}`);
+});
+t("agachamento no smith: primeira opção é bilateral", () => assert.ok(!substitui({ exercicioId: "agachamento-smith", motivo: "sem-aparelho", equipamentos: ACADEMIA_COMPLETA })!.proximas[0].ex.unilateral));
 t("busca com aliases brasileiros", () => {
   assert.equal(buscaSubstituivel("extensora")[0].id, "cadeira-extensora");
   assert.equal(buscaSubstituivel("puxador")[0].id, "puxada-frente");
