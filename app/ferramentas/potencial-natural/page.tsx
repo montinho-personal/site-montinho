@@ -97,6 +97,26 @@ const faq: ItemFAQ[] = [
     answer: NOTA_NAO_PRESCREVE,
   },
   {
+    question: "Como saber se tenho genética para musculação?",
+    answer: "Treinando de verdade por um ou dois anos: carga subindo, volume suficiente, proteína e sono em dia. Quem responde rápido nessas condições tem boa resposta ao treino. Antes disso, quase sempre o que parece genética ruim é treino ou alimentação inconsistente. A calculadora mostra onde você está em relação ao teto natural médio, não o seu teto exato.",
+  },
+  {
+    question: "Como a genética influencia a musculação?",
+    answer: "Ela mexe no ritmo e no teto: tamanho da estrutura óssea, proporção de fibras rápidas, onde o músculo se insere no osso e como o corpo responde ao estímulo. Por isso duas pessoas com o mesmo treino evoluem em velocidades diferentes. Ela não decide se você vai ganhar músculo; decide quanto e em quanto tempo.",
+  },
+  {
+    question: "Qual a melhor genética para musculação?",
+    answer: "Ossos mais largos, músculos com inserção longa e boa resposta ao treino ajudam. Mas não dá para escolher, e quase ninguém chega perto do próprio limite: a diferença entre treinar bem por anos e treinar mais ou menos pesa muito mais que a genética para quem não compete.",
+  },
+  {
+    question: "Pulso e tornozelo mostram o potencial genético?",
+    answer: "Algumas fórmulas, como a de Casey Butt, usam a circunferência do pulso e do tornozelo como sinal do tamanho da estrutura óssea. São estimativas populacionais, como o FFMI. Servem de referência, não de sentença: medida de osso não prevê como o seu músculo responde ao treino.",
+  },
+  {
+    question: "Qual hormônio é melhor para ganhar massa muscular?",
+    answer: "Testosterona, hormônio do crescimento e insulina participam do ganho de músculo, e o jeito natural de manter os seus em ordem é dormir bem, comer o suficiente e treinar com constância. Uso de hormônio é decisão médica, e quem usa sai da conta desta calculadora, que mede o limite natural.",
+  },
+  {
     question: "Por que o FFMI é normalizado pela altura?",
     answer:
       "Porque o FFMI bruto favorece quem é mais baixo: a altura entra ao quadrado no denominador, mas massa magra não cresce ao quadrado com a estatura. A correção de 6,3 × (1,80 − altura) põe todo mundo na mesma régua, que é a de um corpo de 1,80 m — e é assim que o estudo original fez.",
