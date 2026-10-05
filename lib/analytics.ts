@@ -297,6 +297,13 @@ export type AnalyticsEvent =
   | "walking_methodology_open"
   | "walking_tool_click"
   /** Calculadora de Calorias do Elíptico. `mode` e `effort`; nunca peso nem resultado. */
+  | "surplus_calculator_view"
+  | "surplus_calculator_complete"
+  | "surplus_activity_help_open"
+  | "surplus_select"
+  | "surplus_macros_click"
+  | "surplus_methodology_open"
+  | "surplus_article_click"
   | "strength_calculator_view"
   | "strength_calculator_use"
   | "strength_mode_selected"

@@ -37,6 +37,7 @@ export type Ferramenta =
   | "caminhada"
   | "eliptico"
   | "musculacao"
+  | "superavit"
   | "atividades"
   | "corrida"
   | "glp1"

@@ -178,6 +178,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Macros",
     motivo: "com a metodologia da divisão entre proteína, carboidrato e gordura",
   },
+  superavit: {
+    href: "/ferramentas/calculadora-superavit-calorico",
+    ancora: "Calculadora de Superávit Calórico",
+    motivo: "que estima o seu gasto e mostra as faixas de superávit para ganhar massa",
+  },
   deficit: {
     href: "/ferramentas/calculadora-deficit-calorico",
     ancora: "Calculadora de Déficit Calórico",

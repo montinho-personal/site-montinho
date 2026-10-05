@@ -52,6 +52,7 @@ export const NOME: Record<Ferramenta, string> = {
   proteina: "Calculadora de Proteína",
   macros: "Calculadora de Macros",
   deficit: "Calculadora de Déficit",
+  superavit: "Calculadora de Superávit",
   tdee: "Calculadora de Gasto Calórico",
   volume: "Calculadora de Volume",
   onerm: "Calculadora de 1RM",
@@ -108,6 +109,7 @@ export const ROTA: Record<Ferramenta, string> = {
   proteina: "/ferramentas/calculadora-de-proteina",
   macros: "/ferramentas/calculadora-macros",
   deficit: "/ferramentas/calculadora-deficit-calorico",
+  superavit: "/ferramentas/calculadora-superavit-calorico",
   tdee: "/ferramentas/calculadora-tmb-tdee",
   volume: "/ferramentas/calculadora-volume-treino",
   onerm: "/ferramentas/calculadora-1rm",
@@ -156,6 +158,7 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
   proteina: { ferramenta: "macros", label: "Calcular meus macros" },
   macros: { ferramenta: "cardapio", label: "Transformar em cardápio" },
   deficit: { ferramenta: "macros", label: "Distribuir em macros" },
+  superavit: { ferramenta: "macros", label: "Distribuir em macros" },
   tdee: { ferramenta: "deficit", label: "Calcular meu déficit" },
   onerm: { ferramenta: "volume", label: "Conferir meu volume" },
   fc: { ferramenta: "tdee", label: "Calcular meu gasto diário" },
@@ -577,6 +580,31 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Déficit maior traz resultado rápido e cobra caro: fome, queda no treino e mais risco de perder músculo. Costuma pedir proteína alta e acompanhamento de perto.",
       pergunta: "Quer que eu veja se esse déficit é seguro para você?",
       pedido: "Escolhi o déficit maior e queria saber se ele é seguro para o meu caso.",
+    },
+  },
+  superavit: {
+    padrao: {
+      interpretacao:
+        "Esse superávit é uma estimativa. Ele só vira músculo junto com treino de força com progressão, proteína suficiente e sono; sem isso, o que sobe é gordura.",
+      pedido: "Queria entender como aplicar esse superávit para ganhar músculo sem ganhar muita gordura.",
+    },
+    leve: {
+      interpretacao:
+        "Superávit leve é o que menos traz gordura junto. O custo é o tempo: o ganho vem, mas devagar, e é fácil comer na manutenção sem perceber.",
+      pergunta: "Quer saber se dá para acelerar sem engordar demais?",
+      pedido: "Escolhi o superávit leve e queria saber se dá para acelerar sem ganhar muita gordura.",
+    },
+    moderado: {
+      interpretacao:
+        "Superávit moderado é a faixa que serve à maioria. O que decide é o treino: com carga subindo semana a semana, a energia a mais vira músculo.",
+      pergunta: "Quer que eu te ajude a montar o treino para aproveitar esse superávit?",
+      pedido: "Escolhi o superávit moderado e queria ajuda para montar o treino junto.",
+    },
+    maior: {
+      interpretacao:
+        "Superávit maior faz a balança subir rápido, mas uma parte maior é gordura. Costuma pedir cintura medida toda semana e ajuste rápido.",
+      pergunta: "Quer que eu veja se esse ritmo faz sentido para você?",
+      pedido: "Escolhi o superávit maior e queria saber se esse ritmo faz sentido para o meu caso.",
     },
   },
   tdee: {
