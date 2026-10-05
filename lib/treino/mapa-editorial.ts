@@ -96,7 +96,7 @@ export const EDITORIAL: Record<GrupoSlug, EditorialGrupo> = {
   }),
   costas: base({
     title: "Exercícios Para Costas: Dorsais, Trapézio e Lombar | Montinho",
-    description: "Exercícios para costas por região e equipamento: puxadas, remadas, barra fixa e mais. Filtre por academia, halteres ou casa.",
+    description: "Melhores exercícios para costas: puxadas para largura e remadas para espessura, na academia, na polia, com halteres ou em casa.",
     h1: "Exercícios para costas",
     resposta: "Costas não é um músculo só. Puxadas e barra fixa (puxar de cima) trabalham mais os dorsais; remadas (puxar à frente) somam o meio das costas; encolhimentos trabalham o trapézio; e exercícios de dobradiça de quadril exigem a lombar. Um treino completo costuma ter pelo menos uma puxada e uma remada.",
     comoEscolher: "Escolha uma puxada vertical e uma remada que você consiga fazer com as costas, sem jogar o corpo. Use os botões de refino para ver só dorsais, parte superior, trapézio ou lombar.",
@@ -176,6 +176,13 @@ export const EDITORIAL: Record<GrupoSlug, EditorialGrupo> = {
     resposta: "O tríceps estica o cotovelo. Exercícios com o braço junto ao corpo (pulley, coice) e com o braço acima da cabeça (francês, testa) trabalham o músculo em comprimentos diferentes. Supinos e paralelas o treinam junto com o peito.",
     comoEscolher: "Combinar um exercício com o braço acima da cabeça e outro com o braço ao lado do corpo costuma cobrir bem o tríceps.",
     emCasa: "Tríceps no banco ou cadeira, flexão com mãos próximas, francês com halter e tríceps com elástico.",
+    extras: [
+      { h2: "Quais os 3 melhores exercícios para tríceps?", p: "Tríceps pulley na polia alta (com corda ou barra), tríceps testa e tríceps francês. Os dois primeiros trabalham com o braço ao lado do corpo ou à frente; o francês, com o braço acima da cabeça, que alonga mais a cabeça longa. Se quiser um quarto, supino fechado ou paralelas permitem mais carga." },
+      { h2: "Tríceps braquial: as 3 cabeças", p: "Tríceps braquial é o nome do músculo da parte de trás do braço. Ele tem três cabeças: longa, lateral e medial. Todas trabalham em qualquer extensão de cotovelo; a cabeça lateral, a que aparece do lado de fora do braço, é bem recrutada no pulley e nos exercícios com o braço ao lado do corpo, e a longa ganha mais quando o braço está acima da cabeça." },
+      { h2: "Exercícios para tríceps no banco e com halteres", p: "No banco: tríceps testa e francês deitado com halteres, supino fechado e o tríceps no banco (mergulho com as mãos apoiadas atrás). Com halteres: francês com um halter nas duas mãos, coice e testa com halteres. Use o filtro Halteres acima." },
+      { h2: "Exercícios para tríceps na polia", p: "Pulley com corda, com barra reta ou V, tríceps unilateral no cabo e francês na polia, de costas para o aparelho. A polia mantém tensão o movimento todo." },
+      { h2: "Treino de tríceps feminino é diferente?", p: "Não. Os exercícios são os mesmos para mulheres e homens, inclusive em casa: tríceps no banco ou cadeira, flexão com mãos próximas e francês com halter ou garrafa. O que muda é carga e volume de cada pessoa." },
+    ],
     artigos: [{ slug: "treino-de-triceps", texto: "treino de tríceps" }, { slug: "como-fazer-skull-crusher-triceps-testa", texto: "como fazer tríceps testa" }],
     searchDemand: "alta", isIndexable: true,
   }),
