@@ -22,7 +22,7 @@ import {
   NIVEIS,
   NOTA_ESTIMATIVA,
   NOTA_SEM_DUPLA_CONTAGEM,
-  ORIENTACAO_MENOR_IDADE,
+  ORIENTACAO_MENOR_IDADE_GANHO,
   PESO_MAX,
   PESO_MIN,
   REFERENCIA_TMB,
@@ -317,7 +317,7 @@ export default function CalculadoraSuperavit({
         <div aria-live="polite">
           {menorDeIdade ? (
             <div className="border border-white/20 p-6 h-full flex items-center">
-              <p className="text-gray-200 text-base leading-relaxed">{ORIENTACAO_MENOR_IDADE}</p>
+              <p className="text-gray-200 text-base leading-relaxed">{ORIENTACAO_MENOR_IDADE_GANHO}</p>
             </div>
           ) : !resultado ? (
             /* Zero state — nunca "0 kcal" */

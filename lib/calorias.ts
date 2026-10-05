@@ -407,5 +407,8 @@ export const REFERENCIA_SUPERAVIT = {
 export const NOTA_SEM_PROMESSA_GANHO =
   "Comer acima do gasto, junto com musculação e proteína suficiente, tende a levar ao ganho de massa, mas o ritmo varia entre pessoas e não é linear. Nem todo peso ganho é músculo: parte é água, glicogênio e alguma gordura.";
 
+export const ORIENTACAO_MENOR_IDADE_GANHO =
+  "Para menores de 18 anos, as necessidades de energia acompanham crescimento e maturação, e uma meta de superávit não deve ser definida por uma calculadora. O caminho aqui é avaliação individual com profissional habilitado.";
+
 export const NOTA_AJUSTE_GANHO =
   "Confira pela média semanal do peso: para iniciantes e intermediários, algo perto de 0,25% a 0,5% do peso por semana. Parado por duas ou três semanas, suba 100 a 150 kcal; subindo rápido com a cintura junto, reduza um pouco.";
