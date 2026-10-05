@@ -121,6 +121,15 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     enviadoPelaAmazon: true,
     destaque: "16 g de proteína por barra",
   },
+  "mini-band-everlast": {
+    id: "mini-band-everlast",
+    marca: "Everlast",
+    nome: "Mini band (faixa elástica) para glúteo, perna e aquecimento",
+    url: "https://link.amazon/B0iUrqEJP",
+    vendedor: "Amazon",
+    enviadoPelaAmazon: true,
+    destaque: "Elástico, ocupa zero espaço",
+  },
 };
 
 /** Artigo → produtos (até 3 por artigo, 6 em páginas de compra). */
@@ -133,6 +142,8 @@ export const AFILIADOS_POR_ARTIGO: Record<string, string[]> = {
   "whey-concentrado-vs-isolado-vs-hidrolisado": ["whey-soldiers-1kg", "whey-ftw-1kg", "whey-soldiers-elite-1kg"],
   "pre-treino-vale-a-pena": ["pre-treino-3vs-360g", "pre-treino-mu-500g", "pre-treino-ftw-sem-cafeina-300g"],
   "barrinha-de-proteina-vale-a-pena": ["barra-supino-amendoim-9un", "barra-bold-cookies-12un", "barra-nutry-crispy-12un"],
+  // exercicios-para-gluteo-medio fica de fora: está no grupo de teste de intenção.
+  "como-montar-academia-em-casa": ["mini-band-everlast"],
 };
 
 export const AVISO_AFILIADO =
