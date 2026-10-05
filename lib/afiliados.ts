@@ -177,6 +177,15 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     enviadoPelaAmazon: true,
     destaque: "Solado plano, para musculação",
   },
+  "halteres-songmics-2x10kg": {
+    id: "halteres-songmics-2x10kg",
+    marca: "Songmics",
+    nome: "Par de halteres ajustáveis 2 x 10 kg, vira barra",
+    url: "https://link.amazon/B09Fzqq5P",
+    vendedor: "loja parceira",
+    enviadoPelaAmazon: true,
+    destaque: "Halter e barra em um",
+  },
 };
 
 /** Artigo → produtos (até 3 por artigo, 6 em páginas de compra). */
@@ -190,7 +199,10 @@ export const AFILIADOS_POR_ARTIGO: Record<string, string[]> = {
   "pre-treino-vale-a-pena": ["pre-treino-3vs-360g", "pre-treino-mu-500g", "pre-treino-ftw-sem-cafeina-300g"],
   "barrinha-de-proteina-vale-a-pena": ["barra-supino-amendoim-9un", "barra-bold-cookies-12un", "barra-nutry-crispy-12un"],
   // exercicios-para-gluteo-medio fica de fora: está no grupo de teste de intenção.
-  "como-montar-academia-em-casa": ["mini-band-everlast", "kit-elasticos-17-pecas", "faixas-elasticas-5-aqws"],
+  "como-montar-academia-em-casa": ["halteres-songmics-2x10kg", "mini-band-everlast", "kit-elasticos-17-pecas"],
+  "treino-com-elasticos-em-casa": ["mini-band-everlast", "kit-elasticos-17-pecas", "faixas-elasticas-5-aqws"],
+  "treino-de-braco-em-casa": ["halteres-songmics-2x10kg"],
+  "treino-de-peito-em-casa": ["halteres-songmics-2x10kg"],
   "como-escolher-tenis-para-treinar": ["tenis-mizuno-sunrise", "tenis-puma-flyer-lite-3-fem", "tenis-mormaii-urban-smash"],
   "tenis-para-sao-silvestre": ["tenis-mizuno-sunrise", "tenis-puma-flyer-lite-3-fem"],
 };
