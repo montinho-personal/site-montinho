@@ -487,4 +487,58 @@ ${FONTES_SS}`,
       { question: "Quais tênis são proibidos nas corridas?", answer: "Nas competições de elite, a World Athletics limita o solado de tênis de rua a 40 mm e permite no máximo uma placa rígida. Para corredores amadores, o importante é o tênis ser seguro e confortável." },
     ],
   },
+  {
+    slug: "retirada-kit-sao-silvestre-2026",
+    title: "Retirada do kit da São Silvestre 2026: datas, local e o que levar",
+    metaTitle: "Retirada do Kit São Silvestre 2026: Datas, Local e Horários",
+    metaDescription:
+      "Retirada do kit da São Silvestre 2026: datas e horários divulgados, local na Bienal do Ibirapuera, o que vem em cada kit, o que levar e se outra pessoa pode retirar.",
+    excerpt:
+      "Quando e onde retirar o kit da 101ª São Silvestre, o que vem em cada kit e o que levar para não perder a viagem.",
+    category: "Treinamento",
+    date: "2026-10-05",
+    readTime: "4 min",
+    author: AUTOR,
+    tags: ["São Silvestre", "São Silvestre 2026", "kit", "retirada do kit", "corrida de rua"],
+    content: `<blockquote><p><strong>Datas divulgadas pela imprensa e ainda não confirmadas no regulamento.</strong> Este guia é atualizado quando a organização publicar as informações oficiais. Última verificação: 5 de outubro de 2026.</p></blockquote>
+<p>Quem se inscreveu na <strong>101ª São Silvestre</strong> precisa retirar o kit antes da prova: é nele que vem o número de peito com o chip, sem o qual não dá para correr. A prova é na quinta-feira, <strong>31 de dezembro de 2026</strong>.</p>
+
+<h2>Datas e horários da retirada do kit</h2>
+<table><thead><tr><th>Dia</th><th>Horário</th></tr></thead><tbody>
+<tr><td>26, 27, 28 e 29 de dezembro</td><td>9h às 20h</td></tr>
+<tr><td>30 de dezembro</td><td>9h às 18h</td></tr>
+</tbody></table>
+<p>Não há retirada no dia da prova. Quem deixar para 30/12 pega o dia mais curto e, normalmente, a fila maior.</p>
+
+<h2>Onde retirar o kit</h2>
+<p>No prédio da <strong>Fundação Bienal de São Paulo</strong>, dentro do Parque Ibirapuera, onde acontece a feira da prova.</p>
+
+<h2>O que vem em cada kit</h2>
+<ul>
+<li><strong>Básico (R$ 335,90):</strong> número de peito com chip, camiseta e sacochila. A medalha é entregue a quem conclui a prova.</li>
+<li><strong>Intermediário (R$ 459,90):</strong> o do básico mais uma camiseta finisher.</li>
+<li><strong>Premium (R$ 1.039,90):</strong> camiseta, camiseta finisher, corta-vento, porta-tênis, chinelo, boné e número de peito, além de serviços na feira e na arena da prova.</li>
+</ul>
+<p>Detalhes da inscrição no <a href="/blog/inscricao-sao-silvestre-2026">guia da inscrição da São Silvestre 2026</a>.</p>
+
+<h2>O que levar na retirada</h2>
+<p>Em geral, as provas pedem documento oficial com foto e o comprovante de inscrição. Confira no regulamento da prova, em <a href="https://www.saosilvestre.com.br/" target="_blank" rel="noopener noreferrer">saosilvestre.com.br</a>, a lista exata e as regras para retirar o kit de outra pessoa.</p>
+
+<h2>Experimente a camiseta, mas corra com a sua roupa</h2>
+<p>Camiseta e tênis novos no dia da prova são a receita de assadura e bolha. Se quiser correr com a camiseta oficial, use num treino antes. O mesmo vale para o tênis: veja <a href="/blog/tenis-para-sao-silvestre">tênis para a São Silvestre</a>.</p>
+
+<h2>Quanto tempo você vai levar nos 15 km?</h2>
+<p>Já com o kit em mãos, vale ter uma ideia de ritmo para não sair rápido demais na descida da largada. O previsor abaixo parte do seu tempo em outra distância. E, se é sua primeira vez, leia as <a href="/blog/primeira-sao-silvestre-dicas">dicas para a primeira São Silvestre</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada um tem a própria genética, rotina e história. Na São Silvestre tem gente que corre para ganhar e gente que caminha boa parte do trajeto, e as duas terminam a prova. Se quiser ajuda para chegar bem em 31/12, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+<p><small>Fontes: Esportividade (datas, local e kits) e site oficial da prova. Dados a confirmar no regulamento oficial.</small></p>
+`,
+    faq: [
+      { question: "Quando é a retirada do kit da São Silvestre 2026?", answer: "Segundo a imprensa, de 26 a 29 de dezembro, das 9h às 20h, e em 30 de dezembro, das 9h às 18h. Confirme no regulamento oficial." },
+      { question: "Onde retirar o kit da São Silvestre?", answer: "No prédio da Fundação Bienal, dentro do Parque Ibirapuera, em São Paulo, segundo as informações divulgadas até agora." },
+      { question: "Dá para retirar o kit no dia da prova?", answer: "Não. A última data divulgada é 30 de dezembro, das 9h às 18h." },
+      { question: "Outra pessoa pode retirar meu kit?", answer: "As regras de retirada por terceiros ficam no regulamento oficial; confira no site da prova antes de mandar alguém." },
+    ],
+  },
 ];
