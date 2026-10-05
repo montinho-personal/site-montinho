@@ -81,7 +81,7 @@ const PROVAS_EX = tabelaProvas(PACE_EX, PESO_PADRAO);
 const TAB_PESO = tabelaPorPeso(PACE_EX);
 const TAB_PACE = tabelaPorPace(PESO_PADRAO);
 /** Pace × velocidade × tempo de prova, para quem converte pace em km/h na esteira. */
-const PACES_KMH = [240, 270, 300, 330, 360, 390, 420, 450, 480];
+const PACES_KMH = [180, 210, 240, 270, 300, 330, 360, 390, 420, 450, 480];
 const PROVAS_KM = [5, 10, 21.0975, 42.195];
 const CMP = comparaComCaminhada(EX_5K, PESO_PADRAO);
 const UM_QUILO = simulacaoUmQuilo(PESO_PADRAO, PACE_EX);
@@ -124,6 +124,22 @@ const faq: ItemFAQ[] = [
   {
     question: "Qual o tempo de meia maratona no meu pace?",
     answer: "Multiplique o pace por 21,1 km. No pace 6:00, a meia sai em cerca de 2h06; no 5:00, em cerca de 1h45. A calculadora faz a conta para qualquer pace, e a tabela mostra os mais comuns.",
+  },
+  {
+    question: "Como calcular a distância pelo pace e o tempo?",
+    answer: "Divida o tempo pelo pace. 45 minutos no pace 6:00 dão 45 ÷ 6 = 7,5 km; 1 hora no pace 5:00, 12 km. A calculadora faz a conta em qualquer direção: com dois dos três valores (pace, tempo, distância), ela acha o terceiro.",
+  },
+  {
+    question: "Como calcular o pace na natação?",
+    answer: "Na natação o pace é contado a cada 100 metros, não por km: divida o tempo pela distância e multiplique por 100. 1.500 m em 30 minutos dão 2:00 por 100 m. Esta calculadora usa o pace da corrida, por quilômetro; para o gasto na água, use a calculadora de calorias na natação.",
+  },
+  {
+    question: "Existe pace para bike?",
+    answer: "Quase ninguém usa, porque no ciclismo a velocidade é alta e o pace por km fica pequeno demais para ajudar: 30 km/h é um pace de 2:00 por km. Na bike a medida é km/h. Para o gasto calórico do pedal, use a calculadora de calorias na bicicleta.",
+  },
+  {
+    question: "O pace do Strava é o mesmo desta calculadora?",
+    answer: "É a mesma medida: minutos por quilômetro. As diferenças vêm de duas coisas: o GPS do relógio ou do celular mede a distância com alguma margem de erro, e o aplicativo pode separar o tempo em movimento do tempo total com paradas. Para comparar, use a distância e o tempo que o aplicativo mostra.",
   },
   {
     question: "Quantos quilômetros para perder 1 kg?",
