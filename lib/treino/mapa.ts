@@ -61,7 +61,7 @@ export const GRUPOS: Grupo[] = [
   { slug: "abdomen", nome: "Abdômen", para: "abdômen", musculos: ["core"], aliases: ["abdomen", "abdominal", "abdominais", "barriga", "core", "obliquos"] },
   { slug: "gluteos", nome: "Glúteos", para: "glúteos", musculos: ["gluteos"], aliases: ["gluteo", "gluteos", "bumbum", "bunda", "gluteo medio", "gluteo maximo"] },
   { slug: "quadriceps", nome: "Quadríceps", para: "quadríceps", musculos: ["quadriceps"], aliases: ["quadriceps", "coxa", "frente da coxa", "perna"] },
-  { slug: "posterior-de-coxa", nome: "Posterior de coxa", para: "posterior de coxa", musculos: ["posteriores"], aliases: ["posterior de coxa", "posteriores", "isquiotibiais", "femoral", "posterior da coxa", "parte de tras da coxa"] },
+  { slug: "posterior-de-coxa", nome: "Posterior de coxa", para: "posterior de coxa", musculos: ["posteriores"], aliases: ["posterior de coxa", "posteriores", "isquiotibiais", "femoral", "biceps femoral", "posterior da coxa", "parte de tras da coxa"] },
   { slug: "adutores", nome: "Adutores", para: "adutores", musculos: ["adutores"], aliases: ["adutor", "adutores", "parte interna da coxa"] },
   { slug: "panturrilha", nome: "Panturrilha", para: "panturrilha", musculos: ["panturrilhas"], aliases: ["panturrilha", "panturrilhas", "gemeos", "batata da perna"] },
 ];
