@@ -730,6 +730,7 @@ export type AnalyticsEvent =
   | "shape_training_tool_click"
   | "shape_whatsapp_click"
   | "shape_compact_start"
+  | "related_tool_click"
   | "caffeine_view"
   | "caffeine_started"
   | "caffeine_completed"
