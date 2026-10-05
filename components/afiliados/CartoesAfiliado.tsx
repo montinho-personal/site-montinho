@@ -21,10 +21,15 @@ function Botao({ p, slug, posicao }: { p: ProdutoAfiliado; slug: string; posicao
 }
 
 function Selo({ p }: { p: ProdutoAfiliado }) {
+  const texto =
+    p.vendedor === "Amazon"
+      ? "Vendido pela Amazon"
+      : p.vendedor === "loja parceira"
+        ? "Enviado pela Amazon"
+        : `Vendido pela loja oficial da marca${p.enviadoPelaAmazon ? " · enviado pela Amazon" : ""}`;
   return (
     <span className="mt-2 inline-flex w-fit items-center gap-1 rounded-full bg-emerald-500/15 px-2 py-0.5 text-xs text-emerald-300">
-      ✓ Vendido pela {p.vendedor === "Amazon" ? "Amazon" : "loja oficial da marca"}
-      {p.enviadoPelaAmazon && p.vendedor !== "Amazon" ? " · enviado pela Amazon" : ""}
+      ✓ {texto}
     </span>
   );
 }
@@ -59,7 +64,7 @@ export default function CartoesAfiliado({ slug, variante = "fim" }: { slug: stri
   return (
     <section className="my-10 rounded-2xl border border-white/10 bg-white/5 p-6" aria-label="Produtos na Amazon">
       <h2 className="text-xl font-bold text-white mb-1">Leu até aqui? As opções que eu conferi</h2>
-      <p className="text-gray-400 text-sm mb-5">Vendidas pela loja oficial da marca ou pela própria Amazon.</p>
+      <p className="text-gray-400 text-sm mb-5">{produtos.some((p) => p.vendedor === "loja parceira") ? "Todas enviadas pela própria Amazon." : "Vendidas pela loja oficial da marca ou pela própria Amazon."}</p>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {produtos.map((p) => (
           <div key={p.id} className="rounded-xl border border-white/10 bg-black/30 p-4 flex flex-col">
