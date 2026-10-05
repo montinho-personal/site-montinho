@@ -55,6 +55,8 @@ import { ARTIGOS_COM_CALCULADORA_CORRIDA } from "@/lib/corrida";
 import CalculadoraCorrida from "@/components/corrida/CalculadoraCorrida";
 import { ARTIGOS_COM_CALCULADORA_GLP1 } from "@/lib/glp1";
 import CartoesAfiliado from "@/components/afiliados/CartoesAfiliado";
+import CalculadoraDescanso from "@/components/descanso/CalculadoraDescanso";
+import { ARTIGOS_COM_CALCULADORA_DESCANSO } from "@/lib/descanso";
 import CartaoFerramentaRelacionada from "@/components/ferramentas/CartaoFerramentaRelacionada";
 import CalculadoraGLP1 from "@/components/glp1/CalculadoraGLP1";
 import { ARTIGOS_COM_CALCULADORA_META } from "@/lib/meta";
@@ -294,7 +296,9 @@ export default async function BlogPost({ params }: Props) {
                                                           ? "whey"
                                                           : ARTIGOS_COM_PREVISOR_SS.includes(post.slug)
                                                             ? "saoSilvestre"
-                                                            : null;
+                                                            : ARTIGOS_COM_CALCULADORA_DESCANSO.includes(post.slug)
+                                                              ? "descanso"
+                                                              : null;
   /*
    * Link para a Calculadora de Polichinelos logo depois da primeira seção.
    *
@@ -556,6 +560,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraEscada placement={post.slug} />
                 ) : qualCalc === "crossfit" ? (
                   <CalculadoraCrossfit placement={post.slug} />
+                ) : qualCalc === "descanso" ? (
+                  <CalculadoraDescanso placement={post.slug} />
                 ) : qualCalc === "hyrox" ? (
                   <CalculadoraHyrox placement={post.slug} />
                 ) : qualCalc === "creatina" ? (

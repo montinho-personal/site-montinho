@@ -151,6 +151,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["perder peso ate", "quantos quilos", "prazo", "fim do ano", "casamento", "viagem", "quanto tempo para emagrecer", "meta de peso", "quilos por semana", "emagrecer rapido"],
   },
   {
+    id: "descanso",
+    href: "/ferramentas/calculadora-descanso-entre-series",
+    nome: "Calculadora de Descanso Entre Séries",
+    resultado: "Informe exercício, objetivo e esforço e receba uma faixa prática de descanso, com cronômetro.",
+    acao: "Calcular meu descanso",
+    tempo: "10 segundos",
+    categoria: "treino",
+    icone: "calendario",
+    tags: ["descanso", "descanso entre series", "intervalo", "hipertrofia", "forca", "cronometro", "rir", "timer", "tempo de descanso"],
+    selo: "novo",
+  },
+  {
     id: "imc",
     href: "/ferramentas/calculadora-imc",
     nome: "Calculadora de IMC",
