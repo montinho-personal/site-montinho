@@ -41,6 +41,11 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  // Cluster miostatina (lib/miostatina.ts): remédio experimental. O registro da
+  // calculadora GLP-1 está no teto de 8; a ferramenta entra como link no texto.
+  trevogrumabe: "Notícia de remédio experimental: o leitor sai sabendo o status do estudo, e a conta de massa magra vai por link no texto.",
+  "miostatina-o-que-e": "Explica o que é a miostatina e desmente suplemento inibidor; o leitor não termina o texto com nenhuma conta na cabeça.",
+  "bimagrumabe-trevogrumabe-apitegromabe": "Compara três remédios experimentais e o status de cada um; a calculadora de massa magra entra só como link no texto.",
   // Cluster Mr. Olympia 2026 (lib/olympia-2026.ts): cobertura de evento. A pessoa
   // chega com "quem ganhou / que horas / quanto pesa" e sai com um fato, não com
   // uma conta. O único link de ferramenta que cabe (Potencial Natural, no
