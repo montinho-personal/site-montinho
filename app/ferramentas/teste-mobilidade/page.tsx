@@ -18,6 +18,7 @@ import {
 import { TESTES } from "@/lib/mobilidade/testes";
 import { SEMANAS_ATE_RETESTE } from "@/lib/mobilidade/motor";
 import Compartilhar from "@/components/share/Compartilhar";
+import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 
 /**
  * Destrave Seu Corpo — a página da ferramenta.
@@ -75,12 +76,29 @@ const h = { fontFamily: "var(--font-titulo), Georgia, serif" } as const;
 const ln =
   "underline underline-offset-4 decoration-1 decoration-white/30 hover:text-white transition-colors";
 
+const faq: ItemFAQ[] = [
+  { question: "Como fazer o teste de mobilidade de tornozelo?", answer: "Pelo teste do joelho na parede: de frente para a parede, com o pé a alguns centímetros dela, leve o joelho para a frente até encostar, sem tirar o calcanhar do chão. Afaste o pé aos poucos e meça a maior distância em que o joelho ainda encosta. Compare os dois lados. O teste desta página guia o passo a passo." },
+  { question: "Como fazer o teste de mobilidade de ombro?", answer: "De costas para a parede, com lombar, costas e cabeça encostadas, eleve os braços estendidos à frente até acima da cabeça. Se os braços não chegam à parede sem a lombar descolar, o ombro, a coluna torácica ou os dois estão limitando. O teste desta página tem essa etapa." },
+  { question: "Como fazer o teste de mobilidade de quadril?", answer: "Sentado, com joelho a 90 graus, deixe o pé ir para fora sem mexer a coxa: isso mostra a rotação interna do quadril. Deitado, eleve a perna estendida para ver o posterior da coxa. Diferença grande entre os lados é o principal sinal." },
+  { question: "Como é feito o teste de mobilidade da coluna?", answer: "Para a coluna torácica, o teste mais simples é o giro sentado: cruze os braços no peito e gire o tronco para cada lado, sem mexer o quadril. Dor, formigamento ou perda de força na coluna lombar ou cervical são caso de avaliação com fisioterapeuta ou médico, não de teste caseiro." },
+  { question: "Como fazer o teste de flexibilidade?", answer: "O mais conhecido é sentar e alcançar: sentado com as pernas estendidas, leve as mãos em direção aos pés. Ele mede flexibilidade do posterior da coxa e da lombar. Mobilidade é outra coisa: é o quanto você controla a articulação na amplitude, que é o que este teste avalia." },
+  { question: "Quais são os testes de mobilidade articular?", answer: "Os mais usados para quem treina: agachamento livre, joelho na parede (tornozelo), braços na parede (ombro), giro sentado (coluna torácica), rotação do quadril sentado e elevação da perna estendida. São os que este teste reúne, em uns 10 minutos." },
+  { question: "Quais são 10 exercícios de mobilidade?", answer: "Alguns dos mais úteis: agachamento profundo segurando em algo, joelho na parede para o tornozelo, rotação torácica de quatro apoios, gato e camelo, 90/90 do quadril, afundo com rotação, deslizamento de braços na parede, ponte de glúteo, rotação de quadril em pé e alongamento do flexor do quadril. O resultado do teste mostra por onde começar." },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+};
+
 export default function TesteMobilidadePage() {
   if (!MOBILIDADE_NO_AR) notFound();
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="py-12 sm:py-14 bg-black border-b border-white/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -306,6 +324,11 @@ export default function TesteMobilidadePage() {
               </Link>
               . Última revisão do conteúdo: agosto de 2026.
             </p>
+          </div>
+
+          <div className="border-t border-white/10 pt-10">
+            <h2 className="text-2xl font-bold text-white mb-5" style={h}>Perguntas frequentes</h2>
+            <FAQ itens={faq} placement="ferramenta-mobilidade" />
           </div>
 
           <div className="border-t border-white/10 pt-10">
