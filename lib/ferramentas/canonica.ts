@@ -163,6 +163,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Calorias no Futebol",
     motivo: "que separa o tempo de bola rolando do tempo na lateral e mostra quantas latas o jogo realmente pagou",
   },
+  "percentual-gordura": {
+    href: "/ferramentas/calculadora-percentual-de-gordura",
+    ancora: "Calculadora de Percentual de Gordura",
+    motivo: "que estima o percentual pela fita métrica ou pelas dobras",
+  },
   passos: {
     href: "/ferramentas/calculadora-passos",
     ancora: "Calculadora de Passos",

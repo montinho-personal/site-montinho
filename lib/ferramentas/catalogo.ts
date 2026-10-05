@@ -151,6 +151,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["perder peso ate", "quantos quilos", "prazo", "fim do ano", "casamento", "viagem", "quanto tempo para emagrecer", "meta de peso", "quilos por semana", "emagrecer rapido"],
   },
   {
+    id: "percentual-gordura",
+    href: "/ferramentas/calculadora-percentual-de-gordura",
+    nome: "Calculadora de Percentual de Gordura",
+    resultado: "Estime seu percentual de gordura com fita métrica ou com as dobras do adipômetro.",
+    acao: "Calcular meu percentual",
+    tempo: "1 minuto",
+    categoria: "emagrecimento",
+    icone: "corpo",
+    tags: ["percentual de gordura", "gordura corporal", "fita metrica", "marinha americana", "dobras cutaneas", "adipometro", "7 dobras", "3 dobras", "body fat"],
+    selo: "novo",
+  },
+  {
     id: "passos",
     href: "/ferramentas/calculadora-passos",
     nome: "Calculadora de Passos",
