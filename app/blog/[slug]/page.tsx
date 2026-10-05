@@ -478,6 +478,7 @@ export default async function BlogPost({ params }: Props) {
       {/* Content */}
       <article className="py-16 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <CartoesAfiliado slug={post.slug} variante="topo" />
           {calcSplit && (
             <>
               <Prosa html={calcSplit.before} slug={post.slug} />

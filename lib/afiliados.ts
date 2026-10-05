@@ -8,6 +8,8 @@ export type ProdutoAfiliado = {
   url: string;
   vendedor: "loja oficial da marca" | "Amazon";
   enviadoPelaAmazon: boolean;
+  /** Rótulo honesto e verificável (tamanho, vendedor), nunca "mais vendida" ou preço. */
+  destaque: string;
 };
 
 export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
@@ -18,6 +20,7 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     url: "https://www.amazon.com.br/dp/B0DH64LKFK?tag=montinho-20",
     vendedor: "loja oficial da marca",
     enviadoPelaAmazon: true,
+    destaque: "Maior embalagem",
   },
   "creatina-soldiers-250g": {
     id: "creatina-soldiers-250g",
@@ -26,6 +29,7 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     url: "https://link.amazon/B0aiNDs4P",
     vendedor: "loja oficial da marca",
     enviadoPelaAmazon: true,
+    destaque: "Menor embalagem, para testar",
   },
   "creatina-atlhetica-300g": {
     id: "creatina-atlhetica-300g",
@@ -34,6 +38,7 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     url: "https://link.amazon/B0bJRv77U",
     vendedor: "Amazon",
     enviadoPelaAmazon: true,
+    destaque: "Vendida pela Amazon",
   },
 };
 
