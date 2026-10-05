@@ -115,6 +115,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/ferramentas/calculadora-percentual-de-gordura`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/ferramentas/calculadora-passos`,
       lastModified: new Date(),
       changeFrequency: "monthly",
