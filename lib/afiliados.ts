@@ -168,6 +168,15 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     enviadoPelaAmazon: true,
     destaque: "Modelo feminino",
   },
+  "tenis-mormaii-urban-smash": {
+    id: "tenis-mormaii-urban-smash",
+    marca: "Mormaii",
+    nome: "Tênis Urban Smash masculino",
+    url: "https://link.amazon/B0cukcahR",
+    vendedor: "Amazon",
+    enviadoPelaAmazon: true,
+    destaque: "Solado plano, para musculação",
+  },
 };
 
 /** Artigo → produtos (até 3 por artigo, 6 em páginas de compra). */
@@ -182,7 +191,7 @@ export const AFILIADOS_POR_ARTIGO: Record<string, string[]> = {
   "barrinha-de-proteina-vale-a-pena": ["barra-supino-amendoim-9un", "barra-bold-cookies-12un", "barra-nutry-crispy-12un"],
   // exercicios-para-gluteo-medio fica de fora: está no grupo de teste de intenção.
   "como-montar-academia-em-casa": ["mini-band-everlast", "kit-elasticos-17-pecas", "faixas-elasticas-5-aqws"],
-  "como-escolher-tenis-para-treinar": ["tenis-mizuno-sunrise", "tenis-puma-flyer-lite-3-fem"],
+  "como-escolher-tenis-para-treinar": ["tenis-mizuno-sunrise", "tenis-puma-flyer-lite-3-fem", "tenis-mormaii-urban-smash"],
   "tenis-para-sao-silvestre": ["tenis-mizuno-sunrise", "tenis-puma-flyer-lite-3-fem"],
 };
 
