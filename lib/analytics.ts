@@ -5,6 +5,8 @@
 
 export type AnalyticsEvent =
   | "click_whatsapp"
+  /** Clique em cartão de afiliado da Amazon (produto e artigo, nada de saúde). */
+  | "click_afiliado"
   /** Montinho Mata a Vontade (sem restrições/alergias: só se teve ou não). */
   | "mata_vontade_inicio"
   | "mata_vontade_etapa"
