@@ -71,7 +71,8 @@ export const fmtPace = (minPorKm: number) => {
   return `${Math.floor(tot / 60)}:${String(tot % 60).padStart(2, "0")} min/km`;
 };
 
-export const DIST_MIN = 600;
+/** Abaixo de ~1 km em 12 minutos é caminhada lenta: a fórmula, feita com corredores, perde o sentido. */
+export const DIST_MIN = 1000;
 export const DIST_MAX = 5000;
 
 export const parseNumero = (s: string): number | null => {
