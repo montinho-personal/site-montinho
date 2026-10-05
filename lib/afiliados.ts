@@ -27,13 +27,21 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     vendedor: "loja oficial da marca",
     enviadoPelaAmazon: true,
   },
+  "creatina-atlhetica-300g": {
+    id: "creatina-atlhetica-300g",
+    marca: "Atlhetica Nutrition",
+    nome: "Creatina monohidratada 300 g, em pó",
+    url: "https://link.amazon/B0bJRv77U",
+    vendedor: "Amazon",
+    enviadoPelaAmazon: true,
+  },
 };
 
 /** Artigo → produtos (até 3 por artigo, 6 em páginas de compra). */
 export const AFILIADOS_POR_ARTIGO: Record<string, string[]> = {
-  "black-friday-suplementos": ["creatina-ftw-500g", "creatina-soldiers-250g"],
-  "mega-oferta-prime-2026": ["creatina-ftw-500g", "creatina-soldiers-250g"],
-  "creatina-para-hipertrofia": ["creatina-ftw-500g", "creatina-soldiers-250g"],
+  "black-friday-suplementos": ["creatina-ftw-500g", "creatina-soldiers-250g", "creatina-atlhetica-300g"],
+  "mega-oferta-prime-2026": ["creatina-ftw-500g", "creatina-soldiers-250g", "creatina-atlhetica-300g"],
+  "creatina-para-hipertrofia": ["creatina-ftw-500g", "creatina-soldiers-250g", "creatina-atlhetica-300g"],
 };
 
 export const AVISO_AFILIADO =

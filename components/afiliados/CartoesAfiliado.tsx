@@ -9,8 +9,8 @@ export default function CartoesAfiliado({ slug }: { slug: string }) {
   return (
     <section className="my-10 rounded-2xl border border-white/10 bg-white/5 p-6" aria-label="Produtos na Amazon">
       <h2 className="text-xl font-bold text-white mb-1">Onde comprar na Amazon</h2>
-      <p className="text-gray-400 text-sm mb-5">Opções conferidas por mim, vendidas pela loja oficial da marca.</p>
-      <div className="grid gap-4 sm:grid-cols-2">
+      <p className="text-gray-400 text-sm mb-5">Opções conferidas por mim, vendidas pela loja oficial da marca ou pela própria Amazon.</p>
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {produtos.map((p) => (
           <div key={p.id} className="rounded-xl border border-white/10 bg-black/30 p-4 flex flex-col">
             <span className="text-xs uppercase tracking-wide text-amber-400 font-semibold">{p.marca}</span>
