@@ -122,11 +122,11 @@ export default function TesteCooperPage() {
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-3" style={h}>Fórmula do VO₂ máx pelo teste de Cooper</h2>
-            <p className="mb-3"><strong className="text-white">VO₂ máx = (distância em metros − 504,9) ÷ 44,73</strong>, em ml de oxigênio por kg por minuto.</p>
+            <p className="mb-3"><strong className="text-white">VO₂ máx = (distância em metros − 504,9) ÷ 44,73</strong>, em ml de oxigênio por kg por minuto. Cooper criou a fórmula com 115 homens da Força Aérea, comparando com o teste de esteira em laboratório. Ela é usada também para mulheres, mas em quem é diferente desse grupo a margem de erro pode ser maior.</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border border-white/15">
                 <thead><tr className="text-left text-white bg-white/5"><th className="p-3">Distância</th><th className="p-3">VO₂ máx</th><th className="p-3">Velocidade</th><th className="p-3">Pace</th></tr></thead>
-                <tbody>{DISTANCIAS_TABELA.map((d) => <tr key={d} className="border-t border-white/10"><td className={td + " p-3"}>{fmtInt(d)} m</td><td className="p-3">{fmt1(vo2(d))}</td><td className="p-3">{fmt1(kmh(d))} km/h</td><td className="p-3 whitespace-nowrap">{fmtPace(paceMinKm(d))}</td></tr>)}</tbody>
+                <tbody>{DISTANCIAS_TABELA.map((d) => <tr key={d} className="border-t border-white/10"><td className="p-3 whitespace-nowrap">{fmtInt(d)} m</td><td className="p-3">{fmt1(vo2(d))}</td><td className="p-3">{fmt1(kmh(d))} km/h</td><td className="p-3 whitespace-nowrap">{fmtPace(paceMinKm(d))}</td></tr>)}</tbody>
               </table>
             </div>
           </div>
