@@ -85,6 +85,30 @@ const faq: ItemFAQ[] = [
       "Todo emagrecimento reduz massa magra, com ou sem medicação — a diferença é quanto. Nos ensaios em que ninguém orientou treino nem dieta, a massa magra ficou entre 25% e 40% do peso perdido. Com treino de força regular e proteína adequada, a literatura de preservação descreve faixas de 5% a 15%. A medicação não tem um efeito próprio de destruir músculo: ela produz um déficit grande e rápido, e é o déficit sem proteção que cobra.",
   },
   {
+    question: "Mounjaro perde massa muscular ou só gordura?",
+    answer: "Os dois. A maior parte do peso perdido é gordura, mas uma parte é massa magra, como em qualquer emagrecimento. A fração varia entre estudos e pessoas, e é ela que esta calculadora estima: quanto do que você perdeu pode ter sido massa magra, e quanto o treino e a proteína mudam essa conta.",
+  },
+  {
+    question: "Por que quem usa Mounjaro perde massa muscular?",
+    answer: "Não é uma ação direta do remédio no músculo. O apetite cai, a pessoa come pouco e pouca proteína, o déficit fica grande e, sem treino de força, o corpo não tem motivo para manter o músculo. Quanto mais rápido o peso cai, maior o risco.",
+  },
+  {
+    question: "Quem toma Mounjaro pode fazer musculação?",
+    answer: "Pode, e é a principal forma de proteger o músculo. Comece com cargas que você controla, cuide da hidratação e da comida antes do treino, porque o apetite baixo pode deixar o treino fraco. Se tiver tontura ou mal-estar, pare e fale com o médico.",
+  },
+  {
+    question: "Como recuperar massa muscular depois do Mounjaro?",
+    answer: "Do mesmo jeito que se ganha músculo em qualquer fase: musculação com progressão de carga, proteína suficiente e um pouco mais de comida quando o peso estabilizar. Quem treinou durante o tratamento recupera mais rápido, porque perdeu menos.",
+  },
+  {
+    question: "Existe um remédio novo que emagrece sem perder massa magra?",
+    answer: "Há medicamentos em estudo para isso, como o trevogrumabe, testado junto com a semaglutida para reduzir a perda de músculo. Ainda não são aprovados. Hoje, o que preserva músculo é treino de força e proteína.",
+  },
+  {
+    question: "Mounjaro pode causar sarcopenia?",
+    answer: "O risco é maior em quem já tem pouca massa muscular, como pessoas mais velhas, e perde peso rápido sem treinar. Por isso a musculação e a proteína são ainda mais importantes nesse grupo. Avaliação de sarcopenia é com o médico.",
+  },
+  {
     question: "Massa magra perdida é a mesma coisa que músculo perdido?",
     answer: NOTA_NAO_E_TUDO_MUSCULO,
   },
