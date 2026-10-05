@@ -90,6 +90,22 @@ const faq: ItemFAQ[] = [
     answer: `Um quilo de gordura guarda cerca de ${KCAL_POR_KG_GORDURA.toLocaleString("pt-BR")} kcal. Para ${PESO_PADRAO} kg, seriam uns ${formataTempo(minutosParaUmQuilo(PRIMEIRA.met, PESO_PADRAO))} de ${PRIMEIRA.nome.toLowerCase()} ou ${formataTempo(minutosParaUmQuilo(ULTIMA.met, PESO_PADRAO))} de ${ULTIMA.nome.toLowerCase()} — em tese. O corpo não responde de forma linear, e é por isso que o déficit da semana, e não uma atividade, decide.`,
   },
   {
+    question: "Como calcular o gasto calórico por atividade?",
+    answer: `Pela fórmula do MET: kcal por minuto = MET × 3,5 × peso em kg ÷ 200. O MET de cada atividade vem do Compêndio de Atividades Físicas. Para ${PESO_PADRAO} kg numa atividade de 8 METs: 8 × 3,5 × ${PESO_PADRAO} ÷ 200 ≈ ${(8 * 3.5 * PESO_PADRAO / 200).toLocaleString("pt-BR", { maximumFractionDigits: 1 })} kcal por minuto, cerca de ${kc(8 * 3.5 * PESO_PADRAO / 200 * 60)} kcal por hora. O comparador desta página faz a conta para 15 atividades de uma vez.`,
+  },
+  {
+    question: "Quantas calorias queima 20 minutos de exercício?",
+    answer: `Depende da atividade: para ${PESO_PADRAO} kg, 20 minutos vão de cerca de ${kc(ULTIMA.kcal / 3)} kcal em ${ULTIMA.nome.toLowerCase()} a ${kc(PRIMEIRA.kcal / 3)} kcal em ${PRIMEIRA.nome.toLowerCase()}. Mude o tempo no comparador para ver todas.`,
+  },
+  {
+    question: "Musculação queima quantas calorias?",
+    answer: "Por hora, menos que a maior parte das atividades desta tabela, porque metade do treino é pausa entre séries. O valor da musculação para quem quer emagrecer está em outro lugar: ela preserva o músculo enquanto a balança desce, e é isso que define como o corpo fica no fim.",
+  },
+  {
+    question: "É muito gastar 2 mil calorias por dia?",
+    answer: "Não: esse é o gasto total do dia, e não do exercício, e fica na faixa comum de muitos adultos. Ele soma o metabolismo de repouso, a digestão, o movimento do dia e o treino. Uma pessoa sedentária também gasta bastante só para manter o corpo funcionando. Para estimar o seu, use a calculadora de TMB e gasto diário.",
+  },
+  {
     question: "Fazer a atividade que gasta mais perde barriga?",
     answer: NOTA_SEM_PERDA_LOCALIZADA + " A atividade entra como uma das fontes de gasto da semana, ao lado da musculação e da alimentação.",
   },
