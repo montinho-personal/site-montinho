@@ -159,7 +159,7 @@ export function comparaComCardio(minutos: number, pesoKg: number): LinhaComparac
   const cam = ritmoCaminhada("moderado");
   const metCam = metCaminhada(cam.velocidade, 0);
   return [
-    ...TIPOS.map((t) => ({ id: `musc-${t.id}`, nome: `Musculação ${t.nome.toLowerCase()}`, met: t.met, kcal: kcalPorMinuto(t.met, pesoKg) * minutos })),
+    ...TIPOS.map((t) => ({ id: `musc-${t.id}`, nome: { tradicional: "Musculação tradicional", pesado: "Musculação pesada (agachamento, terra)", circuito: "Musculação em circuito / superséries" }[t.id], met: t.met, kcal: kcalPorMinuto(t.met, pesoKg) * minutos })),
     { id: "caminhada", nome: "Caminhada moderada (5 km/h)", met: metCam, kcal: kcalPorMinuto(metCam, pesoKg) * minutos },
     { id: "corrida", nome: "Corrida a 8 km/h", met: MET_CORRIDA_8, kcal: kcalPorMinuto(MET_CORRIDA_8, pesoKg) * minutos },
   ].sort((a, b) => b.kcal - a.kcal);
