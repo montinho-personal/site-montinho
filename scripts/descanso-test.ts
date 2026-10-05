@@ -4,7 +4,7 @@
  * combinações, e a busca de exercícios.
  */
 import assert from "node:assert/strict";
-import { calcula, encontraExercicio, fmtFaixa, minutosDeDescanso, type Demanda, type FaixaReps, type Objetivo, type Rir } from "../lib/descanso";
+import { calcula, encontraExercicio, explica, fmtFaixa, minutosDeDescanso, type Demanda, type FaixaReps, type Objetivo, type Rir } from "../lib/descanso";
 
 let falhas = 0;
 const t = (nome: string, fn: () => void) => { try { fn(); console.log("  ok    ", nome); } catch (e) { falhas++; console.log("  FALHOU", nome, (e as Error).message); } };
@@ -56,6 +56,8 @@ t("busca: supino, agachamento, leg press, rosca, lateral, extensora", () => {
   assert.equal(encontraExercicio("cadeira extensora")?.demanda, "isolador");
   assert.equal(encontraExercicio("xyz"), null);
 });
+t("explicação do isolador na falha é gramatical", () => assert.match(explica({ objetivo: "hipertrofia", demanda: "isolador", reps: "7-10", rir: 0 }, "Rosca direta"), /^Apesar de rosca direta ser um isolador/));
+t("explicações sem vírgula solta nem ponto duplo", () => { for (const d of ["isolador", "composto_moderado", "composto_pesado", "muito_exigente"] as const) for (const r of [0, 1, 2, 3, 4] as const) { const x = explica({ objetivo: "hipertrofia", demanda: d, reps: "7-10", rir: r }, "X"); assert.ok(!/,\.|\.\.|  /.test(x), x); } });
 t("20 séries × 2 min ≈ 40 min de intervalo", () => assert.equal(minutosDeDescanso(20, 2), 40));
 
 console.log(falhas ? `\n${falhas} TESTE(S) FALHARAM` : "\nTODOS OS TESTES PASSARAM");
