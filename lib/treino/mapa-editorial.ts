@@ -158,6 +158,13 @@ export const EDITORIAL: Record<GrupoSlug, EditorialGrupo> = {
     resposta: "Encolhimentos (com halteres ou barra) trabalham a parte superior do trapézio. Remadas e levantamento terra também o envolvem como secundário.",
     comoEscolher: "Quem faz terra e remadas pesadas já treina bastante o trapézio. Encolhimentos entram quando o objetivo é dar mais atenção a ele.",
     emCasa: "Encolhimento com halteres ou com uma mochila pesada em cada mão.",
+    extras: [
+      { h2: "O que o músculo trapézio faz?", p: "Ele vai do pescoço até o meio das costas e tem três porções. A superior eleva os ombros (encolher); a média aproxima as escápulas; a inferior puxa as escápulas para baixo. Juntas, mantêm os ombros estáveis em quase todo exercício de braço." },
+      { h2: "Exercícios para trapézio superior, médio e inferior", p: "Superior: encolhimento com halteres, barra ou na máquina, e remada alta. Médio: face pull, remadas com cotovelo aberto e crucifixo inverso. Inferior: elevação em Y deitado no banco inclinado e puxadas pensando em descer as escápulas." },
+      { h2: "Precisa treinar trapézio?", p: "Quem já faz remadas, puxadas e levantamento terra treina boa parte do trapézio sem perceber. Exercício específico, como o encolhimento, vale para quem quer mais volume na região ou tem o trapézio como ponto fraco. Encaixa bem no fim do treino de ombro ou de costas." },
+      { h2: "Trapézio na polia, com barra e na máquina", p: "Na polia: face pull e encolhimento no cabo. Com barra: encolhimento e remada alta. Na máquina: encolhimento na máquina ou no smith. Com halteres: encolhimento, que deixa a pegada mais natural." },
+      { h2: "Como liberar o trapézio ou aliviar a dor?", p: "Tensão ou dor no trapézio não é assunto de treino de força. Quem deve avaliar e indicar exercícios é o médico ou o fisioterapeuta." },
+    ],
     artigos: [{ slug: "como-fazer-encolhimento-trapezio", texto: "como fazer encolhimento" }],
     searchDemand: "media", isIndexable: true,
   }),
