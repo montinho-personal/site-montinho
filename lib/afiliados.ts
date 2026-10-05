@@ -6,7 +6,9 @@ export type ProdutoAfiliado = {
   marca: string;
   nome: string;
   url: string;
-  vendedor: "loja oficial da marca" | "Amazon";
+  /** Suplemento: só loja oficial ou Amazon (risco de falsificação).
+   *  Equipamento: loja parceira permitida, desde que enviado pela Amazon. */
+  vendedor: "loja oficial da marca" | "Amazon" | "loja parceira";
   enviadoPelaAmazon: boolean;
   /** Rótulo honesto e verificável (tamanho, vendedor), nunca "mais vendida" ou preço. */
   destaque: string;
@@ -130,6 +132,24 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     enviadoPelaAmazon: true,
     destaque: "Elástico, ocupa zero espaço",
   },
+  "kit-elasticos-17-pecas": {
+    id: "kit-elasticos-17-pecas",
+    marca: "Kit sem marca",
+    nome: "Kit 17 peças: 5 elásticos extensores com alças + mini bands",
+    url: "https://link.amazon/B0aunoo8c",
+    vendedor: "loja parceira",
+    enviadoPelaAmazon: true,
+    destaque: "Kit completo, 17 peças",
+  },
+  "faixas-elasticas-5-aqws": {
+    id: "faixas-elasticas-5-aqws",
+    marca: "AQWS",
+    nome: "Conjunto de 5 faixas elásticas de resistência alta, com alças",
+    url: "https://link.amazon/B04FbiV2c",
+    vendedor: "loja parceira",
+    enviadoPelaAmazon: true,
+    destaque: "Faixas de alta resistência",
+  },
 };
 
 /** Artigo → produtos (até 3 por artigo, 6 em páginas de compra). */
@@ -143,7 +163,7 @@ export const AFILIADOS_POR_ARTIGO: Record<string, string[]> = {
   "pre-treino-vale-a-pena": ["pre-treino-3vs-360g", "pre-treino-mu-500g", "pre-treino-ftw-sem-cafeina-300g"],
   "barrinha-de-proteina-vale-a-pena": ["barra-supino-amendoim-9un", "barra-bold-cookies-12un", "barra-nutry-crispy-12un"],
   // exercicios-para-gluteo-medio fica de fora: está no grupo de teste de intenção.
-  "como-montar-academia-em-casa": ["mini-band-everlast"],
+  "como-montar-academia-em-casa": ["mini-band-everlast", "kit-elasticos-17-pecas", "faixas-elasticas-5-aqws"],
 };
 
 export const AVISO_AFILIADO =
