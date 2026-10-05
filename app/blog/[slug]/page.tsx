@@ -55,6 +55,7 @@ import { ARTIGOS_COM_CALCULADORA_CORRIDA } from "@/lib/corrida";
 import CalculadoraCorrida from "@/components/corrida/CalculadoraCorrida";
 import { ARTIGOS_COM_CALCULADORA_GLP1 } from "@/lib/glp1";
 import CartoesAfiliado from "@/components/afiliados/CartoesAfiliado";
+import CartaoFerramentaRelacionada from "@/components/ferramentas/CartaoFerramentaRelacionada";
 import CalculadoraGLP1 from "@/components/glp1/CalculadoraGLP1";
 import { ARTIGOS_COM_CALCULADORA_META } from "@/lib/meta";
 import CalculadoraMeta from "@/components/meta/CalculadoraMeta";
@@ -642,6 +643,7 @@ export default async function BlogPost({ params }: Props) {
               formulário — justo na página com 7.319 impressões do cluster. */}
           {ARTIGOS_COM_LINK_POLICHINELO.includes(post.slug) && <LinkFerramentaPolichinelo slug={post.slug} posicao="fim" />}
           {ARTIGOS_COM_LINK_CAMINHADA.includes(post.slug) && <LinkFerramentaCaminhada slug={post.slug} />}
+          <CartaoFerramentaRelacionada slug={post.slug} />
           {ARTIGOS_COM_LINK_CREATINA.includes(post.slug) && <LinkFerramentaCreatina slug={post.slug} />}
           {ARTIGOS_COM_LINK_WHEY.includes(post.slug) && <LinkFerramentaWhey slug={post.slug} />}
           {ARTIGOS_COM_LINK_SIMULADOR.includes(post.slug) && <LinkFerramentaSimulador slug={post.slug} />}

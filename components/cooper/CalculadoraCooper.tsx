@@ -39,7 +39,8 @@ export default function CalculadoraCooper() {
     if (i === null || i < 20 || i > 90) return setErro("Digite a idade, entre 20 e 90 anos. A tabela de referência é para adultos.");
     setErro(null);
     setRes({ m: Math.round(m), idade: i, sexo });
-    trackEvent("cooper_completed", { classe: classe(m, sexo, i).id });
+    const classeId = classe(m, sexo, i).id;
+    trackEvent("cooper_completed", { classe: classeId });
     setTimeout(() => resRef.current?.focus(), 50);
   }
 
