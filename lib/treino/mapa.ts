@@ -45,7 +45,7 @@ export interface Grupo {
 }
 
 export const GRUPOS: Grupo[] = [
-  { slug: "peito", nome: "Peitoral", para: "peito", musculos: ["peitoral"], aliases: ["peito", "peitoral", "peitorais", "pectoral"] },
+  { slug: "peito", nome: "Peitoral", para: "peito", musculos: ["peitoral"], aliases: ["peito", "peitoral", "peitorais", "pectoral", "torax"] },
   { slug: "ombros", nome: "Ombros", para: "ombros", musculos: ["deltoide-anterior", "deltoide-lateral", "deltoide-posterior"], filhos: ["deltoide-anterior", "deltoide-lateral", "deltoide-posterior"], aliases: ["ombro", "ombros", "deltoide", "deltoides"] },
   { slug: "deltoide-anterior", nome: "Deltoide anterior", para: "deltoide anterior", musculos: ["deltoide-anterior"], pai: "ombros", aliases: ["deltoide anterior", "ombro da frente", "frente do ombro", "anterior de ombro", "ombro anterior"] },
   { slug: "deltoide-lateral", nome: "Deltoide lateral", para: "deltoide lateral", musculos: ["deltoide-lateral"], pai: "ombros", aliases: ["deltoide lateral", "lateral de ombro", "ombro lateral", "deltoide medio"] },

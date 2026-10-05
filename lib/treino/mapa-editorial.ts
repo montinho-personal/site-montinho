@@ -22,6 +22,8 @@ export interface EditorialGrupo {
   comoEscolher: string;
   emCasa: string;
   artigos: { slug: string; texto: string }[];
+  /** Seções extras para perguntas que aparecem nas buscas. */
+  extras?: { h2: string; p: string }[];
   searchDemand: "alta" | "media" | "baixa";
   editorialReviewed: boolean;
   uniqueContent: boolean;
@@ -33,11 +35,16 @@ const base = (o: Omit<EditorialGrupo, "editorialReviewed" | "uniqueContent">): E
 export const EDITORIAL: Record<GrupoSlug, EditorialGrupo> = {
   peito: base({
     title: "Exercícios Para Peito: Academia, Halteres e Casa | Montinho",
-    description: "Veja exercícios para peito por equipamento: supinos, crucifixos, crossover e flexões. Filtre por academia, halteres ou casa e veja o que cada um trabalha.",
+    description: "Exercícios para peito (tórax) por equipamento: supinos, crucifixos, crossover, voador e flexões. Filtre por academia, halteres ou casa e veja o que cada um trabalha.",
     h1: "Exercícios para peito",
     resposta: "Supinos (empurrar à frente) e crucifixos ou crossover (fechar os braços) são as duas famílias de exercícios que treinam o peitoral. Não existe um único melhor: a escolha depende do equipamento, do conforto nos ombros e de conseguir progredir carga ou repetições.",
     comoEscolher: "Um supino (barra, halteres ou máquina) costuma ser a base, porque permite mais carga. Um movimento de fechar os braços complementa, com o peitoral mais alongado. Mudar a inclinação do banco pode alterar a ênfase relativa entre as partes do músculo, mas não isola uma delas.",
     emCasa: "Flexões, da mais fácil (joelhos apoiados) à mais difícil (pés elevados), e supino ou crucifixo com halteres no chão ou num banco.",
+    extras: [
+      { h2: "Exercícios para tórax feminino e masculino são diferentes?", p: "Não. O peitoral é o mesmo músculo em homens e mulheres e responde aos mesmos exercícios: supinos, crucifixos, crossover e flexões. O que muda de pessoa para pessoa é a carga, o volume e o equipamento disponível, não a lista." },
+      { h2: "Exercícios para definir o peito", p: "Definição depende de dois fatores: ter músculo e ter pouca gordura por cima dele. Os exercícios desta página constroem o músculo; a gordura diminui com a perda de gordura do corpo todo, que vem da alimentação e do gasto do dia. Nenhum exercício tira gordura só do peito." },
+      { h2: "Supino inclinado trabalha a parte de cima do peito?", p: "Inclinar o banco pode aumentar a ênfase relativa na parte superior (clavicular) do peitoral, mas o músculo inteiro trabalha em todos os supinos. Ter um supino reto e um inclinado no treino é uma forma simples de variar o ângulo." },
+    ],
     artigos: [{ slug: "treino-de-peito-hipertrofia", texto: "treino de peito para hipertrofia" }, { slug: "treino-de-peito-em-casa", texto: "treino de peito em casa" }, { slug: "como-fazer-supino-reto", texto: "como fazer supino reto" }, { slug: "supino-reto-vs-supino-inclinado", texto: "supino reto vs inclinado" }],
     searchDemand: "alta", isIndexable: true,
   }),
