@@ -117,6 +117,18 @@ const faq: ItemFAQ[] = [
       "Divide a quantidade prescrita pela concentração do seu frasco. Se a prescrição fala em 2,4 mg e o frasco tem 24 mg/mL, isso dá 0,10 mL — que na seringa é a marquinha 10. Se o resultado não cair numa marquinha inteira, não arredonde por conta própria: mostre a conta a quem prescreveu.",
   },
   {
+    question: "Seringa de insulina de 100 unidades tem quantos mL?",
+    answer: "1 mL. Na seringa U-100, 100 marcas equivalem a 1 mL; cada marca, a 0,01 mL. Existem também seringas de 50 marcas (0,5 mL) e de 30 marcas (0,3 mL), com a mesma proporção: 1 marca = 0,01 mL.",
+  },
+  {
+    question: "Tabela de marcas da seringa U-100 para mL",
+    answer: "10 marcas = 0,1 mL; 20 = 0,2 mL; 25 = 0,25 mL; 30 = 0,3 mL; 50 = 0,5 mL; 100 = 1 mL. Para converter, divida o número de marcas por 100.",
+  },
+  {
+    question: "Como medir 0,5 mL ou 2,5 mL na seringa de insulina?",
+    answer: "0,5 mL é a marca 50 da seringa U-100. 2,5 mL não cabe numa seringa de insulina, que vai até 1 mL; se o volume prescrito é esse, confira com quem prescreveu, porque pode ser um erro de unidade (2,5 mg não é 2,5 mL). Para converter mg em mL e marcas, use o conversor acima com a concentração do seu frasco.",
+  },
+  {
     question: "Qual dose devo tomar?",
     answer:
       "Esta página não responde isso, e nenhuma página deveria. A quantidade depende do seu diagnóstico, do seu histórico, do que mais você usa e do produto específico do seu frasco — quem define é o profissional que prescreve, com o seu caso na frente. A calculadora entra só depois dessa decisão, para converter miligramas em mililitros e em marcas de seringa.",
