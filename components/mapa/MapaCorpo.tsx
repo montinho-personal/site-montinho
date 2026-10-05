@@ -41,14 +41,21 @@ const COSTAS: Regiao[] = [
   { id: "c-panturrilha", grupo: "panturrilha", musculos: ["panturrilhas"], d: "M112 310 Q130 302 134 322 Q134 350 126 376 Q118 382 114 374 Q106 340 112 310 Z" },
 ];
 
+/** Vista em que o músculo aparece primeiro (frente tem preferência). */
+export function vistaDe(musculos: MusculoId[]): Vista {
+  const tem = (rs: Regiao[]) => rs.some((r) => r.musculos.some((m) => musculos.includes(m)));
+  return tem(FRENTE) || !tem(COSTAS) ? "frente" : "costas";
+}
+
 const ESPELHO = "translate(200,0) scale(-1,1)";
 const DOURADO = "#BA9E50";
 
 export interface Destaque { principal: MusculoId[]; secundario: MusculoId[] }
 
 export default function MapaCorpo({
-  vista, selecionado, destaque, onSelect, contagem, titulo = "Mapa muscular",
+  vista, selecionado, destaque, onSelect, contagem, titulo = "Mapa muscular", compacto = false,
 }: {
+  compacto?: boolean;
   vista: Vista;
   selecionado?: GrupoSlug | null;
   destaque?: Destaque;
@@ -79,7 +86,7 @@ export default function MapaCorpo({
   const fill = (e: string, h: boolean) => (e === "sel" ? DOURADO : e === "sec" ? "rgba(186,158,80,0.45)" : h ? "rgba(255,255,255,0.32)" : "rgba(255,255,255,0.14)");
 
   return (
-    <svg viewBox="40 0 120 410" className="w-full h-auto max-h-[62vh] select-none" role="group" aria-label={`${titulo}: vista de ${vista}`}>
+    <svg viewBox="40 0 120 410" className={`w-full h-auto select-none ${compacto ? "max-h-[38vh]" : "max-h-[62vh]"}`} role="group" aria-label={`${titulo}: vista de ${vista}`}>
       <title>{`${titulo} — ${vista}`}</title>
       {/* Base: cabeça, pescoço, mãos, joelhos, pés — não clicáveis */}
       <g fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)" strokeWidth="0.8" aria-hidden="true">

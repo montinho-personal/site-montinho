@@ -5,7 +5,7 @@ import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import Compartilhar from "@/components/share/Compartilhar";
-import MapaCorpo, { type Vista } from "@/components/mapa/MapaCorpo";
+import MapaCorpo, { type Vista, vistaDe } from "@/components/mapa/MapaCorpo";
 import { ACADEMIA_COMPLETA, NOME_PADRAO, type Equip } from "@/lib/treino/biomecanica";
 import {
   ARTIGO_DO_EXERCICIO, EQUIP_CASA, GRUPO, GRUPOS, GRUPOS_PRINCIPAIS, GRUPO_DO_MUSCULO, NIVEL_TXT,
@@ -117,7 +117,7 @@ export default function ExploradorExercicios({ inicial = null, placement = "hub"
             <div className="space-y-2" aria-live="polite">
               {r.nota && <p className="text-sm text-gray-400">{r.nota}</p>}
               {r.grupos.length > 0 && <div className="flex flex-wrap gap-2">{r.grupos.map((x) => <button key={x.slug} type="button" onClick={() => { seleciona(x.slug, "busca"); setQ(""); }} className={chip(false)}>Exercícios para {x.para} →</button>)}</div>}
-              {r.exercicios.length > 0 && <div className="flex flex-wrap gap-2">{r.exercicios.map((e) => <button key={e.id} type="button" aria-pressed={exBusca === e.id} onClick={() => { setExBusca(e.id); trackEvent("exercise_open", { exercicio: e.id, placement, origem: "busca" }); }} className={chip(exBusca === e.id)}>{e.nome}</button>)}</div>}
+              {r.exercicios.length > 0 && <div className="flex flex-wrap gap-2">{r.exercicios.map((e) => <button key={e.id} type="button" aria-pressed={exBusca === e.id} onClick={() => { setExBusca(e.id); setVista(vistaDe(e.primarios)); trackEvent("exercise_open", { exercicio: e.id, placement, origem: "busca" }); }} className={chip(exBusca === e.id)}>{e.nome}</button>)}</div>}
               {!r.grupos.length && !r.exercicios.length && <p className="text-sm text-gray-400">Nada encontrado. Tente o nome do músculo (peito, glúteo) ou do exercício (supino, remada).</p>}
             </div>
           )}
@@ -128,6 +128,15 @@ export default function ExploradorExercicios({ inicial = null, placement = "hub"
               <h3 className="text-xl font-bold text-white mt-1" style={h}>{ex.nome}</h3>
               <p className="text-sm text-gray-200 mt-2"><strong className="text-white">Principal:</strong> {ex.primarios.map(nomeMusculo).join(", ")}</p>
               {ex.secundarios?.length ? <p className="text-sm text-gray-300"><strong className="text-white">Secundários:</strong> {ex.secundarios.map(nomeMusculo).join(", ")}</p> : null}
+              {/* No celular o mapa principal fica acima da busca, fora da tela: repete aqui, as duas vistas lado a lado. */}
+              <div className="md:hidden grid grid-cols-2 gap-2 mt-3" inert>
+                {(["frente", "costas"] as Vista[]).map((v) => (
+                  <div key={v}>
+                    <MapaCorpo vista={v} compacto destaque={{ principal: ex.primarios, secundario: ex.secundarios ?? [] }} titulo={`Músculos de ${ex.nome}`} />
+                    <p className="text-[11px] text-gray-500 text-center">{v === "frente" ? "Frente" : "Costas"}</p>
+                  </div>
+                ))}
+              </div>
               <p className="text-xs text-gray-500 mt-1">No mapa: dourado = principal, dourado claro = secundário. Sem percentuais: a participação de cada músculo muda com técnica, carga e pessoa.</p>
               <div className="flex flex-wrap gap-x-4 mt-2 text-sm">
                 {ex.primarios.map((m) => <button key={m} type="button" onClick={() => seleciona(GRUPO_DO_MUSCULO[m], "exercicio")} className={`min-h-[40px] ${foco}`} style={{ color: DOURADO }}>Outros para {nomeMusculo(m).toLowerCase()} →</button>)}
