@@ -250,7 +250,7 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
 
       {veioDoDeficit && (
         <p className="text-gray-400 text-sm mb-4 border-l-2 pl-3" style={{ borderColor: "#BA9E50" }}>
-          Calorias trazidas da sua calculadora de déficit. Pode alterar à vontade.
+          Calorias trazidas da calculadora anterior. Pode alterar à vontade.
         </p>
       )}
 
