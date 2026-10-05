@@ -11,7 +11,7 @@
  * artigos de uma vez, sem mexer no updatedAt de nenhum.
  */
 
-export type FerramentaId = "descanso" | "imc" | "musculacao" | "superavit" | "cintura" | "passos" | "gordura" | "cooper" | "cafeina";
+export type FerramentaId = "substituidor" | "descanso" | "imc" | "musculacao" | "superavit" | "cintura" | "passos" | "gordura" | "cooper" | "cafeina";
 
 export interface CartaoFerramenta {
   href: string;
@@ -21,6 +21,12 @@ export interface CartaoFerramenta {
 }
 
 export const CARTOES: Record<FerramentaId, CartaoFerramenta> = {
+  substituidor: {
+    href: "/ferramentas/substituidor-de-exercicios",
+    pergunta: "Sua academia não tem esse aparelho?",
+    texto: "Escolha o exercício e veja alternativas que preservam o músculo e o movimento, com o que você tem disponível, e o que muda em cada uma.",
+    cta: "Ver alternativas →",
+  },
   descanso: {
     href: "/ferramentas/calculadora-descanso-entre-series",
     pergunta: "Quanto descansar antes da próxima série?",
@@ -78,6 +84,16 @@ export const CARTOES: Record<FerramentaId, CartaoFerramenta> = {
 };
 
 export const ARTIGOS_COM_CARTAO: Record<string, FerramentaId> = {
+  "agachamento-vs-leg-press": "substituidor",
+  "hack-vs-leg-press": "substituidor",
+  "puxada-vs-remada": "substituidor",
+  "agachamento-livre-ou-maquina-smith": "substituidor",
+  "como-fazer-remada-baixa": "substituidor",
+  "treino-de-pernas-em-casa": "substituidor",
+  "treino-em-casa-sem-equipamento": "substituidor",
+  "treino-com-elasticos-em-casa": "substituidor",
+  "como-montar-academia-em-casa": "substituidor",
+
   "como-fazer-supino-reto": "descanso",
   "como-fazer-agachamento-livre-corretamente": "descanso",
   "como-fazer-leg-press": "descanso",
@@ -125,4 +141,20 @@ export const ARTIGOS_COM_CARTAO: Record<string, FerramentaId> = {
   "pre-treino-vale-a-pena": "cafeina",
   "termogenicos-funcionam": "cafeina",
   "suplementacao-pre-treino-avancada": "cafeina",
+};
+
+/**
+ * Link direto para a troca daquele artigo: o Substituidor abre com o
+ * exercício já escolhido (ou a página editorial, quando existe).
+ */
+export const HREF_POR_ARTIGO: Record<string, { href: string; pergunta?: string }> = {
+  "agachamento-vs-leg-press": { href: "/substituir/leg-press", pergunta: "Não tem leg press?" },
+  "hack-vs-leg-press": { href: "/ferramentas/substituidor-de-exercicios?exercicio=agachamento-hack", pergunta: "Não tem hack?" },
+  "puxada-vs-remada": { href: "/substituir/puxada-alta", pergunta: "Não tem polia para a puxada?" },
+  "agachamento-livre-ou-maquina-smith": { href: "/substituir/agachamento", pergunta: "Quer trocar o agachamento?" },
+  "como-fazer-remada-baixa": { href: "/ferramentas/substituidor-de-exercicios?exercicio=remada-baixa", pergunta: "Não tem a remada baixa na sua academia?" },
+  "treino-de-pernas-em-casa": { href: "/ferramentas/substituidor-de-exercicios", pergunta: "Algum exercício de academia sem versão em casa?" },
+  "treino-em-casa-sem-equipamento": { href: "/ferramentas/substituidor-de-exercicios", pergunta: "Quer trocar um exercício de academia por um que dá para fazer em casa?" },
+  "treino-com-elasticos-em-casa": { href: "/ferramentas/substituidor-de-exercicios", pergunta: "Qual exercício com elástico substitui o da academia?" },
+  "como-montar-academia-em-casa": { href: "/ferramentas/substituidor-de-exercicios", pergunta: "O que fazer no lugar das máquinas que você não tem em casa?" },
 };
