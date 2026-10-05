@@ -89,6 +89,31 @@ const FAQ_EDITORIAL: { pergunta: string; resposta: string }[] = [
       "Sim. A ferramenta pergunta como é sua alimentação e monta o cardápio só com alimentos compatíveis, trocando as fontes de proteína pela lógica certa — não apenas removendo o frango e deixando o resto igual.",
   },
   {
+    pergunta: "Como fazer um cardápio para emagrecer?",
+    resposta:
+      "Em três passos: descobrir quantas calorias você gasta, tirar um déficit moderado disso, e distribuir o total em refeições com proteína em todas, comida de verdade e porções que você consegue repetir. A ferramenta faz a distribuição; a calculadora de déficit calórico ajuda a achar a meta. É um exemplo educacional: com doença, remédio ou restrição, quem prescreve é nutricionista.",
+  },
+  {
+    pergunta: "Existe cardápio para perder 1 kg por semana, 5 kg ou 10 kg em um mês?",
+    resposta:
+      "Nenhum cardápio garante um número na balança. Um ritmo sustentável fica perto de 0,5% a 1% do peso por semana, de 0,4 a 0,9 kg para quem pesa 90 kg. Promessas de 3 kg em 10 dias ou 10 kg em 7 dias contam água e intestino vazio, e o peso volta. Para ver quanto cabe no seu prazo, use a calculadora de meta de peso.",
+  },
+  {
+    pergunta: "Dá para montar um cardápio para emagrecer barato?",
+    resposta:
+      "Dá: arroz, feijão, ovo, frango, sardinha, legumes e frutas da estação são baratos e funcionam muito bem num déficit. Emagrecer não depende de produto diet ou alimento caro; depende do total do dia. A ferramenta usa alimentos comuns, com porções caseiras.",
+  },
+  {
+    pergunta: "Cardápio para emagrecer precisa de horário?",
+    resposta:
+      "Não existe horário mágico. O que ajuda é ter uma rotina que você consegue repetir: três a cinco refeições, com proteína em cada uma, encaixadas nos horários do seu dia. O cardápio da ferramenta separa por refeição, e você ajusta à sua rotina.",
+  },
+  {
+    pergunta: "O cardápio é gratuito?",
+    resposta:
+      "É. A ferramenta é gratuita, não pede cadastro e monta o cardápio na hora, com porções e calorias de cada refeição.",
+  },
+  {
     pergunta: "Serve para ganhar massa muscular?",
     resposta:
       "Serve: escolha o objetivo de ganho e informe a meta calórica de superávit. A proteína passa a usar a referência de 2,0 g/kg, a mesma das outras calculadoras do site.",
