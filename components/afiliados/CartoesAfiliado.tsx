@@ -36,9 +36,9 @@ export default function CartoesAfiliado({ slug, variante = "fim" }: { slug: stri
   if (variante === "topo") {
     return (
       <section className="mb-12 rounded-2xl border-2 border-amber-400/60 bg-gradient-to-b from-amber-400/10 to-transparent p-5 sm:p-6" aria-label="Escolha rápida na Amazon">
-        <p className="text-xs font-bold uppercase tracking-widest text-amber-400">Escolha rápida · Mega Oferta Prime</p>
+        <p className="text-xs font-bold uppercase tracking-widest text-amber-400">Escolha rápida · {slug === "mega-oferta-prime-2026" ? "Mega Oferta Prime" : slug.startsWith("black-friday") ? "Black Friday" : "Onde comprar"}</p>
         <h2 className="text-2xl font-bold text-white mt-1">Sem tempo? Estas são as que eu conferi</h2>
-        <p className="text-gray-400 text-sm mt-1 mb-5">Toque para ver o preço e o desconto de agora: na promoção eles mudam de hora em hora.</p>
+        <p className="text-gray-400 text-sm mt-1 mb-5">Toque para ver o preço e o desconto de agora: em promoção eles mudam de hora em hora.</p>
         <div className="grid gap-3 sm:grid-cols-3">
           {produtos.map((p) => (
             <div key={p.id} className="rounded-xl border border-white/10 bg-black/50 p-4 flex flex-col">
