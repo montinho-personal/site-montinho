@@ -151,6 +151,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["perder peso ate", "quantos quilos", "prazo", "fim do ano", "casamento", "viagem", "quanto tempo para emagrecer", "meta de peso", "quilos por semana", "emagrecer rapido"],
   },
   {
+    id: "cafeina",
+    href: "/ferramentas/calculadora-cafeina",
+    nome: "Calculadora de Cafeína",
+    resultado: "Some a cafeína do seu dia, veja a dose por kg para treinar e até que horas tomar café.",
+    acao: "Calcular minha cafeína",
+    tempo: "1 minuto",
+    categoria: "suplementacao",
+    icone: "capsula",
+    tags: ["cafeina", "cafe", "pre-treino", "energetico", "quanto de cafeina por dia", "cafeina por kg", "sono"],
+    selo: "novo",
+  },
+  {
     id: "cooper",
     href: "/ferramentas/teste-de-cooper",
     nome: "Calculadora do Teste de Cooper",

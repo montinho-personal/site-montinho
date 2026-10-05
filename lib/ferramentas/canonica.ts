@@ -163,6 +163,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Calorias no Futebol",
     motivo: "que separa o tempo de bola rolando do tempo na lateral e mostra quantas latas o jogo realmente pagou",
   },
+  cafeina: {
+    href: "/ferramentas/calculadora-cafeina",
+    ancora: "Calculadora de Cafeína",
+    motivo: "que soma a cafeína do dia e mostra a dose por kg para treinar",
+  },
   cooper: {
     href: "/ferramentas/teste-de-cooper",
     ancora: "Calculadora do Teste de Cooper",
