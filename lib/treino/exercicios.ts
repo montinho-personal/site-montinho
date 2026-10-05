@@ -52,7 +52,7 @@ export const EXERCICIOS: Exercicio[] = [
 
   // ── Costas ─────────────────────────────────────────────────────────────
   { id: "barra-fixa", nome: "Barra fixa", aliases: ["pull up", "chin up"], categoria: "composto", equipamento: "peso-corporal", primarios: ["costas"], secundarios: ["biceps", "deltoide-posterior", "antebraco"] },
-  { id: "puxada-frente", nome: "Puxada frontal (pulley)", aliases: ["puxada", "pulldown", "puxada frente", "puxada alta", "puxador", "pulley costas"], categoria: "composto", equipamento: "maquina", primarios: ["costas"], secundarios: ["biceps", "deltoide-posterior"] },
+  { id: "puxada-frente", nome: "Puxada frontal (pulley)", aliases: ["puxada", "pulldown", "puxada frente", "puxada alta", "puxador", "pulley costas", "pulley frente", "puxada aberta"], categoria: "composto", equipamento: "maquina", primarios: ["costas"], secundarios: ["biceps", "deltoide-posterior"] },
   { id: "puxada-supinada", nome: "Puxada supinada", categoria: "composto", equipamento: "maquina", primarios: ["costas"], secundarios: ["biceps"] },
   { id: "remada-curvada", nome: "Remada curvada com barra", aliases: ["remada curvada", "remada"], categoria: "composto", equipamento: "barra", primarios: ["costas"], secundarios: ["biceps", "deltoide-posterior", "trapezio"] },
   { id: "remada-baixa", nome: "Remada baixa", aliases: ["remada sentada", "remada máquina"], categoria: "composto", equipamento: "cabo", primarios: ["costas"], secundarios: ["biceps", "deltoide-posterior"] },

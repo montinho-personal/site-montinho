@@ -166,6 +166,10 @@ export const PAGINAS_SUBSTITUIR: PaginaSubstituir[] = [
     quandoNaoTrocar: "A puxada na polia é ótima para controlar a carga. Se ela está disponível, pode continuar e servir de ponte para a barra fixa.",
     faq: [
       { question: "Não consigo fazer barra fixa. O que faço no lugar?", answer: "Barra fixa assistida (com elástico ou máquina), negativas controladas ou a puxada na polia. Elas constroem a força para chegar à barra." },
+      { question: "Qual é o outro nome da puxada alta?", answer: "Puxada frontal, pulley frente, puxador ou pulldown: são o mesmo exercício, puxar a barra da polia alta até a frente do peito." },
+      { question: "Como substituir a puxada alta com halteres?", answer: "Halter não faz puxada vertical, porque a carga só puxa para baixo. As opções mais próximas são o pullover (extensão de ombro, também trabalha dorsais) e a remada unilateral. Com um elástico preso no alto, dá para fazer a puxada de verdade." },
+      { question: "O que fazer quando a puxada está ocupada?", answer: "Outra puxada vertical: máquina de puxada articulada, barra fixa ou graviton (barra assistida), ou a puxada unilateral no crossover ou na polia. Se nada estiver livre, faça a remada e volte à puxada depois." },
+      { question: "Quais exercícios substituem a puxada supinada ou com triângulo?", answer: "As outras pegadas da mesma puxada (aberta, supinada, triângulo) se substituem bem entre si, porque o movimento é o mesmo; muda um pouco a participação do bíceps. Barra fixa supinada também serve." },
       { question: "Remada substitui a puxada?", answer: "Parcialmente. Treina costas e bíceps, mas na horizontal. Vale para quando não há onde fazer puxada vertical." },
     ],
     artigo: { href: "/blog/puxada-vs-remada", texto: "puxada vs remada" },
