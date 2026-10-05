@@ -32,8 +32,8 @@ export const SAO_SILVESTRE_2026_POSTS: BlogPost[] = [
     author: AUTOR,
     tags: ["São Silvestre", "São Silvestre 2026", "inscrição", "corrida de rua", "15 km"],
     content: `<img src="/blog-images/inscricao-sao-silvestre-2026-capa.webp" alt="Capa: inscrição da São Silvestre 2026 — 55 mil vagas, sem sorteio, kits de R$ 335,90 a R$ 1.039,90; prova em 31/12" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p><strong>As inscrições abrem na quarta-feira, 30 de setembro de 2026, às 10h (Brasília).</strong> São 55 mil vagas, e o kit mais barato custa R$ 335,90. Última verificação: 29 de setembro de 2026.</p></blockquote>
-<p>A <strong>101ª Corrida Internacional de São Silvestre</strong> acontece na <strong>quinta-feira, 31 de dezembro de 2026</strong>, na região central de São Paulo, com os tradicionais <strong>15 km</strong>. É a primeira edição depois do centenário, comemorado em 2025. As inscrições abrem em <strong>30 de setembro, às 10h</strong>, por venda direta — <strong>sem sorteio</strong> — na plataforma oficial, a Ticket Sports by Ingresse.</p>
+<blockquote><p><strong>As inscrições abriram na quarta-feira, 30 de setembro de 2026, às 10h (Brasília).</strong> São 55 mil vagas, e o kit mais barato custa R$ 335,90. Confira no site oficial se ainda há vagas. Última verificação: 5 de outubro de 2026.</p></blockquote>
+<p>A <strong>101ª Corrida Internacional de São Silvestre</strong> acontece na <strong>quinta-feira, 31 de dezembro de 2026</strong>, na região central de São Paulo, com os tradicionais <strong>15 km</strong>. É a primeira edição depois do centenário, comemorado em 2025. As inscrições abriram em <strong>30 de setembro, às 10h</strong>, por venda direta — <strong>sem sorteio</strong> — na plataforma oficial, a Ticket Sports by Ingresse.</p>
 
 <h2>Resumo da São Silvestre 2026</h2>
 <table><thead><tr><th>Item</th><th>O que se sabe</th></tr></thead><tbody>
@@ -87,7 +87,7 @@ export const SAO_SILVESTRE_2026_POSTS: BlogPost[] = [
 
 ${FONTES_SS}`,
     faq: [
-      { question: "Quando abrem as inscrições da São Silvestre 2026?", answer: "Na quarta-feira, 30 de setembro de 2026, às 10h (Brasília), por venda direta, sem sorteio, na plataforma Ticket Sports by Ingresse." },
+      { question: "Quando abrem as inscrições da São Silvestre 2026?", answer: "Abriram na quarta-feira, 30 de setembro de 2026, às 10h (Brasília), por venda direta, sem sorteio, na plataforma Ticket Sports by Ingresse, enquanto houver vagas." },
       { question: "Qual o valor da inscrição da São Silvestre 2026?", answer: "O kit Básico custa R$ 335,90, o Intermediário R$ 459,90 e o Premium R$ 1.039,90, mais a taxa de serviço da plataforma." },
       { question: "Quantas vagas tem a São Silvestre 2026?", answer: "55 mil vagas, vendidas por ordem de chegada, sem sorteio, a partir de 30 de setembro às 10h." },
       { question: "Quando é a São Silvestre 2026?", answer: "Na quinta-feira, 31 de dezembro de 2026, pela manhã, em São Paulo, com largada e chegada na Avenida Paulista." },
