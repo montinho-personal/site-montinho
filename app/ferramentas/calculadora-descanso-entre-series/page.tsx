@@ -9,7 +9,8 @@ import { FONTES_DESCANSO, calcula, fmtFaixa } from "@/lib/descanso";
 /**
  * Calculadora de Descanso Entre Séries.
  *
- * Intenções (briefing do Montinho, 05/10/2026): descanso entre séries,
+ * Prints do Google (05/10/2026): ideal, 3 minutos, 30 segundos, emagrecer,
+ * abdominal, flexão, bíceps, entre treinos. Intenções (briefing do Montinho, 05/10/2026): descanso entre séries,
  * quanto descansar, tempo de descanso, hipertrofia, força, supino,
  * agachamento, "1 minuto é suficiente", "3 minutos é muito", depois da falha.
  *
@@ -64,6 +65,11 @@ const faq: ItemFAQ[] = [
   { question: "2 minutos de descanso é bom para hipertrofia?", answer: "É um ponto de partida razoável para muitos exercícios. Mas compostos pesados e séries até a falha podem pedir mais, e isoladores leves, menos. O melhor intervalo é o que deixa você repetir a qualidade da série." },
   { question: "3 minutos de descanso é muito?", answer: "Não para compostos pesados, para força ou depois de uma série até a falha. Descansar mais não atrapalha a hipertrofia pelas evidências atuais; o custo é o treino ficar mais longo." },
   { question: "Quanto descansar depois de chegar à falha?", answer: `Um pouco mais do que numa série longe da falha. Numa rosca de 10 repetições até a falha, por exemplo, ${roscaFalha}. Quanto mais perto da falha, mais fadiga para recuperar.` },
+  { question: "Qual o descanso ideal entre as séries?", answer: "Não existe um número único. O ideal é o tempo que deixa você fazer a próxima série com carga, repetições e técnica perto do planejado. Isoladores leves costumam pedir 1 a 2 minutos; compostos pesados e séries até a falha, 2 a 4 minutos ou mais." },
+  { question: "Por que descansar só 30 segundos entre séries?", answer: "Descansos tão curtos aparecem em treinos de resistência muscular e em circuitos, em que a meta é acumular fadiga. Para ganhar massa ou força, costumam ser curtos demais: a série seguinte perde repetições e carga." },
+  { question: "Descanso curto entre séries ajuda a emagrecer?", answer: "Pouco. O que faz diferença no emagrecimento é o saldo de calorias da semana. Na musculação, encurtar o descanso só para queimar mais costuma piorar as séries; vale mais treinar bem e cuidar da alimentação." },
+  { question: "Quanto descansar entre séries de abdominal, flexão ou bíceps?", answer: `São exercícios de pouca carga sistêmica: em geral, 1 a 2 minutos bastam. Uma série de bíceps até a falha pede um pouco mais, como ${roscaFalha}. Digite o exercício na calculadora para ver a sua faixa.` },
+  { question: "E o descanso entre treinos do mesmo músculo?", answer: "É outra pergunta: aí se fala em dias, não em minutos, e depende do volume e da intensidade do treino. Esta calculadora trata só do intervalo entre séries, dentro do mesmo treino." },
   { question: "Descanso entre séries é o mesmo que entre exercícios?", answer: "Não. Entre séries você repete o mesmo exercício; entre exercícios você troca de movimento e, às vezes, de músculo. A faixa da calculadora serve de referência, mas o intervalo entre exercícios pode ser diferente." },
 ];
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })) };
