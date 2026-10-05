@@ -54,6 +54,7 @@ import CalculadoraBicicleta from "@/components/bicicleta/CalculadoraBicicleta";
 import { ARTIGOS_COM_CALCULADORA_CORRIDA } from "@/lib/corrida";
 import CalculadoraCorrida from "@/components/corrida/CalculadoraCorrida";
 import { ARTIGOS_COM_CALCULADORA_GLP1 } from "@/lib/glp1";
+import CartoesAfiliado from "@/components/afiliados/CartoesAfiliado";
 import CalculadoraGLP1 from "@/components/glp1/CalculadoraGLP1";
 import { ARTIGOS_COM_CALCULADORA_META } from "@/lib/meta";
 import CalculadoraMeta from "@/components/meta/CalculadoraMeta";
@@ -477,6 +478,7 @@ export default async function BlogPost({ params }: Props) {
       {/* Content */}
       <article className="py-16 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <CartoesAfiliado slug={post.slug} variante="topo" />
           {calcSplit && (
             <>
               <Prosa html={calcSplit.before} slug={post.slug} />
@@ -682,6 +684,8 @@ export default async function BlogPost({ params }: Props) {
           {/* Nota de método: fecha o conteúdo com a filosofia antes de qualquer
               próxima ação. Só em artigos que de fato dão orientação — o
               cluster vem do mesmo classificador que escolhe o CTA. */}
+          <CartoesAfiliado slug={post.slug} />
+
           {clusterRecebeNota(cta.cluster) && <NotaMetodo chave={post.slug} cluster={cta.cluster} />}
 
           {/* As perguntas do artigo, para quem LÊ.
