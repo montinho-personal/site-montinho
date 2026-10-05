@@ -193,6 +193,9 @@ export const EXERCICIOS: Exercicio[] = [
   { id: "flexao-joelhos", nome: "Flexão de braço com joelhos apoiados", aliases: ["flexão ajoelhada", "flexão de joelhos"], categoria: "composto", equipamento: "peso-corporal", primarios: ["peitoral"], secundarios: ["triceps", "deltoide-anterior"] },
   { id: "triceps-elastico", nome: "Tríceps com elástico", categoria: "isolado", equipamento: "peso-corporal", primarios: ["triceps"] },
   { id: "elevacao-lateral-elastico", nome: "Elevação lateral com elástico", categoria: "isolado", equipamento: "peso-corporal", primarios: ["deltoide-lateral"] },
+  { id: "extensao-joelho-sentado", nome: "Extensão de joelho sentado (caneleira ou elástico)", aliases: ["extensora com caneleira", "extensora com elástico", "extensora em casa", "extensão de joelho com caneleira", "extensora na polia"], categoria: "isolado", equipamento: "peso-corporal", primarios: ["quadriceps"] },
+  { id: "abducao-elastico", nome: "Abdução com elástico", aliases: ["caminhada lateral com elástico", "ostra com elástico", "clamshell"], categoria: "isolado", equipamento: "peso-corporal", primarios: ["gluteos"] },
+  { id: "elevacao-pelvica-unilateral", nome: "Elevação pélvica unilateral", aliases: ["ponte unilateral", "hip thrust unilateral"], categoria: "composto", equipamento: "peso-corporal", primarios: ["gluteos"], secundarios: ["posteriores"], unilateral: true },
   { id: "elevacao-pernas-barra", nome: "Elevação de pernas na barra", categoria: "isolado", equipamento: "peso-corporal", primarios: ["core"], secundarios: ["antebraco"] },
 ];
 

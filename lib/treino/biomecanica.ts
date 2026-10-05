@@ -143,6 +143,9 @@ const T: Record<string, P> = {
   "gluteo-cabo": ["extensao-quadril", 2, 1, "a", ["polia"]],
   "abducao-quadril": ["abducao-quadril", 1, 1, "a", ["maquina"]],
   "abducao-cabo": ["abducao-quadril", 2, 1, "a", ["polia"]],
+  "extensao-joelho-sentado": ["extensao-joelho", 1, 1, "a", ["elastico"]],
+  "abducao-elastico": ["abducao-quadril", 2, 1, "a", ["elastico"]],
+  "elevacao-pelvica-unilateral": ["extensao-quadril", 2, 1, "f", ["banco"]],
   "adducao-quadril": ["aducao-quadril", 1, 1, "a", ["maquina"]],
   // quadríceps
   "agachamento-livre": ["agachamento", 3, 3, "f", ["barra"]],

@@ -74,8 +74,10 @@ export interface Curada {
  */
 export const CURADAS: Record<string, Curada[]> = {
   "cadeira-extensora": [
+    { id: "extensao-joelho-sentado", tier: "muito-proxima", preserva: ["O mesmo movimento: extensão de joelho sentado, cadeia aberta", "Quadríceps isolado"], muda: ["Carga pequena (caneleira) ou que cresce no fim (elástico)", "Mais difícil de progredir"], quando: "Em casa ou na polia baixa, para copiar o movimento da máquina." },
     { id: "spanish-squat", tier: "muito-proxima", preserva: ["Foco em quadríceps", "Muita demanda de extensão de joelho"], muda: ["Cadeia fechada: pés no chão, corpo todo participa", "Pede um elástico preso em ponto firme"], quando: "Quando quer o mais perto possível da extensora sem a máquina." },
     { id: "sissy-squat-assistido", tier: "boa", preserva: ["Grande demanda dos extensores do joelho", "Pouca participação do quadril"], muda: ["Exige mais técnica e equilíbrio (apoie as mãos)", "Carga é o próprio corpo"], quando: "Quando quer isolar quadríceps em casa e tem onde se apoiar." },
+    { id: "agachamento-hack", tier: "boa", preserva: ["Muito quadríceps com carga alta"], muda: ["Vira agachamento: glúteos participam", "Cadeia fechada"], quando: "Na academia sem extensora, quando quer carga." },
     { id: "agachamento-calcanhar-elevado", tier: "parcial", preserva: ["Forte participação de quadríceps"], muda: ["Vira exercício composto: quadril e glúteos trabalham junto", "Mais estabilidade corporal"], quando: "Quando tem halteres e aceita um exercício composto com ênfase em quadríceps." },
   ],
   "leg-press": [
@@ -115,6 +117,16 @@ export const CURADAS: Record<string, Curada[]> = {
     { id: "supino-reto-halter", tier: "muito-proxima", preserva: ["Empurrada horizontal", "Peitoral, tríceps e deltoide anterior"], muda: ["Mais liberdade para os ombros", "Mais estabilidade de cada braço", "Carga total costuma ser menor"], quando: "Quando não tem barra ou quer mais liberdade articular." },
     { id: "supino-maquina", tier: "boa", preserva: ["Empurrada horizontal", "Peitoral e tríceps"], muda: ["Trajetória guiada: menos estabilização", "Mais fácil de levar perto da falha"], quando: "Quando quer simplicidade ou foco total em empurrar." },
     { id: "flexao-de-braco", tier: "boa", preserva: ["Empurrada horizontal"], muda: ["Peso corporal: carga limitada", "Cadeia fechada, pede core"], quando: "Treino em casa." },
+  ],
+  "hip-thrust": [
+    { id: "hip-thrust-maquina", tier: "muito-proxima", preserva: ["Extensão de quadril com glúteo encurtado sob carga"], muda: ["Guiado, mais fácil de montar e de progredir"], quando: "Quando a academia tem a máquina." },
+    { id: "ponte-gluteo", tier: "boa", preserva: ["Mesmo movimento, do chão"], muda: ["Amplitude menor", "Carga limitada se for só peso corporal"], quando: "Em casa ou sem banco; dá para pôr um halter no quadril." },
+    { id: "elevacao-pelvica-unilateral", tier: "boa", preserva: ["Extensão de quadril com foco em glúteo"], muda: ["Um lado por vez: mais difícil com pouca carga"], quando: "Em casa, quando a ponte com as duas pernas ficou fácil." },
+    { id: "gluteo-cabo", tier: "parcial", preserva: ["Glúteo em extensão de quadril"], muda: ["Em pé, um lado por vez, carga bem menor"], quando: "Na polia, como complemento." },
+  ],
+  "abducao-quadril": [
+    { id: "abducao-cabo", tier: "muito-proxima", preserva: ["Abdução de quadril: glúteo médio"], muda: ["Em pé, um lado por vez, mais equilíbrio"], quando: "Quando não tem a cadeira abdutora." },
+    { id: "abducao-elastico", tier: "boa", preserva: ["Abdução de quadril"], muda: ["Resistência maior no fim do movimento", "Carga difícil de medir"], quando: "Em casa ou para aquecer." },
   ],
   "agachamento-hack": [
     { id: "leg-press", tier: "muito-proxima", preserva: ["Agachamento guiado e apoiado", "Quadríceps"], muda: ["Ângulo do quadril diferente"], quando: "Quando não tem hack." },
