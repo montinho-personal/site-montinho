@@ -103,6 +103,15 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     enviadoPelaAmazon: true,
     destaque: "14 g de proteína por barra",
   },
+  "barra-nutry-crispy-12un": {
+    id: "barra-nutry-crispy-12un",
+    marca: "Nutry",
+    nome: "Barra de proteína crispy 30 g, trufa de avelã, caixa com 12 (9 g de proteína cada)",
+    url: "https://link.amazon/B0iMncSCp",
+    vendedor: "Amazon",
+    enviadoPelaAmazon: true,
+    destaque: "Menor, 9 g de proteína",
+  },
 };
 
 /** Artigo → produtos (até 3 por artigo, 6 em páginas de compra). */
@@ -114,7 +123,7 @@ export const AFILIADOS_POR_ARTIGO: Record<string, string[]> = {
   "whey-protein-como-tomar": ["whey-soldiers-1kg", "whey-ftw-1kg", "whey-soldiers-elite-1kg"],
   "whey-concentrado-vs-isolado-vs-hidrolisado": ["whey-soldiers-1kg", "whey-ftw-1kg", "whey-soldiers-elite-1kg"],
   "pre-treino-vale-a-pena": ["pre-treino-3vs-360g", "pre-treino-mu-500g", "pre-treino-ftw-sem-cafeina-300g"],
-  "barrinha-de-proteina-vale-a-pena": ["barra-bold-cookies-12un"],
+  "barrinha-de-proteina-vale-a-pena": ["barra-bold-cookies-12un", "barra-nutry-crispy-12un"],
 };
 
 export const AVISO_AFILIADO =
