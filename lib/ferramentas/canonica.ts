@@ -53,6 +53,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Calorias do Elíptico",
     motivo: "que faz a conta com o seu peso e o seu esforço, compara com o visor do aparelho e com a esteira",
   },
+  musculacao: {
+    href: "/ferramentas/calculadora-calorias-musculacao",
+    ancora: "Calculadora de Calorias da Musculação",
+    motivo: "que faz a conta com o seu peso, o tempo e o tipo de treino, e compara com o cardio",
+  },
   atividades: {
     href: "/ferramentas/calculadora-calorias-atividades",
     ancora: "Calculadora de Calorias por Atividade",
