@@ -39,7 +39,7 @@ export default function CartoesAfiliado({ slug, variante = "fim" }: { slug: stri
         <p className="text-xs font-bold uppercase tracking-widest text-amber-400">Escolha rápida · {slug === "mega-oferta-prime-2026" ? "Mega Oferta Prime" : slug.startsWith("black-friday") ? "Black Friday" : "Onde comprar"}</p>
         <h2 className="text-2xl font-bold text-white mt-1">Sem tempo? Estas são as que eu conferi</h2>
         <p className="text-gray-400 text-sm mt-1 mb-5">Toque para ver o preço e o desconto de agora: em promoção eles mudam de hora em hora.</p>
-        <div className="grid gap-3 sm:grid-cols-3">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {produtos.map((p) => (
             <div key={p.id} className="rounded-xl border border-white/10 bg-black/50 p-4 flex flex-col">
               <span className="w-fit rounded bg-amber-400 px-2 py-0.5 text-[11px] font-bold uppercase text-black">{p.destaque}</span>
