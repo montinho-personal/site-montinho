@@ -107,7 +107,12 @@ export const PAGINAS_SUBSTITUIR: PaginaSubstituir[] = [
     ],
     quandoNaoTrocar: "Se o incômodo vem só da técnica, às vezes vale aprender o movimento com um profissional antes de abandonar o exercício.",
     faq: [
-      { question: "Leg press substitui o agachamento?", answer: "Parcialmente. Treina quadríceps e glúteos com carga alta, mas com as costas apoiadas e o movimento guiado, o que tira o trabalho do tronco e do equilíbrio." },
+      { question: "Leg press substitui o agachamento?", answer: "Parcialmente. Treina quadríceps e glúteos com carga alta, mas com as costas apoiadas e o movimento guiado, o que tira o trabalho do tronco e do equilíbrio. Vale para o leg press 45 e o horizontal." },
+      { question: "Qual aparelho na academia substitui o agachamento?", answer: "O agachamento no smith é o mais parecido, porque mantém a barra nas costas. Hack e leg press treinam os mesmos músculos com as costas apoiadas, tirando a carga da coluna." },
+      { question: "É obrigatório fazer agachamento?", answer: "Não. Ele é ótimo, mas nenhum exercício é obrigatório. Dá para treinar muito bem as pernas com smith, hack, leg press, búlgaro e stiff, se o agachamento livre não encaixar para você." },
+      { question: "O que fazer no lugar do agachamento com dor na lombar?", answer: "Esta página não avalia dor: se ela é persistente, procure avaliação. Para treinar, opções com as costas apoiadas (leg press, hack) ou com a carga à frente (goblet) tiram parte da carga da coluna, mas não são garantia." },
+      { question: "O que substitui o agachamento sumô?", answer: "Outro agachamento com as pernas afastadas: goblet sumô com halter ou o sumô no smith. Para adutores e glúteos, leg press com os pés afastados e altos também ajuda." },
+      { question: "Como substituir o agachamento em casa?", answer: "Agachamento com halteres ou mochila, goblet, búlgaro com o pé de trás no sofá e afundo. Sem carga, use mais repetições ou a versão de uma perna." },
       { question: "O que fazer no lugar do agachamento com dor no joelho?", answer: "Esta página não avalia dor. Se o desconforto é persistente, procure avaliação. Para treinar, mudar a profundidade, a posição dos pés ou o equipamento costuma ajudar, mas não é garantia." },
     ],
     artigo: { href: "/blog/como-fazer-agachamento-livre-corretamente", texto: "como fazer agachamento livre corretamente" },
