@@ -59,6 +59,7 @@ export const NOME: Record<Ferramenta, string> = {
   polichinelos: "Calculadora de Polichinelos",
   caminhada: "Calculadora de Calorias da Caminhada",
   eliptico: "Calculadora de Calorias do Elíptico",
+  musculacao: "Calculadora de Calorias da Musculação",
   atividades: "Calculadora de Calorias por Atividade",
   corrida: "Calculadora de Corrida",
   glp1: "Calculadora de Massa Magra no GLP-1",
@@ -114,6 +115,7 @@ export const ROTA: Record<Ferramenta, string> = {
   polichinelos: "/ferramentas/calculadora-polichinelos",
   caminhada: "/ferramentas/calculadora-calorias-caminhada",
   eliptico: "/ferramentas/calculadora-calorias-eliptico",
+  musculacao: "/ferramentas/calculadora-calorias-musculacao",
   atividades: "/ferramentas/calculadora-calorias-atividades",
   corrida: "/ferramentas/calculadora-corrida",
   glp1: "/ferramentas/massa-magra-glp1",
@@ -164,6 +166,7 @@ export const PROXIMA: Record<Ferramenta, { ferramenta: Ferramenta; label: string
      decide emagrecimento é a do dia inteiro. */
   caminhada: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   eliptico: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
+  musculacao: { ferramenta: "volume", label: "Ver se o meu volume de treino está certo" },
   atividades: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
   /* Quem corre e quer emagrecer esbarra no gasto do dia antes de esbarrar no pace. */
   corrida: { ferramenta: "tdee", label: "Calcular meu gasto do dia" },
@@ -300,6 +303,19 @@ const TEXTOS: Record<Ferramenta, Record<string, Texto>> = {
         "Para chegar nesse gasto só no elíptico seria muito tempo por dia. Distribuir entre cardio, musculação e o movimento do dia costuma render mais e durar mais semanas.",
       pergunta: "Quer que eu monte uma distribuição que caiba na sua semana?",
       pedido: "O tempo que saiu foi alto e queria ajuda para distribuir isso na semana.",
+    },
+  },
+  musculacao: {
+    padrao: {
+      interpretacao:
+        "Esse é o gasto de um treino, não o do seu dia. A musculação não é a atividade que mais gasta por minuto, e nem precisa ser: o papel dela é preservar e construir músculo enquanto o resto do plano cuida do déficit.",
+      pedido: "Queria entender como encaixar a musculação no meu objetivo e se o meu treino está bem montado.",
+    },
+    volume_alto: {
+      interpretacao:
+        "Treinos muito longos raramente rendem mais. Uma sessão de 45 a 75 minutos com a carga subindo ao longo das semanas costuma dar mais resultado e cansar menos.",
+      pergunta: "Quer que eu olhe o seu treino e veja o que dá para enxugar sem perder resultado?",
+      pedido: "Meu treino está ficando longo demais e queria ajuda para deixar ele mais eficiente.",
     },
   },
   atividades: {

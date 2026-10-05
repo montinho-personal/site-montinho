@@ -158,6 +158,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/ferramentas/calculadora-calorias-musculacao`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/ferramentas/calculadora-calorias-eliptico`,
       lastModified: new Date(),
       changeFrequency: "monthly",

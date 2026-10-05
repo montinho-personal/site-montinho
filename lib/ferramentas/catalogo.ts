@@ -454,6 +454,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["polichinelo", "jumping jack", "100 polichinelos", "desafio", "exercicio em casa"],
   },
   {
+    id: "musculacao",
+    href: "/ferramentas/calculadora-calorias-musculacao",
+    nome: "Calculadora de Calorias da Musculação",
+    resultado: "Veja quanto o seu treino de musculação gasta pelo peso, tempo e tipo de treino, e compare com o cardio.",
+    acao: "Calcular meu treino",
+    tempo: "10 segundos",
+    categoria: "cardio",
+    icone: "halter",
+    tags: ["musculacao", "academia", "treino de forca", "quantas calorias", "1 hora de musculacao", "gasto calorico musculacao", "musculacao ou cardio", "levantar peso"],
+    selo: "novo",
+  },
+  {
     id: "eliptico",
     href: "/ferramentas/calculadora-calorias-eliptico",
     nome: "Calculadora de Calorias do Elíptico",

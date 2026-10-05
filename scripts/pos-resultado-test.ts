@@ -48,6 +48,7 @@ const CATEGORIAS: Record<Ferramenta, string[]> = {
   polichinelos: ["padrao", "volume_alto"],
   caminhada: ["padrao", "volume_alto"],
   eliptico: ["padrao", "volume_alto"],
+  musculacao: ["padrao", "volume_alto"],
   atividades: ["padrao", "volume_alto"],
   corrida: ["padrao"],
   glp1: ["padrao", "nenhuma", "parcial", "completa"],
