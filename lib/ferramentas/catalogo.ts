@@ -151,6 +151,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["perder peso ate", "quantos quilos", "prazo", "fim do ano", "casamento", "viagem", "quanto tempo para emagrecer", "meta de peso", "quilos por semana", "emagrecer rapido"],
   },
   {
+    id: "cooper",
+    href: "/ferramentas/teste-de-cooper",
+    nome: "Calculadora do Teste de Cooper",
+    resultado: "Corra 12 minutos e veja seu VO2 máx e sua classificação por idade.",
+    acao: "Calcular meu VO2 máx",
+    tempo: "30 segundos",
+    categoria: "cardio",
+    icone: "corpo",
+    tags: ["teste de cooper", "vo2 max", "vo2 maximo", "12 minutos", "condicionamento", "corrida", "folego"],
+    selo: "novo",
+  },
+  {
     id: "percentual-gordura",
     href: "/ferramentas/calculadora-percentual-de-gordura",
     nome: "Calculadora de Percentual de Gordura",
