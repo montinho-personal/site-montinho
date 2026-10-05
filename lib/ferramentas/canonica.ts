@@ -163,6 +163,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Calorias no Futebol",
     motivo: "que separa o tempo de bola rolando do tempo na lateral e mostra quantas latas o jogo realmente pagou",
   },
+  imc: {
+    href: "/ferramentas/calculadora-imc",
+    ancora: "Calculadora de IMC",
+    motivo: "com a tabela da OMS e os limites do IMC para quem treina",
+  },
   cafeina: {
     href: "/ferramentas/calculadora-cafeina",
     ancora: "Calculadora de Cafeína",

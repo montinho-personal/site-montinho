@@ -11,7 +11,7 @@
  * artigos de uma vez, sem mexer no updatedAt de nenhum.
  */
 
-export type FerramentaId = "musculacao" | "superavit" | "cintura" | "passos" | "gordura" | "cooper" | "cafeina";
+export type FerramentaId = "imc" | "musculacao" | "superavit" | "cintura" | "passos" | "gordura" | "cooper" | "cafeina";
 
 export interface CartaoFerramenta {
   href: string;
@@ -21,6 +21,12 @@ export interface CartaoFerramenta {
 }
 
 export const CARTOES: Record<FerramentaId, CartaoFerramenta> = {
+  imc: {
+    href: "/ferramentas/calculadora-imc",
+    pergunta: "Quer calcular o seu IMC?",
+    texto: "A calculadora dá o IMC pela tabela da OMS e mostra, sem rodeio, onde ele engana quem treina.",
+    cta: "Abrir a Calculadora de IMC →",
+  },
   musculacao: {
     href: "/ferramentas/calculadora-calorias-musculacao",
     pergunta: "Quantas calorias o seu treino de musculação gasta?",
@@ -83,7 +89,7 @@ export const ARTIGOS_COM_CARTAO: Record<string, FerramentaId> = {
   "por-que-a-barriga-e-a-ultima-a-ir": "cintura",
   "barriga-inchada-ou-gordura": "cintura",
   "como-perder-barriga-rapido": "cintura",
-  "imc-limitacoes-e-composicao-corporal": "cintura",
+  "imc-limitacoes-e-composicao-corporal": "imc",
 
   "10-mil-passos-por-dia-emagrece": "passos",
   "quanto-tempo-de-caminhada-por-dia": "passos",
