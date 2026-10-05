@@ -84,6 +84,20 @@ export const CARTOES: Record<FerramentaId, CartaoFerramenta> = {
 };
 
 export const ARTIGOS_COM_CARTAO: Record<string, FerramentaId> = {
+  "como-fazer-cadeira-extensora": "substituidor",
+  "como-fazer-cadeira-flexora": "substituidor",
+  "como-fazer-hip-thrust": "substituidor",
+  "como-fazer-abducao-quadril-maquina": "substituidor",
+  "como-fazer-afundo-passadas": "substituidor",
+  "como-fazer-stiff": "substituidor",
+  "stiff-vs-levantamento-terra": "substituidor",
+  "como-fazer-pulldown-puxada-frontal": "substituidor",
+  "barra-fixa-vs-puxada": "substituidor",
+  "como-fazer-barra-fixa": "substituidor",
+  "treino-de-costas-em-casa": "substituidor",
+  "treino-de-gluteos-em-casa": "substituidor",
+  "treino-de-posterior-de-coxa": "substituidor",
+  "treino-de-perna-completo": "substituidor",
   "agachamento-vs-leg-press": "substituidor",
   "hack-vs-leg-press": "substituidor",
   "puxada-vs-remada": "substituidor",
@@ -148,6 +162,20 @@ export const ARTIGOS_COM_CARTAO: Record<string, FerramentaId> = {
  * exercício já escolhido (ou a página editorial, quando existe).
  */
 export const HREF_POR_ARTIGO: Record<string, { href: string; pergunta?: string }> = {
+  "como-fazer-cadeira-extensora": { href: "/substituir/cadeira-extensora", pergunta: "Sua academia não tem cadeira extensora?" },
+  "como-fazer-cadeira-flexora": { href: "/substituir/mesa-flexora", pergunta: "Não tem cadeira ou mesa flexora?" },
+  "como-fazer-hip-thrust": { href: "/substituir/elevacao-pelvica", pergunta: "Não consegue montar a elevação pélvica?" },
+  "como-fazer-abducao-quadril-maquina": { href: "/substituir/cadeira-abdutora", pergunta: "Não tem cadeira abdutora?" },
+  "como-fazer-afundo-passadas": { href: "/substituir/afundo", pergunta: "Afundo não encaixa no seu treino?" },
+  "como-fazer-stiff": { href: "/substituir/stiff", pergunta: "Não tem barra para o stiff?" },
+  "stiff-vs-levantamento-terra": { href: "/substituir/stiff", pergunta: "Quer trocar o stiff?" },
+  "como-fazer-pulldown-puxada-frontal": { href: "/substituir/puxada-alta", pergunta: "Puxada ocupada ou sem polia?" },
+  "barra-fixa-vs-puxada": { href: "/substituir/puxada-alta", pergunta: "Sem polia para a puxada?" },
+  "como-fazer-barra-fixa": { href: "/ferramentas/substituidor-de-exercicios?exercicio=barra-fixa", pergunta: "Ainda não consegue fazer barra fixa?" },
+  "treino-de-costas-em-casa": { href: "/substituir/puxada-alta", pergunta: "Como fazer puxada sem a máquina?" },
+  "treino-de-gluteos-em-casa": { href: "/substituir/elevacao-pelvica", pergunta: "Como fazer elevação pélvica em casa?" },
+  "treino-de-posterior-de-coxa": { href: "/substituir/mesa-flexora", pergunta: "Sem mesa flexora na sua academia?" },
+  "treino-de-perna-completo": { href: "/ferramentas/substituidor-de-exercicios", pergunta: "Sua academia não tem algum aparelho do treino?" },
   "agachamento-vs-leg-press": { href: "/substituir/leg-press", pergunta: "Não tem leg press?" },
   "hack-vs-leg-press": { href: "/ferramentas/substituidor-de-exercicios?exercicio=agachamento-hack", pergunta: "Não tem hack?" },
   "puxada-vs-remada": { href: "/substituir/puxada-alta", pergunta: "Não tem polia para a puxada?" },
