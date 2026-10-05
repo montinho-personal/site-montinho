@@ -109,6 +109,18 @@ const faq: ItemFAQ[] = [
     answer: `A que tem mais tempo de luta de verdade dentro da aula. O Compêndio de Atividades Físicas não ranqueia os estilos: mede as artes marciais juntas, ${metF(MET_TECNICA)} METs em treino e ${metF(MET_ROLA)} em ritmo de luta. O sparring de boxe tem MET menor (${metF(BOXE.metLuta)}). Uma aula de judô com muito randori gasta mais que uma de muay thai só de técnica, e vice-versa.`,
   },
   {
+    question: "Qual queima mais calorias, jiu-jitsu ou muay thai?",
+    answer: `No mesmo ritmo, os dois empatam: o Compêndio dá o mesmo valor a qualquer arte marcial em ritmo de luta (${metF(MET_ROLA)} METs). Para ${PESO_PADRAO} kg, uma hora inteira lutando daria cerca de ${kc(FAIXA[0].luta)} kcal em qualquer um. O que muda de uma aula para outra é quanto tempo dela é luta de verdade.`,
+  },
+  {
+    question: "Dá para queimar 1.000 calorias em 1 hora de luta?",
+    answer: `Para ${PESO_PADRAO} kg, nem uma hora inteira em ritmo de luta chega lá (≈ ${kc(FAIXA[0].luta)} kcal). Os 1.000 kcal pedem uma pessoa bem mais pesada em esforço máximo sem pausa, o que nenhuma aula real é. Use a calculadora com o seu peso para ver o seu número.`,
+  },
+  {
+    question: "Qual a melhor luta para perder barriga ou definir o corpo?",
+    answer: "Nenhuma luta tira gordura de um lugar específico. A melhor é a que você vai treinar várias vezes por semana por meses, porque é a constância que gasta. Para definir, a gordura precisa baixar e o músculo aparecer, e isso vem de luta ou cardio, musculação e alimentação juntos. Vale para homens e mulheres.",
+  },
+  {
     question: "Lutar é bom para emagrecer?",
     answer: `Ajuda de dois jeitos: a aula gasta bastante e, para muita gente, é um treino que dá vontade de voltar, e a constância pesa mais que qualquer aula isolada. Mas quem decide se o peso cai é o déficit do dia inteiro, não a luta sozinha.`,
   },
