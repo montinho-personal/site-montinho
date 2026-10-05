@@ -89593,11 +89593,14 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Fórmulas de peso ideal existem há mais de um século — mas nenhuma delas enxerga o que compõe o seu corpo. Veja como calcular e por que o número é só o começo.",
     category: "Emagrecimento",
     date: "2026-07-11",
-    updatedAt: "2026-07-11",
+    updatedAt: "2026-10-05",
     readTime: "9 min",
     author: "Montinho",
     tags: ["peso ideal","imc","composição corporal","emagrecimento","saúde"],
     faqSchema: [
+      { question: "Qual o peso ideal para 1,60?", answer: "Pela faixa de IMC saudável da OMS, de 47,4 kg a 63,7 kg. A conta é a mesma para homens e mulheres." },
+      { question: "Qual o peso ideal para 1,70?", answer: "Pela faixa de IMC saudável da OMS, de 53,5 kg a 72 kg, para homens e mulheres. Para 1,75 m, de 56,7 kg a 76,3 kg; para 1,80 m, de 59,9 kg a 80,7 kg." },
+      { question: "Qual o peso ideal por idade?", answer: "Para adultos até 59 anos, a faixa não muda com a idade: IMC de 18,5 a 24,9. A partir dos 60, o Ministério da Saúde usa a faixa de 22 a 27. Crianças e adolescentes são avaliados por curvas de crescimento, não por tabela de adulto." },
       { question: "Como calcular meu peso ideal pela altura?", answer: "A forma mais usada é a faixa de IMC saudável: multiplique sua altura ao quadrado (em metros) por 18,5 e por 24,9. Para 1,70 m, a faixa vai de 53,5 kg a 72 kg. É uma referência populacional, não um alvo individual." },
       { question: "O que é a fórmula de Lorentz?", answer: "É uma fórmula histórica de peso ideal: para homens, altura em cm menos 100, menos (altura − 150)/4; para mulheres, o divisor é 2. Foi criada antes dos métodos modernos de avaliação e não considera composição corporal." },
       { question: "Existe um peso ideal exato para cada pessoa?", answer: "Não. Existe uma faixa de peso saudável, mas o peso em que você funciona melhor depende de massa muscular, percentual de gordura, histórico e rotina. Duas pessoas com o mesmo peso podem ter corpos e saúde completamente diferentes." },
@@ -89639,6 +89642,24 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 <p>Exemplo: homem de 1,75 m → (175 − 100) − (25 ÷ 4) = 75 − 6,25 = <strong>68,8 kg</strong>. Mulher de 1,65 m → (165 − 100) − (15 ÷ 2) = 65 − 7,5 = <strong>57,5 kg</strong>.</p>
 <p>É uma curiosidade útil como referência histórica — mas foi criada numa época sem bioimpedância, sem estudos de composição corporal e com outra realidade populacional. <strong>Trate como marco no mapa, não como destino.</strong></p>
+<h2>Tabela de peso ideal por altura</h2>
+<p>A faixa saudável do IMC da Organização Mundial da Saúde vai de 18,5 a 24,9 kg/m². Multiplicando pela altura ao quadrado:</p>
+<table><thead><tr><th>Altura</th><th>Faixa de peso saudável</th></tr></thead><tbody>
+<tr><td>1,50 m</td><td>41,6 a 56,0 kg</td></tr>
+<tr><td>1,55 m</td><td>44,4 a 59,8 kg</td></tr>
+<tr><td>1,60 m</td><td>47,4 a 63,7 kg</td></tr>
+<tr><td>1,65 m</td><td>50,4 a 67,8 kg</td></tr>
+<tr><td>1,70 m</td><td>53,5 a 72,0 kg</td></tr>
+<tr><td>1,75 m</td><td>56,7 a 76,3 kg</td></tr>
+<tr><td>1,80 m</td><td>59,9 a 80,7 kg</td></tr>
+<tr><td>1,85 m</td><td>63,3 a 85,2 kg</td></tr>
+<tr><td>1,90 m</td><td>66,8 a 89,9 kg</td></tr>
+</tbody></table>
+<p><strong>A tabela é a mesma para homens e mulheres.</strong> "Peso ideal para 1,60 feminino" e "para 1,70 masculino" caem na mesma conta, porque o IMC não separa por sexo. O que muda entre as pessoas é a composição: com mais músculo, o mesmo peso significa um corpo bem diferente.</p>
+
+<h2>Peso ideal por idade</h2>
+<p>Para adultos de 20 a 59 anos, a faixa não muda com a idade: vale a tabela acima. A partir dos 60 anos, o Ministério da Saúde (SISVAN) usa outra faixa, de 22 a 27 kg/m², porque com o envelhecimento um pouco mais de reserva protege contra a perda de músculo. Para crianças e adolescentes não se usa tabela de adulto: a avaliação é pelas curvas de crescimento por idade e sexo, com o pediatra.</p>
+
 <h2>A verdade que as fórmulas escondem</h2>
 <p>Aqui está a virada honesta: <strong>duas pessoas com o mesmo peso podem ter corpos opostos.</strong></p>
 <p>Imagine dois homens de 1,75 m e 80 kg. Um treina força há anos: 12% de gordura, ombros largos, cintura fina. O outro é sedentário: 28% de gordura, pouca massa muscular. Mesmo peso, mesmo IMC — <strong>saúde, estética e capacidade física completamente diferentes</strong>.</p>
