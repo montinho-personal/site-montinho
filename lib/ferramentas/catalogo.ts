@@ -151,6 +151,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["perder peso ate", "quantos quilos", "prazo", "fim do ano", "casamento", "viagem", "quanto tempo para emagrecer", "meta de peso", "quilos por semana", "emagrecer rapido"],
   },
   {
+    id: "imc",
+    href: "/ferramentas/calculadora-imc",
+    nome: "Calculadora de IMC",
+    resultado: "Calcule seu IMC pela tabela da OMS e veja por que ele engana quem treina.",
+    acao: "Calcular meu IMC",
+    tempo: "15 segundos",
+    categoria: "emagrecimento",
+    icone: "balanca",
+    tags: ["imc", "indice de massa corporal", "calcular imc", "tabela imc", "peso ideal", "obesidade", "sobrepeso"],
+    selo: "novo",
+  },
+  {
     id: "cafeina",
     href: "/ferramentas/calculadora-cafeina",
     nome: "Calculadora de Cafeína",
