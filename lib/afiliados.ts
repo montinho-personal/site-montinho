@@ -74,7 +74,7 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     url: "https://link.amazon/B09fqwvEP",
     vendedor: "Amazon",
     enviadoPelaAmazon: true,
-    destaque: "Pré-treino com cafeína",
+    destaque: "200 mg de cafeína",
   },
   "pre-treino-ftw-sem-cafeina-300g": {
     id: "pre-treino-ftw-sem-cafeina-300g",
@@ -84,6 +84,15 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     vendedor: "loja oficial da marca",
     enviadoPelaAmazon: true,
     destaque: "Sem cafeína",
+  },
+  "pre-treino-mu-500g": {
+    id: "pre-treino-mu-500g",
+    marca: "+Mu",
+    nome: "Pré-treino 500 g, sabor manga (150 mg de cafeína por dose)",
+    url: "https://link.amazon/B0in9lqDx",
+    vendedor: "Amazon",
+    enviadoPelaAmazon: true,
+    destaque: "150 mg de cafeína",
   },
 };
 
@@ -95,7 +104,7 @@ export const AFILIADOS_POR_ARTIGO: Record<string, string[]> = {
   // whey-protein-engorda fica de fora: é controle do teste de intenção.
   "whey-protein-como-tomar": ["whey-soldiers-1kg", "whey-ftw-1kg", "whey-soldiers-elite-1kg"],
   "whey-concentrado-vs-isolado-vs-hidrolisado": ["whey-soldiers-1kg", "whey-ftw-1kg", "whey-soldiers-elite-1kg"],
-  "pre-treino-vale-a-pena": ["pre-treino-3vs-360g", "pre-treino-ftw-sem-cafeina-300g"],
+  "pre-treino-vale-a-pena": ["pre-treino-3vs-360g", "pre-treino-mu-500g", "pre-treino-ftw-sem-cafeina-300g"],
 };
 
 export const AVISO_AFILIADO =
