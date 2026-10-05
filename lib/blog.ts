@@ -115998,7 +115998,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "100 polichinelos queimam menos do que um pão francês. Aqui está a conta inteira, por quantidade, por minuto e pelo seu peso, sem promessa de desafio de internet.",
     category: "Emagrecimento",
     date: "2026-09-02",
-    updatedAt: "2026-09-02",
+    updatedAt: "2026-10-05",
     readTime: "6 min",
     author: "Montinho",
     tags: ["polichinelo", "calorias", "gasto calórico", "cardio", "emagrecimento"],
@@ -116008,6 +116008,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "500 polichinelos queimam quantas calorias?", answer: "Por volta de 90 calorias para 70 kg, em cerca de 9 a 10 minutos de salto contínuo. É menos do que um copo de suco de laranja, e é por isso que o desafio dos 500 por dia não seca barriga sozinho." },
       { question: "Quantos polichinelos equivalem a 30 minutos de caminhada?", answer: "Por volta de 700 polichinelos contínuos, uns 13 minutos, para uma pessoa de 70 kg. A caminhada moderada gasta cerca de 130 calorias em meia hora; o polichinelo é mais intenso por minuto, mas ninguém sustenta meia hora dele." },
       { question: "Quantos polichinelos para perder 1 kg?", answer: "Cerca de 43 mil polichinelos, ou 13 horas de salto contínuo, porque 1 kg de gordura corporal guarda por volta de 7.700 calorias. O número serve para mostrar que nenhum exercício isolado emagrece: o que faz a balança descer é o balanço calórico do dia inteiro." },
+      { question: "300 polichinelos queimam quantas calorias?", answer: "Cerca de 55 calorias para 70 kg, em uns 5 a 6 minutos de salto contínuo. Para 60 kg, perto de 45; para 100 kg, perto de 75." },
+      { question: "15 minutos de polichinelo queimam quantas calorias?", answer: "Cerca de 150 calorias para 70 kg em ritmo vigoroso, sem pausa. Na prática quase ninguém salta 15 minutos seguidos: com pausas, o gasto fica menor." },
+      { question: "É possível emagrecer só com polichinelo?", answer: "É difícil: o gasto é pequeno perto do que a alimentação muda num dia, e o impacto repetido cansa joelho e tornozelo. O polichinelo funciona como parte de um circuito; quem emagrece é o déficit da semana, com musculação para preservar o músculo." },
       { question: "Quantos polichinelos para queimar 100 calorias?", answer: "Perto de 560 polichinelos para 70 kg, o que dá uns 10 minutos sem parar. Quem pesa mais chega lá com menos repetições; quem pesa menos precisa de mais." },
     ],
     content: `
