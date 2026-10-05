@@ -76,6 +76,15 @@ export const PRODUTOS_AFILIADOS: Record<string, ProdutoAfiliado> = {
     enviadoPelaAmazon: true,
     destaque: "Pré-treino com cafeína",
   },
+  "pre-treino-ftw-sem-cafeina-300g": {
+    id: "pre-treino-ftw-sem-cafeina-300g",
+    marca: "FTW",
+    nome: "Pré-treino sem cafeína 300 g, sabor energético",
+    url: "https://link.amazon/B01TILusf",
+    vendedor: "loja oficial da marca",
+    enviadoPelaAmazon: true,
+    destaque: "Sem cafeína",
+  },
 };
 
 /** Artigo → produtos (até 3 por artigo, 6 em páginas de compra). */
@@ -86,7 +95,7 @@ export const AFILIADOS_POR_ARTIGO: Record<string, string[]> = {
   // whey-protein-engorda fica de fora: é controle do teste de intenção.
   "whey-protein-como-tomar": ["whey-soldiers-1kg", "whey-ftw-1kg", "whey-soldiers-elite-1kg"],
   "whey-concentrado-vs-isolado-vs-hidrolisado": ["whey-soldiers-1kg", "whey-ftw-1kg", "whey-soldiers-elite-1kg"],
-  "pre-treino-vale-a-pena": ["pre-treino-3vs-360g"],
+  "pre-treino-vale-a-pena": ["pre-treino-3vs-360g", "pre-treino-ftw-sem-cafeina-300g"],
 };
 
 export const AVISO_AFILIADO =
