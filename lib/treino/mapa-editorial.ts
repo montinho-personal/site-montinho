@@ -133,6 +133,12 @@ export const EDITORIAL: Record<GrupoSlug, EditorialGrupo> = {
     resposta: "O grande dorsal puxa o braço para baixo e para trás. Puxadas na polia, barra fixa e pullover são os movimentos mais diretos; remadas também o treinam bastante.",
     comoEscolher: "Pense em levar os cotovelos em direção ao quadril. Se você ainda não faz barra fixa, puxada na polia ou barra assistida permitem ajustar a carga.",
     emCasa: "Barra fixa ou barra assistida com elástico, puxada com elástico preso no alto e remada com halteres.",
+    extras: [
+      { h2: "Quais os melhores exercícios para dorsal?", p: "Puxada frontal no pulley e barra fixa para largura; remada curvada, remada unilateral (serrote) e remada baixa para espessura. Em todos, pense em levar os cotovelos para baixo e para trás, sem girar os ombros para a frente." },
+      { h2: "Como trabalhar a parte baixa da dorsal?", p: "O grande dorsal desce até a cintura. Puxadas com os cotovelos vindo junto ao corpo (pegada mais fechada ou neutra), pulldown com braços estendidos e remada unilateral puxando o halter em direção ao quadril costumam ser os que mais se sentem na parte baixa. Na parte de cima das costas, quem trabalha mais são trapézio, romboides e posterior de ombro, com remadas de cotovelo aberto." },
+      { h2: "Exercícios para dorsal na polia, com halteres e com elástico", p: "Na polia: puxada frontal, pulldown com braços estendidos, remada baixa e remada unilateral no cabo. Com halteres: serrote, remada curvada e pullover. Com elástico: puxada com o elástico preso no alto e remada sentado." },
+      { h2: "Como fortalecer o dorso?", p: "Uma puxada e uma remada por treino, duas vezes por semana, com carga subindo aos poucos, já fortalecem bem as costas. Se a busca é por dor, quem indica os exercícios é o médico ou o fisioterapeuta." },
+    ],
     artigos: [{ slug: "como-fazer-pulldown-puxada-frontal", texto: "como fazer a puxada frontal" }, { slug: "barra-fixa-vs-puxada", texto: "barra fixa vs puxada" }],
     searchDemand: "media", isIndexable: true,
   }),
