@@ -178,7 +178,7 @@ for (const [nome, origem, href, destino, leitura] of travessias) {
 }
 
 /** O usuário precisa saber que o campo veio preenchido de outro lugar. */
-ok("Macros avisa que a caloria veio do déficit", /trazidas da sua calculadora de déficit/i.test(macros));
+ok("Macros avisa de onde veio a caloria", /trazidas da calculadora anterior/i.test(macros));
 ok("Proteína avisa que o peso veio dos macros", /trazido da sua calculadora de macros/i.test(proteina));
 ok("1RM avisa que o exercício veio do volume", /trazido da sua análise de volume/i.test(onerm));
 

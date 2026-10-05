@@ -11,7 +11,7 @@
  * artigos de uma vez, sem mexer no updatedAt de nenhum.
  */
 
-export type FerramentaId = "imc" | "musculacao" | "superavit" | "cintura" | "passos" | "gordura" | "cooper" | "cafeina";
+export type FerramentaId = "descanso" | "imc" | "musculacao" | "superavit" | "cintura" | "passos" | "gordura" | "cooper" | "cafeina";
 
 export interface CartaoFerramenta {
   href: string;
@@ -21,6 +21,12 @@ export interface CartaoFerramenta {
 }
 
 export const CARTOES: Record<FerramentaId, CartaoFerramenta> = {
+  descanso: {
+    href: "/ferramentas/calculadora-descanso-entre-series",
+    pergunta: "Quanto descansar antes da próxima série?",
+    texto: "Informe o exercício, as repetições e o esforço da série para receber uma faixa de descanso, com cronômetro para usar no treino.",
+    cta: "Calcular meu descanso →",
+  },
   imc: {
     href: "/ferramentas/calculadora-imc",
     pergunta: "Quer calcular o seu IMC?",
@@ -72,6 +78,14 @@ export const CARTOES: Record<FerramentaId, CartaoFerramenta> = {
 };
 
 export const ARTIGOS_COM_CARTAO: Record<string, FerramentaId> = {
+  "como-fazer-supino-reto": "descanso",
+  "como-fazer-agachamento-livre-corretamente": "descanso",
+  "como-fazer-leg-press": "descanso",
+  "como-fazer-remada-curvada-tecnica": "descanso",
+  "como-fazer-desenvolvimento-ombros": "descanso",
+  "treinar-ate-a-falha": "descanso",
+  "escala-rpe-musculacao": "descanso",
+
   "musculacao-emagrece": "musculacao",
   "musculacao-ou-corrida-para-emagrecer": "musculacao",
 

@@ -115,6 +115,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/ferramentas/calculadora-descanso-entre-series`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/ferramentas/calculadora-imc`,
       lastModified: new Date(),
       changeFrequency: "monthly",
