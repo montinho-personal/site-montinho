@@ -75194,7 +75194,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     excerpt: "O Natal não precisa ser o vilão do seu shape. Com planejamento simples, você celebra sem destruir meses de trabalho.",
     category: "Treinamento",
     date: "2025-12-01",
-    updatedAt: "2026-07-22",
+    updatedAt: "2026-10-06",
     readTime: "7 min",
     author: "Montinho",
     tags: ["shape no natal", "treino dezembro", "manter forma natal", "fitness festas", "personal trainer alphaville"],
@@ -75204,6 +75204,10 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
       { question: "O que devo comer antes da ceia de Natal?", answer: "Faça uma refeição proteica leve antes da ceia para chegar com menos fome e fazer escolhas mais conscientes na mesa." },
       { question: "Preciso cortar o álcool completamente no Natal?", answer: "Não precisa cortar totalmente, mas limite a quantidade e prefira opções de menor caloria como vinho seco ou espumante brut." },
       { question: "Como compensar os excessos do Natal no dia seguinte?", answer: "Retome a alimentação normal no dia seguinte, hidrate-se bem e faça um treino moderado. Evite jejum prolongado ou compensações extremas." },
+      { question: "Como não engordar no Natal?", answer: "Não pular refeições para guardar espaço para a ceia, que é o que leva ao exagero. Comer normalmente durante o dia, começar o prato pela salada e pelas carnes, escolher as sobremesas que você realmente quer e alternar bebida alcoólica com água. Treinar na semana do Natal, mesmo que menos, também ajuda a manter a rotina." },
+      { question: "Dá para perder 10 kg até o Natal?", answer: "Depende de quanto tempo falta. Um ritmo sustentável fica perto de 0,5% a 1% do peso por semana: para quem pesa 80 kg, de 400 a 800 gramas. Dez quilos de gordura costumam levar de 3 a 6 meses; perdas maiores em poucas semanas são, em boa parte, água, e voltam rápido." },
+      { question: "É normal engordar 4 kg em um mês nas festas?", answer: "Boa parte desse aumento rápido costuma ser água e comida no intestino, por causa de mais sal, carboidrato e álcool, e não gordura. Voltando à rotina, o peso tende a baixar em uma ou duas semanas. Ganhar 4 kg de gordura em um mês exigiria um excesso muito grande todos os dias." },
+      { question: "O que mata a fome sem engordar nas festas?", answer: "Alimentos com proteína, fibras e água dão mais saciedade com menos calorias: carnes magras, ovos, legumes, saladas e frutas. Chegar à ceia sem estar morrendo de fome é o que mais ajuda a não exagerar." },
     ],
     content: `
 <h2>A Mentira do "Janeiro Eu Começo de Novo"</h2>
