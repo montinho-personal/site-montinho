@@ -35,7 +35,6 @@ function Campo({ rotulo, valor, onEscolhe, onTexto, placeholder }: { rotulo: str
   const [texto, setTexto] = useState(valor ? EXERCICIO_POR_ID.get(valor)?.nome ?? "" : "");
   const [aberto, setAberto] = useState(false);
   const [ativo, setAtivo] = useState(-1);
-  useEffect(() => { if (valor) setTexto(EXERCICIO_POR_ID.get(valor)?.nome ?? ""); }, [valor]);
   const sugestoes = useMemo(() => (valor && EXERCICIO_POR_ID.get(valor)?.nome === texto ? [] : buscaComparavel(texto, 6)), [texto, valor]);
   const escolhe = (x: string) => { onEscolhe(x); setTexto(EXERCICIO_POR_ID.get(x)?.nome ?? ""); setAberto(false); };
   const onKey = (e: React.KeyboardEvent) => {
@@ -80,6 +79,7 @@ export default function Comparador({ inicialA, inicialB, placement = "ferramenta
   const [trocando, setTrocando] = useState<"a" | "b" | null>(null);
   const resRef = useRef<HTMLDivElement>(null);
   const comparados = useRef(new Set<string>());
+  const [nComparados, setNComparados] = useState(0);
 
   useEffect(() => {
     trackOncePerSession("exercise_compare_view", { placement });
@@ -87,8 +87,10 @@ export default function Comparador({ inicialA, inicialB, placement = "ferramenta
     try {
       const q = new URLSearchParams(window.location.search);
       const qa = q.get("a"), qb = q.get("b");
+      /* eslint-disable react-hooks/set-state-in-effect -- leitura única da URL, que não existe no servidor */
       if (qa && EXERCICIO_POR_ID.get(qa)) setA(qa);
       if (qb && EXERCICIO_POR_ID.get(qb)) setB(qb);
+      /* eslint-enable react-hooks/set-state-in-effect */
     } catch { /* sem URL */ }
   }, [inicialA, inicialB, placement]);
 
@@ -101,8 +103,9 @@ export default function Comparador({ inicialA, inicialB, placement = "ferramenta
     const k = chavePar(la.id, lb.id);
     if (comparados.current.has(k)) return;
     comparados.current.add(k);
+    setNComparados(comparados.current.size);
     trackEvent("exercise_compare_complete", { par: k, placement, n: comparados.current.size });
-  }); // eslint-disable-line react-hooks/exhaustive-deps
+  });
 
   const escolhe = (qual: "a" | "b") => (id: string) => {
     (qual === "a" ? setA : setB)(id); setTrocando(null);
@@ -135,13 +138,13 @@ export default function Comparador({ inicialA, inicialB, placement = "ferramenta
       )}
 
       <div ref={resRef} className="scroll-mt-24">
-        {pronto && <Resultado a={la} b={lb} obj={obj} setObj={setObj} placement={placement} trocar={setTrocando} trocando={trocando} n={comparados.current.size} />}
+        {pronto && <Resultado a={la} b={lb} obj={obj} setObj={setObj} placement={placement} trocar={setTrocando} trocando={trocando} n={nComparados} />}
       </div>
     </div>
   );
 }
 
-function Resultado({ a, b, obj, setObj, placement, trocar, trocando, n }: { a: Lado; b: Lado; obj: Objetivo | null; setObj: (o: Objetivo) => void; placement: string; trocar: (q: "a" | "b" | null) => void; trocando: "a" | "b" | null; n: number }) {
+function Resultado({ a, b, obj, setObj, trocar, trocando, n }: { a: Lado; b: Lado; obj: Objetivo | null; setObj: (o: Objetivo) => void; placement: string; trocar: (q: "a" | "b" | null) => void; trocando: "a" | "b" | null; n: number }) {
   const rel = relacao(a, b);
   const ed = EDITORIAL[chavePar(a.id, b.id)];
   const comum = emComum(a, b);
