@@ -75393,7 +75393,7 @@ Sexta: treino e rotina de volta. Um dia de retomada resolve tudo.</p>
     excerpt: "Manter a dieta nas festas é difícil, mas não impossível. Com as estratégias certas, você atravessa dezembro sem culpa e sem perder resultados.",
     category: "Nutrição",
     date: "2025-12-08",
-    updatedAt: "2026-07-22",
+    updatedAt: "2026-10-06",
     readTime: "7 min",
     author: "Montinho",
     tags: ["dieta festas fim de ano", "alimentação saudável dezembro", "manter dieta natal", "nutrição festas", "emagrecimento dezembro"],
@@ -75403,6 +75403,11 @@ Sexta: treino e rotina de volta. Um dia de retomada resolve tudo.</p>
       { question: "Como recusar comida nas festas sem ser indelicado?", answer: "Sirva-se de pequenas porções em vez de recusar. Isso respeita o anfitrião e evita a pressão social sem comprometer sua alimentação." },
       { question: "O que comer em confraternizações de empresa?", answer: "Priorize proteínas e saladas, evite petiscos fritos como entrada, limite o álcool e beba água ao longo da noite." },
       { question: "Como lidar com a pressão social para comer mais nas festas?", answer: "Estabeleça seus limites antes de chegar ao evento. Coma com prazer e em quantidade consciente. Você não deve satisfações alimentares a ninguém." },
+      { question: "Devo pular refeições antes da festa para compensar?", answer: "Não. Chegar à festa depois de um dia em jejum aumenta a fome e quase sempre leva a comer mais do que o que foi economizado. Faça as refeições normais do dia, com proteína e salada, e chegue sem estar faminto." },
+      { question: "Como beber nas festas sem estragar a dieta?", answer: "Decida antes quantas doses vai tomar, alterne cada copo de bebida alcoólica com um copo de água e prefira bebidas sem açúcar na mistura. Álcool soma calorias e, principalmente, faz a gente comer mais." },
+      { question: "Quantos kg posso perder até o Natal?", answer: "Um ritmo sustentável fica perto de 0,5% a 1% do peso por semana. Para quem pesa 80 kg e tem 6 semanas até o Natal, isso dá de 2,4 a 4,8 kg. Mais do que isso costuma ser água e volta rápido." },
+      { question: "Como desinchar 3 kg em 3 dias depois das festas?", answer: "Boa parte do peso extra das festas é água e comida ainda no intestino, por causa de sal, carboidrato e álcool. Voltando à alimentação normal, com água e menos ultraprocessados, e retomando o treino, esse peso costuma baixar em poucos dias. Não precisa de jejum nem de dieta restritiva." },
+      { question: "Como voltar à dieta depois das festas de fim de ano?", answer: "No dia seguinte, volte às refeições e aos horários de sempre, sem tentar compensar com jejum ou cortes grandes. Retome o treino na mesma semana e olhe a média do peso de 7 a 10 dias, não a balança do dia 26 ou do dia 2." },
     ],
     content: `
 <h2>A Grande Mentira de Dezembro: "Começo Sério em Janeiro"</h2>
