@@ -39,7 +39,7 @@ export default function PrevisorSaoSilvestre() {
 
   const calcular = () => {
     const seg = lerTempo(tempo);
-    if (seg === null) { setErro("Digite o tempo como minutos:segundos (ex.: 28:30) ou horas:minutos:segundos (ex.: 1:02:00)."); setRes(null); trackEvent("ss_predictor_error", { reason: "format" }); return; }
+    if (seg === null) { setErro("Não entendi esse tempo. Digite minutos e segundos, como 28:30 ou 28.30. Acima de uma hora: 1:02:00 ou 1h02."); setRes(null); trackEvent("ss_predictor_error", { reason: "format" }); return; }
     const v = validaReferencia(seg, km.km);
     if (v) { setErro(v); setRes(null); trackEvent("ss_predictor_error", { reason: "range" }); return; }
     setErro(null);
@@ -61,9 +61,9 @@ export default function PrevisorSaoSilvestre() {
         </div>
         <div>
           <label htmlFor="ss-tempo" className="text-white font-semibold block mb-2">Seu tempo recente nos {km.rotulo.toLowerCase()}</label>
-          <input id="ss-tempo" inputMode="numeric" placeholder={ref === "21k" ? "ex.: 2:05:00" : ref === "10k" ? "ex.: 58:00" : "ex.: 28:30"} className={campo} value={tempo}
+          <input id="ss-tempo" inputMode="decimal" autoComplete="off" placeholder={ref === "21k" ? "ex.: 2:05:00" : ref === "10k" ? "ex.: 58:00" : "ex.: 28:30"} className={campo} value={tempo}
             onChange={(e) => setTempo(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") calcular(); }} />
-          <p className="text-gray-500 text-sm mt-2">Use um tempo dos últimos 2 ou 3 meses, de prova ou de treino forte.</p>
+          <p className="text-gray-500 text-sm mt-2">Pode digitar 28:30, 28.30 ou só 2830. Use um tempo dos últimos 2 ou 3 meses, de prova ou de treino forte.</p>
         </div>
         {erro && <p className="text-red-300 text-sm" role="alert">{erro}{erro.includes("começando") && <> <Link href="/blog/corrida-para-iniciantes" className="underline">Corrida para iniciantes</Link>.</>}</p>}
         <button type="button" className={btnPri} onClick={calcular} disabled={!tempo.trim()}>Prever meu tempo nos 15 km</button>

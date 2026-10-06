@@ -60,8 +60,25 @@ export function riegel(tempoSeg: number, deKm: number, paraKm: number): number {
 }
 
 /** "25:30" ou "1:05:30" → segundos; null se não for um tempo válido. */
+/**
+ * Lê o tempo do jeito que a pessoa digitar. O teclado numérico do celular
+ * não tem ":", então vale também "28.30", "28,30", "28 30", "28m30s",
+ * "1h02", "28 min" e só dígitos: até 3 dígitos = minutos ("58", "125"),
+ * 4 = mmss ("2830"), 5 ou 6 = hmmss ("10200").
+ */
 export function lerTempo(txt: string): number | null {
-  const partes = txt.trim().split(":").map((p) => p.trim());
+  let t = txt.trim().toLowerCase().replace(/\s*(minutos?|mins?)\s*$/, "");
+  if (!t) return null;
+  const h = t.match(/^(\d{1,2})\s*h\s*(\d{1,2})?\s*(?:m(?:in)?)?\s*(?:(\d{1,2})\s*s?)?$/);
+  if (h) t = `${h[1]}:${h[2] ?? "0"}:${h[3] ?? "0"}`;
+  else t = t.replace(/\s*(?:m(?:in)?|'|’)\s*/g, ":").replace(/\s*(?:s|"|”|'')\s*$/, "").replace(/[.,;\s]+/g, ":").replace(/:$/, "");
+  if (/^\d+$/.test(t)) {
+    if (t.length <= 3) t = `${t}:00`;
+    else if (t.length === 4) t = `${t.slice(0, 2)}:${t.slice(2)}`;
+    else if (t.length <= 6) t = `${t.slice(0, -4)}:${t.slice(-4, -2)}:${t.slice(-2)}`;
+    else return null;
+  }
+  const partes = t.split(":");
   if (partes.length < 2 || partes.length > 3 || partes.some((p) => !/^\d{1,3}$/.test(p))) return null;
   const n = partes.map(Number);
   if (n.slice(1).some((x) => x >= 60)) return null;
