@@ -333,7 +333,7 @@ export const blogPosts = ([
       "Você já tentou de tudo: dieta da moda, jejum, treinar todos os dias... e mesmo assim o peso não sai. Entenda o que realmente está te impedindo e como resolver de vez.",
     category: "Emagrecimento",
     date: "2024-12-10",
-    updatedAt: "2026-07-22",
+    updatedAt: "2026-10-06",
     readTime: "8 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -365,6 +365,46 @@ export const blogPosts = ([
         question: "Qual o papel do Personal Trainer no emagrecimento?",
         answer:
           "O Personal Trainer estrutura o treino para preservar a massa muscular durante o emagrecimento, o que mantém o metabolismo elevado. Além disso, ajusta o protocolo continuamente conforme o corpo responde, evitando platôs e garantindo que a perda seja principalmente de gordura.",
+      },
+      {
+        question: "Por que não consigo emagrecer mesmo fazendo dieta e exercício?",
+        answer:
+          "Na maioria dos casos, o déficit não está acontecendo de verdade: calorias de bebidas, beliscos e fins de semana livres anulam o que foi economizado de segunda a sexta. Também é comum o peso parar por retenção de líquido nas primeiras semanas de treino. Medir a média do peso por 2 a 3 semanas, e não o dia a dia, mostra se há perda real.",
+      },
+      {
+        question: "Já tentei de tudo e não consigo emagrecer. O que fazer?",
+        answer:
+          "Trocar de estratégia toda semana costuma ser o problema. Escolha um plano que você consiga seguir por meses, com um déficit pequeno, proteína suficiente e musculação, e acompanhe a média do peso e a cintura por 3 a 4 semanas antes de mudar algo. Se ainda assim nada mudar, vale uma avaliação médica.",
+      },
+      {
+        question: "Quero emagrecer, mas não consigo parar de comer. Por quê?",
+        answer:
+          "Fome forte costuma vir de dieta restritiva demais, pouca proteína, sono ruim e longos períodos sem comer, que terminam em exagero. Ajustar esses pontos ajuda mais do que força de vontade. Se a vontade de comer vem com perda de controle frequente ou culpa intensa, procure um profissional de saúde.",
+      },
+      {
+        question: "Existe doença ou hormônio que não deixa emagrecer?",
+        answer:
+          "Algumas condições, como hipotireoidismo, síndrome dos ovários policísticos e o uso de certos remédios, deixam o emagrecimento mais difícil, mas não impossível: o déficit calórico continua sendo o que faz perder gordura. Quem investiga e trata essas condições é o médico, com exames.",
+      },
+      {
+        question: "Por que não consigo emagrecer na menopausa?",
+        answer:
+          "Na menopausa, a gordura tende a se concentrar mais na barriga, e é comum perder músculo e se movimentar menos. Musculação para preservar o músculo, proteína suficiente e um déficit moderado continuam funcionando, só que o ritmo costuma ser mais lento.",
+      },
+      {
+        question: "Por que não consigo emagrecer tomando Mounjaro?",
+        answer:
+          "O remédio reduz o apetite, mas o resultado varia de pessoa para pessoa e depende da dose, do tempo de uso e do que se come. Ajuste de dose é decisão do médico. Do lado do treino, musculação e proteína ajudam a perder gordura preservando o músculo.",
+      },
+      {
+        question: "Por que não consigo emagrecer com jejum intermitente?",
+        answer:
+          "O jejum só funciona se o total de calorias do dia ficar abaixo do gasto. Se a janela de alimentação compensa o jejum com refeições grandes, o déficit desaparece. Ele é uma forma de organizar as refeições, não um atalho.",
+      },
+      {
+        question: "Por que não consigo emagrecer a barriga?",
+        answer:
+          "Não dá para escolher de onde a gordura sai: abdominal fortalece o músculo, mas não queima a gordura da região. A barriga costuma ser um dos últimos lugares a diminuir, principalmente em homens e na menopausa. Ela diminui junto com a gordura do corpo todo.",
       },
     ],
     faqSchema: [

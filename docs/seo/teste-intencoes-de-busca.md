@@ -380,3 +380,7 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 
 ### erros-comuns-no-treino-de-musculacao (06/10)
 - Prints "erros na musculação": +4 FAQs (erros no ganho de massa, pior inimigo da hipertrofia, carga leve demais, amplitude/descida). Já cobria erro mais comum e quantas vezes por semana. O artigo aparece no autocompletar do Google.
+
+### por-que-voce-nao-consegue-emagrecer (06/10)
+- Prints "por que não consigo emagrecer": +8 FAQs (mesmo com dieta e exercício, já tentei de tudo, não consigo parar de comer, doença/hormônio, menopausa, Mounjaro → dose é do médico, jejum intermitente, barriga).
+- Fora: livro, Desire Coelho (pessoa), frases, "5 alimentos" (nutrição), "estou deprimida" (saúde mental — não tratar em FAQ).
