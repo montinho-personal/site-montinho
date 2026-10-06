@@ -403,3 +403,6 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 
 ### o-que-fazer-entre-natal-e-ano-novo (06/10)
 - Prints "treino entre natal e ano novo": +4 FAQs (treino curto em casa, treinar de ressaca, método 12-3-30, treinar pouco perde o resultado). Fora: frase para treinar no frio, meta de treinos por ano.
+
+### como-voltar-rapidamente-apos-festas (06/10)
+- Prints "voltar a treinar depois das festas": +4 FAQs (como voltar, depois de 2 semanas, depois de 1 mês ou mais, academia depois do jantar). Fora: frase motivacional; 12-3-30 já está em o-que-fazer-entre-natal-e-ano-novo.

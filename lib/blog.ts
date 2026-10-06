@@ -75595,7 +75595,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Voltou das festas e sentiu que perdeu o ritmo? Com a abordagem certa, você reconquista seu patamar em menos tempo do que imagina.",
     category: "Treinamento",
     date: "2026-01-02",
-    updatedAt: "2026-01-02",
+    updatedAt: "2026-10-06",
     readTime: "7 min",
     author: "Montinho",
     tags: ["voltar treinar após festas", "retomar dieta janeiro", "recuperar shape após natal", "volta academia janeiro", "personal trainer alphaville"],
@@ -75605,6 +75605,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Como retomar os treinos sem lesão após as férias?", answer: "Reduza cargas em 20 a 30% na primeira semana, foque na técnica e aumente gradualmente. Seu sistema nervoso e tendões precisam de adaptação mesmo quando o músculo parece pronto." },
       { question: "O inchaço após as festas é gordura ou retenção de líquido?", answer: "A maior parte do inchaço imediato é retenção de líquido causada pelo excesso de sódio e carboidratos. Costuma desaparecer em 5 a 7 dias com hidratação adequada e alimentação normal." },
       { question: "Vale fazer detox após as festas de fim de ano?", answer: "Não existe evidência científica para detoxes. O fígado e os rins já fazem essa função naturalmente. O melhor detox é beber água, dormir bem e retomar alimentação equilibrada." },
+      { question: "Como voltar a treinar depois das festas?", answer: "Volte na mesma semana, com cargas e volume menores do que antes, por volta de metade a dois terços do que você fazia, e suba aos poucos ao longo de duas semanas. Começar no máximo logo no primeiro treino é o caminho mais curto para dor forte e para faltar no seguinte." },
+      { question: "Como voltar a treinar depois de duas semanas parado?", answer: "Duas semanas é pouco tempo: a força e a massa muscular quase não mudam. Faça a primeira semana um pouco mais leve para o corpo reacostumar e, na segunda, volte ao seu treino normal." },
+      { question: "Como voltar a treinar depois de 1 mês ou mais?", answer: "Reduza mais a carga e o número de séries nas duas primeiras semanas e espere alguma dor muscular nos primeiros treinos. Quem já treinava recupera o nível mais rápido do que levou para construir. Para pausas de vários meses, vale começar quase como iniciante." },
+      { question: "Posso ir para a academia depois do jantar?", answer: "Pode, desde que a refeição não tenha sido muito pesada e você se sinta bem para treinar. Muita gente prefere esperar uma ou duas horas depois de comer. Se o treino tarde atrapalha o seu sono, ajuste o horário." },
     ],
     content: `
 <h2>A Mentira que a Balança te Conta em Janeiro</h2>
