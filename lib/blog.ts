@@ -75498,7 +75498,7 @@ Sexta: treino e rotina de volta. Um dia de retomada resolve tudo.</p>
     excerpt: "A semana entre o Natal e o Ano Novo é uma das mais subestimadas do ano. Quem a usa bem chega a janeiro na frente de todo mundo.",
     category: "Treinamento",
     date: "2025-12-22",
-    updatedAt: "2025-12-22",
+    updatedAt: "2026-10-06",
     readTime: "7 min",
     author: "Montinho",
     tags: ["entre natal e ano novo", "treino semana festas", "não parar de treinar dezembro", "fitness fim de ano", "personal trainer alphaville"],
@@ -75508,6 +75508,10 @@ Sexta: treino e rotina de volta. Um dia de retomada resolve tudo.</p>
       { question: "Como manter a alimentação entre o Natal e o Ano Novo?", answer: "Retome a alimentação normal imediatamente após o Natal. Café da manhã proteico, almoço equilibrado, jantar leve. Reserve a flexibilidade para a virada." },
       { question: "Quantas vezes devo treinar nessa semana?", answer: "Três treinos entre o Natal e a virada já são excelentes. Segunda, quarta e sexta, ou qualquer combinação de dias alternados." },
       { question: "Devo fazer dieta rígida entre o Natal e o Ano Novo?", answer: "Não é necessário ser rígido, mas retomar a alimentação estruturada logo após o Natal faz grande diferença. Guarde a flexibilidade para o réveillon." },
+      { question: "Dá para fazer um treino curto em casa entre as festas?", answer: "Dá. Sessões de 15 a 25 minutos com o peso do corpo resolvem: agachamento, afundo, flexão, remada com elástico ou mochila, prancha. Fazer duas ou três vezes na semana já mantém a rotina até janeiro." },
+      { question: "Posso treinar de ressaca?", answer: "Não é uma boa ideia. Com o corpo desidratado e o sono ruim, o rendimento cai e o risco de passar mal aumenta. Prefira hidratar, descansar e treinar no dia seguinte, ou fazer só uma caminhada leve." },
+      { question: "O que é o método 12-3-30?", answer: "É uma caminhada na esteira com 12% de inclinação, a cerca de 3 milhas por hora (perto de 4,8 km/h), durante 30 minutos. É uma forma de cardio de baixo impacto que cabe bem em semanas corridas. Para começar, vale usar menos inclinação ou menos tempo." },
+      { question: "Treinar pouco nessa semana faz perder o resultado do ano?", answer: "Não. Uma ou duas semanas de treino reduzido não apagam meses de treino. O importante é não deixar a pausa virar janeiro inteiro: marque o dia de voltar à rotina." },
     ],
     content: `
 <h2>A Semana que o Mundo Inteiro Joga Fora</h2>
