@@ -373,3 +373,7 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 - Prints "hábitos que atrapalham o emagrecimento": +6 FAQs (o que mais atrapalha / maior vilão, idade mais difícil — Pontzer 2021, sinais de metabolismo lento, hormônio, 10 kg em 7 dias, perda de peso preocupante → médico).
 - Fora: frases, artigo científico, "5 alimentos que não deixam emagrecer", tabela de alimentos e o que comer (nutrição), doenças que causam perda de peso (saúde).
 - Pendente aprovação: metaDescription termina em "..." (mostrar ATUAL/PROPOSTA/MOTIVO).
+
+### como-prevenir-lesoes-no-treino (06/10)
+- Prints "como prevenir lesões na musculação": +6 FAQs (evitar lesão muscular, como saber se lesionei, tipos de lesão, machuquei a lombar → travou-a-lombar, exercícios que prejudicam a coluna, malhei perna e não consigo andar → DOMS). Sem diagnóstico: sinais de alerta → médico/fisioterapeuta.
+- Fora: pdf, artigo científico, musculação emagrece, benefícios da musculação feminina, "o que tomar" (remédio).
