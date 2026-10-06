@@ -75294,7 +75294,7 @@ Sexta: treino e rotina de volta. Um dia de retomada resolve tudo.</p>
     excerpt: "Comer bem na ceia de Natal sem culpa é possível. Veja como aproveitar cada garfada com consciência e sair da mesa satisfeito, não arrependido.",
     category: "Nutrição",
     date: "2025-12-05",
-    updatedAt: "2026-07-22",
+    updatedAt: "2026-10-06",
     readTime: "7 min",
     author: "Montinho",
     tags: ["ceia de natal saudável", "nutrição festas", "comer sem culpa natal", "alimentação dezembro", "personal trainer alphaville"],
@@ -75304,6 +75304,11 @@ Sexta: treino e rotina de volta. Um dia de retomada resolve tudo.</p>
       { question: "Posso beber na ceia de Natal sem prejudicar minha dieta?", answer: "Sim, com moderação. Prefira vinho seco ou espumante brut, limite a quantidade e alterne com água. Evite drinks açucarados." },
       { question: "Devo contar calorias na ceia de Natal?", answer: "Não é necessário. Foque na qualidade das escolhas, coma devagar, ouça seu corpo e pare quando estiver satisfeito." },
       { question: "Como evitar comer demais na ceia de Natal?", answer: "Sirva-se em porções menores inicialmente, mastigue devagar, converse entre as garfadas e espere 15 minutos antes de repetir." },
+      { question: "Como fazer uma ceia de Natal saudável?", answer: "Sem tirar os pratos de que você gosta: tenha uma ou duas opções de salada e legumes, uma carne assada como prato principal e deixe frituras, molhos cremosos e sobremesas como escolha, não como base. Uma ceia equilibrada é a que tem opções leves ao lado das tradicionais." },
+      { question: "O que comer na ceia de Natal para não engordar?", answer: "Comece o prato pela salada e pelos legumes, depois a proteína (peru, chester, lombo, peixe) e então os acompanhamentos. Escolha as sobremesas que você realmente quer, em vez de provar todas. Uma noite não engorda ninguém; o que pesa é a semana inteira de excesso." },
+      { question: "Ceia de Natal light ou low carb vale a pena?", answer: "Só se for algo que você e a família gostem de comer. Trocar tudo por versões light costuma deixar a ceia sem graça e levar ao exagero depois. Funciona melhor manter os pratos tradicionais e equilibrar as porções." },
+      { question: "Dá para ter uma ceia saudável, simples e barata?", answer: "Dá. Menos pratos, legumes e frutas da estação e uma carne assada no lugar de várias opções caras resolvem. Ceia simples também ajuda a não exagerar, porque há menos coisas para provar." },
+      { question: "Sobremesa fit no Natal ajuda a emagrecer?", answer: "Ajuda pouco se for consumida em quantidade maior por ser 'fit'. Uma porção da sobremesa tradicional que você gosta, saboreada com calma, muitas vezes satisfaz mais do que várias porções da versão light." },
     ],
     content: `
 <h2>A Mentira que Você Conta a Si Mesmo Todo Dezembro</h2>

@@ -387,3 +387,7 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 
 ### como-nao-perder-o-shape-no-natal (06/10)
 - Prints "como não engordar no natal": +4 FAQs (como não engordar, 10 kg até o Natal, 4 kg em um mês, o que mata a fome). Fora: gestação/gravidez, barriga, "o que jantar à noite" (cardápio).
+
+### como-aproveitar-ceia-sem-exagerar (06/10)
+- Prints "ceia de natal saudável": +5 FAQs (como fazer, o que comer sem engordar, light/low carb, simples e barata, sobremesa fit). Sem cardápio nem receita (regra de não prescrever nutrição).
+- Pauta: "receitas de natal saudáveis", "lista de ceia para 20 pessoas" (fora do escopo). "Opções de ceia antes de dormir" é outro sentido de ceia.
