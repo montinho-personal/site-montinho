@@ -368,3 +368,8 @@ Superávit calórico, Relação cintura-altura, Cafeína. Fora/pauta: "treino 3x
 semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 (produto homônimo), "relação cintura-quadril" (outra ferramenta),
 "quanto tempo diminui a barriga", "o que comer antes de treinar de manhã".
+
+### habitos-que-sabotam-seu-emagrecimento (06/10)
+- Prints "hábitos que atrapalham o emagrecimento": +6 FAQs (o que mais atrapalha / maior vilão, idade mais difícil — Pontzer 2021, sinais de metabolismo lento, hormônio, 10 kg em 7 dias, perda de peso preocupante → médico).
+- Fora: frases, artigo científico, "5 alimentos que não deixam emagrecer", tabela de alimentos e o que comer (nutrição), doenças que causam perda de peso (saúde).
+- Pendente aprovação: metaDescription termina em "..." (mostrar ATUAL/PROPOSTA/MOTIVO).
