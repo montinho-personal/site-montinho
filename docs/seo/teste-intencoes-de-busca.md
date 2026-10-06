@@ -344,3 +344,24 @@ costas (description nova aprovada), bíceps, tríceps, abdômen, quadríceps.
   de artigo novo, avaliar virar seção "treino rápido (10–15 min)" em
   `treino-de-abdomen-em-casa`. Pedir prints de "treino de abdômen rápido".
 - Pauta: "treino de costas completo pdf" (isca, fora da página de grupo).
+
+## Registro de prints por ferramenta (conferido em 06/10/2026)
+
+Antes de pedir prints, conferir esta lista E o histórico do git
+(`git log -i --grep="intenç\|prints\|buscas"`). Em 06/10 uma lista de
+"pendentes" saiu errada porque várias páginas não estavam registradas aqui.
+
+Com prints aplicados: Beliscômetro (02/10, #658), Simulador do Fim de Semana
+(24/09, #487), Whey (03/10, #670), Simulador de Ganho de Massa (#711),
+Muay thai (#712), Calorias por atividade, Potencial natural (#714), Quanto
+tempo para ter shape (#715), Polichinelos (#716, título em #776), Teste de
+mobilidade (#717), Monte seu Cardápio (#718), Massa magra GLP-1 (#719),
+Artes marciais (#720), Classic Physique (#721), Conversor U-100 (#722), Meu
+Shape 12 semanas (#723), Mata a Vontade (#724), Caminhada (#725),
+Musculação (#726), Passos (#731), Percentual de gordura (#732), Teste de
+Cooper (#733), IMC (#737), Descanso entre séries (#739), Substituidor
+(#743–#746), Comparador (#764–#766), Corrida, Bicicleta, Meta de peso,
+Consultoria online (#608), São Silvestre (#607), HYROX (#606).
+
+Ainda sem prints: Treino Para Minha Rotina ("treino 3/4 vezes por
+semana"), Superávit calórico, Relação cintura-altura, Cafeína.
