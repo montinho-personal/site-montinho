@@ -70760,7 +70760,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     excerpt: "Voltar para a academia depois de um período longo parado não é recomeçar do zero — é recomeçar com experiência. Saiba como fazer isso da forma certa.",
     category: "Treinamento",
     date: "2026-07-01",
-    updatedAt: "2026-07-01",
+    updatedAt: "2026-10-06",
     readTime: "7 min",
     author: "Montinho",
     tags: ["voltar academia", "recomeçar treino", "treino depois de parado", "academia janeiro", "retomar exercícios"],
@@ -70770,6 +70770,13 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
       { question: "Devo treinar todo dia quando voltar depois de parado?", answer: "Não. Comece com três vezes por semana para permitir recuperação adequada. O corpo destreinado precisa de mais tempo para se recuperar entre sessões." },
       { question: "É normal ficar muito dolorido ao voltar para a academia?", answer: "Sim. A DMIT (dor muscular de início tardio) é intensa nas primeiras semanas de retorno. Diminui rapidamente com a adaptação. Dor muscular é diferente de dor articular — a segunda exige avaliação." },
       { question: "Preciso de avaliação antes de voltar a treinar depois de longo período parado?", answer: "É recomendável. Uma avaliação física identifica limitações, perdas de mobilidade e desequilíbrios musculares que se desenvolveram no período de inatividade, evitando lesões ao retornar." },
+      { question: "Como voltar a treinar depois de uma semana parado?", answer: "Pode voltar ao treino normal, talvez com uma ou duas séries a menos no primeiro dia. Uma semana não é tempo suficiente para perder força nem massa muscular." },
+      { question: "Como voltar a treinar depois de 1 mês parado?", answer: "Comece com cargas mais leves, por volta de metade a dois terços do que você usava, e menos séries. Em duas ou três semanas subindo aos poucos, a maioria das pessoas volta ao nível de antes." },
+      { question: "O que acontece se eu ficar 3 meses sem treinar?", answer: "Força e massa muscular diminuem, e o condicionamento cai mais rápido do que a força. A boa notícia é que quem já treinou recupera mais rápido do que levou para construir. Volte como se estivesse em uma fase de adaptação: cargas leves, foco na técnica e progressão semana a semana." },
+      { question: "Como voltar a treinar depois de anos parado?", answer: "Trate como um recomeço: duas ou três sessões por semana, treinos curtos, exercícios básicos e cargas que permitam a técnica perfeita. Se tiver dor, doença ou estiver há muito tempo sedentário, vale uma avaliação médica antes." },
+      { question: "Quanto tempo parado para perder músculo?", answer: "Em quem já treinava, a força e a massa muscular costumam se manter por duas a três semanas sem treino. A partir daí as perdas começam, devagar, e ficam mais claras depois de alguns meses." },
+      { question: "Memória muscular: em quanto tempo o músculo volta?", answer: "Bem mais rápido do que levou para ganhar. Quem já treinou recupera força e tamanho em semanas a poucos meses, dependendo de quanto tempo ficou parado, porque o corpo mantém adaptações do treino anterior." },
+      { question: "Como ter ânimo para voltar a treinar?", answer: "Não espere o ânimo vir antes: marque dia e horário na agenda e comece com treinos curtos, que são fáceis de cumprir. A motivação costuma aparecer depois das primeiras semanas, quando você começa a sentir diferença." },
     ],
     content: `<p>Meses parado. Foi lesão, viagem, projeto no trabalho, mudança de cidade — a vida, enfim. E agora que você decidiu voltar, o mercado te empurra o pior dos venenos: a vergonha. "Você perdeu tudo." "Vai ter que começar do zero." Mentira. E é essa mentira que faz metade das pessoas desistirem antes do primeiro treino.</p>
 
