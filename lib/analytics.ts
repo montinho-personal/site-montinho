@@ -647,6 +647,12 @@ export type AnalyticsEvent =
   | "routine_ask_click"
   | "routine_service_click"
   | "routine_whatsapp_click"
+  | "routine_saved_return"
+  | "routine_refine"
+  | "routine_why_click"
+  | "routine_plan_b_use"
+  | "routine_week_adjust"
+  | "routine_share"
 
   // Revisão Gratuita de Execução
   | "execution_review_view"
@@ -750,6 +756,7 @@ export type AnalyticsEvent =
   | "substitution_share"
   | "substitution_whatsapp_cta"
   | "ask_compare_click"
+  | "ask_routine_click"
   | "exercise_compare_view"
   | "exercise_compare_search"
   | "exercise_compare_select_a"

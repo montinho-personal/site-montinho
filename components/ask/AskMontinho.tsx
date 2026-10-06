@@ -21,6 +21,7 @@ interface Msg {
   noAnswer?: boolean;
   feedback?: "up" | "down";
   comparar?: { titulo: string; href: string; par: string };
+  rotina?: { titulo: string; href: string };
 }
 interface PageContext { slug: string; title?: string; category?: string }
 
@@ -180,6 +181,7 @@ export default function AskMontinho({
           topics: data.topics,
           noAnswer: data.noAnswer,
           comparar: data.comparar,
+          rotina: data.rotina,
         };
         setMessages((prev) => [...prev, msg]);
         trackEvent(data.noAnswer ? "ask_montinho_no_answer" : "ask_montinho_answer", {
@@ -394,6 +396,17 @@ export default function AskMontinho({
                 >
                   <span>{m.comparar.titulo}: o que é igual, o que muda e qual faz sentido para você</span>
                   <span className="shrink-0 font-semibold" style={{ color: "#BA9E50" }}>Comparar lado a lado →</span>
+                </Link>
+              )}
+
+              {m.rotina && (
+                <Link
+                  href={m.rotina.href}
+                  onClick={() => trackEvent("ask_routine_click", { com_dias: m.rotina!.href.includes("dias=") })}
+                  className="mt-3 flex items-center justify-between gap-3 border border-[#BA9E50]/50 px-4 py-3 min-h-[48px] text-sm text-white hover:border-[#BA9E50]"
+                >
+                  <span>Os dias e o tempo que você realmente tem decidem a divisão</span>
+                  <span className="shrink-0 font-semibold" style={{ color: "#BA9E50" }}>{m.rotina.titulo} →</span>
                 </Link>
               )}
 

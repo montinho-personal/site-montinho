@@ -3,8 +3,9 @@
  *   npx tsx scripts/rotina-test.ts
  * Sai com código 1 se algo falhar.
  */
-import { computeRotina, validarDias, type RotinaAnswers } from "../lib/rotina/engine";
+import { computeRotina, validarDias, buildFallbackPlan, semanaCurta, type RotinaAnswers } from "../lib/rotina/engine";
 import { blogPosts } from "../lib/blog";
+import { detectaRotina } from "../lib/rotina/ask";
 import { EVIDENCE } from "../lib/rotina/evidence";
 
 let falhas = 0;
@@ -71,6 +72,68 @@ check("6 dias avançado → PPL 2x", S6.structureId === "ppl6");
 // 4 dias consecutivos → UL, não FB (mesmo preferindo FB)
 const C4 = computeRotina(com({ dias: 4, distribuicao: "consecutivos", preferencia: "fullbody" }));
 check("4 dias consecutivos evitam FB em dias seguidos", C4.structureId === "ul4");
+
+console.log("\nV2 — DIAS REAIS, CALENDÁRIO, RANKING");
+const seg = (...d: number[]) => d; // 0=SEG
+const v1 = computeRotina(com({ dias: 4, diasSelecionados: seg(0, 1, 3, 4), experiencia: "intermediario", prioridades: ["pernas"] }));
+check("4 dias SEG/TER/QUI/SEX intermediário → Upper/Lower competitivo", v1.structureId === "ul4", v1.structureId);
+check("a semana usa os dias reais selecionados", v1.semana.filter((d) => d.sessao).map((d) => d.dia).join(",") === "SEG,TER,QUI,SEX");
+check("UL em dias seguidos: superior e inferior alternam", v1.semana[0].sessao?.startsWith("Superior") === true && v1.semana[1].sessao?.startsWith("Inferior") === true);
+check("prioridade em pernas aparece no resultado", !!v1.notaPrioridade && /2 vezes/.test(v1.notaPrioridade));
+check("mostra pelo menos uma alternativa com motivo", v1.ranking.length >= 2 && v1.ranking[1].contras.length > 0);
+check("rótulos sem percentual", v1.ranking.every((r) => ["Melhor encaixe", "Boa alternativa", "Possível, mas menos conveniente"].includes(r.rotulo)));
+
+const ini3 = computeRotina(com({ dias: 3, diasSelecionados: seg(0, 2, 4), experiencia: "iniciante", tempo: "30a45" }));
+check("3 dias espaçados + iniciante → Full Body", ini3.structureId === "fb3", ini3.structureId);
+
+const cons4 = computeRotina(com({ dias: 4, diasSelecionados: seg(0, 1, 2, 3) }));
+check("SEG–QUI seguidos: escolhida não repete região em dias seguidos", cons4.structureId === "ul4", cons4.structureId);
+const fbCons = cons4.ranking.find((r) => r.id === "fb4");
+check("SEG–QUI: full body 4x, se aparecer, explica a recuperação", !fbCons || fbCons.contras.some((c) => /seguidos/.test(c)));
+
+const dois = computeRotina(com({ dias: 2, experiencia: "avancado" }));
+check("2 dias nunca recebe PPL 6x", dois.ranking.every((r) => !r.id.startsWith("ppl")) && dois.sessoesPorSemana === 2);
+
+const ini6 = computeRotina(com({ dias: 6, diasSelecionados: seg(0, 1, 2, 3, 4, 5), experiencia: "iniciante" }));
+check("iniciante com 6 dias não recebe estrutura complexa de 6", ini6.sessoesPorSemana === 3 && ini6.structureId === "fb3", ini6.structureId);
+check("iniciante com 6 dias: a sobra vira margem", ini6.margem === 3);
+
+const cinco = computeRotina(com({ dias: 5, experiencia: "intermediario" }));
+check("5 dias intermediário compara o híbrido UL + extra com o PPL", ["ul5", "pplul5"].every((id) => cinco.ranking.some((r) => r.id === id)), cinco.ranking.map((r) => r.id).join());
+const cincoBase = computeRotina(com({ dias: 5, experiencia: "base" }));
+check("5 dias, ainda construindo base: não recebe PPL", !cincoBase.structureId.startsWith("ppl"), cincoBase.structureId);
+
+const variavel = computeRotina(com({ dias: 4, agendaVariavel: true }));
+check("agenda que muda → modo sequência", variavel.modo === "sequencia" && variavel.sequencia.length === 4);
+check("agenda que muda → divisão de sequência simples", variavel.structureId !== "abcd4" && variavel.structureId !== "pplul5");
+
+const curto = computeRotina(com({ dias: 3, tempo: "ate30", experiencia: "intermediario", diasSelecionados: seg(0, 2, 4) }));
+check("30 min: escolhida cabe no tempo ou explica o ajuste", curto.cabe.ok || /reduzir/.test(curto.cabe.texto));
+check("30 min: nota de dose mínima", !!curto.notaTempo);
+check("tempo semanal calculado", /por semana/.test(v1.tempoSemanal));
+
+console.log("\nPLANO B — perdi um treino");
+const pb = buildFallbackPlan(v1, 1); // perdeu TER
+const pbDias = pb.semana.filter((d) => d.sessao && d.sessao !== "perdeu");
+check("perder TER não zera a semana", pbDias.length >= 3);
+check("continua a sequência: QUI vira o treino perdido", pb.semana[3].sessao === v1.semana[1].sessao, String(pb.semana[3].sessao));
+check("não duplica treino no mesmo dia nem repete sessão", new Set(pbDias.map((d) => d.sessao)).size === pbDias.length);
+check("a sessão que sobra vai para a semana seguinte", /semana que vem/.test(pb.texto));
+const pbMargem = buildFallbackPlan(v1, 1, [5]);
+check("com dia de margem, a semana fecha completa", pbMargem.semana.filter((d) => d.sessao && d.sessao !== "perdeu").length === 4);
+check("semana curta: 4x vira 3 sem trocar de programa", semanaCurta(v1, 3).length === 3);
+
+console.log("\nPERGUNTE AO MONTINHO");
+const casosAsk: [string, string | null][] = [
+  ["treino 4x por semana, como dividir?", "/treino-para-minha-rotina?dias=4"],
+  ["PPL ou Upper Lower?", "/treino-para-minha-rotina"],
+  ["como dividir treino 3 dias", "/treino-para-minha-rotina?dias=3"],
+  ["perdi um treino, e agora?", "/treino-para-minha-rotina"],
+  ["quantas vezes por semana devo treinar?", "/treino-para-minha-rotina"],
+  ["tomo creatina 5 dias por semana?", null],
+  ["whey ou creatina?", null],
+];
+for (const [q, esp] of casosAsk) { const r = detectaRotina(q); check(`Pergunte: "${q}"`, (r?.href ?? null) === esp, String(r?.href)); }
 
 console.log("\nDETERMINISMO");
 const x1 = JSON.stringify(computeRotina(com({ dias: 4, barreira: "motivacao" })));
