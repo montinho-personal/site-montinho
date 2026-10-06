@@ -400,3 +400,6 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 
 ### como-manter-massa-muscular-nas-ferias-verao (06/10)
 - Prints "perder massa muscular nas férias": +4 FAQs (1 semana, 15/20 dias, recuperar / memória muscular, preciso treinar nas férias). Um dos prints era de outra busca ("banco do povo") e foi ignorado.
+
+### o-que-fazer-entre-natal-e-ano-novo (06/10)
+- Prints "treino entre natal e ano novo": +4 FAQs (treino curto em casa, treinar de ressaca, método 12-3-30, treinar pouco perde o resultado). Fora: frase para treinar no frio, meta de treinos por ano.
