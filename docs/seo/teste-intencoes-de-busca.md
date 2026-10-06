@@ -391,3 +391,6 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 ### como-aproveitar-ceia-sem-exagerar (06/10)
 - Prints "ceia de natal saudável": +5 FAQs (como fazer, o que comer sem engordar, light/low carb, simples e barata, sobremesa fit). Sem cardápio nem receita (regra de não prescrever nutrição).
 - Pauta: "receitas de natal saudáveis", "lista de ceia para 20 pessoas" (fora do escopo). "Opções de ceia antes de dormir" é outro sentido de ceia.
+
+### como-manter-dieta-festas-fim-de-ano (06/10)
+- Prints: +5 FAQs (pular refeições antes da festa, álcool, quantos kg até o Natal, desinchar 3 kg em 3 dias, voltar à dieta depois). Fora: pdf/livro, "o que comer na ceia à noite" e "que comida servir" (cardápio).
