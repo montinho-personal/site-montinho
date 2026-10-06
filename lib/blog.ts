@@ -75692,7 +75692,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Férias não precisam significar acúmulo de gordura. Veja como se manter ativo e comer bem mesmo longe da rotina e da academia.",
     category: "Emagrecimento",
     date: "2025-12-15",
-    updatedAt: "2026-07-22",
+    updatedAt: "2026-10-06",
     readTime: "7 min",
     author: "Montinho",
     tags: ["férias de verão sem engordar", "manter peso férias", "treino nas férias", "alimentação saudável viagem", "emagrecimento verão"],
@@ -75702,6 +75702,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "O que comer nas férias para não engordar?", answer: "Priorize proteínas em todas as refeições, controle o tamanho das porções nos restaurantes, limite o álcool e os petiscos calóricos, e mantenha a hidratação com água." },
       { question: "Álcool faz engordar nas férias?", answer: "O álcool tem calorias próprias e reduz a inibição alimentar, levando a escolhas piores. Beber com moderação — definindo um limite antes de cada evento — é a estratégia mais eficiente." },
       { question: "Posso comer na praia e manter o peso?", answer: "Sim. Faça escolhas melhores nos quiosques: prefira proteínas grelhadas, frutas, água de coco no lugar de refrigerantes, e controle os fritos e petiscos calóricos." },
+      { question: "Como não engordar em viagem com café da manhã e buffet incluídos?", answer: "Monte um prato só, sem repetir, começando por proteína, frutas e saladas, e escolha um ou dois itens especiais em vez de provar tudo. Buffet incluso na diária não precisa ser aproveitado até o fim em todas as refeições." },
+      { question: "É possível ganhar 2 kg em 1 semana de férias?", answer: "Na balança, sim, mas quase tudo é água e comida no intestino, por causa de mais sal, carboidrato e álcool. Para ganhar 2 kg de gordura em uma semana seria preciso comer muito acima do gasto todos os dias. Voltando à rotina, a maior parte desse peso sai em poucos dias." },
+      { question: "Como desinchar depois das férias?", answer: "Volte às refeições e aos horários de sempre, beba água, reduza ultraprocessados e álcool e retome o treino. O inchaço das férias costuma baixar em alguns dias, sem jejum nem dieta restritiva." },
+      { question: "Como me movimentar nas férias sem treinar?", answer: "Prefira passeios a pé ou de bicicleta, use escadas e faça atividades como nadar ou caminhar na praia. Duas ou três sessões curtas de treino com o peso do corpo na semana já ajudam a manter a força e a rotina." },
     ],
     content: `
 <h2>O Falso Dilema: Aproveitar ou Manter o Corpo</h2>

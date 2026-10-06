@@ -394,3 +394,6 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 
 ### como-manter-dieta-festas-fim-de-ano (06/10)
 - Prints: +5 FAQs (pular refeições antes da festa, álcool, quantos kg até o Natal, desinchar 3 kg em 3 dias, voltar à dieta depois). Fora: pdf/livro, "o que comer na ceia à noite" e "que comida servir" (cardápio).
+
+### como-evitar-ganhar-peso-nas-ferias (06/10)
+- Prints "como não engordar nas férias": +4 FAQs (buffet/café incluso, 2 kg em 1 semana, desinchar depois das férias, se movimentar sem treinar). Já cobria o que comer, álcool, treino sem academia.
