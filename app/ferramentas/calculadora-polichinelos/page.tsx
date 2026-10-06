@@ -53,9 +53,9 @@ import {
 const CAMINHO = "/ferramentas/calculadora-polichinelos";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Polichinelos: Calorias, Tempo e Quantidade",
+  title: { absolute: "Polichinelo Queima Quantas Calorias? Calculadora | Montinho" },
   description:
-    "Calcule quantas calorias seus polichinelos gastam, quanto tempo levam e quantos equivalem a uma caminhada — com o seu peso e o seu ritmo.",
+    "Veja quantas calorias 100, 200 ou 500 polichinelos queimam com o seu peso, quantos minutos isso leva e quantos fazer por dia ou para chegar a 1 kg.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
     title: "Calculadora de Polichinelos | Montinho Personal Trainer",
