@@ -3,7 +3,8 @@
  */
 import { readFileSync } from "fs";
 import { EDITORIAL, POPULARES, chavePar, compareGoalSuitability, compareStructure, diferencas, emComum, lado, mencionaDor, normalizePair, relacao, respostaRapida, buscaComparavel, type Lado } from "../lib/treino/comparador";
-import { ARTIGOS_COM_CARTAO, HREF_POR_ARTIGO } from "../lib/ferramentas/relacionadas";
+import { HREF_POR_ARTIGO } from "../lib/ferramentas/relacionadas";
+import { ARTIGOS_COM_COMPARADOR } from "../lib/treino/comparador";
 
 let falhas = 0;
 const check = (n: string, ok: boolean, info = "") => { console.log(`${ok ? "✓" : "✗"} ${n}${ok ? "" : " — " + info}`); if (!ok) falhas++; };
@@ -48,7 +49,7 @@ check("canonical sem parâmetros", /canonical: `\$\{SITE_URL\}\$\{CAMINHO\}`/.te
 check("não existem rotas /comparar/* geradas", !require("fs").existsSync("app/comparar"));
 const comp = readFileSync("components/comparador/Comparador.tsx", "utf8");
 check("FECHAMENTO_COMPARACAO antes do WhatsApp", comp.indexOf("FECHAMENTO_COMPARACAO.titulo") > 0 && comp.indexOf("FECHAMENTO_COMPARACAO.titulo") < comp.indexOf("getWhatsAppUrl(`"));
-check("artigos de comparação recebem o cartão pré-preenchido", ["agachamento-vs-leg-press", "supino-reto-vs-supino-inclinado", "barra-fixa-vs-puxada"].every((s) => ARTIGOS_COM_CARTAO[s] === "comparador" && HREF_POR_ARTIGO[s]?.href.includes("?a=")));
+check("artigos de comparação levam o comparador embutido", Object.entries(ARTIGOS_COM_COMPARADOR).every(([, [a, b]]) => lado(a) && lado(b) && a !== b));
 for (const [s, v] of Object.entries(HREF_POR_ARTIGO).filter(([, v]) => v.href.includes("comparador"))) {
   const q = new URLSearchParams(v.href.split("?")[1]);
   if (!lado(q.get("a")!) || !lado(q.get("b")!)) check(`link do artigo ${s} aponta para exercício existente`, false, v.href);

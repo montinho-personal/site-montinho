@@ -96,19 +96,13 @@ export const CARTOES: Record<FerramentaId, CartaoFerramenta> = {
 };
 
 export const ARTIGOS_COM_CARTAO: Record<string, FerramentaId> = {
-  "panturrilha-em-pe-vs-sentada": "comparador",
-  "crossover-vs-crucifixo": "comparador",
-  "rosca-direta-vs-rosca-martelo": "comparador",
-  "supino-reto-vs-supino-inclinado": "comparador",
   "como-fazer-cadeira-extensora": "substituidor",
   "como-fazer-cadeira-flexora": "substituidor",
   "como-fazer-hip-thrust": "substituidor",
   "como-fazer-abducao-quadril-maquina": "substituidor",
   "como-fazer-afundo-passadas": "substituidor",
   "como-fazer-stiff": "substituidor",
-  "stiff-vs-levantamento-terra": "comparador",
   "como-fazer-pulldown-puxada-frontal": "substituidor",
-  "barra-fixa-vs-puxada": "comparador",
   "como-fazer-barra-fixa": "substituidor",
   "treino-de-costas-em-casa": "substituidor",
   "treino-de-gluteos-em-casa": "substituidor",
@@ -125,9 +119,6 @@ export const ARTIGOS_COM_CARTAO: Record<string, FerramentaId> = {
   "exercicios-para-gluteo-medio": "mapa",
   "treino-de-braco-em-casa": "mapa",
   "treino-de-abdomen-em-casa": "mapa",
-  "agachamento-vs-leg-press": "comparador",
-  "hack-vs-leg-press": "comparador",
-  "puxada-vs-remada": "comparador",
   "agachamento-livre-ou-maquina-smith": "substituidor",
   "como-fazer-remada-baixa": "substituidor",
   "treino-de-pernas-em-casa": "substituidor",
@@ -189,15 +180,6 @@ export const ARTIGOS_COM_CARTAO: Record<string, FerramentaId> = {
  * exercício já escolhido (ou a página editorial, quando existe).
  */
 export const HREF_POR_ARTIGO: Record<string, { href: string; pergunta?: string }> = {
-  "stiff-vs-levantamento-terra": { href: "/ferramentas/comparador-de-exercicios?a=stiff&b=levantamento-terra", pergunta: "Stiff ou terra? Compare lado a lado" },
-  "puxada-vs-remada": { href: "/ferramentas/comparador-de-exercicios?a=puxada-frente&b=remada-baixa", pergunta: "Puxada ou remada? Compare lado a lado" },
-  "panturrilha-em-pe-vs-sentada": { href: "/ferramentas/comparador-de-exercicios?a=panturrilha-em-pe&b=panturrilha-sentado", pergunta: "Panturrilha em pé ou sentada? Compare lado a lado" },
-  "crossover-vs-crucifixo": { href: "/ferramentas/comparador-de-exercicios?a=cross-over&b=crucifixo-maquina", pergunta: "Crossover ou crucifixo? Compare lado a lado" },
-  "rosca-direta-vs-rosca-martelo": { href: "/ferramentas/comparador-de-exercicios?a=rosca-direta&b=rosca-martelo", pergunta: "Rosca direta ou martelo? Compare lado a lado" },
-  "supino-reto-vs-supino-inclinado": { href: "/ferramentas/comparador-de-exercicios?a=supino-reto-barra&b=supino-inclinado-barra", pergunta: "Supino reto ou inclinado? Compare lado a lado" },
-  "barra-fixa-vs-puxada": { href: "/ferramentas/comparador-de-exercicios?a=barra-fixa&b=puxada-frente", pergunta: "Barra fixa ou puxada? Compare lado a lado" },
-  "hack-vs-leg-press": { href: "/ferramentas/comparador-de-exercicios?a=agachamento-hack&b=leg-press", pergunta: "Hack ou leg press? Compare lado a lado" },
-  "agachamento-vs-leg-press": { href: "/ferramentas/comparador-de-exercicios?a=agachamento-livre&b=leg-press", pergunta: "Agachamento ou leg press? Compare lado a lado" },
   "treino-de-peito-hipertrofia": { href: "/exercicios/peito", pergunta: "Quais exercícios treinam o peito?" },
   "treino-de-peito-em-casa": { href: "/exercicios/peito?equipamento=casa", pergunta: "Quais exercícios de peito dá para fazer em casa?" },
   "treino-de-ombros-hipertrofia": { href: "/exercicios/ombros", pergunta: "Quais exercícios para cada parte do ombro?" },

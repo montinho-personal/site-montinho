@@ -50,23 +50,11 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   // chega com "quem ganhou / que horas / quanto pesa" e sai com um fato, não com
   // uma conta. O único link de ferramenta que cabe (Potencial Natural, no
   // artigo de peso e altura) já está no texto, como contexto, não como decisão.
-  "rosca-direta-vs-rosca-martelo":
-    "Comparativo de exercício: a decisão do leitor é qual pegada usar, e a resposta é anatômica, não numérica. Nenhuma ferramenta do site compara exercícios.",
 
-  "hack-vs-leg-press":
-    "Mesma razão do agachamento vs leg press: a pergunta é onde a carga entra e como o quadril se move, e isso não vira conta. A de 1RM aqui seria a disponível, não a certa.",
 
-  "puxada-vs-remada":
-    "Mesma razão dos outros comparativos de exercício: a decisão do leitor é qual vetor de puxada colocar no treino, e nenhuma ferramenta do site compara exercícios. A de 1RM responde a carga, que é outra pergunta.",
 
-  "stiff-vs-levantamento-terra":
-    "A dúvida é qual exercício serve a qual objetivo, e a resposta é técnica, não numérica. Colocar a calculadora de 1RM aqui seria empurrar a ferramenta disponível — e ainda por cima num artigo cujo recado central é usar MENOS carga no stiff.",
 
-  "supino-reto-vs-supino-inclinado":
-    "A dúvida do leitor é qual exercício escolher e em que ângulo, não quanto peso usar. A calculadora de 1RM responde a segunda pergunta, e o registro dela é explícito sobre entrar só onde a pergunta é a carga — os artigos de técnica de supino já têm o link contextual.",
 
-  "agachamento-vs-leg-press":
-    "Mesma razão do par de supino: a decisão é qual exercício faz sentido para o corpo e a limitação de quem lê. Nenhuma ferramenta do site compara exercícios, e a de 1RM aqui seria a disponível, não a certa.",
 
   "personal-trainer-a-domicilio-santana-de-parnaiba":
     "Página de serviço regional. A decisão do leitor é contratar ou não; o que ele precisa é saber como funciona e o que verificar, não um número.",
@@ -106,10 +94,6 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
 
   "por-quanto-tempo-tomar-mounjaro":
     "A pergunta que sobra é 'já posso parar?', e a resposta são três condições — peso estável, treino de força há dois meses, comida que se sustenta — nenhuma delas um número que se calcule. Quem quiser a conta de proteína encontra a calculadora no artigo irmão, sobre parar de tomar; repeti-la aqui responderia uma pergunta que este leitor ainda não fez.",
-  "panturrilha-em-pe-vs-sentada":
-    "Comparação anatômica: a posição do joelho decide se trabalha gastrocnêmio ou sóleo. O leitor sai com uma decisão de montagem de treino, não com um número para calcular.",
-  "barra-fixa-vs-puxada":
-    "Comparação de exercício e de momento do aluno. A escolha depende de conseguir ou não fazer barra fixa hoje, que é observação direta, não cálculo.",
   "resultado-mr-olympia-brasil-2026":
     "Página de resultado de evento: a pessoa chega com 'quem ganhou' e sai com um fato. Mesma decisão do cluster Mr. Olympia 2026.",
   "resultado-hyrox-sao-paulo-2026":

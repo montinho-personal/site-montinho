@@ -306,6 +306,7 @@ export const EDITORIAL: Record<string, Editorial> = Object.fromEntries([
       "Pode trocar mesa flexora por stiff? Dá para manter o trabalho de posterior, mas muda a função: você perde a flexão de joelho e ganha glúteo e lombar trabalhando junto.",
       "Qual primeiro? O mais comum é o stiff antes, por ser mais técnico e permitir mais carga, e a flexora depois. Mas a ordem pode inverter se a prioridade for a flexora.",
     ],
+    artigo: "stiff-vs-mesa-flexora",
   }),
   E("cadeira-flexora", "mesa-flexora", {
     resposta: "Muito semelhantes: os dois dobram o joelho e isolam os posteriores. Na cadeira você fica sentado, com o quadril dobrado, o que deixa os posteriores mais alongados; na mesa você fica deitado de bruços. Escolha pela que encaixa melhor no seu corpo e na sua academia, ou alterne.",
@@ -391,3 +392,20 @@ export const POPULARES: [string, string][] = [
 ];
 
 export const COMPARAVEIS = EXERCICIOS.filter((e) => PERFIL[e.id]).length;
+
+/**
+ * Artigos que levam o comparador embutido, já preenchido com o par, logo
+ * depois da primeira seção. Registro de cobertura (scripts/cobertura-test.ts).
+ */
+export const ARTIGOS_COM_COMPARADOR: Record<string, [string, string]> = {
+  "agachamento-vs-leg-press": ["agachamento-livre", "leg-press"],
+  "supino-reto-vs-supino-inclinado": ["supino-reto-barra", "supino-inclinado-barra"],
+  "barra-fixa-vs-puxada": ["barra-fixa", "puxada-frente"],
+  "rosca-direta-vs-rosca-martelo": ["rosca-direta", "rosca-martelo"],
+  "hack-vs-leg-press": ["agachamento-hack", "leg-press"],
+  "stiff-vs-mesa-flexora": ["stiff", "mesa-flexora"],
+  "stiff-vs-levantamento-terra": ["stiff", "levantamento-terra"],
+  "puxada-vs-remada": ["puxada-frente", "remada-baixa"],
+  "crossover-vs-crucifixo": ["cross-over", "crucifixo-maquina"],
+  "panturrilha-em-pe-vs-sentada": ["panturrilha-em-pe", "panturrilha-sentado"],
+};
