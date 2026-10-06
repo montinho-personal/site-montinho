@@ -409,3 +409,7 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 
 ### como-voltar-rotina-depois-do-carnaval (06/10)
 - Prints "voltar à rotina depois do carnaval": +3 FAQs (como voltar à rotina, retomar treinos após tempo parado, treinar ajuda a voltar ao ritmo). Fora: "o que significa voltando a rotina", "por que a Quaresma acontece depois do Carnaval".
+
+### como-voltar-academia-depois-de-parado (06/10)
+- Prints "como voltar a treinar depois de parado" aplicados NESTE artigo (não em como-recuperar-ritmo-dos-treinos): é ele que já recebe a busca (237 impressões, posição 7,7, contra 8 impressões do outro). Evita canibalização.
+- +7 FAQs (1 semana, 1 mês, 3 meses, anos, quanto tempo para perder músculo, memória muscular, ânimo). Fora: frases, "tem crase", vídeos.
