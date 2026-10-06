@@ -397,3 +397,6 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 
 ### como-evitar-ganhar-peso-nas-ferias (06/10)
 - Prints "como não engordar nas férias": +4 FAQs (buffet/café incluso, 2 kg em 1 semana, desinchar depois das férias, se movimentar sem treinar). Já cobria o que comer, álcool, treino sem academia.
+
+### como-manter-massa-muscular-nas-ferias-verao (06/10)
+- Prints "perder massa muscular nas férias": +4 FAQs (1 semana, 15/20 dias, recuperar / memória muscular, preciso treinar nas férias). Um dos prints era de outra busca ("banco do povo") e foi ignorado.

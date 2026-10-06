@@ -75804,7 +75804,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Férias de verão não precisam desfazer meses de ganho muscular. Com as estratégias certas, você preserva o que construiu mesmo longe da academia.",
     category: "Treinamento",
     date: "2025-12-18",
-    updatedAt: "2025-12-18",
+    updatedAt: "2026-10-06",
     readTime: "7 min",
     author: "Montinho",
     tags: ["manter massa muscular férias", "treino férias verão", "preservar músculo viagem", "hipertrofia férias", "personal trainer alphaville"],
@@ -75814,6 +75814,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Treino com peso corporal mantém massa muscular?", answer: "Sim, desde que o estímulo seja suficientemente intenso. Progressões de flexão, agachamento pistol, fundos e variações com carga adicionada (mochila, faixas) são eficazes para manutenção." },
       { question: "Quanto de proteína preciso comer nas férias para manter músculo?", answer: "O mínimo para manutenção é de 1,6 g por kg de peso corporal por dia. Em férias com menos treino, manter esse patamar proteico é o seguro mais eficiente contra perda muscular." },
       { question: "Natação ajuda a manter massa muscular nas férias?", answer: "Natação é um excelente exercício cardiovascular e ativa muitos grupos musculares, mas não substitui o treino de força para manutenção de massa. Use como complemento, não como substituto." },
+      { question: "É possível perder massa muscular em 1 semana sem treinar?", answer: "Não de forma relevante. Em uma semana parado, o músculo pode parecer menor porque guarda menos glicogênio e água, mas isso não é perda de músculo e volta nos primeiros treinos." },
+      { question: "O que acontece se eu ficar 15 ou 20 dias sem malhar?", answer: "Até umas duas a três semanas, a força e a massa muscular costumam se manter quase iguais em quem já treinava. Depois disso, as perdas começam a aparecer, devagar. Manter boa proteína e se movimentar no período ajuda a segurar o resultado." },
+      { question: "Quanto tempo demora para recuperar a massa muscular perdida?", answer: "Menos do que levou para construir. Quem já treinou recupera força e músculo mais rápido ao voltar, efeito conhecido como memória muscular. Depois de férias de algumas semanas, em poucas semanas de treino você costuma estar onde estava." },
+      { question: "Preciso treinar nas férias para não perder músculo?", answer: "Em férias de até duas semanas, não. Descansar não vai apagar o seu resultado. Em férias mais longas, duas sessões curtas por semana com o peso do corpo ou elásticos já ajudam a manter o estímulo." },
     ],
     content: `
 <h2>O Fantasma Que Assombra Todo Mundo Que Malha</h2>
