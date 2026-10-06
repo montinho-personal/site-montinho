@@ -363,5 +363,8 @@ Cooper (#733), IMC (#737), Descanso entre séries (#739), Substituidor
 (#743–#746), Comparador (#764–#766), Corrida, Bicicleta, Meta de peso,
 Consultoria online (#608), São Silvestre (#607), HYROX (#606).
 
-Ainda sem prints: Treino Para Minha Rotina ("treino 3/4 vezes por
-semana"), Superávit calórico, Relação cintura-altura, Cafeína.
+Prints de 06/10 aplicados: Treino Para Minha Rotina (3x e 4x por semana),
+Superávit calórico, Relação cintura-altura, Cafeína. Fora/pauta: "treino 3x
+semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
+(produto homônimo), "relação cintura-quadril" (outra ferramenta),
+"quanto tempo diminui a barriga", "o que comer antes de treinar de manhã".

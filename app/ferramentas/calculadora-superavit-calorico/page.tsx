@@ -87,6 +87,22 @@ const faq: ItemFAQ[] = [
     answer: `Descubra quanto você gasta por dia (a TMB vezes o fator de atividade) e coma um pouco acima disso. Para um homem de 70 kg, 1,75 m e 25 anos, moderadamente ativo, o gasto fica perto de ${formataFaixa(TDEE_EX)} kcal; com superávit moderado, a meta vai para cerca de ${formataFaixa(META_EX)} kcal por dia. A calculadora faz as duas contas com os seus dados.`,
   },
   {
+    question: "O que é superávit calórico e como funciona?",
+    answer: "É comer mais calorias do que o corpo gasta no dia. A sobra de energia, junto com o treino de força, dá ao corpo condição de construir músculo; sem treino, a sobra vai principalmente para gordura. É o contrário do déficit, que é comer menos do que se gasta para perder gordura.",
+  },
+  {
+    question: "Superávit calórico engorda?",
+    answer: "Faz o peso subir, e parte desse ganho é gordura: não existe superávit que só ganhe músculo. O que controla essa proporção é o tamanho do excedente e o treino. Superávit pequeno, com musculação e peso subindo devagar, ganha mais músculo para cada quilo de gordura.",
+  },
+  {
+    question: "O que é superávit calórico limpo, leve ou controlado?",
+    answer: "São nomes para o mesmo ajuste: um excedente pequeno, de cerca de 5% a 15% acima do gasto, com o peso subindo devagar. É o que muita gente chama de 'lean bulk'. 'Limpo' às vezes se refere também à qualidade da comida, mas o que define o resultado é o tamanho do excedente e a constância.",
+  },
+  {
+    question: "Qual a diferença entre déficit e superávit calórico?",
+    answer: "No déficit você come menos do que gasta e perde peso; no superávit, come mais e ganha. Os dois partem da mesma conta, o seu gasto diário. Para perder gordura, use a calculadora de déficit calórico.",
+  },
+  {
     question: "Quantas calorias devo ingerir por dia para ganhar massa?",
     answer: "Seu gasto diário mais 10% a 15% é uma referência prática para iniciantes e intermediários; quem treina há anos costuma precisar de menos (5% a 10%). O número certo é o que faz a média semanal do peso subir devagar, com a cintura estável.",
   },
