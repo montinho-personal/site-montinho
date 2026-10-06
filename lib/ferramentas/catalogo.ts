@@ -175,6 +175,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     selo: "novo",
   },
   {
+    id: "comparador",
+    href: "/ferramentas/comparador-de-exercicios",
+    nome: "Comparador de Exercícios",
+    resultado: "Compare músculos, movimento, estabilidade, equipamento e contexto de dois exercícios.",
+    acao: "Comparar exercícios",
+    tempo: "15 segundos",
+    categoria: "treino",
+    icone: "halter",
+    tags: ["comparar exercicios", "qual exercicio e melhor", "agachamento ou leg press", "supino reto ou inclinado", "barra fixa ou puxada", "stiff ou mesa flexora", "diferenca entre exercicios"],
+    selo: "novo",
+  },
+  {
     id: "descanso",
     href: "/ferramentas/calculadora-descanso-entre-series",
     nome: "Calculadora de Descanso Entre Séries",

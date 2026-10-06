@@ -124,6 +124,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${SITE_URL}/ferramentas/comparador-de-exercicios`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     ...PAGINAS_SUBSTITUIR.filter((p) => p.isIndexable).map((p) => ({
       url: `${SITE_URL}/substituir/${p.slug}`,
       lastModified: new Date("2026-10-05"),
