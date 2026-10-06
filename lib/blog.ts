@@ -721,7 +721,7 @@ export const blogPosts = ([
       "Às vezes não é a dieta ou o treino o problema. São comportamentos do cotidiano que você nem percebe que estão impedindo seu progresso.",
     category: "Hábitos",
     date: "2024-10-30",
-    updatedAt: "2026-07-22",
+    updatedAt: "2026-10-06",
     readTime: "5 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -753,6 +753,36 @@ export const blogPosts = ([
         question: "O que são calorias líquidas e por que sabotam o emagrecimento?",
         answer:
           "Calorias líquidas são as calorias provenientes de bebidas — sucos, refrigerantes, bebidas alcoólicas, café com açúcar, leites aromatizados. Elas não geram saciedade proporcional às calorias que fornecem e raramente são monitoradas. Uma garrafa de suco de laranja, por exemplo, pode ter 200 kcal com pouca fibra — equivalente a 2 a 3 laranjas que seriam muito mais saciantes.",
+      },
+      {
+        question: "O que mais atrapalha o emagrecimento?",
+        answer:
+          "Na maioria das vezes, comer um pouco acima do que se gasta sem perceber: beliscos, bebidas com calorias, fins de semana que desfazem a semana. Sono curto e estresse alto pioram o quadro porque aumentam a fome e a vontade de doce. O maior vilão costuma ser a soma de pequenas coisas repetidas todo dia, não um alimento.",
+      },
+      {
+        question: "Qual a idade mais difícil para emagrecer?",
+        answer:
+          "Não existe uma idade em que emagrecer fica impossível. Um grande estudo publicado na Science em 2021 (Pontzer e colaboradores) mostrou que o gasto de energia, ajustado pelo tamanho do corpo, fica estável dos 20 aos 60 anos. O que costuma mudar com a idade é a rotina: menos movimento no dia e perda de músculo. A musculação ajuda justamente nisso.",
+      },
+      {
+        question: "Quais são os sinais de metabolismo lento?",
+        answer:
+          "Metabolismo lento de verdade é raro e depende de exame para ser confirmado. Na maioria das pessoas que acham que têm, o gasto está normal e o que mudou foi a quantidade de movimento no dia ou de comida. Cansaço, frio e ganho de peso sem explicação são motivo para procurar um médico, não para cortar mais calorias.",
+      },
+      {
+        question: "Existe hormônio que impede de emagrecer?",
+        answer:
+          "Hormônios influenciam a fome e onde a gordura se acumula, e algumas condições, como o hipotireoidismo, mudam o gasto de energia. Mesmo assim, emagrecer continua dependendo do déficit calórico. Se você suspeita de um problema hormonal, quem avalia é o médico, com exames.",
+      },
+      {
+        question: "Dá para emagrecer 10 kg em 7 dias?",
+        answer:
+          "Não de gordura. Perdas grandes em poucos dias são principalmente água e conteúdo do intestino, e voltam rápido. Um ritmo sustentável fica perto de 0,5% a 1% do peso por semana.",
+      },
+      {
+        question: "Quando a perda de peso é preocupante?",
+        answer:
+          "Quando acontece sem você estar tentando emagrecer, ou de forma rápida e sem explicação. Nesse caso, procure um médico: perda de peso involuntária precisa de avaliação.",
       },
     ],
     faqSchema: [
