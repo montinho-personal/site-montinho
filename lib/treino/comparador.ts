@@ -413,3 +413,46 @@ export const ARTIGOS_COM_COMPARADOR: Record<string, [string, string]> = {
   "crossover-vs-crucifixo": ["cross-over", "crucifixo-maquina"],
   "panturrilha-em-pe-vs-sentada": ["panturrilha-em-pe", "panturrilha-sentado"],
 };
+
+// ── Pergunte ao Montinho ──────────────────────────────────────────────────
+
+/**
+ * "Leg press ou agachamento para hipertrofia?" → ["agachamento-livre", "leg-press"].
+ * Corta a pergunta no "ou / vs / x / versus" e procura, de cada lado, o
+ * maior pedaço colado ao conectivo que é um exercício da base. Só devolve
+ * quando os DOIS lados são exercícios diferentes: na dúvida, nada.
+ */
+export function detectaComparacao(pergunta: string): [string, string] | null {
+  const t = normaliza(pergunta).replace(/[?!.,;:()"]/g, " ").replace(/\s+/g, " ").trim();
+  const m = t.match(/^(.*\S)\s+(?:ou|vs|versus|x)\s+(\S.*)$/);
+  if (!m) return null;
+  // Entre os candidatos que contêm todas as palavras, o de nome mais curto:
+  // "supino com barra" é o supino reto com barra, não o inclinado.
+  const melhor = (termo: string): string | null => {
+    const ps = termo.split(" ");
+    const c = buscaComparavel(termo, 6).filter((e) => {
+      const alvo = normaliza([e.nome, ...(e.aliases ?? [])].join(" "));
+      return ps.every((p) => alvo.includes(p));
+    });
+    const exato = c.find((e) => [e.nome, ...(e.aliases ?? [])].map(normaliza).includes(termo));
+    return exato?.id ?? c.sort((x, y) => x.nome.length - y.nome.length)[0]?.id ?? null;
+  };
+  const acha = (palavras: string[], doFim: boolean, minimo = 1): { id: string; termo: string } | null => {
+    for (let k = Math.min(4, palavras.length); k >= minimo; k--) {
+      const termo = (doFim ? palavras.slice(-k) : palavras.slice(0, k)).join(" ");
+      if (termo.length < 4) continue;
+      const id = melhor(termo);
+      if (id) return { id, termo };
+    }
+    return null;
+  };
+  const a = acha(m[1].split(" "), true);
+  if (!a) return null;
+  // Elipse: "supino reto ou inclinado" → o lado direito herda "supino".
+  const cabeca = a.termo.split(" ")[0];
+  const dir = m[2].split(" ");
+  const b = (!dir.includes(cabeca) && acha([cabeca, ...dir], false, 2)) || acha(dir, false);
+  return b && a.id !== b.id ? normalizePair(a.id, b.id) : null;
+}
+
+export const linkComparador = (a: string, b: string) => `/ferramentas/comparador-de-exercicios?a=${a}&b=${b}`;

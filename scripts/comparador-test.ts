@@ -3,6 +3,7 @@
  */
 import { readFileSync } from "fs";
 import { EDITORIAL, POPULARES, chavePar, compareGoalSuitability, compareStructure, diferencas, emComum, lado, mencionaDor, normalizePair, relacao, respostaRapida, buscaComparavel, type Lado } from "../lib/treino/comparador";
+import { detectaComparacao } from "../lib/treino/comparador";
 import { HREF_POR_ARTIGO } from "../lib/ferramentas/relacionadas";
 import { ARTIGOS_COM_COMPARADOR } from "../lib/treino/comparador";
 
@@ -54,6 +55,18 @@ for (const [s, v] of Object.entries(HREF_POR_ARTIGO).filter(([, v]) => v.href.in
   const q = new URLSearchParams(v.href.split("?")[1]);
   if (!lado(q.get("a")!) || !lado(q.get("b")!)) check(`link do artigo ${s} aponta para exercício existente`, false, v.href);
 }
+
+const casos: [string, string | null][] = [
+  ["Leg press ou agachamento?", "agachamento-livre__leg-press"],
+  ["supino reto ou inclinado", "supino-inclinado-barra__supino-reto-barra"],
+  ["Supino com barra ou halteres?", "supino-reto-barra__supino-reto-halter"],
+  ["barra fixa ou puxada alta", "barra-fixa__puxada-frente"],
+  ["stiff ou mesa flexora qual o melhor", "mesa-flexora__stiff"],
+  ["hack vs leg press", "agachamento-hack__leg-press"],
+  ["cadeira extensora x agachamento", "agachamento-livre__cadeira-extensora"],
+  ["whey ou creatina?", null], ["treino de manhã ou à noite?", null], ["musculação ou corrida", null],
+];
+for (const [q, esp] of casos) { const r = detectaComparacao(q); check(`Pergunte: "${q}"`, (r ? r.join("__") : null) === esp, String(r)); }
 
 console.log(falhas ? `\n${falhas} FALHA(S)` : "\nTODOS OS TESTES PASSARAM");
 process.exit(falhas ? 1 : 0);

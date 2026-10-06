@@ -749,6 +749,7 @@ export type AnalyticsEvent =
   | "substitution_article_click"
   | "substitution_share"
   | "substitution_whatsapp_cta"
+  | "ask_compare_click"
   | "exercise_compare_view"
   | "exercise_compare_search"
   | "exercise_compare_select_a"
