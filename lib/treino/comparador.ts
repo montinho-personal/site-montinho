@@ -293,6 +293,7 @@ export const EDITORIAL: Record<string, Editorial> = Object.fromEntries([
   E("supino-reto-barra", "supino-reto-halter", {
     resposta: "Muito semelhantes: mesmo movimento, mesmos músculos. A barra liga os dois braços, dá mais estabilidade e permite mais carga total; os halteres deixam cada lado independente, com mais liberdade de trajetória e mais estabilização.",
     notas: ["Com halteres, pegar e devolver o peso pode limitar cargas altas antes do peito cansar. Com barra, ajustar a carga e repetir a execução é mais fácil."],
+    artigo: "supino-barra-vs-halteres",
   }),
   E("barra-fixa", "puxada-frente", {
     resposta: "Os dois são puxadas verticais e treinam as costas (dorsais) com bíceps ajudando. A puxada deixa você escolher a carga, inclusive abaixo do peso do corpo; a barra fixa usa o próprio corpo e exige mais controle.",
@@ -318,6 +319,7 @@ export const EDITORIAL: Record<string, Editorial> = Object.fromEntries([
       "Qual primeiro? Normalmente o agachamento, mais técnico e pesado, quando você está descansado. A extensora antes (pré-exaustão) é uma estratégia possível, com carga menor no agachamento.",
       "Fazer extensora todo dia não acelera o resultado: o músculo cresce no descanso entre os treinos.",
     ],
+    artigo: "cadeira-extensora-vs-agachamento",
   }),
   E("rosca-direta", "rosca-martelo", {
     resposta: "Os dois dobram o cotovelo e treinam bíceps. A pegada é o que muda: na martelo, com a palma virada para dentro, o braquial e o antebraço participam mais; na direta, com a palma para cima, o bíceps trabalha na posição dele de mais força.",
@@ -404,6 +406,8 @@ export const ARTIGOS_COM_COMPARADOR: Record<string, [string, string]> = {
   "rosca-direta-vs-rosca-martelo": ["rosca-direta", "rosca-martelo"],
   "hack-vs-leg-press": ["agachamento-hack", "leg-press"],
   "stiff-vs-mesa-flexora": ["stiff", "mesa-flexora"],
+  "supino-barra-vs-halteres": ["supino-reto-barra", "supino-reto-halter"],
+  "cadeira-extensora-vs-agachamento": ["agachamento-livre", "cadeira-extensora"],
   "stiff-vs-levantamento-terra": ["stiff", "levantamento-terra"],
   "puxada-vs-remada": ["puxada-frente", "remada-baixa"],
   "crossover-vs-crucifixo": ["cross-over", "crucifixo-maquina"],
