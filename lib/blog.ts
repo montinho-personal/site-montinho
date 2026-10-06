@@ -117377,7 +117377,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Reto e inclinado treinam o mesmo músculo em proporções diferentes. A eletromiografia mostra que 30 graus rende mais peito superior que 45 — e por que quase todo mundo inclina demais.",
     category: "Treinamento",
     date: "2026-09-08",
-    updatedAt: "2026-09-08",
+    updatedAt: "2026-10-06",
     readTime: "7 min",
     author: "Montinho",
     tags: ["supino reto", "supino inclinado", "peito", "peitoral", "técnica", "musculação", "hipertrofia"],
@@ -117387,6 +117387,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Posso fazer só o inclinado e abandonar o reto?", answer: "Pode, mas perde. O banco reto trabalha a porção esternocostal, que é a maior parte do peitoral, e permite mais carga absoluta. Quem faz só um dos dois por anos costuma desenvolver o peito de forma desequilibrada." },
       { question: "Em que ordem fazer os dois no treino de peito?", answer: "Reto primeiro, com o músculo descansado e a maior carga da sessão; inclinado a 30 graus em segundo, com amplitude completa. Se o peito superior é a sua prioridade declarada, inverta a ordem por um ciclo — o exercício feito descansado é o que mais progride." },
       { question: "Supino inclinado com barra ou com halteres?", answer: "Halteres dão trajetória livre e costumam ser mais confortáveis para quem tem ombro sensível, além de corrigir assimetria entre os lados. A barra permite mais carga. Os dois funcionam — a escolha é de conforto articular e de disponibilidade." },
+      { question: "Qual é mais pesado, supino reto ou inclinado?", answer: "Para quase todo mundo, o reto: a alavanca é mais favorável e o peitoral inteiro participa com mais força, então você move mais carga. Sair com menos peso no inclinado é normal e não indica fraqueza. Por isso a carga de um não serve de referência para o outro." },
+      { question: "É exagero fazer supino reto e inclinado no mesmo dia?", answer: "Não. É uma combinação comum no treino de peito. O que precisa fazer sentido é o total de séries da semana para o peitoral e conseguir progredir nos dois; se a qualidade cai no segundo exercício, reduza as séries dele em vez de cortar um dos dois." },
+      { question: "Supino reto ou inclinado para mulher?", answer: "A resposta é a mesma para mulheres e homens: o músculo e a mecânica não mudam. O que muda é o objetivo e o ponto de partida de cada pessoa. Os dois podem estar no treino, com carga e volume ajustados a você." },
+      { question: "Supino reto ou inclinado na máquina (articulado) vale?", answer: "Vale. A máquina guia a trajetória, dá mais estabilidade e facilita repetir a mesma execução e subir a carga aos poucos. A lógica do ângulo é a mesma: a versão inclinada desloca parte do trabalho para a porção clavicular e para o ombro." },
+      { question: "E o supino declinado?", answer: "No estudo de Rodríguez-Ridao (2020), o reto e o declinado tiveram a maior atividade da porção esternocostal. O declinado pode entrar como variação, mas não é obrigatório: o reto já cobre bem essa porção." },
     ],
     content: `<p>Supino reto ou supino inclinado — qual constrói mais peito? A pergunta aparece toda semana na sala de musculação, e a resposta honesta não é "um dos dois". É que os dois treinam <strong>o mesmo músculo em proporções diferentes</strong>, e a escolha depende de qual parte do peitoral está atrasada no seu corpo e de quanto peso você ainda consegue mover com técnica.</p>
 
@@ -117481,7 +117486,7 @@ Ele trabalha o peitoral inteiro — só que com maior ênfase na porção estern
     excerpt: "No agachamento você sustenta a carga; no leg press a máquina sustenta por você. Essa diferença muda quais músculos entram, quanto peso você move e o que sobra de resultado fora da academia.",
     category: "Treinamento",
     date: "2026-09-08",
-    updatedAt: "2026-09-08",
+    updatedAt: "2026-10-06",
     readTime: "8 min",
     author: "Montinho",
     tags: ["agachamento", "leg press", "perna", "quadríceps", "glúteo", "técnica", "musculação"],
@@ -117491,6 +117496,11 @@ Ele trabalha o peitoral inteiro — só que com maior ênfase na porção estern
       { question: "Leg press é mais seguro que agachamento?", answer: "Não automaticamente. O erro mais comum do leg press é descer além do que o quadril permite e arredondar a lombar contra o encosto com centenas de quilos — exatamente a região que a máquina deveria poupar. Os dois são seguros com técnica e perigosos sem." },
       { question: "A posição dos pés no leg press muda alguma coisa?", answer: "Muda. Pés mais altos na plataforma aumentam a participação de glúteo e posterior de coxa; pés mais baixos concentram no quadríceps. Ajuste conforme o que você quer enfatizar, sem sair da amplitude que a sua mobilidade permite." },
       { question: "Qual fazer primeiro no treino de perna?", answer: "Agachamento primeiro, com o corpo descansado e a técnica intacta, porque é o que exige mais coordenação. Leg press depois, para acumular volume de quadríceps sem depender do tronco, que já está fatigado." },
+      { question: "Leg press e agachamento trabalham o mesmo músculo?", answer: "Os músculos principais são os mesmos, quadríceps e glúteos. O que muda é quem segura o peso: no agachamento é o seu corpo, com tronco, core e equilíbrio trabalhando junto; no leg press o encosto apoia as costas e o esforço fica mais concentrado nas pernas. Por isso não são a mesma coisa." },
+      { question: "Leg press substitui o agachamento?", answer: "Para ganhar músculo nas pernas, pode cumprir boa parte do papel. Para ficar mais forte no próprio agachamento, não: o leg press transfere pouco para o movimento de agachar, que depende de equilíbrio e técnica. Depende do seu objetivo." },
+      { question: "Posso fazer agachamento e leg press no mesmo dia?", answer: "Pode, e é comum. O mais usado é o agachamento primeiro, quando você está descansado e a técnica conta mais, e o leg press depois para completar o volume das pernas." },
+      { question: "O leg press aumenta o glúteo?", answer: "Ajuda, porque o glúteo é um dos músculos principais do movimento. Pés um pouco mais altos e afastados na plataforma e amplitude maior aumentam a participação do glúteo. Para quem prioriza glúteo, vale somar exercícios específicos, como elevação pélvica." },
+      { question: "Dá para engrossar as pernas só com agachamento?", answer: "Dá para ganhar bastante, principalmente no começo. Com o tempo, somar outros exercícios (leg press, extensora, flexora, stiff) ajuda a acumular volume e a treinar o posterior de coxa, que o agachamento trabalha pouco." },
     ],
     content: `<p>Agachamento ou leg press — qual constrói mais perna? Essa é a discussão mais antiga da sala de musculação, e ela costuma ser mal colocada. Os dois empurram peso com as pernas, mas <strong>um deles exige que você sustente a carga e o outro sustenta a carga por você</strong>. Essa única diferença muda tudo: quais músculos entram, quanto peso você move, o risco envolvido e o que sobra de resultado fora da academia.</p>
 
@@ -117748,7 +117758,7 @@ Não. "Stiff" quer dizer rígido, não travado. O joelho fica levemente flexiona
     excerpt: "Mesmo movimento, protagonistas diferentes. A rosca direta constrói o pico do bíceps; a martelo, a espessura que se vê de lado e o antebraço. Quem faz só uma acaba com braço de um ângulo só.",
     category: "Treinamento",
     date: "2026-09-09",
-    updatedAt: "2026-09-09",
+    updatedAt: "2026-10-06",
     readTime: "7 min",
     author: "Montinho",
     tags: ["rosca direta", "rosca martelo", "bíceps", "braquial", "antebraço", "técnica", "musculação"],
@@ -117758,6 +117768,9 @@ Não. "Stiff" quer dizer rígido, não travado. O joelho fica levemente flexiona
       { question: "Por que consigo mais peso na rosca martelo?", answer: "Porque a pegada neutra recruta três flexores ao mesmo tempo, em vez de depender principalmente do bíceps, e porque o punho fica numa posição mais forte. Use essa carga a favor, sem transformar o exercício em balanço de tronco." },
       { question: "Qual fazer primeiro no treino de braço?", answer: "Rosca direta primeiro, com o bíceps descansado, e martelo depois, aproveitando que ela aceita mais carga mesmo com o bíceps já fatigado. Se a prioridade for espessura, inverta por um ciclo: o exercício feito descansado é o que mais progride." },
       { question: "Rosca martelo dói menos no punho?", answer: "Costuma. A pegada neutra é a posição mais confortável para punho e cotovelo, e é a primeira troca que faço para quem sente a rosca direta na articulação em vez de no músculo." },
+      { question: "Posso fazer rosca martelo e rosca direta no mesmo treino?", answer: "Pode. É uma combinação comum no treino de braço: a direta deixa o bíceps mais em evidência e a martelo soma braquial e antebraço. O que precisa fazer sentido é o total de séries para o bíceps na semana." },
+      { question: "Rosca martelo alternada ou com os dois braços juntos?", answer: "As duas funcionam. Alternada, você foca um braço por vez e descansa o outro por alguns segundos; simultânea, a série é mais curta e mais cansativa. Escolha pela que você executa melhor, sem balançar o tronco." },
+      { question: "O que substitui a rosca martelo?", answer: "A rosca martelo na polia com corda, a rosca martelo cruzada (o halter vai em direção ao peito oposto) e a rosca inversa, com a palma para baixo, mantêm o trabalho de braquial e antebraço." },
     ],
     content: `<p>Rosca direta ou rosca martelo — qual faz o braço crescer mais? A pergunta vem toda semana, e ela costuma partir de uma premissa errada: a de que as duas treinam a mesma coisa e uma é "melhor". Não é. As duas flexionam o cotovelo, mas <strong>a posição da mão muda qual músculo lidera</strong> — e é essa diferença que decide o formato do seu braço.</p>
 
@@ -117849,7 +117862,7 @@ Não. O braquiorradial responde ao estímulo como qualquer músculo, e volume ex
     excerpt: "Parecidos por fora, diferentes por dentro: o hack é um agachamento com o tronco apoiado, o leg press é uma extensão de joelho com muito peso. Cada um tem um risco e um lugar no treino.",
     category: "Treinamento",
     date: "2026-09-09",
-    updatedAt: "2026-09-09",
+    updatedAt: "2026-10-06",
     readTime: "7 min",
     author: "Montinho",
     tags: ["hack", "leg press", "quadríceps", "perna", "joelho", "técnica", "musculação"],
@@ -117859,6 +117872,9 @@ Não. O braquiorradial responde ao estímulo como qualquer músculo, e volume ex
       { question: "Leg press é seguro para a lombar?", answer: "É, desde que o quadril não saia do encosto no fundo do movimento. Descer além do que o quadril permite arredonda a coluna sob centenas de quilos, que é a lesão mais evitável da sala de musculação. Amplitude curta e controlada é melhor que amplitude vaidosa." },
       { question: "Posso fazer hack e leg press no mesmo treino?", answer: "Pode, e costuma render: hack primeiro, com o quadríceps descansado e amplitude completa, e leg press depois para acumular volume com carga alta sem exigir mais coordenação." },
       { question: "Hack substitui o agachamento livre?", answer: "Para quadríceps, sim. O que ele não entrega é a estabilização do tronco e o estímulo ósseo do agachamento com barra nas costas. Quem pode agachar livre sem contraindicação ganha mantendo os dois." },
+      { question: "Leg press e hack são a mesma coisa?", answer: "Não. No hack você fica em pé sob a carga, com as costas apoiadas, e o movimento lembra um agachamento; no leg press você está sentado e empurra a plataforma. Os dois treinam quadríceps e glúteos, mas o hack costuma exigir mais flexão de joelho e mais da frente da coxa." },
+      { question: "Existe máquina de leg press e hack conjugada?", answer: "Existe: alguns aparelhos convertem entre leg press e hack trocando a posição do encosto e dos ombros. A lógica de cada exercício continua a mesma, e a carga de uma configuração não vale para a outra." },
+      { question: "Hack ou agachamento no smith?", answer: "Os dois guiam a trajetória. No hack as costas ficam apoiadas e o trilho é inclinado; no smith a barra fica nas costas, sem encosto, e você precisa controlar mais o tronco. Escolha pela que encaixa melhor no seu corpo e progrida nela." },
     ],
     content: `<p>Hack ou leg press — qual constrói mais perna? Os dois são máquinas, os dois apoiam o tronco, os dois deixam você carregar muito peso. Por isso muita gente trata como sinônimo e faz um ou outro conforme a fila. Mas a diferença entre eles não é de estrutura: é de <strong>onde a carga entra e como o quadril se move</strong>. E isso muda quais músculos trabalham e quem sente o joelho.</p>
 
@@ -118016,7 +118032,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     excerpt: "Puxar o corpo até a barra e puxar a barra até o corpo parecem a mesma coisa. O que muda é quem se move, e isso decide o que o exercício exige de você.",
     category: "Treinamento",
     date: "2026-09-11",
-    updatedAt: "2026-09-11",
+    updatedAt: "2026-10-06",
     readTime: "8 min",
     author: "Montinho",
     tags: ["barra fixa", "puxada", "costas", "dorsal", "hipertrofia", "técnica", "musculação"],
@@ -118026,6 +118042,8 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
       { question: "Faço puxada com mais peso que meu corpo, mas não consigo uma barra. Por quê?", answer: "É comum e não é contradição. Na puxada você está sentado, com o joelho preso e o tronco apoiado no padrão do aparelho. Na barra, além de puxar, você precisa estabilizar o corpo no ar, segurar a pegada sem apoio e controlar a balançada. A força de puxar existe; falta o resto do pacote." },
       { question: "Posso fazer as duas no mesmo treino?", answer: "Pode, e funciona bem: barra fixa primeiro, com força total e nas repetições que você consegue com técnica, e puxada depois para acumular volume sem depender da coordenação já cansada." },
       { question: "Puxada atrás da nuca é melhor?", answer: "Não é, e cobra caro. Para passar a barra atrás da cabeça, o ombro precisa girar para fora no limite da articulação, e o pescoço se projeta para a frente. O ganho em dorsal não existe frente à versão à frente. Puxe à frente do rosto, na altura da clavícula." },
+      { question: "Barra fixa ou puxada alta para iniciante?", answer: "A puxada costuma ser o começo mais simples, porque você escolhe a carga, inclusive abaixo do peso do corpo. Se o objetivo é conseguir fazer barra, combine a puxada com barra assistida (elástico ou máquina) e negativas: para melhorar na barra, o mais específico é a própria barra." },
+      { question: "Qual pegada usar: aberta, fechada, neutra ou supinada?", answer: "Todas treinam as costas. A supinada (palmas para você) e a neutra costumam permitir mais carga e envolver mais o bíceps; a aberta pronada é a mais comum. Escolha a que fica confortável no seu ombro e varie ao longo dos meses." },
     ],
     content: `<p>Barra fixa ou puxada na polia? Quase todo mundo que treina costas já fez essa conta, geralmente parado na frente do aparelho decidindo onde gastar a série. Os dois são puxadas verticais, os dois miram o dorsal, os dois deixam a costas larga. A diferença é uma só, e ela decide tudo o resto: <strong>na barra, quem se move é você; na puxada, quem se move é o peso</strong>.</p>
 
