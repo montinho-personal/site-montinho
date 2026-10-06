@@ -312,6 +312,11 @@ export const EDITORIAL: Record<string, Editorial> = Object.fromEntries([
   }),
   E("cadeira-extensora", "agachamento-livre", {
     resposta: "Não são exercícios equivalentes. O agachamento é composto, treina quadríceps e glúteos juntos e exige estabilidade; a cadeira extensora isola a extensão do joelho, só quadríceps. Os dois podem estar na mesma estratégia para a frente da coxa.",
+    notas: [
+      "A cadeira extensora substitui o agachamento? Não totalmente: ela não treina glúteos nem o movimento de agachar. Mas é útil para acumular trabalho no quadríceps sem cansar o resto.",
+      "Qual primeiro? Normalmente o agachamento, mais técnico e pesado, quando você está descansado. A extensora antes (pré-exaustão) é uma estratégia possível, com carga menor no agachamento.",
+      "Fazer extensora todo dia não acelera o resultado: o músculo cresce no descanso entre os treinos.",
+    ],
   }),
   E("rosca-direta", "rosca-martelo", {
     resposta: "Os dois dobram o cotovelo e treinam bíceps. A pegada é o que muda: na martelo, com a palma virada para dentro, o braquial e o antebraço participam mais; na direta, com a palma para cima, o bíceps trabalha na posição dele de mais força.",
