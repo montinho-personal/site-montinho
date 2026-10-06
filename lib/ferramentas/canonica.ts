@@ -173,6 +173,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Substituidor de Exercícios",
     motivo: "que mostra o que cada alternativa preserva e o que muda",
   },
+  comparador: {
+    href: "/ferramentas/comparador-de-exercicios",
+    ancora: "Comparador de Exercícios",
+    motivo: "que mostra o que é igual, o que muda e em que contexto cada um faz mais sentido",
+  },
   descanso: {
     href: "/ferramentas/calculadora-descanso-entre-series",
     ancora: "Calculadora de Descanso Entre Séries",
