@@ -173,3 +173,12 @@ externo e de combinação prévia". Nunca afirmar que o Montinho atende em
 Ironberg, Bodytech, Bio Ritmo, Smart Fit, Bluefit, Gaviões, NitroGym ou
 qualquer outra academia só porque existe um guia dela no site — os guias
 são informativos e de SEO.
+
+# Relatórios de dados: auditoria obrigatória
+
+Todo relatório com números (GA4, Search Console, Google Ads, CRM) passa
+pelo checklist de `docs/relatorios/auditoria-de-dados.md` antes de ser
+enviado ao Montinho, e sai com um quadro "Auditoria dos dados" dizendo o
+que foi conferido, o que foi corrigido e os limites. Os totais precisam
+bater com uma consulta direta à fonte. Relatório sem auditoria não é
+enviado, e nada é chamado de "confirmado" sem ter sido checado na fonte.
