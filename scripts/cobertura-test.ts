@@ -60,6 +60,7 @@ import { ARTIGOS_COM_LINK_SHAPE12 } from "../lib/simulador/shape12";
 import { ARTIGOS_COM_LINK_FIM_DE_SEMANA } from "../lib/simulador/fim-de-semana";
 import { ARTIGOS_COM_CALCULADORA_CLASSIC } from "../lib/classic-physique";
 import { ARTIGOS_COM_SHAPE } from "../lib/shape";
+import { ARTIGOS_COM_COMPARADOR } from "../lib/treino/comparador";
 import { ARTIGOS_COM_LINK_PREVISOR_SS, ARTIGOS_COM_PREVISOR_SS } from "../lib/sao-silvestre";
 
 let falhas = 0;
@@ -74,6 +75,7 @@ function bloco(t: string) {
 /** Onde cada artigo está coberto, e por qual registro. */
 const REGISTROS: [string, string[]][] = [
   ["proteína", ARTIGOS_COM_CALCULADORA],
+  ["comparador de exercícios", Object.keys(ARTIGOS_COM_COMPARADOR)],
   ["cardápio", ARTIGOS_COM_CALCULADORA_CARDAPIO],
   ["TMB/TDEE", ARTIGOS_COM_CALCULADORA_TDEE],
   ["déficit", ARTIGOS_COM_CALCULADORA_DEFICIT],

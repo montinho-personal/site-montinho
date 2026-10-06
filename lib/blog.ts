@@ -117751,6 +117751,96 @@ Não. "Stiff" quer dizer rígido, não travado. O joelho fica levemente flexiona
 `,
   },
   {
+    slug: "stiff-vs-mesa-flexora",
+    title: "Stiff ou Mesa Flexora: Qual é Melhor e Qual Fazer Primeiro?",
+    metaTitle: "Stiff ou Mesa Flexora: Qual é Melhor e Qual Primeiro?",
+    metaDescription: "Stiff e mesa flexora treinam o posterior de coxa de formas diferentes: um no quadril, outro no joelho. Veja qual escolher, qual fazer primeiro e se um substitui o outro.",
+    excerpt: "Os dois treinam o posterior de coxa, mas não fazem a mesma coisa: o stiff trabalha o quadril, a mesa flexora trabalha o joelho. Por isso não são concorrentes — se complementam.",
+    category: "Treinamento",
+    date: "2026-10-06",
+    updatedAt: "2026-10-06",
+    readTime: "6 min",
+    author: "Montinho",
+    tags: ["stiff", "mesa flexora", "cadeira flexora", "posterior de coxa", "glúteo", "musculação", "hipertrofia"],
+    faq: [
+      { question: "Stiff ou mesa flexora: qual é melhor?", answer: "Depende do que você quer. O stiff treina o posterior de coxa estendendo o quadril, com glúteo e lombar trabalhando junto, e permite mais carga. A mesa flexora treina o posterior dobrando o joelho, de forma mais isolada. Para um posterior completo, o ideal é ter um exercício de cada tipo." },
+      { question: "Pode trocar mesa flexora por stiff?", answer: "Dá para manter o trabalho de posterior de coxa, mas muda a função: você perde a flexão de joelho e ganha glúteo e lombar trabalhando junto. Se a troca for por falta de aparelho, a flexão de joelho deslizando os pés no chão ou com elástico recupera a parte que falta." },
+      { question: "Devo fazer o stiff antes ou depois da mesa flexora?", answer: "O mais comum é o stiff antes: é mais técnico, usa mais carga e pede o corpo descansado. A mesa flexora depois funciona bem mesmo com o posterior já cansado, porque é guiada. A ordem pode inverter quando a prioridade for a flexora ou quando a lombar estiver cansada de outros exercícios." },
+      { question: "O stiff substitui a cadeira flexora?", answer: "Não totalmente, pela mesma razão: a cadeira e a mesa flexora dobram o joelho, o stiff move o quadril. São funções diferentes do mesmo músculo." },
+      { question: "É melhor cadeira ou mesa flexora?", answer: "As duas dobram o joelho. Na cadeira você fica sentado, com o quadril flexionado, o que deixa o posterior mais alongado durante o movimento; em um estudo de Maeo e colaboradores (2021), a flexora sentada gerou mais hipertrofia do posterior que a deitada. A mesa continua sendo uma boa opção, e vale mais a que encaixa no seu corpo e na sua academia." },
+      { question: "Stiff com barra ou com halteres?", answer: "Os dois funcionam. A barra permite mais carga e é mais fácil de progredir; os halteres ficam ao lado do corpo e costumam ser mais confortáveis para aprender o movimento ou treinar em casa." },
+    ],
+    content: `<p>Stiff ou mesa flexora? A pergunta parece de "qual é melhor", mas a resposta começa em outro lugar: <strong>os dois treinam o posterior de coxa, só que fazendo movimentos diferentes</strong>. O stiff trabalha o músculo pelo quadril. A mesa flexora trabalha pelo joelho. Por isso, na maioria dos treinos, eles não competem — dividem o serviço.</p>
+
+<h2>A diferença fundamental: quadril ou joelho</h2>
+<p>Os músculos posteriores da coxa (os isquiotibiais) cruzam duas articulações: o quadril e o joelho. Eles fazem duas coisas:</p>
+<ul>
+<li><strong>Estender o quadril</strong>, levando o tronco de volta para cima quando você está inclinado à frente. É o que acontece no <strong>stiff</strong>, um exercício de dobradiça de quadril (o "hinge").</li>
+<li><strong>Dobrar o joelho</strong>, trazendo o calcanhar em direção ao glúteo. É o que acontece na <strong>mesa flexora</strong> e na cadeira flexora.</li>
+</ul>
+<p>É o mesmo músculo, em funções diferentes. Um treino que só tem um dos dois tipos deixa uma das funções de fora.</p>
+
+<h2>O que cada um trabalha</h2>
+<table>
+<tr><th>Critério</th><th>Stiff</th><th>Mesa flexora</th></tr>
+<tr><td>Movimento</td><td>Extensão de quadril (dobradiça)</td><td>Flexão de joelho</td></tr>
+<tr><td>Músculos principais</td><td>Posterior de coxa e glúteos</td><td>Posterior de coxa</td></tr>
+<tr><td>Secundários</td><td>Lombar e costas, segurando o tronco</td><td>Pequena participação de outros</td></tr>
+<tr><td>Tipo</td><td>Composto</td><td>Isolador</td></tr>
+<tr><td>Exigência de estabilidade</td><td>Alta</td><td>Baixa: a máquina apoia o corpo</td></tr>
+<tr><td>Técnica</td><td>Alta</td><td>Simples</td></tr>
+<tr><td>Progressão de carga</td><td>Boa, com saltos pequenos de anilha</td><td>Muito prática: trocar o pino</td></tr>
+</table>
+<p>No stiff, o posterior trabalha alongado: você desce o tronco com os joelhos quase estendidos até sentir a parte de trás da coxa esticar, e volta. O glúteo participa bastante e a lombar precisa segurar a coluna firme o movimento todo. Na mesa flexora, você está deitado de bruços, o corpo fica apoiado e o esforço se concentra no posterior.</p>
+
+<h2>Qual é melhor?</h2>
+<p>Depende do que você precisa naquele momento:</p>
+<ul>
+<li><strong>Quer treinar posterior e glúteo juntos, com carga alta:</strong> stiff.</li>
+<li><strong>Quer isolar o posterior, sem cansar lombar e glúteo:</strong> mesa ou cadeira flexora.</li>
+<li><strong>Está aprendendo e ainda não domina o stiff:</strong> a flexora é mais simples de executar bem desde o primeiro dia, enquanto o stiff é aprendido com carga leve.</li>
+<li><strong>Quer um posterior de coxa completo:</strong> os dois, um de quadril e um de joelho.</li>
+</ul>
+<p>Menos estabilidade não quer dizer exercício pior. Na máquina, o apoio permite concentrar o esforço no músculo-alvo sem que o tronco limite a série.</p>
+
+<h2>Pode trocar um pelo outro?</h2>
+<p>Para manter o trabalho de posterior de coxa, sim. Para manter o mesmo exercício, não. Trocar a mesa flexora pelo stiff tira a flexão de joelho e coloca glúteo e lombar no lugar. Trocar o stiff pela flexora tira a extensão de quadril e o trabalho com o músculo alongado sob carga.</p>
+<p>Se a troca é por falta de aparelho, existe opção para as duas funções: flexão de joelho deslizando os pés no chão, com elástico ou nordic para a parte do joelho; stiff com halteres ou elástico para a parte do quadril. O <a href="/ferramentas/substituidor-de-exercicios">Substituidor de Exercícios</a> mostra as alternativas com o que você tem.</p>
+
+<h2>Qual fazer primeiro?</h2>
+<p>O mais comum é o <strong>stiff antes</strong>: é o mais técnico, usa mais carga e depende do corpo descansado para a lombar segurar bem. A mesa flexora vem depois e funciona mesmo com o posterior já cansado, porque a máquina guia o movimento.</p>
+<p>A ordem pode inverter: quando a prioridade daquele ciclo é a flexora, ou quando a lombar já está cansada de outros exercícios do dia, como agachamento ou terra.</p>
+
+<h2>Mesa flexora ou cadeira flexora?</h2>
+<p>As duas dobram o joelho. A diferença está no quadril: na cadeira você fica sentado, com o quadril dobrado, e isso deixa o posterior mais alongado durante o movimento. Em um estudo de Maeo e colaboradores (2021), a flexora sentada gerou mais hipertrofia do posterior de coxa que a deitada. A mesa continua sendo uma boa opção; na prática, vale a que encaixa melhor no seu corpo e na sua academia, ou alternar entre as duas.</p>
+
+<h2>Como usar os dois no mesmo treino</h2>
+<ol>
+<li><strong>Stiff</strong> como primeiro exercício de posterior, com carga que permita descer devagar e manter a coluna firme.</li>
+<li><strong>Mesa ou cadeira flexora</strong> em seguida, com séries perto da falha.</li>
+</ol>
+<p>O total de séries da semana para o posterior conta mais do que a combinação exata. Para ver como isso fecha no seu treino, use a <a href="/ferramentas/calculadora-volume-treino">calculadora de volume</a>.</p>
+
+<h2>Conclusão</h2>
+<p>Stiff e mesa flexora não são concorrentes. O stiff trabalha o posterior pelo quadril, com glúteo e lombar junto; a mesa flexora trabalha pelo joelho, de forma isolada. Se der para ter os dois, tenha. Se precisar escolher, escolha pelo que falta no seu treino — e não pelo que "pega mais".</p>
+<p>Monto e acompanho treinos de perna para alunos em Alphaville, Barueri e Santana de Parnaíba, e para o Brasil inteiro pela <a href="/consultoria-online">consultoria online</a>. Se a carga do stiff parou de subir ou a flexora não está encaixando, <a href="/contato">fale comigo</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/stiff-vs-levantamento-terra">Stiff vs levantamento terra: qual é a diferença?</a></li>
+<li><a href="/blog/como-fazer-stiff">Como fazer stiff</a></li>
+<li><a href="/blog/como-fazer-cadeira-flexora">Como fazer cadeira flexora</a></li>
+<li><a href="/blog/treino-de-posterior-de-coxa">Treino de posterior de coxa</a></li>
+<li><a href="/exercicios/posterior-de-coxa">Exercícios para posterior de coxa</a></li>
+</ul>
+
+<h2>Referências</h2>
+<ul>
+<li>Maeo S, Huang M, Wu Y, Sakurai H, Kusagawa Y, Sugiyama T, Kanehisa H, Isaka T. Greater hamstrings muscle hypertrophy but similar damage protection after training at long versus short muscle lengths. Medicine &amp; Science in Sports &amp; Exercise, 2021;53(4):825-837.</li>
+</ul>
+`,
+  },
+  {
     slug: "rosca-direta-vs-rosca-martelo",
     title: "Rosca Direta vs Rosca Martelo: Qual Faz o Braço Crescer Mais?",
     metaTitle: "Rosca Direta ou Martelo: Qual Constrói Mais Braço?",
