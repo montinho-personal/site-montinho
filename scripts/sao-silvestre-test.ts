@@ -18,7 +18,11 @@ ok(riegel(3000, 10, 10) === 3000, "mesma distância, mesmo tempo");
 ok(lerTempo("25:30") === 1530, "mm:ss");
 ok(lerTempo("1:05:30") === 3930, "h:mm:ss");
 ok(lerTempo("25:75") === null, "segundos ≥ 60 são inválidos");
-ok(lerTempo("abc") === null && lerTempo("25") === null, "texto e número solto são inválidos");
+ok(lerTempo("abc") === null && lerTempo("") === null, "texto é inválido");
+// Teclado numérico do celular não tem ":" — 34 erros em 44 aberturas no celular até 06/10/2026.
+ok(lerTempo("25.30") === 1530 && lerTempo("25,30") === 1530 && lerTempo("2530") === 1530, "aceita ponto, vírgula e só dígitos");
+ok(lerTempo("25") === 1500 && lerTempo("25 min") === 1500, "número solto vira minutos");
+ok(lerTempo("1h05") === 3900 && lerTempo("10530") === 3930 && lerTempo("1.05.30") === 3930, "acima de uma hora sem dois-pontos");
 
 // Sanidade
 ok(validaReferencia(600, 5) !== null, "5 km em 10 min é recusado");
