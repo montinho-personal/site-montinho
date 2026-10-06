@@ -806,7 +806,7 @@ export const blogPosts = ([
     title: "5 Hábitos do Dia a Dia Que Estão Sabotando Seu Emagrecimento",
     metaTitle: "5 Hábitos Que Sabotam o Emagrecimento (Sem Você Perceber)",
     metaDescription:
-      "Sono, estresse, hidratação e atenção alimentar — descubra os 5 hábitos cotidianos que sabotam silenciosamente o emagrecimento, mesmo quando a dieta e o...",
+      "Sono curto, estresse, beliscos e calorias líquidas: os hábitos que mais atrapalham o emagrecimento mesmo com dieta e treino, e como corrigir cada um.",
     excerpt:
       "Às vezes não é a dieta ou o treino o problema. São comportamentos do cotidiano que você nem percebe que estão impedindo seu progresso.",
     category: "Hábitos",

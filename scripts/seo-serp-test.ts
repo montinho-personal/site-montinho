@@ -279,7 +279,6 @@ const TITULO_CORTADO_PENDENTE = new Set([
    então cada uma precisa da frase inteira reescrita, uma decisão por item. */
 const DESCRIPTION_CORTADA_PENDENTE = new Set([
   "por-que-voce-nao-consegue-emagrecer",
-  "habitos-que-sabotam-seu-emagrecimento",
   "como-ganhar-massa-muscular",
   "treinar-todos-os-dias-faz-mal",
   "descansar-tambem-faz-crescer",
