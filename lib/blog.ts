@@ -473,7 +473,7 @@ export const blogPosts = ([
       "A maioria das pessoas passa meses na academia sem ver resultado por causa de erros simples que são fáceis de corrigir. Veja se você está cometendo algum deles.",
     category: "Treinamento",
     date: "2024-11-28",
-    updatedAt: "2026-07-22",
+    updatedAt: "2026-10-06",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -505,6 +505,26 @@ export const blogPosts = ([
         question: "Preciso de Personal Trainer para ter resultado na musculação?",
         answer:
           "Não é obrigatório, mas acelera significativamente os resultados e reduz o risco de lesões. Um Personal Trainer garante técnica correta, progressão inteligente e ajustes contínuos — eliminando os erros que fazem a maioria das pessoas ficar meses sem evoluir.",
+      },
+      {
+        question: "Quais são os erros que mais atrapalham o ganho de massa muscular?",
+        answer:
+          "Os que mais aparecem: não subir a carga ou as repetições ao longo das semanas, treinar longe da falha, faltar com frequência, comer pouca proteína e dormir mal. Nenhum deles sozinho impede o resultado, mas dois ou três juntos costumam travar a evolução.",
+      },
+      {
+        question: "Qual o pior inimigo da hipertrofia?",
+        answer:
+          "A falta de constância. Um treino bom feito três vezes por semana durante meses ganha de um treino perfeito abandonado em quatro semanas. Logo depois vem não progredir: repetir sempre a mesma carga e as mesmas repetições.",
+      },
+      {
+        question: "Usar carga leve demais também é erro?",
+        answer:
+          "É, quando a série termina longe do cansaço. Cargas leves funcionam para hipertrofia se a série for levada perto da falha; o erro é parar com várias repetições sobrando. O oposto também atrapalha: carga tão alta que a técnica se perde.",
+      },
+      {
+        question: "Fazer o movimento pela metade ou soltar o peso na descida atrapalha?",
+        answer:
+          "Na maioria dos exercícios, sim. Usar a amplitude completa que a sua mobilidade permite e controlar a descida mantém o músculo trabalhando durante todo o movimento e deixa a progressão de carga mais honesta.",
       },
     ],
     faqSchema: [
