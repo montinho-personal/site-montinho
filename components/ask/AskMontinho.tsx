@@ -20,6 +20,7 @@ interface Msg {
   topics?: string[];
   noAnswer?: boolean;
   feedback?: "up" | "down";
+  comparar?: { titulo: string; href: string; par: string };
 }
 interface PageContext { slug: string; title?: string; category?: string }
 
@@ -178,6 +179,7 @@ export default function AskMontinho({
           intent: data.intent,
           topics: data.topics,
           noAnswer: data.noAnswer,
+          comparar: data.comparar,
         };
         setMessages((prev) => [...prev, msg]);
         trackEvent(data.noAnswer ? "ask_montinho_no_answer" : "ask_montinho_answer", {
@@ -382,6 +384,17 @@ export default function AskMontinho({
                     ))}
                   </ul>
                 </div>
+              )}
+
+              {m.comparar && (
+                <Link
+                  href={m.comparar.href}
+                  onClick={() => trackEvent("ask_compare_click", { par: m.comparar!.par })}
+                  className="mt-3 flex items-center justify-between gap-3 border border-[#BA9E50]/50 px-4 py-3 min-h-[48px] text-sm text-white hover:border-[#BA9E50]"
+                >
+                  <span>{m.comparar.titulo}: o que é igual, o que muda e qual faz sentido para você</span>
+                  <span className="shrink-0 font-semibold" style={{ color: "#BA9E50" }}>Comparar lado a lado →</span>
+                </Link>
               )}
 
               {ctaBlock(m) && <div className="mt-4">{ctaBlock(m)}</div>}

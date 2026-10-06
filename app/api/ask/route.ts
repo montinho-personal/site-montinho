@@ -25,6 +25,8 @@ import {
   type CTA,
 } from "@/lib/ask/guards";
 import { getBlogPost } from "@/lib/blog";
+import { detectaComparacao, linkComparador } from "@/lib/treino/comparador";
+import { EXERCICIO_POR_ID } from "@/lib/treino/exercicios";
 
 export const runtime = "nodejs";
 
@@ -66,6 +68,8 @@ interface AskResponse {
   fallback?: boolean;
   /** Assunto detectado — só palavras do acervo. Vai para analytics. */
   topics?: string[];
+  /** "X ou Y" com dois exercícios da base: link para comparar lado a lado. */
+  comparar?: { titulo: string; href: string; par: string };
 }
 
 const EVIDENCE_MIN = 60;
@@ -259,6 +263,10 @@ export async function POST(req: NextRequest) {
   // Recuperação na base Montinho
   const retrieval = retrieve(question, context);
   const cta = pickCTA(question, intent);
+  const par = detectaComparacao(question);
+  const comparar = par
+    ? { titulo: `${EXERCICIO_POR_ID.get(par[0])!.nome} × ${EXERCICIO_POR_ID.get(par[1])!.nome}`, href: linkComparador(par[0], par[1]), par: par.join("__") }
+    : undefined;
 
   // Log agregado para radar de conteúdo (sem texto da pergunta, sem PII)
   const gapLog = (answered: boolean, mode: string) =>
@@ -267,6 +275,7 @@ export async function POST(req: NextRequest) {
         t: "ask_metric",
         intent,
         topics,
+      comparar,
         answered,
         mode,
         evidence: Math.round(retrieval.evidence),
@@ -286,6 +295,7 @@ export async function POST(req: NextRequest) {
       cta: cta ?? "whatsapp",
       noAnswer: true,
       topics,
+      comparar,
     });
   }
 
@@ -309,6 +319,7 @@ export async function POST(req: NextRequest) {
       cta,
       noAnswer: false,
       topics,
+      comparar,
       fallback: true,
     });
   }
@@ -321,5 +332,6 @@ export async function POST(req: NextRequest) {
     cta,
     noAnswer: false,
       topics,
+      comparar,
   });
 }
