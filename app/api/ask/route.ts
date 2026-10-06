@@ -26,6 +26,7 @@ import {
 } from "@/lib/ask/guards";
 import { getBlogPost } from "@/lib/blog";
 import { detectaComparacao, linkComparador } from "@/lib/treino/comparador";
+import { detectaRotina } from "@/lib/rotina/ask";
 import { EXERCICIO_POR_ID } from "@/lib/treino/exercicios";
 
 export const runtime = "nodejs";
@@ -70,6 +71,8 @@ interface AskResponse {
   topics?: string[];
   /** "X ou Y" com dois exercícios da base: link para comparar lado a lado. */
   comparar?: { titulo: string; href: string; par: string };
+  /** Pergunta de divisão/frequência: atalho para o Treino Para Minha Rotina. */
+  rotina?: { titulo: string; href: string };
 }
 
 const EVIDENCE_MIN = 60;
@@ -263,6 +266,8 @@ export async function POST(req: NextRequest) {
   // Recuperação na base Montinho
   const retrieval = retrieve(question, context);
   const cta = pickCTA(question, intent);
+  const rotinaHit = detectaRotina(question);
+  const rotina = rotinaHit ? { titulo: rotinaHit.titulo, href: rotinaHit.href } : undefined;
   const par = detectaComparacao(question);
   const comparar = par
     ? { titulo: `${EXERCICIO_POR_ID.get(par[0])!.nome} × ${EXERCICIO_POR_ID.get(par[1])!.nome}`, href: linkComparador(par[0], par[1]), par: par.join("__") }
@@ -276,6 +281,7 @@ export async function POST(req: NextRequest) {
         intent,
         topics,
       comparar,
+      rotina,
         answered,
         mode,
         evidence: Math.round(retrieval.evidence),
@@ -296,6 +302,7 @@ export async function POST(req: NextRequest) {
       noAnswer: true,
       topics,
       comparar,
+      rotina,
     });
   }
 
@@ -320,6 +327,7 @@ export async function POST(req: NextRequest) {
       noAnswer: false,
       topics,
       comparar,
+      rotina,
       fallback: true,
     });
   }
@@ -333,5 +341,6 @@ export async function POST(req: NextRequest) {
     noAnswer: false,
       topics,
       comparar,
+      rotina,
   });
 }

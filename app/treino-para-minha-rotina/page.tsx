@@ -160,6 +160,47 @@ export default function TreinoParaMinhaRotinaPage() {
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h2s}>
+              Como dividir o treino 2, 3, 4, 5 ou 6 vezes por semana
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Não existe uma divisão única para cada número de dias. Estas são as
+              que a ferramenta compara — e quem decide entre elas são os seus dias
+              reais, o tempo por sessão e o seu momento:
+            </p>
+            <ul className="space-y-3 text-gray-300 leading-relaxed">
+              <li><strong className="text-white">2x por semana:</strong> Full Body nas duas sessões costuma ser o encaixe mais natural, porque cada região é treinada duas vezes. <Link href="/treino-para-minha-rotina?dias=2" className={ln}>Montar com 2 dias</Link></li>
+              <li><strong className="text-white">3x por semana:</strong> Full Body 3x, Upper/Lower alternado, Superior/Inferior/Corpo inteiro ou ABC (empurrar, puxar, pernas). Para quem está começando, o Full Body tende a ser o mais simples de manter. <Link href="/treino-para-minha-rotina?dias=3" className={ln}>Montar com 3 dias</Link></li>
+              <li><strong className="text-white">4x por semana:</strong> Upper/Lower é o encaixe mais comum, principalmente com dias seguidos (superior hoje, inferior amanhã). Full Body 4x e ABCD também funcionam, em contextos diferentes. <Link href="/treino-para-minha-rotina?dias=4" className={ln}>Montar com 4 dias</Link></li>
+              <li><strong className="text-white">5x por semana:</strong> Upper/Lower com uma sessão extra ou o híbrido PPL + Upper/Lower. Cinco dias não pedem PPL automaticamente. <Link href="/treino-para-minha-rotina?dias=5" className={ln}>Montar com 5 dias</Link></li>
+              <li><strong className="text-white">6x por semana:</strong> PPL duas vezes ou Upper/Lower em três ciclos, para quem já tem consistência e recuperação. Ter seis dias livres não significa precisar treinar seis. <Link href="/treino-para-minha-rotina?dias=6" className={ln}>Montar com 6 dias</Link></li>
+            </ul>
+            <p className="text-gray-300 leading-relaxed mt-4">
+              PPL ou Upper/Lower? Com quatro dias, Upper/Lower costuma encaixar
+              melhor: cada metade do corpo é treinada duas vezes. O PPL precisa de
+              seis dias para fazer o mesmo; com três, cada grupo aparece uma vez na
+              semana. Veja também <Link href="/blog/full-body-vs-divisao-abc" className={ln}>Full Body vs ABC</Link> e <Link href="/blog/quantos-dias-por-semana-treinar" className={ln}>quantos dias por semana treinar</Link>.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h2s}>
+              Perdi um treino. E agora?
+            </h2>
+            <p className="text-gray-300 leading-relaxed">
+              Continue a sequência no próximo dia disponível. Se a semana era
+              Superior na segunda, Inferior na terça e você perdeu a terça, o
+              Inferior vai para quinta e o resto anda uma casa; o que sobrar entra
+              no começo da semana seguinte. O corpo não sabe que sexta é &ldquo;dia de
+              perna&rdquo;: a ordem importa mais que o nome do dia. Quem trabalha por
+              escala ou tem horários que mudam toda semana pode usar só a
+              sequência (A, B, A, B), sem calendário fixo. E numa semana em que só
+              cabem menos treinos, o ajuste é temporário: você não precisa trocar
+              de programa por causa de uma semana apertada.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h2s}>
               Tenho só 30 minutos. Ainda vale?
             </h2>
             <p className="text-gray-300 leading-relaxed">
