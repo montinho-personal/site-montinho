@@ -600,7 +600,7 @@ export const blogPosts = ([
       "Lesões são o maior inimigo dos resultados a longo prazo. Aprenda as estratégias que uso com meus alunos para treinar com intensidade e sem se machucar.",
     category: "Lesões",
     date: "2024-11-15",
-    updatedAt: "2026-07-22",
+    updatedAt: "2026-10-06",
     readTime: "6 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -632,6 +632,36 @@ export const blogPosts = ([
         question: "O aquecimento realmente previne lesões?",
         answer:
           "Sim. O aquecimento eleva a temperatura muscular, ativa o sistema nervoso central e prepara as articulações para o movimento com carga. Estudos mostram que um aquecimento específico de 5 a 10 minutos reduz significativamente a incidência de lesões agudas e melhora o desempenho no treino.",
+      },
+      {
+        question: "O que fazer para evitar lesão muscular na academia?",
+        answer:
+          "Aquecer antes de usar carga (5 a 10 minutos de movimento leve e séries de aproximação), aprender a técnica antes de subir o peso, aumentar a carga aos poucos e respeitar o descanso entre os treinos do mesmo músculo. A maioria das lesões vem de pular uma dessas etapas, não de um exercício específico.",
+      },
+      {
+        question: "Como saber se lesionei o músculo na academia?",
+        answer:
+          "Dor que aparece de repente durante o exercício, em um ponto localizado, às vezes com estalo, inchaço ou roxo, e que impede de continuar é diferente da dor muscular tardia, que surge espalhada um ou dois dias depois e melhora com movimento leve. Se for o primeiro caso, pare de treinar a região e procure um médico ou fisioterapeuta para avaliar.",
+      },
+      {
+        question: "Quais são os tipos de lesão muscular?",
+        answer:
+          "Os mais citados são a contusão (pancada), a distensão ou estiramento (o músculo esticado além do limite) e a ruptura, parcial ou total, que é a mais grave. Só a avaliação de um profissional de saúde define o tipo e o grau.",
+      },
+      {
+        question: "Machuquei a lombar na academia, o que fazer?",
+        answer:
+          "Pare o exercício que causou a dor e não teste a carga de novo no mesmo dia. Dor com formigamento, perda de força na perna ou que não melhora em poucos dias pede avaliação médica. O artigo Travou a lombar: o que fazer explica os cuidados dos primeiros dias; remédio é decisão do médico.",
+      },
+      {
+        question: "Existem exercícios que prejudicam a coluna?",
+        answer:
+          "Nenhum exercício é proibido para todo mundo. O que sobrecarrega a coluna é carga acima da capacidade, técnica ruim (como arredondar as costas no levantamento) e volume que sobe rápido demais. Quem tem dor ou histórico de lesão precisa de adaptação individual.",
+      },
+      {
+        question: "Malhei perna e não consigo andar. É lesão?",
+        answer:
+          "Na maioria das vezes é dor muscular tardia: aparece entre 24 e 72 horas depois, nos dois lados, e melhora com movimento leve. Inchaço grande, urina escura ou dor muito forte que não melhora são sinais para procurar atendimento médico.",
       },
     ],
     faqSchema: [
