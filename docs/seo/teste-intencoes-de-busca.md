@@ -384,3 +384,6 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 ### por-que-voce-nao-consegue-emagrecer (06/10)
 - Prints "por que não consigo emagrecer": +8 FAQs (mesmo com dieta e exercício, já tentei de tudo, não consigo parar de comer, doença/hormônio, menopausa, Mounjaro → dose é do médico, jejum intermitente, barriga).
 - Fora: livro, Desire Coelho (pessoa), frases, "5 alimentos" (nutrição), "estou deprimida" (saúde mental — não tratar em FAQ).
+
+### como-nao-perder-o-shape-no-natal (06/10)
+- Prints "como não engordar no natal": +4 FAQs (como não engordar, 10 kg até o Natal, 4 kg em um mês, o que mata a fome). Fora: gestação/gravidez, barriga, "o que jantar à noite" (cardápio).
