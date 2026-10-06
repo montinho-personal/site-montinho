@@ -377,3 +377,6 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 ### como-prevenir-lesoes-no-treino (06/10)
 - Prints "como prevenir lesões na musculação": +6 FAQs (evitar lesão muscular, como saber se lesionei, tipos de lesão, machuquei a lombar → travou-a-lombar, exercícios que prejudicam a coluna, malhei perna e não consigo andar → DOMS). Sem diagnóstico: sinais de alerta → médico/fisioterapeuta.
 - Fora: pdf, artigo científico, musculação emagrece, benefícios da musculação feminina, "o que tomar" (remédio).
+
+### erros-comuns-no-treino-de-musculacao (06/10)
+- Prints "erros na musculação": +4 FAQs (erros no ganho de massa, pior inimigo da hipertrofia, carga leve demais, amplitude/descida). Já cobria erro mais comum e quantas vezes por semana. O artigo aparece no autocompletar do Google.
