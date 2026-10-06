@@ -406,3 +406,6 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 
 ### como-voltar-rapidamente-apos-festas (06/10)
 - Prints "voltar a treinar depois das festas": +4 FAQs (como voltar, depois de 2 semanas, depois de 1 mês ou mais, academia depois do jantar). Fora: frase motivacional; 12-3-30 já está em o-que-fazer-entre-natal-e-ano-novo.
+
+### como-voltar-rotina-depois-do-carnaval (06/10)
+- Prints "voltar à rotina depois do carnaval": +3 FAQs (como voltar à rotina, retomar treinos após tempo parado, treinar ajuda a voltar ao ritmo). Fora: "o que significa voltando a rotina", "por que a Quaresma acontece depois do Carnaval".

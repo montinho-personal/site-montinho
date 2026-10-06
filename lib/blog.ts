@@ -72007,7 +72007,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
     excerpt: "O Carnaval acabou e agora é hora de retomar os trilhos. Veja um plano prático para voltar à rotina de treinos e alimentação sem culpa.",
     category: "Treinamento",
     date: "2026-03-04",
-    updatedAt: "2026-03-04",
+    updatedAt: "2026-10-06",
     readTime: "7 min",
     author: "Montinho",
     tags: ["pós-carnaval", "rotina de treinos", "volta aos treinos", "motivação", "Alphaville"],
@@ -72017,6 +72017,9 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
       { question: "O que comer para se recuperar mais rápido após o Carnaval?", answer: "Priorize proteínas magras, legumes, frutas e muita água. Reduza o sódio e o açúcar nos primeiros dias para diminuir o inchaço." },
       { question: "Vale a pena fazer jejum para compensar os excessos do Carnaval?", answer: "Não é necessário. Jejuns prolongados sem orientação podem prejudicar a energia para os treinos. Uma alimentação equilibrada já resolve." },
       { question: "Como manter a motivação logo após o Carnaval?", answer: "Defina uma meta clara para as próximas 4 semanas, anote seus treinos e busque um parceiro ou profissional para te acompanhar." },
+      { question: "Como voltar à rotina depois do Carnaval?", answer: "Comece pelo sono: volte a deitar e acordar nos horários de sempre já na quarta-feira de cinzas. Retome as refeições normais, sem jejum para compensar, e marque os treinos da semana na agenda, começando mais leve. A rotina volta em poucos dias quando você não tenta recuperar tudo de uma vez." },
+      { question: "Como retomar os treinos depois de um tempo parado?", answer: "Volte com cargas e volume menores, por volta de metade a dois terços do que fazia, e vá subindo ao longo de duas semanas. A dor muscular dos primeiros treinos é normal; sentir dor forte a ponto de faltar no seguinte é sinal de que começou pesado demais." },
+      { question: "Treinar ajuda a voltar ao ritmo depois do Carnaval?", answer: "Ajuda. Um treino leve já nos primeiros dias melhora o sono, devolve a sensação de rotina e tira o peso de 'recomeçar na segunda que vem'. Caminhada e musculação leve funcionam bem nessa primeira semana." },
     ],
     content: `
 <h2>O Vilão não é o Carnaval. É a Quarta-Feira que Nunca Chega</h2>
