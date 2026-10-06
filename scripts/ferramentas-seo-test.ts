@@ -50,7 +50,6 @@ const paginas = [
  */
 const DESCRIPTION_LONGA_PENDENTE = new Set([
   "/diagnostico",
-  "/treino-para-minha-rotina",
   "/pergunte-ao-montinho",
 ]);
 

@@ -9,7 +9,7 @@ import Trilha from "@/components/ferramentas/Trilha";
 export const metadata: Metadata = {
   title: "Treino Para Minha Rotina: Descubra Sua Melhor Divisão",
   description:
-    "Quantos dias e quanto tempo você realmente tem para treinar? Descubra uma estrutura de musculação compatível com sua rotina, objetivo e experiência. Gratuito, 1 minuto.",
+    "Treino 3, 4 ou 5 vezes por semana? Diga seus dias e o tempo livre e veja a divisão que cabe na sua rotina: Full Body, Upper/Lower ou ABC. Grátis.",
   alternates: {
     canonical: `${SITE_URL}/treino-para-minha-rotina`,
   },

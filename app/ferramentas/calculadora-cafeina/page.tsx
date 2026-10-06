@@ -24,7 +24,7 @@ const CAMINHO = "/ferramentas/calculadora-cafeina";
 export const metadata: Metadata = {
   title: { absolute: "Quanto de Cafeína por Dia? Calculadora de Cafeína por Kg" },
   description:
-    "Some o café, o chá, o energético e o pré-treino do seu dia e veja se passa do limite de 400 mg, a dose por kg para treinar e o horário do último café para dormir bem.",
+    "Some café, chá, energético e pré-treino e veja se passa do limite de 400 mg por dia, a dose por kg para treinar e até que horas tomar o último café.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
     title: "Calculadora de Cafeína | Montinho",
