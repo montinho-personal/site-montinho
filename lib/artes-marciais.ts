@@ -196,4 +196,5 @@ export const ARTIGOS_COM_CALCULADORA_ARTES_MARCIAIS: string[] = [
   "resultado-ufc-332",
   "ufc-vegas-124-gabriel-bonfim-sean-brady",
   "resultado-ufc-vegas-124-bonfim-brady",
+  "ufc-vegas-122-allen-duncan",
 ];
