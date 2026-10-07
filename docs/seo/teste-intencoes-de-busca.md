@@ -419,3 +419,7 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 
 ### retatrutida-faz-perder-musculos (07/10)
 - Prints "retratutida perde massa magra" (busca que mais cresceu no artigo: 31 → 98 impressões/semana): +6 FAQs (perde massa magra, preserva massa muscular, quantos kg se perde, como age, perdi muita massa magra, é melhor que Mounjaro). Grafia "retratutida" incluída. Fora: perde cabelo, dose, efeito colateral (decisão médica / outra pauta), bimagrumabe (já tem artigo).
+
+### como-manter-motivacao-apos-carnaval (07/10)
+- Prints "como manter a motivação para treinar": +6 FAQs (ter motivação para malhar, motivação na academia, treinar em casa, sem disposição, o que tomar para ter ânimo, 3 pilares da musculação). Fora: frases/status, motivação para estudar, "3 elementos da motivação", como motivar alguém.
+- Obs.: o anúncio da campanha "Pesquisa | Consultoria Online | Conversão" aparece nessa busca (marcada como qualificada).
