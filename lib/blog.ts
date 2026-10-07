@@ -11963,6 +11963,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "A Retatrutida causou perda média de 24% do peso corporal em estudos clínicos. Parte desse peso pode ser músculo. Saiba o que os dados mostram e o que você pode fazer a respeito.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-10-07",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -11999,6 +12000,36 @@ RIR 3 = parou com 3 reps sobrando.</p>
         question: "Quanto tempo leva para perceber perda muscular durante o uso de Retatrutida?",
         answer:
           "Sem contramedidas, a perda muscular pode começar nas primeiras semanas do tratamento. Com treino e proteína adequados, esse processo é atenuado significativamente. O monitoramento da força e da composição corporal é fundamental.",
+      },
+      {
+        question: "Retatrutida perde massa magra?",
+        answer:
+          "Sim. Como em qualquer emagrecimento rápido, parte do peso que sai é massa magra, e não só gordura. Isso vale para a retatrutida (muita gente escreve \"retratutida\") e para os outros remédios da classe. Quanto disso é músculo depende principalmente de treino de força e de proteína suficiente.",
+      },
+      {
+        question: "A retatrutida preserva a massa muscular?",
+        answer:
+          "Não sozinha. O remédio reduz a fome e o peso; quem dá ao corpo um motivo para manter o músculo é o treino de força, junto com proteína suficiente. Sem esse estímulo, a perda de massa magra tende a ser maior.",
+      },
+      {
+        question: "Quantos kg se perde com retatrutida?",
+        answer:
+          "No ensaio de fase 2, publicado no New England Journal of Medicine em 2023, a perda média foi de 17,5% a 24,2% do peso em 48 semanas, conforme a dose. Para quem pesa 100 kg, isso equivale a 17 a 24 kg. Cada pessoa responde de um jeito, e a dose é decisão do médico.",
+      },
+      {
+        question: "Como age a retatrutida no corpo?",
+        answer:
+          "Ela age em três receptores ao mesmo tempo: GLP-1, GIP e glucagon. Na prática, isso reduz bastante o apetite e aumenta o gasto de energia, o que explica a perda de peso grande e também o risco de comer pouca proteína.",
+      },
+      {
+        question: "Perdi muita massa magra, o que fazer?",
+        answer:
+          "Converse com o médico que acompanha o tratamento e comece ou ajuste o treino de força, com carga que suba aos poucos. Confira se a proteína está chegando no dia a dia, mesmo com pouca fome. Acompanhar a força no treino e repetir a bioimpedância ajuda a ver se a perda parou.",
+      },
+      {
+        question: "Retatrutida é melhor que Mounjaro?",
+        answer:
+          "Depende do caso e é decisão médica. A comparação de perda de peso e de efeitos está no artigo \"Retatrutida ou Mounjaro\", aqui no blog.",
       },
     ],
     faqSchema: [
