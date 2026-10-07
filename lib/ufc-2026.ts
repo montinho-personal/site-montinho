@@ -4,6 +4,131 @@ import type { BlogPost } from "./blog";
  *  fonte oficial (ufc.com.br) ou de dois veículos independentes. */
 export const UFC_2026_POSTS: BlogPost[] = [
   {
+    slug: "ufc-vegas-122-allen-duncan",
+    title: "UFC Vegas 122: card, horário, lutas e onde assistir Allen x Duncan",
+    metaTitle: "UFC Vegas 122: Card, Horário e Onde Assistir",
+    metaDescription:
+      "UFC Vegas 122, sábado 10/10: card completo, horário de Brasília (preliminares 18h, principal 21h), onde assistir e os sete brasileiros, com Matheus Camilo no co-main.",
+    excerpt:
+      "Card completo, horários em Brasília, onde assistir e os brasileiros do UFC Vegas 122, com Allen x Duncan na luta principal.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-10-07",
+    readTime: "4 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC Vegas 122", "Matheus Camilo", "Ketlen Souza", "Brendan Allen"],
+    content: `<blockquote><p>Informações verificadas em 7 de outubro de 2026 na página oficial do evento. O card ainda pode mudar até a luta; esta página é atualizada.</p></blockquote>
+<p>O <strong>UFC Vegas 122</strong> é no <strong>sábado, 10 de outubro de 2026</strong>, no Meta Apex, em Las Vegas. Na luta principal, o norte-americano <strong>Brendan Allen</strong> (4º do ranking) enfrenta o inglês <strong>Christian Leroy Duncan</strong> (10º) no peso-médio. O card tem 12 lutas e sete brasileiros.</p>
+
+<h2>Que horas começa o UFC Vegas 122?</h2>
+<table><thead><tr><th>Parte do evento</th><th>Horário de Brasília</th></tr></thead><tbody>
+<tr><td>Card preliminar</td><td>18h</td></tr>
+<tr><td>Card principal</td><td>21h</td></tr>
+</tbody></table>
+<p>A luta principal é a última da noite, então Allen x Duncan começa bem depois das 21h.</p>
+
+<h2>Onde assistir ao UFC Vegas 122 ao vivo</h2>
+<p>Preliminares e card principal passam no <strong>Paramount+</strong>, que transmite o UFC no Brasil.</p>
+
+<h2>Card principal (21h)</h2>
+<table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
+<tr><td>Brendan Allen x Christian Leroy Duncan</td><td>Peso-médio (luta principal)</td></tr>
+<tr><td><strong>Matheus Camilo</strong> x Jai Herbert</td><td>Peso-leve (co-main)</td></tr>
+<tr><td>Loopy Godinez x <strong>Ketlen Souza</strong></td><td>Peso-palha feminino</td></tr>
+<tr><td>Andre Fili x Kai Kamaka</td><td>Peso-pena</td></tr>
+<tr><td>Malcolm Wellmaker x Otari Tanzilovi</td><td>Peso-galo</td></tr>
+</tbody></table>
+
+<h2>Card preliminar (18h)</h2>
+<table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
+<tr><td>Julius Walker x Gerald Meerschaert</td><td>Meio-pesado</td></tr>
+<tr><td>Francisco Prado x <strong>Ismael Bonfim</strong></td><td>Peso-leve</td></tr>
+<tr><td><strong>Alice Pereira</strong> x Daria Zhelezniakova</td><td>Peso-galo feminino</td></tr>
+<tr><td>Ernesta Kareckaitė x <strong>Melissa Gatto</strong></td><td>Peso-mosca feminino</td></tr>
+<tr><td><strong>Felipe Franco</strong> x <strong>Brendson Ribeiro</strong></td><td>Meio-pesado</td></tr>
+<tr><td>Allen Frye Jr. x RJ Harris</td><td>Peso-pesado</td></tr>
+<tr><td>Niko Price x Leon Shahbazyan</td><td>Meio-médio</td></tr>
+</tbody></table>
+<p>A ordem das lutas dentro de cada bloco pode mudar até o dia do evento.</p>
+
+<h2>Os brasileiros do UFC Vegas 122</h2>
+<ul>
+<li><strong>Matheus Camilo</strong>, contra Jai Herbert, no co-main.</li>
+<li><strong>Ketlen Souza</strong>, contra Loopy Godinez (8ª do ranking), no card principal.</li>
+<li><strong>Ismael Bonfim</strong>, contra Francisco Prado. É irmão de Gabriel Bonfim, que faz a principal do <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">UFC Vegas 124</a>.</li>
+<li><strong>Alice Pereira</strong>, contra Daria Zhelezniakova (15ª do ranking).</li>
+<li><strong>Melissa Gatto</strong>, contra Ernesta Kareckaitė.</li>
+<li><strong>Felipe Franco</strong> x <strong>Brendson Ribeiro</strong>: luta entre dois brasileiros, então um brasileiro vence com certeza.</li>
+</ul>
+
+<h2>Quem ganhou?</h2>
+<p>Os resultados saem em <a href="/blog/resultado-ufc-vegas-122">resultado do UFC Vegas 122</a>, atualizado na noite da luta.</p>
+
+<h2>Quanto se gasta numa aula de luta</h2>
+<p>Quem treina artes marciais costuma perguntar quanto gasta por aula. A conta depende do peso e de quanto da aula é luta de verdade: faça a sua na calculadora abaixo. Para entender como os lutadores chegam ao peso, veja <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-october-10-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 122: card, horários e transmissão (página oficial)</a></li>
+</ul>`,
+    faq: [
+      { question: "Quando é o UFC Vegas 122?", answer: "Sábado, 10 de outubro de 2026, no Meta Apex, em Las Vegas." },
+      { question: "Que horas começa o UFC Vegas 122?", answer: "O card preliminar começa às 18h e o card principal às 21h, no horário de Brasília." },
+      { question: "Onde assistir ao UFC Vegas 122?", answer: "No Paramount+, que transmite as preliminares e o card principal no Brasil." },
+      { question: "Qual é a luta principal do UFC Vegas 122?", answer: "Brendan Allen x Christian Leroy Duncan, no peso-médio." },
+      { question: "Quantas lutas tem o UFC Vegas 122?", answer: "12 lutas: 5 no card principal e 7 no preliminar." },
+      { question: "Quais brasileiros lutam no UFC Vegas 122?", answer: "Matheus Camilo, Ketlen Souza, Ismael Bonfim, Alice Pereira, Melissa Gatto, Felipe Franco e Brendson Ribeiro." },
+      { question: "Tem UFC neste sábado?", answer: "Sim, o UFC Vegas 122, no sábado 10/10, com preliminares às 18h e card principal às 21h (Brasília)." },
+    ],
+  },
+  {
+    slug: "resultado-ufc-vegas-122",
+    title: "Resultado UFC Vegas 122: quem ganhou Allen x Duncan e os brasileiros",
+    metaTitle: "Resultado UFC Vegas 122: Quem Ganhou Allen x Duncan",
+    metaDescription:
+      "Resultado do UFC Vegas 122 (10/10): quem ganhou Allen x Duncan e o resultado de Matheus Camilo, Ketlen Souza e dos brasileiros do card. Atualizado na noite da luta.",
+    excerpt:
+      "Quem ganhou Allen x Duncan e o resultado dos sete brasileiros do UFC Vegas 122, atualizado ao fim de cada luta.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-10-07",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC Vegas 122", "resultado UFC", "Matheus Camilo", "Ketlen Souza"],
+    content: `<blockquote><p><strong>As lutas ainda não aconteceram.</strong> O UFC Vegas 122 é no sábado, 10 de outubro, em Las Vegas. Esta página é atualizada com o resultado de cada luta assim que ele for confirmado.</p></blockquote>
+
+<h2>Quem ganhou Allen x Duncan?</h2>
+<p><strong>Resultado: aguardando a luta.</strong> É a luta principal da noite, no peso-médio, entre o 4º e o 10º do ranking.</p>
+
+<h2>Resultados dos brasileiros no UFC Vegas 122</h2>
+<table><thead><tr><th>Luta</th><th>Resultado</th></tr></thead><tbody>
+<tr><td><strong>Matheus Camilo</strong> x Jai Herbert</td><td>Aguardando</td></tr>
+<tr><td><strong>Ketlen Souza</strong> x Loopy Godinez</td><td>Aguardando</td></tr>
+<tr><td><strong>Ismael Bonfim</strong> x Francisco Prado</td><td>Aguardando</td></tr>
+<tr><td><strong>Alice Pereira</strong> x Daria Zhelezniakova</td><td>Aguardando</td></tr>
+<tr><td><strong>Melissa Gatto</strong> x Ernesta Kareckaitė</td><td>Aguardando</td></tr>
+<tr><td><strong>Felipe Franco</strong> x <strong>Brendson Ribeiro</strong></td><td>Aguardando</td></tr>
+</tbody></table>
+
+<h2>Horário e onde assistir</h2>
+<p>Preliminares às 18h e card principal às 21h (Brasília), no Paramount+. Card completo em <a href="/blog/ufc-vegas-122-allen-duncan">UFC Vegas 122: card, horário e onde assistir</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-october-10-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 122: card, horários e transmissão (página oficial)</a></li>
+</ul>`,
+    faq: [
+      { question: "Quem ganhou Allen x Duncan?", answer: "A luta é no sábado, 10 de outubro de 2026. O resultado entra nesta página assim que for confirmado." },
+      { question: "Quem ganhou o UFC Vegas 122?", answer: "O evento acontece na noite de 10/10. Os resultados entram aqui ao fim de cada luta." },
+    ],
+  },
+  {
     slug: "ufc-vegas-124-gabriel-bonfim-sean-brady",
     title: "Gabriel Bonfim x Sean Brady: UFC Vegas 124, horário, card e onde assistir",
     metaTitle: "Gabriel Bonfim x Sean Brady: Horário e Onde Assistir o UFC",
