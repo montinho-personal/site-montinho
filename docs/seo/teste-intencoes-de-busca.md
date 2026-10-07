@@ -416,3 +416,6 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 
 ### vale-a-pena-comecar-academia-agora (07/10)
 - Prints "vale a pena começar academia": +6 FAQs (vale a pena fazer academia, 1x por semana, pagar academia cara, resultado com 1 mês, 30 minutos por dia, musculação emagrece). Fora: "é vantajoso abrir uma academia" (outra intenção), "prancha".
+
+### retatrutida-faz-perder-musculos (07/10)
+- Prints "retratutida perde massa magra" (busca que mais cresceu no artigo: 31 → 98 impressões/semana): +6 FAQs (perde massa magra, preserva massa muscular, quantos kg se perde, como age, perdi muita massa magra, é melhor que Mounjaro). Grafia "retratutida" incluída. Fora: perde cabelo, dose, efeito colateral (decisão médica / outra pauta), bimagrumabe (já tem artigo).
