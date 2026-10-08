@@ -166,9 +166,9 @@ export default function ComparadorWheyPage() {
               <li><strong className="text-white">Preço de equilíbrio</strong> = o preço em que um whey empataria com o mais econômico, pelo custo da proteína.</li>
             </ul>
             <p className="text-gray-400 text-sm leading-relaxed mt-3">
-              Tudo é estimativa a partir do rótulo declarado, que a norma permite arredondar. Os preços do catálogo são conferidos à mão na loja
-              oficial e mostram condição de pagamento, loja e data; com mais de {VALIDADE_PRECO_DIAS} dias, saem da comparação. Pix e cupom nunca
-              são tratados como preço universal, e o frete não entra (depende da região). Nenhuma marca paga para aparecer, e a ordem do resultado é
+              Tudo é estimativa a partir do rótulo declarado, que a norma permite arredondar. Os preços do catálogo são conferidos na loja
+              oficial: o comparador usa o menor preço visto na página (&ldquo;a partir de&rdquo;), com loja e data; o valor exato muda conforme
+              sabor e forma de pagamento. Com mais de {VALIDADE_PRECO_DIAS} dias, o preço sai da comparação, e o frete não entra (depende da região). Nenhuma marca paga para aparecer, e a ordem do resultado é
               só pelo custo da proteína.
             </p>
           </div>
