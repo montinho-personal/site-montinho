@@ -62,6 +62,26 @@ const faq = [
       "Depende do objetivo e do ponto de partida. Para a maioria dos alunos, entre duas e quatro sessões semanais bem estruturadas geram evolução consistente de força, condicionamento físico e composição corporal. Mais importante que a quantidade é a regularidade e a qualidade da execução — e é nisso que o presencial mais ajuda.",
   },
   {
+    question: "Malhar com personal trainer 2 vezes por semana dá resultado?",
+    answer:
+      "Dá, quando as duas sessões são bem aproveitadas e se repetem semana após semana. Com duas sessões, cada treino precisa trabalhar o corpo todo e a carga tem que subir aos poucos. Se você quiser mais, dá para somar caminhada ou um treino sozinho nos outros dias, com o plano montado junto. O que mais atrapalha quem treina duas vezes não é a frequência: é faltar numa delas e ficar com uma só.",
+  },
+  {
+    question: "Quanto tempo dura uma aula com personal trainer?",
+    answer:
+      "Depende do planejamento de cada aluno, e a duração é combinada antes de começar. Toda sessão tem aquecimento, a parte principal do treino e o ajuste do que vem na próxima — quem está voltando de lesão ou começando do zero, por exemplo, não segue o mesmo formato de quem já treina há anos.",
+  },
+  {
+    question: "Academia sem personal trainer dá resultado?",
+    answer:
+      "Dá, e muita gente evolui treinando sozinha. O personal faz diferença quando a carga parou de subir, quando um exercício incomoda e você não sabe o que trocar, quando a rotina mudou e o treino não acompanhou, ou quando você simplesmente não consegue manter a frequência. É alguém olhando a execução e decidindo o próximo passo junto com você.",
+  },
+  {
+    question: "Como funciona o pagamento de um personal trainer?",
+    answer:
+      "O valor depende da modalidade (presencial, online ou híbrido), da frequência semanal e da duração do contrato. A forma de pagamento e a renovação ficam combinadas na proposta, antes da primeira aula. Para receber a proposta para o seu caso, é só chamar no WhatsApp.",
+  },
+  {
     question: "Nunca treinei na vida. Consigo acompanhar?",
     answer:
       "Sim — e começar com acompanhamento é a forma mais segura de fazer isso. Iniciantes evoluem rápido quando o protocolo respeita o ponto de partida: aprendemos primeiro a técnica e a postura, construímos base de força e mobilidade, e só então aumentamos a intensidade com progressão de carga gradual.",
