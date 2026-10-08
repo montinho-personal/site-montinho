@@ -377,6 +377,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     selo: "novo",
   },
   {
+    id: "comparador-whey",
+    href: "/ferramentas/comparador-whey-protein",
+    nome: "Batalha dos Wheys",
+    resultado: "Compare wheys pelo custo do grama de proteína e descubra qual compensa mais.",
+    acao: "Comparar wheys",
+    tempo: "1 minuto",
+    categoria: "suplementacao",
+    icone: "medida",
+    tags: ["comparador de whey", "melhor whey custo beneficio", "whey barato", "isolado ou concentrado", "preco por grama de proteina", "qual whey comprar", "whey protein"],
+    selo: "novo",
+  },
+  {
     id: "whey",
     href: "/ferramentas/calculadora-whey",
     nome: "Calculadora de Whey",
