@@ -82653,7 +82653,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "academia-gavioes-alphaville",
     title: "Academia Gaviões em Alphaville: O Que Esperar",
-    metaTitle: "Academia Gaviões Alphaville: Vale a Pena? Análise",
+    metaTitle: "Gaviões 24h Alphaville: Endereço, Horário e Vale a Pena?",
     metaDescription: "Academia Gaviões em Alphaville: para quem é indicada a rede de musculação forte em SP, prós e contras honestos e como aproveitar. Confira a análise.",
     excerpt: "A Gaviões construiu fama em SP como academia de musculação raiz. Veja o que esperar em Alphaville, para quem ela é indicada e como extrair o máximo.",
     category: "Academias",
