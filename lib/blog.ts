@@ -79704,7 +79704,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Aldeia da Serra:</strong> <a href="/blog/scelta-aldeia-da-serra">Scelta Aldeia da Serra</a> e o <a href="/blog/academias-em-aldeia-da-serra">guia da Aldeia</a>.</li>
 <li><strong>Quem vem pela Castelo Branco ou de trem:</strong> <a href="/blog/academia-perto-da-castelo-branco">academia perto da Castelo Branco</a> e <a href="/blog/academia-perto-da-estacao-antonio-joao">perto da estação Antônio João</a>.</li>
 </ul>
-<p><strong>Smart Fit perto de você:</strong> a rede tem mais de uma unidade na região — uma delas no Shopping Flamingo Alphaville, em Barueri. As pessoas buscam as unidades pelo ponto de referência (Flamingo, Carrefour, Sodimac); confira a mais próxima no localizador do site da Smart Fit e leia a <a href="/blog/smart-fit-alphaville">análise da Smart Fit Alphaville</a>. <strong>Gaviões:</strong> a <a href="/blog/academia-gavioes-alphaville">Academia Gaviões Alphaville</a> fica na Rua Juruá, 253, com musculação, artes marciais, dança, sala de bike e rooftop, segundo o site oficial.</p>
+<p><strong>Smart Fit perto de você:</strong> a rede tem mais de uma unidade na região — uma delas no Shopping Flamingo Alphaville, em Barueri. As pessoas buscam as unidades pelo ponto de referência (Flamingo, Carrefour, Sodimac); confira a mais próxima no localizador do site da Smart Fit e leia a <a href="/blog/smart-fit-alphaville">análise da Smart Fit Alphaville</a>. <strong>Gaviões:</strong> a <a href="/blog/academia-gavioes-alphaville">Academia Gaviões Alphaville</a> fica na Av. Juruá, 253, com musculação, artes marciais, dança, sala de bike e rooftop, segundo o site oficial.</p>
 <p>Ainda em dúvida? O <a href="/academia-ideal-alphaville">quiz da academia ideal</a> cruza região, horário, preço e convênio.</p>
 
 <h2>Comparativo qualitativo da região</h2>
@@ -79749,7 +79749,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>`,
     faq: [
       { question: "Onde fica a Smart Fit em Alphaville?", answer: "A rede tem mais de uma unidade na região, incluindo a do Shopping Flamingo Alphaville, em Barueri. Confira a mais próxima no localizador do site da Smart Fit." },
-      { question: "Onde fica a Academia Gaviões Alphaville?", answer: "Na Rua Juruá, 253, em Alphaville, Barueri, segundo o site oficial da academia." },
+      { question: "Onde fica a Academia Gaviões Alphaville?", answer: "Na Av. Juruá, 253, em Alphaville, Barueri, segundo o site oficial da academia." },
       { question: "Qual academia fica perto do Iguatemi Alphaville?", answer: "A Bodytech fica perto do Iguatemi Alphaville. O guia de academias perto do Iguatemi traz as opções da região." },
       { question: "Qual academia fica perto da Alameda Rio Negro?", answer: "No Alphaville Industrial e Empresarial ficam Ironberg, Smart Fit, Bluefit, Panobianco, Bio Ritmo, Arena 18, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit." },
       { question: "Tem academia em Alphaville do lado de Santana de Parnaíba?", answer: "Sim: a Fábrica Premium fica na Estrada da Bela Vista, em Santana de Parnaíba, e o guia de academias da cidade traz as outras opções." },
@@ -81625,7 +81625,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     author: "Montinho",
     tags: ["academia perto do centro comercial alphaville","academia em alphaville","musculação alphaville","treino no almoço","academia alameda rio negro"],
     faqSchema: [
-      { question: "Quais academias ficam no Centro Industrial de Alphaville?", answer: "Entre outras: Ironberg (Estrada Aldeinha, 181), Gaviões (Rua Juruá, 253), SkyFit (Av. Juruá), Bluefit (Al. Amazonas, 388), Smart Fit Sodimac (Al. Araguaia, 1801) e Bodytech Iguatemi (Al. Rio Negro, 111)." },
+      { question: "Quais academias ficam no Centro Industrial de Alphaville?", answer: "Entre outras: Ironberg (Estrada Aldeinha, 181), Gaviões (Av. Juruá, 253), SkyFit (Av. Juruá), Bluefit (Al. Amazonas, 388), Smart Fit Sodimac (Al. Araguaia, 1801) e Bodytech Iguatemi (Al. Rio Negro, 111)." },
       { question: "Tem academia 24 horas perto do Centro Comercial Alphaville?", answer: "Sim, a Ironberg, na Estrada Aldeinha, 181, funciona 24 horas." },
       { question: "Tem academia perto do Centro Comercial Alphaville?", answer: "Sim. O centro comercial e o entorno da Alameda Rio Negro formam o polo com maior densidade de academias da região, de redes econômicas a premium. Confirme unidades e horários nos sites oficiais." },
       { question: "Dá para treinar no horário de almoço em Alphaville?", answer: "Sim, é um hábito consolidado entre quem trabalha na região. Um treino de 45 a 60 minutos bem planejado cabe no intervalo, com tempo para banho." },
@@ -81649,7 +81649,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Academias no Centro Industrial e Empresarial de Alphaville: endereços</h2>
 <ul>
 <li><strong>Ironberg</strong> — Estrada Aldeinha, 181, com acesso pela Av. Dr. Dib Sauaia Neto. Funciona 24 horas. <a href="/blog/ironberg-alphaville">Ver análise</a>.</li>
-<li><strong>Gaviões</strong> — Rua Juruá, 253, segundo o site oficial: musculação, artes marciais, danças e sala de bike. <a href="/blog/academia-gavioes-alphaville">Ver análise</a>.</li>
+<li><strong>Gaviões</strong> — Av. Juruá, 253, segundo o site oficial: musculação, artes marciais, danças e sala de bike. <a href="/blog/academia-gavioes-alphaville">Ver análise</a>.</li>
 <li><strong>SkyFit</strong> — Avenida Juruá (307 no site oficial; 343 no Google Maps). Aceita Wellhub e TotalPass. <a href="/blog/skyfit-alphaville">Ver análise</a>.</li>
 <li><strong>Bluefit</strong> — Alameda Amazonas, 388. Aberta das 5h à meia-noite nos dias úteis. <a href="/blog/bluefit-alphaville">Ver análise</a>.</li>
 <li><strong>Smart Fit Sodimac</strong> — Alameda Araguaia, 1801, no estacionamento do Sodimac. <a href="/blog/smart-fit-alphaville">Ver todas as unidades da Smart Fit</a>.</li>
