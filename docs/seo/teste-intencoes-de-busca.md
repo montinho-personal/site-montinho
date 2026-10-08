@@ -522,3 +522,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - GSC 28 dias: 111 impressões, 2 cliques, posição 7,7. Export: "fábrica premium alphaville" 480/mês. Prompts de IA leram "fábrica" como indústria (descartados). PAA genérico: academia prime/premium, maior/mais cara de Alphaville, montar academia.
 - Página já tinha horário, telefone, endereço, dono, mensalidade, diária. +4 FAQs: Alphaville × Santana de Parnaíba (GPS), o que é academia premium, Wellhub/TotalPass (não encontrado nos canais conferidos), personal externo. updatedAt 08/10.
 - Fora: maior/mais cara de Alphaville (sem fonte), Ironberg, montar academia.
+
+### blog/academias-perto-de-alphaville (08/10) — Answer the Public
+- GSC 28 dias: 110 impressões, 2 cliques, posição 11,5. Export sem aba de volume. PAA: mais cara, maior, preço Gaviões/Fábrica/Scelta/Ironberg, mais barata, Gympass. IA: 24h, piscina, pilates, luta, estacionamento, avaliação gratuita, personal.
+- +seção "por necessidade" (links para 24h, piscina, pilates, mais barata, quanto custa, premium) e +5 FAQs (24h, piscina, mais barata, mais cara, Wellhub/TotalPass). updatedAt 08/10.
+- Achado: o FAQ desta página diz "Rua Juruá, 253" para a Gaviões (atribuído ao site oficial); Wellhub e anúncio de vaga dizem "Avenida Juruá, 253". Número igual; tipo de logradouro a confirmar.
