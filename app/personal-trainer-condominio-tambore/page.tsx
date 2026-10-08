@@ -68,6 +68,21 @@ const faq = [
     answer:
       "Antes da primeira sessão, fazemos uma conversa inicial para entender seu objetivo, histórico e limitações. Na visita ao condomínio, avalio o espaço disponível e montamos juntos o protocolo. A primeira sessão prática pode acontecer na mesma semana.",
   },
+  {
+    question: "Personal em condomínio no Tamboré atende idosos?",
+    answer:
+      "Atende. Treinar na academia do próprio condomínio, sem trânsito e num ambiente conhecido, ajuda muito depois dos 60. O foco fica em força, equilíbrio e mobilidade, com progressão cuidadosa.",
+  },
+  {
+    question: "Tem aula experimental no condomínio?",
+    answer:
+      "Tem. A aula experimental é marcada pelo WhatsApp e acontece no espaço fitness do seu condomínio, já com os equipamentos que você vai usar no dia a dia.",
+  },
+  {
+    question: "Como conferir se o personal é habilitado antes de contratar?",
+    answer:
+      "Pergunte o número de registro no CREF. Pela Lei nº 9.696/1998, orientar exercício é atividade do profissional de Educação Física registrado no Conselho Regional. Muitos condomínios pedem esse registro para liberar personal externo.",
+  },
 ];
 
 const localSchema = {

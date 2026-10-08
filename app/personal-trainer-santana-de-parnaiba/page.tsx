@@ -131,6 +131,16 @@ const faq = [
     answer:
       "Faço. A avaliação física é o começo: mostra como você se movimenta, a força que já tem e o que precisa de cuidado. É a referência para montar as primeiras semanas e para medir a evolução depois.",
   },
+  {
+    question: "Dá para fazer uma aula experimental em Santana de Parnaíba?",
+    answer:
+      "Dá. Marcamos pelo WhatsApp, no condomínio, em casa ou na Arena 18. Você treina uma vez antes de decidir.",
+  },
+  {
+    question: "O pagamento pode ser no cartão de crédito?",
+    answer:
+      "Pode. As condições de pagamento ficam na proposta, combinadas antes de começar.",
+  },
 ];
 
 const localSchema = {
