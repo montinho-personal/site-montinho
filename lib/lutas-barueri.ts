@@ -25,7 +25,7 @@ export const LUTAS_BARUERI_POSTS: BlogPost[] = [
 <h2>Onde treinar luta em Barueri e Alphaville</h2>
 <ul>
 <li><strong>CT Cícero Costha Barueri</strong> — centro de treinamento com jiu-jitsu, muay thai e boxe, segundo o perfil oficial no Instagram (@cicerocosthabarueri).</li>
-<li><strong><a href="/blog/academia-gavioes-alphaville">Academia Gaviões Alphaville</a></strong> — na Rua Juruá, 253, com artes marciais entre as modalidades, segundo o site oficial.</li>
+<li><strong><a href="/blog/academia-gavioes-alphaville">Academia Gaviões Alphaville</a></strong> — na Av. Juruá, 253, com artes marciais entre as modalidades, segundo o site oficial.</li>
 <li><strong>Equipes conhecidas:</strong> muita gente busca por equipe (Alliance, Team Cruz). Antes de ir, confirme no site ou no Instagram da equipe se existe filial em Barueri e em qual endereço.</li>
 </ul>
 <p>Horários e valores mudam com frequência — confirme direto com cada academia.</p>
