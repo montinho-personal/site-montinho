@@ -434,3 +434,8 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 - PAA (23 perguntas): a página já cobria 1h, 3x/semana e "é vantajoso". +4 FAQs: 2x/semana dá resultado; quanto tempo dura a aula; academia sem personal dá resultado; como funciona o pagamento (sem preço publicado).
 - Fora: "ironberg alphaville" (atendimento não confirmado lá), nome de outra profissional, "personal mulher", "quanto ganha um personal CLT" (intenção de quem quer ser personal), "pode treinar 1 hora da manhã".
 - Processo: a partir daqui o export do Answer the Public + 1 print da primeira página substitui os 4 prints (regra no AGENTS.md).
+
+### personal-trainer-barueri (08/10) — Answer the Public
+- Export: "personal trainer em barueri" 110/mês (CPC US$ 0,56). Novidade do export: prompts de ChatGPT/Gemini (preço, a domicílio, online, emagrecimento, iniciantes, reabilitação, "como escolher", "academias com personal incluso", "feminina").
+- A página já cobria 1 mês, 3x/semana, 3 ou 5 vezes, é vantajoso, domicílio, online, iniciantes, idosos, emagrecimento. +4 FAQs: quanto custa 2x/semana (sem valor); melhor com ou sem personal; diferença coach × personal; como escolher personal em Barueri.
+- Fora: salário/faculdade/bio do Instagram/"outros nomes" (intenção de quem é ou quer ser personal), "qual horário o músculo cresce" (pauta de blog), "personal feminina", "academias com personal incluso" (não afirmar academia não confirmada).
