@@ -440,3 +440,8 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 - A página já cobria 1 mês, 3x/semana, 3 ou 5 vezes, é vantajoso, domicílio, online, iniciantes, idosos, emagrecimento. +4 FAQs: quanto custa 2x/semana (sem valor); melhor com ou sem personal; diferença coach × personal; como escolher personal em Barueri.
 - Fora: salário/faculdade/bio do Instagram/"outros nomes" (intenção de quem é ou quer ser personal), "qual horário o músculo cresce" (pauta de blog), "personal feminina", "academias com personal incluso" (não afirmar academia não confirmada).
 - 08/10, 2º export (modelos de IA): ChatGPT cita "Montinho" entre os personal trainers de Alphaville "com avaliações positivas" (ao lado de outros 4 nomes). +2 FAQs: quanto custa 2x/semana (sem valor) e como escolher um bom personal em Alphaville. Pendentes de confirmação do Montinho: treino ao ar livre e em grupos pequenos/dupla.
+
+### personal-trainer-tambore (08/10) — Answer the Public
+- Export sem aba de volume do Google; PAA quase igual ao de Alphaville (+ Smart Fit, Goiânia/Fortaleza). Prompts de IA: emagrecimento, grupo, iniciantes, reabilitação, avaliação física completa, domiciliar, horários flexíveis, online, hipertrofia, "como escolher".
+- A página já cobria 1h, 3x/semana, taxa de personal externo, é vantajoso, iniciantes/60+, restrições, pouco tempo, online. +4 FAQs: 2x/semana (sem valor), duração da aula, como funciona o pagamento, como escolher (com regra de condomínio para personal externo).
+- Fora: Smart Fit (preço/salário/diária), outras cidades, salário CLT, "pode treinar 1 hora da manhã". Pendente de confirmação: treino em grupo e avaliação física completa.

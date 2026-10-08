@@ -42,6 +42,26 @@ const faq = [
       "Três treinos por semana é a frequência mais procurada, e no pacote semanal o valor por sessão fica menor que na aula avulsa. A proposta exata depende do local e do horário — é só chamar no WhatsApp.",
   },
   {
+    question: "Quanto custa um personal 2 vezes por semana no Tamboré?",
+    answer:
+      "Duas sessões semanais é o plano mais enxuto, e o valor do mês fica abaixo do plano de três. O que muda a proposta é onde o treino acontece — espaço fitness do condomínio, casa ou Arena 18 — e o horário. Pelo WhatsApp eu mando as opções para o seu caso.",
+  },
+  {
+    question: "Quanto tempo dura uma aula com personal trainer?",
+    answer:
+      "A duração é combinada no início, de acordo com o seu objetivo e a sua agenda. Em toda sessão tem aquecimento, o treino principal e a conversa sobre o que muda na próxima. Quem tem a manhã apertada antes de sair do Tamboré, por exemplo, monta um formato diferente de quem treina com calma no fim do dia.",
+  },
+  {
+    question: "Como funciona o pagamento do personal trainer?",
+    answer:
+      "Funciona por plano, não por aula solta: o valor sai da modalidade (presencial, online ou híbrido), da frequência semanal e do tempo de contrato. Forma de pagamento e renovação ficam definidas na proposta, antes de começar.",
+  },
+  {
+    question: "Como escolher um bom personal trainer no Tamboré?",
+    answer:
+      "Veja se ele pode atender onde você treina — muitos condomínios do Tamboré têm regras para personal externo — e se o horário fecha com a sua semana. Depois, observe o trabalho: ele corrige a execução na hora? Muda o plano quando você falta ou quando a carga trava? Explica por que escolheu cada exercício? Uma conversa antes de fechar já mostra isso.",
+  },
+  {
     question: "É permitido cobrar taxa de personal trainer?",
     answer:
       "Cada academia define a própria regra, e algumas cobram taxa do personal externo. Em condomínio, vale o regulamento interno do espaço fitness. Antes de começar, verificamos juntos as regras do local onde você vai treinar.",
