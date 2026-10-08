@@ -423,3 +423,8 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 ### como-manter-motivacao-apos-carnaval (07/10)
 - Prints "como manter a motivação para treinar": +6 FAQs (ter motivação para malhar, motivação na academia, treinar em casa, sem disposição, o que tomar para ter ânimo, 3 pilares da musculação). Fora: frases/status, motivação para estudar, "3 elementos da motivação", como motivar alguém.
 - Obs.: o anúncio da campanha "Pesquisa | Consultoria Online | Conversão" aparece nessa busca (marcada como qualificada).
+
+### Batalha dos Wheys — /ferramentas/comparador-whey-protein (prints 08/10, ainda não publicada)
+- "comparador de whey": autocompletar = comparador de whey protein, comparador whey isolado. Concorrentes: myfoodcompare, Compare Suplementos, calculadora da própria Growth, Proteste. IA = tipos (concentrado/isolado/hidrolisado). Relacionadas: whey dux, whey growth, whey isolado, teste whey anvisa, teste whey inmetro, proteste whey, calculadora whey gorgonoid.
+- "melhor whey custo benefício": autocompletar = 2026, isolado, do mercado, reddit, para emagrecer, e sabor, hoje. PAA = 5 melhores whey; por que a Growth é tão barata; marca mais confiável; mais gostoso e barato. Relacionadas: para ganhar massa, 100% puro, growth, para emagrecer e definir.
+- Decisão: uma página (comparador) cobre "comparador" + "custo-benefício"; "confiável / teste Anvisa-Inmetro-Proteste" vira seção com fonte, nunca selo inventado; "isolado" fica como filtro/modo, não página separada, até ter dados.
