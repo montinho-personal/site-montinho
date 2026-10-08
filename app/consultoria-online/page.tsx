@@ -128,6 +128,22 @@ const faqLp = [
     q: "Viajo muito a trabalho. O acompanhamento continua?",
     a: "Continua — essa é uma das maiores vantagens do formato online. O plano se adapta à academia do hotel, ao peso do corpo ou à estrutura que você tiver, e o suporte pelo WhatsApp vai junto com você para qualquer lugar.",
   },
+  {
+    q: "A consultoria online é ao vivo, por videochamada?",
+    a: "Não é uma aula ao vivo a cada treino — e é isso que dá liberdade de horário. Você treina quando e onde puder, grava a execução e me manda pelo WhatsApp; eu corrijo, respondo e ajusto o plano. Para quem precisa de alguém do lado em cada série, o presencial é o formato certo.",
+  },
+  {
+    q: "Serve para musculação e para ganhar massa?",
+    a: "Serve. O plano de musculação é montado para o seu objetivo — ganhar massa, emagrecer, definir ou ganhar força — com a carga subindo conforme você evolui. Quando a carga para de subir ou um exercício não encaixa, o ajuste vem pelo acompanhamento, sem esperar a ficha vencer.",
+  },
+  {
+    q: "Qual a diferença entre personal trainer e consultoria online?",
+    a: "O profissional é o mesmo; muda o formato. No presencial, o personal está do seu lado na sessão. Na consultoria online, ele monta o plano, analisa os vídeos da sua execução e ajusta o treino a distância, com contato pelo WhatsApp entre os treinos.",
+  },
+  {
+    q: "Quais formas de pagamento a consultoria aceita?",
+    a: "Aceito cartão de crédito. As condições de cada plano vão na proposta que eu te mando pelo WhatsApp, antes de você decidir.",
+  },
 ];
 
 const faqSchema = {
