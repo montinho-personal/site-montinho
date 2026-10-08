@@ -479,6 +479,8 @@ export type AnalyticsEvent =
    * não encontram; nenhum dado pessoal entra nela.
    */
   | "tools_hub_search"
+  /** Busca do site: ferramenta sugerida junto com os artigos foi clicada (id da ferramenta e onde). */
+  | "site_search_tool_click"
   | "tools_no_results"
   | "tools_hub_filter"
   | "tools_hub_expand"

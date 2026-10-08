@@ -4,6 +4,8 @@ import { search } from "@/lib/search";
 import { blogPosts } from "@/lib/blog";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import SearchBar from "@/components/search/SearchBar";
+import { sugerirFerramentas, type FerramentaSugerida } from "@/lib/busca-unificada";
+import { MAIS_USADAS, porId } from "@/lib/ferramentas/catalogo";
 
 /*
  * Página de resultado de busca não é conteúdo: fica noindex e não recebe
@@ -20,7 +22,7 @@ interface Props {
   searchParams: Promise<{ q?: string }>;
 }
 
-// Popular posts shown in empty state — last 4 by date
+// Estado vazio: os 4 artigos mais recentes (por data — não é popularidade).
 const popularPosts = [...blogPosts]
   .sort((a, b) => new Date(b.date + "T12:00:00").getTime() - new Date(a.date + "T12:00:00").getTime())
   .slice(0, 4);
@@ -28,7 +30,8 @@ const popularPosts = [...blogPosts]
 export default async function BuscaPage({ searchParams }: Props) {
   const { q = "" } = await searchParams;
   const query = q.trim();
-  const results = query.length >= 2 ? search(query, 30) : [];
+  const results = query.length >= 2 ? search(query, 30, true) : [];
+  const ferramentas = query.length >= 2 ? sugerirFerramentas(query, 3) : [];
 
   return (
     <main className="min-h-screen bg-black">
@@ -60,8 +63,9 @@ export default async function BuscaPage({ searchParams }: Props) {
       {/* Results or empty state */}
       <section className="py-12">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          {ferramentas.length > 0 && <FerramentasSugeridas ferramentas={ferramentas} />}
           {query && results.length === 0 ? (
-            <EmptyState query={query} />
+            <EmptyState query={query} temFerramenta={ferramentas.length > 0} />
           ) : query && results.length > 0 ? (
             <ResultsList results={results} query={query} />
           ) : (
@@ -157,10 +161,32 @@ function HighlightText({ text, query }: { text: string; query: string }) {
   );
 }
 
-function EmptyState({ query }: { query: string }) {
+function FerramentasSugeridas({ ferramentas }: { ferramentas: FerramentaSugerida[] }) {
+  return (
+    <div className="mb-10">
+      <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gray-400 mb-4">Ferramentas para isso</p>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        {ferramentas.map((f) => (
+          <Link
+            key={f.id}
+            href={f.href}
+            className="border border-[#BA9E50]/40 hover:border-[#BA9E50] p-4 transition-colors duration-300 group"
+          >
+            <p className="text-white text-sm font-bold leading-snug group-hover:text-gray-200">{f.nome}</p>
+            <p className="text-gray-400 text-xs mt-2 leading-relaxed">{f.resultado}</p>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+const maisUsadas = MAIS_USADAS.map(porId).filter((f) => f !== null).slice(0, 4);
+
+function EmptyState({ query, temFerramenta = false }: { query: string; temFerramenta?: boolean }) {
   return (
     <div>
-      {query && (
+      {query && !temFerramenta && (
         <div className="mb-10 p-6 border border-white/10 text-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -187,10 +213,33 @@ function EmptyState({ query }: { query: string }) {
         </div>
       )}
 
-      {/* Popular posts */}
+      {/* Ferramentas mais usadas */}
+      {!query && (
+        <div className="mb-10">
+          <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gray-400 mb-6">
+            Ferramentas mais usadas
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {maisUsadas.map((f) => (
+              <Link
+                key={f!.id}
+                href={f!.href}
+                className="text-sm text-gray-300 hover:text-white border border-white/15 hover:border-white/40 px-4 py-2 transition-colors duration-200"
+              >
+                {f!.nome}
+              </Link>
+            ))}
+            <Link href="/ferramentas" className="text-sm text-white border border-white/40 px-4 py-2">
+              Todas as ferramentas →
+            </Link>
+          </div>
+        </div>
+      )}
+
+      {/* Artigos recentes */}
       <div className="mb-10">
         <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gray-400 mb-6">
-          Artigos populares
+          Artigos recentes
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {popularPosts.map((p) => (

@@ -328,16 +328,78 @@ export function termRarity(term: string): number {
   return idf(fold(term));
 }
 
-export function search(query: string, limit = 20): SearchResult[] {
+// ── Camada de intenção ──────────────────────────────────────────────────────
+//
+// O dicionário de gírias trabalha palavra por palavra. Quem busca descreve a
+// SITUAÇÃO com várias palavras — "perder barriga", "remédio para emagrecer",
+// "quanto custa", "nunca treinei" — e o acervo chama o mesmo assunto por
+// outro nome. Cada intenção abaixo reconhece o jeito de perguntar e acrescenta
+// os termos do acervo. Acrescenta, nunca substitui: o texto original continua
+// decidindo o ranking (título exato, frase exata), e os termos da intenção
+// entram com peso menor, só para trazer o artigo certo que não usa as
+// mesmas palavras de quem pergunta.
+//
+// Regra de curadoria igual à do TOKEN_MAP: cada intenção sai de busca real
+// (Answer the Public, Search Console, pergunta de aluno), não de imaginação.
+
+const INTENCOES: { padrao: RegExp; termos: string; semFerramenta?: true }[] = [
+  { padrao: /\b(perder|perda de|eliminar|tirar) (peso|gordura|barriga|quilos|kg|pochete)\b|\bqueimar gordura\b|\bficar magr/, termos: "emagrecer emagrecimento deficit calorico" },
+  { padrao: /\bganhar (massa|musculo|musculos|peso|corpo)\b|\bficar (forte|grande|musculoso)/, termos: "hipertrofia ganhar massa muscular" },
+  { padrao: /\b(quanto custa|quanto cobra|preco|precos|valor|valores|mensalidade)\b/, termos: "quanto custa preco valor", semFerramenta: true },
+  { padrao: /\b(caneta|ozempic|wegovy|mounjaro|tirzepatida|semaglutida|retatrutida|remedio para emagrecer|injecao para emagrecer)\b/, termos: "mounjaro ozempic tirzepatida semaglutida" },
+  { padrao: /\b(dor|dores|doi|doendo|machuquei|machucado|lesao|lesionado|inflamad)/, termos: "dor lesao" },
+  { padrao: /\b(quantas calorias|gasto calorico|quanto gasto|quanto queima|queima quantas)\b/, termos: "calorias gasto calorico" },
+  { padrao: /\b(sem energia|sem disposicao|desanimad|sem vontade|preguica de treinar)/, termos: "motivacao disposicao" },
+  { padrao: /\b(nunca treinei|comecar a treinar|comecando|iniciante|primeira vez na academia|voltar a treinar)/, termos: "iniciante comecar primeira semana" },
+  { padrao: /\b(idoso|idosos|idosa|terceira idade|mais de 60|60 anos|70 anos)/, termos: "idosos" },
+  { padrao: /\b(gravida|gestante|gestacao|gravidez)/, termos: "gestante gravidez" },
+  { padrao: /\b(em casa|sem academia|sem equipamento|sem aparelho)/, termos: "treino em casa" },
+  { padrao: /\b(dormir|sono|insonia|dormir mal)/, termos: "sono" },
+  { padrao: /\b(proteina em po|po de proteina)/, termos: "whey proteina" },
+  { padrao: /\b(barriga|abdomen|abdominal|pochete|pneuzinho)/, termos: "barriga gordura abdominal" },
+  { padrao: /\b(menopausa|climaterio)/, termos: "menopausa" },
+  { padrao: /\b(quantas vezes|quantos dias|dias por semana|vezes por semana)/, termos: "frequencia dias por semana" },
+];
+
+/** Peso dos termos que vêm da intenção, relativo aos digitados. */
+const PESO_INTENCAO = 0.6;
+
+/**
+ * Termos do acervo que a intenção da consulta acrescenta — só os que existem
+ * em algum artigo, e só os que a pessoa já não digitou.
+ */
+export function termosDeIntencao(query: string, paraFerramentas = false): string[] {
+  const f = fold(query).replace(/[^\p{L}\p{N}\s-]+/gu, " ").replace(/\s+/g, " ");
+  const digitados = new Set(f.split(" "));
+  const out: string[] = [];
+  for (const { padrao, termos, semFerramenta } of INTENCOES) {
+    // Preço de serviço não tem calculadora: a intenção não pode puxar o
+    // "custo" do whey para uma busca por quanto custa o personal.
+    if (!padrao.test(f) || (paraFerramentas && semFerramenta)) continue;
+    for (const t of termos.split(" ")) {
+      if (t.length >= 3 && !digitados.has(t) && !out.includes(t) && dfOf(t) > 0) out.push(t);
+    }
+  }
+  return out;
+}
+
+/**
+ * `intencao` liga a camada de intenção. Só a busca do site liga: o Pergunte
+ * ao Montinho tem a própria âncora de domínio calibrada sem ela, e o
+ * ask-test pegou a regressão ("quero ficar forte" passou a ser recusada).
+ */
+export function search(query: string, limit = 20, intencao = false): SearchResult[] {
   const q = canonicalizeQuery(query.trim());
   if (q.length < 2) return [];
 
   const terms = q.split(/\s+/).filter((t) => t.length >= 2);
+  const extra = intencao ? termosDeIntencao(query).filter((t) => !terms.includes(t)) : [];
 
   const results: SearchResult[] = [];
 
   for (const entry of index) {
-    const score = scoreEntry(entry, q, terms);
+    // "\u0000" nunca casa como frase: a intenção soma só pelos termos.
+    const score = scoreEntry(entry, q, terms) + (extra.length ? PESO_INTENCAO * scoreEntry(entry, "\u0000", extra) : 0);
     if (score > 0) {
       results.push({
         slug: entry.slug,

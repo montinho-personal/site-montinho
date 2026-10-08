@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import type { SearchResult } from "@/lib/search";
+import type { FerramentaSugerida } from "@/lib/busca-unificada";
+import { trackEvent } from "@/lib/analytics";
 
 interface Props {
   /** Compact mode: shows just the icon that expands on click (header desktop) */
@@ -42,6 +44,7 @@ export default function SearchBar({
   const [open, setOpen] = useState(!compact);
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState<SearchResult[]>([]);
+  const [ferramentas, setFerramentas] = useState<FerramentaSugerida[]>([]);
   const [loading, setLoading] = useState(false);
   const [active, setActive] = useState(-1);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -60,6 +63,7 @@ export default function SearchBar({
     if (debounceRef.current) clearTimeout(debounceRef.current);
     if (q.trim().length < 2) {
       setSuggestions([]);
+      setFerramentas([]);
       setLoading(false);
       return;
     }
@@ -69,8 +73,10 @@ export default function SearchBar({
         const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&limit=5`);
         const data = await res.json();
         setSuggestions(data.results ?? []);
+        setFerramentas(data.ferramentas ?? []);
       } catch {
         setSuggestions([]);
+        setFerramentas([]);
       } finally {
         setLoading(false);
       }
@@ -84,8 +90,24 @@ export default function SearchBar({
     fetchSuggestions(val);
   };
 
+  // Ferramentas vêm primeiro na lista; o teclado percorre as duas seções.
+  const total = ferramentas.length + suggestions.length;
+
+  const abrirFerramenta = (f: FerramentaSugerida) => {
+    trackEvent("site_search_tool_click", { ferramenta: f.id, origem: "sugestao" });
+    setSuggestions([]);
+    setFerramentas([]);
+    router.push(f.href);
+    setQuery("");
+    if (compact) {
+      setOpen(false);
+      onClose?.();
+    }
+  };
+
   const navigate = (slug?: string) => {
     setSuggestions([]);
+    setFerramentas([]);
     if (slug) {
       router.push(`/blog/${slug}`);
     } else if (query.trim().length >= 2) {
@@ -101,18 +123,23 @@ export default function SearchBar({
   const handleKey = (e: React.KeyboardEvent) => {
     if (e.key === "ArrowDown") {
       e.preventDefault();
-      setActive((v) => Math.min(v + 1, suggestions.length - 1));
+      setActive((v) => Math.min(v + 1, total - 1));
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
       setActive((v) => Math.max(v - 1, -1));
     } else if (e.key === "Enter") {
-      if (active >= 0 && suggestions[active]) {
-        navigate(suggestions[active].slug);
+      if (active >= 0 && active < ferramentas.length) {
+        e.preventDefault();
+        abrirFerramenta(ferramentas[active]);
+      } else if (active >= ferramentas.length && suggestions[active - ferramentas.length]) {
+        e.preventDefault();
+        navigate(suggestions[active - ferramentas.length].slug);
       } else {
         navigate();
       }
     } else if (e.key === "Escape") {
       setSuggestions([]);
+      setFerramentas([]);
       if (compact) {
         setOpen(false);
         onClose?.();
@@ -125,6 +152,7 @@ export default function SearchBar({
     const handler = (e: MouseEvent) => {
       if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
         setSuggestions([]);
+        setFerramentas([]);
         if (compact) setOpen(false);
       }
     };
@@ -132,7 +160,7 @@ export default function SearchBar({
     return () => document.removeEventListener("mousedown", handler);
   }, [compact]);
 
-  const showDropdown = suggestions.length > 0 || (loading && query.length >= 2);
+  const showDropdown = total > 0 || (loading && query.length >= 2);
 
   // ── COMPACT MODE (header desktop) ─────────────────────────────────────
   if (compact) {
@@ -144,6 +172,7 @@ export default function SearchBar({
           onClick={() => {
             setOpen((v) => !v);
             setSuggestions([]);
+            setFerramentas([]);
             setQuery("");
           }}
           aria-label="Pesquisar"
@@ -204,6 +233,8 @@ export default function SearchBar({
         {open && showDropdown && (
           <div className="absolute top-full right-0 mt-1 w-80 bg-black border border-white/15 shadow-xl z-50">
             <DropdownContent
+              ferramentas={ferramentas}
+              onFerramenta={abrirFerramenta}
               suggestions={suggestions}
               loading={loading}
               query={query}
@@ -262,6 +293,7 @@ export default function SearchBar({
             onClick={() => {
               setQuery("");
               setSuggestions([]);
+              setFerramentas([]);
               inputRef.current?.focus();
             }}
             className="absolute right-3 text-gray-400 hover:text-white transition-colors"
@@ -284,6 +316,8 @@ export default function SearchBar({
       {showDropdown && (
         <div className="absolute top-full left-0 right-0 mt-0.5 bg-black border border-white/15 shadow-xl z-50">
           <DropdownContent
+            ferramentas={ferramentas}
+            onFerramenta={abrirFerramenta}
             suggestions={suggestions}
             loading={loading}
             query={query}
@@ -298,6 +332,8 @@ export default function SearchBar({
 }
 
 function DropdownContent({
+  ferramentas,
+  onFerramenta,
   suggestions,
   loading,
   query,
@@ -305,6 +341,8 @@ function DropdownContent({
   onSelect,
   onViewAll,
 }: {
+  ferramentas: FerramentaSugerida[];
+  onFerramenta: (f: FerramentaSugerida) => void;
   suggestions: SearchResult[];
   loading: boolean;
   query: string;
@@ -312,7 +350,7 @@ function DropdownContent({
   onSelect: (slug: string) => void;
   onViewAll: () => void;
 }) {
-  if (loading && suggestions.length === 0) {
+  if (loading && suggestions.length === 0 && ferramentas.length === 0) {
     return (
       <div className="px-4 py-3 text-gray-400 text-sm flex items-center gap-2">
         <svg className="animate-spin" width="12" height="12" viewBox="0 0 24 24" fill="none">
@@ -323,7 +361,7 @@ function DropdownContent({
     );
   }
 
-  if (suggestions.length === 0) {
+  if (suggestions.length === 0 && ferramentas.length === 0) {
     return (
       <div className="px-4 py-3 text-gray-400 text-sm">
         Nenhum resultado para &ldquo;{query}&rdquo;
@@ -333,7 +371,38 @@ function DropdownContent({
 
   return (
     <>
-      {suggestions.map((s, i) => (
+      {ferramentas.length > 0 && (
+        <>
+          <p className="px-4 pt-3 pb-1 text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-400">Ferramentas</p>
+          {ferramentas.map((f, i) => (
+            <button
+              key={f.id}
+              type="button"
+              onClick={() => onFerramenta(f)}
+              className={`w-full text-left px-4 py-3 border-b border-white/5 transition-colors duration-150 ${
+                i === active ? "bg-white/10" : "hover:bg-white/5"
+              }`}
+            >
+              <div className="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} className="shrink-0 mt-0.5 text-[#BA9E50]" aria-hidden="true">
+                  <rect x="5" y="3" width="14" height="18" rx="2" />
+                  <path strokeLinecap="round" d="M8 7h8M8 11h2M12 11h2M16 11h0M8 15h2M12 15h2M8 18h2M12 18h2M16 15v3" />
+                </svg>
+                <div className="min-w-0">
+                  <p className="text-white text-sm font-medium leading-snug line-clamp-1">{f.nome}</p>
+                  <p className="text-gray-400 text-xs mt-0.5 line-clamp-1">{f.resultado}</p>
+                </div>
+              </div>
+            </button>
+          ))}
+          {suggestions.length > 0 && (
+            <p className="px-4 pt-3 pb-1 text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-400">Artigos</p>
+          )}
+        </>
+      )}
+      {suggestions.map((s, j) => {
+        const i = j + ferramentas.length;
+        return (
         <button
           key={s.slug}
           type="button"
@@ -363,7 +432,8 @@ function DropdownContent({
             </div>
           </div>
         </button>
-      ))}
+        );
+      })}
       <button
         type="button"
         onClick={onViewAll}
