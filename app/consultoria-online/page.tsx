@@ -144,6 +144,14 @@ const faqLp = [
     q: "Quais formas de pagamento a consultoria aceita?",
     a: "Aceito cartão de crédito. As condições de cada plano vão na proposta que eu te mando pelo WhatsApp, antes de você decidir.",
   },
+  {
+    q: "Consultoria online ou aplicativo de treino: qual a diferença?",
+    a: "O aplicativo entrega uma ficha pronta ou gerada por algoritmo, igual para muita gente. Na consultoria, uma pessoa monta o plano para você, olha os vídeos da sua execução e muda o treino quando a carga trava, quando aparece dor ou quando a sua semana muda. O app é mais barato; a consultoria é para quem precisa de alguém percebendo e decidindo junto.",
+  },
+  {
+    q: "É seguro contratar um personal trainer online?",
+    a: "É, quando dá para saber com quem você está falando. Peça o registro no CREF, converse antes de pagar, veja se o plano vem com correção da execução por vídeo e desconfie de promessa de resultado em prazo fixo.",
+  },
 ];
 
 const faqSchema = {
