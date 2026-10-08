@@ -20275,7 +20275,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Treinar em casa em Alphaville não significa abrir mão de qualidade. Com protocolo individualizado e acompanhamento presencial, o resultado chega — independente do local.",
     category: "Treinamento",
     date: "2026-06-27",
-    updatedAt: "2026-09-29",
+    updatedAt: "2026-10-08",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "domicílio", "Alphaville", "treino em casa"],
@@ -20304,6 +20304,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
         answer:
           "Na primeira visita, avalio o espaço disponível, entendo o objetivo e o histórico de treinamento, e já iniciamos a primeira sessão prática. O protocolo formal é entregue após essa sessão inicial com base na avaliação completa.",
       },
+      { question: "Dá para definir o corpo treinando em casa?", answer: "Dá. Músculo responde a esforço e progressão, não ao endereço. Com halteres ajustáveis, elásticos e o peso do corpo, o treino em casa fica difícil o bastante para gerar resultado — o que muda é que a progressão precisa ser planejada, porque não dá para só pegar a anilha do lado." },
+      { question: "Personal a domicílio em Alphaville atende idosos?", answer: "Atende. Treinar em casa tira o trânsito e a academia cheia da equação, o que ajuda muito quem tem mais de 60. O foco fica em força, equilíbrio e mobilidade, com progressão cuidadosa e adaptação às limitações de cada um." },
     ],
     faqSchema: [
       { question: "O que faz um personal trainer?", answer: "Um personal trainer avalia o condicionamento físico, define objetivos realistas, prescreve e supervisiona treinos individualizados e acompanha a evolução ao longo do tempo. O acompanhamento profissional aumenta significativamente a adesão e os resultados." },
@@ -87806,7 +87808,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Do Centro de Barueri aos condomínios próximos ao Tamboré: como funciona o personal a domicílio, para quem faz sentido e o que checar antes de contratar.",
     category: "Treinamento",
     date: "2026-07-08",
-    updatedAt: "2026-09-29",
+    updatedAt: "2026-10-08",
     readTime: "9 min",
     author: "Montinho",
     tags: ["personal trainer a domicílio","barueri","treino em casa","treino em condomínio","personal trainer"],
@@ -87897,6 +87899,10 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Posso treinar na academia do condomínio?", answer: "Sim, desde que o condomínio permita profissionais externos — a maioria permite mediante cadastro simples na portaria." },
       { question: "Sou totalmente iniciante. O formato serve para mim?", answer: "É o cenário ideal: você aprende a técnica correta desde a primeira sessão, em ambiente privado, sem risco de criar vícios de execução treinando sozinho." },
       { question: "Como começo?", answer: "Agende uma avaliação pela página de contato. Na primeira sessão são definidos objetivos, avaliada sua condição atual e montado o plano de treino." },
+      { question: "Dá para ganhar músculo treinando em casa?", answer: "Dá, desde que o treino fique mais difícil com o tempo: mais carga nos halteres, elásticos mais fortes, mais repetições ou exercícios mais exigentes. Sem essa progressão, o treino em casa vira manutenção." },
+      { question: "Preciso ter equipamento em casa?", answer: "Não para começar. Peso do corpo e elásticos já sustentam as primeiras semanas. Conforme a carga precisa subir, a gente avalia juntos se vale investir em halteres ajustáveis ou outro item — só o que for fazer diferença no seu treino." },
+      { question: "Personal trainer a domicílio atende idosos em Barueri?", answer: "Atende. Em casa, o idoso treina sem deslocamento e num ambiente conhecido. O treino prioriza força, equilíbrio e mobilidade, com progressão gradual e atenção às limitações e aos medicamentos que a pessoa usa — sempre em conversa com o médico dela." },
+      { question: "A primeira sessão em casa tem avaliação física?", answer: "Tem. Antes de montar o treino, a avaliação física mostra como você se movimenta, a força que já tem e o que pede cuidado — e também o espaço e o material disponíveis em casa." },
     ],
   },
   {
@@ -117246,7 +117252,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Na Aldeia da Serra, o profissional sobe a serra, não você: como funciona o personal em casa e no condomínio, para quem faz sentido, equipamento, portaria e o que checar antes de contratar.",
     category: "Treinamento",
     date: "2026-09-06",
-    updatedAt: "2026-09-29",
+    updatedAt: "2026-10-08",
     readTime: "8 min",
     author: "Montinho",
     tags: ["personal trainer a domicílio","aldeia da serra","treino em condomínio","treino em casa","personal trainer"],
@@ -117260,6 +117266,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Preciso ter equipamento em casa?", answer: "Não. O treino começa com peso do corpo, elásticos e halteres ajustáveis, ou usa a sala do condomínio. Resultado vem de progressão, técnica e constância, não de máquina." },
       { question: "Quanto custa o personal a domicílio na Aldeia da Serra?", answer: "Depende do local, da frequência semanal e do deslocamento na serra, que pesa mais que em outras regiões. Casal ou dupla no mesmo horário divide esse custo. A proposta vem numa conversa pelo WhatsApp." },
       { question: "Como é uma sessão a domicílio?", answer: "De 50 a 60 minutos: aquecimento direcionado, bloco principal com correção de execução em tempo real e registro de cargas e medidas para a semana seguinte evoluir. Nos dias sem acompanhamento, você recebe o que fazer sozinho." },
+      { question: "É possível ficar mais forte e definido treinando só em casa?", answer: "É. O que faz o músculo responder é treinar perto do limite e aumentar a dificuldade com o tempo. Em casa isso se faz com halteres, elásticos e variações de exercício — o planejamento é o que garante que a carga continue subindo." },
+      { question: "Atende idosos em casa na Aldeia da Serra?", answer: "Atendo. Muitos moradores da Aldeia preferem não descer a serra para treinar, e em casa o treino foca em força, equilíbrio e mobilidade, com progressão tranquila e respeito às limitações." },
+      { question: "O treino a domicílio começa com avaliação física?", answer: "Começa. A avaliação mostra o ponto de partida — movimento, força e o que pede cuidado — e ajuda a escolher o que dá para fazer no espaço que você tem." },
     ],
     content: `<h2>Como funciona o personal a domicílio na Aldeia da Serra</h2>
 <p>O personal trainer a domicílio na Aldeia da Serra é o formato em que <strong>o profissional sobe a serra, não você</strong>. A sessão acontece na sua casa, na área externa ou no espaço fitness do condomínio, no horário combinado, com avaliação inicial, treino desenhado para o que existe ali e progressão registrada de uma semana para a outra. Atendo os residenciais da Aldeia dos dois lados, Barueri e Santana de Parnaíba, e é o formato que mais preserva a constância de quem mora aqui — porque elimina o único obstáculo que realmente derruba treino na região: o deslocamento.</p>
@@ -117458,7 +117467,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Numa cidade feita de condomínio e carro, o personal em casa é o formato que mais preserva a constância. Como funciona, para quem faz sentido, equipamento, portaria e o que checar antes de contratar.",
     category: "Treinamento",
     date: "2026-09-06",
-    updatedAt: "2026-09-29",
+    updatedAt: "2026-10-08",
     readTime: "8 min",
     author: "Montinho",
     tags: ["personal trainer a domicílio","santana de parnaíba","fazendinha","treino em condomínio","treino em casa","personal trainer"],
@@ -117472,6 +117481,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Preciso ter equipamento em casa?", answer: "Não. O treino começa com peso do corpo, elásticos e halteres ajustáveis, ou usa a sala do condomínio. Resultado vem de progressão, técnica e constância, não de máquina." },
       { question: "Quanto custa o personal a domicílio em Santana de Parnaíba?", answer: "Depende do local, da frequência semanal e do deslocamento. Casal ou dupla no mesmo horário divide esse custo. A proposta vem numa conversa pelo WhatsApp." },
       { question: "Como é uma sessão a domicílio?", answer: "De 50 a 60 minutos: aquecimento direcionado, bloco principal com correção de execução em tempo real e registro de cargas e medidas para a semana seguinte evoluir. Nos dias sem acompanhamento, você recebe o que fazer sozinho." },
+      { question: "Treinar em casa dá resultado de verdade?", answer: "Dá, se o treino evoluir. Peso do corpo, elásticos e halteres permitem aumentar a dificuldade semana a semana; o que costuma travar o resultado em casa é repetir o mesmo treino por meses, e é isso que o acompanhamento evita." },
+      { question: "Personal a domicílio em Santana de Parnaíba atende idosos?", answer: "Atende. Em casa, a pessoa treina sem trânsito e sem academia cheia. O foco é força, equilíbrio e mobilidade, com cuidado com as limitações e progressão no ritmo de cada um." },
+      { question: "Tem avaliação física antes de começar em casa?", answer: "Tem. A avaliação física mostra de onde você está partindo e o que precisa de atenção, e serve para comparar a evolução depois — além de mapear o espaço e o material da casa." },
     ],
     content: `<h2>Como funciona o personal a domicílio em Santana de Parnaíba</h2>
 <p>O personal trainer a domicílio em Santana de Parnaíba é o formato em que <strong>o profissional vai até você</strong>: na sua casa, na área externa ou no espaço fitness do condomínio, no horário combinado, com avaliação inicial, treino desenhado para o equipamento que existe ali e progressão registrada de uma semana para a outra. Atendo os condomínios da Fazendinha, da Aldeia da Serra e do Colinas, o Centro e a região da Tenente Marques, e é o formato que mais preserva a constância numa cidade onde quase tudo depende de carro.</p>

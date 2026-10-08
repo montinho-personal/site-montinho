@@ -68,6 +68,21 @@ const faq = [
     answer:
       "O primeiro contato é pelo WhatsApp. Conversamos sobre objetivo, rotina e estrutura disponível. Depois agendamos uma visita inicial gratuita para avaliar o espaço e definir o protocolo. A primeira sessão começa em até uma semana após esse contato.",
   },
+  {
+    question: "Dá para definir o corpo treinando em casa no Tamboré?",
+    answer:
+      "Dá. Com halteres, elásticos e o peso do corpo, o treino em casa fica exigente o suficiente — desde que a dificuldade aumente com o tempo. É isso que separa treinar em casa de só se movimentar em casa.",
+  },
+  {
+    question: "O personal a domicílio atende idosos no Tamboré?",
+    answer:
+      "Atende. Treinar em casa evita deslocamento e ambiente cheio, o que facilita a constância depois dos 60. O treino foca em força, equilíbrio e mobilidade, com progressão cuidadosa.",
+  },
+  {
+    question: "Antes de começar em casa tem avaliação física?",
+    answer:
+      "Tem. A avaliação física é o primeiro passo: mostra como você se movimenta, a força que já tem e o que pede cuidado, e define o começo do treino no espaço da sua casa.",
+  },
 ];
 
 const localSchema = {
