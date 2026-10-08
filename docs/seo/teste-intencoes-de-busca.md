@@ -501,3 +501,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Decisão do Montinho (08/10): opção 2 — faixa de mercado com fonte, sem preço próprio. Fontes: Neon (R$ 80–200/h em grandes cidades) e Superprof (média ~R$ 99/h em SP, 1ª aula grátis na maioria), conferidas pelo buscador em 08/10 (domínios bloqueados no ambiente). A tabela por capital da visão geral por IA NÃO entrou (fonte única, não verificada).
 - Conta do mês em tabela (sessão × treinos × 4,3) com R$ 100 como exemplo explícito. Links para as 5 páginas locais de preço.
 - Ferramenta: ARTIGOS_SEM_FERRAMENTA. Fora: preço de rede específica (Smart Fit/Bluefit etc.), salário, capitais.
+
+### blog/bluefit-barueri (08/10) — Answer the Public
+- GSC 28 dias: 231 impressões, 0 cliques, posição 8,7. Export: "bluefit barueri" 1,9 mil/mês; "avenida trindade bethaville" 90; "bethaville" 40; fotos 20, telefone 20; horário, centro, Tamboré 10. PAA: mensalidade, Bluefit × Smart Fit, por que estão fechando, plano fidelidade, taxa de cancelamento, Gympass/TotalPass, quem é o dono.
+- O FAQ visível tinha só 4 perguntas; endereço e Tamboré estavam apenas no faqSchema antigo (que não vai para a página). +6 FAQs: onde fica, Tamboré, horário, Gympass/TotalPass, mensalidade, fidelidade/cancelamento. Endereços = os já verificados no site oficial; horário/preço/convênio remetem à fonte oficial (sem número). updatedAt 08/10.
+- Fora: "por que estão fechando", "foi vendida", "quem é o dono" (sem fonte verificada), fotos/telefone (dado da unidade).
