@@ -106,6 +106,21 @@ const faq = [
     answer:
       "Sim. Muitos moradores de Tamboré alternam presencial e online por causa de viagens de trabalho. A consultoria online mantém protocolo individualizado, ajustes periódicos e suporte pelo WhatsApp — e pode ser combinada com sessões presenciais quando você está em casa.",
   },
+  {
+    question: "Dá para treinar ao ar livre no Tamboré?",
+    answer:
+      "Dá. Muitos residenciais do Tamboré têm áreas abertas que funcionam bem para o treino, com peso corporal, elásticos e acessórios. Quando chove ou o sol está forte, a sessão vai para um espaço coberto.",
+  },
+  {
+    question: "Você atende em dupla ou grupo pequeno no Tamboré?",
+    answer:
+      "Atendo. É comum casal ou vizinhos de condomínio treinarem juntos. O treino é compartilhado, mas a carga e as adaptações são de cada um. O valor por pessoa fica na proposta.",
+  },
+  {
+    question: "Faz avaliação física antes de começar?",
+    answer:
+      "Faço. A avaliação física é o primeiro passo: mostra como você se movimenta, onde está a sua força e o que pede cuidado. Ela define o começo do treino e vira a referência para comparar a evolução.",
+  },
 ];
 
 const localSchema = {

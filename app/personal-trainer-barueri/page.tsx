@@ -111,6 +111,21 @@ const faq = [
     answer:
       "Para quem tem rotina imprevisível — comum em quem trabalha em Barueri e transita para São Paulo — ofereço consultoria online, com protocolo individualizado, vídeos de execução e ajustes periódicos. Conheça os detalhes na página de consultoria ou fale comigo pelo WhatsApp.",
   },
+  {
+    question: "Personal trainer em Barueri faz treino ao ar livre?",
+    answer:
+      "Faço. O treino pode acontecer em área aberta do condomínio, praça ou parque, usando peso corporal, elásticos e acessórios. Se o tempo virar, ajustamos o local para a sessão não cair.",
+  },
+  {
+    question: "Tem treino em dupla ou em grupo em Barueri?",
+    answer:
+      "Tem. Treinar em dupla ou em grupo pequeno costuma ajudar quem falta sozinho — um puxa o outro. O treino é do grupo, mas cada pessoa tem a carga e as adaptações dela. O valor por pessoa vai na proposta.",
+  },
+  {
+    question: "O acompanhamento inclui avaliação física?",
+    answer:
+      "Inclui. Antes de montar o treino, a avaliação física mostra de onde você está partindo: movimento, força, limitações e histórico. Com ela dá para comparar a evolução depois, em vez de só confiar na balança ou no espelho.",
+  },
 ];
 
 const localSchema = {
