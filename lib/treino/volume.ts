@@ -510,4 +510,7 @@ export const ARTIGOS_COM_LINK_VOLUME: string[] = [
    * quanto músculo ainda cabe no corpo.
    */
   "fibras-musculares-tipo-1-tipo-2",
+  /* Dois treinos por semana: a conta que sobra é quantas séries cada
+     músculo recebe nas duas sessões. Embed no teto; o link serve. */
+  "treinar-2-vezes-por-semana-da-resultado",
 ];

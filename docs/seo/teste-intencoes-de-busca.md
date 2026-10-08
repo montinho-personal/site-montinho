@@ -470,3 +470,10 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Fato com fonte: Lei nº 9.696/1998 (Planalto), com redação da Lei 14.386/2022 para o diploma.
 - Fora: salário/CBO/faculdade como carreira, plural/grafia, instrutor de autoescola. "É obrigatório ter instrutor na academia?" ficou de fora por falta de fonte oficial verificada.
 - Ferramenta: ARTIGOS_SEM_FERRAMENTA.
+
+### blog/treinar-2-vezes-por-semana-da-resultado (novo, 08/10)
+- Export + prints "treinar 2 vezes por semana": principal "treinar 2 vezes por semana dá resultado" (40/mês); "treinar perna 2 ou 3 vezes" (40, pauta à parte); YouTube "treinar duas vezes por semana" (30). Autocompletar/relacionadas: é bom, emagrece, hipertrofia, full body, divisão, feminino, o mesmo músculo. PAA do export quase todo fora do tema (fibromialgia, bursite, nutrição). SERP: Hipertrofia.org, Smart Fit, Correio Braziliense, YouTube (Leandro Twin).
+- Canibalização: quantos-dias-por-semana-treinar é o guia geral (GSC sem buscas de "2 vezes"); o novo artigo foca o cenário de 2 dias e linka para ele, para full-body-vs-divisao-abc e treinar-o-mesmo-musculo-duas-vezes-por-semana.
+- Fontes: OMS 2020 (≥2 dias/semana de fortalecimento), Schoenfeld 2016 (PMID 27102172) e Schoenfeld, Grgic, Krieger 2019 (doi 10.1080/02640414.2018.1555906).
+- Ferramenta: link da calculadora de volume (ARTIGOS_COM_LINK_VOLUME; embed no teto).
+- Achado: 2 artigos antigos citam o PMID 27102172 como "Ralston et al."; o registro é de Schoenfeld 2016. Correção pendente de aprovação.
