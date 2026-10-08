@@ -47,6 +47,26 @@ const faq = [
       "Três treinos por semana é a frequência mais procurada, e no pacote mensal o valor por sessão fica menor que na aula avulsa. A proposta exata depende do local e do horário — é só chamar no WhatsApp.",
   },
   {
+    question: "Quanto custa um personal 2 vezes por semana?",
+    answer:
+      "Duas sessões por semana é o plano de entrada mais comum, e o valor mensal fica abaixo do de três. A proposta depende do local (Arena 18, condomínio ou casa) e do horário — me chame no WhatsApp que eu mando as opções.",
+  },
+  {
+    question: "É melhor treinar com personal ou sem?",
+    answer:
+      "Dá para evoluir sozinho, e muita gente evolui. O personal faz diferença quando você não sabe se a execução está certa, quando a carga parou de subir, quando uma dor apareceu ou quando a semana desanda e o treino some. Aí é ter alguém percebendo e ajustando com você — o treino continua sendo seu.",
+  },
+  {
+    question: "Qual a diferença entre coach e personal trainer?",
+    answer:
+      "O personal trainer cuida do treino físico: monta, acompanha a execução na hora, escolhe a carga e muda o plano quando o corpo ou a rotina pedem. \"Coach\" é um nome usado para muita coisa, de mentoria de hábitos a consultoria online, e nem sempre inclui alguém do seu lado conferindo o exercício.",
+  },
+  {
+    question: "Como escolher um personal trainer em Barueri?",
+    answer:
+      "Primeiro, o prático: onde ele atende (academia, condomínio, casa) e se o horário cabe na sua semana. Depois, como ele trabalha: se olha a sua execução ou só passa a ficha, se ajusta quando a carga para ou quando você falta, e se explica o porquê das escolhas. Uma conversa antes de fechar costuma responder isso.",
+  },
+  {
     question: "É melhor treinar 3 ou 5 vezes na semana?",
     answer:
       "Para a maioria, 3 treinos bem estruturados dão resultado e cabem na rotina. Cinco só compensa com sono, recuperação e tempo para manter — o que mais pesa é sustentar a frequência por meses.",
