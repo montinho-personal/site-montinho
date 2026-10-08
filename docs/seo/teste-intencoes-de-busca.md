@@ -511,3 +511,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Export: "personal trainer granja viana" 20/mês. PAA: 1 mês, 3x/semana, hora, com ou sem personal, 2x, Smart Fit, salário (fora). IA: em casa, online × presencial, emagrecimento, idosos, reabilitação, corrida, credenciados, agendar.
 - FAQ visível tinha 3 perguntas. +6: 1 mês (sem valor, link mental para o artigo nacional de preço), 2 ou 3 vezes, com ou sem personal, idosos, avaliação/aula experimental, cartão. updatedAt 08/10.
 - Pendente: confirmar com o Montinho se o atendimento presencial na Granja Viana é real (a página afirma) e corrigir a frase "Granja Viana é um dos condomínios... entre Cotia e Santana de Parnaíba".
+
+### blog/academia-gavioes-alphaville (08/10) — Answer the Public
+- GSC 28 dias: 189 impressões, 0 cliques, posição 11,3. Export: "academia gaviões alphaville" 1,9 mil/mês (Google); "academia gaviões 24h - alphaville" 4,4 mil (Bing); "...avenida juruá alphaville barueri sp" 390; fotos 110; avaliações 50; preço 50; "em alphaville" 40. PAA: mensalidade, Gympass, dono, maior academia de Alphaville, Gaviões × Smart Fit.
+- A página não tinha endereço nem horário. +5 FAQs: endereço (Av. Juruá, 253 — Wellhub + anúncio de vaga da rede, duas fontes), 24h (nome da unidade + horário no Wellhub), Wellhub/TotalPass, mensalidade (remete à fonte oficial), personal externo (regra da unidade; nada de afirmar atendimento do Montinho). updatedAt 08/10.
+- Proposta pendente (ATUAL/PROPOSTA/MOTIVO): metaTitle com "Endereço e 24h".
+- Fora: dono, CNPJ, franquia, salário, outras unidades (Aeroporto, Sapopemba, Carapicuíba), Ironberg/Juju Salimeni.
