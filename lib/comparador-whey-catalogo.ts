@@ -1,4 +1,5 @@
 import { SUPABASE_PUBLISHABLE_KEY, SUPABASE_URL } from "./crm/supabase/config";
+import { analisa, concentracaoBaixa, entraNoRanking, ofertaValida, statusPreco } from "./comparador-whey";
 
 /**
  * Leitura do catálogo da Batalha dos Wheys (tabelas whey_produtos e
@@ -57,6 +58,49 @@ export interface ProdutoCatalogo {
   rotuloVerificadoEm: string;
   /** O preço mais recente de cada condição. */
   precos: PrecoCatalogo[];
+}
+
+/**
+ * Um preço só por produto: o menor da conferência mais recente ("a partir
+ * de"). O comparador e o ranking da página usam a mesma regra.
+ */
+export function precoReferencia(p: ProdutoCatalogo): PrecoCatalogo | null {
+  if (!p.precos.length) return null;
+  const dia = (iso: string) => new Date(new Date(iso).getTime() - 3 * 3600e3).toISOString().slice(0, 10);
+  const ultimo = p.precos.map((x) => dia(x.verificadoEm)).sort().at(-1)!;
+  return p.precos.filter((x) => dia(x.verificadoEm) === ultimo).sort((a, b) => a.precoCentavos - b.precoCentavos)[0];
+}
+
+const g1 = (n: number) => n.toLocaleString("pt-BR", { maximumFractionDigits: 1 });
+const peso = (g: number) => (g >= 1000 ? `${g1(g / 1000)} kg` : `${g1(g)} g`);
+
+/** "Growth Whey Concentrado · 1 kg": marca, linha sem repetição e peso. */
+export function nomeCurtoWhey(p: ProdutoCatalogo): string {
+  const linha = p.linha.replace(/^Whey Protein /, "Whey ");
+  return `${p.marca.replace(/ Supplements$| Human Health$/, "")} ${linha} · ${peso(p.pacoteG)}`;
+}
+
+/** Uma linha do ranking da página: só produto com preço dentro da validade e em estoque. */
+export interface LinhaRanking {
+  produto: ProdutoCatalogo;
+  preco: PrecoCatalogo;
+  centavosPor25g: number;
+  concentracaoPct: number;
+  concentracaoBaixa: boolean;
+}
+
+export function montaRanking(catalogo: ProdutoCatalogo[], agora: Date): LinhaRanking[] {
+  const out: LinhaRanking[] = [];
+  for (const p of catalogo) {
+    const preco = precoReferencia(p);
+    if (!preco || preco.emEstoque === false) continue;
+    if (!entraNoRanking(statusPreco(new Date(preco.verificadoEm), agora))) continue;
+    const oferta = { pacoteG: p.pacoteG, porcaoG: p.porcaoG, proteinaPorcaoG: p.proteinaPorcaoG, precoCentavos: preco.precoCentavos };
+    if (!ofertaValida(oferta)) continue;
+    const a = analisa(oferta);
+    out.push({ produto: p, preco, centavosPor25g: a.centavosPor25g, concentracaoPct: a.concentracaoPct, concentracaoBaixa: concentracaoBaixa(oferta) });
+  }
+  return out.sort((x, y) => x.centavosPor25g - y.centavosPor25g);
 }
 
 const num = (v: unknown) => (v === null || v === undefined ? null : Number(v));
