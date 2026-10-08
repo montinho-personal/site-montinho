@@ -67,6 +67,16 @@ const faq = [
       "Dá, quando as duas sessões são bem aproveitadas e se repetem semana após semana. Com duas sessões, cada treino precisa trabalhar o corpo todo e a carga tem que subir aos poucos. Se você quiser mais, dá para somar caminhada ou um treino sozinho nos outros dias, com o plano montado junto. O que mais atrapalha quem treina duas vezes não é a frequência: é faltar numa delas e ficar com uma só.",
   },
   {
+    question: "Quanto custa um personal 2 vezes por semana?",
+    answer:
+      "Duas sessões por semana é o plano de entrada mais comum, e o valor mensal fica abaixo do de três. A proposta depende do local (Arena 18, condomínio ou casa) e do horário — me chame no WhatsApp que eu mando as opções.",
+  },
+  {
+    question: "Como escolher um bom personal trainer em Alphaville?",
+    answer:
+      "Primeiro, o prático: onde ele atende (academia, condomínio, casa) e se o horário cabe na sua semana. Depois, como ele trabalha: se olha a sua execução ou só passa a ficha, se ajusta quando a carga para ou quando você falta, e se explica o porquê das escolhas. Uma conversa antes de fechar costuma responder isso.",
+  },
+  {
     question: "Quanto tempo dura uma aula com personal trainer?",
     answer:
       "Depende do planejamento de cada aluno, e a duração é combinada antes de começar. Toda sessão tem aquecimento, a parte principal do treino e o ajuste do que vem na próxima — quem está voltando de lesão ou começando do zero, por exemplo, não segue o mesmo formato de quem já treina há anos.",
