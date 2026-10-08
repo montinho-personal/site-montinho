@@ -20,7 +20,7 @@ import {
   type Oferta,
   type StatusPreco,
 } from "@/lib/comparador-whey";
-import { ROTULO_CONDICAO, type CondicaoPreco, type ProdutoCatalogo } from "@/lib/comparador-whey-catalogo";
+import { ROTULO_CONDICAO, nomeCurtoWhey, precoReferencia, type CondicaoPreco, type ProdutoCatalogo } from "@/lib/comparador-whey-catalogo";
 
 /**
  * A Batalha dos Wheys.
@@ -86,12 +86,7 @@ function centavos(texto: string): number | null {
 
 const dataBR = (iso: string) => new Date(iso).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", year: "numeric", timeZone: "America/Sao_Paulo" });
 const g1 = (n: number) => n.toLocaleString("pt-BR", { maximumFractionDigits: 1 });
-const peso = (g: number) => (g >= 1000 ? `${g1(g / 1000)} kg` : `${g1(g)} g`);
-/** "Growth Whey Concentrado · 1 kg": marca, linha sem repetição e peso. Sabor fica de fora (o rótulo de referência aparece abaixo). */
-const nomeCurto = (p: ProdutoCatalogo) => {
-  const linha = p.linha.replace(/^Whey Protein /, "Whey ");
-  return `${p.marca.replace(/ Supplements$| Human Health$/, "")} ${linha} · ${peso(p.pacoteG)}`;
-};
+const nomeCurto = nomeCurtoWhey;
 
 /* ───────────────────────── URL ───────────────────────── */
 
@@ -370,17 +365,7 @@ function resolver(l: Lado, idx: number, catalogo: ProdutoCatalogo[], agora: Date
   };
 }
 
-/**
- * Um preço só por produto: o menor da conferência mais recente ("a partir
- * de"). Forma de pagamento e sabor não viram opção na tela; o valor exato
- * fica com a loja. A condição que vier no link antigo é ignorada.
- */
-function escolherPreco(p: ProdutoCatalogo) {
-  if (!p.precos.length) return null;
-  const dia = (iso: string) => new Date(new Date(iso).getTime() - 3 * 3600e3).toISOString().slice(0, 10);
-  const ultimo = p.precos.map((x) => dia(x.verificadoEm)).sort().at(-1)!;
-  return p.precos.filter((x) => dia(x.verificadoEm) === ultimo).sort((a, b) => a.precoCentavos - b.precoCentavos)[0];
-}
+const escolherPreco = precoReferencia;
 
 function SeletorCatalogo({ lado, catalogo, onChange }: { lado: Extract<Lado, { fonte: "catalogo" }>; catalogo: ProdutoCatalogo[]; onChange: (l: Extract<Lado, { fonte: "catalogo" }>) => void }) {
   const p = catalogo.find((c) => c.slug === lado.slug);

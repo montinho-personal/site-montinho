@@ -5,7 +5,7 @@ import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import BatalhaDosWheys from "@/components/whey/BatalhaDosWheys";
-import { carregarCatalogo } from "@/lib/comparador-whey-catalogo";
+import { carregarCatalogo, montaRanking, nomeCurtoWhey } from "@/lib/comparador-whey-catalogo";
 import { VALIDADE_PRECO_DIAS, analisa, reais } from "@/lib/comparador-whey";
 
 /**
@@ -70,6 +70,10 @@ const faq: ItemFAQ[] = [
   { question: "Whey isolado ou concentrado: qual compensa mais?", answer: "Pelo custo da proteína, o concentrado costuma sair mais barato. O isolado tem mais proteína por grama e menos lactose, o que importa para quem tem intolerância. Para ganhar massa, a proteína total do dia pesa mais que o tipo de whey." },
   { question: "Quanto rende 1 kg de whey?", answer: "Depende da concentração. Com 24 g de proteína em 30 g, 1 kg tem cerca de 800 g de proteína, ou 32 doses de 25 g. Com 18 g em 30 g, são 600 g de proteína e 24 doses." },
   { question: "Qual é o whey mais gostoso e barato?", answer: "Sabor é pessoal e muda por sabor e versão da fórmula. O comparador ainda não tem avaliação de sabor: ela vai entrar só com notas reais de quem usou, nunca inventadas. Até lá, compare o custo e teste uma embalagem menor antes de comprar o pote grande." },
+  { question: "Qual o melhor whey custo-benefício de 2026?", answer: "O que entregar a proteína mais barata no dia em que você comprar — e isso muda com promoção. O ranking desta página é recalculado com os preços conferidos nas lojas oficiais e mostra o custo de 25 g de proteína de cada um; preço velho sai da lista." },
+  { question: "Qual o melhor whey isolado custo-benefício?", answer: "O isolado costuma custar mais por grama de proteína que o concentrado; ele compensa para quem precisa de menos lactose. Para comparar dois isolados, use a opção de digitar o rótulo: peso, porção, proteína e preço de cada um." },
+  { question: "\"100% whey\" no nome quer dizer que é puro?", answer: "Não necessariamente. O nome não diz quanto de proteína há em cada porção — o rótulo diz. Há produto com \"100%\" no nome e menos de 60% de proteína na porção. Divida a proteína pela porção para saber a concentração." },
+  { question: "Quanto tempo dura um pote de 900 g de whey?", answer: "Com porção de 30 g, são 30 doses: um mês tomando uma dose por dia, ou duas semanas com duas. Com porção de 40 g, são cerca de 22 doses. A Calculadora de Whey faz a conta com a sua dose." },
   { question: "O preço do comparador é atualizado?", answer: `Os preços do catálogo são conferidos à mão na loja oficial, com data. Preço com mais de ${VALIDADE_PRECO_DIAS} dias aparece como último preço conhecido e não entra na comparação. Se o preço que você vê na loja for outro, use a opção de digitar o rótulo.` },
 ];
 
@@ -87,6 +91,51 @@ const cta = "text-gray-300 text-sm underline underline-offset-4 decoration-1 hov
 async function ComparadorComCatalogo() {
   const catalogo = await carregarCatalogo();
   return <BatalhaDosWheys catalogo={catalogo} />;
+}
+
+const dataBR = (iso: string) => new Date(iso).toLocaleDateString("pt-BR", { timeZone: "America/Sao_Paulo" });
+
+/**
+ * Ranking do momento: responde "melhor whey custo-benefício [ano]" com o
+ * catálogo conferido, sem nome escrito à mão no texto — se o preço muda, o
+ * ranking muda junto (ISR de 1 hora). Só entra preço dentro da validade;
+ * sem nenhum, a seção some em vez de mostrar dado velho como atual.
+ */
+async function RankingDoMomento() {
+  const linhas = montaRanking(await carregarCatalogo(), new Date());
+  if (linhas.length < 2) return null;
+  const maisRecente = linhas.map((l) => l.preco.verificadoEm).sort().at(-1)!;
+  return (
+    <div>
+      <h2 className="text-2xl font-bold text-white mb-2" style={h}>Ranking de custo-benefício do whey hoje</h2>
+      <p className="text-gray-400 text-sm mb-4">
+        Pelo custo de 25 g de proteína, com o menor preço visto na loja oficial (&ldquo;a partir de&rdquo;). Conferido até {dataBR(maisRecente)};
+        preço com mais de {VALIDADE_PRECO_DIAS} dias sai da lista.
+      </p>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm text-left">
+          <thead className="text-gray-400 border-b border-white/15">
+            <tr><th className="py-2 pr-3">#</th><th className="py-2 pr-3">Whey</th><th className="py-2 pr-3">A partir de</th><th className="py-2 pr-3">Proteína</th><th className="py-2">25 g saem por</th></tr>
+          </thead>
+          <tbody className="text-gray-200">
+            {linhas.map((l, i) => (
+              <tr key={l.produto.slug} className="border-b border-white/5">
+                <td className="py-2 pr-3 text-gray-400">{i + 1}</td>
+                <td className="py-2 pr-3">{nomeCurtoWhey(l.produto)}</td>
+                <td className="py-2 pr-3">{reais(l.preco.precoCentavos)}</td>
+                <td className="py-2 pr-3">{Math.round(l.concentracaoPct)}%{l.concentracaoBaixa ? " ⚠️" : ""}</td>
+                <td className="py-2 font-semibold text-white">{reais(l.centavosPor25g)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="text-gray-400 text-xs mt-3 leading-relaxed">
+        ⚠️ = menos de 60% de proteína na porção: mais pó, carboidrato e calorias a cada dose. O ranking mede só o preço da proteína — sabor,
+        lactose e digestão continuam sendo escolha sua. Nenhuma marca paga para aparecer.
+      </p>
+    </div>
+  );
 }
 
 async function TamanhoCatalogo() {
@@ -127,6 +176,8 @@ export default function ComparadorWheyPage() {
             <p className="text-white text-lg font-semibold" style={h}>Não compare o preço do pote. Compare o preço da proteína.</p>
             <p className="text-gray-300 leading-relaxed mt-1">Dois potes de 900 g podem entregar quantidades bem diferentes de proteína.</p>
           </div>
+
+          <RankingDoMomento />
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Como saber qual whey tem o melhor custo-benefício</h2>

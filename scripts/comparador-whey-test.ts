@@ -8,6 +8,7 @@ import {
   analisa, conferePreco, destaques, entraNoRanking, ofertaValida, precoEquilibrioCentavos, problemasRotulo,
   concentracaoBaixa, rankingCusto, reais, rotina, statusPreco, valePagarMais, type Oferta,
 } from "../lib/comparador-whey";
+import { montaRanking } from "../lib/comparador-whey-catalogo";
 
 let falhas = 0;
 function ok(nome: string, cond: boolean) {
@@ -103,6 +104,26 @@ ok("primeiro preço (sem anterior) é aceito", conferePreco(12000, null).aceito 
 console.log("\n11. FORMATAÇÃO");
 ok("12000 centavos = R$ 120,00", reais(12000).replace(/\s/g, " ") === "R$ 120,00");
 ok("416,67 centavos = R$ 4,17", reais(416.6667).replace(/\s/g, " ") === "R$ 4,17");
+
+console.log("\n12. RANKING DA PÁGINA");
+{
+  const base = { marca: "Teste", linha: "Whey X", nome: "Whey X", tipo: "concentrado", sabor: "Baunilha", carboidratosG: null, acucaresG: null, gordurasG: null, sodioMg: null, kcalPorcao: null, lactose: null, alergenicos: null, urlOficial: null, fonteRotulo: "teste", rotuloVerificadoEm: "2026-10-08" };
+  const preco = (c: number, quando: string, condicao: "pix" | "cartao" | "regular" = "regular", emEstoque: boolean | null = true) => ({ condicao, precoCentavos: c, parcelamento: null, emEstoque, loja: "Loja", url: "https://x", metodo: "manual", verificadoEm: quando });
+  const hoje = "2026-10-08T15:00:00.000Z";
+  const cat = [
+    { ...base, slug: "caro", pacoteG: 900, porcaoG: 30, proteinaPorcaoG: 24, precos: [preco(30000, hoje)] },
+    { ...base, slug: "barato", pacoteG: 900, porcaoG: 30, proteinaPorcaoG: 24, precos: [preco(20000, hoje, "cartao"), preco(18000, hoje, "pix")] },
+    { ...base, slug: "velho", pacoteG: 900, porcaoG: 30, proteinaPorcaoG: 24, precos: [preco(10000, "2026-09-20T15:00:00.000Z")] },
+    { ...base, slug: "sem-estoque", pacoteG: 900, porcaoG: 30, proteinaPorcaoG: 24, precos: [preco(10000, hoje, "regular", false)] },
+    { ...base, slug: "blend", pacoteG: 900, porcaoG: 40, proteinaPorcaoG: 20, precos: [preco(25000, hoje)] },
+  ];
+  const r = montaRanking(cat, new Date("2026-10-09T12:00:00Z"));
+  ok("ordena pelo custo de 25 g", r.map((x) => x.produto.slug).join() === "barato,caro,blend");
+  ok("usa o menor preço da conferência (Pix 180,00)", r[0].preco.precoCentavos === 18000);
+  ok("preço vencido não entra", !r.some((x) => x.produto.slug === "velho"));
+  ok("fora de estoque não entra", !r.some((x) => x.produto.slug === "sem-estoque"));
+  ok("blend a 50% leva aviso", r.find((x) => x.produto.slug === "blend")!.concentracaoBaixa);
+}
 
 console.log(falhas ? `\n${falhas} FALHA(S)` : "\nTudo certo.");
 process.exit(falhas ? 1 : 0);

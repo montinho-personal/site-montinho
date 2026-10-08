@@ -530,3 +530,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - 08/10: metaTitle aprovado pelo Montinho. Antes: "Academia Gaviões Alphaville: Vale a Pena? Análise" → depois: "Gaviões 24h Alphaville: Endereço, Horário e Vale a Pena?". Base GSC (28 dias até 08/10): 189 impressões, 0 cliques, posição 11,3. Sem mudar updatedAt (título não altera conteúdo).
 - 08/10: Montinho confirmou atendimento presencial na Granja Viana. Frase de abertura corrigida (era "um dos condomínios… entre Cotia e Santana de Parnaíba"; agora região entre Cotia e Carapicuíba). Correção factual, sem nova data.
 - 08/10: Montinho confirmou "Avenida" Juruá, 253 (Gaviões). Corrigido "Rua Juruá" em 5 pontos (lutas-barueri e 3 posts do blog). Correção mecânica, sem nova data.
+
+### ferramentas/comparador-whey-protein (08/10) — Answer the Public
+- Export "melhor whey custo benefício": "melhor whey protein custo benefício" 1,9 mil/mês (Google, Bing, Amazon); YouTube "melhor whey custo benefício" 2,4 mil; "qual o melhor whey custo benefício" 480 (YouTube); "2026" 390 e "2025" 320 (Bing/YouTube); isolado 390/260. PAA: quanto custa whey bom, concentrado bom e barato, quanto dura 900 g, 100% puro, marcas confiáveis, Shopee, gestantes/diabetes/gastrite/rim (médico — fora). "comparador de whey protein" 50, "comparador de whey" 40.
+- Nova seção dinâmica "Ranking de custo-benefício do whey hoje" (montaRanking: só preço dentro da validade e em estoque, menor preço da conferência, ordem pelo custo de 25 g, aviso de concentração < 60%). Some se houver menos de 2 válidos. Sem nome de marca escrito à mão no texto.
+- +4 FAQs: melhor de 2026 (aponta para o ranking), isolado, "100% whey" no nome, quanto dura 900 g.
+- Fora: Shopee, gestante/doenças (médico), creatina × whey.
