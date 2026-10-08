@@ -451,3 +451,8 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 - Export sem volume do Google. PAA: valor médio, 3 ou 5 vezes, 1 mês, 3x/semana, vale a pena, "3 motivos para treinar com personal". IA: domicílio, online, emagrecer, hipertrofia, reabilitação, "o que perguntar a um personal", agendar avaliação, aula experimental.
 - A página já cobria valor/1h/3x, vale a pena, emagrecer, condomínio, frequência, iniciantes, idosos, online, casa. +6 FAQs: 3 ou 5 vezes; 3 motivos; o que perguntar antes de contratar; ar livre; dupla/grupo; avaliação física.
 - Fora: Teresina, "melhores personal trainers do Brasil", horário em que o músculo cresce (pauta). Pendente: aula experimental (confirmar se existe).
+
+### blog/personal-trainer-aldeia-da-serra (08/10) — Answer the Public
+- PAA: 1h, 2x/semana, 3 ou 5 vezes, diferença instrutor × personal (cluster forte), Ironberg/CrossFit (fora). IA: domicílio, emagrecimento, idosos, reabilitação, hipertrofia, "como escolher", sessão experimental.
+- Já cobria: 1 mês, 3x, é vantajoso, emagrecer, divisa Barueri/Santana, condomínio, casa, ar livre, restrição médica, lombar, deslocamento. +6 FAQs: instrutor × personal; 3 ou 5 vezes; 2x/semana (sem valor); dupla/grupo; avaliação física; como escolher. updatedAt 08/10.
+- Fora: Ironberg, CrossFit, salário de instrutor, "como se escreve personal trainer", "maior academia do mundo".

@@ -20078,7 +20078,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Personal trainer na Aldeia da Serra com método estruturado e atenção exclusiva. Treino individualizado para moradores do bairro em Barueri.",
     category: "Saúde",
     date: "2026-06-26",
-    updatedAt: "2026-09-29",
+    updatedAt: "2026-10-08",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "Aldeia da Serra", "Barueri", "Alphaville", "personal trainer bairro"],
@@ -20136,6 +20136,12 @@ RIR 3 = parou com 3 reps sobrando.</p>
         answer:
           "A Aldeia da Serra fica a cerca de 15 a 20 minutos de Alphaville e a cerca de 10 a 15 minutos do centro de Santana de Parnaíba, dependendo do trânsito — o que permite encaixar o atendimento em diversos horários da semana.",
       },
+      { question: "Qual a diferença entre instrutor de academia e personal trainer?", answer: "O instrutor atende o salão inteiro: passa a ficha, tira dúvidas e corrige quem pede ajuda. O personal trainer acompanha só você durante a sessão — vê cada série, escolhe a carga e muda o plano quando a semana ou o corpo pedem. Na Aldeia da Serra, isso pode acontecer no condomínio ou em casa, sem depender do salão de uma academia." },
+      { question: "É melhor treinar 3 ou 5 vezes na semana?", answer: "Três treinos bem montados dão resultado para a maioria e cabem na rotina de quem desce a serra para trabalhar. Cinco só valem se sono, recuperação e agenda acompanharem. Mais importante que o número é manter a frequência por meses." },
+      { question: "Quanto custa um personal 2 vezes por semana na Aldeia da Serra?", answer: "Duas sessões semanais é o plano de entrada, com valor mensal abaixo do de três. A proposta depende do local (condomínio ou casa) e do horário — pelo WhatsApp eu mando as opções." },
+      { question: "Tem treino em dupla ou grupo pequeno na Aldeia da Serra?", answer: "Tem. Casal, amigos ou vizinhos de condomínio podem treinar juntos. O treino é compartilhado, mas carga e adaptações são de cada um. O valor por pessoa vai na proposta." },
+      { question: "O acompanhamento começa com avaliação física?", answer: "Começa. A avaliação física mostra como você se movimenta, a força que já tem e o que pede cuidado. Ela orienta as primeiras semanas e serve de comparação para ver a evolução." },
+      { question: "Como escolher um personal trainer na Aldeia da Serra?", answer: "Comece pelo prático: ele atende no seu condomínio ou em casa, e no horário que você tem? Depois, veja como trabalha — se corrige a execução na hora, se ajusta quando você falta ou a carga trava, se explica as escolhas. Uma conversa antes de fechar mostra isso." },
     ],
     faqSchema: [
       { question: "O que faz um personal trainer?", answer: "Um personal trainer avalia o condicionamento físico, define objetivos realistas, prescreve e supervisiona treinos individualizados e acompanha a evolução ao longo do tempo. O acompanhamento profissional aumenta significativamente a adesão e os resultados." },
