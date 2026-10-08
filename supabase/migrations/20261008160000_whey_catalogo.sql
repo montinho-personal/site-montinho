@@ -66,18 +66,26 @@ create index if not exists whey_precos_produto_idx on public.whey_precos (produt
 alter table public.whey_produtos enable row level security;
 alter table public.whey_precos enable row level security;
 
+-- O anon não pode executar crm_is_admin(): leitura pública tem política própria.
+drop policy if exists whey_produtos_anon on public.whey_produtos;
+create policy whey_produtos_anon on public.whey_produtos for select to anon using (status = 'verificado');
 drop policy if exists whey_produtos_publico on public.whey_produtos;
-create policy whey_produtos_publico on public.whey_produtos for select to anon, authenticated using (status = 'verificado' or public.crm_is_admin());
+create policy whey_produtos_publico on public.whey_produtos for select to authenticated using (status = 'verificado' or public.crm_is_admin());
 drop policy if exists whey_produtos_admin on public.whey_produtos;
 create policy whey_produtos_admin on public.whey_produtos for all to authenticated using (public.crm_is_admin()) with check (public.crm_is_admin());
 
+drop policy if exists whey_precos_anon on public.whey_precos;
+create policy whey_precos_anon on public.whey_precos for select to anon
+  using (exists (select 1 from public.whey_produtos p where p.id = produto_id and p.status = 'verificado'));
 drop policy if exists whey_precos_publico on public.whey_precos;
-create policy whey_precos_publico on public.whey_precos for select to anon, authenticated
+create policy whey_precos_publico on public.whey_precos for select to authenticated
   using (exists (select 1 from public.whey_produtos p where p.id = produto_id and (p.status = 'verificado' or public.crm_is_admin())));
 -- Histórico: admin insere; ninguém edita nem apaga linha de preço.
 drop policy if exists whey_precos_admin_insert on public.whey_precos;
 create policy whey_precos_admin_insert on public.whey_precos for insert to authenticated with check (public.crm_is_admin());
 
+-- Privilégio mínimo: o padrão do Supabase dá tudo a anon/authenticated.
+revoke all on public.whey_produtos, public.whey_precos from anon, authenticated;
 grant select on public.whey_produtos, public.whey_precos to anon, authenticated;
 grant insert, update on public.whey_produtos to authenticated;
 grant insert on public.whey_precos to authenticated;
