@@ -495,3 +495,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Export: "quanto custa um personal trainer" 2,9 mil/mês; "por mês" 320; "particular" 140; "hora" 110 (Bing); "contratar" 70; "na smart fit" 50; "2 vezes por semana" 20; "online" 20; várias capitais (fora da área).
 - +3 Tamboré (2x, online mais barato, pagamento/cartão); +4 Alphaville (2x, por mês, online, cartão); +3 Barueri, +3 Santana, +3 Aldeia (2x, por mês, cartão). Nenhum número novo; a faixa de Alphaville é a já aprovada. updatedAt 08/10 nos posts.
 - Pauta aberta: artigo nacional "quanto custa um personal trainer" (2,9 mil/mês) — depende de decisão sobre publicar faixa de preço com fonte.
+
+### blog/quanto-custa-um-personal-trainer (novo, 08/10)
+- Export + prints "quanto custa personal trainer": 2,9 mil/mês; por mês 320; particular 140; hora 110; contratar 70; Smart Fit 50; 2x/semana 20; online 20. SERP: visão geral por IA (PersonalGO, R$ 50–400/sessão; tabela por capital), Smart News (Smart Fit), Superprof, Reddit, YouTube; relacionadas: mensal, 2 e 3 vezes, SP, online, Bluefit/Gaviões/Panobianco/Smart Fit, perto de mim.
+- Decisão do Montinho (08/10): opção 2 — faixa de mercado com fonte, sem preço próprio. Fontes: Neon (R$ 80–200/h em grandes cidades) e Superprof (média ~R$ 99/h em SP, 1ª aula grátis na maioria), conferidas pelo buscador em 08/10 (domínios bloqueados no ambiente). A tabela por capital da visão geral por IA NÃO entrou (fonte única, não verificada).
+- Conta do mês em tabela (sessão × treinos × 4,3) com R$ 100 como exemplo explícito. Links para as 5 páginas locais de preço.
+- Ferramenta: ARTIGOS_SEM_FERRAMENTA. Fora: preço de rede específica (Smart Fit/Bluefit etc.), salário, capitais.
