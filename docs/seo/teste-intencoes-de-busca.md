@@ -477,3 +477,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Fontes: OMS 2020 (≥2 dias/semana de fortalecimento), Schoenfeld 2016 (PMID 27102172) e Schoenfeld, Grgic, Krieger 2019 (doi 10.1080/02640414.2018.1555906).
 - Ferramenta: link da calculadora de volume (ARTIGOS_COM_LINK_VOLUME; embed no teto).
 - Achado: 2 artigos antigos citam o PMID 27102172 como "Ralston et al."; o registro é de Schoenfeld 2016. Correção pendente de aprovação.
+
+### Personal a domicílio — 5 páginas (08/10) — Answer the Public
+- Export "personal trainer a domicílio": 50/mês (Google e YouTube), "em domicílio" 10, "valores" 10; muito ruído em espanhol/italiano. PAA: hora do personal, 3 ou 5 vezes, "definir o corpo treinando em casa", "ficar musculoso em casa", personal × educador físico. IA: idosos, avaliação física inicial, equipamento, emagrecimento, planos, pagamento com cartão, aula experimental.
+- Ritmo: 5 páginas num PR só (mesmo tipo de mudança, texto diferente por página, revertível em um commit).
+- +2 Alphaville (definir em casa, idosos); +4 Barueri (músculo em casa, equipamento, idosos, avaliação); +3 Aldeia, +3 Santana, +3 Tamboré (resultado em casa, idosos, avaliação). updatedAt 08/10 nos 4 posts do blog.
+- Fora: Smart Fit Coach, salário, faculdade, insuficiência cardíaca/diabetes (médico), "10 agachamentos por dia". Pendentes de confirmação: pagamento com cartão, aula experimental.
