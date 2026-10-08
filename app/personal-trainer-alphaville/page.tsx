@@ -89,7 +89,7 @@ const faq = [
   {
     question: "Como funciona o pagamento de um personal trainer?",
     answer:
-      "O valor depende da modalidade (presencial, online ou híbrido), da frequência semanal e da duração do contrato. A forma de pagamento e a renovação ficam combinadas na proposta, antes da primeira aula. Para receber a proposta para o seu caso, é só chamar no WhatsApp.",
+      "O valor depende da modalidade (presencial, online ou híbrido), da frequência semanal e da duração do contrato. A forma de pagamento e a renovação ficam combinadas na proposta, antes da primeira aula. Aceito cartão de crédito. Para receber a proposta para o seu caso, é só chamar no WhatsApp.",
   },
   {
     question: "Nunca treinei na vida. Consigo acompanhar?",
@@ -140,6 +140,11 @@ const faq = [
     question: "Você faz avaliação física?",
     answer:
       "Faço. A avaliação física mostra o ponto de partida: como você se movimenta, o que dá para carregar com segurança e o que precisa de cuidado. É ela que orienta as primeiras semanas e serve de comparação depois.",
+  },
+  {
+    question: "Tem aula experimental com personal em Alphaville?",
+    answer:
+      "Tem. A aula experimental é combinada pelo WhatsApp e acontece onde você vai treinar — Arena 18, condomínio ou casa. É a melhor forma de ver como é o acompanhamento antes de decidir.",
   },
 ];
 

@@ -483,3 +483,10 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Ritmo: 5 páginas num PR só (mesmo tipo de mudança, texto diferente por página, revertível em um commit).
 - +2 Alphaville (definir em casa, idosos); +4 Barueri (músculo em casa, equipamento, idosos, avaliação); +3 Aldeia, +3 Santana, +3 Tamboré (resultado em casa, idosos, avaliação). updatedAt 08/10 nos 4 posts do blog.
 - Fora: Smart Fit Coach, salário, faculdade, insuficiência cardíaca/diabetes (médico), "10 agachamentos por dia". Pendentes de confirmação: pagamento com cartão, aula experimental.
+
+### Personal em condomínio (08/10) — Answer the Public + confirmações
+- Export "personal trainer condomínio": "em condomínio" 10/mês. PAA: Wellhub/Gympass, 3 ou 5 vezes, salário, academia de condomínio (custo, regras). IA: idosos, grupos/casais, avaliação física, credenciais/requisitos legais, aula experimental, online.
+- condominio-tambore +3 (idosos, aula experimental, credenciais/CREF com Lei 9.696); blog em-condominio-alphaville +3 (idosos, aula experimental, credenciais); blog para-condominio-alphaville +3 (dupla, avaliação, aula experimental). updatedAt 08/10 nos posts.
+- Montinho confirmou cartão de crédito e aula experimental (08/10): frase de cartão nas respostas de pagamento (Alphaville, Tamboré); +aula experimental em Alphaville, Tamboré, Barueri, Santana, Aldeia; +cartão em Barueri, Santana, Aldeia.
+- Fora: Wellhub/Gympass, salário/piso, custo de montar academia no condomínio, Smart Fit.
+- Obs.: há dois posts de condomínio em Alphaville (em-condominio e para-condominio) com intenção muito próxima — candidatos a consolidação.

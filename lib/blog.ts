@@ -20152,6 +20152,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
       { question: "Tem treino em dupla ou grupo pequeno na Aldeia da Serra?", answer: "Tem. Casal, amigos ou vizinhos de condomínio podem treinar juntos. O treino é compartilhado, mas carga e adaptações são de cada um. O valor por pessoa vai na proposta." },
       { question: "O acompanhamento começa com avaliação física?", answer: "Começa. A avaliação física mostra como você se movimenta, a força que já tem e o que pede cuidado. Ela orienta as primeiras semanas e serve de comparação para ver a evolução." },
       { question: "Como escolher um personal trainer na Aldeia da Serra?", answer: "Comece pelo prático: ele atende no seu condomínio ou em casa, e no horário que você tem? Depois, veja como trabalha — se corrige a execução na hora, se ajusta quando você falta ou a carga trava, se explica as escolhas. Uma conversa antes de fechar mostra isso." },
+      { question: "Tem aula experimental na Aldeia da Serra?", answer: "Tem. A aula experimental é combinada pelo WhatsApp e acontece no seu condomínio ou em casa, para você conhecer o formato antes de decidir." },
+      { question: "Aceita cartão de crédito?", answer: "Aceito. As condições de pagamento ficam definidas na proposta." },
     ],
     faqSchema: [
       { question: "O que faz um personal trainer?", answer: "Um personal trainer avalia o condicionamento físico, define objetivos realistas, prescreve e supervisiona treinos individualizados e acompanha a evolução ao longo do tempo. O acompanhamento profissional aumenta significativamente a adesão e os resultados." },
@@ -20369,7 +20371,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "A academia do seu condomínio em Alphaville pode entregar muito mais do que entrega hoje. Com personal trainer e protocolo individual, o espaço disponível vira ferramenta de resultado.",
     category: "Treinamento",
     date: "2026-06-27",
-    updatedAt: "2026-09-29",
+    updatedAt: "2026-10-08",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "condomínio", "Alphaville", "academia condomínio"],
@@ -20398,6 +20400,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
         answer:
           "Protocolo estruturado, execução corrigida e progressão monitorada. Quem treina sozinho tende a repetir os mesmos movimentos com a mesma carga por meses — o corpo para de responder. Com acompanhamento profissional, cada sessão tem propósito, cada semana tem progressão e os resultados aparecem de forma consistente.",
       },
+      { question: "Personal no condomínio em Alphaville atende idosos?", answer: "Atende. Na academia do condomínio, o idoso treina perto de casa e num ambiente tranquilo. O treino prioriza força, equilíbrio e mobilidade, respeitando as limitações de cada um." },
+      { question: "Tem aula experimental no condomínio em Alphaville?", answer: "Tem. Marcamos pelo WhatsApp e a aula acontece no espaço fitness do seu condomínio, com o equipamento que você vai usar." },
+      { question: "Como verificar as credenciais do personal antes de contratar?", answer: "Peça o número de registro no CREF: pela Lei nº 9.696/1998, orientar exercício é atividade do profissional de Educação Física registrado. Muitos condomínios pedem esse registro para liberar o acesso de personal externo." },
     ],
     faqSchema: [
       { question: "O que faz um personal trainer?", answer: "Um personal trainer avalia o condicionamento físico, define objetivos realistas, prescreve e supervisiona treinos individualizados e acompanha a evolução ao longo do tempo. O acompanhamento profissional aumenta significativamente a adesão e os resultados." },
@@ -20465,6 +20470,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Contratar personal trainer para treinar no condomínio em Alphaville é a decisão de quem quer resultado sem abrir mão de conveniência. O espaço existe — falta o método.",
     category: "Treinamento",
     date: "2026-06-27",
+    updatedAt: "2026-10-08",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "condomínio", "Alphaville", "espaço fitness"],
@@ -20489,6 +20495,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
         answer:
           "Atendo moradores de Alphaville e da região de Tamboré, Barueri e Santana de Parnaíba. Também atendo no modelo online para quem mora em outros bairros mas prefere acompanhamento remoto. A modalidade é definida na primeira conversa.",
       },
+      { question: "Dá para treinar em casal ou com um vizinho no condomínio?", answer: "Dá. Em dupla, o treino é compartilhado, mas carga e adaptações são de cada um. O valor por pessoa vai na proposta." },
+      { question: "O atendimento no condomínio começa com avaliação física?", answer: "Começa. A avaliação mostra como você se movimenta, a força que já tem e o que pede cuidado — e ajuda a escolher o que dá para fazer com o equipamento do condomínio." },
+      { question: "Posso fazer uma aula experimental antes?", answer: "Pode. A aula experimental é combinada pelo WhatsApp e acontece no espaço do seu condomínio." },
     ],
     faqSchema: [
       { question: "O que faz um personal trainer?", answer: "Um personal trainer avalia o condicionamento físico, define objetivos realistas, prescreve e supervisiona treinos individualizados e acompanha a evolução ao longo do tempo. O acompanhamento profissional aumenta significativamente a adesão e os resultados." },

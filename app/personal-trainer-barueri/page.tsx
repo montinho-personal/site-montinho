@@ -126,6 +126,16 @@ const faq = [
     answer:
       "Inclui. Antes de montar o treino, a avaliação física mostra de onde você está partindo: movimento, força, limitações e histórico. Com ela dá para comparar a evolução depois, em vez de só confiar na balança ou no espelho.",
   },
+  {
+    question: "Tem aula experimental em Barueri?",
+    answer:
+      "Tem. É só chamar no WhatsApp para marcar. A aula acontece no local onde você vai treinar, e serve para você ver como funciona o acompanhamento antes de decidir.",
+  },
+  {
+    question: "Aceita cartão de crédito?",
+    answer:
+      "Aceito. A forma de pagamento e as condições ficam definidas na proposta, antes da primeira aula.",
+  },
 ];
 
 const localSchema = {

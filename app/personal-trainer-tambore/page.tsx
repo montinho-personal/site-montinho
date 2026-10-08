@@ -54,7 +54,7 @@ const faq = [
   {
     question: "Como funciona o pagamento do personal trainer?",
     answer:
-      "Funciona por plano, não por aula solta: o valor sai da modalidade (presencial, online ou híbrido), da frequência semanal e do tempo de contrato. Forma de pagamento e renovação ficam definidas na proposta, antes de começar.",
+      "Funciona por plano, não por aula solta: o valor sai da modalidade (presencial, online ou híbrido), da frequência semanal e do tempo de contrato. Forma de pagamento e renovação ficam definidas na proposta, antes de começar. Aceito cartão de crédito.",
   },
   {
     question: "Como escolher um bom personal trainer no Tamboré?",
@@ -120,6 +120,11 @@ const faq = [
     question: "Faz avaliação física antes de começar?",
     answer:
       "Faço. A avaliação física é o primeiro passo: mostra como você se movimenta, onde está a sua força e o que pede cuidado. Ela define o começo do treino e vira a referência para comparar a evolução.",
+  },
+  {
+    question: "Posso fazer uma aula experimental no Tamboré?",
+    answer:
+      "Pode. A gente marca pelo WhatsApp e a aula acontece no lugar onde você pretende treinar, para você sentir o formato na prática antes de fechar um plano.",
   },
 ];
 
