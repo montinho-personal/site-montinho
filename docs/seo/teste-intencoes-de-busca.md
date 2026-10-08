@@ -506,3 +506,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - GSC 28 dias: 231 impressões, 0 cliques, posição 8,7. Export: "bluefit barueri" 1,9 mil/mês; "avenida trindade bethaville" 90; "bethaville" 40; fotos 20, telefone 20; horário, centro, Tamboré 10. PAA: mensalidade, Bluefit × Smart Fit, por que estão fechando, plano fidelidade, taxa de cancelamento, Gympass/TotalPass, quem é o dono.
 - O FAQ visível tinha só 4 perguntas; endereço e Tamboré estavam apenas no faqSchema antigo (que não vai para a página). +6 FAQs: onde fica, Tamboré, horário, Gympass/TotalPass, mensalidade, fidelidade/cancelamento. Endereços = os já verificados no site oficial; horário/preço/convênio remetem à fonte oficial (sem número). updatedAt 08/10.
 - Fora: "por que estão fechando", "foi vendida", "quem é o dono" (sem fonte verificada), fotos/telefone (dado da unidade).
+
+### blog/personal-trainer-granja-viana (08/10) — Answer the Public
+- Export: "personal trainer granja viana" 20/mês. PAA: 1 mês, 3x/semana, hora, com ou sem personal, 2x, Smart Fit, salário (fora). IA: em casa, online × presencial, emagrecimento, idosos, reabilitação, corrida, credenciados, agendar.
+- FAQ visível tinha 3 perguntas. +6: 1 mês (sem valor, link mental para o artigo nacional de preço), 2 ou 3 vezes, com ou sem personal, idosos, avaliação/aula experimental, cartão. updatedAt 08/10.
+- Pendente: confirmar com o Montinho se o atendimento presencial na Granja Viana é real (a página afirma) e corrigir a frase "Granja Viana é um dos condomínios... entre Cotia e Santana de Parnaíba".
