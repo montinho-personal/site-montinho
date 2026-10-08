@@ -119282,6 +119282,92 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <p>Quer saber quando o resultado começa a aparecer? Veja <a href="/blog/quanto-tempo-para-aparecer-resultado-na-academia">quanto tempo leva para ver resultado na academia</a>.</p>
 `,
   },
+  {
+    slug: "quanto-custa-um-personal-trainer",
+    title: "Quanto Custa um Personal Trainer? Preço por Hora e por Mês",
+    metaTitle: "Quanto Custa um Personal Trainer? Preço por Hora e por Mês",
+    metaDescription: "Nas grandes cidades, a hora do personal fica entre R$ 80 e R$ 200. Veja como calcular o valor do mês, o que muda o preço e quando o online sai mais barato.",
+    excerpt: "O preço do personal trainer varia com a cidade, o local do treino e a frequência. Veja as faixas de mercado com fonte, como fazer a conta do mês e o que encarece ou barateia.",
+    category: "Treinamento",
+    date: "2026-10-08",
+    updatedAt: "2026-10-08",
+    readTime: "7 min",
+    author: "Montinho",
+    tags: ["personal trainer", "preço personal trainer", "quanto custa", "personal por mês", "personal online"],
+    faq: [
+      { question: "Quanto custa um personal trainer?", answer: "Depende da cidade, do local do treino e da frequência. Nas grandes cidades, a hora costuma ficar entre R$ 80 e R$ 200, segundo levantamento da Neon; em São Paulo, a média das aulas anunciadas na Superprof girava em torno de R$ 99 por hora em outubro de 2026. Pacotes mensais baixam o valor de cada sessão." },
+      { question: "Quanto custa um personal trainer por mês?", answer: "Multiplique o valor da sessão pelo número de treinos na semana e por cerca de 4,3 semanas. Com sessões de R$ 100, por exemplo, duas vezes por semana dá perto de R$ 860 no mês, e três vezes, perto de R$ 1.290 — antes do desconto que os pacotes costumam dar." },
+      { question: "Quanto custa a hora de um personal trainer?", answer: "Nas grandes cidades, a faixa de referência é de R$ 80 a R$ 200 por hora. Bairros mais caros, atendimento em casa e profissionais muito procurados ficam no alto da faixa; cidades menores e atendimento online, mais embaixo." },
+      { question: "Quanto custa um personal 2 vezes por semana?", answer: "São cerca de 8 a 9 sessões no mês. Com a hora a R$ 100, a conta fica perto de R$ 860; com pacote mensal, o valor por sessão costuma cair." },
+      { question: "Quanto custa um personal 3 vezes por semana?", answer: "São cerca de 13 sessões no mês. Com a hora a R$ 100, perto de R$ 1.290. É a frequência mais procurada, e por isso a que mais aparece em pacote com desconto." },
+      { question: "Personal trainer particular é mais caro que na academia?", answer: "Nem sempre. O personal que atende em casa costuma cobrar o deslocamento; o que atende na academia pode ter de pagar taxa de personal externo, que às vezes entra no preço. O que pesa mais é a cidade e a experiência do profissional." },
+      { question: "Personal trainer online é mais barato?", answer: "Costuma ser. Sem deslocamento e sem sessão ao vivo para cada treino, a consultoria online fica abaixo do presencial e serve para quem já tem alguma autonomia na execução." },
+      { question: "A primeira aula com personal é gratuita?", answer: "Muitas vezes, sim. Na Superprof, a própria plataforma informa que a maioria dos personal trainers de São Paulo oferece a primeira aula grátis. Fora das plataformas, vale perguntar se existe aula experimental antes de fechar." },
+    ],
+    content: `<p>"Quanto custa um personal trainer?" não tem um número só — tem uma faixa e uma conta. A faixa muda com a cidade e o tipo de atendimento; a conta transforma o valor da hora no que você vai pagar no mês.</p>
+
+<p><strong>Resposta rápida:</strong> nas grandes cidades brasileiras, a hora do personal costuma ficar entre <strong>R$ 80 e R$ 200</strong>, segundo levantamento da <a href="https://neon.com.br/aprenda/financas-pessoais/quanto-custa-um-personal-trainer" target="_blank" rel="noopener noreferrer">Neon</a>. Em São Paulo, a média das aulas anunciadas na <a href="https://www.superprof.com.br/aulas/personal-trainer/sao-paulo/" target="_blank" rel="noopener noreferrer">Superprof</a> estava em torno de <strong>R$ 99 por hora</strong> em outubro de 2026. Pacotes mensais costumam baixar o valor de cada sessão.</p>
+
+<p><em>Faixas de mercado consultadas em 08/10/2026. Não são a tabela de nenhum profissional específico — servem para você saber se uma proposta está dentro do comum.</em></p>
+
+<h2>Quanto custa um personal trainer por mês</h2>
+
+<p>A conta é simples: <strong>valor da sessão × treinos por semana × 4,3</strong> (o número médio de semanas no mês). Usando R$ 100 por sessão como exemplo:</p>
+
+<table>
+<thead><tr><th>Frequência</th><th>Sessões no mês</th><th>Valor no mês (sessão a R$ 100)</th></tr></thead>
+<tbody>
+<tr><td>1 vez por semana</td><td>cerca de 4</td><td>cerca de R$ 430</td></tr>
+<tr><td>2 vezes por semana</td><td>cerca de 9</td><td>cerca de R$ 860</td></tr>
+<tr><td>3 vezes por semana</td><td>cerca de 13</td><td>cerca de R$ 1.290</td></tr>
+<tr><td>4 vezes por semana</td><td>cerca de 17</td><td>cerca de R$ 1.720</td></tr>
+</tbody>
+</table>
+
+<p>É uma simulação com valor de aula avulsa. Na prática, quem fecha pacote mensal costuma pagar menos por sessão do que isso — e quanto maior a frequência, maior tende a ser o desconto.</p>
+
+<h2>O que faz o preço mudar</h2>
+
+<ul>
+<li><strong>Cidade e bairro:</strong> o mesmo serviço custa diferente na capital e no interior, e entre bairros da mesma cidade.</li>
+<li><strong>Onde o treino acontece:</strong> em casa, entra o deslocamento do profissional; na academia, algumas cobram taxa de personal externo; no condomínio, depende das regras do prédio.</li>
+<li><strong>Frequência e tipo de plano:</strong> aula avulsa é a mais cara por sessão; pacotes mensais, trimestrais ou maiores baixam o valor de cada treino.</li>
+<li><strong>Individual ou em dupla:</strong> em dupla, o custo por pessoa costuma cair.</li>
+<li><strong>Presencial ou online:</strong> a consultoria online não tem deslocamento nem sessão ao vivo para cada treino, e por isso custa menos.</li>
+<li><strong>Experiência e especialização:</strong> quem trabalha com reabilitação, idosos ou atletas, ou tem agenda muito procurada, tende a cobrar mais.</li>
+</ul>
+
+<h2>Personal trainer na academia ou particular?</h2>
+
+<p>Muita gente procura "personal na Smart Fit", "na Bluefit" ou em outra rede. Cada academia tem regras próprias para personal externo — algumas liberam, outras cobram taxa, outras só aceitam profissionais credenciados. Antes de fechar, pergunte na recepção, porque essa taxa pode entrar no preço que o personal te passa.</p>
+
+<p>O instrutor da academia já vem incluído na mensalidade; o personal é contratado à parte. A diferença entre os dois está em <a href="/blog/diferenca-entre-instrutor-de-academia-e-personal-trainer">instrutor de academia ou personal trainer</a>.</p>
+
+<h2>Personal trainer online é mais barato?</h2>
+
+<p>Costuma ser. No online, o treino é montado para você e ajustado a distância, com vídeos de execução e acompanhamento por mensagem. Funciona melhor para quem já executa os exercícios com alguma segurança ou tem uma agenda que não comporta horário fixo. Veja como funciona a <a href="/consultoria-online">consultoria online</a>.</p>
+
+<h2>A primeira aula é grátis?</h2>
+
+<p>Com frequência, sim: a própria <a href="https://www.superprof.com.br/aulas/personal-trainer/sao-paulo/" target="_blank" rel="noopener noreferrer">Superprof</a> informa que a grande maioria dos personal trainers anunciados em São Paulo oferece a primeira aula gratuita. Fora das plataformas, pergunte se há aula experimental — é o melhor jeito de ver como o profissional trabalha antes de pagar o mês.</p>
+
+<h2>Como saber se o preço é justo</h2>
+
+<p>Mais do que o valor da hora, compare o que vem junto:</p>
+<ul>
+<li>ele acompanha cada série ou só passa a ficha?</li>
+<li>ajusta o treino quando você falta, viaja ou a carga para de subir?</li>
+<li>faz avaliação no começo e compara a evolução depois?</li>
+<li>tem registro no CREF, como pede a <a href="https://www.planalto.gov.br/ccivil_03/leis/l9696.htm" target="_blank" rel="noopener noreferrer">Lei nº 9.696/1998</a>?</li>
+</ul>
+
+<p>Se a dúvida é se vale gastar com isso, o artigo <a href="/blog/personal-trainer-vale-a-pena">personal trainer vale a pena?</a> ajuda a decidir.</p>
+
+<h2>Quanto custa na região de Alphaville e Barueri</h2>
+
+<p>Para quem mora na região onde atendo presencialmente, há páginas com os detalhes de cada local: <a href="/blog/quanto-custa-personal-trainer-alphaville">Alphaville</a>, <a href="/blog/quanto-custa-personal-trainer-barueri">Barueri</a>, <a href="/quanto-custa-personal-trainer-tambore">Tamboré</a>, <a href="/blog/quanto-custa-personal-trainer-santana-de-parnaiba">Santana de Parnaíba</a> e <a href="/blog/quanto-custa-personal-trainer-aldeia-da-serra">Aldeia da Serra</a>.</p>
+`,
+  },
 ]) as BlogPost[];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
