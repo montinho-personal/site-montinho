@@ -129,7 +129,7 @@ const faq = [
   {
     question: "Tem aula experimental em Barueri?",
     answer:
-      "Tem. É só chamar no WhatsApp para marcar. A aula acontece no local onde você vai treinar, e serve para você ver como funciona o acompanhamento antes de decidir.",
+      "Tem, e é gratuita. É só chamar no WhatsApp para marcar. A aula acontece no local onde você vai treinar, e serve para você ver como funciona o acompanhamento antes de decidir.",
   },
   {
     question: "Aceita cartão de crédito?",

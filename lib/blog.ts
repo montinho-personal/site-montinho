@@ -20152,7 +20152,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       { question: "Tem treino em dupla ou grupo pequeno na Aldeia da Serra?", answer: "Tem. Casal, amigos ou vizinhos de condomínio podem treinar juntos. O treino é compartilhado, mas carga e adaptações são de cada um. O valor por pessoa vai na proposta." },
       { question: "O acompanhamento começa com avaliação física?", answer: "Começa. A avaliação física mostra como você se movimenta, a força que já tem e o que pede cuidado. Ela orienta as primeiras semanas e serve de comparação para ver a evolução." },
       { question: "Como escolher um personal trainer na Aldeia da Serra?", answer: "Comece pelo prático: ele atende no seu condomínio ou em casa, e no horário que você tem? Depois, veja como trabalha — se corrige a execução na hora, se ajusta quando você falta ou a carga trava, se explica as escolhas. Uma conversa antes de fechar mostra isso." },
-      { question: "Tem aula experimental na Aldeia da Serra?", answer: "Tem. A aula experimental é combinada pelo WhatsApp e acontece no seu condomínio ou em casa, para você conhecer o formato antes de decidir." },
+      { question: "Tem aula experimental na Aldeia da Serra?", answer: "Tem, e é gratuita. A aula experimental é combinada pelo WhatsApp e acontece no seu condomínio ou em casa, para você conhecer o formato antes de decidir." },
       { question: "Aceita cartão de crédito?", answer: "Aceito. As condições de pagamento ficam definidas na proposta." },
     ],
     faqSchema: [
@@ -20401,7 +20401,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
           "Protocolo estruturado, execução corrigida e progressão monitorada. Quem treina sozinho tende a repetir os mesmos movimentos com a mesma carga por meses — o corpo para de responder. Com acompanhamento profissional, cada sessão tem propósito, cada semana tem progressão e os resultados aparecem de forma consistente.",
       },
       { question: "Personal no condomínio em Alphaville atende idosos?", answer: "Atende. Na academia do condomínio, o idoso treina perto de casa e num ambiente tranquilo. O treino prioriza força, equilíbrio e mobilidade, respeitando as limitações de cada um." },
-      { question: "Tem aula experimental no condomínio em Alphaville?", answer: "Tem. Marcamos pelo WhatsApp e a aula acontece no espaço fitness do seu condomínio, com o equipamento que você vai usar." },
+      { question: "Tem aula experimental no condomínio em Alphaville?", answer: "Tem, e é gratuita. Marcamos pelo WhatsApp e a aula acontece no espaço fitness do seu condomínio, com o equipamento que você vai usar." },
       { question: "Como verificar as credenciais do personal antes de contratar?", answer: "Peça o número de registro no CREF: pela Lei nº 9.696/1998, orientar exercício é atividade do profissional de Educação Física registrado. Muitos condomínios pedem esse registro para liberar o acesso de personal externo." },
     ],
     faqSchema: [
@@ -20497,7 +20497,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       },
       { question: "Dá para treinar em casal ou com um vizinho no condomínio?", answer: "Dá. Em dupla, o treino é compartilhado, mas carga e adaptações são de cada um. O valor por pessoa vai na proposta." },
       { question: "O atendimento no condomínio começa com avaliação física?", answer: "Começa. A avaliação mostra como você se movimenta, a força que já tem e o que pede cuidado — e ajuda a escolher o que dá para fazer com o equipamento do condomínio." },
-      { question: "Posso fazer uma aula experimental antes?", answer: "Pode. A aula experimental é combinada pelo WhatsApp e acontece no espaço do seu condomínio." },
+      { question: "Posso fazer uma aula experimental antes?", answer: "Pode, e é gratuita. A aula experimental é combinada pelo WhatsApp e acontece no espaço do seu condomínio." },
     ],
     faqSchema: [
       { question: "O que faz um personal trainer?", answer: "Um personal trainer avalia o condicionamento físico, define objetivos realistas, prescreve e supervisiona treinos individualizados e acompanha a evolução ao longo do tempo. O acompanhamento profissional aumenta significativamente a adesão e os resultados." },
@@ -25260,7 +25260,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       { question: "Quanto custa um personal 2 ou 3 vezes por semana?", answer: "Duas vezes é o plano de entrada; três é o mais procurado. Quanto maior a frequência, menor o valor de cada sessão no pacote. Local e horário fecham a proposta." },
       { question: "É melhor treinar com personal ou sem?", answer: "Muita gente evolui sozinha. O personal faz diferença quando você não sabe se a execução está certa, quando a carga parou de subir, quando aparece dor ou quando a semana desanda e o treino some." },
       { question: "Atende idosos na Granja Viana?", answer: "Atendo. O treino foca em força, equilíbrio e mobilidade, com progressão cuidadosa e adaptado às limitações de cada um — em casa ou no condomínio, sem precisar enfrentar academia cheia." },
-      { question: "Tem avaliação física e aula experimental?", answer: "Tem. O acompanhamento começa com avaliação física, e dá para marcar uma aula experimental pelo WhatsApp antes de fechar o plano." },
+      { question: "Tem avaliação física e aula experimental?", answer: "Tem. O acompanhamento começa com avaliação física, e dá para marcar uma aula experimental gratuita pelo WhatsApp antes de fechar o plano." },
       { question: "Aceita cartão de crédito?", answer: "Aceito. As condições de pagamento ficam definidas na proposta." },
     ],
   },
@@ -25837,7 +25837,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       { question: "Quanto custa um personal 2 vezes por semana em Alphaville?", answer: "É o plano de entrada: o valor mensal fica abaixo do de três vezes, e cada sessão sai mais barata que a aula avulsa. O número exato depende do local e do horário." },
       { question: "Quanto custa personal trainer por mês em Alphaville?", answer: "O mensal é a soma das sessões da semana no pacote escolhido — duas, três ou mais vezes —, com valor por sessão menor quanto maior a frequência. A tabela de referência está no começo deste artigo; a proposta final sai pelo WhatsApp." },
       { question: "Personal online é mais barato?", answer: "É. Sem deslocamento e sem sessão ao vivo, a consultoria online custa menos que o presencial e serve para quem já tem alguma autonomia no treino." },
-      { question: "Aceita cartão de crédito?", answer: "Aceito. As condições ficam na proposta, e dá para fazer uma aula experimental antes de decidir." },
+      { question: "Aceita cartão de crédito?", answer: "Aceito. As condições ficam na proposta, e dá para fazer uma aula experimental gratuita antes de decidir." },
     ],
   },
 
@@ -87739,7 +87739,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Onde o Montinho atende em Barueri?", answer: "Presencialmente em Barueri, Alphaville, Tamboré e Santana de Parnaíba — academia, condomínio ou domicílio — além da consultoria online. Solicite uma proposta pelo WhatsApp na página de contato." },
       { question: "Quanto custa um personal 2 vezes por semana em Barueri?", answer: "Menos que o plano de três vezes, com valor por sessão abaixo da aula avulsa. Local e horário definem a proposta, enviada pelo WhatsApp." },
       { question: "Quanto custa personal trainer por mês em Barueri?", answer: "Depende de quantas vezes por semana você treina e de onde: o pacote mensal soma as sessões da semana, e quanto maior a frequência, menor o valor de cada uma." },
-      { question: "Como funciona o pagamento? Aceita cartão?", answer: "O pagamento segue o plano combinado na proposta. Aceito cartão de crédito, e é possível marcar uma aula experimental antes de fechar." },
+      { question: "Como funciona o pagamento? Aceita cartão?", answer: "O pagamento segue o plano combinado na proposta. Aceito cartão de crédito, e é possível marcar uma aula experimental gratuita antes de fechar." },
     ],
   },
   {
@@ -87847,7 +87847,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Como pedir uma proposta ao Montinho?", answer: "Pelo WhatsApp na página de contato do site. O atendimento presencial cobre Santana de Parnaíba, Alphaville e Barueri; a consultoria online atende qualquer lugar." },
       { question: "Quanto custa um personal 2 vezes por semana em Santana de Parnaíba?", answer: "É o plano mais enxuto, com valor mensal abaixo do de três vezes. O que muda a proposta é o local — condomínio, casa ou Arena 18 — e o horário." },
       { question: "Quanto custa personal trainer por mês em Santana de Parnaíba?", answer: "O valor do mês sai da frequência semanal, do local e do tipo de plano. No pacote, cada sessão custa menos que a aula avulsa." },
-      { question: "Aceita cartão de crédito?", answer: "Aceito. As condições de pagamento vão na proposta, e dá para começar com uma aula experimental." },
+      { question: "Aceita cartão de crédito?", answer: "Aceito. As condições de pagamento vão na proposta, e dá para começar com uma aula experimental gratuita." },
     ],
   },
   {
@@ -117240,7 +117240,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Qual é a opção mais acessível para quem mora na Aldeia?", answer: "A consultoria online: plano individualizado com ajustes semanais, que você executa na sala do condomínio no seu horário, sem deslocamento de ninguém." },
       { question: "Quanto custa um personal 2 vezes por semana na Aldeia da Serra?", answer: "Fica abaixo do plano de três vezes, e o valor por sessão é menor que na aula avulsa. Condomínio ou casa e horário fecham a proposta." },
       { question: "Quanto custa personal trainer por mês na Aldeia da Serra?", answer: "O mensal soma as sessões semanais do pacote escolhido. Treinar em dupla e escolher mais vezes por semana costumam reduzir o valor de cada sessão; a proposta sai pelo WhatsApp." },
-      { question: "Aceita cartão de crédito?", answer: "Aceito. As condições ficam definidas na proposta, e dá para fazer uma aula experimental antes." },
+      { question: "Aceita cartão de crédito?", answer: "Aceito. As condições ficam definidas na proposta, e dá para fazer uma aula experimental gratuita antes." },
     ],
     content: `<h2>Resposta direta: quanto custa personal trainer na Aldeia da Serra?</h2>
 <p>Na Aldeia da Serra, o valor de um personal trainer é definido por três coisas, nesta ordem: <strong>onde a sessão acontece</strong> (na sua casa, no espaço fitness do condomínio, numa academia de Alphaville ou online), <strong>quantas vezes por semana</strong> e <strong>quanto deslocamento o profissional assume</strong>. A serra pesa nesse terceiro item: atender na Aldeia significa subir e descer, e é isso que faz o atendimento em casa custar mais que o mesmo trabalho numa academia lá embaixo.</p>
