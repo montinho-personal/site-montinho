@@ -25196,7 +25196,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       { question: "Como escolher um bom personal trainer?", answer: "Busque profissionais com graduação em Educação Física, experiência comprovada com o seu perfil de objetivo, metodologia baseada em evidências científicas e que priorizem sua individualidade. Avalie também comunicação, disponibilidade e compatibilidade de método." }
     ],
     content: `
-<p>Granja Viana é um dos condomínios residenciais mais nobres da Grande São Paulo, localizado entre Cotia e Santana de Parnaíba, com fácil acesso pela Raposo Tavares. Quem mora aqui sabe que qualidade de vida é uma prioridade — e o treino personalizado é parte dessa equação.</p>
+<p>A Granja Viana é uma região residencial que se divide entre Cotia e Carapicuíba, cheia de condomínios e com acesso pela Raposo Tavares. Quem mora aqui sabe que qualidade de vida é uma prioridade — e o treino personalizado é parte dessa equação.</p>
 
 
 
