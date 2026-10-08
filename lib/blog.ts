@@ -2891,7 +2891,7 @@ export const blogPosts = ([
       "Todo mundo quer saber quando vai começar a ver resultado. A resposta honesta não cabe em uma frase — mas é muito mais útil do que qualquer prazo genérico que você já leu por aí.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-09-29",
+    updatedAt: "2026-10-08",
     readTime: "13 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -2928,6 +2928,11 @@ export const blogPosts = ([
         question: "Como saber se estou evoluindo mesmo sem ver mudança no espelho?",
         answer:
           "O espelho é o indicador mais lento e mais enganoso da evolução. Indicadores mais confiáveis: aumento de carga nos exercícios principais, mais repetições com a mesma carga, melhora na execução técnica, mais disposição nos treinos, roupa vestindo diferente em pontos específicos e fotos comparativas tiradas a cada 4 semanas sob mesmas condições. A força é o sinal mais precoce de que o processo está funcionando — antes de qualquer mudança visual.",
+      },
+      {
+        question: "É possível ver resultado com 1 mês de academia?",
+        answer:
+          "É, mas quase sempre na força e não no espelho. Depois de quatro semanas, a maioria dos iniciantes já carrega mais peso, executa melhor e sente mais disposição. Mudança que os outros percebem costuma vir a partir do segundo e terceiro mês, se o treino e a alimentação se mantiverem.",
       },
     ],
     faqSchema: [
@@ -6340,7 +6345,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "A pergunta certa não é quantos dias você treina por semana — é quantas vezes cada músculo é estimulado. A resposta muda completamente o resultado.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-08-27",
+    updatedAt: "2026-10-08",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -6382,6 +6387,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
         question: "Posso treinar o mesmo músculo todos os dias?",
         answer:
           "Não é recomendado para a maioria das pessoas. Músculos precisam de 48 a 72 horas de recuperação entre sessões intensas para que a síntese proteica muscular complete seu pico e o tecido se repare. Treinar diariamente o mesmo músculo com intensidade alta leva a recuperação incompleta, desempenho decrescente e maior risco de lesão por overuse.",
+      },
+      {
+        question: "É melhor treinar 3 ou 5 vezes na semana?",
+        answer:
+          "Depende de quantas vezes cada músculo é estimulado e do quanto você consegue recuperar. Três treinos de corpo inteiro já estimulam cada músculo três vezes; cinco treinos costumam dividir o corpo em partes e chegam a duas vezes por músculo. Os dois funcionam. Para quem está começando ou tem pouco tempo, três costuma ser o ponto certo; cinco compensam quando sono, recuperação e agenda acompanham por meses.",
       },
     ],
     faqSchema: [
@@ -23134,6 +23144,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "Você pode treinar perfeito e comer bem — mas se não dormir direito, está desperdiçando metade do trabalho. O sono é onde o músculo cresce de verdade.",
     category: "Saúde",
     date: "2026-06-27",
+    updatedAt: "2026-10-08",
     readTime: "7 min",
     author: "Montinho",
     tags: ["sono", "crescimento muscular", "GH", "recuperação", "hormônios"],
@@ -23220,6 +23231,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
       {
         question: "Suplementos de melatonina ajudam?",
         answer: "Melatonina (0,5–1mg) é eficiente para ajustar o ritmo circadiano (jet lag, trabalho noturno, mudança de horário) — mas não é sedativo. Não substitui higiene do sono. Doses acima de 1mg raramente trazem benefício adicional.",
+      },
+      {
+        question: "Qual horário o músculo cresce?",
+        answer:
+          "Não existe um horário fixo. O treino dá o estímulo, e a construção do músculo acontece nas horas e dias seguintes, na recuperação. O sono é o trecho mais importante desse período: é no sono profundo, principalmente nas primeiras horas da noite, que sai a maior parte do hormônio do crescimento do dia. Treinar de manhã ou à noite importa menos do que dormir bem depois.",
       },
     ],
   },
@@ -62897,7 +62913,7 @@ Uma refeição leve 1-2 horas antes com carboidrato e proteína. Exemplos: banan
 `,
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-07-19",
+    updatedAt: "2026-10-08",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["primeira semana academia", "iniciante musculação", "como começar academia", "dicas academia iniciante"],
@@ -62905,6 +62921,11 @@ Uma refeição leve 1-2 horas antes com carboidrato e proteína. Exemplos: banan
       { question: "Quantos dias treinar na primeira semana?", answer: "3-4 dias é o ideal. Permita recuperação entre as sessões para evitar dor excessiva e abandono." },
       { question: "É normal sentir muita dor depois do primeiro treino?", answer: "Sim. A DOMS é resposta normal ao estímulo novo. Diminui nas semanas seguintes conforme o corpo se adapta." },
       { question: "Quando vou ver resultados visíveis?", answer: "Melhora de força em 2-3 semanas. Mudança visível no corpo a partir de 8-12 semanas com consistência e alimentação adequada." },
+      {
+        question: "O que muda no corpo com 1 semana de academia?",
+        answer:
+          "Por fora, quase nada — e é normal. Por dentro, o sistema nervoso começa a aprender os movimentos, então os exercícios já ficam mais firmes no fim da semana. Também é comum dormir melhor, sentir mais disposição e ter dor muscular nos primeiros dias. Músculo e perda de gordura visíveis levam semanas.",
+      },
     ],
   },
   {
