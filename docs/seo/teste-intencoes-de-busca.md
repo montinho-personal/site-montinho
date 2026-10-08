@@ -536,3 +536,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Nova seção dinâmica "Ranking de custo-benefício do whey hoje" (montaRanking: só preço dentro da validade e em estoque, menor preço da conferência, ordem pelo custo de 25 g, aviso de concentração < 60%). Some se houver menos de 2 válidos. Sem nome de marca escrito à mão no texto.
 - +4 FAQs: melhor de 2026 (aponta para o ranking), isolado, "100% whey" no nome, quanto dura 900 g.
 - Fora: Shopee, gestante/doenças (médico), creatina × whey.
+
+### ferramentas/calculadora-calorias-muay-thai (08/10) — Answer the Public + prints
+- Export "quantas calorias gasta muay thai": treino de muay thai 40/mês, em um treino 30, no muay thai 20, 1 hora 10. Autocompletar: 1h, treino, aula iniciante, 40 min, por dia, por semana, ou musculação. PAA: emagrece, academia × muay thai, define o corpo, 3x/semana, quantas vezes, afina cintura, em casa. Visão por IA: 600–1.000 kcal/h (a página já explica por que o teto é raro).
+- Página já tinha 12 FAQs. +6 calculadas pela própria lib (Compêndio): 40 min, aula de iniciante, 3x/semana emagrece, quantas vezes por semana, afina cintura/corpo feminino, muay thai em casa.
+- Fora: 10 leis/regras, significado da palavra, acessórios e marcas de luva, dieta (nutricionista).

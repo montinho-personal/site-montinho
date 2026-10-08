@@ -82,6 +82,8 @@ const TRES = kgPorMes(TIPICA, 3);
 const SEMANA3 = (TRES * 12) / 52;
 const MEIA_HORA = calcula(PESO_PADRAO, 30, 3, ROUND_PADRAO, DESCANSO_PADRAO)!;
 const DUAS_HORAS = calcula(PESO_PADRAO, 120, ROUNDS_PADRAO * 2, ROUND_PADRAO, DESCANSO_PADRAO)!;
+const QUARENTA = calcula(PESO_PADRAO, 40, 4, ROUND_PADRAO, DESCANSO_PADRAO)!;
+const INICIANTE = calcula(PESO_PADRAO, 60, 2, ROUND_PADRAO, DESCANSO_PADRAO)!;
 const SPAR_BOXE = aulaBoxe("sparring");
 const SACO_BOXE = aulaBoxe("saco");
 const mil = (n: number) => n.toLocaleString("pt-BR");
@@ -140,6 +142,30 @@ const faq: ItemFAQ[] = [
   {
     question: "Muay thai perde barriga?",
     answer: NOTA_SEM_PERDA_LOCALIZADA,
+  },
+  {
+    question: "40 minutos de muay thai queimam quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg, um treino de 40 minutos com 4 rounds fortes gasta cerca de ${kc(QUARENTA.kcal)} kcal. Com menos rounds e mais técnica, o número cai; ajuste na calculadora.`,
+  },
+  {
+    question: "Quantas calorias gasta uma aula de muay thai para iniciante?",
+    answer: `Menos que a aula de quem já treina, porque o iniciante passa mais tempo aprendendo a técnica e faz menos rounds fortes. Para ${PESO_PADRAO} kg, uma hora com 2 rounds fica perto de ${kc(INICIANTE.kcal)} kcal — contra cerca de ${mil(H70.tipica)} kcal com ${ROUNDS_PADRAO} rounds.`,
+  },
+  {
+    question: "Fazer muay thai 3 vezes por semana emagrece?",
+    answer: `Ajuda. Três aulas típicas por semana somam, só do treino, até cerca de ${kg(TRES)} kg de gordura por mês para ${PESO_PADRAO} kg, pela conta linear, que é teto. O que decide o resultado é a alimentação junto e a constância por meses.`,
+  },
+  {
+    question: "Quantas vezes por semana fazer muay thai?",
+    answer: "Duas a três aulas por semana é o que a maioria consegue manter no começo, com dia de descanso entre elas para canela, joelho e ombro se recuperarem. Somar musculação em outros dias protege as articulações e preserva músculo.",
+  },
+  {
+    question: "Muay thai afina a cintura ou define o corpo feminino?",
+    answer: `${NOTA_SEM_PERDA_LOCALIZADA} O que o muay thai faz é aumentar o gasto calórico; com alimentação ajustada, a gordura do corpo todo baixa — cintura incluída. Para ganhar forma, a musculação completa o trabalho.`,
+  },
+  {
+    question: "Muay thai em casa queima as mesmas calorias?",
+    answer: "Queima o mesmo por minuto quando o esforço é o mesmo. A diferença costuma estar na intensidade: sem parceiro, sem saco e sem professor marcando o ritmo, os rounds fortes tendem a ser menos e mais leves. Na calculadora, coloque os rounds que você realmente faz.",
   },
 ];
 
