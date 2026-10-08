@@ -41,6 +41,7 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  "diferenca-entre-instrutor-de-academia-e-personal-trainer": "Comparação de funções e formação: o leitor sai sabendo quem é quem, sem conta na cabeça.",
   // Resultado do UFC Vegas 122: o registro da calculadora de artes marciais
   // está no teto de 8, e a calculadora já vai no artigo do card.
   "resultado-ufc-vegas-122": "Página de resultado: o leitor sai sabendo quem ganhou, sem conta na cabeça; a calculadora de luta fica no artigo do card.",
