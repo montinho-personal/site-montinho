@@ -446,3 +446,8 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 - A página já cobria 1h, 3x/semana, taxa de personal externo, é vantajoso, iniciantes/60+, restrições, pouco tempo, online. +4 FAQs: 2x/semana (sem valor), duração da aula, como funciona o pagamento, como escolher (com regra de condomínio para personal externo).
 - Fora: Smart Fit (preço/salário/diária), outras cidades, salário CLT, "pode treinar 1 hora da manhã". Pendente de confirmação: treino em grupo e avaliação física completa.
 - 08/10: Montinho confirmou treino ao ar livre, em dupla/grupo pequeno e avaliação física. +3 FAQs em cada página local (Alphaville, Barueri, Tamboré), com redação diferente por página.
+
+### personal-trainer-santana-de-parnaiba (08/10) — Answer the Public
+- Export sem volume do Google. PAA: valor médio, 3 ou 5 vezes, 1 mês, 3x/semana, vale a pena, "3 motivos para treinar com personal". IA: domicílio, online, emagrecer, hipertrofia, reabilitação, "o que perguntar a um personal", agendar avaliação, aula experimental.
+- A página já cobria valor/1h/3x, vale a pena, emagrecer, condomínio, frequência, iniciantes, idosos, online, casa. +6 FAQs: 3 ou 5 vezes; 3 motivos; o que perguntar antes de contratar; ar livre; dupla/grupo; avaliação física.
+- Fora: Teresina, "melhores personal trainers do Brasil", horário em que o músculo cresce (pauta). Pendente: aula experimental (confirmar se existe).
