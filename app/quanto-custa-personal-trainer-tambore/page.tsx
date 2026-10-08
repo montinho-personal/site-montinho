@@ -80,7 +80,7 @@ const faq = [
   {
     question: "Como funciona o pagamento? Aceita cartão?",
     answer:
-      "Por plano, não por aula solta, com as condições definidas na proposta. Aceito cartão de crédito. Antes de fechar, dá para marcar uma aula experimental.",
+      "Por plano, não por aula solta, com as condições definidas na proposta. Aceito cartão de crédito. Antes de fechar, dá para marcar uma aula experimental gratuita.",
   },
 ];
 

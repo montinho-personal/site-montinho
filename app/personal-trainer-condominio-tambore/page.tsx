@@ -76,7 +76,7 @@ const faq = [
   {
     question: "Tem aula experimental no condomínio?",
     answer:
-      "Tem. A aula experimental é marcada pelo WhatsApp e acontece no espaço fitness do seu condomínio, já com os equipamentos que você vai usar no dia a dia.",
+      "Tem, e é gratuita. A aula experimental é marcada pelo WhatsApp e acontece no espaço fitness do seu condomínio, já com os equipamentos que você vai usar no dia a dia.",
   },
   {
     question: "Como conferir se o personal é habilitado antes de contratar?",

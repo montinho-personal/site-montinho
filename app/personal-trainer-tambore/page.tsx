@@ -124,7 +124,7 @@ const faq = [
   {
     question: "Posso fazer uma aula experimental no Tamboré?",
     answer:
-      "Pode. A gente marca pelo WhatsApp e a aula acontece no lugar onde você pretende treinar, para você sentir o formato na prática antes de fechar um plano.",
+      "Pode, e é gratuita. A gente marca pelo WhatsApp e a aula acontece no lugar onde você pretende treinar, para você sentir o formato na prática antes de fechar um plano.",
   },
 ];
 

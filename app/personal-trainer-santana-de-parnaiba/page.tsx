@@ -134,7 +134,7 @@ const faq = [
   {
     question: "Dá para fazer uma aula experimental em Santana de Parnaíba?",
     answer:
-      "Dá. Marcamos pelo WhatsApp, no condomínio, em casa ou na Arena 18. Você treina uma vez antes de decidir.",
+      "Dá, e é gratuita. Marcamos pelo WhatsApp, no condomínio, em casa ou na Arena 18. Você treina uma vez antes de decidir.",
   },
   {
     question: "O pagamento pode ser no cartão de crédito?",

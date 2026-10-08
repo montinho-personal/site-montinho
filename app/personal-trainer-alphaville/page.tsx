@@ -144,7 +144,7 @@ const faq = [
   {
     question: "Tem aula experimental com personal em Alphaville?",
     answer:
-      "Tem. A aula experimental é combinada pelo WhatsApp e acontece onde você vai treinar — Arena 18, condomínio ou casa. É a melhor forma de ver como é o acompanhamento antes de decidir.",
+      "Tem, e é gratuita. A aula experimental é combinada pelo WhatsApp e acontece onde você vai treinar — Arena 18, condomínio ou casa. É a melhor forma de ver como é o acompanhamento antes de decidir.",
   },
 ];
 
