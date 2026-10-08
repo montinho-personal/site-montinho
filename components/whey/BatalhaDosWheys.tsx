@@ -348,14 +348,14 @@ function resolver(l: Lado, idx: number, catalogo: ProdutoCatalogo[], agora: Date
   }
   const p = catalogo.find((c) => c.slug === l.slug);
   if (!p) return { idx, nome: `Whey ${idx + 1}`, detalhe: "", oferta: null, origem: "catalogo", status: "indisponivel" };
-  const preco = escolherPreco(p, l.condicao);
+  const preco = escolherPreco(p);
   const nome = `${p.marca} ${p.linha} — ${p.sabor} (${g1(p.pacoteG)} g)`;
   if (!preco) return { idx, nome, detalhe: "sem preço cadastrado", oferta: null, origem: "catalogo", status: "indisponivel", produto: p };
   const st = statusPreco(new Date(preco.verificadoEm), agora);
   return {
     idx,
     nome,
-    detalhe: `${ROTULO_CONDICAO[preco.condicao]} · ${preco.loja} · ${dataBR(preco.verificadoEm)}`,
+    detalhe: `a partir de · ${preco.loja} · ${dataBR(preco.verificadoEm)}`,
     oferta: { pacoteG: p.pacoteG, porcaoG: p.porcaoG, proteinaPorcaoG: p.proteinaPorcaoG, precoCentavos: preco.precoCentavos },
     origem: "catalogo",
     status: preco.emEstoque === false ? "indisponivel" : st,
@@ -364,14 +364,16 @@ function resolver(l: Lado, idx: number, catalogo: ProdutoCatalogo[], agora: Date
   };
 }
 
-function escolherPreco(p: ProdutoCatalogo, condicao: CondicaoPreco | "") {
-  if (condicao) return p.precos.find((x) => x.condicao === condicao) ?? null;
-  // Padrão: o preço sem condição especial. Pix e cupom nunca são o padrão.
-  for (const c of ["regular", "avista", "cartao", "promocional"] as CondicaoPreco[]) {
-    const x = p.precos.find((y) => y.condicao === c);
-    if (x) return x;
-  }
-  return null;
+/**
+ * Um preço só por produto: o menor da conferência mais recente ("a partir
+ * de"). Forma de pagamento e sabor não viram opção na tela; o valor exato
+ * fica com a loja. A condição que vier no link antigo é ignorada.
+ */
+function escolherPreco(p: ProdutoCatalogo) {
+  if (!p.precos.length) return null;
+  const dia = (iso: string) => new Date(new Date(iso).getTime() - 3 * 3600e3).toISOString().slice(0, 10);
+  const ultimo = p.precos.map((x) => dia(x.verificadoEm)).sort().at(-1)!;
+  return p.precos.filter((x) => dia(x.verificadoEm) === ultimo).sort((a, b) => a.precoCentavos - b.precoCentavos)[0];
 }
 
 function SeletorCatalogo({ lado, catalogo, onChange }: { lado: Extract<Lado, { fonte: "catalogo" }>; catalogo: ProdutoCatalogo[]; onChange: (l: Extract<Lado, { fonte: "catalogo" }>) => void }) {
@@ -392,15 +394,6 @@ function SeletorCatalogo({ lado, catalogo, onChange }: { lado: Extract<Lado, { f
           ))}
         </select>
       </label>
-      {p && p.precos.length > 1 && (
-        <label className="block text-gray-300 text-sm">
-          Condição de pagamento
-          <select value={lado.condicao} onChange={(e) => onChange({ ...lado, condicao: e.target.value as CondicaoPreco })} className={campo + " w-full mt-1"}>
-            <option value="">Preço padrão</option>
-            {p.precos.map((x) => <option key={x.condicao} value={x.condicao}>{ROTULO_CONDICAO[x.condicao]} — {reais(x.precoCentavos)}</option>)}
-          </select>
-        </label>
-      )}
       {p && (
         <p className="text-gray-400 text-xs leading-relaxed">
           Rótulo: {g1(p.proteinaPorcaoG)} g de proteína em {g1(p.porcaoG)} g · conferido em {dataBR(p.rotuloVerificadoEm + "T12:00:00Z")}
@@ -433,7 +426,7 @@ function Situacao({ r }: { r: Resolvido; agora: Date }) {
   return (
     <div className="mt-3 text-xs leading-relaxed">
       {r.status === "verificado" ? (
-        <p className="text-gray-300">✓ Preço conferido em {dataBR(r.precoInfo!.verificadoEm)}{r.precoInfo!.parcelamento ? ` · ${r.precoInfo!.parcelamento}` : ""}</p>
+        <p className="text-gray-300">✓ A partir de {reais(r.oferta!.precoCentavos)}, conferido em {dataBR(r.precoInfo!.verificadoEm)}. O valor exato muda conforme sabor e forma de pagamento: confira na loja.</p>
       ) : (
         <p className="text-amber-300">Último preço conhecido ({dataBR(r.precoInfo!.verificadoEm)}). Pode ter mudado e não entra na comparação — digite o preço atual para comparar.</p>
       )}
