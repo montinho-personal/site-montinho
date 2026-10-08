@@ -101,6 +101,36 @@ const faq = [
     answer:
       "Sim. Para quem tem agenda instável ou passa parte da semana fora de Santana de Parnaíba, ofereço consultoria online com planilha de treino individualizada, ajustes periódicos e suporte pelo WhatsApp. Muitos alunos combinam o formato híbrido: presencial quando estão na cidade, online quando estão viajando.",
   },
+  {
+    question: "É melhor treinar 3 ou 5 vezes na semana?",
+    answer:
+      "Para a maioria das pessoas, três treinos bem feitos dão resultado e cabem na semana de quem trabalha. Cinco compensam quando sono, recuperação e agenda acompanham. O que decide não é o número no papel: é a frequência que você consegue manter por meses sem faltar.",
+  },
+  {
+    question: "Quais são 3 motivos para treinar com um personal trainer?",
+    answer:
+      "Execução: alguém vendo o exercício na hora e corrigindo antes que vire dor. Progressão: a carga sobe quando você está pronto, não no chute. Constância: quando a semana aperta ou você falta, o plano se ajusta em vez de ser abandonado.",
+  },
+  {
+    question: "O que perguntar a um personal trainer antes de contratar?",
+    answer:
+      "Onde ele atende e em que horários; como monta e ajusta o treino; o que acontece quando você falta ou viaja; como acompanha a evolução; e como funcionam valor, pagamento e renovação. Se as respostas forem vagas, vale perguntar de novo.",
+  },
+  {
+    question: "Dá para treinar ao ar livre em Santana de Parnaíba?",
+    answer:
+      "Dá. O treino pode ser em área aberta do condomínio ou em espaço público da região, com peso corporal, elásticos e acessórios. Em dia de chuva ou calor forte, a sessão muda para um lugar coberto.",
+  },
+  {
+    question: "Tem treino em dupla ou em grupo pequeno?",
+    answer:
+      "Tem. Dupla ou grupo pequeno ajuda quem tem dificuldade de manter a frequência sozinho. O treino é compartilhado, mas carga e adaptações são individuais. O valor por pessoa vai na proposta.",
+  },
+  {
+    question: "Você faz avaliação física em Santana de Parnaíba?",
+    answer:
+      "Faço. A avaliação física é o começo: mostra como você se movimenta, a força que já tem e o que precisa de cuidado. É a referência para montar as primeiras semanas e para medir a evolução depois.",
+  },
 ];
 
 const localSchema = {
