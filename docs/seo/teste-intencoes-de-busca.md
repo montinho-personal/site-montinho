@@ -517,3 +517,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - A página não tinha endereço nem horário. +5 FAQs: endereço (Av. Juruá, 253 — Wellhub + anúncio de vaga da rede, duas fontes), 24h (nome da unidade + horário no Wellhub), Wellhub/TotalPass, mensalidade (remete à fonte oficial), personal externo (regra da unidade; nada de afirmar atendimento do Montinho). updatedAt 08/10.
 - Proposta pendente (ATUAL/PROPOSTA/MOTIVO): metaTitle com "Endereço e 24h".
 - Fora: dono, CNPJ, franquia, salário, outras unidades (Aeroporto, Sapopemba, Carapicuíba), Ironberg/Juju Salimeni.
+
+### blog/fabrica-premium-alphaville (08/10) — Answer the Public
+- GSC 28 dias: 111 impressões, 2 cliques, posição 7,7. Export: "fábrica premium alphaville" 480/mês. Prompts de IA leram "fábrica" como indústria (descartados). PAA genérico: academia prime/premium, maior/mais cara de Alphaville, montar academia.
+- Página já tinha horário, telefone, endereço, dono, mensalidade, diária. +4 FAQs: Alphaville × Santana de Parnaíba (GPS), o que é academia premium, Wellhub/TotalPass (não encontrado nos canais conferidos), personal externo. updatedAt 08/10.
+- Fora: maior/mais cara de Alphaville (sem fonte), Ironberg, montar academia.
