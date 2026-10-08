@@ -102,19 +102,30 @@ Não reescreva isso do zero. Use o que já existe em `lib/filosofia.ts`:
 # Toda página nova começa pelas intenções de busca do Google
 
 Antes de escrever qualquer artigo, página de serviço ou ferramenta, peça ao
-Montinho os prints da pesquisa no Google para o termo principal. Não comece
-a escrever sem eles, a não ser que ele diga para seguir sem.
+Montinho a pesquisa do termo principal. Não comece a escrever sem ela, a
+não ser que ele diga para seguir sem.
 
-Peça, de preferência numa aba anônima:
+Formato preferido (desde 08/10/2026):
 
-1. o **autocompletar** da caixa de busca (as sugestões enquanto digita);
-2. a **primeira página** de resultados, incluindo a visão geral por IA;
-3. o bloco **"As pessoas também perguntam"**;
-4. o bloco **"Outras pessoas pesquisaram"**, no fim da página.
+1. o **export do Answer the Public** do termo (CSV de palavras-chave e
+   XLSX de "As pessoas também perguntam"). Ele substitui os prints do
+   autocompletar, do "As pessoas também perguntam" e do "Outras pessoas
+   pesquisaram", e ainda traz volume e CPC;
+2. **um print da primeira página** de resultados do Google, de
+   preferência numa aba anônima, incluindo a visão geral por IA. O export
+   não mostra quem já ranqueia nem o que essas páginas cobrem.
+
+Sem o export, os 4 prints continuam valendo: autocompletar, primeira
+página, "As pessoas também perguntam" e "Outras pessoas pesquisaram".
+
+Ao ler o export: arquivos duplicados contam uma vez; volume baixo não é
+motivo para descartar uma pergunta que caiba no tema; termos com nome de
+outro profissional, de academia onde o atendimento não é confirmado ou de
+intenção de quem quer ser personal (salário, CLT) ficam de fora.
 
 Como usar:
 
-- As sugestões e buscas relacionadas decidem **título, H2 e FAQ**. Cada
+- As sugestões, perguntas e buscas relacionadas (do export ou dos prints) decidem **título, H2 e FAQ**. Cada
   pergunta real que couber no tema vira seção ou pergunta do FAQ.
 - Os resultados mostram o que já ranqueia: cubra o que eles cobrem e
   acrescente o que falta (dado verificado, ferramenta, experiência de quem

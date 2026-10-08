@@ -428,3 +428,9 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 - "comparador de whey": autocompletar = comparador de whey protein, comparador whey isolado. Concorrentes: myfoodcompare, Compare Suplementos, calculadora da própria Growth, Proteste. IA = tipos (concentrado/isolado/hidrolisado). Relacionadas: whey dux, whey growth, whey isolado, teste whey anvisa, teste whey inmetro, proteste whey, calculadora whey gorgonoid.
 - "melhor whey custo benefício": autocompletar = 2026, isolado, do mercado, reddit, para emagrecer, e sabor, hoje. PAA = 5 melhores whey; por que a Growth é tão barata; marca mais confiável; mais gostoso e barato. Relacionadas: para ganhar massa, 100% puro, growth, para emagrecer e definir.
 - Decisão: uma página (comparador) cobre "comparador" + "custo-benefício"; "confiável / teste Anvisa-Inmetro-Proteste" vira seção com fonte, nunca selo inventado; "isolado" fica como filtro/modo, não página separada, até ter dados.
+
+### personal-trainer-alphaville (08/10) — primeiro teste com Answer the Public
+- Export "personal trainer alphaville": personal trainer alphaville (90/mês), em alphaville (30), alphaville sp (10); demais termos sem volume. Os dois CSVs recebidos eram idênticos.
+- PAA (23 perguntas): a página já cobria 1h, 3x/semana e "é vantajoso". +4 FAQs: 2x/semana dá resultado; quanto tempo dura a aula; academia sem personal dá resultado; como funciona o pagamento (sem preço publicado).
+- Fora: "ironberg alphaville" (atendimento não confirmado lá), nome de outra profissional, "personal mulher", "quanto ganha um personal CLT" (intenção de quem quer ser personal), "pode treinar 1 hora da manhã".
+- Processo: a partir daqui o export do Answer the Public + 1 print da primeira página substitui os 4 prints (regra no AGENTS.md).
