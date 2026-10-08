@@ -86,6 +86,12 @@ function centavos(texto: string): number | null {
 
 const dataBR = (iso: string) => new Date(iso).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", year: "numeric", timeZone: "America/Sao_Paulo" });
 const g1 = (n: number) => n.toLocaleString("pt-BR", { maximumFractionDigits: 1 });
+const peso = (g: number) => (g >= 1000 ? `${g1(g / 1000)} kg` : `${g1(g)} g`);
+/** "Growth Whey Concentrado · 1 kg": marca, linha sem repetição e peso. Sabor fica de fora (o rótulo de referência aparece abaixo). */
+const nomeCurto = (p: ProdutoCatalogo) => {
+  const linha = p.linha.replace(/^Whey Protein /, "Whey ");
+  return `${p.marca.replace(/ Supplements$| Human Health$/, "")} ${linha} · ${peso(p.pacoteG)}`;
+};
 
 /* ───────────────────────── URL ───────────────────────── */
 
@@ -349,7 +355,7 @@ function resolver(l: Lado, idx: number, catalogo: ProdutoCatalogo[], agora: Date
   const p = catalogo.find((c) => c.slug === l.slug);
   if (!p) return { idx, nome: `Whey ${idx + 1}`, detalhe: "", oferta: null, origem: "catalogo", status: "indisponivel" };
   const preco = escolherPreco(p);
-  const nome = `${p.marca} ${p.linha} — ${p.sabor} (${g1(p.pacoteG)} g)`;
+  const nome = nomeCurto(p);
   if (!preco) return { idx, nome, detalhe: "sem preço cadastrado", oferta: null, origem: "catalogo", status: "indisponivel", produto: p };
   const st = statusPreco(new Date(preco.verificadoEm), agora);
   return {
@@ -377,7 +383,6 @@ function escolherPreco(p: ProdutoCatalogo) {
 }
 
 function SeletorCatalogo({ lado, catalogo, onChange }: { lado: Extract<Lado, { fonte: "catalogo" }>; catalogo: ProdutoCatalogo[]; onChange: (l: Extract<Lado, { fonte: "catalogo" }>) => void }) {
-  const marcas = [...new Set(catalogo.map((c) => c.marca))];
   const p = catalogo.find((c) => c.slug === lado.slug);
   return (
     <div className="space-y-3">
@@ -385,18 +390,12 @@ function SeletorCatalogo({ lado, catalogo, onChange }: { lado: Extract<Lado, { f
         Produto
         <select value={lado.slug} onChange={(e) => onChange({ fonte: "catalogo", slug: e.target.value, condicao: "" })} className={campo + " w-full mt-1"}>
           <option value="">Escolha um whey</option>
-          {marcas.map((m) => (
-            <optgroup key={m} label={m}>
-              {catalogo.filter((c) => c.marca === m).map((c) => (
-                <option key={c.slug} value={c.slug}>{c.linha} · {c.tipo} · {c.sabor} · {g1(c.pacoteG)} g</option>
-              ))}
-            </optgroup>
-          ))}
+          {catalogo.map((c) => <option key={c.slug} value={c.slug}>{nomeCurto(c)}</option>)}
         </select>
       </label>
       {p && (
         <p className="text-gray-400 text-xs leading-relaxed">
-          Rótulo: {g1(p.proteinaPorcaoG)} g de proteína em {g1(p.porcaoG)} g · conferido em {dataBR(p.rotuloVerificadoEm + "T12:00:00Z")}
+          {g1(p.proteinaPorcaoG)} g de proteína a cada {g1(p.porcaoG)} g · rótulo do sabor {p.sabor.toLowerCase()}, conferido em {dataBR(p.rotuloVerificadoEm + "T12:00:00Z")}
           {p.lactose === "contem" && " · contém lactose"}
         </p>
       )}
