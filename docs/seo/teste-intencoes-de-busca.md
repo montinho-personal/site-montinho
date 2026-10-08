@@ -490,3 +490,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Montinho confirmou cartão de crédito e aula experimental (08/10): frase de cartão nas respostas de pagamento (Alphaville, Tamboré); +aula experimental em Alphaville, Tamboré, Barueri, Santana, Aldeia; +cartão em Barueri, Santana, Aldeia.
 - Fora: Wellhub/Gympass, salário/piso, custo de montar academia no condomínio, Smart Fit.
 - Obs.: há dois posts de condomínio em Alphaville (em-condominio e para-condominio) com intenção muito próxima — candidatos a consolidação.
+
+### Quanto custa personal trainer — 5 páginas locais (08/10) — Answer the Public
+- Export: "quanto custa um personal trainer" 2,9 mil/mês; "por mês" 320; "particular" 140; "hora" 110 (Bing); "contratar" 70; "na smart fit" 50; "2 vezes por semana" 20; "online" 20; várias capitais (fora da área).
+- +3 Tamboré (2x, online mais barato, pagamento/cartão); +4 Alphaville (2x, por mês, online, cartão); +3 Barueri, +3 Santana, +3 Aldeia (2x, por mês, cartão). Nenhum número novo; a faixa de Alphaville é a já aprovada. updatedAt 08/10 nos posts.
+- Pauta aberta: artigo nacional "quanto custa um personal trainer" (2,9 mil/mês) — depende de decisão sobre publicar faixa de preço com fonte.
