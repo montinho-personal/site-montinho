@@ -67,6 +67,21 @@ const faq = [
     answer:
       "Compare o que está incluso, não apenas o número. Um personal a R$ 600/mês que manda ficha genérica e não faz reavaliação é mais caro do que um a R$ 1.500/mês que entrega protocolo individual, presença exclusiva e resultado mensurável. O custo real do treino sem método é o tempo perdido sem progressão — e isso tem um valor muito alto.",
   },
+  {
+    question: "Quanto custa um personal 2 vezes por semana no Tamboré?",
+    answer:
+      "Fica abaixo do plano de três vezes, e o valor por sessão é menor que o da aula avulsa. Local (condomínio, casa ou Arena 18) e horário fecham a proposta — que vai pelo WhatsApp.",
+  },
+  {
+    question: "Personal online sai mais barato que o presencial?",
+    answer:
+      "Sai. Na consultoria online não há deslocamento nem hora de sessão ao vivo: o treino é montado para você, com vídeos de execução e ajustes pelo WhatsApp. É a opção para quem já treina com alguma autonomia ou tem a agenda imprevisível.",
+  },
+  {
+    question: "Como funciona o pagamento? Aceita cartão?",
+    answer:
+      "Por plano, não por aula solta, com as condições definidas na proposta. Aceito cartão de crédito. Antes de fechar, dá para marcar uma aula experimental.",
+  },
 ];
 
 const localSchema = {
