@@ -464,3 +464,9 @@ Perguntas informativas que apareceram nos exports locais e já tinham artigo (se
 - quanto-tempo-para-aparecer-resultado-na-academia: "É possível ver resultado com 1 mês de academia?".
 - primeira-semana-na-academia: "O que muda no corpo com 1 semana de academia?".
 updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × personal (aguarda export + print).
+
+### blog/diferenca-entre-instrutor-de-academia-e-personal-trainer (novo, 08/10)
+- Export + prints "diferença entre instrutor e personal trainer": volume ~40/mês somando variações. Autocompletar: instrutor de academia e personal, precisa ser formado, o que faz, é professor, quanto ganha, precisa de faculdade, plural. PAA: é o mesmo que personal; é obrigatório ter instrutor; quanto custa 1h; instrutor é professor. IA: atendimento coletivo × exclusivo, custo incluso × à parte, ambos formados com CREF. Concorrentes: UniFOA, Engenharia do Corpo, vídeos YouTube/Instagram.
+- Fato com fonte: Lei nº 9.696/1998 (Planalto), com redação da Lei 14.386/2022 para o diploma.
+- Fora: salário/CBO/faculdade como carreira, plural/grafia, instrutor de autoescola. "É obrigatório ter instrutor na academia?" ficou de fora por falta de fonte oficial verificada.
+- Ferramenta: ARTIGOS_SEM_FERRAMENTA.
