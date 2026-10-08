@@ -445,3 +445,4 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 - Export sem aba de volume do Google; PAA quase igual ao de Alphaville (+ Smart Fit, Goiânia/Fortaleza). Prompts de IA: emagrecimento, grupo, iniciantes, reabilitação, avaliação física completa, domiciliar, horários flexíveis, online, hipertrofia, "como escolher".
 - A página já cobria 1h, 3x/semana, taxa de personal externo, é vantajoso, iniciantes/60+, restrições, pouco tempo, online. +4 FAQs: 2x/semana (sem valor), duração da aula, como funciona o pagamento, como escolher (com regra de condomínio para personal externo).
 - Fora: Smart Fit (preço/salário/diária), outras cidades, salário CLT, "pode treinar 1 hora da manhã". Pendente de confirmação: treino em grupo e avaliação física completa.
+- 08/10: Montinho confirmou treino ao ar livre, em dupla/grupo pequeno e avaliação física. +3 FAQs em cada página local (Alphaville, Barueri, Tamboré), com redação diferente por página.

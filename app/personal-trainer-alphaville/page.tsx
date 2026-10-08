@@ -126,6 +126,21 @@ const faq = [
     answer:
       "Para qualquer pessoa que queira sair do lugar: seja quem nunca treinou, quem voltou após anos afastado, quem tem histórico de lesões ou quem já treina mas não vê resultado. Adapto o ponto de partida a cada aluno.",
   },
+  {
+    question: "Você faz treino ao ar livre em Alphaville?",
+    answer:
+      "Faço. Dá para treinar nas áreas abertas do condomínio, em praças e alamedas da região, combinando força com peso corporal, elásticos e o que o espaço permitir. Num dia de calor forte ou chuva, a gente leva o treino para um lugar coberto sem perder a sessão.",
+  },
+  {
+    question: "Dá para treinar com personal em dupla ou em grupo pequeno?",
+    answer:
+      "Dá. Em dupla ou grupo pequeno o treino é montado para todos, mas cada um tem a carga e a adaptação que precisa — se um avança mais rápido ou sente um exercício, o ajuste é individual. O valor por pessoa entra na proposta pelo WhatsApp.",
+  },
+  {
+    question: "Você faz avaliação física?",
+    answer:
+      "Faço. A avaliação física mostra o ponto de partida: como você se movimenta, o que dá para carregar com segurança e o que precisa de cuidado. É ela que orienta as primeiras semanas e serve de comparação depois.",
+  },
 ];
 
 const localSchema = {
