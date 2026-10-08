@@ -456,3 +456,11 @@ semana pdf" (isca), "superávit calórico preço/onde comprar/remédio"
 - PAA: 1h, 2x/semana, 3 ou 5 vezes, diferença instrutor × personal (cluster forte), Ironberg/CrossFit (fora). IA: domicílio, emagrecimento, idosos, reabilitação, hipertrofia, "como escolher", sessão experimental.
 - Já cobria: 1 mês, 3x, é vantajoso, emagrecer, divisa Barueri/Santana, condomínio, casa, ar livre, restrição médica, lombar, deslocamento. +6 FAQs: instrutor × personal; 3 ou 5 vezes; 2x/semana (sem valor); dupla/grupo; avaliação física; como escolher. updatedAt 08/10.
 - Fora: Ironberg, CrossFit, salário de instrutor, "como se escreve personal trainer", "maior academia do mundo".
+
+### PAA dos exports locais → FAQ de artigos existentes (08/10)
+Perguntas informativas que apareceram nos exports locais e já tinham artigo (sem criar página nova, para não canibalizar):
+- sono-e-crescimento-muscular: "Qual horário o músculo cresce?" (Barueri, Santana, Aldeia).
+- frequencia-de-treino: "É melhor treinar 3 ou 5 vezes na semana?".
+- quanto-tempo-para-aparecer-resultado-na-academia: "É possível ver resultado com 1 mês de academia?".
+- primeira-semana-na-academia: "O que muda no corpo com 1 semana de academia?".
+updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × personal (aguarda export + print).
