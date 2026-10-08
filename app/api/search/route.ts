@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { search } from "@/lib/search";
+import { sugerirFerramentas } from "@/lib/busca-unificada";
 
 export const runtime = "nodejs";
 
@@ -11,9 +12,10 @@ export function GET(req: NextRequest) {
   );
 
   if (q.trim().length < 2) {
-    return NextResponse.json({ results: [], total: 0 });
+    return NextResponse.json({ results: [], ferramentas: [], total: 0 });
   }
 
-  const results = search(q, limit);
-  return NextResponse.json({ results, total: results.length });
+  const results = search(q, limit, true);
+  const ferramentas = sugerirFerramentas(q, 3);
+  return NextResponse.json({ results, ferramentas, total: results.length });
 }

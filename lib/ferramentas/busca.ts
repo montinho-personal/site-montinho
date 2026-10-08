@@ -141,17 +141,19 @@ export interface ResultadoBusca {
    * nada, as mais usadas. Nunca vazio — a página não mostra tela em branco.
    */
   relacionadas: FerramentaCatalogo[];
+  /** `relacionadas` veio do "mais usadas" porque nada casou — não é resposta à consulta. */
+  relacionadasSaoFallback?: boolean;
 }
 
-export function buscaFerramentas(texto: string, limite = 12): ResultadoBusca {
+export function buscaFerramentas(texto: string, limite = 12, minimoParcial = 0): ResultadoBusca {
   const termos = palavras(texto);
   const consulta = normaliza(texto);
   if (consulta.length < TAMANHO_MINIMO || termos.length === 0) {
     return { consulta, termos: [], resultados: [], relacionadas: [] };
   }
   const docs = montaIndice();
-  const estritos: { f: FerramentaCatalogo; pontos: number }[] = [];
-  const parciais: { f: FerramentaCatalogo; pontos: number }[] = [];
+  const estritos: { f: FerramentaCatalogo; pontos: number; bruto: number }[] = [];
+  const parciais: { f: FerramentaCatalogo; pontos: number; bruto: number }[] = [];
   for (const d of docs) {
     let total = 0;
     let casaram = 0;
@@ -161,15 +163,38 @@ export function buscaFerramentas(texto: string, limite = 12): ResultadoBusca {
       total += p;
     }
     if (casaram === 0) continue;
+    const bruto = total;
     if (MAIS_USADAS.includes(d.f.id)) total += BONUS_MAIS_USADA;
-    (casaram === termos.length ? estritos : parciais).push({ f: d.f, pontos: total });
+    (casaram === termos.length ? estritos : parciais).push({ f: d.f, pontos: total, bruto });
   }
   const ordena = (a: { pontos: number }, b: { pontos: number }) => b.pontos - a.pontos;
   const resultados = estritos.sort(ordena).slice(0, limite).map((x) => x.f);
   let relacionadas: FerramentaCatalogo[] = [];
+  let relacionadasSaoFallback = false;
   if (resultados.length === 0) {
-    relacionadas = parciais.sort(ordena).slice(0, 4).map((x) => x.f);
-    if (relacionadas.length === 0) relacionadas = MAIS_USADAS.map(porId).filter((f): f is FerramentaCatalogo => f !== null).slice(0, 4);
+    relacionadas = parciais.filter((x) => x.bruto >= minimoParcial).sort(ordena).slice(0, 4).map((x) => x.f);
+    if (relacionadas.length === 0) {
+      relacionadas = MAIS_USADAS.map(porId).filter((f): f is FerramentaCatalogo => f !== null).slice(0, 4);
+      relacionadasSaoFallback = true;
+    }
   }
-  return { consulta, termos, resultados, relacionadas };
+  return { consulta, termos, resultados, relacionadas, relacionadasSaoFallback };
+}
+
+/**
+ * As ferramentas que a busca GERAL do site mostra junto com os artigos.
+ *
+ * Mais exigente que a Central: lá a página nunca pode ficar vazia; aqui,
+ * ferramenta só aparece se responde à consulta. Primeiro as que casam com
+ * todas as palavras; sem nenhuma, até duas que casam com alguma — nunca o
+ * "mais usadas" de consolação, que pareceria sugestão aleatória no meio de
+ * uma busca por artigo.
+ */
+export function ferramentasDaBusca(texto: string, limite = 3): FerramentaCatalogo[] {
+  // Parcial só conta com casamento de tag ou nome (≥ 4 pontos sem o bônus de
+  // uso): uma palavra solta na frase de resultado não basta para sugerir.
+  const r = buscaFerramentas(texto, limite, 4);
+  if (r.resultados.length > 0) return r.resultados.slice(0, limite);
+  if (r.relacionadasSaoFallback) return [];
+  return r.relacionadas.slice(0, Math.min(2, limite));
 }
