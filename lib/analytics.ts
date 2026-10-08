@@ -488,6 +488,14 @@ export type AnalyticsEvent =
   | "tools_hub_cta_click"
   | "protein_whey_click"
   /** Calculadora de Whey. Faixas de peso e de proteína faltante; nunca o peso, o consumo nem o preço. */
+  /** Batalha dos Wheys (/ferramentas/comparador-whey-protein). Sem dado pessoal: só slug/tipo. */
+  | "comparador_whey_visualizado"
+  | "comparador_whey_produto_selecionado"
+  | "comparador_whey_manual_inserido"
+  | "comparador_whey_comparacao_realizada"
+  | "comparador_whey_compartilhado"
+  | "comparador_whey_loja_clicada"
+  | "comparador_whey_proteina_clicada"
   | "whey_calculator_view"
   | "whey_calculator_start"
   | "whey_goal_selected"
