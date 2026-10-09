@@ -63660,7 +63660,7 @@ Parcialmente. HIIT desenvolve condicionamento mas não gera o estímulo de forç
   {
     slug: "como-fazer-hip-thrust",
     title: "Como Fazer Hip Thrust: A Técnica Correta para Máxima Ativação Glútea",
-    metaTitle: "Como Fazer Hip Thrust: Técnica Correta",
+    metaTitle: "Como Fazer Hip Thrust (Elevação Pélvica): Técnica Correta",
     metaDescription: "Aprenda a técnica correta do hip thrust para glúteos: posição do banco, barra, amplitude, erros que reduzem ativação e variações para todos os níveis.",
     excerpt: "O hip thrust é, comprovadamente, o exercício com maior ativação eletromiográfica dos glúteos. Aprenda a executar com técnica perfeita e maximize seus resultados.",
     content: `<p>Se você treina glúteos e ainda não faz hip thrust, está deixando resultados na mesa. Estudos de eletromiografia conduzidos pelo pesquisador Bret Contreras — apelidado de "The Glute Guy" — mostram que o hip thrust ativa o glúteo máximo em até 100% mais do que o agachamento tradicional. Isso não é opinião, é ciência aplicada ao treinamento.</p>
