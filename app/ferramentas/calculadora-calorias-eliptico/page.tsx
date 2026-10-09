@@ -24,7 +24,9 @@ import {
   tabelaPorPeso,
   tabelaPorTempo,
 } from "@/lib/eliptico";
-import { compara as comparaBicicleta } from "@/lib/bicicleta";
+import { compara as comparaBicicleta, metDoEsforco } from "@/lib/bicicleta";
+import { metDoRitmo } from "@/lib/corrida";
+import { MET_SIMULADOR } from "@/lib/escada";
 
 /**
  * A página da Calculadora de Calorias do Elíptico.
@@ -83,6 +85,18 @@ const UM_QUILO = simulacaoUmQuilo(PESO_PADRAO, MOD.met);
 const POR_MIN = EX(1).kcal;
 const BIKE = comparaBicicleta(PESO_PADRAO, 30);
 const BIKE_ERGO = BIKE.find((l) => l.id === "ergometrica")!;
+const META_500 = deKcal(500, PESO_PADRAO, MOD.met);
+const META_500_VIG = deKcal(500, PESO_PADRAO, VIG.met);
+const CARDIO_30 = [
+  { nome: "simulador de escada", met: MET_SIMULADOR },
+  { nome: "elíptico vigoroso", met: VIG.met },
+  { nome: "ergométrica forte", met: metDoEsforco("forte") },
+  { nome: "corrida a 8 km/h", met: metDoRitmo(8).met },
+  { nome: "elíptico moderado", met: MOD.met },
+]
+  .map((c) => ({ ...c, kcal: EX(30, c.met).kcal }))
+  .sort((a, b) => b.kcal - a.kcal);
+const INTERVALADO_30 = (EX(10, VIG.met).kcal + EX(20, MOD.met).kcal);
 const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDigits: d });
 
 const faq: ItemFAQ[] = [
@@ -144,6 +158,42 @@ const faq: ItemFAQ[] = [
   {
     question: "Como usar o elíptico para perder barriga?",
     answer: NOTA_SEM_PERDA_LOCALIZADA + " O elíptico entra como uma das fontes de gasto, não como uma forma de escolher onde emagrecer.",
+  },
+  {
+    question: "45 minutos de elíptico queima quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg, cerca de ${arredondaKcal(EX(45).kcal)} kcal em esforço moderado e ${arredondaKcal(EX(45, VIG.met).kcal)} kcal em esforço vigoroso. Quarenta e cinco minutos vigorosos seguidos são raros: a maioria das sessões mistura os dois.`,
+  },
+  {
+    question: "Quanto tempo de elíptico para queimar 500 calorias?",
+    answer: `Para ${PESO_PADRAO} kg, cerca de ${formataTempo(META_500.minutos)} em esforço moderado, ou ${formataTempo(META_500_VIG.minutos)} em esforço vigoroso. Quem pesa mais chega antes, porque o gasto por minuto acompanha o peso.`,
+  },
+  {
+    question: "Qual aparelho de cardio queima mais calorias?",
+    answer: `Depende mais do esforço do que do aparelho. Em 30 minutos, para ${PESO_PADRAO} kg: ${CARDIO_30.map((c) => `${c.nome} ≈ ${arredondaKcal(c.kcal)} kcal`).join("; ")}. No mesmo nível de esforço, os aparelhos ficam próximos; vale escolher o que você aguenta manter na semana.`,
+  },
+  {
+    question: "O elíptico é um bom exercício de cardio?",
+    answer: "É. Ele eleva a frequência cardíaca como a corrida, mas sem a aterrissagem da passada, e trabalha braços e pernas ao mesmo tempo. É uma das opções mais indicadas para quem tem sobrepeso ou joelho sensível e quer fazer cardio com frequência. Para força e massa muscular, não substitui a musculação.",
+  },
+  {
+    question: "Como usar o elíptico corretamente?",
+    answer: "Na maioria dos elípticos de academia, o painel acende quando você começa a pedalar; nos que têm botão, é o de iniciar. Suba segurando as alças, mantenha o tronco reto e o pé inteiro na plataforma, e empurre e puxe as alças em vez de só apoiar o peso nelas. Comece com resistência baixa e aumente até sentir esforço de verdade, conseguindo ainda falar frases curtas.",
+  },
+  {
+    question: "O que influencia a queima de calorias no elíptico?",
+    answer: "Peso corporal, resistência e ritmo — nessa ordem. Usar os braços ativamente soma um pouco; apoiar o peso nas alças ou no painel reduz bastante, porque as pernas passam a carregar menos. Inclinação da rampa, quando o aparelho tem, aumenta o trabalho das pernas e do glúteo.",
+  },
+  {
+    question: "Treino intervalado no elíptico queima mais?",
+    answer: `Queima mais que o mesmo tempo só no moderado. Um exemplo: 30 minutos alternando 1 minuto forte com 2 minutos leves somam cerca de 10 minutos vigorosos e 20 moderados — perto de ${arredondaKcal(INTERVALADO_30)} kcal para ${PESO_PADRAO} kg, contra ${arredondaKcal(EX(30).kcal)} kcal no moderado contínuo. A vantagem maior é prática: dá para fazer mais esforço em menos tempo.`,
+  },
+  {
+    question: "O que acontece se eu fizer 20 minutos de elíptico todos os dias?",
+    answer: `São cerca de ${arredondaKcal(EX(20).kcal)} kcal por dia em esforço moderado para ${PESO_PADRAO} kg, ou uns ${arredondaKcal(EX(20).kcal * 7)} kcal por semana — e 140 minutos semanais, perto do mínimo de 150 que a OMS recomenda para a saúde. O condicionamento melhora em poucas semanas; o peso acompanha se a alimentação não compensar o gasto.`,
+  },
+  {
+    question: "Elíptico afina a cintura?",
+    answer: NOTA_SEM_PERDA_LOCALIZADA + " O elíptico entra como gasto do dia; a cintura acompanha a perda de gordura do corpo todo.",
   },
 ];
 
