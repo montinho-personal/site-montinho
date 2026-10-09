@@ -63712,6 +63712,21 @@ Os estudos de EMG de Contreras mostram consistentemente que o hip thrust produz 
 
 **Posição dos pés:** Pés mais próximos do corpo aumentam a ativação do glúteo; pés mais afastados transferem mais trabalho para os isquiotibiais. Experimente pequenos ajustes até encontrar a posição ideal.
 
+<h2>Hip thrust é o mesmo que elevação pélvica?</h2>
+
+<p>Na prática, sim. "Hip thrust" é o nome em inglês; no Brasil, a academia chama o mesmo movimento de <strong>elevação pélvica</strong> — costas apoiadas no banco, peso no quadril, subir o quadril até alinhar com o tronco. Quando o exercício é feito deitado no chão, sem banco, costuma ser chamado de <strong>ponte de glúteo</strong>: a amplitude é menor e a carga também, mas o músculo principal é o mesmo, o glúteo máximo.</p>
+
+<h2>Como fazer hip thrust em casa e sem máquina</h2>
+
+<ul>
+<li><strong>No sofá ou numa cadeira firme encostada na parede:</strong> faz o papel do banco. Apoie a parte de baixo das escápulas na borda, pés firmes no chão na largura do quadril, e suba até o quadril alinhar com o tronco.</li>
+<li><strong>Com halter, mochila ou galão de água:</strong> apoiado na dobra do quadril, segurando com as duas mãos.</li>
+<li><strong>Com elástico:</strong> passado por cima do quadril e preso embaixo dos pés ou de um móvel pesado. A resistência aumenta no topo, onde o glúteo trabalha mais.</li>
+<li><strong>Unilateral:</strong> uma perna no chão e a outra no ar. Dobra o trabalho de cada lado sem precisar de carga, e expõe diferença de força entre as pernas.</li>
+</ul>
+
+<p>Na academia, a <strong>máquina de hip thrust</strong> (ou de elevação pélvica) dispensa montar barra e anilhas: o apoio já vem na altura certa e o movimento é guiado. A técnica é a mesma — queixo levemente para baixo, subir até o alinhamento, segurar 1 segundo no topo. Mais ideias em <a href="/blog/treino-de-gluteos-em-casa">treino de glúteos em casa</a>.</p>
+
 <h2>Erros mais comuns</h2>
 
 <div class="overflow-x-auto" style="margin:2rem 0">
@@ -63780,7 +63795,7 @@ Se você mora em Alphaville ou região e quer aprender o hip thrust com supervis
 `,
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
+    updatedAt: "2026-10-09",
     readTime: "8 min",
     author: "Montinho Personal Trainer",
     tags: ["hip thrust", "glúteos", "técnica", "hipertrofia", "treino de glúteos", "bret contreras", "exercícios para glúteos"],
@@ -63804,6 +63819,12 @@ Se você mora em Alphaville ou região e quer aprender o hip thrust com supervis
 { question: "Hip thrust pode substituir o agachamento no treino de glúteos?", answer: "Não — os dois exercícios são complementares. O agachamento trabalha o glúteo em padrão de flexão de quadril com alta demanda de quadríceps. O hip thrust trabalha o glúteo em extensão total, onde a ativação é máxima. Para desenvolvimento glúteo completo, combine os dois no mesmo programa." },
       { question: "Qual o peso certo para começar no hip thrust?", answer: "Comece com o peso corporal por 2 semanas para aprender a retroversão pélvica e a posição do banco. Depois, inicie com a barra vazia (20 kg) e progrida em incrementos de 5 a 10 kg por semana conforme a técnica se consolida. A maioria dos praticantes atinge 60 a 100 kg em 8 a 12 semanas de progressão consistente." },
       { question: "Hip thrust na máquina Smith é tão eficaz quanto com barra livre?", answer: "A ativação muscular é muito similar. O Smith oferece a vantagem de não precisar equilibrar a barra, permitindo foco total na execução e na retroversão pélvica. É uma boa opção para iniciantes e para quem treina sozinho. A barra livre permite mais liberdade de movimento, o que pode ser ligeiramente mais funcional." },
+      { question: "Qual a diferença entre hip thrust e elevação pélvica?", answer: "Nenhuma, na prática: elevação pélvica é como o hip thrust é chamado nas academias do Brasil. A versão feita deitado no chão, sem banco, costuma se chamar ponte de glúteo e tem amplitude e carga menores." },
+      { question: "Como fazer hip thrust em casa?", answer: "Apoie as costas no sofá ou numa cadeira firme encostada na parede, coloque um halter, mochila ou galão no quadril e suba até o quadril alinhar com o tronco. Sem peso, faça unilateral ou use elástico para manter o exercício difícil." },
+      { question: "Como fazer hip thrust na máquina?", answer: "Ajuste o apoio das costas na altura das escápulas e a almofada na dobra do quadril, pés firmes na plataforma. Suba até alinhar quadril e tronco, segure 1 segundo e desça controlando. A máquina guia o movimento e dispensa montar a barra." },
+      { question: "O que substitui o hip thrust?", answer: "Ponte de glúteo no chão, elevação pélvica unilateral, stiff e agachamento búlgaro trabalham o glúteo com cargas e ângulos diferentes. Para a mesma função — estender o quadril com carga no topo —, a ponte de glúteo e a máquina são as substituições mais próximas." },
+      { question: "Quais músculos o hip thrust trabalha?", answer: "Principalmente o glúteo máximo. Os posteriores da coxa e o quadríceps ajudam em menor grau, e o abdômen trabalha para manter a pelve estável." },
+      { question: "Hip thrust com halter funciona?", answer: "Funciona, principalmente para iniciantes e em casa. O limite é a carga: quando o halter ficar leve demais, passe para a barra, a máquina ou a versão unilateral." },
     ],
   },
   {
