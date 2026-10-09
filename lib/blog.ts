@@ -63884,6 +63884,22 @@ Para quem busca hipertrofia específica de quadríceps, a combinação de leg pr
 
 A cadeira extensora é um dos exercícios mais estudados com o protocolo de Blood Flow Restriction (BFR). Com cargas de apenas 20–30% do 1RM e um manguito restringindo parcialmente o fluxo venoso, é possível atingir hipertrofia similar à do treinamento com cargas altas. Isso é especialmente útil em reabilitação, pós-cirurgia ou períodos de baixa carga. Saiba mais em [Treino com Restrição de Fluxo (BFR)](/blog/treino-com-restricao-de-fluxo-bfr).
 
+<h2>Como fazer cadeira extensora em casa</h2>
+
+<p>Sem a máquina, o movimento é o mesmo — estender o joelho contra uma resistência —, só muda de onde vem a carga. Três jeitos, do mais parecido com a academia ao mais simples:</p>
+
+<ul>
+<li><strong>Com caneleira:</strong> sente numa cadeira firme ou banco alto, costas apoiadas e coxa inteira no assento. Com a caneleira no tornozelo, estenda o joelho até quase esticar, segure 1 segundo e desça em 2 a 3 segundos. Uma perna por vez.</li>
+<li><strong>Com elástico ou mini band:</strong> prenda o elástico atrás de você, no pé de um móvel pesado, e passe a outra ponta no tornozelo; estenda o joelho contra a tensão. Com mini band nos dois tornozelos, uma perna fica parada no chão e a outra faz o movimento.</li>
+<li><strong>Sem nada:</strong> estenda a perna sentado e segure de 10 a 20 segundos contraindo a frente da coxa. Para ganhar força de verdade sem equipamento, agachamento e <a href="/blog/como-fazer-afundo-passadas">afundo</a> trabalham o quadríceps melhor do que a imitação da máquina.</li>
+</ul>
+
+<p>Em casa, a carga para de subir rápido. Para continuar evoluindo, aumente as repetições, faça a descida mais lenta, segure mais tempo no topo ou troque por um elástico mais forte. Ideias de treino completo em <a href="/blog/treino-com-elasticos-em-casa">treino com elásticos em casa</a>.</p>
+
+<h2>Cadeira extensora ou flexora: qual a diferença?</h2>
+
+<p>A extensora estica o joelho e trabalha a frente da coxa (quadríceps). A <a href="/blog/como-fazer-cadeira-flexora">flexora</a> dobra o joelho e trabalha a parte de trás (posteriores). Uma não substitui a outra: um treino de perna equilibrado tem as duas. A ordem em relação ao agachamento está em <a href="/blog/cadeira-extensora-vs-agachamento">cadeira extensora ou agachamento</a>.</p>
+
 <h2>Erros mais comuns</h2>
 
 <div class="overflow-x-auto" style="margin:2rem 0">
@@ -63935,7 +63951,7 @@ Se você está em Alphaville ou região e quer montar um programa de hipertrofia
 `,
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
+    updatedAt: "2026-10-09",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["cadeira extensora", "quadríceps", "técnica", "hipertrofia", "treino de perna", "leg extension", "joelho"],
@@ -63959,6 +63975,12 @@ Se você está em Alphaville ou região e quer montar um programa de hipertrofia
 { question: "Cadeira extensora pode ser usada por quem teve cirurgia no LCA?", answer: "Com restrições e acompanhamento fisioterapêutico, sim. Após a fase aguda de recuperação, a cadeira extensora com amplitude limitada e carga progressiva é frequentemente usada em reabilitação de LCA. A amplitude liberada e a carga progressada devem ser determinadas pelo fisioterapeuta responsável, não pelo próprio praticante." },
       { question: "Quantas séries de cadeira extensora são suficientes por treino?", answer: "Como exercício complementar após compostos (agachamento, leg press), 2 a 3 séries são suficientes. Como exercício principal de uma sessão de isolamento ou protocolo BFR, 3 a 4 séries de 10 a 15 repetições são adequadas. Acima de 5 séries por sessão, o custo de recuperação supera o benefício adicional para a maioria dos praticantes." },
       { question: "É verdade que a cadeira extensora ativa o reto femoral de forma diferente dos outros vastos?", answer: "Sim. O reto femoral é a única cabeça biarticular do quadríceps — cruza tanto o quadril quanto o joelho. Na cadeira extensora sentada, com o quadril em flexão, o reto femoral está em posição encurtada (proximal), o que reduz sua contribuição. Isso explica por que pessoas com quadríceps dominados pelo reto femoral devem incluir variações como a extensora em decúbito (deitado) para estimular essa cabeça de forma mais completa." },
+      { question: "Como fazer cadeira extensora em casa?", answer: "Sentado numa cadeira firme, com caneleira no tornozelo ou um elástico preso atrás, estenda o joelho até quase esticar, segure 1 segundo e desça devagar, uma perna por vez. Sem nada, segure a perna estendida de 10 a 20 segundos contraindo a coxa — ou troque por agachamento e afundo, que treinam a mesma região com mais carga." },
+      { question: "Dá para fazer cadeira extensora com elástico?", answer: "Dá. Prenda o elástico no pé de um móvel pesado atrás de você e a outra ponta no tornozelo, e estenda o joelho contra a tensão. Quando ficar fácil, use um elástico mais forte ou faça a descida mais lenta." },
+      { question: "Pode fazer cadeira extensora unilateral?", answer: "Pode, e ajuda quando uma perna é mais fraca que a outra: cada lado faz o próprio trabalho. Use carga menor que a do bilateral e conte as séries por perna." },
+      { question: "Quantas vezes por semana fazer cadeira extensora?", answer: "Uma ou duas vezes, dentro do treino de perna. Ela complementa o agachamento e o leg press; não precisa ser diária, porque o músculo cresce na recuperação entre os treinos." },
+      { question: "A cadeira extensora engrossa as pernas?", answer: "Ela faz o quadríceps crescer quando a carga sobe com o tempo, então ajuda a deixar a frente da coxa maior. Sozinha, porém, engrossa pouco: agachamento, leg press e alimentação adequada fazem a maior parte do trabalho." },
+      { question: "Qual é a diferença entre cadeira extensora e flexora?", answer: "A extensora estica o joelho e trabalha a frente da coxa; a flexora dobra o joelho e trabalha a parte de trás. As duas entram no treino de perna, sem uma substituir a outra." },
     ],
   },
   {

@@ -553,3 +553,10 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 ### blog/10-melhores-academias-de-alphaville (09/10) — Answer the Public
 - GSC 28 dias: 78 impressões, 7 cliques, posição 4,2. Export sem volume; PAA quase todo fora do tema (teste ergométrico, Anatoly, condomínios e casas de famosos, academia mais cara de SP). IA: sem fidelidade, desconto estudante/idoso, spinning, pilates/yoga, avaliação física e aula experimental grátis, estacionamento, piscina, horários, mais bem avaliadas.
 - Página já tinha 8 FAQs (Gympass, 24h, Industrial, Fábrica Premium, melhor, preço, hipertrofia). +5: piscina, aulas coletivas/pilates/spinning, aula experimental nas academias, plano sem fidelidade, idosos/iniciantes (aponta para os guias). updatedAt 09/10.
+
+### blog/como-fazer-cadeira-extensora (09/10) — Answer the Public + prints (teste "tráfego de IA")
+- Escolhido por ser o artigo com mais visitas vindas de IA (GA4, 90 dias: 74 sessões, quase todas do ChatGPT).
+- Export: "como fazer cadeira extensora em casa" 320/mês (Google, Bing, YouTube); "como fazer a cadeira extensora" 90; corretamente 40; exercício na cadeira 40; com elástico 30; drop 20. Prints: autocompletar (em casa, corretamente, unilateral, sem aparelho, elástico, sem machucar o joelho, mini band); PAA (corretamente, substituir em casa, quantas vezes por semana); relacionadas (flexora, unilateral, para glúteo/posterior). Prompts de IA leram como "construir a máquina" (descartados).
+- Artigo não cobria "em casa". +seção "Como fazer cadeira extensora em casa" (caneleira, elástico/mini band, sem nada + progressão) e "extensora ou flexora"; +6 FAQs (em casa, elástico, unilateral, vezes por semana, engrossa a perna, extensora × flexora). updatedAt 09/10.
+- Base para medir: GA4 IA 74 sessões/90d; acompanhar GSC para "em casa".
+- Fora: construir cadeira de madeira/caseira, preço de máquina.
