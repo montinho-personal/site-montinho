@@ -564,3 +564,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 ### blog/como-fazer-hip-thrust (09/10) — Answer the Public + prints (teste "tráfego de IA")
 - 2º artigo com mais visitas vindas de IA (GA4, 90 dias: 35 sessões). Export: "como fazer hip thrust" 90/mês; "pesado" 20; em casa 10; na máquina 10. PAA: hip thrust × elevação pélvica (forte), máquina, o que substitui, músculos, em casa. Prints: na máquina, unilateral com halter, barra, no chão, explosivo, "em português". IA: equipamentos/compras (fora), halter × barra, erros, variações.
 - +seções "Hip thrust é o mesmo que elevação pélvica?" e "Como fazer hip thrust em casa e sem máquina" (sofá/cadeira, halter/mochila, elástico, unilateral, máquina); +6 FAQs (× elevação pélvica, em casa, na máquina, o que substitui, músculos, com halter). updatedAt 09/10.
+
+### ferramentas/calculadora-polichinelos (09/10) — Answer the Public
+- GSC 28 dias: 7.159 impressões, 47 cliques, posição 4,8. Export "polichinelo queima quantas calorias": "100 polichinelo queima quantas calorias" 390/mês; 10 min 70; 5 min 70; 30 min 50; 20/15/2 min 20; 200 polichinelos 20; 1 min, 3 min, meia hora, 1 polichinelo 10. PAA: quantos para 300/500 kcal, 1 polichinelo, 500, 1 kg, 1 hora, 100 e 50 por dia, benefícios, é cardio, × caminhada, barriga.
+- Página já tinha 13 FAQs (100, por minuto, 300, 100/dia, quantos por dia, barriga, × caminhada…). +9, todas calculadas pela lib (70 kg, ritmo moderado): 10 min (com 5/20/30), 1 hora, 1 polichinelo, 500, quantos para 300 e 500 kcal, 1 kg (simulação 7.700 kcal), 50 por dia, é cardio (Compêndio), benefícios.
+- Ferramenta, sem updatedAt (página em app/).
