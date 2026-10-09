@@ -121,6 +121,9 @@ function decodificar(busca: string, catalogo: ProdutoCatalogo[]): { lados: Lado[
   return { lados, gDia, dias: (PERIODOS as readonly number[]).includes(d) ? d : 30 };
 }
 
+/** Gramas de pó que entregam gDia de proteína, pelo rótulo do produto. */
+const poDia = (o: Oferta, gDia: number) => (gDia * o.porcaoG) / o.proteinaPorcaoG;
+
 /* ───────────────────────── Componente ───────────────────────── */
 
 export default function BatalhaDosWheys({ catalogo }: { catalogo: ProdutoCatalogo[] }) {
@@ -213,16 +216,28 @@ export default function BatalhaDosWheys({ catalogo }: { catalogo: ProdutoCatalog
 
       <fieldset className="border border-white/15 p-4 sm:p-5">
         <legend className="text-gray-300 text-sm px-1">Sua rotina</legend>
-        <p className="text-gray-300 text-sm mb-2">Quantos gramas de proteína por dia vêm do whey?</p>
+        <p className="text-gray-300 text-sm mb-1">Quanta <strong className="text-white">proteína</strong> por dia você quer tirar do whey?</p>
+        <p className="text-gray-400 text-xs mb-3">
+          É a proteína, não o pó. O whey não é 100% proteína: para ter {gDia} g de proteína, você usa mais que {gDia} g do produto — quanto mais, depende do rótulo de cada um.
+        </p>
         <div className="flex flex-wrap gap-2 mb-4">
           {DOSES_ATALHO.map((d) => (
             <button key={d} type="button" onClick={() => setGDia(d)} aria-pressed={gDia === d} className={aba(gDia === d)}>{d} g</button>
           ))}
           <label className="flex items-center gap-2 text-gray-300 text-sm">
-            outro:
+            outro (g de proteína):
             <input inputMode="numeric" value={gDia} onChange={(e) => { const n = parseNumero(e.target.value); if (n !== null && n >= 5 && n <= 300) setGDia(Math.round(n)); }} className={campo + " w-20"} aria-label="Gramas de proteína por dia vindas do whey" />
           </label>
         </div>
+        {validos.length > 0 && (
+          <ul className="text-gray-300 text-sm mb-4 space-y-1" aria-label="Quanto pó isso dá por dia">
+            {validos.map((v) => (
+              <li key={v.idx}>
+                {gDia} g de proteína = <strong className="text-white">{Math.round(poDia(v.oferta as Oferta, gDia))} g de pó</strong> por dia de {v.nome}
+              </li>
+            ))}
+          </ul>
+        )}
         <p className="text-gray-300 text-sm mb-2">Período</p>
         <div className="flex gap-2">
           {PERIODOS.map((p) => (
@@ -260,7 +275,7 @@ export default function BatalhaDosWheys({ catalogo }: { catalogo: ProdutoCatalog
                     <th scope="col" className={th}>Proteína no pote</th>
                     <th scope="col" className={th}>Concentração</th>
                     <th scope="col" className={th}>Custo de 25 g de proteína</th>
-                    <th scope="col" className={th}>{dias} dias com {gDia} g/dia</th>
+                    <th scope="col" className={th}>{dias} dias com {gDia} g de proteína/dia</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -287,7 +302,7 @@ export default function BatalhaDosWheys({ catalogo }: { catalogo: ProdutoCatalog
                             <span className="block text-xs text-gray-500 font-normal">{reais(a.centavosPorGProteina * 1000)} por kg de proteína</span>
                           </td>
                           <td className={td}>
-                            {reais(ro.custoProporcionalCentavos)}<span className="block text-xs text-gray-500">compra real: {ro.embalagens} {ro.embalagens === 1 ? "pote" : "potes"} = {reais(ro.desembolsoCentavos)}</span>
+                            {reais(ro.custoProporcionalCentavos)}<span className="block text-xs text-gray-500">{Math.round(poDia(o, gDia))} g de pó por dia</span><span className="block text-xs text-gray-500">compra real: {ro.embalagens} {ro.embalagens === 1 ? "pote" : "potes"} = {reais(ro.desembolsoCentavos)}</span>
                             {extra && extra.extraCentavos > 0.5 && <span className="block text-xs text-gray-400">+{reais(extra.extraCentavos)} ({g1(extra.extraPct * 100)}% a mais) pela mesma proteína</span>}
                             {extra && maisBarato && <span className="block text-xs text-gray-400">empata com o mais econômico a {reais(precoEquilibrioCentavos(maisBarato, o))}</span>}
                           </td>
