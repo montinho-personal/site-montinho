@@ -54,11 +54,12 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
       "O HYROX volta a São Paulo em 17 e 18 de outubro, no Distrito Anhembi. Data, local, categorias, kit, inscrição e como chegar pronto.",
     category: "Treinamento",
     date: "2026-09-29",
+    updatedAt: "2026-10-09",
     readTime: "6 min",
     author: "Montinho Personal Trainer",
     tags: ["HYROX", "HYROX São Paulo", "HYROX 2026", "fitness racing", "treino funcional"],
     content: `<img src="/blog-images/hyrox-sao-paulo-2026-capa.webp" alt="Capa: HYROX São Paulo 2026 — 17 e 18 de outubro no Distrito Anhembi" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p>Informações verificadas em 29 de setembro de 2026 no site oficial do HYROX e do Distrito Anhembi. Horários de largada por categoria saem na programação oficial; esta página é atualizada.</p></blockquote>
+<blockquote><p>Informações verificadas em 29 de setembro de 2026 no site oficial do HYROX e do Distrito Anhembi, e em 9 de outubro na plataforma oficial de ingressos do HYROX Brasil. Horários de largada por categoria saem na programação oficial; esta página é atualizada.</p></blockquote>
 <p>O <strong>HYROX São Paulo 2026</strong> acontece no <strong>sábado e domingo, 17 e 18 de outubro</strong>, no <strong>Distrito Anhembi</strong>, na zona norte da cidade. É a terceira edição paulistana da prova de "fitness racing" que mistura corrida e força — e a forma mais fácil de entender o formato é: <strong>8 km de corrida, divididos em 8 trechos de 1 km, cada um seguido de uma estação de exercício</strong>.</p>
 
 <h2>Resumo do HYROX São Paulo 2026</h2>
@@ -68,6 +69,7 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
 <tr><td>Categorias</td><td>Individual, Duplas e Revezamento</td></tr>
 <tr><td>Retirada de kit / check-in antecipado</td><td>Divulgado pelo Distrito Anhembi: 16/10, das 10h às 19h, no Puma do Shopping Morumbi, para atletas de sábado, com documento com foto — confirme no e-mail da inscrição</td></tr>
 <tr><td>Inscrição e valores</td><td>Pela plataforma oficial do HYROX Brasil; o preço varia por categoria e lote</td></tr>
+<tr><td>Ingresso para assistir</td><td>À venda na mesma plataforma oficial, na categoria Spectator (espectador), junto com os add-ons; o valor aparece lá</td></tr>
 <tr><td>Próxima edição anunciada</td><td>8 e 9 de maio de 2027</td></tr>
 </tbody></table>
 
@@ -103,11 +105,13 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
 <h2>Fontes</h2>
 <ul>
 <li><a href="https://hyrox.com/event/hyrox-sao-paulo-2/" target="_blank" rel="noopener noreferrer">HYROX — HYROX São Paulo (oficial)</a></li>
+<li><a href="https://hyroxbrazil.com/pt-br/encontre-sua-corrida/" target="_blank" rel="noopener noreferrer">HYROX Brasil — encontre sua corrida (ingressos de atleta e espectador)</a></li>
 <li><a href="https://distritoanhembi.com.br/en/events/hyrox-sao-paulo-2026-2/" target="_blank" rel="noopener noreferrer">Distrito Anhembi — HYROX São Paulo 2026</a></li>
 </ul>`,
     faq: [
       { question: "Quando é o HYROX São Paulo 2026?", answer: "No sábado e domingo, 17 e 18 de outubro de 2026." },
       { question: "Onde vai ser o HYROX em São Paulo?", answer: "No Distrito Anhembi (Expo 1 e 2), na Av. Olavo Fontoura, 1209, em Santana, zona norte de São Paulo." },
+      { question: "Tem ingresso para assistir ao HYROX São Paulo?", answer: "Tem. A plataforma oficial do HYROX Brasil vende ingressos de espectador (Spectator) para o HYROX São Paulo, além das inscrições de atleta em Singles, Doubles e Relay. O valor e a disponibilidade estão na própria plataforma." },
       { question: "Quanto custa o HYROX?", answer: "Depende da categoria (individual, dupla ou revezamento) e do lote. O valor atualizado está na plataforma oficial de inscrição do HYROX Brasil." },
       { question: "O que faz no HYROX?", answer: "8 trechos de 1 km de corrida, cada um seguido de uma estação: SkiErg, empurrar trenó, puxar trenó, burpee com salto, remo, carregamento, avanço com saco de areia e wall ball." },
       { question: "Tem planilha de treino para o HYROX?", answer: "Tem. A planilha gratuita em PDF traz 8 semanas de força, corrida e simulado e a reta final de 3 semanas até o HYROX São Paulo." },
