@@ -17,6 +17,7 @@ import {
   arredondaKcal,
   arredondaPassos,
   deDistancia,
+  kcalPorMinuto,
   deKcal,
   dePassos,
   deTempo,
@@ -31,6 +32,7 @@ import {
   tabelaPorRitmo,
   tabelaPorTempo,
 } from "@/lib/caminhada";
+import { metDoRitmo } from "@/lib/corrida";
 
 /**
  * A página da Calculadora de Calorias da Caminhada.
@@ -110,6 +112,13 @@ const EX_300 = deKcal(300, PESO_PADRAO, MOD.velocidade, 0, MOD.cadencia);
 const EX_500 = deKcal(500, PESO_PADRAO, MOD.velocidade, 0, MOD.cadencia);
 const UM_QUILO = simulacaoUmQuilo(PESO_PADRAO, MOD.velocidade, 0, MOD.cadencia);
 const POR_MIN = EX_30.kcal / 30;
+const LEVE = ritmo("leve");
+const RAPIDO = ritmo("rapido");
+const H1 = (r: typeof MOD) => deTempo(60, PESO_PADRAO, r.velocidade, 0, r.cadencia);
+const KM5 = (r: typeof MOD) => deDistancia(5, PESO_PADRAO, r.velocidade, 0, r.cadencia);
+const MIN = (m: number) => deTempo(m, PESO_PADRAO, MOD.velocidade, 0, MOD.cadencia);
+const KG_MES_30 = (kcalLiquida(EX_30, PESO_PADRAO) * 30) / KCAL_POR_KG_GORDURA;
+const CORRIDA_30 = kcalPorMinuto(metDoRitmo(8).met, PESO_PADRAO) * 30;
 const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDigits: d });
 
 const faq: ItemFAQ[] = [
@@ -183,6 +192,42 @@ const faq: ItemFAQ[] = [
     question: "Quem está acima do peso pode caminhar todo dia?",
     answer:
       "Pode, e é uma das melhores portas de entrada — o impacto é baixo e o gasto por minuto é maior justamente porque o corpo move mais massa. Vale começar sem inclinação e com tempo que não deixe dor no dia seguinte; se houver dor articular ou condição cardiovascular, converse antes com quem acompanha você.",
+  },
+  {
+    question: "1 hora de caminhada queima quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg, no plano: cerca de ${arredondaKcal(H1(LEVE).kcal)} kcal em ritmo leve (${LEVE.velocidade} km/h), ${arredondaKcal(H1(MOD).kcal)} em ritmo moderado (${MOD.velocidade} km/h) e ${arredondaKcal(H1(RAPIDO).kcal)} em caminhada rápida (${RAPIDO.velocidade} km/h). Em 3 horas no ritmo moderado, perto de ${arredondaKcal(MIN(180).kcal)} kcal, se o ritmo se mantiver.`,
+  },
+  {
+    question: "20 ou 40 minutos de caminhada queimam quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg em ritmo moderado, cerca de ${arredondaKcal(MIN(20).kcal)} kcal em 20 minutos e ${arredondaKcal(MIN(40).kcal)} em 40. Em 10 minutos, uns ${arredondaKcal(MIN(10).kcal)}; em 50, cerca de ${arredondaKcal(MIN(50).kcal)}. Apertar o passo ou incluir subida aumenta esses números.`,
+  },
+  {
+    question: "5 km de caminhada queimam quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg, cerca de ${arredondaKcal(KM5(MOD).kcal)} kcal em ritmo moderado (uns ${formataTempo(KM5(MOD).minutos)}) e ${arredondaKcal(KM5(RAPIDO).kcal)} kcal em caminhada rápida (uns ${formataTempo(KM5(RAPIDO).minutos)}). Por distância, o ritmo muda pouco o total: andar mais rápido gasta mais por minuto, mas termina antes.`,
+  },
+  {
+    question: "30 minutos de caminhada equivalem a quantos quilômetros?",
+    answer: `Em ritmo moderado, cerca de ${formataKm(EX_30.km)}. Em passo leve, perto de ${formataKm((LEVE.velocidade * 30) / 60)}; em caminhada rápida, uns ${formataKm((RAPIDO.velocidade * 30) / 60)}.`,
+  },
+  {
+    question: "Quantos quilos dá para perder caminhando 30 minutos por dia?",
+    answer: `Pela conta, para ${PESO_PADRAO} kg em ritmo moderado, cerca de ${fmt(KG_MES_30)} kg de gordura por mês — usando só o que a caminhada acrescenta ao dia e a referência de 7.700 kcal por quilo. Na prática, o resultado depende de a alimentação não compensar esse gasto. A caminhada ajuda; quem decide é o conjunto da semana.`,
+  },
+  {
+    question: "Quanto tempo de caminhada por dia para emagrecer?",
+    answer: "Não existe um tempo que emagreça sozinho. Como referência de saúde, a OMS recomenda de 150 a 300 minutos de atividade moderada por semana — de 20 a 45 minutos por dia. Para emagrecer, o que decide é o déficit da semana; a caminhada soma gasto, e a musculação ajuda a não perder músculo no caminho.",
+  },
+  {
+    question: "Em quantos dias a caminhada começa a fazer efeito?",
+    answer: "O fôlego e a disposição costumam melhorar nas primeiras semanas. Na balança, a mudança aparece em semanas a meses, e depende mais da alimentação do que da caminhada. Se o peso não se mexer em um mês mantendo o hábito, o ajuste costuma estar no prato, não no tempo de caminhada.",
+  },
+  {
+    question: "Caminhada ou corrida leve: qual queima mais?",
+    answer: `Por minuto, a corrida. Em 30 minutos, para ${PESO_PADRAO} kg: caminhada moderada ≈ ${arredondaKcal(EX_30.kcal)} kcal; caminhada rápida ≈ ${arredondaKcal(deTempo(30, PESO_PADRAO, RAPIDO.velocidade, 0, RAPIDO.cadencia).kcal)} kcal; corrida leve a 8 km/h ≈ ${arredondaKcal(CORRIDA_30)} kcal. Mas a caminhada tem menos impacto e é mais fácil de manter todo dia — e é a frequência que pesa no mês.`,
+  },
+  {
+    question: "Como queimar mais calorias caminhando?",
+    answer: `Três alavancas, nesta ordem: inclinação (a 4,8 km/h com 12%, 30 minutos passam de ${arredondaKcal(EX_12_3_30.kcal)} kcal), ritmo mais rápido e tempo. Alternar trechos rápidos com trechos leves também soma. Tênis, relógio ou aplicativo não mudam o gasto — só a forma de medir.`,
   },
 ];
 

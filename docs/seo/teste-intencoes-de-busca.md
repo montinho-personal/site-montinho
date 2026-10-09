@@ -601,3 +601,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 
 ### blog/como-fazer-hip-thrust — título (09/10), aprovado pelo Montinho
 - metaTitle antes: "Como Fazer Hip Thrust: Técnica Correta" → depois: "Como Fazer Hip Thrust (Elevação Pélvica): Técnica Correta". Motivo: "hip thrust × elevação pélvica" foi a pergunta mais forte do export. Mesmo dia da atualização de conteúdo: o teste mede os dois juntos. Cadeira extensora e escada: título NÃO trocado (decisão do Montinho).
+
+### ferramentas/calculadora-calorias-caminhada (09/10) — Answer the Public
+- GSC 28 dias: 1.916 impressões, 5 cliques, posição 8,3. Export "caminhada queima quantas calorias" (2 arquivos de motores idênticos, contados uma vez): 1 hora 720/mês; meia hora, 5 km e 40 min 320; 20 min 260; 50 min e 1h 140; 15 min 110; 4 km, 2 horas e 10 min 70; 10 km 50; 1 km 40. PAA: 30 min/dia emagrece, quanto tempo por dia, 3 horas, 1 hora por dia, quilos com 30 min/dia, 1 kg, 30 min = quantos km, quando faz efeito, barriga, 10 mil passos. IA: 30 min moderado, caminhada × corrida leve, 5 km rápida, terreno/subida, como maximizar, apps/relógios/tênis (fora).
+- Página já tinha 17 FAQs (30 min, 1 h de esteira, 10 mil passos, 300/500 kcal, inclinação, 1/5/10 km, 2 h, por minuto, 1 kg, academia × caminhada, barriga, esteira × rua…). +9 calculadas pela lib (70 kg): 1 hora por ritmo (+3 h), 20/40 min (+10/50), 5 km moderada × rápida, 30 min em km, quilos por mês com 30 min/dia (gasto líquido), tempo por dia (OMS), quando faz efeito, caminhada × corrida leve (lib/corrida), como queimar mais.
+- Fora: apps, relógios, tênis, terreno (areia/trilha sem MET verificado aqui), calorias por dia de mulher, 1.500/2.000 kcal (outras pautas).
