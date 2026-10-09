@@ -122,7 +122,7 @@ function decodificar(busca: string, catalogo: ProdutoCatalogo[]): { lados: Lado[
 }
 
 /** Gramas de pó que entregam gDia de proteína, pelo rótulo do produto. */
-const poDia = (o: Oferta, gDia: number) => (gDia * o.porcaoG) / o.proteinaPorcaoG;
+const poDia = (o: { porcaoG: number; proteinaPorcaoG: number }, gDia: number) => (gDia * o.porcaoG) / o.proteinaPorcaoG;
 
 /* ───────────────────────── Componente ───────────────────────── */
 
@@ -151,6 +151,15 @@ export default function BatalhaDosWheys({ catalogo }: { catalogo: ProdutoCatalog
   const dest = comparando ? destaques(ofertas) : null;
   const maisBarato = comparando ? [...ofertas].sort((a, b) => analisa(a).centavosPorGProteina - analisa(b).centavosPorGProteina)[0] : null;
   const link = comparando ? codificar(lados, gDia, dias) : "";
+  // O rótulo de cada whey já escolhido, com ou sem preço válido: basta porção e proteína para mostrar a conversão.
+  const comRotulo = resolvidos
+    .map((r) => {
+      const l = lados[r.idx];
+      const manual = l.fonte === "manual" ? { porcaoG: parseNumero(l.porcao) ?? 0, proteinaPorcaoG: parseNumero(l.proteina) ?? 0 } : null;
+      return { r, rot: (r.oferta ?? r.produto ?? manual) as { porcaoG: number; proteinaPorcaoG: number } | null };
+    })
+    .filter((x): x is { r: Resolvido; rot: { porcaoG: number; proteinaPorcaoG: number } } => !!x.rot && x.rot.porcaoG > 0 && x.rot.proteinaPorcaoG > 0 && x.rot.proteinaPorcaoG <= x.rot.porcaoG);
+  const exemplo = comRotulo[0];
 
   useEffect(() => {
     if (!comparando || medido.current === link) return;
@@ -218,7 +227,12 @@ export default function BatalhaDosWheys({ catalogo }: { catalogo: ProdutoCatalog
         <legend className="text-gray-300 text-sm px-1">Sua rotina</legend>
         <p className="text-gray-300 text-sm mb-1">Quanta <strong className="text-white">proteína</strong> por dia você quer tirar do whey?</p>
         <p className="text-gray-400 text-xs mb-3">
-          É a proteína, não o pó. O whey não é 100% proteína: para ter {gDia} g de proteína, você usa mais que {gDia} g do produto — quanto mais, depende do rótulo de cada um.
+          É a proteína, não o pó. O whey não é 100% proteína:{" "}
+          {exemplo ? (
+            <>no <strong className="text-gray-200">{exemplo.r.nome}</strong>, cada {g1(exemplo.rot.porcaoG)} g de pó têm {g1(exemplo.rot.proteinaPorcaoG)} g de proteína.</>
+          ) : (
+            <>para ter {gDia} g de proteína, você usa mais que {gDia} g do produto — quanto mais, depende do rótulo de cada um.</>
+          )}
         </p>
         <div className="flex flex-wrap gap-2 mb-4">
           {DOSES_ATALHO.map((d) => (
@@ -229,11 +243,11 @@ export default function BatalhaDosWheys({ catalogo }: { catalogo: ProdutoCatalog
             <input inputMode="numeric" value={gDia} onChange={(e) => { const n = parseNumero(e.target.value); if (n !== null && n >= 5 && n <= 300) setGDia(Math.round(n)); }} className={campo + " w-20"} aria-label="Gramas de proteína por dia vindas do whey" />
           </label>
         </div>
-        {validos.length > 0 && (
+        {comRotulo.length > 0 && (
           <ul className="text-gray-300 text-sm mb-4 space-y-1" aria-label="Quanto pó isso dá por dia">
-            {validos.map((v) => (
-              <li key={v.idx}>
-                {gDia} g de proteína = <strong className="text-white">{Math.round(poDia(v.oferta as Oferta, gDia))} g de pó</strong> por dia de {v.nome}
+            {comRotulo.map(({ r, rot }) => (
+              <li key={r.idx}>
+                {gDia} g de proteína = <strong className="text-white">{Math.round(poDia(rot, gDia))} g de pó</strong> por dia de {r.nome}
               </li>
             ))}
           </ul>
