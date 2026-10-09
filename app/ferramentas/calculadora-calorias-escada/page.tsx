@@ -19,6 +19,8 @@ import {
   ritmo,
   tabelaSituacoes,
 } from "@/lib/escada";
+import { metDoRitmo } from "@/lib/corrida";
+import { metDoEsforco } from "@/lib/bicicleta";
 
 /**
  * A página da Calculadora de Calorias Subindo Escada.
@@ -76,6 +78,14 @@ const MIN_TREINO_80 = kcalPorMinuto(ritmo("treino").met, 80);
 const MIN_TREINO_70 = kcalPorMinuto(ritmo("treino").met, PESO);
 const TEMPOS = [5, 10, 15, 20, 30, 60].map((m) => ({ m, kcal: MIN_TREINO_70 * m }));
 const ANDARES_TAB = [5, 8, 10, 12, 14, 18].map((a) => ({ a, dia: ANDAR_DIA * a, treino: ANDAR_TREINO * a }));
+const SOBE_DESCE = calcula(PESO, "treino", 1, 1, true);
+const SOBE_DESCE_MIN = SOBE_DESCE.kcal / SOBE_DESCE.minutosTotais;
+const KMIN = (met: number) => kcalPorMinuto(met, PESO);
+const CAMINHADA_30 = KMIN(metDoRitmo(5).met) * 30;
+const CORRIDA_30 = KMIN(metDoRitmo(8).met) * 30;
+const ERGO_30 = KMIN(metDoEsforco("moderado")) * 30;
+const ESCADA_DIA_30 = KMIN(ritmo("dia").met) * 30;
+const MET_PARA_MIL = 1000 / (kcalPorMinuto(1, PESO) * 60);
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
@@ -121,6 +131,42 @@ const faq: ItemFAQ[] = [
   {
     question: "Subir escada perde barriga?",
     answer: NOTA_SEM_PERDA_LOCALIZADA,
+  },
+  {
+    question: "10 minutos de escada queimam quantas calorias?",
+    answer: `Subindo sem parar em ritmo de treino, cerca de ${kc(MIN_TREINO_70 * 10)} kcal para ${PESO} kg; em 15 minutos, uns ${kc(MIN_TREINO_70 * 15)}. No passo do dia a dia, menos da metade. Dez minutos contínuos de escada já são um treino puxado para quem está começando.`,
+  },
+  {
+    question: "Subir e descer escada queima quantas calorias?",
+    answer: `Subindo rápido e descendo a pé, sem parar, para ${PESO} kg: cerca de ${kc(SOBE_DESCE_MIN * 10)} kcal em 10 minutos e ${kc(SOBE_DESCE_MIN * 30)} kcal em 30. É menos do que só subir, porque a descida gasta menos — mas é o que acontece de verdade num prédio.`,
+  },
+  {
+    question: "O que emagrece mais, caminhar ou subir escada?",
+    answer: `Por minuto, a escada. Em 30 minutos, para ${PESO} kg: caminhada a 5 km/h ≈ ${kc(CAMINHADA_30)} kcal; escada no passo do dia a dia ≈ ${kc(ESCADA_DIA_30)} kcal; escada em ritmo de treino ≈ ${kc(MIN_TREINO_70 * 30)} kcal. Só que a caminhada se sustenta por uma hora sem esforço, e a escada rápida não — no fim da semana, ganha a que você repete.`,
+  },
+  {
+    question: "É melhor correr ou subir escada?",
+    answer: `No gasto, ficam perto: 30 minutos de corrida a 8 km/h dão cerca de ${kc(CORRIDA_30)} kcal para ${PESO} kg, e 30 minutos de escada em ritmo de treino, cerca de ${kc(MIN_TREINO_70 * 30)}. A escada tem menos impacto na aterrissagem e trabalha mais coxa e glúteo; a corrida é mais fácil de manter por muito tempo. Escolha a que cabe na sua rotina e nas suas articulações.`,
+  },
+  {
+    question: "Escada ou bicicleta: qual é melhor para perder barriga?",
+    answer: `Nenhuma tira gordura da barriga especificamente. Em 30 minutos, para ${PESO} kg, a ergométrica em esforço moderado gasta cerca de ${kc(ERGO_30)} kcal e a escada em ritmo de treino, cerca de ${kc(MIN_TREINO_70 * 30)}. A bike é mais fácil de sustentar e pesa menos no joelho; a escada gasta mais por minuto. A barriga acompanha o déficit da semana.`,
+  },
+  {
+    question: "Quantos minutos de escada por dia para perder barriga?",
+    answer: "Não existe um número que tire gordura da barriga. Como referência de saúde, a OMS recomenda de 150 a 300 minutos de atividade aeróbica moderada por semana; a escada conta nessa soma, e em ritmo forte cada minuto vale mais. Para emagrecer, quem decide é o déficit da semana, com a alimentação junto.",
+  },
+  {
+    question: "Posso fazer escada na academia todos os dias?",
+    answer: "Em volume moderado, a maioria aguenta, porque o impacto é baixo. O que costuma cobrar é joelho e panturrilha quando o volume sobe rápido demais. Alternar dias mais fortes com dias leves ou com outro aparelho, e aumentar o tempo aos poucos, deixa o hábito durar.",
+  },
+  {
+    question: "Subir escada engrossa ou afina as pernas?",
+    answer: "Nenhum dos dois de forma marcante. Escada é exercício de resistência: fortalece coxa, glúteo e panturrilha, mas o estímulo é baixo demais para fazer a perna crescer muito — para isso existe a musculação com carga. Afinar depende de perder gordura do corpo todo, não do exercício escolhido.",
+  },
+  {
+    question: "Dá para queimar 1.000 calorias em 1 hora de escada?",
+    answer: `Para ${PESO} kg, não: uma hora inteira de escada em ritmo de treino gasta cerca de ${kc(MIN_TREINO_70 * 60)} kcal. Para chegar a 1.000 kcal em uma hora, seria preciso sustentar cerca de ${metF(MET_PARA_MIL)} METs, ritmo de atleta. Quem pesa mais gasta mais, mas a meta útil é a da semana, não a de uma hora.`,
   },
 ];
 
