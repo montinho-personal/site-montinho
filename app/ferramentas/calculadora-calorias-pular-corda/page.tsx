@@ -21,6 +21,8 @@ import {
   kgPorMes,
   tabelaTreinos,
 } from "@/lib/corda";
+import { metDoRitmo } from "@/lib/corrida";
+import { kcalPorMinuto } from "@/lib/caminhada";
 
 /**
  * A página da Calculadora de Calorias Pulando Corda.
@@ -82,6 +84,11 @@ const MINUTOS_CONT = [5, 15, 20, 30].map((m) => ({ m, kcal: kcalSeFosseContinuo(
 const MOD_CAM = ritmoCaminhada("moderado");
 const CAMINHADA_1H = caminhadaDeTempo(60, PESO, MOD_CAM.velocidade, 0, MOD_CAM.cadencia).kcal;
 const CORDA_EQUIV_MIN = Math.round(CAMINHADA_1H / POR_MIN);
+const BLOCOS_30 = calcula(PESO, "moderado", 15, 60, 60);
+const BLOCOS_20 = calcula(PESO, "moderado", 10, 60, 60);
+const BLOCOS_60 = calcula(PESO, "moderado", 30, 60, 60);
+const CORRIDA_30 = kcalPorMinuto(metDoRitmo(8).met, PESO) * 30;
+const CORRIDA_10KMH_30 = kcalPorMinuto(metDoRitmo(10).met, PESO) * 30;
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kg = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -124,6 +131,38 @@ const faq: ItemFAQ[] = [
   {
     question: "Pular corda perde barriga?",
     answer: NOTA_SEM_PERDA_LOCALIZADA,
+  },
+  {
+    question: "30 minutos de pular corda queimam quantas calorias?",
+    answer: `Depende de quanto desse tempo você pula de fato. Pulando os 30 minutos sem parar em ritmo moderado, seriam cerca de ${kc(kcalSeFosseContinuo(PESO, "moderado", 30))} kcal para ${PESO} kg — quase ninguém aguenta. Num treino real de 30 minutos, alternando 1 minuto pulando com 1 minuto de descanso, o gasto fica perto de ${kc(BLOCOS_30.kcal)} kcal. Em 20 minutos no mesmo esquema, cerca de ${kc(BLOCOS_20.kcal)} kcal.`,
+  },
+  {
+    question: "1 hora de pular corda queima quantas calorias?",
+    answer: `Uma hora contínua daria perto de ${kc(kcalSeFosseContinuo(PESO, "moderado", 60))} kcal para ${PESO} kg, mas é um número teórico: o impacto e o fôlego não deixam. Uma hora de treino com metade do tempo pulando, em blocos de 1 minuto, fica em torno de ${kc(BLOCOS_60.kcal)} kcal — e já é um volume alto para tornozelo e panturrilha.`,
+  },
+  {
+    question: "Pular corda queima mais calorias que correr?",
+    answer: `Por minuto pulando, sim: em ritmo moderado, para ${PESO} kg, a corda gasta cerca de ${kc(POR_MIN * 30)} kcal em 30 minutos contínuos, contra ${kc(CORRIDA_30)} kcal correndo a 8 km/h e ${kc(CORRIDA_10KMH_30)} a 10 km/h. Mas a corrida se sustenta por 30 minutos seguidos e a corda quase nunca: num treino real de corda de 30 minutos, com descansos, o gasto fica perto de ${kc(BLOCOS_30.kcal)} kcal — menos que a corrida contínua.`,
+  },
+  {
+    question: "Pular corda emagrece rápido?",
+    answer: "Gasta muito por minuto, então rende em pouco tempo. Mas emagrecer rápido depende do déficit da semana, e a corda tem um limite prático: o impacto. Quem começa com volume alto costuma parar por dor na canela ou no tornozelo. Progressão em blocos, junto com a alimentação, emagrece mais do que uma semana heroica.",
+  },
+  {
+    question: "Pular corda tonifica os músculos?",
+    answer: "Fortalece panturrilha, tornozelo e ombros pela repetição, e melhora coordenação e condicionamento. Para ganhar massa ou força de forma visível, não substitui a musculação com carga; o que costuma dar o aspecto de “definido” é a perda de gordura somada ao treino de força.",
+  },
+  {
+    question: "Como pular corda sem se machucar?",
+    answer: "Saltos baixos, na ponta dos pés, com os joelhos levemente dobrados; o giro vem dos punhos, não dos braços. Use tênis com amortecimento e piso que absorva um pouco o impacto — madeira ou emborrachado, em vez de cimento. E comece em blocos curtos, com descanso maior que o tempo pulando, aumentando o volume aos poucos.",
+  },
+  {
+    question: "Quem tem pressão alta pode pular corda?",
+    answer: "Com a pressão controlada e liberação do médico, muitas pessoas podem. Mas a corda é exercício intenso desde o primeiro minuto, então quem tem hipertensão costuma começar por atividades moderadas, como caminhada ou bicicleta, e só depois incluir corda em blocos curtos. Dor no peito, tontura ou falta de ar fora do normal são motivo para parar.",
+  },
+  {
+    question: "Quem tem hérnia de disco pode pular corda?",
+    answer: "É uma decisão para o médico ou fisioterapeuta que acompanha você: o impacto repetido chega à coluna a cada aterrissagem. Muitas pessoas com hérnia preferem opções sem impacto, como bicicleta, elíptico ou natação. Se a corda for liberada, saltos baixos e piso que amorteça fazem diferença; dor que irradia para a perna é sinal para parar.",
   },
 ];
 
