@@ -26,6 +26,7 @@ import {
   tabelaTrabalho,
   trabalho,
 } from "@/lib/bicicleta";
+import { RITMOS_CAMINHADA } from "@/lib/polichinelo";
 
 /**
  * A página da Calculadora de Calorias na Bicicleta.
@@ -94,6 +95,12 @@ const TRAB_8 = trabalho(PESO, 8, 30, 5);
 const TRES_45 = kgPorMes(R45.kcalLiquida, 3);
 const MINUTOS_TAB = [10, 15, 20, 30, 40, 50, 60];
 const H_1KG = KCAL_POR_KG_GORDURA / KCAL_MIN_MOD / 60;
+const ERGO = (id: "leve" | "moderado" | "forte", min: number) => calcula(PESO, metDoEsforco(id), min).kcal;
+const RUA = (min: number) => calcula(PESO, MODERADO.met, min).kcal;
+const TRILHA_60 = calcula(PESO, TERRENOS[1].met!, 60).kcal;
+const CAMINHADA_30 = calcula(PESO, RITMOS_CAMINHADA[1].met, 30).kcal;
+const PASSEIO = FAIXAS_RUA.find((f) => f.codigo === "01019")!;
+const PASSEIO_30 = calcula(PESO, PASSEIO.met, 30).kcal;
 const R30_KG_MES_DIARIO = kgPorMes(R30.kcalLiquida, 7);
 const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
 const kg = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -167,6 +174,42 @@ const faq: ItemFAQ[] = [
   {
     question: "Bicicleta faz mal para o joelho?",
     answer: "Ao contrário: o peso do corpo fica no banco, e o movimento é contínuo, sem o impacto da passada. É a porta de entrada mais indicada para quem tem sobrepeso ou joelho sensível. O ajuste que protege é a altura do banco: joelho quase estendido no ponto mais baixo do pedal.",
+  },
+  {
+    question: "30 minutos de bicicleta ergométrica queima quantas calorias?",
+    answer: `Para ${PESO} kg, cerca de ${kc(ERGO("moderado", 30))} kcal em esforço moderado (uns ${esforco("moderado").watts} W). No leve, perto de ${kc(ERGO("leve", 30))}; no forte, cerca de ${kc(ERGO("forte", 30))}. Se o visor mostra os watts, use a calculadora com eles: é o dado mais confiável da ergométrica.`,
+  },
+  {
+    question: "20 minutos de bicicleta queima quantas calorias?",
+    answer: `Na rua, em ritmo moderado (19 a 22 km/h), cerca de ${kc(RUA(20))} kcal para ${PESO} kg. Na ergométrica, em esforço moderado, perto de ${kc(ERGO("moderado", 20))} kcal. Em 10 minutos, a rua fica em torno de ${kc(RUA(10))} kcal; em 15, uns ${kc(RUA(15))}.`,
+  },
+  {
+    question: "1 hora de bicicleta queima quantas calorias?",
+    answer: `Para ${PESO} kg, cerca de ${kc(RUA(60))} kcal na rua em ritmo moderado, sem paradas, e perto de ${kc(ERGO("moderado", 60))} kcal na ergométrica em esforço moderado. Em 2 horas de rua no mesmo ritmo, uns ${kc(RUA(120))} kcal — mas pedal longo quase sempre tem paradas, e a calculadora desconta.`,
+  },
+  {
+    question: "Pedalar 1 hora por dia emagrece?",
+    answer: "Ajuda bastante no gasto, e por ser baixo impacto dá para manter. Mas uma hora por dia costuma abrir o apetite, e é fácil comer de volta o que se gastou. Quem emagrece pedalando é quem acerta a alimentação junto e faz musculação para não perder músculo no caminho.",
+  },
+  {
+    question: "Quantos minutos de bicicleta ergométrica por dia para emagrecer?",
+    answer: "Não existe um número que emagreça por si só. Como referência, a OMS recomenda de 150 a 300 minutos por semana de atividade aeróbica moderada para a saúde — uns 20 a 45 minutos por dia. Para emagrecer, o que decide é o déficit da semana; a ergométrica entra como gasto que dá para repetir sem impacto.",
+  },
+  {
+    question: "O que perde mais barriga, caminhada ou bicicleta?",
+    answer: `Nenhum dos dois tira gordura de um lugar específico. No gasto, em 30 minutos para ${PESO} kg, a caminhada moderada (cerca de 5 km/h) fica perto de ${kc(CAMINHADA_30)} kcal; o passeio de bike, uns ${kc(PASSEIO_30)} kcal; e o pedal moderado, cerca de ${kc(R30.kcal)} kcal. A barriga diminui com o déficit da semana inteira, e qualquer um dos dois serve se você mantiver.`,
+  },
+  {
+    question: "Bicicleta afina a cintura?",
+    answer: NOTA_SEM_PERDA_LOCALIZADA + " Pedalar entra como gasto do dia; a cintura acompanha a perda de gordura do corpo todo.",
+  },
+  {
+    question: "Mountain bike ou bike de estrada: qual queima mais?",
+    answer: `Pelo Compêndio, uma hora de mountain bike gasta cerca de ${kc(TRILHA_60)} kcal para ${PESO} kg, contra cerca de ${kc(RUA(60))} kcal na estrada em ritmo moderado. A trilha pede mais força nas subidas e no terreno irregular; na estrada, o gasto sobe com a velocidade. Subida forte e contínua é o que mais gasta.`,
+  },
+  {
+    question: "Como queimar mais calorias pedalando?",
+    answer: `Aumente o esforço, não só o tempo: na ergométrica, passar do moderado para o forte leva meia hora de cerca de ${kc(ERGO("moderado", 30))} para ${kc(ERGO("forte", 30))} kcal, para ${PESO} kg. Intercalar trechos fortes com trechos leves, incluir subidas e pedalar mais vezes por semana somam mais que qualquer acessório.`,
   },
 ];
 
