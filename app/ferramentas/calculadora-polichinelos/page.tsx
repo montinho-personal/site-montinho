@@ -16,6 +16,7 @@ import {
   RITMOS_CAMINHADA,
   arredondaKcal,
   arredondaQuantidade,
+  deKcal,
   deQuantidade,
   kcalPorMinuto,
   equivalenteACaminhada,
@@ -97,6 +98,11 @@ const KMIN = kcalPorMinuto(MOD.met, PESO_EX);
 const TABELA_100 = tabelaPorPeso(100, MOD.met, MOD.cadencia);
 const CAM_30 = equivalenteACaminhada(30, PESO_EX, RITMOS_CAMINHADA[1].met, MOD.met, MOD.cadencia);
 const UM_QUILO = simulacaoUmQuilo(PESO_EX, MOD.met, MOD.cadencia);
+const EX_1 = deQuantidade(1, PESO_EX, MOD.met, MOD.cadencia);
+const EX_50 = deQuantidade(50, PESO_EX, MOD.met, MOD.cadencia);
+const PARA_300 = deKcal(300, PESO_EX, MOD.met, MOD.cadencia);
+const PARA_500 = deKcal(500, PESO_EX, MOD.met, MOD.cadencia);
+const virgula = (n: number, casas = 1) => n.toFixed(casas).replace(".", ",");
 
 const faq: ItemFAQ[] = [
   {
@@ -156,6 +162,44 @@ const faq: ItemFAQ[] = [
     question: "Quem está acima do peso pode fazer polichinelo?",
     answer:
       "Pode, com cuidado redobrado com o impacto — quanto maior o peso corporal, maior a carga que cai no joelho e no tornozelo a cada aterrissagem. Existe a versão sem salto, em que um pé desliza de cada vez para o lado enquanto os braços sobem: mantém o gasto e tira quase todo o impacto. Se houver dor articular ou condição cardiovascular, vale conversar com quem acompanha você antes.",
+  },
+  {
+    question: "Polichinelo queima quantas calorias em 10 minutos?",
+    answer: `Para ${PESO_EX} kg em ritmo moderado, cerca de ${arredondaKcal(KMIN * 10)} kcal em 10 minutos — uns ${arredondaQuantidade(10 * MOD.cadencia)} polichinelos. Em 5 minutos, perto de ${arredondaKcal(KMIN * 5)} kcal; em 20, uns ${arredondaKcal(KMIN * 20)}; em meia hora, cerca de ${arredondaKcal(KMIN * 30)}. São minutos de salto de verdade: as pausas entre as séries não entram na conta.`,
+  },
+  {
+    question: "Polichinelo queima quantas calorias em 1 hora?",
+    answer: `Na conta, cerca de ${arredondaKcal(KMIN * 60)} kcal para ${PESO_EX} kg em ritmo moderado. Na prática, quase ninguém sustenta uma hora seguida de salto — o tornozelo e o joelho pedem pausa muito antes. Uma hora de treino com polichinelo em circuito, com descanso, gasta bem menos que esse número.`,
+  },
+  {
+    question: "1 polichinelo queima quantas calorias?",
+    answer: `Bem pouco: cerca de ${virgula(EX_1.kcal, 2)} kcal por repetição para ${PESO_EX} kg em ritmo moderado. É por isso que a pergunta útil é por tempo ou por quantidade — 50 polichinelos ficam perto de ${arredondaKcal(EX_50.kcal)} kcal, e 100, perto de ${arredondaKcal(EX_100.kcal)}.`,
+  },
+  {
+    question: "500 polichinelos queimam quantas calorias?",
+    answer: `Cerca de ${arredondaKcal(EX_500.kcal)} kcal para uma pessoa de ${PESO_EX} kg, em uns ${formataTempo(EX_500.minutos)} de salto. Feitos em séries ao longo do dia, o gasto é parecido; o que muda é que fica muito mais fácil manter a execução.`,
+  },
+  {
+    question: "Quantos polichinelos para queimar 300 ou 500 calorias?",
+    answer: `Para ${PESO_EX} kg em ritmo moderado, cerca de ${arredondaQuantidade(PARA_300.quantidade)} polichinelos (por volta de ${formataTempo(PARA_300.minutos)}) para 300 kcal e cerca de ${arredondaQuantidade(PARA_500.quantidade)} (por volta de ${formataTempo(PARA_500.minutos)}) para 500 kcal. É volume alto para um exercício de impacto: para esse gasto, misturar com caminhada, bicicleta ou musculação costuma funcionar melhor.`,
+  },
+  {
+    question: "Quantos polichinelos para perder 1 kg?",
+    answer: `Só como simulação: usando a referência clássica de ${KCAL_POR_KG_GORDURA.toLocaleString("pt-BR")} kcal por quilo de gordura, seriam cerca de ${arredondaQuantidade(UM_QUILO.quantidade).toLocaleString("pt-BR")} polichinelos para ${PESO_EX} kg — por volta de ${formataTempo(UM_QUILO.minutos)} de salto. O corpo não funciona como essa conta (ele se adapta, e o resto do dia pesa mais), mas ela mostra por que a alimentação decide a perda de peso.`,
+  },
+  {
+    question: "50 polichinelos por dia fazem diferença?",
+    answer: `No gasto, pouco: cerca de ${arredondaKcal(EX_50.kcal)} kcal para ${PESO_EX} kg. Como hábito, podem fazer — servem de aquecimento, tiram você da cadeira e são um começo para quem está parado. O resultado vem de somar isso a um treino que progride e a uma alimentação que fecha a conta da semana.`,
+  },
+  {
+    question: "Polichinelo é exercício aeróbico (cardio)?",
+    answer:
+      "É. Ele eleva a frequência cardíaca e a respiração, e o Compêndio de Atividades Físicas o cita como exemplo de calistenia de esforço vigoroso. Por ter salto, também trabalha coordenação e a resistência de panturrilha e quadril — mas não substitui a musculação para ganhar força.",
+  },
+  {
+    question: "Quais os benefícios do polichinelo?",
+    answer:
+      "Não precisa de equipamento nem de espaço, aquece o corpo inteiro em pouco tempo, melhora o condicionamento e a coordenação e soma gasto ao seu dia. Os limites também contam: é exercício de impacto, não queima gordura de um lugar específico e, sozinho, não constrói músculo.",
   },
 ];
 
