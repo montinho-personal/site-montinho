@@ -53,7 +53,15 @@ export const FONTE_COMPENDIO_ESCADA: Fonte = {
     "mede subir escada em 4,0 METs no passo do dia a dia e em 8,8 METs em ritmo rápido, e descer escada em 3,5 METs.",
 };
 
-export const FONTES_ESCADA: Fonte[] = [FONTE_COMPENDIO_ESCADA, FONTE_ACSM, FONTE_HALL];
+export const FONTE_COMPENDIO_SIMULADOR: Fonte = {
+  rotulo:
+    "Herrmann SD, Willis EA, Ainsworth BE, et al. 2024 Adult Compendium of Physical Activities. Journal of Sport and Health Science, 2024",
+  rotuloCurto: "Compêndio de Atividades Físicas (2024)",
+  url: "https://pacompendium.com/conditioning-exercise/",
+  resumo: "mede o simulador de escada da academia (stair treadmill ergometer, código 02065) em 9,3 METs.",
+};
+
+export const FONTES_ESCADA: Fonte[] = [FONTE_COMPENDIO_ESCADA, FONTE_COMPENDIO_SIMULADOR, FONTE_ACSM, FONTE_HALL];
 
 /* ───────────────────────── Ritmos ───────────────────────── */
 
@@ -74,6 +82,9 @@ export const RITMOS: Ritmo[] = [
 ];
 
 export const ritmo = (id: RitmoId): Ritmo => RITMOS.find((r) => r.id === id)!;
+
+/** Simulador de escada da academia, uso geral (Compêndio 2024, código 02065). */
+export const MET_SIMULADOR = 9.3;
 
 /** Descer escada. */
 export const MET_DESCIDA = 3.5;

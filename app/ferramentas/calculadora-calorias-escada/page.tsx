@@ -9,6 +9,7 @@ import {
   FONTES_ESCADA,
   FONTE_COMPENDIO_ESCADA,
   MET_DESCIDA,
+  MET_SIMULADOR,
   NOTA_SEM_PERDA_LOCALIZADA,
   SITUACOES,
   arredondaKcal,
@@ -85,6 +86,7 @@ const CAMINHADA_30 = KMIN(metDoRitmo(5).met) * 30;
 const CORRIDA_30 = KMIN(metDoRitmo(8).met) * 30;
 const ERGO_30 = KMIN(metDoEsforco("moderado")) * 30;
 const ESCADA_DIA_30 = KMIN(ritmo("dia").met) * 30;
+const SIM_MIN = KMIN(MET_SIMULADOR);
 const MET_PARA_MIL = 1000 / (kcalPorMinuto(1, PESO) * 60);
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -167,6 +169,18 @@ const faq: ItemFAQ[] = [
   {
     question: "Dá para queimar 1.000 calorias em 1 hora de escada?",
     answer: `Para ${PESO} kg, não: uma hora inteira de escada em ritmo de treino gasta cerca de ${kc(MIN_TREINO_70 * 60)} kcal. Para chegar a 1.000 kcal em uma hora, seria preciso sustentar cerca de ${metF(MET_PARA_MIL)} METs, ritmo de atleta. Quem pesa mais gasta mais, mas a meta útil é a da semana, não a de uma hora.`,
+  },
+  {
+    question: "Simulador de escada da academia queima quantas calorias?",
+    answer: `O Compêndio de Atividades Físicas (2024) mede o simulador de escada em ${metF(MET_SIMULADOR)} METs, no uso geral. Para ${PESO} kg, dá cerca de ${kc(SIM_MIN * 10)} kcal em 10 minutos, ${kc(SIM_MIN * 20)} em 20 e ${kc(SIM_MIN * 30)} em 30. Segurar no corrimão e apoiar o peso nos braços reduz bastante esse gasto; o número do painel do aparelho costuma ser otimista.`,
+  },
+  {
+    question: "Escada ou esteira: qual queima mais calorias?",
+    answer: `Depende do que você faz na esteira. Em 30 minutos, para ${PESO} kg: caminhada a 5 km/h ≈ ${kc(CAMINHADA_30)} kcal; corrida a 8 km/h ≈ ${kc(CORRIDA_30)} kcal; escada em ritmo de treino ≈ ${kc(MIN_TREINO_70 * 30)} kcal; simulador de escada ≈ ${kc(SIM_MIN * 30)} kcal. A escada ganha da caminhada com folga e empata com a corrida leve, com menos impacto.`,
+  },
+  {
+    question: "Qual a intensidade e a duração ideais de um treino de escada?",
+    answer: "Um ritmo em que você ainda consegue falar frases curtas é um bom ponto de partida. Quem está começando costuma fazer 10 minutos, com pausas se precisar, e aumentar aos poucos até 20 ou 30 minutos contínuos. Intercalar trechos rápidos com trechos leves aumenta o gasto sem precisar de mais tempo; se o joelho reclamar, reduza o volume antes de insistir.",
   },
 ];
 
