@@ -203,7 +203,7 @@ export default function BatalhaDosWheys({ catalogo }: { catalogo: ProdutoCatalog
               </div>
             )}
             {l.fonte === "catalogo" ? (
-              <SeletorCatalogo lado={l} catalogo={catalogo} onChange={(n) => { atualizar(idx, n); if (n.slug) trackEvent("comparador_whey_produto_selecionado", { produto: n.slug }); }} />
+              <SeletorCatalogo lado={l} catalogo={catalogo} outros={lados.filter((x, i) => i !== idx && x.fonte === "catalogo").map((x) => (x as Extract<Lado, { fonte: "catalogo" }>).slug)} onChange={(n) => { atualizar(idx, n); if (n.slug) trackEvent("comparador_whey_produto_selecionado", { produto: n.slug }); }} />
             ) : (
               <CamposManuais lado={l} idx={idx} onChange={(n) => atualizar(idx, n)} />
             )}
@@ -396,22 +396,173 @@ function resolver(l: Lado, idx: number, catalogo: ProdutoCatalogo[], agora: Date
 
 const escolherPreco = precoReferencia;
 
-function SeletorCatalogo({ lado, catalogo, onChange }: { lado: Extract<Lado, { fonte: "catalogo" }>; catalogo: ProdutoCatalogo[]; onChange: (l: Extract<Lado, { fonte: "catalogo" }>) => void }) {
-  const p = catalogo.find((c) => c.slug === lado.slug);
+const peso = (g: number) => (g >= 1000 ? `${g1(g / 1000)} kg` : `${g1(g)} g`);
+const TIPOS_WHEY: Record<string, string> = { concentrado: "Concentrado", isolado: "Isolado", hidrolisado: "Hidrolisado", "3w": "3W", blend: "Blend", outro: "Outro" };
+const FILTROS_TIPO = [
+  { id: "todos", rotulo: "Todos" },
+  { id: "concentrado", rotulo: "Concentrado" },
+  { id: "isolado", rotulo: "Isolado" },
+  { id: "3w", rotulo: "3W" },
+] as const;
+
+interface OpcaoWhey {
+  p: ProdutoCatalogo;
+  linha: string;
+  custo25: number | null;
+  concentracao: number;
+}
+
+/** Remove acento e caixa para a busca achar "integralmedica" em "Integralmédica". */
+const normaliza = (t: string) => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+function opcoesDoCatalogo(catalogo: ProdutoCatalogo[]): OpcaoWhey[] {
+  return catalogo.map((p) => {
+    const preco = precoReferencia(p);
+    const oferta = preco ? { pacoteG: p.pacoteG, porcaoG: p.porcaoG, proteinaPorcaoG: p.proteinaPorcaoG, precoCentavos: preco.precoCentavos } : null;
+    return {
+      p,
+      linha: p.linha.replace(/^Whey Protein /, "Whey "),
+      custo25: oferta && ofertaValida(oferta) ? analisa(oferta).centavosPor25g : null,
+      concentracao: p.proteinaPorcaoG / p.porcaoG,
+    };
+  });
+}
+
+function SeletorCatalogo({ lado, catalogo, outros, onChange }: { lado: Extract<Lado, { fonte: "catalogo" }>; catalogo: ProdutoCatalogo[]; outros: string[]; onChange: (l: Extract<Lado, { fonte: "catalogo" }>) => void }) {
+  const [aberto, setAberto] = useState(false);
+  const [busca, setBusca] = useState("");
+  const [tipo, setTipo] = useState<(typeof FILTROS_TIPO)[number]["id"]>("todos");
+  const [ordem, setOrdem] = useState<"custo" | "marca">("custo");
+  const buscaRef = useRef<HTMLInputElement>(null);
+  const opcoes = useMemo(() => opcoesDoCatalogo(catalogo), [catalogo]);
+  const menorCusto = useMemo(() => Math.min(...opcoes.map((o) => o.custo25 ?? Infinity)), [opcoes]);
+  const atual = opcoes.find((o) => o.p.slug === lado.slug);
+
+  useEffect(() => {
+    if (!aberto) return;
+    buscaRef.current?.focus();
+    const esc = (e: KeyboardEvent) => { if (e.key === "Escape") setAberto(false); };
+    document.addEventListener("keydown", esc);
+    const overflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.removeEventListener("keydown", esc); document.body.style.overflow = overflow; };
+  }, [aberto]);
+
+  const termo = normaliza(busca.trim());
+  const visiveis = opcoes
+    .filter((o) => tipo === "todos" || o.p.tipo === tipo)
+    .filter((o) => !termo || normaliza(`${o.p.marca} ${o.linha} ${o.p.nome}`).includes(termo))
+    .sort((a, b) => (ordem === "custo" ? (a.custo25 ?? Infinity) - (b.custo25 ?? Infinity) : `${a.p.marca} ${a.linha}`.localeCompare(`${b.p.marca} ${b.linha}`, "pt-BR")));
+
+  const escolher = (slug: string) => {
+    onChange({ fonte: "catalogo", slug, condicao: "" });
+    setAberto(false);
+    setBusca("");
+  };
+
   return (
     <div className="space-y-3">
-      <label className="block text-gray-300 text-sm">
-        Produto
-        <select value={lado.slug} onChange={(e) => onChange({ fonte: "catalogo", slug: e.target.value, condicao: "" })} className={campo + " w-full mt-1"}>
-          <option value="">Escolha um whey</option>
-          {catalogo.map((c) => <option key={c.slug} value={c.slug}>{nomeCurto(c)}</option>)}
-        </select>
-      </label>
-      {p && (
+      <p className="text-gray-300 text-sm">Produto</p>
+      <button
+        type="button"
+        onClick={() => setAberto(true)}
+        aria-haspopup="dialog"
+        className="w-full text-left border border-white/25 hover:border-white/60 bg-black px-4 py-3 min-h-[64px] flex items-center gap-3"
+      >
+        {atual ? (
+          <span className="flex-1 min-w-0">
+            <span className="block text-[11px] uppercase tracking-wider text-gray-400">{atual.p.marca}</span>
+            <span className="block text-white font-semibold leading-snug">{atual.linha}</span>
+            <span className="block text-xs text-gray-400 mt-0.5">
+              {peso(atual.p.pacoteG)} · {TIPOS_WHEY[atual.p.tipo] ?? atual.p.tipo}
+              {atual.custo25 !== null && <> · <span style={{ color: "#BA9E50" }}>{reais(atual.custo25)}</span> por 25 g de proteína</>}
+            </span>
+          </span>
+        ) : (
+          <span className="flex-1 text-gray-400">Escolha um whey <span className="block text-xs text-gray-500">{opcoes.length} produtos com preço conferido</span></span>
+        )}
+        <span aria-hidden="true" className="text-gray-400 text-xs underline underline-offset-4">{atual ? "Trocar" : "Abrir"}</span>
+      </button>
+
+      {atual && (
         <p className="text-gray-400 text-xs leading-relaxed">
-          {g1(p.proteinaPorcaoG)} g de proteína a cada {g1(p.porcaoG)} g · rótulo do sabor {p.sabor.toLowerCase()}, conferido em {dataBR(p.rotuloVerificadoEm + "T12:00:00Z")}
-          {p.lactose === "contem" && " · contém lactose"}
+          {g1(atual.p.proteinaPorcaoG)} g de proteína a cada {g1(atual.p.porcaoG)} g · rótulo do sabor {atual.p.sabor.toLowerCase()}, conferido em {dataBR(atual.p.rotuloVerificadoEm + "T12:00:00Z")}
+          {atual.p.lactose === "contem" && " · contém lactose"}
         </p>
+      )}
+
+      {aberto && (
+        <div className="fixed inset-0 z-[200] flex items-end sm:items-center justify-center" role="dialog" aria-modal="true" aria-label="Escolher whey">
+          <button type="button" aria-label="Fechar" className="absolute inset-0 bg-black/70" onClick={() => setAberto(false)} />
+          <div className="relative w-full sm:max-w-lg max-h-[88vh] flex flex-col bg-[#0b0b0b] border border-white/15 sm:rounded-none rounded-t-2xl">
+            <div className="p-4 border-b border-white/10 space-y-3">
+              <div className="flex items-center justify-between">
+                <p className="text-white font-semibold">Escolha um whey</p>
+                <button type="button" onClick={() => setAberto(false)} className="text-gray-400 hover:text-white text-sm min-h-[44px] px-2">Fechar</button>
+              </div>
+              <input
+                ref={buscaRef}
+                type="search"
+                value={busca}
+                onChange={(e) => setBusca(e.target.value)}
+                placeholder="Buscar marca ou linha (ex.: Growth, isolado)"
+                aria-label="Buscar whey"
+                className={campo + " w-full"}
+              />
+              <div className="flex flex-wrap gap-2" role="group" aria-label="Tipo de whey">
+                {FILTROS_TIPO.map((f) => (
+                  <button key={f.id} type="button" onClick={() => setTipo(f.id)} aria-pressed={tipo === f.id}
+                    className={`px-3 min-h-[36px] text-xs border rounded-full ${tipo === f.id ? "border-[#BA9E50] text-white" : "border-white/20 text-gray-400 hover:text-white"}`}>
+                    {f.rotulo}
+                  </button>
+                ))}
+              </div>
+              <div className="flex gap-4 text-xs" role="group" aria-label="Ordenar">
+                <span className="text-gray-500">Ordenar:</span>
+                <button type="button" onClick={() => setOrdem("custo")} aria-pressed={ordem === "custo"} className={ordem === "custo" ? "text-white underline underline-offset-4" : "text-gray-400"}>Mais econômico</button>
+                <button type="button" onClick={() => setOrdem("marca")} aria-pressed={ordem === "marca"} className={ordem === "marca" ? "text-white underline underline-offset-4" : "text-gray-400"}>Marca (A–Z)</button>
+              </div>
+            </div>
+            <ul className="overflow-y-auto overscroll-contain divide-y divide-white/10">
+              {visiveis.length === 0 && <li className="p-6 text-gray-400 text-sm">Nenhum whey com esse nome. Use “Digitar o rótulo” para comparar o seu.</li>}
+              {visiveis.map((o) => {
+                const escolhido = o.p.slug === lado.slug;
+                const noOutro = outros.includes(o.p.slug);
+                const campeao = o.custo25 !== null && o.custo25 === menorCusto;
+                return (
+                  <li key={o.p.slug}>
+                    <button type="button" onClick={() => escolher(o.p.slug)} aria-current={escolhido ? "true" : undefined}
+                      className={`w-full text-left px-4 py-3 flex items-center gap-3 hover:bg-white/5 ${escolhido ? "bg-white/5" : ""}`}>
+                      <span className="flex-1 min-w-0">
+                        <span className="block text-[11px] uppercase tracking-wider text-gray-400">{o.p.marca}</span>
+                        <span className="block text-white font-semibold leading-snug">{o.linha}</span>
+                        <span className="flex flex-wrap items-center gap-1.5 mt-1">
+                          <span className="text-[11px] text-gray-300 border border-white/15 px-1.5 py-0.5">{peso(o.p.pacoteG)}</span>
+                          <span className="text-[11px] text-gray-300 border border-white/15 px-1.5 py-0.5">{TIPOS_WHEY[o.p.tipo] ?? o.p.tipo}</span>
+                          <span className="text-[11px] text-gray-400">{Math.round(o.concentracao * 100)}% proteína</span>
+                          {campeao && <span className="text-[11px] font-semibold px-1.5 py-0.5" style={{ color: "#000", background: "#BA9E50" }}>Mais econômico</span>}
+                          {noOutro && !escolhido && <span className="text-[11px] text-gray-500">já no outro lado</span>}
+                        </span>
+                      </span>
+                      <span className="text-right shrink-0">
+                        {o.custo25 !== null ? (
+                          <>
+                            <span className="block text-white font-semibold tabular-nums" style={campeao ? { color: "#BA9E50" } : undefined}>{reais(o.custo25)}</span>
+                            <span className="block text-[11px] text-gray-500">por 25 g de proteína</span>
+                          </>
+                        ) : (
+                          <span className="block text-[11px] text-gray-500">sem preço</span>
+                        )}
+                      </span>
+                      {escolhido && <span aria-hidden="true" className="text-white">✓</span>}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+            <p className="px-4 py-3 border-t border-white/10 text-[11px] text-gray-500">Custo da proteína pelo menor preço conferido de cada produto. Preços mudam: confira na loja.</p>
+          </div>
+        </div>
       )}
     </div>
   );
