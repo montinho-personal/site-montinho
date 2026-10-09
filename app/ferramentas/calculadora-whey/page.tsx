@@ -74,6 +74,8 @@ const D80 = dose(F80.faltaG, P, Q);
 const PARA30 = dose(30, P, Q);
 /** Exemplo declarado para a tabela por peso: a comida já fornece 100 g. */
 const COMIDA_EXEMPLO = 100;
+const ISO30 = dose(30, 30, 27);
+const CONC30 = dose(30, 30, 21);
 const dur = (pacote: number, d: number) => duracao(pacote, d).diasCorridos;
 
 const faq: ItemFAQ[] = [
@@ -106,6 +108,13 @@ const faq: ItemFAQ[] = [
   { question: "Whey faz mal aos rins?", answer: "Em pessoas com rins saudáveis, a evidência não mostra dano com ingestões de proteína usadas por quem treina. Quem tem doença renal precisa de orientação médica sobre proteína total — venha ela da comida ou do whey." },
   { question: "Quem tem intolerância à lactose pode tomar whey?", answer: "Muitas vezes, sim. O isolado costuma ter pouca lactose, e o concentrado, mais — mas a quantidade varia por produto, e só o rótulo diz. Intolerância à lactose é diferente de alergia à proteína do leite: com alergia, whey não é indicado." },
   { question: "O corpo só absorve 30 g de proteína por vez?", answer: "Não. O corpo absorve toda a proteína; o que se discutia era quanto vai para o músculo de uma vez. Um estudo de 2023 deu 100 g numa refeição e viu resposta maior e mais longa que com 25 g. Dividir em 3 a 5 refeições continua sendo prático, mas não é um limite de absorção." },
+  { question: "Qual o máximo de whey que posso tomar por dia?", answer: `Não existe um teto oficial em gramas de whey. O limite útil é o da proteína total: acima de cerca de 2,2 g por kg por dia, os estudos não mostraram ganho extra de músculo (Morton, 2018). Para 80 kg, isso dá uns ${M80.maxG} g de proteína somando comida e whey — passar disso só gasta dinheiro e calorias. Em adultos com rins saudáveis, não há sinal de dano nessas faixas.` },
+  { question: "Quanto whey isolado tomar por dia?", answer: `A mesma conta, com o rótulo do isolado: ele tem mais proteína por grama, então precisa de menos pó. Para completar 30 g de proteína, um isolado com 27 g em 30 g pede ${ISO30.produtoG} g de pó; um concentrado com 21 g em 30 g pede ${CONC30.produtoG} g. Digite a porção e a proteína do seu rótulo na calculadora.` },
+  { question: "Whey concentrado ou isolado: qual escolher para começar?", answer: "Para a maioria, o concentrado resolve: custa menos por grama de proteína e tem o mesmo efeito no músculo quando a proteína do dia fecha. O isolado vale para quem sente desconforto com lactose ou quer menos calorias por porção. O Comparador de Whey mostra o custo por 25 g de proteína de cada produto." },
+  { question: "Precisa tomar whey no dia que não treina?", answer: "Se a proteína do dia não fecha com comida, sim — o músculo se recupera e cresce nos dias de descanso também, e a meta de proteína não muda. Se a comida já chega na meta, não precisa. O whey segue a falta de proteína, não o treino." },
+  { question: "Whey com leite ou com água?", answer: "Os dois funcionam: a proteína do whey é a mesma. Com leite, o shake ganha mais proteína, calorias e cremosidade — útil para quem quer ganhar peso. Com água, fica mais leve e com menos calorias, melhor para quem está em déficit. Quem tem desconforto com lactose costuma se dar melhor com água." },
+  { question: "Quem é vegano ou vegetariano pode usar whey?", answer: "Vegetariano que consome leite pode: whey é proteína do soro do leite. Vegano, não — a alternativa são proteínas vegetais em pó, como ervilha, arroz ou misturas, e a conta é a mesma: quanto falta para a meta, dividido pela proteína da porção do rótulo." },
+  { question: "Pode misturar whey com creatina?", answer: "Pode, no mesmo copo. São contas separadas: o whey completa a proteína que falta; a creatina fica em 3 a 5 g por dia, todos os dias, com ou sem whey. A Calculadora de Creatina faz a conta dela." },
 ];
 
 const faqSchema = {
