@@ -22,6 +22,7 @@ import {
   tabelaPorFaixa,
   tabelaPorPeso,
 } from "@/lib/spinning";
+import { metDoEsforco } from "@/lib/bicicleta";
 
 /**
  * A página da Calculadora de Calorias no Spinning.
@@ -78,6 +79,10 @@ const EX_MET = calcula(PESO_PADRAO, 45, EX_FAIXA.met);
 const EX_KJ = kjDoTrabalho(EX_W, 45);
 const TRES = semana(AULA, 3);
 const MIN_AULA = [30, 40, 45, 50].map((m) => ({ m, kcal: calcula(PESO_PADRAO, m, MET_AULA).kcal }));
+const M20 = calcula(PESO_PADRAO, 20, MET_AULA);
+const M10 = calcula(PESO_PADRAO, 10, MET_AULA);
+const M60 = calcula(PESO_PADRAO, 60, MET_AULA);
+const ERGO_45 = calcula(PESO_PADRAO, 45, metDoEsforco("moderado"));
 const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -125,6 +130,38 @@ const faq: ItemFAQ[] = [
   {
     question: "Spinning afina a coxa?",
     answer: NOTA_SEM_PERDA_LOCALIZADA,
+  },
+  {
+    question: "20 minutos de spinning queimam quantas calorias?",
+    answer: `Em ritmo de aula, cerca de ${kc(M20.kcal)} kcal para ${PESO_PADRAO} kg; em 10 minutos, uns ${kc(M10.kcal)}. Vinte minutos já cabem num dia corrido e somam no fim da semana — a calculadora acima ajusta pelo seu peso e pelos watts, se a bike mostrar.`,
+  },
+  {
+    question: "Quanto tempo dura uma aula de spinning?",
+    answer: `Costuma ter de 40 a 50 minutos, com aquecimento no começo e volta à calma no fim. A calculadora usa 45 minutos como referência: cerca de ${kc(AULA.kcal)} kcal para ${PESO_PADRAO} kg em ritmo de aula.`,
+  },
+  {
+    question: "Spinning ou bicicleta ergométrica: qual gasta mais?",
+    answer: `No ritmo típico de cada um, o spinning: 45 minutos de aula gastam cerca de ${kc(AULA.kcal)} kcal para ${PESO_PADRAO} kg, contra ${kc(ERGO_45.kcal)} kcal na ergométrica em esforço moderado. A diferença vem da intensidade — subidas, sprints e carga mais alta —, não do aparelho. Na ergométrica, no mesmo esforço, o gasto é o mesmo.`,
+  },
+  {
+    question: "Quantos minutos de spinning por dia?",
+    answer: "Não precisa ser todo dia. Como referência de saúde, a OMS recomenda de 150 a 300 minutos de atividade aeróbica moderada por semana — três ou quatro aulas de 45 minutos cobrem isso, e o spinning, por ser intenso, conta com folga. Para quem também faz musculação, 2 ou 3 aulas por semana costumam encaixar sem atrapalhar a recuperação das pernas.",
+  },
+  {
+    question: "É bom pedalar 1 hora por dia?",
+    answer: `Dá, se o corpo estiver se recuperando bem: uma hora em ritmo de aula gasta perto de ${kc(M60.kcal)} kcal para ${PESO_PADRAO} kg. O cuidado é com o volume somado — pernas sempre cansadas, sono ruim e treino de musculação piorando são sinais de que é demais. Alternar dias fortes com dias leves rende mais que uma hora no limite todo dia.`,
+  },
+  {
+    question: "O spinning afina a cintura?",
+    answer: NOTA_SEM_PERDA_LOCALIZADA + " O spinning entra como um gasto alto por aula; a cintura acompanha a perda de gordura do corpo todo.",
+  },
+  {
+    question: "Como fica o corpo de quem faz spinning?",
+    answer: "O condicionamento melhora rápido, e as pernas ficam mais resistentes. Se a alimentação acompanhar, a gordura cai aos poucos; se a pessoa também faz musculação, o desenho do corpo aparece mais. Só o spinning raramente deixa a perna “grossa” — o estímulo é de resistência, não de força máxima.",
+  },
+  {
+    question: "Quem tem hérnia de disco pode fazer spinning?",
+    answer: "É decisão do médico ou fisioterapeuta que acompanha você. Muitas pessoas com hérnia pedalam bem, mas a posição inclinada sobre o guidão e as fases em pé na bike podem incomodar. Guidão mais alto, ficar sentado nas subidas e parar se a dor irradiar para a perna são os ajustes mais comuns.",
   },
 ];
 
