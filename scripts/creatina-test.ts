@@ -135,7 +135,7 @@ const titulo = pag.match(/title: "([^"]+)"/)![1];
 const desc = pag.match(/description:\s*\n?\s*"([^"]+)"/)![1];
 ok(`título entre 45 e 58 (${titulo.length})`, titulo.length >= 45 && titulo.length <= 58);
 ok(`descrição entre 130 e 155 (${desc.length})`, desc.length >= 130 && desc.length <= 155);
-ok("FAQ com 22 perguntas no schema", (pag.match(/question: "/g) ?? []).length === 22 && /"@type": "FAQPage"/.test(pag));
+ok("FAQ com 37 perguntas no schema", (pag.match(/question: "/g) ?? []).length === 37 && /"@type": "FAQPage"/.test(pag));
 ok("todo link interno da página existe", [...pag.matchAll(/href="\/blog\/([^"]+)"/g)].every((m) => blogPosts.some((p) => p.slug === m[1])));
 
 console.log(`\n${falhas === 0 ? "TUDO OK" : `${falhas} FALHA(S)`}\n`);

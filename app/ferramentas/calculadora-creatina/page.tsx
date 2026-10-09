@@ -76,6 +76,9 @@ const R100 = referencia(100);
 const R70 = referencia(70);
 const S70 = saturacao(70);
 const S80 = saturacao(80);
+const R50 = referencia(50);
+const R60 = referencia(60);
+const R90 = referencia(90);
 
 const faq: ItemFAQ[] = [
   { question: "Quanto de creatina tomar por dia?", answer: `De ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g por dia, todos os dias. É a faixa do consenso da International Society of Sports Nutrition para adultos saudáveis. Pelo peso, a conta é de ${g2(G_POR_KG_MANUTENCAO)} g por kg — que dá ${MANUTENCAO_MIN} g para a maioria das pessoas.` },
@@ -105,6 +108,16 @@ const faq: ItemFAQ[] = [
   { question: "Qual o melhor horário para tomar creatina?", answer: "O que você lembra todo dia. Horário importa muito menos que constância." },
   { question: "Pode tomar creatina em jejum?", answer: "Pode. Tomar junto com uma refeição pode ajudar quem sente desconforto no estômago, mas não é obrigatório." },
   { question: "Preciso beber mais água tomando creatina?", answer: "Beba a água de sempre, no volume que você já deveria beber. A creatina não desidrata; na saturação, com doses maiores, vale dividir em porções e tomar com água." },
+  { question: "Como calcular quanto de creatina tomar por dia?", answer: `Multiplique o peso por ${g2(G_POR_KG_MANUTENCAO)} g e arredonde dentro da faixa estudada de ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g. Para 50 kg a conta dá ${g(R50.calculada)} g, para 60 kg ${g(R60.calculada)} g e para 90 kg ${g(R90.calculada)} g — e nos três casos a dose prática fica em ${g(R90.diaria)} g, porque abaixo disso não há estudo. A calculadora acima faz a conta com o seu peso.` },
+  { question: "Quanto de whey e creatina tomar por dia?", answer: `São contas separadas. A creatina fica em ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g por dia, independentemente do whey. O whey depende de quanta proteína falta na sua alimentação — a Calculadora de Whey faz essa conta. Os dois podem ir no mesmo copo.` },
+  { question: "Quantas cápsulas de creatina tomar por dia?", answer: `A dose é a mesma do pó, em gramas: ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g. O número de cápsulas depende de quantos gramas cada uma tem, e isso está no rótulo — se cada cápsula tiver 1 g, são ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} cápsulas. Pó e cápsula têm a mesma creatina; vale comparar o custo por grama, que a calculadora mostra.` },
+  { question: "Como medir 3 ou 5 g de creatina sem dosador?", answer: "Use uma balança de cozinha uma vez: pese a colher que você vai usar cheia e rasa, e daí em diante use sempre a mesma colher do mesmo jeito. Colher de chá e colher de sopa variam muito de uma casa para outra, então “uma colher” sem pesar é chute." },
+  { question: "Quanto de creatina um idoso deve tomar?", answer: `A faixa do consenso vale para idosos também: ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g por dia. Alguns estudos com idosos usaram ${g2(G_POR_KG_DOSE_ALTA)} g por kg, sempre junto com musculação — e é a musculação que faz a creatina valer a pena nessa idade. Quem tem doença renal ou toma remédio contínuo deve conversar com o médico antes.` },
+  { question: "O que acontece se tomar creatina e não treinar?", answer: "O estoque no músculo enche do mesmo jeito, mas o ganho de força e de massa que os estudos mostram vem da creatina somada ao treino. Sem treino, você paga por um efeito que quase não aparece." },
+  { question: "Creatina faz cair cabelo?", answer: "Não há evidência de que faça. A suspeita vem de um único estudo pequeno, com jogadores de rúgbi, que viu aumento de DHT (um hormônio ligado à calvície) e não mediu queda de cabelo. O resultado não foi repetido, e a revisão de Antonio e colegas (2021) conclui que a evidência não sustenta essa relação." },
+  { question: "Pode tomar creatina à noite?", answer: "Pode. A creatina funciona pelo estoque acumulado no músculo, não pelo horário da dose. Se à noite é quando você lembra, à noite está ótimo." },
+  { question: "Pode colocar creatina direto na boca?", answer: "Não há vantagem nenhuma. O pó seco pode engasgar e grudar na garganta, e a absorção é a mesma misturada. Dissolva em água, suco, café ou no shake." },
+  { question: "Creatina monohidratada ou outro tipo?", answer: "Monohidratada. É a forma mais estudada e a que tem eficácia e segurança comprovadas no consenso da ISSN; as outras formas, em geral mais caras, não mostraram resultado melhor. A dose diária é a mesma." },
 ];
 
 const faqSchema = {
