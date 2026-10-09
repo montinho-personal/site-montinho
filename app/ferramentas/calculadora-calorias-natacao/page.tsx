@@ -17,6 +17,8 @@ import {
   nado,
   tabelaNados,
 } from "@/lib/natacao";
+import { metDoRitmo } from "@/lib/corrida";
+import { TERRENOS } from "@/lib/bicicleta";
 
 /**
  * A página da Calculadora de Calorias na Natação.
@@ -77,6 +79,17 @@ const KM1 = calcula(PESO_PADRAO, MIN_POR_KM, CRAWL.met);
 const M45 = calcula(PESO_PADRAO, 45, CRAWL.met);
 const M50 = calcula(PESO_PADRAO, 50, CRAWL.met);
 const AULA = calcula(PESO_PADRAO, 30, CRAWL.met, 20);
+const FORTE = nado("crawl-forte");
+const BORBOLETA = nado("borboleta");
+const M20 = calcula(PESO_PADRAO, 20, CRAWL.met);
+const M40 = calcula(PESO_PADRAO, 40, CRAWL.met);
+const FORTE_45 = calcula(PESO_PADRAO, 45, FORTE.met);
+const DUAS = kgPorMes(M45, 2);
+const CRAWL_30 = calcula(PESO_PADRAO, 30, CRAWL.met);
+const FORTE_30 = calcula(PESO_PADRAO, 30, FORTE.met);
+const CORRIDA_30 = calcula(PESO_PADRAO, 30, metDoRitmo(8).met);
+const SUBIDA_60 = calcula(PESO_PADRAO, 60, TERRENOS[2].met!);
+const BORBOLETA_60 = calcula(PESO_PADRAO, 60, BORBOLETA.met);
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kg = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -126,6 +139,46 @@ const faq: ItemFAQ[] = [
   {
     question: "Natação perde barriga?",
     answer: NOTA_SEM_PERDA_LOCALIZADA,
+  },
+  {
+    question: "20 ou 40 minutos de natação queimam quantas calorias?",
+    answer: `Em crawl leve, nadando sem parar, cerca de ${kc(M20.kcal)} kcal em 20 minutos e ${kc(M40.kcal)} kcal em 40 para ${PESO_PADRAO} kg. Desconte o tempo parado na borda: é ele que mais derruba o gasto real.`,
+  },
+  {
+    question: "Quantas calorias queimo em 45 minutos de natação intensa?",
+    answer: `Em crawl forte, com séries rápidas e pouco descanso, cerca de ${kc(FORTE_45.kcal)} kcal para ${PESO_PADRAO} kg — quase o dobro do crawl leve no mesmo tempo (${kc(M45.kcal)} kcal). Poucas pessoas sustentam 45 minutos contínuos nesse ritmo; num treino real, os intervalos baixam o total.`,
+  },
+  {
+    question: "O que emagrece mais, nadar ou correr?",
+    answer: `Depende do ritmo. Em 30 minutos, para ${PESO_PADRAO} kg: crawl leve ≈ ${kc(CRAWL_30.kcal)} kcal; corrida a 8 km/h ≈ ${kc(CORRIDA_30.kcal)} kcal; crawl forte ≈ ${kc(FORTE_30.kcal)} kcal. A corrida leve gasta mais que o nado confortável, mas tem impacto; a natação poupa as articulações e dá para fazer com mais frequência. Emagrece mais o que você mantém.`,
+  },
+  {
+    question: "Nadar 2 vezes por semana ajuda a emagrecer?",
+    answer: `Ajuda, mas pouco sozinho: duas sessões de 45 minutos de crawl leve somam no máximo ${kg(DUAS)} kg de gordura por mês para ${PESO_PADRAO} kg, pela conta linear. Para a saúde, a OMS recomenda de 150 a 300 minutos de atividade moderada por semana — duas aulas cobrem parte disso. Para emagrecer, o que decide é o déficit da semana, com a alimentação junto.`,
+  },
+  {
+    question: "Quantas vezes por semana é ideal fazer natação?",
+    answer: "Para condicionamento, de 2 a 4 vezes por semana já mostram evolução clara. Para emagrecer, a frequência importa menos que o total da semana somado à alimentação; para quem também faz musculação, 2 ou 3 sessões de piscina costumam encaixar bem sem atrapalhar a recuperação.",
+  },
+  {
+    question: "Natação afina a cintura ou define a barriga?",
+    answer: NOTA_SEM_PERDA_LOCALIZADA + " O abdômen trabalha para estabilizar o corpo na água, mas o que deixa a barriga aparecer é a perda de gordura do corpo todo.",
+  },
+  {
+    question: "A natação muda o corpo?",
+    answer: "Muda o condicionamento rápido e, com o tempo, a postura e a resistência de ombros, costas e pernas. Para mudar composição corporal de forma visível, ela funciona melhor junto com musculação, que constrói músculo, e com uma alimentação que feche a conta da semana.",
+  },
+  {
+    question: "Por que a natação cansa tanto?",
+    answer: "Porque o corpo inteiro trabalha contra a resistência da água, e a respiração fica presa ao ritmo da braçada. Para quem está começando, a técnica ainda gasta energia à toa — bater perna demais, prender o ar, nadar com o quadril afundado. Com aula e prática, o mesmo trecho passa a cansar bem menos.",
+  },
+  {
+    question: "Grávida pode fazer natação?",
+    answer: "Costuma estar entre as atividades mais indicadas na gestação, por ser de baixo impacto e aliviar o peso nas articulações. Mas a liberação e a intensidade são decisão do obstetra que acompanha a gravidez; sinais como tontura, dor ou sangramento são motivo para parar.",
+  },
+  {
+    question: "Qual esporte gasta mais calorias?",
+    answer: `Entre os mais caros do Compêndio de Atividades Físicas estão o nado borboleta (${metF(BORBOLETA.met)} METs, cerca de ${kc(BORBOLETA_60.kcal)} kcal por hora para ${PESO_PADRAO} kg) e a subida forte de bicicleta (${metF(TERRENOS[2].met!)} METs, cerca de ${kc(SUBIDA_60.kcal)} kcal por hora). São ritmos que quase ninguém sustenta por uma hora; no dia a dia, gasta mais a atividade que você faz com frequência.`,
   },
 ];
 
