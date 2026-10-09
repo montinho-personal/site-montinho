@@ -20,7 +20,7 @@ import { VALIDADE_PRECO_DIAS, analisa, reais } from "@/lib/comparador-whey";
  * conferidos à mão e mudam — marcar oferta desatualizada seria enganoso.
  */
 
-export const revalidate = 3600;
+export const revalidate = 300;
 
 const CAMINHO = "/ferramentas/comparador-whey-protein";
 

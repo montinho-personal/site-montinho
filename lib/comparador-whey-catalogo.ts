@@ -112,7 +112,7 @@ export async function carregarCatalogo(): Promise<ProdutoCatalogo[]> {
   try {
     const r = await fetch(`${SUPABASE_URL}/rest/v1/whey_produtos?select=${encodeURIComponent(sel)}&status=eq.verificado&order=marca,linha,sabor`, {
       headers: { apikey: SUPABASE_PUBLISHABLE_KEY, Authorization: `Bearer ${SUPABASE_PUBLISHABLE_KEY}` },
-      next: { revalidate: 3600 },
+      next: { revalidate: 300 },
     });
     if (!r.ok) return [];
     const linhas = (await r.json()) as Record<string, unknown>[];
