@@ -560,3 +560,7 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Artigo não cobria "em casa". +seção "Como fazer cadeira extensora em casa" (caneleira, elástico/mini band, sem nada + progressão) e "extensora ou flexora"; +6 FAQs (em casa, elástico, unilateral, vezes por semana, engrossa a perna, extensora × flexora). updatedAt 09/10.
 - Base para medir: GA4 IA 74 sessões/90d; acompanhar GSC para "em casa".
 - Fora: construir cadeira de madeira/caseira, preço de máquina.
+
+### blog/como-fazer-hip-thrust (09/10) — Answer the Public + prints (teste "tráfego de IA")
+- 2º artigo com mais visitas vindas de IA (GA4, 90 dias: 35 sessões). Export: "como fazer hip thrust" 90/mês; "pesado" 20; em casa 10; na máquina 10. PAA: hip thrust × elevação pélvica (forte), máquina, o que substitui, músculos, em casa. Prints: na máquina, unilateral com halter, barra, no chão, explosivo, "em português". IA: equipamentos/compras (fora), halter × barra, erros, variações.
+- +seções "Hip thrust é o mesmo que elevação pélvica?" e "Como fazer hip thrust em casa e sem máquina" (sofá/cadeira, halter/mochila, elástico, unilateral, máquina); +6 FAQs (× elevação pélvica, em casa, na máquina, o que substitui, músculos, com halter). updatedAt 09/10.
