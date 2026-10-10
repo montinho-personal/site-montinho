@@ -129,6 +129,8 @@ const poDia = (o: { porcaoG: number; proteinaPorcaoG: number }, gDia: number) =>
 export default function BatalhaDosWheys({ catalogo }: { catalogo: ProdutoCatalogo[] }) {
   const [lados, setLados] = useState<Lado[]>(() => (catalogo.length ? [ladoVazio(), ladoVazio()] : [manualVazio(), manualVazio()]));
   const [gDia, setGDia] = useState(25);
+  // Texto do campo "outro": livre enquanto a pessoa digita (pode ficar vazio ou com "2" no meio do caminho); gDia só muda com valor válido.
+  const [gTexto, setGTexto] = useState<string | null>(null);
   const [dias, setDias] = useState<number>(30);
   const [copiado, setCopiado] = useState(false);
   const agora = useMemo(() => new Date(), []);
@@ -236,11 +238,11 @@ export default function BatalhaDosWheys({ catalogo }: { catalogo: ProdutoCatalog
         </p>
         <div className="flex flex-wrap gap-2 mb-4">
           {DOSES_ATALHO.map((d) => (
-            <button key={d} type="button" onClick={() => setGDia(d)} aria-pressed={gDia === d} className={aba(gDia === d)}>{d} g</button>
+            <button key={d} type="button" onClick={() => { setGDia(d); setGTexto(null); }} aria-pressed={gDia === d} className={aba(gDia === d)}>{d} g</button>
           ))}
           <label className="flex items-center gap-2 text-gray-300 text-sm">
             outro (g de proteína):
-            <input inputMode="numeric" value={gDia} onChange={(e) => { const n = parseNumero(e.target.value); if (n !== null && n >= 5 && n <= 300) setGDia(Math.round(n)); }} className={campo + " w-20"} aria-label="Gramas de proteína por dia vindas do whey" />
+            <input inputMode="numeric" value={gTexto ?? String(gDia)} onFocus={(e) => e.target.select()} onChange={(e) => { const t = e.target.value.replace(/[^\d,.]/g, "").slice(0, 5); setGTexto(t); const n = parseNumero(t); if (n !== null && n >= 5 && n <= 300) setGDia(Math.round(n)); }} onBlur={() => setGTexto(null)} className={campo + " w-20"} aria-label="Gramas de proteína por dia vindas do whey" />
           </label>
         </div>
         {comRotulo.length > 0 && (
