@@ -630,3 +630,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 ### ferramentas/comparador-whey-protein — clareza "proteína × pó" (09/10), pedido do Montinho
 - "Sua rotina" confundia gramas de proteína com gramas do produto. Pergunta agora diz "Quanta proteína por dia você quer tirar do whey?", com aviso "É a proteína, não o pó", o campo "outro (g de proteína)" e, para cada whey escolhido, "30 g de proteína = X g de pó por dia" (porção × proteína do rótulo). Cabeçalho da tabela: "g de proteína/dia", com os gramas de pó por dia em cada linha. Mudança de componente, sem efeito em SEO.
 - 09/10 (2): o aviso "É a proteína, não o pó" passa a usar o rótulo do primeiro whey escolhido como exemplo ("no Growth Whey Concentrado, cada 30 g de pó têm 23 g de proteína") e a conversão em gramas de pó aparece assim que o whey é escolhido, antes do preço (catálogo ou rótulo digitado).
+
+## 2026-10-11 — Resultado UFC Vegas 122
+
+- `/blog/resultado-ufc-vegas-122`: resultados preenchidos (Allen finalizou Duncan no 5º round; Alice Pereira e Brendson Ribeiro venceram, Melissa Gatto empatou, Camilo, Ketlen e Ismael Bonfim perderam), bônus e pesos não batidos, FAQ nova. `updatedAt` 2026-10-11.
+- `/blog/ufc-vegas-122-allen-duncan`: seção "Quem ganhou?" com o resumo e FAQ de resultado no lugar de "Tem UFC neste sábado?". `updatedAt` 2026-10-11.
+- Fonte: sites de resultado bloqueados neste ambiente; publicado com os resultados consistentes entre Sherdog, Combat Press, MMA Mania, Cageside Press e Yahoo (via busca), com autorização expressa do Montinho. Detalhes divergentes entre veículos (tempo do nocaute de Bonfim, tipo de parada da luta da Alice) ficaram de fora.

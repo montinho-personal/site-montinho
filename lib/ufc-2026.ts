@@ -62,7 +62,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 </ul>
 
 <h2>Quem ganhou?</h2>
-<p>Os resultados saem em <a href="/blog/resultado-ufc-vegas-122">resultado do UFC Vegas 122</a>, atualizado na noite da luta.</p>
+<p><strong>Brendan Allen</strong> finalizou Christian Leroy Duncan no 5º round. Dos brasileiros, Alice Pereira e Brendson Ribeiro venceram, Melissa Gatto empatou, e Matheus Camilo, Ketlen Souza e Ismael Bonfim perderam. Todos os placares em <a href="/blog/resultado-ufc-vegas-122">resultado do UFC Vegas 122</a>.</p>
 
 <h2>Quanto se gasta numa aula de luta</h2>
 <p>Quem treina artes marciais costuma perguntar quanto gasta por aula. A conta depende do peso e de quanto da aula é luta de verdade: faça a sua na calculadora abaixo. Para entender como os lutadores chegam ao peso, veja <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>.</p>
@@ -81,8 +81,9 @@ export const UFC_2026_POSTS: BlogPost[] = [
       { question: "Qual é a luta principal do UFC Vegas 122?", answer: "Brendan Allen x Christian Leroy Duncan, no peso-médio." },
       { question: "Quantas lutas tem o UFC Vegas 122?", answer: "12 lutas: 5 no card principal e 7 no preliminar." },
       { question: "Quais brasileiros lutam no UFC Vegas 122?", answer: "Matheus Camilo, Ketlen Souza, Ismael Bonfim, Alice Pereira, Melissa Gatto, Felipe Franco e Brendson Ribeiro." },
-      { question: "Tem UFC neste sábado?", answer: "Sim, o UFC Vegas 122, no sábado 10/10, com preliminares às 18h e card principal às 21h (Brasília)." },
+      { question: "Quem ganhou o UFC Vegas 122?", answer: "Brendan Allen finalizou Christian Leroy Duncan no 5º round da luta principal. Resultados completos na página de resultado do evento." },
     ],
+    updatedAt: "2026-10-11",
   },
   {
     slug: "resultado-ufc-vegas-122",
@@ -98,35 +99,50 @@ export const UFC_2026_POSTS: BlogPost[] = [
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC Vegas 122", "resultado UFC", "Matheus Camilo", "Ketlen Souza"],
-    content: `<blockquote><p><strong>As lutas ainda não aconteceram.</strong> O UFC Vegas 122 é no sábado, 10 de outubro, em Las Vegas. Esta página é atualizada com o resultado de cada luta assim que ele for confirmado.</p></blockquote>
+    content: `<blockquote><p>Resultados do UFC Vegas 122, sábado, 10 de outubro de 2026, no Meta Apex, em Las Vegas. Atualizado em 11 de outubro de 2026.</p></blockquote>
+<p><strong>Brendan Allen</strong> venceu <strong>Christian Leroy Duncan</strong> por finalização no 5º round, na luta principal. Dos brasileiros, <strong>Alice Pereira</strong> e <strong>Brendson Ribeiro</strong> venceram, <strong>Melissa Gatto</strong> empatou, e Matheus Camilo, Ketlen Souza e Ismael Bonfim perderam.</p>
 
 <h2>Quem ganhou Allen x Duncan?</h2>
-<p><strong>Resultado: aguardando a luta.</strong> É a luta principal da noite, no peso-médio, entre o 4º e o 10º do ranking.</p>
+<p><strong>Brendan Allen</strong>, por finalização (mata-leão) aos 2min46s do 5º e último round. Foi a quarta vitória seguida dele no UFC, no peso-médio.</p>
 
 <h2>Resultados dos brasileiros no UFC Vegas 122</h2>
 <table><thead><tr><th>Luta</th><th>Resultado</th></tr></thead><tbody>
-<tr><td><strong>Matheus Camilo</strong> x Jai Herbert</td><td>Aguardando</td></tr>
-<tr><td><strong>Ketlen Souza</strong> x Loopy Godinez</td><td>Aguardando</td></tr>
-<tr><td><strong>Ismael Bonfim</strong> x Francisco Prado</td><td>Aguardando</td></tr>
-<tr><td><strong>Alice Pereira</strong> x Daria Zhelezniakova</td><td>Aguardando</td></tr>
-<tr><td><strong>Melissa Gatto</strong> x Ernesta Kareckaitė</td><td>Aguardando</td></tr>
-<tr><td><strong>Felipe Franco</strong> x <strong>Brendson Ribeiro</strong></td><td>Aguardando</td></tr>
+<tr><td><strong>Matheus Camilo</strong> x Jai Herbert</td><td>Herbert venceu por decisão unânime (29-28, 29-28, 29-28)</td></tr>
+<tr><td><strong>Ketlen Souza</strong> x Loopy Godinez</td><td>Godinez venceu por decisão unânime (29-28, 29-28, 29-28)</td></tr>
+<tr><td><strong>Ismael Bonfim</strong> x Francisco Prado</td><td>Prado venceu por nocaute no 1º round</td></tr>
+<tr><td><strong>Alice Pereira</strong> x Daria Zhelezniakova</td><td><strong>Alice venceu</strong> por nocaute técnico ao fim do 1º round, depois de abrir um corte com uma cotovelada</td></tr>
+<tr><td><strong>Melissa Gatto</strong> x Ernesta Kareckaitė</td><td>Empate majoritário (29-27, 28-28, 28-28)</td></tr>
+<tr><td><strong>Felipe Franco</strong> x <strong>Brendson Ribeiro</strong></td><td><strong>Brendson venceu</strong> por finalização (guilhotina) aos 1min49s do 1º round</td></tr>
 </tbody></table>
 
-<h2>Horário e onde assistir</h2>
-<p>Preliminares às 18h e card principal às 21h (Brasília), no Paramount+. Card completo em <a href="/blog/ufc-vegas-122-allen-duncan">UFC Vegas 122: card, horário e onde assistir</a>.</p>
+<h2>Bônus e balança</h2>
+<ul>
+<li><strong>Alice Pereira</strong> levou o bônus de Performance da Noite.</li>
+<li>Ketlen Souza, Ismael Bonfim e Brendson Ribeiro não bateram o peso na pesagem. Bonfim ficou 7,5 libras (cerca de 3,4 kg) acima do limite do peso-leve. Para entender por que isso acontece, veja <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>.</li>
+</ul>
+
+<h2>Próximo UFC com brasileiro na luta principal</h2>
+<p>Gabriel Bonfim, irmão de Ismael, enfrenta Sean Brady no <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">UFC Vegas 124</a>, em 7 de novembro. Card completo deste evento em <a href="/blog/ufc-vegas-122-allen-duncan">UFC Vegas 122: card, horário e onde assistir</a>.</p>
 
 <h2>Não se compare</h2>
 <p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
 
 <h2>Fontes</h2>
 <ul>
-<li><a href="https://www.ufc.com.br/event/ufc-fight-night-october-10-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 122: card, horários e transmissão (página oficial)</a></li>
+<li><a href="https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155" target="_blank" rel="noopener noreferrer">Sherdog — UFC Vegas 122: play-by-play e resultados</a></li>
+<li><a href="https://combatpress.com/2026/10/ufc-vegas-122-allen-vs-duncan-results/" target="_blank" rel="noopener noreferrer">Combat Press — UFC Vegas 122: resultados</a></li>
+<li><a href="https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan" target="_blank" rel="noopener noreferrer">MMA Mania — UFC Vegas 122: resultados ao vivo</a></li>
+<li><a href="https://cagesidepress.com/2026/10/10/black-country-banger-turns-back-matheus-camilo-in-ufc-vegas-122-co-headliner/" target="_blank" rel="noopener noreferrer">Cageside Press — Herbert x Camilo</a></li>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-october-10-2026" target="_blank" rel="noopener noreferrer">UFC — página oficial do evento</a></li>
 </ul>`,
     faq: [
-      { question: "Quem ganhou Allen x Duncan?", answer: "A luta é no sábado, 10 de outubro de 2026. O resultado entra nesta página assim que for confirmado." },
-      { question: "Quem ganhou o UFC Vegas 122?", answer: "O evento acontece na noite de 10/10. Os resultados entram aqui ao fim de cada luta." },
+      { question: "Quem ganhou Allen x Duncan?", answer: "Brendan Allen, por finalização (mata-leão) aos 2min46s do 5º round, no UFC Vegas 122, em 10/10/2026." },
+      { question: "Quem ganhou o UFC Vegas 122?", answer: "Na luta principal, Brendan Allen finalizou Christian Leroy Duncan no 5º round. Dos brasileiros, Alice Pereira e Brendson Ribeiro venceram e Melissa Gatto empatou." },
+      { question: "Matheus Camilo ganhou?", answer: "Não. Jai Herbert venceu Matheus Camilo por decisão unânime (29-28 nos três juízes), no co-main do UFC Vegas 122." },
+      { question: "Ketlen Souza ganhou?", answer: "Não. Loopy Godinez venceu por decisão unânime. Ketlen não bateu o peso na pesagem." },
+      { question: "Quem ganhou Felipe Franco x Brendson Ribeiro?", answer: "Brendson Ribeiro, por finalização (guilhotina) no 1º round." },
     ],
+    updatedAt: "2026-10-11",
   },
   {
     slug: "ufc-vegas-124-gabriel-bonfim-sean-brady",
