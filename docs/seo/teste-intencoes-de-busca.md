@@ -636,3 +636,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - `/blog/resultado-ufc-vegas-122`: resultados preenchidos (Allen finalizou Duncan no 5º round; Alice Pereira e Brendson Ribeiro venceram, Melissa Gatto empatou, Camilo, Ketlen e Ismael Bonfim perderam), bônus e pesos não batidos, FAQ nova. `updatedAt` 2026-10-11.
 - `/blog/ufc-vegas-122-allen-duncan`: seção "Quem ganhou?" com o resumo e FAQ de resultado no lugar de "Tem UFC neste sábado?". `updatedAt` 2026-10-11.
 - Fonte: sites de resultado bloqueados neste ambiente; publicado com os resultados consistentes entre Sherdog, Combat Press, MMA Mania, Cageside Press e Yahoo (via busca), com autorização expressa do Montinho. Detalhes divergentes entre veículos (tempo do nocaute de Bonfim, tipo de parada da luta da Alice) ficaram de fora.
+
+## 2026-10-12 — Origem de anúncio sem cookies
+
+- `app/api/crm/handoff/route.ts` + `lib/crm/metricas.ts` (`marcasDaUrl`): quando o clique no WhatsApp chega sem nenhuma UTM/gclid (cookies recusados), o servidor lê as marcas da URL da página ou da página de entrada. Antes, anúncio virava "Google orgânico" ou "desconhecido" pelo referrer.
+- Dados: 22 cliques de 07/09 a 12/10 reclassificados para google_ads no Supabase; 4 leads corrigidos (eram 3 orgânicos e 1 desconhecido), com atividade registrando o motivo.

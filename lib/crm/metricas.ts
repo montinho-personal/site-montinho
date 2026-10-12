@@ -475,6 +475,25 @@ export function atribuir(toques: Toque[], leadCreatedAt?: string | null): Atribu
   const assisted = t.filter((x) => x !== firstTouch && x !== lastNonDirect && x !== leadCreationTouch);
   return { firstTouch, leadCreationTouch, lastNonDirect, lastTouch, assisted };
 }
+/**
+ * Marcas de campanha lidas da própria URL da página. Quem recusa os cookies
+ * não tem a origem guardada no navegador, então o clique chegava sem UTM nem
+ * gclid e era classificado só pelo referrer — anúncio virava "Google
+ * orgânico" ou "desconhecido" (22 cliques de 07/09 a 12/10). A URL da página
+ * ainda carrega as marcas quando a pessoa clica na mesma página em que
+ * chegou, que é o caso de quase todo clique vindo de anúncio.
+ */
+export const CHAVES_CAMPANHA = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "gbraid", "wbraid", "fbclid"] as const;
+export type MarcasCampanha = Partial<Record<(typeof CHAVES_CAMPANHA)[number], string>>;
+export function marcasDaUrl(url: string | null | undefined): MarcasCampanha {
+  if (!url) return {};
+  try {
+    const q = new URL(url, "https://www.montinhopersonal.com.br").searchParams;
+    const out: MarcasCampanha = {};
+    for (const k of CHAVES_CAMPANHA) { const v = q.get(k)?.trim(); if (v) out[k] = v.slice(0, 200); }
+    return out;
+  } catch { return {}; }
+}
 /** Fonte a partir de UTM/click id/referrer. Sem evidência → unknown. */
 export function inferirFonte(p: { utmSource?: string | null; utmMedium?: string | null; gclid?: string | null; gbraid?: string | null; wbraid?: string | null; fbclid?: string | null; referrer?: string | null; referralCode?: string | null }): { sourceCode: string; confidence: "high" | "medium" | "low" } {
   const s = (p.utmSource ?? "").toLowerCase(), m = (p.utmMedium ?? "").toLowerCase();

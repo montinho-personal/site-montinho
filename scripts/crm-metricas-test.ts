@@ -9,7 +9,7 @@
  */
 import {
   taxasFunil, showRate, winRate, ltvRealizado, ltvPorConfianca, ehEstimado, dataDaReceita, recebimentoNoFuturo, mrrDoContrato, mrrNormalizado, valorEmPacotes, movimentoMrr, cacMidia, ltvCac, paybackMeses,
-  churnClientes, retencaoClientes, metricasIndicacao, atribuir, inferirFonte, normalizarTelefoneE164, possiveisDuplicatas,
+  churnClientes, retencaoClientes, metricasIndicacao, atribuir, inferirFonte, marcasDaUrl, normalizarTelefoneE164, possiveisDuplicatas,
   coortes, classificarLead, prioridadesHoje, anomalia, mediana, cicloDeVendaDias, primeiraResposta, valorPipeline,
   probabilidadeHistorica, coberturaAtribuicao, ltvProjetado, roasReceita, custoPorLead, slaFollowUp, tenureMeses,
   type EventoReceita, type Cliente, type Contrato,
@@ -235,6 +235,14 @@ bloco("7. ATRIBUIÇÃO");
   ok("assistidos = os do meio (YouTube, Instagram)", multi.assisted.map((t) => t.sourceCode).join() === "youtube,instagram_organic", multi.assisted.map((t) => t.sourceCode).join());
 }
 ok("gclid presente → google_ads, confiança alta", inferirFonte({ gclid: "abc" }).sourceCode === "google_ads" && inferirFonte({ gclid: "abc" }).confidence === "high");
+{
+  // Cookies recusados: o clique chega sem marcas e só com a URL da página.
+  const u = "https://www.montinhopersonal.com.br/consultoria-online?utm_source=google&utm_medium=cpc&utm_campaign=pesquisa_consultoria_online&utm_term=personal%20trainer&gbraid=0AAA&gclid=CjwKCA#contato";
+  const m = marcasDaUrl(u);
+  ok("marcasDaUrl lê gclid, gbraid e UTMs da URL (com #âncora)", m.gclid === "CjwKCA" && m.gbraid === "0AAA" && m.utm_medium === "cpc" && m.utm_term === "personal trainer");
+  ok("URL de anúncio sem cookies → google_ads, não orgânico", inferirFonte({ utmSource: m.utm_source, utmMedium: m.utm_medium, gclid: m.gclid, referrer: "https://www.google.com/" }).sourceCode === "google_ads");
+  ok("marcasDaUrl de URL limpa, caminho relativo ou lixo → vazio", Object.keys(marcasDaUrl("https://www.montinhopersonal.com.br/")).length === 0 && Object.keys(marcasDaUrl(null)).length === 0 && marcasDaUrl("/blog/x?utm_source=ig").utm_source === "ig");
+}
 ok("utm instagram/organic_social → instagram_organic", inferirFonte({ utmSource: "instagram", utmMedium: "organic_social" }).sourceCode === "instagram_organic");
 ok("utm instagram/paid → instagram_ads", inferirFonte({ utmSource: "instagram", utmMedium: "paid_social" }).sourceCode === "instagram_ads");
 ok("link /l/gbp (google/perfil_empresa) → google_business, confiança alta", inferirFonte({ utmSource: "google", utmMedium: "perfil_empresa" }).sourceCode === "google_business" && inferirFonte({ utmSource: "google", utmMedium: "perfil_empresa" }).confidence === "high");

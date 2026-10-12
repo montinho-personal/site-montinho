@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { supabaseAnon } from "@/lib/crm/supabase/server";
-import { inferirFonte } from "@/lib/crm/metricas";
+import { inferirFonte, marcasDaUrl, CHAVES_CAMPANHA } from "@/lib/crm/metricas";
 
 /**
  * Recebe o registro do clique no WhatsApp. Público, sem sessão: a inserção
@@ -14,11 +14,18 @@ export async function POST(req: Request) {
   try { b = await req.json(); } catch { return NextResponse.json({ ok: false }, { status: 400 }); }
   const ref = TEXTO(b.ref_code, 8);
   if (!ref || !/^[A-Z0-9]{4,8}$/.test(ref)) return NextResponse.json({ ok: false, erro: "ref_code" }, { status: 400 });
-  const utm = {
+  let utm = {
     utm_source: TEXTO(b.utm_source, 100), utm_medium: TEXTO(b.utm_medium, 100), utm_campaign: TEXTO(b.utm_campaign, 200),
     utm_content: TEXTO(b.utm_content, 200), utm_term: TEXTO(b.utm_term, 200),
     gclid: TEXTO(b.gclid, 200), gbraid: TEXTO(b.gbraid, 200), wbraid: TEXTO(b.wbraid, 200), fbclid: TEXTO(b.fbclid, 200),
   };
+  // Sem nenhuma marca vinda do navegador (cookies recusados), usa as da URL
+  // da página ou da página de entrada. Só preenche quando TODAS estão vazias,
+  // para nunca misturar a origem guardada com a da URL atual.
+  if (CHAVES_CAMPANHA.every((k) => !utm[k])) {
+    const daUrl = { ...marcasDaUrl(TEXTO(b.landing_page, 500)), ...marcasDaUrl(TEXTO(b.page_url, 500)) };
+    utm = { ...utm, ...Object.fromEntries(CHAVES_CAMPANHA.map((k) => [k, daUrl[k] ?? null])) };
+  }
   const referrer = TEXTO(b.referrer, 500);
   const referralCode = TEXTO(b.referral_code, 12);
   const fonte = inferirFonte({ utmSource: utm.utm_source, utmMedium: utm.utm_medium, gclid: utm.gclid, gbraid: utm.gbraid, wbraid: utm.wbraid, fbclid: utm.fbclid, referrer, referralCode });
