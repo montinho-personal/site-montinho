@@ -690,3 +690,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - CrossFit (a página aparece logo abaixo do ge): a visão por IA separa "mulheres 500–800, homens 700–1.000 kcal/h" e o PAA traz "3 vezes por semana ajuda a emagrecer?". +2 FAQs: 3 vezes por semana; homem x mulher (a conta depende do peso: 60 kg ≈ 275, 90 kg ≈ 410 kcal na aula típica).
 - Boxe: autocompletar, PAA e "Outras pessoas pesquisaram" já cobertos (30 min, barriga, 1 hora, boxe ou academia, 10/15/20 min). Nada alterado.
 - Jiu-jitsu: +2 FAQs do PAA: boxe ou jiu-jitsu emagrece mais; o que muda no corpo e em quanto tempo define. Kimono e "antes e depois" ficam de fora.
+
+## 2026-10-13 — Calculadora de Calorias do Elíptico (ATP + print da 1ª página)
+
+- Export do Answer the Public + print anônimo de "elíptico queima quantas calorias". A página já tinha 23 perguntas (10/15/20/30/40/45 min, 1 hora, 300/500 kcal, esteira, bicicleta, barriga, cintura, 20 min todo dia, intervalado). +2 FAQs: minutos por dia para emagrecer (PAA) e como calcular. Números de `lib/eliptico.ts`.
+- A página não apareceu na 1ª página do print (Veera, Hipertrofia.org, Nutrola, Smart Fit). O título atual não contém "queima quantas calorias"; proposta de título enviada ao Montinho (ATUAL/PROPOSTA/MOTIVO), não aplicada.
+- Fora: compra, preço, aluguel e marcas de elíptico; "como ligar o aparelho" e a deriva para bicicleta (pauta).
