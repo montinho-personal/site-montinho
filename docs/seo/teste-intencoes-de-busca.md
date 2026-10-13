@@ -680,3 +680,7 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Export do Answer the Public + print anônimo da busca "musculação queima quantas calorias". A página já aparece na 1ª página (abaixo de Smart Fit) e já cobria 1 hora, 20/30/40/50 min, 2 horas, EPOC, cardio, emagrecer com 1 h/dia, só musculação, 300 kcal, exercícios e barriga. +4 FAQs: 10/15/45 min e 3 horas; leve x pesada x intensa; 1.000 kcal em 1 hora; como calcular. Números de `lib/musculacao.ts`.
 - Visão por IA cita 368 kcal/h para 70 kg (MET 5,0, o nosso "pesado"); a página mantém o tradicional em 3,5 METs, conferido no Compêndio. Fora: apps, wearables, suplementos, academias, "massa muscular aumenta o metabolismo basal" (sem fonte no projeto para um número). "Quantos kg se perde com 1000 calorias" e "calorias de pão com ovo" ficam como pauta.
 - `seo-serp-test` tem 10 falhas anteriores, em artigos não tocados aqui (títulos e descrições longos).
+
+## 2026-10-13 — Muay thai: print da 1ª página
+
+- Print anônimo de "muay thai queima quantas calorias": a página aparece na 1ª página (depois de Reddit e Nav Dasa). Autocompletar, "As pessoas também perguntam" e "Outras pessoas pesquisaram" já estavam todos cobertos. A visão por IA e Nav Dasa/Superprof repetem "600 a 1.000 kcal por hora"; a pergunta "Muay thai queima 1.000 calorias por hora?" passou a "de 600 a 1.000", mostrando que os 600 só aparecem numa aula de 5 rounds para ~91 kg (70 kg ≈ 460 kcal).

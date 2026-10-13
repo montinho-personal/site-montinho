@@ -88,6 +88,7 @@ const QUARENTA = calcula(PESO_PADRAO, 40, 4, ROUND_PADRAO, DESCANSO_PADRAO)!;
 const INICIANTE = calcula(PESO_PADRAO, 60, 2, ROUND_PADRAO, DESCANSO_PADRAO)!;
 const SPAR_BOXE = aulaBoxe("sparring");
 const SACO_BOXE = aulaBoxe("saco");
+const PESO_600 = Math.round((600 / TIPICA.kcal) * PESO_PADRAO);
 const CORRIDA_8 = metDoRitmo(8).met;
 const MIN_500 = Math.round(500 / (TIPICA.kcal / 60));
 const mil = (n: number) => n.toLocaleString("pt-BR");
@@ -102,8 +103,8 @@ const faq: ItemFAQ[] = [
     answer: `Para ${PESO_PADRAO} kg, uma aula de uma hora com ${ROUNDS_PADRAO} rounds fortes gasta cerca de ${mil(H70.tipica)} kcal; só técnica, cerca de ${mil(H70.tecnica)} kcal. Com 90 kg, a aula típica passa de ${mil(H90.tipica)} kcal. Uma hora inteira em ritmo de luta, sem pausa, chegaria a ${kc(horaSemParar(PESO_PADRAO))} kcal, mas nenhuma aula real é assim.`,
   },
   {
-    question: "Muay thai queima 1.000 calorias por hora?",
-    answer: `Quase nunca. Para ${PESO_PADRAO} kg, nem uma hora inteira em ritmo de luta chega lá (≈ ${kc(horaSemParar(PESO_PADRAO))} kcal). Os 1.000 kcal supõem uma pessoa pesada em esforço máximo o tempo todo, sem técnica nem descanso.`,
+    question: "Muay thai queima de 600 a 1.000 calorias por hora?",
+    answer: `Os 600 aparecem numa aula com ${ROUNDS_PADRAO} rounds fortes para quem pesa uns ${PESO_600} kg; com ${PESO_PADRAO} kg, a mesma aula fica perto de ${mil(H70.tipica)} kcal. Os 1.000, quase nunca: para ${PESO_PADRAO} kg, nem uma hora inteira em ritmo de luta chega lá (≈ ${kc(horaSemParar(PESO_PADRAO))} kcal). Os 1.000 kcal supõem uma pessoa pesada em esforço máximo o tempo todo, sem técnica nem descanso.`,
   },
   {
     question: "Muay thai emagrece quantos quilos por semana?",
