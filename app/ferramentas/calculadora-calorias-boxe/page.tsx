@@ -26,6 +26,7 @@ import {
   ritmo,
   tabelaPorPeso,
   tabelaPorRitmo,
+  KCAL_POR_KG_GORDURA,
 } from "@/lib/boxe";
 import { MET_ROLA } from "@/lib/jiujitsu";
 
@@ -92,6 +93,9 @@ const MIN = (m: number, met: number) => deAula(PESO_PADRAO, m, met).kcal;
 const TEMPOS = [20, 30, 60] as const;
 const KCAL_MIN_SPAR = MIN(1, SPAR.met);
 const MIN_500_SPAR = Math.ceil(500 / KCAL_MIN_SPAR);
+const TEMPOS_EXTRA = [10, 15, 120] as const;
+/** Teto de gordura por mês com 3 aulas de 1 h por semana, se a alimentação não mudar. */
+const KG_MES_3X = (HORA(SACO.met).kcalLiquida * 3 * (52 / 12)) / KCAL_POR_KG_GORDURA;
 
 const faq: ItemFAQ[] = [
   {
@@ -144,6 +148,26 @@ const faq: ItemFAQ[] = [
     question: "Boxe emagrece mais que academia?",
     answer:
       "Por hora, uma aula de boxe gasta mais que uma sessão comum de musculação. Mas a musculação preserva massa muscular enquanto você emagrece, e é isso que decide o corpo que sobra no fim. O melhor é combinar os dois; se tiver de escolher, fique com o que você consegue manter por mais tempo.",
+  },
+  {
+    question: "10, 15 minutos ou 2 horas de boxe queimam quantas calorias?",
+    answer: `No saco de pancada, para ${PESO_PADRAO} kg: ${TEMPOS_EXTRA.map((m) => `${m >= 60 ? `${m / 60} horas` : `${m} min`} ≈ ${kc(MIN(m, SACO.met))} kcal`).join("; ")}. Duas horas seguidas no ritmo de aula são raras: na prática, o treino longo tem mais pausa e o número real fica abaixo.`,
+  },
+  {
+    question: "Quanto peso dá para perder fazendo boxe 3 vezes por semana?",
+    answer: `Só com o boxe, pouco: três aulas de 1 hora no saco por semana acrescentam, no máximo, cerca de ${fmt(KG_MES_3X)} kg de gordura por mês para quem pesa ${PESO_PADRAO} kg, se o que se come não mudar. O resto vem da alimentação e de manter a frequência por meses.`,
+  },
+  {
+    question: "Boxe ajuda a perder barriga?",
+    answer: "Ajuda a gastar mais calorias no dia, e é isso que reduz a gordura do corpo todo, barriga incluída. Mas não existe perda localizada: onde a gordura sai primeiro é decidido por genética e hormônio, não pelo exercício.",
+  },
+  {
+    question: "Boxe deixa o corpo musculoso?",
+    answer: "O boxe melhora o condicionamento e a resistência dos músculos, mas não é o melhor caminho para ganhar massa: para isso o músculo precisa de carga que aumenta com o tempo, que é o que a musculação dá. Quem quer o corpo definido costuma combinar os dois.",
+  },
+  {
+    question: "Quem tem hérnia de disco pode fazer boxe?",
+    answer: "Depende do caso. O boxe tem torção de tronco, impacto e, no sparring, golpes; quem tem hérnia de disco precisa da liberação do médico ou do fisioterapeuta que acompanha e de avisar o professor para adaptar o treino. Pare se a dor irradiar para a perna ou para o braço.",
   },
   {
     question: "Socar saco afina o braço?",
