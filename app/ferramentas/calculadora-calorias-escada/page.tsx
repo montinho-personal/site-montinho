@@ -139,6 +139,10 @@ const faq: ItemFAQ[] = [
     answer: `Subindo sem parar em ritmo de treino, cerca de ${kc(MIN_TREINO_70 * 10)} kcal para ${PESO} kg; em 15 minutos, uns ${kc(MIN_TREINO_70 * 15)}. No passo do dia a dia, menos da metade. Dez minutos contínuos de escada já são um treino puxado para quem está começando.`,
   },
   {
+    question: "5, 20 e 25 minutos de escada queimam quantas calorias?",
+    answer: `Subindo sem parar em ritmo de treino, para ${PESO} kg: 5 minutos ≈ ${kc(MIN_TREINO_70 * 5)} kcal, 20 minutos ≈ ${kc(MIN_TREINO_70 * 20)} kcal e 25 minutos ≈ ${kc(MIN_TREINO_70 * 25)} kcal. No simulador de escada da academia, um pouco mais por minuto (≈ ${kc(SIM_MIN)} kcal); no passo do dia a dia, menos da metade.`,
+  },
+  {
     question: "Subir e descer escada queima quantas calorias?",
     answer: `Subindo rápido e descendo a pé, sem parar, para ${PESO} kg: cerca de ${kc(SOBE_DESCE_MIN * 10)} kcal em 10 minutos e ${kc(SOBE_DESCE_MIN * 30)} kcal em 30. É menos do que só subir, porque a descida gasta menos — mas é o que acontece de verdade num prédio.`,
   },

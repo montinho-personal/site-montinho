@@ -708,3 +708,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 | Página | ATUAL | NOVO | Motivo |
 |---|---|---|---|
 | /ferramentas/calculadora-calorias-eliptico | Calorias no Elíptico: 10, 20, 30 Minutos e 1 Hora (Calculadora) (63) | Elíptico Queima Quantas Calorias? 10, 20, 30 Min e 1 Hora (57) | termo exato da busca; a página não apareceu na 1ª página do print de 13/10 |
+
+## 2026-10-13 — Escada: print da 1ª página
+
+- Print anônimo de "escada queima quantas calorias" (sem export do ATP). A página já tinha 22 perguntas (andar, minuto, 10/30 min, 1 hora, 100 degraus, simulador, correr, caminhar, esteira, bicicleta, todos os dias, barriga, pernas, 1.000 kcal). +1 FAQ: 5, 20 e 25 minutos ("Outras pessoas pesquisaram"). "30 minutos velocidade 5" fica de fora: o nível do simulador muda de aparelho para aparelho.
+- A calculadora não apareceu no trecho visível da 1ª página (Omni Calculator no topo). `escada-test` já falhava no título (66 caracteres, limite 58); proposta de título enviada ao Montinho, não aplicada.
