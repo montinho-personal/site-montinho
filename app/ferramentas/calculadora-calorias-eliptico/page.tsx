@@ -192,6 +192,14 @@ const faq: ItemFAQ[] = [
     answer: `São cerca de ${arredondaKcal(EX(20).kcal)} kcal por dia em esforço moderado para ${PESO_PADRAO} kg, ou uns ${arredondaKcal(EX(20).kcal * 7)} kcal por semana — e 140 minutos semanais, perto do mínimo de 150 que a OMS recomenda para a saúde. O condicionamento melhora em poucas semanas; o peso acompanha se a alimentação não compensar o gasto.`,
   },
   {
+    question: "Quantos minutos de elíptico por dia para emagrecer?",
+    answer: `Não existe um número mágico. Trinta minutos em cinco dias da semana fecham os 150 minutos semanais que a OMS recomenda e somam cerca de ${arredondaKcal(EX(30).kcal * 5)} kcal por semana para ${PESO_PADRAO} kg em ritmo moderado. O peso só cai se a alimentação não devolver esse gasto, e o tempo que você consegue repetir toda semana vale mais que um treino longo de vez em quando.`,
+  },
+  {
+    question: "Como calcular as calorias gastas no elíptico?",
+    answer: `Multiplique o MET do esforço por 3,5 e pelo seu peso e divida por 200: dá kcal por minuto. Depois multiplique pelos minutos. O elíptico em esforço moderado vale ${fmt(MOD.met)} METs e o vigoroso ${fmt(VIG.met)}, pelo Compêndio de Atividades Físicas. Para ${PESO_PADRAO} kg no moderado, cerca de ${fmt(POR_MIN)} kcal por minuto.`,
+  },
+  {
     question: "Elíptico afina a cintura?",
     answer: NOTA_SEM_PERDA_LOCALIZADA + " O elíptico entra como gasto do dia; a cintura acompanha a perda de gordura do corpo todo.",
   },
