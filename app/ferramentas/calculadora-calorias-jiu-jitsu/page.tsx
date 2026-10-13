@@ -80,6 +80,9 @@ const HORA_TIPICA = (p: number) => arredondaKcal(calcula(p, 60, 3, ROLA_PADRAO, 
 const HORA_ROLA = (p: number) => arredondaKcal((MET_ROLA * 3.5 * p) / 200 * 60);
 const SACO_BOXE = aulaBoxe("saco");
 const SPAR_BOXE = aulaBoxe("sparring");
+const DUAS_6 = calcula(PESO_PADRAO, 120, 6, ROLA_PADRAO, DESCANSO_PADRAO)!;
+const DUAS_10 = calcula(PESO_PADRAO, 120, 10, ROLA_PADRAO, DESCANSO_PADRAO)!;
+const QUATRO = kgPorMes(TIPICA, 4);
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kg = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -118,6 +121,24 @@ const faq: ItemFAQ[] = [
     question: "Jiu-jitsu gasta mais que musculação?",
     answer:
       "Por hora, uma aula de jiu-jitsu com rolas gasta mais que uma sessão comum de musculação. Mas a musculação constrói a força que protege ombro, joelho e coluna no rola — e preserva músculo enquanto você emagrece. Os dois se completam.",
+  },
+  {
+    question: "2 horas de jiu-jitsu queimam quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg, um treino de 2 horas com seis rolas de ${ROLA_PADRAO} minutos gasta cerca de ${kc(DUAS_6.kcal)} kcal; com dez rolas, cerca de ${kc(DUAS_10.kcal)} kcal. O que muda o número é quanto do treino é rola e quanto é técnica.`,
+  },
+  {
+    question: "Como aumentar o gasto calórico no treino de jiu-jitsu?",
+    answer: `Rolar mais ajuda pouco por aula: cada rola a mais, no lugar de técnica, soma cerca de ${kc(EXTRA)} kcal para ${PESO_PADRAO} kg. O que mais pesa é a frequência: passar de três para quatro aulas típicas por semana leva o teto de ${kg(TRES)} para ${kg(QUATRO)} kg de gordura por mês, se a alimentação não mudar.`,
+  },
+  {
+    question: "É melhor fazer jiu-jitsu ou academia?",
+    answer:
+      "Não precisa escolher. O jiu-jitsu gasta mais por hora e treina condicionamento; a musculação dá a força que protege ombro, joelho e coluna no rola e ajuda a não perder músculo emagrecendo. Para quem quer emagrecer e continuar no tatame por anos, o melhor é o que você consegue manter: muita gente se dá bem com duas ou três aulas e dois treinos de força por semana.",
+  },
+  {
+    question: "Quem tem hérnia de disco pode fazer jiu-jitsu?",
+    answer:
+      "Depende do caso. O jiu-jitsu tem flexão e torção de coluna com carga, então quem tem hérnia de disco precisa da liberação do médico ou do fisioterapeuta que acompanha, e de avisar o professor para adaptar posições. Pare se a dor irradiar para a perna ou para o braço.",
   },
   {
     question: "Jiu-jitsu perde barriga?",
