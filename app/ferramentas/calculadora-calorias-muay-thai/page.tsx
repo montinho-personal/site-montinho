@@ -7,6 +7,7 @@ import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import CalculadoraMuayThai from "@/components/muaythai/CalculadoraMuayThai";
 import { aula as aulaBoxe } from "@/lib/boxe";
+import { metDoRitmo } from "@/lib/corrida";
 import {
   DESCANSO_PADRAO,
   FONTES_MUAY,
@@ -21,6 +22,7 @@ import {
   arredondaKcal,
   calcula,
   horaSemParar,
+  kcalPorMinuto,
   kcalPorRoundExtra,
   kgPorMes,
   tabelaCenarios,
@@ -86,6 +88,8 @@ const QUARENTA = calcula(PESO_PADRAO, 40, 4, ROUND_PADRAO, DESCANSO_PADRAO)!;
 const INICIANTE = calcula(PESO_PADRAO, 60, 2, ROUND_PADRAO, DESCANSO_PADRAO)!;
 const SPAR_BOXE = aulaBoxe("sparring");
 const SACO_BOXE = aulaBoxe("saco");
+const CORRIDA_8 = metDoRitmo(8).met;
+const MIN_500 = Math.round(500 / (TIPICA.kcal / 60));
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kg = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -162,6 +166,26 @@ const faq: ItemFAQ[] = [
   {
     question: "Muay thai afina a cintura ou define o corpo feminino?",
     answer: `${NOTA_SEM_PERDA_LOCALIZADA} O que o muay thai faz é aumentar o gasto calórico; com alimentação ajustada, a gordura do corpo todo baixa — cintura incluída. Para ganhar forma, a musculação completa o trabalho.`,
+  },
+  {
+    question: "Muay thai ou corrida: qual queima mais calorias?",
+    answer: `No round forte, o muay thai (${metF(MET_ROUND)} METs) gasta mais por minuto que correr a 8 km/h (≈ ${metF(CORRIDA_8)}). Na hora inteira, a corrida contínua ganha: cerca de ${kc(kcalPorMinuto(CORRIDA_8, PESO_PADRAO) * 60)} kcal para ${PESO_PADRAO} kg, contra cerca de ${mil(H70.tipica)} da aula com ${ROUNDS_PADRAO} rounds, que tem técnica e descanso.`,
+  },
+  {
+    question: "Boxe ou muay thai: qual emagrece mais?",
+    answer: `Numa hora de aula, o muay thai com ${ROUNDS_PADRAO} rounds fortes gasta cerca de ${mil(H70.tipica)} kcal para ${PESO_PADRAO} kg; a aula de boxe no saco, cerca de ${kc(kcalPorMinuto(SACO_BOXE.met, PESO_PADRAO) * 60)}. A diferença existe, mas é pequena perto do que decide o resultado: quantas vezes por semana você treina e a alimentação.`,
+  },
+  {
+    question: "Quanto tempo de muay thai para queimar 500 calorias?",
+    answer: `Para ${PESO_PADRAO} kg, cerca de ${MIN_500} minutos de aula no ritmo de ${ROUNDS_PADRAO} rounds fortes por hora. Quem pesa mais chega lá antes; com menos rounds e mais técnica, demora mais.`,
+  },
+  {
+    question: "Como calcular as calorias do muay thai?",
+    answer: `Multiplique o MET por 3,5 e pelo seu peso e divida por 200: dá kcal por minuto. O round forte vale ${metF(MET_ROUND)} METs, a técnica ${metF(MET_TECNICA)} e o descanso ${metF(MET_DESCANSO)}. Some cada parte pelos minutos que ela ocupou na aula; é o que a calculadora faz.`,
+  },
+  {
+    question: "Como gastar mais calorias no muay thai?",
+    answer: `Fazendo mais rounds fortes. Cada round a mais no lugar de técnica soma cerca de ${kc(EXTRA)} kcal para ${PESO_PADRAO} kg, então o que mais rende é treinar mais vezes na semana, não se matar numa aula só.`,
   },
   {
     question: "Muay thai em casa queima as mesmas calorias?",
