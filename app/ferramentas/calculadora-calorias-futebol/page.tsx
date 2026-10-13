@@ -38,7 +38,7 @@ import {
 const CAMINHO = "/ferramentas/calculadora-calorias-futebol";
 
 export const metadata: Metadata = {
-  title: "Futebol Gasta Quantas Calorias? Calculadora de Pelada e Futsal",
+  title: "Futebol Queima Quantas Calorias? Calculadora de Pelada",
   description:
     "Quantas calorias a sua pelada gasta: futsal, society ou jogo valendo, pelo seu peso, com o revezamento de times e as latas que o jogo realmente pagou.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },

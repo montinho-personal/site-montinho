@@ -651,3 +651,10 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 
 - Export do Answer the Public de "dança queima quantas calorias" (CSV + PAA): +6 FAQs (10/15/40 min e 3 horas, aula de dança, dançar x caminhar, tempo para 400 kcal, 500 kcal em 30 min, zumba), com números de `lib/danca.ts`, `lib/caminhada.ts` e `lib/zumba.ts`.
 - `danca-test` já falhava no limite do título (59 caracteres); título não alterado (exige aprovação).
+
+## 2026-10-13 — Títulos de futebol e dança (aprovados pelo Montinho)
+
+| Página | ATUAL | NOVO | Motivo |
+|---|---|---|---|
+| /ferramentas/calculadora-calorias-futebol | Futebol Gasta Quantas Calorias? Calculadora de Pelada e Futsal (62) | Futebol Queima Quantas Calorias? Calculadora de Pelada (54) | "queima" é o termo do ATP; dentro do limite de 58 |
+| /ferramentas/calculadora-calorias-danca | Dança Gasta Quantas Calorias? Calculadora por Ritmo e Tempo (59) | Dança Queima Quantas Calorias? Calculadora por Ritmo (52) | idem |

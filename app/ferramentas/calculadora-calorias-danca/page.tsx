@@ -34,7 +34,7 @@ import {
 const CAMINHO = "/ferramentas/calculadora-calorias-danca";
 
 export const metadata: Metadata = {
-  title: "Dança Gasta Quantas Calorias? Calculadora por Ritmo e Tempo",
+  title: "Dança Queima Quantas Calorias? Calculadora por Ritmo",
   description:
     "Quantas calorias o seu ritmo gasta — forró, salão, ballet, funk ou samba no pé — com o seu peso, comparado com todos os outros ritmos no mesmo tempo.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
