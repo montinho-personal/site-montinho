@@ -39,7 +39,7 @@ const CAMINHO = "/ferramentas/calculadora-calorias-pular-corda";
 const PESO = 70;
 
 export const metadata: Metadata = {
-  title: "Pular Corda Gasta Quantas Calorias? Calculadora por Tempo e Saltos",
+  title: "Pular Corda Queima Quantas Calorias? Por Minuto e Saltos",
   description:
     "Quantas calorias você gasta pulando corda, pelo seu peso, ritmo e blocos de treino — só o tempo pulando conta — e quantos saltos a sessão teve.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
