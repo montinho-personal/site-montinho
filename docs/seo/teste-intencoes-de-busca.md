@@ -646,3 +646,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 
 - Export do Answer the Public de "futebol queima quantas calorias": +5 FAQs (90 minutos / 1 hora e meia, 3 horas, 20/45/50 minutos, 1 hora de society, como queimar mais), com números calculados por `lib/futebol.ts`.
 - Teste `futebol-test` já falhava antes desta mudança no limite do título (62 caracteres); título não alterado (exige aprovação).
+
+## 2026-10-13 — Calculadora de Calorias na Dança (ATP)
+
+- Export do Answer the Public de "dança queima quantas calorias" (CSV + PAA): +6 FAQs (10/15/40 min e 3 horas, aula de dança, dançar x caminhar, tempo para 400 kcal, 500 kcal em 30 min, zumba), com números de `lib/danca.ts`, `lib/caminhada.ts` e `lib/zumba.ts`.
+- `danca-test` já falhava no limite do título (59 caracteres); título não alterado (exige aprovação).
