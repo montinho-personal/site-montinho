@@ -22,6 +22,7 @@ import {
   tabelaAulas,
 } from "@/lib/crossfit";
 import { ESTACOES as ESTACOES_HYROX } from "@/lib/hyrox";
+import { metDoRitmo } from "@/lib/corrida";
 
 /**
  * A página da Calculadora de Calorias no CrossFit.
@@ -82,6 +83,9 @@ const WOD_MIN = (p: number) => kcalPorMinuto(MET_WOD, p);
 const AULA_50 = calcula(PESO, 50, 10, 12, 15, "continuo")!;
 const INICIANTE = calcula(PESO, 60, 15, 15, 10, "continuo")!;
 const MUSC_HORA = kcalPorMinuto(MET_FORCA, PESO) * 60;
+const AULA_40 = calcula(PESO, 40, 10, 0, 20, "continuo")!;
+const CORRIDA_8 = metDoRitmo(8).met;
+const WOD_MAIS_5 = (kcalPorMinuto(MET_WOD, PESO) - kcalPorMinuto(MET_PARADO, PESO)) * 5;
 const REMO = ESTACOES_HYROX.find((e) => e.id === "remo")!;
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -133,6 +137,26 @@ const faq: ItemFAQ[] = [
   {
     question: "CrossFit emagrece quantos quilos por mês?",
     answer: `Só do box, pouco: três aulas típicas por semana somam no máximo ${kg(TRES)} kg de gordura por mês para ${PESO} kg. O resto vem da alimentação — e a fome depois do WOD é o que mais trava.`,
+  },
+  {
+    question: "40 minutos de CrossFit queima quantas calorias?",
+    answer: `Quarenta minutos de WOD contínuo gastam cerca de ${kc(WOD_MIN(PESO) * 40)} kcal para ${PESO} kg. Uma aula de 40 minutos, com 10 de aquecimento e WOD de 20, fica perto de ${kc(AULA_40.kcal)} kcal.`,
+  },
+  {
+    question: "Como calcular as calorias gastas no CrossFit?",
+    answer: `Multiplique o MET de cada parte por 3,5 e pelo seu peso e divida por 200: o resultado é kcal por minuto. O WOD vale ${metF(MET_WOD)} METs, a parte de força ${metF(MET_FORCA)}, o aquecimento ${metF(MET_AQUECIMENTO)} e o tempo em pé ${metF(MET_PARADO)}. Some as partes pelos minutos de cada uma. A conta usa o peso, não o sexo: homem e mulher com o mesmo peso dão o mesmo número, e o que muda na prática é a carga e o ritmo de cada um.`,
+  },
+  {
+    question: "CrossFit ou corrida: qual queima mais calorias?",
+    answer: `Minuto a minuto, ficam perto: o WOD vale ${metF(MET_WOD)} METs e correr a 8 km/h, cerca de ${metF(CORRIDA_8)}. Na hora inteira, a corrida contínua leva vantagem: uns ${kc(kcalPorMinuto(CORRIDA_8, PESO) * 60)} kcal para ${PESO} kg, contra cerca de ${mil(AULA_TIPICA(PESO))} da aula típica, que tem aquecimento, força e explicação.`,
+  },
+  {
+    question: "Como gastar mais calorias no CrossFit?",
+    answer: `O que mais pesa é o tempo de WOD sem pausa. Cada 5 minutos de WOD a mais no lugar de tempo parado somam cerca de ${kc(WOD_MAIS_5)} kcal para ${PESO} kg, e o AMRAP gasta mais que o EMOM no mesmo relógio. Ir ao box uma vez a mais por semana rende mais do que tentar se destruir em cada aula.`,
+  },
+  {
+    question: "CrossFit substitui a musculação? Dá para definir o corpo?",
+    answer: "Pode substituir, se a parte de força tiver carga que sobe ao longo das semanas: é ela que constrói músculo, não o WOD. Corpo definido é pouca gordura com músculo por baixo, então depende também da alimentação. Quem só faz WOD e nunca progride a carga costuma melhorar o fôlego mais que o músculo.",
   },
   {
     question: "CrossFit perde barriga?",

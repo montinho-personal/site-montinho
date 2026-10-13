@@ -666,3 +666,7 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 ## 2026-10-13 — Calculadora de Calorias no Boxe (ATP)
 
 - Export do Answer the Public de "boxe queima quantas calorias": +5 FAQs (10/15 min e 2 horas, peso perdido com 3 aulas por semana, barriga, corpo musculoso, hérnia de disco), com números de `lib/boxe.ts`. Tabata e CrossFit (perguntas relacionadas do PAA) ficam como pauta, não nesta página.
+
+## 2026-10-13 — Calculadora de Calorias no CrossFit (ATP)
+
+- Export do Answer the Public de "crossfit queima quantas calorias": +5 FAQs (40 minutos, como calcular, CrossFit x corrida, como gastar mais, substitui a musculação / define o corpo), com números de `lib/crossfit.ts` e `lib/corrida.ts`. Fora: frequência semanal e "quantos meses dá resultado" (sem fonte para um número), suplementos, equipamentos, apps e academias. A deriva do PAA para "quantos kg a musculação faz perder por mês" fica como pauta.
