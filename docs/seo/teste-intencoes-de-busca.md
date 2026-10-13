@@ -702,3 +702,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Nas duas buscas quem aparece na 1ª página é o artigo do blog (futebol-emagrece / dança-emagrece), não a calculadora.
 - Futebol: +2 FAQs do PAA: "jogar futebol ajuda a emagrecer?" (3 peladas/semana, 80 kg ≈ 1.510 kcal líquidas ≈ 196 g) e "quanto tempo para queimar 500 calorias" (≈ 58 min para 70 kg). "É bom queimar 300 calorias por dia" fica de fora (sem número com fonte).
 - Dança: autocompletar, PAA e "Outras pessoas pesquisaram" já cobertos. Nada alterado.
+
+## 2026-10-13 — Título do elíptico (aprovado pelo Montinho)
+
+| Página | ATUAL | NOVO | Motivo |
+|---|---|---|---|
+| /ferramentas/calculadora-calorias-eliptico | Calorias no Elíptico: 10, 20, 30 Minutos e 1 Hora (Calculadora) (63) | Elíptico Queima Quantas Calorias? 10, 20, 30 Min e 1 Hora (57) | termo exato da busca; a página não apareceu na 1ª página do print de 13/10 |
