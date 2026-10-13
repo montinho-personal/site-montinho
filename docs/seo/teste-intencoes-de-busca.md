@@ -713,3 +713,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 
 - Print anônimo de "escada queima quantas calorias" (sem export do ATP). A página já tinha 22 perguntas (andar, minuto, 10/30 min, 1 hora, 100 degraus, simulador, correr, caminhar, esteira, bicicleta, todos os dias, barriga, pernas, 1.000 kcal). +1 FAQ: 5, 20 e 25 minutos ("Outras pessoas pesquisaram"). "30 minutos velocidade 5" fica de fora: o nível do simulador muda de aparelho para aparelho.
 - A calculadora não apareceu no trecho visível da 1ª página (Omni Calculator no topo). `escada-test` já falhava no título (66 caracteres, limite 58); proposta de título enviada ao Montinho, não aplicada.
+
+## 2026-10-13 — Escada: export do Answer the Public
+
+- +3 FAQs: 40/45/50 minutos (40 min = 70 buscas/mês); tempo de caminhada equivalente (PAA); escada x elíptico (modelos de IA). Números de `lib/escada.ts`, `lib/corrida.ts` e `lib/eliptico.ts`.
+- Fora: escada ergométrica para casa, marcas, apps e manutenção; "velocidade 5" (nível muda por aparelho); deriva do PAA para 1.000 kcal/pão com ovo (pauta, já anotada na musculação).

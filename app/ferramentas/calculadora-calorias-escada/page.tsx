@@ -22,6 +22,7 @@ import {
 } from "@/lib/escada";
 import { metDoRitmo } from "@/lib/corrida";
 import { metDoEsforco } from "@/lib/bicicleta";
+import { esforco as esforcoEliptico } from "@/lib/eliptico";
 
 /**
  * A página da Calculadora de Calorias Subindo Escada.
@@ -88,6 +89,9 @@ const ERGO_30 = KMIN(metDoEsforco("moderado")) * 30;
 const ESCADA_DIA_30 = KMIN(ritmo("dia").met) * 30;
 const SIM_MIN = KMIN(MET_SIMULADOR);
 const MET_PARA_MIL = 1000 / (kcalPorMinuto(1, PESO) * 60);
+const ESCADA_TREINO_30 = MIN_TREINO_70 * 30;
+const CAMINHADA_EQUIV = ESCADA_TREINO_30 / KMIN(metDoRitmo(5).met);
+const ELIPTICO_30 = KMIN(esforcoEliptico("moderado").met) * 30;
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
@@ -141,6 +145,18 @@ const faq: ItemFAQ[] = [
   {
     question: "5, 20 e 25 minutos de escada queimam quantas calorias?",
     answer: `Subindo sem parar em ritmo de treino, para ${PESO} kg: 5 minutos ≈ ${kc(MIN_TREINO_70 * 5)} kcal, 20 minutos ≈ ${kc(MIN_TREINO_70 * 20)} kcal e 25 minutos ≈ ${kc(MIN_TREINO_70 * 25)} kcal. No simulador de escada da academia, um pouco mais por minuto (≈ ${kc(SIM_MIN)} kcal); no passo do dia a dia, menos da metade.`,
+  },
+  {
+    question: "40, 45 e 50 minutos de escada queimam quantas calorias?",
+    answer: `Subindo sem parar em ritmo de treino, para ${PESO} kg: 40 minutos ≈ ${kc(MIN_TREINO_70 * 40)} kcal, 45 minutos ≈ ${kc(MIN_TREINO_70 * 45)} kcal e 50 minutos ≈ ${kc(MIN_TREINO_70 * 50)} kcal. Pouca gente sustenta esse ritmo tanto tempo: na prática, treinos longos de escada alternam subida forte e passo mais leve.`,
+  },
+  {
+    question: "Quanto tempo de caminhada equivale a subir escada?",
+    answer: `Trinta minutos de escada em ritmo de treino gastam cerca de ${kc(ESCADA_TREINO_30)} kcal para ${PESO} kg; para gastar o mesmo caminhando a 5 km/h, seriam uns ${minF(CAMINHADA_EQUIV)} minutos. A escada rende mais por minuto; a caminhada é mais fácil de manter por mais tempo.`,
+  },
+  {
+    question: "Escada ou elíptico: qual queima mais calorias?",
+    answer: `Por minuto, a escada em ritmo de treino: em 30 minutos, cerca de ${kc(ESCADA_TREINO_30)} kcal para ${PESO} kg, contra uns ${kc(ELIPTICO_30)} no elíptico em esforço moderado. O elíptico tem menos impacto e costuma ser mais fácil de manter por mais tempo; para emagrecer, vale o que você repete toda semana.`,
   },
   {
     question: "Subir e descer escada queima quantas calorias?",
