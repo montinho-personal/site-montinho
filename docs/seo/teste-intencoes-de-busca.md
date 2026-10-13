@@ -684,3 +684,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 ## 2026-10-13 — Muay thai: print da 1ª página
 
 - Print anônimo de "muay thai queima quantas calorias": a página aparece na 1ª página (depois de Reddit e Nav Dasa). Autocompletar, "As pessoas também perguntam" e "Outras pessoas pesquisaram" já estavam todos cobertos. A visão por IA e Nav Dasa/Superprof repetem "600 a 1.000 kcal por hora"; a pergunta "Muay thai queima 1.000 calorias por hora?" passou a "de 600 a 1.000", mostrando que os 600 só aparecem numa aula de 5 rounds para ~91 kg (70 kg ≈ 460 kcal).
+
+## 2026-10-13 — Prints da 1ª página: CrossFit, boxe e jiu-jitsu
+
+- CrossFit (a página aparece logo abaixo do ge): a visão por IA separa "mulheres 500–800, homens 700–1.000 kcal/h" e o PAA traz "3 vezes por semana ajuda a emagrecer?". +2 FAQs: 3 vezes por semana; homem x mulher (a conta depende do peso: 60 kg ≈ 275, 90 kg ≈ 410 kcal na aula típica).
+- Boxe: autocompletar, PAA e "Outras pessoas pesquisaram" já cobertos (30 min, barriga, 1 hora, boxe ou academia, 10/15/20 min). Nada alterado.
+- Jiu-jitsu: +2 FAQs do PAA: boxe ou jiu-jitsu emagrece mais; o que muda no corpo e em quanto tempo define. Kimono e "antes e depois" ficam de fora.

@@ -159,6 +159,14 @@ const faq: ItemFAQ[] = [
     answer: "Pode substituir, se a parte de força tiver carga que sobe ao longo das semanas: é ela que constrói músculo, não o WOD. Corpo definido é pouca gordura com músculo por baixo, então depende também da alimentação. Quem só faz WOD e nunca progride a carga costuma melhorar o fôlego mais que o músculo.",
   },
   {
+    question: "Fazer CrossFit 3 vezes por semana ajuda a emagrecer?",
+    answer: `Ajuda, mas o treino sozinho faz pouco: três aulas típicas por semana somam no máximo ${kg(TRES)} kg de gordura por mês para ${PESO} kg, pela conta linear, que é teto. O que decide é a alimentação junto e manter as três aulas por meses.`,
+  },
+  {
+    question: "Homem e mulher gastam calorias diferentes no CrossFit?",
+    answer: `A conta muda com o peso, não com o sexo. A mesma aula típica gasta cerca de ${mil(AULA_TIPICA(60))} kcal para quem pesa 60 kg e ${mil(AULA_TIPICA(90))} para 90 kg. Como os homens costumam pesar mais e usar cargas maiores, o número médio deles sai mais alto, mas a faixa de 700 a 1.000 kcal por hora exige peso alto e WOD quase sem pausa.`,
+  },
+  {
     question: "CrossFit perde barriga?",
     answer: NOTA_SEM_PERDA_LOCALIZADA,
   },
