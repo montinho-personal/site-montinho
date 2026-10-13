@@ -89,6 +89,9 @@ const BLOCOS_20 = calcula(PESO, "moderado", 10, 60, 60);
 const BLOCOS_60 = calcula(PESO, "moderado", 30, 60, 60);
 const CORRIDA_30 = kcalPorMinuto(metDoRitmo(8).met, PESO) * 30;
 const CORRIDA_10KMH_30 = kcalPorMinuto(metDoRitmo(10).met, PESO) * 30;
+const MIN_500 = Math.round(500 / POR_MIN);
+const CORRIDA_EQUIV_10 = Math.round((POR_MIN * 10) / kcalPorMinuto(metDoRitmo(8).met, PESO));
+const ANO_15 = Math.round((POR_MIN * 15 * 365) / 1000);
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kg = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -115,6 +118,18 @@ const faq: ItemFAQ[] = [
   {
     question: "Quanto tempo pulando corda equivale a 1 hora de caminhada?",
     answer: `Uma hora de caminhada moderada gasta cerca de ${kc(CAMINHADA_1H)} kcal para ${PESO} kg; pulando corda em ritmo moderado, isso dá uns ${CORDA_EQUIV_MIN} minutos pulando de fato, sem contar o descanso. Corda gasta mais por minuto, e também gasta mais que correr devagar; comparada a corrida em ritmo forte, fica parecida.`,
+  },
+  {
+    question: "Quantos minutos pulando corda para queimar 500 calorias?",
+    answer: `Para ${PESO} kg em ritmo moderado, cerca de ${MIN_500} minutos pulando de fato. Em blocos, com descanso entre eles, o treino inteiro leva bem mais que isso: o descanso quase não gasta.`,
+  },
+  {
+    question: "10 minutos pulando corda equivalem a quanto de corrida?",
+    answer: `Dez minutos de corda em ritmo moderado gastam cerca de ${kc(POR_MIN * 10)} kcal para ${PESO} kg, o mesmo que uns ${CORRIDA_EQUIV_10} minutos de corrida a 8 km/h. A frase "10 minutos de corda valem 30 de corrida" exagera: a corda gasta mais por minuto, mas não o triplo.`,
+  },
+  {
+    question: "Pular corda 15 minutos por dia: quanto queima?",
+    answer: `Pulando sem parar em ritmo moderado, cerca de ${kc(POR_MIN * 15)} kcal por dia para ${PESO} kg, ou uns ${ANO_15} mil kcal num ano inteiro sem falhar um dia. É bastante no papel, mas o corpo compensa parte do gasto, e o que decide o peso é a alimentação somada à constância.`,
   },
   {
     question: "Pular corda é bom para diabéticos? E na gravidez?",

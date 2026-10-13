@@ -724,3 +724,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 | Página | ATUAL | NOVO | Motivo |
 |---|---|---|---|
 | /ferramentas/calculadora-calorias-escada | Subir Escada Gasta Quantas Calorias? Calculadora por Andar e Tempo (66) | Escada Queima Quantas Calorias? Por Andar, Minuto e Degrau (58) | termo exato da busca; `escada-test` reprovava o título (limite 58) |
+
+## 2026-10-13 — Pular corda: print da 1ª página
+
+- Print anônimo de "pular corda queima quantas calorias". A página já tinha 18 perguntas (10/30 min, 1 hora, por minuto, 100/200/500/1.000 pulos, caminhada, correr, barriga, kg/mês). +3 FAQs: minutos para 500 kcal (PAA); 10 minutos x corrida ("quanto equivale 10 minutos pulando corda", corrige o "10 min = 30 min de corrida" das imagens: ≈ 14 min a 8 km/h); 15 minutos por dia (Brasil 247 na 1ª página fala em 91 mil kcal/ano; pela conta da calculadora, 70 kg ≈ 79 mil). "Pular corda sem corda" fica de fora (sem MET próprio no Compêndio).
+- Calculadora não apareceu no trecho visível da 1ª página (Omni Calculator no topo). `corda-test` já falhava no título (66 caracteres); proposta enviada ao Montinho.
