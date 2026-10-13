@@ -670,3 +670,7 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 ## 2026-10-13 — Calculadora de Calorias no CrossFit (ATP)
 
 - Export do Answer the Public de "crossfit queima quantas calorias": +5 FAQs (40 minutos, como calcular, CrossFit x corrida, como gastar mais, substitui a musculação / define o corpo), com números de `lib/crossfit.ts` e `lib/corrida.ts`. Fora: frequência semanal e "quantos meses dá resultado" (sem fonte para um número), suplementos, equipamentos, apps e academias. A deriva do PAA para "quantos kg a musculação faz perder por mês" fica como pauta.
+
+## 2026-10-13 — Calculadora de Calorias no Muay Thai (ATP)
+
+- Export do Answer the Public de "muay thai queima quantas calorias": a página já cobria 17 perguntas (1 hora, 30/40 min, 2 horas, barriga, define o corpo, academia x muay thai, frequência, iniciante, em casa). +5 FAQs para o que faltava: muay thai x corrida, boxe x muay thai, tempo para 500 kcal, como calcular e como gastar mais, com números de `lib/muaythai.ts`, `lib/boxe.ts` e `lib/corrida.ts`. Fora: equipamentos, suplementos, apps, academias, regras/significado do muay thai e kickboxing (pauta).
