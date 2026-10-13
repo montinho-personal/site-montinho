@@ -80,6 +80,7 @@ const HORA_TIPICA = (p: number) => arredondaKcal(calcula(p, 60, 3, ROLA_PADRAO, 
 const HORA_ROLA = (p: number) => arredondaKcal((MET_ROLA * 3.5 * p) / 200 * 60);
 const SACO_BOXE = aulaBoxe("saco");
 const SPAR_BOXE = aulaBoxe("sparring");
+const HORA_SACO = (p: number) => arredondaKcal((SACO_BOXE.met * 3.5 * p) / 200 * 60);
 const DUAS_6 = calcula(PESO_PADRAO, 120, 6, ROLA_PADRAO, DESCANSO_PADRAO)!;
 const DUAS_10 = calcula(PESO_PADRAO, 120, 10, ROLA_PADRAO, DESCANSO_PADRAO)!;
 const QUATRO = kgPorMes(TIPICA, 4);
@@ -139,6 +140,14 @@ const faq: ItemFAQ[] = [
     question: "Quem tem hérnia de disco pode fazer jiu-jitsu?",
     answer:
       "Depende do caso. O jiu-jitsu tem flexão e torção de coluna com carga, então quem tem hérnia de disco precisa da liberação do médico ou do fisioterapeuta que acompanha, e de avisar o professor para adaptar posições. Pare se a dor irradiar para a perna ou para o braço.",
+  },
+  {
+    question: "Boxe ou jiu-jitsu: qual emagrece mais?",
+    answer: `Numa hora de aula, o jiu-jitsu com três rolas gasta cerca de ${mil(HORA_TIPICA(PESO_PADRAO))} kcal para ${PESO_PADRAO} kg; uma aula de boxe no saco, cerca de ${mil(HORA_SACO(PESO_PADRAO))}. A diferença é pequena perto do que decide o resultado: quantas vezes por semana você treina e a alimentação.`,
+  },
+  {
+    question: "O que o jiu-jitsu muda no corpo? Em quanto tempo define?",
+    answer: "Melhora o fôlego, a força de pegada, de tronco e de quadril, e a mobilidade. Definição é pouca gordura com músculo por baixo: a gordura depende da alimentação somada ao gasto do tatame, e o músculo, de carga que sobe ao longo das semanas, que é o papel da musculação. Por isso o prazo depende mais do ponto de partida e da alimentação do que da luta.",
   },
   {
     question: "Jiu-jitsu perde barriga?",
