@@ -658,3 +658,7 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 |---|---|---|---|
 | /ferramentas/calculadora-calorias-futebol | Futebol Gasta Quantas Calorias? Calculadora de Pelada e Futsal (62) | Futebol Queima Quantas Calorias? Calculadora de Pelada (54) | "queima" é o termo do ATP; dentro do limite de 58 |
 | /ferramentas/calculadora-calorias-danca | Dança Gasta Quantas Calorias? Calculadora por Ritmo e Tempo (59) | Dança Queima Quantas Calorias? Calculadora por Ritmo (52) | idem |
+
+## 2026-10-13 — Calculadora de Calorias no Jiu-Jitsu (ATP)
+
+- Export do Answer the Public de "jiu jitsu queima quantas calorias": +4 FAQs (2 horas, como aumentar o gasto, jiu-jitsu ou academia, hérnia de disco), com números de `lib/jiujitsu.ts`. Perguntas comerciais (kimono, suplemento, academias) ficaram de fora.
