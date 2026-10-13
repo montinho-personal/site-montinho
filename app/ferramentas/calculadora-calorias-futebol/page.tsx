@@ -86,6 +86,8 @@ const PEL_90 = calcula(PESO_PADRAO, 90, PEL.met, 2);
 const PEL_3H = calcula(PESO_PADRAO, 180, PEL.met, 3);
 const MIN_CURTOS = [20, 45, 50].map((m) => ({ m, kcal: calcula(PESO_PADRAO, m, PEL.met, 2).kcal }));
 const SOCIETY_3 = calcula(PESO_PADRAO, 60, PEL.met, 3);
+const MIN_500 = Math.round(500 / calcula(PESO_PADRAO, 1, PEL.met, 2).kcal);
+const EX_SEM_3 = semana(HORA(PEL.met, 80), 3);
 const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDigits: d });
 /** Kcal arredondada e com ponto de milhar: 1.175, não 1175. */
 const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
@@ -143,6 +145,14 @@ const faq: ItemFAQ[] = [
   {
     question: "Goleiro gasta quantas calorias?",
     answer: NOTA_GOLEIRO,
+  },
+  {
+    question: "Jogar futebol ajuda a emagrecer?",
+    answer: `Ajuda, e mais quando vira hábito. Três peladas de uma hora por semana acrescentam cerca de ${kc(EX_SEM_3.kcalLiquida)} kcal à semana de quem pesa 80 kg, no máximo ${fmt(EX_SEM_3.gramasGordura, 0)} g de gordura, se a alimentação não subir junto. O futebol puxa o gasto; o que decide o peso é a semana inteira, com a comida e a cerveja depois do jogo.`,
+  },
+  {
+    question: "Quanto tempo de futebol para queimar 500 calorias?",
+    answer: `Para ${PESO_PADRAO} kg numa pelada com dois times, jogando o tempo todo, cerca de ${MIN_500} minutos. Com revezamento de três ou quatro times, bem mais, porque você passa boa parte do tempo esperando.`,
   },
   {
     question: "Jogar bola uma vez por semana emagrece?",
