@@ -696,3 +696,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Export do Answer the Public + print anônimo de "elíptico queima quantas calorias". A página já tinha 23 perguntas (10/15/20/30/40/45 min, 1 hora, 300/500 kcal, esteira, bicicleta, barriga, cintura, 20 min todo dia, intervalado). +2 FAQs: minutos por dia para emagrecer (PAA) e como calcular. Números de `lib/eliptico.ts`.
 - A página não apareceu na 1ª página do print (Veera, Hipertrofia.org, Nutrola, Smart Fit). O título atual não contém "queima quantas calorias"; proposta de título enviada ao Montinho (ATUAL/PROPOSTA/MOTIVO), não aplicada.
 - Fora: compra, preço, aluguel e marcas de elíptico; "como ligar o aparelho" e a deriva para bicicleta (pauta).
+
+## 2026-10-13 — Prints da 1ª página: futebol e dança
+
+- Nas duas buscas quem aparece na 1ª página é o artigo do blog (futebol-emagrece / dança-emagrece), não a calculadora.
+- Futebol: +2 FAQs do PAA: "jogar futebol ajuda a emagrecer?" (3 peladas/semana, 80 kg ≈ 1.510 kcal líquidas ≈ 196 g) e "quanto tempo para queimar 500 calorias" (≈ 58 min para 70 kg). "É bom queimar 300 calorias por dia" fica de fora (sem número com fonte).
+- Dança: autocompletar, PAA e "Outras pessoas pesquisaram" já cobertos. Nada alterado.
