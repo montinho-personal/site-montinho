@@ -20,6 +20,7 @@ import {
   deTempo,
   formataTempo,
   kcalLiquida,
+  kcalPorMinuto,
   simulacaoUmQuilo,
   tabelaPorPeso,
   tabelaPorTempo,
@@ -84,6 +85,8 @@ const COR = CMP.find((l) => l.id === "corrida")!;
 const META_300 = deKcal(300, PESO_PADRAO, TRAD.met);
 const UM_QUILO = simulacaoUmQuilo(PESO_PADRAO, TRAD.met);
 const POR_MIN = EX(1).kcal;
+const PESO_MIL = Math.round(1000 / (kcalPorMinuto(CIRC.met, 1) * 60));
+const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
 const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDigits: d });
 const faixa = (min: number) => `${arredondaKcal(EX(min).kcal)} a ${arredondaKcal(EX(min, CIRC.met).kcal)} kcal`;
 
@@ -131,6 +134,22 @@ const faq: ItemFAQ[] = [
   {
     question: "Quais exercícios de musculação gastam mais calorias?",
     answer: "Os que movem mais músculo de uma vez: agachamento, levantamento terra, afundo, remada e supino gastam mais que exercícios isolados como rosca e extensora. Descanso curto entre as séries também sobe o gasto. Por isso o tipo de treino pesa mais no número que a carga de um exercício só.",
+  },
+  {
+    question: "10, 15, 45 minutos e 3 horas de musculação queimam quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg em treino tradicional: 10 minutos ≈ ${kc(EX(10).kcal)} kcal, 15 minutos ≈ ${kc(EX(15).kcal)} kcal, 45 minutos ≈ ${kc(EX(45).kcal)} kcal e 3 horas ≈ ${kc(EX(180).kcal)} kcal. Em circuito, cerca de 65% a mais.`,
+  },
+  {
+    question: "1 hora de musculação leve, moderada ou intensa queima quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg: o treino comum, de séries de 8 a 15 repetições com descanso, ≈ ${kc(EX(60).kcal)} kcal; o pesado, centrado em agachamento e terra, ≈ ${kc(EX(60, PES.met).kcal)} kcal; e o intenso, em circuito quase sem pausa, ≈ ${kc(EX(60, CIRC.met).kcal)} kcal. O que muda o número é o descanso entre as séries e o tamanho dos exercícios, mais que a sensação de cansaço.`,
+  },
+  {
+    question: "Dá para queimar 1.000 calorias em 1 hora de musculação?",
+    answer: `Para a maioria, não. Mesmo em circuito quase sem pausa, uma hora gasta cerca de ${kc(EX(60, CIRC.met).kcal)} kcal para ${PESO_PADRAO} kg; para chegar a 1.000, seria preciso pesar uns ${PESO_MIL} kg. O que soma 1.000 kcal na semana é treinar com frequência, não uma sessão heroica.`,
+  },
+  {
+    question: "Como calcular as calorias gastas na musculação?",
+    answer: `Multiplique o MET do treino por 3,5 e pelo seu peso e divida por 200: dá kcal por minuto. Depois multiplique pelos minutos. O treino tradicional vale ${fmt(TRAD.met)} METs, o pesado ${fmt(PES.met)} e o circuito ${fmt(CIRC.met)}, pelo Compêndio de Atividades Físicas. Para ${PESO_PADRAO} kg no tradicional, dá cerca de ${fmt(POR_MIN)} kcal por minuto.`,
   },
   {
     question: "Musculação perde barriga?",

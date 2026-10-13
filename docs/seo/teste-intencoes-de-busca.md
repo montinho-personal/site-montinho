@@ -674,3 +674,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 ## 2026-10-13 — Calculadora de Calorias no Muay Thai (ATP)
 
 - Export do Answer the Public de "muay thai queima quantas calorias": a página já cobria 17 perguntas (1 hora, 30/40 min, 2 horas, barriga, define o corpo, academia x muay thai, frequência, iniciante, em casa). +5 FAQs para o que faltava: muay thai x corrida, boxe x muay thai, tempo para 500 kcal, como calcular e como gastar mais, com números de `lib/muaythai.ts`, `lib/boxe.ts` e `lib/corrida.ts`. Fora: equipamentos, suplementos, apps, academias, regras/significado do muay thai e kickboxing (pauta).
+
+## 2026-10-13 — Calculadora de Calorias da Musculação (ATP + print da 1ª página)
+
+- Export do Answer the Public + print anônimo da busca "musculação queima quantas calorias". A página já aparece na 1ª página (abaixo de Smart Fit) e já cobria 1 hora, 20/30/40/50 min, 2 horas, EPOC, cardio, emagrecer com 1 h/dia, só musculação, 300 kcal, exercícios e barriga. +4 FAQs: 10/15/45 min e 3 horas; leve x pesada x intensa; 1.000 kcal em 1 hora; como calcular. Números de `lib/musculacao.ts`.
+- Visão por IA cita 368 kcal/h para 70 kg (MET 5,0, o nosso "pesado"); a página mantém o tradicional em 3,5 METs, conferido no Compêndio. Fora: apps, wearables, suplementos, academias, "massa muscular aumenta o metabolismo basal" (sem fonte no projeto para um número). "Quantos kg se perde com 1000 calorias" e "calorias de pão com ovo" ficam como pauta.
+- `seo-serp-test` tem 10 falhas anteriores, em artigos não tocados aqui (títulos e descrições longos).
