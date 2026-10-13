@@ -718,3 +718,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 
 - +3 FAQs: 40/45/50 minutos (40 min = 70 buscas/mês); tempo de caminhada equivalente (PAA); escada x elíptico (modelos de IA). Números de `lib/escada.ts`, `lib/corrida.ts` e `lib/eliptico.ts`.
 - Fora: escada ergométrica para casa, marcas, apps e manutenção; "velocidade 5" (nível muda por aparelho); deriva do PAA para 1.000 kcal/pão com ovo (pauta, já anotada na musculação).
+
+## 2026-10-13 — Título da escada (aprovado pelo Montinho)
+
+| Página | ATUAL | NOVO | Motivo |
+|---|---|---|---|
+| /ferramentas/calculadora-calorias-escada | Subir Escada Gasta Quantas Calorias? Calculadora por Andar e Tempo (66) | Escada Queima Quantas Calorias? Por Andar, Minuto e Degrau (58) | termo exato da busca; `escada-test` reprovava o título (limite 58) |
