@@ -5,6 +5,8 @@ import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import CalculadoraDanca from "@/components/danca/CalculadoraDanca";
+import { ritmo } from "@/lib/caminhada";
+import { MET_BAIXO as ZUMBA_BAIXO, MET_ALTO as ZUMBA_ALTO } from "@/lib/zumba";
 import {
   ESTILOS,
   FONTES_DANCA,
@@ -71,6 +73,13 @@ const FORRO_3X = kgPorMes(FORRO, 3);
 const ACAD = estilo("academia");
 const ACAD_MIN = [20, 30, 60, 120].map((m) => ({ m, kcal: calcula(PESO_PADRAO, m, ACAD.met).kcal }));
 const FORRO_7X = kgPorMes(FORRO, 7);
+const ACAD_EXTRA = [10, 15, 40, 180].map((m) => ({ m, kcal: calcula(PESO_PADRAO, m, ACAD.met).kcal }));
+const CAM_MOD = ritmo("moderado");
+const CAM_RAP = ritmo("rapido");
+/** Minutos para um alvo de kcal num estilo, para o peso padrão. */
+const minPara = (alvo: number, met: number) => Math.round(alvo / (calcula(PESO_PADRAO, 1, met).kcal));
+const ACAD_30 = calcula(PESO_PADRAO, 30, ACAD.met);
+const BALLET = estilo("ballet");
 const mil = (n: number) => n.toLocaleString("pt-BR");
 const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const kg = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -84,6 +93,30 @@ const faq: ItemFAQ[] = [
   {
     question: "20, 30 minutos, 1 ou 2 horas de dança queimam quantas calorias?",
     answer: `Numa aula de dança de academia (ritmos, FitDance), para ${PESO_PADRAO} kg: ${ACAD_MIN.map((x) => `${x.m} min ≈ ${kc(x.kcal)} kcal`).join("; ")}. Em ritmos mais leves, como dança de salão, o gasto é menor; a tabela por estilo mostra a diferença.`,
+  },
+  {
+    question: "10, 15, 40 minutos e 3 horas de dança queimam quantas calorias?",
+    answer: `Em dança de academia (funk, hip hop, fitdance), para ${PESO_PADRAO} kg: ${ACAD_EXTRA.map((x) => `${x.m >= 60 ? `${x.m / 60} horas` : `${x.m} min`} ≈ ${kc(x.kcal)} kcal`).join("; ")}. Estilos mais leves gastam menos no mesmo tempo; a calculadora faz a conta para o seu peso e o seu estilo.`,
+  },
+  {
+    question: "Uma aula de dança queima quantas calorias?",
+    answer: `Depende do estilo. Uma aula de 1 hora de ballet ou jazz, com explicação no meio, gasta cerca de ${kc(calcula(PESO_PADRAO, 60, BALLET.met).kcal)} kcal para ${PESO_PADRAO} kg; uma aula de dança de academia, sem parar, cerca de ${kc(calcula(PESO_PADRAO, 60, ACAD.met).kcal)} kcal. Aula com muita pausa para aprender o passo fica abaixo disso.`,
+  },
+  {
+    question: "O que emagrece mais, dançar ou caminhar?",
+    answer: `Por minuto, dança de academia (${metF(ACAD.met)} METs) gasta mais que caminhada moderada a ${CAM_MOD.velocidade} km/h (${metF(CAM_MOD.met)} METs) e mais que caminhada rápida a ${CAM_RAP.velocidade} km/h (${metF(CAM_RAP.met)} METs). Dança de salão lenta (${metF(estilo("salao").met)} METs) gasta menos que as duas. No fim, emagrece mais a que você consegue fazer mais vezes por semana.`,
+  },
+  {
+    question: "Quanto tempo de dança é preciso para queimar 400 calorias?",
+    answer: `Para ${PESO_PADRAO} kg, cerca de ${minPara(400, ACAD.met)} minutos de dança de academia, ${minPara(400, estilo("forro").met)} minutos de forró ou sertanejo e ${minPara(400, estilo("salao").met)} minutos de dança de salão lenta. Quem pesa mais chega lá antes.`,
+  },
+  {
+    question: "Dá para queimar 500 calorias em 30 minutos dançando?",
+    answer: `Para a maioria das pessoas, não. Meia hora de dança de academia, o estilo mais intenso da calculadora, dá cerca de ${kc(ACAD_30.kcal)} kcal para ${PESO_PADRAO} kg. Os números de 500 ou 800 kcal por aula que circulam costumam vir de sessões longas ou de pessoas bem mais pesadas.`,
+  },
+  {
+    question: "A zumba ajuda a emagrecer?",
+    answer: `Ajuda como qualquer atividade que você repete: a zumba fica entre ${metF(ZUMBA_BAIXO)} e ${metF(ZUMBA_ALTO)} METs no Compêndio, dependendo de quantas músicas têm salto. A calculadora de calorias da zumba, aqui no site, faz a conta pela sua aula.`,
   },
   {
     question: "Dançar 1 hora por dia ajuda a emagrecer? Quantos quilos?",
