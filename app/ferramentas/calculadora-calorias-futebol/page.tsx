@@ -82,6 +82,10 @@ const TAB_REV = tabelaRevezamento(80, 120);
 const EX_REV = calcula(80, 120, PEL.met, 4);
 const EX_SEM_1 = semana(HORA(PEL.met, 80), 1);
 const EX_SEM_2 = semana(HORA(PEL.met, 80), 2);
+const PEL_90 = calcula(PESO_PADRAO, 90, PEL.met, 2);
+const PEL_3H = calcula(PESO_PADRAO, 180, PEL.met, 3);
+const MIN_CURTOS = [20, 45, 50].map((m) => ({ m, kcal: calcula(PESO_PADRAO, m, PEL.met, 2).kcal }));
+const SOCIETY_3 = calcula(PESO_PADRAO, 60, PEL.met, 3);
 const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDigits: d });
 /** Kcal arredondada e com ponto de milhar: 1.175, não 1175. */
 const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
@@ -99,6 +103,26 @@ const faq: ItemFAQ[] = [
   {
     question: "30, 40 minutos ou 1 hora de futebol queimam quantas calorias?",
     answer: `Numa pelada, para ${PESO_PADRAO} kg jogando o tempo todo: ${MIN_PEL.map((x) => `${x.m} min ≈ ${kc(x.kcal)} kcal`).join("; ")}. Com revezamento de times, o gasto real cai, porque parte do tempo é no banco; a calculadora desconta isso.`,
+  },
+  {
+    question: "Uma partida de 90 minutos (1 hora e meia) de futebol queima quantas calorias?",
+    answer: `Numa pelada jogada o tempo todo, 90 minutos dão cerca de ${kc(PEL_90.kcal)} kcal para quem pesa ${PESO_PADRAO} kg. No ritmo de jogo valendo, sem parar, os mesmos 90 minutos sobem para cerca de ${kc(JOGO_COMP.kcal)} kcal. Se os times revezam, a conta cai, porque parte do tempo é na lateral.`,
+  },
+  {
+    question: "3 horas de futebol queima quantas calorias?",
+    answer: `Quase ninguém joga três horas seguidas. Numa noite de três horas com três times revezando, quem pesa ${PESO_PADRAO} kg fica cerca de ${fmt(PEL_3H.minutosEmCampo, 0)} minutos em campo e gasta perto de ${kc(PEL_3H.kcal)} kcal no total, contando o tempo na lateral.`,
+  },
+  {
+    question: "20, 45 e 50 minutos de futebol queimam quantas calorias?",
+    answer: `Numa pelada, para ${PESO_PADRAO} kg jogando sem sair: ${MIN_CURTOS.map((x) => `${x.m} min ≈ ${kc(x.kcal)} kcal`).join("; ")}. Para o seu peso, coloque os minutos na calculadora.`,
+  },
+  {
+    question: "1 hora de futebol society queima quantas calorias?",
+    answer: `Society entra como pelada no Compêndio de Atividades Físicas (${fmt(PEL.met)} METs). Uma hora de bola rolando dá cerca de ${kc(HORA(PEL.met).kcal)} kcal para ${PESO_PADRAO} kg. Com três times revezando na mesma hora, cai para cerca de ${kc(SOCIETY_3.kcal)} kcal.`,
+  },
+  {
+    question: "Como queimar mais calorias jogando futebol?",
+    answer: `O que mais pesa é o tempo com a bola rolando. Menos times revezando significa menos tempo na lateral, e jogo com ritmo de campeonato gasta mais por minuto (${fmt(COMP.met)} METs) que pelada (${fmt(PEL.met)}). Para o corpo aguentar mais tempo nesse ritmo sem se machucar, o que mais ajuda é treinar a força das pernas fora do campo.`,
   },
   {
     question: "Quantas calorias um jogador de futebol gasta por jogo?",

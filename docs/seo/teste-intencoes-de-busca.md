@@ -641,3 +641,8 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 
 - `app/api/crm/handoff/route.ts` + `lib/crm/metricas.ts` (`marcasDaUrl`): quando o clique no WhatsApp chega sem nenhuma UTM/gclid (cookies recusados), o servidor lê as marcas da URL da página ou da página de entrada. Antes, anúncio virava "Google orgânico" ou "desconhecido" pelo referrer.
 - Dados: 22 cliques de 07/09 a 12/10 reclassificados para google_ads no Supabase; 4 leads corrigidos (eram 3 orgânicos e 1 desconhecido), com atividade registrando o motivo.
+
+## 2026-10-13 — Calculadora de Calorias no Futebol (ATP)
+
+- Export do Answer the Public de "futebol queima quantas calorias": +5 FAQs (90 minutos / 1 hora e meia, 3 horas, 20/45/50 minutos, 1 hora de society, como queimar mais), com números calculados por `lib/futebol.ts`.
+- Teste `futebol-test` já falhava antes desta mudança no limite do título (62 caracteres); título não alterado (exige aprovação).
