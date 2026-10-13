@@ -38,7 +38,7 @@ const CAMINHO = "/ferramentas/calculadora-calorias-escada";
 const PESO = 70;
 
 export const metadata: Metadata = {
-  title: "Subir Escada Gasta Quantas Calorias? Calculadora por Andar e Tempo",
+  title: "Escada Queima Quantas Calorias? Por Andar, Minuto e Degrau",
   description:
     "Quantas calorias você gasta subindo escada, pelos andares, pelo ritmo e pelo seu peso — com a descida, o custo de cada andar e o que o hábito soma no mês.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
