@@ -42,7 +42,7 @@ import { MET_SIMULADOR } from "@/lib/escada";
 const CAMINHO = "/ferramentas/calculadora-calorias-eliptico";
 
 export const metadata: Metadata = {
-  title: "Calorias no Elíptico: 10, 20, 30 Minutos e 1 Hora (Calculadora)",
+  title: "Elíptico Queima Quantas Calorias? 10, 20, 30 Min e 1 Hora",
   description:
     "Quantas calorias o elíptico queima por minuto, em 10, 20, 30, 40 minutos e 1 hora, com o seu peso. Compare com esteira e bicicleta e veja se perde barriga.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
