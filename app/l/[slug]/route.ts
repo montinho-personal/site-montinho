@@ -4,6 +4,9 @@ import { ehRoboDePrevia } from "@/lib/crm/previa";
 import { supabaseAnon } from "@/lib/crm/supabase/server";
 
 /** Link controlado: registra o clique e redireciona com UTM. */
+/** A resposta depende do user-agent: não pode ser gerada uma vez e servida a todos. */
+export const dynamic = "force-dynamic";
+
 export async function GET(req: Request, ctx: { params: Promise<{ slug: string }> }) {
   const { slug } = await ctx.params;
   const alvo = urlDoLink(slug);
@@ -23,7 +26,7 @@ export async function GET(req: Request, ctx: { params: Promise<{ slug: string }>
       if (pagina.ok) {
         return new NextResponse(await pagina.text(), {
           status: 200,
-          headers: { "content-type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex, nofollow", "cache-control": "public, max-age=300" },
+          headers: { "content-type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex, nofollow", "cache-control": "private, no-store", "vary": "user-agent" },
         });
       }
     } catch { /* cai no redirecionamento normal */ }
@@ -34,5 +37,8 @@ export async function GET(req: Request, ctx: { params: Promise<{ slug: string }>
   } catch { /* o redirecionamento não depende do registro */ }
   const r = NextResponse.redirect(new URL(alvo, origem), 302);
   r.headers.set("X-Robots-Tag", "noindex, nofollow");
+  // Nunca em cache: a resposta muda conforme quem pede (robô de prévia ou pessoa).
+  r.headers.set("cache-control", "private, no-store");
+  r.headers.set("vary", "user-agent");
   return r;
 }
