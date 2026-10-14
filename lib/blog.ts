@@ -100903,7 +100903,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "dormir-depois-do-almoco-engorda",
     title: "Dormir Depois do Almoço Engorda? Mito ou Verdade",
-    metaTitle: "Dormir Depois do Almoço Engorda? O Que Acontece de Verdade",
+    metaTitle: "Dormir Depois do Almoço Engorda? E Deitar Depois de Comer",
     metaDescription:
       "Uma soneca de 20 minutos não muda o balanço calórico do dia. O que muda é o esôfago: veja quanto esperar antes de deitar e a janela ideal do cochilo.",
     excerpt:
@@ -101915,7 +101915,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "quantas-calorias-tem-1kg-de-gordura",
     title: "Quantas Calorias Tem 1kg de Gordura? A Matemática do Emagrecimento",
-    metaTitle: "Quantas Calorias Tem 1 kg de Gordura? São 7.700 kcal",
+    metaTitle: "Quantas Calorias Tem 1 kg de Gordura? Calcule o Déficit",
     metaDescription:
       "A régua funciona no papel, mas o corpo não é calculadora. Veja como virar meta semanal, por que os primeiros quilos desmentem a conta e onde ela falha.",
     excerpt:

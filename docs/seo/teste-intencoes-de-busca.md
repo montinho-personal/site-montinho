@@ -867,3 +867,14 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Motivo creatina: "calculadora de creatina" 1,9 mil/mês e "por peso" 880 no ATP; buscas reais "tabela de creatina por peso 60/90/120 kg" (≈ 650 impressões em 28 dias, posição ~10, 0 cliques). `creatina-test` passa a aprovar o título (antes 63 > 58).
 - Motivo polichinelo: "polichinelo emagrece a barriga" 480/mês e "quantos quilos por semana" 140/mês; "calorias" fica com `polichinelo-queima-quantas-calorias`, para as duas páginas não disputarem a mesma busca.
 - Sem `updatedAt` (título não muda o conteúdo).
+
+## 2026-10-14 — Títulos: dormir depois do almoço e 1 kg de gordura (aprovados pelo Montinho)
+
+| Página | Campo | ATUAL | NOVO |
+|---|---|---|---|
+| /blog/dormir-depois-do-almoco-engorda | título | Dormir Depois do Almoço Engorda? O Que Acontece de Verdade (58) | Dormir Depois do Almoço Engorda? E Deitar Depois de Comer (57) |
+| /blog/quantas-calorias-tem-1kg-de-gordura | título | Quantas Calorias Tem 1 kg de Gordura? São 7.700 kcal (52) | Quantas Calorias Tem 1 kg de Gordura? Calcule o Déficit (55) |
+
+- Motivo dormir: "deitar depois de comer engorda" (127 impressões no GSC) não estava no título; 0 cliques em 1.493 impressões.
+- Motivo 1 kg: o título e a visão por IA já entregavam o número (3 cliques em 3.674 impressões); o artigo embute a Calculadora de Déficit.
+- Sem `updatedAt`.
