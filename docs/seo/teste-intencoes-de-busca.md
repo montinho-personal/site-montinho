@@ -755,3 +755,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - +3 FAQs: PPL upper lower / ULPPL ("treino ppl upper lower" 590/mês, "push pull legs upper lower" 320/mês); quantas séries (cerca de 10 séries por músculo por semana — Schoenfeld 2017, já usado em lib/treino/volume.ts); upper lower ou ABC. `updatedAt` 2026-10-14.
 - Fora: planilha/pdf (download), "pacholok" (nome de outro profissional), drop set, 4x10 x 3x12, pilares do CrossFit (deriva do PAA), apps.
 - `seo-serp-test` já reprovava a descrição (171 caracteres; abertura igual ao título); proposta enviada ao Montinho.
+
+## 2026-10-14 — quanto-tempo-de-esteira-para-emagrecer (ATP + print da 1ª página)
+
+- Export do Answer the Public + print anônimo de "quanto tempo de esteira para emagrecer" (590/mês). 1ª página: UOL, Cia Athletica, sportlife, O Globo, AZON; a visão por IA diz 30 a 60 min, 3 a 5x por semana, e cita o 12-3-30. O artigo não apareceu no trecho visível do print.
+- +4 FAQs: tempo para perder 1 kg (≈ 37 h de caminhada moderada para 70 kg, conta líquida com 7.700 kcal/kg, MET 3,8 de lib/caminhada.ts); 30 minutos todos os dias (≈ 720 kcal/semana, teto ≈ 0,4 kg/mês; 1 h ≈ 0,8); minutos por dia para perder barriga; o que é o 12-3-30 (mesma descrição do FAQ já publicado em outro artigo). `updatedAt` 2026-10-14.
+- Fora: músculos da esteira, jejum (já respondido), melhor horário, "como fica o corpo", caminhada x academia (há artigos próprios).
