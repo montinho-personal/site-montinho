@@ -790,3 +790,11 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - +5 FAQs, números calculados pela própria lib (70 kg, metade das músicas com salto, Compêndio 2011): 10/20/40 min (≈ 75/150/300 kcal); caminhada ou zumba (1 h ≈ 450 vs ≈ 280 kcal de caminhada moderada, MET 3,8 de lib/caminhada.ts; ≈ 1 h 37 min para igualar); quantas vezes por semana (150 min da OMS, como no elíptico); zumba ganha massa muscular; zumba para iniciantes e problema de coluna (sem salto ≈ 370 kcal/h; orientação de procurar médico ou fisioterapeuta).
 - Fora: origem da zumba, quem pode dar aula, Tae Bo, ballet fitness, boxe x academia, desinchar 3 kg, exercícios para secar barriga. Dança 1 h por dia e "caminhar ou dançar" cabem na calculadora de dança.
 - `zumba-test` já reprovava o título (64 caracteres, limite 58) antes desta mudança; proposta enviada ao Montinho.
+
+## 2026-10-14 — Título da calculadora de zumba (aprovado pelo Montinho)
+
+| Página | Campo | ATUAL | NOVO |
+|---|---|---|---|
+| /ferramentas/calculadora-calorias-zumba | título | Calculadora de Zumba: Calorias por Aula, 30, 45 Minutos e 1 Hora (64) | Zumba Queima Quantas Calorias? Por Aula, 30 Min e 1 Hora (56) |
+
+- Motivo: `zumba-test` reprovava (limite 58); usa a busca principal do export ("zumba queima quantas calorias", 40/mês), no mesmo padrão de elíptico e escada.
