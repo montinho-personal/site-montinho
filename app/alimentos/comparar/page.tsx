@@ -119,6 +119,17 @@ export default function CompararPage() {
             E nenhum alimento aqui é chamado de melhor ou pior. A tabela mostra o que cada um contém na quantidade que
             você escolheu — o que fazer com essa informação depende do resto do seu dia, não de um ranking.
           </p>
+          <div className="mt-8 border border-white/15 p-5">
+            <p className="text-gray-200 mb-4">
+              Quer descobrir direto quanto de um alimento equivale ao outro, sem ajustar as gramas na mão?
+            </p>
+            <Link
+              href="/ferramentas/substituicao-de-alimentos"
+              className="border border-white/25 text-gray-200 px-6 py-3.5 text-[15px] font-medium min-h-[52px] inline-flex items-center hover:border-white/50 transition-colors"
+            >
+              Calcular a equivalência →
+            </Link>
+          </div>
         </div>
       </section>
 

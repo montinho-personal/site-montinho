@@ -549,6 +549,19 @@ export type AnalyticsEvent =
   | "food_quantity_change"
   | "food_nutrients_expand"
   | "food_compare_open"
+  /**
+   * Troca Certa (/ferramentas/substituicao-de-alimentos). Vão só o critério,
+   * o GRUPO do alimento e contagens — nunca o alimento nem a quantidade:
+   * a ferramenta mede comportamento de produto, não o prato de ninguém.
+   */
+  | "food_swap_open"
+  | "food_swap_source_selected"
+  | "food_swap_criterion_selected"
+  | "food_swap_results_generated"
+  | "food_swap_more_results"
+  | "food_swap_direct_comparison"
+  | "food_swap_print"
+  | "food_swap_fitchef_clicked"
   | "food_portion_select"
   | "food_protein_target_change"
   /* O critério é categoria de produto, não dado da pessoa — pode ir. */

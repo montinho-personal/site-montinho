@@ -9,6 +9,7 @@ import { formataNumero, formataValor, escalaValor } from "@/lib/alimentos/escala
 import SeletorQuantidade from "@/components/alimentos/SeletorQuantidade";
 import QuantoPreciso from "@/components/alimentos/QuantoPreciso";
 import LinkComparar from "@/components/alimentos/LinkComparar";
+import LinkTroca from "@/components/alimentos/LinkTroca";
 import LinksCalculadoras from "@/components/alimentos/LinksCalculadoras";
 
 /**
@@ -223,6 +224,23 @@ export default async function AlimentoPage({ params }: { params: Promise<{ slug:
             >
               Comparar {nomeNatural(a.nome).toLowerCase()} com outro →
             </LinkComparar>
+          </div>
+
+          <div>
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-3" style={h}>
+              Quer trocar este alimento?
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-5">
+              Veja quanto de outros alimentos fornece quantidade parecida de carboidrato, proteína ou calorias que{" "}
+              {nomeNatural(a.nome).toLowerCase()}.
+            </p>
+            <LinkTroca
+              slug={a.slug}
+              placement="pagina-alimento"
+              className="border border-white/25 text-gray-200 px-6 py-3.5 text-[15px] font-medium min-h-[52px] inline-flex items-center hover:border-white/50 transition-colors"
+            >
+              Ver substituições →
+            </LinkTroca>
           </div>
 
           {relacionados.length > 0 && (
