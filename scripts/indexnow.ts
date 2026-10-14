@@ -3,7 +3,7 @@
  *
  *   npx tsx scripts/indexnow.ts <commit-antes> [commit-depois=HEAD] [--dry]
  *
- * Rodar depois que o deploy estiver no ar (passo de verificação do fluxo).
+ * Roda sozinho no GitHub Actions a cada push para main (.github/workflows/indexnow.yml).
  * Só entram URLs que estão no sitemap; o resto é descartado.
  */
 import { execFileSync } from "child_process";

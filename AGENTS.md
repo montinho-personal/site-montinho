@@ -194,13 +194,11 @@ que foi conferido, o que foi corrigido e os limites. Os totais precisam
 bater com uma consulta direta à fonte. Relatório sem auditoria não é
 enviado, e nada é chamado de "confirmado" sem ter sido checado na fonte.
 
-# Depois de cada deploy: avisar o Bing (IndexNow)
+# Aviso ao Bing (IndexNow) é automático
 
-Quando a mudança estiver no ar, rode
-
-    npx tsx scripts/indexnow.ts <commit-de-main-antes> <commit-de-main-depois>
-
+A cada push para `main`, o workflow `.github/workflows/indexnow.yml` espera
+o deploy subir e roda `scripts/indexnow.ts` com o commit anterior e o novo.
 O script pega só as páginas que mudaram (artigo pelo trecho alterado em
 `lib/*.ts`, página pelo `app/**/page.tsx`), filtra pelo sitemap e avisa o
 Bing, que alimenta a busca do ChatGPT. Mudança de componente não gera aviso.
-Resposta 200 ou 202 é sucesso.
+Para conferir, veja a aba Actions do repositório (resposta 200 ou 202).
