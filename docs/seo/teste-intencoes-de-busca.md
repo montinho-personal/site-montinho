@@ -748,3 +748,10 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - +4 FAQs: crucifixo no crossover ou peck deck; crucifixo reto ou inclinado; sentir o ombro no crucifixo; crucifixo ou supino. `updatedAt` 2026-10-14.
 - Fora: tudo de "crossover" de áudio/som automotivo (modelos de IA confundiram o termo), cruz/crucifixo religioso (deriva do PAA), preço de crossover para academia, crucifixo inverso e agachamento sissy (pauta).
 - `seo-serp-test` reprovava título (65) e descrição (165) antes desta mudança; proposta enviada ao Montinho, não aplicada.
+
+## 2026-10-14 — treino-upper-lower-superior-inferior (ATP + print da 1ª página)
+
+- Export do Answer the Public + print anônimo de "treino upper lower" (2,4 mil/mês). 1ª página: Hipertrofia.org, Smart Fit, Reddit, Hevy, fnac (ULPPL). O artigo já cobria o que é, 2/3/4/5 dias, fichas, masculino/feminino, hipertrofia e x push pull legs.
+- +3 FAQs: PPL upper lower / ULPPL ("treino ppl upper lower" 590/mês, "push pull legs upper lower" 320/mês); quantas séries (cerca de 10 séries por músculo por semana — Schoenfeld 2017, já usado em lib/treino/volume.ts); upper lower ou ABC. `updatedAt` 2026-10-14.
+- Fora: planilha/pdf (download), "pacholok" (nome de outro profissional), drop set, 4x10 x 3x12, pilares do CrossFit (deriva do PAA), apps.
+- `seo-serp-test` já reprovava a descrição (171 caracteres; abertura igual ao título); proposta enviada ao Montinho.
