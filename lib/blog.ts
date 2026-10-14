@@ -74615,7 +74615,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
   {
     slug: "quantos-quilos-perder-ate-fim-do-ano",
     title: "Quantos Quilos Dá para Perder até o Fim do Ano?",
-    metaTitle: "Quantos Quilos Dá para Perder até o Fim do Ano com Saúde",
+    metaTitle: "Quantos Quilos Dá para Perder até o Fim do Ano? Calcule",
     metaDescription: "Quanto dá para perder por mês sem sacrificar músculo, a meta realista pelo seu ponto de partida e o plano para as semanas que ainda restam até dezembro.",
     excerpt: "Antes de definir quanto quer perder, você precisa saber quanto é possível perder com saúde — e o que realmente vai aparecer no espelho ao final do processo.",
     category: "Emagrecimento",
