@@ -814,3 +814,13 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - +7 FAQs (o artigo tinha 4), números de `lib/meta.ts` (0,5% a 1% do peso por semana, composto; 10 semanas de meados de outubro ao Natal) e 7.700 kcal/kg: por mês (80 kg: 1,6–3,2; 100 kg: 2–3,9), até o Natal (80 kg: 3,9–7,6; 100 kg: 4,9–9,6), 10 kg até dezembro, 5/7/10 kg em 1 mês (déficit de 1.375/1.925/2.750 kcal/dia), 2 e 4 kg por semana, 1 kg em um dia, 20 kg em um ano. `updatedAt` 2026-10-14.
 - Fora: Mounjaro (dose é decisão médica), jejum de 7 dias e jejum intermitente, cardápios, gestante, doenças que emagrecem, "xixi elimina gordura", "70 kg é obeso" (depende da altura; há calculadora de IMC).
 - Título: proposta enviada ao Montinho (CTR 0,2% na posição 5,5 — a visão por IA responde o número, e o título não diz que há calculadora).
+
+## 2026-10-14 — polichinelo-emagrece (ATP + print da 1ª página)
+
+- GSC (12/07–14/10): 9.581 impressões, 14 cliques, posição 7,7. Print (o card do Search Console no próprio Google): "polichinelo emagrece" 513 impressões em 90 dias, posição 9,4. 1ª página: Smart Fit, Tua Saúde e TotalPass na visão por IA; Treino Mestre. PAA: minutos para emagrecer, polichinelo todo dia, perde barriga, quantos para 1 kg.
+- Export ATP: "polichinelo emagrece" 2,4 mil/mês; "a barriga" 480; "fazer polichinelo emagrece" 260; "quantos quilos por semana" 140; "sem impacto" 30; "os braços" 30; "qual parte do corpo" 20; "mais que caminhada". O XLSX de "pessoas também perguntam" derivou para esteira, jump e corda (fora).
+- **Dado corrigido:** o FAQ dizia 8 a 12 kcal/min e "500 polichinelos = 150 a 200 kcal"; o corpo dizia "cerca de 10 kcal/min", "500 ≈ 90" e "100 sobe para 30 a 40 com pausas" (sem fonte). A calculadora do site (`lib/polichinelo.ts`, Compêndio 2011) dá, para 70 kg, 6,7 kcal/min no moderado e 9,2 no intenso; 500 ≈ 75 kcal. Texto e FAQ alinhados à calculadora; corda corrigida para 11–15 kcal/min (`lib/corda.ts`, 8,8 a 12,3 METs).
+- +5 FAQs: barriga/braços/pernas (sem perda localizada), quilos por semana (500/dia ≈ 525 kcal ≈ 68 g), mais que caminhada (30 min a 3,5 METs ≈ 130 kcal ≈ 19 min / 860 polichinelos), sem impacto (ritmo leve ≈ 4 kcal/min), minutos e 1 kg (≈ 19 h / 51 mil, teórico). `updatedAt` 2026-10-14.
+- Fora: rosto, costas, piscina, jump, polichinelo e agachamento.
+- Canibalização vista: 3 páginas no mesmo grupo (este artigo responde "emagrece?"; `polichinelo-queima-quantas-calorias` e a calculadora respondem calorias/quantidade). O FAQ novo responde a pergunta e manda para a conta, sem duplicar a tabela.
+- Título: proposta enviada ao Montinho.
