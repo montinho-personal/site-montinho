@@ -67,6 +67,13 @@ export const LINKS: Record<string, LinkControlado> = {
    * o número e chamou.
    */
   "wa-cerveja": { destino: "/blog/cerveja-engorda", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "cerveja_engorda", tipo: "social" },
+  /**
+   * Simulador do Fim de Semana: o vídeo "pra onde foi o seu déficit?".
+   * Um código por rede, pela mesma razão do par da cerveja; o utm_content
+   * nomeia a ferramenta, e não um artigo.
+   */
+  "ig-fds": { destino: "/ferramentas/simulador-fim-de-semana", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "stories", utm_content: "simulador_fds", tipo: "social" },
+  "wa-fds": { destino: "/ferramentas/simulador-fim-de-semana", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "simulador_fds", tipo: "social" },
 };
 
 export function urlDoLink(slug: string, extra: Record<string, string> = {}): string | null {
