@@ -878,3 +878,4 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Motivo dormir: "deitar depois de comer engorda" (127 impressões no GSC) não estava no título; 0 cliques em 1.493 impressões.
 - Motivo 1 kg: o título e a visão por IA já entregavam o número (3 cliques em 3.674 impressões); o artigo embute a Calculadora de Déficit.
 - Sem `updatedAt`.
+- Correção no mesmo dia: o PR #896 foi publicado antes de o `seo-serp-test` terminar e deixou duas travas do próprio teste desatualizadas. O título de 1 kg de gordura estava pinado em `scripts/experimento-titulos.ts` (experimento encerrado em 21/09; pin atualizado, com o motivo) e `dormir-depois-do-almoco-engorda` continuava na lista de "cauda vaga pendente" (removido, título já reescrito). O teste volta às 6 falhas que já existiam.

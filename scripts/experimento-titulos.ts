@@ -103,7 +103,13 @@ export const ABERTO: ArtigoDoExperimento[] = [
   {
     slug: "quantas-calorias-tem-1kg-de-gordura",
     base: { impressoes: 1749, cliques: 1, posicao: 8.6 },
-    titulo: "Quantas Calorias Tem 1 kg de Gordura? São 7.700 kcal",
+    /*
+     * Trocado em 14/10/2026, com o experimento já encerrado, de "São 7.700
+     * kcal" para "Calcule o Déficit": 3 cliques em 3.674 impressões, com a
+     * visão por IA do Google mostrando o mesmo número (registro em
+     * docs/seo/teste-intencoes-de-busca.md).
+     */
+    titulo: "Quantas Calorias Tem 1 kg de Gordura? Calcule o Déficit",
   },
   {
     slug: "quanto-tempo-de-caminhada-por-dia",
