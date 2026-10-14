@@ -10696,7 +10696,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "A creatina é segura, barata e amplamente estudada. Para quem usa Mounjaro e treina em déficit calórico, ela pode ser a diferença entre preservar ou perder massa muscular. Veja os fatos.",
     category: "Saúde",
     date: "2026-06-26",
-    updatedAt: "2026-07-29",
+    updatedAt: "2026-10-14",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -10733,6 +10733,21 @@ RIR 3 = parou com 3 reps sobrando.</p>
         question: "Creatina faz mal para os rins?",
         answer:
           "Em pessoas sem doença renal preexistente, a creatina nas doses recomendadas (3-5 g/dia) é segura para os rins, conforme extensamente documentado na literatura científica. Se você tem histórico de problema renal, consulte seu médico antes de usar.",
+      },
+      {
+        question: "Creatina atrapalha o efeito do Mounjaro?",
+        answer:
+          "O Mounjaro age no apetite e no controle da glicose; a creatina age no músculo, ajudando na força durante o treino. O que costuma confundir é a balança: nas primeiras semanas a creatina puxa água para dentro do músculo, e o peso pode subir um pouco ou parar de cair por um tempo, sem que seja gordura. Por isso vale acompanhar também medidas e roupas. Quem decide se a creatina entra no seu caso é o médico que acompanha o tratamento.",
+      },
+      {
+        question: "Qual a melhor creatina para quem toma Mounjaro ou tirzepatida?",
+        answer:
+          "Não existe creatina específica para quem usa Mounjaro. A forma mais estudada é a creatina monohidratada, a mesma usada por qualquer pessoa, nas doses de 3 a 5 g por dia. Versões mais caras ou com outros nomes não mostraram vantagem sobre ela.",
+      },
+      {
+        question: "Quem toma Mounjaro pode tomar whey e creatina juntos?",
+        answer:
+          "Os dois têm papéis diferentes: o whey ajuda a bater a meta de proteína do dia, que costuma ficar baixa quando o apetite cai; a creatina ajuda na força do treino. Tomar os dois no mesmo dia é comum. O que mais protege o músculo durante o emagrecimento continua sendo a musculação com carga que sobe e proteína suficiente, com o aval do médico e do nutricionista que acompanham você.",
       },
     ],
     faqSchema: [

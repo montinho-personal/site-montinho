@@ -761,3 +761,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Export do Answer the Public + print anônimo de "quanto tempo de esteira para emagrecer" (590/mês). 1ª página: UOL, Cia Athletica, sportlife, O Globo, AZON; a visão por IA diz 30 a 60 min, 3 a 5x por semana, e cita o 12-3-30. O artigo não apareceu no trecho visível do print.
 - +4 FAQs: tempo para perder 1 kg (≈ 37 h de caminhada moderada para 70 kg, conta líquida com 7.700 kcal/kg, MET 3,8 de lib/caminhada.ts); 30 minutos todos os dias (≈ 720 kcal/semana, teto ≈ 0,4 kg/mês; 1 h ≈ 0,8); minutos por dia para perder barriga; o que é o 12-3-30 (mesma descrição do FAQ já publicado em outro artigo). `updatedAt` 2026-10-14.
 - Fora: músculos da esteira, jejum (já respondido), melhor horário, "como fica o corpo", caminhada x academia (há artigos próprios).
+
+## 2026-10-14 — creatina-para-quem-usa-mounjaro (modelos de IA do ATP + prints)
+
+- Chegou só o arquivo de modelos de IA de "creatina mounjaro" (os outros dois anexos eram de novo os da esteira) + prints. 1ª página dominada por Instagram de médicos e Reddit; o artigo não apareceu no trecho visível.
+- +3 FAQs: creatina atrapalha o Mounjaro (autocompletar "creatina atrapalha mounjaro"; resposta foca na retenção de água e na decisão do médico, sem afirmar interação); melhor creatina para quem toma Mounjaro/tirzepatida (monohidratada, como o próprio artigo já diz); whey e creatina juntos. `updatedAt` 2026-10-14.
+- Fora: "o que não pode tomar junto com Mounjaro" (pergunta médica), colágeno, "o que a creatina faz no rosto", marcas.
