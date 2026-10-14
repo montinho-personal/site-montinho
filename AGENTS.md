@@ -193,3 +193,14 @@ enviado ao Montinho, e sai com um quadro "Auditoria dos dados" dizendo o
 que foi conferido, o que foi corrigido e os limites. Os totais precisam
 bater com uma consulta direta à fonte. Relatório sem auditoria não é
 enviado, e nada é chamado de "confirmado" sem ter sido checado na fonte.
+
+# Depois de cada deploy: avisar o Bing (IndexNow)
+
+Quando a mudança estiver no ar, rode
+
+    npx tsx scripts/indexnow.ts <commit-de-main-antes> <commit-de-main-depois>
+
+O script pega só as páginas que mudaram (artigo pelo trecho alterado em
+`lib/*.ts`, página pelo `app/**/page.tsx`), filtra pelo sitemap e avisa o
+Bing, que alimenta a busca do ChatGPT. Mudança de componente não gera aviso.
+Resposta 200 ou 202 é sucesso.
