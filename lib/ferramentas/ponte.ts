@@ -41,6 +41,12 @@ export const PONTE = {
    */
   alimento: "montinho:ponte:alimento",
   /**
+   * Página do alimento / Comparador → Troca Certa: o slug do alimento que a
+   * pessoa quer trocar. Chave própria, para o comparador não consumir o que
+   * era da calculadora de substituição (e vice-versa).
+   */
+  troca: "montinho:ponte:troca",
+  /**
    * TMB/TDEE → Déficit: os cinco dados do formulário, como JSON.
    *
    * A alternativa — passar só o TDEE pronto — seria um número opaco que o

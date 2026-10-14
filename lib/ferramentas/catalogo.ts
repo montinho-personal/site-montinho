@@ -362,6 +362,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     icone: "tabela",
     tags: ["tabela taco", "quantas calorias tem", "quanta proteina tem", "banana", "feijao", "arroz", "ovo", "frango", "comparar alimentos", "valor nutricional", "informacao nutricional"],
   },
+  {
+    id: "substituicao-alimentos",
+    href: "/ferramentas/substituicao-de-alimentos",
+    nome: "Troca Certa: Substituição de Alimentos",
+    resultado: "Descubra quanto de outro alimento usar no lugar, mantendo carboidratos, proteína ou calorias.",
+    acao: "Calcular a troca",
+    tempo: "30 segundos",
+    categoria: "alimentacao",
+    icone: "talheres",
+    tags: ["substituicao de alimentos", "lista de substituicao de alimentos", "tabela de substituicao", "equivalencia de alimentos", "trocar arroz por batata", "substituir arroz", "substituir frango por ovo", "quantos ovos equivalem a 100g de frango", "quanto de batata substitui arroz", "troca de alimentos", "trocar alimento na dieta"],
+    selo: "novo",
+  },
 
   /* ── Suplementação ────────────────────────────────────────────────── */
   {

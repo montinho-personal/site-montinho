@@ -879,3 +879,14 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Motivo 1 kg: o título e a visão por IA já entregavam o número (3 cliques em 3.674 impressões); o artigo embute a Calculadora de Déficit.
 - Sem `updatedAt`.
 - Correção no mesmo dia: o PR #896 foi publicado antes de o `seo-serp-test` terminar e deixou duas travas do próprio teste desatualizadas. O título de 1 kg de gordura estava pinado em `scripts/experimento-titulos.ts` (experimento encerrado em 21/09; pin atualizado, com o motivo) e `dormir-depois-do-almoco-engorda` continuava na lista de "cauda vaga pendente" (removido, título já reescrito). O teste volta às 6 falhas que já existiam.
+
+## 2026-10-14 — NOVA: /ferramentas/substituicao-de-alimentos (Troca Certa)
+
+- Pedido do Montinho (briefing "Troca Certa"). Pesquisa: ATP + prints de "substituição de alimentos", "substituir arroz por", "substituir frango por" e print de "tabela de substituição de alimentos".
+- O que a pesquisa mudou no produto:
+  - A busca dominante é **"lista de substituição de alimentos"** (590/mês); "lista … taco" 170, "tabela … pdf" 140, "para imprimir" 50, "calculadora" 70. A página entrega a calculadora E a lista pronta por grupo (com medida caseira), imprimível/salvável em PDF pelo navegador. Título: "Lista de Substituição de Alimentos: Calculadora e Tabela"; H1: "Calculadora de Substituição de Alimentos".
+  - Arroz: quinoa lidera (390/mês), mas **não está na TACO** — a página diz isso em vez de inventar número. Depois batata (110), cuscuz, batata-doce (70), macarrão, mandioca; "emagrece" aparece em várias (FAQ de cuscuz e couve-flor com a conta).
+  - Frango: "100 g de frango por ovo" e variações em gramas (50, 60, 120, 130, 150) e atum. A resposta sai em ovos (unidades da POF).
+- Motor: `lib/alimentos/equivalencia.ts` (regra de três sobre a TACO, grupos de troca curados por slug, estado cru/pronto, arredondamento 1/5/10 g, limites por grupo, medida caseira da POF só quando cai a até 15%, avisos de diferença nos outros macros, recusas para "não é fonte"). Testes: `scripts/equivalencia-test.ts`.
+- Integrações: catálogo (alimenta também o Pergunte ao Montinho), sitemap, botão "Ver substituições" em toda página de alimento (ponte por sessionStorage, nada na URL), chamada no Comparar Alimentos, CTA final para o FitChef. Eventos GA4 `food_swap_*` só com critério, grupo e contagens.
+- Fora desta fase: integrar o motor ao FitChef (ele tem base e porções próprias; mudar ali pode quebrar cardápios — fica para fase 2), "mais parecido possível", filtros vegetariano/sem lactose, páginas editoriais de pares (/substituir/arroz-por-batata-doce só se houver demanda medida).
