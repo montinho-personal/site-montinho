@@ -27,6 +27,14 @@ export const LINKS: Record<string, LinkControlado> = {
   // Link controlado, e não a URL direta, porque é a única forma de saber
   // quantos abriram: essa mensagem sai pelo WhatsApp e o referrer não chega.
   "historia-lead": { destino: "/minha-historia", utm_source: "crm", utm_medium: "whatsapp", utm_campaign: "proposta_parada", utm_content: "historia", tipo: "other" },
+  /**
+   * Post no grupo de WhatsApp do prédio onde o Montinho mora. Aponta para a
+   * história, que é o argumento do post, e não para a home. O utm_source
+   * "condominio" existe como fonte no CRM; sem ele, quem clicasse cairia em
+   * "WhatsApp direto", que é quem já tinha o número — e o grupo sumiria da
+   * atribuição.
+   */
+  "predio": { destino: "/minha-historia", utm_source: "condominio", utm_medium: "whatsapp_grupo", utm_campaign: "moradores", utm_content: "historia", tipo: "other" },
   "gbp": { destino: "/", utm_source: "google", utm_medium: "perfil_empresa", utm_campaign: "perfil", utm_content: "botao_site", tipo: "other" },
   /**
    * Story que aponta para um artigo específico.
