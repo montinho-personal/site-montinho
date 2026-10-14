@@ -907,3 +907,7 @@ Três auditorias em paralelo. Corrigido:
 | /ferramentas/substituicao-de-alimentos | H1 | Calculadora de Substituição de Alimentos | Lista de Substituição de Alimentos: Calculadora e Tabela |
 
 - Motivo: "lista de substituição de alimentos" é a busca principal do ATP (590/mês) e só estava no `<title>`. Sem `updatedAt` (ferramenta).
+
+## 2026-10-14 — Links rastreados do vídeo do Substituidor
+
+- `/l/yt-sub`, `/l/ig-sub` e `/l/wa-sub` → `/ferramentas/substituidor-de-exercicios`, para medir o vídeo "O aparelho está ocupado. E agora?" por canal (YouTube descrição, Instagram Reels, status do WhatsApp).
