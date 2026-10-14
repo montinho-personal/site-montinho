@@ -767,3 +767,13 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Chegou só o arquivo de modelos de IA de "creatina mounjaro" (os outros dois anexos eram de novo os da esteira) + prints. 1ª página dominada por Instagram de médicos e Reddit; o artigo não apareceu no trecho visível.
 - +3 FAQs: creatina atrapalha o Mounjaro (autocompletar "creatina atrapalha mounjaro"; resposta foca na retenção de água e na decisão do médico, sem afirmar interação); melhor creatina para quem toma Mounjaro/tirzepatida (monohidratada, como o próprio artigo já diz); whey e creatina juntos. `updatedAt` 2026-10-14.
 - Fora: "o que não pode tomar junto com Mounjaro" (pergunta médica), colágeno, "o que a creatina faz no rosto", marcas.
+
+## 2026-10-14 — Títulos e descrições: crossover e upper lower (aprovados pelo Montinho)
+
+| Página | Campo | ATUAL | NOVO |
+|---|---|---|---|
+| /blog/crossover-vs-crucifixo | título | Crossover ou Crucifixo: Qual o Melhor? (Polia Alta, Média, Baixa) (65) | Crossover ou Crucifixo: Qual o Melhor? Halteres ou Máquina (58) |
+| /blog/crossover-vs-crucifixo | descrição | Crossover ou crucifixo com halteres ou na máquina: qual o melhor para o peito, o que cada polia (alta, média, baixa) trabalha e qual exercício substitui o crossover. (165) | Crossover no cabo ou crucifixo com halteres ou na máquina: qual o melhor para o peito, o que muda na polia alta, média e baixa e o que substitui o crossover. (157) |
+| /blog/treino-upper-lower-superior-inferior | descrição | Treino upper lower: o que é, como dividir em 2, 3, 4 ou 5 dias, fichas prontas, versão masculina e feminina, se é bom para hipertrofia e como se compara ao push pull legs. (171) | Fichas prontas de 2 a 5 dias, versão masculina e feminina, quantas séries fazer e como juntar com o push pull legs (ULPPL) treinando cada músculo 2x na semana. (159) |
+
+- Motivo: `seo-serp-test` reprovava os três (limites 60/160 e abertura igual ao título); "máquina" é a busca derivada com mais volume e ULPPL a maior relacionada do upper lower. Sem `updatedAt` (título e descrição não mudam o conteúdo).
