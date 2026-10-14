@@ -100910,7 +100910,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "O cochilo pós-almoço não engorda por si — quem decide isso é o balanço calórico do dia. Entenda o que a ciência diz sobre a sesta, quando ela ajuda e os cuidados reais, como o refluxo.",
     category: "Saúde",
     date: "2026-07-28",
-    updatedAt: "2026-08-02",
+    updatedAt: "2026-10-14",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["sono", "cochilo", "metabolismo", "emagrecimento", "recuperação"],
@@ -100944,6 +100944,36 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
           "Cochilar ajuda na recuperação muscular?",
         answer:
           "Ajuda. Sestas curtas complementam o sono noturno, melhoram alerta e reduzem estresse, e o sono é quando boa parte da recuperação e da liberação de hormônio do crescimento acontece. Atletas profissionais usam cochilos programados justamente por isso.",
+      },
+      {
+        question: "Deitar depois de comer engorda?",
+        answer:
+          "Não. Deitar não muda quantas calorias a refeição tem nem quanto o corpo gasta no dia. O que deitar logo depois de comer pode causar é azia e refluxo, por isso vale esperar um pouco antes de deitar, principalmente depois de uma refeição grande.",
+      },
+      {
+        question: "Dormir 2 horas depois do almoço engorda?",
+        answer:
+          "Por si só, não: duas horas dormindo gastam quase o mesmo que duas horas sentado. O problema de um cochilo tão longo é outro: ele costuma atrapalhar o sono da noite, e noites mal dormidas aumentam a fome no dia seguinte. Se você precisa de duas horas todo dia, vale olhar como está dormindo à noite.",
+      },
+      {
+        question: "Dormir depois do almoço engorda ou emagrece?",
+        answer:
+          "Nenhum dos dois. O cochilo não acrescenta calorias e quase não muda o gasto do dia. Quem emagrece ou engorda é o balanço entre o que você come e o que gasta ao longo da semana. Um cochilo curto pode ajudar de forma indireta, com mais disposição para treinar e menos beliscos por cansaço.",
+      },
+      {
+        question: "Como se chama dormir depois do almoço?",
+        answer:
+          "Sesta. A palavra vem do costume de descansar na hora mais quente do dia, comum em países como a Espanha. Também se diz cochilo da tarde ou soneca depois do almoço.",
+      },
+      {
+        question: "Sono depois do almoço é sinal de diabetes?",
+        answer:
+          "Um pouco de sono depois de comer é normal e acontece com quase todo mundo, principalmente depois de refeições grandes. Sonolência forte todo dia, junto com muita sede, vontade de urinar com frequência ou perda de peso sem motivo, merece uma consulta e exames com o médico.",
+      },
+      {
+        question: "Devo dormir ou caminhar depois do almoço?",
+        answer:
+          "As duas opções funcionam e não competem. Uma caminhada leve de 10 a 15 minutos ajuda a glicose depois da refeição e soma passos ao dia. Um cochilo curto, de até uns 25 minutos, ajuda o alerta da tarde. Se der, caminhe um pouco e depois cochile.",
       },
     ],
     content: `
@@ -101892,7 +101922,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "1kg de gordura corporal armazena cerca de 7.700 kcal. Esse número é uma régua poderosa para planejar sua perda de peso — desde que você entenda onde a conta funciona e onde o corpo insiste em não ser calculadora.",
     category: "Emagrecimento",
     date: "2026-07-30",
-    updatedAt: "2026-08-12",
+    updatedAt: "2026-10-14",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["calorias", "gordura corporal", "déficit calórico", "emagrecimento", "matemática do emagrecimento"],
@@ -101926,6 +101956,36 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
           "1kg de gordura e 1kg de músculo têm as mesmas calorias?",
         answer:
           "Não. O músculo tem muito mais água e rende bem menos calorias por quilo do que o tecido adiposo. Por isso perder massa magra derruba o peso rápido, mas piora a composição corporal — proteína adequada e musculação protegem o músculo no déficit.",
+      },
+      {
+        question: "Quantos quilos são 500 calorias? E 1.000 calorias?",
+        answer:
+          "Pela conta de 7.700 kcal por quilo de gordura, 500 calorias equivalem a cerca de 65 g de gordura, e 1.000 calorias, a cerca de 130 g. Por isso 1.000 calorias não são 1 kg: seria preciso quase oito vezes mais.",
+      },
+      {
+        question: "O que equivale a 7.000 calorias?",
+        answer:
+          "A pouco menos de 1 kg de gordura corporal, cerca de 910 g. Em déficit de 500 kcal por dia, 7.000 calorias levam duas semanas para se acumular.",
+      },
+      {
+        question: "Quantas calorias para perder 5 kg?",
+        answer:
+          "Cerca de 38.500 kcal de déficit, somando os 7.700 de cada quilo. Com 500 kcal a menos por dia, isso leva perto de 11 semanas no papel. Na prática demora um pouco mais, porque o corpo mais leve gasta menos e se adapta ao déficit.",
+      },
+      {
+        question: "Quanto engorda 100 calorias a mais por dia?",
+        answer:
+          "No papel, 100 kcal a mais todo dia somam 36.500 kcal em um ano, perto de 4,7 kg de gordura. Na prática o ganho é menor, porque o corpo mais pesado também gasta mais. Mesmo assim, é assim que o peso costuma subir: aos poucos, sem ninguém perceber.",
+      },
+      {
+        question: "O músculo pesa mais que a gordura?",
+        answer:
+          "Um quilo é um quilo dos dois. A diferença é o espaço: o músculo é mais denso e ocupa menos volume que a mesma massa de gordura. Por isso duas pessoas com o mesmo peso podem ter corpos bem diferentes, e a balança parada pode esconder perda de gordura com ganho de músculo.",
+      },
+      {
+        question: "1 kg de gordura visceral tem quantas calorias?",
+        answer:
+          "A mesma conta, cerca de 7.700 kcal. Gordura visceral, a que fica em volta dos órgãos, e gordura embaixo da pele guardam energia do mesmo jeito. E nenhum exercício escolhe de qual delas a gordura sai.",
       },
     ],
     content: `
