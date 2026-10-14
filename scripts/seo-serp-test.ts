@@ -561,7 +561,6 @@ const CAUDA_VAGA_PENDENTE = new Set([
   "quantos-ovos-por-dia",
   "agua-com-limao-em-jejum",
   "refrigerante-zero-engorda",
-  "dormir-depois-do-almoco-engorda",
   "dieta-detox-funciona",
   "dieta-sem-gluten-emagrece",
   "batata-doce-emagrece",
