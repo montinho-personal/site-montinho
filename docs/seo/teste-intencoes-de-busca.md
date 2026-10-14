@@ -899,3 +899,11 @@ Três auditorias em paralelo. Corrigido:
 - **Código/acessibilidade:** critério sugerido não depende do anterior; quantidade digitada não é sobrescrita; foco gerenciado; região viva curta; quantidade apagada mantém a última conta; busca só com 2+ letras; bônus de curadoria; toque ≥ 44 px; contraste; impressão sem páginas em branco; evento de abertura não duplicado.
 - **Página:** nomes de exibição com o nome da TACO em letra pequena; apelidos e ordem da busca ("frango" → peito grelhado; "arroz" → arroz branco); dica para "macarrão cozido"; "kcal de calorias" corrigido; rolagem até a calculadora ao vir da página do alimento; links das tabelas para as páginas de alimento; 4 artigos relacionados.
 - Pendente (aprovação): título/H1 com "lista de substituição de alimentos". Não feito: botão flutuante do WhatsApp cobre parte da tela no celular (componente do site inteiro); payload ~33 KB gzip (mesma ordem do comparador).
+
+## 2026-10-14 — H1 da Troca Certa (aprovado pelo Montinho)
+
+| Página | Campo | ATUAL | NOVO |
+|---|---|---|---|
+| /ferramentas/substituicao-de-alimentos | H1 | Calculadora de Substituição de Alimentos | Lista de Substituição de Alimentos: Calculadora e Tabela |
+
+- Motivo: "lista de substituição de alimentos" é a busca principal do ATP (590/mês) e só estava no `<title>`. Sem `updatedAt` (ferramenta).
