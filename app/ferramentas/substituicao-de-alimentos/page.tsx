@@ -249,7 +249,7 @@ export default function SubstituicaoDeAlimentosPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-5" style={{ color: "#BA9E50" }}>Troca Certa · grátis · sem cadastro</p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4" style={h}>
-            Calculadora de Substituição de Alimentos
+            Lista de Substituição de Alimentos: Calculadora e Tabela
           </h1>
           <Compartilhar contexto="tool" titulo="Troca Certa: Calculadora de Substituição de Alimentos" caminho={CAMINHO} local="tool_top" ferramenta="substituicao-alimentos" aparencia="discreto" className="mb-4" />
           <p className="text-gray-300 text-lg leading-relaxed">
