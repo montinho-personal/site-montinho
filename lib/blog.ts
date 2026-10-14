@@ -12004,7 +12004,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       {
         question: "A Retatrutida causa mais perda muscular do que o Mounjaro?",
         answer:
-          "Os dados comparativos diretos ainda são limitados, mas como a Retatrutida provoca uma perda de peso mais intensa (cerca de 24% em 48 semanas vs ~22% do Mounjaro), o risco de perda muscular proporcional é potencialmente maior, especialmente sem estratégias de preservação.",
+          "Não há estudo comparando as duas diretamente. O que existe é um subestudo do ensaio de fase 2, publicado na The Lancet Diabetes & Endocrinology em 2025, com pessoas com diabetes tipo 2: por DEXA, a perda de gordura superou a de massa magra, numa proporção parecida com a de outros tratamentos para emagrecer. Como a retatrutida tira mais peso no total, a massa magra perdida em quilos pode ser maior, e o treino de força continua sendo o que mais protege o músculo.",
       },
       {
         question: "Existe alguma forma de saber se estou perdendo músculo ou gordura?",
@@ -12076,6 +12076,16 @@ RIR 3 = parou com 3 reps sobrando.</p>
         answer:
           "Consegue, com treino de força e proteína suficiente, como qualquer pessoa. A musculação também ajuda o músculo a usar melhor a glicose. Quem usa insulina ou remédio que baixa o açúcar precisa combinar com o médico como ajustar a dose e o que comer perto do treino, para evitar hipoglicemia.",
       },
+      {
+        question: "A retatrutida tem efeito rebote?",
+        answer:
+          "Nos remédios da mesma família, parar o tratamento costuma trazer parte do peso de volta. Na extensão do estudo STEP 1, com semaglutida, quem parou recuperou cerca de dois terços do peso perdido em um ano. Quem chega ao fim do tratamento com mais músculo e com o hábito de treinar e comer proteína costuma segurar melhor o resultado. A decisão de parar ou reduzir a dose é do médico.",
+      },
+      {
+        question: "Retatrutida perde gordura localizada?",
+        answer:
+          "Não escolhe o lugar. O remédio reduz a gordura do corpo como um todo, e de onde ela sai primeiro é decidido por genética e hormônios. A barriga costuma diminuir junto com o resto, no ritmo de cada pessoa.",
+      },
     ],
     faqSchema: [
       { question: "Quantas vezes por semana devo treinar para ganhar massa muscular?", answer: "Para hipertrofia, a literatura científica aponta que treinar cada grupo muscular 2 vezes por semana com volume adequado é mais eficaz do que treinar apenas 1 vez. 3 a 5 sessões semanais são o intervalo mais comum para iniciantes a avançados." },
@@ -12142,7 +12152,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <ul>
   <li><strong>Semaglutida (Ozempic/Wegovy):</strong> estudos STEP indicam que ~39% da perda de peso é de massa magra sem treino</li>
   <li><strong>Tirzepatida (Mounjaro):</strong> dados do SURMOUNT mostram proporção similar, com perdas totais maiores</li>
-  <li><strong>Retatrutida:</strong> dados de composição corporal ainda limitados, mas a magnitude da perda total sugere risco elevado</li>
+  <li><strong>Retatrutida:</strong> num subestudo do ensaio de fase 2 com 189 pessoas com diabetes tipo 2, medido por DEXA ao longo de 36 semanas, a gordura caiu até cerca de 26% e a perda de gordura superou a de massa magra, numa proporção parecida com a de outros tratamentos (<a href="https://doi.org/10.1016/S2213-8587(25)00092-0" target="_blank" rel="noopener noreferrer">The Lancet Diabetes &amp; Endocrinology, 2025</a>). Ainda não há dados de composição corporal publicados dos estudos de fase 3</li>
 </ul>
 
 <p>Em todos os casos, o treino de força reduz substancialmente a proporção de massa magra perdida. A comparação com o Mounjaro está disponível no artigo <a href="/blog/mounjaro-faz-perder-musculos">Mounjaro faz perder músculos?</a>.</p>
