@@ -74,6 +74,9 @@ export const LINKS: Record<string, LinkControlado> = {
    */
   "ig-fds": { destino: "/ferramentas/simulador-fim-de-semana", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "stories", utm_content: "simulador_fds", tipo: "social" },
   "wa-fds": { destino: "/ferramentas/simulador-fim-de-semana", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "simulador_fds", tipo: "social" },
+  "yt-sub": { destino: "/ferramentas/substituidor-de-exercicios", utm_source: "youtube", utm_medium: "video", utm_campaign: "substituidor", utm_content: "descricao", tipo: "social" },
+  "ig-sub": { destino: "/ferramentas/substituidor-de-exercicios", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "reels", utm_content: "substituidor", tipo: "social" },
+  "wa-sub": { destino: "/ferramentas/substituidor-de-exercicios", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "substituidor", tipo: "social" },
 };
 
 export function urlDoLink(slug: string, extra: Record<string, string> = {}): string | null {
