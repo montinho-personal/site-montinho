@@ -35,6 +35,13 @@ export const LINKS: Record<string, LinkControlado> = {
    * atribuição.
    */
   "predio": { destino: "/minha-historia", utm_source: "condominio", utm_medium: "whatsapp_grupo", utm_campaign: "moradores", utm_content: "historia", tipo: "other" },
+  /**
+   * Vídeo do YouTube sobre beliscar entre as refeições. Leva ao artigo do
+   * mesmo assunto, e não à home: quem vem do vídeo procura aquilo, e na home
+   * saía sem rolar. Mantém a campanha "beliscadas" que o link antigo já usava,
+   * para os números de antes e depois ficarem na mesma linha do GA4.
+   */
+  "yt-beliscadas": { destino: "/blog/habitos-que-sabotam-seu-emagrecimento", utm_source: "youtube", utm_medium: "video", utm_campaign: "beliscadas", utm_content: "descricao", tipo: "social" },
   "gbp": { destino: "/", utm_source: "google", utm_medium: "perfil_empresa", utm_campaign: "perfil", utm_content: "botao_site", tipo: "other" },
   /**
    * Story que aponta para um artigo específico.
