@@ -17,6 +17,7 @@ import {
   REFERENCIAS,
   macrosDe,
   nomeCriterio,
+  nomeExibicao,
   trocas,
   type AlimentoEq,
   type Criterio,
@@ -72,6 +73,7 @@ const breadcrumbSchema = {
 const TODOS = alimentosEq();
 const BASE = new Map(TODOS.map((a) => [a.slug, a]));
 const INDEXAVEIS = alimentosIndexaveis().map((a) => a.slug);
+const LINKAVEIS = new Set(INDEXAVEIS);
 const A = (s: string) => BASE.get(s)!;
 
 /** Uma troca específica, para os textos e o FAQ. Falha alto se a base mudar. */
@@ -91,6 +93,7 @@ const OVO = "ovo-de-galinha-inteiro-cozido-10minutos";
 const BATATA = troca(ARROZ, 100, "carboidrato", "batata-inglesa-cozida");
 const BATATA_DOCE = troca(ARROZ, 100, "carboidrato", "batata-doce-cozida");
 const PAO = troca(ARROZ, 100, "carboidrato", "pao-trigo-frances");
+const PAO_FORMA = troca(ARROZ, 100, "carboidrato", "pao-trigo-forma-integral");
 const CUSCUZ = troca(ARROZ, 100, "carboidrato", "cuscuz-de-milho-cozido-com-sal");
 const MANDIOCA = troca(ARROZ, 100, "carboidrato", "mandioca-cozida");
 const OVOS_100 = troca(FRANGO, 100, "proteina", OVO);
@@ -113,7 +116,7 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Quantas fatias de pão equivalem a 100 g de arroz?",
-    answer: `Em carboidrato, 100 g de arroz branco cozido equivalem a cerca de ${gm(PAO)} de pão francês. As calorias ficam parecidas; o pão tem um pouco mais de proteína e de gordura.`,
+    answer: `Em carboidrato, 100 g de arroz branco cozido equivalem a cerca de ${PAO_FORMA.gramas} g de pão de forma integral. O peso da fatia muda de marca para marca: confira no rótulo quantos gramas tem a sua e divida. Em pão francês, são cerca de ${gm(PAO)}. O pão francês tem cerca de ${n0(PAO.macros.energia)} kcal nessa quantidade, contra ${n0(ARROZ_100.energia)} kcal do arroz, e um pouco mais de proteína e de gordura.`,
   },
   {
     question: "Quantos ovos substituem 100 g de frango?",
@@ -125,7 +128,7 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Posso substituir arroz por batata-doce?",
-    answer: `Pode. Para manter o carboidrato de 100 g de arroz branco cozido, use cerca de ${gm(BATATA_DOCE)} de batata-doce cozida. Também funcionam mandioca (${gm(MANDIOCA)}), cuscuz de milho (${CUSCUZ.gramas} g) e batata inglesa (${BATATA.gramas} g).`,
+    answer: `Pode. Para manter o carboidrato de 100 g de arroz branco cozido, use cerca de ${gm(BATATA_DOCE)} de batata-doce cozida. Também funcionam mandioca (${MANDIOCA.gramas} g), cuscuz de milho (${CUSCUZ.gramas} g) e batata inglesa (${BATATA.gramas} g).`,
   },
   {
     question: "Substituir arroz por cuscuz emagrece?",
@@ -149,7 +152,7 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Preciso pesar o alimento cru ou cozido?",
-    answer: `Tanto faz, desde que a conta use o mesmo estado. 100 g de arroz cru têm cerca de ${n0(ARROZ_CRU_100.energia)} kcal; 100 g de arroz cozido, cerca de ${n0(ARROZ_100.energia)} kcal, porque o cozido é quase tudo água. Na calculadora, escolha o alimento no estado em que você pesa: cru com cru, cozido com cozido.`,
+    answer: `Tanto faz, desde que a conta use o mesmo estado. 100 g de arroz cru têm cerca de ${n0(ARROZ_CRU_100.energia)} kcal; 100 g de arroz cozido, cerca de ${n0(ARROZ_100.energia)} kcal, porque cerca de dois terços do arroz cozido é água. Na calculadora, escolha o alimento no estado em que você pesa: cru com cru, cozido com cozido.`,
   },
   {
     question: "Quanto de macarrão substitui o arroz?",
@@ -194,14 +197,20 @@ function TabelaGrupo({ r }: { r: (typeof REFERENCIAS)[number] }) {
           </thead>
           <tbody>
             <tr className="border-b border-white/10">
-              <td className="text-white py-2.5 pr-4 font-medium">{origem.nome}</td>
+              <td className="text-white py-2.5 pr-4 font-medium">{nomeExibicao(origem)}</td>
               <td className="text-white py-2.5 pr-4 font-medium tabular-nums">{r.gramas} g</td>
               <td className={td}>referência</td>
               <td className="text-gray-300 py-2.5 tabular-nums">{n0(macrosDe(origem, r.gramas).energia)} kcal</td>
             </tr>
             {res.trocas.map((t) => (
               <tr key={t.alimento.slug} className="border-b border-white/10">
-                <td className={td}>{t.alimento.nome}</td>
+                <td className={td}>
+                  {LINKAVEIS.has(t.alimento.slug) ? (
+                    <Link href={`/alimentos/${t.alimento.slug}`} className={ln}>{nomeExibicao(t.alimento)}</Link>
+                  ) : (
+                    nomeExibicao(t.alimento)
+                  )}
+                </td>
                 <td className="text-white py-2.5 pr-4 tabular-nums">{t.gramas} g</td>
                 <td className={td}>{t.medida ? `≈ ${t.medida.texto}` : "—"}</td>
                 <td className="text-gray-300 py-2.5 tabular-nums">{n0(t.macros.energia)} kcal</td>
@@ -214,10 +223,17 @@ function TabelaGrupo({ r }: { r: (typeof REFERENCIAS)[number] }) {
   );
 }
 
+/**
+ * Imprimir só a lista. display:none (e não visibility) para não sobrar
+ * página em branco; :has() mantém visível só o caminho até a lista; e as
+ * tabelas perdem o overflow para não sair cortadas no papel.
+ */
 const PRINT_CSS = `@media print {
-  body * { visibility: hidden !important; }
-  #lista-substituicao, #lista-substituicao * { visibility: visible !important; color: #000 !important; background: #fff !important; border-color: #ccc !important; }
-  #lista-substituicao { position: absolute; left: 0; top: 0; width: 100%; padding: 0 12px; }
+  body *:not(:has(#lista-substituicao)):not(#lista-substituicao):not(#lista-substituicao *) { display: none !important; }
+  body, body * { background: #fff !important; color: #000 !important; border-color: #ccc !important; }
+  #lista-substituicao .overflow-x-auto { overflow: visible !important; }
+  #lista-substituicao table { page-break-inside: auto; }
+  #lista-substituicao tr { page-break-inside: avoid; }
 }`;
 
 export default function SubstituicaoDeAlimentosPage() {
@@ -260,8 +276,8 @@ export default function SubstituicaoDeAlimentosPage() {
             <p className="text-gray-300 leading-relaxed">
               Três cuidados separam uma troca útil de uma conta qualquer: <strong className="text-white">o mesmo grupo</strong> (arroz troca
               com batata, não com chocolate), <strong className="text-white">o mesmo estado</strong> (cru com cru, cozido com cozido) e{" "}
-              <strong className="text-white">quantidades que alguém come</strong>. As gramas saem arredondadas para passos de 5 ou 10 g, e o
-              nutriente igualado é recalculado com a quantidade já arredondada.
+              <strong className="text-white">quantidades que alguém come</strong>. As gramas saem arredondadas (ao grama nas porções pequenas, de 5 em 5 ou
+              de 10 em 10 nas maiores), e o nutriente igualado é recalculado com a quantidade já arredondada.
             </p>
           </div>
 
@@ -311,6 +327,12 @@ export default function SubstituicaoDeAlimentosPage() {
               Para ver todos os nutrientes de um alimento, use a <Link href="/alimentos" className={ln}>tabela nutricional</Link>; para
               colocar dois lado a lado em quantidades livres, o <Link href="/alimentos/comparar" className={ln}>comparador de alimentos</Link>.
               As equivalências não substituem orientação de nutricionista em casos clínicos, como diabetes, doença renal ou alergias.
+            </p>
+            <p className="text-gray-300 leading-relaxed mt-3">
+              Para ir além da troca: <Link href="/blog/proteina-em-alimentos-tabela-completa" className={ln}>tabela de proteína nos alimentos</Link>,{" "}
+              <Link href="/blog/batata-doce-emagrece" className={ln}>batata-doce emagrece?</Link>,{" "}
+              <Link href="/blog/quantos-ovos-por-dia" className={ln}>quantos ovos comer por dia</Link> e{" "}
+              <Link href="/blog/deficit-calorico-como-calcular" className={ln}>como calcular o déficit calórico</Link>.
             </p>
           </div>
 

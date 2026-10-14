@@ -41,7 +41,7 @@ export const PONTE = {
    */
   alimento: "montinho:ponte:alimento",
   /**
-   * Página do alimento / Comparador → Troca Certa: o slug do alimento que a
+   * Página do alimento → Troca Certa: o slug do alimento que a
    * pessoa quer trocar. Chave própria, para o comparador não consumir o que
    * era da calculadora de substituição (e vice-versa).
    */
