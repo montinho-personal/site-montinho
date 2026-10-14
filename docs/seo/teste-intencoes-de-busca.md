@@ -783,3 +783,10 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Export do Answer the Public de "retatrutida perde massa muscular": autocompletar com volume 0 ("a retatrutida perde…", "retatrutida perde menos massa muscular", esta já respondida pelo FAQ que compara com o Mounjaro) + "As pessoas também perguntam". O Montinho mandou seguir sem o relatório de IA; não houve print da 1ª página.
 - +4 FAQs, sem número novo (só o que o artigo já cita: 1,6–2,2 g/kg de Morton 2018, creatina 3–5 g): recuperar a massa muscular perdida; o que é bom para repor massa magra; perda de músculo depois dos 40 (sarcopenia); diabetes tipo 2 e ganho de massa com retatrutida (ajuste de remédio com o médico). `updatedAt` 2026-10-14.
 - Fora: liraglutida, Ozempic, novos remédios para obesidade, bariátrica, glicose/peso ideal do diabético, jantar, "o que beber de manhã", suplementos (fogem do tema). "Quantos quilos consigo perder com retatrutida?" já tinha FAQ (fase 2, NEJM 2023).
+
+## 2026-10-14 — calculadora-calorias-zumba (ATP, sem print)
+
+- Export do Answer the Public de "zumba queima quantas calorias" (40/mês; "aula de zumba", 10, 20, 30, 40 min e 1 hora com 0–10/mês) + "As pessoas também perguntam".
+- +5 FAQs, números calculados pela própria lib (70 kg, metade das músicas com salto, Compêndio 2011): 10/20/40 min (≈ 75/150/300 kcal); caminhada ou zumba (1 h ≈ 450 vs ≈ 280 kcal de caminhada moderada, MET 3,8 de lib/caminhada.ts; ≈ 1 h 37 min para igualar); quantas vezes por semana (150 min da OMS, como no elíptico); zumba ganha massa muscular; zumba para iniciantes e problema de coluna (sem salto ≈ 370 kcal/h; orientação de procurar médico ou fisioterapeuta).
+- Fora: origem da zumba, quem pode dar aula, Tae Bo, ballet fitness, boxe x academia, desinchar 3 kg, exercícios para secar barriga. Dança 1 h por dia e "caminhar ou dançar" cabem na calculadora de dança.
+- `zumba-test` já reprovava o título (64 caracteres, limite 58) antes desta mudança; proposta enviada ao Montinho.
