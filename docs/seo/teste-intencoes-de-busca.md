@@ -739,5 +739,5 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 ## 2026-10-14 — IndexNow (aviso ao Bing)
 
 - Motivo: o ChatGPT parou de mandar visitas para cadeira extensora, hip thrust e leg press a partir de 07/09 (≈ 25 visitas/semana → 0). A busca do ChatGPT usa muito o índice do Bing, e o site não avisava o Bing das mudanças.
-- `lib/indexnow.ts` + `public/<chave>.txt` + `scripts/indexnow.ts` (diff entre dois commits → URLs do sitemap → POST em api.indexnow.org). Teste: `scripts/indexnow-test.ts`. Passo novo no fluxo, registrado no AGENTS.md.
+- `lib/indexnow.ts` + `public/<chave>.txt` + `scripts/indexnow.ts` (diff entre dois commits → URLs do sitemap → POST em api.indexnow.org). Teste: `scripts/indexnow-test.ts`. Roda sozinho no GitHub Actions a cada push para main (o ambiente das sessões bloqueia api.indexnow.org); registrado no AGENTS.md.
 - Medir: visitas de chatgpt.com/bing por semana nas páginas avisadas, a partir de 14/10.
