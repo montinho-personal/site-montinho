@@ -46792,7 +46792,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     readTime: "13 min",
     author: "Montinho",
     date: "2026-06-28",
-    updatedAt: "2026-09-29",
+    updatedAt: "2026-10-14",
     faq: [
       { question: "O que é treino upper lower?", answer: "O treino upper/lower (superior/inferior) é uma divisão em que você separa o corpo em membros superiores e inferiores, treinando cada parte 2 vezes por semana em 4 sessões semanais." },
       { question: "Upper lower é bom para iniciantes?", answer: "O upper/lower funciona bem para iniciantes a intermediários. Para iniciantes absolutos, um full body 3x/semana pode ser mais eficiente nos primeiros 3–6 meses. A partir daí, o upper/lower é uma progressão natural excelente." },
@@ -46802,7 +46802,10 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
       { question: "Treino upper lower 5 dias: como montar?", answer: "Faça os 4 dias clássicos (Upper A, Lower A, Upper B, Lower B) e acrescente um quinto dia para o seu ponto fraco, como membros superiores ou glúteos e posterior." },
       { question: "O treino upper lower é bom para hipertrofia?", answer: "Sim. Ele permite treinar cada grupo cerca de 2x por semana com bom volume, o que favorece a hipertrofia, desde que haja progressão de carga." },
       { question: "Existe treino upper lower feminino?", answer: "A estrutura é a mesma; para priorizar glúteos e posterior, coloque mais volume nos dias de Lower, especialmente no Lower B." },
-      { question: "Qual a diferença entre upper lower e push pull legs?", answer: "O push/pull/legs treina cada músculo 2x/semana mas exige 6 dias. O upper/lower atinge a mesma frequência com apenas 4 dias, sendo mais sustentável para quem tem agenda limitada." }
+      { question: "Qual a diferença entre upper lower e push pull legs?", answer: "O push/pull/legs treina cada músculo 2x/semana mas exige 6 dias. O upper/lower atinge a mesma frequência com apenas 4 dias, sendo mais sustentável para quem tem agenda limitada." },
+      { question: "O que é o treino PPL upper lower (ULPPL)?", answer: "É a junção das duas divisões em 5 dias: Upper e Lower no começo da semana, depois Push (empurrar: peito, ombro, tríceps), Pull (puxar: costas, bíceps) e Legs (pernas). Cada músculo é treinado 2 vezes na semana, como no upper lower de 4 dias, com um dia a mais para volume. Serve para quem já treina há algum tempo e consegue ir à academia 5 vezes por semana; para quem tem 4 dias, o upper lower clássico entrega a mesma frequência." },
+      { question: "Quantas séries fazer no upper lower?", answer: "A referência dos estudos é de cerca de 10 séries por músculo por semana. No upper lower de 4 dias, como cada músculo aparece em dois treinos, isso dá algo como 4 a 6 séries por músculo em cada sessão. Quem está começando pode ficar perto do mínimo; o que decide subir é conseguir recuperar de um treino para o outro." },
+      { question: "Upper lower ou ABC: qual é melhor?", answer: "Depende de quantos dias você treina. No ABC feito uma vez por semana, cada músculo é treinado só 1 vez; para chegar a 2 vezes, o ABC precisa de 6 dias. O upper lower chega às 2 vezes em 4 dias. Para quem tem 4 dias na semana, o upper lower costuma encaixar melhor; para quem tem 3, um full body ou o upper lower de 3 dias alternado." },
     ],
     tags: ["treino upper lower", "divisão superior inferior", "treino 4 dias semana", "hipertrofia intermediário", "upper lower split"],
     content: `<h2>O Que É o Treino Upper/Lower?</h2>
