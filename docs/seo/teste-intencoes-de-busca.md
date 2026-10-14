@@ -856,3 +856,14 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - +6 FAQs (o artigo tinha 5), só com a conta de 7.700 kcal/kg: 500 e 1.000 kcal (≈ 65 e 130 g), 7.000 kcal (≈ 910 g), 5 kg (38.500 kcal ≈ 11 semanas a 500/dia), 100 kcal a mais por dia (≈ 4,7 kg/ano no papel), músculo pesa mais que gordura (densidade, sem número), gordura visceral. `updatedAt` 2026-10-14.
 - Fora: dietas de 800/1.000/1.500 kcal (prescrição), absorção de calorias, cardápios.
 - Títulos dos dois: propostas enviadas ao Montinho.
+
+## 2026-10-14 — Títulos: calculadora de creatina e polichinelo emagrece (aprovados pelo Montinho)
+
+| Página | Campo | ATUAL | NOVO |
+|---|---|---|---|
+| /ferramentas/calculadora-creatina | título | Quanto de Creatina Tomar por Dia? Calculadora e Tabela por Peso (63) | Calculadora de Creatina por Peso: Tabela de 50 a 150 kg (55) |
+| /blog/polichinelo-emagrece | título | Polichinelo Emagrece? Calorias e Quantos Fazer por Dia (54) | Polichinelo Emagrece? Barriga, Quilos e Quantos por Dia (55) |
+
+- Motivo creatina: "calculadora de creatina" 1,9 mil/mês e "por peso" 880 no ATP; buscas reais "tabela de creatina por peso 60/90/120 kg" (≈ 650 impressões em 28 dias, posição ~10, 0 cliques). `creatina-test` passa a aprovar o título (antes 63 > 58).
+- Motivo polichinelo: "polichinelo emagrece a barriga" 480/mês e "quantos quilos por semana" 140/mês; "calorias" fica com `polichinelo-queima-quantas-calorias`, para as duas páginas não disputarem a mesma busca.
+- Sem `updatedAt` (título não muda o conteúdo).

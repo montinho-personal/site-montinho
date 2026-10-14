@@ -37,7 +37,7 @@ import {
 const CAMINHO = "/ferramentas/calculadora-creatina";
 
 export const metadata: Metadata = {
-  title: "Quanto de Creatina Tomar por Dia? Calculadora e Tabela por Peso",
+  title: "Calculadora de Creatina por Peso: Tabela de 50 a 150 kg",
   description:
     "Quanto de creatina tomar por dia pelo seu peso, com ou sem saturação — e quanto tempo o pote dura e quanto custa por dia. Baseada no consenso da ISSN.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
