@@ -17,11 +17,13 @@ import {
   arredondaKcal,
   calcula,
   formataTempo,
+  kcalPorMinuto,
   minutosAtePropaganda,
   semana,
   tabelaPorFrequencia,
   tabelaPorPeso,
 } from "@/lib/zumba";
+import { ritmo } from "@/lib/caminhada";
 
 /**
  * A página da Calculadora de Calorias na Zumba.
@@ -76,6 +78,11 @@ const TAB_FREQ = tabelaPorFrequencia(PESO_PADRAO);
 const MEIA_HORA = calcula(PESO_PADRAO, 30, 0.5);
 const M45 = calcula(PESO_PADRAO, 45, 0.5);
 const DUAS_SEMANA = semana(HORA, 2);
+const MIN = (m: number) => calcula(PESO_PADRAO, m, 0.5);
+const SEM_SALTO = calcula(PESO_PADRAO, 60, 0);
+/** Caminhada moderada (3,8 METs, Compêndio 2024) — a mesma da calculadora de caminhada. */
+const CAMINHADA_HORA = kcalPorMinuto(ritmo("moderado").met, PESO_PADRAO) * 60;
+const CAMINHADA_EQUIV = HORA.kcal / kcalPorMinuto(ritmo("moderado").met, PESO_PADRAO);
 const fmt = (n: number, d = 1) => n.toLocaleString("pt-BR", { maximumFractionDigits: d });
 const kc = (n: number) => arredondaKcal(n).toLocaleString("pt-BR");
 const mil = (n: number) => n.toLocaleString("pt-BR");
@@ -120,6 +127,26 @@ const faq: ItemFAQ[] = [
   {
     question: "Zumba perde barriga?",
     answer: NOTA_SEM_PERDA_LOCALIZADA,
+  },
+  {
+    question: "10, 20 e 40 minutos de zumba queimam quantas calorias?",
+    answer: `Para ${PESO_PADRAO} kg, com metade das músicas com salto: cerca de ${kc(MIN(10).kcal)} kcal em 10 minutos, ${kc(MIN(20).kcal)} kcal em 20 minutos e ${kc(MIN(40).kcal)} kcal em 40 minutos. Quem pesa mais gasta mais no mesmo tempo, e a calculadora acima faz a conta com o seu peso.`,
+  },
+  {
+    question: "O que emagrece mais, caminhada ou zumba?",
+    answer: `No mesmo tempo, a zumba gasta mais. Para ${PESO_PADRAO} kg, uma hora de aula com metade das músicas com salto fica perto de ${kc(HORA.kcal)} kcal; uma hora de caminhada em ritmo moderado, perto de ${kc(CAMINHADA_HORA)} kcal. Seriam uns ${formataTempo(CAMINHADA_EQUIV)} de caminhada para igualar a aula. O que emagrece mais, no fim, é a que você consegue repetir toda semana.`,
+  },
+  {
+    question: "Quantas vezes por semana pode fazer zumba?",
+    answer: "Três aulas de uma hora já passam dos 150 minutos semanais de atividade moderada que a OMS recomenda. Dá para fazer mais, se o corpo recuperar bem de uma aula para outra. Com muitas músicas de salto, alternar com dias sem impacto ou com musculação ajuda joelho e tornozelo.",
+  },
+  {
+    question: "Quem faz zumba ganha massa muscular?",
+    answer: "Pouco. A zumba é uma atividade aeróbica: melhora o condicionamento e aumenta o gasto, mas não dá ao músculo a carga crescente de que ele precisa para crescer. Para ganhar massa muscular, a base é a musculação com carga que sobe aos poucos. As duas combinam bem na mesma semana.",
+  },
+  {
+    question: "Existe zumba para iniciantes? Quem tem problema de coluna pode fazer?",
+    answer: `Existe: a versão sem salto. Para ${PESO_PADRAO} kg, uma hora sem nenhum salto gasta perto de ${kc(SEM_SALTO.kcal)} kcal, contra ${kc(HORA.kcal)} kcal com metade das músicas com salto. O gasto cai pouco e o impacto cai muito. Com problema de coluna, joelho ou alguma condição cardiovascular, converse antes com o médico ou o fisioterapeuta que acompanha você.`,
   },
 ];
 
