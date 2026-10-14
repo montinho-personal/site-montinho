@@ -112269,7 +112269,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "polichinelo-emagrece",
     title: "Polichinelo Emagrece? Quantos Fazer Por Dia (Resposta Honesta)",
-    metaTitle: "Polichinelo Emagrece? Calorias e Quantos Fazer por Dia",
+    metaTitle: "Polichinelo Emagrece? Barriga, Quilos e Quantos por Dia",
     metaDescription:
       "Quantas calorias o polichinelo queima de verdade, quantos fazer por nível de condicionamento e por que ele rende mais dentro de um circuito do que sozinho.",
     excerpt:
