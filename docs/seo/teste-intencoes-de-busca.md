@@ -841,3 +841,18 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - A página já tinha 37 FAQs. +6: 1 kg dura quanto, 60/90/120 kg, 4 g e 6 g, altura muda a dose, tomar sem malhar, ponto negativo — números de `lib/creatina.ts` (0,03 g/kg, faixa 3–5 g da ISSN). `creatina-test` atualizado para 43 perguntas.
 - Fora: creatinina/função renal (outra intenção), calculadoras de marca, "3 melhores marcas", "peso e altura" respondido no FAQ da altura.
 - `creatina-test` já reprovava o título (63 caracteres, limite 58); proposta enviada ao Montinho.
+
+## 2026-10-14 — dormir-depois-do-almoco-engorda (ATP + print da 1ª página)
+
+- GSC (12/07–14/10): 1.493 impressões, 0 cliques, posição 8,9; "deitar depois de comer engorda" 127 impressões. Print anônimo: o artigo aparece no fim da 1ª página (depois de UOL, Facebook, YouTube); visão por IA cita Liv Up, UOL e Brasil de Fato.
+- Export ATP: "dormir depois do almoço engorda" 1 mil/mês, "engorda ou emagrece" 50, "2 horas" 20. PAA: o que acontece, 2 horas, 30 minutos, sem jantar, sinal de diabetes, como se chama, dormir ou caminhar. Outras pesquisas: faz mal, deitar depois de comer, soneca e infarto, quanto esperar para deitar, descansar antes de treinar.
+- +6 FAQs (o artigo tinha 5): deitar depois de comer engorda, 2 horas, engorda ou emagrece, nome (sesta), sinal de diabetes (orientação de procurar médico, sem afirmar relação), dormir ou caminhar (já coberto no texto). Sem número novo. `updatedAt` 2026-10-14.
+- Fora: "soneca e infarto" (saúde, precisa fonte), dormir sem jantar e jejum noturno, frutas para dormir, desinchar a barriga.
+
+## 2026-10-14 — quantas-calorias-tem-1kg-de-gordura (ATP + print da 1ª página)
+
+- GSC (12/07–14/10): 3.674 impressões, 3 cliques, posição 7,8. Print anônimo: visão por IA responde "7.700 calorias" (ge, Globo, Instagram); o artigo não aparece no trecho visível. PAA: calorias para eliminar 1 kg, quantos quilos são 500 calorias, o que equivale a 7.000, calorias para perder 5 kg. Outras pesquisas: 1.000 calorias é 1 kg, 1 kg de gordura e 1 kg de músculo, calorias de 1 kg de músculo, perder 1 kg em 2 dias.
+- Export ATP: termo principal 390/mês, "gordura corporal" 50. O XLSX de PAA derivou (jantar, absorção de calorias, 1.500 kcal).
+- +6 FAQs (o artigo tinha 5), só com a conta de 7.700 kcal/kg: 500 e 1.000 kcal (≈ 65 e 130 g), 7.000 kcal (≈ 910 g), 5 kg (38.500 kcal ≈ 11 semanas a 500/dia), 100 kcal a mais por dia (≈ 4,7 kg/ano no papel), músculo pesa mais que gordura (densidade, sem número), gordura visceral. `updatedAt` 2026-10-14.
+- Fora: dietas de 800/1.000/1.500 kcal (prescrição), absorção de calorias, cardápios.
+- Títulos dos dois: propostas enviadas ao Montinho.
