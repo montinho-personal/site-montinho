@@ -112216,7 +112216,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Polichinelo virou febre nos desafios de internet, mas será que ele emagrece de verdade? Explico o gasto calórico real do exercício, quantos fazer por dia conforme o seu nível e por que ele funciona melhor dentro de um circuito do que sozinho.",
     category: "Emagrecimento",
     date: "2026-08-12",
-    updatedAt: "2026-08-21",
+    updatedAt: "2026-10-14",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["polichinelo", "emagrecimento", "exercício aeróbico", "HIIT", "treino em casa"],
@@ -112225,7 +112225,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
         question:
           "Polichinelo emagrece mesmo?",
         answer:
-          "Ajuda, mas não sozinho. O gasto é de 8 a 12 calorias por minuto, o que é modesto no total do dia. Ele só gera emagrecimento quando combinado com déficit calórico na alimentação e uma rotina de treino consistente.",
+          "Ajuda, mas não sozinho. Para quem pesa 70 kg, o gasto fica perto de 7 a 9 calorias por minuto, conforme o ritmo, o que é modesto no total do dia. Ele só gera emagrecimento quando combinado com déficit calórico na alimentação e uma rotina de treino consistente.",
       },
       {
         question:
@@ -112237,7 +112237,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
         question:
           "500 polichinelos por dia emagrece quantos quilos?",
         answer:
-          "500 polichinelos queimam cerca de 150 a 200 calorias, o equivalente a um copo de suco. Sem mudança na alimentação, o efeito na balança é praticamente nulo. Com dieta ajustada, eles somam ao déficit como qualquer atividade.",
+          "Para quem pesa 70 kg, 500 polichinelos gastam cerca de 75 calorias, uns 11 minutos em ritmo moderado. Feitos todos os dias, somam cerca de 525 calorias por semana, menos de 70 g de gordura. Sem mudança na alimentação, o efeito na balança é praticamente nulo. Com dieta ajustada, eles somam ao déficit como qualquer atividade.",
       },
       {
         question:
@@ -112255,7 +112255,32 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
         question:
           "O que queima mais: polichinelo ou pular corda?",
         answer:
-          "Pular corda tende a queimar mais por minuto (10 a 16 calorias contra 8 a 12 do polichinelo), mas exige mais coordenação e impacto. Na prática, o melhor exercício é o que você consegue sustentar com constância.",
+          "Pular corda queima mais por minuto: para 70 kg, de 11 a 15 calorias, contra 7 a 9 do polichinelo. Em compensação, exige mais coordenação e tem mais impacto. Na prática, o melhor exercício é o que você consegue sustentar com constância.",
+      },
+      {
+        question: "Polichinelo emagrece a barriga? E os braços e as pernas?",
+        answer:
+          "Não do jeito que a pergunta imagina. O polichinelo aumenta o gasto do dia, mas nenhum exercício escolhe de onde a gordura sai: isso é decidido por genética e hormônios. A barriga, os braços e as pernas afinam junto com o resto do corpo, quando a semana inteira fica em déficit.",
+      },
+      {
+        question: "Polichinelo emagrece quantos quilos por semana?",
+        answer:
+          "Sozinho, gramas. Para quem pesa 70 kg, 500 polichinelos por dia somam cerca de 525 calorias por semana, menos de 70 g de gordura. O que faz a balança descer em quilos é a alimentação em déficit, com o polichinelo e o resto do treino somando ao gasto.",
+      },
+      {
+        question: "Polichinelo emagrece mais que caminhada?",
+        answer:
+          "Por minuto, sim. Para 70 kg, 30 minutos de caminhada moderada gastam cerca de 130 calorias, o mesmo que uns 19 minutos de polichinelo em ritmo moderado, perto de 860 saltos. Na prática, a caminhada costuma emagrecer mais, porque dá para fazer 40 minutos todo dia sem dor e sem cansaço acumulado.",
+      },
+      {
+        question: "Polichinelo sem impacto emagrece?",
+        answer:
+          "Emagrece do mesmo jeito: somando ao gasto do dia. A versão sem salto costuma ficar no ritmo leve, perto de 4 calorias por minuto para 70 kg, contra 7 a 9 com salto. Para quem está bem acima do peso ou sente o joelho, é a forma de começar sem pagar com dor.",
+      },
+      {
+        question: "Quantos minutos de polichinelo para emagrecer? Quantos para perder 1 kg?",
+        answer:
+          "Um quilo de gordura guarda cerca de 7.700 calorias. Para 70 kg em ritmo moderado, isso daria cerca de 19 horas de polichinelo, uns 51 mil saltos, só como conta teórica. Por isso o polichinelo funciona em blocos de 5 a 20 minutos dentro de um treino, e o déficit vem principalmente da alimentação.",
       },
     ],
     content: `
@@ -112264,7 +112289,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   <img src="/blog-images/polichinelo-emagrece.webp" alt="Polichinelo emagrece? Quantos fazer por dia e o papel real no aquecimento e no HIIT" title="Polichinelo emagrece? — Montinho Personal Trainer Alphaville" width="1448" height="1086" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 </figure>
 <h2>Quantas calorias o polichinelo queima de verdade?</h2>
-<p>A conta curta, para 70 kg em ritmo contínuo: <strong>1 minuto queima cerca de 10 calorias</strong>, 100 polichinelos ficam entre 15 e 20, e os famosos 500 por dia dão por volta de 90, o equivalente a um copo de suco de laranja. Contando aquecimento, pausas e o pequeno gasto extra depois do esforço, o número real de 100 polichinelos sobe para algo entre 30 e 40. A tabela completa por quantidade, por minuto e pelo seu peso, incluindo quantos polichinelos equivalem a 30 minutos de caminhada e a 1 kg, está em <a href="/blog/polichinelo-queima-quantas-calorias">polichinelo queima quantas calorias</a>.</p>
+<p>A conta curta, para 70 kg em ritmo contínuo: <strong>1 minuto queima de 7 a 9 calorias</strong>, conforme o ritmo, 100 polichinelos ficam perto de 15, e os famosos 500 por dia dão por volta de 75. A tabela completa por quantidade, por minuto e pelo seu peso, incluindo quantos polichinelos equivalem a 30 minutos de caminhada e a 1 kg, está em <a href="/blog/polichinelo-queima-quantas-calorias">polichinelo queima quantas calorias</a>.</p>
 <p>Isso significa que polichinelo é inútil? Não. Significa que ele precisa ser usado do jeito certo, e que nenhum exercício isolado substitui o que realmente faz a balança descer: o <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a>. Se você come mais do que gasta, pode fazer 1.000 polichinelos por dia que o ponteiro não se move.</p>
 <h2>Onde o polichinelo realmente brilha</h2>
 <h3>1. Como aquecimento</h3>
@@ -112321,7 +112346,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Velocidade sem controle</strong>: mais rápido e desengonçado queima menos e machuca mais do que ritmo constante e limpo.</li>
 </ul>
 <h2>Então, polichinelo emagrece ou não?</h2>
-<p>Resposta direta: o polichinelo contribui para o emagrecimento como qualquer atividade que gasta energia, mas o gasto isolado dele é modesto — 8 a 12 calorias por minuto, e ninguém faz muitos minutos seguidos. Ele emagrece quando entra num contexto: déficit calórico na alimentação, treino de força como base, e o polichinelo somando intensidade em circuitos e aquecimentos. Foi assim que ele participou da minha perda de 40 kg: como coadjuvante fiel, nunca como milagre.</p>
+<p>Resposta direta: o polichinelo contribui para o emagrecimento como qualquer atividade que gasta energia, mas o gasto isolado dele é modesto — 7 a 9 calorias por minuto para 70 kg, e ninguém faz muitos minutos seguidos. Ele emagrece quando entra num contexto: déficit calórico na alimentação, treino de força como base, e o polichinelo somando intensidade em circuitos e aquecimentos. Foi assim que ele participou da minha perda de 40 kg: como coadjuvante fiel, nunca como milagre.</p>
 <p>Se a sua meta principal é reduzir a barriga, complemente a leitura com meu artigo sobre <a href="/blog/como-perder-gordura-abdominal">como perder gordura abdominal</a> — lá explico por que nenhum exercício escolhe de onde a gordura sai.</p>
 
 <p>Nenhum exercício isolado emagrece sozinho — o que emagrece de vez é quebrar o ciclo, como falo neste Short do meu canal:</p>
