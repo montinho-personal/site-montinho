@@ -741,3 +741,10 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Motivo: o ChatGPT parou de mandar visitas para cadeira extensora, hip thrust e leg press a partir de 07/09 (≈ 25 visitas/semana → 0). A busca do ChatGPT usa muito o índice do Bing, e o site não avisava o Bing das mudanças.
 - `lib/indexnow.ts` + `public/<chave>.txt` + `scripts/indexnow.ts` (diff entre dois commits → URLs do sitemap → POST em api.indexnow.org). Teste: `scripts/indexnow-test.ts`. Roda sozinho no GitHub Actions a cada push para main (o ambiente das sessões bloqueia api.indexnow.org); registrado no AGENTS.md.
 - Medir: visitas de chatgpt.com/bing por semana nas páginas avisadas, a partir de 14/10.
+
+## 2026-10-14 — crossover-vs-crucifixo (ATP + print da 1ª página)
+
+- Export do Answer the Public + print anônimo de "crossover ou crucifixo". O artigo é o 1º resultado orgânico e a principal fonte citada na visão geral por IA. Já cobria polia alta/média/baixa, halteres x máquina, músculos, substituto do crossover e supino x crossover.
+- +4 FAQs: crucifixo no crossover ou peck deck; crucifixo reto ou inclinado; sentir o ombro no crucifixo; crucifixo ou supino. `updatedAt` 2026-10-14.
+- Fora: tudo de "crossover" de áudio/som automotivo (modelos de IA confundiram o termo), cruz/crucifixo religioso (deriva do PAA), preço de crossover para academia, crucifixo inverso e agachamento sissy (pauta).
+- `seo-serp-test` reprovava título (65) e descrição (165) antes desta mudança; proposta enviada ao Montinho, não aplicada.
