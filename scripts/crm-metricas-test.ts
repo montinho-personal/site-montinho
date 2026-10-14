@@ -7,6 +7,7 @@
  * unknown não vira direct, gclid ausente não impede venda, duplicata sugere
  * merge em vez de mesclar.
  */
+import { ehRoboDePrevia } from "../lib/crm/previa";
 import {
   taxasFunil, showRate, winRate, ltvRealizado, ltvPorConfianca, ehEstimado, dataDaReceita, recebimentoNoFuturo, mrrDoContrato, mrrNormalizado, valorEmPacotes, movimentoMrr, cacMidia, ltvCac, paybackMeses,
   churnClientes, retencaoClientes, metricasIndicacao, atribuir, inferirFonte, marcasDaUrl, normalizarTelefoneE164, possiveisDuplicatas,
@@ -234,6 +235,8 @@ bloco("7. ATRIBUIÇÃO");
   ], "2026-08-04T11:00:00Z");
   ok("assistidos = os do meio (YouTube, Instagram)", multi.assisted.map((t) => t.sourceCode).join() === "youtube,instagram_organic", multi.assisted.map((t) => t.sourceCode).join());
 }
+ok("robô do WhatsApp é robô de prévia", ehRoboDePrevia("WhatsApp/2.23.20.0 A") && ehRoboDePrevia("facebookexternalhit/1.1"));
+ok("navegador do celular não é robô de prévia", !ehRoboDePrevia("Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/130 Mobile Safari/537.36") && !ehRoboDePrevia(null));
 ok("utm_source=condominio → condominio, não whatsapp_direct", inferirFonte({ utmSource: "condominio", utmMedium: "whatsapp_grupo" }).sourceCode === "condominio");
 ok("gclid presente → google_ads, confiança alta", inferirFonte({ gclid: "abc" }).sourceCode === "google_ads" && inferirFonte({ gclid: "abc" }).confidence === "high");
 {
