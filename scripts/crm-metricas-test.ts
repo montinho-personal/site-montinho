@@ -234,6 +234,7 @@ bloco("7. ATRIBUIÇÃO");
   ], "2026-08-04T11:00:00Z");
   ok("assistidos = os do meio (YouTube, Instagram)", multi.assisted.map((t) => t.sourceCode).join() === "youtube,instagram_organic", multi.assisted.map((t) => t.sourceCode).join());
 }
+ok("utm_source=condominio → condominio, não whatsapp_direct", inferirFonte({ utmSource: "condominio", utmMedium: "whatsapp_grupo" }).sourceCode === "condominio");
 ok("gclid presente → google_ads, confiança alta", inferirFonte({ gclid: "abc" }).sourceCode === "google_ads" && inferirFonte({ gclid: "abc" }).confidence === "high");
 {
   // Cookies recusados: o clique chega sem marcas e só com a URL da página.

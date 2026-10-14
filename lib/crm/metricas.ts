@@ -522,6 +522,8 @@ export function inferirFonte(p: { utmSource?: string | null; utmMedium?: string 
   if (s.includes("whatsapp")) {
     return { sourceCode: m.includes("status") ? "whatsapp_status" : "whatsapp_direct", confidence: "high" };
   }
+  // Grupo do prédio e academia do condomínio: links controlados com utm_source=condominio.
+  if (s === "condominio") return { sourceCode: "condominio", confidence: "high" };
   if (s === "tiktok") return { sourceCode: "tiktok", confidence: "high" };
   if (s === "youtube") return { sourceCode: "youtube", confidence: "high" };
   if (s === "qr" || m === "qr") return { sourceCode: "offline_qr", confidence: "high" };
