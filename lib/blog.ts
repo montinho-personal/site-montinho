@@ -11988,7 +11988,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "A Retatrutida causou perda média de 24% do peso corporal em estudos clínicos. Parte desse peso pode ser músculo. Saiba o que os dados mostram e o que você pode fazer a respeito.",
     category: "Saúde",
     date: "2026-06-26",
-    updatedAt: "2026-10-07",
+    updatedAt: "2026-10-14",
     readTime: "9 min",
     author: "Montinho",
     tags: [
@@ -12055,6 +12055,26 @@ RIR 3 = parou com 3 reps sobrando.</p>
         question: "Retatrutida é melhor que Mounjaro?",
         answer:
           "Depende do caso e é decisão médica. A comparação de perda de peso e de efeitos está no artigo \"Retatrutida ou Mounjaro\", aqui no blog.",
+      },
+      {
+        question: "É possível recuperar a massa muscular perdida com a retatrutida?",
+        answer:
+          "Sim. O músculo continua respondendo ao treino de força em qualquer idade, inclusive durante e depois do tratamento. A recuperação leva meses, não semanas, e depende de carga que sobe aos poucos, proteína suficiente todo dia e constância. Começar a treinar logo no início do tratamento sai mais barato do que recuperar depois.",
+      },
+      {
+        question: "O que é bom para repor a massa magra?",
+        answer:
+          "Treino de força com progressão de carga, de 2 a 4 vezes por semana, e proteína de 1,6 a 2,2 g por kg de peso por dia, distribuída nas refeições. Creatina (3 a 5 g por dia) ajuda a manter a força no treino. Dormir bem completa a conta. Sem o treino, a proteína sozinha não repõe músculo.",
+      },
+      {
+        question: "É normal perder massa muscular depois dos 40 anos?",
+        answer:
+          "Com a idade, a massa muscular tende a cair aos poucos, principalmente em quem não treina força. Esse processo se chama sarcopenia. Quem passa dos 40 e usa retatrutida soma as duas coisas, o envelhecimento e o emagrecimento rápido, e por isso o treino de força pesa ainda mais nessa fase.",
+      },
+      {
+        question: "Quem tem diabetes tipo 2 consegue ganhar massa muscular usando retatrutida?",
+        answer:
+          "Consegue, com treino de força e proteína suficiente, como qualquer pessoa. A musculação também ajuda o músculo a usar melhor a glicose. Quem usa insulina ou remédio que baixa o açúcar precisa combinar com o médico como ajustar a dose e o que comer perto do treino, para evitar hipoglicemia.",
       },
     ],
     faqSchema: [

@@ -777,3 +777,9 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 | /blog/treino-upper-lower-superior-inferior | descrição | Treino upper lower: o que é, como dividir em 2, 3, 4 ou 5 dias, fichas prontas, versão masculina e feminina, se é bom para hipertrofia e como se compara ao push pull legs. (171) | Fichas prontas de 2 a 5 dias, versão masculina e feminina, quantas séries fazer e como juntar com o push pull legs (ULPPL) treinando cada músculo 2x na semana. (159) |
 
 - Motivo: `seo-serp-test` reprovava os três (limites 60/160 e abertura igual ao título); "máquina" é a busca derivada com mais volume e ULPPL a maior relacionada do upper lower. Sem `updatedAt` (título e descrição não mudam o conteúdo).
+
+## 2026-10-14 — retatrutida-faz-perder-musculos (ATP, sem print e sem modelos de IA)
+
+- Export do Answer the Public de "retatrutida perde massa muscular": autocompletar com volume 0 ("a retatrutida perde…", "retatrutida perde menos massa muscular", esta já respondida pelo FAQ que compara com o Mounjaro) + "As pessoas também perguntam". O Montinho mandou seguir sem o relatório de IA; não houve print da 1ª página.
+- +4 FAQs, sem número novo (só o que o artigo já cita: 1,6–2,2 g/kg de Morton 2018, creatina 3–5 g): recuperar a massa muscular perdida; o que é bom para repor massa magra; perda de músculo depois dos 40 (sarcopenia); diabetes tipo 2 e ganho de massa com retatrutida (ajuste de remédio com o médico). `updatedAt` 2026-10-14.
+- Fora: liraglutida, Ozempic, novos remédios para obesidade, bariátrica, glicose/peso ideal do diabético, jantar, "o que beber de manhã", suplementos (fogem do tema). "Quantos quilos consigo perder com retatrutida?" já tinha FAQ (fase 2, NEJM 2023).
