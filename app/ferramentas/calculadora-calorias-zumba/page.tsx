@@ -39,7 +39,7 @@ import { ritmo } from "@/lib/caminhada";
 const CAMINHO = "/ferramentas/calculadora-calorias-zumba";
 
 export const metadata: Metadata = {
-  title: "Calculadora de Zumba: Calorias por Aula, 30, 45 Minutos e 1 Hora",
+  title: "Zumba Queima Quantas Calorias? Por Aula, 30 Min e 1 Hora",
   description:
     "Quantas calorias a sua aula de zumba gasta, contando as músicas com e sem salto, e quantos quilos por mês as aulas da semana rendem com o seu peso.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
