@@ -231,7 +231,7 @@ export default async function AlimentoPage({ params }: { params: Promise<{ slug:
               Quer trocar este alimento?
             </h2>
             <p className="text-gray-300 leading-relaxed mb-5">
-              Veja quanto de outros alimentos fornece quantidade parecida de carboidrato, proteína ou calorias que{" "}
+              Veja quanto de outros alimentos fornece uma quantidade de carboidrato, proteína ou calorias parecida com a de{" "}
               {nomeNatural(a.nome).toLowerCase()}.
             </p>
             <LinkTroca

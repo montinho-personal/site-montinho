@@ -8,8 +8,10 @@
 
 import { baseEq } from "../lib/alimentos/equivalencia-base";
 import {
+  APELIDOS,
   GRUPOS,
   MEMBROS,
+  NOME_EXIBICAO,
   REFERENCIAS,
   arredondaGramas,
   estadoDe,
@@ -38,14 +40,22 @@ for (const m of MEMBROS) {
   const c = GRUPOS[m.grupo].criterioPadrao;
   ok(`${m.slug} tem ${c} analisado`, a[c] !== null && a[c]! > 0);
 }
+ok("todo membro tem nome de exibição", MEMBROS.every((m) => NOME_EXIBICAO[m.slug]), MEMBROS.filter((m) => !NOME_EXIBICAO[m.slug]).map((m) => m.slug).join(","));
+ok("todo apelido aponta para alimento da base", Object.keys(APELIDOS).every((s) => B.has(s)));
 ok("nenhum slug repetido", new Set(MEMBROS.map((m) => m.slug)).size === MEMBROS.length);
 
 secao("2. A CONTA");
 ok("regra de três: 30 g de alvo com 15 g/100 g = 200 g", gramasEquivalentes(30, 15) === 200);
-ok("arredonda abaixo de 20 g ao grama", arredondaGramas(7.4) === 7);
+ok("abaixo de 10 g arredonda a meio grama", arredondaGramas(7.4) === 7.5);
+ok("entre 10 e 50 g arredonda ao grama", arredondaGramas(37.4) === 37);
 ok("arredonda 20–100 g a 5 g", arredondaGramas(177.84 / 2) === 90);
 ok("arredonda acima de 100 g a 10 g", arredondaGramas(177.84) === 180);
-ok("arredonda nunca para zero", arredondaGramas(0.2) === 1);
+ok("arredonda nunca para zero", arredondaGramas(0.2) === 0.5);
+{
+  let pior = 0;
+  for (let g = 10; g <= 600; g += 0.37) pior = Math.max(pior, Math.abs(arredondaGramas(g) - g) / g);
+  ok("de 10 g em diante, o arredondamento erra no máximo ~5%", pior <= 0.051, `${(pior * 100).toFixed(1)}%`);
+}
 
 const arroz = trocas(A("arroz-tipo-1-cozido"), 150, "carboidrato", B);
 ok("150 g de arroz cozido: alvo perto de 42 g de carbo", Math.abs((arroz.alvo ?? 0) - 42.1) < 0.2, String(arroz.alvo));
@@ -129,6 +139,34 @@ const f = (o: string, g: number, c: Criterio, d: string) => trocas(A(o), g, c, B
 ok("100 g de frango grelhado → ovos com proteína parecida", (() => { const t = f("frango-peito-sem-pele-grelhado", 100, "proteina", "ovo-de-galinha-inteiro-cozido-10minutos"); return !!t && Math.abs(t.igualado - 32) < 2; })());
 ok("ovos no lugar do frango avisam mais gordura", f("frango-peito-sem-pele-grelhado", 100, "proteina", "ovo-de-galinha-inteiro-cozido-10minutos")?.avisos.some((a) => /gordura/.test(a)) ?? false);
 ok("100 g de arroz → batata-doce existe", !!f("arroz-tipo-1-cozido", 100, "carboidrato", "batata-doce-cozida"));
+
+secao("11. CORREÇÕES DA AUDITORIA (14/10)");
+for (const s of ["inhame-cru", "cara-cru", "batata-baroa-crua", "beterraba-crua"]) {
+  if (!B.has(s)) continue;
+  const r = trocas(A(s), 150, "carboidrato", B);
+  ok(`${s}: nunca troca com alimento cozido/pronto`, r.trocas.every((t) => estadoDe(t.alimento) === "cru"), r.trocas.map((t) => t.alimento.slug).join(","));
+}
+ok("feijão por proteína tem trocas", trocas(A("feijao-carioca-cozido"), 140, "proteina", B).trocas.length > 0);
+ok("queijo minas por proteína inclui iogurte", trocas(A("queijo-minas-frescal"), 45, "proteina", B).trocas.some((t) => /iogurte/.test(t.alimento.slug)));
+ok("banana por carboidrato inclui morango", trocas(A("banana-prata-crua"), 75, "carboidrato", B).trocas.some((t) => t.alimento.slug === "morango-cru"));
+ok("chocolate por carboidrato: sem grupo (não vira arroz)", trocas(A("chocolate-ao-leite"), 30, "carboidrato", B).recusa === "sem-grupo");
+ok("requeijão não é troca de queijo minas", !trocas(A("queijo-minas-frescal"), 45, "proteina", B).trocas.some((t) => /requeijao/.test(t.alimento.slug)));
+ok("8 g de azeite → 1 colher de sopa", medidaCaseira(A("azeite-de-oliva-extra-virgem"), 8)?.texto === "1 colher de sopa", medidaCaseira(A("azeite-de-oliva-extra-virgem"), 8)?.texto);
+ok("150 g de iogurte → 1 copo americano", medidaCaseira(A("iogurte-natural"), 150)?.texto === "1 copo americano", medidaCaseira(A("iogurte-natural"), 150)?.texto);
+ok("mamão formosa nunca em 'unidade'", !/unidade/.test(medidaCaseira(A("mamao-formosa-cru"), 155)?.texto ?? ""));
+{
+  /* O aviso de calorias aparece exatamente quando a diferença passa de 15% (e de 20 kcal). */
+  let erradas = 0;
+  for (const r of REFERENCIAS) for (const c of ["carboidrato", "proteina"] as Criterio[]) {
+    const res = trocas(A(r.slug), r.gramas * 2, c, B);
+    for (const t of res.trocas) {
+      const e0 = res.macrosOrigem.energia!, e1 = t.macros.energia!;
+      const deve = Math.abs(e1 - e0) > 20 && Math.abs(e1 - e0) > e0 * 0.15;
+      if (deve !== t.avisos.some((a) => /calorias/.test(a))) erradas++;
+    }
+  }
+  ok("aviso de calorias coerente com a diferença real", erradas === 0, String(erradas));
+}
 
 console.log(`\n${"=".repeat(64)}\n${falhas === 0 ? "TODOS OS TESTES PASSARAM" : `${falhas} FALHA(S)`}`);
 process.exit(falhas === 0 ? 0 : 1);

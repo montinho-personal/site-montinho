@@ -6,7 +6,6 @@ import { trackEvent } from "@/lib/analytics";
 import { PONTE, consome } from "@/lib/ferramentas/ponte";
 import { buscaAlimentos, montaIndice, normaliza } from "@/lib/alimentos/busca";
 import { formataNumero, leGramas } from "@/lib/alimentos/escala";
-import { nomeNatural } from "@/lib/alimentos/nome";
 import type { Alimento } from "@/lib/alimentos/tipos";
 import {
   AVISO_GERAL,
@@ -16,7 +15,12 @@ import {
   TEXTO_RECUSA,
   grupoDe,
   macrosDe,
+  APELIDOS,
+  MEMBRO_POR_SLUG,
+  medidasValidas,
   nomeCriterio,
+  nomeExibicao,
+  rotuloMedida,
   trocaDireta,
   trocas,
   type AlimentoEq,
@@ -62,37 +66,80 @@ function Busca({
   placeholder: string;
 }) {
   const [consulta, setConsulta] = useState("");
-  const resultados = useMemo(() => (escolhido ? [] : buscaAlimentos(indice, consulta, { limite: 7 })), [indice, consulta, escolhido]);
+  const campo = useRef<HTMLInputElement>(null);
+  /* Depois de "trocar", o cursor volta para a busca — quem clicou quer digitar outro alimento. */
+  const focarBusca = useRef(false);
+  useEffect(() => {
+    if (focarBusca.current && !escolhido) {
+      focarBusca.current = false;
+      campo.current?.focus();
+    }
+  }, [escolhido]);
+  /*
+   * A busca geral ordena por texto; aqui os alimentos da lista de trocas vêm
+   * primeiro ("frango" traz o peito grelhado antes de asa e coração), sem
+   * esconder o resto da base.
+   */
+  const resultados = useMemo(() => {
+    if (escolhido) return [];
+    const todos = buscaAlimentos(indice, consulta, { limite: 40 });
+    const q = normaliza(consulta);
+    /* Entre os curados: quem tem o termo como apelido exato, depois os prontos, depois os crus. */
+    const peso = (slug: string) =>
+      ((APELIDOS[slug] ?? []).some((x) => normaliza(x) === q) ? 0 : 2) + (MEMBRO_POR_SLUG.get(slug)?.estado === "cru" ? 1 : 0);
+    const curados = todos
+      .filter((r) => MEMBRO_POR_SLUG.has(r.alimento.slug))
+      .map((r, i) => ({ r, i }))
+      .sort((a, b) => peso(a.r.alimento.slug) - peso(b.r.alimento.slug) || a.i - b.i)
+      .map((x) => x.r);
+    const outros = todos.filter((r) => !MEMBRO_POR_SLUG.has(r.alimento.slug));
+    return [...curados, ...outros].slice(0, 8);
+  }, [indice, consulta, escolhido]);
   const fora = useMemo(() => {
     const q = normaliza(consulta);
     return q.length >= 3 ? FORA_DA_BASE.find((f) => f.termo.test(q)) : undefined;
   }, [consulta]);
   const listaId = `${id}-lista`;
+  /* A busca só começa com 2 letras: com uma, "não está na base" seria falso. */
+  const mostraLista = normaliza(consulta).length >= 2;
 
   return (
     <div>
-      <label htmlFor={id} className="block text-gray-300 text-sm font-medium mb-2">{rotulo}</label>
       {escolhido ? (
-        <div className="flex items-start justify-between gap-3 border border-white/25 px-4 py-3 min-h-[52px]">
-          <span className="text-white">{escolhido.nome}</span>
-          <button type="button" onClick={() => { onEscolhe(null); setConsulta(""); }} className="text-gray-400 hover:text-white text-sm underline underline-offset-4 shrink-0">
+        <p className="block text-gray-300 text-sm font-medium mb-2">{rotulo}</p>
+      ) : (
+        <label htmlFor={id} className="block text-gray-300 text-sm font-medium mb-2">{rotulo}</label>
+      )}
+      {escolhido ? (
+        <div className="flex items-center justify-between gap-3 border border-white/25 pl-4 pr-2 py-1 min-h-[52px]">
+          <span>
+            <span className="text-white block">{nomeExibicao(escolhido)}</span>
+            {nomeExibicao(escolhido) !== escolhido.nome && <span className="text-gray-400 text-xs">TACO: {escolhido.nome}</span>}
+          </span>
+          <button
+            type="button"
+            onClick={() => { onEscolhe(null); setConsulta(""); focarBusca.current = true; }}
+            aria-label={`Trocar ${nomeExibicao(escolhido)} por outro alimento`}
+            className="text-gray-400 hover:text-white text-sm underline underline-offset-4 shrink-0 min-h-[44px] px-2"
+          >
             trocar
           </button>
         </div>
       ) : (
         <>
           <input
+            ref={campo}
             id={id}
             type="search"
             autoComplete="off"
             enterKeyHint="search"
             placeholder={placeholder}
             value={consulta}
-            aria-controls={listaId}
+            aria-controls={mostraLista ? listaId : undefined}
             onChange={(e) => setConsulta(e.target.value)}
             className="w-full bg-black border border-white/25 focus:border-[#BA9E50] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#BA9E50] text-white px-4 py-3 min-h-[52px] transition-colors"
           />
-          {consulta.trim() !== "" && (
+          {mostraLista && (
             <ul id={listaId} className="mt-2 divide-y divide-white/10 border-t border-white/10">
               {resultados.map((r) => {
                 const a = porSlug.get(r.alimento.slug);
@@ -104,7 +151,8 @@ function Busca({
                       onClick={() => { onEscolhe(a); setConsulta(""); }}
                       className="w-full text-left py-3 hover:bg-white/5 transition-colors min-h-[48px] px-2 -mx-2 text-gray-200"
                     >
-                      {a.nome}
+                      <span className="block">{nomeExibicao(a)}</span>
+                      {nomeExibicao(a) !== a.nome && <span className="block text-gray-400 text-xs">TACO: {a.nome}</span>}
                     </button>
                   </li>
                 );
@@ -134,7 +182,7 @@ function LinhaMacros({ m, criterio }: { m: Macros; criterio: Criterio }) {
         const destaque = id === criterio;
         return (
           <div key={id} className="flex gap-1.5">
-            <dt className={destaque ? "font-semibold" : "text-gray-400"} style={destaque ? { color: OURO } : undefined}>{rotulo}{destaque ? " ✓" : ""}</dt>
+            <dt className={destaque ? "font-semibold" : "text-gray-400"} style={destaque ? { color: OURO } : undefined}>{rotulo}{destaque ? <><span aria-hidden> ✓</span><span className="sr-only"> (nutriente igualado)</span></> : ""}</dt>
             <dd className={destaque ? "text-white font-semibold tabular-nums" : "text-gray-300 tabular-nums"}>{v}</dd>
           </div>
         );
@@ -148,14 +196,15 @@ function CartaoTroca({ t, criterio, linkavel }: { t: Troca; criterio: Criterio; 
     <li className="border border-white/15 p-4">
       <p className="text-gray-200 mb-1">
         {linkavel ? (
-          <Link href={`/alimentos/${t.alimento.slug}`} className="underline underline-offset-4 decoration-white/30 hover:text-white">{t.alimento.nome}</Link>
+          <Link href={`/alimentos/${t.alimento.slug}`} className="underline underline-offset-4 decoration-white/30 hover:text-white">{nomeExibicao(t.alimento)}</Link>
         ) : (
-          t.alimento.nome
+          nomeExibicao(t.alimento)
         )}
       </p>
+      {nomeExibicao(t.alimento) !== t.alimento.nome && <p className="text-gray-400 text-xs mb-2">TACO: {t.alimento.nome}</p>}
       <p className="text-3xl font-bold text-white tabular-nums mb-1" style={h}>{t.gramas} g</p>
       {t.medida && (
-        <p className="text-gray-300 text-sm mb-3">≈ {t.medida.texto} <span className="text-gray-500">({gr(t.medida.gramasCada)} g cada)</span></p>
+        <p className="text-gray-300 text-sm mb-3">≈ {t.medida.texto} <span className="text-gray-400">({gr(t.medida.gramasCada)} g cada)</span></p>
       )}
       <LinhaMacros m={t.macros} criterio={criterio} />
       {t.nota && <p className="text-gray-400 text-xs mt-3">{t.nota}</p>}
@@ -173,23 +222,27 @@ export default function TrocaCerta({ alimentos, indexaveis }: { alimentos: Alime
         alimentos.map(
           (x) =>
             ({
-              id: x.slug, slug: x.slug, nome: x.nome, categoria: x.categoria, aliases: x.aliases ?? [],
+              id: x.slug, slug: x.slug, nome: x.nome, categoria: x.categoria, aliases: [...(x.aliases ?? []), ...(APELIDOS[x.slug] ?? [])],
               preparo: "cru", nutrientes: [], porcoes: [],
               proveniencia: { fonte: "TACO", idNaFonte: "", descricaoOriginal: "", versao: "", verificadoEm: "" },
-              indexavel: false,
+              /* O bônus de curadoria da busca vale aqui também, como no comparador. */
+              indexavel: linkaveis.has(x.slug),
             }) as Alimento,
         ),
       ),
-    [alimentos],
+    [alimentos, linkaveis],
   );
 
   const [origem, setOrigem] = useState<AlimentoEq | null>(null);
-  const [texto, setTexto] = useState("150");
+  const [texto, setTexto] = useState("100");
+  /* A quantidade só é sugerida enquanto a pessoa não digitou nada. */
+  const tocado = useRef(false);
+  const campoGramas = useRef<HTMLInputElement>(null);
+  const raiz = useRef<HTMLDivElement>(null);
   const [criterio, setCriterio] = useState<Criterio>("carboidrato");
   const [verTodas, setVerTodas] = useState(false);
   const [destino, setDestino] = useState<AlimentoEq | null>(null);
   const [especifico, setEspecifico] = useState(false);
-  const resultadoRef = useRef<HTMLDivElement>(null);
 
   /** O alimento que veio de outra página (página do alimento, comparador). */
   useEffect(() => {
@@ -197,29 +250,48 @@ export default function TrocaCerta({ alimentos, indexaveis }: { alimentos: Alime
     if (slug === null) return;
     const a = porSlug.get(slug);
     if (!a) return;
+    /* O food_swap_open já foi contado no clique do link; aqui só a escolha. */
     escolheOrigem(a, "ponte");
-    trackEvent("food_swap_open", { placement: "ponte" });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    /* Quem veio de outra página já escolheu: leva a tela até a calculadora. */
+    requestAnimationFrame(() => raiz.current?.scrollIntoView({ block: "start" }));
   }, [porSlug]);
 
   function escolheOrigem(a: AlimentoEq | null, placement = "busca") {
     setOrigem(a);
     setVerTodas(false);
     setDestino(null);
-    if (!a) return;
-    const grupo = grupoDe(a, criterio);
-    const padrao = grupo ? GRUPOS[grupo].criterioPadrao : "energia";
-    setCriterio(padrao);
+    if (!a) {
+      setEspecifico(false);
+      return;
+    }
+    /*
+     * O critério sugerido depende só do alimento, nunca do critério que
+     * estava marcado antes: o mesmo alimento abre sempre igual. Se o grupo
+     * pede um nutriente que a TACO não publica para este alimento (leite
+     * integral, em reavaliação), vai para o primeiro critério com dado.
+     */
+    const grupo = grupoDe(a, "carboidrato") ?? grupoDe(a, "proteina");
+    const padrao: Criterio = grupo ? GRUPOS[grupo].criterioPadrao : "energia";
+    const comDado = [padrao, ...CRITERIOS.map((c) => c.id)].find((c) => a[c] !== null) ?? padrao;
+    setCriterio(comDado);
     /*
      * Quantidade de partida: 100 g, que é como as perguntas chegam ("100 g de
-     * frango equivalem a quantos ovos?"). As medidas caseiras ficam nos botões
-     * logo abaixo do campo, para quem pensa em conchas e fatias.
+     * frango equivalem a quantos ovos?") — mas só se a pessoa ainda não
+     * digitou a dela. As medidas caseiras ficam nos botões abaixo do campo.
      */
-    setTexto("100");
+    if (!tocado.current) setTexto("100");
     trackEvent("food_swap_source_selected", { food_group_source: grupo ?? "nenhum", placement });
+    /* O botão clicado some da tela; o foco vai para o próximo campo. */
+    requestAnimationFrame(() => campoGramas.current?.focus({ preventScroll: true }));
   }
 
-  const gramas = leGramas(texto);
+  /* Com a quantidade apagada no meio da edição, a tela mantém a última conta válida. */
+  const ultimaValida = useRef<number | null>(null);
+
+  const lida = leGramas(texto);
+  if (lida !== null) ultimaValida.current = lida;
+  const gramas = lida ?? ultimaValida.current;
+  const gramasInvalidas = texto !== "" && lida === null;
   const resultado = useMemo(
     () => (origem && gramas !== null ? trocas(origem, gramas, criterio, porSlug) : null),
     [origem, gramas, criterio, porSlug],
@@ -244,11 +316,16 @@ export default function TrocaCerta({ alimentos, indexaveis }: { alimentos: Alime
     });
   }, [resultado, origem, criterio]);
 
+  const resumoVivo = !resultado
+    ? ""
+    : resultado.recusa
+      ? `${gr(resultado.gramas)} g: sem troca por ${nomeCriterio(criterio).curto}.`
+      : `${gr(resultado.gramas)} g: ${resultado.trocas.length} trocas por ${nomeCriterio(criterio).curto}.`;
   const visiveis = resultado ? (verTodas ? resultado.trocas : resultado.trocas.slice(0, VISIVEIS)) : [];
   const nc = nomeCriterio(criterio);
 
   return (
-    <div className="border border-white/15 p-5 sm:p-8" style={{ background: "#0d0d0d" }}>
+    <div ref={raiz} className="border border-white/15 p-5 sm:p-8 scroll-mt-20" style={{ background: "#0d0d0d" }}>
       <div className="grid gap-6 sm:grid-cols-[1fr_160px]">
         <Busca
           id="troca-origem"
@@ -265,28 +342,31 @@ export default function TrocaCerta({ alimentos, indexaveis }: { alimentos: Alime
             id="troca-gramas"
             type="text"
             inputMode="decimal"
+            ref={campoGramas}
             value={texto}
-            onChange={(e) => setTexto(e.target.value)}
-            aria-invalid={texto !== "" && gramas === null}
+            onChange={(e) => { tocado.current = true; setTexto(e.target.value); }}
+            aria-invalid={gramasInvalidas}
+            aria-describedby={gramasInvalidas ? "troca-gramas-erro" : undefined}
             className="w-full bg-black border border-white/25 focus:border-[#BA9E50] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#BA9E50] text-white px-4 py-3 min-h-[52px] tabular-nums"
           />
+          {gramasInvalidas && (
+            <p id="troca-gramas-erro" className="text-gray-300 text-xs mt-2">Use um número de 1 a 5.000.</p>
+          )}
         </div>
       </div>
 
-      {origem?.porcoes && origem.porcoes.length > 0 && (
-        <div className="mt-3 flex flex-wrap gap-2" aria-label="Medidas caseiras">
-          {origem.porcoes
-            .filter((p) => !/porcao|metade|lata/.test(p.n))
-            .map((p) => (
-              <button
-                key={p.n}
-                type="button"
-                onClick={() => setTexto(String(p.g))}
-                className="border border-white/20 text-gray-300 text-xs px-3 py-2 min-h-[36px] hover:border-white/50"
-              >
-                {p.n.replace("colher de arroz ou servir", "colher de servir").replace("pedaco", "pedaço").replace("requeijao", "requeijão").replace("medio", "médio")} ({gr(p.g)} g)
-              </button>
-            ))}
+      {origem && medidasValidas(origem).length > 0 && (
+        <div className="mt-3 flex flex-wrap gap-2" role="group" aria-label="Usar uma medida caseira">
+          {medidasValidas(origem).map((p) => (
+            <button
+              key={p.n}
+              type="button"
+              onClick={() => { tocado.current = true; setTexto(String(p.g)); }}
+              className="border border-white/20 text-gray-300 text-xs px-3 min-h-[44px] hover:border-white/50"
+            >
+              {rotuloMedida(p.n)} ({gr(p.g)} g)
+            </button>
+          ))}
         </div>
       )}
 
@@ -300,7 +380,12 @@ export default function TrocaCerta({ alimentos, indexaveis }: { alimentos: Alime
                 key={c.id}
                 type="button"
                 aria-pressed={ativo}
-                onClick={() => { setCriterio(c.id); setVerTodas(false); trackEvent("food_swap_criterion_selected", { criterion: c.id }); }}
+                onClick={() => {
+                  if (ativo) return;
+                  setCriterio(c.id);
+                  setVerTodas(false);
+                  trackEvent("food_swap_criterion_selected", { criterion: c.id });
+                }}
                 className={`min-h-[52px] px-2 border text-sm font-medium transition-colors ${ativo ? "text-black" : "border-white/25 text-gray-200 hover:border-white/50"}`}
                 style={ativo ? { background: OURO, borderColor: OURO } : undefined}
               >
@@ -311,16 +396,19 @@ export default function TrocaCerta({ alimentos, indexaveis }: { alimentos: Alime
         </div>
       </fieldset>
 
-      <div ref={resultadoRef} aria-live="polite" className="mt-8">
+      {/* Uma frase curta para leitor de tela; a lista inteira não é relida a cada tecla. */}
+      <p className="sr-only" aria-live="polite">{resumoVivo}</p>
+
+      <div className="mt-8">
         {!origem && <p className="text-gray-400 text-sm">Escolha um alimento para ver as trocas.</p>}
         {origem && gramas === null && <p className="text-gray-400 text-sm">Informe a quantidade em gramas (de 1 a 5.000).</p>}
 
         {resultado && (
           <>
             <p className="text-gray-300 leading-relaxed mb-5">
-              <strong className="text-white">{gr(resultado.gramas)} g de {nomeNatural(origem!.nome).toLowerCase()}</strong>
+              <strong className="text-white">{gr(resultado.gramas)} g de {nomeExibicao(origem!).toLowerCase()}</strong>
               {resultado.alvo !== null && resultado.recusa !== "origem-sem-dado" ? (
-                <> fornecem cerca de <strong style={{ color: OURO }}>{fmt(criterio, resultado.alvo)}</strong> de {nc.curto}.</>
+                <> fornecem cerca de <strong style={{ color: OURO }}>{fmt(criterio, resultado.alvo)}</strong>{criterio === "energia" ? "" : ` de ${nc.curto}`}.</>
               ) : (
                 "."
               )}
@@ -328,13 +416,9 @@ export default function TrocaCerta({ alimentos, indexaveis }: { alimentos: Alime
 
             {resultado.recusa ? (
               <p className="text-gray-300 border-l-2 pl-4 mb-6" style={{ borderColor: OURO }}>{TEXTO_RECUSA[resultado.recusa]}</p>
-            ) : resultado.trocas.length === 0 ? (
-              <p className="text-gray-300 border-l-2 pl-4 mb-6" style={{ borderColor: OURO }}>
-                Não encontramos troca prática no mesmo grupo para essa quantidade. Tente outra quantidade ou escolha um alimento específico abaixo.
-              </p>
             ) : (
               <>
-                <h3 className="text-white font-semibold mb-3">Trocas equivalentes em {nc.curto}</h3>
+                <h2 className="text-white font-semibold text-base mb-3">Trocas equivalentes em {nc.curto}</h2>
                 <ul className="grid gap-3 sm:grid-cols-2">
                   {visiveis.map((t) => (
                     <CartaoTroca key={t.alimento.slug} t={t} criterio={criterio} linkavel={linkaveis.has(t.alimento.slug)} />
@@ -357,7 +441,7 @@ export default function TrocaCerta({ alimentos, indexaveis }: { alimentos: Alime
                 <button
                   type="button"
                   onClick={() => setEspecifico(true)}
-                  className="text-sm underline underline-offset-4 decoration-white/30 text-gray-300 hover:text-white"
+                  className="text-sm underline underline-offset-4 decoration-white/30 text-gray-300 hover:text-white min-h-[44px]"
                 >
                   Quero trocar por um alimento específico
                 </button>
@@ -372,18 +456,21 @@ export default function TrocaCerta({ alimentos, indexaveis }: { alimentos: Alime
                     escolhido={destino}
                     onEscolhe={(a) => { setDestino(a); if (a) trackEvent("food_swap_direct_comparison", { criterion: criterio }); }}
                   />
-                  {direto && destino && (
+                  {destino && origem && destino.slug === origem.slug && (
+                    <p className="mt-5 text-gray-300">É o mesmo alimento: escolha outro para comparar.</p>
+                  )}
+                  {direto && destino && destino.slug !== origem?.slug && (
                     <div className="mt-5">
                       {direto.troca ? (
                         <>
                           <p className="text-gray-300 mb-4">
-                            {gr(resultado.gramas)} g de {nomeNatural(origem!.nome).toLowerCase()} ≈{" "}
-                            <strong className="text-white">{direto.troca.gramas} g de {nomeNatural(destino.nome).toLowerCase()}</strong>
+                            {gr(resultado.gramas)} g de {nomeExibicao(origem!).toLowerCase()} ≈{" "}
+                            <strong className="text-white">{direto.troca.gramas} g de {nomeExibicao(destino).toLowerCase()}</strong>
                             {direto.troca.medida ? ` (≈ ${direto.troca.medida.texto})` : ""}, em {nc.curto}.
                           </p>
                           <Comparacao
-                            a={{ nome: origem!.nome, gramas: resultado.gramas, m: resultado.macrosOrigem }}
-                            b={{ nome: destino.nome, gramas: direto.troca.gramas, m: direto.troca.macros }}
+                            a={{ slug: origem!.slug, nome: origem!.nome, gramas: resultado.gramas, m: resultado.macrosOrigem }}
+                            b={{ slug: destino.slug, nome: destino.nome, gramas: direto.troca.gramas, m: direto.troca.macros }}
                             criterio={criterio}
                           />
                           {direto.troca.avisos.length > 0 && <p className="text-gray-400 text-sm mt-3">{direto.troca.avisos.join(" ")}</p>}
@@ -398,8 +485,8 @@ export default function TrocaCerta({ alimentos, indexaveis }: { alimentos: Alime
                                 Trocando peso por peso ({gr(resultado.gramas)} g de cada):
                               </p>
                               <Comparacao
-                                a={{ nome: origem!.nome, gramas: resultado.gramas, m: resultado.macrosOrigem }}
-                                b={{ nome: destino.nome, gramas: resultado.gramas, m: macrosDe(destino, resultado.gramas) }}
+                                a={{ slug: origem!.slug, nome: origem!.nome, gramas: resultado.gramas, m: resultado.macrosOrigem }}
+                                b={{ slug: destino.slug, nome: destino.nome, gramas: resultado.gramas, m: macrosDe(destino, resultado.gramas) }}
                                 criterio={criterio}
                               />
                             </>
@@ -412,7 +499,7 @@ export default function TrocaCerta({ alimentos, indexaveis }: { alimentos: Alime
               )}
             </div>
 
-            <p className="text-gray-500 text-xs mt-8 leading-relaxed">{AVISO_GERAL}</p>
+            <p className="text-gray-400 text-xs mt-8 leading-relaxed">{AVISO_GERAL}</p>
 
             <div className="mt-8 border border-white/15 p-5">
               <p className="text-gray-200 mb-4">Quer montar refeições inteiras com alimentos de que você gosta, já com as porções?</p>
@@ -437,12 +524,12 @@ function Comparacao({
   b,
   criterio,
 }: {
-  a: { nome: string; gramas: number; m: Macros };
-  b: { nome: string; gramas: number; m: Macros };
+  a: { slug: string; nome: string; gramas: number; m: Macros };
+  b: { slug: string; nome: string; gramas: number; m: Macros };
   criterio: Criterio;
 }) {
   const linhas: [keyof Macros, string, boolean][] = [
-    ["carboidrato", "Carboidratos", false],
+    ["carboidrato", "Carbo", false],
     ["proteina", "Proteína", false],
     ["lipideos", "Gordura", false],
     ["energia", "Calorias", true],
@@ -456,8 +543,8 @@ function Comparacao({
         <thead>
           <tr className="border-b border-white/20">
             <th scope="col" className={th}></th>
-            <th scope="col" className={th}>{nomeNatural(a.nome)} · {gr(a.gramas)} g</th>
-            <th scope="col" className="text-left text-gray-400 font-medium py-2">{nomeNatural(b.nome)} · {gr(b.gramas)} g</th>
+            <th scope="col" className={th}>{nomeExibicao(a)} · {gr(a.gramas)} g</th>
+            <th scope="col" className="text-left text-gray-400 font-medium py-2">{nomeExibicao(b)} · {gr(b.gramas)} g</th>
           </tr>
         </thead>
         <tbody>
