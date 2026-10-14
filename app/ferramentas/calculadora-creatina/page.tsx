@@ -79,6 +79,7 @@ const S80 = saturacao(80);
 const R50 = referencia(50);
 const R60 = referencia(60);
 const R90 = referencia(90);
+const R120 = referencia(120);
 
 const faq: ItemFAQ[] = [
   { question: "Quanto de creatina tomar por dia?", answer: `De ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g por dia, todos os dias. É a faixa do consenso da International Society of Sports Nutrition para adultos saudáveis. Pelo peso, a conta é de ${g2(G_POR_KG_MANUTENCAO)} g por kg — que dá ${MANUTENCAO_MIN} g para a maioria das pessoas.` },
@@ -99,6 +100,12 @@ const faq: ItemFAQ[] = [
   { question: "Como fazer saturação de creatina?", answer: `Cerca de ${g2(G_POR_KG_SATURACAO)} g por kg por dia, divididos em quatro porções, por 5 a 7 dias — para 70 kg, uns ${g(S70.diaria)} g por dia, em porções de cerca de ${g(S70.porDose)} g. Depois, a dose de manutenção todos os dias.` },
   { question: "Quanto tempo dura 300 g de creatina?", answer: `${diasPorDose(300, 3)} dias tomando 3 g por dia, ou ${diasPorDose(300, 5)} dias com 5 g. Com saturação, dura menos, porque os primeiros dias usam mais.` },
   { question: "Quanto tempo dura 500 g de creatina?", answer: `Cerca de ${diasPorDose(500, 3)} dias com 3 g por dia, ou ${diasPorDose(500, 5)} dias com 5 g.` },
+  { question: "Quanto tempo dura 1 kg de creatina?", answer: `${diasPorDose(1000, 5)} dias tomando 5 g por dia, ou ${diasPorDose(1000, 3)} dias com 3 g. Com saturação no começo, dura alguns dias menos.` },
+  { question: "Quem tem 60 kg toma quanto de creatina? E 90 e 120 kg?", answer: `Pela conta de ${g2(G_POR_KG_MANUTENCAO)} g por kg: ${g(R60.diaria)} g por dia para 60 kg, ${g(R90.diaria)} g para 90 kg e ${g(R120.diaria)} g para 120 kg. Para 60 e 90 kg a conta dá menos que ${MANUTENCAO_MIN} g e a dose sobe para o mínimo estudado. Em qualquer peso, até ${MANUTENCAO_MAX} g continua dentro da faixa.` },
+  { question: "Pode tomar 4 g de creatina por dia? E 6 g?", answer: `4 g está dentro da faixa de ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g e funciona como qualquer dose dela. 6 g passa um pouco da faixa estudada para uso diário, sem vantagem: o estoque do músculo já fica cheio com menos, e o excesso é eliminado.` },
+  { question: "A altura muda a dose de creatina?", answer: "Não. A dose é calculada pelo peso, ou pela massa magra para quem sabe o percentual de gordura. A altura não entra na conta da ISSN, e calculadora que pede altura está usando outro critério." },
+  { question: "O que acontece se eu tomar creatina e não malhar?", answer: "O músculo enche o estoque de creatina do mesmo jeito, e o peso pode subir um pouco pela água dentro dele. Mas o efeito que interessa, conseguir treinar com um pouco mais de carga e de repetições, só vira músculo se houver treino. Sem treino, o resultado visível é quase nenhum." },
+  { question: "Qual é o ponto negativo da creatina?", answer: "Os mais comuns são pequenos: o peso sobe um pouco nas primeiras semanas pela água no músculo, doses altas de uma vez podem incomodar o estômago e a creatinina do exame de sangue pode subir sem que o rim esteja pior. Quem tem doença renal só deve usar com orientação médica." },
   { question: "Quanto tempo a creatina leva para fazer efeito?", answer: `Os estoques ficam cheios em cerca de 5 a 7 dias com saturação, ou em 3 a 4 semanas sem ela (${DIAS_ATE_SATURAR_SEM} dias com 3 g por dia no estudo clássico). O ganho de força aparece aos poucos, junto com o treino.` },
   { question: "Creatina engorda?", answer: "Não engorda no sentido de gordura. O peso na balança pode subir um pouco nas primeiras semanas porque o músculo guarda mais água junto com a creatina — isso é água dentro da célula, não gordura." },
   { question: "Creatina dá retenção de líquido?", answer: "Pode aumentar a água dentro do músculo, principalmente nas primeiras semanas e com saturação. Isso não é inchaço embaixo da pele: é o músculo mais hidratado." },

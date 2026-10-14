@@ -824,3 +824,20 @@ updatedAt 08/10 nos quatro. Artigo novo candidato: instrutor × coach × persona
 - Fora: rosto, costas, piscina, jump, polichinelo e agachamento.
 - Canibalização vista: 3 páginas no mesmo grupo (este artigo responde "emagrece?"; `polichinelo-queima-quantas-calorias` e a calculadora respondem calorias/quantidade). O FAQ novo responde a pergunta e manda para a conta, sem duplicar a tabela.
 - Título: proposta enviada ao Montinho.
+
+## 2026-10-14 — Título: quantos-quilos-perder-ate-fim-do-ano (aprovado pelo Montinho)
+
+| Página | Campo | ATUAL | NOVO |
+|---|---|---|---|
+| /blog/quantos-quilos-perder-ate-fim-do-ano | título | Quantos Quilos Dá para Perder até o Fim do Ano com Saúde (56) | Quantos Quilos Dá para Perder até o Fim do Ano? Calcule (54) |
+
+- Motivo: a visão por IA já mostra o número tirado do artigo (CTR 0,2% na posição 5,5); o título passa a dizer que há calculadora. Sem `updatedAt`.
+
+## 2026-10-14 — /ferramentas/calculadora-creatina (ATP + print da 1ª página)
+
+- GSC (12/07–14/10): 5.320 impressões, 6 cliques, posição 9,1; "tabela de creatina por peso 60/90/120/80/50 kg" ≈ 650 impressões em 28 dias, posição ~10.
+- Print anônimo de "calculadora de creatina": a página **não aparece no trecho visível**. A visão por IA entende "creatinina" (função renal: Einstein, SBN). Resultados: Ocean Drop (0,06 g/kg), SBN, Diegomaier, Fit House, Axgard. Outras pesquisas: por peso, tabela 60/90/120 kg, quanto para 70 kg, marcas (Integralmedica, Growth, Dark Lab).
+- Export ATP: "calculadora de creatina" 1,9 mil/mês, "por peso" 880, "por kg" 50, Growth 30, Dark Lab 20. PAA: por kg, 3 g basta, 80 kg, medir scoop/3 g/5 g, 1 kg dura quanto, 70 kg, 4 g, 6 g, 10 g, ponto negativo, 60 kg, misturar, tomar sem malhar, marcas.
+- A página já tinha 37 FAQs. +6: 1 kg dura quanto, 60/90/120 kg, 4 g e 6 g, altura muda a dose, tomar sem malhar, ponto negativo — números de `lib/creatina.ts` (0,03 g/kg, faixa 3–5 g da ISSN). `creatina-test` atualizado para 43 perguntas.
+- Fora: creatinina/função renal (outra intenção), calculadoras de marca, "3 melhores marcas", "peso e altura" respondido no FAQ da altura.
+- `creatina-test` já reprovava o título (63 caracteres, limite 58); proposta enviada ao Montinho.
