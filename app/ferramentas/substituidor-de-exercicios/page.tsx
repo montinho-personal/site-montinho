@@ -59,6 +59,9 @@ export default function SubstituidorPage() {
           </nav>
           <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4" style={h}>Qual exercício posso fazer no lugar?</h1>
           <p className="text-gray-300 text-lg leading-relaxed">Escolha o exercício que quer substituir, diga o motivo e veja alternativas que preservam o objetivo do seu treino, com base nos músculos, no padrão de movimento e nos equipamentos que você tem.</p>
+          <a href="#como-usar" className="inline-flex items-center gap-2 mt-4 min-h-[44px] text-sm text-[#BA9E50] underline underline-offset-4 hover:text-white">
+            <span aria-hidden="true">▶</span> Ver como usar (vídeo de 45 s)
+          </a>
         </div>
       </section>
 
@@ -66,18 +69,6 @@ export default function SubstituidorPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Substituidor />
           <noscript><p className="text-gray-300 mt-4">A ferramenta precisa de JavaScript. As trocas mais buscadas têm páginas próprias, logo abaixo.</p></noscript>
-        </div>
-      </section>
-
-      {/* Tutorial do próprio Montinho: depois da ferramenta, para quem travou em algum passo. */}
-      <section className="pb-12 bg-black">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-white mb-2" style={h}>Como usar, em vídeo</h2>
-          <p className="text-gray-300 mb-6">Digite o exercício, escolha o motivo e marque o que você tem. O vídeo mostra os três passos e como ler o resultado.</p>
-          <div data-video-medido>
-            <YoutubeShortEmbed videoId="Mck7dwGz0as" title="Como usar o Substituidor de Exercícios — Montinho Personal Trainer" />
-          </div>
-          <VideoMedido slug="substituidor-de-exercicios" seletor="[data-video-medido]" />
         </div>
       </section>
 
@@ -106,6 +97,18 @@ export default function SubstituidorPage() {
             <ul className="space-y-2">{PAGINAS_SUBSTITUIR.filter((p) => p.isIndexable).map((p) => <li key={p.slug}><Link href={`/substituir/${p.slug}`} className={ln}>{p.h1}</Link></li>)}</ul>
           </div>
           <p className="text-gray-400 text-sm">Revisado em 5 de outubro de 2026 por <Link href="/minha-historia" className={ln}>Montinho</Link>, personal trainer em Alphaville.</p>
+        </div>
+      </section>
+
+      {/* Tutorial do próprio Montinho: no fim da página; o atalho no topo leva até aqui. */}
+      <section id="como-usar" className="py-14 border-t border-white/10 bg-black scroll-mt-24">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-white mb-2" style={h}>Como usar, em vídeo</h2>
+          <p className="text-gray-300 mb-6">Digite o exercício, escolha o motivo e marque o que você tem. O vídeo mostra os três passos e como ler o resultado.</p>
+          <div data-video-medido>
+            <YoutubeShortEmbed videoId="Mck7dwGz0as" title="Como usar o Substituidor de Exercícios — Montinho Personal Trainer" />
+          </div>
+          <VideoMedido slug="substituidor-de-exercicios" seletor="[data-video-medido]" />
         </div>
       </section>
     </>
