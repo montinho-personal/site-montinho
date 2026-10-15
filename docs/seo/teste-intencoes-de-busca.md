@@ -918,3 +918,8 @@ Três auditorias em paralelo. Corrigido:
 - Whey protein concentrado: rótulo de referência do whey concentrado Growth, porção de 30 g = 122 kcal, 23 g de proteína, 4 g de carboidrato, 1,6 g de gordura (valores declarados pelo fabricante, conferidos em reprodução da tabela; o site da marca bloqueia acesso automático). Medida "scoop" de 30 g. 1 scoop ≈ 70 g de peito de frango grelhado em proteína.
 - Tilápia (filé cru e grelhado): USDA FoodData Central SR Legacy, NDB 15261 (cru: 96 kcal, 20,08 g P, 1,7 g G) e 15262 (calor seco: 128 kcal, 26,15 g P, 2,65 g G). A API do USDA não abriu na sessão; valores conferidos em duas reproduções independentes.
 - O aviso "Whey não está na TACO" foi removido da busca.
+
+## 2026-10-15 — Troca Certa: whey pelos números do site e granola
+
+- Whey alinhado ao valor que o site já usa no Mata a Vontade (Growth, 30 g = 123 kcal, 23 g P, 2,9 g C, 2,2 g G), a pedido do Montinho. Proteína não mudou: 1 scoop continua ≈ 70 g de frango grelhado.
+- Granola entra no grupo de carboidratos com o mesmo valor do Mata a Vontade: USDA, granola caseira (NDB 08037), 489 kcal, 13,7 g P, 53,9 g C, 24,3 g G por 100 g. A tela manda conferir o rótulo da de pacote. Troca por arroz sai sempre com aviso de calorias.
