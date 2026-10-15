@@ -201,8 +201,8 @@ export default function MonteSeuCardapioPage() {
             <p className="text-gray-300 leading-relaxed">
               A maioria dos geradores entrega um cardápio de revista: quinoa, salmão, abacate — e a pessoa abandona
               na primeira semana, porque a comida da casa dela é arroz, feijão, frango e ovo. Esta ferramenta faz o
-              contrário: pergunta o que você costuma comer em cada refeição e monta a sugestão priorizando esses
-              alimentos. A base tem {ALIMENTOS_CARDAPIO.length} alimentos comuns no Brasil, com estado declarado
+              contrário: pergunta o que você costuma comer em cada refeição e monta a sugestão só com os alimentos que
+              você marcar. A base tem {ALIMENTOS_CARDAPIO.length} alimentos comuns no Brasil, com estado declarado
               (cru, cozido, grelhado) e porção caseira definida. O melhor cardápio não é o mais sofisticado — é o
               que você consegue seguir.
             </p>

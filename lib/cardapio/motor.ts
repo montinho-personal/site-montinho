@@ -173,7 +173,7 @@ export interface PedidoCardapio {
   refeicoes: number;
   dieta: Dieta;
   restricoes: Restricao[];
-  /** O que a pessoa disse que come, por momento. O motor prioriza isso. */
+  /** O que a pessoa disse que come, por momento. Quando existe, o motor usa só isso (ver `selecionados`). */
   habituais: Partial<Record<Momento, string[]>>;
 }
 
@@ -236,15 +236,37 @@ const PAPEIS: Record<Momento, { grupos: AlimentoCardapio["grupo"][][]; }> = {
   ceia: { grupos: [["lacteo", "fruta"]] },
 };
 
-/** Candidatos válidos de um momento, com os habituais na frente. */
+/**
+ * Os alimentos que a pessoa MARCOU e que servem neste momento, ou null se
+ * ela não marcou nenhum.
+ *
+ * Regra pedida pelo Montinho (15/10/2026): quem marcou alimentos recebe um
+ * cardápio só com eles — nada de banana, pasta de amendoim ou azeite que
+ * ninguém escolheu. A ordem de busca:
+ *   1. o que ela marcou para esta refeição;
+ *   2. se nesta refeição não marcou nada (ou é a ceia, que o formulário não
+ *      pergunta), o que ela marcou nas outras refeições e serve aqui;
+ *   3. se não marcou nada em lugar nenhum (pulou a etapa), null — e aí o
+ *      banco inteiro vale, porque um prato vazio não ajuda ninguém.
+ */
+export function selecionados(momento: Momento, pedido: PedidoCardapio): Set<string> | null {
+  const daRefeicao = pedido.habituais[momento] ?? [];
+  if (daRefeicao.length > 0) return new Set(daRefeicao);
+  const todos = new Set(Object.values(pedido.habituais).flat());
+  const servem = [...todos].filter((id) => ALIMENTO_CARDAPIO_POR_ID.get(id)?.momentos.includes(momento));
+  return servem.length > 0 ? new Set(servem) : null;
+}
+
+/** Candidatos válidos de um momento: só os marcados, quando há marcados. */
 function candidatos(momento: Momento, pedido: PedidoCardapio): AlimentoCardapio[] {
   const habituais = new Set(pedido.habituais[momento] ?? []);
+  const sel = selecionados(momento, pedido);
   return ALIMENTOS_CARDAPIO
     .filter(
       (a) =>
         a.momentos.includes(momento) &&
         permitido(a, pedido.dieta, pedido.restricoes) &&
-        (!a.soHabitual || habituais.has(a.id))
+        (sel ? sel.has(a.id) : !a.soHabitual || habituais.has(a.id))
     )
     .sort((a, b) => Number(habituais.has(b.id)) - Number(habituais.has(a.id)));
 }
@@ -639,12 +661,19 @@ export function alternativas(
   item: ItemCardapio,
   momento: Momento,
   pedido: PedidoCardapio,
-  jaNaRefeicao: string[]
+  jaNaRefeicao: string[],
+  /**
+   * true quando é o MOTOR que troca (versões da semana): aí só valem os
+   * alimentos marcados. Quando é a pessoa que toca em "trocar", a lista
+   * mostra o banco todo, com os marcados primeiro — a escolha é dela.
+   */
+  soSelecionados = false
 ): { alimento: AlimentoCardapio; porcoes: number }[] {
   const atual = ALIMENTO_CARDAPIO_POR_ID.get(item.alimentoId);
   if (!atual) return [];
   const saem = nutrientes(atual, item.porcoes);
   const kcalAlvo = saem.kcal;
+  const sel = selecionados(momento, pedido);
 
   return ALIMENTOS_CARDAPIO
     .filter(
@@ -653,8 +682,10 @@ export function alternativas(
         !jaNaRefeicao.includes(a.id) &&
         a.grupo === atual.grupo &&
         a.momentos.includes(momento) &&
-        permitido(a, pedido.dieta, pedido.restricoes)
+        permitido(a, pedido.dieta, pedido.restricoes) &&
+        (!soSelecionados || !sel || sel.has(a.id))
     )
+    .sort((a, b) => Number(!!sel?.has(b.id)) - Number(!!sel?.has(a.id)))
     .map((a) => {
       /** Porções que aproximam as kcal do item que sai, presas ao passo. */
       const brutas = kcalAlvo / nutrientes(a, 1).kcal;
@@ -675,6 +706,32 @@ export function alternativas(
       return true;
     })
     .slice(0, 4);
+}
+
+/**
+ * Tira um item do prato e reequilibra o dia com o que sobrou.
+ *
+ * As porções dos outros itens se ajustam pelo mesmo refinamento da geração
+ * (presas às porções caseiras), então o dia volta para perto da meta sem
+ * trazer alimento novo. Se a refeição ficar vazia, ela fica vazia: a pessoa
+ * tirou, a ferramenta não repõe por conta própria.
+ */
+export function excluiItem(c: CardapioDia, refeicaoIdx: number, alimentoId: string): CardapioDia {
+  const novo: CardapioDia = {
+    ...c,
+    refeicoes: c.refeicoes.map((r, i) => ({
+      ...r,
+      itens: r.itens.filter((it) => i !== refeicaoIdx || it.alimentoId !== alimentoId).map((it) => ({ ...it })),
+    })),
+  };
+  const extras = new Set(
+    novo.refeicoes.flatMap((r) =>
+      r.itens.filter((i) => ALIMENTO_CARDAPIO_POR_ID.get(i.alimentoId)?.grupo === "gordura").map((i) => i.alimentoId)
+    )
+  );
+  refinaDia(novo, extras);
+  for (const r of novo.refeicoes) r.itens = r.itens.filter((i) => i.porcoes > 0);
+  return novo;
 }
 
 export const SEM_ALTERNATIVA =
@@ -722,7 +779,7 @@ export function proximaVersao(base: CardapioDia, pedido: PedidoCardapio): Cardap
       if (!a || (a.grupo !== "proteina-animal" && a.grupo !== "proteina-vegetal" && a.grupo !== "carbo-base")) {
         return item;
       }
-      const alt = alternativas(item, r.momento, pedido, r.itens.map((i) => i.alimentoId))[0];
+      const alt = alternativas(item, r.momento, pedido, r.itens.map((i) => i.alimentoId), true)[0];
       if (!alt) return item;
       mudou = true;
       return { alimentoId: alt.alimento.id, porcoes: alt.porcoes };
@@ -876,7 +933,7 @@ export function porQueAssim(pedido: PedidoCardapio): string {
   const habituais = Object.values(pedido.habituais).flat().length;
   const partes = [
     `Você pediu ${pedido.refeicoes} refeições`,
-    habituais > 0 ? `e marcou ${habituais} alimento${habituais > 1 ? "s" : ""} que já fazem parte da sua rotina — o cardápio prioriza esses` : "e o cardápio usa alimentos comuns no prato brasileiro",
+    habituais > 0 ? `e marcou ${habituais} alimento${habituais > 1 ? "s" : ""} que já fazem parte da sua rotina — o cardápio usa só esses` : "e o cardápio usa alimentos comuns no prato brasileiro",
   ];
   return `${partes.join(" ")}. As calorias vêm da sua meta, a proteína usa a mesma referência das calculadoras do site, e as porções são caseiras de propósito — um cardápio que você consegue montar sem balança de precisão.`;
 }

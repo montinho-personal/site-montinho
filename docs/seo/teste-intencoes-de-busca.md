@@ -963,3 +963,10 @@ Três auditorias em paralelo. Corrigido:
 
 - Short "Quanto de whey tomar por dia?" (YouTube es4IiOkVqsg, publicado em 15/10/2026, 0:46, conferido no print do YouTube Studio) no fim de /ferramentas/calculadora-whey (#como-usar), com atalho "▶ Ver como usar (vídeo de 46 s)" no topo. Mesmo padrão do Substituidor: capa com play, YouTube só carrega no clique, play medido.
 - Página /videos/quanto-whey-tomar-por-dia com VideoObject, ligando para a calculadora e três artigos de whey/proteína.
+
+## 2026-10-15 — Monte seu Cardápio: só os alimentos marcados, e botão "excluir"
+
+- Pedido do Montinho. Quem marca alimentos no formulário recebe cardápio só com eles: nada de banana, pasta de amendoim ou azeite que a pessoa não escolheu. Ordem: os marcados da refeição; se a refeição não tem marcados (ou é a ceia, que não é perguntada), os marcados das outras refeições que servem nela; se a pessoa pulou a etapa inteira, o banco completo, como antes.
+- As versões da semana também só trocam entre os marcados. O "trocar" que a pessoa toca continua mostrando o banco, com os marcados primeiro.
+- Novo botão "excluir" em cada item: tira o alimento, reequilibra as porções do dia sem trazer alimento novo e remove o item das escolhas daquela refeição. Evento `meal_item_removed`.
+- Texto do formulário e da página: "o cardápio usa só os alimentos que você marcar".

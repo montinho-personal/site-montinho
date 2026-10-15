@@ -37,6 +37,7 @@ import {
   SEM_VARIACAO,
   SITUACOES_ESPECIAIS,
   alternativas,
+  excluiItem,
   geraCardapio,
   proximaVersao,
   geraSemana,
@@ -684,8 +685,8 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
           onVolta={volta}
         >
           <p className="text-gray-400 text-sm mb-4 max-w-xl leading-relaxed">
-            Marque o que já faz parte da sua rotina — o cardápio prioriza
-            esses. É a etapa que mais melhora o resultado, e também a única
+            Marque o que já faz parte da sua rotina — o cardápio usa só os
+            alimentos que você marcar. É a etapa que mais melhora o resultado, e também a única
             opcional: dá para gerar agora e ajustar depois pelo botão de
             trocar.
           </p>
@@ -835,17 +836,44 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                             <span className="text-gray-200 text-sm">
                               {rotuloPorcao(a, it.porcoes)} de <strong className="text-white font-medium">{a.nome.toLowerCase()}</strong>
                             </span>
-                            <button
-                              type="button"
-                              onClick={() => {
-                                if (trocando !== chaveTroca) trackEvent("meal_swap_clicked", { placement });
-                                setTrocando(trocando === chaveTroca ? null : chaveTroca);
-                              }}
-                              aria-expanded={trocando === chaveTroca}
-                              className="text-gray-400 hover:text-white text-xs underline underline-offset-2 whitespace-nowrap min-h-[44px] print:hidden"
-                            >
-                              trocar
-                            </button>
+                            <span className="flex items-center gap-3 shrink-0 print:hidden">
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  if (trocando !== chaveTroca) trackEvent("meal_swap_clicked", { placement });
+                                  setTrocando(trocando === chaveTroca ? null : chaveTroca);
+                                }}
+                                aria-expanded={trocando === chaveTroca}
+                                className="text-gray-400 hover:text-white text-xs underline underline-offset-2 whitespace-nowrap min-h-[44px]"
+                              >
+                                trocar
+                              </button>
+                              {/**
+                               * Excluir tira o item e reequilibra o dia com o que sobrou; o
+                               * alimento também sai das escolhas da refeição, para as versões
+                               * da semana não o trazerem de volta.
+                               */}
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setCardapio((c) => (c ? excluiItem(c, ri, it.alimentoId) : c));
+                                  setE((atual) => ({
+                                    ...atual,
+                                    habituais: {
+                                      ...atual.habituais,
+                                      [r.momento]: (atual.habituais[r.momento] ?? []).filter((x) => x !== it.alimentoId),
+                                    },
+                                  }));
+                                  setTrocando(null);
+                                  setVariedade(null);
+                                  trackEvent("meal_item_removed", { placement });
+                                }}
+                                aria-label={`Excluir ${a.nome.toLowerCase()} do ${r.nome.toLowerCase()}`}
+                                className="text-gray-400 hover:text-white text-xs underline underline-offset-2 whitespace-nowrap min-h-[44px]"
+                              >
+                                excluir
+                              </button>
+                            </span>
                           </div>
                           {altsImpressas.length > 0 && (
                             <p className="hidden print:block text-xs mt-0.5 pl-3" data-testid="troca-impressa">
