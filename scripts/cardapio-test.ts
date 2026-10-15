@@ -36,6 +36,8 @@ import {
   TOLERANCIA_KCAL,
   alternativas,
   buildCardapioWhatsApp,
+  excluiItem,
+  selecionados,
   diaDentroDaTolerancia,
   geraCardapio,
   geraSemana,
@@ -681,6 +683,37 @@ console.log("\n" + "=".repeat(64) + "\nA SAÍDA DO FIM: WHATSAPP COM CONTEXTO, S
     /meal_whatsapp_click/.test(componente) && /meal_cta_click/.test(componente));
   ok("o evento novo está declarado", fs.readFileSync("lib/analytics.ts", "utf8").includes('"meal_whatsapp_click"'));
   ok("a tela avisa o que NÃO vai na mensagem", /N[ãa]o vai o seu peso/.test(componente));
+}
+
+
+/* ── Só o que a pessoa marcou (pedido do Montinho, 15/10/2026) ── */
+{
+  const hab = {
+    cafe: ["ovo-mexido", "pao-frances"],
+    almoco: ["arroz-branco", "feijao-carioca", "frango-grelhado"],
+    lanche: ["iogurte-natural"],
+    jantar: ["arroz-branco", "frango-grelhado"],
+  };
+  const pd = pedido({ habituais: hab });
+  const marcados = new Set(Object.values(hab).flat());
+  const c = geraCardapio(pd);
+  const fora = c.refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId)).filter((id) => !marcados.has(id));
+  ok("com alimentos marcados, o cardápio só usa os marcados", fora.length === 0, fora.join(","));
+  const semana = geraSemana(c, pd, "bastante");
+  const foraSemana = semana.flatMap((d) => d.refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId))).filter((id) => !marcados.has(id));
+  ok("as versões da semana também só usam os marcados", foraSemana.length === 0, [...new Set(foraSemana)].join(","));
+  const pVazio = pedido({ habituais: {} });
+  ok("quem pulou a etapa continua recebendo cardápio do banco", selecionados("almoco", pVazio) === null && geraCardapio(pVazio).refeicoes.every((r) => r.itens.length > 0));
+  ok("refeição sem marcados usa os marcados das outras que servem nela", !!selecionados("jantar", pedido({ habituais: { almoco: ["arroz-branco", "frango-grelhado"] } }))?.has("frango-grelhado"));
+  /* Excluir */
+  const ri = c.refeicoes.findIndex((r) => r.momento === "almoco");
+  const alvo = c.refeicoes[ri].itens.find((i) => i.alimentoId === "feijao-carioca")?.alimentoId ?? c.refeicoes[ri].itens[0].alimentoId;
+  const sem = excluiItem(c, ri, alvo);
+  ok("excluir tira o item da refeição", !sem.refeicoes[ri].itens.some((i) => i.alimentoId === alvo));
+  const antes = new Set(c.refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId)));
+  ok("excluir não traz alimento novo", sem.refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId)).every((id) => antes.has(id)));
+  ok("excluir não mexe nas outras refeições além das porções", sem.refeicoes.every((r, i) => i === ri || r.itens.length <= c.refeicoes[i].itens.length));
+  ok("excluir não altera o cardápio original", c.refeicoes[ri].itens.some((i) => i.alimentoId === alvo));
 }
 
 console.log(falhas === 0 ? "\nTODOS OS TESTES PASSARAM\n" : `\n${falhas} TESTE(S) FALHARAM\n`);

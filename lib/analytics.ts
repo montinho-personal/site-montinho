@@ -612,6 +612,7 @@ export type AnalyticsEvent =
   | "meal_plan_generated"
   | "meal_swap_clicked"
   | "meal_swapped"
+  | "meal_item_removed"
   | "weekly_plan_generated"
   | "shopping_list_generated"
   | "meal_plan_saved"
