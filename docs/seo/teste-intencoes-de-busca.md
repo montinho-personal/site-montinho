@@ -999,3 +999,11 @@ Aprovado pelo Montinho.
 - Tabela de g/kg (dia baixo 0,5–1 g/kg) e exemplo de 80 kg (60 g no dia baixo, 320 no alto) trocados por exemplo calculado pela calculadora (280 g baixo / 370 g alto, 2.500 kcal).
 - Corrigido o link "Burke et al., 2011", que apontava para outro estudo (PMID 24149627); agora PMID 21660838. Citações novas: Impey 2018 (29453741), ACSM/AND/DC 2016 (26891166), Henselmans 2022 (35215506), conferidas no PubMed.
 - updatedAt: 2026-10-15.
+
+## 2026-10-15 — Mapa Muscular (/exercicios): prints de "mapa muscular" e "exercícios por músculo"
+
+A página já aparece no autocompletar de "mapa muscular". Title, description e H1 sem mudança.
+- Nova seção H2 "Mapa muscular do corpo humano: costas, pernas, braços e glúteos" (autocompletar: das costas, da perna, da coxa, braço, glúteo, do corpo humano, academia), com as regiões linkando as páginas de músculo.
+- FAQ + FAQPage (8): o que é mapa muscular; quais os 7 grupos musculares; qual site mostra exercícios para cada músculo; como usar o mapa para montar o treino; quantos exercícios por músculo é o ideal; 3 exercícios por grupo é suficiente; como dividir o treino por grupo muscular; rosto e pescoço (visão geral por IA lista cabeça e pescoço). Respostas de volume alinhadas à Calculadora de Volume.
+- Fora: "quais são os 3 tipos musculares" (anatomia; fonte oficial não acessível agora, NCBI/MedlinePlus com CAPTCHA); "melhor aplicativo gratuito para estudar músculos"; anatomia 3D, atlas, desenho fácil.
+- Pautas: "mapa muscular para imprimir / pdf" e "exercícios e músculos trabalhados pdf" (isca); "quantos exercícios por músculo" (cluster forte no autocompletar: ideal, hipertrofia, full body, na semana, dois exercícios) — avaliar artigo próprio ou seção na Calculadora de Volume, verificando canibalização com volume-de-treino-ideal; "lista de exercícios para iniciantes"; "10 melhores exercícios de musculação".
