@@ -14,16 +14,23 @@
  *
  * - WHEY: não existe em tabela de composição; é produto de marca. O
  *   responsável escolheu como referência o whey concentrado da Growth, o mais
- *   comum entre os alunos: porção de 30 g com 122 kcal, 23 g de proteína, 4 g
- *   de carboidrato e 1,6 g de gordura, como o fabricante declara. Sabores e
- *   lotes variam, e a tela diz isso.
+ *   comum entre os alunos, com os MESMOS números que o site já usa no Mata a
+ *   Vontade (lib/mata-vontade/nutricao.ts): porção de 30 g com 123 kcal, 23 g
+ *   de proteína, 2,9 g de carboidrato e 2,2 g de gordura. Sabores e lotes
+ *   variam, e a tela diz isso.
+ *
+ * - GRANOLA: a TACO não tem. Mesmo valor que o Mata a Vontade já usa: USDA
+ *   FoodData Central, "Cereals ready-to-eat, granola, homemade" (NDB 08037):
+ *   489 kcal, 13,7 g de proteína, 53,9 g de carboidrato e 24,3 g de gordura
+ *   por 100 g. Granola de pacote varia muito (açúcar, castanhas), e a tela
+ *   manda conferir o rótulo.
  *
  * Não têm página em /alimentos (não são da base) nem medida da POF.
  */
 
 import type { AlimentoEq } from "./equivalencia";
 
-const WHEY_30G = { energia: 122, proteina: 23, carboidrato: 4, lipideos: 1.6 };
+const WHEY_30G = { energia: 123, proteina: 23, carboidrato: 2.9, lipideos: 2.2 };
 const por100 = (v: number) => Math.round((v * 100) / 30 * 10) / 10;
 
 export const EXTRAS_TROCA: AlimentoEq[] = [
@@ -39,6 +46,18 @@ export const EXTRAS_TROCA: AlimentoEq[] = [
     porcoes: [{ n: "1 dosador", g: 30 }],
     aliases: ["whey", "whey protein", "proteina em po", "suplemento de proteina"],
     fonte: "Rótulo de referência: whey concentrado Growth, 23 g de proteína em 30 g. Marcas e sabores variam: confira o seu.",
+  },
+  {
+    slug: "granola",
+    nome: "Granola",
+    categoria: "cereais-e-derivados",
+    energia: 489,
+    proteina: 13.7,
+    carboidrato: 53.9,
+    lipideos: 24.3,
+    fibra: null,
+    aliases: ["granola", "granola tradicional", "granola caseira"],
+    fonte: "USDA FoodData Central (EUA), granola caseira: a TACO não tem granola. A de pacote varia muito: confira o rótulo.",
   },
   {
     slug: "tilapia-file-grelhado",

@@ -88,7 +88,7 @@ const n0 = (v: number | null) => formataNumero(v ?? 0, "kcal");
 const n1 = (v: number | null) => formataNumero(v ?? 0, "g");
 
 /** Os poucos alimentos que não vêm da TACO, e de onde vêm (lib/alimentos/extras-troca.ts). */
-const NOTA_EXTRAS = "* Fora da TACO: a tilápia vem do USDA FoodData Central (tabela dos EUA), e o whey, do rótulo do whey concentrado Growth (23 g de proteína em 30 g); marcas e sabores variam.";
+const NOTA_EXTRAS = "* Fora da TACO: a tilápia e a granola vêm do USDA FoodData Central (tabela dos EUA), e o whey, do rótulo do whey concentrado Growth (23 g de proteína em 30 g); marcas e sabores variam.";
 
 const ARROZ = "arroz-tipo-1-cozido";
 const FRANGO = "frango-peito-sem-pele-grelhado";
