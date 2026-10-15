@@ -954,3 +954,7 @@ Três auditorias em paralelo. Corrigido:
 ## 2026-10-15 — Links rastreados da Calculadora de Déficit
 
 - `/l/ig-deficit` (stories do Instagram) e `/l/wa-deficit` (status do WhatsApp) → `/ferramentas/calculadora-deficit-calorico`.
+
+## 2026-10-15 — Link do YouTube da Calculadora de Whey
+
+- `/l/yt-whey` → `/ferramentas/calculadora-whey`, para a descrição do vídeo tutorial no YouTube.

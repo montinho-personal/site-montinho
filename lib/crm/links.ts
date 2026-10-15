@@ -79,6 +79,7 @@ export const LINKS: Record<string, LinkControlado> = {
   "wa-sub": { destino: "/ferramentas/substituidor-de-exercicios", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "substituidor", tipo: "social" },
   "ig-whey": { destino: "/ferramentas/calculadora-whey", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "stories", utm_content: "calculadora_whey", tipo: "social" },
   "wa-whey": { destino: "/ferramentas/calculadora-whey", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "calculadora_whey", tipo: "social" },
+  "yt-whey": { destino: "/ferramentas/calculadora-whey", utm_source: "youtube", utm_medium: "video", utm_campaign: "calculadora_whey", utm_content: "descricao", tipo: "social" },
   "ig-deficit": { destino: "/ferramentas/calculadora-deficit-calorico", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "stories", utm_content: "calculadora_deficit", tipo: "social" },
   "wa-deficit": { destino: "/ferramentas/calculadora-deficit-calorico", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "calculadora_deficit", tipo: "social" },
 };
