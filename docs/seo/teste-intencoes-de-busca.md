@@ -927,3 +927,9 @@ Três auditorias em paralelo. Corrigido:
 ## 2026-10-15 — Troca Certa: abóbora
 
 - Abóbora cabotiá (cozida e crua, TACO) entra no grupo de carboidratos, com apelidos "abóbora", "cabotiá", "japonesa", "kabocha". 100 g de arroz branco ≈ 260 g de cabotiá cozida, com calorias parecidas.
+
+## 2026-10-15 — Vídeo tutorial no Substituidor de Exercícios
+
+- O Short "O aparelho está ocupado. E agora?" (YouTube Mck7dwGz0as) entra em /ferramentas/substituidor-de-exercicios, logo depois da ferramenta, na seção "Como usar, em vídeo".
+- Carrega como capa com play (VideoMedido, agora com seletor configurável): o YouTube só é chamado quando a pessoa clica, e o play é medido em `article_video_play` com placement "substituidor-de-exercicios".
+- Sem VideoObject por enquanto: a data de publicação precisa ser conferida no YouTube Studio.

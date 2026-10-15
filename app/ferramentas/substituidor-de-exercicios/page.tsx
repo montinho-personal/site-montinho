@@ -3,6 +3,8 @@ import Link from "next/link";
 import { SITE_URL } from "@/lib/blog";
 import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import Substituidor from "@/components/substituidor/Substituidor";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
+import VideoMedido from "@/components/blog/VideoMedido";
 import { EXERCICIOS } from "@/lib/treino/exercicios";
 import { PAGINAS_SUBSTITUIR } from "@/lib/treino/substituir-seo";
 
@@ -64,6 +66,18 @@ export default function SubstituidorPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Substituidor />
           <noscript><p className="text-gray-300 mt-4">A ferramenta precisa de JavaScript. As trocas mais buscadas têm páginas próprias, logo abaixo.</p></noscript>
+        </div>
+      </section>
+
+      {/* Tutorial do próprio Montinho: depois da ferramenta, para quem travou em algum passo. */}
+      <section className="pb-12 bg-black">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-white mb-2" style={h}>Como usar, em vídeo</h2>
+          <p className="text-gray-300 mb-6">Digite o exercício, escolha o motivo e marque o que você tem. O vídeo mostra os três passos e como ler o resultado.</p>
+          <div data-video-medido>
+            <YoutubeShortEmbed videoId="Mck7dwGz0as" title="Como usar o Substituidor de Exercícios — Montinho Personal Trainer" />
+          </div>
+          <VideoMedido slug="substituidor-de-exercicios" seletor="[data-video-medido]" />
         </div>
       </section>
 
