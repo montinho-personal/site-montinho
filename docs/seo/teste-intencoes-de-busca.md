@@ -923,3 +923,7 @@ Três auditorias em paralelo. Corrigido:
 
 - Whey alinhado ao valor que o site já usa no Mata a Vontade (Growth, 30 g = 123 kcal, 23 g P, 2,9 g C, 2,2 g G), a pedido do Montinho. Proteína não mudou: 1 scoop continua ≈ 70 g de frango grelhado.
 - Granola entra no grupo de carboidratos com o mesmo valor do Mata a Vontade: USDA, granola caseira (NDB 08037), 489 kcal, 13,7 g P, 53,9 g C, 24,3 g G por 100 g. A tela manda conferir o rótulo da de pacote. Troca por arroz sai sempre com aviso de calorias.
+
+## 2026-10-15 — Troca Certa: abóbora
+
+- Abóbora cabotiá (cozida e crua, TACO) entra no grupo de carboidratos, com apelidos "abóbora", "cabotiá", "japonesa", "kabocha". 100 g de arroz branco ≈ 260 g de cabotiá cozida, com calorias parecidas.

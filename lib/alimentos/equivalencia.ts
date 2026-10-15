@@ -125,6 +125,7 @@ export const MEMBROS: MembroTroca[] = [
   { slug: "pao-trigo-forma-integral", grupo: "carboidratos", estado: "pronto" },
   { slug: "batata-baroa-cozida", grupo: "carboidratos", estado: "pronto" },
   { slug: "cara-cozido", grupo: "carboidratos", estado: "pronto" },
+  { slug: "abobora-cabotian-cozida", grupo: "carboidratos", estado: "pronto" },
   { slug: "polenta-pre-cozida", grupo: "carboidratos", estado: "pronto" },
   { slug: "milho-verde-enlatado-drenado", grupo: "carboidratos", estado: "pronto" },
   { slug: "granola", grupo: "carboidratos", estado: "pronto" },
@@ -141,6 +142,7 @@ export const MEMBROS: MembroTroca[] = [
   { slug: "milho-fuba-cru", grupo: "carboidratos", estado: "cru" },
   { slug: "macarrao-trigo-cru-com-ovos", grupo: "carboidratos", estado: "cru" },
   { slug: "batata-baroa-crua", grupo: "carboidratos", estado: "cru" },
+  { slug: "abobora-cabotian-crua", grupo: "carboidratos", estado: "cru" },
   { slug: "cara-cru", grupo: "carboidratos", estado: "cru" },
   { slug: "inhame-cru", grupo: "carboidratos", estado: "cru" },
 
@@ -254,6 +256,8 @@ export const NOME_EXIBICAO: Record<string, string> = {
   "pao-trigo-forma-integral": "Pão de forma integral",
   "batata-baroa-cozida": "Mandioquinha (batata-baroa) cozida",
   "cara-cozido": "Cará cozido",
+  "abobora-cabotian-cozida": "Abóbora cabotiá cozida",
+  "abobora-cabotian-crua": "Abóbora cabotiá crua",
   "polenta-pre-cozida": "Polenta pré-cozida",
   "milho-verde-enlatado-drenado": "Milho verde em lata, escorrido",
   "aveia-flocos-crua": "Aveia em flocos",
@@ -369,6 +373,7 @@ export function nomeExibicao(a: { slug: string; nome: string }): string {
  * antes do peito. Os apelidos entram só na busca desta ferramenta.
  */
 export const APELIDOS: Record<string, string[]> = {
+  "abobora-cabotian-cozida": ["abobora", "abobora cozida", "abobora cabotia", "abobora japonesa", "cabotia", "kabocha"],
   "arroz-tipo-1-cozido": ["arroz", "arroz branco", "arroz cozido"],
   "batata-doce-cozida": ["batata doce"],
   "batata-inglesa-cozida": ["batata", "batata cozida"],

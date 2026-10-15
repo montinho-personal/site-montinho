@@ -178,6 +178,7 @@ ok("whey: 30 g têm 23 g de proteína", Math.abs(macrosDe(A("whey-protein-concen
   const f = trocas(A("frango-peito-sem-pele-grelhado"), 100, "proteina", B).trocas;
   ok("frango por proteína inclui tilápia e whey", ["tilapia-file-grelhado", "whey-protein-concentrado"].every((s) => f.some((t) => t.alimento.slug === s)));
   ok("arroz por carboidrato inclui granola, com aviso de calorias", trocas(A("arroz-tipo-1-cozido"), 100, "carboidrato", B).trocas.some((t) => t.alimento.slug === "granola" && t.avisos.length > 0));
+  ok("arroz por carboidrato inclui abóbora cabotiá", trocas(A("arroz-tipo-1-cozido"), 100, "carboidrato", B).trocas.some((t) => t.alimento.slug === "abobora-cabotian-cozida"));
   ok("tilápia crua só troca com cru", trocas(A("tilapia-file-cru"), 150, "proteina", B).trocas.every((t) => /cru/.test(t.alimento.slug)));
 }
 
