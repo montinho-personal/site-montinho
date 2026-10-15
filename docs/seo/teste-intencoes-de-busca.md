@@ -1023,3 +1023,11 @@ Aprovado pelo Montinho (duas partes).
 - Title: "Exercícios Para Antebraço | Montinho" → "Exercícios Para Antebraço: Academia, Halter, Polia e Casa | Montinho". Description nova. isIndexable: true.
 - Extras: melhores na academia; com halter; na polia; em casa e sem equipamento (elástico); feminino; rosca martelo × rosca inversa (visão geral por IA lista as duas).
 - Intenção 100% de treino (academia, halter, polia, em casa, feminino, elástico, sem equipamento, caseiro).
+
+## 2026-10-15 — Deltoide anterior, parte superior das costas e adutores entram no Google
+
+Aprovado pelo Montinho. As três eram `isIndexable: false` desde #748; agora o Mapa tem as 19 regiões indexáveis.
+- Base: +2 deltoide anterior (elevação frontal na polia, com anilha) e +6 adutores (adução na polia, Copenhagen, afundo lateral, adução deitado, adução com elástico, agachamento sumô com halter). Deltoide anterior 6 → 8; adutores 2 → 8.
+- Deltoide anterior. Title → "Exercícios Para Deltoide Anterior: Academia, Halteres e Polia | Montinho". Extras: melhores; com halteres; máquina e polia; as 3 porções (PAA); precisa treinar separado? Fora: função, origem e inserção, alongamento.
+- Parte superior das costas. Title → "Exercícios Para Parte Superior das Costas: Academia e Casa | Montinho". Extras: melhores (visão geral por IA: remada pronada aberta, crucifixo inverso, face pull); fortalecer na academia; feminino; dor → médico/fisioterapeuta + artigo. Fora: aliviar dor, "como definir as costas rápido", "treino de costas completo pdf" (já pauta).
+- Adutores. Title → "Exercícios Para Adutores (Parte Interna da Coxa) | Montinho" (nome popular nas buscas). Extras: como treinar (PAA); academia; em casa e sem máquina (caneleira); adutores × abdutores; como endurecer a parte interna da coxa (sem redução localizada). Fora: fisioterapia, "quais são os 3 adutores principais" (anatomia).
