@@ -36,7 +36,11 @@ import { trackEvent } from "@/lib/analytics";
 /** Miniaturas do YouTube, da melhor para a que sempre existe. */
 const CAPAS = ["maxresdefault", "hqdefault"] as const;
 
-export default function VideoMedido({ slug }: { slug: string }) {
+/**
+ * `seletor` deixa a mesma medição valer fora do artigo: na página de uma
+ * ferramenta, o vídeo tutorial mora num bloco marcado com data-video-medido.
+ */
+export default function VideoMedido({ slug, seletor = ".prose-blog" }: { slug: string; seletor?: string }) {
   useEffect(() => {
     /*
      * TODOS os blocos, não o primeiro.
@@ -47,7 +51,7 @@ export default function VideoMedido({ slug }: { slug: string }) {
      * silenciosamente não pegava nada justamente nos artigos maiores.
      */
     const iframes = [
-      ...document.querySelectorAll<HTMLIFrameElement>('.prose-blog iframe[src*="youtube.com/embed/"]'),
+      ...document.querySelectorAll<HTMLIFrameElement>(`${seletor} iframe[src*="youtube.com/embed/"]`),
     ];
     if (iframes.length === 0) return;
     const desfazer: (() => void)[] = [];
@@ -119,7 +123,7 @@ export default function VideoMedido({ slug }: { slug: string }) {
     if (iframes.length > 0) trackEvent("article_video_view", { placement: slug, video_count: iframes.length });
 
     return () => desfazer.forEach((f) => f());
-  }, [slug]);
+  }, [slug, seletor]);
 
   return null;
 }
