@@ -77,6 +77,8 @@ export const EXERCICIOS: Exercicio[] = [
   { id: "elevacao-lateral-cabo", nome: "Elevação lateral no cabo", categoria: "isolado", equipamento: "cabo", primarios: ["deltoide-lateral"], unilateral: true },
   { id: "elevacao-lateral-maquina", nome: "Elevação lateral na máquina", categoria: "isolado", equipamento: "maquina", primarios: ["deltoide-lateral"] },
   { id: "elevacao-frontal", nome: "Elevação frontal", categoria: "isolado", equipamento: "halter", primarios: ["deltoide-anterior"] },
+  { id: "elevacao-frontal-polia", nome: "Elevação frontal na polia", aliases: ["elevação frontal no cabo"], categoria: "isolado", equipamento: "cabo", primarios: ["deltoide-anterior"] },
+  { id: "elevacao-frontal-anilha", nome: "Elevação frontal com anilha", categoria: "isolado", equipamento: "barra", primarios: ["deltoide-anterior"] },
   { id: "crucifixo-inverso", nome: "Crucifixo inverso", aliases: ["voador inverso", "reverse fly", "crucifixo invertido"], categoria: "isolado", equipamento: "maquina", primarios: ["deltoide-posterior"], secundarios: ["trapezio"] },
 
   // ── Bíceps ─────────────────────────────────────────────────────────────
@@ -125,6 +127,12 @@ export const EXERCICIOS: Exercicio[] = [
   { id: "abducao-quadril", nome: "Abdução de quadril", aliases: ["cadeira abdutora", "abdutora"], categoria: "isolado", equipamento: "maquina", primarios: ["gluteos"] },
   { id: "ponte-gluteo", nome: "Ponte de glúteo", categoria: "isolado", equipamento: "peso-corporal", primarios: ["gluteos"] },
   { id: "adducao-quadril", nome: "Adução de quadril", aliases: ["cadeira adutora", "adutora"], categoria: "isolado", equipamento: "maquina", primarios: ["adutores"] },
+  { id: "adducao-polia", nome: "Adução de quadril na polia", aliases: ["adução no cabo"], categoria: "isolado", equipamento: "cabo", primarios: ["adutores"], unilateral: true },
+  { id: "copenhagen", nome: "Copenhagen (prancha lateral com adução)", aliases: ["copenhagen plank", "prancha copenhagen"], categoria: "isolado", equipamento: "peso-corporal", primarios: ["adutores"], secundarios: ["core"], unilateral: true },
+  { id: "afundo-lateral", nome: "Afundo lateral", aliases: ["agachamento lateral", "lateral lunge"], categoria: "composto", equipamento: "peso-corporal", primarios: ["adutores", "quadriceps", "gluteos"], unilateral: true },
+  { id: "adducao-deitado", nome: "Adução deitado de lado", aliases: ["adução com caneleira"], categoria: "isolado", equipamento: "peso-corporal", primarios: ["adutores"], unilateral: true },
+  { id: "adducao-elastico", nome: "Adução com elástico", categoria: "isolado", equipamento: "peso-corporal", primarios: ["adutores"], unilateral: true },
+  { id: "agachamento-sumo-halter", nome: "Agachamento sumô com halter", categoria: "composto", equipamento: "halter", primarios: ["quadriceps", "gluteos", "adutores"] },
 
   // ── Panturrilhas ───────────────────────────────────────────────────────
   { id: "panturrilha-em-pe", nome: "Panturrilha em pé", aliases: ["gêmeos em pé"], categoria: "isolado", equipamento: "maquina", primarios: ["panturrilhas"] },
