@@ -958,3 +958,8 @@ Três auditorias em paralelo. Corrigido:
 ## 2026-10-15 — Link do YouTube da Calculadora de Whey
 
 - `/l/yt-whey` → `/ferramentas/calculadora-whey`, para a descrição do vídeo tutorial no YouTube.
+
+## 2026-10-15 — Vídeo tutorial na Calculadora de Whey
+
+- Short "Quanto de whey tomar por dia?" (YouTube es4IiOkVqsg, publicado em 15/10/2026, 0:46, conferido no print do YouTube Studio) no fim de /ferramentas/calculadora-whey (#como-usar), com atalho "▶ Ver como usar (vídeo de 46 s)" no topo. Mesmo padrão do Substituidor: capa com play, YouTube só carrega no clique, play medido.
+- Página /videos/quanto-whey-tomar-por-dia com VideoObject, ligando para a calculadora e três artigos de whey/proteína.
