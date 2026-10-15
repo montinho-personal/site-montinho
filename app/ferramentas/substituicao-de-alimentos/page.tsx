@@ -87,6 +87,9 @@ const gm = (t: { gramas: number; medida: { texto: string } | null }) => `${t.gra
 const n0 = (v: number | null) => formataNumero(v ?? 0, "kcal");
 const n1 = (v: number | null) => formataNumero(v ?? 0, "g");
 
+/** Os poucos alimentos que não vêm da TACO, e de onde vêm (lib/alimentos/extras-troca.ts). */
+const NOTA_EXTRAS = "* Fora da TACO: a tilápia vem do USDA FoodData Central (tabela dos EUA), e o whey, do rótulo do whey concentrado Growth (23 g de proteína em 30 g); marcas e sabores variam.";
+
 const ARROZ = "arroz-tipo-1-cozido";
 const FRANGO = "frango-peito-sem-pele-grelhado";
 const OVO = "ovo-de-galinha-inteiro-cozido-10minutos";
@@ -210,6 +213,7 @@ function TabelaGrupo({ r }: { r: (typeof REFERENCIAS)[number] }) {
                   ) : (
                     nomeExibicao(t.alimento)
                   )}
+                  {t.alimento.fonte && <span className="text-gray-400"> *</span>}
                 </td>
                 <td className="text-white py-2.5 pr-4 tabular-nums">{t.gramas} g</td>
                 <td className={td}>{t.medida ? `≈ ${t.medida.texto}` : "—"}</td>
@@ -289,6 +293,7 @@ export default function SubstituicaoDeAlimentosPage() {
             </p>
             <div className="mb-8"><BotaoImprimirLista /></div>
             {REFERENCIAS.map((r) => <TabelaGrupo key={r.grupo} r={r} />)}
+            <p className="text-gray-400 text-xs -mt-6 mb-8">{NOTA_EXTRAS}</p>
             <p className="text-gray-500 text-xs leading-relaxed">
               {AVISO_GERAL} Composição: {FONTES.TACO.atribuicao}. Medidas caseiras: {FONTES.IBGE_POF.atribuicao}. Troca Certa — montinhopersonal.com.br{CAMINHO}
             </p>
@@ -319,7 +324,7 @@ export default function SubstituicaoDeAlimentosPage() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>De onde vêm os números</h2>
             <p className="text-gray-300 leading-relaxed mb-3">
-              Composição dos alimentos: {FONTES.TACO.atribuicao}. Medidas caseiras: {FONTES.IBGE_POF.atribuicao}. As trocas sugeridas
+              Composição dos alimentos: {FONTES.TACO.atribuicao}. Medidas caseiras: {FONTES.IBGE_POF.atribuicao}. {NOTA_EXTRAS} As trocas sugeridas
               saem de uma lista de {membrosProntos} alimentos prontos para comer, revisada por grupo, mais os equivalentes crus; o
               alimento de origem pode ser qualquer um da base.
             </p>

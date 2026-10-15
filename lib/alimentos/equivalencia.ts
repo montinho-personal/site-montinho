@@ -52,6 +52,8 @@ export interface AlimentoEq {
   porcoes?: { n: string; g: number }[];
   /** Como as pessoas escrevem — só para a busca. */
   aliases?: string[];
+  /** Origem do número quando NÃO é a TACO (lib/alimentos/extras-troca.ts). */
+  fonte?: string;
 }
 
 export type Criterio = "carboidrato" | "proteina" | "energia";
@@ -173,6 +175,8 @@ export const MEMBROS: MembroTroca[] = [
   { slug: "ovo-de-galinha-inteiro-frito", grupo: "proteinas", estado: "pronto" },
   { slug: "sardinha-assada", grupo: "proteinas", estado: "pronto" },
   { slug: "merluza-file-assado", grupo: "proteinas", estado: "pronto" },
+  { slug: "tilapia-file-grelhado", grupo: "proteinas", estado: "pronto" },
+  { slug: "whey-protein-concentrado", grupo: "proteinas", estado: "pronto" },
   { slug: "salmao-sem-pele-fresco-grelhado", grupo: "proteinas", estado: "pronto" },
   /* Proteínas — cruas (pesadas antes de cozinhar) */
   { slug: "frango-peito-sem-pele-cru", grupo: "proteinas", estado: "cru" },
@@ -185,6 +189,7 @@ export const MEMBROS: MembroTroca[] = [
   { slug: "ovo-de-galinha-inteiro-cru", grupo: "proteinas", estado: "cru" },
   { slug: "atum-fresco-cru", grupo: "proteinas", estado: "cru" },
   { slug: "merluza-file-cru", grupo: "proteinas", estado: "cru" },
+  { slug: "tilapia-file-cru", grupo: "proteinas", estado: "cru" },
   { slug: "salmao-sem-pele-fresco-cru", grupo: "proteinas", estado: "cru" },
 
   /* Leite e derivados */
@@ -304,6 +309,9 @@ export const NOME_EXIBICAO: Record<string, string> = {
   "ovo-de-galinha-inteiro-cru": "Ovo cru",
   "atum-fresco-cru": "Atum fresco cru",
   "merluza-file-cru": "Filé de merluza cru",
+  "tilapia-file-grelhado": "Filé de tilápia grelhado",
+  "tilapia-file-cru": "Filé de tilápia cru",
+  "whey-protein-concentrado": "Whey protein concentrado",
   "salmao-sem-pele-fresco-cru": "Salmão cru",
   "iogurte-natural": "Iogurte natural",
   "iogurte-natural-desnatado": "Iogurte natural desnatado",
@@ -533,6 +541,7 @@ const NOMES: Record<string, [string, string]> = {
   "1 pedaco": ["pedaço", "pedaços"],
   "1 banda": ["banda", "bandas"],
   "1 punhado": ["punhado", "punhados"],
+  "1 dosador": ["scoop", "scoops"],
 };
 
 /**
@@ -768,7 +777,6 @@ export const TEXTO_RECUSA: Record<MotivoDireta, string> = {
 export const FORA_DA_BASE: { termo: RegExp; texto: string }[] = [
   { termo: /quinoa|quinua/, texto: "A quinoa não está na TACO, a tabela que usamos. Por isso ela ainda não entra nas trocas: não usamos número sem fonte." },
   { termo: /macarra.*cozid|massa cozid/, texto: "Na TACO o macarrão só aparece cru. Escolha \"Macarrão cru\" e pese antes de cozinhar; a troca virá com outros alimentos crus." },
-  { termo: /whey/, texto: "Whey não está na TACO. Para o seu whey, use a Calculadora de Whey com os dados do rótulo." },
 ];
 
 /* ───────────────────────── Lista pronta ───────────────────────── */

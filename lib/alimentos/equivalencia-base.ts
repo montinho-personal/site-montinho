@@ -9,6 +9,7 @@
 import { todosAlimentos } from "./base";
 import type { Alimento } from "./tipos";
 import type { AlimentoEq } from "./equivalencia";
+import { EXTRAS_TROCA } from "./extras-troca";
 
 function v(a: Alimento, id: string): number | null {
   const n = a.nutrientes.find((x) => x.nutrienteId === id);
@@ -31,7 +32,8 @@ export function paraEq(a: Alimento): AlimentoEq {
 }
 
 export function alimentosEq(): AlimentoEq[] {
-  return todosAlimentos().map(paraEq);
+  /* A TACO e, depois dela, os poucos alimentos de outra fonte, cada um com a sua. */
+  return [...todosAlimentos().map(paraEq), ...EXTRAS_TROCA];
 }
 
 export function baseEq(): Map<string, AlimentoEq> {

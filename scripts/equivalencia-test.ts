@@ -16,6 +16,7 @@ import {
   arredondaGramas,
   estadoDe,
   gramasEquivalentes,
+  macrosDe,
   medidaCaseira,
   trocaDireta,
   trocas,
@@ -166,6 +167,17 @@ ok("mamão formosa nunca em 'unidade'", !/unidade/.test(medidaCaseira(A("mamao-f
     }
   }
   ok("aviso de calorias coerente com a diferença real", erradas === 0, String(erradas));
+}
+
+/* Fora da TACO: whey (rótulo de referência) e tilápia (USDA), sempre com a fonte escrita. */
+ok("extras fora da TACO têm fonte", ["whey-protein-concentrado", "tilapia-file-grelhado", "tilapia-file-cru"].every((s) => B.has(s) && !!A(s).fonte));
+ok("whey: 30 g têm 23 g de proteína", Math.abs(macrosDe(A("whey-protein-concentrado"), 30).proteina! - 23) < 0.1);
+{
+  const w = trocas(A("whey-protein-concentrado"), 30, "proteina", B).trocas.find((t) => t.alimento.slug === "frango-peito-sem-pele-grelhado");
+  ok("1 scoop de whey ≈ 70 g de frango grelhado", w?.gramas === 70, String(w?.gramas));
+  const f = trocas(A("frango-peito-sem-pele-grelhado"), 100, "proteina", B).trocas;
+  ok("frango por proteína inclui tilápia e whey", ["tilapia-file-grelhado", "whey-protein-concentrado"].every((s) => f.some((t) => t.alimento.slug === s)));
+  ok("tilápia crua só troca com cru", trocas(A("tilapia-file-cru"), 150, "proteina", B).trocas.every((t) => /cru/.test(t.alimento.slug)));
 }
 
 console.log(`\n${"=".repeat(64)}\n${falhas === 0 ? "TODOS OS TESTES PASSARAM" : `${falhas} FALHA(S)`}`);

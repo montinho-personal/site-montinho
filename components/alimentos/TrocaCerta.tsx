@@ -114,7 +114,7 @@ function Busca({
         <div className="flex items-center justify-between gap-3 border border-white/25 pl-4 pr-2 py-1 min-h-[52px]">
           <span>
             <span className="text-white block">{nomeExibicao(escolhido)}</span>
-            {nomeExibicao(escolhido) !== escolhido.nome && <span className="text-gray-400 text-xs">TACO: {escolhido.nome}</span>}
+            {escolhido.fonte ? <span className="text-gray-400 text-xs">{escolhido.fonte}</span> : nomeExibicao(escolhido) !== escolhido.nome && <span className="text-gray-400 text-xs">TACO: {escolhido.nome}</span>}
           </span>
           <button
             type="button"
@@ -152,7 +152,7 @@ function Busca({
                       className="w-full text-left py-3 hover:bg-white/5 transition-colors min-h-[48px] px-2 -mx-2 text-gray-200"
                     >
                       <span className="block">{nomeExibicao(a)}</span>
-                      {nomeExibicao(a) !== a.nome && <span className="block text-gray-400 text-xs">TACO: {a.nome}</span>}
+                      {a.fonte ? <span className="block text-gray-400 text-xs">{a.fonte.split(":")[0]}</span> : nomeExibicao(a) !== a.nome && <span className="block text-gray-400 text-xs">TACO: {a.nome}</span>}
                     </button>
                   </li>
                 );
@@ -201,7 +201,7 @@ function CartaoTroca({ t, criterio, linkavel }: { t: Troca; criterio: Criterio; 
           nomeExibicao(t.alimento)
         )}
       </p>
-      {nomeExibicao(t.alimento) !== t.alimento.nome && <p className="text-gray-400 text-xs mb-2">TACO: {t.alimento.nome}</p>}
+      {t.alimento.fonte ? <p className="text-gray-400 text-xs mb-2">{t.alimento.fonte}</p> : nomeExibicao(t.alimento) !== t.alimento.nome && <p className="text-gray-400 text-xs mb-2">TACO: {t.alimento.nome}</p>}
       <p className="text-3xl font-bold text-white tabular-nums mb-1" style={h}>{t.gramas} g</p>
       {t.medida && (
         <p className="text-gray-300 text-sm mb-3">≈ {t.medida.texto} <span className="text-gray-400">({gr(t.medida.gramasCada)} g cada)</span></p>
