@@ -933,3 +933,8 @@ Três auditorias em paralelo. Corrigido:
 - O Short "O aparelho está ocupado. E agora?" (YouTube Mck7dwGz0as) entra em /ferramentas/substituidor-de-exercicios, logo depois da ferramenta, na seção "Como usar, em vídeo".
 - Carrega como capa com play (VideoMedido, agora com seletor configurável): o YouTube só é chamado quando a pessoa clica, e o play é medido em `article_video_play` com placement "substituidor-de-exercicios".
 - Sem VideoObject por enquanto: a data de publicação precisa ser conferida no YouTube Studio.
+
+## 2026-10-15 — Página do vídeo do Substituidor
+
+- /videos/o-aparelho-esta-ocupado, com VideoObject (data de publicação 14/10/2026, conferida no YouTube Studio pelo print do Montinho; 0:45). Liga para o Substituidor e para três artigos (hip thrust, glúteos em casa, quando trocar o treino).
+- Correção: o teste de vídeos (scripts/videos-test.ts) procurava o seletor antigo do VideoMedido; ajustado para o seletor configurável com padrão `.prose-blog`.

@@ -42,6 +42,27 @@ export interface VideoCanal {
 
 export const VIDEOS_CANAL: VideoCanal[] = [
   {
+    id: "Mck7dwGz0as",
+    slug: "o-aparelho-esta-ocupado",
+    titulo: "O aparelho está ocupado? Descubra o que fazer no lugar em 3 passos",
+    metaTitle: "O Aparelho Está Ocupado? O Que Fazer no Lugar (Vídeo)",
+    descricao:
+      "Como usar o Substituidor de Exercícios: digite o exercício que ia fazer, escolha o motivo da troca e marque o que você tem. A ferramenta mostra as opções mais parecidas e explica o que se mantém e o que muda.",
+    chamada: "Chegou no aparelho e ele está ocupado? Em 45 segundos você vê como achar a troca mais parecida, com o que você tem.",
+    texto: [
+      "Chegou no aparelho e ele está ocupado, ou a sua academia nem tem? Em vez de pular o exercício ou trocar por qualquer outro, dá para achar o que mais se aproxima do que você ia fazer.",
+      "No Substituidor de Exercícios são três passos: digite o exercício, escolha o motivo da troca (sem aparelho, treino em casa, desconforto, quer variar) e marque o que você tem, de halteres e elástico a só o peso do corpo.",
+      "O resultado mostra primeiro as opções que mantêm o músculo e o movimento, e explica em cada uma o que continua igual e o que muda. A carga do exercício novo não é a mesma do anterior: comece mais leve e ajuste pelas repetições.",
+    ],
+    artigos: [
+      { href: "/blog/como-fazer-hip-thrust", nome: "Como fazer hip thrust" },
+      { href: "/blog/treino-de-gluteos-em-casa", nome: "Treino de glúteos em casa" },
+      { href: "/blog/quando-trocar-o-treino", nome: "Quando trocar o treino" },
+    ],
+    ferramenta: { href: "/ferramentas/substituidor-de-exercicios", nome: "Substituidor de Exercícios" },
+    publicadoEm: "2026-10-14",
+  },
+  {
     id: "ul6Xi60zPeY",
     slug: "melhor-treino-para-quem-usa-mounjaro",
     titulo: "Usa Mounjaro e o peso está caindo? O melhor treino para não perder músculo",

@@ -115,7 +115,8 @@ ok("o play identifica o vídeo e a posição",
  * justamente nos artigos maiores.
  */
 ok("procura em TODOS os blocos do artigo",
-  /querySelectorAll<HTMLIFrameElement>\('\.prose-blog iframe/.test(componente) &&
+  /querySelectorAll<HTMLIFrameElement>\(`\$\{seletor\} iframe/.test(componente) &&
+  /seletor = "\.prose-blog"/.test(componente) &&
   !/document\.querySelector\("\.prose-blog"\)/.test(componente));
 
 // ─── 5 ──────────────────────────────────────────────────────────────────────
