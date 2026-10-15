@@ -5,6 +5,8 @@ import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import CalculadoraWhey from "@/components/whey/CalculadoraWhey";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
+import VideoMedido from "@/components/blog/VideoMedido";
 import {
   AVISO_SEGURANCA,
   FONTES_WHEY,
@@ -147,6 +149,9 @@ export default function CalculadoraWheyPage() {
           <p className="text-gray-300 text-lg leading-relaxed">
             Descubra quanto whey pode complementar sua meta de proteína diária com base na sua alimentação e no rótulo do seu produto.
           </p>
+          <a href="#como-usar" className="inline-flex items-center gap-2 mt-4 min-h-[44px] text-sm text-[#BA9E50] underline underline-offset-4 hover:text-white">
+            <span aria-hidden="true">▶</span> Ver como usar (vídeo de 46 s)
+          </a>
         </div>
       </section>
 
@@ -421,6 +426,18 @@ export default function CalculadoraWheyPage() {
               ))}
             </ol>
           </div>
+        </div>
+      </section>
+
+      {/* Tutorial do próprio Montinho: no fim da página; o atalho no topo leva até aqui. */}
+      <section id="como-usar" className="py-14 border-t border-white/10 bg-black scroll-mt-24">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-white mb-2" style={h}>Como usar, em vídeo</h2>
+          <p className="text-gray-300 mb-6">Seu peso e objetivo, o que você já come e o rótulo do seu whey. O vídeo mostra os três passos com um exemplo.</p>
+          <div data-video-medido>
+            <YoutubeShortEmbed videoId="es4IiOkVqsg" title="Como usar a Calculadora de Whey — Montinho Personal Trainer" />
+          </div>
+          <VideoMedido slug="calculadora-whey" seletor="[data-video-medido]" />
         </div>
       </section>
     </>

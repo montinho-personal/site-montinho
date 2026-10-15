@@ -42,6 +42,27 @@ export interface VideoCanal {
 
 export const VIDEOS_CANAL: VideoCanal[] = [
   {
+    id: "es4IiOkVqsg",
+    slug: "quanto-whey-tomar-por-dia",
+    titulo: "Quanto whey tomar por dia? Calcule o seu em 3 passos",
+    metaTitle: "Quanto Whey Tomar por Dia? Calcule o Seu (Vídeo)",
+    descricao:
+      "Como usar a Calculadora de Whey: coloque peso, objetivo e se treina; informe quanta proteína já come; digite a porção e a proteína do rótulo do seu whey. A conta mostra quantos gramas completam a sua meta.",
+    chamada: "Um scoop por dia serve pra você? Em 46 segundos você vê como calcular quanto do seu whey completa a sua proteína.",
+    texto: [
+      "\"Um scoop por dia\" não serve para todo mundo. A quantidade de whey depende do seu peso, do seu objetivo, de quanta proteína você já come e do rótulo do seu produto.",
+      "Na Calculadora de Whey são três passos: peso, objetivo e se você treina; quanta proteína você já come por dia; e a porção e a proteína do rótulo do seu whey. No exemplo do vídeo, 80 kg ganhando massa dá uma meta de 160 g; comendo 120 g, faltam 40 g, o que dá cerca de 52 g de um whey com 23 g de proteína em 30 g.",
+      "Whey é complemento: a comida vem primeiro. Cada whey tem uma concentração diferente, por isso a conta muda de um produto para outro.",
+    ],
+    artigos: [
+      { href: "/blog/whey-protein-como-tomar", nome: "Whey protein: como tomar" },
+      { href: "/blog/quanto-de-proteina-consumir", nome: "Quanto de proteína consumir" },
+      { href: "/blog/whey-concentrado-vs-isolado-vs-hidrolisado", nome: "Whey concentrado, isolado ou hidrolisado" },
+    ],
+    ferramenta: { href: "/ferramentas/calculadora-whey", nome: "Calculadora de Whey" },
+    publicadoEm: "2026-10-15",
+  },
+  {
     id: "Mck7dwGz0as",
     slug: "o-aparelho-esta-ocupado",
     titulo: "O aparelho está ocupado? Descubra o que fazer no lugar em 3 passos",
