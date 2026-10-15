@@ -946,3 +946,7 @@ Três auditorias em paralelo. Corrigido:
 ## 2026-10-15 — Substituidor: vídeo no fim, atalho no topo
 
 - A pedido do Montinho, a seção "Como usar, em vídeo" foi para o fim da página (#como-usar), e o topo ganhou o atalho "▶ Ver como usar (vídeo de 45 s)" logo abaixo do texto de abertura.
+
+## 2026-10-15 — Links rastreados da Calculadora de Whey
+
+- `/l/ig-whey` (stories do Instagram) e `/l/wa-whey` (status do WhatsApp) → `/ferramentas/calculadora-whey`, para medir a divulgação por canal.
