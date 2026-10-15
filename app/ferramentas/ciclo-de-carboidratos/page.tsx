@@ -77,7 +77,7 @@ const faq: ItemFAQ[] = [
   { question: "Dia de perna deve ser carbo alto?", answer: "Só se ele for, de fato, o treino mais exigente da sua semana. Um treino de pernas longo e de alto volume costuma ser; um treino curto e leve, não. Por isso a calculadora pergunta duração e intensidade em vez de assumir pelo grupo muscular." },
   { question: "Dia de descanso deve ser carbo baixo?", answer: "Normalmente é o dia de menor demanda, então recebe menos. Mas baixo não é zero: a calculadora não deixa o dia baixo cair abaixo de 130 g quando a sua média permite, e você pode marcar o descanso como médio ou alto se preferir organizar assim." },
   { question: "Ciclo de carboidratos emagrece?", answer: "O que emagrece é o déficit calórico da semana. Com as mesmas calorias e a mesma proteína, ciclar não tem vantagem comprovada sobre comer o mesmo carboidrato todo dia. Pode ajudar quem se organiza melhor assim, ou quem quer render mais nos treinos pesados durante a dieta." },
-  { question: "Carb cycling ajuda a ganhar massa?", answer: "Pode ajudar a pôr mais combustível nos treinos mais pesados. Mas o ganho de massa depende do conjunto: treino com progressão, calorias suficientes, proteína e recuperação. O ciclo é um ajuste fino, não o motor do resultado." },
+  { question: "Ciclo de carboidratos ajuda a ganhar massa?", answer: "Pode ajudar a pôr mais combustível nos treinos mais pesados. Mas o ganho de massa depende do conjunto: treino com progressão, calorias suficientes, proteína e recuperação. O ciclo é um ajuste fino, não o motor do resultado." },
   { question: "Preciso mudar a proteína também?", answer: "Não. Na maioria dos casos a proteína fica igual todos os dias; o que varia é o carboidrato, e a gordura compensa um pouco para as calorias do dia ficarem parecidas." },
   { question: "Preciso mudar as calorias?", answer: "Não é obrigatório. Nesta calculadora as calorias do dia ficam estáveis e só o carboidrato muda de lugar, que é o jeito mais simples de começar. Variar também as calorias entre os dias é uma estratégia avançada, não melhor." },
   { question: "O que comer no dia alto?", answer: "As mesmas refeições, com porções maiores de fontes de carboidrato: arroz, batata, mandioca, pão, macarrão, frutas, aveia. De preferência perto do treino. Dia alto não é dia livre." },
@@ -133,7 +133,7 @@ export default function CicloDeCarboidratosPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3" style={h}>Exemplo de uma semana de carb cycling</h2>
+            <h2 className="text-2xl font-bold text-white mb-3" style={h}>Exemplo de uma semana de ciclo de carboidratos</h2>
             <p className="mb-4">
               {PESO_EX} kg, {KCAL_EX.toLocaleString("pt-BR")} kcal por dia, musculação quatro vezes e uma corrida longa no sábado. Calculado pela ferramenta acima:
             </p>
@@ -214,7 +214,7 @@ export default function CicloDeCarboidratosPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3" style={h}>Carb cycling funciona?</h2>
+            <h2 className="text-2xl font-bold text-white mb-3" style={h}>Ciclo de carboidratos funciona?</h2>
             <p>
               Depende do que se espera dele. Para distribuir carboidrato conforme o treino, faz sentido. Como estratégia superior para emagrecer,
               acelerar o metabolismo ou mexer com hormônios, a evidência é limitada. Para a parte científica completa, leia o{" "}
