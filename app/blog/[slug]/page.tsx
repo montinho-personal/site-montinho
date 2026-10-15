@@ -99,6 +99,8 @@ import LinkFerramentaCreatina from "@/components/creatina/LinkFerramentaCreatina
 import { ARTIGOS_COM_CALCULADORA_WHEY, ARTIGOS_COM_LINK_WHEY } from "@/lib/whey";
 import CalculadoraWhey from "@/components/whey/CalculadoraWhey";
 import LinkFerramentaWhey from "@/components/whey/LinkFerramentaWhey";
+import LinkFerramentaCiclo from "@/components/carboidratos/LinkFerramentaCiclo";
+import { ARTIGOS_COM_LINK_CICLO } from "@/lib/carboidratos/ciclo";
 import LinkFerramentaSimulador from "@/components/simulador/LinkFerramentaSimulador";
 import { ARTIGOS_COM_LINK_SIMULADOR } from "@/lib/simulador/emagrecimento";
 import { ARTIGOS_COM_LINK_SIMULADOR_MASSA } from "@/lib/simulador/massa";
@@ -658,6 +660,7 @@ export default async function BlogPost({ params }: Props) {
           <CartaoFerramentaRelacionada slug={post.slug} />
           {ARTIGOS_COM_LINK_CREATINA.includes(post.slug) && <LinkFerramentaCreatina slug={post.slug} />}
           {ARTIGOS_COM_LINK_WHEY.includes(post.slug) && <LinkFerramentaWhey slug={post.slug} />}
+          {ARTIGOS_COM_LINK_CICLO.includes(post.slug) && <LinkFerramentaCiclo slug={post.slug} />}
           {ARTIGOS_COM_LINK_SIMULADOR.includes(post.slug) && <LinkFerramentaSimulador slug={post.slug} />}
           {ARTIGOS_COM_LINK_SIMULADOR_MASSA.includes(post.slug) && <LinkFerramentaSimulador slug={post.slug} qual="massa" />}
           {ARTIGOS_COM_LINK_SHAPE12.includes(post.slug) && <LinkFerramentaSimulador slug={post.slug} qual="shape12" />}

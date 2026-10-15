@@ -334,10 +334,10 @@ export const ARTIGOS_COM_CALCULADORA_MACROS: string[] = [
   "dieta-cutting-para-definicao-muscular",
   "calorias-para-ganhar-massa-muscular",
   /**
-   * Carb cycling é redistribuir macros entre os dias; recomposição em
-   * déficit exige proteína alta com carboidrato ajustado. Nos dois, a
-   * pergunta do leitor é a cascata da calculadora.
+   * Recomposição em déficit exige proteína alta com carboidrato ajustado:
+   * a pergunta do leitor é a cascata da calculadora. (O artigo de carb
+   * cycling saiu daqui em 15/10/2026: agora ele tem ferramenta própria, a
+   * Calculadora de Ciclo de Carboidratos, que usa esta mesma cascata.)
    */
-  "ciclo-de-carboidratos-carb-cycling",
   "deficit-calorico-e-hipertrofia",
 ];
