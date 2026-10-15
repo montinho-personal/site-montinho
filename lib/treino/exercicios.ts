@@ -143,6 +143,11 @@ export const EXERCICIOS: Exercicio[] = [
   // ── Antebraço ──────────────────────────────────────────────────────────
   { id: "rosca-punho", nome: "Rosca de punho", categoria: "isolado", equipamento: "halter", primarios: ["antebraco"] },
   { id: "farmers-walk", nome: "Farmer's walk", aliases: ["caminhada do fazendeiro"], categoria: "composto", equipamento: "halter", primarios: ["antebraco", "trapezio"], secundarios: ["core"] },
+  { id: "rosca-punho-invertida", nome: "Rosca de punho invertida", aliases: ["extensão de punho"], categoria: "isolado", equipamento: "halter", primarios: ["antebraco"] },
+  { id: "rosca-punho-polia", nome: "Rosca de punho na polia", categoria: "isolado", equipamento: "cabo", primarios: ["antebraco"] },
+  { id: "rosca-inversa-polia", nome: "Rosca inversa na polia", aliases: ["rosca inversa no cabo"], categoria: "isolado", equipamento: "cabo", primarios: ["antebraco"], secundarios: ["biceps"] },
+  { id: "rosca-punho-elastico", nome: "Rosca de punho com elástico", categoria: "isolado", equipamento: "peso-corporal", primarios: ["antebraco"] },
+  { id: "suspensao-barra", nome: "Suspensão na barra", aliases: ["dead hang", "pendurar na barra"], categoria: "isolado", equipamento: "peso-corporal", primarios: ["antebraco"], secundarios: ["costas"] },
   // ── Complementos comuns nas fichas brasileiras ─────────────────────────
   { id: "supino-inclinado-maquina", nome: "Supino inclinado na máquina", categoria: "composto", equipamento: "maquina", primarios: ["peitoral"], secundarios: ["triceps", "deltoide-anterior"] },
   { id: "crucifixo-inclinado", nome: "Crucifixo inclinado", categoria: "isolado", equipamento: "halter", primarios: ["peitoral"] },

@@ -1015,3 +1015,11 @@ Aprovado pelo Montinho. A página era `isIndexable: false` desde #748.
 - SERP dominada por dor (inflamada, travada, na cama, fisioterapia, parar de doer, aliviar em 3 minutos, desinflamar). Página fica no treino (academia, máquina, musculação, em casa, em pé, melhores, 10 exercícios para fortalecer na academia) e manda dor para os artigos: exercicios-para-dor-nas-costas-coluna, dor-lombar-na-musculacao, travou-a-lombar-o-que-fazer.
 - Extras: melhores para fortalecer na academia; na máquina; em pé e em casa; prancha e ponte (aparecem no snippet da Veja Saúde); dor/travada/inflamada → médico ou fisioterapeuta.
 - Fora: alongamentos para alívio (visão geral por IA), "como aliviar em 3 minutos", "o que é bom para desinflamar", "qual posição alivia", "na cama", "vídeo de exercício para coluna" — intenção clínica.
+
+## 2026-10-15 — /exercicios/antebraco entra no Google (prints de "exercícios para antebraço")
+
+Aprovado pelo Montinho (duas partes).
+- Base de exercícios: +5 (rosca de punho invertida, rosca de punho na polia, rosca inversa na polia, rosca de punho com elástico, suspensão na barra), com perfil em biomecanica.ts. Página vai de 3 para 8 exercícios; os novos aparecem também no Substituidor e na Calculadora de Volume.
+- Title: "Exercícios Para Antebraço | Montinho" → "Exercícios Para Antebraço: Academia, Halter, Polia e Casa | Montinho". Description nova. isIndexable: true.
+- Extras: melhores na academia; com halter; na polia; em casa e sem equipamento (elástico); feminino; rosca martelo × rosca inversa (visão geral por IA lista as duas).
+- Intenção 100% de treino (academia, halter, polia, em casa, feminino, elástico, sem equipamento, caseiro).
