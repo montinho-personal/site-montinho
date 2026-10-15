@@ -79,6 +79,8 @@ export const LINKS: Record<string, LinkControlado> = {
   "wa-sub": { destino: "/ferramentas/substituidor-de-exercicios", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "substituidor", tipo: "social" },
   "ig-whey": { destino: "/ferramentas/calculadora-whey", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "stories", utm_content: "calculadora_whey", tipo: "social" },
   "wa-whey": { destino: "/ferramentas/calculadora-whey", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "calculadora_whey", tipo: "social" },
+  "ig-deficit": { destino: "/ferramentas/calculadora-deficit-calorico", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "stories", utm_content: "calculadora_deficit", tipo: "social" },
+  "wa-deficit": { destino: "/ferramentas/calculadora-deficit-calorico", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "calculadora_deficit", tipo: "social" },
 };
 
 export function urlDoLink(slug: string, extra: Record<string, string> = {}): string | null {
