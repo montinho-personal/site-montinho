@@ -53,6 +53,7 @@ import { ARTIGOS_COM_CALCULADORA_CROSSFIT } from "../lib/crossfit";
 import { ARTIGOS_COM_CALCULADORA_HYROX } from "../lib/hyrox";
 import { ARTIGOS_COM_CALCULADORA_CREATINA, ARTIGOS_COM_LINK_CREATINA } from "../lib/creatina";
 import { ARTIGOS_COM_CALCULADORA_WHEY, ARTIGOS_COM_LINK_WHEY } from "../lib/whey";
+import { ARTIGOS_COM_LINK_CICLO } from "../lib/carboidratos/ciclo";
 import { ARTIGOS_COM_LINK_ROTINA_LOCAL } from "../lib/rotina/local";
 import { ARTIGOS_COM_LINK_SIMULADOR } from "../lib/simulador/emagrecimento";
 import { ARTIGOS_COM_LINK_SIMULADOR_MASSA } from "../lib/simulador/massa";
@@ -117,6 +118,7 @@ const REGISTROS: [string, string[]][] = [
   ["creatina (link)", ARTIGOS_COM_LINK_CREATINA],
   ["whey", ARTIGOS_COM_CALCULADORA_WHEY],
   ["whey (link)", ARTIGOS_COM_LINK_WHEY],
+  ["ciclo de carboidratos (link)", ARTIGOS_COM_LINK_CICLO],
   ["rotina/academia ideal (SEO local)", ARTIGOS_COM_LINK_ROTINA_LOCAL],
   ["simulador (link)", ARTIGOS_COM_LINK_SIMULADOR],
   ["simulador massa (link)", ARTIGOS_COM_LINK_SIMULADOR_MASSA],

@@ -374,6 +374,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["substituicao de alimentos", "lista de substituicao de alimentos", "tabela de substituicao", "equivalencia de alimentos", "trocar arroz por batata", "substituir arroz", "substituir frango por ovo", "quantos ovos equivalem a 100g de frango", "quanto de batata substitui arroz", "troca de alimentos", "trocar alimento na dieta"],
     selo: "novo",
   },
+  {
+    id: "ciclo-carboidratos",
+    href: "/ferramentas/ciclo-de-carboidratos",
+    nome: "Calculadora de Ciclo de Carboidratos",
+    resultado: "Monte seus dias de carbo alto, médio e baixo conforme o que você treina em cada dia.",
+    acao: "Montar meu ciclo",
+    tempo: "2 minutos",
+    categoria: "alimentacao",
+    icone: "talheres",
+    tags: ["ciclo de carboidratos", "carb cycling", "calculadora ciclo de carboidratos", "como fazer ciclo de carboidratos", "ciclo de carboidratos para emagrecer", "ciclo de carboidratos hipertrofia", "dia alto de carboidrato", "dia baixo de carboidrato", "carbo alto e baixo", "ciclo de carboidratos 5x2", "ciclo de carboidratos cutting", "quanto carboidrato no dia de treino", "carboidrato no dia de descanso"],
+    selo: "novo",
+  },
 
   /* ── Suplementação ────────────────────────────────────────────────── */
   {

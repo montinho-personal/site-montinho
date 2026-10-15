@@ -518,6 +518,21 @@ export default function CalculadoraMacros({ placement }: { placement: string }) 
                 Montar meu cardápio com esses macros
                 <span aria-hidden="true">→</span>
               </Link>
+              <p className="text-gray-300 text-sm leading-relaxed mt-4">
+                Seu treino não é igual todos os dias? Distribua seus carboidratos conforme a semana:{" "}
+                <Link
+                  href="/ferramentas/ciclo-de-carboidratos"
+                  onClick={() => {
+                    if (kcal !== null) guardaKcalParaMacros(kcal);
+                    if (peso !== null) guardaPesoParaProteina(peso);
+                    trackEvent("macro_ciclo_click", { placement });
+                  }}
+                  className="text-white underline underline-offset-4 decoration-1 hover:opacity-80"
+                  style={{ textDecorationColor: "#BA9E50" }}
+                >
+                  montar meu ciclo de carboidratos →
+                </Link>
+              </p>
             </div>
 
             {/* Como calculamos */}

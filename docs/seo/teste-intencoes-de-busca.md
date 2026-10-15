@@ -975,3 +975,14 @@ Três auditorias em paralelo. Corrigido:
 
 - Botões "−" e "+" em cada item: mudam a quantidade um passo de porção caseira por vez (meio filé, meia escumadeira), entre um passo e o dobro do teto do motor. Não reequilibram o resto do dia: a escolha é da pessoa, e as calorias/macros da refeição e do dia atualizam na hora. Evento `meal_portion_changed` (só a direção).
 - No celular, os controles ficam na linha de baixo do nome do alimento.
+
+## 2026-10-15 — Calculadora de Ciclo de Carboidratos (Fase 1)
+
+- Nova ferramenta em /ferramentas/ciclo-de-carboidratos. Pesquisa: prints do Google do Montinho (autocompletar, visão geral por IA, "As pessoas também perguntam", "Outras pessoas pesquisaram"); sem export do Answer the Public, por decisão dele.
+  - Usado: como fazer, para emagrecer, cutting, 5x2, carb cycling, dieta ciclo (pdf → página com tabela de exemplo), "ciclar carboidratos ajuda a emagrecer?".
+  - Fora (nome de outro profissional/marca): dudu haluch, gorgonoid, pef 360.
+  - Pauta, não cabe na página: "o que acontece se ficar 7 dias sem carboidratos?", "quais são os 3 carboidratos mais ruins?".
+  - A visão geral por IA diz que o ciclo "evita que o metabolismo fique lento": a página responde que não há evidência disso.
+- Motor em lib/carboidratos/ciclo.ts: média de macros pela cascata de lib/macros; pontuação de demanda por tipo × duração × intensidade (oculta); níveis relativos à semana; semana homogênea fica plana; calorias e proteína estáveis, gordura compensa entre 20% e 35%; dia baixo ≥ 130 g quando a média permite; alto ≤ 1,6× baixo; média semanal preservada. Testes em scripts/ciclo-carboidratos-test.ts.
+- Divisão de papéis com o artigo /blog/ciclo-de-carboidratos-carb-cycling: a ferramenta fica com calculadora/como montar/quanto em cada dia; o artigo, com o que é/funciona. O artigo saiu do registro da Calculadora de Macros e ganhou o cartão "Montar meu ciclo" (também em treino-low-carb-musculacao). A Calculadora de Macros ganhou o link "montar meu ciclo de carboidratos", com a ponte de calorias e peso.
+- Eventos `carb_cycle_*` só com categorias (objetivo, nível, origem das calorias), nunca peso ou calorias.
