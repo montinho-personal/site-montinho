@@ -990,3 +990,12 @@ Três auditorias em paralelo. Corrigido:
 ## 2026-10-15 — Ciclo de carboidratos: texto em português
 
 Pedido do Montinho ("brasileiro não sabe inglês direito"). Na ferramenta, dois H2, uma pergunta do FAQ e o link para o artigo trocaram "carb cycling" por "ciclo de carboidratos". "Carb cycling" segue só no title (entre parênteses), numa resposta do FAQ que explica o termo e nas tags de busca. Title e H1 não mudaram.
+
+## 2026-10-15 — Artigo ciclo de carboidratos: título em português e correção de afirmações
+
+Aprovado pelo Montinho.
+- Title: "Carb Cycling: Funciona? Protocolo Completo" → "Ciclo de Carboidratos Funciona? O Que Diz a Ciência". H1: "Ciclo de Carboidratos (Carb Cycling): Funciona? Protocolo Completo" → "Ciclo de Carboidratos Funciona? O Que É e o Que Diz a Ciência". Slug e description sem mudança. Motivo: português na frente; o artigo fica com "funciona? / o que é" e a ferramenta com "calculadora / como montar".
+- Removido: "dia baixo cria déficit sem prejudicar o treino", insulina/ambiente anabólico, "maior oxidação de gordura contribui para composição corporal".
+- Tabela de g/kg (dia baixo 0,5–1 g/kg) e exemplo de 80 kg (60 g no dia baixo, 320 no alto) trocados por exemplo calculado pela calculadora (280 g baixo / 370 g alto, 2.500 kcal).
+- Corrigido o link "Burke et al., 2011", que apontava para outro estudo (PMID 24149627); agora PMID 21660838. Citações novas: Impey 2018 (29453741), ACSM/AND/DC 2016 (26891166), Henselmans 2022 (35215506), conferidas no PubMed.
+- updatedAt: 2026-10-15.
