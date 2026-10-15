@@ -734,6 +734,31 @@ export function excluiItem(c: CardapioDia, refeicaoIdx: number, alimentoId: stri
   return novo;
 }
 
+/**
+ * A pessoa ajusta a quantidade de um item na mão: um passo de porção caseira
+ * para mais ou para menos (meio filé, meia escumadeira), nunca grama solta.
+ *
+ * Aqui o motor NÃO reequilibra o resto do dia: a decisão é dela, e o resumo
+ * mostra na hora como ficaram calorias e macros em relação à meta. O piso é
+ * um passo (para tirar de vez existe o "excluir"); o teto é o dobro do teto
+ * do motor, folga para quem come mais daquilo sem deixar virar absurdo.
+ */
+export function ajustaPorcao(c: CardapioDia, refeicaoIdx: number, alimentoId: string, direcao: 1 | -1): CardapioDia {
+  const a = ALIMENTO_CARDAPIO_POR_ID.get(alimentoId);
+  if (!a) return c;
+  return {
+    ...c,
+    refeicoes: c.refeicoes.map((r, i) => ({
+      ...r,
+      itens: r.itens.map((it) => {
+        if (i !== refeicaoIdx || it.alimentoId !== alimentoId) return { ...it };
+        const nova = Math.round((it.porcoes + direcao * a.passo) * 2) / 2;
+        return { ...it, porcoes: Math.min(a.maxPorcoes * 2, Math.max(a.passo, nova)) };
+      }),
+    })),
+  };
+}
+
 export const SEM_ALTERNATIVA =
   "Não encontrei uma substituição boa o suficiente para manter esta refeição perto da sua meta. Escolha outro alimento da lista ou ajuste a refeição.";
 

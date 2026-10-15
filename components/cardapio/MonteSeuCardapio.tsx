@@ -38,6 +38,7 @@ import {
   SITUACOES_ESPECIAIS,
   alternativas,
   excluiItem,
+  ajustaPorcao,
   geraCardapio,
   proximaVersao,
   geraSemana,
@@ -832,11 +833,31 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                       const altsImpressas = alternativas(it, r.momento, pedido, r.itens.map((x) => x.alimentoId)).slice(0, 3);
                       return (
                         <li key={it.alimentoId}>
-                          <div className="flex items-center justify-between gap-3">
-                            <span className="text-gray-200 text-sm">
+                          {/* No celular, os controles descem para a linha de baixo: o nome do alimento não fica espremido. */}
+                          <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
+                            <span className="text-gray-200 text-sm basis-full sm:basis-auto sm:flex-1 min-w-0">
                               {rotuloPorcao(a, it.porcoes)} de <strong className="text-white font-medium">{a.nome.toLowerCase()}</strong>
                             </span>
-                            <span className="flex items-center gap-3 shrink-0 print:hidden">
+                            <span className="flex items-center gap-3 shrink-0 ml-auto print:hidden">
+                              {/* Quantidade na mão: um passo de porção caseira, sem reequilibrar o dia. */}
+                              <span className="flex items-center" role="group" aria-label={`Quantidade de ${a.nome.toLowerCase()} no ${r.nome.toLowerCase()}`}>
+                                {([[-1, "−", "Menos"], [1, "+", "Mais"]] as const).map(([d, sinal, nome]) => (
+                                  <button
+                                    key={d}
+                                    type="button"
+                                    onClick={() => {
+                                      setCardapio((c) => (c ? ajustaPorcao(c, ri, it.alimentoId, d) : c));
+                                      setVariedade(null);
+                                      trackEvent("meal_portion_changed", { placement, direcao: d > 0 ? "mais" : "menos" });
+                                    }}
+                                    disabled={d < 0 ? it.porcoes <= a.passo : it.porcoes >= a.maxPorcoes * 2}
+                                    aria-label={`${nome} ${a.nome.toLowerCase()} no ${r.nome.toLowerCase()}`}
+                                    className="w-9 h-9 border border-white/25 text-white text-base leading-none disabled:opacity-30 hover:border-white/60"
+                                  >
+                                    {sinal}
+                                  </button>
+                                ))}
+                              </span>
                               <button
                                 type="button"
                                 onClick={() => {

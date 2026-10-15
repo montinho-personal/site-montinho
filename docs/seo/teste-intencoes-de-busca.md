@@ -970,3 +970,8 @@ Três auditorias em paralelo. Corrigido:
 - As versões da semana também só trocam entre os marcados. O "trocar" que a pessoa toca continua mostrando o banco, com os marcados primeiro.
 - Novo botão "excluir" em cada item: tira o alimento, reequilibra as porções do dia sem trazer alimento novo e remove o item das escolhas daquela refeição. Evento `meal_item_removed`.
 - Texto do formulário e da página: "o cardápio usa só os alimentos que você marcar".
+
+## 2026-10-15 — Monte seu Cardápio: + e − em cada alimento
+
+- Botões "−" e "+" em cada item: mudam a quantidade um passo de porção caseira por vez (meio filé, meia escumadeira), entre um passo e o dobro do teto do motor. Não reequilibram o resto do dia: a escolha é da pessoa, e as calorias/macros da refeição e do dia atualizam na hora. Evento `meal_portion_changed` (só a direção).
+- No celular, os controles ficam na linha de baixo do nome do alimento.
