@@ -1007,3 +1007,11 @@ A página já aparece no autocompletar de "mapa muscular". Title, description e 
 - FAQ + FAQPage (8): o que é mapa muscular; quais os 7 grupos musculares; qual site mostra exercícios para cada músculo; como usar o mapa para montar o treino; quantos exercícios por músculo é o ideal; 3 exercícios por grupo é suficiente; como dividir o treino por grupo muscular; rosto e pescoço (visão geral por IA lista cabeça e pescoço). Respostas de volume alinhadas à Calculadora de Volume.
 - Fora: "quais são os 3 tipos musculares" (anatomia; fonte oficial não acessível agora, NCBI/MedlinePlus com CAPTCHA); "melhor aplicativo gratuito para estudar músculos"; anatomia 3D, atlas, desenho fácil.
 - Pautas: "mapa muscular para imprimir / pdf" e "exercícios e músculos trabalhados pdf" (isca); "quantos exercícios por músculo" (cluster forte no autocompletar: ideal, hipertrofia, full body, na semana, dois exercícios) — avaliar artigo próprio ou seção na Calculadora de Volume, verificando canibalização com volume-de-treino-ideal; "lista de exercícios para iniciantes"; "10 melhores exercícios de musculação".
+
+## 2026-10-15 — /exercicios/lombar entra no Google (prints de "exercícios para lombar")
+
+Aprovado pelo Montinho. A página era `isIndexable: false` desde #748.
+- Title: "Exercícios Que Trabalham a Lombar | Montinho" → "Exercícios Para Lombar: Academia, Máquina e Casa | Montinho". H1: "Exercícios que trabalham a lombar" → "Exercícios para lombar". Description nova. isIndexable: true (entra no sitemap e no hub).
+- SERP dominada por dor (inflamada, travada, na cama, fisioterapia, parar de doer, aliviar em 3 minutos, desinflamar). Página fica no treino (academia, máquina, musculação, em casa, em pé, melhores, 10 exercícios para fortalecer na academia) e manda dor para os artigos: exercicios-para-dor-nas-costas-coluna, dor-lombar-na-musculacao, travou-a-lombar-o-que-fazer.
+- Extras: melhores para fortalecer na academia; na máquina; em pé e em casa; prancha e ponte (aparecem no snippet da Veja Saúde); dor/travada/inflamada → médico ou fisioterapeuta.
+- Fora: alongamentos para alívio (visão geral por IA), "como aliviar em 3 minutos", "o que é bom para desinflamar", "qual posição alivia", "na cama", "vídeo de exercício para coluna" — intenção clínica.
