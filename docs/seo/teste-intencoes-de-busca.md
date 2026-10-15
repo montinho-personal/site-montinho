@@ -938,3 +938,7 @@ Três auditorias em paralelo. Corrigido:
 
 - /videos/o-aparelho-esta-ocupado, com VideoObject (data de publicação 14/10/2026, conferida no YouTube Studio pelo print do Montinho; 0:45). Liga para o Substituidor e para três artigos (hip thrust, glúteos em casa, quando trocar o treino).
 - Correção: o teste de vídeos (scripts/videos-test.ts) procurava o seletor antigo do VideoMedido; ajustado para o seletor configurável com padrão `.prose-blog`.
+
+## 2026-10-15 — Troca Certa: nome "Abóbora cozida"
+
+- A pedido do Montinho, a cabotiá aparece como "Abóbora cozida" / "Abóbora crua". A variedade continua visível na linha "TACO: Abóbora, cabotian, cozida".
