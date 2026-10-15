@@ -911,3 +911,10 @@ Três auditorias em paralelo. Corrigido:
 ## 2026-10-14 — Links rastreados do vídeo do Substituidor
 
 - `/l/yt-sub`, `/l/ig-sub` e `/l/wa-sub` → `/ferramentas/substituidor-de-exercicios`, para medir o vídeo "O aparelho está ocupado. E agora?" por canal (YouTube descrição, Instagram Reels, status do WhatsApp).
+
+## 2026-10-15 — Troca Certa: whey e tilápia
+
+- Pedido do Montinho. Entram fora da TACO, em `lib/alimentos/extras-troca.ts`, cada um com a fonte na tela no lugar da linha "TACO: …" e com asterisco na lista pronta.
+- Whey protein concentrado: rótulo de referência do whey concentrado Growth, porção de 30 g = 122 kcal, 23 g de proteína, 4 g de carboidrato, 1,6 g de gordura (valores declarados pelo fabricante, conferidos em reprodução da tabela; o site da marca bloqueia acesso automático). Medida "scoop" de 30 g. 1 scoop ≈ 70 g de peito de frango grelhado em proteína.
+- Tilápia (filé cru e grelhado): USDA FoodData Central SR Legacy, NDB 15261 (cru: 96 kcal, 20,08 g P, 1,7 g G) e 15262 (calor seco: 128 kcal, 26,15 g P, 2,65 g G). A API do USDA não abriu na sessão; valores conferidos em duas reproduções independentes.
+- O aviso "Whey não está na TACO" foi removido da busca.
