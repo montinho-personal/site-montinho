@@ -365,7 +365,7 @@ export default function CalculadoraCiclo({ placement }: { placement: string }) {
               <div className="flex flex-wrap items-center gap-4 mt-5">
                 <Compartilhar contexto="tool-result" titulo="Calculadora de Ciclo de Carboidratos" caminho="/ferramentas/ciclo-de-carboidratos" local="tool_result" ferramenta="ciclo-carboidratos" aparencia="solido" />
                 <Link href="/blog/ciclo-de-carboidratos-carb-cycling" onClick={() => trackEvent("carb_cycle_article_clicked", { placement })} className={`text-gray-300 text-sm ${ln}`} style={{ textDecorationColor: "#BA9E50" }}>
-                  Entenda a ciência do carb cycling →
+                  Entenda o que diz a ciência sobre o ciclo →
                 </Link>
               </div>
 

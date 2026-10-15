@@ -986,3 +986,7 @@ Três auditorias em paralelo. Corrigido:
 - Motor em lib/carboidratos/ciclo.ts: média de macros pela cascata de lib/macros; pontuação de demanda por tipo × duração × intensidade (oculta); níveis relativos à semana; semana homogênea fica plana; calorias e proteína estáveis, gordura compensa entre 20% e 35%; dia baixo ≥ 130 g quando a média permite; alto ≤ 1,6× baixo; média semanal preservada. Testes em scripts/ciclo-carboidratos-test.ts.
 - Divisão de papéis com o artigo /blog/ciclo-de-carboidratos-carb-cycling: a ferramenta fica com calculadora/como montar/quanto em cada dia; o artigo, com o que é/funciona. O artigo saiu do registro da Calculadora de Macros e ganhou o cartão "Montar meu ciclo" (também em treino-low-carb-musculacao). A Calculadora de Macros ganhou o link "montar meu ciclo de carboidratos", com a ponte de calorias e peso.
 - Eventos `carb_cycle_*` só com categorias (objetivo, nível, origem das calorias), nunca peso ou calorias.
+
+## 2026-10-15 — Ciclo de carboidratos: texto em português
+
+Pedido do Montinho ("brasileiro não sabe inglês direito"). Na ferramenta, dois H2, uma pergunta do FAQ e o link para o artigo trocaram "carb cycling" por "ciclo de carboidratos". "Carb cycling" segue só no title (entre parênteses), numa resposta do FAQ que explica o termo e nas tags de busca. Title e H1 não mudaram.
