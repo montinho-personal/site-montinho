@@ -1046,3 +1046,11 @@ O short Dg8Sbv6_V8w é o "aprenda a recomeçar rápido" (VideoRecomecar), que j�
 ## 2026-10-16 — Vídeo do Montinho no artigo Upper Lower
 
 treino-upper-lower-superior-inferior: o vídeo de terceiro (rux_N9zfPXY, treinos AB/ABC/ABCD) foi trocado pelo short do Montinho (pNphDSjlr2I), no mesmo lugar (fim do artigo), em formato vertical. Sem updatedAt: troca de vídeo não muda o texto. Fora de /videos até ter a data de publicação.
+
+## 2026-10-16 — Upper Lower: afirmações corrigidas
+
+Aprovado pelo Montinho. Title, description e H1 sem mudança. updatedAt 2026-10-16.
+- "2x por semana produz ~40% mais hipertrofia, com volume igual": removido. O link "publicada no JSCR" apontava para um estudo de ashwagandha (PMID 26609282). Agora: Schoenfeld, Ogborn e Krieger 2016 (Sports Med, PMID 27102172) e a revisão de 2019 dos mesmos autores (J Sports Sci, PMID 30558493), que conclui que com volume igual a frequência não muda a hipertrofia de forma relevante. Vantagem apresentada como prática (distribuir séries e recuperar).
+- "documentadamente superior", "sinal anabólico constante", "excepcionalmente", "reduz 50% do potencial hormonal e metabólico", "a divisão que a ciência mais valida", "possivelmente a melhor divisão existente": removidos ou reescritos.
+- Excerpt e abertura: removida a atribuição sem fonte de preferência a Brad Schoenfeld, Eric Helms e Mike Israetel.
+- Pendente de aprovação: H1 "Treino Upper/Lower: A Divisão que Maximiza Hipertrofia em 4 Dias" (superlativo sem sustentação).

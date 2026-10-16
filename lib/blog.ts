@@ -46832,12 +46832,12 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     title: "Treino Upper/Lower: A Divisão que Maximiza Hipertrofia em 4 Dias",
     metaTitle: "Treino Upper Lower: Fichas de 2, 3, 4 e 5 Dias (Masc. e Fem.)",
     metaDescription: "Fichas prontas de 2 a 5 dias, versão masculina e feminina, quantas séries fazer e como juntar com o push pull legs (ULPPL) treinando cada músculo 2x na semana.",
-    excerpt: "O treino upper/lower é a divisão favorita de pesquisadores como Brad Schoenfeld e Eric Helms — e por razões sólidas. Frequência 2x por semana por grupo muscular com estrutura prática.",
+    excerpt: "O treino upper/lower divide a semana em dias de parte de cima e de parte de baixo: cada músculo treina 2x por semana em 4 dias. Fichas prontas de 2 a 5 dias e os erros mais comuns.",
     category: "Treino",
     readTime: "13 min",
     author: "Montinho",
     date: "2026-06-28",
-    updatedAt: "2026-10-14",
+    updatedAt: "2026-10-16",
     faq: [
       { question: "O que é treino upper lower?", answer: "O treino upper/lower (superior/inferior) é uma divisão em que você separa o corpo em membros superiores e inferiores, treinando cada parte 2 vezes por semana em 4 sessões semanais." },
       { question: "Upper lower é bom para iniciantes?", answer: "O upper/lower funciona bem para iniciantes a intermediários. Para iniciantes absolutos, um full body 3x/semana pode ser mais eficiente nos primeiros 3–6 meses. A partir daí, o upper/lower é uma progressão natural excelente." },
@@ -46855,7 +46855,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
     tags: ["treino upper lower", "divisão superior inferior", "treino 4 dias semana", "hipertrofia intermediário", "upper lower split"],
     content: `<h2>O Que É o Treino Upper/Lower?</h2>
 <p>O treino upper/lower — ou treino superior/inferior — é uma divisão em que você separa o corpo em duas partes: <strong>membros superiores</strong> (peito, costas, ombros, bíceps, tríceps) e <strong>membros inferiores</strong> (quadríceps, posterior de coxa, glúteos, panturrilha). Cada parte é treinada 2 vezes por semana em 4 sessões.</p>
-<p>É a divisão preferida de pesquisadores como Brad Schoenfeld, Eric Helms e Mike Israetel quando o critério é <strong>frequência de estímulo com recuperação adequada</strong>. E os dados científicos sustentam essa preferência.</p>
+<p>É uma das divisões mais usadas por quem treina 4 vezes por semana, porque equilibra <strong>frequência de estímulo e recuperação</strong> numa estrutura simples de seguir.</p>
 
 
 
@@ -46867,8 +46867,9 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Upper/lower: como dividir o treino para ganhar massa e recuperar melhor.</figcaption>
 </figure>
 <h2>Por Que o Upper/Lower É Tão Eficiente?</h2>
-<p>A meta-análise de Schoenfeld, Ogborn e Krieger (2016) — <a href="https://pubmed.ncbi.nlm.nih.gov/26609282/" target="_blank" rel="noopener noreferrer">publicada no JSCR</a> — mostrou que treinar cada grupo muscular <strong>2x por semana produz ~40% mais hipertrofia</strong> do que treinar 1x, com volume semanal igual. O upper/lower é a forma mais prática de atingir essa frequência sem comprometer a recuperação.</p>
-<p>No treino <a href="/blog/treino-abcd-para-hipertrofia">ABCD tradicional</a>, você treina cada músculo 1x/semana. No upper/lower, cada músculo recebe estímulo 2x — o que é documentadamente superior para a maioria dos praticantes intermediários.</p>
+<p>Uma <a href="https://pubmed.ncbi.nlm.nih.gov/27102172/" target="_blank" rel="noopener noreferrer">meta-análise de 2016</a> (Schoenfeld, Ogborn e Krieger, Sports Medicine) sugeriu que treinar cada músculo 2x por semana dava resultado melhor do que 1x. Uma <a href="https://pubmed.ncbi.nlm.nih.gov/30558493/" target="_blank" rel="noopener noreferrer">revisão mais recente e maior</a>, dos mesmos autores (2019, Journal of Sports Sciences, 25 estudos), concluiu que, <strong>com o mesmo volume semanal, a frequência não muda de forma relevante a hipertrofia</strong>: dá para escolher pela preferência.</p>
+<p>Então a vantagem do upper/lower é prática: com cada músculo aparecendo em dois treinos, fica mais fácil distribuir as séries da semana sem sessões longas demais e com tempo de recuperar entre elas.</p>
+<p>No treino <a href="/blog/treino-abcd-para-hipertrofia">ABCD tradicional</a>, cada músculo costuma ser treinado 1x por semana, com todo o volume concentrado num dia. No upper/lower, o mesmo volume se divide em dois treinos menores, o que ajuda a manter a qualidade das séries até o fim do treino.</p>
 
 <h2>Upper/Lower vs Outras Divisões</h2>
 <table>
@@ -46969,18 +46970,18 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 </table>
 
 <h2>Upper/Lower Para Emagrecer com Músculo</h2>
-<p>O upper/lower funciona excepcionalmente bem em <a href="/blog/deficit-calorico-e-hipertrofia">déficit calórico</a> para <a href="/blog/como-manter-massa-muscular-emagrecendo">preservação de massa muscular durante o emagrecimento</a>. A alta frequência de estímulo (2x/semana) mantém o sinal anabólico constante, minimizando a perda muscular mesmo em restrição calórica. É a divisão que costumo recomendar para clientes em Alphaville que estão em processo de recomposição corporal.</p>
+<p>O upper/lower funciona bem em <a href="/blog/deficit-calorico-e-hipertrofia">déficit calórico</a> para <a href="/blog/como-manter-massa-muscular-emagrecendo">preservação de massa muscular durante o emagrecimento</a>. Treinar cada músculo duas vezes por semana, com volume suficiente e tentando manter as cargas, é uma forma prática de dar ao corpo o estímulo que ajuda a preservar a massa muscular durante a restrição calórica. É a divisão que costumo recomendar para clientes em Alphaville que estão em processo de recomposição corporal.</p>
 
 <h2>Erros Comuns no Upper/Lower</h2>
 <ul>
 <li><strong>Tratar os dois dias superior como iguais:</strong> Upper A e B devem ter ênfases diferentes para evitar repetição e maximizar volume efetivo.</li>
-<li><strong>Negligenciar o Lower:</strong> Treino de perna com pouco volume reduz 50% do potencial hormonal e metabólico da divisão.</li>
+<li><strong>Negligenciar o Lower:</strong> Dias de inferior com pouco volume desequilibram a divisão. Quadríceps, posterior, glúteos e panturrilha merecem o mesmo cuidado que os dias de superior.</li>
 <li><strong>Volume excessivo no Upper:</strong> Com 2 sessões semanais, o volume por sessão precisa ser controlado. 12–18 séries por grupo/semana é o alvo.</li>
 <li><strong>Ignorar a recuperação:</strong> <a href="/blog/sono-e-crescimento-muscular">Sono de qualidade</a> e <a href="/blog/descanso-entre-series">descanso adequado</a> são ainda mais críticos com alta frequência.</li>
 </ul>
 
 <h2>Resumo Final</h2>
-<p>O upper/lower é a divisão que a ciência mais valida para praticantes intermediários: frequência 2x por músculo, estrutura prática em 4 dias e excelente equilíbrio entre especialização e recuperação. Se você tem 4 dias disponíveis por semana e pelo menos 8–12 meses de treino, esse é o modelo que vai te dar mais retorno no menor tempo. Para quem está em fase de <a href="/blog/recomposicao-corporal">recomposição corporal</a> ou emagrecimento, é possivelmente a melhor divisão existente.</p>
+<p>O upper/lower é uma das divisões mais práticas para praticantes intermediários: cada músculo 2x por semana, estrutura simples em 4 dias e bom equilíbrio entre volume e recuperação. Se você tem 4 dias disponíveis por semana e alguns meses de treino, é um ótimo modelo para seguir. Para quem está em <a href="/blog/recomposicao-corporal">recomposição corporal</a> ou emagrecimento, também funciona bem. Em qualquer caso, o que decide o resultado é a progressão de carga e a constância, mais do que a divisão escolhida.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Gravei um vídeo curto mostrando como fica a semana de Upper Lower.</p>
