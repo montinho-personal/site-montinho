@@ -1063,3 +1063,7 @@ Fonte: hyrox.com/event/hyrox-sao-paulo-2 (oficial), lida em 16/10. Entraram a ta
 
 Fonte: maratonadecuritiba.com.br (FAQ oficial), lida em 16/10. Largada às 5h em 3 ondas (ACD 42/21; elite e geral 42/21; 10/5), funil por pace, chegar 40 min antes; hidratação; premiação (bruto geral, líquido por categoria na maratona, dinheiro só elite e ACD do CPB). FAQ do horário atualizada. updatedAt 2026-10-16. Brasília: sem fato novo verificável (site oficial devolve 406 a acesso automatizado; não contornado).
 - 16/10 (aprovado pelo Montinho): H1 "Treino Upper/Lower: A Divisão que Maximiza Hipertrofia em 4 Dias" → "Treino Upper/Lower: Como Montar em 2, 3, 4 ou 5 Dias". metaTitle e description sem mudança.
+
+## 2026-10-16 — Links rastreados do Simulador de Emagrecimento (stories IG + status WhatsApp)
+
+Par `ig-emagrecimento` / `wa-emagrecimento` em `lib/crm/links.ts`, destino `/ferramentas/simulador-emagrecimento`, para o vídeo da calculadora de emagrecimento. Um código por rede, como `ig-fds`/`wa-fds`; `utm_content=simulador_emagrecimento`. Sem mudança de conteúdo na página.
