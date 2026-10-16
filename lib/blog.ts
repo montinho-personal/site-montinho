@@ -46829,7 +46829,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   },
   {
     slug: "treino-upper-lower-superior-inferior",
-    title: "Treino Upper/Lower: A Divisão que Maximiza Hipertrofia em 4 Dias",
+    title: "Treino Upper/Lower: Como Montar em 2, 3, 4 ou 5 Dias",
     metaTitle: "Treino Upper Lower: Fichas de 2, 3, 4 e 5 Dias (Masc. e Fem.)",
     metaDescription: "Fichas prontas de 2 a 5 dias, versão masculina e feminina, quantas séries fazer e como juntar com o push pull legs (ULPPL) treinando cada músculo 2x na semana.",
     excerpt: "O treino upper/lower divide a semana em dias de parte de cima e de parte de baixo: cada músculo treina 2x por semana em 4 dias. Fichas prontas de 2 a 5 dias e os erros mais comuns.",
