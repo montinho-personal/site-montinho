@@ -54,12 +54,12 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
       "O HYROX volta a São Paulo em 17 e 18 de outubro, no Distrito Anhembi. Data, local, categorias, kit, inscrição e como chegar pronto.",
     category: "Treinamento",
     date: "2026-09-29",
-    updatedAt: "2026-10-09",
-    readTime: "6 min",
+    updatedAt: "2026-10-16",
+    readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["HYROX", "HYROX São Paulo", "HYROX 2026", "fitness racing", "treino funcional"],
     content: `<img src="/blog-images/hyrox-sao-paulo-2026-capa.webp" alt="Capa: HYROX São Paulo 2026 — 17 e 18 de outubro no Distrito Anhembi" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p>Informações verificadas em 29 de setembro de 2026 no site oficial do HYROX e do Distrito Anhembi, e em 9 de outubro na plataforma oficial de ingressos do HYROX Brasil. Horários de largada por categoria saem na programação oficial; esta página é atualizada.</p></blockquote>
+<blockquote><p>Informações verificadas em 16 de outubro de 2026 no site oficial do HYROX (programação provisória de largadas, check-in e cerimônias), em 29 de setembro no site do Distrito Anhembi e em 9 de outubro na plataforma oficial de ingressos do HYROX Brasil. A programação é provisória e pode mudar: o horário individual de cada atleta sai no link oficial, cerca de 3 dias antes da prova.</p></blockquote>
 <p>O <strong>HYROX São Paulo 2026</strong> acontece no <strong>sábado e domingo, 17 e 18 de outubro</strong>, no <strong>Distrito Anhembi</strong>, na zona norte da cidade. É a terceira edição paulistana da prova de "fitness racing" que mistura corrida e força — e a forma mais fácil de entender o formato é: <strong>8 km de corrida, divididos em 8 trechos de 1 km, cada um seguido de uma estação de exercício</strong>.</p>
 
 <h2>Resumo do HYROX São Paulo 2026</h2>
@@ -67,12 +67,39 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
 <tr><td>Datas</td><td>Sábado e domingo, 17 e 18/10/2026</td></tr>
 <tr><td>Local</td><td>Distrito Anhembi (Expo 1 e 2) — Av. Olavo Fontoura, 1209, Santana, São Paulo</td></tr>
 <tr><td>Categorias</td><td>Individual, Duplas e Revezamento</td></tr>
-<tr><td>Retirada de kit / check-in antecipado</td><td>Divulgado pelo Distrito Anhembi: 16/10, das 10h às 19h, no Puma do Shopping Morumbi, para atletas de sábado, com documento com foto — confirme no e-mail da inscrição</td></tr>
+<tr><td>Check-in antecipado</td><td>Sexta, 16/10, das 10h às 19h, na loja Puma do Shopping Morumbi, só para quem compete no sábado. Leve documento com foto; não é permitido fazer o check-in por outra pessoa</td></tr>
+<tr><td>Check-in no dia da prova</td><td>Sábado, 17/10, das 6h30 às 20h30; domingo, 18/10, das 6h30 até a última bateria. Só no dia em que você compete, com documento</td></tr>
+<tr><td>Horários das largadas</td><td>Sábado das 8h às 20h30 e domingo das 8h às 13h10 (programação provisória, abaixo)</td></tr>
 <tr><td>Inscrição e valores</td><td>Pela plataforma oficial do HYROX Brasil; o preço varia por categoria e lote</td></tr>
 <tr><td>Ingresso para assistir</td><td>À venda na mesma plataforma oficial, na categoria Spectator (espectador), junto com os add-ons; o valor aparece lá</td></tr>
 <tr><td>Esgotou?</td><td>Não até 9/10: Singles, Doubles, Relay e Spectator apareciam à venda normalmente na plataforma oficial. Lotes podem fechar a qualquer momento</td></tr>
 <tr><td>Próxima edição anunciada</td><td>8 e 9 de maio de 2027</td></tr>
 </tbody></table>
+
+<h2>Horários do HYROX São Paulo 2026 por categoria</h2>
+<p>Programação provisória divulgada pelo HYROX, sujeita a mudança. O check-in de cada categoria abre 90 minutos antes da primeira bateria dela.</p>
+<table><thead><tr><th>Sábado, 17/10</th><th>Categoria</th></tr></thead><tbody>
+<tr><td>8h00 – 10h00</td><td>HYROX Men e Adaptive Men</td></tr>
+<tr><td>10h30 – 11h40</td><td>Doubles Men</td></tr>
+<tr><td>12h10 – 12h30</td><td>Doubles Women Pro</td></tr>
+<tr><td>12h40 – 12h50</td><td>Women Pro</td></tr>
+<tr><td>13h20 – 14h20</td><td>Doubles Women</td></tr>
+<tr><td>14h30 – 15h20</td><td>HYROX Women e Adaptive Women</td></tr>
+<tr><td>15h50 – 17h30</td><td>Doubles Mixed</td></tr>
+<tr><td>18h00 – 18h30</td><td>Doubles Men Pro</td></tr>
+<tr><td>18h40 – 19h30</td><td>Men Pro</td></tr>
+<tr><td>20h00</td><td>Men's Relay</td></tr>
+<tr><td>20h10 – 20h20</td><td>Mixed Relay</td></tr>
+<tr><td>20h30</td><td>Women's Relay</td></tr>
+</tbody></table>
+<table><thead><tr><th>Domingo, 18/10</th><th>Categoria</th></tr></thead><tbody>
+<tr><td>8h00 – 9h10</td><td>HYROX Men e Adaptive Men</td></tr>
+<tr><td>9h40 – 10h20</td><td>Doubles Men</td></tr>
+<tr><td>10h50 – 11h20</td><td>Doubles Women</td></tr>
+<tr><td>11h30 – 11h40</td><td>HYROX Women</td></tr>
+<tr><td>12h10 – 13h10</td><td>Doubles Mixed</td></tr>
+</tbody></table>
+<p>O briefing do revezamento (Relay) é no sábado às 19h, na área de transição. As cerimônias de premiação vão de 14h30 a 22h15 no sábado e de 10h50 a 15h no domingo, conforme a categoria.</p>
 
 <p><strong>Mesmo fim de semana:</strong> de 16 a 18 de outubro o Anhembi também recebe o <a href="/blog/mr-olympia-brasil-2026">Mr. Olympia Brasil 2026</a>. Conte com mais movimento no entorno.</p>
 
@@ -112,6 +139,8 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
     faq: [
       { question: "Quando é o HYROX São Paulo 2026?", answer: "No sábado e domingo, 17 e 18 de outubro de 2026." },
       { question: "Onde vai ser o HYROX em São Paulo?", answer: "No Distrito Anhembi (Expo 1 e 2), na Av. Olavo Fontoura, 1209, em Santana, zona norte de São Paulo." },
+      { question: "Qual o horário do HYROX São Paulo 2026?", answer: "Pela programação provisória do HYROX, as baterias vão das 8h às 20h30 no sábado (17/10) e das 8h às 13h10 no domingo (18/10), conforme a categoria. O horário individual de cada atleta sai no link oficial cerca de 3 dias antes da prova, e não é possível trocar." },
+      { question: "Onde retirar o kit do HYROX São Paulo 2026?", answer: "Quem compete no sábado pode fazer o check-in antecipado na sexta, 16/10, das 10h às 19h, na loja Puma do Shopping Morumbi. No dia da prova, o check-in é no Anhembi: sábado das 6h30 às 20h30 e domingo das 6h30 até a última bateria, só no dia em que você compete. Leve documento com foto." },
       { question: "Tem ingresso para assistir ao HYROX São Paulo?", answer: "Tem. A plataforma oficial do HYROX Brasil vende ingressos de espectador (Spectator) para o HYROX São Paulo, além das inscrições de atleta em Singles, Doubles e Relay. O valor e a disponibilidade estão na própria plataforma." },
       { question: "O HYROX São Paulo 2026 está esgotado?", answer: "Até 9 de outubro de 2026, não: as inscrições de atleta (Singles, Doubles e Relay) e o ingresso de espectador apareciam à venda normalmente na plataforma oficial do HYROX Brasil. Os lotes podem fechar perto da prova, então confira lá antes de planejar." },
       { question: "Quanto custa o HYROX?", answer: "Depende da categoria (individual, dupla ou revezamento) e do lote. O valor atualizado está na plataforma oficial de inscrição do HYROX Brasil." },

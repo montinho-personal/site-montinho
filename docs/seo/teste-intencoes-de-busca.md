@@ -1054,3 +1054,7 @@ Aprovado pelo Montinho. Title, description e H1 sem mudança. updatedAt 2026-10-
 - "documentadamente superior", "sinal anabólico constante", "excepcionalmente", "reduz 50% do potencial hormonal e metabólico", "a divisão que a ciência mais valida", "possivelmente a melhor divisão existente": removidos ou reescritos.
 - Excerpt e abertura: removida a atribuição sem fonte de preferência a Brad Schoenfeld, Eric Helms e Mike Israetel.
 - Pendente de aprovação: H1 "Treino Upper/Lower: A Divisão que Maximiza Hipertrofia em 4 Dias" (superlativo sem sustentação).
+
+## 2026-10-16 — HYROX SP 2026: programação provisória (varredura automática)
+
+Fonte: hyrox.com/event/hyrox-sao-paulo-2 (oficial), lida em 16/10. Entraram a tabela de largadas por categoria (sábado 8h–20h30, domingo 8h–13h10), o check-in no dia (sáb 6h30–20h30; dom 6h30 até a última bateria), o check-in antecipado confirmado pelo HYROX (16/10, 10h–19h, Puma Morumbi Shopping, só atletas de sábado), briefing do Relay e faixa das cerimônias, mais 2 FAQs (horário, retirada de kit). Ingressos/esgotado: sem nova verificação (plataforma do HYROX Brasil inacessível daqui), segue "até 9/10". Capa sem mudança. updatedAt 2026-10-16.
