@@ -1058,3 +1058,7 @@ Aprovado pelo Montinho. Title, description e H1 sem mudança. updatedAt 2026-10-
 ## 2026-10-16 — HYROX SP 2026: programação provisória (varredura automática)
 
 Fonte: hyrox.com/event/hyrox-sao-paulo-2 (oficial), lida em 16/10. Entraram a tabela de largadas por categoria (sábado 8h–20h30, domingo 8h–13h10), o check-in no dia (sáb 6h30–20h30; dom 6h30 até a última bateria), o check-in antecipado confirmado pelo HYROX (16/10, 10h–19h, Puma Morumbi Shopping, só atletas de sábado), briefing do Relay e faixa das cerimônias, mais 2 FAQs (horário, retirada de kit). Ingressos/esgotado: sem nova verificação (plataforma do HYROX Brasil inacessível daqui), segue "até 9/10". Capa sem mudança. updatedAt 2026-10-16.
+
+## 2026-10-16 — Maratona de Curitiba 2026: largada, ondas, hidratação e premiação (varredura automática)
+
+Fonte: maratonadecuritiba.com.br (FAQ oficial), lida em 16/10. Largada às 5h em 3 ondas (ACD 42/21; elite e geral 42/21; 10/5), funil por pace, chegar 40 min antes; hidratação; premiação (bruto geral, líquido por categoria na maratona, dinheiro só elite e ACD do CPB). FAQ do horário atualizada. updatedAt 2026-10-16. Brasília: sem fato novo verificável (site oficial devolve 406 a acesso automatizado; não contornado).

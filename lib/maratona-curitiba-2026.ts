@@ -3,7 +3,7 @@ import type { BlogPost } from "./blog";
 /**
  * Santander Maratona de Curitiba 2026 (15/11). Só fato de fonte oficial
  * (Prefeitura de Curitiba, site/Instagram oficial, Ticket Sports) ou de dois
- * veículos independentes. Kit confirmado em 02/10 (MON, 12–14/11). Horário de largada e premiação: pendentes do
+ * veículos independentes. Kit confirmado em 02/10 (MON, 12–14/11). Horário de largada (5h, ondas) e premiação confirmados no site oficial em 16/10; antes, pendentes do
  * regulamento — não publicar antes.
  */
 export const MARATONA_CURITIBA_2026_POSTS: BlogPost[] = [
@@ -56,12 +56,12 @@ export const MARATONA_CURITIBA_2026_POSTS: BlogPost[] = [
       "Domingo, 15 de novembro, largada no Centro Cívico: distâncias, inscrições, percurso, horário e o pace para cada meta de tempo.",
     category: "Corrida",
     date: "2026-09-29",
-    updatedAt: "2026-10-02",
+    updatedAt: "2026-10-16",
     readTime: "6 min",
     author: "Montinho Personal Trainer",
     tags: ["Maratona de Curitiba", "Maratona de Curitiba 2026", "corrida de rua", "maratona", "meia maratona"],
     content: `<img src="/blog-images/maratona-de-curitiba-2026-capa.webp" alt="Capa: Maratona de Curitiba 2026 — domingo, 15 de novembro; 5, 10, 21 e 42 km com largada no Centro Cívico" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p>Informações verificadas em 2 de outubro de 2026 na Prefeitura de Curitiba, nos canais oficiais da prova e na imprensa. Horário de largada, retirada do kit e premiação saem no regulamento; esta página é atualizada até a prova e recebe o resultado no dia 15.</p></blockquote>
+<blockquote><p>Informações verificadas em 2 de outubro de 2026 na Prefeitura de Curitiba, nos canais oficiais da prova e na imprensa, e em 16 de outubro no site oficial da prova (horário de largada, ondas, hidratação e premiação). Esta página é atualizada até a prova e recebe o resultado no dia 15.</p></blockquote>
 
 <h2>Resumo da Maratona de Curitiba 2026</h2>
 <ul>
@@ -77,7 +77,14 @@ export const MARATONA_CURITIBA_2026_POSTS: BlogPost[] = [
 <p>As inscrições abriram em junho, em lotes que sobem de preço conforme a prova se aproxima, e vão até 31 de outubro — ou até o limite de 16 mil vagas. O valor do lote atual e eventuais cupons de desconto aparecem direto na página de inscrição; confira lá antes de pagar, porque o preço muda de um lote para o outro.</p>
 
 <h2>Horário da largada</h2>
-<p>A organização ainda não divulgou o horário oficial de cada distância. Em provas de rua desse porte a largada é cedo e em ondas; o horário exato entra aqui assim que sair no regulamento.</p>
+<p>A largada é às <strong>5h</strong>, na Praça Nossa Senhora de Salete, em ondas, nesta ordem:</p>
+<ol>
+<li><strong>1ª onda:</strong> atletas com deficiência (ACD), 42 km e 21 km;</li>
+<li><strong>2ª onda:</strong> elite e público geral, 42 km e 21 km;</li>
+<li><strong>3ª onda:</strong> 10 km e 5 km.</li>
+</ol>
+<p>O funil de largada é organizado pelo pace escolhido na inscrição. A organização recomenda chegar pelo menos 40 minutos antes.</p>
+<p><strong>Hidratação:</strong> água a cada 3 km em todas as distâncias; isotônico e frutas no 21 km (1 ponto de cada) e no 42 km (3 de isotônico e 2 de fruta).</p>
 
 <h2>Retirada do kit</h2>
 <p>A retirada é na <strong>Expo Maratona, no Museu Oscar Niemeyer (MON)</strong>, nos dias <strong>12, 13 e 14 de novembro</strong>, com opção de horário agendado. Leve documento com foto, o termo de responsabilidade impresso e assinado e o comprovante de inscrição.</p>
@@ -103,7 +110,7 @@ export const MARATONA_CURITIBA_2026_POSTS: BlogPost[] = [
 <p>Vai correr também a <a href="/blog/maratona-de-brasilia-2026">Maratona de Brasília</a>, uma semana depois? Escolha uma das duas para buscar tempo.</p>
 
 <h2>Premiação</h2>
-<p>A premiação por colocação e as categorias por faixa etária ficam no regulamento oficial; entram aqui quando divulgadas.</p>
+<p>Todos que terminam dentro do tempo limite recebem medalha de conclusão. Troféus vão para os primeiros colocados de cada categoria, no pódio, no dia da prova; não são entregues depois. Há premiação geral, pelo tempo bruto, e por categoria (tempo líquido na maratona, bruto nas outras distâncias). Premiação em dinheiro só para a elite e para atletas com deficiência cadastrados no CPB; não há dinheiro para faixa etária.</p>
 
 <h2>Resultado da Maratona de Curitiba 2026</h2>
 <p>Os vencedores de cada distância saem em <a href="/blog/resultado-maratona-de-curitiba-2026">resultado da Maratona de Curitiba 2026</a>, no domingo, 15 de novembro. Na edição anterior, a prova reuniu 16,2 mil corredores, a maior da história da cidade.</p>
@@ -123,7 +130,7 @@ export const MARATONA_CURITIBA_2026_POSTS: BlogPost[] = [
       { question: "Até quando vão as inscrições da Maratona de Curitiba 2026?", answer: "Até 31 de outubro, pelo site oficial e pela Ticket Sports, ou até acabarem as 16 mil vagas." },
       { question: "Quais as distâncias da Maratona de Curitiba?", answer: "5 km, 10 km, meia maratona (21 km) e maratona (42 km)." },
       { question: "Onde retirar o kit da Maratona de Curitiba 2026?", answer: "Na Expo Maratona, no Museu Oscar Niemeyer (MON), de 12 a 14 de novembro, com documento com foto, termo de responsabilidade assinado e comprovante de inscrição." },
-      { question: "Qual o horário da largada da Maratona de Curitiba 2026?", answer: "A organização ainda não divulgou o horário oficial de cada distância. Esta página é atualizada assim que sair no regulamento." },
+      { question: "Qual o horário da largada da Maratona de Curitiba 2026?", answer: "Às 5h do domingo, 15/11, em ondas: primeiro os atletas com deficiência (42 e 21 km), depois elite e público geral (42 e 21 km) e por fim 10 e 5 km. A organização recomenda chegar pelo menos 40 minutos antes." },
       { question: "Qual pace preciso para fazer a maratona em 4 horas?", answer: "5:41 por quilômetro em média, sobre os 42,195 km oficiais." },
     ],
   },
