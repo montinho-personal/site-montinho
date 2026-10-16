@@ -46983,8 +46983,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <p>O upper/lower é a divisão que a ciência mais valida para praticantes intermediários: frequência 2x por músculo, estrutura prática em 4 dias e excelente equilíbrio entre especialização e recuperação. Se você tem 4 dias disponíveis por semana e pelo menos 8–12 meses de treino, esse é o modelo que vai te dar mais retorno no menor tempo. Para quem está em fase de <a href="/blog/recomposicao-corporal">recomposição corporal</a> ou emagrecimento, é possivelmente a melhor divisão existente.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/rux_N9zfPXY?rel=0" title="Treinos AB, ABC e ABCD para todos os niveis — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="yt-caption">Gravei um vídeo curto mostrando como fica a semana de Upper Lower.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/pNphDSjlr2I?rel=0" title="Treino Upper Lower — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 <h3>Leia Também</h3>
