@@ -1031,3 +1031,7 @@ Aprovado pelo Montinho. As três eram `isIndexable: false` desde #748; agora o M
 - Deltoide anterior. Title → "Exercícios Para Deltoide Anterior: Academia, Halteres e Polia | Montinho". Extras: melhores; com halteres; máquina e polia; as 3 porções (PAA); precisa treinar separado? Fora: função, origem e inserção, alongamento.
 - Parte superior das costas. Title → "Exercícios Para Parte Superior das Costas: Academia e Casa | Montinho". Extras: melhores (visão geral por IA: remada pronada aberta, crucifixo inverso, face pull); fortalecer na academia; feminino; dor → médico/fisioterapeuta + artigo. Fora: aliviar dor, "como definir as costas rápido", "treino de costas completo pdf" (já pauta).
 - Adutores. Title → "Exercícios Para Adutores (Parte Interna da Coxa) | Montinho" (nome popular nas buscas). Extras: como treinar (PAA); academia; em casa e sem máquina (caneleira); adutores × abdutores; como endurecer a parte interna da coxa (sem redução localizada). Fora: fisioterapia, "quais são os 3 adutores principais" (anatomia).
+
+## 2026-10-16 — Vídeo na página Minha História
+
+Short do Montinho (Dg8Sbv6_V8w) no topo de /minha-historia, logo depois da foto principal e antes do texto, com medição de play (VideoMedido, slug "minha-historia"). Título, description e H1 sem mudança. Ainda fora de /videos: falta a data de publicação para o VideoObject.
