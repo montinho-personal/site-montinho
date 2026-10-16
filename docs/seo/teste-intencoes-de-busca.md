@@ -1042,3 +1042,7 @@ O short Dg8Sbv6_V8w é o "aprenda a recomeçar rápido" (VideoRecomecar), que j�
 - Uma mudança de componente, de uma vez (AGENTS.md: um componente em N páginas é uma mudança só): VideoRecomecar no fim de 81 artigos locais do blog (lib/video/recomecar.ts) e em /academia-com-personal-trainer-tambore, a única página de atendimento em app/ que não tinha.
 - Sem updatedAt: componente renderizado em lote não muda o que o leitor aprende.
 - 16/10, segunda parte (pedido do Montinho): +79 guias de academia (regionais e de marca) no mesmo registro. Ficam de fora 18 artigos genéricos sobre academia (primeira semana, como escolher academia, vergonha de treinar etc.). Total: 160 artigos.
+
+## 2026-10-16 — Vídeo do Montinho no artigo Upper Lower
+
+treino-upper-lower-superior-inferior: o vídeo de terceiro (rux_N9zfPXY, treinos AB/ABC/ABCD) foi trocado pelo short do Montinho (pNphDSjlr2I), no mesmo lugar (fim do artigo), em formato vertical. Sem updatedAt: troca de vídeo não muda o texto. Fora de /videos até ter a data de publicação.
