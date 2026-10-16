@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
+import VideoMedido from "@/components/blog/VideoMedido";
 
 export const metadata: Metadata = {
   title: "Minha História — De Obeso a Personal Trainer em Alphaville",
@@ -91,6 +93,21 @@ export default function MinhaHistoria() {
               />
             </div>
           </div>
+
+          {/* A história em vídeo, para quem prefere assistir antes de ler. */}
+          <section className="mb-14 text-center">
+            <h2
+              className="text-2xl sm:text-3xl font-bold text-white mb-2"
+              style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
+            >
+              Minha história em vídeo
+            </h2>
+            <p className="text-gray-300 mb-6">Prefere assistir? Aqui está, em vídeo, de onde eu vim.</p>
+            <div data-video-medido>
+              <YoutubeShortEmbed videoId="Dg8Sbv6_V8w" title="Minha história — Montinho Personal Trainer" />
+            </div>
+            <VideoMedido slug="minha-historia" seletor="[data-video-medido]" />
+          </section>
 
           {/* Story sections */}
           <div className="prose-custom space-y-12">
