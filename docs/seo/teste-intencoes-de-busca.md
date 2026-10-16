@@ -1035,3 +1035,9 @@ Aprovado pelo Montinho. As três eram `isIndexable: false` desde #748; agora o M
 ## 2026-10-16 — Vídeo na página Minha História
 
 Short do Montinho (Dg8Sbv6_V8w) no topo de /minha-historia, logo depois da foto principal e antes do texto, com medição de play (VideoMedido, slug "minha-historia"). Título, description e H1 sem mudança. Ainda fora de /videos: falta a data de publicação para o VideoObject.
+
+## 2026-10-16 — Vídeo "aprenda a recomeçar rápido" nas páginas locais do blog
+
+O short Dg8Sbv6_V8w é o "aprenda a recomeçar rápido" (VideoRecomecar), que já estava em todas as páginas de atendimento em app/ desde 01/10. Correção do registro anterior: em /minha-historia o bloco saiu como "Minha história em vídeo"; agora tem o título certo do vídeo e o link para o resumo em /videos.
+- Uma mudança de componente, de uma vez (AGENTS.md: um componente em N páginas é uma mudança só): VideoRecomecar no fim de 81 artigos locais do blog (lib/video/recomecar.ts) e em /academia-com-personal-trainer-tambore, a única página de atendimento em app/ que não tinha.
+- Sem updatedAt: componente renderizado em lote não muda o que o leitor aprende.

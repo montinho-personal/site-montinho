@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
@@ -94,19 +95,22 @@ export default function MinhaHistoria() {
             </div>
           </div>
 
-          {/* A história em vídeo, para quem prefere assistir antes de ler. */}
+          {/* O vídeo das páginas de atendimento: o conselho que nasceu deste caminho. */}
           <section className="mb-14 text-center">
             <h2
               className="text-2xl sm:text-3xl font-bold text-white mb-2"
               style={{ fontFamily: "var(--font-titulo), Georgia, serif" }}
             >
-              Minha história em vídeo
+              O maior conselho que eu dou: aprenda a recomeçar rápido
             </h2>
-            <p className="text-gray-300 mb-6">Prefere assistir? Aqui está, em vídeo, de onde eu vim.</p>
+            <p className="text-gray-300 mb-6">Os meus 40 kg vieram depois de várias tentativas. Por isso esse é o conselho que eu mais repito.</p>
             <div data-video-medido>
-              <YoutubeShortEmbed videoId="Dg8Sbv6_V8w" title="Minha história — Montinho Personal Trainer" />
+              <YoutubeShortEmbed videoId="Dg8Sbv6_V8w" title="O maior conselho para emagrecer: aprenda a recomeçar rápido — Montinho Personal Trainer" />
             </div>
             <VideoMedido slug="minha-historia" seletor="[data-video-medido]" />
+            <p className="mt-5 text-sm">
+              <Link href="/videos/aprenda-a-recomecar-rapido" className="text-gray-400 hover:text-white underline underline-offset-4">Ler o resumo do vídeo</Link>
+            </p>
           </section>
 
           {/* Story sections */}
