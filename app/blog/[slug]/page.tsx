@@ -101,6 +101,8 @@ import CalculadoraWhey from "@/components/whey/CalculadoraWhey";
 import LinkFerramentaWhey from "@/components/whey/LinkFerramentaWhey";
 import LinkFerramentaCiclo from "@/components/carboidratos/LinkFerramentaCiclo";
 import { ARTIGOS_COM_LINK_CICLO } from "@/lib/carboidratos/ciclo";
+import VideoRecomecar from "@/components/video/VideoRecomecar";
+import { ARTIGOS_LOCAIS_COM_VIDEO_RECOMECAR } from "@/lib/video/recomecar";
 import LinkFerramentaSimulador from "@/components/simulador/LinkFerramentaSimulador";
 import { ARTIGOS_COM_LINK_SIMULADOR } from "@/lib/simulador/emagrecimento";
 import { ARTIGOS_COM_LINK_SIMULADOR_MASSA } from "@/lib/simulador/massa";
@@ -681,6 +683,9 @@ export default async function BlogPost({ params }: Props) {
               dele não é uma conta, é não saber a ordem das coisas. Renderiza
               nada fora do registro editorial. */}
           <BlocoCaminho slug={post.slug} />
+
+          {/* O vídeo das páginas de atendimento, também nos artigos locais. */}
+          {ARTIGOS_LOCAIS_COM_VIDEO_RECOMECAR.includes(post.slug) && <VideoRecomecar />}
 
           {/* Video */}
           {post.slug === "como-prevenir-lesoes-no-treino" && (
