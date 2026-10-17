@@ -1067,3 +1067,7 @@ Fonte: maratonadecuritiba.com.br (FAQ oficial), lida em 16/10. Largada às 5h em
 ## 2026-10-16 — Links rastreados do Simulador de Emagrecimento (stories IG + status WhatsApp)
 
 Par `ig-emagrecimento` / `wa-emagrecimento` em `lib/crm/links.ts`, destino `/ferramentas/simulador-emagrecimento`, para o vídeo da calculadora de emagrecimento. Um código por rede, como `ig-fds`/`wa-fds`; `utm_content=simulador_emagrecimento`. Sem mudança de conteúdo na página.
+
+## 2026-10-17 — Link rastreado da Calculadora de Déficit no YouTube
+
+`yt-deficit` em `lib/crm/links.ts`, destino `/ferramentas/calculadora-deficit-calorico`, para a descrição do Short "Quanto comer pra emagrecer?". Completa o trio com `ig-deficit` e `wa-deficit`. Sem mudança de conteúdo na página.
