@@ -174,6 +174,8 @@ ok("renovação vencida", escolherSituacao("renovacao_vencida", cli("ativo", -3)
 ok("online: renovação vencida sem falar de horário", escolherSituacao("renovacao_vencida", { ...cli("ativo", -3), clienteOnline: true }) === "renovacao_vencida_online" && !/hor[áa]rio|agenda/i.test(TEXTOS.renovacao_vencida_online));
 ok("online: renovação próxima sem falar de horário", escolherSituacao(null, { ...cli("ativo", 10), clienteOnline: true, diasDeCliente: 80 }) === "renovacao_proxima_online" && !/hor[áa]rio|agenda/i.test(TEXTOS.renovacao_proxima_online));
 ok("presencial continua com o texto do horário", escolherSituacao("renovacao_vencida", cli("ativo", -3)) === "renovacao_vencida" && /hor[áa]rio/.test(TEXTOS.renovacao_vencida));
+// 19/10/2026: o Montinho não quer oferecer a pausa na mensagem de renovação.
+ok("renovação vencida não oferece pausa", !/pausa/i.test(TEXTOS.renovacao_vencida) && !/pausa/i.test(TEXTOS.renovacao_vencida_online));
 ok("pacote continua com o texto do pacote, mesmo online", escolherSituacao("renovacao_pacote", { ...cli("ativo", -3), clienteOnline: true, pacoteTerminou: true }) === "renovacao_pacote");
 ok("tarefa em cliente ativo com renovação vencida → vencida", escolherSituacao("follow_up_atrasado", cli("ativo", -3)) === "renovacao_vencida");
 /*

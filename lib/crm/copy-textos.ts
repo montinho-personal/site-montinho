@@ -172,7 +172,7 @@ export const TEXTOS: Record<Situacao, string> = {
   renovacao_pacote:
     "[[{saudacao}! ]]Fechou o pacote[[ de {aulas} aulas]] 👏[[ Foram {semanas} semanas de treino.]]\n\n[[Anotei todas as datas: {datas}.\n\n]]Confere se bate com o seu controle. Quer que eu já abra o próximo pra gente não parar?",
   renovacao_vencida:
-    "[[{saudacao}! ]]Seu plano venceu[[ há {dias} dias]] e eu não quero fechar seu horário sem te perguntar antes. Nada de cobrança, é só pra eu organizar a agenda.\n\nVocê quer seguir no próximo ciclo ou prefere dar uma pausa agora?",
+    "[[{saudacao}! ]]Seu plano venceu[[ há {dias} dias]] e eu não quero fechar seu horário sem te perguntar antes. Nada de cobrança, é só pra eu organizar a agenda.\n\nBora seguir pro próximo ciclo?",
   /*
    * Consultoria online não tem horário na agenda: falar em "segurar seu
    * horário" para quem treina sozinha com a planilha não faz sentido (pedido
@@ -182,7 +182,7 @@ export const TEXTOS: Record<Situacao, string> = {
   renovacao_proxima_online:
     "[[{saudacao}! ]]Seu ciclo da consultoria fecha[[ em {renova_em} dias]] e eu já quero montar o próximo bloco com você, olhando o que subiu de carga e o que precisa de ajuste.\n\nTem algo que você queira priorizar nas próximas semanas, ou seguimos no que tá dando certo?",
   renovacao_vencida_online:
-    "[[{saudacao}! ]]Seu ciclo da consultoria fechou[[ há {dias} dias]] e eu não quis deixar passar sem falar com você. Nada de cobrança: é pra eu saber se já monto o seu próximo bloco de treino.\n\nVocê quer seguir no próximo ciclo ou prefere dar uma pausa agora?",
+    "[[{saudacao}! ]]Seu ciclo da consultoria fechou[[ há {dias} dias]] e eu não quis deixar passar sem falar com você. Nada de cobrança: é pra eu saber se já monto o seu próximo bloco de treino.\n\nBora seguir pro próximo ciclo?",
   /*
    * As três reativações. Nenhuma pergunta "quer voltar?" logo de cara, e
    * nenhuma fala de preço: 16 dos 19 que saíram saíram por "parou de
