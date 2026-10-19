@@ -1100,3 +1100,14 @@ Intenções (prints do Montinho, aba anônima, 19/10): autocompletar "moicano x 
 Ficaram de fora: cartel e idade (a IA mostra, mas sem duas fontes conferidas), "palpite" (aposta, fora do tema; pode virar uma enquete com `<!--PALPITE-->` se o Montinho quiser) e o peso da luta de Tainara Lisboa (as fontes divergem).
 Fontes: ufc.com.br (página do evento e notícia), MMA Mania, Yahoo, Cageside Press, Sherdog, Tapology, Heavy, FightMag. O resultado de `resultado-ufc-vegas-122` agora também aponta para Moicano como próximo brasileiro em luta principal (só link, sem updatedAt).
 - 19/10 (pedido do Montinho): enquete "Quem vence a luta principal?" (Moicano x Nolan) em `lib/palpites.ts`, embutida com `<!--PALPITE:ufcvegas123-moicano-nolan-->` no artigo do evento e no hub. Responde à busca "moicano palpite" sem odd nem cartel. Fecha às 21h de 31/10, quando começa o card principal. O grupo "ufc332" passou a filtrar pelo prefixo para não puxar a enquete nova. Componente, sem updatedAt.
+
+## 2026-10-19 — Resultado do Mr. Olympia Brasil 2026 lançado
+
+`resultado-mr-olympia-brasil-2026` saiu de "aguardando o campeonato". Entraram:
+- pódio top 5 da 212 e da Bikini, confirmado em GE e Esporte News Mundo;
+- Classic Physique pro (Livinho 1º, Manuel Ângelo 2º), confirmada em GE e Fitness Volt; as posições do 3º ao 6º estão só no GE e ficaram de fora;
+- 24 Pro Cards, os overall amadores do sábado (Tarzan, Jean Negro Belém, Monique Rossi, Isadora Leão, Lucineia Rodrigues) e o guest posing do Ramon Dino.
+
+A lista completa dos Pro Cards e os overall de Wellness, Bikini e Men's Physique estão só no GE: ficam no link, não no texto. Terra e Tribuna do Sertão republicam o Esporte News Mundo e não contam como fonte separada. O print do Montinho (visão geral por IA e GE) serviu de pista, não de fonte. updatedAt 2026-10-19.
+`mr-olympia-brasil-2026`: corrigido o "campeonato só amador" (teve divisão profissional em 212, Bikini e Classic) e incluídos os vencedores na seção de resultado. updatedAt 2026-10-19.
+metaDescription do resultado ainda diz "atualizada assim que saírem". A troca depende de aprovação (ATUAL/PROPOSTA/MOTIVO).
