@@ -2,7 +2,7 @@ import Link from "next/link";
 import { exigirUsuario } from "@/lib/crm/auth";
 import { base, catalogo, urlWhatsAppContato } from "@/lib/crm/dados";
 import { itensHoje, todasVisoes, contagemFunil, inicioDoMes, mesAnterior, contratosParaMetrica } from "@/lib/crm/visao";
-import { taxasFunil, valorPipeline, mrrNormalizado, valorEmPacotes, cicloDeVendaDias, ehEstimado } from "@/lib/crm/metricas";
+import { taxasFunil, valorPipeline, mrrNormalizado, valorEmPacotes, cicloDeVendaDias, ehEstimado, itensVisiveis } from "@/lib/crm/metricas";
 import { mensagemPara } from "@/lib/crm/copy";
 import { Badge, Btn, Card, Pagina, Stat, Vazio, brl, num, pct, relativo } from "@/components/crm/ui";
 import { concluirTarefa } from "./actions";
@@ -89,7 +89,7 @@ export default async function Hoje() {
       <h2 className="mb-2 text-sm font-semibold uppercase tracking-wider text-zinc-400">Precisa da sua ação</h2>
       {itens.length === 0 ? <Vazio>Nada pendente. Nenhum lead aberto está sem próxima ação.</Vazio> : (
         <ul className="mb-8 space-y-2">
-          {itens.slice(0, 40).map((i) => {
+          {itensVisiveis(itens).map((i) => {
             const contato = b.contatos.find((c) => c.id === i.contactId);
             // A mensagem nasce da situação do card: primeiro contato com a página de origem, follow-up da proposta com os dias, confirmação da experimental com o horário.
             const copy = mensagemPara(b, cat, { contactId: i.contactId, leadId: i.leadId, clientId: i.clientId }, i.grupo, agora);
