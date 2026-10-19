@@ -6,8 +6,6 @@ import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 import OutrosSimuladores from "@/components/simulador/OutrosSimuladores";
 import Compartilhar from "@/components/share/Compartilhar";
 import SimuladorEmagrecimento from "@/components/simulador/SimuladorEmagrecimento";
-import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
-import VideoMedido from "@/components/blog/VideoMedido";
 import { ESTUDOS, FONTES, cenarioAtual, fmtSemanas, projeta, type Perfil } from "@/lib/simulador/emagrecimento";
 import { EVIDENCIAS, REFERENCIAS_EVIDENCIAS } from "@/lib/simulador/evidencias";
 import { MARCOS, REFERENCIAS_MARCOS, semanaDoMarco } from "@/lib/simulador/marcos";
@@ -426,18 +424,6 @@ export default function SimuladorEmagrecimentoPage() {
               ))}
             </ol>
           </div>
-        </div>
-      </section>
-
-      {/* Vídeo do próprio Montinho sobre o simulador: no fim da página, como no Substituidor. */}
-      <section id="video" className="py-14 border-t border-white/10 bg-black scroll-mt-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-white mb-2" style={h}>Como usar, em vídeo</h2>
-          <p className="text-gray-300 mb-6">Peso, meta e rotina: o vídeo mostra como preencher o simulador e como ler a projeção.</p>
-          <div data-video-medido>
-            <YoutubeShortEmbed videoId="KtmKJkZqkyw" title="Simulador de Emagrecimento — Montinho Personal Trainer" />
-          </div>
-          <VideoMedido slug="simulador-emagrecimento" seletor="[data-video-medido]" />
         </div>
       </section>
     </>
