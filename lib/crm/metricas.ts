@@ -603,11 +603,13 @@ export interface ItemHoje { prioridade: number; grupo: string; motivo: string; a
  * renovação de quem já paga (5) nunca chegava à tela. Foi assim que a
  * Camilla ficou 18 dias com o plano vencido sem nenhum card pedindo a
  * mensagem. Card de cliente (renovação, pacote, decisão de renovar) não é
- * cortado: são poucos, e é receita que já existe.
+ * cortado: são poucos, e é receita que já existe. E vem no topo (pedido do
+ * Montinho, 19/10/2026): no fim de 40 cards de lead, ninguém chegava nele.
+ * O corte de 40 continua valendo para o resto.
  */
 export function itensVisiveis<T extends { clientId?: string | null; leadId?: string | null }>(itens: T[], max = 40): T[] {
   const doCliente = (i: T) => !!i.clientId && !i.leadId;
-  return [...itens.slice(0, max), ...itens.slice(max).filter(doCliente)];
+  return [...itens.filter(doCliente), ...itens.filter((i) => !doCliente(i)).slice(0, max)];
 }
 
 export function prioridadesHoje(

@@ -446,6 +446,7 @@ bloco("13. RENOVAÇÃO NÃO FICA ABAIXO DO CORTE DA LISTA");
   ok("renovação vencida tem a urgência de follow-up atrasado", ren?.grupo === "renovacao_vencida" && ren.prioridade === 2, JSON.stringify(ren));
   ok("e aparece na tela mesmo com mais de 40 cards antes dela", itens.length > 40 && itensVisiveis(itens).some((i) => i.clientId === "K1"));
   ok("leads além dos 40 continuam cortados", itensVisiveis(itens).filter((i) => i.leadId).length === 40);
+  ok("card de cliente vem no topo da lista", itensVisiveis(itens)[0]?.clientId === "K1");
 }
 
 console.log("\n" + "=".repeat(64));
