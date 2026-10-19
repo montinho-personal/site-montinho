@@ -15,6 +15,7 @@ const PRINCIPAL = [
   { href: "/crm/clientes", rotulo: "Clientes", icone: "★" },
 ];
 const MAIS = [
+  { href: "/crm/renovacoes", rotulo: "Renovações" },
   { href: "/crm/follow-ups", rotulo: "Follow-ups" },
   { href: "/crm/agenda", rotulo: "Agenda" },
   { href: "/crm/handoffs", rotulo: "Chegaram pelo site" },
