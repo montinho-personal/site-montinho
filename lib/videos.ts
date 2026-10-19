@@ -51,7 +51,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     chamada: "Quanto tempo falta para a sua meta? Veja como simular o seu ritmo de emagrecimento.",
     texto: [
       "Quanto tempo para emagrecer 5, 10 ou 15 kg? Não existe um prazo igual para todo mundo: depende do seu peso, da sua meta e do que você consegue manter na rotina.",
-      "No Simulador de Emagrecimento você coloca seu peso e sua meta e mexe em treino, passos e consistência. A projeção mostra uma faixa de semanas, e você compara cenários para ver o que mais muda o seu prazo.",
+      "No Simulador de Emagrecimento você coloca seu peso e sua meta e mexe em treino, passos e consistência. A projeção mostra uma faixa de semanas, e você compara cenários para ver o que mais muda o seu prazo. No exemplo do vídeo, com 3 treinos por semana, 4.000 passos e 75% de consistência, a meta fica além de 12 meses; mantendo os 3 treinos e subindo para 7.500 passos e 90% de consistência, cai para cerca de 7 meses.",
       "O resultado é uma estimativa, não uma promessa. O que faz a meta chegar é constância: comer perto do planejado na maior parte dos dias, treinar e ajustar conforme o corpo responde. E não compare o seu ritmo com o de outra pessoa: cada um tem a própria genética, rotina e história.",
     ],
     artigos: [
@@ -60,6 +60,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
       { href: "/blog/habitos-que-sabotam-seu-emagrecimento", nome: "Hábitos que sabotam seu emagrecimento" },
     ],
     ferramenta: { href: "/ferramentas/simulador-emagrecimento", nome: "Simulador de emagrecimento" },
+    publicadoEm: "2026-10-19",
   },
   {
     id: "KtmKJkZqkyw",
@@ -71,7 +72,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     chamada: "Você sabe quantas calorias comer por dia para emagrecer? Veja como calcular o seu número.",
     texto: [
       "Quanto comer por dia para emagrecer? A resposta não é uma dieta pronta de 1.200 calorias: depende do quanto o seu corpo gasta no dia.",
-      "Na Calculadora de Déficit Calórico você coloca seus dados e sua rotina. Ela estima o seu gasto calórico diário e mostra quantas calorias comer em três faixas de déficit, para você escolher o ritmo que consegue manter.",
+      "Na Calculadora de Déficit Calórico você coloca seus dados e sua rotina. Ela estima o seu gasto calórico diário e mostra quantas calorias comer em três faixas de déficit, para você escolher o ritmo que consegue manter. No exemplo do vídeo, uma TMB de 1.400 kcal com rotina levemente ativa (fator 1,375) dá um gasto de cerca de 1.920 kcal por dia: é a partir desse número que o déficit é calculado.",
       "O número é um ponto de partida. O que faz o resultado acontecer é constância: comer perto da meta na maior parte dos dias, treinar e ajustar conforme o corpo responde.",
     ],
     artigos: [
@@ -80,6 +81,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
       { href: "/blog/quanto-tempo-para-emagrecer", nome: "Quanto tempo para emagrecer" },
     ],
     ferramenta: { href: "/ferramentas/calculadora-deficit-calorico", nome: "Calculadora de déficit calórico" },
+    publicadoEm: "2026-10-17",
   },
   {
     id: "es4IiOkVqsg",

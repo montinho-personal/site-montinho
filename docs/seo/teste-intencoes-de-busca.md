@@ -1085,3 +1085,4 @@ Short KtmKJkZqkyw incorporado em `/ferramentas/calculadora-deficit-calorico`, se
 - Short 2NkNKAhku9A incorporado em `/ferramentas/simulador-emagrecimento` ("Como usar, em vídeo", com VideoMedido).
 - Páginas novas em `/videos`: `quanto-comer-para-emagrecer` (KtmKJkZqkyw, Calculadora de Déficit) e `quanto-tempo-para-emagrecer-simulador` (2NkNKAhku9A, Simulador). Temas diferentes, cada uma com a sua ferramenta. `publicadoEm` vazio até a data ser conferida no YouTube Studio.
 - As seções de vídeo das duas ferramentas linkam para a página do vídeo.
+- 19/10: `publicadoEm` conferido no YouTube Studio (prints do Montinho): KtmKJkZqkyw em 17/10, 2NkNKAhku9A em 19/10. Exemplos do vídeo acrescentados ao texto das duas páginas.
