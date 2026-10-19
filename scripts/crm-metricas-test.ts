@@ -434,6 +434,10 @@ bloco("12. O QUE NÃO PODE TRAVAR");
   ok("venda sem gclid: fonte unknown, confiança baixa — e a conta de LTV segue igual", semGclid.sourceCode === "unknown" && ltvRealizado([{ clientId: "Z", amount: 500, tipo: "sale", occurredAt: "2026-09-01", status: "collected" }], "Z") === 500);
   // WhatsApp: pessoa apagou o código → nenhuma associação automática (confiança fica a cargo de quem liga).
   ok("sem ref code, inferirFonte não inventa origem a partir do nada", inferirFonte({ referrer: "" }).sourceCode === "unknown");
+  // 19/10/2026: o Bing caía em "other".
+  ok("referrer do Bing vira Bing orgânico", inferirFonte({ referrer: "https://www.bing.com/" }).sourceCode === "bing_organic" && inferirFonte({ referrer: "https://cn.bing.com/search?q=x" }).sourceCode === "bing_organic");
+  ok("Copilot continua contando como IA, não como Bing", inferirFonte({ referrer: "https://copilot.microsoft.com/" }).sourceCode === "ai_assistant");
+  ok("site que só contém 'bing' no nome não vira Bing", inferirFonte({ referrer: "https://www.bingo.com.br/" }).sourceCode === "other");
 }
 
 bloco("13. RENOVAÇÃO NÃO FICA ABAIXO DO CORTE DA LISTA");
