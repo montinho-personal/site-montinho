@@ -543,6 +543,8 @@ export function inferirFonte(p: { utmSource?: string | null; utmMedium?: string 
         return { sourceCode: "ai_assistant", confidence: "medium" };
       }
       if (/google\./.test(host)) return { sourceCode: "google_organic", confidence: "medium" };
+      // Bing tinha caído em "other" até 19/10/2026 (copilot.microsoft.com já saiu acima, como IA).
+      if (/(^|\.)bing\.com$/.test(host)) return { sourceCode: "bing_organic", confidence: "medium" };
       if (/instagram\.com|l\.instagram/.test(host)) return { sourceCode: "instagram_organic", confidence: "medium" };
       if (/facebook\.com|l\.facebook|fb\.com/.test(host)) return { sourceCode: "facebook_organic", confidence: "medium" };
       if (/tiktok\.com/.test(host)) return { sourceCode: "tiktok", confidence: "medium" };
