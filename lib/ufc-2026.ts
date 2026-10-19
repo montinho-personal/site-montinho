@@ -34,6 +34,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <h2>Por que Moicano não luta mais contra Brian Ortega?</h2>
 <p>Moicano estava escalado contra <strong>Brian Ortega</strong> no UFC 331. Ortega se machucou e saiu da luta, e o UFC preferiu não buscar um substituto naquele evento: levou Moicano para a luta principal do dia 31 de outubro, contra Tom Nolan. Nolan chega com cinco vitórias seguidas e faz a primeira luta principal dele no UFC.</p>
 
+<!--PALPITE:ufcvegas123-moicano-nolan-->
 <h2>Os brasileiros do UFC Vegas 123</h2>
 <ul>
 <li><strong>Renato Moicano</strong> x Tom Nolan (Austrália): luta principal, peso-leve.</li>
@@ -96,6 +97,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <h2>Renato Moicano x Tom Nolan — luta principal</h2>
 <p>Moicano ia enfrentar Brian Ortega no UFC 331, mas Ortega se machucou e saiu. O UFC levou o brasileiro para a luta principal de 31 de outubro, no peso-leve, contra Tom Nolan, que vem de cinco vitórias seguidas e faz a primeira luta principal dele no UFC.</p>
 
+<!--PALPITE:ufcvegas123-moicano-nolan-->
 <h2>Que horas lutam os brasileiros?</h2>
 <p>O card preliminar começa às <strong>18h</strong> e o card principal às <strong>21h</strong>, no horário de Brasília, com transmissão do Paramount+. A ordem exata das lutas pode mudar até o dia do evento.</p>
 
