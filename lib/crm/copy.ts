@@ -67,7 +67,7 @@ function arrumar(t: string): string {
 export interface Sinais {
   pergunta: string; indicador: string; pagina: string; anuncio: boolean;
   jaContatado: boolean; respondeu: boolean; followUpsNoCiclo: number; propostaEnviada: boolean; diasProposta: number | null; etapa: string | null;
-  exigeExperimental: boolean; online?: boolean; starterEnviado?: boolean; experimentalAgendada: boolean; experimentalRealizada: boolean; experimentalNoShow: boolean;
+  exigeExperimental: boolean; online?: boolean; clienteOnline?: boolean; starterEnviado?: boolean; experimentalAgendada: boolean; experimentalRealizada: boolean; experimentalNoShow: boolean;
   cliente: ClienteRow | undefined; pacoteTerminou: boolean; renovaEm: number | null; diasDeCliente: number | null; diasForaDeTreino: number | null; jaIndicou: boolean;
 }
 
@@ -120,9 +120,9 @@ const comAluno = (s: Sinais): Situacao => {
   // Pacote acabado manda na data: num plano sem rotina fixa a data de
   // renovação é chute, e a aula dada é fato.
   if (s.pacoteTerminou) return "renovacao_pacote";
-  if (s.renovaEm != null && s.renovaEm < 0) return "renovacao_vencida";
+  if (s.renovaEm != null && s.renovaEm < 0) return s.clienteOnline ? "renovacao_vencida_online" : "renovacao_vencida";
   if (s.diasDeCliente != null && s.diasDeCliente <= 14) return "boas_vindas";
-  if (s.renovaEm != null && s.renovaEm <= 30) return "renovacao_proxima";
+  if (s.renovaEm != null && s.renovaEm <= 30) return s.clienteOnline ? "renovacao_proxima_online" : "renovacao_proxima";
   if (!s.jaIndicou && s.diasDeCliente != null && s.diasDeCliente >= 90) return "pedido_indicacao";
   return "check_in_aluno";
 };
@@ -152,8 +152,9 @@ export function escolherSituacao(grupo: string | null | undefined, s: Sinais): S
     case "experimental_sem_registro": return "experimental_sem_registro";
     case "pos_experimental_sem_proposta": return "pos_experimental_proposta";
     case "quente": return s.propostaEnviada && (s.diasProposta ?? 0) >= 2 ? depoisDaProposta(s) : proximoPasso(s);
-    case "renovacao_proxima": return "renovacao_proxima";
-    case "renovacao_vencida": return "renovacao_vencida";
+    // Consultoria online não tem horário na agenda: texto próprio.
+    case "renovacao_proxima": return s.clienteOnline ? "renovacao_proxima_online" : "renovacao_proxima";
+    case "renovacao_vencida": return s.clienteOnline ? "renovacao_vencida_online" : "renovacao_vencida";
     case "renovacao_pacote": return "renovacao_pacote";
     default: return retomar(s);
   }
@@ -254,6 +255,8 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
     // para a experimental é o convite que não queima etapa se o serviço mudar depois.
     exigeExperimental: servico?.exige_experimental ?? true,
     online: servico?.code === "online",
+    // Para renovar vale o serviço do CLIENTE, não o do lead: quem chegou pedindo presencial e fechou a consultoria é aluno online.
+    clienteOnline: !!cliente && cat.servicos.find((x) => x.id === cliente.service_id)?.code === "online",
     starterEnviado: !!lead && !!opp?.proposal_sent_at && b.atividades.some((a) => a.lead_id === lead.id && a.metadata?.situacao === "proposta_starter" && a.ocorreu_em >= opp.proposal_sent_at!),
     experimentalAgendada: trials.some((t) => t.status === "agendada"),
     experimentalRealizada: trials.some((t) => t.status === "realizada"),
