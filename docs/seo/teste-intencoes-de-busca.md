@@ -1079,3 +1079,9 @@ Par `ig-emagrecimento` / `wa-emagrecimento` em `lib/crm/links.ts`, destino `/fer
 ## 2026-10-19 — Vídeo do Montinho na Calculadora de Déficit Calórico
 
 Short KtmKJkZqkyw incorporado em `/ferramentas/calculadora-deficit-calorico`, seção "Como usar, em vídeo" no fim da página (mesmo padrão do Substituidor, com VideoMedido). Ele tinha entrado por engano no Simulador de Emagrecimento (#935) e foi retirado de lá. Sem mudança de título, descrição ou texto da ferramenta; sem updatedAt.
+
+## 2026-10-19 — Vídeos das duas ferramentas de emagrecimento
+
+- Short 2NkNKAhku9A incorporado em `/ferramentas/simulador-emagrecimento` ("Como usar, em vídeo", com VideoMedido).
+- Páginas novas em `/videos`: `quanto-comer-para-emagrecer` (KtmKJkZqkyw, Calculadora de Déficit) e `quanto-tempo-para-emagrecer-simulador` (2NkNKAhku9A, Simulador). Temas diferentes, cada uma com a sua ferramenta. `publicadoEm` vazio até a data ser conferida no YouTube Studio.
+- As seções de vídeo das duas ferramentas linkam para a página do vídeo.
