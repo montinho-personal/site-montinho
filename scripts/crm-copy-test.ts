@@ -170,6 +170,11 @@ ok("sem próxima ação, nunca contatado → primeiro contato", escolherSituacao
 const cli = (status: string, renovaEm: number | null, extra: Partial<Sinais> = {}) => S({ cliente: { status, renewal_date: null } as never, renovaEm, diasDeCliente: 200, ...extra });
 ok("renovação próxima", escolherSituacao("renovacao_proxima", cli("ativo", 7)) === "renovacao_proxima");
 ok("renovação vencida", escolherSituacao("renovacao_vencida", cli("ativo", -3)) === "renovacao_vencida");
+// 19/10/2026: aluna só da consultoria online não tem horário na agenda.
+ok("online: renovação vencida sem falar de horário", escolherSituacao("renovacao_vencida", { ...cli("ativo", -3), clienteOnline: true }) === "renovacao_vencida_online" && !/hor[áa]rio|agenda/i.test(TEXTOS.renovacao_vencida_online));
+ok("online: renovação próxima sem falar de horário", escolherSituacao(null, { ...cli("ativo", 10), clienteOnline: true, diasDeCliente: 80 }) === "renovacao_proxima_online" && !/hor[áa]rio|agenda/i.test(TEXTOS.renovacao_proxima_online));
+ok("presencial continua com o texto do horário", escolherSituacao("renovacao_vencida", cli("ativo", -3)) === "renovacao_vencida" && /hor[áa]rio/.test(TEXTOS.renovacao_vencida));
+ok("pacote continua com o texto do pacote, mesmo online", escolherSituacao("renovacao_pacote", { ...cli("ativo", -3), clienteOnline: true, pacoteTerminou: true }) === "renovacao_pacote");
 ok("tarefa em cliente ativo com renovação vencida → vencida", escolherSituacao("follow_up_atrasado", cli("ativo", -3)) === "renovacao_vencida");
 /*
  * Reativação: o tempo fora decide o que dá para dizer. Na base de 15/09/2026
@@ -277,7 +282,7 @@ ok("Bruna: renova em 7 dias", br.vars.renova_em === "7", br.vars.renova_em);
 ok("Bruna: plano", br.vars.plano === "Consultoria trimestral · 12 semanas");
 ok("Bruna: experimental formatada", br.vars.dia_hora === "amanhã às 7h", br.vars.dia_hora);
 ok("Bruna: local", br.vars.local === "academia do Tamboré");
-ok("Bruna sem grupo → renovação próxima", escolherSituacao(null, br.sinais) === "renovacao_proxima");
+ok("Bruna (consultoria online) sem grupo → renovação próxima, texto online", escolherSituacao(null, br.sinais) === "renovacao_proxima_online");
 
 console.log("\n" + "=".repeat(64));
 if (falhas) { console.log(`${falhas} TESTE(S) FALHARAM`); process.exit(1); }
