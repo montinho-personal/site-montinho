@@ -13,6 +13,8 @@ import {
   formataFaixa,
 } from "@/lib/calorias";
 import CalculadoraDeficit from "@/components/calorias/CalculadoraDeficit";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
+import VideoMedido from "@/components/blog/VideoMedido";
 import Trilha from "@/components/ferramentas/Trilha";
 import Compartilhar from "@/components/share/Compartilhar";
 
@@ -332,6 +334,18 @@ export default function CalculadoraDeficitPage() {
               <Link href="/ferramentas/calculadora-tmb-tdee" className={ln}>calculadora de TMB e TDEE</Link>.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Vídeo do próprio Montinho sobre a ferramenta: no fim da página, como no Substituidor. */}
+      <section id="video" className="py-14 border-t border-white/10 bg-black scroll-mt-24">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-white mb-2" style={h}>Como usar, em vídeo</h2>
+          <p className="text-gray-300 mb-6">Quanto comer por dia para emagrecer: o vídeo mostra como preencher a calculadora e como ler o resultado.</p>
+          <div data-video-medido>
+            <YoutubeShortEmbed videoId="KtmKJkZqkyw" title="Calculadora de Déficit Calórico — Montinho Personal Trainer" />
+          </div>
+          <VideoMedido slug="calculadora-deficit-calorico" seletor="[data-video-medido]" />
         </div>
       </section>
     </>
