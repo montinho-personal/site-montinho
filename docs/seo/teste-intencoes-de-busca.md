@@ -1075,3 +1075,7 @@ Par `ig-emagrecimento` / `wa-emagrecimento` em `lib/crm/links.ts`, destino `/fer
 ## 2026-10-19 — Link rastreado do Simulador de Emagrecimento no YouTube
 
 `yt-emagrecimento` em `lib/crm/links.ts`, destino `/ferramentas/simulador-emagrecimento`, para a descrição do vídeo do simulador no YouTube. Completa o trio com `ig-emagrecimento` e `wa-emagrecimento`. Sem mudança de conteúdo na página.
+
+## 2026-10-19 — Vídeo do Montinho no Simulador de Emagrecimento
+
+Short KtmKJkZqkyw incorporado em `/ferramentas/simulador-emagrecimento`, seção "Como usar, em vídeo" no fim da página (mesmo padrão do Substituidor, com VideoMedido). Sem mudança de título, descrição ou texto da ferramenta; sem updatedAt.
