@@ -14,7 +14,7 @@ export const OLYMPIA_BRASIL_EXPO_2026_POSTS: BlogPost[] = [
     title: "Resultado do Mr. Olympia Brasil 2026: quem ganhou cada categoria",
     metaTitle: "Resultado Mr. Olympia Brasil 2026: Quem Ganhou e Pro Cards",
     metaDescription:
-      "Resultado do Mr. Olympia Brasil 2026 (16 a 18/10, Anhembi): quem ganhou cada categoria e os Pro Cards. Página atualizada com os campeões assim que saírem.",
+      "Resultado do Mr. Olympia Brasil 2026: Vitor Porto (212), Nívea Campos (Bikini) e Livinho (Classic Physique) campeões. Pódios e os 24 Pro Cards.",
     excerpt:
       "Vitor Porto (212), Nívea Campos (Bikini) e Livinho (Classic Physique) venceram a divisão profissional do Mr. Olympia Brasil 2026, que distribuiu 24 Pro Cards.",
     category: "Fisiculturismo",
