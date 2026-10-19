@@ -45,6 +45,7 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   "diferenca-entre-instrutor-de-academia-e-personal-trainer": "Comparação de funções e formação: o leitor sai sabendo quem é quem, sem conta na cabeça.",
   // Resultado do UFC Vegas 122: o registro da calculadora de artes marciais
   // está no teto de 8, e a calculadora já vai no artigo do card.
+  "brasileiros-ufc-vegas-123": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora de jiu-jitsu fica no artigo do evento.",
   "resultado-ufc-vegas-122": "Página de resultado: o leitor sai sabendo quem ganhou, sem conta na cabeça; a calculadora de luta fica no artigo do card.",
   // Cluster miostatina (lib/miostatina.ts): remédio experimental. O registro da
   // calculadora GLP-1 está no teto de 8; a ferramenta entra como link no texto.

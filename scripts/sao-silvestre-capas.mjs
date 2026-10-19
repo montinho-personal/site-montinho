@@ -149,6 +149,14 @@ const CAPAS = [
 <div class="sub">Whey e creatina pelo <b>preço por dose</b>,<br>não pelo pote — e sem desconto falso.</div></div>`, "27/11"),
   },
   {
+    slug: "ufc-vegas-123-moicano-nolan",
+    alt: "Capa: UFC Vegas 123 — Renato Moicano x Tom Nolan, sábado 31/10, card principal às 21h",
+    html: base(`
+<div class="top"><div class="kicker">UFC Vegas 123 · Sáb 31/10</div><div class="chip"><i></i>Luta principal</div></div>
+<div class="main"><h1><em>Moicano</em><br>x Tom Nolan</h1>
+<div class="sub"><b>Peso-leve</b> · Meta Apex, Las Vegas<br>Card principal às <b>21h</b> (Brasília).</div></div>`, "UFC Vegas 123"),
+  },
+  {
     slug: "ufc-332-natalia-silva",
     alt: "Capa: UFC 332 — Natália Silva x Wang Cong pelo cinturão peso-mosca, sábado 3/10",
     html: base(`
