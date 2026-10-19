@@ -1071,3 +1071,7 @@ Par `ig-emagrecimento` / `wa-emagrecimento` em `lib/crm/links.ts`, destino `/fer
 ## 2026-10-17 — Link rastreado da Calculadora de Déficit no YouTube
 
 `yt-deficit` em `lib/crm/links.ts`, destino `/ferramentas/calculadora-deficit-calorico`, para a descrição do Short "Quanto comer pra emagrecer?". Completa o trio com `ig-deficit` e `wa-deficit`. Sem mudança de conteúdo na página.
+
+## 2026-10-19 — Link rastreado do Simulador de Emagrecimento no YouTube
+
+`yt-emagrecimento` em `lib/crm/links.ts`, destino `/ferramentas/simulador-emagrecimento`, para a descrição do vídeo do simulador no YouTube. Completa o trio com `ig-emagrecimento` e `wa-emagrecimento`. Sem mudança de conteúdo na página.
