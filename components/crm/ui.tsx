@@ -6,7 +6,14 @@ import BotaoDeEnvio from "./BotaoDeEnvio";
 export const brl = (v: number | null | undefined, casas = 0) => v == null ? "—" : v.toLocaleString("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: casas, minimumFractionDigits: casas });
 export const pct = (v: number | null | undefined, casas = 0) => v == null ? "—" : `${(v * 100).toFixed(casas)}%`;
 export const num = (v: number | null | undefined, casas = 0) => v == null ? "—" : v.toLocaleString("pt-BR", { maximumFractionDigits: casas });
-export const dataBr = (v: string | null | undefined) => v ? new Date(v).toLocaleDateString("pt-BR", { timeZone: "America/Sao_Paulo" }) : "—";
+/*
+ * Data pura ("2026-10-01") é dia do calendário, não instante: lida como UTC
+ * e mostrada em Brasília virava o dia anterior — a renovação de 01/10 da
+ * Camilla aparecia como 30/09 na ficha. Só o timestamp passa pelo fuso.
+ */
+export const dataBr = (v: string | null | undefined) => !v ? "—"
+  : /^\d{4}-\d{2}-\d{2}$/.test(v) ? v.split("-").reverse().join("/")
+  : new Date(v).toLocaleDateString("pt-BR", { timeZone: "America/Sao_Paulo" });
 export const dataHoraBr = (v: string | null | undefined) => v ? new Date(v).toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }) : "—";
 export function relativo(v: string | null | undefined, agora = new Date()): string {
   if (!v) return "—";

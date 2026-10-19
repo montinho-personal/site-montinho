@@ -26,7 +26,7 @@ import { inferirFonte } from "@/lib/crm/metricas";
 import { identificarMensagem, handoffCompativel, detalheDaIdentificacao, limparColagem, type Identificacao } from "@/lib/crm/mensagens";
 import type { Handoff } from "@/lib/crm/tipos";
 
-const REVALIDAR = ["/crm", "/crm/leads", "/crm/pipeline", "/crm/clientes", "/crm/follow-ups", "/crm/agenda", "/crm/analytics", "/crm/indicacoes", "/crm/handoffs"];
+const REVALIDAR = ["/crm", "/crm/leads", "/crm/pipeline", "/crm/clientes", "/crm/follow-ups", "/crm/agenda", "/crm/analytics", "/crm/indicacoes", "/crm/handoffs", "/crm/renovacoes"];
 function revalidarTudo(extra: string[] = []) { for (const p of [...REVALIDAR, ...extra]) revalidatePath(p, "layout"); }
 const s = (fd: FormData, k: string) => { const v = fd.get(k); return typeof v === "string" && v.trim() ? v.trim() : null; };
 const n = (fd: FormData, k: string) => { const v = s(fd, k); if (v == null) return null; const x = Number(v.replace(/\./g, "").replace(",", ".")); return Number.isFinite(x) ? x : null; };
