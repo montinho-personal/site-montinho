@@ -57,11 +57,20 @@ export const ENQUETES: Enquete[] = [
     vermelho: { id: "rafael-dos-anjos", nome: "Rafael dos Anjos", pais: "Brasil", bandeira: "🇧🇷", iniciais: "RA" },
     azul: { id: "alexander-hernandez", nome: "Alexander Hernandez", pais: "EUA", bandeira: "🇺🇸", iniciais: "AH" },
   },
+  {
+    id: "ufcvegas123-moicano-nolan",
+    titulo: "Quem vence a luta principal?",
+    categoria: "Peso-leve",
+    card: "Luta principal",
+    fechaEm: "2026-10-31T21:00:00-03:00",
+    vermelho: { id: "renato-moicano", nome: "Renato Moicano", pais: "Brasil", bandeira: "🇧🇷", iniciais: "RM" },
+    azul: { id: "tom-nolan", nome: "Tom Nolan", pais: "Austrália", bandeira: "🇦🇺", iniciais: "TN" },
+  },
 ];
 
 /** Grupos que o marcador <!--PALPITE:x--> aceita: uma enquete ou o card todo. */
 export const GRUPOS: Record<string, string[]> = {
-  "ufc332": ENQUETES.map((e) => e.id),
+  "ufc332": ENQUETES.filter((e) => e.id.startsWith("ufc332-")).map((e) => e.id),
   ...Object.fromEntries(ENQUETES.map((e) => [e.id, [e.id]])),
 };
 
