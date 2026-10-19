@@ -72,6 +72,16 @@ const pppCurta = identificarMensagem("Olá, Montinho! Usei a calculadora de pre�
 ok("mesma frase sem cidade ainda é reconhecida", pppCurta.fonte === "personal_por_perto" && !pppCurta.extra.local);
 ok("frase do site não ganha fonte de catálogo", hero.fonte === null);
 ok("detalhe do Personal por Perto traz cidade e frequência", detalheDaIdentificacao(ppp) === "Personal por Perto · calculadora de preço · Londrina/PR · 3× por semana", String(detalheDaIdentificacao(ppp)));
+// Teste "presencial ou online" do Personal por Perto: as três frases de montarWhatsapp (src/lib/presencialOuOnline.ts lá).
+const teste = identificarMensagem('Oi, Montinho! Fiz o teste "presencial ou online" no Personal por Perto.\n\nO resultado indicou acompanhamento online porque já treino sozinho e preciso principalmente de planejamento, progressão e ajustes.\n\nQueria entender como funciona a sua consultoria.');
+ok("teste do PPP (online): origem, fonte e serviço", teste.origem === "Personal por Perto · teste presencial ou online" && teste.fonte === "personal_por_perto" && teste.servico === "online", JSON.stringify(teste));
+ok("teste do PPP (online): detalhe traz resultado e motivo", detalheDaIdentificacao(teste) === "Personal por Perto · teste presencial ou online · resultado: acompanhamento online · já treino sozinho e preciso principalmente de planejamento, progressão e ajustes", String(detalheDaIdentificacao(teste)));
+const hib = identificarMensagem('Oi, Montinho! Fiz o teste "presencial ou online" no Personal por Perto.\n\nO resultado indicou que, pelo meu momento, um modelo híbrido faz mais sentido — minha rotina muda muito e preciso de um acompanhamento que aguente isso.\n\nVi que o presencial talvez alcance a minha região e queria entender como funciona.');
+ok("teste do PPP (híbrido): presencial, com resultado e motivo", hib.servico === "presencial" && hib.extra.resultado === "um modelo híbrido" && /rotina muda muito/.test(hib.extra.motivo ?? ""), JSON.stringify(hib));
+const fora = identificarMensagem('Oi, Montinho! Fiz o teste "presencial ou online" no Personal por Perto.\n\nO resultado indicou acompanhamento presencial, e entendi que você não atende presencialmente a minha região.\n\nQueria entender o que vale procurar em um profissional aqui perto.');
+ok("teste do PPP (fora da região): presencial", fora.servico === "presencial" && fora.extra.resultado === "acompanhamento presencial");
+const nova = identificarMensagem('Oi, Montinho! Fiz o teste "presencial ou online" no Personal por Perto. Deu um resultado novo.');
+ok("teste do PPP (frase nova): origem provada, serviço em aberto", nova.fonte === "personal_por_perto" && nova.servico === null);
 
 bloco("2B. O QUE O APLICATIVO ACRESCENTA NA COLAGEM");
 
