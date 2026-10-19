@@ -54,6 +54,27 @@ const REGRAS: Regra[] = [
   { origem: "Personal por Perto · calculadora de preço", pathPadrao: null, fonte: "personal_por_perto",
     frase: /^(?:Oi|Olá),? Montinho! Usei a calculadora de pre[çc]o do Personal por Perto\.(?:\s*Moro em (.+?)(?:\s+e estou pensando em treinar (.+?))?\.)?\s*(.*)$/,
     grupos: ["local", "frequencia", "pedido"] },
+  /*
+   * Teste "Personal presencial ou online: qual combina comigo?" do Personal
+   * por Perto (/ferramentas/presencial-ou-online/). O botão do resultado
+   * ("Conhecer a consultoria online" ou "Ver como funciona") abre o WhatsApp
+   * com uma frase montada em src/lib/presencialOuOnline.ts (montarWhatsapp)
+   * daquele repositório: o resultado do teste e o motivo vêm escritos nela.
+   * Se a frase mudar lá, estas regras precisam mudar junto. A primeira lead
+   * deste teste (Michele, 19/10/2026) entrou à mão por não estar aqui.
+   */
+  { origem: "Personal por Perto · teste presencial ou online", pathPadrao: null, fonte: "personal_por_perto", servico: "online",
+    frase: /^(?:Oi|Olá),? Montinho! Fiz o teste "presencial ou online" no Personal por Perto\.\s*O resultado indicou (acompanhamento online) porque (.+?)\.\s*Queria entender como funciona a sua consultoria\.?/,
+    grupos: ["resultado", "motivo"] },
+  { origem: "Personal por Perto · teste presencial ou online", pathPadrao: null, fonte: "personal_por_perto", servico: "presencial",
+    frase: /^(?:Oi|Olá),? Montinho! Fiz o teste "presencial ou online" no Personal por Perto\.\s*O resultado indicou que, pelo meu momento, (um modelo híbrido|supervisão presencial) faz mais sentido\s*[—–-]\s*(.+?)\.\s*Vi que/,
+    grupos: ["resultado", "motivo"] },
+  { origem: "Personal por Perto · teste presencial ou online", pathPadrao: null, fonte: "personal_por_perto", servico: "presencial",
+    frase: /^(?:Oi|Olá),? Montinho! Fiz o teste "presencial ou online" no Personal por Perto\.\s*O resultado indicou (acompanhamento presencial), e entendi que você não atende presencialmente a minha região/,
+    grupos: ["resultado"] },
+  // Rede para uma variação nova da frase: a origem continua provada, só o serviço fica em aberto.
+  { origem: "Personal por Perto · teste presencial ou online", pathPadrao: null, fonte: "personal_por_perto",
+    frase: /^(?:Oi|Olá),? Montinho! Fiz o teste "presencial ou online" no Personal por Perto\./ },
   { origem: "Consultoria Online · topo / barra fixa", pathPadrao: "^/consultoria-online", botoes: ["Falar com o Montinho agora", "Falar no WhatsApp agora"], servico: "online",
     frase: "Olá, Montinho! Vi a página da Consultoria Online e queria entender se ela faz sentido para o meu caso." },
   { origem: "Consultoria Online · resultados dos alunos", pathPadrao: "^/consultoria-online", botoes: ["Quero um plano assim para mim", "Quero entender como seria comigo"], servico: "online",
@@ -195,6 +216,8 @@ export function detalheDaIdentificacao(id: Identificacao): string | null {
   if (id.extra.botao) partes.push(id.extra.botao);
   if (id.extra.ferramenta) partes.push(id.extra.ferramenta);
   if (id.extra.frequencia) partes.push(id.extra.frequencia);
+  if (id.extra.resultado) partes.push(`resultado: ${id.extra.resultado}`);
+  if (id.extra.motivo) partes.push(id.extra.motivo);
   return partes.join(" · ");
 }
 
