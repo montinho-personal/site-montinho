@@ -42,6 +42,46 @@ export interface VideoCanal {
 
 export const VIDEOS_CANAL: VideoCanal[] = [
   {
+    id: "2NkNKAhku9A",
+    slug: "quanto-tempo-para-emagrecer-simulador",
+    titulo: "Quanto tempo para emagrecer? Simule a sua meta",
+    metaTitle: "Quanto Tempo para Emagrecer? Simule a Sua Meta (Vídeo)",
+    descricao:
+      "Como usar o Simulador de Emagrecimento: coloque seu peso, sua meta e sua rotina de treino e passos, e veja em quantas semanas a meta pode chegar. A projeção sai em faixa, não em data exata.",
+    chamada: "Quanto tempo falta para a sua meta? Veja como simular o seu ritmo de emagrecimento.",
+    texto: [
+      "Quanto tempo para emagrecer 5, 10 ou 15 kg? Não existe um prazo igual para todo mundo: depende do seu peso, da sua meta e do que você consegue manter na rotina.",
+      "No Simulador de Emagrecimento você coloca seu peso e sua meta e mexe em treino, passos e consistência. A projeção mostra uma faixa de semanas, e você compara cenários para ver o que mais muda o seu prazo.",
+      "O resultado é uma estimativa, não uma promessa. O que faz a meta chegar é constância: comer perto do planejado na maior parte dos dias, treinar e ajustar conforme o corpo responde. E não compare o seu ritmo com o de outra pessoa: cada um tem a própria genética, rotina e história.",
+    ],
+    artigos: [
+      { href: "/blog/quanto-tempo-para-emagrecer", nome: "Quanto tempo para emagrecer" },
+      { href: "/blog/deficit-calorico-como-calcular", nome: "Déficit calórico: como calcular" },
+      { href: "/blog/habitos-que-sabotam-seu-emagrecimento", nome: "Hábitos que sabotam seu emagrecimento" },
+    ],
+    ferramenta: { href: "/ferramentas/simulador-emagrecimento", nome: "Simulador de emagrecimento" },
+  },
+  {
+    id: "KtmKJkZqkyw",
+    slug: "quanto-comer-para-emagrecer",
+    titulo: "Quanto comer pra emagrecer? Calcule suas calorias",
+    metaTitle: "Quanto Comer pra Emagrecer? Calcule Suas Calorias (Vídeo)",
+    descricao:
+      "Como usar a Calculadora de Déficit Calórico: coloque seus dados e sua rotina, veja seu gasto calórico do dia e quantas calorias comer para emagrecer, em faixas de déficit leve, moderado e agressivo.",
+    chamada: "Você sabe quantas calorias comer por dia para emagrecer? Veja como calcular o seu número.",
+    texto: [
+      "Quanto comer por dia para emagrecer? A resposta não é uma dieta pronta de 1.200 calorias: depende do quanto o seu corpo gasta no dia.",
+      "Na Calculadora de Déficit Calórico você coloca seus dados e sua rotina. Ela estima o seu gasto calórico diário e mostra quantas calorias comer em três faixas de déficit, para você escolher o ritmo que consegue manter.",
+      "O número é um ponto de partida. O que faz o resultado acontecer é constância: comer perto da meta na maior parte dos dias, treinar e ajustar conforme o corpo responde.",
+    ],
+    artigos: [
+      { href: "/blog/deficit-calorico-como-calcular", nome: "Déficit calórico: como calcular" },
+      { href: "/blog/como-calcular-tmb-tdee-calorias", nome: "Como calcular TMB e TDEE" },
+      { href: "/blog/quanto-tempo-para-emagrecer", nome: "Quanto tempo para emagrecer" },
+    ],
+    ferramenta: { href: "/ferramentas/calculadora-deficit-calorico", nome: "Calculadora de déficit calórico" },
+  },
+  {
     id: "es4IiOkVqsg",
     slug: "quanto-whey-tomar-por-dia",
     titulo: "Quanto whey tomar por dia? Calcule o seu em 3 passos",

@@ -341,7 +341,7 @@ export default function CalculadoraDeficitPage() {
       <section id="video" className="py-14 border-t border-white/10 bg-black scroll-mt-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white mb-2" style={h}>Como usar, em vídeo</h2>
-          <p className="text-gray-300 mb-6">Quanto comer por dia para emagrecer: o vídeo mostra como preencher a calculadora e como ler o resultado.</p>
+          <p className="text-gray-300 mb-6">Quanto comer por dia para emagrecer: o vídeo mostra como preencher a calculadora e como ler o resultado. <Link href="/videos/quanto-comer-para-emagrecer" className={ln}>Ver a página do vídeo</Link>.</p>
           <div data-video-medido>
             <YoutubeShortEmbed videoId="KtmKJkZqkyw" title="Calculadora de Déficit Calórico — Montinho Personal Trainer" />
           </div>
