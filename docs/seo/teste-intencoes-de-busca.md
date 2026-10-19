@@ -1086,3 +1086,8 @@ Short KtmKJkZqkyw incorporado em `/ferramentas/calculadora-deficit-calorico`, se
 - Páginas novas em `/videos`: `quanto-comer-para-emagrecer` (KtmKJkZqkyw, Calculadora de Déficit) e `quanto-tempo-para-emagrecer-simulador` (2NkNKAhku9A, Simulador). Temas diferentes, cada uma com a sua ferramenta. `publicadoEm` vazio até a data ser conferida no YouTube Studio.
 - As seções de vídeo das duas ferramentas linkam para a página do vídeo.
 - 19/10: `publicadoEm` conferido no YouTube Studio (prints do Montinho): KtmKJkZqkyw em 17/10, 2NkNKAhku9A em 19/10. Exemplos do vídeo acrescentados ao texto das duas páginas.
+
+## 2026-10-19 — Resultado do HYROX São Paulo 2026 lançado
+
+`resultado-hyrox-sao-paulo-2026` saiu de "aguardando a prova": vencedores do Pro, Bruno Henrique Carvalho (58:41) e Manuela Garcia (1:07:37), mais a melhor brasileira, Bruna Berbel (1:10:23). Confirmados em duas fontes independentes: HYRESULT (classificação por categoria) e Hora do Burpee (19/10). Posições do 2º ao 5º e número de inscritos ficaram de fora porque só o HYRESULT traz esses dados. Uma FAQ nova (menos de 1 hora) e a FAQ do vencedor atualizada. Excerpt atualizado. updatedAt 2026-10-19. A metaDescription ainda fala em "Elite", mas a categoria de topo em SP foi a Pro; a troca depende de aprovação (ATUAL/PROPOSTA/MOTIVO).
+Mr. Olympia Brasil: segue sem publicar. Terra e Tribuna do Sertão republicam o texto do Esporte News Mundo (o Terra diz "Licenciado de Esporte News Mundo"), então é uma fonte só, e o site oficial devolve 406.
