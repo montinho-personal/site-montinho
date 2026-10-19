@@ -85,6 +85,7 @@ export const LINKS: Record<string, LinkControlado> = {
   "yt-deficit": { destino: "/ferramentas/calculadora-deficit-calorico", utm_source: "youtube", utm_medium: "video", utm_campaign: "calculadora_deficit", utm_content: "descricao", tipo: "social" },
   "ig-emagrecimento": { destino: "/ferramentas/simulador-emagrecimento", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "stories", utm_content: "simulador_emagrecimento", tipo: "social" },
   "wa-emagrecimento": { destino: "/ferramentas/simulador-emagrecimento", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "simulador_emagrecimento", tipo: "social" },
+  "yt-emagrecimento": { destino: "/ferramentas/simulador-emagrecimento", utm_source: "youtube", utm_medium: "video", utm_campaign: "simulador_emagrecimento", utm_content: "descricao", tipo: "social" },
   "yt-upper-lower": { destino: "/blog/treino-upper-lower-superior-inferior", utm_source: "youtube", utm_medium: "video", utm_campaign: "treino_upper_lower", utm_content: "descricao", tipo: "social" },
 };
 
