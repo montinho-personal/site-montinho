@@ -11,7 +11,7 @@ import { ehRoboDePrevia } from "../lib/crm/previa";
 import {
   taxasFunil, showRate, winRate, ltvRealizado, ltvPorConfianca, ehEstimado, dataDaReceita, recebimentoNoFuturo, mrrDoContrato, mrrNormalizado, valorEmPacotes, movimentoMrr, cacMidia, ltvCac, paybackMeses,
   churnClientes, retencaoClientes, metricasIndicacao, atribuir, inferirFonte, marcasDaUrl, normalizarTelefoneE164, possiveisDuplicatas,
-  coortes, classificarLead, prioridadesHoje, anomalia, mediana, cicloDeVendaDias, primeiraResposta, valorPipeline,
+  coortes, classificarLead, prioridadesHoje, itensVisiveis, anomalia, mediana, cicloDeVendaDias, primeiraResposta, valorPipeline,
   probabilidadeHistorica, coberturaAtribuicao, ltvProjetado, roasReceita, custoPorLead, slaFollowUp, tenureMeses,
   type EventoReceita, type Cliente, type Contrato,
 } from "../lib/crm/metricas";
@@ -434,6 +434,18 @@ bloco("12. O QUE NÃO PODE TRAVAR");
   ok("venda sem gclid: fonte unknown, confiança baixa — e a conta de LTV segue igual", semGclid.sourceCode === "unknown" && ltvRealizado([{ clientId: "Z", amount: 500, tipo: "sale", occurredAt: "2026-09-01", status: "collected" }], "Z") === 500);
   // WhatsApp: pessoa apagou o código → nenhuma associação automática (confiança fica a cargo de quem liga).
   ok("sem ref code, inferirFonte não inventa origem a partir do nada", inferirFonte({ referrer: "" }).sourceCode === "unknown");
+}
+
+bloco("13. RENOVAÇÃO NÃO FICA ABAIXO DO CORTE DA LISTA");
+{
+  // O caso da Camilla (19/10/2026): 89 leads com próxima ação vencida e a renovação dela fora dos 40 primeiros.
+  const agora = new Date("2026-10-19T12:00:00-03:00");
+  const leads = Array.from({ length: 89 }, (_, k) => ({ id: `L${k}`, contactId: `C${k}`, nome: `Lead ${k}`, status: "aberto", createdAt: "2026-09-01", lastContactAt: "2026-10-10", firstResponseAt: "2026-09-01", lastReplyAt: null, nextAction: "Retomar", nextActionAt: "2026-10-15T12:00:00Z", stageCode: "contato", proposalSentAt: null, expectedValue: null }));
+  const itens = prioridadesHoje({ leads, tarefas: [], trials: [], clientes: [{ id: "K1", contactId: "CK1", nome: "Camilla", renewalDate: "2026-10-01", status: "ativo", proximaCobrancaEm: null, cobrancas: 0, pacote: null }], sla: { novo_lead_sem_contato_horas: 24, proposta_sem_follow_up_dias: 2, lead_parado_dias: 5, negociacao_antiga_dias: 7 }, renovacaoDias: [30, 14, 7] }, agora);
+  const ren = itens.find((i) => i.clientId === "K1");
+  ok("renovação vencida tem a urgência de follow-up atrasado", ren?.grupo === "renovacao_vencida" && ren.prioridade === 2, JSON.stringify(ren));
+  ok("e aparece na tela mesmo com mais de 40 cards antes dela", itens.length > 40 && itensVisiveis(itens).some((i) => i.clientId === "K1"));
+  ok("leads além dos 40 continuam cortados", itensVisiveis(itens).filter((i) => i.leadId).length === 40);
 }
 
 console.log("\n" + "=".repeat(64));

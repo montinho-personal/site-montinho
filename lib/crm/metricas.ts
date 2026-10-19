@@ -597,6 +597,19 @@ export interface ClienteParaHoje { id: string; contactId: string; nome: string; 
 export interface SlaConfig { novo_lead_sem_contato_horas: number; proposta_sem_follow_up_dias: number; lead_parado_dias: number; negociacao_antiga_dias: number }
 export interface ItemHoje { prioridade: number; grupo: string; motivo: string; acao: string; contactId: string; leadId?: string | null; clientId?: string | null; taskId?: string | null; trialId?: string | null; opportunityId?: string | null; nome: string; valor?: number | null }
 
+/**
+ * O que a lista de hoje mostra. A tela corta em 40 cards, e o corte é por
+ * prioridade: com 89 leads de próxima ação vencida (prioridade 2), a
+ * renovação de quem já paga (5) nunca chegava à tela. Foi assim que a
+ * Camilla ficou 18 dias com o plano vencido sem nenhum card pedindo a
+ * mensagem. Card de cliente (renovação, pacote, decisão de renovar) não é
+ * cortado: são poucos, e é receita que já existe.
+ */
+export function itensVisiveis<T extends { clientId?: string | null; leadId?: string | null }>(itens: T[], max = 40): T[] {
+  const doCliente = (i: T) => !!i.clientId && !i.leadId;
+  return [...itens.slice(0, max), ...itens.slice(max).filter(doCliente)];
+}
+
 export function prioridadesHoje(
   d: { leads: LeadParaHoje[]; tarefas: TarefaParaHoje[]; trials: TrialParaHoje[]; clientes: ClienteParaHoje[]; sla: SlaConfig; renovacaoDias: number[] },
   agora = new Date(),
@@ -729,7 +742,8 @@ export function prioridadesHoje(
       itens.push({ prioridade: 4, grupo: "decidir", motivo: `${c.cobrancas} mensagens sobre a renovação sem resposta${dias < 0 ? ` — venceu há ${-dias} dias` : ""}`, acao: "Decidir: renovar, pausar ou encerrar", contactId: c.contactId, clientId: c.id, nome: c.nome });
       continue;
     }
-    if (dias < 0) itens.push({ prioridade: 5, grupo: "renovacao_vencida", motivo: `Renovação venceu há ${-dias} dias`, acao: "Confirmar renovação", contactId: c.contactId, clientId: c.id, nome: c.nome });
+    // Venceu = aluno pagando sem plano: mesma urgência de um follow-up atrasado.
+    if (dias < 0) itens.push({ prioridade: 2, grupo: "renovacao_vencida", motivo: `Renovação venceu há ${-dias} dias`, acao: "Confirmar renovação", contactId: c.contactId, clientId: c.id, nome: c.nome });
     else itens.push({ prioridade: 7, grupo: "renovacao_proxima", motivo: `Renovação em ${dias} dias`, acao: "Falar sobre renovação", contactId: c.contactId, clientId: c.id, nome: c.nome });
   }
   // Uma pessoa, um card: fica o item de maior prioridade por contato (motivos agregados).
