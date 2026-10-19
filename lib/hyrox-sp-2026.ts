@@ -11,7 +11,7 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
     title: "Resultado do HYROX São Paulo 2026: vencedores e tempos",
     metaTitle: "Resultado HYROX São Paulo 2026: Vencedores e Tempos",
     metaDescription:
-      "Resultado do HYROX São Paulo 2026 (17 e 18/10, Anhembi): quem ganhou na Elite e nas principais categorias, tempos e onde ver o seu resultado oficial.",
+      "Resultado do HYROX São Paulo 2026: Bruno Henrique Carvalho (58:41) e Manuela Garcia (1:07:37) venceram o Pro. Veja os tempos e onde ver o seu resultado oficial.",
     excerpt:
       "Bruno Henrique Carvalho (58:41) e Manuela Garcia (1:07:37) venceram a categoria Pro do HYROX São Paulo 2026. Veja os tempos e onde consultar o seu resultado.",
     category: "Treinamento",
