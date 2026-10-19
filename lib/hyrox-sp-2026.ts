@@ -13,18 +13,30 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
     metaDescription:
       "Resultado do HYROX São Paulo 2026 (17 e 18/10, Anhembi): quem ganhou na Elite e nas principais categorias, tempos e onde ver o seu resultado oficial.",
     excerpt:
-      "Vencedores e tempos do HYROX São Paulo 2026, e onde consultar o seu resultado oficial. Atualizado depois do evento.",
+      "Bruno Henrique Carvalho (58:41) e Manuela Garcia (1:07:37) venceram a categoria Pro do HYROX São Paulo 2026. Veja os tempos e onde consultar o seu resultado.",
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-03",
+    updatedAt: "2026-10-19",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["HYROX", "HYROX São Paulo", "resultado HYROX", "fitness racing"],
     content: `<img src="/blog-images/hyrox-sao-paulo-2026-capa.webp" alt="Resultado do HYROX São Paulo 2026 — Distrito Anhembi, 17 e 18 de outubro" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p><strong>A prova ainda não aconteceu. O HYROX São Paulo 2026 é nos dias 17 e 18 de outubro, no Distrito Anhembi.</strong> Esta página é atualizada com os vencedores assim que o resultado oficial for divulgado.</p></blockquote>
+<blockquote><p><strong>Bruno Henrique Carvalho venceu a categoria Pro masculina em 58:41, e a espanhola Manuela Garcia venceu a Pro feminina em 1:07:37.</strong> A prova foi nos dias 17 e 18 de outubro de 2026, no Distrito Anhembi.</p></blockquote>
 
 <h2>Quem ganhou o HYROX São Paulo 2026?</h2>
-<p><strong>Resultado: aguardando a prova.</strong> Os vencedores e os melhores tempos entram aqui depois do evento, conforme o resultado oficial.</p>
+<p>Na categoria Pro, a de carga mais pesada, o brasileiro <strong>Bruno Henrique Carvalho</strong> foi o mais rápido entre os homens, com <strong>58:41</strong>, abaixo de uma hora de prova. No feminino, a espanhola <strong>Manuela Garcia</strong> venceu com <strong>1:07:37</strong>, e a melhor brasileira foi <strong>Bruna Berbel</strong>, com <strong>1:10:23</strong>.</p>
+
+<table>
+<thead><tr><th>Categoria Pro</th><th>Vencedor(a)</th><th>Tempo</th></tr></thead>
+<tbody>
+<tr><td>Masculino</td><td>Bruno Henrique Carvalho</td><td>58:41</td></tr>
+<tr><td>Feminino</td><td>Manuela Garcia (Espanha)</td><td>1:07:37</td></tr>
+<tr><td>Melhor brasileira</td><td>Bruna Berbel</td><td>1:10:23</td></tr>
+</tbody>
+</table>
+
+<p>Para ver a classificação completa de cada categoria, com os tempos de cada trecho de corrida e de cada estação, consulte a página do evento no HYRESULT (link nas fontes). Em uma prova de 8 trechos de 1 km quase iguais, a diferença entre quem chega na frente costuma aparecer nas estações: trenó, remo e wall ball.</p>
 
 <h2>Como ver o seu resultado do HYROX</h2>
 <p>Os tempos oficiais são publicados pelo HYROX logo após cada bateria, com o tempo total, cada trecho de corrida e cada estação. Para comparar o seu desempenho com uma meta realista, use a explicação de formato e tempos em <a href="/blog/hyrox-sao-paulo-2026">HYROX São Paulo 2026</a>.</p>
@@ -38,9 +50,12 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
 <h2>Fontes</h2>
 <ul>
 <li><a href="https://hyrox.com/event/hyrox-sao-paulo-2/" target="_blank" rel="noopener noreferrer">HYROX — HYROX São Paulo (oficial)</a></li>
+<li><a href="https://www.hyresult.com/event/s9-2026-sao-paulo" target="_blank" rel="noopener noreferrer">HYRESULT — HYROX São Paulo 2026, classificação por categoria</a></li>
+<li><a href="https://horadoburpee.com.br/uncategorized/hyrox-sp-abre-o-calendario-26-27-confira-os-resultados/" target="_blank" rel="noopener noreferrer">Hora do Burpee — HYROX SP abre o calendário 26/27, confira os resultados</a></li>
 </ul>`,
     faq: [
-      { question: "Quem ganhou o HYROX São Paulo 2026?", answer: "A prova acontece nos dias 17 e 18 de outubro de 2026, no Distrito Anhembi. Os vencedores entram nesta página assim que o resultado oficial for divulgado." },
+      { question: "Quem ganhou o HYROX São Paulo 2026?", answer: "Na categoria Pro, Bruno Henrique Carvalho venceu o masculino em 58:41 e a espanhola Manuela Garcia venceu o feminino em 1:07:37. A melhor brasileira foi Bruna Berbel, com 1:10:23." },
+      { question: "Alguém fez o HYROX São Paulo 2026 em menos de 1 hora?", answer: "Sim. O vencedor do Pro masculino, Bruno Henrique Carvalho, fez 58:41." },
       { question: "Onde vejo meu resultado do HYROX?", answer: "Os tempos oficiais são publicados pelo HYROX logo após cada bateria, com o tempo total, os trechos de corrida e cada estação." },
     ],
   },
