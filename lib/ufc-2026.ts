@@ -4,6 +4,124 @@ import type { BlogPost } from "./blog";
  *  fonte oficial (ufc.com.br) ou de dois veículos independentes. */
 export const UFC_2026_POSTS: BlogPost[] = [
   {
+    slug: "ufc-vegas-123-moicano-nolan",
+    title: "Moicano x Nolan: horário, onde assistir e card do UFC Vegas 123",
+    metaTitle: "Moicano x Nolan: Horário e Onde Assistir o UFC Vegas 123",
+    metaDescription:
+      "Renato Moicano x Tom Nolan no UFC Vegas 123, sábado 31/10: card principal às 21h (Brasília), onde assistir, por que não é mais contra Ortega e os brasileiros do card.",
+    excerpt:
+      "Data, horário de Brasília, onde assistir, por que o adversário mudou e os brasileiros do UFC Vegas 123, com Moicano na luta principal.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-10-19",
+    readTime: "4 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC Vegas 123", "Renato Moicano", "Tom Nolan", "Moicano x Nolan"],
+    content: `<img src="/blog-images/ufc-vegas-123-moicano-nolan-capa.webp" alt="Capa: UFC Vegas 123 — Renato Moicano x Tom Nolan, sábado 31/10, card principal às 21h" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p>Informações verificadas em 19 de outubro de 2026. O card ainda pode mudar até a luta; esta página é atualizada.</p></blockquote>
+<p><strong>Renato Moicano</strong> faz a luta principal do <strong>UFC Vegas 123</strong> contra o australiano <strong>Tom Nolan</strong>, no <strong>sábado, 31 de outubro de 2026</strong>, no Meta Apex, em Las Vegas. A luta é no peso-leve (até 70,3 kg), e o card principal começa às <strong>21h de Brasília</strong>.</p>
+
+<h2>Que horas é Moicano x Nolan?</h2>
+<table><thead><tr><th>Parte do evento</th><th>Horário de Brasília</th></tr></thead><tbody>
+<tr><td>Card preliminar</td><td>18h</td></tr>
+<tr><td>Card principal</td><td>21h</td></tr>
+</tbody></table>
+<p>A luta principal é a última da noite, então Moicano x Nolan começa bem depois das 21h, depois das outras lutas do card principal.</p>
+
+<h2>Onde assistir ao UFC Vegas 123 ao vivo</h2>
+<p>Preliminares e card principal passam no <strong>Paramount+</strong>, que transmite o UFC no Brasil.</p>
+
+<h2>Por que Moicano não luta mais contra Brian Ortega?</h2>
+<p>Moicano estava escalado contra <strong>Brian Ortega</strong> no UFC 331. Ortega se machucou e saiu da luta, e o UFC preferiu não buscar um substituto naquele evento: levou Moicano para a luta principal do dia 31 de outubro, contra Tom Nolan. Nolan chega com cinco vitórias seguidas e faz a primeira luta principal dele no UFC.</p>
+
+<h2>Os brasileiros do UFC Vegas 123</h2>
+<ul>
+<li><strong>Renato Moicano</strong> x Tom Nolan (Austrália): luta principal, peso-leve.</li>
+<li><strong>Luana Santos</strong> x Yana Santos (Rússia): peso-galo feminino.</li>
+<li><strong>Talita Alencar</strong> x Piera Rodriguez (Venezuela): peso-palha feminino.</li>
+<li><strong>Rodrigo Sezinando</strong> x Theodor Berggren (Suécia): peso meio-médio.</li>
+<li><strong>Tainara Lisboa</strong> x Lucia Szabová (Eslováquia).</li>
+</ul>
+<p>A ordem das lutas e a divisão entre card principal e preliminar podem mudar até o dia. Quem são e contra quem lutam em <a href="/blog/brasileiros-ufc-vegas-123">brasileiros no UFC Vegas 123</a>.</p>
+
+<h2>Quanto se gasta numa aula de jiu-jitsu</h2>
+<p>Muita luta no UFC se decide no chão, e é por aí que muita gente começa a treinar. Se você faz ou pensa em fazer jiu-jitsu, a calculadora abaixo mostra quanto gasta numa aula, pelo seu peso e por quanto da aula é rola. Para entender como os lutadores chegam à balança, veja <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>, e como eles treinam em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-october-31-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Fight Night: Moicano x Nolan (página oficial)</a></li>
+<li><a href="https://www.ufc.com.br/news/renato-moicano-tom-nolan-fazem-luta-principal-ufc-vegas-123" target="_blank" rel="noopener noreferrer">UFC — Renato Moicano e Tom Nolan fazem a luta principal do UFC Vegas 123</a></li>
+<li><a href="https://www.mmamania.com/ufc-fight-cards/474511/latest-ufc-vegas-123-fight-card-start-time-date-location-moicano-vs-nolan" target="_blank" rel="noopener noreferrer">MMA Mania — UFC Vegas 123: card, horário e local</a></li>
+<li><a href="https://cagesidepress.com/2026/09/14/brian-ortega-out-renato-moicano-gets-tom-nolan-in-ufc-vegas-123/" target="_blank" rel="noopener noreferrer">Cageside Press — Sem Ortega, Moicano pega Tom Nolan</a></li>
+<li><a href="https://www.sherdog.com/news/news/Brian-Ortega-out-of-UFC-331-Renato-Moicano-gets-new-opponent-202802" target="_blank" rel="noopener noreferrer">Sherdog — Ortega fora do UFC 331</a></li>
+<li>Card dos brasileiros conferido também em Tapology, Heavy e FightMag.</li>
+</ul>`,
+    faq: [
+      { question: "Quando é Moicano x Nolan?", answer: "Sábado, 31 de outubro de 2026, na luta principal do UFC Vegas 123, no Meta Apex, em Las Vegas." },
+      { question: "Que horas começa Moicano x Tom Nolan?", answer: "O card preliminar começa às 18h e o card principal às 21h, no horário de Brasília. A luta principal é a última da noite." },
+      { question: "Onde assistir Moicano x Nolan?", answer: "No Paramount+, que transmite as preliminares e o card principal do UFC no Brasil." },
+      { question: "Por que Moicano não vai lutar contra Brian Ortega?", answer: "Ortega se machucou e saiu do UFC 331. O UFC levou Moicano para a luta principal de 31 de outubro, contra Tom Nolan." },
+      { question: "Quais brasileiros lutam no UFC Vegas 123?", answer: "Renato Moicano (luta principal), Luana Santos, Talita Alencar, Rodrigo Sezinando e Tainara Lisboa." },
+    ],
+  },
+  {
+    slug: "brasileiros-ufc-vegas-123",
+    title: "Brasileiros no UFC Vegas 123: quem luta, contra quem e que horas",
+    metaTitle: "Brasileiros no UFC Vegas 123: Moicano, Luana Santos e Mais",
+    metaDescription:
+      "Os brasileiros do UFC Vegas 123 (31/10): Renato Moicano na luta principal, Luana Santos, Talita Alencar, Rodrigo Sezinando e Tainara Lisboa. Adversários e horários.",
+    excerpt:
+      "Moicano, Luana Santos, Talita Alencar, Rodrigo Sezinando e Tainara Lisboa no UFC Vegas 123: contra quem lutam e a que horas.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-10-19",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC Vegas 123", "brasileiros no UFC", "Renato Moicano", "Luana Santos"],
+    content: `<img src="/blog-images/ufc-vegas-123-moicano-nolan-capa.webp" alt="Brasileiros no UFC Vegas 123 — Renato Moicano x Tom Nolan na luta principal, sábado 31/10" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<p>Cinco brasileiros estão no <strong>UFC Vegas 123</strong>, no <strong>sábado, 31 de outubro de 2026</strong>, no Meta Apex, em Las Vegas. <strong>Renato Moicano</strong> faz a luta principal contra o australiano Tom Nolan. Horários, transmissão e o card em <a href="/blog/ufc-vegas-123-moicano-nolan">Moicano x Nolan: horário e onde assistir</a>.</p>
+
+<h2>Quem são os brasileiros do UFC Vegas 123</h2>
+<ul>
+<li><strong>Renato Moicano</strong> x Tom Nolan (Austrália): luta principal, peso-leve.</li>
+<li><strong>Luana Santos</strong> x Yana Santos (Rússia): peso-galo feminino.</li>
+<li><strong>Talita Alencar</strong> x Piera Rodriguez (Venezuela): peso-palha feminino.</li>
+<li><strong>Rodrigo Sezinando</strong> x Theodor Berggren (Suécia): peso meio-médio.</li>
+<li><strong>Tainara Lisboa</strong> x Lucia Szabová (Eslováquia).</li>
+</ul>
+
+<h2>Renato Moicano x Tom Nolan — luta principal</h2>
+<p>Moicano ia enfrentar Brian Ortega no UFC 331, mas Ortega se machucou e saiu. O UFC levou o brasileiro para a luta principal de 31 de outubro, no peso-leve, contra Tom Nolan, que vem de cinco vitórias seguidas e faz a primeira luta principal dele no UFC.</p>
+
+<h2>Que horas lutam os brasileiros?</h2>
+<p>O card preliminar começa às <strong>18h</strong> e o card principal às <strong>21h</strong>, no horário de Brasília, com transmissão do Paramount+. A ordem exata das lutas pode mudar até o dia do evento.</p>
+
+<h2>Como os lutadores chegam à balança</h2>
+<p>Todos passam pela pesagem na véspera, e muitos fazem corte de peso. Entenda o processo em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>, e como eles treinam em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-october-31-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Fight Night: Moicano x Nolan (página oficial)</a></li>
+<li><a href="https://www.ufc.com.br/news/renato-moicano-tom-nolan-fazem-luta-principal-ufc-vegas-123" target="_blank" rel="noopener noreferrer">UFC — Renato Moicano e Tom Nolan fazem a luta principal do UFC Vegas 123</a></li>
+<li><a href="https://www.mmamania.com/ufc-fight-cards/474511/latest-ufc-vegas-123-fight-card-start-time-date-location-moicano-vs-nolan" target="_blank" rel="noopener noreferrer">MMA Mania — UFC Vegas 123: card, horário e local</a></li>
+<li><a href="https://cagesidepress.com/2026/09/14/brian-ortega-out-renato-moicano-gets-tom-nolan-in-ufc-vegas-123/" target="_blank" rel="noopener noreferrer">Cageside Press — Sem Ortega, Moicano pega Tom Nolan</a></li>
+<li><a href="https://www.sherdog.com/news/news/Brian-Ortega-out-of-UFC-331-Renato-Moicano-gets-new-opponent-202802" target="_blank" rel="noopener noreferrer">Sherdog — Ortega fora do UFC 331</a></li>
+<li>Card dos brasileiros conferido também em Tapology, Heavy e FightMag.</li>
+</ul>`,
+    faq: [
+      { question: "Quais brasileiros lutam no UFC Vegas 123?", answer: "Renato Moicano (luta principal), Luana Santos, Talita Alencar, Rodrigo Sezinando e Tainara Lisboa." },
+      { question: "Contra quem luta Luana Santos no UFC Vegas 123?", answer: "Contra Yana Santos, no peso-galo feminino." },
+      { question: "Contra quem luta Talita Alencar no UFC Vegas 123?", answer: "Contra a venezuelana Piera Rodriguez, no peso-palha feminino." },
+      { question: "Que horas lutam os brasileiros no UFC Vegas 123?", answer: "O card preliminar começa às 18h e o principal às 21h, horário de Brasília." },
+    ],
+  },
+  {
     slug: "ufc-vegas-122-allen-duncan",
     title: "UFC Vegas 122: card, horário, lutas e onde assistir Allen x Duncan",
     metaTitle: "UFC Vegas 122: Card, Horário e Onde Assistir",
@@ -122,7 +240,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 </ul>
 
 <h2>Próximo UFC com brasileiro na luta principal</h2>
-<p>Gabriel Bonfim, irmão de Ismael, enfrenta Sean Brady no <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">UFC Vegas 124</a>, em 7 de novembro. Card completo deste evento em <a href="/blog/ufc-vegas-122-allen-duncan">UFC Vegas 122: card, horário e onde assistir</a>.</p>
+<p>Renato Moicano enfrenta Tom Nolan na luta principal do <a href="/blog/ufc-vegas-123-moicano-nolan">UFC Vegas 123</a>, em 31 de outubro. Uma semana depois, Gabriel Bonfim, irmão de Ismael, enfrenta Sean Brady no <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">UFC Vegas 124</a>, em 7 de novembro. Card completo deste evento em <a href="/blog/ufc-vegas-122-allen-duncan">UFC Vegas 122: card, horário e onde assistir</a>.</p>
 
 <h2>Não se compare</h2>
 <p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
