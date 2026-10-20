@@ -819,14 +819,16 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
           {/* Mesma honestidade para calorias e proteína: meta fora do alcance do banco (ex.: vegano com 4.000 kcal) é dita, não escondida no número. */}
           {(() => {
             const v = validaCardapio(cardapio);
-            if (v.kcalOk && v.protOk) return null;
             const t = totalDia(cardapio);
+            const protAlta = cardapio.metaProt > 0 && t.prot > cardapio.metaProt * 1.25;
+            if (v.kcalOk && v.protOk && !protAlta) return null;
             return (
               <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.05] p-4 mt-4" data-testid="aviso-meta-fora">
                 <p className="text-gray-200 text-sm leading-relaxed">
                   {!v.kcalOk && <>Este cardápio fecha em {Math.round(t.kcal)} kcal, longe da meta de {Math.round(cardapio.metaKcal)} kcal: com as escolhas de dieta e restrições, o banco de alimentos não chega lá só com porções caseiras. </>}
                   {!v.protOk && <>A proteína ficou em {Math.round(t.prot)} g, abaixo do mínimo planejado de {Math.round(cardapio.metaProt * 0.85)} g. </>}
-                  Use o &quot;+ adicionar alimento&quot; nas refeições para completar, ou revise a meta.
+                  {protAlta && <>A proteína ficou em {Math.round(t.prot)} g, bem acima da meta de {Math.round(cardapio.metaProt)} g: quase tudo o que foi marcado nas refeições é fonte de proteína, e o cardápio precisou dela para chegar nas calorias. Diminua uma porção de carne ou de whey e use o &quot;+ adicionar alimento&quot; para incluir arroz, pão, fruta ou azeite no lugar. </>}
+                  {!protAlta && <>Use o &quot;+ adicionar alimento&quot; nas refeições para completar, ou revise a meta.</>}
                 </p>
               </div>
             );

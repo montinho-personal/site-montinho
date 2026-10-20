@@ -701,11 +701,15 @@ console.log("\n" + "=".repeat(64) + "\nA SAÍDA DO FIM: WHATSAPP COM CONTEXTO, S
   const pd = pedido({ habituais: hab });
   const marcados = new Set(Object.values(hab).flat());
   const c = geraCardapio(pd);
-  const fora = c.refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId)).filter((id) => !marcados.has(id));
-  ok("com alimentos marcados, o cardápio só usa os marcados", fora.length === 0, fora.join(","));
+  // Exceção desde 21/10/2026: o azeite pode entrar no almoço e no jantar como tempero de preparo
+  // quando nada do que foi marcado tem gordura — sem ele, o motor compensava com carne magra.
+  const tempero = new Set(["azeite"]);
+  const fora = c.refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId)).filter((id) => !marcados.has(id) && !tempero.has(id));
+  ok("com alimentos marcados, o cardápio só usa os marcados (fora o azeite de preparo)", fora.length === 0, fora.join(","));
+  ok("o azeite de preparo só aparece em almoço e jantar", c.refeicoes.every((r) => !r.itens.some((i) => i.alimentoId === "azeite" && !marcados.has("azeite")) || r.momento === "almoco" || r.momento === "jantar"));
   const semana = geraSemana(c, pd, "bastante");
-  const foraSemana = semana.flatMap((d) => d.refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId))).filter((id) => !marcados.has(id));
-  ok("as versões da semana também só usam os marcados", foraSemana.length === 0, [...new Set(foraSemana)].join(","));
+  const foraSemana = semana.flatMap((d) => d.refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId))).filter((id) => !marcados.has(id) && !tempero.has(id));
+  ok("as versões da semana também só usam os marcados (fora o azeite de preparo)", foraSemana.length === 0, [...new Set(foraSemana)].join(","));
   const pVazio = pedido({ habituais: {} });
   ok("quem pulou a etapa continua recebendo cardápio do banco", selecionados("almoco", pVazio) === null && geraCardapio(pVazio).refeicoes.every((r) => r.itens.length > 0));
   ok("refeição sem marcados usa os marcados das outras que servem nela", !!selecionados("jantar", pedido({ habituais: { almoco: ["arroz-branco", "frango-grelhado"] } }))?.has("frango-grelhado"));
@@ -752,6 +756,21 @@ console.log("\n== Adicionar alimento e quadro de mudança (21/10/2026)");
   const comHabito: PedidoCardapio = { ...p, habituais: { cafe: ["whey", "banana"] } };
   const opsH = opcoesParaAdicionar("cafe", comHabito, []);
   ok("adicionar: o que a pessoa marcou vem primeiro", ["whey", "banana"].includes(opsH[0].id) && ["whey", "banana"].includes(opsH[1].id));
+}
+
+console.log("\n== Proteína não vira fonte de gordura (21/10/2026)");
+{
+  // Caso do Montinho: hábitos com poucas fontes de gordura; antes saíam 3 filés de frango no almoço e no jantar (276 g de proteína para meta de 144 g).
+  const p: PedidoCardapio = { metaKcal: 2100, pesoKg: 90, objetivo: "emagrecer", refeicoes: 4, dieta: "onivoro", restricoes: [], habituais: {
+    cafe: ["pao-integral", "aveia", "tapioca", "iogurte-natural"],
+    almoco: ["frango-grelhado", "carne-moida", "tilapia-grelhada", "sardinha-lata", "grao-de-bico", "batata-cozida", "batata-doce", "mandioca", "salada-crua"],
+    lanche: ["sardinha-lata", "batata-doce", "pao-frances", "pao-integral", "banana", "mamao", "whey", "abacate"],
+    jantar: ["frango-grelhado", "sardinha-lata", "grao-de-bico", "pts", "arroz-branco", "macarrao", "feijao-preto", "cuscuz"],
+    ceia: ["iogurte-natural"],
+  } };
+  const c = geraCardapio(p); const t = totalDia(c);
+  ok("proteína fica até 25% acima da meta", t.prot <= c.metaProt * 1.25, `${Math.round(t.prot)} g para meta ${Math.round(c.metaProt)} g`);
+  ok("e as calorias continuam perto da meta", Math.abs(t.kcal - c.metaKcal) <= c.metaKcal * TOLERANCIA_KCAL, `${Math.round(t.kcal)} kcal`);
 }
 
 console.log(falhas === 0 ? "\nTODOS OS TESTES PASSARAM\n" : `\n${falhas} TESTE(S) FALHARAM\n`);
