@@ -143,7 +143,7 @@ export const ALIMENTOS_CARDAPIO: AlimentoCardapio[] = [
   /**
    * Os números são os do ovo cozido: mexido sem gordura na frigideira
    * antiaderente. Feito com óleo ou manteiga, ele chega perto do ovo frito
-   * da TACO (240 kcal por 100 g). A auditoria de 21/10/2026 achou o nome
+   * da TACO (240 kcal por 100 g). A auditoria de 20/10/2026 achou o nome
    * genérico prometendo mais do que o número; o nome agora diz o preparo, e
    * quem usa óleo acrescenta o azeite como item.
    */

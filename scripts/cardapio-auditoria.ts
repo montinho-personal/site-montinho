@@ -2,7 +2,7 @@
  * Auditoria dos números do Monte seu Cardápio (relatório, não teste).
  *   npx tsx scripts/cardapio-auditoria.ts
  * 1. cada alimento contra a TACO; 2. soma das partes e metas em 1.152 pedidos;
- * 3. quanto as trocas mudam o item; 4. arredondamento da tela. Rodada em 21/10/2026.
+ * 3. quanto as trocas mudam o item; 4. arredondamento da tela. Rodada em 20/10/2026.
  */
 import { readFileSync } from "fs";
 import { ALIMENTOS_CARDAPIO, nutrientes, ALIMENTO_CARDAPIO_POR_ID } from "../lib/cardapio/alimentos";

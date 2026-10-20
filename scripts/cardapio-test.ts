@@ -703,7 +703,7 @@ console.log("\n" + "=".repeat(64) + "\nA SAÍDA DO FIM: WHATSAPP COM CONTEXTO, S
   const pd = pedido({ habituais: hab });
   const marcados = new Set(Object.values(hab).flat());
   const c = geraCardapio(pd);
-  // Exceção desde 21/10/2026: o azeite pode entrar no almoço e no jantar como tempero de preparo
+  // Exceção desde 20/10/2026: o azeite pode entrar no almoço e no jantar como tempero de preparo
   // quando nada do que foi marcado tem gordura — sem ele, o motor compensava com carne magra.
   const tempero = new Set(["azeite"]);
   const fora = c.refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId)).filter((id) => !marcados.has(id) && !tempero.has(id));
@@ -734,7 +734,7 @@ console.log("\n" + "=".repeat(64) + "\nA SAÍDA DO FIM: WHATSAPP COM CONTEXTO, S
   ok("excluir não altera o cardápio original", c.refeicoes[ri].itens.some((i) => i.alimentoId === alvo));
 }
 
-console.log("\n== Adicionar alimento e quadro de mudança (21/10/2026)");
+console.log("\n== Adicionar alimento e quadro de mudança (20/10/2026)");
 {
   const p: PedidoCardapio = { metaKcal: 2000, pesoKg: 70, objetivo: "manter", refeicoes: 4, dieta: "onivoro", restricoes: [], habituais: {} };
   const c = geraCardapio(p);
@@ -760,7 +760,7 @@ console.log("\n== Adicionar alimento e quadro de mudança (21/10/2026)");
   ok("adicionar: o que a pessoa marcou vem primeiro", ["whey", "banana"].includes(opsH[0].id) && ["whey", "banana"].includes(opsH[1].id));
 }
 
-console.log("\n== Proteína não vira fonte de gordura (21/10/2026)");
+console.log("\n== Proteína não vira fonte de gordura (20/10/2026)");
 {
   // Caso do Montinho: hábitos com poucas fontes de gordura; antes saíam 3 filés de frango no almoço e no jantar (276 g de proteína para meta de 144 g).
   const p: PedidoCardapio = { metaKcal: 2100, pesoKg: 90, objetivo: "emagrecer", refeicoes: 4, dieta: "onivoro", restricoes: [], habituais: {
@@ -775,7 +775,7 @@ console.log("\n== Proteína não vira fonte de gordura (21/10/2026)");
   ok("e as calorias continuam perto da meta", Math.abs(t.kcal - c.metaKcal) <= c.metaKcal * TOLERANCIA_KCAL, `${Math.round(t.kcal)} kcal`);
 }
 
-console.log("\n== Quantidade em gramas (21/10/2026)");
+console.log("\n== Quantidade em gramas (20/10/2026)");
 {
   const p: PedidoCardapio = { metaKcal: 2000, pesoKg: 70, objetivo: "manter", refeicoes: 4, dieta: "onivoro", restricoes: [], habituais: { almoco: ["arroz-branco", "frango-grelhado", "feijao-carioca", "salada-crua"] } };
   const c = geraCardapio(p);
