@@ -548,9 +548,19 @@ export function geraCardapio(pedido: PedidoCardapio): CardapioDia {
       return a && perfilNutricional(a) === "gorduroso";
     });
     if (temGordura) continue;
-    const fonte = candidatos(r.momento, pedido).find(
-      (a) => a.grupo === "gordura" && !r.itens.some((it) => it.alimentoId === a.id)
-    );
+    /*
+     * Sem fonte de gordura entre os alimentos marcados, entra o azeite (só em
+     * almoço e jantar, onde ele é tempero de preparo, não um alimento novo no
+     * prato). Antes, a gordura ficava abaixo do limite duro e o motor
+     * compensava com o pouco de gordura das carnes magras: um cardápio de
+     * 2.100 kcal saiu com 236 g de proteína para meta de 144 g (caso do
+     * Montinho, 21/10/2026). Como todo extra, ele some se não for preciso.
+     */
+    const fonte =
+      candidatos(r.momento, pedido).find((a) => a.grupo === "gordura" && !r.itens.some((it) => it.alimentoId === a.id)) ??
+      ALIMENTOS_CARDAPIO.find(
+        (a) => a.id === "azeite" && a.momentos.includes(r.momento) && permitido(a, pedido.dieta, pedido.restricoes) && !r.itens.some((it) => it.alimentoId === a.id)
+      );
     if (fonte) {
       r.itens.push({ alimentoId: fonte.id, porcoes: 0 });
       extras.add(fonte.id);
