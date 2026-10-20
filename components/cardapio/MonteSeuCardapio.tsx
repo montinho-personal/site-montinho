@@ -39,6 +39,9 @@ import {
   alternativas,
   excluiItem,
   ajustaPorcao,
+  adicionaItem,
+  opcoesParaAdicionar,
+  diferencaTotais,
   geraCardapio,
   proximaVersao,
   geraSemana,
@@ -49,6 +52,7 @@ import {
   totalDia,
   totalRefeicao,
   type CardapioDia,
+  type Metas,
   type Objetivo,
   type PedidoCardapio,
   type Variedade,
@@ -123,6 +127,15 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
   const [veioDeFora, setVeioDeFora] = useState(false);
   const [cardapio, setCardapio] = useState<CardapioDia | null>(null);
   const [trocando, setTrocando] = useState<string | null>(null);
+  /** Refeição com a lista de "adicionar alimento" aberta, e o filtro digitado. */
+  const [adicionando, setAdicionando] = useState<number | null>(null);
+  const [buscaAdicionar, setBuscaAdicionar] = useState("");
+  /**
+   * A última mudança feita na mão (trocar, adicionar, mais/menos, excluir):
+   * em qual refeição, o que foi e como estava o dia antes. É o que alimenta
+   * o quadro que aparece embaixo da refeição mexida.
+   */
+  const [mudanca, setMudanca] = useState<{ ri: number; rotulo: string; antes: Metas } | null>(null);
   const [variedade, setVariedade] = useState<Variedade | null>(null);
   const [comprados, setComprados] = useState<string[]>([]);
   const [metodoAberto, setMetodoAberto] = useState(false);
@@ -271,6 +284,10 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [carregado, e.etapa, cardapio, pedido]);
 
+  function marcaMudanca(ri: number, rotulo: string) {
+    if (cardapio) setMudanca({ ri, rotulo, antes: totalDia(cardapio) });
+  }
+
   function avanca(patch: Partial<Estado> = {}) {
     setE((atual) => {
       const novo = { ...atual, ...patch };
@@ -288,6 +305,8 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
     });
   }
   function recomeca() {
+    setMudanca(null);
+    setAdicionando(null);
     setE(INICIAL);
     setCardapio(null);
     setVariedade(null);
@@ -300,6 +319,8 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
   }
 
   function gerar(p: PedidoCardapio) {
+    setMudanca(null);
+    setAdicionando(null);
     setCardapio(geraCardapio(p));
     setSemVariacao(false);
     setVariedade(null);
@@ -314,6 +335,8 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
    * banco não tem alternativa para aquelas restrições, dizemos isso.
    */
   function outraVersao(p: PedidoCardapio) {
+    setMudanca(null);
+    setAdicionando(null);
     if (!cardapio) return;
     const nova = proximaVersao(cardapio, p);
     if (!nova) {
@@ -792,6 +815,22 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
           {/* Painel de metas */}
           <ResumoDia cardapio={cardapio} />
 
+          {/* Mesma honestidade para calorias e proteína: meta fora do alcance do banco (ex.: vegano com 4.000 kcal) é dita, não escondida no número. */}
+          {(() => {
+            const v = validaCardapio(cardapio);
+            if (v.kcalOk && v.protOk) return null;
+            const t = totalDia(cardapio);
+            return (
+              <div className="border border-[#BA9E50]/40 bg-[#BA9E50]/[0.05] p-4 mt-4" data-testid="aviso-meta-fora">
+                <p className="text-gray-200 text-sm leading-relaxed">
+                  {!v.kcalOk && <>Este cardápio fecha em {Math.round(t.kcal)} kcal, longe da meta de {Math.round(cardapio.metaKcal)} kcal: com as escolhas de dieta e restrições, o banco de alimentos não chega lá só com porções caseiras. </>}
+                  {!v.protOk && <>A proteína ficou em {Math.round(t.prot)} g, abaixo do mínimo planejado de {Math.round(cardapio.metaProt * 0.85)} g. </>}
+                  Use o &quot;+ adicionar alimento&quot; nas refeições para completar, ou revise a meta.
+                </p>
+              </div>
+            );
+          })()}
+
           {/* Validação: quando a gordura não fecha nem com as fontes do
               banco, dizemos isso — nunca apresentamos um dia desequilibrado
               como se estivesse tudo bem. */}
@@ -846,6 +885,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                                     key={d}
                                     type="button"
                                     onClick={() => {
+                                      marcaMudanca(ri, `${d > 0 ? "Aumentou" : "Diminuiu"} ${a.nome.toLowerCase()}`);
                                       setCardapio((c) => (c ? ajustaPorcao(c, ri, it.alimentoId, d) : c));
                                       setVariedade(null);
                                       trackEvent("meal_portion_changed", { placement, direcao: d > 0 ? "mais" : "menos" });
@@ -877,6 +917,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                               <button
                                 type="button"
                                 onClick={() => {
+                                  marcaMudanca(ri, `Tirou ${a.nome.toLowerCase()} (as outras porções do dia foram reajustadas)`);
                                   setCardapio((c) => (c ? excluiItem(c, ri, it.alimentoId) : c));
                                   setE((atual) => ({
                                     ...atual,
@@ -922,6 +963,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                                       <button
                                         type="button"
                                         onClick={() => {
+                                          marcaMudanca(ri, `Trocou ${a.nome.toLowerCase()} por ${alimento.nome.toLowerCase()}`);
                                           setCardapio((c) => {
                                             if (!c) return c;
                                             const novo = structuredClone(c);
@@ -939,6 +981,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                                         className="text-gray-300 hover:text-white text-sm py-1.5 min-h-[40px] text-left"
                                       >
                                         → {rotuloPorcao(alimento, porcoes)} de {alimento.nome.toLowerCase()}
+                                        <span className="text-gray-500 text-xs"> · {Math.round(nutrientes(alimento, porcoes).kcal)} kcal · {Math.round(nutrientes(alimento, porcoes).prot)} g prot.</span>
                                       </button>
                                     </li>
                                   ))}
@@ -951,6 +994,73 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                       );
                     })}
                   </ul>
+                  {/* Adicionar alimento: o motor não reequilibra; o quadro abaixo mostra o efeito no dia. */}
+                  <div className="mt-3 print:hidden">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setAdicionando(adicionando === ri ? null : ri);
+                        setBuscaAdicionar("");
+                        setTrocando(null);
+                        if (adicionando !== ri) trackEvent("meal_add_opened", { placement });
+                      }}
+                      aria-expanded={adicionando === ri}
+                      className="text-sm text-[#BA9E50] hover:text-white underline underline-offset-2 min-h-[44px]"
+                    >
+                      {adicionando === ri ? "fechar" : "+ adicionar alimento"}
+                    </button>
+                    {adicionando === ri && (
+                      <div className="mt-2 pl-3 border-l-2" style={{ borderColor: "#BA9E50" }}>
+                        <input
+                          type="search"
+                          value={buscaAdicionar}
+                          onChange={(ev) => setBuscaAdicionar(ev.target.value)}
+                          placeholder="Buscar alimento (ex.: banana, queijo)"
+                          aria-label={`Buscar alimento para adicionar no ${r.nome.toLowerCase()}`}
+                          className="w-full bg-transparent border border-white/25 px-3 py-2 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-white/60"
+                        />
+                        {(() => {
+                          const semAcento = (x: string) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+                          const q = semAcento(buscaAdicionar.trim());
+                          const lista = opcoesParaAdicionar(r.momento, pedido, r.itens.map((x) => x.alimentoId)).filter((op) => !q || semAcento(op.nome).includes(q));
+                          const jaNoPrato = q && r.itens.some((x) => semAcento(ALIMENTO_CARDAPIO_POR_ID.get(x.alimentoId)?.nome ?? "").includes(q));
+                          if (lista.length === 0)
+                            return (
+                              <p className="text-gray-400 text-sm py-2">
+                                {jaNoPrato ? "Esse alimento já está nesta refeição: use o + ao lado dele para aumentar a quantidade." : "Nenhum alimento do banco com esse nome cabe na sua dieta e nas suas restrições."}
+                              </p>
+                            );
+                          return (
+                        <ul className="space-y-1 py-2 max-h-72 overflow-y-auto">
+                          {lista
+                            .map((op) => {
+                              const n1 = nutrientes(op, 1);
+                              return (
+                                <li key={op.id}>
+                                  <button
+                                    type="button"
+                                    onClick={() => {
+                                      marcaMudanca(ri, `Adicionou ${rotuloPorcao(op, 1)} de ${op.nome.toLowerCase()}`);
+                                      setCardapio((c) => (c ? adicionaItem(c, ri, op.id, 1) : c));
+                                      setAdicionando(null);
+                                      setVariedade(null);
+                                      trackEvent("meal_item_added", { placement });
+                                    }}
+                                    className="text-gray-300 hover:text-white text-sm py-1.5 min-h-[40px] text-left"
+                                  >
+                                    + {rotuloPorcao(op, 1)} de {op.nome.toLowerCase()}
+                                    <span className="text-gray-500 text-xs"> · {Math.round(n1.kcal)} kcal · {Math.round(n1.prot)} g prot.</span>
+                                  </button>
+                                </li>
+                              );
+                            })}
+                        </ul>
+                          );
+                        })()}
+                      </div>
+                    )}
+                  </div>
+                  {mudanca?.ri === ri && <QuadroMudanca cardapio={cardapio} mudanca={mudanca} onFechar={() => setMudanca(null)} />}
                 </div>
               );
             })}
@@ -1331,6 +1441,54 @@ function Check() {
     <span aria-hidden="true" style={{ color: "#BA9E50" }}>
       ✓{" "}
     </span>
+  );
+}
+
+/**
+ * O quadro que aparece embaixo da refeição mexida: o dia inteiro agora,
+ * contra a meta, e quanto a última mudança somou ou tirou. É a resposta
+ * para "como está ficando?" sem precisar rolar até o resumo do topo.
+ */
+function QuadroMudanca({ cardapio, mudanca, onFechar }: { cardapio: CardapioDia; mudanca: { rotulo: string; antes: Metas }; onFechar: () => void }) {
+  const agora = totalDia(cardapio);
+  const d = diferencaTotais(mudanca.antes, agora);
+  const sinal = (x: number) => (Math.round(x) > 0 ? `+${Math.round(x)}` : `${Math.round(x)}`);
+  const linhas: [string, number, number, number, string][] = [
+    ["Calorias", agora.kcal, cardapio.metaKcal, d.kcal, "kcal"],
+    ["Proteína", agora.prot, cardapio.metaProt, d.prot, "g"],
+    ["Carboidratos", agora.carb, cardapio.metaCarb, d.carb, "g"],
+    ["Gorduras", agora.gord, cardapio.metaGord, d.gord, "g"],
+  ];
+  const difMeta = Math.round(agora.kcal - cardapio.metaKcal);
+  const dentro = Math.abs(agora.kcal - cardapio.metaKcal) <= cardapio.metaKcal * 0.05;
+  return (
+    <div className="mt-3 border border-white/20 p-4 print:hidden" style={{ background: "#0d0d0d" }} role="status" aria-live="polite" data-testid="quadro-mudanca">
+      <div className="flex items-start justify-between gap-3 mb-3">
+        <p className="text-gray-300 text-sm">
+          <span className="text-white font-semibold">Como ficou o seu dia</span> · {mudanca.rotulo}
+        </p>
+        <button type="button" onClick={onFechar} className="text-gray-500 hover:text-white text-xs underline underline-offset-2 shrink-0">
+          fechar
+        </button>
+      </div>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+        {linhas.map(([nome, valor, meta, delta, un]) => (
+          <div key={nome} className="border border-white/10 p-2.5">
+            <p className="text-gray-500 text-[11px] uppercase tracking-wider">{nome}</p>
+            <p className="text-white font-bold text-lg leading-tight">
+              {Math.round(valor)}
+              <span className="text-xs font-normal text-gray-400"> {meta > 0 ? `/ ${Math.round(meta)}` : ""} {un}</span>
+            </p>
+            <p className={`text-xs ${Math.round(delta) === 0 ? "text-gray-500" : "text-[#BA9E50]"}`}>{sinal(delta)} {un}</p>
+          </div>
+        ))}
+      </div>
+      <p className="text-gray-400 text-xs mt-3">
+        {dentro
+          ? "As calorias do dia continuam perto da meta (até 5% de diferença)."
+          : `O dia está ${Math.abs(difMeta)} kcal ${difMeta > 0 ? "acima" : "abaixo"} da meta. Ajuste uma porção ou outra refeição para compensar, se quiser.`}
+      </p>
+    </div>
   );
 }
 

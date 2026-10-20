@@ -38,6 +38,9 @@ import {
   buildCardapioWhatsApp,
   excluiItem,
   ajustaPorcao,
+  adicionaItem,
+  opcoesParaAdicionar,
+  diferencaTotais,
   selecionados,
   diaDentroDaTolerancia,
   geraCardapio,
@@ -723,6 +726,32 @@ console.log("\n" + "=".repeat(64) + "\nA SAÍDA DO FIM: WHATSAPP COM CONTEXTO, S
   ok("− nunca desce abaixo de um passo", menos.refeicoes[ri].itens.find((i) => i.alimentoId === it0.alimentoId)!.porcoes === a0.passo);
   ok("ajustar não mexe nos outros itens", mais.refeicoes.every((r, i) => r.itens.every((x, j) => (i === ri && x.alimentoId === it0.alimentoId) || x.porcoes === c.refeicoes[i].itens[j].porcoes)));
   ok("excluir não altera o cardápio original", c.refeicoes[ri].itens.some((i) => i.alimentoId === alvo));
+}
+
+console.log("\n== Adicionar alimento e quadro de mudança (21/10/2026)");
+{
+  const p: PedidoCardapio = { metaKcal: 2000, pesoKg: 70, objetivo: "manter", refeicoes: 4, dieta: "onivoro", restricoes: [], habituais: {} };
+  const c = geraCardapio(p);
+  const ri = 0;
+  const ops = opcoesParaAdicionar(c.refeicoes[ri].momento, p, c.refeicoes[ri].itens.map((x) => x.alimentoId));
+  ok("adicionar: oferece alimentos que ainda não estão na refeição", ops.length > 0 && ops.every((a) => !c.refeicoes[ri].itens.some((x) => x.alimentoId === a.id)));
+  ok("adicionar: não oferece whey para quem não marcou que usa", !ops.some((a) => a.id === "whey"));
+  const novo = adicionaItem(c, ri, ops[0].id, 1);
+  const antes = totalDia(c), depois = totalDia(novo), n1 = nutrientes(ops[0], 1);
+  ok("adicionar: o dia sobe exatamente o que o alimento tem", Math.abs(depois.kcal - antes.kcal - n1.kcal) < 1e-9 && Math.abs(depois.prot - antes.prot - n1.prot) < 1e-9 && Math.abs(depois.gord - antes.gord - n1.gord) < 1e-9);
+  ok("adicionar: não mexe nas outras refeições", novo.refeicoes.every((r, i) => i === ri || JSON.stringify(r.itens) === JSON.stringify(c.refeicoes[i].itens)));
+  ok("adicionar: não altera o cardápio original", c.refeicoes[ri].itens.length === novo.refeicoes[ri].itens.length - 1);
+  const dobro = adicionaItem(novo, ri, ops[0].id, 1);
+  ok("adicionar de novo soma porção em vez de duplicar a linha", dobro.refeicoes[ri].itens.filter((x) => x.alimentoId === ops[0].id).length === 1 && dobro.refeicoes[ri].itens.find((x) => x.alimentoId === ops[0].id)!.porcoes === 2);
+  const d = diferencaTotais(antes, depois);
+  ok("quadro: a diferença é o alimento adicionado", Math.abs(d.kcal - n1.kcal) < 1e-9 && Math.abs(d.carb - n1.carb) < 1e-9);
+  const vegano: PedidoCardapio = { ...p, dieta: "vegano", restricoes: ["gluten"] };
+  const cv = geraCardapio(vegano);
+  const opv = opcoesParaAdicionar(cv.refeicoes[1].momento, vegano, []);
+  ok("adicionar respeita dieta e restrições", opv.every((a) => a.vegano && !a.exclusoes.includes("gluten")));
+  const comHabito: PedidoCardapio = { ...p, habituais: { cafe: ["whey", "banana"] } };
+  const opsH = opcoesParaAdicionar("cafe", comHabito, []);
+  ok("adicionar: o que a pessoa marcou vem primeiro", ["whey", "banana"].includes(opsH[0].id) && ["whey", "banana"].includes(opsH[1].id));
 }
 
 console.log(falhas === 0 ? "\nTODOS OS TESTES PASSARAM\n" : `\n${falhas} TESTE(S) FALHARAM\n`);
