@@ -413,7 +413,7 @@ export function perfilNutricional(a: AlimentoCardapio): PerfilNutricional {
 
 // ─── Score e refinamento do dia ──────────────────────────────────────────────
 
-interface Metas { kcal: number; prot: number; carb: number; gord: number }
+export interface Metas { kcal: number; prot: number; carb: number; gord: number }
 
 function metasDe(c: CardapioDia): Metas {
   return { kcal: c.metaKcal, prot: c.metaProt, carb: c.metaCarb, gord: c.metaGord };
@@ -757,6 +757,47 @@ export function ajustaPorcao(c: CardapioDia, refeicaoIdx: number, alimentoId: st
       }),
     })),
   };
+}
+
+/**
+ * O que a pessoa pode acrescentar numa refeição: tudo o que cabe na dieta e
+ * nas restrições e ainda não está no prato. Os marcados como habituais vêm
+ * primeiro, depois os que combinam com o momento, depois o resto do banco —
+ * a escolha é dela (pedido do Montinho, 21/10/2026).
+ */
+export function opcoesParaAdicionar(momento: Momento, pedido: PedidoCardapio, jaNaRefeicao: string[]): AlimentoCardapio[] {
+  const sel = selecionados(momento, pedido);
+  const peso = (a: AlimentoCardapio) => (sel?.has(a.id) ? 0 : a.momentos.includes(momento) ? 1 : 2);
+  return ALIMENTOS_CARDAPIO
+    .filter((a) => !jaNaRefeicao.includes(a.id) && permitido(a, pedido.dieta, pedido.restricoes) && (!a.soHabitual || !!sel?.has(a.id)))
+    .sort((a, b) => peso(a) - peso(b) || a.nome.localeCompare(b.nome, "pt-BR"));
+}
+
+/**
+ * Acrescenta um alimento na refeição, em porções caseiras. Como no ajuste de
+ * porção, o motor NÃO reequilibra o resto do dia: o quadro de totais mostra
+ * na hora como ficaram calorias e macros contra a meta, e a decisão é dela.
+ */
+export function adicionaItem(c: CardapioDia, refeicaoIdx: number, alimentoId: string, porcoes = 1): CardapioDia {
+  const a = ALIMENTO_CARDAPIO_POR_ID.get(alimentoId);
+  if (!a) return c;
+  const n = Math.min(a.maxPorcoes * 2, Math.max(a.passo, porcoes));
+  return {
+    ...c,
+    refeicoes: c.refeicoes.map((r, i) => {
+      const itens = r.itens.map((it) => ({ ...it }));
+      if (i !== refeicaoIdx) return { ...r, itens };
+      const ja = itens.find((it) => it.alimentoId === alimentoId);
+      if (ja) ja.porcoes = Math.min(a.maxPorcoes * 2, ja.porcoes + n);
+      else itens.push({ alimentoId, porcoes: n });
+      return { ...r, itens };
+    }),
+  };
+}
+
+/** Diferença entre dois totais (o que a última mudança fez no dia). */
+export function diferencaTotais(antes: Metas, depois: Metas): Metas {
+  return { kcal: depois.kcal - antes.kcal, prot: depois.prot - antes.prot, carb: depois.carb - antes.carb, gord: depois.gord - antes.gord };
 }
 
 export const SEM_ALTERNATIVA =

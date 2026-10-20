@@ -140,7 +140,14 @@ export const ALIMENTOS_CARDAPIO: AlimentoCardapio[] = [
   { id: "tilapia-grelhada", nome: "Filé de tilápia grelhado", grupo: "proteina-animal", momentos: ["almoco", "jantar"], exclusoes: ["peixe"], vegetariano: false, vegano: false, kcal100: 128, prot100: 26, carb100: 0, gord100: 2.6, porcao: { rotulo: "1 filé médio", g: 100 }, passo: 0.5, maxPorcoes: 3, estado: "grelhado", fonte: SEM_REGISTRO },
   { id: "sardinha-lata", taco: "sardinha-conserva-em-oleo", nome: "Sardinha em conserva (escorrida)", grupo: "proteina-animal", momentos: ["almoco", "jantar", "lanche"], exclusoes: ["peixe"], vegetariano: false, vegano: false, kcal100: 285, prot100: 15.9, carb100: 0, gord100: 24, porcao: { rotulo: "1 lata pequena", g: 84 }, passo: 0.5, maxPorcoes: 2, estado: "pronto para consumo", fonte: TACO },
   { id: "ovo-cozido", taco: "ovo-de-galinha-inteiro-cozido-10minutos", nome: "Ovo cozido", grupo: "proteina-animal", momentos: ["cafe", "almoco", "lanche", "jantar"], exclusoes: ["ovo"], vegetariano: true, vegano: false, kcal100: 146, prot100: 13.3, carb100: 0.6, gord100: 9.5, porcao: { rotulo: "1 ovo", g: 50 }, passo: 1, maxPorcoes: 3, estado: "cozido", fonte: TACO, verificadoEm: "2026-08-28" },
-  { id: "ovo-mexido", nome: "Ovos mexidos", grupo: "proteina-animal", momentos: ["cafe", "jantar"], exclusoes: ["ovo"], vegetariano: true, vegano: false, kcal100: 146, prot100: 13.3, carb100: 0.6, gord100: 9.5, porcao: { rotulo: "1 ovo", g: 50 }, passo: 1, maxPorcoes: 3, estado: "pronto para consumo", fonte: SEM_REGISTRO },
+  /**
+   * Os números são os do ovo cozido: mexido sem gordura na frigideira
+   * antiaderente. Feito com óleo ou manteiga, ele chega perto do ovo frito
+   * da TACO (240 kcal por 100 g). A auditoria de 21/10/2026 achou o nome
+   * genérico prometendo mais do que o número; o nome agora diz o preparo, e
+   * quem usa óleo acrescenta o azeite como item.
+   */
+  { id: "ovo-mexido", nome: "Ovos mexidos sem óleo", grupo: "proteina-animal", momentos: ["cafe", "jantar"], exclusoes: ["ovo"], vegetariano: true, vegano: false, kcal100: 146, prot100: 13.3, carb100: 0.6, gord100: 9.5, porcao: { rotulo: "1 ovo", g: 50 }, passo: 1, maxPorcoes: 3, estado: "pronto para consumo", fonte: SEM_REGISTRO },
 
   // ── Proteínas vegetais ─────────────────────────────────────────────────
   { id: "tofu", taco: "soja-queijo-tofu", nome: "Tofu", grupo: "proteina-vegetal", momentos: ["almoco", "jantar", "cafe"], exclusoes: [], vegetariano: true, vegano: true, kcal100: 64, prot100: 6.6, carb100: 2.1, gord100: 4, porcao: { rotulo: "1 fatia grossa", g: 100 }, passo: 0.5, maxPorcoes: 3, estado: "pronto para consumo", fonte: TACO, verificadoEm: "2026-08-28" },
