@@ -513,4 +513,7 @@ export const ARTIGOS_COM_LINK_VOLUME: string[] = [
   /* Dois treinos por semana: a conta que sobra é quantas séries cada
      músculo recebe nas duas sessões. Embed no teto; o link serve. */
   "treinar-2-vezes-por-semana-da-resultado",
+  /* "Quantos exercícios por músculo": o número de exercícios sai das séries
+     semanais. O embed está no teto de oito, então entra o link (20/10/2026). */
+  "quantos-exercicios-por-musculo",
 ];
