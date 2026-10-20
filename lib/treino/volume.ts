@@ -516,4 +516,6 @@ export const ARTIGOS_COM_LINK_VOLUME: string[] = [
   /* "Quantos exercícios por músculo": o número de exercícios sai das séries
      semanais. O embed está no teto de oito, então entra o link (20/10/2026). */
   "quantos-exercicios-por-musculo",
+  /* "Perna 2 ou 3 vezes": a frequência é o jeito de distribuir as séries da semana. */
+  "treinar-perna-2-ou-3-vezes-por-semana",
 ];

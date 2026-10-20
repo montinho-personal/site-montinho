@@ -1127,3 +1127,10 @@ metaDescription do resultado ainda diz "atualizada assim que saírem". A troca d
 - Prints (20/10). Autocompletar: feminino, na academia, com halteres, para iniciantes, na polia, em casa. PAA: 4 melhores treinos, 3 exercícios, como pegar abdômen rapidamente, o que 1 minuto de prancha faz. A visão geral por IA cita Tua Saúde (5 a 10 min, circuito 40/20). Na SERP: TotalPass, GE e Hipertrofia.org.
 - O artigo linka em-casa, prancha, quantos abdominais, gordura abdominal, diástase e a calculadora de déficit. Gordura localizada: Vispute 2011, conferido no PubMed.
 - Ferramenta: ARTIGOS_SEM_FERRAMENTA, porque o leitor sai com o treino e não com uma conta. Recebe o cartão do mapa muscular (/exercicios/abdomen).
+
+## 2026-10-20 — Artigo novo: treinar perna 2 ou 3 vezes por semana
+
+`treinar-perna-2-ou-3-vezes-por-semana`. Canibalização: `treino-de-perna-completo`, `como-ganhar-perna-mais-rapido`, `frequencia-de-treino` e `treinar-o-mesmo-musculo-duas-vezes-por-semana` respondem "quantas vezes treinar perna" só numa FAQ. No Search Console (90 dias), as buscas de frequência de perna ficaram espalhadas em 4 páginas, com 1 impressão cada e posição de 15 a 55: nenhuma é dona da intenção. A página nova assume esse papel.
+- Prints (20/10). Autocompletar: feminino, é normal, é bom, dá resultado, hipertrofia, homem, é suficiente. PAA: quantas vezes treinar perna, 2 vezes dá resultado, o que acontece com 3 vezes, quem treina 3x tem resultado. A visão geral por IA diz que 2x é "a opção mais eficiente" e fala em 48–72 h; esse número não entrou, porque não tem fonte. Na SERP: vídeo do Felipe Cwol e Reddit r/Gimnasio.
+- Fontes, conferidas no PubMed: Schoenfeld 2016 (2x é melhor que 1x; 3x contra 2x ficou em aberto) e Schoenfeld, Grgic e Krieger 2019 (com o mesmo volume, sem diferença, inclusive em membros inferiores).
+- Ferramenta: link para a Calculadora de Volume (`ARTIGOS_COM_LINK_VOLUME`).
