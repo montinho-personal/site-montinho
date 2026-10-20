@@ -119540,6 +119540,103 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 `,
   },
   {
+    slug: "quantos-exercicios-por-musculo",
+    title: "Quantos Exercícios por Músculo Fazer? A Conta Para Hipertrofia",
+    metaTitle: "Quantos Exercícios por Músculo Fazer Para Hipertrofia",
+    metaDescription: "Quantos exercícios por músculo por treino e por semana: a conta parte das séries semanais. Veja quanto fazer no full body, na divisão e quando variar ajuda.",
+    excerpt: "O número de exercícios é consequência, não ponto de partida. Primeiro vêm as séries da semana; depois, quantas cabem em cada exercício e em cada treino.",
+    category: "Treinamento",
+    date: "2026-10-20",
+    readTime: "7 min",
+    author: "Montinho",
+    tags: ["quantos exercícios por músculo", "volume de treino", "hipertrofia", "musculação", "montar treino", "full body"],
+    faq: [
+      { question: "Quantos exercícios por músculo é o ideal?", answer: "Para a maioria das pessoas, 1 a 3 exercícios por músculo em cada treino. O número sai da conta das séries semanais: com 12 séries de peito na semana, 2 treinos e 3 séries por exercício, são 2 exercícios de peito por treino. Mais exercícios só fazem sentido se cada um trabalhar o músculo de um jeito diferente." },
+      { question: "Quantos exercícios por músculo por dia?", answer: "Em um treino, 1 a 3 exercícios por músculo costumam bastar. Num full body, em que todo músculo aparece no mesmo dia, 1 exercício por músculo é o comum. Numa divisão em que o músculo treina uma vez na semana, ele precisa de mais exercícios naquele dia para fechar o volume." },
+      { question: "Quantos exercícios por músculo por semana?", answer: "Pense em séries, não em exercícios. A meta-análise de Schoenfeld e colegas (2017) encontrou mais hipertrofia com mais séries semanais por músculo. Distribua essas séries em 2 a 4 exercícios diferentes ao longo da semana, escolhidos para trabalhar o músculo em posições e ângulos diferentes." },
+      { question: "Quantos exercícios por músculo para hipertrofia?", answer: "O que gera hipertrofia é o total de séries bem feitas, perto da falha, com carga subindo ao longo das semanas. Dois exercícios executados assim rendem mais do que cinco feitos longe da falha. Use quantos forem necessários para fechar as séries da semana sem que a qualidade caia no fim do treino." },
+      { question: "Quantos exercícios por músculo no full body?", answer: "Geralmente 1 por músculo em cada sessão, às vezes 2 para os músculos grandes. Como o full body repete o músculo duas ou três vezes na semana, dá para usar um exercício diferente em cada dia e chegar a 2 ou 3 exercícios por músculo na semana." },
+      { question: "Quantos exercícios diferentes por músculo devo fazer?", answer: "Diferentes de verdade, não só de nome. Supino reto com barra e supino reto na máquina são quase o mesmo estímulo. Um exercício que alonga o músculo e outro que o trabalha encurtado, ou um composto e um isolado, cobrem regiões diferentes. A revisão de Kassiano e colegas (2022) concluiu que variar de forma planejada ajuda a hipertrofia regional, e que exercícios redundantes ou trocas excessivas podem atrapalhar." },
+      { question: "É melhor fazer 3 ou 4 séries?", answer: "Depende de quantas séries o músculo precisa na semana e de quantos exercícios você usa. 3 séries de 3 exercícios e 4 séries de 2 exercícios dão quase o mesmo volume. O que muda o resultado é o total semanal e a qualidade de cada série." },
+      { question: "Devo fazer 4x10 ou 3x12?", answer: "Os dois funcionam para hipertrofia se as séries chegarem perto da falha. 4x10 soma 40 repetições e 3x12 soma 36: a diferença é pequena. Escolha a que permite subir a carga com boa execução e mantenha por algumas semanas antes de trocar." },
+      { question: "Trocar os exercícios toda semana ajuda?", answer: "Não precisa. No estudo de Baz-Valle e colegas (2019), trocar os exercícios a cada sessão deu ganhos de músculo parecidos com manter os mesmos, com mais motivação para treinar. Mas quem troca o tempo todo perde a referência de carga. Manter o exercício por algumas semanas deixa ver se a carga está subindo." },
+    ],
+    content: `<p>"Quantos exercícios eu faço para peito?" A pergunta parece pedir um número, mas o número de exercícios é consequência. O que o músculo conta é quantas séries ele recebe na semana e o quanto cada uma chegou perto da falha. Com essa conta feita, o número de exercícios sai sozinho.</p>
+
+<h2>Quantos exercícios por músculo é o ideal?</h2>
+
+<p>Para a maioria das pessoas, <strong>1 a 3 exercícios por músculo em cada treino</strong>. Mais do que isso costuma significar séries no fim do treino feitas cansadas, longe da falha, que contam pouco.</p>
+
+<p>A meta-análise de <a href="https://pubmed.ncbi.nlm.nih.gov/27433992/" target="_blank" rel="noopener noreferrer">Schoenfeld, Ogborn e Krieger (2017)</a> encontrou uma relação dose-resposta: mais séries semanais por músculo, mais hipertrofia. Quanto vale cada faixa de séries está em <a href="/blog/quantas-series-para-hipertrofia">quantas séries fazer para hipertrofia</a>. Aqui o assunto é o passo seguinte: como transformar essas séries em exercícios.</p>
+
+<h2>A conta: das séries semanais ao número de exercícios</h2>
+
+<p>São três números:</p>
+<ol>
+<li><strong>Séries do músculo na semana</strong> (por exemplo, 12 de peito);</li>
+<li><strong>Quantas vezes o músculo treina na semana</strong> (por exemplo, 2);</li>
+<li><strong>Séries por exercício</strong> (o comum é 2 a 4).</li>
+</ol>
+
+<p>12 séries ÷ 2 treinos = 6 séries por treino. Com 3 séries por exercício, são <strong>2 exercícios de peito em cada treino</strong>. Se o mesmo peito treinasse só uma vez na semana, as 12 séries cairiam num dia só: 4 exercícios de 3 séries, e os últimos tendem a sair piores.</p>
+
+<table>
+<thead><tr><th>Séries na semana</th><th>Treinos do músculo</th><th>Séries por treino</th><th>Exercícios por treino (3 séries cada)</th></tr></thead>
+<tbody>
+<tr><td>9</td><td>3 (full body)</td><td>3</td><td>1</td></tr>
+<tr><td>12</td><td>2</td><td>6</td><td>2</td></tr>
+<tr><td>12</td><td>1</td><td>12</td><td>4</td></tr>
+<tr><td>18</td><td>2</td><td>9</td><td>3</td></tr>
+</tbody>
+</table>
+
+<p>A tabela é aritmética, não regra. Para fazer a conta com o seu treino de verdade, exercício por exercício, use a <a href="/ferramentas/calculadora-volume-treino">calculadora de volume de treino</a>.</p>
+
+<h2>Músculo grande precisa de mais exercícios?</h2>
+
+<p>Não pelo tamanho, e sim pelas funções. Costas puxam de cima para baixo e de frente para trás; quadríceps trabalha no agachamento e na cadeira extensora de jeitos diferentes. Músculos com mais funções pedem exercícios que cubram cada uma, e por isso costumam ficar com 2 ou 3 exercícios por treino. Bíceps, tríceps e panturrilha costumam fechar o volume com 1 ou 2.</p>
+
+<p>Conta também o que os compostos já fazem. Supino trabalha tríceps; remada e puxada trabalham bíceps. Quem já faz vários compostos no dia muitas vezes precisa de só um isolado para os braços.</p>
+
+<h2>Quando vale ter exercícios diferentes para o mesmo músculo</h2>
+
+<p>Quando eles trabalham o músculo de formas realmente diferentes. Dois exemplos medidos em estudo:</p>
+<ul>
+<li>No estudo de <a href="https://pubmed.ncbi.nlm.nih.gov/24832974/" target="_blank" rel="noopener noreferrer">Fonseca e colegas (2014)</a>, quem fez só agachamento por 12 semanas não teve aumento significativo em duas porções do quadríceps (vasto medial e reto femoral). Quem variou os exercícios cresceu em todas as porções.</li>
+<li>No de <a href="https://pubmed.ncbi.nlm.nih.gov/35819335/" target="_blank" rel="noopener noreferrer">Maeo e colegas (2023)</a>, a extensão de cotovelo com o braço acima da cabeça fez a cabeça longa do tríceps crescer 1,5 vez mais do que a mesma extensão com o braço ao lado do corpo.</li>
+</ul>
+
+<p>A revisão de <a href="https://pubmed.ncbi.nlm.nih.gov/35438660/" target="_blank" rel="noopener noreferrer">Kassiano e colegas (2022)</a> juntou os estudos sobre o tema e chegou a um meio-termo: variar de forma planejada ajuda a hipertrofia regional, mas exercícios redundantes (três tipos de supino reto, por exemplo) e trocas excessivas podem atrapalhar.</p>
+
+<h2>Trocar de exercício toda semana ajuda?</h2>
+
+<p>Não é necessário. No estudo de <a href="https://pubmed.ncbi.nlm.nih.gov/31881066/" target="_blank" rel="noopener noreferrer">Baz-Valle e colegas (2019)</a>, homens treinados que tinham os exercícios trocados por sorteio a cada sessão ganharam músculo e força de forma parecida com quem manteve os mesmos exercícios, e ficaram mais motivados para treinar.</p>
+
+<p>Na prática, o que pesa contra trocar toda hora é perder a referência: se o exercício muda toda semana, não dá para saber se a carga está subindo. Manter os mesmos exercícios por algumas semanas e mudar quando a carga parar de subir, ou quando um exercício não encaixar no seu corpo, costuma funcionar melhor. Para trocar mantendo o mesmo estímulo, veja o <a href="/ferramentas/substituidor-de-exercicios">substituidor de exercícios</a>.</p>
+
+<h2>Quantos exercícios por músculo no full body e na divisão</h2>
+
+<ul>
+<li><strong>Full body (2 ou 3 vezes por semana):</strong> 1 exercício por músculo por sessão, às vezes 2 para costas e pernas. Dá para usar exercícios diferentes em cada dia.</li>
+<li><strong>Upper/lower ou ABC com o músculo 2 vezes na semana:</strong> 2 exercícios por músculo por treino, 3 para os de mais funções.</li>
+<li><strong>Divisão com o músculo 1 vez na semana:</strong> 3 ou 4 exercícios no dia. Funciona, mas o fim do treino tende a render menos.</li>
+</ul>
+
+<p>Para escolher a divisão antes de contar os exercícios, veja <a href="/blog/full-body-vs-divisao-abc">full body ou divisão ABC</a>. Os exercícios de cada grupo, com o que cada um trabalha, estão no <a href="/exercicios">mapa muscular</a>.</p>
+
+<h2>Sinais de que você está fazendo exercícios demais</h2>
+
+<ul>
+<li>A última série de cada exercício sai bem mais fraca que a primeira, semana após semana;</li>
+<li>O treino passa de 1h30 e você chega no fim sem conseguir puxar carga;</li>
+<li>A carga parou de subir em quase todos os exercícios ao mesmo tempo;</li>
+<li>Você faz três versões do mesmo movimento (supino reto com barra, com halteres e na máquina) no mesmo dia.</li>
+</ul>
+
+<p>É aí que entra o acompanhamento: quando a carga para de subir ou um exercício não encaixa, alguém precisa olhar o treino inteiro e decidir o que tirar, o que manter e o que trocar. A pessoa faz a parte dela no treino, e o ajuste vem de quem está vendo a evolução de fora.</p>
+`,
+  },
+  {
     slug: "quanto-custa-um-personal-trainer",
     title: "Quanto Custa um Personal Trainer? Preço por Hora e por Mês",
     metaTitle: "Quanto Custa um Personal Trainer? Preço por Hora e por Mês",

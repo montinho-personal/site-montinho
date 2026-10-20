@@ -1112,3 +1112,11 @@ A lista completa dos Pro Cards e os overall de Wellness, Bikini e Men's Physique
 `mr-olympia-brasil-2026`: corrigido o "campeonato só amador" (teve divisão profissional em 212, Bikini e Classic) e incluídos os vencedores na seção de resultado. updatedAt 2026-10-19.
 metaDescription do resultado ainda diz "atualizada assim que saírem". A troca depende de aprovação (ATUAL/PROPOSTA/MOTIVO).
 - 19/10 (aprovado pelo Montinho): metaDescription de `resultado-mr-olympia-brasil-2026` ATUAL "…Página atualizada com os campeões assim que saírem." → "Resultado do Mr. Olympia Brasil 2026: Vitor Porto (212), Nívea Campos (Bikini) e Livinho (Classic Physique) campeões. Pódios e os 24 Pro Cards." Motivo: o resultado saiu, e o snippet já responde quem ganhou. Sem updatedAt (só descrição).
+
+## 2026-10-20 — Artigo novo: quantos exercícios por músculo
+
+`quantos-exercicios-por-musculo`. Canibalização conferida com hífen e acento normalizados: os temas próximos são `quantas-series-para-hipertrofia` e `volume-de-treino-ideal`, que falam de séries; este parte delas e chega ao número de exercícios.
+- Prints do Montinho (20/10). Autocompletar: por dia, por semana, é o ideal, para hipertrofia, devo fazer, no full body, na academia, diferentes. PAA: 3 ou 4 séries, 1 kg de músculo em 1 mês, quantidade para cada músculo, 4x10 ou 3x12. A visão geral por IA cita Growth Blog (3–4 exercícios para músculos grandes, 2–3 para pequenos). Na SERP aparece vídeo do Laércio Refundini.
+- H2 e FAQ saíram dessas intenções. Os números vêm de Schoenfeld 2017 (dose-resposta), Kassiano 2022 (variação planejada), Fonseca 2014 (só agachamento), Maeo 2023 (tríceps acima da cabeça) e Baz-Valle 2019 (troca a cada sessão), todos conferidos no PubMed. A faixa "1 a 3 por treino" é a aritmética do artigo, não número de estudo.
+- Ferramenta: o leitor sai com uma conta na cabeça. O embed da Calculadora de Volume está no teto de 8, então entra a variante de link (`ARTIGOS_COM_LINK_VOLUME`).
+- Fora, como pauta: "é possível ganhar 1 kg de músculo em 1 mês" (cabe no simulador de ganho de massa). O PDF ou imagem de "exercícios por músculo" já estava anotado como pauta de isca.
