@@ -992,6 +992,15 @@ export function buildCardapioWhatsApp(dados: {
   );
 }
 
+/**
+ * Quem multiplica os macros por 4/4/9 chega a um número um pouco diferente
+ * das calorias mostradas (até ~3% no dia, auditoria de 21/10/2026). Não é
+ * erro: a caloria vem da TACO, alimento por alimento, com fatores próprios,
+ * e o carboidrato da tabela inclui a fibra, que rende menos energia.
+ */
+export const NOTA_MACROS_KCAL =
+  "As calorias vêm direto da tabela TACO, alimento por alimento. Se você fizer a conta pelos macros (proteína × 4, carboidrato × 4, gordura × 9), o resultado pode sair um pouco diferente, em geral até 3%: a fibra entra no carboidrato mas rende menos energia, e cada alimento tem seus próprios fatores de conversão.";
+
 export const NOTA_TOLERANCIA =
   "O total do dia não bate a meta no centavo de propósito: as porções são caseiras (1 ovo, 1 concha), e uma diferença de até 8% é menor que a variação normal de quem pesa comida. Referência é para orientar, não para escravizar.";
 
