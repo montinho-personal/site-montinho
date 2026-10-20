@@ -810,6 +810,30 @@ export function diferencaTotais(antes: Metas, depois: Metas): Metas {
   return { kcal: depois.kcal - antes.kcal, prot: depois.prot - antes.prot, carb: depois.carb - antes.carb, gord: depois.gord - antes.gord };
 }
 
+/**
+ * A pessoa digita a quantidade em gramas (ex.: 120 g de arroz em vez de
+ * 150 g). A porção vira g ÷ peso da porção caseira, sem prender ao passo:
+ * aqui ela manda, como no +/−, e o motor não reequilibra o dia (o quadro de
+ * mudança mostra o efeito). Limites: de 5 g até o dobro do teto do motor.
+ * Pedido do Montinho, 21/10/2026.
+ */
+export const GRAMAS_MIN = 5;
+export function gramasMax(a: AlimentoCardapio): number {
+  return Math.round(a.porcao.g * a.maxPorcoes * 2);
+}
+export function definePeso(c: CardapioDia, refeicaoIdx: number, alimentoId: string, gramas: number): CardapioDia {
+  const a = ALIMENTO_CARDAPIO_POR_ID.get(alimentoId);
+  if (!a || !Number.isFinite(gramas)) return c;
+  const g = Math.min(gramasMax(a), Math.max(GRAMAS_MIN, Math.round(gramas)));
+  return {
+    ...c,
+    refeicoes: c.refeicoes.map((r, i) => ({
+      ...r,
+      itens: r.itens.map((it) => (i !== refeicaoIdx || it.alimentoId !== alimentoId ? { ...it } : { ...it, porcoes: g / a.porcao.g })),
+    })),
+  };
+}
+
 export const SEM_ALTERNATIVA =
   "Não encontrei uma substituição boa o suficiente para manter esta refeição perto da sua meta. Escolha outro alimento da lista ou ajuste a refeição.";
 

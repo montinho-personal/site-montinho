@@ -210,6 +210,14 @@ export function nutrientes(a: AlimentoCardapio, porcoes: number) {
 /** Rótulo humano: "2 ovos", "1,5 escumadeira (~150 g)". */
 export function rotuloPorcao(a: AlimentoCardapio, porcoes: number): string {
   const g = Math.round(a.porcao.g * porcoes);
+  /*
+   * Quantidade digitada em gramas (fora da grade de meia porção): o número
+   * que a pessoa escolheu vem primeiro, e a porção caseira fica de referência.
+   */
+  if (Math.abs(porcoes * 2 - Math.round(porcoes * 2)) > 1e-9) {
+    const ref = a.porcao.rotulo.replace(/^1\s+/, "");
+    return `${g} g (≈ ${porcoes.toFixed(1).replace(".", ",")}× ${ref})`;
+  }
   const n = Number.isInteger(porcoes) ? String(porcoes) : porcoes.toFixed(1).replace(".", ",");
   /**
    * Pluralização: "1 filé médio" → "2 filés médios". Cada palavra recebe o
