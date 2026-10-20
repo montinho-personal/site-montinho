@@ -41,6 +41,9 @@ import {
   excluiItem,
   ajustaPorcao,
   adicionaItem,
+  definePeso,
+  gramasMax,
+  GRAMAS_MIN,
   opcoesParaAdicionar,
   diferencaTotais,
   geraCardapio,
@@ -131,6 +134,8 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
   /** Refeição com a lista de "adicionar alimento" aberta, e o filtro digitado. */
   const [adicionando, setAdicionando] = useState<number | null>(null);
   const [buscaAdicionar, setBuscaAdicionar] = useState("");
+  /** Gramas sendo digitadas num item (chave = refeição-alimento). Só vale enquanto o campo está em foco. */
+  const [gramasDigitadas, setGramasDigitadas] = useState<{ chave: string; valor: string } | null>(null);
   /**
    * A última mudança feita na mão (trocar, adicionar, mais/menos, excluir):
    * em qual refeição, o que foi e como estava o dia antes. É o que alimenta
@@ -881,6 +886,38 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                               {rotuloPorcao(a, it.porcoes)} de <strong className="text-white font-medium">{a.nome.toLowerCase()}</strong>
                             </span>
                             <span className="flex items-center gap-3 shrink-0 ml-auto print:hidden">
+                              {/* Quantidade exata em gramas: digita e confirma (Enter ou sair do campo). */}
+                              {(() => {
+                                const gAtual = Math.round(a.porcao.g * it.porcoes);
+                                const editando = gramasDigitadas?.chave === chaveTroca;
+                                const confirma = () => {
+                                  if (!gramasDigitadas || gramasDigitadas.chave !== chaveTroca) return;
+                                  const g = Number(gramasDigitadas.valor.replace(",", "."));
+                                  setGramasDigitadas(null);
+                                  if (!Number.isFinite(g) || g <= 0 || Math.round(g) === gAtual) return;
+                                  const final = Math.min(gramasMax(a), Math.max(GRAMAS_MIN, Math.round(g)));
+                                  marcaMudanca(ri, `Mudou ${a.nome.toLowerCase()} para ${final} g`);
+                                  setCardapio((cc) => (cc ? definePeso(cc, ri, it.alimentoId, final) : cc));
+                                  setVariedade(null);
+                                  trackEvent("meal_grams_edited", { placement });
+                                };
+                                return (
+                                  <label className="flex items-center gap-1 text-gray-400 text-xs">
+                                    <input
+                                      type="text"
+                                      inputMode="numeric"
+                                      value={editando ? gramasDigitadas!.valor : String(gAtual)}
+                                      onFocus={(ev) => { setGramasDigitadas({ chave: chaveTroca, valor: String(gAtual) }); ev.currentTarget.select(); }}
+                                      onChange={(ev) => setGramasDigitadas({ chave: chaveTroca, valor: ev.target.value.replace(/[^\d,.]/g, "").slice(0, 5) })}
+                                      onBlur={confirma}
+                                      onKeyDown={(ev) => { if (ev.key === "Enter") (ev.currentTarget as HTMLInputElement).blur(); }}
+                                      aria-label={`Gramas de ${a.nome.toLowerCase()} no ${r.nome.toLowerCase()}`}
+                                      className="w-14 h-9 bg-transparent border border-white/25 text-white text-sm text-center focus:outline-none focus:border-[#BA9E50]"
+                                    />
+                                    g
+                                  </label>
+                                );
+                              })()}
                               {/* Quantidade na mão: um passo de porção caseira, sem reequilibrar o dia. */}
                               <span className="flex items-center" role="group" aria-label={`Quantidade de ${a.nome.toLowerCase()} no ${r.nome.toLowerCase()}`}>
                                 {([[-1, "−", "Menos"], [1, "+", "Mais"]] as const).map(([d, sinal, nome]) => (

@@ -143,7 +143,7 @@ export const ALIMENTOS_CARDAPIO: AlimentoCardapio[] = [
   /**
    * Os números são os do ovo cozido: mexido sem gordura na frigideira
    * antiaderente. Feito com óleo ou manteiga, ele chega perto do ovo frito
-   * da TACO (240 kcal por 100 g). A auditoria de 21/10/2026 achou o nome
+   * da TACO (240 kcal por 100 g). A auditoria de 20/10/2026 achou o nome
    * genérico prometendo mais do que o número; o nome agora diz o preparo, e
    * quem usa óleo acrescenta o azeite como item.
    */
@@ -210,6 +210,14 @@ export function nutrientes(a: AlimentoCardapio, porcoes: number) {
 /** Rótulo humano: "2 ovos", "1,5 escumadeira (~150 g)". */
 export function rotuloPorcao(a: AlimentoCardapio, porcoes: number): string {
   const g = Math.round(a.porcao.g * porcoes);
+  /*
+   * Quantidade digitada em gramas (fora da grade de meia porção): o número
+   * que a pessoa escolheu vem primeiro, e a porção caseira fica de referência.
+   */
+  if (Math.abs(porcoes * 2 - Math.round(porcoes * 2)) > 1e-9) {
+    const ref = a.porcao.rotulo.replace(/^1\s+/, "");
+    return `${g} g (≈ ${porcoes.toFixed(1).replace(".", ",")}× ${ref})`;
+  }
   const n = Number.isInteger(porcoes) ? String(porcoes) : porcoes.toFixed(1).replace(".", ",");
   /**
    * Pluralização: "1 filé médio" → "2 filés médios". Cada palavra recebe o

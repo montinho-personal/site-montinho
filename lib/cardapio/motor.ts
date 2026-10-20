@@ -554,7 +554,7 @@ export function geraCardapio(pedido: PedidoCardapio): CardapioDia {
      * prato). Antes, a gordura ficava abaixo do limite duro e o motor
      * compensava com o pouco de gordura das carnes magras: um cardápio de
      * 2.100 kcal saiu com 236 g de proteína para meta de 144 g (caso do
-     * Montinho, 21/10/2026). Como todo extra, ele some se não for preciso.
+     * Montinho, 20/10/2026). Como todo extra, ele some se não for preciso.
      */
     const fonte =
       candidatos(r.momento, pedido).find((a) => a.grupo === "gordura" && !r.itens.some((it) => it.alimentoId === a.id)) ??
@@ -773,7 +773,7 @@ export function ajustaPorcao(c: CardapioDia, refeicaoIdx: number, alimentoId: st
  * O que a pessoa pode acrescentar numa refeição: tudo o que cabe na dieta e
  * nas restrições e ainda não está no prato. Os marcados como habituais vêm
  * primeiro, depois os que combinam com o momento, depois o resto do banco —
- * a escolha é dela (pedido do Montinho, 21/10/2026).
+ * a escolha é dela (pedido do Montinho, 20/10/2026).
  */
 export function opcoesParaAdicionar(momento: Momento, pedido: PedidoCardapio, jaNaRefeicao: string[]): AlimentoCardapio[] {
   const sel = selecionados(momento, pedido);
@@ -808,6 +808,30 @@ export function adicionaItem(c: CardapioDia, refeicaoIdx: number, alimentoId: st
 /** Diferença entre dois totais (o que a última mudança fez no dia). */
 export function diferencaTotais(antes: Metas, depois: Metas): Metas {
   return { kcal: depois.kcal - antes.kcal, prot: depois.prot - antes.prot, carb: depois.carb - antes.carb, gord: depois.gord - antes.gord };
+}
+
+/**
+ * A pessoa digita a quantidade em gramas (ex.: 120 g de arroz em vez de
+ * 150 g). A porção vira g ÷ peso da porção caseira, sem prender ao passo:
+ * aqui ela manda, como no +/−, e o motor não reequilibra o dia (o quadro de
+ * mudança mostra o efeito). Limites: de 5 g até o dobro do teto do motor.
+ * Pedido do Montinho, 20/10/2026.
+ */
+export const GRAMAS_MIN = 5;
+export function gramasMax(a: AlimentoCardapio): number {
+  return Math.round(a.porcao.g * a.maxPorcoes * 2);
+}
+export function definePeso(c: CardapioDia, refeicaoIdx: number, alimentoId: string, gramas: number): CardapioDia {
+  const a = ALIMENTO_CARDAPIO_POR_ID.get(alimentoId);
+  if (!a || !Number.isFinite(gramas)) return c;
+  const g = Math.min(gramasMax(a), Math.max(GRAMAS_MIN, Math.round(gramas)));
+  return {
+    ...c,
+    refeicoes: c.refeicoes.map((r, i) => ({
+      ...r,
+      itens: r.itens.map((it) => (i !== refeicaoIdx || it.alimentoId !== alimentoId ? { ...it } : { ...it, porcoes: g / a.porcao.g })),
+    })),
+  };
 }
 
 export const SEM_ALTERNATIVA =
@@ -1004,7 +1028,7 @@ export function buildCardapioWhatsApp(dados: {
 
 /**
  * Quem multiplica os macros por 4/4/9 chega a um número um pouco diferente
- * das calorias mostradas (até ~3% no dia, auditoria de 21/10/2026). Não é
+ * das calorias mostradas (até ~3% no dia, auditoria de 20/10/2026). Não é
  * erro: a caloria vem da TACO, alimento por alimento, com fatores próprios,
  * e o carboidrato da tabela inclui a fibra, que rende menos energia.
  */

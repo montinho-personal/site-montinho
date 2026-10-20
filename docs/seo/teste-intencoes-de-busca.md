@@ -1135,10 +1135,10 @@ metaDescription do resultado ainda diz "atualizada assim que saírem". A troca d
 - Fontes, conferidas no PubMed: Schoenfeld 2016 (2x é melhor que 1x; 3x contra 2x ficou em aberto) e Schoenfeld, Grgic e Krieger 2019 (com o mesmo volume, sem diferença, inclusive em membros inferiores).
 - Ferramenta: link para a Calculadora de Volume (`ARTIGOS_COM_LINK_VOLUME`).
 
-## 2026-10-21 — ramon-dino-peso-altura (prints)
+## 2026-10-20 — ramon-dino-peso-altura (prints)
 
 GSC 28 dias: 9.285 impressões, 6 cliques, posição 14. "ramon dino altura" e variações somam cerca de 3 mil impressões; "peso", cerca de 1 mil.
-- Prints (21/10). Autocompletar: altura e peso, cm, idade, real, antes e depois, fisiculturista altura. PAA: altura e peso, altura de Cbum e Ramon Dino, salário, quem é o fisiculturista de 1,73 m. Outras pessoas pesquisaram: Cbum altura, idade, natural, antes e depois, 16 anos, off season, Cbum, fortuna, começou a treinar com quantos anos. A visão geral por IA usa Wikipédia e GE (1,81 m, 102–103 kg, 9/2/1995). Na SERP: GE "Ramon Dino: altura, idade, peso e história".
-- Entraram: H2 de altura (181 cm), idade e início aos 14 anos (CNN Brasil e Terra), tabela de altura Ramon x Cbum (1,85 m, CNN Brasil e Hipertrofia.org) e 5 FAQs. updatedAt 2026-10-21.
+- Prints (20/10). Autocompletar: altura e peso, cm, idade, real, antes e depois, fisiculturista altura. PAA: altura e peso, altura de Cbum e Ramon Dino, salário, quem é o fisiculturista de 1,73 m. Outras pessoas pesquisaram: Cbum altura, idade, natural, antes e depois, 16 anos, off season, Cbum, fortuna, começou a treinar com quantos anos. A visão geral por IA usa Wikipédia e GE (1,81 m, 102–103 kg, 9/2/1995). Na SERP: GE "Ramon Dino: altura, idade, peso e história".
+- Entraram: H2 de altura (181 cm), idade e início aos 14 anos (CNN Brasil e Terra), tabela de altura Ramon x Cbum (1,85 m, CNN Brasil e Hipertrofia.org) e 5 FAQs. updatedAt 2026-10-20.
 - Fora: peso fora de temporada em número (Wikipédia 118 kg x CNN 122 kg, sem número oficial), salário e fortuna (sem fonte), "natural" (afirmação que não dá para verificar), "antes e depois" (as fotos são de terceiros) e "1,73 m" (outro atleta).
 - Título e descrição: proposta ATUAL/PROPOSTA/MOTIVO enviada ao Montinho para aprovação.
