@@ -507,7 +507,8 @@ ${FONTES}`,
       "Ramon Dino tem 1,81 m e pesou 102,5 kg na pesagem do Mr. Olympia 2026, 500 g abaixo do limite de 103 kg. O que é esse limite, por que existe e como o peso muda ao longo do ano.",
     category: "Fisiculturismo",
     date: DATA,
-    readTime: "5 min",
+    updatedAt: "2026-10-21",
+    readTime: "6 min",
     author: AUTOR,
     tags: ["Ramon Dino", "peso", "altura", "Classic Physique", "limite de peso"],
     content: `<p><strong>Ramon Dino tem 1,81 m de altura e pesou 102,5 kg na pesagem oficial do Mr. Olympia 2026</strong>, realizada em 23 de setembro de 2026 em Las Vegas — 500 gramas abaixo do limite de <strong>103 kg</strong> que a IFBB Pro League permite para a altura dele na Classic Physique. Esse é o peso que vale: o de palco, medido na véspera da competição.</p>
@@ -522,6 +523,20 @@ ${CAPA("ramon-dino-peso-altura", "Capa: quanto pesa Ramon Dino — 102,5 kg na p
 <tr><td>Categoria</td><td>Classic Physique</td><td>—</td></tr>
 <tr><td>Principais resultados</td><td>Mr. Olympia Classic Physique 2025 (campeão); Arnold Classic Ohio 2023 (campeão) e 2024 (vice, atrás de Wesley Vissers)</td><td>—</td></tr>
 </tbody></table>
+
+<h2>Qual a altura de Ramon Dino?</h2>
+<p><strong>1,81 m, ou 181 cm.</strong> É a altura que define o teto de peso dele na Classic Physique: para essa faixa, a IFBB Pro League permite até 103 kg no dia da pesagem.</p>
+
+<h2>Quantos anos tem Ramon Dino e com quantos anos começou a treinar?</h2>
+<p>Ramon nasceu em 9 de fevereiro de 1995, em Rio Branco (AC), e tem <strong>31 anos</strong>. Ele entrou na academia aos <strong>14 anos</strong>, mas saiu no mês seguinte por falta de dinheiro e passou a treinar com o peso do corpo em praças da cidade, como contou à <a href="https://www.cnnbrasil.com.br/esportes/outros-esportes/casa-alagada-e-treino-na-rua-ramon-dino-relembra-comeco-antes-do-mr-olympia/" target="_blank" rel="noopener noreferrer">CNN Brasil</a> e ao <a href="https://www.terra.com.br/esportes/dinossauro-acreano-saiba-quem-e-ramon-dino-fisiculturista-brasileiro-favorito-no-mr-olympia-2025,8d9902bf03fae2ef2ecfc305b2d48839bk8be7py.html" target="_blank" rel="noopener noreferrer">Terra</a>.</p>
+
+<h2>Altura de Ramon Dino e Cbum</h2>
+<table><thead><tr><th></th><th>Ramon Dino</th><th>Chris Bumstead (Cbum)</th></tr></thead><tbody>
+<tr><td>Altura</td><td>1,81 m</td><td>1,85 m</td></tr>
+<tr><td>Categoria</td><td>Classic Physique</td><td>Classic Physique (aposentado em 2024)</td></tr>
+<tr><td>Olympia na Classic</td><td>Campeão em 2025</td><td>Campeão de 2019 a 2024</td></tr>
+</tbody></table>
+<p>Cbum é 4 cm mais alto, e por isso entrava numa faixa de peso maior da tabela da Classic. É uma das razões de a comparação entre os dois no palco ser mais apertada do que a balança sugere. A altura de Cbum é a informada pela <a href="https://stories.cnnbrasil.com.br/esportes/cbum-saiba-altura-peso-e-idade-do-algoz-de-ramon-dino-no-mr-olympia/" target="_blank" rel="noopener noreferrer">CNN Brasil</a> e pelo <a href="https://www.hipertrofia.org/blog/2023/08/31/chris-bumstead-cbum/" target="_blank" rel="noopener noreferrer">Hipertrofia.org</a>.</p>
 
 <h2>Peso de palco não é peso do ano inteiro</h2>
 <p>Os 102,5 kg são o peso do dia da pesagem, depois de meses de preparação e da fase final de perda de água e gordura. Fora de temporada, o peso de um atleta de Classic Physique costuma ficar vários quilos acima, porque o objetivo do off-season é construir músculo, não estar definido. Por isso todo número sobre "quanto pesa Ramon Dino" precisa vir com a data: o peso de junho e o de setembro são de fases diferentes da mesma preparação. Quando a imprensa cita 103 kg "em temporada de competição", está falando do teto que ele mira na pesagem.</p>
@@ -560,6 +575,11 @@ ${FONTES}`,
     faq: [
       { question: "Quanto pesa Ramon Dino?", answer: "Na pesagem oficial do Mr. Olympia 2026, em 23 de setembro, 102,5 kg. Fora de temporada o peso é maior, por isso todo número vem com a data." },
       { question: "Qual é a altura de Ramon Dino?", answer: "1,81 m. Para essa altura, o limite de peso da Classic Physique na IFBB Pro League é 103 kg (227 libras)." },
+      { question: "Qual a altura de Ramon Dino em cm?", answer: "181 cm." },
+      { question: "Qual a idade de Ramon Dino?", answer: "31 anos. Ele nasceu em 9 de fevereiro de 1995, em Rio Branco, no Acre." },
+      { question: "Ramon Dino começou a treinar com quantos anos?", answer: "Aos 14 anos. Saiu da academia no mês seguinte por falta de dinheiro e continuou treinando com o peso do corpo em praças de Rio Branco, segundo relatos dele à CNN Brasil e ao Terra." },
+      { question: "Qual a altura de Cbum e Ramon Dino?", answer: "Chris Bumstead (Cbum) tem 1,85 m e Ramon Dino tem 1,81 m. Os dois competiram na Classic Physique; Cbum se aposentou em 2024." },
+      { question: "Quanto pesa Ramon Dino fora de temporada?", answer: "Não há número oficial: as fontes divergem e o peso muda ao longo do ano. O número confirmado é o da pesagem do Olympia 2026, 102,5 kg." },
       { question: "Qual é o limite de peso da Classic Physique?", answer: "Depende da altura: a IFBB Pro League define um peso máximo para cada faixa, revisado em 2025. Para 1,81 m, o teto é 103 kg. A tabela completa está nas regras oficiais da liga." },
       { question: "Por que existe limite de peso na Classic Physique?", answer: "Para preservar a proposta da categoria — proporção, cintura fina e linhas clássicas — e manter a comparação justa entre alturas diferentes. Sem o limite, ela viraria um Open menor." },
       { question: "Ramon Dino já foi campeão do Mr. Olympia?", answer: "Sim, em 2025, na Classic Physique, o primeiro brasileiro a vencer o Olympia. Antes foi vice em 2022 e 2023, quarto em 2024 e quinto em 2021." },
