@@ -95,9 +95,9 @@ export const OLYMPIA_BRASIL_EXPO_2026_POSTS: BlogPost[] = [
   {
     slug: "mr-olympia-brasil-2026",
     title: "Mr. Olympia Brasil 2026: data, ingressos, programação e como chegar ao Anhembi",
-    metaTitle: "Mr. Olympia Brasil 2026: Data, Ingressos e Programação",
+    metaTitle: "Mr. Olympia Brasil 2026: Como Foi, Data e Programação",
     metaDescription:
-      "O Mr. Olympia Brasil 2026 acontece de 16 a 18 de outubro no Distrito Anhembi, em São Paulo. Veja data, onde comprar ingresso, programação, modalidades, como chegar e a diferença para o Olympia de Las Vegas.",
+      "O Mr. Olympia Brasil 2026 foi de 16 a 18/10 no Distrito Anhembi. Veja como foi a programação, as modalidades e o link para o resultado com os campeões.",
     excerpt:
       "De 16 a 18 de outubro no Distrito Anhembi: data, ingressos, programação, modalidades, como chegar e o que muda em relação ao Olympia de Las Vegas.",
     category: "Fisiculturismo",
