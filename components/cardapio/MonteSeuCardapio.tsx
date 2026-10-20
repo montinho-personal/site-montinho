@@ -26,6 +26,7 @@ import {
   MENSAGEM_FALTA_GORDURA,
   MENSAGEM_META_BAIXA,
   NOTA_TOLERANCIA,
+  NOTA_MACROS_KCAL,
   OBJETIVOS,
   ORIENTACAO_ESPECIAL,
   ORIENTACAO_POR_SITUACAO,
@@ -1502,6 +1503,7 @@ function ResumoDia({ cardapio }: { cardapio: CardapioDia }) {
     ["Gorduras", t.gord, cardapio.metaGord, "g"],
   ];
   return (
+    <div>
     <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
       {linhas.map(([nome, previsto, meta, un]) => (
         <div key={nome} className="border border-white/15 p-4">
@@ -1513,6 +1515,8 @@ function ResumoDia({ cardapio }: { cardapio: CardapioDia }) {
           {meta > 0 && <p className="text-gray-500 text-xs mt-1">meta ≈ {Math.round(meta)} {un}</p>}
         </div>
       ))}
+    </div>
+    <p className="text-gray-500 text-xs leading-relaxed mt-2 max-w-2xl">{NOTA_MACROS_KCAL}</p>
     </div>
   );
 }
