@@ -1120,3 +1120,10 @@ metaDescription do resultado ainda diz "atualizada assim que saírem". A troca d
 - H2 e FAQ saíram dessas intenções. Os números vêm de Schoenfeld 2017 (dose-resposta), Kassiano 2022 (variação planejada), Fonseca 2014 (só agachamento), Maeo 2023 (tríceps acima da cabeça) e Baz-Valle 2019 (troca a cada sessão), todos conferidos no PubMed. A faixa "1 a 3 por treino" é a aritmética do artigo, não número de estudo.
 - Ferramenta: o leitor sai com uma conta na cabeça. O embed da Calculadora de Volume está no teto de 8, então entra a variante de link (`ARTIGOS_COM_LINK_VOLUME`).
 - Fora, como pauta: "é possível ganhar 1 kg de músculo em 1 mês" (cabe no simulador de ganho de massa). O PDF ou imagem de "exercícios por músculo" já estava anotado como pauta de isca.
+
+## 2026-10-20 — Artigo novo: treino de abdômen rápido
+
+`treino-de-abdomen-rapido`, aprovado pelo Montinho como artigo próprio, e não como seção do `treino-de-abdomen-em-casa`. A maior parte das buscas é de academia (na academia, na polia, com halteres), e o artigo de casa não responde a isso.
+- Prints (20/10). Autocompletar: feminino, na academia, com halteres, para iniciantes, na polia, em casa. PAA: 4 melhores treinos, 3 exercícios, como pegar abdômen rapidamente, o que 1 minuto de prancha faz. A visão geral por IA cita Tua Saúde (5 a 10 min, circuito 40/20). Na SERP: TotalPass, GE e Hipertrofia.org.
+- O artigo linka em-casa, prancha, quantos abdominais, gordura abdominal, diástase e a calculadora de déficit. Gordura localizada: Vispute 2011, conferido no PubMed.
+- Ferramenta: ARTIGOS_SEM_FERRAMENTA, porque o leitor sai com o treino e não com uma conta. Recebe o cartão do mapa muscular (/exercicios/abdomen).
