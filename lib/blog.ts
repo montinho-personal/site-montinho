@@ -85371,7 +85371,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     author: "Montinho",
     tags: ["academia 24 horas","barueri","treino de madrugada","horário estendido","musculação"],
     faqSchema: [
-      { question: "Tem academia 24 horas em Barueri?", answer: "Tem, no lado de Alphaville: Gaviões 24h, Ironberg e Arena 18 abrem 24 horas. No Centro de Barueri, não há academia 24h confirmada em fonte oficial; a Smart Fit do Centro fecha à meia-noite." },
+      { question: "Tem academia 24 horas em Barueri?", answer: "Tem, no lado de Alphaville: Gaviões 24h e Ironberg abrem 24 horas. No Centro de Barueri, não há academia 24h confirmada em fonte oficial; a Smart Fit do Centro fecha à meia-noite." },
       { question: "Onde ficam as academias com horário estendido em Barueri?", answer: "Elas costumam se concentrar em regiões de grande circulação, como o Centro de Barueri, os arredores da Estação Barueri da CPTM (Linha 8) e a região de Tamboré. Verifique a unidade mais próxima da sua rota diária." },
       { question: "Quem trabalha em escala consegue manter treino regular?", answer: "Sim, desde que o treino seja planejado para a escala. Programas flexíveis, com sessões que podem ser trocadas de dia sem perder a lógica, funcionam melhor que fichas rígidas de segunda a sexta." },
       { question: "Academia de madrugada em Barueri é segura?", answer: "Depende da unidade. Avalie controle de acesso, câmeras, presença de funcionários, iluminação externa e movimento da rua no horário em que você vai treinar. Faça uma visita nesse horário antes de assinar." },
@@ -85390,16 +85390,15 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>O ciclo é conhecido: você paga a mensalidade, o horário nunca fecha com o seu, as faltas se acumulam e em três meses você cancela se sentindo culpado. <strong>Não foi você que desistiu da academia; foi a academia que desistiu do seu horário.</strong></p>
 <p>Este guia mostra como encontrar <strong>academia 24 horas em Barueri</strong> (ou com horário estendido de verdade), o que verificar antes de assinar e como treinar bem quando não há professor na sala.</p>
 <h2>Resposta direta</h2>
-<p>As academias que abrem <strong>24 horas de verdade</strong> em Barueri ficam no lado de Alphaville: <strong>Gaviões 24h Alphaville</strong>, <strong>Ironberg Alphaville</strong> e <strong>Arena 18 Alphaville</strong>. No Centro de Barueri, a opção que mais se aproxima é a <strong>Smart Fit Barueri Centro</strong>, mas ela <strong>não é 24 horas</strong>: abre às 5h e fecha à meia-noite nos dias úteis, segundo o site oficial. Horários mudam: confirme no app ou na unidade antes de ir.</p>
+<p>As academias que abrem <strong>24 horas de verdade</strong> em Barueri ficam no lado de Alphaville: <strong>Gaviões 24h Alphaville</strong> e <strong>Ironberg Alphaville</strong>. No Centro de Barueri, a opção que mais se aproxima é a <strong>Smart Fit Barueri Centro</strong>, mas ela <strong>não é 24 horas</strong>: abre às 5h e fecha à meia-noite nos dias úteis, segundo o site oficial. Horários mudam: confirme no app ou na unidade antes de ir.</p>
 
 <h2>Quais academias são 24 horas em Barueri</h2>
 <table>
 <tr><th>Academia</th><th>Onde fica</th><th>Horário</th><th>Fonte</th></tr>
 <tr><td><a href="/blog/academia-gavioes-alphaville">Gaviões 24h Alphaville</a></td><td>Av. Juruá, 253, Alphaville Industrial</td><td>24 horas, todos os dias</td><td>Wellhub e TotalPass (consulta de 21/10/2026)</td></tr>
 <tr><td><a href="/blog/ironberg-alphaville">Ironberg Alphaville</a></td><td>Estrada Aldeinha, 181, Alphaville Industrial</td><td>24 horas, inclusive fim de semana</td><td>Verificação do Montinho, que atende na região</td></tr>
-<tr><td><a href="/blog/arena-18-alphaville">Arena 18 Alphaville</a></td><td>Alphaville Industrial</td><td>24 horas, inclusive fim de semana</td><td>Verificação do Montinho, que atende lá</td></tr>
 </table>
-<p>As três ficam em Alphaville, que é parte do município de Barueri. Quem mora no Centro, no Jardim Silveira ou na Aldeia de Barueri vai depender de carro ou de ônibus para chegar de madrugada. A lista de Alphaville completa está em <a href="/blog/academia-24-horas-alphaville">academia 24 horas em Alphaville</a>.</p>
+<p>As duas ficam em Alphaville, que é parte do município de Barueri. Quem mora no Centro, no Jardim Silveira ou na Aldeia de Barueri vai depender de carro ou de ônibus para chegar de madrugada. A lista de Alphaville completa está em <a href="/blog/academia-24-horas-alphaville">academia 24 horas em Alphaville</a>.</p>
 
 <h2>A Smart Fit Barueri é 24 horas?</h2>
 <p><strong>Não.</strong> As duas unidades de Barueri têm o mesmo horário no site oficial da Smart Fit (consulta de 21/10/2026):</p>
@@ -85416,13 +85415,13 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Academia 24 horas em Barueri: preço e mensalidade</h2>
 <ul>
 <li><strong>Gaviões 24h Alphaville:</strong> não publica tabela; pelo Wellhub entra a partir do plano Silver+.</li>
-<li><strong>Ironberg e Arena 18:</strong> confirme mensalidade e planos direto na unidade; os dois aceitam Wellhub.</li>
+<li><strong>Ironberg Alphaville:</strong> confirme mensalidade e planos direto na unidade; aceita Wellhub.</li>
 <li><strong>Smart Fit Barueri (horário estendido, não 24h):</strong> no site oficial, plano Fit a R$ 139,90/mês e Smart e Black a R$ 159,90/mês, com fidelidade; sem fidelidade, +R$ 20. O Black tem adesão de R$ 29,90 (consulta de 21/10/2026).</li>
 </ul>
 <p>Preço de academia muda com promoção e plano: o valor do dia está no site ou na recepção.</p>
 
 <h2>Academia 24 horas no Centro de Barueri</h2>
-<p>No Centro, não encontrei academia com funcionamento 24 horas confirmado em fonte oficial. Quem treina de madrugada e mora no Centro tem duas saídas: a <strong>Smart Fit Barueri Centro</strong>, se o treino couber entre 5h e meia-noite, ou uma das três de Alphaville. Para quem quer ver tudo o que fica perto, há o guia de <a href="/blog/academias-perto-de-barueri">academias perto de Barueri</a>.</p>
+<p>No Centro, não encontrei academia com funcionamento 24 horas confirmado em fonte oficial. Quem treina de madrugada e mora no Centro tem duas saídas: a <strong>Smart Fit Barueri Centro</strong>, se o treino couber entre 5h e meia-noite, ou uma das duas de Alphaville. Para quem quer ver tudo o que fica perto, há o guia de <a href="/blog/academias-perto-de-barueri">academias perto de Barueri</a>.</p>
 <figure style="margin:2rem 0">
   <img src="/blog-images/academia-24-horas-barueri.webp" alt="Montinho, personal trainer em Barueri, executando exercício em máquina de academia — Academia 24 Horas em Barueri" title="Academia 24 Horas em Barueri — Montinho Personal Trainer" width="900" height="1600" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:520px;display:block;margin:0 auto;"/>
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia 24 Horas em Barueri: avaliação de quem treina e atende na região.</figcaption>
@@ -85472,12 +85471,12 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><a href="/blog/academia-ou-personal-trainer">Academia ou personal trainer: o que vale mais?</a></li>
 </ul>`,
     faq: [
-      { question: "Quais academias são 24 horas em Barueri?", answer: "As que abrem 24 horas ficam no lado de Alphaville: Gaviões 24h Alphaville (Av. Juruá, 253), Ironberg Alphaville (Estrada Aldeinha, 181) e Arena 18 Alphaville. No Centro, a Smart Fit fecha à meia-noite." },
+      { question: "Quais academias são 24 horas em Barueri?", answer: "As que abrem 24 horas ficam no lado de Alphaville: Gaviões 24h Alphaville (Av. Juruá, 253) e Ironberg Alphaville (Estrada Aldeinha, 181). No Centro, a Smart Fit fecha à meia-noite." },
       { question: "A Smart Fit Barueri Centro é 24 horas?", answer: "Não. Pelo site oficial da Smart Fit, abre das 5h à 0h de segunda a sexta, das 8h às 17h no sábado e das 8h às 14h no domingo e feriado (consulta de 21/10/2026)." },
-      { question: "Quanto custa academia 24 horas em Barueri?", answer: "A Gaviões não publica tabela e aceita Wellhub a partir do Silver+; Ironberg e Arena 18 informam o preço na unidade. Para comparar, a Smart Fit de Barueri (que não é 24h) cobra de R$ 139,90 a R$ 159,90 por mês no site oficial, com fidelidade." },
+      { question: "Quanto custa academia 24 horas em Barueri?", answer: "A Gaviões não publica tabela e aceita Wellhub a partir do Silver+; a Ironberg informa o preço na unidade. Para comparar, a Smart Fit de Barueri (que não é 24h) cobra de R$ 139,90 a R$ 159,90 por mês no site oficial, com fidelidade." },
       { question: "A Academia 24 Health Club de Alphaville é 24 horas?", answer: "Não, apesar do nome. A unidade da Alameda Grajaú, 525, aparece na TotalPass com horário das 5h às 23h (consulta de 21/10/2026)." },
-      { question: "Tem academia 24 horas perto de mim em Barueri?", answer: "Depende do bairro: as três academias 24h confirmadas ficam em Alphaville. Do Centro, da Aldeia ou do Jardim Silveira, a mais perto de horário estendido é a Smart Fit (Centro ou Parque Shopping Barueri), que fecha à meia-noite." },
-      { question: "Tem academia 24 horas em Barueri?", answer: "Tem, no lado de Alphaville: Gaviões 24h, Ironberg e Arena 18 abrem 24 horas. No Centro de Barueri, não há academia 24h confirmada em fonte oficial; a Smart Fit do Centro fecha à meia-noite." },
+      { question: "Tem academia 24 horas perto de mim em Barueri?", answer: "Depende do bairro: as duas academias 24h confirmadas ficam em Alphaville. Do Centro, da Aldeia ou do Jardim Silveira, a mais perto de horário estendido é a Smart Fit (Centro ou Parque Shopping Barueri), que fecha à meia-noite." },
+      { question: "Tem academia 24 horas em Barueri?", answer: "Tem, no lado de Alphaville: Gaviões 24h e Ironberg abrem 24 horas. No Centro de Barueri, não há academia 24h confirmada em fonte oficial; a Smart Fit do Centro fecha à meia-noite." },
       { question: "Como escolher academia trabalhando em escala?", answer: "Visite a unidade no horário real do seu treino, verifique supervisão e segurança, e prefira planos flexíveis. E tenha um treino que se adapte a dias trocados." },
       { question: "Treino de madrugada sem professor funciona?", answer: "Funciona se houver um programa estruturado por trás, com progressão e correção técnica. Sem isso, o risco é estagnar ou se machucar." },
       { question: "O plano 24 horas é mais caro?", answer: "Depende da rede: às vezes está incluído, às vezes é um plano superior. Valores variam por unidade — consulte o site oficial para condições atualizadas." }
