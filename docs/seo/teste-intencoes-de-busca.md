@@ -1214,4 +1214,4 @@ GSC 90 dias até 21/10: 232 impressões, 6 cliques, posição 7,5. Primeira pesq
 - Entraram: H2 "Quais academias são 24 horas" (tabela), "A Smart Fit Barueri é 24 horas?" (as duas unidades, com endereço e horário oficiais), "24 Health Club / 24 Wellness é 24 horas?", "preço e mensalidade" (preços oficiais da Smart Fit, com data) e "no Centro de Barueri". +5 FAQs; a FAQ "Tem academia 24 horas em Barueri?" foi reescrita com os nomes. updatedAt 2026-10-21.
 - Correção: o H1 estava "Quais Redes Abrem de Madrugada de Madrugada" (palavras repetidas). Virou "Quais Abrem de Madrugada".
 - Fora: Carapicuíba e bairros de São Paulo (outras cidades), telefone da 24 Health Club (só em diretórios), endereço da Arena 18 (sem fonte publicada no site).
-- Título e descrição: proposta ATUAL/PROPOSTA/MOTIVO enviada ao Montinho; não mudou ainda.
+- Título e descrição: o Montinho decidiu manter os atuais ("Academia 24 Horas em Barueri: Onde Treinar") em 21/10. Não repropor. Endereço da Arena 18: o Montinho vai confirmar.
