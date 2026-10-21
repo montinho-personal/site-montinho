@@ -1191,3 +1191,10 @@ Antes de pedir print ao Montinho, confira aqui **e** no histórico do git. Parte
 - Prints de 21/10: bluefit-tambore, academia-de-condominio-quais-aparelhos-comprar, hyrox-alphaville-onde-treinar, academia-gavioes-alphaville.
 - Só título mudou, SEM pesquisa (29/09): academia-24-horas-barueri, smart-fit-barueri, quanto-custa-academia-em-barueri (bluefit-alphaville e skyfit-alphaville ganharam prints depois).
 - Sem pesquisa, por impressões no GSC (90 dias até 21/10): academia-24-horas-barueri 232; crossfit-barueri 221; academia-24-horas-santana-de-parnaiba 205; smart-fit-barueri 116; academias-perto-de-barueri 104; quanto-custa-academia-em-barueri 103; melhores-academias-de-santana-de-parnaiba 102; voi-fit-alphaville 96; melhores-academias-aldeia-da-serra 89.
+
+## 2026-10-21 — Gaviões Alphaville: título e descrição (aprovados pelo Montinho)
+
+- metaTitle: "Gaviões 24h Alphaville: Endereço, Horário e Vale a Pena?" (aprovado em 08/10) → "Gaviões Alphaville: Mensalidade, Gympass, TotalPass e 24h".
+- metaDescription: "Academia Gaviões em Alphaville: para quem é indicada a rede de musculação forte em SP, prós e contras honestos e como aproveitar. Confira a análise." → "Gaviões Alphaville (Av. Juruá, 253) é 24h e aceita Wellhub e TotalPass. Veja qual plano entra, como saber a mensalidade e a diária e para quem vale a pena."
+- Linha de base (GSC, página, 90 dias até 21/10): 793 impressões, 0 cliques, posição 11,5. Medir em 18/11 (28 dias).
+- Regra nova no AGENTS.md: "Título e descrição: confirmar e deixar uma pergunta aberta".
