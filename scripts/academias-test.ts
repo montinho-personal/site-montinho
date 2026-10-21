@@ -67,8 +67,11 @@ const com = (o: Partial<Respostas>): Respostas => ({ ...base, ...o });
 const A = recomendar(com({ horario: "pos_22h", vinteQuatro: "essencial", estacionamento: "essencial", estilos: ["musculacao_completa"] }));
 check("A (hipertrofia 22h30, 24h e estacionamento essenciais) devolve resultado", A.top.length > 0);
 // Eliminar por dado CONFIRMADO negativo é correto; por dado ausente, não.
+// Até 21/10/2026 a Arena 18 contava como 24h e garantia 3 resultados aqui; o Montinho
+// confirmou que ela fecha às 23h. O que importa é que academia SEM o dado de 24h
+// continue na lista (hoje, a SkyFit), não um número fixo de resultados.
 check("A: nenhuma academia com dado ausente é eliminada",
-  A.top.length >= 3 && ACADEMIAS.filter((g) => g.vinteQuatroHoras.valor === null).length > 0);
+  A.top.length >= 2 && A.top.some((r) => r.academia.vinteQuatroHoras.valor === null));
 
 const B = recomendar(com({ objetivo: "comecando", horario: "almoco", preco: "custo_beneficio" }));
 check("B (iniciante, almoço, custo-benefício) devolve resultado", B.top.length > 0);

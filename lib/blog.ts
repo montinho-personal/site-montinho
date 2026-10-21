@@ -79475,7 +79475,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Academia 24 horas, Wellhub, TotalPass e premium em Alphaville</h2>
 <p>As dúvidas mais buscadas sobre academias em Alphaville, com o que eu conferi nas unidades onde atendo alunos. Horário, convênio e preço mudam: confirme na recepção antes de assinar.</p>
 <ul>
-<li><strong>Academia 24 horas em Alphaville:</strong> <a href="/blog/ironberg-alphaville">Ironberg</a> e <a href="/blog/arena-18-alphaville">Arena 18</a>. Mais opções em <a href="/blog/academia-24-horas-alphaville">academia 24 horas em Alphaville</a>.</li>
+<li><strong>Academia 24 horas em Alphaville:</strong> <a href="/blog/ironberg-alphaville">Ironberg</a> e <a href="/blog/academia-gavioes-alphaville">Gaviões 24h</a>. Mais opções em <a href="/blog/academia-24-horas-alphaville">academia 24 horas em Alphaville</a>.</li>
 <li><strong>Aceitam Wellhub (antigo Gympass):</strong> <a href="/blog/bluefit-alphaville">Bluefit</a>, <a href="/blog/bodytech-alphaville">Bodytech</a>, <a href="/blog/panobianco-alphaville">Panobianco</a>, <a href="/blog/ironberg-alphaville">Ironberg</a>, <a href="/blog/arena-18-alphaville">Arena 18</a>, <a href="/blog/scelta-alphaville">Scelta</a>, <a href="/blog/4perform-alphaville">4Perform</a>, <a href="/blog/24-wellness-alphaville">24 Wellness</a>, <a href="/blog/skyfit-alphaville">SkyFit</a>, <a href="/blog/studio-mormaii-alphaville">Studio Mormaii</a> e <a href="/blog/voi-fit-alphaville">Voi Fit</a>.</li>
 <li><strong>Aceitam TotalPass:</strong> <a href="/blog/smart-fit-alphaville">Smart Fit</a>, <a href="/blog/scelta-alphaville">Scelta</a>, <a href="/blog/4perform-alphaville">4Perform</a>, <a href="/blog/24-wellness-alphaville">24 Wellness</a>, <a href="/blog/skyfit-alphaville">SkyFit</a>, <a href="/blog/studio-mormaii-alphaville">Studio Mormaii</a> e <a href="/blog/voi-fit-alphaville">Voi Fit</a>.</li>
 <li><strong>Faixa premium (as mais caras):</strong> <a href="/blog/bodytech-alphaville">Bodytech</a>, <a href="/blog/ironberg-alphaville">Ironberg</a>, <a href="/blog/scelta-alphaville">Scelta</a> e <a href="/blog/4perform-alphaville">4Perform</a>; em Santana de Parnaíba, a <a href="/blog/fabrica-premium-alphaville">Fábrica Premium</a>. Veja <a href="/blog/academias-premium-alphaville">academias premium em Alphaville</a>.</li>
@@ -79513,7 +79513,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Tem Smart Fit em Alphaville?", answer: "Sim. A Smart Fit Alphaville fica no Centro Industrial e Empresarial, em Barueri, e aceita TotalPass." },
       { question: "Qual é o preço da Scelta academia em Alphaville?", answer: "A Scelta está na faixa premium de Alphaville e aceita Wellhub e TotalPass. O valor dos planos muda com frequência; confira na unidade do Centro Comercial." },
       { question: "Quais academias de Alphaville aceitam Wellhub (Gympass) ou TotalPass?", answer: "Wellhub: Bluefit, Bodytech, Panobianco, Ironberg, Arena 18, Scelta, 4Perform, 24 Wellness, SkyFit, Studio Mormaii e Voi Fit. TotalPass: Smart Fit, Scelta, 4Perform, 24 Wellness, SkyFit, Studio Mormaii e Voi Fit." },
-      { question: "Tem academia 24 horas em Alphaville?", answer: "Sim: Ironberg e Arena 18 funcionam 24 horas." },
+      { question: "Tem academia 24 horas em Alphaville?", answer: "Sim: Ironberg e Gaviões 24h funcionam 24 horas." },
       { question: "Quais são as principais academias em Alphaville?", answer: "Smart Fit, Bluefit, Ironberg, Bodytech, Bio Ritmo, Gaviões, NitroGym, Arena 18, Scelta, 4Perform, Competition, Panobianco, 24 Wellness, SkyFit e Voi Fit estão entre as mais conhecidas. Confirme horários e valores em cada unidade." },
       { question: "Qual academia de Alphaville é mais econômica?", answer: "Redes como Smart Fit, Bluefit e Panobianco têm posicionamento econômico. Os valores mudam por plano e unidade — consulte o site oficial antes de decidir." },
       { question: "Qual academia escolher para hipertrofia?", answer: "Academias com cultura de musculação forte, como Ironberg e Gaviões, atraem esse público. Mas o fator decisivo é o plano de treino, não só a estrutura." },
@@ -79603,7 +79603,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>`,
     faq: [
       { question: "Quais academias em Barueri aceitam TotalPass ou Gympass?", answer: "A lista de convênios muda com frequência, então confira no app antes de ir. As academias de Alphaville (que também fica em Barueri) que aceitam Wellhub e TotalPass estão listadas, uma a uma, no guia de academias em Alphaville." },
-      { question: "Tem academia 24 horas em Barueri?", answer: "Em Alphaville, Ironberg e Arena 18 funcionam 24 horas. Para outras regiões de Barueri, veja o guia de academia 24 horas em Barueri." },
+      { question: "Tem academia 24 horas em Barueri?", answer: "Em Alphaville, Ironberg e Gaviões 24h funcionam 24 horas. Para outras regiões de Barueri, veja o guia de academia 24 horas em Barueri." },
       { question: "Tem academia no Centro de Barueri?", answer: "Sim: Bluefit, Panobianco, Redfit e Primax estão entre as opções do Centro. Cada uma tem análise própria no site." },
       { question: "Quais academias existem em Barueri?", answer: "Smart Fit, Bluefit, Panobianco, Gaviões, RedFit, Primax, CrossFit Barueri e SESI estão entre as principais. Confirme unidades, horários e valores nos canais oficiais." },
       { question: "Qual a academia mais em conta de Barueri?", answer: "As redes de perfil econômico, como Smart Fit, Bluefit e Panobianco, costumam ter os planos mais acessíveis. Valores variam por unidade e plano." },
@@ -79829,7 +79829,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Academia perto de mim em Alphaville: por região</h2>
 <p>Escolha pela região onde você passa o dia — é o que decide se você vai treinar três vezes por semana ou três vezes por mês.</p>
 <ul>
-<li><strong>Alphaville Industrial e Empresarial</strong> (Alameda Rio Negro, Av. Dr. Dib Sauaia Neto): Ironberg, Smart Fit, Bluefit, Panobianco, Bio Ritmo, Arena 18, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit. Detalhes em <a href="/blog/academias-em-alphaville">academias em Alphaville</a>.</li>
+<li><strong>Alphaville Industrial e Empresarial</strong> (Alameda Rio Negro, Av. Dr. Dib Sauaia Neto): Ironberg, Smart Fit, Bluefit, Panobianco, Bio Ritmo, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit. Detalhes em <a href="/blog/academias-em-alphaville">academias em Alphaville</a>.</li>
 <li><strong>Perto do Iguatemi Alphaville:</strong> <a href="/blog/bodytech-alphaville">Bodytech</a> — veja <a href="/blog/academia-perto-do-iguatemi-alphaville">academia perto do Iguatemi</a>.</li>
 <li><strong>Centro Comercial de Alphaville:</strong> <a href="/blog/scelta-alphaville">Scelta</a> e <a href="/blog/studio-mormaii-alphaville">Studio Mormaii</a> — veja <a href="/blog/academia-perto-do-centro-comercial-alphaville">academia perto do Centro Comercial</a>.</li>
 <li><strong>Lado de Santana de Parnaíba:</strong> <a href="/blog/fabrica-premium-alphaville">Fábrica Premium</a>, na Estrada da Bela Vista; mais opções em <a href="/blog/academias-em-santana-de-parnaiba">academias em Santana de Parnaíba</a>.</li>
@@ -79884,7 +79884,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Onde fica a Smart Fit em Alphaville?", answer: "A rede tem mais de uma unidade na região, incluindo a do Shopping Flamingo Alphaville, em Barueri. Confira a mais próxima no localizador do site da Smart Fit." },
       { question: "Onde fica a Academia Gaviões Alphaville?", answer: "Na Av. Juruá, 253, em Alphaville, Barueri, segundo o site oficial da academia." },
       { question: "Qual academia fica perto do Iguatemi Alphaville?", answer: "A Bodytech fica perto do Iguatemi Alphaville. O guia de academias perto do Iguatemi traz as opções da região." },
-      { question: "Qual academia fica perto da Alameda Rio Negro?", answer: "No Alphaville Industrial e Empresarial ficam Ironberg, Smart Fit, Bluefit, Panobianco, Bio Ritmo, Arena 18, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit." },
+      { question: "Qual academia fica perto da Alameda Rio Negro?", answer: "No Alphaville Industrial e Empresarial ficam Ironberg, Smart Fit, Bluefit, Panobianco, Bio Ritmo, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit." },
       { question: "Tem academia em Alphaville do lado de Santana de Parnaíba?", answer: "Sim: a Fábrica Premium fica na Estrada da Bela Vista, em Santana de Parnaíba, e o guia de academias da cidade traz as outras opções." },
       { question: "Quais academias ficam perto de Alphaville?", answer: "Dentro e ao redor do bairro há Smart Fit, Bluefit, Ironberg, Bodytech, Bio Ritmo, Gaviões, NitroGym e outras; em Barueri, RedFit e Primax; na Aldeia da Serra, a Scelta. Confirme endereços nos sites oficiais." },
       { question: "Como escolher entre tantas opções na região?", answer: "Use três filtros: trajeto diário, ambiente no seu horário de treino e estrutura alinhada ao objetivo. Aula experimental antes de qualquer contrato." },
@@ -80525,7 +80525,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h3>2. Bodytech — a experiência premium clássica</h3>
 <p>Proposta <strong>premium</strong>: variedade de modalidades, piscina em muitas unidades e público executivo. Combina com quem valoriza conforto e serviço completo.</p>
 <h3>3. Arena 18 — a academia mais família de Alphaville</h3>
-<p>Se a ideia é treinar num lugar onde dá vontade de ficar, a <strong><a href="/blog/arena-18-alphaville">Arena 18</a></strong> é a minha recomendação. É uma academia com clima <strong>família</strong>, numa região mais <strong>tranquila</strong> de Alphaville, de <strong>fácil acesso e fácil de estacionar</strong> — o que, na rotina de quem mora aqui, faz diferença de verdade na constância.</p>
+<p>Se a ideia é treinar num lugar onde dá vontade de ficar, a <strong><a href="/blog/arena-18-alphaville">Arena 18</a></strong> é a minha recomendação. É uma academia com clima <strong>família</strong>, numa região mais <strong>tranquila</strong>, no Melville Empresarial II (R. Mario Quintana, 144, Barueri), de <strong>fácil acesso e fácil de estacionar</strong> — o que, na rotina de quem mora aqui, faz diferença de verdade na constância.</p>
 <ul>
 <li><strong>Musculação e cardio:</strong> área completa para o treino do dia a dia.</li>
 <li><strong>Quadras de beach tennis:</strong> para jogar, fazer aula ou levar a família.</li>
@@ -80552,9 +80552,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <h2>Filtros rápidos: 24 horas, Gympass e Alphaville Industrial</h2>
 <ul>
-<li><strong>Academia 24 horas em Alphaville:</strong> Ironberg e Arena 18.</li>
+<li><strong>Academia 24 horas em Alphaville:</strong> Ironberg e Gaviões 24h.</li>
 <li><strong>Academia em Alphaville que aceita Gympass (Wellhub):</strong> Ironberg, Bodytech, Arena 18, Scelta, Bluefit, 24 Wellness, 4Perform, SkyFit, Panobianco, Studio Mormaii e Voi Fit. TotalPass: Smart Fit, Scelta, 24 Wellness, 4Perform, SkyFit, Studio Mormaii e Voi Fit.</li>
-<li><strong>Alphaville Industrial (Centro Industrial e Empresarial):</strong> Ironberg (Estrada Aldeinha, 181, com acesso também pela Av. Dr. Dib Sauaia Neto), Smart Fit, Bluefit, Panobianco, Bio Ritmo, Arena 18, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit ficam nessa região; Bodytech fica perto do Iguatemi e Scelta, no Centro Comercial.</li>
+<li><strong>Alphaville Industrial (Centro Industrial e Empresarial):</strong> Ironberg (Estrada Aldeinha, 181, com acesso também pela Av. Dr. Dib Sauaia Neto), Smart Fit, Bluefit, Panobianco, Bio Ritmo, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit ficam nessa região; Bodytech fica perto do Iguatemi, Scelta no Centro Comercial e Arena 18 no Melville Empresarial II.</li>
 </ul>
 <p>Os dados de 24 horas e convênio foram conferidos por mim nas unidades — o detalhe de cada uma está no <a href="/blog/academias-em-alphaville">guia de academias em Alphaville</a>. Este ranking é de Alphaville em Barueri, não de Alphaville Nova Lima.</p>
 
@@ -80590,8 +80590,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>`,
     faq: [
       { question: "Qual academia de Alphaville aceita Gympass?", answer: "Pelo Wellhub (antigo Gympass): Ironberg, Bodytech, Arena 18, Scelta, Bluefit, 24 Wellness, 4Perform, SkyFit, Panobianco, Studio Mormaii e Voi Fit." },
-      { question: "Tem academia 24 horas em Alphaville?", answer: "Sim: Ironberg e Arena 18 funcionam 24 horas." },
-      { question: "Quais academias ficam no Alphaville Industrial?", answer: "Ironberg, Smart Fit, Bluefit, Panobianco, Bio Ritmo, Arena 18, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit ficam no Centro Industrial e Empresarial de Alphaville." },
+      { question: "Tem academia 24 horas em Alphaville?", answer: "Sim: Ironberg e Gaviões 24h funcionam 24 horas." },
+      { question: "Quais academias ficam no Alphaville Industrial?", answer: "Ironberg, Smart Fit, Bluefit, Panobianco, Bio Ritmo, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit ficam no Centro Industrial e Empresarial de Alphaville. A Arena 18 fica ao lado, no Melville Empresarial II." },
       { question: "A Fábrica Premium está entre as melhores de Alphaville?", answer: "É uma das academias mais completas da região, com valet, rooftop, crioterapia e nutricionista, na Estrada da Bela Vista, em Santana de Parnaíba. Veja a página da Fábrica Premium Alphaville." },
       { question: "Qual é a melhor academia de Alphaville?", answer: "Depende do objetivo: Smart Fit e Bluefit para economia, Bodytech e Bio Ritmo para experiência premium, Ironberg para musculação séria. Visite e faça aula experimental antes de fechar." },
       { question: "Quanto custa academia em Alphaville?", answer: "Varia da faixa econômica à premium conforme rede e plano. Consulte o site oficial ou a unidade para valores atualizados." },
@@ -83010,7 +83010,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "O que esperar da Arena 18 em Alphaville: perfil da proposta, prós e contras por tipo de aluno e como avaliar antes de fechar plano.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-10-21",
     readTime: "8 min",
     author: "Montinho",
     tags: ["arena 18","academia em alphaville","treino","alphaville","avaliação de academia"],
@@ -83018,7 +83018,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "O que é a Arena 18 em Alphaville?", answer: "É uma academia local da região de Alphaville. Detalhes de estrutura, modalidades e planos devem ser confirmados diretamente com a unidade, pois mudam com o tempo." },
       { question: "Quanto custa treinar na Arena 18?", answer: "Preços variam por plano e promoção. Consulte o site oficial ou a própria unidade para valores atualizados antes de decidir." },
       { question: "A Arena 18 é indicada para iniciantes?", answer: "Pode ser, se houver acompanhamento próximo. Faça uma visita, pergunte sobre aula experimental e observe o suporte dado a quem está começando." },
-      { question: "Qual o horário de funcionamento da Arena 18 Alphaville?", answer: "Horários mudam e variam por dia da semana. Confirme diretamente com a academia pelos canais oficiais." },
+      { question: "Qual o horário de funcionamento da Arena 18 Alphaville?", answer: "Nos dias úteis, fecha às 23h; não funciona 24 horas. O horário de fim de semana e de feriado muda: confirme no perfil da Arena 18 no Google ou pelo WhatsApp da academia." },
+      { question: "Onde fica a Arena 18?", answer: "Na R. Mario Quintana, 144, Melville Empresarial II, Barueri (CEP 06485-350)." },
       { question: "Como comparar a Arena 18 com as redes grandes da região?", answer: "Compare pelo que importa para você: distância da rotina, lotação no seu horário, modalidades que usa de verdade e ambiente. Rede grande nem sempre vence academia local nesses critérios." },
       { question: "Academias de Alphaville costumam ter estacionamento?", answer: "Varia muito por unidade. Em Alphaville o carro pesa na rotina, então confirme estacionamento e acesso antes de fechar plano." },
       { question: "Quantas vezes por semana devo treinar?", answer: "Para a maioria das pessoas, 3 a 5 sessões semanais bem estruturadas funcionam. Mais importante que a frequência ideal é a frequência que você sustenta o ano inteiro." },
@@ -83034,7 +83035,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>E o ciclo se repete: matrícula empolgada, três semanas de treino, uma viagem a trabalho, e a academia — seja na <strong>Alameda Rio Negro</strong> ou no <strong>Tamboré</strong> — vira lembrança no extrato do cartão.</p>
 <p>Antes de matricular na <strong>Arena 18 Alphaville</strong>, vale uma análise fria: o que esperar, para quem ela tende a funcionar e o que verificar pessoalmente. É isso que você encontra aqui.</p>
 <h2>Arena 18: resposta direta</h2>
-<p><strong>Resumo:</strong> a Arena 18 é uma academia local de Alphaville. Por não ser uma rede nacional com padrão público amplamente conhecido, o caminho honesto é: <strong>verifique diretamente com a unidade</strong> estrutura, modalidades, planos e horários — e use os critérios deste artigo para avaliar se a proposta combina com seu perfil.</p>
+<p><strong>Endereço:</strong> R. Mario Quintana, 144, Melville Empresarial II, Barueri (CEP 06485-350). <strong>Horário:</strong> fecha às 23h nos dias úteis (não é 24 horas); fim de semana e feriado, confirme com a academia.</p>
+<p><strong>Resumo:</strong> a Arena 18 é uma academia local da região de Alphaville. Por não ser uma rede nacional com padrão público amplamente conhecido, o caminho honesto é: <strong>verifique diretamente com a unidade</strong> estrutura, modalidades, planos e horários — e use os critérios deste artigo para avaliar se a proposta combina com seu perfil.</p>
 <p><strong>Academia não se escolhe por fama; se escolhe por encaixe.</strong> E encaixe se descobre na visita, não no Instagram.</p>
 <figure style="margin:2rem 0">
   <img src="/blog-images/arena-18-alphaville.webp" alt="Montinho Personal Trainer na Arena 18 Alphaville: área de musculação com halteres, máquinas e vista para a cidade" title="Arena 18 Alphaville — Montinho Personal Trainer" width="1600" height="1066" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
