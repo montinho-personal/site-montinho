@@ -1198,3 +1198,10 @@ Antes de pedir print ao Montinho, confira aqui **e** no histórico do git. Parte
 - metaDescription: "Academia Gaviões em Alphaville: para quem é indicada a rede de musculação forte em SP, prós e contras honestos e como aproveitar. Confira a análise." → "Gaviões Alphaville (Av. Juruá, 253) é 24h e aceita Wellhub e TotalPass. Veja qual plano entra, como saber a mensalidade e a diária e para quem vale a pena."
 - Linha de base (GSC, página, 90 dias até 21/10): 793 impressões, 0 cliques, posição 11,5. Medir em 18/11 (28 dias).
 - Regra nova no AGENTS.md: "Título e descrição: confirmar e deixar uma pergunta aberta".
+
+## 2026-10-21 — Bluefit Tamboré e academia para condomínio: título e descrição (aprovados pelo Montinho)
+
+Seguindo a regra nova do AGENTS.md (confirmar e deixar uma pergunta aberta).
+- bluefit-tambore: "Bluefit Tamboré: Endereço, Horário e Vale a Pena?" → "Bluefit Tamboré: Endereço, Horário, Telefone e Fotos". Descrição nova: "Bluefit Tamboré fica na Av. Tucunaré, 1498, abre às 5h e aceita Wellhub. Veja o horário de fim de semana, o contato da unidade e como ela se compara às outras."
+- academia-de-condominio-quais-aparelhos-comprar: "Academia de Condomínio: Quais Aparelhos e Como Montar" → "Academia para Condomínio: Aparelhos, Custo e Como Montar". Descrição nova: "Academia para condomínio: o que comprar primeiro, quanto espaço precisa e o que pesa no custo. Veja comprar × alugar × contêiner, regras de uso e erros comuns."
+- Linha de base: páginas publicadas em 21/10, sem histórico próprio. Referência: as buscas que caíam em outras páginas (Bluefit Tamboré ~101 impressões, posição ~11; condomínio ~44, posições 34 a 71, em 90 dias). Medir em 18/11.
