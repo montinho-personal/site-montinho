@@ -1182,3 +1182,12 @@ GSC 90 dias: ~477 impressões nas variações de "gaviões alphaville", posiçã
 - O site oficial (academiagavioes.com.br) não abriu deste ambiente (bloqueio do proxy). Não foi contornado. "Desde 1974" e "primeira academia 24h do Brasil" estão atribuídos ao Instagram da unidade.
 - Fora: diária de R$ 50 e mensalidade de R$ 159/169 (TikTok e sites de terceiros, que divergem entre si).
 - Título e descrição: proposta ATUAL/PROPOSTA/MOTIVO enviada ao Montinho; não mudou ainda.
+
+## Índice: páginas locais que já têm pesquisa de busca (conferido em 21/10/2026)
+
+Antes de pedir print ao Montinho, confira aqui **e** no histórico do git. Parte da rodada de 30/09 só ficou registrada nos PRs, não neste arquivo.
+- Answer the Public (08–09/10, seções acima): personal trainer Alphaville, Barueri, Tamboré, Santana de Parnaíba, Aldeia da Serra e Granja Viana; personal a domicílio (5 páginas); personal em condomínio (3); quanto custa personal (5 páginas locais); academia-gavioes-alphaville; bluefit-barueri; fabrica-premium-alphaville; academias-perto-de-alphaville; 10-melhores-academias-de-alphaville.
+- Prints de 30/09 (só nos PRs): smart-fit-alphaville (#561, Google Maps), ironberg-alphaville (#562), academia-com-piscina-alphaville-barueri (#563), bodytech-alphaville (#564), academias-perto-de-santana-de-parnaiba (#565), personal-trainer-granja-viana (#566), bluefit-alphaville (#567), skyfit-alphaville (#568), academia-perto-do-centro-comercial-alphaville e bluefit-barueri (#569), academia-com-natacao-alphaville (#570), academias-de-jiu-jitsu-em-barueri (#560), melhores-academias-de-barueri (#554), 10-melhores (#555), academias-em-santana-de-parnaiba (#556); academias-em-alphaville e academias-em-barueri (PAA, 30/09).
+- Prints de 21/10: bluefit-tambore, academia-de-condominio-quais-aparelhos-comprar, hyrox-alphaville-onde-treinar, academia-gavioes-alphaville.
+- Só título mudou, SEM pesquisa (29/09): academia-24-horas-barueri, smart-fit-barueri, quanto-custa-academia-em-barueri (bluefit-alphaville e skyfit-alphaville ganharam prints depois).
+- Sem pesquisa, por impressões no GSC (90 dias até 21/10): academia-24-horas-barueri 232; crossfit-barueri 221; academia-24-horas-santana-de-parnaiba 205; smart-fit-barueri 116; academias-perto-de-barueri 104; quanto-custa-academia-em-barueri 103; melhores-academias-de-santana-de-parnaiba 102; voi-fit-alphaville 96; melhores-academias-aldeia-da-serra 89.
