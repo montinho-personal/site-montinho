@@ -119743,6 +119743,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     excerpt: "A Bluefit tem três unidades na região, e a do Tamboré fica na Av. Tucunaré. Endereço, horário, estrutura, convênio e o que observar antes de assinar.",
     category: "Academias",
     date: "2026-10-21",
+    updatedAt: "2026-10-21",
     readTime: "6 min",
     author: "Montinho",
     tags: ["bluefit tamboré", "academia no tamboré", "bluefit barueri", "academia low cost", "musculação tamboré"],
@@ -119754,6 +119755,11 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
       { question: "Bluefit Tamboré e Bluefit Barueri são a mesma academia?", answer: "Não. São unidades diferentes: a do Tamboré fica na Av. Tucunaré, 1498, e a de Barueri fica no Bethaville, na Av. Trindade, 344. Há ainda a Bluefit Alphaville, na Alameda Amazonas, 388." },
       { question: "A Bluefit Tamboré tem aulas?", answer: "O site oficial cita a área B-Cross, de treino funcional de alta intensidade, e o Wellhub lista treino funcional entre as atividades. A grade de aulas muda por dia: a Bluefit mostra a da semana na página da unidade." },
       { question: "Quanto custa a Bluefit Tamboré?", answer: "A Bluefit trabalha na faixa econômica, mas o preço muda com o plano e com as promoções do momento. O valor atualizado está no site oficial, na página da unidade Tamboré." },
+      { question: "Qual o telefone da Bluefit Tamboré?", answer: "O site oficial não publica um número fixo da unidade: o contato é pelo botão de WhatsApp na página da Bluefit Tamboré e pela central de atendimento da rede (bluefit.com.br/atendimento)." },
+      { question: "A Bluefit Tamboré fica em Alphaville?", answer: "Fica no Tamboré, em Barueri, na Av. Tucunaré, 1498 (CEP 06460-020). O site oficial chama a unidade de Tamboré; o Wellhub cadastra o endereço como Alphaville, Barueri. É a mesma academia." },
+      { question: "Onde ver fotos da Bluefit Tamboré?", answer: "Nos canais oficiais da Bluefit: a página da unidade no site e o Instagram da rede. A melhor forma de ver a academia de verdade é visitar no horário em que você treinaria." },
+      { question: "A Bluefit Tamboré abre em feriado?", answer: "Em feriado o horário costuma mudar, e cada feriado pode ter uma regra. Confira no app ou no WhatsApp da unidade antes de ir." },
+      { question: "Tem Bluefit em Osasco?", answer: "Tem várias, segundo o site oficial: Osasco (Av. Maria Campos, 900, Centro), Novo Osasco (Rua Pernambucanas, 350, Conceição), KM 18 (Av. Comandante Sampaio, 685) e Rochdale (R. Águas da Prata, 246)." },
       { question: "Posso levar personal trainer na Bluefit Tamboré?", answer: "A listagem do Wellhub marca personal trainer entre os serviços, mas a regra para personal de fora da academia é da unidade. Pergunte na recepção antes de combinar o treino." },
     ],
     content: `<p>A Bluefit tem três unidades na região, e é comum confundir. A do <strong>Tamboré</strong> fica na Av. Tucunaré, a de <strong>Barueri</strong> fica no Bethaville e a de <strong>Alphaville</strong> fica na Alameda Amazonas. Se o seu trajeto passa pela Tucunaré, esta é a que interessa.</p>
@@ -119764,14 +119770,20 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <h2>Endereço da Bluefit Tamboré</h2>
 <p><strong>Av. Tucunaré, 1498, sala 02, piso superior, bloco 02, Tamboré, Barueri (CEP 06460-020)</strong>, segundo o site oficial da Bluefit. A academia fica no piso superior do prédio.</p>
 
-<h2>Horário de funcionamento</h2>
+<h2>Bluefit Tamboré: horário de funcionamento</h2>
 <table>
 <tr><th>Dia</th><th>Horário</th></tr>
 <tr><td>Segunda a sexta</td><td>5h às 23h59</td></tr>
 <tr><td>Sábado</td><td>8h às 17h</td></tr>
 <tr><td>Domingo</td><td>8h às 14h</td></tr>
 </table>
-<p><em>Fonte: página da unidade no Wellhub, consultada em 21/10/2026. Feriado pode mudar o horário; o app da Bluefit é a fonte que a própria rede atualiza.</em></p>
+<p><em>Fonte: página da unidade no Wellhub, consultada em 21/10/2026.</em> Em feriado o horário costuma mudar, e cada feriado pode ter uma regra: confira no app ou no WhatsApp da unidade antes de ir.</p>
+
+<h2>Telefone e WhatsApp da Bluefit Tamboré</h2>
+<p>O site oficial não publica um telefone fixo da unidade. O contato é pelo <strong>botão de WhatsApp na página da Bluefit Tamboré</strong> e pela <a href="https://www.bluefit.com.br/atendimento" target="_blank" rel="noopener noreferrer">central de atendimento da Bluefit</a>. Desconfie de número de telefone em site que não é da rede.</p>
+
+<h2>A Bluefit Tamboré fica em Alphaville?</h2>
+<p>Fica no <strong>Tamboré, em Barueri</strong>. O site oficial chama a unidade de Tamboré; o Wellhub cadastra o mesmo endereço (Av. Tucunaré, 1498, CEP 06460-020) como "Alphaville, Barueri". É a mesma academia. Quem procura "Bluefit Alphaville" pode estar atrás de outra unidade, a da Alameda Amazonas, 388 (veja a tabela abaixo).</p>
 
 <h2>Estrutura: o que tem na unidade</h2>
 <ul>
@@ -119779,6 +119791,9 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <li><strong>Área B-Cross</strong>, para treino funcional de alta intensidade;</li>
 <li>Áreas de <strong>musculação, pesos livres, cardio e alongamento</strong>, vestiário com chuveiro e armários, segundo a listagem do Wellhub.</li>
 </ul>
+
+<h2>Fotos da Bluefit Tamboré</h2>
+<p>As fotos oficiais estão na <a href="https://www.bluefit.com.br/unidade/tambore" target="_blank" rel="noopener noreferrer">página da unidade no site da Bluefit</a> e no Instagram da rede. Foto mostra a academia vazia; para saber como ela é no seu dia a dia, visite no horário em que você treinaria.</p>
 
 <h2>Wellhub, TotalPass e mensalidade</h2>
 <p>A unidade aparece no <strong>Wellhub a partir do plano Silver</strong> (consulta de 21/10/2026). Para TotalPass, procure a unidade no app: os convênios mudam por unidade e por plano. A mensalidade direta está no site da Bluefit, na página da unidade, e muda com as promoções.</p>
@@ -119790,6 +119805,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <tr><td><a href="/blog/bluefit-barueri">Barueri (Bethaville)</a></td><td>Av. Trindade, 344</td><td>Quem mora no Bethaville ou no Centro de Barueri</td></tr>
 <tr><td><a href="/blog/bluefit-alphaville">Alphaville</a></td><td>Alameda Amazonas, 388</td><td>Quem trabalha no Centro Industrial e Empresarial</td></tr>
 </table>
+<p>Em <strong>Osasco</strong>, o site oficial lista quatro unidades: Osasco (Av. Maria Campos, 900, Centro), Novo Osasco (Rua Pernambucanas, 350, Conceição), KM 18 (Av. Comandante Sampaio, 685) e Rochdale (R. Águas da Prata, 246).</p>
 <p>A melhor unidade é a que fica no caminho que você já faz. Academia que exige desvio é a primeira a ser cortada na semana corrida.</p>
 
 <h2>Para quem a Bluefit Tamboré é indicada</h2>
@@ -119828,6 +119844,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <h2>Fontes</h2>
 <ul>
 <li><a href="https://www.bluefit.com.br/unidade/tambore" target="_blank" rel="noopener noreferrer">Bluefit — Unidade Tamboré (site oficial)</a></li>
+<li><a href="https://www.bluefit.com.br/unidade/osasco" target="_blank" rel="noopener noreferrer">Bluefit — unidades de Osasco (site oficial)</a></li>
 <li><a href="https://wellhub.com/pt-br/search/partners/bluefit-tambore/" target="_blank" rel="noopener noreferrer">Wellhub — BlueFit Tamboré (horário, plano e estrutura)</a></li>
 </ul>`,
   },
@@ -119839,6 +119856,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     excerpt: "O erro mais comum na academia de condomínio é comprar aparelho grande que ninguém usa. A ordem certa, o espaço, a manutenção e as regras, para quem vai decidir a compra.",
     category: "Academias",
     date: "2026-10-21",
+    updatedAt: "2026-10-21",
     readTime: "8 min",
     author: "Montinho",
     tags: ["academia de condomínio", "aparelhos para academia de condomínio", "montar academia em condomínio", "síndico", "personal em condomínio"],
@@ -119850,7 +119868,16 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
       { question: "Personal trainer pode dar aula na academia do condomínio?", answer: "Depende do regulamento interno. Muitos condomínios permitem com cadastro do profissional, comprovante de registro no CREF e horários definidos. O ideal é a regra estar escrita, para não virar discussão caso a caso." },
       { question: "Como evitar que os aparelhos quebrem?", answer: "Com contrato de manutenção preventiva, regras de uso afixadas e alguém responsável por anotar defeitos. Aparelho parado por meses com placa de 'em manutenção' é o que mais gera reclamação de morador." },
       { question: "Academia de condomínio precisa de professor?", answer: "Não é comum ter professor fixo. O que muitos condomínios fazem é liberar personal externo com regras, ou contratar horários de orientação para os moradores." },
-      { question: "Vale a pena comprar aparelho usado para o condomínio?", answer: "Pode valer em aparelho simples e robusto (banco, rack de halteres, anilhas). Em esteira e em máquina com cabo e polia, exija revisão, peças de reposição disponíveis e garantia por escrito." },
+      { question: "Quanto custa uma academia para condomínio?", answer: "Depende de três coisas: quantos aparelhos de cardio entram (são os mais caros e os que mais pedem manutenção), se a sala precisa de obra (piso, ar-condicionado, elétrica) e se o condomínio compra, aluga ou contrata um pacote completo. Peça pelo menos três orçamentos com o mesmo layout e inclua instalação, piso e manutenção na comparação." },
+      { question: "Quais são as regras para usar a academia do condomínio?", answer: "Quem define é o regimento interno, aprovado pelos condôminos. As regras mais comuns: horário de funcionamento, idade mínima e menores acompanhados, calçado e toalha, guardar os pesos, tempo máximo no cardio em horário de pico e regras para personal externo." },
+      { question: "Que empresa monta academia em condomínio?", answer: "Há fornecedores de equipamento que fazem o projeto e a instalação, empresas que alugam os aparelhos com manutenção incluída e empresas de academia em contêiner. Compare pelo projeto (layout na planta da sala), pela assistência técnica perto do condomínio e pela garantia por escrito." },
+      { question: "É melhor comprar ou alugar a academia do condomínio?", answer: "Comprar sai mais barato no longo prazo, mas a manutenção e a troca de aparelho ficam com o condomínio. Alugar custa todo mês, mas costuma incluir manutenção e troca. Para condomínio sem ninguém para cuidar dos aparelhos, o aluguel evita a academia parada." },
+      { question: "Academia em contêiner vale a pena para condomínio?", answer: "Pode valer quando não há sala disponível: o contêiner chega pronto e ocupa área externa. Antes, veja se a convenção permite a estrutura na área comum, a ventilação no verão e o barulho perto dos apartamentos." },
+      { question: "Montar academia no condomínio precisa de assembleia?", answer: "Em geral sim: gasto e mudança em área comum passam pela assembleia, e o quórum depende da convenção e do tipo de obra. Se houver reforma (elétrica, piso, ar-condicionado), pergunte à administradora se o projeto precisa de responsável técnico." },
+      { question: "Qual o tamanho ideal para uma academia de condomínio?", answer: "O que cabe os aparelhos que os moradores vão usar, cada um com a área livre que o fabricante pede, mais corredor e um canto livre para alongar. A conta começa pela lista de aparelhos e pelo layout na planta, não pelos metros." },
+      { question: "Academia ao ar livre serve para condomínio?", answer: "Serve para alongar e mexer o corpo, principalmente para moradores mais velhos, e custa menos que uma sala climatizada. Não substitui a musculação, porque a carga não aumenta, e pede manutenção contra sol e chuva." },
+      { question: "Onde achar aparelhos para academia de condomínio em Barueri?", answer: "Fornecedores de equipamento atendem a região com projeto e instalação; o que pesa é ter assistência técnica perto, para o conserto não demorar. Para treinar com orientação na academia do condomínio em Alphaville e Tamboré, veja a página de personal em condomínio." },
+      { question: "Vale a pena comprar aparelho usado (OLX) para o condomínio?", answer: "Pode valer em aparelho simples e robusto (banco, rack de halteres, anilhas). Em esteira e em máquina com cabo e polia, exija revisão, peças de reposição disponíveis e garantia por escrito." },
     ],
     content: `<p>A academia do condomínio costuma nascer de um jeito: sobra uma verba, alguém consegue três orçamentos, e a comissão escolhe o aparelho mais bonito do catálogo. Um ano depois, o leg press está encostado, a esteira tem fila às 7h e ninguém sabe a quem pedir conserto.</p>
 <p>Eu sou o Montinho, personal trainer, e atendo alunos dentro de academia de condomínio. Este guia é para quem vai decidir: síndico, administradora ou comissão de moradores.</p>
@@ -119865,10 +119892,22 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 </ol>
 <p>A lógica: primeiro o que serve a mais moradores, por menos espaço e menos dinheiro. Máquina grande que só faz um exercício vem por último.</p>
 
+<h2>Como montar uma academia em condomínio, passo a passo</h2>
+<ol>
+<li><strong>Pergunte aos moradores</strong> em que horário treinariam e o que fariam lá.</li>
+<li><strong>Meça a sala</strong> (portas, tomadas, janelas, pé-direito) e veja o que ela pede de obra.</li>
+<li><strong>Peça o layout na planta</strong> a cada fornecedor, com a área de segurança de cada aparelho.</li>
+<li><strong>Compare pelo menos três orçamentos</strong> com o mesmo layout, incluindo instalação, garantia e manutenção.</li>
+<li><strong>Leve à assembleia</strong> o layout, os orçamentos e o custo de manutenção por ano.</li>
+<li><strong>Escreva as regras de uso</strong> antes de abrir a academia.</li>
+<li><strong>Feche a manutenção preventiva</strong> e defina quem anota os defeitos.</li>
+</ol>
+
 <h2>Antes de comprar: quem vai usar</h2>
 <p>Um questionário de duas perguntas aos moradores evita a maioria dos erros: <strong>em que horário você treinaria</strong> e <strong>o que você faria lá</strong> (caminhar, musculação, alongamento, treino com personal). Condomínio com muitos idosos pede mais bicicleta e polia; condomínio de famílias jovens lota a esteira de manhã cedo e à noite.</p>
 
-<h2>Aparelhos por tamanho de espaço</h2>
+<h2>Qual o tamanho ideal para uma academia de condomínio</h2>
+<p>O tamanho certo é o que cabe os aparelhos que os moradores vão usar, cada um com a área livre ao redor que o fabricante pede, e ainda sobra corredor para circular e um canto livre para alongar e fazer exercício no colchonete. Por isso a conta começa pela lista de aparelhos, não pelos metros: a tabela abaixo mostra o que costuma caber em cada tamanho de sala.</p>
 <table>
 <tr><th>Espaço</th><th>O essencial</th><th>Se sobrar lugar</th></tr>
 <tr><td>Sala pequena</td><td>Halteres com suporte, banco ajustável, 1 esteira ou 1 bicicleta, colchonetes</td><td>Elásticos e caixa</td></tr>
@@ -119876,6 +119915,30 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <tr><td>Sala grande</td><td>O anterior + leg press + cadeira extensora e flexora</td><td>Gaiola (rack) com barra, elíptico</td></tr>
 </table>
 <p>Cada aparelho precisa de área livre ao redor para subir, descer e se movimentar com segurança. O manual do fabricante indica essa área: peça a planta com o layout antes de fechar a compra, não depois.</p>
+
+<h2>Quanto custa uma academia para condomínio</h2>
+<p>Não existe preço de tabela: o valor muda muito com três decisões.</p>
+<ul>
+<li><strong>Quantos aparelhos de cardio:</strong> esteira e elíptico são os itens mais caros da lista e os que mais pedem manutenção.</li>
+<li><strong>Se a sala precisa de obra:</strong> piso emborrachado, ar-condicionado, elétrica e espelhos podem custar tanto quanto parte dos aparelhos.</li>
+<li><strong>Comprar, alugar ou contratar pacote completo</strong> (veja abaixo).</li>
+</ul>
+<p>Para comparar orçamentos de verdade: peça pelo menos três, com o <strong>mesmo layout na planta da sala</strong>, e exija que cada um inclua instalação, piso (se for o caso), garantia e o custo da manutenção preventiva por ano.</p>
+
+<h2>Comprar, alugar ou academia em contêiner?</h2>
+<table>
+<tr><th>Modelo</th><th>A favor</th><th>Contra</th></tr>
+<tr><td>Comprar os aparelhos (avulsos ou em kit)</td><td>Sai mais barato no longo prazo; o condomínio escolhe cada item</td><td>Manutenção, conserto e troca ficam com o condomínio</td></tr>
+<tr><td>Alugar (locação de equipamentos)</td><td>Manutenção e troca costumam estar no contrato; menos dinheiro de uma vez</td><td>Custo todo mês, para sempre; atenção à multa de rescisão</td></tr>
+<tr><td>Academia em contêiner</td><td>Resolve quando não há sala; chega montada</td><td>Ocupa área externa, esquenta no verão, precisa de aprovação na área comum</td></tr>
+</table>
+<p>"Kit academia completa" para condomínio costuma juntar cardio, uma estação de musculação e acessórios. Antes de fechar um kit, confira item a item contra a lista da ordem de compra acima: kit que vem com aparelho que não cabe na sala ou que ninguém vai usar não é economia.</p>
+
+<h2>Aprovação em assembleia</h2>
+<p>Gasto e mudança em área comum passam pela assembleia, e o quórum depende da convenção do condomínio e do tipo de obra. Leve para a votação o layout na planta, os orçamentos comparados e o custo de manutenção por ano: é o que evita a academia aprovada sem dinheiro para funcionar. Se houver reforma (elétrica, piso, ar-condicionado), pergunte à administradora se o projeto precisa de responsável técnico.</p>
+
+<h2>Academia ao ar livre no condomínio</h2>
+<p>Aparelhos de ginástica ao ar livre (os da praça, de ferro, que usam o peso do corpo) custam menos que uma sala climatizada e não ocupam área interna. Servem bem para alongar, caminhar e mexer o corpo, principalmente para moradores mais velhos. Não substituem a musculação: a carga não aumenta, e é aumentar a carga que faz o músculo ficar mais forte. E pedem manutenção contra sol e chuva.</p>
 
 <h2>Esteira ou bicicleta, se couber só um</h2>
 <ul>
@@ -119899,6 +119962,20 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <li><strong>Um responsável</strong> (zelador ou administradora) para anotar defeitos e acionar o técnico.</li>
 <li><strong>Regras afixadas</strong>: guardar halteres no suporte, não soltar peso no chão, limite de tempo na esteira em horário de pico.</li>
 </ol>
+
+<h2>Regras de uso da academia do condomínio</h2>
+<p>Quem define é o regimento interno. As regras que mais evitam conflito:</p>
+<ul>
+<li><strong>Horário de funcionamento</strong> (e silêncio nos horários de descanso, se a academia fica perto de apartamentos);</li>
+<li><strong>Idade mínima</strong> e menores acompanhados de um responsável;</li>
+<li><strong>Calçado fechado e toalha</strong> nos aparelhos;</li>
+<li><strong>Guardar halteres e anilhas</strong> no suporte depois do uso;</li>
+<li><strong>Tempo máximo no cardio</strong> em horário de pico;</li>
+<li><strong>Personal externo</strong>: se pode, como se cadastra e em que horário.</li>
+</ul>
+
+<h2>Academia de condomínio precisa de professor?</h2>
+<p>Não é comum ter professor fixo, e o morador treina por conta própria. O que muitos condomínios fazem é liberar personal externo com regras, ou contratar horários de orientação para os moradores. Para quem está começando, voltando de lesão ou tem mais idade, treinar com alguém orientando faz diferença: a academia é a mesma, o que muda é saber o que fazer com ela.</p>
 
 <h2>Personal trainer externo: deixe a regra escrita</h2>
 <p>A academia do condomínio funciona melhor quando o regulamento já diz se personal externo pode atender e como: cadastro do profissional, comprovante de registro no CREF, horários e limite de alunos ao mesmo tempo. Sem regra escrita, cada caso vira assembleia.</p>
