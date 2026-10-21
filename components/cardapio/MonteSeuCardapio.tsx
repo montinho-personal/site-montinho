@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { PONTE, consomeNumero } from "@/lib/ferramentas/ponte";
@@ -151,6 +151,25 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
   const raiz = useRef<HTMLDivElement>(null);
   const jaComecou = useRef(false);
 
+  /**
+   * A refeição mexida fica parada na tela.
+   *
+   * Toda mudança feita na mão muda a altura de coisas que não são a refeição
+   * mexida: o quadro de mudança sai de uma refeição e aparece em outra, o
+   * aviso de meta aparece ou some lá em cima. No celular, isso subia a página
+   * inteira (o quadro tem uns 350 px) e o botão que a pessoa acabou de tocar
+   * saía de baixo do dedo: parecia que a página rolava sozinha para outro
+   * lugar. Pedido do Montinho, 21/10/2026.
+   *
+   * Antes de mudar, guardamos onde a refeição estava; depois de desenhar, e
+   * antes de pintar, devolvemos a página para esse ponto.
+   */
+  const telaFixa = useRef<{ el: HTMLElement; topo: number } | null>(null);
+  function seguraTela(origem: Element | null) {
+    const el = origem?.closest<HTMLElement>("[data-refeicao]");
+    if (el) telaFixa.current = { el, topo: el.getBoundingClientRect().top };
+  }
+
   /* Restaura respostas + consome a ponte (déficit/macros → cardápio). */
   useEffect(() => {
     let restaurado: Estado | null = null;
@@ -289,6 +308,14 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
     else setE((a) => ({ ...a, etapa: "habituais", momentoIdx: 0 }));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [carregado, e.etapa, cardapio, pedido]);
+
+  useLayoutEffect(() => {
+    const f = telaFixa.current;
+    telaFixa.current = null;
+    if (!f || !f.el.isConnected) return;
+    const desvio = f.el.getBoundingClientRect().top - f.topo;
+    if (Math.abs(desvio) > 1) window.scrollBy({ top: desvio, behavior: "instant" });
+  }, [cardapio, mudanca, trocando, adicionando]);
 
   function marcaMudanca(ri: number, rotulo: string) {
     if (cardapio) setMudanca({ ri, rotulo, antes: totalDia(cardapio) });
@@ -859,7 +886,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
             {cardapio.refeicoes.map((r, ri) => {
               const t = totalRefeicao(r);
               return (
-                <div key={r.momento} className="border border-white/15 p-5">
+                <div key={r.momento} data-refeicao={r.momento} className="border border-white/15 p-5 [overflow-anchor:none]">
                   <div className="flex items-baseline justify-between gap-3 mb-3">
                     <h3 className="text-white font-bold text-lg" style={h}>
                       {r.nome}
@@ -890,12 +917,13 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                               {(() => {
                                 const gAtual = Math.round(a.porcao.g * it.porcoes);
                                 const editando = gramasDigitadas?.chave === chaveTroca;
-                                const confirma = () => {
+                                const confirma = (campo: HTMLInputElement) => {
                                   if (!gramasDigitadas || gramasDigitadas.chave !== chaveTroca) return;
                                   const g = Number(gramasDigitadas.valor.replace(",", "."));
                                   setGramasDigitadas(null);
                                   if (!Number.isFinite(g) || g <= 0 || Math.round(g) === gAtual) return;
                                   const final = Math.min(gramasMax(a), Math.max(GRAMAS_MIN, Math.round(g)));
+                                  seguraTela(campo);
                                   marcaMudanca(ri, `Mudou ${a.nome.toLowerCase()} para ${final} g`);
                                   setCardapio((cc) => (cc ? definePeso(cc, ri, it.alimentoId, final) : cc));
                                   setVariedade(null);
@@ -909,7 +937,7 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                                       value={editando ? gramasDigitadas!.valor : String(gAtual)}
                                       onFocus={(ev) => { setGramasDigitadas({ chave: chaveTroca, valor: String(gAtual) }); ev.currentTarget.select(); }}
                                       onChange={(ev) => setGramasDigitadas({ chave: chaveTroca, valor: ev.target.value.replace(/[^\d,.]/g, "").slice(0, 5) })}
-                                      onBlur={confirma}
+                                      onBlur={(ev) => confirma(ev.currentTarget)}
                                       onKeyDown={(ev) => { if (ev.key === "Enter") (ev.currentTarget as HTMLInputElement).blur(); }}
                                       aria-label={`Gramas de ${a.nome.toLowerCase()} no ${r.nome.toLowerCase()}`}
                                       className="w-14 h-9 bg-transparent border border-white/25 text-white text-sm text-center focus:outline-none focus:border-[#BA9E50]"
@@ -924,7 +952,8 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                                   <button
                                     key={d}
                                     type="button"
-                                    onClick={() => {
+                                    onClick={(ev) => {
+                                      seguraTela(ev.currentTarget);
                                       marcaMudanca(ri, `${d > 0 ? "Aumentou" : "Diminuiu"} ${a.nome.toLowerCase()}`);
                                       setCardapio((c) => (c ? ajustaPorcao(c, ri, it.alimentoId, d) : c));
                                       setVariedade(null);
@@ -940,7 +969,8 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                               </span>
                               <button
                                 type="button"
-                                onClick={() => {
+                                onClick={(ev) => {
+                                  seguraTela(ev.currentTarget);
                                   if (trocando !== chaveTroca) trackEvent("meal_swap_clicked", { placement });
                                   setTrocando(trocando === chaveTroca ? null : chaveTroca);
                                 }}
@@ -950,14 +980,15 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                                 trocar
                               </button>
                               {/**
-                               * Excluir tira o item e reequilibra o dia com o que sobrou; o
-                               * alimento também sai das escolhas da refeição, para as versões
-                               * da semana não o trazerem de volta.
+                               * Excluir só tira o item (o resto do dia não muda; o quadro mostra
+                               * quanto saiu). O alimento também sai das escolhas da refeição,
+                               * para as versões da semana não o trazerem de volta.
                                */}
                               <button
                                 type="button"
-                                onClick={() => {
-                                  marcaMudanca(ri, `Tirou ${a.nome.toLowerCase()} (as outras porções do dia foram reajustadas)`);
+                                onClick={(ev) => {
+                                  seguraTela(ev.currentTarget);
+                                  marcaMudanca(ri, `Tirou ${a.nome.toLowerCase()}`);
                                   setCardapio((c) => (c ? excluiItem(c, ri, it.alimentoId) : c));
                                   setE((atual) => ({
                                     ...atual,
@@ -1002,7 +1033,8 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                                     <li key={alimento.id}>
                                       <button
                                         type="button"
-                                        onClick={() => {
+                                        onClick={(ev) => {
+                                          seguraTela(ev.currentTarget);
                                           marcaMudanca(ri, `Trocou ${a.nome.toLowerCase()} por ${alimento.nome.toLowerCase()}`);
                                           setCardapio((c) => {
                                             if (!c) return c;
@@ -1038,7 +1070,8 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                   <div className="mt-3 print:hidden">
                     <button
                       type="button"
-                      onClick={() => {
+                      onClick={(ev) => {
+                        seguraTela(ev.currentTarget);
                         setAdicionando(adicionando === ri ? null : ri);
                         setBuscaAdicionar("");
                         setTrocando(null);
@@ -1079,7 +1112,8 @@ export default function MonteSeuCardapio({ placement }: { placement: string }) {
                                 <li key={op.id}>
                                   <button
                                     type="button"
-                                    onClick={() => {
+                                    onClick={(ev) => {
+                                      seguraTela(ev.currentTarget);
                                       marcaMudanca(ri, `Adicionou ${rotuloPorcao(op, 1)} de ${op.nome.toLowerCase()}`);
                                       setCardapio((c) => (c ? adicionaItem(c, ri, op.id, 1) : c));
                                       setAdicionando(null);
