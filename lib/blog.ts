@@ -120005,6 +120005,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     excerpt: "Para treinar Hyrox em Alphaville, dá para ir a um box com aula específica ou montar a preparação na academia que você já frequenta. O que procurar em cada caso.",
     category: "Treinamento",
     date: "2026-10-21",
+    updatedAt: "2026-10-21",
     readTime: "7 min",
     author: "Montinho",
     tags: ["hyrox alphaville", "onde treinar hyrox", "hyrox perto de mim", "treino hyrox", "hyrox barueri"],
@@ -120015,6 +120016,9 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
       { question: "Como saber se uma academia é Training Club oficial do Hyrox?", answer: "O site oficial do Hyrox tem um buscador de Training Clubs credenciados (hyrox.com/gym-partners). Academia que só usa o nome em aula não é necessariamente credenciada; confira lá." },
       { question: "Quanto tempo de preparação para fazer o primeiro Hyrox?", answer: "Depende de onde você parte. Quem já corre e faz musculação costuma precisar de algumas semanas para treinar as estações e o ritmo de prova. Quem está começando precisa de mais tempo, construindo corrida e força antes." },
       { question: "Quantas vezes por semana treinar para o Hyrox?", answer: "Para a maioria, três a quatro sessões: uma ou duas de corrida, uma ou duas de força, e uma que junta corrida com estações. Mais que isso, sem recuperar, piora o treino seguinte." },
+      { question: "Quanto custa treinar Hyrox em Alphaville?", answer: "Depende do lugar: box e training club cobram mensalidade própria, e pelo Wellhub o OBOX aparece a partir do plano Gold (consulta de 21/10/2026). A inscrição na prova é outra conta, paga no site oficial do evento." },
+      { question: "O que é a Hyrox Academy?", answer: "É a plataforma de cursos online da Hyrox para treinadores, com o Foundation Course e o Level 1 Course, segundo o site oficial (hyrox365.com/academy). Não é academia de treino: é formação de quem dá aula." },
+      { question: "Tem Hyrox perto de mim em Barueri?", answer: "Na região, o OBOX (Av. dos Parques, 329) lista Hyrox nas aulas. Boxes de cross training, como a Crosslift Blacksheep, que tem unidade em Alphaville, trabalham com equipamento parecido; pergunte se há aula ou simulado de Hyrox antes de assinar." },
       { question: "O OBOX aceita Wellhub?", answer: "Sim: a unidade aparece no Wellhub a partir do plano Gold, segundo a página consultada em 21/10/2026, com reserva obrigatória para as aulas. Plano e regras mudam; confira no app." },
     ],
     content: `<p>O Hyrox chegou a São Paulo e a procura por "onde treinar" foi junto. Em Alphaville, há dois caminhos: um <strong>box com aula específica de Hyrox</strong> ou a <strong>academia que você já frequenta</strong>, com a preparação montada para a prova. Os dois funcionam; o que muda é o que cada um tem de equipamento.</p>
@@ -120025,6 +120029,23 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <li><strong>Academia comum:</strong> serve para quase toda a base (corrida, força, wall ball, avanço, remo). O que costuma faltar é o trenó e o SkiErg.</li>
 </ul>
 <p>Antes de assinar, confira no <a href="https://hyrox.com/gym-partners" target="_blank" rel="noopener noreferrer">buscador oficial de Training Clubs</a> se o lugar é credenciado: usar o nome "Hyrox" na aula não é o mesmo que ser clube oficial.</p>
+
+<h2>Hyrox perto de mim: outras opções na região</h2>
+<p>Além de quem tem aula com o nome Hyrox, os <strong>boxes de cross training</strong> costumam ter quase todo o equipamento da prova (remo, wall ball, kettlebell, às vezes trenó e SkiErg). A <strong>Crosslift Blacksheep</strong>, por exemplo, tem unidade em Alphaville, segundo o site da rede e a listagem do Wellhub. Pergunte se há aula ou simulado de Hyrox e quais estações dá para treinar lá. Para Barueri, veja também o guia de <a href="/blog/crossfit-barueri">CrossFit em Barueri</a>.</p>
+
+<h2>Quanto custa treinar Hyrox em Alphaville</h2>
+<p>São duas contas diferentes:</p>
+<ul>
+<li><strong>O treino:</strong> box e training club cobram mensalidade própria, que muda por plano e frequência. Pelo Wellhub, o OBOX aparece a partir do plano Gold (consulta de 21/10/2026). Na academia comum, o custo é a mensalidade que você já paga.</li>
+<li><strong>A prova:</strong> a inscrição é paga no site oficial do evento e muda por categoria e lote. Datas e inscrição da etapa paulista estão em <a href="/blog/hyrox-sao-paulo-2026">Hyrox São Paulo 2026</a>.</li>
+</ul>
+
+<h2>Hyrox Academy, Training Club e Performance Coach: o que é cada um</h2>
+<ul>
+<li><strong>Training Club:</strong> academia ou box credenciado pela Hyrox, que aparece no <a href="https://hyrox.com/gym-partners" target="_blank" rel="noopener noreferrer">buscador oficial</a>.</li>
+<li><strong>Hyrox Academy:</strong> a plataforma de cursos online da Hyrox para treinadores (Foundation Course e Level 1 Course), segundo o <a href="https://www.hyrox365.com/academy" target="_blank" rel="noopener noreferrer">site oficial</a>. Não é um lugar para treinar.</li>
+<li><strong>Performance Coach:</strong> o treinador credenciado que fez esses cursos.</li>
+</ul>
 
 <h2>O que a prova exige</h2>
 <p>São <strong>8 km de corrida</strong>, divididos em 8 trechos de 1 km, e depois de cada trecho uma estação. A explicação completa está em <a href="/blog/hyrox-o-que-e">o que é o Hyrox</a>.</p>
@@ -120082,6 +120103,9 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <h2>Fontes</h2>
 <ul>
 <li><a href="https://hyrox.com/gym-partners" target="_blank" rel="noopener noreferrer">HYROX — Find a HYROX Training Club (oficial)</a></li>
+<li><a href="https://www.hyrox365.com/academy" target="_blank" rel="noopener noreferrer">HYROX365 — Academy (cursos para treinadores, oficial)</a></li>
+<li><a href="https://crossliftblacksheep.com.br" target="_blank" rel="noopener noreferrer">Crosslift Blacksheep — unidades, incluindo Alphaville</a></li>
+<li><a href="https://wellhub.com/pt-br/search/partners/blacksheep-alphaville-alphaville-industrial-barueri/" target="_blank" rel="noopener noreferrer">Wellhub — BlackSheep Alphaville</a></li>
 <li><a href="https://wellhub.com/pt-br/search/partners/obox-jacarei/" target="_blank" rel="noopener noreferrer">Wellhub — Obox Santana de Parnaíba (aulas, endereço e plano)</a></li>
 <li><a href="https://www.instagram.com/obox.trainingclub/" target="_blank" rel="noopener noreferrer">Instagram — OBOX Training Club Alphaville</a></li>
 </ul>`,

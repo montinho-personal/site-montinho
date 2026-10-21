@@ -1167,3 +1167,9 @@ Escritos a partir do Search Console (90 dias), sem o export do Answer the Public
 - `academia-de-condominio-quais-aparelhos-comprar` (prints: autocompletar, PAA, outras pesquisas, visão geral por IA e SERP). Autocompletar: container, completa, kit, mini, alugada/aluguel, aparelhos (barueri, olx, preço). PAA: quanto custa, regras de uso, que empresa monta, tamanho ideal, como montar. Outras pesquisas: precisa de professor, kit completa, franquia, aluguel/locação, container, projeto pdf, equipamentos.
   - Entraram: H2 de passo a passo, tamanho ideal, quanto custa (os fatores, sem número), comprar, alugar ou contêiner, assembleia, regras de uso, precisa de professor e academia ao ar livre. Mais 9 FAQs. updatedAt 2026-10-21.
   - Fora: "R$ 44.000" e "30 a 40 m²" (visão geral por IA e um site de fornecedor, uma fonte só), legislação RJ (fora da região), franquia (é intenção de negócio), "projeto pdf".
+
+## 2026-10-21 — Prints de Hyrox Alphaville
+
+`hyrox-alphaville-onde-treinar`. Autocompletar: valor, abc, são paulo, perto de mim, academia, academy. Outras pesquisas: crossfit barueri, hyrox são paulo. Na SERP: Crosslift Blacksheep (cross training, com unidade em Alphaville) e um pacote local com CTs de Barueri. A visão geral por IA diz que não há centro oficial Hyrox em Alphaville e cita boxes de CrossFit.
+- Entraram: H2 "Hyrox perto de mim: outras opções" (Crosslift Blacksheep, pelo site da rede e pelo Wellhub, sem afirmar que tem aula de Hyrox), "quanto custa" (o treino e a prova separados) e "Hyrox Academy, Training Club e Performance Coach" (Academy pelo site oficial hyrox365.com/academy). Mais 3 FAQs. updatedAt 2026-10-21.
+- Fora: "Alpha Fitness" e "CrossFit Alphaville" (só aparecem na visão geral por IA), os CTs do pacote local (sem fonte de que treinam Hyrox) e o ABC (outra região).
