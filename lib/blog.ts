@@ -82796,7 +82796,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "A Gaviões construiu fama em SP como academia de musculação raiz. Veja o que esperar em Alphaville, para quem ela é indicada e como extrair o máximo.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-10-08",
+    updatedAt: "2026-10-21",
     readTime: "8 min",
     author: "Montinho",
     tags: ["academia gaviões","academia em alphaville","musculação","hipertrofia","são paulo"],
@@ -82825,6 +82825,26 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   <img src="/blog-images/academia-gavioes-alphaville.webp" alt="Antes e depois de Montinho, personal trainer em Alphaville, transformação corporal com musculação — Academia Gaviões em Alphaville" title="Academia Gaviões em Alphaville — Montinho Personal Trainer" width="1600" height="1497" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;max-width:720px;display:block;margin:0 auto;"/>
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Academia Gaviões em Alphaville: avaliação de quem treina e atende na região.</figcaption>
 </figure>
+
+<h2>Endereço e horário: a Gaviões Alphaville é 24 horas</h2>
+<p><strong>Av. Juruá, 253, Alphaville Industrial, Barueri (CEP 06455-010).</strong> A unidade funciona <strong>24 horas, todos os dias</strong>: o Wellhub e o TotalPass listam o horário de 00:00 às 23:59, e a academia se apresenta no Instagram (@academiagavioes24h_alphaville) como a primeira academia 24 horas do Brasil, desde 1974. Em feriado, confirme com a unidade se alguma área (aulas, recepção) muda de horário.</p>
+
+<h2>A Gaviões Alphaville aceita Gympass (Wellhub) e TotalPass?</h2>
+<ul>
+<li><strong>Wellhub (Gympass):</strong> aceita, a partir do plano <strong>Silver+</strong>, segundo a página da unidade no app (consulta de 21/10/2026).</li>
+<li><strong>TotalPass:</strong> a unidade aparece na TotalPass. Um texto do blog da TotalPass a lista a partir do plano TP3, mas sem data: confira o plano no app antes de ir.</li>
+</ul>
+<p>Atenção ao nome parecido: o <strong>Pilates Gaviões Alphaville</strong> aparece no Wellhub como parceiro separado, no mesmo endereço, com outro plano mínimo.</p>
+
+<h2>Quanto custa a mensalidade da Gaviões Alphaville (e a diária)</h2>
+<p>A Gaviões não publica uma tabela de preço fixa da unidade, e os valores que circulam em vídeos e sites de terceiros não batem entre si. O preço da mensalidade direta, dos planos e da diária você confirma na recepção ou no WhatsApp da unidade, que é quem pode garantir o valor do dia.</p>
+<p>Para quem já tem convênio pela empresa, a conta é outra: pelo Wellhub, a unidade entra a partir do Silver+ (R$ 199,99/mês na listagem consultada em 21/10/2026); pelo TotalPass, o valor depende do plano que a sua empresa oferece.</p>
+
+<h2>Modalidades e aulas na Gaviões Alphaville</h2>
+<p>Além da musculação, as listagens dos apps citam: <strong>funcional, yoga, pilates, bike indoor, muay thai, boxe, GAP</strong> (TotalPass) e <strong>fight, treino híbrido, dança e funcional infantil</strong> (Wellhub). A grade muda; a própria unidade divulga matrículas e grade de aulas pelo Instagram.</p>
+
+<h2>Gaviões em Barueri e outras unidades</h2>
+<p>Quem busca "Gaviões Barueri" costuma estar procurando esta mesma unidade, que fica em Alphaville, dentro do município de Barueri. A análise da proposta da rede para quem mora em Barueri está em <a href="/blog/academia-gavioes-barueri">Academia Gaviões em Barueri</a>. Para ver todas as unidades da rede, use o site oficial da Gaviões.</p>
 
 <h2>A proposta da Gaviões: musculação como identidade</h2>
 <p>Enquanto muitas redes tentam agradar todos os públicos, a Gaviões cresceu em São Paulo fazendo o oposto: <strong>assumir a musculação como núcleo da marca</strong>. Isso cria um efeito poderoso — quem entra sabe o que veio fazer, e o salão reflete isso.</p>
@@ -82886,8 +82906,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Gaviões ou Ironberg?", answer: "Ambas atendem quem leva musculação a sério, com identidades próprias. Visite as duas no seu horário real de treino e compare ambiente, estrutura e condições de plano." },
       { question: "Onde fica a Academia Gaviões em Alphaville?", answer: "Na Av. Juruá, 253, Alphaville Industrial, Barueri — endereço que aparece na página da unidade no Wellhub e nos anúncios de vaga da própria rede." },
       { question: "A Gaviões Alphaville funciona 24 horas?", answer: "Funciona: a unidade leva o nome Gaviões 24h, e a página dela no Wellhub lista o horário de 00:00 às 23:59 todos os dias. Em feriados o horário pode mudar — vale confirmar com a unidade." },
-      { question: "A Gaviões Alphaville aceita Gympass (Wellhub) ou TotalPass?", answer: "A unidade aparece como parceira no Wellhub; o acesso depende do plano que você tem no app. Para TotalPass, confirme na busca do app ou com a recepção antes de ir." },
-      { question: "Qual a mensalidade da Gaviões em Alphaville?", answer: "Os planos e valores mudam com frequência e por unidade. O preço atualizado está no site oficial da rede ou na recepção da unidade de Alphaville." },
+      { question: "A Gaviões Alphaville aceita Gympass (Wellhub) ou TotalPass?", answer: "Aceita os dois. No Wellhub, a partir do plano Silver+ (consulta de 21/10/2026); na TotalPass a unidade aparece listada, e o blog da TotalPass cita o plano TP3. Confira o plano no app antes de ir." },
+      { question: "Qual a mensalidade da Gaviões em Alphaville?", answer: "A Gaviões não publica tabela fixa, e os valores que circulam em sites de terceiros não batem entre si. Confirme mensalidade e planos na recepção ou no WhatsApp da unidade." },
+      { question: "Qual é a diária da Academia Gaviões Alphaville?", answer: "O valor da diária não é publicado pela academia. Pergunte na recepção ou no WhatsApp da unidade; para quem tem Wellhub ou TotalPass, o acesso pelo app pode sair mais em conta que a diária avulsa." },
+      { question: "Qual plano do Wellhub aceita na Gaviões Alphaville?", answer: "A partir do Silver+, segundo a página da unidade no Wellhub consultada em 21/10/2026. O Pilates Gaviões, no mesmo endereço, é outro parceiro, com outro plano." },
+      { question: "Qual a academia mais cara de Alphaville?", answer: "As de proposta premium, com serviços como valet, spa e áreas exclusivas. A comparação está no guia de academias premium de Alphaville; a Gaviões fica fora desse grupo, com foco em musculação." },
       { question: "Dá para treinar com personal trainer na Gaviões?", answer: "Depende das regras da unidade para personal externo — algumas academias liberam, outras cobram taxa ou só aceitam profissionais cadastrados. Pergunte na recepção antes de combinar com o personal." },
     ],
   },

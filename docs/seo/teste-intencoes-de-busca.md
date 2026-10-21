@@ -1173,3 +1173,12 @@ Escritos a partir do Search Console (90 dias), sem o export do Answer the Public
 `hyrox-alphaville-onde-treinar`. Autocompletar: valor, abc, são paulo, perto de mim, academia, academy. Outras pesquisas: crossfit barueri, hyrox são paulo. Na SERP: Crosslift Blacksheep (cross training, com unidade em Alphaville) e um pacote local com CTs de Barueri. A visão geral por IA diz que não há centro oficial Hyrox em Alphaville e cita boxes de CrossFit.
 - Entraram: H2 "Hyrox perto de mim: outras opções" (Crosslift Blacksheep, pelo site da rede e pelo Wellhub, sem afirmar que tem aula de Hyrox), "quanto custa" (o treino e a prova separados) e "Hyrox Academy, Training Club e Performance Coach" (Academy pelo site oficial hyrox365.com/academy). Mais 3 FAQs. updatedAt 2026-10-21.
 - Fora: "Alpha Fitness" e "CrossFit Alphaville" (só aparecem na visão geral por IA), os CTs do pacote local (sem fonte de que treinam Hyrox) e o ABC (outra região).
+
+## 2026-10-21 — academia-gavioes-alphaville (prints)
+
+GSC 90 dias: ~477 impressões nas variações de "gaviões alphaville", posição ~12, 0 cliques. ~41 delas são de "gaviões barueri" e caem nesta página.
+- Prints (21/10). Autocompletar: mensalidade, aceita gympass, preço, aceita totalpass, wellhub, gympass, totalpass. PAA: quanto custa a mensalidade, qual plano aceita, qual a diária, qual a academia mais cara de Alphaville. Outras pesquisas: aceita gympass, aceita totalpass, preço, valor mensalidade, 24h alphaville, unidades. Na SERP: Instagram da unidade (19,4 mil seguidores) e a página da TotalPass.
+- Entraram: H2 de endereço e horário 24h (Wellhub e TotalPass, 00:00–23:59), Wellhub e TotalPass (Silver+ no Wellhub; TP3 citado no blog da TotalPass, sem data), mensalidade e diária (a academia não publica, e os valores de terceiros divergem: o texto diz isso e não dá número), modalidades (listagens dos dois apps) e "Gaviões em Barueri e outras unidades". FAQs de diária, plano do Wellhub e academia mais cara; FAQs de convênio e mensalidade atualizadas. updatedAt 2026-10-21.
+- O site oficial (academiagavioes.com.br) não abriu deste ambiente (bloqueio do proxy). Não foi contornado. "Desde 1974" e "primeira academia 24h do Brasil" estão atribuídos ao Instagram da unidade.
+- Fora: diária de R$ 50 e mensalidade de R$ 159/169 (TikTok e sites de terceiros, que divergem entre si).
+- Título e descrição: proposta ATUAL/PROPOSTA/MOTIVO enviada ao Montinho; não mudou ainda.
