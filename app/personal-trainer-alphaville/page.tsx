@@ -399,7 +399,7 @@ export default function PersonalTrainerAlphaville() {
             {[
               "Atendimento em domicílio — treino em casa, com estrutura adaptada ao espaço e aos equipamentos disponíveis",
               "Condomínio — atendimento no espaço fitness do seu condomínio, usando a estrutura que você já tem a poucos metros de casa",
-              "Arena 18 — atendimento presencial na Arena 18, em Alphaville",
+              "Arena 18 — atendimento presencial na Arena 18 (R. Mario Quintana, 144, Melville Empresarial II, Barueri)",
               "Outras academias — já treina em outra academia? Dependendo das regras para personal externo, também podemos fazer o atendimento lá. Me diga onde você treina e verificamos a possibilidade",
               "Consultoria online — protocolo individualizado à distância, ideal para quem viaja com frequência",
             ].map((item, i) => (

@@ -1216,3 +1216,12 @@ GSC 90 dias até 21/10: 232 impressões, 6 cliques, posição 7,5. Primeira pesq
 - Fora: Carapicuíba e bairros de São Paulo (outras cidades), telefone da 24 Health Club (só em diretórios), endereço da Arena 18 (sem fonte publicada no site).
 - Título e descrição: o Montinho decidiu manter os atuais ("Academia 24 Horas em Barueri: Onde Treinar") em 21/10. Não repropor. Endereço da Arena 18: o Montinho vai confirmar.
 - 21/10, depois: print do Montinho do perfil da Arena 18 no Google mostra R. Mario Quintana, 144, Melville Empresarial II, Barueri, e "Fecha 23:00". Isso conflita com `vinteQuatroHoras: true` e `regiao: centro-industrial-empresarial` em lib/academias/base.ts (verificação de 26/08) e com textos que dizem "Arena 18 funciona 24 horas" (academias-em-alphaville, 10-melhores e outros). A Arena 18 saiu da lista de 24h de academia-24-horas-barueri. O resto do site aguarda a confirmação do Montinho.
+
+## 2026-10-21 — Arena 18: endereço e horário corrigidos no site inteiro
+
+O Montinho confirmou: a Arena 18 fecha às 23h (não é 24 horas) e fica na R. Mario Quintana, 144, Melville Empresarial II, Barueri (CEP 06485-350). Fonte: print do perfil da Arena 18 no Google + confirmação dele.
+- Ritmo: uma correção mecânica do mesmo fato em vários lugares; foi num PR só, para o site não ficar com duas versões.
+- Saiu de "academia 24 horas" em academias-em-alphaville, academias-perto-de-alphaville, 10-melhores-academias-de-alphaville e academia-24-horas-barueri (nos dois primeiros, a Gaviões 24h entrou no lugar). Saiu das listas de "Alphaville Industrial", com a menção ao Melville Empresarial II.
+- arena-18-alphaville: endereço e horário no topo e no FAQ (+ "Onde fica a Arena 18?"); updatedAt 2026-10-21. 10-melhores: endereço na seção da Arena 18. /personal-trainer-alphaville: endereço na lista de locais.
+- lib/academias/base.ts: vinteQuatroHoras false, fechaDiaUtil 23 e região "Barueri (fora de Alphaville)". O teste A de scripts/academias-test.ts deixou de exigir 3 resultados, porque eles dependiam da Arena 18 ser 24h, e passou a conferir que academia sem o dado continua na lista.
+- updatedAt não mudou nos guias (correção de um dado numa lista).
