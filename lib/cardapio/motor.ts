@@ -719,29 +719,28 @@ export function alternativas(
 }
 
 /**
- * Tira um item do prato e reequilibra o dia com o que sobrou.
+ * Tira um item do prato. Só isso.
  *
- * As porções dos outros itens se ajustam pelo mesmo refinamento da geração
- * (presas às porções caseiras), então o dia volta para perto da meta sem
- * trazer alimento novo. Se a refeição ficar vazia, ela fica vazia: a pessoa
- * tirou, a ferramenta não repõe por conta própria.
+ * Até 21/10/2026 o excluir reequilibrava o dia inteiro com o que sobrava, e
+ * o Montinho viu o efeito no celular: tirar o arroz do almoço aumentava o
+ * pão do café e deixava o jantar com meio filé e 400 g de arroz. Para quem
+ * está montando o próprio cardápio, uma refeição que muda sem ter sido
+ * tocada parece defeito, e desfaz o que a pessoa acabou de ajustar.
+ *
+ * Agora vale a mesma regra do +/−, das gramas e do adicionar: o motor não
+ * mexe no resto do dia. O quadro de mudança mostra na hora quanto o dia
+ * perdeu em calorias e macros, e a decisão de compensar é dela. Se a
+ * refeição ficar vazia, ela fica vazia: a ferramenta não repõe por conta
+ * própria.
  */
 export function excluiItem(c: CardapioDia, refeicaoIdx: number, alimentoId: string): CardapioDia {
-  const novo: CardapioDia = {
+  return {
     ...c,
     refeicoes: c.refeicoes.map((r, i) => ({
       ...r,
       itens: r.itens.filter((it) => i !== refeicaoIdx || it.alimentoId !== alimentoId).map((it) => ({ ...it })),
     })),
   };
-  const extras = new Set(
-    novo.refeicoes.flatMap((r) =>
-      r.itens.filter((i) => ALIMENTO_CARDAPIO_POR_ID.get(i.alimentoId)?.grupo === "gordura").map((i) => i.alimentoId)
-    )
-  );
-  refinaDia(novo, extras);
-  for (const r of novo.refeicoes) r.itens = r.itens.filter((i) => i.porcoes > 0);
-  return novo;
 }
 
 /**

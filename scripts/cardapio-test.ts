@@ -722,7 +722,8 @@ console.log("\n" + "=".repeat(64) + "\nA SAÍDA DO FIM: WHATSAPP COM CONTEXTO, S
   ok("excluir tira o item da refeição", !sem.refeicoes[ri].itens.some((i) => i.alimentoId === alvo));
   const antes = new Set(c.refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId)));
   ok("excluir não traz alimento novo", sem.refeicoes.flatMap((r) => r.itens.map((i) => i.alimentoId)).every((id) => antes.has(id)));
-  ok("excluir não mexe nas outras refeições além das porções", sem.refeicoes.every((r, i) => i === ri || r.itens.length <= c.refeicoes[i].itens.length));
+  // Desde 21/10/2026 o excluir não reequilibra o dia: nenhuma outra porção muda (nem nas outras refeições, nem na mesma).
+  ok("excluir não mexe em nenhuma outra porção do dia", sem.refeicoes.every((r, i) => JSON.stringify(r.itens) === JSON.stringify(c.refeicoes[i].itens.filter((x) => i !== ri || x.alimentoId !== alvo))));
   const it0 = c.refeicoes[ri].itens.find((i) => ALIMENTO_CARDAPIO_POR_ID.get(i.alimentoId)!.grupo !== "vegetal")!;
   const a0 = ALIMENTO_CARDAPIO_POR_ID.get(it0.alimentoId)!;
   const mais = ajustaPorcao(c, ri, it0.alimentoId, 1);

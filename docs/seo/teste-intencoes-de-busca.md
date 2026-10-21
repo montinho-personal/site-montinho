@@ -1142,3 +1142,10 @@ GSC 28 dias: 9.285 impressões, 6 cliques, posição 14. "ramon dino altura" e v
 - Entraram: H2 de altura (181 cm), idade e início aos 14 anos (CNN Brasil e Terra), tabela de altura Ramon x Cbum (1,85 m, CNN Brasil e Hipertrofia.org) e 5 FAQs. updatedAt 2026-10-20.
 - Fora: peso fora de temporada em número (Wikipédia 118 kg x CNN 122 kg, sem número oficial), salário e fortuna (sem fonte), "natural" (afirmação que não dá para verificar), "antes e depois" (as fotos são de terceiros) e "1,73 m" (outro atleta).
 - Título e descrição: proposta ATUAL/PROPOSTA/MOTIVO enviada; o Montinho decidiu manter como está (20/10). Não repropor.
+
+## 2026-10-21 — Monte seu Cardápio: excluir não mexe no resto do dia, e a página para de pular
+
+Pedido do Montinho, a partir de um print do celular.
+- Excluir agora só tira o item. Antes reequilibrava o dia inteiro: no teste, tirar o arroz do almoço aumentou o pão do café e deixou o jantar com meio filé e 400 g de arroz. Vale a mesma regra do +/−, das gramas e do adicionar: nada muda numa refeição que a pessoa não tocou, e o quadro de mudança mostra o efeito. Teste atualizado em `scripts/cardapio-test.ts`.
+- Rolagem: o quadro de mudança sai de uma refeição e aparece em outra, e o aviso de meta aparece ou some no topo. No celular isso subia a página uns 350 px e o botão tocado saía de baixo do dedo. Agora a refeição mexida fica parada na tela (`seguraTela` + `useLayoutEffect`). Conferido no Chromium em 390 px: +, −, gramas, trocar, adicionar e excluir, com o título da refeição na mesma posição antes e depois.
+- Auditoria refeita: 1.152 cardápios com soma das partes = total (0 divergências). Na tela, depois de +, gramas digitadas, excluir e adicionar, em 3 casos (onívoro 2.000/4, onívoro 2.800/5, vegetariano 1.800/3), cada refeição e os 4 totais do dia batem com a conta grama × tabela (diferença ≤ 1). O print do Montinho (150 g de frango, 50 g de arroz e 100 g de legumes) dá 337,5 kcal e 50,4 g de proteína, e a tela mostra 338 e 50.
