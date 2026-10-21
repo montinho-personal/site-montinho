@@ -176,6 +176,30 @@ acompanhar o que acontece depois é o trabalho. Regras para toda copy:
   estratégico, title/description sem mostrar ATUAL / PROPOSTA / MOTIVO.
 - **Página por página**, com aprovação do Montinho entre uma e outra.
 
+## Título e descrição: confirmar e deixar uma pergunta aberta
+
+Regra pedida pelo Montinho em 21/10/2026, para toda proposta de título e
+descrição daqui em diante (continua valendo o ATUAL / PROPOSTA / MOTIVO).
+
+- **Título com as palavras que as pessoas digitam.** Tire os termos do
+  autocompletar, do PAA e do export (ex.: "mensalidade", "aceita Gympass",
+  "telefone"). Termo que não aparece na pesquisa ("vale a pena", "análise
+  honesta") sai do título.
+- **Descrição confirma em 1 segundo e deixa a pergunta aberta.** Dê o fato
+  que mostra que a página é a certa (endereço, 24h, aceita Wellhub) e deixe
+  para a página o que a pessoa ainda quer saber (qual plano, mensalidade,
+  diária, se vale a pena). Não entregar a resposta inteira na descrição.
+- **Por que o fato não rouba o clique:** em busca de nome de lugar, o
+  Google já mostra endereço e horário no perfil do Maps. Quem só queria
+  isso não clicaria de qualquer jeito; a descrição vaga é a que perde o
+  clique de quem ainda tem dúvida. E fato verificado na página é o que a
+  visão geral por IA cita.
+- **Sem promessa nem número sem fonte** na descrição: mesmo critério do
+  texto.
+- **Medir:** registrar a linha de base do GSC (impressões, cliques,
+  posição da página) no dia da troca e comparar em 28 dias. Se o clique
+  não subir, voltar.
+
 ## Locais de atendimento: guia de academia ≠ local confirmado
 
 Atendimento presencial confirmado: **Arena 18**, condomínios e em casa.

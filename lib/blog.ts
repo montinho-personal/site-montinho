@@ -82791,8 +82791,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   {
     slug: "academia-gavioes-alphaville",
     title: "Academia Gaviões em Alphaville: O Que Esperar",
-    metaTitle: "Gaviões 24h Alphaville: Endereço, Horário e Vale a Pena?",
-    metaDescription: "Academia Gaviões em Alphaville: para quem é indicada a rede de musculação forte em SP, prós e contras honestos e como aproveitar. Confira a análise.",
+    metaTitle: "Gaviões Alphaville: Mensalidade, Gympass, TotalPass e 24h",
+    metaDescription: "Gaviões Alphaville (Av. Juruá, 253) é 24h e aceita Wellhub e TotalPass. Veja qual plano entra, como saber a mensalidade e a diária e para quem vale a pena.",
     excerpt: "A Gaviões construiu fama em SP como academia de musculação raiz. Veja o que esperar em Alphaville, para quem ela é indicada e como extrair o máximo.",
     category: "Academias",
     date: "2026-07-02",
