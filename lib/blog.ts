@@ -49153,6 +49153,7 @@ Mini-série 3: 3 reps → encerrar aqui (< 3 reps = fatigado demais)<br>
 
 <h3>Leia Também</h3>
 <ul>
+<li><a href="/blog/academia-de-condominio-quais-aparelhos-comprar">Academia de condomínio: quais aparelhos comprar e como montar</a></li>
 <li><a href="/blog/treino-upper-lower-superior-inferior">Treino Upper/Lower: Guia Completo</a></li>
 <li><a href="/blog/treino-abcd-para-hipertrofia">Treino ABCD para Hipertrofia</a></li>
 <li><a href="/blog/treino-funcional-vs-musculacao">Treino Funcional para Iniciantes</a></li>
@@ -79734,7 +79735,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>O resultado? Executivos que pagam plano e não vão. Moradores de condomínio com academia embaixo de casa e treino aleatório. Energia caindo, estresse subindo.</p>
 <p>Este guia mostra <strong>onde treinar no Tamboré</strong> e arredores — e, mais importante, como fazer o treino caber na sua rotina. Porque <strong>agenda cheia não é desculpa, é variável de planejamento</strong>.</p>
 <h2>Resposta rápida: onde treinar no Tamboré?</h2>
-<p>A região do Tamboré é atendida pelas academias do eixo Alphaville-Barueri: redes econômicas como <strong>Smart Fit</strong> e <strong>Bluefit</strong>, opções premium como <strong>Bodytech</strong> e <strong>Scelta</strong>, e academias de musculação forte como <strong>Ironberg</strong>, <strong>Gaviões</strong> e <strong>NitroGym</strong>, além de espaços como <strong>Scelta</strong> e <strong>24 Wellness</strong>. Consulte o site oficial de cada rede para localizar a unidade mais próxima e confirmar valores.</p>
+<p>A região do Tamboré é atendida pelas academias do eixo Alphaville-Barueri: redes econômicas como <strong>Smart Fit</strong> e <strong>Bluefit</strong> (a unidade do bairro fica na Av. Tucunaré: veja a <a href="/blog/bluefit-tambore">análise da Bluefit Tamboré</a>), opções premium como <strong>Bodytech</strong> e <strong>Scelta</strong>, e academias de musculação forte como <strong>Ironberg</strong>, <strong>Gaviões</strong> e <strong>NitroGym</strong>, além de espaços como <strong>Scelta</strong> e <strong>24 Wellness</strong>. Consulte o site oficial de cada rede para localizar a unidade mais próxima e confirmar valores.</p>
 <h2>O mapa do treino na região</h2>
 <h3>Perto do trabalho: o eixo empresarial</h3>
 <p>Quem trabalha no <strong>Centro Industrial e Empresarial de Alphaville</strong> ou no entorno do <strong>Shopping Tamboré</strong> tem opções a minutos de carro. Treinar no <strong>horário de almoço</strong> ou antes do expediente evita o trânsito da <strong>Rodovia Castelo Branco</strong> e o pico das 18h.</p>
@@ -84029,7 +84030,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Bluefit em Barueri: endereços das unidades</h2>
 <ul>
 <li><strong>Bluefit Barueri (Bethaville)</strong> — Av. Trindade, 344, loja 2023, Bethaville I, Barueri (CEP 06404-326), segundo o site oficial da rede e o Instagram @bluefitbarueri.</li>
-<li><strong>Bluefit Tamboré</strong> — Av. Tucunaré, 1498, sala 02, piso superior, bloco 02, Tamboré, Barueri, segundo o site oficial.</li>
+<li><strong>Bluefit Tamboré</strong> — Av. Tucunaré, 1498, sala 02, piso superior, bloco 02, Tamboré, Barueri, segundo o site oficial. Horário e estrutura na <a href="/blog/bluefit-tambore">análise da Bluefit Tamboré</a>.</li>
 <li><strong>Bluefit Alphaville</strong> — Alameda Amazonas, 388, Alphaville Centro Industrial. Horário, telefone e convênios na <a href="/blog/bluefit-alphaville">análise da Bluefit Alphaville</a>.</li>
 </ul>
 <p>Horário, telefone, mensalidade e convênios (Wellhub/Gympass, TotalPass) mudam por unidade: confirme no site oficial ou no Instagram da unidade antes de ir.</p>
@@ -119332,6 +119333,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 
 <h2>Leia também</h2>
 <ul>
+<li><a href="/blog/hyrox-alphaville-onde-treinar">Hyrox em Alphaville: onde treinar e como se preparar</a></li>
 <li><a href="/blog/treino-hibrido-forca-corrida-2025">Treino híbrido: como combinar força e corrida</a></li>
 <li><a href="/blog/crossfit-emagrece">CrossFit emagrece? Quantas calorias uma aula queima</a></li>
 <li><a href="/blog/corrida-para-iniciantes">Corrida para iniciantes</a></li>
@@ -119732,6 +119734,280 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 
 <p>Quem teve filho recentemente ou tem diástase precisa de outra progressão: veja <a href="/blog/diastase-abdominal-exercicio">exercícios para diástase abdominal</a> e converse com quem acompanha a sua recuperação.</p>
 `,
+  },
+  {
+    slug: "bluefit-tambore",
+    title: "Bluefit Tamboré: Endereço, Horário e Vale a Pena?",
+    metaTitle: "Bluefit Tamboré: Endereço, Horário e Vale a Pena?",
+    metaDescription: "Bluefit Tamboré: Av. Tucunaré, 1498, horário (5h à meia-noite nos dias úteis), estacionamento, área B-Cross, Wellhub e para quem a unidade vale a pena.",
+    excerpt: "A Bluefit tem três unidades na região, e a do Tamboré fica na Av. Tucunaré. Endereço, horário, estrutura, convênio e o que observar antes de assinar.",
+    category: "Academias",
+    date: "2026-10-21",
+    readTime: "6 min",
+    author: "Montinho",
+    tags: ["bluefit tamboré", "academia no tamboré", "bluefit barueri", "academia low cost", "musculação tamboré"],
+    faq: [
+      { question: "Onde fica a Bluefit Tamboré?", answer: "Na Av. Tucunaré, 1498, sala 02, piso superior, bloco 02, Tamboré, Barueri (CEP 06460-020), segundo o site oficial da Bluefit." },
+      { question: "Qual o horário da Bluefit Tamboré?", answer: "Segundo a página da unidade no Wellhub, de segunda a sexta das 5h às 23h59, sábado das 8h às 17h e domingo das 8h às 14h. Feriado pode mudar o horário: confira no app da Bluefit antes de ir." },
+      { question: "A Bluefit Tamboré aceita Wellhub (Gympass)?", answer: "Aceita: a unidade aparece no Wellhub a partir do plano Silver (consulta de 21/10/2026). Plano e preço do agregador mudam, então procure a unidade no app antes de ir." },
+      { question: "A Bluefit Tamboré tem estacionamento?", answer: "Tem. O site oficial da Bluefit cita estacionamento amplo na unidade, e a listagem do Wellhub também marca estacionamento." },
+      { question: "Bluefit Tamboré e Bluefit Barueri são a mesma academia?", answer: "Não. São unidades diferentes: a do Tamboré fica na Av. Tucunaré, 1498, e a de Barueri fica no Bethaville, na Av. Trindade, 344. Há ainda a Bluefit Alphaville, na Alameda Amazonas, 388." },
+      { question: "A Bluefit Tamboré tem aulas?", answer: "O site oficial cita a área B-Cross, de treino funcional de alta intensidade, e o Wellhub lista treino funcional entre as atividades. A grade de aulas muda por dia: a Bluefit mostra a da semana na página da unidade." },
+      { question: "Quanto custa a Bluefit Tamboré?", answer: "A Bluefit trabalha na faixa econômica, mas o preço muda com o plano e com as promoções do momento. O valor atualizado está no site oficial, na página da unidade Tamboré." },
+      { question: "Posso levar personal trainer na Bluefit Tamboré?", answer: "A listagem do Wellhub marca personal trainer entre os serviços, mas a regra para personal de fora da academia é da unidade. Pergunte na recepção antes de combinar o treino." },
+    ],
+    content: `<p>A Bluefit tem três unidades na região, e é comum confundir. A do <strong>Tamboré</strong> fica na Av. Tucunaré, a de <strong>Barueri</strong> fica no Bethaville e a de <strong>Alphaville</strong> fica na Alameda Amazonas. Se o seu trajeto passa pela Tucunaré, esta é a que interessa.</p>
+
+<h2>Resposta direta: a Bluefit Tamboré vale a pena?</h2>
+<p><strong>Vale para quem quer musculação e cardio com mensalidade econômica, estacionamento e horário longo nos dias úteis, e já sabe o que vai fazer quando chegar.</strong> É uma academia de rede low-cost: estrutura boa para o preço, instrutor no salão, mas sem acompanhamento individual incluído no plano.</p>
+
+<h2>Endereço da Bluefit Tamboré</h2>
+<p><strong>Av. Tucunaré, 1498, sala 02, piso superior, bloco 02, Tamboré, Barueri (CEP 06460-020)</strong>, segundo o site oficial da Bluefit. A academia fica no piso superior do prédio.</p>
+
+<h2>Horário de funcionamento</h2>
+<table>
+<tr><th>Dia</th><th>Horário</th></tr>
+<tr><td>Segunda a sexta</td><td>5h às 23h59</td></tr>
+<tr><td>Sábado</td><td>8h às 17h</td></tr>
+<tr><td>Domingo</td><td>8h às 14h</td></tr>
+</table>
+<p><em>Fonte: página da unidade no Wellhub, consultada em 21/10/2026. Feriado pode mudar o horário; o app da Bluefit é a fonte que a própria rede atualiza.</em></p>
+
+<h2>Estrutura: o que tem na unidade</h2>
+<ul>
+<li><strong>Estacionamento amplo</strong> e <strong>ambiente climatizado</strong>, segundo o site oficial;</li>
+<li><strong>Área B-Cross</strong>, para treino funcional de alta intensidade;</li>
+<li>Áreas de <strong>musculação, pesos livres, cardio e alongamento</strong>, vestiário com chuveiro e armários, segundo a listagem do Wellhub.</li>
+</ul>
+
+<h2>Wellhub, TotalPass e mensalidade</h2>
+<p>A unidade aparece no <strong>Wellhub a partir do plano Silver</strong> (consulta de 21/10/2026). Para TotalPass, procure a unidade no app: os convênios mudam por unidade e por plano. A mensalidade direta está no site da Bluefit, na página da unidade, e muda com as promoções.</p>
+
+<h2>Bluefit Tamboré, Barueri ou Alphaville: qual escolher</h2>
+<table>
+<tr><th>Unidade</th><th>Endereço</th><th>Faz sentido para</th></tr>
+<tr><td>Tamboré</td><td>Av. Tucunaré, 1498</td><td>Quem mora ou trabalha no Tamboré e vai de carro</td></tr>
+<tr><td><a href="/blog/bluefit-barueri">Barueri (Bethaville)</a></td><td>Av. Trindade, 344</td><td>Quem mora no Bethaville ou no Centro de Barueri</td></tr>
+<tr><td><a href="/blog/bluefit-alphaville">Alphaville</a></td><td>Alameda Amazonas, 388</td><td>Quem trabalha no Centro Industrial e Empresarial</td></tr>
+</table>
+<p>A melhor unidade é a que fica no caminho que você já faz. Academia que exige desvio é a primeira a ser cortada na semana corrida.</p>
+
+<h2>Para quem a Bluefit Tamboré é indicada</h2>
+<ul>
+<li>Quem <strong>já treina</strong> e quer estrutura de musculação sem pagar mensalidade premium;</li>
+<li>Quem <strong>treina cedo ou à noite</strong> nos dias úteis: abre às 5h e fecha à meia-noite;</li>
+<li>Quem vai de carro e quer <strong>estacionamento</strong> sem disputar vaga na rua.</li>
+</ul>
+
+<h3>Quem deve pensar duas vezes</h3>
+<ul>
+<li>Quem <strong>treina no fim de semana à tarde</strong>: sábado fecha às 17h e domingo às 14h;</li>
+<li>Quem precisa de <strong>alguém acompanhando cada treino</strong>: o plano não inclui isso;</li>
+<li>Quem quer <strong>piscina ou grade grande de aulas coletivas</strong>.</li>
+</ul>
+
+<h2>O que observar antes de assinar</h2>
+<ol>
+<li><strong>Visite no seu horário real de treino.</strong> A academia às 10h é outra às 19h.</li>
+<li><strong>Leia o plano:</strong> tempo mínimo de permanência e o que acontece se cancelar antes.</li>
+<li><strong>Entre com um plano de treino.</strong> Na low-cost, o aparelho é de todo mundo; o que muda o resultado é saber o que fazer com ele, semana após semana.</li>
+</ol>
+
+<h2>Treinar na Bluefit com acompanhamento</h2>
+<p>Muita gente começa bem e trava no segundo mês: a carga parou de subir, o treino virou repetição, a rotina apertou e as faltas começaram. É nesse ponto que o acompanhamento faz diferença: alguém olhando o que aconteceu na semana e ajustando o treino.</p>
+<p>Na <a href="/consultoria-online">consultoria online</a>, monto o treino para a estrutura da academia que você já frequenta e ajusto conforme você evolui. Para treinar presencialmente comigo, os locais confirmados estão em <a href="/onde-atendo">onde atendo</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/academias-em-tambore">Academias no Tamboré: guia da região</a></li>
+<li><a href="/blog/smart-fit-vs-bluefit">Smart Fit ou Bluefit: qual é melhor?</a></li>
+<li><a href="/blog/bluefit-barueri">Bluefit Barueri (Bethaville)</a></li>
+<li><a href="/blog/bluefit-alphaville">Bluefit Alphaville</a></li>
+</ul>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.bluefit.com.br/unidade/tambore" target="_blank" rel="noopener noreferrer">Bluefit — Unidade Tamboré (site oficial)</a></li>
+<li><a href="https://wellhub.com/pt-br/search/partners/bluefit-tambore/" target="_blank" rel="noopener noreferrer">Wellhub — BlueFit Tamboré (horário, plano e estrutura)</a></li>
+</ul>`,
+  },
+  {
+    slug: "academia-de-condominio-quais-aparelhos-comprar",
+    title: "Academia de Condomínio: Quais Aparelhos Comprar e Como Montar",
+    metaTitle: "Academia de Condomínio: Quais Aparelhos e Como Montar",
+    metaDescription: "Como montar a academia do condomínio: quais aparelhos comprar primeiro, piso, espaço, manutenção, regras e personal externo. Guia para síndico e comissão.",
+    excerpt: "O erro mais comum na academia de condomínio é comprar aparelho grande que ninguém usa. A ordem certa, o espaço, a manutenção e as regras, para quem vai decidir a compra.",
+    category: "Academias",
+    date: "2026-10-21",
+    readTime: "8 min",
+    author: "Montinho",
+    tags: ["academia de condomínio", "aparelhos para academia de condomínio", "montar academia em condomínio", "síndico", "personal em condomínio"],
+    faq: [
+      { question: "Quais aparelhos colocar na academia do condomínio?", answer: "Comece pelo que mais gente usa: um ou dois aparelhos de cardio (esteira e bicicleta), halteres com suporte, banco ajustável, uma estação de polia (crossover ou multiestação) e colchonetes. Leg press e cadeiras de perna vêm depois, se houver espaço e verba." },
+      { question: "Qual aparelho comprar primeiro para a academia do condomínio?", answer: "Halteres com suporte e um banco ajustável. São baratos perto de uma máquina, ocupam pouco espaço e servem para treinar o corpo inteiro, do morador iniciante ao avançado." },
+      { question: "Esteira ou bicicleta para academia de condomínio?", answer: "Se só couber um, a esteira costuma ser o mais disputado. A bicicleta ocupa menos espaço, faz menos barulho e serve melhor a quem tem dor no joelho ou está com sobrepeso. Com espaço para dois, tenha os dois." },
+      { question: "Que piso usar na academia do condomínio?", answer: "Piso emborrachado próprio para academia, mais grosso na área de pesos livres. Ele protege a laje e o próprio piso da queda de anilhas e halteres e reduz o barulho para os apartamentos de baixo." },
+      { question: "Personal trainer pode dar aula na academia do condomínio?", answer: "Depende do regulamento interno. Muitos condomínios permitem com cadastro do profissional, comprovante de registro no CREF e horários definidos. O ideal é a regra estar escrita, para não virar discussão caso a caso." },
+      { question: "Como evitar que os aparelhos quebrem?", answer: "Com contrato de manutenção preventiva, regras de uso afixadas e alguém responsável por anotar defeitos. Aparelho parado por meses com placa de 'em manutenção' é o que mais gera reclamação de morador." },
+      { question: "Academia de condomínio precisa de professor?", answer: "Não é comum ter professor fixo. O que muitos condomínios fazem é liberar personal externo com regras, ou contratar horários de orientação para os moradores." },
+      { question: "Vale a pena comprar aparelho usado para o condomínio?", answer: "Pode valer em aparelho simples e robusto (banco, rack de halteres, anilhas). Em esteira e em máquina com cabo e polia, exija revisão, peças de reposição disponíveis e garantia por escrito." },
+    ],
+    content: `<p>A academia do condomínio costuma nascer de um jeito: sobra uma verba, alguém consegue três orçamentos, e a comissão escolhe o aparelho mais bonito do catálogo. Um ano depois, o leg press está encostado, a esteira tem fila às 7h e ninguém sabe a quem pedir conserto.</p>
+<p>Eu sou o Montinho, personal trainer, e atendo alunos dentro de academia de condomínio. Este guia é para quem vai decidir: síndico, administradora ou comissão de moradores.</p>
+
+<h2>Resposta direta: o que comprar, na ordem</h2>
+<ol>
+<li><strong>Halteres com suporte e banco ajustável.</strong> Treinam o corpo inteiro e ocupam pouco espaço.</li>
+<li><strong>Cardio:</strong> esteira e bicicleta (se couber só um, veja a comparação abaixo).</li>
+<li><strong>Uma estação de polia</strong> (crossover ou multiestação): puxadas, remadas, tríceps e exercícios de reabilitação.</li>
+<li><strong>Acessórios:</strong> colchonetes, elásticos, bola, caixa (step).</li>
+<li><strong>Máquinas de perna</strong> (leg press, cadeira extensora e flexora), se ainda houver espaço e verba.</li>
+</ol>
+<p>A lógica: primeiro o que serve a mais moradores, por menos espaço e menos dinheiro. Máquina grande que só faz um exercício vem por último.</p>
+
+<h2>Antes de comprar: quem vai usar</h2>
+<p>Um questionário de duas perguntas aos moradores evita a maioria dos erros: <strong>em que horário você treinaria</strong> e <strong>o que você faria lá</strong> (caminhar, musculação, alongamento, treino com personal). Condomínio com muitos idosos pede mais bicicleta e polia; condomínio de famílias jovens lota a esteira de manhã cedo e à noite.</p>
+
+<h2>Aparelhos por tamanho de espaço</h2>
+<table>
+<tr><th>Espaço</th><th>O essencial</th><th>Se sobrar lugar</th></tr>
+<tr><td>Sala pequena</td><td>Halteres com suporte, banco ajustável, 1 esteira ou 1 bicicleta, colchonetes</td><td>Elásticos e caixa</td></tr>
+<tr><td>Sala média</td><td>O anterior + esteira e bicicleta + estação de polia</td><td>Barra e anilhas com suporte</td></tr>
+<tr><td>Sala grande</td><td>O anterior + leg press + cadeira extensora e flexora</td><td>Gaiola (rack) com barra, elíptico</td></tr>
+</table>
+<p>Cada aparelho precisa de área livre ao redor para subir, descer e se movimentar com segurança. O manual do fabricante indica essa área: peça a planta com o layout antes de fechar a compra, não depois.</p>
+
+<h2>Esteira ou bicicleta, se couber só um</h2>
+<ul>
+<li><strong>Esteira:</strong> é o aparelho mais disputado. Ocupa mais espaço, faz mais barulho e precisa de mais manutenção.</li>
+<li><strong>Bicicleta:</strong> menor, mais silenciosa, mais barata de manter e melhor para quem tem dor no joelho, está com sobrepeso ou está voltando a treinar.</li>
+</ul>
+
+<h2>Piso, ventilação e o que mais pesa</h2>
+<ul>
+<li><strong>Piso emborrachado</strong> próprio para academia, mais grosso na área de pesos livres: protege a laje e reduz o barulho para quem mora embaixo.</li>
+<li><strong>Ventilação ou ar-condicionado</strong>: sala abafada esvazia a academia no verão.</li>
+<li><strong>Espelho</strong> na área de pesos livres, para o morador ver a execução.</li>
+<li><strong>Tomadas</strong> próprias para os aparelhos de cardio, conforme o manual de cada um.</li>
+<li><strong>Bebedouro</strong> e um quadro com as regras de uso.</li>
+</ul>
+
+<h2>Segurança e manutenção</h2>
+<p>Peça ao fornecedor a conformidade do aparelho com as normas de segurança de equipamento de treino estacionário (a série internacional ISO 20957 trata disso), o manual em português e a garantia por escrito. Depois da compra, três coisas evitam o aparelho parado:</p>
+<ol>
+<li><strong>Contrato de manutenção preventiva</strong>, com visitas periódicas, principalmente para esteira e aparelhos com cabo.</li>
+<li><strong>Um responsável</strong> (zelador ou administradora) para anotar defeitos e acionar o técnico.</li>
+<li><strong>Regras afixadas</strong>: guardar halteres no suporte, não soltar peso no chão, limite de tempo na esteira em horário de pico.</li>
+</ol>
+
+<h2>Personal trainer externo: deixe a regra escrita</h2>
+<p>A academia do condomínio funciona melhor quando o regulamento já diz se personal externo pode atender e como: cadastro do profissional, comprovante de registro no CREF, horários e limite de alunos ao mesmo tempo. Sem regra escrita, cada caso vira assembleia.</p>
+<p>Na prática, é assim que a academia do condomínio mais rende: o morador treina perto de casa, com o equipamento que existe ali, e o profissional adapta o treino ao que o espaço tem. Eu atendo assim em condomínios de Alphaville e Tamboré; veja como funciona em <a href="/personal-trainer-condominio-tambore">personal trainer em condomínio</a>.</p>
+
+<h2>Os erros mais comuns</h2>
+<ul>
+<li><strong>Comprar máquina grande antes do básico:</strong> o leg press ocupa o lugar de três aparelhos que seriam mais usados.</li>
+<li><strong>Só cardio:</strong> esteira e bicicleta não substituem treino de força, que é o que mais ajuda o morador mais velho a manter autonomia.</li>
+<li><strong>Halteres sem suporte:</strong> viram peso no chão, piso estragado e risco de tropeço.</li>
+<li><strong>Comprar sem medir a sala:</strong> o aparelho chega e não passa pela porta, ou passa e fica sem área de segurança.</li>
+<li><strong>Esquecer a manutenção no orçamento:</strong> aparelho barato sem assistência técnica sai caro em um ano.</li>
+</ul>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/academia-em-condominio-como-aproveitar">Academia do condomínio: como o morador aproveita melhor</a></li>
+<li><a href="/blog/personal-trainer-em-condominio-alphaville">Personal trainer em condomínio em Alphaville</a></li>
+<li><a href="/blog/como-montar-academia-em-casa">Como montar academia em casa</a></li>
+</ul>`,
+  },
+  {
+    slug: "hyrox-alphaville-onde-treinar",
+    title: "Hyrox em Alphaville: Onde Treinar e Como se Preparar",
+    metaTitle: "Hyrox em Alphaville: Onde Treinar e Como se Preparar",
+    metaDescription: "Onde treinar Hyrox em Alphaville e região: o que a prova exige, que equipamento procurar, box com aula de Hyrox, academia comum e como montar a semana.",
+    excerpt: "Para treinar Hyrox em Alphaville, dá para ir a um box com aula específica ou montar a preparação na academia que você já frequenta. O que procurar em cada caso.",
+    category: "Treinamento",
+    date: "2026-10-21",
+    readTime: "7 min",
+    author: "Montinho",
+    tags: ["hyrox alphaville", "onde treinar hyrox", "hyrox perto de mim", "treino hyrox", "hyrox barueri"],
+    faq: [
+      { question: "Onde treinar Hyrox em Alphaville?", answer: "Há dois caminhos: um box ou training club com aula de Hyrox, como o OBOX (Av. dos Parques, 329, Centro de Apoio I), que lista Hyrox entre as aulas no Wellhub; ou a academia que você já frequenta, com corrida, força e as estações adaptadas." },
+      { question: "Dá para treinar Hyrox em academia comum?", answer: "Dá para construir quase toda a base: corrida, força de pernas e de costas, wall ball, avanço com peso e remo. O que costuma faltar é o trenó (sled) e o SkiErg; vale treinar neles algumas vezes antes da prova, num box que tenha." },
+      { question: "O que tem na prova do Hyrox?", answer: "São 8 km de corrida em 8 trechos de 1 km, cada um seguido de uma estação: SkiErg (1.000 m), sled push (50 m), sled pull (50 m), burpee broad jump (80 m), remo (1.000 m), farmers carry (200 m), sandbag lunges (100 m) e wall balls (100 repetições)." },
+      { question: "Como saber se uma academia é Training Club oficial do Hyrox?", answer: "O site oficial do Hyrox tem um buscador de Training Clubs credenciados (hyrox.com/gym-partners). Academia que só usa o nome em aula não é necessariamente credenciada; confira lá." },
+      { question: "Quanto tempo de preparação para fazer o primeiro Hyrox?", answer: "Depende de onde você parte. Quem já corre e faz musculação costuma precisar de algumas semanas para treinar as estações e o ritmo de prova. Quem está começando precisa de mais tempo, construindo corrida e força antes." },
+      { question: "Quantas vezes por semana treinar para o Hyrox?", answer: "Para a maioria, três a quatro sessões: uma ou duas de corrida, uma ou duas de força, e uma que junta corrida com estações. Mais que isso, sem recuperar, piora o treino seguinte." },
+      { question: "O OBOX aceita Wellhub?", answer: "Sim: a unidade aparece no Wellhub a partir do plano Gold, segundo a página consultada em 21/10/2026, com reserva obrigatória para as aulas. Plano e regras mudam; confira no app." },
+    ],
+    content: `<p>O Hyrox chegou a São Paulo e a procura por "onde treinar" foi junto. Em Alphaville, há dois caminhos: um <strong>box com aula específica de Hyrox</strong> ou a <strong>academia que você já frequenta</strong>, com a preparação montada para a prova. Os dois funcionam; o que muda é o que cada um tem de equipamento.</p>
+
+<h2>Resposta direta: onde treinar Hyrox em Alphaville</h2>
+<ul>
+<li><strong>Box com aula de Hyrox:</strong> o <strong>OBOX</strong>, na Av. dos Parques, 329, Centro de Apoio I (Alphaville, Santana de Parnaíba), lista Hyrox entre as aulas no Wellhub e se apresenta no Instagram como o primeiro clube de treino de Hyrox de Alphaville.</li>
+<li><strong>Academia comum:</strong> serve para quase toda a base (corrida, força, wall ball, avanço, remo). O que costuma faltar é o trenó e o SkiErg.</li>
+</ul>
+<p>Antes de assinar, confira no <a href="https://hyrox.com/gym-partners" target="_blank" rel="noopener noreferrer">buscador oficial de Training Clubs</a> se o lugar é credenciado: usar o nome "Hyrox" na aula não é o mesmo que ser clube oficial.</p>
+
+<h2>O que a prova exige</h2>
+<p>São <strong>8 km de corrida</strong>, divididos em 8 trechos de 1 km, e depois de cada trecho uma estação. A explicação completa está em <a href="/blog/hyrox-o-que-e">o que é o Hyrox</a>.</p>
+<table>
+<tr><th>Estação</th><th>Distância</th><th>Equipamento</th></tr>
+<tr><td>SkiErg</td><td>1.000 m</td><td>SkiErg</td></tr>
+<tr><td>Sled push (empurrar o trenó)</td><td>50 m</td><td>Trenó e pista</td></tr>
+<tr><td>Sled pull (puxar o trenó)</td><td>50 m</td><td>Trenó, corda e pista</td></tr>
+<tr><td>Burpee broad jump</td><td>80 m</td><td>Espaço livre</td></tr>
+<tr><td>Remo</td><td>1.000 m</td><td>Remo ergômetro</td></tr>
+<tr><td>Farmers carry</td><td>200 m</td><td>Kettlebells ou halteres</td></tr>
+<tr><td>Sandbag lunges</td><td>100 m</td><td>Saco de areia (sandbag)</td></tr>
+<tr><td>Wall balls</td><td>100 repetições</td><td>Bola e alvo na parede</td></tr>
+</table>
+
+<h2>O que procurar no lugar de treino</h2>
+<ul>
+<li><strong>Trenó com pista:</strong> é a estação que mais pesa para quem nunca fez, e quase nenhuma academia comum tem.</li>
+<li><strong>SkiErg e remo:</strong> o remo é comum; o SkiErg, não.</li>
+<li><strong>Espaço para correr:</strong> esteira resolve parte, mas correr na rua ensina o ritmo real.</li>
+<li><strong>Wall ball, kettlebells e sandbag:</strong> fáceis de achar em box e em área funcional de academia.</li>
+<li><strong>Aula com alguém corrigindo a técnica:</strong> burpee broad jump e wall ball mal feitos cansam muito mais do que deveriam.</li>
+</ul>
+
+<h2>Box com aula de Hyrox ou academia comum?</h2>
+<table>
+<tr><th></th><th>Box com aula de Hyrox</th><th>Academia comum</th></tr>
+<tr><td>Equipamento das estações</td><td>Costuma ter quase tudo</td><td>Falta trenó e SkiErg, em geral</td></tr>
+<tr><td>Simulado de prova</td><td>Faz parte da aula</td><td>Você monta, com adaptação</td></tr>
+<tr><td>Horário</td><td>Preso à grade de aulas</td><td>Livre</td></tr>
+<tr><td>Ajuste individual</td><td>Aula em grupo</td><td>Depende de ter um plano</td></tr>
+</table>
+<p>Um caminho que funciona para muita gente: a base de corrida e força na academia de sempre, e algumas sessões no box para treinar trenó, SkiErg e o simulado de prova.</p>
+
+<h2>Como montar a semana</h2>
+<p>Para a maioria das pessoas, três a quatro sessões resolvem:</p>
+<ol>
+<li><strong>Corrida:</strong> uma sessão contínua e uma de intervalos (tiros de 1 km, como na prova).</li>
+<li><strong>Força:</strong> pernas e costas, que são o que trenó, avanço e farmers carry pedem.</li>
+<li><strong>Corrida + estações:</strong> alternar 1 km de corrida com uma estação, para o corpo aprender a correr cansado.</li>
+</ol>
+<p>Para ter uma ideia do esforço total, a <a href="/ferramentas/calculadora-calorias-hyrox">calculadora de calorias do Hyrox</a> parte do seu tempo de prova. E os tempos de quem correu em São Paulo estão no <a href="/blog/resultado-hyrox-sao-paulo-2026">resultado do Hyrox São Paulo 2026</a>.</p>
+
+<h2>Preparação com acompanhamento</h2>
+<p>O que mais atrapalha quem se prepara sozinho não é falta de vontade: é a semana em que a corrida e a força caem no mesmo dia, a perna chega cansada no treino seguinte e o ritmo de prova nunca é testado. Eu monto a preparação para o Hyrox (corrida, força e estações na semana certa) e ajusto conforme o que acontece em cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/hyrox-o-que-e">Hyrox: o que é, quantas calorias gasta e como treinar</a></li>
+<li><a href="/blog/hyrox-sao-paulo-2026">Hyrox São Paulo 2026: data, local e inscrição</a></li>
+<li><a href="/blog/obox-training-club-santana-de-parnaiba">OBOX Training Club: o que esperar</a></li>
+<li><a href="/blog/academia-com-cross-training-alphaville">Academias com cross training em Alphaville</a></li>
+</ul>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://hyrox.com/gym-partners" target="_blank" rel="noopener noreferrer">HYROX — Find a HYROX Training Club (oficial)</a></li>
+<li><a href="https://wellhub.com/pt-br/search/partners/obox-jacarei/" target="_blank" rel="noopener noreferrer">Wellhub — Obox Santana de Parnaíba (aulas, endereço e plano)</a></li>
+<li><a href="https://www.instagram.com/obox.trainingclub/" target="_blank" rel="noopener noreferrer">Instagram — OBOX Training Club Alphaville</a></li>
+</ul>`,
   },
   {
     slug: "treinar-perna-2-ou-3-vezes-por-semana",

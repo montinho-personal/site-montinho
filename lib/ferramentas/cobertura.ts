@@ -45,6 +45,9 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   "diferenca-entre-instrutor-de-academia-e-personal-trainer": "Comparação de funções e formação: o leitor sai sabendo quem é quem, sem conta na cabeça.",
   // Resultado do UFC Vegas 122: o registro da calculadora de artes marciais
   // está no teto de 8, e a calculadora já vai no artigo do card.
+  "bluefit-tambore": "Guia de unidade (endereço, horário, convênio): o leitor sai sabendo se a academia serve para ele, sem conta na cabeça.",
+  "academia-de-condominio-quais-aparelhos-comprar": "Decisão de compra para síndico e comissão (ordem dos aparelhos, espaço, manutenção, regras): nenhuma ferramenta do site faz essa escolha.",
+  "hyrox-alphaville-onde-treinar": "A pergunta é onde treinar; quem quer saber o esforço da prova vai para a calculadora de calorias do Hyrox pelo link do texto.",
   "treino-de-abdomen-rapido": "Treino pronto para fazer: o leitor sai com o circuito, não com uma conta; quem quer emagrecer a barriga é levado à calculadora de déficit pelo texto.",
   "brasileiros-ufc-vegas-123": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora de jiu-jitsu fica no artigo do evento.",
   "resultado-ufc-vegas-122": "Página de resultado: o leitor sai sabendo quem ganhou, sem conta na cabeça; a calculadora de luta fica no artigo do card.",
