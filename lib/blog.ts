@@ -38854,10 +38854,8 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 <p>O cardápio para hipertrofia não precisa ser sofisticado — precisa ser consistente. Proteína em cada refeição, carboidratos ao redor do treino, gordura adequada para saúde hormonal e variedade de fontes para micronutrientes. Com essa estrutura, o crescimento muscular é sustentado semana a semana.</p>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/20847704/" target="_blank" rel="noopener noreferrer">Schoenfeld (2010) — mecanismos de hipertrofia muscular (PubMed)</a>.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mHZKGBlPHg4?rel=0" title="Como montar uma dieta — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer transformar a sua meta em um cardápio com os alimentos que você já come? Veja no vídeo como montar o seu no Montinho FitChef, em 3 passos.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/FjvYaKx05x0?rel=0" title="Como usar o Montinho FitChef (Monte seu Cardápio) — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
   faq: [
@@ -47160,10 +47158,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h2>Resumo Final</h2>
 <p>Sua dieta começa no supermercado e vence na consistência. Uma lista de compras bem estruturada elimina o atrito entre saber o que comer e realmente comer. Com os 60 alimentos desta lista, você tem proteína suficiente, carboidrato de qualidade, gordura saudável e variedade para montar refeições diferentes durante a semana sem cair na mesmice ou na tentação do delivery.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mHZKGBlPHg4?rel=0" title="Como montar uma dieta — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer transformar a sua meta em um cardápio com os alimentos que você já come? Veja no vídeo como montar o seu no Montinho FitChef, em 3 passos.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/FjvYaKx05x0?rel=0" title="Como usar o Montinho FitChef (Monte seu Cardápio) — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -47305,10 +47301,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h2>Resumo Final</h2>
 <p>Emagrecer com músculo exige déficit calórico moderado, proteína alta em todas as refeições e consistência — não dietas milagrosas ou restrições extremas. Este cardápio é um ponto de partida. Ajuste as quantidades ao seu peso, gasto calórico e horário de treino. Se precisar de um plano individualizado com base na sua rotina em Alphaville, Barueri ou Santana de Parnaíba, veja como funciona a <a href="/consultoria">consultoria personalizada</a>.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/6Xup3BEMacM?rel=0" title="Dieta para sair de 30pct de gordura para 10pct — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer transformar a sua meta em um cardápio com os alimentos que você já come? Veja no vídeo como montar o seu no Montinho FitChef, em 3 passos.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/FjvYaKx05x0?rel=0" title="Como usar o Montinho FitChef (Monte seu Cardápio) — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -47452,10 +47446,8 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <h2>Resumo Final</h2>
 <p>Ganho de massa muscular exige superávit calórico moderado (200–400 kcal), proteína de alta qualidade em todas as refeições (1,6–2,2g/kg) e consistência semanal — não períodos intensos seguidos de abandono. Este cardápio é um modelo concreto: ajuste ao seu peso, horário de treino e preferências alimentares. Para quem está em Alphaville, Tamboré ou Barueri e quer um plano individualizado com progressão real, a <a href="/consultoria">consultoria de hipertrofia</a> oferece acompanhamento completo.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mHZKGBlPHg4?rel=0" title="Como montar uma dieta — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer transformar a sua meta em um cardápio com os alimentos que você já come? Veja no vídeo como montar o seu no Montinho FitChef, em 3 passos.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/FjvYaKx05x0?rel=0" title="Como usar o Montinho FitChef (Monte seu Cardápio) — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -74156,7 +74148,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 
 <p>Ferro, cardio estratégico, proteína, sono. Você agora conhece a ciência inteira da definição. Falta o que nenhum artigo entrega: a versão dela desenhada para o seu corpo e a sua rotina. É isso que a consultoria online do Montinho faz — pega tudo o que você leu aqui e devolve mastigado, semana a semana, com ajustes em tempo real. Não existe atalho. Existe estratégia. Em 3 meses, seu corpo pode ser outro. O verão está chegando — chegue pronto.</p>
 
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer transformar a sua meta em um cardápio com os alimentos que você já come? Veja no vídeo como montar o seu no Montinho FitChef, em 3 passos.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/FjvYaKx05x0?rel=0" title="Como usar o Montinho FitChef (Monte seu Cardápio) — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul><li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por que você não consegue emagrecer (e como mudar isso de vez)</a></li><li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">5 hábitos do dia a dia que sabotam seu emagrecimento</a></li><li><a href="/blog/como-emagrecer-ate-o-carnaval">Como Emagrecer até o Carnaval: Guia Prático</a></li></ul>
@@ -90388,8 +90381,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>É exatamente isso que a <a href="/consultoria">consultoria online do Montinho</a> resolve: estratégia alimentar e treino desenhados para a sua rotina, com ajustes semanais, onde quer que você more.</p>
 <p>Quer transformar suas duas horas de domingo em resultado visível? <a href="/contato">Agende uma avaliação</a> e monte sua primeira semana com um plano de verdade.</p>
 
-<p>Antes do vídeo, um contexto importante: a marmita é a execução, mas ela precisa servir a um plano — quantidades e alimentos alinhados ao seu objetivo. Nesta aula, o Leandro Twin mostra como montar uma dieta do zero:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mHZKGBlPHg4?rel=0" title="Como montar sua dieta — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">A marmita é a execução, mas ela precisa servir a um plano: quantidades e alimentos alinhados ao seu objetivo. Veja no vídeo como montar esse plano no Montinho FitChef, com os alimentos que você já come.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/FjvYaKx05x0?rel=0" title="Como usar o Montinho FitChef (Monte seu Cardápio) — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
