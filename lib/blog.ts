@@ -1138,10 +1138,8 @@ export const blogPosts = ([
   <li><a href="/blog/quanto-tempo-para-ganhar-massa-muscular">Quanto Tempo Demora Para Ganhar Massa Muscular?</a></li>
 </ul>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rapido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Para ganhar massa, você precisa comer um pouco acima do que gasta. Veja no vídeo como descobrir quanto o seu corpo gasta por dia, em 1 minuto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/iGStCDRk0Zg?rel=0" title="Como usar a Calculadora de TMB e TDEE — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
   },
@@ -50491,10 +50489,8 @@ TMB = 370 + (21.6 × 68) = 370 + 1.468,8<br>
 <h2>Resumo Final</h2>
 <p>TMB é quanto você queima em repouso; TDEE é quanto você queima no total do dia. A fórmula Mifflin-St Jeor é a mais validada para a maioria das pessoas; Katch-McArdle é mais precisa para atletas com composição corporal conhecida. Use o cálculo como ponto de partida, calibre com 2 semanas de monitoramento e ajuste conforme a resposta real do seu peso e composição corporal.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/PcJUOWdG7iw?rel=0" title="Aprenda a calcular seus macros para qualquer dieta — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Prefere ver a conta sendo feita? No vídeo, a calculadora mostra a TMB, o gasto do dia e o que fazer com esse número, em 1 minuto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/iGStCDRk0Zg?rel=0" title="Como usar a Calculadora de TMB e TDEE — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -89777,8 +89773,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>É exatamente isso que o Montinho faz na <a href="/consultoria">consultoria online</a>: cálculo individualizado, ajustes quinzenais com base nos seus dados reais e treino que conversa com a dieta. Se preferir começar com uma conversa, <a href="/contato">agende uma avaliação</a>.</p>
 <blockquote><p><strong>Soundbite:</strong> quem tem um número tem uma estimativa. Quem tem acompanhamento tem um resultado.</p></blockquote>
 
-<p>Para transformar o gasto calórico em um plano alimentar completo, com proteínas, carboidratos e gorduras bem distribuídos, vale assistir a esta aula prática sobre cálculo de macros:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/PcJUOWdG7iw?rel=0" title="Como calcular seus macros" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer descobrir o seu número agora? Veja no vídeo como calcular quantas calorias você gasta por dia, em 1 minuto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/iGStCDRk0Zg?rel=0" title="Como usar a Calculadora de TMB e TDEE — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
@@ -95686,8 +95682,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>O NEAT é o gasto calórico que você não vê, mas que decide boa parte do jogo. Ele varia muito entre as pessoas, cai quando você faz dieta e pode ser aumentado com escolhas simples e constantes. Cuidar dele e, talvez, o hack mais honesto do emagrecimento: não promete milagre, mas soma todos os dias.</p>
 
-<p>Como o NEAT soma ao déficit, veja o processo completo de perda de gordura neste tutorial:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">O NEAT entra no seu gasto do dia pelo nível de atividade. Veja no vídeo como calcular o seu, em 1 minuto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/iGStCDRk0Zg?rel=0" title="Como usar a Calculadora de TMB e TDEE — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -97155,8 +97151,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Nada disso é glamouroso. Tudo isso funciona. Se você quer ajuda para montar esse sistema na sua rotina — especialmente se trabalha muito e tem pouco tempo — conheça minha <a href="/consultoria">consultoria</a>. Eu já estive do outro lado da balança e sei exatamente onde as pessoas travam.</p>
 
-<p>Metabolismo mais ativo é meio caminho — o processo completo de perda de gordura está neste tutorial:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Antes de tentar acelerar o metabolismo, vale saber quanto ele gasta hoje. Veja no vídeo como calcular a sua TMB e o seu gasto do dia, em 1 minuto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/iGStCDRk0Zg?rel=0" title="Como usar a Calculadora de TMB e TDEE — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>

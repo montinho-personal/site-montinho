@@ -63,6 +63,27 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     publicadoEm: "2026-10-22",
   },
   {
+    id: "iGStCDRk0Zg",
+    slug: "quantas-calorias-voce-gasta-por-dia",
+    titulo: "Quantas calorias você gasta por dia? TMB e TDEE em 30 segundos",
+    metaTitle: "Quantas Calorias Você Gasta por Dia? TMB e TDEE (Vídeo)",
+    descricao:
+      "Como usar a Calculadora de TMB e TDEE: coloque peso, altura, idade e sexo, escolha o seu nível de atividade e veja a sua taxa metabólica basal, o seu gasto diário total e quanto comer para emagrecer, manter ou ganhar massa.",
+    chamada: "Quantas calorias o seu corpo gasta por dia? Em 1 minuto você vê como calcular o seu número.",
+    texto: [
+      "Quase toda dúvida de dieta começa na mesma conta: quanto o seu corpo gasta por dia. Sem esse número, o déficit para emagrecer e o superávit para ganhar massa são chute.",
+      "Na Calculadora de TMB e TDEE você coloca peso, altura, idade e sexo e escolhe o seu nível de atividade. Ela mostra a TMB, que é o gasto em repouso, e o TDEE, que é o gasto do dia com a sua rotina, pela equação de Mifflin-St Jeor. Dá para comparar os níveis de atividade e seguir direto para o déficit, os macros ou o cardápio.",
+      "O resultado é uma estimativa, não uma medida exata. O que faz diferença é usar o número como ponto de partida e ajustar conforme o peso e o desempenho respondem nas semanas seguintes.",
+    ],
+    artigos: [
+      { href: "/blog/quantas-calorias-eu-gasto-por-dia", nome: "Quantas calorias eu gasto por dia" },
+      { href: "/blog/como-calcular-tmb-tdee-calorias", nome: "Como calcular TMB e TDEE" },
+      { href: "/blog/metabolismo-lento-existe", nome: "Metabolismo lento existe?" },
+    ],
+    ferramenta: { href: "/ferramentas/calculadora-tmb-tdee", nome: "Calculadora de TMB e TDEE" },
+    publicadoEm: "2026-10-22",
+  },
+  {
     id: "FjvYaKx05x0",
     slug: "monte-seu-cardapio-em-3-passos",
     titulo: "Monte seu cardápio em 3 passos com o Montinho FitChef",
