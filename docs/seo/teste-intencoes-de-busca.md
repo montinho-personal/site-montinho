@@ -1243,3 +1243,13 @@ Regra do Montinho: "Só coloca o vídeo [do FitChef] se não tiver nenhum vídeo
 - Sem vídeo: o-que-comer-antes-do-treino recebe o FitChef no fim (VideoFitChef). O componente agora só entra quando o artigo não tem vídeo nenhum.
 - publicadoEm do vídeo: 2026-10-22, conferido no print do YouTube Studio enviado pelo Montinho. Com a data, a página /videos e os 6 artigos ganham VideoObject.
 - updatedAt não mudou: troca de vídeo de apoio, sem mudar o que o artigo ensina.
+
+## 2026-10-22 — Vídeo do app nas páginas de consultoria e de atendimento
+
+O Montinho decidiu usar a versão completa do vídeo do app (2 min 13 s), sem corte. Short: youtube.com/shorts/DPAQDPVffCg, publicado em 22/10/2026 (print do Montinho, "2 min atrás").
+- Componente VideoApp, como subtítulo (h3) dentro da seção que explica o acompanhamento, com figure + figcaption "Telas reais do app, com dados de demonstração" e play medido por página (app-<página>).
+- Online: /consultoria-online ("O que acontece depois que o treino chega", antes do botão, sem link para fora) e /consultoria (modalidades).
+- Presencial ("Nos dias em que eu não estou com você"): /personal-trainer, Alphaville, Barueri, Santana de Parnaíba, Tamboré, Feminino Tamboré e a LP /lp/personal-alphaville (sem link para fora).
+- /videos/app-do-montinho: página nova com a narração resumida e VideoObject.
+- Fora por enquanto: artigos locais do blog (já têm o vídeo "recomeçar rápido") e guias de academia.
+- Medir em 28 dias: plays por página e taxa de clique no WhatsApp da /consultoria-online.

@@ -4,6 +4,7 @@ import testimonials from "@/data/testimonials.json";
 import { BORDOES } from "@/lib/bordoes";
 import LpCta, { LpCtaFixa } from "@/components/lp/LpCta";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
+import VideoApp from "@/components/video/VideoApp";
 
 /**
  * Landing page de anúncio (Google Ads) — personal presencial em Alphaville
@@ -237,6 +238,7 @@ export default function LpPersonalAlphaville() {
               </li>
             ))}
           </ol>
+            <VideoApp variante="presencial" onde="lp-alphaville" semSaida />
           <div className="mt-10"><LpCta label="Consultar horários para a aula experimental" message={MSG_MEIO} posicao="como_funciona" lp={LP} /></div>
         </div>
       </section>
