@@ -4909,10 +4909,8 @@ export const blogPosts = ([
   <li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Quanta Proteína por Dia Para Ganhar Massa Muscular?</a></li>
 </ul>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculacao para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Como funciona na prática? No vídeo, as telas do app do Montinho: o treino chega, você registra, ele acompanha e ajusta.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
   },
@@ -33704,10 +33702,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Personal trainer vale a pena quando você escolhe o profissional certo e tem clareza do que quer. O investimento em acompanhamento profissional acelera resultados, previne lesões e aumenta a aderência — três fatores que, na prática, fazem a diferença entre quem transforma o corpo e quem fica tentando.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculacao para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Parte do que você paga é o acompanhamento entre uma sessão e outra. No vídeo, como isso acontece no app do Montinho.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -36745,10 +36741,8 @@ Em pé em uma perna, agache devagar até 30-40° mantendo o joelho alinhado sobr
 
 <p>Se quiser saber mais sobre como funciona minha consultoria online, <a href="/contato">entre em contato</a>.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculacao para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja como a consultoria funciona no dia a dia, pelo app do Montinho: treino, registro das séries, recados e evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -82061,8 +82055,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Presencialmente, atendo em Alphaville, Barueri e Santana de Parnaíba, inclusive em condomínios. A distância, a <a href="/consultoria">consultoria online</a> entrega plano individualizado, ajustes contínuos e suporte direto por uma fração do presencial. E se a conclusão da avaliação for que você não precisa de mim, eu digo isso — já aconteceu, e vai acontecer de novo.</p>
 <p>O primeiro passo não custa nada: <a href="/contato">agende uma avaliação</a> e saia com um diagnóstico claro do seu caso. Ou conheça o trabalho de <a href="/personal-trainer-santana-de-parnaiba">personal trainer em Santana de Parnaíba</a> e região.</p>
 
-<p>Quer ver na prática o tipo de decisão técnica que um bom acompanhamento toma por você toda semana? Progressão de carga é o exemplo perfeito — simples de entender, difícil de aplicar bem:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mzsdaDPMnFU?rel=0" title="Como fazer uma progressão de carga eficiente — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Vale a pena quando alguém acompanha o que acontece depois da ficha. No vídeo, como o app do Montinho faz isso.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
@@ -87797,9 +87791,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Ou seja: você não precisa escolher entre "caro demais" e "genérico demais". <strong>Existe um meio-termo profissional — e ele tem endereço na sua região.</strong> <a href="/contato">Solicite uma proposta pelo WhatsApp</a> e receba um plano na medida do seu objetivo e do seu bolso. Se preferir o presencial, veja como funciona o <a href="/personal-trainer-barueri">personal trainer em Barueri</a> ou o <a href="/personal-trainer-santana-de-parnaiba">personal trainer em Santana de Parnaíba</a>.</p>
 
-<p>Antes de decidir, vale entender o que faz um treino bem estruturado de verdade. No vídeo abaixo, o Leandro Twin resume os fundamentos que qualquer programa sério — presencial ou online — precisa respeitar:</p>
-
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">O que você leva pelo valor: no vídeo, o app do Montinho que acompanha a consultoria, do treino do dia à evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
@@ -113380,7 +113373,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>App de treino funciona — para o perfil certo, na fase certa. Ele é ferramenta, não treinador. Se você é experiente, autônomo e organizado, um bom app entrega estrutura por pouquíssimo dinheiro, e seria desonesto da minha parte dizer o contrário. Se você é iniciante, tem dor, está estagnado ou já provou para si mesmo que não mantém constância sozinho, a matemática muda: o que parece economia vira meses ou anos de resultado que não veio. A pergunta certa não é "app funciona?" — é "o que, no meu caso específico, está entre mim e o resultado?". Responda essa com sinceridade e a escolha da ferramenta fica óbvia.</p>
 
 <p>Com app ou com personal, quem fez o trampo não tem como dar errado — falo sobre essa mentalidade neste Short:</p>
-<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer ver como é um app de treino com acompanhamento de verdade? No vídeo, as telas reais do app do Montinho: treino do dia, registro das séries, recado do personal e a evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Referências</h2>
 <ul>
