@@ -6,6 +6,7 @@ import { SITE_URL } from "@/lib/blog";
 import FAQ from "@/components/ui/FAQ";
 import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
+import VideoApp from "@/components/video/VideoApp";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer a Domicílio Tamboré | Montinho Personal Trainer" },
@@ -234,6 +235,7 @@ export default function PersonalTrainerDomicilioTambore() {
             ))}
           </div>
         </div>
+        <VideoApp variante="presencial" onde="pt-a-domicilio-tambore" />
       </section>
 
       {/* PARA QUEM É */}
