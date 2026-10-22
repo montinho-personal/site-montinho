@@ -58,7 +58,8 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     artigos: [
       { href: "/consultoria-online", nome: "Consultoria online com o Montinho" },
       { href: "/personal-trainer-alphaville", nome: "Personal trainer em Alphaville" },
-      { href: "/blog/quando-trocar-o-treino", nome: "Quando trocar o treino" },
+      { href: "/blog/app-de-treino-funciona", nome: "App de treino funciona?" },
+      { href: "/blog/consultoria-online-musculacao", nome: "Consultoria online de musculação: como funciona" },
     ],
     publicadoEm: "2026-10-22",
   },
