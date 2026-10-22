@@ -9,3 +9,14 @@
 export const VIDEO_APP_ID = "DPAQDPVffCg";
 export const VIDEO_APP_SLUG = "app-do-montinho";
 export const VIDEO_APP_TITULO = "Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer";
+
+/**
+ * Artigos de personal/SEO local sem vídeo nenhum que recebem o vídeo do app
+ * no fim (pedido do Montinho em 22/10/2026: "o vídeo do app nas páginas de
+ * SEO local e nas que falam de consultoria online"). Artigo com vídeo do
+ * próprio Montinho não entra; vídeo de terceiro é trocado no texto (lib/blog.ts).
+ */
+export const ARTIGOS_COM_VIDEO_APP_FIM: string[] = [
+  "personal-trainer-ou-aula-coletiva",
+  "quanto-custa-personal-trainer-aldeia-da-serra",
+];

@@ -1273,3 +1273,15 @@ Pedido do Montinho: "colocar o vídeo de lançamento do app no artigo que pergun
 - Trocados no mesmo lugar (último terço), todos com vídeo do Leandro Twin: personal-trainer-online-como-funciona, consultoria-online-musculacao, quanto-custa-consultoria-online-de-treino, personal-trainer-vale-a-pena e vale-a-pena-contratar-personal-trainer. A frase de apresentação foi reescrita para o app.
 - /videos/app-do-montinho: links para os artigos "App de treino funciona?" e "Consultoria online de musculação".
 - updatedAt não mudou: troca de vídeo de apoio.
+
+## 2026-10-22 — Vídeo do app em todo o SEO local e onde se fala de consultoria online
+
+Pedido do Montinho: "o vídeo de lançamento do aplicativo [deve estar] na página do Tamboré e todas de SEO local. Em todas as outras que falam de consultoria online também."
+- Ritmo: é o mesmo vídeo entrando em vários lugares, sem julgamento editorial por item além da frase de chamada. Uma mudança, um PR.
+- Páginas em app/ (componente VideoApp, h3 no fim da seção que explica o atendimento): as 16 páginas de Tamboré que faltavam (academia-com-personal-trainer, melhor-personal-trainer, personal-em, a-domicilio, condominio, em-tambore, online, para-emagrecer, para-hipertrofia, para-idosos, para-iniciantes, para-reabilitacao, tambore-barueri, professor-de-musculacao, quanto-custa, treinador-particular). Variante "online" só na de personal online.
+- Home (seção Como funciona), /faq (depois das perguntas, que incluem "A consultoria online funciona tão bem quanto o presencial?") e /onde-atendo (em "Não achou a sua região?", que explica a consultoria online): variante "online".
+- Blog, vídeo de terceiro trocado no mesmo lugar pelo do app: personal-trainer em Carapicuíba, Itapevi, Jandira, Jundiaí, Osasco, Sorocaba, Vargem Grande Paulista, Pirapora do Bom Jesus, Perdizes, Pinheiros e Higienópolis; personal-trainer-ia-vs-personal-real; smart-fit-vs-bluefit, smart-fit-vs-bodytech, vale-a-pena-bluefit e vale-a-pena-smart-fit (chamada pela consultoria online, sem dizer que o Montinho atende na academia).
+- Blog sem vídeo nenhum: personal-trainer-ou-aula-coletiva e quanto-custa-personal-trainer-aldeia-da-serra recebem o bloco no fim (ARTIGOS_COM_VIDEO_APP_FIM).
+- Ficaram como estão, pela regra do Montinho de 22/10 ("se já tiver algum vídeo meu, não coloca"): os 140 artigos locais que já têm vídeo dele, inclusive o "recomeçar" no fim.
+- Fora: páginas que só citam a consultoria num link (ferramentas, contato, diagnóstico, guia de academia ideal).
+- updatedAt não mudou: vídeo de apoio e componente.

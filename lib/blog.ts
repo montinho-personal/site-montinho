@@ -56042,10 +56042,8 @@ A pergunta certa não é "app ou personal?" — é "o que eu realmente preciso p
 - Schoenfeld BJ. Science and Development of Muscle Hypertrophy. Human Kinetics. 2016
 - Crisp A, et al. Resistance training supervision and outcomes. J Strength Cond Res. 2020
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculacao para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">App com IA ou app com um personal de verdade por trás? No vídeo, as telas do app do Montinho: o treino que ele monta, os recados dele durante a série e os ajustes que ele faz.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
     category: "Consultoria",
@@ -61319,10 +61317,8 @@ Sim. Monto o programa para academia, home gym ou treino com equipamento mínimo,
 
 Se você mora em Jundiaí e quer resultados reais com acompanhamento profissional, entre em contato. A primeira conversa é sem compromisso — vou entender seu objetivo e te dizer honestamente se posso te ajudar.
 
-<div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="Personal Trainer Online — Como Funciona" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Treinando em Jundiaí, o acompanhamento acontece pelo app. No vídeo, as telas reais: o treino do dia, a carga da última vez, os meus recados e a sua evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
     category: "Personal Trainer",
@@ -61401,10 +61397,8 @@ Via aplicativo ou PDF detalhado com vídeos de execução linkados para cada exe
 **Qual é o prazo para ver resultados?**
 Depende do objetivo e da consistência, mas a maioria dos alunos percebe mudanças nas primeiras 4-6 semanas.
 
-<div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="Personal Trainer Online — Como Funciona" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Treinando em Sorocaba, o acompanhamento acontece pelo app. No vídeo, as telas reais: o treino do dia, a carga da última vez, os meus recados e a sua evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
     category: "Personal Trainer",
@@ -61556,10 +61550,8 @@ Faço orientação básica de hábitos alimentares. Para prescrição detalhada 
 **Qual é a forma de pagamento?**
 Mensalidade recorrente via PIX ou cartão de crédito.
 
-<div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/zToibfjC0_A?rel=0" title="Consultoria Online de Musculação" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Treinando em Pinheiros, o acompanhamento acontece pelo app. No vídeo, as telas reais: o treino do dia, a carga da última vez, os meus recados e a sua evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
     category: "Personal Trainer",
@@ -61633,10 +61625,8 @@ Check-in semanal garantido + resposta rápida por WhatsApp sempre que precisar.
 **O programa muda ao longo do tempo?**
 Sim. O programa é reavaliado e atualizado conforme sua evolução — não é estático.
 
-<div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/HLqx295rvrI?rel=0" title="Personal Trainer Online para SP Capital" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Treinando em Perdizes, o acompanhamento acontece pelo app. No vídeo, as telas reais: o treino do dia, a carga da última vez, os meus recados e a sua evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
     category: "Personal Trainer",
@@ -61717,10 +61707,8 @@ Sim. Tenho experiência específica com esse público, incluindo adaptações pa
 **Qual é o período mínimo de contrato?**
 Trabalho com contratos trimestrais para garantir resultados reais, sem pressão para resultados impossíveis em 30 dias.
 
-<div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/0-qmJpTufaY?rel=0" title="Consultoria de Personal Trainer Online" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Treinando em Higienópolis, o acompanhamento acontece pelo app. No vídeo, as telas reais: o treino do dia, a carga da última vez, os meus recados e a sua evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
     category: "Personal Trainer",
@@ -66395,10 +66383,8 @@ Os valores variam conforme a modalidade (presencial ou online) e a frequência d
 **Presencial ou online: qual é melhor para mim?**
 Depende do seu perfil. Iniciantes absolutos ou pessoas com histórico de lesões se beneficiam mais do presencial, especialmente nas primeiras semanas, para aprender a técnica dos exercícios com supervisão direta. Quem já tem experiência básica com treino e precisa principalmente de programa, progressão e acompanhamento de resultados geralmente atinge excelentes resultados com a consultoria online.
 
-<div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="Personal Trainer em Osasco: Treino Personalizado e Consultoria Online" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Treinando em Osasco, o acompanhamento acontece pelo app. No vídeo, as telas reais: o treino do dia, a carga da última vez, os meus recados e a sua evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
 },
@@ -66501,10 +66487,8 @@ Para a maioria dos objetivos (emagrecimento, hipertrofia, condicionamento), trê
 **Como início o acompanhamento?**
 Entre em contato pelo canal disponível no site para agendar uma conversa inicial sem compromisso. Nessa conversa, são avaliados seus objetivos, sua rotina e o formato de atendimento mais adequado para você.
 
-<div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="Personal Trainer em Carapicuíba: Acompanhamento Online e Presencial" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Treinando em Carapicuíba, o acompanhamento acontece pelo app. No vídeo, as telas reais: o treino do dia, a carga da última vez, os meus recados e a sua evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
 },
@@ -66791,10 +66775,8 @@ Entre em contato pelo [WhatsApp](https://wa.me/5511981063409) e agende a sua ava
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Personal Trainer em Jandira: acompanhamento presencial e online com quem vive o treino na prática.</figcaption>
 </figure>
 
-<div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="Personal Trainer em Jandira: Acompanhamento Online e Presencial" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Treinando em Jandira, o acompanhamento acontece pelo app. No vídeo, as telas reais: o treino do dia, a carga da última vez, os meus recados e a sua evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Perguntas Frequentes</h2>
 `,
@@ -66916,10 +66898,8 @@ Entre em contato pelo [WhatsApp](https://wa.me/5511981063409). O atendimento par
   <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Personal Trainer em Itapevi: acompanhamento presencial e online com quem vive o treino na prática.</figcaption>
 </figure>
 
-<div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="Personal Trainer em Itapevi: Acompanhamento Online e Presencial" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Treinando em Itapevi, o acompanhamento acontece pelo app. No vídeo, as telas reais: o treino do dia, a carga da última vez, os meus recados e a sua evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Perguntas Frequentes</h2>
 `,
@@ -70278,10 +70258,8 @@ Veja os valores do investimento no artigo [quanto custa um personal trainer em A
 
 **Pronto para começar?** Entre em contato e veja como funciona o acompanhamento para moradores de Vargem Grande Paulista — presencial em Alphaville ou online com a mesma qualidade. [Fale agora pelo WhatsApp](/contato) e agende sua avaliação.
 
-<div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="Personal Trainer em Vargem Grande Paulista" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Treinando em Vargem Grande Paulista, o acompanhamento acontece pelo app. No vídeo, as telas reais: o treino do dia, a carga da última vez, os meus recados e a sua evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
     faq: [
@@ -70389,10 +70367,8 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 
 **Quer começar?** Entre em contato e veja como funciona o acompanhamento para moradores de Pirapora do Bom Jesus — presencial em Alphaville ou online com a mesma qualidade. [Fale agora pelo WhatsApp](/contato) e agende sua avaliação inicial sem compromisso.
 
-<div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/8qQ5wugpLYI?rel=0" title="Personal Trainer em Pirapora do Bom Jesus" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Treinando em Pirapora do Bom Jesus, o acompanhamento acontece pelo app. No vídeo, as telas reais: o treino do dia, a carga da última vez, os meus recados e a sua evolução.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 `,
     faq: [
@@ -80111,8 +80087,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>É exatamente isso que o <strong>Montinho</strong> resolve. Personal trainer presencial em Alphaville, Barueri e Santana de Parnaíba — ele treina e atende na região há anos e conhece as academias por dentro. E se você prefere treinar sozinho na Smart Fit ou na Bluefit, a <a href="/consultoria">consultoria online</a> entrega treino personalizado, ajustes semanais e cobrança de constância, na academia que você escolher.</p>
 <p>Escolha a unidade mais conveniente, e deixe a estratégia com quem faz isso todo dia. <a href="/contato">Agende uma avaliação</a> ou conheça o trabalho de <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>.</p>
 
-<p>Antes de bater o martelo, vale entender o que fazer dentro de qualquer uma delas. Neste vídeo, o Leandro Twin resume o essencial da musculação — que vale para Smart Fit, Bluefit ou qualquer salão de pesos:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Escolheu a academia? Com a consultoria online, o treino segue no app do Montinho em qualquer unidade. No vídeo, como funciona.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
@@ -80190,8 +80166,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>O <strong>Montinho</strong> atende exatamente esse ponto cego: personal trainer presencial em Alphaville, Barueri e Santana de Parnaíba, treinando na região há anos e conhecendo a rotina do executivo que sai tarde do Tamboré e da família de Aldeia da Serra. Para quem prefere autonomia, a <a href="/consultoria">consultoria personalizada</a> monta e ajusta seu treino na academia que você escolher — low cost ou premium.</p>
 <p>Decida a academia pelo bolso e pela rotina. Decida o resultado com orientação. <a href="/contato">Agende uma avaliação</a> ou conheça o serviço de <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>.</p>
 
-<p>Antes de escolher o modelo, vale alinhar a frequência ideal de treino para a sua rotina — porque ela muda o custo-benefício de cada academia. O Leandro Twin explica:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/MbnMqCiUCi8?rel=0" title="Devo treinar 3, 4, 5 ou 6x na semana? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Escolheu a academia? Com a consultoria online, o treino segue no app do Montinho em qualquer unidade. No vídeo, como funciona.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
@@ -87011,8 +86987,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>É por isso que a combinação mais inteligente da região costuma ser: <strong>academia econômica + acompanhamento profissional</strong>. Você paga pouco pela estrutura e investe no que realmente gera resultado.</p>
 <p>O Montinho atende presencialmente em Alphaville, Barueri e Santana de Parnaíba — e, para quem prefere treinar na própria Smart Fit com um plano sob medida, a <a href="/consultoria">consultoria online</a> entrega treino individualizado, ajustes semanais e suporte direto. Se quiser conversar antes, <a href="/contato">agende uma avaliação</a> ou conheça o trabalho de <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>.</p>
 
-<p>Se você está começando agora, o vídeo abaixo resume os fundamentos que evitam os erros mais comuns de quem treina sozinho em academia low-cost:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Vai treinar na Smart Fit? Com a consultoria online, o treino segue no app do Montinho, com acompanhamento. No vídeo, como funciona.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
@@ -87097,8 +87073,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>A estratégia mais eficiente que vejo funcionar na região: <strong>academia econômica como Bluefit + acompanhamento profissional de verdade</strong>. Você economiza na estrutura e investe onde o resultado nasce.</p>
 <p>É assim que o Montinho trabalha: personal presencial em Alphaville, Barueri e Santana de Parnaíba, ou <a href="/consultoria">consultoria online</a> com treino sob medida para você executar na Bluefit (ou onde preferir), com ajustes contínuos e suporte real. Conheça também o atendimento de <a href="/personal-trainer-barueri">personal trainer em Barueri</a>.</p>
 
-<p>Para entender o que separa um treino que funciona de uma coleção de exercícios aleatórios, este guia é um excelente ponto de partida:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Vai treinar na Bluefit? Com a consultoria online, o treino segue no app do Montinho, com acompanhamento. No vídeo, como funciona.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DPAQDPVffCg?rel=0" title="Como funciona o acompanhamento no app do Montinho — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>

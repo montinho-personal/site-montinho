@@ -3,6 +3,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import SectionTitle from "@/components/ui/SectionTitle";
 import FAQ from "@/components/ui/FAQ";
 import { SITE_URL } from "@/lib/blog";
+import VideoApp from "@/components/video/VideoApp";
 
 export const metadata: Metadata = {
   title: "Perguntas Frequentes — Personal Trainer Alphaville",
@@ -138,6 +139,7 @@ export default function PaginaFAQ() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <FAQ itens={faqs} placement="faq" />
         </div>
+        <VideoApp variante="online" onde="faq" />
       </section>
 
       {/* CTA */}

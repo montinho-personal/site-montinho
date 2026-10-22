@@ -104,6 +104,8 @@ import { ARTIGOS_COM_LINK_CICLO } from "@/lib/carboidratos/ciclo";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoFitChef from "@/components/video/VideoFitChef";
 import VideoTdee from "@/components/video/VideoTdee";
+import VideoApp from "@/components/video/VideoApp";
+import { ARTIGOS_COM_VIDEO_APP_FIM } from "@/lib/video/app";
 import { ARTIGOS_LOCAIS_COM_VIDEO_RECOMECAR } from "@/lib/video/recomecar";
 import LinkFerramentaSimulador from "@/components/simulador/LinkFerramentaSimulador";
 import { ARTIGOS_COM_LINK_SIMULADOR } from "@/lib/simulador/emagrecimento";
@@ -695,6 +697,7 @@ export default async function BlogPost({ params }: Props) {
               do FitChef no próprio texto (lib/blog.ts), e aí este bloco não entra. */}
           {ARTIGOS_COM_CALCULADORA_CARDAPIO.includes(post.slug) && !/youtube(?:-nocookie)?\.com\/embed\//.test(post.content) && <VideoFitChef slug={post.slug} />}
           {ARTIGOS_COM_CALCULADORA_TDEE.includes(post.slug) && !/youtube(?:-nocookie)?\.com\/embed\//.test(post.content) && <VideoTdee slug={post.slug} />}
+          {ARTIGOS_COM_VIDEO_APP_FIM.includes(post.slug) && !/youtube(?:-nocookie)?\.com\/embed\//.test(post.content) && <VideoApp variante="presencial" onde={`artigo-${post.slug}`} />}
 
           {/* Video */}
           {post.slug === "como-prevenir-lesoes-no-treino" && (

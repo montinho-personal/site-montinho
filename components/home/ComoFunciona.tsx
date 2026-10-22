@@ -1,4 +1,5 @@
 import SectionTitle from "@/components/ui/SectionTitle";
+import VideoApp from "@/components/video/VideoApp";
 
 const steps = [
   {
@@ -78,6 +79,7 @@ export default function ComoFunciona() {
           </ol>
         </div>
       </div>
+      <VideoApp variante="online" onde="home" />
     </section>
   );
 }

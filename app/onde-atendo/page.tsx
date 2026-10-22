@@ -5,6 +5,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import IndiceRegiao from "@/components/regiao/IndiceRegiao";
 import { ONDE_ATENDO } from "@/lib/regiao";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
+import VideoApp from "@/components/video/VideoApp";
 
 /**
  * Onde o Montinho atende.
@@ -123,6 +124,7 @@ export default function OndeAtendoPage() {
             responde isso em um ou dois minutos, de graça.
           </p>
         </div>
+        <VideoApp variante="online" onde="onde-atendo" />
       </section>
     </>
   );
