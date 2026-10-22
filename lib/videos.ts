@@ -60,7 +60,7 @@ export const VIDEOS_CANAL: VideoCanal[] = [
       { href: "/blog/deficit-calorico-como-calcular", nome: "Déficit calórico: como calcular" },
     ],
     ferramenta: { href: "/ferramentas/monte-seu-cardapio", nome: "Montinho FitChef (Monte seu Cardápio)" },
-    // publicadoEm: falta conferir no YouTube (o proxy da sessão bloqueia o site).
+    publicadoEm: "2026-10-22",
   },
   {
     id: "2NkNKAhku9A",

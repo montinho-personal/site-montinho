@@ -1234,3 +1234,12 @@ Pedido do Montinho: "Colocar vídeo do Montinho FitChef nas páginas referentes 
 - Fim dos 8 artigos que embutem a ferramenta (ARTIGOS_COM_CALCULADORA_CARDAPIO): componente VideoFitChef, depois do texto, como o VideoRecomecar. No fim, e não colado na ferramenta do meio, pela regra de vídeo no último terço.
 - Ritmo: mudança de componente, um PR só. updatedAt não mudou (componente renderizado em lote).
 - publicadoEm ficou vazio: o proxy da sessão bloqueia o YouTube e a data não pôde ser conferida. Sem a data, a página do vídeo sai sem VideoObject no schema; preencher quando conferida.
+
+## 2026-10-22 — Regra do vídeo do FitChef nos artigos
+
+Regra do Montinho: "Só coloca o vídeo [do FitChef] se não tiver nenhum vídeo ainda lá. Se já tiver algum meu, não coloca. Se tiver algum vídeo que não é meu, aí pode substituir."
+- Trocados no próprio texto, no mesmo lugar (último terço): como-definir-corpo-ate-o-verao, cardapio-semanal-emagrecer-com-musculo, cardapio-semanal-ganho-de-massa-muscular, cardapio-para-hipertrofia, marmita-fitness-como-montar e lista-de-compras-fitness-semanal. Todos tinham vídeo do Leandro Twin. Na marmita saiu também a frase que apresentava a aula dele.
+- Mantido: quantas-refeicoes-por-dia tem Short do próprio Montinho (duração de treino), então não recebe o FitChef.
+- Sem vídeo: o-que-comer-antes-do-treino recebe o FitChef no fim (VideoFitChef). O componente agora só entra quando o artigo não tem vídeo nenhum.
+- publicadoEm do vídeo: 2026-10-22, conferido no print do YouTube Studio enviado pelo Montinho. Com a data, a página /videos e os 6 artigos ganham VideoObject.
+- updatedAt não mudou: troca de vídeo de apoio, sem mudar o que o artigo ensina.

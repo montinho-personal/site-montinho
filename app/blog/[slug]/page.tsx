@@ -688,8 +688,11 @@ export default async function BlogPost({ params }: Props) {
           {/* O vídeo das páginas de atendimento, também nos artigos locais. */}
           {ARTIGOS_LOCAIS_COM_VIDEO_RECOMECAR.includes(post.slug) && <VideoRecomecar />}
 
-          {/* O tutorial do FitChef nos artigos que embutem o Monte seu Cardápio. */}
-          {ARTIGOS_COM_CALCULADORA_CARDAPIO.includes(post.slug) && <VideoFitChef slug={post.slug} />}
+          {/* O tutorial do FitChef nos artigos que embutem o Monte seu Cardápio,
+              só quando o artigo não tem vídeo nenhum. Regra do Montinho (22/10/2026):
+              artigo com vídeo dele fica como está; vídeo de terceiro é trocado pelo
+              do FitChef no próprio texto (lib/blog.ts), e aí este bloco não entra. */}
+          {ARTIGOS_COM_CALCULADORA_CARDAPIO.includes(post.slug) && !/youtube(?:-nocookie)?\.com\/embed\//.test(post.content) && <VideoFitChef slug={post.slug} />}
 
           {/* Video */}
           {post.slug === "como-prevenir-lesoes-no-treino" && (
