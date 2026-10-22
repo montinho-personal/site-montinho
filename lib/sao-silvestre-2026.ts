@@ -28,11 +28,12 @@ export const SAO_SILVESTRE_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-09-26",
+    updatedAt: "2026-10-22",
     readTime: "5 min",
     author: AUTOR,
     tags: ["São Silvestre", "São Silvestre 2026", "inscrição", "corrida de rua", "15 km"],
     content: `<img src="/blog-images/inscricao-sao-silvestre-2026-capa.webp" alt="Capa: inscrição da São Silvestre 2026 — 55 mil vagas, sem sorteio, kits de R$ 335,90 a R$ 1.039,90; prova em 31/12" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p><strong>As inscrições abriram na quarta-feira, 30 de setembro de 2026, às 10h (Brasília).</strong> São 55 mil vagas, e o kit mais barato custa R$ 335,90. Confira no site oficial se ainda há vagas. Última verificação: 5 de outubro de 2026.</p></blockquote>
+<blockquote><p><strong>Inscrições esgotadas.</strong> Em 22 de outubro de 2026, o site oficial da prova exibia o aviso "Inscrições esgotadas". As vendas abriram em 30 de setembro, às 10h, com 55 mil vagas. Desconfie de quem oferece vaga fora dos canais oficiais: a organização alerta para golpes todo ano. Última verificação: 22 de outubro de 2026.</p></blockquote>
 <p>A <strong>101ª Corrida Internacional de São Silvestre</strong> acontece na <strong>quinta-feira, 31 de dezembro de 2026</strong>, na região central de São Paulo, com os tradicionais <strong>15 km</strong>. É a primeira edição depois do centenário, comemorado em 2025. As inscrições abriram em <strong>30 de setembro, às 10h</strong>, por venda direta — <strong>sem sorteio</strong> — na plataforma oficial, a Ticket Sports by Ingresse.</p>
 
 <h2>Resumo da São Silvestre 2026</h2>
@@ -44,6 +45,7 @@ export const SAO_SILVESTRE_2026_POSTS: BlogPost[] = [
 <tr><td>Abertura das inscrições</td><td>30/09/2026, às 10h</td></tr>
 <tr><td>Forma de inscrição</td><td>Venda direta, sem sorteio, pela Ticket Sports by Ingresse</td></tr>
 <tr><td>Vagas</td><td>55 mil</td></tr>
+<tr><td>Situação em 22/10</td><td>Esgotadas, segundo o site oficial</td></tr>
 <tr><td>Valor 2026</td><td>De R$ 335,90 (Básico) a R$ 1.039,90 (Premium)</td></tr>
 </tbody></table>
 
@@ -72,7 +74,8 @@ export const SAO_SILVESTRE_2026_POSTS: BlogPost[] = [
 <p>A São Silvestre tem <strong>15 km</strong>, com largada e chegada na <strong>Avenida Paulista</strong>, em pontos diferentes, passando pela região central de São Paulo. O trecho mais conhecido — e mais temido — é a <strong>subida da Avenida Brigadeiro Luís Antônio</strong>, perto do fim, quando a perna já está cansada. É por causa dela que o treino de força faz tanta diferença nessa prova. Veja o <a href="/blog/percurso-sao-silvestre">percurso da São Silvestre trecho a trecho</a>.</p>
 
 <h2>Horários da largada</h2>
-<p>Os horários de 2026 ainda serão confirmados no regulamento. Em 2025, foram: cadeirantes às 7h25, elite feminina às 7h40, elite masculina às 8h05, pelotão Premium às 8h08 e pelotão geral às 8h10.</p>
+<p>Pelo regulamento de 2026, o <strong>pelotão geral larga a partir das 8h08</strong>, em ondas definidas pelo ritmo (pace) informado na inscrição. A orientação de cada onda chega por e-mail a cada inscrito e fica no site oficial. O regulamento pede que o atleta chegue à largada com pelo menos <strong>45 minutos de antecedência</strong>.</p>
+<p>Como referência, em 2025 as outras largadas foram: cadeirantes às 7h25, elite feminina às 7h40, elite masculina às 8h05 e pelotão Premium às 8h08.</p>
 
 <h2>Dá tempo de treinar até 31 de dezembro?</h2>
 <p>Da abertura das inscrições até a prova são cerca de <strong>13 semanas</strong>. Para quem já corre 5 km sem parar, é tempo suficiente para chegar aos 15 km com segurança, aumentando o volume aos poucos e incluindo treino de força para as pernas — é ele que segura a subida da Brigadeiro Luís Antônio, na reta final. Para quem ainda não corre, dá para completar a prova alternando corrida e caminhada; o guia de <a href="/blog/corrida-para-iniciantes">corrida para iniciantes</a> mostra como começar sem se machucar.</p>
@@ -91,7 +94,9 @@ ${FONTES_SS}`,
       { question: "Qual o valor da inscrição da São Silvestre 2026?", answer: "O kit Básico custa R$ 335,90, o Intermediário R$ 459,90 e o Premium R$ 1.039,90, mais a taxa de serviço da plataforma." },
       { question: "Quantas vagas tem a São Silvestre 2026?", answer: "55 mil vagas, vendidas por ordem de chegada, sem sorteio, a partir de 30 de setembro às 10h." },
       { question: "Quando é a São Silvestre 2026?", answer: "Na quinta-feira, 31 de dezembro de 2026, pela manhã, em São Paulo, com largada e chegada na Avenida Paulista." },
-      { question: "Tem sorteio para a São Silvestre?", answer: "Não. Em 2026 a inscrição é por venda direta, enquanto houver vagas." },
+      { question: "Tem sorteio para a São Silvestre?", answer: "Não. Em 2026 a inscrição foi por venda direta, enquanto houve vagas." },
+      { question: "Ainda tem vaga para a São Silvestre 2026?", answer: "Em 22 de outubro de 2026, o site oficial exibia o aviso de inscrições esgotadas. Não compre vaga por fora: a organização alerta para golpes com Pix para pessoa física e vendas por WhatsApp ou Telegram." },
+      { question: "Que horas larga a São Silvestre 2026?", answer: "Pelo regulamento, o pelotão geral larga a partir das 8h08, em ondas definidas pelo pace informado na inscrição. É preciso chegar com pelo menos 45 minutos de antecedência." },
     ],
   },
   {
@@ -104,6 +109,7 @@ ${FONTES_SS}`,
       "Três planos de 13 semanas até 31 de dezembro — para completar, para sair dos 5 km e para baixar o tempo — com o treino de força que segura a subida da Brigadeiro.",
     category: "Treinamento",
     date: "2026-09-29",
+    updatedAt: "2026-10-22",
     readTime: "9 min",
     author: AUTOR,
     tags: ["São Silvestre", "São Silvestre 2026", "treino de corrida", "15 km", "corrida de rua", "plano de treino"],
@@ -183,7 +189,7 @@ ${FONTES_SS}`,
 <ul>
 <li>Não teste nada novo: nem tênis, nem roupa, nem comida.</li>
 <li>Faça um ou dois treinos curtos e leves; o condicionamento já está construído.</li>
-<li>Na véspera, jante o que você já está acostumado e durma cedo — a largada do pelotão geral foi às 8h10 em 2025.</li>
+<li>Na véspera, jante o que você já está acostumado e durma cedo: em 2026, o pelotão geral larga a partir das 8h08, e o regulamento pede chegada 45 minutos antes.</li>
 <li>Na largada, comece mais devagar do que dá vontade. São 15 km, e a parte difícil é no fim.</li>
 </ul>
 <p>Datas de retirada do kit e horários de 2026 saem no regulamento; o <a href="/blog/inscricao-sao-silvestre-2026">guia da inscrição</a> é atualizado quando forem divulgados.</p>
@@ -350,6 +356,7 @@ ${FONTES_SS}`,
       "Guia para quem vai estrear na São Silvestre: preparação, véspera, o que levar, largada no pelotão, descida, Brigadeiro e o pós-prova.",
     category: "Treinamento",
     date: "2026-09-29",
+    updatedAt: "2026-10-22",
     readTime: "7 min",
     author: AUTOR,
     tags: ["São Silvestre", "São Silvestre 2026", "primeira corrida", "iniciante", "dicas de corrida", "15 km"],
@@ -373,7 +380,7 @@ ${FONTES_SS}`,
 <li>Coma o que você está acostumado; nada de testar comida nova.</li>
 <li>Beba água ao longo do dia.</li>
 <li>Separe tudo à noite: número de peito com chip, roupa, tênis, documento.</li>
-<li>Durma cedo. A largada do pelotão geral é de manhã cedo — em 2025, foi às 8h10.</li>
+<li>Durma cedo. Em 2026, o pelotão geral larga a partir das 8h08, em ondas pelo pace da inscrição, e o regulamento pede chegada 45 minutos antes.</li>
 </ul>
 
 <h2>O que levar e o que vestir</h2>
@@ -497,10 +504,11 @@ ${FONTES_SS}`,
       "Quando e onde retirar o kit da 101ª São Silvestre, o que vem em cada kit e o que levar para não perder a viagem.",
     category: "Treinamento",
     date: "2026-10-05",
+    updatedAt: "2026-10-22",
     readTime: "4 min",
     author: AUTOR,
     tags: ["São Silvestre", "São Silvestre 2026", "kit", "retirada do kit", "corrida de rua"],
-    content: `<blockquote><p><strong>Datas divulgadas pela imprensa e ainda não confirmadas no regulamento.</strong> Este guia é atualizado quando a organização publicar as informações oficiais. Última verificação: 5 de outubro de 2026.</p></blockquote>
+    content: `<blockquote><p><strong>Datas, horários e local confirmados no regulamento oficial da 101ª edição.</strong> Última verificação: 22 de outubro de 2026.</p></blockquote>
 <p>Quem se inscreveu na <strong>101ª São Silvestre</strong> precisa retirar o kit antes da prova: é nele que vem o número de peito com o chip, sem o qual não dá para correr. A prova é na quinta-feira, <strong>31 de dezembro de 2026</strong>.</p>
 
 <h2>Datas e horários da retirada do kit</h2>
@@ -511,7 +519,7 @@ ${FONTES_SS}`,
 <p>Não há retirada no dia da prova. Quem deixar para 30/12 pega o dia mais curto e, normalmente, a fila maior.</p>
 
 <h2>Onde retirar o kit</h2>
-<p>No prédio da <strong>Fundação Bienal de São Paulo</strong>, dentro do Parque Ibirapuera, onde acontece a feira da prova.</p>
+<p>No prédio da <strong>Fundação Bienal de São Paulo</strong> (Pavilhão Ciccillo Matarazzo), dentro do Parque Ibirapuera, onde acontece a Expo São Silvestre.</p>
 
 <h2>O que vem em cada kit</h2>
 <ul>
@@ -522,7 +530,12 @@ ${FONTES_SS}`,
 <p>Detalhes da inscrição no <a href="/blog/inscricao-sao-silvestre-2026">guia da inscrição da São Silvestre 2026</a>.</p>
 
 <h2>O que levar na retirada</h2>
-<p>Em geral, as provas pedem documento oficial com foto e o comprovante de inscrição. Confira no regulamento da prova, em <a href="https://www.saosilvestre.com.br/" target="_blank" rel="noopener noreferrer">saosilvestre.com.br</a>, a lista exata e as regras para retirar o kit de outra pessoa.</p>
+<p>Leve a <strong>confirmação de inscrição</strong> que chega por e-mail, exigida na retirada, e um documento oficial com foto.</p>
+<ul>
+<li><strong>Outra pessoa vai retirar?</strong> Ela leva o documento de identidade original com foto dela e uma cópia simples do documento do atleta, que pode ser uma foto no celular.</li>
+<li><strong>Vai passar a inscrição para outra pessoa?</strong> A troca de titularidade só é feita no dia da retirada do kit, com taxa de R$ 100.</li>
+</ul>
+<p>A lista completa fica no regulamento, em <a href="https://www.saosilvestre.com.br/" target="_blank" rel="noopener noreferrer">saosilvestre.com.br</a>.</p>
 
 <h2>Experimente a camiseta, mas corra com a sua roupa</h2>
 <p>Camiseta e tênis novos no dia da prova são a receita de assadura e bolha. Se quiser correr com a camiseta oficial, use num treino antes. O mesmo vale para o tênis: veja <a href="/blog/tenis-para-sao-silvestre">tênis para a São Silvestre</a>.</p>
@@ -532,13 +545,14 @@ ${FONTES_SS}`,
 
 <h2>Não se compare</h2>
 <p>Cada um tem a própria genética, rotina e história. Na São Silvestre tem gente que corre para ganhar e gente que caminha boa parte do trajeto, e as duas terminam a prova. Se quiser ajuda para chegar bem em 31/12, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
-<p><small>Fontes: Esportividade (datas, local e kits) e site oficial da prova. Dados a confirmar no regulamento oficial.</small></p>
+<p><small>Fontes: regulamento oficial da 101ª São Silvestre (datas, horários, local, retirada por terceiros e troca de titularidade), FAQ oficial (confirmação de inscrição) e Esportividade (itens de cada kit).</small></p>
 `,
     faq: [
-      { question: "Quando é a retirada do kit da São Silvestre 2026?", answer: "Segundo a imprensa, de 26 a 29 de dezembro, das 9h às 20h, e em 30 de dezembro, das 9h às 18h. Confirme no regulamento oficial." },
-      { question: "Onde retirar o kit da São Silvestre?", answer: "No prédio da Fundação Bienal, dentro do Parque Ibirapuera, em São Paulo, segundo as informações divulgadas até agora." },
-      { question: "Dá para retirar o kit no dia da prova?", answer: "Não. A última data divulgada é 30 de dezembro, das 9h às 18h." },
-      { question: "Outra pessoa pode retirar meu kit?", answer: "As regras de retirada por terceiros ficam no regulamento oficial; confira no site da prova antes de mandar alguém." },
+      { question: "Quando é a retirada do kit da São Silvestre 2026?", answer: "Pelo regulamento, de 26 a 29 de dezembro, das 9h às 20h, e em 30 de dezembro, das 9h às 18h." },
+      { question: "Onde retirar o kit da São Silvestre?", answer: "No prédio da Fundação Bienal (Pavilhão Ciccillo Matarazzo), dentro do Parque Ibirapuera, em São Paulo." },
+      { question: "Dá para retirar o kit no dia da prova?", answer: "Não. O regulamento proíbe a entrega no dia da prova; o último dia é 30 de dezembro, das 9h às 18h." },
+      { question: "Outra pessoa pode retirar meu kit?", answer: "Pode. Ela leva o documento original com foto dela e uma cópia simples do seu documento, que pode ser foto no celular." },
+      { question: "Dá para trocar o titular da inscrição?", answer: "Sim, só no dia da retirada do kit, com taxa de R$ 100." },
     ],
   },
 ];
