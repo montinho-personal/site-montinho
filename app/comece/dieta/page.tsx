@@ -4,6 +4,7 @@ import { SITE_URL } from "@/lib/blog";
 import { TRILHAS } from "@/lib/ferramentas/trilha";
 import { BORDOES } from "@/lib/bordoes";
 import RastreioComece from "@/components/comece/RastreioComece";
+import VideoCaminhoDieta from "@/components/video/VideoCaminhoDieta";
 
 /**
  * /comece/dieta — a LP do caminho da dieta.
@@ -179,6 +180,8 @@ export default function ComeceDietaPage() {
           </p>
         </div>
       </section>
+
+      <VideoCaminhoDieta pagina="comece-dieta" />
 
       {/* ── Fechamento ─────────────────────────────────────────────── */}
       <section className="py-16 bg-black">

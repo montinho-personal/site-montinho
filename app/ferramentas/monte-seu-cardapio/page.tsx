@@ -10,6 +10,7 @@ import FAQ from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import VideoMedido from "@/components/blog/VideoMedido";
+import VideoCaminhoDieta from "@/components/video/VideoCaminhoDieta";
 
 /**
  * Montinho FitChef (Monte seu Cardápio) — página própria. O nome é FitChef;
@@ -303,6 +304,7 @@ export default function MonteSeuCardapioPage() {
           <VideoMedido slug="monte-seu-cardapio" seletor="[data-video-medido]" />
         </div>
       </section>
+      <VideoCaminhoDieta pagina="monte-seu-cardapio" passo={4} />
     </>
   );
 }
