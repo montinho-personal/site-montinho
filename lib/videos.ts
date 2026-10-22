@@ -42,6 +42,27 @@ export interface VideoCanal {
 
 export const VIDEOS_CANAL: VideoCanal[] = [
   {
+    id: "FjvYaKx05x0",
+    slug: "monte-seu-cardapio-em-3-passos",
+    titulo: "Monte seu cardápio em 3 passos com o Montinho FitChef",
+    metaTitle: "Monte Seu Cardápio em 3 Passos: Montinho FitChef (Vídeo)",
+    descricao:
+      "Como usar o Montinho FitChef: diga o objetivo, as calorias por dia e o peso; escolha quantas refeições, como é a sua alimentação e o que você evita; marque o que você já come. O cardápio sai com porções caseiras, calorias e proteína de cada refeição.",
+    chamada: "Sabe quantas calorias comer, mas não sabe o que colocar no prato? Em 53 segundos você vê como montar o seu cardápio.",
+    texto: [
+      "Saber a meta de calorias não resolve o jantar de hoje. O Montinho FitChef transforma esse número em comida de verdade, usando só os alimentos que você já come.",
+      "São três passos: o objetivo, a meta de calorias e o peso; quantas refeições você quer fazer, como é a sua alimentação e o que você evita; e os alimentos que já fazem parte de cada refeição. No exemplo do vídeo, com meta de 1.800 kcal e 72 kg em 4 refeições, o cardápio fecha em 1.797 kcal e 121 g de proteína, com porções caseiras. Se um item não agradar, é só tocar em trocar e escolher outro; o quadro do dia mostra na hora como ficaram as calorias e a proteína.",
+      "É uma sugestão de organização alimentar com finalidade educativa, não uma prescrição de dieta. Gestação, menos de 18 anos ou uma condição de saúde que exige dieta específica pedem acompanhamento de nutricionista ou médico.",
+    ],
+    artigos: [
+      { href: "/blog/cardapio-semanal-emagrecer-com-musculo", nome: "Cardápio semanal para emagrecer sem perder músculo" },
+      { href: "/blog/cardapio-semanal-ganho-de-massa-muscular", nome: "Cardápio semanal para ganho de massa muscular" },
+      { href: "/blog/deficit-calorico-como-calcular", nome: "Déficit calórico: como calcular" },
+    ],
+    ferramenta: { href: "/ferramentas/monte-seu-cardapio", nome: "Montinho FitChef (Monte seu Cardápio)" },
+    // publicadoEm: falta conferir no YouTube (o proxy da sessão bloqueia o site).
+  },
+  {
     id: "2NkNKAhku9A",
     slug: "quanto-tempo-para-emagrecer-simulador",
     titulo: "Quanto tempo para emagrecer? Simule a sua meta",

@@ -8,6 +8,8 @@ import MonteSeuCardapio from "@/components/cardapio/MonteSeuCardapio";
 import Trilha from "@/components/ferramentas/Trilha";
 import FAQ from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
+import VideoMedido from "@/components/blog/VideoMedido";
 
 /**
  * Montinho FitChef (Monte seu Cardápio) — página própria. O nome é FitChef;
@@ -152,6 +154,9 @@ export default function MonteSeuCardapioPage() {
             porções caseiras e substituições — e transforma o número da sua
             calculadora em comida de verdade.
           </p>
+          <a href="#como-usar" className="inline-flex items-center gap-2 mt-4 min-h-[44px] text-sm text-[#BA9E50] underline underline-offset-4 hover:text-white">
+            <span aria-hidden="true">▶</span> Ver como usar (vídeo de 53 s)
+          </a>
         </div>
       </section>
 
@@ -281,9 +286,21 @@ export default function MonteSeuCardapioPage() {
               <Link href="/blog/cardapio-semanal-ganho-de-massa-muscular" className={ln}>
                 ganho de massa
               </Link>{" "}
-              complementam a ferramenta.
+                            complementam a ferramenta.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Tutorial do próprio Montinho: no fim da página; o atalho no topo leva até aqui. */}
+      <section id="como-usar" className="py-14 border-t border-white/10 bg-black scroll-mt-24 print:hidden">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-white mb-2" style={h}>Como usar, em vídeo</h2>
+          <p className="text-gray-300 mb-6">Sua meta, sua rotina e o que você já come: o vídeo mostra os três passos, o cardápio pronto e como trocar um alimento. <Link href="/videos/monte-seu-cardapio-em-3-passos" className={ln}>Ver a página do vídeo</Link>.</p>
+          <div data-video-medido>
+            <YoutubeShortEmbed videoId="FjvYaKx05x0" title="Como usar o Montinho FitChef (Monte seu Cardápio) — Montinho Personal Trainer" />
+          </div>
+          <VideoMedido slug="monte-seu-cardapio" seletor="[data-video-medido]" />
         </div>
       </section>
     </>

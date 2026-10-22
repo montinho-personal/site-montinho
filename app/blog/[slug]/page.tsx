@@ -102,6 +102,7 @@ import LinkFerramentaWhey from "@/components/whey/LinkFerramentaWhey";
 import LinkFerramentaCiclo from "@/components/carboidratos/LinkFerramentaCiclo";
 import { ARTIGOS_COM_LINK_CICLO } from "@/lib/carboidratos/ciclo";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
+import VideoFitChef from "@/components/video/VideoFitChef";
 import { ARTIGOS_LOCAIS_COM_VIDEO_RECOMECAR } from "@/lib/video/recomecar";
 import LinkFerramentaSimulador from "@/components/simulador/LinkFerramentaSimulador";
 import { ARTIGOS_COM_LINK_SIMULADOR } from "@/lib/simulador/emagrecimento";
@@ -686,6 +687,9 @@ export default async function BlogPost({ params }: Props) {
 
           {/* O vídeo das páginas de atendimento, também nos artigos locais. */}
           {ARTIGOS_LOCAIS_COM_VIDEO_RECOMECAR.includes(post.slug) && <VideoRecomecar />}
+
+          {/* O tutorial do FitChef nos artigos que embutem o Monte seu Cardápio. */}
+          {ARTIGOS_COM_CALCULADORA_CARDAPIO.includes(post.slug) && <VideoFitChef slug={post.slug} />}
 
           {/* Video */}
           {post.slug === "como-prevenir-lesoes-no-treino" && (
