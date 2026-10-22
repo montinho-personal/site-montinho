@@ -1225,3 +1225,12 @@ O Montinho confirmou: a Arena 18 fecha às 23h (não é 24 horas) e fica na R. M
 - arena-18-alphaville: endereço e horário no topo e no FAQ (+ "Onde fica a Arena 18?"); updatedAt 2026-10-21. 10-melhores: endereço na seção da Arena 18. /personal-trainer-alphaville: endereço na lista de locais.
 - lib/academias/base.ts: vinteQuatroHoras false, fechaDiaUtil 23 e região "Barueri (fora de Alphaville)". O teste A de scripts/academias-test.ts deixou de exigir 3 resultados, porque eles dependiam da Arena 18 ser 24h, e passou a conferir que academia sem o dado continua na lista.
 - updatedAt não mudou nos guias (correção de um dado numa lista).
+
+## 2026-10-22 — Vídeo do Montinho FitChef nas páginas dele
+
+Pedido do Montinho: "Colocar vídeo do Montinho FitChef nas páginas referentes sobre ele". Short publicado por ele: youtube.com/shorts/FjvYaKx05x0.
+- /ferramentas/monte-seu-cardapio: seção "Como usar, em vídeo" no fim da página, atalho "Ver como usar (vídeo de 53 s)" no topo, play medido (slug monte-seu-cardapio). Mesmo padrão da Whey e do Déficit.
+- /videos/monte-seu-cardapio-em-3-passos: página nova do vídeo em lib/videos.ts, com resumo, exemplo do vídeo (1.800 kcal, 72 kg, 4 refeições → 1.797 kcal e 121 g de proteína) e ressalva educativa.
+- Fim dos 8 artigos que embutem a ferramenta (ARTIGOS_COM_CALCULADORA_CARDAPIO): componente VideoFitChef, depois do texto, como o VideoRecomecar. No fim, e não colado na ferramenta do meio, pela regra de vídeo no último terço.
+- Ritmo: mudança de componente, um PR só. updatedAt não mudou (componente renderizado em lote).
+- publicadoEm ficou vazio: o proxy da sessão bloqueia o YouTube e a data não pôde ser conferida. Sem a data, a página do vídeo sai sem VideoObject no schema; preencher quando conferida.
