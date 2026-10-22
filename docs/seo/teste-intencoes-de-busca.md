@@ -1265,3 +1265,11 @@ Pedido do Montinho: "Adicionar nas páginas referentes. Segue mesmo padrão que 
   - sem vídeo: caminhada-japonesa recebe o bloco VideoTdee no fim.
 - updatedAt não mudou: troca de vídeo de apoio, sem mudar o que o artigo ensina.
 - Medir em 28 dias: plays por página e uso da calculadora vindo dos artigos.
+
+## 2026-10-22 — Vídeo do app nos artigos "funciona?" e "vale a pena?"
+
+Pedido do Montinho: "colocar o vídeo de lançamento do app no artigo que pergunta se app funciona. Coloca em outros artigos sobre se consultoria funciona ou algo do tipo". Short: youtube.com/shorts/DPAQDPVffCg.
+- app-de-treino-funciona: tinha o Short "Raiva e sangue no olho" (do Montinho). Trocado pelo vídeo do app a pedido dele, por ser o tema do artigo; o outro continua em lib/videos.ts e nos demais artigos.
+- Trocados no mesmo lugar (último terço), todos com vídeo do Leandro Twin: personal-trainer-online-como-funciona, consultoria-online-musculacao, quanto-custa-consultoria-online-de-treino, personal-trainer-vale-a-pena e vale-a-pena-contratar-personal-trainer. A frase de apresentação foi reescrita para o app.
+- /videos/app-do-montinho: links para os artigos "App de treino funciona?" e "Consultoria online de musculação".
+- updatedAt não mudou: troca de vídeo de apoio.
