@@ -8,6 +8,7 @@ import testimonials from "@/data/testimonials.json";
 import FAQ from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
+import VideoApp from "@/components/video/VideoApp";
 
 /**
  * Landing Page de alta conversão para Google Ads — Consultoria Online.
@@ -474,6 +475,7 @@ export default function ConsultoriaOnlineLP() {
                 </li>
               ))}
             </ul>
+            <VideoApp variante="online" onde="consultoria-online" semSaida />
             <div className="mt-10">
               <Cta em="incluso" label="Quero conversar sobre o meu treino" />
             </div>

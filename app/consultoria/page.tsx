@@ -6,6 +6,7 @@ import { SITE_URL } from "@/lib/blog";
 import FAQ from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
+import VideoApp from "@/components/video/VideoApp";
 
 export const metadata: Metadata = {
   title: "Consultoria Online e Personal Trainer em Alphaville",
@@ -382,6 +383,7 @@ export default function Consultoria() {
             ))}
           </div>
         </div>
+        <VideoApp variante="online" onde="consultoria" />
       </section>
 
       {/* Process */}

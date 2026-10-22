@@ -9,6 +9,7 @@ import Compartilhar from "@/components/share/Compartilhar";
 import { ligacoesDoPerfil } from "@/lib/perfil-google";
 import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
+import VideoApp from "@/components/video/VideoApp";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer em Santana de Parnaíba: Planos e Atendimento | Montinho" },
@@ -387,6 +388,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
             </p>
           </div>
         </div>
+        <VideoApp variante="presencial" onde="santana-de-parnaiba" />
       </section>
 
       {/* DORES E LIMITAÇÕES */}

@@ -5,6 +5,7 @@ import testimonials from "@/data/testimonials.json";
 import FAQ from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
+import VideoApp from "@/components/video/VideoApp";
 
 /**
  * Landing Page de alta conversão para Google Ads.
@@ -338,6 +339,7 @@ export default function LandingPage() {
               <WhatsButton label="Dar o primeiro passo agora" sub="Leva 2 minutos. Sem compromisso." />
             </div>
           </div>
+          <VideoApp variante="presencial" onde="personal-trainer" />
         </section>
 
         {/* ───────────────────── 6+7. DIFERENCIAIS / COMPARATIVO ───────────────────── */}
