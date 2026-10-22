@@ -429,6 +429,27 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     ],
     publicadoEm: "2026-08-13",
   },
+  {
+    id: "XCSizVFG3d0",
+    slug: "caminho-da-dieta-em-4-passos",
+    titulo: "Como montar sua dieta para emagrecer em 4 passos",
+    metaTitle: "Como Montar Sua Dieta para Emagrecer em 4 Passos (Vídeo)",
+    descricao:
+      "O Caminho da Dieta do Montinho em 4 passos gratuitos e sem cadastro: quanto você gasta por dia, quantas calorias comer para emagrecer, como dividir em proteína, carboidrato e gordura, e o cardápio com porções caseiras e lista de compras.",
+    chamada: "Não falta informação sobre dieta. Falta a ordem: gasto, meta, macros e cardápio, em 1 minuto e meio.",
+    texto: [
+      "Um vídeo diz uma coisa, outro diz o contrário, e você continua sem saber quanto comer. O que muda o jogo não é mais informação, é a ordem das peças. O Caminho da Dieta são quatro ferramentas gratuitas, sem cadastro, em sequência, e o número que sai de um passo já entra sozinho no próximo.",
+      "Passo um: quanto você gasta por dia. Peso, altura, idade e o quanto você se mexe na semana dão a sua TMB e o seu gasto diário. Passo dois: quanto comer para emagrecer, com os seus dados já preenchidos e três faixas de déficit, de 10%, 15 a 20% e 25%. Passo três: como dividir essas calorias em proteína, carboidrato e gordura, em gramas. Passo quatro: o cardápio, montado com os alimentos que você já come, com porções de casa, trocas e a lista de compras da semana.",
+      "E não se compare com ninguém: cada um tem a sua genética, a sua rotina e a sua história. Os números das ferramentas são estimativas e um ponto de partida; o que importa é achar um jeito de comer que dê para seguir pelo resto da vida. As telas do vídeo usam números de exemplo.",
+    ],
+    artigos: [
+      { href: "/comece/dieta", nome: "O Caminho da Dieta, passo a passo" },
+      { href: "/blog/deficit-calorico-como-calcular", nome: "Déficit calórico: como calcular" },
+      { href: "/blog/cardapio-semanal-emagrecer-com-musculo", nome: "Cardápio semanal para emagrecer sem perder músculo" },
+    ],
+    ferramenta: { href: "/ferramentas/calculadora-tmb-tdee", nome: "Começar pelo passo 1: Calculadora de TMB e TDEE" },
+    publicadoEm: "2026-10-22",
+  },
 ];
 
 const porId = new Map(VIDEOS_CANAL.map((v) => [v.id, v]));
