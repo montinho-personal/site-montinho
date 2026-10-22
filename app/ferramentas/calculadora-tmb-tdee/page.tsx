@@ -6,6 +6,9 @@ import { NIVEIS, REFERENCIA_TMB } from "@/lib/tdee";
 import CalculadoraTDEE from "@/components/tdee/CalculadoraTDEE";
 import Trilha from "@/components/ferramentas/Trilha";
 import Compartilhar from "@/components/share/Compartilhar";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
+import VideoMedido from "@/components/blog/VideoMedido";
+import { VIDEO_TDEE_ID, VIDEO_TDEE_SLUG, VIDEO_TDEE_TITULO } from "@/lib/video/tdee";
 
 /**
  * Calculadora de TMB e TDEE — página própria.
@@ -113,6 +116,11 @@ export default function CalculadoraTmbTdeePage() {
             taxa metabólica basal e seu gasto energético diário — quantas
             calorias seu corpo utiliza em repouso e ao longo do dia.
           </p>
+          {VIDEO_TDEE_ID && (
+            <a href="#como-usar" className="inline-flex items-center gap-2 mt-4 min-h-[44px] text-sm text-[#BA9E50] underline underline-offset-4 hover:text-white">
+              <span aria-hidden="true">▶</span> Ver como usar (vídeo de 1 min)
+            </a>
+          )}
         </div>
       </section>
 
@@ -256,6 +264,20 @@ export default function CalculadoraTmbTdeePage() {
           </div>
         </div>
       </section>
+
+      {/* Tutorial do próprio Montinho: no fim da página; o atalho no topo leva até aqui. */}
+      {VIDEO_TDEE_ID && (
+        <section id="como-usar" className="py-14 border-t border-white/10 bg-black scroll-mt-24 print:hidden">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-bold text-white mb-2" style={h}>Como usar, em vídeo</h2>
+            <p className="text-gray-300 mb-6">Seus dados, o seu nível de atividade e o que fazer com o resultado: o vídeo mostra a TMB, o gasto do dia e o próximo passo. <Link href={`/videos/${VIDEO_TDEE_SLUG}`} className={ln}>Ver a página do vídeo</Link>.</p>
+            <div data-video-medido>
+              <YoutubeShortEmbed videoId={VIDEO_TDEE_ID} title={VIDEO_TDEE_TITULO} />
+            </div>
+            <VideoMedido slug="calculadora-tmb-tdee" seletor="[data-video-medido]" />
+          </div>
+        </section>
+      )}
     </>
   );
 }

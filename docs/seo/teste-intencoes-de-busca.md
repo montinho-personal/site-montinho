@@ -1253,3 +1253,15 @@ O Montinho decidiu usar a versão completa do vídeo do app (2 min 13 s), sem co
 - /videos/app-do-montinho: página nova com a narração resumida e VideoObject.
 - Fora por enquanto: artigos locais do blog (já têm o vídeo "recomeçar rápido") e guias de academia.
 - Medir em 28 dias: plays por página e taxa de clique no WhatsApp da /consultoria-online.
+
+## 2026-10-22 — Vídeo da Calculadora de TMB e TDEE nas páginas dela
+
+Pedido do Montinho: "Adicionar nas páginas referentes. Segue mesmo padrão que estamos fazendo". Short: youtube.com/shorts/iGStCDRk0Zg, publicado em 22/10/2026 (print do Montinho, "20 s atrás").
+- /ferramentas/calculadora-tmb-tdee: atalho "Ver como usar (vídeo de 1 min)" no topo e seção "Como usar, em vídeo" no fim, play medido (slug calculadora-tmb-tdee). A página não tinha vídeo.
+- /videos/quantas-calorias-voce-gasta-por-dia: página nova em lib/videos.ts, com resumo e VideoObject.
+- Artigos de ARTIGOS_COM_CALCULADORA_TDEE, pela regra do vídeo de 22/10:
+  - trocados no mesmo lugar (último terço), todos com vídeo do Leandro Twin: como-ganhar-massa-muscular, como-calcular-tmb-tdee-calorias, quantas-calorias-eu-gasto-por-dia, como-acelerar-o-metabolismo e neat-gasto-calorico-diario. A frase que apresentava a aula dele saiu junto;
+  - mantido: metabolismo-lento-existe tem Short do próprio Montinho;
+  - sem vídeo: caminhada-japonesa recebe o bloco VideoTdee no fim.
+- updatedAt não mudou: troca de vídeo de apoio, sem mudar o que o artigo ensina.
+- Medir em 28 dias: plays por página e uso da calculadora vindo dos artigos.
