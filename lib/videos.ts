@@ -42,6 +42,27 @@ export interface VideoCanal {
 
 export const VIDEOS_CANAL: VideoCanal[] = [
   {
+    id: "DPAQDPVffCg",
+    slug: "app-do-montinho",
+    titulo: "O app do Montinho: seu treino na palma da mão",
+    metaTitle: "O App do Montinho: Seu Treino na Palma da Mão (Vídeo)",
+    descricao:
+      "Como funciona o app do Montinho: o treino do dia com a carga da última vez, descanso e vídeo de cada exercício, os recados do Montinho durante a série, o treino possível no dia corrido, o Chalalá e a Jornada do Chalalá.",
+    chamada: "Começar todo mundo começa. Veja como o app do Montinho ajuda você a continuar.",
+    texto: [
+      "Quantas vezes você começou a treinar com tudo e, lá pela terceira semana, a rotina engoliu o treino? O app do Montinho foi feito para isso: não é mais uma ficha no WhatsApp, é o treino na palma da mão, feito para você continuar.",
+      "No treino do dia, o app já mostra quanto você pegou da última vez, o descanso conta sozinho, o vídeo mostra o movimento e a nota do Montinho fica no exercício certo. Durante o treino ele também aparece: dá o recado na hora de começar, comemora quando você faz mais repetições do que nunca e, antes da última série, se as séries saíram fáceis, provoca: vai que tá fácil!",
+      "Dia corrido? Você diz quanto tempo tem e o app monta a versão possível de hoje, porque treino curto feito vale mais que treino perfeito que não aconteceu. Terminou, Chalalá: cada treino é celebrado, com medalhas e um card pronto para os Stories.",
+      "Na Jornada do Chalalá você vê o caminho que já percorreu, as medalhas e onde está agora, capítulo por capítulo. O Montinho é o guia; o Colombo celebra as descobertas, o Mestre Oogway lembra que cada um tem o seu ritmo e a Fênix recebe você de volta depois de uma pausa, porque uma pausa não apaga a sua história. As telas do vídeo usam dados de demonstração.",
+    ],
+    artigos: [
+      { href: "/consultoria-online", nome: "Consultoria online com o Montinho" },
+      { href: "/personal-trainer-alphaville", nome: "Personal trainer em Alphaville" },
+      { href: "/blog/quando-trocar-o-treino", nome: "Quando trocar o treino" },
+    ],
+    publicadoEm: "2026-10-22",
+  },
+  {
     id: "FjvYaKx05x0",
     slug: "monte-seu-cardapio-em-3-passos",
     titulo: "Monte seu cardápio em 3 passos com o Montinho FitChef",
