@@ -1285,3 +1285,13 @@ Pedido do Montinho: "o vídeo de lançamento do aplicativo [deve estar] na pági
 - Ficaram como estão, pela regra do Montinho de 22/10 ("se já tiver algum vídeo meu, não coloca"): os 140 artigos locais que já têm vídeo dele, inclusive o "recomeçar" no fim.
 - Fora: páginas que só citam a consultoria num link (ferramentas, contato, diagnóstico, guia de academia ideal).
 - updatedAt não mudou: vídeo de apoio e componente.
+
+## 2026-10-22 — Vídeo do app também nos artigos locais que já têm vídeo do Montinho
+
+Pedido do Montinho: "Nos que aparece já meu vídeo, não precisa excluir, só encaixe de maneira semântica onde fala de consultoria online. Ou de aplicativo, coisa do tipo."
+- Critério: o vídeo do app entra logo depois do último parágrafo do último terço (antes de "Leia também"/"Referências", regra de scripts/videos-test.ts) que fala de consultoria online, treino à distância ou do acompanhamento do Montinho. Quando esse parágrafo fica um pouco antes dos 2/3, o vídeo desce para o fim do mesmo trecho, sem atravessar subtítulo, lista ou outro vídeo. Nunca a menos de ~600 caracteres do vídeo que já existe.
+- Chamada conforme o trecho: consultoria ("Na consultoria online, o acompanhamento acontece pelo app"), guia de academia ("…funciona em qualquer academia", sem dizer que ele atende lá) ou acompanhamento ("Esse acompanhamento continua entre uma sessão e outra, pelo app").
+- Entraram 30: personal-trainer-alphaville-residencial-2, personal-trainer-alphaville-residencial-3, personal-trainer-alphaville-residencial-4, personal-trainer-alphaville-residencial-6, personal-trainer-alphaville-residencial-12, personal-trainer-aldeia-da-serra, quanto-custa-personal-trainer-alphaville, academias-em-alphaville, academia-perto-do-shopping-tambore, ironberg-alphaville, bodytech-alphaville, bio-ritmo-alphaville, academia-gavioes-alphaville, smart-fit-barueri, bluefit-barueri, panobianco-barueri, academia-gavioes-barueri, academia-24-horas-alphaville, academia-com-natacao-alphaville, academias-menos-lotadas-alphaville, quanto-custa-personal-trainer-barueri, quanto-custa-personal-trainer-santana-de-parnaiba, personal-trainer-a-domicilio-barueri, personal-trainer-feminino-alphaville, academias-em-aldeia-da-serra, melhores-academias-aldeia-da-serra, personal-trainer-a-domicilio-aldeia-da-serra, academia-24-horas-santana-de-parnaiba, personal-trainer-feminino-santana-de-parnaiba, personal-trainer-a-domicilio-santana-de-parnaiba.
+- Ficaram sem: 105 artigos em que o último terço não fala de consultoria online, app ou acompanhamento. Parágrafo que só lista condomínios atendidos não conta.
+- O vídeo do Montinho que já estava em cada artigo continua.
+- updatedAt não mudou.
