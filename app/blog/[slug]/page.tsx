@@ -93,6 +93,8 @@ import { ARTIGOS_COM_CALCULADORA_CROSSFIT } from "@/lib/crossfit";
 import CalculadoraCrossfit from "@/components/crossfit/CalculadoraCrossfit";
 import { ARTIGOS_COM_CALCULADORA_HYROX } from "@/lib/hyrox";
 import CalculadoraHyrox from "@/components/hyrox/CalculadoraHyrox";
+import { ARTIGOS_COM_CALCULADORA_TEMPO_HYROX } from "@/lib/hyrox-tempo";
+import CalculadoraTempoHyrox from "@/components/hyrox/CalculadoraTempoHyrox";
 import { ARTIGOS_COM_CALCULADORA_CREATINA, ARTIGOS_COM_LINK_CREATINA } from "@/lib/creatina";
 import CalculadoraCreatina from "@/components/creatina/CalculadoraCreatina";
 import LinkFerramentaCreatina from "@/components/creatina/LinkFerramentaCreatina";
@@ -300,6 +302,8 @@ export default async function BlogPost({ params }: Props) {
                                                     ? "crossfit"
                                                     : ARTIGOS_COM_CALCULADORA_HYROX.includes(post.slug)
                                                       ? "hyrox"
+                                                      : ARTIGOS_COM_CALCULADORA_TEMPO_HYROX.includes(post.slug)
+                                                      ? "hyroxTempo"
                                                       : ARTIGOS_COM_CALCULADORA_CREATINA.includes(post.slug)
                                                         ? "creatina"
                                                         : ARTIGOS_COM_CALCULADORA_WHEY.includes(post.slug)
@@ -578,6 +582,8 @@ export default async function BlogPost({ params }: Props) {
                   <Comparador inicialA={ARTIGOS_COM_COMPARADOR[post.slug][0]} inicialB={ARTIGOS_COM_COMPARADOR[post.slug][1]} placement={post.slug} />
                 ) : qualCalc === "hyrox" ? (
                   <CalculadoraHyrox placement={post.slug} />
+                ) : qualCalc === "hyroxTempo" ? (
+                  <CalculadoraTempoHyrox placement={post.slug} />
                 ) : qualCalc === "creatina" ? (
                   <CalculadoraCreatina placement={post.slug} />
                 ) : qualCalc === "whey" ? (

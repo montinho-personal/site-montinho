@@ -105,6 +105,7 @@ import { OLYMPIA_2026_POSTS } from "./olympia-2026";
 import { SAO_SILVESTRE_2026_POSTS } from "./sao-silvestre-2026";
 import { CORRIDA_PACE_POSTS } from "./corrida-pace";
 import { HYROX_SP_2026_POSTS } from "./hyrox-sp-2026";
+import { HYROX_GUIAS_POSTS } from "./hyrox-guias";
 import { BLACK_FRIDAY_2026_POSTS } from "./black-friday-2026";
 import { UFC_2026_POSTS } from "./ufc-2026";
 import { OUTUBRO_ROSA_POSTS } from "./outubro-rosa-2026";
@@ -120,6 +121,7 @@ export const blogPosts = ([
   ...SAO_SILVESTRE_2026_POSTS,
   ...CORRIDA_PACE_POSTS,
   ...HYROX_SP_2026_POSTS,
+  ...HYROX_GUIAS_POSTS,
   ...BLACK_FRIDAY_2026_POSTS,
   ...MIOSTATINA_POSTS,
   ...UFC_2026_POSTS,
@@ -119354,7 +119356,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     excerpt: "Hyrox é uma prova de 8 km de corrida intercalados com 8 estações de força e condicionamento. Veja como funciona, quanto uma prova gasta de verdade e como treinar para a primeira.",
     category: "Treino",
     date: "2026-09-23",
-    updatedAt: "2026-09-23",
+    updatedAt: "2026-10-23",
     readTime: "10 min",
     author: "Montinho",
     tags: ["hyrox", "treino híbrido", "corrida", "condicionamento", "queima de calorias"],
@@ -119364,6 +119366,12 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
       { question: "O que gasta mais no Hyrox: a corrida ou as estações?", answer: "A corrida. Numa prova de 1h30, os 8 km levam cerca de 53% do tempo e fazem cerca de 60% do gasto. As estações cansam mais a musculatura, mas a corrida é mais longa e gasta mais por minuto." },
       { question: "Preciso saber correr para fazer Hyrox?", answer: "Precisa conseguir correr 8 km no total, em blocos de 1 km, com cansaço acumulado. Quem só faz musculação costuma sofrer mais na corrida do que nas estações. Para a primeira prova, a categoria em dupla divide as estações e deixa a estreia mais tranquila." },
       { question: "Hyrox emagrece?", answer: "A prova é um dia só. O que emagrece é o treino das semanas antes dela — corrida, força e condicionamento — somado a um déficit calórico. O Hyrox ajuda porque dá um objetivo com data, e isso mantém a pessoa treinando." },
+      { question: "Quanto tempo dura uma prova de Hyrox?", answer: "Para a maioria das pessoas, entre 1 hora e 2 horas. Com pace de 6:00 por km, estações de 5 minutos em média e uns 5 minutos de Roxzone, a prova fecha perto de 1h33. O vencedor do Pro masculino em São Paulo 2026 fez 58:41." },
+      { question: "Hyrox é cardio?", answer: "É cardio e força ao mesmo tempo. A corrida é mais da metade do tempo, e o coração fica alto a prova inteira; mas trenó, avanço, carregamento e wall ball são força com carga. Por isso o treino junta os dois." },
+      { question: "Hyrox define o corpo?", answer: "O treino de Hyrox melhora o condicionamento e a força, e ajuda a gastar calorias. O que deixa o corpo mais definido é a soma de menos gordura, pela alimentação, e mais músculo, pela força. Quem quer ganhar massa mantém a musculação junto." },
+      { question: "Hyrox é em dupla?", answer: "Pode ser individual, em dupla ou em revezamento de quatro. Na dupla, os dois correm juntos os 8 km e dividem as estações como quiserem; é o jeito mais tranquilo de fazer a primeira prova." },
+      { question: "Quando surgiu o Hyrox?", answer: "O Hyrox foi criado na Alemanha por Christian Toetzke e Moritz Fürste, com a primeira prova em Hamburgo. As fontes divergem sobre a data: 2017 aparece como ano de criação e 2018 como o da primeira prova." },
+      { question: "Qual a idade mínima para fazer Hyrox?", answer: "16 anos no dia da prova, pelo regulamento oficial. Não há idade máxima: as faixas etárias vão até 85 a 89 anos." },
     ],
     content: `<p>Oito quilômetros de corrida, oito estações, e todo mundo fazendo exatamente a mesma prova — em São Paulo, em Londres ou em Nova York. É isso que fez o Hyrox crescer tão rápido: dá para comparar o seu tempo com o de qualquer pessoa.</p>
 <p>Se você está pensando na primeira prova, ou só quer saber quanto ela gasta, vamos ao que importa: como funciona, quanto custa em calorias e como treinar.</p>
@@ -119384,7 +119392,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <li><strong>Sandbag lunges — 100 m:</strong> avanço com saco de areia nos ombros;</li>
 <li><strong>Wall balls — 100 repetições:</strong> agachar e arremessar a bola no alvo da parede.</li>
 </ol>
-<p>Entre a corrida e a estação fica a Roxzone, a área de transição — e o tempo gasto ali conta no relógio. As categorias mudam a carga: Open e Pro para a prova individual, além de dupla e revezamento em quatro, em que as estações são divididas.</p>
+<p>Entre a corrida e a estação fica a Roxzone, a área de transição — e o tempo gasto ali conta no relógio. As categorias mudam a carga: Open e Pro para a prova individual, além de dupla e revezamento em quatro, em que as estações são divididas. O peso de cada estação em cada categoria e a técnica de cada uma estão em <a href="/blog/estacoes-do-hyrox">estações do Hyrox</a>.</p>
 
 <h2>Quantas calorias uma prova de Hyrox gasta</h2>
 <p>Pela equação de corrida da ACSM para os 8 km e pelo Compêndio de Atividades Físicas para as estações:</p>
@@ -119399,6 +119407,9 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <p>Numa prova de 1h30, os 8 km de corrida levam cerca de 48 minutos — 53% do tempo — e fazem cerca de 60% do gasto. Cada estação, sozinha, gasta perto de 50 kcal para quem pesa 70 kg.</p>
 <p>Isso muda a forma de treinar. Quem vem da musculação costuma se preocupar com o trenó e o wall ball, e é na corrida que perde mais tempo: chega em cada estação já cansado, e o cansaço acumula. <strong>Melhorar o pace é o jeito mais rápido de melhorar o tempo final.</strong></p>
 
+<h2>Quanto tempo dura uma prova de Hyrox</h2>
+<p>Para a maioria das pessoas, <strong>entre 1 hora e 2 horas</strong>. A conta é simples: 8 vezes o seu pace, mais o tempo das oito estações, mais a Roxzone. Com pace de 6:00 por km, estações de 5 minutos em média e uns 5 minutos de transição, a prova fecha perto de 1h33. O vencedor do Pro masculino em São Paulo 2026 fez 58:41. Para fazer a conta com os seus números, ou descobrir que pace a sua meta pede, use a <a href="/ferramentas/calculadora-tempo-hyrox">Calculadora de Tempo do Hyrox</a>.</p>
+
 <h2>Como treinar para o primeiro Hyrox</h2>
 <ul>
 <li><strong>Base de corrida:</strong> três corridas por semana, uma delas com blocos de 1 km em ritmo de prova e pausas curtas;</li>
@@ -119409,7 +119420,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <p>Para a estreia, a categoria em dupla é um bom caminho: você corre os 8 km, mas divide as estações, e conhece a prova sem o risco de quebrar no meio.</p>
 
 <h2>Qual a diferença entre HYROX e CrossFit?</h2>
-<p>O HYROX tem <strong>sempre a mesma prova</strong>, igual no mundo todo — 8 km de corrida e as mesmas 8 estações —, e cerca de metade do tempo é corrida. No CrossFit, o treino muda todo dia e inclui movimentos técnicos, como levantamento olímpico e ginástica. Por isso o HYROX costuma ser mais acessível para quem vem da musculação e da corrida.</p>
+<p>O HYROX tem <strong>sempre a mesma prova</strong>, igual no mundo todo — 8 km de corrida e as mesmas 8 estações —, e cerca de metade do tempo é corrida. No CrossFit, o treino muda todo dia e inclui movimentos técnicos, como levantamento olímpico e ginástica. Por isso o HYROX costuma ser mais acessível para quem vem da musculação e da corrida. A comparação completa, incluindo o que é a aula de Hyrox no box e qual emagrece mais, está em <a href="/blog/hyrox-vs-crossfit">Hyrox vs CrossFit</a>.</p>
 
 <h2>Como montar a semana de treino para o HYROX</h2>
 <ul>
@@ -119420,11 +119431,14 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 </ul>
 
 <h2>Treino de HYROX para iniciantes</h2>
-<p>Comece com 3 a 4 treinos por semana, cargas leves nas estações e foco em completar os 8 km. Na primeira prova, dupla ou revezamento dividem o esforço.</p>
+<p>Comece com 3 a 4 treinos por semana, cargas leves nas estações e foco em completar os 8 km. Na primeira prova, dupla ou revezamento dividem o esforço. A planilha semana a semana, os WODs e a adaptação sem trenó estão em <a href="/blog/treino-de-hyrox">treino de Hyrox</a>.</p>
 
 <h2>Treino de HYROX em casa ou na academia</h2>
 <p><strong>Em casa:</strong> burpee, afundo com mochila, agachamento com salto no lugar do wall ball e corrida na rua. <strong>Na academia:</strong> remo, trenó (se houver) e wall ball; sem trenó, empurre um banco com anilhas ou use leg press pesado. Data, local e dicas da próxima prova em <a href="/blog/hyrox-sao-paulo-2026">HYROX São Paulo 2026</a>.</p>
 <p><strong>Planilha pronta:</strong> <a href="/downloads/planilha-treino-hyrox.pdf" download>baixe a planilha de treino HYROX em PDF</a>, com 8 semanas de treino para imprimir.</p>
+
+<h2>Hyrox é cardio? Define o corpo?</h2>
+<p>É cardio e força ao mesmo tempo: o coração fica alto a prova inteira, e trenó, avanço, carregamento e wall ball são força com carga. O treino melhora o condicionamento e ajuda a gastar calorias, mas o que deixa o corpo mais definido é a soma de <strong>menos gordura</strong>, pela alimentação, e <strong>mais músculo</strong>, pela força. Quem quer ganhar massa mantém a musculação junto do Hyrox.</p>
 
 <h2>Hyrox emagrece?</h2>
 <p>A prova é um dia só — mil calorias em um sábado não mudam a balança do mês. O que emagrece é o treino das semanas antes dela, somado a um <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a>. O Hyrox ajuda porque dá um objetivo com data: quem tem prova marcada treina com mais constância, e constância é o que decide o resultado.</p>
@@ -119444,6 +119458,10 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/hyrox-alphaville-onde-treinar">Hyrox em Alphaville: onde treinar e como se preparar</a></li>
+<li><a href="/blog/treino-de-hyrox">Treino de Hyrox: planilha de 8 semanas</a></li>
+<li><a href="/blog/estacoes-do-hyrox">Estações do Hyrox: ordem, pesos e técnica</a></li>
+<li><a href="/blog/hyrox-vs-crossfit">Hyrox vs CrossFit</a></li>
+<li><a href="/blog/hyrox-brasil-2026">Hyrox no Brasil 2026/2027: calendário de provas</a></li>
 <li><a href="/blog/treino-hibrido-forca-corrida-2025">Treino híbrido: como combinar força e corrida</a></li>
 <li><a href="/blog/crossfit-emagrece">CrossFit emagrece? Quantas calorias uma aula queima</a></li>
 <li><a href="/blog/corrida-para-iniciantes">Corrida para iniciantes</a></li>
@@ -119454,6 +119472,10 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <ul>
 <li>Ainsworth BE, Haskell WL, Herrmann SD, et al. 2011 Compendium of Physical Activities. Medicine &amp; Science in Sports &amp; Exercise, 2011.</li>
 <li>American College of Sports Medicine. ACSM's Guidelines for Exercise Testing and Prescription. Equações metabólicas de corrida.</li>
+<li><a href="https://hyrox.com/the-fitness-race/" target="_blank" rel="noopener noreferrer">HYROX — The Fitness Race: formato, estações e pesos (oficial)</a></li>
+<li><a href="https://hyrox.com/rulebook/" target="_blank" rel="noopener noreferrer">HYROX — Rulebooks: idade mínima e faixas etárias (oficial)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hyrox" target="_blank" rel="noopener noreferrer">Wikipedia — Hyrox (origem e fundadores)</a></li>
+<li><a href="https://www.businesswire.com/news/home/20240603537016/de" target="_blank" rel="noopener noreferrer">Business Wire — PUMA e HYROX (primeira prova em Hamburgo, 2018)</a></li>
 </ul>
 `,
   },
@@ -120204,6 +120226,8 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 
 <h2>Leia também</h2>
 <ul>
+<li><a href="/blog/treino-de-hyrox">Treino de Hyrox: planilha de 8 semanas</a></li>
+<li><a href="/blog/hyrox-pft">Hyrox PFT: o teste físico dos Training Clubs</a></li>
 <li><a href="/blog/hyrox-o-que-e">Hyrox: o que é, quantas calorias gasta e como treinar</a></li>
 <li><a href="/blog/hyrox-sao-paulo-2026">Hyrox São Paulo 2026: data, local e inscrição</a></li>
 <li><a href="/blog/hyrox-barueri-onde-treinar">Hyrox em Barueri</a></li>

@@ -41,6 +41,11 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  // Guias de Hyrox de 23/10/2026 (lib/hyrox-guias.ts). Treino e estações vão
+  // com a Calculadora de Tempo; Hyrox x CrossFit, com a de calorias.
+  "tenis-para-hyrox": "Escolha de tênis e roupa para a prova: o leitor sai sabendo o que testar no treino, sem conta na cabeça; as calculadoras de Hyrox vão por link no texto.",
+  "hyrox-pft": "Explica o teste físico dos Training Clubs e a tabela de tempo por categoria; o leitor sai com o formato do teste, e a conta da prova inteira vai por link para a Calculadora de Tempo.",
+  "hyrox-brasil-2026": "Calendário de provas: o leitor sai com data, local e como se inscrever, sem conta na cabeça; a preparação vai por link para a planilha de treino.",
   "quanto-custa-um-personal-trainer": "A conta do mês (valor da sessão × treinos × 4,3) cabe numa tabela no texto; nenhuma ferramenta do site calcula preço de serviço.",
   "diferenca-entre-instrutor-de-academia-e-personal-trainer": "Comparação de funções e formação: o leitor sai sabendo quem é quem, sem conta na cabeça.",
   // Resultado do UFC Vegas 122: o registro da calculadora de artes marciais
