@@ -381,6 +381,9 @@ ${FONTE_FORMATO}
       { question: "Pode usar tênis de corrida no Hyrox?", answer: "Pode, e é o que a maioria usa. O cuidado é com tênis muito alto e macio, que balança no avanço e no wall ball, e com sola lisa, que escorrega no trenó." },
       { question: "Pode usar tênis de CrossFit no Hyrox?", answer: "Pode. É estável nas estações, mas costuma amortecer menos para os 8 km. Para quem corre pouco, pesa no fim da prova; para quem é leve e corre bem, funciona." },
       { question: "Por que o tênis do Hyrox é da Puma?", answer: "A Puma é a parceira oficial de calçado e roupa das provas de Hyrox desde 2024, com uma linha de tênis de corrida com as cores da prova. Não é obrigatório usar Puma: cada atleta escolhe o próprio tênis." },
+      { question: "Qual tênis custo-benefício para Hyrox?", answer: "Para a maioria, o tênis de corrida de uso diário que você já tem, desde que ele não escorregue no trenó nem deixe o calcanhar sair no avanço. Teste num treino de corrida com estações antes de comprar outro." },
+      { question: "Qual é o tênis oficial do Hyrox?", answer: "A Puma é a parceira oficial de calçado das provas desde 2024. Em 2026 lançou o PUMA x HYROX Deviate NITRO Elite 4, com sola de tração mais funda e espuma um pouco mais firme que a versão de corrida. Usar Puma não é obrigatório." },
+      { question: "Serve tênis Nike, Adidas ou On para Hyrox?", answer: "Serve. O Hyrox não exige marca. O que importa é o modelo ter amortecimento para correr, estabilidade para as estações e sola que segure no piso." },
       { question: "Tênis para Hyrox feminino é diferente?", answer: "Os critérios são os mesmos: amortecimento para correr, estabilidade e aderência. O que muda é a forma do pé; experimente com a meia que vai usar na prova." },
       { question: "O que vestir no Hyrox?", answer: "Roupa de treino que você já testou correndo e agachando: short ou legging que não desce no avanço, camiseta ou top que não prende o braço no SkiErg e meia que não escorrega dentro do tênis. Nada estreia no dia." },
     ],
@@ -416,7 +419,14 @@ ${FONTE_FORMATO}
 <p>Os critérios gerais para escolher um tênis de treino estão em <a href="/blog/como-escolher-tenis-para-treinar">como escolher tênis para treinar</a>.</p>
 
 <h2>Por que tanta gente usa Puma no Hyrox</h2>
-<p>A Puma é a <strong>parceira oficial de calçado e roupa</strong> das provas de Hyrox desde 2024, com versões de tênis de corrida da marca com as cores do Hyrox (no anúncio da parceria, Velocity Nitro e Deviate Nitro). Por isso o nome aparece em tanta busca. Não é regra: cada atleta usa o tênis que quiser, e o melhor é aquele em que você já correu cansado.</p>
+<p>A Puma é a <strong>parceira oficial de calçado e roupa</strong> das provas de Hyrox desde 2024, com versões de tênis de corrida da marca com as cores do Hyrox (no anúncio da parceria, Velocity Nitro e Deviate Nitro). Por isso o nome aparece em tanta busca.</p>
+<p>Em 2026 a marca lançou o <strong>PUMA x HYROX Deviate NITRO Elite 4</strong>, que ela apresenta como o primeiro tênis desenvolvido para a prova. Em relação ao Deviate NITRO Elite 4 de corrida, a mudança está no que o Hyrox pede além de correr: sola com tração mais funda e em várias direções, para segurar no piso da arena e no trenó, e espuma um pouco mais firme, para dar base nos lunges e no wall ball. É um tênis de competição, caro e feito para quem já corre rápido. Não é regra: cada atleta usa o tênis que quiser, e o melhor é aquele em que você já correu cansado.</p>
+
+<h2>Tênis para Hyrox custo-benefício</h2>
+<p>Para a maioria das pessoas, o tênis custo-benefício para Hyrox é <strong>o tênis de corrida de uso diário que você já tem</strong>, se ele passar no teste do treino: correr 1 km, fazer 25 m de avanço e 20 wall balls sem o pé escorregar nem o calcanhar sair. Tênis com placa de carbono e espuma muito alta rende mais para quem corre rápido e tem técnica nas estações; para quem está estreando, a estabilidade costuma valer mais que a placa.</p>
+
+<h2>E Nike, Adidas, On?</h2>
+<p>Qualquer marca serve. O Hyrox não exige tênis de uma marca, e o que decide é o mesmo critério da tabela acima: amortecimento para correr, estabilidade para as estações e sola que não escorrega. Na loja, compare o modelo de corrida diária de cada marca com esses três pontos, e não pelo nome da linha.</p>
 
 <h2>Tênis para Hyrox feminino e masculino</h2>
 <p>Os critérios são os mesmos. O que muda é a forma do pé: largura, volume e o drop (a diferença de altura entre calcanhar e ponta) que você está acostumada ou acostumado a usar. Experimente no fim do dia, quando o pé está um pouco mais inchado, e com a meia da prova.</p>
@@ -448,6 +458,8 @@ ${FONTE_FORMATO}
 <ul>
 <li><a href="https://www.businesswire.com/news/home/20240603537016/de" target="_blank" rel="noopener noreferrer">Business Wire — PUMA anuncia parceria global com o HYROX (2024)</a></li>
 <li><a href="https://www.theindustry.fashion/puma-announces-global-partnership-with-racing-programme-hyrox/" target="_blank" rel="noopener noreferrer">TheIndustry.fashion — Puma announces global partnership with racing programme Hyrox</a></li>
+<li><a href="https://eu.puma.com/nl/en/pd/puma-x-hyrox-deviate-nitro-elite-4-shoes-men/312959" target="_blank" rel="noopener noreferrer">PUMA — PUMA x HYROX Deviate NITRO Elite 4 (oficial)</a></li>
+<li><a href="https://www.gearpatrol.com/?p=1018238" target="_blank" rel="noopener noreferrer">Gear Patrol — Puma refines the Deviate Nitro Elite 4 for hybrid fitness racing</a></li>
 ${FONTE_FORMATO}
 </ul>`,
   },
