@@ -120496,6 +120496,9 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <li><a href="/blog/hyrox-santana-de-parnaiba-onde-treinar">Hyrox em Santana de Parnaíba</a></li>
 <li><a href="/blog/hyrox-barueri-onde-treinar">Hyrox em Barueri</a></li>
 <li><a href="/blog/academias-em-aldeia-da-serra">Academias em Aldeia da Serra</a></li>
+<li><a href="/blog/hyrox-o-que-e">Hyrox: o que é e como funciona</a></li>
+<li><a href="/blog/hyrox-brasil-2026">Hyrox no Brasil 2026/2027: calendário de provas</a></li>
+<li><a href="/blog/treino-de-hyrox">Treino de Hyrox: planilha de 8 semanas</a></li>
 <li><a href="/blog/personal-trainer-aldeia-da-serra">Personal trainer na Aldeia da Serra</a></li>
 </ul>
 

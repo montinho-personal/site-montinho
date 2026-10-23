@@ -44,6 +44,9 @@ export const HYROX_GUIAS_POSTS: BlogPost[] = [
       { question: "Como treinar Hyrox em casa?", answer: "Com um circuito que alterna corrida e estações adaptadas: 800 m a 1 km de corrida na rua e, depois de cada trecho, burpee broad jump, afundo com mochila, agachamento com arremesso de uma bola ou mochila e carregamento de duas sacolas pesadas. De 4 a 6 rodadas, uma ou duas vezes por semana." },
       { question: "Quais equipamentos para Hyrox?", answer: "A prova usa SkiErg, trenó (sled), remo ergométrico, kettlebells, saco de areia e bola de wall ball. Para treinar em casa, bastam um par de halteres ou kettlebell, uma mochila com peso e, se quiser, uma medicine ball. O resto se treina na academia ou num box." },
       { question: "O que é um WOD de Hyrox?", answer: "É o treino do dia no formato da prova. O clássico é alternar 1 km de corrida com uma estação, de 3 a 8 rodadas, em ritmo controlado. Outro comum é fazer meia prova: 4 km e 4 estações." },
+      { question: "Quais são os 8 exercícios do Hyrox?", answer: "Na ordem da prova: SkiErg (1.000 m), sled push (50 m), sled pull (50 m), burpee broad jump (80 m), remo (1.000 m), farmers carry (200 m), sandbag lunges (100 m) e wall balls (100 repetições). Antes de cada um, 1 km de corrida. Os pesos de cada categoria estão no artigo sobre as estações do Hyrox." },
+      { question: "Qual a diferença entre Hyrox e CrossFit?", answer: "O Hyrox é uma prova fixa, igual no mundo todo: 8 km de corrida e 8 estações. O CrossFit é um método de treino que muda todo dia e inclui movimentos técnicos, como levantamento olímpico e ginástica. A comparação completa está no artigo Hyrox vs CrossFit." },
+      { question: "Onde fazer treino de Hyrox perto de mim?", answer: "Num box ou Training Club com aula de Hyrox, ou na academia que você já frequenta, com as estações adaptadas. Para Alphaville, Barueri, Santana de Parnaíba e Aldeia da Serra, os lugares estão nos guias de onde treinar Hyrox de cada cidade; para conferir se o lugar é credenciado, use o buscador oficial de Training Clubs." },
       { question: "Simulado de Hyrox: quando fazer?", answer: "Um meio simulado (4 km + 4 estações) por volta da sexta semana e um simulado completo em ritmo controlado duas semanas antes da prova. Na última semana, não; ali o objetivo é chegar descansado." },
     ],
     content: `<p>Um treino de Hyrox não é só correr mais ou só levantar mais. A prova cobra as duas coisas ao mesmo tempo: <strong>oito trechos de 1 km de corrida, cada um seguido de uma estação</strong>, e quem treina as partes separadas chega no wall ball com a perna que nunca correu cansada. A planilha abaixo junta tudo na mesma semana.</p>
@@ -81,6 +84,22 @@ export const HYROX_GUIAS_POSTS: BlogPost[] = [
 <li><strong>Compromisso de corrida:</strong> 5 × 1 km no ritmo que você quer na prova, com 90 segundos de pausa. Se o último sair muito mais lento que o primeiro, o ritmo-alvo está otimista.</li>
 <li><strong>Estação cansada:</strong> 400 m forte e logo em seguida 25 wall balls ou 50 m de avanço, de 4 a 6 vezes. Ensina a começar a estação sem esperar o fôlego voltar.</li>
 </ul>
+<h2>Exemplo de treino de Hyrox completo (60 minutos)</h2>
+<p>Uma sessão para quem já treina, no dia de corrida com estações da planilha:</p>
+<ol>
+<li><strong>Aquecimento (10 min):</strong> 5 minutos de trote, mobilidade de quadril e ombro e 2 tiros de 100 m em ritmo de prova.</li>
+<li><strong>Bloco principal (35 a 40 min):</strong> 4 rodadas de 1 km de corrida em ritmo de prova + uma estação, trocando a cada rodada:
+<ul>
+<li>rodada 1: 500 m de SkiErg (ou remo);</li>
+<li>rodada 2: 25 m de sled push (ou 20 repetições de leg press pesado);</li>
+<li>rodada 3: 40 m de burpee broad jump;</li>
+<li>rodada 4: 50 wall balls.</li>
+</ul></li>
+<li><strong>Força complementar (10 min):</strong> 3 × 10 afundos com halteres e 3 × 40 m de farmers carry.</li>
+<li><strong>Volta à calma (5 min):</strong> caminhada e alongamento leve.</li>
+</ol>
+<p>Anote o tempo de cada km e de cada estação: é o que diz, semana a semana, se a preparação está funcionando. Com esses números, a calculadora acima mostra quanto você faria na prova inteira.</p>
+
 <p>Nenhum desses é "o treino oficial". A organização da prova tem conteúdos de treino próprios nos Training Clubs credenciados; os de cima são os formatos que eu uso para ensinar o corpo a fazer o que a prova pede.</p>
 
 <h2>Treino de Hyrox para iniciantes</h2>
