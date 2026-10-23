@@ -47,7 +47,6 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   // está no teto de 8, e a calculadora já vai no artigo do card.
   "bluefit-tambore": "Guia de unidade (endereço, horário, convênio): o leitor sai sabendo se a academia serve para ele, sem conta na cabeça.",
   "academia-de-condominio-quais-aparelhos-comprar": "Decisão de compra para síndico e comissão (ordem dos aparelhos, espaço, manutenção, regras): nenhuma ferramenta do site faz essa escolha.",
-  "hyrox-alphaville-onde-treinar": "A pergunta é onde treinar; quem quer saber o esforço da prova vai para a calculadora de calorias do Hyrox pelo link do texto.",
   "treino-de-abdomen-rapido": "Treino pronto para fazer: o leitor sai com o circuito, não com uma conta; quem quer emagrecer a barriga é levado à calculadora de déficit pelo texto.",
   "brasileiros-ufc-vegas-123": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora de jiu-jitsu fica no artigo do evento.",
   "resultado-ufc-vegas-122": "Página de resultado: o leitor sai sabendo quem ganhou, sem conta na cabeça; a calculadora de luta fica no artigo do card.",
@@ -106,8 +105,6 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
     "A pergunta que sobra é 'já posso parar?', e a resposta são três condições — peso estável, treino de força há dois meses, comida que se sustenta — nenhuma delas um número que se calcule. Quem quiser a conta de proteína encontra a calculadora no artigo irmão, sobre parar de tomar; repeti-la aqui responderia uma pergunta que este leitor ainda não fez.",
   "resultado-mr-olympia-brasil-2026":
     "Página de resultado de evento: a pessoa chega com 'quem ganhou' e sai com um fato. Mesma decisão do cluster Mr. Olympia 2026.",
-  "resultado-hyrox-sao-paulo-2026":
-    "Página de resultado de evento: a busca é 'quem ganhou' e o tempo individual sai no site oficial. A calculadora de HYROX fica no guia do evento, que é onde a pessoa ainda está se preparando.",
   "resultado-maratona-de-curitiba-2026":
     "Página de resultado de evento: a busca é 'quem ganhou' e o tempo individual sai na cronometragem. A tabela de pace fica no guia da prova.",
   "resultado-maratona-de-brasilia-2026":
