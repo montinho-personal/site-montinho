@@ -208,4 +208,8 @@ export const NOTA_SEGURANCA =
 /* ───────────────────────── Artigos ───────────────────────── */
 
 /** Artigos que EMBUTEM a calculadora, logo depois da primeira seção. */
-export const ARTIGOS_COM_CALCULADORA_HYROX: string[] = ["hyrox-o-que-e", "hyrox-sao-paulo-2026"];
+// "hyrox-alphaville-onde-treinar" e "resultado-hyrox-sao-paulo-2026": pedido do
+// Montinho em 22/10/2026 (quem procura onde treinar ou vê o resultado da prova
+// está se preparando para a próxima, e a conta da prova cabe ali). As três
+// páginas de cidade nasceram com ela (decisão de ferramenta do AGENTS.md).
+export const ARTIGOS_COM_CALCULADORA_HYROX: string[] = ["hyrox-o-que-e", "hyrox-sao-paulo-2026", "hyrox-alphaville-onde-treinar", "resultado-hyrox-sao-paulo-2026", "hyrox-barueri-onde-treinar", "hyrox-santana-de-parnaiba-onde-treinar", "hyrox-aldeia-da-serra"];
