@@ -273,6 +273,11 @@ ${FONTE_REGRAS}
       { question: "Qual emagrece mais, Hyrox ou CrossFit?", answer: "Os dois gastam bem numa hora de treino. Quem emagrece mais é quem consegue treinar mais semanas seguidas, com a alimentação em ordem. Escolha o que você vai querer repetir três vezes por semana." },
       { question: "Hyrox ou CrossFit: qual é melhor para iniciante?", answer: "O Hyrox costuma ser mais fácil de aprender: os movimentos são poucos e simples, e a prova é sempre igual. O CrossFit exige mais técnica no começo, mas também é adaptado para iniciantes num bom box." },
       { question: "Dá para fazer Hyrox e CrossFit juntos?", answer: "Dá, e é comum. O CrossFit dá força, técnica e condicionamento; o Hyrox pede, além disso, corrida. Quem faz CrossFit e quer o Hyrox costuma precisar de duas corridas a mais por semana." },
+      { question: "Hyrox define o corpo?", answer: "O treino de Hyrox melhora o condicionamento e a força e ajuda a gastar calorias. O que deixa o corpo definido é a soma de menos gordura, pela alimentação, e mais músculo, pela força. Quem quer mais massa muscular mantém a musculação junto." },
+      { question: "Hyrox ou CrossFit: qual deixa o corpo mais definido?", answer: "Nenhum dos dois, sozinho. Os dois gastam bem e treinam força; o corpo que aparece depende do déficit calórico e de quanto músculo você constrói, e isso vem da alimentação e da musculação somadas ao treino que você consegue manter." },
+      { question: "Hyrox é cardio?", answer: "É cardio e força ao mesmo tempo. A corrida é cerca de metade da prova, com o coração alto o tempo todo, e trenó, avanço, farmers carry e wall ball são força com carga." },
+      { question: "Quais são as 3 modalidades do CrossFit?", answer: "O CrossFit combina três domínios: ginástica (movimentos com o peso do corpo, como barra e flexão), levantamento de peso (como agachamento, terra e os levantamentos olímpicos) e condicionamento metabólico (corrida, remo, bicicleta). O Hyrox usa uma parte disso, sempre no mesmo formato." },
+      { question: "O que é um treino de Hyrox?", answer: "É o treino que prepara para a prova: corrida, força para as estações e, principalmente, corrida cansada, alternando 1 km de corrida com uma estação. A planilha de 8 semanas está no artigo sobre treino de Hyrox." },
       { question: "Hyrox ou musculação?", answer: "Não é uma escolha. A musculação dá a força que o Hyrox pede nos trenós, no avanço e no wall ball, e protege as articulações. Quem se prepara para o Hyrox mantém dois dias de força na semana." },
     ],
     content: `<p>Hyrox e CrossFit aparecem juntos o tempo todo, e não é à toa: muitos boxes de CrossFit dão aula de Hyrox. Mas são coisas diferentes. <strong>O Hyrox é uma prova com formato fixo; o CrossFit é um método de treino que muda todo dia.</strong></p>
@@ -314,6 +319,7 @@ ${FONTE_REGRAS}
 <h2>Outras comparações</h2>
 <ul>
 <li><strong>Hyrox x corrida de rua:</strong> o Hyrox tem 8 km, mas picados e com força no meio. Quem corre bem 10 km não necessariamente corre bem os 8 km do Hyrox.</li>
+<li><strong>Hyrox x Spartan:</strong> a Spartan é uma corrida de obstáculos ao ar livre, com percurso e obstáculos que mudam de uma prova para outra. O Hyrox é indoor e sempre igual, o que permite comparar o seu tempo de uma prova para a outra.</li>
 <li><strong>Hyrox x treino funcional:</strong> o funcional usa movimentos parecidos, mas sem a prova como objetivo. Uma aula de Hyrox é um funcional com formato de prova.</li>
 </ul>
 
