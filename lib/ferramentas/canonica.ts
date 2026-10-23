@@ -103,6 +103,11 @@ export const CANONICA: Record<string, Canonica> = {
     ancora: "Calculadora de Calorias no Hyrox",
     motivo: "que parte do seu tempo final e do seu pace, separa os 8 km de corrida das estações e mostra o gasto de cada uma",
   },
+  hyroxTempo: {
+    href: "/ferramentas/calculadora-tempo-hyrox",
+    ancora: "Calculadora de Tempo do Hyrox",
+    motivo: "que soma corrida, estações e Roxzone e mostra o pace que fecha a sua meta",
+  },
   crossfit: {
     href: "/ferramentas/calculadora-calorias-crossfit",
     ancora: "Calculadora de Calorias no CrossFit",

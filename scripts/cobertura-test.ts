@@ -51,6 +51,7 @@ import { ARTIGOS_COM_CALCULADORA_BICICLETA } from "../lib/bicicleta";
 import { ARTIGOS_COM_CALCULADORA_ESCADA } from "../lib/escada";
 import { ARTIGOS_COM_CALCULADORA_CROSSFIT } from "../lib/crossfit";
 import { ARTIGOS_COM_CALCULADORA_HYROX } from "../lib/hyrox";
+import { ARTIGOS_COM_CALCULADORA_TEMPO_HYROX } from "../lib/hyrox-tempo";
 import { ARTIGOS_COM_CALCULADORA_CREATINA, ARTIGOS_COM_LINK_CREATINA } from "../lib/creatina";
 import { ARTIGOS_COM_CALCULADORA_WHEY, ARTIGOS_COM_LINK_WHEY } from "../lib/whey";
 import { ARTIGOS_COM_LINK_CICLO } from "../lib/carboidratos/ciclo";
@@ -114,6 +115,7 @@ const REGISTROS: [string, string[]][] = [
   ["escada", ARTIGOS_COM_CALCULADORA_ESCADA],
   ["crossfit", ARTIGOS_COM_CALCULADORA_CROSSFIT],
   ["hyrox", ARTIGOS_COM_CALCULADORA_HYROX],
+  ["tempo do hyrox", ARTIGOS_COM_CALCULADORA_TEMPO_HYROX],
   ["creatina", ARTIGOS_COM_CALCULADORA_CREATINA],
   ["creatina (link)", ARTIGOS_COM_LINK_CREATINA],
   ["whey", ARTIGOS_COM_CALCULADORA_WHEY],

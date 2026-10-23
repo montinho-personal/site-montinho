@@ -822,6 +822,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     icone: "bandeira",
     tags: ["hyrox", "prova", "estacoes", "skierg", "remo", "sled", "simulado", "fitness race"],
   },
+  {
+    id: "hyrox-tempo",
+    href: "/ferramentas/calculadora-tempo-hyrox",
+    nome: "Calculadora de Tempo do Hyrox",
+    resultado: "Preveja o seu tempo final ou descubra o pace que fecha a sua meta.",
+    acao: "Calcular meu tempo",
+    tempo: "30 segundos",
+    categoria: "cardio",
+    icone: "bandeira",
+    tags: ["hyrox", "tempo hyrox", "pace hyrox", "quanto tempo dura hyrox", "roxzone", "meta de tempo", "simulado", "splits"],
+    selo: "novo",
+  },
 
   /* ── Alphaville ───────────────────────────────────────────────────── */
   {

@@ -463,6 +463,12 @@ export type AnalyticsEvent =
   | "hyrox_preset"
   | "hyrox_methodology_open"
   | "hyrox_tool_click"
+  /** Calculadora de Tempo do Hyrox (só o uso; nunca pace, meta ou tempo). */
+  | "hyrox_time_view"
+  | "hyrox_time_use"
+  | "hyrox_time_roxzone"
+  | "hyrox_time_tool_click"
+  | "hyrox_time_whatsapp"
   /** Calculadora de Creatina. Faixa de peso e tamanho do pote; nunca o peso nem o preço. */
   | "creatine_calculator_view"
   | "creatine_calculator_start"
