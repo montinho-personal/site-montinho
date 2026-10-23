@@ -31,7 +31,7 @@ import { ARTIGOS_COM_CALCULADORA_FC, ARTIGOS_COM_LINK_FC } from "../lib/fc";
 import { ARTIGOS_COM_CALCULADORA_POLICHINELO, ARTIGOS_COM_LINK_POLICHINELO } from "../lib/polichinelo";
 import { ARTIGOS_COM_CALCULADORA_CAMINHADA, ARTIGOS_COM_LINK_CAMINHADA } from "../lib/caminhada";
 import { ARTIGOS_COM_CALCULADORA_ELIPTICO } from "../lib/eliptico";
-import { ARTIGOS_COM_CALCULADORA_ATIVIDADES, ARTIGOS_COM_LINK_ATIVIDADES } from "../lib/atividades";
+import { ARTIGOS_COM_CALCULADORA_ATIVIDADES, ARTIGOS_COM_COMPARADOR_ATIVIDADES, ARTIGOS_COM_LINK_ATIVIDADES } from "../lib/atividades";
 import { ARTIGOS_COM_CALCULADORA_CORRIDA } from "../lib/corrida";
 import { ARTIGOS_COM_CALCULADORA_GLP1 } from "../lib/glp1";
 import { ARTIGOS_COM_CALCULADORA_META } from "../lib/meta";
@@ -96,6 +96,7 @@ const REGISTROS: [string, string[]][] = [
   ["elíptico", ARTIGOS_COM_CALCULADORA_ELIPTICO],
   ["atividades", ARTIGOS_COM_CALCULADORA_ATIVIDADES],
   ["atividades (link)", ARTIGOS_COM_LINK_ATIVIDADES],
+  ["comparador de atividades", ARTIGOS_COM_COMPARADOR_ATIVIDADES],
   ["corrida", ARTIGOS_COM_CALCULADORA_CORRIDA],
   ["GLP-1", ARTIGOS_COM_CALCULADORA_GLP1],
   ["meta de peso", ARTIGOS_COM_CALCULADORA_META],

@@ -94,6 +94,8 @@ import CalculadoraCrossfit from "@/components/crossfit/CalculadoraCrossfit";
 import { ARTIGOS_COM_CALCULADORA_HYROX } from "@/lib/hyrox";
 import CalculadoraHyrox from "@/components/hyrox/CalculadoraHyrox";
 import { ARTIGOS_COM_CALCULADORA_TEMPO_HYROX } from "@/lib/hyrox-tempo";
+import { ARTIGOS_COM_COMPARADOR_ATIVIDADES } from "@/lib/atividades";
+import ComparadorAtividades from "@/components/atividades/ComparadorAtividades";
 import CalculadoraTempoHyrox from "@/components/hyrox/CalculadoraTempoHyrox";
 import { ARTIGOS_COM_CALCULADORA_CREATINA, ARTIGOS_COM_LINK_CREATINA } from "@/lib/creatina";
 import CalculadoraCreatina from "@/components/creatina/CalculadoraCreatina";
@@ -304,6 +306,8 @@ export default async function BlogPost({ params }: Props) {
                                                       ? "hyrox"
                                                       : ARTIGOS_COM_CALCULADORA_TEMPO_HYROX.includes(post.slug)
                                                       ? "hyroxTempo"
+                                                      : ARTIGOS_COM_COMPARADOR_ATIVIDADES.includes(post.slug)
+                                                      ? "atividades"
                                                       : ARTIGOS_COM_CALCULADORA_CREATINA.includes(post.slug)
                                                         ? "creatina"
                                                         : ARTIGOS_COM_CALCULADORA_WHEY.includes(post.slug)
@@ -584,6 +588,8 @@ export default async function BlogPost({ params }: Props) {
                   <CalculadoraHyrox placement={post.slug} />
                 ) : qualCalc === "hyroxTempo" ? (
                   <CalculadoraTempoHyrox placement={post.slug} />
+                ) : qualCalc === "atividades" ? (
+                  <ComparadorAtividades placement={post.slug} />
                 ) : qualCalc === "creatina" ? (
                   <CalculadoraCreatina placement={post.slug} />
                 ) : qualCalc === "whey" ? (
