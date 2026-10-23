@@ -164,3 +164,10 @@ export const NOTA_SEM_PERDA_LOCALIZADA =
 export const ATIVIDADES: { id: string }[] = [];
 export const ARTIGOS_COM_CALCULADORA_ATIVIDADES: string[] = [];
 export const ARTIGOS_COM_LINK_ATIVIDADES: string[] = [];
+
+/**
+ * Artigos que EMBUTEM o comparador, logo depois da primeira seção. Registro
+ * novo (23/10/2026), separado das listas antigas acima, que eram da
+ * calculadora com seletor.
+ */
+export const ARTIGOS_COM_COMPARADOR_ATIVIDADES: string[] = ["exercicio-que-mais-queima-calorias"];

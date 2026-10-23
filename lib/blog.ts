@@ -106,6 +106,7 @@ import { SAO_SILVESTRE_2026_POSTS } from "./sao-silvestre-2026";
 import { CORRIDA_PACE_POSTS } from "./corrida-pace";
 import { HYROX_SP_2026_POSTS } from "./hyrox-sp-2026";
 import { HYROX_GUIAS_POSTS } from "./hyrox-guias";
+import { EXERCICIO_QUEIMA_POSTS } from "./exercicio-que-mais-queima";
 import { BLACK_FRIDAY_2026_POSTS } from "./black-friday-2026";
 import { UFC_2026_POSTS } from "./ufc-2026";
 import { OUTUBRO_ROSA_POSTS } from "./outubro-rosa-2026";
@@ -122,6 +123,7 @@ export const blogPosts = ([
   ...CORRIDA_PACE_POSTS,
   ...HYROX_SP_2026_POSTS,
   ...HYROX_GUIAS_POSTS,
+  ...EXERCICIO_QUEIMA_POSTS,
   ...BLACK_FRIDAY_2026_POSTS,
   ...MIOSTATINA_POSTS,
   ...UFC_2026_POSTS,
