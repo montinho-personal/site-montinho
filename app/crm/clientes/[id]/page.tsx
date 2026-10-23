@@ -40,7 +40,29 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
   }));
   const enviados = envios.filter((e) => e.tarefa?.completed_at).length;
   const faltaCriar = envios.some((e) => !e.tarefa);
+  const pendente = faltaCriar || enviados < ENVIOS_INICIAIS.length;
   const refUrl = contato.referral_code ? `https://www.montinhopersonal.com.br/r/${contato.referral_code}` : null;
+  const cardEnvios = (
+    <Card titulo="Primeiros envios">
+      <p className="mb-2 text-sm text-zinc-400">{enviados} de {ENVIOS_INICIAIS.length} enviados</p>
+      <ul className="space-y-1.5">
+        {envios.map((e) => (
+          <li key={e.titulo} className="flex items-center justify-between gap-2 text-sm">
+            <span className={e.tarefa?.completed_at ? "text-zinc-500 line-through" : ""}>{e.tarefa?.completed_at ? "✓ " : "○ "}{e.titulo.replace(/^Enviar /, "")}</span>
+            {e.tarefa?.completed_at
+              ? <span className="shrink-0 text-xs text-zinc-500">{dataBr(e.tarefa.completed_at)}</span>
+              : e.tarefa && !ro
+                ? <form action={concluirTarefa}><input type="hidden" name="task_id" value={e.tarefa.id} /><Btn pequeno tom="ghost">Enviei</Btn></form>
+                : null}
+          </li>
+        ))}
+      </ul>
+      {faltaCriar && !ro && (
+        <form action={criarEnviosIniciais} className="mt-3"><input type="hidden" name="client_id" value={c.id} /><Btn pequeno tom="secundario">Criar checklist de envios</Btn></form>
+      )}
+      {wa && enviados < ENVIOS_INICIAIS.length && <p className="mt-2 text-xs text-zinc-500">Mande pelo botão WhatsApp lá em cima e marque aqui.</p>}
+    </Card>
+  );
   return (
     <Pagina titulo={contato.nome} sub={<span><Badge tom={c.status === "ativo" ? "bom" : "ruim"}>{c.status}</Badge> · cliente desde {dataBr(c.first_purchase_at)} · origem {cat.fontes.find((f) => f.code === c.source_code)?.nome ?? c.source_code}</span>}
       acoes={<>{wa && <Btn href={wa} tom="whatsapp" target="_blank">WhatsApp</Btn>}{leads[0] && <Btn href={`/crm/leads/${leads[0].id}`} tom="secundario">Ver lead</Btn>}</>}>
@@ -54,6 +76,8 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
         <Stat rotulo="Tempo como cliente" valor={`${meses.toFixed(1)} m`} />
         <Stat rotulo="Renovação" valor={dataBr(c.renewal_date)} tom={c.renewal_date && diasEntre(new Date(), c.renewal_date) <= 14 ? "alerta" : "neutro"} />
       </div>
+      {/* No celular, enquanto falta envio, o card vem antes da receita: é o que se usa no dia do fechamento. */}
+      {pendente && <div className="mb-4 lg:hidden">{cardEnvios}</div>}
       <div className="grid gap-4 lg:grid-cols-[1fr_360px]">
         <div className="space-y-4">
           <Card titulo="Receita">
@@ -163,25 +187,7 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
           </Card>
         </div>
         <div className="space-y-4">
-          <Card titulo="Primeiros envios">
-            <p className="mb-2 text-sm text-zinc-400">{enviados} de {ENVIOS_INICIAIS.length} enviados</p>
-            <ul className="space-y-1.5">
-              {envios.map((e) => (
-                <li key={e.titulo} className="flex items-center justify-between gap-2 text-sm">
-                  <span className={e.tarefa?.completed_at ? "text-zinc-500 line-through" : ""}>{e.tarefa?.completed_at ? "✓ " : "○ "}{e.titulo.replace(/^Enviar /, "")}</span>
-                  {e.tarefa?.completed_at
-                    ? <span className="shrink-0 text-xs text-zinc-500">{dataBr(e.tarefa.completed_at)}</span>
-                    : e.tarefa && !ro
-                      ? <form action={concluirTarefa}><input type="hidden" name="task_id" value={e.tarefa.id} /><Btn pequeno tom="ghost">Enviei</Btn></form>
-                      : null}
-                </li>
-              ))}
-            </ul>
-            {faltaCriar && !ro && (
-              <form action={criarEnviosIniciais} className="mt-3"><input type="hidden" name="client_id" value={c.id} /><Btn pequeno tom="secundario">Criar checklist de envios</Btn></form>
-            )}
-            {wa && enviados < ENVIOS_INICIAIS.length && <p className="mt-2 text-xs text-zinc-500">Mande pelo botão WhatsApp lá em cima e marque aqui.</p>}
-          </Card>
+          <div className={pendente ? "hidden lg:block" : ""}>{cardEnvios}</div>
           <Card titulo="Contato">
             <ul className="space-y-1 text-sm"><li>{contato.telefone ?? "—"}</li><li>{contato.email ?? "—"}</li><li>{contato.instagram ?? ""}</li><li className="text-zinc-500">{contato.cidade ?? ""}</li></ul>
             <p className="mt-2 text-xs text-zinc-500">Editar dados: pela ficha do lead.</p>
