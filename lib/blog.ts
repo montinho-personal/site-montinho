@@ -120137,12 +120137,12 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     excerpt: "Para treinar Hyrox em Alphaville, dá para ir a um box com aula específica ou montar a preparação na academia que você já frequenta. O que procurar em cada caso.",
     category: "Treinamento",
     date: "2026-10-21",
-    updatedAt: "2026-10-21",
+    updatedAt: "2026-10-23",
     readTime: "7 min",
     author: "Montinho",
     tags: ["hyrox alphaville", "onde treinar hyrox", "hyrox perto de mim", "treino hyrox", "hyrox barueri"],
     faq: [
-      { question: "Onde treinar Hyrox em Alphaville?", answer: "Há dois caminhos: um box ou training club com aula de Hyrox, como o OBOX (Av. dos Parques, 329, Centro de Apoio I), que lista Hyrox entre as aulas no Wellhub; ou a academia que você já frequenta, com corrida, força e as estações adaptadas." },
+      { question: "Onde treinar Hyrox em Alphaville?", answer: "Há dois caminhos: um box ou training club com aula de Hyrox, como o OBOX, no AlphaSítio Mall, no Tamboré (lado de Santana de Parnaíba), que lista Hyrox entre as aulas no Wellhub; ou a academia que você já frequenta, com corrida, força e as estações adaptadas." },
       { question: "Dá para treinar Hyrox em academia comum?", answer: "Dá para construir quase toda a base: corrida, força de pernas e de costas, wall ball, avanço com peso e remo. O que costuma faltar é o trenó (sled) e o SkiErg; vale treinar neles algumas vezes antes da prova, num box que tenha." },
       { question: "O que tem na prova do Hyrox?", answer: "São 8 km de corrida em 8 trechos de 1 km, cada um seguido de uma estação: SkiErg (1.000 m), sled push (50 m), sled pull (50 m), burpee broad jump (80 m), remo (1.000 m), farmers carry (200 m), sandbag lunges (100 m) e wall balls (100 repetições)." },
       { question: "Como saber se uma academia é Training Club oficial do Hyrox?", answer: "O site oficial do Hyrox tem um buscador de Training Clubs credenciados (hyrox.com/gym-partners). Academia que só usa o nome em aula não é necessariamente credenciada; confira lá." },
@@ -120150,14 +120150,17 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
       { question: "Quantas vezes por semana treinar para o Hyrox?", answer: "Para a maioria, três a quatro sessões: uma ou duas de corrida, uma ou duas de força, e uma que junta corrida com estações. Mais que isso, sem recuperar, piora o treino seguinte." },
       { question: "Quanto custa treinar Hyrox em Alphaville?", answer: "Depende do lugar: box e training club cobram mensalidade própria, e pelo Wellhub o OBOX aparece a partir do plano Gold (consulta de 21/10/2026). A inscrição na prova é outra conta, paga no site oficial do evento." },
       { question: "O que é a Hyrox Academy?", answer: "É a plataforma de cursos online da Hyrox para treinadores, com o Foundation Course e o Level 1 Course, segundo o site oficial (hyrox365.com/academy). Não é academia de treino: é formação de quem dá aula." },
-      { question: "Tem Hyrox perto de mim em Barueri?", answer: "Na região, o OBOX (Av. dos Parques, 329) lista Hyrox nas aulas. Boxes de cross training, como a Crosslift Blacksheep, que tem unidade em Alphaville, trabalham com equipamento parecido; pergunte se há aula ou simulado de Hyrox antes de assinar." },
+      { question: "Tem Hyrox perto de mim em Barueri?", answer: "Na região, o OBOX, no AlphaSítio Mall, no Tamboré (lado de Santana de Parnaíba), lista Hyrox nas aulas. Boxes de cross training, como a Crosslift Blacksheep, que tem unidade em Alphaville, trabalham com equipamento parecido; pergunte se há aula ou simulado de Hyrox antes de assinar." },
+      { question: "Quanto custa a mensalidade do Hyrox?", answer: "O Hyrox não tem mensalidade própria: é uma prova. O que tem mensalidade é o box ou a academia onde você treina, e o valor muda por plano e frequência. Pelo Wellhub, o OBOX aparece a partir do plano Gold (R$ 319,99 por mês na consulta de 23/10/2026, que dá acesso a várias academias). A inscrição na prova é paga à parte, no site oficial do evento." },
+      { question: "Qual academia tem Hyrox em Alphaville?", answer: "Na consulta de 23/10/2026, o OBOX, no AlphaSítio Mall (Tamboré, lado de Santana de Parnaíba), lista Hyrox entre as aulas e se apresenta como o primeiro Hyrox Training Club de Alphaville; em Alphaville Industrial, a BlackSheep Alphaville também lista Hyrox no Wellhub. Para saber se o lugar é credenciado, confira no buscador oficial de Training Clubs." },
+      { question: "Onde acontece o Hyrox em SP?", answer: "A etapa de São Paulo de 2026 foi no Distrito Anhembi, em 17 e 18 de outubro. A próxima aparece para 8 e 9 de maio de 2027, com local ainda a definir. O calendário está em Hyrox no Brasil 2026/2027." },
       { question: "O OBOX aceita Wellhub?", answer: "Sim: a unidade aparece no Wellhub a partir do plano Gold, segundo a página consultada em 21/10/2026, com reserva obrigatória para as aulas. Plano e regras mudam; confira no app." },
     ],
     content: `<p>O Hyrox chegou a São Paulo e a procura por "onde treinar" foi junto. Em Alphaville, há dois caminhos: um <strong>box com aula específica de Hyrox</strong> ou a <strong>academia que você já frequenta</strong>, com a preparação montada para a prova. Os dois funcionam; o que muda é o que cada um tem de equipamento.</p>
 
 <h2>Resposta direta: onde treinar Hyrox em Alphaville</h2>
 <ul>
-<li><strong>Box com aula de Hyrox:</strong> o <strong>OBOX</strong>, na Av. dos Parques, 329, Centro de Apoio I (Alphaville, Santana de Parnaíba), lista Hyrox entre as aulas no Wellhub e se apresenta no Instagram como o primeiro clube de treino de Hyrox de Alphaville.</li>
+<li><strong>Box com aula de Hyrox:</strong> o <strong>OBOX</strong>, no AlphaSítio Mall, no Tamboré (lado de Santana de Parnaíba), lista Hyrox entre as aulas no Wellhub e se apresenta no Instagram como o primeiro Hyrox Training Club de Alphaville. O endereço aparece de dois jeitos: Alameda Pau Brasil, 48, lojas 16/17, no TotalPass, e Av. dos Parques, 329, no Wellhub (consulta de 23/10/2026); confirme com o box antes de ir.</li>
 <li><strong>Academia comum:</strong> serve para quase toda a base (corrida, força, wall ball, avanço, remo). O que costuma faltar é o trenó e o SkiErg.</li>
 </ul>
 <p>Antes de assinar, confira no <a href="https://hyrox.com/gym-partners" target="_blank" rel="noopener noreferrer">buscador oficial de Training Clubs</a> se o lugar é credenciado: usar o nome "Hyrox" na aula não é o mesmo que ser clube oficial.</p>
@@ -120245,6 +120248,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <li><a href="https://wellhub.com/pt-br/search/partners/blacksheep-alphaville-alphaville-industrial-barueri/" target="_blank" rel="noopener noreferrer">Wellhub — BlackSheep Alphaville</a></li>
 <li><a href="https://wellhub.com/pt-br/search/partners/obox-jacarei/" target="_blank" rel="noopener noreferrer">Wellhub — Obox Santana de Parnaíba (aulas, endereço e plano)</a></li>
 <li><a href="https://www.instagram.com/obox.trainingclub/" target="_blank" rel="noopener noreferrer">Instagram — OBOX Training Club Alphaville</a></li>
+<li><a href="https://totalpass.com/br/academias/obox-training-club-74058863-93c1-4f40-8383-736778c221c5/" target="_blank" rel="noopener noreferrer">TotalPass — OBOX Training Club (endereço, consulta de 23/10/2026)</a></li>
 </ul>`,
   },
   {
@@ -120255,7 +120259,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     excerpt: "Em Barueri, a aula com o nome Hyrox está em Alphaville Industrial. Do Centro e dos bairros, dá para fazer a base na academia de perto e ir ao box para trenó, SkiErg e simulado.",
     category: "Treinamento",
     date: "2026-10-22",
-    updatedAt: "2026-10-22",
+    updatedAt: "2026-10-23",
     readTime: "6 min",
     author: "Montinho",
     tags: ["hyrox barueri", "onde treinar hyrox", "box hyrox barueri", "hyrox alphaville industrial", "treino hyrox"],
@@ -120339,12 +120343,12 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     excerpt: "Em Santana de Parnaíba, a aula de Hyrox fica no lado de Alphaville, no Centro de Apoio I. Para quem mora no Centro ou na Fazendinha, a base vai na academia de perto e o box entra para as estações.",
     category: "Treinamento",
     date: "2026-10-22",
-    updatedAt: "2026-10-22",
+    updatedAt: "2026-10-23",
     readTime: "6 min",
     author: "Montinho",
     tags: ["hyrox santana de parnaiba", "onde treinar hyrox", "obox hyrox", "box hyrox", "treino hyrox"],
     faq: [
-      { question: "Onde treinar Hyrox em Santana de Parnaíba?", answer: "O OBOX, na Av. dos Parques, 329, Centro de Apoio I, inclui Hyrox entre as aulas na descrição do Wellhub (consulta de 22/10/2026) e se apresenta no Instagram como clube de treino de Hyrox de Alphaville. Fica no lado de Alphaville que pertence a Santana de Parnaíba." },
+      { question: "Onde treinar Hyrox em Santana de Parnaíba?", answer: "O OBOX, no AlphaSítio Mall, no Tamboré (lado de Santana de Parnaíba), inclui Hyrox entre as aulas na descrição do Wellhub (consulta de 22/10/2026) e se apresenta no Instagram como clube de treino de Hyrox de Alphaville. Fica no lado de Alphaville que pertence a Santana de Parnaíba." },
       { question: "Tem Training Club oficial do Hyrox em Santana de Parnaíba?", answer: "Confira no buscador oficial de Training Clubs (hyrox.com/gym-partners). Ter aula com o nome Hyrox não é o mesmo que ser credenciado pela organização da prova." },
       { question: "Quanto custa treinar Hyrox em Santana de Parnaíba?", answer: "O box cobra mensalidade própria, que muda por plano e frequência. Pelo Wellhub, o OBOX aparece a partir do plano Gold (consulta de 22/10/2026). A inscrição na prova é paga à parte, no site oficial do evento." },
       { question: "Moro no Centro de Santana ou na Fazendinha. Como me preparar?", answer: "A base de corrida e força pode ser feita na academia mais perto de casa, que é o que mantém a frequência. O box entra algumas vezes antes da prova, para treinar trenó, SkiErg e o simulado." },
@@ -120355,7 +120359,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 
 <h2>Resposta direta: onde treinar Hyrox em Santana de Parnaíba</h2>
 <ul>
-<li><strong>Box com aula de Hyrox:</strong> o <strong>OBOX</strong>, na Av. dos Parques, 329, Centro de Apoio I, inclui Hyrox entre as aulas (cross training, full body, Hyrox e yoga) na descrição do Wellhub, consultada em 22/10/2026, e se apresenta no Instagram como clube de treino de Hyrox de Alphaville.</li>
+<li><strong>Box com aula de Hyrox:</strong> o <strong>OBOX</strong>, no AlphaSítio Mall, no Tamboré (lado de Santana de Parnaíba), inclui Hyrox entre as aulas (cross training, full body, Hyrox e yoga) na descrição do Wellhub, consultada em 22/10/2026, e se apresenta no Instagram como o primeiro Hyrox Training Club de Alphaville. O endereço aparece como Alameda Pau Brasil, 48, lojas 16/17, no TotalPass, e Av. dos Parques, 329, no Wellhub (consulta de 23/10/2026); confirme com o box antes de ir.</li>
 <li><strong>Academia comum:</strong> serve para a base de corrida e força. O que costuma faltar é trenó e SkiErg.</li>
 </ul>
 <p>Antes de assinar, confira no <a href="https://hyrox.com/gym-partners" target="_blank" rel="noopener noreferrer">buscador oficial de Training Clubs</a> se o lugar é credenciado. Há uma análise do espaço em <a href="/blog/obox-training-club-santana-de-parnaiba">OBOX Training Club: o que esperar</a>.</p>
@@ -120413,6 +120417,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <li><a href="https://wellhub.com/pt-br/search/partners/obox-jacarei/" target="_blank" rel="noopener noreferrer">Wellhub — Obox Santana de Parnaíba (aulas, endereço e plano, consulta de 22/10/2026)</a></li>
 <li><a href="https://www.instagram.com/obox.trainingclub/" target="_blank" rel="noopener noreferrer">Instagram — OBOX Training Club Alphaville</a></li>
 <li><a href="https://santanadeparnaiba.sesisp.org.br/academia-sesi-sp" target="_blank" rel="noopener noreferrer">SESI-SP — Academia da unidade Santana de Parnaíba</a></li>
+<li><a href="https://totalpass.com/br/academias/obox-training-club-74058863-93c1-4f40-8383-736778c221c5/" target="_blank" rel="noopener noreferrer">TotalPass — OBOX Training Club (endereço, consulta de 23/10/2026)</a></li>
 </ul>`,
   },
   {
@@ -120423,12 +120428,12 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     excerpt: "Não há box de Hyrox na Aldeia da Serra. Dá para fazer quase toda a preparação no condomínio ou na academia do bairro e descer a serra para treinar trenó, SkiErg e o simulado.",
     category: "Treinamento",
     date: "2026-10-22",
-    updatedAt: "2026-10-22",
+    updatedAt: "2026-10-23",
     readTime: "6 min",
     author: "Montinho",
     tags: ["hyrox aldeia da serra", "treino hyrox", "hyrox condominio", "onde treinar hyrox", "aldeia da serra"],
     faq: [
-      { question: "Tem box de Hyrox na Aldeia da Serra?", answer: "Não encontramos nenhum na consulta de 22/10/2026. Os lugares mais próximos que listam aula de Hyrox ficam descendo a serra: o OBOX (Av. dos Parques, 329, Centro de Apoio I, Santana de Parnaíba) e a BlackSheep Alphaville (Alameda Araguaia, 122, Alphaville Industrial, Barueri)." },
+      { question: "Tem box de Hyrox na Aldeia da Serra?", answer: "Não encontramos nenhum na consulta de 22/10/2026. Os lugares mais próximos que listam aula de Hyrox ficam descendo a serra: o OBOX (AlphaSítio Mall, Tamboré, Santana de Parnaíba) e a BlackSheep Alphaville (Alameda Araguaia, 122, Alphaville Industrial, Barueri)." },
       { question: "Dá para treinar para o Hyrox na academia do condomínio?", answer: "Dá para fazer boa parte: corrida, força de pernas e costas, avanço com halteres, farmers carry e burpee broad jump. O que não há em academia de condomínio é trenó e SkiErg, e às vezes nem remo; essas estações ficam para algumas sessões num box." },
       { question: "Que academias existem na Aldeia da Serra?", answer: "Na parte de Barueri, academias de bairro, como Área Fitness, WFIT e Aldeia Fitness, segundo os diretórios e os perfis delas. Na parte de Santana de Parnaíba, a academia do próprio condomínio. Nenhuma delas é box com trenó e SkiErg." },
       { question: "Quantas vezes preciso descer a serra para treinar no box?", answer: "Uma vez a cada uma ou duas semanas costuma bastar para treinar trenó, SkiErg e o simulado. O resto da semana pode ficar perto de casa, o que é o que mantém a frequência." },
@@ -120444,7 +120449,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 </ul>
 <p>Os lugares mais próximos que listam aula de Hyrox, na consulta de 22/10/2026:</p>
 <ul>
-<li><strong>OBOX</strong>, Av. dos Parques, 329, Centro de Apoio I, Santana de Parnaíba. Detalhes em <a href="/blog/hyrox-santana-de-parnaiba-onde-treinar">Hyrox em Santana de Parnaíba</a>.</li>
+<li><strong>OBOX</strong>, AlphaSítio Mall, Tamboré, Santana de Parnaíba. Detalhes em <a href="/blog/hyrox-santana-de-parnaiba-onde-treinar">Hyrox em Santana de Parnaíba</a>.</li>
 <li><strong>BlackSheep Alphaville</strong>, Alameda Araguaia, 122 (galpão 8), Alphaville Industrial, Barueri. Detalhes em <a href="/blog/hyrox-barueri-onde-treinar">Hyrox em Barueri</a>.</li>
 </ul>
 
