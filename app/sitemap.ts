@@ -562,6 +562,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/preparacao-para-hyrox`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/personal-trainer-alphaville`,
       lastModified: new Date("2026-06-01"),
       changeFrequency: "monthly" as const,

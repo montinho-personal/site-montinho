@@ -41,6 +41,8 @@ export const HYROX_GUIAS_POSTS: BlogPost[] = [
       { question: "Quem faz Hyrox precisa fazer musculação?", answer: "Precisa. Trenó, avanço com saco, farmers carry e wall ball são força com o coração já alto. A musculação dá essa força e protege joelho, lombar e ombro nas semanas de treino." },
       { question: "Dá para treinar Hyrox na academia comum?", answer: "Dá para quase tudo: corrida, remo, wall ball, avanço com peso, farmers carry e burpee. O que costuma faltar é o trenó e o SkiErg; no lugar deles, leg press pesado ou empurrar um banco com anilhas, e remo com puxada de braço. Algumas sessões num box antes da prova completam o que faltou." },
       { question: "Dá para treinar Hyrox em casa?", answer: "A base, sim: corrida na rua, burpee broad jump, afundo com mochila, agachamento com salto e flexão. As estações com carga (trenó, remo, SkiErg, wall ball) pedem academia ou box." },
+      { question: "Como treinar Hyrox em casa?", answer: "Com um circuito que alterna corrida e estações adaptadas: 800 m a 1 km de corrida na rua e, depois de cada trecho, burpee broad jump, afundo com mochila, agachamento com arremesso de uma bola ou mochila e carregamento de duas sacolas pesadas. De 4 a 6 rodadas, uma ou duas vezes por semana." },
+      { question: "Quais equipamentos para Hyrox?", answer: "A prova usa SkiErg, trenó (sled), remo ergométrico, kettlebells, saco de areia e bola de wall ball. Para treinar em casa, bastam um par de halteres ou kettlebell, uma mochila com peso e, se quiser, uma medicine ball. O resto se treina na academia ou num box." },
       { question: "O que é um WOD de Hyrox?", answer: "É o treino do dia no formato da prova. O clássico é alternar 1 km de corrida com uma estação, de 3 a 8 rodadas, em ritmo controlado. Outro comum é fazer meia prova: 4 km e 4 estações." },
       { question: "Simulado de Hyrox: quando fazer?", answer: "Um meio simulado (4 km + 4 estações) por volta da sexta semana e um simulado completo em ritmo controlado duas semanas antes da prova. Na última semana, não; ali o objetivo é chegar descansado." },
     ],
@@ -107,19 +109,40 @@ export const HYROX_GUIAS_POSTS: BlogPost[] = [
 <p>Se não tiver nenhum lugar com trenó, vale pagar algumas diárias num box nas semanas 5 a 7. É a estação que mais surpreende quem treina só na academia. Em Alphaville e região, os lugares estão em <a href="/blog/hyrox-alphaville-onde-treinar">onde treinar Hyrox em Alphaville</a>.</p>
 
 <h2>Treino de Hyrox em casa</h2>
-<p>Em casa dá para manter a base nas semanas em que a academia não cabe: corrida na rua, burpee broad jump, afundo com mochila carregada, agachamento com salto, flexão e prancha. O que não dá é a carga das estações. Use a casa para não perder a semana, não para substituir o treino inteiro.</p>
+<p>Em casa dá para manter a base nas semanas em que a academia não cabe. O que não dá é a carga das estações: use a casa para não perder a semana, não para substituir o treino inteiro. Um circuito de 35 a 45 minutos, com uma rua ou calçada por perto:</p>
+<ol>
+<li><strong>Aquecimento:</strong> 5 minutos de trote e mobilidade de quadril e ombro.</li>
+<li><strong>De 4 a 6 rodadas</strong> de 800 m a 1 km de corrida, cada uma seguida de uma estação:
+<ul>
+<li>20 burpee broad jumps (ou burpees no lugar, se não houver espaço);</li>
+<li>30 afundos andando com uma mochila carregada;</li>
+<li>30 agachamentos com arremesso de uma medicine ball, ou agachamento com salto;</li>
+<li>100 m carregando duas sacolas ou galões pesados (o farmers carry de casa).</li>
+</ul></li>
+<li><strong>Para fechar:</strong> 3 × 15 flexões e 3 × 40 segundos de prancha.</li>
+</ol>
+<p>Uma ou duas vezes por semana, no lugar do treino de corrida com estações da planilha.</p>
+
+<h2>Quais equipamentos o Hyrox usa</h2>
+<ul>
+<li><strong>Na prova:</strong> SkiErg, trenó (sled) com pista, remo ergométrico, kettlebells, saco de areia e bola de wall ball com alvo.</li>
+<li><strong>Para treinar em casa:</strong> halteres ou kettlebell, uma mochila com peso e, se der, uma medicine ball. Não precisa de mais nada para a base.</li>
+<li><strong>O que vale procurar fora de casa:</strong> trenó e SkiErg, que quase ninguém tem e que mais surpreendem na prova.</li>
+</ul>
 
 <h2>O erro mais comum: treinar as partes separadas</h2>
 <p>Quem vem da corrida treina 10 km e chega no trenó sem perna. Quem vem da musculação empurra o trenó bem e anda na quinta corrida. O treino que corrige os dois é o mesmo: <strong>correr logo depois da estação</strong>, toda semana. É o dia da planilha que não pode sair.</p>
 
 <h2>Preparação com acompanhamento</h2>
-<p>A planilha é igual para todo mundo; a semana de cada um não é. Quando você falta no dia da corrida cansada, quando a carga do agachamento para de subir ou quando o ritmo de prova sai mais lento que o planejado, alguém precisa decidir o que muda. Eu monto a preparação para o Hyrox e ajusto conforme o que acontece em cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>.</p>
+<p>A planilha é igual para todo mundo; a semana de cada um não é. Quando você falta no dia da corrida cansada, quando a carga do agachamento para de subir ou quando o ritmo de prova sai mais lento que o planejado, alguém precisa decidir o que muda. Eu monto a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a> e ajusto conforme o que acontece em cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>.</p>
 
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/estacoes-do-hyrox">Estações do Hyrox: ordem, pesos por categoria e técnica</a></li>
 <li><a href="/blog/hyrox-o-que-e">Hyrox: o que é e como funciona</a></li>
 <li><a href="/blog/hyrox-vs-crossfit">Hyrox vs CrossFit: qual a diferença</a></li>
+<li><a href="/blog/hyrox-em-dupla">Hyrox em dupla: como funciona e como dividir as estações</a></li>
+<li><a href="/blog/alimentacao-para-hyrox">Alimentação para Hyrox: o que comer antes e depois</a></li>
 <li><a href="/blog/treino-hibrido-forca-corrida-2025">Treino híbrido: como combinar força e corrida</a></li>
 <li><a href="/ferramentas/calculadora-tempo-hyrox">Calculadora de Tempo do Hyrox</a></li>
 </ul>
@@ -211,7 +234,7 @@ ${FONTE_FORMATO}
 <p>As três primeiras estações (SkiErg e os dois trenós) cansam braço, costas e perna logo no começo. As duas últimas (lunges e wall balls) caem sobre uma perna que já correu 7 km. Por isso, treinar as estações isoladas, descansado, engana: treine pelo menos parte delas logo depois de correr. O passo a passo da semana está em <a href="/blog/treino-de-hyrox">treino de Hyrox</a>.</p>
 
 <h2>Preparação com acompanhamento</h2>
-<p>Cada pessoa tem uma estação que derruba o tempo: o trenó para quem vem da corrida, a corrida para quem vem da musculação, a pegada para quase todo mundo no farmers carry. Eu observo onde você perde tempo, ajusto o treino da semana e acompanho a evolução até a prova, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>.</p>
+<p>Cada pessoa tem uma estação que derruba o tempo: o trenó para quem vem da corrida, a corrida para quem vem da musculação, a pegada para quase todo mundo no farmers carry. Eu observo onde você perde tempo, ajusto o treino da semana e acompanho a evolução até a prova, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>. Veja como funciona a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a>.</p>
 
 <h2>Leia também</h2>
 <ul>
@@ -295,7 +318,7 @@ ${FONTE_REGRAS}
 </ul>
 
 <h2>Preparação com acompanhamento</h2>
-<p>Quem vem do CrossFit costuma chegar ao Hyrox com força e técnica sobrando e corrida faltando; quem vem da corrida, o contrário. Eu olho de onde você parte, monto a semana para o que falta e ajusto conforme a resposta de cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>.</p>
+<p>Quem vem do CrossFit costuma chegar ao Hyrox com força e técnica sobrando e corrida faltando; quem vem da corrida, o contrário. Eu olho de onde você parte, monto a semana para o que falta e ajusto conforme a resposta de cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>. Veja como funciona a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a>.</p>
 
 <h2>Leia também</h2>
 <ul>
@@ -385,7 +408,7 @@ ${FONTE_FORMATO}
 </ul>
 
 <h2>Preparação com acompanhamento</h2>
-<p>Tênis resolve conforto; o tempo vem do treino. Quando a corrida cai no quinto quilômetro ou o trenó trava, eu vejo onde está o problema, ajusto a semana e acompanho até a prova, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>.</p>
+<p>Tênis resolve conforto; o tempo vem do treino. Quando a corrida cai no quinto quilômetro ou o trenó trava, eu vejo onde está o problema, ajusto a semana e acompanho até a prova, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>. Veja como funciona a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a>.</p>
 
 <h2>Leia também</h2>
 <ul>
@@ -477,7 +500,7 @@ ${FONTE_FORMATO}
 </ul>
 
 <h2>Não se compare</h2>
-<p>O PFT dá um número, e número vira comparação rápido. Cada pessoa tem a própria genética, rotina e história, com altos e baixos. O tempo que importa é o seu no próximo teste. Se quiser montar a preparação comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou veja <a href="/onde-atendo">onde atendo</a>.</p>
+<p>O PFT dá um número, e número vira comparação rápido. Cada pessoa tem a própria genética, rotina e história, com altos e baixos. O tempo que importa é o seu no próximo teste. Se quiser montar a preparação comigo, <a href="/preparacao-para-hyrox">conheça a preparação para o Hyrox</a> ou veja <a href="/onde-atendo">onde atendo</a>.</p>
 
 <h2>Leia também</h2>
 <ul>
@@ -563,7 +586,7 @@ ${FONTE_FORMATO}
 <p>Para o Rio, a menos de um mês da prova, não dá para construir base nova: dá para chegar descansado e afiado, com um simulado controlado e a última semana leve. Para São Paulo em maio de 2027, há tempo para as 8 semanas da <a href="/blog/treino-de-hyrox">planilha de treino de Hyrox</a>, com folga.</p>
 
 <h2>Não se compare</h2>
-<p>A prova dá um tempo, e o tempo do lado vira comparação. Cada pessoa tem a própria genética, rotina e história, com altos e baixos. O que importa é encontrar um treino que dê para seguir pelo resto da vida, com aderência e progressão. Se quiser montar a preparação comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+<p>A prova dá um tempo, e o tempo do lado vira comparação. Cada pessoa tem a própria genética, rotina e história, com altos e baixos. O que importa é encontrar um treino que dê para seguir pelo resto da vida, com aderência e progressão. Se quiser montar a preparação comigo, <a href="/preparacao-para-hyrox">conheça a preparação para o Hyrox</a> ou fale comigo pelo WhatsApp no fim da página.</p>
 
 <h2>Fontes</h2>
 <ul>
@@ -574,6 +597,197 @@ ${FONTE_FORMATO}
 <li><a href="https://rundida.com/hyrox/event/sao-paulo/" target="_blank" rel="noopener noreferrer">Rundida — HYROX São Paulo, 17–18/10/2026 e 8–9/05/2027</a></li>
 <li><a href="https://www.roxradar.com/events/hyrox-rio-de-janeiro-2026" target="_blank" rel="noopener noreferrer">RoxRadar — HYROX Rio de Janeiro 2026 (situação dos ingressos)</a></li>
 ${FONTE_REGRAS}
+</ul>`,
+  },
+  /* ───────────────────────── Alimentação ───────────────────────── */
+  {
+    slug: "alimentacao-para-hyrox",
+    title: "Alimentação para Hyrox: o Que Comer Antes, Durante e Depois",
+    metaTitle: "Alimentação para Hyrox: o Que Comer Antes e Depois da Prova",
+    metaDescription:
+      "O que comer antes do Hyrox, se vale levar gel, quanta água tomar, cafeína e creatina e o que comer depois da prova, com as quantidades por quilo de peso.",
+    excerpt:
+      "O que comer na véspera e no dia do Hyrox, quanto carboidrato pelo seu peso, se vale gel na prova, cafeína, creatina e como evitar o estômago atrapalhar no meio da prova.",
+    category: "Nutrição",
+    date: "2026-10-23",
+    updatedAt: "2026-10-23",
+    readTime: "7 min",
+    author: "Montinho",
+    tags: ["alimentação hyrox", "o que comer antes do hyrox", "nutrição hyrox", "suplementos hyrox", "gel hyrox"],
+    faq: [
+      { question: "O que comer antes do Hyrox?", answer: "Uma refeição com carboidrato de fácil digestão de 2 a 3 horas antes da largada: pão, tapioca, arroz, banana, mel. As diretrizes de nutrição esportiva falam em 1 a 4 g de carboidrato por quilo de 1 a 4 horas antes. Evite muita fibra, gordura e qualquer comida nova." },
+      { question: "Precisa tomar gel no Hyrox?", answer: "Para provas de 1 a 2 horas e meia, as diretrizes indicam de 30 a 60 g de carboidrato por hora. Quem faz a prova em mais de uma hora pode se beneficiar de um gel no meio. Só use se já testou no treino: gel que o estômago não conhece é o que mais atrapalha." },
+      { question: "Quanta água tomar antes do Hyrox?", answer: "De 5 a 10 ml por quilo de peso de 2 a 4 horas antes, segundo as diretrizes do ACSM: para 70 kg, de 350 a 700 ml. Assim dá tempo de ir ao banheiro antes da largada." },
+      { question: "Cafeína ajuda no Hyrox?", answer: "Pode ajudar. A dose estudada é de 3 a 6 mg por quilo cerca de 60 minutos antes; para 70 kg, de 210 a 420 mg. Comece pela ponta de baixo, teste no treino e lembre que o pré-treino já tem cafeína." },
+      { question: "Quais suplementos usar para o Hyrox?", answer: "Os que têm evidência para esse tipo de esforço são cafeína e creatina (3 a 5 g por dia, todo dia, não só na prova). Whey é comida em pó: ajuda a bater a proteína do dia. O resto, para a maioria, não muda o tempo de prova." },
+      { question: "O que comer depois do Hyrox?", answer: "Uma refeição com carboidrato e proteína nas primeiras horas: arroz, batata ou pão com carne, frango, ovos ou iogurte. Proteína de 0,25 a 0,4 g por quilo na refeição (perto de 20 a 30 g para 70 kg) e água." },
+      { question: "Por que dá diarreia ou enjoo no Hyrox?", answer: "Esforço alto por mais de uma hora desvia sangue do intestino, e comida pesada, fibra, gordura, gel ou café em excesso pioram. Teste no treino a refeição e o horário do dia da prova. Se acontece sempre, mesmo com a comida certa, procure um médico." },
+    ],
+    content: `<p>O Hyrox dura de uma a duas horas para a maioria das pessoas, com o coração alto o tempo todo. Não é uma maratona, mas também não é uma aula de 40 minutos: <strong>o que você come na véspera e no dia muda como você chega nas últimas estações.</strong></p>
+
+<h2>Resposta direta: o que comer antes do Hyrox</h2>
+<ul>
+<li><strong>Véspera:</strong> jantar normal, com carboidrato (arroz, massa, batata) e sem exagero de fibra e gordura.</li>
+<li><strong>2 a 3 horas antes:</strong> refeição com carboidrato de fácil digestão — pão, tapioca, banana, mel, arroz — e pouca gordura.</li>
+<li><strong>Água:</strong> de 5 a 10 ml por quilo de 2 a 4 horas antes.</li>
+<li><strong>Nada novo:</strong> comida, gel, café e suplemento do dia da prova são os mesmos que você usou nos simulados.</li>
+</ul>
+
+<h2>Quanto carboidrato pelo seu peso</h2>
+<p>As diretrizes de nutrição esportiva do ACSM falam em <strong>1 a 4 g de carboidrato por quilo</strong> de 1 a 4 horas antes do esforço: quanto mais perto da largada, menor a quantidade. Para uma refeição de 2 a 3 horas antes, a faixa de 1 a 2 g por quilo costuma cair bem:</p>
+<table>
+<thead><tr><th>Peso</th><th>Carboidrato (1–2 g/kg)</th><th>Água (5–10 ml/kg)</th><th>Cafeína, se usar (3 mg/kg)</th></tr></thead>
+<tbody>
+<tr><td>60 kg</td><td>60 a 120 g</td><td>300 a 600 ml</td><td>180 mg</td></tr>
+<tr><td>70 kg</td><td>70 a 140 g</td><td>350 a 700 ml</td><td>210 mg</td></tr>
+<tr><td>80 kg</td><td>80 a 160 g</td><td>400 a 800 ml</td><td>240 mg</td></tr>
+<tr><td>90 kg</td><td>90 a 180 g</td><td>450 a 900 ml</td><td>270 mg</td></tr>
+</tbody>
+</table>
+<p>Na prática: duas fatias de pão com mel e uma banana dão perto de 70 g de carboidrato; um prato de arroz com frango e pouca gordura, mais. Quem tem horário de largada cedo pode fazer uma refeição menor mais perto da prova. O passo a passo do carboidrato antes do treino está em <a href="/blog/carboidrato-antes-do-treino">carboidrato antes do treino</a>.</p>
+
+<h2>Precisa comer durante a prova?</h2>
+<p>Para esforços de 1 a 2 horas e meia, as diretrizes indicam <strong>de 30 a 60 g de carboidrato por hora</strong>. Quem faz a prova em menos de uma hora precisa de pouco ou nada além de água. Quem passa de uma hora pode levar um gel para o meio da prova (o teor de carboidrato muda de marca para marca; confira o rótulo).</p>
+<p>A regra que mais importa: <strong>gel que o estômago nunca viu não estreia na prova.</strong> Teste no simulado, no mesmo momento em que pretende tomar.</p>
+
+<h2>Precisa fazer carb loading?</h2>
+<p>O "carregamento de carboidrato" (10 a 12 g por quilo por dia, de 36 a 48 horas antes) é indicado para esforços contínuos de mais de 90 minutos. Para a maioria das pessoas no Hyrox, que fica perto disso ou abaixo, um jantar e um café da manhã com carboidrato bastam. Quem leva mais de uma hora e meia e já testou pode aumentar o carboidrato no dia anterior, sem dobrar o volume de comida.</p>
+
+<h2>Cafeína e creatina</h2>
+<ul>
+<li><strong>Cafeína:</strong> a dose estudada para desempenho é de 3 a 6 mg por quilo, cerca de 60 minutos antes. Comece pela ponta de baixo e some o pré-treino, que já tem cafeína. A conta pelo seu peso está na <a href="/ferramentas/calculadora-cafeina">Calculadora de Cafeína</a>.</li>
+<li><strong>Creatina:</strong> 3 a 5 g por dia, todo dia, nas semanas de preparação. Não é suplemento de dia de prova: o efeito vem do uso contínuo. A dose pelo seu peso está na <a href="/ferramentas/calculadora-creatina">Calculadora de Creatina</a>.</li>
+<li><strong>Whey:</strong> é proteína, como a da comida. Ajuda a bater a meta do dia; não muda o tempo de prova.</li>
+</ul>
+
+<h2>O estômago atrapalhou: diarreia, enjoo e cólica</h2>
+<p>Muita gente procura "Hyrox diarreia", e não é à toa. Esforço alto por mais de uma hora desvia sangue do intestino, e alguns hábitos pioram:</p>
+<ul>
+<li>refeição grande ou com muita fibra e gordura perto da largada;</li>
+<li>gel, café ou pré-treino em dose que o corpo não conhece;</li>
+<li>comer pela primeira vez no horário da prova.</li>
+</ul>
+<p>O que resolve na maioria das vezes é treinar o dia da prova: mesma refeição, mesmo horário e mesmo gel no simulado. Se os sintomas aparecem sempre, mesmo com a comida certa, procure um médico.</p>
+
+<h2>Depois da prova</h2>
+<p>Nas primeiras horas, uma refeição com <strong>carboidrato e proteína</strong>: arroz, batata ou pão com carne, frango, ovos ou iogurte. A proteína de 0,25 a 0,4 g por quilo na refeição (perto de 20 a 30 g para 70 kg) é a faixa das diretrizes; água até a urina voltar à cor clara. Quanto a prova gastou pelo seu tempo e peso está na <a href="/ferramentas/calculadora-calorias-hyrox">Calculadora de Calorias no Hyrox</a>.</p>
+
+<h2>Nas semanas de preparação</h2>
+<p>O que mais pesa no tempo de prova não é o café da manhã do dia: é comer o suficiente para treinar corrida e força na mesma semana. Quem corta demais para emagrecer no meio da preparação costuma ver a carga parar de subir e o pace cair. Se o objetivo é emagrecer e fazer a prova, o déficit precisa ser pequeno.</p>
+
+<h2>Preparação com acompanhamento</h2>
+<p>Eu organizo o treino da preparação e as orientações práticas de alimentação em volta dele; para plano alimentar completo, o caminho é um nutricionista. Na <a href="/preparacao-para-hyrox">preparação para o Hyrox</a>, a gente testa nos simulados o que vai ser feito no dia.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/treino-de-hyrox">Treino de Hyrox: planilha de 8 semanas</a></li>
+<li><a href="/blog/cafeina-no-treino-dose-timing">Cafeína no treino: dose e horário</a></li>
+<li><a href="/blog/carboidrato-antes-do-treino">Carboidrato antes do treino</a></li>
+<li><a href="/blog/hyrox-o-que-e">Hyrox: o que é e como funciona</a></li>
+</ul>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/26891166/" target="_blank" rel="noopener noreferrer">Thomas DT, Erdman KA, Burke LM. Nutrition and Athletic Performance (ACSM, Academy of Nutrition and Dietetics, Dietitians of Canada). Med Sci Sports Exerc, 2016</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/28919842/" target="_blank" rel="noopener noreferrer">Kerksick CM, et al. ISSN position stand: nutrient timing. J Int Soc Sports Nutr, 2017</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/33388079/" target="_blank" rel="noopener noreferrer">Guest NS, et al. ISSN position stand: caffeine and exercise performance. J Int Soc Sports Nutr, 2021</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/28615996/" target="_blank" rel="noopener noreferrer">Kreider RB, et al. ISSN position stand: creatine supplementation. J Int Soc Sports Nutr, 2017</a></li>
+</ul>`,
+  },
+
+  /* ───────────────────────── Dupla ───────────────────────── */
+  {
+    slug: "hyrox-em-dupla",
+    title: "Hyrox em Dupla: Como Funciona, Pesos e Como Dividir as Estações",
+    metaTitle: "Hyrox em Dupla: Como Funciona e Como Dividir as Estações",
+    metaDescription:
+      "Hyrox em dupla: os dois correm juntos os 8 km e dividem as estações. Veja os pesos da dupla feminina, masculina e mista, como dividir e como treinar.",
+    excerpt:
+      "Na dupla, os dois correm juntos os 8 km e dividem as estações como quiserem. Os pesos de cada dupla, as estratégias para dividir trenó e wall ball e um treino para fazer a dois.",
+    category: "Treinamento",
+    date: "2026-10-23",
+    updatedAt: "2026-10-23",
+    readTime: "6 min",
+    author: "Montinho",
+    tags: ["hyrox em dupla", "hyrox dupla", "treino hyrox dupla", "hyrox doubles", "hyrox dupla mista"],
+    faq: [
+      { question: "Como funciona o Hyrox em dupla?", answer: "Os dois atletas correm juntos os 8 km, em 8 trechos de 1 km, e dividem as estações como quiserem. A dupla termina junta, com um tempo só." },
+      { question: "No Hyrox em dupla, cada um corre 4 km?", answer: "Não. Na dupla, os dois correm os 8 km juntos; o que se divide são as estações. Quem divide a corrida é o revezamento de quatro pessoas, em que cada uma faz 2 km e duas estações." },
+      { question: "Qual o peso do Hyrox em dupla?", answer: "Pelo site oficial, a dupla feminina usa os pesos do Open feminino (sled push de 102 kg, wall ball de 4 kg) e as duplas masculina e mista usam os do Open masculino (sled push de 152 kg, wall ball de 6 kg). Há também duplas Pro, com cargas maiores." },
+      { question: "Como dividir as estações no Hyrox em dupla?", answer: "O mais comum é alternar em blocos curtos: 25 wall balls para cada, 250 m de SkiErg e de remo para cada, um trecho de trenó para cada. Quem é mais forte pode pegar mais trenó; quem tem mais fôlego, mais SkiErg e remo. Combine antes e teste no treino." },
+      { question: "Hyrox em dupla é mais fácil?", answer: "As estações cansam menos, porque cada um descansa enquanto o outro trabalha. A corrida é a mesma: 8 km. Por isso é o jeito mais tranquilo de fazer a primeira prova." },
+      { question: "Hyrox em dupla mista: como funciona?", answer: "É uma dupla com um homem e uma mulher. Usa os pesos do Open masculino em todas as estações, então quem tem mais força costuma pegar uma parte maior do trenó e do farmers carry." },
+    ],
+    content: `<p>No Hyrox em dupla, <strong>os dois correm juntos os 8 km e dividem as estações como quiserem.</strong> É o formato que eu mais indico para a primeira prova: você conhece a prova inteira, corre tudo, e não precisa fazer as oito estações sozinho com a perna cansada.</p>
+
+<h2>Resposta direta: como funciona o Hyrox em dupla</h2>
+<ul>
+<li><strong>Corrida:</strong> os dois correm os 8 trechos de 1 km juntos.</li>
+<li><strong>Estações:</strong> as mesmas oito, na mesma ordem, divididas entre os dois como a dupla quiser.</li>
+<li><strong>Tempo:</strong> um só, da dupla.</li>
+<li><strong>Categorias:</strong> dupla feminina, masculina e mista, em Open e em Pro.</li>
+</ul>
+<p>As regras de como passar a vez em cada estação estão no regulamento oficial de duplas; leia antes da prova. Para saber quanto a sua dupla deve fazer, a calculadora abaixo soma corrida, estações e Roxzone.</p>
+
+<h2>Pesos do Hyrox em dupla</h2>
+<table>
+<thead><tr><th>Estação</th><th>Dupla feminina</th><th>Dupla masculina e mista</th></tr></thead>
+<tbody>
+<tr><td>Sled push (50 m)</td><td>102 kg</td><td>152 kg</td></tr>
+<tr><td>Sled pull (50 m)</td><td>78 kg</td><td>103 kg</td></tr>
+<tr><td>Farmers carry (200 m)</td><td>2 × 16 kg</td><td>2 × 24 kg</td></tr>
+<tr><td>Sandbag lunges (100 m)</td><td>10 kg</td><td>20 kg</td></tr>
+<tr><td>Wall balls (100)</td><td>4 kg</td><td>6 kg</td></tr>
+</tbody>
+</table>
+<p>São os pesos do Open feminino e do Open masculino, do site oficial. Nas duplas Pro, as cargas são maiores. A tabela completa, com as categorias individuais, está em <a href="/blog/estacoes-do-hyrox">estações do Hyrox</a>.</p>
+
+<h2>Dupla, revezamento ou individual?</h2>
+<table>
+<thead><tr><th></th><th>Corrida</th><th>Estações</th></tr></thead>
+<tbody>
+<tr><td>Individual</td><td>8 km</td><td>As oito, sozinho</td></tr>
+<tr><td>Dupla</td><td>8 km, os dois juntos</td><td>Divididas entre os dois</td></tr>
+<tr><td>Revezamento (4 pessoas)</td><td>2 km cada</td><td>Duas para cada um</td></tr>
+</tbody>
+</table>
+<p>Quem quer correr os 8 km na estreia sem fazer as oito estações sozinho: dupla. Quem ainda não corre 8 km, o revezamento. Quem já fez a prova e quer saber do que é capaz sozinho, o individual.</p>
+
+<h2>Como dividir as estações</h2>
+<ul>
+<li><strong>Blocos curtos e alternados</strong> funcionam melhor que metade-metade: 25 wall balls para cada, 250 m de SkiErg e de remo para cada. Ninguém chega ao limite, e quem descansa volta inteiro.</li>
+<li><strong>Pelo ponto forte:</strong> quem tem mais força pega mais trenó e farmers carry; quem tem mais fôlego, mais SkiErg, remo e burpee broad jump.</li>
+<li><strong>Na mista:</strong> como o peso é o do Open masculino em todas as estações, a divisão costuma pender para quem tem mais força nos trenós.</li>
+<li><strong>Combine antes e não mude no dia.</strong> Discutir divisão no meio da Roxzone custa tempo.</li>
+</ul>
+
+<h2>A corrida é a parte que vocês dividem menos</h2>
+<p>Os 8 km são dos dois, e a dupla corre no ritmo de quem estiver mais cansado. Se um corre bem mais que o outro, o mais rápido pode pegar uma parte maior das estações para o outro chegar à corrida mais descansado. Treinar corrida juntos, no mesmo ritmo, é o que mais evita surpresa.</p>
+
+<h2>Treino de Hyrox em dupla</h2>
+<p>Um treino para fazer a dois, uma vez por semana nas semanas de preparação:</p>
+<ol>
+<li><strong>Aquecimento:</strong> 10 minutos de corrida leve juntos.</li>
+<li><strong>4 rodadas:</strong> 1 km de corrida juntos + 50 wall balls divididos em blocos de 10 + 500 m de remo divididos em 250 m para cada.</li>
+<li><strong>Depois:</strong> 3 × (200 m de farmers carry, 100 m cada) com 2 minutos de pausa.</li>
+</ol>
+<p>Cronometrem o tempo de cada estação: é o número que diz se a divisão está boa. A planilha de 8 semanas está em <a href="/blog/treino-de-hyrox">treino de Hyrox</a>.</p>
+
+<h2>Preparação com acompanhamento</h2>
+<p>Numa dupla, o plano não é o de uma pessoa vezes dois: cada um tem um ponto fraco, e a divisão das estações depende disso. Na preparação em dupla, eu olho o desempenho de cada um nos simulados e ajusto a divisão e o treino até a prova. Veja como funciona a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a>.</p>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/estacoes-do-hyrox">Estações do Hyrox: ordem, pesos e técnica</a></li>
+<li><a href="/blog/treino-de-hyrox">Treino de Hyrox: planilha de 8 semanas</a></li>
+<li><a href="/blog/hyrox-brasil-2026">Calendário do Hyrox no Brasil</a></li>
+<li><a href="/blog/hyrox-pft">Hyrox PFT: o teste físico dos Training Clubs</a></li>
+</ul>
+
+<h2>Fontes</h2>
+<ul>
+${FONTE_FORMATO}
+<li><a href="https://hyrox.com/rulebook/" target="_blank" rel="noopener noreferrer">HYROX — Doubles Rulebook (oficial)</a></li>
 </ul>`,
   },
 ];

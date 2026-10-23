@@ -45,6 +45,7 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   // com a Calculadora de Tempo; Hyrox x CrossFit, com a de calorias.
   "tenis-para-hyrox": "Escolha de tênis e roupa para a prova: o leitor sai sabendo o que testar no treino, sem conta na cabeça; as calculadoras de Hyrox vão por link no texto.",
   "hyrox-pft": "Explica o teste físico dos Training Clubs e a tabela de tempo por categoria; o leitor sai com o formato do teste, e a conta da prova inteira vai por link para a Calculadora de Tempo.",
+  "alimentacao-para-hyrox": "O que comer antes, durante e depois da prova: as quantidades por quilo vêm numa tabela no texto, e a Calculadora de Cafeína, a de Creatina e a de Calorias no Hyrox vão por link.",
   "hyrox-brasil-2026": "Calendário de provas: o leitor sai com data, local e como se inscrever, sem conta na cabeça; a preparação vai por link para a planilha de treino.",
   "quanto-custa-um-personal-trainer": "A conta do mês (valor da sessão × treinos × 4,3) cabe numa tabela no texto; nenhuma ferramenta do site calcula preço de serviço.",
   "diferenca-entre-instrutor-de-academia-e-personal-trainer": "Comparação de funções e formação: o leitor sai sabendo quem é quem, sem conta na cabeça.",
