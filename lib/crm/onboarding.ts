@@ -33,3 +33,28 @@ export function tarefasDeOnboarding(inicio: string): TarefaOnboarding[] {
     due_at: dataDoCheckIn(inicio, dia),
   }));
 }
+
+/**
+ * Primeiros envios: o que o Montinho manda assim que fecha o aluno, antes
+ * do primeiro treino. Pedido dele em 23/10/2026.
+ *
+ * Mesmo tipo das tarefas de check-in ("onboarding"), para sair junto no
+ * cancelamento e não precisar de migração; o que separa um do outro é o
+ * título, que vem desta lista. Prazo: o próprio dia do fechamento.
+ */
+export const ENVIOS_INICIAIS = [
+  "Enviar anamnese",
+  "Enviar vídeo de avaliação de fotos",
+  "Enviar acesso ao app",
+  "Enviar tutorial de como usar o app",
+  "Enviar instruções de treino",
+] as const;
+
+export interface TarefaEnvio { tipo: "onboarding"; titulo: string; due_at: string; priority: "alta" }
+
+export function tarefasDeEnvio(inicio: string): TarefaEnvio[] {
+  const due = dataDoCheckIn(inicio, 0);
+  return ENVIOS_INICIAIS.map((titulo) => ({ tipo: "onboarding", titulo, due_at: due, priority: "alta" }));
+}
+
+export const ehEnvioInicial = (titulo: string) => (ENVIOS_INICIAIS as readonly string[]).includes(titulo);

@@ -6,9 +6,10 @@ import { mensagemPara } from "@/lib/crm/copy";
 import { ehContratoPacote } from "@/lib/crm/visao";
 import { ehEstimado, ltvPorConfianca, mrrDoContrato, diasEntre } from "@/lib/crm/metricas";
 import { Badge, Btn, Campo, Card, Detalhes, Input, Pagina, Select, Stat, Tabela, Textarea, brl, dataBr, dataHoraBr, dataInput } from "@/components/crm/ui";
-import { cancelarCliente, criarTarefa, definirPacote, gerarCodigoIndicacao, marcarRecebido, registrarAtividade, registrarReceita, removerAula, renovarContrato } from "../../actions";
+import { cancelarCliente, concluirTarefa, criarEnviosIniciais, criarTarefa, definirPacote, gerarCodigoIndicacao, marcarRecebido, registrarAtividade, registrarReceita, removerAula, renovarContrato } from "../../actions";
 import { descreverRitmo, formatarDatas, resumoDoPacote, ritmoDoPacote } from "@/lib/crm/aulas";
 import ColarAulas from "@/components/crm/ColarAulas";
+import { ENVIOS_INICIAIS } from "@/lib/crm/onboarding";
 
 export default async function ClientePage({ params }: { params: Promise<{ id: string }> }) {
   const u = await exigirUsuario();
@@ -32,6 +33,13 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
   const ritmo = ritmoDoPacote(aulas.map((a) => a.data), pacote.restantes);
   const meses = diasEntre(c.first_purchase_at, c.cancelled_at ?? new Date().toISOString()) / 30.44;
   const ro = u.role === "readonly";
+  // Primeiros envios: a tarefa mais recente de cada item (aberta ou feita).
+  const envios = ENVIOS_INICIAIS.map((titulo) => ({
+    titulo,
+    tarefa: b.tarefas.filter((t) => t.client_id === c.id && t.tipo === "onboarding" && t.titulo === titulo).sort((a, z) => z.created_at.localeCompare(a.created_at))[0] ?? null,
+  }));
+  const enviados = envios.filter((e) => e.tarefa?.completed_at).length;
+  const faltaCriar = envios.some((e) => !e.tarefa);
   const refUrl = contato.referral_code ? `https://www.montinhopersonal.com.br/r/${contato.referral_code}` : null;
   return (
     <Pagina titulo={contato.nome} sub={<span><Badge tom={c.status === "ativo" ? "bom" : "ruim"}>{c.status}</Badge> · cliente desde {dataBr(c.first_purchase_at)} · origem {cat.fontes.find((f) => f.code === c.source_code)?.nome ?? c.source_code}</span>}
@@ -155,6 +163,25 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
           </Card>
         </div>
         <div className="space-y-4">
+          <Card titulo="Primeiros envios">
+            <p className="mb-2 text-sm text-zinc-400">{enviados} de {ENVIOS_INICIAIS.length} enviados</p>
+            <ul className="space-y-1.5">
+              {envios.map((e) => (
+                <li key={e.titulo} className="flex items-center justify-between gap-2 text-sm">
+                  <span className={e.tarefa?.completed_at ? "text-zinc-500 line-through" : ""}>{e.tarefa?.completed_at ? "✓ " : "○ "}{e.titulo.replace(/^Enviar /, "")}</span>
+                  {e.tarefa?.completed_at
+                    ? <span className="shrink-0 text-xs text-zinc-500">{dataBr(e.tarefa.completed_at)}</span>
+                    : e.tarefa && !ro
+                      ? <form action={concluirTarefa}><input type="hidden" name="task_id" value={e.tarefa.id} /><Btn pequeno tom="ghost">Enviei</Btn></form>
+                      : null}
+                </li>
+              ))}
+            </ul>
+            {faltaCriar && !ro && (
+              <form action={criarEnviosIniciais} className="mt-3"><input type="hidden" name="client_id" value={c.id} /><Btn pequeno tom="secundario">Criar checklist de envios</Btn></form>
+            )}
+            {wa && enviados < ENVIOS_INICIAIS.length && <p className="mt-2 text-xs text-zinc-500">Mande pelo botão WhatsApp lá em cima e marque aqui.</p>}
+          </Card>
           <Card titulo="Contato">
             <ul className="space-y-1 text-sm"><li>{contato.telefone ?? "—"}</li><li>{contato.email ?? "—"}</li><li>{contato.instagram ?? ""}</li><li className="text-zinc-500">{contato.cidade ?? ""}</li></ul>
             <p className="mt-2 text-xs text-zinc-500">Editar dados: pela ficha do lead.</p>
