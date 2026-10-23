@@ -5,6 +5,7 @@ import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import { QUESTIONS, TOTAL_QUESTIONS } from "@/lib/diagnostico";
 import DiagnosticoQuiz from "@/components/diagnostico/DiagnosticoQuiz";
 import Trilha from "@/components/ferramentas/Trilha";
+import VideoCaminho from "@/components/video/VideoCaminho";
 
 export const metadata: Metadata = {
   title: "Diagnóstico Montinho: Descubra Sua Estratégia de Treino",
@@ -352,6 +353,7 @@ export default function DiagnosticoPage() {
           </div>
         </div>
       </section>
+      <VideoCaminho trilha="treino" pagina="diagnostico" passo={1} />
     </>
   );
 }

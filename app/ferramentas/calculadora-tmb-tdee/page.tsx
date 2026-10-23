@@ -9,7 +9,7 @@ import Compartilhar from "@/components/share/Compartilhar";
 import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import VideoMedido from "@/components/blog/VideoMedido";
 import { VIDEO_TDEE_ID, VIDEO_TDEE_SLUG, VIDEO_TDEE_TITULO } from "@/lib/video/tdee";
-import VideoCaminhoDieta from "@/components/video/VideoCaminhoDieta";
+import VideoCaminho from "@/components/video/VideoCaminho";
 
 /**
  * Calculadora de TMB e TDEE — página própria.
@@ -279,7 +279,7 @@ export default function CalculadoraTmbTdeePage() {
           </div>
         </section>
       )}
-      <VideoCaminhoDieta pagina="calculadora-tmb-tdee" passo={1} />
+      <VideoCaminho trilha="dieta" pagina="calculadora-tmb-tdee" passo={1} />
     </>
   );
 }

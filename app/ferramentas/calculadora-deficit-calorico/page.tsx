@@ -17,7 +17,7 @@ import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import VideoMedido from "@/components/blog/VideoMedido";
 import Trilha from "@/components/ferramentas/Trilha";
 import Compartilhar from "@/components/share/Compartilhar";
-import VideoCaminhoDieta from "@/components/video/VideoCaminhoDieta";
+import VideoCaminho from "@/components/video/VideoCaminho";
 
 /**
  * Página própria da calculadora de déficit calórico.
@@ -349,7 +349,7 @@ export default function CalculadoraDeficitPage() {
           <VideoMedido slug="calculadora-deficit-calorico" seletor="[data-video-medido]" />
         </div>
       </section>
-      <VideoCaminhoDieta pagina="calculadora-deficit-calorico" passo={2} />
+      <VideoCaminho trilha="dieta" pagina="calculadora-deficit-calorico" passo={2} />
     </>
   );
 }

@@ -5,6 +5,7 @@ import { revisaoWhatsAppUrl } from "@/lib/revisao";
 import RevisaoCTA from "@/components/revisao/RevisaoCTA";
 import Trilha from "@/components/ferramentas/Trilha";
 import VistaMedida from "@/components/ui/VistaMedida";
+import VideoCaminho from "@/components/video/VideoCaminho";
 
 export const metadata: Metadata = {
   title: "Revisão Gratuita de Execução de Exercícios",
@@ -226,6 +227,7 @@ export default function RevisaoDeExecucaoPage() {
           </div>
         </div>
       </section>
+      <VideoCaminho trilha="treino" pagina="revisao-de-execucao" passo={5} />
     </>
   );
 }

@@ -5,6 +5,7 @@ import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import { EVIDENCE, EVIDENCE_REVIEWED_AT } from "@/lib/rotina/evidence";
 import RotinaQuiz from "@/components/rotina/RotinaQuiz";
 import Trilha from "@/components/ferramentas/Trilha";
+import VideoCaminho from "@/components/video/VideoCaminho";
 
 export const metadata: Metadata = {
   title: "Treino Para Minha Rotina: Descubra Sua Melhor Divisão",
@@ -386,6 +387,7 @@ export default function TreinoParaMinhaRotinaPage() {
           </details>
         </div>
       </section>
+      <VideoCaminho trilha="treino" pagina="treino-para-minha-rotina" passo={2} />
     </>
   );
 }

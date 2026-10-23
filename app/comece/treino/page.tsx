@@ -4,6 +4,7 @@ import { SITE_URL } from "@/lib/blog";
 import { TRILHAS } from "@/lib/ferramentas/trilha";
 import { BORDOES } from "@/lib/bordoes";
 import RastreioComece from "@/components/comece/RastreioComece";
+import VideoCaminho from "@/components/video/VideoCaminho";
 
 /**
  * /comece/treino — a LP do caminho do treino.
@@ -189,6 +190,8 @@ export default function ComeceTreinoPage() {
           </p>
         </div>
       </section>
+
+      <VideoCaminho trilha="treino" pagina="comece-treino" />
 
       {/* ── Fechamento ─────────────────────────────────────────────── */}
       <section className="py-16 bg-black">

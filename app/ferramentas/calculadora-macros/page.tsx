@@ -15,7 +15,7 @@ import {
 import CalculadoraMacros from "@/components/macros/CalculadoraMacros";
 import Trilha from "@/components/ferramentas/Trilha";
 import Compartilhar from "@/components/share/Compartilhar";
-import VideoCaminhoDieta from "@/components/video/VideoCaminhoDieta";
+import VideoCaminho from "@/components/video/VideoCaminho";
 
 /**
  * Página própria da calculadora de macros.
@@ -325,7 +325,7 @@ export default function CalculadoraMacrosPage() {
           </div>
         </div>
       </section>
-      <VideoCaminhoDieta pagina="calculadora-macros" passo={3} />
+      <VideoCaminho trilha="dieta" pagina="calculadora-macros" passo={3} />
     </>
   );
 }

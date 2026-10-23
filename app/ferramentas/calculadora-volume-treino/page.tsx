@@ -8,6 +8,7 @@ import { FAIXAS, FONTES, NOTA_FREQUENCIA, NOTA_INDIVIDUALIDADE, NOTA_SERIE_VALID
 import CalculadoraVolume from "@/components/volume/CalculadoraVolume";
 import Trilha from "@/components/ferramentas/Trilha";
 import Compartilhar from "@/components/share/Compartilhar";
+import VideoCaminho from "@/components/video/VideoCaminho";
 
 /**
  * Página própria da Calculadora de Volume.
@@ -345,6 +346,7 @@ export default function CalculadoraVolumePage() {
           </div>
         </div>
       </section>
+      <VideoCaminho trilha="treino" pagina="calculadora-volume-treino" passo={3} />
     </>
   );
 }

@@ -450,6 +450,27 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     ferramenta: { href: "/ferramentas/calculadora-tmb-tdee", nome: "Começar pelo passo 1: Calculadora de TMB e TDEE" },
     publicadoEm: "2026-10-22",
   },
+  {
+    id: "BoXag2fY0u0",
+    slug: "caminho-do-treino-em-5-passos",
+    titulo: "Como montar seu treino de musculação em 5 passos",
+    metaTitle: "Como Montar Seu Treino de Musculação em 5 Passos (Vídeo)",
+    descricao:
+      "O Caminho do Treino do Montinho em 5 passos gratuitos e sem cadastro: o diagnóstico do seu perfil, a divisão que cabe na sua semana, o volume por músculo, a carga certa na barra e a revisão da sua execução em vídeo.",
+    chamada: "Não falta informação sobre treino. Falta a ordem: diagnóstico, rotina, volume, carga e execução, em menos de 2 minutos.",
+    texto: [
+      "Um vídeo diz uma coisa, outro diz o contrário, e você continua sem saber como treinar. O que muda não é mais informação, é a ordem das peças. O Caminho do Treino são cinco passos gratuitos, sem cadastro, em sequência.",
+      "Passo um: o diagnóstico, nove perguntas sobre a sua rotina e o seu objetivo que mostram o seu perfil de treino. Passo dois: a divisão que cabe na sua semana, pelos dias e pelo tempo que você realmente tem, seja Full Body, Upper/Lower ou ABC. Passo três: o volume, quantas séries cada músculo recebe na semana. Passo quatro: a carga, com o 1RM estimado a partir do peso e das repetições que você já faz, as porcentagens e as anilhas de cada lado da barra. Passo cinco: a execução, uma série gravada e enviada pelo WhatsApp, que o Montinho assiste pessoalmente e devolve com os principais pontos.",
+      "E não se compare com ninguém: cada um tem a sua genética, a sua rotina e a sua história. As ferramentas dão uma orientação inicial; o que importa é achar um jeito de treinar que dê para seguir pelo resto da vida. As telas do vídeo usam números de exemplo.",
+    ],
+    artigos: [
+      { href: "/comece/treino", nome: "O Caminho do Treino, passo a passo" },
+      { href: "/blog/melhor-treino-para-iniciantes-academia", nome: "Melhor treino para iniciantes na academia" },
+      { href: "/blog/quantas-series-para-hipertrofia", nome: "Quantas séries para hipertrofia" },
+    ],
+    ferramenta: { href: "/diagnostico", nome: "Começar pelo passo 1: Diagnóstico Montinho" },
+    publicadoEm: "2026-10-22",
+  },
 ];
 
 const porId = new Map(VIDEOS_CANAL.map((v) => [v.id, v]));

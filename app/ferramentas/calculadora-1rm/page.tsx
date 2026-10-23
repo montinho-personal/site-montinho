@@ -16,6 +16,7 @@ import {
 import CalculadoraOneRM from "@/components/onerm/CalculadoraOneRM";
 import Trilha from "@/components/ferramentas/Trilha";
 import Compartilhar from "@/components/share/Compartilhar";
+import VideoCaminho from "@/components/video/VideoCaminho";
 
 /**
  * Página própria da calculadora de 1RM.
@@ -300,6 +301,7 @@ export default function CalculadoraOneRMPage() {
           </div>
         </div>
       </section>
+      <VideoCaminho trilha="treino" pagina="calculadora-1rm" passo={4} />
     </>
   );
 }
