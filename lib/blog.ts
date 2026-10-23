@@ -119453,7 +119453,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 
 <h2>Resumo</h2>
 <p>Hyrox é uma prova de 8 km de corrida com oito estações no meio. Uma prova média gasta cerca de 1.025 kcal para 70 kg, e a corrida responde por mais da metade do tempo e do gasto. Para a primeira prova: base de corrida, força duas vezes por semana, treinos de corrida cansada e, se quiser estrear com calma, a categoria em dupla.</p>
-<p>Monto a preparação para o Hyrox — corrida, força e estações na semana certa — para alunos em Alphaville, Barueri e Santana de Parnaíba, e pela <a href="/consultoria-online">consultoria online</a> para o Brasil todo. <a href="/contato">Agende uma avaliação</a>.</p>
+<p>Monto a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a> — corrida, força e estações na semana certa — para alunos em Alphaville, Barueri e Santana de Parnaíba, e pela <a href="/consultoria-online">consultoria online</a> para o Brasil todo. <a href="/contato">Agende uma avaliação</a>.</p>
 
 <h2>Leia também</h2>
 <ul>
@@ -120222,7 +120222,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <p>Para ter uma ideia do esforço total, a <a href="/ferramentas/calculadora-calorias-hyrox">calculadora de calorias do Hyrox</a> parte do seu tempo de prova. E os tempos de quem correu em São Paulo estão no <a href="/blog/resultado-hyrox-sao-paulo-2026">resultado do Hyrox São Paulo 2026</a>.</p>
 
 <h2>Preparação com acompanhamento</h2>
-<p>O que mais atrapalha quem se prepara sozinho não é falta de vontade: é a semana em que a corrida e a força caem no mesmo dia, a perna chega cansada no treino seguinte e o ritmo de prova nunca é testado. Eu monto a preparação para o Hyrox (corrida, força e estações na semana certa) e ajusto conforme o que acontece em cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>.</p>
+<p>O que mais atrapalha quem se prepara sozinho não é falta de vontade: é a semana em que a corrida e a força caem no mesmo dia, a perna chega cansada no treino seguinte e o ritmo de prova nunca é testado. Eu monto a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a> (corrida, força e estações na semana certa) e ajusto conforme o que acontece em cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>.</p>
 
 <h2>Leia também</h2>
 <ul>
@@ -120312,7 +120312,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <p>Para ter uma ideia do esforço de prova, a calculadora acima parte do seu tempo e do seu peso. Os tempos de quem correu em São Paulo estão no <a href="/blog/resultado-hyrox-sao-paulo-2026">resultado do Hyrox São Paulo 2026</a>.</p>
 
 <h2>Preparação com acompanhamento</h2>
-<p>O que mais atrapalha quem se prepara sozinho é a semana em que corrida e força caem no mesmo dia, a perna chega cansada no treino seguinte e o ritmo de prova nunca é testado. Eu monto a preparação para o Hyrox e ajusto conforme o que acontece em cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente na Arena 18, em condomínios e em casa, como está em <a href="/onde-atendo">onde atendo</a>. Os boxes deste guia estão aqui como referência de onde treinar as estações.</p>
+<p>O que mais atrapalha quem se prepara sozinho é a semana em que corrida e força caem no mesmo dia, a perna chega cansada no treino seguinte e o ritmo de prova nunca é testado. Eu monto a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a> e ajusto conforme o que acontece em cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente na Arena 18, em condomínios e em casa, como está em <a href="/onde-atendo">onde atendo</a>. Os boxes deste guia estão aqui como referência de onde treinar as estações.</p>
 
 <h2>Leia também</h2>
 <ul>
@@ -120397,7 +120397,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <p>Para ter uma ideia do esforço de prova, a calculadora acima parte do seu tempo e do seu peso.</p>
 
 <h2>Preparação com acompanhamento</h2>
-<p>O que mais atrapalha quem se prepara sozinho é a semana em que corrida e força caem no mesmo dia e o ritmo de prova nunca é testado. Eu monto a preparação para o Hyrox e ajusto conforme o que acontece em cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente na Arena 18, em condomínios e em casa, como está em <a href="/onde-atendo">onde atendo</a>. O OBOX está aqui como referência de onde treinar as estações.</p>
+<p>O que mais atrapalha quem se prepara sozinho é a semana em que corrida e força caem no mesmo dia e o ritmo de prova nunca é testado. Eu monto a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a> e ajusto conforme o que acontece em cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente na Arena 18, em condomínios e em casa, como está em <a href="/onde-atendo">onde atendo</a>. O OBOX está aqui como referência de onde treinar as estações.</p>
 
 <h2>Leia também</h2>
 <ul>
@@ -120483,7 +120483,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <p>Para ter uma ideia do esforço de prova, a calculadora acima parte do seu tempo e do seu peso.</p>
 
 <h2>Preparação com acompanhamento</h2>
-<p>Na Aldeia, o que mais derruba a preparação é a distância: a semana em que descer a serra não cabe e o treino some junto. Eu monto a preparação para o Hyrox em casa ou no espaço fitness do condomínio, com o que existe ali, e encaixo as sessões de box quando elas fazem diferença. Também dá para fazer pela <a href="/consultoria-online">consultoria online</a>. Os boxes deste guia estão aqui como referência de onde treinar as estações; os locais em que eu atendo estão em <a href="/onde-atendo">onde atendo</a>.</p>
+<p>Na Aldeia, o que mais derruba a preparação é a distância: a semana em que descer a serra não cabe e o treino some junto. Eu monto a preparação para o Hyrox em casa ou no espaço fitness do condomínio, com o que existe ali, e encaixo as sessões de box quando elas fazem diferença. Também dá para fazer pela <a href="/consultoria-online">consultoria online</a>; veja como funciona a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a>. Os boxes deste guia estão aqui como referência de onde treinar as estações; os locais em que eu atendo estão em <a href="/onde-atendo">onde atendo</a>.</p>
 
 <h2>Leia também</h2>
 <ul>

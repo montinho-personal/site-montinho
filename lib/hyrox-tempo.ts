@@ -186,4 +186,4 @@ export const NOTA_TEMPO =
 /* ───────────────────────── Artigos ───────────────────────── */
 
 /** Artigos que EMBUTEM a calculadora de tempo, logo depois da primeira seção. */
-export const ARTIGOS_COM_CALCULADORA_TEMPO_HYROX: string[] = ["treino-de-hyrox", "estacoes-do-hyrox"];
+export const ARTIGOS_COM_CALCULADORA_TEMPO_HYROX: string[] = ["treino-de-hyrox", "estacoes-do-hyrox", "hyrox-em-dupla"];
