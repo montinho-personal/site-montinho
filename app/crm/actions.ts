@@ -11,7 +11,7 @@
  *  - experimental realizada cria tarefa de proposta; no-show cria reativação.
  */
 import { GRUPOS_FOLLOW_UP } from "@/lib/crm/ciclo";
-import { dataDoCheckIn, tarefasDeOnboarding } from "@/lib/crm/onboarding";
+import { ENVIOS_INICIAIS, dataDoCheckIn, tarefasDeEnvio, tarefasDeOnboarding } from "@/lib/crm/onboarding";
 import { lerDatas } from "@/lib/crm/aulas";
 import { FUSO } from "@/lib/crm/copy";
 import { etapaProtegida, podeDesfazerPerdido, type SnapshotPerda } from "@/lib/crm/perda";
@@ -393,7 +393,7 @@ export async function marcarGanho(fd: FormData) {
   // (um ganho registrado duas vezes não pode virar seis tarefas).
   const { data: abertas } = await sb.from("crm_tasks").select("id").eq("client_id", clientId).eq("tipo", "onboarding").is("completed_at", null).limit(1);
   if (!abertas?.length) {
-    for (const t of tarefasDeOnboarding(data)) {
+    for (const t of [...tarefasDeEnvio(data), ...tarefasDeOnboarding(data)]) {
       await tarefa(sb, u.id, { contact_id: opp.contact_id, client_id: clientId, tipo: t.tipo, titulo: t.titulo, due_at: t.due_at, priority: t.priority });
     }
   }
@@ -484,6 +484,24 @@ export async function criarTarefa(fd: FormData) {
   if (leadId) await sb.from("crm_leads").update({ next_action: s(fd, "titulo") ?? "Follow-up", next_action_at: due }).eq("id", leadId);
   revalidarTudo([leadId ? `/crm/leads/${leadId}` : ""]);
 }
+/**
+ * Checklist de primeiros envios para quem já era cliente antes de ele
+ * existir. Cria só os que faltam.
+ */
+export async function criarEnviosIniciais(fd: FormData) {
+  const u = await exigirEscrita();
+  const sb = await supabaseServer();
+  const clientId = s(fd, "client_id")!;
+  const { data: c } = await sb.from("crm_clients").select("contact_id").eq("id", clientId).single();
+  if (!c) throw new Error("Cliente não encontrado.");
+  const { data: existentes } = await sb.from("crm_tasks").select("titulo").eq("client_id", clientId).eq("tipo", "onboarding").in("titulo", [...ENVIOS_INICIAIS]);
+  const ja = new Set((existentes ?? []).map((t: { titulo: string }) => t.titulo));
+  for (const t of tarefasDeEnvio(hoje())) {
+    if (!ja.has(t.titulo)) await tarefa(sb, u.id, { contact_id: c.contact_id, client_id: clientId, tipo: t.tipo, titulo: t.titulo, due_at: t.due_at, priority: t.priority, origem: "manual" });
+  }
+  revalidarTudo([`/crm/clientes/${clientId}`]);
+}
+
 export async function concluirTarefa(fd: FormData) {
   const u = await exigirEscrita();
   const sb = await supabaseServer();
@@ -495,7 +513,7 @@ export async function concluirTarefa(fd: FormData) {
     const { data: l } = await sb.from("crm_leads").select("first_response_at").eq("id", t.lead_id).single();
     await sb.from("crm_leads").update({ last_contact_at: new Date().toISOString(), first_response_at: l?.first_response_at ?? new Date().toISOString() }).eq("id", t.lead_id);
   }
-  revalidarTudo([t.lead_id ? `/crm/leads/${t.lead_id}` : ""]);
+  revalidarTudo([t.lead_id ? `/crm/leads/${t.lead_id}` : "", t.client_id ? `/crm/clientes/${t.client_id}` : ""]);
 }
 
 // ---------------------------------------------------------------------------

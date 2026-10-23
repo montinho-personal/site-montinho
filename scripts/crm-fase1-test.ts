@@ -3,7 +3,7 @@
  *   npx tsx scripts/crm-fase1-test.ts
  */
 import { cicloDeFollowUps, ehFollowUp, esgotouFollowUps, motivoDecidir } from "../lib/crm/ciclo";
-import { dataDoCheckIn, tarefasDeOnboarding } from "../lib/crm/onboarding";
+import { ENVIOS_INICIAIS, dataDoCheckIn, ehEnvioInicial, tarefasDeEnvio, tarefasDeOnboarding } from "../lib/crm/onboarding";
 import { etapaProtegida, podeDesfazerPerdido } from "../lib/crm/perda";
 
 let falhas = 0;
@@ -58,6 +58,16 @@ bloco("T5. ADIAR — DATAS");
 ok("3 dias a partir de 15/09 = 18/09 às 10h de Brasília", dataDoCheckIn("2026-09-15", 3) === "2026-09-18T13:00:00.000Z", dataDoCheckIn("2026-09-15", 3));
 ok("1 semana a partir de 15/09 = 22/09", dataDoCheckIn("2026-09-15", 7).startsWith("2026-09-22T13:00"));
 ok("data escolhida (01/10) respeitada", dataDoCheckIn("2026-10-01", 0) === "2026-10-01T13:00:00.000Z", dataDoCheckIn("2026-10-01", 0));
+
+bloco("T3a. PRIMEIROS ENVIOS NO DIA DO FECHAMENTO");
+{
+  const es = tarefasDeEnvio("2026-10-23");
+  ok("cinco envios", es.length === 5 && ENVIOS_INICIAIS.length === 5);
+  ok("anamnese, fotos, acesso, tutorial e instruções", /anamnese/.test(es[0].titulo) && /fotos/.test(es[1].titulo) && /acesso/.test(es[2].titulo) && /tutorial/.test(es[3].titulo) && /instruções/.test(es[4].titulo));
+  ok("prazo no próprio dia, 10h de Brasília", es.every((t) => t.due_at === "2026-10-23T13:00:00.000Z"), es[0].due_at);
+  ok("prioridade alta, tipo onboarding (sai junto no cancelamento)", es.every((t) => t.priority === "alta" && t.tipo === "onboarding"));
+  ok("check-in não é confundido com envio", tarefasDeOnboarding("2026-10-23").every((t) => !ehEnvioInicial(t.titulo)) && es.every((t) => ehEnvioInicial(t.titulo)));
+}
 
 bloco("T3. ONBOARDING D+3 / D+10 / D+21");
 {
