@@ -39,3 +39,16 @@ O que observar em 28 dias:
 - se a visão geral por IA de "personal hyrox alphaville" continua citando o site e se `/preparacao-para-hyrox` entra no lugar dos guias;
 - se "hyrox vs crossfit" e "treino de hyrox" passam a ter impressão (no export, 320 e 480 buscas/mês);
 - se a Calculadora de Tempo ganha impressão em "tempo hyrox" / "quanto tempo dura hyrox".
+
+## Lote de 24/10/2026: app de treino
+
+Status: pedir a indexação no Search Console.
+
+| URL | Tipo | Indexada (≈31/10) | 28 dias (≈21/11) |
+|---|---|---|---|
+| /app-de-treino | novo (24/10) | | |
+| /blog/exercicio-que-mais-queima-calorias | novo (23/10) | | |
+
+O que observar em 28 dias:
+- impressões em "app de treino academia", "app de treino gratuito" e "aplicativo de musculação grátis" (no export, 720, 140 e 50 buscas/mês);
+- cliques no botão do app (evento `app_invite_click`, placement `app-de-treino:*`) e cadastros pelo convite SITE-30DIAS no app.
