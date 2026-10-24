@@ -103,6 +103,18 @@ const NAO_PODE = [
   "Treinos para fazer em casa, que ainda estão chegando ao app.",
 ];
 
+/**
+ * Como baixar: o app é web e instalável (não está nas lojas). Os passos são os
+ * mesmos da mensagem de acesso que o app manda aos alunos
+ * (App-Montinho: src/lib/acesso/mensagem.ts), para site e app dizerem igual.
+ */
+const PASSOS_BAIXAR = [
+  { titulo: "1. Abra o convite no navegador", texto: "Toque em “Testar o app grátis”. No Android, use o Chrome; no iPhone, o Safari. Se o link abrir dentro do Instagram ou do YouTube, toque nos 3 pontinhos e escolha abrir no navegador: dentro desses apps não dá para instalar." },
+  { titulo: "2. Crie a sua conta", texto: "Nome, e-mail, WhatsApp e uma senha de pelo menos 8 caracteres. Sem cartão. O e-mail e a senha são o que você vai usar para entrar no app." },
+  { titulo: "3. Instale na tela do celular", texto: "Android (Chrome): toque nos 3 pontinhos (⋮) → “Instalar app” ou “Adicionar à tela inicial”. iPhone (Safari): toque em Compartilhar (o quadrado com a setinha) → “Adicionar à Tela de Início” → “Adicionar”." },
+  { titulo: "4. Entre pelo ícone do Montinho", texto: "Abra o ícone que apareceu na tela inicial e entre com o seu e-mail e a sua senha. A partir daí ele abre como qualquer outro app." },
+];
+
 const NO_TREINO = [
   { titulo: "Carga e repetições em cada série", texto: "Você anota o que fez em cada série. A carga da última vez já vem preenchida, então o treino não para para você lembrar o número." },
   { titulo: "O descanso conta sozinho", texto: "Concluiu a série, o cronômetro do descanso começa. Você não precisa de outro app aberto." },
@@ -142,9 +154,14 @@ const faq = [
       "Por enquanto, os treinos prontos e o Monte com IA são para academia. Os treinos em casa voltam quando a biblioteca tiver os exercícios de casa com vídeo. Se você já treina em casa com halteres, dá para cadastrar o seu treino com os exercícios da biblioteca.",
   },
   {
+    question: "Como baixar o app do Montinho?",
+    answer:
+      "Ele não está na App Store nem na Play Store: você instala pelo navegador. Abra o convite no Chrome (Android) ou no Safari (iPhone) e crie a conta. No Android, toque nos 3 pontinhos (⋮) e em “Instalar app” ou “Adicionar à tela inicial”. No iPhone, toque em Compartilhar (o quadrado com a setinha), “Adicionar à Tela de Início” e “Adicionar”. Depois é só abrir o ícone do Montinho e entrar com o seu e-mail e a sua senha.",
+  },
+  {
     question: "O app funciona no iPhone e no Android?",
     answer:
-      "Funciona nos dois, pelo navegador do celular. Ele não está na App Store nem na Play Store: você abre o link, cria a conta e pode colocar o app na tela inicial para abrir como os outros.",
+      "Funciona nos dois. No Android, pelo Chrome; no iPhone, pelo Safari. Instalado na tela inicial, ele abre como qualquer outro app.",
   },
   {
     question: "O app funciona sem internet?",
@@ -212,7 +229,9 @@ export default function AppDeTreinoPage() {
             Os 30 dias são só do app. Não incluem consultoria: eu não monto um treino para você, não acompanho e não ajusto nesse período.
           </p>
           <BotaoApp onde="app-de-treino:topo">Testar o app grátis por 30 dias</BotaoApp>
-          <p className="text-gray-500 text-sm mt-3">Sem cartão. A conta pede nome, e-mail, WhatsApp e senha.</p>
+          <p className="text-gray-500 text-sm mt-3">
+            Sem cartão. A conta pede nome, e-mail, WhatsApp e senha. <a href="#como-baixar" className={ln}>Como baixar o app</a>
+          </p>
         </div>
       </section>
 
@@ -253,6 +272,28 @@ export default function AppDeTreinoPage() {
             Depois dos 30 dias, a conta fica para consulta: os seus treinos, as medalhas e a Jornada continuam lá. Para voltar a treinar com o
             app, o caminho é virar aluno, no <Link href="/consultoria" className={ln}>acompanhamento</Link>.
           </p>
+        </div>
+      </section>
+
+      <section id="como-baixar" className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className={olho} style={{ color: "#BA9E50" }}>Passo a passo</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4" style={h}>Como baixar o app no celular</h2>
+          <p className="text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
+            O app do Montinho não está na App Store nem na Play Store. Você instala direto pelo navegador, em menos de um minuto, e ele fica
+            na tela inicial como os outros apps.
+          </p>
+          <ol className="grid sm:grid-cols-2 gap-px border border-white/10">
+            {PASSOS_BAIXAR.map((p) => (
+              <li key={p.titulo} className="p-6 border-b border-r border-white/10">
+                <p className="text-white font-semibold mb-2">{p.titulo}</p>
+                <p className="text-gray-300 text-sm leading-relaxed font-light">{p.texto}</p>
+              </li>
+            ))}
+          </ol>
+          <div className="mt-8">
+            <BotaoApp onde="app-de-treino:como-baixar">Abrir o convite e criar a conta</BotaoApp>
+          </div>
         </div>
       </section>
 
