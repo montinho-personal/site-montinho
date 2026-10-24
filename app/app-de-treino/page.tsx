@@ -5,6 +5,7 @@ import { SITE_URL } from "@/lib/blog";
 import { FILOSOFIAS } from "@/lib/filosofia";
 import FAQ from "@/components/ui/FAQ";
 import BotaoApp from "@/components/app/BotaoApp";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 
 /**
  * App de treino — a página do app do Montinho (30 dias grátis).
@@ -212,6 +213,17 @@ export default function AppDeTreinoPage() {
           </p>
           <BotaoApp onde="app-de-treino:topo">Testar o app grátis por 30 dias</BotaoApp>
           <p className="text-gray-500 text-sm mt-3">Sem cartão. A conta pede nome, e-mail, WhatsApp e senha.</p>
+        </div>
+      </section>
+
+      <section className="py-16 bg-black border-b border-white/10" aria-labelledby="video-app">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className={olho} style={{ color: "#BA9E50" }}>Em menos de 2 minutos</p>
+          <h2 id="video-app" className="text-2xl sm:text-3xl font-bold text-white mb-8" style={h}>Veja o app por dentro</h2>
+          <YoutubeShortEmbed videoId="EwvRdG917fY" title="App de treino para academia: 30 dias grátis no app do Montinho — Montinho Personal Trainer" />
+          <p className="mt-6 text-sm">
+            <Link href="/videos/app-de-treino-30-dias-gratis" className="text-gray-400 hover:text-white underline underline-offset-4">Ler o resumo do vídeo</Link>
+          </p>
         </div>
       </section>
 
