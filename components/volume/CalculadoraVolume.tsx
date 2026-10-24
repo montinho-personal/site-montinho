@@ -1,5 +1,6 @@
 "use client";
 
+import ConviteApp from "@/components/app/ConviteApp";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import Compartilhar from "@/components/share/Compartilhar";
@@ -681,6 +682,7 @@ export default function CalculadoraVolume({ placement }: { placement: string }) 
                 .
               </p>
             </div>
+            <ConviteApp variante="volume" onde="ferramenta-volume" />
           </div>
         )}
       </div>

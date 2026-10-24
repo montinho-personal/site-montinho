@@ -1,5 +1,6 @@
 "use client";
 
+import ConviteApp from "@/components/app/ConviteApp";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import Compartilhar from "@/components/share/Compartilhar";
@@ -680,6 +681,7 @@ export default function CalculadoraOneRM({
               resumo={`1RM estimado de ≈ ${arredondaKg(umRM)} kg${exercicio && exercicio !== "Outro" ? ` no ${exercicio.toLowerCase()}` : ""}`}
               placement={placement}
             />
+            <ConviteApp variante="onerm" onde="ferramenta-onerm" />
           </div>
         )}
       </div>

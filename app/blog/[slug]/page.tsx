@@ -110,6 +110,8 @@ import VideoFitChef from "@/components/video/VideoFitChef";
 import VideoTdee from "@/components/video/VideoTdee";
 import VideoApp from "@/components/video/VideoApp";
 import { ARTIGOS_COM_VIDEO_APP_FIM } from "@/lib/video/app";
+import { ARTIGOS_COM_CONVITE_APP } from "@/lib/app-convite";
+import ConviteApp from "@/components/app/ConviteApp";
 import { ARTIGOS_LOCAIS_COM_VIDEO_RECOMECAR } from "@/lib/video/recomecar";
 import LinkFerramentaSimulador from "@/components/simulador/LinkFerramentaSimulador";
 import { ARTIGOS_COM_LINK_SIMULADOR } from "@/lib/simulador/emagrecimento";
@@ -710,6 +712,9 @@ export default async function BlogPost({ params }: Props) {
           {ARTIGOS_COM_CALCULADORA_CARDAPIO.includes(post.slug) && !/youtube(?:-nocookie)?\.com\/embed\//.test(post.content) && <VideoFitChef slug={post.slug} />}
           {ARTIGOS_COM_CALCULADORA_TDEE.includes(post.slug) && !/youtube(?:-nocookie)?\.com\/embed\//.test(post.content) && <VideoTdee slug={post.slug} />}
           {ARTIGOS_COM_VIDEO_APP_FIM.includes(post.slug) && !/youtube(?:-nocookie)?\.com\/embed\//.test(post.content) && <VideoApp variante="presencial" onde={`artigo-${post.slug}`} />}
+          {/* Convite do app (30 dias grátis) nos artigos em que ele resolve o problema
+              do leitor (lib/app-convite.ts). Componente: não mexe no updatedAt. */}
+          {ARTIGOS_COM_CONVITE_APP.includes(post.slug) && <ConviteApp variante="artigo" onde={`artigo-${post.slug}`} />}
 
           {/* Video */}
           {post.slug === "como-prevenir-lesoes-no-treino" && (

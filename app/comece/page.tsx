@@ -7,6 +7,7 @@ import { BORDOES } from "@/lib/bordoes";
 import RastreioComece from "@/components/comece/RastreioComece";
 import Compartilhar from "@/components/share/Compartilhar";
 import VideoCaminho from "@/components/video/VideoCaminho";
+import ConviteApp from "@/components/app/ConviteApp";
 
 /**
  * /comece — a porta de entrada do ecossistema.
@@ -251,6 +252,13 @@ export default function ComecePage() {
       <VideoCaminho trilha="dieta" pagina="comece" />
 
       <VideoCaminho trilha="treino" pagina="comece" />
+
+      {/* O app como a etapa seguinte da trilha de treino (lib/app-convite.ts). */}
+      <section className="py-6 bg-black">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ConviteApp variante="comece" onde="comece" />
+        </div>
+      </section>
 
       {/* ── O bordão que fecha ─────────────────────────────────────── */}
       <section className="py-16 bg-black">

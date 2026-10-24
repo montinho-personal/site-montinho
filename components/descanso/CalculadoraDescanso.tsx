@@ -1,5 +1,6 @@
 "use client";
 
+import ConviteApp from "@/components/app/ConviteApp";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import Link from "next/link";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
@@ -382,6 +383,7 @@ export default function CalculadoraDescanso({ placement = "ferramenta" }: { plac
               Quero organizar meu treino de verdade
             </a>
           </div>
+          <ConviteApp variante="descanso" onde="ferramenta-descanso" />
         </div>
       )}
     </div>
