@@ -33,6 +33,10 @@ import BotaoApp from "@/components/app/BotaoApp";
  *  • o único lembrete é o de treino deixado aberto: a página não promete
  *    lembrete de agenda.
  *
+ * Pedido do Montinho (24/10/2026): deixar claro que o app é dos alunos dele,
+ * que ele libera 30 dias só do APP para a pessoa testar, e que isso não
+ * inclui consultoria. A página diz o que a pessoa pode e não pode fazer.
+ *
  * Fica de fora (regra do AGENTS.md): "app de treino para personal" e
  * "prescrição" (intenção de quem é personal), nomes de outros profissionais
  * e marcas, corrida e tiro (sugestão de pauta).
@@ -77,6 +81,27 @@ const PRONTOS: Array<{ nome: string; chamada: string }> = [
   { nome: "Rotina Era de Ouro", chamada: "6 dias, a divisão clássica dos campeões" },
 ];
 
+/** O que o visitante usa (conferido no app em 24/10/2026). */
+const PODE = [
+  "Escolher um dos treinos prontos e começar na hora.",
+  "Colocar o treino que você já faz, exercício por exercício, ou mandar um print, foto ou PDF dele.",
+  "Montar um treino com a IA do app.",
+  "Fazer um treino livre, sem ficha, e salvar para repetir.",
+  "Registrar carga e repetições em cada série, com o descanso contando sozinho.",
+  "Ver a sua evolução: constância, cargas que subiram e um mês comparado com o outro.",
+  "Registrar medidas.",
+  "Ganhar medalhas, andar na Jornada do Chalalá e entrar no ranking de troféus.",
+  "Convidar amigos e ganhar mais dias grátis.",
+];
+/** O que é da consultoria, não do app. */
+const NAO_PODE = [
+  "Avaliação inicial e anamnese comigo.",
+  "Um treino montado por mim para o seu objetivo e a sua rotina.",
+  "Acompanhamento: eu olhando os seus registros e ajustando o treino.",
+  "Correção da sua execução por vídeo.",
+  "Treinos para fazer em casa, que ainda estão chegando ao app.",
+];
+
 const NO_TREINO = [
   { titulo: "Carga e repetições em cada série", texto: "Você anota o que fez em cada série. A carga da última vez já vem preenchida, então o treino não para para você lembrar o número." },
   { titulo: "O descanso conta sozinho", texto: "Concluiu a série, o cronômetro do descanso começa. Você não precisa de outro app aberto." },
@@ -88,7 +113,12 @@ const faq = [
   {
     question: "O app do Montinho é gratuito?",
     answer:
-      "Os primeiros 30 dias são grátis e não pedem cartão: você cria a conta com nome, e-mail, WhatsApp e senha. Depois dos 30 dias, a conta fica para consulta, com os seus treinos, medalhas e a Jornada guardados. Para voltar a treinar com o app, você fala com o Montinho.",
+      "O app é dos alunos do Montinho. Ele libera 30 dias grátis para você testar, sem cartão: a conta pede nome, e-mail, WhatsApp e senha. Depois dos 30 dias, a conta fica para consulta, com os seus treinos, medalhas e a Jornada guardados. Para voltar a treinar com o app, o caminho é virar aluno.",
+  },
+  {
+    question: "Os 30 dias grátis incluem consultoria?",
+    answer:
+      "Não. Os 30 dias são só do aplicativo, para você usar e ver o que achou. Avaliação, treino montado pelo Montinho para você, acompanhamento, ajustes e correção de execução fazem parte da consultoria, que é contratada à parte.",
   },
   {
     question: "Qual é o melhor aplicativo gratuito para treino?",
@@ -168,13 +198,17 @@ export default function AppDeTreinoPage() {
 
       <section className="pt-20 pb-16 bg-black border-b border-white/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className={olho} style={{ color: "#BA9E50" }}>App do Montinho · 30 dias grátis</p>
+          <p className={olho} style={{ color: "#BA9E50" }}>O app dos alunos do Montinho · 30 dias grátis</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6" style={h}>
             App de treino para academia, com treino pronto e 30 dias grátis
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
-            Um aplicativo de musculação feito por personal trainer: você chega na academia sabendo o que fazer, anota carga e repetições em cada série e vê, semana a semana, se a carga está
-            subindo ou se parou. Se ainda não tem treino, escolhe um pronto. Se já tem, coloca o seu.
+            Este é o aplicativo de musculação que os meus alunos usam no dia a dia. Eu libero 30 dias de acesso para você usar o app e ver o
+            que achou: chegar na academia sabendo o que fazer, anotar carga e repetições em cada série e ver, semana a semana, se a carga está
+            subindo ou se parou.
+          </p>
+          <p className="text-gray-400 leading-relaxed mb-8 max-w-3xl">
+            Os 30 dias são só do app. Não incluem consultoria: eu não monto um treino para você, não acompanho e não ajusto nesse período.
           </p>
           <BotaoApp onde="app-de-treino:topo">Testar o app grátis por 30 dias</BotaoApp>
           <p className="text-gray-500 text-sm mt-3">Sem cartão. A conta pede nome, e-mail, WhatsApp e senha.</p>
@@ -182,6 +216,35 @@ export default function AppDeTreinoPage() {
       </section>
 
       <section className="py-16 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className={olho} style={{ color: "#BA9E50" }}>Antes de criar a conta</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4" style={h}>Os 30 dias grátis são do app, não da consultoria</h2>
+          <p className="text-gray-300 leading-relaxed font-light mb-8 max-w-3xl">
+            O app é exclusivo dos meus alunos. O acesso de 30 dias existe para você conhecer a ferramenta por dentro, treinar com ela e decidir
+            se ela faz sentido para você. É isso que está e o que não está incluído:
+          </p>
+          <div className="grid sm:grid-cols-2 gap-px border border-white/10">
+            <div className="p-6 border-b border-r border-white/10">
+              <p className="text-white font-semibold mb-3">✓ O que você pode fazer nos 30 dias</p>
+              <ul className="space-y-2 text-gray-300 text-sm leading-relaxed font-light">
+                {PODE.map((t) => <li key={t}>{t}</li>)}
+              </ul>
+            </div>
+            <div className="p-6 border-b border-r border-white/10">
+              <p className="text-white font-semibold mb-3">✕ O que não está incluído</p>
+              <ul className="space-y-2 text-gray-300 text-sm leading-relaxed font-light">
+                {NAO_PODE.map((t) => <li key={t}>{t}</li>)}
+              </ul>
+            </div>
+          </div>
+          <p className="text-gray-400 text-sm leading-relaxed mt-6 max-w-3xl">
+            Depois dos 30 dias, a conta fica para consulta: os seus treinos, as medalhas e a Jornada continuam lá. Para voltar a treinar com o
+            app, o caminho é virar aluno, no <Link href="/consultoria" className={ln}>acompanhamento</Link>.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-16 border-t border-white/10 bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className={olho} style={{ color: "#BA9E50" }}>Na academia</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8" style={h}>O que o app faz no seu treino</h2>
@@ -218,7 +281,7 @@ export default function AppDeTreinoPage() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-6" style={h}>Já tem um treino? Coloque o seu no app</h2>
           <ul className="space-y-4 text-gray-300 leading-relaxed font-light max-w-3xl">
             <li><strong className="text-white font-semibold">Exercício por exercício:</strong> você monta com os exercícios da biblioteca, com séries, repetições e descanso.</li>
-            <li><strong className="text-white font-semibold">Por print, foto ou PDF:</strong> você manda o treino que já tem e o app tenta ler na hora. Você confere antes de salvar; quando não dá para ler, o arquivo vai para o Montinho montar.</li>
+            <li><strong className="text-white font-semibold">Por print, foto ou PDF:</strong> você manda o treino que já tem e o app tenta ler na hora. Você confere antes de salvar; quando não dá para ler, o arquivo fica para eu passar o seu treino para o app, do jeito que ele está.</li>
             <li><strong className="text-white font-semibold">Monte com IA:</strong> você fala ou escreve o treino que quer e recebe duas opções na hora.</li>
           </ul>
         </div>
@@ -285,7 +348,7 @@ export default function AppDeTreinoPage() {
             {DEPOIS_LINK}
           </p>
           <p className="text-white leading-relaxed mb-8">
-            O app registra. Quando a carga parar, a rotina mudar ou um exercício não encaixar, o Montinho percebe e ajusta junto com você.
+            Nos 30 dias você testa o app. Na consultoria, quando a carga para, a rotina muda ou um exercício não encaixa, eu percebo e ajusto junto com você.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <BotaoApp onde="app-de-treino:fim">Testar o app grátis</BotaoApp>
@@ -294,7 +357,7 @@ export default function AppDeTreinoPage() {
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-8 py-4 text-base font-medium tracking-wide hover:border-white hover:bg-white/5 transition-all duration-200"
             >
-              Falar com o Montinho
+              Quero saber da consultoria
             </a>
           </div>
         </div>
