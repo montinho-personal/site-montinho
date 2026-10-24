@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { trackEvent } from "@/lib/analytics";
-import { LINK_APP, OFERTA_APP, TEXTO_CONVITE_APP } from "@/lib/app-convite";
+import { AVISO_SO_APP, LINK_APP, OFERTA_APP, TEXTO_CONVITE_APP } from "@/lib/app-convite";
 
 /**
  * Cartão do convite do app (30 dias grátis), depois do valor entregue.
@@ -60,7 +60,7 @@ export default function ConviteApp({ variante, onde }: Props) {
       >
         Testar o app grátis
       </a>
-      <p className="text-gray-500 text-xs mt-3">Cria a conta com nome, e-mail e WhatsApp. Sem cartão.</p>
+      <p className="text-gray-500 text-xs mt-3">{AVISO_SO_APP} Sem cartão.</p>
     </section>
   );
 }

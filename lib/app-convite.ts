@@ -62,3 +62,5 @@ export const TEXTO_CONVITE_APP: Record<FerramentaComApp | "artigo" | "comece", {
 };
 
 export const OFERTA_APP = "30 dias grátis, sem cartão";
+/** O app é dos alunos; os 30 dias são só do app (pedido do Montinho, 24/10/2026). */
+export const AVISO_SO_APP = "O app é dos alunos do Montinho. Os 30 dias liberam só o app, sem consultoria.";
