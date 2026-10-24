@@ -81,6 +81,12 @@ export type AnalyticsEvent =
    * tool_result_category (faixa, nunca o número), cta_variant (a/b/c),
    * cta_destination, session_tool_count, previous_tool.
    */
+  /**
+   * Convite do app (30 dias grátis, lib/app-convite.ts): cartão visto (50% na
+   * tela, uma vez por montagem) e clique no botão. Parâmetro: placement.
+   */
+  | "app_invite_view"
+  | "app_invite_click"
   | "post_tool_cta_view"
   | "post_tool_cta_click"
   | "post_tool_secondary_click"
