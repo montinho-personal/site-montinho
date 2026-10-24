@@ -48,6 +48,8 @@ Status: pedir a indexação no Search Console.
 |---|---|---|---|
 | /app-de-treino | novo (24/10) | | |
 | /blog/exercicio-que-mais-queima-calorias | novo (23/10) | | |
+| /blog/beneficios-do-muay-thai | novo (24/10, sem os prints) | | |
+| /blog/crossfit-da-massa-muscular | novo (24/10, sem os prints) | | |
 
 O que observar em 28 dias:
 - impressões em "app de treino academia", "app de treino gratuito" e "aplicativo de musculação grátis" (no export, 720, 140 e 50 buscas/mês);

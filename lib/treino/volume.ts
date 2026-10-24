@@ -478,6 +478,8 @@ export const ARTIGOS_COM_CALCULADORA_VOLUME: string[] = [
  * leitores sem furar a regra.
  */
 export const ARTIGOS_COM_LINK_VOLUME: string[] = [
+  /* "CrossFit dá massa muscular?": a conta que sobra é quantas séries cada músculo recebe na semana do box. */
+  "crossfit-da-massa-muscular",
   /* 68 links internos: o erro de volume mal distribuído é um dos sete. */
   "erros-comuns-no-treino-de-musculacao",
   /* 41 links: a demanda de recuperação sai do volume que se faz. */
