@@ -42,6 +42,27 @@ export interface VideoCanal {
 
 export const VIDEOS_CANAL: VideoCanal[] = [
   {
+    /* Short do convite de 30 dias grátis (link enviado pelo Montinho em 24/10/2026). */
+    id: "EwvRdG917fY",
+    slug: "app-de-treino-30-dias-gratis",
+    titulo: "App de treino para academia: 30 dias grátis no app do Montinho",
+    metaTitle: "App de Treino para Academia: 30 Dias Grátis (Vídeo)",
+    descricao:
+      "Treino pronto com nome e tudo, carga e repetições registradas em cada série, a evolução semana a semana, medalhas e ranking: o app dos alunos do Montinho, liberado por 30 dias para você testar.",
+    chamada: "Você sabe o que fazer na academia hoje? Em menos de dois minutos você vê o app por dentro.",
+    texto: [
+      "Você sabe o que fazer na academia hoje? Se a resposta é \"mais ou menos\", no app do Montinho já tem treino pronto, com nome e tudo: escolhe o seu, toca em Começar e já sabe o que fazer. Se você já tem um treino, coloca ele no app, exercício por exercício.",
+      "A cada treino você anota carga e repetições. A carga da última vez já vem preenchida, o descanso conta sozinho e, se bater recorde, o app avisa na hora. Na Evolução você vê a constância da semana e das últimas 12 semanas e as cargas que subiram desde o começo.",
+      "Cada treino concluído vira medalha na Jornada do Chalalá, e você entra no ranking de troféus da turma do Montinho. A partir do quarto treino, cada amigo que você convida e cria a conta te dá mais 10 dias grátis.",
+      "Este é o app que os alunos do Montinho usam no dia a dia. Os 30 dias liberam só o aplicativo, sem consultoria, para você usar e ver o que achou. Porque não é só sobre começar: é sobre conseguir continuar.",
+    ],
+    artigos: [
+      { href: "/app-de-treino", nome: "App de treino: o que está incluído nos 30 dias grátis" },
+      { href: "/blog/app-de-treino-funciona", nome: "App de treino funciona?" },
+      { href: "/blog/progressao-de-carga", nome: "Progressão de carga" },
+    ],
+  },
+  {
     id: "DPAQDPVffCg",
     slug: "app-do-montinho",
     titulo: "O app do Montinho: seu treino na palma da mão",
