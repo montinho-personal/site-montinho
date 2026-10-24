@@ -203,4 +203,4 @@ export const NOTA_SEGURANCA =
 /* ───────────────────────── Artigos ───────────────────────── */
 
 /** Artigos que EMBUTEM a calculadora. Uma ferramenta por artigo. */
-export const ARTIGOS_COM_CALCULADORA_MUAY: string[] = ["muay-thai-emagrece"];
+export const ARTIGOS_COM_CALCULADORA_MUAY: string[] = ["muay-thai-emagrece", "beneficios-do-muay-thai"];

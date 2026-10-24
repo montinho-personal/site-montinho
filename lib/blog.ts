@@ -107,6 +107,8 @@ import { CORRIDA_PACE_POSTS } from "./corrida-pace";
 import { HYROX_SP_2026_POSTS } from "./hyrox-sp-2026";
 import { HYROX_GUIAS_POSTS } from "./hyrox-guias";
 import { EXERCICIO_QUEIMA_POSTS } from "./exercicio-que-mais-queima";
+import { BENEFICIOS_MUAY_THAI_POSTS } from "./beneficios-muay-thai";
+import { CROSSFIT_MUSCULO_POSTS } from "./crossfit-da-massa-muscular";
 import { BLACK_FRIDAY_2026_POSTS } from "./black-friday-2026";
 import { UFC_2026_POSTS } from "./ufc-2026";
 import { OUTUBRO_ROSA_POSTS } from "./outubro-rosa-2026";
@@ -124,6 +126,8 @@ export const blogPosts = ([
   ...HYROX_SP_2026_POSTS,
   ...HYROX_GUIAS_POSTS,
   ...EXERCICIO_QUEIMA_POSTS,
+  ...BENEFICIOS_MUAY_THAI_POSTS,
+  ...CROSSFIT_MUSCULO_POSTS,
   ...BLACK_FRIDAY_2026_POSTS,
   ...MIOSTATINA_POSTS,
   ...UFC_2026_POSTS,
