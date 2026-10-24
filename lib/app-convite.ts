@@ -14,6 +14,8 @@
  */
 export const CODIGO_CONVITE_SITE = "SITE-30DIAS";
 export const LINK_APP = `https://app-montinho.vercel.app/convite/${CODIGO_CONVITE_SITE}`;
+/** A página do app no site (pesquisa de 24/10/2026): o menu aponta para ela. */
+export const PAGINA_APP = "/app-de-treino";
 
 /** Ferramentas de treino em que registrar treino a treino é o próximo passo. */
 export const FERRAMENTAS_COM_CONVITE_APP = ["onerm", "volume", "descanso"] as const;

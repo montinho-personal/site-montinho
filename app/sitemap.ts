@@ -562,6 +562,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/app-de-treino`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/preparacao-para-hyrox`,
       lastModified: new Date(),
       changeFrequency: "monthly",

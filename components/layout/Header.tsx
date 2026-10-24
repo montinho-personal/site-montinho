@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { LINK_APP } from "@/lib/app-convite";
 import Image from "next/image";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import SearchBar from "@/components/search/SearchBar";
@@ -24,7 +23,7 @@ const navLinks = [
  */
 const toolLinks = [
   { href: "/comece", label: "Comece Aqui", hint: "O caminho completo, do zero ao plano" },
-  { href: LINK_APP, label: "App do Montinho", hint: "Treino pronto e evolução registrada · 30 dias grátis" },
+  { href: "/app-de-treino", label: "App do Montinho", hint: "Treino pronto e evolução registrada · 30 dias grátis" },
   /*
    * A tabela de alimentos entra no menu porque é a ferramenta de MAIOR
    * frequência de uso: consultar quanto tem de proteína num alimento é algo
