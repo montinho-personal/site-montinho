@@ -120162,7 +120162,9 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
       { question: "Onde acontece o Hyrox em SP?", answer: "A etapa de São Paulo de 2026 foi no Distrito Anhembi, em 17 e 18 de outubro. A próxima aparece para 8 e 9 de maio de 2027, com local ainda a definir. O calendário está em Hyrox no Brasil 2026/2027." },
       { question: "O OBOX aceita Wellhub?", answer: "Sim: a unidade aparece no Wellhub a partir do plano Gold, segundo a página consultada em 21/10/2026, com reserva obrigatória para as aulas. Plano e regras mudam; confira no app." },
     ],
-    content: `<p>O Hyrox chegou a São Paulo e a procura por "onde treinar" foi junto. Em Alphaville, há dois caminhos: um <strong>box com aula específica de Hyrox</strong> ou a <strong>academia que você já frequenta</strong>, com a preparação montada para a prova. Os dois funcionam; o que muda é o que cada um tem de equipamento.</p>
+    content: `<img src="/blog-images/hyrox-alphaville-onde-treinar-capa.webp" alt="Capa: Hyrox em Alphaville, onde treinar e como se preparar. Ilustração de um atleta empurrando o trenó, uma das estações da prova, com ícones de corrida, 8 estações e preparação" title="Hyrox em Alphaville: Onde Treinar e Como se Preparar — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>O Hyrox chegou a São Paulo e a procura por "onde treinar" foi junto. Em Alphaville, há dois caminhos: um <strong>box com aula específica de Hyrox</strong> ou a <strong>academia que você já frequenta</strong>, com a preparação montada para a prova. Os dois funcionam; o que muda é o que cada um tem de equipamento.</p>
 
 <h2>Resposta direta: onde treinar Hyrox em Alphaville</h2>
 <ul>
