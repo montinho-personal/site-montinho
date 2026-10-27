@@ -393,7 +393,9 @@ ${FONTE_FORMATO}
       { question: "Tênis para Hyrox feminino é diferente?", answer: "Os critérios são os mesmos: amortecimento para correr, estabilidade e aderência. O que muda é a forma do pé; experimente com a meia que vai usar na prova." },
       { question: "O que vestir no Hyrox?", answer: "Roupa de treino que você já testou correndo e agachando: short ou legging que não desce no avanço, camiseta ou top que não prende o braço no SkiErg e meia que não escorrega dentro do tênis. Nada estreia no dia." },
     ],
-    content: `<p>O tênis do Hyrox tem um trabalho que nenhum tênis faz sozinho: <strong>correr 8 km e, no intervalo de cada quilômetro, empurrar trenó, avançar com saco e agachar 100 vezes</strong>. Por isso não existe "o" tênis certo. Existe o que funciona para o seu jeito de fazer a prova.</p>
+    content: `<img src="/blog-images/tenis-para-hyrox-capa.webp" alt="Capa: Tênis para Hyrox, como escolher para correr e para as estações. Ilustração de um tênis de corrida sem marca pisando forte, com ícones de amortecimento, estabilidade e aderência" title="Tênis para Hyrox: Como Escolher Para Correr e Para as Estações — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>O tênis do Hyrox tem um trabalho que nenhum tênis faz sozinho: <strong>correr 8 km e, no intervalo de cada quilômetro, empurrar trenó, avançar com saco e agachar 100 vezes</strong>. Por isso não existe "o" tênis certo. Existe o que funciona para o seu jeito de fazer a prova.</p>
 
 <h2>Resposta direta: como escolher o tênis para Hyrox</h2>
 <ul>
@@ -493,7 +495,9 @@ ${FONTE_FORMATO}
       { question: "Onde fazer o PFT do Hyrox no Brasil?", answer: "Nos Training Clubs credenciados que oferecem o teste. Procure no buscador oficial de Training Clubs e pergunte direto ao clube se há data de PFT." },
       { question: "Quanto custa o PFT?", answer: "Muda por clube e por evento. Pergunte ao Training Club antes se há cobrança e se a vaga precisa ser reservada." },
     ],
-    content: `<p>O PFT do Hyrox é o <strong>Physical Fitness Test</strong>: um teste físico padronizado, feito nos Training Clubs, que funciona como uma versão curta da prova. Serve para conhecer o formato e ter uma ideia de qual categoria escolher na primeira inscrição.</p>
+    content: `<img src="/blog-images/hyrox-pft-capa.webp" alt="Capa: Hyrox PFT, o que é o teste e o que o tempo diz. Ilustração de um atleta no salto do burpee broad jump na frente de um cronômetro, com ícones de teste, tempo e categoria" title="Hyrox PFT: o Que É o Teste, Como Funciona e o Que o Tempo Diz — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>O PFT do Hyrox é o <strong>Physical Fitness Test</strong>: um teste físico padronizado, feito nos Training Clubs, que funciona como uma versão curta da prova. Serve para conhecer o formato e ter uma ideia de qual categoria escolher na primeira inscrição.</p>
 
 <h2>Resposta direta: como é o PFT do Hyrox</h2>
 <p>São seis exercícios seguidos, <strong>sem trechos de corrida entre eles</strong>:</p>
