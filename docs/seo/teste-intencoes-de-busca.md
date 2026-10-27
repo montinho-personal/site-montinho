@@ -1347,3 +1347,11 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
   "CrossFit Dá Massa Muscular? Quanto Ganha e Depois dos 50". Motivo: "depois dos 50" e "depois dos 50
   anos" são as duas primeiras sugestões do autocompletar.
 - Descrições reescritas nos dois (confirmam a resposta e deixam a dúvida aberta).
+
+## 2026-10-27 — Artigo novo: Six Alphaville
+
+- Pesquisa: prints do autocompletar ("six alphaville academia", "fotos", "mensalidade", "six barueri"), PAA (mensalidade, onde fica, academia mais cara de Alphaville, dono), "Outras pessoas pesquisaram" (endereço, fotos, valor da mensalidade, Six Itaim, Six Vila Nova) e export do Answer the Public (Google, Bing, PAA e modelos de IA).
+- Os prompts dos modelos de IA tratam de imóveis ("condomínio Six Alphaville"): fora. "six alphaville ltda", "fotos" (sem fotos próprias) e "Six Vila Nova" (sem fonte): fora.
+- Fontes: Instagram oficial (endereço), VERO 06/08/2026 e Business (estrutura, 23º andar, outubro), fundador à VERO (mensalidade R$ 2.500–3.000, 1.800 m², R$ 20 mi, all inclusive — atribuídos), InfoMoney e Forbes 2025 (Itaim R$ 3,5 mil). Sem afirmar atendimento do Montinho na Six.
+- Ferramenta: entra no registro do quiz "Treino para minha rotina" (`lib/rotina/local.ts`), como a Fábrica Premium; vídeo "recomeçar" (`lib/video/recomecar.ts`).
+- Links: academias-em-alphaville, 10-melhores, academias-premium-alphaville (seção, linha na tabela, FAQ), academias-perto-de-alphaville, academias-mais-completas-alphaville, fabrica-premium-alphaville. A FAQ "academia mais cara de Alphaville" foi atualizada em três artigos (agora há um preço divulgado). `updatedAt` 27/10 nos artigos com FAQ ou seção nova.

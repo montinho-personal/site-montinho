@@ -117,6 +117,7 @@ import { CATEGORIAS_FISICULTURISMO_POSTS } from "./categorias-fisiculturismo";
 import { MARATONA_CURITIBA_2026_POSTS } from "./maratona-curitiba-2026";
 import { MARATONA_BRASILIA_2026_POSTS } from "./maratona-brasilia-2026";
 import { FABRICA_PREMIUM_POSTS } from "./fabrica-premium";
+import { SIX_ALPHAVILLE_POSTS } from "./six-alphaville";
 import { LUTAS_BARUERI_POSTS } from "./lutas-barueri";
 import { MIOSTATINA_POSTS } from "./miostatina";
 
@@ -137,6 +138,7 @@ export const blogPosts = ([
   ...MARATONA_CURITIBA_2026_POSTS,
   ...MARATONA_BRASILIA_2026_POSTS,
   ...FABRICA_PREMIUM_POSTS,
+  ...SIX_ALPHAVILLE_POSTS,
   ...LUTAS_BARUERI_POSTS,
   ...OLYMPIA_2026_POSTS,
   {
@@ -79418,7 +79420,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Das redes econômicas às academias premium: um mapa honesto das principais academias de Alphaville para você escolher sem errar.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-09-30",
+    updatedAt: "2026-10-27",
     readTime: "8 min",
     author: "Montinho",
     tags: ["academias em alphaville","alphaville","musculação","treino","onde treinar"],
@@ -79466,7 +79468,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Academia 24 horas em Alphaville:</strong> <a href="/blog/ironberg-alphaville">Ironberg</a> e <a href="/blog/academia-gavioes-alphaville">Gaviões 24h</a>. Mais opções em <a href="/blog/academia-24-horas-alphaville">academia 24 horas em Alphaville</a>.</li>
 <li><strong>Aceitam Wellhub (antigo Gympass):</strong> <a href="/blog/bluefit-alphaville">Bluefit</a>, <a href="/blog/bodytech-alphaville">Bodytech</a>, <a href="/blog/panobianco-alphaville">Panobianco</a>, <a href="/blog/ironberg-alphaville">Ironberg</a>, <a href="/blog/arena-18-alphaville">Arena 18</a>, <a href="/blog/scelta-alphaville">Scelta</a>, <a href="/blog/4perform-alphaville">4Perform</a>, <a href="/blog/24-wellness-alphaville">24 Wellness</a>, <a href="/blog/skyfit-alphaville">SkyFit</a>, <a href="/blog/studio-mormaii-alphaville">Studio Mormaii</a> e <a href="/blog/voi-fit-alphaville">Voi Fit</a>.</li>
 <li><strong>Aceitam TotalPass:</strong> <a href="/blog/smart-fit-alphaville">Smart Fit</a>, <a href="/blog/scelta-alphaville">Scelta</a>, <a href="/blog/4perform-alphaville">4Perform</a>, <a href="/blog/24-wellness-alphaville">24 Wellness</a>, <a href="/blog/skyfit-alphaville">SkyFit</a>, <a href="/blog/studio-mormaii-alphaville">Studio Mormaii</a> e <a href="/blog/voi-fit-alphaville">Voi Fit</a>.</li>
-<li><strong>Faixa premium (as mais caras):</strong> <a href="/blog/bodytech-alphaville">Bodytech</a>, <a href="/blog/ironberg-alphaville">Ironberg</a>, <a href="/blog/scelta-alphaville">Scelta</a> e <a href="/blog/4perform-alphaville">4Perform</a>; em Santana de Parnaíba, a <a href="/blog/fabrica-premium-alphaville">Fábrica Premium</a>. Veja <a href="/blog/academias-premium-alphaville">academias premium em Alphaville</a>.</li>
+<li><strong>Faixa premium (as mais caras):</strong> <a href="/blog/six-alphaville">Six Alphaville</a> (all inclusive, a de mensalidade mais alta entre as que divulgaram preço), <a href="/blog/bodytech-alphaville">Bodytech</a>, <a href="/blog/ironberg-alphaville">Ironberg</a>, <a href="/blog/scelta-alphaville">Scelta</a> e <a href="/blog/4perform-alphaville">4Perform</a>; em Santana de Parnaíba, a <a href="/blog/fabrica-premium-alphaville">Fábrica Premium</a>. Veja <a href="/blog/academias-premium-alphaville">academias premium em Alphaville</a>.</li>
 <li><strong>Mais econômicas:</strong> <a href="/blog/smart-fit-alphaville">Smart Fit</a>, <a href="/blog/bluefit-alphaville">Bluefit</a>, <a href="/blog/panobianco-alphaville">Panobianco</a>, <a href="/blog/skyfit-alphaville">SkyFit</a> e <a href="/blog/voi-fit-alphaville">Voi Fit</a>. Faixas de preço em <a href="/blog/quanto-custa-academia-em-alphaville">quanto custa academia em Alphaville</a>.</li>
 </ul>
 <p><strong>Tem Smart Fit em Alphaville?</strong> Tem: a unidade fica no Centro Industrial e Empresarial, em Barueri. Análise completa em <a href="/blog/smart-fit-alphaville">Smart Fit Alphaville</a>.</p>
@@ -79500,7 +79502,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><a href="/blog/academia-ou-personal-trainer">Academia ou personal trainer: o que traz mais resultado?</a></li>
 </ul>`,
     faq: [
-      { question: "Qual a academia mais cara de Alphaville?", answer: "As academias de faixa premium em Alphaville são Bodytech, Ironberg, Scelta e 4Perform. O valor exato muda por plano e unidade — confira direto na recepção." },
+      { question: "Qual a academia mais cara de Alphaville?", answer: "Entre as que divulgaram preço, a Six Alphaville, academia all inclusive no Empresarial 18 do Forte: R$ 2.500 a R$ 3.000 por mês, segundo o fundador à revista VERO. Bodytech, Ironberg, Scelta e 4Perform também estão na faixa premium, mas não publicam tabela padronizada — confira direto na recepção." },
       { question: "Tem Smart Fit em Alphaville?", answer: "Sim. A Smart Fit Alphaville fica no Centro Industrial e Empresarial, em Barueri, e aceita TotalPass." },
       { question: "Qual é o preço da Scelta academia em Alphaville?", answer: "A Scelta está na faixa premium de Alphaville e aceita Wellhub e TotalPass. O valor dos planos muda com frequência; confira na unidade do Centro Comercial." },
       { question: "Quais academias de Alphaville aceitam Wellhub (Gympass) ou TotalPass?", answer: "Wellhub: Bluefit, Bodytech, Panobianco, Ironberg, Arena 18, Scelta, 4Perform, 24 Wellness, SkyFit, Studio Mormaii e Voi Fit. TotalPass: Smart Fit, Scelta, 4Perform, 24 Wellness, SkyFit, Studio Mormaii e Voi Fit." },
@@ -79781,7 +79783,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Um raio-x das academias em Alphaville e arredores — Tamboré, Barueri e Aldeia da Serra — para escolher pela rotina, não pela propaganda.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-10-08",
+    updatedAt: "2026-10-27",
     readTime: "8 min",
     author: "Montinho",
     tags: ["academias perto de alphaville","alphaville","tamboré","musculação","treino"],
@@ -79862,7 +79864,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Com piscina ou natação:</strong> <a href="/blog/academia-com-piscina-alphaville-barueri">academias com piscina em Alphaville e Barueri</a>.</li>
 <li><strong>Com pilates:</strong> <a href="/blog/academia-com-pilates-alphaville">academias com pilates em Alphaville</a>.</li>
 <li><strong>Mais barata:</strong> <a href="/blog/qual-academia-e-mais-barata-alphaville-barueri">qual academia é mais barata em Alphaville e Barueri</a> e <a href="/blog/quanto-custa-academia-em-alphaville">quanto custa academia em Alphaville</a>.</li>
-<li><strong>Premium:</strong> <a href="/blog/academias-premium-alphaville">academias premium de Alphaville</a>.</li>
+<li><strong>Premium:</strong> <a href="/blog/academias-premium-alphaville">academias premium de Alphaville</a>; a mais nova é a <a href="/blog/six-alphaville">Six Alphaville</a>, all inclusive, no Empresarial 18 do Forte.</li>
 </ul>
 
 <h2>Leia também</h2>
@@ -79884,7 +79886,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Tem academia 24 horas perto de Alphaville?", answer: "Tem. A Gaviões 24h, na Juruá, em Alphaville Industrial, é uma delas. O guia de academias 24 horas em Alphaville reúne as opções e o que conferir antes de treinar de madrugada." },
       { question: "Qual academia perto de Alphaville tem piscina?", answer: "Academia com piscina é minoria na região e costuma ficar na faixa de preço mais alta. O guia de academias com piscina em Alphaville e Barueri lista as opções e o que comparar." },
       { question: "Qual é a academia mais barata perto de Alphaville?", answer: "As redes de baixo custo, como Smart Fit e Bluefit, costumam ter as mensalidades mais baixas da região. Os valores mudam com plano e promoção — o guia de academia mais barata em Alphaville e Barueri compara as opções." },
-      { question: "Qual é a academia mais cara de Alphaville?", answer: "Não existe tabela pública que permita cravar uma só: as academias premium da região não divulgam preço de forma padronizada. O guia de academias premium de Alphaville mostra o que cada uma oferece e como pedir o valor." },
+      { question: "Qual é a academia mais cara de Alphaville?", answer: "Entre as que divulgaram preço, a Six Alphaville: R$ 2.500 a R$ 3.000 por mês, segundo o fundador à revista VERO, com serviços all inclusive. As outras premium da região não divulgam preço de forma padronizada; o guia de academias premium de Alphaville mostra o que cada uma oferece e como pedir o valor." },
       { question: "As academias perto de Alphaville aceitam Gympass (Wellhub) e TotalPass?", answer: "Muitas aceitam, mas o acesso varia por unidade e pelo plano que você tem no app. Antes de ir, procure a academia no Wellhub ou no TotalPass." },
     ],
   },
@@ -80476,7 +80478,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Análise editorial das 10 melhores academias de Alphaville em 2026, organizadas por critério transparente: estrutura, proposta e perfil de público.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-10-09",
+    updatedAt: "2026-10-27",
     readTime: "9 min",
     author: "Montinho",
     tags: ["academias em alphaville","melhores academias","musculação","alphaville","ranking de academias"],
@@ -80538,14 +80540,15 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Foco em bem-estar e conveniência de horários — atraente para executivos com agenda imprevisível na região do Centro Empresarial.</p>
 <h3>10. 4Perform — performance e funcional</h3>
 <p>Para quem prefere <strong>treinamento funcional</strong>, performance esportiva e turmas menores em vez do salão tradicional de musculação. Menções honrosas: <strong>Panobianco</strong>, <strong>SkyFit</strong> e <strong>Voi Fit</strong> — todas presentes na região e válidas conforme sua logística.</p>
-<h2>Fora do top 10, mas nas buscas: Fábrica Premium e SkyFit</h2>
+<h2>Fora do top 10, mas nas buscas: Six, Fábrica Premium e SkyFit</h2>
+<p><strong><a href="/blog/six-alphaville">Six Alphaville</a></strong> — a academia all inclusive da rede SIX, na cobertura (23º andar) do Empresarial 18 do Forte, com inauguração anunciada para outubro de 2026. Ainda não entra no ranking porque acabou de abrir.</p>
 <p><strong><a href="/blog/fabrica-premium-alphaville">Fábrica Premium</a></strong> — a academia da rede Fábrica de Monstros, de Léo Stronda, na Estrada da Bela Vista (Santana de Parnaíba), com valet, rooftop com pista de corrida, crioterapia e nutricionista. <strong><a href="/blog/skyfit-alphaville">SkyFit</a></strong> — rede econômica no Alphaville Industrial, que aceita Wellhub e TotalPass.</p>
 
 <h2>Filtros rápidos: 24 horas, Gympass e Alphaville Industrial</h2>
 <ul>
 <li><strong>Academia 24 horas em Alphaville:</strong> Ironberg e Gaviões 24h.</li>
 <li><strong>Academia em Alphaville que aceita Gympass (Wellhub):</strong> Ironberg, Bodytech, Arena 18, Scelta, Bluefit, 24 Wellness, 4Perform, SkyFit, Panobianco, Studio Mormaii e Voi Fit. TotalPass: Smart Fit, Scelta, 24 Wellness, 4Perform, SkyFit, Studio Mormaii e Voi Fit.</li>
-<li><strong>Alphaville Industrial (Centro Industrial e Empresarial):</strong> Ironberg (Estrada Aldeinha, 181, com acesso também pela Av. Dr. Dib Sauaia Neto), Smart Fit, Bluefit, Panobianco, Bio Ritmo, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit ficam nessa região; Bodytech fica perto do Iguatemi, Scelta no Centro Comercial e Arena 18 no Melville Empresarial II.</li>
+<li><strong>Alphaville Industrial (Centro Industrial e Empresarial):</strong> Ironberg (Estrada Aldeinha, 181, com acesso também pela Av. Dr. Dib Sauaia Neto), Smart Fit, Bluefit, Panobianco, Bio Ritmo, NitroGym, 24 Wellness, 4Perform, SkyFit e Voi Fit ficam nessa região; Bodytech fica perto do Iguatemi, Scelta no Centro Comercial, Arena 18 no Melville Empresarial II e a <a href="/blog/six-alphaville">Six</a> no Empresarial 18 do Forte, na Av. Copacabana.</li>
 </ul>
 <p>Os dados de 24 horas e convênio foram conferidos por mim nas unidades — o detalhe de cada uma está no <a href="/blog/academias-em-alphaville">guia de academias em Alphaville</a>. Este ranking é de Alphaville em Barueri, não de Alphaville Nova Lima.</p>
 
@@ -80869,7 +80872,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Análise editorial das academias premium de Alphaville: o que elas realmente entregam, para quem valem e quando o dinheiro rende mais em orientação.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-10-27",
     readTime: "9 min",
     author: "Montinho",
     tags: ["academia premium","alphaville","bodytech","bio ritmo","musculação"],
@@ -80878,7 +80881,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Academia premium vale a pena?", answer: "Vale se você usa o que paga: modalidades variadas, conforto, horários e serviços agregados. Se você só faz musculação básica 3x por semana, o mesmo resultado sai por muito menos em uma rede econômica." },
       { question: "Qual a diferença entre Bio Ritmo e Smart Fit?", answer: "São da mesma holding, mas posicionamentos opostos: Smart Fit é low-cost padronizada; Bio Ritmo é o braço premium, com ambiente mais sofisticado e aulas coletivas fortes." },
       { question: "Academia premium tem personal trainer incluído?", answer: "Em geral não: o acompanhamento individual é serviço à parte, mesmo nas redes premium. Instrutores de salão orientam pontualmente, mas não substituem prescrição individualizada." },
-      { question: "Quanto custa uma academia premium em Alphaville?", answer: "As mensalidades ficam na faixa superior do mercado e variam bastante conforme plano, unidade e serviços. Consulte o site oficial ou a unidade para valores atualizados." },
+      { question: "Quanto custa uma academia premium em Alphaville?", answer: "As mensalidades ficam na faixa superior do mercado e variam bastante conforme plano, unidade e serviços. A única que divulgou faixa de preço é a Six Alphaville: R$ 2.500 a R$ 3.000 por mês, segundo o fundador à revista VERO. Para as outras, consulte o site oficial ou a unidade." },
       { question: "Premium emagrece ou hipertrofia mais rápido que academia comum?", answer: "Não por si só. O estímulo vem do treino, da progressão e da dieta — não do acabamento da academia. O premium compra conforto e conveniência, não resultado automático." },
       { question: "Para executivos em Alphaville, qual faz mais sentido?", answer: "Se a academia fica no trajeto do escritório (Centro Empresarial, Tamboré, região do Iguatemi) e você usa os serviços, o premium se paga em conveniência. Caso contrário, priorize logística." },
       { question: "O que rende mais: mensalidade premium ou orientação profissional?", answer: "Para resultado físico, orientação. Um treino prescrito e acompanhado em academia intermediária costuma superar treino genérico em academia premium. O ideal é alinhar estrutura suficiente + método." }
@@ -80903,6 +80906,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Proposta de bem-estar com flexibilidade — atraente para quem trabalha no <strong>Centro Industrial e Empresarial</strong> e não tem horário fixo.</p>
 <h3>Scelta — o boutique dos condomínios</h3>
 <p>Atendimento próximo e público de <strong>condomínios de Alphaville</strong>. Menos multidão, mais relacionamento.</p>
+<h3>Six Alphaville — o all inclusive</h3>
+<p>A novidade da região: a <a href="/blog/six-alphaville">Six Alphaville</a>, na cobertura (23º andar) do Empresarial 18 do Forte, com inauguração anunciada para outubro de 2026. Manobrista, concierge, recovery, crioterapia, spa, pré e pós-treino e salão de beleza entram na mensalidade, que fica entre R$ 2.500 e R$ 3.000, segundo o fundador à revista VERO. É a mais cara entre as que divulgaram preço, e só se paga para quem usa os serviços.</p>
 <h3>4Perform e Arena 18 — premium de performance</h3>
 <p>Turmas menores e foco em <strong>performance e treinamento orientado</strong>. Aqui o "premium" está no acompanhamento, não no mármore — para muita gente, é o premium que mais rende.</p>
 <h2>Tabela comparativa: premium de Alphaville</h2>
@@ -80911,6 +80916,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <tr><td>Bodytech</td><td>Premium clube</td><td>Modalidades variadas, serviços agregados</td><td>Executivos e famílias</td></tr>
 <tr><td>24 Wellness</td><td>Premium conveniência</td><td>Flexibilidade e bem-estar</td><td>Agenda imprevisível</td></tr>
 <tr><td>Scelta</td><td>Boutique</td><td>Atendimento próximo</td><td>Moradores de condomínio</td></tr>
+<tr><td>Six Alphaville</td><td>All inclusive</td><td>Recovery, spa, concierge e serviços incluídos</td><td>Quem quer resolver treino e bem-estar num lugar só</td></tr>
 <tr><td>4Perform / Arena 18</td><td>Boutique performance</td><td>Turmas menores, treino orientado</td><td>Quem busca acompanhamento</td></tr>
 </table>
 <p><em>Análise qualitativa; planos, serviços e valores variam — confirme na unidade.</em></p>
@@ -80931,6 +80937,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <ul>
 <li><a href="/blog/melhor-academia-de-alphaville">Qual a melhor academia de Alphaville?</a></li>
 <li><a href="/blog/academias-em-alphaville">Guia das academias em Alphaville</a></li>
+<li><a href="/blog/six-alphaville">Six Alphaville: endereço, mensalidade e o que inclui</a></li>
 <li><a href="/blog/academia-ou-personal-trainer">Academia ou personal trainer: o que traz mais resultado?</a></li>
 </ul>`,
     faq: [
@@ -82799,7 +82806,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "A Gaviões construiu fama em SP como academia de musculação raiz. Veja o que esperar em Alphaville, para quem ela é indicada e como extrair o máximo.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-10-21",
+    updatedAt: "2026-10-27",
     readTime: "8 min",
     author: "Montinho",
     tags: ["academia gaviões","academia em alphaville","musculação","hipertrofia","são paulo"],
@@ -82916,7 +82923,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Qual a mensalidade da Gaviões em Alphaville?", answer: "A Gaviões não publica tabela fixa, e os valores que circulam em sites de terceiros não batem entre si. Confirme mensalidade e planos na recepção ou no WhatsApp da unidade." },
       { question: "Qual é a diária da Academia Gaviões Alphaville?", answer: "O valor da diária não é publicado pela academia. Pergunte na recepção ou no WhatsApp da unidade; para quem tem Wellhub ou TotalPass, o acesso pelo app pode sair mais em conta que a diária avulsa." },
       { question: "Qual plano do Wellhub aceita na Gaviões Alphaville?", answer: "A partir do Silver+, segundo a página da unidade no Wellhub consultada em 21/10/2026. O Pilates Gaviões, no mesmo endereço, é outro parceiro, com outro plano." },
-      { question: "Qual a academia mais cara de Alphaville?", answer: "As de proposta premium, com serviços como valet, spa e áreas exclusivas. A comparação está no guia de academias premium de Alphaville; a Gaviões fica fora desse grupo, com foco em musculação." },
+      { question: "Qual a academia mais cara de Alphaville?", answer: "As de proposta premium, com serviços como valet, spa e áreas exclusivas. Entre as que divulgaram preço, a mais cara é a Six Alphaville (R$ 2.500 a R$ 3.000 por mês, segundo o fundador à revista VERO). A comparação está no guia de academias premium de Alphaville; a Gaviões fica fora desse grupo, com foco em musculação." },
       { question: "Dá para treinar com personal trainer na Gaviões?", answer: "Depende das regras da unidade para personal externo — algumas academias liberam, outras cobram taxa ou só aceitam profissionais cadastrados. Pergunte na recepção antes de combinar com o personal." },
     ],
   },
@@ -87687,7 +87694,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Seis meses depois, a realidade: você usa 10% da estrutura, não pisou na piscina, nunca fez as aulas — e o corpo continua o mesmo. <strong>Pagar por estrutura que você não usa é o jeito mais caro de não ter resultado.</strong></p>
 <p>Este guia mostra o que realmente define uma academia completa, onde encontrar as melhores estruturas de Alphaville e — mais importante — como transformar estrutura em evolução.</p>
 <h2>Resposta rápida: quais são as academias mais completas de Alphaville?</h2>
-<p>Em Alphaville, as estruturas mais amplas costumam estar nas unidades de <strong>redes premium, como a Bodytech</strong>, e de <strong>redes intermediárias, como a Panobianco</strong>, concentradas no entorno do <strong>Iguatemi Alphaville</strong>, da <strong>Alameda Rio Negro</strong> e de <strong>Tamboré</strong>. Elas tendem a reunir musculação ampla, cardio, aulas coletivas e serviços de apoio. Estrutura, aulas e valores variam por unidade — <strong>consulte o site oficial ou visite a unidade para informações atualizadas</strong>.</p>
+<p>Em Alphaville, as estruturas mais amplas costumam estar nas unidades de <strong>redes premium, como a Bodytech</strong>, e de <strong>redes intermediárias, como a Panobianco</strong>, concentradas no entorno do <strong>Iguatemi Alphaville</strong>, da <strong>Alameda Rio Negro</strong> e de <strong>Tamboré</strong>. Elas tendem a reunir musculação ampla, cardio, aulas coletivas e serviços de apoio. A estrutura mais nova é a da <a href="/blog/six-alphaville">Six Alphaville</a>, academia all inclusive no Empresarial 18 do Forte com recovery, spa, pilates e beach tennis, segundo a própria rede. Estrutura, aulas e valores variam por unidade — <strong>consulte o site oficial ou visite a unidade para informações atualizadas</strong>.</p>
 <h2>O que faz uma academia ser "completa" de verdade</h2>
 <h3>1. Musculação com profundidade, não só quantidade</h3>
 <p>Não é o número de máquinas: é ter <strong>pesos livres suficientes, barras, halteres em várias cargas e máquinas para os padrões básicos de movimento</strong>. Uma academia com 80 máquinas repetidas pode ser menos completa que uma com área de peso livre bem montada.</p>
