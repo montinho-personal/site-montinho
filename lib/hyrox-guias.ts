@@ -591,7 +591,9 @@ ${FONTE_FORMATO}
       { question: "Qual a idade mínima para fazer o Hyrox?", answer: "16 anos no dia da prova, pelo regulamento oficial. Não há idade máxima." },
       { question: "Quais categorias tem o Hyrox Rio de Janeiro 2026?", answer: "Individual Open e Pro, feminino e masculino; duplas feminina, masculina e mista, também Pro; e revezamentos feminino, masculino e misto, divididos entre sábado e domingo." },
     ],
-    content: `<p>A temporada 2026/2027 do Hyrox no Brasil começou com <strong>São Paulo, em 17 e 18 de outubro</strong>, segue com o <strong>Rio de Janeiro, em 21 e 22 de novembro de 2026</strong>, e volta a <strong>São Paulo em 8 e 9 de maio de 2027</strong>, com local ainda a definir (situação em 23/10/2026).</p>
+    content: `<img src="/blog-images/hyrox-brasil-2026-capa.webp" alt="Capa: Hyrox no Brasil, calendário 2026/2027 e inscrição. Ilustração de um atleta rompendo a fita de chegada, com ícones de São Paulo, Rio de Janeiro e inscrição" title="Hyrox no Brasil 2026/2027: Calendário de Provas e Inscrição — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>A temporada 2026/2027 do Hyrox no Brasil começou com <strong>São Paulo, em 17 e 18 de outubro</strong>, segue com o <strong>Rio de Janeiro, em 21 e 22 de novembro de 2026</strong>, e volta a <strong>São Paulo em 8 e 9 de maio de 2027</strong>, com local ainda a definir (situação em 23/10/2026).</p>
 
 <h2>Calendário do Hyrox no Brasil 2026/2027</h2>
 <table>
@@ -670,7 +672,9 @@ ${FONTE_REGRAS}
       { question: "O que comer depois do Hyrox?", answer: "Uma refeição com carboidrato e proteína nas primeiras horas: arroz, batata ou pão com carne, frango, ovos ou iogurte. Proteína de 0,25 a 0,4 g por quilo na refeição (perto de 20 a 30 g para 70 kg) e água." },
       { question: "Por que dá diarreia ou enjoo no Hyrox?", answer: "Esforço alto por mais de uma hora desvia sangue do intestino, e comida pesada, fibra, gordura, gel ou café em excesso pioram. Teste no treino a refeição e o horário do dia da prova. Se acontece sempre, mesmo com a comida certa, procure um médico." },
     ],
-    content: `<p>O Hyrox dura de uma a duas horas para a maioria das pessoas, com o coração alto o tempo todo. Não é uma maratona, mas também não é uma aula de 40 minutos: <strong>o que você come na véspera e no dia muda como você chega nas últimas estações.</strong></p>
+    content: `<img src="/blog-images/alimentacao-para-hyrox-capa.webp" alt="Capa: Alimentação para Hyrox, o que comer antes, durante e depois. Ilustração de um corredor entre banana, arroz, garrafa de água e prato, com ícones de antes, durante e depois" title="Alimentação para Hyrox: o Que Comer Antes, Durante e Depois — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>O Hyrox dura de uma a duas horas para a maioria das pessoas, com o coração alto o tempo todo. Não é uma maratona, mas também não é uma aula de 40 minutos: <strong>o que você come na véspera e no dia muda como você chega nas últimas estações.</strong></p>
 
 <h2>Resposta direta: o que comer antes do Hyrox</h2>
 <ul>
