@@ -66,9 +66,9 @@ export const BENEFICIOS_MUAY_THAI_POSTS: BlogPost[] = [
   {
     slug: "beneficios-do-muay-thai",
     title: "Benefícios do Muay Thai para o Corpo e a Mente",
-    metaTitle: "Benefícios do Muay Thai: Fôlego, Força, Agilidade e Mente",
+    metaTitle: "Benefícios do Muay Thai para o Corpo, a Mente e a Mulher",
     metaDescription:
-      "Os benefícios do muay thai para o condicionamento, a força, a agilidade e a cabeça, com o tamanho real da evidência. E o que ele não faz sozinho.",
+      "Os benefícios do muay thai para o corpo, a mente, a mulher e as crianças, com o que os estudos mediram. E as desvantagens que pouca gente conta.",
     excerpt:
       "Fôlego, potência, agilidade, gasto calórico alto e uma aula que dá vontade de voltar. Veja o que os estudos mostram sobre os benefícios do muay thai, o que ainda é pouco estudado e como somar a luta com a musculação.",
     category: "Treinamento",
