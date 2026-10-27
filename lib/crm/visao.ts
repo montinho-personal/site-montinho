@@ -111,7 +111,7 @@ export function todasVisoes(b: Base, cat: Catalogo, agora = new Date()): LeadVis
 
 export function itensHoje(b: Base, cat: Catalogo, visoes: LeadVisao[], agora = new Date()): ItemHoje[] {
   const sla = { novo_lead_sem_contato_horas: 24, proposta_sem_follow_up_dias: 2, lead_parado_dias: 5, negociacao_antiga_dias: 7, ...(cat.config.sla ?? {}) };
-  const renovacaoDias = (cat.config.renovacao?.alertas_dias_antes as number[] | undefined) ?? [30, 14, 7];
+  const renovacaoDias = (cat.config.renovacao?.alertas_dias_antes as number[] | undefined) ?? [5];
   const nome = (id: string) => b.contatos.find((c) => c.id === id)?.nome ?? "Contato";
   return prioridadesHoje({
     leads: visoes.map((v) => ({ id: v.lead.id, contactId: v.contato.id, nome: v.contato.nome, status: v.lead.status, createdAt: v.lead.created_at, lastContactAt: v.lead.last_contact_at, firstResponseAt: v.lead.first_response_at, lastReplyAt: v.lead.last_reply_at, replyHandledAt: v.lead.reply_handled_at, followUpsNoCiclo: v.ciclo.followUps, promessaFeita: v.ciclo.promessaFeita, starterPendente: v.starterPendente, motivoDecidir: motivoDecidir(v.ciclo), emPaz: !!v.lead.em_paz_at, adiadoAte: adiadoAte(v.atividades), nextAction: v.lead.next_action, nextActionAt: v.lead.next_action_at, stageCode: v.etapa?.code ?? null, proposalSentAt: v.opp?.proposal_sent_at ?? null, expectedValue: v.opp?.expected_value ?? null, temperatura: v.temperatura, opportunityId: v.opp?.id })),

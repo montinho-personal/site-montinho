@@ -39,7 +39,7 @@ export const FAIXAS: { id: FaixaRenovacao; titulo: string; sub: string }[] = [
   { id: "sem_data", titulo: "Sem data de renovação", sub: "Cliente ativo sem data cadastrada: preencher na ficha para entrar no radar." },
 ];
 
-export function panoramaRenovacoes(b: Base, cat: Catalogo, agora = new Date(), alertasDias: number[] = [30, 14, 7]): LinhaRenovacao[] {
+export function panoramaRenovacoes(b: Base, cat: Catalogo, agora = new Date(), alertasDias: number[] = [5]): LinhaRenovacao[] {
   const limite = Math.max(...alertasDias, 0);
   return b.clientes.filter((c) => c.status === "ativo").map((c): LinhaRenovacao => {
     const contato = b.contatos.find((x) => x.id === c.contact_id);

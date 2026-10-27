@@ -19,7 +19,7 @@ export default async function Renovacoes() {
   await exigirUsuario();
   const [b, cat] = await Promise.all([base(), catalogo()]);
   const agora = new Date();
-  const alertas = (cat.config.renovacao?.alertas_dias_antes as number[] | undefined) ?? [30, 14, 7];
+  const alertas = (cat.config.renovacao?.alertas_dias_antes as number[] | undefined) ?? [5];
   const linhas = panoramaRenovacoes(b, cat, agora, alertas);
   const de = (f: string) => linhas.filter((l) => l.faixa === f);
   const soma = (ls: LinhaRenovacao[]) => ls.reduce((s, l) => s + (l.valor ?? 0), 0);
