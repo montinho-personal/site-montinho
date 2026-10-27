@@ -1333,3 +1333,17 @@ Pedido do Montinho: "Nos que aparece já meu vídeo, não precisa excluir, só e
 - Ficaram sem: 105 artigos em que o último terço não fala de consultoria online, app ou acompanhamento. Parágrafo que só lista condomínios atendidos não conta.
 - O vídeo do Montinho que já estava em cada artigo continua.
 - updatedAt não mudou.
+
+## Títulos e descrições — muay thai e CrossFit (27/10/2026)
+
+Aprovado pelo Montinho em 27/10, depois dos prints e do export do Answer the Public.
+Páginas publicadas em 24/10, sem histórico no Search Console: a linha de base é zero
+e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que entraram.
+
+- `blog/beneficios-do-muay-thai` — metaTitle: "Benefícios do Muay Thai: Fôlego, Força, Agilidade e Mente" →
+  "Benefícios do Muay Thai para o Corpo, a Mente e a Mulher". Motivo: "para mulher", "para o corpo" e
+  "para a mente" lideram o autocompletar e o export; "fôlego" e "agilidade" não aparecem.
+- `blog/crossfit-da-massa-muscular` — metaTitle: "CrossFit Dá Massa Muscular? Quanto e Como Ganhar Mais" →
+  "CrossFit Dá Massa Muscular? Quanto Ganha e Depois dos 50". Motivo: "depois dos 50" e "depois dos 50
+  anos" são as duas primeiras sugestões do autocompletar.
+- Descrições reescritas nos dois (confirmam a resposta e deixam a dúvida aberta).

@@ -65,9 +65,9 @@ export const CROSSFIT_MUSCULO_POSTS: BlogPost[] = [
   {
     slug: "crossfit-da-massa-muscular",
     title: "CrossFit Dá Massa Muscular? Quanto Ganha e Como Ganhar Mais",
-    metaTitle: "CrossFit Dá Massa Muscular? Quanto e Como Ganhar Mais",
+    metaTitle: "CrossFit Dá Massa Muscular? Quanto Ganha e Depois dos 50",
     metaDescription:
-      "CrossFit dá massa muscular, mas com limites. Veja o que os estudos mediram, o que esperar no primeiro mês e o que muda para ganhar mais músculo.",
+      "CrossFit dá massa muscular, e os estudos medem ganho em semanas. Veja em quanto tempo, se deixa a mulher quadrada e se funciona depois dos 50.",
     excerpt:
       "Dá, e os estudos medem ganho de massa magra em poucas semanas. Mas o WOD que muda todo dia pode deixar um músculo com séries de menos, e o fôlego acaba antes do músculo. Veja o que esperar e como ajustar.",
     category: "Hipertrofia",
