@@ -453,6 +453,19 @@ bloco("13. RENOVAÇÃO NÃO FICA ABAIXO DO CORTE DA LISTA");
   ok("card de cliente vem no topo da lista", itensVisiveis(itens)[0]?.clientId === "K1");
 }
 
+bloco("14. AVISO DE RENOVAÇÃO SÓ 5 DIAS ANTES (pedido do Montinho, 27/10/2026)");
+{
+  const agora = new Date("2026-10-27T12:00:00-03:00");
+  const sla = { novo_lead_sem_contato_horas: 24, proposta_sem_follow_up_dias: 2, lead_parado_dias: 5, negociacao_antiga_dias: 7 };
+  const cli = (id: string, renewalDate: string) => ({ id, contactId: `C${id}`, nome: id, renewalDate, status: "ativo", proximaCobrancaEm: null, cobrancas: 0, pacote: null });
+  const itens = prioridadesHoje({ leads: [], tarefas: [], trials: [], clientes: [cli("R24", "2026-11-20"), cli("R6", "2026-11-02"), cli("R5", "2026-11-01"), cli("R0", "2026-10-27")], sla, renovacaoDias: [5] }, agora);
+  const tem = (id: string) => itens.some((i) => i.clientId === id);
+  ok("renovação daqui a 24 dias não aparece", !tem("R24"));
+  ok("daqui a 6 dias ainda não aparece", !tem("R6"));
+  ok("faltando 5 dias aparece", tem("R5"), JSON.stringify(itens.map((i) => i.motivo)));
+  ok("no dia da renovação continua aparecendo", tem("R0"));
+}
+
 console.log("\n" + "=".repeat(64));
 if (falhas) { console.log(`${falhas} TESTE(S) FALHARAM`); process.exit(1); }
 console.log("TODOS OS TESTES PASSARAM");
