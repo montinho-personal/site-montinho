@@ -299,7 +299,9 @@ ${FONTE_REGRAS}
       { question: "O que é um treino de Hyrox?", answer: "É o treino que prepara para a prova: corrida, força para as estações e, principalmente, corrida cansada, alternando 1 km de corrida com uma estação. A planilha de 8 semanas está no artigo sobre treino de Hyrox." },
       { question: "Hyrox ou musculação?", answer: "Não é uma escolha. A musculação dá a força que o Hyrox pede nos trenós, no avanço e no wall ball, e protege as articulações. Quem se prepara para o Hyrox mantém dois dias de força na semana." },
     ],
-    content: `<p>Hyrox e CrossFit aparecem juntos o tempo todo, e não é à toa: muitos boxes de CrossFit dão aula de Hyrox. Mas são coisas diferentes. <strong>O Hyrox é uma prova com formato fixo; o CrossFit é um método de treino que muda todo dia.</strong></p>
+    content: `<img src="/blog-images/hyrox-vs-crossfit-capa.webp" alt="Capa: Hyrox vs CrossFit, qual a diferença e qual escolher. Ilustração de um corredor e de um atleta com a barra acima da cabeça, com ícones de prova, método e qual escolher" title="Hyrox vs CrossFit: Qual a Diferença e Qual Escolher — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>Hyrox e CrossFit aparecem juntos o tempo todo, e não é à toa: muitos boxes de CrossFit dão aula de Hyrox. Mas são coisas diferentes. <strong>O Hyrox é uma prova com formato fixo; o CrossFit é um método de treino que muda todo dia.</strong></p>
 
 <h2>Resposta direta: qual a diferença entre Hyrox e CrossFit</h2>
 <table>
