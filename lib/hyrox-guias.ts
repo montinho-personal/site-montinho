@@ -49,7 +49,9 @@ export const HYROX_GUIAS_POSTS: BlogPost[] = [
       { question: "Onde fazer treino de Hyrox perto de mim?", answer: "Num box ou Training Club com aula de Hyrox, ou na academia que você já frequenta, com as estações adaptadas. Para Alphaville, Barueri, Santana de Parnaíba e Aldeia da Serra, os lugares estão nos guias de onde treinar Hyrox de cada cidade; para conferir se o lugar é credenciado, use o buscador oficial de Training Clubs." },
       { question: "Simulado de Hyrox: quando fazer?", answer: "Um meio simulado (4 km + 4 estações) por volta da sexta semana e um simulado completo em ritmo controlado duas semanas antes da prova. Na última semana, não; ali o objetivo é chegar descansado." },
     ],
-    content: `<p>Um treino de Hyrox não é só correr mais ou só levantar mais. A prova cobra as duas coisas ao mesmo tempo: <strong>oito trechos de 1 km de corrida, cada um seguido de uma estação</strong>, e quem treina as partes separadas chega no wall ball com a perna que nunca correu cansada. A planilha abaixo junta tudo na mesma semana.</p>
+    content: `<img src="/blog-images/treino-de-hyrox-capa.webp" alt="Capa: Treino de Hyrox, planilha de 8 semanas e como começar. Ilustração de um atleta lançando a bola no wall ball, com ícones de corrida, força e 8 semanas" title="Treino de Hyrox: Planilha de 8 Semanas, WOD e Como Começar — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>Um treino de Hyrox não é só correr mais ou só levantar mais. A prova cobra as duas coisas ao mesmo tempo: <strong>oito trechos de 1 km de corrida, cada um seguido de uma estação</strong>, e quem treina as partes separadas chega no wall ball com a perna que nunca correu cansada. A planilha abaixo junta tudo na mesma semana.</p>
 
 <h2>Resposta direta: como é o treino de Hyrox</h2>
 <ul>
@@ -197,7 +199,9 @@ ${FONTE_FORMATO}
       { question: "Quais são as categorias do Hyrox?", answer: "Individual Open e Pro, feminino e masculino; dupla feminina, masculina e mista, também em Open e Pro; e revezamento de quatro pessoas, feminino, masculino e misto. Há ainda a categoria adaptativa, com regulamento próprio." },
       { question: "Qual a estação mais difícil do Hyrox?", answer: "Para quem nunca treinou com trenó, costuma ser o sled push ou o sled pull. Para quem já chega cansado das corridas, as wall balls, que fecham a prova. Depende de onde você é mais fraco: é ali que vale treinar." },
     ],
-    content: `<p>O Hyrox tem <strong>8 estações, sempre na mesma ordem</strong>, em qualquer prova do mundo. Antes de cada uma, 1 km de corrida. O que muda de uma categoria para outra é o peso: o percurso é igual para todo mundo.</p>
+    content: `<img src="/blog-images/estacoes-do-hyrox-capa.webp" alt="Capa: Estações do Hyrox, ordem, pesos e técnica. Ilustração dos equipamentos da prova (SkiErg, trenó, corda, remo, kettlebells, sandbag e bola) ao longo de um percurso, com ícones de 8 estações, pesos e técnica" title="Estações do Hyrox: Ordem, Pesos por Categoria e Técnica — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>O Hyrox tem <strong>8 estações, sempre na mesma ordem</strong>, em qualquer prova do mundo. Antes de cada uma, 1 km de corrida. O que muda de uma categoria para outra é o peso: o percurso é igual para todo mundo.</p>
 
 <h2>As 8 estações do Hyrox, na ordem</h2>
 <ol>
