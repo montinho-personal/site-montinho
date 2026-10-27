@@ -96,6 +96,7 @@ export const ARTIGOS_LOCAIS_COM_VIDEO_RECOMECAR: string[] = [
   // Guias de academia (16/10/2026, pedido do Montinho). Só os guias de
   // academia e de marca; artigos genéricos de academia ficam de fora.
   "fabrica-premium-alphaville",
+  "six-alphaville",
   "academias-de-jiu-jitsu-em-barueri",
   "academia-em-condominio-como-aproveitar",
   "academias-em-alphaville",

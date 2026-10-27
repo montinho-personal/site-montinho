@@ -65,7 +65,7 @@ export const FABRICA_PREMIUM_POSTS: BlogPost[] = [
 <p>Estrutura boa ajuda, mas o resultado vem do treino: progressão de carga, técnica e constância. E não se compare com quem você vê no rooftop — cada um tem a própria genética, rotina e história. O que funciona é um protocolo que você consiga seguir por anos. Se quiser montar o seu, na academia que escolher, <a href="/personal-trainer-alphaville">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
 
 <h2>Outras academias da região</h2>
-<p>Veja o <a href="/blog/academias-em-alphaville">guia de academias em Alphaville</a> (24 horas, Wellhub, TotalPass e faixa de preço) e as <a href="/blog/academias-em-santana-de-parnaiba">academias em Santana de Parnaíba</a>.</p>`,
+<p>Veja o <a href="/blog/academias-em-alphaville">guia de academias em Alphaville</a> (24 horas, Wellhub, TotalPass e faixa de preço) e as <a href="/blog/academias-em-santana-de-parnaiba">academias em Santana de Parnaíba</a>. A outra academia de luxo da região é a <a href="/blog/six-alphaville">Six Alphaville</a>, all inclusive, no Empresarial 18 do Forte.</p>`,
     faq: [
       { question: "Qual o horário da Fábrica Premium Alphaville?", answer: "Segunda a sexta, das 6h às 23h; sábado, das 8h às 16h; domingos e feriados, das 8h às 14h." },
       { question: "Qual o telefone da Fábrica Premium Alphaville?", answer: "(11) 99179-5668, que também é o WhatsApp da academia." },
