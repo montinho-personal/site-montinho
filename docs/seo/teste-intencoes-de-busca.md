@@ -44,6 +44,44 @@ Observação: com menos de 250 impressões, a medição do braço B é mais ruid
 | fibras-musculares-tipo-1-tipo-2 | 332 | 8,5 | 0 |
 | agachamento-bulgaro-como-fazer | 322 | 9,0 | 0 |
 
+## Resultado (medido em 27/10/2026)
+
+Fonte: Search Console via Supermetrics (`GW`, Web). Janelas de 28 dias:
+**antes** 01/09 a 28/09/2026 e **depois** 29/09 a 26/10/2026. A linha de base
+acima (01/06 a 29/09) tem tamanho diferente e não foi usada na comparação.
+
+| Grupo | Impr. antes → depois | Cliques antes → depois | CTR antes → depois |
+|---|---|---|---|
+| Braço A (5) | 7.672 → 13.543 (+77%) | 45 → 70 (+56%) | 0,59% → 0,52% |
+| Braço B (5) | 284 → 700 (+146%) | 2 → 4 | 0,70% → 0,57% |
+| Controle (5) | 819 → 1.694 (+107%) | 4 → 5 | 0,49% → 0,30% |
+| Site inteiro | 246.550 → 325.363 (+32%) | 1.803 → 1.713 (−5%) | 0,73% → 0,53% |
+
+Por página (impressões, cliques, posição — antes → depois):
+- upper-lower 2.403 → 6.338, 34 → 53, 10,0 → 12,1 · crossover-vs-crucifixo 3.603 → 4.800, 9 → 11, 8,1 → 8,8 ·
+  cardio-mounjaro 942 → 867, 1 → 2, 7,8 → 7,2 · calorias-massa 256 → 475, 0 → 2, 10,3 → 9,3 · frutas 468 → 1.063, 1 → 2, 7,9 → 8,4
+- hip-dips 120 → 93, 0 → 0 · quanto-tempo-resultado 60 → 163, 0 → 1 · cafeína 51 → 256, 0 → 0 · mulher-iniciante 53 → 188, 2 → 3, 8,6 → 19,5 ·
+  glúteo médio 0 → 0 (as 104 impressões da base são todas de antes de setembro)
+- controle: cardio 139 → 395 · bíceps 285 → 327 · yoga 200 → 179 · fibras 89 → 166 · búlgaro 106 → 627
+
+Leitura:
+- Todo mundo cresceu em impressões, inclusive o controle (o site inteiro subiu 32%). Impressão não separa o efeito do método.
+- O sinal está no clique e no CTR: o braço A ganhou 25 cliques (+56%) enquanto o site perdeu 5%, e o CTR do A caiu 12%, contra 27% no site e 39% no controle.
+- O ganho é concentrado: upper-lower responde por 19 dos 25 cliques novos. Sem ele, o braço A foi de 11 para 17 cliques.
+- Braço B e controle têm números pequenos demais para concluir (2 a 5 cliques por mês).
+- Posição não melhorou de forma consistente: as páginas passaram a aparecer em mais buscas, várias delas em posições piores.
+
+Recomendação: manter o método como padrão para artigo novo (já é regra) e aplicar
+nos artigos antigos só no perfil do braço A (1ª página, posição 7–11, centenas de
+impressões), em lotes registrados com antes/depois. Não reescrever artigos da 2ª
+página nem o blog inteiro com base neste resultado.
+
+Auditoria dos dados: soma das 5 páginas do braço A conferida com consulta
+agregada à fonte (13.543 / 70 e 7.672 / 45, iguais); total do site consultado
+direto; sem variações de URL com parâmetro nas 15 páginas. Limites: 4 semanas,
+efeito de crescimento geral do site, termos ocultos do Search Console, e o
+artigo quanto-tempo-para-ganhar-massa-muscular também foi tocado (ver registro).
+
 ## Registro das mudanças
 
 ### crossover-vs-crucifixo (29/09)
