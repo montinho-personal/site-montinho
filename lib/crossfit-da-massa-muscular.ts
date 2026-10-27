@@ -41,7 +41,25 @@ const FONTE_HUBAL = {
   url: "https://pubmed.ncbi.nlm.nih.gov/15947721/",
 };
 
-const FONTES = [FONTE_KAPSIS, FONTE_CAVEDON, FONTE_CLAUDINO, FONTE_SCHOENFELD_CARGA, FONTE_SCHOENFELD_VOLUME, FONTE_HUBAL];
+const FONTE_ROBERTS = {
+  rotulo: "Roberts BM, Nuckols G, Krieger JW. Sex differences in resistance training: a systematic review and meta-analysis. Journal of Strength and Conditioning Research, 2020",
+  url: "https://pubmed.ncbi.nlm.nih.gov/32218059/",
+};
+const FONTE_PETERSON = {
+  rotulo: "Peterson MD, Sen A, Gordon PM. Influence of resistance exercise on lean body mass in aging adults: a meta-analysis. Medicine & Science in Sports & Exercise, 2011",
+  url: "https://pubmed.ncbi.nlm.nih.gov/20543750/",
+};
+const FONTE_MORTON = {
+  rotulo: "Morton RW, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. British Journal of Sports Medicine, 2018",
+  url: "https://pubmed.ncbi.nlm.nih.gov/28698222/",
+};
+// Prints do Google e export do Answer the Public de 27/10/2026: entraram
+// "como fica o corpo", "quanto tempo muda o corpo", "deixa a mulher
+// quadrada", "depois dos 50", "comecei e engordei", barriga e frequência.
+// Emagrecimento e a comparação completa com musculação ficam nos artigos
+// próprios (crossfit-emagrece, crossfit-vs-musculacao), só com link aqui.
+
+const FONTES = [FONTE_KAPSIS, FONTE_CAVEDON, FONTE_CLAUDINO, FONTE_SCHOENFELD_CARGA, FONTE_SCHOENFELD_VOLUME, FONTE_HUBAL, FONTE_ROBERTS, FONTE_PETERSON, FONTE_MORTON];
 
 export const CROSSFIT_MUSCULO_POSTS: BlogPost[] = [
   {
@@ -54,8 +72,8 @@ export const CROSSFIT_MUSCULO_POSTS: BlogPost[] = [
       "Dá, e os estudos medem ganho de massa magra em poucas semanas. Mas o WOD que muda todo dia pode deixar um músculo com séries de menos, e o fôlego acaba antes do músculo. Veja o que esperar e como ajustar.",
     category: "Hipertrofia",
     date: "2026-10-24",
-    updatedAt: "2026-10-24",
-    readTime: "8 min",
+    updatedAt: "2026-10-27",
+    readTime: "10 min",
     author: "Montinho",
     tags: ["crossfit", "hipertrofia", "massa muscular", "treino funcional", "volume de treino"],
     faq: [
@@ -90,6 +108,36 @@ export const CROSSFIT_MUSCULO_POSTS: BlogPost[] = [
           "Para hipertrofia, a musculação costuma ser mais eficiente, porque deixa você controlar quantas séries cada músculo recebe e subir a carga aos poucos. O CrossFit entrega condicionamento junto. A comparação completa está no artigo CrossFit ou musculação.",
       },
       {
+        question: "Como fica o corpo de quem pratica CrossFit?",
+        answer:
+          "Com mais fôlego, mais força e, com o tempo, um pouco mais de músculo e menos gordura. Num estudo, praticantes de CrossFit tinham menos gordura que pessoas ativas da mesma idade e IMC. Quanto o corpo muda depende de quantas séries cada músculo recebe na semana e da alimentação.",
+      },
+      {
+        question: "O CrossFit deixa a mulher quadrada?",
+        answer:
+          "Não. Ganhar músculo é lento para homem e para mulher, e o corpo muda aos poucos, com anos de carga subindo. O que o CrossFit costuma fazer é deixar o corpo mais firme e com menos gordura. Se em algum momento você quiser menos volume em algum lugar, é só ajustar o treino.",
+      },
+      {
+        question: "CrossFit dá massa muscular depois dos 50?",
+        answer:
+          "Dá. Numa meta-análise com quase 1.300 pessoas acima de 50 anos, o treino de força aumentou em média 1,1 kg de massa magra, e quanto mais volume de treino, maior o ganho. O cuidado é começar com carga e impacto que o corpo aguente e subir aos poucos.",
+      },
+      {
+        question: "Comecei a fazer CrossFit e engordei. É normal?",
+        answer:
+          "Pode ser. A balança soma músculo, água e gordura, e o treino novo costuma mexer em todos. Também é comum a fome aumentar. Antes de se preocupar, olhe a cintura, as roupas e a carga dos exercícios por algumas semanas. Se a cintura também subiu, o ajuste é na alimentação.",
+      },
+      {
+        question: "O CrossFit elimina a barriga?",
+        answer:
+          "Nenhum treino tira gordura de um lugar só. O CrossFit ajuda a perder barriga porque gasta muitas calorias e ajuda a manter o músculo, mas quem decide é o déficit calórico da semana. A conta está no artigo CrossFit emagrece?.",
+      },
+      {
+        question: "Quantas vezes por semana fazer CrossFit para ganhar massa?",
+        answer:
+          "Três vezes por semana já deram resultado no estudo de 12 semanas. Mais do que isso só ajuda se você recupera: WOD forte todo dia, sem dia livre, costuma travar a evolução. Para ganhar mais músculo, troque um WOD por um treino de musculação focado no que está faltando.",
+      },
+      {
         question: "Mulher ganha músculo fazendo CrossFit?",
         answer:
           "Ganha. No estudo de 12 semanas havia homens e mulheres, e a massa magra subiu nos grupos que treinaram. O que decide é o mesmo para todo mundo: séries suficientes por músculo, esforço perto da falha, comida e sono.",
@@ -120,7 +168,7 @@ export const CROSSFIT_MUSCULO_POSTS: BlogPost[] = [
 <li><strong>Falta comida.</strong> O CrossFit gasta muito. Se a alimentação não acompanha, o corpo não tem material para construir músculo.</li>
 </ul>
 
-<h2>O que esperar no primeiro mês</h2>
+<h2>Quanto tempo o CrossFit leva para mudar o corpo?</h2>
 <p>No estudo de 12 semanas, a massa magra já tinha subido na 6ª semana no grupo de carga moderada; o de carga leve só alcançou na 12ª.</p>
 <p>E a resposta varia muito. Num estudo com 585 pessoas fazendo exatamente o mesmo treino de braço por 12 semanas, o ganho de tamanho do músculo foi de −2% a +59% (<a href="${FONTE_HUBAL.url}" target="_blank" rel="noopener noreferrer">Hubal e colegas, 2005</a>). Comparar o seu primeiro mês com o de outra pessoa do box não diz nada sobre você.</p>
 
@@ -133,6 +181,20 @@ export const CROSSFIT_MUSCULO_POSTS: BlogPost[] = [
 <li><strong>Durma e descanse.</strong> WOD forte todo dia, sem dia livre, é o caminho mais curto para parar de evoluir.</li>
 </ol>
 <p>Na prática, o que trava quem faz CrossFit e quer músculo não é o box: é a semana sem conta. Você faltou na segunda, o WOD de perna caiu na sexta junto com a musculação, a carga do agachamento parou de subir e ninguém percebeu. É aí que alguém precisa olhar e ajustar. Eu monto a musculação em volta do seu CrossFit e acompanho o que acontece, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>.</p>
+
+<h3>E a alimentação?</h3>
+<p>Para ganhar músculo, a proteína do dia importa mais que o suplemento da hora. Numa meta-análise com 49 estudos, somar proteína ao treino de força aumentou o ganho de massa magra, mas o efeito parou de crescer por volta de <strong>1,6 g de proteína por quilo de peso por dia</strong> (<a href="${FONTE_MORTON.url}" target="_blank" rel="noopener noreferrer">Morton e colegas, 2018</a>). Whey ajuda a chegar nesse número, mas comida resolve igual. Veja <a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">quanta proteína por dia para ganhar massa muscular</a>.</p>
+
+<h2>Como fica o corpo de quem pratica CrossFit?</h2>
+<p>O que muda primeiro é o desempenho: mais fôlego, mais força, menos cansaço no WOD que antes acabava com você. A aparência muda mais devagar. Nos praticantes medidos por densitometria, quem fazia CrossFit tinha menos gordura que pessoas ativas da mesma idade e IMC (<a href="${FONTE_CAVEDON.url}" target="_blank" rel="noopener noreferrer">Cavedon e colegas, 2020</a>). Quanto de músculo aparece depende das séries de cada músculo e da alimentação, e a gordura que sai depende do déficit calórico.</p>
+<p>Uma dúvida comum: "comecei o CrossFit e engordei". A balança soma músculo, água e gordura, e o treino novo costuma mexer em todos, além de aumentar a fome. Olhe a cintura, as roupas e a carga dos exercícios por algumas semanas antes de tirar conclusão. Para a barriga, o que decide é a conta da semana: está em <a href="/blog/crossfit-emagrece">CrossFit emagrece?</a>.</p>
+
+<h2>CrossFit deixa a mulher quadrada?</h2>
+<p>Não. O corpo da mulher responde ao treino de força tão bem quanto o do homem, em proporção: numa meta-análise que comparou os dois no mesmo treino, o ganho de músculo foi parecido, e o ganho de força de braços, em proporção, foi maior nas mulheres (<a href="${FONTE_ROBERTS.url}" target="_blank" rel="noopener noreferrer">Roberts e colegas, 2020</a>). Mas ganhar músculo é lento para todo mundo. O que o CrossFit costuma fazer no corpo feminino é deixar mais firme e com menos gordura, não "quadrado" de uma hora para outra. E o treino é ajustável: se quiser menos volume num lugar, é só mudar a distribuição das séries.</p>
+
+<h2>CrossFit dá massa muscular depois dos 50?</h2>
+<p>Dá. Numa meta-análise com 49 estudos e quase 1.300 pessoas acima de 50 anos, o treino de força aumentou em média <strong>1,1 kg de massa magra</strong>, e os programas com mais volume deram mais resultado (<a href="${FONTE_PETERSON.url}" target="_blank" rel="noopener noreferrer">Peterson e colegas, 2011</a>). Os mais velhos ganharam um pouco menos, o que é mais um motivo para começar, não para desistir.</p>
+<p>O cuidado depois dos 50 é com o impacto e a progressão: salto, corrida e carga alta entram aos poucos, com a técnica firme antes do cronômetro. Veja também <a href="/blog/comecar-a-treinar-depois-dos-50">começar a treinar depois dos 50</a> e <a href="/blog/hipertrofia-apos-os-40-anos">hipertrofia após os 40 anos</a>.</p>
 
 <h2>CrossFit ou musculação para hipertrofia?</h2>
 <p>Para ganhar massa, a musculação costuma ser mais eficiente, porque deixa você controlar as séries de cada músculo e subir a carga com plano. O CrossFit entrega condicionamento, comunidade e gasto calórico junto. Não precisa escolher um só: a comparação completa está em <a href="/blog/crossfit-vs-musculacao">CrossFit ou musculação</a>, e as calorias de uma aula, em <a href="/blog/crossfit-emagrece">CrossFit emagrece?</a>.</p>
