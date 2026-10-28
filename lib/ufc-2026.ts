@@ -275,26 +275,43 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-03",
+    updatedAt: "2026-10-28",
     readTime: "5 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC Vegas 124", "Gabriel Bonfim", "Marretinha", "Sean Brady"],
-    content: `<blockquote><p>Informações verificadas em 3 de outubro de 2026. O card ainda pode mudar; esta página é atualizada até a luta.</p></blockquote>
+    content: `<img src="/blog-images/ufc-vegas-124-gabriel-bonfim-sean-brady-capa.webp" alt="Capa: UFC Vegas 124 — Gabriel Bonfim x Sean Brady, sábado 7/11, card principal às 22h" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p>Informações verificadas em 28 de outubro de 2026 na página oficial do evento. O card ainda pode mudar; esta página é atualizada até a luta.</p></blockquote>
 <p>A próxima luta de <strong>Gabriel Bonfim</strong>, o "Marretinha", é a principal do <strong>UFC Vegas 124</strong>, no <strong>sábado, 7 de novembro de 2026</strong>, no Meta Apex, em Las Vegas. Ele enfrenta o norte-americano <strong>Sean Brady</strong>, no peso meio-médio (até 77,1 kg).</p>
 
 <h2>Que horas é a luta do Gabriel Bonfim?</h2>
-<p>O UFC ainda vai divulgar a grade oficial em horário de Brasília; ela entra aqui assim que sair. A luta principal é sempre a última da noite, então a do Bonfim deve começar bem depois do início do card principal.</p>
+<p>O card preliminar começa às <strong>19h</strong> e o card principal às <strong>22h</strong>, no horário de Brasília. A luta do Bonfim é a principal, a última da noite, depois das outras cinco lutas do card principal.</p>
 
 <h2>Onde assistir ao UFC Vegas 124 ao vivo</h2>
 <p>O evento é transmitido pelo <strong>Paramount+</strong>, que exibe o UFC no Brasil, e pelo UFC Fight Pass.</p>
 
 <h2>Card do UFC Vegas 124</h2>
+<p>Os brasileiros estão em negrito. Veja todos eles em <a href="/blog/brasileiros-ufc-vegas-124">brasileiros no UFC Vegas 124</a>.</p>
+<h3>Card principal (22h)</h3>
 <table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
 <tr><td><strong>Gabriel Bonfim</strong> x Sean Brady</td><td>Meio-médio (luta principal)</td></tr>
 <tr><td>Tatiana Suarez x <strong>Virna Jandiroba</strong></td><td>Peso-palha feminino</td></tr>
-<tr><td>Mantas Kondratavičius x Wesley Schultz</td><td>Peso-médio</td></tr>
+<tr><td>Davey Grant x Elijah Smith</td><td>Peso-galo</td></tr>
+<tr><td>Seokhyeon Ko x <strong>Wellington Turman</strong></td><td>Meio-médio</td></tr>
+<tr><td>Billy Elekana x <strong>Lucas Fernando</strong></td><td>Meio-pesado</td></tr>
+<tr><td>Mantas Kondratavičius x Andre Petroski</td><td>Peso-médio</td></tr>
 </tbody></table>
-<p>A brasileira <strong>Priscila Cachoeira</strong> também está escalada. O card completo é fechado nas semanas antes do evento e entra aqui.</p>
-
+<h3>Card preliminar (19h)</h3>
+<table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
+<tr><td><strong>Gabriel Lorenco</strong> x Alvin Hines</td><td>Peso-pesado</td></tr>
+<tr><td><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong></td><td>Peso-mosca feminino</td></tr>
+<tr><td>Mitch Raposo x Marcos Degli</td><td>Peso-mosca</td></tr>
+<tr><td><strong>José Delano</strong> x Murtazali Magomedov</td><td>Peso-pena</td></tr>
+<tr><td>Keiichiro Nakamura x Ollie Schmid</td><td>Peso-pena</td></tr>
+<tr><td>Austin Bashi x Lucas Brennan</td><td>Peso-pena</td></tr>
+<tr><td><strong>Priscila Cachoeira</strong> x Nina Milošević</td><td>Peso-galo feminino</td></tr>
+<tr><td>Jonny Parsons x <strong>José Souza</strong></td><td>Meio-médio</td></tr>
+</tbody></table>
+<p>Mudança desde o anúncio: Mantas Kondratavičius agora enfrenta Andre Petroski (antes, Wesley Schultz). A ordem das lutas pode mudar até o dia do evento.</p>
 <h2>Tem UFC neste sábado? O calendário de novembro</h2>
 <ul>
 <li><strong>7 de novembro:</strong> UFC Vegas 124, Bonfim x Brady, em Las Vegas.</li>
@@ -325,17 +342,74 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <li><a href="https://www.ufc.com.br/news/card-completo-resultados-ufc-vegas-118" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim vence Belal Muhammad no UFC Vegas 118</a></li>
 <li><a href="https://www.ufc.com.br/news/gabriel-bonfim-entra-top-5-ranking-peso-meio-medio" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim entra no Top 5 do peso meio-médio</a></li>
 <li><a href="https://agfight.com/ufc/gabriel-marretinha-enfrenta-sean-brady-na-luta-principal-do-ufc-vegas-124/" target="_blank" rel="noopener noreferrer">Ag. Fight — Marretinha enfrenta Sean Brady na luta principal do UFC Vegas 124</a></li>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Fight Night: Bonfim x Brady (página oficial, card e horários)</a></li>
 <li>Veículos consultados: MMA Sucka, Yahoo Sports, Mais Goiás, Wikipédia.</li>
 </ul>`,
     faq: [
       { question: "Quando é a próxima luta de Gabriel Bonfim?", answer: "Sábado, 7 de novembro de 2026, contra Sean Brady, na luta principal do UFC Vegas 124, em Las Vegas." },
-      { question: "Que horas luta o Gabriel Bonfim?", answer: "A grade oficial em horário de Brasília ainda não foi divulgada e entra nesta página assim que sair. A luta dele é a principal, a última da noite." },
+      { question: "Que horas luta o Gabriel Bonfim?", answer: "O card principal começa às 22h (Brasília) e a luta dele é a principal, a última da noite. O card preliminar começa às 19h." },
       { question: "Qual é o próximo UFC?", answer: "Depois do UFC Vegas 124, em 7 de novembro, vem o UFC 334, em 14 de novembro, no Madison Square Garden." },
       { question: "Onde assistir à luta do Gabriel Bonfim?", answer: "No Paramount+ e no UFC Fight Pass." },
       { question: "Qual é o ranking de Gabriel Bonfim no UFC?", answer: "5º do peso meio-médio, depois da vitória sobre Belal Muhammad em junho de 2026." },
       { question: "Qual é o cartel de Gabriel Bonfim?", answer: "20 vitórias e 1 derrota no MMA profissional." },
       { question: "Gabriel Bonfim é irmão de quem?", answer: "De Ismael Bonfim, irmão mais velho, que também luta no UFC, no peso-leve." },
       { question: "Qual foi a última luta de Gabriel Bonfim?", answer: "Vitória por decisão unânime sobre Belal Muhammad, em 6 de junho de 2026, no UFC Vegas 118." },
+    ],
+  },
+  {
+    slug: "brasileiros-ufc-vegas-124",
+    title: "Brasileiros no UFC Vegas 124: quem luta, contra quem e que horas",
+    metaTitle: "Brasileiros no UFC Vegas 124: Bonfim, Virna e Mais",
+    metaDescription:
+      "Os brasileiros do UFC Vegas 124 (7/11): Gabriel Bonfim na luta principal, Virna Jandiroba, Wellington Turman, Karine Silva e mais. Adversários e horários.",
+    excerpt:
+      "Bonfim, Virna Jandiroba, Wellington Turman, Lucas Fernando, Karine Silva, Gabriella Fernandes e mais no UFC Vegas 124: contra quem lutam e a que horas.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-10-28",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC Vegas 124", "brasileiros no UFC", "Gabriel Bonfim", "Virna Jandiroba"],
+    content: `<img src="/blog-images/ufc-vegas-124-gabriel-bonfim-sean-brady-capa.webp" alt="Brasileiros no UFC Vegas 124 — Gabriel Bonfim x Sean Brady na luta principal, sábado 7/11" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<p>Dez brasileiros estão no <strong>UFC Vegas 124</strong>, no <strong>sábado, 7 de novembro de 2026</strong>, no Meta Apex, em Las Vegas. <strong>Gabriel Bonfim</strong>, o Marretinha, faz a luta principal contra o norte-americano Sean Brady. Horários, transmissão e o card completo em <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">Bonfim x Brady: horário e onde assistir</a>.</p>
+
+<h2>Quem são os brasileiros do UFC Vegas 124</h2>
+<h3>Card principal (22h)</h3>
+<ul>
+<li><strong>Gabriel Bonfim</strong> x Sean Brady: luta principal, peso meio-médio.</li>
+<li><strong>Virna Jandiroba</strong> x Tatiana Suarez: peso-palha feminino.</li>
+<li><strong>Wellington Turman</strong> x Seokhyeon Ko: peso meio-médio.</li>
+<li><strong>Lucas Fernando</strong> x Billy Elekana: peso meio-pesado.</li>
+</ul>
+<h3>Card preliminar (19h)</h3>
+<ul>
+<li><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong>: duelo brasileiro no peso-mosca feminino.</li>
+<li><strong>Gabriel Lorenco</strong> x Alvin Hines: peso-pesado.</li>
+<li><strong>José Delano</strong> x Murtazali Magomedov: peso-pena.</li>
+<li><strong>Priscila Cachoeira</strong> x Nina Milošević: peso-galo feminino.</li>
+<li><strong>José Souza</strong> x Jonny Parsons: peso meio-médio.</li>
+</ul>
+
+<h2>Que horas lutam os brasileiros?</h2>
+<p>O card preliminar começa às <strong>19h</strong> e o card principal às <strong>22h</strong>, no horário de Brasília. A luta do Bonfim é a última da noite. A ordem exata das lutas pode mudar até o dia do evento.</p>
+
+<h2>Como os lutadores chegam à balança</h2>
+<p>Todos passam pela pesagem na véspera, e muitos fazem corte de peso. Entenda o processo em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>, e como eles treinam em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Fight Night: Bonfim x Brady (página oficial, card e horários)</a></li>
+<li>Nacionalidade conferida no perfil oficial de cada atleta em ufc.com.br (cidade natal), em 28/10/2026.</li>
+<li><a href="https://agfight.com/ufc/gabriel-marretinha-enfrenta-sean-brady-na-luta-principal-do-ufc-vegas-124/" target="_blank" rel="noopener noreferrer">Ag. Fight — Marretinha enfrenta Sean Brady na luta principal do UFC Vegas 124</a></li>
+</ul>`,
+    faq: [
+      { question: "Quais brasileiros lutam no UFC Vegas 124?", answer: "Gabriel Bonfim (luta principal), Virna Jandiroba, Wellington Turman e Lucas Fernando no card principal; Karine Silva, Gabriella Fernandes, Gabriel Lorenco, José Delano, Priscila Cachoeira e José Souza no preliminar." },
+      { question: "Contra quem luta Virna Jandiroba no UFC Vegas 124?", answer: "Contra Tatiana Suarez, no peso-palha feminino, no card principal." },
+      { question: "Tem luta entre brasileiras no UFC Vegas 124?", answer: "Tem: Karine Silva x Gabriella Fernandes, no peso-mosca feminino, no card preliminar." },
+      { question: "Que horas lutam os brasileiros no UFC Vegas 124?", answer: "O card preliminar começa às 19h e o principal às 22h, horário de Brasília." },
     ],
   },
   {
