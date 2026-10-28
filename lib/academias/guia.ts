@@ -146,6 +146,12 @@ export const ITENS: ItemGuia[] = [
     penseDuasVezes: "Você treina três vezes por semana só na musculação — a conta por treino não fecha.",
   },
   {
+    id: "six-alphaville",
+    grupo: "premium",
+    paraQuem: "Quem quer resolver treino, recuperação e conveniência num lugar só e vai usar o recovery, o spa e os serviços incluídos.",
+    penseDuasVezes: "Você só faz musculação e não vai usar os serviços: é a mensalidade mais alta da região entre as que divulgaram preço.",
+  },
+  {
     id: "bio-ritmo-alphaville",
     grupo: "premium",
     paraQuem: "Quem quer ambiente premium com a operação de uma rede grande por trás.",

@@ -313,6 +313,28 @@ export const ACADEMIAS: Academia[] = [
     faixaPreco: naoConfirmado<FaixaPreco>(),
     estilos: naoConfirmado<Estilo[]>(),
   },
+  {
+    id: "six-alphaville",
+    nome: "Six Alphaville",
+    artigoSlug: "six-alphaville",
+    siteOficial: "https://www.instagram.com/six.spalphaville/",
+    // Av. Copacabana, 325, Empresarial 18 do Forte, 23º andar (Instagram oficial).
+    // Inauguração anunciada para outubro de 2026 (VERO e revista Business).
+    regiao: "centro-industrial-empresarial",
+    tipo: "rede",
+    status: "ativa",
+    vinteQuatroHoras: naoConfirmado<boolean>(),
+    abreDomingo: naoConfirmado<boolean>(),
+    abreSabado: naoConfirmado<boolean>(),
+    fechaDiaUtil: naoConfirmado<number>(),
+    abreDiaUtil: naoConfirmado<number>(),
+    estacionamento: confirmado(true, "oficial", "manobrista incluído na mensalidade, segundo o fundador à revista VERO (06/08/2026)", "2026-10-27"),
+    wellhub: naoConfirmado<boolean>(),
+    totalpass: naoConfirmado<boolean>(),
+    personalExterno: naoConfirmado<boolean>(),
+    faixaPreco: confirmado("premium", "oficial", "R$ 2.500 a R$ 3.000 por mês, segundo o fundador à revista VERO (06/08/2026)", "2026-10-27"),
+    estilos: confirmado(["maquinas", "cardio", "aulas_coletivas", "premium"], "oficial", "linha Luxury da Technogym, cardio, spinning, pilates e yoga (VERO e revista Business)", "2026-10-27"),
+  },
 ];
 
 /**
