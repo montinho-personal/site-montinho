@@ -36,7 +36,9 @@ export const SIX_ALPHAVILLE_POSTS: BlogPost[] = [
     readTime: "6 min",
     author: "Montinho Personal Trainer",
     tags: ["six alphaville", "academia six", "six wowness club", "six sport life", "academia premium", "academia Alphaville"],
-    content: `<blockquote><p>Informações conferidas em 27 de outubro de 2026 no Instagram oficial <a href="https://www.instagram.com/six.spalphaville/" target="_blank" rel="noopener noreferrer">@six.spalphaville</a>, em entrevista do fundador à <a href="https://vero.com.br/" target="_blank" rel="noopener noreferrer">revista VERO</a> e em nota da revista Business. A unidade estava em fase de inauguração: horário, preço e serviços podem mudar. Confirme com a academia antes de ir.</p></blockquote>
+    content: `<img src="/blog-images/six-alphaville-capa.webp" alt="Capa: Six Alphaville, a academia no 23º andar, em ilustração com parede verde, teto de madeira e vista da cidade" title="Six Alphaville: a academia no 23º andar — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<blockquote><p>Informações conferidas em 27 de outubro de 2026 no Instagram oficial <a href="https://www.instagram.com/six.spalphaville/" target="_blank" rel="noopener noreferrer">@six.spalphaville</a>, em entrevista do fundador à <a href="https://vero.com.br/" target="_blank" rel="noopener noreferrer">revista VERO</a> e em nota da revista Business. A unidade estava em fase de inauguração: horário, preço e serviços podem mudar. Confirme com a academia antes de ir.</p></blockquote>
 
 <h2>Resumo da Six Alphaville</h2>
 <ul>
