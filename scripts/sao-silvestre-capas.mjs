@@ -157,6 +157,14 @@ const CAPAS = [
 <div class="sub"><b>Peso-leve</b> · Meta Apex, Las Vegas<br>Card principal às <b>21h</b> (Brasília).</div></div>`, "UFC Vegas 123"),
   },
   {
+    slug: "ufc-vegas-124-gabriel-bonfim-sean-brady",
+    alt: "Capa: UFC Vegas 124 — Gabriel Bonfim x Sean Brady, sábado 7/11, card principal às 22h",
+    html: base(`
+<div class="top"><div class="kicker">UFC Vegas 124 · Sáb 7/11</div><div class="chip"><i></i>Luta principal</div></div>
+<div class="main"><h1><em>Bonfim</em><br>x Sean Brady</h1>
+<div class="sub"><b>Peso meio-médio</b> · Meta Apex, Las Vegas<br>Card principal às <b>22h</b> (Brasília).</div></div>`, "UFC Vegas 124"),
+  },
+  {
     slug: "ufc-332-natalia-silva",
     alt: "Capa: UFC 332 — Natália Silva x Wang Cong pelo cinturão peso-mosca, sábado 3/10",
     html: base(`
