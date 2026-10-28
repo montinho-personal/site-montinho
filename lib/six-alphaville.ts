@@ -19,7 +19,9 @@ import type { BlogPost } from "./blog";
  *   VERO, Instagram oficial e Nosso Meio (abr/2026).
  * - Primeira unidade em Brasília (Noroeste) e unidade no Itaim Bibi (SP), com
  *   mensalidade de R$ 3,5 mil citada por InfoMoney e Forbes (2025).
- * Personal externo, Wellhub/TotalPass, horário e diária: não publicados.
+ * WhatsApp comercial (11) 94025-9427, atendimento 8h–18h todos os dias: perfil
+ *   do WhatsApp Business "Six Alphaville - Comercial" (print do Montinho, 28/10).
+ * Personal externo, Wellhub/TotalPass, horário da academia e diária: não publicados.
  * Atendimento do Montinho na Six: NÃO confirmado (regra do AGENTS.md).
  */
 export const SIX_ALPHAVILLE_POSTS: BlogPost[] = [
@@ -33,6 +35,7 @@ export const SIX_ALPHAVILLE_POSTS: BlogPost[] = [
       "A academia all inclusive da rede SIX no 23º andar do Empresarial 18 do Forte: endereço, inauguração, estrutura, mensalidade citada pelo fundador e quem são os donos.",
     category: "Academias",
     date: "2026-10-27",
+    updatedAt: "2026-10-28",
     readTime: "6 min",
     author: "Montinho Personal Trainer",
     tags: ["six alphaville", "academia six", "six wowness club", "six sport life", "academia premium", "academia Alphaville"],
@@ -43,6 +46,7 @@ export const SIX_ALPHAVILLE_POSTS: BlogPost[] = [
 <h2>Resumo da Six Alphaville</h2>
 <ul>
 <li><strong>Endereço:</strong> Av. Copacabana, 325 — Empresarial 18 do Forte, Alphaville, Barueri (SP), CEP 06472-001, segundo o Instagram oficial;</li>
+<li><strong>WhatsApp comercial:</strong> (11) 94025-9427, conta "Six Alphaville - Comercial", com atendimento das 8h às 18h todos os dias, segundo o perfil da conta;</li>
 <li><strong>Onde, no prédio:</strong> 23º andar, na cobertura, com vista 360° da região;</li>
 <li><strong>Inauguração:</strong> anunciada para outubro de 2026;</li>
 <li><strong>Proposta:</strong> academia "all inclusive", que a marca chama de "6 estrelas", com serviços de hotel de luxo incluídos na mensalidade;</li>
@@ -78,7 +82,7 @@ export const SIX_ALPHAVILLE_POSTS: BlogPost[] = [
 
 <h2>Quanto custa a mensalidade da Six?</h2>
 <p>Na unidade de Alphaville, o fundador Eilson Studart Filho disse à VERO que a mensalidade fica <strong>entre R$ 2.500 e R$ 3.000</strong>. Ele compara com a soma que muita gente já paga: cerca de R$ 600 de academia, mais uns R$ 1.500 de personal trainer, mais a alimentação da semana. Na unidade do Itaim Bibi, em São Paulo, InfoMoney e Forbes publicaram em 2025 uma mensalidade de R$ 3,5 mil.</p>
-<p>A academia não publica tabela de planos nem valor de diária nos canais conferidos: confirme o valor atual direto com a Six.</p>
+<p>A academia não publica tabela de planos nem valor de diária nos canais conferidos: o valor atual é passado pelo WhatsApp comercial, (11) 94025-9427.</p>
 
 <h2>Qual é a academia mais cara de Alphaville?</h2>
 <p>Entre as academias que tiveram preço divulgado, a <strong>Six</strong> é a de mensalidade mais alta da região: R$ 2.500 a R$ 3.000, segundo o fundador. As outras academias premium de Alphaville, como Bodytech, Scelta, 4Perform e a <a href="/blog/fabrica-premium-alphaville">Fábrica Premium</a>, não publicam tabela de preço padronizada, então não dá para montar um ranking exato. O comparativo está em <a href="/blog/academias-premium-alphaville">academias premium em Alphaville</a> e em <a href="/blog/quanto-custa-academia-em-alphaville">quanto custa academia em Alphaville</a>.</p>
@@ -112,6 +116,7 @@ export const SIX_ALPHAVILLE_POSTS: BlogPost[] = [
     faq: [
       { question: "Onde fica a Six Alphaville?", answer: "Na Av. Copacabana, 325, no Empresarial 18 do Forte, em Alphaville, Barueri (CEP 06472-001), segundo o Instagram oficial. A academia ocupa o 23º andar, na cobertura do prédio." },
       { question: "Quanto custa a mensalidade da Six Alphaville?", answer: "Segundo o fundador Eilson Studart Filho, em entrevista à revista VERO, entre R$ 2.500 e R$ 3.000 por mês, com os serviços do modelo all inclusive. A academia não publica tabela de planos: confirme o valor atual com a Six." },
+      { question: "Qual o telefone da Six Alphaville?", answer: "O WhatsApp comercial é (11) 94025-9427 (conta \"Six Alphaville - Comercial\"), com atendimento das 8h às 18h todos os dias. Esse é o horário do atendimento comercial, não necessariamente o de funcionamento da academia." },
       { question: "Quando abre a Six Alphaville?", answer: "A inauguração foi anunciada para outubro de 2026. Confira no Instagram @six.spalphaville se a unidade já está funcionando e o horário." },
       { question: "Quem é o dono da Six?", answer: "A rede foi criada pelo empresário e arquiteto Eilson Studart Filho. O médico nutrólogo Leandro Vaz é o cofundador, segundo o Instagram oficial da unidade." },
       { question: "Qual é a academia mais cara de Alphaville?", answer: "Entre as academias com preço divulgado, a Six: R$ 2.500 a R$ 3.000 por mês, segundo o fundador. As outras premium da região não publicam tabela padronizada, então não dá para cravar um ranking exato." },
