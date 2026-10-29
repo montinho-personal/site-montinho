@@ -13,6 +13,9 @@ import type { BlogPost } from "./blog";
  * Os prints da primeira página do Google para cada termo ainda não tinham
  * chegado quando os textos foram escritos (o Montinho pediu para seguir sem).
  * Quando chegarem, H2 e FAQ são conferidos contra o que ranqueia.
+ * 30/10/2026: prints de "treino de hyrox" conferidos (+2 FAQs: como montar,
+ * qual o melhor treino) e de "estações do hyrox" (+2: sequência, sempre as
+ * mesmas); o resto do PAA e das relacionadas já estava coberto.
  */
 
 const FONTE_FORMATO = `<li><a href="https://hyrox.com/the-fitness-race/" target="_blank" rel="noopener noreferrer">HYROX — The Fitness Race: formato, estações e pesos por categoria (oficial)</a></li>`;
@@ -30,12 +33,14 @@ export const HYROX_GUIAS_POSTS: BlogPost[] = [
       "Um treino de Hyrox junta corrida, força e corrida cansada na mesma semana. A planilha de 8 semanas, os WODs que mais se parecem com a prova e como adaptar na academia comum.",
     category: "Treinamento",
     date: "2026-10-23",
-    updatedAt: "2026-10-23",
+    updatedAt: "2026-10-30",
     readTime: "9 min",
     author: "Montinho",
     tags: ["treino de hyrox", "planilha hyrox", "hyrox workout", "wod hyrox", "treino hyrox iniciante", "hyrox na academia"],
     faq: [
       { question: "O que é um treino de Hyrox?", answer: "É o treino que prepara para a prova: corrida, força para as estações e, principalmente, corrida cansada, alternando 1 km de corrida com uma estação. Numa aula de Hyrox, o bloco principal costuma ser esse circuito." },
+      { question: "Como montar um treino de Hyrox?", answer: "Divida a semana em três partes: 2 dias de força (agachamento, terra, avanço, remada e empurrar), 2 dias de corrida (um leve e longo, outro com trechos de 1 km em ritmo de prova) e 1 dia de corrida cansada, alternando 1 km de corrida com uma estação. Deixe 1 a 2 dias de descanso e faça uma semana mais leve a cada quatro." },
+      { question: "Qual o melhor treino para Hyrox?", answer: "O que junta corrida e estações no mesmo treino, porque a prova é correr cansado. Força e corrida separadas ajudam, mas é a corrida cansada uma vez por semana, com 1 km de corrida e uma estação em sequência, que mais se parece com o dia da prova." },
       { question: "Quantas vezes por semana treinar para o Hyrox?", answer: "De 4 a 5 sessões para quem já treina: 2 de força, 2 de corrida e 1 de corrida com estações. Quem está começando pode fazer 3 a 4, com a corrida cansada uma vez por semana." },
       { question: "Quanto tempo de treino para fazer o primeiro Hyrox?", answer: "Oito semanas bastam para quem já treina musculação ou corre e quer terminar a prova. Quem parte do zero ganha mais com 3 a 4 meses: primeiro a base de corrida e força, depois as 8 semanas específicas." },
       { question: "Quem faz Hyrox precisa fazer musculação?", answer: "Precisa. Trenó, avanço com saco, farmers carry e wall ball são força com o coração já alto. A musculação dá essa força e protege joelho, lombar e ombro nas semanas de treino." },
@@ -185,12 +190,14 @@ ${FONTE_FORMATO}
       "SkiErg, sled push, sled pull, burpee broad jump, remo, farmers carry, sandbag lunges e wall balls: a ordem, os pesos oficiais por categoria e o que treinar em cada estação.",
     category: "Treinamento",
     date: "2026-10-23",
-    updatedAt: "2026-10-23",
+    updatedAt: "2026-10-30",
     readTime: "8 min",
     author: "Montinho",
     tags: ["estações hyrox", "pesos hyrox", "sled push hyrox", "sled pull hyrox", "skierg hyrox", "wall ball hyrox", "hyrox categorias", "hyrox open pro"],
     faq: [
       { question: "Quais são os exercícios do Hyrox?", answer: "São 8 estações, sempre nesta ordem: SkiErg (1.000 m), sled push (50 m), sled pull (50 m), burpee broad jump (80 m), remo (1.000 m), farmers carry (200 m), sandbag lunges (100 m) e wall balls (100 repetições). Antes de cada uma, 1 km de corrida." },
+      { question: "Qual é a sequência do Hyrox?", answer: "1 km de corrida e uma estação, oito vezes: corrida + SkiErg, corrida + sled push, corrida + sled pull, corrida + burpee broad jump, corrida + remo, corrida + farmers carry, corrida + sandbag lunges e corrida + wall balls. A prova termina na última wall ball." },
+      { question: "As estações do Hyrox são sempre as mesmas?", answer: "São. A ordem e as distâncias são padronizadas em todas as provas oficiais, no Brasil e fora. O que muda de uma categoria para outra é o peso: Open, Pro, feminino e masculino." },
       { question: "Qual o peso do sled push no Hyrox?", answer: "Pelo site oficial, 102 kg no Open feminino, 152 kg no Open masculino e no Pro feminino, e 202 kg no Pro masculino, já contando o trenó." },
       { question: "Qual o peso do sled pull no Hyrox?", answer: "78 kg no Open feminino, 103 kg no Open masculino e no Pro feminino, e 153 kg no Pro masculino, com o trenó incluído." },
       { question: "Qual o peso da wall ball no Hyrox?", answer: "4 kg no Open feminino, 6 kg no Open masculino e no Pro feminino, e 9 kg no Pro masculino. São 100 repetições." },
