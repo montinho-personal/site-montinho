@@ -52,6 +52,8 @@ Status: pedir a indexação no Search Console.
 | /blog/crossfit-da-massa-muscular | novo (24/10, sem os prints) | | |
 | /blog/ficar-7-dias-sem-carboidrato | novo (29/10, sem os prints) | | |
 | /blog/doces-de-halloween-faceis-e-rapidos | novo (29/10, sazonal) | | |
+| /blog/doces-fit | novo (29/10, prints do Google, sem export) | | |
+| /blog/o-que-comer-antes-da-sao-silvestre | novo (29/10, sem os prints) | | |
 
 O que observar em 28 dias:
 - impressões em "app de treino academia", "app de treino gratuito" e "aplicativo de musculação grátis" (no export, 720, 140 e 50 buscas/mês);

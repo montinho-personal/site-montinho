@@ -141,5 +141,8 @@ export const ARTIGOS_COM_PREVISOR_SS: string[] = [
   "retirada-kit-sao-silvestre-2026",
 ];
 
-/** Variante de LINK: vazia desde que o previsor passou a ir embutido nos artigos da prova. */
-export const ARTIGOS_COM_LINK_PREVISOR_SS: string[] = [];
+/** Variante de LINK: os artigos da prova embutem o previsor; aqui só os que tratam de outra coisa e usam o tempo como referência. */
+export const ARTIGOS_COM_LINK_PREVISOR_SS: string[] = [
+  /* O que comer antes da prova: o tempo provável decide se vale gel e carboidrato a mais na véspera. */
+  "o-que-comer-antes-da-sao-silvestre",
+];

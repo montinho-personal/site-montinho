@@ -377,7 +377,7 @@ ${FONTES_SS}`,
 <h2>O que fazer um dia antes da prova</h2>
 <ul>
 <li>Descanse ou faça só uma caminhada ou um trote bem leve.</li>
-<li>Coma o que você está acostumado; nada de testar comida nova.</li>
+<li>Coma o que você está acostumado; nada de testar comida nova. O jantar, o café da manhã e a água pelo seu peso estão em <a href="/blog/o-que-comer-antes-da-sao-silvestre">o que comer antes da São Silvestre</a>.</li>
 <li>Beba água ao longo do dia.</li>
 <li>Separe tudo à noite: número de peito com chip, roupa, tênis, documento.</li>
 <li>Durma cedo. Em 2026, o pelotão geral larga a partir das 8h08, em ondas pelo pace da inscrição, e o regulamento pede chegada 45 minutos antes.</li>
