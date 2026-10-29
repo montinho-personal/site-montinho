@@ -340,4 +340,9 @@ export const ARTIGOS_COM_CALCULADORA_MACROS: string[] = [
    * Calculadora de Ciclo de Carboidratos, que usa esta mesma cascata.)
    */
   "deficit-calorico-e-hipertrofia",
+  /**
+   * Quem lê o que acontece numa semana sem carboidrato sai com a pergunta
+   * "então quanto carboidrato eu como?", que é a divisão da calculadora.
+   */
+  "ficar-7-dias-sem-carboidrato",
 ];
