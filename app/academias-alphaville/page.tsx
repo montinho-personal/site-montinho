@@ -4,6 +4,7 @@ import { SITE_URL } from "@/lib/blog";
 import { montarGuia } from "@/lib/academias/guia";
 import IndiceRegiao from "@/components/regiao/IndiceRegiao";
 import { GUIAS_DE_ACADEMIA } from "@/lib/regiao";
+import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
 
 /**
  * Guia das academias de Alphaville.
@@ -211,6 +212,8 @@ export default function AcademiasAlphavillePage() {
           <IndiceRegiao grupos={GUIAS_DE_ACADEMIA} />
         </div>
       </section>
+
+      <PacoteFlexivel onde="academias-alphaville" />
 
       {/* Conteúdo de apoio */}
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>

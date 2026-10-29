@@ -7,6 +7,7 @@ import FAQ from "@/components/ui/FAQ";
 import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
+import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
 
 export const metadata: Metadata = {
   title: { absolute: "Melhor Personal Trainer Tamboré | Montinho Personal Trainer" },
@@ -189,6 +190,8 @@ export default function MelhorPersonalTrainerTambore() {
         <LinkFerramentaRotina slug="melhor-personal-trainer-tambore" tipo="personal" />
       </div>
 
+
+      <PacoteFlexivel onde="melhor-personal-trainer-tambore" />
 
       {/* FAQ */}
       <VideoRecomecar />

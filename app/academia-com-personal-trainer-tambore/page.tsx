@@ -7,6 +7,7 @@ import FAQ from "@/components/ui/FAQ";
 import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
+import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
 
 export const metadata: Metadata = {
   title: { absolute: "Academia com Personal Trainer Tamboré | Montinho Personal Trainer" },
@@ -190,6 +191,8 @@ export default function AcademiaPersonalTrainerTambore() {
         <LinkFerramentaRotina slug="academia-com-personal-trainer-tambore" tipo="academia" />
       </div>
 
+
+      <PacoteFlexivel onde="academia-com-personal-trainer-tambore" />
 
       {/* FAQ */}
       <VideoRecomecar />

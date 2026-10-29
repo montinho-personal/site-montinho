@@ -4,6 +4,7 @@ import { SITE_URL } from "@/lib/blog";
 import { ACADEMIAS } from "@/lib/academias/base";
 import { completude } from "@/lib/academias/tipos";
 import AcademiaQuiz from "@/components/academias/AcademiaQuiz";
+import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
 
 /**
  * Academia Ideal em Alphaville.
@@ -200,6 +201,7 @@ export default function AcademiaIdealPage() {
           </div>
         </div>
       </section>
+      <PacoteFlexivel onde="academia-ideal-alphaville" />
     </>
   );
 }
