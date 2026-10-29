@@ -318,6 +318,8 @@ export function contextoDoContato(b: Base, cat: Catalogo, ref: Referencia, agora
     : sinais.cliente && renovaEm != null && renovaEm < 0 ? String(-renovaEm)
     : sinais.cliente && sinais.cliente.status !== "ativo" ? desde(sinais.cliente.cancelled_at ?? sinais.cliente.updated_at)
     : desde(ultimoContato ?? lead?.created_at);
+  // "há 1 dias", "nesses 0 dias": com menos de dois dias o número some e o fragmento inteiro sai.
+  if (Number(vars.dias) < 2) vars.dias = "";
   return { sinais, vars, lead };
 }
 
