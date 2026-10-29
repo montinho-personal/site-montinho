@@ -492,6 +492,28 @@ export const VIDEOS_CANAL: VideoCanal[] = [
     ferramenta: { href: "/diagnostico", nome: "Começar pelo passo 1: Diagnóstico Montinho" },
     publicadoEm: "2026-10-22",
   },
+  {
+    /* Short da mobilidade de inferiores (link enviado pelo Montinho em 29/10/2026). */
+    id: "ILCXLmG2ucQ",
+    slug: "mobilidade-de-inferiores",
+    titulo: "Mobilidade de inferiores: quadril, lombar e joelho soltos em casa",
+    metaTitle: "Mobilidade de Inferiores: Quadril, Lombar e Joelho (Vídeo)",
+    descricao:
+      "Protocolo de mobilidade de inferiores para fazer junto, em casa ou na academia: rolo, glúteo em 4, posterior, 90/90, pombo, tornozelo, flexor do quadril, prancha, cachorro olhando para baixo e cócoras.",
+    chamada: "Quadril, lombar ou joelho travados? Um protocolo para fazer junto, com tapete, rolo e uma parede.",
+    texto: [
+      "Quadril, lombar ou joelho travados? Antes de começar, dê uma nota de 0 a 10 para o seu desconforto e guarde esse número. Você vai precisar de um tapete, um rolo e uma parede ou apoio.",
+      "O protocolo vai em blocos. Soltar: rolo de liberação, 40 segundos cada lado. Alongar: glúteo em 4 deitado, posterior deitado e posterior sentado. Quadril: 90/90 com troca, 90/90 com inclinação e pombo. Ajoelhado: mobilidade de tornozelo e alongamento do quadríceps e do flexor do quadril. Firmar: prancha isométrica. Finalizar: cachorro olhando para baixo e cócoras.",
+      "Desconforto leve é normal; dor aguda, choque ou formigamento, pare. Respire devagar, sem prender o ar. No fim, dê a nota de novo e compare com a do começo. Dor forte, que piora ou não passa, é caso para médico ou fisioterapeuta.",
+      "E não se compare com ninguém: parte da amplitude é anatomia, e cada um tem a sua. O que conta é fazer com constância e ver a sua própria nota mudar.",
+    ],
+    artigos: [
+      { href: "/blog/mobilidade-de-quadril", nome: "Mobilidade de quadril: como testar e o que melhora" },
+      { href: "/blog/mobilidade-de-tornozelo", nome: "Mobilidade de tornozelo" },
+      { href: "/blog/alongamento-antes-ou-depois-do-treino", nome: "Alongamento antes ou depois do treino?" },
+    ],
+    ferramenta: { href: "/ferramentas/teste-mobilidade", nome: "Teste de Mobilidade: descubra qual região pede trabalho" },
+  },
 ];
 
 const porId = new Map(VIDEOS_CANAL.map((v) => [v.id, v]));
