@@ -81,7 +81,9 @@ export const DOCES_HALLOWEEN_POSTS: BlogPost[] = [
           "Não. Um dia de doce não desfaz uma semana de alimentação e treino. O que pesa é a média: se o Halloween vira uma semana de saquinho de doce aberto em casa, aí sim soma. Coma o que quiser na festa, com calma, e volte para a rotina no dia seguinte.",
       },
     ],
-    content: `<p><strong>Doces de Halloween fáceis e rápidos</strong> são os que saem sem forno e sem técnica: banana que vira fantasma, tangerina que vira abóbora, brigadeiro que ganha gomos. Abaixo estão oito ideias para festa, quatro clássicas e quatro mais leves, o que dar para quem bate na porta e quantas calorias têm os doces comprados, para você decidir com informação, não com culpa.</p>
+    content: `<img src="/blog-images/doces-de-halloween-capa.webp" alt="Capa: Doces de Halloween fáceis, rápidos e versões mais leves. Ilustração de lua, chapéu de bruxa, caldeirão, fantasma e docinhos em forma de abóbora" title="Doces de Halloween Fáceis e Rápidos — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p><strong>Doces de Halloween fáceis e rápidos</strong> são os que saem sem forno e sem técnica: banana que vira fantasma, tangerina que vira abóbora, brigadeiro que ganha gomos. Abaixo estão oito ideias para festa, quatro clássicas e quatro mais leves, o que dar para quem bate na porta e quantas calorias têm os doces comprados, para você decidir com informação, não com culpa.</p>
 
 <h2>Doces de Halloween clássicos, fáceis e rápidos</h2>
 
