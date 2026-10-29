@@ -4,8 +4,9 @@ import Link from "next/link";
 import { useState, useTransition } from "react";
 import { moverEtapa } from "@/app/crm/actions";
 import { etapaProtegida } from "@/lib/crm/perda";
+import Registrar from "@/components/crm/Registrar";
 
-export interface CartaoKanban { oppId: string; leadId: string; nome: string; stageCode: string; valor: number | null; temperatura: string; proximaAcao: string | null; proximaAcaoEm: string | null; atrasado: boolean; servico: string }
+export interface CartaoKanban { oppId: string; leadId: string; nome: string; stageCode: string; valor: number | null; temperatura: string; proximaAcao: string | null; proximaAcaoEm: string | null; atrasado: boolean; servico: string; contactId: string; temExperimental: boolean }
 export interface ColunaKanban { code: string; nome: string }
 
 /**
@@ -13,7 +14,7 @@ export interface ColunaKanban { code: string; nome: string }
  * chamam a mesma action, que grava o histórico de etapa. Ganho/perdido não
  * entram aqui: exigem os formulários com campos obrigatórios.
  */
-export default function Kanban({ colunas, cartoes }: { colunas: ColunaKanban[]; cartoes: CartaoKanban[] }) {
+export default function Kanban({ colunas, cartoes, motivos }: { colunas: ColunaKanban[]; cartoes: CartaoKanban[]; motivos: { code: string; nome: string }[] }) {
   const [itens, setItens] = useState(cartoes);
   const [arrastando, setArrastando] = useState<string | null>(null);
   const [pendente, start] = useTransition();
@@ -48,6 +49,8 @@ export default function Kanban({ colunas, cartoes }: { colunas: ColunaKanban[]; 
                       {colunas.map((col) => <option key={col.code} value={col.code}>{col.nome}</option>)}
                     </select>
                   </label>
+                  {/* O mesmo Registrar da tela Hoje: a etapa anda pelo que aconteceu. */}
+                  <div className="mt-2"><Registrar leadId={i.leadId} contactId={i.contactId} opportunityId={i.oppId} motivos={motivos} temExperimental={i.temExperimental} /></div>
                 </article>
               ))}
               {lista.length === 0 && <p className="p-2 text-center text-xs text-zinc-600">vazio</p>}
