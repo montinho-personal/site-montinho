@@ -41,6 +41,7 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  "doces-fit": "Receitas de doce fit: o leitor sai com a receita, não com uma conta; o Mata a Vontade (receita pela vontade do momento), o Beliscômetro e a Calculadora de Whey vão por link no texto.",
   // Guias de Hyrox de 23/10/2026 (lib/hyrox-guias.ts). Treino e estações vão
   // com a Calculadora de Tempo; Hyrox x CrossFit, com a de calorias.
   "tenis-para-hyrox": "Escolha de tênis e roupa para a prova: o leitor sai sabendo o que testar no treino, sem conta na cabeça; as calculadoras de Hyrox vão por link no texto.",

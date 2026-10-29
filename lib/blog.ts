@@ -111,6 +111,8 @@ import { BENEFICIOS_MUAY_THAI_POSTS } from "./beneficios-muay-thai";
 import { CROSSFIT_MUSCULO_POSTS } from "./crossfit-da-massa-muscular";
 import { SEM_CARBOIDRATO_POSTS } from "./sete-dias-sem-carboidrato";
 import { DOCES_HALLOWEEN_POSTS } from "./doces-de-halloween";
+import { DOCES_FIT_POSTS } from "./doces-fit";
+import { ALIMENTACAO_SAO_SILVESTRE_POSTS } from "./o-que-comer-antes-da-sao-silvestre";
 import { BLACK_FRIDAY_2026_POSTS } from "./black-friday-2026";
 import { UFC_2026_POSTS } from "./ufc-2026";
 import { OUTUBRO_ROSA_POSTS } from "./outubro-rosa-2026";
@@ -133,6 +135,8 @@ export const blogPosts = ([
   ...CROSSFIT_MUSCULO_POSTS,
   ...SEM_CARBOIDRATO_POSTS,
   ...DOCES_HALLOWEEN_POSTS,
+  ...DOCES_FIT_POSTS,
+  ...ALIMENTACAO_SAO_SILVESTRE_POSTS,
   ...BLACK_FRIDAY_2026_POSTS,
   ...MIOSTATINA_POSTS,
   ...UFC_2026_POSTS,
