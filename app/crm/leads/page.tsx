@@ -3,7 +3,7 @@ import { exigirUsuario } from "@/lib/crm/auth";
 import { base, catalogo, urlWhatsAppContato } from "@/lib/crm/dados";
 import { todasVisoes } from "@/lib/crm/visao";
 import { Badge, Btn, Pagina, Vazio, brl, relativo } from "@/components/crm/ui";
-import AtualizarLead from "@/components/crm/AtualizarLead";
+import Registrar from "@/components/crm/Registrar";
 
 export default async function Leads({ searchParams }: { searchParams: Promise<Record<string, string | undefined>> }) {
   await exigirUsuario();
@@ -53,14 +53,14 @@ export default async function Leads({ searchParams }: { searchParams: Promise<Re
                       </div>
                     )}
                   </div>
-                  <div className="flex gap-2">{wa && <Btn href={wa} tom="whatsapp" pequeno target="_blank">WhatsApp</Btn>}<Btn href={`/crm/leads/${v.lead.id}`} tom="secundario" pequeno>Abrir</Btn></div>
-                </div>
-                {/* Só em lead aberto: em ganho ou perdido não há etapa para mexer. */}
-                {v.lead.status === "aberto" && (
-                  <div className="mt-2">
-                    <AtualizarLead leadId={v.lead.id} contactId={v.contato.id} opportunityId={v.opp?.id} motivos={cat.motivos} />
+                  {/* As mesmas duas ações da tela Hoje: WhatsApp para fazer, Registrar para dizer o que aconteceu. */}
+                  <div className="flex flex-wrap items-start gap-2">
+                    {wa && <Btn href={wa} tom="whatsapp" pequeno target="_blank">WhatsApp</Btn>}
+                    {v.lead.status === "aberto"
+                      ? <Registrar leadId={v.lead.id} contactId={v.contato.id} opportunityId={v.opp?.id} motivos={cat.motivos} temExperimental={!!v.opp && cat.etapas.some((e) => e.pipeline_id === v.opp!.pipeline_id && e.code === "experimental_agendada")} />
+                      : <Btn href={`/crm/leads/${v.lead.id}`} tom="secundario" pequeno>Abrir</Btn>}
                   </div>
-                )}
+                </div>
               </li>
             );
           })}

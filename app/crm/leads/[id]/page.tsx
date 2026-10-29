@@ -1,6 +1,6 @@
 import ConfirmarPerdido from "@/components/crm/ConfirmarPerdido";
 import ConteudoDoLead, { type EnvioRegistrado } from "@/components/crm/ConteudoDoLead";
-import ElaRespondeu from "@/components/crm/ElaRespondeu";
+import Registrar from "@/components/crm/Registrar";
 import { supabaseServer } from "@/lib/crm/supabase/server";
 import { podeDesfazerPerdido } from "@/lib/crm/perda";
 import Link from "next/link";
@@ -13,9 +13,11 @@ import { mensagemPara } from "@/lib/crm/copy";
 import { Aviso, Badge, Btn, Campo, Card, Detalhes, Input, Pagina, Select, Textarea, brl, dataHoraBr, dataHoraInput, dataInput, relativo } from "@/components/crm/ui";
 import { agendarExperimental, atualizarContato, concluirTarefa, criarTarefa, definirOrigem, definirProximaAcao, enviarProposta, ligarHandoff, marcarExperimental, desfazerPerdido, marcarGanho, moverEtapa, reativarLead, registrarAtividade, retomarContato } from "../../actions";
 
-export default async function LeadPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function LeadPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<Record<string, string | undefined>> }) {
   const u = await exigirUsuario();
   const { id } = await params;
+  // "Fechou →" do Registrar chega com ?fechar=1: o formulário de venda já vem aberto.
+  const fechar = (await searchParams).fechar === "1";
   const [b, cat] = await Promise.all([base(), catalogo()]);
   const lead = b.leads.find((l) => l.id === id);
   if (!lead) notFound();
@@ -56,7 +58,7 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
             </div>
             <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
               <span className="text-zinc-400">Última resposta dela: <strong className="text-zinc-200">{lead.last_reply_at ? relativo(lead.last_reply_at) : "nunca respondeu"}</strong></span>
-              {lead.status === "aberto" && !somenteLeitura && <ElaRespondeu leadId={lead.id} contactId={contato.id} />}
+              {lead.status === "aberto" && !somenteLeitura && <Registrar leadId={lead.id} contactId={contato.id} opportunityId={opp?.id} motivos={cat.motivos} temExperimental={etapasPipe.some((e) => e.code === "experimental_agendada")} />}
             </div>
             {lead.status === "aberto" && (
               <form action={definirProximaAcao} className="mt-4 grid gap-2 sm:grid-cols-[1fr_auto_auto]">
@@ -111,6 +113,8 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
                     <p className="mt-2 text-xs text-zinc-500">Ganho e perdido têm formulário próprio, com os campos obrigatórios.</p>
                   </Detalhes>
                 )}
+                {/* Experimental só no presencial (funil simplificado em 30/10/2026); as já agendadas continuam aparecendo. */}
+                {(etapasPipe.some((e) => e.code === "experimental_agendada") || trialsAbertas.length > 0) && (
                 <Detalhes titulo="Marcar aula experimental">
                   {trialsAbertas.length > 0 && trialsAbertas.map((t) => (
                     <form key={t.id} action={marcarExperimental} className="mb-3 rounded border border-white/10 p-2 text-sm">
@@ -126,6 +130,7 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
                     <Btn pequeno tom="secundario">Agendar experimental</Btn>
                   </form>
                 </Detalhes>
+                )}
                 {opp && (
                   <Detalhes titulo="Enviar proposta">
                     <form action={enviarProposta} className="space-y-2">
@@ -140,7 +145,8 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
                   </Detalhes>
                 )}
                 {opp && (
-                  <Detalhes titulo="Marcar GANHO">
+                  <div id="fechou" className="scroll-mt-20">
+                  <Detalhes titulo="Marcar GANHO" aberto={fechar}>
                     <form action={marcarGanho} className="space-y-2">
                       <input type="hidden" name="opportunity_id" value={opp.id} />
                       <Campo rotulo="Serviço *"><Select name="service_id" defaultValue={opp.service_id ?? cat.servicos[0]?.id} required>{cat.servicos.map((s) => <option key={s.id} value={s.id}>{s.nome}</option>)}</Select></Campo>
@@ -155,6 +161,7 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
                       <Btn pequeno>Confirmar venda</Btn>
                     </form>
                   </Detalhes>
+                  </div>
                 )}
                 {opp && (
                   <Detalhes titulo="Marcar PERDIDO">

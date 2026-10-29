@@ -13,7 +13,7 @@ export default async function PipelinePage({ searchParams }: { searchParams: Pro
   const colunas = cat.etapas.filter((e) => e.pipeline_id === pipe.id && e.tipo === "open").map((e) => ({ code: e.code, nome: e.nome }));
   const visoes = todasVisoes(b, cat).filter((v) => v.lead.status === "aberto" && v.opp && v.opp.pipeline_id === pipe.id && v.etapa?.tipo === "open");
   const agora = new Date();
-  const cartoes = visoes.map((v) => ({ oppId: v.opp!.id, leadId: v.lead.id, nome: v.contato.nome, stageCode: v.etapa!.code, valor: v.opp!.expected_value, temperatura: v.temperatura, proximaAcao: v.lead.next_action, proximaAcaoEm: v.lead.next_action_at, atrasado: !!v.lead.next_action_at && new Date(v.lead.next_action_at) < agora, servico: v.servicoNome }));
+  const cartoes = visoes.map((v) => ({ oppId: v.opp!.id, leadId: v.lead.id, nome: v.contato.nome, stageCode: v.etapa!.code, valor: v.opp!.expected_value, temperatura: v.temperatura, proximaAcao: v.lead.next_action, proximaAcaoEm: v.lead.next_action_at, atrasado: !!v.lead.next_action_at && new Date(v.lead.next_action_at) < agora, servico: v.servicoNome , contactId: v.contato.id, temExperimental: colunas.some((c) => c.code === "experimental_agendada")}));
   const pv = valorPipeline(visoes.map((v) => ({ expectedValue: v.opp!.expected_value, probability: v.opp!.probability, stageProbability: v.etapa!.probabilidade_config })));
   const ganhos = b.oportunidades.filter((o) => o.pipeline_id === pipe.id && o.won_at).length; const perdidos = b.oportunidades.filter((o) => o.pipeline_id === pipe.id && o.lost_at).length;
   return (
@@ -24,7 +24,7 @@ export default async function PipelinePage({ searchParams }: { searchParams: Pro
         <Stat rotulo="Ponderado" valor={brl(pv.ponderado)} sub="probabilidade configurada por etapa" />
         <Stat rotulo="Ganhos / perdidos" valor={`${ganhos} / ${perdidos}`} sub="histórico deste pipeline" />
       </div>
-      <Kanban colunas={colunas} cartoes={cartoes} />
+      <Kanban colunas={colunas} cartoes={cartoes} motivos={cat.motivos} />
       <p className="mt-2 text-xs text-zinc-500">Arraste o cartão ou use o seletor. Toda mudança fica no histórico de etapas. Ganho e perdido só pela ficha do lead.</p>
     </Pagina>
   );

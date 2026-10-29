@@ -4,11 +4,12 @@ import { base, catalogo, urlWhatsAppContato } from "@/lib/crm/dados";
 import { itensHoje, todasVisoes, contagemFunil, inicioDoMes, mesAnterior, contratosParaMetrica } from "@/lib/crm/visao";
 import { taxasFunil, valorPipeline, mrrNormalizado, valorEmPacotes, cicloDeVendaDias, ehEstimado, itensVisiveis } from "@/lib/crm/metricas";
 import { mensagemPara } from "@/lib/crm/copy";
-import { Badge, Btn, Card, Pagina, Stat, Vazio, brl, num, pct, relativo } from "@/components/crm/ui";
+import { Badge, Btn, Card, Pagina, Stat, Vazio, brl, num, pct } from "@/components/crm/ui";
 import { concluirTarefa } from "./actions";
 import BotaoWhatsApp from "@/components/crm/BotaoWhatsApp";
-import AtualizarLead from "@/components/crm/AtualizarLead";
-import ElaRespondeu from "@/components/crm/ElaRespondeu";
+import Registrar from "@/components/crm/Registrar";
+import RegistrarRenovacao from "@/components/crm/RegistrarRenovacao";
+import { agruparPorSecao, POR_SECAO } from "@/lib/crm/hoje";
 
 /**
  * O rótulo do botão de ação.
@@ -71,13 +72,89 @@ export default async function Hoje() {
   const pacotes = valorEmPacotes(contratosM, agora);
   const ciclo = cicloDeVendaDias(b.oportunidades.filter((o) => o.won_at && new Date(o.won_at) >= de).map((o) => ({ createdAt: b.leads.find((l) => l.id === o.lead_id)?.created_at ?? o.created_at, wonAt: o.won_at! })));
   const comp = (a: number, b: number) => (b > 0 ? `${a >= b ? "+" : ""}${Math.round(((a - b) / b) * 100)}% vs mês passado (${num(b)})` : `mês passado: ${num(b)}`);
+  const secoes = agruparPorSecao(itensVisiveis(itens, 500));
+  // Experimental só existe no presencial: o botão aparece onde o funil tem a etapa.
+  const temExperimental = (oppId?: string | null) => {
+    const o = oppId ? b.oportunidades.find((x) => x.id === oppId) : null;
+    return !!o && cat.etapas.some((e) => e.pipeline_id === o.pipeline_id && e.code === "experimental_agendada");
+  };
+  const contratoAtivo = (clientId: string) => b.contratos.filter((k) => k.client_id === clientId && k.status === "ativo").sort((a, z) => z.inicio.localeCompare(a.inicio))[0] ?? null;
+
+  const cartao = (i: (typeof itens)[number]) => {
+    const contato = b.contatos.find((c) => c.id === i.contactId);
+    // A mensagem nasce da situação do card: primeiro contato com a página de origem, follow-up da proposta com os dias, confirmação da experimental com o horário.
+    const copy = mensagemPara(b, cat, { contactId: i.contactId, leadId: i.leadId, clientId: i.clientId }, i.grupo, agora);
+    // "Decidir" é o card sem mensagem: três cobranças (ou a que prometeu ser a última) já foram. Mandar a quarta é o que este card existe para impedir.
+    const wa = i.grupo === "decidir" ? null : urlWhatsAppContato(contato?.telefone_e164 ?? null, copy.texto);
+    const href = i.leadId ? `/crm/leads/${i.leadId}` : i.clientId ? `/crm/clientes/${i.clientId}` : "#";
+    const cliente = !i.leadId && i.clientId ? b.clientes.find((c) => c.id === i.clientId) : null;
+    const k = cliente ? contratoAtivo(cliente.id) : null;
+    return (
+      <li key={`${i.contactId}-${i.grupo}`} className="flex flex-wrap items-center gap-3 rounded-xl border border-white/10 bg-zinc-900/70 p-3">
+        <div className="min-w-0 flex-1 basis-full sm:basis-0">
+          <div className="flex items-center gap-2">
+            {i.prioridade <= 2 && <Badge tom="ruim">urgente</Badge>}
+            <Link href={href} prefetch={false} className="truncate font-medium hover:underline">{i.nome}</Link>
+            {i.valor ? <span className="text-xs text-zinc-500">{brl(i.valor)}/mês</span> : null}
+          </div>
+          <div className="mt-1 text-sm text-zinc-400">{i.motivo}</div>
+        </div>
+        {/* Duas ações em todo card: WhatsApp para FAZER, Registrar para dizer o que aconteceu. */}
+        <div className="flex w-full flex-wrap items-start gap-2 sm:w-auto">
+          {wa && <BotaoWhatsApp url={wa} contactId={i.contactId} leadId={i.leadId} clientId={i.clientId} taskId={i.taskId} grupo={i.grupo} situacao={copy.situacao} />}
+          {i.taskId && <form action={concluirTarefa}><input type="hidden" name="task_id" value={i.taskId} /><Btn tom="secundario" pequeno title={i.acao}>Feito</Btn></form>}
+          {i.leadId ? (
+            <Registrar leadId={i.leadId} contactId={i.contactId} opportunityId={i.opportunityId} motivos={cat.motivos} temExperimental={temExperimental(i.opportunityId)} jaRespondeu={i.grupo === "respondeu_aguardando_voce"} />
+          ) : cliente ? (
+            <RegistrarRenovacao clientId={cliente.id} planId={k?.plan_id ?? cliente.current_plan_id} valor={k?.valor ?? null} cicloMeses={k?.ciclo_meses ?? 1} renovaEm={cliente.renewal_date ?? k?.renovacao_prevista ?? null} nomePlano={cat.planos.find((p) => p.id === (k?.plan_id ?? cliente.current_plan_id))?.nome} />
+          ) : !i.taskId ? <Btn href={href} tom="secundario" pequeno title={i.acao}>{rotuloDaAcao(i.acao, i.motivo)}</Btn> : null}
+        </div>
+      </li>
+    );
+  };
+
   const primeiroNome = (u.nome ?? u.email).split(" ")[0].split("@")[0];
   const h = agora.getHours(); const saud = h < 12 ? "Bom dia" : h < 18 ? "Boa tarde" : "Boa noite";
 
   return (
     <Pagina titulo={`${saud}, ${primeiroNome}.`} sub={`${agora.toLocaleDateString("pt-BR", { weekday: "long", day: "numeric", month: "long" })}`} acoes={<Btn href="/crm/leads/novo">+ Novo lead</Btn>}>
-      <h2 className="mb-2 text-sm font-semibold uppercase tracking-wider text-zinc-400">Precisa da sua atenção</h2>
-      <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+      {/*
+        * Tela em seções, na ordem em que o trabalho é feito (lib/crm/hoje.ts).
+        * Os chips no topo dizem quanto tem em cada uma e levam até ela.
+        */}
+      {secoes.length > 0 && (
+        <nav className="mb-5 flex flex-wrap gap-2" aria-label="Seções de hoje">
+          {secoes.map((g) => (
+            <a key={g.secao.id} href={`#${g.secao.id}`} className="rounded-full border border-white/15 bg-zinc-900 px-3 py-1.5 text-sm hover:bg-white/10">
+              {g.secao.titulo} <strong className="ml-1 text-white">{g.itens.length}</strong>
+            </a>
+          ))}
+          {experimentaisHoje.length > 0 && <span className="rounded-full border border-white/15 px-3 py-1.5 text-sm text-zinc-400">Experimentais hoje <strong className="text-white">{experimentaisHoje.length}</strong></span>}
+        </nav>
+      )}
+
+      {itens.length === 0 ? <Vazio>Nada pendente. Nenhum lead aberto está sem próxima ação.</Vazio> : (
+        <div className="mb-8 space-y-6">
+          {secoes.map((g) => (
+            <section key={g.secao.id} id={g.secao.id} className="scroll-mt-20">
+              <h2 className="text-sm font-semibold uppercase tracking-wider text-zinc-300">{g.secao.titulo} <span className="text-zinc-500">· {g.itens.length}</span></h2>
+              <p className="mb-2 text-xs text-zinc-500">{g.secao.dica}</p>
+              <ul className="space-y-2">{g.itens.slice(0, POR_SECAO).map(cartao)}</ul>
+              {g.itens.length > POR_SECAO && (
+                <details className="mt-2">
+                  <summary className="cursor-pointer text-sm text-zinc-400 underline underline-offset-2">Ver mais {g.itens.length - POR_SECAO}</summary>
+                  <ul className="mt-2 space-y-2">{g.itens.slice(POR_SECAO).map(cartao)}</ul>
+                </details>
+              )}
+            </section>
+          ))}
+        </div>
+      )}
+
+      {/* Os números ficam fechados: no celular, 17 indicadores empurravam o trabalho do dia para baixo. */}
+      <details className="group">
+        <summary className="mb-2 cursor-pointer text-sm font-semibold uppercase tracking-wider text-zinc-400">Como está o mês <span className="normal-case tracking-normal text-zinc-500">· {fMes.vendas} venda{fMes.vendas === 1 ? "" : "s"} · {brl(receitaMes)} recebidos</span></summary>
+      <div className="mb-3 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
         <Stat rotulo="Leads quentes" valor={quentes} tom={quentes ? "alerta" : "neutro"} />
         <Stat rotulo="Follow-ups hoje" valor={tarefasHoje.length} />
         <Stat rotulo="Atrasados" valor={atrasadas.length} tom={atrasadas.length ? "ruim" : "bom"} />
@@ -85,54 +162,6 @@ export default async function Hoje() {
         <Stat rotulo="Propostas abertas" valor={propostasAbertas.length} />
         <Stat rotulo="Em negociação" valor={brl(pipe.bruto)} sub={`ponderado ${brl(pipe.ponderado)}`} />
       </div>
-
-      <h2 className="mb-2 text-sm font-semibold uppercase tracking-wider text-zinc-400">Precisa da sua ação</h2>
-      {itens.length === 0 ? <Vazio>Nada pendente. Nenhum lead aberto está sem próxima ação.</Vazio> : (
-        <ul className="mb-8 space-y-2">
-          {itensVisiveis(itens).map((i) => {
-            const contato = b.contatos.find((c) => c.id === i.contactId);
-            // A mensagem nasce da situação do card: primeiro contato com a página de origem, follow-up da proposta com os dias, confirmação da experimental com o horário.
-            const copy = mensagemPara(b, cat, { contactId: i.contactId, leadId: i.leadId, clientId: i.clientId }, i.grupo, agora);
-            // "Decidir" é o card sem mensagem: três cobranças (ou a que prometeu ser a última) já foram. Mandar a quarta é o que este card existe para impedir.
-            const wa = i.grupo === "decidir" ? null : urlWhatsAppContato(contato?.telefone_e164 ?? null, copy.texto);
-            const tom = i.prioridade <= 2 ? "ruim" : i.prioridade <= 4 ? "alerta" : "neutro";
-            const href = i.leadId ? `/crm/leads/${i.leadId}` : i.clientId ? `/crm/clientes/${i.clientId}` : "#";
-            return (
-              <li key={`${i.contactId}-${i.grupo}`} className="flex flex-wrap items-center gap-3 rounded-xl border border-white/10 bg-zinc-900/70 p-3">
-                {/* No celular os botões descem para a própria linha: lado a lado, o motivo ficava espremido em uma palavra por linha. */}
-                <div className="min-w-0 flex-1 basis-full sm:basis-0">
-                  <div className="flex items-center gap-2"><Badge tom={tom}>{i.prioridade <= 2 ? "PRIORIDADE ALTA" : i.prioridade <= 4 ? "hoje" : "esta semana"}</Badge><Link href={href} className="truncate font-medium hover:underline">{i.nome}</Link>{i.valor ? <span className="text-xs text-zinc-500">{brl(i.valor)}/mês</span> : null}</div>
-                  <div className="mt-1 text-sm text-zinc-400">Motivo: {i.motivo}</div>
-                </div>
-                {/*
-                  * flex-wrap, e não shrink-0: com quatro botões na linha o
-                  * antigo não deixava nada encolher nem descer, e o texto
-                  * quebrava dentro do botão — "Só / deu / um / ok", uma
-                  * palavra por linha, num card de duas telas de altura.
-                  */}
-                <div className="flex w-full flex-wrap items-center gap-2 sm:w-auto">
-                  {/* Primeiro o que se FAZ; só depois o que se REGISTRA. */}
-                  {wa && <BotaoWhatsApp url={wa} contactId={i.contactId} leadId={i.leadId} clientId={i.clientId} taskId={i.taskId} grupo={i.grupo} situacao={copy.situacao} />}
-                  {i.taskId ? (
-                    <form action={concluirTarefa}><input type="hidden" name="task_id" value={i.taskId} /><Btn tom="secundario" pequeno>Feito</Btn></form>
-                  ) : <Btn href={href} tom="secundario" pequeno title={i.acao}>{rotuloDaAcao(i.acao, i.motivo)}</Btn>}
-                  {/*
-                    * No card "respondeu_aguardando_voce" sobra só o "Só deu um
-                    * ok": "Respondeu" repetiria o que já está escrito na
-                    * frente, mas o outro é o que tira o card do topo quando a
-                    * resposta era "qualquer coisa te chamo". Sem ele o lead
-                    * ficava preso em PRIORIDADE ALTA sem saída.
-                    */}
-                  {i.leadId && <ElaRespondeu leadId={i.leadId} contactId={i.contactId} jaNoTopo={i.grupo === "respondeu_aguardando_voce"} />}
-                </div>
-                {i.leadId && <AtualizarLead leadId={i.leadId} contactId={i.contactId} opportunityId={i.opportunityId} motivos={cat.motivos} />}
-              </li>
-            );
-          })}
-        </ul>
-      )}
-
-      <h2 className="mb-2 text-sm font-semibold uppercase tracking-wider text-zinc-400">Como está o mês</h2>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
         <Stat rotulo="Leads" valor={fMes.leads} sub={comp(fMes.leads, fAnt.leads)} />
         <Stat rotulo="Qualificados" valor={fMes.qualificados} sub={comp(fMes.qualificados, fAnt.qualificados)} />
@@ -155,6 +184,7 @@ export default async function Hoje() {
           <MotivosResumo b={b} cat={cat} />
         </Card>
       </div>
+      </details>
     </Pagina>
   );
 }
