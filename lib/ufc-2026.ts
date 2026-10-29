@@ -367,6 +367,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-28",
+    updatedAt: "2026-10-29",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC Vegas 124", "brasileiros no UFC", "Gabriel Bonfim", "Virna Jandiroba"],
@@ -407,6 +408,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 </ul>`,
     faq: [
       { question: "Quais brasileiros lutam no UFC Vegas 124?", answer: "Gabriel Bonfim (luta principal), Virna Jandiroba, Wellington Turman e Lucas Fernando no card principal; Karine Silva, Gabriella Fernandes, Gabriel Lorenco, José Delano, Priscila Cachoeira e José Souza no preliminar." },
+      { question: "Quem é o Marretinha do UFC?", answer: "É o apelido de Gabriel Bonfim, que faz a luta principal do UFC Vegas 124 contra Sean Brady, no peso meio-médio." },
       { question: "Contra quem luta Virna Jandiroba no UFC Vegas 124?", answer: "Contra Tatiana Suarez, no peso-palha feminino, no card principal." },
       { question: "Tem luta entre brasileiras no UFC Vegas 124?", answer: "Tem: Karine Silva x Gabriella Fernandes, no peso-mosca feminino, no card preliminar." },
       { question: "Que horas lutam os brasileiros no UFC Vegas 124?", answer: "O card preliminar começa às 19h e o principal às 22h, horário de Brasília." },
