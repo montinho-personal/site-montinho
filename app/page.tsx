@@ -12,6 +12,7 @@ import DiagnosticoCTA from "@/components/home/DiagnosticoCTA";
 import AskEmbed from "@/components/ask/AskEmbed";
 import HomeFAQ from "@/components/home/HomeFAQ";
 import DoisCaminhos from "@/components/comece/DoisCaminhos";
+import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -100,6 +101,7 @@ export default function Home() {
       <Resultados />
       <Depoimentos />
       <OndeAtendo />
+      <PacoteFlexivel onde="home" />
       <DiagnosticoCTA />
       <HomeFAQ />
       <section className="py-20 border-t border-white/10" style={{ background: "#0d0d0d" }}>

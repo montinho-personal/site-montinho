@@ -10,6 +10,7 @@ import { ligacoesDoPerfil } from "@/lib/perfil-google";
 import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
+import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer em Barueri: Planos e Atendimento | Montinho" },
@@ -582,7 +583,7 @@ export default function PersonalTrainerBarueri() {
             <h3 className="text-white font-semibold text-lg pt-2">Os tipos de plano</h3>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong className="text-white">Pacote mensal por frequência</strong> (de 2 a 5 treinos por semana): quanto mais treinos, menor o valor por sessão.</li>
-              <li><strong className="text-white">Pacote flexível</strong>: um número de aulas para usar no ritmo possível, para quem viaja ou tem agenda irregular.</li>
+              <li><strong className="text-white">Pacote flexível</strong>: 10 aulas presenciais para usar quando você decidir, para quem viaja ou tem agenda irregular. <a href="#pacote-flexivel" className="text-white underline underline-offset-4 hover:text-gray-300">Como funciona</a>.</li>
               <li><strong className="text-white">Consultoria online</strong>: o formato mais acessível, com treino montado e acompanhado à distância. <Link href="/consultoria-online" className="text-white underline underline-offset-4 hover:text-gray-300">Veja como funciona</Link>.</li>
             </ul>
             <h3 className="text-white font-semibold text-lg pt-2">É melhor treinar 3 ou 5 vezes por semana?</h3>
@@ -608,6 +609,7 @@ export default function PersonalTrainerBarueri() {
           </a>
         </div>
       </section>
+      <PacoteFlexivel onde="personal-trainer-barueri" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
         <LinkFerramentaRotina slug="personal-trainer-barueri" tipo="personal" />
       </div>

@@ -48,7 +48,7 @@ export default function OndeAtendo() {
           ))}
         </ul>
         <p className="mt-8 text-center text-sm text-gray-400">
-          Fora dessas áreas? A <Link href="/consultoria-online" className="text-white underline underline-offset-4 hover:opacity-70">consultoria online</Link> chega onde eu não chego. Detalhes de cada região em <Link href="/onde-atendo" className="text-white underline underline-offset-4 hover:opacity-70">onde atendo</Link>.
+          Sem dia fixo na agenda? Veja o <a href="#pacote-flexivel" className="text-white underline underline-offset-4 hover:opacity-70">pacote flexível</a>. Fora dessas áreas? A <Link href="/consultoria-online" className="text-white underline underline-offset-4 hover:opacity-70">consultoria online</Link> chega onde eu não chego. Detalhes de cada região em <Link href="/onde-atendo" className="text-white underline underline-offset-4 hover:opacity-70">onde atendo</Link>.
         </p>
       </div>
     </section>

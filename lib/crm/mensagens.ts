@@ -119,6 +119,11 @@ const REGRAS: Regra[] = [
     frase: "Olá! Tenho interesse na Consultoria Online. Pode me contar mais sobre como funciona?" },
   { origem: "Página /consultoria · card Modelo Híbrido", pathPadrao: "^/consultoria$",
     frase: "Olá! Tenho interesse no Modelo Híbrido (presencial + online). Pode me contar mais?" },
+  { origem: "Página /consultoria · card Pacote Flexível", pathPadrao: "^/consultoria$", servico: "presencial",
+    frase: "Olá! Tenho interesse no Pacote Flexível de 10 aulas. Pode me contar mais?" },
+  // Seção do pacote flexível (components/servicos/PacoteFlexivel.tsx): home e páginas regionais.
+  { origem: "Seção Pacote Flexível", pathPadrao: null, servico: "presencial",
+    frase: "Olá, Montinho! Vi o Pacote Flexível de 10 aulas no site e queria saber se ele encaixa na minha rotina." },
   { origem: "Diagnóstico Montinho · resultado", pathPadrao: "^/diagnostico",
     frase: /^Oi, Montinho! Fiz o Diagnóstico Montinho no site\./ },
   { origem: "Treino para Minha Rotina · resultado", pathPadrao: "rotina",

@@ -126,7 +126,7 @@ bloco("4. O CATÁLOGO ESPELHA O SITE");
 const fontes = [
   "app/consultoria-online/page.tsx", "app/personal-trainer/page.tsx", "app/consultoria/page.tsx", "lib/sticky/regras.ts", "lib/whatsapp.ts",
   "lib/cta/registry.ts", "lib/revisao.ts", "lib/diagnostico.ts", "lib/rotina/engine.ts", "lib/treino/volume.ts", "lib/ask/guards.ts",
-  "lib/cardapio/motor.ts", "components/mobilidade/TesteMobilidade.tsx",
+  "lib/cardapio/motor.ts", "components/mobilidade/TesteMobilidade.tsx", "components/servicos/PacoteFlexivel.tsx",
 ];
 const frasesFixas: string[] = [];
 for (const f of fontes) {

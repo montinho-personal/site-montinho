@@ -10,6 +10,7 @@ import { ligacoesDoPerfil } from "@/lib/perfil-google";
 import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
+import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer em Alphaville: Planos e Atendimento | Montinho" },
@@ -626,7 +627,7 @@ export default function PersonalTrainerAlphaville() {
             <h3 className="text-white font-semibold text-lg pt-2">Os tipos de plano</h3>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong className="text-white">Pacote por frequência semanal</strong> (de 2 a 5 treinos): quanto mais treinos na semana, menor o valor por sessão. É o formato de quem quer treinar 3 vezes por semana com horário fixo.</li>
-              <li><strong className="text-white">Pacote flexível</strong>: um número de aulas para usar no ritmo possível, para quem viaja ou tem agenda irregular.</li>
+              <li><strong className="text-white">Pacote flexível</strong>: 10 aulas presenciais para usar quando você decidir, para quem viaja ou tem agenda irregular. <a href="#pacote-flexivel" className="text-white underline underline-offset-4 hover:text-gray-300">Como funciona</a>.</li>
               <li><strong className="text-white">Consultoria online</strong>: o formato mais acessível, com treino montado e acompanhado à distância, para quem já treina sozinho ou mora fora da região. <Link href="/consultoria-online" className="text-white underline underline-offset-4 hover:text-gray-300">Veja como funciona</Link>.</li>
             </ul>
             <h3 className="text-white font-semibold text-lg pt-2">Quanto custa treinar 3 vezes por semana?</h3>
@@ -655,6 +656,7 @@ export default function PersonalTrainerAlphaville() {
           </a>
         </div>
       </section>
+      <PacoteFlexivel onde="personal-trainer-alphaville" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
         <LinkFerramentaRotina slug="personal-trainer-alphaville" tipo="personal" />
       </div>

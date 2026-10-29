@@ -60,6 +60,14 @@ const serviceSchema = {
           description: "Consultoria online para todo o Brasil com treino personalizado, correção de execução, ajustes conforme a evolução e suporte via WhatsApp.",
         },
       },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Pacote Flexível de 10 Aulas Presenciais",
+          description: "10 aulas presenciais em Alphaville, Barueri e Santana de Parnaíba para usar quando o aluno decidir, sem horário fixo, com consultoria online inclusa.",
+        },
+      },
     ],
   },
 };
@@ -82,7 +90,7 @@ const faq = [
   {
     question: "Quanto custa a consultoria online e o personal presencial?",
     answer:
-      "O valor depende da modalidade (online, presencial ou híbrida), da frequência e do período do plano. A conversa inicial é gratuita e sem compromisso — nela eu entendo seu objetivo e te passo as opções com transparência, para você decidir com calma.",
+      "O valor depende da modalidade (online, presencial, híbrida ou pacote flexível), da frequência e do período do plano. A conversa inicial é gratuita e sem compromisso — nela eu entendo seu objetivo e te passo as opções com transparência, para você decidir com calma.",
   },
   {
     question: "Consultoria online funciona de verdade?",
@@ -149,7 +157,7 @@ const services = [
     featured: true,
   },
   {
-    tag: "Flexível",
+    tag: "Híbrido",
     title: "Modelo Híbrido",
     subtitle: "Presencial + Online",
     description:
@@ -164,6 +172,25 @@ const services = [
     cta: "Conversar sobre o híbrido",
     message:
       "Olá! Tenho interesse no Modelo Híbrido (presencial + online). Pode me contar mais?",
+    featured: false,
+  },
+  {
+    tag: "Sem horário fixo",
+    title: "Pacote Flexível",
+    subtitle: "10 aulas presenciais · você decide quando usar",
+    description:
+      "Para quem viaja, não tem dia fixo ou ainda não cabe um personal toda semana: você compra as aulas, marca quando der e tem a consultoria online inteira nos outros dias.",
+    includes: [
+      "10 aulas presenciais, usadas no ritmo que você escolher",
+      "Uma por semana, a cada 15 dias, várias seguidas: quem decide é você",
+      "A consultoria online completa inclusa, para os dias sozinho",
+      "Cada aula comigo faz o treino sozinho render mais: técnica, percepção de falha e cabeça de treino",
+      "Pagamento parcelado",
+      "Sem horário reservado: a aula é marcada conforme a minha agenda",
+    ],
+    cta: "Conversar sobre o pacote flexível",
+    message:
+      "Olá! Tenho interesse no Pacote Flexível de 10 aulas. Pode me contar mais?",
     featured: false,
   },
 ];
@@ -303,7 +330,7 @@ export default function Consultoria() {
       {/* Services Grid */}
       <section id="modalidades" className="py-20 bg-black scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((service, index) => (
               <div
                 key={index}
