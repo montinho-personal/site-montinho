@@ -1356,3 +1356,11 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - Ferramenta: entra no registro do quiz "Treino para minha rotina" (`lib/rotina/local.ts`), como a Fábrica Premium; vídeo "recomeçar" (`lib/video/recomecar.ts`).
 - Links: academias-em-alphaville, 10-melhores, academias-premium-alphaville (seção, linha na tabela, FAQ), academias-perto-de-alphaville, academias-mais-completas-alphaville, fabrica-premium-alphaville. A FAQ "academia mais cara de Alphaville" foi atualizada em três artigos (agora há um preço divulgado). `updatedAt` 27/10 nos artigos com FAQ ou seção nova.
 - 28/10: capa aprovada pelo Montinho (`six-alphaville-capa.webp`). A Six entrou na base da Academia Ideal (`lib/academias/base.ts`: estacionamento, faixa premium e estilos com fonte; horário, Wellhub, TotalPass e personal externo como não confirmados) e no guia /academias-alphaville, no grupo premium.
+
+## 2026-10-29 — Artigo novo: o que acontece se ficar 7 dias sem carboidrato
+
+- `ficar-7-dias-sem-carboidrato`, pauta do PAA da pesquisa do ciclo de carboidratos (15/10). Escrito sem export nem print, a pedido do Montinho: H2 e FAQ são ajustados quando a pesquisa chegar.
+- Canibalização (normalizando hífen e acento): nenhum artigo responde a semana sem carboidrato. `dieta-cetogenica-musculacao` (estratégia de longo prazo) e `treino-low-carb-musculacao` (treinar com pouco carboidrato) são vizinhos e recebem link.
+- Fontes: Kreitzman 1992 (3 a 4 partes de água por parte de glicogênio), Paoli 2013 (3 a 4 dias, abaixo de ~50 g/dia), Bostock 2020 (gripe low carb, relatos de fórum, pico na 1ª semana), Wroble 2019 (4 dias abaixo de 50 g reduzem Wingate e yo-yo, 16 pessoas), DRI 2005 (RDA de 130 g, AMDR 45–65%). A tabela da balança é aritmética em cima de Kreitzman.
+- Ferramenta: Calculadora de Macros (`ARTIGOS_COM_CALCULADORA_MACROS`, 8º do registro).
+- A outra pauta aprovada no mesmo dia, "tempo médio na São Silvestre", foi descartada antes de escrever: o Previsor da São Silvestre já tem "Tempo Médio" no título e responde tempo médio, pace e tempo limite. A varredura anterior tinha olhado só os artigos, não as ferramentas.
