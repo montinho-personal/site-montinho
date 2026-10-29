@@ -531,4 +531,6 @@ export const ARTIGOS_COM_CALCULADORA_CAMINHADA: string[] = [
 export const ARTIGOS_COM_LINK_CAMINHADA: string[] = [
   /* A pergunta é "10 mil passos emagrecem?"; a conta que sobra é quantas calorias os passos DELA valem. */
   "10-mil-passos-por-dia-emagrece",
+  /* Doces de Halloween: a tabela dá a caminhada para 70 kg; a conta que sobra é a do peso e do ritmo DELA. */
+  "doces-de-halloween-faceis-e-rapidos",
 ];

@@ -1364,3 +1364,13 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - Fontes: Kreitzman 1992 (3 a 4 partes de água por parte de glicogênio), Paoli 2013 (3 a 4 dias, abaixo de ~50 g/dia), Bostock 2020 (gripe low carb, relatos de fórum, pico na 1ª semana), Wroble 2019 (4 dias abaixo de 50 g reduzem Wingate e yo-yo, 16 pessoas), DRI 2005 (RDA de 130 g, AMDR 45–65%). A tabela da balança é aritmética em cima de Kreitzman.
 - Ferramenta: Calculadora de Macros (`ARTIGOS_COM_CALCULADORA_MACROS`, 8º do registro).
 - A outra pauta aprovada no mesmo dia, "tempo médio na São Silvestre", foi descartada antes de escrever: o Previsor da São Silvestre já tem "Tempo Médio" no título e responde tempo médio, pace e tempo limite. A varredura anterior tinha olhado só os artigos, não as ferramentas.
+
+## 2026-10-29 — Artigo novo: doces de Halloween fáceis e rápidos (ATP + prints)
+
+- Export do Answer the Public de "doces de halloween" (2 arquivos de modelos de IA idênticos, contados uma vez; o único prompt é "doces populares para comprar no Brasil") + prints do autocompletar, da visão geral por IA e de "Outras pessoas pesquisaram".
+- Volume: termo principal 2,4 mil/mês; "fáceis e rápidos" 1,3 mil; "comprar" e "saquinho" 260; "desenho", "festa" e "para festa" 210; "para fazer" 170; "simples" e "balde" 70; "ideias", "receitas", "importados" 40; "o que dar de doces" 20. "Calorias" e "sem açúcar" com zero: o Montinho decidiu um artigo só, com as calorias como seção, em vez de dois.
+- Usado: título e H2 (fáceis e rápidos, para festa, para fazer, mais leves), receitas que a visão geral por IA lista (abóbora de brigadeiro, olhos de monstro, dedos de bruxa), "o que dar de doces", calorias dos comprados.
+- Fora: compra, marcas (Fini, Rizzo, Docile, Pati Piva), desenho/colorir/png, jogos (Blox Fruits, Hay Day, Brookhaven), cidades, importados, frases.
+- Números: Beliscômetro (TACO/USDA, porções estimadas) e lib/caminhada (3,8 METs, 70 kg). Receitas sem caloria por unidade.
+- Ferramenta: Calculadora de Calorias na Caminhada como link (`ARTIGOS_COM_LINK_CAMINHADA`); Beliscômetro, Mata a Vontade e Simulador de Fim de Semana no texto.
+- Prints de "doces fit" (autocompletar, PAA, "Outras pessoas pesquisaram", visão geral por IA), chegados no meio da escrita: banana, iogurte natural, sem açúcar, 3 ingredientes e whey entraram na seção leve (receita 8, lama de bruxa, a partir do brigadeiro de banana e cacau do Mata a Vontade). Pauta própria, sem relação com o Halloween: artigo "doces fit" (receitas, com banana, com whey, sem açúcar, "quais doces posso comer na dieta"); "para vender", iFood e Brasília ficam fora.
