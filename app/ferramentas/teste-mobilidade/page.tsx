@@ -19,6 +19,7 @@ import { TESTES } from "@/lib/mobilidade/testes";
 import { SEMANAS_ATE_RETESTE } from "@/lib/mobilidade/motor";
 import Compartilhar from "@/components/share/Compartilhar";
 import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 
 /**
  * Destrave Seu Corpo — a página da ferramenta.
@@ -323,6 +324,22 @@ export default function TesteMobilidadePage() {
                 Minha história
               </Link>
               . Última revisão do conteúdo: agosto de 2026.
+            </p>
+          </div>
+
+          <div className="border-t border-white/10 pt-10">
+            <h2 id="video-inferiores" className="text-2xl font-bold text-white mb-4" style={h}>
+              Mobilidade de inferiores para fazer junto
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-6">
+              Se o resultado apontou quadril ou tornozelo, este é um protocolo
+              para fazer junto, com tapete, rolo e uma parede: 90/90, pombo,
+              mobilidade de tornozelo, cócoras e mais. Dê uma nota de 0 a 10
+              para o desconforto antes e depois.
+            </p>
+            <YoutubeShortEmbed videoId="ILCXLmG2ucQ" title="Mobilidade de inferiores: quadril, lombar e joelho soltos — Montinho Personal Trainer" />
+            <p className="mt-4 text-sm text-center">
+              <Link href="/videos/mobilidade-de-inferiores" className="text-gray-400 hover:text-white underline underline-offset-4">Ler o resumo do vídeo</Link>
             </p>
           </div>
 

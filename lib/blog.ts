@@ -115742,6 +115742,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>E o de sempre: isto é orientação geral, construída em cima do que a literatura mostra. Não substitui avaliação individual, não investiga dor e não prevê lesão. Se você quer alguém olhando o seu caso e encaixando isso no seu treino, <a href="/consultoria-online">é o trabalho que eu faço</a>.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer fazer junto? No vídeo, um protocolo de mobilidade de inferiores com a mobilidade de tornozelo ajoelhado, o 90/90, o pombo e as cócoras.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ILCXLmG2ucQ?rel=0" title="Mobilidade de inferiores: quadril, lombar e joelho soltos — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Leia também</h2>
 <ul>
   <li><a href="/blog/mobilidade-articular-pre-treino">Mobilidade Articular Pré-Treino: Protocolo Completo por Articulação</a></li>
@@ -115997,6 +116000,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 
 <p>Isto é orientação geral construída sobre o que a literatura mostra. Não substitui avaliação individual, não investiga dor e não prevê lesão. Se você quer alguém olhando o seu caso e encaixando isso no seu treino, <a href="/consultoria-online">é o trabalho que eu faço</a>.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Prefere ver os exercícios em movimento? No vídeo, um protocolo de mobilidade de inferiores para fazer junto, com 90/90, pombo, mobilidade de tornozelo e cócoras.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ILCXLmG2ucQ?rel=0" title="Mobilidade de inferiores: quadril, lombar e joelho soltos — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
