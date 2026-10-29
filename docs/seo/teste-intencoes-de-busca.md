@@ -1401,5 +1401,9 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - Export do Answer the Public de "doces fit" (Google e Bing; Bing repete o Google). Termo principal 9,9 mil/mês; "receitas doces fit" 1,3 mil; "com leite em pó" 880 + 720 (as duas grafias); "para vender" 480; "panquecas doces fit" 390; "receitas" e "receita" 390; "sem açúcar" 320 + 90; "caseiro" e "para comprar" 170; "como fazer" 90; com morango e com whey 70; "rápido e fácil" 50; pasta de amendoim e cacau 40; com banana, no pote, simples, para fazer em casa 30.
 - Entraram: seção "Doces fit com leite em pó" (brigadeiro sem fogo e beijinho), panqueca doce fit de banana, micro-ondas, air fryer e doce de pote; +3 FAQs. `updatedAt` 30/10.
 - Fora: "para vender" e "receitas para vender" (intenção de negócio), cidades (Curitiba, BH, Brasília, SP, Porto Alegre…), marcas (Goodies, Oner, La Fit), iFood, delivery. Pauta: "doces fit para o Natal" (20/mês, sazonal de dezembro).
-- Título: proposta enviada ao Montinho (ATUAL/PROPOSTA/MOTIVO), não aplicada.
+- Título aprovado pelo Montinho em 30/10:
+
+| Página | ATUAL | NOVO | Motivo |
+|---|---|---|---|
+| /blog/doces-fit | Doces Fit: Receitas Fáceis com Banana, Whey e Sem Açúcar | Doces Fit: Receitas Fáceis com Leite em Pó e Sem Açúcar | "com leite em pó" ~1.600/mês e "sem açúcar" ~410 no export; banana (30) e whey (70) seguem no texto. Medir no GSC em 28 dias (página nova, sem linha de base). |
 

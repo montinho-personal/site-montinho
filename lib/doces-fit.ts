@@ -42,8 +42,8 @@ const FONTE_IDEC = {
 export const DOCES_FIT_POSTS: BlogPost[] = [
   {
     slug: "doces-fit",
-    title: "Doces Fit: Receitas Fáceis com Banana, Whey e Sem Açúcar",
-    metaTitle: "Doces Fit: Receitas Fáceis com Banana, Whey e Sem Açúcar",
+    title: "Doces Fit: Receitas Fáceis com Leite em Pó e Sem Açúcar",
+    metaTitle: "Doces Fit: Receitas Fáceis com Leite em Pó e Sem Açúcar",
     metaDescription:
       "Sete doces fit fáceis de fazer em casa, com banana, iogurte natural, whey ou leite em pó, o que torna um doce fit de verdade e quais doces cabem na dieta.",
     excerpt:
