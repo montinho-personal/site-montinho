@@ -7,6 +7,7 @@ import FAQ from "@/components/ui/FAQ";
 import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
+import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer para Hipertrofia Tamboré | Montinho Personal Trainer" },
@@ -198,6 +199,8 @@ export default function PersonalTrainerHipertrofiaTambore() {
         <LinkFerramentaRotina slug="personal-trainer-para-hipertrofia-tambore" tipo="personal" />
       </div>
 
+
+      <PacoteFlexivel onde="personal-trainer-para-hipertrofia-tambore" />
 
       {/* FAQ */}
       <VideoRecomecar />

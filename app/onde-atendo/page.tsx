@@ -6,6 +6,7 @@ import IndiceRegiao from "@/components/regiao/IndiceRegiao";
 import { ONDE_ATENDO } from "@/lib/regiao";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
+import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
 
 /**
  * Onde o Montinho atende.
@@ -101,6 +102,8 @@ export default function OndeAtendoPage() {
           <IndiceRegiao grupos={ONDE_ATENDO} />
         </div>
       </section>
+
+      <PacoteFlexivel onde="onde-atendo" />
 
       <VideoRecomecar />
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>

@@ -6,6 +6,7 @@ import FAQ from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
+import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
 
 /**
  * Landing Page de alta conversão para Google Ads.
@@ -436,6 +437,8 @@ export default function LandingPage() {
             </p>
           </div>
         </section>
+
+        <PacoteFlexivel onde="personal-trainer" />
 
         {/* ───────────────────── 9. FAQ ───────────────────── */}
         <VideoRecomecar />
