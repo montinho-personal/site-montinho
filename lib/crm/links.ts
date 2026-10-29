@@ -87,6 +87,15 @@ export const LINKS: Record<string, LinkControlado> = {
   "wa-emagrecimento": { destino: "/ferramentas/simulador-emagrecimento", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "simulador_emagrecimento", tipo: "social" },
   "yt-emagrecimento": { destino: "/ferramentas/simulador-emagrecimento", utm_source: "youtube", utm_medium: "video", utm_campaign: "simulador_emagrecimento", utm_content: "descricao", tipo: "social" },
   "yt-upper-lower": { destino: "/blog/treino-upper-lower-superior-inferior", utm_source: "youtube", utm_medium: "video", utm_campaign: "treino_upper_lower", utm_content: "descricao", tipo: "social" },
+  /**
+   * Os dois vídeos de mobilidade (inferiores e superiores). Levam à home, a
+   * pedido do Montinho; um código por vídeo e por rede, para saber qual dos
+   * dois e qual canal trouxe gente.
+   */
+  "yt-mob-inferiores": { destino: "/", utm_source: "youtube", utm_medium: "video", utm_campaign: "mobilidade_inferiores", utm_content: "descricao", tipo: "social" },
+  "yt-mob-superiores": { destino: "/", utm_source: "youtube", utm_medium: "video", utm_campaign: "mobilidade_superiores", utm_content: "descricao", tipo: "social" },
+  "wa-mob-inferiores": { destino: "/", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "mobilidade_inferiores", tipo: "social" },
+  "wa-mob-superiores": { destino: "/", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "mobilidade_superiores", tipo: "social" },
 };
 
 export function urlDoLink(slug: string, extra: Record<string, string> = {}): string | null {
