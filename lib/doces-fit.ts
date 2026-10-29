@@ -3,7 +3,12 @@ import type { BlogPost } from "./blog";
 /**
  * "Doces fit" (29/10/2026). Prints do Google de "doces fit" (autocompletar,
  * "As pessoas também perguntam", "Outras pessoas pesquisaram", visão geral
- * por IA); sem export do Answer the Public, a pedido do Montinho.
+ * por IA); export do Answer the Public de "doces fit" chegou em 30/10/2026:
+ * termo principal 9,9 mil/mês; "receitas" 1,3 mil; "com leite em pó" 880 +
+ * 720; "panquecas doces fit" 390; "sem açúcar" 320 + 90; "caseiro" 170; com
+ * morango, whey, pasta de amendoim, cacau, banana, no pote, micro-ondas, air
+ * fryer. Fora: "para vender" (480, intenção de negócio), cidades, marcas,
+ * iFood, Natal (pauta).
  * Autocompletar: receitas, para fazer em casa, sem açúcar, com leite em pó,
  * com banana, com whey. Relacionadas: rápidos e fáceis, caseiro, com iogurte
  * natural, sobremesa fit 3 ingredientes, saudáveis para dieta. PAA: o que
@@ -45,6 +50,7 @@ export const DOCES_FIT_POSTS: BlogPost[] = [
       "Sete receitas de doce fit em poucos minutos, com banana, iogurte, cacau e whey, o que faz um doce ser fit de verdade e como escolher os prontos pelo rótulo.",
     category: "Nutrição",
     date: "2026-10-29",
+    updatedAt: "2026-10-30",
     readTime: "7 min",
     author: "Montinho",
     tags: ["doces fit", "receitas fit", "doce sem açúcar", "doce com whey", "sobremesa fit"],
@@ -83,6 +89,21 @@ export const DOCES_FIT_POSTS: BlogPost[] = [
         question: "Onde encontrar doces fit prontos?",
         answer:
           "Mercados, lojas de suplemento e aplicativos de entrega vendem várias opções. Antes de comprar, olhe a tabela: proteína por porção, açúcares adicionados e o tamanho da porção. A lupa \"alto em açúcar adicionado\" na frente da embalagem já mostra o que não é tão fit quanto parece.",
+      },
+      {
+        question: "Como fazer doce fit com leite em pó?",
+        answer:
+          "O mais fácil é o brigadeiro fit sem fogo: 4 colheres de sopa de leite em pó desnatado, 1 de cacau 100% e adoçante a gosto, com leite ou água pingados aos poucos até dar ponto de enrolar. Trocando o cacau por coco ralado sem açúcar, vira um beijinho fit.",
+      },
+      {
+        question: "Como fazer panqueca doce fit?",
+        answer:
+          "Amasse 1 banana madura, misture 1 ovo e 2 colheres de sopa de aveia em flocos e doure na frigideira antiaderente untada, dos dois lados. Sirva com morango, canela ou uma colher de pasta de amendoim.",
+      },
+      {
+        question: "Qual doce fit dá para fazer no micro-ondas ou na air fryer?",
+        answer:
+          "No micro-ondas, o bolo de caneca de banana e aveia e o brigadeiro de banana saem em 2 minutos. Na air fryer, a banana assada com canela fica pronta em cerca de 8 minutos.",
       },
       {
         question: "Doce fit com leite em pó é saudável?",
@@ -125,6 +146,19 @@ export const DOCES_FIT_POSTS: BlogPost[] = [
 <p>Em camadas: iogurte natural, fruta picada e aveia em flocos com canela. Repita e sirva gelado. Sai em dois minutos e funciona como sobremesa ou café da manhã.</p>
 
 <p>Quer uma sugestão para a vontade de agora, com o que você tem em casa? O <a href="/ferramentas/mata-a-vontade">Mata a Vontade</a> pergunta do que você tem vontade e sugere a receita.</p>
+
+<h2>Doces fit com leite em pó</h2>
+<p>O leite em pó faz o papel do leite condensado: dá cremosidade e ponto de enrolar, com mais proteína e sem o açúcar da lata. Prefira o desnatado, que tem menos gordura, e meça com a colher: em colheradas cheias ele também soma calorias.</p>
+
+<h3>Brigadeiro fit de leite em pó (sem fogo)</h3>
+<p>Misture 4 colheres de sopa de leite em pó desnatado, 1 colher de sopa de cacau 100% e adoçante a gosto, se usar. Pingue leite ou água aos poucos, uma colher de chá por vez, mexendo, até a massa dar ponto de enrolar. Enrole bolinhas e passe no cacau. Se ficar mole, leve 15 minutos à geladeira antes de enrolar.</p>
+
+<h3>Beijinho fit</h3>
+<p>A mesma base, trocando o cacau por 2 colheres de sopa de coco ralado sem açúcar. Enrole e passe as bolinhas no coco.</p>
+
+<h3>Panqueca doce fit de banana</h3>
+<p>Amasse 1 banana madura, misture 1 ovo e 2 colheres de sopa de aveia em flocos. Despeje na frigideira antiaderente untada e doure dos dois lados. Sirva com morango, canela ou uma colher de pasta de amendoim. É a panqueca doce fit mais pedida porque usa o que quase todo mundo tem em casa.</p>
+<p>Do micro-ondas, o bolo de caneca e o brigadeiro de banana saem em 2 minutos; da air fryer, a banana assada com canela, em cerca de 8. E o copinho de iogurte em camadas é o doce fit de pote mais fácil de levar.</p>
 
 <h2>Quais doces posso comer na dieta?</h2>
 <p>Qualquer um, na quantidade certa. Um brigadeiro de festa tem perto de <strong>58 kcal</strong>, pela receita calculada com os ingredientes da tabela TACO. Ele não estraga a semana de ninguém. O problema é o brigadeiro que vira cinco, todo dia.</p>
