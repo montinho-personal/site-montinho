@@ -3,9 +3,12 @@ import type { BlogPost } from "./blog";
 /**
  * "O que acontece se ficar 7 dias sem carboidrato" (pauta da pesquisa do
  * ciclo de carboidratos, 15/10/2026: pergunta do "As pessoas também
- * perguntam" que não cabia naquela página). Escrito sem export nem print do
- * Google, a pedido do Montinho (29/10/2026): quando a pesquisa chegar, H2 e
- * FAQ são ajustados às perguntas reais.
+ * perguntam" que não cabia naquela página). Escrito sem pesquisa e ajustado
+ * no mesmo dia com os prints do Google (29/10/2026; a visão geral por IA já
+ * citava o artigo): PAA "quantos dias o corpo aguenta", "é bom cortar por uma
+ * semana"; relacionadas e autocompletar "o que comer", "cortar emagrece mais
+ * rápido", "10/30 dias", "falta de carboidrato sintomas / dá sono". Fora:
+ * "causa depressão" e "doenças causadas pela falta" (sem fonte aqui).
  *
  * Não canibaliza "dieta-cetogenica-musculacao" (a dieta como estratégia de
  * longo prazo) nem "treino-low-carb-musculacao" (treinar com pouco
@@ -74,6 +77,26 @@ export const SEM_CARBOIDRATO_POSTS: BlogPost[] = [
           "Varia muito, e o número da balança engana. Cada grama de glicogênio é guardado com 3 a 4 gramas de água. Então, se o corpo gastar 300 g de glicogênio, saem junto de 900 g a 1,2 kg de água, e a balança cai de 1,2 a 1,5 kg só por isso, sem que essa parte seja gordura.",
       },
       {
+        question: "Quantos dias o corpo aguenta sem carboidrato?",
+        answer:
+          "Não existe um número de dias que sirva para todo mundo. Depois de 3 a 4 dias, o fígado passa a produzir corpos cetônicos, que viram a energia alternativa do cérebro. Dietas cetogênicas são usadas por meses em tratamento médico, como na epilepsia, sempre com acompanhamento. Para emagrecer, cortar tudo não é necessário.",
+      },
+      {
+        question: "É bom cortar o carboidrato por uma semana?",
+        answer:
+          "Depende do que você espera. A balança cai, mas a maior parte é água. A primeira semana costuma vir com cansaço e treino rendendo menos. Se o objetivo é emagrecer, reduzir os carboidratos refinados e manter os que ajudam o treino costuma ser mais fácil de sustentar do que zerar.",
+      },
+      {
+        question: "O que comer numa semana sem carboidrato?",
+        answer:
+          "Carnes, frango, peixe, ovos, queijos, verduras e legumes com pouco amido (alface, couve, brócolis, abobrinha, pepino), azeite, abacate e castanhas. Zerar de verdade é difícil, porque verduras, legumes e laticínios têm um pouco de carboidrato.",
+      },
+      {
+        question: "Falta de carboidrato dá sono?",
+        answer:
+          "Cansaço e falta de energia estão entre os sintomas mais relatados na primeira semana de uma dieta muito baixa em carboidrato, junto com dor de cabeça, tontura e mente lenta. Nos relatos, eles têm pico na primeira semana e melhoram até a quarta.",
+      },
+      {
         question: "Ficar 7 dias sem carboidrato emagrece?",
         answer:
           "Só a parte que vier do déficit calórico. Gordura sai quando você gasta mais do que come, com ou sem carboidrato. A queda rápida da primeira semana é principalmente água e glicogênio, e volta quando o carboidrato volta.",
@@ -129,6 +152,15 @@ export const SEM_CARBOIDRATO_POSTS: BlogPost[] = [
 <p>A primeira semana é a mais difícil. Num levantamento de relatos de pessoas que começaram a dieta cetogênica, os sintomas mais citados foram <strong>dor de cabeça, cansaço, náusea, tontura, mente lenta, desconforto intestinal e falta de energia</strong>, com pico na primeira semana e melhora até a quarta (${link(FONTE_BOSTOCK, "Bostock e colegas, 2020")}). São relatos de fóruns, não um estudo clínico: mostram o que as pessoas sentem, não por que sentem.</p>
 <p>Outro efeito comum é o intestino ficar preso. Pão integral, aveia, feijão e frutas são carboidratos e também são de onde vem boa parte da fibra do dia. Se eles saem, a fibra cai junto. Veja os <a href="/blog/alimentos-ricos-em-fibra">alimentos ricos em fibra</a> que têm pouco carboidrato, como as verduras.</p>
 
+<h2>O que comer numa semana sem carboidrato</h2>
+<p>Quem decide tentar costuma montar as refeições com:</p>
+<ul>
+<li><strong>Proteínas:</strong> carnes, frango, peixe, ovos e queijos.</li>
+<li><strong>Verduras e legumes com pouco amido:</strong> alface, couve, rúcula, brócolis, couve-flor, abobrinha, pepino.</li>
+<li><strong>Gorduras:</strong> azeite, abacate, castanhas.</li>
+</ul>
+<p>Zerar de verdade é difícil: verduras, legumes e laticínios têm um pouco de carboidrato, e tudo bem. O que sai são pão, arroz, massa, batata, açúcar, doces, frutas e a maior parte dos industrializados. A versão de longo prazo, com as contas de cada macro, está em <a href="/blog/dieta-cetogenica-musculacao">dieta cetogênica e musculação</a>.</p>
+
 <h2>Quantos quilos dá para perder em 7 dias sem carboidrato?</h2>
 <p>Não existe um número certo, porque depende de quanto glicogênio você tinha, do seu tamanho e de quanto comeu na semana. Mas a conta da água ajuda a entender o que a balança mostra:</p>
 <table>
@@ -140,6 +172,10 @@ export const SEM_CARBOIDRATO_POSTS: BlogPost[] = [
 </tbody>
 </table>
 <p>A tabela é só a aritmética da proporção de água; quanto de glicogênio cada pessoa gasta varia. A gordura é outra conta: um quilo de gordura guarda cerca de 7.700 kcal, então ela só sai com déficit calórico, dia após dia. A conta completa está em <a href="/blog/quantas-calorias-tem-1kg-de-gordura">quantas calorias tem 1 kg de gordura</a>.</p>
+
+<h2>Cortar carboidrato emagrece mais rápido?</h2>
+<p>Na balança, nos primeiros dias, sim: é a água do glicogênio indo embora. Na gordura, não necessariamente. O que tira gordura é gastar mais do que você come, e isso pode acontecer com ou sem carboidrato. Cortar carboidrato ajuda algumas pessoas porque tira da rotina muita coisa fácil de comer demais, como pão, doce e salgadinho. Para outras, a falta de energia no treino e a vontade de comer atrapalham mais do que ajudam.</p>
+<p>E se passar de 7 dias, com 10, 12 ou 30 dias sem carboidrato? A queda rápida de água já aconteceu na primeira semana. Daí em diante, o ritmo da balança passa a depender do déficit, como em qualquer dieta.</p>
 
 <h2>E quando o carboidrato volta?</h2>
 <p>O corpo repõe o glicogênio, e a água volta com ele. A balança sobe em um ou dois dias, e muita gente acha que "engordou tudo de novo". Não engordou: a parte que volta é exatamente a que tinha saído sem ser gordura. O que fica é a gordura que você perdeu de verdade com o déficit da semana.</p>
