@@ -7,6 +7,7 @@ import { mensagemPara } from "@/lib/crm/copy";
 import { Badge, Btn, Card, Pagina, Stat, Vazio, brl, num, pct } from "@/components/crm/ui";
 import { concluirTarefa } from "./actions";
 import BotaoWhatsApp from "@/components/crm/BotaoWhatsApp";
+import PreviaMensagem from "@/components/crm/PreviaMensagem";
 import Registrar from "@/components/crm/Registrar";
 import RegistrarRenovacao from "@/components/crm/RegistrarRenovacao";
 import { agruparPorSecao, POR_SECAO } from "@/lib/crm/hoje";
@@ -102,6 +103,7 @@ export default async function Hoje() {
         {/* Duas ações em todo card: WhatsApp para FAZER, Registrar para dizer o que aconteceu. */}
         <div className="flex w-full flex-wrap items-start gap-2 sm:w-auto">
           {wa && <BotaoWhatsApp url={wa} contactId={i.contactId} leadId={i.leadId} clientId={i.clientId} taskId={i.taskId} grupo={i.grupo} situacao={copy.situacao} />}
+          {wa && <PreviaMensagem texto={copy.texto} contactId={i.contactId} leadId={i.leadId} clientId={i.clientId} taskId={i.taskId} grupo={i.grupo} situacao={copy.situacao} />}
           {i.taskId && <form action={concluirTarefa}><input type="hidden" name="task_id" value={i.taskId} /><Btn tom="secundario" pequeno title={i.acao}>Feito</Btn></form>}
           {i.leadId ? (
             <Registrar leadId={i.leadId} contactId={i.contactId} opportunityId={i.opportunityId} motivos={cat.motivos} temExperimental={temExperimental(i.opportunityId)} jaRespondeu={i.grupo === "respondeu_aguardando_voce"} />

@@ -90,9 +90,15 @@ export const TEXTOS: Record<Situacao, string> = {
   primeiro_contato_generico:
     "[[{saudacao}! ]]Aqui é o Montinho — sou eu mesmo que respondo por aqui.\n\nAntes de sugerir qualquer coisa eu gosto de entender seu caso, porque aqui não tem ficha pronta.\n\nMe conta: o que te trouxe até aqui — emagrecer, ganhar massa ou voltar a treinar com segurança?",
 
-  // Segundo toque: puxa em vez de empurrar. Tira a culpa, avisa que não vai cobrar, e pergunta pelo custo de continuar como está.
+  /*
+   * Segundo toque: puxa em vez de empurrar. Até 29/10/2026 abria com "imagino
+   * que a semana tenha engolido você" e "não vou ficar te cobrando"; o
+   * Montinho pediu para tirar (soava íntimo demais e chamava atenção para a
+   * cobrança). Agora fala como personal que precisa entender o caso para
+   * orientar, e a pergunta continua sendo sobre o que trava o treino.
+   */
   segundo_toque:
-    "[[{saudacao}! ]]Imagino que a semana tenha engolido você[[ nesses {dias} dias]] — acontece, e não vou ficar te cobrando, fica à vontade.\n\nSó pra eu não te mandar nada genérico: o que costuma te fazer adiar o treino — falta de tempo, dor ou resultado que não vem?",
+    "[[{saudacao}! ]]Aqui é o Montinho de novo.\n\nAntes de te indicar qualquer caminho, prefiro entender o que tem pesado na sua rotina de treino hoje. Cada caso pede um ajuste diferente.\n\nO que mais atrapalha agora: falta de tempo, alguma dor ou o resultado que não aparece?",
 
   // Depois da proposta: a dúvida certa é sobre COMO funciona, nunca sobre preço. O último toque devolve a decisão e facilita o "não".
   proposta_follow_up_1:
@@ -127,9 +133,9 @@ export const TEXTOS: Record<Situacao, string> = {
    * pessoa — ninguém fica carimbado.
    */
   proposta_follow_up_2:
-    "[[{saudacao}! ]]Imagino que não seja o momento agora, e tá tudo bem mesmo — não vou ficar te cobrando.\n\nDeixo a proposta guardada, sem prazo, pra quando fizer sentido pra você.\n\nSe um dia ajudar: eu já fui obeso e comecei do zero, contei tudo aqui — https://www.montinhopersonal.com.br/l/historia-lead",
+    "[[{saudacao}! ]]Sei que decidir por um acompanhamento leva tempo, e respeito o seu momento.\n\nA proposta fica guardada comigo. Quando fizer sentido, a gente retoma de onde parou.\n\nSe ajudar na decisão: eu já fui obeso e comecei do zero, contei a história aqui — https://www.montinhopersonal.com.br/l/historia-lead",
   negociacao_parada:
-    "[[{saudacao}! ]]Parece que ficou alguma coisa travando na hora de decidir[[ sobre {servico}]], e isso é super normal. Não quero ficar te empurrando.\n\nSó pra eu conseguir te ajudar de verdade — e se for só o momento, também vale: o que pesa mais agora, o horário, o formato ou o investimento?",
+    "[[{saudacao}! ]]Percebi que ficou algum ponto em aberto na decisão[[ sobre {servico}]]. É normal: é um compromisso com a sua rotina.\n\nPara eu ver o que dá para ajustar no seu caso: o que pesa mais agora, o horário, o formato ou o investimento?",
 
   // O degrau que separa "conversou" de "comprou". No presencial é a aula experimental: gratuita e
   // sem compromisso — confirmado pelo Renato em 10/09/2026 e dito também em /lp/personal-alphaville.
@@ -146,7 +152,7 @@ export const TEXTOS: Record<Situacao, string> = {
     "[[{saudacao}! ]]Queria saber da aula[[ de {dia_hora}]]. Se rolou, me conta como o corpo ficou depois.\n\nE se não deu pra ir, tudo bem, acontece — a gente remarca sem problema nenhum.\n\nQual dos dois foi?",
   // Faltou: a pessoa já sabe que faltou. Cobrar afasta; reabrir a porta com um próximo passo concreto traz de volta.
   experimental_no_show:
-    "[[{saudacao}! ]]Você não conseguiu vir[[ {dia_hora}]] e tá tudo certo, imprevisto acontece com todo mundo.\n\nSua vaga continua aqui, sem cobrança nenhuma. Quer que eu veja outro dia dessa semana?",
+    "[[{saudacao}! ]]Vi que não deu para vir[[ {dia_hora}]]. Imprevisto acontece, e a sua aula experimental continua de pé.\n\nQual dia desta semana encaixa melhor para a gente remarcar?",
   pos_experimental_proposta:
     "[[{saudacao}! ]]Gostei demais de treinar com você! A parte mais chata você já fez: apareceu, treinou e me mostrou o que precisa de ajuste.\n\nVou te mandar agora a proposta montada em cima do que a gente viu, sem compromisso, pra você ler com calma.\n\nPrefere que eu explique cada formato ou quer ler primeiro?",
 
@@ -172,7 +178,7 @@ export const TEXTOS: Record<Situacao, string> = {
   renovacao_pacote:
     "[[{saudacao}! ]]Fechou o pacote[[ de {aulas} aulas]] 👏[[ Foram {semanas} semanas de treino.]]\n\n[[Anotei todas as datas: {datas}.\n\n]]Confere se bate com o seu controle. Quer que eu já abra o próximo pra gente não parar?",
   renovacao_vencida:
-    "[[{saudacao}! ]]Seu plano venceu[[ há {dias} dias]] e eu não quero fechar seu horário sem te perguntar antes. Nada de cobrança, é só pra eu organizar a agenda.\n\nBora seguir pro próximo ciclo?",
+    "[[{saudacao}! ]]Seu plano venceu[[ há {dias} dias]] e, antes de mexer na agenda, quis falar com você sobre o seu horário.\n\nSeguimos para o próximo ciclo?",
   /*
    * Consultoria online não tem horário na agenda: falar em "segurar seu
    * horário" para quem treina sozinha com a planilha não faz sentido (pedido
@@ -182,7 +188,7 @@ export const TEXTOS: Record<Situacao, string> = {
   renovacao_proxima_online:
     "[[{saudacao}! ]]Seu ciclo da consultoria fecha[[ em {renova_em} dias]] e eu já quero montar o próximo bloco com você, olhando o que subiu de carga e o que precisa de ajuste.\n\nTem algo que você queira priorizar nas próximas semanas, ou seguimos no que tá dando certo?",
   renovacao_vencida_online:
-    "[[{saudacao}! ]]Seu ciclo da consultoria fechou[[ há {dias} dias]] e eu não quis deixar passar sem falar com você. Nada de cobrança: é pra eu saber se já monto o seu próximo bloco de treino.\n\nBora seguir pro próximo ciclo?",
+    "[[{saudacao}! ]]Seu ciclo da consultoria fechou[[ há {dias} dias]]. Já quero montar o próximo bloco de treino a partir do que você evoluiu neste.\n\nSeguimos para o próximo ciclo?",
   /*
    * As três reativações. Nenhuma pergunta "quer voltar?" logo de cara, e
    * nenhuma fala de preço: 16 dos 19 que saíram saíram por "parou de
@@ -194,13 +200,14 @@ export const TEXTOS: Record<Situacao, string> = {
   reativacao_antiga:
     "[[{saudacao}! ]]Aqui é o Montinho.\n\nFaz um tempão, né. Lembrei de você esses dias e resolvi mandar um oi, sem segundas intenções.\n\nTá treinando ainda?",
   reativacao_pausado:
-    "[[{saudacao}! ]]Aqui é o Montinho.\n\nFiquei pensando em você esses dias. A gente treinou junto e depois você sumiu — e eu sei como é, a vida aperta e o treino é sempre o primeiro a cair.\n\nComo você tá com o treino hoje?",
+    "[[{saudacao}! ]]Aqui é o Montinho.\n\nLembrei de você esses dias. A gente treinou junto e depois a rotina mudou, eu sei como é: quando a vida aperta, o treino costuma ser o primeiro a sair.\n\nComo você está com o treino hoje?",
 
   // Primeiro conteúdo: desmente a previsão dela. Ela espera cobrança; recebe
-  // um presente que não pede nada. "Ignora sem dó" está lá de propósito —
-  // dar permissão de ignorar é o que faz a frase de abertura ser acreditada.
+  // um presente que não pede nada. Até 29/10/2026 abria com "sem cobrar
+  // nada, prometido" e "ignora sem dó"; saiu pelo mesmo motivo do segundo
+  // toque. O texto não pede nada, e isso basta para não soar como cobrança.
   conteudo_primeiro:
-    "[[{saudacao}! ]]Sem cobrar nada, prometido — separei uma coisa que pode te servir.\n\n[[É sobre {assunto}. ]]Se não fizer sentido agora, ignora sem dó.\n\n{link}",
+    "[[{saudacao}! ]]Separei um conteúdo que pode te ajudar no treino.\n\n[[É sobre {assunto}. ]]Leitura rápida, para usar quando fizer sentido para você.\n\n{link}",
   // Segundo: ferramenta, não artigo. Um número sobre o corpo dela é o
   // formato mais lembrado que existe, e devolve a ela um motivo de voltar
   // que não é o Montinho pedindo.

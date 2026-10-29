@@ -861,6 +861,46 @@ export async function contatarPeloWhatsApp(fd: FormData) {
 }
 
 /**
+ * "Não enviar": o Montinho leu a mensagem do card e decidiu que, neste
+ * contexto, ela não vale a pena (pedido de 29/10/2026).
+ *
+ * Não conta como follow-up — nada foi enviado, então o contador de cobranças
+ * não anda. O card sai de hoje e volta depois de `dias`: lead pelo mesmo
+ * caminho do Adiar (é o que a tela de hoje respeita), renovação pela mesma
+ * troca de tarefa do envio, tarefa avulsa fica concluída.
+ */
+export async function naoEnviar(fd: FormData) {
+  const u = await exigirEscrita();
+  const sb = await supabaseServer();
+  const contactId = s(fd, "contact_id"); const leadId = s(fd, "lead_id"); const clientId = s(fd, "client_id");
+  const taskId = s(fd, "task_id"); const grupo = s(fd, "grupo"); const situacao = s(fd, "situacao");
+  const dias = Math.max(1, Math.min(30, n(fd, "dias") ?? 3));
+  const agora = new Date().toISOString();
+  const quando = dataDoCheckIn(new Date().toLocaleDateString("en-CA", { timeZone: FUSO }), dias);
+  const volta = new Date(quando).toLocaleDateString("pt-BR", { timeZone: FUSO });
+
+  if (taskId) await sb.from("crm_tasks").update({ completed_at: agora }).eq("id", taskId);
+
+  if (leadId) {
+    const { data: lead } = await sb.from("crm_leads").select("next_action").eq("id", leadId).single();
+    const acao = lead?.next_action && !/^Aguardando resposta$/.test(lead.next_action) ? lead.next_action : "Retomar conversa";
+    await erroSe(await sb.from("crm_leads").update({ next_action: acao, next_action_at: quando }).eq("id", leadId), "não enviar");
+    await sb.from("crm_tasks").update({ completed_at: agora }).eq("lead_id", leadId).in("tipo", ["follow_up", "reativacao"]).is("completed_at", null);
+  } else if (clientId && grupo?.startsWith("renovacao")) {
+    await sb.from("crm_tasks").update({ completed_at: agora }).eq("client_id", clientId).eq("tipo", "renovacao").is("completed_at", null);
+    await tarefa(sb, u.id, { contact_id: contactId, client_id: clientId, tipo: "renovacao", titulo: "Retomar a renovação", due_at: quando, priority: "media" });
+  }
+
+  // `adiado: true` + `ate` é o que adiadoAte (lib/crm/visao.ts) lê para tirar o lead de hoje.
+  await atividade(sb, u.id, {
+    contact_id: contactId, lead_id: leadId, client_id: clientId, tipo: "note", ocorreu_em: agora,
+    descricao: `Mensagem de hoje não enviada (decidido pelo contexto). Volta em ${volta}.`,
+    metadata: { origem: "hoje", grupo, situacao, nao_enviada: true, adiado: !!leadId, ate: quando },
+  });
+  revalidarTudo(["/crm", leadId ? `/crm/leads/${leadId}` : "", clientId ? `/crm/clientes/${clientId}` : ""].filter(Boolean));
+}
+
+/**
  * Registra um conteúdo enviado a um lead e devolve o link que sabe quem
  * recebeu.
  *
