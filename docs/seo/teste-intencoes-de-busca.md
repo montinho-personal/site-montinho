@@ -1386,3 +1386,13 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `ficar-7-dias-sem-carboidrato`: a visão geral por IA de "o que acontece se ficar 7 dias sem carboidrato" já cita o artigo (montinhopersonal.com.br). Entraram: PAA "quantos dias o corpo aguenta sem carboidratos" e "é bom cortar por uma semana"; relacionadas "o que comer" (seção nova), "cortar carboidratos emagrece mais rápido / quantos quilos" (seção nova), "10/12/30 dias", "falta de carboidrato sintomas / causa sono". Fora: "causa depressão", "doenças causadas pela falta de carboidrato" (sem fonte aqui), "antes de dormir", "e açúcar". Publicado hoje, sem `updatedAt`.
 - `brasileiros-ufc-vegas-124`: a visão geral por IA lista as mesmas lutas do hub (Bonfim x Brady, Virna x Suarez, Karine x Gabriella). +1 FAQ ("Quem é o Marretinha", das relacionadas); `updatedAt` 29/10. "Brasileiros vencedores / campeões" (autocompletar) fica para o artigo de resultado de 08/11. Fora: Vegas 123, UFC 336, UFC no Brasil 2026, "UFC hoje" (outras páginas).
 
+## 2026-10-30 — Prints: treino de hyrox
+
+- Prints do autocompletar, da visão geral por IA, do PAA e de "Outras pessoas pesquisaram" para "treino de hyrox". O artigo já cobria: o que é, 8 exercícios, WOD, iniciante, exemplo completo, na academia, em casa, perto de mim. +2 FAQs: "como montar um treino de Hyrox" e "qual o melhor treino para Hyrox"; `updatedAt` 30/10.
+- Fora: "em São Paulo" e "em Campinas" (fora da área; os guias locais cobrem Alphaville, Barueri, Santana e Aldeia). A visão geral por IA descreve o formato como no artigo de estações (8 × 1 km + 8 estações).
+
+## 2026-10-30 — Prints: estações do hyrox
+
+- O artigo aparece na 1ª página, logo abaixo da HyCoach. Autocompletar: 8 estações, quais, ordem, oficial, como são, exercícios. PAA: quais são as estações, qual a sequência, categorias, 8 exercícios. Já cobria ordem, pesos por categoria e categorias. +2 FAQs: "qual é a sequência do Hyrox" e "as estações são sempre as mesmas"; `updatedAt` 30/10.
+- A visão geral por IA diz "wall balls: 75 a 100 repetições, dependendo da categoria". O artigo mantém 100, como na página oficial do formato; o número menor não tem fonte oficial aqui. Fora: "prova completa" (vídeo), "Hyrox em SP" (artigo próprio), "wod oficial".
+
