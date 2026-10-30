@@ -16,24 +16,26 @@ Como acompanhar cada lote:
 
 Status: links enviados ao Montinho em 23/10 para pedir a indexação.
 
+Conferido em 30/10 pelo Search Console (Supermetrics, impressões de 22 a 30/10 por página): 15 de 16 com impressão. Impressão prova que a página está no índice; a falta dela não prova o contrário.
+
 | URL | Tipo | Indexada (≈30/10) | 28 dias (≈20/11) |
 |---|---|---|---|
-| /blog/hyrox-barueri-onde-treinar | novo (22/10) | | |
-| /blog/hyrox-santana-de-parnaiba-onde-treinar | novo (22/10) | | |
-| /blog/hyrox-aldeia-da-serra | novo (22/10) | | |
-| /blog/treino-de-hyrox | novo | | |
-| /blog/estacoes-do-hyrox | novo | | |
-| /blog/hyrox-vs-crossfit | novo | | |
-| /blog/tenis-para-hyrox | novo | | |
-| /blog/hyrox-pft | novo | | |
-| /blog/hyrox-brasil-2026 | novo | | |
-| /blog/alimentacao-para-hyrox | novo | | |
-| /blog/hyrox-em-dupla | novo | | |
-| /ferramentas/calculadora-tempo-hyrox | novo | | |
-| /preparacao-para-hyrox | novo | | |
-| /blog/hyrox-o-que-e | atualizado | | |
-| /blog/hyrox-alphaville-onde-treinar | atualizado | | |
-| /blog/maratona-de-brasilia-2026 | atualizado | | |
+| /blog/hyrox-barueri-onde-treinar | novo (22/10) | sim (150 impr.) | |
+| /blog/hyrox-santana-de-parnaiba-onde-treinar | novo (22/10) | sim (80 impr.) | |
+| /blog/hyrox-aldeia-da-serra | novo (22/10) | sim (4 impr.) | |
+| /blog/treino-de-hyrox | novo | sim (68 impr.) | |
+| /blog/estacoes-do-hyrox | novo | sim (343 impr.) | |
+| /blog/hyrox-vs-crossfit | novo | sim (167 impr.) | |
+| /blog/tenis-para-hyrox | novo | sim (197 impr.) | |
+| /blog/hyrox-pft | novo | sim (352 impr.) | |
+| /blog/hyrox-brasil-2026 | novo | sim (481 impr.) | |
+| /blog/alimentacao-para-hyrox | novo | sem impressão: conferir na Inspeção de URL | |
+| /blog/hyrox-em-dupla | novo | sim (85 impr.) | |
+| /ferramentas/calculadora-tempo-hyrox | novo | sim (40 impr.) | |
+| /preparacao-para-hyrox | novo | sim (1 impr.) | |
+| /blog/hyrox-o-que-e | atualizado | sim (463 impr.) | |
+| /blog/hyrox-alphaville-onde-treinar | atualizado | sim (256 impr.) | |
+| /blog/maratona-de-brasilia-2026 | atualizado | sim (61 impr.) | |
 
 O que observar em 28 dias:
 - se a visão geral por IA de "personal hyrox alphaville" continua citando o site e se `/preparacao-para-hyrox` entra no lugar dos guias;
