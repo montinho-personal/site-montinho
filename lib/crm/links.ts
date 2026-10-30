@@ -96,6 +96,9 @@ export const LINKS: Record<string, LinkControlado> = {
   "yt-mob-superiores": { destino: "/", utm_source: "youtube", utm_medium: "video", utm_campaign: "mobilidade_superiores", utm_content: "descricao", tipo: "social" },
   "wa-mob-inferiores": { destino: "/", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "mobilidade_inferiores", tipo: "social" },
   "wa-mob-superiores": { destino: "/", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "mobilidade_superiores", tipo: "social" },
+  /** Vídeo "Como tirar suas medidas" (30/10/2026). Home, como os de mobilidade. */
+  "yt-medidas": { destino: "/", utm_source: "youtube", utm_medium: "video", utm_campaign: "como_tirar_medidas", utm_content: "descricao", tipo: "social" },
+  "wa-medidas": { destino: "/", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "como_tirar_medidas", tipo: "social" },
 };
 
 export function urlDoLink(slug: string, extra: Record<string, string> = {}): string | null {
