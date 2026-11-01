@@ -113,6 +113,8 @@ import { SEM_CARBOIDRATO_POSTS } from "./sete-dias-sem-carboidrato";
 import { DOCES_HALLOWEEN_POSTS } from "./doces-de-halloween";
 import { PANETONE_POSTS } from "./panetone-engorda";
 import { O_QUE_COMER_A_NOITE_POSTS } from "./o-que-comer-a-noite";
+import { RABANADA_POSTS } from "./rabanada-engorda";
+import { CALORIAS_CEIA_NATAL_POSTS } from "./calorias-ceia-de-natal";
 import { DOCES_FIT_POSTS } from "./doces-fit";
 import { ALIMENTACAO_SAO_SILVESTRE_POSTS } from "./o-que-comer-antes-da-sao-silvestre";
 import { BLACK_FRIDAY_2026_POSTS } from "./black-friday-2026";
@@ -139,6 +141,8 @@ export const blogPosts = ([
   ...DOCES_HALLOWEEN_POSTS,
   ...PANETONE_POSTS,
   ...O_QUE_COMER_A_NOITE_POSTS,
+  ...RABANADA_POSTS,
+  ...CALORIAS_CEIA_NATAL_POSTS,
   ...DOCES_FIT_POSTS,
   ...ALIMENTACAO_SAO_SILVESTRE_POSTS,
   ...BLACK_FRIDAY_2026_POSTS,
