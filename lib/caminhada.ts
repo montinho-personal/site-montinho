@@ -533,4 +533,6 @@ export const ARTIGOS_COM_LINK_CAMINHADA: string[] = [
   "10-mil-passos-por-dia-emagrece",
   /* Doces de Halloween: a tabela dá a caminhada para 70 kg; a conta que sobra é a do peso e do ritmo DELA. */
   "doces-de-halloween-faceis-e-rapidos",
+  /* Panetone: a tabela dá a caminhada de uma fatia para 70 kg; a conta que sobra é a do peso e do ritmo DELA. */
+  "panetone-engorda",
 ];
