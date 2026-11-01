@@ -25,6 +25,13 @@ import type { BlogPost } from "./blog";
  * Leite condensado: 1 colher de sopa de 20 g (313 kcal/100 g na TACO) ≈ 63.
  * Caminhada: 3,8 METs, 70 kg, ≈ 4,66 kcal/min, como panetone e Halloween.
  *
+ * Prints de "rabanada engorda" (01/11, depois da publicação): autocompletar
+ * (muito, assada, ou emagrece, receita, salgada, sem ovo, é calórico), visão
+ * geral por IA e PAA (quantas calorias, o que mata a fome sem engordar, qual
+ * o doce que mais engorda, estou de dieta posso comer). Entraram como H2 e
+ * FAQ. Os números da visão geral por IA (150 kcal; 290 a 300 por 100 g) não
+ * entraram: print não é fonte, e a conta da receita continua sendo a nossa.
+ *
  * Ferramenta: Calculadora de Calorias na Caminhada como link (a conta que
  * sobra é "quanto eu gasto para compensar", com o peso dela).
  */
@@ -40,7 +47,7 @@ export const RABANADA_POSTS: BlogPost[] = [
       "Quantas calorias tem a rabanada frita, assada e na air fryer, o que pesa mais na receita e como comer no Natal sem sair da dieta.",
     category: "Nutrição",
     date: "2026-11-01",
-    readTime: "6 min",
+    readTime: "8 min",
     author: "Montinho",
     tags: ["rabanada", "natal", "calorias", "ceia", "dieta"],
     faq: [
@@ -48,6 +55,16 @@ export const RABANADA_POSTS: BlogPost[] = [
         question: "Rabanada engorda?",
         answer:
           "Uma fatia não engorda ninguém. Ganhar peso depende de comer mais do que se gasta por semanas. A rabanada é doce, frita e fácil de repetir, então o risco é a terceira fatia e a travessa que fica na mesa até o Ano-Novo.",
+      },
+      {
+        question: "Rabanada engorda muito?",
+        answer:
+          "Por fatia, não tanto quanto parece: perto de 140 kcal frita com açúcar e canela, menos que uma fatia de panetone. Engorda muito quando são várias fatias, com leite condensado por cima, e quando a sobra vira café da manhã por vários dias.",
+      },
+      {
+        question: "Rabanada engorda ou emagrece?",
+        answer:
+          "Nenhum alimento sozinho engorda ou emagrece. A rabanada é pão branco, açúcar e gordura, com pouca proteína e pouca fibra, então sacia pouco para as calorias que tem. Cabe na dieta como doce de festa, em porção decidida antes.",
       },
       {
         question: "Quantas calorias tem uma rabanada?",
@@ -65,6 +82,16 @@ export const RABANADA_POSTS: BlogPost[] = [
           "Tem, porque funciona como a assada: o pão doura sem ficar mergulhado em óleo. Sem o açúcar por fora, só com canela, a fatia fica perto de 85 kcal na nossa conta.",
       },
       {
+        question: "Rabanada salgada engorda menos?",
+        answer:
+          "Um pouco: sem o açúcar no leite e por fora, a fatia frita fica perto de 110 kcal na nossa conta, contra 140 da doce. Queijo ralado ou manteiga por cima somam de novo, então a diferença depende do que vai junto.",
+      },
+      {
+        question: "Rabanada sem ovo engorda menos?",
+        answer:
+          "Quase nada. Os dois ovos da receita somam perto de 129 kcal divididos por 12 fatias, cerca de 11 kcal por fatia. O que muda a conta de verdade é o óleo, o açúcar por fora e o leite condensado.",
+      },
+      {
         question: "O que engorda mais na rabanada?",
         answer:
           "O pão é a maior parte das calorias, mas o que muda o resultado são os extras: o óleo da fritura, o açúcar por fora e o leite condensado por cima. Uma colher de sopa de leite condensado soma perto de 63 kcal na fatia.",
@@ -73,6 +100,16 @@ export const RABANADA_POSTS: BlogPost[] = [
         question: "Quem está de dieta pode comer rabanada?",
         answer:
           "Pode. Escolha uma ou duas fatias, coma depois da refeição, e não deixe a travessa na mesa para ir beliscando. Uma ceia não desfaz meses de rotina; a semana de exagero depois dela, sim.",
+      },
+      {
+        question: "Qual é o doce de Natal que mais engorda?",
+        answer:
+          "Nenhum doce engorda sozinho; o que pesa é a porção e quantos você come na mesma noite. Por porção, a fatia de 80 g de panetone de chocolate (perto de 310 a 390 kcal) fica acima da de frutas (254 a 290 kcal) e de uma rabanada frita (perto de 140 kcal).",
+      },
+      {
+        question: "O que mata a fome sem engordar na ceia?",
+        answer:
+          "Proteína, legumes e salada antes dos doces: carne magra, peru, salada e frutas sustentam mais com menos calorias. E não chegar em jejum à ceia, porque quem pula as refeições do dia come em dobro à noite.",
       },
       {
         question: "Rabanada ou panetone: o que engorda mais?",
@@ -88,12 +125,16 @@ export const RABANADA_POSTS: BlogPost[] = [
 <p><strong>Engorda se virar hábito; não engorda numa fatia.</strong> O corpo responde à soma da semana. Uma rabanada frita com açúcar e canela tem perto de 140 kcal, o que é parecido com um pão francês com manteiga. O que faz diferença é a quantidade: rabanada é pequena, quente e doce, e é fácil comer três sem perceber.</p>
 <p>Ela também sacia pouco: é pão branco, açúcar e gordura, com pouca proteína e quase nenhuma fibra. Por isso a segunda fatia desce tão fácil quanto a primeira.</p>
 
+<h2>Rabanada engorda muito?</h2>
+<p>Por fatia, menos do que a fama: perto de 140 kcal frita, contra perto de 274 kcal de uma fatia de panetone de frutas. O que faz a rabanada "engordar muito" é a combinação de várias fatias, leite condensado por cima e a sobra que dura dias. E ela não emagrece em versão nenhuma: mesmo a assada é doce de festa, e não lanche de dieta.</p>
+
 <h2>Quantas calorias tem uma rabanada?</h2>
 <table>
 <thead><tr><th>Rabanada (1 fatia, ⅓ de pão francês)</th><th>Calorias</th><th>Caminhada para gastar*</th></tr></thead>
 <tbody>
 <tr><td>Assada ou na air fryer, só com canela</td><td>cerca de 85 kcal</td><td>cerca de 18 min</td></tr>
 <tr><td>Assada, com açúcar e canela</td><td>cerca de 100 kcal</td><td>cerca de 21 min</td></tr>
+<tr><td>Salgada, frita, sem açúcar</td><td>cerca de 110 kcal</td><td>cerca de 24 min</td></tr>
 <tr><td>Frita, com açúcar e canela</td><td>cerca de 140 kcal</td><td>cerca de 29 min</td></tr>
 <tr><td>Frita, com açúcar e 1 colher de sopa de leite condensado</td><td>cerca de 200 kcal</td><td>cerca de 43 min</td></tr>
 <tr><td>3 fatias fritas, com açúcar e canela</td><td>cerca de 405 kcal</td><td>cerca de 1 h 27 min</td></tr>
@@ -120,6 +161,23 @@ export const RABANADA_POSTS: BlogPost[] = [
 <p>Sim. Assada ou na air fryer, a rabanada doura sem ficar mergulhada em óleo, e isso tira perto de 35 kcal por fatia na nossa conta. Se você também trocar o açúcar por fora por canela pura, a fatia fica perto de 85 kcal.</p>
 <p>Dá para cortar mais: pão integral no lugar do francês, leite desnatado e um pouco de adoçante no leite. Mas não espere o mesmo sabor. Se a versão "fit" não satisfaz e você acaba comendo a frita depois, saiu mais caro. Às vezes vale mais uma rabanada de verdade, bem escolhida, do que três versões que não matam a vontade.</p>
 
+<h2>Receita de rabanada assada mais leve</h2>
+<p>Rende 12 fatias, perto de 85 kcal cada se for só com canela por fora:</p>
+<ol>
+<li>Corte 4 pães franceses amanhecidos em 3 fatias cada.</li>
+<li>Misture 300 ml de leite com uma colher de chá de canela e adoçante a gosto (ou os 25 g de açúcar da receita original, que somam perto de 8 kcal por fatia).</li>
+<li>Bata 2 ovos num prato fundo.</li>
+<li>Passe cada fatia rapidamente no leite e depois no ovo, sem deixar encharcar.</li>
+<li>Asse numa forma untada de leve, ou na air fryer, virando na metade, até dourar dos dois lados.</li>
+<li>Polvilhe canela por cima. Se for usar açúcar, uma pitada por fatia em vez de passar a fatia no prato de açúcar.</li>
+</ol>
+
+<h2>Rabanada salgada engorda menos?</h2>
+<p>Um pouco. Sem açúcar no leite e sem açúcar por fora, a fatia frita fica perto de 110 kcal na nossa conta, contra 140 da doce. Mas a rabanada salgada costuma levar queijo ralado ou manteiga por cima, e aí a diferença some. É outra receita, não uma versão de dieta.</p>
+
+<h2>Rabanada sem ovo engorda menos?</h2>
+<p>Quase nada. Os 2 ovos da receita somam perto de 129 kcal, cerca de 11 kcal por fatia. Tirar o ovo muda a textura mais do que a caloria. Se a ideia é economizar, o óleo, o açúcar por fora e o leite condensado pesam muito mais.</p>
+
 <h2>O que engorda mais na rabanada?</h2>
 <p>O pão é a maior parte das calorias, e não tem como fugir dele: é o que faz a rabanada ser rabanada. O que muda o resultado são os extras:</p>
 <ul>
@@ -138,6 +196,9 @@ export const RABANADA_POSTS: BlogPost[] = [
 <li><strong>Não compense pulando refeição.</strong> Pular o almoço do dia 25 porque exagerou na ceia deixa você com mais fome à noite.</li>
 <li><strong>Mantenha o treino.</strong> Dezembro não é mês de parar. Dois treinos na semana já seguram a rotina.</li>
 </ul>
+
+<h2>Qual é o doce de Natal que mais engorda?</h2>
+<p>Nenhum doce engorda sozinho. Por porção, a fatia de 80 g de panetone de chocolate (perto de 310 a 390 kcal) fica acima da de frutas (254 a 290 kcal), e as duas acima de uma rabanada frita (perto de 140 kcal). Pavê e tortas variam demais com a receita para entrar num número só. O que mais pesa na noite é somar três ou quatro doces diferentes, e não qual deles você escolhe.</p>
 
 <h2>Rabanada ou panetone: o que engorda mais?</h2>
 <p>Por porção, a fatia de 80 g do <a href="/blog/panetone-engorda">panetone</a> de frutas tem perto de 274 kcal, e uma rabanada frita tem perto de 140 kcal. Duas rabanadas empatam com uma fatia de panetone. Na prática, a diferença entre os dois é menor do que a diferença entre comer um e comer os dois. Para a mesa inteira, veja a <a href="/blog/calorias-da-ceia-de-natal">tabela de calorias da ceia de Natal</a>.</p>
