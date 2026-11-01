@@ -14,12 +14,16 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-19",
+    updatedAt: "2026-11-01",
     readTime: "4 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC Vegas 123", "Renato Moicano", "Tom Nolan", "Moicano x Nolan"],
     content: `<img src="/blog-images/ufc-vegas-123-moicano-nolan-capa.webp" alt="Capa: UFC Vegas 123 — Renato Moicano x Tom Nolan, sábado 31/10, card principal às 21h" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
 <blockquote><p>Informações verificadas em 19 de outubro de 2026. O card ainda pode mudar até a luta; esta página é atualizada.</p></blockquote>
 <p><strong>Renato Moicano</strong> faz a luta principal do <strong>UFC Vegas 123</strong> contra o australiano <strong>Tom Nolan</strong>, no <strong>sábado, 31 de outubro de 2026</strong>, no Meta Apex, em Las Vegas. A luta é no peso-leve (até 70,3 kg), e o card principal começa às <strong>21h de Brasília</strong>.</p>
+
+<h2>Quem ganhou?</h2>
+<p><strong>Tom Nolan</strong> venceu Renato Moicano por nocaute técnico (socos e cotoveladas) aos 1min28s do 3º round. Dos brasileiros, <strong>Luana Santos</strong> e <strong>Rodrigo Sezinando</strong> venceram; Talita Alencar e Tainara Lisboa perderam. Todos os resultados em <a href="/blog/resultado-ufc-vegas-123">resultado do UFC Vegas 123</a>.</p>
 
 <h2>Que horas é Moicano x Nolan?</h2>
 <table><thead><tr><th>Parte do evento</th><th>Horário de Brasília</th></tr></thead><tbody>
@@ -79,11 +83,15 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-19",
+    updatedAt: "2026-11-01",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC Vegas 123", "brasileiros no UFC", "Renato Moicano", "Luana Santos"],
     content: `<img src="/blog-images/ufc-vegas-123-moicano-nolan-capa.webp" alt="Brasileiros no UFC Vegas 123 — Renato Moicano x Tom Nolan na luta principal, sábado 31/10" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
 <p>Cinco brasileiros estão no <strong>UFC Vegas 123</strong>, no <strong>sábado, 31 de outubro de 2026</strong>, no Meta Apex, em Las Vegas. <strong>Renato Moicano</strong> faz a luta principal contra o australiano Tom Nolan. Horários, transmissão e o card em <a href="/blog/ufc-vegas-123-moicano-nolan">Moicano x Nolan: horário e onde assistir</a>.</p>
+
+<h2>Quem ganhou?</h2>
+<p><strong>Tom Nolan</strong> venceu Renato Moicano por nocaute técnico (socos e cotoveladas) aos 1min28s do 3º round. Dos brasileiros, <strong>Luana Santos</strong> e <strong>Rodrigo Sezinando</strong> venceram; Talita Alencar e Tainara Lisboa perderam. Todos os resultados em <a href="/blog/resultado-ufc-vegas-123">resultado do UFC Vegas 123</a>.</p>
 
 <h2>Quem são os brasileiros do UFC Vegas 123</h2>
 <ul>
@@ -122,6 +130,61 @@ export const UFC_2026_POSTS: BlogPost[] = [
       { question: "Contra quem luta Talita Alencar no UFC Vegas 123?", answer: "Contra a venezuelana Piera Rodriguez, no peso-palha feminino." },
       { question: "Que horas lutam os brasileiros no UFC Vegas 123?", answer: "O card preliminar começa às 18h e o principal às 21h, horário de Brasília." },
     ],
+  },
+  {
+    slug: "resultado-ufc-vegas-123",
+    title: "Resultado UFC Vegas 123: quem ganhou Moicano x Nolan e os brasileiros",
+    metaTitle: "Resultado UFC Vegas 123: Quem Ganhou Moicano x Nolan",
+    metaDescription:
+      "Resultado do UFC Vegas 123 (31/10): quem ganhou Renato Moicano x Tom Nolan e o resultado de Luana Santos, Rodrigo Sezinando, Talita Alencar e Tainara Lisboa.",
+    excerpt:
+      "Quem ganhou Moicano x Nolan e o resultado dos brasileiros do UFC Vegas 123, no Halloween, em Las Vegas.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-11-01",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC Vegas 123", "resultado UFC", "Renato Moicano", "Luana Santos"],
+    content: `<blockquote><p>Resultados do UFC Vegas 123, sábado, 31 de outubro de 2026, no Meta Apex, em Las Vegas. Atualizado em 1º de novembro de 2026.</p></blockquote>
+<p><strong>Tom Nolan</strong> venceu <strong>Renato Moicano</strong> por nocaute técnico no 3º round, na luta principal. Dos brasileiros, <strong>Luana Santos</strong> e <strong>Rodrigo Sezinando</strong> venceram, e Talita Alencar e Tainara Lisboa perderam.</p>
+
+<h2>Quem ganhou Moicano x Nolan?</h2>
+<p><strong>Tom Nolan</strong>, por nocaute técnico (socos e cotoveladas) aos 1min28s do 3º round. Moicano chegou a pegar as costas do australiano e ameaçar finalizações no começo, mas Nolan virou a luta e chegou à sexta vitória seguida. Foi a primeira luta principal dele no UFC.</p>
+
+<h2>Resultados dos brasileiros no UFC Vegas 123</h2>
+<table><thead><tr><th>Luta</th><th>Resultado</th></tr></thead><tbody>
+<tr><td><strong>Renato Moicano</strong> x Tom Nolan</td><td>Nolan venceu por nocaute técnico aos 1min28s do 3º round</td></tr>
+<tr><td><strong>Luana Santos</strong> x Yana Santos</td><td><strong>Luana venceu</strong> por decisão unânime (29-28, 29-28, 29-28)</td></tr>
+<tr><td><strong>Rodrigo Sezinando</strong> x Theodor Berggren</td><td><strong>Sezinando venceu</strong> por nocaute técnico no 2º round</td></tr>
+<tr><td><strong>Talita Alencar</strong> x Piera Rodriguez</td><td>Piera Rodriguez venceu por decisão unânime</td></tr>
+<tr><td><strong>Tainara Lisboa</strong> x Lucia Szabová</td><td>Szabová venceu por nocaute técnico (socos) no 3º round</td></tr>
+</tbody></table>
+
+<h2>Bônus</h2>
+<p><strong>Tom Nolan</strong> levou um dos bônus de Performance da Noite.</p>
+
+<h2>Próximo UFC com brasileiro na luta principal</h2>
+<p>No sábado, 7 de novembro, <strong>Gabriel Bonfim</strong> enfrenta Sean Brady na luta principal do <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">UFC Vegas 124</a>. Os brasileiros do card estão em <a href="/blog/brasileiros-ufc-vegas-124">brasileiros no UFC Vegas 124</a>. Card completo deste evento em <a href="/blog/ufc-vegas-123-moicano-nolan">UFC Vegas 123: horário, card e onde assistir</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página. Para ver como é a rotina de quem luta, leia <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a> e <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/news/ufc-fight-night-vegas-123-moicano-nolan-resultados" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 123: Moicano x Nolan, resultados</a></li>
+<li><a href="https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430" target="_blank" rel="noopener noreferrer">Sherdog — UFC Vegas 123: play-by-play e resultados</a></li>
+<li><a href="https://www.bjpenn.com/mma-news/renato-moicano/ufc-vegas-123-results-tom-nolan-tkos-renato-moicano-video/" target="_blank" rel="noopener noreferrer">BJPenn.com — Tom Nolan vence Renato Moicano</a></li>
+<li><a href="https://agfight.com/ufc/luana-santos-domina-yana-santos-no-ufc-vegas-123-e-segue-invicta-no-peso-galo" target="_blank" rel="noopener noreferrer">Ag. Fight — Luana Santos vence Yana Santos</a></li>
+<li><a href="https://www.superlutas.com.br/noticias/380311/ufc-vegas-123-renato-moicano-x-tom-nolan-resultados/" target="_blank" rel="noopener noreferrer">Super Lutas — UFC Vegas 123: resultados</a></li>
+<li><a href="https://www.bjpenn.com/mma-news/ufc-vegas-123/ufc-vegas-123-bonus-report-julian-erosa-one-of-four-potn-winners/" target="_blank" rel="noopener noreferrer">BJPenn.com — bônus do UFC Vegas 123</a></li>
+</ul>`,
+    faq: [
+      { question: "Quem ganhou Moicano x Nolan?", answer: "Tom Nolan, por nocaute técnico (socos e cotoveladas) aos 1min28s do 3º round, no UFC Vegas 123, em 31/10/2026." },
+      { question: "Quem ganhou o UFC Vegas 123?", answer: "Na luta principal, Tom Nolan venceu Renato Moicano no 3º round. Dos brasileiros, Luana Santos e Rodrigo Sezinando venceram; Talita Alencar e Tainara Lisboa perderam." },
+      { question: "Luana Santos ganhou?", answer: "Sim. Luana Santos venceu Yana Santos por decisão unânime (29-28 nos três juízes), no peso-galo." },
+      { question: "Rodrigo Sezinando ganhou?", answer: "Sim. Sezinando venceu Theodor Berggren por nocaute técnico no 2º round." },
+    ],
+    updatedAt: "2026-11-01",
   },
   {
     slug: "ufc-vegas-122-allen-duncan",

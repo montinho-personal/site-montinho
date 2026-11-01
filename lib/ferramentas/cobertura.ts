@@ -58,6 +58,7 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   "brasileiros-ufc-vegas-123": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora de jiu-jitsu fica no artigo do evento.",
   "brasileiros-ufc-vegas-124": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora fica no artigo do evento.",
   "resultado-ufc-vegas-122": "Página de resultado: o leitor sai sabendo quem ganhou, sem conta na cabeça; a calculadora de luta fica no artigo do card.",
+  "resultado-ufc-vegas-123": "Página de resultado: o leitor sai sabendo quem ganhou, sem conta na cabeça; a calculadora de luta fica no artigo do card.",
   // Cluster miostatina (lib/miostatina.ts): remédio experimental. O registro da
   // calculadora GLP-1 está no teto de 8; a ferramenta entra como link no texto.
   trevogrumabe: "Notícia de remédio experimental: o leitor sai sabendo o status do estudo, e a conta de massa magra vai por link no texto.",
