@@ -1419,3 +1419,10 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 | /blog/jantar-leve-para-emagrecer | Jantar Leve Para Emagrecer: O Que Comer à Noite | Jantar Leve Para Emagrecer: 10 Ideias Que Saciam | Deixa "o que comer à noite" para o artigo novo e fica com "jantar leve", que é o que o texto entrega (10 ideias) |
 
 - Linha de base no dia da troca (GSC, 28 dias até 01/11): `/blog/jantar-leve-para-emagrecer` 63 impressões, 1 clique, CTR 1,6%, posição 13,9. Comparar em 28 dias (≈29/11); se o clique não subir, voltar.
+
+## 2026-11-01 — Sem prints: rabanada engorda e calorias da ceia de Natal
+
+- Publicados a pedido do Montinho antes da pesquisa ("pode criar os dois próximos artigos, depois eu te mando os prints"). Título, H2 e FAQ seguem o formato do `panetone-engorda`; revisar quando os prints chegarem.
+- `rabanada-engorda` (novo): a TACO não tem rabanada, então a caloria vem da receita, ingrediente por ingrediente (TACO); o óleo da fritura é suposição declarada no texto (4 g por fatia). Link para a Calculadora de Caminhada.
+- `calorias-da-ceia-de-natal` (novo): tabela por prato com a TACO e porções em gramas. Não canibaliza `como-aproveitar-ceia-sem-exagerar` (estratégia, sem número por prato): a mesma divisão da festa junina. Os dois se linkam. Link para a Calculadora de Caminhada.
+- Prints pedidos: autocompletar, primeira página com visão geral por IA, PAA e "Outras pessoas pesquisaram" de "rabanada engorda" e de "calorias ceia de natal" (ou o export do Answer the Public).

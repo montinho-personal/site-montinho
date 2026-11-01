@@ -535,4 +535,8 @@ export const ARTIGOS_COM_LINK_CAMINHADA: string[] = [
   "doces-de-halloween-faceis-e-rapidos",
   /* Panetone: a tabela dá a caminhada de uma fatia para 70 kg; a conta que sobra é a do peso e do ritmo DELA. */
   "panetone-engorda",
+  /* Rabanada: a tabela dá a caminhada de uma fatia para 70 kg; a conta que sobra é a do peso e do ritmo DELA. */
+  "rabanada-engorda",
+  /* Ceia de Natal: a tabela dá a caminhada de cada prato para 70 kg; a conta que sobra é a do prato e do peso DELA. */
+  "calorias-da-ceia-de-natal",
 ];
