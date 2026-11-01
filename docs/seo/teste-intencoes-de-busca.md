@@ -1407,3 +1407,15 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 |---|---|---|---|
 | /blog/doces-fit | Doces Fit: Receitas Fáceis com Banana, Whey e Sem Açúcar | Doces Fit: Receitas Fáceis com Leite em Pó e Sem Açúcar | "com leite em pó" ~1.600/mês e "sem açúcar" ~410 no export; banana (30) e whey (70) seguem no texto. Medir no GSC em 28 dias (página nova, sem linha de base). |
 
+
+## 2026-11-01 — Prints: panetone engorda e o que comer à noite para não engordar
+
+- `panetone-engorda` (novo): prints do autocompletar (muito, ou emagrece, sim ou não, Bauducco, de frutas, de chocolate), visão geral por IA e PAA. Calorias em faixa, de rótulos e bases que os reproduzem (a TACO oficial não tem panetone); os números da visão geral por IA não entraram. Pauta que saiu do PAA: "o que comer à noite".
+- `o-que-comer-a-noite-para-nao-engordar` (novo): prints do autocompletar, visão geral por IA, PAA e duas listas de "Outras pessoas pesquisaram". Entraram: comer à noite engorda, janta, depois da janta (tabela de lanches com TACO), o que sacia, o que não comer para perder barriga, desinchar, cuscuz à noite, cardápio, comer e dormir engorda ou emagrece. Fora: "para engordar", "ceia para ganhar massa" (artigo próprio já existe) e "nutricionista".
+- Canibalização: `jantar-leve-para-emagrecer` tinha "O Que Comer à Noite" no título e `carboidrato-a-noite-engorda` tinha as duas perguntas no FAQ, mas nenhum recebia impressão de "o que comer à noite" em 90 dias. O artigo novo fica com essa busca, e o do jantar troca de título (aprovado pelo Montinho em 01/11):
+
+| Página | ATUAL | NOVO | Motivo |
+|---|---|---|---|
+| /blog/jantar-leve-para-emagrecer | Jantar Leve Para Emagrecer: O Que Comer à Noite | Jantar Leve Para Emagrecer: 10 Ideias Que Saciam | Deixa "o que comer à noite" para o artigo novo e fica com "jantar leve", que é o que o texto entrega (10 ideias) |
+
+- Linha de base no dia da troca (GSC, 28 dias até 01/11): `/blog/jantar-leve-para-emagrecer` 63 impressões, 1 clique, CTR 1,6%, posição 13,9. Comparar em 28 dias (≈29/11); se o clique não subir, voltar.

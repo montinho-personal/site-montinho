@@ -112,6 +112,7 @@ import { CROSSFIT_MUSCULO_POSTS } from "./crossfit-da-massa-muscular";
 import { SEM_CARBOIDRATO_POSTS } from "./sete-dias-sem-carboidrato";
 import { DOCES_HALLOWEEN_POSTS } from "./doces-de-halloween";
 import { PANETONE_POSTS } from "./panetone-engorda";
+import { O_QUE_COMER_A_NOITE_POSTS } from "./o-que-comer-a-noite";
 import { DOCES_FIT_POSTS } from "./doces-fit";
 import { ALIMENTACAO_SAO_SILVESTRE_POSTS } from "./o-que-comer-antes-da-sao-silvestre";
 import { BLACK_FRIDAY_2026_POSTS } from "./black-friday-2026";
@@ -137,6 +138,7 @@ export const blogPosts = ([
   ...SEM_CARBOIDRATO_POSTS,
   ...DOCES_HALLOWEEN_POSTS,
   ...PANETONE_POSTS,
+  ...O_QUE_COMER_A_NOITE_POSTS,
   ...DOCES_FIT_POSTS,
   ...ALIMENTACAO_SAO_SILVESTRE_POSTS,
   ...BLACK_FRIDAY_2026_POSTS,
@@ -99983,8 +99985,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
   },
   {
     slug: "jantar-leve-para-emagrecer",
-    title: "Jantar Leve Para Emagrecer: O Que Comer à Noite",
-    metaTitle: "Jantar Leve Para Emagrecer: O Que Comer à Noite",
+    title: "Jantar Leve Para Emagrecer: 10 Ideias Que Saciam",
+    metaTitle: "Jantar Leve Para Emagrecer: 10 Ideias Que Saciam",
     metaDescription:
       "Comer à noite engorda? Veja o que a ciência diz, ideias práticas de jantar leve com proteína e saciedade, e os erros noturnos que sabotam o emagrecimento.",
     excerpt:
