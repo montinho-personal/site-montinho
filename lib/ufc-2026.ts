@@ -328,6 +328,98 @@ export const UFC_2026_POSTS: BlogPost[] = [
     updatedAt: "2026-10-11",
   },
   {
+    slug: "ufc-vegas-124-johnny-walker-cortes-acosta",
+    title: "Johnny Walker x Cortes Acosta: UFC Vegas 124, horário, card e onde assistir",
+    metaTitle: "Johnny Walker x Cortes Acosta: Horário e Onde Assistir",
+    metaDescription:
+      "Johnny Walker enfrenta Waldo Cortes Acosta na luta principal do UFC Vegas 124, sábado 7/11: horário de Brasília, onde assistir, card e os brasileiros.",
+    excerpt:
+      "Data, horário, onde assistir e card do UFC Vegas 124, que ganhou Johnny Walker x Waldo Cortes Acosta como luta principal depois do cancelamento de Bonfim x Brady.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-11-02",
+    readTime: "4 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC Vegas 124", "Johnny Walker", "Waldo Cortes Acosta", "Walker x Cortes Acosta"],
+    content: `<img src="/blog-images/ufc-vegas-124-johnny-walker-cortes-acosta-capa.webp" alt="Capa: UFC Vegas 124 — Johnny Walker x Cortes Acosta, sábado 7/11, card principal às 22h" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p>Informações verificadas em 2 de novembro de 2026 na página oficial do evento. O card ainda pode mudar; esta página é atualizada até a luta.</p></blockquote>
+<p>O brasileiro <strong>Johnny Walker</strong> faz a luta principal do <strong>UFC Vegas 124</strong>, no <strong>sábado, 7 de novembro de 2026</strong>, no Meta Apex, em Las Vegas. Ele enfrenta o dominicano <strong>Waldo Cortes Acosta</strong>, no peso-pesado.</p>
+<p>A luta entrou no lugar de Gabriel Bonfim x Sean Brady, cancelada depois que Brady se machucou. Veja <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">o que aconteceu com Bonfim x Brady</a>.</p>
+
+<h2>Que horas é a luta do Johnny Walker?</h2>
+<p>O card preliminar começa às <strong>19h</strong> e o card principal às <strong>22h</strong>, no horário de Brasília. A luta do Walker é a principal, a última da noite, depois das outras cinco lutas do card principal.</p>
+
+<h2>Onde assistir ao UFC Vegas 124 ao vivo</h2>
+<p>O evento é transmitido pelo <strong>Paramount+</strong>, que exibe o UFC no Brasil, e pelo UFC Fight Pass.</p>
+
+<h2>Card do UFC Vegas 124</h2>
+<p>Os brasileiros estão em negrito. Veja todos eles em <a href="/blog/brasileiros-ufc-vegas-124">brasileiros no UFC Vegas 124</a>.</p>
+<h3>Card principal (22h)</h3>
+<table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
+<tr><td>Waldo Cortes Acosta x <strong>Johnny Walker</strong></td><td>Peso-pesado (luta principal)</td></tr>
+<tr><td>Tatiana Suarez x <strong>Virna Jandiroba</strong></td><td>Peso-palha feminino</td></tr>
+<tr><td>Davey Grant x Elijah Smith</td><td>Peso-galo</td></tr>
+<tr><td>Seokhyeon Ko x <strong>Wellington Turman</strong></td><td>Meio-médio</td></tr>
+<tr><td>Billy Elekana x <strong>Lucas Fernando</strong></td><td>Meio-pesado</td></tr>
+<tr><td>Mantas Kondratavičius x Andre Petroski</td><td>Peso-médio</td></tr>
+</tbody></table>
+<h3>Card preliminar (19h)</h3>
+<table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
+<tr><td><strong>Gabriel Lorenco</strong> x Thomas Petersen</td><td>Peso-pesado</td></tr>
+<tr><td><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong></td><td>Peso-mosca feminino</td></tr>
+<tr><td>Mitch Raposo x Marcos Degli</td><td>Peso-mosca</td></tr>
+<tr><td><strong>José Delano</strong> x Murtazali Magomedov</td><td>Peso-pena</td></tr>
+<tr><td>Keiichiro Nakamura x Ollie Schmid</td><td>Peso-pena</td></tr>
+<tr><td>Austin Bashi x Lucas Brennan</td><td>Peso-pena</td></tr>
+<tr><td><strong>Priscila Cachoeira</strong> x Nina Milošević</td><td>Peso-galo feminino</td></tr>
+<tr><td>Jonny Parsons x <strong>José Souza</strong></td><td>Meio-médio</td></tr>
+</tbody></table>
+<p>A ordem das lutas pode mudar até o dia do evento.</p>
+
+<h2>Quem é Johnny Walker?</h2>
+<p>Johnny Walker nasceu em <strong>Belford Roxo, no Rio de Janeiro</strong>, e luta no <strong>peso-pesado</strong> do UFC. O cartel profissional é de <strong>23 vitórias e 10 derrotas</strong>, pelo perfil oficial, e ele entrou no top 15 da categoria.</p>
+
+<h2>Últimas lutas de Johnny Walker</h2>
+<table><thead><tr><th>Data</th><th>Adversário</th><th>Resultado</th></tr></thead><tbody>
+<tr><td>3/10/2026 (UFC 332)</td><td>Mick Parkin</td><td>Vitória por nocaute, 1º round (3min35)</td></tr>
+<tr><td>11/4/2026</td><td>Dominick Reyes</td><td>Vitória por decisão dividida</td></tr>
+<tr><td>23/8/2025</td><td>Zhang Mingyang</td><td>Vitória por nocaute técnico, 2º round</td></tr>
+</tbody></table>
+<p>Ele vem de três vitórias seguidas, a última há pouco mais de um mês. Para entender como os pesos-pesados se preparam, veja <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a> e <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>.</p>
+
+<h2>Tem UFC neste sábado? O calendário de novembro</h2>
+<ul>
+<li><strong>7 de novembro:</strong> UFC Vegas 124, Cortes Acosta x Johnny Walker, em Las Vegas.</li>
+<li><strong>14 de novembro:</strong> UFC 334, Ciryl Gane x Josh Hokit, no Madison Square Garden, em Nova York.</li>
+<li><strong>21 de novembro:</strong> UFC em Doha, no Catar, com Jiří Procházka x Navajo Stirling.</li>
+</ul>
+
+<h2>Quem ganhou?</h2>
+<p>O resultado sai em <a href="/blog/resultado-ufc-vegas-124-bonfim-brady">resultado do UFC Vegas 124</a>, atualizado na noite da luta.</p>
+
+<h2>Quanto se gasta numa aula de boxe</h2>
+<p>Walker é um lutador de trocação, e boa parte do treino dele é de pé, com luvas. Se você treina boxe ou muay thai e quer saber quanto gasta numa aula, faça a conta com o seu peso na calculadora abaixo.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 124: Cortes Acosta x Walker (página oficial, card e horários, conferida em 02/11/2026)</a></li>
+<li><a href="https://www.ufc.com.br/athlete/johnny-walker" target="_blank" rel="noopener noreferrer">UFC — Johnny Walker (perfil oficial: cidade natal, cartel e últimas lutas)</a></li>
+<li>Nova luta principal e saída de Bonfim x Brady: Cageside Press, MMA News e Yahoo Sports, de 29/10 a 01/11/2026.</li>
+</ul>`,
+    faq: [
+      { question: "Quando luta o Johnny Walker?", answer: "Sábado, 7 de novembro de 2026, contra Waldo Cortes Acosta, na luta principal do UFC Vegas 124, em Las Vegas." },
+      { question: "Que horas luta o Johnny Walker?", answer: "O card principal começa às 22h (Brasília) e a luta dele é a principal, a última da noite. O card preliminar começa às 19h." },
+      { question: "Onde assistir ao UFC Vegas 124?", answer: "No Paramount+ e no UFC Fight Pass." },
+      { question: "Por que Bonfim x Brady saiu do UFC Vegas 124?", answer: "Sean Brady se machucou (uma infecção no joelho, segundo ele), e Gabriel Bonfim saiu do card sem substituto. Walker x Cortes Acosta virou a luta principal." },
+      { question: "Qual é o cartel de Johnny Walker?", answer: "23 vitórias e 10 derrotas no MMA profissional, pelo perfil oficial no UFC." },
+      { question: "Qual foi a última luta de Johnny Walker?", answer: "Vitória por nocaute sobre Mick Parkin no 1º round, em 3 de outubro de 2026, no UFC 332." },
+      { question: "Quais brasileiros lutam no UFC Vegas 124?", answer: "Johnny Walker, Virna Jandiroba, Wellington Turman e Lucas Fernando no card principal; Karine Silva, Gabriella Fernandes, Gabriel Lorenco, José Delano, Priscila Cachoeira e José Souza no preliminar." },
+    ],
+  },
+  {
     slug: "ufc-vegas-124-gabriel-bonfim-sean-brady",
     title: "Gabriel Bonfim x Sean Brady: UFC Vegas 124, horário, card e onde assistir",
     metaTitle: "Gabriel Bonfim x Sean Brady: Horário e Onde Assistir o UFC",
@@ -338,16 +430,16 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-03",
-    updatedAt: "2026-10-28",
+    updatedAt: "2026-11-02",
     readTime: "5 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC Vegas 124", "Gabriel Bonfim", "Marretinha", "Sean Brady"],
     content: `<img src="/blog-images/ufc-vegas-124-gabriel-bonfim-sean-brady-capa.webp" alt="Capa: UFC Vegas 124 — Gabriel Bonfim x Sean Brady, sábado 7/11, card principal às 22h" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p>Informações verificadas em 28 de outubro de 2026 na página oficial do evento. O card ainda pode mudar; esta página é atualizada até a luta.</p></blockquote>
-<p>A próxima luta de <strong>Gabriel Bonfim</strong>, o "Marretinha", é a principal do <strong>UFC Vegas 124</strong>, no <strong>sábado, 7 de novembro de 2026</strong>, no Meta Apex, em Las Vegas. Ele enfrenta o norte-americano <strong>Sean Brady</strong>, no peso meio-médio (até 77,1 kg).</p>
+<blockquote><p><strong>Luta cancelada.</strong> Sean Brady se machucou (uma infecção no joelho, segundo ele) e saiu do UFC Vegas 124. Gabriel Bonfim também saiu do evento, sem substituto, e o UFC ainda não anunciou a nova luta dele. A luta principal do dia 7/11 passou a ser <a href="/blog/ufc-vegas-124-johnny-walker-cortes-acosta">Johnny Walker x Waldo Cortes Acosta</a>. Verificado na página oficial do evento em 2 de novembro de 2026.</p></blockquote>
+<p>A próxima luta de <strong>Gabriel Bonfim</strong>, o "Marretinha", seria a principal do <strong>UFC Vegas 124</strong>, no <strong>sábado, 7 de novembro de 2026</strong>, no Meta Apex, em Las Vegas, contra o norte-americano <strong>Sean Brady</strong>, no peso meio-médio (até 77,1 kg). A luta foi cancelada.</p>
 
-<h2>Que horas é a luta do Gabriel Bonfim?</h2>
-<p>O card preliminar começa às <strong>19h</strong> e o card principal às <strong>22h</strong>, no horário de Brasília. A luta do Bonfim é a principal, a última da noite, depois das outras cinco lutas do card principal.</p>
+<h2>Gabriel Bonfim ainda luta no dia 7?</h2>
+<p>Não. Com a saída de Brady, Bonfim também foi tirado do card, e o UFC não anunciou adversário nem data novos até 2 de novembro. Esta página é atualizada quando a nova luta for confirmada. O evento continua: o card preliminar começa às <strong>19h</strong> e o card principal às <strong>22h</strong>, no horário de Brasília.</p>
 
 <h2>Onde assistir ao UFC Vegas 124 ao vivo</h2>
 <p>O evento é transmitido pelo <strong>Paramount+</strong>, que exibe o UFC no Brasil, e pelo UFC Fight Pass.</p>
@@ -356,7 +448,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <p>Os brasileiros estão em negrito. Veja todos eles em <a href="/blog/brasileiros-ufc-vegas-124">brasileiros no UFC Vegas 124</a>.</p>
 <h3>Card principal (22h)</h3>
 <table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
-<tr><td><strong>Gabriel Bonfim</strong> x Sean Brady</td><td>Meio-médio (luta principal)</td></tr>
+<tr><td>Waldo Cortes Acosta x <strong>Johnny Walker</strong></td><td>Peso-pesado (luta principal)</td></tr>
 <tr><td>Tatiana Suarez x <strong>Virna Jandiroba</strong></td><td>Peso-palha feminino</td></tr>
 <tr><td>Davey Grant x Elijah Smith</td><td>Peso-galo</td></tr>
 <tr><td>Seokhyeon Ko x <strong>Wellington Turman</strong></td><td>Meio-médio</td></tr>
@@ -365,7 +457,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 </tbody></table>
 <h3>Card preliminar (19h)</h3>
 <table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
-<tr><td><strong>Gabriel Lorenco</strong> x Alvin Hines</td><td>Peso-pesado</td></tr>
+<tr><td><strong>Gabriel Lorenco</strong> x Thomas Petersen</td><td>Peso-pesado</td></tr>
 <tr><td><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong></td><td>Peso-mosca feminino</td></tr>
 <tr><td>Mitch Raposo x Marcos Degli</td><td>Peso-mosca</td></tr>
 <tr><td><strong>José Delano</strong> x Murtazali Magomedov</td><td>Peso-pena</td></tr>
@@ -374,11 +466,12 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <tr><td><strong>Priscila Cachoeira</strong> x Nina Milošević</td><td>Peso-galo feminino</td></tr>
 <tr><td>Jonny Parsons x <strong>José Souza</strong></td><td>Meio-médio</td></tr>
 </tbody></table>
-<p>Mudança desde o anúncio: Mantas Kondratavičius agora enfrenta Andre Petroski (antes, Wesley Schultz). A ordem das lutas pode mudar até o dia do evento.</p>
+<p>Mudanças desde o anúncio: Bonfim x Brady saiu e Cortes Acosta x Walker virou a luta principal; Gabriel Lorenco agora enfrenta Thomas Petersen (antes, Alvin Hines); Mantas Kondratavičius enfrenta Andre Petroski (antes, Wesley Schultz). A ordem das lutas pode mudar até o dia do evento.</p>
 <h2>Tem UFC neste sábado? O calendário de novembro</h2>
 <ul>
-<li><strong>7 de novembro:</strong> UFC Vegas 124, Bonfim x Brady, em Las Vegas.</li>
-<li><strong>14 de novembro:</strong> UFC 334, no Madison Square Garden, em Nova York.</li>
+<li><strong>7 de novembro:</strong> UFC Vegas 124, Cortes Acosta x Johnny Walker, em Las Vegas.</li>
+<li><strong>14 de novembro:</strong> UFC 334, Ciryl Gane x Josh Hokit, no Madison Square Garden, em Nova York.</li>
+<li><strong>21 de novembro:</strong> UFC em Doha, no Catar, com Jiří Procházka x Navajo Stirling.</li>
 </ul>
 
 <h2>Quem é Gabriel Bonfim?</h2>
@@ -391,7 +484,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <p>O cartel profissional é de <strong>20 vitórias e 1 derrota</strong>. A última luta foi em <strong>6 de junho de 2026</strong>, na principal do UFC Vegas 118: ele venceu <strong>Belal Muhammad</strong> por decisão unânime, nos cinco rounds. Foi a quinta vitória seguida.</p>
 
 <h2>Quem ganhou?</h2>
-<p>O resultado de Bonfim x Brady sai em <a href="/blog/resultado-ufc-vegas-124-bonfim-brady">resultado do UFC Vegas 124</a>, atualizado na noite da luta.</p>
+<p>O resultado do UFC Vegas 124, com Walker e os outros brasileiros, sai em <a href="/blog/resultado-ufc-vegas-124-bonfim-brady">resultado do UFC Vegas 124</a>, atualizado na noite da luta.</p>
 
 <h2>Quanto se gasta numa aula de luta</h2>
 <p>Quem treina artes marciais costuma perguntar quanto gasta por aula. A conta depende do peso e de quanto da aula é luta de verdade: faça a sua na calculadora abaixo. Para entender como os lutadores chegam ao peso, veja <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>.</p>
@@ -405,14 +498,15 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <li><a href="https://www.ufc.com.br/news/card-completo-resultados-ufc-vegas-118" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim vence Belal Muhammad no UFC Vegas 118</a></li>
 <li><a href="https://www.ufc.com.br/news/gabriel-bonfim-entra-top-5-ranking-peso-meio-medio" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim entra no Top 5 do peso meio-médio</a></li>
 <li><a href="https://agfight.com/ufc/gabriel-marretinha-enfrenta-sean-brady-na-luta-principal-do-ufc-vegas-124/" target="_blank" rel="noopener noreferrer">Ag. Fight — Marretinha enfrenta Sean Brady na luta principal do UFC Vegas 124</a></li>
-<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Fight Night: Bonfim x Brady (página oficial, card e horários)</a></li>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 124: Cortes Acosta x Walker (página oficial, card e horários, conferida em 02/11/2026)</a></li>
+<li>Saída de Brady (infecção no joelho, segundo ele) e de Bonfim do evento: Cageside Press, MMA News e Yahoo Sports, de 29/10 a 01/11/2026.</li>
 <li>Veículos consultados: MMA Sucka, Yahoo Sports, Mais Goiás, Wikipédia.</li>
 </ul>`,
     faq: [
-      { question: "Quando é a próxima luta de Gabriel Bonfim?", answer: "Sábado, 7 de novembro de 2026, contra Sean Brady, na luta principal do UFC Vegas 124, em Las Vegas." },
-      { question: "Que horas luta o Gabriel Bonfim?", answer: "O card principal começa às 22h (Brasília) e a luta dele é a principal, a última da noite. O card preliminar começa às 19h." },
-      { question: "Qual é o próximo UFC?", answer: "Depois do UFC Vegas 124, em 7 de novembro, vem o UFC 334, em 14 de novembro, no Madison Square Garden." },
-      { question: "Onde assistir à luta do Gabriel Bonfim?", answer: "No Paramount+ e no UFC Fight Pass." },
+      { question: "Quando é a próxima luta de Gabriel Bonfim?", answer: "Ainda sem data. A luta contra Sean Brady, marcada para 7 de novembro de 2026 no UFC Vegas 124, foi cancelada depois que Brady se machucou, e Bonfim saiu do evento. O UFC não tinha anunciado a nova luta até 2 de novembro." },
+      { question: "Por que Bonfim x Brady foi cancelada?", answer: "Sean Brady se machucou: segundo ele, uma infecção no joelho esquerdo. Bonfim ficou sem adversário e também saiu do card." },
+      { question: "Qual é a luta principal do UFC Vegas 124 agora?", answer: "Waldo Cortes Acosta x Johnny Walker, no peso-pesado, no sábado, 7 de novembro, com card principal às 22h (Brasília)." },
+      { question: "Qual é o próximo UFC?", answer: "Depois do UFC Vegas 124, em 7 de novembro, vem o UFC 334, em 14 de novembro, no Madison Square Garden, com Ciryl Gane x Josh Hokit." },
       { question: "Qual é o ranking de Gabriel Bonfim no UFC?", answer: "5º do peso meio-médio, depois da vitória sobre Belal Muhammad em junho de 2026." },
       { question: "Qual é o cartel de Gabriel Bonfim?", answer: "20 vitórias e 1 derrota no MMA profissional." },
       { question: "Gabriel Bonfim é irmão de quem?", answer: "De Ismael Bonfim, irmão mais velho, que também luta no UFC, no peso-leve." },
@@ -430,17 +524,18 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-28",
-    updatedAt: "2026-10-29",
+    updatedAt: "2026-11-02",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
-    tags: ["UFC", "UFC Vegas 124", "brasileiros no UFC", "Gabriel Bonfim", "Virna Jandiroba"],
-    content: `<img src="/blog-images/ufc-vegas-124-gabriel-bonfim-sean-brady-capa.webp" alt="Brasileiros no UFC Vegas 124 — Gabriel Bonfim x Sean Brady na luta principal, sábado 7/11" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<p>Dez brasileiros estão no <strong>UFC Vegas 124</strong>, no <strong>sábado, 7 de novembro de 2026</strong>, no Meta Apex, em Las Vegas. <strong>Gabriel Bonfim</strong>, o Marretinha, faz a luta principal contra o norte-americano Sean Brady. Horários, transmissão e o card completo em <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">Bonfim x Brady: horário e onde assistir</a>.</p>
+    tags: ["UFC", "UFC Vegas 124", "brasileiros no UFC", "Johnny Walker", "Virna Jandiroba", "Gabriel Bonfim"],
+    content: `<img src="/blog-images/ufc-vegas-124-gabriel-bonfim-sean-brady-capa.webp" alt="Brasileiros no UFC Vegas 124, sábado 7/11, em Las Vegas" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<p>Dez brasileiros estão no <strong>UFC Vegas 124</strong>, no <strong>sábado, 7 de novembro de 2026</strong>, no Meta Apex, em Las Vegas. <strong>Johnny Walker</strong> faz a luta principal contra o dominicano Waldo Cortes Acosta, no peso-pesado. Horários, transmissão e o card completo em <a href="/blog/ufc-vegas-124-johnny-walker-cortes-acosta">Walker x Cortes Acosta: horário e onde assistir</a>.</p>
+<p><strong>Mudança no card:</strong> Gabriel Bonfim, o Marretinha, faria a luta principal contra Sean Brady, mas Brady se machucou e os dois saíram do evento. Veja <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">o que aconteceu com Bonfim x Brady</a>. Atualizado em 2 de novembro de 2026.</p>
 
 <h2>Quem são os brasileiros do UFC Vegas 124</h2>
 <h3>Card principal (22h)</h3>
 <ul>
-<li><strong>Gabriel Bonfim</strong> x Sean Brady: luta principal, peso meio-médio.</li>
+<li><strong>Johnny Walker</strong> x Waldo Cortes Acosta: luta principal, peso-pesado.</li>
 <li><strong>Virna Jandiroba</strong> x Tatiana Suarez: peso-palha feminino.</li>
 <li><strong>Wellington Turman</strong> x Seokhyeon Ko: peso meio-médio.</li>
 <li><strong>Lucas Fernando</strong> x Billy Elekana: peso meio-pesado.</li>
@@ -448,14 +543,14 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <h3>Card preliminar (19h)</h3>
 <ul>
 <li><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong>: duelo brasileiro no peso-mosca feminino.</li>
-<li><strong>Gabriel Lorenco</strong> x Alvin Hines: peso-pesado.</li>
+<li><strong>Gabriel Lorenco</strong> x Thomas Petersen: peso-pesado.</li>
 <li><strong>José Delano</strong> x Murtazali Magomedov: peso-pena.</li>
 <li><strong>Priscila Cachoeira</strong> x Nina Milošević: peso-galo feminino.</li>
 <li><strong>José Souza</strong> x Jonny Parsons: peso meio-médio.</li>
 </ul>
 
 <h2>Que horas lutam os brasileiros?</h2>
-<p>O card preliminar começa às <strong>19h</strong> e o card principal às <strong>22h</strong>, no horário de Brasília. A luta do Bonfim é a última da noite. A ordem exata das lutas pode mudar até o dia do evento.</p>
+<p>O card preliminar começa às <strong>19h</strong> e o card principal às <strong>22h</strong>, no horário de Brasília. A luta do Walker é a última da noite. A ordem exata das lutas pode mudar até o dia do evento.</p>
 
 <h2>Como os lutadores chegam à balança</h2>
 <p>Todos passam pela pesagem na véspera, e muitos fazem corte de peso. Entenda o processo em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>, e como eles treinam em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
@@ -465,13 +560,14 @@ export const UFC_2026_POSTS: BlogPost[] = [
 
 <h2>Fontes</h2>
 <ul>
-<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Fight Night: Bonfim x Brady (página oficial, card e horários)</a></li>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 124: Cortes Acosta x Walker (página oficial, card e horários, conferida em 02/11/2026)</a></li>
+<li>Saída de Brady (infecção no joelho, segundo ele) e de Bonfim do evento: Cageside Press, MMA News e Yahoo Sports, de 29/10 a 01/11/2026.</li>
 <li>Nacionalidade conferida no perfil oficial de cada atleta em ufc.com.br (cidade natal), em 28/10/2026.</li>
 <li><a href="https://agfight.com/ufc/gabriel-marretinha-enfrenta-sean-brady-na-luta-principal-do-ufc-vegas-124/" target="_blank" rel="noopener noreferrer">Ag. Fight — Marretinha enfrenta Sean Brady na luta principal do UFC Vegas 124</a></li>
 </ul>`,
     faq: [
-      { question: "Quais brasileiros lutam no UFC Vegas 124?", answer: "Gabriel Bonfim (luta principal), Virna Jandiroba, Wellington Turman e Lucas Fernando no card principal; Karine Silva, Gabriella Fernandes, Gabriel Lorenco, José Delano, Priscila Cachoeira e José Souza no preliminar." },
-      { question: "Quem é o Marretinha do UFC?", answer: "É o apelido de Gabriel Bonfim, que faz a luta principal do UFC Vegas 124 contra Sean Brady, no peso meio-médio." },
+      { question: "Quais brasileiros lutam no UFC Vegas 124?", answer: "Johnny Walker (luta principal), Virna Jandiroba, Wellington Turman e Lucas Fernando no card principal; Karine Silva, Gabriella Fernandes, Gabriel Lorenco, José Delano, Priscila Cachoeira e José Souza no preliminar." },
+      { question: "O Marretinha luta no UFC Vegas 124?", answer: "Não mais. Gabriel Bonfim, o Marretinha, faria a luta principal contra Sean Brady, mas Brady se machucou e os dois saíram do card. A luta principal passou a ser Johnny Walker x Waldo Cortes Acosta." },
       { question: "Contra quem luta Virna Jandiroba no UFC Vegas 124?", answer: "Contra Tatiana Suarez, no peso-palha feminino, no card principal." },
       { question: "Tem luta entre brasileiras no UFC Vegas 124?", answer: "Tem: Karine Silva x Gabriella Fernandes, no peso-mosca feminino, no card preliminar." },
       { question: "Que horas lutam os brasileiros no UFC Vegas 124?", answer: "O card preliminar começa às 19h e o principal às 22h, horário de Brasília." },
@@ -488,23 +584,32 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-03",
+    updatedAt: "2026-11-02",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
-    tags: ["UFC", "UFC Vegas 124", "resultado UFC", "Gabriel Bonfim", "Sean Brady"],
+    tags: ["UFC", "UFC Vegas 124", "resultado UFC", "Johnny Walker", "Gabriel Bonfim"],
     content: `<blockquote><p><strong>As lutas ainda não aconteceram.</strong> O UFC Vegas 124 é no sábado, 7 de novembro, em Las Vegas. Esta página é atualizada com o resultado de cada luta assim que ele for confirmado.</p></blockquote>
 
-<h2>Quem ganhou Gabriel Bonfim x Sean Brady?</h2>
-<p><strong>Resultado: aguardando a luta.</strong> É a luta principal da noite, no peso meio-médio. Bonfim chega como 5º do ranking e com cinco vitórias seguidas.</p>
+<p><strong>Mudança no card:</strong> Bonfim x Brady foi cancelada depois que Brady se machucou, e Bonfim saiu do evento. A luta principal passou a ser Waldo Cortes Acosta x Johnny Walker. Veja <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">o que aconteceu com Bonfim x Brady</a>.</p>
+
+<h2>Quem ganhou Johnny Walker x Waldo Cortes Acosta?</h2>
+<p><strong>Resultado: aguardando a luta.</strong> É a luta principal da noite, no peso-pesado.</p>
 
 <h2>Resultados dos brasileiros no UFC Vegas 124</h2>
 <table><thead><tr><th>Luta</th><th>Resultado</th></tr></thead><tbody>
-<tr><td><strong>Gabriel Bonfim</strong> x Sean Brady</td><td>Aguardando</td></tr>
+<tr><td><strong>Johnny Walker</strong> x Waldo Cortes Acosta</td><td>Aguardando</td></tr>
 <tr><td><strong>Virna Jandiroba</strong> x Tatiana Suarez</td><td>Aguardando</td></tr>
-<tr><td><strong>Priscila Cachoeira</strong></td><td>Aguardando</td></tr>
+<tr><td><strong>Wellington Turman</strong> x Seokhyeon Ko</td><td>Aguardando</td></tr>
+<tr><td><strong>Lucas Fernando</strong> x Billy Elekana</td><td>Aguardando</td></tr>
+<tr><td><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong></td><td>Aguardando</td></tr>
+<tr><td><strong>Gabriel Lorenco</strong> x Thomas Petersen</td><td>Aguardando</td></tr>
+<tr><td><strong>José Delano</strong> x Murtazali Magomedov</td><td>Aguardando</td></tr>
+<tr><td><strong>Priscila Cachoeira</strong> x Nina Milošević</td><td>Aguardando</td></tr>
+<tr><td><strong>José Souza</strong> x Jonny Parsons</td><td>Aguardando</td></tr>
 </tbody></table>
 
 <h2>Horário e onde assistir</h2>
-<p>Transmissão no Paramount+. Horários, ranking e cartel do Bonfim em <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">Gabriel Bonfim x Sean Brady</a>.</p>
+<p>Transmissão no Paramount+. Horários e card completo em <a href="/blog/ufc-vegas-124-johnny-walker-cortes-acosta">Walker x Cortes Acosta: horário e onde assistir</a>.</p>
 
 <h2>Não se compare</h2>
 <p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
@@ -516,9 +621,12 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <li><a href="https://www.ufc.com.br/news/gabriel-bonfim-entra-top-5-ranking-peso-meio-medio" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim entra no Top 5 do peso meio-médio</a></li>
 <li><a href="https://agfight.com/ufc/gabriel-marretinha-enfrenta-sean-brady-na-luta-principal-do-ufc-vegas-124/" target="_blank" rel="noopener noreferrer">Ag. Fight — Marretinha enfrenta Sean Brady na luta principal do UFC Vegas 124</a></li>
 <li>Veículos consultados: MMA Sucka, Yahoo Sports, Mais Goiás, Wikipédia.</li>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 124: Cortes Acosta x Walker (página oficial, card e horários, conferida em 02/11/2026)</a></li>
+<li>Saída de Brady (infecção no joelho, segundo ele) e de Bonfim do evento: Cageside Press, MMA News e Yahoo Sports, de 29/10 a 01/11/2026.</li>
 </ul>`,
     faq: [
-      { question: "Quem ganhou Gabriel Bonfim x Sean Brady?", answer: "A luta é no sábado, 7 de novembro de 2026. O resultado entra nesta página assim que for confirmado." },
+      { question: "Quem ganhou Gabriel Bonfim x Sean Brady?", answer: "A luta não vai acontecer: foi cancelada depois que Brady se machucou, e Bonfim saiu do UFC Vegas 124." },
+      { question: "Quem ganhou Johnny Walker x Cortes Acosta?", answer: "A luta é no sábado, 7 de novembro de 2026, na principal do UFC Vegas 124. O resultado entra nesta página assim que for confirmado." },
       { question: "Quem ganhou o UFC Vegas 124?", answer: "O evento acontece na noite de 7/11. Os resultados entram aqui ao fim de cada luta." },
     ],
   },
