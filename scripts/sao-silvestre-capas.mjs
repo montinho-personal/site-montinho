@@ -157,6 +157,14 @@ const CAPAS = [
 <div class="sub"><b>Peso-leve</b> · Meta Apex, Las Vegas<br>Card principal às <b>21h</b> (Brasília).</div></div>`, "UFC Vegas 123"),
   },
   {
+    slug: "ufc-vegas-124-johnny-walker-cortes-acosta",
+    alt: "Capa: UFC Vegas 124 — Johnny Walker x Cortes Acosta, sábado 7/11, card principal às 22h",
+    html: base(`
+<div class="top"><div class="kicker">UFC Vegas 124 · Sáb 7/11</div><div class="chip"><i></i>Luta principal</div></div>
+<div class="main"><h1><em>Walker</em><br>x Cortes Acosta</h1>
+<div class="sub"><b>Peso-pesado</b> · Meta Apex, Las Vegas<br>Card principal às <b>22h</b> (Brasília).</div></div>`, "UFC Vegas 124"),
+  },
+  {
     slug: "ufc-vegas-124-gabriel-bonfim-sean-brady",
     alt: "Capa: UFC Vegas 124 — Gabriel Bonfim x Sean Brady, sábado 7/11, card principal às 22h",
     html: base(`
