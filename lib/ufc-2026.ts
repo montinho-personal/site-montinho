@@ -997,9 +997,9 @@ export const UFC_2026_POSTS: BlogPost[] = [
   {
     slug: "ufc-334-amanda-nunes-kayla-harrison",
     title: "UFC 334: Amanda Nunes x Kayla Harrison — data, horário, card e onde assistir",
-    metaTitle: "UFC 334: Amanda Nunes x Kayla Harrison — Horário e Card",
+    metaTitle: "UFC 334: Card Completo, Data e Horário das Lutas",
     metaDescription:
-      "Amanda Nunes volta ao UFC contra Kayla Harrison pelo cinturão peso-galo no UFC 334, sábado 14/11, em Nova York. Horário de Brasília, onde assistir e os brasileiros.",
+      "UFC 334 é sábado, 14/11, no Madison Square Garden, com Gane x Hokit e a volta de Amanda Nunes. Veja o horário de cada card e quem luta.",
     excerpt:
       "Amanda Nunes desafia a campeã Kayla Harrison no UFC 334, no Madison Square Garden. Data, horários de Brasília, onde assistir, card completo e os cinco brasileiros.",
     category: "Treinamento",
