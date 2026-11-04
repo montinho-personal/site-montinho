@@ -6,6 +6,9 @@ import RevisaoCTA from "@/components/revisao/RevisaoCTA";
 import Trilha from "@/components/ferramentas/Trilha";
 import VistaMedida from "@/components/ui/VistaMedida";
 import VideoCaminho from "@/components/video/VideoCaminho";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
+import VideoMedido from "@/components/blog/VideoMedido";
+import { videoPorSlug, videoSchema } from "@/lib/videos";
 
 export const metadata: Metadata = {
   title: "Revisão Gratuita de Execução de Exercícios",
@@ -55,6 +58,9 @@ const PASSOS = [
   { n: "3", t: "Me mande o vídeo", d: "É só anexar ali na conversa. Não precisa escrever nada." },
 ];
 
+const VIDEO_FILMAR = videoPorSlug("como-filmar-seu-exercicio")!;
+const videoFilmarSchema = videoSchema(VIDEO_FILMAR, SITE_URL);
+
 export default function RevisaoDeExecucaoPage() {
   const href = revisaoWhatsAppUrl();
 
@@ -63,6 +69,7 @@ export default function RevisaoDeExecucaoPage() {
       <VistaMedida evento="execution_review_view" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      {videoFilmarSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoFilmarSchema) }} />}
 
       {/* Hero — a ação está acima da dobra, no celular inclusive */}
       <section className="pt-14 pb-12 bg-black border-b border-white/10">
@@ -143,6 +150,17 @@ export default function RevisaoDeExecucaoPage() {
               Não precisa editar, cortar nem preparar nada. Me manda o vídeo do
               jeito que ele estiver.
             </p>
+            <figure className="m-0 mt-8">
+              <div data-video-filmar>
+                <YoutubeShortEmbed videoId={VIDEO_FILMAR.id} title={VIDEO_FILMAR.titulo} />
+              </div>
+              <figcaption className="mt-3 text-center text-sm text-gray-400">
+                Em 2 minutos: de lado, câmera na altura da articulação, corpo inteiro
+                no quadro e a série completa. E o que fazer sem tripé e com vergonha.{" "}
+                <Link href={`/videos/${VIDEO_FILMAR.slug}`} className={ln}>Ler o resumo</Link>.
+              </figcaption>
+            </figure>
+            <VideoMedido slug="como-filmar-revisao" seletor="[data-video-filmar]" />
           </div>
 
           <div>
