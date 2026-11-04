@@ -63,6 +63,9 @@ Status: pedir a indexação no Search Console.
 | /blog/ufc-vegas-124-johnny-walker-cortes-acosta | novo (02/11, card mudou; sem os prints) | | |
 | /blog/creatina-engorda | novo (04/11, sem os prints) | | |
 | /blog/uva-passa-engorda | novo (04/11, sem os prints) | | |
+| /blog/ombro-estalando-e-normal | novo (04/11, das perguntas de dor do app; sem os prints) | | |
+| /blog/anti-inflamatorio-atrapalha-hipertrofia | novo (04/11, das perguntas de dor do app; sem os prints) | | |
+| /blog/treinar-com-dor | novo (04/11, das perguntas de dor do app; sem os prints) | | |
 
 O que observar em 28 dias:
 - impressões em "app de treino academia", "app de treino gratuito" e "aplicativo de musculação grátis" (no export, 720, 140 e 50 buscas/mês);
