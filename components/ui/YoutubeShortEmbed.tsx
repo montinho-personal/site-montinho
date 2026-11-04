@@ -1,9 +1,11 @@
 interface YoutubeShortEmbedProps {
   videoId: string;
   title: string;
+  /** Capa própria (caminho em /public). VideoMedido mostra ela no lugar da miniatura do YouTube. */
+  capa?: string;
 }
 
-export default function YoutubeShortEmbed({ videoId, title }: YoutubeShortEmbedProps) {
+export default function YoutubeShortEmbed({ videoId, title, capa }: YoutubeShortEmbedProps) {
   return (
     <div style={{ maxWidth: "360px", width: "100%", margin: "0 auto" }}>
       <div
@@ -18,6 +20,7 @@ export default function YoutubeShortEmbed({ videoId, title }: YoutubeShortEmbedP
         <iframe
           src={`https://www.youtube.com/embed/${videoId}?rel=0`}
           title={title}
+          data-capa={capa}
           loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen

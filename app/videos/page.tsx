@@ -28,7 +28,7 @@ export default function VideosPage() {
                 <div className="relative">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}
+                    src={v.capa?.cartao ?? `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}
                     alt={v.titulo}
                     width={480}
                     height={360}
