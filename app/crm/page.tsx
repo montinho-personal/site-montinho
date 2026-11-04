@@ -11,6 +11,8 @@ import PreviaMensagem from "@/components/crm/PreviaMensagem";
 import Registrar from "@/components/crm/Registrar";
 import RegistrarRenovacao from "@/components/crm/RegistrarRenovacao";
 import { agruparPorSecao, POR_SECAO } from "@/lib/crm/hoje";
+import { painelOnboarding } from "@/lib/crm/onboarding-dados";
+import { diaLocal } from "@/lib/crm/onboarding-fluxo";
 
 /**
  * O rótulo do botão de ação.
@@ -47,8 +49,12 @@ function rotuloCurto(acao: string, max = 18): string {
 
 export default async function Hoje() {
   const u = await exigirUsuario();
-  const [b, cat] = await Promise.all([base(), catalogo()]);
+  const [b, cat, po] = await Promise.all([base(), catalogo(), painelOnboarding()]);
   const agora = new Date();
+  // Onboarding: o que vence hoje ou já venceu, de todos os alunos em andamento.
+  const onbAbertas = po.linhas.filter((l) => l.onb.status === "em_andamento").flatMap((l) => l.vistas.filter((v) => v.aplicavel && ["pendente", "em_andamento"].includes(v.estado) && v.t.due_at));
+  const onbAtrasadas = onbAbertas.filter((v) => v.atrasada).length;
+  const onbHoje = onbAbertas.filter((v) => !v.atrasada && diaLocal(new Date(v.t.due_at!)) === diaLocal(agora)).length;
   const visoes = todasVisoes(b, cat, agora);
   const itens = itensHoje(b, cat, visoes, agora);
   const abertas = b.oportunidades.filter((o) => !o.won_at && !o.lost_at);
@@ -124,13 +130,14 @@ export default async function Hoje() {
         * Tela em seções, na ordem em que o trabalho é feito (lib/crm/hoje.ts).
         * Os chips no topo dizem quanto tem em cada uma e levam até ela.
         */}
-      {secoes.length > 0 && (
+      {(secoes.length > 0 || onbAtrasadas + onbHoje > 0) && (
         <nav className="mb-5 flex flex-wrap gap-2" aria-label="Seções de hoje">
           {secoes.map((g) => (
             <a key={g.secao.id} href={`#${g.secao.id}`} className="rounded-full border border-white/15 bg-zinc-900 px-3 py-1.5 text-sm hover:bg-white/10">
               {g.secao.titulo} <strong className="ml-1 text-white">{g.itens.length}</strong>
             </a>
           ))}
+          {onbAtrasadas + onbHoje > 0 && <Link href="/crm/onboarding/tarefas" prefetch={false} className={`rounded-full border px-3 py-1.5 text-sm hover:bg-white/10 ${onbAtrasadas ? "border-rose-500/40 bg-rose-500/10" : "border-white/15 bg-zinc-900"}`}>Onboarding <strong className="ml-1 text-white">{onbHoje + onbAtrasadas}</strong>{onbAtrasadas ? <span className="ml-1 text-rose-300">({onbAtrasadas} atrasada{onbAtrasadas > 1 ? "s" : ""})</span> : null}</Link>}
           {experimentaisHoje.length > 0 && <span className="rounded-full border border-white/15 px-3 py-1.5 text-sm text-zinc-400">Experimentais hoje <strong className="text-white">{experimentaisHoje.length}</strong></span>}
         </nav>
       )}

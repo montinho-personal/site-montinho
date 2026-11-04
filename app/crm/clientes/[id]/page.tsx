@@ -10,11 +10,14 @@ import { cancelarCliente, concluirTarefa, criarEnviosIniciais, criarTarefa, defi
 import { descreverRitmo, formatarDatas, resumoDoPacote, ritmoDoPacote } from "@/lib/crm/aulas";
 import ColarAulas from "@/components/crm/ColarAulas";
 import { ENVIOS_INICIAIS } from "@/lib/crm/onboarding";
+import { painelOnboarding } from "@/lib/crm/onboarding-dados";
+import { ROTULO_ESTADO, ROTULO_SITUACAO } from "@/lib/crm/onboarding-fluxo";
+import { iniciarOnboarding } from "../../onboarding/actions";
 
 export default async function ClientePage({ params }: { params: Promise<{ id: string }> }) {
   const u = await exigirUsuario();
   const { id } = await params;
-  const [b, cat] = await Promise.all([base(), catalogo()]);
+  const [b, cat, po] = await Promise.all([base(), catalogo(), painelOnboarding()]);
   const c = b.clientes.find((x) => x.id === id); if (!c) notFound();
   const contato = b.contatos.find((x) => x.id === c.contact_id); if (!contato) notFound();
   const contratos = b.contratos.filter((k) => k.client_id === c.id).sort((a, z) => z.inicio.localeCompare(a.inicio));
@@ -41,6 +44,33 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
   const enviados = envios.filter((e) => e.tarefa?.completed_at).length;
   const faltaCriar = envios.some((e) => !e.tarefa);
   const pendente = faltaCriar || enviados < ENVIOS_INICIAIS.length;
+  // Onboarding novo (crm_onboardings). Com ele, o checklist antigo de envios sai de cena:
+  // fica só para quem entrou antes e nunca teve o fluxo novo.
+  const onbs = po.linhas.filter((l) => l.onb.client_id === c.id);
+  const onbAberto = onbs.find((l) => l.onb.status === "em_andamento" || l.onb.status === "pausado") ?? null;
+  const onbUltimo = onbAberto ?? onbs[0] ?? null;
+  const legado = !onbs.length && envios.some((e) => e.tarefa);
+  const modelosAtivos = po.bo.templates.filter((t) => t.ativo);
+  const cardOnboarding = (
+    <Card titulo="Onboarding" acao={onbUltimo && <Link href={`/crm/onboarding/${onbUltimo.onb.id}`} prefetch={false} className="text-xs underline">abrir</Link>}>
+      {onbUltimo ? (
+        <>
+          <div className="flex items-center justify-between text-sm"><span>{ROTULO_SITUACAO[onbUltimo.situacao].icone} {ROTULO_SITUACAO[onbUltimo.situacao].rotulo}</span><span className="text-zinc-400">{onbUltimo.progresso.pct}%</span></div>
+          <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/10"><div className="h-full rounded-full bg-emerald-400" style={{ width: `${onbUltimo.progresso.pct}%` }} /></div>
+          {onbUltimo.proxima && <p className="mt-2 text-sm text-zinc-300">Próxima: {ROTULO_ESTADO[onbUltimo.proxima.estado].icone} {onbUltimo.proxima.t.nome}{onbUltimo.proxima.t.due_at ? ` · ${dataBr(onbUltimo.proxima.t.due_at)}` : ""}</p>}
+          {!onbAberto && !ro && <form action={iniciarOnboarding} className="mt-3"><input type="hidden" name="client_id" value={c.id} /><Btn pequeno tom="secundario">Iniciar novo onboarding</Btn></form>}
+        </>
+      ) : ro ? <p className="text-sm text-zinc-400">Sem onboarding.</p> : (
+        <form action={iniciarOnboarding} className="space-y-2">
+          <input type="hidden" name="client_id" value={c.id} />
+          <p className="text-sm text-zinc-400">Cliente sem onboarding{legado ? " no fluxo novo (tem o checklist antigo abaixo)" : ""}.</p>
+          <Campo rotulo="Início"><Input type="date" name="inicio" defaultValue={dataInput()} /></Campo>
+          {modelosAtivos.length > 1 && <Campo rotulo="Modelo"><Select name="template_id" defaultValue=""><option value="">Automático (serviço/plano)</option>{modelosAtivos.map((t) => <option key={t.id} value={t.id}>{t.nome}</option>)}</Select></Campo>}
+          <Btn pequeno>Iniciar onboarding</Btn>
+        </form>
+      )}
+    </Card>
+  );
   const refUrl = contato.referral_code ? `https://www.montinhopersonal.com.br/r/${contato.referral_code}` : null;
   const cardEnvios = (
     <Card titulo="Primeiros envios">
@@ -77,7 +107,7 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
         <Stat rotulo="Renovação" valor={dataBr(c.renewal_date)} tom={c.renewal_date && diasEntre(new Date(), c.renewal_date) <= 14 ? "alerta" : "neutro"} />
       </div>
       {/* No celular, enquanto falta envio, o card vem antes da receita: é o que se usa no dia do fechamento. */}
-      {pendente && <div className="mb-4 lg:hidden">{cardEnvios}</div>}
+      {(onbAberto || (legado && pendente)) && <div className="mb-4 space-y-4 lg:hidden">{onbAberto ? cardOnboarding : cardEnvios}</div>}
       <div className="grid gap-4 lg:grid-cols-[1fr_360px]">
         <div className="space-y-4">
           <Card titulo="Receita">
@@ -187,7 +217,8 @@ export default async function ClientePage({ params }: { params: Promise<{ id: st
           </Card>
         </div>
         <div className="space-y-4">
-          <div className={pendente ? "hidden lg:block" : ""}>{cardEnvios}</div>
+          <div className={onbAberto ? "hidden lg:block" : ""}>{cardOnboarding}</div>
+          {legado && <div className={pendente && !onbAberto ? "hidden lg:block" : ""}>{cardEnvios}</div>}
           <Card titulo="Contato">
             <ul className="space-y-1 text-sm"><li>{contato.telefone ?? "—"}</li><li>{contato.email ?? "—"}</li><li>{contato.instagram ?? ""}</li><li className="text-zinc-500">{contato.cidade ?? ""}</li></ul>
             <p className="mt-2 text-xs text-zinc-500">Editar dados: pela ficha do lead.</p>
