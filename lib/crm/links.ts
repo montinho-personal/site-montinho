@@ -99,6 +99,13 @@ export const LINKS: Record<string, LinkControlado> = {
   /** Vídeo "Como tirar suas medidas" (30/10/2026). Home, como os de mobilidade. */
   "yt-medidas": { destino: "/", utm_source: "youtube", utm_medium: "video", utm_campaign: "como_tirar_medidas", utm_content: "descricao", tipo: "social" },
   "wa-medidas": { destino: "/", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "como_tirar_medidas", tipo: "social" },
+  /**
+   * Vídeo "Como filmar o seu exercício" (04/11/2026), o guia da revisão de
+   * execução. Leva à própria ferramenta de envio, e não à home: quem viu o
+   * vídeo está pronto para gravar e mandar, e é isso que a página pede.
+   */
+  "yt-filmar": { destino: "/revisao-de-execucao", utm_source: "youtube", utm_medium: "video", utm_campaign: "como_filmar_exercicio", utm_content: "descricao", tipo: "social" },
+  "wa-filmar": { destino: "/revisao-de-execucao", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "como_filmar_exercicio", tipo: "social" },
 };
 
 export function urlDoLink(slug: string, extra: Record<string, string> = {}): string | null {
