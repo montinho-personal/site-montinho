@@ -1012,7 +1012,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <blockquote><p>Informações verificadas em 4 de novembro de 2026 na página oficial do evento. O card ainda pode mudar; esta página é atualizada até a luta.</p></blockquote>
 <p>O <strong>UFC 334</strong> acontece no <strong>sábado, 14 de novembro de 2026</strong>, no Madison Square Garden, em Nova York. A brasileira <strong>Amanda Nunes</strong> volta ao octógono para desafiar a campeã norte-americana <strong>Kayla Harrison</strong> pelo cinturão do peso-galo feminino. A luta principal é Ciryl Gane x Josh Hokit, pelo cinturão do peso-pesado.</p>
 
-<h2>UFC 334: data, horário e onde assistir</h2>
+<h2>Quando vai ser o UFC 334? Data, horário e onde assistir</h2>
 <table><thead><tr><th>Item</th><th>O que se sabe</th></tr></thead><tbody>
 <tr><td>Data</td><td>Sábado, 14/11/2026</td></tr>
 <tr><td>Local</td><td>Madison Square Garden, Nova York (EUA)</td></tr>
@@ -1023,12 +1023,20 @@ export const UFC_2026_POSTS: BlogPost[] = [
 </tbody></table>
 <p>Amanda x Kayla é a segunda luta mais importante da noite, logo antes da principal. As duas últimas lutas costumam entrar depois da meia-noite, já no domingo.</p>
 
-<h2>Amanda Nunes x Kayla Harrison: por que essa luta importa</h2>
+<h2>Qual é a luta principal do UFC 334?</h2>
+<p>A luta principal é <strong>Ciryl Gane x Josh Hokit</strong>, pelo cinturão do peso-pesado: o francês Gane contra o norte-americano Hokit, a última luta da noite. Logo antes vem <strong>Kayla Harrison x Amanda Nunes</strong>, pelo cinturão do peso-galo feminino. As duas lutas valem título.</p>
+
+<h2>Amanda Nunes vai voltar a lutar? A luta contra Kayla Harrison</h2>
 <p>Amanda Nunes, a "Leoa", foi a primeira e única mulher a ser campeã de duas categorias ao mesmo tempo no UFC, segundo o perfil oficial. Ela tinha se aposentado depois da vitória sobre Irene Aldana, em junho de 2023, e volta depois de cerca de três anos parada. Kayla Harrison é a campeã do peso-galo e faz a primeira defesa do cinturão.</p>
-<p>A luta estava prevista para o UFC 324 e foi adiada depois que Harrison passou por uma cirurgia no pescoço.</p>
+<p>Sim: Amanda chegou a se aposentar em 2023, mas a próxima luta dela está marcada para 14 de novembro, no UFC 334.</p>
+
+<h2>Por que a luta de Amanda Nunes foi cancelada?</h2>
+<p>Ela não foi cancelada, foi adiada. Amanda x Kayla estava prevista para o UFC 324 e saiu do evento depois que Harrison passou por uma cirurgia no pescoço. A luta foi remarcada para o UFC 334.</p>
 
 <h2>Quem é Amanda Nunes?</h2>
-<p>Amanda tem cartel de <strong>23 vitórias e 5 derrotas</strong> no MMA profissional, pelo perfil oficial no UFC.</p>
+<p>Amanda Nunes nasceu em <strong>30 de maio de 1988</strong>, em Pojuca, na Bahia, e tem <strong>38 anos</strong>. O cartel é de <strong>23 vitórias e 5 derrotas</strong> no MMA profissional, pelo perfil oficial no UFC.</p>
+<p><strong>As derrotas:</strong> no UFC, só duas, para Cat Zingano (UFC 178, 2014, nocaute no 3º round) e Julianna Peña (UFC 269, 2021, mata-leão no 2º round), que ela devolveu na revanche. Antes, perdeu para Alexis Davis no Strikeforce, em 2011, e duas vezes no começo da carreira, no Brasil, incluindo a estreia, em 2008.</p>
+<p>As últimas lutas:</p>
 <table><thead><tr><th>Data</th><th>Evento</th><th>Adversária</th><th>Resultado</th></tr></thead><tbody>
 <tr><td>10/6/2023</td><td>UFC 289</td><td>Irene Aldana</td><td>Vitória por decisão unânime</td></tr>
 <tr><td>30/7/2022</td><td>UFC 277</td><td>Julianna Peña</td><td>Vitória por decisão unânime</td></tr>
@@ -1038,8 +1046,8 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <h2>Caio Borralho x Yousri Belgaroui</h2>
 <p>O maranhense <strong>Caio Borralho</strong>, "The Natural", é o 5º do ranking do peso-médio e tem cartel de <strong>18 vitórias e 2 derrotas</strong>. Na última luta, em 7 de março de 2026, venceu Reinier de Ridder por decisão unânime. Antes, perdeu para Nassourdine Imavov por decisão, em setembro de 2025. Ele enfrenta o holandês Yousri Belgaroui no card principal.</p>
 
-<h2>Card completo do UFC 334</h2>
-<p>Os brasileiros estão em negrito. Veja todos em <a href="/blog/brasileiros-ufc-334">brasileiros no UFC 334</a>.</p>
+<h2>UFC 334 card completo: quem vai lutar</h2>
+<p>São 12 lutas: 5 no card principal, 4 no card preliminar e 3 nas preliminares iniciais. Os brasileiros estão em negrito. Veja todos em <a href="/blog/brasileiros-ufc-334">brasileiros no UFC 334</a>.</p>
 <h3>Card principal (23h)</h3>
 <table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
 <tr><td>Ciryl Gane x Josh Hokit</td><td>Peso-pesado (cinturão, luta principal)</td></tr>
@@ -1063,6 +1071,9 @@ export const UFC_2026_POSTS: BlogPost[] = [
 </tbody></table>
 <p>A ordem das lutas pode mudar até o dia do evento.</p>
 
+<h2>Charles do Bronx e Poatan lutam no UFC 334?</h2>
+<p>Não. <strong>Charles Oliveira</strong>, o Do Bronx, e <strong>Alex Pereira</strong>, o Poatan, não estão no card oficial do UFC 334, conferido em 4 de novembro de 2026. Os brasileiros do evento são Amanda Nunes, Caio Borralho, Cesar Almeida, Bia Mesquita e Jefferson Nascimento. Se o card mudar, esta página é atualizada.</p>
+
 <h2>Corte de peso: o que acontece antes da luta</h2>
 <p>Todos passam pela pesagem na véspera, e muitos perdem vários quilos de água nos dias anteriores. É prática de atleta profissional, com equipe, e não serve de modelo para quem quer emagrecer. Entenda em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a> e veja como eles treinam em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
 
@@ -1081,16 +1092,26 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <li><a href="https://www.ufc.com.br/athlete/amanda-nunes" target="_blank" rel="noopener noreferrer">UFC — Amanda Nunes (perfil oficial: cartel e últimas lutas)</a></li>
 <li><a href="https://www.ufc.com.br/athlete/caio-borralho" target="_blank" rel="noopener noreferrer">UFC — Caio Borralho (perfil oficial: cartel, ranking e últimas lutas)</a></li>
 <li>Harrison campeã, retorno de Amanda e adiamento do UFC 324 pela cirurgia no pescoço: Agent MMA e MMA Sucka, novembro de 2026.</li>
+<li>Data e cidade de nascimento e as derrotas antes do UFC: <a href="https://en.wikipedia.org/wiki/Amanda_Nunes" target="_blank" rel="noopener noreferrer">Wikipédia</a> e <a href="https://www.sportskeeda.com/mma/news-amanda-nunes-record-how-many-times-featherweight-champion-knocked" target="_blank" rel="noopener noreferrer">Sportskeeda</a>.</li>
 </ul>`,
     faq: [
-      { question: "Quando é o UFC 334?", answer: "No sábado, 14 de novembro de 2026, no Madison Square Garden, em Nova York." },
+      { question: "Quando vai ser o UFC 334?", answer: "No sábado, 14 de novembro de 2026, no Madison Square Garden, em Nova York." },
       { question: "Que horas começa o UFC 334?", answer: "As preliminares iniciais começam às 19h, o card preliminar às 21h e o card principal às 23h, horário de Brasília." },
       { question: "Que horas luta a Amanda Nunes?", answer: "Na segunda luta mais importante do card principal, que começa às 23h (Brasília). A luta dela deve entrar depois da meia-noite, logo antes de Gane x Hokit." },
-      { question: "Amanda Nunes voltou a lutar?", answer: "Sim. Aposentada desde a vitória sobre Irene Aldana, em junho de 2023, ela volta no UFC 334 contra a campeã Kayla Harrison, valendo o cinturão do peso-galo." },
+      { question: "Amanda Nunes vai voltar a lutar?", answer: "Sim. Aposentada desde a vitória sobre Irene Aldana, em junho de 2023, ela volta no UFC 334 contra a campeã Kayla Harrison, valendo o cinturão do peso-galo." },
       { question: "Onde assistir ao UFC 334?", answer: "Pelo Paramount+ e pelo UFC Fight Pass." },
       { question: "Qual é o cartel de Amanda Nunes?", answer: "23 vitórias e 5 derrotas no MMA profissional, pelo perfil oficial no UFC." },
+      { question: "Quando vai lutar a Amanda Nunes?", answer: "No sábado, 14 de novembro de 2026, contra Kayla Harrison, no UFC 334, em Nova York. O card principal começa às 23h (Brasília)." },
+      { question: "Quantos anos tem a Amanda Nunes?", answer: "38 anos. Ela nasceu em 30 de maio de 1988, em Pojuca, na Bahia." },
+      { question: "Quantas derrotas tem a Amanda Nunes?", answer: "Cinco. No UFC, perdeu para Cat Zingano (2014) e Julianna Peña (2021), que ela venceu na revanche. As outras foram antes do UFC: Alexis Davis, no Strikeforce, e duas no começo da carreira." },
+      { question: "Amanda Nunes se aposentou?", answer: "Ela anunciou a aposentadoria depois de vencer Irene Aldana, em junho de 2023, e voltou atrás: luta contra Kayla Harrison no UFC 334, em 14 de novembro de 2026." },
+      { question: "Por que a luta de Amanda Nunes foi cancelada?", answer: "Não foi cancelada, foi adiada. A luta contra Kayla Harrison estava prevista para o UFC 324 e saiu depois que Harrison operou o pescoço. Foi remarcada para o UFC 334." },
       { question: "Quais brasileiros lutam no UFC 334?", answer: "Amanda Nunes e Caio Borralho no card principal, Cesar Almeida no preliminar, e Bia Mesquita e Jefferson Nascimento nas preliminares iniciais." },
-      { question: "Qual é a luta principal do UFC 334?", answer: "Ciryl Gane x Josh Hokit, pelo cinturão do peso-pesado." },
+      { question: "Qual é a luta principal do UFC 334?", answer: "Ciryl Gane x Josh Hokit, pelo cinturão do peso-pesado. A co-principal é Kayla Harrison x Amanda Nunes, pelo cinturão do peso-galo feminino." },
+      { question: "Quem vai lutar no UFC 334?", answer: "No card principal: Gane x Hokit, Harrison x Amanda Nunes, Caio Borralho x Belgaroui, Medić x Holland e Hasan x Gurule. O card completo, com as 12 lutas, está na tabela desta página." },
+      { question: "Quantas lutas tem o UFC 334?", answer: "12 lutas: 5 no card principal, 4 no card preliminar e 3 nas preliminares iniciais, pelo card oficial de 4 de novembro de 2026." },
+      { question: "Charles Oliveira luta no UFC 334?", answer: "Não. Charles do Bronx não está no card oficial do UFC 334, conferido em 4 de novembro de 2026." },
+      { question: "Poatan luta no UFC 334?", answer: "Não. Alex Pereira, o Poatan, não está no card oficial do UFC 334, conferido em 4 de novembro de 2026." },
     ],
   },
   {
@@ -1144,6 +1165,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
     faq: [
       { question: "Quais brasileiros lutam no UFC 334?", answer: "Amanda Nunes e Caio Borralho no card principal, Cesar Almeida no preliminar, e Bia Mesquita e Jefferson Nascimento nas preliminares iniciais." },
       { question: "Contra quem luta Amanda Nunes no UFC 334?", answer: "Contra a campeã Kayla Harrison, pelo cinturão do peso-galo feminino." },
+      { question: "Charles do Bronx ou Poatan lutam no UFC 334?", answer: "Não. Charles Oliveira e Alex Pereira não estão no card oficial, conferido em 4 de novembro de 2026." },
       { question: "Contra quem luta Caio Borralho no UFC 334?", answer: "Contra o holandês Yousri Belgaroui, no peso-médio, no card principal." },
       { question: "Que horas lutam os brasileiros no UFC 334?", answer: "Preliminares iniciais às 19h, card preliminar às 21h e card principal às 23h, horário de Brasília." },
     ],
