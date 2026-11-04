@@ -42,6 +42,27 @@ export interface VideoCanal {
 
 export const VIDEOS_CANAL: VideoCanal[] = [
   {
+    /* Guia de filmagem para a revisão de execução (link enviado pelo Montinho em 04/11/2026). */
+    id: "L5w4DBU2la8",
+    slug: "como-filmar-seu-exercicio",
+    titulo: "Como filmar o seu exercício para eu corrigir a execução",
+    metaTitle: "Como Filmar o Seu Exercício na Academia (Vídeo)",
+    descricao:
+      "Quatro regras para gravar uma série que dá para avaliar: de lado, com a câmera na altura da articulação, o corpo inteiro no quadro e a série completa. E o que fazer sem tripé e com vergonha.",
+    chamada: "Sem tripé, sem câmera boa, sem vergonha: em 2 minutos você aprende a gravar uma série que dá para corrigir.",
+    texto: [
+      "Quer que eu olhe a sua execução? O vídeo precisa mostrar o movimento, e isso não depende de câmera boa: depende de onde o celular fica. São quatro regras.",
+      "Primeira: filme de lado. É o ângulo que mostra profundidade, coluna, tronco e o caminho da barra. Na dúvida, de lado. Segunda: a câmera na altura da articulação que mais trabalha. Exercício de perna, na altura do quadril; de tronco, na altura do ombro. Nem do chão, nem de cima.",
+      "Terceira: o corpo inteiro no quadro, com a carga e os pés dentro da imagem, a uns 2 a 3 metros de distância. Quarta: grave a série inteira. A técnica aparece nas primeiras e, principalmente, nas últimas repetições, quando a fadiga chega.",
+      "Sem tripé, apoie o celular numa garrafa, mochila, anilha, banco ou na própria máquina. Se pedir ajuda ao instrutor ou a um amigo, ele fica parado, na altura certa, sem seguir o movimento. E vergonha todo mundo sente: escolha um horário mais vazio e deixe a câmera virada para a parede. O vídeo fica só entre nós dois.",
+      "No vídeo eu olho cinco coisas: amplitude, coluna, joelho entrando, cotovelo saindo do lugar e tronco balançando. Não precisa estar perfeito. Gravou, me manda pelo WhatsApp.",
+    ],
+    artigos: [
+      { href: "/revisao-de-execucao", nome: "Revisão gratuita de execução: grave e me mande" },
+    ],
+    publicadoEm: "2026-11-04",
+  },
+  {
     /* Short do convite de 30 dias grátis (link enviado pelo Montinho em 24/10/2026). */
     id: "EwvRdG917fY",
     slug: "app-de-treino-30-dias-gratis",
