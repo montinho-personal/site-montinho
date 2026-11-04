@@ -152,7 +152,7 @@ export default function RevisaoDeExecucaoPage() {
             </p>
             <figure className="m-0 mt-8">
               <div data-video-filmar>
-                <YoutubeShortEmbed videoId={VIDEO_FILMAR.id} title={VIDEO_FILMAR.titulo} />
+                <YoutubeShortEmbed videoId={VIDEO_FILMAR.id} title={VIDEO_FILMAR.titulo} capa={VIDEO_FILMAR.capa?.vertical} />
               </div>
               <figcaption className="mt-3 text-center text-sm text-gray-400">
                 Em 2 minutos: de lado, câmera na altura da articulação, corpo inteiro

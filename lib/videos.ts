@@ -38,6 +38,15 @@ export interface VideoCanal {
   ferramenta?: { href: string; nome: string };
   /** Data de publicação no YouTube, AAAA-MM-DD. Conferida, nunca estimada. */
   publicadoEm?: string;
+  /**
+   * Capa própria, quando o vídeo tem uma desenhada (a mesma do YouTube).
+   * Sem ela, a página usa a miniatura do YouTube, que num Short costuma ser
+   * um quadro qualquer recortado. Caminhos em /public.
+   *  - vertical: 9:16, capa do player;
+   *  - horizontal: 16:9, para compartilhar (Open Graph) e o dado estruturado;
+   *  - cartao: 4:3, o cartão da lista /videos.
+   */
+  capa?: { vertical: string; horizontal: string; cartao: string };
 }
 
 export const VIDEOS_CANAL: VideoCanal[] = [
@@ -61,6 +70,11 @@ export const VIDEOS_CANAL: VideoCanal[] = [
       { href: "/revisao-de-execucao", nome: "Revisão gratuita de execução: grave e me mande" },
     ],
     publicadoEm: "2026-11-04",
+    capa: {
+      vertical: "/videos/como-filmar-seu-exercicio/capa-vertical.jpg",
+      horizontal: "/videos/como-filmar-seu-exercicio/capa-horizontal.jpg",
+      cartao: "/videos/como-filmar-seu-exercicio/capa-cartao.jpg",
+    },
   },
   {
     /* Short do convite de 30 dias grátis (link enviado pelo Montinho em 24/10/2026). */
@@ -557,7 +571,7 @@ export function videoSchema(v: VideoCanal, siteUrl: string) {
     "@type": "VideoObject",
     name: v.titulo,
     description: v.descricao,
-    thumbnailUrl: [`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`],
+    thumbnailUrl: v.capa ? [`${siteUrl}${v.capa.horizontal}`, `${siteUrl}${v.capa.vertical}`] : [`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`],
     uploadDate: v.publicadoEm,
     embedUrl: `https://www.youtube.com/embed/${v.id}`,
     contentUrl: `https://www.youtube.com/shorts/${v.id}`,

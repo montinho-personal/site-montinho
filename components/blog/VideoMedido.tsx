@@ -71,6 +71,15 @@ export default function VideoMedido({ slug, seletor = ".prose-blog" }: { slug: s
       capa.style.cssText =
         "position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;cursor:pointer;" +
         "background:#000 center/cover no-repeat;border-radius:12px;display:block";
+      /*
+       * Capa própria (data-capa no iframe): a imagem que desenhamos para o
+       * vídeo, igual à do YouTube. Ela já traz o botão "Assistir" desenhado,
+       * então a seta do meio não entra para não cobrir a foto.
+       */
+      const propria = iframe.dataset.capa;
+      if (propria) {
+        capa.style.backgroundImage = `url(${propria})`;
+      } else {
       capa.style.backgroundImage = `url(https://i.ytimg.com/vi/${id}/${CAPAS[0]}.jpg)`;
 
       /*
@@ -84,6 +93,7 @@ export default function VideoMedido({ slug, seletor = ".prose-blog" }: { slug: s
       /* 404 na maxres é comum em vídeo antigo — a hqdefault existe sempre. */
       teste.onerror = menor;
       teste.src = `https://i.ytimg.com/vi/${id}/${CAPAS[0]}.jpg`;
+      }
 
       const seta = document.createElement("span");
       seta.setAttribute("aria-hidden", "true");
@@ -92,7 +102,7 @@ export default function VideoMedido({ slug, seletor = ".prose-blog" }: { slug: s
         "position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:68px;" +
         "border-radius:50%;background:rgba(0,0,0,.72);color:#fff;font-size:24px;line-height:68px;" +
         "text-align:center;pointer-events:none;box-shadow:0 2px 16px rgba(0,0,0,.5)";
-      capa.appendChild(seta);
+      if (!propria) capa.appendChild(seta);
 
       const pai = iframe.parentElement;
       if (!pai) return;

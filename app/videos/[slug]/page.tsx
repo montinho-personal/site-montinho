@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import VideoMedido from "@/components/blog/VideoMedido";
 import { notFound } from "next/navigation";
 import { SITE_URL } from "@/lib/blog";
 import { FECHAMENTO_COMPARACAO } from "@/lib/filosofia";
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: v.descricao,
       url,
       type: "video.other",
-      images: [{ url: `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`, width: 480, height: 360 }],
+      images: v.capa ? [{ url: `${SITE_URL}${v.capa.horizontal}`, width: 1280, height: 720 }] : [{ url: `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`, width: 480, height: 360 }],
     },
   };
 }
@@ -67,11 +68,13 @@ export default async function VideoPage({ params }: Props) {
         </nav>
         <h1 className="text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">{v.titulo}</h1>
 
-        <div style={{ maxWidth: 360, margin: "0 auto 2rem" }}>
+        {/* Com capa própria, a capa desenhada aparece no lugar do player até o play (VideoMedido). */}
+        <div style={{ maxWidth: 360, margin: "0 auto 2rem" }} data-video-pagina>
           <div style={{ position: "relative", paddingBottom: "177.78%", height: 0, overflow: "hidden", borderRadius: 12 }}>
             <iframe
               src={`https://www.youtube.com/embed/${v.id}?rel=0`}
               title={`${v.titulo} — Montinho Personal Trainer`}
+              data-capa={v.capa?.vertical}
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -79,6 +82,7 @@ export default async function VideoPage({ params }: Props) {
           </div>
         </div>
 
+        {v.capa && <VideoMedido slug={`video-${v.slug}`} seletor="[data-video-pagina]" />}
         <h2 className="text-xl font-bold text-white mb-3">O que o Montinho diz no vídeo</h2>
         {v.texto.map((p) => (
           <p key={p} className="text-gray-200 leading-relaxed mb-4">{p}</p>
