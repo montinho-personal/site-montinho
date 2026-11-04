@@ -157,6 +157,14 @@ const CAPAS = [
 <div class="sub"><b>Peso-leve</b> · Meta Apex, Las Vegas<br>Card principal às <b>21h</b> (Brasília).</div></div>`, "UFC Vegas 123"),
   },
   {
+    slug: "ufc-334-amanda-nunes-kayla-harrison",
+    alt: "Capa: UFC 334 — Amanda Nunes x Kayla Harrison pelo cinturão peso-galo, sábado 14/11, card principal às 23h",
+    html: base(`
+<div class="top"><div class="kicker">UFC 334 · Sáb 14/11</div><div class="chip"><i></i>Cinturão peso-galo</div></div>
+<div class="main"><h1><em>Amanda Nunes</em><br>x Kayla Harrison</h1>
+<div class="sub"><b>A volta da Leoa</b> · Madison Square Garden, Nova York<br>Card principal às <b>23h</b> (Brasília).</div></div>`, "UFC 334"),
+  },
+  {
     slug: "ufc-vegas-124-johnny-walker-cortes-acosta",
     alt: "Capa: UFC Vegas 124 — Johnny Walker x Cortes Acosta, sábado 7/11, card principal às 22h",
     html: base(`

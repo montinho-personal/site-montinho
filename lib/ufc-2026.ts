@@ -338,11 +338,12 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-11-02",
+    updatedAt: "2026-11-04",
     readTime: "4 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC Vegas 124", "Johnny Walker", "Waldo Cortes Acosta", "Walker x Cortes Acosta"],
     content: `<img src="/blog-images/ufc-vegas-124-johnny-walker-cortes-acosta-capa.webp" alt="Capa: UFC Vegas 124 — Johnny Walker x Cortes Acosta, sábado 7/11, card principal às 22h" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p>Informações verificadas em 2 de novembro de 2026 na página oficial do evento. O card ainda pode mudar; esta página é atualizada até a luta.</p></blockquote>
+<blockquote><p>Informações verificadas em 4 de novembro de 2026 na página oficial do evento. O card ainda pode mudar; esta página é atualizada até a luta.</p></blockquote>
 <p>O brasileiro <strong>Johnny Walker</strong> faz a luta principal do <strong>UFC Vegas 124</strong>, no <strong>sábado, 7 de novembro de 2026</strong>, no Meta Apex, em Las Vegas. Ele enfrenta o dominicano <strong>Waldo Cortes Acosta</strong>, no peso-pesado.</p>
 <p>A luta entrou no lugar de Gabriel Bonfim x Sean Brady, cancelada depois que Brady se machucou. Veja <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">o que aconteceu com Bonfim x Brady</a>.</p>
 
@@ -359,19 +360,19 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <tr><td>Waldo Cortes Acosta x <strong>Johnny Walker</strong></td><td>Peso-pesado (luta principal)</td></tr>
 <tr><td>Tatiana Suarez x <strong>Virna Jandiroba</strong></td><td>Peso-palha feminino</td></tr>
 <tr><td>Davey Grant x Elijah Smith</td><td>Peso-galo</td></tr>
-<tr><td>Seokhyeon Ko x <strong>Wellington Turman</strong></td><td>Meio-médio</td></tr>
 <tr><td>Billy Elekana x <strong>Lucas Fernando</strong></td><td>Meio-pesado</td></tr>
-<tr><td>Mantas Kondratavičius x Andre Petroski</td><td>Peso-médio</td></tr>
+<tr><td><strong>Priscila Cachoeira</strong> x Nina Milošević</td><td>Peso-galo feminino</td></tr>
+<tr><td>Mitch Raposo x <strong>Marcos Degli</strong></td><td>Peso-mosca (estreia de Degli no UFC)</td></tr>
 </tbody></table>
 <h3>Card preliminar (19h)</h3>
 <table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
+<tr><td>Keiichiro Nakamura x Ollie Schmid</td><td>Peso-pena</td></tr>
 <tr><td><strong>Gabriel Lorenco</strong> x Thomas Petersen</td><td>Peso-pesado</td></tr>
 <tr><td><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong></td><td>Peso-mosca feminino</td></tr>
-<tr><td>Mitch Raposo x Marcos Degli</td><td>Peso-mosca</td></tr>
 <tr><td><strong>José Delano</strong> x Murtazali Magomedov</td><td>Peso-pena</td></tr>
-<tr><td>Keiichiro Nakamura x Ollie Schmid</td><td>Peso-pena</td></tr>
 <tr><td>Austin Bashi x Lucas Brennan</td><td>Peso-pena</td></tr>
-<tr><td><strong>Priscila Cachoeira</strong> x Nina Milošević</td><td>Peso-galo feminino</td></tr>
+<tr><td>Mantas Kondratavičius x Andre Petroski</td><td>Peso-médio</td></tr>
+<tr><td>Seokhyeon Ko x <strong>Wellington Turman</strong></td><td>Meio-médio</td></tr>
 <tr><td>Jonny Parsons x <strong>José Souza</strong></td><td>Meio-médio</td></tr>
 </tbody></table>
 <p>A ordem das lutas pode mudar até o dia do evento.</p>
@@ -390,7 +391,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <h2>Tem UFC neste sábado? O calendário de novembro</h2>
 <ul>
 <li><strong>7 de novembro:</strong> UFC Vegas 124, Cortes Acosta x Johnny Walker, em Las Vegas.</li>
-<li><strong>14 de novembro:</strong> UFC 334, Ciryl Gane x Josh Hokit, no Madison Square Garden, em Nova York.</li>
+<li><strong>14 de novembro:</strong> UFC 334, Ciryl Gane x Josh Hokit, no Madison Square Garden, em Nova York, com <a href="/blog/ufc-334-amanda-nunes-kayla-harrison">a volta de Amanda Nunes contra Kayla Harrison</a>.</li>
 <li><strong>21 de novembro:</strong> UFC em Doha, no Catar, com Jiří Procházka x Navajo Stirling.</li>
 </ul>
 
@@ -405,7 +406,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 
 <h2>Fontes</h2>
 <ul>
-<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 124: Cortes Acosta x Walker (página oficial, card e horários, conferida em 02/11/2026)</a></li>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 124: Cortes Acosta x Walker (página oficial, card e horários, conferida em 04/11/2026)</a></li>
 <li><a href="https://www.ufc.com.br/athlete/johnny-walker" target="_blank" rel="noopener noreferrer">UFC — Johnny Walker (perfil oficial: cidade natal, cartel e últimas lutas)</a></li>
 <li>Nova luta principal e saída de Bonfim x Brady: Cageside Press, MMA News e Yahoo Sports, de 29/10 a 01/11/2026.</li>
 </ul>`,
@@ -416,7 +417,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
       { question: "Por que Bonfim x Brady saiu do UFC Vegas 124?", answer: "Sean Brady se machucou (uma infecção no joelho, segundo ele), e Gabriel Bonfim saiu do card sem substituto. Walker x Cortes Acosta virou a luta principal." },
       { question: "Qual é o cartel de Johnny Walker?", answer: "23 vitórias e 10 derrotas no MMA profissional, pelo perfil oficial no UFC." },
       { question: "Qual foi a última luta de Johnny Walker?", answer: "Vitória por nocaute sobre Mick Parkin no 1º round, em 3 de outubro de 2026, no UFC 332." },
-      { question: "Quais brasileiros lutam no UFC Vegas 124?", answer: "Johnny Walker, Virna Jandiroba, Wellington Turman e Lucas Fernando no card principal; Karine Silva, Gabriella Fernandes, Gabriel Lorenco, José Delano, Priscila Cachoeira e José Souza no preliminar." },
+      { question: "Quais brasileiros lutam no UFC Vegas 124?", answer: "Onze: Johnny Walker, Virna Jandiroba, Lucas Fernando, Priscila Cachoeira e Marcos Degli no card principal; Karine Silva, Gabriella Fernandes, Gabriel Lorenco, José Delano, Wellington Turman e José Souza no preliminar." },
     ],
   },
   {
@@ -430,7 +431,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-03",
-    updatedAt: "2026-11-02",
+    updatedAt: "2026-11-04",
     readTime: "5 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC Vegas 124", "Gabriel Bonfim", "Marretinha", "Sean Brady"],
@@ -451,26 +452,26 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <tr><td>Waldo Cortes Acosta x <strong>Johnny Walker</strong></td><td>Peso-pesado (luta principal)</td></tr>
 <tr><td>Tatiana Suarez x <strong>Virna Jandiroba</strong></td><td>Peso-palha feminino</td></tr>
 <tr><td>Davey Grant x Elijah Smith</td><td>Peso-galo</td></tr>
-<tr><td>Seokhyeon Ko x <strong>Wellington Turman</strong></td><td>Meio-médio</td></tr>
 <tr><td>Billy Elekana x <strong>Lucas Fernando</strong></td><td>Meio-pesado</td></tr>
-<tr><td>Mantas Kondratavičius x Andre Petroski</td><td>Peso-médio</td></tr>
+<tr><td><strong>Priscila Cachoeira</strong> x Nina Milošević</td><td>Peso-galo feminino</td></tr>
+<tr><td>Mitch Raposo x <strong>Marcos Degli</strong></td><td>Peso-mosca (estreia de Degli no UFC)</td></tr>
 </tbody></table>
 <h3>Card preliminar (19h)</h3>
 <table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
+<tr><td>Keiichiro Nakamura x Ollie Schmid</td><td>Peso-pena</td></tr>
 <tr><td><strong>Gabriel Lorenco</strong> x Thomas Petersen</td><td>Peso-pesado</td></tr>
 <tr><td><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong></td><td>Peso-mosca feminino</td></tr>
-<tr><td>Mitch Raposo x Marcos Degli</td><td>Peso-mosca</td></tr>
 <tr><td><strong>José Delano</strong> x Murtazali Magomedov</td><td>Peso-pena</td></tr>
-<tr><td>Keiichiro Nakamura x Ollie Schmid</td><td>Peso-pena</td></tr>
 <tr><td>Austin Bashi x Lucas Brennan</td><td>Peso-pena</td></tr>
-<tr><td><strong>Priscila Cachoeira</strong> x Nina Milošević</td><td>Peso-galo feminino</td></tr>
+<tr><td>Mantas Kondratavičius x Andre Petroski</td><td>Peso-médio</td></tr>
+<tr><td>Seokhyeon Ko x <strong>Wellington Turman</strong></td><td>Meio-médio</td></tr>
 <tr><td>Jonny Parsons x <strong>José Souza</strong></td><td>Meio-médio</td></tr>
 </tbody></table>
-<p>Mudanças desde o anúncio: Bonfim x Brady saiu e Cortes Acosta x Walker virou a luta principal; Gabriel Lorenco agora enfrenta Thomas Petersen (antes, Alvin Hines); Mantas Kondratavičius enfrenta Andre Petroski (antes, Wesley Schultz). A ordem das lutas pode mudar até o dia do evento.</p>
+<p>Mudanças desde o anúncio: Bonfim x Brady saiu e Cortes Acosta x Walker virou a luta principal; Gabriel Lorenco agora enfrenta Thomas Petersen (antes, Alvin Hines); Mantas Kondratavičius enfrenta Andre Petroski (antes, Wesley Schultz). Em 4/11, o UFC reorganizou a ordem: Priscila Cachoeira e Marcos Degli subiram para o card principal, e Wellington Turman e Kondratavičius x Petroski foram para o preliminar. A ordem das lutas pode mudar até o dia do evento.</p>
 <h2>Tem UFC neste sábado? O calendário de novembro</h2>
 <ul>
 <li><strong>7 de novembro:</strong> UFC Vegas 124, Cortes Acosta x Johnny Walker, em Las Vegas.</li>
-<li><strong>14 de novembro:</strong> UFC 334, Ciryl Gane x Josh Hokit, no Madison Square Garden, em Nova York.</li>
+<li><strong>14 de novembro:</strong> UFC 334, Ciryl Gane x Josh Hokit, no Madison Square Garden, em Nova York, com <a href="/blog/ufc-334-amanda-nunes-kayla-harrison">a volta de Amanda Nunes contra Kayla Harrison</a>.</li>
 <li><strong>21 de novembro:</strong> UFC em Doha, no Catar, com Jiří Procházka x Navajo Stirling.</li>
 </ul>
 
@@ -498,7 +499,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <li><a href="https://www.ufc.com.br/news/card-completo-resultados-ufc-vegas-118" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim vence Belal Muhammad no UFC Vegas 118</a></li>
 <li><a href="https://www.ufc.com.br/news/gabriel-bonfim-entra-top-5-ranking-peso-meio-medio" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim entra no Top 5 do peso meio-médio</a></li>
 <li><a href="https://agfight.com/ufc/gabriel-marretinha-enfrenta-sean-brady-na-luta-principal-do-ufc-vegas-124/" target="_blank" rel="noopener noreferrer">Ag. Fight — Marretinha enfrenta Sean Brady na luta principal do UFC Vegas 124</a></li>
-<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 124: Cortes Acosta x Walker (página oficial, card e horários, conferida em 02/11/2026)</a></li>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 124: Cortes Acosta x Walker (página oficial, card e horários, conferida em 04/11/2026)</a></li>
 <li>Saída de Brady (infecção no joelho, segundo ele) e de Bonfim do evento: Cageside Press, MMA News e Yahoo Sports, de 29/10 a 01/11/2026.</li>
 <li>Veículos consultados: MMA Sucka, Yahoo Sports, Mais Goiás, Wikipédia.</li>
 </ul>`,
@@ -524,28 +525,29 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-28",
-    updatedAt: "2026-11-02",
+    updatedAt: "2026-11-04",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC Vegas 124", "brasileiros no UFC", "Johnny Walker", "Virna Jandiroba", "Gabriel Bonfim"],
     content: `<img src="/blog-images/ufc-vegas-124-gabriel-bonfim-sean-brady-capa.webp" alt="Brasileiros no UFC Vegas 124, sábado 7/11, em Las Vegas" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<p>Dez brasileiros estão no <strong>UFC Vegas 124</strong>, no <strong>sábado, 7 de novembro de 2026</strong>, no Meta Apex, em Las Vegas. <strong>Johnny Walker</strong> faz a luta principal contra o dominicano Waldo Cortes Acosta, no peso-pesado. Horários, transmissão e o card completo em <a href="/blog/ufc-vegas-124-johnny-walker-cortes-acosta">Walker x Cortes Acosta: horário e onde assistir</a>.</p>
-<p><strong>Mudança no card:</strong> Gabriel Bonfim, o Marretinha, faria a luta principal contra Sean Brady, mas Brady se machucou e os dois saíram do evento. Veja <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">o que aconteceu com Bonfim x Brady</a>. Atualizado em 2 de novembro de 2026.</p>
+<p>Onze brasileiros estão no <strong>UFC Vegas 124</strong>, no <strong>sábado, 7 de novembro de 2026</strong>, no Meta Apex, em Las Vegas. <strong>Johnny Walker</strong> faz a luta principal contra o dominicano Waldo Cortes Acosta, no peso-pesado. Horários, transmissão e o card completo em <a href="/blog/ufc-vegas-124-johnny-walker-cortes-acosta">Walker x Cortes Acosta: horário e onde assistir</a>.</p>
+<p><strong>Mudança no card:</strong> Gabriel Bonfim, o Marretinha, faria a luta principal contra Sean Brady, mas Brady se machucou e os dois saíram do evento. Veja <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">o que aconteceu com Bonfim x Brady</a>. Em 4 de novembro, o UFC mudou a ordem do card: Priscila Cachoeira e o estreante Marcos Degli subiram para o card principal, e Wellington Turman foi para o preliminar. Atualizado em 4 de novembro de 2026.</p>
 
 <h2>Quem são os brasileiros do UFC Vegas 124</h2>
 <h3>Card principal (22h)</h3>
 <ul>
 <li><strong>Johnny Walker</strong> x Waldo Cortes Acosta: luta principal, peso-pesado.</li>
 <li><strong>Virna Jandiroba</strong> x Tatiana Suarez: peso-palha feminino.</li>
-<li><strong>Wellington Turman</strong> x Seokhyeon Ko: peso meio-médio.</li>
 <li><strong>Lucas Fernando</strong> x Billy Elekana: peso meio-pesado.</li>
+<li><strong>Priscila Cachoeira</strong> x Nina Milošević: peso-galo feminino.</li>
+<li><strong>Marcos Degli</strong> x Mitch Raposo: peso-mosca. É a estreia de Degli no UFC.</li>
 </ul>
 <h3>Card preliminar (19h)</h3>
 <ul>
-<li><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong>: duelo brasileiro no peso-mosca feminino.</li>
 <li><strong>Gabriel Lorenco</strong> x Thomas Petersen: peso-pesado.</li>
+<li><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong>: duelo brasileiro no peso-mosca feminino.</li>
 <li><strong>José Delano</strong> x Murtazali Magomedov: peso-pena.</li>
-<li><strong>Priscila Cachoeira</strong> x Nina Milošević: peso-galo feminino.</li>
+<li><strong>Wellington Turman</strong> x Seokhyeon Ko: peso meio-médio.</li>
 <li><strong>José Souza</strong> x Jonny Parsons: peso meio-médio.</li>
 </ul>
 
@@ -560,15 +562,16 @@ export const UFC_2026_POSTS: BlogPost[] = [
 
 <h2>Fontes</h2>
 <ul>
-<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 124: Cortes Acosta x Walker (página oficial, card e horários, conferida em 02/11/2026)</a></li>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 124: Cortes Acosta x Walker (página oficial, card e horários, conferida em 04/11/2026)</a></li>
 <li>Saída de Brady (infecção no joelho, segundo ele) e de Bonfim do evento: Cageside Press, MMA News e Yahoo Sports, de 29/10 a 01/11/2026.</li>
-<li>Nacionalidade conferida no perfil oficial de cada atleta em ufc.com.br (cidade natal), em 28/10/2026.</li>
+<li>Nacionalidade conferida no perfil oficial de cada atleta em ufc.com.br (cidade natal), em 28/10/2026. Marcos Degli, que ainda não tem cidade natal no perfil, pela bandeira na página oficial do evento e pelo MMA Sucka, em 04/11/2026.</li>
 <li><a href="https://agfight.com/ufc/gabriel-marretinha-enfrenta-sean-brady-na-luta-principal-do-ufc-vegas-124/" target="_blank" rel="noopener noreferrer">Ag. Fight — Marretinha enfrenta Sean Brady na luta principal do UFC Vegas 124</a></li>
 </ul>`,
     faq: [
-      { question: "Quais brasileiros lutam no UFC Vegas 124?", answer: "Johnny Walker (luta principal), Virna Jandiroba, Wellington Turman e Lucas Fernando no card principal; Karine Silva, Gabriella Fernandes, Gabriel Lorenco, José Delano, Priscila Cachoeira e José Souza no preliminar." },
+      { question: "Quais brasileiros lutam no UFC Vegas 124?", answer: "Onze: Johnny Walker (luta principal), Virna Jandiroba, Lucas Fernando, Priscila Cachoeira e Marcos Degli no card principal; Karine Silva, Gabriella Fernandes, Gabriel Lorenco, José Delano, Wellington Turman e José Souza no preliminar." },
       { question: "O Marretinha luta no UFC Vegas 124?", answer: "Não mais. Gabriel Bonfim, o Marretinha, faria a luta principal contra Sean Brady, mas Brady se machucou e os dois saíram do card. A luta principal passou a ser Johnny Walker x Waldo Cortes Acosta." },
       { question: "Contra quem luta Virna Jandiroba no UFC Vegas 124?", answer: "Contra Tatiana Suarez, no peso-palha feminino, no card principal." },
+      { question: "Quem é Marcos Degli?", answer: "Um brasileiro do peso-mosca que estreia no UFC contra Mitch Raposo, no card principal do UFC Vegas 124." },
       { question: "Tem luta entre brasileiras no UFC Vegas 124?", answer: "Tem: Karine Silva x Gabriella Fernandes, no peso-mosca feminino, no card preliminar." },
       { question: "Que horas lutam os brasileiros no UFC Vegas 124?", answer: "O card preliminar começa às 19h e o principal às 22h, horário de Brasília." },
     ],
@@ -584,7 +587,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-03",
-    updatedAt: "2026-11-02",
+    updatedAt: "2026-11-04",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC Vegas 124", "resultado UFC", "Johnny Walker", "Gabriel Bonfim"],
@@ -599,12 +602,13 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <table><thead><tr><th>Luta</th><th>Resultado</th></tr></thead><tbody>
 <tr><td><strong>Johnny Walker</strong> x Waldo Cortes Acosta</td><td>Aguardando</td></tr>
 <tr><td><strong>Virna Jandiroba</strong> x Tatiana Suarez</td><td>Aguardando</td></tr>
-<tr><td><strong>Wellington Turman</strong> x Seokhyeon Ko</td><td>Aguardando</td></tr>
 <tr><td><strong>Lucas Fernando</strong> x Billy Elekana</td><td>Aguardando</td></tr>
-<tr><td><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong></td><td>Aguardando</td></tr>
-<tr><td><strong>Gabriel Lorenco</strong> x Thomas Petersen</td><td>Aguardando</td></tr>
-<tr><td><strong>José Delano</strong> x Murtazali Magomedov</td><td>Aguardando</td></tr>
 <tr><td><strong>Priscila Cachoeira</strong> x Nina Milošević</td><td>Aguardando</td></tr>
+<tr><td><strong>Marcos Degli</strong> x Mitch Raposo</td><td>Aguardando</td></tr>
+<tr><td><strong>Gabriel Lorenco</strong> x Thomas Petersen</td><td>Aguardando</td></tr>
+<tr><td><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong></td><td>Aguardando</td></tr>
+<tr><td><strong>José Delano</strong> x Murtazali Magomedov</td><td>Aguardando</td></tr>
+<tr><td><strong>Wellington Turman</strong> x Seokhyeon Ko</td><td>Aguardando</td></tr>
 <tr><td><strong>José Souza</strong> x Jonny Parsons</td><td>Aguardando</td></tr>
 </tbody></table>
 
@@ -621,7 +625,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <li><a href="https://www.ufc.com.br/news/gabriel-bonfim-entra-top-5-ranking-peso-meio-medio" target="_blank" rel="noopener noreferrer">UFC — Gabriel Bonfim entra no Top 5 do peso meio-médio</a></li>
 <li><a href="https://agfight.com/ufc/gabriel-marretinha-enfrenta-sean-brady-na-luta-principal-do-ufc-vegas-124/" target="_blank" rel="noopener noreferrer">Ag. Fight — Marretinha enfrenta Sean Brady na luta principal do UFC Vegas 124</a></li>
 <li>Veículos consultados: MMA Sucka, Yahoo Sports, Mais Goiás, Wikipédia.</li>
-<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 124: Cortes Acosta x Walker (página oficial, card e horários, conferida em 02/11/2026)</a></li>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 124: Cortes Acosta x Walker (página oficial, card e horários, conferida em 04/11/2026)</a></li>
 <li>Saída de Brady (infecção no joelho, segundo ele) e de Bonfim do evento: Cageside Press, MMA News e Yahoo Sports, de 29/10 a 01/11/2026.</li>
 </ul>`,
     faq: [
@@ -988,6 +992,160 @@ export const UFC_2026_POSTS: BlogPost[] = [
       { question: "Contra quem luta Deiveson Figueiredo no UFC 332?", answer: "Contra o norte-americano Payton Talbott, no peso-galo." },
       { question: "Contra quem luta Johnny Walker no UFC 332?", answer: "Contra o inglês Mick Parkin, na estreia de Walker no peso-pesado." },
       { question: "Que horas lutam os brasileiros no UFC 332?", answer: "O card preliminar começa às 17h e o principal às 21h, horário de Brasília." },
+    ],
+  },
+  {
+    slug: "ufc-334-amanda-nunes-kayla-harrison",
+    title: "UFC 334: Amanda Nunes x Kayla Harrison — data, horário, card e onde assistir",
+    metaTitle: "UFC 334: Amanda Nunes x Kayla Harrison — Horário e Card",
+    metaDescription:
+      "Amanda Nunes volta ao UFC contra Kayla Harrison pelo cinturão peso-galo no UFC 334, sábado 14/11, em Nova York. Horário de Brasília, onde assistir e os brasileiros.",
+    excerpt:
+      "Amanda Nunes desafia a campeã Kayla Harrison no UFC 334, no Madison Square Garden. Data, horários de Brasília, onde assistir, card completo e os cinco brasileiros.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-11-04",
+    readTime: "5 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC 334", "Amanda Nunes", "Kayla Harrison", "Caio Borralho"],
+    content: `<img src="/blog-images/ufc-334-amanda-nunes-kayla-harrison-capa.webp" alt="Capa: UFC 334 — Amanda Nunes x Kayla Harrison pelo cinturão peso-galo, sábado 14/11, card principal às 23h" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p>Informações verificadas em 4 de novembro de 2026 na página oficial do evento. O card ainda pode mudar; esta página é atualizada até a luta.</p></blockquote>
+<p>O <strong>UFC 334</strong> acontece no <strong>sábado, 14 de novembro de 2026</strong>, no Madison Square Garden, em Nova York. A brasileira <strong>Amanda Nunes</strong> volta ao octógono para desafiar a campeã norte-americana <strong>Kayla Harrison</strong> pelo cinturão do peso-galo feminino. A luta principal é Ciryl Gane x Josh Hokit, pelo cinturão do peso-pesado.</p>
+
+<h2>UFC 334: data, horário e onde assistir</h2>
+<table><thead><tr><th>Item</th><th>O que se sabe</th></tr></thead><tbody>
+<tr><td>Data</td><td>Sábado, 14/11/2026</td></tr>
+<tr><td>Local</td><td>Madison Square Garden, Nova York (EUA)</td></tr>
+<tr><td>Preliminares iniciais</td><td>A partir das 19h (Brasília)</td></tr>
+<tr><td>Card preliminar</td><td>A partir das 21h (Brasília)</td></tr>
+<tr><td>Card principal</td><td>A partir das 23h (Brasília)</td></tr>
+<tr><td>Onde assistir</td><td>Paramount+ e UFC Fight Pass</td></tr>
+</tbody></table>
+<p>Amanda x Kayla é a segunda luta mais importante da noite, logo antes da principal. As duas últimas lutas costumam entrar depois da meia-noite, já no domingo.</p>
+
+<h2>Amanda Nunes x Kayla Harrison: por que essa luta importa</h2>
+<p>Amanda Nunes, a "Leoa", foi a primeira e única mulher a ser campeã de duas categorias ao mesmo tempo no UFC, segundo o perfil oficial. Ela tinha se aposentado depois da vitória sobre Irene Aldana, em junho de 2023, e volta depois de cerca de três anos parada. Kayla Harrison é a campeã do peso-galo e faz a primeira defesa do cinturão.</p>
+<p>A luta estava prevista para o UFC 324 e foi adiada depois que Harrison passou por uma cirurgia no pescoço.</p>
+
+<h2>Quem é Amanda Nunes?</h2>
+<p>Amanda tem cartel de <strong>23 vitórias e 5 derrotas</strong> no MMA profissional, pelo perfil oficial no UFC.</p>
+<table><thead><tr><th>Data</th><th>Evento</th><th>Adversária</th><th>Resultado</th></tr></thead><tbody>
+<tr><td>10/6/2023</td><td>UFC 289</td><td>Irene Aldana</td><td>Vitória por decisão unânime</td></tr>
+<tr><td>30/7/2022</td><td>UFC 277</td><td>Julianna Peña</td><td>Vitória por decisão unânime</td></tr>
+<tr><td>Dez. 2021</td><td>UFC 269</td><td>Julianna Peña</td><td>Derrota por finalização (mata-leão)</td></tr>
+</tbody></table>
+
+<h2>Caio Borralho x Yousri Belgaroui</h2>
+<p>O maranhense <strong>Caio Borralho</strong>, "The Natural", é o 5º do ranking do peso-médio e tem cartel de <strong>18 vitórias e 2 derrotas</strong>. Na última luta, em 7 de março de 2026, venceu Reinier de Ridder por decisão unânime. Antes, perdeu para Nassourdine Imavov por decisão, em setembro de 2025. Ele enfrenta o holandês Yousri Belgaroui no card principal.</p>
+
+<h2>Card completo do UFC 334</h2>
+<p>Os brasileiros estão em negrito. Veja todos em <a href="/blog/brasileiros-ufc-334">brasileiros no UFC 334</a>.</p>
+<h3>Card principal (23h)</h3>
+<table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
+<tr><td>Ciryl Gane x Josh Hokit</td><td>Peso-pesado (cinturão, luta principal)</td></tr>
+<tr><td>Kayla Harrison x <strong>Amanda Nunes</strong></td><td>Peso-galo feminino (cinturão)</td></tr>
+<tr><td><strong>Caio Borralho</strong> x Yousri Belgaroui</td><td>Peso-médio</td></tr>
+<tr><td>Uroš Medić x Kevin Holland</td><td>Meio-médio</td></tr>
+<tr><td>Bilal Hasan x Luis Gurule</td><td>Peso-mosca</td></tr>
+</tbody></table>
+<h3>Card preliminar (21h)</h3>
+<table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
+<tr><td>Stephen Thompson x Charles Radtke</td><td>Meio-médio</td></tr>
+<tr><td>Drew Dober x Chris Duncan</td><td>Peso-leve</td></tr>
+<tr><td>Jim Miller x Terrance McKinney</td><td>Peso-leve</td></tr>
+<tr><td>Donte Johnson x <strong>Cesar Almeida</strong></td><td>Peso-médio</td></tr>
+</tbody></table>
+<h3>Preliminares iniciais (19h)</h3>
+<table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
+<tr><td>Macy Chiasson x <strong>Bia Mesquita</strong></td><td>Peso-galo feminino</td></tr>
+<tr><td>Adrian Yanez x Juan Diaz</td><td>Peso-galo</td></tr>
+<tr><td>Nazim Sadykhov x <strong>Jefferson Nascimento</strong></td><td>Peso-leve</td></tr>
+</tbody></table>
+<p>A ordem das lutas pode mudar até o dia do evento.</p>
+
+<h2>Corte de peso: o que acontece antes da luta</h2>
+<p>Todos passam pela pesagem na véspera, e muitos perdem vários quilos de água nos dias anteriores. É prática de atleta profissional, com equipe, e não serve de modelo para quem quer emagrecer. Entenda em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a> e veja como eles treinam em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
+
+<h2>Quanto se gasta numa aula de jiu-jitsu</h2>
+<p>Luta agarrada e chão fazem parte do jogo de quase todo mundo no card. Se você treina jiu-jitsu e quer saber quanto gasta numa aula, faça a conta com o seu peso na calculadora abaixo.</p>
+
+<h2>Quem ganhou?</h2>
+<p>O resultado de Amanda x Kayla e dos brasileiros entra nesta página na noite da luta.</p>
+
+<h2>Não se compare</h2>
+<p>Amanda Nunes volta depois de três anos fora e de uma carreira inteira no topo. O seu caminho é outro: cada um tem a própria genética, rotina e história, com altos e baixos. O que funciona é um treino que dê para seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/event/ufc-334" target="_blank" rel="noopener noreferrer">UFC — UFC 334: Gane x Hokit (página oficial, card, horários e bandeiras, conferida em 04/11/2026)</a></li>
+<li><a href="https://www.ufc.com.br/athlete/amanda-nunes" target="_blank" rel="noopener noreferrer">UFC — Amanda Nunes (perfil oficial: cartel e últimas lutas)</a></li>
+<li><a href="https://www.ufc.com.br/athlete/caio-borralho" target="_blank" rel="noopener noreferrer">UFC — Caio Borralho (perfil oficial: cartel, ranking e últimas lutas)</a></li>
+<li>Harrison campeã, retorno de Amanda e adiamento do UFC 324 pela cirurgia no pescoço: Agent MMA e MMA Sucka, novembro de 2026.</li>
+</ul>`,
+    faq: [
+      { question: "Quando é o UFC 334?", answer: "No sábado, 14 de novembro de 2026, no Madison Square Garden, em Nova York." },
+      { question: "Que horas começa o UFC 334?", answer: "As preliminares iniciais começam às 19h, o card preliminar às 21h e o card principal às 23h, horário de Brasília." },
+      { question: "Que horas luta a Amanda Nunes?", answer: "Na segunda luta mais importante do card principal, que começa às 23h (Brasília). A luta dela deve entrar depois da meia-noite, logo antes de Gane x Hokit." },
+      { question: "Amanda Nunes voltou a lutar?", answer: "Sim. Aposentada desde a vitória sobre Irene Aldana, em junho de 2023, ela volta no UFC 334 contra a campeã Kayla Harrison, valendo o cinturão do peso-galo." },
+      { question: "Onde assistir ao UFC 334?", answer: "Pelo Paramount+ e pelo UFC Fight Pass." },
+      { question: "Qual é o cartel de Amanda Nunes?", answer: "23 vitórias e 5 derrotas no MMA profissional, pelo perfil oficial no UFC." },
+      { question: "Quais brasileiros lutam no UFC 334?", answer: "Amanda Nunes e Caio Borralho no card principal, Cesar Almeida no preliminar, e Bia Mesquita e Jefferson Nascimento nas preliminares iniciais." },
+      { question: "Qual é a luta principal do UFC 334?", answer: "Ciryl Gane x Josh Hokit, pelo cinturão do peso-pesado." },
+    ],
+  },
+  {
+    slug: "brasileiros-ufc-334",
+    title: "Brasileiros no UFC 334: quem luta, contra quem e que horas",
+    metaTitle: "Brasileiros no UFC 334: Amanda Nunes, Borralho e Mais",
+    metaDescription:
+      "Os brasileiros do UFC 334 (14/11): Amanda Nunes pelo cinturão contra Kayla Harrison, Caio Borralho, Cesar Almeida, Bia Mesquita e Jefferson Nascimento. Adversários e horários.",
+    excerpt:
+      "Amanda Nunes, Caio Borralho, Cesar Almeida, Bia Mesquita e Jefferson Nascimento no UFC 334: contra quem lutam e a que horas.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-11-04",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC 334", "brasileiros no UFC", "Amanda Nunes", "Caio Borralho"],
+    content: `<img src="/blog-images/ufc-334-amanda-nunes-kayla-harrison-capa.webp" alt="Brasileiros no UFC 334, sábado 14/11, em Nova York" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<p>Cinco brasileiros estão no <strong>UFC 334</strong>, no <strong>sábado, 14 de novembro de 2026</strong>, no Madison Square Garden, em Nova York. <strong>Amanda Nunes</strong> volta ao UFC para desafiar a campeã Kayla Harrison pelo cinturão do peso-galo. Horários, transmissão e o card completo em <a href="/blog/ufc-334-amanda-nunes-kayla-harrison">UFC 334: Amanda Nunes x Kayla Harrison</a>. Atualizado em 4 de novembro de 2026.</p>
+
+<h2>Quem são os brasileiros do UFC 334</h2>
+<h3>Card principal (23h)</h3>
+<ul>
+<li><strong>Amanda Nunes</strong> x Kayla Harrison: cinturão do peso-galo feminino.</li>
+<li><strong>Caio Borralho</strong> x Yousri Belgaroui: peso-médio.</li>
+</ul>
+<h3>Card preliminar (21h)</h3>
+<ul>
+<li><strong>Cesar Almeida</strong> x Donte Johnson: peso-médio.</li>
+</ul>
+<h3>Preliminares iniciais (19h)</h3>
+<ul>
+<li><strong>Bia Mesquita</strong> x Macy Chiasson: peso-galo feminino.</li>
+<li><strong>Jefferson Nascimento</strong> x Nazim Sadykhov: peso-leve.</li>
+</ul>
+
+<h2>Que horas lutam os brasileiros?</h2>
+<p>As preliminares iniciais começam às <strong>19h</strong>, o card preliminar às <strong>21h</strong> e o card principal às <strong>23h</strong>, no horário de Brasília. Amanda luta na segunda luta mais importante da noite, que deve entrar depois da meia-noite. A ordem exata pode mudar até o dia do evento.</p>
+
+<h2>Como os lutadores chegam à balança</h2>
+<p>Todos passam pela pesagem na véspera, e muitos fazem corte de peso. Entenda o processo em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>, e como eles treinam em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/event/ufc-334" target="_blank" rel="noopener noreferrer">UFC — UFC 334: Gane x Hokit (página oficial, card, horários e bandeiras, conferida em 04/11/2026)</a></li>
+<li><a href="https://www.ufc.com.br/athlete/amanda-nunes" target="_blank" rel="noopener noreferrer">UFC — Amanda Nunes (perfil oficial)</a></li>
+<li><a href="https://www.ufc.com.br/athlete/caio-borralho" target="_blank" rel="noopener noreferrer">UFC — Caio Borralho (perfil oficial)</a></li>
+</ul>`,
+    faq: [
+      { question: "Quais brasileiros lutam no UFC 334?", answer: "Amanda Nunes e Caio Borralho no card principal, Cesar Almeida no preliminar, e Bia Mesquita e Jefferson Nascimento nas preliminares iniciais." },
+      { question: "Contra quem luta Amanda Nunes no UFC 334?", answer: "Contra a campeã Kayla Harrison, pelo cinturão do peso-galo feminino." },
+      { question: "Contra quem luta Caio Borralho no UFC 334?", answer: "Contra o holandês Yousri Belgaroui, no peso-médio, no card principal." },
+      { question: "Que horas lutam os brasileiros no UFC 334?", answer: "Preliminares iniciais às 19h, card preliminar às 21h e card principal às 23h, horário de Brasília." },
     ],
   },
 ];

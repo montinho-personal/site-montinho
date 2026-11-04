@@ -66,6 +66,8 @@ Status: pedir a indexação no Search Console.
 | /blog/ombro-estalando-e-normal | novo (04/11, das perguntas de dor do app; sem os prints) | | |
 | /blog/anti-inflamatorio-atrapalha-hipertrofia | novo (04/11, das perguntas de dor do app; sem os prints) | | |
 | /blog/treinar-com-dor | novo (04/11, das perguntas de dor do app; sem os prints) | | |
+| /blog/ufc-334-amanda-nunes-kayla-harrison | novo (04/11, rotina do UFC; sem os prints) | | |
+| /blog/brasileiros-ufc-334 | novo (04/11, hub do UFC 334; sem os prints) | | |
 
 O que observar em 28 dias:
 - impressões em "app de treino academia", "app de treino gratuito" e "aplicativo de musculação grátis" (no export, 720, 140 e 50 buscas/mês);
