@@ -3,7 +3,7 @@
  *   npx tsx scripts/sao-silvestre-test.ts
  */
 import {
-  ARTIGOS_COM_LINK_PREVISOR_SS, ARTIGOS_COM_PREVISOR_SS, DISTANCIA_PROVA_KM, lerTempo, nivel, prever, riegel, semanasAteAProva, validaReferencia,
+  ARTIGOS_COM_LINK_PREVISOR_SS, ARTIGOS_COM_PREVISOR_SS, DISTANCIA_PROVA_KM, lerTempo, lerTempoNaDistancia, nivel, prever, riegel, semanasAteAProva, validaReferencia,
 } from "../lib/sao-silvestre";
 
 let falhas = 0;
@@ -26,6 +26,12 @@ ok(lerTempo("1h05") === 3900 && lerTempo("10530") === 3930 && lerTempo("1.05.30"
 
 // Sanidade
 ok(validaReferencia(600, 5) !== null, "5 km em 10 min é recusado");
+ok(lerTempoNaDistancia("1:02", 10)?.seg === 3720 && lerTempoNaDistancia("1.02", 10)?.seg === 3720, "10 km em 1:02 é 1h02, não 1min02");
+ok(lerTempoNaDistancia("2:05", 21.0975)?.seg === 7500 && lerTempoNaDistancia("1:50", 21.0975)?.leuHoras === true, "meia em 2:05 é 2h05");
+ok(lerTempoNaDistancia("28:30", 5)?.seg === 1710 && lerTempoNaDistancia("58:00", 10)?.leuHoras === false, "mm:ss que já cabe na faixa não muda");
+ok(lerTempoNaDistancia("1min02", 10)?.leuHoras === false, "com 'min' escrito, continua minutos");
+ok(lerTempo("28'30''") === 1710 && lerTempo("1 hora") === 3600 && lerTempo("2 horas") === 7200 && lerTempo("28 e 30") === 1710, "aspas duplas simples, 'hora' e 'e'");
+ok(lerTempo("1 hora e 2 minutos") === 3720, "1 hora e 2 minutos");
 ok(validaReferencia(5400, 5) !== null, "5 km em 90 min vira caminhada");
 ok(validaReferencia(1800, 5) === null, "5 km em 30 min é aceito");
 
