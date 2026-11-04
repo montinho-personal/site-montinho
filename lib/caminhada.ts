@@ -539,4 +539,6 @@ export const ARTIGOS_COM_LINK_CAMINHADA: string[] = [
   "rabanada-engorda",
   /* Ceia de Natal: a tabela dá a caminhada de cada prato para 70 kg; a conta que sobra é a do prato e do peso DELA. */
   "calorias-da-ceia-de-natal",
+  /* Uva-passa: a tabela dá a caminhada de cada porção para 70 kg; a conta que sobra é a do peso e do ritmo DELA. */
+  "uva-passa-engorda",
 ];
